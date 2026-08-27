@@ -32,17 +32,18 @@ However, observe that $G / K$ is not cyclic since $< ( 0 , 1 ) K > = \{ K \} , <
 
 ## 13: Prove that a factor group of an Abelian group is Abelian.
 
-Let $G$ be an Abelian group and consider its factor group $G / H$ , where $H$ is normal in $G$ . Let $a H$ and $b H$ be arbitrary elements of the quotient group. Then $a H b H = ( a b ) H = ( b a ) H = b H a H$ because $G$ is Abelian. Hence the factor group is also Abelian.
+Let $G$ be an Abelian group and consider its factor group $G / H$ , where $H$ is normal in $G$ . Let $a H$ and $b H$ be arbitrary elements of the quotient group.
+Then $a H b H = ( a b ) H = ( b a ) H = b H a H$ because $G$ is Abelian.
+Hence the factor group is also Abelian.
 
 ## 14: What is the order of the element $1 4 + < 8 >$ in the factor group $\mathbb { Z } _ { 2 4 } / < 8 > ?$
 
-For completeness, observe $< 8 > = \{ 8 , 1 6 , 0 \}$ and $\mathbb { Z } _ { 2 4 } / < 8 > = \{ < 8 > , 1 + < 8 > , 2 + < 8 > , 3 + < 8 > , 4 + < 8 > , 5 + < 8 > , 6 + < 8 > , 7 + < 8 > \}$ . Now let’s observe $1 4 + < 8 > :$
-$( 1 4 + < 8 > ) + ( 1 4 + < 8 > ) = 2 8 + < 8 > = 4 + < 8 > , ( 1 4 + < 8 > ) + ( 4 + < 8 > ) = 1 8 + < 8 > = 2 + < 8 > , ( 1 4 + < 8 > ) + ( 2 + < 8 > ) = 1 6 + < 8 > = < 8 >$ .
-Hence the order of $1 4 + < 8 >$ is 4.
+For completeness, observe $< 8 > = \{ 8 , 1 6 , 0 \}$ and $\mathbb { Z } _ { 2 4 } / < 8 > = \{ < 8 > , 1 + < 8 > , 2 + < 8 > , 3 + < 8 > , 4 + < 8 > , 5 + < 8 > , 6 + < 8 > , 7 + < 8 > \}$ . Now let’s observe $1 4 + < 8 > :$ $( 1 4 + < 8 > ) + ( 1 4 + < 8 > ) = 2 8 + < 8 > = 4 + < 8 > , ( 1 4 + < 8 > ) + ( 4 + < 8 > ) = 1 8 + < 8 > = 2 + < 8 > , ( 1 4 + < 8 > ) + ( 2 + < 8 > ) = 1 6 + < 8 > = < 8 >$ . Hence the order of $1 4 + < 8 >$ is 4.
 
 ## 16: Recall that $Z ( D _ { 6 } ) = \{ e , r ^ { 3 } \}$ . What is the order of the element $r Z ( D _ { 6 } )$ in the factor group $D _ { 6 } / Z ( D _ { 6 } ) ?$
 
-Notice that problem 16 here is rewritten in terms of generators and relations. Now it is clear that the order of $r Z ( D _ { 6 } )$ is 3 since $r ^ { 3 } \in Z ( D _ { 6 } )$ .
+Notice that problem 16 here is rewritten in terms of generators and relations.
+Now it is clear that the order of $r Z ( D _ { 6 } )$ is 3 since $r ^ { 3 } \in Z ( D _ { 6 } )$ .
 
 ## 17: Let $G = \mathbb { Z } / < 2 0 >$ and $H = < 4 > / < 2 0 >$ . List the elements of $H$ and $G / H$ .
 
@@ -62,11 +63,14 @@ Let $G$ be an Abelian group of order 33. By Theorem 9.5, there exists an element
 
 Notice that $( 1 , 1 ) + < ( 4 , 2 ) >$ has infinite order [Why? Suppose it is of finite order, say $n$ . Then $( n , n ) \in < ( 4 , 2 ) >$ means $( n , n ) = k ( 4 , 2 )$ for some $k$ . So $n = 4 k = 2 k$ , which means $n = 0$ since $n$ is an integer.]. Hence the group $( \mathbb { Z } \oplus \mathbb { Z } ) / < ( 4 , 2 ) >$ also has infinite order.
 
-If the quotient group is cyclic, it must be isomorphic to $\mathbb { Z }$ (from previous work), so every non-identity element should have infinite order. However, $( 6 , 3 ) + < ( 4 , 2 ) >$ has order 2. Hence, it is not cyclic.
+If the quotient group is cyclic, it must be isomorphic to $\mathbb { Z }$ (from previous work), so every non-identity element should have infinite order.
+However, $( 6 , 3 ) + < ( 4 , 2 ) >$ has order 2. Hence, it is not cyclic.
 
 # 24: The group $\left( \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 1 2 } \right) / < ( 2 , 2 ) >$ is isomorphic to one of $\mathbb { Z } _ { 8 } , \ \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ , or $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Determine which one by elimination.
 
-Observe that $H = < ( 2 , 2 ) > = \{ ( 2 , 2 ) , ( 0 , 4 ) , ( 2 , 6 ) , ( 0 , 8 ) , ( 2 , 1 0 ) , ( 0 , 0 ) \}$ (which has order 6 as expected). Let $G = ( \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 1 2 } ) / < ( 2 , 2 ) >$ . Then $G = \left\{ H , ( 1 , 0 ) H , ( 0 , 1 ) H , ( 1 , 1 ) H , ( 0 , 2 ) H , ( 0 , 3 ) H , ( 3 , 0 ) H , ( 1 , 3 ) H \right\}$ and these cosets have orders $1 , 4 , 4 , 2 , 2 , 4 , 4$ , and 2 respectively. Hence, $G$ is not cyclic and not isomorphic to $\mathbb { Z } _ { 8 }$ . Further, since there is an element of order 4, $G$ is not isomorphic to $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Hence, $G \approx \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ .
+Observe that $H = < ( 2 , 2 ) > = \{ ( 2 , 2 ) , ( 0 , 4 ) , ( 2 , 6 ) , ( 0 , 8 ) , ( 2 , 1 0 ) , ( 0 , 0 ) \}$ (which has order 6 as expected).
+Let $G = ( \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 1 2 } ) / < ( 2 , 2 ) >$ . Then $G = \left\{ H , ( 1 , 0 ) H , ( 0 , 1 ) H , ( 1 , 1 ) H , ( 0 , 2 ) H , ( 0 , 3 ) H , ( 3 , 0 ) H , ( 1 , 3 ) H \right\}$ and these cosets have orders $1 , 4 , 4 , 2 , 2 , 4 , 4$ , and 2 respectively.
+Hence, $G$ is not cyclic and not isomorphic to $\mathbb { Z } _ { 8 }$ . Further, since there is an element of order 4, $G$ is not isomorphic to $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Hence, $G \approx \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ .
 
 # 25: Let $G = U ( 3 2 )$ and $H = \{ 1 , 3 1 \}$ . The group $G / H$ is isomorphic to one of $\mathbb { Z } _ { 8 } , \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ , or $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Determine which one by elimination.
 
@@ -76,7 +80,9 @@ Consider $3 H = \{ 3 , 2 9 \} \in G / H \colon < 3 H > = \{ 3 H , 9 H , 2 7 H , 
 
 # 27: Let $G = U ( 1 6 )$ , $H = \{ 1 , 1 5 \}$ and $K = \{ 1 , 9 \}$ . Are $H$ and $K$ isomorphic? Are $G / H$ and $G / K$ isomorphic?
 
-It is obvious that $H \approx K \approx \mathbb { Z } _ { 2 }$ . Now, we need to check if $G / H$ and $G / K$ are isomorphic. We know that each has order 4 and that there are only two such groups. Consider $3 H$ : $< 3 H > = \{ 3 H , 9 H , 1 1 H , H \}$ so $3 H$ generates $G / H$ and $G / H \approx \mathbb { Z } _ { 4 }$ . Now observe $G / K$ : $< K > = \{ K \} , < 3 K > = \{ 3 K , K \} , < 5 K > = \{ 5 K , K \}$ and $< 7 K > = \{ 7 K , K \}$ . Thus $G / K \approx \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Hence $G / K \not \approx G / H$ .
+It is obvious that $H \approx K \approx \mathbb { Z } _ { 2 }$ . Now, we need to check if $G / H$ and $G / K$ are isomorphic.
+We know that each has order 4 and that there are only two such groups.
+Consider $3 H$ : $< 3 H > = \{ 3 H , 9 H , 1 1 H , H \}$ so $3 H$ generates $G / H$ and $G / H \approx \mathbb { Z } _ { 4 }$ . Now observe $G / K$ : $< K > = \{ K \} , < 3 K > = \{ 3 K , K \} , < 5 K > = \{ 5 K , K \}$ and $< 7 K > = \{ 7 K , K \}$ . Thus $G / K \approx \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ . Hence $G / K \not \approx G / H$ .
 
 # 37: Let $G$ be a finite group and let $H$ be a normal subgroup of $G$ . Prove that the order of the element $g H$ in $G / H$ must divide the order of $g$ in $G$ .
 
@@ -92,7 +98,10 @@ Let $H$ be normal in $G$ . We want to show $y \phi ( H ) y ^ { - 1 } \subseteq \
 
 # 42: An element is called a square if it can be expressed in the form $b ^ { 2 }$ for some $b$ . Suppose that $G$ is an Abelian group and $H$ is a subgroup of $G$ . If every element of $H$ is a square and every element of $G / H$ is a square, prove that every element of $G$ is a square. Does your proof remain valid when “square” is replaced by “nth power” where $n$ is any integer?
 
-Let $G$ be an Abelian group, $H$ be a subgroup of $G$ and every element of both $H$ and $G / H$ be a square. Suppose $g \in G$ . Since $g \in G , g H \in G / H$ . But all elements of $G / H$ are squares so there exists an $a H \in G / H$ such that $g H = ( a H ) ^ { 2 } = a ^ { 2 } H$ . By properties of cosets, we now have that $( a ^ { 2 } ) ^ { - 1 } g \in H$ . But every element in $H$ is a square so there exists a $b \in H$ such that $( a ^ { 2 } ) ^ { - 1 } g = b ^ { 2 }$ . Solving for $g$ we see $g = a ^ { 2 } b ^ { 2 } = ( a b ) ^ { 2 }$ since $G$ is Abelian. But this means that $g$ is a square. Hence every element of $G$ is a square.
+Let $G$ be an Abelian group, $H$ be a subgroup of $G$ and every element of both $H$ and $G / H$ be a square.
+Suppose $g \in G$ . Since $g \in G , g H \in G / H$ . But all elements of $G / H$ are squares so there exists an $a H \in G / H$ such that $g H = ( a H ) ^ { 2 } = a ^ { 2 } H$ . By properties of cosets, we now have that $( a ^ { 2 } ) ^ { - 1 } g \in H$ . But every element in $H$ is a square so there exists a $b \in H$ such that $( a ^ { 2 } ) ^ { - 1 } g = b ^ { 2 }$ . Solving for $g$ we see $g = a ^ { 2 } b ^ { 2 } = ( a b ) ^ { 2 }$ since $G$ is Abelian.
+But this means that $g$ is a square.
+Hence every element of $G$ is a square.
 
 Notice that this did not depend on a property of 2, so the proof remains valid when 2 is replaced by $n \in \mathbb { Z }$ .
 
@@ -104,13 +113,20 @@ First, recall that $Z ( D _ { 1 3 } ) = \{ e \}$ . Now, we know that $\operatorn
 
 First recall that $Z ( G )$ is normal in $G$ . Since $G$ is non-Abelian, $Z ( G )$ does not have order $p ^ { 3 }$ . Further, since $Z ( G )$ is a non-trivial subgroup, its order is not 1 and divides $p ^ { 3 }$ , so it has order $p$ , or $p ^ { 2 }$ .
 
-Suppose that the order of $Z ( G )$ is $p ^ { 2 }$ . Then $| G / Z ( G ) | = p$ and hence the quotient group $G / Z ( G )$ is cyclic. But this implies, by Theorem 9.3, that $G$ is Abelian, which is a contradiction. Hence $| Z ( G ) | = p$ .
+Suppose that the order of $Z ( G )$ is $p ^ { 2 }$ . Then $| G / Z ( G ) | = p$ and hence the quotient group $G / Z ( G )$ is cyclic.
+But this implies, by Theorem 9.3, that $G$ is Abelian, which is a contradiction.
+Hence $| Z ( G ) | = p$ .
 
 # 50: If $| G | = p q$ where $p$ and $q$ are primes that are not necessarily distinct, prove that $| Z ( G ) | = 1$ or $p q$ .
 
-Let $| G | = p q$ , as above. Since $Z ( G )$ is a normal subgroup of $G , | Z ( G ) | = 1 , p , q ,$ or $p q$ . If $G$ is Abelian, $| Z ( G ) | = p q$ .
+Let $| G | = p q$ , as above.
+Since $Z ( G )$ is a normal subgroup of $G , | Z ( G ) | = 1 , p , q ,$ or $p q$ . If $G$ is Abelian, $| Z ( G ) | = p q$ .
 
-Assume $G$ is not Abelian. Without loss of generality, let $| Z ( G ) | = p$ . Then $| G / Z ( G ) | = q$ which is prime. Hence $| G / Z ( G ) |$ is cyclic and $G$ is Abelian. But this is a contradiction. Hence $| Z ( G ) | = 1$ .
+Assume $G$ is not Abelian.
+Without loss of generality, let $| Z ( G ) | = p$ . Then $| G / Z ( G ) | = q$ which is prime.
+Hence $| G / Z ( G ) |$ is cyclic and $G$ is Abelian.
+But this is a contradiction.
+Hence $| Z ( G ) | = 1$ .
 
 ## 51: Let $N$ be a normal subgroup of $G$ and let $H$ be a subgroup of $G$ . If $N$ is a subgroup of $H$ , prove that $H / N$ is a normal subgroup of $G / N$ if and only if $H$ is a normal subgroup of $G$ .
 
@@ -126,7 +142,9 @@ Let $H$ and $K$ be normal subgroups of $G$ . Let $x \in H \cap K$ and $g \in G$ 
 
 ## 61: Let $H$ be a normal subgroup of a finite group $G$ and let $x \in G$ . If $\operatorname { g c d } ( | x | , | G / H | ) = 1$ , show that $x \in H$ .
 
-Let $\operatorname { g c d } ( | x | , | G / H | ) = 1$ as above. From an earlier problem we know that $| x H |$ must divide $| x |$ , so $\operatorname { g c d } ( | x H | , | G / H | )$ must also be 1. But we also know that $| x H |$ must divide $| G / H |$ because $x H$ is an element of this group. Hence $| x H | = 1$ , so $x H = H$ , which implies $x \in H$ .
+Let $\operatorname { g c d } ( | x | , | G / H | ) = 1$ as above.
+From an earlier problem we know that $| x H |$ must divide $| x |$ , so $\operatorname { g c d } ( | x H | , | G / H | )$ must also be 1. But we also know that $| x H |$ must divide $| G / H |$ because $x H$ is an element of this group.
+Hence $| x H | = 1$ , so $x H = H$ , which implies $x \in H$ .
 
 # 63: If $N$ is a normal subgroup of $G$ and $| G / N | = m$ , show that $x ^ { m } \in N$ for all $x \in G$ .
 
@@ -150,12 +168,21 @@ $$
 \alpha _ { 6 } \alpha _ { 9 } H = ( 2 4 3 ) ( 1 3 2 ) H = ( 1 2 ) ( 3 4 ) H = H \qquad \text { and } \qquad \alpha _ { 7 } \alpha _ { 1 1 } H = ( 1 4 2 ) ( 2 3 4 ) H = ( 1 4 ) ( 2 3 ) H \neq H .
 $$
 
-This shows that multiplication is not well defined for these cosets and hence the left cosets of $H$ do not form a group under coset multiplication. This does not surprise us since we know that normality was required for well-defined coset multiplication.
+This shows that multiplication is not well defined for these cosets and hence the left cosets of $H$ do not form a group under coset multiplication.
+This does not surprise us since we know that normality was required for well-defined coset multiplication.
 
 ## 47: Suppose that $N$ is a normal subgroup of a finite group $G$ and $H$ is a subgroup of $G$ . If $| G / N |$ is prime, prove that $H$ is contained in $N$ or that $N H = G$ .
 
-Let $N$ be a normal subgroup of a finite group $G$ , and $H$ be any subgroup of $G$ . Let $| G / N | = p ,$ a prime. Now we know that $N \subseteq N H \subseteq G$ . Therefore, $p = | G : N | = | G : N H | \times | N H : N |$ . Thus $| G : N H |$ is $p$ or 1. If $| G : N H | = 1$ , then $G = N H$ . If $| G : N H | = p$ , then $| N H : N | = 1$ so $N H = N$ , which means that $H \subseteq N$ .
+Let $N$ be a normal subgroup of a finite group $G$ , and $H$ be any subgroup of $G$ . Let $| G / N | = p ,$ a prime.
+Now we know that $N \subseteq N H \subseteq G$ . Therefore, $p = | G : N | = | G : N H | \times | N H : N |$ . Thus $| G : N H |$ is $p$ or 1. If $| G : N H | = 1$ , then $G = N H$ . If $| G : N H | = p$ , then $| N H : N | = 1$ so $N H = N$ , which means that $H \subseteq N$ .
 
 # 65: If $G$ is non-Abelian, show that $\operatorname { A u t } ( G )$ is not cyclic.
 
-Proof. Suppose not. Let $\operatorname { A u t } ( G )$ be cyclic. Then $\operatorname { I n n } ( G )$ is cyclic since $\operatorname { I n n } ( G )$ is a subgroup of $\operatorname { A u t } ( G )$ and subgroups of cyclic groups are cyclic. We know that $\operatorname { I n n } ( G ) \approx G / Z ( G )$ so $G / Z ( G )$ must be cyclic. But this implies that $G$ is Abelian, which is a contradiction. Thus $\operatorname { A u t } ( G )$ is not cyclic. □
+Proof.
+Suppose not.
+Let $\operatorname { A u t } ( G )$ be cyclic.
+Then $\operatorname { I n n } ( G )$ is cyclic since $\operatorname { I n n } ( G )$ is a subgroup of $\operatorname { A u t } ( G )$ and subgroups of cyclic groups are cyclic.
+We know that $\operatorname { I n n } ( G ) \approx G / Z ( G )$ so $G / Z ( G )$ must be cyclic.
+But this implies that $G$ is Abelian, which is a contradiction.
+Thus $\operatorname { A u t } ( G )$ is not cyclic.
+□
