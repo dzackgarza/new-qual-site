@@ -8,8 +8,10 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import pytest
+from conftest import fixture_repo, run_qualc
 from qualc.emit import mathjax_header
 from qualc.static_site import StandardPage, build_asset_catalog, write_page
+from test_invariants import Element, read_html
 
 
 def _mathjax_macros(header: str) -> dict[str, str]:
@@ -84,3 +86,17 @@ def test_missing_asset_fails_the_build(tmp_path: Path) -> None:
             build_asset_catalog(assets_root),
             StandardPage(),
         )
+
+
+def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
+    filters = page.root.find_all("div", **{"class": "problem-filters"})
+    assert len(filters) == 1
+    labels = [child for child in filters[0].children if isinstance(child, Element) and child.tag == "label"]
+    controls = [[child.tag for child in label.children if isinstance(child, Element)] for label in labels]
+    assert controls == [["input"], ["select"], ["select"], ["select"], ["select"]]
