@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Special Unitary Group"}
+:::{.definition}
 \[
 \SU_n(\CC) \da \ts{ A \in U_n(\CC) \st \det A = 1  }
 .\]

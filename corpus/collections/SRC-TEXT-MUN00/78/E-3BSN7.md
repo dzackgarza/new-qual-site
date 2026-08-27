@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-3BSN7
 kind: exercise
 title: Triangular schemes for two collections of four triangles
+subtitle: Munkres §78.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §78.1"}
+::: {.exercise}
 
 What space is indicated by each of the following labelling schemes for a collection of four triangular regions?
 

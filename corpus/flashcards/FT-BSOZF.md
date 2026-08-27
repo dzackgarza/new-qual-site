@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.theorem title="Dirichlet's Test"}
+::: {.theorem}
 If $\theset{a_n}, \theset{b_n}$ satisfy
 
 - $  a_n \searrow 0$

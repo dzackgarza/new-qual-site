@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-2
 kind: exercise
 title: "Choice functions for countable collections"
+subtitle: Munkres §9.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.2"}
+::: {.exercise}
 
 Find if possible a choice function for each of the following collections, without using the choice axiom:
 

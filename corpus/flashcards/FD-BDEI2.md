@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Deformation Retract"}
+::: {.definition}
 Deformation Retract: A subspace $A \subset X$ is a *deformation retract* of $X$ iff there exists a deformation retraction: a continuous map $F:X\cross I$ to $X$ such that
 
 $$

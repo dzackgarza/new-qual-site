@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Hahn-Banach"}
+::: {.theorem}
 Let $\mathcal X$ be a real vector space and $p: \mathcal X\to\RR$ a **sublinear functional**, i.e. $p(x+y) \leq p(x) + p(y)$ and $p(\lambda x) = \lambda p(x)$ for all $x,y\in \mathcal X$ and all $\lambda \geq 0$.
 Let $\mathcal M \subseteq \mathcal X$ be a subspace and $f$ a linear functional on $\mathcal M$ with $f \leq p$ on $\mathcal M$.
 Then $f$ extends to a linear functional $F$ on all of $\mathcal X$ with $\ro{F}{\mathcal M} = f$ and $F \leq p$ on $\mathcal X$.

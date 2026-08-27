@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-3SH7
 kind: exercise
 title: "Row-reduction and invertible matrix factorization $R = PA$"
+subtitle: Hoffman and Kunze 1.6.1
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.1"}
+::: {.exercise}
 Let
 
 $$

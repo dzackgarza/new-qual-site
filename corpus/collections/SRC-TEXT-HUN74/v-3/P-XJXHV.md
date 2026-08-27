@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.3.12"}
+::: {.problem}
 Let $E$ be an intermediate field extension in $K \leq E \leq F$.
 
 1. Show that if $u\in F$ is separable over over $K$, then $u$ is separable over $E$.

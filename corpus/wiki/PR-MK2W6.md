@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Irreducible polynomials have separable splitting fields"}
+::: {.proposition}
 Irreducible polynomials have distinct roots after passing to a splitting field.
 :::

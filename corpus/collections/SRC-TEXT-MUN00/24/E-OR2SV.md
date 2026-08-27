@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OR2SV
 kind: exercise
 title: No two of the unit interval variants are homeomorphic
+subtitle: Munkres §24.1
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.1"}
+::: {.exercise}
 
 (a) Show that no two of the spaces $(0, 1)$, $(0, 1]$, and $[0, 1]$ are homeomorphic.
 [Hint: What happens if you remove a point from each of these spaces?]

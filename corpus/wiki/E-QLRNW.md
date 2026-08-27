@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Uniform limits of derivatives, term-by-term differentiation"}
+:::{.exercise}
 Suppose $f_k: \Omega\to \CC$ is a sequence of differentiable functions converging locally uniformly to $f:\Omega\to \CC$.
 Show that
 

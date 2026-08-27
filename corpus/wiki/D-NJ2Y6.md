@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simplicial Complex"}
+::: {.definition}
 Given a simplex $\sigma = [v_1 \cdots v_n]$, define the **face map**
 \[
 \del_i:\Delta^n &\to \Delta^{n-1} \\ 

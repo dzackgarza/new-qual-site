@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residues at $\infty$"}
+:::{.exercise}
 Compute
 \[
 &\Res_{z=\infty}e^z\\

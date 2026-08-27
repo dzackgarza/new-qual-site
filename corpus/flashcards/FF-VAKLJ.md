@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Order of the smallest nonabelian group"}
+::: {.fact}
 Order six: $D_3$
 :::

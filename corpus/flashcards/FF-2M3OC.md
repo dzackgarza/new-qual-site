@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Reverse Triangle Inequality"}
+::: {.fact}
 $\abs{\norm x - \norm y} \leq \norm{x-y}$
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-8NCA4
 kind: exercise
 title: Free product construction in §68
+subtitle: Munkres §68.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §68.1"}
+::: {.exercise}
 
 Check the details of Example 1 of §68.
 :::

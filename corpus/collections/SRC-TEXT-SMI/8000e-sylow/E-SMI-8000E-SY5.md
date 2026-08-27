@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-SY5
 kind: exercise
 title: Solvability of groups of order pq and p^2 q
+subtitle: Smith 8000e sylow 5
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e sylow 5"}
+::: {.exercise}
 If $p$, $q$ are distinct primes, prove:
 
 (i) every group of order $pq$ is solvable;

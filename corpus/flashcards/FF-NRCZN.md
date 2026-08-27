@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a dense subset?"}
+::: {.fact}
 A subset $ A\subseteq X $ is *dense* in $ X $ $ \iff $ $ \mathrm{cl}_X(A) = X $.
 :::

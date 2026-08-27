@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Separability is transitive."}
+::: {.proposition}
 If $L/K/k$, then $L/K$ is separable and $K/k$ is separable $\iff$ $L/k$ is separable:
 
 \begin{tikzcd}

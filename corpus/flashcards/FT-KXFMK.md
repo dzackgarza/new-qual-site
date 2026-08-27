@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Equivalent characterizations of measurability of a set"}
+::: {.theorem}
 $E\subset \RR^n$ is measurable iff any of these conditions hold
 
 - There exist closed $F\subseteq E$ with $m_*(E\setminus F) < \varepsilon \to 0$.

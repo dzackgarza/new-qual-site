@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-L0BW8
 kind: exercise
 title: The reduction algorithm applied to eight schemes
+subtitle: Munkres §77.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §77.3"}
+::: {.exercise}
 
 The proof of the classification theorem provides an algorithm for taking a proper labelling scheme for a polygonal region and reducing it to one of the four standard forms indicated in the theorem.
 The appropriate equivalences are the following:

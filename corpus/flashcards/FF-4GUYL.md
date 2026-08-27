@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="General form of maps in $\aut(\DD)$."}
+::: {.fact}
 $$f_\alpha(z) \definedas {\alpha - z \over 1 - \bar\alpha z}$$
 :::

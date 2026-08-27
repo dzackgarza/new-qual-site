@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MPUGI
 kind: exercise
 title: Products with a locally compact Hausdorff factor preserve quotient maps
+subtitle: Munkres §46.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.9"}
+::: {.exercise}
 
 Here is an application of Theorem 46.11 to quotient maps.
 (Compare [[E-S57IX]].)

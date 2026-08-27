@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PFQIX
 kind: exercise
 title: Separation properties of topological groups and coset spaces
+subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22 Supplementary"}
+::: {.exercise}
 
 If $A$ and $B$ are subsets of the topological group $G$, let $A \cdot B$ denote the set of all points $a \cdot b$ for $a \in A$ and $b \in B$.
 Let $A^{-1}$ denote the set of all points $a^{-1}$, for $a \in A$.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZEESK
 kind: exercise
 title: The metric is continuous exactly for its own topology
+subtitle: Munkres §20.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.3"}
+::: {.exercise}
 
 Let $X$ be a metric space with metric $d$.
 

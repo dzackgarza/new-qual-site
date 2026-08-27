@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simple group"}
+::: {.definition}
 No nontrivial normal subgroups
 :::

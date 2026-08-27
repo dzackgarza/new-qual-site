@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.4.10 a/g/h"}
+::: {.problem}
 Determine the Galois groups of the following polynomials over the corresponding fields:
 
 1. $x^4- 5$ over $\mathbb Q, \mathbb Q(\sqrt 5), \mathbb Q(i\sqrt 5)$.

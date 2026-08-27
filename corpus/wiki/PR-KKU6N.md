@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-plane to vertical half-strip"}
+:::{.proposition}
 \[
 ? &\mapstofrom ? \\
 z &\mapsto \sin(z) \\

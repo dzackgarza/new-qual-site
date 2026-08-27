@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Young's Product Inequality"}
+:::{.proposition}
 \[
 AB \leq {A^p \over p} + {B^q \over q}
 .\]

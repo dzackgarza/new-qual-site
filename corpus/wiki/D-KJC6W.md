@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Closed Sets"}
+::: {.definition}
 \envlist
 
 - A set is closed if and only if its complement is open.

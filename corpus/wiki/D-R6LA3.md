@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Singular Cochain"}
+::: {.definition}
 
 \[x \in C^n(x) \implies X = \sum_{i} n_{i} \psi_{i} = \sum_{i} n_{i} (\sigma_{i} \mapsvia{\psi_{i}} X) .\]
 :::

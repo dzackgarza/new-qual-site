@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Ratio Test"}
+::: {.proposition}
 Consider $\sum c_k z^k$, set $R = \lim \abs{c_{k+1} \over c_k}$, and recall the **ratio test**:
 
 - $R\in (0, 1) \implies$ convergence.

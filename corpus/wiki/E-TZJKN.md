@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Holomorphic functions have harmonic components"}
+:::{.exercise}
 Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.
 :::
 

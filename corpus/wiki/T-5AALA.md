@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Parseval"}
+:::{.theorem}
 Let $\ts{u_n}_{n\in A}$ be an orthonormal set in a Hilbert space $\mch$.
 TFAE:
 

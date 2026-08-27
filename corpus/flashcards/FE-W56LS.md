@@ -15,6 +15,6 @@ relations:
 review: draft
 ---
 
-::: {.example title="Does $A^n=B^\n$ imply $A=B$?"}
+::: {.example}
 No, counterexample: $M^2 = [0, 1; 1, 0]^2 = I_2$.
 :::

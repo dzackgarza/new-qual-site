@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Entire functions missing a disc"}
+::: {.exercise}
 Show that if $f$ is entire and there exists a disc $\DD_r(a)$ not intersecting $f(\CC)$, then $f$ must be constant.
 :::
 

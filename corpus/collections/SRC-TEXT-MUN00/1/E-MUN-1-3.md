@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-3
 kind: exercise
 title: "Contrapositive, converse, and truth of conditional statements"
+subtitle: Munkres §1.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.3"}
+::: {.exercise}
 
 (a) Write the contrapositive and converse of the following statement: "If $x < 0$, then $x^2 - x > 0$," and determine which (if any) of the three statements are true.
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Complement of the disc to $\mathbb{H}$"}
+:::{.exercise}
 Find a conformal map $\DD^c \intersect \HH \to \HH$.
 :::
 

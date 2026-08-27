@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Comparison Test"}
+::: {.proposition}
 If $0\leq a_n \leq b_n$, then
 
 - $\sum b_n < \infty \implies \sum a_n < \infty$, and

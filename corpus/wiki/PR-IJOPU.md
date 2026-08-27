@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Reverse Triangle Inequality"}
+:::{.proposition}
 \[  
 \abs{\norm{x} - \norm{y}} \leq \norm{x - y}
 .\]

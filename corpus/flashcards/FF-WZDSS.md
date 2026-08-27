@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="The ext complex between $ C_n $ and $ A $."}
+::: {.fact}
 $$ \operatorname{Ext}^*_{\mathbf{Z}}(C_n, A) = A[n]\cdot t^0 \oplus (A/nA) \cdot t^1 \oplus \cdots$$
 :::

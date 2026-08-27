@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Recognizing Generalized Direct Products"}
+::: {.theorem}
 We have $G \cong \prod_{i=1}^n H_i$ when
 
 - $H_i \normal G$ for all $i$.

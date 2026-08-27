@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZHWI8
 kind: exercise
 title: The set where f is at most g is closed
+subtitle: Munkres §18.8
 classification:
   areas:
   - topology
@@ -14,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §18.8"}
+::: {.exercise}
 
 Let $Y$ be an ordered set in the order topology.
 Let $f, g: X \to Y$ be continuous.

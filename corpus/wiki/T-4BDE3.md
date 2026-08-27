@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Bessel's Inequality"}
+:::{.theorem}
 For any orthonormal set $\theset{u_{n}} \subseteq \mch$ a Hilbert space (not necessarily a basis),
 \[
 \left\|x-\sum_{n=1}^{N}\left\langle x, u_{n}\right\rangle u_{n}\right\|^{2}=\|x\|^{2}-\sum_{n=1}^{N}\left|\left\langle x, u_{n}\right\rangle\right|^{2}

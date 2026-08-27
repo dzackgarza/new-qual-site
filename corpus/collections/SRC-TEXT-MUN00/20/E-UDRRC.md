@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-UDRRC
 kind: exercise
 title: The euclidean metric via the Cauchy-Schwarz inequality
+subtitle: Munkres §20.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.9"}
+::: {.exercise}
 
 Show that the euclidean metric $d$ on $\mathbb{R}^n$ is a metric, as follows.
 If $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $c \in \mathbb{R}$, define

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Four Properties of Outer Measure"}
+::: {.definition}
 1. Monotonicity
 
 2. Countable Subadditivity

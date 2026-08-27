@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Normal extensions are upper transitive, forward implication"}
+::: {.proposition}
 For $L/k$ finite,
 
 \begin{tikzcd}

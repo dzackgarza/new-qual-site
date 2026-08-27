@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residues and classifying singularities"}
+:::{.exercise}
 Classify the singularities of 
 \[
 f(z) = {z^3+1\over z^2(z+1)}

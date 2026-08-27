@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper-half-plane to sectors and back"}
+:::{.proposition}
 \[
 F: \ts{z\st \Arg(z) \in \qty{0, {\pi \over n}} } &\to \HH \\
 z &\mapsto z^n \\

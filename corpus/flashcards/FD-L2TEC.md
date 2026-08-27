@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Class Equation"}
+::: {.definition}
 $$
 \abs{G} = \abs{Z(G)} + \sum_{i} [G: C_G(x_i)]
 $$

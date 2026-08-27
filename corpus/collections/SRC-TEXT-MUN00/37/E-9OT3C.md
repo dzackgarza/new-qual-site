@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9OT3C
 kind: exercise
 title: Quasicomponents equal components in compact Hausdorff spaces
+subtitle: Munkres §37.4
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §37.4"}
+::: {.exercise}
 
 Here is another theorem whose proof uses Zorn's lemma.
 Recall that if $A$ is a space and if $x, y \in A$, we say that $x$ and $y$ belong to the same quasicomponent of $A$ if there is no separation $A = C \cup D$ of $A$ into two disjoint sets open in $A$ such that $x \in C$ and $y \in D$.

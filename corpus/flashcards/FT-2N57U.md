@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Casorati-Weierstrass Theorem"}
+::: {.theorem}
 - If $f$ is holomorphic on $\Omega\setminus\theset{z_0} \subseteq \CC$ where $z_0$ is an essential singularity and $V\subseteq \Omega$ then $f(V\setminus\theset{z_0}) \injects \CC$ is dense.
 
 - If $f$ is non-constant and entire then $f(\CC)\injects \CP^1$ is dense.

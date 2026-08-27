@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-T8UBC
 kind: exercise
 title: Graphs as an imbedding of the function space into the hyperspace
+subtitle: Munkres §45.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §45.8"}
+::: {.exercise}
 
 Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces; give $X \times Y$ the corresponding square metric; let $\mathcal{H}$ denote the collection of all nonempty closed, bounded subsets of $X \times Y$, in the resulting Hausdorff metric.
 Consider the space $\mathcal{C}(X, Y)$ in the uniform metric; let $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ be the function that assigns, to each continuous function $f: X \to Y$, its graph

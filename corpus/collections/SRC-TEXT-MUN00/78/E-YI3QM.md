@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YI3QM
 kind: exercise
 title: The closed disk as a surface with boundary
+subtitle: Munkres §78.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §78.3"}
+::: {.exercise}
 
 Show that the closed unit ball in $\mathbb{R}^2$ is a 2-manifold with boundary.
 :::

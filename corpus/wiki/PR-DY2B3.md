@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Useful properties of the Fourier transform"}
+:::{.proposition}
 \[
 \widehat{f\ast g}(\xi)
 &= \hat f(\xi) \cdot \hat g (\xi) \\

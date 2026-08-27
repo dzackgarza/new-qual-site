@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simple Groups"}
+::: {.definition}
 A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
 :::

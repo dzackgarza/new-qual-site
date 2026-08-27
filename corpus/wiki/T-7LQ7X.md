@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Properties of measures"}
+:::{.theorem}
 Let $(X, \mcm, \mu)$ be a measure space.
 Then
 

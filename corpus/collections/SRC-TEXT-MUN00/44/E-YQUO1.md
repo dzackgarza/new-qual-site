@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YQUO1
 kind: exercise
 title: Peano spaces and the Hahn-Mazurkiewicz theorem
+subtitle: Munkres §44.4
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §44.4"}
+::: {.exercise}
 
 (a) Let $X$ be a Hausdorff space.
 Show that if there is a continuous surjective map $f: I \to X$, then $X$ is compact, connected, weakly locally connected, and metrizable.

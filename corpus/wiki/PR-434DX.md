@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Formula for partitions"}
+:::{.proposition}
 There is a recurrence relation
 \[
 P_k(n) = P_k(n-k) + P_{k-1}(n-1)

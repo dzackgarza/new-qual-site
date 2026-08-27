@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="When bounds imply removability"}
+:::{.exercise}
 Suppose $f$ is holomorphic with $z_0 = 0$ an isolated singularity, and suppose there is some neighborhood of $0$ on which
 \[
 \abs{f(z)} \leq \abs{z}^{-{ 1\over 2}}

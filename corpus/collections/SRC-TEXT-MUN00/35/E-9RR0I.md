@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9RR0I
 kind: exercise
 title: The universal extension property
+subtitle: Munkres §35.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §35.5"}
+::: {.exercise}
 
 A space $Y$ is said to have the universal extension property if for each triple consisting of a normal space $X$, a closed subset $A$ of $X$, and a continuous function $f: A \to Y$, there exists an extension of $f$ to a continuous map of $X$ into $Y$.
 

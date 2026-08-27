@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Log properties can fail"}
+:::{.exercise}
 Show that
 
 - $\log(zw)\neq \log(z)\log(w)$

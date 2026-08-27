@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-X04YN
 kind: exercise
 title: Elementary operations behind the classification figures
+subtitle: Munkres §77.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §77.2"}
+::: {.exercise}
 
 (a) Write down the sequence of elementary operations required to carry out the arguments indicated in Figures 77.1 and 77.2.
 

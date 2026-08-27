@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The sign homomorphism"}
+:::{.definition}
 Writing a cycle as a product of transpositions,
 the map defined by
 \[

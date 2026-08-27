@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 15"}
+::: {.fact}
 $\ZZ/15\ZZ$
 :::

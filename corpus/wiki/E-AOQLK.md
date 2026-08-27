@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residues using partial fractions/principal parts"}
+:::{.exercise}
 Find all residues of the following function by writing it as a sum of principal parts at its poles:
 \[
 f(z) = {z^3 \over z^2 + 1}

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-A7HJX
 kind: exercise
 title: Kernels under surjective composites of homomorphisms
+subtitle: Munkres §73.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §73.3"}
+::: {.exercise}
 
 Lemma.
 Let $f: G \to H$ and $g: H \to K$ be homomorphisms; assume $f$ is surjective.

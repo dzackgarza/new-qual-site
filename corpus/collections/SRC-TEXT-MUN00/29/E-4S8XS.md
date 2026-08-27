@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4S8XS
 kind: exercise
 title: Nets in Hausdorff spaces have at most one limit
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
 :::

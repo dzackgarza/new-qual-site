@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Application of translation action on cosets"}
+::: {.proposition}
 If $G$ is a finite group and $p\da [G:H]$ is the smallest prime dividing $\# G$, then $H\normal G$.
 :::

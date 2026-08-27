@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Jordan's Lemma"}
+::: {.proposition}
 Suppose that $f(z) = e^{iaz}g(z)$ for some $g$, and let $C_R \da \ts{ z=Re^{it} \st t\in [0, \pi] }$.
 Then
 \[

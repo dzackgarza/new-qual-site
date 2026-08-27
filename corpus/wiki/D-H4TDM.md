@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Gram Matrix"}
+::: {.definition}
 For $b$ a bilinear form on a finite-dimensional $k\dash$vector space $V$ with ordered basis $\mathcal B = \ts{e_1, \cdots, e_n}$, the **Gram matrix** of $b$ with respect to $\mathcal B$ is
 \[
 G \da \qty{ b(e_i, e_j) }_{i,j}

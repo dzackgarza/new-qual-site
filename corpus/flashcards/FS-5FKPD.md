@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.strategy title="Showing uniform convergence of a *series* of functions"}
+::: {.strategy}
 $M\dash$test: find $M_n$ independent of $x$ such that $\norm{f_n}_\infty < M_n$ where $\sum M_n < \infty$.
 :::

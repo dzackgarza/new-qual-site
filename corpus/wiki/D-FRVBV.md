@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Mobius transformation"}
+:::{.definition}
 A map of the following form is a **linear fractional transformation** ( or a **Mobius transformation**):
 \[  
 T(z) = {az + b \over cz + d}

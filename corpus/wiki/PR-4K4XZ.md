@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Free implies torsionfree"}
+::: {.proposition}
 For $R$ an integral domain, any finitely generated free \(R\dash\)module $M$ is torsionfree.
 :::

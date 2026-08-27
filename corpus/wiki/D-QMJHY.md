@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Weak Homotopy Equivalence"}
+::: {.definition}
 A map $f: X\to Y$ inducing isomorphisms
 \[
 f_*: \pi_n(X, x_0) \mapsvia{\sim} \pi_n(Y, f(x_0))

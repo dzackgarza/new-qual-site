@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Computing residues: $1/z^2\sin(z)$"}
+:::{.exercise}
 Compute
 \[
 \Res_{z=0} {1\over z^2 \sin(z)}

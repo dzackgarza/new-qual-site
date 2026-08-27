@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Lebesgue Integral"}
+:::{.definition}
 \[
 \int_X f \da \sup \ts{ \int s(x) \dmu \st 0\leq s \leq f, s\text{ simple } } 
 .\]

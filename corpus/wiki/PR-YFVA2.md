@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Functional analytic properties of $L^1$ and $L^2$"}
+::: {.proposition}
 For any measure space $(X, \mcm, \mu)$,
 
 - $L^1(X)$ is Banach space.

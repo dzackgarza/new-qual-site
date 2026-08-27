@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-7-7
 kind: exercise
 title: Equal cardinality of $\{0,1\}^{\omega}$ subsets
+subtitle: Munkres §7.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §7.7"}
+::: {.exercise}
 
 Show that the sets D and E of Exercise 5 have the same cardinality.
 :::

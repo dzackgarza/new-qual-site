@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Seifert-van Kampen"}
+:::{.theorem}
 Suppose $X = U_{1} \union U_{2}$ where $U_1, U_2$, and $U \da U_{1} \intersect U_{2} \neq \emptyset$ are open and path-connected 
 [^path_connected_necessary]
 

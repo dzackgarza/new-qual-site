@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cycle"}
+::: {.definition}
 An $n\dash$chain $\alpha \in C_n(X)$ with $\del_n \alpha = 0$, i.e. an element of $Z_n(X)\da \ker \del_n$.
 Homology is cycles modulo boundaries, $H_n(X) = Z_n(X)/B_n(X)$ with $B_n(X)\da \im \del_{n+1}$.
 :::

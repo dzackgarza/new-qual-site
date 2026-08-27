@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Example of a conformal map that is not injective."}
+::: {.example}
 $$z\mapsto e^z$$
 
 Not injective because it is periodic, not surjective because it's never zero.

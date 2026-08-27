@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The Infinity Norm / Essential supremum / Essentially bounded"}
+:::{.definition}
 \[
 \norm{f}_\infty &\definedas \inf_{\alpha \geq 0} \theset{\alpha \suchthat \mu\qty{\theset{\abs{f} \geq \alpha}} = 0}
 .\]

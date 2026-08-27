@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4PQ1O
 kind: exercise
 title: Coordinatewise convergence of nets in products
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Suppose that
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-7
 kind: exercise
 title: "Extending the laws of exponents to all integers"
+subtitle: Munkres §4.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.7"}
+::: {.exercise}
 
 Let $a \in \mathbb{R}$ and $a \neq 0$ . Define $a^0 = 1$, and for $n \in \mathbb{Z}_+$, $a^{-n} = 1 / a^n$ . Show that the laws of exponents hold for $a, b \neq 0$ and $n, m \in \mathbb{Z}$ .
 :::

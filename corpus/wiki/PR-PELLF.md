@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-disc to horizontal upper-left-half-strip"}
+:::{.proposition}
 \[
 F: \DD \intersect \HH &\to \RR_{<0} \times i (0, i\pi) \\
 z &\mapsto \Log(z) \\

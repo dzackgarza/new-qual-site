@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Convergence implies convergence of inner products"}
+:::{.proposition}
 If $x_k\to x$ and $y_k\to y$ in $H$, then $\inner{x_k}{y_k} \to \inner{x}{y}$.
 Proof:
 \[

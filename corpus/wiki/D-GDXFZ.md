@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Proper"}
+::: {.definition}
 
 Several equivalent definitions.
 Let $f: X\to Y$ be continuous, then $f$ is **proper** iff

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MD9QR
 kind: exercise
 title: The ordered square is locally connected but not locally path connected
+subtitle: Munkres §25.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §25.3"}
+::: {.exercise}
 
 Show that the ordered square is locally connected but not locally path connected.
 What are the path components of this space?

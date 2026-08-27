@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lusin's Theorem"}
+::: {.theorem}
 If $f$ is measurable and finite-valued on $E$ with $\mu(E) < \infty$ then for every $\eps>0$ there exists a closed set $F_\eps$ with
 \[
 F_\eps \subset F && \mu(E - F_\eps) \leq \eps

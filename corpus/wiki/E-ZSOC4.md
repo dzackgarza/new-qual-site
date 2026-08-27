@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Forcing a map to be the identity"}
+:::{.exercise}
 Let $\psi_a$ be a Blaschke factor and use the Schwarz lemma to prove that $\psi_a \circ \psi_a = \id_\DD$.
 
 :::

@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Finite unions of nowhere dense sets are still nowhere dense"}
+::: {.proposition}
 A *finite* union of nowhere dense is again nowhere dense.
 :::

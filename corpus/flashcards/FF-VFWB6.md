@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Angle addition formulas: $ \cosh(x+iy) = \cdots .$"}
+::: {.fact}
 $$
 \cosh (x+i y) =\cosh (x) \cos (y)+i \sinh (x) \sin (y) 
 .$$

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Resolvent of a quartic"}
+:::{.definition}
 If 
 \[
 f(x)=x^{4}+a_{3} x^{3}+a_{2} x^{2}+a_{1} x+a_{0}

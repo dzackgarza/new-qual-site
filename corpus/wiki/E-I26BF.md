@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Injective implies nonvanishing derivative"}
+::: {.exercise}
 Show that if $f$ is holomorphic on $\Omega$ and injective, then $f'(z)$ is nonvanishing on $\Omega$.
 :::
 

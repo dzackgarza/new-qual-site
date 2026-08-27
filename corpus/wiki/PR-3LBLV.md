@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-plane to centered vertical half-strip"}
+:::{.proposition}
 \[
 F: \HH &\to \qty{-{\pi \over 2}, {\pi \over 2}} \cross i\RR \\
 z &\mapsto \sin(z)

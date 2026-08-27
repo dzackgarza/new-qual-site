@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Riesz Representation for Hilbert Spaces"}
+:::{.theorem}
 If $\Lambda$ is a continuous linear functional on a Hilbert space $H$, then there exists a unique $y \in H$ such that
 \[
 \forall x\in H,\quad \Lambda(x) = \inner{x}{y}

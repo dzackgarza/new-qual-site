@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-AY5GK
 kind: exercise
 title: Topologically complete spaces
+subtitle: Munkres §43.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.6"}
+::: {.exercise}
 
 A space $X$ is said to be topologically complete if there exists a metric for the topology of $X$ relative to which $X$ is complete.
 

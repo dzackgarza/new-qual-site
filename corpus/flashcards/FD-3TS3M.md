@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="First Countable"}
+::: {.definition}
 A space $X$ is **first countable** iff each $x\in X$ admits a countable neighborhood basis.
 :::

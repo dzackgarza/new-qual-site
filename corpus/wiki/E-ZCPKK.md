@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Purely imaginary if on circle"}
+:::{.exercise}
 Show that ${z-1\over z+1}$ is purely imaginary $\iff z\in S^1$.
 
 > Hint: $z$ is real iff $\bar{z} = z$ and purely imaginary iff $\bar{z} = -z$.

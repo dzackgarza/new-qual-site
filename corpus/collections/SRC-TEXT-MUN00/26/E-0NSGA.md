@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-0NSGA
 kind: exercise
 title: Products of compact sets in topological groups
+subtitle: Munkres §26.13
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.13"}
+::: {.exercise}
 
 Let $G$ be a topological group.
 

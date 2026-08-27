@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Complex fractional powers"}
+:::{.definition}
 Define
 \[
 z^\alpha \da e^{\alpha \log(z)}

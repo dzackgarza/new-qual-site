@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Zeros and their orders"}
+:::{.proposition}
 A **zero** of an analytic function on a domain $\Omega$ is any $z_0$ such that $f(z_0)=0$, with no further conditions.
 If $f$ is analytic and not identically zero on $\Omega$ with $f(z_0) = 0$, then there exists a  neighborhood $U\ni z_0$ and function $g$ that is holomorphic and nonvanishing on $U$ such that 
 \[

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-79XXG
 kind: exercise
 title: Covering transformations of four coverings of the figure eight
+subtitle: Munkres §81.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §81.2"}
+::: {.exercise}
 
 Let $X = A \vee B$ be the wedge of two circles.
 

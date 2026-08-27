@@ -18,7 +18,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Class equation"}
+::: {.theorem}
 Let a finite group $G$ act on itself by conjugation. The fixed points are
 $Z(G)$, the orbit of $x$ is its conjugacy class, and the stabilizer of $x$ is
 its centralizer $C_G(x)$. Consequently,

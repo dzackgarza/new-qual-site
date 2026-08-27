@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Trig identities"}
+:::{.exercise}
 Find an identity for $\cos(4\theta)$ in terms of $\sin(\theta)$ and $\cos(\theta)$.
 :::
 

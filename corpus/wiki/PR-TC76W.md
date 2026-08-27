@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="The four big counterexamples in convergence"}
+::: {.proposition}
 \envlist
 
 1. Uniform: $f_n \uniformlyconverges f: \forall \varepsilon ~\exists N \suchthat ~n\geq N \implies \abs{f_N(x) - f(x)} < \varepsilon \quad \forall x.$

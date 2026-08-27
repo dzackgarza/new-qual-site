@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Fall 2006, 13"}
+::: {.problem}
 \envlist
 
 a. Prove that if the space $X$ is connected and locally path connected then $X$ is path connected.

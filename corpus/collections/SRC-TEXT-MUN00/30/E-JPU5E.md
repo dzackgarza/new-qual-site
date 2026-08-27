@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-JPU5E
 kind: exercise
 title: Lindelofness and separability pass to continuous images
+subtitle: Munkres §30.11
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §30.11"}
+::: {.exercise}
 
 Let $f: X \to Y$ be continuous.
 Show that if $X$ is Lindelöf, or if $X$ has a countable dense subset, then $f(X)$ satisfies the same condition.

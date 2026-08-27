@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZXEH5
 kind: exercise
 title: Generalized tube lemma for compact rectangles
+subtitle: Munkres §26.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.9"}
+::: {.exercise}
 
 Generalize the tube lemma as follows.
 

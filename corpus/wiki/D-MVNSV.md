@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Basis of a module"}
+::: {.definition}
 For an $R\dash$module $M$, a basis $B$ is a linearly independent generating set.
 :::

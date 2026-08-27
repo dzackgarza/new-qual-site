@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Stein/Shakarchi 1.20: Series convergence on the circle"}
+:::{.exercise}
 Show that
 
 1. $\sum kz^k$ diverges on $S^1$.

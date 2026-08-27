@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Cone"}
+:::{.definition}
 For a space $X$, defined as
 \[  
 CX = \frac{X\cross I} {X \cross \theset{0}}

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Extending the class of measurable functions."}
+::: {.proposition}
 
 - Characteristic functions are measurable
 

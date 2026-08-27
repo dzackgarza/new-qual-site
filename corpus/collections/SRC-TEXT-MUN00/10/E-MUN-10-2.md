@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-2
 kind: exercise
 title: "Immediate successors in well-ordered sets"
+subtitle: Munkres §10.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.2"}
+::: {.exercise}
 
 (a) Show that in a well-ordered set, every element except the largest (if one exists) has an immediate successor.
 

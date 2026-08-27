@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1FRQL
 kind: exercise
 title: Thomae-type function continuous at each irrational
+subtitle: Munkres §48.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §48.9"}
+::: {.exercise}
 
 Let $g: \mathbb{Z}_+ \to \mathbb{Q}$ be a bijective function; let $x_n = g(n)$.
 Define $f: \mathbb{R} \to \mathbb{R}$ as follows:

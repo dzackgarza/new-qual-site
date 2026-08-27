@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Maximal implies prime"}
+:::{.problem}
 Maximal $\implies$ prime, but generally not the converse.
 :::
 

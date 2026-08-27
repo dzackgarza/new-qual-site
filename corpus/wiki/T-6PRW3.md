@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Tonelli (Non-Negative, Measurable)"}
+::: {.theorem}
 For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$,
 
 - $f_x(y)$ is a **measurable** function

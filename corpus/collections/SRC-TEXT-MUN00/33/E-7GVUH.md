@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-7GVUH
 kind: exercise
 title: Level sets of the Urysohn function
+subtitle: Munkres §33.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §33.1"}
+::: {.exercise}
 
 Examine the proof of the Urysohn lemma, and show that for given $r$,
 

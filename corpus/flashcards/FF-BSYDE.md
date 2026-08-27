@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a compact operator?"}
+::: {.fact}
 The image of every bounded subset has compact closure.
 
 Necessarily bounded

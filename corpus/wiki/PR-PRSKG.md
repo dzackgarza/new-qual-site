@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Corollary of Young's inequality"}
+:::{.proposition}
 Take $q = 1$ in Young's inequality to obtain
 \[
 \pnorm{f \ast g}p \leq \norm{f}p \norm{g}1

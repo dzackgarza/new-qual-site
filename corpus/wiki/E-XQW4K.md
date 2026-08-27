@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Showing singularities are removable"}
+:::{.exercise}
 Consider
 \[
 f(z) \da {1\over \sin(z)} - {1\over z} + {2z\over z^2-\pi^2}

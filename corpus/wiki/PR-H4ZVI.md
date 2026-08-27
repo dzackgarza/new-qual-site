@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Convergence in $L^1$ implies convergence of norms"}
+:::{.proposition}
 If $f\in L^1$, then
 \[
 \norm{f_n - f}_{L^1} \convergesto{n\to\infty}0 \iff \norm{f_n}_{L^1} \convergesto{n\to\infty} \norm{f}_{L^1}

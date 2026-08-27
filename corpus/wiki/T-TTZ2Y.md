@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Chinese Remainder Theorem"}
+:::{.theorem}
 \[
 \gcd(p, q) = 1 \implies \ZZ/p\ZZ \cross \ZZ/q\ZZ \cong \ZZ/pq\ZZ
 .\]

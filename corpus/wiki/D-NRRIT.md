@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Quadratic Form"}
+::: {.definition}
 A function $q: V\to k$ on a $k\dash$vector space with $q(\lambda x) = \lambda^2 q(x)$ for all $\lambda\in k$ and such that
 \[
 b_q(x, y) \da q(x+y) - q(x) - q(y)

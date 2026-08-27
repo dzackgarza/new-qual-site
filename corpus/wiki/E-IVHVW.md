@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Bounded above by Blaschke product"}
+:::{.exercise}
 Let $f: \DD\to \DD$ with $\ts{a_k}_{k\leq n}$ the zeros of $f$ in $\DD$.
 Show that
 \[

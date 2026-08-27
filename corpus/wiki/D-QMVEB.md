@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Normal Core of a subgroup"}
+:::{.definition}
 The largest normal subgroup of $G$ contained in $H$:
 \[
 H_G = \Intersect_{g\in G} gHg^{-1} = \gens{ N: N \normal G ~\&~ N \leq H} = \ker \psi

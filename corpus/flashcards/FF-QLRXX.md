@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Growth Rates of Common Functions"}
+::: {.fact}
 For $c>1$,
 $$
 n! > c^n > n^{c} > n\log(n) >  n > \log(n) > \log(\log(n)) > \cdots > 1

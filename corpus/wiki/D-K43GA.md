@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Contractible"}
+::: {.definition}
 A space $X$ is **contractible** if $\id_X$ is nullhomotopic.
 i.e. the identity is homotopic to a constant map $c(x) = x_0$.
 

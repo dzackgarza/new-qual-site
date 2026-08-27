@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-DM2U0
 kind: exercise
 title: The three-way split in the Tietze theorem proof
+subtitle: Munkres §35.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §35.2"}
+::: {.exercise}
 
 In the proof of the Tietze theorem, how essential was the clever decision in Step 1 to divide the interval $[-r, r]$ into three equal pieces?
 Suppose instead that one divides this interval into the three intervals

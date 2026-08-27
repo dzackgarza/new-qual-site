@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Using the estimates"}
+:::{.exercise}
 Suppose $f: \DD\to \DD$ with $f(0) = 0$ and $\abs{f(z)} \leq \abs{e^z}$ when $\abs{z} = 1$.
 Find an upper bound for $f\qty{1+i\over 2}$.
 

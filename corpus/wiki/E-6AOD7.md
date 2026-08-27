@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Applications of the class equation"}
+::: {.exercise}
 \envlist
 
 - Show that $p$ groups have nontrivial centers.

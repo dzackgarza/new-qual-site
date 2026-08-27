@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Classification for cubics"}
+::: {.proposition}
 Away from $\ch k = 2$, Galois groups of cubics are entirely determined by discriminants:
 
 **There are only two possibilities**: $S_3$ or $A_3 \cong C_3$.

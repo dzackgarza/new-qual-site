@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="The one-step submodule test"}
+::: {.proposition}
 $N\subseteq M$ is an $R\dash$submodule iff $N$ is nonempty and for every $r\in R$ and $x, y \in N$, we have $rx+y\in N$.
 :::

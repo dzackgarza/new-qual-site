@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="$L^p$ spaces are Banach"}
+::: {.proposition}
 ?
 :::

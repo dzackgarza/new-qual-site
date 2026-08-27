@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Uniform limit theorem"}
+::: {.exercise}
 Show that a continuous function on a compact set is uniformly continuous.
 :::

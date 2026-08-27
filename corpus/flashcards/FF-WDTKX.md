@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Nonorientable Surfaces"}
+::: {.fact}
 $\mathbb{RP}^\text{even}, \mathbb{M}, \mathbb{K}$
 :::

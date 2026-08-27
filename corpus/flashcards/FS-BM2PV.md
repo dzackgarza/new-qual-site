@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.strategy title="How to commute a sum and an integral"}
+::: {.strategy}
 $f_n \in L^1$ with $\sum \int \abs{f_n} < \infty$.
 
 Proof: Use Fubini-Tonelli.

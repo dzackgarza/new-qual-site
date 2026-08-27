@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residue of $1/z^2 + 1$"}
+:::{.exercise}
 Use the rational function formula to compute the residues at $z=\pm i$ of
 \[
 f(z) \da {1\over z^2 + 1}

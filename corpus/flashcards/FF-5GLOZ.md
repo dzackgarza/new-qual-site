@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Series expansion for $\csch(z) = {1\over \sinh(z)}$"}
+::: {.fact}
 $$
 \operatorname{csch} x=x^{-1}-\frac{x}{6}+\frac{7 x^{3}}{360}-\frac{31 x^{5}}{15120}+\cdots
 .$$

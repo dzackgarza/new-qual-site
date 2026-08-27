@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.1.7"}
+::: {.problem}
 \envlist
 
 1. Show that if $A,B$ are $R$-modules, then the set $\mathrm{Hom}_R(A, B)$ is all $R$-module homomorphisms $A \to B$ is an abelian group with $f+g$ given on $a\in A$ by $$(f+g)(a) \coloneqq f(a) + g(a) \in B.$$

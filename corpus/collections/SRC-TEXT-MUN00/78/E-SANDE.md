@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SANDE
 kind: exercise
 title: Classification of compact connected triangulable surfaces with boundary
+subtitle: Munkres §78.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §78.5"}
+::: {.exercise}
 
 Prove the following.
 

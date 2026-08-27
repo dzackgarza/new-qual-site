@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Lune, one intersection"}
+::: {.problem}
 Find a conformal map from the region bounded by $\abs{z - {i\over 2}} = {1\over 2}$ and $\abs{z-i} = 1$ to $\DD$.
 :::
 

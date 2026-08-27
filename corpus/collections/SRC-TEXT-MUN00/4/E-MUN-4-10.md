@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-10
 kind: exercise
 title: "Existence and uniqueness of positive square roots"
+subtitle: Munkres §4.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.10"}
+::: {.exercise}
 
 Show that every positive number $a$ has exactly one positive square root, as follows:
 

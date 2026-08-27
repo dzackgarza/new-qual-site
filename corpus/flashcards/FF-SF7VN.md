@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\tan(\pi/3) = \cdots$"}
+::: {.fact}
 $$
 \tan(\pi/3) = \sqrt 3
 .$$

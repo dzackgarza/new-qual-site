@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-7-6
 kind: exercise
 title: "Schroeder–Bernstein theorem and equal cardinality"
+subtitle: Munkres §7.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §7.6"}
+::: {.exercise}
 
 We say that two sets $A$ and $B$ have the same cardinality if there is a bijection of $A$ with $B$ .
 

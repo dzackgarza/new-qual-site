@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Orbit-Stabilizer"}
+::: {.theorem}
 
 \[\# {Gx} = [G: G_x] = \# {G} / \#{G_x} \quad \text{if $G$ is finite} .\]
 

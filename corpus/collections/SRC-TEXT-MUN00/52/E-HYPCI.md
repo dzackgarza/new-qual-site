@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HYPCI
 kind: exercise
 title: Star-convex sets are simply connected
+subtitle: Munkres §52.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §52.1"}
+::: {.exercise}
 
 A subset $A$ of $\mathbb{R}^n$ is said to be star convex if for some point $a_0$ of $A$, all the line segments joining $a_0$ to other points of $A$ lie in $A$.
 

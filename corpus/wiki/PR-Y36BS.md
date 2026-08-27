@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Holomorphic implies continuous."}
+:::{.proposition}
 $f$ is holomorphic at $z_0$ iff there exists an $a\in \CC$ such that
 \[  
 f(z_0 + h) - f(z_0) - ah = h \psi(h), \quad \psi(h) \converges{h\to 0}\to 0

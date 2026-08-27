@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Characterization of perfect fields"}
+::: {.proposition}
 $k$ is perfect (using the irreducible implies separable condition) if either
 
 - $\ch k = 0$ or

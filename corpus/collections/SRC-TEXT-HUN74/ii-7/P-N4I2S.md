@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.7.10"}
+::: {.problem}
 Show that $S_n$ is solvable for$n\leq 4$ but $S_3$ and $S_4$ are not nilpotent.
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Maximum modulus principle"}
+::: {.theorem}
 Suppose $f$ is holomorphic on $\Omega$.
 If $f$ has a relative maximum at $z_0\in\Omega$, then $f$ is constant in a neighborhood of $z_0$.
 If $\Omega$ is a bounded connected domain with $f$ continuous on $\Omega$ and $\bd \Omega$, then either $f$ is constant or $M \da \max_{z\in \Omega}\abs{f(z)}$ is only attained by some $z\in \bd\Omega$.

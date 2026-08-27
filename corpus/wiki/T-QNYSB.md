@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lefschetz Duality"}
+::: {.theorem}
 Let $M$ be a compact $R\dash$orientable $n\dash$manifold whose boundary is decomposed as $\del M = A \union B$ with $A, B$ compact $(n-1)\dash$manifolds meeting in $\del A = \del B = A \intersect B$.
 Then cap product with a fundamental class $[M]\in H_n(M, \del M; R)$ gives isomorphisms
 \[

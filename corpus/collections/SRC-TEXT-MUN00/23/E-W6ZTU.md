@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-W6ZTU
 kind: exercise
 title: Discrete spaces are totally disconnected
+subtitle: Munkres §23.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §23.5"}
+::: {.exercise}
 
 A space is totally disconnected if its only connected subspaces are one-point sets.
 Show that if $X$ has the discrete topology, then $X$ is totally disconnected.

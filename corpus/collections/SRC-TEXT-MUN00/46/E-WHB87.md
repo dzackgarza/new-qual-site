@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-WHB87
 kind: exercise
 title: Continuity of composition in the compact-open topology
+subtitle: Munkres §46.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.7"}
+::: {.exercise}
 
 Show that if $Y$ is locally compact Hausdorff, then composition of maps
 

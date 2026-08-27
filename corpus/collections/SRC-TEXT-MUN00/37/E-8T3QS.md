@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-8T3QS
 kind: exercise
 title: The Tychonoff theorem via the well-ordering theorem
+subtitle: Munkres §37.5
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §37.5"}
+::: {.exercise}
 
 Here is a proof of the Tychonoff theorem that relies on the well-ordering theorem rather than on Zorn's lemma.
 First, prove the following version of the tube lemma; then prove the theorem.

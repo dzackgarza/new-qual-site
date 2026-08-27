@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="CW Complex"}
+::: {.definition}
 A space built from cells by induction on dimension:
 
 1. Start with a discrete set $X^0$, whose points are the $0\dash$cells.

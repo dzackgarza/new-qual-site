@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4RF8O
 kind: exercise
 title: Finite fixed-point-free actions are properly discontinuous
+subtitle: Munkres §81.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §81.4"}
+::: {.exercise}
 
 Let $G$ be a group of homeomorphisms of $X$.
 The action of $G$ on $X$ is said to be fixed-point free if no element of $G$ other than the identity $e$ has a fixed point.

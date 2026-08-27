@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Continuity and Uniform Continuity"}
+:::{.definition}
 A function $f: \RR\to \RR$ is **continuous** on $X$ iff for all $x_0\in X$,
 \[
 &\forall \varepsilon \quad \exists \delta(\varepsilon, x_0) \text{ such that }\quad \forall y, \abs{x_0 - y} < \delta &&\implies \abs{f(x_0) - f(y)} < \varepsilon \\

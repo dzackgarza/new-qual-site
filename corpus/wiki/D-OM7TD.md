@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$T_n$ Spaces (Separation Axioms)"}
+::: {.definition}
 \envlist
 
 - $T_0$: points are topologically distinguishable, i.e. for any 2 points $x_1\neq x_2$, at least one $x_i$ (say $x_1$) admits a neighborhood not containing $x_2$.

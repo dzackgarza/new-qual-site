@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Integral computation"}
+:::{.exercise}
 Without using the residue formula, compute
 \[
 \int_\RR f(x) \dx && f(x) \da {1\over x^4 + 16}

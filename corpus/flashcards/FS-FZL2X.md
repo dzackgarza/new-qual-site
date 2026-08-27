@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.strategy title="Showing uniform convergence of a *sequence* of functions"}
+::: {.strategy}
 Find $M_n$ independent of $x$ such that
 $$
 \abs{f_n(x) - f(x)} \leq M_n \to 0

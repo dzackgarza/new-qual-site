@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Galois is upper transitive, characterization of when lower transitivity holds"}
+:::{.proposition}
 If $L/k$ is Galois, then $L/F$ is **always** Galois.
 Moreover, $F/k$ is Galois if and only if \( \Gal(L/F) \normal \Gal(L/k) \)
 

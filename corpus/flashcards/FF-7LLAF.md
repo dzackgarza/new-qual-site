@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$H_* \mathbb{RP}^4$"}
+::: {.fact}
 $$[\mathbb{Z}, \mathbb{Z}_2,             0,    \mathbb{Z}_2,      0,    0\rightarrow  ]$$
 :::

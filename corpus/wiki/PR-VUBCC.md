@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Zeros of holomorphic functions are isolated"}
+::: {.proposition}
 
 ![](../../assets/30_Complex_Analysis/030_Zeros_and_Poles/figures/2021-12-15_02-12-08.png)
 :::

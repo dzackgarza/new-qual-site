@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Alexander duality"}
+::: {.definition}
 If $K$ is a compact, locally contractible, nonempty, proper subspace of $S^n$, then
 \[
 \tilde H_i(S^n \sm K; \ZZ) \cong \tilde H^{n-i-1}(K;\ZZ)

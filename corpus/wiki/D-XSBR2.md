@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Direct Product"}
+::: {.definition}
 For a family of $R\dash$modules $\ts{M_\alpha}$, the **direct product** is
 \[
 \prod_\alpha M_\alpha \da \ts{ (m_\alpha) \st m_\alpha \in M_\alpha }

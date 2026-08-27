@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Characterizations of Rings"}
+::: {.proposition}
 \envlist
 
 - $R$ a commutative division ring $\implies R$ is a field

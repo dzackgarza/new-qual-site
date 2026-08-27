@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-6WTC
 kind: exercise
 title: "Inconsistent system of three equations in four unknowns"
+subtitle: Hoffman and Kunze 1.4.6
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.4.6"}
+::: {.exercise}
 Show that the system
 
 $$

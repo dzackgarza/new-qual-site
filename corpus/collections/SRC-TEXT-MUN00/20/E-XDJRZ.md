@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XDJRZ
 kind: exercise
 title: The l2 space is a vector space with the l2 metric
+subtitle: Munkres §20.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.10"}
+::: {.exercise}
 
 Let $X$ denote the subset of $\mathbb{R}^\omega$ consisting of all sequences $(x_1, x_2, \ldots)$ such that $\sum x_i^2$ converges.
 (You may assume the standard facts about infinite series.

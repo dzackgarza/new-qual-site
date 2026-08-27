@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OYPV7
 kind: exercise
 title: The hierarchy of conditions on locally euclidean spaces
+subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50 Supplementary"}
+::: {.exercise}
 
 Consider the following conditions on a locally $m$-euclidean space $X$:
 

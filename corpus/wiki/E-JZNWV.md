@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$x/(x^2+4x+13)^2$"}
+:::{.exercise}
 
 \[
 I\da \int_\RR {x\over (x^2 + 4x+13)^2}\dx

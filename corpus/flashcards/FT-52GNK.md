@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Urysohn's Lemma"}
+::: {.theorem}
 A space $X$ is normal iff for every pair of **disjoint** closed sets $U, V \subseteq X$ there is a continuous $f: X\to [0,1]$ with $\ro f U = 0$ and $\ro f V = 1$.
 :::
 

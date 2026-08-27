@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9IP2I
 kind: exercise
 title: Free products of finite cyclic groups determine their factors
+subtitle: Munkres §69.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §69.3"}
+::: {.exercise}
 
 Prove the following.
 

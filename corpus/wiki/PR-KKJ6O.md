@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Continuity of Measure"}
+:::{.proposition}
 \[
 \text{Continuity from below:} \quad 
 E_{n} \nearrow E &\implies m(E_{n}) \converges{n\to\infty}\too m(E) \\

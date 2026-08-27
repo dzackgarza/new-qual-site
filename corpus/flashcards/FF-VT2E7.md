@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\cos(\pi/3) = \cdots$"}
+::: {.fact}
 $$
 \cos(\pi/3) = {1 \over 2}
 .$$

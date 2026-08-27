@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Term by Term Differentiability Theorem"}
+:::{.theorem}
 If $\ts{f_n}$ is a sequence of functions where
 
 - each $f_n$ is differentiable, 

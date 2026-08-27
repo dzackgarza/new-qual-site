@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Schwarz Reflection " ref="SchwarzReflection"}
+::: {.theorem ref="SchwarzReflection"}
 If $f$ is continuous and holomorphic on $\HH^+$ and real-valued on $\RR$, then the extension defined by $F^-(z) = \bar{f(\bar{z})}$ for $z\in \HH^-$ is a well-defined holomorphic function on $\CC$.
 :::

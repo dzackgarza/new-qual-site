@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-AGJM5
 kind: exercise
 title: Extension of homotopic maps into open euclidean sets
+subtitle: Munkres §62.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §62.3"}
+::: {.exercise}
 
 Let $X$ be a space such that $X \times I$ is normal.
 Let $A$ be a closed subspace of $X$; let $f: A \to Y$ be a continuous map, where $Y$ is an open subspace of $\mathbb{R}^n$.

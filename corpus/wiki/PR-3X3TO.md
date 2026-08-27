@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Freshman's Dream"}
+::: {.proposition}
 If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Fundamental theorem of covering spaces, Hatcher 1.39"}
+::: {.proposition}
 If $X$ is
 
 - Path-connected,

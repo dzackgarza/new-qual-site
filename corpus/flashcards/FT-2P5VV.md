@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Eisenstein's Criterion"}
+::: {.theorem}
 If $f(x) = \displaystyle\sum_{i=0}^n \alpha_i x^i \in \QQ[x]$ and $\exists p$ such that
 
 - $p$ divides every coefficient *except* $a_n$ and

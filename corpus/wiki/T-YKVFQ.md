@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Bolzano-Weierstrass property"}
+::: {.theorem}
 A subset of $\RR^n$ is closed and bounded iff it is sequentially compact.
 Equivalently, every bounded sequence has a convergent subsequence.
 :::

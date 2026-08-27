@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4KGM4
 kind: exercise
 title: Properties of compact Hausdorff spaces
+subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §36 Supplementary"}
+::: {.exercise}
 
 Consider the seventeen properties listed in Exercise 1 of the Supplementary Exercises (Review of the Basics).
 

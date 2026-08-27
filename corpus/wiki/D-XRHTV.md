@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Topology"}
+::: {.definition}
 \envlist
 
 - Using open sets: closed under arbitrary unions and finite intersections.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Singularities of of $\sin(z)/z$"}
+:::{.exercise}
 Show that $\sin(z)/z$ has no poles.
 
 :::

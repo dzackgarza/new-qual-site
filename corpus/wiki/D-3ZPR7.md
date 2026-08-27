@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Orthogonal Group"}
+:::{.definition}
 \[
 O_n(\CC) \da \ts{ A \st A^tA = A A^t = I} 
 .\]

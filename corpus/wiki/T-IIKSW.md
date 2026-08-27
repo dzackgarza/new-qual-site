@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Measurable sets can be approximated by open/closed/compact sets."}
+::: {.theorem}
 Suppose $E$ is measurable; then for every $\eps>0$,
 
 1. There exists an open $O\supset E$ with $m(O\setminus E) < \eps$

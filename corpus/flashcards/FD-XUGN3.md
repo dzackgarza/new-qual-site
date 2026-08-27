@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Exponential definitions of $\cosh$ and $\sinh$"}
+::: {.definition}
 $$
 \cosh(z) = {e^{iz} + e^{-iz}\over 2} \\
 \sinh(z) = {e^{iz} - e^{-iz}\over 2} \\

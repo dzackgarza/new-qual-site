@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$1/(1+x^2)^{n+1}$ "}
+:::{.exercise}
 
 \[
 I \da \int_{-\infty}^{\infty} \frac{d x}{\left(1+x^{2}\right)^{n+1}}=\frac{(2 n) !}{4^{n}(n !)^{2}} \pi .

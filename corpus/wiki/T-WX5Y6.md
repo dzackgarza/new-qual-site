@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Continuous bijections from compact to Hausdorff are homeomorphisms"}
+::: {.theorem}
 A continuous bijection $f: X\to Y$ with $X$ is compact and $Y$ is Hausdorff is a homeomorphism.
 :::

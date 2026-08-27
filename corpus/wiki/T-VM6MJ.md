@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Schwarz lemma, a useful alternative statement"}
+::: {.theorem}
 Let $f:\DD\to \DD$ be holomorphic with $f(0) = 0$.
 Then either
 

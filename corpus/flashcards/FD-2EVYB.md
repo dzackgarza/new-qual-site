@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Algebraic Element"}
+::: {.definition}
 If $L/K$ is a field extension then $\alpha \in L$ is **algebraic** iff there exists a $g\in K[x]$ such that $g(\alpha) = 0$.
 :::

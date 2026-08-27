@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Radius of Convergence by the Root Test"}
+:::{.proposition}
 For $f(z) = \sum_{k\in \NN} c_k z^k$, defining
 \[
 {1\over R} \da \limsup_{k} \abs{a_k}^{1\over k}

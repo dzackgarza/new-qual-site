@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Log: Upper half-plane to horizontal strip"}
+:::{.proposition}
 \[
 \HH &\mapstofrom \RR \cross (0, \pi) \\
 \ts{ z \st \Im(z) > 0 } &\mapstofrom \ts{ w \st \Im(z) \in (0, \pi ) } \\

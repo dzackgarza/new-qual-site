@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Finitely many poles"}
+::: {.exercise}
 Show that a meromorphic function on $\CP^1$ can have only finitely many poles.
 Show that moreover if $f$ is meromorphic on $\CC$ with infinitely many poles, then the poles must accumulate on an essential singularity at $z=\infty$.
 :::

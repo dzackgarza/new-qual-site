@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-6
 kind: exercise
 title: "Paradoxes of the set of all sets"
+subtitle: Munkres §9.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.6"}
+::: {.exercise}
 
 Most of the famous paradoxes of naive set theory are associated in some way or other with the concept of the "set of all sets."
 None of the rules we have given for forming sets allows us to consider such a set.

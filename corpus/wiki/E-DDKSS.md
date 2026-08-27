@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Polynomial growth"}
+:::{.exercise}
 Suppose that $f$ is entire and has polynomial growth in the following sense:
 \[
 \abs{f(z)\over z^n} \leq M \text{ for }\abs{z} \geq R

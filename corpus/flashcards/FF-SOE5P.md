@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\phi(p^k) = ?$"}
+::: {.fact}
 $\phi(p^k) = p^{k-1}(p-1) = p^k \qty{1 - {1\over p}}$
 :::

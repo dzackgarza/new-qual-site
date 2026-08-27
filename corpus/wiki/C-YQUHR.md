@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.corollary title="Minimum modulus principle"}
+::: {.corollary}
 Let $\Omega$ be a region with compact closure, $f$ holomorphic on $\Omega$ and continuous on $\cl\Omega$, and suppose $f$ is nowhere zero on $\Omega$.
 Then $\abs f$ attains its minimum over $\cl\Omega$ on the boundary $\del\Omega$:
 \[

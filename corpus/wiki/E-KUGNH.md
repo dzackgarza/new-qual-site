@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Bounded derivatives imply removable singularities"}
+:::{.exercise}
 Suppose $f$ is holomorphic on $\DD\smz$ and there exist $M, k$ such that
 \[
 \abs{f^{(k)}(z)} \leq {M\over \abs{z}^k} && \forall 0 < \abs z < 1

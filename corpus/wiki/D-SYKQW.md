@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Closed manifold"}
+::: {.definition}
 A manifold that is compact, with or without boundary.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Rouché's Theorem"}
+::: {.theorem}
 If $f, g$ are holomorphic on $\bar{D}(z_0)$ and 
 $$
 \abs{f - g} < \abs{f} + \abs{g} \quad\text{on}\quad \bd D

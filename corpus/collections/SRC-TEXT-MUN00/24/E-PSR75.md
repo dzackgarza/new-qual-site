@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PSR75
 kind: exercise
 title: Fixed points of continuous self-maps of the interval
+subtitle: Munkres §24.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.3"}
+::: {.exercise}
 
 Let $f: X \to X$ be continuous.
 Show that if $X = [0, 1]$, there is a point $x$ such that $f(x) = x$.

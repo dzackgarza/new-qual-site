@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PQHZN
 kind: exercise
 title: The long line
+subtitle: Munkres §24.12
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.12"}
+::: {.exercise}
 
 Recall that $S_\Omega$ denotes the minimal uncountable well-ordered set.
 Let $L$ denote the ordered set $S_\Omega \times [0, 1)$ in the dictionary order, with its smallest element deleted.

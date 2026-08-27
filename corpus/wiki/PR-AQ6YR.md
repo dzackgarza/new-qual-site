@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Cross ratio construction of conformal maps"}
+:::{.proposition}
 Define generalized cross-ratios as
 \[
 (z_1, z_2, z_3, z_4) &\da {z_1 - z_3\over z_1-z_4}{z_2 - z_4 \over z_2 - z_3} \\

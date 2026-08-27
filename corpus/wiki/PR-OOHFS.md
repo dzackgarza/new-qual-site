@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Half-plane to Disc (Cayley Transform, very important)"}
+:::{.proposition}
 \[
 \Psi: \HH&\mapstofrom \DD \\
 z &\mapsto {z-i \over z+i} \\

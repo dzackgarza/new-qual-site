@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Well-definedness of pole order"}
+:::{.proposition}
 In this case there exists a minimal $n$ and a holomorphic $h$ such that
 \[  
 f(z) = \qty{z-z_0}^{-n} h(z)

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fundamental Theorem of Galois Theory"}
+::: {.theorem}
 Let $K/F$ and $G = \mathrm{Gal}(K/F)$, then there is an inclusion-reversing bijection
 $$\begin{align*}
 \{E \suchthat K/E/F\} \quad&\iff\quad \{H \suchthat 1\leq H \leq G\} \\

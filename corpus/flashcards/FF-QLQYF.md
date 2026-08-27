@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a first category set? A second category?"}
+::: {.fact}
 A subset is *first category* $ \iff $ it is countable union of nowhere dense sets, *second category* otherwise.
 :::

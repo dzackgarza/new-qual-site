@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Long exact sequence"}
+::: {.definition}
 An exact sequence that is unbounded in one or both directions.
 The main source is a short exact sequence of chain complexes $0\to A_*\to B_*\to C_*\to 0$, which induces
 \[

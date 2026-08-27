@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Quotient Map"}
+::: {.definition}
 A map $q:X\to Y$ is a **quotient map** if and only if
 
 1. $q$ is surjective, and

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Nondegenerate intersection pairings"}
+::: {.proposition}
 For $M^n$ closed and orientable, the intersection pairing is nondegenerate modulo torsion.
 :::

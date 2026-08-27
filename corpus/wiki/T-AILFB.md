@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="The Algorithm"}
+::: {.theorem}
 \envlist
 
 - Show your extension is Galois (normal and separable)

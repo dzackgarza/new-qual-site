@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="limsup"}
+:::{.definition}
 \[
 \limsup x_{n}=\lim _{N \rightarrow \infty} \sup _{n>N} x_{n}
 .\]

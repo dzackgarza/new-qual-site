@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Semilocally Simply Connected"}
+::: {.definition}
 A space $X$ is **semilocally simply connected** if every $x\in X$ has a neighborhood $U$ such that $U\injects X$ induces the trivial map $\pi_1(U;x) \to \pi_1(X, x)$.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-FEF
 kind: exercise
 title: Proof choice — existence of algebraic closures or embedding into algebraically closed fields
+subtitle: Smith 8000 fall 2006 final F
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 final F"}
+::: {.exercise}
 Prove one:
 
 (i) Every field $k$ has an algebraic closure;

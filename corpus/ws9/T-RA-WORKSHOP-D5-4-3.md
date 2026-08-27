@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-3
 kind: theorem
 title: 'Theorem 4.3: Taylor’s theorem with remainder'
+subtitle: Theorem 4.3 (Taylor’s Theorem)
 classification:
   areas:
   - real-analysis
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Theorem 4.3 (Taylor’s Theorem)"}
+::: {.theorem}
 Suppose $f:[a,b]\to\mathbb R$ is $n$ times continuously differentiable on $[a,b]$, $f^{(n+1)}$ exists on $(a,b)$, and $c\in[a,b]$.
 Then, for any $x\in[a,b]$ with $x\ne c$ there exists some $\xi$ between $c$ and $x$ so that
 $$

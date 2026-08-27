@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-J2K6
 kind: exercise
 title: Row-reduction and factorization over $\CC$
+subtitle: Hoffman and Kunze 1.6.2
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.2"}
+::: {.exercise}
 Do Exercise 1, but with
 
 $$

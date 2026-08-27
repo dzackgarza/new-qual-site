@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Hilbert Space"}
+::: {.definition}
 A **Hilbert space** is an inner product space which is a Banach space under the induced norm.
 :::

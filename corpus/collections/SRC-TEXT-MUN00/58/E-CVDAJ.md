@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CVDAJ
 kind: exercise
 title: Consequences of an abstract degree theory on spheres
+subtitle: Munkres §58.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §58.10"}
+::: {.exercise}
 
 Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted by $\deg h$ and called the degree of $h$, such that:
 

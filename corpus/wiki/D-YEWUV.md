@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Accumulation point"}
+::: {.definition}
 See **limit point**.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Prime Element"}
+:::{.definition}
 A nonzero nonunit $p\in R$ is **prime** iff 
 \[  
 a,b \in R, \quad p\divides ab \implies p\divides a \text{ or } p\divides b

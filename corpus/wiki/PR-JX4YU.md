@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Continuity in $L^1$ holds for all $L^p$, translation operators are continuous"}
+:::{.proposition}
 \[
 f \text{ uniformly continuous }: \quad
 \norm{\tau_h f - f}_{L^p(X)} \convergesto{h\to 0} 0 && \forall p

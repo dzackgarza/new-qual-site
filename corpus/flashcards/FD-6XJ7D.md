@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Projective module"}
+::: {.definition}
 ![](https://i.imgur.com/z4sW2hh.png)
 
 Equivalently, for $R\dash$modules, $M$ is projective $\iff$ $M$ is a direct summand of a free module.

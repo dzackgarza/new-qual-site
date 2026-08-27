@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XJMHL
 kind: exercise
 title: Separation by topologist's sine curve variants on the sphere
+subtitle: Munkres §63.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §63.3"}
+::: {.exercise}
 
 (a) Let $D$ be a subspace of $S^2$ homeomorphic to the topologist's sine curve $\overline{S}$.
 (See §24.) Show that $D$ does not separate $S^2$.

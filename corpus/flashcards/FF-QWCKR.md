@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a quasiregular element in a ring?"}
+::: {.fact}
 $ a\in R $ with $ 1-a\in R^{\times} $; $ {J ({R}) } $ is the largest ideal with every element quasiregular.
 :::

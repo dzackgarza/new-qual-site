@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-JF3
 kind: exercise
 title: Jordan forms of three explicit matrices
+subtitle: Smith 8000e jordan forms 3
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e jordan forms 3"}
+::: {.exercise}
 Find the Jordan forms of these matrices:
 
 $$

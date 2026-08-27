@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Disc to upper half-plane"}
+:::{.exercise}
 Find a conformal map from $\DD$ to $\HH$.
 :::
 

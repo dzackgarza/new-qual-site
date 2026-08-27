@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Product and box topologies"}
+:::{.definition}
 Given a collection of spaces $\ts{ (X_i, \tau(X_i) ) }_{i\in I}$, the **box topology** is defined by 
 \[
 \tau^{\Box}\qty{ \prod_{i\in I} X_i } &\da \gens{\ts{\prod_{i\in I} U_i \st U_i \in \tau(X_i) }}

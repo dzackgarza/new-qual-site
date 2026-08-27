@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Limit Point"}
+::: {.definition}
 A point $x\in X$ is a limit point of $A\subseteq X$ iff every open $U \ni x$ contains a point $y\in A\setminus\theset{x}$.
 :::

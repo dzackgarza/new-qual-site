@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Locally homeomorphic"}
+::: {.definition}
 $X$ is *locally homeomorphic* to $Y$ iff every $x\in X$ admits a neighborhood $U_x$ that is homeomorphic to an open subset of $Y$.
 
 Note that $X$ being locally homeomorphic to $Y$ does *not* imply that there exists a local homeomorphism, which needs to be a single map.

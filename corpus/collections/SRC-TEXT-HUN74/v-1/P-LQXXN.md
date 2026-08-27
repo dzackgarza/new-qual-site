@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.1.8"}
+::: {.problem}
 Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and moreover $K(u) = K(u^2)$.
 :::

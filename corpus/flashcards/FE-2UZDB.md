@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Example of a sequence of differentiable functions $f_n \to f$ uniformly with $f_n' \to g$ pointwise for some $g$, but $g' \neq \lim f_n'$."}
+::: {.example}
 - $f_n(x)= {x \over 1 + nx^2} \to 0$ uniformly
 
   - Since $\norm{f_n}_\infty = 1/2\sqrt{n} \to 0.$

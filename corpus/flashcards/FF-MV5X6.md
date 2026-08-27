@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Relating hyperbolic functions to usual ones: $ \sin(z) = \sinh(?) .$"}
+::: {.fact}
 $$
 \sin(z) = {1\over i} \sinh(iz)
 .$$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$T_n$ Spaces (Separation Axioms)"}
+::: {.definition}
 \envlist
 
 - $T_0$: Points are distinguishable.

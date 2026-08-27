@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\arctan(\infty) = \cdots$"}
+::: {.fact}
 $\arctan(\infty) = {\pi \over 2}$
 :::

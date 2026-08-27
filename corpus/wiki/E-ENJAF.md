@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Expansion at an essential singularity"}
+:::{.exercise}
 Find a Laurent expansion at $z=0$ for
 \[
 f(z) \da e^{1\over z}\cos\qty{1\over z}

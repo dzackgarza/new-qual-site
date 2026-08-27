@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-26ELV
 kind: exercise
 title: Second countable locally compact Hausdorff spaces of finite dimension imbed as closed subspaces
+subtitle: Munkres §50.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50.6"}
+::: {.exercise}
 
 Prove the following.
 

@@ -14,7 +14,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Normal Family"}
+::: {.definition}
 Let $\Omega \subseteq \CC$ be open.
 A family $\mcf$ of holomorphic functions on $\Omega$ is **normal** iff every sequence in $\mcf$ has a subsequence converging uniformly on every compact subset of $\Omega$.
 The limit need not lie in $\mcf$: normality is precompactness of $\mcf$ in the topology of locally uniform convergence, not compactness.

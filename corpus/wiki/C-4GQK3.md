@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.corollary title="Normality satisfies the lifting property"}
+::: {.corollary}
 $E_1/k$ normal and $E_2/k$ normal $\implies E_1E_2/k$ normal and $E_1 \intersect E_2 / k$ normal.
 
 \begin{tikzcd}

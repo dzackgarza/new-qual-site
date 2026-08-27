@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.4.9)."}
+::: {.problem}
 Let $Z(G)$ be the center of $G$.
 Show that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 

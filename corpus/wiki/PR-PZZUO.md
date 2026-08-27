@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Subring criteria"}
+::: {.proposition}
 A subset $S\subseteq R$ is a subring iff
 
 - $(S, +)$ forms an abelian subgroup (so closed under addition and contains inverses)

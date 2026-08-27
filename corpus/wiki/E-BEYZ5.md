@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Proving functions are harmonic using components of holomorphic functions"}
+:::{.exercise}
 Show that if $u,v$ are harmonic conjugates, then
 
 - $u^2-v^2$ is harmonic

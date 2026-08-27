@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Half-plane to Disc"}
+:::{.proposition}
 \[
 F: \HH^\circ &\mapstofrom \DD^\circ \\
 \ts{z\st \Im(z) > 0 } &\mapstofrom \ts{w\st \abs{w} < 1 } \\

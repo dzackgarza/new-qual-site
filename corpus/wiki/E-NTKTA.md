@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Sum formulas: $1/n^2$"}
+::: {.exercise}
 Show
 \[
 \sum_{n \geq 1} \frac{1}{n^{2}}=\frac{\pi^{2}}{6}

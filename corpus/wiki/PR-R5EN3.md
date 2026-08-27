@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Covering spaces induce injections on $\pi_1$, Hatcher 1.31"}
+::: {.proposition}
 Given a covering space $\tilde X \mapsvia{p} X$, the induced map $p^*: \pi_1(\tilde X) \to \pi_1(X)$ is injective.
 The image consists of classes $[\gamma]$ whose lifts to $\tilde X$ are again loops.
 :::

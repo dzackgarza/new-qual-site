@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Borel Characterization of Measurable Sets"}
+::: {.proposition}
 If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
 :::

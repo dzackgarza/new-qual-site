@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Radius of convergence"}
+::: {.exercise}
 Find the radius of convergences for the power series expansion of $\sqrt{z}$ about $z_0 = 4 +3i$.
 Repeat with $z_1=-4+3i$.
 :::

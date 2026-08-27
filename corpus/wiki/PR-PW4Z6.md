@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-disc to first quadrant"}
+:::{.proposition}
 \[
 \ts{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \ts{ w \st \Re(w)>0,\, \Im(w) > 0}  \\
 z &\mapsto {1+z \over 1-z} \\

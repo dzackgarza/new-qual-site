@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Arbitrary Rouché, $R\mathbb{D}$"}
+:::{.exercise}
 Find the number of zeros in $\abs{z} < R$ of 
 \[
 p(z) \da z^d + a_1z^{d-1} + \cdots + a_d

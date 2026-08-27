@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Zero Divisor"}
+::: {.definition}
 An element $r\in R$ is a *zero divisor* if there exists a nonzero $x\in R$ such that $rx=0$.
 
 Equivalently, the map $x\mapsto rx$ is *not* injective.

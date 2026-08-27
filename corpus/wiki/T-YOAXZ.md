@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Heine-Cantor"}
+::: {.theorem}
 Every continuous function $f:X\to Y$ where $X$ is a compact metric space is uniformly continuous.
 :::

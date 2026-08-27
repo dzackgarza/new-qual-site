@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Working with conjugates"}
+:::{.exercise}
 Find $\Re\qty{z+2\over z-1}$.
 
 :::

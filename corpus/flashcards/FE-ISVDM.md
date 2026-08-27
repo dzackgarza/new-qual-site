@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Does $A^n=B^n$ imply $A=B$?"}
+::: {.example}
 No, counterexample: $M = \matt 0 1 1 0$ satisfies $$ M^2 = I .$$
 :::

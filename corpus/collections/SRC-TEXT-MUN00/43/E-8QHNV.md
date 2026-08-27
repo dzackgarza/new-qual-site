@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-8QHNV
 kind: exercise
 title: Uniformly continuous maps extend to the closure
+subtitle: Munkres §43.2
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.2"}
+::: {.exercise}
 
 Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces; let $Y$ be complete.
 Let $A \subset X$.

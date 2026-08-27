@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Characters"}
+:::{.definition}
 The **character** of a representation $M$ is the trace of the map
 \[
 T_g: M &\to M \\

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cyclic Module"}
+::: {.definition}
 For $M$ an $R\dash$module, $M$ is cyclic iff $M = \gens{m}$ iff $M \cong R/I$ for some ideal $I\normal R$.
 :::

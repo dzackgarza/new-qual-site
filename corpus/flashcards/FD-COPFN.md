@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Deformation Retract"}
+::: {.definition}
 Deformation Retract: A subspace $A \subset X$ is a *deformation retract* of $X$ iff there exists a morphism $F:X\cross I$ to $X$ such that $F(x, 0) = x, F(x, 1)\in A, F(a, 1) = a$.
 Equivalently it is a homotopy between a retraction and the identity.
 :::

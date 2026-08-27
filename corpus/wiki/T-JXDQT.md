@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Argument Principle, Zeros/Poles Version"}
+:::{.theorem}
 For $f$ meromorphic in $\Omega$ with multisets of zeros \( Z_f \da \ts{ z_j } \) and poles \( P_f\da \ts{ p_k } \) (so repeated with multiplicity) 
 for $\gamma \da \bd \Omega$ not intersecting any of the zeros/poles,
 

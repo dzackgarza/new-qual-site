@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="CW Cell"}
+::: {.definition}
 An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^n \to X$.
 That is, $e^n = \Phi(B^n)$.
 Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_{f} X$ where $f: \del B^n \to X$.

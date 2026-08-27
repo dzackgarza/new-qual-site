@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Example of a function that is Lebesgue integrable but not Riemann integrable"}
+::: {.example}
 The Dirichlet function $f(x) = \chi_\QQ$, since $D_f = \RR$ is not null.
 :::

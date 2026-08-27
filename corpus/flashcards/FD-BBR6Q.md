@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$F_\sigma$ sets"}
+::: {.definition}
 $X$ is $F_\sigma$ iff $X$ is a countable union of closed sets.
 :::

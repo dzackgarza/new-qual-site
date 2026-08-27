@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lagrange's Theorem"}
+::: {.theorem}
 \[H \leq G \implies \size H \divides \size  G.\] Moreover, there is an equality $[G:H] = \sharp G/ \sharp H$ when $G$ is finite.
 :::

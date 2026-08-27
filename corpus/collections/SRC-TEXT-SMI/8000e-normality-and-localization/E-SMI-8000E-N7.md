@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-N7
 kind: exercise
 title: Normality localizes
+subtitle: Smith 8000e localization 7
 classification:
   areas:
   - algebra
@@ -13,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e localization 7"}
+::: {.exercise}
 If $R$ is normal and $P$ prime, prove that $R_P$ is also normal.
 :::

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Finite fields are not algebraically closed"}
+::: {.proposition}
 If $\FF$ is a finite field then $F\neq \bar{F}$.
 :::

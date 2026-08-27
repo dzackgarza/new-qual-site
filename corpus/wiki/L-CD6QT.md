@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.lemma title="JCF from Minimal and Characteristic Polynomials"}
+::: {.lemma}
 Writing $\spec(A) = \theset{(\lambda_i, m_i)}$,
 \[
 \min_A(x) &= \prod_i (x- \lambda_i)^{\ell_i} \\

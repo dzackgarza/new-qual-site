@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-GG6
 kind: exercise
 title: The Galois group of X^5 - X - 1 over Q is S(5)
+subtitle: Smith 8000e galois 10
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e galois 10"}
+::: {.exercise}
 Show that $X^5 - X - 1$ factors mod 2 into an irreducible quadratic and an irreducible cubic.
 Show there is also a transposition, and deduce that the Galois group over $\QQ$ is $S(5)$.
 

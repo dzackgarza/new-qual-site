@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 7.1.3"}
+::: {.problem}
 \envlist
 
 1. Show that the center of the ring $M_n(R)$ consists of matrices of the form $rI_n$ where $r$ is in the center of $R$.

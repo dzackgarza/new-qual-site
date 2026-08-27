@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Closed Sets"}
+::: {.definition}
 \envlist
 
 - A set $U \subseteq X$ is **closed** in $X$ if and only if its complement $X\sm U$ is open.

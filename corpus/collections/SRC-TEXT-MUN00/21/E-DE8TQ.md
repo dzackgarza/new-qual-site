@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-DE8TQ
 kind: exercise
 title: Isometric imbeddings
+subtitle: Munkres §21.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.2"}
+::: {.exercise}
 
 Let $X$ and $Y$ be metric spaces with metrics $d_X$ and $d_Y$, respectively.
 Let $f: X \to Y$ have the property that for every pair of points $x_1, x_2$ of $X$,

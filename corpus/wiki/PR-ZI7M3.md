@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Parseval's Identity"}
+:::{.proposition}
 Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
 This states that if $\ts{e_k}$ is an orthonormal basis for $H$, then
 \[

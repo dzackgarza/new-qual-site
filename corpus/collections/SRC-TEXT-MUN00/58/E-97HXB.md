@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-97HXB
 kind: exercise
 title: Retracts of contractible spaces
+subtitle: Munkres §58.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §58.6"}
+::: {.exercise}
 
 Show that a retract of a contractible space is contractible.
 :::

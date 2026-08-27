@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Disc complement to doubly slit plane"}
+:::{.proposition}
 \[
 F: \DD^c \intersect \HH &\to \CC\sm[-2, 2] \\
 z &\mapsto z+ z\inv

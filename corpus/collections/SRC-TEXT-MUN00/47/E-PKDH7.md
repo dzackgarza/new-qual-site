@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PKDH7
 kind: exercise
 title: Pointwise boundedness and equicontinuity of four collections
+subtitle: Munkres §47.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §47.1"}
+::: {.exercise}
 
 Which of the following subsets of $\mathcal{C}(\mathbb{R}, \mathbb{R})$ are pointwise bounded?
 Which are equicontinuous?

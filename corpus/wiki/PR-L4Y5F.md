@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Residue formula for simple poles"}
+:::{.proposition}
 As a special case, if $z_0$ is a simple pole of $f$, then
 \[
 \Res_{z=z_0}f = \lim_{z\to z_0} (z-z_0) f(z)

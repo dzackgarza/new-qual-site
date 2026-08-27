@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Number of sheets in a covering space, Hatcher 1.32"}
+:::{.proposition}
 For $X, \tilde X$ both path-connected, 
 the number of sheets of a covering space is equal to the index
 \[

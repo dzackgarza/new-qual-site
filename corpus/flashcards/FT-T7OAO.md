@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fubini"}
+::: {.theorem}
 Let $f(x, y) \in L^1(\RR^n\cross \RR^k)$.
 Then for almost every $y\in \RR^k$,
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ER6ZN
 kind: exercise
 title: Surjections onto R^omega under the product, uniform, and box topologies
+subtitle: Munkres §44.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §44.3"}
+::: {.exercise}
 
 (a) If $\mathbb{R}^\omega$ is given the product topology, show there is no continuous surjective map $f: \mathbb{R} \to \mathbb{R}^\omega$.
 [Hint: Show that $\mathbb{R}^\omega$ is not a countable union of compact subspaces.]

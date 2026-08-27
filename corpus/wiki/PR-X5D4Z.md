@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Cauchy-Schwarz Inequality"}
+:::{.proposition}
 \[  
 \abs{\inner{f}{g}} = \leq \pnorm{f}2 \pnorm{g}2
 && \text{with equality} \iff f = \lambda g

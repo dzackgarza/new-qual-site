@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Poles (and associated terminology)"}
+:::{.definition}
 Let $f$ be a meromorphic function with an isolated singularity at $z_0$.
 TFAE:
 

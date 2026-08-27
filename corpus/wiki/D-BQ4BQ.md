@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Commutator"}
+:::{.definition}
 The **commutator subgroup** of $G$ is denoted $[G, G] \leq G$.
 It is the subgroup *generated* by all elementary commutators:
 \[

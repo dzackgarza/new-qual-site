@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Subtraction of Measures"}
+::: {.proposition}
 $$m(A) = m(B) + m(C) \qtext{and} m(C) < \infty \implies m(A) - m(C) = m(B).$$
 :::

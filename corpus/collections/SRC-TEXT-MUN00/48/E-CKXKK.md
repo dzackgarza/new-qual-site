@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CKXKK
 kind: exercise
 title: G-delta subspaces of compact Hausdorff or complete metric spaces are Baire
+subtitle: Munkres §48.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §48.5"}
+::: {.exercise}
 
 Show that if $Y$ is a $G_\delta$ set in $X$, and if $X$ is compact Hausdorff or complete metric, then $Y$ is a Baire space in the subspace topology.
 [Hint: Suppose that $Y = \bigcap W_n$, where $W_n$ is open in $X$, and that $B_n$ is closed in $Y$ and has empty interior in $Y$.

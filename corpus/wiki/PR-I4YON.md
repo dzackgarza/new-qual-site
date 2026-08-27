@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Opens are unions of almost disjoint intervals."}
+::: {.proposition}
 Every open subset of $\RR$ (resp $\RR^n$) can be written as a unique countable union of disjoint (resp.
 almost disjoint) intervals (resp.
 cubes).

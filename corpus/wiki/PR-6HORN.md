@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Homotopy type of knot complements"}
+::: {.proposition}
 For $K$ a knot, $S^3\sm K$ is a $K(\pi, 1)$, and $\RR^3 \sm K \homotopic S^2 \vee \qty{S^3 \sm K}$.
 Moreover, if $K$ is nullhomologous and $X$ is any 3-manifold,
 \[

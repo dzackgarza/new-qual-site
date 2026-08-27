@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-BNX60
 kind: exercise
 title: Local finiteness of the shifted double intervals
+subtitle: Munkres §39.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §39.1"}
+::: {.exercise}
 
 Check the statements in Example 1 of §39: the collection
 

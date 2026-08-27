@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Measures on measurable spaces"}
+:::{.definition}
 If $(X, \mcm)$ is a measurable space, then a **measure** is a function $\mu: \mcm \to [0,\infty]$ such that 
 
 1. $\mu(\emptyset) = 0$.

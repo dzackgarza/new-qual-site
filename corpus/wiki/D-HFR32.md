@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Homotopy Equivalence"}
+::: {.definition}
 Let $f: X \to Y$ be a continuous map, then $f$ is said to be a *homotopy equivalence* if there exists a continuous map $g: X \to Y$ such that
 
 $f\circ g \homotopic \id_Y$ and $g\circ f \homotopic \id_X$.

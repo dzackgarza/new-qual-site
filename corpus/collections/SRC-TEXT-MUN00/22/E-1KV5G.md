@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1KV5G
 kind: exercise
 title: Translations are homeomorphisms; topological groups are homogeneous
+subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22 Supplementary"}
+::: {.exercise}
 
 Let $\alpha$ be an element of the topological group $G$.
 Show that the maps $f_\alpha, g_\alpha: G \to G$ defined by

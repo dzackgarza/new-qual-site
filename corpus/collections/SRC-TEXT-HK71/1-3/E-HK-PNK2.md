@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-PNK2
 kind: exercise
 title: "Non-row-equivalent matrices"
+subtitle: Hoffman and Kunze 1.3.5
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.5"}
+::: {.exercise}
 Prove that the following two matrices are not row-equivalent:
 
 $$

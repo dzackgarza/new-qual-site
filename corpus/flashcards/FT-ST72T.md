@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Minkowski's Inequality"}
+::: {.theorem}
 For $1 \leq p < \infty$,
 $$
 \norm{f + g}_p \leq \norm{f}_p + \norm{g}_p

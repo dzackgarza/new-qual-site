@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Sylow 3"}
+::: {.theorem}
 \envlist
 
 1. $n_p \divides m~$, and in particular, $n_p \leq m$.

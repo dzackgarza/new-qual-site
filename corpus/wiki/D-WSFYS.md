@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Free product with amalgamation"}
+::: {.definition}
 For homomorphisms $i: C\to A$ and $j: C\to B$, the **amalgamated free product** is
 \[
 A \ast_C B \da \qty{A \ast B} / N

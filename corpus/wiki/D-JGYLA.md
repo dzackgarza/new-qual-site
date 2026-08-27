@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Separable Field Extension"}
+::: {.definition}
 Let $L/k$ be a field extension, $\alpha \in L$ be algebraic over $k$, and $f(x) \definedas\min(\alpha, k)$.
 The following are equivalent
 

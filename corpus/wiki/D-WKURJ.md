@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Basis for a topology"}
+::: {.definition}
 A set $\mathcal{B}$ is a **basis** for a topology iff
 
 - $\mathcal{B}$ is closed under intersections,

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Dual of a Hilbert space"}
+:::{.definition}
 The **dual** of a Hilbert space \( H \) is defined as 
 \[
 H\dual \da \theset{L: H\to \CC \suchthat L \text{ is continuous }}

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="The Class Equation"}
+:::{.corollary}
 \[
 \size  {G} = \size  {Z(G)} + \sum_{\substack{\text{One $g$ from} \\ \text{each nontrivial} \\ \text{conj. class}}} [G: Z(g)]
 \]

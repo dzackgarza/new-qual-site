@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="First Isomorphism Theorem"}
+:::{.proposition}
 For any ring morphism $f:A\to B$ there is SES of rings
 \[
 0 \to \ker f \to A \to \im(f) \to 0

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Irreducible Module"}
+::: {.definition}
 Simple module, i.e. no nontrivial proper submodules.
 :::

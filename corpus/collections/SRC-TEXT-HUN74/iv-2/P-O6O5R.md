@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.2.9"}
+::: {.problem}
 If $F_1, F_2$ are free modules of a ring with the invariant dimension property, then $$\mathrm{rank}(F_1 \oplus F_2) = \mathrm{rank} F_1 + \mathrm{rank} F_2.$$
 :::

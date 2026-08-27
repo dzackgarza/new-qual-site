@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Expansion at an essential singularity"}
+:::{.exercise}
 Find a Laurent expansion about $z=0$ of
 \[
 f(z) \da \cos\qty{1- {1\over z}}

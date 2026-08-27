@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 1.6.4"}
+::: {.problem}
 Show that $S_n \cong \left\langle (12), (123\cdots n)\right\rangle$ and also that $S_n \cong \left\langle (12), (23\cdots n)\right\rangle$
 :::

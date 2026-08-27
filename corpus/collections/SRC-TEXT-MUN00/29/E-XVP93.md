@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XVP93
 kind: exercise
 title: Closed times compact in topological groups via nets
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Corollary.
 Let $G$ be a topological group; let $A$ and $B$ be subsets of $G$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Function value as a convolution"}
+:::{.theorem}
 For any $p\in U$,
 \[
 f(p) = {1\over 2\pi i }\int_{\bd U} {f(z) \over z-p} \dz

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="JCF Algorithm for generalized eigenvectors"}
+:::{.proposition}
 The following algorithm always works for computing $\JCF(A)$:
 
 - Compute and factor the characteristic polynomial as $\chi_A(x) = \prod_{i} (x-\lambda_i)^{m_i}$.

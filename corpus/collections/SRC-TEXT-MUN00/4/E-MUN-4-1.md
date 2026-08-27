@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-1
 kind: exercise
 title: Laws of algebra for $\mathbb{R}$ from the field axioms
+subtitle: Munkres §4.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.1"}
+::: {.exercise}
 
 Prove the following "laws of algebra" for $\mathbb{R}$, using only axioms (1)-(5):
 

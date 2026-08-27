@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Liouville"}
+:::{.exercise}
 Use a version of the Schwarz lemma to prove Liouville's theorem.
 
 :::

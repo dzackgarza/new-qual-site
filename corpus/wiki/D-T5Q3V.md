@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Loop Space"}
+::: {.definition}
 For a based space $(X, x_0)$, the **loop space** is
 \[
 \Omega X \da \ts{ \gamma: (S^1, s_0)\to (X, x_0) }

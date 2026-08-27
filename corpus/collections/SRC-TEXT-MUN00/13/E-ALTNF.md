@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ALTNF
 kind: exercise
 title: Comparing five topologies on the real line
+subtitle: Munkres §13.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §13.7"}
+::: {.exercise}
 
 Consider the following topologies on $\mathbb{R}$:
 

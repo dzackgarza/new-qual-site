@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Descartes' Rule of Signs"}
+::: {.fact}
 The number $r^+$ of positive real roots (counted with multiplicity) of a polynomial $p(x)$ are at most the number $n$ of sign changes in the coefficients.
 Moreover, $r^+$ is *exactly* $n-2k$ for some $k\in \ZZ^{\geq 0}$.
 Similarly, the number $r^-$ of negative real roots is the same idea applied to $p(-x)$.

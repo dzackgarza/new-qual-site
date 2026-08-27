@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Complex differentiable / holomorphic /entire"}
+:::{.definition}
 A function $f: \CC\to \CC$ is **complex differentiable** or **holomorphic** at $z_0$ iff the following limit exists:
 \[
 \lim_{h\to 0} { f(z_0 + h) - f(z_0) \over h  }

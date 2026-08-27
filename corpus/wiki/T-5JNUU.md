@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Rouché's Theorem" ref="Rouche"}
+:::{.theorem ref="Rouche"}
 If
 
 - $f, g$ are meromorphic on $\Omega$

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Spring 2006, 12"}
+::: {.problem}
 Write $Y$ for the interval $[0, \infty)$, equipped with the usual topology.
 
 Find, with proof, all subspaces $Z$ of $Y$ which are retracts of $Y$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.lemma title="Dirichlet's Test"}
+:::{.lemma}
 Given two sequences of real numbers \( \ts{ a_k } , \ts{ b_k } \) which satisfy
 
 1. The sequence of partial sums \( \ts{ A_n } \) is bounded,

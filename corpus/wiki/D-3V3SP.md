@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Symplectic Group"}
+:::{.definition}
 \[
 \mathrm{Sp}_{2n}(\CC) \da \ts{ A \in \GL_{2n}(\CC) \st A^tJA = J } &&
 J \da 

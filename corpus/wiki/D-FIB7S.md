@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="p-groups"}
+::: {.definition}
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
 :::

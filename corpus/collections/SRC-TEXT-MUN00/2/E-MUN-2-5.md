@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-2-5
 kind: exercise
 title: "Left inverses, right inverses, and bijectivity"
+subtitle: Munkres §2.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §2.5"}
+::: {.exercise}
 
 In general, let us denote the identity function for a set $C$ by $i_C$ . That is, define $i_C: C \to C$ to be the function given by the rule $i_C(x) = x$ for all $x \in C$ . Given $f: A \to B$, we say that a function $g: B \to A$ is a left inverse for $f$ if $g \circ f = i_A$ ; and we say that $h: B \to A$ is a right inverse for $f$ if $f \circ h = i_B$ .
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-7-4
 kind: exercise
 title: "Countability of algebraic numbers and uncountability of transcendentals"
+subtitle: Munkres §7.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §7.4"}
+::: {.exercise}
 
 (a) A real number $x$ is said to be algebraic (over the rationals) if it satisfies some polynomial equation of positive degree
 

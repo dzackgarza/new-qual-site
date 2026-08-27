@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Functional characterization of surjective functions."}
+::: {.definition}
 $$  
 \forall y, \exists X \text{ such that } f(x) = y \iff f\text{ has a right inverse, } \exists g \text{ such that } f(g(y)) = y\, \forall y
 .$$

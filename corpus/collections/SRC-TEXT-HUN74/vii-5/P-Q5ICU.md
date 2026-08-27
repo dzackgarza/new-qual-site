@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 7.5.7"}
+::: {.problem}
 \envlist
 
 1. Let $\phi,\psi$ be endomorphisms of a finite-dimensional vector space $E$ such that $\phi\psi = \psi \phi$.

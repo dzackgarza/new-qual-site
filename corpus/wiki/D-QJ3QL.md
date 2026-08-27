@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Integral Domain"}
+:::{.definition}
 A ring is an **integral domain** if and only if it has no nonzero zero divisors:
 \[  
 a, b\in R\smz, ab = 0 \implies a = 0 \txt{ or } b = 0

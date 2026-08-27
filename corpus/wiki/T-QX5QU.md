@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Kronecker-Weber"}
+::: {.theorem}
 If $K_{/\QQ}$ is an abelian extension, then $K \subseteq \QQ(\zeta_m)$ for some $m$.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1CMTE
 kind: exercise
 title: Paracompactness and topological completeness in the basics review
+subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §36 Supplementary"}
+::: {.exercise}
 
 After studying Chapters 6 and 7, repeat Exercises 1–6 of the Supplementary Exercises (Review of the Basics) for the following properties:
 

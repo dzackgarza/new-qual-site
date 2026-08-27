@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1SW9Q
 kind: exercise
 title: The Prufer manifold
+subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50 Supplementary"}
+::: {.exercise}
 
 There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of Exercise 2. It is constructed as follows.
 Let $A$ be the following subspace of $\mathbb{R}^3$:

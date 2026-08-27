@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-1
 kind: theorem
 title: 'Proposition 3.1: Equivalent characterizations of continuity'
+subtitle: Proposition 3.1
 classification:
   areas:
   - real-analysis
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Proposition 3.1"}
+::: {.theorem}
 For a function $f:E\subset\mathbb R^n\to\mathbb R^m$ the following are equivalent:
 
 1. $f$ is continuous on $E$.

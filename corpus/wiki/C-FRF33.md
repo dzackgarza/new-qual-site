@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.corollary title="Open Mapping"}
+::: {.corollary}
 Any holomorphic non-constant map is an open map.
 :::

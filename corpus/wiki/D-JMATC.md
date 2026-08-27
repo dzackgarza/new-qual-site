@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Distinguished Classes"}
+::: {.definition}
 A collection of field extensions $\mathcal{S}$ is **distinguished** iff
 
 1. (Transitive property) For any tower $L/K/k$, the extension $L/k \in \mathcal{S} \iff L/K \in \mcs$ (upper transitivity) and $K/k\in \mathcal{S}$ (lower transitivity):

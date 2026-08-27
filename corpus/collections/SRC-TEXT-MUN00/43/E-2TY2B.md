@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2TY2B
 kind: exercise
 title: Completion via Cauchy sequences
+subtitle: Munkres §43.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.9"}
+::: {.exercise}
 
 Let $(X, d)$ be a metric space.
 Show that there is an isometric imbedding $h$ of $X$ into a complete metric space $(Y, D)$, as follows.

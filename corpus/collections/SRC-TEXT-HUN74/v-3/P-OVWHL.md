@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.3.13"}
+::: {.problem}
 Show that if $[F: K] < \infty$, then the following conditions are equivalent:
 
 1. $F$ is Galois over $K$

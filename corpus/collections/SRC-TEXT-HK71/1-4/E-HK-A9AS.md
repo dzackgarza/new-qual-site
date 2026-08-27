@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-A9AS
 kind: exercise
 title: 'Column space characterization for a $3 \times 3$ matrix'
+subtitle: Hoffman and Kunze 1.4.8
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.4.8"}
+::: {.exercise}
 Let
 
 $$

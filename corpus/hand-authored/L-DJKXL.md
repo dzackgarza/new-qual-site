@@ -16,7 +16,7 @@ relations:
 review: reviewed
 ---
 
-::: {.lemma title="Fixed-point congruence"}
+::: {.lemma}
 Let a finite group $P$ of order $p^a$ act on a finite set $X$. Then
 $$
 \abs X\equiv \abs{X^P}\pmod p.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KVFCT
 kind: exercise
 title: Sigma-compact regular spaces are paracompact
+subtitle: Munkres §41.6
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §41.6"}
+::: {.exercise}
 
 (a) Let $X$ be a regular space.
 If $X$ is a countable union of compact subspaces of $X$, then $X$ is paracompact.

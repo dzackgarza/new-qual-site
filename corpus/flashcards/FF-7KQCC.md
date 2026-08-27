@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\arctan\qty{1\over \sqrt 3} = \cdots$"}
+::: {.fact}
 $\arctan\qty{1\over \sqrt 3} = {\pi\over 6}$
 :::

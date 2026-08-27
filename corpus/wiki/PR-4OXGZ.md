@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="$L^1$ functions are absolutely continuous."}
+:::{.proposition}
 \[
 f\in L^1 \implies \int_E f \convergesto{m(E) \to 0} 0
 .\]

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 16"}
+::: {.fact}
 5 Abelian, 9 Nonabelian
 
 1. $\ZZ/16\ZZ$

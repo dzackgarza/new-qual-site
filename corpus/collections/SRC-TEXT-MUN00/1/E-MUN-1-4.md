@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-4
 kind: exercise
 title: "Negation of quantified statements about real numbers"
+subtitle: Munkres §1.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.4"}
+::: {.exercise}
 
 Let $A$ and $B$ be sets of real numbers.
 Write the negation of each of the following statements:

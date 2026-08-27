@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proof of Borel-Cantelli Lemma"}
+::: {.proof}
 *Proof of Borel Cantelli:*
 
 - If $E = \limsup_j E_j$ with $\sum m(E_j) < \infty$ then $m(E) = 0$.

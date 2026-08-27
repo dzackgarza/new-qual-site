@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Indecomposable Module"}
+::: {.definition}
 Can not be written as a direct sum of two nonzero submodules.
 :::

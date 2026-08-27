@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-2OUI
 kind: exercise
 title: "Invertibility and the kernel of a matrix"
+subtitle: Hoffman and Kunze 1.6.7
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.7"}
+::: {.exercise}
 Let $A$ be an $n \times n$ (square) matrix.
 Prove the following two statements:
 

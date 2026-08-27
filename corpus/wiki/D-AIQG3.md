@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Locally uniform convergence"}
+::: {.definition}
 A sequence of functions $f_n$ is said to converge **locally uniformly** on $\Omega \subseteq \CC$ iff $f_n\to f$ uniformly on every compact subset $K \subseteq \Omega$.
 :::

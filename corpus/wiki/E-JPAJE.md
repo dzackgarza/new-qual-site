@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Mobius transformations as cross-ratios"}
+:::{.exercise}
 Write a Mobius transformation $f(z) = {az+b\over cz + d}$ as a cross-ratio.
 
 :::

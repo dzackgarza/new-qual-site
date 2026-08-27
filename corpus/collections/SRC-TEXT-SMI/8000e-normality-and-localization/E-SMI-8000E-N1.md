@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-N1
 kind: exercise
 title: Every UFD is integrally closed
+subtitle: Smith 8000e normality 1
 classification:
   areas:
   - algebra
@@ -14,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e normality 1"}
+::: {.exercise}
 Any UFD is normal (integrally closed).
 
 [Hint: look at the proof of the rational root theorem from precalculus.]

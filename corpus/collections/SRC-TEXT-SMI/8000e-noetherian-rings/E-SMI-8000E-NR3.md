@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-NR3
 kind: exercise
 title: The two-out-of-three property for noetherian modules in exact sequences
+subtitle: Smith 8000e noetherian rings 3
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e noetherian rings 3"}
+::: {.exercise}
 If $R$ is a ring and
 
 $$

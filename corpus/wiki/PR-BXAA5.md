@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="General construction for wedge products"}
+::: {.proposition}
 For a wedge product $X = \bigvee_i^n \tilde X_i$, the covering space $\tilde X$ is constructed as a infinite tree with $n\dash$colored vertices:
 
 - Each vertex corresponds to one of the universal covers $\tilde X_i$,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Free Module"}
+::: {.definition}
 A **free** module $M$ is a module satisfying any of the following conditions:
 
 - A universal property: There is a set \( \mathcal{B}  \) and a set map \( M \mapsvia{\iota} \mathcal{B}  \) such that every set map \( \mathcal{B} \mapsvia{N} \) lifts:

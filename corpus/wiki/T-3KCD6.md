@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Cauchy's Theorem"}
+::: {.theorem}
 For every prime $p$ dividing $\abs{G}$.
 there is an element (and thus a subgroup) of order $p$.
 

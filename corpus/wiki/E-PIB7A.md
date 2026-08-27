@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Cancelling poles"}
+:::{.exercise}
 Let $f$ be meromorphic on $\DD$ with no poles on $\bd\DD$.
 Show that there exists a meromorphic $g$ with *no* poles in $\DD$ such that $\abs{f(z)} = \abs{g(z)}$ when $\abs{z} = 1$.
 

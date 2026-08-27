@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Center"}
+:::{.definition}
 The **center** of $G$ is defined as
 \[
 Z(G) = \ts{ g\in G \st [g, h] = e \, \forall h\in H}

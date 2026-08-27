@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Define $ \limsup, \liminf $ for sequences of sets. What are their containments?"}
+::: {.fact}
 $$\liminf _{n \rightarrow \infty} A_n=\bigcup_{n \geq 1} \bigcap_{j \geq n} A_j, \qquad \limsup _{n \rightarrow \infty} A_n=\bigcap_{n \geq 1} \bigcup_{j \geq n} A_j$$
 
 - Supremum: Union, $ \limsup = \inf\sup $, in infinitely many

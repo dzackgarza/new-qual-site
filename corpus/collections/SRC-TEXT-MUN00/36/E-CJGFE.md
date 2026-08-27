@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CJGFE
 kind: exercise
 title: Heredity of the seventeen basic properties
+subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §36 Supplementary"}
+::: {.exercise}
 
 Consider the seventeen properties listed in Exercise 1 of the Supplementary Exercises (Review of the Basics).
 

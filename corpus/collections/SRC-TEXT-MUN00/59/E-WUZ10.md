@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-WUZ10
 kind: exercise
 title: Two spheres touching at a point
+subtitle: Munkres §59.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §59.1"}
+::: {.exercise}
 
 Let $X$ be the union of two copies of $S^2$ having a single point in common.
 What is the fundamental group of $X$?

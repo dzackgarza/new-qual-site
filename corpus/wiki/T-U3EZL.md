@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterization of Prime Subfields"}
+::: {.theorem}
 The prime subfield of any field is isomorphic to either $\QQ$ or $\FF_p$ for some $p$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="The equality case"}
+:::{.exercise}
 Suppose $f:\DD\to \DD$ and $f(0) = 0$.
 Show that
 \[

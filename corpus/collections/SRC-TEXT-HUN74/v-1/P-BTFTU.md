@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.1.1"}
+::: {.problem}
 Let $F/K$ be a field extension.
 Show that
 

@@ -16,7 +16,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Orbit-stabilizer theorem"}
+::: {.theorem}
 If $G$ acts on $X$ and $x\in X$, the map
 $$
 G/G_x\longrightarrow G\cdot x,

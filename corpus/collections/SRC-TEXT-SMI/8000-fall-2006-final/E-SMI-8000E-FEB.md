@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-FEB
 kind: exercise
 title: Field theory definitions
+subtitle: Smith 8000 fall 2006 final B
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 final B"}
+::: {.exercise}
 Assume $k$ is a subfield of a field $E$, and $c$ an element of $E$.
 Define what is meant by:
 

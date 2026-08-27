@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Hadamard factorization"}
+:::{.theorem}
 Write
 \[
 E_{p}(z)= \begin{cases}

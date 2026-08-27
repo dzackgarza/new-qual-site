@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Computing $\zeta(2)$ by integration"}
+:::{.exercise}
 By computing
 \[
 {1\over 2\pi i}\oint {\cot(\pi z)\over z^2}\dz

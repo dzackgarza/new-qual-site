@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Removable Singularities"}
+:::{.definition}
 If $z_0$ is a singularity of $f$. then $z_0$ is a **removable singularity** iff
 there exists a holomorphic function $g$ such that $f(z) = g(z)$ in a punctured neighborhood of $z_0$.
 Equivalently,

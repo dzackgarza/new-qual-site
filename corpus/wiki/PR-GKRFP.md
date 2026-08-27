@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Decomposing $\RP^2$"}
+:::{.proposition}
 \[  
 \RP^2 = \bbm \disjoint_{\id_{\bd \bbm}} \bbm
 .\]

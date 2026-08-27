@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-ED8
 kind: exercise
 title: Structure of finitely generated modules over a Euclidean domain
+subtitle: Smith 8000e euclidean domains 8
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e euclidean domains 8"}
+::: {.exercise}
 Conclude that if $M$ is a finitely generated $R$ module, with minimal set of generators $x_1, \ldots, x_m$, then $M$ is isomorphic to some product of the form
 
 $$

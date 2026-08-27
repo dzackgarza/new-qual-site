@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Equivalent Characterizations of Completeness"}
+::: {.definition}
 - Every Cauchy sequence converges
 
 - Every absolutely convergent series converges

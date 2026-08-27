@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Dirichlet's Test"}
+::: {.theorem}
 If $\theset{a_n}, \theset{b_n}$ satisfy
 
 - $a_{n+1} \leq a_n$ and $a_n \to 0$ (i.e. $a_n \searrow 0$),

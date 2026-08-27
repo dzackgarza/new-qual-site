@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="The residue theorem"}
+:::{.theorem}
 Let $f$ be meromorphic on a region $\Omega$ with poles \( \ts{ \elts{z}{N} } \).
 Then for any $\gamma \in \Omega\sm \ts{ \elts{z}{N} }$, 
 \[

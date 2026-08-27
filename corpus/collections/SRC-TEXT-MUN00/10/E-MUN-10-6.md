@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-6
 kind: exercise
 title: Properties of the minimal uncountable well-ordered set $S_{\Omega}$
+subtitle: Munkres §10.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.6"}
+::: {.exercise}
 
 Let $S_{\Omega}$ be the minimal uncountable well-ordered set.
 

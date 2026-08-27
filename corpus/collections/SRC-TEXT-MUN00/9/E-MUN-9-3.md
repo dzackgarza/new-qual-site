@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-3
 kind: exercise
 title: "Infinite sets from sequences of injections"
+subtitle: Munkres §9.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.3"}
+::: {.exercise}
 
 Suppose that $A$ is a set and $\{f_n\}_{n \in \mathbf{Z}_+}$ is a given indexed family of injective functions
 

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Homotopy Class"}
+::: {.definition}
 The equivalence class $[f]$ of a map $f: X\to Y$ under homotopy.
 The set of all such classes is written
 \[

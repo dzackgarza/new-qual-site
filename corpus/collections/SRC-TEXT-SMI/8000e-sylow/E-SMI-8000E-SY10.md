@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-SY10
 kind: exercise
 title: Cauchy's theorem via induction on the group order
+subtitle: Smith 8000e sylow 10
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e sylow 10"}
+::: {.exercise}
 Prove that if $G$ is a finite group such that $p^s$ divides $\#G$, then $G$ has a subgroup of order $p^s$.
 
 [Hint: use induction, and the fact that the center of a group of order $p^r$ is nontrivial.]

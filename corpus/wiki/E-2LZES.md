@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2LZES
 kind: exercise
 title: Compactness, limit point compactness, and sequential compactness are equivalent
+subtitle: Munkres §28
   for metrizable spaces
 classification:
   areas:
@@ -14,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28"}
+::: {.exercise}
 Show that for $X$ metrizable, the following are equivalent:
 
 - $X$ is compact;

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Spring 2021, 1"}
+:::{.problem}
 Let \( (X, \mathcal{M},\mu)  \) be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.
 Let $f_n \da \chi_{E_n}$ be the indicator function of the set $E_n$ and show that 
 

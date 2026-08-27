@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Almost Disjoint"}
+::: {.definition}
 $A^\circ \intersect B^\circ = \emptyset$
 :::

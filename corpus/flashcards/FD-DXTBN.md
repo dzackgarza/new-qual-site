@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Sequentially Compact"}
+::: {.definition}
 Every sequence has a convergent subsequence.
 :::

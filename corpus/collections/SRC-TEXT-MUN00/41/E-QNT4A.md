@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QNT4A
 kind: exercise
 title: Perfect maps and paracompactness
+subtitle: Munkres §41.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §41.8"}
+::: {.exercise}
 
 Let $p: X \to Y$ be a perfect map.
 (See Exercise 7 of §31.)

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OK0GG
 kind: exercise
 title: Closure behavior under unions
+subtitle: Munkres §17.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.6"}
+::: {.exercise}
 
 Let $A$, $B$, and $A_\alpha$ denote subsets of a space $X$.
 Prove the following:

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KKI5A
 kind: exercise
 title: The countable chain of tangent circles
+subtitle: Munkres §71.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §71.5"}
+::: {.exercise}
 
 Let $S_n$ be the circle of radius $n$ in $\mathbb{R}^2$ whose center is at the point $(n, 0)$.
 Let $Y$ be the subspace of $\mathbb{R}^2$ that is the union of these circles; let $p$ be their common point.

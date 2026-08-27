@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 7.1.5"}
+::: {.problem}
 \envlist
 
 1. Show that if $A, B$ are (skew)-symmetric then $A+B$ is (skew)-symmetric.

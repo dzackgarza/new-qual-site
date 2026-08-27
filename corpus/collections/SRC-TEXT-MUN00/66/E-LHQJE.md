@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LHQJE
 kind: exercise
 title: The winding number as a degree
+subtitle: Munkres §66.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §66.1"}
+::: {.exercise}
 
 Let $f$ be a loop in $\mathbb{R}^2 - a$; let $g(s) = [f(s) - a]/\norm{f(s) - a}$.
 The map $g$ induces, via the standard quotient map $p: I \to S^1$, a continuous map $h: S^1 \to S^1$.

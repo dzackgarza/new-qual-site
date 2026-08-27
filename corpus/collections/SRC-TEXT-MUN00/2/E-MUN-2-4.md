@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-2-4
 kind: exercise
 title: "Composition of functions and injectivity and surjectivity"
+subtitle: Munkres §2.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §2.4"}
+::: {.exercise}
 
 Let $f: A \to B$ and $g: B \to C$ .
 

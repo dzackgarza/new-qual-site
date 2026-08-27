@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XFXGM
 kind: exercise
 title: Product metrics, finite and countable
+subtitle: Munkres §21.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.3"}
+::: {.exercise}
 
 Let $X_n$ be a metric space with metric $d_n$, for $n \in \mathbb{Z}_+$.
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Line integrals"}
+::: {.exercise}
 Compute $\int_\Gamma \Re(z) \dz$ for $\Gamma$ the unit square.
 :::
 

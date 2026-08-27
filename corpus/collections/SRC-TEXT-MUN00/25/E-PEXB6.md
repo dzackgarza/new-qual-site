@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PEXB6
 kind: exercise
 title: The comb space and a nowhere locally connected path-connected set
+subtitle: Munkres §25.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §25.5"}
+::: {.exercise}
 
 Let $X$ denote the rational points of the interval $[0, 1] \times 0$ of $\mathbb{R}^2$.
 Let $T$ denote the union of all line segments joining the point $p = 0 \times 1$ to points of $X$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 7.4.10"}
+::: {.problem}
 Find all possible rational canonical forms for a matrix $A\in M_n(\Bbb Q)$ such that
 
 1. $A$ is $6\times 6$ with minimal polynomial $q(x) = (x-2)^2(x+3)$.

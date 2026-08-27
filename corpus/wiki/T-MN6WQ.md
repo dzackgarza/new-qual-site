@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Commuting Sums with Integrals (integrable)"}
+:::{.theorem}
 If $\theset{f_n}$ integrable with either $\sum \int \abs{f_n} < \infty$ or $\int\sum \abs{f_n} < \infty$, then
 \[
 \int\sum f_n = \sum \int f_n

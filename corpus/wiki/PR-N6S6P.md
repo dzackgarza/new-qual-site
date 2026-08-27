@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="How to count sizes of automorphism groups"}
+:::{.proposition}
 Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
 There's a good reference here: 
 

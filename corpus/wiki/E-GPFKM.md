@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Estimating and conformal maps"}
+:::{.exercise}
 Suppose $f:\HH\to \CC$ with $\abs{f(z)}< 1$ and $f(i) = 0$.
 Find an upper bound for $f(2i)$.
 

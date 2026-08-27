@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$1/\sqrt{x^2-1}$ "}
+:::{.exercise}
 \[
 I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
 .\]

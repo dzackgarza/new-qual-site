@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KD56B
 kind: exercise
 title: First countability of the lower limit topology and the ordered square
+subtitle: Munkres §21.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.4"}
+::: {.exercise}
 
 Show that $\mathbb{R}_\ell$ and the ordered square satisfy the first countability axiom.
 (This result does not, of course, imply that they are metrizable.)

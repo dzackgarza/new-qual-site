@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Plancherel"}
+:::{.proposition}
 \[
 \norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\
 \int_{\RR^d} \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2

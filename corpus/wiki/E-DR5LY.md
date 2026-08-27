@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Hadamard expansion of $\sin$"}
+:::{.exercise}
 Find a Hadamard expansion of $\sin(\pi z)$.
 :::
 

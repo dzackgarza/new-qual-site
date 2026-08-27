@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.example title="A sequence of functions that converges pointwise and a.e. but not uniformly or in $L^1$."}
+::: {.example}
 $$
 f_n \definedas \chi_{(n, n+1)}
 $$

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MGLSK
 kind: exercise
 title: Right-continuous functions and the lower limit topology
+subtitle: Munkres §18.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §18.7"}
+::: {.exercise}
 
 (a) Suppose that $f: \mathbb{R} \to \mathbb{R}$ is "continuous from the right," that is,
 

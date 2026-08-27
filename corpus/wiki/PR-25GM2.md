@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Compact if and only if sequentially compact for metric spaces"}
+::: {.proposition}
 Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
 :::

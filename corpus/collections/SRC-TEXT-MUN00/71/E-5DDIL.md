@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-5DDIL
 kind: exercise
 title: Fundamental groups of wedges with nice neighborhoods
+subtitle: Munkres §71.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §71.2"}
+::: {.exercise}
 
 Suppose $X$ is a space that is the union of the closed subspaces $X_1, \ldots, X_n$; assume there is a point $p$ of $X$ such that $X_i \cap X_j = \ts{p}$ for $i \neq j$.
 Then we call $X$ the wedge of the spaces $X_1, \ldots, X_n$, and write $X = X_1 \vee \cdots \vee X_n$.

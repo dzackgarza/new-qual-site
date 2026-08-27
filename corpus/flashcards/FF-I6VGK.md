@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Relative strengths of convergence"}
+::: {.fact}
 Uniform $\implies$ pointwise $\implies$ a.e. Convergence in norm is incomparable (but generally weaker).
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Exponential Inequality"}
+:::{.proposition}
 \[  
 \forall t\in \RR,\quad 1 + t \leq  e^t
 .\]

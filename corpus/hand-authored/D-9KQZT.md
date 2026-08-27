@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Homeomorphism"}
+::: {.definition}
 Let $X, Y$ be topological spaces and $f: X\to Y$ a bijection.
 Then $f$ is a **homeomorphism** iff both $f$ and $f\inv$ are continuous, equivalently iff $f$ is a continuous open bijection, equivalently iff
 \[

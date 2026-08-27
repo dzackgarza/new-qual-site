@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="How to find the minimal polynomial"}
+::: {.proposition}
 Let $m(x)$ denote the minimal polynomial $A$.
 
 1. Find the characteristic polynomial $\chi(x)$; this annihilates $A$ by Cayley-Hamilton.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Invert $\cos(z)$, one coefficient at a tiem"}
+:::{.exercise}
 Find $1/\cos(z)$ using this method.
 :::
 

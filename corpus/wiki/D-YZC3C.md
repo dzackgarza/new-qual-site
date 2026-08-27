@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Uniform Convergence"}
+:::{.definition}
 \[
 (\forall \varepsilon>0)\left(\exists n_{0} = n_0(\eps) \right)(\forall x \in S)\left(\forall n>n_{0}\right)\left(\left|f_{n}(x)-f(x)\right|<\varepsilon\right)
 .\]

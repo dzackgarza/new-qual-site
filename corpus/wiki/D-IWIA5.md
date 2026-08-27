@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Isolated singularities"}
+::: {.definition}
 A point $z_0$ is an **isolated singularity** if $f(z_0)$ is undefined but $f(z)$ is defined in a punctured neighborhood $D(z_0)\sm\ts{z_0}$ of $z_0$.
 
 There is a classification of isolated singularities:

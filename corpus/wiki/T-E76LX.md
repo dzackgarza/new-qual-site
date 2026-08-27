@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Existence of log of a function"}
+:::{.theorem}
 If $f$ is holomorphic and nonvanishing on a simply-connected region $\Omega$, then there exists a holomorphic $G$ on $\Omega$ such that
 \[
 f(z) = e^{G(z)}

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Maps from compact to Hausdorff spaces, Lee A.52"}
+::: {.theorem}
 If $f:X\to Y$ is continuous where $X$ is compact and $Y$ is Hausdorff, then
 
 - $f$ is a closed map.

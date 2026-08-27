@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Dense"}
+::: {.definition}
 A subset $A\subset X$ is dense in $X$ iff $\cl_X(A) = X$.
 :::

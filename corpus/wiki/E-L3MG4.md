@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\sqrt{x^2-1}$ "}
+:::{.exercise}
 \[
 I\da \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
 .\]

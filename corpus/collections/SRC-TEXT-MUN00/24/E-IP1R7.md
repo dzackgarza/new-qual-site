@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-IP1R7
 kind: exercise
 title: The plane minus countably many points is path connected
+subtitle: Munkres §24.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.9"}
+::: {.exercise}
 
 Assume that $\mathbb{R}$ is uncountable.
 Show that if $A$ is a countable subset of $\mathbb{R}^2$, then $\mathbb{R}^2 - A$ is path connected.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 4"}
+::: {.fact}
 $\ZZ/4\ZZ, (\ZZ/2\ZZ)^2$
 
 ![](https://i.imgur.com/8H2HQKO.png)

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Little Picard"}
+::: {.theorem}
 If $f:\CC\to \CC$ is entire and nonconstant, then $\im(f)$ is either $\CC$ or $\CC\sm\ts{z_0}$ for some point $z_0$.
 :::

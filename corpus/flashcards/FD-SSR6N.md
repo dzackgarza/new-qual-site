@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Centralizer"}
+::: {.definition}
 $$
 Z_G(S) = \ts{g\in G \st gsg\inv = s\, \forall s\in S}
 .$$

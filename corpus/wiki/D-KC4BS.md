@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Moore Space"}
+::: {.definition}
 For $G$ abelian and $n\geq 1$, a **Moore space** $M(G,n)$ is a CW complex with
 \[
 \tilde H_i(M(G,n);\ZZ) =

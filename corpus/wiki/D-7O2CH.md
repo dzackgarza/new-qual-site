@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Division ring or skew field"}
+::: {.definition}
 A **division ring** is any (potentially noncommutative) ring $R$ for which $R\smz \subset \RR\units$, i.e. every nonzero element is a unit and thus has a multiplicative inverse.
 :::

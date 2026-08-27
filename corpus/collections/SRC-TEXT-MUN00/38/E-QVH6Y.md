@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QVH6Y
 kind: exercise
 title: Metrizable spaces with metrizable compactifications
+subtitle: Munkres §38.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.3"}
+::: {.exercise}
 
 Under what conditions does a metrizable space have a metrizable compactification?
 :::

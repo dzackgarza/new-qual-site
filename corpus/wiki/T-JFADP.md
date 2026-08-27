@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Compact in Hausdorff $\implies$ closed"}
+::: {.theorem}
 A compact subset of a Hausdorff space is closed.
 
 ::: {.remark}

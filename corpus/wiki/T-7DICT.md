@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Cantor's Intersection Theorem"}
+::: {.theorem}
 Let $X$ be compact and let $C_1 \supseteq C_2 \supseteq \cdots$ be a nested decreasing sequence of nonempty **closed** subsets of $X$.
 Then $\Intersect_n C_n \neq \emptyset$.
 

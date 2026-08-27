@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Expansion for a reciprocal"}
+:::{.exercise}
 Find a power series expansion of 
 \[
 f(z) = {1\over e^z-1}

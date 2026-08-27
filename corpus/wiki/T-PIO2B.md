@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Maschke's Theorem"}
+::: {.theorem}
 Let $k$ be a field with $\ch(k)$ not dividing $\size G$.
 Then any finite-dimensional representation of $G$ decomposes into a direct sum of irreducible representations.
 :::

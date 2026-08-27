@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What does it mean for a set to be nowhere dense?"}
+::: {.fact}
 A set is $ A $ **nowhere dense** if its closure has empty interior $ \qty{\overline{A}}^\circ $, equivalently it is not dense in *any* nonempty open set.
 
 For $ {\mathbf{R}} $, every interval $ I $ contains a subinterval $ S\subset I $ with $ S\cap A = \emptyset $, i.e. its closure contains no intervals.

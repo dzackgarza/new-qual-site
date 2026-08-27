@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="UCT for Change of Group"}
+:::{.theorem}
 For changing coefficients from $\ZZ$ to $G$ an arbitrary group, there are short exact sequences
 
 \[

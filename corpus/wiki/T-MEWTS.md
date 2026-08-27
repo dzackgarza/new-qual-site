@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Characterization of conformal maps"}
+:::{.theorem}
 Conformal maps $\DD\to\DD$ have the form
 \[
 g(z) = \lambda {a-z \over 1 - \bar a z}, \quad \abs{a} < 1, \quad \abs{\lambda} = 1

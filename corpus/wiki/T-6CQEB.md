@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Cancellation / 3rd Isomorphism Theorem"}
+:::{.theorem}
 Suppose $N, K \leq G$ with $N \normal G$ and $N\subseteq K \subseteq G$.
 
 1. If $K\leq G$ then $K/N \leq G/N$ is a subgroup

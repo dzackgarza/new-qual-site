@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-IY4BS
 kind: exercise
 title: F-sigma and G-delta sets
+subtitle: Munkres §40.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §40.2"}
+::: {.exercise}
 
 A subset $W$ of $X$ is said to be an "$F_\sigma$ set" in $X$ if $W$ equals a countable union of closed sets of $X$.
 Show that $W$ is an $F_\sigma$ set in $X$ if and only if $X - W$ is a $G_\delta$ set in $X$.

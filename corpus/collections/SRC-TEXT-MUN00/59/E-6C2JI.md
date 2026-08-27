@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-6C2JI
 kind: exercise
 title: Fundamental groups under the Seifert-van Kampen hypotheses with trivial inclusions
+subtitle: Munkres §59.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §59.4"}
+::: {.exercise}
 
 Assume the hypotheses of Theorem 59.1.
 

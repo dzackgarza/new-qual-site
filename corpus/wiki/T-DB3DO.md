@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Improved Taylor Remainder Theorem"}
+:::{.theorem}
 If $f$ is analytic on a region $\Omega$ containing $z_0$, then $f$ can be written as
 \[
 f(z)

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-IIK8L
 kind: exercise
 title: Closures in the ordered square
+subtitle: Munkres §17.18
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.18"}
+::: {.exercise}
 
 Determine the closures of the following subsets of the ordered square (the unit square $I \times I$ in the dictionary order topology):
 

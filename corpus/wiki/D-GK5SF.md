@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Minimal polynomial"}
+::: {.definition}
 The **minimal polynomial** of a linear map $T$ is the unique monic polynomial $\min_T(x)$ of minimal degree such that $\min_T(T) = 0$.
 :::

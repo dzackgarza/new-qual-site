@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lagrange's Theorem"}
+::: {.theorem}
 \[H \leq G \implies \# H \divides \# G.\] Moreover, there is an equality $[G:H] = \# G/ \# H$ when $G$ is finite.
 :::

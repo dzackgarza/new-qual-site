@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Kunneth"}
+:::{.theorem}
 Let $X, Y$ be CW complexes and $R$ a PID. Then for each $k$ there is a natural short exact sequence
 \[
 0 \to \bigoplus_{i+j=k} H_{i}(X; R) \tensor_{R} H_{j}(Y; R) \to H_{k}(X\cross Y; R) \to \bigoplus_{i+j=k-1} \tor^R_1\qty{H_{i}(X; R), H_{j}(Y; R)} \to 0

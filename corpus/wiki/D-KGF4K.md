@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Embeddings and Lifts"}
+::: {.definition}
 Let $k$ denote a field, and $L/k$ extension.
 Every field morphism is an embedding (injection).
 An **embedding** of $k\dash$algebras $L\embeds L'$ will refer to any ring morphism over $k$, i.e. a field morphism that restricts to the identity on $k$:

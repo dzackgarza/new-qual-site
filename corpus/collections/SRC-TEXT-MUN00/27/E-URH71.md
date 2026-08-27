@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-URH71
 kind: exercise
 title: Countable unions of nowhere dense closed sets in compact Hausdorff spaces
+subtitle: Munkres §27.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §27.5"}
+::: {.exercise}
 
 Let $X$ be a compact Hausdorff space, let $\ts{A_n}$ be a countable collection of closed sets of $X$.
 Show that if each set $A_n$ has empty interior in $X$, then the union $\bigcup A_n$ has empty interior in $X$.

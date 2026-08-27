@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PCAYG
 kind: exercise
 title: Banach fixed point theorem for contractions of complete metric spaces
+subtitle: Munkres §43.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.5"}
+::: {.exercise}
 
 If $(X, d)$ is a metric space, recall that a map $f: X \to X$ is called a contraction if there is a number $\alpha < 1$ such that
 

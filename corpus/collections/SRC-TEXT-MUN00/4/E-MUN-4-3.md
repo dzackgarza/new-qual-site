@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-3
 kind: exercise
 title: Inductive sets and basic properties of $\mathbb{Z}_+$
+subtitle: Munkres §4.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.3"}
+::: {.exercise}
 
 (a) Show that if $\mathcal{A}$ is a collection of inductive sets, then the intersection of the elements of $\mathcal{A}$ is an inductive set.
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Give a categorical/homological corollary of Nakayama's lemma."}
+::: {.fact}
 For $ R $ Noetherian, $ M\in   {}_{R}{\mathsf{Mod}} $ flat, then $ M $ is free:
 
 Take a presentation $ K\hookrightarrow R^n \twoheadrightarrow M $, reduce to $ k $ to get $ K'\hookrightarrow k^n \twoheadrightarrow M' $ where $ K'=0 \implies K=0 $.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-II4JY
 kind: exercise
 title: The first homology of the Klein bottle
+subtitle: Munkres §75.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §75.2"}
+::: {.exercise}
 
 If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
 :::

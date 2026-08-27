@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Exponential is uniformly convergent in discs"}
+::: {.proposition}
 $f(z) = e^z$ is uniformly convergent in any disc in $\CC$.
 :::

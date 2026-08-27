@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Nondegenerate Bilinear Form"}
+::: {.definition}
 A bilinear form $b: V\cross V \to k$ is **nondegenerate** iff its adjoint map
 \[
 V &\to V\dual \\

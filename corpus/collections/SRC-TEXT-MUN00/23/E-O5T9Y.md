@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-O5T9Y
 kind: exercise
 title: The lower limit line is disconnected
+subtitle: Munkres §23.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §23.7"}
+::: {.exercise}
 
 Is the space $\mathbb{R}_\ell$ connected?
 Justify your answer.

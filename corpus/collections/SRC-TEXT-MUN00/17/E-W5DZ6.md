@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-W5DZ6
 kind: exercise
 title: Closure of a product equals the product of closures
+subtitle: Munkres §17.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.9"}
+::: {.exercise}
 
 Let $A \subset X$ and $B \subset Y$.
 Show that in the space $X \times Y$,

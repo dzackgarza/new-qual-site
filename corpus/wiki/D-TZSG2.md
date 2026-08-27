@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Direct Sum"}
+::: {.definition}
 The submodule
 \[
 \bigoplus_\alpha M_\alpha \da \ts{ (m_\alpha) \in \prod_\alpha M_\alpha \st m_\alpha = 0 \text{ for all but finitely many } \alpha }

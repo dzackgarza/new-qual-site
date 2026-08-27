@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Composition Series"}
+::: {.definition}
 A **composition series** of a group $G$ is a finite normal series such that $G^{i+1}$ is a *maximal proper* normal subgroup of $G^i$.
 :::

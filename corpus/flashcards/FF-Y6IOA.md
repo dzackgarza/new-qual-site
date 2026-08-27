@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\arctan(0) = \cdots$"}
+::: {.fact}
 $\arctan(0) = 0$
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YERPP
 kind: exercise
 title: Order-preserving surjections are homeomorphisms
+subtitle: Munkres §24.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.7"}
+::: {.exercise}
 
 (a) Let $X$ and $Y$ be ordered sets in the order topology.
 Show that if $f: X \to Y$ is order preserving and surjective, then $f$ is a homeomorphism.

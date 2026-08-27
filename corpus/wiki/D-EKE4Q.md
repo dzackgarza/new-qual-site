@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normal subgroup"}
+::: {.definition}
 A subgroup $N\leq G$ is **normal** iff $gH = Hg$ for every $g\in G$, or equivalently $gHg\inv = H$ for all $g$, so $H$ has only itself as a conjugate.
 We denote this by $N\normal G$.
 Equivalently, for every inner automorphism $\psi \in \Inn(G)$, $\psi(N) = N$.

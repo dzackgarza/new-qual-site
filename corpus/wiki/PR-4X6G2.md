@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Poincaré Duality for manifolds"}
+:::{.proposition}
 For $M^n$ a closed orientable manifold without boundary and $\FF$ a field,
 \[
 H_k(M^n; \FF) \cong H^{n-k}(M^n; \FF)

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Morphisms between groups finite and infinite groups"}
+::: {.proposition}
 There are no nontrivial homomorphisms from finite groups into free groups.
 In particular, any group morphism $f: \ZZ_n \to \ZZ$ is trivial.
 :::

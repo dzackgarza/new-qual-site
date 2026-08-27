@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Completeness of a Hilbert space"}
+::: {.definition}
 A collection of vectors $\theset{u_{n}}\subset H$ is **complete** iff $\inner{x}{u_{n}} = 0$ for all $n \iff x = 0$ in $H$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Uniformly bounded derivatives implies equicontinuous"}
+::: {.exercise}
 Show that if $\ts{f_k}$ is a differentiable sequence with $\abs{f_k'(x)} \leq M$ uniformly bounded, then $\ts{f_k}$ is equicontinuous.
 
 > Hint: MVT.

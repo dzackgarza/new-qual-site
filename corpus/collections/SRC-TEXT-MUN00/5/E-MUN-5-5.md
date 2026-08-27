@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-5-5
 kind: exercise
 title: Subsets of $\mathbb{R}^{\omega}$ as Cartesian products
+subtitle: Munkres §5.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §5.5"}
+::: {.exercise}
 
 Which of the following subsets of $\mathbb{R}^{\omega}$ can be expressed as the cartesian product of subsets of $\mathbb{R}$ ?
 

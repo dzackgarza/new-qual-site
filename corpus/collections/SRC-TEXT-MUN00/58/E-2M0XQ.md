@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2M0XQ
 kind: exercise
 title: Fundamental groups of twelve standard spaces
+subtitle: Munkres §58.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §58.2"}
+::: {.exercise}
 
 For each of the following spaces, the fundamental group is either trivial, infinite cyclic, or isomorphic to the fundamental group of the figure eight.
 Determine for each space which of the three alternatives holds.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Rudin 10.4"}
+:::{.exercise}
 Let $f$ be entire and suppose that for $\abs{z} \geq M$,
 \[
 \abs{f} \leq A + B\abs{z}^k

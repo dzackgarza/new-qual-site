@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Separability test: identically zero derivative"}
+::: {.proposition}
 $f\in k[x]^{\irr}$ is **inseparable** (so $f$ has a repeated root) iff $f'(x) \equiv 0$.
 :::

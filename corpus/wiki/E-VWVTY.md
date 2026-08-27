@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Convergence of a $\ZZ\dash$index series"}
+:::{.exercise}
 Find the radius of convergence for 
 \[
 f(z) \da \sum_{k\in \ZZ} 2^{-\abs{k}}z^k

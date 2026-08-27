@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Horizontal strip to $\mathbb{H}$"}
+:::{.problem}
 Find a conformal map from the strip $\theset{z\in \CC \suchthat 0 < \Im(z) < 1}$ to $\HH$.
 :::
 

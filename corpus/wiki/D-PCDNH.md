@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Conformal Map / Biholomorphism"}
+::: {.definition}
 A map $f$ is **conformal** on $\Omega$ iff $f$ is complex-differentiable, $f'(z)\neq 0$ for $z\in \Omega$, and $f$ preserves signed angles (so $f$ is orientation-preserving).
 Conformal implies holomorphic, and a bijective conformal map has conformal inverse automatically.
 

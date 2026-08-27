@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-1EVA
 kind: exercise
 title: 'Row-reduced $2 \times 2$ complex matrices with trace zero'
+subtitle: Hoffman and Kunze 1.3.6
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.6"}
+::: {.exercise}
 Let
 
 $$

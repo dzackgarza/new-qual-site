@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9MCHZ
 kind: exercise
 title: Closures and separation under five topologies on the line
+subtitle: Munkres §17.16
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.16"}
+::: {.exercise}
 
 Consider the five topologies on $\mathbb{R}$ given in Exercise 7 of §13.
 

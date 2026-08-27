@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Relationship between continuity and differentiability"}
+::: {.proof}
 Differentiability $\implies$ continuity:
 $$
 f(x) - f(x_0) = (x-x_0) \qty{ f(x)-f(x_0) \over x-x_0 } = (x-x_0) f'(x_0) \to 0

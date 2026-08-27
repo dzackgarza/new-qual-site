@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-JCJOW
 kind: exercise
 title: Choice axiom and nonempty cartesian products
+subtitle: Munkres §19.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §19.9"}
+::: {.exercise}
 
 Show that the choice axiom is equivalent to the statement that for any indexed family $\ts{A_\alpha}_{\alpha \in J}$ of nonempty sets, with $J \neq 0$, the cartesian product
 

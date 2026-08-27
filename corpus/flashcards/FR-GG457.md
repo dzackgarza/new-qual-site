@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proposition: Convergence in measure is equivalent to a.e. convergence"}
+::: {.proof}
 Proof: ? Use Egorov's Theorem
 :::

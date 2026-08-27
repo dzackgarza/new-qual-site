@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-AUZQ
 kind: exercise
 title: 'Column space characterization for a $4 \times 4$ matrix'
+subtitle: Hoffman and Kunze 1.4.9
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.4.9"}
+::: {.exercise}
 Let
 
 $$

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$e^{ax}\operatorname{sech}(z)$ "}
+:::{.exercise}
 \[
 I \da \int_\RR {e^{ax} \over \cosh(x) }\dx = \pi \sec\qty{a\pi \over 2} && \abs{\Re(a)} < 1
 .\]

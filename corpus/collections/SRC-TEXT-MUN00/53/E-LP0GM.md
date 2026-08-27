@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LP0GM
 kind: exercise
 title: Uniqueness of the slicing over connected evenly covered sets
+subtitle: Munkres §53.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §53.2"}
+::: {.exercise}
 
 Let $p: E \to B$ be continuous and surjective.
 Suppose that $U$ is an open set of $B$ that is evenly covered by $p$.

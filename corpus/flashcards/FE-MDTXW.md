@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Example of a function that converges pointwise but not uniformly"}
+::: {.example}
 $f_n(x) \definedas x^n$.
 :::

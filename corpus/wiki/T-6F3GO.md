@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Arzelà-Ascoli (analog of Heine-Borel)"}
+:::{.theorem}
 For $X$ compact Hausdorff, consider the Banach space $C(X; \RR)$ equipped with the *uniform norm* 
 \[
 \norm{f}_{\infty, X} \da \sup_{x\in X} \abs{f(x)}

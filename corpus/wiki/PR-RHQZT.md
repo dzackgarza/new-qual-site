@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Proper ideals contain no units"}
+::: {.proposition}
 If $I\normal R$ is a proper ideal $\iff I$ contains no units.
 :::

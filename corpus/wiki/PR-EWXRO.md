@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Closure of measurable functions under operations"}
+::: {.proposition}
 $\mcm\dash$measurable functionals are closed under
 
 - Sums

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Elementary Divisors"}
+::: {.definition}
 $G \cong \bigoplus \ZZ/p_i^{\alpha_i} \ZZ$ with the $p_i$ not necessarily distinct.
 :::

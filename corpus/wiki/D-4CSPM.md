@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Principal branch and exponential"}
+:::{.definition}
 Take $\CC$ and delete $\RR^{\leq 0}$ to obtain the **principal branch** of the logarithm.
 Equivalently, this is define for all $z=re^{i\theta}$ where $\theta \in (-\pi, \pi)$.
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Sinc Function"}
+:::{.exercise}
 Show
 \[
 \int_{(0, \infty)} {\sin(x) \over x }\dx = {\pi \over 2}

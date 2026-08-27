@@ -15,6 +15,6 @@ relations: []
 review: draft
 ---
 
-::: {.example title="An analytic function with convergence radius 1 which fails to converge at any point on $S^1$"}
+::: {.example}
 $ \sum_{n=1}^\infty nz^n $
 :::

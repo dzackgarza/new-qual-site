@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Stabilizer"}
+::: {.definition}
 A subgroup: $G_x = \theset{g\in G \suchthat g.x = x}$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\cos(x) / x^2 + b^2$"}
+:::{.exercise}
 \[
 I \da \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b}
 .\]

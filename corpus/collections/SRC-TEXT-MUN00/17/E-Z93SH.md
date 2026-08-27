@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-Z93SH
 kind: exercise
 title: Kuratowski's fourteen-set theorem
+subtitle: Munkres §17.21
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.21"}
+::: {.exercise}
 
 Consider the collection of all subsets $A$ of the topological space $X$.
 The operations of closure $A \to \overline{A}$ and complementation $A \to X - A$ are functions from this collection to itself.

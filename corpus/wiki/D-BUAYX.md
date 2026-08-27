@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Injection"}
+::: {.definition}
 A map $\iota:A\to B$ with a **left** inverse $f:B\to A$ satisfying $f\circ \iota = \id_A$.
 Note that this is equivalent to $f(x) = f(y) \implies x = y$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Units or Zero Divisors"}
+::: {.problem}
 Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 :::
 

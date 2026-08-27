@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-VBWDH
 kind: exercise
 title: Uniform boundedness principle
+subtitle: Munkres §48.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §48.10"}
+::: {.exercise}
 
 Prove the following.
 

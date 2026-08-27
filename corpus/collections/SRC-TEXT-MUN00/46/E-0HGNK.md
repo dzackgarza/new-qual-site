@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-0HGNK
 kind: exercise
 title: Continuity of evaluation forces the compact-open topology
+subtitle: Munkres §46.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.8"}
+::: {.exercise}
 
 Let $\mathcal{C}'(X, Y)$ denote the set $\mathcal{C}(X, Y)$ in some topology $\mathcal{T}$.
 Show that if the evaluation map

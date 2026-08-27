@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Univalent functions"}
+::: {.definition}
 A function $f\in \Hol(U; \CC)$ is called **univalent** if $f$ is injective.
 :::

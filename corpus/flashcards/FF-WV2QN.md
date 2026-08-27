@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is Young's inequality?"}
+::: {.fact}
 For $ 1\leq p, q\leq r \leq \infty $ with $ {1\over p} + {1\over q} - {1\over r} = 1 $, then
 
 $${\left\lVert {f\ast g} \right\rVert}_r \leq {\left\lVert {f} \right\rVert}_p {\left\lVert {g} \right\rVert}_q$$

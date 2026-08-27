@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Burnside's Lemma"}
+:::{.corollary}
 For $G$ a finite group acting on $X$, 
 \[
 \size  {X/G} = \frac{1}{\size  G }\sum_{g\in G} \size  \Fix(g)

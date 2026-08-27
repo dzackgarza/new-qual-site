@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2BNJ6
 kind: exercise
 title: Subnets of convergent nets converge
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Let $f: J \to X$ be a net in $X$; let $f(\alpha) = x_\alpha$.
 If $K$ is a directed set and $g: K \to J$ is a function such that

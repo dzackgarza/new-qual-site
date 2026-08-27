@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2CPNC
 kind: exercise
 title: Pasting over a locally finite closed cover
+subtitle: Munkres §18.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §18.9"}
+::: {.exercise}
 
 Let $\ts{A_\alpha}$ be a collection of subsets of $X$; let $X = \bigcup_\alpha A_\alpha$.
 Let $f: X \to Y$; suppose that $f \mid A_\alpha$ is continuous for each $\alpha$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proposition: Translation/Dilation Invariance of the Lebesgue Integral"}
+::: {.proof}
 - Show for characteristic functions, use translation invariance of measure
 
 - Extend to simple functions

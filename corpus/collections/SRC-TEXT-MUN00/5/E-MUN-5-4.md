@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-5-4
 kind: exercise
 title: "Bijections between finite and countable product spaces"
+subtitle: Munkres §5.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §5.4"}
+::: {.exercise}
 
 Let $m, n \in \mathbb{Z}_{+}$ . Let $X \neq \varnothing$ .
 

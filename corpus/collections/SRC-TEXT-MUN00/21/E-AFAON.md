@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-AFAON
 kind: exercise
 title: Arithmetic of convergent sequences
+subtitle: Munkres §21.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.5"}
+::: {.exercise}
 
 Theorem.
 Let $x_n \to x$ and $y_n \to y$ in the space $\mathbb{R}$.

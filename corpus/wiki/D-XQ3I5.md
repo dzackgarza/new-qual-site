@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Unitary Group"}
+:::{.definition}
 \[
 U_n(\CC) \da \ts{ A \st A^\dagger A = AA^\dagger = 1 }
 .\]

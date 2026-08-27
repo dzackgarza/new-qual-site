@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: algebraically closed."}
+::: {.definition}
 Every polynomial has a root.
 :::

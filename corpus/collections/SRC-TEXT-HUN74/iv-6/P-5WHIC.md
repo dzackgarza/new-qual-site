@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.6.3"}
+::: {.problem}
 Let $A$ be a cyclic $R-$module of order $r \in R$.
 
 1. Show that if $s$ is relatively prime to $r$, then $sA = A$ and $A[s] = 0$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Artin-Wedderburn?"}
+:::{.theorem}
 If $R$ is a nonzero, unital, *semisimple* ring then 
 \[
 R \cong \bigoplus_{i=1}^m \mathrm{Mat}(n_i, D_i)

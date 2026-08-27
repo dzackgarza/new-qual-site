@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TLB44
 kind: exercise
 title: Open sets in a closed interval versus open sets in the line
+subtitle: Munkres §16.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §16.3"}
+::: {.exercise}
 
 Consider the set $Y = [-1, 1]$ as a subspace of $\mathbb{R}$.
 Which of the following sets are open in $Y$?

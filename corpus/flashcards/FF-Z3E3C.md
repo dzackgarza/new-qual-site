@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Bernoulli's Inequality"}
+::: {.fact}
 $$
 (1+x)^n \geq 1 + nx
 $$

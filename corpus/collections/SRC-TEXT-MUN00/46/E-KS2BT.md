@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KS2BT
 kind: exercise
 title: Completeness of the compact convergence topology over sigma-compact domains
+subtitle: Munkres §46.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.10"}
+::: {.exercise}
 
 A space is locally compact if it can be covered by open sets each of which is contained in a compact subspace of $X$.
 It is said to be $\sigma$-compact if it can be covered by countably many such open sets.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Uniform continuity of $x^n$"}
+:::{.problem}
 Show that $f(x) = x^n$ is uniformly continuous on any interval $[-M, M]$.
 
 :::

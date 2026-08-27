@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Algebraic Field Extension"}
+::: {.definition}
 A field extension $L/k$ is **algebraic** iff every $\alpha \in L$ is the root of some polynomial $f\in k[x]$.
 :::

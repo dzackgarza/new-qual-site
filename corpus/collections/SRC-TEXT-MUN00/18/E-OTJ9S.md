@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OTJ9S
 kind: exercise
 title: Coordinate slices are imbeddings
+subtitle: Munkres §18.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §18.4"}
+::: {.exercise}
 
 Given $x_0 \in X$ and $y_0 \in Y$, show that the maps $f: X \to X \times Y$ and $g: Y \to X \times Y$ defined by
 

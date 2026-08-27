@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-0GM3H
 kind: exercise
 title: The fine topology on function spaces
+subtitle: Munkres §46.11
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.11"}
+::: {.exercise}
 
 Let $(Y, d)$ be a metric space; let $X$ be a space.
 Define a topology on $\mathcal{C}(X, Y)$ as follows.

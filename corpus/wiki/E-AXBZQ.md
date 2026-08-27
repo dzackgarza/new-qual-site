@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$x\sin(x)/1+x^2$"}
+:::{.exercise}
 \[
 I = \int_\RR {x\sin(x) \over 1 + x^2}\dx
 .\]

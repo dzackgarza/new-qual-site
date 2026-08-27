@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Properties of hyperbolic translations / Blaschke factors"}
+::: {.proposition}
 Some useful properties:
 
 - $\psi_a \in \Aut(\DD)$

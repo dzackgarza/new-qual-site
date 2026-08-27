@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-WOS95
 kind: exercise
 title: Induced homomorphisms up to base-point change
+subtitle: Munkres §52.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §52.6"}
+::: {.exercise}
 
 Show that if $X$ is path connected, the homomorphism induced by a continuous map is independent of base point, up to isomorphisms of the groups involved.
 More precisely, let $h: X \to Y$ be continuous, with $h(x_0) = y_0$ and $h(x_1) = y_1$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Power series are continuous"}
+::: {.exercise}
 Show that any power series is continuous on its domain of convergence.
 :::
 

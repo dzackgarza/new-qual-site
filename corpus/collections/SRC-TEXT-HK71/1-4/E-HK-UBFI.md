@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-UBFI
 kind: exercise
 title: "Consistency and solutions of a three-equation system"
+subtitle: Hoffman and Kunze 1.4.4
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.4.4"}
+::: {.exercise}
 Consider the system of equations
 
 $$

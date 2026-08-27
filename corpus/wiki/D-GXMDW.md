@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Ring Morphism"}
+::: {.definition}
 A morphism $f\in \Ring(X, Y)$ satisfies:
 
 - $f(1_X) = 1_Y$

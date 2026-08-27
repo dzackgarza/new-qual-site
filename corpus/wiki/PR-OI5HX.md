@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="L-infty functions are equivalent to bounded almost-everywhere functions"}
+::: {.proposition}
 If $f\in L^\infty(X)$, then $f$ is equal to some bounded function $g$ almost everywhere.
 :::

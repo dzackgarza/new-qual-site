@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-2-2
 kind: exercise
 title: "Preimage preserves all set operations; image preserves unions only"
+subtitle: Munkres §2.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §2.2"}
+::: {.exercise}
 
 Let $f: A \to B$ and let $A_i \subset A$ and $B_i \subset B$ for $i = 0$ and $i = 1$ . Show that $f^-$
 

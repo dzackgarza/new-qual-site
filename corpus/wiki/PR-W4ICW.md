@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Jensen's Inequality"}
+:::{.proposition}
 \[
 f(tx + (1-t)y) \leq tf(x) + (1-t)f(y)
 .\]

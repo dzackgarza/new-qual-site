@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-FEG
 kind: exercise
 title: Proof choice — Galois correspondence or irreducibility of cyclotomic polynomials
+subtitle: Smith 8000 fall 2006 final G
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 final G"}
+::: {.exercise}
 Prove one:
 
 (i) If $E$ is a finite Galois extension of $k$, the map from subgroups of $\operatorname{Gal}_k(E)$ to fields intermediate between $k$ and $E$, taking a subgroup to its fixed field, is surjective;

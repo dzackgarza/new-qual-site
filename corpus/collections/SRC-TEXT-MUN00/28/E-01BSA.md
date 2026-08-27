@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-01BSA
 kind: exercise
 title: Isometries of compact metric spaces are surjective
+subtitle: Munkres §28.6
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28.6"}
+::: {.exercise}
 
 Let $(X, d)$ be a metric space.
 If $f: X \to X$ satisfies the condition

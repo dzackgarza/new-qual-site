@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$p\dash$group"}
+::: {.definition}
 A group of order $p^n$ for some $n\geq 1$.
 :::

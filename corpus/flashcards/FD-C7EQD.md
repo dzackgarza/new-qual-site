@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: A pole $a$ of order $m$"}
+::: {.definition}
 The smallest $m$ such that 
 $$
 \lim_{z\to a}(z-a)^{m+1}f(z) < \infty \text{ but } \lim_{z\to a}(z-a)^{k\leq m} f(z) = \infty

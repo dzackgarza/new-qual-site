@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-JX67Q
 kind: exercise
 title: The Cantor set
+subtitle: Munkres §27.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §27.6"}
+::: {.exercise}
 
 Let $A_0$ be the closed interval $[0, 1]$ in $\mathbb{R}$.
 Let $A_1$ be the set obtained from $A_0$ by deleting its "middle third" $(\tfrac{1}{3}, \tfrac{2}{3})$.

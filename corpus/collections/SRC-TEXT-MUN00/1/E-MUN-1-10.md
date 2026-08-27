@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-10
 kind: exercise
 title: Cartesian products as subsets of $\mathbb{R} \times \mathbb{R}$
+subtitle: Munkres §1.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.10"}
+::: {.exercise}
 
 Let $\mathbb{R}$ denote the set of real numbers.
 For each of the following subsets of $\mathbb{R} \times \mathbb{R}$, determine whether it is equal to the cartesian product of two subsets of $\mathbb{R}$ .

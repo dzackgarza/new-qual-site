@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CTM3H
 kind: exercise
 title: Where the countable intersection property breaks the Tychonoff argument
+subtitle: Munkres §37.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §37.3"}
+::: {.exercise}
 
 Consider the three statements:
 

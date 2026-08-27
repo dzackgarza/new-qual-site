@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KIN90
 kind: exercise
 title: Collapsing K in the K-topology
+subtitle: Munkres §22.6
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22.6"}
+::: {.exercise}
 
 Recall that $\mathbb{R}_K$ denotes the real line in the $K$-topology.
 (See §13.) Let $Y$ be the quotient space obtained from $\mathbb{R}_K$ by collapsing the set $K$ to a point; let $p: \mathbb{R}_K \to Y$ be the quotient map.

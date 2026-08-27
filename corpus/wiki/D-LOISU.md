@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Dimension of a manifold"}
+::: {.definition}
 For $x\in M$, the only nonvanishing homology group $H_{i}(M, M - \theset{x}; \ZZ)$
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Towers are multiplicative in degree"}
+:::{.proposition}
 Let $L/F/k$ be a finite tower of field extensions.
 \[
 [L : k] = [L: F][F: k]

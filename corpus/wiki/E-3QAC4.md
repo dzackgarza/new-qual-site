@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="f and fbar holomorphic implies constant"}
+:::{.exercise}
 Show that if $f$ and $\bar{f}$ are both holomorphic on a domain $\Omega$, then $f$ is constant on $\Omega$.
 
 :::

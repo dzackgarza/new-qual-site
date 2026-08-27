@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-3SU0X
 kind: exercise
 title: Quotient topology on a three-point image of the line
+subtitle: Munkres §22.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22.1"}
+::: {.exercise}
 
 Check the details of Example 3 of §22: for the map $p: \mathbb{R} \to A = \ts{a, b, c}$ defined by
 

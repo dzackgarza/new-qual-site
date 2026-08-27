@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Elementary Symmetric Functions"}
+::: {.definition}
 For indeterminates $x_1, \cdots, x_n$ over a commutative ring $R$, the **elementary symmetric functions** are
 \[
 e_k \da \sum_{i_1 < i_2 < \cdots < i_k} x_{i_1} x_{i_2}\cdots x_{i_k}, \qquad 1 \leq k \leq n

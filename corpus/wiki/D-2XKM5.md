@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Relative cycles"}
+::: {.definition}
 For a pair $(X,A)$, relative chains are $C_n(X,A) \da C_n(X)/C_n(A)$.
 A **relative cycle** is a chain $\alpha \in C_n(X)$ whose boundary lies in $A$, i.e. $\del \alpha \in C_{n-1}(A)$; equivalently a cycle in $C_n(X,A)$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Zero derivative implies constant"}
+::: {.exercise}
 Show that if $f' = 0$ on a domain $\Omega$, then $f$ is constant on $\Omega$
 :::
 

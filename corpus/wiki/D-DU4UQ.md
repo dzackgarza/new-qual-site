@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Gorenstein Rings"}
+::: {.definition}
 A commutative Noetherian ring $R$ is **Gorenstein** iff $R$ viewed as an $R\dash$module has finite injective dimension.
 :::

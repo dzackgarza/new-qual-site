@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Meromorphic continuation of $\Gamma$"}
+::: {.proposition}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_19-59-05.png)
 :::

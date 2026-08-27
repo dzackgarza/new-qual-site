@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-5
 kind: exercise
 title: "Right inverses from surjections via the axiom of choice"
+subtitle: Munkres §9.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.5"}
+::: {.exercise}
 
 (a) Use the choice axiom to show that if $f: A \to B$ is surjective, then $f$ has a right inverse $h: B \to A$ .
 

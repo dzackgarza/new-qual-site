@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Equivalent conditions for cyclic vectors"}
+::: {.proposition}
 Let $V$ be finite dimensional and $T\in \GL(V)$.
 TFAE:
 

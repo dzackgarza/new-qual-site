@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 12"}
+::: {.fact}
 2 Abelian, 3 Nonabelian
 
 1. $\ZZ/4\ZZ \times \ZZ/3\ZZ$

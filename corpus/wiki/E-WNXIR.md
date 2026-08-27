@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Holomorphic functions have discrete zeros"}
+:::{.exercise}
 If $f$ is holomorphic on $\Omega$ and not identically zero, then $f\inv(0) \intersect \Omega$ is discrete.
 
 :::

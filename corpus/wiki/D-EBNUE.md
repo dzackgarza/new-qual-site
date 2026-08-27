@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Fundamental Group"}
+::: {.definition}
 For $x_0 \in X$, the **fundamental group** $\pi_1(X, x_0)$ is the set of homotopy classes rel $\ts{0,1}$ of loops $\gamma: I \to X$ based at $x_0$, with multiplication
 \[
 [\gamma][\eta] \da [\gamma \cdot \eta]

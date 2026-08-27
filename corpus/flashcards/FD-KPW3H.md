@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: irreducible polynomial"}
+::: {.definition}
 Nonconstant and can not be factored into two polynomials of smaller degrees.
 :::

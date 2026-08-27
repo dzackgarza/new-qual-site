@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Orientable Surfaces"}
+::: {.fact}
 $S^n, T^n, \mathbb{RP}^\text{odd}$
 :::

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Hairy Ball"}
+::: {.theorem}
 There is no non-vanishing tangent vector field on even dimensional spheres $S^{2n}$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Power series converge uniformly on their radius of convergence"}
+:::{.exercise}
 Show that any power series converges uniformly within its radius of convergence.
 
 :::

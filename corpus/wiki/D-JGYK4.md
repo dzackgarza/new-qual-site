@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Primary Ideal"}
+::: {.definition}
 A proper ideal $I\normal R$ is **primary** iff whenever $pq\in I$, either $p\in I$ or $q^n\in I$ for some $n\geq 1$.
 :::

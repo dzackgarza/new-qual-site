@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-5
 kind: exercise
 title: "Well-ordering theorem implies the axiom of choice"
+subtitle: Munkres §10.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.5"}
+::: {.exercise}
 
 Show the well-ordering theorem implies the choice axiom.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.4.3"}
+::: {.problem}
 Let$\pi: \mathbb{Z} \to \mathbb{Z}_2$ be the canonical epimorphism.
 Show that the induced map $\overline{\pi}: \mathrm{Hom}(\mathbb Z_2, \mathbb Z) \to \mathrm{Hom}(\mathbb Z_2, \mathbb Z_2)$ is the zero map.
 Conclude that $\overline{\pi}$ is not an epimorphism.

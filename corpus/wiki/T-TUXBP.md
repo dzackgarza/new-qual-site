@@ -14,7 +14,7 @@ relations:
 review: draft
 ---
 
-::: {.theorem title="Implicit Function Theorem"}
+::: {.theorem}
 Let $A \subseteq \RR^{k+n}$ be open and $f: A \to \RR^n$ of class $C^r$.
 Write $f$ as $f(\vector x, \vector y)$ with $\vector x\in\RR^k$ and $\vector y \in \RR^n$, so that
 \[

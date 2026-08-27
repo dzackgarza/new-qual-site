@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-70TGS
 kind: exercise
 title: Shrinking maps and contractions on compact metric spaces
+subtitle: Munkres §28.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28.7"}
+::: {.exercise}
 
 Let $(X, d)$ be a metric space.
 If $f$ satisfies the condition

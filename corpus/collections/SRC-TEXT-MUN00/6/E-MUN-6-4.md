@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-6-4
 kind: exercise
 title: "Finite simply ordered sets have a largest element"
+subtitle: Munkres §6.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §6.4"}
+::: {.exercise}
 
 Let $A$ be a nonempty finite simply ordered set.
 

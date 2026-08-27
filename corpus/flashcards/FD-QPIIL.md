@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Closed Surfaces"}
+::: {.definition}
 Compact and without boundary.
 :::

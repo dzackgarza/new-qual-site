@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-CY2
 kind: exercise
 title: Disjoint cycles commute
+subtitle: Smith 8000e cycles 2
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e cycles 2"}
+::: {.exercise}
 Prove disjoint cycles commute — i.e. if no $a_i$ equals any $b_j$, then
 
 $$

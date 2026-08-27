@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-U8UBU
 kind: exercise
 title: Coset spaces of topological groups
+subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22 Supplementary"}
+::: {.exercise}
 
 Let $H$ be a subgroup of the topological group $G$.
 If $x \in G$, define $xH = \ts{x \cdot h \mid h \in H}$; this set is called a left coset of $H$ in $G$.

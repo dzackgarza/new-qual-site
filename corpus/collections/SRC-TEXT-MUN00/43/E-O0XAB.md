@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-O0XAB
 kind: exercise
 title: Completeness via nested closed sets of vanishing diameter
+subtitle: Munkres §43.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.4"}
+::: {.exercise}
 
 Show that the metric space $(X, d)$ is complete if and only if for every nested sequence $A_1 \supset A_2 \supset \cdots$ of nonempty closed sets of $X$ such that $\operatorname{diam} A_n \to 0$, the intersection of the sets $A_n$ is nonempty.
 :::

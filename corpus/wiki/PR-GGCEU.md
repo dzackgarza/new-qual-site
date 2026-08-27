@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Second Isomorphism Theorem"}
+:::{.proposition}
 Let $R\in \Ring, S\leq R, I\in \Id(R)$, then there is an isomorphism:
 \[
 {S+I \over I} \mveq {S\over S \intersect I}

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OQRAL
 kind: exercise
 title: Euler numbers of standard graphs and their coverings
+subtitle: Munkres §83.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §83.2"}
+::: {.exercise}
 
 The Euler number of a finite linear graph $X$ equals the number of vertices of $X$ minus the number of edges of $X$.
 It is in fact a topological invariant of $X$, as we shall see.

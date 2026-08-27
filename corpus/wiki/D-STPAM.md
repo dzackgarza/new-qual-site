@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Exact Sequence"}
+::: {.definition}
 A sequence of module morphisms
 \[
 \cdots \to A_{n+1} \mapsvia{d_{n+1}} A_n \mapsvia{d_n} A_{n-1} \to \cdots

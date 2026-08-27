@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Jacobson radical is bigger than the nilradical"}
+:::{.problem}
 The nilradical is contained in the Jacobson radical, i.e.
 \[
 \nilrad{R} \subseteq J(R)

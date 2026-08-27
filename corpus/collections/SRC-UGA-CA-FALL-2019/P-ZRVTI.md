@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Entire univalent functions are affine/linear"}
+:::{.problem}
 Let $f: \mathbb{C} \rightarrow \mathbb{C}$ be an injective analytic (also called univalent) function. Show that there exist complex numbers $a \neq 0$ and $b$ such that $f(z)=a z+b$.
 
 > Hint: Apply the Casorati-Weierstrass theorem to $f(1/z)$.

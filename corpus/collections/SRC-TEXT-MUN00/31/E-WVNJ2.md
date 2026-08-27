@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-WVNJ2
 kind: exercise
 title: Orbit spaces of compact group actions inherit separation properties
+subtitle: Munkres §31.8
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §31.8"}
+::: {.exercise}
 
 Let $X$ be a space; let $G$ be a topological group.
 An action of $G$ on $X$ is a continuous map $\alpha: G \times X \to X$ such that, denoting $\alpha(g \times x)$ by $g \cdot x$, one has:

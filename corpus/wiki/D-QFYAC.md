@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Characteristic polynomial"}
+:::{.definition}
 The **characteristic polynomial** of $A$ is given by
 $$
 \chi_A(x) = \det(A - xI))= \det(SNF(A - xI))

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Sylow 2"}
+::: {.theorem}
 All Sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
 \[
 S_p^i, S_p^j \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^i g\inv = S_p^j

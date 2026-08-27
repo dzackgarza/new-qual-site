@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.1.14"}
+::: {.problem}
 \envlist
 
 1. If $F = \mathbb{Q}(\sqrt 2, \sqrt 3)$, compute $[F: \mathbb{Q}]$ and find a basis of $F/\mathbb{Q}$.

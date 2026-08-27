@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Fields are simple"}
+::: {.proposition}
 $R \in \Field \iff \Id(R) = \ts{ 0, R }$.
 :::

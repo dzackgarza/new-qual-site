@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Functionals are continuous if and only if bounded"}
+::: {.theorem}
 Let $L:X \to \CC$ be a linear functional, then the following are equivalent:
 
 1. $L$ is continuous

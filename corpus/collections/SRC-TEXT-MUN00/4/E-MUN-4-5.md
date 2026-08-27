@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-5
 kind: exercise
 title: Closure properties of $\mathbb{Z}$ and $\mathbb{Z}_+$
+subtitle: Munkres §4.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.5"}
+::: {.exercise}
 
 Prove the following properties of $\mathbb{Z}$ and $\mathbb{Z}_{+}$ :
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Beta function"}
+:::{.definition}
 \[
 B(z, w)=\int_{0}^{1} t^{z-1}(1-t)^{w-1} \mathrm{~d} t
 .\]

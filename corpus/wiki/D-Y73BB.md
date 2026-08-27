@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Kronecker Pairing"}
+::: {.definition}
 Evaluation of cochains on chains descends to the **Kronecker pairing**
 \[
 H^n(X;R)\times H_n(X;R)\longrightarrow R,

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Nilpotents Have All Sylows Normal"}
+::: {.theorem}
 A group $G$ is nilpotent iff all of its Sylow $p\dash$subgroups are normal for every $p$ dividing $\abs{G}$.
 :::

@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Null Set"}
+::: {.definition}
 A set $A$ is *null* iff for every $\varepsilon>0$ there exists a cover $\theset{U_j}\covers A$ such that $\sum \mu(U_j) < \varepsilon$, i.e. $\mu(A) = 0$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Showing ideals are maximal/prime with quotients"}
+::: {.proposition}
 \envlist
 
 - $R/\mfm$ is a field $\iff \mfm \in \mspec(R)$ is maximal.

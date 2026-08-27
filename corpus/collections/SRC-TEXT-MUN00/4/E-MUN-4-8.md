@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-8
 kind: exercise
 title: Greatest lower bound property of $\mathbb{R}$
+subtitle: Munkres §4.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.8"}
+::: {.exercise}
 
 (a) Show that $\mathbb{R}$ has the greatest lower bound property.
 

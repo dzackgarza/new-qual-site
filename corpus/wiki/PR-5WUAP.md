@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="The $p\dash$test"}
+:::{.proposition}
 Recall the **$p\dash$test**:
 \[
 \sum n^{-p} < \infty \iff p \in (1, \infty)

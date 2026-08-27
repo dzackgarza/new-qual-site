@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Integral computation"}
+:::{.exercise}
 Compute
 \[
 \int_{\bd\DD} {e^z\over z^2}\dz

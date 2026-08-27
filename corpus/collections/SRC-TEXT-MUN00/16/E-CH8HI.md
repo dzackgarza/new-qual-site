@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CH8HI
 kind: exercise
 title: Product topologies under refinement of the factors
+subtitle: Munkres §16.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §16.5"}
+::: {.exercise}
 
 Let $X$ and $X'$ denote a single set in the topologies $\mathcal{T}$ and $\mathcal{T}'$, respectively; let $Y$ and $Y'$ denote a single set in the topologies $\mathcal{U}$ and $\mathcal{U}'$, respectively.
 Assume these sets are nonempty.

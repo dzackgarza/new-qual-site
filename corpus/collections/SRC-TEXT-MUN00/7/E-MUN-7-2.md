@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-7-2
 kind: exercise
 title: Bijections in the countability proofs for $\mathbb{Q}$
+subtitle: Munkres §7.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §7.2"}
+::: {.exercise}
 
 Show that the maps $f$ and $g$ of Examples 1 and 2 are bijections.
 :::

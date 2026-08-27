@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\cos(\pi/6) = \cdots$"}
+::: {.fact}
 $$
 \cos(\pi/6) = {\sqrt 3 \over 2}
 .$$

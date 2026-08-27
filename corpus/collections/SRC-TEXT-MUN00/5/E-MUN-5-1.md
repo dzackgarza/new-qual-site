@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-5-1
 kind: exercise
 title: 'Bijection between $A \times B$ and $B \times A$'
+subtitle: Munkres §5.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §5.1"}
+::: {.exercise}
 
 Show there is a bijective correspondence of $A \times B$ with $B \times A$ .
 :::

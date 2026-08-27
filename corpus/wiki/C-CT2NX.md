@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Euler for Connect Sums"}
+:::{.corollary}
 \[  
 \chi(A \# B) = \chi(A) + \chi(B) - 2
 .\]

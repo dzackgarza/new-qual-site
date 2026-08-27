@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Counting Cosets"}
+:::{.theorem}
 If $H\normal G$ and $G$ is finite then
 \[
 [G: H] = \abs{G/H} = {\abs G \over \abs H}

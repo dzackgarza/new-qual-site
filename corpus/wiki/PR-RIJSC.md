@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Recognizing direct sums"}
+::: {.proposition}
 If $M_1, M_2 \leq M$ are submodules, then $M = M_1 \oplus M_2$ if the following conditions hold:
 
 - $M_1 + M_2 = M$

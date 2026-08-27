@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Finding harmonic conjugates"}
+:::{.exercise}
 Find a harmonic conjugate for
 \[
 u(x, y) = x^3 - 3xy^2 -x -y

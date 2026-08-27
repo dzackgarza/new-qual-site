@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is the $ M{\hbox{-}} $test?"}
+::: {.fact}
 $ \sum_{n\geq 0} {\left\lVert {f_n} \right\rVert}_{\infty, A} < \infty \implies \sum f_n $ converges absolutely and uniformly on $ A $.
 
 Here $ {\left\lVert {f_n} \right\rVert}_{\infty, A}\coloneqq\sup_{x\in A}{\left\lvert {f_n(x)} \right\rvert} $.

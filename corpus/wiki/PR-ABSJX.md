@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Transitivity of algebraic extensions, forward implication"}
+::: {.proposition}
 If $L/K/k$ (not necessarily finite) with $L/K$ and $K/k$ both algebraic, then $L/k$ is algebraic.
 :::

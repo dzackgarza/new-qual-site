@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="ML estimate for a semicircular contour"}
+:::{.exercise}
 Use a semicircular contour and the residue theorem to evaluate
 \[
 I = \int_\RR {\cos(x) \over x^2 + 1 }\dx

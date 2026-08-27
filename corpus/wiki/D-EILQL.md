@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cochain"}
+::: {.definition}
 An cochain $c \in C^p(X; R)$ is a map $c \in \hom(C_{p}(X; R), R)$ on chains.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Bounded Convergence"}
+::: {.theorem}
 
 ![](../../assets/20_Real_Analysis/figures/2021-10-29_16-43-30.png)
 

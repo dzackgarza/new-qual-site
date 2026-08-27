@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Automorphisms of the disc"}
+:::{.theorem}
 What are the automorphisms of $\DD, \CC, \CP^1$?
 For the disc, it's known:
 \[

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XNYTJ
 kind: exercise
 title: Monotone pointwise convergence to a continuous limit is uniform
+subtitle: Munkres §26.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.10"}
+::: {.exercise}
 
 (a) Prove the following partial converse to the uniform limit theorem.
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Using algebraic topology"}
+:::{.exercise}
 Show that there is no continuous square root function defined on all of $\CC$.
 
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Separable degree"}
+::: {.definition}
 The **separable degree** of an extension $L/k$ is defined by fixing an embedding $\sigma: k\embeds \bar{k}$ (the algebraic or separable closure) and letting $[L:k]_s$ be the number of embeddings $\sigma':L\to \bar{k}$:
 
 \begin{tikzcd}

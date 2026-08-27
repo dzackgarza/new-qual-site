@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-APRPU
 kind: exercise
 title: Higher-dimensional separation theorems from the no-retraction theorem
+subtitle: Munkres §62.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §62.6"}
+::: {.exercise}
 
 Suppose you are given that there is no retraction of $B^n$ onto $S^{n-1}$.
 

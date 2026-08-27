@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Structure theorem: automorphisms of the disc"}
+:::{.theorem}
 Every map $g\in \Aut(\DD)$ is of the form 
 
 \[

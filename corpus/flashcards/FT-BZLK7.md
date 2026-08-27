@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Riemann-Lebesgue Lemma"}
+::: {.theorem}
 If $f\in L^1$, then the Fourier transform satisfies $$\hat f(\xi) \converges{\abs{\xi}\to \infty}\to 0.$$
 :::

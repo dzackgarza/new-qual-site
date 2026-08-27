@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.8.3"}
+::: {.problem}
 Show that if $N$ is a simple normal subgroup of a group $G$ and $G/N$ has a composition series, then $G$ has a composition series.
 :::

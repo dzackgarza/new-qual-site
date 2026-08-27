@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$e^{2\pi i \over 6} = \cdots$ in rectangular coordinates"}
+::: {.fact}
 $$
 e^{2\pi i \over 6} = {1\over 2}\qty{1 + i\sqrt 3}
 .$$

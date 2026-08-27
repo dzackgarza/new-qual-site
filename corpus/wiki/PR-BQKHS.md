@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Orientation covers"}
+::: {.proposition}
 For any manifold $X$ there exists a covering space $p: \tilde X_o\to X$, the **orientation cover**, where any map $Y\to X$ factors through $\tilde X_o$.
 If $X$ is nonorientable, then $p$ is a double cover.
 :::

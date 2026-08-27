@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: splitting field of a polynomial $f\in k[x]$"}
+::: {.definition}
 The smallest extension $F/k$ such that $f$ splits into linear factors in $F[x]$.
 :::

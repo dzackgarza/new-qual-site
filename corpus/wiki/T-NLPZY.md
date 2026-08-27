@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fundamental Theorem of Galois Theory"}
+::: {.theorem}
 Let $L/k$ be a Galois extension, then there is a correspondence:
 \[
 \correspond{\text{Subgroups } H \leq \Gal(L/k)}

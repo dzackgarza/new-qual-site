@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\sin(\pi/4) = \cdots$"}
+::: {.fact}
 $$
 \sin(\pi/4) = {\sqrt 2 \over 2}
 .$$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.1.10"}
+::: {.problem}
 \envlist
 
 1. Show that the additive group of rationals $\mathbb Q$ is not finitely generated.

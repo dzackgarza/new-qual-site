@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-CTRQ
 kind: exercise
 title: "Invertibility via row operations and finding inverses"
+subtitle: Hoffman and Kunze 1.6.3
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.3"}
+::: {.exercise}
 For each of the two matrices
 
 $$

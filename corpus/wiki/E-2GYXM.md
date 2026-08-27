@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Sum formulas: 1/(n-a)^2"}
+:::{.exercise}
 Show that
 \[
 \sum_{k\in \ZZ}{1\over (z-k)^2} = (\pi \csc(\pi z))^2

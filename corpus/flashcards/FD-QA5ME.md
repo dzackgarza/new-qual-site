@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition of Outer Measure"}
+::: {.definition}
 $$ 
 m_*(E) = \inf \theset{ \sum \abs{Q_i} \suchthat \theset{Q_i}\covers E \text { closed cubes}}
 $$

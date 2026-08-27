@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Closed if and only if compact in compact Hausdorff spaces"}
+::: {.theorem}
 $U\subset X$ for $X$ a **compact** Hausdorff space is closed $\iff$ it is compact.
 
 ::: {.remark}

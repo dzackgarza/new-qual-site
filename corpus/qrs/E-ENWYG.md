@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Keyhole contour and ML estimate"}
+:::{.exercise}
 Compute
 \[
 \int_{[0, \infty]} {\log(x) \over (1+x^2)^2}\dx 

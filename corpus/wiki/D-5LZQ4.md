@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Fourier Transform"}
+:::{.definition}
 \[
 \hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
 .\]

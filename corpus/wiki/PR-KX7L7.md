@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Tensoring preserves injections exactly when the factor is flat"}
+::: {.proposition}
 Over a field $k$, every module is flat, so if $T:V \injects W$ is injective then $T\tensor \one_X: V\tensor_k X \injects W\tensor_k X$ is also injective for any $X$.
 
 Over a general ring this fails.

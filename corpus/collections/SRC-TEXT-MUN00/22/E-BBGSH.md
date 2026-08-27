@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-BBGSH
 kind: exercise
 title: Quotients of the plane by level-set relations
+subtitle: Munkres §22.4
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22.4"}
+::: {.exercise}
 
 (a) Define an equivalence relation on the plane $X = \mathbb{R}^2$ as follows:
 

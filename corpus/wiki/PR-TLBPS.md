@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="The derivative detects separability for irreducible polynomials"}
+:::{.proposition}
 \envlist
 
 - For any field $k$ and any $f\in k[x]$, $f$ is separable $\iff \gcd(f, f') = 1$.

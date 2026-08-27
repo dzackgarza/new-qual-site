@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9O8YW
 kind: exercise
 title: Connectedness of X and of its Stone-Cech compactification
+subtitle: Munkres §38.6
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.6"}
+::: {.exercise}
 
 Let $X$ be completely regular.
 Show that $X$ is connected if and only if $\beta(X)$ is connected.

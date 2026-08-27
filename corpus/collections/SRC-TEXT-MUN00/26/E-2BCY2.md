@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2BCY2
 kind: exercise
 title: Intersections of nested families of closed connected sets are connected
+subtitle: Munkres §26.11
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.11"}
+::: {.exercise}
 
 Theorem.
 Let $X$ be a compact Hausdorff space.

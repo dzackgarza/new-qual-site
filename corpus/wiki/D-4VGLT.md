@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Tor Group"}
+:::{.definition}
 For an $R\dash$module
 \[
 \tor_{R}^n(\wait, B) = L_{n}(\wait \tensor_{R} B)

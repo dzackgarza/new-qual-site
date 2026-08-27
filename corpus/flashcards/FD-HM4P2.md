@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Primitive Root of Unity."}
+::: {.definition}
 $\zeta$ is a **primitive $n$th root of unity** iff $\zeta^n = 1$ and $n$ is the smallest such integer for which this holds.
 :::

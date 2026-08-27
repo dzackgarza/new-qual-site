@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Translation Invariance"}
+:::{.proposition}
 The Lebesgue integral is translation invariant, i.e.
 \[
 \int f(x) ~dx = \int f(x + h) ~dx &&\text{ for any } h

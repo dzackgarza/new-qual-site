@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Order of $\GL_n$"}
+::: {.proposition}
 For $q$ a prime power,
 \[
 \abs{\GL_n(\FF_q)} = \prod_{k=0}^{n-1}\qty{q^n - q^k} = (q^n-1)(q^n-q)\cdots(q^n - q^{n-1})

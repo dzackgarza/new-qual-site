@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.9.1"}
+::: {.problem}
 If $F$ is a radical extension field of $K$ and $E$ is an intermediate field, then $F$ is a radical extension of $E$.
 :::

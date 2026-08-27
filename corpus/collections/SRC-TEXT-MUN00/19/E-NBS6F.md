@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-NBS6F
 kind: exercise
 title: Products of Hausdorff spaces in the box and product topologies
+subtitle: Munkres §19.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §19.3"}
+::: {.exercise}
 
 Prove Theorem 19.4: if each space $X_\alpha$ is a Hausdorff space, then $\prod X_\alpha$ is a Hausdorff space in both the box and product topologies.
 :::

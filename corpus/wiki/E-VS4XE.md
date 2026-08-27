@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Lune with only one intersection point"}
+:::{.exercise}
 Find a conformal map:
 \[
 \DD \sm \ts{\abs{z - {1\over 2}} = {1\over 2} } \to \DD

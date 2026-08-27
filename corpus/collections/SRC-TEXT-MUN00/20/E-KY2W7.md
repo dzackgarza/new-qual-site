@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KY2W7
 kind: exercise
 title: The dictionary order plane is metrizable
+subtitle: Munkres §20.2
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.2"}
+::: {.exercise}
 
 Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is metrizable.
 :::

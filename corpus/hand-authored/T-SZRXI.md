@@ -12,7 +12,7 @@ relations: []
 review: reviewed
 ---
 
-::: {.theorem title="Lagrange's theorem"}
+::: {.theorem}
 If $H$ is a subgroup of a finite group $G$, then
 $$
 \abs G = [G:H]\abs H.

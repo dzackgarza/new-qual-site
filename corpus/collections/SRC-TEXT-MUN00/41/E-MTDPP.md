@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MTDPP
 kind: exercise
 title: The expansion lemma for locally finite families
+subtitle: Munkres §41.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §41.5"}
+::: {.exercise}
 
 Let $X$ be paracompact.
 We proved a "shrinking lemma" for arbitrary indexed open coverings of $X$.

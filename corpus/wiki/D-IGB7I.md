@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Free rank"}
+::: {.definition}
 If a module $M$ is free, the **free rank** of $M$ is the cardinality of any basis.
 :::

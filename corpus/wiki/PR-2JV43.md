@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="a.e. convergence never implies $L^p$ convergence"}
+::: {.proposition}
 Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 
 - For $1\leq p < \infty$: The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.

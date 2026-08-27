@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Residue formula: rational function formula for simple poles"}
+:::{.corollary}
 If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$, 
 \[
 \Res_{z=z_0} {g(z) \over h(z)} = {g(z_0) \over h'(z_0)}

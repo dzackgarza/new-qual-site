@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="A non-equicontinuous sequence"}
+:::{.exercise}
 Exhibit a sequence of functions that is not equicontinuous.
 :::
 

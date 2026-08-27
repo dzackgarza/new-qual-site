@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-3KMYL
 kind: exercise
 title: Local compactness of products
+subtitle: Munkres §29.2
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29.2"}
+::: {.exercise}
 
 Let $\ts{X_\alpha}$ be an indexed family of nonempty spaces.
 

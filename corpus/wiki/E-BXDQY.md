@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Rudin 10.3"}
+::: {.exercise}
 Suppose $\abs{f(z)}\leq \abs{g(z)}$ for all $z$.
 What conclusion can you draw?
 :::

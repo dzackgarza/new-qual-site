@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-6
 kind: exercise
 title: "Laws of exponents for real numbers"
+subtitle: Munkres §4.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.6"}
+::: {.exercise}
 
 Let $a \in \mathbb{R}$ . Define inductively
 

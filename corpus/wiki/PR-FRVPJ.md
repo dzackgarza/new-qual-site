@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Half-disc to upper half-plane"}
+:::{.proposition}
 \[
 F: ? &\mapstofrom ? \\
 z & \mapsto -{1\over 2}\qty{z + z\inv} \\

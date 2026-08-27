@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normalizer"}
+::: {.definition}
 $$
 N_G(S) \da \ts{g\in G \st gSg\inv = S}
 .$$

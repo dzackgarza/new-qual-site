@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="p-Test for Integrals"}
+:::{.theorem}
 \[
 \int_0^1 {1\over x^p} < \infty \iff  p < 1 \\
 \int_1^\infty {1\over x^p} < \infty \iff  p > 1 

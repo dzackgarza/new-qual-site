@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Characterizations of $D_f$, the set of discontinuities of functions"}
+::: {.fact}
 - Always $F_\sigma$, closed, positive oscillation.
 
 - $f_n\to f$ with $f_n$ continuous $\implies D_f$ is meager.

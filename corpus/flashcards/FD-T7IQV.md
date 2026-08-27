@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Solvable Group"}
+::: {.definition}
 A group is **solvable** iff it has a composition series with *abelian* composition factors.
 :::

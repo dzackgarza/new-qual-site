@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Retract"}
+::: {.definition}
 A **retract** $r$ of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
 
 \begin{tikzcd}

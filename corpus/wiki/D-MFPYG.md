@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Hyperbolic translations/Blaschke factors"}
+:::{.definition}
 For $a\in \DD$, the maps
 \[
 \psi_a \da {a-z\over 1-\bar{a}z}

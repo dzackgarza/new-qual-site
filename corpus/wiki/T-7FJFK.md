@@ -15,6 +15,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Baire"}
+::: {.theorem}
 $\RR$ is a **Baire space**, i.e. $\RR$ can not be written as a countable union of nowhere dense sets.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\sin(x)/x$ and $\cos(x)/x$"}
+:::{.exercise}
 Compute
 \[
 I_1 \da \operatorname{PV}\int_\RR {\sin(x) \over x}\dx = \pi \\

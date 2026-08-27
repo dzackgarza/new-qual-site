@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LV54B
 kind: exercise
 title: Composites of covering maps over a base with a universal covering
+subtitle: Munkres §80.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §80.1"}
+::: {.exercise}
 
 Let $q: X \to Y$ and $r: Y \to Z$ be maps; let $p = r \circ q$.
 

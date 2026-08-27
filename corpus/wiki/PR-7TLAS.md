@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Vertical half-strip to right half-disc"}
+:::{.proposition}
 \[
 F: \qty{-{\pi \over 2}, {\pi \over 2}} \cross i\RR &\to \DD \intersect \ts{\Re(z) > 0} \\
 z &\mapsto e^{iz} \\

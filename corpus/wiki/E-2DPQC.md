@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Uniform limit of holomorphic is holomorphic"}
+::: {.exercise}
 Show that if $f_k\to f$ uniformly on $\Omega$ with $f_k$ holomorphic then $f$ is holomorphic.
 :::
 

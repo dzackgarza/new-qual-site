@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-GYVM8
 kind: exercise
 title: Compactness characterized by subnets
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Theorem.
 $X$ is compact if and only if every net in $X$ has a convergent subnet.

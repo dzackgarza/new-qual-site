@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-MT5
 kind: exercise
 title: The Cayley-Hamilton theorem
+subtitle: Smith 8000 fall 2006 midterm 5
 classification:
   areas:
   - algebra
@@ -12,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 midterm 5"}
+::: {.exercise}
 State and prove the Cayley-Hamilton theorem.
 :::

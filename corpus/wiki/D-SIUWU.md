@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Short exact sequence"}
+::: {.definition}
 An exact sequence of the form
 \[
 0 \to A \mapsvia{i} B \mapsvia{j} C \to 0

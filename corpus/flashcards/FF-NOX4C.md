@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What are almost disjoint sets?"}
+::: {.fact}
 $ A^\circ \cap B^\circ = \emptyset $
 :::

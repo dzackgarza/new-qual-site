@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proposition: Continuity in $L^1$"}
+::: {.proof}
 Proof: approximate with compactly supported functions, use uniform continuity to bound integrand.
 :::

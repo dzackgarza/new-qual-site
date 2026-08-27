@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-OAOP
 kind: exercise
 title: "Product of non-square matrices is not invertible"
+subtitle: Hoffman and Kunze 1.6.6
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.6"}
+::: {.exercise}
 Suppose $A$ is a $2 \times 1$ matrix and that $B$ is a $1 \times 2$ matrix.
 Prove that $C = AB$ is not invertible.
 :::

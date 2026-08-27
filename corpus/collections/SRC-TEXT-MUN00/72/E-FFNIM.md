@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-FFNIM
 kind: exercise
 title: Adjoining cells of dimension above two does not change the fundamental group
+subtitle: Munkres §72.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §72.1"}
+::: {.exercise}
 
 Let $X$ be a Hausdorff space; let $A$ be a closed path-connected subspace.
 Suppose that $h: B^n \to X$ is a continuous map that maps $S^{n-1}$ into $A$ and maps $\operatorname{Int} B^n$ bijectively onto $X - A$.

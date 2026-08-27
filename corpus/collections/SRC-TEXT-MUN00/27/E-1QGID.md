@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1QGID
 kind: exercise
 title: Compactness, connectedness, and path connectedness of the K-topology line
+subtitle: Munkres §27.3
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §27.3"}
+::: {.exercise}
 
 Recall that $\mathbb{R}_K$ denotes $\mathbb{R}$ in the $K$-topology.
 

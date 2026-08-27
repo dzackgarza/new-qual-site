@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Radius of convergence"}
+::: {.exercise}
 Find the radius of convergence of
 
 - $\sum a^k z^k$ for $a$ a constant.

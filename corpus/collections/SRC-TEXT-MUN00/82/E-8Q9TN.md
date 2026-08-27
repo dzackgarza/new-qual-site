@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-8Q9TN
 kind: exercise
 title: Star-fine refinements of open coverings
+subtitle: Munkres §82 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §82 Supplementary"}
+::: {.exercise}
 
 Let $X$ be a space; let $\mathcal{A}$ be an open covering of $X$.
 Under what conditions does there exist an open covering $\mathcal{B}$ of $X$ refining $\mathcal{A}$ such that for each pair $B, B'$ of elements of $\mathcal{B}$ that have nonempty intersection, the union $B \cup B'$ lies in an element of $\mathcal{A}$?

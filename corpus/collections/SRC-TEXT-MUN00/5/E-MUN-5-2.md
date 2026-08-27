@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-5-2
 kind: exercise
 title: "Associativity of finite and infinite Cartesian products"
+subtitle: Munkres §5.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §5.2"}
+::: {.exercise}
 
 (a) Show that if $n > 1$ there is bijective correspondence of
 

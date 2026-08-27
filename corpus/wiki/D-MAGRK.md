@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Approximations to the identity"}
+::: {.definition}
 For $\phi\in L^1$, the dilations satisfy $\int \phi_{t} = \int \phi$, and if $\int \phi = 1$ then $\phi$ is an **approximate identity**.
 :::

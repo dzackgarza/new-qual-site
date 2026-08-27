@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is the Arzela-Ascoli theorem?"}
+::: {.fact}
 A sequence $ f_i $ has a uniformly convergent subsequence $ \iff $ the sequence is uniformly bounded and uniformly equicontinuous.
 :::

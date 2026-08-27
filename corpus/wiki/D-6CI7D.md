@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Local Orientation"}
+::: {.definition}
 Let $M$ be an $n\dash$manifold and $x\in M$.
 Excision and the local Euclidean structure give
 \[

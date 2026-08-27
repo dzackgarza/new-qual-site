@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: The Lebesgue Integral"}
+::: {.definition}
 $$
 \int f:=\sup \left\{\int \phi \suchthat 0 \leq \phi \leq f, \,\, \phi \text { simple }\right\}
 .$$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Goursat"}
+::: {.theorem}
 If $\Omega \subseteq \CC$ is open and $T\subseteq \Omega$ is a triangle whose interior is also contained in $\Omega$, then
 \[
 \int_T f(z) \dz = 0

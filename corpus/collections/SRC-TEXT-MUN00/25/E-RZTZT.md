@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-RZTZT
 kind: exercise
 title: Components of R^omega in product, uniform, and box topologies
+subtitle: Munkres §25.2
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §25.2"}
+::: {.exercise}
 
 (a) What are the components and path components of $\mathbb{R}^\omega$ (in the product topology)?
 

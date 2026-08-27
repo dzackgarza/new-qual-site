@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$K(x)$"}
+::: {.definition}
 The field of rational functions, i.e. ratios of polynomials, in the variable $x$; $K(x) = \theset{{P(x) \over Q(x)} \suchthat P,Q \in K[x]}$
 :::

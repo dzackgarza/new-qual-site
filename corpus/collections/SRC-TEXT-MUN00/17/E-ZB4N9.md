@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZB4N9
 kind: exercise
 title: Boundaries and interiors of plane regions
+subtitle: Munkres §17.20
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.20"}
+::: {.exercise}
 
 Find the boundary and the interior of each of the following subsets of $\mathbb{R}^2$.
 

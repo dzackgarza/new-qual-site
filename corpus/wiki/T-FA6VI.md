@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterizations of continuous maps, Munkres 18.1"}
+::: {.theorem}
 For $f:X\to Y$, TFAE:
 
 - $f$ is continuous

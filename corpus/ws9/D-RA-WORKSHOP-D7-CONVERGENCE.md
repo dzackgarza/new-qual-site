@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Convergence of function sequences and series"}
+::: {.definition}
 For a sequence of functions $\{f_n\}$ where $f_n,f:E\to\mathbb R$ for all $n$:
 
 1. $f_n\to f$ pointwise if $\lim_{n\to\infty}f_n(x)=f(x)$ for each $x\in E$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Injection"}
+:::{.definition}
 A map $\iota:A\to B$ is **injective** if it admits a *left* inverse $p:B\to A$ satisfying $p\circ \iota = \id_A$.
 Equivalently,
 \[

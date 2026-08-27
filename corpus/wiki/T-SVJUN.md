@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Recognizing Direct Products"}
+::: {.theorem}
 We have $G \cong H \times K$ when
 
 1. $H, K \normal G$

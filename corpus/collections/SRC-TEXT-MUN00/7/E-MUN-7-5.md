@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-7-5
 kind: exercise
 title: Countability of function spaces and subsets of $\mathbb{Z}_+$
+subtitle: Munkres §7.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §7.5"}
+::: {.exercise}
 
 Determine, for each of the following sets, whether or not it is countable.
 Justify your answers.

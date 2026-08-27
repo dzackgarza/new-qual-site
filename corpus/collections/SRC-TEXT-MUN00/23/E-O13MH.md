@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-O13MH
 kind: exercise
 title: Connectedness under refinement of topologies
+subtitle: Munkres §23.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §23.1"}
+::: {.exercise}
 
 Let $\mathcal{T}$ and $\mathcal{T}'$ be two topologies on $X$.
 If $\mathcal{T}' \supset \mathcal{T}$, what does connectedness of $X$ in one topology imply about connectedness in the other?

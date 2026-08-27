@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-S0QDW
 kind: exercise
 title: Finiteness in the maximal tree argument
+subtitle: Munkres §84.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §84.1"}
+::: {.exercise}
 
 Give an example to show that the second part of Lemma 84.2 need not hold if $T$ is infinite.
 :::

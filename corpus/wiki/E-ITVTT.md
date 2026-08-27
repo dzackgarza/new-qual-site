@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residue of $1/z^n+1$"}
+:::{.exercise}
 Find the residue at $\omega_n \da e^{\pi i \over n}$ of
 \[
 f(z) = {1\over z^n + 1}

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Conformal maps to arbitrary points"}
+:::{.exercise}
 Find a Mobius transformation sending 
 
 - $1\to 3$

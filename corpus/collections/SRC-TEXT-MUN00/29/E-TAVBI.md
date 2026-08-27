@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TAVBI
 kind: exercise
 title: Continuity characterized by nets
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Theorem.
 Let $f: X \to Y$.

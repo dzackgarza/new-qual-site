@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-BUVJI
 kind: exercise
 title: Two reduction sequences for the same scheme disagree
+subtitle: Munkres §76.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §76.2"}
+::: {.exercise}
 
 Consider the space $X$ obtained from two polygonal regions by means of the labelling schemes $w_1 = abcc$ and $w_2 = c^{-1}c^{-1}ab$.
 The sequence of elementary operations

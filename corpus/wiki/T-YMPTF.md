@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Borel-Cantelli"}
+:::{.theorem}
 Let $\{E_{k}\}$ be a countable collection of measurable sets.
 Then
 $$

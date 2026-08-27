@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-NYYRX
 kind: exercise
 title: Accumulation points of nets
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Let $(x_\alpha)_{\alpha \in J}$ be a net in $X$.
 We say that $x$ is an accumulation point of the net $(x_\alpha)$ if for each neighborhood $U$ of $x$, the set of those $\alpha$ for which $x_\alpha \in U$ is cofinal in $J$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Montel's theorem"}
+::: {.theorem}
 If $\mcf$ is a family of locally uniformly bounded holomorphic functions on $\Omega$, then
 
 - $\mcf$ is a normal family by Arzela-Ascoli, and

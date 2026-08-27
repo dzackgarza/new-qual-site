@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-3C4WF
 kind: exercise
 title: The Hausdorff metric on closed bounded subsets
+subtitle: Munkres §45.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §45.7"}
+::: {.exercise}
 
 Let $(X, d)$ be a metric space.
 If $A \subset X$ and $\epsilon > 0$, let $U(A, \epsilon)$ be the $\epsilon$-neighborhood of $A$.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Images of sequences of poles converge to anything"}
+::: {.exercise}
 Let $f$ be holomorphic in $0 < \abs{z-z_0} < r$, minus a sequence of poles $\ts{z_k} \to z_0$.
 Show that for any $w\in \CC$, there is a sequence $\ts{w_k}\to z_0$ with $f(w_k)\to w$.
 :::

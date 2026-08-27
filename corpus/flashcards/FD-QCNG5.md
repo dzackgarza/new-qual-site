@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Neighborhood Basis"}
+::: {.definition}
 A neighborhood basis about a point $x$ is a collection of open sets $\theset{B_k}_{k\in J}$ such that for every neighborhood $U_x$ of $x$, there exists some $j$ such that $B_j \subseteq U_x$.
 :::

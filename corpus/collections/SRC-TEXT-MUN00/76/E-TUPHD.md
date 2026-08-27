@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TUPHD
 kind: exercise
 title: Pasting schemes for two polygonal regions
+subtitle: Munkres §76.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §76.1"}
+::: {.exercise}
 
 Consider the quotient space $X$ obtained from two polygonal regions by means of the labelling schemes $w_1 = acbc^{-1}$ and $w_2 = cdba^{-1}d$.
 

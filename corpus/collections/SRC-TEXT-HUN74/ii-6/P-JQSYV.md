@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.6.9"}
+::: {.problem}
 Classify up to isomorphism all groups of order 18. Do the same for orders 20 and 30.
 :::

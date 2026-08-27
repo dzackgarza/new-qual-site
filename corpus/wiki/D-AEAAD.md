@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Continuous Map"}
+::: {.definition}
 A map $f:X\to Y$ between topological spaces is **continuous** if and only if whenever $U \subseteq Y$ is open, $f ^{-1} (U) \subseteq X$ is open.
 :::

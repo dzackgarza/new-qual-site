@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-Y0QAW
 kind: exercise
 title: Quotients of locally connected spaces are locally connected
+subtitle: Munkres §25.8
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §25.8"}
+::: {.exercise}
 
 Let $p: X \to Y$ be a quotient map.
 Show that if $X$ is locally connected, then $Y$ is locally connected.

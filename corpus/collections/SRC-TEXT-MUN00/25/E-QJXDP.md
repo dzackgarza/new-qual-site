@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QJXDP
 kind: exercise
 title: Weak local connectedness at a point without local connectedness
+subtitle: Munkres §25.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §25.7"}
+::: {.exercise}
 
 Consider the "infinite broom" $X$ pictured in Figure 25.1 of the text.
 Show that $X$ is not locally connected at $p$, but is weakly locally connected at $p$.

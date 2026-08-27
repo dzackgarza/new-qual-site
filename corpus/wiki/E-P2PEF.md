@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Holomorphic iff delbar vanishes"}
+:::{.exercise}
 Show that $f$ is holomorphic iff $\delbar f = 0$.
 :::
 

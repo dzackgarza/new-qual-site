@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterization of Solvable"}
+::: {.theorem}
 A group $G$ is solvable iff its derived series terminates.
 :::

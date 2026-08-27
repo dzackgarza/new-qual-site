@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-F01YX
 kind: exercise
 title: Arbitrary products of connected spaces are connected
+subtitle: Munkres §23.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §23.10"}
+::: {.exercise}
 
 Let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of connected spaces; let $X$ be the product space
 

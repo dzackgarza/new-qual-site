@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Uniform Continuity"}
+:::{.definition}
 For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces,
 \[
 \forall \eps > 0, ~\exists \delta > 0 \text{ such that } \quad d_{X}(x_{1}, x_{2}) < \delta \implies d_{Y}(f(x_{1}), f(x_{2})) < \eps

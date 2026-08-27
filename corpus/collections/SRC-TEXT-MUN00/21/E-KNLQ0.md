@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-KNLQ0
 kind: exercise
 title: Uniform convergence as convergence in the uniform metric
+subtitle: Munkres §21.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.7"}
+::: {.exercise}
 
 Let $X$ be a set, and let $f_n: X \to \mathbb{R}$ be a sequence of functions.
 Let $\bar{\rho}$ be the uniform metric on the space $\mathbb{R}^X$.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-BDL60
 kind: exercise
 title: Compact subspaces in the finite complement and countable complement topologies
+subtitle: Munkres §26.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.2"}
+::: {.exercise}
 
 (a) Show that in the finite complement topology on $\mathbb{R}$, every subspace is compact.
 

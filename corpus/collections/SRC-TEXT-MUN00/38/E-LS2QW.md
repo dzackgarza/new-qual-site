@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LS2QW
 kind: exercise
 title: The Stone-Cech construction is a functor
+subtitle: Munkres §38.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.10"}
+::: {.exercise}
 
 We have constructed a correspondence $X \to \beta(X)$ that assigns, to each completely regular space, its Stone-Čech compactification.
 Now let us assign, to each continuous map $f: X \to Y$ of completely regular spaces, the unique continuous map $\beta(f): \beta(X) \to \beta(Y)$ that extends the map $i \circ f$, where $i: Y \to \beta(Y)$ is the inclusion map.

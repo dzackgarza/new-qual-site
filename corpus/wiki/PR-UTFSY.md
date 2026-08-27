@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Existence of maximal ideals"}
+::: {.proposition}
 Every proper ideal is contained in a maximal ideal.
 :::

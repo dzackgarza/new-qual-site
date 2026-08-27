@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="When actions yield covering maps onto their quotients, Hatcher 1.40"}
+::: {.theorem}
 If $G\actson X$ is a free and properly discontinuous action, then
 
 1. The quotient map $p:X \to X/G$ given by $p(y) = Gy$ is a normal covering space,

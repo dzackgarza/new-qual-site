@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2Z1TM
 kind: exercise
 title: Lifting paths in the polar covering of the punctured plane
+subtitle: Munkres §54.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §54.4"}
+::: {.exercise}
 
 Consider the covering map $p: \mathbb{R} \times \mathbb{R}_+ \to \mathbb{R}^2 - 0$ of Example 6 of §53. Find liftings of the paths
 

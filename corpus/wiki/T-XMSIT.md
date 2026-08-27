@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Schwarz Lemma" ref="SchwarzzLemma"}
+::: {.theorem ref="SchwarzzLemma"}
 If $f: \DD \to \DD$ is holomorphic with $f(0) = 0$, then
 
 1. $\abs{f(z)} \leq \abs z$ for all $z\in \DD$

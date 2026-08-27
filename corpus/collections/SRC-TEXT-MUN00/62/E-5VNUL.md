@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-5VNUL
 kind: exercise
 title: The Borsuk lemma fails without injectivity
+subtitle: Munkres §62.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §62.1"}
+::: {.exercise}
 
 Give an example to show that the conclusion of the Borsuk lemma need not hold if $f$ is not injective.
 :::

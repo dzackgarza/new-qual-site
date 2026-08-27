@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Chebyshev's Inequality"}
+::: {.definition}
 $$
 \mu\qty{\{x \in\RR^n \suchthat \abs{f(x)} \geq \alpha\}} \leq \qty{\norm{f}_p \over \alpha }^p \quad \forall \alpha, p
 .$$

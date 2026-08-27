@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-5
 kind: exercise
 title: "Membership in unions and intersections of collections"
+subtitle: Munkres §1.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.5"}
+::: {.exercise}
 
 Let $\mathcal{A}$ be a nonempty collection of sets.
 Determine the truth of each of the following statements and of their converses:

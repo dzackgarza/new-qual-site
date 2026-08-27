@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZYJGG
 kind: exercise
 title: Absolute retracts
+subtitle: Munkres §35.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §35.6"}
+::: {.exercise}
 
 Let $Y$ be a normal space.
 Then $Y$ is said to be an absolute retract if for every pair of spaces $(Y_0, Z)$ such that $Z$ is normal and $Y_0$ is a closed subspace of $Z$ homeomorphic to $Y$, the space $Y_0$ is a retract of $Z$.

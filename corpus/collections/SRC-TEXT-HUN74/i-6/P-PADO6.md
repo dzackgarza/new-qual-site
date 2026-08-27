@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 1.6.3"}
+::: {.problem}
 If $\sigma = (i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then show that $\tau\sigma\tau^{-1} = (\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
 :::

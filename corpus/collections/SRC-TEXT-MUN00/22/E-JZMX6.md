@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-JZMX6
 kind: exercise
 title: Restrictions of open maps to open subspaces are open
+subtitle: Munkres §22.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22.5"}
+::: {.exercise}
 
 Let $p: X \to Y$ be an open map.
 Show that if $A$ is open in $X$, then the map $q: A \to p(A)$ obtained by restricting $p$ is an open map.

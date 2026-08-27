@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Cross-ratio map"}
+::: {.fact}
 $$
 R(z) \da (z, z_2, z_3, z_4) \da {z - z_3\over z-z_4}{z_2 - z_4 \over z_2 - z_3} \\
 .$$

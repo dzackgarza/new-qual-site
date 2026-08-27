@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Galois Extension and Galois Group"}
+:::{.definition}
 Let $L/k$ be a finite field extension.
 The following are equivalent:
 

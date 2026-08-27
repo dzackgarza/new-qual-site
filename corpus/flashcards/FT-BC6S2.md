@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterizations of Diagonalizability of a Square Matrix $M$"}
+::: {.theorem}
 - $\min_M(x)/\FF$ splits into distinct linear factors over $\FF$ (i.e. is separable)
 
 - There exists a basis of $\FF^n$ consisting of eigenvectors of $M$

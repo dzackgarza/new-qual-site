@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Polar CR equations"}
+:::{.exercise}
 Show that in polar coordinates, the CR equations take the following form:
 \[  
 \frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{1}{r} \frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}

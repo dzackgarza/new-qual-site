@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Limit"}
+::: {.definition}
 For a diagram $F: J \to \mathcal C$, a **limit** is an object $L$ together with maps $\pi_j : L \to F(j)$ commuting with the diagram, universal with that property: any other such cone $\ts{\psi_j: Y\to F(j)}$ factors through a unique $Y\to L$.
 Products, pullbacks, and inverse limits are limits; the dual notion, reversing all arrows, is a colimit.
 :::

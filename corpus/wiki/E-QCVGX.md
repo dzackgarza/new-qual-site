@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Laurent expanding tricky exponentials"}
+:::{.exercise}
 Find a Laurent expansion for
 \[
 f(z) = {1\over 1 + e^z}

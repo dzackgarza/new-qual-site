@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Explicit Rouché, half-plane"}
+:::{.exercise}
 Find the number of solutions in $\ts{\Re(z) \leq 0}$ of
 \[
 -2e^z = z+3

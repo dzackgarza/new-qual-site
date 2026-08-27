@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterization of Nilpotent Groups"}
+::: {.theorem}
 $G$ is nilpotent iff $G$ has a lower central series terminating at $1$.
 :::

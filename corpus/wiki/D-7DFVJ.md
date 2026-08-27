@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Meromorphic"}
+::: {.definition}
 A function $f:\Omega\to\CC$ is *meromorphic* iff there exists a sequence $\theset{z_n}$ such that
 
 - $\theset{z_n}$ has no limit points in $\Omega$.

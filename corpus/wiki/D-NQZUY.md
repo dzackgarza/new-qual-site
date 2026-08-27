@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="$R\dash$modules"}
+:::{.definition}
 Four properties:
 
 - $r(x+y) = rx + ry$

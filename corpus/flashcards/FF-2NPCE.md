@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 10"}
+::: {.fact}
 1 Abelian, 1 Nonabelian
 
 1. $\ZZ/10\ZZ$

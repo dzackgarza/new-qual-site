@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Special Orthogonal Group"}
+:::{.definition}
 \[
 \SO_n(\RR) = \ts{ A \st  AA^t = I \text{ and } \det A = 1} = \Orth_n(\RR) \intersect \SL_n(\RR)
 .\]

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proposition: $\int f = 0 \implies f = 0$ a.e."}
+::: {.proof}
 - Show for simple functions
 
 - One direction hard: take sets $\theset{f(x) \geq {1 \over n}}$ and derive contrapositive

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.corollary title="Injective implies holomorphic inverse"}
+::: {.corollary}
 If $f: U\to V$ is holomorphic and injective, then $f'(z) \neq 0$ for every $z\in U$.
 The inverse defined on the range of $f$ is therefore holomorphic, so the inverse of a conformal map is conformal.
 :::

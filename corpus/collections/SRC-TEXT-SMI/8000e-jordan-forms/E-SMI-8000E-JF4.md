@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-JF4
 kind: exercise
 title: Change-of-basis matrices into Jordan form
+subtitle: Smith 8000e jordan forms 4
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e jordan forms 4"}
+::: {.exercise}
 Find matrices $Q$ which put each of the following matrices in upper (or lower) Jordan form over $\CC$:
 
 $$

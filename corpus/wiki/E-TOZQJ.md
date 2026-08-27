@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residue from Laurent expansion: $1/(z - \sin(z))$"}
+:::{.exercise}
 Use a direct Laurent expansion to show
 \[
 \Res_{z=0} {1\over z-\sin(z)} = {3! \over 5\cdot 4}

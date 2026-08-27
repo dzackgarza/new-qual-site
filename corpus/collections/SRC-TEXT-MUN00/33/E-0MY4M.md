@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-0MY4M
 kind: exercise
 title: Functions vanishing precisely on a closed G-delta set
+subtitle: Munkres §33.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §33.4"}
+::: {.exercise}
 
 Recall that $A$ is a "$G_\delta$ set" in $X$ if $A$ is the intersection of a countable collection of open sets of $X$.
 

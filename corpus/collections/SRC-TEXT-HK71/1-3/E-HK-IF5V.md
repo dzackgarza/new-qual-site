@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-IF5V
 kind: exercise
 title: Solutions to a homogeneous system over $\CC$
+subtitle: Hoffman and Kunze 1.3.1
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.1"}
+::: {.exercise}
 Find all solutions to the system of equations
 
 $$

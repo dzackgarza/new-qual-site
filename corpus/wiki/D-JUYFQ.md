@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Module Morphisms"}
+::: {.definition}
 A map $f: M\to N$ is a **morphism of modules** iff $f(rm + n) = rf(m) + f(n)$.
 :::

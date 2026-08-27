@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Separable Extension"}
+::: {.definition}
 A field extension $L/K$ is **separable** $\iff$ for every $\alpha \in L$, the minimal polynomial $\min_\alpha(x)/K$ is separable (equivalently, since it is irreducible, has nonzero derivative).
 :::

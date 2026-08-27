@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Application of summation by parts"}
+::: {.exercise}
 Use summation by parts to show that $\sin(n)/n$ converges.
 :::

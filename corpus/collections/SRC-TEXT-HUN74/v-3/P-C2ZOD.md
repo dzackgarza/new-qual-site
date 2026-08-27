@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.3.8"}
+::: {.problem}
 Show that no finite field is algebraically closed.
 
 *Hint: if $K = \{a_i\}_{i=0}^n$, consider*

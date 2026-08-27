@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-I9R8B
 kind: exercise
 title: The cone on the infinite earring
+subtitle: Munkres §82.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §82.2"}
+::: {.exercise}
 
 Let $X$ be the infinite earring in $\mathbb{R}^2$.
 (See Example 1 of §80.) Let $C(X)$ be the subspace of $\mathbb{R}^3$ that is the union of all line segments joining points of $X \times 0$ to the point $p = (0, 0, 1)$.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-F68KP
 kind: exercise
 title: Nonmetrizability of the Stone-Cech compactification
+subtitle: Munkres §38.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.9"}
+::: {.exercise}
 
 (a) If $X$ is normal and $y$ is a point of $\beta(X) - X$, show that $y$ is not the limit of a sequence of points of $X$.
 

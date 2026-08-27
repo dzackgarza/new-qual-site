@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Spring 2009, 31"}
+::: {.problem}
 \envlist
 
 a. Show that a continuous bijection from a compact space to a Hausdorff space is a homeomorphism.

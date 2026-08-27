@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-SY9
 kind: exercise
 title: A complete study of GL(3, Z/2)
+subtitle: Smith 8000e sylow 9
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e sylow 9"}
+::: {.exercise}
 Determine how many Sylow subgroups exist for each prime in the group $\mathrm{GL}_3(\ZZ/2)$ of invertible $3 \times 3$ matrices over $\ZZ/2$.
 
 In fact, learn everything you can about this group: the order of the group, the number of elements of each order, the number of Sylow subgroups of each order.

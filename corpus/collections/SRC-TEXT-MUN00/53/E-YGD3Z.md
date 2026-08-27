@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YGD3Z
 kind: exercise
 title: Properties of the total space of a covering
+subtitle: Munkres §53.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §53.6"}
+::: {.exercise}
 
 Let $p: E \to B$ be a covering map.
 

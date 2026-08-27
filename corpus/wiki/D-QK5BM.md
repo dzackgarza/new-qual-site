@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Euler Characteristic"}
+::: {.definition}
 For $X$ a finite CW complex with $c_n$ cells in dimension $n$,
 \[
 \chi(X) \da \sum_n (-1)^n c_n

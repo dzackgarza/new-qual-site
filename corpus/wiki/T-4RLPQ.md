@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Sequentially compact if and only if complete and totally bounded"}
+::: {.theorem}
 A metric space $X$ is sequentially compact iff it is complete and totally bounded.
 :::

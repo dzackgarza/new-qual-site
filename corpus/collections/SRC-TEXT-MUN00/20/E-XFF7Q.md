@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XFF7Q
 kind: exercise
 title: Uniform balls are not products of intervals
+subtitle: Munkres §20.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.6"}
+::: {.exercise}
 
 Let $\bar{\rho}$ be the uniform metric on $\mathbb{R}^\omega$.
 Given $\mathbf{x} = (x_1, x_2, \ldots) \in \mathbb{R}^\omega$ and given $0 < \epsilon < 1$, let

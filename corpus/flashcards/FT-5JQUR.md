@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Cauchy-Goursat Theorem"}
+::: {.theorem}
 If $f$ is holomorphic on a simply connected region $\Omega$ containing a contour $\gamma$, then $$\int_\gamma f = 0.$$ Moreover, this holds for any contour $\gamma \subset \Omega$.
 :::

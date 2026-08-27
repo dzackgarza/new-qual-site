@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Translation and Dilation Invariance"}
+::: {.proposition}
 Lebesgue measure is translation and dilation invariant.
 :::

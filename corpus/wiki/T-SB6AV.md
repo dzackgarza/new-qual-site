@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Recognizing Semidirect Products"}
+:::{.theorem}
 We have $G \cong N \semidirect_\psi H$ when
 
 - $N \normal G$

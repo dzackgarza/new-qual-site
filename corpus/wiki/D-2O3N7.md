@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Deformation Retract"}
+:::{.definition}
 A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_{A}$) *that also satisfies* $\iota \circ r \homotopic \id_{X}$.
 
 > Note that this is equality in one direction, but only homotopy equivalence in the other.

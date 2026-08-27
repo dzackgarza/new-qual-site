@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Mean Value Property for Holomorphic Functions"}
+:::{.theorem}
 If $f$ is holomorphic on $D_r(z_0)$ 
 \[
 f(z_0) 

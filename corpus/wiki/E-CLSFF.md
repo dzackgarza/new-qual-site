@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Meromorphic functions on $\mathbb{CP}^1$ "}
+:::{.exercise}
 Show that the only meromorphic functions on $\CP^1$ are rational functions.
 
 :::

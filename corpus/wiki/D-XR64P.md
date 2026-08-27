@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="The Dirichlet Problem"}
+::: {.definition}
 Given a bounded piecewise continuous function $u:S^1\to \RR$, is there a unique extension to a continuous harmonic function $\tilde u: \DD\to \RR$?
 :::

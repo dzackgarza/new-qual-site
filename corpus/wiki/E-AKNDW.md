@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$1/(1+x^2)^2$"}
+:::{.exercise}
 \[
 \int_\RR {1 \over (1+x^2)^2} = {\pi \over 2}
 .\]

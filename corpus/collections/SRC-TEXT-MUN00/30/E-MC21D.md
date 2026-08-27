@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MC21D
 kind: exercise
 title: Density of uncountable products of the line
+subtitle: Munkres §30.16
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §30.16"}
+::: {.exercise}
 
 (a) Show that the product space $\mathbb{R}^I$, where $I = [0, 1]$, has a countable dense subset.
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Generalized DCT"}
+::: {.theorem}
 If
 
 - $f_n \in L^1$ with $f_n \to f$ almost everywhere,

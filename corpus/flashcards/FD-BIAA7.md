@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="The Schwarz lemma"}
+::: {.definition}
 In parts:
 
 - $f(z) = \sum_{k\geq 1}c_k z^k$ since $f(0) = 0$ implies $c_0 = 0$.

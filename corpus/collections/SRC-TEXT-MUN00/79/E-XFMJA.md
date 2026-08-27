@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XFMJA
 kind: exercise
 title: Coverings of the torus from subgroups of Z x Z
+subtitle: Munkres §79.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §79.4"}
+::: {.exercise}
 
 Let $T = S^1 \times S^1$, the torus.
 There is an isomorphism of $\pi_1(T, b_0 \times b_0)$ with $\mathbb{Z} \times \mathbb{Z}$ induced by projections of $T$ onto its two factors.

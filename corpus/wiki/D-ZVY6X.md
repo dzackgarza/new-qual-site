@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Local Degree"}
+::: {.definition}
 At a point $x \in V \subset M$, a generator of $H_{n}(V, V-\theset{x})$.
 The degree of a map $S^n \to S^n$ is the sum of its local degrees.
 :::

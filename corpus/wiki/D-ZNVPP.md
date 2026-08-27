@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Connected"}
+:::{.definition}
 A space $X$ is **connected** iff there does not exist a disconnection $X = A\disjoint B$ with $A, B$ nonempty open sets.
 I.e. $X$ can not be written as the disjoint union of two proper nonempty open sets.
 Equivalently, $X$ contains no proper nonempty clopen sets.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Projective Resolution"}
+::: {.definition}
 An exact sequence
 \[
 \cdots \to P_2 \to P_1 \to P_0 \to M \to 0

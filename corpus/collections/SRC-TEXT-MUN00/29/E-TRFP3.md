@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TRFP3
 kind: exercise
 title: Directed sets without antisymmetry
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Check that the preceding exercises remain correct if condition (2) is omitted from the definition of directed set.
 Many mathematicians use the term "directed set" in this more general sense.

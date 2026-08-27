@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Using derivatives"}
+:::{.exercise}
 Let $f:\DD\to \DD$ with $f(0) = f'(0) = 0$.
 Show that $\abs{f''(0)} \leq 2$ and describe all $f$ for which this is an equality.
 

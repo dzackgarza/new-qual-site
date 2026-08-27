@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: A removable singularity"}
+::: {.definition}
 A pole of order zero, so
 $$
 \lim_{z\to z_0}f(z) < \infty

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-plane to horizontal strip"}
+:::{.proposition}
 \[
 F: \HH &\to \RR \times i(0, \pi) \\
 z &\mapsto \Log(z) \\

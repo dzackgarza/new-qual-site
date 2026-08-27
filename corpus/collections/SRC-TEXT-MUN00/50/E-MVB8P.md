@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MVB8P
 kind: exercise
 title: Sigma-compact Hausdorff spaces of finite dimension
+subtitle: Munkres §50.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50.8"}
+::: {.exercise}
 
 Recall that $X$ is said to be $\sigma$-compact if there is a countable collection of compact subspaces of $X$ whose interiors cover $X$.
 

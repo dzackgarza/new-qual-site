@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Volumes of Rectangles"}
+:::{.proposition}
 If $\ts{R_j} \covers R$ is a covering of $R$ by rectangles,
 \[
 R = \overset{\circ}{\Disjoint_{j}} R_j &\implies \abs R = \sum \abs R_j \\

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.3.5"}
+::: {.problem}
 Show that if $f\in K[x]$ has degree $n$ and $F$ is a splitting field of $f$ over $K$, the $[F: K]$ divides $n!$.
 :::

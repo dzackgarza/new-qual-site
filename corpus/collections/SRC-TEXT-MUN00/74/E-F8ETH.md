@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-F8ETH
 kind: exercise
 title: The Klein bottle as a connected sum of two projective planes
+subtitle: Munkres §74.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §74.4"}
+::: {.exercise}
 
 (a) Show that the Klein bottle is homeomorphic to $P^2 \# P^2$.
 [Hint: Split the square in Figure 74.11 along a diagonal, flip one of the resulting triangular pieces over, and paste the two pieces together along the edge labelled $b$.]

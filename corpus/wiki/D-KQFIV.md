@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Perfect Fields"}
+::: {.definition}
 The following are equivalent:
 
 - $k$ is a **perfect** field.

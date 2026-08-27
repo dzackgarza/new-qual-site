@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XT94O
 kind: exercise
 title: Equivalents of the T1 axiom
+subtitle: Munkres §17.15
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.15"}
+::: {.exercise}
 
 Show that the $T_1$ axiom is equivalent to the condition that for each pair of points of $X$, each has a neighborhood not containing the other.
 :::

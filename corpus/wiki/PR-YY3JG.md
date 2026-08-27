@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Quotients by bigger subgroups yield smaller quotients"}
+:::{.proposition}
 If $H\leq K \leq G$, then 
 \[
 \size  G = [G:1] \geq [G:H] \geq [G:K] \geq [G:G] = 1

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-9X41
 kind: exercise
 title: "Solutions of $AX = cX$ for eigenvalue equations"
+subtitle: Hoffman and Kunze 1.3.3
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.3"}
+::: {.exercise}
 If
 
 $$

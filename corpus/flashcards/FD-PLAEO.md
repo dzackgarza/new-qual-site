@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Composition Series"}
+::: {.definition}
 A **composition series** of $G$ is a sequence of subgroups
 $$
 1=N_{0} \leq N_{1} \leq N_{2} \leq \cdots \leq N_{k-1} \leq N_{k}=G

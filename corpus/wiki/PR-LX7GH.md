@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Prime and irreducible agree in a UFD"}
+::: {.proposition}
 In $R$ a UFD, a nonzero nonunit $r\in R$ is prime $\iff r$ is irreducible.
 
 In an arbitrary integral domain only one direction holds: prime $\implies$ irreducible.

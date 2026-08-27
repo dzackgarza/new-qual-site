@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Gamma function"}
+:::{.definition}
 \[
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t} \dt
 .\]

@@ -16,6 +16,6 @@ relations:
 review: draft
 ---
 
-::: {.definition title="$K[x]$"}
+::: {.definition}
 The algebra of polynomials in the variable $x$, i.e. $K[x] = \theset{\sum_{i=0}^n a_ix^i \suchthat n\in \ZZ^{\geq 0}}$.
 :::

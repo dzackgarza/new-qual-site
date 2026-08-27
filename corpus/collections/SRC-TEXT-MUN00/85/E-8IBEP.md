@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-8IBEP
 kind: exercise
 title: Free generators for the subgroup lifted over the figure eight
+subtitle: Munkres §85.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §85.3"}
+::: {.exercise}
 
 Let $p: \mathbb{R} \to S^1$ be the standard covering map; consider the covering map $p \times p: \mathbb{R} \times \mathbb{R} \to S^1 \times S^1$.
 Let $b_0 = (1, 0) \in S^1$; set $X = (b_0 \times S^1) \cup (S^1 \times b_0)$; let $E = (p \times p)^{-1}(X)$; and let $q: E \to X$ be the covering map obtained by restricting $p \times p$.

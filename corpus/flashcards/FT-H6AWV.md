@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fubini-Tonelli"}
+::: {.theorem}
 If $f$
 
 - Is measurable and

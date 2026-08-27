@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="No bijective conformal maps from a disc to an annulus"}
+::: {.exercise}
 Show that there is no bijective conformal map from $A\da \ts{0< \abs{z} < 1}$ to $B\da \ts{1<\abs{z} < 2}$.
 :::
 

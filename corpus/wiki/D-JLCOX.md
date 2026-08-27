@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Radical of an Ideal"}
+:::{.definition}
 For an ideal $I\normal R$, the **radical** 
 \[
 \rad{I} \definedas \theset{r\in R\suchthat r^n\in I\text{ for some } n\geq 0}

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cover"}
+::: {.definition}
 A collection of subsets $\theset{U_\alpha}$ of $X$ is said to **cover** $X$ iff $X = \union_{\alpha} U_\alpha$.
 If $A\subseteq X$ is a subspace, then this collection **covers** $A$ iff $A\subseteq \union_{\alpha} U_\alpha$.
 :::

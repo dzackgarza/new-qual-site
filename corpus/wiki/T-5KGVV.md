@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="The Fundamental Theorem of Cosets"}
+:::{.theorem}
 \[
 aH = bH \iff a\inv b \in H \iff b\inv a\in H
 .\]

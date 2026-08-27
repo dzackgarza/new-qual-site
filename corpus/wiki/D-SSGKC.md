@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Quadratic Form"}
+::: {.definition}
 In coordinates, a **quadratic form** in $n$ variables is a polynomial every one of whose terms has degree $2$:
 \[
 q(x_1, \cdots, x_n) = \sum_{i} a_{ii}x_i^2 + \sum_{i < j} 2a_{ij}x_ix_j = X^t A X, \qquad X = (x_1,\cdots,x_n)^t

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Euler Characteristic 0"}
+::: {.fact}
 $\chi X = 0 \implies X \cong T^2$ or $K$
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Classification of Conformal Maps"}
+:::{.theorem}
 There are 8 major types of conformal maps:
 
 | Type/Domains                                            | Formula                                   |

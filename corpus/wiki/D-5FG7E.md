@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Fixed Field"}
+:::{.definition}
 For $H \leq \Aut_{\Fieldsover{k}}(L)$,
 \[
 L^H \da \ts{ \ell \in L \st  \sigma(l) = \ell }

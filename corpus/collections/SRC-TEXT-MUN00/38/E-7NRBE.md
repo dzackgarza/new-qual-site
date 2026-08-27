@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-7NRBE
 kind: exercise
 title: The size of the Stone-Cech compactification of the positive integers
+subtitle: Munkres §38.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.8"}
+::: {.exercise}
 
 Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, where $I = [0, 1]$.
 [Hint: The space $I^I$ has a countable dense subset.]

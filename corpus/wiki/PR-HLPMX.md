@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Integrals distribute over disjoint sets"}
+::: {.proposition}
 If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
 :::

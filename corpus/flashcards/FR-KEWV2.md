@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proof title="Proposition: $\sum \abs{f_n} \in L^1 \implies \sum \abs{f_n(x)} < \infty$ a.e."}
+::: {.proof}
 Proof: by contradiction.
 :::

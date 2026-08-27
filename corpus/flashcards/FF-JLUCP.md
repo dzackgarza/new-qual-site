@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Double angle formulas involving $\tan$"}
+::: {.fact}
 The double angle formulas:
 $$
 \sin(2t) = {2\tan(t) \over 1+\tan^2(t)} \\ 

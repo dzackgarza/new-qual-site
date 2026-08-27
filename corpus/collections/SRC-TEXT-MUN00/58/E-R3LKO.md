@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-R3LKO
 kind: exercise
 title: When the inclusion induces an isomorphism on fundamental groups
+subtitle: Munkres §58.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §58.7"}
+::: {.exercise}
 
 Let $A$ be a subspace of $X$; let $j: A \to X$ be the inclusion map, and let $f: X \to A$ be a continuous map.
 Suppose there is a homotopy $H: X \times I \to X$ between the map $j \circ f$ and the identity map of $X$.

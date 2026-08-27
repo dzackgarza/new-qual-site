@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cap Product"}
+::: {.definition}
 Denoting $\Delta^p \mapsvia{\sigma} X \in C_{p}(X; G)$, a map that sends pairs ($p\dash$chains, $q\dash$cochains) to $(p-q)\dash$chains $\Delta^{p-q} \to X$ by
 $$
 H_{p}(X; R)\cross H^q(X; R) \mapsvia{\frown} H_{p-q}(X; R)\\

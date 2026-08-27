@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="ML Estimate"}
+:::{.theorem}
 \[
 \abs{ \int_\gamma f(z) \dz } \leq ML \da \sup_{\xi \in \gamma} \abs{f(\xi)} \cdot \length(\gamma) 
 .\]

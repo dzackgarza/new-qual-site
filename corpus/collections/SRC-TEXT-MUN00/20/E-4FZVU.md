@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4FZVU
 kind: exercise
 title: Continuity and convergence in the product, uniform, and box topologies
+subtitle: Munkres §20.4
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.4"}
+::: {.exercise}
 
 Consider the product, uniform, and box topologies on $\mathbb{R}^\omega$.
 

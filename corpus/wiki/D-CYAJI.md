@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Semisimple Modules"}
+::: {.definition}
 A module \( M \) is **semisimple** if and only if it admits a decomposition
 \[
 M = \bigoplus_{j\in J} M_j

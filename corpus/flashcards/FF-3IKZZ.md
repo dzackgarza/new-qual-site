@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Maximum Length Lemma"}
+::: {.fact}
 $$
 \abs{\int _\gamma f} \leq \sup_{z\in \gamma} \abs{f(z)} \cdot \ell(\gamma)
 .$$

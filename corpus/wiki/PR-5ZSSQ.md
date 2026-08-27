@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Contraction principle"}
+:::{.proposition}
 If $(X, \abs{\wait})$ is a metric space and $f: X\to X$ with
 \[
 \abs{f(x) - f(y)} \leq c \abs{x-y} \text{ for some }c < 1, \forall x, y\in X

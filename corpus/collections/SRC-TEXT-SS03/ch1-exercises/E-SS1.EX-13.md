@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="SS 1.13: Constant real/imaginary/magnitude implies constant"}
+::: {.exercise}
 If $f$ is holomorphic on $\Omega$ and any of the following hold, then $f$ is constant:
 
 1. $\Re(f)$ is constant.

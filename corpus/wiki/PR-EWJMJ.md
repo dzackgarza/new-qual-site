@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="$\pi_1$ detects simply-connectedness"}
+::: {.proposition}
 $\pi_{1}(X) = 1$ iff $X$ is simply connected.
 :::

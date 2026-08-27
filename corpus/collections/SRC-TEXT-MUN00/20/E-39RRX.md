@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-39RRX
 kind: exercise
 title: Four topologies on l2 and the Hilbert cube
+subtitle: Munkres §20.8
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.8"}
+::: {.exercise}
 
 Let $X$ be the subset of $\mathbb{R}^\omega$ consisting of all sequences $\mathbf{x}$ such that $\sum x_i^2$ converges.
 Then the formula

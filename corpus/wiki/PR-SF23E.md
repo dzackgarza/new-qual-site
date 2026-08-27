@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Slit plane to horizontal strip"}
+:::{.proposition}
 \[
 F: \CC\sm\RR_{\leq 0} &\to \RR \cross i(-\pi, \pi) \\
 z &\mapsto \Log(z)

@@ -14,6 +14,6 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Definition: the discrete topology"}
+::: {.definition}
 For $X$ a space, the discrete topology is given by $\tau = \mcp(X)$, i.e. every subset is open.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Annihilator of a module"}
+::: {.definition}
 For $M$ an $R\dash$module,
 $$  
 \mathrm{ann}_R(M) = \theset{r\in R\suchthat \forall m\in M,\, rm=0} \normal R

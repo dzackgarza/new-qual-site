@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Finding complex roots"}
+::: {.exercise}
 Solve $z^4=i$.
 :::
 

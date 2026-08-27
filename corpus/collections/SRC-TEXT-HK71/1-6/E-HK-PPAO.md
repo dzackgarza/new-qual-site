@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-PPAO
 kind: exercise
 title: "Eigenvectors of a triangular matrix"
+subtitle: Hoffman and Kunze 1.6.4
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.4"}
+::: {.exercise}
 Let
 
 $$

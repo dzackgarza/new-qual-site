@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Conjugates of a root"}
+::: {.definition}
 For $\alpha\in L$, a **conjugate** of $\alpha$ is any other root of the minimal polynomial of $\alpha$.
 :::

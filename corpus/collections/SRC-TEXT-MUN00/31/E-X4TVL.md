@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-X4TVL
 kind: exercise
 title: Rational and irrational anti-diagonals in the Sorgenfrey plane
+subtitle: Munkres §31.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §31.9"}
+::: {.exercise}
 
 Let $A$ be the set of all points of $\mathbb{R}_\ell^2$ of the form $x \times (-x)$, for $x$ rational; let $B$ be the set of all points of this form for $x$ irrational.
 If $V$ is an open set of $\mathbb{R}_\ell^2$ containing $B$, show there exists no open set $U$ containing $A$ that is disjoint from $V$, as follows:

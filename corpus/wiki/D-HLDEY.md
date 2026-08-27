@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Conjugacy class"}
+:::{.definition}
 The **conjugacy class** of $h$ is defined as 
 \[
 C(h) \da \ts{ ghg\inv \st g\in G } 

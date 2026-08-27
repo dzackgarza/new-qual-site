@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$L^+$: Measurable non-negative functions."}
+::: {.definition}
 $f\in L^+$ iff $f$ is measurable and non-negative.
 :::

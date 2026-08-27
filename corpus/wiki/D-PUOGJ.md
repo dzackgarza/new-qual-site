@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simple Extensions"}
+::: {.definition}
 An extension $L/k$ is **simple** iff $L = K( \alpha)$ for some \( \alpha\in L \).
 :::

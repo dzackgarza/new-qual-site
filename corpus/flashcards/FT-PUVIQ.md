@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Zorn's Lemma"}
+::: {.theorem}
 If every chain in a poset $P$ has an upper bound in $P$, then $P$ contains a maximal element.
 
 Note: a *chain* is a totally ordered subset.

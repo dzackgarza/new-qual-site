@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Holomorphic functions have isolated zeros"}
+::: {.proposition}
 If $f:\CC\to \CC$ is holomorphic and not identically zero, then $f$ has isolated zeros.
 :::

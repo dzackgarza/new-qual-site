@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="(Lebesgue) Measurable Function"}
+::: {.definition}
 A function $f:X\to\bar\RR$ is **measurable** iff for all $\alpha \in \RR$, the following set is Lebesgue measurable:
 $$
 S_\alpha \definedas \theset{ x\in X \suchthat f(x) > \alpha}

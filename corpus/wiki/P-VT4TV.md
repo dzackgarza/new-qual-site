@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Invert $\sin(z)$, one coefficient at a time"}
+:::{.exercise}
 Find $1/\sin(z)$ using this method.
 :::
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Rouche"}
+::: {.theorem}
 If $f$ and $g$ are holomorphic on $\abs{z-z_0} \leq R$ with $f,g\neq 0$ on $\abs{z-z_0} = R$ and
 $$
 \abs{f-g} < \abs{f} + \abs{g}

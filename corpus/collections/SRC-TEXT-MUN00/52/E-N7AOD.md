@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-N7AOD
 kind: exercise
 title: The fundamental group of a topological group is abelian
+subtitle: Munkres §52.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §52.7"}
+::: {.exercise}
 
 Let $G$ be a topological group with operation $\cdot$ and identity element $x_0$.
 Let $\Omega(G, x_0)$ denote the set of all loops in $G$ based at $x_0$.

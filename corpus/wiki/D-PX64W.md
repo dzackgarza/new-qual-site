@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Centralizer"}
+:::{.definition}
 The **centralizer of an element** is defined as 
 \[
 Z(h) \da C_G(h) \da \ts{ g\in G \st ghg\inv = h } 

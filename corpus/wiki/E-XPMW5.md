@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Classifying singularities"}
+:::{.exercise}
 Classify the singularities at $z=0$ of the following
 \[
 f_1(z) &= {\Log(1+z) \sin(z) \over z^2} \\

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Standard sector"}
+::: {.exercise}
 Find a conformal map from the sector $\ts{\Arg(z) \in (0, \alpha)} \to \DD$.
 :::
 

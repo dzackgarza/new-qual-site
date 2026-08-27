@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Full tor complex table:"}
+::: {.fact}
 E.g. top-left is $ \operatorname{Tor}_*^{\mathbf{Z}}(C_n, C_m) $.
 
 First row: $ C_n\otimes_{\mathbf{Z}}A = A/nA $ and $ \operatorname{Tor}_1^{\mathbf{Z}}(C_n, A) = A[n] $.

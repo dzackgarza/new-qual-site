@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Cauchy formula and $\sinh$"}
+:::{.exercise}
 Compute
 \[
 \int_{S^1} {2 \sinh(z) \over z^n}\dz

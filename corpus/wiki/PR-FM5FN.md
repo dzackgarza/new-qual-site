@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Composite Extensions"}
+:::{.proposition}
 If $F/k$ is finite and Galois and $L/k$ is arbitrary, then $FL/L$ is Galois and
 \[
 \Gal(FL/L) = \Gal(F / F\intersect L) \subset \Gal(F/k)

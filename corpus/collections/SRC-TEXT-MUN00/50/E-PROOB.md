@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-PROOB
 kind: exercise
 title: Manifolds have dimension at most m
+subtitle: Munkres §50.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50.9"}
+::: {.exercise}
 
 Corollary.
 Every $m$-manifold has topological dimension at most $m$.

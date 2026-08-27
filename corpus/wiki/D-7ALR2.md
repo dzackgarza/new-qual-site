@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Precompact"}
+::: {.definition}
 A subset $A\subseteq X$ is **precompact** iff $\cl_{X}(A)$ is compact.
 :::

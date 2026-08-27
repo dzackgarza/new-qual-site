@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ECKDI
 kind: exercise
 title: Normal forms for pasting schemes
+subtitle: Munkres §77.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §77.1"}
+::: {.exercise}
 
 Let $X$ be a space obtained by pasting the edges of a polygonal region together in pairs.
 

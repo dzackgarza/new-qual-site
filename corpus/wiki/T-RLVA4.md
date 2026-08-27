@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="The Correspondence Theorem / 4th Isomorphism Theorem"}
+:::{.theorem}
 Suppose $N \normal G$, then there exists a correspondence:
 
 \[  

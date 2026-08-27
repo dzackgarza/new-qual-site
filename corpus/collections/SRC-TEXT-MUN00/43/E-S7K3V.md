@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-S7K3V
 kind: exercise
 title: Local compactness of balls versus completeness
+subtitle: Munkres §43.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.1"}
+::: {.exercise}
 
 Let $X$ be a metric space.
 

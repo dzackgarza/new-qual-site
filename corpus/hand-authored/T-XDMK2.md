@@ -14,7 +14,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Cauchy's theorem"}
+::: {.theorem}
 Let $G$ be a finite group and let $p$ be prime. If $p$ divides $\abs G$, then
 $G$ contains an element of order $p$, and therefore a subgroup of order $p$.
 :::

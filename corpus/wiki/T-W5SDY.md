@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="The operator norm on $X\dual$ yields a Banach space"}
+::: {.theorem}
 If $X$ is a normed vector space, then $(X\dual, \norm{\wait}_{\text{op}})$ is a Banach space.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Intersection Form"}
+::: {.definition}
 The nondegenerate bilinear form cohomology induced by the Kronecker Pairing: $$I: H^k(M_{n}) \cross H^{n-k}(M^n) \to \ZZ$$ where $n=2k$.
 
 - When $k$ is odd, $I$ is skew-symmetric and thus a *symplectic form.*

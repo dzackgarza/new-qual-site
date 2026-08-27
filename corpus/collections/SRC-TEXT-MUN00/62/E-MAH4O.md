@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MAH4O
 kind: exercise
 title: Winding of a curve about the origin from its position in the complement
+subtitle: Munkres §62.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §62.4"}
+::: {.exercise}
 
 Let $C$ be a simple closed curve in $\mathbb{R}^2 - 0$; let $j: C \to \mathbb{R}^2 - 0$ be the inclusion mapping.
 Show that $j_*$ is trivial if $0$ lies in the unbounded component of $\mathbb{R}^2 - C$, and is nontrivial otherwise.

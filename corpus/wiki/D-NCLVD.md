@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Retract"}
+::: {.definition}
 A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} B$ satisfying $$r\circ\iota = \id_{A}.$$ A **retract** of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
 
 \begin{tikzcd}

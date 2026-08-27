@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: perfect field."}
+::: {.definition}
 Every irreducible polynomial is separable.
 
 Equivalently, the characteristic is zero, or is $p$ where Frobenius is an automorphism.

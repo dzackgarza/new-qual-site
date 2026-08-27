@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Lens Space"}
+::: {.definition}
 For $m \geq 1$ and integers $\ell_1, \cdots, \ell_n$ coprime to $m$, let $\ZZ/m$ act on the unit sphere $S^{2n-1}\subseteq \CC^n$ by
 \[
 (z_1, \cdots, z_n) \mapsto \qty{ e^{2\pi i \ell_1/m} z_1, \cdots, e^{2\pi i \ell_n /m} z_n }

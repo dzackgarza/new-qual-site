@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-J8QUX
 kind: exercise
 title: The two-dimensional CW complex is metrizable
+subtitle: Munkres §73.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §73.4"}
+::: {.exercise}
 
 Show that the space constructed in [[E-VYYH3]] is in fact metrizable.
 [Hint: The quotient map is a perfect map.]

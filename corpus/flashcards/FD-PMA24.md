@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Limit Point Compactness"}
+::: {.definition}
 Every infinite subset has a limit point.
 :::

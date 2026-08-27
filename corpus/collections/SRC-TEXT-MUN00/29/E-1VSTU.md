@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1VSTU
 kind: exercise
 title: Net convergence generalizes sequence convergence
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Let $X$ be a topological space.
 A net in $X$ is a function $f$ from a directed set $J$ into $X$.

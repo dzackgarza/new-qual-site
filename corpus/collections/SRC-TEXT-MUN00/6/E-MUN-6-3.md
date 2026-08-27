@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-6-3
 kind: exercise
 title: Cantor's theorem for $X^{\omega}$
+subtitle: Munkres §6.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §6.3"}
+::: {.exercise}
 
 Let $X$ be the two-element set $\{0,1\}$ . Find a bijective correspondence between $X^{\omega}$ and a proper subset of itself.
 :::

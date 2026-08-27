@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="$L^\infty$"}
+:::{.definition}
 \[
 L^\infty(X)
 \definedas \theset{f: X\to \CC \suchthat f \text{ is essentially bounded }}

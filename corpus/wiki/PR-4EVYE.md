@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="The Cauchy condensation test"}
+:::{.proposition}
 For $\ts{a_k}$ is a non-increasing sequence in $\RR$ then
 \[
 \sum_{k\geq 1} a_k < \infty \iff \sum_{k\geq 1} 2^k a_{2^k}<\infty

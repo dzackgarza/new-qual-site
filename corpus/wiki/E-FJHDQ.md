@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="The standard function juggling trick"}
+:::{.exercise}
 Show that if $f:\HH\to \DD$ is holomorphic and $f(i) = 0$ then $\abs{f(z)} \leq \abs{z-i\over z+i}$.
 
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Three points determine a Möbius transformation"}
+:::{.proposition}
 Given any three distinct points $z_1, z_2, z_3$, the following Möbius transformation sends them to $0, 1, \infty$ respectively, and is the unique one that does:
 \[
 T(z)

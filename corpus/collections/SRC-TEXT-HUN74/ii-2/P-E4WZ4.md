@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.2.12.b."}
+::: {.problem}
 Determine (up to isomorphism) all abelian groups of order 64; do the same for order 96.
 :::

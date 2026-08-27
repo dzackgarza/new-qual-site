@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Summation by Parts"}
+:::{.proposition}
 Setting $A_n \da \sum_{k=1}^n b_k$ and $B_0 \da 0$,
 \[
 \sum_{k=m}^n a_k b_k 

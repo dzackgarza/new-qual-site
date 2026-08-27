@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Mapping Cone"}
+::: {.definition}
 For a map $f: X\to Y$, the **mapping cone** is the mapping cylinder with the source end collapsed,
 \[
 C_f \da M_f / \qty{X\cross\ts{0}} = \qty{CX \disjoint Y}/\qty{(x,0)\sim f(x)}

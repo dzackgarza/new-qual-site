@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Intersection Pairing"}
+:::{.definition}
 For a manifold $M$, a map on homology defined by
 \[
 H_{\hat i}M \tensor H_{\hat j}M \to H_{\widehat{i+j}}X\\

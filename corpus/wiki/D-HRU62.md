@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Gluing Along a Map"}
+::: {.definition}
 Given spaces $X_0$ and $X_1$, a subspace $A\subseteq X_1$, and a map $f: A\to X_0$, the space obtained by **attaching $X_1$ to $X_0$ along $f$** is
 \[
 X_0 \disjoint_f X_1 \da \qty{X_0 \disjoint X_1}/\qty{a \sim f(a) \st a\in A}

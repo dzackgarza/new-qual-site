@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Subgroup"}
+::: {.definition}
 A subset $H\subseteq G$ is a **subgroup** iff
 
 1. Closure: $HH \subset H$

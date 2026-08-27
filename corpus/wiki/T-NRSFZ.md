@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Existence of $\log(f)$ on domains"}
+:::{.theorem}
 If $\Omega$ is a connected domain with $f\in \OO\units(\Omega)$ an invertible regular function with 
 \[
 \int_\gamma {f'\over f} = 0

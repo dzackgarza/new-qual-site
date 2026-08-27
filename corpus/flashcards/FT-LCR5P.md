@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Dominated Convergence Theorem"}
+::: {.theorem}
 If $\theset{f_n} \subset L^1$ and $f_n\to f$ a.e. with $\abs{f_n} \leq g \in L^1$ for every $n$, then
 $$
 \lim \int f_n = \int \lim f_n

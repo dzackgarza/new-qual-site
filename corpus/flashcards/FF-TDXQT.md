@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 8"}
+::: {.fact}
 3 Abelian, 2 Nonabelian
 
 1. $\ZZ/8\ZZ$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Explicit Rouche, $2\mathbb{D}$"}
+:::{.exercise}
 Find the number of zeros in $\abs{z} < 2$ of
 \[
 h(z) \da z^5 + 3z + 1

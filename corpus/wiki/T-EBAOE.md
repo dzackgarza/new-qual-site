@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Argument Principle, Index Version"}
+:::{.theorem}
 With the same setup as above,
 \[
 {1\over 2\pi i} \int_\gamma \del_{\log} f(z) \dz

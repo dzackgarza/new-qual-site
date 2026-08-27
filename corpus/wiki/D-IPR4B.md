@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cyclotomic Field"}
+::: {.definition}
 Any subfield of $\SF(x^n-1)$ is a **cyclotomic field**.
 :::

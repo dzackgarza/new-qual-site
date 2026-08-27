@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.8.3"}
+::: {.problem}
 Let $\phi$ be the Euler function.
 
 1. $\phi(n)$ is even for $n>2$.

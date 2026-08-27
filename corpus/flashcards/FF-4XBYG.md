@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Cauchy-Schwarz Inequality"}
+::: {.fact}
 $$
 \abs{\inner{f}{g}} \leq \norm{fg}_1 \leq \norm{f}_2 \norm{g}_2, \quad\text{i.e.}\quad
 \int\abs{fg} \leq \sqrt{\int \abs{f}^2} \sqrt{\int \abs{g}^2}

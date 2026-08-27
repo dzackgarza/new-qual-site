@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-ED5
 kind: exercise
 title: Matrices over a Euclidean domain are diagonalizable by invertible row and column
+subtitle: Smith 8000e Euclidean domains 5
   operations
 classification:
   areas:
@@ -15,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e Euclidean domains 5"}
+::: {.exercise}
 Assume $R$ is a Euclidean domain.
 Prove every $m \times n$ matrix over $R$ can be diagonalized by invertible row and column operations.
 

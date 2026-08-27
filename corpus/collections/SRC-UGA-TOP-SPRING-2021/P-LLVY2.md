@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Spring 2021, 8"}
+::: {.problem}
 Let $\Sigma_{g, n}$ denote the compact oriented surface of genus $g$ with $n$ boundary components.
 
 a. Show that $\Sigma_{0, 3}$ and $\Sigma_{1, 1}$ are both homotopy equivalent to $S_1 \vee S^1$.

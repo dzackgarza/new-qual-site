@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Boundary of a manifold"}
+::: {.definition}
 Points $x\in M^n$ defined by
 $$
 \del M = \theset{x\in M: H_{n}(M, M-\theset{x}; \ZZ) = 0}

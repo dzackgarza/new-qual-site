@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Showing one space can not cover another"}
+::: {.proposition}
 There is no covering map $p: \RP^2 \to \TT^2$.
 :::

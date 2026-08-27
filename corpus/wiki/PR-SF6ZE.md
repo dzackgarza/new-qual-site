@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Tower law for subgroups"}
+:::{.proposition}
 \[
 K\leq H \leq G \implies [G: K] = [G:H] [H: K]
 .\]

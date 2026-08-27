@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Invert $\sin(z)$ using geometric series"}
+:::{.exercise}
 Invert $\sin(z)$ using a geometric series, heeding the warning above.
 :::
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Dual Norm"}
+:::{.definition}
 For $X$ a normed vector space and $L \in X\dual$, the **dual norm** or **operator norm** is defined by
 \[
 \norm{L}_{X\dual} 

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Limit point of zeros is an essential singularity"}
+::: {.exercise}
 Suppose $f\not\equiv 0$ is holomorphic on $\Omega\smts{z_0}$ with a sequence of zeros $z_k$ limiting to $z_0$.
 Show that $z_0$ is an essential singularity of $f$.
 :::

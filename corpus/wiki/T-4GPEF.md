@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fubini (Integrable)"}
+::: {.theorem}
 For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
 
 - $f_x(y)$ is an **integrable** function

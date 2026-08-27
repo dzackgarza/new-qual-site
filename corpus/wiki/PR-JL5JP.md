@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Polygon Models for Surfaces"}
+::: {.proposition}
 Every surface can be obtained as the identification space of a polygon labeled with sides \( \alpha_i, \beta_i, \rho_i \).
 
 ![$\Sigma_{3, 3}$](../../assets/figures/image_2021-04-08-19-40-14.png)?

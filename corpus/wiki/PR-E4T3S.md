@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Classification for quartics"}
+::: {.proposition}
 The Galois groups of irreducible quartics can be determined using discriminants, resolvents, and checking irreducibility:
 
 - If $\sqrt{\Delta}\in \QQ$, then $G = A_4, C_2^2$.

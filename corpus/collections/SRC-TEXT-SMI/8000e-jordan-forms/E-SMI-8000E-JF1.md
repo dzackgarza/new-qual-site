@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-JF1
 kind: exercise
 title: Enumerating Jordan forms from minimal and invariant factors
+subtitle: Smith 8000e jordan forms 1
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e jordan forms 1"}
+::: {.exercise}
 (i) Find all $5 \times 5$ Jordan matrices with $m(t) = (X - 5)^2$.
 
 (ii) Find all $5 \times 5$ Jordan matrices with $m(t) = (X - 1)(X - 3)(X + 6)$.

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Wedderburn"}
+::: {.theorem}
 Every finite division ring is a field, i.e. finite division rings must be commutative.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\log(x)/1+x^2$"}
+:::{.exercise}
 \[
 I \da \int_0^\infty {\log(x) \over 1+x^2}\dx = 0
 .\]

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-ED7
 kind: exercise
 title: Quotienting a free module by coordinate cyclic submodules
+subtitle: Smith 8000e euclidean domains 7
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e euclidean domains 7"}
+::: {.exercise}
 Prove
 
 $$

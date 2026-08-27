@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CEDW5
 kind: exercise
 title: Power series partial sums converge compactly but not uniformly
+subtitle: Munkres §46.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.5"}
+::: {.exercise}
 
 Consider the sequence of functions $f_n: (-1, 1) \to \mathbb{R}$, defined by
 

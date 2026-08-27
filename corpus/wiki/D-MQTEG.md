@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cocycle"}
+::: {.definition}
 A cochain $\psi \in C^n(X; G)$ with $\delta \psi = 0$, i.e. an element of $Z^n(X; G)\da \ker \delta^n$; equivalently a $\psi$ vanishing on all boundaries.
 Cohomology is cocycles modulo coboundaries, $H^n(X; G) = Z^n(X;G)/B^n(X;G)$.
 :::

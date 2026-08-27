@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Torsion submodule."}
+::: {.definition}
 $$  
 \tor(M) = \{m \in M \suchthat \exists r \in R, ~r \neq 0, ~rm = 0\}
 .$$

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normal Series"}
+::: {.definition}
 A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
 :::

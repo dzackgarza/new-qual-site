@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TBLM7
 kind: exercise
 title: Locally compact Hausdorff spaces are completely regular
+subtitle: Munkres §33.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §33.7"}
+::: {.exercise}
 
 Show that every locally compact Hausdorff space is completely regular.
 :::

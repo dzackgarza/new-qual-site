@@ -15,6 +15,6 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Example of a sequence of differentiable functions whose pointwise limit exists but is not differentiable."}
+::: {.example}
 $f_n(x) = {x^2 \over \sqrt{x^2 + {1\over n}}} \to \abs{x}$.
 :::

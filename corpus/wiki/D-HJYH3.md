@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The Riemann Zeta Function"}
+:::{.definition}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_20-00-12.png)
 

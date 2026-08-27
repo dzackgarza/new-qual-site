@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OD5RT
 kind: exercise
 title: Countable products of compact metrizable spaces are compact
+subtitle: Munkres §45.1
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §45.1"}
+::: {.exercise}
 
 If $X_n$ is metrizable with metric $d_n$, then
 

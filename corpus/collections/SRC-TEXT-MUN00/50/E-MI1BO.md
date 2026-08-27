@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MI1BO
 kind: exercise
 title: Locally euclidean spaces are locally compact and locally metrizable
+subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50 Supplementary"}
+::: {.exercise}
 
 A space $X$ is said to be locally $m$-euclidean if for each $x \in X$, there is a neighborhood of $x$ that is homeomorphic to an open set of $\mathbb{R}^m$.
 Such a space $X$ automatically satisfies the $T_1$ axiom, but it need not be Hausdorff.

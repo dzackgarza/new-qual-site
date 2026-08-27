@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Standard parameterization of a circle in $\CC$"}
+::: {.fact}
 $$
 F(t) = {1-x^2\over 1+x^2} + i{2x\over 1+x^2} \quad x = \tan(t), t\in (-\pi/2, \pi/2)
 .$$

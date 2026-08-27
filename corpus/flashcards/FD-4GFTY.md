@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition of Galois group for a **finite** extension $K/F$."}
+::: {.definition}
 $K/F$ is Galois $\iff$ $\abs{\Aut(K/F)} = [K: F]$.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Cauchy formula and principal parts"}
+:::{.exercise}
 Compute
 \[
 \int_\gamma {z^2+1 \over z(z^2 + 4)}\dz

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normal Matrix"}
+::: {.definition}
 A matrix $A\in \Mat(n\times n; \CC)$ is **normal** iff $A^{\dagger} A = AA^{\dagger}$ where $A^{\dagger}$ is the conjugate transpose.
 :::

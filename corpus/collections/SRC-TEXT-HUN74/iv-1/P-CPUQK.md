@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.1.12"}
+::: {.problem}
 Let the following be a commutative diagram of $R$-modules and $R$-module homomorphisms with exact rows:
 
 Prove the following:

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Schwarz with domain/codomain scaled"}
+:::{.exercise}
 If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then 
 \[
 \abs{f(z)}\leq {M\over R}\abs{z-a}

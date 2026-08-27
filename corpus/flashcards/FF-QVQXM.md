@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="One step subgroup test"}
+::: {.fact}
 $ a, b\in H \implies ab^{-1} \in H  $ implies that $H$ is a subgroup.
 :::

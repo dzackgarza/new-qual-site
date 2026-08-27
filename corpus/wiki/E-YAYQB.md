@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Disc minus a slit"}
+:::{.exercise}
 Find a conformal map
 \[
 \DD\sm \left[ {1\over 2}, 1\right) \to \DD

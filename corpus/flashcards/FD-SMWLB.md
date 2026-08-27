@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Nowhere Dense"}
+::: {.definition}
 A set is $A$ **nowhere dense** if its closure has empty interior $\qty{\bar A}^\circ$, equivalently it is not dense in *any* nonempty open set.
 For $\RR$, every interval $I$ contains a subinterval $S\subset I$ with $S\intersect A = \emptyset$, i.e. its closure contains no intervals.
 

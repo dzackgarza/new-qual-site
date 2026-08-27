@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Unique Factorization Domain"}
+:::{.definition}
 A ring $R$ is a **unique factorization domain** iff $R$ is an integral domain and every $r\in R\smz$ admits a decomposition
 \[  
 r = u \prod_{i=1}^n p_i

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Hungerford 7.2.4"}
+:::{.problem}
 \envlist
 
 

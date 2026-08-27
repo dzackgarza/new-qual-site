@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-RTYK
 kind: exercise
 title: Row-reducing a matrix over $\CC$
+subtitle: Hoffman and Kunze 1.3.4
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.4"}
+::: {.exercise}
 Find a row-reduced matrix which is row-equivalent to
 
 $$

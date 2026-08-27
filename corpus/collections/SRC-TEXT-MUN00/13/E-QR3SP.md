@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QR3SP
 kind: exercise
 title: The countable complement topology and an infinite complement collection
+subtitle: Munkres §13.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §13.3"}
+::: {.exercise}
 
 Show that the collection $\mathcal{T}_c$ given in Example 4 of §12 is a topology on the set $X$.
 Is the collection

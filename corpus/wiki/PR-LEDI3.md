@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Small Tails for Series of Functions"}
+:::{.proposition}
 \[
 \sum f_n < \infty \implies \norm{f_n}_\infty \convergesto{n\to\infty}0
 .\]

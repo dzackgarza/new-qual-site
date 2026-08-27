@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1QFIO
 kind: exercise
 title: Intersections and unions of families of topologies
+subtitle: Munkres §13.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §13.4"}
+::: {.exercise}
 
 (a) If $\ts{\mathcal{T}_\alpha}$ is a family of topologies on $X$, show that $\bigcap \mathcal{T}_\alpha$ is a topology on $X$.
 Is $\bigcup \mathcal{T}_\alpha$ a topology on $X$?

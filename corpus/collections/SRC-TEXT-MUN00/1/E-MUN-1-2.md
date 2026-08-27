@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-2
 kind: exercise
 title: "Subset membership under union and intersection"
+subtitle: Munkres §1.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.2"}
+::: {.exercise}
 
 Determine which of the following statements are true for all sets A, B, C, and D. If a double implication fails, determine whether one or the other of the possible implications holds.
 If an equality fails, determine whether the statement becomes true if the “equals” symbol is replaced by one or the other of the inclusion symbols ⊂ or ⊃.

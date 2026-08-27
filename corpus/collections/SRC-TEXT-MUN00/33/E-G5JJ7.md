@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-G5JJ7
 kind: exercise
 title: Strong form of the Urysohn lemma
+subtitle: Munkres §33.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §33.5"}
+::: {.exercise}
 
 Prove the following.
 

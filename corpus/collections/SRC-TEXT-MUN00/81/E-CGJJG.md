@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CGJJG
 kind: exercise
 title: Order-two group actions on the torus
+subtitle: Munkres §81.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §81.1"}
+::: {.exercise}
 
 (a) Find a group $G$ of homeomorphisms of the torus $T$ having order 2 such that $T/G$ is homeomorphic to the torus.
 

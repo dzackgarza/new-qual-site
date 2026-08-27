@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\tan(\pi/4) = \cdots$"}
+::: {.fact}
 $$
 \tan(\pi/4) = 1
 .$$

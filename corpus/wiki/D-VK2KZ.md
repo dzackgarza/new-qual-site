@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Discrete Valuation Rings"}
+::: {.definition}
 A **discrete valuation ring** or **DVR** is a local PID with a *unique* maximal ideal.
 :::

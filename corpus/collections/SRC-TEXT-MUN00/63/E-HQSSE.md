@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HQSSE
 kind: exercise
 title: Two disjoint curves on the sphere make three regions
+subtitle: Munkres §63.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §63.1"}
+::: {.exercise}
 
 Let $C_1$ and $C_2$ be disjoint simple closed curves in $S^2$.
 

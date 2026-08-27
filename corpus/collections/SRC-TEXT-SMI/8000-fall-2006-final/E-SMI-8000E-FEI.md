@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-FEI
 kind: exercise
 title: Irreducibility and splitting fields of three polynomials
+subtitle: Smith 8000 fall 2006 final I
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 final I"}
+::: {.exercise}
 Do all parts.
 For each of the following polynomials over $\mathbb{Q}$:
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Morera's Theorem"}
+::: {.theorem}
 If $f$ is continuous in an open disc $\DD$ and
 $$
 \text{for all triangles } T\subset \DD, \qquad \int_T f = 0

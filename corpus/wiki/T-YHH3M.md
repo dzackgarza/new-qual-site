@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Schur's Lemma"}
+:::{.theorem}
 If $M \in \modsleft{G}$ is an irreducible representation of $G$ with $\dim_k M < \infty$ and $k=\bar{k}$, then every $G\dash$equivariant endomorphism of $M$ is a scalar:
 \[
 \Endo_G(M) & \mapsvia{\sim} k

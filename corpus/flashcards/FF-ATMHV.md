@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\sin(\pi/6) = \cdots$"}
+::: {.fact}
 $$
 \sin(\pi/6) = {1\over 2}
 .$$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Gauss' Lemma"}
+::: {.theorem}
 Let $R$ be a UFD with fraction field $F$ and $p \in R[x]$.
 If $p$ is reducible in $F[x]$, then $p$ is reducible in $R[x]$.
 

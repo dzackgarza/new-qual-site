@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Zero Divisor"}
+:::{.definition}
 An element $r\in R$ is a **zero-divisor** iff there exists an $a\in R\smz$ such that $ar = ra = 0$, i.e. $r\divides 0$.
 Equivalently, the map
 \[  

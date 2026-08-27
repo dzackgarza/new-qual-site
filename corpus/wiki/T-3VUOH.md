@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Mayer-Vietoris"}
+:::{.theorem}
 > Mnemonic: $X = A \union B \leadsto (\intersect, \oplus, \union)$
 
 Let $X = A^\circ \union B^\circ$; then there is a SES of chain complexes

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Fixed point convergence"}
+:::{.exercise}
 Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
 Show that for any initial point $z_0$, the sequence $z_k \da f(z_{k-1})$ converges to $a$.
 

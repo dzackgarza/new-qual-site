@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Complex log"}
+:::{.definition}
 Define
 \[
 \log(z) \da \ln\qty{\abs{z}} + i\Arg(z)

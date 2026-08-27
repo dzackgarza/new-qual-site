@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Deck transformation"}
+::: {.definition}
 For a covering space $\tilde X \mapsvia{p} X$, self-isomorphisms $f:\tilde X \to \tilde X$ of covering spaces are referred to as **deck transformations**.
 :::

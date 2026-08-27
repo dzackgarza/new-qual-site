@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is $ \chi(A\# B) $?"}
+::: {.fact}
 $ \chi(A) + \chi(B) - 2 $
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Homotopy Groups"}
+::: {.definition}
 For $x_0 \in X$ and $n\geq 1$,
 \[
 \pi_n(X, x_0) \da \ts{ f: (I^n, \del I^n) \to (X, x_0) } / \homotopic

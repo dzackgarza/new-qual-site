@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-X3SLC
 kind: exercise
 title: A bounded metric giving the same topology
+subtitle: Munkres §20.11
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §20.11"}
+::: {.exercise}
 
 Show that if $d$ is a metric for $X$, then
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-2
 kind: exercise
 title: Laws of inequalities for $\mathbb{R}$
+subtitle: Munkres §4.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.2"}
+::: {.exercise}
 
 Prove the following "laws of inequalities" for $\mathbb{R}$, using axioms (1)-(6) along with the results of Exercise 1:
 

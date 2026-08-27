@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MPI86
 kind: exercise
 title: Metrically equivalent metrics and completeness
+subtitle: Munkres §43.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.3"}
+::: {.exercise}
 
 Two metrics $d$ and $d'$ on a set $X$ are said to be metrically equivalent if the identity map $i: (X, d) \to (X, d')$ and its inverse are both uniformly continuous.
 

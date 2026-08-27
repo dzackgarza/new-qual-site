@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Locally Connected"}
+::: {.definition}
 A space is **locally connected** iff every neighborhood of every point admits a smaller connected neighborhood.
 I.e. for all $x\in X$, for all $N_x \ni x$, there exists a connected set $U \subset X$ with $x\in U$.
 :::

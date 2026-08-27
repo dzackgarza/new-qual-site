@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Complement of a segment"}
+:::{.exercise}
 Map $\CC\sm[-1, 1]$ to $\DD$.
 
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-7
 kind: exercise
 title: "Principle of transfinite induction"
+subtitle: Munkres §10.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.7"}
+::: {.exercise}
 
 Let $J$ be a well-ordered set.
 A subset $J_0$ of $J$ is said to be inductive if for every $\alpha \in J$,

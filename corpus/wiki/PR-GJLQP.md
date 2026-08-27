@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Centers are characteristic"}
+:::{.proposition}
 For any group $G$,
 \[
 Z(G) \ch G

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Equivalent Matrices"}
+::: {.definition}
 Two matrices $A, B$ over a PID $R$ are **equivalent** iff $A = PBQ$ for some invertible $P, Q$.
 This happens iff
 

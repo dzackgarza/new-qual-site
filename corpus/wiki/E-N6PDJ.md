@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Nonconstant entire functions have dense image"}
+::: {.exercise}
 Show that if $f:\CC\to \CC$ is nonconstant and entire then $f(\CC)$ is dense in $\CC$.
 :::
 

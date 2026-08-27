@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-Y4MFU
 kind: exercise
 title: Perfect maps transfer separation and countability properties
+subtitle: Munkres §31.7
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §31.7"}
+::: {.exercise}
 
 Let $p: X \to Y$ be a closed continuous surjective map such that $p^{-1}(\ts{y})$ is compact for each $y \in Y$.
 (Such a map is called a perfect map.)

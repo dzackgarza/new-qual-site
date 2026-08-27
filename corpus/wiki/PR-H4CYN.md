@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Sufficient condition for Taylor convergence"}
+::: {.proposition}
 Given a point $c$ and some $\varepsilon>0$, if $f \in C^\infty(I)$ and there exists an $M$ such that
 $$
 x \in N_\varepsilon(c) \implies \abs{f^{(n)}(x)} \leq M^n

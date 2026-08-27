@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Simultaneous Diagonalizability"}
+::: {.proposition}
 A set of **diagonalizable** operators $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
 
 The diagonalizability hypothesis is needed in the forward direction.

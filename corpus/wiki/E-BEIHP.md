@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$1/1+\sin^2$"}
+:::{.exercise}
 \[
 \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
 .\]

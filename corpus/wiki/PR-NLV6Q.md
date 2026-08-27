@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="$\Gamma$ is holomorphic on the right half-plane"}
+::: {.proposition}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_19-58-16.png)
 :::

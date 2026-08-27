@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Diameter"}
+::: {.definition}
 For a subset $A$ of a metric space $(X, d)$, the **diameter** of $A$ is defined as $\sup_{p, q\in A}d(p, q)$.
 :::

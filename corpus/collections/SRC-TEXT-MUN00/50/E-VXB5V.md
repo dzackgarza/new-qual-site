@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-VXB5V
 kind: exercise
 title: Discrete spaces have dimension zero
+subtitle: Munkres §50.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50.1"}
+::: {.exercise}
 
 Show that any discrete space has dimension 0.
 :::

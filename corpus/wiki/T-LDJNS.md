@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Fatou"}
+:::{.theorem}
 If $f_n$ is a sequence of nonnegative measurable functions, then
 \[
 \liminf_n \int f_n 

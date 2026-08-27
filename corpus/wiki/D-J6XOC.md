@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Path"}
+::: {.definition}
 A **path** in $X$ is a continuous map $\gamma: I \da [0,1] \to X$; it is a path *from* $\gamma(0)$ *to* $\gamma(1)$, and a **loop** iff $\gamma(0) = \gamma(1)$.
 When $\gamma(1) = \eta(0)$ the two paths concatenate:
 \[

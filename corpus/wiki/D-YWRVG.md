@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Essential supremum and infimum, essentially bounded"}
+::: {.definition}
 An **essential lower bound** $b$ on a function $f$ is any real number such that $S_{b} \da \ts{x\st f(x) < b } = f\inv(-\infty, b)$ has measure zero.
 The **essential infimum** is the supremum of all essential lower bounds, i.e. $\ess\inf f \da \sup_{b} \ts{b\st \mu S_b = 0}$.
 This is the greatest lower bound almost everywhere.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Projective Modules"}
+::: {.definition}
 A module $P$ is **projective** iff it satisfies any of the following conditions:
 
 - A universal property: for every surjective $N \mapsvia{g} M$ and $P \mapsvia{f} M$, the following lift exists:

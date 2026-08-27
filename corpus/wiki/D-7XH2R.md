@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Maximal Ideal"}
+::: {.definition}
 An ideal $\mfm$ is **maximal** iff whenever $I\normal R$ with $\mfm \subsetneq I$ a proper containment then $I = R$.
 :::

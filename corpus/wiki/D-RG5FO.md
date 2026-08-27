@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Gram Matrix"}
+::: {.definition}
 Following Artin, let $\inner{\wait}{\wait}$ be a bilinear form on a finite-dimensional real vector space $V$ and $\mathbf B = (v_1, \cdots, v_n)$ an ordered basis; nothing below uses $\RR$ rather than an arbitrary field.
 The **Gram matrix**, which Artin calls the *matrix of the form*, is
 \[

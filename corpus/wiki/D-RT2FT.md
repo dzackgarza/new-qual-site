@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Surjection"}
+::: {.definition}
 A map $\pi$ with a **right** inverse $f$ satisfying $$\pi \circ f = \id$$
 :::

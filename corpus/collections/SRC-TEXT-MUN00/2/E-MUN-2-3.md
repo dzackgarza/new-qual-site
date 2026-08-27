@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-2-3
 kind: exercise
 title: "Preimage and image for arbitrary unions and intersections"
+subtitle: Munkres §2.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §2.3"}
+::: {.exercise}
 
 Show that (b), (c), (f), and (g) of Exercise 2 hold for arbitrary unions and intersections.
 :::

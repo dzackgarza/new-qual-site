@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Disc to right half-plane"}
+:::{.proposition}
 \[
 F: \DD &\mapsto Q_{12} \da \ts{\Re(z) > 0} \\
 z &\mapsto {1+z \over 1-z} \\

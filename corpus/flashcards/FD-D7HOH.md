@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Convergence in Measure"}
+::: {.definition}
 $$
 \lim _{k \rightarrow \infty} m\left(\left\{x \in E|| f_{k}(x)-f(x) |>\alpha\right\}\right)=0
 .$$

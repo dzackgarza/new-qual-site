@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Isomorphism theorems"}
+:::{.proposition}
 \[
 M / \ker \phi &\cong \im \phi \\
 {A+B \over B} &\cong {A\over A \intersect B} \\

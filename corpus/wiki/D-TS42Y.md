@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Convolution"}
+::: {.definition}
 $$f * g(x)=\int f(x-y) g(y) d y .$$
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-V4TJA
 kind: exercise
 title: Five points in general position and K5 in space
+subtitle: Munkres §50.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50.4"}
+::: {.exercise}
 
 Show that the points $\mathbf{0}, \epsilon_1, \epsilon_2, \epsilon_3$, and $(1, 1, 1)$ are in general position in $\mathbb{R}^3$.
 Sketch the corresponding imbedding into $\mathbb{R}^3$ of the complete graph on five vertices.

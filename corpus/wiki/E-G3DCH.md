@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Orders of zeros"}
+::: {.exercise}
 Find the orders of zeros of the following functions:
 
 - $(e^z-1)^3$

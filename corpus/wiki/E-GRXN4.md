@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="True/false"}
+:::{.exercise}
 Prove that the following statements or true, or find a counterexample:
 
 - If $f,g$ have a pole at $a$, then $f+g$ has a pole at $a$.

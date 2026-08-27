@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Lipschitz implies uniformly continuous"}
+:::{.proposition}
 If $f$ is Lipschitz on $X$, then $f$ is uniformly continuous on $X$.
 
 Supposing that

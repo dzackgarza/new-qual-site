@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is Krull's intersection theorem?"}
+::: {.fact}
 For $ I{~\trianglelefteq~}R $ Noetherian with $ I \subseteq {J ({R}) } $,
 
 $$\bigcap_{n\geq 0} I^n = 0$$

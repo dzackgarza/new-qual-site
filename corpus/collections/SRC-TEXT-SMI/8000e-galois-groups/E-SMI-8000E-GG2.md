@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-GG2
 kind: exercise
 title: Constructing the field with 125 elements
+subtitle: Smith 8000e galois 2
 classification:
   areas:
   - algebra
@@ -12,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e galois 2"}
+::: {.exercise}
 Find an irreducible cubic polynomial mod 5, and hence construct a field with 125 elements.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="On subgroups"}
+::: {.exercise}
 \envlist
 
 - Show that the intersection of two subgroups is again a subgroup.

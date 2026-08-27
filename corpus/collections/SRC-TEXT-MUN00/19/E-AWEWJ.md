@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-AWEWJ
 kind: exercise
 title: An affine coordinate homeomorphism of R^omega
+subtitle: Munkres §19.8
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §19.8"}
+::: {.exercise}
 
 Given sequences $(a_1, a_2, \ldots)$ and $(b_1, b_2, \ldots)$ of real numbers with $a_i > 0$ for all $i$, define $h: \mathbb{R}^\omega \to \mathbb{R}^\omega$ by the equation
 

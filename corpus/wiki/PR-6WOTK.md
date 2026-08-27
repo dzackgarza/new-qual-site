@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Strict maximum principle, real version"}
+::: {.proposition}
 Let $u(z)$ be a real-valued harmonic function on a domain $D$ such that $u(z) \leq M$ for all $z \in D$.
 If $u\left(z_{0}\right)=M$ for some $z_{0} \in D$, then $u(z)=M$ for all $z \in D$.
 :::

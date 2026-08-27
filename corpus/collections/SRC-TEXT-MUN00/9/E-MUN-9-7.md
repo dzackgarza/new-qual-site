@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-7
 kind: exercise
 title: "Strict cardinality ordering and the continuum"
+subtitle: Munkres §9.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.7"}
+::: {.exercise}
 
 Let $A$ and $B$ be two nonempty sets.
 If there is an injection of $B$ into $A$, but no injection of $A$ into $B$, we say that $A$ has greater cardinality than $B$ .

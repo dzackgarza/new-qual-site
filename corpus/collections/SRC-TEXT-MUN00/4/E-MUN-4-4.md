@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-4
 kind: exercise
 title: Largest element of finite subsets of $\{1, \ldots, n\}$
+subtitle: Munkres §4.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.4"}
+::: {.exercise}
 
 (a) Prove by induction that given $n \in \mathbb{Z}_+$, every nonempty subset of $\{1, \ldots, n\}$ has a largest element.
 

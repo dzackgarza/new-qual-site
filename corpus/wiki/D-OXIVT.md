@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Field of fractions"}
+:::{.definition}
 For $R\in \CRing$ an integral domain, the **field of fractions** of $R$ can be constructed as 
 \[
 \ff(R) \da \qty{R \cross R\nonzero}/\sim && (a,s)\sim (b, t) \iff at-bs = 0_R

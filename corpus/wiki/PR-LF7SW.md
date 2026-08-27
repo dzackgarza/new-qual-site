@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Properties of Outer Measure"}
+::: {.proposition}
 \envlist
 
 1. Monotonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.

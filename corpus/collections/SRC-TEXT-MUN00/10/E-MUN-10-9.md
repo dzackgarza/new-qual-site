@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-9
 kind: exercise
 title: "Antidictionary order on sequences ending in $1$'s"
+subtitle: Munkres §10.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.9"}
+::: {.exercise}
 
 Consider the subset $A$ of $(\mathbb{Z}_{+})^{\omega}$ consisting of all infinite sequences of positive integers $\mathbf{x} = (x_{1}, x_{2}, \ldots)$ that end in an infinite string of 1's. Give $A$ the following order: $\mathbf{x} < \mathbf{y}$ if $x_{n} < y_{n}$ and $x_{i} = y_{i}$ for $i > n$ . We call this the "antidictionary order" on $A$ .
 

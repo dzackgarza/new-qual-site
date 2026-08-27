@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QZUV0
 kind: exercise
 title: The Stone-Cech compactification is maximal among compactifications
+subtitle: Munkres §38.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.4"}
+::: {.exercise}
 
 Let $Y$ be an arbitrary compactification of $X$; let $\beta(X)$ be the Stone-Čech compactification.
 Show there is a continuous surjective closed map $g: \beta(X) \to Y$ that equals the identity on $X$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Disc to upper half-plane, cross-ratio"}
+:::{.exercise}
 Find a conformal map $\HH \to \DD$ using cross-ratios.
 :::
 

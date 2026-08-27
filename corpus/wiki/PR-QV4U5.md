@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Inclusion-Exclusion"}
+:::{.proposition}
 \[  
 X = U\cup V \implies \chi(X) = \chi(U) + \chi(V) - \chi (U\cap V)
 .\]

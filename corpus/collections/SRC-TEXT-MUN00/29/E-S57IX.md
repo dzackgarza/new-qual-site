@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-S57IX
 kind: exercise
 title: Products of quotient maps with locally compact Hausdorff factors
+subtitle: Munkres §29.11
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29.11"}
+::: {.exercise}
 
 (a) Lemma.
 If $p: X \to Y$ is a quotient map and if $Z$ is a locally compact Hausdorff space, then the map

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-SY8
 kind: exercise
 title: Sylow subgroups of symmetric groups are abelian
+subtitle: Smith 8000e sylow 8
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e sylow 8"}
+::: {.exercise}
 (i) If $P$ is a Sylow subgroup of $S(2p)$, prove $P$ is abelian.
 
 (ii) Prove it for $p > 3$, and $P$ a Sylow $p$-subgroup of $S(3p)$.

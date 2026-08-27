@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Complete Measure"}
+::: {.definition}
 A measure whose domain includes all subsets of null sets.
 :::

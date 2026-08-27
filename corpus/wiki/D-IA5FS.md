@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The logarithmic derivative"}
+:::{.definition}
 The **logarithmic derivative** is defined as
 \[
 \del_{\log} f \da {f' \over f}

@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Toy contour"}
+::: {.definition}
 A closed Jordan curve that separates $\CC$ into an exterior and interior region is referred to as a **toy contour**.
 :::

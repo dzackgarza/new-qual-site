@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Limit definition of exponential function"}
+::: {.definition}
 $e^x = \lim_{n \to \infty} \qty{1 + {x\over n}}^n$
 :::

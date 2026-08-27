@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Dense subspaces of $L^2(I)$ "}
+::: {.proposition}
 The following are dense subspaces of $L^2([0, 1])$ and $L^1(\RR)$:
 
 - Bounded measurable functions with bounded support

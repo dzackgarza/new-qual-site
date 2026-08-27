@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Jordan's Lemma"}
+:::{.theorem}
 
 For $\alpha > 0$,
 define

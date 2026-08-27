@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Jacobson Radical"}
+:::{.definition}
 The **Jacobson radical** $\jacobsonrad{R}$ is the intersection of all maximal ideals, i.e.
 \[  
 \jacobsonrad{R} = \Intersect_{\mfm \in \mspec R} \mfm

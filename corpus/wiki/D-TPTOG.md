@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Mapping Path Space"}
+::: {.definition}
 For a map $f: X\to Y$, the **mapping path space** is
 \[
 E_f \da \ts{ (x, \gamma) \in X \cross Y^I \st \gamma(0) = f(x) }

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Parseval's Identity"}
+::: {.theorem}
 Equality in Bessel's inequality, obtained when $\theset{e_k}$ is a basis:
 $$
 \sum \abs{\inner{x}{e_k}}^2 = \norm{x}^2

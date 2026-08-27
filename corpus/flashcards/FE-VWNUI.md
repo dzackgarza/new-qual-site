@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.example title="An analytic function with convergence radius 1 which converges at every point on $S^1$"}
+::: {.example}
 $$
 \sum_{n=1}^\infty {z^n\over n^2}
 $$

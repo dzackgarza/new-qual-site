@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.5.3"}
+::: {.problem}
 Show that if $|K| = p^n$, then every element of $K$ has a unique $p$th root in $K$.
 :::

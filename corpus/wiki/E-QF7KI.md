@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Residues at infinity"}
+:::{.exercise}
 Use residues at infinity to evaluate
 \[
 \int_{|z|=1} \frac{1}{(z-2)(1+2 z)^{4}(1-3 z)^{7}} \dz

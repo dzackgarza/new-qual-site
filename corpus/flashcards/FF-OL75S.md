@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Burnside's Formula"}
+::: {.fact}
 The number of orbits is equal to the average number of fixed points: $$\abs{G} \abs{X/G} = \sum \abs{X^g}$$ where
 
 - $X/G$ is the set of orbits

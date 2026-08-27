@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: separable"}
+::: {.definition}
 Has a countable dense subset
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MW9PV
 kind: exercise
 title: Free ranks of complete and utilities graphs
+subtitle: Munkres §84.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §84.2"}
+::: {.exercise}
 
 What is the cardinality of a system of free generators for the fundamental group of the complete graph on $n$ vertices?
 of the utilities graph?

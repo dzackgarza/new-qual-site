@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Open Mapping Theorem"}
+::: {.theorem}
 If $f: \Omega \to \CC$ is holomorphic and not constant on $\Omega$, then $f$ is an open map.
 :::

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Semisimple"}
+::: {.definition}
 A matrix $A$ over $k$ is **semisimple** iff $A$ is diagonalizable over $k^\alg$, the algebraic closure.
 :::

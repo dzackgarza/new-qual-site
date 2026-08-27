@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Classification of Surfaces"}
+:::{.theorem}
 The set of surfaces under connect sum forms a monoid with the presentation
 \[  
 \gens{ \SS^2, \RP^2, \TT \suchthat \SS^2 = 0, 3\RP^2 = \RP^2 + \TT^2} = \ts{ \Sigma_{g, n} \st g, n \in \ZZ^{\geq 0} } 

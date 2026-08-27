@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="$G_x$"}
+::: {.definition}
 The Stabilizer subgroup: $G_x = \theset{g\in G \suchthat g.x = x} \leq G$.
 :::

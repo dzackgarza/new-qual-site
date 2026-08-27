@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Univalent"}
+::: {.definition}
 A function $f:\Omega\to \CC$ is **univalent** iff $f$ is holomorphic and injective.
 These are exactly the conformal maps of $\Omega$ to other domains.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-7
 kind: exercise
 title: "Expressing sets using union, intersection, and difference"
+subtitle: Munkres §1.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.7"}
+::: {.exercise}
 
 Given sets $A, B$, and $C$, express each of the following sets in terms of $A, B$, and $C$, using the symbols $\cup, \cap,$ and $-$ .
 

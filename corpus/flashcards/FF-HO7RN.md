@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Cauchy's Integral Formula for Derivatives"}
+::: {.fact}
 $$
 \left|f^{(n)}(0)\right| \leq \frac{n !}{r^{n}} \sup _{|z|=r}|f(z)|
 .$$

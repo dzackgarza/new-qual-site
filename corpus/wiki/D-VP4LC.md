@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Kronecker Pairing"}
+::: {.definition}
 Evaluating a cochain on a chain, $\inner{\varphi}{\alpha} \da \varphi(\alpha)$, is compatible with the differentials, since $\inner{\delta\varphi}{\alpha} = \inner{\varphi}{\del\alpha}$.
 It therefore descends to a pairing on (co)homology,
 \[

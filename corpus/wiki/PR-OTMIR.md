@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Upper half-disc to upper half-plane"}
+:::{.proposition}
 \[
 F: \DD \intersect \HH &\to \HH \\
 z & \mapsto -{1\over 2}\qty{ z + z\inv }

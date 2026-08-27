@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Euler Characteristics of Surfaces: $S^n, \Sigma_g, \RP^2, K$."}
+::: {.fact}
 - $\chi(S^1) = 0$
 
 - $\chi(S^2) = 2$

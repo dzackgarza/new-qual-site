@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-M23QZ
 kind: exercise
 title: Uniqueness of the completion
+subtitle: Munkres §43.10
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §43.10"}
+::: {.exercise}
 
 Theorem (Uniqueness of the completion).
 Let $h: X \to Y$ and $h': X \to Y'$ be isometric imbeddings of the metric space $(X, d)$ in the complete metric spaces $(Y, D)$ and $(Y', D')$, respectively.

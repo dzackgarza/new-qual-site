@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Relating hyperbolic functions to usual ones: $ \cos(z) = \cosh(?)\\ .$"}
+::: {.fact}
 $$
 \cos(z) = \cosh(iz)\\
 .$$

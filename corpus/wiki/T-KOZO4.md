@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Riemann Extension Theorem"}
+::: {.theorem}
 A singularity of a holomorphic function is removable if and only if the function is bounded in some punctured neighborhood of the singular point.
 :::

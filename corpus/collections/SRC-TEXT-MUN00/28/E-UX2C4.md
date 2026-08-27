@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-UX2C4
 kind: exercise
 title: Behavior of limit point compactness under images, closed subsets, and Hausdorff ambient spaces
+subtitle: Munkres §28.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28.3"}
+::: {.exercise}
 
 Let $X$ be limit point compact.
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Nilradical is intersection of primes"}
+::: {.problem}
 The nilradical is the intersection of all prime ideals, i.e.
 \[
 \nilrad{R} = \Intersect_{\mathfrak{p} \in \spec(R)} \mathfrak{p}

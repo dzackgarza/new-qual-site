@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="More juggling"}
+:::{.exercise}
 Suppose $f:\DD\to \DD$ with $f(0) = 0$ and that there exists an $r\in (0, 1)$ with $f(r) = f(-r) = 0$.
 Show that 
 \[

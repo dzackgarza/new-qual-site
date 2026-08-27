@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Index of a subgroup"}
+::: {.definition}
 The **index** $[G: H]$ of a subgroup $H\leq G$ is the number of left (or right) cosets $gH$.
 :::

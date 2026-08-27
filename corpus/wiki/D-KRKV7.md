@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="The Quaternion Group"}
+::: {.definition}
 The **Quaternion group** of order 8 is given by
 \[
 Q &= \gens{x,y,z \suchthat x^2 = y^2 = z^2 = xyz = -1} \\

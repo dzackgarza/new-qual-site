@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-XY48
 kind: exercise
 title: 'Inverse of a $4 \times 4$ upper-triangular matrix'
+subtitle: Hoffman and Kunze 1.6.5
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.5"}
+::: {.exercise}
 Discover whether
 
 $$

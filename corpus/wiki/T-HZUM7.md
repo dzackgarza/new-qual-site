@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Freudenthal Suspension"}
+::: {.theorem}
 The suspension map
 \[
 \pi_i(S^n) \to \pi_{i+1}(S^{n+1})

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Expanding Laurent series in different regions"}
+:::{.exercise}
 Expand $f(z) = {1\over z(z-1)}$ in both
 
 - $\abs{z} < 1$

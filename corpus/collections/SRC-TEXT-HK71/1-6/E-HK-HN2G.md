@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-HN2G
 kind: exercise
 title: 'Determinant criterion for $2 \times 2$ invertibility via row operations'
+subtitle: Hoffman and Kunze 1.6.8
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.8"}
+::: {.exercise}
 Let
 
 $$

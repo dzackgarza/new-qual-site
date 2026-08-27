@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Direct Limit"}
+::: {.definition}
 For a directed system $\ts{A_\alpha}$ with maps $f_{\alpha\beta}: A_\alpha \to A_\beta$ whenever $\alpha \leq \beta$, the **direct limit** is
 \[
 \varinjlim_\alpha A_\alpha \da \qty{ \Disjoint_\alpha A_\alpha } / \qty{ a \sim f_{\alpha\beta}(a) }

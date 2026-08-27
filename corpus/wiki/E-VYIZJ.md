@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Fixed points: multiple"}
+::: {.exercise}
 Show that the only holomorphic map $f:\DD\to \DD$ two distinct fixed points $a\neq b$ is the identity.
 :::
 

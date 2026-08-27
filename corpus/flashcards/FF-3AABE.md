@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is the reverse triangle inequality?"}
+::: {.fact}
 $${\left\lvert {\, {\left\lVert {x_{}} \right\rVert} - {\left\lVert {y} \right\rVert} \,} \right\rvert} \leq {\left\lVert {x-y} \right\rVert}$$
 :::

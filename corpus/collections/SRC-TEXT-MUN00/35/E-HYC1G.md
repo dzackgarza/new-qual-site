@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HYC1G
 kind: exercise
 title: Topology coherent with an increasing sequence of closed subspaces
+subtitle: Munkres §35.9
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §35.9"}
+::: {.exercise}
 
 Let $X_1 \subset X_2 \subset \cdots$ be a sequence of spaces, where $X_i$ is a closed subspace of $X_{i+1}$ for each $i$.
 Let $X$ be the union of the $X_i$; let us topologize $X$ by declaring a set $U$ to be open in $X$ if $U \cap X_i$ is open in $X_i$ for each $i$.

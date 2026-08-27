@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Existence of complex log"}
+::: {.proposition}
 Suppose $\Omega$ is a simply-connected region such that $1\in \Omega, 0\not\in\Omega$.
 Then there exists a branch of $F(z) \da \Log(z)$ such that
 

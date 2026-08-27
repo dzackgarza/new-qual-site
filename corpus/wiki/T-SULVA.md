@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Hurwitz 2"}
+::: {.theorem}
 If $\ts{f_k}$ are univalent functions on $\Omega$ converging normally to $f$, then either
 
 - $f$ is univalent, or

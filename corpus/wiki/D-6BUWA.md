@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Singular Homology"}
+::: {.definition}
 A **singular $n\dash$simplex** in $X$ is a map $\sigma: \Delta^n \to X$, and $C_n(X)$ is the free abelian group on the singular $n\dash$simplices.
 The boundary map is
 \[

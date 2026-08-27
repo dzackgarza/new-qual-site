@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-TZ1IN
 kind: exercise
 title: Complete normality characterized by separated sets
+subtitle: Munkres §32.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §32.6"}
+::: {.exercise}
 
 A space $X$ is said to be completely normal if every subspace of $X$ is normal.
 Show that $X$ is completely normal if and only if for every pair $A, B$ of separated sets in $X$ (that is, sets such that $\overline{A} \cap B = \varnothing$ and $A \cap \overline{B} = \varnothing$), there exist disjoint open sets containing them.

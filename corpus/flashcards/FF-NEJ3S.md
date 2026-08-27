@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$H_* \mathbb{CP}^2$"}
+::: {.fact}
 $$[\mathbb{Z}, 0,                 \mathbb{Z},  0,      \mathbb{Z},  0\rightarrow  ]$$
 :::

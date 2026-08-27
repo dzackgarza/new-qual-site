@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Dimension vanishing for homology of manifolds"}
+::: {.proposition}
 If $M^n$ is a closed and connected $n\dash$manifold, then $H^{>n} M^n = 0$.
 
 ::: {.remark}

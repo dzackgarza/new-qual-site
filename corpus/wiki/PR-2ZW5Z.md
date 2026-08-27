@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Properties of the norm"}
+::: {.proposition}
 Let $K$ be a number field with ring of integers $\OO_K$.
 The norm is $N: K \to \QQ$, and it restricts to $N: \OO_K \to \ZZ$.
 

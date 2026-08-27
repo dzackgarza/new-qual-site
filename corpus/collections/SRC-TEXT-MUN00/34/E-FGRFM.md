@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-FGRFM
 kind: exercise
 title: Metrizability of the one-point compactification
+subtitle: Munkres §34.5
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §34.5"}
+::: {.exercise}
 
 Let $X$ be a locally compact Hausdorff space.
 Let $Y$ be the one-point compactification of $X$.

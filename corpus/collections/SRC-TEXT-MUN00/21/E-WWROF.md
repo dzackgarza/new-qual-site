@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-WWROF
 kind: exercise
 title: Closed sets via the closed-set formulation of continuity
+subtitle: Munkres §21.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.10"}
+::: {.exercise}
 
 Using the closed set formulation of continuity (Theorem 18.1), show that the following are closed subsets of $\mathbb{R}^2$:
 

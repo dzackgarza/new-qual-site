@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$H_* \mathbb{RP}^3$"}
+::: {.fact}
 $$[\mathbb{Z}, \mathbb{Z}_2,             0,    \mathbb{Z},      0,    0\rightarrow  ]$$
 :::

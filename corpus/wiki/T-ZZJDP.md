@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Riemann's removable singularity theorem"}
+::: {.theorem}
 Suppose $f$ is holomorphic on $\Omega\sm\ts{z_0}$.
 TFAE:
 

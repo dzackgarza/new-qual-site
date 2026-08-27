@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZPC0X
 kind: exercise
 title: Interchanging limits under uniform convergence
+subtitle: Munkres §21.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.8"}
+::: {.exercise}
 
 Let $X$ be a topological space and let $Y$ be a metric space.
 Let $f_n: X \to Y$ be a sequence of continuous functions.

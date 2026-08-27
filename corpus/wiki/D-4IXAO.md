@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Orthonormal sequence "}
+::: {.definition}
 A countable collection of elements \( \ts{ u_i } \)  is **orthonormal** if and only if
 
 1. \( \inner{u_i}{u_j} = 0 \) for all \( j \neq k \) and

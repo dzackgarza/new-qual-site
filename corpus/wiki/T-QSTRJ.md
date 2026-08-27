@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Krull"}
+::: {.theorem}
 Every ring has a proper maximal ideal, and any proper ideal is contained in a maximal ideal.
 :::

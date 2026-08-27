@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Spring 2021, 9"}
+::: {.problem}
 Prove that for every continuous map $f: S^{2n} \to S^{2n}$ there is a point $x\in S^{2n}$ such that either $f(x) = x$ or $f(x) = -x$.
 
 > You may use standard facts about degrees of maps of spheres, including that the antipodal map on $S^{2n}$ has degree $d=-1$.

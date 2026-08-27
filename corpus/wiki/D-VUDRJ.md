@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Relative homotopy groups"}
+::: {.definition}
 For $x_0 \in A \subseteq X$ and $n\geq 1$,
 \[
 \pi_n(X, A, x_0) \da \ts{ f: (D^n, S^{n-1}, s_0) \to (X, A, x_0) } / \homotopic

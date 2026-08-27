@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-RWKRJ
 kind: exercise
 title: Continuous maps with continuous sections are quotient maps
+subtitle: Munkres §22.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22.2"}
+::: {.exercise}
 
 (a) Let $p: X \to Y$ be a continuous map.
 Show that if there is a continuous map $f: Y \to X$ such that $p \circ f$ equals the identity map of $Y$, then $p$ is a quotient map.

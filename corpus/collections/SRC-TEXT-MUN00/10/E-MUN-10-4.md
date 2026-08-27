@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-10-4
 kind: exercise
 title: Characterizing non-well-ordered sets via $\mathbb{Z}_{-}$
+subtitle: Munkres §10.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §10.4"}
+::: {.exercise}
 
 (a) Let $\mathbb{Z}_{-}$ denote the set of negative integers in the usual order.
 Show that a simply ordered set $A$ fails to be well-ordered if and only if it contains a subset having the same order type as $\mathbb{Z}_{-}$ .

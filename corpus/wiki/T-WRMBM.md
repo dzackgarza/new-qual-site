@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Sylow 1"}
+:::{.theorem}
 \[
 \forall p^n \text{ dividing } \abs{G} \text{, there exists a subgroup of size } p^n
 .\]

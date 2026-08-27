@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Entire functions with poles at infinity"}
+::: {.exercise}
 Characterize all entire functions with a pole of order $m$ at $\infty$.
 :::
 

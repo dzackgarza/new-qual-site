@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cup Product"}
+::: {.definition}
 A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
 \[
 H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\

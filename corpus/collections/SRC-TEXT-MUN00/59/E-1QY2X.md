@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1QY2X
 kind: exercise
 title: A flawed proof that the sphere is simply connected
+subtitle: Munkres §59.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §59.2"}
+::: {.exercise}
 
 Criticize the following "proof" that $S^2$ is simply connected.
 Let $f$ be a loop in $S^2$ based at $x_0$.

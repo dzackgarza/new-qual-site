@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Continuous on compact $\implies$ uniformly continuous"}
+::: {.proposition}
 A continuous function on a compact set is uniformly continuous.
 :::

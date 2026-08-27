@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Homotopy"}
+::: {.definition}
 Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps.
 Then a **homotopy** from $f$ to $g$ is a continuous function
 

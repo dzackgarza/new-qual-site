@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Closure of a set"}
+:::{.definition}
 For $U \subseteq X$, the **closure of $U$ in $X$** is given by 
 \[
 \cl_X(U) = \Intersect_{\substack{ B\supseteq U \\ \text{ closed} }} B

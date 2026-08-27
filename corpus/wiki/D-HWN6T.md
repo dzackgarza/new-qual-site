@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Quasi-isomorphism"}
+::: {.definition}
 A chain map $f: C_* \to D_*$ such that the induced maps
 \[
 H_n(f): H_n(C_*) \mapsvia{\sim} H_n(D_*)

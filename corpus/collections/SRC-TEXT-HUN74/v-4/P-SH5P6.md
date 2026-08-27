@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.4.1"}
+::: {.problem}
 Suppose that $f\in K[x]$ splits in$F$ as $$f = \prod_{i=1}^k (x-u_i)^{n_i}$$ with the $u_i$ distinct and each $n_i \geq 1$.
 Let $$g(x) = \prod_{i=1}^k (x-u_i) = \sum_{i=1}^k v_i x^i$$
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Equivalent conditions for splitting SESs"}
+::: {.proposition}
 Let $\xi: 0 \to A \mapsvia{d_1} B \mapsvia{d_2}  C \to 0$ be a SES, then TFAE
 
 - $\xi$ admits a right-splitting $s: C\to B$.

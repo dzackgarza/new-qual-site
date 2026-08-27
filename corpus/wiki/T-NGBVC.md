@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Finite Extensions are Algebraic"}
+::: {.theorem}
 Every finite extension is algebraic.
 :::

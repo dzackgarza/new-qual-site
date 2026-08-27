@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Laurent expansion on an annulus"}
+::: {.theorem}
 Let $f$ be holomorphic on the annulus
 \[
 A \da \ts{ z \in \CC \st r < \abs{z - z_0} < R }, \qquad 0 \leq r < R \leq \infty

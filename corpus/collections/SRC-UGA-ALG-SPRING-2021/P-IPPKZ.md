@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Spring 2021"}
+:::{.problem}
 Suppose that $f(x) \in (\ZZ/n\ZZ)[x]$ is a zero divisor.
 Show that there is a nonzero $a\in \ZZ/n\ZZ$ with $af(x) = 0$.
 :::

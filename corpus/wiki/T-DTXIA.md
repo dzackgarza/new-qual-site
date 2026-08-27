@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Fourier Inversion"}
+:::{.theorem}
 \[
 f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
 .\]

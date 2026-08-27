@@ -3,6 +3,7 @@ schema: qual/card@1
 id: P-DHIWH
 kind: problem
 title: The unit interval is compact
+subtitle: Fall 2005
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Fall 2005"}
+::: {.problem}
 Prove that the unit interval $I$ is compact.
 Be sure to explicitly state any properties of $\RR$ that you use.
 :::

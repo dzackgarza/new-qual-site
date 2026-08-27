@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 4.1.5"}
+::: {.problem}
 If $R$ has an identity, then a nonzero unitary $R\dash$module is **simple** if its only submodules are $0$ and $A$.
 
 1. Show that every simple $R-$module is cyclic.

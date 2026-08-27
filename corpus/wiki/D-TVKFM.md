@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Topological Notions"}
+::: {.definition}
 Let $X$ be a metric space and $A$ a subset.
 Let $A'$ denote the limit points of $A$, and $\bar{A} \da A\union A'$ to be its closure.
 

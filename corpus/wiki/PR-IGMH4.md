@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Riemann-Lebesgue: Fourier transforms have small tails."}
+:::{.proposition}
 \[
 f\in L^1 \implies
 \hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty

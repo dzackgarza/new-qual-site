@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Relative Poincaré Duality for manifolds"}
+:::{.proposition}
 If $M^n$ is a compact orientable manifold with boundary then 
 \[
 H_k(M^n; \ZZ) \cong H^{n-k}(M^n, \del M^n; \ZZ)

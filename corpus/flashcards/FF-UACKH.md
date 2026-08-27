@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Cyclotomic Polynomial: $\Phi_{2p}(x)$."}
+::: {.fact}
 $$\Phi_{2p}(x) = 1 - x + x^2 - \cdots + x^{p-1}.$$
 :::

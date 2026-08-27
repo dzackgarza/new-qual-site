@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Invert $1-z$, one coefficient at a time"}
+:::{.exercise}
 Use this formulation to show that if $A(z)= 1-z$ then $1/A(z) = \sum z^k$.
 :::
 

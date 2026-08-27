@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="General Linear Group"}
+:::{.definition}
 \[
 \GL_n(\RR) = \ts{ A \in M_n(\RR) \st \det A \neq 0 } 
 .\]

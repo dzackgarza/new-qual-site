@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-0EZ4U
 kind: exercise
 title: Seifert-van Kampen with trivial intersection homomorphism
+subtitle: Munkres §70.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §70.1"}
+::: {.exercise}
 
 Suppose that the homomorphism $i_*$ induced by inclusion $i: U \cap V \to X$ is trivial.
 

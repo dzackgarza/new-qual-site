@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-3CFLD
 kind: exercise
 title: A full-rank proper subgroup of a free abelian group
+subtitle: Munkres §67.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §67.5"}
+::: {.exercise}
 
 Give an example of a free abelian group $G$ of rank $n$ having a subgroup $H$ of rank $n$ for which $H \neq G$.
 :::

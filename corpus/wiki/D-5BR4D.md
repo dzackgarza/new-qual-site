@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Nondegenerate Bilinear Form"}
+::: {.definition}
 Work with a symmetric form on a real vector space $V$, or a Hermitian form on a complex one, and write $\inner{\wait}{\wait}$ for the form.
 A vector $v$ is a **null vector** iff $\inner v w = 0$ for every $w\in V$; the null vectors form the **nullspace** of the form.
 The form is **nondegenerate** iff its nullspace is $\ts 0$, i.e. iff for every $v \neq 0$ there is some $v'$ with $\inner{v}{v'} \neq 0$.

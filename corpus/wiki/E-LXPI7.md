@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Constructing functions with specified singularities"}
+:::{.exercise}
 Determine a function with
 
 - An essential singularity at $z=1$

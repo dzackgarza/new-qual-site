@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Fundamental theorem of covering spaces, Hatcher 1.39"}
+:::{.theorem}
 For $\tilde X \mapsvia{p} X$ a covering space with
 
 - $\tilde X$ path-connected,

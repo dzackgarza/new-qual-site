@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Characteristic polynomial"}
+::: {.definition}
 $$  
 p_A(x) = \mathrm{det}(xI - A)
 .$$

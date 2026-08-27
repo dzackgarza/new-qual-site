@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Boundary"}
+::: {.definition}
 The **boundary** of a subset $A\subseteq X$ is defined as $\bd A \da \cl_X(A) \sm \interior{A}$.
 Equivalently, $\bd A$ is the set of points $p\in X$ such that every neighborhood of $p$ intersects both $A$ and $X\sm A$.
 :::

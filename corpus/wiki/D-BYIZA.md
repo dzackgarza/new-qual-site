@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Ext Group"}
+::: {.definition}
 For $A$ an abelian group and $G$ a coefficient group, choose a free resolution
 \[
 \cdots \to F_2 \to F_1 \to F_0 \to A \to 0

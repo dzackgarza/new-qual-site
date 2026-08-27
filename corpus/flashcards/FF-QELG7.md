@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is Krull's theorem?"}
+::: {.fact}
 Every nonzero ring has a maximal ideal.
 
 Stronger version: every proper ideal is contained in a maximal ideal (can apply to $ I=\left\langle{0}\right\rangle $).

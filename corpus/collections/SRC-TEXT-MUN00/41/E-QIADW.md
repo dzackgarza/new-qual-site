@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QIADW
 kind: exercise
 title: Locally compact connected topological groups are paracompact
+subtitle: Munkres §41.9
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §41.9"}
+::: {.exercise}
 
 Let $G$ be a locally compact, connected topological group.
 Show that $G$ is paracompact.

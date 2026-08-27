@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-6-5
 kind: exercise
 title: "Finiteness of Cartesian products"
+subtitle: Munkres §6.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §6.5"}
+::: {.exercise}
 
 If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::

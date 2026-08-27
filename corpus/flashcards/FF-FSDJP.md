@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What does small tails mean? Absolute continuity?"}
+::: {.fact}
 Let $ f\in L^1 $ and $ \varepsilon> 0 $.
 
 **Small Tails**: there exists an $ N $ such that $ \int_{B_N^c} f < \varepsilon $.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XIHWT
 kind: exercise
 title: Distance to a set in a metric space
+subtitle: Munkres §27.2
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §27.2"}
+::: {.exercise}
 
 Let $X$ be a metric space with metric $d$; let $A \subset X$ be nonempty.
 

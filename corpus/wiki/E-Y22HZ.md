@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Uniform limit of holomorphic derivatives is the derivative"}
+::: {.exercise}
 Show that if $f_k \to f$ uniformly with $f$ holomorphic then every $n$th derivative satisfies $f_k^{(n)}\to f^{(n)}$ uniformly.
 :::
 

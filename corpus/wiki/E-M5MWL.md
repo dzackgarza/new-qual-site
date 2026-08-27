@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Primitive in the complement of a branch cut"}
+:::{.exercise}
 Compute the following integrals:
 \[
 \int_{\abs{z-1} = 1} {1\over z^2-1} \dz \\

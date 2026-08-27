@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Cauchy integral formula for coefficients"}
+:::{.exercise}
 Show that if $f(z) \sum_{k\in \ZZ} c_k (z-z_0)^k$, then 
 \[
 c_k = {1\over 2\pi i}\int_\gamma {f(z) \over (z-z_0)^{n+1}}\dz

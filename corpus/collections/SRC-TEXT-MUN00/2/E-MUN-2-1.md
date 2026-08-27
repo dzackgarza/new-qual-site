@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-2-1
 kind: exercise
 title: "Preimage and image under injective and surjective maps"
+subtitle: Munkres §2.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §2.1"}
+::: {.exercise}
 
 Let $f: A \to B$ . Let $A_0 \subset A$ and $B_0 \subset B$ .
 

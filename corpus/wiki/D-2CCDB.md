@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Equicontinuity"}
+:::{.definition}
 If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\mathcal F$ *equicontinuous* at $x$ iff
 
 \[

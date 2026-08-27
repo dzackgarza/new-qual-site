@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Tonelli"}
+::: {.theorem}
 Let $f(x, y)$ be non-negative and measurable on $\RR^{n}\cross \RR^k$.
 Then for almost every $y\in \RR^k$,
 

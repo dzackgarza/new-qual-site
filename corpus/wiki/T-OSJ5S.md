@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Jordan-Holder"}
+::: {.theorem}
 Any two composition series of a group have the same length and isomorphic composition factors (up to permutation).
 :::

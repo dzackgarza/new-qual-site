@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-Q2T5
 kind: exercise
 title: "Solving a homogeneous system by row reduction"
+subtitle: Hoffman and Kunze 1.4.1
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.4.1"}
+::: {.exercise}
 Find all solutions to the following system of equations by row-reducing the coefficient matrix:
 
 $$

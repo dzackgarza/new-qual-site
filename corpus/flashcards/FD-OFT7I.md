@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Measurable Function"}
+::: {.definition}
 $f:\RR \to \bar \RR$ is Lebesgue/Borel measurable iff
 $$
 \{x \in E \mid f(x)>a\}=f^{-1}((a, \infty]) \in \mathcal{M}_L, \mathcal{M}_B

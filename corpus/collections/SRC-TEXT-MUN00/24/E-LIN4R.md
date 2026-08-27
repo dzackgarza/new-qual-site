@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LIN4R
 kind: exercise
 title: Linear continua in the dictionary order
+subtitle: Munkres §24.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.5"}
+::: {.exercise}
 
 Consider the following sets in the dictionary order.
 Which are linear continua?

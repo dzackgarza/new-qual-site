@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.corollary title="Inseparable iff polynomial in characteristic powers"}
+::: {.corollary}
 If $f\in k[x]^{\irr}$ and $p\da \ch k > 0$, then $f$ inseparable $\iff f(x) = q(x^{p^n})$ for some unique $n$.
 :::

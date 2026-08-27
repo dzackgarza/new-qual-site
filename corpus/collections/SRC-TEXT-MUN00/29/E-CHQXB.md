@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CHQXB
 kind: exercise
 title: Closure points detected by convergent nets
+subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §29 Supplementary"}
+::: {.exercise}
 
 Theorem.
 Let $A \subset X$.

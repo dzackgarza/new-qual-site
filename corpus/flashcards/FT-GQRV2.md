@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Inclusions among $L^p$ spaces."}
+::: {.theorem}
 $$\begin{align*}
 m(X) = \infty \implies
 &\text{No inclusions (use $p\dash$test)} \\

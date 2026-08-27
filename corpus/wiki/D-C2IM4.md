@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Nilradical"}
+:::{.definition}
 The **nilradical** of $R \in \CRing$ is
 \[
 \nilrad{R} \definedas \theset{x\in R \suchthat x \text{ is nilpotent}}

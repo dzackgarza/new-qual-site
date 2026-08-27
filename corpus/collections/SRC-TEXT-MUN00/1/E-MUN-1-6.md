@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-6
 kind: exercise
 title: "Contrapositives of quantified subset statements"
+subtitle: Munkres §1.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.6"}
+::: {.exercise}
 
 Write the contrapositive of each of the statements of Exercise 5.
 :::

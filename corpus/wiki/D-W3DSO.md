@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Discriminant"}
+:::{.definition}
 For $f = \sum a_k x^k$ monic,
 \[
 \Delta_f = \prod_{i < j} (r_i - r_j)^2

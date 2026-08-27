@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Integrals distribute over disjoint sets"}
+:::{.proposition}
 \[
 X \subseteq A \disjoint B \implies \int_X f &\leq \int_A f + \int_B f\\
 X = A \disjoint B \implies \int_X f &= \int_A f + \int_B f

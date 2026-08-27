@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Exact Sequences"}
+::: {.definition}
 A sequence of \(R\dash\)module morphisms
 \[
 0 \mapsvia{d_1} A \mapsvia{d_2} B \mapsvia{d_3} C \to 0

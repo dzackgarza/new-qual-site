@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-Q5WSL
 kind: exercise
 title: Examples of topological groups
+subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §22 Supplementary"}
+::: {.exercise}
 
 Show that the following are topological groups:
 

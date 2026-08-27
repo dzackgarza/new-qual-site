@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Pushout"}
+::: {.definition}
 For maps $f: Z\to X$ and $g: Z\to Y$, the **pushout** is
 \[
 X \disjoint_Z Y \da \qty{X \disjoint Y}/\qty{f(z)\sim g(z) \st z\in Z}

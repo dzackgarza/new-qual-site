@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QOXG5
 kind: exercise
 title: Countable compactness equals limit point compactness for T1 spaces
+subtitle: Munkres §28.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28.4"}
+::: {.exercise}
 
 A space $X$ is said to be countably compact if every countable open covering of $X$ contains a finite subcollection that covers $X$.
 Show that for a $T_1$ space $X$, countable compactness is equivalent to limit point compactness.

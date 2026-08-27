@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-MT6
 kind: exercise
 title: Characteristic polynomial, minimal polynomial, and Jordan form of a five-by-five matrix
+subtitle: Smith 8000 fall 2006 midterm 6
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000 fall 2006 midterm 6"}
+::: {.exercise}
 (a) Compute both the characteristic and the minimal polynomials, and also the Jordan form $J$, of this matrix:
 
 $$

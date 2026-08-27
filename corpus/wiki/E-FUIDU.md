@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Using the estimates"}
+:::{.exercise}
 Does there exist a map $f: \DD\to \DD$ with
 
 - $f\qty{1\over 2} = {3\over 4}$

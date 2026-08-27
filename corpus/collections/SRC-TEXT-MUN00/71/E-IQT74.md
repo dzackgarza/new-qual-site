@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-IQT74
 kind: exercise
 title: Hausdorffness of wedges of circles
+subtitle: Munkres §71.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §71.1"}
+::: {.exercise}
 
 Let $X$ be a space that is the union of subspaces $S_1, \ldots, S_n$, each of which is homeomorphic to the unit circle.
 Assume there is a point $p$ of $X$ such that $S_i \cap S_j = \ts{p}$ for $i \neq j$.

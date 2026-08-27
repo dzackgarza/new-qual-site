@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Exact Functor"}
+:::{.definition}
 A functor $T$ is *right exact* if a short exact sequence 
 
 \[0 \to A \to B \to C \to 0

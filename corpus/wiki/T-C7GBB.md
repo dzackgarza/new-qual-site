@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Zeros of derivative $f'$ lie in convex hull of zeros of $f$"}
+::: {.theorem}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-14_17-23-35.png)
 :::

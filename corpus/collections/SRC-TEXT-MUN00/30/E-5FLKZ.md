@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-5FLKZ
 kind: exercise
 title: Second countable spaces are first countable
+subtitle: Munkres §30
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §30"}
+::: {.exercise}
 Show that every second countable space is first countable.
 :::
 

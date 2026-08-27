@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="First and Second Category"}
+::: {.definition}
 - A subset is *first category* iff it is countable union of nowhere dense sets.
 
 - A subset is *second category* otherwise.

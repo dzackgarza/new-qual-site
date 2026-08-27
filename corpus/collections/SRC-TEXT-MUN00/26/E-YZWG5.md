@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YZWG5
 kind: exercise
 title: Separating disjoint compact sets in a Hausdorff space
+subtitle: Munkres §26.5
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §26.5"}
+::: {.exercise}
 
 Let $A$ and $B$ be disjoint compact subspaces of the Hausdorff space $X$.
 Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $B$, respectively.

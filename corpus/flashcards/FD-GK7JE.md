@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Conformal Map"}
+::: {.definition}
 A holomorphic map with nowhere vanishing derivative (locally injective).
 :::

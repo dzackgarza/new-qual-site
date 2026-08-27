@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Cyclotomic Polynomials"}
+:::{.definition}
 Let $\zeta_n = e^{2\pi i/n}$, then the **$n$th cyclotomic polynomial** is given by
 $$
 \Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right) \in \ZZ[x]

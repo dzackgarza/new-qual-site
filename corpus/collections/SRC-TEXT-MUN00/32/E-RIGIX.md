@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-RIGIX
 kind: exercise
 title: Which spaces are completely normal
+subtitle: Munkres §32.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §32.7"}
+::: {.exercise}
 
 Which of the following spaces are completely normal?
 Justify your answers.

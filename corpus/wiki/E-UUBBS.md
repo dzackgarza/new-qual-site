@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Lune between circles"}
+:::{.exercise}
 
 Find a conformal map $L\to \DD$ where
 \[

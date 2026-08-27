@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Modulus of $e^z$"}
+:::{.exercise}
 Show that $\abs{e^z} = e^{\Re(z)}$.
 
 :::

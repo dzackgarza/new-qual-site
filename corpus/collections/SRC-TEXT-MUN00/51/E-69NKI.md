@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-69NKI
 kind: exercise
 title: Homotopy of composites
+subtitle: Munkres §51.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §51.1"}
+::: {.exercise}
 
 Show that if $h, h': X \to Y$ are homotopic and $k, k': Y \to Z$ are homotopic, then $k \circ h$ and $k' \circ h'$ are homotopic.
 :::

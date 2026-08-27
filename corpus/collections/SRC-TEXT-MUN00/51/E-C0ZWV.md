@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-C0ZWV
 kind: exercise
 title: Homotopy classes into an interval and out of a path-connected space
+subtitle: Munkres §51.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §51.2"}
+::: {.exercise}
 
 Given spaces $X$ and $Y$, let $[X, Y]$ denote the set of homotopy classes of maps of $X$ into $Y$.
 

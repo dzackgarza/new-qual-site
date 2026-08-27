@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Characterizations of Diagonalizability"}
+::: {.theorem}
 $M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into **distinct** linear factors over $\FF$.
 
 Splitting alone is not enough: $\begin{bmatrix} 1 & 1 \\ 0 & 1\end{bmatrix}$ has $\min_M(x) = (x-1)^2$, whose only root lies in $\FF$, and it is not diagonalizable.

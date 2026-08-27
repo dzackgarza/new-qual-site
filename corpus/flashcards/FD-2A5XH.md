@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: integral domain."}
+::: {.definition}
 A nonzero commutative ring with no nonzero zero divisors.
 :::

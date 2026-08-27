@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: torsionfree"}
+::: {.definition}
 $ \tor(M) = \theset{0} $
 :::

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Dedekind Domains"}
+::: {.definition}
 A **Dedekind domain** is an integral domain for which the monoid $\Id(R)$ of nonzero ideals of $R$ satisfies unique factorization: every ideal can be decomposed uniquely into a product of prime ideals.
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Half-discs to half strips"}
+:::{.proposition}
 \[
 F: (-{\pi\over 2}, {\pi \over 2}) \cross \RR^{>0} &\to \DD \intersect \HH \\
 z &\mapsto e^{iz} \\

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simply Connected"}
+::: {.definition}
 A space $X$ is **simply connected** if and only if $X$ is path-connected and every loop \( \gamma : S^1 \mapsvia{} X \) can be contracted to a point.
 
 Equivalently, there exists a lift \( \hat \gamma : D^2 \mapsvia{} X \) such that \( \ro{\hat \gamma}{\bd D^2} = \gamma  \).

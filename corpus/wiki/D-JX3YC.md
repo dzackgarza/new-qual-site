@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Euler's Totient Function"}
+:::{.definition}
 \[
 \phi(n) \da \size \ts{ k\leq n \st \gcd(k ,n ) = 1}
 .\]

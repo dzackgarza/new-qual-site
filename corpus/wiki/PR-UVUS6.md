@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="STFGMPID"}
+::: {.proposition}
 Let $M$ be a finitely generated modules over a PID $R$.
 Then there is an **invariant factor** decomposition
 

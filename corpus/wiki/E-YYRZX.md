@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$e^{x/2} / 1+e^x,$ replication"}
+:::{.exercise}
 \[
 I \da \int_\RR {e^{x\over 2}\over 1+e^x}\dx
 .\]

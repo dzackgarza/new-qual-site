@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Uniformly bounded but not equicontinuous"}
+::: {.exercise}
 Produce a sequence that is uniformly bounded but not equicontinuous.
 :::
 

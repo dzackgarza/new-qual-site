@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Removable singularity at infinity iff constant"}
+::: {.exercise}
 Let $f$ be entire.
 Show that $f$ has a removable singularity at $z_0 = \infty$ iff $f$ is constant.
 :::

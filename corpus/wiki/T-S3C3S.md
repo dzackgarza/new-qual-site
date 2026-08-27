@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Lebesgue Density"}
+:::{.theorem}
 \[
 A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
 \implies \norm{A_h(f) - f} \converges{h\to 0}\to 0

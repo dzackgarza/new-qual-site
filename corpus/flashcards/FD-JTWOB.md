@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Invariant Factors"}
+::: {.definition}
 $ r_1 \divides r_2 \divides \cdots $
 :::

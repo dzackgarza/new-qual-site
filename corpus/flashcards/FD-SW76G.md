@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Semilocally Simply Connected"}
+::: {.definition}
 Every point admits a neighborhood $U$ such that $\pi_1(U) = 0$.
 :::

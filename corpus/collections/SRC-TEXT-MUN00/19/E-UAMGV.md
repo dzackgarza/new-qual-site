@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-UAMGV
 kind: exercise
 title: The coarsest topology making a family of maps continuous
+subtitle: Munkres §19.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §19.10"}
+::: {.exercise}
 
 Let $A$ be a set; let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of spaces; and let $\ts{f_\alpha}_{\alpha \in J}$ be an indexed family of functions $f_\alpha: A \to X_\alpha$.
 

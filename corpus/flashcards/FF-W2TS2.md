@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\cos(\pi/4) = \cdots$"}
+::: {.fact}
 $$
 \cos(\pi/4) = {\sqrt 2 \over 2}
 .$$

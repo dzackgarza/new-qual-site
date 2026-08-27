@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XUJ8N
 kind: exercise
 title: Finite presentations of free products and pushouts
+subtitle: Munkres §70.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §70.3"}
+::: {.exercise}
 
 (a) Show that if $G_1$ and $G_2$ have finite presentations, so does $G_1 * G_2$.
 

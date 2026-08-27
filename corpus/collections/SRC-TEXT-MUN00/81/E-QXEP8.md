@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QXEP8
 kind: exercise
 title: Lens spaces
+subtitle: Munkres §81.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §81.5"}
+::: {.exercise}
 
 Consider $S^3$ as the space of all pairs of complex numbers $(z_1, z_2)$ satisfying the equation $\abs{z_1}^2 + \abs{z_2}^2 = 1$.
 Given relatively prime positive integers $n$ and $k$, define $h: S^3 \to S^3$ by the equation

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-ZWNTH
 kind: exercise
 title: Application of summation by parts
+subtitle: '1.20: Series convergence on the circle'
 classification:
   areas:
   - complex-analysis
@@ -14,11 +15,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Application of summation by parts"}
+:::{.exercise}
 Use summation by parts to show that $\sin(n)/n$ converges.
 :::
 
-:::{.exercise title="1.20: Series convergence on the circle"}
+:::{.exercise}
 Show that
 
 1. $\sum kz^k$ diverges on $S^1$.

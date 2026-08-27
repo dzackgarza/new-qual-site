@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.lemma title="Frattini's Argument"}
+::: {.lemma}
 If $N\normal G$ and $P\in \Syl_p(N)$ then $G = N_G(P)N$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Linear functionals"}
+:::{.definition}
 A map $L: X \to \CC$ is a **linear functional** iff
 \[
 L(\alpha\vector x + \vector y) = \alpha L(\vector x) + L(\vector y).

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Continuity in $L^1$"}
+::: {.theorem}
 \[
 f\in L^1 \implies \norm{\tau_h f - f}_1 \converges{h\to 0}\to 0
 \]

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Cosets are equal or disjoint"}
+::: {.proposition}
 Any two cosets $xH, yH$ are either equal or disjoint.
 :::

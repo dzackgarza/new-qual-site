@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Give several equivalent characterizations of completeness."}
+::: {.fact}
 $ X $ is complete $ \iff $ $ X $ is Cauchy complete $ \iff $ absolutely convergent implies convergent for series.
 :::

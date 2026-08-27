@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Duals of $L^p$ spaces"}
+:::{.proposition}
 For $p\inv + q\inv = 1$, with $1<p<\infty$, there is an isomorphism of Banach spaces
 \[
 \kappa: L^p(\mu) &\to L^q(\mu) \\

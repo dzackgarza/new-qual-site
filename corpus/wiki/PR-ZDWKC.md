@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Ideal Operations"}
+::: {.proposition}
 \envlist
 
 - $I + J = \ts{i+j \st i\in I, j\in J} = \gens{I, J}$ is the smallest ideal containing $I$ and $J$.

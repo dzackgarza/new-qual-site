@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-XU2MN
 kind: exercise
 title: Hausdorff equals completely regular for locally euclidean spaces
+subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §50 Supplementary"}
+::: {.exercise}
 
 Let $X$ be a space that is locally $m$-euclidean.
 Show that $X$ is Hausdorff if and only if $X$ is completely regular.

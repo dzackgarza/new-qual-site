@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Field Automorphisms"}
+:::{.definition}
 \[ 
 \Aut(L/k) = \theset{\sigma: L \to L \suchthat \restrictionof{\sigma}{k} = \id_k}
 .\]

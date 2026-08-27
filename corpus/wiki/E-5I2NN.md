@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Using the estimates"}
+:::{.exercise}
 Let $f\in \Hol(\DD)$.
 Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that 
 \[

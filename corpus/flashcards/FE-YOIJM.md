@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.example title="Is a composition of Lebesgue measurable functions measurable?"}
+::: {.example}
 No:
 
 - Take $f: [0, 1]\to [0, 1]$ the Cantor-Lebesgue function (monotonic and cts) and $C$ the Cantor set

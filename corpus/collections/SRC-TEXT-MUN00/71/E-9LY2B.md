@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-9LY2B
 kind: exercise
 title: Infinite wedges of circles are not first countable
+subtitle: Munkres §71.4
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §71.4"}
+::: {.exercise}
 
 Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the first countability axiom.
 :::

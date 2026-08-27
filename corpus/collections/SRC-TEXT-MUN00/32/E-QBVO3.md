@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QBVO3
 kind: exercise
 title: Are all topological groups normal
+subtitle: Munkres §32.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §32.10"}
+::: {.exercise}
 
 Is every topological group normal?
 :::

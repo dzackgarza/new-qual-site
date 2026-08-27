@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-1-1
 kind: exercise
 title: "Distributive laws and DeMorgan's laws for sets"
+subtitle: Munkres §1.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §1.1"}
+::: {.exercise}
 
 Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::

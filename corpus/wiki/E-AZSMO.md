@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Sublinear growth"}
+:::{.exercise}
 Suppose that $f$ is entire and $f$ has sublinear growth in the following sense:
 \[
 \abs{f(z)\over z}\to 0

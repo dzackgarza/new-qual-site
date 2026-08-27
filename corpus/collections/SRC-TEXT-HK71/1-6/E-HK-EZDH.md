@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-EZDH
 kind: exercise
 title: "The Hilbert matrix is invertible with integer inverse"
+subtitle: Hoffman and Kunze 1.6.12
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.6.12"}
+::: {.exercise}
 The result of Example 16 suggests that perhaps the matrix
 
 $$

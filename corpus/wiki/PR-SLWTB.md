@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Classification of groups of order $pq$"}
+:::{.proposition}
 If $G$ is a group of order $pq$ for primes $q<p$, write $P$ and $Q$ for its Sylow $p\dash$ and $q\dash$subgroups, so $P\cong C_p$ and $Q \cong C_q$.
 Note that $P\normal G$ in both cases, since $n_p \equiv 1 \mod p$ and $n_p \divides q < p$ force $n_p = 1$.
 

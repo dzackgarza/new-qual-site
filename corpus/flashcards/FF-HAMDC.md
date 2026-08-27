@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Factor $x^n + a^n$"}
+::: {.fact}
 For $n$ odd,
 $$
 x^n + a^n = (x+a) \sum _{k=0}^{n-1} (-a)^k x^{n-1-k}

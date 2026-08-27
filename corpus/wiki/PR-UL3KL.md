@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Homology of 3-manifolds"}
+::: {.proposition}
 Let $M^3$ be a **closed connected** 3-manifold and write $H_1(M;\ZZ) = \ZZ^r \oplus F$ with $F$ finite.
 Then
 

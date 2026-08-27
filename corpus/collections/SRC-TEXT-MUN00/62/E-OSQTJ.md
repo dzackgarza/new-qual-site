@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OSQTJ
 kind: exercise
 title: Compact contractible subsets of the sphere do not separate
+subtitle: Munkres §62.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §62.2"}
+::: {.exercise}
 
 Let $A$ be a compact contractible subspace of $S^2$.
 Show that $A$ does not separate $S^2$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$ \chi(\Sigma) = 0 \implies\cdots $"}
+::: {.fact}
 $ g=1 $ so $ \Sigma \cong T^1 $ (no boundary, orientable), or
 
 $ K $ the Klein bottle (no boundary, nonorientable).

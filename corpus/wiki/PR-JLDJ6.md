@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Computing Cyclotomic Polynomials"}
+:::{.proposition}
 **Computing $\Phi_n$:**
 
 1.

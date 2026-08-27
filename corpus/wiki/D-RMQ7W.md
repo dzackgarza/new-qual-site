@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Mapping Cylinder"}
+::: {.definition}
 For a map $f: X\to Y$, the **mapping cylinder** is
 \[
 M_f \da \qty{ (X\cross I) \disjoint Y } / \qty{ (x, 1) \sim f(x) }

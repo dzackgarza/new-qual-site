@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Euler Characteristic: Formula Involving Genus"}
+::: {.fact}
 $\chi(X) = 2-2g$
 :::

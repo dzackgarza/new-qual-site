@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Uniform Convergence of Series"}
+:::{.proposition}
 A series of functions $\sum_{n=1}^\infty f_n(x)$ converges uniformly iff 
 \[  
 \lim_{n\to \infty} \norm{ \sum_{k\geq n} f_k }_\infty = 0

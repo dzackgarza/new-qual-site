@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Suspension"}
+::: {.definition}
 Compact represented as $\Sigma X = CX \coprod_{\id_{X}} CX$, two cones on $X$ glued along $X$.
 Explicitly given by
 

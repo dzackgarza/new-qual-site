@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Lefschetz Fixed Point"}
+::: {.theorem}
 For $f:X\to X$, define the **trace** of $f$ to be
 \[
 \Lambda_f \da \sum_{k \geq 0} (-1)^k ~\mathrm{Tr}(f_* \mid H_k(X; \QQ))

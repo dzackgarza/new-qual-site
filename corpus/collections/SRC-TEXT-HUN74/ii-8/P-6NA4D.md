@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 2.8.9"}
+::: {.problem}
 Show that any group of order $p^2 q$(for primes $p,q$) is solvable.
 :::

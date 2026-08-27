@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Types of isolated singularities"}
+::: {.fact}
 - Removable: $\abs{f(z)}$ is bounded in a punctured disc.
 
 - Poles: $\lim_{z\to p} \abs{f(z)} = \infty$.

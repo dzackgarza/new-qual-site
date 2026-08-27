@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-L2EHD
 kind: exercise
 title: The Stone-Cech compactification of a discrete space
+subtitle: Munkres §38.7
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §38.7"}
+::: {.exercise}
 
 Let $X$ be a discrete space; consider the space $\beta(X)$.
 

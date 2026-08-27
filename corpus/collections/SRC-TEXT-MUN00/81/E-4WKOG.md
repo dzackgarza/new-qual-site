@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-4WKOG
 kind: exercise
 title: Properly discontinuous actions with compactly supported interference
+subtitle: Munkres §81.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §81.6"}
+::: {.exercise}
 
 Prove the following.
 

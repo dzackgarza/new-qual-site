@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: irreducible."}
+::: {.definition}
 A nonzero nonunit ring element $r\in R$ is *irreducible* iff $r=ab$ implies $a$ or $b$ is a unit.
 :::

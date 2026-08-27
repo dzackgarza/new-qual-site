@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Hungerford 4.4.1"}
+:::{.problem}
 Show the following:
 
 1.  For any abelian group $A$ and any positive integer $m$,

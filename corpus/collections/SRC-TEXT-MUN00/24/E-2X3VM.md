@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2X3VM
 kind: exercise
 title: Behavior of path connectedness under products, closures, images, and unions
+subtitle: Munkres §24.8
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §24.8"}
+::: {.exercise}
 
 (a) Is a product of path-connected spaces necessarily path connected?
 

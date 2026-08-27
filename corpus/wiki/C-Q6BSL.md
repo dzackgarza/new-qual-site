@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Better derivative formula that sometimes works for simple poles"}
+:::{.corollary}
 
 If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$,
 \[

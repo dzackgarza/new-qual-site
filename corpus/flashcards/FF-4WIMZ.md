@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Convolution"}
+::: {.fact}
 $$
 (f\ast g)(\xi) = \int f(\xi - y)g(y) \, dy
 $$

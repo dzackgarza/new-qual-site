@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is Nakayama's lemma?"}
+::: {.fact}
 $ M = IM \implies m= im $, i.e. if $ I{~\trianglelefteq~}R $ and $ M\in  {}_{R}{\mathsf{Mod}}^{\mathrm{fg}} $ with $ M=IM $, then $ \exists i\in I $ such that $ m=im $ for all $ m\in M $.
 So if $ I $ stabilizes $ M $, then an individual $ i\in I $ stabilizes all of $ M $.
 

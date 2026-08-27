@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Converting between elementary divisors and invariant factors"}
+::: {.proposition}
 Given any presentation of a group as a product of cyclic groups $G = \prod \ZZ_i/m_i$, with the $m_i$ not necessarily distinct,
 
 - Factor all of the $m_i$ into prime powers, keeping the exponents intact.

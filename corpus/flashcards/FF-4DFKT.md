@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$ \chi(\Sigma) = 2 \implies\cdots $"}
+::: {.fact}
 $ g=0 $ so $ \Sigma \cong S^2 $.
 :::

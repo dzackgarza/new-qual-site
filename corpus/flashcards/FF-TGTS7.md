@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\sin(\pi/3) = \cdots$"}
+::: {.fact}
 $$
 \sin(\pi/3) = {\sqrt 3 \over 2}
 .$$

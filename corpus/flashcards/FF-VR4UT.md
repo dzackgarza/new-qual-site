@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Angle addition formulas: $ \sinh(x+iy) = \cdots .$"}
+::: {.fact}
 $$
 \sinh (x+i y) =\sinh (x) \cos (y)+i \cosh (x) \sin (y)
 .$$

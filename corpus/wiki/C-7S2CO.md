@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Formula for Laurent coefficients"}
+:::{.corollary}
 Differentiating under the integral above yields
 \[
 c_k = \frac{f^{(k)}(p)}{k !}=\frac{1}{2 \pi i} \int_{\partial U} \frac{f(z) }{(z-p)^{k+1}} \dz

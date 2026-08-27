@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Uniform Limit Theorem"}
+::: {.theorem}
 If $f_n\to f$ pointwise and uniformly with each $f_n$ continuous, then $f$ is continuous.
 [^uniform_limit_is_cts]
 :::

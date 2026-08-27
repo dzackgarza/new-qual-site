@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The Fundamental Group"}
+:::{.definition}
 Given a pointed space $(X,x_{0})$, we define the fundamental group $\pi_{1}(X)$ as follows:
 
 - Take the set 

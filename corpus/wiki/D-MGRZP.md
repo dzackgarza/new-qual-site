@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Nullhomotopic"}
+:::{.definition}
 A map $X\mapsvia{f} Y$ is *nullhomotopic* if it is homotopic to a constant map $X \mapsvia{g} \theset{y_{0}}$; that is, there exists a homotopy 
 \[  
 F: X\cross I &\to Y \\

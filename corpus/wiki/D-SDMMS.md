@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Lebesgue Number"}
+:::{.definition}
 For $(X, d)$ a compact metric space and $\theset{U_\alpha}\covers X$, there exists a **Lebesgue number** $\delta_{L} > 0$ which satisfies
 \[
 A\subset X, ~ \diam(A) < \delta_{L} \implies A\subseteq U_\alpha \text{ for some } \alpha

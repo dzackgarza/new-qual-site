@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-J7FPE
 kind: exercise
 title: Coverings of the torus are classified by rank
+subtitle: Munkres §79.5
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §79.5"}
+::: {.exercise}
 
 Let $T = S^1 \times S^1$ be the torus; let $x_0 = b_0 \times b_0$.
 

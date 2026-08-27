@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Applying Jordan's lemma"}
+:::{.exercise}
 Compute
 \[
 \int_\RR {\sin(x) \over x}\dx

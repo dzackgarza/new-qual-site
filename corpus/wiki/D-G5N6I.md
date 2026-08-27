@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Completeness"}
+::: {.definition}
 A metric space is **complete** if every Cauchy sequence converges.
 :::

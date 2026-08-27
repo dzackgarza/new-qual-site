@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YAEMZ
 kind: exercise
 title: Compactness, limit point compactness, and sequential compactness in second-countable
+subtitle: Munkres §28
   Hausdorff or metric spaces
 classification:
   areas:
@@ -15,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §28"}
+::: {.exercise}
 Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE:
 
 - $X$ is compact;

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Is the composition of Lebesgue measurable functions again Lebesgue measurable?"}
+::: {.fact}
 **No:** Take $ f: [0, 1]\to [0, 1] $ the Cantor-Lebesgue function (monotonic and cts) and $ C $ the Cantor set
 
 $ f(C) = [0, 1] $, so define $ g(x) = f(x) +x $ so $ g:[0, 1] \to [0, 2] $ (strictly monotonic and cts, so a homeomorphism), so $ g^{-1} $ is cts and thus measurable.

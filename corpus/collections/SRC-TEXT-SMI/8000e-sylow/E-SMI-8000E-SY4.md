@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-SY4
 kind: exercise
 title: Normalizers of Sylow subgroups are self-normalizing
+subtitle: Smith 8000e sylow 4
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e sylow 4"}
+::: {.exercise}
 The "normalizer" $N(H)$ of a subgroup $H$ of $G$ is
 
 $$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normal Field Extension"}
+::: {.definition}
 Let $L/k$ be an extension.
 Then TFAE:
 

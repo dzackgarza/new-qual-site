@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Liouville's Theorem" ref="Liouville"}
+::: {.theorem ref="Liouville"}
 If $f$ is entire and bounded, $f$ is constant.
 :::

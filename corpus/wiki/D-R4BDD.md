@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Poles (and associated terminology)"}
+:::{.definition}
 A *pole* $z_0$ of a function $f(z)$ is a zero of $g(z) \definedas {1\over f(z)}$.
 Equivalently, $\lim_{z\to z_0} f(z) = \infty$.
 In this case there exists a minimal $n$ and a holomorphic $h$ such that

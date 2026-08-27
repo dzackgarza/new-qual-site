@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-OHHSA
 kind: exercise
 title: A regular space that is not completely regular
+subtitle: Munkres §33.11
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §33.11"}
+::: {.exercise}
 
 Define a set $X$ as follows.
 For each even integer $m$, let $L_m$ denote the line segment $m \times [-1, 0]$ in the plane.

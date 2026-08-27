@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is the geometric interpretation of Krull's intersection theorem?"}
+::: {.fact}
 Define $ { \mathrm{Ord} }_{p} f $ as the smallest $ n $ such that $ f\in {\mathfrak{m}}_p^n $ but $ f\not\in {\mathfrak{p}}^{n+1} $; then $ { \mathrm{Ord} }_p(f) = \infty \iff f=0 $.
 
 There is no hypersurface passing though $ p $ with arbitrarily high order of vanishing.

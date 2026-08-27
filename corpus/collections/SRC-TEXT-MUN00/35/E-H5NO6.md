@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-H5NO6
 kind: exercise
 title: Retracts of Hausdorff spaces and the plane
+subtitle: Munkres §35.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §35.4"}
+::: {.exercise}
 
 Let $Z$ be a topological space.
 If $Y$ is a subspace of $Z$, we say that $Y$ is a retract of $Z$ if there is a continuous map $r: Z \to Y$ such that $r(y) = y$ for each $y \in Y$.

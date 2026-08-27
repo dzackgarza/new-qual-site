@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-NR1
 kind: exercise
 title: In a Noetherian ring every ideal sits in a maximal ideal, without Zorn
+subtitle: Smith 8000e Noetherian rings 1
 classification:
   areas:
   - algebra
@@ -13,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e Noetherian rings 1"}
+::: {.exercise}
 If $R$ is a Noetherian ring, prove every ideal $I$ of $R$ is contained in a maximal ideal without using Zorn's lemma.
 :::

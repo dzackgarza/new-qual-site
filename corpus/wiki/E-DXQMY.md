@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Schwarz-Pick Lemma"}
+:::{.exercise}
 Prove the following:
 suppose $\abs{f(z)}\leq 1$, then for all $z, w\in \DD$,
 \[

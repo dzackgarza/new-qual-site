@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="PQR Theorem"}
+::: {.proposition}
 If $|G| = pqr$ where $p<q<r$ are distinct primes then $G$ is solvable.
 :::

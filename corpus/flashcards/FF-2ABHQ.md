@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\arctan(\sqrt 3) = \cdots$"}
+::: {.fact}
 $\arctan(\sqrt 3) = {\pi \over 3}$
 :::

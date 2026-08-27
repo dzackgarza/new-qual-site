@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="One-step subgroup test"}
+::: {.proposition}
 If $H \subseteq G$ and $a,b\in H \implies ab\inv\in H$, then $H\leq G$.
 :::

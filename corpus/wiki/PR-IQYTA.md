@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="AM-GM Inequality"}
+:::{.proposition}
 \[
 \sqrt{ab} \leq \frac{a+b}{2}
 .\]

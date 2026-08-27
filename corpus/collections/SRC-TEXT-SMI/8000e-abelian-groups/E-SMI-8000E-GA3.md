@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-GA3
 kind: exercise
 title: Kernels of maps onto Z are free abelian of rank one higher
+subtitle: Smith 8000e generators 3
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e generators 3"}
+::: {.exercise}
 Prove that if
 
 $$

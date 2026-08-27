@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Bounded Complex Analytic Functions form a Banach Space"}
+::: {.proposition}
 For $\Omega\subseteq\CC$, show that $A(\CC)\definedas \theset{f: \Omega \to \CC \st f\text{ is bounded}}$ is a Banach space.
 :::
 

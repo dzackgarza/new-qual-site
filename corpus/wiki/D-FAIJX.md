@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Mayer-Vietoris Sequence"}
+::: {.definition}
 Let $A, B \subseteq X$ with $X = A^\circ \union B^\circ$.
 The **Mayer-Vietoris sequence** of the pair $(A,B)$ is the long exact sequence
 \[

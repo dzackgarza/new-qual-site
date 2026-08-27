@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Series expansion for $\sech(z) = {1\over \cosh(z)}$"}
+::: {.fact}
 $$
 \operatorname{sech} x=1-\frac{x^{2}}{2}+\frac{5 x^{4}}{24}-\frac{61 x^{6}}{720}+\cdots
 .$$

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-9-4
 kind: exercise
 title: "Identifying implicit use of the axiom of choice"
+subtitle: Munkres §9.4
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §9.4"}
+::: {.exercise}
 
 There was a theorem in §7 whose proof involved an infinite number of arbitrary choices.
 Which one was it?

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-AHENA
 kind: exercise
 title: Closed continuous surjections preserve normality
+subtitle: Munkres §31.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §31.6"}
+::: {.exercise}
 
 Let $p: X \to Y$ be a closed continuous surjective map.
 Show that if $X$ is normal, then so is $Y$.

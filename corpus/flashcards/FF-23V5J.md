@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Euler Characteristic 2"}
+::: {.fact}
 $\chi X = 2 \implies X \cong S^2$
 :::

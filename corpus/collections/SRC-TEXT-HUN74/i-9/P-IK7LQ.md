@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 1.9.1"}
+::: {.problem}
 Show that every non-identity element in a free group $F$ has infinite order.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-2AWO8
 kind: exercise
 title: Prove Theorem 46.7
+subtitle: Munkres §46.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §46.2"}
+::: {.exercise}
 
 Prove Theorem 46.7. Let $X$ be a space; let $(Y, d)$ be a metric space.
 For the function space $Y^X$, one has the following inclusions of topologies:

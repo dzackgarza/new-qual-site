@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Perp of sum is intersection of perps"}
+:::{.proposition}
 \[
 \qty{ \sum  W_i}^\perp = \Intersect \qty{W_i^\perp}
 .\]

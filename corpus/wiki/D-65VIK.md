@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Zeros"}
+:::{.definition}
 If $f$ is analytic and not identically zero on $\Omega$ with $f(z_0) = 0$, then there exists a nonvanishing holomorphic function $g$ such that
 \[
 f(z) = (z-z_0)^n g(z)

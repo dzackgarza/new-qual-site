@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Definition: Torsion element"}
+::: {.fact}
 $m\in M$ is torsion iff there exists a nonzero $r\in R$ with $rm = 0$, equivalently $\mathrm{Ann}(m)\neq 0$.
 :::

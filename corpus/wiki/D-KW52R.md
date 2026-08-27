@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Comparability of topologies"}
+::: {.definition}
 Given two topologies $\tau_1, \tau_2$,
 
 - $\tau_1$ is **finer** than $\tau_2$ iff $\tau_1 \contains \tau_2$.

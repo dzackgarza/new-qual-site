@@ -15,6 +15,6 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Definition: A removable singularity"}
+::: {.definition}
 A pole of order zero.
 :::

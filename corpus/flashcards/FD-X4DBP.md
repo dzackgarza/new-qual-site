@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Alternating Group"}
+::: {.definition}
 The kernel of the sign homomorphism, i.e. the set of even permutations (sign = 1).
 :::

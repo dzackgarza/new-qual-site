@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: Maximal ideal."}
+::: {.definition}
 A proper ideal $I\normal R$ is **maximal** iff $I\subsetneq J \normal R$ implies $J=R$.
 :::

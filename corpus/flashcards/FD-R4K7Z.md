@@ -16,6 +16,6 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Irreducible"}
+::: {.definition}
 An element $p$ in a ring $R$ is **irreducible** $\iff$ $p=ab \implies a \in R\units$ or $b\in R\units$.
 :::

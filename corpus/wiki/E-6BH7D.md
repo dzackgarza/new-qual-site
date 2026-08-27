@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Upper half-disc to upper half-plane"}
+::: {.exercise}
 Find a conformal map from the upper half-disc to the upper half-plane.
 :::
 

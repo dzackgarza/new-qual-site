@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Ideal"}
+::: {.definition}
 An **ideal** $I\normal R$ is a subset where $(I, +) \leq (R, +) \in \Grp$ is a subgroup and for $x\in R, i\in I$, $xi \in I$.
 Equivalently,
 

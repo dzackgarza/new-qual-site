@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Chain Map"}
+::: {.definition}
 A map between chain complexes $(C_*, \del_{C}) \mapsvia{f} (D_*, \del_{D})$ is a chain map iff each component $C_{i} \mapsvia{f_{i}} D_{i}$ satisfies
 $$
 f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_{i}

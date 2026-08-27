@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Lefschetz duality"}
+::: {.definition}
 For $M$ a compact $R\dash$orientable $n\dash$manifold with boundary, the **Lefschetz duality map** is cap product with a fundamental class $[M] \in H_n(M, \del M; R)$,
 \[
 D_M: H^k(M, \del M; R) \to H_{n-k}(M; R), \qquad D_M: H^k(M; R) \to H_{n-k}(M, \del M; R)

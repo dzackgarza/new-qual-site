@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-NKQPS
 kind: exercise
 title: The vertex assumption in the normality proof for linear graphs
+subtitle: Munkres §83.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §83.1"}
+::: {.exercise}
 
 In the proof of normality of a linear graph $X$, why did we assume that every vertex of $X$ belongs either to $B$ or to $C$?
 :::

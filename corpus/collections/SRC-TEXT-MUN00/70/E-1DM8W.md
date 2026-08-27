@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-1DM8W
 kind: exercise
 title: Seifert-van Kampen when one inclusion is surjective
+subtitle: Munkres §70.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §70.2"}
+::: {.exercise}
 
 Suppose that $i_2$ is surjective.
 

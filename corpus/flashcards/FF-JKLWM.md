@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Inverting series: for $A(z) = \sum c_k z^k$ and $1/A(z) = \sum b_k z^k$, the formula for the $b_k$ in terms of $c_k$."}
+::: {.fact}
 - $b_0 = c_0\inv$
 
 - $b_1 = -c_0\inv(c_1 b_0 )$

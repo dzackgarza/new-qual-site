@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-5QSZ7
 kind: exercise
 title: Sources of equicontinuity
+subtitle: Munkres §45.2
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §45.2"}
+::: {.exercise}
 
 Let $(Y, d)$ be a metric space; let $\mathcal{F}$ be a subset of $\mathcal{C}(X, Y)$.
 

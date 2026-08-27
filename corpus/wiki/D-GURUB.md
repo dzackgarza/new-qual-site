@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Ring"}
+::: {.definition}
 A **ring** is a triple $(R, +, \cdot) \in \Ring$ such that
 
 - $(R, +)\in \Ab\Grp$,

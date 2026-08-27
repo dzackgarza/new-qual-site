@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Locally Compact"}
+::: {.definition}
 A space $X$ is **locally compact** iff every $x\in X$ has a neighborhood contained in a compact subset of $X$.
 :::

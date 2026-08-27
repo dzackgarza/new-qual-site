@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Interior Point"}
+::: {.definition}
 A point $p\in A$ is **interior** to $A$ if there exists a neighborhood $U\ni p$ that is entirely contained in $A$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Equality of different integrals"}
+:::{.exercise}
 Suppose $f$ is holomorphic on $\Omega$, a simply connected region, and suppose $\gamma \subseteq \Omega$.
 Using the Cauchy integral formula, show that
 \[

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="Burnside's Lemma"}
+:::{.corollary}
 For $G$ a finite group acting on $X$,
 \[
 \# {X/G} = \frac{1}{\# G }\sum_{g\in G} \# \Fix(g)

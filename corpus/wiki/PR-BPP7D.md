@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Sector to Disc"}
+:::{.proposition}
 The unmotivated formula first:
 \[
 F: S_{\alpha} &\to \DD \\ \\

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="Strict maximum principle, complex version"}
+::: {.proposition}
 Let $h$ be a bounded complex-valued harmonic function on a domain $D$.
 If $|h(z)| \leq M$ for all $z \in D$, and $\left|h\left(z_{0}\right)\right|=M$ for some $z_{0} \in D$, then $h(z)$ is constant on $D$.
 :::

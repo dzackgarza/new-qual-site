@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Cauchy-Goursat Theorem" ref="CauchyTheorem"}
+:::{.theorem ref="CauchyTheorem"}
 If $f$ is holomorphic on a region $\Omega$ with $\pi_1 \Omega = 1$, then for any closed path $\gamma \subseteq \Omega$,
 \[ 
 \int_{\gamma} f(z) \dz = 0

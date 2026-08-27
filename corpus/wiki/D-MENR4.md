@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Eilenberg-MacLane Space"}
+::: {.definition}
 For $n\geq 1$ and a group $G$, abelian if $n\geq 2$, an **Eilenberg-MacLane space** $K(G,n)$ is a CW complex with
 \[
 \pi_i(K(G,n)) =

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Associate Elements"}
+::: {.definition}
 $a, b\in R$ are **associates** iff there exists a $u\in R\units$ such that $a = ub$.
 Equivalently, $a\divides b$ and $b\divides a$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Fatou's Lemma"}
+::: {.theorem}
 If $\theset{f_n} \subset L^+$, then
 $$
 \int \liminf f_n \leq \liminf \int f_n

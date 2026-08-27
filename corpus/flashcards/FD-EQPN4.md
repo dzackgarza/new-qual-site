@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Definition: the indiscrete topology"}
+::: {.definition}
 For $X$ a space, the indiscrete topology is given by $\tau = \theset{\emptyset, X}$.
 :::

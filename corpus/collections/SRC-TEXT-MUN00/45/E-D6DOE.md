@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-D6DOE
 kind: exercise
 title: Ascoli's theorem over proper metric targets
+subtitle: Munkres §45.6
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §45.6"}
+::: {.exercise}
 
 Show that our proof of Ascoli's theorem goes through if $\mathbb{R}^n$ is replaced by any metric space in which all closed bounded subspaces are compact.
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Even vs Odd Permutations"}
+::: {.definition}
 - Even: $\varepsilon(\sigma) = 1$, product of even number of transpositions.
 
 - Odd: $\varepsilon(\sigma) = -1$, product of *odd* number of transpositions.

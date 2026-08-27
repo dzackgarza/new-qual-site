@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Invert $2z-1$, one coefficient at a time"}
+:::{.exercise}
 Let $A(z) \da 2z-1$ and find $1/A(z)$.
 :::
 

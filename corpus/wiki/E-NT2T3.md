@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Singularities of $1\over e^z - 1$"}
+:::{.exercise}
 Classify the singularities and compute the residues at any poles of the following function:
 \[
 f(z) \da {1\over e^z - 1}

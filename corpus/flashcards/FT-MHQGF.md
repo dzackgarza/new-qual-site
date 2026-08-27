@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Are singletons open or closed?"}
+::: {.theorem}
 - In Hausdorff spaces: closed.
 :::

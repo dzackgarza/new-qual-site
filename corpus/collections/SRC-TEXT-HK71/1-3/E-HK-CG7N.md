@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-CG7N
 kind: exercise
 title: "Solving $AX = 0$ by row reduction"
+subtitle: Hoffman and Kunze 1.3.2
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.2"}
+::: {.exercise}
 If
 
 $$

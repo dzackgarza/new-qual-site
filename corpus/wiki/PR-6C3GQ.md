@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Geometric Series"}
+:::{.proposition}
 \[
 \sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
 .\]

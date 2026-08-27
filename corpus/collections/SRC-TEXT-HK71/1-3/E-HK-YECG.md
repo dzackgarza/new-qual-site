@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-HK-YECG
 kind: exercise
 title: 'Solutions of $AX = 0$ for $2 \times 2$ matrices'
+subtitle: Hoffman and Kunze 1.3.8
 classification:
   areas:
   - algebra
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Hoffman and Kunze 1.3.8"}
+::: {.exercise}
 Consider the system of equations AX = 0 where
 
 $$

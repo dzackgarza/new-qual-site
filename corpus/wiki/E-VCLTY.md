@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Laurent expansions about different points"}
+:::{.exercise}
 Find the Laurent expansion about $z=0$ and $z=1$ respectively of the following function:
 \[
 f(z) \da {z+1 \over z(z-1)}

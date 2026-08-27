@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Special Linear Group"}
+:::{.definition}
 \[
 \SL_n(\CC) \da \ts{ A \st \det A = 1 } 
 .\]

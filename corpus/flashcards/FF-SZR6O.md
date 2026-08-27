@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a meagre set?"}
+::: {.fact}
 A set is *meagre* $ \iff $ it is a countable union of nowhere dense sets.
 :::

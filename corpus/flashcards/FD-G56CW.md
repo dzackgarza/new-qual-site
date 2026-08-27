@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Normal Space"}
+::: {.definition}
 A space $X$ is **normal** iff every two disjoint closed sets have disjoint open neighborhoods.
 :::

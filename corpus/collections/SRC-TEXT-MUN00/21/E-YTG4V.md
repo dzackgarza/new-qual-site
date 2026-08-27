@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-YTG4V
 kind: exercise
 title: Continuity of the field operations on R
+subtitle: Munkres §21.12
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §21.12"}
+::: {.exercise}
 
 Prove continuity of the algebraic operations on $\mathbb{R}$, as follows.
 Use the metric $d(a, b) = \abs{a - b}$ on $\mathbb{R}$ and the metric on $\mathbb{R}^2$ given by the equation

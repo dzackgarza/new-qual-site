@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Euler Characteristic -2"}
+::: {.fact}
 A closed surface with $\chi = -2$ is either the orientable $\Sigma_2$ of genus two, since $\chi(\Sigma_g) = 2-2g$, or the nonorientable $N_4$, since $\chi(N_g) = 2-g$.
 The Euler characteristic alone does not determine the surface; orientability is the second invariant the classification needs.
 :::

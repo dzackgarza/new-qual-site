@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Evaluating integrals"}
+:::{.exercise}
 Evaluate the following integrals using Cauchy's integral formula:
 
 \[

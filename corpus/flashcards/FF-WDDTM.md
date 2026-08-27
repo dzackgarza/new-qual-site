@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\arctan(1) = \cdots$"}
+::: {.fact}
 $\arctan(1) = {\pi\over 4}$
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Locally Compact"}
+::: {.definition}
 A space $X$ is *locally compact* iff for every $x\in X$ there exists an open $U$ and compact $K$ such that $x\in U \subseteq K$.
 
 Compact implies locally compact but not conversely: $\RR^n$.

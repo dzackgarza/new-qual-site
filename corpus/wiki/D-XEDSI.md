@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Upper Central Series"}
+::: {.definition}
 Set $Z_0 = 1$, $Z_1 = Z(G)$, and $Z_{i+1} \leq G$ to be the subgroup satisfying $Z_{i+1}/Z_i = Z(G/Z_i)$.
 Then $Z_0 \leq Z_1 \leq \cdots$ is the *upper central series* of $G$.
 

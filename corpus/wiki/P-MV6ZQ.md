@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Mod by nilradical to kill nilpotents"}
+::: {.problem}
 $R/ \nilrad{R}$ has no nonzero nilpotent elements.
 :::
 

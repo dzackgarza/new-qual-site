@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Groups of Order 9"}
+::: {.fact}
 1. $\ZZ/9\ZZ$
 
 2. $(\ZZ/3\ZZ)^2$

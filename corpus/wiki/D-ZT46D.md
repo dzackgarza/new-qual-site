@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Separable polynomials"}
+::: {.definition}
 A polynomial $f \in k[x]$ is **separable** iff $f$ has no repeated roots.
 :::

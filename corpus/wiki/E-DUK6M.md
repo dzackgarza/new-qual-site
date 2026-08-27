@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$xe^{2ix}/x^2-1$ "}
+:::{.exercise}
 \[
 I \da \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)
 .\]

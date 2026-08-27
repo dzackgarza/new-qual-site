@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Continuous image of compact is compact"}
+::: {.theorem}
 The continuous image of a compact set is compact.
 :::

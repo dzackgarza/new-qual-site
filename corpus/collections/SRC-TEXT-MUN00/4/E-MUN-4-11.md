@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-4-11
 kind: exercise
 title: Even and odd integers and irrationality of $\sqrt{2}$
+subtitle: Munkres §4.11
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §4.11"}
+::: {.exercise}
 
 Given $m \in \mathbb{Z}$, we say that $m$ is even if $m / 2 \in \mathbb{Z}$, and $m$ is odd otherwise.
 

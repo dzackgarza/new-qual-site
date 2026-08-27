@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Hausdorff Space"}
+::: {.definition}
 A space $X$ is **Hausdorff** iff for every $x,y \in X$ there exist neighborhoods of $x$ and $y$ that are disjoint from each other.
 
 (Implies uniqueness of limits.)

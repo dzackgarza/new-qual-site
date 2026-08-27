@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Holomorphic iff delbar vanishes"}
+:::{.proposition}
 $f$ is holomorphic at $z_0$ iff $\delbar f(z_0) = 0$:
 \[
 2\delbar f

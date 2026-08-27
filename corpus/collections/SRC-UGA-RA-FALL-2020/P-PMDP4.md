@@ -21,7 +21,7 @@ F(y) \da \int f(x) \cos(yx)\,  dx
 defines a $C^1$ function.
 :::
 
-:::{.solution }
+:::{.solution}
 
 - Fix $y_0$, we'll show $F'$ exists and is continuous at $y_0$.
 - Fix a sequence $y_n\decreasesto y_0$ and define

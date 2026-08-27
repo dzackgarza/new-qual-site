@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="$\tan(\pi/6) = \cdots$"}
+::: {.fact}
 $$
 \tan(\pi/6) = {\sqrt 3 \over 3}
 .$$

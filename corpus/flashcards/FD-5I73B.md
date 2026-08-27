@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Diameter"}
+::: {.definition}
 $$
 \mathrm{diam}(A) = \sup_{x, y\in  A} \abs d(x, y)
 .$$

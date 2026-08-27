@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is a reduced ring?"}
+::: {.fact}
 No nonzero nilpotents.
 :::

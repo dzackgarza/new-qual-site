@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-MUN-5-3
 kind: exercise
 title: "Containment and nonemptiness of infinite products"
+subtitle: Munkres §5.3
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §5.3"}
+::: {.exercise}
 
 Let $A = A_{1} \times A_{2} \times \cdots$ and $B = B_{1} \times B_{2} \times \cdots$ .
 

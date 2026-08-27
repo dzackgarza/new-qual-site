@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Decomposing a Klein Bottle"}
+:::{.proposition}
 \[  
 \KK \cong \RP^2 \# \RP^2
 .\]

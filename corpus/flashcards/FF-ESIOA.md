@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="What is Krull's Hauptidealsatz?"}
+::: {.fact}
 Let $ R $ be a Noetherian ring and $ a $ an element of $ R $ which is neither a zero divisor nor a unit.
 Then every minimal prime ideal $ P $ containing $ a $ has height 1.
 :::

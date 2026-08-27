@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-CFH1Q
 kind: exercise
 title: Closed sets satisfy the topology axioms
+subtitle: Munkres §17.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §17.1"}
+::: {.exercise}
 
 Let $\mathcal{C}$ be a collection of subsets of the set $X$.
 Suppose that $\varnothing$ and $X$ are in $\mathcal{C}$, and that finite unions and arbitrary intersections of elements of $\mathcal{C}$ are in $\mathcal{C}$.

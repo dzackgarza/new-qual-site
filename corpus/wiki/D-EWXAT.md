@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Dilation"}
+:::{.definition}
 \[
 \phi_{t}(x) = t^{-n} \phi\left(t^{-1} x\right)
 .\]

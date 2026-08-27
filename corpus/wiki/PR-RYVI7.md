@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Bessel's Inequality"}
+:::{.proposition}
 For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
 \[  
 \sum_{k=1}^{\infty}\| \inner{x}{e_{k} } \|^{2} \leq \|x\|^{2}

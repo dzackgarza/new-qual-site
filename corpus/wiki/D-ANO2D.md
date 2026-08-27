@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Covering Space"}
+::: {.definition}
 A **covering space** of $X$ is the data $p: \tilde X \to X$ such that
 
 1. Each $x\in X$ admits a neighborhood $U$ such that $p ^{-1} (U)$ is a union of disjoint open sets in $\tilde V_i \subseteq X$ (the **sheets** of $\tilde X$ over $U$),

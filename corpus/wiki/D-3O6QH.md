@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Separable spaces"}
+::: {.definition}
 A space $X$ is **separable** iff $X$ contains a countable dense subset.
 :::

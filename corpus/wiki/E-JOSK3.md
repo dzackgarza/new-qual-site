@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="Orders of poles"}
+:::{.exercise}
 Determine the order of the pole of 
 
 - ${1\over z\sin(z)}$ at $z_0 = 0$.

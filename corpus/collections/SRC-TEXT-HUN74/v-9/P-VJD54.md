@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="Hungerford 5.9.3"}
+::: {.problem}
 Let $K$ be a field, $f\in K[x]$ an irreducible polynomial of degree $n\geq 5$ and $F$ a splitting field of $f$ over $K$.
 Assume that $Aut_{k}(F)\simeq S_{n}$.
 Let $u$ be a root of $f$ in $F$.

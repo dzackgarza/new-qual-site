@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Cyclic modules"}
+::: {.definition}
 A module $M$ is **cyclic** if there exists a single generator $m\in M$ such that $M = mR \da \gens{ m }$.
 :::

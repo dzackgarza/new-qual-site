@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="The Spectral Theorem"}
+::: {.theorem}
 \envlist
 
 1. Hermitian (self-adjoint) matrices (i.e. $A^{\dagger} = A$) are diagonalizable over $\CC$.

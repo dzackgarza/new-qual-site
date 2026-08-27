@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Separable splitting fields are Galois"}
+:::{.proposition}
 If $L/k$ is separable, then
 \[
 [L: k] = \ts{ L: k } 

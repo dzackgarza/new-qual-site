@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Rouché's Theorem" ref="Rouche"}
+:::{.theorem ref="Rouche"}
 Let $M, m$ be meromorphic on $\Omega$ and write $Z_M, Z_m, P_M, P_m$ for the numbers of zeros and poles of $M$ and $m$ respectively.
 Suppose $\gamma \subseteq \Omega$ is a toy contour winding about each zero and pole of $f$ and $g$ precisely once.
 Then

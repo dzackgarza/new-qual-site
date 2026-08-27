@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-QVJ8J
 kind: exercise
 title: Countability of the fundamental group under countable basis and regularity
+subtitle: Munkres §82 Supplementary
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §82 Supplementary"}
+::: {.exercise}
 
 Prove the following.
 

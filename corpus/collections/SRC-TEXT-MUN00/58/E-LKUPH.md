@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LKUPH
 kind: exercise
 title: Transitivity of deformation retracts
+subtitle: Munkres §58.1
 classification:
   areas:
   - topology
@@ -12,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §58.1"}
+::: {.exercise}
 
 Show that if $A$ is a deformation retract of $X$, and $B$ is a deformation retract of $A$, then $B$ is a deformation retract of $X$.
 :::

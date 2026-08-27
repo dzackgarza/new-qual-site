@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-LEJYZ
 kind: exercise
 title: Every linear continuum is normal
+subtitle: Munkres §32.8
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §32.8"}
+::: {.exercise}
 
 Prove the following.
 

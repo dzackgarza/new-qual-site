@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-SMI-8000E-GG5
 kind: exercise
 title: X^5 - X - 1 is irreducible and separable mod 3
+subtitle: Smith 8000e galois 9
 classification:
   areas:
   - algebra
@@ -12,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Smith 8000e galois 9"}
+::: {.exercise}
 Show that $X^5 - X - 1$ is irreducible and separable mod 3.
 :::

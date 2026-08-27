@@ -15,6 +15,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Baire"}
+::: {.theorem}
 If $X$ is a complete metric space, $X$ is a **Baire space**: the intersection of countably many dense open sets in $X$ is again dense in $X$.
 :::

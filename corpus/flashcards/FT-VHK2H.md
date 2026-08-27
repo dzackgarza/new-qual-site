@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Conditions for Tonelli vs Fubini"}
+::: {.theorem}
 - Tonelli: non-negative and measurable
 
 - Fubini: Integrable

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Simple modules"}
+::: {.definition}
 A module is **simple** iff it has no nontrivial proper submodules.
 :::

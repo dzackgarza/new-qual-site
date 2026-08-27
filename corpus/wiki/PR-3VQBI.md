@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Simplifications of separability for finite extensions"}
+:::{.proposition}
 If $L/k$ is a finite extension, then, TFAE:
 
 - $L/k$ is separable.

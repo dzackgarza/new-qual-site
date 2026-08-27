@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Irreducible"}
+::: {.definition}
 A polynomial $p(x)$ over a field is **irreducible** iff $\deg p \geq 1$ and $p(x)= q(x)r(x) \implies q(x)$ or $r(x)$ is a nonzero constant.
 
 The bound is $\geq 1$, not $>1$: every linear polynomial is irreducible.

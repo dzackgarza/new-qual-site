@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="del and delbar operators"}
+:::{.definition}
 \[
 \del \da \del_z \da {1\over 2}\qty{\del_x - i \del_y}
 \quad

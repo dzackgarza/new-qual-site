@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="The subspace topology"}
+:::{.definition}
 For $(X, \tau)$ a topological space and $U \subseteq X$ an arbitrary subset, the space $(U, \tau_U)$ is a topological space with a **subspace topology** defined by
 \[
 \tau_U \da \ts {Y \intersect U \st U \in \tau}

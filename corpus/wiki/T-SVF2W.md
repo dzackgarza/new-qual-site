@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Continuation Principle / Identity Theorem"}
+::: {.theorem}
 Suppose $f$ is holomorphic on a bounded connected domain $\Omega \neq \emptyset$.
 TFAE:
 

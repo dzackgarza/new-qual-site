@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Diamond Theorem / 2nd Isomorphism Theorem"}
+:::{.theorem}
 If $S \leq G$ and $N \normal G$, then
 \[
 \frac{SN}{N} \cong \frac{S}{S\intersect N} \quad \text{ and }\quad \abs{SN} = \frac{\abs S \abs N}{\abs{S\intersect N}}

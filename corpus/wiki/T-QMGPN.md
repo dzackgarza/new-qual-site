@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Implicit Function Theorem"}
+::: {.theorem}
 Suppose $f\in C^1(\RR^{m+n}, \RR^n)$, written $f(x,y)$ with $x\in\RR^m$ and $y\in\RR^n$, that $f(a, b) = 0$, and that the partial derivative in the second block, $\partial f/\partial y\, (a,b)$, is an invertible $n\times n$ matrix.
 Then there exists a neighborhood $U\subseteq \RR^m$ containing $a$ and a unique $g\in C^1(U, \RR^n)$ such that $g(a) = b$ and $f(x, g(x)) = 0$ for all $x\in U$.
 :::

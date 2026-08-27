@@ -3,6 +3,7 @@ schema: qual/card@1
 id: E-GZX7B
 kind: exercise
 title: Components of locally compact paracompact Hausdorff spaces are second countable
+subtitle: Munkres §41.10
 classification:
   areas:
   - topology
@@ -13,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="Munkres §41.10"}
+::: {.exercise}
 
 Theorem.
 If $X$ is a Hausdorff space that is locally compact and paracompact, then each component of $X$ has a countable basis.

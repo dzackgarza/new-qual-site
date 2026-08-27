@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Sets known to be measurable"}
+::: {.fact}
 - Open
 
 - Closed

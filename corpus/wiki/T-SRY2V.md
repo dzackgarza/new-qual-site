@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Holomorphic implies analytic"}
+::: {.theorem}
 Suppose $f$ is holomorphic on an open set $\Omega$, and let $D$ be a disc centred at $p$ whose closure is contained in $\Omega$.
 Then $f$ has a power series expansion at $p$,
 \[

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Uniformly continuous $L^1$ functions vanish at infinity."}
+:::{.proposition}
 \[
 f\in L^1 \text{ uniformly continuous }\implies f(x) \convergesto{\abs x\to \infty }0
 .\]

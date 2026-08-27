@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="Commuting derivatives with integrals, Folland 2.27"}
+:::{.proposition}
 If $f:X\cross I \to \CC$ where $f_t: X\to \CC$ is integrable for each $t$, then if $\abs{f(x, t)} \leq \abs{g(x)}$ for some $g\in L^1$, then
 \[
 \lim_{t\to t_0}\int_X f(x, t) \dmu = \int_X f(x, t_0) \dmu \da F(t_0)

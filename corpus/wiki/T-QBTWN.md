@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="The operator norm is a norm"}
+::: {.theorem}
 If $H$ is a Hilbert space, then $(H\dual, \norm{\wait}_{\text{op}})$ is a normed space.
 :::
