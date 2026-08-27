@@ -29,6 +29,10 @@ $\limsup$ is largest limit of a convergent subsequence, $\liminf$ is the smalles
 
 [[PR-4EVYE]]
 
+[[FF-QLRXX]]
+
+[[FD-D2QPH]]
+
 :::{.proof title="showing a useful trick"}
 Show that
 \[
@@ -66,6 +70,12 @@ where each group with $a_k$ has $2^k$ terms.
 ## Uniform Convergence
 
 [[PR-WUZSG]]
+
+[[FF-I6VGK]]
+
+[[FS-FZL2X]] [[FS-THMMW]]
+
+[[FF-IAUQG]] [[FS-5FKPD]]
 
 :::{.remark title="Negating the Sup Norm test"}
 **Negating**: find an $x$ which depends on $n$ for which $\norm{f_n}_\infty > \eps$ (negating small tails) or $\norm{f_n - f_m} > \eps$ (negating the Cauchy criterion).
@@ -106,3 +116,5 @@ In other cases, you may need to show the limit is bounded, or has bounded deriva
 :::
 
 [[T-3QNBQ]]
+
+[[FT-ITKJU]]

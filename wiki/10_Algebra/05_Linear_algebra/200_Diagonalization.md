@@ -10,6 +10,8 @@ $A^{\dagger}$ denotes the conjugate transpose of $A$.
 
 :::
 
+[[FD-K6FVX]]
+
 [[L-C5DDK]]
 
 [[T-WQHMA]]
@@ -59,6 +61,8 @@ By induction on number of operators
 :::
 
 [[T-6ABNR]]
+
+[[FT-BC6S2]]
 
 :::{.proof}
 $\implies$:

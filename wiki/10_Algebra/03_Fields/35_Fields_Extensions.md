@@ -13,6 +13,10 @@ Galois is defined as **normal and separable**.
 
 [[D-PUOGJ]]
 
+[[FD-J3HIA]] [[FD-QPNDA]]
+
+[[FD-3V3ZW]]
+
 [[T-3HPWT]]
 
 :::{.corollary}
@@ -21,6 +25,10 @@ $\GF(p^n)$ is a simple extension over $\FF_p$.
 :::
 
 [[D-VRPYB]]
+
+[[FD-2EVYB]]
+
+[[FD-KWXK3]] [[FD-HVSOB]] [[FD-NS5RF]]
 
 [[T-NGBVC]]
 
@@ -37,6 +45,10 @@ But then \( \alpha \) is the root of the polynomial \( f \).
 ## Normal Extensions
 
 [[D-LZTAK]]
+
+[[FD-TP2IZ]] [[FD-JJFZ3]]
+
+[[FD-LHTRR]]
 
 :::{.example title="of normal extensions"}
 \envlist
@@ -118,6 +130,8 @@ $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
 :::
 
 [[D-JGYLA]]
+
+[[FD-6WSIA]] [[FD-OUWGL]]
 
 :::{.fact}
 If $\alpha \in K/k$ is separable, then $\alpha$ is separable in any larger field $L/K/k$ since the minimal polynomial over the larger field will divide the minimal polynomial over the smaller field. 
@@ -329,6 +343,14 @@ $\implies$:
 
 [[D-5JYEI]]
 
+[[FD-4GFTY]]
+
+[[FT-3WWKN]]
+
+[[FD-YJEDU]]
+
+[[FE-Z4VF2]]
+
 :::{.fact}
 For $L/k$ algebraic and $\ch k = 0$, $L/k$ is Galois $\iff L/k$ is normal.
 
@@ -373,6 +395,8 @@ Since $L/K$ is Galois, every $f\in \Gal(K/k)$ lifts to $\Gal(L/k)$, making $\rho
 ## Fundamental Theorem of Galois Theory
 
 [[T-NLPZY]]
+
+[[FT-GJ6NR]]
 
 :::{.remark}
 A trick for remembering the degree/index correspondence:

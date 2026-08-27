@@ -72,6 +72,10 @@ For any group action, the kernel is the intersection of all stabilizers:
 
 [[D-KGGWK]]
 
+[[FD-KSKDG]]
+
+[[FD-IGEOR]] [[FD-W3MQW]]
+
 [[PR-GSDKO]]
 
 :::{.proof title="of orbit stabilizer"}
@@ -179,9 +183,15 @@ Now taking cardinalities yields the class equation:
 
 [[C-O7CP3]]
 
+[[FD-L2TEC]]
+
 [[E-6AOD7]]
 
 [[C-HE5SL]]
+
+[[FD-XRRNZ]]
+
+[[FF-OL75S]]
 
 :::{.proof title="of Burnside's Lemma"}
 Strategy: form the set $A \da \ts{ (g,x) \in G\cross X \st g\actson x = x }$ and write/count it in two different ways.

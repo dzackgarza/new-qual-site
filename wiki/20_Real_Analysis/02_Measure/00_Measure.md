@@ -30,7 +30,11 @@ E = F_\sigma \disjoint N && E \disjoint N = G_\delta
 
 [[T-7LQ7X]]
 
+[[FS-ACP4W]]
+
 [[PR-KKJ6O]]
+
+[[FT-OMADI]]
 
 :::{.proof title="sketches"}
 Idea: break into disjoint annuli!
@@ -110,11 +114,15 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 
 [[D-UYOGE]]
 
+[[FT-O4DRR]] [[FF-LA4J2]]
+
 # Measures on $\RR^d$
 
 [[PR-I4YON]]
 
 [[PR-DXWWU]]
+
+[[FR-7YFAU]]
 
 :::{.proof title="of translation/dilation invariance"}
 \envlist
@@ -150,6 +158,10 @@ Measurable sets form a sigma algebra, and these are expressed as countable union
 
 [[T-OTR5M]]
 
+[[FF-GNU7E]]
+
+[[FR-CSUMF]]
+
 :::{.proof title="of Borel-Cantelli"}
 \envlist
 
@@ -175,6 +187,8 @@ Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear t
 [[PR-UHWNM]]
 
 [[PR-Z5VSQ]]
+
+[[FF-UW3C7]] [[FE-YOIJM]]
 
 :::{.proof title="Homeomorphisms need not preserve measurability"}
 Let $C\subseteq[0,1]$ be the middle-thirds Cantor set, so $C$ is compact with $m(C)=0$, and let $c\colon[0,1]\to[0,1]$ be the Cantor–Lebesgue function (constant on each complementary interval of $C$, $c(0)=0$, $c(1)=1$).

@@ -15,6 +15,8 @@ In other words, $v_a$ is the lowest power of $(z-a)$ occurring in a Laurent expa
 
 [[D-IWIA5]]
 
+[[FF-QZXBS]]
+
 :::{.warnings title="Branch singularities"}
 Not all singularities are isolated, and thus don't fall into this classification.
 One may also have **branch singularities**, e.g. $\Log(z)$ at $z=0$.
@@ -47,6 +49,8 @@ Isolated singularities can also be classified by their limiting behavior near th
 
 [[D-TUAYD]]
 
+[[FD-BRJK5]] [[FD-CCVUQ]]
+
 :::{.example title="Removable singularities"}
 \envlist
 
@@ -56,6 +60,8 @@ Isolated singularities can also be classified by their limiting behavior near th
 :::
 
 [[T-ZZJDP]]
+
+[[FT-5NI77]] [[FT-LGWHM]]
 
 :::{.proof}
 Take $\gamma$ to be a circle centered at $z_0$ and use
@@ -78,6 +84,8 @@ This is valid for $z\neq z_0$, but the right-hand side is analytic. (?)
 ## Essential
 
 [[D-VKP6N]]
+
+[[FD-BACTZ]] [[FD-ZPKLQ]]
 
 :::{.example title="Essential singularities"}
 $f(z) \da e^{1/z}$ has an essential singularity at $z=0$, since we can expand and pick up infinitely many negative terms:
@@ -156,6 +164,8 @@ $\contradiction$
 ## Poles
 
 [[D-AUD6K]]
+
+[[FD-C7EQD]] [[FD-EKGLW]]
 
 :::{.remark}
 Any pole admits a neighborhood where $f$ is nonvanishing, and in fact bounded below.

@@ -29,16 +29,38 @@ The most useful tricks of the trade:
 
 ## Basics: Polynomials
 
+[[FD-CI4NB]] [[FD-SZKGS]]
+
+[[FD-24RNF]] [[FD-QFRSI]]
+
 [[D-BVMTZ]]
+
+[[FD-KPW3H]] [[FD-GHY34]]
 
 [[D-4VC6X]]
 
 [[T-JEZZY]]
 
+[[FT-OXN3Y]]
+
 :::{.corollary}
 A primitive polynomial $p\in \QQ[x]$ is irreducible $\iff p$ is irreducible in $\ZZ[x]$.
 
 :::
+
+### Standard Factorizations and Root Counts
+
+:::{.remark}
+Irreducibility arguments usually start by trying to factor by hand, so the identities below are worth having ready.
+Descartes' rule bounds how many real roots such a factorization can account for, which is often enough to finish a problem over $\QQ$ or $\RR$.
+
+:::
+
+[[FF-UC7SQ]] [[FF-ED3CD]]
+
+[[FF-2AKVH]] [[FF-HAMDC]]
+
+[[FF-HK72Z]]
 
 ## Definitions
 
@@ -57,6 +79,10 @@ A primitive polynomial $p\in \QQ[x]$ is irreducible $\iff p$ is irreducible in $
 [[D-KGF4K]]
 
 [[D-KQFIV]]
+
+[[FD-YYLYR]]
+
+[[FD-3GZPO]]
 
 :::{.example title="of a non-perfect field"}
 Example of a non-perfect field: $\FF_p(t)$.
@@ -183,6 +209,8 @@ This has no roots in $k$.
 
 [[D-JX3YC]]
 
+[[FD-HM4P2]]
+
 :::{.remark}
 \envlist
 
@@ -211,6 +239,8 @@ This has no roots in $k$.
 [[D-IPR4B]]
 
 [[PR-JLDJ6]]
+
+[[FF-MUJDE]] [[FF-UACKH]]
 
 :::{.fact title="computing cyclotomic polynomials, special cases and examples"}
 \[

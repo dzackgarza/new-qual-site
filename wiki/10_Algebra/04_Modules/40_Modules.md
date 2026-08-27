@@ -12,6 +12,8 @@ order: 40
 
 [[PR-TAPZF]]
 
+[[FF-UYMWY]]
+
 [[D-JUYFQ]]
 
 [[PR-JBDUI]]
@@ -24,9 +26,17 @@ Then $(x + N) + (y + N) = (x+y) + N$ and $(x+N)(y+N) = (xy) + N$.
 
 [[D-CRWZ7]]
 
+[[FD-BVM37]]
+
 [[D-4HEUB]]
 
+[[FD-2EUYX]]
+
+[[FD-GNRTS]]
+
 [[D-HY7UU]]
+
+[[FD-S2W5E]]
 
 ## Structure Theorems
 
@@ -73,9 +83,17 @@ This uses the fact that free modules over a PID are torsionfree.
 
 [[D-IGB7I]]
 
+[[FD-CVEAI]]
+
 [[PR-DLPTR]]
 
 [[D-ZJJ7G]]
+
+[[FF-CY5EA]]
+
+[[FD-BPUNZ]] [[FD-U6KUJ]]
+
+[[FD-SK4ON]]
 
 [[PR-4K4XZ]]
 
@@ -103,6 +121,8 @@ So any basis has size one, which would mean $\QQ = \ts{ \pm 1/d, \pm 2/d, \cdots
 :::
 
 [[D-RHJMK]]
+
+[[FD-6XJ7D]]
 
 :::{.remark}
 There is a nice way to remember the right diagrams for injective and projective modules.
@@ -197,6 +217,8 @@ Since free implies torsionfree, \( R_1 \) can not be a free \(R\dash\)module.
 ## Classification of Modules over a PID
 
 [[PR-UVUS6]]
+
+[[FD-LHLDU]]
 
 [[PR-ASW5L]]
 

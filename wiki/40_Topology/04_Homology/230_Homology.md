@@ -44,6 +44,8 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 :::
 
+[[FF-UBJ3S]]
+
 [[T-FBMYQ]]
 
 :::{.fact title="Assorted facts"}
@@ -68,17 +70,21 @@ H_{i}(S^n) =
 
 :::
 
-:::{.example title="Real Projective Spaces"}
+### Real Projective Spaces
 
-:::
+[[FF-SYCKI]] [[FF-LFY7V]]
 
-:::{.example title="Complex Projective Spaces"}
+[[FF-MJEUU]]
 
-:::
+[[FF-7LLAF]]
 
-:::{.example title="Surfaces"}
+### Complex Projective Spaces
 
-:::
+[[FF-NEJ3S]]
+
+### Surfaces
+
+[[FF-EC6QN]] [[FF-QOQ2K]]
 
 ## Mayer-Vietoris
 
@@ -86,6 +92,8 @@ H_{i}(S^n) =
 Since $\ZZ$ is free and thus projective, any exact sequence of the form $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits and $A\cong \ZZ^{n}\cross \ZZ^m$.
 
 :::
+
+[[FF-5LPTQ]]
 
 [[T-3VUOH]]
 

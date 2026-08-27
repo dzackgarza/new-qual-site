@@ -115,6 +115,8 @@ Every abelian groups has a resolution of this form and length 2.
 
 - Exact over vector spaces
 
+[[FF-JXE7U]]
+
 ## Properties of Tor
 
 - $\tor_R^0(A, B) = A \tensor_R B$
@@ -147,6 +149,8 @@ $$
 \tor: \mathcal{F}(A) \to (\wait \tensor B) \to H_*
 $$
 
+[[FF-5QPHF]]
+
 ## Computing Ext
 
 $$
@@ -158,6 +162,8 @@ Shorthand/mnemonic:
 $$
 \ext: \mathcal{F}(B) \to \hom(A, \wait) \to H_*
 $$
+
+[[FF-WZDSS]]
 
 ## Hom/Ext/Tor Tables
 
@@ -180,6 +186,8 @@ $$
 | $\QQ$ | $0$ | $\mathcal{A_p}/\QQ$ | $0$ |
 
 Where $d = \gcd(m, n)$ and $\ZZ_0 \definedas 0$.
+
+[[FF-D2KJJ]]
 
 Things that behave like "the zero functor":
 

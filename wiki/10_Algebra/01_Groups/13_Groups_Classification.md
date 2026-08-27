@@ -176,6 +176,8 @@ $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 [[T-SVJUN]]
 
+[[FT-7NMQR]]
+
 [[E-DFUYC]]
 
 :::{.remark}
@@ -218,6 +220,8 @@ With these conditions, the following map is an isomorphism:
 [[D-SS34F]]
 
 [[D-JQNJQ]]
+
+[[FD-JTWOB]] [[FD-H764S]]
 
 [[PR-TLPVU]]
 
@@ -569,3 +573,25 @@ Proof of first claim: let $m\da \size G = pqr$, then $G$ has a normal subgroup o
   - Now use that $R'' \operatorname{char} R'$ since Sylows are characteristic, and $R'\normal G$, so $R''\normal G$ too.
 
 :::
+
+### Groups of Small Order
+
+:::{.remark}
+The classifications above give the shape of the answer for orders $p$, $p^2$, and $pq$.
+The lists below are the same information read off for the small orders that actually turn up on exams, so that a counting argument can be checked against a known answer.
+
+:::
+
+[[FF-VAKLJ]]
+
+[[FF-TSZNT]] [[FF-TEGRU]]
+
+[[FF-TDXQT]] [[FF-C3SN4]]
+
+[[FF-2NPCE]] [[FF-I6XN6]]
+
+[[FF-GWCXC]] [[FF-Q6XCL]]
+
+[[FF-IRHG3]] [[FF-MBUKG]]
+
+[[FF-JKCAM]]

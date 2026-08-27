@@ -12,6 +12,10 @@ order: 51
 
 [[E-ZQGR5]] [[E-FS7GZ]] [[E-VWVTY]]
 
+[[FE-LAN3V]] [[FE-VWNUI]]
+
+[[FE-EUOB2]]
+
 ## Finding Laurent Expansions
 
 [[E-BUVLS]] [[E-VCLTY]] [[E-DUMQG]] [[E-AHBVF]] [[E-SQ4GJ]] [[E-ENJAF]] [[E-GMGFS]] [[E-XOCPO]] [[E-QCVGX]]

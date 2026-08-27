@@ -9,6 +9,8 @@ Idea: maximum modulus plus Rouche.
 
 [[C-FRF33]]
 
+[[FT-OEYLQ]]
+
 ::: {.proof title="Using Rouché"}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-26-16.png)

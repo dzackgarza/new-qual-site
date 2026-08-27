@@ -9,7 +9,6 @@ order: 4
 - Practice some $\varepsilon-\delta$ problems
 - Find a way to consistently + quickly remember the direction of injectivity
 
-
 ## 2015 Fall
 
 - Review examples and counterexamples in real analysis
@@ -17,7 +16,6 @@ order: 4
 - Review $\varepsilon\dash\delta$ proofs.
 - Injectivity definition again
 - Alternate iff proof for $P\iff Q$: prove $P \implies Q$ and $\neg P \implies \neg Q$.
-
 
 ## 2014 Fall
 

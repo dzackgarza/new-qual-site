@@ -22,7 +22,13 @@ The first 4 can be obtained from the following pasting diagrams:
 
 ## Classification of Surfaces
 
+### The Classification Theorem
+
 [[T-NBARV]]
+
+[[FF-GBHJL]]
+
+[[FF-D5Q4S]] [[FF-WDTKX]]
 
 [[PR-JL5JP]]
 
@@ -33,6 +39,16 @@ Examples, general procedure?
 
 :::
 
+### Euler Characteristic
+
+:::{.remark}
+For closed surfaces the Euler characteristic and orientability together decide the homeomorphism type, so most classification questions reduce to computing $\chi$ and then reading the table below.
+:::
+
+[[FF-IEHB2]] [[FF-CKGXX]]
+
+[[FF-W3AIU]]
+
 :::{.fact table="Table of surfaces possible for a given Euler characteristic"}
 
 | Orientable?  | $-4$       | $-3$        | $-2$       | $-1$        | $0$                  | $1$     | $2$         |
@@ -41,6 +57,12 @@ Examples, general procedure?
 | No           | ?          | ?           | ?          | ?           | $\KK, \bbm$          | $\RP^2$ | $\emptyset$ |
 
 :::
+
+[[FF-23V5J]] [[FF-4DFKT]]
+
+[[FF-SM63J]] [[FF-I5FIJ]]
+
+[[FF-BOIT5]] [[FF-WLJEK]]
 
 [[PR-QV4U5]]
 
@@ -64,6 +86,8 @@ which is the stated identity.
 
 :::
 
+[[FF-AE7ID]]
+
 [[C-CT2NX]]
 
 :::{.proof}
@@ -71,6 +95,8 @@ Set $U\simeq A$ and $V\simeq B$ so that $U\cap V\simeq S^2$.
 Inclusion-exclusion then gives $\chi(A\# B)=\chi(A)+\chi(B)-\chi(S^2)=\chi(A)+\chi(B)-2$.
 
 :::
+
+### Connect Sums and Polygon Decompositions
 
 [[PR-GKRFP]]
 

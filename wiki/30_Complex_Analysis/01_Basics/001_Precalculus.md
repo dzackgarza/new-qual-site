@@ -113,3 +113,48 @@ So given $ax^2+bx+c=0$, you can always write it as $a(x+d)^2 + e$ where $d\da b/
 
 :::
 
+## Trigonometry
+
+:::{.remark}
+These are the values that come up when a contour is parameterized, when a root of unity is written in rectangular form, or when a pole sits at a standard angle.
+They are recall rather than derivation, and they are collected here for the same reason as the numerology above: an exam is a bad place to rebuild them.
+
+:::
+
+[[FF-ATMHV]] [[FF-ZQFSR]] [[FF-TGTS7]]
+
+[[FF-CLFAB]] [[FF-W2TS2]] [[FF-VT2E7]]
+
+[[FF-YBIQV]] [[FF-CIESS]] [[FF-SF7VN]]
+
+[[FF-JLUCP]]
+
+[[FF-Y6IOA]] [[FF-WDDTM]] [[FF-A7OEY]]
+
+[[FF-7KQCC]] [[FF-2VUTS]] [[FF-2ABHQ]]
+
+:::{.remark}
+Written in rectangular coordinates, a root of unity is a pair of these values, and the tangent half-angle substitution from the Geometry section above turns the same values into a rational parameterization of the circle.
+
+:::
+
+[[FF-XEQFR]] [[FF-TGHJ5]]
+
+[[FF-2OHYV]]
+
+[[FF-TBIC5]]
+
+## Hyperbolic Functions
+
+:::{.remark}
+The hyperbolic functions appear as soon as $\cos$ and $\sin$ are evaluated at a complex argument: splitting $z = x+iy$ turns an angle addition formula into a mixed trigonometric-hyperbolic one.
+The series expansions are collected with the other standard series in [[050 Series Reference|Series: Reference]].
+
+:::
+
+[[FD-XUGN3]]
+
+[[FF-AGEQ4]] [[FF-MV5X6]]
+
+[[FF-VFWB6]] [[FF-VR4UT]]
+

@@ -99,3 +99,14 @@ M_2
 
 :::
 
+## Roots of Matrices
+
+:::{.remark}
+The matrix roots of unity above are already counterexamples to a cancellation law that holds for positive reals: equal powers do not force equal matrices.
+
+:::
+
+[[FF-VKYM3]]
+
+[[FE-W56LS]] [[FE-ISVDM]]
+

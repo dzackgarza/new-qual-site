@@ -6,6 +6,10 @@ order: 12
 
 [[T-22RQZ]]
 
+[[FT-5MASA]] [[FT-REHJT]]
+
+[[FF-HO7RN]]
+
 :::{.slogan}
 The $n$th Taylor coefficient of an analytic function is at most $\sup_{\abs z = R} \abs{f}/R^n$.
 \[

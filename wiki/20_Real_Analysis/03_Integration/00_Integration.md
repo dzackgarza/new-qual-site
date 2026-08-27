@@ -31,6 +31,8 @@ order: 0
 
 [[D-DHFN4]]
 
+[[FD-OFT7I]] [[FD-OOCQD]]
+
 :::{.remark}
 Note that we still require Borel sets in the target for Lebesgue measurability!
 Taking $(\mcl_{\RR^d}, \mcl_\RR)$ functions is too stringent, e.g. this class does not contain continuous functionals.
@@ -55,6 +57,8 @@ But then $k\da \chi_B \circ g\inv$ is not $\mcl\dash$measurable, since $k\inv(1)
 
 [[D-R4VKE]]
 
+[[FD-Q3XHG]]
+
 :::{.remark title="Integrals split across disjoint sets"}
 A useful fact: for $(X, \mathcal{M})$ a measure space, integrals split across disjoint sets:
 \[
@@ -74,6 +78,10 @@ $f(x) = x\chi_\QQ(x)$ is essentially bounded but not bounded.
 
 [[T-YSMII]]
 
+[[FF-EMDBP]]
+
+[[FF-C7GY4]] [[FF-LMANJ]]
+
 :::{.slogan}
 Large powers of $x$ help us in neighborhoods of infinity and hurt around zero.
 
@@ -82,6 +90,8 @@ Large powers of $x$ help us in neighborhoods of infinity and hurt around zero.
 ## The Convergence Theorems
 
 [[T-5K3IO]]
+
+[[FT-5G4Y3]]
 
 :::{.slogan}
 Measurable, non-negative, increasing pointwise a.e. allows commuting limits and integrals.
@@ -106,6 +116,8 @@ Let $c\nearrow 1$, then take the supremum over simple $\varphi\leq f$, to conclu
 :::
 
 [[T-IJQQG]]
+
+[[FT-LCR5P]]
 
 :::{.proof title="of DCT"}
 The pointwise limit $f$ is measurable, and $\abs{f}\leq g$ almost everywhere, so $f\in L^1$.
@@ -196,6 +208,8 @@ so the DCT applies to $g_n$ and
 
 [[T-LDJNS]]
 
+[[FT-P5UNP]]
+
 :::{.proof title="of Fatou"}
 Let $g_n\da \inf_{k\geq n} f_k$.
 Then $0\leq g_n\nearrow \liminf_k f_k$, so the monotone convergence theorem gives
@@ -211,8 +225,14 @@ It does hold if $0\leq f_n\leq g$ with $g\in L^1$, by applying the liminf form t
 
 :::
 [[T-6PRW3]]
+
+[[FT-4JRQX]]
 [[T-4GPEF]]
+
+[[FT-T7OAO]]
 [[T-X7XZX]]
+
+[[FT-H6AWV]] [[FT-VHK2H]]
 [[PR-V4MOK]]
 [[PR-JW3QE]]
 
@@ -225,6 +245,8 @@ It does hold if $0\leq f_n\leq g$ with $g\in L^1$, by applying the liminf form t
 :::
 [[T-MN6WQ]]
 
+[[FS-BM2PV]]
+
 :::{.proof title="Commuting sums with integrals (integrable)"}
 \envlist
 
@@ -233,6 +255,8 @@ It does hold if $0\leq f_n\leq g$ with $g\in L^1$, by applying the liminf form t
 
 :::
 [[PR-EHIXY]]
+
+[[FR-KEWV2]]
 
 :::{.proof title="Absolute $L^1$ summability"}
 Nonnegativity of $\abs{f_k}$ and the monotone convergence theorem give

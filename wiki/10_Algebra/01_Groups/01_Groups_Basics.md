@@ -66,6 +66,8 @@ It turns out that a group morphism between groups of the same size that is eithe
 
 :::
 
+[[FD-JI2RH]] [[FD-BWVRA]]
+
 :::{.fact title="Bezout's Identity"}
 If $a, b\in \ZZ$ with $\gcd(a, b) = d$, then there exist $s,t\in \ZZ$ such that
 \[
@@ -110,6 +112,8 @@ So $\psi$ factors through $\ker \pi$ yielding a morphism $F/\ker \pi \to H$.
 [[D-BQ4BQ]]
 
 [[PR-U5CHT]]
+
+[[FF-QVQXM]]
 
 :::{.proof title="of the one-step subgroup test"}
 \envlist
@@ -167,7 +171,11 @@ Conversely, if $C(h_i) \subseteq H$ for all $h_i \in H$, then $gh_ig\inv \in H$ 
 
 [[D-PX64W]]
 
+[[FD-SSR6N]]
+
 [[D-OZ2RR]]
+
+[[FD-HRCTL]]
 
 :::{.remark}
 $C_G(H) \normal N_G(H)$ for any $H$.
@@ -273,6 +281,8 @@ Nice trick: write $G/H = \ts{ g_1 H, g_2 H,\cdots, g_n H }$, then $G = \disjoint
 
 [[D-FIB7S]]
 
+[[FD-OR3BW]]
+
 ### Cyclic Groups
 
 [[T-QMKXQ]]
@@ -293,6 +303,12 @@ If $G = \gens{ a }$ with $a^n=e$, then for each $d\divides n$ take $H_d \da \gen
 [[D-6BTFJ]]
 
 [[D-BZ3KD]]
+
+[[FD-PIVQZ]]
+
+[[FD-GHDF2]]
+
+[[FF-6MNV6]]
 
 :::{.remark}
 \envlist
@@ -315,6 +331,8 @@ If $G = \gens{ a }$ with $a^n=e$, then for each $d\divides n$ take $H_d \da \gen
 :::
 
 [[D-TMME3]]
+
+[[FD-X4DBP]]
 
 [[PR-JY4PV]]
 

@@ -5,10 +5,9 @@ order: 90
 
 # Archives
 
-Material off the subject study paths: source lists, Anki decks, and reading past the syllabus.
+Material off the subject study paths: source lists and reading past the syllabus.
 
-[[000_Card_Archives|Card Archives]] lists imported exams and flashcard decks by source.
-[[90_Archives/Flashcards/index|Flashcards]] is those Anki decks, filed by subject.
+[[000_Card_Archives|Card Archives]] lists imported exams by source.
 [[000_Solution Compendia|Solution Compendia]] collects solution writeups that are not filed under a subject.
 [[Qual Workshop Index]] is the week-by-week workshop table of contents; the weeks themselves sit under each subject.
 [[Topics]] is undergraduate and prelim-level miscellany.

@@ -59,6 +59,8 @@ Examples of some more exotic spaces that show up less frequently:
 
 :::
 
+[[FE-BGEZL]] [[FE-U5AQQ]]
+
 :::{.example title="Non-Hausdorff spaces"}
 The following spaces are non-Hausdorff:
 

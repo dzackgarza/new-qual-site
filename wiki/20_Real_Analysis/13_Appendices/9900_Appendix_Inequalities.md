@@ -11,6 +11,8 @@ title: Basics
 
 [[PR-X5D4Z]]
 
+[[FF-4XBYG]]
+
 :::{.remark title="Different forms of CS"}
 In general, Cauchy-Schwarz relates inner product to norm, and only happens to relate norms in $L^1$.
 Some other useful forms:
@@ -25,7 +27,11 @@ Some other useful forms:
 
 [[PR-IJOPU]]
 
+[[FF-2M3OC]] [[FF-3AABE]]
+
 [[PR-7BGSE]]
+
+[[FF-OQ6YZ]]
 
 :::{.proof title="of Holder's inequality"}
 It suffices to show this when $\norm{f}_p = \norm{g}_q = 1$, since
@@ -84,7 +90,11 @@ This appears in several other forms:
 
 [[PR-YO7MV]]
 
+[[FD-3BK6U]]
+
 [[PR-XUVZY]]
+
+[[FT-ST72T]] [[FF-CKSA3]]
 
 :::{.remark}
 This does not handle $p=\infty$ case.
@@ -133,6 +143,8 @@ q &= \frac p {p-1}
   
 [[PR-2P7FZ]]
 
+[[FF-AVCZA]] [[FF-WV2QN]]
+
 :::{.remark title="some useful special cases"}
 \[  
 \norm{f\ast g}_1      & \leq \norm{f}_1 \norm{g}_1 \\
@@ -154,6 +166,8 @@ q &= \frac p {p-1}
 [[PR-7KTA6]]
 
 [[PR-OPSAC]]
+
+[[FF-Z3E3C]]
 
 [[PR-CHY3F]]
 

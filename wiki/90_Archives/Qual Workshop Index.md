@@ -11,8 +11,6 @@ The earlier table of contents listed a Complex “Week n misc” page that is no
 
 ## Complex Analysis
 
-The earlier table of contents also named the Qual Complex Analysis deck, now under [[90_Archives/Flashcards/Complex_Analysis/index|Flashcards]].
-
 - [[30_Complex_Analysis/10_Workshops/index|Workshops]]
 - [[30_Complex_Analysis/10_Workshops/Complex Week 1 Preliminaries]]
 - [[30_Complex_Analysis/10_Workshops/Complex Week 2 Cauchy]]
@@ -34,8 +32,6 @@ The earlier table of contents also named the Qual Complex Analysis deck, now und
 - [[10_Algebra/09_Workshops/Algebra Week n+1 Linear Algebra]]
 
 ## Topology
-
-The earlier table of contents also named the Qual Topology deck, now under [[90_Archives/Flashcards/Topology/index|Flashcards]].
 
 - [[40_Topology/09_Workshops/index|Workshops]]
 - [[40_Topology/09_Workshops/Topology Week 1 Preliminaries]]

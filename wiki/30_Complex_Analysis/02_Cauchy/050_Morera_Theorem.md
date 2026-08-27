@@ -6,6 +6,8 @@ order: 50
 
 [[T-LHSMY]]
 
+[[FT-B73T5]]
+
 ::: {.slogan}
 If every integral along a triangle vanishes, implies holomorphic.
 :::

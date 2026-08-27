@@ -80,6 +80,18 @@ Take a finite subcover by compactness of $X$, then they push forward to a finite
 
 [[PR-R72XL]]
 
+## Separation Axioms
+
+:::{.remark}
+The separation axioms grade a space by how far apart open sets can hold things.
+Hausdorff separates pairs of points, normality separates pairs of disjoint closed sets.
+Urysohn's lemma upgrades that set-level separation to a continuous function, which is what makes normality usable in proofs.
+:::
+
+[[FT-MHQGF]]
+
+[[FT-52GNK]] [[FT-J7RQV]]
+
 ## Maps and Homeomorphism
 
 [[T-WX5Y6]]
@@ -96,6 +108,8 @@ A compact set in a Hausdorff space is closed, so $f(A)$ is closed in $Y$.
 Every space has at least one retraction - for example, the constant map $r:X \into \theset{x_0}$ for any $x\_0 \in X$.
 
 :::
+
+[[FT-M5BHD]]
 
 [[T-JSXGR]]
 

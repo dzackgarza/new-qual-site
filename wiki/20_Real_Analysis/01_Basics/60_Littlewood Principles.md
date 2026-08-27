@@ -6,6 +6,10 @@ order: 60
 
 [[T-XZE3E]]
 
+[[FT-OGS76]]
+
+[[FR-GG457]]
+
 ::: {.proof title="of Egorov"}
 
 ![figures/2021-06-11_18-07-43.png](../../../../assets/assets/figures/2021-06-11_18-07-43.png)
@@ -14,6 +18,8 @@ order: 60
 :::
 
 [[T-CGFCU]]
+
+[[FT-XIVPL]]
 
 ::: {.proof title="of Lusin"}
 

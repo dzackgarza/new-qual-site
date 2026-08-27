@@ -75,6 +75,8 @@ For all $x, y\in H$,
 
 [[T-4CDKK]]
 
+[[FF-54Z44]]
+
 :::{.proof title="of Bessel's inequality"}
 \envlist
 
@@ -115,7 +117,11 @@ For all $x, y\in H$,
 
 [[T-5AALA]]
 
+[[FT-NFMJW]]
+
 [[T-LDCZB]]
+
+[[FF-UT5GL]] [[FT-OR6TO]]
 
 :::{.proof}
 \envlist
@@ -201,6 +207,8 @@ The only nontrivial property is the triangle inequality, but
 :::
 
 [[T-W5SDY]]
+
+[[FF-BSYDE]]
 
 :::{.proof}
 \envlist

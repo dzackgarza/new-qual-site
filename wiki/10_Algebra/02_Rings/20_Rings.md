@@ -144,6 +144,8 @@ Important notes:
 
 [[D-O26OY]]
 
+[[FD-LXZIW]]
+
 ### Elements  
 
 [[D-AVBIP]]
@@ -152,7 +154,11 @@ Important notes:
 
 [[D-TO3IY]]
 
+[[FD-6LLJF]] [[FD-R4K7Z]]
+
 [[D-AWSKI]]
+
+[[FD-S52W7]]
 
 :::{.fact}
 If $R$ is an integral domain, prime $\implies$ irreducible.
@@ -191,6 +197,8 @@ If $I_1 \subseteq I_2 \subseteq \cdots$ are ideals then $\union_j I_j$ is an ide
 
 [[D-5BM46]]
 
+[[FD-OSSYR]]
+
 [[PR-LX7GH]]
 
 :::{.example title="of why the converse doesn't hold"}
@@ -204,6 +212,8 @@ But $[y^3]$ is not prime since it divides $[x^2]$ but doesn't divide $[x]$.
 [[D-CXXCG]]
 
 [[D-7XH2R]]
+
+[[FD-CD2FE]]
 
 :::{.example title="Some counterexamples"}
 Some examples.
@@ -250,7 +260,11 @@ Maximal ideals of $R[x]$ are of the form $I = (x - a_i)$ for some $a_i \in R$.
 
 [[D-4I3SL]]
 
+[[FD-S62UB]]
+
 [[D-QJ3QL]]
+
+[[FD-2A5XH]]
 
 :::{.example title="of integral domains"}
 Examples of integral domains: $\ZZ, k\adjoin{\elts{x}{n}}$.
@@ -259,6 +273,8 @@ Non-examples: $\ZZ/6, \Mat(2\times 2; k)$
 :::
 
 [[D-UI6CU]]
+
+[[FD-SNOTW]]
 
 [[E-HOJKE]]
 
@@ -277,13 +293,19 @@ Every field is an integral domain, but e.g. $\ZZ$ is an integral domain that is 
 
 [[D-INULL]]
 
+[[FD-25SUQ]]
+
 [[D-NKRGN]]
+
+[[FD-GXXBV]]
 
 ### Others
 
 [[D-TZXBO]]
 
 [[D-PQHHJ]]
+
+[[FF-U4FHF]]
 
 [[D-TGB4R]]
 
@@ -302,6 +324,8 @@ Every field is an integral domain, but e.g. $\ZZ$ is an integral domain that is 
 [[D-VK2KZ]]
 
 [[D-JSZ77]]
+
+[[FF-CQSNC]]
 
 :::{.remark}
 Motivation: if $R = \OO_{X, x}$ is the ring of germs at $x$ of an algebraic variety $X$, then $R$ is regular iff $X$ is nonsingular at $x$.
@@ -393,6 +417,10 @@ This is useful when considering nilpotents or radicals.
 
 [[D-2IO6Q]]
 
+[[FF-7U6UY]]
+
+[[FF-QWCKR]]
+
 [[E-G4KAC]]
 
 ## Structure Theorems
@@ -416,6 +444,8 @@ If $M$ is a simple ring over $R$ a division ring, the $M$ is isomorphic to a mat
 
 [[T-V7JRG]]
 
+[[FT-PUVIQ]]
+
 :::{.remark}
 You can always form a subset poset, and restrict with any sub-collection thereof with a set predicate.
 To use Zorn's lemma, you need to take an arbitrary chain in your poset $X$, produce an upper bound $U$ (e.g. by taking a union), and showing that $U$ is still in $X$ (i.e. it still satisfies the right predicate).
@@ -423,6 +453,8 @@ To use Zorn's lemma, you need to take an arbitrary chain in your poset $X$, prod
 :::
 
 [[T-QSTRJ]]
+
+[[FF-QELG7]]
 
 [[PR-UTFSY]]
 
@@ -448,6 +480,39 @@ Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ conta
 :::
 
 [[E-NXHG6]]
+
+## Commutative Algebra
+
+:::{.remark}
+The results below are the ones that carry a geometric reading: they say what a ring can be recovered from, and what a module over a local ring looks like once the maximal ideal is divided out.
+
+:::
+
+### Nakayama's Lemma
+
+[[FF-NREXC]]
+
+[[FF-45SK3]]
+
+[[FF-QILDV]]
+
+[[FF-6K35J]]
+
+[[FF-X6C7Z]]
+
+### Noetherian Rings and Krull Dimension
+
+[[FF-ESIOA]]
+
+[[FF-3K36R]]
+
+[[FF-HJGPV]]
+
+[[FF-CSABG]]
+
+### Integral Extensions
+
+[[FF-IBDAT]]
 
 ## Unsorted
 

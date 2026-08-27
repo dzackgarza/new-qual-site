@@ -6,6 +6,10 @@ order: 30
 
 [[T-CJCKL]]
 
+[[FT-EPR7J]] [[FT-FZERI]]
+
+[[FT-ZJQ2T]]
+
 ::: {.slogan}
 The number of zeros/poles in a region is determined by a dominating function on the boundary.
 You can add a small perturbation $m$ to $M$ and preserve the number of zeros, where "small" means $\abs{m} < \abs{M}$ on the boundary.

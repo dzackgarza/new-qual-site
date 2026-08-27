@@ -53,6 +53,8 @@ The limit is not continuous, so no subsequence can converge.
 
 [[T-7FJFK]]
 
+[[FT-6WPJI]]
+
 [[PR-JTFMW]]
 
 :::{.proof}

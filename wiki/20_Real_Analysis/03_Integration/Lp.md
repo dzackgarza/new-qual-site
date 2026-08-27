@@ -13,6 +13,8 @@ $L^p$ convergence does not imply pointwise convergence or even a.e. convergence 
 
 [[T-4KKSH]]
 
+[[FT-GQRV2]]
+
 :::{.proof}
 Let $M = \norm{f}_\infty$.
 

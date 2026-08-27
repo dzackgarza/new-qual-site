@@ -5,8 +5,16 @@ order: 50
 # Commuting Limiting Operations
 
 [[PR-LCV2V]]
+
+[[FE-5JE3Z]]
 [[PR-SCTER]]
+
+[[FE-MDTXW]]
 [[PR-DWOXP]]
+
+[[FE-73BWZ]] [[FE-GN3CF]]
+
+[[FE-2UZDB]]
 
 :::{.example}
 As a counterexample:

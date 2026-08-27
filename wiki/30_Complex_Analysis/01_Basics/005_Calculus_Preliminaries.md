@@ -143,6 +143,8 @@ Recall how to carry out polynomial long division:
 
 [[PR-5WUAP]]
 
+[[FT-3ZL25]] [[FT-BSOZF]]
+
 ## Function Convergence
 
 [[D-AIQG3]]

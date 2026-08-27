@@ -29,6 +29,8 @@ Fix some notation:
 
 [[D-QFYAC]]
 
+[[FD-GOB47]]
+
 :::{.fact}
 If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 

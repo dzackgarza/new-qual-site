@@ -127,6 +127,10 @@ How to remember the last one:
 
 :::
 
+[[FF-LF5ND]] [[FF-XKATS]]
+
+[[FF-ENSFJ]] [[FF-5GLOZ]]
+
 :::{.fact title="Expanding square roots"}
 \[
 \sqrt{z} 
@@ -177,6 +181,8 @@ a_0b_2 + a_1b_1 + a_2b_0 &= 1 \\
 
 :::
 
+[[FF-JKLWM]]
+
 [[P-VFAXW]]
 [[P-IM6MH]]
 [[P-OCOSY]]
@@ -209,6 +215,8 @@ Purely formally, we have
 In order to invert $A$ using this method, you need to clear powers of $z$ so that a leading term is constant.
 
 :::
+
+[[FF-UQZNR]]
 
 [[P-VO5YR]]
 [[P-NBSTW]]

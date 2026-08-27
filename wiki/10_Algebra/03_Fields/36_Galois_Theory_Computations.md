@@ -124,6 +124,8 @@ Manually dividing $a_1 x^2 + a_2 x + a_3$ for $a_i\in 0, 1$ leaves remainders, s
 
 [[T-CF6S3]]
 
+[[FT-2P5VV]]
+
 :::{.remark title="Shifting"}
 If $f(x+a)$ satisfies Eisenstein for any $p$, then $f$ is irreducible.
 This is generally because $\Delta_{f(x)} = \Delta_{f(x + a)}$, and if $p$ works for Eisenstein on any $f$ then $p\divides \Delta_f$.

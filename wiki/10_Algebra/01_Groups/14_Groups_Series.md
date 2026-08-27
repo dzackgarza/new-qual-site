@@ -12,9 +12,13 @@ order: 50
 
 [[D-FYX4I]]
 
+[[FD-PLAEO]]
+
 [[T-OSJ5S]]
 
 [[D-T2NZ4]]
+
+[[FD-2UWAQ]]
 
 ::: {.proposition}
 If $G$ is *not* simple, then $G$ is an extension of any of its normal subgroups.
@@ -64,6 +68,8 @@ Then $\ker \phi \normal G$ is always a normal subgroup.
 :::
 
 [[D-DFIDP]]
+
+[[FD-T7IQV]]
 
 ::: {.remark}
 If $G = \Gal(L/K)$ is a Galois group corresponding to a polynomial $f$, then $G$ is solvable as a group iff $f$ is solvable in radicals: there is a tower of extensions $K = F_0 \subset F_1 \subset F_2 \subset \cdots \subset F_m = L$ where

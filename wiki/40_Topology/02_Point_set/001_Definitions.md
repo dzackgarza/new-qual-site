@@ -48,11 +48,21 @@ Fails reflexivity.
 
 [[D-X6LZD]]
 
+[[FD-SQ57O]]
+
+[[FD-AHIOS]] [[FD-IV5GM]]
+
+[[FD-EQPN4]]
+
 [[D-E2NWN]]
+
+[[FD-3TS3M]]
 
 [[D-6FMP3]] [[D-BUAYX]]
 
 [[D-ZFRV4]]
+
+[[FD-NHZPF]]
 
 [[D-3ZBXG]]
 
@@ -62,11 +72,21 @@ Fails reflexivity.
 
 [[D-Y6JAS]]
 
+[[FD-72JAN]]
+
+[[FD-PMA24]]
+
 [[D-GYBZ2]]
 
 [[D-RZ7I3]] [[D-6JJJU]]
 
 [[D-5EOQZ]]
+
+[[FD-7R4QC]]
+
+[[FD-ONITX]]
+
+[[FD-2XUJ5]]
 
 [[D-B3BVQ]]
 
@@ -76,7 +96,11 @@ Fails reflexivity.
 
 [[D-YEQC3]]
 
+[[FD-G56CW]]
+
 [[D-EMJTU]]
+
+[[FD-QCNG5]] [[FD-TUK7H]]
 
 [[D-CTGON]]
 
@@ -115,9 +139,15 @@ Any nonempty space retracts to a point via a constant map.
 
 [[D-6FSWY]]
 
+[[FD-6SR5I]]
+
 [[D-KWWVL]]
 
 [[D-3O6QH]]
+
+[[FD-OQO2U]]
+
+[[FD-DXTBN]]
 
 [[D-UHM6M]]
 
@@ -163,6 +193,8 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[D-SDMMS]]
 
+[[FF-VWKGM]]
+
 ## Algebraic Topology
 
 [[D-5KDNB]]
@@ -178,6 +210,8 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 [[D-3IWX2]]
 
 [[D-SYKQW]]
+
+[[FD-QPIIL]]
 
 [[D-VZS33]]
 
@@ -226,6 +260,8 @@ Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$,
 :::
 
 [[D-6UHU7]]
+
+[[FD-BDEI2]] [[FD-COPFN]]
 
 [[D-XC53X]]
 
@@ -330,6 +366,8 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 [[D-VUDRJ]]
 
 [[D-EPQ54]]
+
+[[FD-SW76G]]
 
 [[D-SIUWU]]
 

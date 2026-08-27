@@ -29,6 +29,8 @@ The limit at every point is 0.
 
 [[PR-F5V7D]]
 
+[[FF-AVBFU]] [[FF-5EBCJ]]
+
 ::: {.proof}
 $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$.
 Use that $\omega_f(x) = 0 \iff f$ is continuous at $x$, and $D_f = \union_n A_{\frac 1 n}$ where $A_\varepsilon = \theset{\omega_f \geq \varepsilon}$ is closed.
@@ -52,3 +54,9 @@ Take an open cover by $\delta_x/2$ balls, extract a finite subcover, take $\delt
 :::
 
 [[D-2CCDB]]
+
+[[FD-TGBYP]] [[FD-XVMEE]]
+
+[[FF-63IWC]]
+
+[[FT-JQSOK]] [[FF-XZGIY]]

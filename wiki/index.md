@@ -22,7 +22,7 @@ Start at the syllabus for your exam:
 - [[50_Applied_Algebra/index|Applied Algebra]]
 
 Each subject is a study path: core notes, then exercises, then past quals.
-Flashcards and source dumps are in [[90_Archives/index|Archives]].
+Source dumps are in [[90_Archives/index|Archives]].
 
 Past papers from other programs, for extra drill:
 

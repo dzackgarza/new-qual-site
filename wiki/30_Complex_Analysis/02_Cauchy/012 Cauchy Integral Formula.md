@@ -8,6 +8,10 @@ order: 12
 
 [[T-LA2UI]]
 
+[[FT-5V4M2]]
+
+[[FT-AK34G]] [[FT-LKXUW]]
+
 ::: {.proof}
 
 ![figures/image_2021-05-27-16-54-06.png](../../../../assets/assets/figures/image_2021-05-27-16-54-06.png)

@@ -6,6 +6,8 @@ order: 70
 
 [[T-BYNL5]]
 
+[[FT-DWCQ7]]
+
 :::{.proof title="by the open mapping theorem"}
 Use that $z\mapsto \abs{z}$ is an open map away from $z=0$.
 If $f$ is holomorphic, by the open mapping theorem it is an open map.

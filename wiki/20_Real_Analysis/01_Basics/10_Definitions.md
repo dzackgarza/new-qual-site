@@ -10,6 +10,8 @@ order: 10
 
 [[D-HHVPT]]
 
+[[FD-ST7TD]]
+
 :::{.remark}
 The main difference is that $\delta$ may depend on $x_0$ and $\eps$ in continuity, but only depends on $\eps$ in the uniform version.
 I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in uniform continuity one can range over all pairs $x,y$.
@@ -18,28 +20,50 @@ I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in 
 
 [[D-TVKFM]]
 
+[[FD-5I73B]] [[FF-7JOOD]]
+
 [[D-IYDZU]]
 
 [[D-YZC3C]]
 
+[[FD-ZTRHG]] [[FD-F3UU4]]
+
 ## Function Spaces
 
 [[D-G5N6I]]
+
+[[FD-WN55Z]] [[FF-HORGP]]
 
 :::{.fact}
 If $X$ is complete, then absolutely convergent implies convergent.
 
 :::
 
+[[FD-BA2WU]] [[FF-NRCZN]]
+
+[[FD-Q7EEG]]
+
 [[D-2MJRE]]
+
+[[FD-SMWLB]] [[FF-HRUA3]]
+
+[[FF-YXTQY]]
 
 [[D-5NODS]]
 
+[[FD-QEQIY]] [[FF-SZR6O]]
+
+[[FD-JGBSF]] [[FF-QLQYF]]
+
 [[D-VFNTY]]
+
+[[FD-WHWSQ]] [[FF-VON2D]]
 
 ## Measure Theory
 
 [[D-PAEDW]]
+
+[[FD-AI6XN]] [[FF-JBCFQ]]
 
 :::{.remark}
 How to derive these definitions: use that $\inf$ corresponds to intersections/existence and $\sup$ corresponds to unions/forall.
@@ -72,9 +96,27 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 
 [[D-RPOGQ]]
 
+[[FD-BBR6Q]] [[FD-HGESN]]
+
+[[FD-V5ISD]]
+
 [[D-3XE77]]
 
+[[FD-QA5ME]] [[FD-KNEDG]]
+
 [[D-MDJII]]
+
+[[FD-D4S7E]] [[FT-KXFMK]]
+
+[[FF-MXNIV]]
+
+[[FD-6HUIM]]
+
+[[FD-5T3HX]] [[FF-NOX4C]]
+
+[[FD-T7SN6]]
+
+[[FD-D7HOH]]
 
 [[D-BF5L2]]
 
@@ -84,9 +126,13 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 
 [[D-3PVRB]]
 
+[[FD-J5AFR]]
+
 [[D-MFDEJ]]
 
 [[D-TS42Y]]
+
+[[FF-4WIMZ]]
 
 [[D-5LZQ4]]
 

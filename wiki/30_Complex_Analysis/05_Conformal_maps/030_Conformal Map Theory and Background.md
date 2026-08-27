@@ -27,6 +27,10 @@ so all tangent vectors near $z_0$ are rotated by approximately the same angle $f
 
 [[D-TM4TE]]
 
+[[FD-GK7JE]]
+
+[[FE-O47RH]]
+
 :::{.fact title="Checking if a map is conformal"}
 To check if a map is conformal at $p$, it *suffices* to check that $f'(p)\neq 0$.
 
@@ -47,6 +51,8 @@ The bijectivity condition can be weakened: an *injective* holomorphic map satisf
 ## The Cross-Ratio Construction
 
 [[PR-AQ6YR]]
+
+[[FF-W4FFF]]
 
 ## Linear Fractional/Mobius Transformations
 
@@ -87,6 +93,8 @@ Some nice properties:
 - $\psi_a'(z) = {\abs{a}^2 - 1\over (1-\bar{a} z)^2}$
 
 :::
+
+[[FF-4GUYL]]
 
 ## Exercise
 
