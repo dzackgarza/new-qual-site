@@ -401,6 +401,37 @@ the catalog for problem/exercise cards with no solution section and no incoming
 [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) lives in
 `sources/qual-review-and-solutions-ledgers/`.
 
+## Audit history
+
+A problem or exercise card may carry `audit:`, a list of dated events recording
+who did what to it. Three events exist:
+
+- `solution-written` — someone wrote the solution on the card.
+- `source-checked` — someone compared the statement against the original source.
+- `solution-reviewed` — someone checked the solution for correctness.
+
+```yaml
+audit:
+- event: solution-written
+  by: dzackgarza
+  date: 2026-08-16
+- event: solution-reviewed
+  by: neil
+  date: 2026-08-27
+  note: optional free text
+```
+
+`by` is a handle or a name, whatever identifies the person; there is no registry.
+`date` is an ISO calendar date. The field is `date` and not `on` because YAML
+reads a bare `on` as the boolean `true`. `note` is optional. The entries stay in
+the order they were written, and repeated rounds of one event are normal: a
+solution reviewed twice records two `solution-reviewed` entries.
+
+This list is a record, not a status. Nothing is derived from it, and it does not
+replace the rule above: a card is solved because it carries a solution, not
+because someone wrote it down here. Record only events you can substantiate.
+Backfilling the list for cards whose history nobody knows is fabricating content.
+
 * * *
 
 > Source: `PR_GUIDANCE.md` in `ai`.

@@ -10,6 +10,11 @@ classification:
   - Logic and Quantifiers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: dzackgarza
+  date: 2026-08-27
+  note: written with the restored problem statement, replacing an imported one
 ---
 
 ::: problem

@@ -14,6 +14,7 @@ import re
 from collections.abc import Callable
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, cast
 
@@ -240,8 +241,44 @@ SourceSpec = Annotated[
 ]
 
 
+# Who did what to a problem, and when. Three events, because three separate
+# things get checked: the solution was written, the statement was checked
+# against the original source, and the solution was reviewed for correctness.
+AuditEventKind = Literal["solution-written", "source-checked", "solution-reviewed"]
+
+
+class AuditEvent(Strict):
+    """One dated audit event on a problem or exercise card.
+
+    Repeated events of one kind are the normal case: a solution reviewed twice
+    records two `solution-reviewed` entries. Entries are read in the order
+    authored, and nothing derives a status from them. Whether a card is solved
+    still follows from its solution section, never from this list.
+
+    `date` is a `datetime.date`, so a mistyped day fails the build instead of
+    being stored as a string nobody can sort. `by` is whatever handle or name
+    the author writes; there is no registry of people.
+
+    The field is `date` and not `on` because PyYAML reads YAML 1.1, where a
+    bare `on` is the boolean `true`. An `on:` key never reaches pydantic as a
+    key at all.
+    """
+
+    event: AuditEventKind
+    by: str
+    date: date
+    note: str | None = None
+
+
+# The two kinds that pose work to a reader are the two that carry `audit`.
 class ProblemCard(CardBase):
     kind: Literal["problem"]
+    audit: list[AuditEvent] = []
+
+
+class ExerciseCard(CardBase):
+    kind: Literal["exercise"]
+    audit: list[AuditEvent] = []
 
 
 class CollectionCard(CardBase):
@@ -312,10 +349,6 @@ class ProofCard(CardBase):
 
 class ExampleCard(CardBase):
     kind: Literal["example"]
-
-
-class ExerciseCard(CardBase):
-    kind: Literal["exercise"]
 
 
 class RemarkCard(CardBase):

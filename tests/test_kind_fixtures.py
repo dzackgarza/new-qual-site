@@ -11,13 +11,14 @@ from __future__ import annotations
 import sqlite3
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 from typing import get_args, get_type_hints
 
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import Card, CollectionCard, CompilationSource
+from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ExerciseCard, ProblemCard
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -314,3 +315,87 @@ def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
         for other in set(tables.values()) - {table}:
             spilled = ids & {i for (i,) in con.execute(f"select id from {other}")}
             assert not spilled, f"{variant} must not also appear in {other}: {spilled}"
+
+
+# The audit block: who wrote the solution, who checked the statement against the
+# original source, who reviewed the solution, and when each of those happened.
+AUDIT_BLOCK = """review: draft
+audit:
+- event: solution-written
+  by: dzackgarza
+  date: 2026-08-16
+- event: source-checked
+  by: dzackgarza
+  date: 2026-08-20
+  note: checked against the UGA prelim paper
+- event: solution-reviewed
+  by: dzackgarza
+  date: 2026-08-24
+- event: solution-reviewed
+  by: neil
+  date: 2026-08-27
+"""
+
+
+@pytest.mark.parametrize("fixture", ["PRB-INDEXP.md", "EXE-CENTER.md"])
+def test_audit_rounds_parse_in_authored_order(tmp_path: Path, fixture: str) -> None:
+    """Both kinds that pose work carry the audit list, and a repeated event kind
+    is kept rather than collapsed: two `solution-reviewed` rounds stay two.
+
+    The dates come back as `datetime.date`, which is what makes them sortable
+    and what makes a mistyped day a build failure.
+    """
+    from qualc.model import parse_card
+
+    path = tmp_path / fixture
+    path.write_text((FIXTURES / fixture).read_text().replace("review: draft\n", AUDIT_BLOCK, 1))
+    card = parse_card(path).card
+    assert isinstance(card, ProblemCard | ExerciseCard)
+    assert card.audit == [
+        AuditEvent(event="solution-written", by="dzackgarza", date=date(2026, 8, 16)),
+        AuditEvent(event="source-checked", by="dzackgarza", date=date(2026, 8, 20), note="checked against the UGA prelim paper"),
+        AuditEvent(event="solution-reviewed", by="dzackgarza", date=date(2026, 8, 24)),
+        AuditEvent(event="solution-reviewed", by="neil", date=date(2026, 8, 27)),
+    ]
+
+
+def test_unknown_audit_event_is_rejected(tmp_path: Path) -> None:
+    """The three events are a closed vocabulary. A fourth spelling is a typo,
+    and a typo that validates is metadata nobody can query."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "PRB-INDEXP.md"
+    path.write_text(
+        (FIXTURES / "PRB-INDEXP.md")
+        .read_text()
+        .replace(
+            "review: draft\n",
+            "review: draft\naudit:\n- event: solution-approved\n  by: dzackgarza\n  date: 2026-08-16\n",
+            1,
+        )
+    )
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_day_first_audit_date_is_rejected(tmp_path: Path) -> None:
+    """`27-08-2026` is the habitual non-ISO spelling, and YAML hands it over as
+    a plain string rather than a date. A string field would store it and sort it
+    beside 2027; the typed field fails the build. This is the claim the
+    `datetime.date` annotation exists to make -- YAML itself already rejects an
+    impossible day such as February 30th, so that is not this schema's work.
+    """
+    from qualc.model import parse_card
+
+    path = tmp_path / "PRB-INDEXP.md"
+    path.write_text(
+        (FIXTURES / "PRB-INDEXP.md")
+        .read_text()
+        .replace(
+            "review: draft\n",
+            "review: draft\naudit:\n- event: solution-written\n  by: dzackgarza\n  date: 27-08-2026\n",
+            1,
+        )
+    )
+    with pytest.raises(ValueError):
+        parse_card(path)
