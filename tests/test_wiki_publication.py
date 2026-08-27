@@ -7,6 +7,7 @@ import re
 import shutil
 import subprocess
 import sys
+from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -156,6 +157,87 @@ class WikiBacklinkParser(HTMLParser):
             self._in_section = False
 
 
+@dataclass
+class Transclusion:
+    """One card rendered into a wiki page in the position its link stood."""
+
+    card_id: str
+    label: str
+    heading: str
+    subtitle: str
+    tag_href: str
+    inner_labels: list[str]
+    text: str
+
+
+class TransclusionParser(HTMLParser):
+    """Every `div.qual-transclusion` in the page body, in reading order."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.blocks: list[Transclusion] = []
+        self._depth: int | None = None
+        self._open = 0
+        self._current: Transclusion | None = None
+        self._part: str | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        classes = (attributes["class"] or "").split() if "class" in attributes else []
+        label = attributes["data-label"] if "data-label" in attributes else None
+        if tag == "div":
+            self._open += 1
+            if "qual-transclusion" in classes:
+                identifier = attributes["id"]
+                assert identifier is not None and label is not None
+                self._depth = self._open
+                self._current = Transclusion(
+                    card_id=identifier,
+                    label=label,
+                    heading="",
+                    subtitle="",
+                    tag_href="",
+                    inner_labels=[],
+                    text="",
+                )
+            elif self._current is not None and "qual-section" in classes:
+                assert label is not None
+                self._current.inner_labels.append(label)
+        if self._current is None:
+            return
+        if tag == "p" and "qual-section-title" in classes and not self._current.heading:
+            self._part = "heading"
+        elif tag == "p" and "qual-section-subtitle" in classes:
+            self._part = "subtitle"
+        elif tag == "a" and "qual-section-tag" in classes:
+            href = attributes["href"]
+            assert href is not None
+            self._current.tag_href = href
+
+    def handle_data(self, data: str) -> None:
+        if self._current is None:
+            return
+        if self._part == "heading":
+            self._current.heading += data
+        elif self._part == "subtitle":
+            self._current.subtitle += data
+        else:
+            self._current.text += data
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "p":
+            self._part = None
+        elif tag == "div":
+            if self._current is not None and self._open == self._depth:
+                self._current.heading = re.sub(r"\s+", " ", self._current.heading).strip()
+                self._current.subtitle = re.sub(r"\s+", " ", self._current.subtitle).strip()
+                self._current.text = re.sub(r"\s+", " ", self._current.text).strip()
+                self.blocks.append(self._current)
+                self._current = None
+                self._depth = None
+            self._open -= 1
+
+
 def fixture_repo(tmp_path: Path) -> Path:
     work = tmp_path / "repo"
     for sub in ("vocabularies", "site"):
@@ -170,6 +252,55 @@ def fixture_repo(tmp_path: Path) -> Path:
     (wiki / "index.md").write_text(wiki_md("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n"))
     (wiki / "details.md").write_text(wiki_md("# Fixture details\n\nThe page reference survived.\n", order=1))
     return work
+
+
+def test_a_standalone_image_is_a_figure_and_its_href_is_encoded(tmp_path: Path) -> None:
+    """An image alone in a paragraph is a figure whether or not it has a caption.
+
+    Pandoc's `implicit_figures` covers `![caption](src)` only; `![](src)`
+    reached the page as a bare `<img>` inside a paragraph, with nothing to bound
+    a tall image. Both spellings carry one class so one rule styles them. The
+    page name holds a space, which is fine in a filename and not in a URL.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "Some Page.md").write_text(wiki_md("# Some page\n\n![](figures/diagram.png)\n", order=2))
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n![captioned](figures/diagram.png)\n\nSee [[Some Page]].\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    index = (site / "wiki" / "index.html").read_text()
+    uncaptioned = (site / "wiki" / "Some Page.html").read_text()
+    assert '<figure class="qual-figure">' in uncaptioned
+    assert "<figcaption" not in uncaptioned
+    assert 'class="qual-figure"' in index
+    assert "<figcaption" in index
+
+    links = LinkCollector()
+    links.feed(index)
+    assert "Some%20Page.html" in links.hrefs
+    assert not [href for href in links.hrefs if " " in href]
+
+
+def test_a_card_shows_only_the_relation_panels_it_has(tmp_path: Path) -> None:
+    """A heading whose body reads "None." tells the reader nothing.
+
+    Two of the three panels were empty on a typical card. An empty panel is
+    dropped and a card with no relations at all loses the band, rather than
+    framing three headings around the word "None."
+    """
+    work = fixture_repo(tmp_path)
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    tags = work / "build" / "quarto" / "_site" / "tag"
+    problem = (tags / "PRB-INDEXP.html").read_text()
+    assert re.findall(r'data-relation-group="([a-z-]+)"', problem) == ["backlinks", "wiki-backlinks"]
+    assert "None." not in problem
+
+    lemma = (tags / "LEM-FRATTINI.html").read_text()
+    assert "relation-groups" not in lemma
 
 
 def run(command: str, root: Path) -> subprocess.CompletedProcess[str]:
@@ -211,7 +342,7 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
 
 def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[PRB-INDEXP]]\n"))
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nCompare [[PRB-INDEXP]] with the rest.\n"))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -222,6 +353,146 @@ def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     link_texts = [text for _, _, text in links.links]
     assert "Show a subgroup of index $p$ in a $p\\dash$group is normal" in link_texts
     assert "PRB-INDEXP" not in link_texts
+
+
+def test_a_reference_whose_text_is_mathematics_is_marked_as_such(tmp_path: Path) -> None:
+    """The anchor says its own text typesets, so the stylesheet can act on it.
+
+    `PRB-INDEXP` is titled "... index $p$ in a $p\\dash$group ...", and that
+    title becomes the link text. Without the class nothing in the markup
+    distinguishes it from a link reading three plain words, and the underline
+    is drawn straight through the typeset mathematics.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nCompare [[PRB-INDEXP]] with [[DEF-PGROUP|the plain words]].\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    links = LinkCollector()
+    links.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    marked = {href: "qual-link-math" in classes for href, classes, _ in links.links}
+    assert marked["../tag/PRB-INDEXP.html"] is True
+    assert marked["../tag/DEF-PGROUP.html"] is False
+
+
+def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) -> None:
+    """A paragraph of nothing but card links is the statements, not links to them.
+
+    Two links written on one line are two blocks. Each is one labelled section:
+    the kind and the position on the page label it, its heading reads as the
+    card's name followed by the tag that permalinks it, and there is no second
+    labelled box nested inside. A reference inside a sentence names somewhere
+    else and stays a link.
+    """
+    work = fixture_repo(tmp_path)
+    # Two links on one line and a third on the next: markdown joins adjacent
+    # lines into one paragraph, separating them by a soft break rather than a
+    # space, and most of the corpus is authored that way. Both separators have
+    # to be seen through for the paragraph to count as links and nothing else.
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-PGROUP]] [[LEM-FRATTINI]]\n[[THM-SYLOW]]\n\nAs [[PRB-INDEXP]] shows.\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    blocks = TransclusionParser()
+    blocks.feed(html)
+    assert [block.card_id for block in blocks.blocks] == ["DEF-PGROUP", "LEM-FRATTINI", "THM-SYLOW"]
+    assert [block.label for block in blocks.blocks] == ["Definition 1", "Lemma 1", "Theorem 1"]
+    assert [block.heading for block in blocks.blocks] == [
+        "$p$-group (Tag DEF-PGROUP)",
+        "Frattini argument (Tag LEM-FRATTINI)",
+        "Sylow's first theorem (Tag THM-SYLOW)",
+    ]
+    assert [block.tag_href for block in blocks.blocks] == [
+        "../tag/DEF-PGROUP.html",
+        "../tag/LEM-FRATTINI.html",
+        "../tag/THM-SYLOW.html",
+    ]
+    assert [block.inner_labels for block in blocks.blocks] == [[], [], []]
+    assert "if its order is a power of the prime" in blocks.blocks[0].text
+    assert "a Sylow" in blocks.blocks[1].text
+    assert "has a subgroup of order" in blocks.blocks[2].text
+
+    links = LinkCollector()
+    links.feed(html)
+    assert [classes for href, classes, _ in links.links if href == "../tag/DEF-PGROUP.html"] == ["qual-section-tag"]
+    assert [classes for href, classes, _ in links.links if href == "../tag/PRB-INDEXP.html"] == ["wikilink qual-link-math"]
+
+
+def test_a_card_referenced_twice_on_a_page_is_transcluded_once(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    blocks = TransclusionParser()
+    blocks.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    assert [block.card_id for block in blocks.blocks] == ["DEF-PGROUP", "LEM-FRATTINI"]
+    assert [block.label for block in blocks.blocks] == ["Definition 1", "Lemma 1"]
+
+
+DIVERGENT_CARD = """---
+schema: qual/card@1
+id: PRP-TRACES
+kind: proposition
+title: Characteristic polynomials via traces of exterior powers
+subtitle: Hoffman and Kunze 1.2.1
+classification:
+  areas:
+  - algebra
+  topics:
+  - Linear Algebra
+relations: []
+review: draft
+---
+
+::: {.proposition title="Useful computational trick"}
+The coefficients of $\\chi_A$ are the traces of the exterior powers of $A$.
+:::
+
+::: {.proof title="of a"}
+Expand the determinant.
+:::
+
+::: {.proof title="of b"}
+Compare degrees.
+:::
+"""
+
+
+def test_a_transcluded_card_is_named_by_its_yaml_title_and_subtitle(tmp_path: Path) -> None:
+    """The card's name has one owner: YAML `title`. The body attribute is not it.
+
+    582 cards carry a name in both places and 85 of them diverge, the body
+    string being the junk one -- here "Useful computational trick" over a real
+    name. The YAML `subtitle` is the second line. Sibling blocks of one kind are
+    numbered, which is what the authored "of a"/"of b" labels stood in for; a
+    nested `title=` is a part label and still renders.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "PRP-TRACES.md").write_text(DIVERGENT_CARD)
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    blocks = TransclusionParser()
+    blocks.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    # A label counts its own kind on the page. One sequence across every kind
+    # put "Warning 2" on a page with one warning: the label asserts what it
+    # counts, and the second proposition is the page's second proposition.
+    assert [block.label for block in blocks.blocks] == ["Proposition 1", "Warning 1", "Proposition 2"]
+    block = blocks.blocks[2]
+    assert block.heading == "Characteristic polynomials via traces of exterior powers (Tag PRP-TRACES)"
+    assert block.subtitle == "Hoffman and Kunze 1.2.1"
+    assert "Useful computational trick" not in block.heading
+    assert block.inner_labels == ["Proof 1", "Proof 2"]
+
+    card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRP-TRACES.html").read_text()
+    assert '<p class="qual-section-subtitle">Hoffman and Kunze 1.2.1</p>' in card_page
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:

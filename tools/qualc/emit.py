@@ -26,6 +26,7 @@ from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 from typing import cast
+from urllib.parse import urlsplit
 
 import panflute as pf
 import yaml
@@ -314,6 +315,41 @@ def _compile_tikzcd(
     return pf.RawBlock(svg_html, format="html")
 
 
+def _figure(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Block] | None:
+    """A paragraph that is only an image is a figure, so give it the element.
+
+    Pandoc's `implicit_figures` already does this for `![caption](src)`, which
+    is why 179 figures reach the page; it cannot for `![](src)`, because there
+    is no caption to put in one. Those arrived as a bare `<img>` inside a
+    paragraph, with nothing to bound a tall image and nothing for a caption
+    under a grid of them to align to.
+
+    The image stays an AST node rather than becoming raw HTML, so `src`
+    rewriting and asset linking still see it -- the same shape `_reveal` uses
+    for its `<details>`.
+    """
+    del document
+    if isinstance(element, pf.Figure):
+        # Pandoc's own figures carry the class too, so the 280 it makes and the
+        # 401 made here are one thing to style, captions included.
+        if "qual-figure" not in element.classes:
+            element.classes.append("qual-figure")
+        return element
+    if not isinstance(element, pf.Para) or len(element.content) != 1:
+        return None
+    image = element.content[0]
+    if not isinstance(image, pf.Image):
+        return None
+    return [
+        pf.RawBlock('<figure class="qual-figure">', format="html"),
+        pf.Plain(image),
+        pf.RawBlock("</figure>", format="html"),
+    ]
+
+
 def _prepare_html(
     element: pf.Element,
     document: pf.Doc,
@@ -321,6 +357,9 @@ def _prepare_html(
     compiled = _compile_tikzcd(element, document)
     if compiled is not None:
         return compiled
+    figure = _figure(element, document)
+    if figure is not None:
+        return figure
     return _reveal(element, document)
 
 
@@ -460,15 +499,138 @@ def _wiki_incoming_html(sources: list[WikiPage]) -> str:
     return f'<section class="relation-group" data-relation-group="wiki-backlinks"><h2>What links to this</h2><ul>{items}</ul></section>'
 
 
-def _wiki_blocks(page: WikiPage, incoming: list[WikiPage]) -> list[pf.Block]:
+# A wikilink standing on its own -- in a paragraph that is nothing but card
+# links and the whitespace between them -- names the statement the author wanted
+# read there, not a place to go and read it. It is transcluded: the card's own
+# blocks render in its position under the id that cites them, the way the Stacks
+# Project prints a result under its tag. A wikilink inside a sentence is a
+# reference to somewhere else and stays a link.
+#
+# The transcluded card goes through `_rename`, the walk `_blocks` already runs
+# for a tag page, so a transcluded definition is the same `div.qual-section`
+# markup a locally authored `:::{.definition}` produces.
+CARD_ROUTE = "tag/"
+WIKILINK_CLASS = "wikilink"
+
+
+def _transcluded_ids(block: pf.Element) -> list[str]:
+    """The card ids a paragraph transcludes, or nothing if it is prose.
+
+    Consecutive authored links share one paragraph -- pandoc joins adjacent
+    lines, and several are written on one line besides -- so the paragraph is
+    the unit and every link in it transcludes. That is also why the run of
+    merged underlined links these rendered as needs no separate fix: it is not
+    a paragraph of links any more.
+    """
+    if not isinstance(block, pf.Para | pf.Plain):
+        return []
+    ids: list[str] = []
+    for inline in block.content:
+        if isinstance(inline, pf.Space | pf.SoftBreak | pf.LineBreak):
+            continue
+        if not isinstance(inline, pf.Link) or WIKILINK_CLASS not in inline.classes:
+            return []
+        path = urlsplit(inline.url).path
+        if not path.startswith(CARD_ROUTE) or not path.endswith(".html"):
+            return []
+        ids.append(Path(path).stem)
+    return ids
+
+
+def _transclusion_head(card: sqlite3.Row) -> dict:
+    """The heading line: the card's name, then the tag that permalinks it.
+
+    The name is the YAML `title` and nothing else. A body-level `title=` on the
+    card's outermost block is import residue, not a second name -- 85 cards
+    carry junk there ("part 1", "of claim") over a real YAML title -- so that
+    block is unwrapped and its attribute never reaches the heading. Nested
+    `title=` blocks keep theirs: those label which part or case they treat.
+    """
+    href = html.escape(f"{CARD_ROUTE}{card['id']}.html", quote=True)
+    # The brackets are inside the anchor so the whole `(Tag …)` wraps as one
+    # piece; outside it, a long name left the closing bracket alone on the
+    # next line.
+    tag = f'<a class="qual-section-tag" href="{href}">(Tag {html.escape(card["id"])})</a>'
+    return {
+        "t": "RawBlock",
+        "c": ["html", f'<p class="qual-section-title">{html.escape(card["title"])} {tag}</p>'],
+    }
+
+
+def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
+    """The card as one labelled section: kind and number, name, tag, body.
+
+    The card's own outermost section div is unwrapped and this one takes its
+    kind, so the reader sees one labelled box rather than a tagged box nested
+    inside an untagged one. A card that opens on prose instead of a fenced div
+    is labelled by its catalog kind, which is the same word.
+
+    The number counts that kind on the page, not the transclusions before it.
+    One sequence across every kind produced "Warning 14" on a page carrying one
+    warning: the label asserts what it counts, so it has to count warnings.
+    """
+    document = json.loads(card["ast"])
+    blocks = document["blocks"]
+    kind = _owned_kind(blocks[0]) if blocks else ""
+    if kind:
+        body = blocks[0]["c"][1] + blocks[1:]
+    else:
+        kind, body = card["kind"], blocks
+    counts[kind] += 1
+    _rename_json(body)
+    document["blocks"] = [
+        {
+            "t": "Div",
+            "c": [
+                [
+                    card["id"],
+                    [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
+                    [["data-label", f"{kind.title()} {counts[kind]}"]],
+                ],
+                [_transclusion_head(card), *_subtitle_json(card), *body],
+            ],
+        }
+    ]
+    return cast(pf.Div, from_ast(json.dumps(document)).content[0])
+
+
+def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row]) -> list[pf.Block]:
+    """Replace every standalone-wikilink paragraph with the cards it names.
+
+    A card already transcluded on the page is dropped rather than repeated: the
+    first rendering is the one its tag cites. A paragraph whose links were all
+    repeats leaves nothing behind. A card id `resolve_links` did not resolve
+    never reaches here -- it is a build error there.
+    """
+    seen: set[str] = set()
+    counts: Counter[str] = Counter()
+
+    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element | list[pf.Block] | None:
+        del doc
+        ids = _transcluded_ids(element)
+        if not ids:
+            return None
+        rendered: list[pf.Block] = []
+        for card_id in ids:
+            if card_id in seen:
+                continue
+            seen.add(card_id)
+            rendered.append(_transclude(cards[card_id], counts))
+        return rendered
+
+    return list(pf.Doc(*blocks).walk(visit).content)
+
+
+def _wiki_blocks(page: WikiPage, incoming: list[WikiPage], cards: dict[str, sqlite3.Row]) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
     Only the card path ran `_rename`, so every `:::{.remark}`, `:::{.proof}`
     and `:::{.fact}` on the wiki reached the reader as unmarked prose: the
     label rule in `styles.css` keys on the `qual-section` class this adds.
+    Transcluded cards are inserted first, so the same walk labels those too.
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
-    blocks = list(pf.Doc(*page.blocks).walk(_rename).content)
+    blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
     html_block = _wiki_incoming_html(incoming)
     if html_block:
         blocks.append(pf.RawBlock(html_block, format="html"))
@@ -596,7 +758,7 @@ def _card_relation_items(
     rows: list[sqlite3.Row],
 ) -> str:
     if not rows:
-        return '<p class="relation-empty">None.</p>'
+        return ""
     return (
         "<ul>"
         + "".join(
@@ -614,8 +776,20 @@ def _card_relation_items(
 
 def _appearance_items(appearances: list[Appearance]) -> str:
     if not appearances:
-        return '<p class="relation-empty">None.</p>'
+        return ""
     return "<ul>" + "".join(f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>' for appearance in appearances) + "</ul>"
+
+
+def _relation_group(key: str, heading: str, items: str) -> str:
+    """One panel, or nothing when the card has no relations of that sort.
+
+    A heading whose body reads "None." tells the reader nothing and cost two of
+    the three panels on a typical card. An empty panel is dropped, and a card
+    with no relations at all loses the band rather than showing an empty frame.
+    """
+    if not items:
+        return ""
+    return f'<section class="relation-group" data-relation-group="{key}"><h2>{heading}</h2>{items}</section>'
 
 
 def _relation_groups_json(
@@ -623,27 +797,20 @@ def _relation_groups_json(
     card_id: str,
     appearances: dict[str, list[Appearance]],
     wiki_mentions: list[WikiPage],
-) -> dict:
+) -> list[dict]:
     dependencies = _page_rows(data.dependencies, card_id)
     backlinks = _page_rows(data.backlinks, card_id)
-    source = (
-        '<div class="relation-groups" aria-label="Card relationships">'
-        '<section class="relation-group" data-relation-group="dependencies">'
-        "<h2>Dependencies</h2>"
-        f"{_card_relation_items(dependencies)}"
-        "</section>"
-        '<section class="relation-group" data-relation-group="appearances">'
-        "<h2>Appearances</h2>"
-        f"{_appearance_items(appearances[card_id])}"
-        "</section>"
-        '<section class="relation-group" data-relation-group="backlinks">'
-        "<h2>Backlinks</h2>"
-        f"{_card_relation_items(backlinks)}"
-        "</section>"
-        f"{_wiki_incoming_html(wiki_mentions)}"
-        "</div>"
-    )
-    return {"t": "RawBlock", "c": ["html", source]}
+    panels = [
+        _relation_group("dependencies", "Dependencies", _card_relation_items(dependencies)),
+        _relation_group("appearances", "Appearances", _appearance_items(appearances[card_id])),
+        _relation_group("backlinks", "Backlinks", _card_relation_items(backlinks)),
+        _wiki_incoming_html(wiki_mentions),
+    ]
+    filled = [panel for panel in panels if panel]
+    if not filled:
+        return []
+    source = f'<div class="relation-groups" aria-label="Card relationships">{"".join(filled)}</div>'
+    return [{"t": "RawBlock", "c": ["html", source]}]
 
 
 def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
@@ -656,11 +823,32 @@ def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
     return cache, api
 
 
-def _rename_json(node: object) -> None:
-    """The `_rename` transform, on raw JSON: rename owned Div classes at any depth."""
+def _owned_kind(node: object) -> str:
+    """The card kind an owned Div carries, before renaming; "" for anything else."""
+    if not isinstance(node, dict) or node.get("t") != "Div":
+        return ""
+    owned = next((c for c in node["c"][0][1] if c in OWNED), "")
+    return DIV_CLASS_TO_KIND[owned] if owned else ""
+
+
+def _rename_json(node: object, number: str = "") -> None:
+    """The `_rename` transform, on raw JSON: rename owned Div classes at any depth.
+
+    Siblings of one kind are numbered. A card with five `.solution` blocks read
+    as five boxes all labelled "Solution" with nothing to cite one by, which is
+    what the authored `title="Part 1"` labels were standing in for. A kind
+    occurring once is not numbered: "Definition 1" alone names nothing.
+    """
     if isinstance(node, list):
+        counts = Counter(kind for kind in map(_owned_kind, node) if kind)
+        seen: Counter[str] = Counter()
         for x in node:
-            _rename_json(x)
+            kind = _owned_kind(x)
+            if kind and counts[kind] > 1:
+                seen[kind] += 1
+                _rename_json(x, f" {seen[kind]}")
+            else:
+                _rename_json(x)
     elif isinstance(node, dict):
         if node.get("t") == "Div":
             attr = node["c"][0]  # [id, classes, keyvals]
@@ -669,11 +857,18 @@ def _rename_json(node: object) -> None:
             if owned:
                 kind = DIV_CLASS_TO_KIND[owned[0]]
                 attr[1].append(SECTION_CLASS)
-                attr[2].append(["data-label", kind.title()])
+                attr[2].append(["data-label", f"{kind.title()}{number}"])
                 title = next((value.strip() for key, value in attr[2] if key == "title"), "")
                 if title and kind in TITLED_KINDS:
                     node["c"][1].insert(0, {"t": "RawBlock", "c": ["html", _title_html(title)]})
         _rename_json(node.get("c"))
+
+
+def _subtitle_json(card: sqlite3.Row) -> list[dict]:
+    """The card's YAML `subtitle`, as the line under its name."""
+    if not card["subtitle"]:
+        return []
+    return [{"t": "RawBlock", "c": ["html", f'<p class="qual-section-subtitle">{html.escape(card["subtitle"])}</p>']}]
 
 
 def _dup[T](value: T) -> T:
@@ -693,14 +888,14 @@ def problem_json(
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
 
-    body = _dup(jcache[card["id"]])
+    body = _subtitle_json(card) + _dup(jcache[card["id"]])
     _rename_json(body)
     for kind in ("hints-at", "solves"):
         for rel in _related_rows(data, card["id"], kind):
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
             body += rb
-    body.append(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
+    body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -720,9 +915,9 @@ def plain_json(
     appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _dup(jcache[card["id"]])
+    body = _subtitle_json(card) + _dup(jcache[card["id"]])
     _rename_json(body)
-    body.append(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
+    body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -2113,12 +2308,13 @@ def project(
         assets,
     )
     if wiki_pages:
+        cards = {row["id"]: row for row in _rows(con, "select * from cards")}
         wiki_navigation = _wiki_navigation(wiki_pages)
         wiki_items: list[PageItem] = [
             (
                 (
                     {"title": page.title},
-                    _wiki_blocks(page, incoming_pages[page.route.as_posix()]),
+                    _wiki_blocks(page, incoming_pages[page.route.as_posix()], cards),
                 ),
                 out / "wiki" / page.source_rel.with_suffix(".qmd"),
                 _wiki_chrome(wiki_navigation, page),

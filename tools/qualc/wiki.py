@@ -483,6 +483,32 @@ def _canonical_target(
     return target
 
 
+# A card title is a sentence of mathematics often enough -- "A set $U \\subseteq
+# X$ is closed in $X$ iff ..." -- and it becomes the text of the link that names
+# the card. MathJax typesets inside the anchor, so the link decoration runs
+# through subscripts and the operator spacing opens up around it. The class says
+# which anchors those are; `styles.css` owns what to do about it.
+MATH_LINK_CLASS = "qual-link-math"
+
+
+def _carries_math(inlines: list[pf.Inline]) -> bool:
+    """Whether a link's text typesets as mathematics anywhere inside it.
+
+    A card title reaches the link as plain text still carrying its `$...$`,
+    which MathJax reads in the browser; authored link text is already parsed
+    into `Math`. Both put typeset mathematics inside the anchor.
+    """
+    for inline in inlines:
+        if isinstance(inline, pf.Math):
+            return True
+        if isinstance(inline, pf.Str) and "$" in inline.text:
+            return True
+        content = getattr(inline, "content", None)
+        if content is not None and _carries_math(cast(list[pf.Inline], list(content))):
+            return True
+    return False
+
+
 def resolve_links(
     pages: list[WikiPage],
     card_routes: dict[str, Path],
@@ -520,6 +546,8 @@ def resolve_links(
                 card_id = Path(urlsplit(raw).path).stem
                 if isinstance(element, pf.Link) and card_id in card_titles and pf.stringify(element).strip() == card_id:
                     element.content = _text_inlines(card_titles[card_id])
+                if isinstance(element, pf.Link) and _carries_math(element.content) and MATH_LINK_CLASS not in element.classes:
+                    element.classes.append(MATH_LINK_CLASS)
             except MissingPageReference as exc:
                 errors.append(
                     Diagnostic(
@@ -609,12 +637,28 @@ def wiki_card_mentions(pages: list[WikiPage]) -> dict[str, list[WikiPage]]:
     return mentions
 
 
+def _page_detail(page: WikiPage) -> str:
+    """Where the page lives, in the two segments that tell it from its namesakes.
+
+    A card is told apart in search by its id and a guide section by its guide; a
+    constant string told 398 pages apart by nothing, and three of them are
+    titled "Residues". Folder and file stem separate those three: two share the
+    folder and differ only in the stem. An `index` page is named by its folder
+    rather than its stem, so it is the folder above that carries the weight.
+    The renderer truncates the detail from the right at 15rem, hence two.
+    """
+    parts = page.source_rel.with_suffix("").parts
+    if parts[-1] == "index" and len(parts) > 1:
+        parts = parts[:-1]
+    return "/".join(parts[-2:])
+
+
 def search_records(pages: list[WikiPage]) -> list[dict[str, object]]:
     return [
         {
             "title": page.title,
             "kind": "Page",
-            "detail": "authored wiki page",
+            "detail": _page_detail(page),
             "url": page.route.as_posix(),
             "search": f"{page.title} {page.source_rel} {page.search_text}".lower(),
         }

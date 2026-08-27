@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from html import escape
 from pathlib import Path
 from typing import Literal, assert_never
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 
 @dataclass(frozen=True)
@@ -160,10 +160,18 @@ def _metadata(meta: dict[str, object]) -> str:
 
 
 def _relative_url(relative_path: Path, target: Path) -> str:
+    """The href, percent-encoded, for a target file whose name may hold spaces.
+
+    `Berkeley Prelims.md` is an authored filename and stays one; a literal space
+    in a URL is not. Encoding here rather than at the route covers every href
+    and src on the site, because navigation, body links and assets all leave
+    through this one function, and it leaves the routes themselves comparable
+    as plain paths.
+    """
     start = relative_path.parent.as_posix()
     if start == ".":
         start = ""
-    return posixpath.relpath(target.as_posix(), start=start or ".")
+    return quote(posixpath.relpath(target.as_posix(), start=start or "."), safe="/")
 
 
 def _navigation_link(
@@ -257,20 +265,21 @@ def _wiki_tree(
             case _ as unreachable:
                 assert_never(unreachable)
 
-    def branch(links: list[NavigationLink]) -> str:
-        items: list[str] = []
+    def branch(links: list[NavigationLink], lead: str = "") -> str:
+        items: list[str] = [lead] if lead else []
         for link in links:
-            nested = branch(children[link.key])
             match link.target:
                 case LevelOnly():
+                    nested = branch(children[link.key])
                     assert nested, f"wiki directory has no pages: {link.key}"
                     open_attribute = " open" if link.key in open_directories else ""
                     items.append(f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>")
                 case PageTarget():
                     anchor = _current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)
-                    if nested:
+                    if children[link.key]:
                         open_attribute = " open" if link.key in open_directories or link.key == navigation.current_key else ""
-                        items.append(f"<li><details{open_attribute}><summary>{anchor}</summary>{nested}</details></li>")
+                        nested = branch(children[link.key], f"<li>{anchor}</li>")
+                        items.append(f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>")
                     else:
                         items.append("<li>" + anchor + "</li>")
                 case _ as unreachable:
