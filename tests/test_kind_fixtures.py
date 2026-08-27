@@ -399,3 +399,29 @@ def test_day_first_audit_date_is_rejected(tmp_path: Path) -> None:
     )
     with pytest.raises(ValueError):
         parse_card(path)
+
+
+@pytest.mark.parametrize("fixture", ["PRB-INDEXP.md", "EXE-CENTER.md", "DEF-PGROUP.md", "THM-SYLOW.md"])
+def test_subtitle_parses_on_every_kind(tmp_path: Path, fixture: str) -> None:
+    """A subtitle is a second line under the card's name, not the name. It is
+    carried by `CardBase`, so a definition or theorem may have one and not only
+    the two kinds that pose work.
+
+    The fixtures span four kinds because the body titles this field replaces
+    were measured on ten, exercise and problem being only the two largest.
+    """
+    from qualc.model import parse_card
+
+    path = tmp_path / fixture
+    path.write_text((FIXTURES / fixture).read_text().replace("classification:\n", "subtitle: Hoffman and Kunze 1.2.1\nclassification:\n", 1))
+    card = parse_card(path).card
+    assert card.subtitle == "Hoffman and Kunze 1.2.1"
+    assert card.title != card.subtitle, "a subtitle is a second line, never a copy of the title"
+
+
+def test_subtitle_is_absent_unless_authored() -> None:
+    """No default string and nothing derived: the ~9,200 cards that carry no
+    subtitle have none, rather than a repeat of their own title."""
+    from qualc.model import parse_card
+
+    assert parse_card(FIXTURES / "PRB-INDEXP.md").card.subtitle is None

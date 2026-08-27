@@ -388,6 +388,21 @@ are generated automatically to populate this information. Cards should not
 contain prose like "this problem appears in Exam X" or "see also collection Y"
 — the site renders this from collection relationships.
 
+# Card subtitle
+
+Any card may carry `subtitle:`, a second line shown under the card's name.
+
+```yaml
+title: Complex numbers $x+y\sqrt2$ form a subfield of $\CC$
+subtitle: Hoffman and Kunze 1.2.1
+```
+
+The title names the card. The subtitle is the smaller line beneath it, and it
+never replaces the title: a card whose only name is `Munkres §52.2` is an
+untitled card, not a subtitled one. The field is free text and optional. Absent
+means the card has no subtitle. Nothing derives one, so a card with no second
+line to show gets no `subtitle:` key rather than a copy of its own title.
+
 # Solution status
 
 Solution status is derived from content, not declared. A problem or exercise

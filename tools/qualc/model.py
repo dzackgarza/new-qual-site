@@ -113,6 +113,11 @@ class CardBase(Strict):
     card_schema: Literal["qual/card@1"] = Field(alias="schema")
     id: str
     title: str
+    # A second line under the title. Absent means the card has none; nothing
+    # derives one. Every kind may carry it -- the body titles it replaces were
+    # measured across ten kinds, exercise and problem being only the two
+    # largest.
+    subtitle: str | None = None
     classification: Classification
     relations: list[Relation]
     review: Review
