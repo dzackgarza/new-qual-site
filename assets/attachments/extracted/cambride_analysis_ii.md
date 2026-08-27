@@ -131,9 +131,9 @@ to preserve the properties of fn.
 Example. Let fn : [−1, 1]→ R be deﬁned by fn(x) =x1/(2n+1). These are all
 continuous, but the pointwise limit function is
 fn(x)→f(x) =
-
-
-
+{
+
+
 1 0 <x ≤ 1
 0 x = 0
 −1 −1≤x< 0
@@ -227,9 +227,9 @@ pointwise. We will show that the converse is false:
 Example. Again consider our ﬁrst example, where fn : [−1, 1]→ R is deﬁned
 byfn(x) =x1/(2n+1). If the uniform limit existed, then it must be given by
 fn(x)→f(x) =
-
-
-
+{
+
+
 1 0 <x ≤ 1
 0 x = 1
 −1 −1≤x< 0
@@ -1724,14 +1724,14 @@ On the other hand, for any ﬁxed j, there is some Nj such thatk≥Nj implies
 |x(k)
 j −xj|< ε√n. So if k≥ max{Nj :j = 1,··· ,n}, then
 ‖x(k)− x‖2 =
-
-
+(
+
 n∑
 j=1
 (x(k)
 j −xj)2
-
-
+)
+
 1
 2
 <ε.
@@ -2093,13 +2093,13 @@ xjvj
 ∑
 |xj|‖vj‖
 ≤‖ x‖2
-
-
+(
+
 n∑
 j=1
 ‖vj‖2
-
-
+)
+
 1
 2
 by the Cauchy-Schwarz inequality. So‖x‖≤ b‖x‖2 for b =
@@ -3440,13 +3440,13 @@ n∑
 j=1
 Djf(a)hj.
 This is a very useful result. For example, we can now immediately conclude
-that the function 
-
+that the function (
+
 x
 y
 z
-
-↦→
+)
+↦→
 (3x2 + 4 siny +e6z
 xyze 14x
 )
@@ -3718,34 +3718,34 @@ then for x = (x1,··· ,xn), we have
 ‖Ax‖2 =
 m∑
 i=1
-
-
+(
+
 n∑
 j=1
 Aijxj
-
-
+)
+
 2
 By Cauchy-Schwarz, we have
 ≤
 m∑
 i=1
-
-
+(
+
 n∑
 j=1
 a2
 ij
-
-
-
-
+)
+
+(
+
 n∑
 j=1
 x2
 j
-
-
+)
+
 =‖x‖2
 m∑
 i=1

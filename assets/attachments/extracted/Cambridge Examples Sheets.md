@@ -4,9 +4,9 @@
 
 1. (i) Where, if anywhere, in the complex plane are the following functions differentiable, and where are they analytic?
 
-Im z; |z |2 ; sech z.
+Im $z$; $| z | ^ { 2 }$; sech $z$.
 
-(ii) Let $f ( z ) = z ^ { 5 } / | z | ^ { 4 } , z \neq 0 , f ( 0 ) = 0$ . Show that the real and imaginary parts of f satisfy the Cauchy–Riemann equations at $z = 0 ,$ , but that $f$ is not differentiable at $z = 0$
+(ii) Let $f ( z ) = z ^ { 5 } / | z | ^ { 4 } , z \neq 0 , f ( 0 ) = 0$ . Show that the real and imaginary parts of f satisfy the Cauchy–Riemann equations at $z = 0 ,$ but that $f$ is not differentiable at $z = 0$
 
 2. Find, as functions of z, complex analytic functions $f ( z )$ whose real parts are the following: (i) x (ii) $x y$ (iii) sin x cosh y (iv) $\log ( x ^ { 2 } + y ^ { 2 } )$ (v) $\frac { y } { ( x + 1 ) ^ { 2 } + y ^ { 2 } }$ (vi) $\tan ^ { - 1 } \left( { \frac { 2 x y } { x ^ { 2 } - y ^ { 2 } } } \right)$
 
@@ -20,7 +20,7 @@ Find an analytic function f(z) such that $\operatorname { R e } f = \phi$ . Can 
 
 ## Branches of multi-valued functions
 
-5. Show how the principal branch of log z can be used to define a branch of $z ^ { i }$ which is singlevalued on the domain $\mathcal { D } = \mathbb { C } \backslash$ R−. Evaluate $i ^ { i }$ for this branch.
+5. Show how the principal branch of log z can be used to define a branch of $z ^ { i }$ which is singlevalued on the domain $\mathcal { D } = \mathbb { C } \backslash \mathbb { R } ^ { - }$. Evaluate $i ^ { i }$ for this branch.
 
 Show, using polar coordinates, that the branch of $z ^ { i }$ defined above maps $\mathcal { D }$ onto an annulus which is covered infinitely often.
 
@@ -56,7 +56,7 @@ to show that the map $f ( z ) = z / ( z - 1 ) ^ { 2 }$ is a one-to-one conformal
 
 (i) $\mathcal { U } _ { 1 } = \{ z : \mathrm { R e } z < 0 , - 1 < \mathrm { I m } z < 1 \} , \mathcal { V } _ { 1 } = \mathcal { D } .$
 
-(ii) $\mathcal { U } _ { 2 } = \mathcal { D } , \mathcal { H } _ { 2 }$ is the cut complex plane $\mathbb { C } \setminus \mathbb { R } ^ { - }$
+(ii) $\mathcal { U } _ { 2 } = \mathcal { D } , \mathcal { V } _ { 2 }$ is the cut complex plane $\mathbb { C } \setminus \mathbb { R } ^ { - }$
 
 (iii) $\mathcal { U } _ { 3 }$ is the angular sector $\{ z : 0 < \arg z < \alpha \} , \mathcal { V } _ { 3 } = \{ z : 0 < \mathrm { I m } z < 1 \}$
 
@@ -68,12 +68,12 @@ to show that the map $f ( z ) = z / ( z - 1 ) ^ { 2 }$ is a one-to-one conformal
 
 $g ( z ) = e ^ { z }$ maps the strip $\mathcal { S } = \{ z : 0 < \operatorname { I m } z < \pi \}$ onto the UHP $\{ z : \operatorname { I m } z > 0 \}$
 
-$h ( z ) = \sin { z }$ maps the half-strip $\mathcal { H } = \left\{ z : - \frac { \pi } { 2 } < \mathrm { R e } z < \frac { \pi } { 2 } \right.$ , Im $z > 0 \}$ onto the UHP.
+$h ( z ) = \sin { z }$ maps the half-strip $\mathcal { H } = \left\{ z : - \frac { \pi } { 2 } < \mathrm { R e } z < \frac { \pi } { 2 } , \operatorname { I m } z > 0 \right\}$ onto the UHP.
 
-Find a conformal map $f \colon { \mathcal { H } }  { \mathcal { H } }$ Hence find a function $\phi ( x , y )$ which is harmonic on the half-strip $\mathcal { H }$ with the following limiting values on its boundary $\partial \mathcal { H }$ :
+Find a conformal map $f \colon \mathcal { H } \to \mathcal { H }$ . Hence find a function $\phi ( x , y )$ which is harmonic on the half-strip $\mathcal { H }$ with the following limiting values on its boundary $\partial \mathcal { H }$ :
 
-$$
-\phi ( x , y ) = \left\{ \begin{array} { l l } { 0 } & { \mathrm { o n } \partial \mathcal { H } \mathrm { i n } \mathrm { t h e } \mathrm { L H P } ( x < 0 ) , } \\ { 1 } & { \mathrm { o n } \partial \mathcal { H } \mathrm { i n } \mathrm { t h e } \mathrm { R H P } ( x > 0 ) . } \end{array} \right.
+$$ 
+\phi ( x , y ) = \left\{ \begin{array} { l l } { 0 } & { \mathrm { o n } \partial \mathcal { H } \mathrm { i n } \mathrm { t h e } \mathrm { L H P } ( x < 0 ) , } \\ { 1 } & { \mathrm { o n } \partial \mathcal { H } \mathrm { i n } \mathrm { t h e } \mathrm { R H P } ( x > 0 ) . } \end{array} \right\}
 $$
 
 Give $\phi$ as a function of x and $y .$ Is there only one such function?
@@ -81,7 +81,7 @@ Give $\phi$ as a function of x and $y .$ Is there only one such function?
 11. Using conformal mapping(s), find a solution to Laplace’s equation in the upper half-plane $\{ z : \operatorname { I m } z > 0 \}$ with boundary conditions
 
 $$
-\phi ( x , 0 ) = { \left\{ \begin{array} { l l } { 1 } & { x \in [ - 1 , 1 ] , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } . } \end{array} \right. }
+\phi ( x , 0 ) = { \left\{ \begin{array} { l l } { 1 } & { x \in [ - 1 , 1 ] , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } . } \end{array} \right\} }
 $$
 
 [Find a map f of the upper half-plane onto itself that makes the boundary conditions easier to deal with.]
@@ -114,7 +114,7 @@ State the range of values of z for which each series converges.
 
 How would your answers differ if you assumed branches different from the principal branch?
 
-2. Let $^ { a , }$ b be complex constants with $0 < | a | < | b |$ . Use partial fractions to find the Laurent expansions of $1 { \big / } \{ ( z - a ) ( z - b ) \}$ about $z = 0$ in each of the regions $| z | < | a | , | a | < | z | < | b |$ and $| z | > | b |$
+2. Let $a , b$ be complex constants with $0 < | a | < | b |$ . Use partial fractions to find the Laurent expansions of $1 { \big / } \{ ( z - a ) ( z - b ) \}$ about $z = 0$ in each of the regions $| z | < | a | , | a | < | z | < | b |$ and $| z | > | b |$
 
 3. Find the first three terms of the Laurent expansion of $f ( z ) = \csc ^ { 2 } z$ valid for $0 < | z | < \pi$
 
@@ -124,11 +124,11 @@ How would your answers differ if you assumed branches different from the princip
 
 ## Integration and residues
 
-5. Evaluate $\oint _ { \gamma } \bar { z } \mathrm { d } z$ when γ is the circle $| z | = 1 ,$ , and when $\gamma$ is the circle $| z - 1 | = 1$
+5. Evaluate $\oint _ { \gamma } \bar { z } \mathrm { d } z$ when γ is the circle $| z | = 1 ,$ and when $\gamma$ is the circle $| z - 1 | = 1$
 
 6. (i) Show that if $f ( z )$ is analytic, then the residue of $f ( z ) / ( z - z _ { 0 } )$ at $z = z _ { 0 }$ is $f ( z _ { 0 } )$
 
-(ii) Show that if $1 / f ( z )$ has a simple pole at $z = z _ { 0 } ,$ , then its residue at $z = z _ { 0 }$ is $1 / f ^ { \prime } ( z _ { 0 } )$
+(ii) Show that if $1 / f ( z )$ has a simple pole at $z = z _ { 0 } ,$ then its residue at $z = z _ { 0 }$ is $1 / f ^ { \prime } ( z _ { 0 } )$
 
 (iii) Show that if $h ( z )$ has a simple zero at $z = z _ { 0 }$ and $g ( z )$ is analytic and non-zero, the residue of $g ( z ) / h ( z )$ at $z = z _ { 0 }$ is $g ( z _ { 0 } ) / h ^ { \prime } ( z _ { 0 } )$
 
@@ -144,7 +144,7 @@ $$
 
 where $\gamma _ { 1 }$ is the ellipse $x ^ { 2 } + 4 y ^ { 2 } = 1 , \gamma _ { 2 }$ is the circle $x ^ { 2 } + y ^ { 2 } = 2 , \gamma _ { 3 }$ is the circle $| z - ( 2 + i ) | = { \sqrt { 2 } }$ and $\gamma _ { 4 }$ is the circle $| z | = 2$
 
-8. By integrating the function $z ^ { n } ( z - a ) ^ { - 1 } ( z - a ^ { - 1 } ) ^ { - 1 }$ around the unit circle in the z-plane (where a is real, $a > 1 _ { . }$ , and n is a non-negative integer), evaluate
+8. By integrating the function $z ^ { n } ( z - a ) ^ { - 1 } ( z - a ^ { - 1 } ) ^ { - 1 }$ around the unit circle in the z-plane (where a is real, $a > 1$, and n is a non-negative integer), evaluate
 
 $$
 \int _ { 0 } ^ { 2 \pi } { \frac { \cos n \theta } { 1 - 2 a \cos \theta + a ^ { 2 } } } \mathrm { d } \theta .
@@ -152,7 +152,7 @@ $$
 
 ## The calculus of residues
 
-9. Evaluate lim $\int _ { - R } ^ { R } { \frac { x \mathrm { d } x } { 1 + x + x ^ { 2 } } }$ . Why is the limit here rather than just the integral $\int _ { - \infty } ^ { \infty } \ d z$ R→∞
+9. Evaluate $\lim _ { R \to \infty } \int _ { - R } ^ { R } { \frac { x \mathrm { d } x } { 1 + x + x ^ { 2 } } }$ . Why is the limit here rather than just the integral $\int _ { - \infty } ^ { \infty } \mathrm { d } z$
 
 10. By integrating around a keyhole contour, show that
 
@@ -194,7 +194,7 @@ $$
 
 Show that, if $\gamma$ is a contour that encloses no zeros of $P ,$ then $I = 0$
 
-Evaluate the limit of I as $R \to \infty ,$ , where $\gamma$ is the circle $| z | = R ,$ , and deduce that $P$ has at least one zero in the complex plane.
+Evaluate the limit of I as $R \to \infty ,$ where $\gamma$ is the circle $| z | = R ,$ and deduce that $P$ has at least one zero in the complex plane.
 
 14. By considering the integral of $f ( z ) = \cot z / ( z ^ { 2 } + \pi ^ { 2 } a ^ { 2 } )$ around a suitable large contour, prove that, provided ia is not an integer,
 
@@ -219,7 +219,7 @@ Fourier Transforms
 1. Let
 
 $$
-f ( x ) = { \left\{ \begin{array} { l l } { 1 } & { | x | < { \frac { 1 } { 2 } } a , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } ; } \end{array} \right. } \qquad g ( x ) = { \left\{ \begin{array} { l l } { a - | x | } & { | x | < a , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } . } \end{array} \right. }
+f ( x ) = { \left\{ \begin{array} { l l } { 1 } & { | x | < { \frac { 1 } { 2 } } a , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } ; } \end{array} \right\} } \qquad g ( x ) = { \left\{ \begin{array} { l l } { a - | x | } & { | x | < a , } \\ { 0 } & { { \mathrm { o t h e r w i s e } } . } \end{array} \right\} }
 $$
 
 Show that
@@ -278,9 +278,9 @@ $$
 
 ## Laplace Transforms
 
-6. Starting from the Laplace transform of 1 (namely $p ^ { - 1 } )$ , and using only standard properties of the Laplace transform (shifting, etc.), find the Laplace transforms of the following functions: $\mathrm { ( i ) } e ^ { - 2 \hat { t } } \mathrm { ( i i ) } t ^ { 3 } e ^ { - 3 t } \mathrm { ( i i i ) } e ^ { 3 \dot { t } } \sin 4 t \mathrm { ( i v ) } e ^ { - 4 t }$ cosh 2t.
+6. Starting from the Laplace transform of 1 (namely $p ^ { - 1 } )$ , and using only standard properties of the Laplace transform (shifting, etc.), find the Laplace transforms of the following functions: $\mathrm { ( i ) } e ^ { - 2 t } \mathrm { ( i i ) } t ^ { 3 } e ^ { - 3 t } \mathrm { ( i i i ) } e ^ { 3 t } \sin 4 t \mathrm { ( i v ) } e ^ { - 4 t }$ cosh 2t.
 
-7. Using partial fractions and expressions for the Laplace transforms of elementary functions, find the inverse Laplace transform of $\widehat { f } ( p ) = ( p + 3 ) \widehat { / } \{ ( p - 2 ) ( p ^ { 2 } + 1 ) \}$ }. Verify this result using the Bromwich inversion formula.
+7. Using partial fractions and expressions for the Laplace transforms of elementary functions, find the inverse Laplace transform of $\widehat { f } ( p ) = ( p + 3 ) / \{ ( p - 2 ) ( p ^ { 2 } + 1 ) \}$ . Verify this result using the Bromwich inversion formula.
 
 8. Use Laplace transforms to solve the differential equation
 
