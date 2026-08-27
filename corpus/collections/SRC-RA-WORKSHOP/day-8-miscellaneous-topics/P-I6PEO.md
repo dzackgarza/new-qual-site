@@ -10,6 +10,10 @@ classification:
   - Variation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Furthermore, assume that for some $c>0$, $|f(x)| \geq c$ on $[a,b]$.
 Show that $g(x) = 1/f(x)$ is of bounded variation on $[a,b]$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. For $x, y \in [a,b]$: $\left|\frac{1}{f(x)} - \frac{1}{f(y)}\right| = \frac{|f(x) - f(y)|}{|f(x)f(y)|} \le \frac{1}{c^2}|f(x) - f(y)|$.
 Proof: $\frac{1}{f(x)} - \frac{1}{f(y)} = \frac{f(y) - f(x)}{f(x)f(y)}$; and $|f(x)f(y)| \ge c^2$ by the hypothesis $|f| \ge c > 0$.
 

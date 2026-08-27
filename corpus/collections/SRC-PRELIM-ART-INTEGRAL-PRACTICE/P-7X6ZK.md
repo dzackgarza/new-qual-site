@@ -13,6 +13,10 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the definite integral $\int_{0}^{\pi} \sqrt{1 + \cos(2x)} \, dx$.
 
 <1>1. Trigonometric simplification: For all $x \in [0, \pi]$, $1 + \cos(2x) = 2\cos^2(x)$, hence $\sqrt{1 + \cos(2x)} = \sqrt{2}|\cos(x)|$.

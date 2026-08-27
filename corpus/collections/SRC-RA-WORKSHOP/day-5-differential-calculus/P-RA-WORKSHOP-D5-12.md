@@ -12,6 +12,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ If $\{x_n\}$ is an increasing sequence of real numbers converging to $a$ and $\{
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Decompose the quotient.
 Proof: write $x_n \nearrow a$, $y_n \searrow a$ with $x_n < a < y_n$ for all $n$.
 Then \[\frac{f(y_n) - f(x_n)}{y_n - x_n} = \frac{(f(y_n) - f(a)) + (f(a) - f(x_n))}{y_n - x_n} = \frac{y_n - a}{y_n - x_n}\cdot\frac{f(y_n) - f(a)}{y_n - a} + \frac{a - x_n}{y_n - x_n}\cdot\frac{f(a) - f(x_n)}{a - x_n}.\] <1>2. The coefficients are a convex combination.

@@ -11,6 +11,10 @@ classification:
   - Retracts
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Show that $S^3 - \{p_0, p_1\} \simeq S^2$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that the complement of two distinct points in the 3-sphere, $S^3 \setminus \{p_0, p_1\}$, is homotopy equivalent to $S^2$.
 
 <1>1. $S^3 \setminus \{p_0\}$ is homeomorphic to $\mathbb{R}^3$.

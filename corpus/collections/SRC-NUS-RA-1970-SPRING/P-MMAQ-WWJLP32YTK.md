@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Decide each of (a), (b), (c): (a) Lusin-type approximation of a measurable function by a continuous one on a compact set; (b) Borel measurability of sections of a Borel function of two variables; (c) the closed/open inner–outer approximation characterization of measurability.
 
 <1>1. (a) is true.

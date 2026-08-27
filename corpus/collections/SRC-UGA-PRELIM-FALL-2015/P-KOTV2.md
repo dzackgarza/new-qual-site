@@ -12,6 +12,10 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -39,8 +43,6 @@ from which we find that $\vector v_1 = \thevector{1,0,-2,-3}$ and $\vector v_2 =
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Find a basis for the subspace $W = \operatorname{span}\{(1,1,1,1), \, (3,4,6,7), \, (5,6,8,9)\} \subseteq \mathbb{R}^4$.
 
 <1>1. Let $v_1 = (1,1,1,1)$, $v_2 = (3,4,6,7)$, and $v_3 = (5,6,8,9)$. The subspace $W$ equals the row space $\operatorname{Row}(A)$ of the matrix:

@@ -13,6 +13,10 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.proposition}
@@ -26,8 +30,6 @@ For $\Omega\subseteq\CC$, show that $A(\CC)\definedas \theset{f: \Omega \to \CC 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $\Omega \subseteq \CC$, show that the space of bounded holomorphic functions on $\Omega$, with the supremum norm, is a Banach space.
 
 <1>1. The space $A(\Omega) = \{f: \Omega \to \CC \st f \text{ bounded and holomorphic}\}$ is a vector space with the sup norm $\norm{f}_\infty = \sup_{z \in \Omega}\abs{f(z)}$.

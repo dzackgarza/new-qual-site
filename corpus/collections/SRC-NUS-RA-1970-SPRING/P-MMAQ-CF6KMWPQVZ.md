@@ -10,6 +10,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ If $f$ is a finite real valued measurable function on a measurable set $E \subse
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $E \subseteq \RR$ be a Lebesgue measurable set and $f: E \to \RR$ be a measurable function. Prove that the graph $\Gamma(f) = \{(x, f(x)) : x \in E\} \subseteq \RR^2$ is Lebesgue measurable (with Lebesgue measure zero).
 
 <1>1. **Measurability of coordinate functions and difference mapping.**

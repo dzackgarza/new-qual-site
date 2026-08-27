@@ -12,6 +12,10 @@ classification:
   - Factorization
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p$ be a prime and $d, n \ge 1$ be positive integers.
 In the polynomial ring $\mathbb{F}_p[x]$, prove that $(x^{p^d} - x) \mid (x^{p^n} - x)$ if and only if $d \mid n$.
 

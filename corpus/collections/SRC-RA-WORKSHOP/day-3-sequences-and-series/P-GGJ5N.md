@@ -11,6 +11,10 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Assume $\beta >0$, $a_n>0$, $n=1,2,\ldots$, and the series $\sum a_n$ is diverge
 Show that $\displaystyle \sum \frac{a_n}{\beta + a_n}$ is also divergent.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Claim: $\sum \frac{a_n}{\beta + a_n}$ diverges.
 Proof: we show its partial sums are unbounded, using the divergence of $\sum a_n$.
 

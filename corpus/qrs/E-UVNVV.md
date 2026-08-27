@@ -12,6 +12,10 @@ classification:
   - Argument Principle
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if $z_0$ is a zero of $f'$ of order $n$, then $f$ is $(n+1)$-to-one in
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $z_0$ is a zero of $f'$ of order $n$, then $f$ is $(n+1)$-to-one in a neighborhood of $z_0$ (for $z$ near $z_0$, the equation $f(z) = w$ has exactly $n+1$ solutions in a punctured neighborhood of $z_0$, for $w$ near $f(z_0)$, $w \neq f(z_0)$).
 
 <1>1. Setup: expand $f$ about $z_0$.

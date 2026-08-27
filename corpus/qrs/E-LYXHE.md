@@ -11,6 +11,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -26,8 +30,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Yes: if $f$ and $g$ are compactly supported, then $f \ast g$ is compactly supported.
 <2>1. $\supp(f \ast g) \subseteq \overline{\supp f + \supp g}$.
 Proof: if $x \notin \overline{\supp f + \supp g}$, then $(x - \supp g) \cap \supp f = \emptyset$, so $f(x-y) = 0$ for every $y \in \supp g$ and $f \ast g(x) = \int f(x-y)g(y)\,dy = 0$.

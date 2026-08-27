@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $h(z) =z^5 + 3z + 1$ has 5 zeros in $\abs z \leq 2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that $h(z) = z^5 + 3z + 1$ has exactly 5 zeros in $\abs{z} \le 2$.
 
 <1>1. Setup: write $h = f + g$ with $f(z) = z^5$ and $g(z) = 3z + 1$.

@@ -12,6 +12,10 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Suppose $f_n:[0,1]\to\mathbb{R}$ are continuous functions converging uniformly t
 Either prove that $\displaystyle\lim_{n\to\infty}\int_{1/n}^1 f_n(x)\,dx=\int_0^1 f(x)\,dx$ or give a counterexample.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Claim: $\lim_{n\to\infty}\int_{1/n}^1 f_n(x)\,dx = \int_0^1 f(x)\,dx$.
 Proof: split the difference into the convergence part (uniform) and the endpoint part (small interval).
 

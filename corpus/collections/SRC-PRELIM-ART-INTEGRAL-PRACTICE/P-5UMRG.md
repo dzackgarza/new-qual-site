@@ -11,6 +11,10 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the indefinite integral $\int \frac{\sqrt{x^2-a^2}}{x} \, dx$ for $a > 0$ and $x > a$.
 
 <1>1. Substitute $x = a \sec(\theta)$ with $\theta \in (0, \pi/2)$.

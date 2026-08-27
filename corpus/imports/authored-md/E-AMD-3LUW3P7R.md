@@ -11,6 +11,10 @@ classification:
   - Normal Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $\Inn(G) \normal \Aut(G)$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a group. Recall that:
 - $\Aut(G)$ is the group of all automorphisms of $G$ under composition.
 - $\Inn(G) = \{\gamma_g : g \in G\}$, where $\gamma_g \in \Aut(G)$ is the inner automorphism defined by conjugation:

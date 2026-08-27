@@ -13,6 +13,10 @@ classification:
   - Singularities
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -20,8 +24,6 @@ Show that $\Aut_\CC(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that the holomorphic automorphisms of $\CC$ are exactly the affine maps $z \mapsto az + b$ with $a \in \CC^{\times}$, $b \in \CC$.
 
 <1>1. Every affine map $z \mapsto az + b$, $a \neq 0$, is a holomorphic automorphism of $\CC$.

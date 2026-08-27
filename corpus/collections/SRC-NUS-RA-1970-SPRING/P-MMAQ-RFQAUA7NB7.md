@@ -14,6 +14,10 @@ classification:
   - Variation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -30,8 +34,6 @@ If $\{f_n\}$ converges uniformly to a function $f$ on $I$, then $f$ is also unif
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove or disprove each of (a)–(d).
 
 <1>1. Statement (a) is FALSE. <2>1. Counterexample: the step function $f(x) = 0$ on $[0, 1/2]$ and $f(x) = 1$ on $(1/2, 1]$.

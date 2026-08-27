@@ -11,6 +11,10 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Prove the Ham Sandwich theorem.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $A_1, A_2, \dots, A_n \subset \mathbb{R}^n$ be $n$ bounded Lebesgue measurable subsets of finite measure $\mu(A_i) < \infty$.
 Prove the Ham Sandwich Theorem: there exists an affine hyperplane $H \subset \mathbb{R}^n$ that simultaneously bisects all $n$ sets, i.e., divides each $A_i$ into two pieces of equal measure.
 

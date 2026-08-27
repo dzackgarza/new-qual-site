@@ -11,6 +11,10 @@ classification:
   - Hausdorff Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that if $X$ is Hausdorff and $A\subseteq X$ is compact then $A$ is closed.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $X$ is Hausdorff and $A \subseteq X$ is compact, then $A$ is closed.
 
 <1>1. Fix $x \in X \setminus A$; it suffices to find an open neighborhood of $x$ disjoint from $A$.

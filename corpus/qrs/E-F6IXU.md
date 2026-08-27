@@ -12,6 +12,10 @@ classification:
   - Density
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -23,8 +27,6 @@ review: draft
 
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove continuity of translation in $L^1(\RR)$: for $f \in L^1$, $\lim_{h \to 0} \int |f(x+h) - f(x)|\,dx = 0$.
 
 <1>1. The claim holds for $\varphi = \chi_{[a,b]}$, the indicator of a compact interval.

@@ -14,6 +14,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -33,8 +37,6 @@ half plane $\mathbb H=\{z=x+iy:\ y>0\}$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 
 1. For $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $|\alpha| < 1$, prove that $\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)|^2 \,dx\,dy = 1$.

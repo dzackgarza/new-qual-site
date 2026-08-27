@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Consider $g(x) = f(x) - x$ on $[0,1]$.
 Proof: $g$ is continuous (difference of continuous functions).
 At the endpoints: \[g(0) = f(0) - 0 = f(0) \ge 0 \quad (\text{as } f([0,1]) \subseteq [0,1]),\] \[g(1) = f(1) - 1 \le 0 \quad (\text{as } f(1) \le 1).\] <1>2. Apply the intermediate value theorem.

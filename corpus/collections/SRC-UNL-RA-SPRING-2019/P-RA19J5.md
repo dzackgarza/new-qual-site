@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 :::{.problem}
@@ -24,7 +28,6 @@ $$\int_0^4 f(x)\,d\alpha.$$
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
 **Goal:** Use the Riemann condition to show $f(x) = e^{2x} \in \mathcal R_\alpha[0,4]$ with the piecewise-linear $\alpha$, and compute $\int_0^4 f\,d\alpha$.
 
 <1>1. $\alpha(x) = x+1$ on $[0,2]$ and $\alpha(x) = 3x - 2$ on $(2,4]$: continuous, and $\alpha' = 1$ on $(0,2)$, $\alpha' = 3$ on $(2,4)$.

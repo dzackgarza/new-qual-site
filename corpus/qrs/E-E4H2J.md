@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f \in L^1(\RR)$ and $g$ is bounded (say $|g| \leq M$ a.e.), then $f\ast g$ is bounded and uniformly continuous on $\RR$.
 
 <1>1. $f\ast g$ is bounded, with $|f\ast g(x)| \leq M\norm{f}_1$ for every $x$.

@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -31,8 +35,6 @@ Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 
 1. Prove that $f(z) = z^2$ is uniformly continuous on the open disk $D(0, R) = \{z \in \mathbb{C} : |z| < R\}$ for any fixed $R > 0$, but is not uniformly continuous on $\mathbb{C}$.

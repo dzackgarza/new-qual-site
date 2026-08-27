@@ -12,6 +12,10 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ z\in \bar B\qty{a, {r\over 2}},\,z\neq a, \qquad {\abs{ f(z) - f(a)} \over \abs{
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $\bar B(a, r)$ be the closed disk of radius $r$ about $a$, and let $f$ be holomorphic on an open set containing it, with $M := \sup_{z \in \bar B(a,r)} \abs{f(z)}$. Prove that for $z \in \bar B\qty{a, \frac{r}{2}}$, $z \neq a$:
 $$\frac{\abs{f(z) - f(a)}}{\abs{z - a}} \leq \frac{2M}{r}.$$
 

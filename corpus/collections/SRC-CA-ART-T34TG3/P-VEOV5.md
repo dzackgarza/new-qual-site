@@ -14,6 +14,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -36,8 +40,6 @@ d. Show that if the real part of an entire function is bounded, then $f$ is cons
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (a) $\sup_{\abs{z}=R}\abs{f} \leq AR^k + B$ for all $R > 0$ implies $f$ is a polynomial of degree $\leq k$; (b) $f$ holomorphic, bounded on $\DD$ and $\to 0$ uniformly in a sector as $\abs z \to 0$ implies $f \equiv 0$; (c) for points $w_j \in S^1$ there is $z \in S^1$ with $\prod_j \abs{z - w_j} \geq 1$, and some $w \in S^1$ with the product exactly $1$; (d) bounded real part implies constant.
 
 <1>1. (a): $f^{(n)}(0) = 0$ for all $n > k$.

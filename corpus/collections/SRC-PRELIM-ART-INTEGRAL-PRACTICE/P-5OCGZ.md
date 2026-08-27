@@ -11,6 +11,10 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the indefinite integral $\int \frac{x+1}{\sqrt{4-x^2}} \, dx$ for $|x| < 2$.
 
 <1>1. Split the integral into two parts: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = \int \frac{x}{\sqrt{4-x^2}} \, dx + \int \frac{1}{\sqrt{4-x^2}} \, dx.$$ Proof: By linearity of the indefinite integral.

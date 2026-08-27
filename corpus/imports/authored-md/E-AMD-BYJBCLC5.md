@@ -12,6 +12,10 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Is $\QQ(2^{1\over 3})/\QQ$ normal?
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Determine whether the field extension $K/\mathbb{Q}$, where $K = \mathbb{Q}(\sqrt[3]{2}) \subset \mathbb{R}$, is a normal extension of $\mathbb{Q}$, and provide a complete proof.
 
 **Answer:** No, $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ is not a normal extension.

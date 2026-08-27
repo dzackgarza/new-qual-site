@@ -13,6 +13,10 @@ classification:
   - Normal Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -22,8 +26,6 @@ Show that $H \operatorname{char} K \operatorname{char} G \implies H \operatornam
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Recall the definition of a characteristic subgroup:
 A subgroup $S \leq M$ is **characteristic in $M$** (denoted $S \operatorname{char} M$) if for every automorphism $\psi \in \Aut(M)$, we have $\psi(S) = S$.
 

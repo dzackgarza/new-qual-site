@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ H \subseteq E \subseteq V \quad \text{and}\quad \mu(V\setminus H) = 0.
 $$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (1) $\Rightarrow$ (2). Proof: for each $k \in \NN$, (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $\mu(G_k \setminus F_k) < 1/k$.
 Set $V = \cap_k G_k \in G_\delta$ and $H = \cup_k F_k \in F_\sigma$; then $H \subseteq E \subseteq V$.
 Moreover $V \setminus H \subseteq G_k \setminus F_k$ for every $k$ (since $V \subseteq G_k$ and $H \supseteq F_k$), so $\mu(V \setminus H) \le \mu(G_k \setminus F_k) < 1/k$ for all $k$, hence $\mu(V \setminus H) = 0$.

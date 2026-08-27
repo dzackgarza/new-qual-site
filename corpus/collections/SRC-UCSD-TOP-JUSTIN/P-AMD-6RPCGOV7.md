@@ -12,6 +12,10 @@ classification:
   - Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Given a group $G = <A : R>$, show how to construct a CW-complex $X$ such that $\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Given a group presentation $G = \langle A \mid R \rangle$ with generator set $A$ and relator set $R$, construct a 2-dimensional CW complex $X$ such that $\pi_1(X, x_0) \cong G$.
 
 <1>1. Construct the 0-skeleton $X^0$ and 1-skeleton $X^1$.

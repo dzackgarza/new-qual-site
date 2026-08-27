@@ -12,6 +12,10 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that a real-valued holomorphic function must be constant.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that a real-valued holomorphic function on a domain must be constant.
 
 <1>1. Write $f = u + iv$ with $v \equiv 0$; the Cauchy–Riemann equations give $u_x = v_y = 0$ and $u_y = -v_x = 0$.

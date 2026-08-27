@@ -11,6 +11,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Prove your answer.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f(x) = \ln x$ is NOT uniformly continuous on $(0,1]$.
 Proof: take $x_n = e^{-n}$ and $y_n = e^{-n-1}$.
 Then $x_n, y_n \in (0,1]$ and \[|x_n - y_n| = e^{-n-1}(e - 1) \to 0,\] but $|\ln x_n - \ln y_n| = |-n - (-n-1)| = 1$ for all $n$.

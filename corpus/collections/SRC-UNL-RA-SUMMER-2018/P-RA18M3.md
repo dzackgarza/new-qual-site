@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -31,8 +35,8 @@ If it is, evaluate $$\int_{-1}^{1}f(x)\,d\alpha(x).$$
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Determine whether $f$ is Riemann–Stieltjes integrable w.r.t. $\alpha$ on $[-1,1]$, where $f = -1$ on $[-2,0)$, $3$ on $[0,2]$; $\alpha = -2$ on $[-2,0]$, $1$ on $(0,2]$.
-> If so, evaluate $\int_{-1}^1 f\,d\alpha$.
+**Goal:** Determine whether $f$ is Riemann–Stieltjes integrable w.r.t. $\alpha$ on $[-1,1]$, where $f = -1$ on $[-2,0)$, $3$ on $[0,2]$; $\alpha = -2$ on $[-2,0]$, $1$ on $(0,2]$.
+If so, evaluate $\int_{-1}^1 f\,d\alpha$.
 
 <1>1. The restriction to $[-1,1]$: $f(x) = -1$ on $[-1,0)$, $f(x) = 3$ on $[0,1]$; $\alpha(x) = -2$ on $[-1,0]$, $\alpha(x) = 1$ on $(0,1]$.
 Proof: restrict the given definitions to $[-1,1]$.

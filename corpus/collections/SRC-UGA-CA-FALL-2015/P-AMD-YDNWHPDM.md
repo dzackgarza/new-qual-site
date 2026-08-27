@@ -14,6 +14,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -41,8 +45,6 @@ Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 1. Prove using $n$-th roots of unity that $2^{n-1} \prod_{k=1}^{n-1} \sin\left(\frac{k\pi}{n}\right) = n$ for any integer $n \geq 2$.
 2. (a) Derive the polar form of the Cauchy-Riemann equations: $\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}$ and $\frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$.

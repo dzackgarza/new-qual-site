@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -23,7 +27,7 @@ Let $f:\mathbb R\to\mathbb R$ be a continuous function, and for all $n\ge 1$ put
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (a) $f_n(x) = f(x + 1/n)$ converges uniformly to $f$ on any closed interval $[a,b]$; (b) give a continuous $f$ for which convergence is not uniform on $\mathbb R$.
+**Goal:** (a) $f_n(x) = f(x + 1/n)$ converges uniformly to $f$ on any closed interval $[a,b]$; (b) give a continuous $f$ for which convergence is not uniform on $\mathbb R$.
 
 <1>1. (a) $f_n \to f$ uniformly on $[a,b]$.
 <2>1. $f$ is uniformly continuous on the enlarged interval $[a-1, b+1]$.

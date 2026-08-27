@@ -12,6 +12,10 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $g$ be analytic on $|z| \le 1$ with $|g(z)| < 1$ for $|z| = 1$. (a) Show $g$ has a unique fixed point in $|z| < 1$. (b) What changes if $|g(z)| \le 1$ on $|z| = 1$? (c) If $f$ is analytic on $|z| < 1$ with $|f(z)| < 1$ and $f \not\equiv z$, can $f$ have more than one fixed point in $|z| < 1$?
 
 <1>1. (a) Setup: apply Rouch\'e to $g(z) - z$ on $|z| = 1$.

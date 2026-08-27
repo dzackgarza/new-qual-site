@@ -13,6 +13,10 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Show that for sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** With $P_n(z) = \sum_{k=0}^n \frac{z^k}{k!}$, show that for all large $n$, $P_n$ has no zeros in $\abs{z} < 10$ and $P_n - 1$ has exactly 3 zeros there.
 
 <1>1. $P_n \to e^z$ uniformly on the circle $\abs{z} = 10$.

@@ -11,6 +11,10 @@ classification:
   - Mean Value Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ Note: See [Rud76, Chap 5, #26] for a significant hint.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f$ is bounded.
 Proof: let $M = \sup_{[0,1]}|f(x)| < \infty$ ($f$ differentiable on a compact interval is continuous, hence bounded).
 <1>2. Iterated Gronwall bound.

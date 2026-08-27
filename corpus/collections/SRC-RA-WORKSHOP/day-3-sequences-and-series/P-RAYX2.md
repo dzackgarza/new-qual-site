@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ $\{a_n\}$ converges, prove that
 $$\liminf_{n\to\infty}(a_nb_n)=\left(\lim_{n\to\infty}a_n\right)\left(\liminf_{n\to\infty}b_n\right).$$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Part 1) Take $a_n = 2 + (-1)^n$ and $b_n = 2 - (-1)^n$.
     Proof: $a_n = 3, 1, 3, 1, \ldots$ and $b_n = 1, 3, 1, 3, \ldots$, both positive. Then $\liminf a_n = 1$ and $\liminf b_n = 1$, so the right-hand side is $1$. But $a_n b_n = (2+(-1)^n)(2-(-1)^n) = 4 - 1 = 3$ for all $n$, so $\liminf(a_n b_n) = 3 > 1$.
 <1>2. (Part 2) Let $a_n \to a$ with $a_n, b_n > 0$. Then $\liminf(a_n b_n) = a \liminf b_n$.

@@ -12,6 +12,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define
@@ -125,8 +129,6 @@ Therefore $S \times T$ is sequentially compact and $S \times T$
 is therefore compact. ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Part 1: $d_{M \times N}$ is a metric.**
 
 <1>1. $d_{M\times N} \ge 0$, and $d_{M\times N}((x_1,y_1),(x_2,y_2)) = 0$ iff $(x_1,y_1) = (x_2,y_2)$.

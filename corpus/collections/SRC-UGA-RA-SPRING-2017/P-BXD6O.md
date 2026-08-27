@@ -12,6 +12,10 @@ classification:
   - L²
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -23,8 +27,6 @@ h(x) \definedas \int _{-\infty}^{\infty} f(t) g(x-t) \, dt
 defines a uniformly continuous function $h$ on $\RR$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $h$ is well-defined (a.e.) and bounded.
 <2>1. For every $x$, $\int |f(t)|\,|g(x-t)|\,dt \le \|f\|_2\|g\|_2$.
 Proof: Cauchy–Schwarz applied to $f(t)$ and $g(x-t)$; the second factor is $\|g\|_2$ by translation-invariance of the $L^2$ norm.

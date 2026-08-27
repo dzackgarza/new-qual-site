@@ -12,6 +12,10 @@ classification:
   - Completeness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ Show that $H$ is complete.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $\mu$ be Lebesgue measure on $\DD$ and let $H$ be the subspace of $L^2(\DD, \mu)$ consisting of holomorphic functions.
 Show that $H$ is complete.
 

@@ -11,6 +11,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ has $n$ solutions in the open unit disc if $\abs{a} > e$, and no solutions if $\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that $e^z = az^n$ has exactly $n$ solutions in the open unit disk when $\abs a > e$, and no solutions when $\abs a < \frac{1}{e}$.
 
 <1>1. On $\abs z = 1$: $\abs{e^z} = e^{\Re z} \leq e^{\abs z} = e$.

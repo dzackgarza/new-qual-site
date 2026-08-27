@@ -12,6 +12,10 @@ classification:
   - Simple Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $[A_n, A_n] = A_n$ for $n\geq 5$, so $A_{n\geq 5}$ is nonabelian.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $n \ge 5$ be an integer, and let $A_n$ be the alternating group on $n$ elements.
 Prove that the commutator subgroup $[A_n, A_n] = A_n$, and deduce that $A_n$ is non-abelian.
 

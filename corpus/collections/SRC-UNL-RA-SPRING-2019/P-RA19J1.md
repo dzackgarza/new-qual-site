@@ -12,6 +12,10 @@ classification:
   - Equicontinuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,7 +26,7 @@ Clearly motivate your answer.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (a) Prove $f_n(x) = \frac{1}{1+n^2x^2}$ and $g_n(x) = nx(1-x)^n$ converge pointwise but not uniformly on $[0,1]$; (b) decide equicontinuity of the two families.
+**Goal:** (a) Prove $f_n(x) = \frac{1}{1+n^2x^2}$ and $g_n(x) = nx(1-x)^n$ converge pointwise but not uniformly on $[0,1]$; (b) decide equicontinuity of the two families.
 
 <1>1. (a) $f_n$ converges pointwise to $f(x) = 1$ at $x = 0$ and $f(x) = 0$ on $(0,1]$.
 Proof: $f_n(0) = 1$ for all $n$; for $x > 0$, $n^2x^2 \to \infty$, so $f_n(x) \to 0$.

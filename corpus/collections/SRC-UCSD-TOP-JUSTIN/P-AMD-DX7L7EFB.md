@@ -11,6 +11,10 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Identify $\pi_1(M, [(1, \frac{1}{2})])$, and identify the class of $\partial M$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $M = ([0, 1] \times [0, 1]) / ((0, y) \sim (1, 1-y))$ be the standard Möbius strip with basepoint $x_0 = [(1, 1/2)] = [(0, 1/2)]$.
 
 1. Compute the fundamental group $\pi_1(M, x_0)$.

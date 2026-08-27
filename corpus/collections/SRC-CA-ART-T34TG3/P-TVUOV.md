@@ -13,6 +13,10 @@ classification:
   - Argument Principle
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Prove that $z^4 + 2 z^3 - 2z + 10 =0$ has exactly one root in each open quadrant
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $P(z) = z^4 + 2z^3 - 2z + 10$.
 Since $P(z)$ has real coefficients, its complex roots come in conjugate pairs: if $z_0$ is a root, then $\overline{z_0}$ is also a root.
 

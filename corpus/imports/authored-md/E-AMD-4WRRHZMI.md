@@ -12,6 +12,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $R$ be an integral domain (a commutative ring with identity $1 \neq 0$ and no non-zero zero divisors).
 Then $R[t]$ is also a commutative ring with identity $1 \in R[t]$ ($1 \neq 0$).
 

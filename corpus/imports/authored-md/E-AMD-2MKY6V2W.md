@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -20,8 +24,6 @@ The converse?
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Neither property implies the other in general.
 
 **(1) Does diagonalizable imply invertible? NO.**

@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ If $f$ is a nonnegative measurable function on $\mathbb{R}$ and $p > 0$, show th
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $f \geq 0$ measurable on $\RR$ and $p > 0$, prove $\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{f > t\}} ~dt$, where $\abs{\cdot}$ is Lebesgue measure.
 Both sides are allowed to be $+\infty$.
 

@@ -11,6 +11,10 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the indefinite integral $\int \sqrt{4-x} \, dx$ for $x \le 4$.
 
 <1>1. Make the substitution $u = 4 - x$.

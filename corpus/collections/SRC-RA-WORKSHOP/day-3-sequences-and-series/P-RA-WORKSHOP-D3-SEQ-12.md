@@ -11,6 +11,10 @@ classification:
   - Sequences of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ If $\sum b_n$ is convergent, show that $\sum a_nb_n$ is also convergent.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Bound $a_n$ uniformly.
 Proof: $\{a_n\}$ is bounded and positive, so there is $M > 0$ with $0 < a_n \le M$ for all $n$.
 <1>2. Compare $\sum a_n b_n$ with $\sum b_n$.

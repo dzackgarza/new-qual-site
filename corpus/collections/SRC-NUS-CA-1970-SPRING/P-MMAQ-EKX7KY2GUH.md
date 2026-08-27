@@ -10,6 +10,10 @@ classification:
   - Green's Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ State and prove the divergence theorem on any rectangle in $\mathbb{R}^2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** State and prove the 2D Divergence Theorem (Green's theorem in normal form) on any closed rectangle $R = [a, b] \times [c, d] \subset \mathbb{R}^2$.
 
 * * *

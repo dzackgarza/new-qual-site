@@ -11,6 +11,10 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Is $\mathcal{F}$ equicontinuous?
 Justify your answer.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Compute the derivative.
 Proof: $f_n(x) = \frac{x}{1+nx^2}$, so \[ f_n'(x) = \frac{(1+nx^2) - 2nx^2}{(1+nx^2)^2} = \frac{1 - nx^2}{(1+nx^2)^2}. \] <1>2. $|f_n'(x)| \le 1$ for all $n$ and all $x$.
 Proof: let $u = nx^2 \ge 0$; then $|f_n'(x)| = \frac{|1-u|}{(1+u)^2}$.

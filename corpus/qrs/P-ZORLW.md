@@ -12,6 +12,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f$ is holomorphic on a bounded region $\Omega$, continuous on $\bar\Omega$, and $\abs f = 0$ (i.e. $f = 0$) on $\bd\Omega$, show that either $f$ is constant or $f$ has a zero in $\Omega$.
 
 <1>1. If $f$ has no zeros in $\Omega$, then $\abs{f}$ attains its maximum on $\bd\Omega$.

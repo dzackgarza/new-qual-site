@@ -10,6 +10,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -17,8 +21,6 @@ Show that if $X$ is compact and $A\subseteq X$ is closed then $A$ is compact.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $X$ is compact and $A \subseteq X$ is closed, then $A$ is compact.
 
 <1>1. Let $\theset{U_\alpha}$ be an open cover of $A$.

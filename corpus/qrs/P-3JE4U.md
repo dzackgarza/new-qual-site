@@ -14,6 +14,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Compute the following integrals.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Compute (i) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx$ for $0 < a < n$, and (ii) $\int_0^\infty \frac{\log x}{(1 + x^2)^2}\,dx$.
 
 <1>1. For (i), use the keyhole contour or the sector contour of angle $2\pi/n$ around the pole $e^{i\pi/n}$.

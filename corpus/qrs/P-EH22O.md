@@ -13,6 +13,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Show that the area of $f(D_r)$ is finite and is given by $$S = \pi \sum_{n=1}^\i
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $f(z) = \sum_{n=0}^\infty c_n z^n$ analytic and one-to-one in $\abs{z} < 1$, show the area of $f(D_r)$, $0 < r < 1$, is finite and equals $S = \pi \sum_{n=1}^\infty n\abs{c_n}^2 r^{2n}$.
 
 <1>1. The area of $f(D_r)$ equals $\iint_{D_r} \abs{f'(z)}^2\, dA(z)$.

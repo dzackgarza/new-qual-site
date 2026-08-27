@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Let $$f_n(x) = \begin{cases} \frac{1}{n}  & x \in (\frac{1}{2^{n+1}}, \frac{1}{2
 Show that $\sum_{n=1}^\infty f_n$ does not satisfy the Weierstrass M-test but that it nevertheless converges uniformly on $\mathbb{R}$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The Weierstrass M-test does not apply.
 Proof: the M-test requires $\sum_n M_n < \infty$ where $M_n = \sup_x |f_n(x)|$.
 Here $M_n = 1/n$ (the supremum of $f_n$ on its support is $1/n$), and $\sum_n 1/n = \infty$, so the hypothesis of the M-test fails and it cannot be used.

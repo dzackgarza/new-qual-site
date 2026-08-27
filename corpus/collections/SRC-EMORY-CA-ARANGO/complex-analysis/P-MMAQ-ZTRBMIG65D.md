@@ -10,6 +10,10 @@ classification:
   - Cauchy Integral Formula
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ State and prove the Cauchy integral formula for holomorphic functions.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** State and prove the Cauchy Integral Formula for holomorphic functions.
 
 * * *

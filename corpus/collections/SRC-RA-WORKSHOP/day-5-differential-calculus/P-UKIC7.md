@@ -10,6 +10,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ Suppose that $f,g:\mathbb{R}\to\mathbb{R}$ are differentiable, that $f(x)\leq g(
 Prove that $f'(x_0)=g'(x_0)$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reduce to a non-negative function with a minimum at $x_0$.
 Proof: set $h = g - f$; then $h \ge 0$, $h(x_0) = 0$, and $h$ is differentiable with $h' = g' - f'$.
 It suffices to show $h'(x_0) = 0$.

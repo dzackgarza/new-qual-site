@@ -11,6 +11,10 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Use van Kampen's theorem to compute a presentation of the fundamental group, and
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Compute a presentation of the fundamental group $\pi_1(T^2, x_0)$ of the 2-dimensional torus $T^2$ and prove that $\pi_1(T^2, x_0) \cong \mathbb{Z}^2$.
 
 <1>1. Cellular / Polygonal decomposition of the torus $T^2$.

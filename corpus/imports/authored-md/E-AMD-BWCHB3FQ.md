@@ -12,6 +12,10 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Prove that every simple abelian group is cyclic.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $G$ be a simple abelian group.
 Prove that $G$ is cyclic (and isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for some prime $p$).
 

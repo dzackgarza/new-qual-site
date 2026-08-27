@@ -11,6 +11,10 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Prove that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove the Schwarz--Pick inequality: if $f: \DD \to \DD$ is analytic, then for every $a \in \DD$,
 $$\frac{\abs{f'(a)}}{1 - \abs{f(a)}^2} \leq \frac{1}{1 - \abs a^2}.$$
 

@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Prove that an irreducible polynomial $\pi(x)\in \FF_p[x]$ divides $x^{p^n}-x \if
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $\pi(x) \in \FF_p[x]$ be an irreducible polynomial of degree $d = \deg \pi(x)$.
 Let $\alpha$ be a root of $\pi(x)$ in an algebraic closure $\overline{\FF_p}$.
 

@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that if $f:X\to \RR$ and $X$ is compact then $f$ is bounded and attains its
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f: X \to \RR$ is continuous and $X$ is compact, then $f$ is bounded and attains its minimum and maximum.
 
 <1>1. $f(X)$ is compact in $\RR$.

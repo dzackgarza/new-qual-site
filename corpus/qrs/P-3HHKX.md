@@ -10,6 +10,10 @@ classification:
   - Geometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Prove the following inequality, and explain when equality holds:
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove $\abs{z + w} \ge \abs{\abs{z} - \abs{w}}$ and explain when equality holds.
 
 <1>1. $\abs{z} \le \abs{z + w} + \abs{w}$.

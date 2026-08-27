@@ -12,6 +12,10 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A family $\mathcal I$ of pairwise disjoint intervals in $\RR$, each with nonempty interior, is at most countable.
 <2>1. Each $I \in \mathcal I$ contains a rational number $q_I$.
 Proof: an interval with nonempty interior contains an open subinterval, and $\QQ$ is dense in $\RR$.

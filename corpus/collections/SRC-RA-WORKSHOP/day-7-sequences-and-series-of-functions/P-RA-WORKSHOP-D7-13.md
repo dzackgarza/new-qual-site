@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,7 +22,7 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Evaluate $\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$.
+**Goal:** Evaluate $\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$.
 
 <1>1. The answer is $\pi/2$.
 <2>1. Pointwise limit: for each fixed $x \in [\pi/2, \pi]$, $\frac{n\sin(x/n)}{x} \to 1$.

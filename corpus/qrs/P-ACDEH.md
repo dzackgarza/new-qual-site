@@ -13,6 +13,10 @@ classification:
   - Cauchy Estimates
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that if $f$ is entire and $\abs{f(z)} \leq M \abs z^2$ for all $z$ outside some disk (i.e. for $\abs z \geq R_0$), then $f$ is a polynomial of degree $\leq 2$.
 
 <1>1. Write $f(z) = \sum_{n=0}^{\infty} a_n z^n$.

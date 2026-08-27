@@ -11,6 +11,10 @@ classification:
   - Solvable Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $G$ nilpotent $\implies G$ solvable.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a nilpotent group.
 By definition, $G$ possesses a finite central series terminating at the identity:
 $$

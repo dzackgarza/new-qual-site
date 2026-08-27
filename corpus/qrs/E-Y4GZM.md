@@ -12,6 +12,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f \ast g$ is continuous.
 <2>1. $|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$.
 Proof: $|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\right| \le \int |f(x+h-y) - f(x-y)|\,|g(y)|\,dy \le \|g\|_1 \sup_z|f(z+h) - f(z)|$.

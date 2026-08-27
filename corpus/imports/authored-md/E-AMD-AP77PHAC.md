@@ -11,6 +11,10 @@ classification:
   - Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $G$ be a group and $H \le G$ a subgroup.
 Prove that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$, where $Z(G)$ is the center of $G$, $C_G(H)$ is the centralizer of $H$ in $G$, and $N_G(H)$ is the normalizer of $H$ in $G$.
 

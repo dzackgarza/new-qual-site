@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For a measurable $f$ (say $f \in L^1$, so all the integrals are defined), show $f = 0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
 
 <1>1. ($\Rightarrow$) If $f = 0$ a.e. then $\int_E f = 0$ for every measurable $E$.

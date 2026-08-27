@@ -12,6 +12,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ p(z) = z^3 + 2z + 4
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that all roots of $p(z) = z^3 + 2z + 4$ lie outside the unit circle.
 
 <1>1. On $\abs{z} = 1$, the modulus of the first two terms is at most $3$.

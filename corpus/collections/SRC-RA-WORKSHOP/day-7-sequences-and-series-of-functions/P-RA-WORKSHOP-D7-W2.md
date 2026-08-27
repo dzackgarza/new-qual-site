@@ -12,6 +12,10 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ Prove that these definitions are equivalent when $K$ is compact.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Prove pointwise equicontinuity and uniform equicontinuity of a family $\mathcal F \subseteq C(K;\mathbb R^m)$ are equivalent when $K$ is compact.
+**Goal:** Prove pointwise equicontinuity and uniform equicontinuity of a family $\mathcal F \subseteq C(K;\mathbb R^m)$ are equivalent when $K$ is compact.
 
 <1>1. Uniform equicontinuity implies pointwise equicontinuity.
 Proof: if $\delta$ works for all $x, y$ simultaneously, then in particular it works for all $y$ with $y$ near a fixed $x$; so the pointwise condition holds with the same $\delta$ (independent of $x$, hence certainly allowed to depend on $x$).

@@ -12,6 +12,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,8 +26,6 @@ Show that $A:X\to Y$ is compact if and only if for every bounded sequence $\{x_n
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (⟸) Suppose the subsequence condition holds.
 Show $A$ is compact.
 Proof: let $\{x_n\}$ be a bounded sequence in $X$.

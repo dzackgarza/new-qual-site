@@ -13,6 +13,10 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ b. Find an invertible matrix $P$ such that $P\inv AP = J$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **(a) Characteristic polynomial and Jordan form:**
 
 Compute $\det(\lambda I - A)$:

@@ -12,6 +12,10 @@ classification:
   - p-Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that any normal $p\dash$subgroup of a finite group $G$ is contained in ever
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a finite group, and let $N \normal G$ be a normal $p$-subgroup (so $|N| = p^k$ for some $k \geq 0$).
 Let $S$ be an arbitrary Sylow $p$-subgroup of $G$.
 

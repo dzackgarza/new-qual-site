@@ -12,6 +12,10 @@ classification:
   - Classification
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that a finite group $G$ is solvable if and only if all of its composition f
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a finite group. Recall that a **composition series** of $G$ is a subnormal series:
 $$
 1 = G_0 \normal G_1 \normal G_2 \normal \cdots \normal G_n = G

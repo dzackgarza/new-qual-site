@@ -11,6 +11,10 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ Compare this to June 2009 #3a and January 2005 #1b.)
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Suppose, toward a contradiction, that $\sum |a_k|$ converges.
 <1>2. Then $|a_k| \le 1$ eventually.
 Proof: convergence of $\sum |a_k|$ forces $|a_k| \to 0$, so for all large $k$, $|a_k| \le 1$, hence $a_k^2 \le |a_k|$.

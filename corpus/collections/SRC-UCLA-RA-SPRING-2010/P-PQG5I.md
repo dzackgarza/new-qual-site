@@ -13,6 +13,10 @@ classification:
   - Hilbert Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -24,8 +28,6 @@ b. Show that the mapping from $A$ to $\mathbb{R}$ defined by $$x \mapsto \int_0^
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $A$ is closed in $\ell^2$.
 Proof: let $x^{(k)} \to x$ in $\ell^2$ with $x^{(k)} \in A$.
 For every $N$, \[\sum_{n=1}^N n|x_n|^2 = \lim_{k\to\infty}\sum_{n=1}^N n|x_n^{(k)}|^2 \le \limsup_{k\to\infty}\sum_{n\ge1} n|x_n^{(k)}|^2 \le 1,\] and letting $N \to \infty$ (monotone convergence) gives $\sum_{n\ge1}n|x_n|^2 \le 1$, so $x \in A$.

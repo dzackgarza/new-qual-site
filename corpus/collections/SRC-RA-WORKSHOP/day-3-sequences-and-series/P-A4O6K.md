@@ -12,6 +12,10 @@ classification:
   - Sequences of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Prove that for all $x>0$ there exist integers $n(1)<n(2)<\ldots$ such that $\sum
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Construction: fix $x > 0$; define $n(1)$ as the smallest index with $a_{n(1)} \le x$, and inductively $n(k)$ as the smallest index $> n(k-1)$ with $a_{n(k)} \le x - \sum_{j<k}a_{n(j)}$ (stop if the sum equals $x$). Proof: such indices exist at every step: if no index $\ge n(k-1) + 1$ had $a_n \le x - s_{k-1} > 0$, then all remaining terms would be $> x - s_{k-1} > 0$, contradicting $a_n \to 0$.
 
 <1>2. The partial sums $s_k = \sum_{j \le k}a_{n(j)}$ are nondecreasing and bounded above by $x$.

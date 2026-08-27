@@ -13,6 +13,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Uniform convergence implies pointwise convergence.
 Proof: $\sup_x|f_n(x) - f(x)| \to 0$ forces $|f_n(x) - f(x)| \to 0$ for each fixed $x$.
 

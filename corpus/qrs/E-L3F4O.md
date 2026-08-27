@@ -13,6 +13,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The Cantor middle-thirds set is compact.
 <2>1. Write $C = \bigcap_{n \ge 0} C_n$, where $C_0 = [0,1]$ and $C_n$ is obtained from $C_{n-1}$ by deleting the open middle third of each constituent interval.
 Proof: definition of the Cantor middle-thirds construction.

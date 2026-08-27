@@ -12,6 +12,10 @@ classification:
   - Closure
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ If $X$ is a metric space, $E\subset X$, and $x$ is a limit point of $E$, then th
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Use the definition of limit point.
 Proof: $x$ is a limit point of $E$ means every neighborhood of $x$ contains a point of $E$ other than $x$.
 In particular, for each $n \ge 1$, the ball $B(x, 1/n)$ contains a point $x_n \in E$ with $x_n \ne x$.

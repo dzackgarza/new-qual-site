@@ -11,6 +11,10 @@ classification:
   - Harmonic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Find the dimension of the quotient space $A/B$ and give a basis.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $U = \CC \setminus \{p_1, \dots, p_n\}$, let $A$ be the real harmonic functions on $U$, and $B \subseteq A$ the real parts of complex analytic functions on $U$.
 Find $\dim(A/B)$ and a basis.
 

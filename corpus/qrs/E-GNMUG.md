@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that if $f:X\to Y$ is continuous and $X$ is compact then $f(X)$ is compact.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f: X \to Y$ is continuous and $X$ is compact, then $f(X)$ is compact.
 
 <1>1. Let $\theset{U_\alpha}$ be an open cover of $f(X)$.

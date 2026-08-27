@@ -11,6 +11,10 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Show $\pi_1(X\times Y, (x_0, y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y, y_0)$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $(X, x_0)$ and $(Y, y_0)$ be pointed topological spaces.
 Prove that the canonical map $\Phi \colon \pi_1(X \times Y, (x_0, y_0)) \to \pi_1(X, x_0) \times \pi_1(Y, y_0)$ given by $[\gamma] \mapsto ((p_X)_*[\gamma], (p_Y)_*[\gamma])$ is an isomorphism of groups.
 

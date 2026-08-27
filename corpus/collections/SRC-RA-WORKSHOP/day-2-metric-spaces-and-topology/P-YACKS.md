@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Is $E$ closed and bounded in $\mathbb{Q}$?
 Is $E$ compact in $\mathbb{Q}$?
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $E = \QQ \cap (\sqrt2, \sqrt3)$, in particular $E$ is bounded.
 Proof: $E = \{q \in \QQ : q > 0,\ 2 < q^2 < 3\} = \{q \in \QQ : \sqrt2 < q < \sqrt3\}$, and $\sqrt3 < 2$, so $E \subseteq (0,2)$ is bounded.
 <1>2. $E$ is closed in $\QQ$.

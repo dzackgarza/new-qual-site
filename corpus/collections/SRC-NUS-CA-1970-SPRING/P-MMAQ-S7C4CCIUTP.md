@@ -12,6 +12,10 @@ classification:
   - Green's Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Use Green theorem or otherwise to prove the Cauchy theorem.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** State and prove Cauchy's Theorem (under the classical assumption that $f'$ is continuous) using Green's Theorem.
 
 * * *

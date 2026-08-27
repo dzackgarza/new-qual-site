@@ -13,6 +13,10 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -20,8 +24,6 @@ Show that an injective continuous map from a compact space to a Hausdorff space 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that an injective continuous map $f: X \to Y$ from a compact space $X$ to a Hausdorff space $Y$ is an embedding: a homeomorphism onto its image.
 
 <1>1. $f: X \to f(X)$ is a continuous bijection.

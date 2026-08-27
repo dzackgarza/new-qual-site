@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -49,8 +53,6 @@ Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendicular to t
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that for a continuously differentiable function $f: \mathbb{R}^2 \to \mathbb{R}$, the gradient vector $\nabla f(\mathbf{p})$ at any point $\mathbf{p}$ on a level curve $C = \{(x,y) \in \mathbb{R}^2 \mid f(x,y) = c\}$ is orthogonal to the tangent vector of every smooth curve in $C$ passing through $\mathbf{p}$.
 
 <1>1. Let $\mathbf{p} = (x_0, y_0) \in C$ such that $f(\mathbf{p}) = c$. Let $\gamma: (-\varepsilon, \varepsilon) \to \mathbb{R}^2$ be a differentiable parametrized curve such that $\gamma(0) = \mathbf{p}$ and $\gamma(t) \in C$ for all $t \in (-\varepsilon, \varepsilon)$.

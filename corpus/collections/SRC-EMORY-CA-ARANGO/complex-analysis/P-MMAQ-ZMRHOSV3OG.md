@@ -10,6 +10,10 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 
 1. State the classical Schwarz Lemma for holomorphic self-maps of the unit disk fixing the origin.

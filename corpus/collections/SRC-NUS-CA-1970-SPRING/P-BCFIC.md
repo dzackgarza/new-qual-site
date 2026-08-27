@@ -11,6 +11,10 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\fr
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Find an analytic isomorphism (biholomorphism) from the crescent region $\Omega = \{z \in \mathbb{C} : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ to the upper half-plane $\mathbb{H} = \{w \in \mathbb{C} : \text{Im}(w) > 0\}$.
 
 * * *

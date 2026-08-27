@@ -14,6 +14,10 @@ classification:
   - Cauchy Estimates
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ Prove that $f$ is a polynomial of degree at most $n-1$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f$ is entire and $\lim_{z\to\infty} \frac{f(z)}{z^n} = 0$ for some integer $n \geq 1$, prove $f$ is a polynomial of degree at most $n-1$.
 
 <1>1. For every $\varepsilon > 0$ there is $R_\varepsilon$ such that $\abs{f(z)} \leq \varepsilon \abs{z}^n$ for all $\abs{z} \geq R_\varepsilon$.

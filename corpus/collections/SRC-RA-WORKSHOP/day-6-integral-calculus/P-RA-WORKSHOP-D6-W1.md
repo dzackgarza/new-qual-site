@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reduce to squares and sums.
 Proof: the identity $fg = \frac14\big((f+g)^2 - (f-g)^2\big)$ reduces the claim to: $\mathcal{R}$ is closed under addition (and scalar multiplication), and $h \in \mathcal{R} \implies h^2 \in \mathcal{R}$.
 <1>2. $\mathcal{R}$ is a vector space.

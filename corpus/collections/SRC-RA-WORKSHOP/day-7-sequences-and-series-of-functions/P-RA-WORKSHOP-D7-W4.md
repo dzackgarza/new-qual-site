@@ -12,6 +12,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ Is the convergence of $f_n$ to $f$ uniform?
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (1) Find the pointwise limit of $f_n(x) = x^n$ on $[0,1]$; (2) decide uniformity; (3) explain why $B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
+**Goal:** (1) Find the pointwise limit of $f_n(x) = x^n$ on $[0,1]$; (2) decide uniformity; (3) explain why $B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
 
 <1>1. The pointwise limit is $f(x) = 0$ for $0 \le x < 1$ and $f(1) = 1$.
 Proof: for $0 \le x < 1$, $x^n \to 0$; at $x = 1$, $x^n = 1$ for all $n$.

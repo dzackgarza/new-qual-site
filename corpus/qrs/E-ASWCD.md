@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that the continuity properties of a measure hold for an outer measure $\mu^*$: continuity from below always, and continuity from above provided the first set has finite outer measure.
 
 <1>1. Continuity from below: if $E_1 \subseteq E_2 \subseteq \cdots$, then $\mu^*\!\left(\bigcup_n E_n\right) = \lim_n \mu^*(E_n)$.

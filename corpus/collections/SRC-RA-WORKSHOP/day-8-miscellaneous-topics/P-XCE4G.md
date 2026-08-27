@@ -13,6 +13,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -37,8 +41,6 @@ $[0,a]$.
 Prove that $f$ is differentiable on $(0,1)$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Pointwise convergence on $[0,1)$.
     Proof: for $x \in [0,1)$, $0 \le \frac{x^k}{1+x^k} \le x^k$, and $\sum_k x^k$ is a convergent geometric series; hence $\sum_k \frac{x^k}{1+x^k}$ converges, defining $f(x)$.
 <1>2. Uniform convergence on $[0,a]$ for $0 < a < 1$.

@@ -11,6 +11,10 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $\Out(A_4)$ is nontrivial.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Recall that the outer automorphism group is defined as the quotient:
 $$
 \Out(A_4) = \Aut(A_4) / \Inn(A_4).

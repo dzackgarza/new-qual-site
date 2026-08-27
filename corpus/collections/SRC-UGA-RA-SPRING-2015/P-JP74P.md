@@ -13,6 +13,10 @@ classification:
   - Fourier Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Let $f: \RR \to \CC$ be continuous with period 1. Prove that
 > Hint: show this first for the functions $f(t) = e^{2\pi i k t}$ for $k\in \ZZ$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. It suffices to prove the claim for $f(t) = e^{2\pi i k t}$, $k \in \ZZ$, and then extend by linearity and density.
 Proof: the exponentials are dense in $C(\RR/\ZZ)$ (Weierstrass/Fejér: trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions); linearity handles finite linear combinations; an $\eps/3$ argument passes the limit.
 

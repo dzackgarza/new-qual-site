@@ -12,6 +12,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a u
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a commutative ring with identity $1 \neq 0$.
 Prove that $R$ is a local ring (i.e., has a unique maximal ideal) if and only if for every $x \in R$, either $x \in R^\times$ or $1 - x \in R^\times$.
 

@@ -12,6 +12,10 @@ classification:
   - Closure
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Let $\mathcal H$ be a Hilbert space.
 2. Conclude that finite dimensional subspaces of $\mathcal H$ are always closed.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\hat x = \sum_{n=1}^N \inner{x}{u_n} u_n$ satisfies $x - \hat x \perp u_m$ for every $m$.
     Proof: $\inner{x - \hat x}{u_m} = \inner{x}{u_m} - \sum_n \inner{x}{u_n}\inner{u_n}{u_m} = \inner{x}{u_m} - \inner{x}{u_m} = 0$, using orthonormality $\inner{u_n}{u_m} = \delta_{nm}$.
 

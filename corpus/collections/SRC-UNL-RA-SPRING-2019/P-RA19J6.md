@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,7 +22,7 @@ Use the Heine--Borel Theorem to prove that if $f$ is continuous on $[a,b]$ and $
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Use the Heine–Borel theorem to prove: $f$ continuous on $[a,b]$ with $f(x) > 0$ for all $x$ implies $f(x) \ge \varepsilon$ for some $\varepsilon > 0$ and all $x$.
+**Goal:** Use the Heine–Borel theorem to prove: $f$ continuous on $[a,b]$ with $f(x) > 0$ for all $x$ implies $f(x) \ge \varepsilon$ for some $\varepsilon > 0$ and all $x$.
 
 <1>1. Cover $[a,b]$ by neighborhoods where $f$ is bounded below by a positive constant.
 <2>1. For each $x_0 \in [a,b]$: since $f(x_0) > 0$ and $f$ is continuous at $x_0$, choose $\delta_{x_0} > 0$ with $|f(x) - f(x_0)| < f(x_0)/2$ for $|x - x_0| < \delta_{x_0}$; then $f(x) > f(x_0)/2 > 0$ on $(x_0 - \delta_{x_0}, x_0 + \delta_{x_0}) \cap [a,b]$.

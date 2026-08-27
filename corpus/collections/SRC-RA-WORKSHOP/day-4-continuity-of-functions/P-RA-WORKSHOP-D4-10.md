@@ -11,6 +11,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Suppose, toward a contradiction, that every real value is taken exactly twice.
 <1>2. Pick two preimages of one value.
 Proof: fix any $x_0$; let $a < b$ be the two points with $f(a) = f(b) = f(x_0)$ (exactly two exist by assumption).

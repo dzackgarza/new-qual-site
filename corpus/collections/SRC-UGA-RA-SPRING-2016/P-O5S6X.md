@@ -13,6 +13,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -36,8 +40,6 @@ Show that
 \]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f(x) = m(E \cap (E + x)) = \int \chi_E(y)\chi_E(y - x)\,dy = (\chi_E \ast \tilde\chi_E)(x)$ where $\tilde\chi_E(y) = \chi_E(-y)$.
 Proof: the hint: $\chi_{E\cap(E+x)}(y) = \chi_E(y)\chi_E(y - x)$; integrating in $y$ gives the convolution identity ($\chi_E \ast \tilde\chi_E$: $\int\chi_E(y)\tilde\chi_E(x - y)\,dy = \int\chi_E(y)\chi_E(y - x)\,dy$).
 

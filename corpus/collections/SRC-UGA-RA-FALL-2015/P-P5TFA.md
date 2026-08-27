@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ Show that the following limit exists and satisfies the equality
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f$ is strictly increasing on $[1,\infty)$.
 Proof: $f'(x) = 1/(x^2 + f(x)^2) > 0$ for every $x \ge 1$.
 <1>2. Hence $f(x) \ge f(1) = 1$ for all $x \ge 1$.

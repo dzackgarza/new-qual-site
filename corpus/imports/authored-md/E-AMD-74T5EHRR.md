@@ -11,6 +11,10 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $Z(S_n) = 1$ for $n\geq 3$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $n \ge 3$ be an integer, and let $S_n$ be the symmetric group on $n$ elements.
 Prove that the center $Z(S_n) = \{e\}$, where $e$ is the identity permutation.
 

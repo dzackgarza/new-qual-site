@@ -11,6 +11,10 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Find a fractional linear transformation $T$ which maps $\HH$ to $\DD$, and expli
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Find a Möbius transformation $T: \HH \to \DD$ and describe the image of the first quadrant $Q = \theset{x + iy \suchthat x > 0, y > 0}$ under $T$.
 
 <1>1. $T(z) = \frac{z - i}{z + i}$ is a Möbius transformation mapping $\HH$ conformally onto $\DD$.

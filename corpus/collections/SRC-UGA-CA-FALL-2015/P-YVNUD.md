@@ -14,6 +14,10 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ Show that the above is still true if $\text{Re}(f(z)) >0$ is replaced with $\tex
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) For $f \in H(\DD)$ with $\Re f > 0$ and $f(0) = a > 0$, prove $\abs{\frac{f(z) - a}{f(z) + a}} \leq \abs z$ and $\abs{f'(0)} \leq 2a$; (2) same conclusion when $\Re f \geq 0$.
 
 <1>1. The Cayley transform $T(w) := \frac{w - a}{w + a}$ maps the right half-plane $\theset{\Re w > 0}$ conformally onto $\DD$, with $T(a) = 0$.

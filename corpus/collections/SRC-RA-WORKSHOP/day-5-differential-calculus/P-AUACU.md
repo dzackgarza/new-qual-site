@@ -12,14 +12,16 @@ classification:
   - Mean Value Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
 Prove that if $f'$ exists and is bounded on $(a,b]$, then $\lim_{x\to a^+}f(x)$ exists.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f$ is continuous on $(a, b]$ and differentiable on $(a, b)$.
 Proof: differentiability on $(a,b]$ implies continuity at every point of $(a,b]$, including $b$.
 

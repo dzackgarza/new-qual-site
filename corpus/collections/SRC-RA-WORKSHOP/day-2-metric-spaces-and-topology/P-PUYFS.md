@@ -11,6 +11,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be closed.
@@ -31,8 +35,6 @@ So $K \cap F \neq \emptyset$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The function $\delta(x) \da d(x,F) = \inf_{f\in F} d(x,f)$ is $1$-Lipschitz, hence continuous.
 Proof: for $x, x' \in X$ and any $f \in F$, $d(x,f) \le d(x,x') + d(x',f)$, so $\delta(x) \le d(x,x') + \delta(x')$; symmetrically $\delta(x') \le d(x,x') + \delta(x)$, hence $|\delta(x) - \delta(x')| \le d(x,x')$.
 <1>2. $\delta$ attains its minimum on the compact set $K$.

@@ -13,6 +13,10 @@ relations:
 - kind: related-to
   target: E-2LZES
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -20,8 +24,6 @@ Show that a metrizable space is compact if and only if it is sequentially compac
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $(X, d)$ be a metric space.
 
 **$(\Longrightarrow)$ Compact $\implies$ Sequentially Compact:** Let $(x_n)_{n=1}^\infty$ be a sequence in $X$.

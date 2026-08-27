@@ -12,6 +12,10 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if the minimal polynomial of a linear operator $T: V \to V$ on a finit
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $V$ be a finite-dimensional vector space over a field $F$, and let $T \in \operatorname{End}_F(V)$.
 We view $V$ as a module over the principal ideal domain (PID) $R = F[x]$, where the polynomial indeterminate $x$ acts as the linear transformation $T$ ($p(x) \cdot v = p(T)(v)$).
 

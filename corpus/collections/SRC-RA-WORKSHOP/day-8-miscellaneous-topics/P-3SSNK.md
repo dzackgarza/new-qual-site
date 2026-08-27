@@ -12,6 +12,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Prove that $f$ is Riemann-Stieltjes integrable with respect to $\alpha$ over $[-
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\alpha$ has bounded variation and is constant on each side of its single jump at $0$: $\alpha \equiv -1$ on $[-1,0]$ and $\alpha \equiv 1$ on $(0,1]$, with jump $\alpha(0+) - \alpha(0-) = 2$.
 Proof: definition of $\alpha$; the value $\alpha(0)$ is irrelevant to the Stieltjes integral.
 

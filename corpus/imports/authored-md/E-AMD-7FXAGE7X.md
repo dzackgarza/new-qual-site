@@ -10,6 +10,10 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -17,8 +21,6 @@ Show that every finite field extension is algebraic.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $L/K$ be a field extension such that the degree $n = [L : K] = \dim_K(L)$ is finite.
 Prove that $L/K$ is an algebraic extension (i.e., every element $\alpha \in L$ is algebraic over $K$).
 

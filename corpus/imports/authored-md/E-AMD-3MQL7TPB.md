@@ -12,6 +12,10 @@ classification:
   - p-Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -20,8 +24,6 @@ Show that $O_p(G) \normal G$, and that it is the unique maximal normal $p\dash$s
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a finite group, and let $\operatorname{Syl}_p(G) = \{P_1, P_2, \ldots, P_k\}$ be the set of all Sylow $p$-subgroups of $G$.
 Define:
 $$

@@ -15,6 +15,10 @@ classification:
   - Variation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Decide the truth of (f), (g), and (h).
 
 <1>1. (f) is true.

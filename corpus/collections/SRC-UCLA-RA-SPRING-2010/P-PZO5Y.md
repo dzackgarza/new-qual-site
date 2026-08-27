@@ -12,6 +12,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -25,8 +29,6 @@ c. Define the Cauchy potential of $\mu$ to be $$S_\mu(z) = \int_\mathbb{C} \frac
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $U_\mu(z) < \infty$ for Lebesgue-a.e. $z$, and $\iint_K U_\mu < \infty$ for every compact $K$.
 Proof: fix a compact $K \subseteq \mathbb{C}$.
 Since $\mu$ is supported on a compact set, $\mathrm{supp}\,\mu$ is bounded, say contained in a disk $B(0,R)$; likewise $K \subseteq B(0,R)$.

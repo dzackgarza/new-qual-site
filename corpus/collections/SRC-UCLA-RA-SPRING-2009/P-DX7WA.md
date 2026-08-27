@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -26,8 +30,6 @@ Prove that $$\sum_n \left(\frac{1}{|a_n|}\right)^{\lambda+\epsilon} < \infty$$ f
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For entire $f$ with $f(0) \ne 0$ and zeros $\{a_n\}$ (with multiplicity): (a) prove Jensen's formula $\frac{1}{2\pi}\int_0^{2\pi}\log|f(Re^{i\theta})|\, d\theta = \log|f(0)| + \sum_{|a_n| < R}\log\frac{R}{|a_n|}$; (b) if $|f(z)| \le Ce^{|z|^\lambda}$, prove $\sum_n |a_n|^{-(\lambda+\varepsilon)} < \infty$ for all $\varepsilon > 0$.
 
 <1>1. (a) Assume first that $f$ has no zeros on $|z| = R$, and let $a_1, \dots, a_m$ be the zeros with $|a_k| < R$.

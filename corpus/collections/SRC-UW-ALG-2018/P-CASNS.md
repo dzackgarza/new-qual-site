@@ -11,6 +11,10 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Determine the degree of $\mathbb Q(\alpha,\beta)$ over $\mathbb Q$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 We have $\alpha = 7^{1/5}$ and $\beta = 5^{1/4}$.
 
 1. Consider the polynomial $f(x) = x^5 - 7 \in \QQ[x]$.

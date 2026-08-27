@@ -12,6 +12,10 @@ classification:
   - van Kampen
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have?
@@ -22,8 +26,6 @@ First note that $\pi_1(X) = \pi_1(S^1) \ast_{\pt} \pi_1(\RP 2)$ by Van-Kampen, a
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Determine the number of connected 2-fold covering spaces of $X = S^1 \vee \mathbb{RP}^2$ and identify the total space for each covering.
 
 <1>1. Compute the fundamental group of $X = S^1 \vee \mathbb{RP}^2$.

@@ -12,6 +12,10 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Let $X = S^n\cross I$ with its ends glued together by a map $S^n \circlearrowlef
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f \colon S^n \to S^n$ be a continuous map of degree $d$, and let $X = M_f = (S^n \times [0, 1]) / ((x, 1) \sim (f(x), 0))$ be the mapping torus of $f$. Calculate the homology groups $H_k(X; \mathbb{Z})$ for all $k \ge 0$.
 
 <1>1. Case $n \geq 2$.

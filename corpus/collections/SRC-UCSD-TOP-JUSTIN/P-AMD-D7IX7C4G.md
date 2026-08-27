@@ -12,6 +12,10 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Show that there is no map $f: S^2 \to S^1$ that commutes with the antipodal map.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that there does not exist any continuous map $f \colon S^2 \to S^1$ such that $f(-x) = -f(x)$ for all $x \in S^2$ (i.e. commuting with the antipodal map).
 
 <1>1. Restrict $f$ to the equatorial circle $S^1 \subset S^2$.

@@ -13,6 +13,10 @@ classification:
   - Free Modules
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -46,8 +50,6 @@ Use the previous part to describe $M/N$ as a direct sum of cyclic $\ZZ\dash$modu
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **(a) $N$ is a $\ZZ$-submodule of $M$:**
 - Both $M$ and $N$ are subgroups of the free abelian group $\ZZ^4$.
 - $M$ is the kernel of the group homomorphism $\phi: \ZZ^4 \to \ZZ_2$ given by $(w,x,y,z) \mapsto (w+x+y+z) \bmod 2$.

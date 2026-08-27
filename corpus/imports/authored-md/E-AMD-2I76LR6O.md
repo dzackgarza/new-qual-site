@@ -12,6 +12,10 @@ classification:
   - Group Actions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if $x, y$ are in the same orbit, then their stabilizers are conjugate.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let a group $G$ act on a set $X$.
 Recall the definition of the stabilizer of a point $z \in X$:
 $$

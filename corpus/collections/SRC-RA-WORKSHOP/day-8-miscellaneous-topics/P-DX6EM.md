@@ -10,6 +10,10 @@ classification:
   - Variation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Suppose $f \in \text{BV}[a,b]$.
 Prove $f$ is the difference of two increasing functions.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Define the total variation $V(x) = \sup \sum_{i=1}^n |f(x_i) - f(x_{i-1})|$ over all partitions $a = x_0 < \cdots < x_n = x$ of $[a, x]$, for $a \le x \le b$.
 Proof: $V$ is well-defined and finite because $f \in \text{BV}[a,b]$ (so $V(b) < \infty$), and $V(a) = 0$.
 

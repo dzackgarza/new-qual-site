@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the indefinite integrals: (a) $\int \frac{x e^x \ln x - e^x}{x (\ln x)^2} \, dx$ (b) $\int (\tan x + \cot x)^2 \, dx$
 
 <1>1. $\int \frac{x e^x \ln x - e^x}{x (\ln x)^2} \, dx = \frac{e^x}{\ln x} + C$.

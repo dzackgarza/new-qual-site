@@ -11,6 +11,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -24,8 +28,6 @@ Prove that $f$ is continuous at $y$.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Prove the contrapositive: if $f$ is not continuous at $y$, the hypothesis fails.
 <1>2. Discontinuity gives a sequence violating the liminf condition.
 Proof: suppose $f$ is discontinuous at $y$.

@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Let $\phi$ be a real-valued function defined on $[0,1]$ such that $\phi$, $\phi'
 Prove that $$\int_0^1 \cos x \frac{x\phi'(x)-\phi(x)+\phi(0)}{x^2}\,dx<\frac{3}{2}||\phi''||_\infty,$$ where $||\phi''||_\infty = \sup_{[0,1]}|\phi''(x)|.$ Note that $3/2$ may not be the smallest possible constant.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Rewrite the numerator as an integral.
     Proof: let $N(x) \da x\phi'(x) - \phi(x) + \phi(0)$. Differentiating,
     \[

@@ -12,6 +12,10 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -45,8 +49,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the following integrals: (a) $\int_0^1 \frac{1}{\sqrt{x(1-x)}} \, dx$ and $\int_{e^{1/2}}^{e^{3/4}} \frac{1}{x\sqrt{\ln x(1-\ln x)}} \, dx$.
 (b) $\int \frac{x}{1-x^2+\sqrt{1-x^2}} \, dx$.
 (c) $\int_1^\infty \frac{1}{x(x^2+1)} \, dx$.

@@ -12,6 +12,10 @@ classification:
   - Canonical Forms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 We use the **Rational Canonical Form** (Frobenius normal form), which exists for any square matrix over an arbitrary field $K$.
 
 1. Over the field $K$, $M$ is similar to a direct sum of companion matrices of its invariant factors:

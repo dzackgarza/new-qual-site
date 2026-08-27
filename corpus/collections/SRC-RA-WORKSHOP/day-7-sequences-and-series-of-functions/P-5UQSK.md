@@ -12,6 +12,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Prove that $\mathcal{F}$ is equicontinuous on $[a,b]$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Every $f \in \mathcal F$ is Lipschitz with constant $M$: $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in [a,b]$.
 Proof: mean value theorem — for $x \ne y$, $f(x) - f(y) = f'(c)(x - y)$ for some $c$ between $x$ and $y$, and $|f'(c)| \le M$.
 

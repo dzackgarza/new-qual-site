@@ -12,6 +12,10 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the indefinite integrals: (a) $\int \frac{\sec^3(x) + e^{\sin(x)}}{\sec(x)} \, dx$ (b) $\int \frac{1}{\tan(x) + \cot(x)} \, dx$
 
 <1>1. $\int \frac{\sec^3(x) + e^{\sin(x)}}{\sec(x)} \, dx = \tan(x) + e^{\sin(x)} + C$.

@@ -13,6 +13,10 @@ classification:
   - Cauchy Estimates
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Suppose that there exists a real number M such that for all $z\in {\mathbb C}$ $
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (a) If an entire $f$ satisfies $\abs{f(z)} \leq L\abs z^m$ for $\abs z > R$, prove $f$ is a polynomial of degree $\leq m$; (b) if $\Re f \leq M$ everywhere, prove $f$ is constant.
 
 <1>1. (a): For every $n > m$, $f^{(n)}(0) = 0$.

@@ -12,6 +12,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if $R\neq 0$ is a ring in which every non-unit is nilpotent then $R$ i
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a non-zero commutative ring with identity $1 \neq 0$.
 Suppose that every non-unit in $R$ is nilpotent.
 Prove that $R$ is a local ring (i.e., $R$ has a unique maximal ideal).

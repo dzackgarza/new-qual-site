@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show $\int_0^\infty \sin(x^2)\, dx = \int_0^\infty \cos(x^2)\, dx = \frac{\sqrt{2\pi}}{4}$ by integrating $e^{-z^2}$ over a sector of angle $\pi/4$.
 
 <1>1. Set up the contour: the sector $\Gamma_R$ with vertices $0$, $R$, and $Re^{i\pi/4}$, traversed as $0 \to R$ along the real axis, then along the arc $\abs{z} = R$ to $Re^{i\pi/4}$, then back along the ray $\arg z = \pi/4$ to $0$.

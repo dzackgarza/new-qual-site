@@ -11,6 +11,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. No: $\int f_n \to \int f$ does not imply the existence of an integrable dominating function for the $f_n$.
 <2>1. Take $f \equiv 0$ and $f_n = n\chi_{[1/(n+1), 1/n)}$ for $n \ge 1$.
 Proof: these are non-negative measurable functions with $f_n \to 0$ pointwise (indeed $f_n(x) \ne 0$ only for $x \in [1/(n+1), 1/n)$, which shrinks to $\{0\}$). <2>2. $\int f_n = n\left(\frac{1}{n} - \frac{1}{n+1}\right) = \frac{1}{n+1} \to 0 = \int f$.

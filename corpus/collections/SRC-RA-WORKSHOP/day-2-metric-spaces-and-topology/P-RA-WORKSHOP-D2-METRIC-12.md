@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Prove Proposition 1.4: Every open set $G\subset\mathbb R$ can be written as a fi
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Components of $G$ are open intervals.
 Proof: for $x \in G$, let $C_x$ be the connected component of $x$ in $G$.
 Since $G$ is open, $C_x$ is open (the components of an open set in $\mathbb{R}$ are open: if $y \in C_x$, then $(y-\delta, y+\delta) \subseteq G$ for some $\delta$, and $(y-\delta,y+\delta)\cup C_x$ is connected, so it equals $C_x$). Being a connected subset of $\mathbb{R}$, $C_x$ is an interval; an open interval $(a_x, b_x)$ with $a_x, b_x \in [-\infty,\infty]$.

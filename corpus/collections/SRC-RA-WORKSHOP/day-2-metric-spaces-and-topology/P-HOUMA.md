@@ -11,6 +11,10 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Let $(X,d)$ be an unbounded and connected metric space.
 Prove that for each $x_0 \in X$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}$ is nonempty.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Fix $x_0 \in X$ and $r > 0$; the map $d_{x_0} : X \to [0, \infty)$, $x \mapsto d(x, x_0)$, is continuous.
 Proof: the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
 

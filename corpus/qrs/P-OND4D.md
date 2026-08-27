@@ -12,6 +12,10 @@ classification:
   - Cauchy Integral Formula
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ is analytic in $\CC\setminus\gamma$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For a smooth curve $\gamma$ joining distinct points $a, b$ and continuous $g$ on $\gamma$, prove $f(z) = \int_\gamma \frac{g(w)}{w-z}\, dw$ is analytic on $\CC \setminus \gamma$.
 
 <1>1. Fix $z_0 \notin \gamma$; let $d = \operatorname{dist}(z_0, \gamma) > 0$ and $r = d/2$.

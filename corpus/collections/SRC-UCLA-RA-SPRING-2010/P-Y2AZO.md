@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ If you use a covering lemma, you should prove it.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Prove the weak (1,1) bound $m\{x : Mf(x) > \lambda\} \le \frac{A}{\lambda}\|f\|_{L^1}$ for the centered Hardy–Littlewood maximal function, proving the covering lemma used.
+**Goal:** Prove the weak (1,1) bound $m\{x : Mf(x) > \lambda\} \le \frac{A}{\lambda}\|f\|_{L^1}$ for the centered Hardy–Littlewood maximal function, proving the covering lemma used.
 
 <1>1. Setup: $Mf(x) = \sup_{r > 0} \frac{1}{2r}\int_{x-r}^{x+r}|f|$; fix $\lambda > 0$, set $E_\lambda = \{x : Mf(x) > \lambda\}$.
 Proof: definitions.

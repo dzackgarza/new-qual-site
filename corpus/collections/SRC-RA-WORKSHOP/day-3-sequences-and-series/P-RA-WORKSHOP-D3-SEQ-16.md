@@ -11,6 +11,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -29,8 +33,6 @@ exist and are equal.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The doubly-indexed partial sums are bounded, by assumption; call $B = \sup_{M,N}\sum_{m=1}^M\sum_{n=1}^N a_{m,n} < \infty$.
 <1>2. The inner series exist and the iterated sums exist in $[0,\infty]$.
 Proof: for each fixed $m$, the partial sums $\sum_{n=1}^N a_{m,n}$ are increasing in $N$ and bounded by $B$, so $A_m := \sum_{n=1}^\infty a_{m,n}$ converges with $A_m \le B$.

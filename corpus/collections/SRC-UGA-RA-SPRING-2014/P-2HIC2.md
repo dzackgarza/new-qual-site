@@ -12,6 +12,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -30,8 +34,6 @@ F(1) G(1) - \int _{0}^{1} f(x) G(x) \, dx
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The double integral $\iint_{0 \le y \le x \le 1} |f(y)||g(x)|\,dy\,dx$ is finite.
 Proof: Tonelli gives $\iint |f(y)||g(x)| \le \|f\|_1\|g\|_1 < \infty$; hence Fubini applies to $f(y)g(x)$.
 

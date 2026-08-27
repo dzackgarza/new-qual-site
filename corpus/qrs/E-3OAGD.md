@@ -11,6 +11,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $E \subseteq \RR^n$ be a Lebesgue measurable set with $m(E) < \infty$, and consider the set of real numbers:
 $$
 \mathcal{S} = \{ m(K) \mid K \subseteq E \text{ is compact} \}.

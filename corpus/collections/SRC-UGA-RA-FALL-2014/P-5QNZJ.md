@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ f\in L^1(\RR^n), \quad g\in L^\infty(\RR^n) \quad
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. For $f \in C_c^0(\RR^n)$: $\lim_{t\to 0}\int_{\RR^n}|f(x + t) - f(x)|\,dx = 0$.
     <2>1. $f$ is uniformly continuous.
         Proof: $f$ is continuous with compact support.

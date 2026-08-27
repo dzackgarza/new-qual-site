@@ -13,6 +13,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ Show that if $a>0$, then
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that for $a > 0$, $\int_0^{\infty} \frac{\log x}{x^2 + a^2}\, dx = \frac{\pi}{2a} \log a$.
 
 <1>1. Integrate $f(z) := \frac{\Log z}{z^2 + a^2}$ over the keyhole contour $\Gamma$ that runs along the positive real axis: the segment $[\varepsilon, R]$ on the upper edge, the big circle $\abs z = R$, the segment $[R, \varepsilon]$ on the lower edge, and the small circle $\abs z = \varepsilon$.

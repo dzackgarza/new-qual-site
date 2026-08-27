@@ -12,6 +12,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Construct a free resolution of $M$ and compute $\tor_R^*(M, M)$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $G = \mathbb{Z}_2 = \{1, \sigma\}$ with $\sigma^2 = 1$, and let $R = \mathbb{Z}[G] \cong \mathbb{Z}[\sigma] / (\sigma^2 - 1)$ be the group ring.
 Let $M$ be the rank-1 $\mathbb{Z}$-module $\mathbb{Z}$ on which $\sigma$ acts by $-1$ (the sign module, i.e., $R$-module with $\sigma \cdot m = -m$). Construct a free resolution of $M$ over $R$ and compute the Tor groups $\operatorname{Tor}_n^R(M, M)$ for all $n \ge 0$.
 

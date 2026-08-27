@@ -12,6 +12,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -27,8 +31,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f_n \in C^1[a,b]$, the derivatives $f_n'$ converge uniformly to some $g$, and $f_n(x_0)$ converges for some $x_0 \in [a,b]$, then $f_n \to f$ uniformly, $f$ is differentiable, and $f' = g$.
 
 <1>1. $f_n \to f$ uniformly for some continuous $f$.

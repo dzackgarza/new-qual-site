@@ -12,6 +12,10 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -36,8 +40,6 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (a) Show $\abs{\frac{w - z}{1 - \bar w z}} < 1$ for $\abs z, \abs w < 1$ (with equality when $\abs z = 1$ or $\abs w = 1$), for $\bar z w \neq 1$; (b) show $F(z) = \frac{w - z}{1 - \bar w z}$ maps $\DD$ to itself, is holomorphic, sends $0 \mapsto w$, $w \mapsto 0$, the circle to the circle, and is bijective.
 
 <1>1. Compute $\abs{w - z}^2 - \abs{1 - \bar w z}^2 = (\abs w^2 - 1)(1 - \abs z^2)$.

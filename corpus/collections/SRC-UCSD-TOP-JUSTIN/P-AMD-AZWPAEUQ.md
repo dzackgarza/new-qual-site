@@ -11,6 +11,10 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Compute the integral homology groups $H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$ for all $k \ge 0$.
 
 <1>1. Compute the homology of the factors $\Sigma \mathbb{RP}^2$ and $\mathbb{RP}^2$.

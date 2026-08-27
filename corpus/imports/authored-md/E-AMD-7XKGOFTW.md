@@ -11,6 +11,10 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that nilpotent groups have nontrivial centers.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $G$ be a non-trivial nilpotent group (i.e., $G \neq \{e\}$). Prove that the center $Z(G)$ is non-trivial, i.e., $Z(G) \neq \{e\}$.
 
 <1>1. Definition of a nilpotent group via the upper central series: <2>1. The upper central series of $G$ is the sequence of normal subgroups $\{Z_i(G)\}_{i \ge 0}$ defined by: - $Z_0(G) = \{e\}$, - $Z_1(G) = Z(G)$, - $Z_{i+1}(G) / Z_i(G) = Z(G / Z_i(G))$, meaning $Z_{i+1}(G) = \{x \in G \mid [x, g] \in Z_i(G) \text{ for all } g \in G\}$.

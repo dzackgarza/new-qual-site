@@ -12,6 +12,10 @@ classification:
   - Stone-Weierstrass
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 1.  Suppose $f \colon [-1,1] \to \mathbb{R}$ is a bounded function
@@ -53,8 +57,6 @@ conclude that $x^2g^2(x)=0$ for all $x$. Therefore, we have
 $g(x)=0$. ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Part 1.** For the step function $\alpha(x) = -1$ on $[-1,0]$ and $\alpha(x) = 1$ on $(0,1]$: $f \in \mathcal R(\alpha)[-1,1]$ and $\int_{-1}^1 f\,d\alpha = 2f(0)$.
 
 <1>1. For any partition $P = \{-1 = x_0 < x_1 < \cdots < x_n = 1\}$ with $0 \in P$, $\Delta \alpha_i = \alpha(x_i) - \alpha(x_{i-1})$ is nonzero only for the subinterval containing $0$, where it equals $2$.

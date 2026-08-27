@@ -11,6 +11,10 @@ classification:
   - Point-Set Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that $\RR$ with the cofinite topology is compact.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that $\RR$ with the cofinite topology is compact.
 
 <1>1. Let $\mathcal{U} = \theset{U_\alpha}_{\alpha \in I}$ be an open cover of $\RR$ (cofinite topology).

@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $f,g \in L^1(\RR)$, show $f\ast g \in L^1(\RR)$ and $\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$.
 
 <1>1. $f \ast g$ is well defined and belongs to $L^1(\RR)$.

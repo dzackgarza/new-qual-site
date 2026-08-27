@@ -11,6 +11,10 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ Be sure to provide all technical details.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Find the domain of convergence and the sum of $\sum_{n\ge 0}(-1)^n\frac{x^{2n+1}}{2n+1}$, and use it to approximate $\pi$ to three decimals.
+**Goal:** Find the domain of convergence and the sum of $\sum_{n\ge 0}(-1)^n\frac{x^{2n+1}}{2n+1}$, and use it to approximate $\pi$ to three decimals.
 
 <1>1. The series is the Taylor series of $\arctan x$ at $0$: $\arctan x = \sum_{n\ge0}(-1)^n\frac{x^{2n+1}}{2n+1}$.
 Proof: $\arctan' x = \frac{1}{1+x^2} = \sum_{n\ge0}(-1)^n x^{2n}$ (geometric series, $|x| < 1$), and termwise integration from $0$ to $x$ gives the claim.

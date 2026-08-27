@@ -12,6 +12,10 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (a) If $f$ is differentiable on $\RR$ with $f'(-1) < 2 < f'(1)$, show $f'(x_0) = 2$ for some $x_0 \in (-1, 1)$. (b) If $f$ is continuous on $(-1,1)$, differentiable on $(-1,0) \union (0,1)$, and $\lim_{x \to 0} f'(x) = L$, show $f$ is differentiable at $0$ with $f'(0) = L$.
 
 <1>1. Proof of (a).

@@ -11,6 +11,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bou
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $X$ is a metric space and $A \subseteq X$ is compact, then $A$ is bounded.
 
 <1>1. Fix a point $p \in X$; the open balls $\theset{B(p, n)}_{n \in \NN}$ form an open cover of $X$.

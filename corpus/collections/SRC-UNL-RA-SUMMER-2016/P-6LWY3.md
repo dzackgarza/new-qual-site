@@ -12,6 +12,10 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ $\beta \geq \frac{1}{2}$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f_n \to 0$ pointwise on $[0,1]$ for every $\beta \in \RR$.
     <2>1. For $x = 0$: $f_n(0) = 0$ for all $n$.
         Proof: the factor $x$ vanishes.

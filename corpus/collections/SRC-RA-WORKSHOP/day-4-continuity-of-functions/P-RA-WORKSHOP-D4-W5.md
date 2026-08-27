@@ -11,6 +11,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -25,8 +29,6 @@ What does this result imply if $\limsup_{n\to\infty}x_n<L$?
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Upper bound: eventually $x_n < \limsup x_n + \epsilon$.
 Proof: let $L = \limsup x_n = \inf_N \sup_{n \ge N} x_n$ (finite by assumption).
 For any $\epsilon > 0$, $L + \epsilon$ is not a lower bound of the tail suprema... more precisely, $L = \inf_N S_N$ with $S_N = \sup_{n\ge N}x_n$, so there is $N_1$ with $S_{N_1} < L + \epsilon$.

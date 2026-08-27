@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Apply the hypothesis to $f \equiv 1$ (constant, hence monotone).
 Proof: $\int_a^b 1\,d\alpha = \alpha(b) - \alpha(a) = 0$, so $\alpha(a) = \alpha(b)$.
 <1>2. Apply the hypothesis to $f(x) = x$ (monotone increasing).

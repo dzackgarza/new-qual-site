@@ -11,6 +11,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that if $R$ is Noetherian then every ideal is finitely generated.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a ring satisfying the Ascending Chain Condition (ACC) on ideals (i.e., every strictly ascending chain of ideals terminates).
 Prove that every ideal of $R$ is finitely generated.
 

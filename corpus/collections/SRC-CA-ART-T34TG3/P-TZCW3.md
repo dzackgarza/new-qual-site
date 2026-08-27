@@ -14,6 +14,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ The maximum modulus principle.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $P(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$ be a non-constant polynomial with complex coefficients, where $n \geq 1$ and $a_n \neq 0$.
 
 **(a) Proof using Rouché's Theorem:**

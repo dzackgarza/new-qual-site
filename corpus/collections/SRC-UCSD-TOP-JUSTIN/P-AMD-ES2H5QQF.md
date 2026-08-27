@@ -12,6 +12,10 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -25,8 +29,6 @@ Compute the following directly from chain complexes and check using UCT:
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Compute the following homology and cohomology groups for real projective space $\mathbb{RP}^n$ directly from the cellular chain complex, and verify each result using the Universal Coefficient Theorem (UCT):
 1. $H_*(\mathbb{RP}^n; \mathbb{Z}_2)$,
 2. $H_*(\mathbb{RP}^n; \mathbb{Z}_3)$,

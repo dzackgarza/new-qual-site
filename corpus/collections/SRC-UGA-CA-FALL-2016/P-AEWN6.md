@@ -12,6 +12,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Provide an upper bound for $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |,$ w
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 
 1. State the precise definition of the complex line integral $\int_\alpha f(z)\,dz$.

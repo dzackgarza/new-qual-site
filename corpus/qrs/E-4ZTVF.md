@@ -11,6 +11,10 @@ classification:
   - Quotient Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that a quotient of a compact space is again compact.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $X$ be a compact topological space, and let $q: X \to Y$ be a quotient map (so $Y$ has the quotient topology induced by the surjective map $q$).
 
 1. **Continuity of the quotient map:** By the definition of the quotient topology, a subset $V \subseteq Y$ is open in $Y$ if and only if $q^{-1}(V)$ is open in $X$.

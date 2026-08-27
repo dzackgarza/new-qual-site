@@ -14,6 +14,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 :::{.problem}
@@ -40,8 +44,6 @@ Although this mentions Plancherel, probably what is needed is Parseval's identit
 
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Extend each $f_n$ by zero outside $[0,1]$ and let $\hat f_n(\xi) = \int_0^1 f_n(x) e^{2\pi i \xi x}\,dx$ for $\xi \in \RR$. By Plancherel's identity (with this normalization), $\|f_n\|_{L^2([0,1])} = \|\hat f_n\|_{L^2(\RR)}$ and $\langle f_n, f_m\rangle = \langle \hat f_n, \hat f_m\rangle$ for all $n, m$.
     Proof: Plancherel on $L^2(\RR)$, applied to the zero-extension; the polarization identity recovers the inner product.
 

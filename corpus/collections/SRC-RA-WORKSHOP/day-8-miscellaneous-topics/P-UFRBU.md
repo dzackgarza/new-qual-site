@@ -11,6 +11,10 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Let $\{a_n\}_{n=1}^\infty \subseteq \mathbb{R}$ and a strictly increasing sequen
 Assume that $\sum_{n=1}^\infty a_n$ is absolutely convergent, and define $\alpha \colon [0,1] \to \mathbb{R}$ by $$\alpha(x):= \begin{cases} a_n &  x=x_n \\ 0 & \text{otherwise} \end{cases}.$$ Prove or disprove: $\alpha$ has bounded variation on $[0,1]$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\alpha$ is bounded: $|\alpha(x)| \le \sum_n |a_n| < \infty$ for all $x$.
 Proof: $\alpha(x) = a_n$ if $x = x_n$ and $0$ otherwise, so $|\alpha(x)| \le \sup_n |a_n| \le \sum_n |a_n|$, and $\sum_n |a_n|$ converges absolutely.
 <1>2. Estimate the variation against a partition.

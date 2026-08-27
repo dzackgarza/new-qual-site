@@ -12,6 +12,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -38,8 +42,6 @@ Use this to show the following:
 
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $e_n < E_n$.
     Proof: $E_n = (1+1/n)^{n+1} = e_n (1+1/n) > e_n$ since $1+1/n > 1$.
 <1>2. Bernoulli's inequality: for $-1 < x$, $(1+x)^n \ge 1 + nx$ for every $n \in \NN$.

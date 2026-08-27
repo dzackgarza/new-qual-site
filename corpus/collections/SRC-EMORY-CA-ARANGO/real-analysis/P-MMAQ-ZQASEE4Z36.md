@@ -10,6 +10,10 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) State the Dominated Convergence Theorem; (2) use it to prove that if $f_n \to f$ in measure on a measurable set $E$ and $|f_n| \leq g$ with $g$ integrable on $E$, then $\int_E |f_n - f| \to 0$.
 
 <1>1. Statement of the Dominated Convergence Theorem.

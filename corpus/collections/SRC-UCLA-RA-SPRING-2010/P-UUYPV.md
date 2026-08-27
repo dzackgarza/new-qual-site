@@ -11,6 +11,10 @@ classification:
   - Argument Principle
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Prove that inside $Q$ the function $F$ has the same number of zeros as poles (co
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $F$ be a non-constant meromorphic function on $\CC$ with periods $1$ and $i$, and let $Q$ be a period square with no zeros or poles of $F$ on $\bd Q$.
 Prove $F$ has the same number of zeros as poles inside $Q$ (counting multiplicities).
 

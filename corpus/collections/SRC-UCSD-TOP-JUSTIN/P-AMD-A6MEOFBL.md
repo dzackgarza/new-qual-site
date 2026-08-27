@@ -12,6 +12,10 @@ classification:
   - Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -25,8 +29,6 @@ Show that all 3 presentations of $\pi_1(K)$ are isomorphic
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that the following three descriptions of the fundamental group $\pi_1(K)$ of the Klein bottle $K$ are mutually isomorphic:
 
 1. $G_1 = \langle a, b \mid a b a b^{-1} = 1 \rangle$ (or $\langle a, b \mid a b a^{-1} b = 1 \rangle$) from the square polygonal identification,

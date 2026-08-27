@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. It suffices to prove the claim for non-negative measurable $f$: the general $f \in L^1$ case follows by linearity on positive and negative parts.
 Proof: $\int \tau_h f = \int \tau_h f^+ - \int \tau_h f^-$, and $\tau_h(f^\pm) = (\tau_h f)^\pm$.
 

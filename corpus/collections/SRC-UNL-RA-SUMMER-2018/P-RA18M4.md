@@ -12,6 +12,10 @@ classification:
   - Arzelà-Ascoli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 :::{.problem}
@@ -27,7 +31,6 @@ Determine whether the set $S$ is compact in $(C_b([0,1]),\rho_\infty)$.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
 **Goal:** (a) Show $\rho_\infty(f,g) = \operatorname{lub}\{|f(x) - g(x)| : x \in S\}$ is a metric on $\mathcal B(S)$; (b) decide compactness of $S = \{f \in C_b[0,1] : f(0) = 0, f \text{ differentiable on } (0,1), |f'| \le M\}$ in $(C_b[0,1], \rho_\infty)$.
 
 <1>1. (a) $\rho_\infty$ is a metric.

@@ -11,6 +11,10 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Prove your answer.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f(x) = \frac{x^2}{1 - x^2}$ is continuous on $(0,1)$.
 Proof: fix $a \in (0,1)$ and $\epsilon > 0$.
 The function $x \mapsto 1 - x^2$ is continuous and $1 - a^2 > 0$, so pick $\delta_1 > 0$ with $|x - a| < \delta_1$ implying $1 - x^2 > \frac{1 - a^2}{2}$ (hence the denominator stays bounded away from $0$). On the neighborhood $|x-a| < \delta_1$, the numerator $x^2$ is bounded by $(a + \delta_1)^2$, and the difference \[\left|\frac{x^2}{1-x^2} - \frac{a^2}{1-a^2}\right| = \frac{|x^2 - a^2|}{(1-x^2)(1-a^2)}\] satisfies $|x^2 - a^2| \le |x-a|\cdot 2(a + \delta_1)$, so choosing $\delta = \min\big(\delta_1, \frac{\epsilon(1-a^2)^2}{4(a+\delta_1)}\big)$ gives $|f(x) - f(a)| < \epsilon$ whenever $|x - a| < \delta$.

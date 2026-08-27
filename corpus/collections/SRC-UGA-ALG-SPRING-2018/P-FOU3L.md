@@ -13,6 +13,10 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ Show that if $M$ is $\generators{p}\dash$primary, then $S$ is pure if and only i
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **(a) Existence of $a \in R$ such that $atm = m$:** Since $M$ is $\langle p \rangle$-primary, there exists an integer $k > 0$ such that $p^k m = 0$.
 Since $R$ is a PID, every prime element is irreducible.
 Because $p \nmid t$, we have $\gcd(t, p^k) = 1$.

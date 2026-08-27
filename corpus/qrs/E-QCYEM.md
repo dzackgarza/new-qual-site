@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Rewrite the difference: $f \ast \phi_t(x) - f(x) = \int \phi(y)\big(f(x - ty) - f(x)\big)\,dy$.
 Proof: substitute $u = ty$ in $f \ast \phi_t(x) = \int f(x - ty)\phi(y)\,dy$, and use $\int \phi = 1$ to write $f(x) = f(x)\int\phi(y)\,dy$.
 

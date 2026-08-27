@@ -14,6 +14,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D7-6-7
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,7 +26,7 @@ Then, verify that the set of all polynomials of the form $$\left\{\sum_{j=2017}^
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (1) State Stone–Weierstrass for real-valued continuous functions; (2) verify that $\mathcal A = \{\sum_{j=2017}^{N}a_jx^j : N \ge 2017,\ a_j \in \mathbb R\} \cup \{0\}$ is an algebra over $[-2,2]$.
+**Goal:** (1) State Stone–Weierstrass for real-valued continuous functions; (2) verify that $\mathcal A = \{\sum_{j=2017}^{N}a_jx^j : N \ge 2017,\ a_j \in \mathbb R\} \cup \{0\}$ is an algebra over $[-2,2]$.
 
 <1>1. Statement of the theorem (real-valued version).
 Proof: If $X$ is a compact Hausdorff space and $\mathcal A \subseteq C(X;\mathbb R)$ is a subalgebra that (i) contains the constant functions, (ii) separates points of $X$ (for every $x \neq y$ there is $h \in \mathcal A$ with $h(x) \neq h(y)$), then $\mathcal A$ is dense in $C(X;\mathbb R)$ with the sup norm.

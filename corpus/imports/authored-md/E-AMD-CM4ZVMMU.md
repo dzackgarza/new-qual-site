@@ -12,6 +12,10 @@ classification:
   - Cosets and Lagrange
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that every group of order $p$ is cyclic.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p$ be a prime number, and let $G$ be a group of order $|G| = p$.
 Prove that $G$ is cyclic (and hence $G \cong \mathbb{Z}/p\mathbb{Z}$).
 

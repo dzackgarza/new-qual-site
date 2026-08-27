@@ -11,6 +11,10 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Assume that Theorem 2.4 (the root test) is true and prove the ratio test (Theore
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Recall the root test (Theorem 2.4). Proof: if $\limsup_{n\to\infty}|a_n|^{1/n} < 1$ then $\sum a_n$ converges absolutely; if $\limsup |a_n|^{1/n} > 1$ then $\sum a_n$ diverges.
 <1>2. Relate the root-test quantity to the ratio-test quantity.
 Proof: for a sequence of positive numbers $c_n$, \[\liminf_{n\to\infty}\frac{c_{n+1}}{c_n} \le \liminf_{n\to\infty} c_n^{1/n} \le \limsup_{n\to\infty} c_n^{1/n} \le \limsup_{n\to\infty}\frac{c_{n+1}}{c_n}.\] The upper bound: write $q = \limsup c_{n+1}/c_n$; for $\epsilon > 0$ there is $N$ with $c_{n+1} \le (q+\epsilon)c_n$ for $n \ge N$, hence $c_n \le C(q+\epsilon)^n$, so $c_n^{1/n} \le C^{1/n}(q+\epsilon) \to q+\epsilon$.

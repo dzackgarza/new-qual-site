@@ -11,6 +11,10 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that $[0, 1]$ is compact.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 We prove that $[0, 1]$ is compact directly using the least-upper-bound property of $\RR$.
 
 Let $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ be an open cover of $[0, 1]$ by open subsets of $\RR$.

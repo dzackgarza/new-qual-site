@@ -13,6 +13,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Here $n$ is a positive integer.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show $\int_0^\infty \frac{x^{a-1}}{1+x^n}\, dx = \frac{\pi}{n\sin \frac{a\pi}{n}}$ for $0 < a < n$ by complex analysis.
 
 <1>1. Set up the integrand and the contour: $f(z) = \frac{z^{a-1}}{1 + z^n}$ with $z^{a-1}$ the branch $\abs{z}^{a-1} e^{i(a-1)\arg z}$, $0 \leq \arg z \leq \frac{2\pi}{n}$; integrate over the sector $\Gamma_R$: the segment $[0, R]$, the arc $\abs{z} = R$ with $0 \leq \arg z \leq \frac{2\pi}{n}$, and the ray $\arg z = \frac{2\pi}{n}$ back to $0$.

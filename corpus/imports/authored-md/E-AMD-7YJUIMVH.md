@@ -12,6 +12,10 @@ classification:
   - Bases
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if $\theset{\vector v_i}$ is a basis for $V$ where $\dim(V) = n$ and $
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $V$ be an $n$-dimensional vector space over $\mathbb{C}$ (or an algebraically closed field of characteristic not dividing $n$), with basis $\mathcal{B} = \{v_0, v_1, \dots, v_{n-1}\}$.
 Let $T: V \to V$ be the linear operator defined by $T(v_i) = v_{i+1 \pmod n}$ for $0 \le i \le n-1$.
 Prove that the minimal polynomial of $T$ is $m_T(x) = x^n - 1$ and that $T$ is diagonalizable.

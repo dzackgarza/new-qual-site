@@ -12,6 +12,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,7 +26,7 @@ Show that $\{f_n\}_{n\ge1}$ is equicontinuous.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (a) Equicontinuous sequence on a compact interval, converging pointwise, converges uniformly; (b) $|f_n(x) - f_n(y)| \le M|x-y|^\alpha$ implies equicontinuity.
+**Goal:** (a) Equicontinuous sequence on a compact interval, converging pointwise, converges uniformly; (b) $|f_n(x) - f_n(y)| \le M|x-y|^\alpha$ implies equicontinuity.
 
 <1>1. (a) $f_n \to f$ uniformly.
 <2>1. $f$ is continuous.

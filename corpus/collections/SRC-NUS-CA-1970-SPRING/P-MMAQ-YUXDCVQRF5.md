@@ -12,6 +12,10 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the definite trigonometric integral $I = \int_0^{\pi/2} \frac{1}{3 + \sin^2 x} \, dx$ using the method of residues.
 
 * * *

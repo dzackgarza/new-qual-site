@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f \in L^1(\RR^n)$ and $g$ is differentiable with bounded partial derivatives $\dd{g}{x_i}$, show $\dd{}{x_i}(f \ast g) = f \ast \dd{g}{x_i}$; in particular $f \ast g$ is smooth when $g$ is smooth and compactly supported.
 
 <1>1. $f \ast g$ is differentiable in $x_i$, with $\dd{}{x_i}(f\ast g)(x) = (f \ast \dd{g}{x_i})(x)$.

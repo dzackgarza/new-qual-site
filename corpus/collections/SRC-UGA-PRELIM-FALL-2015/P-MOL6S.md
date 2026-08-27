@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -39,8 +43,6 @@ Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formu
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Find a closed formula for the $n$-th derivative $f^{(n)}(x)$ of $f(x) = x e^{2x}$ for all integers $n \ge 0$, and prove it by induction.
 
 <1>1. Claim: For all $n \ge 0$, $f^{(n)}(x) = (2^n x + n 2^{n-1}) e^{2x}$.

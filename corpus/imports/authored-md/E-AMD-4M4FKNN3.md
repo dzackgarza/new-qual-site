@@ -11,6 +11,10 @@ classification:
   - p-Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that Sylow $p_i\dash$subgroups $S_{p_1}, S_{p_2}$ for distinct primes $p_1\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a finite group, and let $p_1, p_2$ be distinct prime numbers ($p_1 \neq p_2$). Let $S_{p_1}$ be a Sylow $p_1$-subgroup of $G$ and $S_{p_2}$ be a Sylow $p_2$-subgroup of $G$.
 
 Consider the intersection subgroup:

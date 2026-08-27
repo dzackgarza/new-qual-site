@@ -12,6 +12,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,7 +23,7 @@ Show that if $\{f_n\}$ is an equicontinuous sequence of functions on a compact s
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Show $\{f_n\}$ equicontinuous on compact $K$ with $f_n \to f$ pointwise implies $f_n \to f$ uniformly on $K$.
+**Goal:** Show $\{f_n\}$ equicontinuous on compact $K$ with $f_n \to f$ pointwise implies $f_n \to f$ uniformly on $K$.
 
 <1>1. $f$ is continuous.
 Proof: uniform limits are continuous; here we only know pointwise convergence, so instead: fix $x_0$ and $\varepsilon > 0$; by equicontinuity choose $\delta$ with $\|x-x_0\| < \delta \Rightarrow |f_n(x) - f_n(x_0)| < \varepsilon/3$ for all $n$.

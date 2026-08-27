@@ -11,6 +11,10 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -47,8 +51,6 @@ V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $V = \{(x,y,z) \in \mathbb{R}^3 \mid 3x+4y+5z = 0\}$.
 (a) Show that $V$ is a linear subspace of $\mathbb{R}^3$.
 (b) Determine whether there exists a linear map $S: \mathbb{R}^3 \to \mathbb{R}^3$ with $\ker(S) = V$.

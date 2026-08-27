@@ -14,6 +14,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D7-6-1
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,7 +26,7 @@ Prove the results of Theorem 6.1 directly.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Prove directly that the uniform limit $f$ of continuous functions $f_n: E \to \mathbb R$ is continuous.
+**Goal:** Prove directly that the uniform limit $f$ of continuous functions $f_n: E \to \mathbb R$ is continuous.
 
 <1>1. $f$ is a function $E \to \mathbb R$.
 Proof: $f_n(x)$ converges for every $x \in E$ (uniform convergence implies pointwise), so $f(x) := \lim_n f_n(x)$ is a well-defined real number at each $x$.

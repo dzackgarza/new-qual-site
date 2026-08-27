@@ -11,6 +11,10 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ Let $E \subset \mathbb{R}$ be a measurable set, such that $0<m(E)<\infty$. Use p
 \]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) If $E$ is measurable then for every $\eps > 0$ there is an elementary set $F$ (finite union of rectangles) with $m(E \Delta F) < \eps$.
     <2>1. By measurability, choose open $U \supseteq E$ with $m(U \setminus E) < \eps/2$.
         Proof: the definition of measurability given in the card (the definition uses $m^*$ and open approximation; also $m(U \setminus E) = m^*(U\setminus E)$ for measurable $E$).

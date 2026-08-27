@@ -11,6 +11,10 @@ classification:
   - Arzelà-Ascoli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ for all $x \in [0, 1]$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Using Arzelà–Ascoli, show there is a continuous $f : [0,1] \to \mathbb{R}$ with $f(x) = \int_0^x g(t, f(t)) \, dt$ for all $x \in [0,1]$, where $g : [0,1]^2 \to [0,1]$ is continuous and $f_n$ is the recursively defined sequence in the statement.
 
 <1>1. The sequence $\{f_n\}$ is well defined, and $0 \leq f_n(x) \leq 1$ for all $n$ and all $x \in [0,1]$.

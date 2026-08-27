@@ -10,14 +10,16 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
 Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$, then $fg$ is differentiable at $x$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Write the difference quotient of $fg$.
 Proof: for $h \neq 0$, \[ \frac{(fg)(x+h) - (fg)(x)}{h} = \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = \frac{f(x+h) - f(x)}{h}\,g(x+h) + f(x)\,\frac{g(x+h) - g(x)}{h}. \] <1>2. $g$ is continuous at $x$.
 Proof: $g$ is differentiable at $x$, hence continuous at $x$: $g(x+h) \to g(x)$ as $h \to 0$.

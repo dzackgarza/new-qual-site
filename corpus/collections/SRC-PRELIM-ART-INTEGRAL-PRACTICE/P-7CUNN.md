@@ -11,6 +11,10 @@ classification:
   - Partial Fractions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -48,8 +52,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate indefinite integrals of rational functions using polynomial long division and partial fraction decomposition.
 
 <1>1. Evaluation of $\int \frac{x^3 + 4x^2}{x^2 + 4x + 3} \, dx$: Proof: <2>1. Long division: $x^3 + 4x^2 = x(x^2 + 4x + 3) - 3x$, so $\frac{x^3 + 4x^2}{x^2 + 4x + 3} = x - \frac{3x}{(x+1)(x+3)}$.

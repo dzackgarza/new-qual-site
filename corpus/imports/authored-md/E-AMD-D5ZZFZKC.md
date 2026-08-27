@@ -12,6 +12,10 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that every $p\dash$group has a nontrivial center.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p$ be a prime number, and let $G$ be a finite $p$-group of order $|G| = p^n$ with $n \ge 1$.
 Prove that the center $Z(G)$ is non-trivial, i.e., $|Z(G)| \ge p > 1$.
 

@@ -13,6 +13,10 @@ classification:
   - Singularities
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Prove that all entire functions that are injective are of the form $f(z) = az + 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $f: \CC \to \CC$ be an injective entire function.
 
 1. **Behavior at infinity:** Consider the function $g(z) = f(1/z)$ on the punctured disk $\DD^* = \DD \setminus \{0\} = \{z \in \CC : 0 < |z| < 1\}$.

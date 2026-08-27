@@ -13,6 +13,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ What are the poles of ${1\over 1 + z^4}$ ?
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Evaluate $\int_\RR \frac{dx}{1 + x^4}$ and identify the poles of $1/(1 + z^4)$.
 
 <1>1. The poles of $1/(1 + z^4)$ are the simple poles $z_k = e^{i\pi(1 + 2k)/4}$, $k = 0, 1, 2, 3$.

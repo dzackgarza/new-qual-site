@@ -11,6 +11,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ Show that a sequentially compact space is totally bounded.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $(X, d)$ be a sequentially compact metric space.
 We want to prove that $X$ is totally bounded: for every $\varepsilon > 0$, $X$ can be covered by finitely many open balls of radius $\varepsilon$.
 

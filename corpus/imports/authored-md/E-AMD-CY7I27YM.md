@@ -10,6 +10,10 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -17,8 +21,6 @@ Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then $L$ is algebr
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $L/K$ and $K/F$ be algebraic field extensions.
 Prove that the composite field extension $L/F$ is algebraic (transitivity of algebraic extensions).
 

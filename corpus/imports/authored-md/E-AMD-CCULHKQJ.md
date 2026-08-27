@@ -12,6 +12,10 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -23,8 +27,6 @@ Show that if $K/E/F$ with $K/F$ Galois then $K/E$ is always Galois with $g(K/E) 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $K/F$ be a finite Galois extension, and let $E$ be an intermediate field ($F \subseteq E \subseteq K$). Let $G = \operatorname{Gal}(K/F)$ and $H = \operatorname{Gal}(K/E)$.
 Prove:
 

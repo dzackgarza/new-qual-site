@@ -12,6 +12,10 @@ classification:
   - Number Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that if $p\in \QQ[x]$ and $r\in \QQ$ is a rational root, then in fact $r\in
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p(x) = x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0 \in \mathbb{Z}[x]$ be a monic polynomial with integer coefficients.
 Prove that if $r \in \mathbb{Q}$ is a rational root of $p(x)$, then $r \in \mathbb{Z}$.
 

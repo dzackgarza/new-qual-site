@@ -12,6 +12,10 @@ classification:
   - Contour Integration
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ In parts:
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $D = D((x_0, y_0), R) \subset \mathbb{R}^2$ be an open disk, and let $u \in C^3(D)$ be a real-valued harmonic function ($\Delta u = u_{xx} + u_{yy} = 0$).
 1. (a) Prove that the differential 1-form $\omega = -u_y \, dx + u_x \, dy$ is closed, and that the line integral $\int_{(a,b)}^{(x,y)} \omega$ is independent of the path in $D$.
 2. (b)(i) Prove that $f(z) = u(x,y) + i v(x,y)$ is analytic (holomorphic) in $D$.

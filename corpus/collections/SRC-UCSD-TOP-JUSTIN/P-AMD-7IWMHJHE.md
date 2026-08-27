@@ -11,6 +11,10 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ A hexagon with the identifications $a+b+c-a-b-c$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Identify the closed 2-dimensional surface $X$ represented by a regular hexagon whose perimeter edges are identified according to the boundary word $w = a b c a^{-1} b^{-1} c^{-1}$ (or $a+b+c-a-b-c$), compute its Euler characteristic $\chi(X)$, classify the surface, and determine its fundamental group $\pi_1(X)$.
 
 <1>1. Cellular structure of the polygonal quotient $X$.

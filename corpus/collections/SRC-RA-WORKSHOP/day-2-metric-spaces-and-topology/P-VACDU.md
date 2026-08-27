@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ $d(x_0,K)=\inf_{y\in K} d(x_0,y)$. Prove that there exists a point
 $y_0\in K$ such that $d(x_0,K)=d(x_0,y_0)$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (b) The union of infinitely many compact sets need not be compact.
     Proof: in $\RR$ (a metric space), the singletons $K_n = \{n\}$ are compact (finite, hence compact). Their union $\cup_n K_n = \NN$ is not compact: the open cover $\{(n - 1/2, n + 1/2) : n \in \NN\}$ has no finite subcover, since each open interval contains exactly one point of $\NN$. (Equivalently, $\NN$ is closed but unbounded, hence not compact.)
 <1>2. (c) Setup: the function $x \mapsto d(x_0, x)$ is continuous.

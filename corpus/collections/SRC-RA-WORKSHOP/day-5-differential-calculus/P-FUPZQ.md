@@ -11,6 +11,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Assume that $f$ is differentiable at $a$.
 Evaluate $$\lim_{x\to a}\frac{a^nf(x)-x^nf(a)}{x-a},\quad n\in\mathbb{N}.$$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Rewrite the numerator: $a^n f(x) - x^n f(a) = a^n(f(x) - f(a)) - f(a)(x^n - a^n)$.
 Proof: $a^n f(x) - x^n f(a) = a^n f(x) - a^n f(a) + a^n f(a) - x^n f(a) = a^n(f(x) - f(a)) - f(a)(x^n - a^n)$.
 

@@ -13,6 +13,10 @@ classification:
   - Liouville's Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Suppose $f$ is entire and $\abs{f(z)} \ge A\abs{z}^N$ for $\abs{z} \ge R$.
 Show (i) $f$ is a polynomial and (ii) $\deg f \ge N$.
 

@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Compute the following integrals.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Compute a batch of standard integrals: (i) $\int_0^\infty \frac{\sin x}{x}\,dx$; (ii) $\int_0^\infty \qty(\frac{\sin x}{x})^2\,dx$; (iii) $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx$ for $0 < a < 2$; (iv) $\int_0^\infty \frac{\cos(ax) - \cos(bx)}{x^2}\,dx$ for $a, b > 0$; (v) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx$ for $0 < a < n$; (vi) $\int_0^\infty \frac{\log x}{1 + x^n}\,dx$ for $n \ge 2$; (vii) $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx$; (viii) $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$ for $a \in \CC$.
 
 <1>1. (i) $\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}$.

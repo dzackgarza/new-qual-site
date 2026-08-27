@@ -13,6 +13,10 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ Show that $f$ must be constant.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) State the Schwarz reflection principle across the real axis; (2) give a Möbius map $T: \DD \to \HH$ and verify $T^{-1}\circ g \circ T = 1/\bar z$ for $g(z) = \bar z$; (3) show $f$ holomorphic on $\DD$, continuous on $\bar\DD$, real on $S^1$, must be constant.
 
 <1>1. Statement of the Schwarz reflection principle (real axis).

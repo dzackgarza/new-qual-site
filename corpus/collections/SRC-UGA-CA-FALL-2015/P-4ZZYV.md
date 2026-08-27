@@ -12,6 +12,10 @@ classification:
   - Singularities
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Show that $f$ is a polynomial.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that if $f$ is entire and $\lim_{z \to \infty} f(z) = \infty$, then $f$ is a polynomial.
 
 <1>1. Define $g(w) := f\qty(\frac{1}{w})$ for $w \neq 0$; then $g$ is holomorphic on $\CC \setminus \theset{0}$.

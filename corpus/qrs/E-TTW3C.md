@@ -12,6 +12,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f: A \to B$ is a continuous map between metric spaces and $K \subset A$ is compact, then the restriction $\restrictionof{f}{K}$ is uniformly continuous.
 
 <1>1. Assume, toward a contradiction, that $\restrictionof{f}{K}$ is not uniformly continuous.

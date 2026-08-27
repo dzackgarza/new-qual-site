@@ -11,6 +11,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that if an ideal $I\normal R$ contains a unit then $I = R$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a ring with identity $1 \neq 0$, and let $I \trianglelefteq R$ be an ideal (left, right, or two-sided).
 Suppose $I$ contains a unit $u \in R^\times$.
 Prove that $I = R$.

@@ -12,6 +12,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 :::{.exercise}
@@ -22,8 +26,6 @@ Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. $(fg)'/(fg) = f'/f + g'/g$, wherever $f, g$ are nonzero holomorphic functions.
 
 <1>1. Differentiate $fg$ by the product rule.

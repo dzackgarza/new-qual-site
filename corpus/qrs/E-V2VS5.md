@@ -14,6 +14,10 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -29,8 +33,6 @@ Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and eac
 ![image_2021-05-17-13-33-30](../../assets/figures/image_2021-05-17-13-33-30.png)
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that the complex zeros of $f(z) = \sin(\pi z)$ are exactly $\ZZ$, each of order 1, and compute the residue of $1/\sin(\pi z)$ at $z = n \in \ZZ$.
 
 <1>1. The zeros of $\sin(\pi z)$ in $\CC$ are exactly the integers.

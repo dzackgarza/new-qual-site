@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -23,8 +27,6 @@ L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Honesty note:** the second line of the display has the inclusions backwards as written: $\ell^2(\ZZ) \not\subset \ell^1(\ZZ)$ (e.g. $a_n = 1/n$ is in $\ell^2$ but not $\ell^1$). The true inclusions for counting measure on $\ZZ$ are $\ell^1 \subset \ell^2 \subset \ell^\infty$. The solution proves the correct statements.
 
 <1>1. For $m(X) < \infty$: $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.

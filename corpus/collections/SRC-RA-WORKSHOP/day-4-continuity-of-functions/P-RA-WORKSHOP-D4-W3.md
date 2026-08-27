@@ -10,6 +10,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Give an $\epsilon$-$\delta$ proof that $f(x)=x^{1/3}$ is continuous on $[0,1]$.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Use the factorization $u^3 - v^3 = (u-v)(u^2 + uv + v^2)$.
 Proof: for $x, a \in [0,1]$ with $u = x^{1/3}$, $v = a^{1/3}$: \[|x^{1/3} - a^{1/3}| = \frac{|x - a|}{x^{2/3} + x^{1/3}a^{1/3} + a^{2/3}}.\] <1>2. Case $a = 0$: continuous at $0$.
 Proof: the denominator collapses: $|x^{1/3} - 0| = x^{1/3}$.

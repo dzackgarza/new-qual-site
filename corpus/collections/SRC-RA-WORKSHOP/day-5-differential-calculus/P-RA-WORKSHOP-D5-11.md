@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Prove that there exists some $s\in(0,1)$ such that $|f'(s)|>2$.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. If $c \ne 1/2$, use the mean value theorem directly.
 Proof: if $c < 1/2$, MVT on $[0,c]$: $f'(s) = \frac{f(c) - f(0)}{c} = \frac{1}{c} > 2$ for some $s \in (0,c)$.
 If $c > 1/2$, MVT on $[c,1]$: $f'(s) = \frac{f(1) - f(c)}{1 - c} = -\frac{1}{1-c}$ with $\frac{1}{1-c} > 2$, so $|f'(s)| > 2$.

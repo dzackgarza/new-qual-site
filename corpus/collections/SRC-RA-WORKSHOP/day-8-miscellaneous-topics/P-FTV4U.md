@@ -11,14 +11,16 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
 Define $f \colon [0,1] \to [-1,1]$ by $$f(x):= \begin{cases} x\sin\big({\frac{1}{x}}\big) & 0 < x \leq 1 \\ 0 & x = 0 \end{cases}$$ Determine, with justification, whether $f$ is if bounded variation on the interval $[0,1]$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f$ is NOT of bounded variation on $[0,1]$.
 Proof: show the total variation is infinite by evaluating at a sequence of points with large accumulated oscillation.
 

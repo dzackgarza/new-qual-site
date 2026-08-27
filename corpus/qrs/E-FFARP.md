@@ -11,6 +11,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that every compact subset $K$ of a metric space (in particular of $\RR^n$) is closed and bounded.
 
 <1>1. $K$ is bounded.

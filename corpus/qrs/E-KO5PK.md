@@ -11,6 +11,10 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f$ is uniformly continuous (and $f \in L^p(\RR^n)$, which the statement presupposes), then $\norm{\tau_h f - f}_p \to 0$ as $h \to 0$ for $1 \leq p < \infty$.
 
 <1>1. The claim holds for continuous functions with compact support.

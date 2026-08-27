@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Prove that for every \( \eps > 0 \) there exists $M>0$ and a set $E\subseteq X$ 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Define $g(x) = \sup_{n \ge 1}|f_n(x)|$ (extended real-valued).
 Proof: $g$ is measurable as the supremum of countably many measurable functions.
 

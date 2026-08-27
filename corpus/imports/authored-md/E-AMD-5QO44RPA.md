@@ -12,6 +12,10 @@ classification:
   - Classification
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that no group of order $p^2 q^2$ is simple for $p<q$ primes.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p$ and $q$ be prime numbers with $p < q$, and let $G$ be a group of order $|G| = p^2 q^2$.
 Prove that $G$ is not simple.
 

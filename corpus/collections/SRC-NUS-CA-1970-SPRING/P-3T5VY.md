@@ -12,6 +12,10 @@ classification:
   - Rouché
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -23,8 +27,6 @@ in the annulus $1 \leq |z| \leq 2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Determine the number of zeros of $f(z) = 2z^5 - 6z^2 - z + 1$, counted with multiplicity, in the closed annulus $A = \{z \in \mathbb{C} : 1 \leq |z| \leq 2\}$.
 
 * * *

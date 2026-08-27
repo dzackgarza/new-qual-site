@@ -11,6 +11,10 @@ classification:
   - Cauchy Integral Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f$ is once complex-differentiable at each point of a domain $\Omega$, then $f$ is holomorphic (i.e. analytic) on $\Omega$.
 
 <1>1. $f$ is continuous on $\Omega$.

@@ -11,6 +11,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,7 +22,7 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Prove $\sum_{k=0}^\infty \frac{x^2}{(1+x^2)^k}$ converges uniformly on $[a, \infty)$ for each $a > 0$ but not uniformly on $[0, b]$ for any $b > 0$.
+**Goal:** Prove $\sum_{k=0}^\infty \frac{x^2}{(1+x^2)^k}$ converges uniformly on $[a, \infty)$ for each $a > 0$ but not uniformly on $[0, b]$ for any $b > 0$.
 
 <1>1. The series is geometric with ratio $1/(1+x^2)$: $\sum_{k=0}^\infty \frac{x^2}{(1+x^2)^k} = x^2 \sum_{k=0}^\infty \left(\frac{1}{1+x^2}\right)^k$.
 Proof: factor $x^2$ out of every term.

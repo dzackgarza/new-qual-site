@@ -11,6 +11,10 @@ classification:
   - Homotopy
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f \colon S^n \to S^n$ be a continuous map ($n \ge 1$), and let $\Sigma f \colon \Sigma S^n \cong S^{n+1} \to \Sigma S^n \cong S^{n+1}$ be its suspension. Prove that $\deg(\Sigma f) = \deg(f)$, and conclude that $\pi_n(S^n) \cong \mathbb{Z}$.
 
 <1>1. Definition of degree and suspension isomorphism in homology.

@@ -13,6 +13,10 @@ classification:
   - Morera
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If each $f_n$ is holomorphic on $\Omega$ and $F \definedas \sum_n f_n$ converges uniformly on every compact subset of $\Omega$, show $F$ is holomorphic on $\Omega$.
 
 <1>1. $F$ is continuous on $\Omega$.

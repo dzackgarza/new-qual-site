@@ -10,6 +10,10 @@ classification:
   - Rouché
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) State Rouch\'e's theorem; (2) use it to show that if $f$ is analytic near $0$ with $f'(0) \neq 0$, then $f$ is a bijection on some neighborhood of $0$.
 
 <1>1. Statement of Rouch\'e's theorem.

@@ -11,6 +11,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ For a real sequence $\{x_n\}$, if $\lim_{n\to\infty}x_n=x$ and $\lim_{n\to\infty
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Suppose $x_n \to x$ and $x_n \to y$; show $x = y$.
 Proof: given $\epsilon > 0$, there are $N_1, N_2$ with $|x_n - x| < \epsilon/2$ for $n \ge N_1$ and $|x_n - y| < \epsilon/2$ for $n \ge N_2$.
 For $n \ge \max(N_1, N_2)$: \[|x - y| \le |x - x_n| + |x_n - y| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon.\] Since $\epsilon > 0$ was arbitrary, $|x - y| = 0$, so $x = y$.

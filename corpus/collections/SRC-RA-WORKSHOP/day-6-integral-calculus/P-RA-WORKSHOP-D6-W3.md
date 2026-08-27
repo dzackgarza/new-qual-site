@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $f$ is continuous on $(0,\infty)$.
 Proof: fix $x_0 > 0$ and $\epsilon > 0$.
 For $x$ in the neighborhood $|x - x_0| < x_0/2$ (so $x > x_0/2$), $1/t \le 2/x_0$ for $t$ between $x$ and $x_0$, and \[|f(x) - f(x_0)| = \left|\int_{x_0}^x \frac{dt}{t}\right| \le \frac{2}{x_0}|x - x_0|.\] Choose $\delta = \min(x_0/2,\ \epsilon x_0/2)$; then $|x - x_0| < \delta$ gives $|f(x) - f(x_0)| < \epsilon$.

@@ -10,6 +10,10 @@ classification:
   - Countability
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -17,8 +21,6 @@ Is the set of all sequences $x_1,x_2,\ldots$ with $x_i\in\{0,1\}$ for $i=1,2,\ld
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The set $\{0,1\}^{\mathbb{N}}$ of binary sequences is NOT countable.
 Proof: suppose it were countable, enumerated as $x^{(1)}, x^{(2)}, x^{(3)}, \ldots$ with $x^{(m)} = (x^{(m)}_1, x^{(m)}_2, \ldots)$.
 <1>2. Diagonal construction.

@@ -11,6 +11,10 @@ classification:
   - Absolute Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Show that the following statements are equivalent.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For continuous $f: [0,1] \to \RR$, show (1) $\iff$ (2) $\iff$ (3), where (1) is absolute continuity, (2) is "uniformly, small-measure sets map to small-measure sets", and (3) is "null sets map to null sets".
 
 <1>1. Proof of (1) $\implies$ (2). <2>1. Fix $\eps > 0$.

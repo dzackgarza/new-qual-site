@@ -11,6 +11,10 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Let $f$ be a meromorphic function in the plane such that `\begin{align*} \lim_{|
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f$ be a meromorphic function on $\mathbb{C}$ such that $\lim_{|z|\to\infty} |f(z)| = \infty$.
 Prove that:
 

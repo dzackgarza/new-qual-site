@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Let $0 < \lambda < 1$ and construct a Cantor set $C_\lambda$ by successively rem
 Prove that $m(C_\lambda) = 0$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Construction: $C_\lambda = \bigcap_n C_n$, where $C_0 = [0,1]$ and $C_{n+1}$ is obtained from $C_n$ by removing, from each of its intervals, the middle open subinterval of relative length $\lambda$ (so each interval of length $\ell$ loses a middle piece of length $\lambda\ell$). Proof: "removing middle intervals of length $\lambda$" — relative length $\lambda$ of the current interval; this is the standard fat-Cantor family.
 
 <1>2. Each stage-$n$ interval has length $\ell_n = \left(\frac{1-\lambda}{2}\right)^n$: an interval of length $\ell$ splits into two intervals of length $\frac{1-\lambda}{2}\ell$.

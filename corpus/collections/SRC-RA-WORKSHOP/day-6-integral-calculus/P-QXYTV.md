@@ -13,6 +13,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Prove that $$\lim_{p\to\infty}\left(\int_a^b f(x)^p\,dx\right)^{1/p}=M.$$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Upper bound: $(\int_a^b f^p)^{1/p} \le M\,(b-a)^{1/p}$.
 Proof: $0 \le f \le M$ on $[a,b]$, so $\int_a^b f^p \le M^p (b-a)$, and $(b-a)^{1/p} \to 1$.
 <1>2. Hence $\limsup_{p\to\infty}(\int_a^b f^p)^{1/p} \le M$.

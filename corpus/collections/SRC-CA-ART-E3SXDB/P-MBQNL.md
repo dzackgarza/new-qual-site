@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{\pi}{2}$.
 
 <1>1. Reduce to a full-line integral: $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{1}{2}\, \Im\qty(\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx)$ (principal value).

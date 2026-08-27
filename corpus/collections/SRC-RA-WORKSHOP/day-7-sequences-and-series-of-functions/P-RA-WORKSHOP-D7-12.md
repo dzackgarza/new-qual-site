@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,7 +24,7 @@ Show that there is a sequence of polynomials $\{P_n\}$ such that $x(1-x)P_n(x)$ 
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Given $f \in C[0,1]$ with $f(0) = f(1) = 0$, find polynomials $P_n$ with $x(1-x)P_n(x) \to f(x)$ uniformly on $[0,1]$.
+**Goal:** Given $f \in C[0,1]$ with $f(0) = f(1) = 0$, find polynomials $P_n$ with $x(1-x)P_n(x) \to f(x)$ uniformly on $[0,1]$.
 
 <1>1. The Bernstein polynomials $B_N f$ converge to $f$ uniformly on $[0,1]$.
 Proof: the Weierstrass approximation theorem via Bernstein polynomials: $B_Nf(x) = \sum_{k=0}^N f(k/N)\binom{N}{k}x^k(1-x)^{N-k} \to f(x)$ uniformly.

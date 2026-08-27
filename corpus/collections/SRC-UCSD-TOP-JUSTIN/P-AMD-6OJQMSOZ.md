@@ -11,6 +11,10 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Prove that for any $f: S^2 \to \mathbb{R}^2$, there exists $x\in S^2$ such that 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove the Borsuk-Ulam theorem in dimension 2: for every continuous map $f \colon S^2 \to \mathbb{R}^2$, there exists a point $x \in S^2$ such that $f(x) = f(-x)$.
 
 <1>1. Reduce to showing there is no odd continuous map $g \colon S^2 \to S^1$.

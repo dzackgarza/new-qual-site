@@ -13,6 +13,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Decide the truth of (b) and (c).
 
 <1>1. (b) is false.

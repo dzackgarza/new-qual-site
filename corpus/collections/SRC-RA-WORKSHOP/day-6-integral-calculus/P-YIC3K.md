@@ -12,6 +12,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 Let $f$ be a continuous real-valued function on $[0,1]$.
@@ -45,8 +49,6 @@ Therefore, we have that there exists $\xi\in[0,1]$ such that $\int_0^1 x^4 f(x)d
 ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Let $m = \min_{[0,1]} f$ and $M = \max_{[0,1]} f$.
 Proof: $f$ is continuous on the compact set $[0,1]$, so it attains its extrema.
 <1>2. $m/5 \le \int_0^1 x^4 f(x)\,dx \le M/5$.

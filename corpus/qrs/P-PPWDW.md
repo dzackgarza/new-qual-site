@@ -11,6 +11,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Find a conformal map from the strip $\theset{z\in \CC \suchthat 0 < \Im(z) < 1}$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Find a conformal (biholomorphic) map from the strip $S = \theset{z \suchthat 0 < \Im z < 1}$ onto the upper half-plane $\HH$.
 
 <1>1. $e^{\pi z}$ maps $S$ onto $\HH$.

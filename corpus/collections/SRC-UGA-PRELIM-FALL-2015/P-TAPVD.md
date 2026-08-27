@@ -12,6 +12,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -80,8 +84,6 @@ $$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f: \mathbb{R}^2 \to \mathbb{R}$ be a function whose first-order partial derivatives $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ exist and are continuous in a neighborhood of a point $\mathbf{p} = (x_0, y_0)$. Prove that the directional derivative $D_{\mathbf{u}} f(\mathbf{p})$ exists in any unit direction $\mathbf{u} = (u_1, u_2)$ and satisfies $D_{\mathbf{u}} f(\mathbf{p}) = \nabla f(\mathbf{p}) \cdot \mathbf{u}$.
 
 <1>1. Definition of directional derivative: For a unit vector $\mathbf{u} = (u_1, u_2) \in \mathbb{R}^2$,

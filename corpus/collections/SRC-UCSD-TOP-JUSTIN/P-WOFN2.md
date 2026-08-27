@@ -12,6 +12,10 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Compute the homology groups of $X$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $U_1 = S^1 \times B^2$ and $U_2 = S^1 \times B^2$ be two solid tori, glued along their boundaries $\partial(S^1 \times B^2) = S^1 \times S^1 = T^2$ via the identity map $\operatorname{id}_{\partial}$.
 Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting closed 3-manifold $M = S^1 \times S^2$.
 

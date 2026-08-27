@@ -12,6 +12,10 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Find the radius of convergences for the power series expansion of $\sqrt{z}$ abo
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $f(z)$ be a branch of $\sqrt{z}$ defined and holomorphic in a neighborhood of $z_0 = 4 + 3i$ (for example, the principal branch).
 
 1. **Distance to the nearest singularity:** The function $\sqrt{z} = \exp\left(\frac{1}{2} \log z\right)$ has a branch point (algebraic singularity) at $z = 0$.

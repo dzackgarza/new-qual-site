@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $\abs{z} < 1$ and $1 < \ab
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $|z| < 1$ and in $1 < |z| < 2$ respectively.
 
 <1>1. $p$ has exactly 4 roots in $|z| < 2$.

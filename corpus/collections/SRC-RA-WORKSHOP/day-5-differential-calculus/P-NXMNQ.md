@@ -12,6 +12,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Suppose that $f:\mathbb{R}\to\mathbb{R}$ satisfies $f(0)=0$.
 Prove that $f$ is differentiable at $x=0$ if and only if there is a function $g:\mathbb{R}\to\mathbb{R}$ which is continuous at $x=0$ and satisfies $f(x)=xg(x)$ for all $x\in\mathbb{R}$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. ($\Leftarrow$) If $f(x) = xg(x)$ with $g$ continuous at $0$, then $f$ is differentiable at $0$ with $f'(0) = g(0)$.
 Proof: $\frac{f(x) - f(0)}{x - 0} = \frac{xg(x)}{x} = g(x) \to g(0)$ as $x \to 0$ (continuity of $g$ at $0$; also $f(0) = 0\cdot g(0) = 0$).
 

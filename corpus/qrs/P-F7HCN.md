@@ -12,6 +12,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ c. $\sum_n {z^n \over n}$ converges at every point of $S^1$ except $z=1$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove: (a) $\sum_{n} nz^n$ does not converge at any point of $S^1$; (b) $\sum_n z^n/n^2$ converges at every point of $S^1$; (c) $\sum_n z^n/n$ converges at every point of $S^1$ except $z = 1$.
 
 <1>1. Part (a): for $\abs z = 1$, the terms do not tend to $0$.

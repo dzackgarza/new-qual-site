@@ -12,6 +12,10 @@ classification:
   - Classification
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Classify the standard sans-serif capital English alphabet letters $\mathcal{A} = \{\text{A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z}\}$ viewed as 1-dimensional CW complexes (graphs) embedded in the plane, up to:
 1. Homotopy equivalence ($\simeq$),
 2. Homeomorphism ($\cong$).

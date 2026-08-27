@@ -12,6 +12,10 @@ classification:
   - Completeness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -22,8 +26,6 @@ Can anything be said about $A$ if $k\ge1$?
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Case $k < 1$: $A$ is a singleton.
 Proof: $A \subseteq F(A)$ gives $\mathrm{diam}(A) \le \mathrm{diam}(F(A))$ (a subset has no larger diameter).
 Since $F$ is $k$-Lipschitz with $k < 1$, $\mathrm{diam}(F(A)) \le k\,\mathrm{diam}(A)$.

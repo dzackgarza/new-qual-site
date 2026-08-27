@@ -12,6 +12,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that every prime ideal is primary.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a commutative ring with identity $1 \neq 0$, and let $\mathfrak{p} \subsetneq R$ be a prime ideal.
 Prove that $\mathfrak{p}$ is a primary ideal.
 

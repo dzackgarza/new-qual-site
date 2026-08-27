@@ -13,6 +13,10 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Find a sharp upper bound for $\abs{f'(0)}$, and prove it is sharp by example.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Suppose $f: \DD \to \HH$ is analytic with $f(0) = 2$, where $\HH$ is the upper half-plane.
 Find a sharp upper bound for $|f'(0)|$ and prove sharpness by example.
 

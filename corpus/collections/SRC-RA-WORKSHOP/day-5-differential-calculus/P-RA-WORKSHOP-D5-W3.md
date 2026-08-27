@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f'$ keeps the sign of $f'(x_0)$ in a neighborhood.
 Proof: assume $f'(x_0) > 0$ (the case $< 0$ is symmetric).
 Since $f'$ is continuous at $x_0$, there is $\delta > 0$ with $f'(x) > f'(x_0)/2 > 0$ for all $x \in (c, d) := (x_0 - \delta, x_0 + \delta) \subseteq (a,b)$.

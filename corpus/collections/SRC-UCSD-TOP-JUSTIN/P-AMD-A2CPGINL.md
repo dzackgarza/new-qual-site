@@ -12,6 +12,10 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -23,8 +27,6 @@ Show that $\pi_1(K)$, the Klein bottle, is given by pairs $(m,n)$ where $(m,n)\s
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that the fundamental group of the Klein bottle $\pi_1(K)$ is isomorphic to the semidirect product $G = \mathbb{Z} \rtimes \mathbb{Z}$ whose underlying set is $\mathbb{Z} \times \mathbb{Z}$ with group operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
 Prove that:
 

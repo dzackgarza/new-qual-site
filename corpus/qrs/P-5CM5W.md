@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ is a non-negative measurable function and
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. For measurable $E$ and $h \in \RR^n$: $E + h$ is measurable and $m(E + h) = m(E)$.
     <2>1. Translation preserves outer measure: $m^*(A + h) = m^*(A)$ for every set $A$.
         Proof: the family of boxes covering $A$ is in bijection (by translation) with the family covering $A + h$, with identical total volumes; taking infima gives equality.

@@ -13,6 +13,10 @@ classification:
   - Riemann Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Find all functions on the Riemann sphere that have a simple pole at $z=2$ and a 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Find all functions on the Riemann sphere $\widehat{\CC}$ that have a simple pole at $z = 2$ and a double pole at $z = \infty$, and are analytic elsewhere.
 
 <1>1. A function meromorphic on the sphere with poles only at $2$ and $\infty$ is a rational function with those poles.

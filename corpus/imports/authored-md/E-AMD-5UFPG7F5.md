@@ -12,6 +12,10 @@ classification:
   - Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $I\normal R$ is maximal iff $R/I$ is a field.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $R$ be a commutative ring with identity $1 \neq 0$, and let $I \trianglelefteq R$ be a proper ideal.
 Prove that $I$ is a maximal ideal of $R$ if and only if the quotient ring $R/I$ is a field.
 

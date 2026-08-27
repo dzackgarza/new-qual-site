@@ -12,6 +12,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $A_1 = \{(x,y) \in \mathbb{R}^2 : x + y < 3\}$ is open, not closed, not compact.
 <2>1. Open: the map $(x,y) \mapsto x+y$ is continuous and $A_1 = (x+y)^{-1}((-\infty, 3))$ is the preimage of the open set $(-\infty,3)$.
 <2>2. Not closed: the sequence $(3 - 1/n, 0) \in A_1$ converges to $(3,0) \notin A_1$.

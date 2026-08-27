@@ -12,6 +12,10 @@ classification:
   - Group Actions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that the stabilizer of an element $G_x$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let a group $G$ act on a set $X$, and let $x \in X$.
 The stabilizer of $x$ is defined as:
 $$

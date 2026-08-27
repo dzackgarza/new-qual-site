@@ -12,6 +12,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Setup:** the card mixes $E$ and $X$; the intended statement is: if $(E, \mu)$ is a finite-measure space and $f$ is measurable with $\|f\|_p < \infty$ for all large $p$, then $\|f\|_{L^p(E)} \to \|f\|_{L^\infty(E)}$ as $p \to \infty$.
 
 <1>1. Upper bound: $\limsup_{p \to \infty}\|f\|_p \le \|f\|_\infty$.

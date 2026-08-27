@@ -11,6 +11,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Let $a_n =\sqrt{n}\left(\sqrt{n+1}-\sqrt{n}\right)$.
 Prove that $\lim_{n\to\infty}a_n=1/2$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $a_n = \sqrt{n}(\sqrt{n+1} - \sqrt{n}) = \sqrt{n}\cdot\frac{(n+1) - n}{\sqrt{n+1} + \sqrt{n}} = \frac{\sqrt{n}}{\sqrt{n+1} + \sqrt{n}}$.
 Proof: rationalize: $\sqrt{n+1} - \sqrt{n} = \frac{(n+1)-n}{\sqrt{n+1}+\sqrt{n}}$.
 

@@ -12,6 +12,10 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that a nilpotent operator is diagonalizable if and only if it is the zero o
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $V$ be a finite-dimensional vector space over a field $F$, and let $T: V \to V$ be a linear operator.
 Suppose $T$ is nilpotent, i.e., $T^k = 0$ for some positive integer $k \ge 1$.
 Prove that $T$ is diagonalizable if and only if $T = 0$.

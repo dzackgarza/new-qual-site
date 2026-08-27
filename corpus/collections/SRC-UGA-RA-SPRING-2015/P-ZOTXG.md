@@ -13,6 +13,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 \]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Part 1) $f \ast g$ is well-defined and bounded.
     Proof: $g$ bounded, $|g| \le M$ a.e., and $f \in L^1$; by Tonelli/Fubini the convolution $(f\ast g)(x) = \int f(y)g(x-y)\,dy$ converges absolutely for every $x$ with
     \[

@@ -11,6 +11,10 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 Consider the function $f(x) = \frac{x}{1-x^2}$,
@@ -75,8 +79,6 @@ $f(x_n) - f(x_{n+1}) | \not < \epsilon$. Therefore $f(x)$ is not
 uniformly continuous. ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Part 1) $f$ is continuous on $(0,1)$.
     Proof: $f = p/q$ where $p(x) = x$ and $q(x) = 1 - x^2$ are continuous and $q(x) \ne 0$ on $(0,1)$; a quotient of continuous functions with nonzero denominator is continuous. (The card asks for an $\eps$--$\delta$ proof: for fixed $x_0 \in (0,1)$, $q$ is bounded away from $0$ near $x_0$ and the numerator is bounded, and
     \[

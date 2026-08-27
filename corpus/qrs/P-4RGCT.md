@@ -12,6 +12,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ is a polynomial of degree $n$, then it has $n$ zeros in $\mathbb{C}$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Apply Rouch\'e's theorem to prove the Fundamental Theorem of Algebra: a polynomial $P_n(z) = a_0 + a_1 z + \cdots + a_{n-1}z^{n-1} + a_n z^n$ with $a_n \ne 0$ has exactly $n$ zeros in $\CC$ counting multiplicity.
 
 <1>1. Setup: compare $P_n$ with its leading term $a_n z^n$ on a large circle.

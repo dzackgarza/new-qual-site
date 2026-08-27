@@ -11,6 +11,10 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ If the series $\sum_{n=0}^\infty a_n$ converges conditionally, show that the rad
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $a_n \to 0$.
 Proof: $\sum_{n\ge 0} a_n$ converges, so its terms tend to $0$.
 Hence $(a_n)$ is bounded: $|a_n| \le C$ for all $n$.

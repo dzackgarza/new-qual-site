@@ -11,6 +11,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A uniform limit of bounded functions is bounded.
 <2>1. Choose $N$ with $\|f - f_N\|_\infty \le 1$.
 Proof: definition of uniform convergence with $\eps = 1$.

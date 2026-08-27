@@ -11,6 +11,10 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Prove that $A^3=A$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $A \in M_3(\mathbb{R})$ be a $3 \times 3$ matrix with eigenvalues $-1, 0, 1$.
 Prove that $A^3 = A$.
 

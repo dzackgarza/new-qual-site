@@ -11,6 +11,10 @@ classification:
   - Mean Value Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 1.  
@@ -54,8 +58,6 @@ $N\in \mathbb{N}$ sufficiently large so that $|f(x_1)| < \epsilon$.
 Otherwise, we set $\delta_1< \frac{1}{k}$ so that $kx_1< 1$. ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f$ is continuous on $[0,1]$, so $M = \max_{[0,1]}|f|$ is finite; and $|f'(x)| \le k|f(x)| \le kM$ on $[0,1]$.
     Proof: differentiable implies continuous; Extreme Value Theorem; the hypothesis bounds $f'$ pointwise by $k|f|$.
 

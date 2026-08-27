@@ -11,6 +11,10 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The case $U = \RR^n$ is immediate: the unit cubes $\prod_{i=1}^n [m_i, m_i+1]$ ($m_i \in \ZZ$) are closed, countable, cover $\RR^n$, and have pairwise disjoint interiors (almost disjoint).
 Henceforth assume $U \neq \RR^n$.
 

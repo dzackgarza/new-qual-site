@@ -12,6 +12,10 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ $\int_0^\infty \frac{x^2~dx}{(x^2+1)(x^2+4)}$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the improper real integral $I = \int_0^\infty \frac{x^2}{(x^2+1)(x^2+4)} \, dx$ using contour integration and residues.
 
 * * *

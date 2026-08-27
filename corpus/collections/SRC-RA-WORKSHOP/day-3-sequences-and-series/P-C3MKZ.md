@@ -11,14 +11,16 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
 Determine the values of $x\in\mathbb{R}$ for which $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+n|x|^n}$ converges, justifying your answer carefully.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. For $|x| < 1$: the series converges absolutely.
 Proof: $\left|\dfrac{x^n}{1 + n|x|^n}\right| \le |x|^n$ (denominator $\ge 1$), and $\sum |x|^n$ is a convergent geometric series.
 

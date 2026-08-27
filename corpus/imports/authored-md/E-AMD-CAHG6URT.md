@@ -12,6 +12,10 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that $\Aut(S_3) = \Inn(S_3) \cong S_3$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that the automorphism group of the symmetric group $S_3$ satisfies $\operatorname{Aut}(S_3) = \operatorname{Inn}(S_3) \cong S_3$.
 
 <1>1. Preliminaries on $S_3$ and its inner automorphisms: <2>1. $S_3$ is the symmetric group on 3 elements, with $|S_3| = 3! = 6$.

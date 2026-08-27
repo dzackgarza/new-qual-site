@@ -12,6 +12,10 @@ classification:
   - Characteristic
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $F$ be a field with $\operatorname{char}(F) \neq 2$, and let $K/F$ be a field extension of degree $[K : F] = 2$.
 Prove that $K/F$ is a Galois extension.
 

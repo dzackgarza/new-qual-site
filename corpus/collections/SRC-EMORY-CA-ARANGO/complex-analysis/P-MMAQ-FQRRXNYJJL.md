@@ -11,6 +11,10 @@ classification:
   - Entire Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Show that $f$ is a polynomial of degree $\leq 2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f(z)| \leq A |z|^2$ for all $z \in \mathbb{C}$ and some constant $A \geq 0$.
 Prove that $f(z) = c_2 z^2$ for some constant $c_2 \in \mathbb{C}$ (in particular, a polynomial of degree $\leq 2$ with $f(0) = f'(0) = 0$).
 

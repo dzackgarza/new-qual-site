@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove or disprove the two statements:
 (f) Whether the finite-interval covering infimum $\mu(E)$ coincides with the Lebesgue outer measure $m^*(E)$ for all $E \subset \RR$;
 (g) Whether $f^{-1}(E)$ is measurable whenever $E \subset \RR$ is Borel and $f: \RR \to \RR$ is (Lebesgue) measurable.

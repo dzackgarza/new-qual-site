@@ -12,6 +12,10 @@ classification:
   - Roots of Unity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Identify all of the elements of the Galois group of $x^p-2$ for $p$ an odd prime
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p$ be an odd prime.
 Determine the Galois group $G = \operatorname{Gal}(K/\mathbb{Q})$ of the polynomial $f(x) = x^p - 2 \in \mathbb{Q}[x]$ over $\mathbb{Q}$, explicit actions of its elements, and its group structure / presentation.
 

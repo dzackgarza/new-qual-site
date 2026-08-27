@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ $$
 and characterize the collection of functions of each type.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Honesty note:** the card states no hypothesis on the sign of $f$; for signed $f$ and odd $n$, $\int f^n$ need not be defined.
 The standard statement (proved here) is for $f \ge 0$: $\lim_n \int f^n = \infty$ if $\mu\{f > 1\} > 0$, and $= \mu\{f = 1\}$ otherwise.
 

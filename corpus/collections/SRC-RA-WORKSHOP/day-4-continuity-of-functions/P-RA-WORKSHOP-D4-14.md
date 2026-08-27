@@ -12,6 +12,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-4
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Prove Theorem 3.4.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Set up a sup.
 Proof: assume $f(a) < f(b)$ and fix $x$ with $f(a) < x < f(b)$.
 Let $E = \{t \in [a,b] : f(t) \le x\}$; then $a \in E$ (so $E \ne \varnothing$) and $E$ is bounded above by $b$.

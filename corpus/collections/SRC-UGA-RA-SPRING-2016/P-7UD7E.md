@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ $$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\phi$ and $\psi$ are Borel measurable functions of $\lambda \in (0, \infty)$.
 Proof: $\lambda \mapsto \mu\{f > \lambda\}$ is decreasing (if $\lambda_1 < \lambda_2$ then $\{f > \lambda_1\} \supseteq \{f > \lambda_2\}$); decreasing (indeed monotone) functions are Borel measurable; likewise $\psi$ is decreasing.
 

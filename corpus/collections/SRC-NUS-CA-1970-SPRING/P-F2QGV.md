@@ -10,6 +10,10 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Find an analytic isomorphism (biholomorphism) from the vertical strip $\Omega = \{z = x+iy \in \mathbb{C} : 1 < x < 3\}$ to the upper half unit disk $\mathbb{D}^+ = \{w \in \mathbb{C} : |w| < 1 \text{ and } \text{Im}(w) > 0\}$.
 
 * * *

@@ -10,6 +10,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -17,8 +21,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Simplify the difference.
 Proof: $\frac{x-1}{x} - 1 = \frac{x-1-x}{x} = -\frac{1}{x}$, so $\left|\frac{x-1}{x} - 1\right| = \frac{1}{|x|}$ for $x \ne 0$.
 <1>2. $\epsilon$-$M$ argument for $x \to -\infty$.

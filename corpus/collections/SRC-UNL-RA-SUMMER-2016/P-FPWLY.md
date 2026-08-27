@@ -11,6 +11,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 Suppose that $f \colon [0,2] \to \mathbb{R}$ is continuous on $[0,2]$ , differentiable on $(0,2)$, and such that $f(0) = f(2) = 0$, $f(c) = 1$ for some $c \in (0,2)$.
@@ -33,8 +37,6 @@ However, notice that since $f(x)$ is differentiable at $x=1$ we cannot have $f(x
 ◻
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Setup: $f$ continuous on $[0,2]$, differentiable on $(0,2)$, $f(0) = f(2) = 0$, and $f(c) = 1$ for some $c \in (0,2)$.
 (The card already contains a complete case-analysis proof; this solution restates it in structured form.)
 Proof: given.

@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Verify the remark following the definition of normed space: Every normed space $
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Every normed space is a metric space via $d(x,y) = \lVert x-y\rVert$.
 <2>1. Non-negativity and separation: $\lVert x-y\rVert \ge 0$ with equality iff $x = y$ (norm axioms), so $d(x,y) \ge 0$ and $d(x,y) = 0$ iff $x = y$.
 <2>2. Symmetry: $d(x,y) = \lVert x-y\rVert = \lVert -(y-x)\rVert = \lVert y-x\rVert = d(y,x)$ (homogeneity with $\lambda = -1$). <2>3. Triangle inequality: $d(x,z) = \lVert x-z\rVert = \lVert (x-y) + (y-z)\rVert \le \lVert x-y\rVert + \lVert y-z\rVert = d(x,y) + d(y,z)$.

@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d 
 \]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Setup.** $1 \le p, q \le \infty$ are conjugate: $1/p + 1/q = 1$ (with the usual convention for $p = 1, \infty$). All functions are on $\RR^n$ with Lebesgue measure.
 
 <1>1. For every $g$ with $\|g\|_q = 1$: $\left|\int f g\right| \le \|f\|_p$.

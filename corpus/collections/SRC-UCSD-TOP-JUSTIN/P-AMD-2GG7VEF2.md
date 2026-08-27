@@ -11,6 +11,10 @@ classification:
   - van Kampen
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Show $\pi_1(S^n) = 1$ for $n\geq 2$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that for all integers $n \geq 2$, the fundamental group $\pi_1(S^n, x_0)$ is trivial.
 
 <1>1. Cover $S^n$ by two open subsets $U$ and $V$.

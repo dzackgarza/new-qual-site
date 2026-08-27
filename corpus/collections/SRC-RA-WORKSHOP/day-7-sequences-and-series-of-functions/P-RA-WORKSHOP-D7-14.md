@@ -12,6 +12,10 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,7 +24,7 @@ Show that $$\lim_{n\to\infty}f_n(x_n)=f(x).$$
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** Show $f_n(x_n) \to f(x)$ given $f_n \to f$ uniformly on $[0,1]$, $f_n$ continuous, $x_n \to x$ in $[0,1]$.
+**Goal:** Show $f_n(x_n) \to f(x)$ given $f_n \to f$ uniformly on $[0,1]$, $f_n$ continuous, $x_n \to x$ in $[0,1]$.
 
 <1>1. $|f_n(x_n) - f(x)| \le |f_n(x_n) - f(x_n)| + |f(x_n) - f(x)|$.
 Proof: triangle inequality.

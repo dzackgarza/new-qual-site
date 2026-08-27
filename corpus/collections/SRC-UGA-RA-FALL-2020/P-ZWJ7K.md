@@ -12,6 +12,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -32,8 +36,6 @@ is Borel measurable.
 > Note that $\mathcal{F}$ need not be a countable family.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. ($\Leftarrow$) If $\{f > a\}$ is open for all $a$, then $f(x) \le \liminf_{y\to x} f(y)$ for all $x$.
 Proof: fix $x$ and $a < f(x)$.
 Then $x \in \{f > a\}$, which is open, so any sequence $y_n \to x$ lies in $\{f > a\}$ eventually, i.e. $f(y_n) > a$ for all large $n$; hence $\liminf_{y\to x}f(y) \ge a$.

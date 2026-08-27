@@ -11,6 +11,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Prove that if $fg = 0$ on $D$, then either $f \equiv 0$ or $g\equiv 0$ on $D$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that if $f, g$ are analytic on a domain $D$ and $fg \equiv 0$ on $D$, then either $f \equiv 0$ or $g \equiv 0$ on $D$.
 
 <1>1. Assume $f \not\equiv 0$; it suffices to show $g \equiv 0$.

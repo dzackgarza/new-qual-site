@@ -12,6 +12,10 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -21,8 +25,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) If $\phi$ decays like $|\phi(x)| \leq c(1+|x|)^{-n-\eps}$ with $c, \eps > 0$, then $f \ast \phi_t \to f$ almost everywhere as $t \to 0$ for $f \in L^1$; (2) if $f$ is bounded and uniformly continuous and $\phi_t$ is an approximation to the identity, then $f \ast \phi_t \to f$ uniformly.
 
 <1>1. Setup: $\phi_t(x) := t^{-n} \phi(x/t)$, $\int \phi = 1$; $\phi$ satisfies the pointwise decay bound $|\phi(x)| \leq c(1+|x|)^{-n-\eps}$.

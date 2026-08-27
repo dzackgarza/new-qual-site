@@ -10,6 +10,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -27,8 +31,8 @@ The source page literally says “the power series series” in its opening sent
 :::
 
 :::: {.solution}
-> **AI-Generated Solution** **Goal:** (a) If $\sum a_nx^n$ and $\sum b_nx^n$ have radii $R_1, R_2$ with $R_1 \neq R_2$, show $\sum(a_n+b_n)x^n$ has radius $\min\{R_1, R_2\}$; discuss $R_1 = R_2$.
-> (b) Show $\sum a_nb_nx^n$ has radius $R \ge R_1R_2$, with a strict example.
+**Goal:** (a) If $\sum a_nx^n$ and $\sum b_nx^n$ have radii $R_1, R_2$ with $R_1 \neq R_2$, show $\sum(a_n+b_n)x^n$ has radius $\min\{R_1, R_2\}$; discuss $R_1 = R_2$.
+(b) Show $\sum a_nb_nx^n$ has radius $R \ge R_1R_2$, with a strict example.
 
 <1>1. (a) $R_1 \neq R_2$: the radius of $\sum(a_n+b_n)x^n$ is $\min\{R_1, R_2\}$.
 <2>1. Say $R_1 < R_2$.

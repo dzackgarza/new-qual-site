@@ -12,6 +12,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 :::{.problem}
@@ -21,7 +25,6 @@ $$(i)\quad x_n=\frac{2n\cdot n!}{n^n};\qquad
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
 **Goal:** Determine convergence of (i) $x_n = \frac{2n\cdot n!}{n^n}$ and (ii) $y_n = \sum_{k=1}^n \frac{\cos(k!)}{k(k+1)}$.
 
 <1>1. (i) $x_n \to 0$.

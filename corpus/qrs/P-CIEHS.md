@@ -13,6 +13,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Give with proof a formula for $f(z)$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Suppose $f: \DD \to \DD$ is analytic, has a single zero of order $k$ at $z = 0$, and satisfies $\lim_{|z| \to 1}|f(z)| = 1$.
 Give, with proof, a formula for $f(z)$.
 

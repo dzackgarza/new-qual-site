@@ -11,6 +11,10 @@ classification:
   - Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $G$ be a finite group, and let $H, K \le G$ be subgroups.
 Prove directly via fibers of the product map (without using normalizers) that $|HK| = \frac{|H| \cdot |K|}{|H \cap K|}$, where $HK = \{h k \mid h \in H, k \in K\}$.
 

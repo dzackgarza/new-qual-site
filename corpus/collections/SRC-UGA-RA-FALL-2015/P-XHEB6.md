@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -23,8 +27,6 @@ f(x)=c_{0}+c_{1} x^{1}+c_{2} x^{2}+\ldots+c_{n} x^{n} \text { with } n \text { e
 Show that there is a number $x_m$ such that $f(x_m) \leq f(x)$ for all $x\in \RR$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $f(x) \to +\infty$ as $|x| \to \infty$.
 Proof: $f(x) = x^n\big(c_n + c_{n-1}x^{-1} + \cdots + c_0 x^{-n}\big)$, and the bracket tends to $c_n > 0$ as $|x|\to\infty$; hence $f(x) \sim c_n x^n \to +\infty$ ($n$ even, so $x^n \to +\infty$ on both sides).
 <1>2. Choose $R$ with $f(x) > f(0)$ whenever $|x| > R$.

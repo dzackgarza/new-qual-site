@@ -12,6 +12,10 @@ classification:
   - Singularities
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Find all entire functions with have poles at $\infty$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Find all entire functions $f$ such that $f$ has a pole at $\infty$.
 
 <1>1. A pole at $\infty$ means $g(w) \definedas f(1/w)$ has a pole at $w = 0$.

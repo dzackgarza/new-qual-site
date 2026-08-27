@@ -13,6 +13,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ that the series $\sum_{k=1}^\infty d(x_k, x_{k+1})$ converges.
 Prove that the sequence $\{x_k\}_{k=1}^\infty$ converges in $X$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Part 1a: completeness.**
 
 <1>1. Every sequence in $X$ has a convergent subsequence.

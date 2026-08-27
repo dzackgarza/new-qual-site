@@ -10,6 +10,10 @@ classification:
   - Convergence of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $\limsup_{n \to \infty} a_n \leq l$, show $\limsup_{n \to \infty} \frac{1}{n}\sum_{i=1}^n a_i \leq l$ (the Cesàro means do not increase the limsup).
 
 <1>1. Reduction to the case $l \in \RR$; the cases $l = \pm\infty$ are handled at the end.

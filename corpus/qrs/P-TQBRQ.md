@@ -11,6 +11,10 @@ classification:
   - Schwarz Reflection
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Prove that if $\abs{z} = 1 \implies \abs{f(z)} = 1$, then $f$ is constant.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f$ is continuous and nonvanishing on $\bar\DD$, holomorphic in $\DD$, and $\abs{f(z)} = 1$ for $\abs{z} = 1$, prove $f$ is constant.
 
 <1>1. $\abs{f(z)} \leq 1$ for $z \in \DD$.

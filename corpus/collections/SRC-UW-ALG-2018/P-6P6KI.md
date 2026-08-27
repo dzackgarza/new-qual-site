@@ -11,6 +11,10 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Prove or disprove the following assertion: $\pi_0$ and $\pi_1$ are equivalent if
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 The assertion is **FALSE**.
 
 **Counterexample:** Consider the cyclic group $G = \ZZ_3 = \langle x \mid x^3 = 1 \rangle$.

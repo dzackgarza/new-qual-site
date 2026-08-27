@@ -11,6 +11,10 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that a holomorphic function $f$ on a connected open set $\Omega$ with $f' \equiv 0$ is constant.
 
 <1>1. $\Omega$ is polygonally connected: any two points of $\Omega$ can be joined by a polygonal path inside $\Omega$.

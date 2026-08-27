@@ -12,6 +12,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Show that $f(z) = e^{i \theta} g(z)$ in $\Omega$ for some $0 \leq \theta < 2 \pi
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that if $f, g$ are nonzero analytic functions on a region $\Omega$ with $\abs{f(z)} = \abs{g(z)}$ for all $z \in \Omega$, then $f(z) = e^{i\theta} g(z)$ for some $0 \leq \theta < 2\pi$.
 
 <1>1. Define $h := f / g$; then $h$ is analytic and never vanishes on $\Omega$.

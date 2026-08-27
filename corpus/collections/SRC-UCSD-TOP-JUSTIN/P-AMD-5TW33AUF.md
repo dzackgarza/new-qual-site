@@ -10,6 +10,10 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -17,8 +21,6 @@ Let $p(x) = \sum_i^na_ix^i$, view $p: \CC \union \infty \selfmap$ and determine 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $p(z) = \sum_{j=0}^n a_j z^j$ with $a_n \neq 0$ and $n \ge 1$ be a polynomial with complex coefficients.
 Extend $p$ to a continuous map on the Riemann sphere $\widehat{\mathbb{C}} = \mathbb{C} \cup \{\infty\} \cong S^2$ by setting $p(\infty) = \infty$.
 Determine the topological degree $\deg(p)$.

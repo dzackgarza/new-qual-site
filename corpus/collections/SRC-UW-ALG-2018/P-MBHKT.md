@@ -12,6 +12,10 @@ classification:
   - Semidirect Products
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Classify all groups of order 18 up to isomorphism.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $G$ be a group of order $18 = 2 \cdot 3^2$.
 By Sylow's theorem:
 

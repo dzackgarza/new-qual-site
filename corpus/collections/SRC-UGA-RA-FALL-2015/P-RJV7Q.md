@@ -11,6 +11,10 @@ classification:
   - Density
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Let $f: \RR \to \RR$ be Lebesgue measurable.
 2. Show that there is a Borel measurable function $g$ such that $g = f$ almost everywhere.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Part 1) Reduce to non-negative functions.
 Proof: write $f = f^+ - f^-$; if $s_n^+ \to f^+$ and $s_n^- \to f^-$ pointwise with simple $s_n^\pm$, then $s_n = s_n^+ - s_n^-$ is simple and $s_n \to f$ pointwise.
 <1>2. Construct simple approximations of a non-negative measurable $g$.

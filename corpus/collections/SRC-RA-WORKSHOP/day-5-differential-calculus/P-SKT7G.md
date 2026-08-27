@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Prove that $b=0$.
 Then, find a counterexample to show that the assumption $\lim_{x\to\infty}f'(x)$ exists is necessary.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $b = 0$.
 Proof: by the mean value theorem applied to $f$ on $[x, x+1]$, for each $x$ there is $\xi_x \in (x, x+1)$ with \[ f(x+1) - f(x) = f'(\xi_x) . \] As $x \to \infty$, the left side tends to $a - a = 0$ (both $f(x+1)$ and $f(x)$ tend to $a$). Also $\xi_x \to \infty$, so $f'(\xi_x) \to b$ (since $\lim_{x\to\infty} f'(x) = b$). Hence $b = 0$.
 <1>2. The assumption that $\lim_{x\to\infty} f'(x)$ exists is necessary.

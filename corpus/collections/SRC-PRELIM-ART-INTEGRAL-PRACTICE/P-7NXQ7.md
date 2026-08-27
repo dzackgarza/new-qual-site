@@ -12,6 +12,10 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the definite integral $\int_{1}^{2} \frac{1}{x\sqrt{x^2 -1}} \, dx$.
 
 <1>1. The antiderivative of $\frac{1}{x\sqrt{x^2-1}}$ for $x > 1$ is $\operatorname{arcsec}(x) + C = \arccos(1/x) + C$.

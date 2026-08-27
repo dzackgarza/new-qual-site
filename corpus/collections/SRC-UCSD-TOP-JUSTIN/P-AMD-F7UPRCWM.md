@@ -11,6 +11,10 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Show that $S^2 \not\cong S^3$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Prove that the 2-sphere $S^2$ is not homeomorphic to the 3-sphere $S^3$ ($S^2 \not\cong S^3$).
 
 <1>1. Compute the homology groups of $S^2$ and $S^3$.

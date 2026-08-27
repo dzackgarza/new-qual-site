@@ -11,6 +11,10 @@ classification:
   - Contour Integration
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ A,          &     \text{if\ $z \in \Omega_1$}, \\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$; assume $f'$ exists on an open set containing $\gamma \cup \Omega_2$ and $\lim_{z\to\infty} f(z) = A$. Show $\frac{1}{2\pi i}\int_\gamma \frac{f(\xi)}{\xi - z}\, d\xi = A$ for $z \in \Omega_1$ and $= -f(z) + A$ for $z \in \Omega_2$.
 
 <1>1. Fix $z$ and $R$ large enough that $\gamma \subseteq \overline{D_R(0)}$ and $\abs{z} < R$; let $\Gamma_R = \theset{\abs{\xi} = R}$ oriented counterclockwise, and consider the region $\Omega_2 \cap D_R(0)$ whose positively oriented boundary is $\Gamma_R$ together with $\gamma$ traversed clockwise.

@@ -10,6 +10,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $f \in L^1([0,1])$: (1) show $\lim_{p \to 0^+} \norm{f}_p$ exists; (2) if $m\{x : f(x) = 0\} > 0$, then the limit is $0$.
 
 <1>1. Preparatory bounds.

@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Context:** part (a) refers to the identity $\int \hat f\,g = \int f\,\hat g$ from the parent problem (valid for $f, g \in L^1$ by Fubini).
 It asks what goes wrong when $g$ is not bounded.
 

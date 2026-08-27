@@ -11,6 +11,10 @@ classification:
   - Sequences of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Prove that there is a subsequence $\{a_{n_k}\}$ of $\{a_n\}$ such that $\sum_{k=
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Extract a rapidly decaying subsequence.
 Proof: since $|a_n| \to 0$, for each $k \ge 1$ we may choose an index $n_k$ with $n_1 < n_2 < \cdots$ and $|a_{n_k}| \le 2^{-k}$ (indeed $|a_n| < 2^{-k}$ for all sufficiently large $n$, so pick any $n_k$ larger than $n_{k-1}$ with this property).
 <1>2. The subseries converges absolutely.

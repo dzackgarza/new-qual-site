@@ -12,6 +12,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ $\liminf_{n \to \infty} f(x_n) \geq f(x)$ whenever
 $\{x_n\}_{n=1}^\infty \subseteq X$ such that $x_n \to x$ in $X$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Continuous $\Rightarrow$ l.s.c. and u.s.c.
     Proof: if $f$ is continuous, then $f^{-1}(a,\infty)$ and $f^{-1}(-\infty,b)$ are preimages of open sets, hence open.
 <1>2. l.s.c. and u.s.c. $\Rightarrow$ continuous.

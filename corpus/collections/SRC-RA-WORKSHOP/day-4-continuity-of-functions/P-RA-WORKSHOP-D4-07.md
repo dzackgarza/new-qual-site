@@ -13,6 +13,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-2
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reduce to the one-dimensional extreme value theorem.
 Proof: let $f: K \to \mathbb{R}$ be continuous with $K \subseteq \mathbb{R}$ compact.
 We show $f$ attains a maximum; the minimum follows by applying the result to $-f$.

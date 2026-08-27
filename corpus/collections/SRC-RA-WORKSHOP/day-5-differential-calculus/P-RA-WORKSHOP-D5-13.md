@@ -12,6 +12,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D5-4-1
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Prove Theorem 4.1.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Suppose $f$ has a local maximum at $c \in (a,b)$ and $f'(c)$ exists.
 Proof: by definition of local maximum, there is $\delta > 0$ with $f(x) \le f(c)$ for all $x \in (c-\delta, c+\delta) \subseteq (a,b)$.
 <1>2. The left-hand derivative is $\ge 0$.

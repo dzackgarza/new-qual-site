@@ -14,6 +14,10 @@ classification:
   - Normal Families
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Suppose $(f_n)$ is a sequence of entire functions with $f_n \to g$ pointwise, and $f_n \to g$ uniformly on every line segment in $\CC$.
 Show that $g$ is entire and $f_n \to g$ uniformly on every compact subset of $\CC$.
 

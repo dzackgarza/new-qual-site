@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Then for Lebesgue almost every $x\in\mathbb{R}$, $$\lim_{\epsilon\to 0} \frac{\m
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Decompose $\mu$ relative to the measure $\lambda = \mu + m$.
 Proof: both $\mu$ and Lebesgue measure $m$ are absolutely continuous with respect to $\lambda$, and $\mu \ll \lambda$ with density $g = d\mu/d\lambda$, $0 \le g \le 1$.
 Since $\mu \perp m$, there is a Borel set $A$ with $m(A) = 0$ and $\mu(A^c) = 0$.

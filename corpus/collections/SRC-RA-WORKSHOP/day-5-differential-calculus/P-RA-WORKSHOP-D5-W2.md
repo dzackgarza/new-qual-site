@@ -11,6 +11,10 @@ classification:
   - Mean Value Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Show $f$ is differentiable everywhere with derivative $0$.
 Proof: fix $y \in \mathbb{R}$.
 For $x \ne y$, \[\left|\frac{f(x) - f(y)}{x - y}\right| \le \frac{(x-y)^2}{|x-y|} = |x - y| \to 0 \quad \text{as } x \to y.\] Hence $f'(y) = \lim_{x\to y}\frac{f(x)-f(y)}{x-y}$ exists and equals $0$, for every $y$.

@@ -13,6 +13,10 @@ classification:
   - Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -28,8 +32,6 @@ Identify the following groups up to isomorphism
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Compute the following tensor products of abelian groups ($\mathbb{Z}$-modules) up to group isomorphism:
 
 1. $\mathbb{Z}_m \otimes_\mathbb{Z} \mathbb{Z}_n$,

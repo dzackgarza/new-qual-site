@@ -11,6 +11,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 :::{.warnings}
@@ -33,8 +37,6 @@ E \da \Union_{x\in \RR} \ts{ x } \cross E_x
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reformulate via the hint.
     Proof: let $h(x,y,z) = f(x,y) - f(x,z)$, measurable on $\RR^3$, and let
     \[

@@ -12,6 +12,10 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -26,8 +30,6 @@ $$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $X = A \cup B$ and $Y = C \cup D$ with $\{A, B\}$ and $\{C, D\}$ excisive open covers (or interiors covering the space). Let $f \colon X \to Y$ be a continuous map such that $f(A) \subseteq C$ and $f(B) \subseteq D$. Prove that the Mayer-Vietoris long exact sequence is natural with respect to $f$, i.e., all squares in the ladder diagram commute:
 $$
 \begin{CD}

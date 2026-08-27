@@ -11,6 +11,10 @@ classification:
   - Fatou
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ State and prove Fatou's Lemma on a general measurable space.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** State and prove Fatou's Lemma on a general measure space.
 
 <1>1. Statement of Fatou's Lemma.

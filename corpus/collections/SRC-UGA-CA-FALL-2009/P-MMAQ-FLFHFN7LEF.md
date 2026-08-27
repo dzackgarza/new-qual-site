@@ -11,6 +11,10 @@ classification:
   - Residues
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Use residues to compute the integral `\begin{align*} \int_{0}^{\infty} \dfrac{\c
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Compute the definite integral $I = \int_{0}^{\infty} \frac{\cos x}{(x^2+1)^2} \, dx$ using the calculus of residues.
 
 * * *

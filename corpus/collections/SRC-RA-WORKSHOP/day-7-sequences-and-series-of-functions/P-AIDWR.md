@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -23,8 +27,6 @@ Show that $f\equiv 0$.\
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The hypotheses give $\int_0^1 f(x)\,x^{99}p(x)\,dx = 0$ for every polynomial $p$.
 Proof: $x^{99}p(x)$ is a finite linear combination of powers $x^{99}, x^{100}, \ldots$, each of which integrates to $0$ against $f$.
 

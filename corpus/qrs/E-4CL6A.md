@@ -12,6 +12,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 In a metric space, compactness is equivalent to sequential compactness.
 We will show that every sequence in a complete, totally bounded metric space $(X, d)$ has a convergent subsequence.
 

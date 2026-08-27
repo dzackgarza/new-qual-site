@@ -12,6 +12,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Show that
 \]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. For every $g \in L^1[0,1]$ with $\|g\|_1 \le 1$: $\|fg\|_1 \le \|f\|_\infty$.
 Proof: $|f(x)g(x)| \le \|f\|_\infty |g(x)|$ a.e., so $\|fg\|_1 \le \|f\|_\infty \|g\|_1 \le \|f\|_\infty$.
 

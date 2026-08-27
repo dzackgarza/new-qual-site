@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Find an example of a metric space $X$ and a subset $E \subseteq X$
 such that $E$ is closed and bounded but not compact.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Example: $X = (0, 1)$ with the usual metric $d(x,y) = |x - y|$, and $E = (0, 1) = X$ itself.
     Proof: explicit space and subset.
 

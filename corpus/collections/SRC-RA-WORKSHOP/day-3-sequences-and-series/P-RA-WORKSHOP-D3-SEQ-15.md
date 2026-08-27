@@ -12,6 +12,10 @@ classification:
   - Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Prove Theorems 2.1, 2.2, and 2.3.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Theorem 2.1 (Monotone Convergence Theorem for series).
 Proof: let $a_n \ge 0$.
 The partial sums $S_N = \sum_{n=1}^N a_n$ form an increasing sequence, so $S_N$ converges in $[0,\infty]$; the series converges iff $(S_N)$ is bounded above, and then the sum is $\sup_N S_N$.

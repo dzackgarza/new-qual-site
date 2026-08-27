@@ -11,6 +11,10 @@ classification:
   - Cauchy Integral Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that if $f$ has a primitive $F$ on $\Omega$ then $\int_\gamma f = 0$ for ev
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Show that if $f$ has a primitive $F$ on $\Omega$ (i.e. $F' = f$ on $\Omega$), then $\int_\gamma f = 0$ for every closed curve $\gamma \subseteq \Omega$.
 
 <1>1. If $\gamma$ is a smooth curve from $a$ to $b$ parametrized by $z(t)$, $t \in [0,1]$, then $\int_\gamma f = F(b) - F(a)$.

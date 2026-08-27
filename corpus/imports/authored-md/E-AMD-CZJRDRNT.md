@@ -11,6 +11,10 @@ classification:
   - Splitting Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -18,8 +22,6 @@ Show that $\QQ(2^{1\over 3})$ and $\QQ(\zeta_3 2^{1\over 3})$ are isomorphic fie
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $\alpha = \sqrt[3]{2} \in \mathbb{R}$ and $\beta = \zeta_3 \sqrt[3]{2} \in \mathbb{C} \setminus \mathbb{R}$, where $\zeta_3 = e^{2\pi i / 3}$.
 Prove that the fields $K_1 = \mathbb{Q}(\alpha)$ and $K_2 = \mathbb{Q}(\beta)$ are isomorphic as fields over $\mathbb{Q}$ ($K_1 \cong K_2$), but are not equal ($K_1 \neq K_2$).
 

@@ -12,6 +12,10 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-16
 ---
 
 ::: {.exercise}
@@ -19,8 +23,6 @@ Compute the Galois group of $x^n - 1 \in \QQ[x]$ as a function of $n$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $K$ be the splitting field of $f(x) = x^n - 1$ over $\QQ$.
 
 1. **Roots and Splitting Field:** The roots of $x^n - 1$ in $\CC$ are the $n$-th roots of unity:

@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -19,8 +23,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\hat f$ is bounded: $|\hat f(\xi)| \le \|f\|_1$ for every $\xi$.
 Proof: $|\hat f(\xi)| = \left|\int f(x)e^{-ix\xi}\,dx\right| \le \int |f(x)|\,dx = \|f\|_1$.
 

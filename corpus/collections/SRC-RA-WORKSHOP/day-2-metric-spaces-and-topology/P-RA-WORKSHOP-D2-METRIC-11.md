@@ -12,6 +12,10 @@ classification:
   - Countability
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Show that if $f:\mathbb R\to\mathbb R$ is monotone increasing, then $f$ has at m
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Every discontinuity of a monotone increasing $f$ is a jump.
 Proof: at each $x$, the one-sided limits $f(x-) = \sup_{y<x}f(y)$ and $f(x+) = \inf_{y>x}f(y)$ exist (boundedness on compact intervals follows from monotonicity; for the extended real line they exist in $[-\infty,\infty]$). Continuity at $x$ holds iff $f(x-) = f(x) = f(x+)$, so a discontinuity is exactly a point where $f(x-) < f(x+)$, a jump of positive size.
 <1>2. Associate to each jump point a distinct rational.

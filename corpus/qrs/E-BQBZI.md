@@ -12,6 +12,10 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** For $X \subseteq \mathbb{R}$ with $\mu(X) < \infty$ and $f \in L^p(X)$ for some $p_0 \in [1, \infty)$, show $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$ (both sides allowed to be $+\infty$).
 
 <1>1. $\limsup_{p \to \infty} \|f\|_p \leq \|f\|_\infty$.

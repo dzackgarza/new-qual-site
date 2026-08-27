@@ -10,6 +10,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -17,8 +21,6 @@ Suppose that $f:[a,b]\to\mathbb R$ is continuous and define $M:[a,b]\to\mathbb R
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $M$ is monotone increasing, so it suffices to check one-sided continuity.
 Proof: for $x_1 \le x_2$, $\{f(y) : a \le y \le x_1\} \subseteq \{f(y) : a \le y \le x_2\}$, so $M(x_1) \le M(x_2)$.
 Since $M$ is increasing on $[a,b]$, it suffices to show $M(x+) - M(x-) \to 0$ as appropriate; we show directly that $M$ is continuous via the uniform continuity of $f$.

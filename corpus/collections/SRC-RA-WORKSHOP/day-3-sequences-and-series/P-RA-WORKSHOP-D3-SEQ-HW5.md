@@ -12,6 +12,10 @@ classification:
   - Fixed Points
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -24,8 +28,6 @@ Hint: Show that $\{x_n\}$ is decreasing.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $x_n \ge \sqrt2$ for all $n$.
 Proof: by AM-GM, $x_{n+1} = \frac12\big(x_n + \frac{2}{x_n}\big) \ge \sqrt{x_n\cdot\frac{2}{x_n}} = \sqrt2$ for every $n$; since $x_1 = 2 \ge \sqrt2$, all $x_n \ge \sqrt2$.
 <1>2. The sequence is decreasing from $x_2$ onward.

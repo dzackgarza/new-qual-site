@@ -11,6 +11,10 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -38,8 +42,6 @@ for all natural numbers $n$ and all real numbers $x$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $E$ be a set, and let $(f_n)_{n=1}^\infty$ be a sequence of functions $f_n: E \to \mathbb{R}$ such that each $f_n$ is bounded on $E$. Suppose $f_n \to g$ uniformly on $E$. Prove that the sequence $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$, i.e., there exists a constant $M > 0$ such that $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
 
 <1>1. Definition of uniform convergence: There exists an integer $N \ge 1$ such that for all $n \ge N$ and all $x \in E$, $|f_n(x) - g(x)| < 1$.

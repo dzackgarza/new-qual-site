@@ -10,6 +10,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ corresponding definitions and results (without proofs).
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Describe the Carathéodory Extension process extending a pre-measure (measure) on an algebra $\mathcal A \subseteq \mathcal P(X)$ to a complete measure on a $\sigma$-algebra $\mathcal B \supseteq \mathcal A$, stating the precise definitions and main results.
 
 <1>1. **Fundamental Definitions.**

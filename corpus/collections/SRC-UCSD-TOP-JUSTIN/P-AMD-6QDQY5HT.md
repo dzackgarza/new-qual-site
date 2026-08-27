@@ -11,6 +11,10 @@ classification:
   - Cell Complexes
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Let $CA$ be the cone on $A$, show that $\tilde H_*(X \union CA) \cong \tilde H_*
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $(X, A)$ be a topological pair.
 Let $CA = (A \times [0, 1]) / (A \times \{0\})$ be the cone on $A$, attached to $X$ along $A \times \{1\} \equiv A \subseteq X$, so $X \cup CA = X \cup_A CA$.
 Prove that $\widetilde{H}_n(X \cup CA) \cong H_n(X, A)$ for all $n \ge 0$.

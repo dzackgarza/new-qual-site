@@ -11,6 +11,10 @@ classification:
   - Irreducibility Criteria
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -43,8 +47,6 @@ Describe the construction of a field with eight elements.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Construct a finite field with 8 elements, $\mathbb{F}_8$, as a quotient of the polynomial ring $\mathbb{F}_2[t]$.
 
 <1>1. A field of order $8 = 2^3$ can be constructed as $\mathbb{F}_2[t]/\langle p(t)\rangle$, where $p(t) \in \mathbb{F}_2[t]$ is an irreducible polynomial of degree $3$.

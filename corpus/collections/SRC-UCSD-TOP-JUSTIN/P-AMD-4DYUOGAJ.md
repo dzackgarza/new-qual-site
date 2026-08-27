@@ -11,6 +11,10 @@ classification:
   - Algebras
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ Compute what happens when $dx_1$ is replaced with an arbitrary non-zero element 
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $\Lambda^* = \bigwedge^* V$ be the exterior algebra of an $n$-dimensional vector space $V$ with basis $\{dx_1, \dots, dx_n\}$ over a field $k$.
 For $\omega \in \Lambda^1$, define $d_\omega \colon \Lambda^p \to \Lambda^{p+1}$ by $d_\omega(\alpha) = \alpha \wedge \omega$.
 

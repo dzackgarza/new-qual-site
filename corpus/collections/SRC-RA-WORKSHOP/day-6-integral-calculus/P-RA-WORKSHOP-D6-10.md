@@ -13,6 +13,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D6-5-3
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -20,8 +24,6 @@ review: draft
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Set up: $\alpha$ increasing, $\alpha' \in \mathcal{R}$ on $[a,b]$, $f$ bounded.
 Proof: since $\alpha' \in \mathcal{R}$, $\alpha'$ is bounded, so $\alpha$ is Lipschitz (by the fundamental theorem of calculus for Riemann integrals, $\alpha(x) = \alpha(a) + \int_a^x \alpha'(t)\,dt$). In particular $\alpha$ is continuous and of bounded variation.
 We prove the two implications.

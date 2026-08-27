@@ -13,6 +13,10 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Use Cauchy's theorem to prove the argument principle.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** State and prove the Argument Principle using Cauchy's Theorem.
 Specifically, if $f$ is meromorphic in a simply connected domain $\Omega$, and $\gamma$ is a positively oriented simple closed contour in $\Omega$ passing through no zeros or poles of $f$, then: $$\frac{1}{2\pi i} \oint_\gamma \frac{f'(z)}{f(z)} \, dz = Z_f - P_f,$$ where $Z_f$ and $P_f$ are the total number of zeros and poles of $f$ inside $\gamma$, counted with multiplicity.
 

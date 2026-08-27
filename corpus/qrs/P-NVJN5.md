@@ -12,6 +12,10 @@ classification:
   - Contour Integration
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Show that if $f(z)$ is bounded in near $z_0$, then $\displaystyle \int_\Delta f(
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** If $f$ is analytic on $\Omega \setminus \theset{z_0}$ and bounded near $z_0$, show $\int_\Delta f = 0$ for every triangle $\Delta \subseteq \Omega$.
 
 <1>1. $z_0$ is a removable singularity of $f$.

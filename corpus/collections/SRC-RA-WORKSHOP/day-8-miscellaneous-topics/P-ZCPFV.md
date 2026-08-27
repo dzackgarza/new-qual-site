@@ -13,14 +13,16 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
 Prove that if $f \in \mathcal{R}$ on $[a,b]$ and $\alpha \in C^1[a,b]$, then the Riemann integral $\int_a^b f(x)\alpha'(x)dx$ exists and $$\int_a^b f(x) d\alpha(x)= \int_a^b f(x)\alpha'(x)dx.$$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\alpha'$ is continuous, hence uniformly continuous and bounded on $[a,b]$; $\alpha$ is of bounded variation.
 Proof: $\alpha \in C^1[a,b]$, so $\alpha'$ is continuous on the compact set $[a,b]$, hence uniformly continuous and bounded.
 By the mean value theorem, for any partition the total variation of $\alpha$ is at most $\norm{\alpha'}_\infty (b-a) < \infty$.

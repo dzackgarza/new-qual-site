@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Prove : $f \in \mathcal{R}(\alpha)$ on $[a,b]$ if and only if for any $a <c<b$, 
 In addition, if either condition holds, then we have that $$\int_a^c fd\alpha + \int_c^b fd\alpha = \int_a^b fd\alpha.$$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. ($\Rightarrow$) If $f \in \mathcal R(\alpha)$ on $[a,b]$ then $f \in \mathcal R(\alpha)$ on $[a,c]$ and on $[c,b]$.
 Proof: given partitions $P_1, P_2$ of $[a,c], [c,b]$, their union $P$ is a partition of $[a,b]$ with $U(f,P,\alpha) - L(f,P,\alpha) = \big(U(f,P_1,\alpha) - L(f,P_1,\alpha)\big) + \big(U(f,P_2,\alpha) - L(f,P_2,\alpha)\big)$ (the $\alpha$-increments on the two subintervals add up to those on $[a,b]$; note $f$ is bounded on $[a,b]$ by integrability).
 Since integrability on $[a,b]$ lets $U - L \to 0$ along such partitions, each subinterval's difference tends to $0$, giving integrability on each.

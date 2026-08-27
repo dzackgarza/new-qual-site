@@ -11,6 +11,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -19,8 +23,6 @@ Give an example of a function $f:(0,1)\to\mathbb R$ which is continuous but not 
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Definition of uniform continuity.
 Proof: $f : D \subseteq \mathbb{R} \to \mathbb{R}$ is uniformly continuous on $D$ if for every $\epsilon > 0$ there is $\delta > 0$ such that for all $x, y \in D$, $|x - y| < \delta \implies |f(x) - f(y)| < \epsilon$.
 (The difference from plain continuity: the same $\delta$ must work for all pairs $x, y$, independent of where they sit.)

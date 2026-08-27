@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -22,8 +26,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) Decide whether $f \in L^1(\RR)$ forces $\hat f \in L^1(\RR)$; (2) show that if $f, \hat f \in L^1$ then $f$ is bounded, uniformly continuous, and vanishes at infinity.
 
 <1>1. $f \in L^1$ does **not** imply $\hat f \in L^1$.

@@ -12,6 +12,10 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is a
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Prove that if $z \mapsto f(z)$ is analytic on a domain $\Omega$, then $z \mapsto \overline{f(\bar z)}$ is analytic on $\overline{\Omega} \definedas \theset{\bar z \suchthat z \in \Omega}$.
 
 <1>1. Fix $z_0 \in \Omega$; near $z_0$, $f$ has a convergent power series $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$.

@@ -11,6 +11,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -18,8 +22,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The function $x \mapsto \dist(x, F)$ is continuous (indeed $1$-Lipschitz).
 Proof: $|\dist(x, F) - \dist(y, F)| \le |x - y|$ by the triangle inequality, since any point of $F$ within $\dist(x,F)$ of $x$ is within $\dist(x,F) + |x-y|$ of $y$ and vice versa.
 

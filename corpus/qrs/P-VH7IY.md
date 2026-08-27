@@ -12,6 +12,10 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -30,8 +34,6 @@ Also show that this function is not continuous in $r>0$.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (a) Derive the polar form of the Cauchy–Riemann equations; (b) use it to show the principal logarithm $\log z = \log r + i\theta$ ($z = re^{i\theta}$, $-\pi < \theta < \pi$) is holomorphic on the slit plane, and show this function is not continuous on all of $r > 0$.
 
 <1>1. Chain rule in polar coordinates: $u_r = u_x \cos\theta + u_y \sin\theta$ and $u_\theta = r(-u_x \sin\theta + u_y \cos\theta)$; same for $v$.

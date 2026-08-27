@@ -14,6 +14,10 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-3
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: {.problem}
@@ -21,8 +25,6 @@ Prove Theorem 3.3.
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Suppose, toward a contradiction, that $f$ is not uniformly continuous on $K$.
 Proof: then there is $\epsilon > 0$ such that for every $\delta > 0$ there are $x, y \in K$ with $|x - y| < \delta$ but $|f(x) - f(y)| \ge \epsilon$.
 Taking $\delta = 1/n$, we get sequences $x_n, y_n \in K$ with $|x_n - y_n| < 1/n$ and $|f(x_n) - f(y_n)| \ge \epsilon$ for all $n$.

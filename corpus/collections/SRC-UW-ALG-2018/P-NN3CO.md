@@ -11,6 +11,10 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-25
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Show that the field extension $\mathbb Q\subseteq\mathbb Q\left(
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Let $\alpha = \sqrt{2+\sqrt 2}$, and let $K = \QQ(\alpha)$.
 
 1. **Minimal polynomial:**
