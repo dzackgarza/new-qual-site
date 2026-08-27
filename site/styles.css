@@ -743,6 +743,23 @@ div.qual-section > .qual-section-title {
   font-weight: 600;
 }
 
+/* The authored `title=`: which part of a multi-part problem this block answers.
+   It qualifies the label, so it belongs on the label's line. It is a separate
+   element only because it carries mathematics that MathJax typesets at runtime,
+   which `content: attr()` would print as TeX source -- so the pseudo-element
+   joins it on the line rather than the other way round. */
+div.qual-section:has(> .qual-section-qualifier)::before {
+  display: inline;
+}
+
+div.qual-section > .qual-section-qualifier {
+  display: inline;
+  margin: 0 0 0 0.4em;
+  color: var(--muted);
+  font-size: var(--label);
+  font-style: normal;
+}
+
 /* The YAML `subtitle`: a textbook or exam locator, not the opening sentence of
    the card. It is metadata about the block, like the id above it, so it takes
    the label's size and colour and stays tight to the name line. Upright,

@@ -493,6 +493,11 @@ def test_a_transcluded_card_is_named_by_its_yaml_title_and_subtitle(tmp_path: Pa
 
     card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRP-TRACES.html").read_text()
     assert '<p class="qual-section-subtitle">Hoffman and Kunze 1.2.1</p>' in card_page
+    # The authored title qualifies the block's own label -- "Proof 1 (of a)" --
+    # so it is bracketed and carries the class the label line is built from,
+    # not the class a card's name uses.
+    assert '<p class="qual-section-qualifier">(of a)</p>' in card_page
+    assert '<p class="qual-section-qualifier">(of b)</p>' in card_page
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:

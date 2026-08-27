@@ -167,14 +167,19 @@ TITLED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
 
 
 def _title_html(title: str) -> str:
-    """The authored `title=` as body text, so it is read rather than hovered.
+    """The authored `title=` as a qualifier on the block's own label.
+
+    It is not a heading and not the block's name: it says which part or which
+    case this block treats, so a reader can open the proof of (b) without
+    reading the proof of (a). That makes `Proof 3 (of b)` one heading line; set
+    as a bold line under the label it read as the proof's first sentence.
 
     It goes in the body and not in a CSS `content: attr(...)` because the titles
-    carry mathematics -- `$p\\dash$-subgroup` and the like -- and `attr()` would
-    print that as its source. In the body MathJax typesets it like any other
-    `$...$` on the page.
+    carry mathematics -- `$\\implies$`, `$J(R) = \\mathfrak N(R)$` -- and
+    `attr()` would print that as its source. In the body MathJax typesets it
+    like any other `$...$` on the page.
     """
-    return f'<p class="qual-section-title">{html.escape(title)}</p>'
+    return f'<p class="qual-section-qualifier">({html.escape(title)})</p>'
 
 
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
