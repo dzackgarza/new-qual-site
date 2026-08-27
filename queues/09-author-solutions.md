@@ -14,6 +14,8 @@ This is the long-horizon content goal. Work one card at a time.
 - [ ] 9.5 Integrate a source solution only after independent mathematical review.
 - [ ] 9.6 Commit the completed solution before selecting another card.
 
+  Validity: ALL OPEN. This is a repeating loop by design — each pass selects one unsolved card and completes it. `just sample-unsolved` draws n random unsolved cards. The `audit` field (now in `tools/qualc/model.py` working tree) records `solution-written` / `source-checked` / `solution-reviewed` events. An `audit: solution-written` entry exists on `P-F7Y7R` in the working tree.
+
 ## Scale (from issue #2)
 
 - ~890 existing `solution` environments and ~730 `proof` environments across two prose repos.
