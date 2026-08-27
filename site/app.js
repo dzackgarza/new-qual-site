@@ -29,6 +29,29 @@
 
   const closeSearch = () => dialog.close();
 
+  // Index order is publication order, and every page precedes every card, so an
+  // unranked filter answered "sylow" with wiki pages and never reached a Sylow
+  // theorem or problem. Rank by where in the record the query landed.
+  const rank = (record, query, terms) => {
+    const title = record.title.toLocaleLowerCase();
+    if (title === query) return 4;
+    if (title.startsWith(query)) return 3;
+    if (terms.every((term) => title.includes(term))) return 2;
+    // A card's kind and id live in `detail`, which makes "P-A4JGH" an id lookup.
+    if (record.detail.toLocaleLowerCase().includes(query)) return 1;
+    return 0;
+  };
+
+  // Every wiki page carries the same constant `detail`, and three of them are
+  // titled "Residues", two in one folder: only the path separates those rows.
+  // A card keeps its own `detail`, which names a kind its route does not.
+  // Only the last two segments are shown: the rail truncates from the right,
+  // and the tail is where same-titled pages differ. The rest is the tooltip.
+  const locate = (record) => {
+    const parts = decodeURIComponent(record.url).replace(/\.html$/, "").split("/");
+    return parts.length < 3 ? "" : parts.slice(-2).join(" / ");
+  };
+
   const renderResults = async () => {
     const query = input.value.trim().toLocaleLowerCase();
     results.replaceChildren();
@@ -36,7 +59,16 @@
     const terms = query.split(/\s+/);
     const matches = (await loadIndex())
       .filter((record) => terms.every((term) => record.search.includes(term)))
-      .slice(0, 30);
+      .map((record) => ({ record, score: rank(record, query, terms) }))
+      .sort(
+        (a, b) =>
+          b.score - a.score ||
+          a.record.title.length - b.record.title.length ||
+          a.record.title.localeCompare(b.record.title) ||
+          a.record.url.localeCompare(b.record.url),
+      )
+      .slice(0, 30)
+      .map((match) => match.record);
     for (const record of matches) {
       const item = document.createElement("li");
       const link = document.createElement("a");
@@ -49,7 +81,8 @@
       kind.textContent = record.kind;
       const detail = document.createElement("span");
       detail.className = "search-result-detail";
-      detail.textContent = record.detail;
+      detail.textContent = locate(record) || record.detail;
+      detail.title = decodeURIComponent(record.url);
       metadata.append(kind, detail);
       item.append(link, metadata);
       results.append(item);
@@ -153,5 +186,20 @@
       list.append(item);
     }
     toc.append(label, list);
+    // The rail is hidden on narrow viewports, which left long pages with no
+    // in-page navigation at all. Asking the layout whether the rail is showing
+    // keeps its breakpoint in one place: when it is not, the same headings go
+    // above the article as a disclosure, like the mobile wiki nav.
+    if (getComputedStyle(toc).display === "none") {
+      const narrow = document.createElement("details");
+      narrow.className = "page-toc-narrow";
+      const summary = document.createElement("summary");
+      summary.textContent = "On this page";
+      const nav = document.createElement("nav");
+      nav.setAttribute("aria-label", "On this page");
+      nav.append(list.cloneNode(true));
+      narrow.append(summary, nav);
+      document.querySelector(".page-body").before(narrow);
+    }
   }
 })();
