@@ -73,26 +73,33 @@ No scripts, no pattern matching.
 ### Batch 2: files 26-50
 
 - **Algebra_Solutions 1.md** and **Algebra_Solutions.md**: identical duplicates, clean (large solution manual, 9242L)
+
 - **analysis_2003-2007.md**: removed 8 MinerU hallucination notes (OCR commentary about blank images)
+
 - **analysis_2008-2013.md**: clean
+
 - **analysis_2014-2016.md**: clean
+
 - **analysis_jan2014.md**: clean
+
 - **Applied-Algebra-FA17.md**: fixed 3 null bytes (replaced with tensor product and sigma symbols)
+
 - **Azoff Problems by Topic.md**: clean
 
 ## Unrecoverable extractions
 
-- **AG Solutions (1).md**: completely garbled binary/encoding. Every byte is
-  non-standard encoding from a custom PDF font. No mathematical content is
-  recoverable. Needs re-extraction or manual transcription from the source PDF.
+- **AG Solutions (1).md**: completely garbled binary/encoding.
+  Every byte is non-standard encoding from a custom PDF font.
+  No mathematical content is recoverable.
+  Needs re-extraction or manual transcription from the source PDF.
 
-- **Topology_Prelim_Answers_-_Unknown.md**: severely garbled throughout. The
-  entire text has slashes inserted between characters, spaces in wrong places,
-  and control characters replacing math symbols. 384 control chars across
-  3064 lines. Mathematical content is unrecoverable. Needs re-extraction.
+- **Topology_Prelim_Answers_-_Unknown.md**: severely garbled throughout.
+  The entire text has slashes inserted between characters, spaces in wrong places, and control characters replacing math symbols.
+  384 control chars across 3064 lines.
+  Mathematical content is unrecoverable.
+  Needs re-extraction.
 
-- **solutions-mims-2ed.md** and **Schilling_-_Acknowledgement...md** (duplicates):
-  8655 control characters from a custom PDF font encoding. Greek letters and
-  math symbols replaced by control chars (\x16=\mu, \x1b=\sigma, \x0f=\epsilon)
-  throughout 21K lines. 25% of lines affected. Needs re-extraction with correct
-  font mapping.
+- **solutions-mims-2ed.md** and **Schilling_-_Acknowledgement...md** (duplicates): 8655 control characters from a custom PDF font encoding.
+  Greek letters and math symbols replaced by control chars (\x16=\mu, \x1b=\sigma, \x0f=\epsilon) throughout 21K lines.
+  25% of lines affected.
+  Needs re-extraction with correct font mapping.
