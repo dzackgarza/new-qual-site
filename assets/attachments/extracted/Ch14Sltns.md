@@ -16,7 +16,9 @@ d. $\mathbb { Z } _ { n }$ : The maximal ideals are of the form $( p )$ where p 
 
 # 8: Prove that the intersection of any set of ideals of a ring is an ideal.
 
-Let J be the intersection of ideals, and $a , b \in J$ . Then a and b are in each ideal so $a - b$ , $r a$ and $a r$ are in each ideal as well (here, r is an arbitrary ring element). Then $a - b$ , $r a$ and $a r$ are each in J and J is an ideal. Notice that J is non-empty since each ideal contains 0.
+Let J be the intersection of ideals, and $a , b \in J$ . Then a and b are in each ideal so $a - b$ , $r a$ and $a r$ are in each ideal as well (here, r is an arbitrary ring element).
+Then $a - b$ , $r a$ and $a r$ are each in J and J is an ideal.
+Notice that J is non-empty since each ideal contains 0.
 
 # 11: In the ring of integers, find a positive integer a such that:
 
@@ -44,7 +46,8 @@ Let R be an order 30 commutative ring, and I be an ideal of R with order 10. The
 
 To show that $\mathbb { R } [ x ] / < x ^ { 2 } + 1 >$ is a field, we only need to show that $< x ^ { 2 } + 1 >$ is maximal in R[x]. Suppose that $I = < x ^ { 2 } + 1 > \subset J \subseteq \mathbb { R } [ x ]$ . Then there exists an $f ( x ) \in J$ such that $f ( x ) \not \in I$ . Hence $f ( x ) = q ( x ) \cdot ( x ^ { 2 } + 1 ) + r ( x )$ for some polynomials $q ( x ) , r ( x ) \in \mathbb { R } [ x ]$ with $0 \leq \operatorname { d e g } ( r ( x ) ) < 2$ . Moreover, $r ( x ) \neq 0$ . Hence $r ( x )$ is linear and of the form $a x + b$ for some non-zero real numbers $a , b$ . Now, $f ( x ) - q ( x ) ( x ^ { 2 } + 1 ) \in J$ , so $r ( x ) = a x + b \in J$ .
 
-Since $a x - b \in R [ x ] , ( a x + b ) ( a x - b ) = a ^ { 2 } x ^ { 2 } - b ^ { 2 } \in J$ . Similarly, $a ^ { 2 } ( x ^ { 2 } + 1 ) \in J $ . Thus $( a ^ { 2 } x ^ { 2 } + a ^ { 2 } ) - ( a ^ { 2 } x ^ { 2 } - b ^ { 2 } ) = a ^ { 2 } + b ^ { 2 } \in J$ . Since $a ^ { 2 } + b ^ { 2 }$ is not zero, J contains a constant and all constants in $R [ x ]$ are units. Hence $1 \in J$ and $J = R$ . Therefore we can conclude that $< x ^ { 2 } + 1 >$ is indeed maximal as desired.
+Since $a x - b \in R [ x ] , ( a x + b ) ( a x - b ) = a ^ { 2 } x ^ { 2 } - b ^ { 2 } \in J$ . Similarly, $a ^ { 2 } ( x ^ { 2 } + 1 ) \in J $ . Thus $( a ^ { 2 } x ^ { 2 } + a ^ { 2 } ) - ( a ^ { 2 } x ^ { 2 } - b ^ { 2 } ) = a ^ { 2 } + b ^ { 2 } \in J$ . Since $a ^ { 2 } + b ^ { 2 }$ is not zero, J contains a constant and all constants in $R [ x ]$ are units.
+Hence $1 \in J$ and $J = R$ . Therefore we can conclude that $< x ^ { 2 } + 1 >$ is indeed maximal as desired.
 
 ## 32: Let $R = \mathbb { Z } _ { 8 } \oplus \mathbb { Z } _ { 3 0 }$ . Find all maximal ideals of R, and for each maximal ideal I, identify the size of the field $R / I$
 
@@ -58,15 +61,21 @@ $< 2 > \oplus < 1 >$ . In this case the size of the quotient field is $( 8 * 3 0
 
 ## 33: How many elements are in $\mathbb { Z } [ i ] / < 3 + i > ?$ Give reasons for your answer.
 
-First we notice that $( 3 + i ) ( 3 - i ) = 1 0 \in < 3 + i >$ . Hence $1 0 + < 3 + i > = < 3 + i >$ . Now what about the i terms? Observe that $i + < 3 + i > = i + ( - 3 - i ) + < 3 + i > = - 3 + < 3 + i > = 7 + < 3 + i >$ . Hence $a + b i + < 3 + i >$ can be expressed as just $a + < 3 + i >$ , and a ranges from 0 to 9. Moreover, it is clear that $1 + < 3 + i >$ has (additive) order 10. Thus the quotient ring is simply $\{ k + < 3 + i > | k \in \{ 0 , 1 , \ldots , 9 \} \}$ . So there are 10 elements in the quotient ring.
+First we notice that $( 3 + i ) ( 3 - i ) = 1 0 \in < 3 + i >$ . Hence $1 0 + < 3 + i > = < 3 + i >$ . Now what about the i terms?
+Observe that $i + < 3 + i > = i + ( - 3 - i ) + < 3 + i > = - 3 + < 3 + i > = 7 + < 3 + i >$ . Hence $a + b i + < 3 + i >$ can be expressed as just $a + < 3 + i >$ , and a ranges from 0 to 9. Moreover, it is clear that $1 + < 3 + i >$ has (additive) order 10. Thus the quotient ring is simply $\{ k + < 3 + i > | k \in \{ 0 , 1 , \ldots , 9 \} \}$ . So there are 10 elements in the quotient ring.
 
 ## 36: Let R be a ring and let I be an ideal of R. Prove that the factor ring $R / I$ is commutative if and only if $r s - s r \in I$ for all r and s in R.
 
-Let R and I be as above. Assume $R / I$ is commutative. Then for all $r , s \in R , ( r + I ) ( s + I ) = r s + I = s r + I = ( s + I ) ( r + I )$ . Since $r s + I = s r + I , r s - s r \in I$ (property of cosets in additive notation). Now assume that $r s - s r \in I$ for all $r , s \in R$ . Then $r s + I = s r + I$ but reversing the calculation above shows that this implies the quotient ring is commutative.
+Let R and I be as above.
+Assume $R / I$ is commutative.
+Then for all $r , s \in R , ( r + I ) ( s + I ) = r s + I = s r + I = ( s + I ) ( r + I )$ . Since $r s + I = s r + I , r s - s r \in I$ (property of cosets in additive notation).
+Now assume that $r s - s r \in I$ for all $r , s \in R$ . Then $r s + I = s r + I$ but reversing the calculation above shows that this implies the quotient ring is commutative.
 
 ## 38: Prove that $I = < 2 + 2 i >$ is not a prime ideal of $\mathbb { Z } [ i ]$ . How many elements are in $\mathbb { Z } [ i ] / I ?$ What is the characteristic of $\mathbb { Z } [ i ] / I ?$
 
-Notice that $2 ( 1 + i ) = 2 + 2 i \in I$ but $2 \notin I$ and $1 + i \notin I $ . This shows I is not a prime ideal. Notice, $( 2 + 2 i ) ( 1 - i ) = 2 - 2 i + 2 i + 2 = 4 \in I$ and $i + I = - ( i + 2 ) + I = - i + 2 + I$ . So $a + b i + I$ would have $a$ in $\{ 0 , 1 , 2 , 3 \}$ and $b$ in $\{ 0 , 1 \}$ . Thus there are $4 \cdot 2 = 8$ elements in the quotient ring. The characteristic is n such that $n ( a + b i ) + I = I$ , and hence it is 4.
+Notice that $2 ( 1 + i ) = 2 + 2 i \in I$ but $2 \notin I$ and $1 + i \notin I $ . This shows I is not a prime ideal.
+Notice, $( 2 + 2 i ) ( 1 - i ) = 2 - 2 i + 2 i + 2 = 4 \in I$ and $i + I = - ( i + 2 ) + I = - i + 2 + I$ . So $a + b i + I$ would have $a$ in $\{ 0 , 1 , 2 , 3 \}$ and $b$ in $\{ 0 , 1 \}$ . Thus there are $4 \cdot 2 = 8$ elements in the quotient ring.
+The characteristic is n such that $n ( a + b i ) + I = I$ , and hence it is 4.
 
 ## 39: In $\mathbb { Z } _ { 5 } [ x ]$ , let $I = < x ^ { 2 } + x + 2 >$ . Find the multiplicative inverse of $2 x + 3 + I$ in $\mathbb { Z } _ { 5 } [ x ] / I$ .
 
@@ -74,7 +83,8 @@ To be the multiplicative inverse, we need $( f ( x ) + I ) ( 2 x + 3 + I ) = ( f
 
 ## 46: Let R be a commutative ring and let A be any ideal of R. Show that the nil radical of A, $N ( A ) = \{ r \in R \mid r ^ { n } \in A \text { for some positive integer } n \}$ is an ideal of R.
 
-Let $x , y \in N ( A )$ . Then there exists an $n , m \in \mathbb { Z } _ { > 0 }$ such that $x ^ { n } \in A$ and $y ^ { m } \in A$ . Now $( x + y ) ^ { n + m }$ expands such that for each term either the power of $x \geq n$ or the power of $y \geq m$ . Hence, since A is an ideal, each term is in A so $( x + y ) ^ { n + m } \in A$ . Thus $x + y \in N ( A )$ . Now, let $r \in R$ . Then $( r x ) ^ { n } = r ^ { n } x ^ { n }$ since R is commutative. We know that $x ^ { n } \in A$ and $r ^ { n } \in R$ , so $r ^ { n } x ^ { n } \in A$ . Thus $r x \in N ( A )$ . Similarly, $x r \in N ( A )$ .
+Let $x , y \in N ( A )$ . Then there exists an $n , m \in \mathbb { Z } _ { > 0 }$ such that $x ^ { n } \in A$ and $y ^ { m } \in A$ . Now $( x + y ) ^ { n + m }$ expands such that for each term either the power of $x \geq n$ or the power of $y \geq m$ . Hence, since A is an ideal, each term is in A so $( x + y ) ^ { n + m } \in A$ . Thus $x + y \in N ( A )$ . Now, let $r \in R$ . Then $( r x ) ^ { n } = r ^ { n } x ^ { n }$ since R is commutative.
+We know that $x ^ { n } \in A$ and $r ^ { n } \in R$ , so $r ^ { n } x ^ { n } \in A$ . Thus $r x \in N ( A )$ . Similarly, $x r \in N ( A )$ .
 
 # 47: Let $R = \mathbb { Z } _ { 2 7 }$ . Find:
 
