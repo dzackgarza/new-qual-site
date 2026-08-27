@@ -1,0 +1,351 @@
+# Math 872 - Algebraic Topology - Spring 2014 (Active) Table of Contents
+
+## Chapter 0: Overview and review
+
+Section A: Overview of the course: Big questions in topology
+
+Decision problems
+
+Homotopy equivalence problem
+
+Classification problem
+
+Homotopy invariants
+
+Idea: Use homotopy type invariants to prove two spaces do NOT have the same homotopy type.
+
+$\mathrm { G r o u p s } - \pi _ { 1 }$ and $\mathrm { H } _ { \mathrm { n } }$ groups
+
+Inputting spaces into computers
+
+O $\pi _ { I }$ homotopy invariants
+
+P1.18 Thm: If X and Y are path-connected and are homotopy equivalent, then $\pi _ { 1 } ( \mathrm { X } ) \cong$ $\pi _ { 1 } ( \mathrm { Y } ) . ^ { \ast }$
+
+Thm: If X and Y are path-connected and are homotopy equivalent, then X has [abelian, finite respectively] fundamental group iff Y has [abelian, finite respectively] fundamental group.
+
+Section B: Review from Math 871: Homotopy and fundamental groups
+
+Chapter 4: Homotopy
+
+Homotopy and homotopy relative to a subspace (for maps)
+
+Homotopy equivalence (maps) and homotopy equivalent (spaces)
+
+E0.3 Lemma: Homotopy equivalence and homotopy type are equivalence relations on maps and spaces, respectively. \*
+
+Contractible space
+
+Mapping cylinder construction: Uses product, disjoint union, and quotient topology
+
+Thm: For the mapping cylinder $\mathrm { X _ { f } }$ of the map $\mathrm { f . X . > Y , X _ { f } }$ is homotopy equivalent to Y. (More: Y is a deformation retract of $\mathrm { { X _ { f } } . }$
+
+Chapter 5: Fundamental groups
+
+Basepoint, loop, product of loops, constant loop, reverse of a loop, path homotopy
+
+Def: Fundamental group $\pi _ { 1 } ( \mathrm { X } )$
+
+P1.3 Thm: $\pi _ { 1 }$ is a group. \*
+
+Change of basepoint homomorphism
+
+P1.5 Thm: If X is path-connected (PC), then $\pi _ { 1 } ( \mathrm { X } )$ is independent of basepoint, up to isomorphism. \*\*
+
+Induced homomorphism from a continuous function
+
+Chapter $\mathbf { 6 } \colon \pi _ { 1 } ( \mathbf { S } ^ { 1 } )$
+
+Section A: Proof
+
+P1.30 Statements of the Path Lifting Theorem (PLT) and Path Homotopy Lifting Theorem (PHLT) for lifting paths and homotopies from $\mathrm { S } ^ { 1 }$ to ${ \bf R } ^ { 1 }$
+
+T1.7 Thm: $\pi _ { 1 } ( \mathrm { S } ^ { 1 } ) \cong \mathbf { Z } ^ { * * }$
+
+Proofs of the PLT and PHLT
+
+## Section B: Applications
+
+P1.17 If r:X → A is a retraction and $\mathrm { i } \mathrm { A } \to \mathrm { X }$ is the inclusion, then r\* is onto and i\* is one-to-one. \*\*
+
+Examples of subspaces that can't be retracts
+
+T1.10 Borsuk-Ulam Thm: $\mathrm { I f f S } ^ { 2 }  { \bf R } ^ { 2 }$ is continuous, then there are antipodal points $\mathrm { p } , \mathsf { - p }$ in $\mathrm { S } ^ { 2 }$ with $\scriptstyle { \mathfrak { f } } ( { \mathfrak { p } } ) = { \mathfrak { f } } ( - { \mathfrak { p } } )$
+
+E1.1.9 Ham Sandwich Thm: Given three rectangular boxes (or more generally measurable subsets) in $\mathbf { R } ^ { 3 } \mathbf { \Psi }$ , there is a plane that bisects each (into regions of equal volume) simultaneously.
+
+O $\mathbf { E 1 . 1 . 5 \pi _ { 1 } ( X , x _ { 0 } ) = 1 }$ iff every continuous map $\mathrm { S } ^ { 1 } \to \mathrm { X }$ extends to a continuous map $\mathrm { D } ^ { 2 } \to \mathrm { X } . ^ { \ast }$
+
+Prop: No relationship between $\pi _ { 1 }$ and subgroup, quotient constructions \*
+
+P1.12 Thm: If X and Y are PC then $\pi _ { 1 } ( \mathrm { X } \times \mathrm { Y } )$ is isomorphic to $\pi _ { 1 } ( \mathrm { X } ) \times \pi _ { 1 } ( \mathrm { Y } )$ . \*\*
+
+## Chapter 7: Presenting groups
+
+## Section A: Review and Presentations
+
+Review of normal subgroups, cosets, and quotients
+
+Definitions and examples of free groups
+
+Definitions and examples of presentations of groups
+
+Homomorphism Building Theorems (HBT's) \*\*
+
+Tietze transformations and Tietze's Theorem \*
+
+## Section B: Building new groups from old
+
+Three views of direct products: Sets with multiplication, presentations, and the homomorphism building theorem (HBT, aka universal property)
+
+Three views of free products: Sets with multiplication, presentations and the Homomorphism Building Theorem, and examples \*\*
+
+Amalgamated products, examples
+
+## Chapter 8: The Seifert - Van Kampen Theorem
+
+## Section A: Statement and first examples
+
+T1.20 SVK Thm: If X is a union of open path-connected subspaces $\mathbf { A } _ { \mathbf { a } }$ (for indices α in an index set J) all containing the basepoint $\mathbf { \boldsymbol { x } } _ { 0 } ,$ that satisfy the properties that every pairwise and triple intersection $\mathrm { A } _ { \mathfrak { a } } \cap \mathrm { A } _ { \mathfrak { b } }$ and $\mathbf { A } _ { \mathfrak { a } } \cap \mathbf { A } _ { \mathfrak { b } } \cap \mathbf { A } _ { \gamma }$ is also path-connected, then $\pi _ { 1 } ( \mathrm { X } )$ is isomorphic to the group $\ast _ { \mathfrak { a } \in \mathrm { ~ J ~ } } \pi _ { 1 } ( \mathrm { A } _ { \mathfrak { a } } ) / \mathrm { N }$ , where N is the normal subgroup generated by all elements of the form $\mathrm { i } _ { \mathrm { A } _ { \beta } }$ $\mathrm { \Delta _ { A } \mathrm { _ { \gamma } { * ( [ w ] ) } \mathrm { \ i _ { A } \mathrm { _ { \gamma } \mathrm { A _ { \beta } { * ( [ w ] ) } ^ { - 1 } } } } } }$ with $[ \mathbf { w } ] \in \pi _ { 1 } ( \mathbf { A } _ { \beta } \cap \mathbf { A } _ { \gamma } )$ \*\*
+
+Computing fundamental groups of graphs
+
+Abelianization of a group
+
+Applications to the homotopy equivalence problem
+
+Finitely presented group examples
+
+## Section B: Classification of surfaces
+
+Definition of n-manifold, surface
+
+Connected sum operation
+
+Computing fundamental groups of surfaces
+
+C1.27 Thm: If X is a compact connected surface, then X is homeomorphic to exactly one $\mathrm { o f } \mathrm { S } ^ { 2 } , \# ^ { \mathrm { n } }$
+
+$\mathrm { T } ^ { 2 } , \mathrm { o r } \# ^ { \mathrm { n } } \mathrm { P } ^ { 2 }$ for some natural number n. \*\*
+
+## Section C: Proof of SVK
+
+Building the homomorphism with the HBT
+
+Using the Lebesgue Number Lemma and the "seashell method" to prove onto
+
+Using LNL again to prove 1-1
+
+## Chapter 9: Presenting spaces
+
+Section A: Building new spaces from old
+
+Wedge products
+
+Thm: If for each α the basepoint $\mathbf { X } _ { \mathbf { \overline { { { Q } } } } }$ of each space $\mathrm { X } _ { \mathfrak { a } }$ is a deformation retract of an open neighborhood $\mathrm { U } _ { \mathfrak { a } } \circ \mathrm { f x } _ { \mathfrak { a } } \mathrm { i n } \mathrm { X } _ { \mathfrak { a } } .$ , then $\pi _ { 1 } ( \vee _ { a } \mathrm { X } _ { \mathfrak { a } } ) \cong * _ { a } \pi _ { 1 } ( \mathrm { X } _ { \mathfrak { a } } )$ is a free product. \*\*
+
+Cones
+
+## Section B: CW complexes
+
+Definitions: CW complex, cell, n-skeleton, attaching (characteristic) map, dimension
+
+Examples, including putting CW structures on familiar spaces
+
+Continuous Function Building Thm: If X is a CW complex, Y is a topological space, and f:X → Y is a function, then f is continuous iff every composition f ο $\Phi _ { \mathbf { a } }$ of f with an attaching map is continuous. \*
+
+PS(9.B.3) Thm: A CW complex with finitely many cells is compact.
+
+PA.3 Thm: CW complexes are Hausdorff.
+
+EA.3 Thm: A CW complex X is PC iff the 1-skeleton $\mathrm { X } ^ { ( 1 ) }$ is PC. \*\*
+
+## Section C: Fundamental groups of CW complexes
+
+P1A.2 Thm 1: The fundamental group of the 1-skeleton of a CW complex is a free group, generated by loops at a basepoint that follow a path in a maximal tree T, then traverse a single edge outside T, and then another path in T back to the basepoint. \*\*
+
+P1.26 Thm 2: For a CW complex X the inclusion $\mathrm { X } ^ { ( 1 ) } \to \mathrm { X } ^ { ( 2 ) }$ induces a surjection of fundamental groups whose kernel is generated by loops corresponding to the attaching maps of the 2-cells of X. \*\*
+
+PS(9.C.1) Thm $\mathfrak { n } \pi _ { 1 } ( \mathrm { X } )$ is isomorphic to $\pi _ { 1 } ( \mathrm { X } ^ { ( 2 ) } )$ . \*\*
+
+Presentation complexes
+
+P1.28 2-Way Street Thm: For every group G there is a 2-dimensional CW complex X with $\pi _ { 1 } ( \mathrm { X } )$ isomorphic to $\mathrm { ~ G ~ } ^ { \ast }$
+
+## Section D: Connectednesses
+
+PC and LPC, and examples
+
+Simply-connected and SLSC, and examples
+
+PA.4 Thm: CW complexes are LPC and SLSC.
+
+## Chapter 10: Covering spaces
+
+## Section A: Definitions and lifting
+
+Definition and examples of covering spaces
+
+P1.30 Path and path homotopy lifting theorem (PPHLT) \*\*
+
+P1.31 Thm: $\mathrm { I f p } \mathrm { : Y \to X }$ is a covering space then ker $\mathfrak { p } _ { * } = 1$ and im $\mathrm { p } _ { * } = \{ \mathrm { [ f ] } |$ f lifts to a loop}. \*\*
+
+Application/Cor: For all natural numbers n, the free group $\mathrm { F _ { n } }$ is a subgroup of the free group $\mathrm { F } _ { 2 }$
+
+P1.32 Lifting Correspondence Function and Thm: Let X and Y be path-connected spaces and let $\mathsf { p } \colon ( \mathrm { Y } , \mathrm { y } _ { 0 } ) \ldots ( \mathrm { X } , \mathrm { x } _ { 0 } )$ be a covering space. The Lifting Correspondence Function Φ: $\pi _ { 1 } ( \mathrm { X } , \mathrm { x } _ { 0 } ) / \mathfrak { p } *$ $( \pi _ { 1 } ( \Upsilon , \Upsilon _ { 0 } ) ) \mathrel { \mathop \sim } \boldsymbol { \mathrm { p } } ^ { - 1 } ( \{ \mathrm { x } _ { 0 } \} )$ defined by $\Phi ( \mathfrak { p } _ { * } ( \pi _ { 1 } ( \Upsilon , \mathrm { y } _ { 0 } ) ) [ 1 ] ) = \mathfrak { m } ( 1 )$ , where m is the unique lift of the path l in Y starting at ${ \mathrm { y } } _ { 0 } ,$ is a well-defined bijection. \*\*
+
+P1.33,P1.34 Lifting Criterion and Unique Lifting Property, and examples \*\*
+
+Cor: If p: Y -> X is a covering space and X is a CW complex, then Y is a CW complex. \*
+
+## Section B: Group actions
+
+Group action, covering space action, orbit, and orbit space
+
+P1.40 Thm: If G has a covering space action on Y, then: (1) The quotient $\mathrm { p { : } Y \mathrm { \ : - > Y / G } }$ is a covering space. (2) If Y is PC and LPC then $\mathsf { p } { } _ { ^ { \ast } } ( \pi _ { 1 } ( \mathrm { Y } , \mathrm { y } _ { 0 } ) )$ is normal in $\pi _ { 1 } ( \mathrm { Y } / \mathrm { G } , [ \mathrm { y } _ { 0 } ] ) . ( 3 )$ If Y is PC and LPC then G is isomorphic to $\pi _ { 1 } ( \mathrm { Y } / \mathrm { G } , [ \mathrm { y } _ { 0 } ] ) / \mathrm { p } _ { \ast } ( \pi _ { 1 } ( \mathrm { Y } , \mathrm { y } _ { 0 } ) )$ . \*\*
+
+Cor: If Y is simply-connected and LPC and G has a covering space action on Y, then G is isomorphic to $\pi _ { 1 } ( \mathrm { Y } / \mathrm { G } )$ . \*\*
+
+Definitions of presentation complex, and Cayley complex, and examples.
+
+Hp.77 Thm: Let Y be the Cayley complex of a presentation of G. Then G has a covering space action on Y, Y/G is the presentation complex, Y is simply connected, and $\pi _ { 1 } ( \mathrm { Y } / \mathrm { G } ) \cong \mathrm { G } .$ \*
+
+## Section C: The universal covering and the Galois correspondence
+
+Existence theorems
+
+P1.36 Simply-connected Covering Thm: Let X be a PC, LPC, SLSC space. Then there is a simply-connected covering space $\mathrm { p } \mathrm { : Y \mathrm { \Omega } } \mathrm { \to X } .$ , and there is a covering space group action of $\pi _ { 1 } ( \mathrm { X } )$ on Y inducing the map p. \*\*
+
+P1.36 Existence Thm: Let X be a PC, LPC, SLSC space, and let H be a subgroup of
+
+$\pi _ { 1 } ( \mathrm { X } )$ . Then there is a covering space p: $\mathrm { Y }  \mathrm { X }$ with $\mathrm { H { = } p { * } ( \pi _ { 1 } ( Y ) ) }$ . Moreover, if H is a normal subgroup of $\dot { \pi } _ { 1 } ( \mathrm { X } )$ then there is a covering space group action of G/H on Y inducing the map p. \*
+
+Uniqueness theorem
+
+Definition of isomorphism of pointed covering spaces
+
+Definition of deck transformations
+
+P1.37 Uniqueness Thm: Any two PC, LPC pointed covering spaces $\mathrm { p _ { i } \mathrm { : } \left( X _ { i } , X _ { i } \right) \mathrm { - } \left( X , x _ { 0 } \right) }$ (i=1,2) of a pointed space $\mathrm { ( X , x _ { 0 } ) }$ satisfy $\mathtt { p } _ { 1 ^ { * } } ( \mathrm { X } _ { 1 } , \mathrm { x } _ { 1 } ) = \mathtt { p } _ { 2 ^ { * } } ( \mathrm { X } _ { 2 } , \mathrm { x } _ { 2 } )$ iff the pointed covering spaces are isomorphic.
+
+MegaTheorem: Let $\mathrm { ( X , x _ { 0 } ) }$ be a PC, LPC, SLSC space, let $\mathrm { G } = \pi _ { 1 } ( \mathrm { X } , \mathrm { x } _ { 0 } )$ , and let $\mathfrak { p } \colon \left( \mathrm { Y } , \mathrm { y } _ { 0 } \right) \cdots$
+
+$$
+\mathrm { ( X , x _ { 0 } ) }
+$$
+
+$$
+{ \mathfrak { q } } \colon ( Z , z _ { 0 } ) \to ( \mathrm { X } , \mathrm { x } _ { 0 } )
+$$
+
+(a) P1.38 Galois Correspondence Thm: The maps {subgroups H of G} <-> {isomorphism classes of PC pointed coverings of $\scriptstyle ( \mathrm { X } , \mathrm { x } _ { 0 } ) \}$ defined by $\mathrm { H } \to ( \mathrm { p } ^ { \cdot } ; ( \mathrm { Y } / \mathrm { H } , [ \mathrm { y } _ { 0 } ] ) \to ( \mathrm { X } , \mathrm { x } _ { 0 } ) )$ and $( \boldsymbol { \mathrm { p } } ^ { \prime \prime } ; ( \boldsymbol { \mathrm { Y } } " , \boldsymbol { \mathrm { y } } " _ { 0 } ) \cdot >$ (X,x0)) -> im p''\* are inverse bijections. \*\*
+
+(b) Hp.68 Universal Covering Thm: There is a covering space map $\mathrm { r } ; \mathrm { Y } \to \mathrm { Z }$ with the composition qr=p. \*\*
+
+(c) P1.39 Deck Transformation Thm: Deck $\mathrm { \underline { { { g p } } } ( \mathrm { q ) = N \_ G ( H ) / H } } ,$ where H $: = \mathrm { r } _ { * } ( \pi _ { 1 } ( \mathrm { X } , \mathrm { x } _ { 0 } ) )$
+
+Moreover, H is normal in G iff Deckgp(q) (=G/H) has a covering space action on Y inducing q. \*
+
+The correspondence table and examples
+
+T1A.4 Application/Thm: Every subgroup of a free group is free.
+
+The "look up" and "look down" methods of constructing the covering space corresponding to a given subgroup, and more examples
+
+## Chapter 11: Simplicial homology
+
+Section A: Overview of homology
+
+Higher homotopy groups and their weaknesses
+
+Strengths and weaknesses of simplicial, CW, and singular homologies
+
+Section B: Δ-complexes
+
+Standard simplices and faces
+
+Δ-complex definition and examples
+
+Section C: Simplicial homology
+
+Definition of Simplicial n-chains and boundary maps ${ \hat { \mathbf { \theta } } } _ { \mathbf { n } }$
+
+L2.1 Lem: $\hat { \cal { O } } _ { \mathrm { { n - 1 } } } \circ \hat { \cal { O } } _ { \mathrm { { n } } }$
+
+Definition of simplicial homology groups $\mathbf { H _ { n } } ^ { \mathbf { s i m p l } }$
+
+Examples
+
+Linear algebra over Z
+
+Connections between ker $ \partial _ { 1 }$ and loops, im $\partial _ { 2 }$ and disks filling in loops
+
+## Chapter 12: Singular homology
+
+## Section A: Definitions and induced homomorphisms
+
+Singular chains and definition of $\mathbf { H _ { n } } ^ { \mathbf { s i n g } }$
+
+P2.6 Thm: If X has path components $\mathrm { X } _ { { \mathfrak { a } } } ,$ then $\begin{array} { r } { \mathrm { H } _ { \mathrm { n } } ^ { \mathrm { \Delta s i n g } } ( \mathrm { X } ) = \oplus _ { \mathrm { a } } \mathrm { H } _ { \mathrm { n } } ^ { \mathrm { \Delta s i n g } } ( \mathrm { X } _ { \mathrm { a } } ) } \end{array}$ \*
+
+P2.7 Thm: If X is path-connected, then $\mathrm { H } _ { 0 } ^ { \mathrm { \scriptsize ~ s i n g } } ( \mathrm { X } ) = \mathbf { Z } \ ^ { \mathrm { \scriptsize ~ s * } }$
+
+Reduced singular homology
+
+Homological algebra excursion:
+
+Chain complex, cycle, boundary, homology
+
+Chain map, induced homology homomorphism
+
+Chain homotopy
+
+P2.12 Thm: Chain homotopic chain maps induce the same homology homomorphism.
+
+T2.27 Thm: If X is a Δ-complex, then $\mathrm { H _ { n } } ^ { \ s i m p l } ( X )$ and $\mathrm { H _ { n } } ^ { \mathrm { \ s i n g } } ( \mathrm { X } )$ are isomorphic for all n. \*
+
+Inducing singular homology homomorphisms via continuous functions
+
+T2.10 Thm: Homology homomorphisms induced by continuous functions are abelian group homomorphisms that compose nicely; homotopic maps induce the same homology homomorphism.
+
+C2.11 Thm: If X and Y are homotopy equivalent, then $\mathrm { H _ { n } } ^ { \mathrm { \ s i n g } } ( \mathrm { X } )$ and $\mathrm { H _ { n } } ^ { \mathrm { \ s i n g } } ( \mathrm { Y } )$ are isomorphic for all n. \*\*
+
+Cor: If a topological space has two Δ-complex structures, i.e. if X and X' are homeomorphic $\Delta \mathfrak { - }$ complexes, then $\mathrm { H _ { n } } ^ { \ s i m p l } ( X )$ is isomorphic to $\mathrm { H _ { n } } ^ { \ s i m p l } ( X )$ for all n.
+
+Examples/applications
+
+## Section B: Mayer-Vietoris Theorem
+
+Statement and first examples
+
+Homological algebra: Exact sequence
+
+Lem: Let a: A → B be an abelian group homomorphism. $( 1 ) 0  \mathbf { A }  \mathbf { B }$ is exact iff a is one-to-one. $( 2 ) \mathrm { A } \to \mathrm { B } \to 0$ is exact iff a is onto. \*
+
+H p.149 MV Thm: Suppose that X is a topological space with subspaces A,B such that X = $\operatorname { I n t } ( \mathbf { A } ) \cup \operatorname { I n t } ( \mathbf { B } )$ . Then there is an exact sequence $\ldots \to \mathrm { H } _ { \mathfrak { n } } ( \mathbf { A } \cap \mathbf { B } ) \to \mathrm { H } _ { \mathfrak { n } } ( \mathbf { A } ) \oplus \mathrm { H } _ { \mathfrak { n } } ( \mathbf { B } ) \to$ $\mathrm { H _ { n } ( X ) } \to \mathrm { H _ { n - 1 } ( A \cap B ) } \to \ldots \to \mathrm { H _ { 0 } ( X ) } \to 0$ , such that each homorphism $\Phi _ { \mathrm { n } } \mathrm { : H _ { \mathrm { n } } ( A \cap B )  }$ $\mathrm { H } _ { \mathrm { n } } ( \mathrm { A } ) \oplus \mathrm { H } _ { \mathrm { n } } ( \mathrm { B } )$ is given by $\Phi _ { \mathrm { n } } = \left( \mathrm { i } _ { \mathrm { A B } \mathrm { n } , \ast , - } \mathrm { \dot { l } _ { B A } \mathrm { n } , \ast } \right)$ and each homomorphism $\psi _ { \mathrm { n } } \mathrm { : H _ { n } ( A ) }$ ⊕ $\mathrm { H } _ { \mathrm { n } } ( \mathrm { B } ) \to \mathrm { H } _ { \mathrm { n } } ( \mathrm { X } )$ is given by $\psi _ { \mathrm { n } } = \mathrm { j _ { A } \mathrm { \Omega _ { n } , * } + j _ { B \mathrm { \Omega _ { n } , * } } }$ , where $\mathbf { i } _ { \mathbf { A B } } \mathbf { : A } \cap \mathbf { B } \to \mathbf { A } , \mathbf { i } _ { \mathbf { B A } } \mathbf { : A } \cap \mathbf { B } \to \mathbf { B } .$ $\mathrm { j } _ { \mathrm { A } } \colon \mathrm { A } \to \mathrm { X } .$ , and $\mathrm { j _ { B } } \mathrm { : B } \longrightarrow \mathrm { X }$ are inclusion maps. \*\*
+
+Connection to the SVK theorem
+
+Examples of computing with the Mayer-Vietoris Theorem
+
+Proof of MV and the definition of the δ homomorphism
+
+Small Chains Thm: If A,B are subspaces of X with $\mathrm { X } { = } \mathrm { I n t } ( \mathrm { A } ) \cup \mathrm { I n t } ( \mathrm { B } )$ then $\mathrm { H } _ { \mathrm { n } } ( \mathrm { X } )$ is isomorphic to $\mathrm { H _ { n } ( A ^ { + } B ) }$
+
+Picture for using the Lebesgue Number Lemma to prove the Small Chains Thm.
+
+T2.16 Snake Lemma: A short exact sequence of chain complexes induces a long exact sequence on homology. \*
+
+Section C: Simplifying $H _ { n }$ with subspaces
+
+Definition and long exact sequence for relative homology
+
+T2.13 Crushing Good Subspaces Thm: If A is a nonempty closed subspace of X that is a deformation retract of an open neighborhood of A in X, then $\mathrm { H } _ { \mathrm { n } } ( \mathrm { X } , \mathrm { A } ) \cong \mathrm { H } _ { \mathrm { n } } ( \mathrm { X } / \mathrm { A } )$ for $\mathtt { n } > 0$ . \*\*
+
+T2.20 Excision Thm: (a) $\mathrm { I f } Z \subseteq \mathbf { A } \subseteq \mathbf { X }$ and $\mathrm { { C l } } ( { \mathrm { Z } } ) \subseteq \operatorname { I n t } ( \mathrm { { A } } )$ , then $\mathrm { H } _ { \mathfrak { n } } ( \mathrm { X } , \mathrm { A } ) \cong \mathrm { H } _ { \mathfrak { n } } ( \mathrm { X } - \mathrm { Z } , \mathrm { A } - \mathrm { Z } )$
+
+(b) $\mathrm { I f A , B } \subseteq \mathrm { X }$ and $\mathrm { X } = \mathrm { I n t } ( \mathrm { A } ) \cup \mathrm { I n t } ( \mathrm { B } )$ , then $\mathrm { H } _ { \mathrm { n } } ( \mathrm { X } , \mathrm { A } ) \cong \mathrm { H } _ { \mathrm { n } } ( \mathrm { B } , \mathrm { A } \cap \mathrm { B } )$ . \*\*
+
+Examples
+
+## S. Hermiller.
