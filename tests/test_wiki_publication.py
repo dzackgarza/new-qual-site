@@ -32,8 +32,19 @@ class LinkCollector(HTMLParser):
         super().__init__()
         self.hrefs: list[str] = []
         self.srcs: list[str] = []
+        self.links: list[tuple[str, str, str]] = []
+        self._link: tuple[str, str] | None = None
+        self._link_text: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if tag == "a" and attributes.get("href") is not None:
+            href = attributes["href"]
+            assert href is not None
+            class_value = attributes["class"] if "class" in attributes else None
+            classes = class_value if class_value is not None else ""
+            self._link = (href, classes)
+            self._link_text = []
         for key, value in attrs:
             if value is None:
                 continue
@@ -41,6 +52,18 @@ class LinkCollector(HTMLParser):
                 self.hrefs.append(value)
             elif key == "src":
                 self.srcs.append(value)
+
+    def handle_data(self, data: str) -> None:
+        if self._link is not None:
+            self._link_text.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "a" and self._link is not None:
+            href, classes = self._link
+            text = re.sub(r"\s+", " ", "".join(self._link_text)).strip()
+            self.links.append((href, classes, text))
+            self._link = None
+            self._link_text = []
 
 
 class WikiNavigationParser(HTMLParser):
@@ -194,15 +217,11 @@ def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     assert result.returncode == 0, result.stderr
 
     html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
-    link = re.search(
-        r'<a href="\.\./tag/PRB-INDEXP\.html" class="wikilink">(.*?)</a>',
-        html,
-        re.DOTALL,
-    )
-    assert link is not None
-    link_text = re.sub(r"\s+", " ", link.group(1))
-    assert "Show a subgroup of index" in link_text
-    assert "PRB-INDEXP" not in link_text
+    links = LinkCollector()
+    links.feed(html)
+    matching_links = [text for href, classes, text in links.links if href == "../tag/PRB-INDEXP.html" and "wikilink" in classes.split()]
+    assert matching_links == ["Show a subgroup of index $p$ in a $p\\dash$group is normal"]
+    assert all("PRB-INDEXP" not in text for text in matching_links)
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:
