@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANH
 kind: problem
-title: 'h be a harmonic function on the punctured disk $c \in \mathbb { R }\mathrm { R e'
+title: "Harmonic conjugate on the punctured disk up to a logarithmic term"
 classification:
   areas:
   - complex-analysis

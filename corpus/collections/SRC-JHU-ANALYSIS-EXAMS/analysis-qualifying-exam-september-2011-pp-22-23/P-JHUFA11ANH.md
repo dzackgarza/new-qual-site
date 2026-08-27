@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANH
 kind: problem
-title: "there does not exist a function such that $\begin{array} { r } { ( f * I ) ( x )"
+title: "No convolution identity in $L^1(\\RR^n)$"
 classification:
   areas:
   - real-analysis

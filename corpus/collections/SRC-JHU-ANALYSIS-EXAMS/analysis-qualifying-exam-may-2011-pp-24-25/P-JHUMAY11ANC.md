@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANC
 kind: problem
-title: 'Hint: Consider the sequence of iterates $f _ { n } = f \circ f \circ \cdot \cdot'
+title: "A holomorphic self-map of a bounded domain has derivative at most one at a fixed point"
 classification:
   areas:
   - complex-analysis

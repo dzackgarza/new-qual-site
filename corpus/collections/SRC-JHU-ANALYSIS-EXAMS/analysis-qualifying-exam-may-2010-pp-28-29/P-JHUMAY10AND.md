@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10AND
 kind: problem
-title: 'h be a harmonic function on the domain $c \in \mathbb { R }fU\mathrm { R e } f ('
+title: "Harmonic conjugate on the exterior of the unit disk up to a logarithmic term"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANH
 kind: problem
-title: 'that X is a real Banach space and, for all , the norm satisfies $f : X \to \math'
+title: "Unique norming point for a functional on a space satisfying the parallelogram inequality"
 classification:
   areas:
   - real-analysis

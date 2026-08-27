@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANC
 kind: problem
-title: 'I be the unit interval [0, 1], and for . and let $f \ \in \ L ^ { 1 } ( I , d x'
+title: "Dyadic averages of an $L^1$ function converge almost everywhere"
 classification:
   areas:
   - real-analysis
@@ -18,4 +18,4 @@ $$
 I _ { n , j } = [ j 2 ^ { - n } , ( j + 1 ) 2 ^ { - n } ] .
 $$
 
-For $f \ \in \ L ^ { 1 } ( I , d x )$ define $\begin{array} { r } { E _ { n } f ( x ) \ = \ \sum _ { j = 0 } ^ { 2 ^ { n } - 1 } ( 2 ^ { n } \int _ { I _ { n , j } } f d t ) \chi _ { I _ { n , j } } ( x ) } \end{array}$ , where $\chi _ { I _ { n , j } }$ is the characteristic function of $I _ { n , j }$ . Prove that if $f \in L ^ { 1 } ( \bar { I } , d x )$ then lim $\mathfrak { l } _ { n \to \infty } E _ { n } f ( x ) = f ( x )$ almost everywhere in I.
+For $f \ \in \ L ^ { 1 } ( I , d x )$ define $\begin{array} { r } { E _ { n } f ( x ) \ = \ \sum _ { j = 0 } ^ { 2 ^ { n } - 1 } ( 2 ^ { n } \int _ { I _ { n , j } } f d t ) \chi _ { I _ { n , j } } ( x ) } \end{array}$ , where $\chi _ { I _ { n , j } }$ is the characteristic function of $I _ { n , j }$ . Prove that if $f \in L ^ { 1 } ( \bar { I } , d x )$ then $\lim _ { n \to \infty } E _ { n } f ( x ) = f ( x )$ almost everywhere in I.

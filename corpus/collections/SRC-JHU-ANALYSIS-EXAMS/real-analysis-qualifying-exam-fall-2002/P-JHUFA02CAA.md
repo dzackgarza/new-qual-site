@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAA
 kind: problem
-title: "on on and extended periodically of period 1. Define i. Show that $f"
+title: "A continuous nowhere differentiable function built from the triangle wave"
 classification:
   areas:
   - real-analysis

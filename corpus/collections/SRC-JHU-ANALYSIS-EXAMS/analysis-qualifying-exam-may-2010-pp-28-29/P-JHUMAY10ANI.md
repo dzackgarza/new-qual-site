@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANI
 kind: problem
-title: 'that $t \to f ( x , t )\begin{array} { r } { \left| \frac { \partial f } { \part'
+title: "Differentiation under the integral sign with a dominated partial derivative"
 classification:
   areas:
   - real-analysis
