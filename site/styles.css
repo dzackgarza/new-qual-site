@@ -456,7 +456,7 @@ mjx-container[display="true"] {
 
 .problem-filters {
   display: grid;
-  grid-template-columns: minmax(14rem, 2fr) repeat(4, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
   gap: 0.65rem;
   align-items: start;
   margin-top: 1rem;
@@ -752,6 +752,10 @@ div.panel > ul {
 
   .page-layout {
     width: min(100% - 1.25rem, 52rem);
+  }
+
+  .problem-filters {
+    grid-template-columns: 1fr;
   }
 
   .problem-row {

@@ -1525,13 +1525,14 @@ def problem_browser_page(
         ),
         pf.RawBlock(
             '<div class="problem-filters">'
-            '<label for="problem-filter">Search</label>'
+            '<label for="problem-filter">Search'
             '<input id="problem-filter" type="search" placeholder="Group theory, UGA, 2019…">'
+            "</label>"
             + "".join(
-                f'<label for="problem-{axis}">{axis.title()}</label>'
+                f'<label for="problem-{axis}">{axis.title()}'
                 f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
                 + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value))}</option>' for value in values)
-                + "</select>"
+                + "</select></label>"
                 for axis, values in facet_values.items()
             )
             + '<output id="problem-count" aria-live="polite"></output></div>',
