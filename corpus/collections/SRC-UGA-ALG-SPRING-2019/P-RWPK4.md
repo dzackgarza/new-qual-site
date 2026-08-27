@@ -63,11 +63,11 @@ Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in e
 
 - We proceed by finding $p$ eigenvectors and eigenvalues, since the JCF and minimal polynomials will involve eigenvalues and the transformation matrix will involve (generalized) eigenvectors.
 
-:::{.claim title="1"}
+:::{.claim}
 Each vector of the form $\vector p_i \definedas \vector e_1 - \vector e_{i+1} = \thevector{1, 0, 0,\cdots, 0 -1, 0, \cdots, 0 }$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda_0 = 0$, and this gives $p-1$ linearly independent vectors spanning the eigenspace $E_{\lambda_0}$
 :::
 
-:::{.claim title="2"}
+:::{.claim}
 $\vector v_1 = \thevector{1, 1, \cdots, 1}$ is an eigenvector with eigenvalue $\lambda_1 = p$.
 :::
 
@@ -107,7 +107,7 @@ P = [\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] =
 \end{array}\right]
 .\]
 
-:::{.proof title="of claim 1"}
+:::{.proof}
 \envlist
 
 - Compute $$B \vector p_i = \thevector{ 1 + 0 + \cdots + 0 + (-1) + 0 + \cdots + 0} = \thevector{0, 0, \cdots, 0}$$
@@ -140,7 +140,7 @@ where the first equality follows from expanding along the first row and noting t
 
 :::
 
-:::{.proof title="of claim 2"}
+:::{.proof}
 \envlist
 
 - Compute $$B\vector v = \thevector{\sum_{i=1}^p 1, \sum_{i=1}^p 1, \cdots, \sum_{i=1}^p 1} = \thevector{p, p, \cdots, p} = p \thevector{1, 1, \cdots, 1} = p\vector{v}_1,$$ thus $\lambda_1 = p$

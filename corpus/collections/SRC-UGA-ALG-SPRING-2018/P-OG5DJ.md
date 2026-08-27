@@ -33,7 +33,7 @@ Not the nicest proof! Would be better to replace the ad-hoc computations at the 
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 Note that $g(x) = x^2 - 4x + 2$ has roots $\beta = 2 \pm \sqrt{2}$, and so $f$ has roots 
 \[
 \alpha_1 &= \sqrt{2 + \sqrt 2} \\
@@ -46,7 +46,7 @@ and splitting field $K = \QQ(\theset{\alpha_i})$.
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 $K$ is the splitting field of a separable polynomial and thus Galois over $\QQ$.
 Moreover, Since $f$ is irreducible by Eisenstein with $p=2$, the Galois group is a transitive subgroup of $S^4$, so the possibilities are:
 
@@ -100,7 +100,7 @@ and so the order of $\sigma$ is strictly greater than 2, and thus 4, and thus $\
 
 :::
 
-:::{.proof title="of c"}
+:::{.proof}
 ?? The subgroup of index 2 $\generators{\sigma^2}$ corresponds to the field extension $Q(\sqrt 2) / \QQ$.
 :::
 

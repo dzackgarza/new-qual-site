@@ -35,7 +35,7 @@ Now $F$ is a nonvanishing entire function.
 $F$ is bounded on $\CC$.
 :::
 
-:::{.proof title="of claim"}
+:::{.proof}
 Choose $R\gg 1$ so that all of $z_k$ are in $\DD_R$, so $\abs{\xi - z_k} < R$ for all $\xi \in \DD_R$ and all $k$.
 By Cauchy's integral formula,
 \[

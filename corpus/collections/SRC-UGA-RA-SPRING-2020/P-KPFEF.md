@@ -33,7 +33,7 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 - Mean Value Theorem for Integrals: $\int_a^b f(t)\, dt = (b-a) f(c)$ for some $c\in [a, b]$.
 :::
 
-:::{.solution title="of a"}
+:::{.solution}
 Stated integral equality: 
 
 - Let $\eps > 0$
@@ -59,7 +59,7 @@ To see that this doesn't force $f(x)\to 0$ as $\abs{x} \to \infty$:
 - However $f(x) = 1$ for infinitely many even integers $x > N$, so $f(x) \not\to 0$ as $\abs{x}\to\infty$.
 :::
 
-:::{.solution title="of b"}
+:::{.solution}
 \envlist
 
 :::{.proof title="Solution 1, a slight trick"}
@@ -191,7 +191,7 @@ For $x\geq 1$,
 
 :::
 
-:::{.solution title="of c"}
+:::{.solution}
 \envlist
 
 - No: take $f(x) = {1\over x\ln x}$

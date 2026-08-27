@@ -40,7 +40,7 @@ Let $f\in L^1(\RR)$ and for each $h > 0$ let
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 
 - Fix $\varepsilon > 0$.
   If we can find a set $A$ such that the following calculation holds for $h$ small enough, we're done:
@@ -70,7 +70,7 @@ as
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 We have
 \[
 \int_\RR \abs{A_h(f)(x)} ~dx 

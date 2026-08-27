@@ -28,7 +28,7 @@ If equality holds for some $z\neq w$ in either expression, then $f= \lambda F$ w
 
 :::
 
-:::{.proof title="of Schwarz-Pick"}
+:::{.proof}
 
 ![](../../assets/figures/2021-11-27_00-55-19.png)
 

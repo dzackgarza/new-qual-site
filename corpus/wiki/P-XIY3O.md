@@ -20,7 +20,7 @@ State and prove Green's Theorem for rectangles.
 Use this to prove Cauchy's Theorem for functions that are analytic in a rectangle.
 :::
 
-:::{.problem title="Variant"}
+:::{.problem}
 Suppose $f\in C_\CC^1(\Omega)$ and $T\subset \Omega$ is a triangle with $T^\circ \subset \Omega$.
 
 - Apply Green's theorem to show that $\int_T f(z) ~dz = 0$.

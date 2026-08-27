@@ -34,7 +34,7 @@ b. Let $\theset{a_n}_{n\in \NN} \in \ell^2(\NN)$ and prove that there exists an 
 
 c. Prove that if $\theset{u_n}$ is *complete*, Bessel's inequality becomes an equality.
 
-:::{.solution title="part b"}
+:::{.solution}
 \envlist
 
 - Take $\theset{a_n} \in \ell^2$, then note that $\sum \abs{a_n}^2 < \infty \implies$ the tails vanish.
@@ -56,7 +56,7 @@ since the $u_k$ are all orthogonal.
 
 :::
 
-:::{.solution title="part c"}
+:::{.solution}
 Let $x$ and $u_n$ be arbitrary. 
 
 \[

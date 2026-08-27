@@ -51,7 +51,7 @@ c. Suppose that $R$ has exactly one prime ideal $P$ . Prove that every element $
 ::: {.solution}
 \envlist
 
-::: {.proof title="of a"}
+::: {.proof}
 \envlist
 
 - Let $\mathfrak{p}$ be prime and $x\in N$.
@@ -61,7 +61,7 @@ c. Suppose that $R$ has exactly one prime ideal $P$ . Prove that every element $
 - Since $\mathfrak p$ is prime, inductively we obtain $x\in\mathfrak p$.
 :::
 
-::: {.proof title="of b"}
+::: {.proof}
 \envlist
 
 - Let $S = \theset{r^k \mid k\in \NN}$ be the set of positive powers of $r$.
@@ -73,7 +73,7 @@ c. Suppose that $R$ has exactly one prime ideal $P$ . Prove that every element $
 - Since $R$ is commutative, $\mathfrak{p}$ is prime.
 :::
 
-::: {.proof title="of c"}
+::: {.proof}
 \envlist
 
 - Suppose $R$ has a unique prime ideal $\mathfrak{p}$.

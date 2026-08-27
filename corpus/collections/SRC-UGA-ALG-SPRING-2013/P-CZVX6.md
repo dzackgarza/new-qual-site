@@ -46,7 +46,7 @@ How to extend basis?
 
 Let $f$ be the characteristic polynomial of $T$.
 
-:::{.proof title="of a, $\implies$. Matrix-dependent"}
+:::{.proof}
 $\implies$:
 
 - By contrapositive, suppose there is a proper nonzero invariant subspace $W<V$ with $T(W) \subseteq W$, we will show the characteristic polynomial $f \definedas \chi_{V, T}(x)$ is reducible.
@@ -86,7 +86,7 @@ Why?
 
 :::
 
-:::{.proof title="of a, $\impliedby$"}
+:::{.proof}
 $\impliedby$
 
 - Suppose $f$ is reducible, then we will produce a proper $T\dash$invariant subspace.
@@ -95,7 +95,7 @@ $\impliedby$
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 \envlist
 
 - Let $\min_{T, F}(x)$ be the minimal polynomial of $T$ and $\chi_{T, F}(x)$ be its characteristic polynomial.

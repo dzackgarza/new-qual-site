@@ -25,7 +25,7 @@ Prove that $X$ is connected but not path connected.
 :::{.solution}
 \envlist
 
-:::{.proof title="Variant 1"}
+:::{.proof}
 $X$ is connected:
 
 - Write $X = L\disjoint G$ where $L = \theset{0} \cross [-1, 1]$ and $G = \theset{\Gamma(\sin(x)) \suchthat x\in (0, 1]}$ is the graph of $\sin(x)$.
@@ -94,7 +94,7 @@ $X$ is connected:
 
 :::
 
-:::{.proof title="Variant 2"}
+:::{.proof}
 Let $X = A \union B$ with $A = \theset{(0, y) \suchthat y\in [-1, 1] }$ and $B = \theset{(x, \sin(1/x)) \suchthat x\in (0, 1]}$.
 Since $B$ is the graph of a continuous function, which is always connected.
 Moreover, $X = \bar{A}$, and the closure of a connected set is still connected.

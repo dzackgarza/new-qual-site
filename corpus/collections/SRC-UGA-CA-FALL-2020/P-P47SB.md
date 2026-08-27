@@ -36,7 +36,7 @@ g(z) \da {f(z) \over \psi_a(z) \psi_{-a}(z)}
 $\abs{g(z)}\leq 1$ on $\DD$.
 :::
 
-:::{.proof title="of claim"}
+:::{.proof}
 $\abs{\psi_a(z)} = 1$ on $\bd \DD$, so $\lim_{r\to 1}\psi_a(re^{it}) = 1$ for any fixed $t$.
 Then for any $f$ with $\abs{f} \leq 1$ in $\DD$,
 \[

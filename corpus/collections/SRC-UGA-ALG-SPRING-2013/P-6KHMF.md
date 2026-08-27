@@ -36,7 +36,7 @@ Let $M$ be an $R\dash$module, and recall that for $0\neq \mu \in M$, the *annihi
 :::{.solution}
 \envlist
 
-:::{.proof title="part a and b"}
+:::{.proof}
 \envlist
 
 - Maximal: a proper ideal $I\normal R$, so $I\neq R$, such that if $J\contains I$ is any other ideal, $J = R$.
@@ -44,7 +44,7 @@ Let $M$ be an $R\dash$module, and recall that for $0\neq \mu \in M$, the *annihi
   Applying the usual Zorn's lemma argument produces a maximal element.
 :::
 
-:::{.proof title="part c"}
+:::{.proof}
 $\impliedby$:
 By contrapositive: if $r\in R$ is a unit and $\mfm$ is maximal, then $r\in \mfm \implies \mfm = R$, contradicting that $\mfm$ is proper.
 
@@ -64,7 +64,7 @@ $\implies$:
 
 :::
 
-:::{.proof title="of d"}
+:::{.proof}
 \envlist
 
 - Write $I \da \Ann(u)$ for some $u$, and toward a contradiction suppose $ab\in I$ but $a,b\not\in I$.

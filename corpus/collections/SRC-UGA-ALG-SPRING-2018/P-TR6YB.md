@@ -49,7 +49,7 @@ Write down exactly one representative in each isomorphism class of groups of ord
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 Strategy: get $p$ to divide $\abs{Z(G)}$.
 
 - Apply the class equation:
@@ -74,7 +74,7 @@ Strategy: get $p$ to divide $\abs{Z(G)}$.
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 Strategy: examine $\abs{G/Z(G)}$ by cases.
 
 - $1$: Then $G = Z(G)$ and $G$ is abelian.
@@ -83,7 +83,7 @@ Strategy: examine $\abs{G/Z(G)}$ by cases.
 
 :::
 
-:::{.proof title="of c"}
+:::{.proof}
 \envlist 
 
 - By Sylow
@@ -101,7 +101,7 @@ Strategy: examine $\abs{G/Z(G)}$ by cases.
 
 :::
 
-:::{.proof title="of d"}
+:::{.proof}
 \envlist
 
 - $\ZZ_{5^2} \cross \ZZ_{7^2}$

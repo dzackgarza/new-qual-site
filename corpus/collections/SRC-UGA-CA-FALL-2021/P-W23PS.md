@@ -116,7 +116,7 @@ e^{i\pi} e^{-i\pi \over n}\qty{1 - e^{2\pi i \over n}}
 &= {\pi \over n\sin\qty{\pi \over n}}
 .\]
 
-:::{.proof title="of claim 1"}
+:::{.proof}
 Parameterize the curves:
 
 - $\gamma_1 \da \ts{t \st t\in [0, R]}, \dz = \dt$
@@ -133,7 +133,7 @@ Then, a direct check:
 
 :::
 
-:::{.proof title="of claim 2"}
+:::{.proof}
 Parameterize $\gamma_2 = \ts{Re^{it} \st t\in [0, 2\pi/n]}$ and apply the ML estimate:
 \[
 {1\over 1 + (Re^{it})^n} \leq {1\over R^n - 1} \implies \int_{\gamma_2}f \leq {1\over R^n - 1} \qty{{2\pi R \over n}} = \bigo(R^{n-1})\convergesto{R\to\infty}0

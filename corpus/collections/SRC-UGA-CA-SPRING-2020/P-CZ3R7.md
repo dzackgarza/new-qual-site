@@ -31,7 +31,7 @@ Find its center and radius.
 
 :::
 
-:::{.solution title="part 1"}
+:::{.solution}
 \[
 \abs{w_1 - c^2 w_2}^2 
 &= (w_1 - c^2 w_2) ( \bar{w_1} - c^2 \bar{w_2} ) \\
@@ -43,7 +43,7 @@ Find its center and radius.
 where we've applied the assumption $\abs{w_1} = c\abs{w_2}$ twice.
 :::
 
-:::{.solution title="part 2"}
+:::{.solution}
 Using part 1:
 \[
 w_1\da z-z_1, w_2 \da z-z_2 \implies \abs{w_1} &= c\abs{w_2} \\

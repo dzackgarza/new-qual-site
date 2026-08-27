@@ -36,7 +36,7 @@ If $A \in \Gl(m, \FF)$ is invertible and $A^n/\FF$ is diagonalizable, then $A/\F
 :::
 
 
-:::{.proof title="of claim"}
+:::{.proof}
 - Let $A \in \Gl(m, \FF)$. 
 - Since $A^n$ is diagonalizable, $\min_{A^n}(x) \in \FF[x]$ is separable and thus factors as a product of $m$ **distinct** linear factors:
 \[

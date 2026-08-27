@@ -51,7 +51,7 @@ From here it is easy to map to the disc:
 - $z\mapsto {z-i\over z+i}$ maps $\HH\to \DD$.
 
 
-:::{.proof title="of claim"}
+:::{.proof}
 Since both $C_1, C_2$ pass through $0, 1$, their images become circles passing through $f(0)=0, f(1) = \infty$, so lines through the origin.
 Since $f$ fixes $\RR$ and the original region is symmetric about $\RR$, the resulting region will also be symmetric about $\RR$.
 As shown in the picture, since the interior of the region is to the left of each circle, the image will be to the left of each line.

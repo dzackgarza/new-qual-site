@@ -51,7 +51,7 @@ The theorem then follows immediately: $F(w): U' \to W_\eps$ is a continuous and 
 Then noting that $F(w_0) = 1$ since $z_0\in U'$ and $w_0\in W_\eps$, we have $F\equiv 1 > 0$ for all $w$.
 
 
-:::{.proof title="of claim"}
+:::{.proof}
 Choose
 \[
 \eps \da \min_{z\in \bd U'}\abs{f(z) - w_0}

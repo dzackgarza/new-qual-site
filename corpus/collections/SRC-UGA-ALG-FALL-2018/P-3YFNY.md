@@ -41,7 +41,7 @@ Show that there exists a column vector $v$ such that the set $\{v, Av, . . . , A
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 Letting $\vector v$ be fixed, since $\theset{A^j \vector v}$ spans $V$ we have A
 \[
 B\vector v = \sum_{j=0}^{n-1}c_j A^j \vector v
@@ -62,7 +62,7 @@ so $B = p(A)$ as operators since their actions agree on every basis vector in $V
 
 :::
 
-:::{.proof title="of b, $\implies$"}
+:::{.proof}
 \envlist
 
 - If $\theset{A^j \vector v_k \suchthat 0\leq j \leq n-1}$ is linearly independent, this means that $A$ does satisfy any polynomial of degree $d < n$.
@@ -70,7 +70,7 @@ so $B = p(A)$ as operators since their actions agree on every basis vector in $V
 - So $\deg m_A(x) = n$, and since $m_A(x)$ divides $\chi_A(x)$ and both are monic degree polynomials of degree $n$, they must be equal.
 :::
 
-:::{.proof title="of b, $\impliedby$"}
+:::{.proof}
 \envlist
 
 - Let $A\actson k[x]$ by $A \actson p(x) \definedas p(A)$.

@@ -3,8 +3,8 @@ schema: qual/card@1
 id: E-YAEMZ
 kind: exercise
 title: Compactness, limit point compactness, and sequential compactness in second-countable
-subtitle: Munkres §28
   Hausdorff or metric spaces
+subtitle: Munkres §28
 classification:
   areas:
   - topology

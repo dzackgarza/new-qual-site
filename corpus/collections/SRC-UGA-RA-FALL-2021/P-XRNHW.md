@@ -37,7 +37,7 @@ Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost ever
 
 :::
 
-:::{.solution title="Part a"}
+:::{.solution}
 Let $y\in F^c$ which is open, then one can find an epsilon ball about $y$ avoiding $F$.
 We can take $\eps \da \delta_F(y)$ to define $A \da B_{\eps}(y)$, and we still have $A \subseteq F^c$ and $F \subseteq A^c$.
 Note that $\abs{x-y}^2 = (x-y)^2$ since this is always positive, then
@@ -52,7 +52,7 @@ Note that $\abs{x-y}^2 = (x-y)^2$ since this is always positive, then
 .\]
 :::
 
-:::{.solution title="Part b"}
+:::{.solution}
 Estimate:
 \[
 \int_F I(x) \dx 

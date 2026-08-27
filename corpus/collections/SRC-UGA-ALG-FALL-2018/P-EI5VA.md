@@ -45,7 +45,7 @@ Suppose $G$ is a finite group acting transitively on a set $S$ with at least 2 e
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 \envlist
 
 - Fix $x$, then $y\in \Orb(x) \implies g\cdot x = y$ for some $g$, and $x = g\inv \cdot y$.
@@ -62,7 +62,7 @@ so $\Stab(x) = g\inv \Stab(y) g$.
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 Let $G$ act on its subgroups by conjugation, 
 
 - The orbit $G\cdot H$ is the set of all subgroups conjugate to $H$, and
@@ -95,7 +95,7 @@ H\leq N_G(H) \implies \abs{H} \leq \abs{N_G(H)} \implies {1\over \abs{N_G(H)}} \
 
 :::
 
-:::{.proof title="of c"}
+:::{.proof}
 \envlist
 
 - Let $G\actson X$ transitively where $\abs{X} \geq 2$.

@@ -33,7 +33,7 @@ $f\in \bigo\qty{1\over z^{3}} \subseteq \bigo\qty{1\over z^{1+\eps}}$ means that
 
 :::
 
-:::{.proof title="Of integrand decay"}
+:::{.proof}
 A quick justification: for $R>1$, if $n>k$ then $\abs{z}^n > \abs{z}^k$, so using the reverse triangle inequality,
 \[
 \abs{z\over (z^2 + 4z + 13)^2} 

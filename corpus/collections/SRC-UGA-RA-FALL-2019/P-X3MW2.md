@@ -44,7 +44,7 @@ and
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 \envlist
 
 - Equivalently, we can show
@@ -92,7 +92,7 @@ and
 :::
 
 
-:::{.proof title="of b"}
+:::{.proof}
 \envlist
 
 - Set 

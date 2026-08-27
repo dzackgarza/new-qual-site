@@ -63,7 +63,7 @@ ii. Argue that the $g$ obtained above must in fact belong to $L^∞([0, 1])$ and
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 \envlist
 
 - Note $X = [0, 1] \implies m(X) = 1$.
@@ -79,7 +79,7 @@ ii. Argue that the $g$ obtained above must in fact belong to $L^∞([0, 1])$ and
 
 Let $\Lambda \in L^1(X)\dual$ be arbitrary.
 
-:::{.proof title="of b, Existence of $g$ representing $\Lambda$"}
+:::{.proof}
 Let $f\in L^2\subseteq L^1$ be arbitrary.
 
 Claim: $\Lambda\in L^1(X)\dual \implies \Lambda \in L^2(X)\dual$.
@@ -111,7 +111,7 @@ Now apply Riesz Representation for $L^2$: there is a $g \in L^2$ such that $$f\i
 
 :::
 
-:::{.proof title="of b, $g$ is in $L^\infty$"}
+:::{.proof}
 \envlist
 
 - It suffices to show $\norm{g}_{L^\infty(X)} < \infty$.

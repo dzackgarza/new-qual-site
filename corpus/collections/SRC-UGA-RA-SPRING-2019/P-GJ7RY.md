@@ -23,7 +23,7 @@ b. Prove that $C([0, 1])$ is not complete under the $L^1\dash$norm $\norm{f}_1 =
 :::{.solution}
 \envlist
 
-:::{.proof title="of a"}
+:::{.proof}
 \envlist
 
 - Let $\theset{f_n}$ be  a Cauchy sequence in $C(I, \norm{\wait}_\infty)$, so $\lim_n\lim_m \norm{f_m - f_n}_\infty = 0$, we will show it converges to some $f$ in this space.
@@ -58,7 +58,7 @@ $$
 
 :::
 
-:::{.proof title="of b"}
+:::{.proof}
 \envlist
 
 - It suffices to produce a Cauchy sequence that does not converge to a continuous function. 

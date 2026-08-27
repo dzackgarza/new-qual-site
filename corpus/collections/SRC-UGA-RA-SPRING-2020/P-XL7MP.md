@@ -93,7 +93,7 @@ using that $(f-g)\convolve \varphi_\eps\in L^2$ and $\ts{e_n}$ for a complete or
 
 :::
 
-:::{.solution title="Part 1"}
+:::{.solution}
 \envlist
 
 :::{.claim}
@@ -152,7 +152,7 @@ $L^2([0, 1]) \subseteq L^1([0, 1])$.
 > Note: this proof shows $L^2(X) \subseteq L^1(X)$ whenever $\mu(X) < \infty$.
 :::
 
-:::{.solution title="Part 2"}
+:::{.solution}
 \envlist
 
 - First, $S_Nf$ converges in $\mch$ to something, say $g \da \lim_{n\to\infty} S_n f$, since

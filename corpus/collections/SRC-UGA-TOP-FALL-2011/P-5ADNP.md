@@ -3,8 +3,8 @@ schema: qual/card@1
 id: P-5ADNP
 kind: problem
 title: $\operatorname{cl}_X(B)\cap A=\operatorname{cl}_A(B)$ for $B\subset A\subset
-subtitle: Fall 2011
   X$
+subtitle: Fall 2011
 classification:
   areas:
   - topology
