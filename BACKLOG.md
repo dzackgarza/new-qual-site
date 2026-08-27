@@ -32,9 +32,9 @@ ok
 
 ok
 
-## dead-provenance-hrefs (1)
+## dead-provenance-hrefs (0)
 
-- SRC-UGA-CA-SPRING-2019: https://web.archive.org/web/20220426161540/https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf -> error: _ssl.c:1064: The handshake operation timed out
+ok
 
 ## shared-provenance-hrefs (0)
 
