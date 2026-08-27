@@ -56,7 +56,7 @@ A_i\normal G, \quad G = A_1 \cdots A_k,\quad A_k \intersect \prod_{i\neq k} A_i 
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of 1"}
 \envlist
 
 - We have 
@@ -79,7 +79,7 @@ n_3 \in \theset{1, 7} \quad n_5 \in \theset{1, 21} \quad n_7 \in \theset{1, 15}
 
 :::
 
-:::{.proof}
+:::{.proof title="of 2"}
 \envlist
 - By (a), either $Q$ or $R$ is normal.
 - Thus $QR \leq G$ is a subgroup, and it has order $\abs{Q} \cdot \abs{R} = 5\cdot 7 = 35$.
@@ -91,7 +91,7 @@ n_3 \in \theset{1, 7} \quad n_5 \in \theset{1, 21} \quad n_7 \in \theset{1, 15}
 Part (b) not finished!
 :::
 
-:::{.proof}
+:::{.proof title="of 3"}
 \envlist
 
 - We want to show $Q, R\normal G$, so we proceed by showing $\textbf{not }\qty{n_5 = 21 \text{ or } n_7 = 15}$, which is equivalent to $\qty{n_5 = 1 \text{ and } n_7 = 1}$ by the previous restrictions.
@@ -126,7 +126,7 @@ G = \theset{\text{elements of order } n} \disjoint \theset{\text{elements of ord
 
 :::
 
-:::{.proof}
+:::{.proof title="of 4"}
 Suppose $P$ is normal and recall $\abs{P} = 3, \abs{Q} = 5, \abs{R} = 7$.
 
 - $P\intersect QR = \theset{e}$ since $(3, 35) = 1$ 

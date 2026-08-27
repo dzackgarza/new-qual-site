@@ -50,7 +50,7 @@ Why these claims imply the result:
 If $f_n(z)\to z$ uniformly, both are uniformly bounded, and $e^z$ is uniformly continuous, then $e^{f(z)}\to e^z$ uniformly.
 
 
-:::{.proof}
+:::{.proof title="Of first claim"}
 We'll first show that for $w$ in a neighborhood of zero avoiding 1, there exists a constant $C$ such that
 \[
 \abs{ 1 - {\log(1+w) \over w} } \leq C\abs{w}

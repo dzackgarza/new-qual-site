@@ -40,7 +40,7 @@ If $R$ has zero-divisors, prove that every non-zero $R\dash$module has non-zero 
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 It suffices to show that 
 $$
 r\in R, ~t_1, t_2\in \Tor(M) \implies rt_1 + t_2 \in \Tor(M)
@@ -64,7 +64,7 @@ s_1 s_2(rt_1 + t_2)
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 Let $R = \ZZ/6\ZZ$ as a $\ZZ/6\ZZ \dash$module, which is not an integral domain as a ring.
 
 Then $[3]_6\actson [2]_6 = [0]_6$ and $[2]_6\actson [3]_6 = [0]_6$, but $[2]_6 + [3]_6 = [5]_6$, where 5 is coprime to 6, and thus $[n]_6\actson [5]_6 = [0] \implies [n]_6 = [0]_6$. So $[5]_6$ is *not* a torsion element.
@@ -73,7 +73,7 @@ So the set of torsion elements are not closed under addition, and thus not a sub
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 Suppose $R$ has zero divisors $a,b \neq 0$ where $ab = 0$.
 Then for any $m\in M$, we have $b\actson m \definedas bm \in M$ as well, but then 
 $$

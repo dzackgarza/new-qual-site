@@ -33,7 +33,7 @@ f(z) = z^n + \qty{ c_{n+1} z^{n+1} + c_{n+2}z^{n+2} + \cdots} = z^n + z^{n+1} \s
 By Rouché, $f(z)$ and $z^n$ have the same number of zeros in a small disc $\DD_\rho(0)$.
 :::
 
-:::{.proof}
+:::{.proof title="of claim"}
 Write $m(z) = \sum_{k\geq 0}c_{k+n}z^k$ and $M(z) = z^n$; then if $\abs{m(z)} < \abs{M(z)}$ for any circle $\abs{z} = \rho$ with $\rho< 1$ then $M$ and $m+M = f$ will have the same number of zeros ($n$ with multiplicity).
 
 Bounding $m$, the tail of the Laurent series of $f$: by Cauchy's integral formula, on a disc of radius $R$,

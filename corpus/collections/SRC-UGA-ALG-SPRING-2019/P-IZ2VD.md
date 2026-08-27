@@ -38,7 +38,7 @@ Show that if $\pi(x) \in F[x]$ is an irreducible polynomial that divides $x^{p^n
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 We can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which since $\pi(x)$ is irreducible is an extension of $\FF_p$ of degree $d$ and thus a field of size $p^d$ with a natural quotient map of rings $\rho: \FF_p[x] \to K$.
 
 Since $K\units$ is a group of size $p^d-1$, we know that for any $y \in K\units$, we have by Lagrange's theorem that the order of $y$ divides $p^d-1$ and so $y^{p^d} = y$.
@@ -59,13 +59,13 @@ Since $\rho$ is a ring morphism, we have
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 
 :::{.claim}
 $\pi(x)$ divides $x^{p^n}-x \iff \deg \pi$ divides $n$.
 :::
 
-:::{.proof}
+:::{.proof title="of claim, $\implies$"}
 Let $L \cong \GF(p^n)$ be the splitting field of $\phi_n(x) \definedas x^{p^n}-x$; then since $\pi \divides \phi_n$ by assumption, $\pi$ splits in $L$.
 Let $\alpha \in L$ be any root of $\pi$; then there is a tower of extensions $\FF_p \leq \FF_p(\alpha) \leq L$.
 
@@ -80,7 +80,7 @@ for some $\ell \in \ZZ^{\geq 1}$, so $d$ divides $n$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of claim, $\impliedby$"}
 $\impliedby$:
 If $d\divides n$, use the fact (claim) that $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$. 
 So $f = f_i$ for some $i$.

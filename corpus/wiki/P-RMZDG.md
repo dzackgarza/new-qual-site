@@ -39,7 +39,7 @@ Show that if the real part of an entire function is bounded, then $f$ is constan
 
 :::
 
-:::{.solution}
+:::{.solution title="Part 1"}
 \[
 \abs{ f(z_0) }
 &= \abs{ {1\over 2\pi i} \oint_{\abs{z-z_0} = R } {f(z) \over (z-z_0)^{n+1} }  \dz } \\
@@ -60,7 +60,7 @@ f(z)
 making $f$ a polynomial of degree at most $k$.
 :::
 
-:::{.solution}
+:::{.solution title="Part 2"}
 Write $S_\phi \da \ts{0<\Arg(z) < \phi}$ and choose $n$ large enough so that 
 \[
 \DD \subseteq S \union \zeta_n S \union \zeta_n^2 S \union\cdots\union \zeta_{n}^{n-1}S
@@ -86,7 +86,7 @@ But if $f(\zeta_n^k z)\equiv 0$ on $\DD$, then $f(z) \equiv 0$ on $\DD$, since e
 
 :::
 
-:::{.solution}
+:::{.solution title="Part 3"}
 Consider
 \[
 f(z) \da \prod_{1\leq k \leq n} (w_k - z)
@@ -99,14 +99,14 @@ Now note that $f(w_k) = 0$ and $f$ is continuous in $\DD$.
 So $\abs{f(z)} \in [0, M] \subseteq \RR$ where $M>1$, so by the intermediate value theorem, $\abs{f(z)} = 1$ for some $z$.
 :::
 
-:::{.solution}
+:::{.solution title="Part 4, using MMP"}
 Write $f=u+iv$ where by assumption $u$ is bounded.
 Both $u$ and $v$ are harmonic, so if $\abs{u} \leq M$ on $\CC$, then there is some disc where $\abs{u} = M$ for some point in the interior.
 By the MMP for harmonic functions, $u$ is constant on $\CC$.
 So $u_x, u_y = 0$, and by Cauchy-Riemann, $v_x, v_y = 0$, so $v'=0$ and $v$ is constant, making $f$ constant.
 :::
 
-:::{.solution}
+:::{.solution title="Part 4, using Liouville"}
 
 Consider $g(z) \da e^{f(z)}$, then $\abs{g(z)} = e^{\Re(z)}$ is entire and bounded and thus constant by Liouville's theorem.
 So $g'(z) = 0$, but on the other hand $g'(z) = f'(z) e^{f(z)} = 0$, so $f'(z) = 0$ and $f$ must be constant since $e^f$ is nonvanishing.

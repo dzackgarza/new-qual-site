@@ -48,7 +48,7 @@ Note that choosing a limsup vs a liminf is fiddly -- for one choice, you can onl
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 - Observation: $\mu$ finite means $\mu(E) < \infty$ for all $E \in\mathcal{B}$, which we'll need in several places.
 - Prove a more general statement: for any measure $\mu$,
 \[
@@ -108,7 +108,7 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 - Now use that $\lim_{N\to\infty}\mu(F_{N+1}) = \lim_{N\to\infty} \mu(F_N)$ to conclude.
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Toward a contradiction, negate the implication: there exists an $\eps>0$ such that for all $\delta$, there exists an $E\in \mathcal{B}$ 

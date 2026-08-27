@@ -39,7 +39,7 @@ Show that any finitely generated $R\dash$module $M$ can be expressed as a direct
 :::{.solution}
 Let $R$ be a ring with 1.
 
-:::{.proof}
+:::{.proof title="of a"}
 An $R\dash$module $M$ is **free** if any of the following conditions hold:
 
 - $M$ admits an $R\dash$linearly independent spanning set $\theset{\vector b_\alpha}$, so $$m\in M \implies m = \sum_\alpha r_\alpha \vector b_\alpha$$ and $$\sum_\alpha r_\alpha \vector b_\alpha = 0_M \implies r_\alpha = 0_R$$ for all $\alpha$.
@@ -59,7 +59,7 @@ Equivalently,
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Define the annihilator:
@@ -75,7 +75,7 @@ M_t \definedas \theset{m\in M \suchthat \Ann(m) \neq 0} \leq M
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 \envlist
 
 - Let the following be an SES where $F$ is a free $R\dash$module:
@@ -114,7 +114,7 @@ x_\alpha &\mapsto y_\alpha
 
 :::
 
-:::{.proof}
+:::{.proof title="of c, shorter proof"}
 \envlist
 
 - Free implies projective
@@ -155,7 +155,7 @@ x_\alpha &\mapsto y_\alpha
 
 :::
 
-:::{.proof}
+:::{.proof title="of d"}
 \envlist
 
 There is a SES

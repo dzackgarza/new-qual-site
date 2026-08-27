@@ -32,7 +32,7 @@ Thus a functor is exact iff it is both left and right exact, yielding
 .\]
 
 
-:::{.example}
+:::{.example title="of an exact functor"}
 $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 :::
 

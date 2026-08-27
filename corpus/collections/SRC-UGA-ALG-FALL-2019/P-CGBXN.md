@@ -39,7 +39,7 @@ Prove that $m = k$.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - Since $\abs{F} = q$ and $[E:F] = k$, we have $\abs{E} = q^k$ and $\abs{E\units} = q^k-1$.
@@ -48,7 +48,7 @@ Prove that $m = k$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Rephrasing (a), we have 
@@ -61,7 +61,7 @@ n \divides q^k-1
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 \envlist
 
 - Write $k = \ell m$, which is possible since $m \divides k$ by part (b).

@@ -18,7 +18,7 @@ For a directed system $(X_i, f_{ij})$ this is the direct limit: the $\iota_i$ po
 The dual notion, reversing all arrows, is a limit.
 :::
 
-::: {.example}
+::: {.example title="of colimits"}
 \envlist
 
 - Coproducts

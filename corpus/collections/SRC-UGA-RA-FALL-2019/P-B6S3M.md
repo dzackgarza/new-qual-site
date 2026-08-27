@@ -54,7 +54,7 @@ for all positive integers $k$ and $K$ with $k < K$, then $\mu(B) = 1$.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - The Borel $\sigma\dash$algebra is closed under countable unions/intersections/complements, 
@@ -62,7 +62,7 @@ for all positive integers $k$ and $K$ with $k < K$, then $\mu(B) = 1$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Tails of convergent sums vanish, so 
@@ -85,7 +85,7 @@ B_M \definedas \Intersect_{N = 1}^M \Union_{n\geq N} B_n \decreasesto B
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 \envlist
 
 - Since $\mu(X) = 1$, in order to show $\mu(B) = 1$ it suffices to show $\mu(X\sm B) = 0$.

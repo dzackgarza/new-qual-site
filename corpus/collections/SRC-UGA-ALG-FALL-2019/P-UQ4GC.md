@@ -40,7 +40,7 @@ Prove that $\det M = |\Lambda\dual /\Lambda|$.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - Let $\vector v \in \Lambda$, so $\vector v = \sum_{i=1}^n r_i \vector e_i$ where $r_i \in \ZZ$ for all $i$.
@@ -55,7 +55,7 @@ Prove that $\det M = |\Lambda\dual /\Lambda|$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 
 :::{.claim}
 The determinant is nonzero.
@@ -82,7 +82,7 @@ v_1 \\ v_2 \\ \vdots
 - We can now note that $\inner{\vector e_k}{\vector v} = \sum_{j=1}^n v_j \inner{\vector e_k}{\vector e_j} = 0$ for every $k$ by the above observation, which forces $\vector v = 0$ by non-degeneracy of $\inner{\wait}{\wait}$, a contradiction. 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 \envlist
 
 ??? 

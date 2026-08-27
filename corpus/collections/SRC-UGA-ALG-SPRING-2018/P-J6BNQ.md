@@ -44,7 +44,7 @@ $$
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 By the Galois correspondence, it suffices to show that the fixed field of $H_1 \intersect H_2$ is $E_1 E_2$.
 
 Let $\sigma \in H_1 \intersect H_2$; then $\sigma \in \Aut(K)$ fixes both $E_1$ and $E_2$.
@@ -60,14 +60,14 @@ so $\sigma$ fixes $E_1 E_2$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
 
 :::{.claim}
 All elements in this subset commute.
 :::
 
-:::{.proof}
+:::{.proof title="of claim"}
 \envlist
 
 - Let $\sigma = \sigma_1 \sigma_2 \in H_1 H_2$.
@@ -90,7 +90,7 @@ All elements in this subset commute.
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 By the Galois correspondence, the subgroup $H_1H_2 \leq G$ will correspond to an intermediate field $E$ such that $K/E/\QQ$ and $E$ is the fixed field of $H_1 H_2$.
 
 But if $\sigma \in H_1 H_2$, then $\sigma = \tau_1 \tau_2$ where $\tau_i$ is an automorphism of $K$ that fixes $E_i$, and so 

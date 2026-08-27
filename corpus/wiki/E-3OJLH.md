@@ -34,7 +34,7 @@ $f_0$ is identically zero.
 
 Given this, the result follows immediately since $f(z) = \lambda z^2$.
 
-:::{.proof}
+:::{.proof title="of claim"}
 Note that on the LHS, $\abs{ f(re^{it})} \to 1$ as $r\to 1$ for any $t$.
 So this must be true on the RHS, and the first term $\lambda \abs{ re^{it}}^2 \to 1$, forcing $\abs{h(re^{it})} \to 0$.
 So $h\equiv 0$ on $\abs{z} = 1$, and by the MMP, $\abs{h} = 0$ in $\DD$, making $h\equiv 0$ on $\DD$.

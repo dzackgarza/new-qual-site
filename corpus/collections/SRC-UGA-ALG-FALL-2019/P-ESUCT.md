@@ -71,7 +71,7 @@ from the *multiplicative* group of units to the Galois group.
 
 The claim is that this is a surjective homomorphism, and since both groups are the same size, an isomorphism.
 
-:::{.proof}
+:::{.proof title="of surjectivity"}
 Letting $\sigma \in K$ be arbitrary, noting that $[K: \QQ]$ has a basis $\theset{1, \zeta, \zeta^2, \cdots, \zeta^{n-1}}$, it suffices to specify $\sigma(\zeta)$ to fully determine the automorphism.
 (Since $\sigma(\zeta^k) = \sigma(\zeta)^k$.)
 
@@ -83,7 +83,7 @@ Thus $\theta$ is surjective.
 
 :::
 
-:::{.proof}
+:::{.proof title="of being a homomorphism"}
 \[
 \tau_j \circ \tau_k (\zeta) =\tau_j(\zeta^k) = \zeta^{jk} \implies
 \tau_{jk} = \theta(jk) = \tau_j \circ \tau_k
@@ -91,7 +91,7 @@ Thus $\theta$ is surjective.
 
 :::
 
-:::{.proof}
+:::{.proof title="of part 2"}
 We have $G \definedas \Gal(K/\QQ) \cong \ZZ_{20}\units$ and $\phi(20) = 8$.
 This group is **not** cyclic: by the Chinese remainder theorem
 \[

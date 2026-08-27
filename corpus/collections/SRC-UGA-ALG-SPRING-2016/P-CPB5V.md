@@ -48,7 +48,7 @@ Possibly worth skipping.
 :::{.solution}
 Note: solutions borrowed from folks on Math twitter!
 
-:::{.proof}
+:::{.proof title="part 1"}
 \envlist
 
 - Existence: the claim is that $2R \da \ts{2y \st y\in R}$ is a nontrivial two-sided ideal of $R$, forcing $2R = R$ by simpleness.
@@ -68,7 +68,7 @@ Note: solutions borrowed from folks on Math twitter!
   .\]
 :::
 
-:::{.proof}
+:::{.proof title="part 2"}
 \envlist
 
 - First we'll show $z=2(yz)$:
@@ -98,7 +98,7 @@ yz + yz &= z \\
 so $zy=yz$.
 :::
 
-:::{.proof}
+:::{.proof title="of 2, if $R$ is unital"}
 \envlist
 
 - If $1\in R$, 

@@ -26,7 +26,7 @@ Proof 2 not complete?
 
 \envlist
 
-::: {.proof}
+::: {.proof title="Variant 1"}
 
 - Take two connected sets $X, Y$; then there exists $p\in X\intersect Y$.
 
@@ -52,7 +52,7 @@ Proof 2 not complete?
 - Thus $A = X\union Y$, forcing $B = \emptyset$.
 :::
 
-::: {.proof}
+::: {.proof title="Variant 2"}
 
 Let $X \definedas \union_\alpha X_\alpha$, and let $p\in \intersect X_\alpha$.
 Suppose toward a contradiction that $X = A \disjoint B$ with $A,B$ nonempty, disjoint, and relatively open as subspaces of $X$.

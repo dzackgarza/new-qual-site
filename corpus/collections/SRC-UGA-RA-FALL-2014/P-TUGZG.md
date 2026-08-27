@@ -33,7 +33,7 @@ Prove that $\sum f_n$ is also continuous.
 If $F_N\to F$ uniformly with each $F_N$ continuous, then $F$ is continuous.
 :::
 
-:::{.proof}
+:::{.proof title="of claim"}
 \envlist
 
 - Follows from an $\varepsilon/3$ argument: 

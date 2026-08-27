@@ -46,7 +46,7 @@ What is the degree of $\QQ(\zeta, \sqrt[4] 2)$ over $\QQ$?
 
 Let $K = \QQ(\zeta)$.
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - $\zeta \definedas e^{2\pi i / 8}$ is a primitive $8$th root of unity
@@ -59,7 +59,7 @@ Let $K = \QQ(\zeta)$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(2) \cross \ZZ/(2)$, the Klein four-group.
@@ -69,7 +69,7 @@ Let $K = \QQ(\zeta)$.
 
 :::
 
-:::{.proof}
+:::{.proof title="of c"}
 \envlist
 
 - Let $L = \QQ(\zeta, \sqrt[4] 2)$.

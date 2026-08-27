@@ -43,7 +43,7 @@ $$
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="Variant 1"}
 \envlist
 
 - $S\subset X$ is **not ** connected if $S$ with the subspace topology is not connected.
@@ -86,7 +86,7 @@ $\impliedby$:
 
 :::
 
-:::{.proof}
+:::{.proof title="Variant 2"}
 \envlist
 
 If $S\subset X$ is not connected, then there exists a subset $A\subset S$ that is both open and closed in the subspace topology, where $A\neq \emptyset, S$.

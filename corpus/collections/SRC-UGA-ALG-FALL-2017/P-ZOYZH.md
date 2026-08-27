@@ -40,7 +40,7 @@ Show the ring $M_n (k)$, $n \times n$ matrices with entries in $k$, is a simple 
 ::: {.solution}
 \envlist
 
-::: {.proof}
+::: {.proof title="of a"}
 $\implies$:
 
 - Suppose $\Id(R) = \ts{\gens{0}, \gens{1}}$.
@@ -59,7 +59,7 @@ $\impliedby$:
 - Since $R$ is a field, $a\inv \in R$, and $aa\inv = 1\in I$ forces $I = \gens{1}$.
 :::
 
-::: {.proof}
+::: {.proof title="of b"}
 
 - Let $J\normal R$ be a nonzero two-sided ideal, noting that $R$ is noncommutative -- the claim is that $J$ contains $I_n$, the $n\times n$ identity matrix, and thus $J = R$.
 

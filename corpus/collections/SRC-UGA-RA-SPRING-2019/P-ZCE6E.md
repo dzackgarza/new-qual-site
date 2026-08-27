@@ -110,7 +110,7 @@ $\impliedby$:
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 - Writing down what the slices are
 \[

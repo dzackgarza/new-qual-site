@@ -38,7 +38,7 @@ b. Give an example that shows that the "Hausdorff" hypothesis in part (a) is nec
 ::: {.solution}
 \envlist
 
-::: {.proof}
+::: {.proof title="of a"}
 We'll show that $f$ is a closed map.
 
 Let $U \in X$ be closed.
@@ -50,7 +50,7 @@ Let $U \in X$ be closed.
 - Since $Y$ is Hausdorff, $f(U)$ is closed.
 :::
 
-::: {.proof}
+::: {.proof title="of b"}
 Note that any finite space is clearly compact.
 
 Take $f: ([2], \tau_1) \to ([2], \tau_2)$ to be the identity map, where $\tau_1$ is the discrete topology and $\tau_2$ is the indiscrete topology.

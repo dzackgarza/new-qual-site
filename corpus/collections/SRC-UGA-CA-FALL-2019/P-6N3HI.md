@@ -38,7 +38,7 @@ $f$ has the following effect:
 
 :::
 
-:::{.proof}
+:::{.proof title="of claim"}
 Write $C_1$ for $S^1$ and $C_2$ for the smaller circle.
 Computing the image of $C_1$: parameterize as $\gamma_1(t) = e^{it}$ for $t\in [-\pi, \pi]$, then
 \[

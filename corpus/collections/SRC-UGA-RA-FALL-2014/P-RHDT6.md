@@ -42,7 +42,7 @@ Show that $f$ is continuous at $x \iff x\not\in \QQ$.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - Set $S \definedas \sum_{i\in I} \alpha(i)$, we will show that $S<\infty \implies I$ is countable.
@@ -65,7 +65,7 @@ S_n \definedas \theset{i\in I \suchthat \alpha(i) \geq {1\over n}}
 .\]
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - We'll prove something more general: let $Q = \ts{q_k}$ be countable and $\ts{\alpha_k \da \alpha(q_k)}$ be summable, and define

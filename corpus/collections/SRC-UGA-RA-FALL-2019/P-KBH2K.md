@@ -39,7 +39,7 @@ Prove that if $\displaystyle\sum_{n=1}^{\infty} \frac{a_{n}}{n}$ converges, then
   - See [this MSE answer](https://math.stackexchange.com/questions/514802/convergence-of-series-implies-convergence-of-cesaro-mean).
 :::
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - Prove a stronger result: 
@@ -74,7 +74,7 @@ Revisit, not so clear that the last line can be made smaller than $\eps$, since 
 :::
 #todo
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Define

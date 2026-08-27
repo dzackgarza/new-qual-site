@@ -33,14 +33,14 @@ Prove that $R$ is commutative.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \[
 2a  = (2a)^2 = 4a^2 = 4a \implies 2a = 0
 .\]
 Note that this implies $x = -x$ for all $x\in R$.
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \[
 a+b = (a+b)^2 &= a^2 + ab + ba + b^2 = a + ab + ba + b \\
 &\implies ab + ba = 0 \\

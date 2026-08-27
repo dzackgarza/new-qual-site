@@ -147,7 +147,7 @@ P = [v_1, v_2, v_3]
 
 :::
 
-:::{.proof}
+:::{.proof title="part c"}
 \envlist
 
 - Write $\min_A(t) = (t-2)(t-1)^{\ell_1}$, then since $\min_A(t)$ divides $\chi_A(t)$ either $\ell_1 = 1, 2$.

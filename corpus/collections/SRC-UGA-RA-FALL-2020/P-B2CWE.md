@@ -48,7 +48,7 @@ A_\delta f \to \alpha f \text{ in } L^1(\RR) \qtext{as} \delta\to 0^+
 See Folland 8.14.
 :::
 
-:::{.solution}
+:::{.solution title="Part 1"}
 This is a direct application of Fubini-Tonelli:
 \[
 \norm{A_\delta f} 
@@ -64,7 +64,7 @@ Here we've used translation and dilation invariance of the Lebesgue integral.
 
 :::
 
-:::{.solution .foldopen}
+:::{.solution title="Part 2" .foldopen}
 Write $\phi_\delta(y) \da \delta\inv\phi(\delta\inv y)$, then
 \[
 \norm{A_\delta f - \alpha f}_1

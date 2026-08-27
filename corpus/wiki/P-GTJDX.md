@@ -31,7 +31,7 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 - $\abs{z} = 1$ implies $\abs{F(z)} = 1$.
 :::
 
-:::{.solution}
+:::{.solution title="part 1"}
 \[
 0 &\leq (1 - \abs{w}^2)(1-\abs{z}^2) \\
 \implies \abs{w}^2 + \abs{z}^2 &\leq 1 + \abs{w}^2 \abs{z}^2 \\
@@ -41,7 +41,7 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 Note that if either $\abs{w}^2 = 1$ or $\abs{z}^2 = 1$ then the first line is an equality, yielding equality in the final line.
 :::
 
-:::{.solution}
+:::{.solution title="part 2"}
 \envlist
 
 - That $F: \DD\to \DD$: follows from the inequality, since $\abs{z}, \abs{w} < 1$ for $z,w\in \DD$.

@@ -38,7 +38,7 @@ Prove that $\ZZ[2\sqrt{2}]$ is not a UFD.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of 1"}
 \envlist
 
 - The important assumption is $a(x)\not\in R[x]$, we'll assume $R$ is a UFD and try to contradict this.
@@ -51,7 +51,7 @@ Prove that $\ZZ[2\sqrt{2}]$ is not a UFD.
 :::
 
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Set $R = \ZZ[2\sqrt 2], F = \QQ[2\sqrt 2]$.

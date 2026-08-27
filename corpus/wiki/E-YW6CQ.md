@@ -27,7 +27,7 @@ Define $F(z) \da {f(z) \over g(z)}$.
 $F$ is holomorphic on $\Omega$.
 :::
 
-::: {.proof}
+::: {.proof title="of claim"}
 Note that $g(a) = 0$ iff $f(a) = 0$, so $F$ has no poles.
 If $F$ has a singularity at $z_0$, noting that $\abs{F(z_0)} = 1$, $F$ is bounded in a neighborhood of $z_0$ and thus the singularity must be removable.
 By Riemann's removable singularity theorem, $F$ extends to a holomorphic function.

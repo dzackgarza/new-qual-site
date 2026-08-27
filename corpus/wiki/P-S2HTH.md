@@ -23,7 +23,7 @@ each class, and prove that this list is complete.
 :::{.solution}
 
 
-:::{.claim}
+:::{.claim title="1"}
 Conjugacy classes in $S_n$ are completely
 determined by cycle type.
 :::

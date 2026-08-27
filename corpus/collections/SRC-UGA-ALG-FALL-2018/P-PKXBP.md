@@ -37,7 +37,7 @@ Let $M$ be a maximal proper subgroup of $G$. Show that either $P \subseteq M$ or
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - Every $p\dash$subgroup is contained in some Sylow $p\dash$subgroup, so $P \subseteq S_p^i$ for some $S_p^i \in \mathrm{Syl}_p(G)$.
@@ -54,7 +54,7 @@ P = gPg\inv \subseteq gS_p^i g\inv = S_p^j
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - If $P$ is not contained in $M$, then $M < MP$ is a proper subgroup

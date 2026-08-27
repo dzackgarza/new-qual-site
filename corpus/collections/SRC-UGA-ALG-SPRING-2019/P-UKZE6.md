@@ -48,7 +48,7 @@ J(R) &\da \intersect _{\mfm \in \mspec} \mfm
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 Define the set of proper ideals
 $$
 S = \theset{J \suchthat I   \subseteq J < R}
@@ -61,7 +61,7 @@ Given a chain $J_1 \subseteq \cdots$, there is an upper bound $J \definedas \uni
 
 :::
 
-:::{.proof}
+:::{.proof title="of b, $\implies$"}
 $\implies$:
 
 - We will show that $x\in J(R) \implies 1+x \in R\units$, from which the result follows by letting $x=rx$.
@@ -78,7 +78,7 @@ Since $x\in J(R)$, $x\in \mathfrak{m}$ as well.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b, $\impliedby$"}
 $\impliedby$
 
 - Fix $x\in R$, and suppose $1+rx$ is a unit for all $r\in R$.
@@ -107,7 +107,7 @@ But $1\in R$, so we have
 
 :::
 
-:::{.proof}
+:::{.proof title="of c: $J(R) = \mathfrak N(R)$"}
 $\mathfrak N(R) \subseteq J(R)$:
 
 - Use the fact $x\in \mathfrak N(R) \implies x^n = 0 \implies 1 + rx$ is a unit $\iff x\in J(R)$ by (b):

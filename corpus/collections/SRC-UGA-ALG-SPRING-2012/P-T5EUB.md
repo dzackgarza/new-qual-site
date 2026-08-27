@@ -42,7 +42,7 @@ Use transitivity of characteristic.
 :::{.solution}
 \envlist
 
-:::{.proof}
+:::{.proof title="of a"}
 \envlist
 
 - By definition, $S\in \Syl_p(G) \iff S$ is a *maximal* $p\dash$subgroup: $S<G$ is a $p\dash$group, so $\size S = p^k$ for some $k$, $S$ is a proper subgroup, and $S$ is maximal in the sense that there are no proper $p\dash$subgroups $S'$ with $S \subseteq S' \subseteq G$.
@@ -58,7 +58,7 @@ Use transitivity of characteristic.
 
 :::
 
-:::{.proof}
+:::{.proof title="of b"}
 \envlist
 
 - Claim: $Z(H) \leq H$ works.
