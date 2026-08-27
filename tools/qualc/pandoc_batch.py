@@ -84,8 +84,26 @@ def _free_port() -> int:
         return int(listener.getsockname()[1])
 
 
+def _require_pandoc_version() -> None:
+    """Refuse to build on a pandoc too old to mark wikilinks the way we read them.
+
+    Pandoc 3.6 puts `wikilink` in a link's title; 3.10 puts it in the link's
+    classes, which is what the transclusion pass reads. On the older one every
+    `[[card-id]]` stays an ordinary link and every page transcludes nothing --
+    silently, because an unrecognised wikilink is still a valid link. That
+    produced a green build whose wiki pages had no statements on them.
+    """
+    reported = subprocess.run(["pandoc", "--version"], check=True, capture_output=True, text=True).stdout
+    version = tuple(int(part) for part in reported.split()[1].split(".")[:2])
+    if version < PandocServer.MINIMUM_PANDOC:
+        wanted = ".".join(str(part) for part in PandocServer.MINIMUM_PANDOC)
+        raise PandocBatchError(f"pandoc {wanted} or newer is required; found {reported.splitlines()[0]}")
+
+
 class PandocServer:
     """Own one native Pandoc server for a compiler invocation."""
+
+    MINIMUM_PANDOC = (3, 10)
 
     def __init__(self) -> None:
         self._process: subprocess.Popen[str] | None = None
@@ -93,6 +111,7 @@ class PandocServer:
         self._abbreviations: str | None = None
 
     def __enter__(self) -> Self:
+        _require_pandoc_version()
         abbreviations = subprocess.run(
             ["pandoc", "--print-default-data-file=abbreviations"],
             check=True,

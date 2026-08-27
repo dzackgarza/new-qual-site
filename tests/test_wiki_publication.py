@@ -418,7 +418,10 @@ def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) ->
     links = LinkCollector()
     links.feed(html)
     assert [classes for href, classes, _ in links.links if href == "../tag/DEF-PGROUP.html"] == ["qual-section-tag"]
-    assert [classes for href, classes, _ in links.links if href == "../tag/PRB-INDEXP.html"] == ["wikilink qual-link-math"]
+    # The class this repository writes, not the one pandoc writes: `wikilink`
+    # sits in the link's classes on 3.10 and in its title on 3.6.
+    inline = [classes.split() for href, classes, _ in links.links if href == "../tag/PRB-INDEXP.html"]
+    assert [[name for name in classes if name.startswith("qual-")] for classes in inline] == [["qual-link-math"]]
 
 
 def test_a_card_referenced_twice_on_a_page_is_transcluded_once(tmp_path: Path) -> None:
