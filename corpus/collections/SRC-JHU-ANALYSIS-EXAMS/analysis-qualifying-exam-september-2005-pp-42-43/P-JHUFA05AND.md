@@ -23,4 +23,5 @@ $$
 
 Give an example showing that strict inequality can occur.
 
-(b) Suppose in addition that $\|f_n\|\to\|f\|$. Show that $f_n\to f$ in norm.
+(b) Suppose in addition that $\|f_n\|\to\|f\|$.
+Show that $f_n\to f$ in norm.
