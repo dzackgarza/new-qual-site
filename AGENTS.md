@@ -403,6 +403,28 @@ untitled card, not a subtitled one. The field is free text and optional. Absent
 means the card has no subtitle. Nothing derives one, so a card with no second
 line to show gets no `subtitle:` key rather than a copy of its own title.
 
+# Review prompts
+
+Any card may carry `prompts:`, the questions that front it when it is used for
+review.
+
+```yaml
+title: Normal Family
+prompts:
+- What is a normal family?
+- Give the Montel criterion.
+```
+
+A prompt is a question, and the card is its answer. One card may have several,
+because one statement can be asked for in more than one way; the list keeps them
+all rather than choosing between them. There is no separate flashcard kind: a
+prompt hangs on the definition or theorem it tests, so the mathematics is
+written once.
+
+The list is free text and empty by default. Empty means the card has no review
+question yet, and nothing derives one. A title names the card; it is not a
+question, and it is never used as one.
+
 # Solution status
 
 Solution status is derived from content, not declared. A problem or exercise

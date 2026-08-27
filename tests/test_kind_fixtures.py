@@ -425,3 +425,32 @@ def test_subtitle_is_absent_unless_authored() -> None:
     from qualc.model import parse_card
 
     assert parse_card(FIXTURES / "PRB-INDEXP.md").card.subtitle is None
+
+
+def test_prompts_parse_in_authored_order(tmp_path: Path) -> None:
+    """Several questions may front one card, so the mathematics is stored once
+    and asked for in more than one way. Order is the author's."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "DEF-PGROUP.md"
+    path.write_text(
+        (FIXTURES / "DEF-PGROUP.md")
+        .read_text()
+        .replace(
+            "classification:\n",
+            "prompts:\n- What is a normal family?\n- Give the Montel criterion.\nclassification:\n",
+            1,
+        )
+    )
+    assert parse_card(path).card.prompts == [
+        "What is a normal family?",
+        "Give the Montel criterion.",
+    ]
+
+
+def test_card_without_prompts_is_never_asked() -> None:
+    """Empty, not a default and not the title: a card with no authored question
+    has nothing to front it, and the title is a name rather than a question."""
+    from qualc.model import parse_card
+
+    assert parse_card(FIXTURES / "DEF-PGROUP.md").card.prompts == []

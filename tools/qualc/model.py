@@ -118,6 +118,10 @@ class CardBase(Strict):
     # measured across ten kinds, exercise and problem being only the two
     # largest.
     subtitle: str | None = None
+    # Questions that front this card for review. A list because one statement
+    # can be asked for in several ways, and nothing picks between them. Empty
+    # means the card has no review prompt; no prompt is derived from the title.
+    prompts: list[str] = []
     classification: Classification
     relations: list[Relation]
     review: Review
