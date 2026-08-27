@@ -1,15 +1,17 @@
-# Document queue E: PDF attachments needing check
+# Document queue E: Source documents without collection cards
 
-354 PDF files on disk are not referenced by any collection provenance.
-468 total PDFs in assets/attachments. 114 are provenance sources.
+354 PDF files sit in assets/attachments/ but no collection card
+lists them as a source. These are uncarded source documents — exam papers,
+problem sets, homework sheets, and notes that need to be read and either
+carded into a new collection (if they contain exam problems) or marked as
+non-exam material (solutions, notes, reference).
 
-Per AGENTS.md: solution PDFs and notes are NOT provenance. Exam papers with
-unextracted problems ARE candidates. Local copies of exams already carded via
-external URL do not need a local provenance link.
+Per AGENTS.md: the PDF is the provenance. The missing work is creating the
+collection card and extracting its problems into cards.
 
-## UCLA basic exam copies (basic-*) (36)
+## UCLA basic exams (basic-*) (36)
 
-Local copies of UCLA basic exams. Collections likely point at the UCLA URL. Check if already carded.
+UCLA basic exam papers by term. Each needs a collection card with this PDF as provenance.
 
 - [ ] basic-01F.pdf
 - [ ] basic-02F.pdf
@@ -51,7 +53,7 @@ Local copies of UCLA basic exams. Collections likely point at the UCLA URL. Chec
 
 ## UCLA prelim archive (Fall/Spring/Summer NN) (60)
 
-Local copies of UCLA prelim exams by term. Check if already carded via external URL.
+UCLA prelim exams by term. Each needs a collection card.
 
 - [ ] Fall00.pdf
 - [ ] Fall77.pdf
@@ -117,7 +119,7 @@ Local copies of UCLA prelim exams by term. Check if already carded via external 
 
 ## Named exam/qual/prelim PDFs (41)
 
-These name themselves as exams or quals. Check each against existing collections.
+Exam papers from various institutions. Each needs a collection card.
 
 - [ ] 140A_Exam_Review.pdf
 - [ ] 8.1.2 Further Examples (1).pdf
@@ -175,9 +177,9 @@ Workshop source PDFs. Check if already carded under workshop collections.
 - [ ] day_7_homology.pdf
 
 
-## Solution PDFs (not provenance) (96)
+## Solution PDFs (not exam papers) (96)
 
-Solution writeups. Not the exam paper. Do not add to provenance. May feed issue #2.
+Solution writeups. Not the exam paper — do not create a collection from these.
 
 - [ ] AG Solutions (1).pdf
 - [ ] Algebra_Final_Solns 1.pdf
@@ -279,7 +281,7 @@ Solution writeups. Not the exam paper. Do not add to provenance. May feed issue 
 
 ## Homework PDFs (8)
 
-Homework sheets. Check if already carded; if not, may be extraction candidates.
+Homework sheets. If they contain problems to extract, create a collection card.
 
 - [ ] 8150-hw1.pdf
 - [ ] 8150-hw2.pdf
@@ -293,7 +295,7 @@ Homework sheets. Check if already carded; if not, may be extraction candidates.
 
 ## Notes/syllabus (not exam papers) (12)
 
-Lecture notes, course notes, syllabi. Not provenance. Not extraction candidates.
+Lecture notes, course notes, syllabi. Not exam papers. Not collection candidates.
 
 - [ ] 8210 Lecture Notes (Usher) Smooth Manifolds.pdf
 - [ ] Adam Syllabus.pdf
@@ -309,7 +311,7 @@ Lecture notes, course notes, syllabi. Not provenance. Not extraction candidates.
 - [ ] Usher DG Notes.pdf
 
 
-## Other PDFs (check classification) (94)
+## Other source documents (check) (94)
 
 Problem sets, review sheets, topic compilations, textbooks, practice tests.
 
