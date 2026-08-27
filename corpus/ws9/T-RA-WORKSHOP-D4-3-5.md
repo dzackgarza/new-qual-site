@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-5
 kind: theorem
 title: 'Theorem 3.5: Discontinuities of monotone functions'
-subtitle: Theorem 3.5
 classification:
   areas:
   - real-analysis

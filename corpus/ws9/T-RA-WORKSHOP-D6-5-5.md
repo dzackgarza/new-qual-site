@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-5
 kind: theorem
 title: 'Theorem 5.5: Integral mean value theorem'
-subtitle: Theorem 5.5 (Mean value theorem)
 classification:
   areas:
   - real-analysis

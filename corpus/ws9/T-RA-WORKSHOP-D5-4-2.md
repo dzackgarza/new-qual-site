@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-2
 kind: theorem
 title: 'Theorem 4.2: Mean Value Theorem'
-subtitle: Theorem 4.2 (Mean Value Theorem)
 classification:
   areas:
   - real-analysis

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-3
 kind: theorem
 title: 'Theorem 6.3: Uniform limits and Riemann–Stieltjes integrals'
-subtitle: Theorem 6.3
 classification:
   areas:
   - real-analysis

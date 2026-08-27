@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-4
 kind: theorem
 title: 'Theorem 6.4: Uniform convergence of differentiable functions'
-subtitle: Theorem 6.4
 classification:
   areas:
   - real-analysis

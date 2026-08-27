@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-2
 kind: theorem
 title: 'Theorem 6.2: Weierstrass M-test'
-subtitle: Theorem 6.2 (Weierstrass M-test)
 classification:
   areas:
   - real-analysis

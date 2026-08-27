@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-4
 kind: theorem
 title: 'Theorem 3.4: Intermediate Value Theorem'
-subtitle: Theorem 3.4 (Intermediate Value Theorem)
 classification:
   areas:
   - real-analysis

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-4
 kind: theorem
 title: 'Theorem 5.4: First fundamental theorem of calculus'
-subtitle: Theorem 5.4 (First fundamental theorem of calculus)
 classification:
   areas:
   - real-analysis

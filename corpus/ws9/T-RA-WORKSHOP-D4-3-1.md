@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-1
 kind: theorem
 title: 'Proposition 3.1: Equivalent characterizations of continuity'
-subtitle: Proposition 3.1
 classification:
   areas:
   - real-analysis

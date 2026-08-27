@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-7
 kind: theorem
 title: 'Theorem 6.7: Stone–Weierstrass'
-subtitle: Theorem 6.7 (Stone–Weierstrass)
 classification:
   areas:
   - real-analysis

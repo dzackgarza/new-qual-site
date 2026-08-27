@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-3
 kind: theorem
 title: 'Theorem 3.3: Uniform continuity on compact sets'
-subtitle: Theorem 3.3
 classification:
   areas:
   - real-analysis

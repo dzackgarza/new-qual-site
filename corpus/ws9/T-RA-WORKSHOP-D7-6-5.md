@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-5
 kind: theorem
 title: 'Theorem 6.5: Arzelà–Ascoli'
-subtitle: Theorem 6.5 (Arzelà–Ascoli)
 classification:
   areas:
   - real-analysis

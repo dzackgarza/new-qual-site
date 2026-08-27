@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-2
 kind: theorem
 title: 'Theorem 5.2: Riemann–Stieltjes integration by parts'
-subtitle: Theorem 5.2
 classification:
   areas:
   - real-analysis

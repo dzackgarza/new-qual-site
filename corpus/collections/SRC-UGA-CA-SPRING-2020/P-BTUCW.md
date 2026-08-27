@@ -19,11 +19,11 @@ Prove the open mapping theorem for holomorphic functions: If $f$ is a non-consta
 :::
 
 :::{.solution}
-Idea:^[Using the argument principle.]
+Idea:
 
 ![](../../assets/30_Complex_Analysis/999_Quals/figures/2022-01-02_02-14-17.png)
 
-Let $f: U\to \CC$.
+Let $f: U\to \CC$.^[Using the argument principle.]
 Pick $w_0\in W$ with $f(z_0) = w_0$ for some $z_0\in U$; we want to show that $w_0$ is an interior point of $f(U)$, so we're looking for a disc containing $w_0$ and contained in $f(U)$.
 
 Write 

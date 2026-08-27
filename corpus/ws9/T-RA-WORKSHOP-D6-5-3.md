@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-3
 kind: theorem
 title: 'Theorem 5.3: Reduction of a Stieltjes integral to a Riemann integral'
-subtitle: Theorem 5.3
 classification:
   areas:
   - real-analysis

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-1
 kind: theorem
 title: 'Theorem 4.1: Fermat’s stationary-point theorem'
-subtitle: Theorem 4.1
 classification:
   areas:
   - real-analysis

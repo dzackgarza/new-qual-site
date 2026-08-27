@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-1
 kind: theorem
 title: 'Theorem 5.1: Riemann’s condition for Riemann–Stieltjes integrability'
-subtitle: Theorem 5.1 (Riemann’s condition)
 classification:
   areas:
   - real-analysis

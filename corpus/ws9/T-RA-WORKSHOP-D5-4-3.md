@@ -3,7 +3,6 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-3
 kind: theorem
 title: 'Theorem 4.3: Taylor’s theorem with remainder'
-subtitle: Theorem 4.3 (Taylor’s Theorem)
 classification:
   areas:
   - real-analysis
