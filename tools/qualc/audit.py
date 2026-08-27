@@ -170,14 +170,14 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
             listed: list[str]
             match item.card.source:
                 case ExamSource() | HomeworkSource():
-                    listed = list(item.card.source.problems)
+                    listed = [e.id for e in item.card.source.problems]
                 case CompilationSource():
                     if item.card.source.sections:
-                        listed = [entry for section in item.card.source.sections for entry in section.problems]
+                        listed = [e.id for section in item.card.source.sections for e in section.problems]
                     else:
-                        listed = list(item.card.source.problems)
+                        listed = [e.id for e in item.card.source.problems]
                 case TextbookSource():
-                    listed = [pid for section in item.card.source.sections for pid in section.problems]
+                    listed = [e.id for section in item.card.source.sections for e in section.problems]
             if listed:
                 edges.setdefault(item.card.id, set()).update(listed)
 
@@ -247,18 +247,18 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
             continue
         entries: list[str] = []
         if isinstance(card.source, ExamSource):
-            entries = list(card.source.problems)
+            entries = [e.id for e in card.source.problems]
         elif isinstance(card.source, TextbookSource):
             for section in card.source.sections:
-                entries.extend(section.problems)
+                entries.extend(e.id for e in section.problems)
         elif isinstance(card.source, HomeworkSource):
-            entries = list(card.source.problems)
+            entries = [e.id for e in card.source.problems]
         elif isinstance(card.source, CompilationSource):
             if card.source.sections:
                 for section in card.source.sections:
-                    entries.extend(section.problems)
+                    entries.extend(e.id for e in section.problems)
             else:
-                entries = list(card.source.problems)
+                entries = [e.id for e in card.source.problems]
         for entry in entries:
             if entry not in ids:
                 check.violations.append(f"{card.id}: lists unknown id {entry}")

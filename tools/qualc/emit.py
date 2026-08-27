@@ -888,10 +888,7 @@ def _prompts_json(card: sqlite3.Row) -> list[dict]:
     questions are several questions, not one list with a heading over it. A
     card with no prompts emits nothing at all.
     """
-    return [
-        {"t": "RawBlock", "c": ["html", f'<div class="review-question">{html.escape(prompt)}</div>']}
-        for prompt in cast(list[str], json.loads(card["prompts"]))
-    ]
+    return [{"t": "RawBlock", "c": ["html", f'<div class="review-question">{html.escape(prompt)}</div>']} for prompt in cast(list[str], json.loads(card["prompts"]))]
 
 
 def _dup[T](value: T) -> T:

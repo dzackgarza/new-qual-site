@@ -140,17 +140,46 @@ PROBLEM_ID_RE = re.compile(r"^[PE]-[A-Z0-9.]+(?:-[A-Z0-9.]+)*$")
 COLLECTION_ID_RE = re.compile(r"^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
 
 
-def _check_problem_ids(v: list[str]) -> list[str]:
-    for pid in v:
-        if not PROBLEM_ID_RE.match(pid):
-            raise ValueError(f"not a problem id: {pid!r}")
+class ProblemEntry(Strict):
+    """One problem's appearance in one collection.
+
+    `comment` says where the problem sits in *this* source -- "Problem 6",
+    "§52.2". It belongs to the pairing and not to the problem: `P-4X7XU` sits on
+    two exams and is numbered differently on each, which a field on the card
+    could not express without deleting one appearance. It says nothing the
+    collection already says; a comment repeating the collection's own name and
+    date is noise, and is not written at all.
+
+    A bare id in YAML is this entry with no comment. That is the common case --
+    most appearances have nothing to add -- so it stays the plain spelling and
+    is widened here rather than at every author's keyboard:
+
+        problems:
+        - P-MMCHV                      # no comment
+        - id: P-4X7XU                  # a comment
+          comment: Problem 6
+    """
+
+    id: str
+    comment: str | None = None
+
+    @model_validator(mode="before")
+    @classmethod
+    def _widen_bare_id(cls, value: object) -> object:
+        return {"id": value} if isinstance(value, str) else value
+
+
+def _check_problem_ids(v: list[ProblemEntry]) -> list[ProblemEntry]:
+    for entry in v:
+        if not PROBLEM_ID_RE.match(entry.id):
+            raise ValueError(f"not a problem id: {entry.id!r}")
     return v
 
 
-def _check_section_entry_ids(v: list[str]) -> list[str]:
+def _check_section_entry_ids(v: list[ProblemEntry]) -> list[ProblemEntry]:
     for entry in v:
-        if not PROBLEM_ID_RE.match(entry) and not COLLECTION_ID_RE.match(entry):
-            raise ValueError(f"not a problem or collection id: {entry!r}")
+        if not PROBLEM_ID_RE.match(entry.id) and not COLLECTION_ID_RE.match(entry.id):
+            raise ValueError(f"not a problem or collection id: {entry.id!r}")
     return v
 
 
@@ -166,11 +195,11 @@ class ExamSource(Strict):
     institution: str
     area: str
     date: DateSpec
-    problems: list[str] = []
+    problems: list[ProblemEntry] = []
 
     @field_validator("problems")
     @classmethod
-    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+    def _problems_are_problem_ids(cls, v: list[ProblemEntry]) -> list[ProblemEntry]:
         return _check_problem_ids(v)
 
 
@@ -183,11 +212,11 @@ class CollectionSection(Strict):
     """
 
     name: str
-    problems: list[str] = []
+    problems: list[ProblemEntry] = []
 
     @field_validator("problems")
     @classmethod
-    def _problems_are_list_ids(cls, v: list[str]) -> list[str]:
+    def _problems_are_list_ids(cls, v: list[ProblemEntry]) -> list[ProblemEntry]:
         return _check_section_entry_ids(v)
 
 
@@ -210,11 +239,11 @@ class HomeworkSource(Strict):
     source_kind: Literal["homework"]
     area: str
     date: DateSpec
-    problems: list[str] = []
+    problems: list[ProblemEntry] = []
 
     @field_validator("problems")
     @classmethod
-    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+    def _problems_are_problem_ids(cls, v: list[ProblemEntry]) -> list[ProblemEntry]:
         return _check_problem_ids(v)
 
 
@@ -224,12 +253,12 @@ class CompilationSource(Strict):
     source_kind: Literal["compilation"]
     area: str
     date: DateSpec
-    problems: list[str] = []
+    problems: list[ProblemEntry] = []
     sections: list[CollectionSection] = []
 
     @field_validator("problems")
     @classmethod
-    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+    def _problems_are_problem_ids(cls, v: list[ProblemEntry]) -> list[ProblemEntry]:
         return _check_problem_ids(v)
 
     @model_validator(mode="after")
@@ -240,8 +269,8 @@ class CompilationSource(Strict):
 
     def listed_problem_ids(self) -> list[str]:
         if self.sections:
-            return [pid for section in self.sections for pid in section.problems if PROBLEM_ID_RE.match(pid)]
-        return list(self.problems)
+            return [e.id for section in self.sections for e in section.problems if PROBLEM_ID_RE.match(e.id)]
+        return [e.id for e in self.problems]
 
 
 SourceSpec = Annotated[

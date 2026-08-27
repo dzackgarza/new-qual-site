@@ -156,7 +156,7 @@ def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
     parsed = parse_card(card).card
     assert isinstance(parsed, CollectionCard)
     assert isinstance(parsed.source, CompilationSource)
-    assert parsed.source.sections[0].problems == ["SRC-UGA-FIX"]
+    assert [e.id for e in parsed.source.sections[0].problems] == ["SRC-UGA-FIX"]
     assert parsed.source.listed_problem_ids() == []
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
@@ -454,3 +454,70 @@ def test_card_without_prompts_is_never_asked() -> None:
     from qualc.model import parse_card
 
     assert parse_card(FIXTURES / "DEF-PGROUP.md").card.prompts == []
+
+
+
+APPEARANCE = "    term: spring\n  problems:\n  - id: P-INDEXP\n    comment: {comment}\n  - E-CENTER\n"
+
+
+def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
+    """A comment says where the problem sits in THIS source, so one problem
+    listed by two collections carries a different comment on each. That is the
+    thing a field on the problem card could not express: it would have to pick
+    one of the two numbers and delete the other appearance.
+
+    The second entry is a bare id, which stays legal and arrives with no
+    comment -- most appearances have nothing to add beyond what the collection
+    already says, and are not forced into a mapping to say it.
+    """
+    work = fixture_repo(tmp_path)
+    corpus = work / "corpus"
+    (corpus / "P-INDEXP.md").write_text((corpus / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
+    (corpus / "E-CENTER.md").write_text((corpus / "EXE-CENTER.md").read_text().replace("EXE-CENTER", "E-CENTER"))
+    for name, comment in (("SRC-UGA-FIX.md", "Problem 6"), ("SRC-HW.md", "Problem 5")):
+        card = corpus / name
+        card.write_text(card.read_text().replace("    term: spring\n", APPEARANCE.format(comment=comment), 1))
+
+    assert run_qualc("build", work).returncode == 0
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    assert con.execute("select collection_id, problem_id, comment from collection_problems order by collection_id, ordinal").fetchall() == [
+        ("SRC-HW", "P-INDEXP", "Problem 5"),
+        ("SRC-HW", "E-CENTER", None),
+        ("SRC-UGA-FIX", "P-INDEXP", "Problem 6"),
+        ("SRC-UGA-FIX", "E-CENTER", None),
+    ]
+
+
+def test_commented_entry_must_still_be_an_id(tmp_path: Path) -> None:
+    """A comment does not buy an entry out of the id check. Prose in the id
+    position fails the build rather than entering the catalog as a problem."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-UGA-FIX.md"
+    path.write_text(
+        (FIXTURES / "SRC-UGA-FIX.md").read_text().replace("    term: spring\n", "    term: spring\n  problems:\n  - id: Problem 6\n    comment: P-INDEXP\n", 1)
+    )
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_commented_entry_may_be_a_nested_collection(tmp_path: Path) -> None:
+    """A section entry that is itself a collection keeps working, comment and
+    all: the workshop packet whose day 1 *is* another exam paper."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-NEILNOTES.md"
+    path.write_text(
+        (FIXTURES / "SRC-NEILNOTES.md")
+        .read_text()
+        .replace(
+            "    term: fall\n",
+            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - id: SRC-UGA-FIX\n      comment: the Spring 2019 paper, whole\n",
+            1,
+        )
+    )
+    parsed = parse_card(path).card
+    assert isinstance(parsed, CollectionCard)
+    assert isinstance(parsed.source, CompilationSource)
+    assert [(e.id, e.comment) for e in parsed.source.sections[0].problems] == [("SRC-UGA-FIX", "the Spring 2019 paper, whole")]
+    assert parsed.source.listed_problem_ids() == []

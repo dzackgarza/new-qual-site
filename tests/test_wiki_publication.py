@@ -283,6 +283,60 @@ def test_a_standalone_image_is_a_figure_and_its_href_is_encoded(tmp_path: Path) 
     assert not [href for href in links.hrefs if " " in href]
 
 
+PROMPTED_CARD = """---
+schema: qual/card@1
+id: DEF-NOWHERE
+kind: definition
+title: Nowhere dense
+prompts:
+- Give an example of a set that is not nowhere dense.
+- Is $\\QQ$ nowhere dense?
+classification:
+  areas:
+  - real-analysis
+  topics:
+  - Topology
+relations: []
+review: draft
+---
+
+::: definition
+$A$ is **nowhere dense** iff the closure of $A$ has empty interior.
+:::
+"""
+
+
+def test_a_cards_review_prompts_render_wherever_the_card_does(tmp_path: Path) -> None:
+    """A prompt is the question this card answers, so it goes where the card goes.
+
+    One block per prompt and none at all without them: the field is a list
+    because one statement can be asked for in several ways, and a card that
+    carries no question must not grow an empty container to say so.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "DEF-NOWHERE.md").write_text(PROMPTED_CARD)
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-NOWHERE]]\n\n[[LEM-FRATTINI]]\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    expected = [
+        '<div class="review-question">Give an example of a set that is not nowhere dense.</div>',
+        '<div class="review-question">Is $\\QQ$ nowhere dense?</div>',
+    ]
+    card_page = (site / "tag" / "DEF-NOWHERE.html").read_text()
+    assert [block for block in expected if block in card_page] == expected
+
+    wiki_page = (site / "wiki" / "index.html").read_text()
+    assert [block for block in expected if block in wiki_page] == expected
+    # The statement is the answer, so the question follows it.
+    assert wiki_page.index("empty interior") < wiki_page.index("review-question")
+    # LEM-FRATTINI carries no prompts and gains nothing.
+    assert wiki_page.count("review-question") == len(expected)
+    assert "review-question" not in (site / "tag" / "LEM-FRATTINI.html").read_text()
+
+
 def test_a_card_shows_only_the_relation_panels_it_has(tmp_path: Path) -> None:
     """A heading whose body reads "None." tells the reader nothing.
 

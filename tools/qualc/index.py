@@ -20,6 +20,7 @@ from .model import (
     ExamSource,
     HomeworkSource,
     ParsedCard,
+    ProblemEntry,
     TermOnly,
     TextbookSource,
     YearOnly,
@@ -57,7 +58,8 @@ create table collection_problems (
   section_ordinal integer,
   section_name text,
   ordinal integer not null,
-  problem_id text not null
+  problem_id text not null,
+  comment text                 -- where the problem sits in THIS source ("Problem 6"); null when it needs no comment
 );
 create table collection_provenance (
   collection_id text not null,
@@ -137,6 +139,19 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
     return errors
 
 
+def _insert_problems(
+    con: sqlite3.Connection,
+    collection_id: str,
+    section_ordinal: int | None,
+    section_name: str | None,
+    entries: list[ProblemEntry],
+) -> None:
+    con.executemany(
+        "insert into collection_problems values (?,?,?,?,?,?)",
+        [(collection_id, section_ordinal, section_name, ordinal, e.id, e.comment) for ordinal, e in enumerate(entries)],
+    )
+
+
 def build(parsed: list[ParsedCard], db_path: Path) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     db_path.unlink(missing_ok=True)
@@ -193,32 +208,20 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                         "insert into exam_sources values (?,?,?)",
                         (c.id, c.source.institution, c.source.area),
                     )
-                    for ordinal, pid in enumerate(c.source.problems):
-                        con.execute(
-                            "insert into collection_problems values (?,?,?,?,?)",
-                            (c.id, None, None, ordinal, pid),
-                        )
+                    _insert_problems(con, c.id, None, None, c.source.problems)
                 case TextbookSource():
                     con.execute(
                         "insert into textbook_sources values (?,?)",
                         (c.id, c.source.textbook),
                     )
                     for section_ordinal, section in enumerate(c.source.sections):
-                        for ordinal, pid in enumerate(section.problems):
-                            con.execute(
-                                "insert into collection_problems values (?,?,?,?,?)",
-                                (c.id, section_ordinal, section.name, ordinal, pid),
-                            )
+                        _insert_problems(con, c.id, section_ordinal, section.name, section.problems)
                 case HomeworkSource():
                     con.execute(
                         "insert into homework_sources values (?,?)",
                         (c.id, c.source.area),
                     )
-                    for ordinal, pid in enumerate(c.source.problems):
-                        con.execute(
-                            "insert into collection_problems values (?,?,?,?,?)",
-                            (c.id, None, None, ordinal, pid),
-                        )
+                    _insert_problems(con, c.id, None, None, c.source.problems)
                 case CompilationSource():
                     con.execute(
                         "insert into compilation_sources values (?,?)",
@@ -226,17 +229,9 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                     )
                     if c.source.sections:
                         for section_ordinal, section in enumerate(c.source.sections):
-                            for ordinal, pid in enumerate(section.problems):
-                                con.execute(
-                                    "insert into collection_problems values (?,?,?,?,?)",
-                                    (c.id, section_ordinal, section.name, ordinal, pid),
-                                )
+                            _insert_problems(con, c.id, section_ordinal, section.name, section.problems)
                     else:
-                        for ordinal, pid in enumerate(c.source.problems):
-                            con.execute(
-                                "insert into collection_problems values (?,?,?,?,?)",
-                                (c.id, None, None, ordinal, pid),
-                            )
+                        _insert_problems(con, c.id, None, None, c.source.problems)
 
     con.commit()
     con.close()
