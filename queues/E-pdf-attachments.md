@@ -1,16 +1,127 @@
 # Document queue E: PDF attachments needing check
 
-358 PDF files on disk are not in any collection provenance list.
-Check each: does it contain exam problems to extract, or is it a solution/notes/syllabus?
+354 PDF files on disk are not referenced by any collection provenance.
+468 total PDFs in assets/attachments. 114 are provenance sources.
 
-Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted problems ARE candidates.
+Per AGENTS.md: solution PDFs and notes are NOT provenance. Exam papers with
+unextracted problems ARE candidates. Local copies of exams already carded via
+external URL do not need a local provenance link.
 
-## Exam/prelim PDFs (extract candidates) (45)
+## UCLA basic exam copies (basic-*) (36)
+
+Local copies of UCLA basic exams. Collections likely point at the UCLA URL. Check if already carded.
+
+- [ ] basic-01F.pdf
+- [ ] basic-02F.pdf
+- [ ] basic-02S.pdf
+- [ ] basic-02W.pdf
+- [ ] basic-03F.pdf
+- [ ] basic-03S.pdf
+- [ ] basic-04F.pdf
+- [ ] basic-04S.pdf
+- [ ] basic-05F.pdf
+- [ ] basic-05S.pdf
+- [ ] basic-06S.pdf
+- [ ] basic-06W.pdf
+- [ ] basic-07F.pdf
+- [ ] basic-07S.pdf
+- [ ] basic-08F.pdf
+- [ ] basic-08S.pdf
+- [ ] basic-09F.pdf
+- [ ] basic-09S.pdf
+- [ ] basic-10F.pdf
+- [ ] basic-10S.pdf
+- [ ] basic-11F.pdf
+- [ ] basic-11S.pdf
+- [ ] basic-12F.pdf
+- [ ] basic-12S.pdf
+- [ ] basic-13F.pdf
+- [ ] basic-13S.pdf
+- [ ] basic-14F.pdf
+- [ ] basic-14S.pdf
+- [ ] basic-15F.pdf
+- [ ] basic-15S.pdf
+- [ ] basic-16F.pdf
+- [ ] basic-16S.pdf
+- [ ] basic-17F.pdf
+- [ ] basic-17S.pdf
+- [ ] basic-18F.pdf
+- [ ] basic-18S.pdf
+
+
+## UCLA prelim archive (Fall/Spring/Summer NN) (60)
+
+Local copies of UCLA prelim exams by term. Check if already carded via external URL.
+
+- [ ] Fall00.pdf
+- [ ] Fall77.pdf
+- [ ] Fall78.pdf
+- [ ] Fall79.pdf
+- [ ] Fall80.pdf
+- [ ] Fall81.pdf
+- [ ] Fall82.pdf
+- [ ] Fall83.pdf
+- [ ] Fall84.pdf
+- [ ] Fall85.pdf
+- [ ] Fall86.pdf
+- [ ] Fall87.pdf
+- [ ] Fall88.pdf
+- [ ] Fall89.pdf
+- [ ] Fall90.pdf
+- [ ] Fall91.pdf
+- [ ] Fall92.pdf
+- [ ] Fall93.pdf
+- [ ] Fall94.pdf
+- [ ] Fall95.pdf
+- [ ] Fall96.pdf
+- [ ] Fall97.pdf
+- [ ] Fall98.pdf
+- [ ] Fall99.pdf
+- [ ] Spring00.pdf
+- [ ] Spring01.pdf
+- [ ] Spring2020Final.pdf
+- [ ] Spring2020Midterm.pdf
+- [ ] Spring77.pdf
+- [ ] Spring78.pdf
+- [ ] Spring79.pdf
+- [ ] Spring80.pdf
+- [ ] Spring81.pdf
+- [ ] Spring82.pdf
+- [ ] Spring83.pdf
+- [ ] Spring84.pdf
+- [ ] Spring85.pdf
+- [ ] Spring86.pdf
+- [ ] Spring87.pdf
+- [ ] Spring88.pdf
+- [ ] Spring89.pdf
+- [ ] Spring90.pdf
+- [ ] Spring91.pdf
+- [ ] Spring92.pdf
+- [ ] Spring93.pdf
+- [ ] Spring94.pdf
+- [ ] Spring95.pdf
+- [ ] Spring96.pdf
+- [ ] Spring97.pdf
+- [ ] Spring98.pdf
+- [ ] Spring99.pdf
+- [ ] Summer77.pdf
+- [ ] Summer78.pdf
+- [ ] Summer79.pdf
+- [ ] Summer80.pdf
+- [ ] Summer81.pdf
+- [ ] Summer82.pdf
+- [ ] Summer83.pdf
+- [ ] Summer84.pdf
+- [ ] Summer85.pdf
+
+
+## Named exam/qual/prelim PDFs (41)
+
+These name themselves as exams or quals. Check each against existing collections.
 
 - [ ] 140A_Exam_Review.pdf
 - [ ] 8.1.2 Further Examples (1).pdf
 - [ ] AG Exam Problems.pdf
-- [ ] Applied-Algebra-Qual-Spring-2008.pdf
 - [ ] Cambridge Examples Sheets.pdf
 - [ ] Complex_Analysis_Prelim_Review.pdf
 - [ ] complex_prelim.pdf
@@ -20,7 +131,6 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] F13_Exam.pdf
 - [ ] F15_Exam.pdf
 - [ ] F16_Exam.pdf
-- [ ] FA08_200_Algebra_Qual.pdf
 - [ ] Fall_2014_Exam.pdf
 - [ ] fall-2018-prelim.pdf
 - [ ] grad_prelim_Fall08.pdf
@@ -37,8 +147,6 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf
 - [ ] Ring_Theory_Qual_Problems.pdf
 - [ ] sample_exam.pdf
-- [ ] SP04_202_Applied_Algebra_Qual.pdf
-- [ ] SP07_202_Applied_Algebra_Qual.pdf
 - [ ] Sp13_Exam.pdf
 - [ ] Sp14_Exam.pdf
 - [ ] Sp15_Exam.pdf
@@ -53,7 +161,23 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] UCSD_Topology_Qual_Problems_2020-05-29.pdf
 - [ ] Won_-_Complex_Analysis_Qual_Sheet.pdf
 
-## Solution PDFs (not provenance) (83)
+
+## Workshop day PDFs (7)
+
+Workshop source PDFs. Check if already carded under workshop collections.
+
+- [ ] day_1_compactness.pdf
+- [ ] day_2_connected_path_connnected.pdf
+- [ ] day_3_sep_counterex_defn.pdf
+- [ ] day_4_homotopy_retractions.pdf
+- [ ] day_5_fundamental_group.pdf
+- [ ] day_6_covering_spaces.pdf
+- [ ] day_7_homology.pdf
+
+
+## Solution PDFs (not provenance) (96)
+
+Solution writeups. Not the exam paper. Do not add to provenance. May feed issue #2.
 
 - [ ] AG Solutions (1).pdf
 - [ ] Algebra_Final_Solns 1.pdf
@@ -62,6 +186,19 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Algebra_HW_4_Solns.pdf
 - [ ] Algebra_Solutions 1.pdf
 - [ ] Algebra_Solutions.pdf
+- [ ] Ch10Sltns.pdf
+- [ ] Ch11Sltns.pdf
+- [ ] Ch12Sltns.pdf
+- [ ] Ch13Sltns.pdf
+- [ ] Ch14Sltns.pdf
+- [ ] Ch15Sltns.pdf
+- [ ] Ch16Sltns.pdf
+- [ ] Ch17Sltns.pdf
+- [ ] Ch20Sltns.pdf
+- [ ] Ch6Sltns.pdf
+- [ ] Ch7Sltns.pdf
+- [ ] Ch8Sltns.pdf
+- [ ] Ch9Sltns.pdf
 - [ ] Complex_Analysis_Exam_Prep_Solutions.pdf
 - [ ] f03solution.pdf
 - [ ] f04solution.pdf
@@ -139,7 +276,10 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Week5_solns.pdf
 - [ ] Week6_solns.pdf
 
+
 ## Homework PDFs (8)
+
+Homework sheets. Check if already carded; if not, may be extraction candidates.
 
 - [ ] 8150-hw1.pdf
 - [ ] 8150-hw2.pdf
@@ -150,25 +290,28 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] HW4.pdf
 - [ ] math6338_hw8.pdf
 
-## Notes/lectures (not exam papers) (15)
+
+## Notes/syllabus (not exam papers) (12)
+
+Lecture notes, course notes, syllabi. Not provenance. Not extraction candidates.
 
 - [ ] 8210 Lecture Notes (Usher) Smooth Manifolds.pdf
+- [ ] Adam Syllabus.pdf
 - [ ] Algebra_Notes.pdf
 - [ ] analysis_notes_eamonqg.pdf
-- [ ] Cambridge Examples Sheets.pdf
 - [ ] Chapter3-notes1.pdf
 - [ ] ComplexAnalysisNotes.pdf
-- [ ] Complex_Qual_Notes.pdf
 - [ ] DiffGeomNotes.pdf
 - [ ] Eur_ComplexAnalysis_Notes (1).pdf
-- [ ] Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf
-- [ ] MATH871-Exam-Review-Sheets.pdf
 - [ ] Mike Symplectic Topology Notes.pdf
 - [ ] Real_Analysis_Course_Notes.pdf
+- [ ] syllabus.pdf
 - [ ] Usher DG Notes.pdf
-- [ ] Won_-_Complex_Analysis_Qual_Sheet.pdf
 
-## Other PDFs (check classification) (212)
+
+## Other PDFs (check classification) (94)
+
+Problem sets, review sheets, topic compilations, textbooks, practice tests.
 
 - [ ] 603_11.pdf
 - [ ] 8155-starter-problems.pdf
@@ -180,7 +323,6 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] 871-872January_2008_850-871.pdf
 - [ ] 871-872June_2004_852-871.pdf
 - [ ] 871-872June_2007_852-871.pdf
-- [ ] Adam Syllabus.pdf
 - [ ] ALGEBRA_REVIEW1.pdf
 - [ ] analysis_2003-2007.pdf
 - [ ] analysis_2008-2013.pdf
@@ -189,61 +331,12 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Applied-Algebra-FA17.pdf
 - [ ] Auroux_-_Math_131_Introduction_to_Topology.pdf
 - [ ] Azoff Problems by Topic.pdf
-- [ ] basic-01F.pdf
-- [ ] basic-02F.pdf
-- [ ] basic-02S.pdf
-- [ ] basic-02W.pdf
-- [ ] basic-03F.pdf
-- [ ] basic-03S.pdf
-- [ ] basic-04F.pdf
-- [ ] basic-04S.pdf
-- [ ] basic-05F.pdf
-- [ ] basic-05S.pdf
-- [ ] basic-06S.pdf
-- [ ] basic-06W.pdf
-- [ ] basic-07F.pdf
-- [ ] basic-07S.pdf
-- [ ] basic-08F.pdf
-- [ ] basic-08S.pdf
-- [ ] basic-09F.pdf
-- [ ] basic-09S.pdf
-- [ ] basic-10F.pdf
-- [ ] basic-10S.pdf
-- [ ] basic-11F.pdf
-- [ ] basic-11S.pdf
-- [ ] basic-12F.pdf
-- [ ] basic-12S.pdf
-- [ ] basic-13F.pdf
-- [ ] basic-13S.pdf
-- [ ] basic-14F.pdf
-- [ ] basic-14S.pdf
-- [ ] basic-15F.pdf
-- [ ] basic-15S.pdf
-- [ ] basic-16F.pdf
-- [ ] basic-16S.pdf
-- [ ] basic-17F.pdf
-- [ ] basic-17S.pdf
-- [ ] basic-18F.pdf
-- [ ] basic-18S.pdf
 - [ ] Basic_Linear_Algebra_Review.pdf
 - [ ] Big_List_of_Math_Problems.pdf
 - [ ] calculating_galois_from_polynomial.pdf
 - [ ] calculus_practice_test3.pdf
 - [ ] cambride_analysis_ii.pdf
 - [ ] Ch10PtASltns.pdf
-- [ ] Ch10Sltns.pdf
-- [ ] Ch11Sltns.pdf
-- [ ] Ch12Sltns.pdf
-- [ ] Ch13Sltns.pdf
-- [ ] Ch14Sltns.pdf
-- [ ] Ch15Sltns.pdf
-- [ ] Ch16Sltns.pdf
-- [ ] Ch17Sltns.pdf
-- [ ] Ch20Sltns.pdf
-- [ ] Ch6Sltns.pdf
-- [ ] Ch7Sltns.pdf
-- [ ] Ch8Sltns.pdf
-- [ ] Ch9Sltns.pdf
 - [ ] chapter-1.pdf
 - [ ] chapter-2.pdf
 - [ ] chapter-3.pdf
@@ -255,13 +348,6 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Collection_of_Analysis_Theorems.pdf
 - [ ] complex.pdf
 - [ ] Cracking_the_GRE_Mathematics_Subject.pdf
-- [ ] day_1_compactness.pdf
-- [ ] day_2_connected_path_connnected.pdf
-- [ ] day_3_sep_counterex_defn.pdf
-- [ ] day_4_homotopy_retractions.pdf
-- [ ] day_5_fundamental_group.pdf
-- [ ] day_6_covering_spaces.pdf
-- [ ] day_7_homology.pdf
 - [ ] DG Sample Problems 1.pdf
 - [ ] DG Sample Problems.pdf
 - [ ] ExerciseSet8f06a.pdf
@@ -270,31 +356,7 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] f05.pdf
 - [ ] f06.pdf
 - [ ] f07.pdf
-- [ ] Fall00.pdf
 - [ ] Fall_2019_Assignments.pdf
-- [ ] Fall77.pdf
-- [ ] Fall78.pdf
-- [ ] Fall79.pdf
-- [ ] Fall80.pdf
-- [ ] Fall81.pdf
-- [ ] Fall82.pdf
-- [ ] Fall83.pdf
-- [ ] Fall84.pdf
-- [ ] Fall85.pdf
-- [ ] Fall86.pdf
-- [ ] Fall87.pdf
-- [ ] Fall88.pdf
-- [ ] Fall89.pdf
-- [ ] Fall90.pdf
-- [ ] Fall91.pdf
-- [ ] Fall92.pdf
-- [ ] Fall93.pdf
-- [ ] Fall94.pdf
-- [ ] Fall95.pdf
-- [ ] Fall96.pdf
-- [ ] Fall97.pdf
-- [ ] Fall98.pdf
-- [ ] Fall99.pdf
 - [ ] fields.pdf
 - [ ] Folland Clipped Questions.pdf
 - [ ] Folland_Clipped_Questions.pdf
@@ -339,46 +401,10 @@ Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted prob
 - [ ] Separation_defintions.pdf
 - [ ] Sequence_Series_(Neil_Lyall_2019).pdf
 - [ ] Series_Problems_.pdf
-- [ ] Spring00.pdf
-- [ ] Spring01.pdf
-- [ ] Spring2020Final.pdf
-- [ ] Spring2020Midterm.pdf
-- [ ] Spring77.pdf
-- [ ] Spring78.pdf
-- [ ] Spring79.pdf
-- [ ] Spring80.pdf
-- [ ] Spring81.pdf
-- [ ] Spring82.pdf
-- [ ] Spring83.pdf
-- [ ] Spring84.pdf
-- [ ] Spring85.pdf
-- [ ] Spring86.pdf
-- [ ] Spring87.pdf
-- [ ] Spring88.pdf
-- [ ] Spring89.pdf
-- [ ] Spring90.pdf
-- [ ] Spring91.pdf
-- [ ] Spring92.pdf
-- [ ] Spring93.pdf
-- [ ] Spring94.pdf
-- [ ] Spring95.pdf
-- [ ] Spring96.pdf
-- [ ] Spring97.pdf
-- [ ] Spring98.pdf
-- [ ] Spring99.pdf
 - [ ] Study_Guide_for_Algebra.pdf
-- [ ] Summer77.pdf
-- [ ] Summer78.pdf
-- [ ] Summer79.pdf
-- [ ] Summer80.pdf
-- [ ] Summer81.pdf
-- [ ] Summer82.pdf
-- [ ] Summer83.pdf
-- [ ] Summer84.pdf
-- [ ] Summer85.pdf
-- [ ] syllabus.pdf
 - [ ] Symplectic Geometry.pdf
 - [ ] Tate_Galois_Theory_Problems.pdf
 - [ ] Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf
 - [ ] topology_2005-2003.pdf
 - [ ] topology_2006-2014.pdf
+
