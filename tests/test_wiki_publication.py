@@ -219,9 +219,9 @@ def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
     links = LinkCollector()
     links.feed(html)
-    wiki_link_texts = [text for _, classes, text in links.links if "wikilink" in classes.split()]
-    assert "Show a subgroup of index $p$ in a $p\\dash$group is normal" in wiki_link_texts
-    assert all("PRB-INDEXP" not in text for text in wiki_link_texts)
+    link_texts = [text for _, _, text in links.links]
+    assert "Show a subgroup of index $p$ in a $p\\dash$group is normal" in link_texts
+    assert "PRB-INDEXP" not in link_texts
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:
