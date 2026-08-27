@@ -46,19 +46,21 @@ According to the fundamental theorem of Galois theory, there is a bijection betw
 
 So the subfields of $\mathbf { F } _ { p ^ { n } }$ are the fields $\mathbf { F } _ { p ^ { d } }$ , for all divisors d of n.
 
-Let $\beta _ { 1 } = \alpha _ { 1 } , \beta _ { 2 } , . . . , \beta _ { m }$ be the distinct Galois conjugates of ${ \mathfrak { X } } _ { 1 }$ . Then I claim that
+5. Let $K/F$ be a Galois extension with group $G$, and let $\alpha_1, \ldots, \alpha_n \in K$. Show that $p(x) = \prod_{i=1}^n (x - \alpha_i) \in F[x]$ if and only if the set $\{\alpha_1, \ldots, \alpha_n\}$ is a single orbit under the action of $G$ on $K$.
+
+Solution. Let $\beta_1 = \alpha_1, \beta_2, \ldots, \beta_m$ be the distinct Galois conjugates of $\alpha_1$. Then I claim that
 
 $$
-h ( x ) = ( x - \beta _ { 1 } ) ( x - \beta _ { 2 } ) \cdot \cdot \cdot ( x - \beta _ { m } )
+h(x) = (x - \beta_1)(x - \beta_2) \cdots (x - \beta_m)
 $$
 
-is fixed by the action of G: for any $i , \beta _ { i } = \sigma _ { i } \alpha _ { 1 }$ for some $\sigma _ { i } \in G ,$ , so for any $\tau \in G$
+is fixed by the action of $G$: for any $i$, $\beta_i = \sigma_i \alpha_1$ for some $\sigma_i \in G$, so for any $\tau \in G$
 
 $$
-\tau ( \mathfrak { \beta } _ { i } ) = ( \tau \mathfrak { O } _ { i } ) \mathfrak { Q } _ { 1 } = \mathfrak { O } _ { j } \mathfrak { Q } _ { 1 } = \mathfrak { \beta } _ { j }
+\tau(\beta_i) = (\tau \sigma_i) \alpha_1 = \sigma_j \alpha_1 = \beta_j
 $$
 
-for some $j .$ So $G$ acts on $h ( x )$ by permuting the factors, and so $h ( x )$ is fixed by G. Thus $h ( x ) \in$ $F [ x ]$ , and it has ${ \mathfrak { Q } } _ { 1 }$ as a root. Note also that $h ( x )$ divides $p ( x )$ , since the roots of $h ( x )$ form a subset of the roots of $p ( x )$ . On the other hand, $p ( x )$ has coefficients in $F$ and has ${ \mathfrak { Q } } _ { 1 }$ as a root, and $p ( x )$ is irreducible; thus $p ( x )$ must be the minimal polynomial for ${ \bf { \alpha } } _ { 1 }$ . By uniqueness of minimal polynomials, $p ( x )$ must divide $h ( x )$ . Since $p ( x )$ and $h ( x )$ divide each other, they must be scalar multiples of each other, and so all of the roots of $p ( x )$ are actually roots of $h ( x )$ : every ${ \bf { \alpha } } \propto$ is a Galois conjugate of ${ \mathfrak { Q } } _ { 1 }$
+for some $j$. So $G$ acts on $h(x)$ by permuting the factors, and so $h(x)$ is fixed by $G$. Thus $h(x) \in F[x]$, and it has $\alpha_1$ as a root. Note also that $h(x)$ divides $p(x)$, since the roots of $h(x)$ form a subset of the roots of $p(x)$. On the other hand, $p(x)$ has coefficients in $F$ and has $\alpha_1$ as a root, and $p(x)$ is irreducible; thus $p(x)$ must be the minimal polynomial for $\alpha_1$. By uniqueness of minimal polynomials, $p(x)$ must divide $h(x)$. Since $p(x)$ and $h(x)$ divide each other, they must be scalar multiples of each other, and so all of the roots of $p(x)$ are actually roots of $h(x)$: every $\alpha_i$ is a Galois conjugate of $\alpha_1$
 
 6. Let $K / F$ be a field extension, and fix $a \in K$ . Show that $F ( a )$ is algebraic over F if and only $\operatorname { i f } \left[ F ( a ) : F \right]$ is finite. Use this to prove that sums, differences, products, and quotients of algebraic elements are algebraic.
 
