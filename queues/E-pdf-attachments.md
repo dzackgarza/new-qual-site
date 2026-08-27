@@ -1,8 +1,10 @@
 # Document queue E: Source documents without collection cards
 
 354 PDF files in assets/attachments/ have no collection card.
-Classified by reading first-page text (pypdf for text PDFs, MinerU for
-scanned/image PDFs). Each entry shows page count and first-page excerpt.
+Each has a 500-char first-page text snippet (pypdf for text PDFs,
+MinerU flash-extract for scanned/image PDFs) and a page count.
+Snippets are not a substitute for reading the document. 8 PDFs
+yielded no text at all.
 
 Per AGENTS.md: the PDF is the provenance. The missing work is creating
 the collection card and extracting its problems.
