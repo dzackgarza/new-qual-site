@@ -12,7 +12,7 @@ No scripts, no pattern matching.
 | --- | --- | --- |
 | 1-25 | 140A_Exam_Review — ALGEBRA_REVIEW1 | done |
 | 26-50 | Algebra_Solutions — basic-08F | done |
-| 51-100 | basic-08S — (mid-batch) | in progress |
+| 51-100 | basic-08S — calculus_practice_test3 | in progress |
 | 101-200 |  | pending |
 | 201-354 |  | pending |
 
@@ -118,6 +118,14 @@ No scripts, no pattern matching.
 
 - **Basic_Linear_Algebra_Review.md**: major reconstruction of OCR-garbled examples — vector addition [1;2]+[3;4]=[4;6], scalar mult 5[1;2]=[5;10], dot product [1,2]·[3,4], norm [1,2,3], 2×2 inverse/det matrices (a b;c d), augmented system third row x−2y−4z=−1, standard basis of ℝ³, char poly 2×2 determinant display, row-reduction arrows, eigenvalue example 5[3,1]=[15,5]; fixed det typography, ℚ→rank-like garbles, Rn→ℝⁿ, dimension n+1 for polynomials, "review previous in-class exams", T arrows, shearing, 10/11/12 digit splits, 3×3 matrix rows
 
+### Batch 4: files 73-75
+
+- **Big_List_of_Math_Problems.md** (73): removed 33 dead control-character debris lines (figure-position residue after the "Figure 1: Pitch, yaw and roll of the ship" and "Figure 2: Positions of the stars" captions) and null-patched 2 lines in the relay-circuit diagram ASCII art; 0 control bytes remain. Typography throughout is spacing-degraded (flattened sub/superscripts like `x2 1`, split words like `Considerthequadraticforms`), but problem statements are present and mathematically correct in sampled regions (problems 1-9, 47-48, probability section). Kept as-is; source PDF `assets/attachments/Big_List_of_Math_Problems.pdf` remains the oracle. The "P" and "/Radioactivity" legend markers are intentional (creative / hard problems).
+
+- **calculating_galois_from_polynomial.md** (74): stripped 2 `\x03` control bytes (end-of-proof marks); fixed 27 OCR garbles — `char ( K ) ≠ 2` (twice; Ω misread), if/iff restorations, "Galois group", "cyclotomic", "computed", "Adding…identical", $p$-cycle, $F_{11}$ subscript, $\alpha_2$ subscript, [Q(∛2):Q] = 3 (was "degree 2"), 1000 = 8·125 and Gal ≅ Z₂×Z₂×Z₁₀₀ (was 4·125 / Z₂×Z₁₀₀ — data-error fix), $x^{p^n} − x$, "of arbitrary degree", stray `]`, excluded set \{9\} (was \{2\}; 9 = −2 mod 11 is the found root), $\bar{p}$ → p, "the transitive subgroups of $S_3$ are $S_3$ and $A_3$" (removed internal contradiction), "cubic over $\mathbb{Q}$", "over $\mathbb{Q}$" (3×).
+
+- **calculus_practice_test3.md** (75): reconstructed answer-choice labels stripped by the scan and cleaned ~35 garbles. Recovered: problem 6 (∫_b^{b+1}(x²+x)dx minimum, b = −1 — choices force the upper limit), 7 (octants of $z = e^{x+y}$), 8 ($f = \sqrt{\tan^2 x − 1}$ domain), 14/15 (∫₁^x dt/(1+t²) tangent at x = 2 — stem reconstructed from the choice set), 16 ($e^{g(x)}h(x)$, $h' = −g'h$; $\mathfrak{x}$→x, $\hbar$→h), 25 (Lipschitz: $|f(x)−f(y)| ≤ K|x−y|$ — abs-value bars and stem restored from choices), 29 (Σ(1/k − 1/2^k) = +∞), 30 (piecewise $\sqrt{1−x^2}$ / $x−1$ integral, "thien"→"then"), 34 (FTC: $2xe^{−x^4}$; choices (A)(B) reconstructed from glyph fragments), 35 (Riemann sum = 9/2), 39 (log(1+sin 2πx) undefined iff $x = (4n−1)/4$), 44 (lim = $9P''(x)$). Verified 0 control bytes. Flagged as ambiguous (see below): problems 9-15, 18, 20-28, 30-33, 36-38, 40-43 are absent from the extraction or have unreadable stems.
+
 ## Unrecoverable extractions
 
 - **AG Solutions (1).md**: completely garbled binary/encoding.
@@ -138,6 +146,7 @@ No scripts, no pattern matching.
 
 ## Ambiguous fragments (kept as extracted, needs source check)
 
-- **basic-12S.md**, Problem 11(a): matrix fragment `A = { \binom { 1 } { 4 } } \ 3 )`.
-  One 2×2 matrix entry is missing; the occluded entry cannot be recovered from the extraction alone.
+- **basic-12S.md**, Problem 11(a): matrix fragment `A = { \binom { 1 } { 4 } } \ 3 )`. One 2×2 matrix entry is missing; the occluded entry cannot be recovered from the extraction alone.
   The problem (degree-2 polynomial P with P(A)=0) still renders, but the stated matrix is incomplete.
+
+- **calculus_practice_test3.md**: problems 9-15, 18, 20-28, 30-33, 36-38, 40-43 are absent or their stems are unreadable — page/scanner gaps, not fixable from the extraction. Problem 17 stem has an unreadable first term (`$\mathbf{i_\tau} - \sin^2(\mathrm{Arccos}\frac{\pi}{12})$`); problem 43's polynomial-condition stem is garbled (`\quad n = \sum a_i x^i` fragment with unknown degree hypothesis); problem 35 choice (C) `$\frac{3!}{6}$` has lost digits. Problem 19-24 fragment: statement I's right-hand side is lost (`f(x) = ?`). Re-extraction from `assets/attachments/calculus_practice_test3.pdf` is the repair path for all of these.

@@ -516,26 +516,6 @@ xixj.
 6
 
 Figure 1: Pitch, yaw and roll of the ship
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (b) Find the change of coordinates that reducesf(⃗x)a n dg(⃗x) to the diagonal
 form.
 48. /Radioactivity
@@ -551,16 +531,6 @@ them into a perfect triangle with the centerO and the sided.
 7
 
 Figure 2: Positions of the stars
-
-
-
-
-
-
-
- 
- 
-
 REAL ANALYSIS
 1. Find f′(x), iff(x)=l o ga
 x, cosarcsin x, x2 +1
@@ -1692,19 +1662,16 @@ independent? Are they mutually independent?
 real.
 8. Consider the circuit shown in ﬁgure. Each of its ﬁve relays is closed with the
 probability p independently of other relays.
--  
+-
 @@
 rA
 rC
-  
 @@
 @@
-  
 rB
 rD
 @@
-  
--  rE
+-rE
 Figure 7: The circuit
 27
 
