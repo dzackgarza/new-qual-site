@@ -1104,17 +1104,23 @@ def _card_route(card: sqlite3.Row) -> str:
     return "exam" if card["kind"] == "collection" else "tag"
 
 
+def _link_inline(
+    card: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+    base: str = "../",
+) -> pf.Link:
+    return pf.Link(
+        *_inlines(card["title"], inline_cache),
+        url=f"{base}{_card_route(card)}/{card['id']}.html",
+    )
+
+
 def _link(
     card: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
     base: str = "../",
 ) -> pf.Plain:
-    return pf.Plain(
-        pf.Link(
-            *_inlines(card["title"], inline_cache),
-            url=f"{base}{_card_route(card)}/{card['id']}.html",
-        )
-    )
+    return pf.Plain(_link_inline(card, inline_cache, base))
 
 
 Page = tuple[dict, list[pf.Block]]
@@ -1707,6 +1713,35 @@ def _facet_option_label(axis: str, value: str) -> str:
     return value.replace("-", " ").title()
 
 
+def _listing_filters(
+    noun: str,
+    placeholder: str,
+    facet_values: dict[str, list[str]],
+) -> pf.RawBlock:
+    """The search box and one select per facet, above a filtered listing.
+
+    `app.js` reads the axes off the `data-facet` attributes rather than being
+    told which page it is on, so a page adds an axis by emitting a control for
+    it. `noun` is what the running count calls the rows.
+    """
+    return pf.RawBlock(
+        '<div class="listing-filters">'
+        '<label for="listing-search">Search'
+        f'<input id="listing-search" type="search" data-noun="{html.escape(noun, quote=True)}"'
+        f' placeholder="{html.escape(placeholder, quote=True)}">'
+        "</label>"
+        + "".join(
+            f'<label for="listing-{axis}">{axis.title()}'
+            f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
+            + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value))}</option>' for value in values)
+            + "</select></label>"
+            for axis, values in facet_values.items()
+        )
+        + '<output id="listing-count" aria-live="polite"></output></div>',
+        format="html",
+    )
+
+
 def problem_browser_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
@@ -1763,11 +1798,12 @@ def problem_browser_page(
         # hide a heading whose problems are all hidden.
         if problem["areas"] != heading_area:
             heading_area = problem["areas"]
+            label = ", ".join(_facet_option_label("area", a) for a in area_terms) or "Unclassified"
             rows.append(
                 pf.Div(
-                    pf.Header(pf.Str(", ".join(_facet_option_label("area", a) for a in area_terms) or "Unclassified"), level=2),
-                    classes=["problem-group"],
-                    attributes={"data-area": FACET_SEP.join(area_terms)},
+                    pf.Header(pf.Str(label), level=2),
+                    classes=["listing-group"],
+                    attributes={"data-area": FACET_SEP.join(area_terms), "data-label": label},
                 )
             )
         institution_terms = _facet_terms(problem["institutions"])
@@ -1807,15 +1843,18 @@ def problem_browser_page(
         ).lower()
         rows.append(
             pf.Div(
-                _link(problem, inline_cache, base=""),
-                pf.Plain(pf.Str(facet_text or "Unclassified")),
-                pf.Plain(pf.Str("Sources: "), *source_links) if source_links else pf.Plain(pf.Str("Sources: none")),
+                # Para, not Plain: Plain writes the text with no element around
+                # it, and three of those in a row are one anonymous grid item,
+                # not three. The row's columns had nothing to lay out.
+                pf.Para(_link_inline(problem, inline_cache, base="")),
+                pf.Para(pf.Str(facet_text or "Unclassified")),
+                pf.Para(pf.Str("Sources: "), *source_links) if source_links else pf.Para(pf.Str("Sources: none")),
                 # 4161 of the 4921 titles are mathematics. Typesetting all of
                 # them on load cost ten seconds before a reader could touch the
                 # filter. `mathjax_ignore` is MathJax's own opt-out class, so
                 # the initial pass skips every row; `app.js` removes it from a
                 # row and typesets that row when it scrolls into view.
-                classes=["problem-row", "mathjax_ignore"],
+                classes=["listing-row", "mathjax_ignore"],
                 attributes={
                     "data-search": search,
                     "data-area": FACET_SEP.join(area_terms),
@@ -1832,22 +1871,8 @@ def problem_browser_page(
                 inline_cache,
             )
         ),
-        pf.RawBlock(
-            '<div class="problem-filters">'
-            '<label for="problem-filter">Search'
-            '<input id="problem-filter" type="search" placeholder="Group theory, UGA, 2019…">'
-            "</label>"
-            + "".join(
-                f'<label for="problem-{axis}">{axis.title()}'
-                f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
-                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value))}</option>' for value in values)
-                + "</select></label>"
-                for axis, values in facet_values.items()
-            )
-            + '<output id="problem-count" aria-live="polite"></output></div>',
-            format="html",
-        ),
-        pf.Div(*rows, classes=["problem-browser"]),
+        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values),
+        pf.Div(*rows, classes=["listing"]),
     ]
 
 
@@ -1875,21 +1900,66 @@ def source_index_page(
     """
     collections = _rows(
         con,
-        "select c.*, s.source_kind from cards c join sources s on s.id=c.id"
-        " left join exam_sources e on e.id=s.id"
-        f" order by e.institution, s.year, {TERM_RANK}, e.area, c.title, c.id",
+        f"""
+        select c.*, s.source_kind, s.year,
+          coalesce(e.institution, '') as institution,
+          coalesce(e.area, '') as area,
+          (select count(*) from collection_problems where collection_id=c.id) as problems,
+          (select count(*) from collection_problems cp
+           where cp.collection_id=c.id
+             and (cp.problem_id in (select card_id from sections where section_kind='solution')
+                  or cp.problem_id in (select target_id from relations where kind='solves'))) as solved
+        from cards c join sources s on s.id=c.id
+        left join exam_sources e on e.id=s.id
+        order by e.institution, s.year, {TERM_RANK}, e.area, c.title, c.id
+        """,
     )
     unlisted = {row["source_kind"] for row in collections} - set(SOURCE_KIND_HEADINGS)
     if unlisted:
         raise ValueError(f"source kinds with no heading on the source index: {sorted(unlisted)}")
 
+    facet_values = {
+        "area": sorted({row["area"] for row in collections if row["area"]}),
+        "institution": sorted({row["institution"].upper() for row in collections if row["institution"]}),
+        "year": sorted({str(row["year"]) for row in collections if row["year"] is not None}),
+    }
     blocks: list[pf.Block] = [
         pf.Para(*_inlines(f"Every collection the corpus draws problems from: {len(collections)} in all.", inline_cache)),
+        _listing_filters("source", "UGA, topology, 2019…", facet_values),
     ]
+    rows: list[pf.Block] = []
     for kind, heading in SOURCE_KIND_HEADINGS.items():
         listed = [row for row in collections if row["source_kind"] == kind]
-        blocks.append(pf.Header(pf.Str(f"{heading} ({len(listed)})"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(_link(row, inline_cache, "")) for row in listed]))
+        rows.append(
+            pf.Div(
+                pf.Header(pf.Str(f"{heading} ({len(listed)})"), level=2),
+                classes=["listing-group"],
+                # The filter rewrites the count to what it is showing, so the
+                # heading has to say what the label alone is.
+                attributes={"data-label": heading},
+            )
+        )
+        for row in listed:
+            institution = row["institution"].upper()
+            year = "" if row["year"] is None else str(row["year"])
+            # How much of a collection is worked is the fact a reader picking one
+            # to sit is after, and no listing carried it.
+            solutions = f"{row['problems']} problems, {row['solved']} solved" if row["problems"] else "no problems listed"
+            rows.append(
+                pf.Div(
+                    pf.Para(_link_inline(row, inline_cache, "")),
+                    pf.Para(pf.Str(" · ".join(part for part in (institution, row["area"].replace("-", " ").title(), year) if part) or "—")),
+                    pf.Para(pf.Str(solutions)),
+                    classes=["listing-row"],
+                    attributes={
+                        "data-search": " ".join(str(part) for part in (row["title"], row["id"], institution, row["area"], year) if part).lower(),
+                        "data-area": row["area"],
+                        "data-institution": institution,
+                        "data-year": year,
+                    },
+                )
+            )
+    blocks.append(pf.Div(*rows, classes=["listing"]))
     return {"title": "Sources"}, blocks
 
 

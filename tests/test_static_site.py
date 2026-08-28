@@ -288,9 +288,9 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
-    browser = page.root.find_all("div", **{"class": "problem-browser"})[0]
+    browser = page.root.find_all("div", **{"class": "listing"})[0]
     order = [
-        child.find_all("h2")[0].text if child.attrs["class"].startswith("problem-group") else child.find_all("a")[0].attrs["href"]
+        child.find_all("h2")[0].text if child.attrs["class"].startswith("listing-group") else child.find_all("a")[0].attrs["href"]
         for child in browser.children
         if isinstance(child, Element)
     ]
@@ -300,7 +300,7 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path
     # Every row opts out of the initial MathJax pass; app.js typesets a row when
     # it is scrolled near. All 4921 at once cost ten seconds before a reader
     # could touch the filter.
-    assert len(browser.find_all("div", **{"class": "problem-row mathjax_ignore"})) == len(order) - 1
+    assert len(browser.find_all("div", **{"class": "listing-row mathjax_ignore"})) == len(order) - 1
 
 
 def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) -> None:
@@ -342,7 +342,7 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
-    filters = page.root.find_all("div", **{"class": "problem-filters"})
+    filters = page.root.find_all("div", **{"class": "listing-filters"})
     assert len(filters) == 1
     labels = [child for child in filters[0].children if isinstance(child, Element) and child.tag == "label"]
     controls = [[child.tag for child in label.children if isinstance(child, Element)] for label in labels]

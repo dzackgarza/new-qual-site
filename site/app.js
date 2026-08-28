@@ -106,14 +106,19 @@
     }
   });
 
+  // A filtered listing: rows under group headings, a text box and a select per
+  // facet. Two pages have one -- the problem browser and the source index --
+  // and neither is named here: the axes come from the controls the page emitted
+  // and the noun for the count comes off the search box.
   // ?q= seeds the filter on load and tracks it as the reader types,
   // which makes a filtered view shareable and bookmarkable.
-  const problemFilter = document.querySelector("#problem-filter");
-  if (problemFilter) {
-    const facets = ["area", "topic", "institution", "year"].map((axis) => ({
-      axis,
-      select: document.querySelector(`#problem-${axis}`),
+  const listingSearch = document.querySelector("#listing-search");
+  if (listingSearch) {
+    const facets = [...document.querySelectorAll("[data-facet]")].map((select) => ({
+      axis: select.dataset.facet,
+      select,
     }));
+    const noun = listingSearch.dataset.noun;
     const selected = (select) =>
       [...select.selectedOptions].map((option) => option.value);
     const queryValues = (axis) => {
@@ -127,24 +132,30 @@
     const matchesFacet = (row, axis, values) =>
       !values.length || values.every((value) => row.dataset[axis].split("|").includes(value));
     const applyFilter = () => {
-      const terms = problemFilter.value.toLocaleLowerCase().trim().split(/\s+/);
+      const terms = listingSearch.value.toLocaleLowerCase().trim().split(/\s+/);
       let visible = 0;
-      // The rows are grouped under an area heading. A heading whose rows are
-      // all filtered out has to go with them, or the page shows a subject that
-      // has nothing under it.
+      // A heading whose rows are all filtered out has to go with them, or the
+      // page shows a group that has nothing under it.
       let group = null;
       let inGroup = 0;
       const closeGroup = () => {
-        if (group) group.hidden = inGroup === 0;
+        if (!group) return;
+        group.hidden = inGroup === 0;
+        // A group that carries a count in its heading has to say how many it is
+        // showing, not how many it holds: "University exams (338)" over thirty
+        // rows is a wrong number, not a total.
+        const label = group.dataset.label;
+        const heading = label && group.querySelector("h2");
+        if (heading) heading.textContent = `${label} (${inGroup})`;
       };
-      for (const node of document.querySelectorAll(".problem-group, .problem-row")) {
-        if (node.classList.contains("problem-group")) {
+      for (const node of document.querySelectorAll(".listing-group, .listing-row")) {
+        if (node.classList.contains("listing-group")) {
           closeGroup();
           group = node;
           inGroup = 0;
           continue;
         }
-        const matchesSearch = !problemFilter.value.trim() || terms.every((term) => node.dataset.search.includes(term));
+        const matchesSearch = !listingSearch.value.trim() || terms.every((term) => node.dataset.search.includes(term));
         const matchesFacets = facets.every(({ axis, select }) => matchesFacet(node, axis, selected(select)));
         node.hidden = !(matchesSearch && matchesFacets);
         if (!node.hidden) {
@@ -153,13 +164,13 @@
         }
       }
       closeGroup();
-      const count = document.querySelector("#problem-count");
-      if (count) count.textContent = `${visible} problem${visible === 1 ? "" : "s"} shown`;
+      const count = document.querySelector("#listing-count");
+      if (count) count.textContent = `${visible} ${noun}${visible === 1 ? "" : "s"} shown`;
     };
-    // The rows carry `mathjax_ignore`, so MathJax's pass over the page leaves
-    // all 4921 of them alone. A row is typeset the first time it is scrolled
-    // near, which is what a reader can actually see. Before this the page took
-    // ten seconds to become usable, all of it typesetting titles off-screen.
+    // A row marked `mathjax_ignore` is skipped by MathJax's pass over the page
+    // and typeset the first time it is scrolled near, which is what a reader
+    // can actually see. The problem browser marks all 4921 of its rows: doing
+    // them at load cost ten seconds before the filter could be touched.
     // This script and MathJax's are both deferred and run in document order, so
     // `startup` exists here; its promise is what has not settled yet. Waiting
     // on it keeps a row observed until there is something that can typeset it.
@@ -176,18 +187,18 @@
       },
       { rootMargin: "400px" },
     );
-    for (const row of document.querySelectorAll(".problem-row")) typeset.observe(row);
+    for (const row of document.querySelectorAll(".listing-row.mathjax_ignore")) typeset.observe(row);
 
     // No `q` in the URL is a real state, not a missing value: it means no filter.
     const query = new URLSearchParams(location.search).get("q");
-    problemFilter.value = query === null ? "" : query;
+    listingSearch.value = query === null ? "" : query;
     for (const { axis, select } of facets) setSelected(select, queryValues(axis));
     applyFilter();
     const updateUrl = () => {
       applyFilter();
       const url = new URL(location.href);
-      if (problemFilter.value) {
-        url.searchParams.set("q", problemFilter.value);
+      if (listingSearch.value) {
+        url.searchParams.set("q", listingSearch.value);
       } else {
         url.searchParams.delete("q");
       }
@@ -198,7 +209,7 @@
       }
       history.replaceState(null, "", url);
     };
-    problemFilter.addEventListener("input", updateUrl);
+    listingSearch.addEventListener("input", updateUrl);
     for (const { select } of facets) select.addEventListener("change", updateUrl);
   }
 

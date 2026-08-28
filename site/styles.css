@@ -604,7 +604,7 @@ mjx-container[display="true"] {
   overflow-wrap: anywhere;
 }
 
-.problem-browser {
+.listing {
   display: grid;
   gap: 0.45rem;
   margin-top: 1rem;
@@ -615,7 +615,7 @@ mjx-container[display="true"] {
   container-type: inline-size;
 }
 
-.problem-filters {
+.listing-filters {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
   gap: 0.65rem;
@@ -623,7 +623,7 @@ mjx-container[display="true"] {
   margin-top: 1rem;
 }
 
-.problem-filters label {
+.listing-filters label {
   color: var(--muted);
   font-size: var(--label);
   font-weight: 650;
@@ -631,8 +631,8 @@ mjx-container[display="true"] {
   letter-spacing: 0.05em;
 }
 
-.problem-filters input,
-.problem-filters select {
+.listing-filters input,
+.listing-filters select {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -644,13 +644,13 @@ mjx-container[display="true"] {
   color: var(--ink);
 }
 
-.problem-filters output {
+.listing-filters output {
   grid-column: 1 / -1;
   color: var(--muted);
   font-size: 0.85rem;
 }
 
-.problem-row {
+.listing-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(12rem, 1fr);
   gap: 1rem;
@@ -659,11 +659,11 @@ mjx-container[display="true"] {
   border-radius: 0.35rem;
 }
 
-.problem-row > p {
+.listing-row > p {
   margin: 0;
 }
 
-.problem-row > p:last-child {
+.listing-row > p:last-child {
   color: var(--muted);
   font-size: var(--label);
   text-align: right;
@@ -673,21 +673,22 @@ mjx-container[display="true"] {
    title is left with what is over, which was a title broken one letter to a
    line. Stack instead. */
 @container (max-width: 44rem) {
-  .problem-row {
+  .listing-row {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.3rem;
   }
 
-  .problem-row > p:last-child {
+  .listing-row > p:last-child {
     text-align: left;
   }
 }
 
-.problem-group h2 {
+.listing-group h2 {
   margin-top: 2rem;
 }
 
-.problem-row[hidden] {
+.listing-row[hidden],
+.listing-group[hidden] {
   display: none;
 }
 
@@ -1107,15 +1108,15 @@ div.panel > ul {
     width: min(100% - 1.25rem, 52rem);
   }
 
-  .problem-filters {
+  .listing-filters {
     grid-template-columns: 1fr;
   }
 
-  .problem-row {
+  .listing-row {
     grid-template-columns: 1fr;
   }
 
-  .problem-row > p:last-child {
+  .listing-row > p:last-child {
     text-align: left;
   }
 
@@ -1187,7 +1188,7 @@ div.panel > ul {
   .subject-sidebar,
   .search-dialog,
   .search-open,
-  .problem-filters {
+  .listing-filters {
     display: none;
   }
 

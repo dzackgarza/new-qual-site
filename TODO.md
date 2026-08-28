@@ -1108,14 +1108,17 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   `exam/` holds 381 collection pages.
   `exams.html` lists 338. The remainder are 6 textbooks, 17 homework sets, and 20 compiled scans.
   `exam/SRC-TEXT-MUN00.html` (Munkres, 586 problems) is the largest collection on the site and appears on no listing.
-  A reader reaches it only from a problem card, through `Sources`.
-  Fixed: the page lists all 381 under a heading for the kind of thing each is, and is titled `Sources` because that is now what it holds.
+  A reader reaches it only from a problem card, through `Sources`. Fixed: the page lists all 381 under a heading for the kind of thing each is, and is titled `Sources` because that is now what it holds.
   A source kind with no heading fails the build rather than going unlisted.
 
 - [ ] Move the textbook, homework, and compilation collections off the `exam/` URL prefix, or rename the prefix.
 
-- [ ] Group and filter `exams.html`. It is one flat list of 338 links: no headings, no filters, no counts, no marker for which exams have solutions.
+- [x] Group and filter `exams.html`. It is one flat list of 338 links: no headings, no filters, no counts, no marker for which exams have solutions.
   Browse exposes area, topic, institution, and year filters over the same facets.
+  Fixed: the same filter Browse uses, over area, institution and year, and each row says how many problems the collection holds and how many are solved.
+  A group heading counts what it is showing, not what it holds.
+  The filter is one component now, read off the controls a page emits, so the two listings cannot drift apart.
+  It also turned out the row grid never had grid items: `pf.Plain` writes its text with no element around it, so a row was one anonymous item and the column widths did nothing.
 
 - [x] Sort exam sittings by term within a year.
   The order is institution, year, area, then term alphabetically, so `TAMU real-analysis Fall 2015` precedes `TAMU real-analysis Spring 2015`. Fixed: a sitting now sorts by the term it was sat in, read from the term type rather than written out a second time in SQL.
