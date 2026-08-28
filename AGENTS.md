@@ -432,10 +432,15 @@ card is solved when it carries a `solution` section or an incoming `solves`
 relation from another card. There is no `solved` field: a solutions commit
 writes the body (or the solver card) and the status follows from it.
 
+No static queue file exists for missing solutions. Missing solutions are
+authored mathematical content, not corpus defects, so they do not appear in
+`BACKLOG.md`.
+
 `just sample-unsolved` draws n random unsolved cards (default 5) by querying
 the catalog for problem/exercise cards with no solution section and no incoming
-`solves` relation. The solution-sheet integration side of
-[issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) lives in
+`solves` relation. The solution authoring workflow is recorded in `TODO.md`
+under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), and the
+solution-sheet integration ledgers live in
 `sources/qual-review-and-solutions-ledgers/`.
 
 ## Audit history
