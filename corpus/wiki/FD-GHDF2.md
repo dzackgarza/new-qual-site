@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-GHDF2
 kind: definition
-title: How to determine sign of a permutation
+title: The sign of a permutation, read off its cycle decomposition
 prompts:
 - How do you read the sign of a permutation off its disjoint cycle decomposition?
 classification:
