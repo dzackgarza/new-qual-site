@@ -1,6 +1,7 @@
 ## CHAPTER 4 REVIEW QUESTIONS
 
-Complete the following review questions using the techniques outlined in this chapter. Then, see Chapter 4 for answers and explanations.
+Complete the following review questions using the techniques outlined in this chapter.
+Then, see Chapter 4 for answers and explanations.
 
 1. Let $y = f ( x )$ be the solution of the equation
 
@@ -14,7 +15,8 @@ $$
 \frac { 1 } { 4 } ( 4 - \pi )
 $$
 
-2. A population of bacteria grows at a rate proportional to the number present. After two hours, the [statement lost in the scan] of k. What is the value of k? (A) 6 (B) 8 (C) 9 (D) 27 (E) 81
+2. A population of bacteria grows at a rate proportional to the number present.
+   After two hours, the [statement lost in the scan] of k. What is the value of k? (A) 6 (B) 8 (C) 9 (D) 27 (E) 81
 
 3. Every curve in a certain family, $y = f ( x , c ) ,$ has the following property: the area of the region in the first quadrant bounded above by the curve from (0, 0) to (x, y) and bounded below by the x-axis is $\frac { 1 } { 3 }$ of the area of the rectangle with corners at (0, 0) and (x, y). Find $f ( x , c ) .$ (A) $\cos ^ { 3 }$ (B) $c x ^ { 3 } + x$ (C) $c x ^ { 3 } - x$ (D) $c x ^ { 2 }$ (E) $c \sqrt { x }$
 
@@ -43,13 +45,15 @@ $$
 
 such that $f ( 0 ) = 1 , f ^ { \prime } ( 0 ) = 0$ , and $f ^ { \prime \prime } ( 0 ) = a ^ { 2 } .$ How many positive values of x satisfy the equation $f ( x ) = 0 ?$ (A) 0 (B) 1 (C) 2 (D) 3 (E) more than 3
 
-6. Let $g : \mathbb { R } \to \mathbb { R }$ be a differentiable and integrable function. The integral curve of the differential equation
+6. Let $g : \mathbb { R } \to \mathbb { R }$ be a differentiable and integrable function.
+   The integral curve of the differential equation
 
 $$
 \left[ y + g ( x ) \right] d x + \left[ x - g ( y ) \right] d y = 0
 $$
 
-that passes through the point (1, 1) must also pass through which of the following points? (A) $( 0 , 0 )$ (B) $( 2 , \frac { 1 } { 2 } )$ (C) $( \frac { 1 } { 2 } , 2 )$ (D) $( - 1 , - 1 )$ (E) $( 0 , 1 )$
+that passes through the point (1, 1) must also pass through which of the following points?
+(A) $( 0 , 0 )$ (B) $( 2 , \frac { 1 } { 2 } )$ (C) $( \frac { 1 } { 2 } , 2 )$ (D) $( - 1 , - 1 )$ (E) $( 0 , 1 )$
 
 7. Let $y = f ( x )$ be the solution of the equation
 
@@ -153,7 +157,8 @@ $$
 
 (E) $e ^ { - x / y } = - x$
 
-13. Consider the family F of circles in the xy-plane, $( x - c ) ^ { 2 } + y ^ { 2 } = c ^ { 2 } ,$ that are tangent to the y-axis at the origin. What family of curves is orthogonal to F?
+13. Consider the family F of circles in the xy-plane, $( x - c ) ^ { 2 } + y ^ { 2 } = c ^ { 2 } ,$ that are tangent to the y-axis at the origin.
+    What family of curves is orthogonal to F?
 
 (A) $y ^ { \prime } = \frac { x } { x - y }$
 

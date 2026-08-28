@@ -262,9 +262,12 @@ No scripts, no pattern matching.
   Chapter 4 review questions, 16 differential-equation problems.
   Data fixes: 3 (two answer garbles and one dropped factor, each resolved against the verified answer).
 
-  - **Data fixes:** Q1 answer `\frac { 1 } { \frac { 3 } { 4 } } ( 4 - \pi )` → `\frac { 1 } { 4 } ( 4 - \pi )` (f(1) = 1 − π/4 = (4−π)/4; the `3` is a scan insertion). Q8 (A) `x - cosh x` → `(A) $x - \sinh x$` (x − cosh x fails f(0) = 0; x − sinh x satisfies all four conditions y⁗ = y″ with f(0) = f′(0) = f″(0) = 0, f‴(0) = −1). Q9 (E) `{ \mid }` → `{ t }` in `2 t + c _ { 1 } + c _ { 2 } e ^ { - t / 2 } + c _ { 3 } e ^ { - 3 t }` (characteristic roots 0, −1/2, −3, particular 2t; a `\mid` symbol cannot appear in a solution).
+  - **Data fixes:** Q1 answer `\frac { 1 } { \frac { 3 } { 4 } } ( 4 - \pi )` → `\frac { 1 } { 4 } ( 4 - \pi )` (f(1) = 1 − π/4 = (4−π)/4; the `3` is a scan insertion).
+    Q8 (A) `x - cosh x` → `(A) $x - \sinh x$` (x − cosh x fails f(0) = 0; x − sinh x satisfies all four conditions y⁗ = y″ with f(0) = f′(0) = f″(0) = 0, f‴(0) = −1). Q9 (E) `{ \mid }` → `{ t }` in `2 t + c _ { 1 } + c _ { 2 } e ^ { - t / 2 } + c _ { 3 } e ^ { - 3 t }` (characteristic roots 0, −1/2, −3, particular 2t; a `\mid` symbol cannot appear in a solution).
 
-  - Question numbers added where the scan dropped them: 2, 3, 4, 6, 7, 8, 9, 10, 11, 13 (`11At` → `11. At`). Q4 stem rebuilt from fragments: “Which of the following is a slope field for the differential equation $\left( \frac { d y } { d x } \right) ^ { 2 } = \frac { x } { y } \left( 2 \frac { d y } { d x } - \frac { x } { y } \right) ?$”; the five slope-field images are placeholders (`(A)` … `(E)` + `<!-- image-->`), so the question cannot be answered from the extraction. Q13 stem fragment “at the orthogonal to F?” → “at the origin. What family of curves is orthogonal to F?” (the family F consists of circles tangent to the y-axis at the origin, so the reconstruction is forced by the circle equation).
+  - Question numbers added where the scan dropped them: 2, 3, 4, 6, 7, 8, 9, 10, 11, 13 (`11At` → `11. At`). Q4 stem rebuilt from fragments: “Which of the following is a slope field for the differential equation $\left( \frac { d y } { d x } \right) ^ { 2 } = \frac { x } { y } \left( 2 \frac { d y } { d x } - \frac { x } { y } \right) ?$”; the five slope-field images are placeholders (`(A)` … `(E)` + `<!-- image-->`), so the question cannot be answered from the extraction.
+    Q13 stem fragment “at the orthogonal to F?” → “at the origin.
+    What family of curves is orthogonal to F?” (the family F consists of circles tangent to the y-axis at the origin, so the reconstruction is forced by the circle equation).
 
   - Q2 statement span `the ur e i v of k.` (prose tying the growth rate to k) is unrecoverable → `[statement lost in the scan]`; numeric choices rebuilt from adjacent digits with dropped letters: `(A) 6 (B) 8 (C) 9 (D) 27 (E) 81`.
 
@@ -272,7 +275,8 @@ No scripts, no pattern matching.
 
   - Answers verified against the mathematics (stem and choices otherwise kept as extracted): Q1 (4−π)/4; Q3 (D) `c x ^ { 2 }` (y′ = 2y/x from ∫₀ˣ f dt = xy/3); Q5 (A) 0 (y = e^{ax} − sin(ax); e^u > 1 ≥ sin u for u > 0); Q6 (D) (−1,−1) (M_y = N_x = 1, F = xy + ∫g − ∫g, the g-terms cancel at (−1,−1) where x = y); Q7 (B) 2/π (integrating factor x: xy = sin x − x cos x, C = 0 from f(π) = 1); Q8 (A) x − sinh x; Q9 (E); Q10 (D) (μ = x⁴y², F = x⁶y⁴/2 − x⁵y³); Q11 (D) (exact, F = x²y − x + y³ + y = 2); Q12 (A) e^{y/x} = cx (v = y/x); Q13 (D) (orthogonal slope 2xy/(x² − y²)); Q15 (C) (2w_x − 3w_y = 0 forces w = φ(3x + 2y)). Q14 (B): (D) and (E) fail g(0, y) = 0; among (A), (B), (C), only (B) has g_x = x cos x, so only (B) is consistent with exactness, with coefficient M = xy cos x — the scan's `( \sin x y )` in the stem likely misread `x y \cos x`; kept as extracted, needs source check.
 
-  - Surviving-choice gaps, kept as extracted (needs source check): Q3 (A) `\cos ^ { 3 }` (unlikely distractor shape for this problem class); Q8 (B) `x - \sin \alpha x` and (D) `x + \sin \tan x`; Q9 (C) `e ^ { - 1 / 3 }` (missing the `t` in the exponent) and (D) exponents `e ^ { - t / 3 }`, `e ^ { - 2 t }` (neither matches the characteristic roots); Q10 (A) `x ^ { \ast }` (asterisk instead of a power); Q12 (E) `e ^ { - x / y } = - x` (sign arrangement uncertain). Q4 images: see above.
+  - Surviving-choice gaps, kept as extracted (needs source check): Q3 (A) `\cos ^ { 3 }` (unlikely distractor shape for this problem class); Q8 (B) `x - \sin \alpha x` and (D) `x + \sin \tan x`; Q9 (C) `e ^ { - 1 / 3 }` (missing the `t` in the exponent) and (D) exponents `e ^ { - t / 3 }`, `e ^ { - 2 t }` (neither matches the characteristic roots); Q10 (A) `x ^ { \ast }` (asterisk instead of a power); Q12 (E) `e ^ { - x / y } = - x` (sign arrangement uncertain).
+    Q4 images: see above.
 
 ## Unrecoverable extractions
 
