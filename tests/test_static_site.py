@@ -254,6 +254,55 @@ def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(tmp_path:
     ]
 
 
+FORMULA_TITLED_PROBLEM = """---
+schema: qual/card@1
+id: P-PACKET-2
+kind: problem
+title: $\\mathbb{Z}[x]$ is not a principal ideal domain
+classification:
+  areas:
+  - algebra
+  topics:
+  - Groups
+relations: []
+review: draft
+---
+
+::: problem
+Exhibit an ideal of $\\mathbb{Z}[x]$ that no single element generates.
+:::
+"""
+
+
+def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path: Path) -> None:
+    """483 of the 4921 titles begin with mathematics, and `$` sorts under every
+    letter, so ordering by the raw title opened the page on a wall of formulas
+    with nothing above them naming a subject.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {"P-PACKET-1.md": PACKET_PROBLEM, "P-PACKET-2.md": FORMULA_TITLED_PROBLEM},
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
+    browser = page.root.find_all("div", **{"class": "problem-browser"})[0]
+    order = [
+        child.find_all("h2")[0].text if child.attrs["class"].startswith("problem-group") else child.find_all("a")[0].attrs["href"]
+        for child in browser.children
+        if isinstance(child, Element)
+    ]
+    assert order[0] == "Algebra"
+    assert order.index("tag/P-PACKET-1.html") < order.index("tag/P-PACKET-2.html")
+
+    # Every row opts out of the initial MathJax pass; app.js typesets a row when
+    # it is scrolled near. All 4921 at once cost ten seconds before a reader
+    # could touch the filter.
+    assert len(browser.find_all("div", **{"class": "problem-row mathjax_ignore"})) == len(order) - 1
+
+
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
 

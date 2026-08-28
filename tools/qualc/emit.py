@@ -1737,7 +1737,11 @@ def problem_browser_page(
            )) as years
         from cards c
         where c.kind='problem'
-        order by c.title, c.id
+        -- Grouped by area, and within an area the titles that begin with prose
+        -- come before the ones that begin with mathematics. Ordering by the raw
+        -- title alone opened the page on 483 formulas, because `$` sorts ahead
+        -- of every letter.
+        order by areas, case when c.title like '$%' then 1 else 0 end, c.title, c.id
         """,
     )
     sources_by_problem: dict[str, list[sqlite3.Row]] = {}
@@ -1751,9 +1755,21 @@ def problem_browser_page(
     ):
         sources_by_problem.setdefault(source["problem_id"], []).append(source)
     rows: list[pf.Block] = []
+    heading_area = ""
     for problem in problems:
         area_terms = _facet_terms(problem["areas"])
         topic_terms = _facet_terms(problem["topics"])
+        # One heading per area, carrying the area's own name so the filter can
+        # hide a heading whose problems are all hidden.
+        if problem["areas"] != heading_area:
+            heading_area = problem["areas"]
+            rows.append(
+                pf.Div(
+                    pf.Header(pf.Str(", ".join(_facet_option_label("area", a) for a in area_terms) or "Unclassified"), level=2),
+                    classes=["problem-group"],
+                    attributes={"data-area": FACET_SEP.join(area_terms)},
+                )
+            )
         institution_terms = _facet_terms(problem["institutions"])
         year_terms = _facet_terms(problem["years"])
         facet_text = " · ".join(
@@ -1794,7 +1810,12 @@ def problem_browser_page(
                 _link(problem, inline_cache, base=""),
                 pf.Plain(pf.Str(facet_text or "Unclassified")),
                 pf.Plain(pf.Str("Sources: "), *source_links) if source_links else pf.Plain(pf.Str("Sources: none")),
-                classes=["problem-row"],
+                # 4161 of the 4921 titles are mathematics. Typesetting all of
+                # them on load cost ten seconds before a reader could touch the
+                # filter. `mathjax_ignore` is MathJax's own opt-out class, so
+                # the initial pass skips every row; `app.js` removes it from a
+                # row and typesets that row when it scrolls into view.
+                classes=["problem-row", "mathjax_ignore"],
                 attributes={
                     "data-search": search,
                     "data-area": FACET_SEP.join(area_terms),
@@ -2378,8 +2399,7 @@ def project(
                 "Past exams.",
                 _rows(
                     con,
-                    "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id"
-                    f" order by e.institution, s.year, {TERM_RANK}, e.area, c.id",
+                    f"select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, {TERM_RANK}, e.area, c.id",
                 ),
                 "",
                 inline_cache,

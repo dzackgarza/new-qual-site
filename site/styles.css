@@ -608,6 +608,11 @@ mjx-container[display="true"] {
   display: grid;
   gap: 0.45rem;
   margin-top: 1rem;
+  /* A row's three columns fit or they do not, and what decides that is the
+     width of this list, not the width of the window: the on-this-page rail
+     takes a fixed slice of the page above 56rem and none below it. A viewport
+     query cannot see that. */
+  container-type: inline-size;
 }
 
 .problem-filters {
@@ -662,6 +667,24 @@ mjx-container[display="true"] {
   color: var(--muted);
   font-size: var(--label);
   text-align: right;
+}
+
+/* Below this the facets and sources need 21rem of the row's width and the
+   title is left with what is over, which was a title broken one letter to a
+   line. Stack instead. */
+@container (max-width: 44rem) {
+  .problem-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.3rem;
+  }
+
+  .problem-row > p:last-child {
+    text-align: left;
+  }
+}
+
+.problem-group h2 {
+  margin-top: 2rem;
 }
 
 .problem-row[hidden] {

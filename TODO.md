@@ -1123,7 +1123,8 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 - [x] Rank title matches above body matches in search.
   The query `compact` returns Cone, Cover, Cochain, Cocycle, Colimit, Coproduct, Coboundary, Commutator, and three Continuity rows before `Compactness` at rank 14. None of the first nine carry the word in the title.
   The order tracks title length.
-  Does not reproduce. Running `site/app.js`'s own ranking over the built `search.json`, `compact` returns Compactness, Compact space, Compact operator, Compact topological space; no Co-word appears in the first fifteen.
+  Does not reproduce.
+  Running `site/app.js`'s own ranking over the built `search.json`, `compact` returns Compactness, Compact space, Compact operator, Compact topological space; no Co-word appears in the first fifteen.
   `cone`, `continuity`, `sylow` and `residue theorem` all lead with title matches.
   The ranking landed in 8a8d493d0, two days before this observation, so the browsed page was running an older script than the one the build wrote.
   Remaining, and not this item: within the body-match tier the tie-break is still title length, so `residue theorem` puts a page titled `Topics` above one titled `Residues`.
@@ -1132,9 +1133,14 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   The query `Sylow` returns `Sylow Theorems` as a card, `Sylow Theorems` as a wiki page, `Sylow theorems` as a problem, and `Sylow Theory` as a guide page.
   Across the site 375 titles are shared by 836 pages: 5 pages are titled `Closed subsets of compact spaces are compact`, 4 `Cauchy's theorem`. A search row separates them only by a small grey path.
 
-- [ ] Order and page the problem browser.
+- [x] Order and page the problem browser.
   `problems.html` sorts 4921 problems by raw title string, so the page opens with the formula-titled problems.
   It is one 2.5 MB page with no pagination and no headings.
+  Fixed: the rows are grouped under an area heading, and within an area the prose titles come before the 483 that begin with mathematics.
+  The six headings fill the on-this-page rail, which is the jump list the page had no form of.
+  The load cost was the other half: MathJax typeset all 4161 formula titles before a reader could touch the filter.
+  A row is now typeset when it is scrolled near, and the load event falls from 10.1 s to 1.8 s.
+  It is one page still, because the filter counts matches across every row; the rail is what a reader navigates it by.
 
 ### Wiki navigation
 

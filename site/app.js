@@ -129,15 +129,55 @@
     const applyFilter = () => {
       const terms = problemFilter.value.toLocaleLowerCase().trim().split(/\s+/);
       let visible = 0;
-      for (const row of document.querySelectorAll(".problem-row")) {
-        const matchesSearch = !problemFilter.value.trim() || terms.every((term) => row.dataset.search.includes(term));
-        const matchesFacets = facets.every(({ axis, select }) => matchesFacet(row, axis, selected(select)));
-        row.hidden = !(matchesSearch && matchesFacets);
-        if (!row.hidden) visible += 1;
+      // The rows are grouped under an area heading. A heading whose rows are
+      // all filtered out has to go with them, or the page shows a subject that
+      // has nothing under it.
+      let group = null;
+      let inGroup = 0;
+      const closeGroup = () => {
+        if (group) group.hidden = inGroup === 0;
+      };
+      for (const node of document.querySelectorAll(".problem-group, .problem-row")) {
+        if (node.classList.contains("problem-group")) {
+          closeGroup();
+          group = node;
+          inGroup = 0;
+          continue;
+        }
+        const matchesSearch = !problemFilter.value.trim() || terms.every((term) => node.dataset.search.includes(term));
+        const matchesFacets = facets.every(({ axis, select }) => matchesFacet(node, axis, selected(select)));
+        node.hidden = !(matchesSearch && matchesFacets);
+        if (!node.hidden) {
+          visible += 1;
+          inGroup += 1;
+        }
       }
+      closeGroup();
       const count = document.querySelector("#problem-count");
       if (count) count.textContent = `${visible} problem${visible === 1 ? "" : "s"} shown`;
     };
+    // The rows carry `mathjax_ignore`, so MathJax's pass over the page leaves
+    // all 4921 of them alone. A row is typeset the first time it is scrolled
+    // near, which is what a reader can actually see. Before this the page took
+    // ten seconds to become usable, all of it typesetting titles off-screen.
+    // This script and MathJax's are both deferred and run in document order, so
+    // `startup` exists here; its promise is what has not settled yet. Waiting
+    // on it keeps a row observed until there is something that can typeset it.
+    const typeset = new IntersectionObserver(
+      async (entries) => {
+        const ready = entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target);
+        if (!ready.length) return;
+        await window.MathJax?.startup?.promise;
+        for (const row of ready) {
+          row.classList.remove("mathjax_ignore");
+          typeset.unobserve(row);
+        }
+        await window.MathJax?.typesetPromise?.(ready);
+      },
+      { rootMargin: "400px" },
+    );
+    for (const row of document.querySelectorAll(".problem-row")) typeset.observe(row);
+
     // No `q` in the URL is a real state, not a missing value: it means no filter.
     const query = new URLSearchParams(location.search).get("q");
     problemFilter.value = query === null ? "" : query;
