@@ -16,7 +16,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path, PurePosixPath
-from typing import Annotated, Literal, cast
+from typing import Annotated, Literal, cast, get_args
 
 import panflute as pf
 import yaml
@@ -40,11 +40,18 @@ class Strict(BaseModel):
 # --- dates ------------------------------------------------------------------
 # Unknown is a case, never a sentinel like `year: 0` or `season: NA`.
 
+Term = Literal["spring", "summer", "fall"]
+
+# Written in the order the terms fall within one calendar year, and read back
+# out for anything that has to sort sittings. A second list of the same three
+# names is a second thing to keep right.
+TERMS_IN_YEAR_ORDER: tuple[Term, ...] = get_args(Term)
+
 
 class AcademicTerm(Strict):
     kind: Literal["academic-term"]
     year: int
-    term: Literal["spring", "summer", "fall"]
+    term: Term
 
 
 class YearOnly(Strict):
@@ -61,7 +68,7 @@ class TermOnly(Strict):
     """
 
     kind: Literal["term"]
-    term: Literal["spring", "summer", "fall"]
+    term: Term
 
 
 class UnknownDate(Strict):

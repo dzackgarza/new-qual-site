@@ -31,7 +31,7 @@ from urllib.parse import urlsplit
 import panflute as pf
 import yaml
 
-from .model import DIV_CLASS_TO_KIND, MARKDOWN, from_ast, to_json
+from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
     PandocBatchError,
     PandocFailure,
@@ -562,6 +562,10 @@ def _wiki_incoming_html(sources: list[WikiPage]) -> str:
 # for a tag page, so a transcluded definition is the same `div.qual-section`
 # markup a locally authored `:::{.definition}` produces.
 CARD_ROUTE = "tag/"
+
+# Sorts a sitting within its year. A sitting with no recorded term sorts after
+# the ones that have one rather than ahead of spring.
+TERM_RANK = "case s.term " + " ".join(f"when '{term}' then {rank}" for rank, term in enumerate(TERMS_IN_YEAR_ORDER)) + f" else {len(TERMS_IN_YEAR_ORDER)} end"
 WIKILINK_CLASS = "wikilink"
 
 
@@ -2374,7 +2378,8 @@ def project(
                 "Past exams.",
                 _rows(
                     con,
-                    "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
+                    "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id"
+                    f" order by e.institution, s.year, {TERM_RANK}, e.area, c.id",
                 ),
                 "",
                 inline_cache,

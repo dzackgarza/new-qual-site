@@ -1115,8 +1115,9 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 - [ ] Group and filter `exams.html`. It is one flat list of 338 links: no headings, no filters, no counts, no marker for which exams have solutions.
   Browse exposes area, topic, institution, and year filters over the same facets.
 
-- [ ] Sort exam sittings by term within a year.
+- [x] Sort exam sittings by term within a year.
   The order is institution, year, area, then term alphabetically, so `TAMU real-analysis Fall 2015` precedes `TAMU real-analysis Spring 2015`.
+  Fixed: a sitting now sorts by the term it was sat in, read from the term type rather than written out a second time in SQL.
 
 ### Findability
 

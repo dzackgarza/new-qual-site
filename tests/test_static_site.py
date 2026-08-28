@@ -1,4 +1,5 @@
-"""The direct HTML output resolves semantic links and owned assets."""
+"""What the emitted HTML says: which links resolve, which assets are owned,
+and the order and shape a listing page presents its contents in."""
 
 from __future__ import annotations
 
@@ -187,13 +188,70 @@ def test_the_not_found_page_resolves_its_links_from_the_site_root(tmp_path: Path
 
     page = (work / "build" / "quarto" / "_site" / "404.html").read_text()
     head = page.split("</head>", 1)[0]
-    assert head.index("createElement(\"base\")") < head.index("href=\"styles.css\"")
+    assert head.index('createElement("base")') < head.index('href="styles.css"')
 
     links = LinkCollector()
     links.feed(page)
     nav = [href for href in links.hrefs if not href.startswith("data:")]
     assert "problems.html" in nav
     assert [href for href in nav if href.startswith(("../", "/"))] == []
+
+
+def _uga_sitting(card_id: str, year: int, term: str) -> str:
+    return f"""---
+schema: qual/card@1
+id: {card_id}
+kind: collection
+title: UGA Algebra qualifying exam, {term.title()} {year}
+classification:
+  areas:
+  - algebra
+  topics:
+  - Groups
+relations: []
+review: draft
+source:
+  source_kind: university-exam
+  institution: uga
+  area: algebra
+  date:
+    kind: academic-term
+    year: {year}
+    term: {term}
+---
+
+::: remark
+One sitting.
+:::
+"""
+
+
+def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(tmp_path: Path) -> None:
+    """Spring 2019 was sat before Fall 2019, so it is listed first.
+
+    Ordering by card id put Fall ahead of Spring in every year on the real
+    site, because `FALL` precedes `SPRING`.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {
+            "SRC-UGA-FALL-2019.md": _uga_sitting("SRC-UGA-FALL-2019", 2019, "fall"),
+            "SRC-UGA-SPRING-2020.md": _uga_sitting("SRC-UGA-SPRING-2020", 2020, "spring"),
+        },
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    links = LinkCollector()
+    links.feed((work / "build" / "quarto" / "_site" / "exams.html").read_text())
+    # SRC-UGA-FIX is the fixture corpus's own Spring 2019 sitting.
+    sittings = [href for href in links.hrefs if href.startswith("exam/SRC-UGA")]
+    assert sittings == [
+        "exam/SRC-UGA-FIX.html",
+        "exam/SRC-UGA-FALL-2019.html",
+        "exam/SRC-UGA-SPRING-2020.html",
+    ]
 
 
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
