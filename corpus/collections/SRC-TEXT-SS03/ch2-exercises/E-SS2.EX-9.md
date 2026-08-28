@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-9. Let Ω be a bounded open subset of $\mathbb { C } ,$ and $\varphi : \Omega \to \Omega$ a holomorphic function. Prove that if there exists a point $z _ { 0 } \in \Omega$ such that
+9. Let Ω be a bounded open subset of $\mathbb { C } ,$ and $\varphi : \Omega \to \Omega$ a holomorphic function.
+   Prove that if there exists a point $z _ { 0 } \in \Omega$ such that
 
 $$
 \varphi (z _ {0}) = z _ {0} \quad \mathrm{and} \quad \varphi^ {\prime} (z _ {0}) = 1

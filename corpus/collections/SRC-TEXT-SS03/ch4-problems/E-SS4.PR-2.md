@@ -20,7 +20,8 @@ $$
 a _ {n} \frac {d ^ {n}}{d t ^ {n}} u (t) + a _ {n - 1} \frac {d ^ {n - 1}}{d t ^ {n - 1}} u (t) + \dots + a _ {0} u (t) = f (t),
 $$
 
-where $a _ { 0 } , a _ { 1 } , \ldots , a _ { n }$ are complex constants, and $f$ is a given function. Here we suppose that $f$ has bounded support and is smooth (say of class $C ^ { 2 } )$
+where $a _ { 0 } , a _ { 1 } , \ldots , a _ { n }$ are complex constants, and $f$ is a given function.
+Here we suppose that $f$ has bounded support and is smooth (say of class $C ^ { 2 } )$
 
 (a) Let
 

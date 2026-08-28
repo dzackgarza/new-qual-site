@@ -30,7 +30,8 @@ $$
 \int_ {\gamma} f (z) d z = 0 \quad \text { for   all } \gamma \in \mathcal {F}
 $$
 
-then $f$ is holomorphic. In particular, Morera’s theorem holds under the weaker assumption that $\begin{array} { r } { \int _ { T } f ( z ) d z = 0 } \end{array}$ for all equilateral triangles.
+then $f$ is holomorphic.
+In particular, Morera’s theorem holds under the weaker assumption that $\begin{array} { r } { \int _ { T } f ( z ) d z = 0 } \end{array}$ for all equilateral triangles.
 
 [Hint: As a first step, assume that f is twice real diferentiable, and write $f ( z ) =$ $f ( z _ { 0 } ) + a ( z - z _ { 0 } ) + b ( \overline { { z - z _ { 0 } } } ) + O ( | z - z _ { 0 } | ^ { 2 } )$ for z near $z _ { \mathrm { 0 } }$ . Integrating this expansion over small circles around z<sub>0</sub> yields $\partial f / \partial { \overline { { z } } } = b = 0$ at $z _ { 0 }$ . Alternatively, suppose only that $f$ is diferentiable and apply Green’s theorem to conclude that the real and imaginary parts of f satisfy the Cauchy-Riemann equations.
 

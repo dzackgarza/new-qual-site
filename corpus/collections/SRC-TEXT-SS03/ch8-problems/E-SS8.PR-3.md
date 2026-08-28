@@ -21,13 +21,16 @@ $$
 \| w \| _ {z} = \frac{| w |}{1 - | z | ^ {2}},
 $$
 
-where $|w|$ and $|z|$ denote the usual absolute values. This length is sometimes referred to as the Poincaré metric, and as a Riemann metric it is written as
+where $|w|$ and $|z|$ denote the usual absolute values.
+This length is sometimes referred to as the Poincaré metric, and as a Riemann metric it is written as
 
 $$
 d s ^ {2} = \frac{| d z | ^ {2}}{(1 - | z | ^ {2}) ^ {2}}.
 $$
 
-The idea is to think of $w$ as a vector lying in the tangent space at $z$. Observe that for a fixed $w$, its hyperbolic length grows to infinity as $z$ approaches the boundary of the disc. We pass from the infinitesimal hyperbolic length of tangent vectors to the global hyperbolic distance between two points by integration.
+The idea is to think of $w$ as a vector lying in the tangent space at $z$.
+Observe that for a fixed $w$, its hyperbolic length grows to infinity as $z$ approaches the boundary of the disc.
+We pass from the infinitesimal hyperbolic length of tangent vectors to the global hyperbolic distance between two points by integration.
 
 (a) Given two complex numbers $z_1$ and $z_2$ in the disc, we define the hyperbolic distance between them by
 
@@ -35,7 +38,8 @@ $$
 d (z_1, z_2) = \inf_ {\gamma} \int_ {0} ^ {1} \| \gamma' (t) \| _ {\gamma (t)} d t,
 $$
 
-where the infimum is taken over all smooth curves $\gamma : [0, 1] \to \mathbb{D}$ joining $z_1$ and $z_2$. Use the Schwarz-Pick lemma to prove that if $f : \mathbb{D} \to \mathbb{D}$ is holomorphic, then
+where the infimum is taken over all smooth curves $\gamma : [0, 1] \to \mathbb{D}$ joining $z_1$ and $z_2$.
+Use the Schwarz-Pick lemma to prove that if $f : \mathbb{D} \to \mathbb{D}$ is holomorphic, then
 
 $$
 d (f (z_1), f (z_2)) \leq d (z_1, z_2) \quad \text{for any } z_1, z_2 \in \mathbb{D}.
@@ -49,7 +53,8 @@ $$
 d (\varphi (z_1), \varphi (z_2)) = d (z_1, z_2), \quad \text{for any } z_1, z_2 \in \mathbb{D}
 $$
 
-and any automorphism $\varphi$. Conversely, if $\varphi : \mathbb{D} \to \mathbb{D}$ preserves the hyperbolic distance, then either $\varphi$ or $\overline{\varphi}$ is an automorphism of $\mathbb{D}$.
+and any automorphism $\varphi$.
+Conversely, if $\varphi : \mathbb{D} \to \mathbb{D}$ preserves the hyperbolic distance, then either $\varphi$ or $\overline{\varphi}$ is an automorphism of $\mathbb{D}$.
 
 (c) Given two points $z_1, z_2 \in \mathbb{D}$, show that there exists an automorphism $\varphi$ such that $\varphi(z_1) = 0$ and $\varphi(z_2) = s$ for some $s$ on the segment $[0, 1)$ on the real line.
 

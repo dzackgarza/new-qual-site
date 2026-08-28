@@ -26,7 +26,8 @@ $$
 \mu (n) = \left\{ \begin{array}{l l} 1 & \text {if n = 1 ,} \\ (- 1) ^ {k} & \text {if n = p_{1} \cdots p_{k} , and the p_{j} are distinct primes ,} \\ 0 & \text {otherwise .} \end{array} \right.
 $$
 
-Note that $\mu ( n m ) = \mu ( n ) \mu ( m )$ whenever n and m are relatively prime. [Hint: Use the Euler product formula for $\zeta ( s ) . ]$
+Note that $\mu ( n m ) = \mu ( n ) \mu ( m )$ whenever n and m are relatively prime.
+[Hint: Use the Euler product formula for $\zeta ( s ) . ]$
 
 (b) Show that
 

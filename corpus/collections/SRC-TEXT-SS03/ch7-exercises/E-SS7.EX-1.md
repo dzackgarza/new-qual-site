@@ -18,7 +18,8 @@ $$
 A _ {n} = a _ {1} + \dots + a _ {n}
 $$
 
-are bounded. Prove that the Dirichlet series
+are bounded.
+Prove that the Dirichlet series
 
 $$
 \sum_ {n = 1} ^ {\infty} \frac {a _ {n}}{n ^ {s}}

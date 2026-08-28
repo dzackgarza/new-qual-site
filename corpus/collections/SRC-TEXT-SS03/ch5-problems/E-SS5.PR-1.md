@@ -45,11 +45,13 @@ $$
 f (z) = \prod_ {n = 1} ^ {\infty} \frac {\alpha_ {n} - z}{1 - \overline {{\alpha}} _ {n} z} \frac {| \alpha_ {n} |}{\alpha_ {n}}
 $$
 
-converges uniformly for $| z | \leq r < 1$ , and defines a holomorphic function on the unit disc having precisely the zeros $\alpha _ { n }$ and no other zeros. Show that $| f ( z ) | \leq 1$
+converges uniformly for $| z | \leq r < 1$ , and defines a holomorphic function on the unit disc having precisely the zeros $\alpha _ { n }$ and no other zeros.
+Show that $| f ( z ) | \leq 1$
 
 3.∗ Show that $\sum \frac { z ^ { n } } { ( n ! ) ^ { \alpha } }$ is an entire function of order $1 / \alpha$
 
-$4 . ^ { * }$ Let $\begin{array} { r } { F ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } } \end{array}$ be an entire function of finite order. Then the growth order of F is intimately linked with the growth of the coeficients $a _ { n }$ as $n \to \infty$ In fact:
+$4 . ^ { * }$ Let $\begin{array} { r } { F ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } } \end{array}$ be an entire function of finite order.
+Then the growth order of F is intimately linked with the growth of the coeficients $a _ { n }$ as $n \to \infty$ In fact:
 
 (a) Suppose $| F ( z ) | \leq A e ^ { a | z | ^ { \rho } }$ . Then
 

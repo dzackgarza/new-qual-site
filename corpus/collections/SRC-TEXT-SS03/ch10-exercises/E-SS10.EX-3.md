@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-3. More generally, consider the diference equation given by the initial values u<sub>0</sub> and $u _ { 1 }$ , and the recurrence relation $u _ { n } = a u _ { n - 1 } + b u _ { n - 2 }$ for $n \geq 2$ . Define the generating function associated to $\{ u _ { n } \} _ { n = 0 } ^ { \infty }$ by $\textstyle U ( x ) = \sum _ { n = 0 } ^ { \infty } u _ { n } x ^ { n }$ . The recurrence relation implies that $U ( x ) ( 1 - a x - b x ^ { 2 } ) = u _ { 0 } + ( u _ { 1 } - a u _ { 0 } ) x$ in a neighborhood of the origin. If α and $\beta$ denote the roots of the polynomial $p ( x ) = x ^ { 2 } - a x - b ;$ then we may write
+3. More generally, consider the diference equation given by the initial values u<sub>0</sub> and $u _ { 1 }$ , and the recurrence relation $u _ { n } = a u _ { n - 1 } + b u _ { n - 2 }$ for $n \geq 2$ . Define the generating function associated to $\{ u _ { n } \} _ { n = 0 } ^ { \infty }$ by $\textstyle U ( x ) = \sum _ { n = 0 } ^ { \infty } u _ { n } x ^ { n }$ . The recurrence relation implies that $U ( x ) ( 1 - a x - b x ^ { 2 } ) = u _ { 0 } + ( u _ { 1 } - a u _ { 0 } ) x$ in a neighborhood of the origin.
+   If α and $\beta$ denote the roots of the polynomial $p ( x ) = x ^ { 2 } - a x - b ;$ then we may write
 
 Figure 2. Appearance of the golden mean
 

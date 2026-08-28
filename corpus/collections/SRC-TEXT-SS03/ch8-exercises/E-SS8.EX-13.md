@@ -38,5 +38,6 @@ $$
 \frac {| f ^ {\prime} (z) |}{1 - | f (z) | ^ {2}} \leq \frac {1}{1 - | z | ^ {2}} \quad \text { for   all } z \in \mathbb {D}.
 $$
 
-This result is called the Schwarz-Pick lemma. See Problem 3 for an important application of this lemma.
+This result is called the Schwarz-Pick lemma.
+See Problem 3 for an important application of this lemma.
 :::

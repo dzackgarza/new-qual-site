@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-14. Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle. Show that if
+14. Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle.
+    Show that if
 
 $$
 \sum_ {n = 0} ^ {\infty} a _ {n} z ^ {n}

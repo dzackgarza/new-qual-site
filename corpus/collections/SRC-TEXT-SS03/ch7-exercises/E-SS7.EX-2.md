@@ -28,5 +28,6 @@ $$
 (\zeta (s)) ^ {2} = \sum_ {n = 1} ^ {\infty} \frac {d (n)}{n ^ {s}} \quad \text { and } \quad \zeta (s) \zeta (s - a) = \sum_ {n = 1} ^ {\infty} \frac {\sigma_ {a} (n)}{n ^ {s}}
 $$
 
-for $\operatorname { R e } ( s ) > 1$ and $\operatorname { R e } ( s - a ) > 1$ , respectively. Here $d ( n )$ equals the number of divisors of $n _ { \mathrm { : } }$ , and $\sigma _ { a } ( n )$ is the sum of the $a ^ { \mathrm { t h } }$ powers of divisors of $n$ . In particular, one has $\sigma _ { 0 } ( n ) = d ( n )$
+for $\operatorname { R e } ( s ) > 1$ and $\operatorname { R e } ( s - a ) > 1$ , respectively.
+Here $d ( n )$ equals the number of divisors of $n _ { \mathrm { : } }$ , and $\sigma _ { a } ( n )$ is the sum of the $a ^ { \mathrm { t h } }$ powers of divisors of $n$ . In particular, one has $\sigma _ { 0 } ( n ) = d ( n )$
 :::

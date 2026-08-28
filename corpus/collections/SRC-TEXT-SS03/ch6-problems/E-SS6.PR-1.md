@@ -52,6 +52,6 @@ $$
 Then we can write
 
 $$
-
 \zeta (s) = \frac {s}{s - 1} - \frac {1}{2} - s \int_ {1} ^ {\infty} \left(\frac {d ^ {k}}{d x ^ {k}} Q _ {k} (x)\right) x ^ {- s - 1} d x,
+$$
 :::

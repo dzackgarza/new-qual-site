@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-11. Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ | y | < \pi \}$ the function $f ( x + i y )$ is exponentially decreasing as $| x |$ tends to infinity. Prove that
+11. Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ | y | < \pi \}$ the function $f ( x + i y )$ is exponentially decreasing as $| x |$ tends to infinity.
+    Prove that
 
 $$
 \hat {f} (\xi) = \Gamma (a + i \xi), \quad \text {   for   all   } \xi \in \mathbb {R}.

@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-20. This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions. If U is an open subset of C we use the notation
+20. This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions.
+    If U is an open subset of C we use the notation
 
 $$
 \| f \| _ {L ^ {2} (U)} = \left(\int_ {U} | f (z) | ^ {2} d x d y\right) ^ {1 / 2}

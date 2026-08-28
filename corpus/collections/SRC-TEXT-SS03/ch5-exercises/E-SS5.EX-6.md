@@ -50,5 +50,6 @@ $$
 
 [Hint: The answers are $\scriptstyle e ^ { z / 2 } z \prod _ { n = 1 } ^ { \infty } ( 1 + z ^ { 2 } / 4 n ^ { 2 } \pi ^ { 2 } )$ and $\scriptstyle \prod _ { n = 0 } ^ { \infty } ( 1 - 4 z ^ { 2 } / ( 2 n + 1 ) ^ { 2 } )$ , respectively.]
 
-11. Show that if f is an entire function of finite order that omits two values, then f is constant. This result remains true for any entire function and is known as Picard’s little theorem.
+11. Show that if f is an entire function of finite order that omits two values, then f is constant.
+    This result remains true for any entire function and is known as Picard’s little theorem.
 :::

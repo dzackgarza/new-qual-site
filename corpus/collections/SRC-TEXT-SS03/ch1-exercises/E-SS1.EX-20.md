@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-20. Expand $\left( 1 - z \right) ^ { - m }$ in powers of z. Here m is a fixed positive integer. Also, show that if
+20. Expand $\left( 1 - z \right) ^ { - m }$ in powers of z. Here m is a fixed positive integer.
+    Also, show that if
 
 $$
 (1 - z) ^ {- m} = \sum_ {n = 0} ^ {\infty} a _ {n} z ^ {n},

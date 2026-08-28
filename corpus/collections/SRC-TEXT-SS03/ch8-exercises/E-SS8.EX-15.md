@@ -14,7 +14,8 @@ review: draft
 ::: exercise
 15. Here are two properties enjoyed by automorphisms of the upper half-plane.
 
-(a) Suppose $\Phi$ is an automorphism of H that fixes three distinct points on the real axis. Then Φ is the identity.
+(a) Suppose $\Phi$ is an automorphism of H that fixes three distinct points on the real axis.
+Then Φ is the identity.
 
 (b) Suppose $( x _ { 1 } , x _ { 2 } , x _ { 3 } )$ and $( y _ { 1 } , y _ { 2 } , y _ { 3 } )$ are two pairs of three distinct points on the real axis with
 

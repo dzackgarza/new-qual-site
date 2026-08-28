@@ -22,7 +22,8 @@ Note that the product defines an entire function of $z ,$
 
 (a) Show that $| F ( z ) | \leq A e ^ { a | z | ^ { 2 } }$ , hence F is of order 2.
 
-(b) $F$ vanishes exactly when $z = - i n t + m$ for $n \geq 1$ and $n ,$ m integers. Thus, if $z _ { n }$ is an enumeration of these zeros we have
+(b) $F$ vanishes exactly when $z = - i n t + m$ for $n \geq 1$ and $n ,$ m integers.
+Thus, if $z _ { n }$ is an enumeration of these zeros we have
 
 $$
 \sum \frac {1}{| z _ {n} | ^ {2}} = \infty \quad \text { but } \quad \sum \frac {1}{| z _ {n} | ^ {2 + \epsilon}} <   \infty .
@@ -34,7 +35,8 @@ $$
 F _ {1} (z) = \prod_ {n = 1} ^ {N} (1 - e ^ {- 2 \pi n t} e ^ {2 \pi i z}) \quad \text { and } \quad F _ {2} (z) = \prod_ {n = N + 1} ^ {\infty} (1 - e ^ {- 2 \pi n t} e ^ {2 \pi i z}).
 $$
 
-Choose $N \approx c | z |$ with c appropriately large. Then, since
+Choose $N \approx c | z |$ with c appropriately large.
+Then, since
 
 $$
 \left(\sum_ {N + 1} ^ {\infty} e ^ {- 2 \pi n t}\right) e ^ {2 \pi | z |} \leq 1,

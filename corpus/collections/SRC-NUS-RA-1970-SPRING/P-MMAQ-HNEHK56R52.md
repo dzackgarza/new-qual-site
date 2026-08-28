@@ -28,7 +28,7 @@ Prove or disprove each of the following statements.
 
 (g) If $f$ is integrable on $[0,1]$, then $\lim_{n\to\infty} \int_0^1 f(x)\sin(n\pi x)dx = 0$.
 
-(h) If $f$ is continuous on $[0, 1]$, then it is of bounded variation on \[0, 1\]\$.
+(h) If $f$ is continuous on $[0, 1]$, then it is of bounded variation on $[0, 1]$.
 :::
 
 ::: {.solution}

@@ -22,7 +22,8 @@ $$
 
 Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \mathbb { R } .$
 
-(b) Prove that the function F equal to A in the closed upper half-plane, and B in the lower half-plane, is entire and bounded, thus constant. In fact, show that $F = 0$
+(b) Prove that the function F equal to A in the closed upper half-plane, and B in the lower half-plane, is entire and bounded, thus constant.
+In fact, show that $F = 0$
 
 (c) Deduce that
 

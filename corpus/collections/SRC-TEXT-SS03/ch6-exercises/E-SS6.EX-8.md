@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-8. The Bessel functions arise in the study of spherical symmetries and the Fourier transform. See Chapter 6 in Book I. Prove that the following power series identity holds for Bessel functions of real order $\nu > - 1 / 2$
+8. The Bessel functions arise in the study of spherical symmetries and the Fourier transform.
+   See Chapter 6 in Book I. Prove that the following power series identity holds for Bessel functions of real order $\nu > - 1 / 2$
 
 $$
 J _ {\nu} (x) = \frac {(x / 2) ^ {\nu}}{\Gamma (\nu + 1 / 2) \sqrt {\pi}} \int_ {- 1} ^ {1} e ^ {i x t} (1 - t ^ {2}) ^ {\nu - (1 / 2)} d t = \left(\frac {x}{2}\right) ^ {\nu} \sum_ {m = 0} ^ {\infty} \frac {(- 1) ^ {m} \left(\frac {x ^ {2}}{4}\right) ^ {m}}{m ! \Gamma (\nu + m + 1)}

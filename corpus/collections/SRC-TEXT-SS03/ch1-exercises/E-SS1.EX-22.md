@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: exercise
-22. Let $\mathbb { N } = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers. A subset $S \subset \mathbb { N }$ is said to be in arithmetic progression if
+22. Let $\mathbb { N } = \{ 1 , 2 , 3 , . . . \}$ denote the set of positive integers.
+    A subset $S \subset \mathbb { N }$ is said to be in arithmetic progression if
 
 $$
 S = \{a, a + d, a + 2 d, a + 3 d, \dots \}
