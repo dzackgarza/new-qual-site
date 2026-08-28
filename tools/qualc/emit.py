@@ -51,7 +51,9 @@ from .publication import (
 from .static_site import (
     AssetCatalog,
     AuthoredPage,
+    Crumb,
     EndReading,
+    LevelOnly,
     MiddleReading,
     NavigationLink,
     NavigationParent,
@@ -510,6 +512,30 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
             ),
         )
     )
+    # The wiki's own index is the root of every trail. It is filed beside the
+    # subjects rather than above them, so walking `parent` never reaches it and
+    # a subject landing page's breadcrumb was one crumb repeating its heading.
+    wiki_root = Crumb(title="Wiki", route=Path("wiki/index.html"))
+
+    def trail_of(key: str) -> tuple[Crumb, ...]:
+        steps: list[Crumb] = []
+        cursor = links[key]
+        while True:
+            match cursor.target:
+                case LevelOnly():
+                    raise ValueError(f"a wiki page is a level, not a page: {cursor.key}")
+                case PageTarget(route=route):
+                    steps.append(Crumb(title=cursor.title, route=route))
+            match cursor.parent:
+                case RootParent():
+                    break
+                case NodeParent(key=parent_key):
+                    cursor = links[parent_key]
+        steps.reverse()
+        if steps[0].route == wiki_root.route:
+            return tuple(steps)
+        return (wiki_root, *steps)
+
     navigation: dict[str, PublicationNavigation] = {}
     for members in _wiki_reading_members(ordered, pages_by_key).values():
         for index, page in enumerate(members):
@@ -532,6 +558,7 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
                 links=ordered,
                 current_key=page_keys[route_key],
                 position=position,
+                trail=trail_of(page_keys[route_key]),
             )
     return navigation
 
@@ -1456,10 +1483,21 @@ def _publication_navigation(
             previous=ReadingLink.of(ordered[index - 1]),
             following=ReadingLink.of(ordered[index + 1]),
         )
+    # A guide section's `parent` is the section it assumes, not the place it is
+    # filed: the whole guide is one flat list under the guide. The breadcrumb
+    # says where the page is, and the sidebar says what it depends on.
+    trail: tuple[Crumb, ...] = (
+        Crumb(title="Guides", route=Path("guides.html")),
+        Crumb(title=manifest.title, route=_publication_root_route(manifest)),
+    )
+    if current_key != manifest.id:
+        section = next(item for item in manifest.sections if item.slug == current_key)
+        trail = (*trail, Crumb(title=section.title, route=_publication_section_route(manifest, section)))
     return PublicationNavigation(
         links=links,
         current_key=current_key,
         position=position,
+        trail=trail,
     )
 
 

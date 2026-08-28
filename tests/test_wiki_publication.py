@@ -940,3 +940,72 @@ def test_a_reading_link_that_leaves_the_folder_says_where_it_lands(tmp_path: Pat
     quals = ReadingOrderParser()
     quals.feed((site / "quals" / "index.html").read_text())
     assert quals.entries == [("Sheet Two", "in Algebra / Exercises")]
+
+
+class BreadcrumbParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self._in_crumbs = False
+        self._text: list[str] | None = None
+        self.crumbs: list[tuple[str, str, bool]] = []
+        self._href = ""
+        self._current = False
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if tag == "nav" and "breadcrumbs" in (attributes.get("class") or ""):
+            self._in_crumbs = True
+        elif self._in_crumbs and tag == "a":
+            self._href = attributes["href"] or ""
+            self._current = attributes.get("aria-current") == "page"
+            self._text = []
+
+    def handle_data(self, data: str) -> None:
+        if self._text is not None:
+            self._text.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._in_crumbs and tag == "a" and self._text is not None:
+            self.crumbs.append(("".join(self._text).strip(), self._href, self._current))
+            self._text = None
+        elif tag == "nav":
+            self._in_crumbs = False
+
+
+def test_a_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
+    """One meaning, on every page that has one: the trail down to this page.
+
+    A wiki subject's landing page had a single crumb repeating its own heading,
+    because the wiki's index is filed beside the subjects rather than above
+    them and walking the folder chain never reached it.
+    """
+    work = fixture_repo(tmp_path)
+    algebra = work / "wiki" / "algebra"
+    (algebra / "groups").mkdir(parents=True)
+    (algebra / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (algebra / "groups" / "index.md").write_text(wiki_md("# Groups\n", order=1, title="Groups"))
+    (algebra / "groups" / "sylow.md").write_text(wiki_md("# Sylow\n", order=1))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site" / "wiki"
+
+    page = BreadcrumbParser()
+    page.feed((site / "algebra" / "groups" / "sylow.html").read_text())
+    assert page.crumbs == [
+        ("Wiki", "../../index.html", False),
+        ("Algebra", "../index.html", False),
+        ("Groups", "index.html", False),
+        ("Sylow", "sylow.html", True),
+    ]
+
+    # A subject landing page reaches the wiki root rather than naming itself.
+    subject = BreadcrumbParser()
+    subject.feed((site / "algebra" / "index.html").read_text())
+    assert subject.crumbs == [("Wiki", "../index.html", False), ("Algebra", "index.html", True)]
+
+    # The wiki root is its own root: nowhere to go up to, so no breadcrumb.
+    root = BreadcrumbParser()
+    root.feed((site / "index.html").read_text())
+    assert root.crumbs == []

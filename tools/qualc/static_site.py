@@ -104,10 +104,24 @@ ReadingPosition = StartReading | MiddleReading | EndReading | OnlyReading
 
 
 @dataclass(frozen=True)
+class Crumb:
+    """One step of where a page is filed, for the breadcrumb."""
+
+    title: str
+    route: Path
+
+
+@dataclass(frozen=True)
 class PublicationNavigation:
     links: tuple[NavigationLink, ...]
     current_key: str
     position: ReadingPosition
+    # Where this page is filed, from the listing that owns it down to the page
+    # itself. Stated by the caller rather than walked out of `parent`, because
+    # `parent` means one thing in the wiki (the folder above) and another in a
+    # guide (the section this one assumes), and a breadcrumb that means either
+    # depending on the page means neither.
+    trail: tuple[Crumb, ...]
 
 
 @dataclass(frozen=True)
@@ -367,25 +381,17 @@ def _breadcrumbs(
     relative_path: Path,
     navigation: PublicationNavigation,
 ) -> str:
-    by_key = {link.key: link for link in navigation.links}
-    trail = []
-    cursor = by_key[navigation.current_key]
-    while True:
-        trail.append(cursor)
-        match cursor.parent:
-            case RootParent():
-                break
-            case NodeParent(key=parent_key):
-                cursor = by_key[parent_key]
-    trail.reverse()
-    return (
-        '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>'
-        + "".join(
-            "<li>" + (_current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)) + "</li>"
-            for link in trail
-        )
-        + "</ol></nav>"
-    )
+    def crumb(step: Crumb, last: bool) -> str:
+        target = escape(_relative_url(relative_path, step.route))
+        current = ' aria-current="page"' if last else ""
+        return f'<li><a href="{target}"{current}>{escape(step.title)}</a></li>'
+
+    steps = navigation.trail
+    # A page that is its own root has nowhere to go up to, and a one-item
+    # breadcrumb only repeats the heading under it.
+    if len(steps) < 2:
+        return ""
+    return '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>' + "".join(crumb(step, index == len(steps) - 1) for index, step in enumerate(steps)) + "</ol></nav>"
 
 
 def _reading_order(

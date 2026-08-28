@@ -1171,10 +1171,14 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   From Algebra > Quals, `Previous` is `Final Exam`, in the Exercises section.
   Fixed: a link that leaves the folder being read names the trail it lands in -- `Final Exam` now reads `in Algebra / Exercises / PSets / Final`. Siblings, the folder above, and the pages inside the folder page being read say nothing extra, because none of those is a crossing.
 
-- [ ] Give breadcrumbs one meaning.
+- [x] Give breadcrumbs one meaning.
   In the wiki a breadcrumb is the folder path (`Algebra / Groups / Sylow Theorems`). In a guide it is the prerequisite chain (`Algebra / Preliminaries / Rings and Ideals / Modules / Linear Algebra`), although the guide index presents those pages as a flat numbered list.
   No crumb links up to the wiki or guides root.
   On a subject landing page the breadcrumb is one item that repeats the heading.
+  Fixed: a breadcrumb is where the page is filed, on both.
+  It reads `Wiki / Algebra / Groups / Sylow Theorems` and `Guides / Algebra / Linear Algebra`, and the trail is stated by whoever files the page rather than walked out of a `parent` field that means two different things.
+  The prerequisite tree is still the guide sidebar, which is what it was for.
+  A page that is its own root carries no breadcrumb: there is nowhere to go up to, and one crumb only repeated the heading under it.
 
 ### Dead ends
 

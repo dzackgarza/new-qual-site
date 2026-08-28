@@ -215,3 +215,36 @@ def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> 
     (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest, sort_keys=False))
 
     assert diagnostic_codes(work) == [DiagnosticCode.PUBLICATION_REFERENCE_MISSING]
+
+
+def test_a_guide_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
+    """A guide section's `parent` is the section it assumes, not its place.
+
+    Walking that chain made the breadcrumb a prerequisite list -- `Algebra /
+    Preliminaries / Rings and Ideals / Modules / Linear Algebra` -- while the
+    same crumb in the wiki was a folder path. The sidebar is where the
+    prerequisite tree belongs; the breadcrumb says where the page is.
+    """
+    work = fixture_repo(tmp_path, {"PRB-CPT.md": PROBLEM.format(id="PRB-CPT", title="Compact", area="topology", topic="compactness", body="Show it.")})
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(reference_manifest("second"), sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+
+    # `second` names `first` as its parent, and `first` names the guide.
+    section = read_html(site / "guide" / "GUIDE-TOPOLOGY" / "second.html")
+    crumbs = section.root.find_all("nav", **{"class": "breadcrumbs"})[0].find_all("a")
+    assert [(link.text, link.attrs["href"]) for link in crumbs] == [
+        ("Guides", "../../guides.html"),
+        ("Topology", "../GUIDE-TOPOLOGY.html"),
+        ("Second", "second.html"),
+    ]
+
+    root = read_html(site / "guide" / "GUIDE-TOPOLOGY.html")
+    root_crumbs = root.root.find_all("nav", **{"class": "breadcrumbs"})[0].find_all("a")
+    assert [(link.text, link.attrs["href"]) for link in root_crumbs] == [
+        ("Guides", "../guides.html"),
+        ("Topology", "GUIDE-TOPOLOGY.html"),
+    ]
