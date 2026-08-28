@@ -13,9 +13,9 @@ from pathlib import Path
 
 import pytest
 from conftest import SUBJECTS, diagnostic_codes, write_subject_branches
-from qualc.wiki import slug
 from qualc.diagnostics import DiagnosticCode
 from qualc.emit import SearchRecordKind
+from qualc.wiki import slug
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"

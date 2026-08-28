@@ -62,11 +62,18 @@ def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
     return work
 
 
-def run_qualc(command: str, root: Path, *, as_json: bool = False) -> subprocess.CompletedProcess[str]:
-    argv = [sys.executable, "-m", "qualc", command, "--root", str(root)]
-    if as_json:
-        argv.append("--json")
-    return subprocess.run(argv, capture_output=True, text=True)
+def run_qualc(command: str, root: Path) -> subprocess.CompletedProcess[str]:
+    """The CLI as a reader runs it: diagnostics on stderr in human wording."""
+    return _run_qualc(command, root)
+
+
+def run_qualc_json(command: str, root: Path) -> subprocess.CompletedProcess[str]:
+    """The CLI with `--json`, so a test can assert on the diagnostic code."""
+    return _run_qualc(command, root, "--json")
+
+
+def _run_qualc(command: str, root: Path, *flags: str) -> subprocess.CompletedProcess[str]:
+    return subprocess.run([sys.executable, "-m", "qualc", command, "--root", str(root), *flags], capture_output=True, text=True)
 
 
 def diagnostic_codes(root: Path) -> list[DiagnosticCode]:
@@ -77,7 +84,7 @@ def diagnostic_codes(root: Path) -> list[DiagnosticCode]:
     Substring matching on the message passes when it is reworded and passes
     when an unrelated diagnostic happens to share a word.
     """
-    result = run_qualc("check", root, as_json=True)
+    result = run_qualc_json("check", root)
     if result.returncode == 0:
         return []
     return [DiagnosticCode(entry["code"]) for entry in json.loads(result.stderr)]
