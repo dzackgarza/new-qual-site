@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-J5AFR
 kind: definition
 title: 'Definition: Infinity Norm'
+prompts:
+- What is the infinity norm $\norm{f}_\infty$?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-QFRSI
 kind: definition
 title: Field of rational functions $K(x)$
+prompts:
+- What are the elements of the field of rational functions $K(x)$?
 classification:
   areas:
   - algebra

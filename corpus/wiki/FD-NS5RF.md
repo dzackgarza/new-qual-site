@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-NS5RF
 kind: definition
 title: Algebraic Field Extension
+prompts:
+- When is a field extension $L/k$ algebraic?
 classification:
   areas:
   - algebra

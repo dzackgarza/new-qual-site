@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-2OHYV
 kind: fact
 title: Standard parameterization of a circle in $\CC$
+prompts:
+- What is the standard rational parameterization of the circle in $\CC$?
 classification:
   areas:
   - complex-analysis

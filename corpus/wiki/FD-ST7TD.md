@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-ST7TD
 kind: definition
 title: Uniform Continuity
+prompts:
+- 'What does it mean for $f: (X, d_1) \to (Y, d_2)$ to be uniformly continuous?'
 classification:
   areas:
   - real-analysis

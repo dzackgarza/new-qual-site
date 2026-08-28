@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-H764S
 kind: definition
 title: Elementary Divisors
+prompts:
+- What are the elementary divisors of a finite abelian group?
 classification:
   areas:
   - algebra

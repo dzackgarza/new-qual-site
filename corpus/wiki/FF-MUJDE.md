@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-MUJDE
 kind: fact
 title: 'Cyclotomic Polynomial: $\Phi_p(x)$.'
+prompts:
+- What is the cyclotomic polynomial $\Phi_p(x)$ for $p$ prime?
 classification:
   areas:
   - algebra

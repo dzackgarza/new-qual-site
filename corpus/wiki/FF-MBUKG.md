@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-MBUKG
 kind: fact
 title: Groups of Order 18
+prompts:
+- What are the groups of order 18?
 classification:
   areas:
   - algebra

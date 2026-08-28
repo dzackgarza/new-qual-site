@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-SMWLB
 kind: definition
 title: Nowhere Dense
+prompts:
+- What does it mean for a set to be nowhere dense?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-EKGLW
 kind: definition
 title: 'Definition: A pole $a$ of order $m$'
+prompts:
+- What is the order of a pole of $f$ at $a$?
 classification:
   areas:
   - complex-analysis

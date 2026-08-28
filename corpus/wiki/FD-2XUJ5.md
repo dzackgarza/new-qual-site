@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-2XUJ5
 kind: definition
 title: Locally homeomorphic
+prompts:
+- What does it mean for $X$ to be locally homeomorphic to $Y$?
 classification:
   areas:
   - topology

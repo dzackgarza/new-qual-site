@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-Q7EEG
 kind: definition
 title: 'Definition: separable'
+prompts:
+- Which countability condition makes a space separable?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-COPFN
 kind: definition
 title: Deformation Retract
+prompts:
+- What map exhibits $A \subset X$ as a deformation retract of $X$?
 classification:
   areas:
   - topology

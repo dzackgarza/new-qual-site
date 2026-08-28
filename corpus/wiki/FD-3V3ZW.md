@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-3V3ZW
 kind: definition
 title: 'Definition: $K[\alpha]$ for $\alpha \in F \supset K$'
+prompts:
+- For $\alpha$ in an extension $F \supset K$, what is $K[\alpha]$?
 classification:
   areas:
   - algebra

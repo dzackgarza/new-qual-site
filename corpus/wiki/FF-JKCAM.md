@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-JKCAM
 kind: fact
 title: Groups of Order 20
+prompts:
+- What are the groups of order 20?
 classification:
   areas:
   - algebra

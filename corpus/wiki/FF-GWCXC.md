@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-GWCXC
 kind: fact
 title: Groups of Order 14
+prompts:
+- What are the groups of order 14?
 classification:
   areas:
   - algebra

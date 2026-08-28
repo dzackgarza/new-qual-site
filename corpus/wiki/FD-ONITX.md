@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-ONITX
 kind: definition
 title: Local homeomorphism
+prompts:
+- 'When is a map $f: X \to Y$ a local homeomorphism?'
 classification:
   areas:
   - topology

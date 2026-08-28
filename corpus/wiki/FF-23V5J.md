@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-23V5J
 kind: fact
 title: Euler Characteristic 2
+prompts:
+- Which surface has Euler characteristic 2?
 classification:
   areas:
   - topology

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-2AKVH
 kind: fact
 title: Factor $x^n + y^n$
+prompts:
+- When does $x + y$ divide $x^n + y^n$, and what is the factorization?
 classification:
   areas:
   - algebra

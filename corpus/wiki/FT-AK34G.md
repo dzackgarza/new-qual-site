@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-AK34G
 kind: theorem
 title: Cauchy Integral Formula (Higher Derivatives)
+prompts:
+- State the Cauchy integral formula for the higher derivatives $f^{(n)}(z)$.
 classification:
   areas:
   - complex-analysis

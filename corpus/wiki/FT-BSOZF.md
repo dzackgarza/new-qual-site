@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-BSOZF
 kind: theorem
 title: Dirichlet's Test
+prompts:
+- What hypotheses does Dirichlet's test put on $\theset{a_n}$ and $\theset{b_n}$?
 classification:
   areas:
   - complex-analysis

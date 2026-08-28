@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-VWKGM
 kind: fact
 title: 'Definition: Totally Bounded'
+prompts:
+- What does it mean for a metric space to be totally bounded?
 classification:
   areas:
   - topology

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-F3UU4
 kind: definition
 title: Uniform Convergence of a sequence of functions
+prompts:
+- What does it mean for $f_n$ to converge uniformly to $f$ on $E$?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-ZQFSR
 kind: fact
 title: $\sin(\pi/4) = \cdots$
+prompts:
+- What is $\sin(\pi/4)$?
 classification:
   areas:
   - real-analysis

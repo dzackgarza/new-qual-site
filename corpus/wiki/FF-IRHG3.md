@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-IRHG3
 kind: fact
 title: Groups of Order 16
+prompts:
+- What are the groups of order 16?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-GHDF2
 kind: definition
 title: How to determine sign of a permutation
+prompts:
+- How do you read the sign of a permutation off its disjoint cycle decomposition?
 classification:
   areas:
   - algebra

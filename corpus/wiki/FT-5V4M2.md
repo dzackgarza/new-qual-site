@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-5V4M2
 kind: theorem
 title: Cauchy Integral Formula (First Derivative)
+prompts:
+- State the Cauchy integral formula for $f(z)$.
 classification:
   areas:
   - complex-analysis

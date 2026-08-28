@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-UACKH
 kind: fact
 title: 'Cyclotomic Polynomial: $\Phi_{2p}(x)$.'
+prompts:
+- What is the cyclotomic polynomial $\Phi_{2p}(x)$?
 classification:
   areas:
   - algebra

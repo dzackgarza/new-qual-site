@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-SOE5P
 kind: fact
 title: $\phi(p^k) = ?$
+prompts:
+- What is $\phi(p^k)$?
 classification:
   areas:
   - algebra

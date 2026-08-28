@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-4XBYG
 kind: fact
 title: Cauchy-Schwarz Inequality
+prompts:
+- State the Cauchy-Schwarz inequality for integrals.
 classification:
   areas:
   - real-analysis

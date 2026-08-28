@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-QVQXM
 kind: fact
 title: One step subgroup test
+prompts:
+- State the one-step subgroup test.
 classification:
   areas:
   - algebra

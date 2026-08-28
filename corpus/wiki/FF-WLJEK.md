@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-WLJEK
 kind: fact
 title: $\chi(\Sigma) = -2 \implies\cdots$
+prompts:
+- Which surfaces have $\chi(\Sigma) = -2$?
 classification:
   areas:
   - topology

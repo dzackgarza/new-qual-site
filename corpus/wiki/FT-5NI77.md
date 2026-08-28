@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-5NI77
 kind: theorem
 title: Riemann's Removable Singularity Theorem
+prompts:
+- State Riemann's removable singularity theorem.
 classification:
   areas:
   - complex-analysis

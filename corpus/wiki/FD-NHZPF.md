@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-NHZPF
 kind: definition
 title: Hausdorff Space
+prompts:
+- What does it mean for a space to be Hausdorff?
 classification:
   areas:
   - topology

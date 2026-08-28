@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-SNOTW
 kind: definition
 title: 'Definition: simple ring.'
+prompts:
+- When is a ring simple?
 classification:
   areas:
   - algebra

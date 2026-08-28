@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BRJK5
 kind: definition
 title: 'Definition: A removable singularity'
+prompts:
+- What is a removable singularity, and how does $f$ behave near one?
 classification:
   areas:
   - complex-analysis

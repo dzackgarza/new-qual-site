@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-EC6QN
 kind: fact
 title: '$H_* K$: $[\mathbb{Z}, \mathbb{Z} \oplus \mathbb{Z}_2, 0, 0, 0, 0 \rightarrow]$'
+prompts:
+- What is the homology of the Klein bottle?
 classification:
   areas:
   - topology

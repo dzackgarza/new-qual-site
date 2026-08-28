@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-4GI2R
 kind: definition
 title: Equicontinuity
+prompts:
+- What does it mean for a family of functions to be equicontinuous?
 classification:
   areas:
   - complex-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-XIVPL
 kind: theorem
 title: Lusin's Theorem
+prompts:
+- State Lusin's theorem.
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-KSKDG
 kind: definition
 title: 'Definition: Transitive Group Action'
+prompts:
+- When is a group action $G \actson X$ transitive?
 classification:
   areas:
   - algebra

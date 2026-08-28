@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-TDXQT
 kind: fact
 title: Groups of Order 8
+prompts:
+- What are the groups of order 8?
 classification:
   areas:
   - algebra

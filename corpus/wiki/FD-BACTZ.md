@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BACTZ
 kind: definition
 title: 'Definition: An essential singularity'
+prompts:
+- What is an essential singularity?
 classification:
   areas:
   - complex-analysis

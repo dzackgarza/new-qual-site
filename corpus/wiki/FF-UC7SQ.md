@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-UC7SQ
 kind: fact
 title: Factor $x^n - y^n$
+prompts:
+- How does $x^n - y^n$ factor?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-5MASA
 kind: theorem
 title: Cauchy Inequalities
+prompts:
+- State the Cauchy inequalities for $f^{(n)}(z_0)$.
 classification:
   areas:
   - complex-analysis

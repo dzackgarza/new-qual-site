@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-JJFZ3
 kind: definition
 title: Normal Field Extension
+prompts:
+- What does it mean for a field extension $L/K$ to be normal?
 classification:
   areas:
   - algebra

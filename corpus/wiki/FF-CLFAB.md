@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-CLFAB
 kind: fact
 title: $\cos(\pi/6) = \cdots$
+prompts:
+- What is $\cos(\pi/6)$?
 classification:
   areas:
   - real-analysis

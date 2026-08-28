@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-YBIQV
 kind: fact
 title: $\tan(\pi/6) = \cdots$
+prompts:
+- What is $\tan(\pi/6)$?
 classification:
   areas:
   - real-analysis

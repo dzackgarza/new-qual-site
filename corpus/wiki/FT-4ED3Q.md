@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-4ED3Q
 kind: theorem
 title: Continuity in $L^1$
+prompts:
+- What is continuity in $L^1$, and how is it proved?
 classification:
   areas:
   - real-analysis

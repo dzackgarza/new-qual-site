@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-ENSFJ
 kind: fact
 title: Series expansion for $\sech(z) = {1\over \cosh(z)}$
+prompts:
+- What is the series expansion of $\sech(z)$?
 classification:
   areas:
   - complex-analysis

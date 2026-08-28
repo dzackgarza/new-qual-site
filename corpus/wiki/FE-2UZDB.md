@@ -2,8 +2,9 @@
 schema: qual/card@1
 id: FE-2UZDB
 kind: example
-title: Example of a sequence of differentiable functions $f_n \to f$ uniformly with
-  $f_n' \to g$ pointwise for some $g$, but $g' \neq \lim f_n'$.
+title: Example of a sequence of differentiable functions $f_n \to f$ uniformly with $f_n' \to g$ pointwise for some $g$, but $g' \neq \lim f_n'$.
+prompts:
+- Give a sequence $f_n \to f$ uniformly with $f_n' \to g$ pointwise but $g' \neq \lim f_n'$.
 classification:
   areas:
   - real-analysis

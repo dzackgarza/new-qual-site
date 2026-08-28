@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-Z3E3C
 kind: fact
 title: Bernoulli's Inequality
+prompts:
+- State Bernoulli's inequality and say for which $x$ and $n$ it holds.
 classification:
   areas:
   - real-analysis

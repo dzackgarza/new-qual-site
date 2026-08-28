@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-OEYLQ
 kind: theorem
 title: Open Mapping Theorem
+prompts:
+- State the open mapping theorem.
 classification:
   areas:
   - complex-analysis

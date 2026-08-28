@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-2N57U
 kind: theorem
 title: Casorati-Weierstrass Theorem
+prompts:
+- State the Casorati-Weierstrass theorem.
 classification:
   areas:
   - complex-analysis

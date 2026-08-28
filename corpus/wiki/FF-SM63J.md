@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-SM63J
 kind: fact
 title: Euler Characteristic 0
+prompts:
+- Which surfaces have Euler characteristic 0?
 classification:
   areas:
   - topology

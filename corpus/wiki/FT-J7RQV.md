@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-J7RQV
 kind: theorem
 title: Urysohn's Lemma
+prompts:
+- Which separation property does Urysohn's lemma characterise, and by what function?
 classification:
   areas:
   - topology

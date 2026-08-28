@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-LCR5P
 kind: theorem
 title: Dominated Convergence Theorem
+prompts:
+- State the dominated convergence theorem.
 classification:
   areas:
   - real-analysis

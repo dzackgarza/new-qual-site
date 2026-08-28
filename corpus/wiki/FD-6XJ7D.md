@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-6XJ7D
 kind: definition
 title: 'Definition: Projective module'
+prompts:
+- What is a projective module, and how does it sit inside a free module?
 classification:
   areas:
   - algebra

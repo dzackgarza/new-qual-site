@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-6SR5I
 kind: definition
 title: Retract
+prompts:
+- What does it mean for a subspace $A \subset X$ to be a retract of $X$?
 classification:
   areas:
   - topology

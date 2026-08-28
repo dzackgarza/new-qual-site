@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OSSYR
 kind: definition
 title: 'Definition: prime ideal.'
+prompts:
+- When is an ideal $\mathfrak{p} \normal R$ prime?
 classification:
   areas:
   - algebra

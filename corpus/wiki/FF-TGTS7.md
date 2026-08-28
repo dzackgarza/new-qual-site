@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-TGTS7
 kind: fact
 title: $\sin(\pi/3) = \cdots$
+prompts:
+- What is $\sin(\pi/3)$?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BWVRA
 kind: definition
 title: Functional characterization of surjective functions.
+prompts:
+- What condition on inverses characterises a surjective function?
 classification:
   areas:
   - algebra

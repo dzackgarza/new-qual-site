@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-5QPHF
 kind: fact
 title: The tor complex between $C_n$ and $A$.
+prompts:
+- What is $\operatorname{Tor}^{\mathbf{Z}}_*(C_n, A)$?
 classification:
   areas:
   - topology

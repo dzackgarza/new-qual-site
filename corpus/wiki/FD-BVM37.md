@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BVM37
 kind: definition
 title: Irreducible Module
+prompts:
+- What is an irreducible module?
 classification:
   areas:
   - algebra

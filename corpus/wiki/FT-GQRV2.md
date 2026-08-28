@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-GQRV2
 kind: theorem
 title: Inclusions among $L^p$ spaces.
+prompts:
+- How do the $L^p$ spaces include into one another when $m(X) < \infty$, and when $m(X) = \infty$?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OFT7I
 kind: definition
 title: 'Definition: Measurable Function'
+prompts:
+- Which preimages must be measurable for $f$ to be a measurable function?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FE-Z4VF2
 kind: example
 title: Example of a field extension that is not Galois.
+prompts:
+- Give a field extension that is not Galois.
 classification:
   areas:
   - algebra

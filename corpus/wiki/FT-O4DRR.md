@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-O4DRR
 kind: theorem
 title: Caratheodory Characterization
+prompts:
+- State the Caratheodory characterization of measurability.
 classification:
   areas:
   - real-analysis

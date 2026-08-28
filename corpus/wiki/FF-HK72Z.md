@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-HK72Z
 kind: fact
 title: Descartes' Rule of Signs
+prompts:
+- State Descartes' rule of signs.
 classification:
   areas:
   - algebra

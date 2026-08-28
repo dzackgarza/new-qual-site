@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-FZERI
 kind: theorem
 title: Rouche's Theorem
+prompts:
+- What does Rouche's theorem conclude about the zero counts of $f$ and $g$?
 classification:
   areas:
   - complex-analysis

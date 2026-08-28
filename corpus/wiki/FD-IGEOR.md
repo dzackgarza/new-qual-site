@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-IGEOR
 kind: definition
 title: $G_x$
+prompts:
+- For a group action $G \actson X$, what is $G_x$?
 classification:
   areas:
   - algebra

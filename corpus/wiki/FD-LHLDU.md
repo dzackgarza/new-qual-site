@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-LHLDU
 kind: definition
 title: $\gens{p}\dash$primary
+prompts:
+- For $R$ a PID and $p \in R$ prime, when is an $R\dash$module $\gens{p}\dash$primary?
 classification:
   areas:
   - algebra

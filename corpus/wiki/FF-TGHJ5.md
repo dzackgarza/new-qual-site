@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-TGHJ5
 kind: fact
 title: $e^{2\pi i \over 6} = \cdots$ in rectangular coordinates
+prompts:
+- What is $e^{2\pi i / 6}$ in rectangular coordinates?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-3ZL25
 kind: theorem
 title: Dirichlet's Test
+prompts:
+- State Dirichlet's test for convergence of a series.
 classification:
   areas:
   - complex-analysis

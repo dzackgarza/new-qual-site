@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-W3AIU
 kind: fact
 title: 'Euler Characteristics of Surfaces: $S^n, \Sigma_g, \RP^2, K$.'
+prompts:
+- What are the Euler characteristics of $S^n$, $\Sigma_g$, $\RP^2$ and the Klein bottle?
 classification:
   areas:
   - topology

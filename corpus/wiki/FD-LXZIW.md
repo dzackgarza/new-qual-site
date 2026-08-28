@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-LXZIW
 kind: definition
 title: Characteristic of a ring
+prompts:
+- What is the characteristic of a ring?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-C7EQD
 kind: definition
 title: 'Definition: A pole $a$ of order $m$'
+prompts:
+- What does it mean for $f$ to have a pole of order $m$ at $a$?
 classification:
   areas:
   - complex-analysis

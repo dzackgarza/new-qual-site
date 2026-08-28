@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-5I73B
 kind: definition
 title: 'Diameter: $\mathrm{diam}(A) = \sup_{x, y\in A} \abs d(x, y)$'
+prompts:
+- What is the diameter of a set $A$ in a metric space?
 classification:
   areas:
   - real-analysis

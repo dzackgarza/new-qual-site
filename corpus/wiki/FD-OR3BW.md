@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OR3BW
 kind: definition
 title: $p\dash$group
+prompts:
+- What is a $p\dash$group?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-TGBYP
 kind: definition
 title: Equicontinuous
+prompts:
+- What does it mean for a family $\mathcal{F}$ to be equicontinuous at $x_0$?
 classification:
   areas:
   - real-analysis

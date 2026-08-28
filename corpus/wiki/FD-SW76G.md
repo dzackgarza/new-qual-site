@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-SW76G
 kind: definition
 title: Semilocally Simply Connected
+prompts:
+- What does it mean for a space to be semilocally simply connected?
 classification:
   areas:
   - topology

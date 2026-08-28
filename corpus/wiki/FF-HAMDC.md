@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-HAMDC
 kind: fact
 title: Factor $x^n + a^n$
+prompts:
+- When does $x + a$ divide $x^n + a^n$, and what is the factorization?
 classification:
   areas:
   - algebra

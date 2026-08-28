@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-GNRTS
 kind: definition
 title: Noetherian Module
+prompts:
+- What does it mean for a module to be Noetherian?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-L2TEC
 kind: definition
 title: Class Equation
+prompts:
+- State the class equation for a finite group $G$.
 classification:
   areas:
   - algebra

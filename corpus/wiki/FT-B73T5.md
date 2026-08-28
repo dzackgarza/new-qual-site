@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-B73T5
 kind: theorem
 title: Morera's Theorem
+prompts:
+- State Morera's theorem.
 classification:
   areas:
   - complex-analysis

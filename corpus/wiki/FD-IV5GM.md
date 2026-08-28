@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-IV5GM
 kind: definition
 title: 'Definition: the discrete topology'
+prompts:
+- Which sets are open in the discrete topology on $X$?
 classification:
   areas:
   - topology

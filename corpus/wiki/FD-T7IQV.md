@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-T7IQV
 kind: definition
 title: Solvable Group
+prompts:
+- When is a group solvable, in terms of its composition factors?
 classification:
   areas:
   - algebra

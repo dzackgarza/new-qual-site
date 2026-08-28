@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OQO2U
 kind: definition
 title: 'Definition: separable'
+prompts:
+- What does it mean for a space to be separable?
 classification:
   areas:
   - topology

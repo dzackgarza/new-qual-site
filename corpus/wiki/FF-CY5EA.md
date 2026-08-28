@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-CY5EA
 kind: fact
 title: 'Definition: Torsion element'
+prompts:
+- When is $m \in M$ a torsion element?
 classification:
   areas:
   - algebra

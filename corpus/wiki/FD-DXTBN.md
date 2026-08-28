@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-DXTBN
 kind: definition
 title: 'Definition: Sequentially Compact'
+prompts:
+- What does it mean for a space to be sequentially compact?
 classification:
   areas:
   - topology

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-6WPJI
 kind: theorem
 title: Baire Category Theorem
+prompts:
+- State the Baire category theorem.
 classification:
   areas:
   - real-analysis

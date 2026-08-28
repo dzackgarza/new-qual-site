@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-7KQCC
 kind: fact
 title: $\arctan\qty{1\over \sqrt 3} = \cdots$
+prompts:
+- What is $\arctan\qty{1 \over \sqrt 3}$?
 classification:
   areas:
   - complex-analysis

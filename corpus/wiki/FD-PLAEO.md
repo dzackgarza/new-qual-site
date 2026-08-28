@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-PLAEO
 kind: definition
 title: Composition Series
+prompts:
+- What is a composition series of a group $G$?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-TP2IZ
 kind: definition
 title: Normal Extension
+prompts:
+- What does an irreducible $p(x) \in K[x]$ do in a normal extension $L/K$?
 classification:
   areas:
   - algebra

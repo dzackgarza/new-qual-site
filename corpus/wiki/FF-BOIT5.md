@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-BOIT5
 kind: fact
 title: Euler Characteristic -2
+prompts:
+- Which closed surfaces have $\chi = -2$?
 classification:
   areas:
   - topology

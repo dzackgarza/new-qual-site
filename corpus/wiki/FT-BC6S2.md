@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-BC6S2
 kind: theorem
 title: Characterizations of Diagonalizability of a Square Matrix $M$
+prompts:
+- What conditions each characterise diagonalizability of a square matrix?
 classification:
   areas:
   - algebra

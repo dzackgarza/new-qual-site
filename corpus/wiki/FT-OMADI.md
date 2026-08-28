@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-OMADI
 kind: theorem
 title: Continuity of measure from above/below
+prompts:
+- State continuity of measure from above and from below.
 classification:
   areas:
   - real-analysis

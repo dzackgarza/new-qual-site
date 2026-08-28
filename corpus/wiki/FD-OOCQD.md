@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OOCQD
 kind: definition
 title: (Lebesgue) Measurable Function
+prompts:
+- Which sets must be Lebesgue measurable for $f$ to be a measurable function?
 classification:
   areas:
   - real-analysis

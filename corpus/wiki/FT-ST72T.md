@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-ST72T
 kind: theorem
 title: Minkowski's Inequality
+prompts:
+- State Minkowski's inequality.
 classification:
   areas:
   - real-analysis

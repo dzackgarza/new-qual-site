@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-CIESS
 kind: fact
 title: $\tan(\pi/4) = \cdots$
+prompts:
+- What is $\tan(\pi/4)$?
 classification:
   areas:
   - real-analysis

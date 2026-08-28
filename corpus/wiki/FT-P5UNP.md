@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-P5UNP
 kind: theorem
 title: Fatou's Lemma
+prompts:
+- State Fatou's lemma.
 classification:
   areas:
   - real-analysis

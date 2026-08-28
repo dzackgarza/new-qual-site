@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-OGS76
 kind: theorem
 title: Egorov's Theorem
+prompts:
+- State Egorov's theorem.
 classification:
   areas:
   - real-analysis

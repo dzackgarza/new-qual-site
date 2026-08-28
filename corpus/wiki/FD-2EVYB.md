@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-2EVYB
 kind: definition
 title: 'Definition: Algebraic Element'
+prompts:
+- For a field extension $L/K$, when is $\alpha \in L$ algebraic over $K$?
 classification:
   areas:
   - algebra

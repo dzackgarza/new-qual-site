@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-XKATS
 kind: fact
 title: Series expansion for $\sinh(z)$
+prompts:
+- What is the series expansion of $\sinh(z)$?
 classification:
   areas:
   - complex-analysis

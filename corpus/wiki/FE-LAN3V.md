@@ -2,8 +2,9 @@
 schema: qual/card@1
 id: FE-LAN3V
 kind: example
-title: An analytic function with convergence radius 1 that converges at every point
-  on $S^1$ except $z=1$
+title: An analytic function with convergence radius 1 that converges at every point on $S^1$ except $z=1$
+prompts:
+- Give an analytic function of convergence radius 1 that converges on $S^1$ except at $z=1$.
 classification:
   areas:
   - complex-analysis

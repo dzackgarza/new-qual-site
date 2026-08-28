@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-HM4P2
 kind: definition
 title: 'Definition: Primitive Root of Unity.'
+prompts:
+- When is $\zeta$ a primitive $n$th root of unity?
 classification:
   areas:
   - algebra

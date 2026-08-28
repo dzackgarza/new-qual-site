@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-DWCQ7
 kind: theorem
 title: Maximum Modulus Principle
+prompts:
+- State the maximum modulus principle.
 classification:
   areas:
   - complex-analysis

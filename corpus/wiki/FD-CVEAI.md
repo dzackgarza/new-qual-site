@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-CVEAI
 kind: definition
 title: Rank of a Free module
+prompts:
+- What is the rank of a free module?
 classification:
   areas:
   - algebra

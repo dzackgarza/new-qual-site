@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BIAA7
 kind: definition
 title: The Schwarz lemma
+prompts:
+- How is the Schwarz lemma proved from the power series of $f$?
 classification:
   areas:
   - complex-analysis

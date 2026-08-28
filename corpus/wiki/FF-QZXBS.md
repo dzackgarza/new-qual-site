@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-QZXBS
 kind: fact
 title: Types of isolated singularities
+prompts:
+- How are removable singularities, poles and essential singularities told apart by the behaviour of $\abs{f}$?
 classification:
   areas:
   - complex-analysis

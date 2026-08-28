@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-X4DBP
 kind: definition
 title: Alternating Group
+prompts:
+- What is the alternating group, as a kernel?
 classification:
   areas:
   - algebra

@@ -2,8 +2,9 @@
 schema: qual/card@1
 id: FE-73BWZ
 kind: example
-title: Example of a sequence of differentiable functions whose derivatives do not
-  converge pointwise.
+title: Example of a sequence of differentiable functions whose derivatives do not converge pointwise.
+prompts:
+- Give a sequence of differentiable functions whose derivatives do not converge pointwise.
 classification:
   areas:
   - real-analysis

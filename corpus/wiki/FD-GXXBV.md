@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-GXXBV
 kind: definition
 title: 'Definition: Euclidean domain.'
+prompts:
+- What is a Euclidean domain?
 classification:
   areas:
   - algebra

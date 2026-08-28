@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-AVCZA
 kind: fact
 title: Young's Inequality
+prompts:
+- State Young's inequality for convolutions.
 classification:
   areas:
   - real-analysis

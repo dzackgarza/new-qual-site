@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-QLRXX
 kind: fact
 title: Growth Rates of Common Functions
+prompts:
+- How do $n!$, $c^n$, $n^c$, $n\log n$, $n$ and $\log n$ rank by growth rate?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-D7HOH
 kind: definition
 title: Convergence in Measure
+prompts:
+- What does it mean for $f_k$ to converge to $f$ in measure?
 classification:
   areas:
   - real-analysis

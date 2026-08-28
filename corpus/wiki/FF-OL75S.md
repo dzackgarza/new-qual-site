@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-OL75S
 kind: fact
 title: Burnside's Formula
+prompts:
+- State Burnside's orbit-counting formula.
 classification:
   areas:
   - algebra

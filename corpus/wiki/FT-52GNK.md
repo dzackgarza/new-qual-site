@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-52GNK
 kind: theorem
 title: Urysohn's Lemma
+prompts:
+- State Urysohn's lemma.
 classification:
   areas:
   - topology

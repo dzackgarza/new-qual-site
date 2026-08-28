@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-CCVUQ
 kind: definition
 title: 'Definition: A removable singularity'
+prompts:
+- What is a removable singularity, in terms of the order of a pole?
 classification:
   areas:
   - complex-analysis

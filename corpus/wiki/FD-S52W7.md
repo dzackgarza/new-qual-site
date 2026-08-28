@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-S52W7
 kind: definition
 title: 'Definition: prime.'
+prompts:
+- When is a ring element prime?
 classification:
   areas:
   - algebra

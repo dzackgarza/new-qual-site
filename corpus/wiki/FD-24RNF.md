@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-24RNF
 kind: definition
 title: Field of rational functions $K(x)$
+prompts:
+- What is the field of rational functions $K(x)$?
 classification:
   areas:
   - algebra

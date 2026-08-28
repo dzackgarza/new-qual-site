@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-WDTKX
 kind: fact
 title: Nonorientable Surfaces
+prompts:
+- Which of the standard surfaces are nonorientable?
 classification:
   areas:
   - topology

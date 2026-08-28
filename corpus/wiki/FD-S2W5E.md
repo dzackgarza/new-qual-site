@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-S2W5E
 kind: definition
 title: Cyclic Module
+prompts:
+- When is an $R\dash$module cyclic, and what does it look like as a quotient of $R$?
 classification:
   areas:
   - algebra

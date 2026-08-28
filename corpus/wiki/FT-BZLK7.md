@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-BZLK7
 kind: theorem
 title: Riemann-Lebesgue Lemma
+prompts:
+- State the Riemann-Lebesgue lemma.
 classification:
   areas:
   - real-analysis

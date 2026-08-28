@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-2EUYX
 kind: definition
 title: Indecomposable Module
+prompts:
+- When is a module indecomposable?
 classification:
   areas:
   - algebra

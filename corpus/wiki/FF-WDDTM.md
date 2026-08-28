@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-WDDTM
 kind: fact
 title: $\arctan(1) = \cdots$
+prompts:
+- What is $\arctan(1)$?
 classification:
   areas:
   - complex-analysis

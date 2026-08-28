@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-ED3CD
 kind: fact
 title: Factor $x^n - a^n$
+prompts:
+- How does $x^n - a^n$ factor?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-ZTRHG
 kind: definition
 title: 'Definition: Uniform convergence of a sequence of functions'
+prompts:
+- What does uniform convergence of $\theset{f_n}$ to $f$ on $E$ require of $N$?
 classification:
   areas:
   - real-analysis

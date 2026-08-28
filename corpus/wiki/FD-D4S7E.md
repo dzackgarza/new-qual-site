@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-D4S7E
 kind: definition
 title: 'Definition: Measurability of a Set'
+prompts:
+- When is a set $E \subseteq \RR^n$ measurable?
 classification:
   areas:
   - real-analysis

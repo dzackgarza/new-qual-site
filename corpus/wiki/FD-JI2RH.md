@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-JI2RH
 kind: definition
 title: Functional characterization of injective functions.
+prompts:
+- What condition on inverses characterises an injective function?
 classification:
   areas:
   - algebra

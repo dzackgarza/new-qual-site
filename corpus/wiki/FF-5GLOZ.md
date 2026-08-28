@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-5GLOZ
 kind: fact
 title: Series expansion for $\csch(z) = {1\over \sinh(z)}$
+prompts:
+- What is the series expansion of $\csch(z)$?
 classification:
   areas:
   - complex-analysis

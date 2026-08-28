@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-LF5ND
 kind: fact
 title: Series expansion for $\cosh(z)$
+prompts:
+- What is the series expansion of $\cosh(z)$?
 classification:
   areas:
   - complex-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-5JQUR
 kind: theorem
 title: Cauchy-Goursat Theorem
+prompts:
+- State the Cauchy-Goursat theorem.
 classification:
   areas:
   - complex-analysis

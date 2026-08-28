@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FE-O47RH
 kind: example
 title: Example of a conformal map that is not injective.
+prompts:
+- Give a conformal map that is not injective.
 classification:
   areas:
   - complex-analysis

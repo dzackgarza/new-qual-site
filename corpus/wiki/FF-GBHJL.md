@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-GBHJL
 kind: fact
 title: Classification of Closed Surfaces
+prompts:
+- How are closed surfaces classified as a monoid on $\RP^2$, the Klein bottle and the torus?
 classification:
   areas:
   - topology

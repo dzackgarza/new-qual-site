@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-OUWGL
 kind: definition
 title: Separable Field Extension
+prompts:
+- What does it mean for a field extension $L/K$ to be separable, in terms of minimal polynomials?
 classification:
   areas:
   - algebra

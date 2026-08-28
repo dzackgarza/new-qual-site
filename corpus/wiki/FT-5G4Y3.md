@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-5G4Y3
 kind: theorem
 title: Monotone Convergence Theorem
+prompts:
+- State the monotone convergence theorem.
 classification:
   areas:
   - real-analysis

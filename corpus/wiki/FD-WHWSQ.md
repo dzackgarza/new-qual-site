@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-WHWSQ
 kind: definition
 title: Baire space
+prompts:
+- What does it mean for $X$ to be a Baire space?
 classification:
   areas:
   - real-analysis

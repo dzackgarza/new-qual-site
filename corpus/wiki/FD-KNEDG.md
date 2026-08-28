@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-KNEDG
 kind: definition
 title: Four Properties of Outer Measure
+prompts:
+- What four properties does outer measure have?
 classification:
   areas:
   - real-analysis

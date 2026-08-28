@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-7NMQR
 kind: theorem
 title: Recognizing Direct Products
+prompts:
+- What conditions on subgroups $H, K \leq G$ give $G \cong H \times K$?
 classification:
   areas:
   - algebra

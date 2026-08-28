@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-XVMEE
 kind: definition
 title: Equicontinuous
+prompts:
+- What must hold uniformly over the family for $\mcf$ to be equicontinuous at $x_0$?
 classification:
   areas:
   - real-analysis

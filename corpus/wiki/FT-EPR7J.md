@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-EPR7J
 kind: theorem
 title: Rouché's Theorem
+prompts:
+- State Rouche's theorem in its symmetric form.
 classification:
   areas:
   - complex-analysis

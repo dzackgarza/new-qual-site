@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-OXN3Y
 kind: theorem
 title: Gauss' Lemma
+prompts:
+- State Gauss' lemma.
 classification:
   areas:
   - algebra

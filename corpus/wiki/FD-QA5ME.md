@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-QA5ME
 kind: definition
 title: Definition of Outer Measure
+prompts:
+- How is the outer measure $m_*(E)$ defined?
 classification:
   areas:
   - real-analysis

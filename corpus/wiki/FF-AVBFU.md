@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-AVBFU
 kind: fact
 title: Characterizations of $D_f$, the set of discontinuities of functions
+prompts:
+- What can be said about $D_f$, the set of discontinuities of a function?
 classification:
   areas:
   - real-analysis

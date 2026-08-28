@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-7R4QC
 kind: definition
 title: Locally Compact
+prompts:
+- What does it mean for a space to be locally compact?
 classification:
   areas:
   - topology

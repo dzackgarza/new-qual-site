@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-T7OAO
 kind: theorem
 title: Fubini
+prompts:
+- State Fubini's theorem.
 classification:
   areas:
   - real-analysis

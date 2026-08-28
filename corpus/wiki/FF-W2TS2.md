@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-W2TS2
 kind: fact
 title: $\cos(\pi/4) = \cdots$
+prompts:
+- What is $\cos(\pi/4)$?
 classification:
   areas:
   - real-analysis

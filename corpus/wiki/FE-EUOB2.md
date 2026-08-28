@@ -2,8 +2,9 @@
 schema: qual/card@1
 id: FE-EUOB2
 kind: example
-title: An analytic function with convergence radius 1 which fails to converge at any
-  point on $S^1$
+title: An analytic function with convergence radius 1 which fails to converge at any point on $S^1$
+prompts:
+- Give an analytic function of convergence radius 1 that converges nowhere on $S^1$.
 classification:
   areas:
   - complex-analysis

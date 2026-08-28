@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-JQSOK
 kind: theorem
 title: Arzela-Ascoli Theorem
+prompts:
+- State the Arzela-Ascoli theorem.
 classification:
   areas:
   - real-analysis

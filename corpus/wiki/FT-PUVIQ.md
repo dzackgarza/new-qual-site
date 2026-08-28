@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-PUVIQ
 kind: theorem
 title: Zorn's Lemma
+prompts:
+- State Zorn's lemma.
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-XUGN3
 kind: definition
 title: Exponential definitions of $\cosh$ and $\sinh$
+prompts:
+- How are $\cosh$ and $\sinh$ written as exponentials?
 classification:
   areas:
   - complex-analysis

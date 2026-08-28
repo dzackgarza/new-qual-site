@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FE-5JE3Z
 kind: example
 title: Example of a sequence of bounded functions whose pointwise limit is unbounded.
+prompts:
+- Give a sequence of bounded functions whose pointwise limit is unbounded.
 classification:
   areas:
   - real-analysis

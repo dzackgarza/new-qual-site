@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-OR6TO
 kind: theorem
 title: Riesz Representation Theorem
+prompts:
+- State the Riesz representation theorem for $L^p(X)\dual$.
 classification:
   areas:
   - real-analysis

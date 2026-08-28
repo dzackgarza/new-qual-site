@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-ZPKLQ
 kind: definition
 title: 'Definition: An essential singularity'
+prompts:
+- Which isolated singularities are essential?
 classification:
   areas:
   - complex-analysis

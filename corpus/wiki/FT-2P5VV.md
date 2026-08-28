@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-2P5VV
 kind: theorem
 title: Eisenstein's Criterion
+prompts:
+- State Eisenstein's criterion.
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-4JRQX
 kind: theorem
 title: Tonelli
+prompts:
+- State Tonelli's theorem.
 classification:
   areas:
   - real-analysis

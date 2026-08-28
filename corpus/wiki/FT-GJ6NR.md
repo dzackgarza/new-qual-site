@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-GJ6NR
 kind: theorem
 title: Fundamental Theorem of Galois Theory
+prompts:
+- State the fundamental theorem of Galois theory.
 classification:
   areas:
   - algebra

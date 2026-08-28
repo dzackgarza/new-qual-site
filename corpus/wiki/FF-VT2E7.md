@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-VT2E7
 kind: fact
 title: $\cos(\pi/3) = \cdots$
+prompts:
+- What is $\cos(\pi/3)$?
 classification:
   areas:
   - real-analysis

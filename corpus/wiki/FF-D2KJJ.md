@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-D2KJJ
 kind: fact
 title: 'Full tor complex table:'
+prompts:
+- What does the table of $\operatorname{Tor}^{\mathbf{Z}}_*$ between $C_n$, $\ZZ$ and $\QQ$ look like?
 classification:
   areas:
   - topology

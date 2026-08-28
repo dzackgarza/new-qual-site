@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BPUNZ
 kind: definition
 title: 'Definition: Torsion submodule.'
+prompts:
+- What is the torsion submodule $\tor(M)$ of a module $M$?
 classification:
   areas:
   - algebra

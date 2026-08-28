@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-JGBSF
 kind: definition
 title: First and Second Category
+prompts:
+- What does it mean for a subset to be of first category, and of second category?
 classification:
   areas:
   - real-analysis

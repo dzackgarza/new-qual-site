@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-VFWB6
 kind: fact
 title: 'Angle addition formulas: $\cosh(x+iy) = \cdots .$'
+prompts:
+- What is the angle addition formula for $\cosh(x+iy)$?
 classification:
   areas:
   - complex-analysis

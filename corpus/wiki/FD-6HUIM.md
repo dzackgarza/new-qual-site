@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-6HUIM
 kind: definition
 title: Null Set
+prompts:
+- What does it mean for a set to be null?
 classification:
   areas:
   - real-analysis

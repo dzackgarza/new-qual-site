@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-JTWOB
 kind: definition
 title: Invariant Factors
+prompts:
+- What divisibility condition do the invariant factors satisfy?
 classification:
   areas:
   - algebra

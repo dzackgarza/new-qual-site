@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-H6AWV
 kind: theorem
 title: Fubini-Tonelli
+prompts:
+- What hypotheses let Fubini-Tonelli exchange the order of integration?
 classification:
   areas:
   - real-analysis

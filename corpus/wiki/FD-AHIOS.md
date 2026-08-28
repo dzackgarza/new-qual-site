@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-AHIOS
 kind: definition
 title: 'Definition: the discrete topology'
+prompts:
+- What is the discrete topology on a set $X$?
 classification:
   areas:
   - topology

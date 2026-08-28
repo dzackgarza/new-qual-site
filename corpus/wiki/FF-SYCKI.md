@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-SYCKI
 kind: fact
 title: $H_* \mathbb{RP}^2$
+prompts:
+- What is $H_* \mathbb{RP}^2$, degree by degree?
 classification:
   areas:
   - topology

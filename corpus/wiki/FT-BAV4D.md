@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-BAV4D
 kind: theorem
 title: Euler's Theorem
+prompts:
+- State Euler's theorem, and say why coprimality is needed.
 classification:
   areas:
   - algebra

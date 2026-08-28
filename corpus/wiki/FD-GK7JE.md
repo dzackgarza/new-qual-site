@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-GK7JE
 kind: definition
 title: Conformal Map
+prompts:
+- What is a conformal map?
 classification:
   areas:
   - complex-analysis

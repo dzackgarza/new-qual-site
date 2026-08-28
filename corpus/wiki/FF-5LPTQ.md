@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-5LPTQ
 kind: fact
 title: Mayer Vietoris LES for $X = A \cup B$
+prompts:
+- Write the Mayer-Vietoris long exact sequence for $X = A \cup B$.
 classification:
   areas:
   - topology

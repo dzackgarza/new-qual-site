@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-UQZNR
 kind: fact
 title: 'Inverting series: ${1\over \sin(z) } = \cdots$'
+prompts:
+- What is the Laurent expansion of $1/\sin(z)$ at the origin?
 classification:
   areas:
   - complex-analysis

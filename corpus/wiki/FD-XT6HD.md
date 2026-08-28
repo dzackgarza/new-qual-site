@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-XT6HD
 kind: definition
 title: 'Definition: Rational Canonical Form'
+prompts:
+- 'Which decomposition of $V$ as a $k[x]\dash$module gives the rational canonical form of $\phi: V \to V$?'
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-XRRNZ
 kind: definition
 title: Notation and definition of fixed points of a group action.
+prompts:
+- What is the fixed-point set $X^g$ of a group action?
 classification:
   areas:
   - algebra

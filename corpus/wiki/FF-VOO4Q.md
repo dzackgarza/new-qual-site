@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-VOO4Q
 kind: fact
 title: The generalized residue formula
+prompts:
+- State the residue formula at a pole of order $n$.
 classification:
   areas:
   - complex-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-Q3XHG
 kind: definition
 title: 'Definition: The Lebesgue Integral'
+prompts:
+- How is the Lebesgue integral of $f$ defined from simple functions?
 classification:
   areas:
   - real-analysis

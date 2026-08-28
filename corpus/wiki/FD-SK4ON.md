@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-SK4ON
 kind: definition
 title: Annihilator of a module
+prompts:
+- What is the annihilator $\mathrm{ann}_R(M)$ of a module?
 classification:
   areas:
   - algebra

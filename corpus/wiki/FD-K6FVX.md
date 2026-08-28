@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-K6FVX
 kind: definition
 title: 'Definition: Diagonalizable.'
+prompts:
+- What does it mean for a matrix to be diagonalizable?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-KXFMK
 kind: theorem
 title: Equivalent characterizations of measurability of a set
+prompts:
+- What conditions each characterise measurability of a set $E \subset \RR^n$?
 classification:
   areas:
   - real-analysis

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-W3MQW
 kind: definition
 title: Stabilizer
+prompts:
+- What is the stabilizer of a point under a group action?
 classification:
   areas:
   - algebra

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-3WWKN
 kind: theorem
 title: Four Characterizations of Galois extensions $K/F$.
+prompts:
+- What four conditions each characterise a Galois extension $K/F$?
 classification:
   areas:
   - algebra

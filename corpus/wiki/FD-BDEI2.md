@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-BDEI2
 kind: definition
 title: Deformation Retract
+prompts:
+- What does it mean for $A \subset X$ to be a deformation retract of $X$?
 classification:
   areas:
   - topology

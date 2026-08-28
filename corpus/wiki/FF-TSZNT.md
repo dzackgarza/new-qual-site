@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-TSZNT
 kind: fact
 title: Groups of Order 4
+prompts:
+- What are the groups of order 4?
 classification:
   areas:
   - algebra

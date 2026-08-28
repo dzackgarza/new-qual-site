@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-ZENUU
 kind: theorem
 title: Sylow Theorems
+prompts:
+- State the three Sylow theorems.
 classification:
   areas:
   - algebra

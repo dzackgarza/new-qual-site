@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-RVIGS
 kind: theorem
 title: Fermat's Little Theorem
+prompts:
+- State Fermat's little theorem.
 classification:
   areas:
   - algebra

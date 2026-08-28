@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-3BK6U
 kind: definition
 title: Chebyshev's Inequality
+prompts:
+- State Chebyshev's inequality.
 classification:
   areas:
   - real-analysis

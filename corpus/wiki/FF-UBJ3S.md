@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-UBJ3S
 kind: fact
 title: Kunneth isomorphism (nice case)
+prompts:
+- State the Kunneth isomorphism in the torsion-free case.
 classification:
   areas:
   - topology

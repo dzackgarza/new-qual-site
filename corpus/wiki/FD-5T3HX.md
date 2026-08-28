@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-5T3HX
 kind: definition
 title: 'Definition: Almost Disjoint'
+prompts:
+- When are two sets almost disjoint?
 classification:
   areas:
   - real-analysis

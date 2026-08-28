@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-QCNG5
 kind: definition
 title: Neighborhood Basis
+prompts:
+- What is a neighborhood basis at a point $x$?
 classification:
   areas:
   - topology

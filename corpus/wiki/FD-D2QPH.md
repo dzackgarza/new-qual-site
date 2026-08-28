@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-D2QPH
 kind: definition
 title: Limit definition of exponential function
+prompts:
+- What is the limit definition of $e^x$?
 classification:
   areas:
   - real-analysis

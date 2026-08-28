@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-LHTRR
 kind: definition
 title: 'Definition: splitting field of a polynomial $f\in k[x]$'
+prompts:
+- What is the splitting field of a polynomial $f \in k[x]$?
 classification:
   areas:
   - algebra

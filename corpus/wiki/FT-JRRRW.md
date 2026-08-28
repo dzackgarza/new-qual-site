@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-JRRRW
 kind: theorem
 title: Uniform Boundedness Principle
+prompts:
+- State the uniform boundedness principle.
 classification:
   areas:
   - real-analysis

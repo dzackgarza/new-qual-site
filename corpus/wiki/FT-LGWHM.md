@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-LGWHM
 kind: theorem
 title: Riemann's Removable Singularity Theorem
+prompts:
+- What conditions are equivalent to $f$ extending holomorphically over an isolated singularity?
 classification:
   areas:
   - complex-analysis

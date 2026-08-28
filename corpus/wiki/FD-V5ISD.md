@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-V5ISD
 kind: definition
 title: Borel set
+prompts:
+- What is a Borel set?
 classification:
   areas:
   - real-analysis

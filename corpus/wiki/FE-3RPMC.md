@@ -2,8 +2,9 @@
 schema: qual/card@1
 id: FE-3RPMC
 kind: example
-title: A sequence of functions that converges uniformly, pointwise, a.e., but not
-  in $L^1$.
+title: A sequence of functions that converges uniformly, pointwise, a.e., but not in $L^1$.
+prompts:
+- Give a sequence that converges uniformly, pointwise, and a.e., but not in $L^1$.
 classification:
   areas:
   - real-analysis

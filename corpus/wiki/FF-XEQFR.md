@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-XEQFR
 kind: fact
 title: $e^{2\pi i \over 3} = \cdots$ in rectangular coordinates
+prompts:
+- What is $e^{2\pi i / 3}$ in rectangular coordinates?
 classification:
   areas:
   - real-analysis

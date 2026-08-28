@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-AI6XN
 kind: definition
 title: Limsup/Liminf of Sets
+prompts:
+- What are $\limsup_n A_n$ and $\liminf_n A_n$ for a sequence of sets?
 classification:
   areas:
   - real-analysis

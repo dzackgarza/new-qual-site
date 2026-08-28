@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-2NPCE
 kind: fact
 title: Groups of Order 10
+prompts:
+- What are the groups of order 10?
 classification:
   areas:
   - algebra

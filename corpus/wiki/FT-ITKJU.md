@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-ITKJU
 kind: theorem
 title: Weierstrass Approximation Theorem
+prompts:
+- State the Weierstrass approximation theorem.
 classification:
   areas:
   - real-analysis

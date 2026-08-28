@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-SF7VN
 kind: fact
 title: $\tan(\pi/3) = \cdots$
+prompts:
+- What is $\tan(\pi/3)$?
 classification:
   areas:
   - real-analysis

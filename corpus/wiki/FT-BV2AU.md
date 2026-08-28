@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-BV2AU
 kind: theorem
 title: Small Tails and Absolute Continuity
+prompts:
+- What do small tails and absolute continuity say about $f \in L^1$?
 classification:
   areas:
   - real-analysis

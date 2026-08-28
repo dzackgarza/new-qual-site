@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-TUK7H
 kind: definition
 title: Neighborhood Basis
+prompts:
+- What collection of open sets forms a neighborhood basis at $x$?
 classification:
   areas:
   - topology

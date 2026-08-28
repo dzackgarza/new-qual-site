@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-S62UB
 kind: definition
 title: Zero Divisor
+prompts:
+- What is a zero divisor?
 classification:
   areas:
   - algebra

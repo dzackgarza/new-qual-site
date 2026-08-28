@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-YYLYR
 kind: definition
 title: 'Definition: perfect field.'
+prompts:
+- What is a perfect field, and which characteristics give one for free?
 classification:
   areas:
   - algebra

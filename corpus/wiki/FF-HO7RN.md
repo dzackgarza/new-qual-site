@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-HO7RN
 kind: fact
 title: Cauchy's Integral Formula for Derivatives
+prompts:
+- State the Cauchy estimate for $\abs{f^{(n)}(0)}$.
 classification:
   areas:
   - complex-analysis

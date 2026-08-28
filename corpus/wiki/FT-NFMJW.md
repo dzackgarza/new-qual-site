@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FT-NFMJW
 kind: theorem
 title: Parseval's Identity
+prompts:
+- State Parseval's identity, and say when Bessel's inequality becomes it.
 classification:
   areas:
   - real-analysis

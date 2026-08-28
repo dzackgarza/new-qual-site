@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FD-YJEDU
 kind: definition
 title: Conjugates of a root
+prompts:
+- What is a conjugate of a root $\alpha \in L$?
 classification:
   areas:
   - algebra
