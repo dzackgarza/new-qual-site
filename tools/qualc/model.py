@@ -525,6 +525,25 @@ class ParsedCard(Strict):
 MARKDOWN = "markdown+fenced_divs+raw_tex+tex_math_dollars+tex_math_single_backslash+wikilinks_title_after_pipe"
 
 
+# `tex_math_dollars` needs no space inside the delimiters, so `$ x $` reads as
+# prose: the dollars survive as text and the macros between them are dropped on
+# the way to HTML. The reader says nothing about it, but it leaves a bare
+# `Str "$"` in the AST, and the corpus escapes no dollar sign anywhere, so that
+# token is the defect rather than a proxy for it.
+LITERAL_DOLLAR = '{"t":"Str","c":"$"}'
+
+
+def unread_math(ast_json: str, path: Path) -> Diagnostic | None:
+    """Report a dollar sign the reader left as text instead of reading as math."""
+    if LITERAL_DOLLAR not in ast_json:
+        return None
+    return Diagnostic(
+        DiagnosticCode.UNREAD_MATH,
+        str(path),
+        "inline math is padded: write $x$, not $ x $, or pandoc reads it as prose",
+    )
+
+
 def to_ast(markdown: str) -> str:
     """Read a card body, and treat any reader diagnostic as a build failure.
 
@@ -738,6 +757,10 @@ def parse_cards_with(
         warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
             errors.append(Diagnostic(DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)))
+            continue
+        padded = unread_math(result.output, path)
+        if padded:
+            errors.append(padded)
             continue
         processable.append((path, card, result.output))
 

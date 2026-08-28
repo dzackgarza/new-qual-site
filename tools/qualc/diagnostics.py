@@ -22,6 +22,7 @@ class DiagnosticCode(Enum):
     # reading
     CARD_UNREADABLE = "card-unreadable"
     READER_WARNING = "reader-warning"
+    UNREAD_MATH = "unread-math"
     UNMAPPED_DIV_CLASS = "unmapped-div-class"
     # pages
     PAGE_REFERENCE_MISSING = "page-reference-missing"

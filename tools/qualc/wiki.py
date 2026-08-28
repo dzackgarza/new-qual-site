@@ -21,7 +21,7 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import MARKDOWN, drop_path_captions, from_ast
+from .model import MARKDOWN, drop_path_captions, from_ast, unread_math
 from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
 
@@ -216,6 +216,10 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
             if warnings:
                 errors.extend(_citation_diagnostic(warning, path) for warning in warnings)
+                continue
+            padded = unread_math(result.output, path)
+            if padded:
+                errors.append(padded)
                 continue
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
             document = from_ast(result.output).walk(drop_path_captions).walk(anchor_block_markers).walk(unpack_cross_references)
