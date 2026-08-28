@@ -26,6 +26,7 @@ class DiagnosticCode(Enum):
     UNMAPPED_DIV_CLASS = "unmapped-div-class"
     # pages
     PAGE_REFERENCE_MISSING = "page-reference-missing"
+    PUBLICATION_REFERENCE_MISSING = "publication-reference-missing"
     PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
     PAGE_MISSING_ORDER = "page-missing-order"
     PAGE_DIRECTORY_MISSING_INDEX = "page-directory-missing-index"

@@ -128,6 +128,28 @@ def discover(root: Path) -> list[Path]:
     return sorted(root.rglob("*.md"))
 
 
+# A page's filename is authored for Obsidian, where "992 Extra_Questions.md" is
+# ordinary, and it became the URL a reader copies: literal spaces and mixed case,
+# percent-encoded on the way out. The filename stays as authored and the route is
+# slugged, so the source keeps reading like the vault and the URL keeps reading
+# like a URL.
+SLUG_SEPARATORS = re.compile(r"[\s_]+")
+SLUG_DROP = re.compile(r"[^a-z0-9-]+")
+SLUG_RUNS = re.compile(r"-{2,}")
+
+
+def _slug(name: str) -> str:
+    slug = SLUG_RUNS.sub("-", SLUG_DROP.sub("-", SLUG_SEPARATORS.sub("-", name.casefold()))).strip("-")
+    if not slug:
+        raise ValueError(f"page name slugs to nothing: {name!r}")
+    return slug
+
+
+def _route(source_rel: Path) -> Path:
+    parts = [_slug(part) for part in source_rel.parent.parts if part != "."]
+    return Path("wiki", *parts, _slug(source_rel.stem) + ".html")
+
+
 def _split_front_matter(text: str, path: Path) -> tuple[dict[str, object], str]:
     if not text.startswith("---\n"):
         return {}, text
@@ -232,7 +254,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                 WikiPage(
                     source_path=path,
                     source_rel=source_rel,
-                    route=Path("wiki") / source_rel.with_suffix(".html"),
+                    route=_route(source_rel),
                     title=_title(document, metadata, path),
                     order=order,
                     blocks=_without_first_title(document),

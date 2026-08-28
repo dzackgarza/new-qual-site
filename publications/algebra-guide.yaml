@@ -1149,7 +1149,6 @@ sections:
       precisely when the quotient is projective, and the tensor product is the construction
       that turns bilinear data into linear data and fails to be exact on the left.'
     items:
-      - ref: D-7563L
       - ref: D-NQZUY
       - ref: PR-JBDUI
       - ref: D-JUYFQ
@@ -1304,7 +1303,7 @@ sections:
       - ref: FD-J3HIA
       - ref: FD-3V3ZW
       - ref: FD-QPNDA
-      - ref: D-VRPYB
+      - ref: FD-NS5RF
       - ref: FD-2EVYB
       - ref: T-NGBVC
       - ref: PR-ABSJX

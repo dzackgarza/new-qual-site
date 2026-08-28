@@ -2335,7 +2335,7 @@ def project(
                     {"title": page.title},
                     _wiki_blocks(page, incoming_pages[page.route.as_posix()], cards),
                 ),
-                out / "wiki" / page.source_rel.with_suffix(".qmd"),
+                out / page.route.with_suffix(".qmd"),
                 _wiki_chrome(wiki_navigation, page),
             )
             for page in wiki_pages

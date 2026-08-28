@@ -247,13 +247,16 @@ def fixture_repo(tmp_path: Path) -> Path:
     return work
 
 
-def test_a_standalone_image_is_a_figure_and_its_href_is_encoded(tmp_path: Path) -> None:
+def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(tmp_path: Path) -> None:
     """An image alone in a paragraph is a figure whether or not it has a caption.
 
     Pandoc's `implicit_figures` covers `![caption](src)` only; `![](src)`
     reached the page as a bare `<img>` inside a paragraph, with nothing to bound
-    a tall image. Both spellings carry one class so one rule styles them. The
-    page name holds a space, which is fine in a filename and not in a URL.
+    a tall image. Both spellings carry one class so one rule styles them.
+
+    "Some Page.md" is an ordinary Obsidian filename and was an unreadable URL.
+    The filename stays as authored and the route slugs, so the link a reader
+    copies has no escape in it rather than a percent-encoded one.
     """
     work = fixture_repo(tmp_path)
     (work / "wiki" / "Some Page.md").write_text(wiki_md("# Some page\n\n![](figures/diagram.png)\n", order=2))
@@ -264,7 +267,7 @@ def test_a_standalone_image_is_a_figure_and_its_href_is_encoded(tmp_path: Path) 
 
     site = work / "build" / "quarto" / "_site"
     index = (site / "wiki" / "index.html").read_text()
-    uncaptioned = (site / "wiki" / "Some Page.html").read_text()
+    uncaptioned = (site / "wiki" / "some-page.html").read_text()
     assert '<figure class="qual-figure">' in uncaptioned
     assert "<figcaption" not in uncaptioned
     assert 'class="qual-figure"' in index
@@ -272,8 +275,8 @@ def test_a_standalone_image_is_a_figure_and_its_href_is_encoded(tmp_path: Path) 
 
     links = LinkCollector()
     links.feed(index)
-    assert "Some%20Page.html" in links.hrefs
-    assert not [href for href in links.hrefs if " " in href]
+    assert "some-page.html" in links.hrefs
+    assert not [href for href in links.hrefs if " " in href or "%20" in href]
 
 
 PROMPTED_CARD = """---
@@ -639,7 +642,7 @@ def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
 
     site = work / "build" / "quarto" / "_site" / "wiki"
     navigation = WikiNavigationParser()
-    navigation.feed((site / "10_Algebra" / "groups.html").read_text())
+    navigation.feed((site / "10-algebra" / "groups.html").read_text())
 
     titles = [title for title, _, _ in navigation.links]
     assert titles.count("Algebra") == 1

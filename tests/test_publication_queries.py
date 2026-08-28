@@ -15,7 +15,8 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-from conftest import fixture_repo, run_qualc
+from conftest import diagnostic_codes, fixture_repo, run_qualc
+from qualc.diagnostics import DiagnosticCode
 from test_invariants import read_html
 
 PROBLEM = """---
@@ -67,10 +68,10 @@ def manifest(*topics: str) -> dict[str, object]:
     }
 
 
-def reference_manifest(section: str) -> dict[str, object]:
+def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     sections = []
     for slug, title in (("first", "First"), ("second", "Second")):
-        items = [{"ref": "PRB-CPT"}] if slug == section else []
+        items = [{"ref": ref}] if slug == section else []
         sections.append(
             {
                 "slug": slug,
@@ -198,3 +199,19 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
     second = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "second.html")
     assert first.root.find_all("section", **{"data-card-id": "PRB-CPT"}) == []
     assert len(second.root.find_all("section", **{"data-card-id": "PRB-CPT"})) == 1
+
+
+def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> None:
+    """Deleting a card a guide names has to fail the check, not the build.
+
+    Merging five duplicate pairs left the algebra guide pointing at two ids that
+    no longer existed. `check` reported the corpus sound and the next build died
+    on the first missing reference, which is the wrong end of the run to learn
+    it: the guide is corpus state, and a reference with no card is a corpus
+    error.
+    """
+    work = fixture_repo(tmp_path, {})
+    manifest = reference_manifest("first", ref="PRB-GONE")
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest, sort_keys=False))
+
+    assert diagnostic_codes(work) == [DiagnosticCode.PUBLICATION_REFERENCE_MISSING]

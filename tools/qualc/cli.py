@@ -8,9 +8,10 @@ import sys
 from pathlib import Path
 
 from . import emit, index
-from .diagnostics import Diagnostic
+from .diagnostics import Diagnostic, DiagnosticCode
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
+from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
 from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_tree
 
@@ -42,7 +43,29 @@ def load(
             errors.extend(validate_wiki_tree(wiki_pages))
             errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
             link_citations(wiki_pages, card_routes)
+    if not errors:
+        errors.extend(_publication_references(root, {item.card.id for item in parsed}))
     return parsed, wiki_pages, errors
+
+
+def _publication_references(root: Path, known: set[str]) -> list[Diagnostic]:
+    """A guide that names a card no longer in the corpus is a corpus error.
+
+    It used to surface only at build time, on the first missing reference, so a
+    merge that retired a duplicate id left `check` reporting the corpus sound
+    and the build dying afterwards.
+    """
+    return [
+        Diagnostic(
+            DiagnosticCode.PUBLICATION_REFERENCE_MISSING,
+            f"{manifest.id}/{section.slug}",
+            f"names a card the corpus does not have: {item.ref}",
+        )
+        for manifest in load_publications(root / "publications")
+        for section in manifest.sections
+        for item in section.items
+        if isinstance(item, ReferenceItem) and item.ref not in known
+    ]
 
 
 def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:
