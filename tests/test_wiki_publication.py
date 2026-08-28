@@ -768,3 +768,50 @@ def test_a_figure_captioned_with_its_own_filename_loses_the_caption(
     page = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
     captions = re.findall(r"<figcaption[^>]*>(.*?)</figcaption>", page)
     assert captions == ["The Tube Lemma"]
+
+
+TWO_SOLUTIONS = """---
+schema: qual/card@1
+id: PRB-TWOWAYS
+kind: problem
+title: The integral of a holomorphic kernel is holomorphic
+classification:
+  areas:
+  - complex-analysis
+  topics:
+  - Contour Integration
+relations: []
+review: draft
+---
+
+::: problem
+Show that the integral is holomorphic off the curve.
+:::
+
+::: {.solution title="Using Morera"}
+Integrate over every triangle.
+:::
+
+::: {.solution title="Using limit definition"}
+Differentiate under the integral.
+:::
+"""
+
+
+def test_a_solution_names_its_method_before_it_is_opened(tmp_path: Path) -> None:
+    """Two solutions on one card showed two disclosures both reading "Solution".
+
+    The authored label is what tells them apart, and a disclosure is closed when
+    the reader chooses: the summary is the only place the label can act. Putting
+    it in the body instead would hide the distinction behind the click it is
+    supposed to inform.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "PRB-TWOWAYS.md").write_text(TWO_SOLUTIONS)
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRB-TWOWAYS.html").read_text()
+    assert "<summary>Solution: Using Morera</summary>" in card_page
+    assert "<summary>Solution: Using limit definition</summary>" in card_page

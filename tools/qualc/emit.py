@@ -161,8 +161,9 @@ def _owned_class(class_name: str) -> str:
     return class_name
 
 
-# A `title=` on a hint or solution would land inside the `<details>`
-# those become, below the summary that already names them.
+# A `title=` on a hint or solution is written into the summary by `_reveal`
+# rather than into the body, so it does not land below the label inside the
+# `<details>`.
 TITLED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
 
 
@@ -252,7 +253,15 @@ def _reveal(
     )
     if reveal_class is None:
         return None
+    # A card with two solutions showed two disclosures both reading "Solution",
+    # and what told them apart -- "Using Morera" beside "Using limit definition"
+    # -- was dropped. The authored label names the closed block, which is the
+    # only place a reader can act on it: it is the one thing visible before the
+    # solution is opened.
     summary = REVEAL_LABELS[reveal_class]
+    label = element.attributes.get("title", "").strip()
+    if label:
+        summary = f"{summary}: {label}"
     opening = f'<details class="reveal {reveal_class}"><summary>{html.escape(summary)}</summary>'
     return [
         pf.RawBlock(opening, format="html"),
