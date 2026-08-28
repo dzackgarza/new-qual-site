@@ -9,6 +9,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import ClassVar
 
+from conftest import write_subject_branches
 from qualc.cli import build_catalog, load
 from qualc.pandoc_batch import PandocServer
 
@@ -112,6 +113,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     work = tmp_path / "repo"
     shutil.copytree(ROOT / "tests" / "fixtures" / "kinds", work / "corpus")
     shutil.copytree(ROOT / "vocabularies", work / "vocabularies")
+    write_subject_branches(work)
 
     before = rebuild_catalog(work)
 

@@ -351,17 +351,19 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     assert controls == [["input"], ["select"], ["select"], ["select"], ["select"]]
 
 
-def test_browse_and_generate_call_an_area_what_the_registry_calls_it(tmp_path: Path) -> None:
-    """`vocabularies/areas.yaml` carries a name beside every id and nothing read it.
+def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> None:
+    """A subject is a wiki folder, and the branch's own title is its name.
 
-    Browse title-cased the id, which happens to agree with every name in the
-    registry today and is a second vocabulary the moment one differs. Generate
-    read its areas out of the problem data, so it offered the same six in
-    whatever order the first problem carrying each happened to appear.
+    Every label used to be the area id with hyphens swapped and title case
+    applied, which agreed with the registry that also listed the areas only
+    because nobody had made the two disagree yet. Generate had a second version
+    of the same problem: it read its areas out of the problem data, so it
+    offered the same subjects in whatever order the first problem carrying each
+    happened to appear.
     """
     work = fixture_repo(tmp_path)
-    areas = work / "vocabularies" / "areas.yaml"
-    areas.write_text(areas.read_text().replace("- id: algebra\n  name: Algebra\n", "- id: algebra\n  name: Abstract Algebra\n"))
+    branch = work / "wiki" / "Algebra" / "index.md"
+    branch.write_text(branch.read_text().replace("title: Algebra", "title: Abstract Algebra"))
 
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr

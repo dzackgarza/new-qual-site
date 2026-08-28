@@ -138,7 +138,7 @@ SLUG_DROP = re.compile(r"[^a-z0-9-]+")
 SLUG_RUNS = re.compile(r"-{2,}")
 
 
-def _slug(name: str) -> str:
+def slug(name: str) -> str:
     slug = SLUG_RUNS.sub("-", SLUG_DROP.sub("-", SLUG_SEPARATORS.sub("-", name.casefold()))).strip("-")
     if not slug:
         raise ValueError(f"page name slugs to nothing: {name!r}")
@@ -146,8 +146,8 @@ def _slug(name: str) -> str:
 
 
 def _route(source_rel: Path) -> Path:
-    parts = [_slug(part) for part in source_rel.parent.parts if part != "."]
-    return Path("wiki", *parts, _slug(source_rel.stem) + ".html")
+    parts = [slug(part) for part in source_rel.parent.parts if part != "."]
+    return Path("wiki", *parts, slug(source_rel.stem) + ".html")
 
 
 def _split_front_matter(text: str, path: Path) -> tuple[dict[str, object], str]:

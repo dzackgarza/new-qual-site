@@ -67,8 +67,9 @@ def _collection_card(area: str) -> ParsedCard:
 
 def test_unregistered_source_area_is_rejected() -> None:
     """The injected violation: a collection card whose source names an area the
-    registry does not know. Before this guard the corpus accepted it silently."""
-    vocab = load_vocabularies(ROOT / "vocabularies")
+    wiki does not have a folder for. Before this guard the corpus accepted it
+    silently."""
+    vocab = load_vocabularies(ROOT / "vocabularies", ROOT / "wiki")
 
     errors = validate([_collection_card("not-a-real-area")], vocab)
     assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], f"an unregistered source.area must be rejected as unknown-area; got {[e.code for e in errors]}"

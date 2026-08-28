@@ -12,7 +12,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import pytest
-from conftest import diagnostic_codes
+from conftest import SUBJECTS, diagnostic_codes, write_subject_branches
+from qualc.wiki import slug
 from qualc.diagnostics import DiagnosticCode
 from qualc.emit import SearchRecordKind
 
@@ -244,6 +245,7 @@ def fixture_repo(tmp_path: Path) -> Path:
     wiki.mkdir()
     (wiki / "index.md").write_text(wiki_md("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n"))
     (wiki / "details.md").write_text(wiki_md("# Fixture details\n\nThe page reference survived.\n", order=1))
+    write_subject_branches(work)
     return work
 
 
@@ -372,11 +374,9 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
     output = work / "build" / "quarto"
     site = output / "_site"
     manifest = json.loads((output / "wiki-manifest.json").read_text())
-    assert {entry["source"] for entry in manifest} == {"index.md", "details.md"}
-    assert {entry["route"] for entry in manifest} == {
-        "wiki/index.html",
-        "wiki/details.html",
-    }
+    branches = {f"{subject}/index.md" for subject, _ in SUBJECTS}
+    assert {entry["source"] for entry in manifest} == {"index.md", "details.md"} | branches
+    assert {entry["route"] for entry in manifest} == {"wiki/index.html", "wiki/details.html"} | {"wiki/" + slug(subject) + "/index.html" for subject, _ in SUBJECTS}
 
     links = LinkCollector()
     links.feed((site / "wiki" / "index.html").read_text())
@@ -583,12 +583,12 @@ def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Pat
 def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
-    (wiki / "algebra").mkdir()
-    (wiki / "algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
-    (wiki / "algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
-    (wiki / "topology").mkdir()
-    (wiki / "topology" / "index.md").write_text(wiki_md("# Topology\n", order=3, title="Topology"))
-    (wiki / "topology" / "compactness.md").write_text(wiki_md("# Compactness\n", order=1))
+    (wiki / "Algebra").mkdir(exist_ok=True)
+    (wiki / "Algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (wiki / "Algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
+    (wiki / "Topology").mkdir(exist_ok=True)
+    (wiki / "Topology" / "index.md").write_text(wiki_md("# Topology\n", order=3, title="Topology"))
+    (wiki / "Topology" / "compactness.md").write_text(wiki_md("# Compactness\n", order=1))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -637,16 +637,15 @@ def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
     """A folder's index.md is that folder in the tree, not a sibling of its children."""
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
-    (wiki / "10_Algebra").mkdir()
-    (wiki / "10_Algebra" / "index.md").write_text(wiki_md("# Syllabus\n", order=2, title="Algebra"))
-    (wiki / "10_Algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
+    (wiki / "Algebra" / "index.md").write_text(wiki_md("# Syllabus\n", order=2, title="Algebra"))
+    (wiki / "Algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
 
     site = work / "build" / "quarto" / "_site" / "wiki"
     navigation = WikiNavigationParser()
-    navigation.feed((site / "10-algebra" / "groups.html").read_text())
+    navigation.feed((site / "algebra" / "groups.html").read_text())
 
     titles = [title for title, _, _ in navigation.links]
     assert titles.count("Algebra") == 1
@@ -685,6 +684,7 @@ def test_check_rejects_missing_or_ambiguous_page_references(
     wiki = work / "wiki"
     for path in wiki.rglob("*.md"):
         path.unlink()
+    write_subject_branches(work)
     for relative, text in pages.items():
         path = wiki / relative
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -702,8 +702,8 @@ def test_check_rejects_a_page_with_no_order(tmp_path: Path) -> None:
 
 def test_check_rejects_a_directory_with_no_index_page(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "algebra").mkdir()
-    (work / "wiki" / "algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
+    (work / "wiki" / "no-index-here").mkdir()
+    (work / "wiki" / "no-index-here" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
     assert diagnostic_codes(work) == [DiagnosticCode.PAGE_DIRECTORY_MISSING_INDEX]
 
 
@@ -916,7 +916,7 @@ def test_a_reading_link_that_leaves_the_folder_says_where_it_lands(tmp_path: Pat
     says nothing extra: that is not a crossing.
     """
     work = fixture_repo(tmp_path)
-    algebra = work / "wiki" / "algebra"
+    algebra = work / "wiki" / "Algebra"
     (algebra / "exercises").mkdir(parents=True)
     (algebra / "quals").mkdir()
     (algebra / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
@@ -980,7 +980,7 @@ def test_a_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
     them and walking the folder chain never reached it.
     """
     work = fixture_repo(tmp_path)
-    algebra = work / "wiki" / "algebra"
+    algebra = work / "wiki" / "Algebra"
     (algebra / "groups").mkdir(parents=True)
     (algebra / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
     (algebra / "groups" / "index.md").write_text(wiki_md("# Groups\n", order=1, title="Groups"))
@@ -1020,9 +1020,9 @@ def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
     the site root and the page writer makes it relative.
     """
     work = fixture_repo(tmp_path)
-    deep = work / "wiki" / "algebra" / "groups"
+    deep = work / "wiki" / "Algebra" / "groups"
     deep.mkdir(parents=True)
-    (work / "wiki" / "algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (work / "wiki" / "Algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
     (deep / "index.md").write_text(wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"))
 
     result = run("build", work)

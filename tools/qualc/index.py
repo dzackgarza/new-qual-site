@@ -13,6 +13,7 @@ from pathlib import Path
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
+from .wiki import slug
 from .model import (
     AcademicTerm,
     Card,
@@ -74,25 +75,48 @@ create virtual table search using fts5(card_id unindexed, section_kind unindexed
 """
 
 
-def load_vocabularies(root: Path) -> dict[str, set[str]]:
-    vocab = {}
-    for name in ("areas", "institutions", "textbooks"):
+def load_areas(wiki_root: Path) -> dict[str, str]:
+    """Every subject the corpus has, as id to display name.
+
+    The subjects are the wiki's top-level folders. That is already what a
+    reader navigates and what a card's `area` names, so a registry listing them
+    again was a second copy with nothing to keep it honest -- and it had
+    drifted: it said `Prelim` where the wiki had said `Prelims` all along, and
+    the display name it carried was never read at all.
+
+    A folder is a subject unless its index says `subject: false`. Archives is
+    the one that says so: it holds source dumps, not a subject.
+
+    Adding a subject is `mkdir wiki/<name>` and an `index.md` with a title,
+    which is the landing page that subject needs regardless.
+    """
+    areas: dict[str, str] = {}
+    if not wiki_root.is_dir():
+        return areas
+    for directory in sorted(p for p in wiki_root.iterdir() if p.is_dir()):
+        index = directory / "index.md"
+        if not index.exists():
+            continue
+        text = index.read_text()
+        metadata = yaml.safe_load(text.split("---\n", 2)[1]) or {} if text.startswith("---\n") and len(text.split("---\n", 2)) == 3 else {}
+        if metadata.get("subject") is False:
+            continue
+        title = metadata.get("title")
+        areas[slug(directory.name)] = title if isinstance(title, str) and title.strip() else directory.name
+    return areas
+
+
+def load_vocabularies(root: Path, wiki_root: Path) -> dict[str, set[str]]:
+    """Institutions and textbooks stay registries; areas are the wiki's folders.
+
+    An institution or a textbook has no counterpart in the tree -- they are
+    provenance, not subjects -- so those remain authored lists.
+    """
+    vocab = {"areas": set(load_areas(wiki_root))}
+    for name in ("institutions", "textbooks"):
         data = yaml.safe_load((root / f"{name}.yaml").read_text())
         vocab[name] = {entry["id"] for entry in data}
     return vocab
-
-
-def load_area_names(root: Path) -> dict[str, str]:
-    """What each area is called, as the registry writes it.
-
-    The registry has carried a `name` beside every `id` all along and nothing
-    read it: every heading, filter option and facet label on the site was the
-    id with its hyphens swapped for spaces and title case applied. That agrees
-    with the registry by luck for `applied-algebra` and is a second vocabulary
-    for anything it does not.
-    """
-    data = yaml.safe_load((root / "areas.yaml").read_text())
-    return {entry["id"]: entry["name"] for entry in data}
 
 
 def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagnostic]:

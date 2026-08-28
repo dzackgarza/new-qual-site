@@ -1,5 +1,7 @@
 ---
 title: Archives
+# Source dumps and reading past the syllabus, not a subject of its own.
+subject: false
 order: 90
 ---
 

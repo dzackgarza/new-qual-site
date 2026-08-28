@@ -31,7 +31,7 @@ from urllib.parse import urlsplit
 import panflute as pf
 import yaml
 
-from .index import load_area_names
+from .index import load_areas
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
     PandocBatchError,
@@ -2430,7 +2430,7 @@ def project(
     mentions = wiki_card_mentions(wiki_pages or [])
     incoming_pages = incoming_wiki_links(wiki_pages or [])
     assets = build_asset_catalog(site.parent / "assets")
-    area_names = load_area_names(site.parent / "vocabularies")
+    area_names = load_areas(site.parent / "wiki")
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
         [

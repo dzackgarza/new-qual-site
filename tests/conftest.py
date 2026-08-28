@@ -29,6 +29,22 @@ ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_CORPUS = Path(__file__).resolve().parent / "fixtures" / "kinds"
 
 
+SUBJECTS = (("Algebra", "Algebra"), ("Topology", "Topology"), ("Complex_Analysis", "Complex Analysis"), ("Real_Analysis", "Real Analysis"))
+
+
+def write_subject_branches(work: Path) -> None:
+    """The wiki branches this suite's cards are classified under.
+
+    A subject is a wiki folder -- that is where the area list is read from --
+    so a corpus that classifies a card as algebra is a corpus with an Algebra
+    branch. Without them every fixture card sits in an unknown area.
+    """
+    for subject, title in SUBJECTS:
+        branch = work / "wiki" / subject
+        branch.mkdir(parents=True, exist_ok=True)
+        (branch / "index.md").write_text(f"---\ntitle: {title}\norder: 1\n---\n\n# {title}\n")
+
+
 def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
     """A minimal valid repo: the kind fixtures plus whatever `cards` adds.
 
@@ -40,6 +56,7 @@ def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
         shutil.copytree(ROOT / sub, work / sub)
     shutil.copytree(FIXTURE_CORPUS, work / "corpus")
     (work / "publications").mkdir()
+    write_subject_branches(work)
     for name, text in (cards or {}).items():
         (work / "corpus" / name).write_text(text)
     return work

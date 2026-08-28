@@ -25,7 +25,7 @@ def load(
         discover(root / "corpus"),
     )
     if not errors:
-        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies"))
+        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"))
     wiki_pages: list[WikiPage] = []
     if not errors:
         wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
