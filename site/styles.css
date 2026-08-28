@@ -351,6 +351,14 @@ mjx-container[display="true"] {
   max-width: 100%;
 }
 
+/* A display formula inherits the measure from whatever holds it, and a formula
+   is not prose: three equations on the conformal-maps page were wider than the
+   54ch a paragraph gets and were reachable only by scrolling them sideways.
+   The block that carries one keeps the column instead. */
+.page-body :is(p, li, dd, blockquote):has(.math.display) {
+  max-width: 100%;
+}
+
 .page-body h2,
 .page-body h3 {
   margin-top: 2.25rem;
