@@ -87,6 +87,10 @@
       item.append(link, metadata);
       results.append(item);
     }
+    // Titles are stored as their source, so a card named for a formula listed as
+    // `$\# G = [G:H]\,\#H$`. MathJax ran before the dialog had any results in it,
+    // so the list has to ask for itself.
+    await window.MathJax?.typesetPromise?.([results]);
   };
 
   openButton.addEventListener("click", openSearch);
