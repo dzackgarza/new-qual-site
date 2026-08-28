@@ -11,6 +11,10 @@ classification:
   - Integration by Parts
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: problem
@@ -45,4 +49,24 @@ review: draft
   - **Solution:** $u = \ln (x)$, $du = \frac {1}{x} ~dx$
 
   - THIS IS DIFFERENT FROM THE REST (u-sub)
+:::
+
+::: {.solution}
+**Goal.** Derive the antiderivative $\int x^n \ln x\,dx$ for $n \neq -1$.
+
+<1>1. Integrate by parts with $u = \ln x$ and $dv = x^n\,dx$.
+<2>1. $du = \frac{1}{x}\,dx$ and $v = \frac{x^{n+1}}{n+1}$.
+Proof: differentiate $\ln x$ and integrate $x^n$.
+<2>2. $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\ln x - \int \frac{x^{n+1}}{n+1}\cdot \frac{1}{x}\,dx$.
+Proof: integration by parts: $\int u\,dv = uv - \int v\,du$.
+<2>3. $= \frac{x^{n+1}}{n+1}\ln x - \frac{1}{n+1}\int x^n\,dx$.
+Proof: $\frac{x^{n+1}}{x} = x^n$.
+<2>4. $= \frac{x^{n+1}}{n+1}\ln x - \frac{x^{n+1}}{(n+1)^2} + C$.
+Proof: $\int x^n\,dx = \frac{x^{n+1}}{n+1}$.
+
+<1>2. Hence $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\qty(\ln x - \frac{1}{n+1}) + C$.
+Proof: factor out $\frac{x^{n+1}}{n+1}$ from <1>1.4.
+
+<1>3. Q.E.D.
+Proof: <1>2 is the general formula; the special case $n = -1$ is $\int \frac{\ln x}{x}\,dx = \frac12 \ln^2 x + C$ (substitute $u = \ln x$).
 :::
