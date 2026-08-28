@@ -2,9 +2,11 @@
 
 Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam.
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam.
 
-The final score will be the sum of FOUR analysis problems (Problems 1–6) and FOUR linear algebra problems (Problems 7–12). On the front of your paper indicate which 8 problems you wish to have graded. Please be reminded that to pass the exam you need to show mastery of both subjects.
+The final score will be the sum of FOUR analysis problems (Problems 1–6) and FOUR linear algebra problems (Problems 7–12). On the front of your paper indicate which 8 problems you wish to have graded.
+Please be reminded that to pass the exam you need to show mastery of both subjects.
 
 Please staple your problems in the order they are listed in the exam.
 
@@ -30,7 +32,8 @@ $$
 
 Show that A ∪ B is a connected subset of $\mathbb { R } ^ { n }$
 
-Problem 3. Let $f : [ 0 , 1 ] \to \mathbb { R }$ and $g : [ 0 , 1 ] \to [ 0 , 1 ]$ be two Riemann integrable functions. Assume that
+Problem 3. Let $f : [ 0 , 1 ] \to \mathbb { R }$ and $g : [ 0 , 1 ] \to [ 0 , 1 ]$ be two Riemann integrable functions.
+Assume that
 
 $$
 | g ( x ) - g ( y ) | \geq \alpha | x - y | \quad \text { for any } \quad x , y \in [ 0 , 1 ]
@@ -106,4 +109,5 @@ $$
 
 defines an inner product on V . Exhibit an orthonormal basis of V with respect to this inner product; rigorously justify your answer.
 
-Problem 12. Let V be a finite-dimensional vector space. Let $T : V \to V$ be a linear transformation such that $T ( W ) \subseteq W$ for every subspace $W$ of V with dim $( W ) = \dim ( V ) - 1$ . Prove that T is a scalar multiple of the identity operator.
+Problem 12. Let V be a finite-dimensional vector space.
+Let $T : V \to V$ be a linear transformation such that $T ( W ) \subseteq W$ for every subspace $W$ of V with dim $( W ) = \dim ( V ) - 1$ . Prove that T is a scalar multiple of the identity operator.

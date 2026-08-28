@@ -1,6 +1,11 @@
 ## BASIC EXAM, SPRING 2010
 
-Instructions: Do any 10 of the following questions. If you attempt more than 10 questions, indicate which ones you would like to be considered for credit by crossing out the questions we should not check (otherwise the first 10 will be taken). All problems are worth 10 points. Parts of the problem do not carry equal weight. Little or no credit will be given for answers without adequate justification. Write your university identification number at the top of each sheet of paper.
+Instructions: Do any 10 of the following questions.
+If you attempt more than 10 questions, indicate which ones you would like to be considered for credit by crossing out the questions we should not check (otherwise the first 10 will be taken).
+All problems are worth 10 points.
+Parts of the problem do not carry equal weight.
+Little or no credit will be given for answers without adequate justification.
+Write your university identification number at the top of each sheet of paper.
 
 Good luck!
 
@@ -18,7 +23,10 @@ Problem 3: Let S and T be two normal transformations in the complex finite dimen
 
 Problem 4: (i). Let $A = ( a _ { i , j } )$ be $n \times n$ real symmetric matrix such that $\begin{array} { r } { \sum _ { i , j } a _ { i , j } x _ { i } x _ { j } \le 0 } \end{array}$ for every vector $\displaystyle ( x _ { 1 } , \ldots , x _ { n } )$ in $\mathbb { R } ^ { n }$ . Prove that if $t r ( A ) = 0$ then $A = 0 .$
 
-(ii). Let T be a linear transformation in the complex finite dimensional vector space V with a positive definite Hermitian inner product. Suppose that $T T ^ { * } = 4 T - 3 I$ , where I is identity transformation. Prove that T is positive definite Hermitian and find all possible eigenvalues of T.
+(ii).
+Let T be a linear transformation in the complex finite dimensional vector space V with a positive definite Hermitian inner product.
+Suppose that $T T ^ { * } = 4 T - 3 I$ , where I is identity transformation.
+Prove that T is positive definite Hermitian and find all possible eigenvalues of T.
 
 Problem 5: Let A, B two $n \times n$ complex matrices which have the same minimal polynomial $M ( t )$ and the same characteristic polynomial $P ( t ) = ( t - \lambda _ { 1 } ) ^ { a _ { 1 } } \cdot \cdot \cdot ( t - \lambda _ { k } ) ^ { a _ { k } }$ , where $\lambda _ { i } \neq \lambda _ { j }$ for $i \neq j$ . Prove that if $P ( t ) / M ( t ) = ( t - \lambda _ { 1 } ) \cdot \cdot \cdot ( t - \lambda _ { k } )$ , then these matrices are similar.
 
@@ -26,9 +34,11 @@ Problem 6: Let $A = { \left( \begin{array} { l l } { 4 } & { - 4 } \\ { 1 } & { 
 
 (i). Find Jordan form J of A and a matrix P such that $P ^ { - 1 } A P = J .$
 
-(ii). Compute $A ^ { 100 }$ and $J ^ { 100 }$
+(ii).
+Compute $A ^ { 100 }$ and $J ^ { 100 }$
 
-(iii). Find a formula for $a _ { n } ,$ when $a _ { n + 1 } = 4 a _ { n } - 4 a _ { n - 1 }$ and $a _ { 0 } = a , a _ { 1 } = b .$
+(iii).
+Find a formula for $a _ { n } ,$ when $a _ { n + 1 } = 4 a _ { n } - 4 a _ { n - 1 }$ and $a _ { 0 } = a , a _ { 1 } = b .$
 
 Problem 7: Let $\{ f _ { n } \}$ be a sequence of real-valued functions on the line, and assume that there is a $B < \infty$ such that $| f _ { n } ( x ) | \leq B$ for all n and x. Prove that there is a subsequence $\{ f _ { n _ { k } } \}$ such that $\scriptstyle \operatorname* { l i m } _ { k \to \infty } f _ { n _ { k } } ( r )$ exists for all rational numbers r.
 

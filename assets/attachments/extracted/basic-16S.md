@@ -2,9 +2,11 @@
 
 ## Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam.
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam.
 
-Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems. Clearly indicate which 10 problems you want us to grade.
+Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems.
+Clearly indicate which 10 problems you want us to grade.
 
 <table><tr><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>4</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>6</td><td rowspan=1 colspan=1>7</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>11</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr></table>
 
@@ -26,7 +28,8 @@ $$
 
 Using your definition, prove that $f$ is Riemann integrable on $[ a , b ]$
 
-Problem 3. Suppose $f \colon [ 0 , 1 ] \to \mathbb { R }$ is a continuously differentiable function. Show that the limit
+Problem 3. Suppose $f \colon [ 0 , 1 ] \to \mathbb { R }$ is a continuously differentiable function.
+Show that the limit
 
 $$
 \operatorname* { l i m } _ { n \to \infty } n ( \sum _ { k = 0 } ^ { n } f { \big ( } { \frac { k } { n } } { \big ) } - n \int _ { 0 } ^ { 1 } f ( x ) \mathrm { d } x )
@@ -48,7 +51,8 @@ $$
 
 exists and compute its value.
 
-Problem 5. Let $f , g \colon \mathbb { R } ^ { 2 } \to \mathbb { R }$ be continuously differentiable functions such that g attains value zero at at least one point. Suppose that $\nabla g \neq 0$ everywhere on $\mathbb { R } ^ { 2 }$ and assume $( x _ { 0 } , y _ { 0 } )$ is a point such that
+Problem 5. Let $f , g \colon \mathbb { R } ^ { 2 } \to \mathbb { R }$ be continuously differentiable functions such that g attains value zero at at least one point.
+Suppose that $\nabla g \neq 0$ everywhere on $\mathbb { R } ^ { 2 }$ and assume $( x _ { 0 } , y _ { 0 } )$ is a point such that
 
 $$
 f ( x _ { 0 } , y _ { 0 } ) = \operatorname* { i n f } \big \{ f ( x , y ) \colon x , y \in \mathbb { R } , g ( x , y ) = 0 \big \} .
@@ -70,7 +74,8 @@ $$
 
 Prove that, in this metric, every open ball $\{ y \colon \rho ( x , y ) < r \}$ is closed and every closed ball $\{ y \colon \rho ( x , y ) \leq r \}$ is open.
 
-Problem 7. An orthogonal $n \times n$ matrix A is called elementary if the corresponding linear transformation $L _ { A } : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n }$ fixes an $( n - 2 )$ -dimensional subspace. Prove that every orthogonal matrix M is a product of at most $( n - 1 )$ elementary orthogonal matrices.
+Problem 7. An orthogonal $n \times n$ matrix A is called elementary if the corresponding linear transformation $L _ { A } : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n }$ fixes an $( n - 2 )$ -dimensional subspace.
+Prove that every orthogonal matrix M is a product of at most $( n - 1 )$ elementary orthogonal matrices.
 
 Problem 8. Let $A = \left( a _ { i j } \right)$ be a $2 \times 2$ real matrix such that
 
@@ -102,4 +107,5 @@ $$
 
 exists and compute its value.
 
-Problem 12. Let A be a symmetric n×n real matrix, $n \geq 4$ , and let $v _ { 1 } , \ldots , v _ { 4 } \in \mathbb { R } ^ { n }$ be nonzero vectors. Suppose $A v _ { k } = ( 2 k - 1 ) v _ { k }$ for all $1 \leq k \leq 4$ . Prove that $v _ { 1 } + 2 v _ { 2 }$ is orthogonal to $3 v _ { 3 } + 4 v _ { 4 }$
+Problem 12. Let A be a symmetric n×n real matrix, $n \geq 4$ , and let $v _ { 1 } , \ldots , v _ { 4 } \in \mathbb { R } ^ { n }$ be nonzero vectors.
+Suppose $A v _ { k } = ( 2 k - 1 ) v _ { k }$ for all $1 \leq k \leq 4$ . Prove that $v _ { 1 } + 2 v _ { 2 }$ is orthogonal to $3 v _ { 3 } + 4 v _ { 4 }$

@@ -2,7 +2,9 @@ Basic Examination, Spring 2009
 
 2-6 pm, Saturday, March 28, 2009
 
-Instructions: Work any 10 problems. All problems are worth ten points; parts of a problem do not carry equal weight. You must tell us which 10 problems you want us to grade.
+Instructions: Work any 10 problems.
+All problems are worth ten points; parts of a problem do not carry equal weight.
+You must tell us which 10 problems you want us to grade.
 
 The grading will emphasize your attention to detail.
 
@@ -34,14 +36,17 @@ where ' denotes differentiation.
 
 (a) Under what condition on $( \alpha , \beta , \gamma , \delta )$ can the constraints be met?
 
-(b) When the constraints are met, what is P? Is it unique? Explain your answer.
+(b) When the constraints are met, what is P? Is it unique?
+Explain your answer.
 
-Problem 4. Let $( X , d )$ be an arbitrary metric space.   
-(a) Give a definition of compactness of X involving open covers.   
-(b) Define completeness of X.   
-(c) Define connectedness of X.   
-(d) Is the set of rational numbers Q (with the usual metric) connected? Justify your answer.   
-(e) Suppose X is complete. Show that X is compact in the sense of part (a) if and only if   
+Problem 4. Let $( X , d )$ be an arbitrary metric space.\
+(a) Give a definition of compactness of X involving open covers.\
+(b) Define completeness of X.\
+(c) Define connectedness of X.\
+(d) Is the set of rational numbers Q (with the usual metric) connected?
+Justify your answer.\
+(e) Suppose X is complete.
+Show that X is compact in the sense of part (a) if and only if\
 for every $r > 0 ,$ X can be covered by finitely many balls of radius r.
 
 Problem 5. Compute $e ^ { A t }$ when
@@ -62,13 +67,15 @@ Problem 7. (a) Define what it means for $f : \mathbb { R } ^ { n } \to \mathbb {
 
 (b) Using this definition, formulate and prove an appropriate form of the chain rule, that is, a theorem describing the derivative of $g ( f ( x ) )$ at $x = a$
 
-Problem 8. Let $M _ { n \times n } ( \mathbb { R } )$ denote the vector space of $n \times n$ matrices with real entries. (a) Show that
+Problem 8. Let $M _ { n \times n } ( \mathbb { R } )$ denote the vector space of $n \times n$ matrices with real entries.
+(a) Show that
 
 $$
 \langle A , B \rangle = \mathrm { t r } ( A B ^ { T } )
 $$
 
-defines an inner product on $M _ { n \times n } ( \mathbb { R } )$ . More precisely, show that it obeys the axioms of an inner product. Note: tr denotes the trace of a matrix and the superscript $T$ denotes the transpose.
+defines an inner product on $M _ { n \times n } ( \mathbb { R } )$ . More precisely, show that it obeys the axioms of an inner product.
+Note: tr denotes the trace of a matrix and the superscript $T$ denotes the transpose.
 
 (b) Given $C \in M _ { n \times n } ( \mathbb { R } )$ , we define a linear transformation
 
@@ -76,7 +83,7 @@ $$
 \Phi _ { C } : M _ { n \times n } ( \mathbb { R } ) \to M _ { n \times n } ( \mathbb { R } ) \quad { \mathrm { b y } } \quad \Phi _ { C } ( A ) = C A - A C
 $$
 
-Compute the adjoint of $\Phi _ { C }$ Check that when $C$ is symmetric, then $\Phi _ { C }$ is self-adjoint.   
+Compute the adjoint of $\Phi _ { C }$ Check that when $C$ is symmetric, then $\Phi _ { C }$ is self-adjoint.\
 (c) Show that whatever the choice of $C ,$ the map $\Phi _ { C }$ is not onto (i.e. is not surjective).
 
 Problem 9. Let us say that a real symmetric $n \times n$ matrix A is a reflection if $A ^ { 2 } = { \mathrm { I d } }$ and
@@ -85,7 +92,8 @@ $$
 \operatorname { r a n k } ( A - \operatorname { I d } ) = 1 ,
 $$
 
-where Id denotes the identity matrix. Given distinct unit vectors $x , y \in \mathbb { R } ^ { n }$ show that there is a reflection with $A x = y$ and $A y = x .$ Moreover, show that the reflection A with these properties is unique.
+where Id denotes the identity matrix.
+Given distinct unit vectors $x , y \in \mathbb { R } ^ { n }$ show that there is a reflection with $A x = y$ and $A y = x .$ Moreover, show that the reflection A with these properties is unique.
 
 Problem 10. (a) Rigorously justify the following:
 
@@ -99,11 +107,15 @@ Problem 11. (a) Explain the following (overly informal) statement:
 
 Every matrix can be brought to Jordan normal form; moreover the normal form is essentially unique.
 
-No proofs are required; however, all statements must be clear and precise. All required hypotheses must be included. The meaning of the phrases 'brought to Jordan normal form', 'Jordan normal form', and 'essentially unique' must be defined explicitly.
+No proofs are required; however, all statements must be clear and precise.
+All required hypotheses must be included.
+The meaning of the phrases 'brought to Jordan normal form', 'Jordan normal form', and 'essentially unique' must be defined explicitly.
 
-(b) Define the minimal polynomial of a matrix. How may it be determined for a matrix in Jordan normal form?
+(b) Define the minimal polynomial of a matrix.
+How may it be determined for a matrix in Jordan normal form?
 
-Problem 12. Let $F : \mathbb { R } ^ { 3 } \to \mathbb { R } ^ { 3 }$ and $\rho : \mathbb { R } ^ { 3 } \to \mathbb { R }$ be smooth functions. Show that
+Problem 12. Let $F : \mathbb { R } ^ { 3 } \to \mathbb { R } ^ { 3 }$ and $\rho : \mathbb { R } ^ { 3 } \to \mathbb { R }$ be smooth functions.
+Show that
 
 $$
 \operatorname { d i v } ( F ) = \rho

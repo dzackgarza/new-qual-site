@@ -456,7 +456,6 @@ def test_card_without_prompts_is_never_asked() -> None:
     assert parse_card(FIXTURES / "DEF-PGROUP.md").card.prompts == []
 
 
-
 APPEARANCE = "    term: spring\n  problems:\n  - id: P-INDEXP\n    comment: {comment}\n  - E-CENTER\n"
 
 
@@ -494,9 +493,7 @@ def test_commented_entry_must_still_be_an_id(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     path = tmp_path / "SRC-UGA-FIX.md"
-    path.write_text(
-        (FIXTURES / "SRC-UGA-FIX.md").read_text().replace("    term: spring\n", "    term: spring\n  problems:\n  - id: Problem 6\n    comment: P-INDEXP\n", 1)
-    )
+    path.write_text((FIXTURES / "SRC-UGA-FIX.md").read_text().replace("    term: spring\n", "    term: spring\n  problems:\n  - id: Problem 6\n    comment: P-INDEXP\n", 1))
     with pytest.raises(ValueError):
         parse_card(path)
 

@@ -2,9 +2,11 @@
 
 ## Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam.
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam.
 
-Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems. Clearly indicate which 10 problems you want us to grade.
+Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems.
+Clearly indicate which 10 problems you want us to grade.
 
 <table><tr><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>N</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>4</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>N</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>6</td><td rowspan=1 colspan=1>7</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>11</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr></table>
 
@@ -56,7 +58,8 @@ $$
 x = x ( y , z ) , \quad y = y ( x , z ) \quad \text { and } \quad z = z ( x , y )
 $$
 
-as the solutions of the equation $F ( x , y , z ) = F ( 0 , 0 , 0 )$ in the neighborhood of point (0, 0) in the corresponding variables. Prove that
+as the solutions of the equation $F ( x , y , z ) = F ( 0 , 0 , 0 )$ in the neighborhood of point (0, 0) in the corresponding variables.
+Prove that
 
 $$
 \frac { \partial x } { \partial y } \frac { \partial y } { \partial z } \frac { \partial z } { \partial x } = - 1
@@ -74,7 +77,9 @@ $$
 
 Prove both properties, as well as all of your other assertions, in full detail.
 
-Problem 7. Let $A , B$ be two $4 \times 5$ matrices of rank $3 ,$ and let $C = A ^ { T } B$ (this is a $5 \times 5$ matrix). Find all possible values r for the rank of C. To be precise, if the rank r is possible, find an explicit example of such matrices. Then prove that all other values are impossible.
+Problem 7. Let $A , B$ be two $4 \times 5$ matrices of rank $3 ,$ and let $C = A ^ { T } B$ (this is a $5 \times 5$ matrix).
+Find all possible values r for the rank of C. To be precise, if the rank r is possible, find an explicit example of such matrices.
+Then prove that all other values are impossible.
 
 Problem 8. Find $M ^ { - 2 }$ where
 
@@ -84,7 +89,8 @@ $$
 
 Problem 9. Let A be a $n \times n$ real matrix such that $A ^ { T } = - A .$ Prove that $\operatorname* { d e t } ( A ) \geq 0 .$
 
-Problem 10. Let $F , G : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n }$ be two linear operators. Recall that
+Problem 10. Let $F , G : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n }$ be two linear operators.
+Recall that
 
 $$
 \exp ( F ) = \sum _ { k = 0 } ^ { \infty } { \frac { 1 } { k ! } } F ^ { k } .

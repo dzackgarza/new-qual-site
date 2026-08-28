@@ -14,7 +14,9 @@ $$
 
 Here $\begin{array} { r } { \vert \vert \mathbf { z } \vert \vert _ { 2 } ^ { 2 } = \langle \mathbf { z } , \mathbf { z } \rangle = \sum _ { i } z _ { i } ^ { 2 } . } \end{array}$
 
-2. Let $V , W , Z$ be n-dimensional vector spaces and $T : V \to W$ and $U : W \to Z$ be linear transformations. Prove that if the composite transformation $U T : V \to Z$ is invertible, then both T and U are invertible. (Do not use determinants in your proof!)
+2. Let $V , W , Z$ be n-dimensional vector spaces and $T : V \to W$ and $U : W \to Z$ be linear transformations.
+   Prove that if the composite transformation $U T : V \to Z$ is invertible, then both T and U are invertible.
+   (Do not use determinants in your proof!)
 
 3. Consider the space of infinite sequences of real numbers
 
@@ -118,6 +120,8 @@ Can these equations be solved uniquely for $u , v$ in terms of $x , y$ in a neig
 
 (a) Show that $c _ { 0 }$ is complete.
 
-(b) Is the unit ball $\{ x \in c _ { 0 } : \| x \| \leq 1 \}$ compact? Prove your answer.
+(b) Is the unit ball $\{ x \in c _ { 0 } : \| x \| \leq 1 \}$ compact?
+Prove your answer.
 
-(c) Is the set $\textstyle \left\{ x \in c _ { 0 } : \sum _ { k } k | x _ { k } | \leq 1 \right\}$ compact? Prove your answer.
+(c) Is the set $\textstyle \left\{ x \in c _ { 0 } : \sum _ { k } k | x _ { k } | \leq 1 \right\}$ compact?
+Prove your answer.

@@ -1,6 +1,7 @@
 ## Basic Examination – Spring 2013
 
-You may only submit solutions to 10 of the following 12 problems. Please indicate clearly which ones you want to submit.
+You may only submit solutions to 10 of the following 12 problems.
+Please indicate clearly which ones you want to submit.
 
 1. (a) Define what it means for a function on [0,1] to be Riemann integrable.
 
@@ -16,7 +17,8 @@ $$
 
 If f has continuous derivatives up to order three, prove that $\begin{array} { r } { | \int _ { a } ^ { b } f ( x ) d x - S _ { [ a , b ] } f | \leq } \end{array}$ $C ( b - a ) ^ { 4 } \operatorname* { m a x } _ { [ a , b ] } | f ^ { ( 3 ) } ( x ) |$ , where C does not depend on $f$
 
-3. Prove that a metric space is sequentially compact if and only if it is complete and totally bounded. A metric space is totally bounded when for every $\epsilon > 0$ it can be covered by a finite number of balls of radius $\epsilon$.
+3. Prove that a metric space is sequentially compact if and only if it is complete and totally bounded.
+   A metric space is totally bounded when for every $\epsilon > 0$ it can be covered by a finite number of balls of radius $\epsilon$.
 
 4. Denote by $h _ { n }$ the n-th harmonic number:
 
@@ -80,7 +82,8 @@ $$
 
 (b) Use part (a) to show that if n is odd, then there is a nonzero vector v such that $A ^ { 2 } v = v$
 
-10. Denote by G the set of real $4 \times 4$ upper triangular matrices with 1’s on the diagonal. Fix
+10. Denote by G the set of real $4 \times 4$ upper triangular matrices with 1’s on the diagonal.
+    Fix
 
 $$
 M = { \left( \begin{array} { l l l l } { 1 } & { 1 } & { 1 } & { 1 } \\ { 0 } & { 1 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 0 } & { 1 } \end{array} \right) }
@@ -88,7 +91,8 @@ $$
 
 Denote by C the set of matrices in G commuting with M .
 
-(a) Prove that C is an affine subspace in the space $\mathbb { R } ^ { 16 }$ of all $4 \times 4$ real matrices. S is an “affine subspace” of a vector space V if there is a vector $w \in V$ such that $S ^ { 0 } = \{ v - w : v \in S \}$ is a subspace of V . The dimension of S is defined to be the dimension of $S ^ { 0 }$
+(a) Prove that C is an affine subspace in the space $\mathbb { R } ^ { 16 }$ of all $4 \times 4$ real matrices.
+S is an “affine subspace” of a vector space V if there is a vector $w \in V$ such that $S ^ { 0 } = \{ v - w : v \in S \}$ is a subspace of V . The dimension of S is defined to be the dimension of $S ^ { 0 }$
 
 (b) Find the dimension of C.
 

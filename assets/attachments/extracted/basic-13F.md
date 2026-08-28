@@ -1,6 +1,8 @@
 ## Basic Exam, Fall 2013
 
-Instructions: Write your UCLA student number on each page of your solutions. Do not write your name. Work 10 of the 12 problems, at least 4 of the first 6 and at least 4 of the last 6, and indicate here which 10 problems you want to have graded: (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12). Each problem is worth 10 points, but different parts of a problem may have different values.
+Instructions: Write your UCLA student number on each page of your solutions.
+Do not write your name.
+Work 10 of the 12 problems, at least 4 of the first 6 and at least 4 of the last 6, and indicate here which 10 problems you want to have graded: (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12). Each problem is worth 10 points, but different parts of a problem may have different values.
 
 1. When $\left\{ a _ { n } \right\}$ is a sequence of positive real numbers, $a _ { n } > 0$ , define $P _ { n } = \Pi _ { j = 1 } ^ { n } \big ( 1 + a _ { j } \big )$ . Prove that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } P _ { n }$ exists and is a non-zero real number if and only if $\textstyle \sum _ { n } a _ { n } < \infty$
 
@@ -8,9 +10,11 @@ Instructions: Write your UCLA student number on each page of your solutions. Do 
 
 (a) Prove that $\{ x \in \mathbb { R } : f$ is not continuous at x} is countable.
 
-(b) Let $S \subset \mathbb { R }$ be a countable set. Prove there exists nondecreasing $f : \mathbb { R } \to \mathbb { R }$ such that for all $x \in \mathbb { R } , f$ is not continuous at x if and only if $x \in S .$
+(b) Let $S \subset \mathbb { R }$ be a countable set.
+Prove there exists nondecreasing $f : \mathbb { R } \to \mathbb { R }$ such that for all $x \in \mathbb { R } , f$ is not continuous at x if and only if $x \in S .$
 
-3. Let $\gamma : [ 0 , 1 ] \to \mathbb { R } ^ { 2 }$ be a continuous one-to-one function. By definition the length of the range $\gamma ( [ 0 , 1 ] )$ is
+3. Let $\gamma : [ 0 , 1 ] \to \mathbb { R } ^ { 2 }$ be a continuous one-to-one function.
+   By definition the length of the range $\gamma ( [ 0 , 1 ] )$ is
 
 $$
 L ( \gamma ) = \operatorname* { s u p } \{ \sum _ { j = 1 } ^ { n - 1 } | \gamma ( t _ { j + 1 } ) - \gamma ( t _ { j } ) | : 0 \leq t _ { 1 } < t _ { 2 } < . . . < t _ { n } \leq 1 , \ n < \infty \}
@@ -50,7 +54,8 @@ where $\nabla f$ is the gradient of f and · is the inner product on $\mathbb { 
 
 6. Let X be a compact metric space, let $\{ x _ { n } \}$ be a sequence in X and let $x \in X$ . Assume that for every subsequence $\left\{ y _ { n } \right\}$ of $\{ x _ { n } \}$ there is a subsequence $\left\{ z _ { n } \right\}$ of $\left\{ y _ { n } \right\}$ such that $\left\{ z _ { n } \right\}$ converges to x. Prove $\{ x _ { n } \}$ converges to x.
 
-7. Let $z _ { 1 } , z _ { 2 } , . . . , z _ { n }$ be distinct complex numbers and for $1 \leq j \leq n$ , let $m _ { j }$ be a non-negative integer. Write $\begin{array} { r } { N + 1 = \sum _ { j = 0 } ^ { n } ( 1 + m _ { j } ) } \end{array}$ . Prove that given any array of $N + 1$ complex numbers
+7. Let $z _ { 1 } , z _ { 2 } , . . . , z _ { n }$ be distinct complex numbers and for $1 \leq j \leq n$ , let $m _ { j }$ be a non-negative integer.
+   Write $\begin{array} { r } { N + 1 = \sum _ { j = 0 } ^ { n } ( 1 + m _ { j } ) } \end{array}$ . Prove that given any array of $N + 1$ complex numbers
 
 $$
 \begin{array} { r } { c _ { j , k } , 1 \le j \le n , 0 \le k \le m _ { j } , } \end{array}
@@ -64,7 +69,8 @@ $$
 
 where $P ^ { ( k ) }$ denotes the k−th derivative, i.e. $( z ^ { n } ) ^ { ( 2 ) } = n ( n - 1 ) z ^ { n - 2 } , n \geq 2 .$
 
-8. An orthogonal projection on a finite dimensional inner product space V is an endomorphism P that satisfies $P ^ { 2 } = P$ and $i m ( P ) = k e r ( P ) ^ { \perp }$ . Suppose $V = \mathbb { R } ^ { 3 }$ and P is an orthogonal projection with diagonal matrix entries $p _ { 1 , 1 } = 2 / 3 , p _ { 2 , 2 } = 1 / 2 , p _ { 3 , 3 } = 5 / 6$ . Find all matrices that P could be. (Hint: it’s a very small finite set!).
+8. An orthogonal projection on a finite dimensional inner product space V is an endomorphism P that satisfies $P ^ { 2 } = P$ and $i m ( P ) = k e r ( P ) ^ { \perp }$ . Suppose $V = \mathbb { R } ^ { 3 }$ and P is an orthogonal projection with diagonal matrix entries $p _ { 1 , 1 } = 2 / 3 , p _ { 2 , 2 } = 1 / 2 , p _ { 3 , 3 } = 5 / 6$ . Find all matrices that P could be.
+   (Hint: it’s a very small finite set!).
 
 9. Let A be an endomorphism of a vector space V of dimension d over a field F . Show, from first principles (i.e. do not use Jordan form or the Cayley-Hamilton theorem) that A satisfies a polynomial $P ( X ) \in F [ X ]$ of degree at most d.
 
@@ -72,4 +78,6 @@ where $P ^ { ( k ) }$ denotes the k−th derivative, i.e. $( z ^ { n } ) ^ { ( 2
 
 11. Define a normal linear transformation N on a finite dimensional complex inner product space V . Supposing that N is normal, show that there exists an orthogonal basis of V consisting of eigenvectors of N .
 
-12. Suppose A is an endomorphism of a complex vector space with characteristic polynomial $C _ { A } ( X ) = X ^ { 4 } - 6 X ^ { 3 } + 13 X ^ { 2 } - 12 X + 4$ . How many similarity (i.e. conjugacy) classes of elements can have this characteristic polynomial? Suppose also that the minimal polynomial $M _ { A } ( X )$ of A is equal to $C _ { A } ( X )$ . How many classes satisfy this additional condition? Prove your answers, quoting any general theorems you need.
+12. Suppose A is an endomorphism of a complex vector space with characteristic polynomial $C _ { A } ( X ) = X ^ { 4 } - 6 X ^ { 3 } + 13 X ^ { 2 } - 12 X + 4$ . How many similarity (i.e. conjugacy) classes of elements can have this characteristic polynomial?
+    Suppose also that the minimal polynomial $M _ { A } ( X )$ of A is equal to $C _ { A } ( X )$ . How many classes satisfy this additional condition?
+    Prove your answers, quoting any general theorems you need.

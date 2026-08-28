@@ -2,27 +2,34 @@
 
 ## Instructions
 
-Solve any 10 of the following 12 problems. You will not receive credit for more than 10 problems. Indicate which problems you wish to be graded by circling the corresponding numbers.
+Solve any 10 of the following 12 problems.
+You will not receive credit for more than 10 problems.
+Indicate which problems you wish to be graded by circling the corresponding numbers.
 
 (1) For which of the values $a = 0 , 1 , 2$ is the function $f ( t ) = t ^ { a }$ uniformly continuous on $\lbrack 0 , \infty ) \ ?$ Prove your assertions.
 
 (2) Suppose that A is a non-empty connected subset of $\mathbb { R } ^ { 2 }$ (a) Prove that if A is open, then it is path connected.
 
-(b) Is (a) true if A is closed? Prove your assertion.
+(b) Is (a) true if A is closed?
+Prove your assertion.
 
 (3) Give an example of a sequence of continuous real-valued functions $f _ { n }$ on [0, 1] such that $f ( t ) = \operatorname* { l i m } f _ { n } ( t )$ is continuous, but $\textstyle \int _ { 0 } ^ { 1 } f _ { n } ( t ) d t$ does not converge to $\textstyle \int _ { 0 } ^ { 1 } f ( t ) d t$
 
-(4) (a) Suppose that K and F are subsets of $\mathbb { R } ^ { 2 }$ with K closed and bounded and F closed. Prove that if $K \cap F = \emptyset$ , then $d ( K , F ) >$ 0. Recall that
+(4) (a) Suppose that K and F are subsets of $\mathbb { R } ^ { 2 }$ with K closed and bounded and F closed.
+Prove that if $K \cap F = \emptyset$ , then $d ( K , F ) >$ 0. Recall that
 
 $$
 d ( K , F ) = \operatorname* { i n f } \{ d ( x , y ) : x \in K , y \in F \} .
 $$
 
-(b) Is (a) true if K is just closed? Prove your assertion.
+(b) Is (a) true if K is just closed?
+Prove your assertion.
 
-(5) A rearrangement of a series $\textstyle \sum _ { n = 1 } ^ { \infty } a _ { n }$ is a series of the form $\scriptstyle \sum _ { k = 1 } ^ { \infty } a _ { n ( k ) }$ , where n : $\mathbb { N } \to \mathbb { N }$ is a bijection (i.e. one-to-one and onto). Show that there is a rearrangement of the series $\scriptstyle \sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$ which converges to π.
+(5) A rearrangement of a series $\textstyle \sum _ { n = 1 } ^ { \infty } a _ { n }$ is a series of the form $\scriptstyle \sum _ { k = 1 } ^ { \infty } a _ { n ( k ) }$ , where n : $\mathbb { N } \to \mathbb { N }$ is a bijection (i.e. one-to-one and onto).
+Show that there is a rearrangement of the series $\scriptstyle \sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$ which converges to π.
 
-(6) Suppose that V is an n-dimensional vector space $( n \in \mathbb { N } )$ and that $T : V \to V$ is a linear mapping. Prove that
+(6) Suppose that V is an n-dimensional vector space $( n \in \mathbb { N } )$ and that $T : V \to V$ is a linear mapping.
+Prove that
 
 $$
 \mathrm { d i m \ k e r } T + \mathrm { d i m \ r a n g e } T = n
@@ -32,7 +39,8 @@ Note: Do not just quote a standard theorem.
 
 (7) Suppose that $T = [ t _ { i j } ]$ is a complex n × n matrix, and that $\lambda _ { 1 } , \ldots , \lambda _ { r }$ are distinct eigenvalues of $T ,$ with corresponding non-zero eigenvectors $v _ { 1 } , \ldots , v _ { r }$ Show that $v _ { 1 } , \ldots , v _ { r }$ are linearly independent.
 
-(8) Must the eigenvectors of a linear transformation $T : \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ span $\mathbb { C } ^ { n }$? Prove your assertion.
+(8) Must the eigenvectors of a linear transformation $T : \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ span $\mathbb { C } ^ { n }$?
+Prove your assertion.
 
 (9) (a) Prove that any linear transformation $T : \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ must have an eigenvector.
 

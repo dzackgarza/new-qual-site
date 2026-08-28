@@ -2,9 +2,11 @@
 
 ## Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam.
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam.
 
-Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems. Clearly indicate which 10 problems you want us to grade.
+Work out 10 problems, including at least 4 of the first 6 problems and at least 4 of the last 6 problems.
+Clearly indicate which 10 problems you want us to grade.
 
 <table><tr><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>4</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>6</td><td rowspan=1 colspan=1>7</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>11</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr></table>
 
@@ -20,7 +22,8 @@ $$
 
 (ii) Find the Jordan form of M when $a = c = d = 2$ and $b = - 2$
 
-Problem 3. Let M be an $n \times n$ real matrix. Suppose M is orthogonal and symmetric
+Problem 3. Let M be an $n \times n$ real matrix.
+Suppose M is orthogonal and symmetric
 
 (i) Prove that if M is positive definite then M is the identity.
 
@@ -34,9 +37,12 @@ $$
 
 Compute $\textstyle { \frac { d F } { d x } } ( 0 )$
 
-Problem 5. Suppose that V is a finite-dimensional vector space over the field $\mathbb { C } ,$ and $T : V \to V$ is a linear transformation. Further suppose that $F ( X ) \in \mathbb { C } [ X ]$ is a polynomial. Show that the linear transformation $F ( T )$ is invertible if and only if $F ( X )$ and the minimal polynomial of T have no common factors.
+Problem 5. Suppose that V is a finite-dimensional vector space over the field $\mathbb { C } ,$ and $T : V \to V$ is a linear transformation.
+Further suppose that $F ( X ) \in \mathbb { C } [ X ]$ is a polynomial.
+Show that the linear transformation $F ( T )$ is invertible if and only if $F ( X )$ and the minimal polynomial of T have no common factors.
 
-Problem 6. (i) Let V denote the vector space of real $n \times n$ matrices. Prove that the form $\langle A , B \rangle : = \operatorname { t r a c e } ( A ^ { T } B )$ , where $A ^ { T }$ is the transpose of A, defines an inner product on V . Namely, prove that the form is bilinear, symmetric, and positive definite.
+Problem 6. (i) Let V denote the vector space of real $n \times n$ matrices.
+Prove that the form $\langle A , B \rangle : = \operatorname { t r a c e } ( A ^ { T } B )$ , where $A ^ { T }$ is the transpose of A, defines an inner product on V . Namely, prove that the form is bilinear, symmetric, and positive definite.
 
 (ii) For $n = 2$ , find an orthonormal basis in $V$
 
@@ -54,7 +60,8 @@ $$
 
 for every $C ^ { 2 }$ function $f : \mathbb { R } \to \mathbb { R }$
 
-Problem 9. Let $( X , \mathrm { d i s t } )$ be a bounded metric space and let $C ( X )$ denote the space of bounded continuous real-valued functions on X endowed with the supremum norm. Suppose $C ( X )$ is separable.
+Problem 9. Let $( X , \mathrm { d i s t } )$ be a bounded metric space and let $C ( X )$ denote the space of bounded continuous real-valued functions on X endowed with the supremum norm.
+Suppose $C ( X )$ is separable.
 
 (i) Show that for every $\varepsilon > 0$ , there is a countable set $Z _ { \varepsilon } \subseteq X$ so that
 
@@ -64,7 +71,8 @@ $$
 
 (ii) Deduce that X is separable.
 
-Problem 10. Let $K \subset \mathbb { R } ^ { n }$ be compact. Suppose that for every $\varepsilon > 0$ and every pair $a , b \in K$ , there is an integer $n \geq 1$ and a sequence of points $x _ { 0 } , \ldots , x _ { n } \in K$ so that
+Problem 10. Let $K \subset \mathbb { R } ^ { n }$ be compact.
+Suppose that for every $\varepsilon > 0$ and every pair $a , b \in K$ , there is an integer $n \geq 1$ and a sequence of points $x _ { 0 } , \ldots , x _ { n } \in K$ so that
 
 $$
 x _ { 0 } = a , \quad x _ { n } = b , \quad \text { and } \quad \left\| x _ { k } - x _ { k - 1 } \right\| < \epsilon \ \text { for every } \ 1 \leq k \leq n .

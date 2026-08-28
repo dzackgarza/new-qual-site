@@ -2,11 +2,15 @@
 
 ## Test Instructions:
 
-Write your university identification number at the top of each sheet of paper. Do not write your name!
+Write your university identification number at the top of each sheet of paper.
+Do not write your name!
 
-Solve any 10 of the following 12 problems. You will not receive credit for more than 10 problems. Indicate which problems you wish to be graded by circling the corresponding numbers.
+Solve any 10 of the following 12 problems.
+You will not receive credit for more than 10 problems.
+Indicate which problems you wish to be graded by circling the corresponding numbers.
 
-Each problem counts as 10 points. Not all parts of a problem have the same value.
+Each problem counts as 10 points.
+Not all parts of a problem have the same value.
 
 <table><tr><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>4</td><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>6</td><td rowspan=1 colspan=1>7</td><td rowspan=1 colspan=1>8</td><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>11</td><td rowspan=1 colspan=1>12</td><td rowspan=1 colspan=1>∑</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr></table>
 
@@ -18,7 +22,8 @@ $$
 \operatorname* { i n f } _ { x \in K , y \in F } \rho ( x , y ) > 0 .
 $$
 
-(b) Is the statement in (a) true if K is only assumed to be closed, rather than compact? Give a proof if it is true, and a counterexample if it is false.
+(b) Is the statement in (a) true if K is only assumed to be closed, rather than compact?
+Give a proof if it is true, and a counterexample if it is false.
 
 2. Suppose $f$ is a bounded function on $[ a , b ]$
 
@@ -68,7 +73,8 @@ $$
 
 (b) Does this iteration converge for arbitrary initial vectors, $\vec { x } _ { 0 } ?$ Justify your answer.
 
-10. Suppose $f : \mathbb { R } \to \mathbb { R }$ is bounded and Lipschitz continuous. For $k \in \mathbb { N }$ define $x _ { k } ( t ) : [ 0 , 1 ] \to \mathbb { R }$ by $x _ { k } ( 0 ) = 0$ and
+10. Suppose $f : \mathbb { R } \to \mathbb { R }$ is bounded and Lipschitz continuous.
+    For $k \in \mathbb { N }$ define $x _ { k } ( t ) : [ 0 , 1 ] \to \mathbb { R }$ by $x _ { k } ( 0 ) = 0$ and
 
 $$
 x _ { k } ( t ) = x _ { k } ( n 2 ^ { - k } ) + ( t - n 2 ^ { - k } ) f ( x _ { k } ( n 2 ^ { - k } ) )
@@ -96,7 +102,8 @@ $$
 
 among smooth functions $f : [ 0 , 1 ] \to \mathbb { R }$ with $f ( 0 ) = 0$ and $f ( 1 ) = 1$ Is the optimal solution $g ( x )$ unique?
 
-12. Let us define $D ( t ) = \{ x ^ { 2 } + y ^ { 2 } \leq r ^ { 2 } ( t ) \} \subset \mathbb { R } ^ { 2 }$ , where $r ( t ) : \mathbb { R } \to \mathbb { R }$ is continuously differentiable. For given smooth, nonnegative function $u ( x , t ) : \mathbb { R } ^ { 2 } \times \mathbb { R } \to \mathbb { R }$, express the following quantity in terms of a surface integral:
+12. Let us define $D ( t ) = \{ x ^ { 2 } + y ^ { 2 } \leq r ^ { 2 } ( t ) \} \subset \mathbb { R } ^ { 2 }$ , where $r ( t ) : \mathbb { R } \to \mathbb { R }$ is continuously differentiable.
+    For given smooth, nonnegative function $u ( x , t ) : \mathbb { R } ^ { 2 } \times \mathbb { R } \to \mathbb { R }$, express the following quantity in terms of a surface integral:
 
 $$
 \frac { d } { d t } \Big ( \int _ { D ( t ) } u ( x , t ) d x \Big ) - \int _ { D ( t ) } u _ { t } ( x , t ) d x

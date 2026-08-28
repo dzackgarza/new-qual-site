@@ -10,7 +10,8 @@ Prove your answers.
 
 2. Let $f : ( a , b ) \to \mathbb { R }$ be continuous and differentiable in $\left( a , b \right) \backslash \left\{ c \right\}$ . If $\lim _ { x \to c } f ^ { \prime } ( x ) = d \in \mathbb { R }$ , show that f is differentiable at $c$ and ${ f ^ { \prime } } ( c ) = d .$
 
-3. Let T be a linear transformation of the vector space V into itself. If $T v$ and v are linearly dependent for each $v \in V$ , show that $T$ must be a scalar multiple of the identity.
+3. Let T be a linear transformation of the vector space V into itself.
+   If $T v$ and v are linearly dependent for each $v \in V$ , show that $T$ must be a scalar multiple of the identity.
 
 4. Suppose that $f : \mathbb { R } \to \mathbb { R }$ is twice differentiable and its second derivative, $f ^ { \prime \prime }$ satisfies $| f ^ { \prime \prime } ( x ) | \le B$
 
@@ -52,7 +53,8 @@ $$
 
 in terms of the dimensions of V and W. Here $T ^ { * }$ denotes the adjoint of T.
 
-7. Let $A ( x )$ be a function on $\mathbb { R }$ whose values are $n \times n$ matrices. Starting from the definition that the derivative $A ^ { \prime } ( x )$ is the matrix you get by differentiating the entries in $A ( x )$ , show that when $A ( x )$ is invertible and differentiable for all $x ,$ $A ^ { - 1 } ( x )$ is differentiable, and
+7. Let $A ( x )$ be a function on $\mathbb { R }$ whose values are $n \times n$ matrices.
+   Starting from the definition that the derivative $A ^ { \prime } ( x )$ is the matrix you get by differentiating the entries in $A ( x )$ , show that when $A ( x )$ is invertible and differentiable for all $x ,$ $A ^ { - 1 } ( x )$ is differentiable, and
 
 $$
 ( A ^ { - 1 } ) ^ { \prime } ( x ) = - A ^ { - 1 } ( x ) A ^ { \prime } ( x ) A ^ { - 1 } ( x ) .
@@ -74,7 +76,8 @@ $$
 
 where F is continuous and bounded.
 
-a) Suppose $u _ { n } \to u$ uniformly. Show that u is differentiable and solves
+a) Suppose $u _ { n } \to u$ uniformly.
+Show that u is differentiable and solves
 
 $$
 u ^ { \prime } ( x ) = F ( u ( x ) , x ) .

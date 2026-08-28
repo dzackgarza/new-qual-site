@@ -16,7 +16,8 @@ $$
 f ( x ) = \sum _ { n = 1 } ^ { \infty } { \frac { \sin n x } { n ^ { 5 / 2 } } }
 $$
 
-converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous function on $\mathbf { R }$ with a continuous derivative. State clearly any facts you assume.
+converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous function on $\mathbf { R }$ with a continuous derivative.
+State clearly any facts you assume.
 
 ## PROBLEM 4
 
@@ -48,7 +49,8 @@ $$
 
 ## PROBLEM 7
 
-A matrix T (with entries, say, in the field $\mathbf { C }$ of complex numbers) is diagonalizable if there exists a non-singular matrix S such that $S T S ^ { - 1 }$ is diagonal. Prove that if $a , \lambda \in \mathbf { C }$ with $a \neq 0$ , then the following matrix is not diagonalizable:
+A matrix T (with entries, say, in the field $\mathbf { C }$ of complex numbers) is diagonalizable if there exists a non-singular matrix S such that $S T S ^ { - 1 }$ is diagonal.
+Prove that if $a , \lambda \in \mathbf { C }$ with $a \neq 0$ , then the following matrix is not diagonalizable:
 
 $$
 T = { \left( \begin{array} { l l l } { 1 } & { a } & { 0 } \\ { 0 } & { 1 } & { a } \\ { 0 } & { 0 } & { \lambda } \end{array} \right) }

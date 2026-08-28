@@ -1,8 +1,10 @@
 ## Basic Exam Spring 2014
 
-IMPORTANT. Write your university identification number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam
+IMPORTANT. Write your university identification number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam
 
-Test Instructions: Work 10 problems, including at least 4 from problems 1 - 6 and at least 4 from problems 7 - 12. Clearly indicate which 10 problems you have attempted. Usually a passing score requires very good work (at least 8 out of 10 points) on at least 3 problems from 1 - 6 and at least 3 problems from 7 -12.
+Test Instructions: Work 10 problems, including at least 4 from problems 1 - 6 and at least 4 from problems 7 - 12. Clearly indicate which 10 problems you have attempted.
+Usually a passing score requires very good work (at least 8 out of 10 points) on at least 3 problems from 1 - 6 and at least 3 problems from 7 -12.
 
 Problem Scores (NG=not graded)
 
@@ -52,11 +54,14 @@ $$
 
 Problem 3 Suppose that A, $B \in M _ { n , n } ( \mathbb { C } )$ satisfy $A B - B A = A$ Show that A is not invertible.
 
-Problem 4 Suppose that A, $B \in M _ { n , n } ( \mathbb { C } )$ . Show that the characteristic polynomials of AB and BA are equal. Hint: One approach is to first show that it holds when B is invertible.
+Problem 4 Suppose that A, $B \in M _ { n , n } ( \mathbb { C } )$ . Show that the characteristic polynomials of AB and BA are equal.
+Hint: One approach is to first show that it holds when B is invertible.
 
-Problem 5 Suppose that V is a finite dimensional real inner product space with inner product $( \cdot , \cdot )$ , that $L \in \operatorname { H o m } ( V , V )$ and that $b \in V$ is fixed. Suppose that $u , v \in V$ both minimize $D ( x ) = | | L ( x ) - b | |$ . Show that $u - v \in$ ker L.
+Problem 5 Suppose that V is a finite dimensional real inner product space with inner product $( \cdot , \cdot )$ , that $L \in \operatorname { H o m } ( V , V )$ and that $b \in V$ is fixed.
+Suppose that $u , v \in V$ both minimize $D ( x ) = | | L ( x ) - b | |$ . Show that $u - v \in$ ker L.
 
-Problem 6 Show that if $A \in M _ { n , n } ( \mathbb { C } )$ is normal then $A ^ { * } = P ( A )$ for some polynomial $P ( x )$ with complex coefficients. Here $A ^ { * }$ is the conjugate transpose of A.
+Problem 6 Show that if $A \in M _ { n , n } ( \mathbb { C } )$ is normal then $A ^ { * } = P ( A )$ for some polynomial $P ( x )$ with complex coefficients.
+Here $A ^ { * }$ is the conjugate transpose of A.
 
 Problem 7 Find a doubly infinite sequence $\{ a _ { n , m } , n , m \in \mathbb { Z } \}$ such that for all m, $\textstyle \sum _ { n } a _ { n , m } = 0$ and for all $n , \textstyle \sum _ { m } a _ { n , m } = 0$ , with all these series converging absolutely, but such that $\begin{array} { r } { \sum _ { n } \sum _ { m } | a _ { n , m } | = \infty } \end{array}$
 
@@ -102,6 +107,7 @@ $$
 
 whenever $n \neq m$
 
-a) Let $E = \{ a _ { n } : n \geq 1 \} \cup \{ b _ { n } : n \geq 1 \}$ be the set of endpoints of the intervals above. Prove E is closed.
+a) Let $E = \{ a _ { n } : n \geq 1 \} \cup \{ b _ { n } : n \geq 1 \}$ be the set of endpoints of the intervals above.
+Prove E is closed.
 
 (b) Prove no such family of intervals $\{ I _ { n } \}$ can exist.

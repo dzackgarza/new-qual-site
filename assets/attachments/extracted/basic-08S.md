@@ -34,7 +34,8 @@ $$
 f ^ { \prime \prime } ( x ) \sim { \frac { f ( x + h ) - 2 f ( x ) + f ( x - h ) } { h ^ { 2 } } } ,
 $$
 
-and h is the mesh size. (Assume that $x , x + h , x - h \in ( a , b ) )$
+and h is the mesh size.
+(Assume that $x , x + h , x - h \in ( a , b ) )$
 
 4. Let X be a compact subset of $\mathbb { R } ^ { N }$ and let $\{ f _ { n } ( x ) \}$ be a sequence of continuous real functions on X such that
 
@@ -56,7 +57,8 @@ $$
 
 Prove $F ( x , y ) = 0 $ for all $( x , y )$
 
-( Assume $\begin{array} { r } { f ( x , y ) , \frac { \partial f ( x , y ) } { \partial x } , \frac { \partial f ( x , y ) } { \partial y } , \frac { \partial } { \partial y } \left( \frac { \partial f ( x , y ) } { \partial x } \right) } \end{array}$ and $\textstyle { \frac { \partial } { \partial x } } \left( { \frac { \partial f ( x , y ) } { \partial y } } \right)$ are all continuous in the plane. Use part (a) to prove that
+( Assume $\begin{array} { r } { f ( x , y ) , \frac { \partial f ( x , y ) } { \partial x } , \frac { \partial f ( x , y ) } { \partial y } , \frac { \partial } { \partial y } \left( \frac { \partial f ( x , y ) } { \partial x } \right) } \end{array}$ and $\textstyle { \frac { \partial } { \partial x } } \left( { \frac { \partial f ( x , y ) } { \partial y } } \right)$ are all continuous in the plane.
+Use part (a) to prove that
 
 $$
 \frac { \partial } { \partial y } \Big ( \frac { \partial f ( x , y ) } { \partial x } \Big ) = \frac { \partial } { \partial x } \Big ( \frac { \partial f ( x , y ) } { \partial y } \Big ) .
@@ -64,7 +66,8 @@ $$
 
 Hint: You may assume the double integral in (a) equals the iterated integral $\textstyle \int ( \int F ( x , y ) d x ) d y$ and equals the iterated integral $\textstyle { \int ( \int F ( x , y ) d y ) d x }$
 
-6. Let Y be a complete countable metric space. Prove there is $y \in Y$ such that $\{ y \}$ is open.
+6. Let Y be a complete countable metric space.
+   Prove there is $y \in Y$ such that $\{ y \}$ is open.
 
 7. Let $a ( x )$ be a function on R such that
 
@@ -86,11 +89,14 @@ Prove $\{ x : a ( x ) > 0 \}$ is countable.
 
 (b) Show that for every even positive integer n, there is a a vector space V over R of dimension n, and an R-linear transformation $T : V  V$ of V, such that there is no non-zero $v \in V$ satisfying $T ( v ) = \lambda v$ for some $\lambda \in \mathbb { R }$
 
-10. Suppose A is an $n \times n$ complex matrix such that A has n distinct eigenvalues. Prove that if B is an $n \times n$ complex matrix such that $A B = B A$ , then B is diagonalizable.
+10. Suppose A is an $n \times n$ complex matrix such that A has n distinct eigenvalues.
+    Prove that if B is an $n \times n$ complex matrix such that $A B = B A$ , then B is diagonalizable.
 
-11. Assume A is an n x n complex matrix such that for some positive integer m the power $A ^ { m } = I _ { n }$ where $I _ { n }$ is the $n \times n$ identity matrix. Prove that A is diagonalizable.
+11. Assume A is an n x n complex matrix such that for some positive integer m the power $A ^ { m } = I _ { n }$ where $I _ { n }$ is the $n \times n$ identity matrix.
+    Prove that A is diagonalizable.
 
-12. Let A be an $n \times n$ real symmetric $\left( a _ { i , j } = a _ { j , i } \right)$ matrix, and let $S = \{ x \in \mathbb { R } ^ { n } : \textstyle \sum x _ { j } ^ { 2 } = 1 \}$ be the unit sphere of $\mathbb { R } ^ { n }$. Let $x \in S$ be such that
+12. Let A be an $n \times n$ real symmetric $\left( a _ { i , j } = a _ { j , i } \right)$ matrix, and let $S = \{ x \in \mathbb { R } ^ { n } : \textstyle \sum x _ { j } ^ { 2 } = 1 \}$ be the unit sphere of $\mathbb { R } ^ { n }$.
+    Let $x \in S$ be such that
 
 $$
 ( A x , x ) = \operatorname* { s u p } _ { S } ( A y , y )

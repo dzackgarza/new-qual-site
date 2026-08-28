@@ -2,7 +2,8 @@
 
 ## Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam.
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam.
 
 The final score will be the sum of the best FOUR analysis problems (Problems 1 through 6) and the best FOUR linear algebra problems (Problems 7 through 12).
 
@@ -24,7 +25,8 @@ $$
 
 This defines a norm on $C ^ { \alpha } ( [ 0 , 1 ] )$ . Prove that any bounded sequence in $C ^ { 1 / 2 } ( [ 0 , 1 ] )$ admits a convergent subsequence in $C ^ { 1 / 3 } ( [ 0 , 1 ] )$
 
-Problem 3. Let $f : \mathbb { R } \to \mathbb { R }$ be a Lipschitz function. Suppose that for every $x \in \mathbb { R }$
+Problem 3. Let $f : \mathbb { R } \to \mathbb { R }$ be a Lipschitz function.
+Suppose that for every $x \in \mathbb { R }$
 
 $$
 \operatorname* { l i m } _ { n \to \infty } n \big [ f \big ( x + { \textstyle \frac { 1 } { n } } \big ) - f ( x ) \big ] = 0 .
@@ -32,7 +34,8 @@ $$
 
 Prove that f is differentiable.
 
-Problem 4. Let $f : [ 0 , 1 ] \to \mathbb { R }$ be a function satisfying the intermediate value property, namely, whenever $0 \leq a < b \leq 1$ and y lies between $f ( a )$ and $f ( b )$ , there exists $x \in ( a , b )$ such that $f ( x ) = y$ . Assume that for any $y \in \mathbb { R }$ , the preimage $f ^ { - 1 } ( \{ y \} )$ is closed. Prove that f is continuous.
+Problem 4. Let $f : [ 0 , 1 ] \to \mathbb { R }$ be a function satisfying the intermediate value property, namely, whenever $0 \leq a < b \leq 1$ and y lies between $f ( a )$ and $f ( b )$ , there exists $x \in ( a , b )$ such that $f ( x ) = y$ . Assume that for any $y \in \mathbb { R }$ , the preimage $f ^ { - 1 } ( \{ y \} )$ is closed.
+Prove that f is continuous.
 
 Problem 5. Let $f : [ 1 , \infty ) \to [ 0 , \infty )$ be bounded and monotonically decreasing with $\operatorname* { l i m } _ { x \to \infty } f ( x ) = 0$ . Show that
 
@@ -78,13 +81,15 @@ $$
 M = \left( \begin{array} { c c } { { A } } & { { B } } \\ { { C } } & { { D } } \end{array} \right) \qquad \text { and } \qquad M ^ { - 1 } = \left( \begin{array} { c c } { { P } } & { { Q } } \\ { { R } } & { { S } } \end{array} \right) ,
 $$
 
-where $A , \ldots , S$ are $k \times k$ matrices. Show that
+where $A , \ldots , S$ are $k \times k$ matrices.
+Show that
 
 $$
 \operatorname* { d e t } M \cdot \operatorname* { d e t } S = \operatorname* { d e t } A .
 $$
 
-Problem 11. Two matrices A, B are called commuting if $A B = B A$ . The order of a matrix A is the smallest integer $k > 0$ such that $A ^ { k } = 1$ ; if no such k exists, the order is defined to be infinite. Prove that there exist 10 distinct real $2 \times 2$ matrices, which are pairwise commuting and all of the same finite order.
+Problem 11. Two matrices A, B are called commuting if $A B = B A$ . The order of a matrix A is the smallest integer $k > 0$ such that $A ^ { k } = 1$ ; if no such k exists, the order is defined to be infinite.
+Prove that there exist 10 distinct real $2 \times 2$ matrices, which are pairwise commuting and all of the same finite order.
 
 Problem 12. Let
 

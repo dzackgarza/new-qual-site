@@ -2,11 +2,14 @@
 
 ## Test instructions:
 
-Write your UCLA ID number on the upper right corner of each sheet of paper you use. Do not write your name anywhere on the exam!!!
+Write your UCLA ID number on the upper right corner of each sheet of paper you use.
+Do not write your name anywhere on the exam!!!
 
-All answers must be justified. If you wish to use a known theorem, make sure to give a full and precise statement.
+All answers must be justified.
+If you wish to use a known theorem, make sure to give a full and precise statement.
 
-Work out FIVE of the linear algebra problems (1-6) and FIVE of the analysis problems (7-12). Clearly indicate which 10 problems you want us to grade. To pass the exam successfully, candidates must fare satisfactorily in both parts.
+Work out FIVE of the linear algebra problems (1-6) and FIVE of the analysis problems (7-12). Clearly indicate which 10 problems you want us to grade.
+To pass the exam successfully, candidates must fare satisfactorily in both parts.
 
 <table><tr><td rowspan=1 colspan=1>1</td><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>3</td><td rowspan=1 colspan=1>4</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>5</td><td rowspan=1 colspan=1>6</td><td rowspan=1 colspan=1>7</td><td rowspan=1 colspan=1>8</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>9</td><td rowspan=1 colspan=1>10</td><td rowspan=1 colspan=1>11</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td></tr></table>
 
@@ -20,7 +23,8 @@ Problem 2. Let $n \geq 1$ be an integer and A and B be n × n-matrices.
 
 (a) [5 pts] Show that AB and BA have the same characteristic polynomial if A is invertible.
 
-(b) [5 pts] Is the result true without assuming invertibility? Prove your claim.
+(b) [5 pts] Is the result true without assuming invertibility?
+Prove your claim.
 
 Problem 3. [10 pts] Solve the following linear system of differential equations, for two functions $x _ { i } : \mathbb { R } \to \mathbb { R }$ , for i = 1 and 2, with derivatives $\begin{array} { r } { x _ { i } ^ { \prime } ( t ) = \frac { d x _ { i } } { d t } ( t ) ; } \end{array}$
 
@@ -72,7 +76,8 @@ Problem 8. Let $a < b$ be real numbers and $f \colon [ a , b ] \to \mathbb { R }
 
 (c) [3 pts] Prove that f is Riemann integrable.
 
-Problem 9. [10 pts] Let $( X , \rho )$ be a complete metric space and $f \colon X \to X$ a function. Writing $f ^ { n }$ for the n-th iterate of f , denote
+Problem 9. [10 pts] Let $( X , \rho )$ be a complete metric space and $f \colon X \to X$ a function.
+Writing $f ^ { n }$ for the n-th iterate of f , denote
 
 $$
 c _ { n } : = \operatorname* { s u p } _ { x , y \in X \atop x \neq y } { \frac { \rho { \big ( } f ^ { n } ( x ) , f ^ { n } ( y ) { \big ) } } { \rho ( x , y ) } } .
@@ -88,6 +93,8 @@ $$
 a b \leq { \frac { a ^ { p } } { p } } + { \frac { b ^ { q } } { q } } .
 $$
 
-Problem 12. [10 pts] Let X be a compact metric space and $C ( X )$ the space of continuous real-valued functions on X endowed with the supremum norm. Let ${ \mathcal { F } } \subset C ( X )$ be non-empty. Prove the following version of Arzel\`a-Ascoli’s theorem:
+Problem 12. [10 pts] Let X be a compact metric space and $C ( X )$ the space of continuous real-valued functions on X endowed with the supremum norm.
+Let ${ \mathcal { F } } \subset C ( X )$ be non-empty.
+Prove the following version of Arzel\`a-Ascoli’s theorem:
 
 F is compact $\Leftrightarrow \mathcal { F }$ is closed, bounded and equicontinuous Give precise definitions of all terms used in this equivalence.

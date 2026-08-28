@@ -6,7 +6,8 @@ Write your university identification number at the top of each sheet of paper.
 
 DO NOT WRITE YOUR NAME!
 
-Complete this sheet. Read the directions of the exam very carefully.
+Complete this sheet.
+Read the directions of the exam very carefully.
 
 STUDENT ID NUMBER:
 
@@ -14,7 +15,12 @@ DATE:
 
 Home Department:
 
-INSTRUCTIONS: Do any 10 of the following questions. If you attempt more than 10 questions, indicate below which ones you would like to be considered for credit (otherwise the first 10 will be taken). Each question counts for 10 points. Little or no credit will be given for answers without adequate justification. You have 4 hours. Good luck.
+INSTRUCTIONS: Do any 10 of the following questions.
+If you attempt more than 10 questions, indicate below which ones you would like to be considered for credit (otherwise the first 10 will be taken).
+Each question counts for 10 points.
+Little or no credit will be given for answers without adequate justification.
+You have 4 hours.
+Good luck.
 
 NOTATION: We denote by $\mathbb { N } = 1 , 2 , \ldots$ the natural numbers, by $\mathbb { R }$ and $\mathbb { C }$ the real and complex numbers respectively, and by $M _ { n } ( \mathbb { R } ) , M _ { n } ( \mathbb { C } )$ the $n \times n$ matrices with real and complex coefficients respectively.
 
@@ -22,13 +28,16 @@ NOTATION: We denote by $\mathbb { N } = 1 , 2 , \ldots$ the natural numbers, by 
 
 1. (i). For each $n \in \mathbb { N }$ let $f _ { n } : \mathbb { N } \to \mathbb { R }$ be a function with $| f _ { n } ( m ) | \leq 1$ for all $m , n \in \mathbb { N } .$ Prove that there is an infinite subsequence of distinct positive integers $n _ { i } .$ such that for each m $\in \mathbb { N } , f _ { n _ { i } } ( m )$ converges.
 
-(ii). For $n _ { i }$ as in (i), assume that in addition $\lim _ { m \to \infty } \lim _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\scriptstyle \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m )$
+(ii).
+For $n _ { i }$ as in (i), assume that in addition $\lim _ { m \to \infty } \lim _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\scriptstyle \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m )$
 
 2. (i). Let X be a complete metric space with respect to a distance function d. We say that a map $T : X \to X$ is a contraction if for some $0 < \lambda < 1$ and all $x , y \in X .$ $d ( T ( x ) , T ( y ) ) \leq \lambda d ( x , y )$ . Prove that if T is a contraction then it has a fixed point, i.e., there is an $x \in X$ such that $T ( x ) = x$
 
-(ii). Using (i) show that given a differentiable function $f : \mathbb { R } \to \mathbb { R }$ whose first derivative satisfies $f ^ { \prime } ( x ) = e ^ { - x ^ { 2 } } - e ^ { - x ^ { 4 } }$ , there exists $\alpha \in \mathbb { R }$ with $f ( \alpha ) = \alpha$
+(ii).
+Using (i) show that given a differentiable function $f : \mathbb { R } \to \mathbb { R }$ whose first derivative satisfies $f ^ { \prime } ( x ) = e ^ { - x ^ { 2 } } - e ^ { - x ^ { 4 } }$ , there exists $\alpha \in \mathbb { R }$ with $f ( \alpha ) = \alpha$
 
-3. The purpose of this problem is to give a multi variable calculus proof of the geometric and arithmetic means inequality along the concrete steps below. The inequality has numerous other proofs and naturally you are not allowed to use it (or them) below.
+3. The purpose of this problem is to give a multi variable calculus proof of the geometric and arithmetic means inequality along the concrete steps below.
+   The inequality has numerous other proofs and naturally you are not allowed to use it (or them) below.
 
 (i). Let $\mathbb { R } _ { + } ^ { n } \subset \mathbb { R } ^ { n }$ be the (open) subset of vectors all whose coordinates are positive, and $f : \mathbb { R } _ { + } ^ { n } \to \mathbb { R }$ be defined by:
 
@@ -38,9 +47,12 @@ $$
 
 (i). Explain carefully why f attains a global (not necessarily unique) minimum at some $p \in \mathbb { R } _ { + } ^ { n }$ . (Hint: what happens when $x _ { i } \to 0 , \infty \ ? )$
 
-(ii). Find p.
+(ii).
+Find p.
 
-(iii). Deduce that if all $x _ { i } \in \mathbb { R }$ are positive and $\prod x _ { i } = 1$ then $\sum x _ { i } \geq n$ with equality iff $x _ { i } = 1$ for all i. (This is a special case of the geometric and arithmetic means inequality, from which the general statement can be immediately deduced. No need to write down this part here).
+(iii).
+Deduce that if all $x _ { i } \in \mathbb { R }$ are positive and $\prod x _ { i } = 1$ then $\sum x _ { i } \geq n$ with equality iff $x _ { i } = 1$ for all i. (This is a special case of the geometric and arithmetic means inequality, from which the general statement can be immediately deduced.
+No need to write down this part here).
 
 4. Let V be a finite dimensional $\mathbb { R }$-vector space, whose dimension we denote by dim(V), equipped with an inner product
 
@@ -64,7 +76,8 @@ $$
 S = \{ ( x , y ) \in \mathbb { R } ^ { 2 } ; \quad x ^ { 2010 } + y ^ { 2010 } \leq 1 \} .
 $$
 
-Define what it means for $f$ to be uniformly continuous on S and prove that $f$ is indeed uniformly continuous. (You can use any theorem you wish in the proof, as long as it is stated correctly and you justify properly why it can be applied, $\mathrm { e . g . }$ if you are using a general theorem on continuous functions, show that the function in question is indeed continuous, and if you are using a metric property of a set explain why it has it.)
+Define what it means for $f$ to be uniformly continuous on S and prove that $f$ is indeed uniformly continuous.
+(You can use any theorem you wish in the proof, as long as it is stated correctly and you justify properly why it can be applied, $\mathrm { e . g . }$ if you are using a general theorem on continuous functions, show that the function in question is indeed continuous, and if you are using a metric property of a set explain why it has it.)
 
 7. Let $V \simeq \mathbb { R } ^ { n }$ be an n -dimensional vector space over $\mathbb { R }$ , and denote by $\operatorname { E n d } ( V )$ the vector space of $\mathbb { R }$-linear transformations of $V .$ (Note that dim(End $( V ) ) = \dim ( V ) ^ { 2 } = n ^ { 2 } . )$ Then for $T \in \operatorname { E n d } ( V )$ show that the dimension of the subspace $W$ of End(V) spanned by $T ^ { k }$ , for $k$ running through non-negative integers, satisfies the inequality dim $( W ) \leq \dim ( V ) = n$ .
 
@@ -78,10 +91,17 @@ Define what it means for $f$ to be uniformly continuous on S and prove that $f$ 
 
 11. (i). State the Cayley-Hamilton theorem for matrices $A \in M _ { n } ( \mathbb { C } )$
 
-(ii). Prove it directly for diagonalisable matrices.
+(ii).
+Prove it directly for diagonalisable matrices.
 
-(iii). Identify $M _ { n } ( \mathbb { C } ) \simeq \mathbb { C } ^ { n ^ { 2 } }$ through some (say, the natural) linear isomorphism. Through this identification $M _ { n } ( \mathbb { C } )$ becomes a metric space with the Euclidean metric. Fact: The subset of diagonalisable matrices in $M _ { n } ( \mathbb { C } ) ( \simeq \mathbb { C } ^ { n ^ { 2 } } )$ is dense. Use this fact, together with part (ii), to prove the Cayley-Hamilton theorem.
+(iii).
+Identify $M _ { n } ( \mathbb { C } ) \simeq \mathbb { C } ^ { n ^ { 2 } }$ through some (say, the natural) linear isomorphism.
+Through this identification $M _ { n } ( \mathbb { C } )$ becomes a metric space with the Euclidean metric.
+Fact: The subset of diagonalisable matrices in $M _ { n } ( \mathbb { C } ) ( \simeq \mathbb { C } ^ { n ^ { 2 } } )$ is dense.
+Use this fact, together with part (ii), to prove the Cayley-Hamilton theorem.
 
 12. Let V be an $n ( \geq 2 )$ -dimensional vector space over $\mathbb { C }$ with a set of basis vectors $e _ { 1 } , \ldots , e _ { n }$ Let $T$ be a linear transformation of V satisfying $T ( e _ { 1 } ) = e _ { 2 } , \cdots , T ( e _ { n - 1 } ) = e _ { n } , T ( e _ { n } ) = e _ { 1 }$ (i). Show that $T$ has 1 as an eigenvalue and write down an eigenvector with eigenvalue 1. Show that up to scaling it is unique.
 
-(ii). Is $T$ diagonalisable? (Hint: calculate the characteristic polynomial.)
+(ii).
+Is $T$ diagonalisable?
+(Hint: calculate the characteristic polynomial.)
