@@ -5,7 +5,10 @@ order: 11
 
 # Resources
 
-[[40_Topology/11_Resources/00_Books_Notes|Topology References]] is the bibliography.
-[[40_Topology/11_Resources/10_Topics|Topics]] is the topic checklist.
-[[20_Problems|Problems (Topology)]] and [[30_Solutions|Solutions (Topology)]] are the problem and solution indexes.
-[[40_Topology/11_Resources/700_Source_Archive|Topology Source Archive]] lists imported exams by source.
+Books, problem lists, and solutions for the topology qual.
+
+- [[40_Topology/11_Resources/00_Books_Notes|Topology References]], the bibliography.
+- [[40_Topology/11_Resources/10_Topics|Topics]], the topic checklist.
+- [[20_Problems|Problems (Topology)]], the problem index.
+- [[30_Solutions|Solutions (Topology)]], the solution index.
+- [[40_Topology/11_Resources/700_Source_Archive|Topology Source Archive]], the imported exams by source.

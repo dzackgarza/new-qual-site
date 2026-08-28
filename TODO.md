@@ -1160,14 +1160,16 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Groups reads Notation, Basics, Actions, Counting theorems, Sylow Theorems, Classification, Series, Resources.
   Every other `order: 0` page in the wiki is a preface, notation, or definitions page, and is first because it belongs first.
 
-- [ ] Replace the paragraph-of-links section indexes with lists.
+- [x] Replace the paragraph-of-links section indexes with lists.
   `wiki/10-algebra/08-quals/index.html` is one paragraph of 20 comma-separated links.
   It names seven topics twice, in title case and again in lower case under `Extra drill`. The two sets are different pages.
+  Fixed: all 19 section indexes that ran five or more links into one paragraph are lists now, one link per item, each keeping the description it was written with.
+  On the algebra quals page the two sets are under headings that say what separates them: problems sat at UGA, against practice problems that were not.
+  `200_Extra` was linked from nowhere and is now listed with them.
 
 - [x] Show the section boundary in the previous and next links.
   From Algebra > Quals, `Previous` is `Final Exam`, in the Exercises section.
-  Fixed: a link that leaves the folder being read names the trail it lands in -- `Final Exam` now reads `in Algebra / Exercises / PSets / Final`.
-  Siblings, the folder above, and the pages inside the folder page being read say nothing extra, because none of those is a crossing.
+  Fixed: a link that leaves the folder being read names the trail it lands in -- `Final Exam` now reads `in Algebra / Exercises / PSets / Final`. Siblings, the folder above, and the pages inside the folder page being read say nothing extra, because none of those is a crossing.
 
 - [ ] Give breadcrumbs one meaning.
   In the wiki a breadcrumb is the folder path (`Algebra / Groups / Sylow Theorems`). In a guide it is the prerequisite chain (`Algebra / Preliminaries / Rings and Ideals / Modules / Linear Algebra`), although the guide index presents those pages as a flat numbered list.

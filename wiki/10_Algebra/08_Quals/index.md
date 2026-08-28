@@ -5,7 +5,39 @@ order: 8
 
 # Quals
 
-Past algebra qualifying exams, sorted by topic rather than by exam.
+Past UGA algebra qualifying exams, filed by topic rather than by sitting.
+[[10_Algebra/08_Quals/000_Preface|Preface]] names the people who supplied the solutions.
 
-[[10_Algebra/08_Quals/000_Preface|Preface]] names the people who supplied solutions.
-Then the syllabus topics: [[050 Group Theory General|Group Theory: General]], [[051 Group Actions|Groups: Group Actions]], [[051 Sylow Theory|Groups: Sylow Theory]], [[054 Classification|Groups: Classification]], [[055 Simple Solvable|Groups: Simple and Solvable]], [[060_Commutative Algebra|Commutative Algebra]], [[072_Fields and Galois Theory|Galois Theory]], [[080_Modules|Modules]], [[100_Linear Algebra|Linear Algebra: Diagonalizability]], [[101_Linear Algebra_JCF|Linear Algebra: Canonical Forms]]. Extra drill: [[909 Extra Problems Commutative Algebra|commutative algebra]], [[910 Extra Problems Group Theory|group theory]], [[920 Extra Problems Ring Theory|ring theory]], [[930 Extra Problems Field Theory|field theory]], [[940 Extra Problems Galois Theory|Galois theory]], [[950 Extra Problems Modules|modules]], [[960 Extra Problems Linear Algebra|linear algebra]], and [[992 Extra_Questions|Even More Algebra Questions]]. [[9999_2021_Fall|Fall 2021]] is that exam kept together.
+## By syllabus topic
+
+Problems sat at UGA, each under the sitting it came from.
+
+- [[050 Group Theory General|Group theory: general]]
+- [[051 Group Actions|Groups: group actions]]
+- [[051 Sylow Theory|Groups: Sylow theory]]
+- [[054 Classification|Groups: classification]]
+- [[055 Simple Solvable|Groups: simple and solvable]]
+- [[060_Commutative Algebra|Commutative algebra]]
+- [[072_Fields and Galois Theory|Galois theory]]
+- [[080_Modules|Modules]]
+- [[100_Linear Algebra|Linear algebra: diagonalizability]]
+- [[101_Linear Algebra_JCF|Linear algebra: canonical forms]]
+
+## Extra drill
+
+Practice problems on the same topics, not from a UGA sitting.
+The lists overlap each other.
+
+- [[909 Extra Problems Commutative Algebra|Commutative algebra]]
+- [[910 Extra Problems Group Theory|Group theory]]
+- [[920 Extra Problems Ring Theory|Ring theory]]
+- [[930 Extra Problems Field Theory|Field theory]]
+- [[940 Extra Problems Galois Theory|Galois theory]]
+- [[950 Extra Problems Modules|Modules]]
+- [[960 Extra Problems Linear Algebra|Linear algebra]]
+- [[200_Extra|Linear algebra and Galois theory, after Pierce]]
+- [[992 Extra_Questions|Even more algebra questions]]
+
+## Kept whole
+
+- [[9999_2021_Fall|Fall 2021]], the one sitting held together rather than split by topic.
