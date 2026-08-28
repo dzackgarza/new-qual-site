@@ -11,7 +11,7 @@ Two kinds of queue files:
 | --- | ---: | --- |
 | `A-title-question-marks.md` | 95 | Wiki files with `:::{.proof title="?"}` at HEAD. 108 instances fixed in uncommitted working tree. |
 | `B-naked-urls.md` | 17 | Wiki files with bare `<https://...>` link text. 161 conversions in uncommitted working tree. |
-| `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. |
+| `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
 | `F-wiki-doctor.md` | 161 | Wiki doctor findings across 12 checks: 69 order violations, 15 one-child dirs, 1 sibling dup title, 9 obsidian embeds, 5 task-list pages, 62 heading-only bodies. |

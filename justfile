@@ -58,8 +58,26 @@ sample-unsolved n="5": build
 macros:
     uv run python tools/sync_macros.py
 
+# Rewrite the unsolved-cards queue from the corpus
+unsolved:
+    uv run python tools/unsolved_queue.py
+
+# Rewrite the queue when the commit touches the corpus, and stage the result so
+# the refresh lands in that commit rather than trailing it. The corpus is the
+# only input that can change the queue, and parsing it costs ~25s, so a commit
+# that touches nothing else is not made to pay for it.
+_unsolved-if-staged:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if git diff --cached --quiet -- corpus; then
+        echo "queues/C-unsolved-cards.md: no staged corpus change"
+    else
+        uv run python tools/unsolved_queue.py
+        git add queues/C-unsolved-cards.md
+    fi
+
 # Run immediate commit-tier quality checks
-test-commit:
+test-commit: _unsolved-if-staged
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
