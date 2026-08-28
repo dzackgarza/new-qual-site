@@ -56,4 +56,4 @@ E_{\lambda_i} &= \dim(A - \lambda_i I)
   This is because $(x-\lambda_i)^{\ell_i}$ annihilates a Jordan block of size $\ell_i$, along with any blocks of size $k\leq \ell_i$.
 :::
 
-[^why_largest_block]:
+[^why_largest_block]: $(x-\lambda_i)^k$ annihilates a Jordan block of size $s$ exactly when $k \geq s$, so the smallest exponent killing every block for $\lambda_i$ at once is the size of the largest one.

@@ -26,11 +26,9 @@ For $Y\subseteq X$ a subspace containing $U$, the closure of $U$ in $Y$ is
 In general, we write $\bar{U} \da \cl_X(U)$.
 
 An equivalent condition: $x\in \cl_X(U) \iff$ every neighborhood of $x$ in $X$ intersects $U$.[^munkres_pt_in_closure]
-This is theorem 17.4 in Munkres
-Munkres 17.5
 
 :::
 
-[^closure_relative_theorem]:
+[^closure_relative_theorem]: Munkres, Theorem 17.4.
 
-[^munkres_pt_in_closure]:
+[^munkres_pt_in_closure]: Munkres, Theorem 17.5.

@@ -128,7 +128,6 @@ Which simplifies to:
 
 So the answer is $\ZZ/2 \oplus \ZZ/2 \oplus \ZZ/3 \cong \ZZ/2 \oplus \ZZ/6$. 
 
-[^fix_facts_on_ext_oskar]: 
-Thanks to Oskar Henriksson for some fixes/clarifications and further explanations here!
+[^fix_facts_on_ext_oskar]: Thanks to Oskar Henriksson for some fixes/clarifications and further explanations here!
 
 :::

@@ -247,7 +247,6 @@ See full argument: D&F p.80.
 [[T-5KGVV]]
 
 :::{.proof}
-[^df_p80_identical_disjoint]
 \[
 aH = bH \iff a\in bH \iff a=bh \text{ for some } h \iff b\inv a = h \iff ba\inv \in H
 .\]
@@ -490,4 +489,4 @@ These notes use the following notation throughout:
 
 :::
 
-[^df_p80_identical_disjoint]:
+[^df_p80_identical_disjoint]: See full argument: D&F p.80.
