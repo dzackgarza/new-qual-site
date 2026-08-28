@@ -1104,11 +1104,13 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 
 ### Collections
 
-- [ ] Give the 43 non-exam collections an index.
+- [x] Give the 43 non-exam collections an index.
   `exam/` holds 381 collection pages.
   `exams.html` lists 338. The remainder are 6 textbooks, 17 homework sets, and 20 compiled scans.
   `exam/SRC-TEXT-MUN00.html` (Munkres, 586 problems) is the largest collection on the site and appears on no listing.
   A reader reaches it only from a problem card, through `Sources`.
+  Fixed: the page lists all 381 under a heading for the kind of thing each is, and is titled `Sources` because that is now what it holds.
+  A source kind with no heading fails the build rather than going unlisted.
 
 - [ ] Move the textbook, homework, and compilation collections off the `exam/` URL prefix, or rename the prefix.
 
@@ -1139,8 +1141,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Fixed: the rows are grouped under an area heading, and within an area the prose titles come before the 483 that begin with mathematics.
   The six headings fill the on-this-page rail, which is the jump list the page had no form of.
   The load cost was the other half: MathJax typeset all 4161 formula titles before a reader could touch the filter.
-  A row is now typeset when it is scrolled near, and the load event falls from 10.1 s to 1.8 s.
-  It is one page still, because the filter counts matches across every row; the rail is what a reader navigates it by.
+  A row is now typeset when it is scrolled near, and the load event falls from 10.1 s to 1.8 s. It is one page still, because the filter counts matches across every row; the rail is what a reader navigates it by.
 
 ### Wiki navigation
 

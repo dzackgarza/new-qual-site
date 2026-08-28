@@ -303,6 +303,38 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path
     assert len(browser.find_all("div", **{"class": "problem-row mathjax_ignore"})) == len(order) - 1
 
 
+def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) -> None:
+    """The listing held only the 338 sittings.
+
+    Munkres, 586 problems and the largest collection on the site, was one of the
+    43 that appeared on no index at all: a reader reached it from a problem card
+    or not at all.
+    """
+    work = fixture_repo(tmp_path)
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "exams.html")
+    body = page.root.find_all("article", **{"class": "page-body"})[0]
+    headings = [h.text for h in body.find_all("h2")]
+    assert headings == [
+        "University exams (1)",
+        "Compiled scans (1)",
+        "Homework sets (1)",
+        "Textbooks (1)",
+    ]
+
+    links = LinkCollector()
+    links.feed((work / "build" / "quarto" / "_site" / "exams.html").read_text())
+    assert {href for href in links.hrefs if href.startswith("exam/")} == {
+        "exam/SRC-UGA-FIX.html",
+        "exam/SRC-NEILNOTES.html",
+        "exam/SRC-HW.html",
+        "exam/SRC-DUMMIT.html",
+    }
+
+
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
 

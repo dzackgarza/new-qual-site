@@ -520,7 +520,7 @@ def page_document(
       <div class="site-links">
         <a href="{prefix}problems.html">Browse</a>
         <a href="{prefix}generate.html">Generate</a>
-        <a href="{prefix}exams.html">Exams</a>
+        <a href="{prefix}exams.html">Sources</a>
         <a href="{prefix}guides.html">Guides</a>
         <a href="{prefix}wiki/index.html">Wiki</a>
       </div>

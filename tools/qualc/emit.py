@@ -1851,18 +1851,46 @@ def problem_browser_page(
     ]
 
 
-def link_list_page(
+# Every source kind a collection can declare, in the order a reader meets them,
+# with the heading each one is listed under. A kind absent here would go
+# unlisted, so the page checks the set against the catalog and fails the build.
+SOURCE_KIND_HEADINGS = {
+    "university-exam": "University exams",
+    "compilation": "Compiled scans",
+    "homework": "Homework sets",
+    "textbook": "Textbooks",
+}
+
+
+def source_index_page(
     con: sqlite3.Connection,
-    title: str,
-    lede: str,
-    rows: list[sqlite3.Row],
-    base: str,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    return {"title": title}, [
-        pf.Para(*_inlines(lede, inline_cache)),
-        pf.BulletList(*[pf.ListItem(_link(row, inline_cache, base)) for row in rows]),
+    """Every collection the corpus draws from, under the kind of thing it is.
+
+    The page listed only the 338 sittings. The other 43 -- 20 compiled scans, 17
+    homework sets, 6 textbooks -- had no listing anywhere, and the largest
+    collection on the site, Munkres with 586 problems, was among them: a reader
+    reached it only from a problem card.
+    """
+    collections = _rows(
+        con,
+        "select c.*, s.source_kind from cards c join sources s on s.id=c.id"
+        " left join exam_sources e on e.id=s.id"
+        f" order by e.institution, s.year, {TERM_RANK}, e.area, c.title, c.id",
+    )
+    unlisted = {row["source_kind"] for row in collections} - set(SOURCE_KIND_HEADINGS)
+    if unlisted:
+        raise ValueError(f"source kinds with no heading on the source index: {sorted(unlisted)}")
+
+    blocks: list[pf.Block] = [
+        pf.Para(*_inlines(f"Every collection the corpus draws problems from: {len(collections)} in all.", inline_cache)),
     ]
+    for kind, heading in SOURCE_KIND_HEADINGS.items():
+        listed = [row for row in collections if row["source_kind"] == kind]
+        blocks.append(pf.Header(pf.Str(f"{heading} ({len(listed)})"), level=2))
+        blocks.append(pf.BulletList(*[pf.ListItem(_link(row, inline_cache, "")) for row in listed]))
+    return {"title": "Sources"}, blocks
 
 
 # --- project ----------------------------------------------------------------
@@ -1876,7 +1904,7 @@ QUARTO_YML = {
                 {"href": "index.qmd", "text": "Home"},
                 {"href": "problems.qmd", "text": "Browse"},
                 {"href": "generate.qmd", "text": "Generate"},
-                {"href": "exams.qmd", "text": "Exams"},
+                {"href": "exams.qmd", "text": "Sources"},
                 {"href": "guides.qmd", "text": "Guides"},
                 {"href": "wiki/index.qmd", "text": "Wiki"},
             ]
@@ -2280,7 +2308,7 @@ def project(
             "problems.",
             ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
-            "Past exams.",
+            f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
         ]
     )
     inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
@@ -2393,17 +2421,7 @@ def project(
     )
     pages.append(
         (
-            link_list_page(
-                con,
-                "Exams",
-                "Past exams.",
-                _rows(
-                    con,
-                    f"select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, {TERM_RANK}, e.area, c.id",
-                ),
-                "",
-                inline_cache,
-            ),
+            source_index_page(con, inline_cache),
             out / "exams.qmd",
             StandardPage(),
         ),
