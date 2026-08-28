@@ -2478,7 +2478,7 @@ def project(
         pages.append(
             (
                 collection_page(con, src, inline_cache),
-                out / src['route'] / f"{src['id']}.qmd",
+                out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(),
             )
         )

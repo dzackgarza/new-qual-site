@@ -1120,8 +1120,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   A source kind with no heading fails the build rather than going unlisted.
 
 - [x] Move the textbook, homework, and compilation collections off the `exam/` URL prefix, or rename the prefix.
-  Moved, per the owner's decision: the 338 sittings keep `exam/` and the other 43 are under `source/`.
-  The route is decided once, where the card's kind and its source kind are both in hand, and carried on the catalog row.
+  Moved, per the owner's decision: the 338 sittings keep `exam/` and the other 43 are under `source/`. The route is decided once, where the card's kind and its source kind are both in hand, and carried on the catalog row.
   Four places used to recompute it from `kind` alone.
 
 - [x] Group and filter `exams.html`. It is one flat list of 338 links: no headings, no filters, no counts, no marker for which exams have solutions.
