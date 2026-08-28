@@ -1153,9 +1153,12 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Fixed: the folder's own page is its summary.
   A link is interactive content, so clicking it follows it and the disclosure marker still toggles.
 
-- [ ] Order section contents by subject, not by filename prefix.
+- [x] Order section contents by subject, not by filename prefix.
   Groups reads: Groups, Algebra Group and Ring Theory Resources, Notation, Basics, Actions, Counting theorems, Sylow Theorems, Classification, Series.
   A reader who opens the subject meets a references page first.
+  Fixed: the six algebra reference pages carried `order: 0` from their `00_` filenames and now sort last in their folders.
+  Groups reads Notation, Basics, Actions, Counting theorems, Sylow Theorems, Classification, Series, Resources.
+  Every other `order: 0` page in the wiki is a preface, notation, or definitions page, and is first because it belongs first.
 
 - [ ] Replace the paragraph-of-links section indexes with lists.
   `wiki/10-algebra/08-quals/index.html` is one paragraph of 20 comma-separated links.

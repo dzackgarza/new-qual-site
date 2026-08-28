@@ -1,5 +1,5 @@
 ---
-order: 0
+order: 90
 title: Algebra Group and Ring Theory Resources
 ---
 
