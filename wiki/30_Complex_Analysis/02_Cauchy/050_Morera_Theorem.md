@@ -42,7 +42,7 @@ This can be applied to series of the form $\sum_k f_k(z)$.
 
 In this section, take $\Omega$ to be a region symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$.
 Partition this set as $\Omega^+ \subseteq \HH, I \subseteq \RR, \Omega^- \subseteq \bar{\HH}$.
-[[T-SBGSC]]
+[[T-5SKNT]]
 
 ::: {.proof title="Symmetry principle, by Morera"}
 The glued function $f$ is holomorphic on $\Omega^\pm$ by hypothesis, so it remains to check holomorphy along $I$.

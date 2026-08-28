@@ -30,7 +30,7 @@ Closed path integrals of holomorphic functions vanish.
 ![image_2021-05-27-16-56-52](../../../../assets/assets/figures/image_2021-05-27-16-56-52.png)
 
 :::
-[[T-M332P]]
+[[T-22RQZ]]
 
 :::{.proof title="of Cauchy's inequality"}
 \envlist

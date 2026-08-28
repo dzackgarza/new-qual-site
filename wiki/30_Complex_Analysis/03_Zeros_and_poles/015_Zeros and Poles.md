@@ -70,7 +70,7 @@ This is valid for $z\neq z_0$, but the right-hand side is analytic. (?)
 
 ![](../../../../assets/assets/figures/2021-10-29_01-31-06.png)
 
-[[T-TNR7B]]
+[[T-DB3DO]]
 
 [[D-65VIK]]
 

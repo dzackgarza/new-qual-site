@@ -101,7 +101,7 @@ The issue is the **branch point** or **branch singularity** at $z=0$.
 
 :::
 
-[[T-FWT3W]]
+[[T-E76LX]]
 
 :::{.fact}
 The complex exponential is $2\pi i$ periodic, and invertible on any horizontal strip of the form

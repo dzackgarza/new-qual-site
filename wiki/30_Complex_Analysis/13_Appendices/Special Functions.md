@@ -19,7 +19,7 @@ f(x) = {1\over 2\pi}\int_\RR e^{i\xi x} \hat{f}(\xi) \dxi
 
 ## The Gamma Function
 
-[[D-TKGVZ]]
+[[D-Q3MYK]]
 
 :::{.remark}
 Some interesting properties of $\Gamma$:

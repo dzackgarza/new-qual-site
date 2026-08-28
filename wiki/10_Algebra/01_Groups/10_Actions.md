@@ -52,7 +52,7 @@ See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uc
 
 ## Group Actions
 
-[[D-BVOUL]]
+[[D-3T6O2]]
 
 :::{.remark title="Reminder of notation"}
 Note: a reminder of notation:[[00_Notation_Algebra]].

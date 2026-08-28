@@ -66,7 +66,7 @@ Its complement is a union of open intervals, and can't contain an interval since
 
 ## Smallness for functions
 
-[[PR-K5573]]
+[[PR-HRAOC]]
 
 - **Arzela - Ascoli 1**:
 If $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\mathcal{F}$ is totally bounded in the uniform metric and its closure $\overline{\mathcal{F}} \in C(X)$ in the space of continuous functions is compact.

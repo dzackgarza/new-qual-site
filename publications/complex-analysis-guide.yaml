@@ -119,9 +119,9 @@ sections:
       - ref: D-E7A5W
       - ref: PR-37QA5
       - ref: PR-JKE6C
-      - ref: D-Z5BD2
+      - ref: D-OAFF5
       - ref: PR-TVPCM
-      - ref: D-G4ITR
+      - ref: D-CFBSA
       - ref: PR-K57J6
       - ref: D-V6UQJ
       - ref: PR-QNDSD
@@ -197,7 +197,7 @@ sections:
       - ref: T-2OVCI
       - ref: T-6DEUH
       - ref: T-GROTS
-      - ref: T-M332P
+      - ref: T-22RQZ
       - ref: T-QHIHJ
       - ref: T-5BLYU
       - ref: T-BYNL5
@@ -247,7 +247,7 @@ sections:
       - ref: PR-EWOP5
       - ref: T-4XPWL
       - ref: D-IWIA5
-      - ref: D-TUAYD
+      - ref: D-BQLJV
       - ref: T-ZZJDP
       - ref: D-AUD6K
       - ref: D-C3JIU

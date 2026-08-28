@@ -54,7 +54,7 @@ Uniform $\implies$ pointwise $\implies$ almost everywhere, but in general non of
 
 [[PR-TC76W]]
 
-[[FE-LJRG2]] [[FE-YCVIU]]
+[[FE-LJRG2]] [[FE-LJRG2]]
 
 [[FE-SWUGG]]
 

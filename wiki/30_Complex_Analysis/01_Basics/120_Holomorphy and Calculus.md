@@ -92,7 +92,7 @@ OTOH,
 
 :::
 
-[[D-NFZRR]]
+[[D-E7A5W]]
 
 :::{.example title="Holomorphic vs non-holomorphic"}
 \envlist
@@ -110,7 +110,7 @@ which is a complex number that depends on $\theta$ and is thus not a single valu
 
 :::
 
-[[D-YEMBE]]
+[[D-KLTBZ]]
 
 [[PR-Y36BS]]
 

@@ -14,7 +14,7 @@ The prefix "locally blah" almost always means that for every $x\in X$, there exi
 
 [[D-WKURJ]]
 
-[[D-3KS2F]] [[D-EHUCS]] [[D-KW52R]]
+[[D-3KS2F]] [[D-2GCTV]] [[D-KW52R]]
 
 ::: {.remark}
 Is this actually a poset relation?
@@ -88,7 +88,7 @@ Fails reflexivity.
 
 [[FD-2XUJ5]]
 
-[[D-B3BVQ]]
+[[D-6JJJU]]
 
 [[D-7JSLO]]
 
@@ -149,7 +149,7 @@ Any nonempty space retracts to a point via a constant map.
 
 [[FD-DXTBN]]
 
-[[D-UHM6M]]
+[[D-23NTI]]
 
 [[D-23NTI]]
 

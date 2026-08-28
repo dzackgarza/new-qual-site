@@ -158,21 +158,21 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
 
 ### Matrix Groups
 
-[[D-LIIHP]]
+[[D-J5AAX]]
 
 [[PR-UQ3XJ]]
 
 [[D-P5D3T]]
 
-[[D-BAD4E]]
+[[D-3ZPR7]]
 
 [[D-GY7ZN]]
 
-[[D-XQ3I5]]
+[[D-QZ2LQ]]
 
-[[D-VXJUY]]
+[[D-MCUTE]]
 
-[[D-DQPGU]]
+[[D-3V3SP]]
 
 ## Minimal / Characteristic Polynomials
 

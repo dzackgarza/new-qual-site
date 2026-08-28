@@ -168,11 +168,11 @@ Thus
 [[PR-EMFAN]]
 
 ### Delbar and the Laplacian
-[[D-Z5BD2]]
+[[D-OAFF5]]
 [[PR-TVPCM]]
 
 ### Harmonic Functions and the Laplacian
-[[D-G4ITR]]
+[[D-CFBSA]]
 [[PR-JKE6C]]
 [[PR-K57J6]]
 
@@ -209,7 +209,7 @@ v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 ![](../../../../assets/assets/figures/2021-10-28_21-22-12.png)
 ![](../../../../assets/assets/figures/2021-10-28_21-22-35.png)
 [[T-GROTS]]
-[[PR-RE2B2]]
+[[PR-QNDSD]]
 
 :::{.remark}
 By an application of the Cauchy integral formula (see S&S 7.1) if $f$ is holomorphic on $D_R(z_0)$ there is a formula for all $k\geq 0$ and all $0<r<R$:
@@ -265,7 +265,7 @@ So it suffices to bound the latter sum:
 .\]
 
 :::
-[[T-RRB7M]]
+[[T-B7YTE]]
 [[L-MYZOX]]
 
 :::{.example title="application of Abel's theorem"}

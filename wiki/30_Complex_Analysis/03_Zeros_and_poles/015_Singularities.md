@@ -47,7 +47,7 @@ Isolated singularities can also be classified by their limiting behavior near th
 
 ## Removable
 
-[[D-TUAYD]]
+[[D-BQLJV]]
 
 [[FD-BRJK5]] [[FD-CCVUQ]]
 

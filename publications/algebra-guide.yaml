@@ -1547,18 +1547,18 @@ sections:
       rather than dropped."
     items:
       - ref: D-J5AAX
-      - ref: D-LIIHP
+      - ref: D-J5AAX
       - ref: D-P5D3T
-      - ref: D-VWRBP
+      - ref: D-P5D3T
       - ref: D-3ZPR7
-      - ref: D-BAD4E
+      - ref: D-3ZPR7
       - ref: D-GY7ZN
       - ref: D-QZ2LQ
-      - ref: D-XQ3I5
+      - ref: D-QZ2LQ
       - ref: D-MCUTE
-      - ref: D-VXJUY
+      - ref: D-MCUTE
       - ref: D-3V3SP
-      - ref: D-DQPGU
+      - ref: D-3V3SP
       - ref: PR-OYP6J
       - ref: PR-UQ3XJ
       - ref: PR-GXII2
@@ -1750,11 +1750,11 @@ sections:
       - ref: T-SJCF7
       - ref: PR-UFVPY
       - ref: PR-EDD7U
-      - ref: PR-FYXFF
+      - ref: PR-EDD7U
       - ref: D-JIGMN
       - ref: D-JRPTK
       - ref: D-HJR7M
-      - ref: D-JY5KT
+      - ref: D-HJR7M
       - ref: FD-XT6HD
       - ref: PR-TI6YA
       - ref: PR-4GQIZ
@@ -1762,9 +1762,9 @@ sections:
       - ref: PR-OF7ZW
       - ref: L-CD6QT
       - ref: PR-5A2W4
-      - ref: PR-IV6RB
+      - ref: PR-5A2W4
       - ref: PR-K6MMW
-      - ref: PR-MGRGF
+      - ref: PR-K6MMW
       - query:
           kind: problem
           topics:

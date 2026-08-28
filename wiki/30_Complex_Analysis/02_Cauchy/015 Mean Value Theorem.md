@@ -4,7 +4,7 @@ order: 15
 
 # The mean value theorem
 
-[[T-CP7OP]]
+[[T-5BLYU]]
 
 :::{.proof title="Circle and area means"}
 Parameterize $\abs{z-z_0}=r$ by $z=z_0+re^{i\theta}$.

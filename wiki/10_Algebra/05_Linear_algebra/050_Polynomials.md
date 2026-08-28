@@ -14,7 +14,7 @@ order: 50
 
 ## Minimal / Characteristic Polynomials
 
-[[PR-FYXFF]]
+[[PR-EDD7U]]
 
 :::{.remark}
 Fix some notation:

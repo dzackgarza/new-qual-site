@@ -65,7 +65,7 @@ where each group with $a_k$ has $2^k$ terms.
 
 [[PR-4RWAG]]
 
-[[T-EWZ5U]]
+[[T-2R7PC]]
 
 ## Uniform Convergence
 
