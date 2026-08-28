@@ -1082,3 +1082,115 @@ Owner: [issue #1](https://github.com/dzackgarza/new-qual-site/issues/1)
 - [ ] Update issue #1 with every remaining open requirement.
 
 - [ ] Keep issue #2 open until its full mathematics program is complete.
+
+## 9. Repair site information architecture
+
+Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
+on 2026-08-29. Each item states the surface that shows the defect.
+
+### Two subject hierarchies
+
+- [ ] State the difference between Guides and Wiki on both landing pages.
+  The header offers both. Both organise the same subjects.
+  Both hold pages titled `Algebra` and `Topology`.
+  `guides.html` is six bare links with no description.
+  `wiki/index.html` titles itself `Index`.
+  Guide pages link into the wiki. No wiki page links back.
+
+- [ ] Reconcile the four subject vocabularies.
+  Browse filter: Algebra, Applied Algebra, Complex Analysis, Prelim, Real
+  Analysis, Topology.
+  Generate: the same six in a different order.
+  Guides: drops Applied Algebra, adds Workshops.
+  Wiki: adds Applied Algebra and Archives, drops Workshops, says `Prelims`.
+  Workshops is a top-level subject in Guides and a subsection of every
+  subject in the wiki.
+
+### Collections
+
+- [ ] Give the 43 non-exam collections an index.
+  `exam/` holds 381 collection pages. `exams.html` lists 338.
+  The remainder are 6 textbooks, 17 homework sets, and 20 compiled scans.
+  `exam/SRC-TEXT-MUN00.html` (Munkres, 586 problems) is the largest
+  collection on the site and appears on no listing.
+  A reader reaches it only from a problem card, through `Sources`.
+
+- [ ] Move the textbook, homework, and compilation collections off the
+  `exam/` URL prefix, or rename the prefix.
+
+- [ ] Group and filter `exams.html`.
+  It is one flat list of 338 links: no headings, no filters, no counts, no
+  marker for which exams have solutions.
+  Browse exposes area, topic, institution, and year filters over the same
+  facets.
+
+- [ ] Sort exam sittings by term within a year.
+  The order is institution, year, area, then term alphabetically, so
+  `TAMU real-analysis Fall 2015` precedes `TAMU real-analysis Spring 2015`.
+
+### Findability
+
+- [ ] Rank title matches above body matches in search.
+  The query `compact` returns Cone, Cover, Cochain, Cocycle, Colimit,
+  Coproduct, Coboundary, Commutator, and three Continuity rows before
+  `Compactness` at rank 14. None of the first nine carry the word in the
+  title. The order tracks title length.
+
+- [ ] Name one canonical page per concept.
+  The query `Sylow` returns `Sylow Theorems` as a card, `Sylow Theorems` as
+  a wiki page, `Sylow theorems` as a problem, and `Sylow Theory` as a guide
+  page.
+  Across the site 375 titles are shared by 836 pages: 5 pages are titled
+  `Closed subsets of compact spaces are compact`, 4 `Cauchy's theorem`.
+  A search row separates them only by a small grey path.
+
+- [ ] Order and page the problem browser.
+  `problems.html` sorts 4921 problems by raw title string, so the page
+  opens with the formula-titled problems. It is one 2.5 MB page with no
+  pagination and no headings.
+
+### Wiki navigation
+
+- [ ] Stop rendering each folder twice in the sidebar.
+  The group label `Algebra` carries a first child link `Algebra`; the group
+  `Groups` carries a first child `Groups`. Identical text one line apart:
+  one expands, one navigates.
+
+- [ ] Order section contents by subject, not by filename prefix.
+  Groups reads: Groups, Algebra Group and Ring Theory Resources, Notation,
+  Basics, Actions, Counting theorems, Sylow Theorems, Classification,
+  Series. A reader who opens the subject meets a references page first.
+
+- [ ] Replace the paragraph-of-links section indexes with lists.
+  `wiki/10-algebra/08-quals/index.html` is one paragraph of 20
+  comma-separated links. It names seven topics twice, in title case and
+  again in lower case under `Extra drill`. The two sets are different pages.
+
+- [ ] Show the section boundary in the previous and next links.
+  From Algebra > Quals, `Previous` is `Final Exam`, in the Exercises
+  section.
+
+- [ ] Give breadcrumbs one meaning.
+  In the wiki a breadcrumb is the folder path
+  (`Algebra / Groups / Sylow Theorems`).
+  In a guide it is the prerequisite chain
+  (`Algebra / Preliminaries / Rings and Ideals / Modules / Linear Algebra`),
+  although the guide index presents those pages as a flat numbered list.
+  No crumb links up to the wiki or guides root.
+  On a subject landing page the breadcrumb is one item that repeats the
+  heading.
+
+### Dead ends
+
+- [ ] Repair nine collection-to-collection links.
+  `exam/SRC-UCSD-TOP-290QUALS.html` and `exam/SRC-RA-WORKSHOP.html` link to
+  sibling collections as `tag/SRC-*.html`. Those pages live at
+  `exam/SRC-*.html`. The links return 404.
+
+- [ ] Add a 404 page carrying the site header.
+  A missing page now shows the bare server error with no navigation.
+
+- [ ] Replace the card-count table on the landing page with orientation.
+  A 14-row inventory (Proofs 7, Hints 1, Strategies 6) sits above the one
+  sentence that tells a reader where to start. The page never explains
+  Guides against Wiki.
