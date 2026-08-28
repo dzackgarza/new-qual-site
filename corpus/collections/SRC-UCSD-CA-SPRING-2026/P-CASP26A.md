@@ -12,6 +12,10 @@ classification:
   - Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: problem
@@ -20,4 +24,23 @@ $$
 g(z) := \sum_{n=0}^\infty \frac{1}{n!} f^{(n)}(z)
 $$
 defines an entire function $g$.
+:::
+
+::: {.solution}
+**Goal.** Show $g(z) = \sum_{n=0}^\infty \frac{1}{n!} f^{(n)}(z)$ is entire.
+
+<1>1. $f$ is entire, so it has a Taylor expansion $f(w) = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}(w - z)^n$ valid for all $w$ (entire).
+Proof: an entire function has a Taylor series with infinite radius of convergence about every point.
+
+<1>2. $g(z) = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!} = f(z + 1)$.
+<2>1. Evaluate the Taylor series of $f$ at $w = z + 1$: $f(z+1) = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}(1)^n = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!}$.
+Proof: substitute $w = z + 1$ into the Taylor expansion about $z$.
+<2>2. Hence $g(z) = f(z+1)$.
+Proof: <1>2.1.
+
+<1>3. $g(z) = f(z+1)$ is entire.
+Proof: the composition of the entire function $f$ with the affine map $z \mapsto z + 1$ is entire.
+
+<1>4. Q.E.D.
+Proof: <1>3 shows $g$ is entire.
 :::
