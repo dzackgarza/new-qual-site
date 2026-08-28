@@ -1010,6 +1010,13 @@ div.panel > ul {
   text-align: right;
 }
 
+/* Reading runs on past the end of a folder, so a next or previous link often
+   lands somewhere else. This says where. */
+.reading-order .reading-section {
+  color: var(--muted);
+  font-size: var(--label);
+}
+
 @media (max-width: 64rem) {
   .page-layout.subject-layout {
     display: block;

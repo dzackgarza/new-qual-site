@@ -58,10 +58,17 @@ class NavigationLink:
 
 @dataclass(frozen=True)
 class ReadingLink:
-    """Somewhere reading goes next. Always a page: a directory is not readable."""
+    """Somewhere reading goes next. Always a page: a directory is not readable.
+
+    Reading runs on past the end of a folder, so the link's place in the tree
+    travels with it: that is what lets the previous and next links say which
+    section they land in when it is not the one being read.
+    """
 
     title: str
     target: PageTarget
+    key: str
+    parent: NavigationParent
 
     @staticmethod
     def of(link: NavigationLink) -> ReadingLink:
@@ -69,7 +76,7 @@ class ReadingLink:
             case LevelOnly():
                 raise ValueError(f"reading order points at a directory: {link.key}")
             case PageTarget() as target:
-                return ReadingLink(title=link.title, target=target)
+                return ReadingLink(title=link.title, target=target, key=link.key, parent=link.parent)
 
 
 @dataclass(frozen=True)
@@ -224,9 +231,41 @@ def _reading_navigation_link(
     relative_path: Path,
     link: ReadingLink,
     relation: Literal["prev", "next"],
+    navigation: PublicationNavigation,
 ) -> str:
     target = escape(_relative_url(relative_path, link.target.route))
-    return f'<a href="{target}" rel="{relation}">{escape(link.title)}</a>'
+    anchor = f'<a href="{target}" rel="{relation}">{escape(link.title)}</a>'
+    return anchor + _crossing(link, navigation)
+
+
+def _crossing(link: ReadingLink, navigation: PublicationNavigation) -> str:
+    """Names the section a reading link lands in, when it leaves this one.
+
+    Reading order runs on past the end of a folder. From Algebra > Quals the
+    previous page was `Final Exam`, three folders away under Exercises, and the
+    link said only `Final Exam`.
+
+    Silent between a page and its own siblings, its own folder, and the pages
+    inside it. None of those is a crossing.
+    """
+    by_key = {node.key: node for node in navigation.links}
+    here = by_key[navigation.current_key].parent
+    if link.parent in (here, NodeParent(navigation.current_key)) or NodeParent(link.key) == here:
+        return ""
+    trail: list[str] = []
+    cursor = link.parent
+    while True:
+        match cursor:
+            case RootParent():
+                break
+            case NodeParent(key=parent_key):
+                trail.append(by_key[parent_key].title)
+                cursor = by_key[parent_key].parent
+            case _ as unreachable:
+                assert_never(unreachable)
+    if not trail:
+        return ""
+    return f'<span class="reading-section">in {escape(" / ".join(reversed(trail)))}</span>'
 
 
 def _subject_tree(
@@ -361,6 +400,7 @@ def _reading_order(
                     relative_path,
                     following,
                     "next",
+                    navigation,
                 )
                 + "</span>"
             ]
@@ -371,6 +411,7 @@ def _reading_order(
                     relative_path,
                     previous,
                     "prev",
+                    navigation,
                 )
                 + "</span>",
                 '<span class="reading-following"><small>Next</small>'
@@ -378,6 +419,7 @@ def _reading_order(
                     relative_path,
                     following,
                     "next",
+                    navigation,
                 )
                 + "</span>",
             ]
@@ -388,6 +430,7 @@ def _reading_order(
                     relative_path,
                     previous,
                     "prev",
+                    navigation,
                 )
                 + "</span>"
             ]

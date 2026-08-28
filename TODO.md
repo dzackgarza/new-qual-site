@@ -1164,8 +1164,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   `wiki/10-algebra/08-quals/index.html` is one paragraph of 20 comma-separated links.
   It names seven topics twice, in title case and again in lower case under `Extra drill`. The two sets are different pages.
 
-- [ ] Show the section boundary in the previous and next links.
+- [x] Show the section boundary in the previous and next links.
   From Algebra > Quals, `Previous` is `Final Exam`, in the Exercises section.
+  Fixed: a link that leaves the folder being read names the trail it lands in -- `Final Exam` now reads `in Algebra / Exercises / PSets / Final`.
+  Siblings, the folder above, and the pages inside the folder page being read say nothing extra, because none of those is a crossing.
 
 - [ ] Give breadcrumbs one meaning.
   In the wiki a breadcrumb is the folder path (`Algebra / Groups / Sylow Theorems`). In a guide it is the prerequisite chain (`Algebra / Preliminaries / Rings and Ideals / Modules / Linear Algebra`), although the guide index presents those pages as a flat numbered list.

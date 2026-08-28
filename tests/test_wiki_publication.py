@@ -871,3 +871,72 @@ def test_a_footnote_reaches_the_page_as_a_sidenote(tmp_path: Path) -> None:
     source = (work / "build" / "quarto" / "tag" / "PRB-ASIDE.qmd").read_text()
     assert "[^1]: Using the argument principle." in source
     assert "sidenote" not in source
+
+
+class ReadingOrderParser(HTMLParser):
+    """The previous and next links under a wiki page, with where each lands."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self._in_order = False
+        self._collect: list[str] | None = None
+        self.entries: list[tuple[str, str]] = []
+        self._title = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        classes = dict(attrs).get("class", "") or ""
+        if tag == "nav" and "reading-order" in classes:
+            self._in_order = True
+        elif self._in_order and tag in {"a", "span"} and (tag == "a" or "reading-section" in classes):
+            self._collect = []
+
+    def handle_data(self, data: str) -> None:
+        if self._collect is not None:
+            self._collect.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self._in_order:
+            return
+        if tag == "a" and self._collect is not None:
+            self._title = "".join(self._collect).strip()
+            self.entries.append((self._title, ""))
+            self._collect = None
+        elif tag == "span" and self._collect is not None:
+            self.entries[-1] = (self._title, "".join(self._collect).strip())
+            self._collect = None
+        elif tag == "nav":
+            self._in_order = False
+
+
+def test_a_reading_link_that_leaves_the_folder_says_where_it_lands(tmp_path: Path) -> None:
+    """Reading order runs on past the end of a folder.
+
+    From Algebra > Quals the previous page was `Final Exam`, three folders away
+    under Exercises, and the link said only `Final Exam`. A link to a sibling
+    says nothing extra: that is not a crossing.
+    """
+    work = fixture_repo(tmp_path)
+    algebra = work / "wiki" / "algebra"
+    (algebra / "exercises").mkdir(parents=True)
+    (algebra / "quals").mkdir()
+    (algebra / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (algebra / "exercises" / "index.md").write_text(wiki_md("# Exercises\n", order=1, title="Exercises"))
+    (algebra / "exercises" / "sheet-one.md").write_text(wiki_md("# Sheet One\n", order=1))
+    (algebra / "exercises" / "sheet-two.md").write_text(wiki_md("# Sheet Two\n", order=2))
+    (algebra / "quals" / "index.md").write_text(wiki_md("# Quals\n", order=2, title="Quals"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site" / "wiki" / "algebra"
+
+    # Reading Exercises: back to the folder itself, on to a sibling sheet.
+    sheet = ReadingOrderParser()
+    sheet.feed((site / "exercises" / "sheet-one.html").read_text())
+    assert sheet.entries == [("Exercises", ""), ("Sheet Two", "")]
+
+    # Quals is the next folder along, and the page before it is three levels
+    # away under Exercises.
+    quals = ReadingOrderParser()
+    quals.feed((site / "quals" / "index.html").read_text())
+    assert quals.entries == [("Sheet Two", "in Algebra / Exercises")]
