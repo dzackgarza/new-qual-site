@@ -1089,12 +1089,16 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 
 ### Two subject hierarchies
 
-- [ ] State the difference between Guides and Wiki on both landing pages.
+- [x] State the difference between Guides and Wiki on both landing pages.
   The header offers both.
   Both organise the same subjects.
   Both hold pages titled `Algebra` and `Topology`. `guides.html` is six bare links with no description.
   `wiki/index.html` titles itself `Index`. Guide pages link into the wiki.
   No wiki page links back.
+  Fixed: each page says what it is and links to the other.
+  A guide is one ordered path read front to back; the wiki is notes filed to be looked up.
+  `guides.html` shows each guide's own lede, which the manifests already carried and the page showed none of.
+  `wiki/index.html` is titled `Wiki`. Whether the site should carry both hierarchies at all is the next item, and still open.
 
 - [ ] Reconcile the four subject vocabularies.
   Browse filter: Algebra, Applied Algebra, Complex Analysis, Prelim, Real Analysis, Topology.

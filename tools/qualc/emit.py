@@ -73,6 +73,7 @@ from .static_site import (
     write_search_index,
 )
 from .wiki import (
+    SITE_PAGES,
     WIKI_BATCH_SIZE,
     WikiPage,
     incoming_wiki_links,
@@ -1925,6 +1926,13 @@ SOURCE_KIND_HEADINGS = {
 }
 
 
+GUIDES_LEDE = (
+    "One ordered path per subject, built from the corpus. "
+    "A guide is read front to back: each section assumes only the sections above it, and the study path in the margin is that order. "
+    "The [wiki](wiki/index.html) covers the same subjects as written notes, filed to be looked up rather than read through."
+)
+
+
 def source_index_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
@@ -2128,6 +2136,11 @@ def _link_targets(
         targets[key] = target
         targets[target.as_posix()] = target
 
+    # A wiki page may point at the rest of the site, and a page three folders
+    # deep cannot spell the way back itself. `SITE_PAGES` is the set the wiki
+    # resolver lets through; here is where each one lands.
+    for name in SITE_PAGES:
+        add(name, Path(name))
     for card in _rows(con, "select id, kind from cards"):
         add(card["id"], Path(_card_route(card)) / f"{card['id']}.html")
     for guide in guides:
@@ -2417,6 +2430,7 @@ def project(
             ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
             f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
+            GUIDES_LEDE,
         ]
     )
     inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
@@ -2539,19 +2553,19 @@ def project(
             (
                 {"title": "Guides"},
                 [
+                    pf.Para(*_inlines(GUIDES_LEDE, inline_cache)),
+                    # Each guide states what it is in its manifest and the list
+                    # showed none of it: six bare subject names, the same six
+                    # the wiki offers, with nothing to choose between them.
                     pf.BulletList(
                         *[
                             pf.ListItem(
-                                pf.Plain(
-                                    pf.Link(
-                                        pf.Str(guide.title),
-                                        url=f"guide/{guide.id}.html",
-                                    )
-                                )
+                                pf.Plain(pf.Link(pf.Str(guide.title), url=f"guide/{guide.id}.html")),
+                                pf.Para(*_inlines(guide.lede, inline_cache)),
                             )
                             for guide in guides
                         ]
-                    )
+                    ),
                 ],
             ),
             out / "guides.qmd",

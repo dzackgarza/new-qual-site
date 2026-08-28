@@ -471,6 +471,14 @@ def _asset_target(raw: str, assets: AssetCatalog) -> Path:
     return Path("assets") / source.relative_to(assets.root)
 
 
+# The pages of the site that are neither cards nor wiki pages. A wiki page that
+# names one is pointing out of the wiki; without this the resolver reads the
+# name as a missing wiki page and fails the build. Written site-root-relative,
+# which is the form `write_page` turns into a URL from wherever the page sits.
+# `index.html` is not here: the wiki has one of its own.
+SITE_PAGES = frozenset({"problems.html", "generate.html", "exams.html", "guides.html"})
+
+
 def _canonical_target(
     page: WikiPage,
     raw: str,
@@ -485,6 +493,8 @@ def _canonical_target(
     if parsed.scheme or parsed.netloc or raw.startswith(("#", "data:", "mailto:")):
         return raw
     path = parsed.path
+    if path in SITE_PAGES:
+        return path
     if path in card_routes:
         # Exact card id: dotted ids like E-SS1.EX-19 are card ids, not paths,
         # so stem-stripping below would truncate them at the last dot.

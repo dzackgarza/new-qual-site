@@ -1009,3 +1009,28 @@ def test_a_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
     root = BreadcrumbParser()
     root.feed((site / "index.html").read_text())
     assert root.crumbs == []
+
+
+def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
+    """The wiki index says what the guides are for, and links to them.
+
+    Every href in a wiki page was read as a card id, an asset, or a wiki page,
+    so naming a site page failed the build as a missing wiki page. A page three
+    folders down cannot spell the way back itself, so the name is written from
+    the site root and the page writer makes it relative.
+    """
+    work = fixture_repo(tmp_path)
+    deep = work / "wiki" / "algebra" / "groups"
+    deep.mkdir(parents=True)
+    (work / "wiki" / "algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (deep / "index.md").write_text(wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    body = LinkCollector()
+    body.feed((site / "wiki" / "algebra" / "groups" / "index.html").read_text())
+    assert "../../../guides.html" in body.hrefs
+    assert "../../../problems.html" in body.hrefs
+    assert (site / "guides.html").exists()
