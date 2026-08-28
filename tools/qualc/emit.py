@@ -364,16 +364,53 @@ def _figure(
     ]
 
 
+def _sidenote(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Inline] | None:
+    """A footnote as a sidenote, in the margin beside the line that raises it.
+
+    Every note in the corpus is a technique aside on the sentence it hangs from
+    -- "Using the argument principle", "Keyhole contour" -- and a numbered list
+    at the foot of the page puts that a scroll away from the step it explains.
+    Tufte's arrangement keeps it level with its own line.
+
+    The markdown written beside the HTML keeps real footnotes: this walk runs
+    on the way to the page, not on the way to the source.
+    """
+    del document
+    if not isinstance(element, pf.Note):
+        return None
+    match list(element.content):
+        case []:
+            # Five footnote definitions in the corpus have nothing after them.
+            # A mark pointing at no text is noise on the page, and inventing the
+            # note is not this walk's business: the mark goes and #59 records
+            # the missing asides.
+            return []
+        case [pf.Para() as paragraph]:
+            note = list(paragraph.content)
+        case _:
+            raise ValueError("a sidenote is one paragraph; this note is not")
+    return [
+        pf.RawInline('<span class="sidenote-number"></span>', format="html"),
+        pf.Span(*note, classes=["sidenote"]),
+    ]
+
+
 def _prepare_html(
     element: pf.Element,
     document: pf.Doc,
-) -> pf.Element | list[pf.Block] | None:
+) -> pf.Element | list[pf.Block] | list[pf.Inline] | None:
     compiled = _compile_tikzcd(element, document)
     if compiled is not None:
         return compiled
     figure = _figure(element, document)
     if figure is not None:
         return figure
+    sidenote = _sidenote(element, document)
+    if sidenote is not None:
+        return sidenote
     return _reveal(element, document)
 
 

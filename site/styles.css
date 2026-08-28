@@ -351,6 +351,60 @@ mjx-container[display="true"] {
   max-width: 100%;
 }
 
+/* A footnote is a sidenote: the note sits in the margin beside the line that
+   raises it. Running text stops at the measure while the column runs to 52rem,
+   so the margin is the space the prose already leaves -- the note costs no
+   width and moves nothing. Both the mark and the note draw their number from
+   one counter, so nothing has to thread an index through the AST. */
+.page-body {
+  counter-reset: sidenote;
+}
+
+.sidenote-number {
+  counter-increment: sidenote;
+}
+
+.sidenote-number::after {
+  content: counter(sidenote);
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--accent);
+}
+
+.sidenote {
+  float: right;
+  clear: right;
+  width: 12rem;
+  margin-right: -13.5rem;
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  font-size: var(--label);
+  line-height: 1.45;
+  text-align: left;
+}
+
+.sidenote::before {
+  content: counter(sidenote) " ";
+  color: var(--accent);
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+/* Narrow enough that the column is the measure and there is no margin to sit
+   in: the note follows its paragraph instead of floating beside it. */
+@media (max-width: 64rem) {
+  .sidenote {
+    float: none;
+    width: auto;
+    margin: 0.5rem 0 0.9rem 1.5rem;
+    display: block;
+    border-left: 2px solid var(--line);
+    padding-left: 0.75rem;
+  }
+}
+
 /* A display formula inherits the measure from whatever holds it, and a formula
    is not prose: three equations on the conformal-maps page were wider than the
    54ch a paragraph gets and were reachable only by scrolling them sideways.

@@ -15,7 +15,6 @@ review: draft
 
 :::{.theorem}
 Suppose $X = U_{1} \union U_{2}$ where $U_1, U_2$, and $U \da U_{1} \intersect U_{2} \neq \emptyset$ are open and path-connected 
-[^path_connected_necessary]
 
 
 , and let $x_0 \in U$. 
@@ -99,4 +98,3 @@ Note that the hypothesis that $U_1 \intersect U_2$ is path-connected is necessar
 
 :::
 
-[^path_connected_necessary]:

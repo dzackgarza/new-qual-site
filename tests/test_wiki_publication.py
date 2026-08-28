@@ -815,3 +815,55 @@ def test_a_solution_names_its_method_before_it_is_opened(tmp_path: Path) -> None
     card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRB-TWOWAYS.html").read_text()
     assert "<summary>Solution: Using Morera</summary>" in card_page
     assert "<summary>Solution: Using limit definition</summary>" in card_page
+
+
+FOOTNOTED_CARD = """---
+schema: qual/card@1
+id: PRB-ASIDE
+kind: problem
+title: The open mapping theorem for holomorphic functions
+classification:
+  areas:
+  - complex-analysis
+  topics:
+  - Open Mapping Theorem
+relations: []
+review: draft
+---
+
+::: problem
+Show that a non-constant holomorphic map is open.
+:::
+
+::: solution
+Let $f: U\\to \\CC$.^[Using the argument principle.]
+Pick $w_0$ in the image and bound $f$ below on a small circle.
+:::
+"""
+
+
+def test_a_footnote_reaches_the_page_as_a_sidenote(tmp_path: Path) -> None:
+    """The note belongs beside the line that raises it, not in a list at the foot.
+
+    Every note in the corpus is a technique aside on its own sentence -- "Using
+    the argument principle", "Keyhole contour" -- and pandoc's arrangement puts
+    that a scroll away from the step it explains. The markdown written beside
+    the HTML keeps the real footnote: only the page is rearranged.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "PRB-ASIDE.md").write_text(FOOTNOTED_CARD)
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    # Pandoc's HTML writer wraps long lines, so the attribute can land on the
+    # line after the tag it belongs to.
+    card_page = re.sub(r"\s+", " ", (work / "build" / "quarto" / "_site" / "tag" / "PRB-ASIDE.html").read_text())
+    assert '<span class="sidenote-number"></span><span class="sidenote">Using the argument principle.</span>' in card_page
+    assert 'class="footnotes' not in card_page
+
+    # The markdown beside it keeps a real footnote -- reference style, which is
+    # what pandoc's markdown writer emits -- and no sidenote markup at all.
+    source = (work / "build" / "quarto" / "tag" / "PRB-ASIDE.qmd").read_text()
+    assert "[^1]: Using the argument principle." in source
+    assert "sidenote" not in source
