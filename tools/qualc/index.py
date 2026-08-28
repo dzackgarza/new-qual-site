@@ -13,7 +13,6 @@ from pathlib import Path
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .wiki import slug
 from .model import (
     AcademicTerm,
     Card,
@@ -27,6 +26,7 @@ from .model import (
     TextbookSource,
     YearOnly,
 )
+from .wiki import slug
 
 SCHEMA = """
 create table cards (
