@@ -17,8 +17,8 @@ review: reviewed
 ---
 
 ::: {.theorem}
-Write $\abs G=p^a m$ with $p\nmid m$, and let $n_p$ be the number of Sylow
-$p$-subgroups. Then
+Write $\abs G=p^a m$ with $p\nmid m$, and let $n_p$ be the number of Sylow $p$-subgroups.
+Then
 $$
 n_p\mid m,
 \qquad
@@ -29,6 +29,5 @@ $$
 for every Sylow $p$-subgroup $P$.
 :::
 
-The index formula is orbit-stabilizer for conjugation on the set of Sylow
-$p$-subgroups. Conjugacy makes that action transitive, while the fixed-point
-congruence gives $n_p\equiv1\pmod p$.
+The index formula is orbit-stabilizer for conjugation on the set of Sylow $p$-subgroups.
+Conjugacy makes that action transitive, while the fixed-point congruence gives $n_p\equiv1\pmod p$.

@@ -13,8 +13,7 @@ review: reviewed
 ---
 
 ::: {.definition}
-An action of a group $G$ on a set $X$ is a map $G\times X\to X$, written
-$(g,x)\mapsto g\cdot x$, such that
+An action of a group $G$ on a set $X$ is a map $G\times X\to X$, written $(g,x)\mapsto g\cdot x$, such that
 $$
 e\cdot x=x
 \qquad\text{and}\qquad
@@ -27,9 +26,9 @@ G\cdot x=\theset{g\cdot x: g\in G},
 \qquad
 G_x=\theset{g\in G:g\cdot x=x}.
 $$
-The fixed-point set is
-$X^G=\theset{x\in X:g\cdot x=x\text{ for every }g\in G}$.
+The fixed-point set is $X^G=\theset{x\in X:g\cdot x=x\text{ for every }g\in G}$.
 :::
 
-Orbits partition $X$. An action is transitive exactly when it has one orbit.
+Orbits partition $X$.
+An action is transitive exactly when it has one orbit.
 The kernel of the action is the intersection of all point stabilizers.
