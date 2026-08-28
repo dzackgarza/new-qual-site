@@ -1123,16 +1123,6 @@ def _inlines(
     return copy.deepcopy(cache[source])
 
 
-def _card_route(card: sqlite3.Row) -> str:
-    """A collection's page is written under `exam/`, every other card under `tag/`.
-
-    The caller supplies only the path back to the site root, so a link to a card
-    cannot disagree with where that card was written. A collection may list a
-    sibling collection among its contents, and then the target is not a problem.
-    """
-    return "exam" if card["kind"] == "collection" else "tag"
-
-
 def _link_inline(
     card: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
@@ -1140,7 +1130,7 @@ def _link_inline(
 ) -> pf.Link:
     return pf.Link(
         *_inlines(card["title"], inline_cache),
-        url=f"{base}{_card_route(card)}/{card['id']}.html",
+        url=f"{base}{card['route']}/{card['id']}.html",
     )
 
 
@@ -1834,7 +1824,7 @@ def problem_browser_page(
     for source in _rows(
         con,
         """
-        select distinct cp.problem_id, cp.collection_id as source_id, s.title
+        select distinct cp.problem_id, cp.collection_id as source_id, s.title, s.route
         from collection_problems cp join cards s on s.id=cp.collection_id
         order by s.title
         """,
@@ -1877,7 +1867,7 @@ def problem_browser_page(
             source_links.append(
                 pf.Link(
                     *_inlines(source["title"], inline_cache),
-                    url=f"exam/{source['source_id']}.html",
+                    url=f"{source['route']}/{source['source_id']}.html",
                 )
             )
         search = " ".join(
@@ -2154,8 +2144,8 @@ def _link_targets(
     # resolver lets through; here is where each one lands.
     for name in SITE_PAGES:
         add(name, Path(name))
-    for card in _rows(con, "select id, kind from cards"):
-        add(card["id"], Path(_card_route(card)) / f"{card['id']}.html")
+    for card in _rows(con, "select id, route from cards"):
+        add(card["id"], Path(card["route"]) / f"{card['id']}.html")
     for guide in guides:
         add(_publication_root_target_key(guide), _publication_root_route(guide))
         for section in guide.sections:
@@ -2175,7 +2165,7 @@ def _search_records(
     cards = _rows(
         con,
         """
-        select c.id, c.kind, c.title,
+        select c.id, c.kind, c.title, c.route,
           coalesce((select group_concat(term, ' ') from classifications
                     where card_id=c.id), '') as facets,
           coalesce((select group_concat(text, ' ') from sections
@@ -2185,7 +2175,7 @@ def _search_records(
         """,
     )
     for card in cards:
-        directory = _card_route(card)
+        directory = card["route"]
         search = " ".join(
             (
                 card["id"],
@@ -2269,11 +2259,11 @@ def _generate_data(
             topics[r["card_id"]].append(r["term"])
     insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
     years: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
-    sources: dict[str, dict[str, str]] = {problem["id"]: {} for problem in problems}
+    sources: dict[str, dict[str, tuple[str, str]]] = {problem["id"]: {} for problem in problems}
     for r in _rows(
         con,
         """
-        select cp.problem_id pid, e.institution inst, s.year, cp.collection_id as source_id, c.title source_title
+        select cp.problem_id pid, e.institution inst, s.year, cp.collection_id as source_id, c.title source_title, c.route
         from collection_problems cp
         join sources s on s.id=cp.collection_id
         join cards c on c.id=cp.collection_id
@@ -2285,7 +2275,7 @@ def _generate_data(
                 insts[r["pid"]].add(r["inst"])
             if r["year"] is not None:
                 years[r["pid"]].add(str(r["year"]))
-            sources[r["pid"]][r["source_id"]] = r["source_title"]
+            sources[r["pid"]][r["source_id"]] = (r["source_title"], r["route"])
     bodies = _successful_html_outputs(
         pandoc.write_html([_statement_ast(problem["ast"]) for problem in problems]),
         "generator statement HTML write",
@@ -2300,7 +2290,7 @@ def _generate_data(
                 "topics": topics[r["id"]],
                 "insts": sorted(insts[r["id"]]),
                 "years": sorted(years[r["id"]]),
-                "sources": [{"id": source_id, "title": title} for source_id, title in sorted(sources[r["id"]].items())],
+                "sources": [{"id": source_id, "title": title, "route": route} for source_id, (title, route) in sorted(sources[r["id"]].items())],
                 "q": stmt,
             }
         )
@@ -2390,7 +2380,7 @@ document.getElementById("gen-go").onclick=()=>{
     pick.map((q,i)=>`<div class="q">
       <div class="qn">${i+1}.</div>
       <div class="qb">${q.q}
-        <div class="src">${q.sources.length?q.sources.map(s=>`<a href="exam/${s.id}.html">${s.title}</a>`).join(", "):"No recorded exam"} ·
+        <div class="src">${q.sources.length?q.sources.map(s=>`<a href="${s.route}/${s.id}.html">${s.title}</a>`).join(", "):"No recorded exam"} ·
           <a href="tag/${q.id}.html">${q.id}</a>
         </div>
       </div>
@@ -2416,6 +2406,7 @@ def project(
         shutil.rmtree(out)
     (out / "tag").mkdir(parents=True)
     (out / "exam").mkdir()
+    (out / "source").mkdir()
     (out / "guide").mkdir()
     if wiki_pages:
         (out / "wiki").mkdir()
@@ -2487,7 +2478,7 @@ def project(
         pages.append(
             (
                 collection_page(con, src, inline_cache),
-                out / "exam" / f"{src['id']}.qmd",
+                out / src['route'] / f"{src['id']}.qmd",
                 StandardPage(),
             )
         )

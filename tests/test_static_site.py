@@ -142,7 +142,7 @@ A compilation reprints whole exams. Those entries are collections, not problems.
 
 
 def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) -> None:
-    """A card's page is under `exam/` or `tag/` by its kind, and links agree.
+    """A card's page is under `exam/`, `source/` or `tag/`, and links agree.
 
     `SRC-PACKET` lists a sibling collection among its contents, which is the
     shape the real compilations use. A link written for it as a problem points
@@ -157,7 +157,7 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
     assert result.returncode == 0, result.stderr
 
     site = work / "build" / "quarto" / "_site"
-    assert (site / "exam" / "SRC-PACKET.html").exists()
+    assert (site / "source" / "SRC-PACKET.html").exists()
 
     # Card links only. A fixture corpus has no wiki, so the navbar's wiki entry
     # has nothing to resolve to and says nothing about how cards are routed.
@@ -167,7 +167,7 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
         links.feed(page.read_text())
         for href in links.hrefs:
             target = href.split("#")[0]
-            if not re.search(r"(?:^|/)(?:tag|exam)/[A-Z]", target):
+            if not re.search(r"(?:^|/)(?:tag|exam|source)/[A-Z]", target):
                 continue
             if not (page.parent / target).resolve().exists():
                 dead.append(f"{page.relative_to(site)} -> {href}")
@@ -327,11 +327,13 @@ def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) 
 
     links = LinkCollector()
     links.feed((work / "build" / "quarto" / "_site" / "exams.html").read_text())
-    assert {href for href in links.hrefs if href.startswith("exam/")} == {
+    # A sitting is under `exam/`. A compilation, a homework sheet and a textbook
+    # are not exams, and calling their pages exams is what `source/` fixes.
+    assert {href for href in links.hrefs if href.startswith(("exam/", "source/"))} == {
         "exam/SRC-UGA-FIX.html",
-        "exam/SRC-NEILNOTES.html",
-        "exam/SRC-HW.html",
-        "exam/SRC-DUMMIT.html",
+        "source/SRC-NEILNOTES.html",
+        "source/SRC-HW.html",
+        "source/SRC-DUMMIT.html",
     }
 
 

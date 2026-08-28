@@ -135,7 +135,7 @@ def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
     assert parsed.source.listed_problem_ids() == ["P-INDEXP"]
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
-    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-NEILNOTES.qmd").read_text()
+    exam_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
     assert "Day 1" in exam_qmd
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES' order by section_ordinal, ordinal").fetchall()
@@ -160,7 +160,7 @@ def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
     assert parsed.source.listed_problem_ids() == []
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
-    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-NEILNOTES.qmd").read_text()
+    exam_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
     assert "Day 1" in exam_qmd
     assert "SRC-UGA-FIX" in exam_qmd
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
@@ -241,7 +241,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     problem_html = (work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html").read_text()
     assert "by left translation" in problem_html
 
-    textbook_qmd = (work / "build" / "quarto" / "exam" / "SRC-DUMMIT.qmd").read_text()
+    textbook_qmd = (work / "build" / "quarto" / "source" / "SRC-DUMMIT.qmd").read_text()
     assert "0 problems." in textbook_qmd
 
 

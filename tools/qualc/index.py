@@ -15,6 +15,7 @@ import yaml
 from .diagnostics import Diagnostic, DiagnosticCode
 from .model import (
     AcademicTerm,
+    Card,
     CollectionCard,
     CompilationSource,
     ExamSource,
@@ -34,7 +35,8 @@ create table cards (
   prompts text not null,         -- JSON list of review questions; '[]' when the card has none
   review text not null,
   source_path text not null,   -- diagnostics and edit links only, never identity
-  ast text not null            -- pandoc JSON of the card body
+  ast text not null,           -- pandoc JSON of the card body
+  route text not null          -- the directory the card's page is written under
 );
 create table classifications (card_id text not null, axis text not null, term text not null);
 create table relations (source_id text not null, kind text not null, target_id text not null);
@@ -164,6 +166,22 @@ def _insert_problems(
     )
 
 
+def card_route(card: Card) -> str:
+    """The directory a card's page is written under.
+
+    A sitting is under `exam/` and reads as one. The other 43 collections are
+    textbooks, homework sets and compiled scans, and calling a textbook page an
+    exam is the defect this splits. Every other card is under `tag/`.
+
+    Decided here, where the card's kind and its source kind are both in hand,
+    and carried on the row: the emitter used to recompute it from `kind` alone
+    in three places, which is three chances to disagree.
+    """
+    if not isinstance(card, CollectionCard):
+        return "tag"
+    return "exam" if isinstance(card.source, ExamSource) else "source"
+
+
 def build(parsed: list[ParsedCard], db_path: Path) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     db_path.unlink(missing_ok=True)
@@ -173,12 +191,12 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
     for p in parsed:
         c = p.card
         con.execute(
-            "insert into cards values (?,?,?,?,?,?,?)",
+            "insert into cards values (?,?,?,?,?,?,?,?)",
             # ponytail: JSON in one column, not a side table like `classifications`.
             # Prompts are only ever read back whole and in order, and the side
             # tables carry no position column -- ordering them would mean adding
             # one, which is more invention than a `json.loads` on the way out.
-            (c.id, c.kind, c.title, json.dumps(c.prompts), c.review, p.source_path, p.ast),
+            (c.id, c.kind, c.title, json.dumps(c.prompts), c.review, p.source_path, p.ast, card_route(c)),
         )
         for axis, terms in (
             ("area", c.classification.areas),

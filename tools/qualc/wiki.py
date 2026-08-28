@@ -570,7 +570,7 @@ def resolve_links(
                     assets,
                     unresolved,
                 )
-                if isinstance(element, pf.Image) and target.startswith(("wiki/", "tag/", "exam/", "guide/")):
+                if isinstance(element, pf.Image) and target.startswith(("wiki/", "tag/", "exam/", "source/", "guide/")):
                     element = pf.Link(
                         *cast(list[pf.Inline], element.content),
                         url=target,
@@ -660,7 +660,7 @@ def wiki_card_mentions(pages: list[WikiPage]) -> dict[str, list[WikiPage]]:
     for source in pages:
         seen: set[str] = set()
         for path in _link_paths(source):
-            if not path.startswith(("tag/", "exam/")):
+            if not path.startswith(("tag/", "exam/", "source/")):
                 continue
             card_id = Path(path).stem
             if card_id in seen:

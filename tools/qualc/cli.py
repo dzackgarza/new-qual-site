@@ -34,10 +34,7 @@ def load(
         card_titles = {}
         for item in parsed:
             card_titles[item.card.id] = item.card.title
-            if item.card.kind == "collection":
-                card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
-            else:
-                card_routes[item.card.id] = Path("tag") / f"{item.card.id}.html"
+            card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
         if wiki_pages:
             assets = build_asset_catalog(root / "assets")
             errors.extend(validate_wiki_tree(wiki_pages))
