@@ -3,7 +3,9 @@
 Two kinds of queue files:
 
 - `01-11`: Validity review of each `TODO.md` unchecked item and each `DESIGN_TODO.md` defect.
-- `A-F`: Concrete document lists — the actual files and cards that need checking. Each item is a checkbox.
+
+- `A-F`: Concrete document lists — the actual files and cards that need checking.
+  Each item is a checkbox.
 
 ## Document queues (files to check)
 
@@ -35,4 +37,5 @@ Two kinds of queue files:
 ## How to use
 
 Read a document queue (A-F). Check each file/card against its criterion.
-Commit each completed check. When a queue is empty, the work is done.
+Commit each completed check.
+When a queue is empty, the work is done.
