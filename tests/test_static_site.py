@@ -173,6 +173,29 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
     assert dead == []
 
 
+def test_the_not_found_page_resolves_its_links_from_the_site_root(tmp_path: Path) -> None:
+    """404.html is served for a request at any depth, so `../` cannot be used.
+
+    It installs a `<base>` naming the site root instead, and that has to happen
+    before the first URL in the head, or the stylesheet is fetched against the
+    address the reader asked for and the page arrives unstyled.
+    """
+    work = fixture_repo(tmp_path)
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = (work / "build" / "quarto" / "_site" / "404.html").read_text()
+    head = page.split("</head>", 1)[0]
+    assert head.index("createElement(\"base\")") < head.index("href=\"styles.css\"")
+
+    links = LinkCollector()
+    links.feed(page)
+    nav = [href for href in links.hrefs if not href.startswith("data:")]
+    assert "problems.html" in nav
+    assert [href for href in nav if href.startswith(("../", "/"))] == []
+
+
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
 

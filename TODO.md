@@ -1156,12 +1156,14 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 ### Dead ends
 
 - [x] Repair nine collection-to-collection links.
-  `exam/SRC-UCSD-TOP-290QUALS.html` and `exam/SRC-RA-WORKSHOP.html` link to sibling collections as `tag/SRC-*.html`. Those pages live at `exam/SRC-*.html`. The links return 404.
-  Fixed: a card link now takes its directory from the card's kind, so it cannot disagree with where that card was written.
+  `exam/SRC-UCSD-TOP-290QUALS.html` and `exam/SRC-RA-WORKSHOP.html` link to sibling collections as `tag/SRC-*.html`. Those pages live at `exam/SRC-*.html`. The links return 404. Fixed: a card link now takes its directory from the card's kind, so it cannot disagree with where that card was written.
   The rendered site has no dead internal link.
 
-- [ ] Add a 404 page carrying the site header.
+- [x] Add a 404 page carrying the site header.
   A missing page now shows the bare server error with no navigation.
+  Fixed: `404.html` carries the header, the search box, and the five entry points.
+  It resolves its links from the site root, so they work at whatever depth the missing address had.
+  `just preview` now serves it for a missing path, the way Pages does.
 
 - [ ] Replace the card-count table on the landing page with orientation.
   A 14-row inventory (Proofs 7, Hints 1, Strategies 6) sits above the one sentence that tells a reader where to start.

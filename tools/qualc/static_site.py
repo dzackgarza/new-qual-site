@@ -120,7 +120,29 @@ class AuthoredPage:
     navigation: PublicationNavigation
 
 
-PageChrome = StandardPage | SubjectPage | AuthoredPage
+@dataclass(frozen=True)
+class NotFoundPage:
+    """The page a server returns for a URL that names no page.
+
+    Written once at the site root, served for a request at any depth. The
+    browser resolves this page's relative links against the URL the reader
+    asked for, not against the file, so every other page's `../` arithmetic is
+    wrong here. A `<base>` naming the site root repairs all of them at once,
+    and only this page needs one.
+
+    The site root is `/<repo>/` on a GitHub Pages project site and `/` under
+    any other host, including the local preview server. That is the same rule
+    `spa-github-pages` uses for the same reason:
+    https://github.com/rafgraph/spa-github-pages
+    """
+
+
+PageChrome = StandardPage | SubjectPage | AuthoredPage | NotFoundPage
+
+SITE_ROOT_BASE = """<script>
+    var root = location.hostname.endsWith(".github.io") ? "/" + location.pathname.split("/")[1] + "/" : "/";
+    document.head.appendChild(Object.assign(document.createElement("base"), {href: root}));
+  </script>"""
 
 
 def build_asset_catalog(root: Path) -> AssetCatalog:
@@ -454,16 +476,25 @@ def page_document(
     subtitle_html = f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
     match chrome:
         case StandardPage():
+            base_html = ""
+            subject_html = ""
+            breadcrumb_html = ""
+            reading_order_html = ""
+            layout_class = "page-layout"
+        case NotFoundPage():
+            base_html = SITE_ROOT_BASE
             subject_html = ""
             breadcrumb_html = ""
             reading_order_html = ""
             layout_class = "page-layout"
         case SubjectPage(navigation=navigation):
+            base_html = ""
             subject_html = _subject_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
             layout_class = "page-layout subject-layout"
         case AuthoredPage(navigation=navigation):
+            base_html = ""
             subject_html = _wiki_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
@@ -474,6 +505,7 @@ def page_document(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="qualc">
+  {base_html}
   <title>{escape(title)} · Qual Corpus</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{prefix}styles.css">

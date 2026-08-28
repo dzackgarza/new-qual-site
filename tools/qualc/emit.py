@@ -56,6 +56,7 @@ from .static_site import (
     NavigationLink,
     NavigationParent,
     NodeParent,
+    NotFoundPage,
     OnlyReading,
     PageChrome,
     PageTarget,
@@ -2300,6 +2301,23 @@ def project(
         link_targets,
         assets,
         StandardPage(),
+    )
+
+    write_page(
+        site_root,
+        Path("404.html"),
+        {"title": "No such page"},
+        '<p>This address names no page. It may name a card that was renamed, or a page that was never written.</p>'
+        '<p>Start again from <a href="index.html">the home page</a>, '
+        '<a href="problems.html">the problem browser</a>, '
+        '<a href="exams.html">the exams</a>, '
+        '<a href="guides.html">the guides</a>, or '
+        '<a href="wiki/index.html">the wiki</a>. '
+        "The search box in the header reads the whole corpus.</p>",
+        mathjax,
+        link_targets,
+        assets,
+        NotFoundPage(),
     )
 
     for guide in guides:

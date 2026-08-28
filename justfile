@@ -30,9 +30,9 @@ build:
 # Build and render the site to build/quarto/_site
 site: build
 
-# Serve the compiled site
+# Serve the compiled site the way GitHub Pages serves it, 404.html included
 preview port="8000": build
-    uv run python -m http.server {{ port }} --directory build/quarto/_site
+    uv run python tools/preview.py {{ port }}
 
 # Prove the architectural invariants hold
 test:
