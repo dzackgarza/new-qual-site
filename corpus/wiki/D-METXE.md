@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.definition title="Closed Maps"}
+::: {.definition}
 A map $f:X\to Y$ is **closed** if whenever $U \subseteq X$ is closed in $X$, $f(U) \subseteq Y$ is again closed in $Y$.
 :::

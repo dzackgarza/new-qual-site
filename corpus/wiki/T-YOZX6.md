@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YOZX6
 kind: theorem
-title: Compactness, Sequential Compactness, and Total Boundedness
+title: Equivalent characterizations of compactness
 classification:
   areas:
   - real-analysis
@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Equivalent Characterizations of Compactness"}
+::: {.theorem}
 See [@Fol13, prop. 0.25].
 
 For $E \subseteq (X, d)$ a metric space, TFAE:

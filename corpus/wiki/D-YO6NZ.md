@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition title="Connected"}
+:::{.definition}
 A space $X$ is **disconnected** iff 
 
 - There exists a *separation of $X$*: a decomposition $X = U\Disjoint V$ with $U, V$ disjoint, open, and nonempty.

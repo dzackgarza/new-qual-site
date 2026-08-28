@@ -12,7 +12,7 @@ relations: []
 review: reviewed
 ---
 
-::: {.definition title="Group action"}
+::: {.definition}
 An action of a group $G$ on a set $X$ is a map $G\times X\to X$, written
 $(g,x)\mapsto g\cdot x$, such that
 $$

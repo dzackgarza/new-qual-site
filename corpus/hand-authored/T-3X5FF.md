@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-3X5FF
 kind: theorem
-title: Sylow's third theorem
+title: 'Sylow''s third theorem: numerical constraints'
 classification:
   areas:
   - algebra
@@ -16,7 +16,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Sylow III: numerical constraints"}
+::: {.theorem}
 Write $\abs G=p^a m$ with $p\nmid m$, and let $n_p$ be the number of Sylow
 $p$-subgroups. Then
 $$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-4RADG
 kind: theorem
-title: Sylow's first theorem
+title: 'Sylow''s first theorem: existence'
 classification:
   areas:
   - algebra
@@ -18,7 +18,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Sylow I: existence"}
+::: {.theorem}
 Write $\abs G=p^a m$ with $p\nmid m$. Then $G$ has a subgroup of order $p^a$;
 equivalently, $G$ has a Sylow $p$-subgroup.
 

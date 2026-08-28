@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="The continuous image of a..."}
+::: {.proposition}
 The following properties are "pushed forward" through continuous maps, in the sense that if property $P$ holds for $X$ and $f:X\to Y$, then $f(X)$ also satisfies $P$:
 
 - Compactness

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RRK4J
 kind: theorem
-title: Sylow's second theorem
+title: 'Sylow''s second theorem: conjugacy'
 classification:
   areas:
   - algebra
@@ -18,7 +18,7 @@ relations:
 review: reviewed
 ---
 
-::: {.theorem title="Sylow II: conjugacy"}
+::: {.theorem}
 All Sylow $p$-subgroups of a finite group $G$ are conjugate. In particular, a
 Sylow $p$-subgroup $P$ is normal in $G$ exactly when it is the unique Sylow
 $p$-subgroup.
