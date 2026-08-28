@@ -381,17 +381,20 @@ def _breadcrumbs(
     relative_path: Path,
     navigation: PublicationNavigation,
 ) -> str:
-    def crumb(step: Crumb, last: bool) -> str:
+    def crumb(step: Crumb) -> str:
         target = escape(_relative_url(relative_path, step.route))
-        current = ' aria-current="page"' if last else ""
-        return f'<li><a href="{target}"{current}>{escape(step.title)}</a></li>'
+        return f'<li><a href="{target}">{escape(step.title)}</a></li>'
+
+    def current_crumb(step: Crumb) -> str:
+        target = escape(_relative_url(relative_path, step.route))
+        return f'<li><a href="{target}" aria-current="page">{escape(step.title)}</a></li>'
 
     steps = navigation.trail
     # A page that is its own root has nowhere to go up to, and a one-item
     # breadcrumb only repeats the heading under it.
     if len(steps) < 2:
         return ""
-    return '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>' + "".join(crumb(step, index == len(steps) - 1) for index, step in enumerate(steps)) + "</ol></nav>"
+    return '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>' + "".join(crumb(step) for step in steps[:-1]) + current_crumb(steps[-1]) + "</ol></nav>"
 
 
 def _reading_order(
