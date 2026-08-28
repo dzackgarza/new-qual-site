@@ -31,6 +31,7 @@ from urllib.parse import urlsplit
 import panflute as pf
 import yaml
 
+from .index import load_area_names
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
     PandocBatchError,
@@ -1745,10 +1746,19 @@ def _facet_terms(joined: str | None) -> list[str]:
     return [term for term in (joined or "").split(FACET_SEP) if term]
 
 
-def _facet_option_label(axis: str, value: str) -> str:
-    # Topics are authored display strings. Areas/institutions remain registry ids.
+def _facet_option_label(axis: str, value: str, area_names: dict[str, str]) -> str:
+    """What to call one facet value on screen.
+
+    An area is called what `vocabularies/areas.yaml` calls it. Title-casing the
+    id instead made the registry's own `name` dead data and the site's fifth
+    vocabulary: it agrees with the registry by luck and disagrees silently.
+    Topics and years are authored display strings already; an institution id is
+    an acronym, which upper-cases.
+    """
     if axis in {"topic", "year"}:
         return value
+    if axis == "area":
+        return area_names[value]
     return value.replace("-", " ").title()
 
 
@@ -1756,6 +1766,7 @@ def _listing_filters(
     noun: str,
     placeholder: str,
     facet_values: dict[str, list[str]],
+    area_names: dict[str, str],
 ) -> pf.RawBlock:
     """The search box and one select per facet, above a filtered listing.
 
@@ -1772,7 +1783,7 @@ def _listing_filters(
         + "".join(
             f'<label for="listing-{axis}">{axis.title()}'
             f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
-            + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value))}</option>' for value in values)
+            + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names))}</option>' for value in values)
             + "</select></label>"
             for axis, values in facet_values.items()
         )
@@ -1784,6 +1795,7 @@ def _listing_filters(
 def problem_browser_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
+    area_names: dict[str, str],
 ) -> Page:
     facet_values = {
         "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
@@ -1837,7 +1849,7 @@ def problem_browser_page(
         # hide a heading whose problems are all hidden.
         if problem["areas"] != heading_area:
             heading_area = problem["areas"]
-            label = ", ".join(_facet_option_label("area", a) for a in area_terms) or "Unclassified"
+            label = ", ".join(_facet_option_label("area", a, area_names) for a in area_terms) or "Unclassified"
             rows.append(
                 pf.Div(
                     pf.Header(pf.Str(label), level=2),
@@ -1850,7 +1862,7 @@ def problem_browser_page(
         facet_text = " · ".join(
             part
             for part in (
-                ", ".join(_facet_option_label("area", a) for a in area_terms),
+                ", ".join(_facet_option_label("area", a, area_names) for a in area_terms),
                 ", ".join(institution_terms),
                 ", ".join(year_terms),
             )
@@ -1910,7 +1922,7 @@ def problem_browser_page(
                 inline_cache,
             )
         ),
-        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values),
+        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values, area_names),
         pf.Div(*rows, classes=["listing"]),
     ]
 
@@ -1936,6 +1948,7 @@ GUIDES_LEDE = (
 def source_index_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
+    area_names: dict[str, str],
 ) -> Page:
     """Every collection the corpus draws from, under the kind of thing it is.
 
@@ -1971,7 +1984,7 @@ def source_index_page(
     }
     blocks: list[pf.Block] = [
         pf.Para(*_inlines(f"Every collection the corpus draws problems from: {len(collections)} in all.", inline_cache)),
-        _listing_filters("source", "UGA, topology, 2019…", facet_values),
+        _listing_filters("source", "UGA, topology, 2019…", facet_values, area_names),
     ]
     rows: list[pf.Block] = []
     for kind, heading in SOURCE_KIND_HEADINGS.items():
@@ -2342,7 +2355,10 @@ const QDATA=__GENDATA__;
 const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
 const escapeHtml=(value)=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 const label=(value)=>value.replaceAll("-"," ").replace(/\\b\\w/g,(letter)=>letter.toUpperCase());
-const AREAS=Object.fromEntries([...new Set(QDATA.flatMap(q=>q.areas))].map((area)=>[area,label(area)]));
+// The registry names, in the order Browse offers them. Reading the areas out of
+// the problem data instead gave the same six in whatever order the first
+// problem carrying each happened to appear.
+const AREAS=__AREANAMES__;
 const topics=[...new Set(QDATA.flatMap(q=>q.topics))].filter(Boolean).sort();
 const years=[...new Set(QDATA.flatMap(q=>q.years))].filter(Boolean).sort((a,b)=>Number(b)-Number(a));
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
@@ -2423,6 +2439,7 @@ def project(
     mentions = wiki_card_mentions(wiki_pages or [])
     incoming_pages = incoming_wiki_links(wiki_pages or [])
     assets = build_asset_catalog(site.parent / "assets")
+    area_names = load_area_names(site.parent / "vocabularies")
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
         [
@@ -2481,7 +2498,11 @@ def project(
     )
     for unsafe, escaped in (("&", "\\u0026"), ("<", "\\u003c"), (">", "\\u003e")):
         generator_data = generator_data.replace(unsafe, escaped)
-    generate_qmd = GENERATE_QMD.replace("__GENDATA__", generator_data)
+    used_areas = {row["term"] for row in _rows(con, "select term from classifications where axis='area'")}
+    generate_qmd = GENERATE_QMD.replace("__GENDATA__", generator_data).replace(
+        "__AREANAMES__",
+        json.dumps({area: area_names[area] for area in sorted(used_areas, key=lambda a: area_names[a])}, separators=(",", ":")),
+    )
     (out / "generate.qmd").write_text(generate_qmd)
     generate_html = generate_qmd.split("```{=html}\n", 1)[1].rsplit("\n```", 1)[0]
     write_page(
@@ -2536,14 +2557,14 @@ def project(
 
     pages.append(
         (
-            problem_browser_page(con, inline_cache),
+            problem_browser_page(con, inline_cache, area_names),
             out / "problems.qmd",
             StandardPage(),
         ),
     )
     pages.append(
         (
-            source_index_page(con, inline_cache),
+            source_index_page(con, inline_cache, area_names),
             out / "exams.qmd",
             StandardPage(),
         ),

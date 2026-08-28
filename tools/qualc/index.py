@@ -80,6 +80,19 @@ def load_vocabularies(root: Path) -> dict[str, set[str]]:
     return vocab
 
 
+def load_area_names(root: Path) -> dict[str, str]:
+    """What each area is called, as the registry writes it.
+
+    The registry has carried a `name` beside every `id` all along and nothing
+    read it: every heading, filter option and facet label on the site was the
+    id with its hyphens swapped for spaces and title case applied. That agrees
+    with the registry by luck for `applied-algebra` and is a second vocabulary
+    for anything it does not.
+    """
+    data = yaml.safe_load((root / "areas.yaml").read_text())
+    return {entry["id"]: entry["name"] for entry in data}
+
+
 def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagnostic]:
     errors: list[Diagnostic] = []
     by_id: dict[str, ParsedCard] = {}

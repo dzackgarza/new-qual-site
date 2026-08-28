@@ -347,3 +347,35 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     labels = [child for child in filters[0].children if isinstance(child, Element) and child.tag == "label"]
     controls = [[child.tag for child in label.children if isinstance(child, Element)] for label in labels]
     assert controls == [["input"], ["select"], ["select"], ["select"], ["select"]]
+
+
+
+
+def test_browse_and_generate_call_an_area_what_the_registry_calls_it(tmp_path: Path) -> None:
+    """`vocabularies/areas.yaml` carries a name beside every id and nothing read it.
+
+    Browse title-cased the id, which happens to agree with every name in the
+    registry today and is a second vocabulary the moment one differs. Generate
+    read its areas out of the problem data, so it offered the same six in
+    whatever order the first problem carrying each happened to appear.
+    """
+    work = fixture_repo(tmp_path)
+    areas = work / "vocabularies" / "areas.yaml"
+    areas.write_text(areas.read_text().replace("- id: algebra\n  name: Algebra\n", "- id: algebra\n  name: Abstract Algebra\n"))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+
+    select = read_html(site / "problems.html").root.find_all("select", id="listing-area")[0]
+    browse = [(option.attrs["value"], option.text) for option in select.find_all("option")]
+    assert browse == [("algebra", "Abstract Algebra")]
+
+    embedded = re.search(r"const AREAS=(\{.*?\});", (site / "generate.html").read_text())
+    assert embedded is not None, "the generator must embed the area names"
+    assert list(json.loads(embedded.group(1)).items()) == browse
+
+    # The heading over a group of problems is the same name.
+    groups = read_html(site / "problems.html").root.find_all("section", **{"class": "listing-group"})
+    assert [group.find_all("h2")[0].text for group in groups] == ["Abstract Algebra"]
