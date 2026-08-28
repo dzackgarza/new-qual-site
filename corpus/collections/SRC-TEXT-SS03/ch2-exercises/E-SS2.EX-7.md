@@ -15,9 +15,7 @@ review: draft
 7. Suppose $f : \mathbb { D } \to \mathbb { C }$ is holomorphic. Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \mathbb { D } } | f ( z ) - f ( w ) | } \end{array}$ of the image of f satisfies
 
 $$
-
 2 | f ^ {\prime} (0) | \leq d.
-
 $$
 
 Moreover, it can be shown that equality holds precisely when f is linear, $f ( z ) =$ $a _ { 0 } + a _ { 1 } z$

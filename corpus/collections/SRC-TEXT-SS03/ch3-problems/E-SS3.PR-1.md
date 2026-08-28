@@ -31,9 +31,7 @@ The Koebe-Bieberbach theorem states that if in addition to $f(0) = 0$ and $f'(0)
 (e) With the notation of the previous part, show that $|a_2| \leq 2$, and that equality holds if and only if
 
 $$
-
 f(z) = \frac{z}{(1 - e^{i\theta}z)^2} \quad \text{for some } \theta \in \mathbb{R}.
-
 $$
 
 [Hint: What is the power series expansion of $1/g(z)$? Use part (c).]

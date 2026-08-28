@@ -15,16 +15,12 @@ review: draft
 3. Show that Wallis’s product formula can be written as
 
 $$
-
 \sqrt {\frac {\pi}{2}} = \lim _ {n \rightarrow \infty} \frac {2 ^ {2 n} (n !) ^ {2}}{(2 n + 1) !} (2 n + 1) ^ {1 / 2}.
-
 $$
 
 As a result, prove the following identity:
 
 $$
-
 \Gamma (s) \Gamma (s + 1 / 2) = \sqrt {\pi} 2 ^ {1 - 2 s} \Gamma (2 s).
-
 $$
 :::

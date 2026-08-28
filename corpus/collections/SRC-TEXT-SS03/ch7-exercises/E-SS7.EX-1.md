@@ -15,17 +15,13 @@ review: draft
 1. Suppose that $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of real numbers such that the partial sums
 
 $$
-
 A _ {n} = a _ {1} + \dots + a _ {n}
-
 $$
 
 are bounded. Prove that the Dirichlet series
 
 $$
-
 \sum_ {n = 1} ^ {\infty} \frac {a _ {n}}{n ^ {s}}
-
 $$
 
 converges for $\operatorname { R e } ( s ) > 0$ and defines a holomorphic function in this half-plane.

@@ -15,9 +15,7 @@ review: draft
 11. Show that $\mathrm { i f } \ | a | < 1$ , then
 
 $$
-
 \int_ {0} ^ {2 \pi} \log | 1 - a e ^ {i \theta} | d \theta = 0.
-
 $$
 
 Figure 10. Contour in Exercise 10

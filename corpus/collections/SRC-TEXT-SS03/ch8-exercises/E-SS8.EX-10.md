@@ -15,7 +15,6 @@ review: draft
 10. Let $F : \mathbb { H }  \mathbb { C }$ be a holomorphic function that satisfies
 
 $$
-
 | F (z) | \leq 1 \quad \text { and } \quad F (i) = 0.
 $$
 
@@ -24,7 +23,6 @@ Figure 11. Successive conformal maps in Exercise 8
 Prove that
 
 $$
-
 | F (z) | \leq \left| \frac {z - i}{z + i} \right| \quad \text {   for   all   } z \in \mathbb {H}.
 $$
 :::

@@ -15,9 +15,7 @@ review: draft
 8. Let
 
 $$
-
 E _ {4} (\tau) = \sum_ {(n, m) \neq (0, 0)} \frac {1}{(n + m \tau) ^ {4}}
-
 $$
 
 be the Eisenstein series of order 4.
@@ -27,16 +25,12 @@ be the Eisenstein series of order 4.
 (b) More precisely,
 
 $$
-
 \left| E _ {4} (\tau) - \frac {\pi^ {4}}{4 5} \right| \leq c e ^ {- 2 \pi t} \quad \text { if } \tau = x + i t \text { and } t \geq 1.
-
 $$
 
 (c) Deduce that
 
 $$
-
 \left| E _ {4} (\tau) - \tau^ {- 4} \frac {\pi^ {4}}{4 5} \right| \leq c t ^ {- 4} e ^ {- 2 \pi / t} \quad \text { if } \tau = i t \text { and } 0 <   t \leq 1.
-
 $$
 :::

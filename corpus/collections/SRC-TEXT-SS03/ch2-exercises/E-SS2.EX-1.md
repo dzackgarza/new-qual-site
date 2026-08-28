@@ -15,9 +15,7 @@ review: draft
 1. Prove that
 
 $$
-
 \int_ {0} ^ {\infty} \sin (x ^ {2}) d x = \int_ {0} ^ {\infty} \cos (x ^ {2}) d x = \frac {\sqrt {2 \pi}}{4}.
-
 $$
 
 These are the Fresnel integrals. Here, $\int _ { 0 } ^ { \infty }$ is interpreted as lim $R {  } { \infty } \int _ { 0 } ^ { R }$

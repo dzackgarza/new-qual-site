@@ -15,9 +15,7 @@ review: draft
 7. The Beta function is defined for $\mathrm { R e } ( \alpha ) > 0$ and $\operatorname { R e } ( \beta ) > 0$ by
 
 $$
-
 B (\alpha , \beta) = \int_ {0} ^ {1} (1 - t) ^ {\alpha - 1} t ^ {\beta - 1} d t.
-
 $$
 
 (a) Prove that $B ( \alpha , \beta ) = \frac { \Gamma ( \alpha ) \Gamma ( \beta ) } { \Gamma ( \alpha + \beta ) }$
@@ -27,9 +25,7 @@ $$
 [Hint: For part (a), note that
 
 $$
-
 \Gamma (\alpha) \Gamma (\beta) = \int_ {0} ^ {\infty} \int_ {0} ^ {\infty} t ^ {\alpha - 1} s ^ {\beta - 1} e ^ {- t - s} d t d s,
-
 $$
 
 and make the change of variables $s = u r , t = u ( 1 - r ) . ]$

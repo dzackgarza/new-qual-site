@@ -17,9 +17,7 @@ review: draft
 (a) Suppose first that Ω is open and pathwise connected, and that it can be written as $\Omega = \Omega _ { 1 } \cup \Omega _ { 2 }$ where $\Omega _ { 1 }$ and $\Omega _ { 2 }$ are disjoint non-empty open sets. Choose two points $w _ { 1 } \in \Omega _ { 1 }$ and $w _ { 2 } \in \Omega _ { 2 }$ and let $\gamma$ denote a curve in Ω joining $w _ { 1 }$ to $w _ { 2 }$ . Consider a parametrization $z : [ 0 , 1 ] \to \Omega$ of this curve with $z ( 0 ) = w _ { 1 }$ and $z ( 1 ) = w _ { 2 }$ , and let
 
 $$
-
 t ^ {*} = \sup _ {0 \leq t \leq 1} \{t: z (s) \in \Omega_ {1} \text { for   all } 0 \leq s <   t \}.
-
 $$
 
 Arrive at a contradiction by considering the point $z ( t ^ { * } )$

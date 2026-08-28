@@ -18,9 +18,7 @@ review: draft
 (a) Use Proposition 2.5 and its corollary to prove
 
 $$
-
 \zeta (s) = \sum_ {1 \leq n <   N} n ^ {- s} - \frac {N ^ {s - 1}}{s - 1} + \sum_ {n \geq N} \delta_ {n} (s)
-
 $$
 
 for every integer $N \geq 2$ , whenever $\operatorname { R e } ( s ) > 0$
@@ -34,9 +32,7 @@ for every integer $N \geq 2$ , whenever $\operatorname { R e } ( s ) > 0$
 2.∗ Prove that for $\operatorname { R e } ( s ) > 0$
 
 $$
-
 \zeta (s) = \frac {s}{s - 1} - s \int_ {1} ^ {\infty} \frac {\{x \}}{x ^ {s + 1}} d x
-
 $$
 
 where $\{ x \}$ is the fractional part of $x .$
@@ -44,17 +40,13 @@ where $\{ x \}$ is the fractional part of $x .$
 3.∗ If $Q ( x ) = \{ x \} - 1 / 2$ , then we can write the expression in the previous problem as
 
 $$
-
 \zeta (s) = \frac {s}{s - 1} - \frac {1}{2} - s \int_ {1} ^ {\infty} \frac {Q (x)}{x ^ {s + 1}} d x.
-
 $$
 
 Let us construct $Q _ { k } ( x )$ recursively so that
 
 $$
-
 \int_ {0} ^ {1} Q _ {k} (x) d x = 0, \quad \frac {d Q _ {k + 1}}{d x} = Q _ {k} (x), \quad Q _ {0} (x) = Q (x) \quad \text { and } \quad Q _ {k} (x + 1) = Q _ {k} (x).
-
 $$
 
 Then we can write

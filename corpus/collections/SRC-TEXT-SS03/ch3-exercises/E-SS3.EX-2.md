@@ -15,9 +15,7 @@ review: draft
 2. Evaluate the integral
 
 $$
-
 \int_ {- \infty} ^ {\infty} \frac {d x}{1 + x ^ {4}}.
-
 $$
 
 Where are the poles of $1 / ( 1 + z ^ { 4 } ) \ ?$

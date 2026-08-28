@@ -17,25 +17,19 @@ review: draft
 (a) Let $z , w$ be two complex numbers such that $\overline { { z } } w \ne 1$ . Prove that
 
 $$
-
 \left| \frac {w - z}{1 - \overline {{w}} z} \right| <   1 \quad \text { if } | z | <   1 \text { and } | w | <   1,
-
 $$
 
 and also that
 
 $$
-
 \left| \frac {w - z}{1 - \overline {{w}} z} \right| = 1 \quad \text { if } | z | = 1 \text { or } | w | = 1.
-
 $$
 
 [Hint: Why can one assume that z is real? It then sufices to prove that
 
 $$
-
 (r - w) (r - \overline {{w}}) \leq (1 - r w) (1 - r \overline {{w}})
-
 $$
 
 with equality for appropriate r and <sub>|</sub>w<sub>|</sub>.]
@@ -43,9 +37,7 @@ with equality for appropriate r and <sub>|</sub>w<sub>|</sub>.]
 (b) Prove that for a fixed w in the unit disc D, the mapping
 
 $$
-
 F: z \mapsto \frac {w - z}{1 - \overline {{w}} z}
-
 $$
 
 satisfies the following conditions:

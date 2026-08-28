@@ -15,9 +15,7 @@ review: draft
 9. Prove that the function u defined by
 
 $$
-
 u (x, y) = \operatorname{Re} \left(\frac {i + z}{i - z}\right) \quad \text { and } \quad u (0, 1) = 0
-
 $$
 
 is harmonic in the unit disc and vanishes on its boundary. Note that u is not bounded in D.

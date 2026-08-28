@@ -15,9 +15,7 @@ review: draft
 9. Show that
 
 $$
-
 \int_ {0} ^ {1} \log (\sin \pi x) d x = - \log 2.
-
 $$
 
 [Hint: Use the contour shown in Figure 9.]

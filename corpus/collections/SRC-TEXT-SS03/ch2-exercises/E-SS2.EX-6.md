@@ -15,8 +15,6 @@ review: draft
 6. Let $\Omega$ be an open subset of C and let $T \subset \Omega$ be a triangle whose interior is also contained in Ω. Suppose that f is a function holomorphic in Ω except possibly at a point w inside $T$ . Prove that if $f$ is bounded near w, then
 
 $$
-
 \int_ {T} f (z) d z = 0.
-
 $$
 :::

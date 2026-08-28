@@ -25,9 +25,7 @@ A. L. Cauchy, 1827
 In the previous chapter, we discussed several preliminary ideas in complex analysis: open sets in C, holomorphic functions, and integration along curves. The first remarkable result of the theory exhibits a deep connection between these notions. Loosely stated, Cauchy’s theorem says that if f is holomorphic in an open set Ω and $\gamma \subset \Omega$ is a closed curve whose interior is also contained in Ω then
 
 $$
-
 \int_ {\gamma} f (z) d z = 0.\tag{1}
-
 $$
 
 Many results that follow, and in particular the calculus of residues, are related in one way or another to this fact.
@@ -37,9 +35,7 @@ A precise and general formulation of Cauchy’s theorem requires defining unambi
 Our initial version of Cauchy’s theorem begins with the observation that it sufices that f have a primitive in Ω, by Corollary 3.3 in Chapter 1. The existence of such a primitive for toy contours will follow from a theorem of Goursat (which is itself a simple special case)<sup>1</sup> that asserts that if f is holomorphic in an open set that contains a triangle T and its interior, then
 
 $$
-
 \int_ {T} f (z) d z = 0.
-
 $$
 
 It is noteworthy that this simple case of Cauchy’s theorem sufices to prove some of its more complicated versions. From there, we can prove the existence of primitives in the interior of some simple regions, and therefore prove Cauchy’s theorem in that setting. As a first application of this viewpoint, we evaluate several real integrals by using appropriate toy contours.
@@ -47,9 +43,7 @@ It is noteworthy that this simple case of Cauchy’s theorem sufices to prove so
 The above ideas also lead us to a central result of this chapter, the Cauchy integral formula; this states that if f is holomorphic in an open set containing a circle C and its interior, then for all z inside C,
 
 $$
-
 f (z) = \frac {1}{2 \pi i} \int_ {C} \frac {f (\zeta)}{\zeta - z} d \zeta .
-
 $$
 
 Diferentiation of this identity yields other integral formulas, and in particular we obtain the regularity of holomorphic functions. This is remarkable, since holomorphicity assumed only the existence of the first derivative, and yet we obtain as a consequence the existence of derivatives of all orders. (An analogous statement is decisively false in the case of real variables!)

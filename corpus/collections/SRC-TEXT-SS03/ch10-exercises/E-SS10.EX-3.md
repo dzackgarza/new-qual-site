@@ -17,9 +17,7 @@ review: draft
 Figure 2. Appearance of the golden mean
 
 $$
-
 U (x) = \frac {u _ {0} + (u _ {1} - a u _ {0}) x}{(1 - \alpha x) (1 - \beta x)} = \frac {A}{1 - \alpha x} + \frac {B}{(1 - \beta x)} = A \sum_ {n = 0} ^ {\infty} \alpha^ {n} x ^ {n} + B \sum_ {n = 0} ^ {\infty} \beta^ {n} x ^ {n},
-
 $$
 
 where it is an easy matter to solve for A and B. Finally, this gives $u _ { n } = A \alpha ^ { n } +$ $B \beta ^ { n }$ . Note that this approach yields a solution to our problem if the roots of $p$ are distinct, namely $\alpha \neq \beta$ . A variant of the formula holds if $\alpha = \beta$

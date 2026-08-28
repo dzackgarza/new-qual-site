@@ -17,9 +17,7 @@ review: draft
 (a) Evaluate the integrals
 
 $$
-
 \int_ {\gamma} z ^ {n} d z
-
 $$
 
 for all integers $n .$ . Here $\gamma$ is any circle centered at the origin with the positive (counterclockwise) orientation.

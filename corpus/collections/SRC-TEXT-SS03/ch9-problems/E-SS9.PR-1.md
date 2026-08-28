@@ -19,9 +19,7 @@ review: draft
 (a) Prove that ${ \mathrm { i f ~ } } z \notin \Lambda$ , then
 
 $$
-
 \lim _ {R \to \infty} \sum_ {n ^ {2} + m ^ {2} \leq R ^ {2}} \frac {1}{(z + n + m \tau) ^ {2}} = S _ {1} (z)
-
 $$
 
 exists and $S _ { 1 } ( z ) = \wp ( z ) + c _ { 1 }$
@@ -29,9 +27,7 @@ exists and $S _ { 1 } ( z ) = \wp ( z ) + c _ { 1 }$
 (b) Similarly,
 
 $$
-
 \sum_ {m} \left(\sum_ {n} \frac {1}{(z + n + m \tau) ^ {2}}\right) = S _ {2} (z)
-
 $$
 
 exists and $S _ { 2 } ( z ) = \wp ( z ) + c _ { 2 } , { \mathrm { w h e r e ~ } } c _ { 2 } = F ( \tau )$ , and F is the forbidden Eisenstein series.
@@ -39,9 +35,7 @@ exists and $S _ { 2 } ( z ) = \wp ( z ) + c _ { 2 } , { \mathrm { w h e r e ~ } 
 (c) Also
 
 $$
-
 \sum_ {n} \left(\sum_ {m} \frac {1}{(z + n + m \tau) ^ {2}}\right) = S _ {3} (z)
-
 $$
 
 exists with $S _ { 3 } ( z ) = \wp ( z ) + c _ { 3 }$ , and $c _ { 3 } = \tilde { F } ( \tau )$ , the reverse of $F ,$

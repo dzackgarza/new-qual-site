@@ -15,9 +15,7 @@ review: draft
 1. Prove that
 
 $$
-
 \Gamma (s) = \lim _ {n \to \infty} \frac {n ^ {s} n !}{s (s + 1) \cdots (s + n)}
-
 $$
 
 whenever $s \neq 0 , - 1 , - 2 , . . .$

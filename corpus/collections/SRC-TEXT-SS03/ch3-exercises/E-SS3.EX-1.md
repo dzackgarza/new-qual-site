@@ -15,9 +15,7 @@ review: draft
 1. Using Euler’s formula
 
 $$
-
 \sin \pi z = \frac {e ^ {i \pi z} - e ^ {- i \pi z}}{2 i},
-
 $$
 
 show that the complex zeros of sin πz are exactly at the integers, and that they are each of order 1.

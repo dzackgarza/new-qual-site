@@ -15,9 +15,7 @@ review: draft
 12. Consider the function defined by
 
 $$
-
 f (x + i y) = \sqrt {| x | | y |}, \quad \text { whenever } x, y \in \mathbb {R}.
-
 $$
 
 Show that f satisfies the Cauchy-Riemann equations at the origin, yet f is not holomorphic at 0.

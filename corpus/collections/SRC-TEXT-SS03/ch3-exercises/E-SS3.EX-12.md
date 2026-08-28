@@ -15,17 +15,13 @@ review: draft
 12. Suppose u is not an integer. Prove that
 
 $$
-
 \sum_ {n = - \infty} ^ {\infty} \frac {1}{(u + n) ^ {2}} = \frac {\pi^ {2}}{(\sin \pi u) ^ {2}}
-
 $$
 
 by integrating
 
 $$
-
 f (z) = \frac {\pi \cot \pi z}{(u + z) ^ {2}}
-
 $$
 
 over the circle $| z | = R _ { N } = N + 1 / 2$ (N integral, $N \geq | u | )$ , adding the residues of f inside the circle, and letting N tend to infinity.

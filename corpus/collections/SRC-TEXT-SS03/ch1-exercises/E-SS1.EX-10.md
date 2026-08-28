@@ -15,16 +15,12 @@ review: draft
 10. Show that
 
 $$
-
 4 \frac {\partial}{\partial z} \frac {\partial}{\partial \overline {{z}}} = 4 \frac {\partial}{\partial \overline {{z}}} \frac {\partial}{\partial z} = \triangle ,
-
 $$
 
 where $\bigtriangleup$ is the Laplacian
 
 $$
-
 \triangle = \frac {\partial^ {2}}{\partial x ^ {2}} + \frac {\partial^ {2}}{\partial y ^ {2}}.
-
 $$
 :::

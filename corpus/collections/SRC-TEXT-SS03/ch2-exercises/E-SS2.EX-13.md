@@ -15,9 +15,7 @@ review: draft
 13. Suppose $f$ is an analytic function defined everywhere in $\mathbb { C }$ and such that for each $z _ { 0 } \in \mathbb { C }$ at least one coeficient in the expansion
 
 $$
-
 f (z) = \sum_ {n = 0} ^ {\infty} c _ {n} (z - z _ {0}) ^ {n}
-
 $$
 
 is equal to 0. Prove that f is a polynomial.

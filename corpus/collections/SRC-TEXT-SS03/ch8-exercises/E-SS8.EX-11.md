@@ -15,9 +15,7 @@ review: draft
 11. Show that if $f : D ( 0 , R ) \to \mathbb { C }$ is holomorphic, with $| f ( z ) | \leq M$ for some $M > 0 ,$ then
 
 $$
-
 \left| \frac {f (z) - f (0)}{M ^ {2} - \overline {{f (0)}} f (z)} \right| \leq \frac {| z |}{M R}.
-
 $$
 
 [Hint: Use the Schwarz lemma.]

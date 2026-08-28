@@ -15,14 +15,12 @@ review: draft
 8. If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \mathbb { R }$ with
 
 $$
-
 | f (z) | \leq A (1 + | z |) ^ {\eta}, \quad \eta \text {   a   fixed   real   number }
 $$
 
 for all z in that strip, show that for each integer $n \geq 0$ there exists $A _ { n } \geq 0$ so that
 
 $$
-
 | f ^ {(n)} (x) | \leq A _ {n} (1 + | x |) ^ {\eta}, \quad \text {   for   all   } x \in \mathbb {R}.
 $$
 

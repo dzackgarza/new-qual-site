@@ -15,9 +15,7 @@ review: draft
 18. Give another proof of the Cauchy integral formula
 
 $$
-
 f (z) = \frac {1}{2 \pi i} \int_ {C} \frac {f (\zeta)}{\zeta - z} d \zeta
-
 $$
 
 using homotopy of curves.

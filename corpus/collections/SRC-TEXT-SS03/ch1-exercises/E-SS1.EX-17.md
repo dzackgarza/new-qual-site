@@ -15,17 +15,13 @@ review: draft
 17. Show that if $\{ a _ { n } \} _ { n = 0 } ^ { \infty }$ is a sequence of non-zero complex numbers such that
 
 $$
-
 \lim _ {n \to \infty} \frac {| a _ {n + 1} |}{| a _ {n} |} = L,
-
 $$
 
 then
 
 $$
-
 \lim _ {n \to \infty} | a _ {n} | ^ {1 / n} = L.
-
 $$
 
 In particular, this exercise shows that when applicable, the ratio test can be used to calculate the radius of convergence of a power series.

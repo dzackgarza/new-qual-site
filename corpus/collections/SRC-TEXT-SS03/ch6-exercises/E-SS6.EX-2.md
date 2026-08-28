@@ -15,9 +15,7 @@ review: draft
 2. Prove that
 
 $$
-
 \prod_ {n = 1} ^ {\infty} \frac {n (n + a + b)}{(n + a) (n + b)} = \frac {\Gamma (a + 1) \Gamma (b + 1)}{\Gamma (a + b + 1)}
-
 $$
 
 whenever a and b are positive. Using the product formula for sin πs, give another proof that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs.

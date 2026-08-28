@@ -42,7 +42,6 @@ $$ Using the inductive hypothesis $a_{n-1} \leq a_n$, we can thus write
 $$
 3a_n - 15 = a_{n-1} \leq a_n = 3a_{n+1} - 15,
 $$
-
 from which we get $3a_{n} - 15 \leq 3a_{n+1} - 15$ and thus $a_{n} \leq a_{n+1}$.
 
 To compute $\lim_{n\to\infty}a_n$, perhaps there are easier ways, but we can just use generating functions. Note that the limit exists by the **Monotone Convergence Theorem**. Let $A(x) = \sum_{n=0}^\infty a_n x^n$ where $a_0 = 0$. Then applying the magic sauce, we have
@@ -62,7 +61,6 @@ and so we find
 $$
 \lim_{n\to\infty}a_n = \lim_{n\to\infty}\frac {15} 2 \left(1 - \left( \frac 1 3\right)^n\right) = \frac{15}{2}. \qed
 $$
-
   > Alternatively:
   $$
   a_{n+1} = \frac 1 3 a_n + 5 \implies \lim_{n\to\infty} a_{n+1} = \lim_{n\to\infty} \frac 1 3 a_n + 5 \\

@@ -19,9 +19,7 @@ review: draft
 (a) Suppose that $f : \mathbb { H } \to \mathbb { C }$ is holomorphic, bounded, and that there exists a sequence of complex numbers $\tau _ { k } = x _ { k } + i y _ { k }$ such that
 
 $$
-
 f (\tau_ {k}) = 0, \quad \sum_ {k = 1} ^ {\infty} y _ {k} = \infty , \quad 0 <   y _ {k} \leq 1, \quad \text { and } \quad | x _ {k} | \leq 1.
-
 $$
 
 Then $f = 0$ . [Hint: When $x _ { k } = 0$ see Problem 5 in Chapter 8.]
@@ -31,9 +29,7 @@ Then $f = 0$ . [Hint: When $x _ { k } = 0$ see Problem 5 in Chapter 8.]
 (c) Prove that $\textstyle \sum { 1 } / ( c ^ { 2 } + d ^ { 2 } ) = \infty$ where the sum is taken over all c and d that are relatively prime and of opposite parity. [Hint: Suppose not, and prove that $\textstyle \sum _ { ( a , b ) = 1 } 1 / ( a ^ { 2 } + b ^ { 2 } ) < \infty$ where the sum is over all relatively prime integers a and b. To do so, note that if a and b are both odd and relatively prime, then the two numbers c and d defined by $c = ( a + b ) / 2$ and $d = ( a - b ) / 2$ are relatively prime and of opposite parity. Moreover, $c ^ { 2 } + d ^ { 2 } \leq A ( a ^ { 2 } + b ^ { 2 } )$ for some universal constant A. Therefore
 
 $$
-
 \sum_ {n \neq 0} \frac {1}{n ^ {2}} \sum_ {(a, b) = 1} \frac {1}{a ^ {2} + b ^ {2}} <   \infty ,
-
 $$
 
 hence $\sum 1 / ( k ^ { 2 } + \ell ^ { 2 } ) < \infty$ , where the sum is over all integers k and ℓ such that $k , \ell \neq 0$ . Why is this a contradiction?]
@@ -43,17 +39,13 @@ hence $\sum 1 / ( k ^ { 2 } + \ell ^ { 2 } ) < \infty$ , where the sum is over a
 $\mathbf { 5 . ^ { * } }$ In Chapter 9 we proved that the Weierstrass $\wp$ function satisfies the cubic equation
 
 $$
-
 \left(\wp^ {\prime}\right) ^ {2} = 4 \wp^ {3} - g _ {2} \wp - g _ {3},
-
 $$
 
 where $g _ { 2 } = 6 0 E _ { 4 } , \ g _ { 3 } = 1 4 0 E _ { 6 }$ , with $E _ { k }$ is the Eisenstein series of order $k$ . The discriminant of the cubic $y ^ { 2 } = 4 x ^ { 3 } - g _ { 2 } x - g _ { 3 }$ is defined by $\triangle = g _ { 2 } ^ { 3 } - 2 7 g _ { 3 } ^ { 2 }$ . Prove that
 
 $$
-
 \triangle (\tau) = (2 \pi) ^ {1 2} \eta^ {2 4} (\tau) \quad \text {   for   all   } \tau \in \mathbb {H}.
-
 $$
 
 [Hint: $\bigtriangleup$ and $\eta ^ { 2 4 }$ satisfy the same transformation laws under $\tau \mapsto \tau + 1$ and $\tau \mapsto$ $- 1 / \tau$ . Because of the fundamental domain described in Problem 2, it sufices then to investigate the behavior at the only cusp, which is at infinity.]

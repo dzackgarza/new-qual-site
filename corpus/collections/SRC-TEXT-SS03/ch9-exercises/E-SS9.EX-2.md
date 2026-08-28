@@ -15,9 +15,7 @@ review: draft
 2. Suppose that $a _ { 1 } , \ldots , a _ { r }$ and $b _ { 1 } , \ldots , b _ { r }$ are the zeros and poles, respectively, in the fundamental parallelogram of an elliptic function $f .$ Show that
 
 $$
-
 a _ {1} + \dots + a _ {r} - b _ {1} - \dots - b _ {r} = n \omega_ {1} + m \omega_ {2}
-
 $$
 
 for some integers n and $m .$

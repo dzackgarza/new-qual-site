@@ -16,7 +16,6 @@ review: draft
 1. Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a | \xi | ^ { p } } )$ as $| \xi | \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
 
 $$
-
 | f (z) | \leq A e ^ {a | z | ^ {q}}
 $$
 

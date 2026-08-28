@@ -15,8 +15,6 @@ review: draft
 9. Prove that if $| z | < 1$ , then
 
 $$
-
 (1 + z) (1 + z ^ {2}) (1 + z ^ {4}) (1 + z ^ {8}) \dots = \prod_ {k = 0} ^ {\infty} (1 + z ^ {2 ^ {k}}) = \frac {1}{1 - z}.
-
 $$
 :::

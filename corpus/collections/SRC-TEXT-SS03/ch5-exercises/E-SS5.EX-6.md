@@ -15,9 +15,7 @@ review: draft
 6. Prove Wallis’s product formula
 
 $$
-
 {\frac {\pi}{2}} = {\frac {2 \cdot 2}{1 \cdot 3}} \cdot {\frac {4 \cdot 4}{3 \cdot 5}} \dots {\frac {2 m \cdot 2 m}{(2 m - 1) \cdot (2 m + 1)}} \dots .
-
 $$
 
 [Hint: Use the product formula for sin z at $z = \pi / 2 . ]$
@@ -33,9 +31,7 @@ $^ { 7 . }$ . Establish the following properties of infinite products.
 8. Prove that for every z the product below converges, and
 
 $$
-
 \cos (z / 2) \cos (z / 4) \cos (z / 8) \dots = \prod_ {k = 1} ^ {\infty} \cos (z / 2 ^ {k}) = \frac {\sin z}{z}.
-
 $$
 
 [Hint: Use the fact that sin $2 z = 2 \sin z \cos z . ]$
@@ -43,9 +39,7 @@ $$
 9. Prove that if $| z | < 1$ , then
 
 $$
-
 (1 + z) (1 + z ^ {2}) (1 + z ^ {4}) (1 + z ^ {8}) \dots = \prod_ {k = 0} ^ {\infty} (1 + z ^ {2 ^ {k}}) = \frac {1}{1 - z}.
-
 $$
 
 10. Find the Hadamard products for:

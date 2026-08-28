@@ -15,9 +15,7 @@ review: draft
 6. Prove that
 
 $$
-
 \frac {1}{\pi} \sum_ {n = - \infty} ^ {\infty} \frac {a}{a ^ {2} + n ^ {2}} = \sum_ {n = - \infty} ^ {\infty} e ^ {- 2 \pi a | n |}
-
 $$
 
 whenever $a > 0$ . Hence show that the sum equals coth $\pi a$

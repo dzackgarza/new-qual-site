@@ -15,17 +15,13 @@ review: draft
 21. Show that for $| z | < 1$ , one has
 
 $$
-
 {\frac {z}{1 - z ^ {2}}} + {\frac {z ^ {2}}{1 - z ^ {4}}} + \dots + {\frac {z ^ {2 ^ {n}}}{1 - z ^ {2 ^ {n + 1}}}} + \dots = {\frac {z}{1 - z}},
-
 $$
 
 and
 
 $$
-
 {\frac {z}{1 + z}} + {\frac {2 z ^ {2}}{1 + z ^ {2}}} + \dots + {\frac {2 ^ {k} z ^ {2 ^ {k}}}{1 + z ^ {2 ^ {k}}}} + \dots = {\frac {z}{1 - z}}.
-
 $$
 
 Justify any change in the order of summation.

@@ -17,9 +17,7 @@ review: draft
 (a) The function
 
 $$
-
 \int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta - 1) (\zeta - \lambda)}}, \quad \mathrm{with} \lambda \in \mathbb {R} \mathrm{and} \lambda \neq 1
-
 $$
 
 maps the upper half-plane conformally to a rectangle, one of whose vertices is the image of the point at infinity.
@@ -27,9 +25,7 @@ maps the upper half-plane conformally to a rectangle, one of whose vertices is t
 (b) In the case $\lambda = - 1$ , the image of
 
 $$
-
 \int_ {0} ^ {z} \frac {d \zeta}{\sqrt {\zeta (\zeta^ {2} - 1)}}
-
 $$
 
 is a square whose side lengths are $\textstyle { \frac { \Gamma ^ { 2 } ( 1 / 4 ) } { 2 { \sqrt { 2 \pi } } } }$

@@ -15,9 +15,7 @@ review: draft
 8. Prove that
 
 $$
-
 \int_ {0} ^ {2 \pi} \frac {d \theta}{a + b \cos \theta} = \frac {2 \pi}{\sqrt {a ^ {2} - b ^ {2}}}
-
 $$
 
 if $a > | b |$ and $a , b \in \mathbb { R }$

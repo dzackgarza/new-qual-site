@@ -15,8 +15,6 @@ review: draft
 7. Prove that
 
 $$
-
 \int_ {0} ^ {2 \pi} \frac {d \theta}{(a + \cos \theta) ^ {2}} = \frac {2 \pi a}{(a ^ {2} - 1) ^ {3 / 2}}, \quad \text { whenever } a > 1.
-
 $$
 :::

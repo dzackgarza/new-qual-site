@@ -15,9 +15,7 @@ review: draft
 15. Prove that for $\operatorname { R e } ( s ) > 1$ ，
 
 $$
-
 \zeta (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} \frac {x ^ {s - 1}}{e ^ {x} - 1} d x.
-
 $$
 
 [Hint: Write $\textstyle 1 / ( e ^ { x } - 1 ) = \sum _ { n = 1 } ^ { \infty } e ^ { - n x } . ]$

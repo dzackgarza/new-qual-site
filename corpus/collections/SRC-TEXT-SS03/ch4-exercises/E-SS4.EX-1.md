@@ -17,9 +17,7 @@ review: draft
 (a) For each fixed real number t consider the two functions
 
 $$
-
 A (z) = \int_ {- \infty} ^ {t} f (x) e ^ {- 2 \pi i z (x - t)} d x \quad \text { and } \quad B (z) = - \int_ {t} ^ {\infty} f (x) e ^ {- 2 \pi i z (x - t)} d x.
-
 $$
 
 Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \mathbb { R } .$
@@ -29,9 +27,7 @@ Show that $A ( \xi ) = B ( \xi )$ for all $\xi \in \mathbb { R } .$
 (c) Deduce that
 
 $$
-
 \int_ {- \infty} ^ {t} f (x) d x = 0,
-
 $$
 
 for all t, and conclude that $f = 0$

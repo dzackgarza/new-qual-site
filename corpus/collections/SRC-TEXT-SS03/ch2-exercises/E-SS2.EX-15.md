@@ -16,7 +16,6 @@ review: draft
     Prove that if
 
 $$
-
 | f (z) | = 1 \quad \text { whenever } | z | = 1,
 $$
 

@@ -18,7 +18,6 @@ review: draft
 Suppose that $| F ( i y ) | \le 1$ for all $y \in \mathbb { R }$ , and
 
 $$
-
 | F (z) | \leq C e ^ {c | z | ^ {\gamma}}
 $$
 
@@ -27,7 +26,6 @@ for some $c , C > 0$ and $\gamma < 1$ . Prove that $| F ( z ) | \le 1$ for all z
 (b) More generally, let S be a sector whose vertex is the origin, and forming an angle of $\pi / \beta$ . Let $F$ be a holomorphic function in S that is continuous on the closure of $S ,$ , so that $| F ( z ) | \le 1$ on the boundary of S and
 
 $$
-
 | F (z) | \leq C e ^ {c | z | ^ {\alpha}} \text {   for   all   } z \in S
 $$
 

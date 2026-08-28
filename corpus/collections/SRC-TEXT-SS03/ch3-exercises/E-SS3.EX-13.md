@@ -15,7 +15,6 @@ review: draft
 13. Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
 
 $$
-
 | f (z) | \leq A | z - z _ {0} | ^ {- 1 + \epsilon}
 $$
 

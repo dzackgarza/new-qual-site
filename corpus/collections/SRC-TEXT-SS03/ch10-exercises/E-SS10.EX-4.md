@@ -15,7 +15,6 @@ review: draft
 4. Using the generating formula for $p ( n )$ , prove the recurrence formula
 
 $$
-
 \begin{array}{r c l} p (n) & = & p (n - 1) + p (n - 2) - p (n - 5) - p (n - 7) - \dots \\ & = & \sum_ {k \neq 0} (- 1) ^ {k + 1} p \left(n - \frac {k (3 k + 1)}{2}\right), \end{array}
 $$
 

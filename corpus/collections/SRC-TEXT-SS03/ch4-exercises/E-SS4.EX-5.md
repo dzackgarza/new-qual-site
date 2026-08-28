@@ -17,9 +17,7 @@ review: draft
 (a) Prove that if $\alpha _ { 1 } , \ldots , \alpha _ { k }$ are the roots of R in the upper half-plane, then there exists polynomials $P _ { j } ( \boldsymbol { \xi } )$ of degree less than the multiplicity of $\alpha _ { j }$ so that
 
 $$
-
 \int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = \sum_ {j = 1} ^ {k} P _ {j} (\xi) e ^ {- 2 \pi i \alpha_ {j} \xi}, \quad \text {when} \xi <   0.
-
 $$
 
 (b) In particular, if $Q ( z )$ has no zeros in the upper half-plane, then $\begin{array} { r } { \int _ { - \infty } ^ { \infty } R ( x ) e ^ { - 2 \pi i x \xi } \dot { d x } = 0 } \end{array}$ for $\xi < 0 .$
@@ -29,9 +27,7 @@ $$
 (d) Show that
 
 $$
-
 \int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = O (e ^ {- a | \xi |}), \quad \xi \in \mathbb {R}
-
 $$
 
 as $| \xi | \to \infty$ for some $a > 0$ . Determine the best possible $a \mathrm { { s } }$ in terms of the roots of R.

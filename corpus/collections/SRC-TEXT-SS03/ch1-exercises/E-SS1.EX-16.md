@@ -25,9 +25,7 @@ review: draft
 (e) Find the radius of convergence of the hypergeometric series
 
 $$
-
 F (\alpha , \beta , \gamma ; z) = 1 + \sum_ {n = 1} ^ {\infty} \frac {\alpha (\alpha + 1) \cdots (\alpha + n - 1) \beta (\beta + 1) \cdots (\beta + n - 1)}{n ! \gamma (\gamma + 1) \cdots (\gamma + n - 1)} z ^ {n}.
-
 $$
 
 Here $\alpha , \beta \in \mathbb { C }$ and $\gamma \neq 0 , - 1 , - 2 , . . .$
@@ -37,9 +35,7 @@ Here $\alpha , \beta \in \mathbb { C }$ and $\gamma \neq 0 , - 1 , - 2 , . . .$
 (f) Find the radius of convergence of the Bessel function of order r:
 
 $$
-
 J _ {r} (z) = \left(\frac {z}{2}\right) ^ {r} \sum_ {n = 0} ^ {\infty} \frac {(- 1) ^ {n}}{n ! (n + r) !} \left(\frac {z}{2}\right) ^ {2 n},
-
 $$
 
 where r is a positive integer.

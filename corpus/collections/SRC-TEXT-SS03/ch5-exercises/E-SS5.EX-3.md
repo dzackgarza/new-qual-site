@@ -15,9 +15,7 @@ review: draft
 3. Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
 
 $$
-
 \Theta (z | \tau) = \sum_ {n = - \infty} ^ {\infty} e ^ {\pi i n ^ {2} \tau} e ^ {2 \pi i n z}
-
 $$
 
 is of order 2 as a function of $z .$ . Further properties of $\Theta$ will be studied in Chapter 10.

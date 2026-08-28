@@ -15,9 +15,7 @@ review: draft
 16. Suppose f and g are holomorphic in a region containing the disc $| z | \leq 1$ Suppose that f has a simple zero at $z = 0$ and vanishes nowhere else in $| z | \leq 1$ Let
 
 $$
-
 f _ {\epsilon} (z) = f (z) + \epsilon g (z).
-
 $$
 
 Show that if ǫ is suficiently small, then

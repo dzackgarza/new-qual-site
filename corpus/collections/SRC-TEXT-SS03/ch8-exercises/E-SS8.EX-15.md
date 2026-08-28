@@ -19,9 +19,7 @@ review: draft
 (b) Suppose $( x _ { 1 } , x _ { 2 } , x _ { 3 } )$ and $( y _ { 1 } , y _ { 2 } , y _ { 3 } )$ are two pairs of three distinct points on the real axis with
 
 $$
-
 x _ {1} <   x _ {2} <   x _ {3} \quad \text { and } \quad y _ {1} <   y _ {2} <   y _ {3}.
-
 $$
 
 Prove that there exists (a unique) automorphism Φ of H so that $\Phi ( x _ { j } ) = y _ { j }$ ， $j = 1 , 2 , 3$ . The same conclusion holds if $y _ { 3 } < y _ { 1 } < y _ { 2 }$ or $y _ { 2 } < y _ { 3 } < y _ { 1 }$
