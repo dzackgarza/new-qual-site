@@ -12,7 +12,7 @@ No scripts, no pattern matching.
 | --- | --- | --- |
 | 1-25 | 140A_Exam_Review — ALGEBRA_REVIEW1 | done |
 | 26-50 | Algebra_Solutions — basic-08F | done |
-| 51-100 | basic-08S — chapter-6 | in progress |
+| 51-100 | basic-08S — chapter-7 | in progress |
 | 101-200 |  | pending |
 | 201-354 |  | pending |
 
@@ -372,6 +372,100 @@ No scripts, no pattern matching.
   \infty } f`) and III (`\boldsymbol { Z } _ { \boldsymbol { p } ^ { 2 } \prime } ^
   { \prime }`) render as garbled subscripts in both passes; kept as extracted. Q11 —
   (A) and (E) duplicate `I and II only` in both passes.
+
+### Batch 16: file 99
+
+- **Chapter-7.md** (99): 18081 bytes, 0 control bytes, 0 odd-`$` lines.
+  Chapter 7 review questions, 50 discrete-math problems (counting, probability,
+  logic, graph theory, sets) with several complex-analysis problems mixed in.
+
+  - **Data fixes:** Q1 intervals lettered (A)-(E) and answer (D) confirmed (P(2) =
+  −5, P(3) = 18 ⇒ zero in [2, 3]). Q2 rebuilt as `\lnot S \wedge \lnot T` set of
+  choices. Q3 `18,009,460` (C(51,6)). Q4 statements and choices lettered, stem
+  `delete the edge DE.`. Q5 choices (A)-(E) restored from merged text. Q6 choices
+  lettered. Q7 `\mathbb { Q } ^ { \circ }` and `\mathbb { Z } ^ { * }` (unusual
+  symbols kept as extracted). Q8 combination count `33,060` and choices lettered.
+  Q9 `centered at $z =$ :N` → `centered at $z = 2 ?$` (the `:N` is a scan
+  artifact). Q10 Newton's-method stem rebuilt (`\imath`/`\mathfrak { g }` →
+  `x _ { 1 }` / `x _ { 0 }`, `g ^ { n }` → `g ^ { \prime }` across choices); Q12
+  `x ^ { 2 } = 4 0` and `\sqrt { 4 0 }` restored, choices placed on the following
+  line. Q14 `?$$` → `?$` (dollar overflow), stem spelling confirmed. Q15 stem and
+  choices rebuilt (teams of 6 students into 3 tasks). Q16 percentages and
+  `\frac { 7 } { 2 0 0 }` choices restored. Q18 stem `A \lor B \to C \lor D` (the
+  `\lor` was missing). Q21 (B) `A \lor ( \lnot 1 )` kept as extracted and flagged.
+  Q22 stem `22.` added, roman `ⅡI` → `II`, `IIII` → `III` (choices (A)-(E)
+  lettered, `(C) II and III only` and `(D) I and III only` restored). Q23 counts
+  and set statement delimited. Q24 `e ^ { 2 z } = i ?` (the `?` replaces a lost
+  `7`). Q25 `(E) two lines` kept. Q26 choices (A)-(E) restored. Q27 choices
+  lettered. Q29 `15 ! ( 5 )` choices (A)-(D) and stem gap `[bats at a fixed
+  position; the position is lost in the scan]`. Q30 `( i - \sqrt { 3 } ) ^ { 6 }`
+  stem, (B) `( \cdots 1 + i )` kept as extracted. Q31 set-builder delimited. Q32
+  `\left\{ \frac { x } { 2 } + c \text { for } 0 \leq x \leq 8 \right.` restored.
+  Q34 `[statement lost in the scan]` marker; (E) `\left\{ - \infty , 0 \right\}`
+  (was `\not \mathrm { - \infty }` / `\lnot \infty`). Q36 stem `h ( a ) = \int _ {
+  C } \frac { 3 z ^ { 2 } + z - 4 } { z - a }`. Q37 roman `Ⅲ` → `III` in
+  statements, choices lettered. Q38 `F _ { \gamma }` and `F _ { \omega }` → `F _ {
+  X }` / `F _ { Y }`, `\mathbb { Z } ^ { + }`. Q39 choices lettered (A)-(E). Q40
+  `\mathfrak { O }` → `\sigma` in the permutation. Q41 statements and choices
+  lettered as scanned (see gaps). Q43 statements `I.`/`II.`/`III.` restored,
+  choices lettered. Q44 kept completely as extracted (see gaps). Q45 `(C) 6`,
+  choices lettered. Q46 kept verbatim (see gaps). Q47 (D) `[lost in the scan]`
+  marker. Q48 choice values delimited. Q49 display blocks: stray `(A)` header
+  kept, `\tag{B}`-`\tag{E}` stripped, `(B)`-`(E)` headers inserted in the gap
+  between blocks, matrices kept verbatim. Q50 choices (A)-(E) lettered.
+
+  - Question numbers restored where the scan dropped them: 22, 23, 34, 49 (was
+  `49 Which`), 50. Q41 was split onto two lines by the scan; kept as extracted.
+
+  - Math normalization: Unicode all replaced by LaTeX: `°` → `\circ` (Q7
+  `\mathbb { Q } ^ { \circ }`), `→` (0x2192) → `\to`, `²` → `^ { 2 }` (Q12), `√`
+  → `\sqrt` (Q12, Q30, Q46), `±` → `\pm` (Q46), `π` → `\pi` (Q36, Q46), `δ` →
+  `\delta` (Q28), `¬` → `\lnot` / `\neg` (Q2, Q18), `Ⅱ` → `II`, `Ⅲ` → `III`;
+  `\operatorname*` → `\operatorname` (Q20); plain-text math delimited throughout
+  (Q1 `P ( x )`, Q5 values, Q12 `4 0`, Q23 `2`, Q29 values, Q45 `6`).
+
+  - **Answers verified against the mathematics:** Q1 (D) [2, 3]; Q2 (A)
+  `\lnot S \wedge \lnot T`; Q3 (B) 18,009,460; Q6 (D) {2}; Q7 (C) (irrationals,
+  `\mathbb { Q } ^ { \circ }`, are not countably infinite); Q8 (B) 33,060; Q9 (E)
+  1 (coefficient of (z−2)⁻¹ in the Laurent expansion of 1/(z−5) about z = 2);
+  Q10 (D) Newton's method; Q12 (E) 6.325 (two Newton iterations from x₀ = 6);
+  Q14 (D) `\sum _ { n = 0 } ^ { \infty } ( - 1 ) ^ { n } ( z - 4 ) ^ { - n - 1 }`
+  (expansion in |z−4| > 1); Q15 (B) I and II only (90 and 60; 45 miscounts the
+  labeled-team allocation); Q16 (E) 7/200; Q17 (A); Q18 (C)
+  `\neg C \land \neg D \to \neg A \land \neg B`; Q19 (E) `[ 2 , 5 ] \times [ 1 ,
+  3 ]` (closed rectangle); Q23 (A) 2³² (|D| = |P(C)|·|B| = 8·4 = 32); Q24 (E); Q25
+  (E) two lines (the real and imaginary axes); Q26 (B) (f = u + iv harmonic
+  conjugate); Q28 (E) (equality in the triangle inequality is not a metric
+  property); Q30 (A) −2⁶; Q31 (C) (closed cube in R³); Q35 (A) 369,600
+  (12!/(3!)⁴/4!); Q36 (D) 52πi (Cauchy integral formula, h(a) = 2πi(3a² + a − 4),
+  h(3) = 52πi); Q37 (D) I and II only (III fails); Q38 (E) 1/6 (P(X>2 or Y>2) = 1
+  − P(X≤2)P(Y≤2) = 1 − (8/9)(15/16)); Q40 (D) 4 (σ = (1 5 2 6 4 3), order 6); Q42
+  (D) 5 (Lebesgue measure 4 + 1); Q45 (C) 6 (4!/4 rotations); Q48 (D) 9 (f
+  analytic with u = 5x − 3y ⇒ v = 3x + 5y + c, v(4,1) = 7 ⇒ c = 0, v(3,2) = 9);
+  Q50 (D) (the 3x+1 output sequence from 17, starting just after the final
+  repeated output).
+
+  - **Surviving gaps, kept as extracted (needs source check):** Q4, Q13, Q22,
+  Q27, Q33, Q39 — image-dependent (the graph/curve is an `<!-- image-->` marker);
+  answers for these cannot be verified from the extraction. Q5 — the expected
+  value is 4/3, closest to (B) 3/2 but no choice is exact; flagged. Q11 — the
+  second Euclid-algorithm input is lost; the iteration count depends on it. Q13 —
+  (D) is `[number lost in the scan]`. Q20 — Log(−e²) = 2 + πi (principal branch)
+  is not among the choices; (C) `3 + \pi i` is likely a 2→3 OCR error; flagged.
+  Q21 — as printed, both (C) and (E) are non-tautologies (the `\lnot 1` in (B) is
+  an OCR artifact kept verbatim); the intended question cannot be answered from
+  the extraction. Q22 — roman labels `I, II, III` normalized but the isomorphism
+  question is image-dependent. Q29 — the pitcher's fixed position and choice (E)
+  are lost. Q32 — on 0 ≤ x ≤ 8 the density condition forces c = −15/8, which is
+  not among the choices; flagged. Q34 — statement entirely lost; `[statement lost
+  in the scan]` inserted. Q41 — choice (C) reads `I only`, duplicating (A), as
+  scanned; flagged. Q44 — a fair coin flipped 10 times cannot produce between 40
+  and 50 heads; the question is defective (likely a 40-flip original). Q46 — (A)
+  and (D) are duplicates (`2 k \pi` placement), and `2 \sqrt { 2 i }` in (A)-(D)
+  vs `2 { \sqrt { 2 i } }` in (E) is a scan artifact; kept verbatim, answer not
+  verifiable. Q47 — (D) lost. Q49 — the matrix choice blocks render with
+  `\mathrm { ~ f o r ~ }` and `\hphantom` artifacts kept verbatim; the answer is
+  not verifiable from the extraction.
 
 ## Unrecoverable extractions
 
