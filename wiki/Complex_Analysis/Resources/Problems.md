@@ -32,7 +32,7 @@ tag:complex/exercise path:"30_Complex"
 
 - [ ]  [Azoff's Problems by Topic](attachments/Azoff%20Problems%20by%20Topic.pdf) #resources/problem_collections
 
-- [ ]  [[30_Complex_Analysis/09_Quals/000_Preface|UGA Qual Problems]]  #resources/problem_collections
+- [ ]  [[Complex_Analysis/Quals/Preface|UGA Qual Problems]]  #resources/problem_collections
 
 - [ ] [Problem sheet from Cambridge Part 1B](attachments/Cambridge%20Examples%20Sheets.pdf) #resources/problem_collections
 
@@ -42,4 +42,4 @@ tag:complex/exercise path:"30_Complex"
 
 - [ ]  [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)
 
-- [ ] [Sample prelim questions](https://faculty.tcu.edu/richardson/Prelims/PrelimSampleQsCpx_2.pdf)
+- [ ] [Sample prelim questions](https://faculty.tcu.edu/richardson/Prelim/PrelimSampleQsCpx_2.pdf)

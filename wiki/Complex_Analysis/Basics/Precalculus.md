@@ -148,7 +148,7 @@ Written in rectangular coordinates, a root of unity is a pair of these values, a
 
 :::{.remark}
 The hyperbolic functions appear as soon as $\cos$ and $\sin$ are evaluated at a complex argument: splitting $z = x+iy$ turns an angle addition formula into a mixed trigonometric-hyperbolic one.
-The series expansions are collected with the other standard series in [[050 Series Reference|Series: Reference]].
+The series expansions are collected with the other standard series in [[Series Reference|Series: Reference]].
 
 :::
 

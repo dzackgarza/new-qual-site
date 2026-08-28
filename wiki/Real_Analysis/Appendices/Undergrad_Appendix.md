@@ -23,21 +23,21 @@ title: Basics
 ![](../../../../assets/assets/figures/2021-10-29_17-28-39.png) [[E-QSNCL]]
 
 ::: {.example}
-![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-51-23.png)
+![](../../../../assets/assets/Real_Analysis/figures/2021-10-29_16-51-23.png)
 
-![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-55-00.png)
+![](../../../../assets/assets/Real_Analysis/figures/2021-10-29_16-55-00.png)
 :::
 
 ::: {.example title="A nowhere differentiable function"}
 A nowhere differentiable function:
 
-![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-57-12.png)
+![](../../../../assets/assets/Real_Analysis/figures/2021-10-29_16-57-12.png)
 :::
 
 ::: {.fact}
 Monotone functions are differentiable almost everywhere.
 
-![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_17-28-39.png)
+![](../../../../assets/assets/Real_Analysis/figures/2021-10-29_17-28-39.png)
 :::
 
 [[P-HCA6D]]

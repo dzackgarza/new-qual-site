@@ -33,9 +33,9 @@ To see that simple functions are dense in $L^\infty(X)$, we can use the fact tha
 
 Then there is a sequence $s_n$ of simple functions such that $\norm{s_n - g}_\infty \to 0$ [@Fol13]:
 
-![](../../../assets/20_Real_Analysis/500_Exercises/figures/2019-11-20-22-52-43.png)
+![](../../../assets/Real_Analysis/500_Exercises/figures/2019-11-20-22-52-43.png)
 
-![](../../../assets/20_Real_Analysis/500_Exercises/figures/2019-11-20-22-52-04.png)
+![](../../../assets/Real_Analysis/500_Exercises/figures/2019-11-20-22-52-04.png)
 
 However, $C^0_c(X)$ is dense $L^\infty(X) \iff$ every $f \in L^\infty(X)$ can be approximated by a sequence $\theset{g_k} \subset C^0_c(X)$ in the sense that $\norm{f - g_n}_\infty \to 0$. To see why this can *not* be the case, let $f(x) = 1$, so $\norm{f}_\infty = 1$ and let $g_n \to f$ be an arbitrary sequence of $C^0_c$ functions converging to $f$ pointwise. 
 

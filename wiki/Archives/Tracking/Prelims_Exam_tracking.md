@@ -3,7 +3,7 @@ title: Prelims Exam Tracking
 order: 4
 ---
 
-## 2016 Fall
+## Fall 2016
 
 - Go through Pugh
 
@@ -11,7 +11,7 @@ order: 4
 
 - Find a way to consistently + quickly remember the direction of injectivity
 
-## 2015 Fall
+## Fall 2015
 
 - Review examples and counterexamples in real analysis
 
@@ -23,7 +23,7 @@ order: 4
 
 - Alternate iff proof for $P\iff Q$: prove $P \implies Q$ and $\neg P \implies \neg Q$.
 
-## 2014 Fall
+## Fall 2014
 
 - Review $\varepsilon\dash\delta$ tricks, especially bounding with min.
 

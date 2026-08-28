@@ -95,17 +95,17 @@ LES of pair $(A,B) \implies \cdots H_n(B) \into H_n(A) \into H_n(A,B) \into H_{n
 \end{matrix}
 .\end{align*}
 
-![Barycentric Subdivision](../../../assets/40_Topology/figures/image_2020-06-01-00-35-21.png)
+![Barycentric Subdivision](../../../assets/Topology/figures/image_2020-06-01-00-35-21.png)
 
 ## Tables
 
-![Higher homotopy groups of $\RP^n$](../../../assets/40_Topology/figures/image_2020-09-20-01-35-23.png)
+![Higher homotopy groups of $\RP^n$](../../../assets/Topology/figures/image_2020-09-20-01-35-23.png)
 
-![Higher homotopy groups of $\CP^n$](../../../assets/40_Topology/figures/image_2020-09-20-01-35-51.png)
+![Higher homotopy groups of $\CP^n$](../../../assets/Topology/figures/image_2020-09-20-01-35-51.png)
 
-![Homotopy groups of spheres.](../../../assets/40_Topology/figures/image_2020-09-20-01-39-16.png)
+![Homotopy groups of spheres.](../../../assets/Topology/figures/image_2020-09-20-01-39-16.png)
 
-![Homotopy groups of exceptional groups](../../../assets/40_Topology/figures/image_2020-09-20-01-40-22.png)
+![Homotopy groups of exceptional groups](../../../assets/Topology/figures/image_2020-09-20-01-40-22.png)
 
 ## Homotopy Groups of Lie Groups
 

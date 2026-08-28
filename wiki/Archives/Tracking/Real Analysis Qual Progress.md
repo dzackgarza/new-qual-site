@@ -89,57 +89,57 @@ Included years:
 
 [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Real_Analysis_Qual-Fall2021.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^3d000f]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^3d000f]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^86c7a4]]
+- [[Real_Analysis/Quals/Integration and L1#^86c7a4]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^9d4269]]
+- [[Real_Analysis/Quals/Measure Theory#^9d4269]]
 
-- [[20_Real_Analysis/08_Quals/0022_Fubini Tonelli#^f1b6eb]]
+- [[Real_Analysis/Quals/Fubini Tonelli#^f1b6eb]]
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^7dc220]]
+- [[Real_Analysis/Quals/Functional Analysis#^7dc220]]
 
 ## Spring 2021
 
 [Spring 2021](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysis_Qual_Spring2021.pdf)
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^bbb9a9]]
+- [[Real_Analysis/Quals/Measure Theory#^bbb9a9]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^aef235]]
+- [[Real_Analysis/Quals/Integrals Convergence#^aef235]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^9a2c9e]]
+- [[Real_Analysis/Quals/Measure Theory#^9a2c9e]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^b21dcb]]
+- [[Real_Analysis/Quals/Integration and L1#^b21dcb]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^417454]]
+- [[Real_Analysis/Quals/Integrals Convergence#^417454]]
 
 ## Fall 2020
 
 [Fall 2020](https://www.math.uga.edu/sites/default/files/inline-files/Real_Qual_Fall2020.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^821653]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^821653]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#Fall 2020.2]]
+- [[Real_Analysis/Quals/Measure Theory#Fall 2020.2]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^b424e2]]
+- [[Real_Analysis/Quals/Integrals Convergence#^b424e2]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^58470f]]
+- [[Real_Analysis/Quals/Integration and L1#^58470f]]
 
-- [[20_Real_Analysis/08_Quals/0030_Convolution and Fourier Analysis#^31cd83]]
+- [[Real_Analysis/Quals/Convolution and Fourier Analysis#^31cd83]]
 
 ## Spring 2020
 
 [Spring 2020](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysisQual_Spring2020.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^bc846d]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^bc846d]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^f771df]]
+- [[Real_Analysis/Quals/Measure Theory#^f771df]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^6f50e6]]
+- [[Real_Analysis/Quals/Integration and L1#^6f50e6]]
 
-- [[20_Real_Analysis/08_Quals/0022_Fubini Tonelli#^2aea9d]]
+- [[Real_Analysis/Quals/Fubini Tonelli#^2aea9d]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^e3c620]]
+- [[Real_Analysis/Quals/Integrals Convergence#^e3c620]]
 
 ## Fall 2019
 
@@ -147,15 +147,15 @@ Included years:
 
 [Sample solutions (Neil)](attachments/Fall_2019_SOLUTIONS.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^231f22]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^231f22]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^8f0945]]
+- [[Real_Analysis/Quals/Integrals Convergence#^8f0945]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^275944]]
+- [[Real_Analysis/Quals/Measure Theory#^275944]]
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^43b95e]]
+- [[Real_Analysis/Quals/Functional Analysis#^43b95e]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^e6090c]]
+- [[Real_Analysis/Quals/Integration and L1#^e6090c]]
 
 ## Spring 2019
 
@@ -163,31 +163,31 @@ Included years:
 
 [Sample solutions (Neil)](attachments/Spring%202019%20with%20Solutions.pdf)
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^9007a4]]
+- [[Real_Analysis/Quals/Functional Analysis#^9007a4]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^d90e25]]
+- [[Real_Analysis/Quals/Measure Theory#^d90e25]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^ac0795]]
+- [[Real_Analysis/Quals/Integrals Convergence#^ac0795]]
 
-- [[20_Real_Analysis/08_Quals/0022_Fubini Tonelli#^fdb921]]
+- [[Real_Analysis/Quals/Fubini Tonelli#^fdb921]]
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^1858f6]]
+- [[Real_Analysis/Quals/Functional Analysis#^1858f6]]
 
 ## Fall 2018
 
 [Fall 2018](https://www.math.uga.edu/sites/default/files/inline-files/Real%20Analysis%20Fall%202018.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^0484e7]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^0484e7]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^896c28]]
+- [[Real_Analysis/Quals/Measure Theory#^896c28]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^68e34b]]
+- [[Real_Analysis/Quals/Integrals Convergence#^68e34b]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^388af2]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^388af2]]
 
-- [[20_Real_Analysis/08_Quals/0022_Fubini Tonelli#^1ae35c]]
+- [[Real_Analysis/Quals/Fubini Tonelli#^1ae35c]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^bf6519]]
+- [[Real_Analysis/Quals/Integrals Convergence#^bf6519]]
 
 ## Spring 2018
 
@@ -195,74 +195,74 @@ Included years:
 
 [Sample solutions (Neil)](attachments/Spring2018_SOLUTIONS.pdf)
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^7c5f04]]
+- [[Real_Analysis/Quals/Measure Theory#^7c5f04]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^ae21f1]]
+- [[Real_Analysis/Quals/Integrals Convergence#^ae21f1]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^a434b2]]
+- [[Real_Analysis/Quals/Integration and L1#^a434b2]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#Spring 2018.4]]
+- [[Real_Analysis/Quals/Integration and L1#Spring 2018.4]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^766ce0]]
+- [[Real_Analysis/Quals/Integrals Convergence#^766ce0]]
 
 ## Fall 2017
 
 [Fall 2017](https://www.math.uga.edu/sites/default/files/RealAnaQual2017.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^1a7534]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^1a7534]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^3279b9]]
+- [[Real_Analysis/Quals/Measure Theory#^3279b9]]
 
-- [[20_Real_Analysis/08_Quals/0021_Integration and L1#^1e6067]]
+- [[Real_Analysis/Quals/Integration and L1#^1e6067]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^572c64]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^572c64]]
 
-- [[20_Real_Analysis/08_Quals/0030_Convolution and Fourier Analysis#^2ef915]]
+- [[Real_Analysis/Quals/Convolution and Fourier Analysis#^2ef915]]
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^ffabe6]]
+- [[Real_Analysis/Quals/Functional Analysis#^ffabe6]]
 
 ## Spring 2017
 
 [Spring 2017](https://www.math.uga.edu/sites/default/files/RealAnalysis_spring2017.pdf)
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^730107]]
+- [[Real_Analysis/Quals/Measure Theory#^730107]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^769de0]]
+- [[Real_Analysis/Quals/Measure Theory#^769de0]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^9838ec]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^9838ec]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^dce5bb]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^dce5bb]]
 
-- [[20_Real_Analysis/08_Quals/0030_Convolution and Fourier Analysis#^736e88]]
+- [[Real_Analysis/Quals/Convolution and Fourier Analysis#^736e88]]
 
-- [[20_Real_Analysis/08_Quals/0050_Functional Analysis#^54edac]]
+- [[Real_Analysis/Quals/Functional Analysis#^54edac]]
 
 ## Fall 2016
 
 [Fall 2016](https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2016.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^0b1fb2]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^0b1fb2]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^254fa4]]
+- [[Real_Analysis/Quals/Measure Theory#^254fa4]]
 
-- [[20_Real_Analysis/08_Quals/0020_Integrals Convergence#^dbf2a8]]
+- [[Real_Analysis/Quals/Integrals Convergence#^dbf2a8]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^4665ae]]
+- [[Real_Analysis/Quals/Measure Theory#^4665ae]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^4bd3db]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^4bd3db]]
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^26bed5]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^26bed5]]
 
 ## Spring 2016
 
 [Spring 2016](https://www.math.uga.edu/sites/default/files/RealAnalysisQualSpring2016.pdf)
 
-- [[20_Real_Analysis/08_Quals/0000_Undergraduate Analysis#^6ae65c]]
+- [[Real_Analysis/Quals/Undergraduate Analysis#^6ae65c]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^3e8888]]
+- [[Real_Analysis/Quals/Measure Theory#^3e8888]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#Spring 2016 # 3]]
+- [[Real_Analysis/Quals/Measure Theory#Spring 2016 # 3]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^220946]]
+- [[Real_Analysis/Quals/Measure Theory#^220946]]
 
-- [[20_Real_Analysis/08_Quals/0010_Measure Theory#^019bf5]]
+- [[Real_Analysis/Quals/Measure Theory#^019bf5]]

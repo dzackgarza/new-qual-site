@@ -55,7 +55,7 @@ See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uc
 [[D-3T6O2]]
 
 :::{.remark title="Reminder of notation"}
-Note: a reminder of notation:[[00_Notation_Algebra]].
+Note: a reminder of notation:[[Notation_Algebra]].
 
 Note that being in the same orbit is an equivalence relation which partitions $X$, and $G$ acts transitively if restricted to any single orbit.
 Also, $x\in \Fix$ iff $\Orb(x) = \ts{x}$ and $\Stab_G(x) = G$.

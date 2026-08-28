@@ -49,7 +49,7 @@ $\mathbb{CP}^n =e^2 \cup e^4 \cup \cdots e^{2n}$
 :::
 
 :::{.example title="Surfaces"}
-![Fundamental domains](../../../../assets/assets/40_Topology/figures/1513064067523.png)
+![Fundamental domains](../../../../assets/assets/Topology/figures/1513064067523.png)
 
 :::
 
@@ -62,19 +62,19 @@ Then each $n$-cell will correspond to a set of $n+1$ of these integers - throw t
 :::
 
 :::{.example title="Torus"}
-![Torus](../../../../assets/assets/40_Topology/figures/1513062466927.png)
+![Torus](../../../../assets/assets/Topology/figures/1513062466927.png)
 
 :::
 
 :::{.example title="Klein Bottle and $\RP^2$"}
-![Klein Bottle and $\RP^2$](../../../../assets/assets/40_Topology/figures/1513062526623.png)
+![Klein Bottle and $\RP^2$](../../../../assets/assets/Topology/figures/1513062526623.png)
 
 :::
 
 :::{.example title="Non-example"}
 For counterexamples, note that this fails to be a triangulation of $T$:
 
-![Not a Torus](../../../../assets/assets/40_Topology/figures/1513062599096.png)
+![Not a Torus](../../../../assets/assets/Topology/figures/1513062599096.png)
 
 This fails - for example, the specification of a simplex $[1,2,1]$ does not uniquely determine a triangle in the this picture.
 

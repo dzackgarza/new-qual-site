@@ -13,7 +13,7 @@ aliases: [Algebra Fields Review 1]
 Exercises
 
 ::: {.solution}
-![Projects/Quals/Algebra/image/SmartSelect_20210420-000457_Xodo_Docs.jpg](../../../assets/10_Algebra/999_Review/image/SmartSelect_20210420-000457_Xodo_Docs.jpg)
+![Projects/Quals/Algebra/image/SmartSelect_20210420-000457_Xodo_Docs.jpg](../../../assets/Algebra/999_Review/image/SmartSelect_20210420-000457_Xodo_Docs.jpg)
 :::
 
 [[P-TTUVH]] [[P-ZIMYA]] [[P-ZYHXO]] [[P-4FVOI]] [[P-UZDCX]]

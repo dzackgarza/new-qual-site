@@ -35,7 +35,7 @@ Note the subtle differences in dimension: $S^n$ is a manifold of dimension $n$ e
 <!--\node at (5.9, -5.5) {$\SS^2$};-->
 <!--\end{tikzpicture}-->
 
-![Low Dimensional Discs/Balls vs Spheres](../../../assets/40_Topology/figures/image_2021-01-10-23-20-27.png)
+![Low Dimensional Discs/Balls vs Spheres](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
 
 :::
 

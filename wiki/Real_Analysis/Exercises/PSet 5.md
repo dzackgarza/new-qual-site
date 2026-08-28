@@ -281,7 +281,7 @@ We have
 
 since $f$ was assumed to be in $L^1(\RR)$, where the changed bounds of integration are determined by considering the following diagram:
 
-![Changing the bounds of integration](../../../assets/20_Real_Analysis/500_Exercises/figures/2019-10-22-22:32.png)
+![Changing the bounds of integration](../../../assets/Real_Analysis/500_Exercises/figures/2019-10-22-22:32.png)
 
 To justify the change in the order of integration, consider the function $H(x, y) = \frac{1}{2h} \chi_A(x, y) f(y)$ where $A = \theset{(x, y) \in \RR^2 \suchthat -\infty < x-h \leq x, y \leq x+h}$.
 Since $f$ is measurable, the constant function $(x, y) \mapsto \frac{1}{2h}$ is measurable, and characteristic functions are measurable, $H$ is a product of measurable functions and thus measurable.

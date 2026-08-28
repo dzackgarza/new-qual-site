@@ -16,7 +16,7 @@ The most common spaces appearing in this theory:
 
 The first 4 can be obtained from the following pasting diagrams:
 
-![Pasting Diagrams for Surfaces](../../../../assets/assets/40_Topology/figures/PastingDiagrams.png)
+![Pasting Diagrams for Surfaces](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
 
 :::
 

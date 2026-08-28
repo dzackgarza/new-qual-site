@@ -6,9 +6,9 @@ order: 220
 
 Some pictures to keep in mind when it comes to covers and path lifting: 
 
-![Picture to keep in mind](../../../../assets/assets/40_Topology/figures/image_2021-01-10-13-45-42.png)
+![Picture to keep in mind](../../../../assets/assets/Topology/figures/image_2021-01-10-13-45-42.png)
 
-![A more complicated situation](../../../../assets/assets/40_Topology/figures/image_2021-01-09-00-19-03.png)
+![A more complicated situation](../../../../assets/assets/Topology/figures/image_2021-01-09-00-19-03.png)
 
 ## Useful Facts
 
@@ -215,7 +215,7 @@ S^1
 \end{tikzcd}
 given by the $n\dash$valent Cayley graph covering a wedge of circles.
 
-![For $n=2$](../../../../assets/assets/40_Topology/figures/2021-07-03_16-55-01.png)
+![For $n=2$](../../../../assets/assets/Topology/figures/2021-07-03_16-55-01.png)
 
 \begin{tikzcd}
 \ZZ/n
@@ -276,7 +276,7 @@ The fiber above the base point contains every point on the integer lattice $\ZZ 
 :::{.example title="Wedge of circles"}
 The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen, and the universal cover is the following 4-valent Cayley graph:
 
-![The universal cover of $\S^1 \vee S^1$](../../../../assets/assets/40_Topology/figures/image_2021-01-10-13-19-32.png)
+![The universal cover of $\S^1 \vee S^1$](../../../../assets/assets/Topology/figures/image_2021-01-10-13-19-32.png)
 
 See [@Hat02, p. 58] for other covers.
 
@@ -287,7 +287,7 @@ See [@Hat02, p. 58] for other covers.
 :::{.example title="Wedge of projective spaces"}
 The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ_2 \ast \ZZ_2$, corresponding to an infinite string of copies of 2-valent $S^2$s:
 
-![Another universal cover.](../../../../assets/assets/40_Topology/figures/image_2021-01-10-13-14-27.png)
+![Another universal cover.](../../../../assets/assets/Topology/figures/image_2021-01-10-13-14-27.png)
 
 :::
 
@@ -295,7 +295,7 @@ The fundamental group of $\RP^2 \vee \RP^2$ is $\ZZ_2 \ast \ZZ_2$, corresponding
 The fundamental group of $\RP^2 \vee T^2$ is $\ZZ_2 \ast \ZZ$, and the universal cover is shown in the following image.
 Each red vertex corresponds to a copy of $S^2$ covering $\RP^2$ (having exactly 2 neighbors each), and each blue vertex corresponds to $\RR^2$ cover $\TT^2$, with $\abs{\ZZ^2}$ many vertices as neighbors.
 
-![Universal cover of $\TT^2 \vee \RP^2$](../../../../assets/assets/40_Topology/figures/tree_cover.png)
+![Universal cover of $\TT^2 \vee \RP^2$](../../../../assets/assets/Topology/figures/tree_cover.png)
 
 :::
 

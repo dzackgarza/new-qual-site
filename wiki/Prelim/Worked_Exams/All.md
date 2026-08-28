@@ -3,7 +3,7 @@ order: 100001
 title: Qualifying Exam Review
 ---
 
-!include "sections/2017 Fall.md"
+!include "sections/Fall 2017.md"
 
 ## Notes
 
@@ -13,7 +13,7 @@ title: Qualifying Exam Review
 
 - Find a way to consistently + quickly remember the direction of injectivity
 
-!include "sections/2016 Fall.md"
+!include "sections/Fall 2016.md"
 
 ## Notes
 
@@ -27,7 +27,7 @@ title: Qualifying Exam Review
 
 - Alternate iff proof for $P\iff Q$: prove $P \implies Q$ and $\neg P \implies \neg Q$.
 
-!include "sections/2015 Fall.md"
+!include "sections/Fall 2015.md"
 
 ## Notes
 
@@ -35,7 +35,7 @@ title: Qualifying Exam Review
 
 - Review notions of differentiability
 
-!include "sections/2014 Fall.md"
+!include "sections/Fall 2014.md"
 
 ## Notes
 

@@ -53,107 +53,107 @@ Included years:
 
 - [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf)
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^b9b6b4]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^b9b6b4]]
 
-- [[30_Complex_Analysis/09_Quals/070_Morera#^a550c1]]
+- [[Complex_Analysis/Quals/Morera#^a550c1]]
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^1eefcc]]
+- [[Complex_Analysis/Quals/Computing Integrals#^1eefcc]]
 
-- [[30_Complex_Analysis/09_Quals/005 Montel#^b0c999]]
+- [[Complex_Analysis/Quals/Montel#^b0c999]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^ee1748]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^ee1748]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^33ab95]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^33ab95]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#^efdbde]]
+- [[Complex_Analysis/Quals/Conformal Maps#^efdbde]]
 
 ## Spring 2021
 
 - [Spring 2021](https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring2020.pdf)
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^7d0c77]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^7d0c77]]
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^0a6802]]
+- [[Complex_Analysis/Quals/Computing Integrals#^0a6802]]
 
-- [[30_Complex_Analysis/09_Quals/051_Polynomials#^409461]]
+- [[Complex_Analysis/Quals/Polynomials#^409461]]
 
-- [[30_Complex_Analysis/09_Quals/051_Polynomials#^c3336f]]
+- [[Complex_Analysis/Quals/Polynomials#^c3336f]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^14ad86]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^14ad86]]
 
-- [[30_Complex_Analysis/09_Quals/005 Montel#^c94b57]]
+- [[Complex_Analysis/Quals/Montel#^c94b57]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#^644ace]]
+- [[Complex_Analysis/Quals/Conformal Maps#^644ace]]
 
 ## Fall 2020
 
 [Fall 2020](https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2020.pdf)
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^b9b6b4]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^b9b6b4]]
 
-- [[30_Complex_Analysis/09_Quals/006 Series Convergence#^c47851]]
+- [[Complex_Analysis/Quals/Series Convergence#^c47851]]
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^5fa654]]
+- [[Complex_Analysis/Quals/Computing Integrals#^5fa654]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^0f90ac]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^0f90ac]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#^931c0a]]
+- [[Complex_Analysis/Quals/Conformal Maps#^931c0a]]
 
-- [[30_Complex_Analysis/09_Quals/040_Maximum_Modulus#^189826]]
+- [[Complex_Analysis/Quals/Maximum_Modulus#^189826]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^4c605e]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^4c605e]]
 
 ## Spring 2020
 
 [Spring 2020](https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring2020.pdf)
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^ea471a]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^ea471a]]
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^c765ed]]
+- [[Complex_Analysis/Quals/Computing Integrals#^c765ed]]
 
-- [[30_Complex_Analysis/09_Quals/050 Liouville#^c6e205]]
+- [[Complex_Analysis/Quals/Liouville#^c6e205]]
 
-- [[30_Complex_Analysis/09_Quals/022 Singularities#^4bd9ee]]
+- [[Complex_Analysis/Quals/Singularities#^4bd9ee]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#Spring 2020.5, Spring 2019.6]]
+- [[Complex_Analysis/Quals/Conformal Maps#Spring 2020.5, Spring 2019.6]]
 
-- [[30_Complex_Analysis/09_Quals/300_Riemann Mapping, Casorati#^128e58]]
+- [[Complex_Analysis/Quals/Riemann Mapping, Casorati#^128e58]]
 
-- [[30_Complex_Analysis/09_Quals/040_Maximum_Modulus#^aff739]]
+- [[Complex_Analysis/Quals/Maximum_Modulus#^aff739]]
 
 ## Fall 2019
 
 [Fall 2019](https://www.math.uga.edu/sites/default/files/ComplexQual_Fall2019.pdf)
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^d9cb99]]
+- [[Complex_Analysis/Quals/Computing Integrals#^d9cb99]]
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^a35657]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^a35657]]
 
-- [[30_Complex_Analysis/09_Quals/035_Cauchy Theorem#^f2a684]]
+- [[Complex_Analysis/Quals/Cauchy Theorem#^f2a684]]
 
-- [[30_Complex_Analysis/09_Quals/300_Riemann Mapping, Casorati#^398dec]]
+- [[Complex_Analysis/Quals/Riemann Mapping, Casorati#^398dec]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#^043381]]
+- [[Complex_Analysis/Quals/Conformal Maps#^043381]]
 
-- [[30_Complex_Analysis/09_Quals/007 CR and Holomorphy#^430a0a]]
+- [[Complex_Analysis/Quals/CR and Holomorphy#^430a0a]]
 
 ## Spring 2019
 
 [Spring 2019](https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf)
 
-- [[30_Complex_Analysis/09_Quals/001_Real_Review#^0a8ca5]]
+- [[Complex_Analysis/Quals/Real_Review#^0a8ca5]]
 
-- [[30_Complex_Analysis/09_Quals/030_Computing Integrals#^5fa654]]
+- [[Complex_Analysis/Quals/Computing Integrals#^5fa654]]
 
-- [[30_Complex_Analysis/09_Quals/010_Geometry Arithmetic#^c8872d]]
+- [[Complex_Analysis/Quals/Geometry Arithmetic#^c8872d]]
 
-- [[30_Complex_Analysis/09_Quals/051_Polynomials#^047423]]
+- [[Complex_Analysis/Quals/Polynomials#^047423]]
 
-- [[30_Complex_Analysis/09_Quals/200_Schwarz_Lemma#^14ad86]]
+- [[Complex_Analysis/Quals/Schwarz_Lemma#^14ad86]]
 
-- [[30_Complex_Analysis/09_Quals/105_Conformal Maps#Spring 2020.5, Spring 2019.6]]
+- [[Complex_Analysis/Quals/Conformal Maps#Spring 2020.5, Spring 2019.6]]
 
-- [[30_Complex_Analysis/09_Quals/005 Montel#^d94130]]
+- [[Complex_Analysis/Quals/Montel#^d94130]]
 
 ## Fall 2018
 

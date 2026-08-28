@@ -47,7 +47,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 [[SRC-UGA-CA-FALL-2021]]
 
 Official exam PDFs as posted by the department.
-The Fall 2021 paper is [[30_Complex_Analysis/09_Quals/9999_2021_Fall|kept together]] under Quals; the rest of the imported problems are filed by topic there.
+The Fall 2021 paper is [[Complex_Analysis/Quals/2021_Fall|kept together]] under Quals; the rest of the imported problems are filed by topic there.
 
 These exams are in the corpus:
 

@@ -7,4 +7,4 @@ order: 2
 
 Abstract measure: $\sigma$-algebras, construction of Lebesgue measure, and the usual approximation of measurable sets by opens.
 
-[[00_Measure|Measure Theory]] is the note. [[90_Exercises|Exercises]] is the drill.
+[[Measure|Measure Theory]] is the note. [[Exercises|Exercises]] is the drill.

@@ -7,4 +7,4 @@ order: 7
 
 Casorati–Weierstrass, Montel's theorem, and Picard: what a holomorphic function can miss.
 
-[[020_Casorati-Weierstrass|Casorati-Weierstrass]], [[050_Montel|Montel]], [[070_Picard|Picard]].
+[[Casorati-Weierstrass|Casorati-Weierstrass]], [[Montel|Montel]], [[Picard|Picard]].
