@@ -24,8 +24,6 @@ $\GF(p^n)$ is a simple extension over $\FF_p$.
 
 :::
 
-[[D-VRPYB]]
-
 [[FD-2EVYB]]
 
 [[FD-KWXK3]] [[FD-HVSOB]] [[FD-NS5RF]]

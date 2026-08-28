@@ -8,8 +8,6 @@ order: 40
 
 [[D-NQZUY]]
 
-[[D-7563L]]
-
 [[PR-TAPZF]]
 
 [[FF-UYMWY]]

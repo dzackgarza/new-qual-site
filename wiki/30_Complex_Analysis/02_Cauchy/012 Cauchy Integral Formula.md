@@ -10,7 +10,7 @@ order: 12
 
 [[FT-5V4M2]]
 
-[[FT-AK34G]] [[FT-LKXUW]]
+[[FT-AK34G]]
 
 ::: {.proof}
 

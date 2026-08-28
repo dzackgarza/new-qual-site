@@ -38,8 +38,6 @@ Compare to real functions: $f(x) = x^3$ is injective on $(-c, c)$ for any $c$ bu
 
 [[D-IJMPJ]]
 
-[[FD-VTT7T]]
-
 [[D-MBDTR]]
 
 [[D-PPYCK]]
