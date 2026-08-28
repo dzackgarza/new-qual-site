@@ -1,0 +1,333 @@
+schema: qual/publication@2
+id: GUIDE-APPLIED-ALGEBRA
+kind: study-guide
+title: Applied Algebra
+lede: >-
+  Applied algebra is a separate exam track from the algebra qual, and it asks for
+  computation rather than classification: the spectral and factorisation theory of a
+  concrete matrix, the character theory that turns a finite group into a table of
+  integers, the symmetric functions that make that table combinatorial for the
+  symmetric group, and the Gröbner machinery that makes an ideal decidable. The path
+  below runs in that order, because each layer is the previous one made effective.
+  Every section is problem panels drawn from the exams: the definition and theorem
+  cards the other guides open with have not been written for this subject yet, so
+  what is offered here is the ordered reading of the problems themselves.
+sections:
+  - slug: matrix-analysis
+    title: Matrix Analysis
+    parent: GUIDE-APPLIED-ALGEBRA
+    lede: >-
+      The subject starts where linear algebra stops being about solving systems and
+      starts being about the structure a matrix carries. The Hermitian case is the
+      one everything else is measured against: its eigenvalues are real, Rayleigh
+      quotients and Courant--Fischer characterise them variationally, and interlacing
+      says what a low-rank update can move them by. Normality is the exact condition
+      for a unitary diagonalisation, and the singular value decomposition is what
+      survives when normality fails, which is why it, and not the eigendecomposition,
+      is the factorisation the applied problems reach for. Positive definiteness
+      supplies the square root and with it the polar factorisation $A = UH$, and the
+      Jordan form is kept for the questions that are genuinely about a nilpotent part
+      -- reading a form off a rank sequence, or watching it fail to be continuous.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Linear Algebra
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Inner Product Spaces
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Norms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Hermitian Matrices
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Positive Definite Matrices
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Normal Operators
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Singular Values
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Diagonalization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Jordan Canonical Form
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Minimal and Characteristic Polynomials
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Linear Transformations
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Multilinear Algebra
+          limit: 500
+          review:
+            mode: any
+  - slug: representation-theory
+    title: Representation Theory
+    parent: matrix-analysis
+    lede: >-
+      A representation is a homomorphism into a matrix group, so everything the
+      previous section established about unitary structure and diagonalisation is in
+      force from the start: averaging puts an invariant inner product on the space,
+      which is what makes every finite-group representation over $\mathbb{C}$ a direct
+      sum of irreducibles. The character is the trace, and because trace is invariant
+      under conjugation it is a function on conjugacy classes; orthogonality of
+      characters turns the decomposition of a module into an inner product of two
+      integer vectors, which is why so much of the section is arithmetic on a
+      character table. The counts the table has to satisfy -- the number of
+      irreducibles against the number of classes, the sum of the squares of the
+      degrees against the group order -- are usually enough to reconstruct a table
+      from very little, and the questions here exploit that. Induction and
+      restriction move a module between a group and a subgroup, and Frobenius
+      reciprocity is the statement that they are adjoint.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Representation Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Character Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Group Algebras
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Group Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Group Actions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - p-groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Abelian Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Classification
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Modules
+          limit: 500
+          review:
+            mode: any
+  - slug: symmetric-functions
+    title: Symmetric Functions and the Symmetric Group
+    parent: representation-theory
+    lede: >-
+      For $S_n$ the general theory of the previous section becomes combinatorics.
+      Partitions of $n$ index the conjugacy classes and therefore the irreducibles,
+      the Specht modules; standard Young tableaux count their dimensions;
+      Murnaghan--Nakayama evaluates a character by removing rim hooks rather than by
+      any linear algebra. The characteristic map carries this across to symmetric
+      functions, where the Schur functions are the images of the irreducible
+      characters and the inner product of characters becomes the Hall inner product.
+      Induction from a Young subgroup becomes multiplication of Schur functions, and
+      the Littlewood--Richardson rule is the tableau count that gives the
+      coefficients. The enumeration problems at the end -- Pólya counting, generating
+      functions -- are the same orbit-counting idea used without the module theory.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Symmetric Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Tableaux
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Littlewood-Richardson Rule
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Permutations
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Combinatorics
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Generating Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Pólya Enumeration
+          limit: 500
+          review:
+            mode: any
+  - slug: grobner-bases-and-varieties
+    title: Gröbner Bases and Varieties
+    parent: GUIDE-APPLIED-ALGEBRA
+    lede: >-
+      An ideal of a polynomial ring is not decidable as written: membership, equality
+      and elimination all need a normal form, and a monomial order plus Buchberger's
+      algorithm supply one. A Gröbner basis reduces membership to division with
+      remainder, and eliminating variables from it solves a polynomial system by
+      triangularising it. The Nullstellensatz is the bridge back to geometry --
+      vanishing on the variety is membership in the radical, not in the ideal -- and
+      the Rabinowitsch trick, adjoining a variable to invert a polynomial, is how
+      radical membership is decided by the same machinery. A finite variety is
+      exactly a finite-dimensional quotient, and the monomials outside the initial
+      ideal are the basis that makes the dimension countable.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Gröbner Bases
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Commutative Algebra
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Integral Domains
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Polynomial Systems
+          limit: 500
+          review:
+            mode: any
+  - slug: invariant-theory
+    title: Invariant Theory
+    parent: grobner-bases-and-varieties
+    lede: >-
+      The last section is the other two joined: a finite group acts linearly on a
+      polynomial ring and the question is what survives. The invariant ring is
+      finitely generated, generators can be produced by averaging over the group and
+      reduced with a Gröbner basis, and the Hilbert series counts invariants degree by
+      degree. Molien's formula computes that series from the character of the action
+      alone, which is why this section assumes the character theory as much as it
+      assumes the polynomial algebra above it -- and why two isomorphic subgroups of
+      $\mathrm{GL}_2(\mathbb{C})$ can have different Hilbert series: the series is an
+      invariant of the representation, not of the abstract group.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Invariant Theory
+          limit: 500
+          review:
+            mode: any

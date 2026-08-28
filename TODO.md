@@ -1108,7 +1108,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Half done.
   `vocabularies/areas.yaml` carries a name beside every id and nothing read it: every label on the site was the id title-cased.
   Browse, Generate, and the problem browser's headings now call an area what the registry calls it, and offer the six in the registry's order.
-  What is left is not a naming question and needs a decision: Workshops is a guide but not an area, Applied Algebra is an area with no guide, and the wiki files Workshops under each subject rather than beside them.
+  Applied Algebra now has a guide, per the owner's decision, so Guides covers all six areas and Workshops is the seventh entry rather than a substitute for one.
+  It is built from problem panels: the subject has 247 problems and no definition, theorem or example cards, and the other five guides open each section with those.
+  Writing them is its own piece of mathematics and belongs under issue #2.
+  What is left of this item: the wiki files Workshops under each subject rather than beside them, and calls the prelim branch `Prelims` where the registry says `Prelim`.
 
 ### Collections
 
