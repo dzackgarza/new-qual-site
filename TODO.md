@@ -1165,6 +1165,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   It resolves its links from the site root, so they work at whatever depth the missing address had.
   `just preview` now serves it for a missing path, the way Pages does.
 
-- [ ] Replace the card-count table on the landing page with orientation.
+- [x] Replace the card-count table on the landing page with orientation.
   A 14-row inventory (Proofs 7, Hints 1, Strategies 6) sits above the one sentence that tells a reader where to start.
   The page never explains Guides against Wiki.
+  Fixed: one sentence of scale, then each of the five header entries with what it is for.
+  Guides and Wiki are separated by shape -- a path to read against notes to look a topic up -- which is what the two artifacts already are.
+  Whether the site should carry both remains open above.
+  Every figure is still counted off the catalog.

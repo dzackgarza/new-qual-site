@@ -1637,23 +1637,40 @@ def index_page(
     pandoc: PandocServer,
     con: sqlite3.Connection,
 ) -> Page:
-    # Counted off what is actually in the catalog, not off a list of kinds kept
-    # here. A hand-written list silently omits every kind added after it, and
-    # the omission looks exactly like a count of zero.
-    counts = Counter(r["kind"] for r in _rows(con, "select kind from cards"))
-    labels = {
-        "problem": "Problems",
-        "collection": "Collections",
-    }
-
-    def plural(kind: str) -> str:
-        stem = kind.title()
-        return labels.get(kind) or (f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s")
-
-    body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
+    # Every number is counted off the catalog. A figure written into the copy
+    # is true on the day it is written and silently false afterwards.
+    scale = _rows(
+        con,
+        """
+        select
+          (select count(*) from cards where kind in ('problem', 'exercise')) as asked,
+          (select count(*) from exam_sources) as sittings,
+          (select count(distinct institution) from exam_sources) as institutions,
+          (select count(*) from cards where kind in ('problem', 'exercise')
+             and (id in (select card_id from sections where section_kind = 'solution')
+                  or id in (select target_id from relations where kind = 'solves'))) as solved
+        """,
+    )[0]
     output = _successful_outputs(
         pandoc.read_markdown(
-            ["| Cards | Count |\n|---|---|\n" + body + "\n\nStart with [the problem browser](problems.html), a [past exam](exams.html), or a [study guide](guides.html).\n"],
+            [
+                f"Past qualifying-exam problems, with the sources and notes to work them. "
+                f"{scale['asked']:,} problems and exercises, from {scale['sittings']:,} exam sittings "
+                f"at {scale['institutions']} institutions and from textbooks, homework sets and compiled scans. "
+                f"{scale['solved']:,} carry a written solution.\n\n"
+                "## Where to start\n\n"
+                "[Browse](problems.html)\n"
+                ": Every problem, filtered by area, topic, institution and year.\n\n"
+                "[Generate](generate.html)\n"
+                ": A practice set drawn to those same filters.\n\n"
+                "[Exams](exams.html)\n"
+                ": Each sitting as it was sat, problem by problem.\n\n"
+                "[Guides](guides.html)\n"
+                ": One ordered path per subject, built from the same problems. Read front to back:\n"
+                "  a section assumes only the sections above it.\n\n"
+                "[Wiki](wiki/index.html)\n"
+                ": Written notes filed by subject. Look one topic up rather than read a path.\n"
+            ],
             MARKDOWN,
         ),
         "index-page read",
@@ -2307,7 +2324,7 @@ def project(
         site_root,
         Path("404.html"),
         {"title": "No such page"},
-        '<p>This address names no page. It may name a card that was renamed, or a page that was never written.</p>'
+        "<p>This address names no page. It may name a card that was renamed, or a page that was never written.</p>"
         '<p>Start again from <a href="index.html">the home page</a>, '
         '<a href="problems.html">the problem browser</a>, '
         '<a href="exams.html">the exams</a>, '
