@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="Spring 2020.5"}
+:::{.problem}
 Find a conformal map that maps the region 
 \[
 R = \ts{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
@@ -21,7 +21,7 @@ R = \ts{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
 to the upper half plane.
 :::
 
-:::{.problem title="Spring 2019.6"}
+:::{.problem}
 Find a conformal map from 
 \[
 \ts{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }

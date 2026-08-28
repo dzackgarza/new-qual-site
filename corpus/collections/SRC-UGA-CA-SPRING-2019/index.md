@@ -21,7 +21,8 @@ source:
   - P-PM5FN
   - P-EA222
   - P-ZAVLU
-  - P-4X7XU
+  - id: P-4X7XU
+    comment: Spring 2019.6
   - P-VSKE4
   date:
     kind: academic-term

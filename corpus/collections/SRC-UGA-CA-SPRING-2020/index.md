@@ -20,6 +20,8 @@ source:
   - P-PSIBT
   - P-7ENEI
   - P-BTUCW
+  - id: P-4X7XU
+    comment: Spring 2020.5
   date:
     kind: academic-term
     term: spring
