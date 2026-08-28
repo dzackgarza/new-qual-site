@@ -220,7 +220,6 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             padded = unread_math(result.output, path)
             if padded:
                 errors.append(padded)
-                continue
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
             document = from_ast(result.output).walk(drop_path_captions).walk(anchor_block_markers).walk(unpack_cross_references)
             for key in CITEPROC_METADATA:

@@ -525,22 +525,27 @@ class ParsedCard(Strict):
 MARKDOWN = "markdown+fenced_divs+raw_tex+tex_math_dollars+tex_math_single_backslash+wikilinks_title_after_pipe"
 
 
-# `tex_math_dollars` needs no space inside the delimiters, so `$ x $` reads as
-# prose: the dollars survive as text and the macros between them are dropped on
-# the way to HTML. The reader says nothing about it, but it leaves a bare
-# `Str "$"` in the AST, and the corpus escapes no dollar sign anywhere, so that
-# token is the defect rather than a proxy for it.
-LITERAL_DOLLAR = '{"t":"Str","c":"$"}'
+# `tex_math_dollars` is strict about its delimiters in two ways the corpus broke:
+# `$ x $` needs no space inside them, and `$$ ... $$` allows no blank line between
+# them. Either way the dollars survive as text and the macros between them are
+# dropped on the way to HTML. The reader says nothing about it, but a delimiter it
+# declined becomes a `Str` of nothing but dollar signs, and the corpus escapes no
+# dollar sign anywhere, so that token is the defect rather than a proxy for it.
+#
+# A dollar attached to content -- `$L^1$` as a wikilink's title, which pandoc reads
+# as plain text -- is left alone: MathJax typesets it on the page the same as it
+# does a card title.
+TEXT_DOLLAR = re.compile(r'"t":"Str","c":"\$+"')
 
 
 def unread_math(ast_json: str, path: Path) -> Diagnostic | None:
     """Report a dollar sign the reader left as text instead of reading as math."""
-    if LITERAL_DOLLAR not in ast_json:
+    if not TEXT_DOLLAR.search(ast_json):
         return None
     return Diagnostic(
         DiagnosticCode.UNREAD_MATH,
         str(path),
-        "inline math is padded: write $x$, not $ x $, or pandoc reads it as prose",
+        "a $ reached the page as text: write $x$ not $ x $, and leave no blank line inside $$ ... $$",
     )
 
 
@@ -761,7 +766,6 @@ def parse_cards_with(
         padded = unread_math(result.output, path)
         if padded:
             errors.append(padded)
-            continue
         processable.append((path, card, result.output))
 
     sources = [source for _, _, source in processable]
