@@ -768,21 +768,8 @@ div.qual-section > .qual-section-qualifier {
   font-style: normal;
 }
 
-/* The YAML `subtitle`: a textbook or exam locator, not the opening sentence of
-   the card. It is metadata about the block, like the id above it, so it takes
-   the label's size and colour and stays tight to the name line. Upright,
-   because a plain-style statement sets its body in italic. Not scoped to the
-   section: a transcluded block carries it inside, a card page emits it above
-   the block, and it is the same line in both. */
-.qual-section-subtitle {
-  margin: 0 0 0.5rem;
-  color: var(--muted);
-  font-size: var(--label);
-  font-style: normal;
-}
-
 /* A review question is apparatus about the card, not part of it, so it joins
-   the metadata band the subtitle and the id already use. The run-in label is
+   the metadata band the id already uses. The run-in label is
    what separates it from them: in that band a bare sentence would read as
    another locator, and the sentence itself has to stay plain text so MathJax
    can typeset the mathematics inside it. */

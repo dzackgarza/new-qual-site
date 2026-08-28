@@ -511,6 +511,8 @@ source:
       comment: Munkres §28.6
     - id: E-70TGS
       comment: Munkres §28.7
+    - E-YAEMZ
+    - E-2LZES
   - name: '29'
     problems:
     - id: E-GO24I

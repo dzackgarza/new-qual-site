@@ -31,7 +31,6 @@ create table cards (
   id text primary key,
   kind text not null,
   title text not null,
-  subtitle text,                 -- null when the card has none; nothing derives one
   prompts text not null,         -- JSON list of review questions; '[]' when the card has none
   review text not null,
   source_path text not null,   -- diagnostics and edit links only, never identity
@@ -161,12 +160,12 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
     for p in parsed:
         c = p.card
         con.execute(
-            "insert into cards values (?,?,?,?,?,?,?,?)",
+            "insert into cards values (?,?,?,?,?,?,?)",
             # ponytail: JSON in one column, not a side table like `classifications`.
             # Prompts are only ever read back whole and in order, and the side
             # tables carry no position column -- ordering them would mean adding
             # one, which is more invention than a `json.loads` on the way out.
-            (c.id, c.kind, c.title, c.subtitle, json.dumps(c.prompts), c.review, p.source_path, p.ast),
+            (c.id, c.kind, c.title, json.dumps(c.prompts), c.review, p.source_path, p.ast),
         )
         for axis, terms in (
             ("area", c.classification.areas),

@@ -401,32 +401,6 @@ def test_day_first_audit_date_is_rejected(tmp_path: Path) -> None:
         parse_card(path)
 
 
-@pytest.mark.parametrize("fixture", ["PRB-INDEXP.md", "EXE-CENTER.md", "DEF-PGROUP.md", "THM-SYLOW.md"])
-def test_subtitle_parses_on_every_kind(tmp_path: Path, fixture: str) -> None:
-    """A subtitle is a second line under the card's name, not the name. It is
-    carried by `CardBase`, so a definition or theorem may have one and not only
-    the two kinds that pose work.
-
-    The fixtures span four kinds because the body titles this field replaces
-    were measured on ten, exercise and problem being only the two largest.
-    """
-    from qualc.model import parse_card
-
-    path = tmp_path / fixture
-    path.write_text((FIXTURES / fixture).read_text().replace("classification:\n", "subtitle: Hoffman and Kunze 1.2.1\nclassification:\n", 1))
-    card = parse_card(path).card
-    assert card.subtitle == "Hoffman and Kunze 1.2.1"
-    assert card.title != card.subtitle, "a subtitle is a second line, never a copy of the title"
-
-
-def test_subtitle_is_absent_unless_authored() -> None:
-    """No default string and nothing derived: the ~9,200 cards that carry no
-    subtitle have none, rather than a repeat of their own title."""
-    from qualc.model import parse_card
-
-    assert parse_card(FIXTURES / "PRB-INDEXP.md").card.subtitle is None
-
-
 def test_prompts_parse_in_authored_order(tmp_path: Path) -> None:
     """Several questions may front one card, so the mathematics is stored once
     and asked for in more than one way. Order is the author's."""
@@ -485,6 +459,15 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
         ("SRC-UGA-FIX", "P-INDEXP", "Problem 6"),
         ("SRC-UGA-FIX", "E-CENTER", None),
     ]
+
+    # Both numbers reach the reader, each next to the source that uses it. An
+    # entry with no comment falls back on the only locator its collection has,
+    # which is the position it was listed in.
+    appearances = (work / "build" / "quarto" / "_site" / "tag" / "P-INDEXP.html").read_text()
+    assert "Algebra homework 3, Spring 2020, Problem 5" in appearances
+    assert "UGA Algebra qualifying exam, Spring 2019, Problem 6" in appearances
+    uncommented = (work / "build" / "quarto" / "_site" / "tag" / "E-CENTER.html").read_text()
+    assert "Algebra homework 3, Spring 2020, problem 2" in uncommented
 
 
 def test_commented_entry_must_still_be_an_id(tmp_path: Path) -> None:

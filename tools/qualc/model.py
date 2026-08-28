@@ -113,11 +113,6 @@ class CardBase(Strict):
     card_schema: Literal["qual/card@1"] = Field(alias="schema")
     id: str
     title: str
-    # A second line under the title. Absent means the card has none; nothing
-    # derives one. Every kind may carry it -- the body titles it replaces were
-    # measured across ten kinds, exercise and problem being only the two
-    # largest.
-    subtitle: str | None = None
     # Questions that front this card for review. A list because one statement
     # can be asked for in several ways, and nothing picks between them. Empty
     # means the card has no review prompt; no prompt is derived from the title.

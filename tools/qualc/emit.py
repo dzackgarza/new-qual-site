@@ -592,7 +592,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *_subtitle_json(card), *body, *_prompts_json(card)],
+                [_transclusion_head(card), *body, *_prompts_json(card)],
             ],
         }
     ]
@@ -869,13 +869,6 @@ def _rename_json(node: object, number: str = "") -> None:
         _rename_json(node.get("c"))
 
 
-def _subtitle_json(card: sqlite3.Row) -> list[dict]:
-    """The card's YAML `subtitle`, as the line under its name."""
-    if not card["subtitle"]:
-        return []
-    return [{"t": "RawBlock", "c": ["html", f'<p class="qual-section-subtitle">{html.escape(card["subtitle"])}</p>']}]
-
-
 def _prompts_json(card: sqlite3.Row) -> list[dict]:
     """The card's review questions, one block each, after the statement.
 
@@ -908,7 +901,7 @@ def problem_json(
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
 
-    body = _subtitle_json(card) + _dup(jcache[card["id"]])
+    body = _dup(jcache[card["id"]])
     _rename_json(body)
     for kind in ("hints-at", "solves"):
         for rel in _related_rows(data, card["id"], kind):
@@ -936,7 +929,7 @@ def plain_json(
     appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _subtitle_json(card) + _dup(jcache[card["id"]])
+    body = _dup(jcache[card["id"]])
     _rename_json(body)
     body.extend(_prompts_json(card))
     body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
@@ -1540,16 +1533,20 @@ def card_appearances(
     for row in _rows(
         con,
         """
-        select cp.problem_id, cp.collection_id, cp.ordinal, c.title
+        select cp.problem_id, cp.collection_id, cp.ordinal, cp.comment, c.title
         from collection_problems cp
         join cards c on c.id=cp.collection_id
         order by c.title, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
+        # The listing's own comment is the locator the source uses -- "Fall 2011",
+        # "Munkres §28". Where an entry has none, the position in the list is all
+        # the collection knows about where the problem sat.
+        locator = row["comment"] or f"problem {row['ordinal'] + 1}"
         appearances[row["problem_id"]].append(
             Appearance(
                 target_key=row["collection_id"],
-                title=f"{row['title']}, problem {row['ordinal'] + 1}",
+                title=f"{row['title']}, {locator}",
             )
         )
     for manifest in manifests:

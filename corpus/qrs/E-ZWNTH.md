@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-ZWNTH
 kind: exercise
-title: Application of summation by parts
-subtitle: '1.20: Series convergence on the circle'
+title: Series convergence on the circle by summation by parts
 classification:
   areas:
   - complex-analysis

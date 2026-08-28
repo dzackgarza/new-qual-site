@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-2LZES
 kind: exercise
-title: Compactness, limit point compactness, and sequential compactness are equivalent
-  for metrizable spaces
-subtitle: Munkres §28
+title: Compactness, limit point compactness, and sequential compactness are equivalent for metrizable spaces
 classification:
   areas:
   - topology

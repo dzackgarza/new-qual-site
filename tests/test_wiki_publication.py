@@ -164,7 +164,6 @@ class Transclusion:
     card_id: str
     label: str
     heading: str
-    subtitle: str
     tag_href: str
     inner_labels: list[str]
     text: str
@@ -195,7 +194,6 @@ class TransclusionParser(HTMLParser):
                     card_id=identifier,
                     label=label,
                     heading="",
-                    subtitle="",
                     tag_href="",
                     inner_labels=[],
                     text="",
@@ -207,8 +205,6 @@ class TransclusionParser(HTMLParser):
             return
         if tag == "p" and "qual-section-title" in classes and not self._current.heading:
             self._part = "heading"
-        elif tag == "p" and "qual-section-subtitle" in classes:
-            self._part = "subtitle"
         elif tag == "a" and "qual-section-tag" in classes:
             href = attributes["href"]
             assert href is not None
@@ -219,8 +215,6 @@ class TransclusionParser(HTMLParser):
             return
         if self._part == "heading":
             self._current.heading += data
-        elif self._part == "subtitle":
-            self._current.subtitle += data
         else:
             self._current.text += data
 
@@ -230,7 +224,6 @@ class TransclusionParser(HTMLParser):
         elif tag == "div":
             if self._current is not None and self._open == self._depth:
                 self._current.heading = re.sub(r"\s+", " ", self._current.heading).strip()
-                self._current.subtitle = re.sub(r"\s+", " ", self._current.subtitle).strip()
                 self._current.text = re.sub(r"\s+", " ", self._current.text).strip()
                 self.blocks.append(self._current)
                 self._current = None
@@ -496,7 +489,6 @@ schema: qual/card@1
 id: PRP-TRACES
 kind: proposition
 title: Characteristic polynomials via traces of exterior powers
-subtitle: Hoffman and Kunze 1.2.1
 classification:
   areas:
   - algebra
@@ -520,14 +512,14 @@ Compare degrees.
 """
 
 
-def test_a_transcluded_card_is_named_by_its_yaml_title_and_subtitle(tmp_path: Path) -> None:
+def test_a_transcluded_card_is_named_by_its_yaml_title(tmp_path: Path) -> None:
     """The card's name has one owner: YAML `title`. The body attribute is not it.
 
     582 cards carry a name in both places and 85 of them diverge, the body
     string being the junk one -- here "Useful computational trick" over a real
-    name. The YAML `subtitle` is the second line. Sibling blocks of one kind are
-    numbered, which is what the authored "of a"/"of b" labels stood in for; a
-    nested `title=` is a part label and still renders.
+    name. Sibling blocks of one kind are numbered, which is what the authored
+    "of a"/"of b" labels stood in for; a nested `title=` is a part label and
+    still renders.
     """
     work = fixture_repo(tmp_path)
     (work / "corpus" / "PRP-TRACES.md").write_text(DIVERGENT_CARD)
@@ -544,12 +536,10 @@ def test_a_transcluded_card_is_named_by_its_yaml_title_and_subtitle(tmp_path: Pa
     assert [block.label for block in blocks.blocks] == ["Proposition 1", "Warning 1", "Proposition 2"]
     block = blocks.blocks[2]
     assert block.heading == "Characteristic polynomials via traces of exterior powers (Tag PRP-TRACES)"
-    assert block.subtitle == "Hoffman and Kunze 1.2.1"
     assert "Useful computational trick" not in block.heading
     assert block.inner_labels == ["Proof 1", "Proof 2"]
 
     card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRP-TRACES.html").read_text()
-    assert '<p class="qual-section-subtitle">Hoffman and Kunze 1.2.1</p>' in card_page
     # The authored title qualifies the block's own label -- "Proof 1 (of a)" --
     # so it is bracketed and carries the class the label line is built from,
     # not the class a card's name uses.
