@@ -88,6 +88,91 @@ def test_missing_asset_fails_the_build(tmp_path: Path) -> None:
         )
 
 
+PACKET_PROBLEM = """---
+schema: qual/card@1
+id: P-PACKET-1
+kind: problem
+title: Classify the groups of order $pq$
+classification:
+  areas:
+  - algebra
+  topics:
+  - Groups
+relations: []
+review: draft
+---
+
+::: problem
+Let $p < q$ be primes. Classify the groups of order $pq$ up to isomorphism.
+:::
+"""
+
+COMPILATION_LISTING_A_SIBLING = """---
+schema: qual/card@1
+id: SRC-PACKET
+kind: collection
+title: Algebra qual packet
+classification:
+  areas:
+  - algebra
+  topics:
+  - Groups
+relations: []
+review: draft
+source:
+  source_kind: compilation
+  area: algebra
+  date:
+    kind: year
+    year: 2019
+  sections:
+  - name: Reprinted exam
+    problems:
+    - SRC-UGA-FIX
+  - name: Additional problems
+    problems:
+    - P-PACKET-1
+---
+
+::: remark
+A compilation reprints whole exams. Those entries are collections, not problems.
+:::
+"""
+
+
+def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) -> None:
+    """A card's page is under `exam/` or `tag/` by its kind, and links agree.
+
+    `SRC-PACKET` lists a sibling collection among its contents, which is the
+    shape the real compilations use. A link written for it as a problem points
+    at `tag/SRC-UGA-FIX.html`, and nothing writes that file.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {"SRC-PACKET.md": COMPILATION_LISTING_A_SIBLING, "P-PACKET-1.md": PACKET_PROBLEM},
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    assert (site / "exam" / "SRC-PACKET.html").exists()
+
+    # Card links only. A fixture corpus has no wiki, so the navbar's wiki entry
+    # has nothing to resolve to and says nothing about how cards are routed.
+    dead = []
+    for page in sorted(site.rglob("*.html")):
+        links = LinkCollector()
+        links.feed(page.read_text())
+        for href in links.hrefs:
+            target = href.split("#")[0]
+            if not re.search(r"(?:^|/)(?:tag|exam)/[A-Z]", target):
+                continue
+            if not (page.parent / target).resolve().exists():
+                dead.append(f"{page.relative_to(site)} -> {href}")
+    assert dead == []
+
+
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
 

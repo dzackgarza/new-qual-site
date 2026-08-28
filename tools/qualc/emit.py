@@ -1089,15 +1089,25 @@ def _inlines(
     return copy.deepcopy(cache[source])
 
 
+def _card_route(card: sqlite3.Row) -> str:
+    """A collection's page is written under `exam/`, every other card under `tag/`.
+
+    The caller supplies only the path back to the site root, so a link to a card
+    cannot disagree with where that card was written. A collection may list a
+    sibling collection among its contents, and then the target is not a problem.
+    """
+    return "exam" if card["kind"] == "collection" else "tag"
+
+
 def _link(
     card: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
-    prefix: str = "../tag/",
+    base: str = "../",
 ) -> pf.Plain:
     return pf.Plain(
         pf.Link(
             *_inlines(card["title"], inline_cache),
-            url=f"{prefix}{card['id']}.html",
+            url=f"{base}{_card_route(card)}/{card['id']}.html",
         )
     )
 
@@ -1759,7 +1769,7 @@ def problem_browser_page(
         ).lower()
         rows.append(
             pf.Div(
-                _link(problem, inline_cache, prefix="tag/"),
+                _link(problem, inline_cache, base=""),
                 pf.Plain(pf.Str(facet_text or "Unclassified")),
                 pf.Plain(pf.Str("Sources: "), *source_links) if source_links else pf.Plain(pf.Str("Sources: none")),
                 classes=["problem-row"],
@@ -1803,12 +1813,12 @@ def link_list_page(
     title: str,
     lede: str,
     rows: list[sqlite3.Row],
-    prefix: str,
+    base: str,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
     return {"title": title}, [
         pf.Para(*_inlines(lede, inline_cache)),
-        pf.BulletList(*[pf.ListItem(_link(row, inline_cache, prefix)) for row in rows]),
+        pf.BulletList(*[pf.ListItem(_link(row, inline_cache, base)) for row in rows]),
     ]
 
 
@@ -1940,8 +1950,7 @@ def _link_targets(
         targets[target.as_posix()] = target
 
     for card in _rows(con, "select id, kind from cards"):
-        directory = "exam" if card["kind"] == "collection" else "tag"
-        add(card["id"], Path(directory) / f"{card['id']}.html")
+        add(card["id"], Path(_card_route(card)) / f"{card['id']}.html")
     for guide in guides:
         add(_publication_root_target_key(guide), _publication_root_route(guide))
         for section in guide.sections:
@@ -1971,7 +1980,7 @@ def _search_records(
         """,
     )
     for card in cards:
-        directory = "exam" if card["kind"] == "collection" else "tag"
+        directory = _card_route(card)
         search = " ".join(
             (
                 card["id"],
@@ -2332,7 +2341,7 @@ def project(
                     con,
                     "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
                 ),
-                "exam/",
+                "",
                 inline_cache,
             ),
             out / "exams.qmd",
