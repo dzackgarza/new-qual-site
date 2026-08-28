@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OW8A0
 kind: exercise
 title: The subspace metric
-subtitle: Munkres §21.1
 classification:
   areas:
   - topology

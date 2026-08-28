@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BRPKJ
 kind: exercise
 title: Where a proof about closures of unions fails
-subtitle: Munkres §17.7
 classification:
   areas:
   - topology

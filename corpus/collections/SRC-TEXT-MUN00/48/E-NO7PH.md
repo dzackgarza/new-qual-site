@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-NO7PH
 kind: exercise
 title: Is the lower limit line a Baire space
-subtitle: Munkres §48.11
 classification:
   areas:
   - topology

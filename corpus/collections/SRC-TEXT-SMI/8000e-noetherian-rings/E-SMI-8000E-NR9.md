@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR9
 kind: exercise
 title: Extensions of ideals along surjective ring maps
-subtitle: Smith 8000e noetherian rings 9
 classification:
   areas:
   - algebra

@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: P-5ADNP
 kind: problem
-title: $\operatorname{cl}_X(B)\cap A=\operatorname{cl}_A(B)$ for $B\subset A\subset
-  X$
-subtitle: Fall 2011
+title: $\operatorname{cl}_X(B)\cap A=\operatorname{cl}_A(B)$ for $B\subset A\subset X$
 classification:
   areas:
   - topology

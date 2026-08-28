@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-3
 kind: exercise
-title: "Containment and nonemptiness of infinite products"
-subtitle: Munkres §5.3
+title: Containment and nonemptiness of infinite products
 classification:
   areas:
   - topology

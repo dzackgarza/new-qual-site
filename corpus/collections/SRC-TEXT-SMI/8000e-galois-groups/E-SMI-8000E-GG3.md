@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GG3
 kind: exercise
 title: Two realizations of the field with 125 elements and an isomorphism between them
-subtitle: Smith 8000e galois 3
 classification:
   areas:
   - algebra

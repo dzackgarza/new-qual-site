@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-CTRQ
 kind: exercise
-title: "Invertibility via row operations and finding inverses"
-subtitle: Hoffman and Kunze 1.6.3
+title: Invertibility via row operations and finding inverses
 classification:
   areas:
   - algebra

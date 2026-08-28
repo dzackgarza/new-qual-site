@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1XT8N
 kind: exercise
 title: Continuity of the affine map in the uniform topology
-subtitle: Munkres §20.7
 classification:
   areas:
   - topology

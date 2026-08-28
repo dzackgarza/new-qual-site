@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-2
 kind: exercise
-title: "Preimage preserves all set operations; image preserves unions only"
-subtitle: Munkres §2.2
+title: Preimage preserves all set operations; image preserves unions only
 classification:
   areas:
   - topology

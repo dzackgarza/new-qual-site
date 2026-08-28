@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QIADW
 kind: exercise
 title: Locally compact connected topological groups are paracompact
-subtitle: Munkres §41.9
 classification:
   areas:
   - topology

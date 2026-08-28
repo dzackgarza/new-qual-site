@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-7-2
 kind: exercise
 title: Bijections in the countability proofs for $\mathbb{Q}$
-subtitle: Munkres §7.2
 classification:
   areas:
   - topology

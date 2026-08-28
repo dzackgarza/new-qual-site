@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1CMTE
 kind: exercise
 title: Paracompactness and topological completeness in the basics review
-subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology

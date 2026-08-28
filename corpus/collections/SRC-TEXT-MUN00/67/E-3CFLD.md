@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3CFLD
 kind: exercise
 title: A full-rank proper subgroup of a free abelian group
-subtitle: Munkres §67.5
 classification:
   areas:
   - topology

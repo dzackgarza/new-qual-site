@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-6
 kind: exercise
-title: "Restricting domain and range to obtain a bijection"
-subtitle: Munkres §2.6
+title: Restricting domain and range to obtain a bijection
 classification:
   areas:
   - topology

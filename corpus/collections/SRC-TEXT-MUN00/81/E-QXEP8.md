@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QXEP8
 kind: exercise
 title: Lens spaces
-subtitle: Munkres §81.5
 classification:
   areas:
   - topology

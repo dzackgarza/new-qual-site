@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-OY2K
 kind: exercise
-title: "Solving a system of four equations in five unknowns"
-subtitle: Hoffman and Kunze 1.4.7
+title: Solving a system of four equations in five unknowns
 classification:
   areas:
   - algebra

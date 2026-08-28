@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-MT3
 kind: exercise
 title: Structure theorem for modules over a Euclidean domain; abelian groups of order 360
-subtitle: Smith 8000 fall 2006 midterm 3
 classification:
   areas:
   - algebra

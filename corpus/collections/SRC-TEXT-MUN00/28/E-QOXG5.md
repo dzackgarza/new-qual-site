@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QOXG5
 kind: exercise
 title: Countable compactness equals limit point compactness for T1 spaces
-subtitle: Munkres §28.4
 classification:
   areas:
   - topology

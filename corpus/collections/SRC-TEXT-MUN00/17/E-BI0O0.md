@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BI0O0
 kind: exercise
 title: Interior and boundary of a subset
-subtitle: Munkres §17.19
 classification:
   areas:
   - topology

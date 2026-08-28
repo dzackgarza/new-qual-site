@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-1
 kind: exercise
-title: "Well-ordered sets have the least upper bound property"
-subtitle: Munkres §10.1
+title: Well-ordered sets have the least upper bound property
 classification:
   areas:
   - topology

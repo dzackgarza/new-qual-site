@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PEXB6
 kind: exercise
 title: The comb space and a nowhere locally connected path-connected set
-subtitle: Munkres §25.5
 classification:
   areas:
   - topology

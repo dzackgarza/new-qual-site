@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XIHWT
 kind: exercise
 title: Distance to a set in a metric space
-subtitle: Munkres §27.2
 classification:
   areas:
   - topology

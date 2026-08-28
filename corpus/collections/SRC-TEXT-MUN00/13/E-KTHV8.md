@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KTHV8
 kind: exercise
 title: Sets containing a neighborhood of each of their points are open
-subtitle: Munkres §13.1
 classification:
   areas:
   - topology

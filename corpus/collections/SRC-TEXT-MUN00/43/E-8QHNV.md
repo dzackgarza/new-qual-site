@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8QHNV
 kind: exercise
 title: Uniformly continuous maps extend to the closure
-subtitle: Munkres §43.2
 classification:
   areas:
   - topology

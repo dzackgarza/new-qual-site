@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-3
 kind: exercise
-title: "Contrapositive, converse, and truth of conditional statements"
-subtitle: Munkres §1.3
+title: Contrapositive, converse, and truth of conditional statements
 classification:
   areas:
   - topology

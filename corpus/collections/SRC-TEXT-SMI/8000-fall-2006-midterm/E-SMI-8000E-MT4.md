@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-MT4
 kind: exercise
 title: Surjective non-injective endomorphisms and noetherian modules
-subtitle: Smith 8000 fall 2006 midterm 4
 classification:
   areas:
   - algebra

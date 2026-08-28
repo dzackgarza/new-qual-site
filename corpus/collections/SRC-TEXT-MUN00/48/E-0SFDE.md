@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0SFDE
 kind: exercise
 title: The line as a countable union of sets with empty interior
-subtitle: Munkres §48.2
 classification:
   areas:
   - topology

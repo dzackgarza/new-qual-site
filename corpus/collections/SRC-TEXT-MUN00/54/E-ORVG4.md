@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ORVG4
 kind: exercise
 title: Where path lifting fails for local homeomorphisms
-subtitle: Munkres §54.1
 classification:
   areas:
   - topology

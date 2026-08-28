@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-YECG
 kind: exercise
-title: 'Solutions of $AX = 0$ for $2 \times 2$ matrices'
-subtitle: Hoffman and Kunze 1.3.8
+title: Solutions of $AX = 0$ for $2 \times 2$ matrices
 classification:
   areas:
   - algebra

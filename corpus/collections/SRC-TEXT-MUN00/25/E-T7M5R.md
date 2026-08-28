@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-T7M5R
 kind: exercise
 title: The identity component of a topological group is normal
-subtitle: Munkres §25.9
 classification:
   areas:
   - topology

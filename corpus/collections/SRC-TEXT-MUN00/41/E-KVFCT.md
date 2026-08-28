@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KVFCT
 kind: exercise
 title: Sigma-compact regular spaces are paracompact
-subtitle: Munkres §41.6
 classification:
   areas:
   - topology

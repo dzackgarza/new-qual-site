@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AZ6JL
 kind: exercise
 title: Three topologies on the unit square
-subtitle: Munkres §16.10
 classification:
   areas:
   - topology

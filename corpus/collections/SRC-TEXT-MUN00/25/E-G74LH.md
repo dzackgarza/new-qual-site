@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-G74LH
 kind: exercise
 title: Connected open sets in locally path connected spaces
-subtitle: Munkres §25.4
 classification:
   areas:
   - topology

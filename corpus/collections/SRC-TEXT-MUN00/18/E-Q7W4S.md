@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Q7W4S
 kind: exercise
 title: Separate continuity does not imply continuity
-subtitle: Munkres §18.12
 classification:
   areas:
   - topology

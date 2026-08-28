@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-0YG3
 kind: exercise
-title: "Row-reduced echelon form is unique given the solution set"
-subtitle: Hoffman and Kunze 1.4.10
+title: Row-reduced echelon form is unique given the solution set
 classification:
   areas:
   - algebra

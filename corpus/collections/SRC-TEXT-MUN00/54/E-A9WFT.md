@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-A9WFT
 kind: exercise
 title: Induced homomorphisms of the power and reciprocal power maps
-subtitle: Munkres §54.6
 classification:
   areas:
   - topology

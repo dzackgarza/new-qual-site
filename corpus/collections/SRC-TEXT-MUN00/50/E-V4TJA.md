@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-V4TJA
 kind: exercise
 title: Five points in general position and K5 in space
-subtitle: Munkres §50.4
 classification:
   areas:
   - topology

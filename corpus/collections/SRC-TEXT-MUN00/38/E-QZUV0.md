@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QZUV0
 kind: exercise
 title: The Stone-Cech compactification is maximal among compactifications
-subtitle: Munkres §38.4
 classification:
   areas:
   - topology

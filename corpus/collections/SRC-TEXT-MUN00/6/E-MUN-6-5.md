@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-6-5
 kind: exercise
-title: "Finiteness of Cartesian products"
-subtitle: Munkres §6.5
+title: Finiteness of Cartesian products
 classification:
   areas:
   - topology

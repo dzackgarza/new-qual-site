@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DMMQW
 kind: exercise
 title: Basis theorem for the box and product topologies
-subtitle: Munkres §19.1
 classification:
   areas:
   - topology

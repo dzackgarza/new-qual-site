@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8T3QS
 kind: exercise
 title: The Tychonoff theorem via the well-ordering theorem
-subtitle: Munkres §37.5
 classification:
   areas:
   - topology

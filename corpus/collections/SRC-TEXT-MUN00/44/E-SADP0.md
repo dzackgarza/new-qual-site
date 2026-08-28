@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SADP0
 kind: exercise
 title: Continuous surjections from the interval onto cubes
-subtitle: Munkres §44.1
 classification:
   areas:
   - topology

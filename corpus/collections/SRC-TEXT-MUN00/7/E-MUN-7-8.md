@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-7-8
 kind: exercise
 title: Cardinality of countable subsets of $X^{\omega}$
-subtitle: Munkres §7.8
 classification:
   areas:
   - topology

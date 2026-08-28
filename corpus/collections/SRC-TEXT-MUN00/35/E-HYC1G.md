@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-HYC1G
 kind: exercise
 title: Topology coherent with an increasing sequence of closed subspaces
-subtitle: Munkres §35.9
 classification:
   areas:
   - topology

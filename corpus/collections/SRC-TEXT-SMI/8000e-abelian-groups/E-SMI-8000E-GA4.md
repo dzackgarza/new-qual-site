@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GA4
 kind: exercise
 title: Hom from a free abelian group into Q is a rational vector space of the same rank
-subtitle: Smith 8000e generators 4
 classification:
   areas:
   - algebra

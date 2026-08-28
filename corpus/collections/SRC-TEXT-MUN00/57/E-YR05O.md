@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YR05O
 kind: exercise
 title: Antipode-preserving maps of the circle act by odd powers
-subtitle: Munkres §57.3
 classification:
   areas:
   - topology

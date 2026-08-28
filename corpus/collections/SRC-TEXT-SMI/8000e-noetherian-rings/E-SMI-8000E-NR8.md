@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR8
 kind: exercise
 title: Contractions of ideals along ring maps
-subtitle: Smith 8000e noetherian rings 8
 classification:
   areas:
   - algebra

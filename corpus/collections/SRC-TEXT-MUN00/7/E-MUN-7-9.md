@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-9
 kind: exercise
-title: "Recursion formulas that fall outside the standard principle"
-subtitle: Munkres §7.9
+title: Recursion formulas that fall outside the standard principle
 classification:
   areas:
   - topology

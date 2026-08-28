@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-0H3A
 kind: exercise
-title: "Invertibility of upper-triangular matrices"
-subtitle: Hoffman and Kunze 1.6.9
+title: Invertibility of upper-triangular matrices
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TTX65
 kind: exercise
 title: Normal spaces have disjoint closure neighborhoods of closed sets
-subtitle: Munkres §31.2
 classification:
   areas:
   - topology

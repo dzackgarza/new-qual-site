@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-7-3
 kind: exercise
 title: Bijection between $\mathcal{P}(\mathbb{Z}_+)$ and $X^{\omega}$
-subtitle: Munkres §7.3
 classification:
   areas:
   - topology

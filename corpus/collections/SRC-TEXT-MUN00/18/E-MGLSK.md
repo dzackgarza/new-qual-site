@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MGLSK
 kind: exercise
 title: Right-continuous functions and the lower limit topology
-subtitle: Munkres §18.7
 classification:
   areas:
   - topology

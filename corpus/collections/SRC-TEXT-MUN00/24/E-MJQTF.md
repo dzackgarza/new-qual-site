@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MJQTF
 kind: exercise
 title: Interior and boundary of a connected set
-subtitle: Munkres §24.11
 classification:
   areas:
   - topology

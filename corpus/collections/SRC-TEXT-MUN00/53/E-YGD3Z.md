@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YGD3Z
 kind: exercise
 title: Properties of the total space of a covering
-subtitle: Munkres §53.6
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-A3WS1
 kind: exercise
 title: Reducing schemes of ten sides to standard form
-subtitle: Munkres §77.4
 classification:
   areas:
   - topology

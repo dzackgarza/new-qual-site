@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY2
 kind: exercise
 title: Disjoint cycles commute
-subtitle: Smith 8000e cycles 2
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KZUFG
 kind: exercise
 title: Covering maps of topological groups lift the group structure
-subtitle: Munkres §79.6
 classification:
   areas:
   - topology

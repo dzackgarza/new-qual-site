@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-SHA8
 kind: exercise
-title: "$AB$ not invertible when $n < m$"
-subtitle: Hoffman and Kunze 1.6.10
+title: $AB$ not invertible when $n < m$
 classification:
   areas:
   - algebra

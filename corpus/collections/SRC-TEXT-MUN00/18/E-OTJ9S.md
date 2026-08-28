@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OTJ9S
 kind: exercise
 title: Coordinate slices are imbeddings
-subtitle: Munkres §18.4
 classification:
   areas:
   - topology

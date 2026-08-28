@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MVB8P
 kind: exercise
 title: Sigma-compact Hausdorff spaces of finite dimension
-subtitle: Munkres §50.8
 classification:
   areas:
   - topology

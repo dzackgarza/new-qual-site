@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8K7RQ
 kind: exercise
 title: Components and continuous maps out of the lower limit line
-subtitle: Munkres §25.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BTI7W
 kind: exercise
 title: Pointwise but not uniform convergence to the zero function
-subtitle: Munkres §21.9
 classification:
   areas:
   - topology

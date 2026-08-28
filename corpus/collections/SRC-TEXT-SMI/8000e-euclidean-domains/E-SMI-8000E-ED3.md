@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-ED3
 kind: exercise
 title: Maps out of a free module are determined by images of generators
-subtitle: Smith 8000e euclidean domains 3
 classification:
   areas:
   - algebra

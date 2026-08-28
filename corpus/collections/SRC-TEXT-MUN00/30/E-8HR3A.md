@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8HR3A
 kind: exercise
 title: Every basis of a second-countable space contains a countable basis
-subtitle: Munkres §30.2
 classification:
   areas:
   - topology

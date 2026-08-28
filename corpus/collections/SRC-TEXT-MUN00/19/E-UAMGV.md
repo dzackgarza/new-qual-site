@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UAMGV
 kind: exercise
 title: The coarsest topology making a family of maps continuous
-subtitle: Munkres §19.10
 classification:
   areas:
   - topology

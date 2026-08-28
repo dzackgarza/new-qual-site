@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-N2
 kind: exercise
 title: Minimal primes of a ufd are principal
-subtitle: Smith 8000e normality 2
 classification:
   areas:
   - algebra

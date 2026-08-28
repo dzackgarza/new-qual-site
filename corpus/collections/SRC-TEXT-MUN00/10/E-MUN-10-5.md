@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-5
 kind: exercise
-title: "Well-ordering theorem implies the axiom of choice"
-subtitle: Munkres §10.5
+title: Well-ordering theorem implies the axiom of choice
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CEDQ9
 kind: exercise
 title: Maps of higher spheres into the circle are nulhomotopic
-subtitle: Munkres §79.1
 classification:
   areas:
   - topology

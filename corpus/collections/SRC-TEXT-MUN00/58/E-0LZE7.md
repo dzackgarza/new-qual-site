@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0LZE7
 kind: exercise
 title: The figure eight and the theta space are homotopy equivalent
-subtitle: Munkres §58.4
 classification:
   areas:
   - topology

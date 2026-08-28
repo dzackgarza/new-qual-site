@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-F68KP
 kind: exercise
 title: Nonmetrizability of the Stone-Cech compactification
-subtitle: Munkres §38.9
 classification:
   areas:
   - topology

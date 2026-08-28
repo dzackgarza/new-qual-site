@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-F8UOA
 kind: exercise
 title: Continuity sets are G-delta; no function continuous exactly on the rationals
-subtitle: Munkres §48.7
 classification:
   areas:
   - topology

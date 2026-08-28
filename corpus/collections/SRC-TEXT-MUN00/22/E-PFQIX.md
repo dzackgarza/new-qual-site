@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PFQIX
 kind: exercise
 title: Separation properties of topological groups and coset spaces
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

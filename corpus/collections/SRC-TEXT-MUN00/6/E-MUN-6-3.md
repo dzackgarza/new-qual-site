@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-6-3
 kind: exercise
 title: Cantor's theorem for $X^{\omega}$
-subtitle: Munkres §6.3
 classification:
   areas:
   - topology

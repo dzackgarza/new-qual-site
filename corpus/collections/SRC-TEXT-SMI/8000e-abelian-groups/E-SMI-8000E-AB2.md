@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-AB2
 kind: exercise
 title: A short exact sequence ending in free abelian splits
-subtitle: Smith 8000e abelian groups 2
 classification:
   areas:
   - algebra

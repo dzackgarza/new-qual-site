@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-7ML5F
 kind: exercise
 title: Separation axioms under refinement of topologies
-subtitle: Munkres §31.4
 classification:
   areas:
   - topology

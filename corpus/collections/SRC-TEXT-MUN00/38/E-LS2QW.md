@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LS2QW
 kind: exercise
 title: The Stone-Cech construction is a functor
-subtitle: Munkres §38.10
 classification:
   areas:
   - topology

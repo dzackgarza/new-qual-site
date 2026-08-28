@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY5
 kind: exercise
 title: Solvability of groups of order pq and p^2 q
-subtitle: Smith 8000e sylow 5
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-7-1
 kind: exercise
 title: Countability of $\mathbb{Q}$
-subtitle: Munkres §7.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-4-3
 kind: exercise
 title: Inductive sets and basic properties of $\mathbb{Z}_+$
-subtitle: Munkres §4.3
 classification:
   areas:
   - topology

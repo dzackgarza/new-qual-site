@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0S3OA
 kind: exercise
 title: Subgroups and closures of subgroups are topological groups
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WX8FM
 kind: exercise
 title: Homeomorphisms extend to one-point compactifications
-subtitle: Munkres §29.5
 classification:
   areas:
   - topology

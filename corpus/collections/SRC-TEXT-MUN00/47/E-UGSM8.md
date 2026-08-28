@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UGSM8
 kind: exercise
 title: The general Ascoli theorem implies the classical version
-subtitle: Munkres §47.3
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-4KGM4
 kind: exercise
 title: Properties of compact Hausdorff spaces
-subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology

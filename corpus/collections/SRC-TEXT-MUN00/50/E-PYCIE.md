@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PYCIE
 kind: exercise
 title: Closed subspaces of euclidean space have dimension at most N
-subtitle: Munkres §50.10
 classification:
   areas:
   - topology

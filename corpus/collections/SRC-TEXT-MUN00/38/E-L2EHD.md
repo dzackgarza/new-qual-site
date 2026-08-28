@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-L2EHD
 kind: exercise
 title: The Stone-Cech compactification of a discrete space
-subtitle: Munkres §38.7
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-L4UAO
 kind: exercise
 title: Separation properties project from products to factors
-subtitle: Munkres §32.2
 classification:
   areas:
   - topology

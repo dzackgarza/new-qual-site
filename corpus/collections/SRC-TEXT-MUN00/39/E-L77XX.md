@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-L77XX
 kind: exercise
 title: A countably locally finite collection that is neither countable nor locally finite
-subtitle: Munkres §39.6
 classification:
   areas:
   - topology

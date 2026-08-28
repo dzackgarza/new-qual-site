@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-9IGGV
 kind: exercise
 title: Closures of a non-locally-finite collection may be locally finite
-subtitle: Munkres §39.3
 classification:
   areas:
   - topology

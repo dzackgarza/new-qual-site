@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-RIGIX
 kind: exercise
 title: Which spaces are completely normal
-subtitle: Munkres §32.7
 classification:
   areas:
   - topology

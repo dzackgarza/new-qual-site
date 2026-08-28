@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-HC37E
 kind: exercise
 title: Nonabelian fundamental groups of higher-genus tori
-subtitle: Munkres §74.6
 classification:
   areas:
   - topology

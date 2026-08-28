@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ECKDI
 kind: exercise
 title: Normal forms for pasting schemes
-subtitle: Munkres §77.1
 classification:
   areas:
   - topology

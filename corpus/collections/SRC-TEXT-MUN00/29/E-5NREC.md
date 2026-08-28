@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5NREC
 kind: exercise
 title: Images of locally compact spaces
-subtitle: Munkres §29.3
 classification:
   areas:
   - topology

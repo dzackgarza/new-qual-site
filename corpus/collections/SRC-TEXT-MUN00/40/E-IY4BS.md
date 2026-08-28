@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-IY4BS
 kind: exercise
 title: F-sigma and G-delta sets
-subtitle: Munkres §40.2
 classification:
   areas:
   - topology

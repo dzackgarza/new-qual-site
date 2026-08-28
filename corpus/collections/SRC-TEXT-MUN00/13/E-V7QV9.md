@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-V7QV9
 kind: exercise
 title: Comparing the nine topologies on a three-point set
-subtitle: Munkres §13.2
 classification:
   areas:
   - topology

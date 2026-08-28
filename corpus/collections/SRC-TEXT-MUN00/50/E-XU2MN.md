@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XU2MN
 kind: exercise
 title: Hausdorff equals completely regular for locally euclidean spaces
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

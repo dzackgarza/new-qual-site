@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CH8HI
 kind: exercise
 title: Product topologies under refinement of the factors
-subtitle: Munkres §16.5
 classification:
   areas:
   - topology

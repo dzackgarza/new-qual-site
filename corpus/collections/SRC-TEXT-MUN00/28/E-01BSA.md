@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-01BSA
 kind: exercise
 title: Isometries of compact metric spaces are surjective
-subtitle: Munkres §28.6
 classification:
   areas:
   - topology

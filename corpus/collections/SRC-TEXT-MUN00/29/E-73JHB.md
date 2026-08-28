@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-73JHB
 kind: exercise
 title: The one-point compactification of the positive integers
-subtitle: Munkres §29.8
 classification:
   areas:
   - topology

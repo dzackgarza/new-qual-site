@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1SW9Q
 kind: exercise
 title: The Prufer manifold
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

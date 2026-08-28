@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-K8RRE
 kind: exercise
 title: Closure of an interval in the order topology
-subtitle: Munkres §17.5
 classification:
   areas:
   - topology

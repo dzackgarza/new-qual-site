@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KIN90
 kind: exercise
 title: Collapsing K in the K-topology
-subtitle: Munkres §22.6
 classification:
   areas:
   - topology

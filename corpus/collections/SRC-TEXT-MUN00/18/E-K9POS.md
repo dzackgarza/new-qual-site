@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-K9POS
 kind: exercise
 title: Continuous images of limit points
-subtitle: Munkres §18.2
 classification:
   areas:
   - topology

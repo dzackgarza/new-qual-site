@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-U8UBU
 kind: exercise
 title: Coset spaces of topological groups
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

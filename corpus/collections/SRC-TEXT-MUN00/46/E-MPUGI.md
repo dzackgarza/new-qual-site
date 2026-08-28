@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MPUGI
 kind: exercise
 title: Products with a locally compact Hausdorff factor preserve quotient maps
-subtitle: Munkres §46.9
 classification:
   areas:
   - topology

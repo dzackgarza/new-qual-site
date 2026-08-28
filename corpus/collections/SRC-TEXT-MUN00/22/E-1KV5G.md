@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1KV5G
 kind: exercise
 title: Translations are homeomorphisms; topological groups are homogeneous
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KNC0V
 kind: exercise
 title: Separation properties of the compact-open topology
-subtitle: Munkres §46.6
 classification:
   areas:
   - topology

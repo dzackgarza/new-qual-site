@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UX2C4
 kind: exercise
 title: Behavior of limit point compactness under images, closed subsets, and Hausdorff ambient spaces
-subtitle: Munkres §28.3
 classification:
   areas:
   - topology

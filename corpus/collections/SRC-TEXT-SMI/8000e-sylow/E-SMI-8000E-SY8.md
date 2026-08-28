@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY8
 kind: exercise
 title: Sylow subgroups of symmetric groups are abelian
-subtitle: Smith 8000e sylow 8
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5DDIL
 kind: exercise
 title: Fundamental groups of wedges with nice neighborhoods
-subtitle: Munkres §71.2
 classification:
   areas:
   - topology

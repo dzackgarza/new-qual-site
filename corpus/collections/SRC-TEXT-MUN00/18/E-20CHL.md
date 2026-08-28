@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-20CHL
 kind: exercise
 title: Continuity implies separate continuity
-subtitle: Munkres §18.11
 classification:
   areas:
   - topology

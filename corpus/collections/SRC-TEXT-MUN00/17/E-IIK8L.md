@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-IIK8L
 kind: exercise
 title: Closures in the ordered square
-subtitle: Munkres §17.18
 classification:
   areas:
   - topology

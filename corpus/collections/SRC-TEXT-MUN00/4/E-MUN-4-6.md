@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-6
 kind: exercise
-title: "Laws of exponents for real numbers"
-subtitle: Munkres §4.6
+title: Laws of exponents for real numbers
 classification:
   areas:
   - topology

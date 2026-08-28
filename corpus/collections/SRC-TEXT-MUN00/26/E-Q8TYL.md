@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Q8TYL
 kind: exercise
 title: Compactness under comparable topologies
-subtitle: Munkres §26.1
 classification:
   areas:
   - topology

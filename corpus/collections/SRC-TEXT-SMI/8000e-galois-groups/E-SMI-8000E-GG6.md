@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GG6
 kind: exercise
 title: The Galois group of X^5 - X - 1 over Q is S(5)
-subtitle: Smith 8000e galois 10
 classification:
   areas:
   - algebra

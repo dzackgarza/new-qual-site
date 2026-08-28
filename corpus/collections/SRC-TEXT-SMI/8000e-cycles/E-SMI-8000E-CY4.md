@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY4
 kind: exercise
 title: Star transpositions generate the symmetric group
-subtitle: Smith 8000e cycles 4
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5CC0M
 kind: exercise
 title: The two-fold covering of the figure eight restricted to the axes
-subtitle: Munkres §60.3
 classification:
   areas:
   - topology

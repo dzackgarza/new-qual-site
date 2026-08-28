@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY10
 kind: exercise
 title: Solvability via the derived series
-subtitle: Smith 8000e cycles 10
 classification:
   areas:
   - algebra

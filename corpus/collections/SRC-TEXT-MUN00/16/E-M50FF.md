@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-M50FF
 kind: exercise
 title: Transitivity of the subspace topology
-subtitle: Munkres §16.1
 classification:
   areas:
   - topology

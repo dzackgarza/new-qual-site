@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3BSN7
 kind: exercise
 title: Triangular schemes for two collections of four triangles
-subtitle: Munkres §78.1
 classification:
   areas:
   - topology

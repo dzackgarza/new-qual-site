@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0B5CJ
 kind: exercise
 title: Punctured products of connected spaces are connected
-subtitle: Munkres §23.9
 classification:
   areas:
   - topology

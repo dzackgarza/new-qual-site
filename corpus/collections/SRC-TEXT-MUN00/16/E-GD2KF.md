@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-GD2KF
 kind: exercise
 title: Refining a topology refines the subspace topologies
-subtitle: Munkres §16.2
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-4T2MK
 kind: exercise
 title: Connected fibers over a connected base connect the total space
-subtitle: Munkres §23.11
 classification:
   areas:
   - topology

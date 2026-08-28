@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8IBEP
 kind: exercise
 title: Free generators for the subgroup lifted over the figure eight
-subtitle: Munkres §85.3
 classification:
   areas:
   - topology

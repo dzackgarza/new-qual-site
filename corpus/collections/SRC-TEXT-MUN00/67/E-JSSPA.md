@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JSSPA
 kind: exercise
 title: Directness of sums via vanishing of finite sums
-subtitle: Munkres §67.1
 classification:
   areas:
   - topology

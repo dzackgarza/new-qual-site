@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8Q9TN
 kind: exercise
 title: Star-fine refinements of open coverings
-subtitle: Munkres §82 Supplementary
 classification:
   areas:
   - topology

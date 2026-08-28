@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YI3QM
 kind: exercise
 title: The closed disk as a surface with boundary
-subtitle: Munkres §78.3
 classification:
   areas:
   - topology

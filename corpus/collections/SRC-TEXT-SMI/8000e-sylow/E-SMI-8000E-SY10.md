@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY10
 kind: exercise
 title: Cauchy's theorem via induction on the group order
-subtitle: Smith 8000e sylow 10
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-FGRFM
 kind: exercise
 title: Metrizability of the one-point compactification
-subtitle: Munkres §34.5
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YTG4V
 kind: exercise
 title: Continuity of the field operations on R
-subtitle: Munkres §21.12
 classification:
   areas:
   - topology

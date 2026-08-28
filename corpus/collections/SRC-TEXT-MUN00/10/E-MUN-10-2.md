@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-2
 kind: exercise
-title: "Immediate successors in well-ordered sets"
-subtitle: Munkres §10.2
+title: Immediate successors in well-ordered sets
 classification:
   areas:
   - topology

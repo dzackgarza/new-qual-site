@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1QGID
 kind: exercise
 title: Compactness, connectedness, and path connectedness of the K-topology line
-subtitle: Munkres §27.3
 classification:
   areas:
   - topology

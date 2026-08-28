@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-6A0RO
 kind: exercise
 title: Hausdorff spaces and the closed diagonal
-subtitle: Munkres §17.13
 classification:
   areas:
   - topology

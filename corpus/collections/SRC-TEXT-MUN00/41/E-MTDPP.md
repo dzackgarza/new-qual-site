@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MTDPP
 kind: exercise
 title: The expansion lemma for locally finite families
-subtitle: Munkres §41.5
 classification:
   areas:
   - topology

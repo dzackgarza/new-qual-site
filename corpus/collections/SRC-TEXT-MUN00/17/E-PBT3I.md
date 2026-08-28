@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PBT3I
 kind: exercise
 title: Products of closed sets are closed
-subtitle: Munkres §17.3
 classification:
   areas:
   - topology

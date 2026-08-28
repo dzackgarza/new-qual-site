@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-N7AOD
 kind: exercise
 title: The fundamental group of a topological group is abelian
-subtitle: Munkres §52.7
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-J7FPE
 kind: exercise
 title: Coverings of the torus are classified by rank
-subtitle: Munkres §79.5
 classification:
   areas:
   - topology

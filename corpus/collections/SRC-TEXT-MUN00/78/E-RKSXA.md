@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-RKSXA
 kind: exercise
 title: The boundary of a surface with boundary is intrinsic
-subtitle: Munkres §78.2
 classification:
   areas:
   - topology

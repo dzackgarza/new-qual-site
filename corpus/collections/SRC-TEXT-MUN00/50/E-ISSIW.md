@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ISSIW
 kind: exercise
 title: The dictionary order plane is locally euclidean and metrizable but not a manifold
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

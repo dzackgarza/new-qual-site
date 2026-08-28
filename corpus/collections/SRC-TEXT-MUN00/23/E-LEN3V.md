@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LEN3V
 kind: exercise
 title: Unions of intersecting sequences of connected subspaces
-subtitle: Munkres §23.2
 classification:
   areas:
   - topology

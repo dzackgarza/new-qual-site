@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ARGEV
 kind: exercise
 title: Pointwise bounded collections that fail equicontinuity
-subtitle: Munkres §45.4
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DX7N2
 kind: exercise
 title: The seventeen basic properties under continuous maps
-subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology

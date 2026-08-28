@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3KMYL
 kind: exercise
 title: Local compactness of products
-subtitle: Munkres §29.2
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AH7RC
 kind: exercise
 title: Convergence in products via coordinate convergence
-subtitle: Munkres §19.6
 classification:
   areas:
   - topology

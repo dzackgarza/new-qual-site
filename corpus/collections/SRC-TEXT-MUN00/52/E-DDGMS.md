@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DDGMS
 kind: exercise
 title: Change of base point along a composite path
-subtitle: Munkres §52.2
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UB4PP
 kind: exercise
 title: Extending cos(1/x) by enlarging the compactification
-subtitle: Munkres §38.2
 classification:
   areas:
   - topology

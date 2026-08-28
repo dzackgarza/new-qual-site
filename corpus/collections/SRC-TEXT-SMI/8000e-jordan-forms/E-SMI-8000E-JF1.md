@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-JF1
 kind: exercise
 title: Enumerating Jordan forms from minimal and invariant factors
-subtitle: Smith 8000e jordan forms 1
 classification:
   areas:
   - algebra

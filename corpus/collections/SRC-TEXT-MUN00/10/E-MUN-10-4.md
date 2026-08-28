@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-10-4
 kind: exercise
 title: Characterizing non-well-ordered sets via $\mathbb{Z}_{-}$
-subtitle: Munkres §10.4
 classification:
   areas:
   - topology

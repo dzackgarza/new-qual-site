@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-NKQY9
 kind: exercise
 title: Countable rational-endpoint bases
-subtitle: Munkres §13.8
 classification:
   areas:
   - topology

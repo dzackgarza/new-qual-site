@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-IXKVS
 kind: exercise
 title: Root location from small lower coefficients
-subtitle: Munkres §56.1
 classification:
   areas:
   - topology

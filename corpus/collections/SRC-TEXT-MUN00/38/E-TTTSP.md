@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TTTSP
 kind: exercise
 title: Compactifications of the minimal uncountable well-ordered set
-subtitle: Munkres §38.5
 classification:
   areas:
   - topology

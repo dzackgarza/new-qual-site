@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KZPIX
 kind: exercise
 title: Countability axioms of the rationals in the box topology
-subtitle: Munkres §30.17
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LRAPM
 kind: exercise
 title: Compact closed intervals imply the least upper bound property
-subtitle: Munkres §27.1
 classification:
   areas:
   - topology

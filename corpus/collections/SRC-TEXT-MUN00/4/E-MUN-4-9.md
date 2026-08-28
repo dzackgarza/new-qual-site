@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-4-9
 kind: exercise
 title: Archimedean property and density of $\mathbb{Q}$ in $\mathbb{R}$
-subtitle: Munkres §4.9
 classification:
   areas:
   - topology

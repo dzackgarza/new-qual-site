@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-L9XR0
 kind: exercise
 title: Subspace topologies on lines in the Sorgenfrey plane
-subtitle: Munkres §16.8
 classification:
   areas:
   - topology

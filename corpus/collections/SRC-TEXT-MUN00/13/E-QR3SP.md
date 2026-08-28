@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QR3SP
 kind: exercise
 title: The countable complement topology and an infinite complement collection
-subtitle: Munkres §13.3
 classification:
   areas:
   - topology

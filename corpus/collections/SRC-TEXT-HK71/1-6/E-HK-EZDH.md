@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-EZDH
 kind: exercise
-title: "The Hilbert matrix is invertible with integer inverse"
-subtitle: Hoffman and Kunze 1.6.12
+title: The Hilbert matrix is invertible with integer inverse
 classification:
   areas:
   - algebra

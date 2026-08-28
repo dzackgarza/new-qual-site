@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QNT4A
 kind: exercise
 title: Perfect maps and paracompactness
-subtitle: Munkres §41.8
 classification:
   areas:
   - topology

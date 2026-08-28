@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ZPC0X
 kind: exercise
 title: Interchanging limits under uniform convergence
-subtitle: Munkres §21.8
 classification:
   areas:
   - topology

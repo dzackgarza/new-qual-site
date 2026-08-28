@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2CPNC
 kind: exercise
 title: Pasting over a locally finite closed cover
-subtitle: Munkres §18.9
 classification:
   areas:
   - topology

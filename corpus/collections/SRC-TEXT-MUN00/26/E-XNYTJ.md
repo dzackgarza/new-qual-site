@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XNYTJ
 kind: exercise
 title: Monotone pointwise convergence to a continuous limit is uniform
-subtitle: Munkres §26.10
 classification:
   areas:
   - topology

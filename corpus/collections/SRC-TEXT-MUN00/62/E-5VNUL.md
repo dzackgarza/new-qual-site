@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5VNUL
 kind: exercise
 title: The Borsuk lemma fails without injectivity
-subtitle: Munkres §62.1
 classification:
   areas:
   - topology

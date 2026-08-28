@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AY5GK
 kind: exercise
 title: Topologically complete spaces
-subtitle: Munkres §43.6
 classification:
   areas:
   - topology

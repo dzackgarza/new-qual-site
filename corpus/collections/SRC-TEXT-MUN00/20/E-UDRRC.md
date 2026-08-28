@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UDRRC
 kind: exercise
 title: The euclidean metric via the Cauchy-Schwarz inequality
-subtitle: Munkres §20.9
 classification:
   areas:
   - topology

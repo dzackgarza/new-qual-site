@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BB4BN
 kind: exercise
 title: Intervals homeomorphic with the unit interval
-subtitle: Munkres §18.5
 classification:
   areas:
   - topology

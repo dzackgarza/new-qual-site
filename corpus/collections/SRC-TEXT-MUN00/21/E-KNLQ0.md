@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KNLQ0
 kind: exercise
 title: Uniform convergence as convergence in the uniform metric
-subtitle: Munkres §21.7
 classification:
   areas:
   - topology

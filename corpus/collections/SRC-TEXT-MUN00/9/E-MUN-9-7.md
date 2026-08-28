@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-7
 kind: exercise
-title: "Strict cardinality ordering and the continuum"
-subtitle: Munkres §9.7
+title: Strict cardinality ordering and the continuum
 classification:
   areas:
   - topology

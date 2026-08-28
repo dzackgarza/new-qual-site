@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-ED5
 kind: exercise
-title: Matrices over a Euclidean domain are diagonalizable by invertible row and column
-  operations
-subtitle: Smith 8000e Euclidean domains 5
+title: Matrices over a Euclidean domain are diagonalizable by invertible row and column operations
 classification:
   areas:
   - algebra

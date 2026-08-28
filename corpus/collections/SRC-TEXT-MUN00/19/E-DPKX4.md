@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DPKX4
 kind: exercise
 title: Associativity of finite products
-subtitle: Munkres §19.4
 classification:
   areas:
   - topology

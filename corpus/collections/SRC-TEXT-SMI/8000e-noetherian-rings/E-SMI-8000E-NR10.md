@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR10
 kind: exercise
 title: Rank of a free module is invariant
-subtitle: Smith 8000e noetherian rings 10
 classification:
   areas:
   - algebra

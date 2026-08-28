@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY1
 kind: exercise
 title: Conjugates of cycles in $S_n$
-subtitle: Smith 8000e cycles 1
 classification:
   areas:
   - algebra

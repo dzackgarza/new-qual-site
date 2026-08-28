@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-4
 kind: exercise
-title: "Countability of algebraic numbers and uncountability of transcendentals"
-subtitle: Munkres §7.4
+title: Countability of algebraic numbers and uncountability of transcendentals
 classification:
   areas:
   - topology

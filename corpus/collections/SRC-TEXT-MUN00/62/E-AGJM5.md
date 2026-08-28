@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AGJM5
 kind: exercise
 title: Extension of homotopic maps into open euclidean sets
-subtitle: Munkres §62.3
 classification:
   areas:
   - topology

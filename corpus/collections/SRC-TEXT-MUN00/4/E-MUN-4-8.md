@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-4-8
 kind: exercise
 title: Greatest lower bound property of $\mathbb{R}$
-subtitle: Munkres §4.8
 classification:
   areas:
   - topology

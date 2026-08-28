@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-W5KED
 kind: exercise
 title: Realizing finitely generated abelian groups and cyclic free products
-subtitle: Munkres §73.1
 classification:
   areas:
   - topology

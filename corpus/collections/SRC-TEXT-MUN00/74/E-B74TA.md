@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-B74TA
 kind: exercise
 title: Nonabelian fundamental groups of higher projective planes
-subtitle: Munkres §74.7
 classification:
   areas:
   - topology

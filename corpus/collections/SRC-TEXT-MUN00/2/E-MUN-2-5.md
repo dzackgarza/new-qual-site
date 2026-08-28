@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-5
 kind: exercise
-title: "Left inverses, right inverses, and bijectivity"
-subtitle: Munkres §2.5
+title: Left inverses, right inverses, and bijectivity
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-O13MH
 kind: exercise
 title: Connectedness under refinement of topologies
-subtitle: Munkres §23.1
 classification:
   areas:
   - topology

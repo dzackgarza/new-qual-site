@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UZY87
 kind: exercise
 title: Conjugacy classes of finite order in a free product
-subtitle: Munkres §68.3
 classification:
   areas:
   - topology

@@ -26,7 +26,8 @@ source:
   - name: I.9
     problems:
     - P-IK7LQ
-    - P-N2MCE
+    - id: P-N2MCE
+      comment: Hungerford 1.9.3
   - name: II.1
     problems:
     - P-QGP7O
@@ -43,7 +44,8 @@ source:
     problems:
     - P-7QSIF
     - P-VTSE7
-    - P-5IX5L
+    - id: P-5IX5L
+      comment: Hungerford 2.5.9
   - name: II.6
     problems:
     - P-QY54D

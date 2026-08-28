@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-ED6
 kind: exercise
 title: Kernel and cokernel are unchanged under isomorphisms of source and target
-subtitle: Smith 8000e euclidean domains 6
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY6
 kind: exercise
 title: Three-cycles generate the alternating group
-subtitle: Smith 8000e cycles 6
 classification:
   areas:
   - algebra

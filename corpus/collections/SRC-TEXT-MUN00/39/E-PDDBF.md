@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PDDBF
 kind: exercise
 title: A point-finite open covering that is not locally finite
-subtitle: Munkres §39.2
 classification:
   areas:
   - topology

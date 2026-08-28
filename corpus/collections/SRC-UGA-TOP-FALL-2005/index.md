@@ -18,7 +18,8 @@ source:
   problems:
   - P-HVKUA
   - P-8TF02
-  - P-DHIWH
+  - id: P-DHIWH
+    comment: Fall 2005
   - P-8TF03
   - P-V4MD7
   - P-8TF04

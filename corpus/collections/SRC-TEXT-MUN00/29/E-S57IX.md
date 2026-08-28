@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-S57IX
 kind: exercise
 title: Products of quotient maps with locally compact Hausdorff factors
-subtitle: Munkres §29.11
 classification:
   areas:
   - topology

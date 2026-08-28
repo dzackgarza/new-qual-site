@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OK0GG
 kind: exercise
 title: Closure behavior under unions
-subtitle: Munkres §17.6
 classification:
   areas:
   - topology

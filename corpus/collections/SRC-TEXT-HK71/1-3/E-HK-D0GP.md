@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-D0GP
 kind: exercise
-title: "Row interchange from other elementary operations"
-subtitle: Hoffman and Kunze 1.3.7
+title: Row interchange from other elementary operations
 classification:
   areas:
   - algebra

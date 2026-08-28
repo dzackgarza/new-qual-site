@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JX67Q
 kind: exercise
 title: The Cantor set
-subtitle: Munkres §27.6
 classification:
   areas:
   - topology

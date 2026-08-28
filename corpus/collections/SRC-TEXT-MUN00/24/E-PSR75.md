@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PSR75
 kind: exercise
 title: Fixed points of continuous self-maps of the interval
-subtitle: Munkres §24.3
 classification:
   areas:
   - topology

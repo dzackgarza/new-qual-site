@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-4RF8O
 kind: exercise
 title: Finite fixed-point-free actions are properly discontinuous
-subtitle: Munkres §81.4
 classification:
   areas:
   - topology

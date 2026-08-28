@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PKDH7
 kind: exercise
 title: Pointwise boundedness and equicontinuity of four collections
-subtitle: Munkres §47.1
 classification:
   areas:
   - topology

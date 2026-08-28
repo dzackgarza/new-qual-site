@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-85UIY
 kind: exercise
 title: Function spaces are Baire in the fine topology
-subtitle: Munkres §48.13
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QGR6H
 kind: exercise
 title: Compact unions of closed metrizable subspaces are metrizable
-subtitle: Munkres §34.9
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-X04YN
 kind: exercise
 title: Elementary operations behind the classification figures
-subtitle: Munkres §77.2
 classification:
   areas:
   - topology

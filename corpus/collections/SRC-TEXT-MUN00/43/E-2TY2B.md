@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2TY2B
 kind: exercise
 title: Completion via Cauchy sequences
-subtitle: Munkres §43.9
 classification:
   areas:
   - topology

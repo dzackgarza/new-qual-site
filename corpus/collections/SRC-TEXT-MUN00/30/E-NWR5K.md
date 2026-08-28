@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-NWR5K
 kind: exercise
 title: Countability axioms pass through open maps
-subtitle: Munkres §30.12
 classification:
   areas:
   - topology

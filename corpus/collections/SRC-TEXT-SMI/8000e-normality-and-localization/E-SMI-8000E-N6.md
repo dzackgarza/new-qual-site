@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-N6
 kind: exercise
 title: Localization at a prime is a local ring
-subtitle: Smith 8000e localization 6
 classification:
   areas:
   - algebra

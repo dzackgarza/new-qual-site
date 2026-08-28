@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-N1
 kind: exercise
 title: Every UFD is integrally closed
-subtitle: Smith 8000e normality 1
 classification:
   areas:
   - algebra

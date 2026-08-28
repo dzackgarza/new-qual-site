@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-9LY2B
 kind: exercise
 title: Infinite wedges of circles are not first countable
-subtitle: Munkres §71.4
 classification:
   areas:
   - topology

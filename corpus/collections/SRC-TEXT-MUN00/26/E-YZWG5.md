@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YZWG5
 kind: exercise
 title: Separating disjoint compact sets in a Hausdorff space
-subtitle: Munkres §26.5
 classification:
   areas:
   - topology

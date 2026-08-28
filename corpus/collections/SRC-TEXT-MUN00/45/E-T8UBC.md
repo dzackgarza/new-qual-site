@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-T8UBC
 kind: exercise
 title: Graphs as an imbedding of the function space into the hyperspace
-subtitle: Munkres §45.8
 classification:
   areas:
   - topology

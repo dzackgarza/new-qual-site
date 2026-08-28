@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY1
 kind: exercise
 title: Small p-subgroups lie in Sylow subgroups
-subtitle: Smith 8000e sylow 1
 classification:
   areas:
   - algebra

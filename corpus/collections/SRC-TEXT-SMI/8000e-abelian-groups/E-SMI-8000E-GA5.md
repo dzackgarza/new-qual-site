@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GA5
 kind: exercise
 title: Rank of a free abelian group is well defined
-subtitle: Smith 8000e generators 5
 classification:
   areas:
   - algebra

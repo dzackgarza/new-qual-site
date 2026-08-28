@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AWEWJ
 kind: exercise
 title: An affine coordinate homeomorphism of R^omega
-subtitle: Munkres §19.8
 classification:
   areas:
   - topology

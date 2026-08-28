@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-N7
 kind: exercise
 title: Normality localizes
-subtitle: Smith 8000e localization 7
 classification:
   areas:
   - algebra

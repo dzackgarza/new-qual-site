@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MPI86
 kind: exercise
 title: Metrically equivalent metrics and completeness
-subtitle: Munkres §43.3
 classification:
   areas:
   - topology

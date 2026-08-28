@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-23ASH
 kind: exercise
 title: Small functions in the nowhere-differentiability open sets
-subtitle: Munkres §49.2
 classification:
   areas:
   - topology

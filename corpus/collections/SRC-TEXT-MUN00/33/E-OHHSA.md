@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OHHSA
 kind: exercise
 title: A regular space that is not completely regular
-subtitle: Munkres §33.11
 classification:
   areas:
   - topology

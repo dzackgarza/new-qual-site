@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-B3WXJ
 kind: exercise
 title: Fixed points for maps of retracts of the disk
-subtitle: Munkres §55.1
 classification:
   areas:
   - topology

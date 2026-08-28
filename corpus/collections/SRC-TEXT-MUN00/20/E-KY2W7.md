@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KY2W7
 kind: exercise
 title: The dictionary order plane is metrizable
-subtitle: Munkres §20.2
 classification:
   areas:
   - topology

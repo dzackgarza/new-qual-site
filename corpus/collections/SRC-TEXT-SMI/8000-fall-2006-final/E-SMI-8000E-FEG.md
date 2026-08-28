@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FEG
 kind: exercise
 title: Proof choice — Galois correspondence or irreducibility of cyclotomic polynomials
-subtitle: Smith 8000 fall 2006 final G
 classification:
   areas:
   - algebra

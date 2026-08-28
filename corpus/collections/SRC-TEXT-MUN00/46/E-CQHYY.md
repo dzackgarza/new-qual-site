@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CQHYY
 kind: exercise
 title: Bounded functions under uniform and compact convergence topologies
-subtitle: Munkres §46.3
 classification:
   areas:
   - topology

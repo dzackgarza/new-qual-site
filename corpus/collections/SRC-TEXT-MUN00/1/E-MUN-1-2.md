@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-2
 kind: exercise
-title: "Subset membership under union and intersection"
-subtitle: Munkres §1.2
+title: Subset membership under union and intersection
 classification:
   areas:
   - topology

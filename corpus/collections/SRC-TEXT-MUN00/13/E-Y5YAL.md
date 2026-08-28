@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Y5YAL
 kind: exercise
 title: Generated topologies as intersections of topologies
-subtitle: Munkres §13.5
 classification:
   areas:
   - topology

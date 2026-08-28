@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UMMOE
 kind: exercise
 title: A two-fold covering detecting nonabelian fundamental group
-subtitle: Munkres §60.5
 classification:
   areas:
   - topology

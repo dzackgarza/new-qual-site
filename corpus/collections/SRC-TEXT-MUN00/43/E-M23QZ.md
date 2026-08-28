@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-M23QZ
 kind: exercise
 title: Uniqueness of the completion
-subtitle: Munkres §43.10
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AL52O
 kind: exercise
 title: The Euler number is a topological invariant
-subtitle: Munkres §85.1
 classification:
   areas:
   - topology

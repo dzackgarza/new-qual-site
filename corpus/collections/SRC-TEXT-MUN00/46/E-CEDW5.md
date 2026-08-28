@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CEDW5
 kind: exercise
 title: Power series partial sums converge compactly but not uniformly
-subtitle: Munkres §46.5
 classification:
   areas:
   - topology

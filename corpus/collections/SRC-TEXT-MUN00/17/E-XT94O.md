@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XT94O
 kind: exercise
 title: Equivalents of the T1 axiom
-subtitle: Munkres §17.15
 classification:
   areas:
   - topology

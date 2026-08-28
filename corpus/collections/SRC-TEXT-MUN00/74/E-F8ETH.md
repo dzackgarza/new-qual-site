@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-F8ETH
 kind: exercise
 title: The Klein bottle as a connected sum of two projective planes
-subtitle: Munkres §74.4
 classification:
   areas:
   - topology

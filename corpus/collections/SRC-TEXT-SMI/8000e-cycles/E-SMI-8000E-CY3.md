@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY3
 kind: exercise
 title: Transpositions generate the symmetric group
-subtitle: Smith 8000e cycles 3
 classification:
   areas:
   - algebra

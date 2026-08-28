@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QMZO5
 kind: exercise
 title: Dictionary order topology on the plane as a product topology
-subtitle: Munkres §16.9
 classification:
   areas:
   - topology

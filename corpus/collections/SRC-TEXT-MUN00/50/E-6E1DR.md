@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-6E1DR
 kind: exercise
 title: Characterization of closed imbeddings into euclidean space
-subtitle: Munkres §50.11
 classification:
   areas:
   - topology

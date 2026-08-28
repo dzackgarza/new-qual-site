@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-RWKRJ
 kind: exercise
 title: Continuous maps with continuous sections are quotient maps
-subtitle: Munkres §22.2
 classification:
   areas:
   - topology

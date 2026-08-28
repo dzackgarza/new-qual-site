@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-POA5M
 kind: exercise
 title: Compact locally imbeddable spaces imbed in euclidean space
-subtitle: Munkres §36.2
 classification:
   areas:
   - topology

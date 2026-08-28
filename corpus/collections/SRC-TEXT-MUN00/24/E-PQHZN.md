@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PQHZN
 kind: exercise
 title: The long line
-subtitle: Munkres §24.12
 classification:
   areas:
   - topology

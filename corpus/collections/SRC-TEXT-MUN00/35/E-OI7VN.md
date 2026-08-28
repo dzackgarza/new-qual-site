@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OI7VN
 kind: exercise
 title: The logarithmic spiral and the knotted x-axis as retracts
-subtitle: Munkres §35.7
 classification:
   areas:
   - topology

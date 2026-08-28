@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-I61EM
 kind: exercise
 title: Sections of the minimal uncountable well-ordered set are second countable
-subtitle: Munkres §42.2
 classification:
   areas:
   - topology

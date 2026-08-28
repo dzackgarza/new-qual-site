@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CJGFE
 kind: exercise
 title: Heredity of the seventeen basic properties
-subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology

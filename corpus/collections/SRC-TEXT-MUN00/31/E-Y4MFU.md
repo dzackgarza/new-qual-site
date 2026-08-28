@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Y4MFU
 kind: exercise
 title: Perfect maps transfer separation and countability properties
-subtitle: Munkres §31.7
 classification:
   areas:
   - topology

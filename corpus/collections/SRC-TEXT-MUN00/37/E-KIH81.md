@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KIH81
 kind: exercise
 title: Maximal collections with the finite intersection property
-subtitle: Munkres §37.1
 classification:
   areas:
   - topology

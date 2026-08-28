@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WWROF
 kind: exercise
 title: Closed sets via the closed-set formulation of continuity
-subtitle: Munkres §21.10
 classification:
   areas:
   - topology

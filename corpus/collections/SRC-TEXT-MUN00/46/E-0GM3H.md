@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0GM3H
 kind: exercise
 title: The fine topology on function spaces
-subtitle: Munkres §46.11
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1VSTU
 kind: exercise
 title: Net convergence generalizes sequence convergence
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

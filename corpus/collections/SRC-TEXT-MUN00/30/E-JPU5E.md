@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JPU5E
 kind: exercise
 title: Lindelofness and separability pass to continuous images
-subtitle: Munkres §30.11
 classification:
   areas:
   - topology

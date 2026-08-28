@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-76OHA
 kind: exercise
 title: Discrete spaces are paracompact; images need not be
-subtitle: Munkres §41.4
 classification:
   areas:
   - topology

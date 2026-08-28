@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-PPAO
 kind: exercise
-title: "Eigenvectors of a triangular matrix"
-subtitle: Hoffman and Kunze 1.6.4
+title: Eigenvectors of a triangular matrix
 classification:
   areas:
   - algebra

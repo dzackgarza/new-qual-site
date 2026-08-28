@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CCLL5
 kind: exercise
 title: Normal subgroups and regular coverings
-subtitle: Munkres §79.3
 classification:
   areas:
   - topology

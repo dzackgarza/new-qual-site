@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-6RQWT
 kind: exercise
 title: Contractibility and the one-point homotopy type
-subtitle: Munkres §58.5
 classification:
   areas:
   - topology

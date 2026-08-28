@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-F46JG
 kind: exercise
 title: Every topological group is completely regular
-subtitle: Munkres §33.10
 classification:
   areas:
   - topology

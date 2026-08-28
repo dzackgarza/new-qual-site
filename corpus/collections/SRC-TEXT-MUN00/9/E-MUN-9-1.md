@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-9-1
 kind: exercise
 title: Injective map from $\mathbb{Z}_+$ to $X^{\omega}$ without choice
-subtitle: Munkres §9.1
 classification:
   areas:
   - topology

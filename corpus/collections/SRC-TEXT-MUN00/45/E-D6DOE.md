@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-D6DOE
 kind: exercise
 title: Ascoli's theorem over proper metric targets
-subtitle: Munkres §45.6
 classification:
   areas:
   - topology

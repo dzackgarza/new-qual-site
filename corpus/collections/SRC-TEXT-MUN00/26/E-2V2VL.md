@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2V2VL
 kind: exercise
 title: Compact subspaces of metric spaces are closed and bounded
-subtitle: Munkres §26.4
 classification:
   areas:
   - topology

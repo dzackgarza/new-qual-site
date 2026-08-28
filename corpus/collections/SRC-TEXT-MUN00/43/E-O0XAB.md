@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-O0XAB
 kind: exercise
 title: Completeness via nested closed sets of vanishing diameter
-subtitle: Munkres §43.4
 classification:
   areas:
   - topology

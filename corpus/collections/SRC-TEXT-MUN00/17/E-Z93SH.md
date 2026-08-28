@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Z93SH
 kind: exercise
 title: Kuratowski's fourteen-set theorem
-subtitle: Munkres §17.21
 classification:
   areas:
   - topology

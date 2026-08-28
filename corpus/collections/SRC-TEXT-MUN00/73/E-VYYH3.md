@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-VYYH3
 kind: exercise
 title: Finitely presented groups as fundamental groups of compact Hausdorff spaces
-subtitle: Munkres §73.2
 classification:
   areas:
   - topology

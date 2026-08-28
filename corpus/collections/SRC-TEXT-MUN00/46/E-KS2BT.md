@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KS2BT
 kind: exercise
 title: Completeness of the compact convergence topology over sigma-compact domains
-subtitle: Munkres §46.10
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LP0GM
 kind: exercise
 title: Uniqueness of the slicing over connected evenly covered sets
-subtitle: Munkres §53.2
 classification:
   areas:
   - topology

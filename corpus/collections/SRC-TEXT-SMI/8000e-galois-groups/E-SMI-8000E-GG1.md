@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GG1
 kind: exercise
 title: A field of four elements and nonsolvability by radicals in characteristic two
-subtitle: Smith 8000e galois 1
 classification:
   areas:
   - algebra

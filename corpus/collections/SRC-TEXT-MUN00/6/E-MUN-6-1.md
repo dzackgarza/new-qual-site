@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-6-1
 kind: exercise
-title: "Injective maps between finite sets of different sizes"
-subtitle: Munkres §6.1
+title: Injective maps between finite sets of different sizes
 classification:
   areas:
   - topology

@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-Q2T5
 kind: exercise
-title: "Solving a homogeneous system by row reduction"
-subtitle: Hoffman and Kunze 1.4.1
+title: Solving a homogeneous system by row reduction
 classification:
   areas:
   - algebra

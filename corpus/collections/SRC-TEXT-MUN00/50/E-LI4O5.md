@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LI4O5
 kind: exercise
 title: Components of metrizable locally euclidean spaces are manifolds
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

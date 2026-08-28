@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CVDAJ
 kind: exercise
 title: Consequences of an abstract degree theory on spheres
-subtitle: Munkres §58.10
 classification:
   areas:
   - topology

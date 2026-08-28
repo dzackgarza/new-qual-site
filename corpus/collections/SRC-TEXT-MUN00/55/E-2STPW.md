@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2STPW
 kind: exercise
 title: Nulhomotopic maps of the circle have fixed and antipodal points
-subtitle: Munkres §55.2
 classification:
   areas:
   - topology

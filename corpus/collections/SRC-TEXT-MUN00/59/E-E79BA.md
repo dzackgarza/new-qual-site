@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-E79BA
 kind: exercise
 title: Euclidean spaces of different dimensions are not homeomorphic
-subtitle: Munkres §59.3
 classification:
   areas:
   - topology

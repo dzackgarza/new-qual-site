@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LVTFA
 kind: exercise
 title: Homotopy equivalence is an equivalence relation
-subtitle: Munkres §58.3
 classification:
   areas:
   - topology

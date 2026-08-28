@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-6-4
 kind: exercise
-title: "Finite simply ordered sets have a largest element"
-subtitle: Munkres §6.4
+title: Finite simply ordered sets have a largest element
 classification:
   areas:
   - topology

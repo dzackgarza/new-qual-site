@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-K89XO
 kind: exercise
 title: Projections from a product are open maps
-subtitle: Munkres §16.4
 classification:
   areas:
   - topology

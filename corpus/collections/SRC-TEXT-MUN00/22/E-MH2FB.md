@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MH2FB
 kind: exercise
 title: Continuity of x times y inverse characterizes topological groups
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

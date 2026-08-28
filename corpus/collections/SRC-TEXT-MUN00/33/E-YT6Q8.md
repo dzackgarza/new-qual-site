@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YT6Q8
 kind: exercise
 title: Connected normal and regular spaces with more than one point are uncountable
-subtitle: Munkres §33.2
 classification:
   areas:
   - topology

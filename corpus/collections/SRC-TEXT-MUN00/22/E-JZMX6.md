@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JZMX6
 kind: exercise
 title: Restrictions of open maps to open subspaces are open
-subtitle: Munkres §22.5
 classification:
   areas:
   - topology

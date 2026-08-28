@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DE8TQ
 kind: exercise
 title: Isometric imbeddings
-subtitle: Munkres §21.2
 classification:
   areas:
   - topology

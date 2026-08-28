@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PBG3W
 kind: exercise
 title: Composites of covering maps with finite fibers
-subtitle: Munkres §53.4
 classification:
   areas:
   - topology

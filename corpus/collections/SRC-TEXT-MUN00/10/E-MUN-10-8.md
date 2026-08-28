@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-8
 kind: exercise
-title: "Well-ordering unions of disjoint well-ordered sets"
-subtitle: Munkres §10.8
+title: Well-ordering unions of disjoint well-ordered sets
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-4-4
 kind: exercise
 title: Largest element of finite subsets of $\{1, \ldots, n\}$
-subtitle: Munkres §4.4
 classification:
   areas:
   - topology

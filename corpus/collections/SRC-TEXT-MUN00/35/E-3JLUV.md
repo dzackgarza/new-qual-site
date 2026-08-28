@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3JLUV
 kind: exercise
 title: Bounded under every metric, bounded continuous functions, and limit point compactness
-subtitle: Munkres §35.3
 classification:
   areas:
   - topology

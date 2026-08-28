@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3C4WF
 kind: exercise
 title: The Hausdorff metric on closed bounded subsets
-subtitle: Munkres §45.7
 classification:
   areas:
   - topology

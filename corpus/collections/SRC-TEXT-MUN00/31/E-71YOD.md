@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-71YOD
 kind: exercise
 title: Regular spaces have disjoint closure neighborhoods of points
-subtitle: Munkres §31.1
 classification:
   areas:
   - topology

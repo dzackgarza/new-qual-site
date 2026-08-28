@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QJLUO
 kind: exercise
 title: Separating compact sets from closed sets in completely regular spaces
-subtitle: Munkres §33.8
 classification:
   areas:
   - topology

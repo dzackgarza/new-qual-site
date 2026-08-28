@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WUZ10
 kind: exercise
 title: Two spheres touching at a point
-subtitle: Munkres §59.1
 classification:
   areas:
   - topology

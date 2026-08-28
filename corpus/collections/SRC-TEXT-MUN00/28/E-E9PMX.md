@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-E9PMX
 kind: exercise
 title: Nested closed sets in countably compact spaces
-subtitle: Munkres §28.5
 classification:
   areas:
   - topology

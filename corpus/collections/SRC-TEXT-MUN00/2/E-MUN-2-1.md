@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-1
 kind: exercise
-title: "Preimage and image under injective and surjective maps"
-subtitle: Munkres §2.1
+title: Preimage and image under injective and surjective maps
 classification:
   areas:
   - topology

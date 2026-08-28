@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-9RR0I
 kind: exercise
 title: The universal extension property
-subtitle: Munkres §35.5
 classification:
   areas:
   - topology

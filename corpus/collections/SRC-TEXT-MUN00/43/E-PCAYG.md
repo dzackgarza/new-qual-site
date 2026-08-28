@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PCAYG
 kind: exercise
 title: Banach fixed point theorem for contractions of complete metric spaces
-subtitle: Munkres §43.5
 classification:
   areas:
   - topology

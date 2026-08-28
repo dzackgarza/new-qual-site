@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PTY7A
 kind: exercise
 title: Projection from a product with a discrete space is a covering map
-subtitle: Munkres §53.1
 classification:
   areas:
   - topology

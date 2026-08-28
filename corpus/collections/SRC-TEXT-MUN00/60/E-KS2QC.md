@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KS2QC
 kind: exercise
 title: The projective line and its covering
-subtitle: Munkres §60.4
 classification:
   areas:
   - topology

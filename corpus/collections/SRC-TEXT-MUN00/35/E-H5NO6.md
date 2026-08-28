@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-H5NO6
 kind: exercise
 title: Retracts of Hausdorff spaces and the plane
-subtitle: Munkres §35.4
 classification:
   areas:
   - topology

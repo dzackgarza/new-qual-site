@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-UBFI
 kind: exercise
-title: "Consistency and solutions of a three-equation system"
-subtitle: Hoffman and Kunze 1.4.4
+title: Consistency and solutions of a three-equation system
 classification:
   areas:
   - algebra

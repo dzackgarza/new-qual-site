@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-4
 kind: exercise
-title: "Bijections between finite and countable product spaces"
-subtitle: Munkres §5.4
+title: Bijections between finite and countable product spaces
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1FRQL
 kind: exercise
 title: Thomae-type function continuous at each irrational
-subtitle: Munkres §48.9
 classification:
   areas:
   - topology

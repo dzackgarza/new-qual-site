@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-J5IB5
 kind: exercise
 title: Surfaces with k holes
-subtitle: Munkres §78.4
 classification:
   areas:
   - topology

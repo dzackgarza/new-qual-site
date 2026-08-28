@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LESK3
 kind: exercise
 title: Strong hypotheses short of metrizability
-subtitle: Munkres §34.2
 classification:
   areas:
   - topology

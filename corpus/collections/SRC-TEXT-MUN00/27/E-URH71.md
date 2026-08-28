@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-URH71
 kind: exercise
 title: Countable unions of nowhere dense closed sets in compact Hausdorff spaces
-subtitle: Munkres §27.5
 classification:
   areas:
   - topology

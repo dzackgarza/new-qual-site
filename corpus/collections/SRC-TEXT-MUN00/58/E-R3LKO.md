@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-R3LKO
 kind: exercise
 title: When the inclusion induces an isomorphism on fundamental groups
-subtitle: Munkres §58.7
 classification:
   areas:
   - topology

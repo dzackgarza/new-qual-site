@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-S0QDW
 kind: exercise
 title: Finiteness in the maximal tree argument
-subtitle: Munkres §84.1
 classification:
   areas:
   - topology

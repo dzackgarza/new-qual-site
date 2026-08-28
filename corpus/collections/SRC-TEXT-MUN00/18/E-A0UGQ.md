@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-A0UGQ
 kind: exercise
 title: A function continuous at exactly one point
-subtitle: Munkres §18.6
 classification:
   areas:
   - topology

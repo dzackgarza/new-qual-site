@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-QVH6Y
 kind: exercise
 title: Metrizable spaces with metrizable compactifications
-subtitle: Munkres §38.3
 classification:
   areas:
   - topology

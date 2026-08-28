@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2Z1TM
 kind: exercise
 title: Lifting paths in the polar covering of the punctured plane
-subtitle: Munkres §54.4
 classification:
   areas:
   - topology

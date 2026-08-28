@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UU8CC
 kind: exercise
 title: The degree of a map of the circle
-subtitle: Munkres §58.9
 classification:
   areas:
   - topology

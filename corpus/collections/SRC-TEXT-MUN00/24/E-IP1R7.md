@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-IP1R7
 kind: exercise
 title: The plane minus countably many points is path connected
-subtitle: Munkres §24.9
 classification:
   areas:
   - topology

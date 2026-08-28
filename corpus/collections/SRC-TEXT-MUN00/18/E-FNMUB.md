@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-FNMUB
 kind: exercise
 title: Uniqueness of continuous extensions into Hausdorff spaces
-subtitle: Munkres §18.13
 classification:
   areas:
   - topology

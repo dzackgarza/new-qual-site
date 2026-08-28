@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2BNJ6
 kind: exercise
 title: Subnets of convergent nets converge
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

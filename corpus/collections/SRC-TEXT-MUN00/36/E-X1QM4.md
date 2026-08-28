@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-X1QM4
 kind: exercise
 title: Compact locally euclidean Hausdorff spaces are manifolds
-subtitle: Munkres §36.3
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BZW5J
 kind: exercise
 title: Unions of connected sets meeting a common connected set
-subtitle: Munkres §23.3
 classification:
   areas:
   - topology

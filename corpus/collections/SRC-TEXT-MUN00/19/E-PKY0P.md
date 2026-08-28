@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PKY0P
 kind: exercise
 title: Closure of the eventually-zero sequences in box and product topologies
-subtitle: Munkres §19.7
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-1-10
 kind: exercise
 title: Cartesian products as subsets of $\mathbb{R} \times \mathbb{R}$
-subtitle: Munkres §1.10
 classification:
   areas:
   - topology

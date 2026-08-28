@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ID1F7
 kind: exercise
 title: The theorem of meteorology
-subtitle: Munkres §57.1
 classification:
   areas:
   - topology

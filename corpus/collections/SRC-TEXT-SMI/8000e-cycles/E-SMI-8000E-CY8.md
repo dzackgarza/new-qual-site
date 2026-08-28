@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY8
 kind: exercise
 title: Transitive subgroups of S(p) containing a transposition are everything
-subtitle: Smith 8000e cycles 8
 classification:
   areas:
   - algebra

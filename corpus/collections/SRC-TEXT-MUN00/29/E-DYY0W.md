@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DYY0W
 kind: exercise
 title: Coset spaces of locally compact groups are locally compact
-subtitle: Munkres §29.9
 classification:
   areas:
   - topology

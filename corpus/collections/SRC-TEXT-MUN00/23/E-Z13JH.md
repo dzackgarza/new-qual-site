@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Z13JH
 kind: exercise
 title: Infinite sets are connected in the finite complement topology
-subtitle: Munkres §23.4
 classification:
   areas:
   - topology

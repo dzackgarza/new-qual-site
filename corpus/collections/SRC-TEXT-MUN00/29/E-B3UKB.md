@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-B3UKB
 kind: exercise
 title: Compact closure neighborhoods in locally compact Hausdorff spaces
-subtitle: Munkres §29.10
 classification:
   areas:
   - topology

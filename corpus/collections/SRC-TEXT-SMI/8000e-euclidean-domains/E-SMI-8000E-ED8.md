@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-ED8
 kind: exercise
 title: Structure of finitely generated modules over a Euclidean domain
-subtitle: Smith 8000e euclidean domains 8
 classification:
   areas:
   - algebra

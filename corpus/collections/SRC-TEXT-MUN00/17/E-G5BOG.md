@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-G5BOG
 kind: exercise
 title: Subspaces of Hausdorff spaces are Hausdorff
-subtitle: Munkres §17.12
 classification:
   areas:
   - topology

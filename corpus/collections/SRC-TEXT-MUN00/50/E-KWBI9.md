@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KWBI9
 kind: exercise
 title: Connected T1 spaces have positive dimension
-subtitle: Munkres §50.2
 classification:
   areas:
   - topology

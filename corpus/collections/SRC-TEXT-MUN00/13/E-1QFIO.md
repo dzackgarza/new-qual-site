@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1QFIO
 kind: exercise
 title: Intersections and unions of families of topologies
-subtitle: Munkres §13.4
 classification:
   areas:
   - topology

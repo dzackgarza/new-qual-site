@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UVWDX
 kind: exercise
 title: A change of basis in a free abelian group
-subtitle: Munkres §67.3
 classification:
   areas:
   - topology

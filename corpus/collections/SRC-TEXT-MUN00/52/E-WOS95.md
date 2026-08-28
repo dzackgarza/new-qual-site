@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WOS95
 kind: exercise
 title: Induced homomorphisms up to base-point change
-subtitle: Munkres §52.6
 classification:
   areas:
   - topology

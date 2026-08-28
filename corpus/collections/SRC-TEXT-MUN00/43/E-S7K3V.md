@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-S7K3V
 kind: exercise
 title: Local compactness of balls versus completeness
-subtitle: Munkres §43.1
 classification:
   areas:
   - topology

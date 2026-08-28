@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LV54B
 kind: exercise
 title: Composites of covering maps over a base with a universal covering
-subtitle: Munkres §80.1
 classification:
   areas:
   - topology

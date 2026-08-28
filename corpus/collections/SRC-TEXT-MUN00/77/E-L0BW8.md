@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-L0BW8
 kind: exercise
 title: The reduction algorithm applied to eight schemes
-subtitle: Munkres §77.3
 classification:
   areas:
   - topology

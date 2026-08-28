@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XFMJA
 kind: exercise
 title: Coverings of the torus from subgroups of Z x Z
-subtitle: Munkres §79.4
 classification:
   areas:
   - topology

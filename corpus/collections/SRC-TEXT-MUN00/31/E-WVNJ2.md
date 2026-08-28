@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WVNJ2
 kind: exercise
 title: Orbit spaces of compact group actions inherit separation properties
-subtitle: Munkres §31.8
 classification:
   areas:
   - topology

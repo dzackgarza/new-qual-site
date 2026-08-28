@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-2
 kind: exercise
-title: "Associativity of finite and infinite Cartesian products"
-subtitle: Munkres §5.2
+title: Associativity of finite and infinite Cartesian products
 classification:
   areas:
   - topology

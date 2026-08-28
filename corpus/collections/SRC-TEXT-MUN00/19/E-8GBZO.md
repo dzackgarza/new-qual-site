@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8GBZO
 kind: exercise
 title: The box topology implication in the maps-into-products theorem
-subtitle: Munkres §19.5
 classification:
   areas:
   - topology

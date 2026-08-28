@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-7NRBE
 kind: exercise
 title: The size of the Stone-Cech compactification of the positive integers
-subtitle: Munkres §38.8
 classification:
   areas:
   - topology

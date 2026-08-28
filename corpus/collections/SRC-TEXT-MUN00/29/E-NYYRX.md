@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-NYYRX
 kind: exercise
 title: Accumulation points of nets
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

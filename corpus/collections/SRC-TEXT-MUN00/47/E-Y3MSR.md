@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Y3MSR
 kind: exercise
 title: Compact closures in the topology of compact convergence
-subtitle: Munkres §47.2
 classification:
   areas:
   - topology

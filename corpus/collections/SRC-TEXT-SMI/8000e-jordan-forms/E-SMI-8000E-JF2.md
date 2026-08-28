@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-JF2
 kind: exercise
 title: Characteristic roots lie in the minimal polynomial; primary subspaces
-subtitle: Smith 8000e jordan forms 2
 classification:
   areas:
   - algebra

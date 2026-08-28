@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OWZBO
 kind: exercise
 title: Uniqueness of free products
-subtitle: Munkres §68.4
 classification:
   areas:
   - topology

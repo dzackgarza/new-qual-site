@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-HQSSE
 kind: exercise
 title: Two disjoint curves on the sphere make three regions
-subtitle: Munkres §63.1
 classification:
   areas:
   - topology

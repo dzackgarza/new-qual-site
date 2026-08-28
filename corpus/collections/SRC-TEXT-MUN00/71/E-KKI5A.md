@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KKI5A
 kind: exercise
 title: The countable chain of tangent circles
-subtitle: Munkres §71.5
 classification:
   areas:
   - topology

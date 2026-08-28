@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-7GHO
 kind: exercise
-title: "Simultaneous row and column reduction to diagonal form"
-subtitle: Hoffman and Kunze 1.6.11
+title: Simultaneous row and column reduction to diagonal form
 classification:
   areas:
   - algebra

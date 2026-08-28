@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OLLMN
 kind: exercise
 title: Closed subsets of closed subspaces are closed
-subtitle: Munkres §17.2
 classification:
   areas:
   - topology

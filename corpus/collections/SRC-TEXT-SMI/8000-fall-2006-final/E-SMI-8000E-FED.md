@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FED
 kind: exercise
 title: Proof choice — small groups or simplicity of A5
-subtitle: Smith 8000 fall 2006 final D
 classification:
   areas:
   - algebra

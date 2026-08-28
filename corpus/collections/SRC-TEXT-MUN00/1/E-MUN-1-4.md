@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-4
 kind: exercise
-title: "Negation of quantified statements about real numbers"
-subtitle: Munkres §1.4
+title: Negation of quantified statements about real numbers
 classification:
   areas:
   - topology

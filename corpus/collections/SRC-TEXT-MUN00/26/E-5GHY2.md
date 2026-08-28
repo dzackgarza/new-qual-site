@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5GHY2
 kind: exercise
 title: Projections with compact factor are closed maps
-subtitle: Munkres §26.7
 classification:
   areas:
   - topology

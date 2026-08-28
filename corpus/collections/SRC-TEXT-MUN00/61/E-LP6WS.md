@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LP6WS
 kind: exercise
 title: The closed topologist's sine curve separates the sphere
-subtitle: Munkres §61.2
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-4-11
 kind: exercise
 title: Even and odd integers and irrationality of $\sqrt{2}$
-subtitle: Munkres §4.11
 classification:
   areas:
   - topology

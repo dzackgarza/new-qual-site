@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ZYJGG
 kind: exercise
 title: Absolute retracts
-subtitle: Munkres §35.6
 classification:
   areas:
   - topology

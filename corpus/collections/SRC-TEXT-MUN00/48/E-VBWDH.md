@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-VBWDH
 kind: exercise
 title: Uniform boundedness principle
-subtitle: Munkres §48.10
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PLSGP
 kind: exercise
 title: Epsilon-delta continuity implies open-set continuity
-subtitle: Munkres §18.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ER6ZN
 kind: exercise
 title: Surjections onto R^omega under the product, uniform, and box topologies
-subtitle: Munkres §44.3
 classification:
   areas:
   - topology

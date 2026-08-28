@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BAZND
 kind: exercise
 title: Uncountable powers of the line are not normal
-subtitle: Munkres §32.9
 classification:
   areas:
   - topology

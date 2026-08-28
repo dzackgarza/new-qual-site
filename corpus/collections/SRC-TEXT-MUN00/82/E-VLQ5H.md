@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-VLQ5H
 kind: exercise
 title: The uncountable fundamental group of the infinite earring
-subtitle: Munkres §82 Supplementary
 classification:
   areas:
   - topology

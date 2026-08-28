@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-VFXN4
 kind: exercise
 title: Maps of the projective plane and the torus into the circle
-subtitle: Munkres §79.2
 classification:
   areas:
   - topology

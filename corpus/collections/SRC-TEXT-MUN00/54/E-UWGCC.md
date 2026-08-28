@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UWGCC
 kind: exercise
 title: The fundamental group of the torus via the circle covering
-subtitle: Munkres §54.7
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ENNUD
 kind: exercise
 title: An infinite set without limit points in the uniform topology
-subtitle: Munkres §28.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LIN4R
 kind: exercise
 title: Linear continua in the dictionary order
-subtitle: Munkres §24.5
 classification:
   areas:
   - topology

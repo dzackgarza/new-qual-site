@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CT4NT
 kind: exercise
 title: Arzela's theorem over sigma-compact Hausdorff domains
-subtitle: Munkres §47.4
 classification:
   areas:
   - topology

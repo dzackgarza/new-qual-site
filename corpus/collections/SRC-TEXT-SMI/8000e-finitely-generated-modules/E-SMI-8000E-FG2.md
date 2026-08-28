@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FG2
 kind: exercise
 title: Classifying structures annihilated by a fixed element
-subtitle: Smith 8000e fg modules 2
 classification:
   areas:
   - algebra

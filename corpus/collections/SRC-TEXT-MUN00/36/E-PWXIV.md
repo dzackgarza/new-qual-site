@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PWXIV
 kind: exercise
 title: Properties of eleven standard spaces
-subtitle: Munkres §36 Supplementary
 classification:
   areas:
   - topology

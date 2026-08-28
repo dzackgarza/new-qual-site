@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XFF7Q
 kind: exercise
 title: Uniform balls are not products of intervals
-subtitle: Munkres §20.6
 classification:
   areas:
   - topology

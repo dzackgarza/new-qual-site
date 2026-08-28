@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-DM2U0
 kind: exercise
 title: The three-way split in the Tietze theorem proof
-subtitle: Munkres §35.2
 classification:
   areas:
   - topology

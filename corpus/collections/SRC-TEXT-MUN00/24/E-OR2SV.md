@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OR2SV
 kind: exercise
 title: No two of the unit interval variants are homeomorphic
-subtitle: Munkres §24.1
 classification:
   areas:
   - topology

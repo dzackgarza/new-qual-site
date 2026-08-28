@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-V5CQ0
 kind: exercise
 title: Antipodal identification on the disk gives the projective plane
-subtitle: Munkres §60.2
 classification:
   areas:
   - topology

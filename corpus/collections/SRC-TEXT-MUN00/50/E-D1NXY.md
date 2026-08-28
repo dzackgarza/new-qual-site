@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-D1NXY
 kind: exercise
 title: The line is a manifold that is not compact
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

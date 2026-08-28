@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-8KGS1
 kind: exercise
 title: Local Baireness implies Baireness
-subtitle: Munkres §48.4
 classification:
   areas:
   - topology

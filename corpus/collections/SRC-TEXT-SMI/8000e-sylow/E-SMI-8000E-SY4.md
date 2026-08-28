@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY4
 kind: exercise
 title: Normalizers of Sylow subgroups are self-normalizing
-subtitle: Smith 8000e sylow 4
 classification:
   areas:
   - algebra

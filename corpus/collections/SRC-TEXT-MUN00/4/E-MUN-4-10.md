@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-10
 kind: exercise
-title: "Existence and uniqueness of positive square roots"
-subtitle: Munkres §4.10
+title: Existence and uniqueness of positive square roots
 classification:
   areas:
   - topology

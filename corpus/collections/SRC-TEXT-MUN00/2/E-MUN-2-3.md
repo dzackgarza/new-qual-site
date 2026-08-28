@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-3
 kind: exercise
-title: "Preimage and image for arbitrary unions and intersections"
-subtitle: Munkres §2.3
+title: Preimage and image for arbitrary unions and intersections
 classification:
   areas:
   - topology

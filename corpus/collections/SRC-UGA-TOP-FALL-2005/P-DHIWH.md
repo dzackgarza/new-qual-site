@@ -3,7 +3,6 @@ schema: qual/card@1
 id: P-DHIWH
 kind: problem
 title: The unit interval is compact
-subtitle: Fall 2005
 classification:
   areas:
   - topology

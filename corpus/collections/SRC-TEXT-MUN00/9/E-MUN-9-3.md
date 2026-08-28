@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-3
 kind: exercise
-title: "Infinite sets from sequences of injections"
-subtitle: Munkres §9.3
+title: Infinite sets from sequences of injections
 classification:
   areas:
   - topology

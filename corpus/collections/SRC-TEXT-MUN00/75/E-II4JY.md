@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-II4JY
 kind: exercise
 title: The first homology of the Klein bottle
-subtitle: Munkres §75.2
 classification:
   areas:
   - topology

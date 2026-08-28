@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MYMF4
 kind: exercise
 title: The first homology of the connected sum of the projective plane and the torus
-subtitle: Munkres §75.1
 classification:
   areas:
   - topology

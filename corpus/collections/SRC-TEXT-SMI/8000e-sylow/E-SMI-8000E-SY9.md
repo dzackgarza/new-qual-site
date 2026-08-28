@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY9
 kind: exercise
 title: A complete study of GL(3, Z/2)
-subtitle: Smith 8000e sylow 9
 classification:
   areas:
   - algebra

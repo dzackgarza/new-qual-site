@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-MT2
 kind: exercise
 title: PIDs have unique factorization
-subtitle: Smith 8000 fall 2006 midterm 2
 classification:
   areas:
   - algebra

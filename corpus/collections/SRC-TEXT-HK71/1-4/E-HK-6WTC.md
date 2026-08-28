@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-6WTC
 kind: exercise
-title: "Inconsistent system of three equations in four unknowns"
-subtitle: Hoffman and Kunze 1.4.6
+title: Inconsistent system of three equations in four unknowns
 classification:
   areas:
   - algebra

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-ED1
 kind: exercise
 title: Every ideal in a Euclidean domain is principal
-subtitle: Smith 8000e Euclidean domains 1
 classification:
   areas:
   - algebra

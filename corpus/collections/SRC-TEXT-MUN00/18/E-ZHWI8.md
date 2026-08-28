@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ZHWI8
 kind: exercise
 title: The set where f is at most g is closed
-subtitle: Munkres §18.8
 classification:
   areas:
   - topology

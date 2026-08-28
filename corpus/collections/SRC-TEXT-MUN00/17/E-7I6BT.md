@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-7I6BT
 kind: exercise
 title: Closures of intervals in finer topologies on the line
-subtitle: Munkres §17.17
 classification:
   areas:
   - topology

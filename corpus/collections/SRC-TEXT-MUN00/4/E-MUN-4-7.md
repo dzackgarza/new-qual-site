@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-7
 kind: exercise
-title: "Extending the laws of exponents to all integers"
-subtitle: Munkres §4.7
+title: Extending the laws of exponents to all integers
 classification:
   areas:
   - topology

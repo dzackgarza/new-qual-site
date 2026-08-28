@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-79XXG
 kind: exercise
 title: Covering transformations of four coverings of the figure eight
-subtitle: Munkres §81.2
 classification:
   areas:
   - topology

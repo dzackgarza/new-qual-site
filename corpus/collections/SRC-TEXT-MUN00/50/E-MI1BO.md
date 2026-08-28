@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MI1BO
 kind: exercise
 title: Locally euclidean spaces are locally compact and locally metrizable
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

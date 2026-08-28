@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-O0HKU
 kind: exercise
 title: Maps from compact to Hausdorff spaces are closed
-subtitle: Munkres §26.6
 classification:
   areas:
   - topology

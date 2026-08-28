@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-C0ZWV
 kind: exercise
 title: Homotopy classes into an interval and out of a path-connected space
-subtitle: Munkres §51.2
 classification:
   areas:
   - topology

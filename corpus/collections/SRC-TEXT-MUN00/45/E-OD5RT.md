@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OD5RT
 kind: exercise
 title: Countable products of compact metrizable spaces are compact
-subtitle: Munkres §45.1
 classification:
   areas:
   - topology

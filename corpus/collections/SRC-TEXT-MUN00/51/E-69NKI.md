@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-69NKI
 kind: exercise
 title: Homotopy of composites
-subtitle: Munkres §51.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XIQ94
 kind: exercise
 title: The order of the rectangles in the lifting-of-homotopies proof
-subtitle: Munkres §54.2
 classification:
   areas:
   - topology

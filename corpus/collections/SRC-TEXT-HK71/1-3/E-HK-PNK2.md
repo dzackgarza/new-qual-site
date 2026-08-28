@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-PNK2
 kind: exercise
-title: "Non-row-equivalent matrices"
-subtitle: Hoffman and Kunze 1.3.5
+title: Non-row-equivalent matrices
 classification:
   areas:
   - algebra

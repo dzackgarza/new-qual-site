@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-5
 kind: exercise
-title: "Right inverses from surjections via the axiom of choice"
-subtitle: Munkres §9.5
+title: Right inverses from surjections via the axiom of choice
 classification:
   areas:
   - topology

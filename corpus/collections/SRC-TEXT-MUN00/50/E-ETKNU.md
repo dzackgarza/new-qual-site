@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ETKNU
 kind: exercise
 title: The imbedding theorem for m equals one
-subtitle: Munkres §50.5
 classification:
   areas:
   - topology

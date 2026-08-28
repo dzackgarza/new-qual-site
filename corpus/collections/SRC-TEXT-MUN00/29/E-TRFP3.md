@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TRFP3
 kind: exercise
 title: Directed sets without antisymmetry
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

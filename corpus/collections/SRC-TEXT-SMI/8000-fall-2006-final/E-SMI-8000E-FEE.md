@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FEE
 kind: exercise
 title: Proof choice — algebraicity of finite extensions or existence of root fields
-subtitle: Smith 8000 fall 2006 final E
 classification:
   areas:
   - algebra

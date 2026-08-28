@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2M0XQ
 kind: exercise
 title: Fundamental groups of twelve standard spaces
-subtitle: Munkres §58.2
 classification:
   areas:
   - topology

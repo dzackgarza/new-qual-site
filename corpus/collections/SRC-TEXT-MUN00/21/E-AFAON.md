@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AFAON
 kind: exercise
 title: Arithmetic of convergent sequences
-subtitle: Munkres §21.5
 classification:
   areas:
   - topology

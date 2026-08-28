@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-Y75ZB
 kind: exercise
 title: A countable rational rectangle basis for the plane
-subtitle: Munkres §16.6
 classification:
   areas:
   - topology

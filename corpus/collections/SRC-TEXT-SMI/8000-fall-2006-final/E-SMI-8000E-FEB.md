@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FEB
 kind: exercise
 title: Field theory definitions
-subtitle: Smith 8000 fall 2006 final B
 classification:
   areas:
   - algebra

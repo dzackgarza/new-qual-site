@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YERPP
 kind: exercise
 title: Order-preserving surjections are homeomorphisms
-subtitle: Munkres §24.7
 classification:
   areas:
   - topology

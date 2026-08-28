@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TFUF2
 kind: exercise
 title: Details of the imbedding theorem proof
-subtitle: Munkres §34.6
 classification:
   areas:
   - topology

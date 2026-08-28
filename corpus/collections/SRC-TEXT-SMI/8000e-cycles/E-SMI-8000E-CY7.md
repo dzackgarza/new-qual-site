@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY7
 kind: exercise
 title: The 2-cycle relation on a subgroup of the symmetric group
-subtitle: Smith 8000e cycles 7
 classification:
   areas:
   - algebra

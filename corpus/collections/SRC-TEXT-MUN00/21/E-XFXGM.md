@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XFXGM
 kind: exercise
 title: Product metrics, finite and countable
-subtitle: Munkres §21.3
 classification:
   areas:
   - topology

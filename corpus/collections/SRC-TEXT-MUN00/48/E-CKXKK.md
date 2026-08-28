@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CKXKK
 kind: exercise
 title: G-delta subspaces of compact Hausdorff or complete metric spaces are Baire
-subtitle: Munkres §48.5
 classification:
   areas:
   - topology

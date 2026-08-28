@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-2AWO8
 kind: exercise
 title: Prove Theorem 46.7
-subtitle: Munkres §46.2
 classification:
   areas:
   - topology

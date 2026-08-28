@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-N8
 kind: exercise
 title: Unique factorization localizes
-subtitle: Smith 8000e localization 8
 classification:
   areas:
   - algebra

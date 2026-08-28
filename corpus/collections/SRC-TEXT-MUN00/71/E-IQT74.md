@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-IQT74
 kind: exercise
 title: Hausdorffness of wedges of circles
-subtitle: Munkres §71.1
 classification:
   areas:
   - topology

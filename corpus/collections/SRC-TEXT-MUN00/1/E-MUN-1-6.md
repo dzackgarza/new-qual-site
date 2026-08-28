@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-6
 kind: exercise
-title: "Contrapositives of quantified subset statements"
-subtitle: Munkres §1.6
+title: Contrapositives of quantified subset statements
 classification:
   areas:
   - topology

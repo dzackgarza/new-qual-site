@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FG1
 kind: exercise
 title: Classifying groups, modules, and Jordan forms of one fixed type
-subtitle: Smith 8000e fg modules 1
 classification:
   areas:
   - algebra

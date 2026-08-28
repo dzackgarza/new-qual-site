@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0HGNK
 kind: exercise
 title: Continuity of evaluation forces the compact-open topology
-subtitle: Munkres §46.8
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-FFNIM
 kind: exercise
 title: Adjoining cells of dimension above two does not change the fundamental group
-subtitle: Munkres §72.1
 classification:
   areas:
   - topology

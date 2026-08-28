@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-4
 kind: exercise
-title: "Identifying implicit use of the axiom of choice"
-subtitle: Munkres §9.4
+title: Identifying implicit use of the axiom of choice
 classification:
   areas:
   - topology

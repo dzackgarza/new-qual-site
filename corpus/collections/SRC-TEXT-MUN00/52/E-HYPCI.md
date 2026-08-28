@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-HYPCI
 kind: exercise
 title: Star-convex sets are simply connected
-subtitle: Munkres §52.1
 classification:
   areas:
   - topology

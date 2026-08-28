@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-6
 kind: exercise
-title: "Paradoxes of the set of all sets"
-subtitle: Munkres §9.6
+title: Paradoxes of the set of all sets
 classification:
   areas:
   - topology

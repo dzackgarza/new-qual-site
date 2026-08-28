@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR5
 kind: exercise
 title: Prime and maximal ideals detected in quotients
-subtitle: Smith 8000e noetherian rings 5
 classification:
   areas:
   - algebra

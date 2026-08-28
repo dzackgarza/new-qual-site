@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-BUVJI
 kind: exercise
 title: Two reduction sequences for the same scheme disagree
-subtitle: Munkres §76.2
 classification:
   areas:
   - topology

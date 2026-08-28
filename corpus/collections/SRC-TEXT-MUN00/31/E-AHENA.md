@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-AHENA
 kind: exercise
 title: Closed continuous surjections preserve normality
-subtitle: Munkres §31.6
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-ZEESK
 kind: exercise
 title: The metric is continuous exactly for its own topology
-subtitle: Munkres §20.3
 classification:
   areas:
   - topology

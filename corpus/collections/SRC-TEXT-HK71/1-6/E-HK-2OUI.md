@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-HK-2OUI
 kind: exercise
-title: "Invertibility and the kernel of a matrix"
-subtitle: Hoffman and Kunze 1.6.7
+title: Invertibility and the kernel of a matrix
 classification:
   areas:
   - algebra

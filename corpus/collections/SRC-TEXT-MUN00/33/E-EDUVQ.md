@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-EDUVQ
 kind: exercise
 title: Box products of the line are completely regular
-subtitle: Munkres §33.9
 classification:
   areas:
   - topology

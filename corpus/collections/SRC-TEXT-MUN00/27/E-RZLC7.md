@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-RZLC7
 kind: exercise
 title: Connected metric spaces with more than one point are uncountable
-subtitle: Munkres §27.4
 classification:
   areas:
   - topology

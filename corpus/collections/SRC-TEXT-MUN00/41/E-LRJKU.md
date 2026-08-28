@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LRJKU
 kind: exercise
 title: Paracompact coverings need not have locally finite subcoverings
-subtitle: Munkres §41.1
 classification:
   areas:
   - topology

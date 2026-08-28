@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OQRAL
 kind: exercise
 title: Euler numbers of standard graphs and their coverings
-subtitle: Munkres §83.2
 classification:
   areas:
   - topology

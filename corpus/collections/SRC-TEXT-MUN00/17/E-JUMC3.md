@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JUMC3
 kind: exercise
 title: Differences of open and closed sets
-subtitle: Munkres §17.4
 classification:
   areas:
   - topology

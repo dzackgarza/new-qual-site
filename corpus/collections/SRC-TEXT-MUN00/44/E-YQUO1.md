@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-YQUO1
 kind: exercise
 title: Peano spaces and the Hahn-Mazurkiewicz theorem
-subtitle: Munkres §44.4
 classification:
   areas:
   - topology

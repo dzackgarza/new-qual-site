@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-R3NOE
 kind: exercise
 title: Products of subspaces are subspaces
-subtitle: Munkres §19.2
 classification:
   areas:
   - topology

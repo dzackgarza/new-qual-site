@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-7-5
 kind: exercise
 title: Countability of function spaces and subsets of $\mathbb{Z}_+$
-subtitle: Munkres §7.5
 classification:
   areas:
   - topology

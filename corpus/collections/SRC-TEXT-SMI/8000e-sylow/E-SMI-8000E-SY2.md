@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY2
 kind: exercise
 title: Every group of order $45$ is abelian
-subtitle: Smith 8000e Sylow 2
 classification:
   areas:
   - algebra

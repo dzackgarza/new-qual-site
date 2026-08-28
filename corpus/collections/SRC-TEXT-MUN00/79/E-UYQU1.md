@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-UYQU1
 kind: exercise
 title: Covering homomorphisms of abelian topological groups
-subtitle: Munkres §79.7
 classification:
   areas:
   - topology

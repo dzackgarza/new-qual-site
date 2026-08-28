@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-9V5EM
 kind: exercise
 title: Powers converge pointwise but not uniformly on [0,1]
-subtitle: Munkres §21.6
 classification:
   areas:
   - topology

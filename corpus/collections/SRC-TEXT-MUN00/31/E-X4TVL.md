@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-X4TVL
 kind: exercise
 title: Rational and irrational anti-diagonals in the Sorgenfrey plane
-subtitle: Munkres §31.9
 classification:
   areas:
   - topology

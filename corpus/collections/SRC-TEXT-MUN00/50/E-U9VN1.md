@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-U9VN1
 kind: exercise
 title: Manifolds imbed as closed subspaces of codimension at least one
-subtitle: Munkres §50.7
 classification:
   areas:
   - topology

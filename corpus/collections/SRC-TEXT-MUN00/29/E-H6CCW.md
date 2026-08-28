@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-H6CCW
 kind: exercise
 title: Cofinal subsets of directed sets
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

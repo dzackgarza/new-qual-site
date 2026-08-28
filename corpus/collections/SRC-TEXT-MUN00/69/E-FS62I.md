@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-FS62I
 kind: exercise
 title: Direct sums of cyclic groups are not determined by their factors
-subtitle: Munkres §69.4
 classification:
   areas:
   - topology

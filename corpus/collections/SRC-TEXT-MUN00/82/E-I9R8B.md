@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-I9R8B
 kind: exercise
 title: The cone on the infinite earring
-subtitle: Munkres §82.2
 classification:
   areas:
   - topology

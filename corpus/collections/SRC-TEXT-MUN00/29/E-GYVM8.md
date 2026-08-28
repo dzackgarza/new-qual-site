@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-GYVM8
 kind: exercise
 title: Compactness characterized by subnets
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

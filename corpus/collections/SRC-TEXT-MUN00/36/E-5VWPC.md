@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5VWPC
 kind: exercise
 title: The shrinking lemma for point-finite open coverings
-subtitle: Munkres §36.4
 classification:
   areas:
   - topology

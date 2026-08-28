@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-ED9
 kind: exercise
 title: Factorization length bounded by the size function
-subtitle: Smith 8000e euclidean domains 9
 classification:
   areas:
   - algebra

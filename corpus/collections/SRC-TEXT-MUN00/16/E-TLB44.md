@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TLB44
 kind: exercise
 title: Open sets in a closed interval versus open sets in the line
-subtitle: Munkres §16.3
 classification:
   areas:
   - topology

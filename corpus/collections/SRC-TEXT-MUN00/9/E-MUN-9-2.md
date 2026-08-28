@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-2
 kind: exercise
-title: "Choice functions for countable collections"
-subtitle: Munkres §9.2
+title: Choice functions for countable collections
 classification:
   areas:
   - topology

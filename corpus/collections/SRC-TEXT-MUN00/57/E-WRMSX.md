@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-WRMSX
 kind: exercise
 title: Antipode-separating maps of the sphere are surjective
-subtitle: Munkres §57.2
 classification:
   areas:
   - topology

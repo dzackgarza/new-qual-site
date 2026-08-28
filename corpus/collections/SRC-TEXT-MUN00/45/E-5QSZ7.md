@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5QSZ7
 kind: exercise
 title: Sources of equicontinuity
-subtitle: Munkres §45.2
 classification:
   areas:
   - topology

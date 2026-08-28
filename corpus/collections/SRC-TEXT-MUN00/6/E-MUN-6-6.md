@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MUN-6-6
 kind: exercise
 title: Bijection between $\mathcal{P}(A)$ and $X^n$
-subtitle: Munkres §6.6
 classification:
   areas:
   - topology

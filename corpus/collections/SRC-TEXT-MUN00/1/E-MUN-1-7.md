@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-7
 kind: exercise
-title: "Expressing sets using union, intersection, and difference"
-subtitle: Munkres §1.7
+title: Expressing sets using union, intersection, and difference
 classification:
   areas:
   - topology

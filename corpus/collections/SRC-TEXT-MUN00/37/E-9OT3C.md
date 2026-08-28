@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-9OT3C
 kind: exercise
 title: Quasicomponents equal components in compact Hausdorff spaces
-subtitle: Munkres §37.4
 classification:
   areas:
   - topology

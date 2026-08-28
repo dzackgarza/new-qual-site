@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-W6ZTU
 kind: exercise
 title: Discrete spaces are totally disconnected
-subtitle: Munkres §23.5
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OSQTJ
 kind: exercise
 title: Compact contractible subsets of the sphere do not separate
-subtitle: Munkres §62.2
 classification:
   areas:
   - topology

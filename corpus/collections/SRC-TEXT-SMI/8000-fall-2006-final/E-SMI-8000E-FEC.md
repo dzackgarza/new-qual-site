@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FEC
 kind: exercise
 title: Stating Sylow's theorem and Jordan-Hölder
-subtitle: Smith 8000 fall 2006 final C
 classification:
   areas:
   - algebra

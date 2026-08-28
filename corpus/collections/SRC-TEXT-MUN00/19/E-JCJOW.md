@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-JCJOW
 kind: exercise
 title: Choice axiom and nonempty cartesian products
-subtitle: Munkres §19.9
 classification:
   areas:
   - topology

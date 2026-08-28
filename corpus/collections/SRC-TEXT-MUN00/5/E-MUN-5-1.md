@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-1
 kind: exercise
-title: 'Bijection between $A \times B$ and $B \times A$'
-subtitle: Munkres §5.1
+title: Bijection between $A \times B$ and $B \times A$
 classification:
   areas:
   - topology

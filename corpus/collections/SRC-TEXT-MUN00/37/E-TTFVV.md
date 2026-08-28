@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TTFVV
 kind: exercise
 title: The countable intersection property characterizes Lindelof spaces
-subtitle: Munkres §37.2
 classification:
   areas:
   - topology

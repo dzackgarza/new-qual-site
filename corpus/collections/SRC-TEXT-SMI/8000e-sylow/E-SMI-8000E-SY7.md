@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-SY7
 kind: exercise
 title: Fixed points of p-groups and conjugacy of Sylow subgroups
-subtitle: Smith 8000e sylow 7
 classification:
   areas:
   - algebra

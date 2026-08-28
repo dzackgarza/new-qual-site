@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-5WDER
 kind: exercise
 title: Simple closed curves on the torus may or may not separate
-subtitle: Munkres §61.1
 classification:
   areas:
   - topology

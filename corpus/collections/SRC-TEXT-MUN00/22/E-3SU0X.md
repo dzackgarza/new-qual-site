@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-3SU0X
 kind: exercise
 title: Quotient topology on a three-point image of the line
-subtitle: Munkres §22.1
 classification:
   areas:
   - topology

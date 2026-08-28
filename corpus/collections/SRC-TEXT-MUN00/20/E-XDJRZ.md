@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-XDJRZ
 kind: exercise
 title: The l2 space is a vector space with the l2 metric
-subtitle: Munkres §20.10
 classification:
   areas:
   - topology

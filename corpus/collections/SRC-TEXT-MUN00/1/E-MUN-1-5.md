@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-5
 kind: exercise
-title: "Membership in unions and intersections of collections"
-subtitle: Munkres §1.5
+title: Membership in unions and intersections of collections
 classification:
   areas:
   - topology

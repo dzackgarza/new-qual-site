@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-LHQJE
 kind: exercise
 title: The winding number as a degree
-subtitle: Munkres §66.1
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TAVBI
 kind: exercise
 title: Continuity characterized by nets
-subtitle: Munkres §29 Supplementary
 classification:
   areas:
   - topology

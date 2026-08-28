@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-FV0KE
 kind: exercise
 title: A homotopy equivalence to a point that is not a deformation retract
-subtitle: Munkres §58.8
 classification:
   areas:
   - topology

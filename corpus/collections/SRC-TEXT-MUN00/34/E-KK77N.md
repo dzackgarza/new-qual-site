@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KK77N
 kind: exercise
 title: Locally metrizable regular Lindelof spaces are metrizable
-subtitle: Munkres §34.8
 classification:
   areas:
   - topology

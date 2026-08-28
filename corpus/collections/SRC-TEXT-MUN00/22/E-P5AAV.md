@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-P5AAV
 kind: exercise
 title: The quotient R over Z as a familiar topological group
-subtitle: Munkres §22 Supplementary
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-PLICQ
 kind: exercise
 title: Abelian fundamental groups and base-point independence
-subtitle: Munkres §52.3
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-E3JL6
 kind: exercise
 title: Products of Hausdorff spaces are Hausdorff
-subtitle: Munkres §17.11
 classification:
   areas:
   - topology

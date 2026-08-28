@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-0EZ4U
 kind: exercise
 title: Seifert-van Kampen with trivial intersection homomorphism
-subtitle: Munkres §70.1
 classification:
   areas:
   - topology

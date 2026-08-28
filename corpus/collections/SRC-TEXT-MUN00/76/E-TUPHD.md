@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TUPHD
 kind: exercise
 title: Pasting schemes for two polygonal regions
-subtitle: Munkres §76.1
 classification:
   areas:
   - topology

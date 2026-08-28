@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-APRPU
 kind: exercise
 title: Higher-dimensional separation theorems from the no-retraction theorem
-subtitle: Munkres §62.6
 classification:
   areas:
   - topology

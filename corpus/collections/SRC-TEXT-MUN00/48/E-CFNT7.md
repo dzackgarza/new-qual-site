@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CFNT7
 kind: exercise
 title: Countable unions in Baire spaces
-subtitle: Munkres §48.1
 classification:
   areas:
   - topology

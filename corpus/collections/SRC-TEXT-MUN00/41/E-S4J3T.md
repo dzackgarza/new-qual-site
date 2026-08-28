@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-S4J3T
 kind: exercise
 title: Unions of closed paracompact subspaces
-subtitle: Munkres §41.7
 classification:
   areas:
   - topology

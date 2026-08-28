@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-1QY2X
 kind: exercise
 title: A flawed proof that the sphere is simply connected
-subtitle: Munkres §59.2
 classification:
   areas:
   - topology

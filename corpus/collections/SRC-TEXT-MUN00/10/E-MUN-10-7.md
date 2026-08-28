@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-7
 kind: exercise
-title: "Principle of transfinite induction"
-subtitle: Munkres §10.7
+title: Principle of transfinite induction
 classification:
   areas:
   - topology

@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR6
 kind: exercise
 title: Unions of chains of proper ideals are proper
-subtitle: Smith 8000e noetherian rings 6
 classification:
   areas:
   - algebra

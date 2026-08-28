@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-KADOC
 kind: exercise
 title: Coverings over simply connected bases are homeomorphisms
-subtitle: Munkres §54.8
 classification:
   areas:
   - topology

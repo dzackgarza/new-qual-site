@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-G4SRA
 kind: exercise
 title: Products of continuous maps are continuous
-subtitle: Munkres §18.10
 classification:
   areas:
   - topology

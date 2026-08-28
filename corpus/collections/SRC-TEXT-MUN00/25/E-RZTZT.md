@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-RZTZT
 kind: exercise
 title: Components of R^omega in product, uniform, and box topologies
-subtitle: Munkres §25.2
 classification:
   areas:
   - topology

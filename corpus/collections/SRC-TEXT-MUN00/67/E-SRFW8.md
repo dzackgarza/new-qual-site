@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SRFW8
 kind: exercise
 title: Subgroups need not be direct summands
-subtitle: Munkres §67.2
 classification:
   areas:
   - topology

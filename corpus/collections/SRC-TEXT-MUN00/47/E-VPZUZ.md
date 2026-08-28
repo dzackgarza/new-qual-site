@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-VPZUZ
 kind: exercise
 title: Equicontinuous pointwise limits converge compactly
-subtitle: Munkres §47.5
 classification:
   areas:
   - topology

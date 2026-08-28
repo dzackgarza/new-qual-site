@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-7GVUH
 kind: exercise
 title: Level sets of the Urysohn function
-subtitle: Munkres §33.1
 classification:
   areas:
   - topology

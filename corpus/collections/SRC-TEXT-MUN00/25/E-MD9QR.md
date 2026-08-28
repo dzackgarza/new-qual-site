@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-MD9QR
 kind: exercise
 title: The ordered square is locally connected but not locally path connected
-subtitle: Munkres §25.3
 classification:
   areas:
   - topology

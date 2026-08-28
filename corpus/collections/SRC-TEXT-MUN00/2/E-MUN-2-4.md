@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-2-4
 kind: exercise
-title: "Composition of functions and injectivity and surjectivity"
-subtitle: Munkres §2.4
+title: Composition of functions and injectivity and surjectivity
 classification:
   areas:
   - topology

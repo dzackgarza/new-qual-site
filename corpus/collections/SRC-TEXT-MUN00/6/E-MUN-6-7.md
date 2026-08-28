@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-6-7
 kind: exercise
-title: "Finiteness of function sets between finite sets"
-subtitle: Munkres §6.7
+title: Finiteness of function sets between finite sets
 classification:
   areas:
   - topology

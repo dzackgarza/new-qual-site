@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-CFH1Q
 kind: exercise
 title: Closed sets satisfy the topology axioms
-subtitle: Munkres §17.1
 classification:
   areas:
   - topology

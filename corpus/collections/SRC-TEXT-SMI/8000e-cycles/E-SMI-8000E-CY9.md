@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY9
 kind: exercise
 title: The commutator subgroup is characteristic
-subtitle: Smith 8000e cycles 9
 classification:
   areas:
   - algebra

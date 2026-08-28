@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-AB6
 kind: exercise
 title: $(\QQ,+)$ is not free abelian
-subtitle: Smith 8000e abelian groups 6
 classification:
   areas:
   - algebra

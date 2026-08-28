@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-CY5
 kind: exercise
 title: The sign homomorphism from the Vandermonde polynomial
-subtitle: Smith 8000e cycles 5
 classification:
   areas:
   - algebra

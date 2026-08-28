@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-OYPV7
 kind: exercise
 title: The hierarchy of conditions on locally euclidean spaces
-subtitle: Munkres §50 Supplementary
 classification:
   areas:
   - topology

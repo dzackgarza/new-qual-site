@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-6
 kind: exercise
-title: "Schroeder–Bernstein theorem and equal cardinality"
-subtitle: Munkres §7.6
+title: Schroeder–Bernstein theorem and equal cardinality
 classification:
   areas:
   - topology

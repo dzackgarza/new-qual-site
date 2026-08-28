@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-GG4
 kind: exercise
 title: Every finite abelian group is a Galois group over Q via cyclotomic extensions
-subtitle: Smith 8000e galois 4/5/6/7/8
 classification:
   areas:
   - algebra

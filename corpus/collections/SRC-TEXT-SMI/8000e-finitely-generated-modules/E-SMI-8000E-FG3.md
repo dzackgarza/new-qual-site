@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-FG3
 kind: exercise
 title: Classification with prescribed kernel dimensions
-subtitle: Smith 8000e fg modules 3
 classification:
   areas:
   - algebra

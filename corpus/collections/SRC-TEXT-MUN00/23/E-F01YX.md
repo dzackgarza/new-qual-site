@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-F01YX
 kind: exercise
 title: Arbitrary products of connected spaces are connected
-subtitle: Munkres §23.10
 classification:
   areas:
   - topology

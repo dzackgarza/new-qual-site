@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SMI-8000E-NR1
 kind: exercise
 title: In a Noetherian ring every ideal sits in a maximal ideal, without Zorn
-subtitle: Smith 8000e Noetherian rings 1
 classification:
   areas:
   - algebra

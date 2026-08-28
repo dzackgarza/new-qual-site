@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-39RRX
 kind: exercise
 title: Four topologies on l2 and the Hilbert cube
-subtitle: Munkres §20.8
 classification:
   areas:
   - topology

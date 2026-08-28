@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-TZ1IN
 kind: exercise
 title: Complete normality characterized by separated sets
-subtitle: Munkres §32.6
 classification:
   areas:
   - topology
