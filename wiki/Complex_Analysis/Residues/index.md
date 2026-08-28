@@ -7,4 +7,6 @@ order: 4
 
 Residue calculus and the contour integrals the complex qual actually asks.
 
-[[Residues|Residues]] is the theorem. [[Integrals|Integrals]] and [[Residues for integrals|Residues for Integrals]] are the standard contours. [[Exercises_Integrals|Exercises: Contour integration]] is the drill.
+[[Residues|Residues]] is the theorem.
+[[Integrals|Integrals]] and [[Residues for integrals|Residues for Integrals]] are the standard contours.
+[[Exercises_Integrals|Exercises: Contour integration]] is the drill.
