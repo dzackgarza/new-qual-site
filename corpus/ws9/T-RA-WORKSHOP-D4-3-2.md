@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-2
 kind: theorem
 title: 'Theorem 3.2: Continuous images of compact sets and extrema'
-subtitle: Theorem 3.2 (Extreme Value Theorem)
+subtitle: Extreme Value Theorem
 classification:
   areas:
   - real-analysis
