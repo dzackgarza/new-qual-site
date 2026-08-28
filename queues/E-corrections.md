@@ -12,7 +12,7 @@ No scripts, no pattern matching.
 | --- | --- | --- |
 | 1-25 | 140A_Exam_Review — ALGEBRA_REVIEW1 | done |
 | 26-50 | Algebra_Solutions — basic-08F | done |
-| 51-100 | basic-08S — chapter-5 | in progress |
+| 51-100 | basic-08S — chapter-6 | in progress |
 | 101-200 |  | pending |
 | 201-354 |  | pending |
 
@@ -295,6 +295,83 @@ No scripts, no pattern matching.
   - Answers verified against the mathematics (stem and choices otherwise kept as extracted): Q1 (E) (two distinct solutions to a consistent system ⇒ infinitely many; (C) is not necessary: square singular $A = [ [ 1 , 0 ] , [ 0 , 0 ] ]$, $\mathbf { b } = ( 1 , 0 )$); Q2 $a + b = - 1$ (the solution (a, b, a) forces a = −1/2 and b = 2a² − 1 = −1/2); Q3 (D) none (I fails for nilpotent [[0,1],[0,0]]; II fails $AB = AC \not \Rightarrow B = C$; III fails the reflection diag(1,−1)); Q4 (D) 6 ($[ [ 1 , 1 ] , [ 0 , 1 ] ] ^ { n } - [ [ 1 , 0 ] , [ 1 , 1 ] ] ^ { n } = [ [ 0 , n ] , [ - n , 0 ] ]$); Q5 (C) 0 (AB = I forces a = b = c = 0); Q6 (B) −1 (det = −2(k+1)); Q7 (E) 2 (rank 2, determinant 0); Q8 −2d (column ops C₂ := C₂ + 2C₁, C₃ := C₃ − C₁; the answer choices are entirely absent from the scan); Q9 (B) 0 (4×4 determinant −x); Q10 (B) 10 ($b = \alpha ( 1 , 4 , 7 ) + \beta ( 2 , 5 , 8 ) + 0 \cdot ( 3 , 6 , 9 )$ with $\alpha = - 38 / 3$, $\beta = 37 / 3$); Q12 (D) n(n+1)/2; Q13 (D) (determinant zero ⇔ (x, y), (0, y₁), (1, y₂) collinear, a line of slope y₂ − y₁); Q15 (C) (dim ker = 3 in R⁵ ⇒ rank 2 ⇒ image a plane through the origin); Q16 (E) ($S T = - T S$: matrix products [[0,−1],[−1,0]] vs [[0,1],[−1,0]]); Q17 (A) (cross-product matrix [[0,−c,b],[c,0,−a],[−b,a,0]]); Q18 (A) ($A ^ { - 1 }$ has eigenvalue 1/3 with the same eigenvector; (B) misstates the eigenvector as the entrywise reciprocals); Q19 (E) 6 (eigenvalues −4 and b − 1; trace 1 = −4 + b − 1); Q20 eigenvalues 1 and 7 (Hermitian, trace 8, determinant 7).
 
   - Surviving-choice gaps, kept as extracted (needs source check): Q8 — all answer choices missing from the scan. Q11 — choice (B) missing, and vectors 5 and 6 of the span have 6 entries (not 5), so the dimension cannot be computed reliably from the extraction. Q12 (E) `${ } _ { \textrm { 2 } \hbar \mathrm { ! } } ^ { \perp }` unrecoverable garble. Q14 stem — the two images of the domain basis are lost (“maps $( 1 , \cdot )$ to $( 1 , 1 )$ and $( 0 , \cdot )$ to $( 2 , \cdot )$”), so the question cannot be answered from the extraction (an `<!-- image-->` marker precedes it). Q17 (B) — the `\rule`-replacement of the (3,3) entry as `1` is an inference; a source check should confirm the candidate is the all-diagonal-1s matrix. Q17 (D) — two fragments (`\left( - c \mathrm { ~ ~ \sigma ~ } _ { 1 } \mathrm { ~ ~ \sigma ~ } _ { a } \right)` plus a 3×3 matrix), unrecoverable as a choice. Q20 — letters (B) and (C) lost, `3` survives unlettered, and none of the readable choices (−1, 3, i, 1+i) is an eigenvalue (1 and 7); the correct choice is absent, needs source check.
+
+### Batch 15: file 98
+
+- **chapter-6.md** (98): 5586 bytes, 0 control bytes, 0 odd-`$` lines.
+  Chapter 6 review questions, 20 group- and ring-theory problems.
+  Second OCR pass (`assets/attachments/chapter-6_extracted.md`, from
+  `assets/attachments/chapter-6.pdf`) resolved passes-1 garbles before editing:
+  Q3 statement `85x − 12 is a multiple of 19`; Q4 stem `4x − 5y + 2z divisible by
+  13` + full choices; Q9 direct sum `+`; Q12 exponents `p ^ { 2 } q ^ { 4 }`
+  (pass 1 `p{q4` gives q⁴, pass 2 `p2q` gives p²); Q14 (E) = 6; Q17 (D) explicit.
+
+  - **Data fixes:** Q1 `42x + 55y = 1` delimited and choices lettered. Q2 rebuilt:
+  “sum of the digits of $L ,$ where numbers …” (the `L,` referent was lost).
+  Q3 `x _ { 1 }` / `x _ { 2 }` and `$85 x - 12$` (pass 2 corrected the minus-12).
+  Q4 stem `4 x - 5 y + 2 z` and all five choices (pass 2). Q6 `( Z _ { _ { 2 4 } } ,$ +)`
+  → `( \mathbb { Z } _ { 2 4 } , + )`. Q7 `7Which` → `7. Which`; `I _ { 3 } \times I _ { 4 }`
+  → `\mathbf { Z } _ { 3 } \times \mathbf { Z } _ { 4 }`, `Z _ { 3 } \times Z _ { 6 }`
+  → `\mathbf { Z } _ { 3 } \times \mathbf { Z } _ { 6 }`, `\mathbf { \mathbb { Z } }`
+  → `\mathbf { Z }` (choices (C), (D), (E) twice). Q8 `ll of the following` → `all …`,
+  stem delimited (`$G$`, `$12 ,$`). Q9 `$Z _ { 3 }$ $Z _ { 1 6 }$` → `\mathbb { Z } _ { 3 }
+  \oplus \mathbb { Z } _ { 16 }` (pass 2 confirms the direct sum). Q10 set-builder
+  `\left.` → `\left\{`, stray `}` dropped, `(S, )` → `( S , \bullet )`. Q11 stem and
+  all three statements rebuilt (label `II.` was a `I.` false duplicate, `IIII.` → `III.`;
+  `\mathrm { G L }` → `G L`, `\operatorname* { d e t }` → `\operatorname { det }`,
+  `\mathbf { R }` → `\mathbb { R }`); II closed as `\text { is upper triangular } \right\}$`.
+  Q12 `p{q4?` → `p ^ { 2 } q ^ { 4 } ?` (synthesized from both passes). Q13 `.Let` →
+  `13. Let`; `.Express` → `. Express`. Q14 `f :` inserted, `$Z _ { 3 } \to Z _ { 6 }$`
+  delimited (`\mathbb { Z }`), (E) = 6 (pass 2; pass 1 had displaced 8). Q15 rebuilt:
+  three statements lettered, `(C) … $\langle x \rangle$ has order 3`. Q16 `iepoent i` →
+  `idempotent if`, `$Z _ { _ { 2 0 } }$` → `\mathbb { Z } _ { 2 0 }`. Q19 `\chi ^ { 1 2 }
+  - \chi ^ { 1 0 }` → `x ^ { 1 2 } - x ^ { 1 0 }` (χ is a scan artifact), `$Z _ { 1 1 }$`
+  → `\mathbb { Z } _ { 1 1 }`.
+
+  - **Question numbers added/restored where the scan dropped or merged them:** 8, 9
+  (both stem-only, no label), 11, 12, 13, 15, 16, 19; `20. [statement lost in the
+  scan]` inserted before the Q20 display (stem lost in both passes). Labels 1-7, 10,
+  14, 17, 18 were present and confirmed by pass 2; zero numbering drifts.
+
+  - **Choice letters restored** where the value survived: Q1 (A)-(E); Q2 (A)-(E); Q3
+  (A)-(E); Q4 (B)/(C)/(E); Q5 (A)-(E); Q6 (B)/(C)/(D); Q8 (B)/(C)/(D); Q9 (B)/(C)/(D);
+  Q11 (B) and (D) (`(D) III only` explicit in pass 2); Q12 (C)/(D); Q13 (C)/(D); Q14
+  (A)-(E) ([E] previously misread as 8); Q16 (B)/(C)/(E); Q17 (A)/(B)/(C)/(D)/(E); Q19
+  (B)/(C)/(E); Q20 none (no choices survive). Q11 (A) and (E) both read `I and II only`
+  in BOTH passes — kept as extracted, flagged below.
+
+  - **Math normalization:** U+2162 `Ⅲ` → `III` (Q11 note and Q17 III); `\scriptstyle`
+  and `\textstyle` dropped in Q20 K₁; `K _ { \scriptscriptstyle 1 }` /
+  `K _ { _ 2 }` / `K _ { _ 3 }` → `K _ { 1 }` / `K _ { 2 }` / `K _ { 3 }`;
+  `{ \mathrm { ~ a n d ~ } }` → `\text { and }`, `{ \sqrt { - 1 } }` → `\sqrt { - 1 }`
+  (Q20 K₃); residual plain-text math and choice values delimited throughout (Q1
+  `$x ,$`, Q3 `$19$`, Q4 `$13$`, Q5 `$100 !$`, Q7 `$e$`, Q8 `$G$`, Q10 stem `$S$`,
+  Q13 `$z$`, Q14 `$H$`, Q15 `$x$`/`$G$`, Q16 `$x$`/`$x ^ { 2 }$`, Q19 `$x$` and
+  `x ^ { 1 2 } - x ^ { 1 0 } = 2`).
+
+  - **Answers verified against the mathematics:** Q1 (B) 148 (42x ≡ 1 mod 55, unique
+  in (100,200)); Q2 (A) 6 (L = lcm(1001,10101) = 111111); Q3 (E) 47 (x ≡ 14 mod 19,
+  14 + 33); Q4 (D) (x ≡ 11y − 7z mod 13 ⇒ −7x + 12y + 3z ≡ 0); Q5 (B) 24; Q6 (C) 8
+  (φ(24)); Q7 (C) (gcd(3,4) = 1); Q8 (D) 6 (A₄ has no order-6 subgroup; all other
+  orders guaranteed by Lagrange/Cauchy); Q9 (B) 10 (2 × 5 subgroups); Q10 (E)
+  e^{1/ln a}; Q11 (B) II only (U the only subgroup; T fails identity, V fails
+  closure: tr(A)+tr(B) = 0 for A,B with tr 0, but tr(AB) ≠ 0 generally — V fails
+  closure); Q12 (C) 10 (partitions of 2 and 4); Q13 (A) y⁻²x⁻¹; Q14 (C) 3
+  (Hom(Z₃,Z₆) ≅ Z₃); Q15 (A) (an order-9 group has no element of order 2); Q16 (B) 4
+  ({0,1,5,16} in Z₂₀); Q17 (B) II only (I not a domain, III garbled but p²-prime
+  notation not a domain); Q19 (B) 2 (x² ≡ 3 mod 11 ⇒ x = 5, 6). Q18 answer not
+  verifiable (subscripts lost, see below).
+
+  - **Surviving gaps, kept as extracted (needs source check):** Q18 — choices (A)-(D)
+  subscripts are a custom print font (`ZZ`, `\mathfrak { z }`, `\mathrm { { s } }`,
+  `\hat \mathrm b`), byte-identical in both OCR passes, so the ring moduli are
+  unrecoverable; answer cannot be verified. Q20 — statement completely absent from
+  the scan (both passes); only the four sets K₁ (y ∈ Q(√(2/3))), K₂, K₃ and two
+  fragments (`a b < { \sqrt { 2 } } \}`, `K _ { i }`) survive; K₂'s right brace and K₃
+  are unrecoverable from the extraction. Q17 — II (`\sum \limits _ { n = 1 } ^ {
+  \infty } f`) and III (`\boldsymbol { Z } _ { \boldsymbol { p } ^ { 2 } \prime } ^
+  { \prime }`) render as garbled subscripts in both passes; kept as extracted. Q11 —
+  (A) and (E) duplicate `I and II only` in both passes.
 
 ## Unrecoverable extractions
 
