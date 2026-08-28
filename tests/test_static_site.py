@@ -349,8 +349,6 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     assert controls == [["input"], ["select"], ["select"], ["select"], ["select"]]
 
 
-
-
 def test_browse_and_generate_call_an_area_what_the_registry_calls_it(tmp_path: Path) -> None:
     """`vocabularies/areas.yaml` carries a name beside every id and nothing read it.
 
