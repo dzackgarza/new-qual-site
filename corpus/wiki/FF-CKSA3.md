@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.fact}
-For $ 1 \leq p < \infty $,
+For $1 \leq p < \infty$,
 
 $${\left\lVert {f + g} \right\rVert}_p \leq {\left\lVert {f} \right\rVert}_p + {\left\lVert {g} \right\rVert}_p$$
 :::

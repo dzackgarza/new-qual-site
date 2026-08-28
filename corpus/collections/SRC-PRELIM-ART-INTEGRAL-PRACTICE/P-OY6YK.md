@@ -24,7 +24,7 @@ review: draft
 
 2. $\displaystyle \int \frac {x+16}{\sqrt {x^2-4x+8}} ~dx = \color {blue} {\sqrt {x^2-4x+8} + 18 \ln (\sqrt {x^2-4x+8} + x - 2)}$
 
-- **Solution:** $2 \tan (u) = x - 2$, $ \sec ^2 (u) ~du = dx$
+- **Solution:** $2 \tan (u) = x - 2$, $\sec ^2 (u) ~du = dx$
 
 - **Solution:** $\frac {x+16}{\sqrt {x^2-4x+8}} ~dx = \frac {2 \tan (u) + 18}{2 \sec (u)} \cdot 2 \sec ^2 (u) ~du = 2 (\tan (u) \sec (u) + 9 \sec (u)) ~du$
 

@@ -32,7 +32,7 @@ $$
  B'	  AC2D 5FE G   57HJIK 3 .LHM5O N-NP5RQL\*-S TVU  W 8X5OY N-.>,49: Z [
 \]H( ^_576a\`0I:I .>,4WbIc\`O N-NdUV W 8X5OY N-.>,49:e f>N-.>\`O8XNg^ \*-S h  \*-f>\`0 I .iQL3 \*-fj3kW 8:5OY N-.>,4 9l^_57 6 Qm\`O S IcT7 8:\`O h .0h Z-npoq\`O fj3rW 8:57Y NP .0,s \*P9lQm5O8  I 3t17 u W(5O \*-S  IK9:Z
 
-v Z wx.yI{ $f : [ 0 , 2 ] $ YJ.i $\mathrm { ~ a ~ } \mathcal { C } ^ { 1 }$ HM6 S f  I \*P5O Sp9:6 fj 3LIK 3 \`0Im $f ( x )$  \`7S hV $f ^ { \prime } ( x )$ d  \`OS \*-9:3-\`<I  $x = 0$ \`OS h \`0I  $x = 2 .$   8:5R  _.+IK3  \`0IL HM5O 8+\`ON- N  $\varepsilon > 0$ I 3 .>8X.L.y J\*P9
+v Z wx.yI{ $f : [ 0 , 2 ]$ YJ.i $\mathrm { ~ a ~ } \mathcal { C } ^ { 1 }$ HM6 S f  I \*P5O Sp9:6 fj 3LIK 3 \`0Im $f ( x )$  \`7S hV $f ^ { \prime } ( x )$ d  \`OS \*-9:3-\`<I  $x = 0$ \`OS h \`0I  $x = 2 .$   8:5R  _.+IK3  \`0IL HM5O 8+\`ON- N  $\varepsilon > 0$ I 3 .>8X.L.y J\*P9
 IK9  $t _ { \varepsilon } \in \mathbb { R } ^ { + }$ 9:6 fj 3 IK3  \`0I
 
 $$

@@ -13,5 +13,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ a, b\in H \implies ab^{-1} \in H  $ implies that $H$ is a subgroup.
+$a, b\in H \implies ab^{-1} \in H$ implies that $H$ is a subgroup.
 :::

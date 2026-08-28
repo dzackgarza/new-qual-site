@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ \mathrm{diam}(A) = \sup_{x, y\in A} {\left\lvert {d} \right\rvert}(x, y) $
+$\mathrm{diam}(A) = \sup_{x, y\in A} {\left\lvert {d} \right\rvert}(x, y)$
 :::

@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ g=0 $ so $ \Sigma \cong S^2 $.
+$g=0$ so $\Sigma \cong S^2$.
 :::

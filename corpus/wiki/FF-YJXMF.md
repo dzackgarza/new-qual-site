@@ -16,11 +16,11 @@ review: draft
 ---
 
 ::: {.fact}
-If $ \mathcal{F} $ is a family of bounded operators $ T_n:X\to Y $ between Banach spaces with
+If $\mathcal{F}$ is a family of bounded operators $T_n:X\to Y$ between Banach spaces with
 
 $$\forall x\in X, \qquad \sup_{T_n \in \mathcal{F}} {\left\lVert {T_n(x)} \right\rVert}_Y < \infty$$
 
-then $ \sup_{T_n\in \mathcal{F}} {\left\lVert {T_n} \right\rVert}_X < \infty $.
+then $\sup_{T_n\in \mathcal{F}} {\left\lVert {T_n} \right\rVert}_X < \infty$.
 
 Slogan: pointwise bounded sequences of operators are uniformly bounded.
 :::

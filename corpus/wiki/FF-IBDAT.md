@@ -17,5 +17,5 @@ review: draft
 ---
 
 ::: {.fact}
-If $ R\hookrightarrow S\in  {}_{{\mathbf{Z}}}  \mathsf{Alg} $ is an integral extension, then $ \operatorname{Spec}S\to \operatorname{Spec}R $, and for every $ p\in \operatorname{Spec}R $ there is a $ \tilde p\in \operatorname{Spec}S $ such that $ \tilde p \cap R = p $.
+If $R\hookrightarrow S\in  {}_{{\mathbf{Z}}}  \mathsf{Alg}$ is an integral extension, then $\operatorname{Spec}S\to \operatorname{Spec}R$, and for every $p\in \operatorname{Spec}R$ there is a $\tilde p\in \operatorname{Spec}S$ such that $\tilde p \cap R = p$.
 :::

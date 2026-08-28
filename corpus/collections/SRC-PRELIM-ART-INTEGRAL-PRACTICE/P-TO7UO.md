@@ -16,7 +16,7 @@ review: draft
 ::: problem
 7. $\displaystyle \int \frac {1 + e^x}{1 - e^x} ~dx = \color{blue} {x - \ln (1 - e^x)}​$
 
-- **Solution:** $u = 1-  e^x$, $du = - e^x ~dx $
+- **Solution:** $u = 1-  e^x$, $du = - e^x ~dx$
 
 - **Used 2018**
 :::

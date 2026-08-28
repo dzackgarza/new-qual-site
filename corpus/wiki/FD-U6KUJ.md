@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-$ \tor(M) = \theset{0} $
+$\tor(M) = \theset{0}$
 :::

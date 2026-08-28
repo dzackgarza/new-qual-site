@@ -17,9 +17,9 @@ review: draft
 ---
 
 ::: {.fact}
-For $ I{~\trianglelefteq~}R $ Noetherian with $ I \subseteq {J ({R}) } $,
+For $I{~\trianglelefteq~}R$ Noetherian with $I \subseteq {J ({R}) }$,
 
 $$\bigcap_{n\geq 0} I^n = 0$$
 
-Works for $ R\in \mathsf{Loc}\mathsf{CRing} $ with $ I\coloneqq{\mathfrak{m}}_R $.
+Works for $R\in \mathsf{Loc}\mathsf{CRing}$ with $I\coloneqq{\mathfrak{m}}_R$.
 :::

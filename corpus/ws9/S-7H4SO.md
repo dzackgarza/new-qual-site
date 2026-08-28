@@ -34,7 +34,7 @@ Dot columns together using this to see: $$0 = C_1\cdot C_2 \Rightarrow \delta^2 
 Note now we can also find the conjugacy class sizes.
 (See table.)
 
-**(c)** $Z(G) = $ union of classes of size $1$.
+**(c)** $Z(G) =$ union of classes of size $1$.
 So $Z(G) = C_1 \cup C_2$, size $2$, while $|G|=120$.
 So $|G/Z(G)| = 60$.
 

@@ -17,5 +17,5 @@ review: draft
 ---
 
 ::: {.fact}
-A sequence $ f_i $ has a uniformly convergent subsequence $ \iff $ the sequence is uniformly bounded and uniformly equicontinuous.
+A sequence $f_i$ has a uniformly convergent subsequence $\iff$ the sequence is uniformly bounded and uniformly equicontinuous.
 :::

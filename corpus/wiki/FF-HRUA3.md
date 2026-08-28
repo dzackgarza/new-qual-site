@@ -16,9 +16,9 @@ review: draft
 ---
 
 ::: {.fact}
-A set is $ A $ **nowhere dense** if its closure has empty interior $ \qty{\overline{A}}^\circ $, equivalently it is not dense in *any* nonempty open set.
+A set is $A$ **nowhere dense** if its closure has empty interior $\qty{\overline{A}}^\circ$, equivalently it is not dense in *any* nonempty open set.
 
-For $ {\mathbf{R}} $, every interval $ I $ contains a subinterval $ S\subset I $ with $ S\cap A = \emptyset $, i.e. its closure contains no intervals.
+For ${\mathbf{R}}$, every interval $I$ contains a subinterval $S\subset I$ with $S\cap A = \emptyset$, i.e. its closure contains no intervals.
 
 Intuition: elements are not tightly clustered, set is full of holes.
 :::

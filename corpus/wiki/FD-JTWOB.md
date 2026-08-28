@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-$ r_1 \divides r_2 \divides \cdots $
+$r_1 \divides r_2 \divides \cdots$
 :::

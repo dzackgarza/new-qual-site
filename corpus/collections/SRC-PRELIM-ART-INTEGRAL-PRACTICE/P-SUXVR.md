@@ -28,7 +28,7 @@ review: draft
 
   2. $\displaystyle \int \frac {1}{x^2\sqrt {4x^2-1}} ~dx = 2\sin(\sec ^{-1} (2x))= \color {blue} {\frac {\sqrt {4x^2-1}}{x}}$
 
-  - **Solution:** $\frac {1}{x^2\sqrt {4x^2-1}} = \frac {1}{2} \cdot \frac {1}{x^2\sqrt {x^2 - (\frac {1}{2})^2}} $
+  - **Solution:** $\frac {1}{x^2\sqrt {4x^2-1}} = \frac {1}{2} \cdot \frac {1}{x^2\sqrt {x^2 - (\frac {1}{2})^2}}$
 
   - **Used 2018**, *Unsolved*
 

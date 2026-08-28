@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.example}
-$ \sum_{n=1}^\infty nz^n $
+$\sum_{n=1}^\infty nz^n$
 :::

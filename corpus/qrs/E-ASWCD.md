@@ -44,6 +44,6 @@ Hence $\mu^*(E_1) - \mu^*(\bigcap_n E_n) \leq \lim_n \big(\mu^*(E_1) - \mu^*(E_n
 <2>3. Q.E.D. Proof: <2>1 and <2>2 together give equality.
 
 <1>3. The finiteness assumption in <1>2 is necessary.
-Proof: e.g. $\mu^* = $ counting measure on $\mathbb{R}$ and $E_n = [n, \infty)$: each $\mu^*(E_n) = \infty$, but $\mu^*(\bigcap_n E_n) = \mu^*(\emptyset) = 0$, so the equality fails.
+Proof: e.g. $\mu^* =$ counting measure on $\mathbb{R}$ and $E_n = [n, \infty)$: each $\mu^*(E_n) = \infty$, but $\mu^*(\bigcap_n E_n) = \mu^*(\emptyset) = 0$, so the equality fails.
 Continuity from above for measures/outer measures requires $\mu^*(E_1) < \infty$.
 :::

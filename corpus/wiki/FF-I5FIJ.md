@@ -15,11 +15,11 @@ review: draft
 ---
 
 ::: {.fact}
-$ g=1 $ so $ \Sigma \cong T^1 $ (no boundary, orientable), or
+$g=1$ so $\Sigma \cong T^1$ (no boundary, orientable), or
 
-$ K $ the Klein bottle (no boundary, nonorientable).
+$K$ the Klein bottle (no boundary, nonorientable).
 
-$ M $ the Mobius band (1 boundary, nonorientable), or
+$M$ the Mobius band (1 boundary, nonorientable), or
 
-$ S^2\setminus\left\{{ {\operatorname{pt}}_1, {\operatorname{pt}}_2 }\right\} \cong S^1\times I $ an annulus (2 boundaries), or
+$S^2\setminus\left\{{ {\operatorname{pt}}_1, {\operatorname{pt}}_2 }\right\} \cong S^1\times I$ an annulus (2 boundaries), or
 :::

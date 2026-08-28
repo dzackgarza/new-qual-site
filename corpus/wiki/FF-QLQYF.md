@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-A subset is *first category* $ \iff $ it is countable union of nowhere dense sets, *second category* otherwise.
+A subset is *first category* $\iff$ it is countable union of nowhere dense sets, *second category* otherwise.
 :::

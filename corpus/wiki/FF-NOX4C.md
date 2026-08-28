@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ A^\circ \cap B^\circ = \emptyset $
+$A^\circ \cap B^\circ = \emptyset$
 :::

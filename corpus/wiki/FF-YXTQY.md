@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-Counterexample: $ \left\{{1 \over n}\right\}, {\mathbf{Z}} $ are nowhere dense, $ {\mathbf{Q}}, {\mathbf{Z}}\cup\qty{(a, b)\cap{\mathbf{Q}}} $ is *not* nowhere dense
+Counterexample: $\left\{{1 \over n}\right\}, {\mathbf{Z}}$ are nowhere dense, ${\mathbf{Q}}, {\mathbf{Z}}\cup\qty{(a, b)\cap{\mathbf{Q}}}$ is *not* nowhere dense
 :::

@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ X $ is a Baire space $ \iff $ whenever $ \left\{{U_n}\right\} $ is a *countable* collection of open dense subsets of $ X $, then their intersection $ \cap U_n $ is again dense.
+$X$ is a Baire space $\iff$ whenever $\left\{{U_n}\right\}$ is a *countable* collection of open dense subsets of $X$, then their intersection $\cap U_n$ is again dense.
 :::

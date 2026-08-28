@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ X $ is complete $ \iff $ $ X $ is Cauchy complete $ \iff $ absolutely convergent implies convergent for series.
+$X$ is complete $\iff$ $X$ is Cauchy complete $\iff$ absolutely convergent implies convergent for series.
 :::

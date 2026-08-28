@@ -32,7 +32,7 @@ review: draft
 
 - **Solution:** $\frac {\sin(x)}{1 + \sin(x)} ~dx = \frac {\frac {2u}{1 + u^2}}{1 + \frac {2u}{1 + u^2}} \cdot \frac {2}{1 + u^2} ~du = \frac {2u}{1 + u^2 + 2u} \cdot \frac {2}{1 + u^2} ~du = 2(\frac {1}{1 + u^2} - \frac {1}{(u + 1)^2}) ~du​$
 
-  1. $\displaystyle \int \frac {1}{1+\sin (x)} ~dx = \color {blue} {- \frac {2}{\tan (\frac {x}{2}) + 1}} $
+  1. $\displaystyle \int \frac {1}{1+\sin (x)} ~dx = \color {blue} {- \frac {2}{\tan (\frac {x}{2}) + 1}}$
 
   - **Solution:** $\frac {1}{1 + \sin(x)} = 1 - \frac {\sin(x)}{1 + \sin(x)}$
 

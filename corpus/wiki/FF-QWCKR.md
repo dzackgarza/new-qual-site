@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ a\in R $ with $ 1-a\in R^{\times} $; $ {J ({R}) } $ is the largest ideal with every element quasiregular.
+$a\in R$ with $1-a\in R^{\times}$; ${J ({R}) }$ is the largest ideal with every element quasiregular.
 :::

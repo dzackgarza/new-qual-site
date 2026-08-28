@@ -22,4 +22,4 @@ $$
 S _ { + } ( f , P ) = \sum _ { j = 1 } ^ { n } \operatorname* { i n f } _ { x \in [ t _ { j - 1 } , t _ { j } ) } f ( x ) ( t _ { j } - t _ { j - 1 } ) .
 $$
 
-Hint: To prove $\begin{array} { r } { S _ { + } ( f , P )  \int _ { 0 } ^ { 1 } f ( x ) d x } \end{array}$ as $| P | \to 0 ,$ , it suffices to show that $S _ { + } ( f , P _ { n } ) $ $\textstyle \int _ { 0 } ^ { 1 } f ( x ) d x { \mathrm { ~ i f ~ } } P _ { n }$ is a nested sequence of partitions whose lengths goes to zero.
+Hint: To prove $\begin{array} { r } { S _ { + } ( f , P )  \int _ { 0 } ^ { 1 } f ( x ) d x } \end{array}$ as $| P | \to 0 ,$ , it suffices to show that $S _ { + } ( f , P _ { n } )$ $\textstyle \int _ { 0 } ^ { 1 } f ( x ) d x { \mathrm { ~ i f ~ } } P _ { n }$ is a nested sequence of partitions whose lengths goes to zero.

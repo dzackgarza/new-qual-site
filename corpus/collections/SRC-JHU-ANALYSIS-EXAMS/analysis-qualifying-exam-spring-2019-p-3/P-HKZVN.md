@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-Question 1.2. Fix a measurable function $f : \mathbb { R } ^ { 2 } $ R and, for every $x , y \in \mathbb { R } ,$ , let
+Question 1.2. Fix a measurable function $f : \mathbb { R } ^ { 2 }$ R and, for every $x , y \in \mathbb { R } ,$ , let
 
 $$
 f _ { x } : \mathbb { R } \to \mathbb { R } a n d f _ { y } : \mathbb { R } \to \mathbb { R }

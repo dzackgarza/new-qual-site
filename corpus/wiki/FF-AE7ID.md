@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-$ \chi(A) + \chi(B) - 2 $
+$\chi(A) + \chi(B) - 2$
 :::

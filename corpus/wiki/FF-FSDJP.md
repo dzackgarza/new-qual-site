@@ -17,9 +17,9 @@ review: draft
 ---
 
 ::: {.fact}
-Let $ f\in L^1 $ and $ \varepsilon> 0 $.
+Let $f\in L^1$ and $\varepsilon> 0$.
 
-**Small Tails**: there exists an $ N $ such that $ \int_{B_N^c} f < \varepsilon $.
+**Small Tails**: there exists an $N$ such that $\int_{B_N^c} f < \varepsilon$.
 
-**Absolute Continuity**: there exists a $ \delta $ such that $ m(E) < \delta \implies \int_E {\left\lvert {f} \right\rvert} < \varepsilon $.
+**Absolute Continuity**: there exists a $\delta$ such that $m(E) < \delta \implies \int_E {\left\lvert {f} \right\rvert} < \varepsilon$.
 :::

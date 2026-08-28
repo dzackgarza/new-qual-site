@@ -25,7 +25,7 @@ $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2} K$.
 
 > Suppose $\sigma_{\varphi_1}(K)\sigma\inv=\varphi_2(K)$
 > so that for some $a\in\mathbb Z$ we have $\sigma\varphi_1(k)\sigma\inv
-> =\varphi_2(k)^a$ for all $k\in K$. Show that the map $\psi:H
+> =\varphi_2(k)^a$for all$k\in K$. Show that the map$\psi:H
 > \rtimes_{\varphi_1}K\rightarrow H\rtimes_{\varphi_2}K$
 > defined by $\psi((h,k))=(\sigma(h),k^a)$ is a homomorphism.
 > Show $\psi$ is bijective by construcing a 2-sided inverse.

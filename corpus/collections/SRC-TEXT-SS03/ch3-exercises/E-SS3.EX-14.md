@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: exercise
-14. Prove that all entire functions that are also injective take the form $ f ( z ) = a z + b$ with $a , b \in \mathbb { C }$ , and $a \neq 0$
+14. Prove that all entire functions that are also injective take the form $f ( z ) = a z + b$ with $a , b \in \mathbb { C }$ , and $a \neq 0$
 
 [Hint: Apply the Casorati-Weierstrass theorem to $f ( 1 / z ) . ]$
 :::

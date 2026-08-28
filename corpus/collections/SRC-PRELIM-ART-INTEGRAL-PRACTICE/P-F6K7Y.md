@@ -45,7 +45,7 @@ review: draft
 
 6. $\displaystyle \int \sec^3(x)\tan^3(x) ~dx = \color {blue} {-\frac {1}{3} \sec ^3(x) + \frac {1}{5} \sec ^5(x)}$
 
-- **Solution:** $ \sec^3(x)\tan^3(x) ~dx =  \sec ^2 (x) (\sec ^2 (x) - 1) \sec (x) \tan (x) ~dx = \sec ^4 (x) - \sec ^2 (x)) ~d \sec (x)$
+- **Solution:** $\sec^3(x)\tan^3(x) ~dx =  \sec ^2 (x) (\sec ^2 (x) - 1) \sec (x) \tan (x) ~dx = \sec ^4 (x) - \sec ^2 (x)) ~d \sec (x)$
 
 7. $\displaystyle \int \tan^4(x) + \tan^2(x) ~dx = \color {blue} {\frac {1}{3} \tan^3(x)}$
 

@@ -17,7 +17,7 @@ review: draft
 ::: problem
 - **Solution:** $u_1 = \cos (x)​$, $v_1 = e^x​$, $du_1 = - \sin (x) ~dx​$, $dv_1 = e^x ~dx​$
 
-- **Solution:** $ u_2 = \sin (x)$, $v_2 = e^x$, $du_2 = \cos (x) ~dx$, $dv_2 = e^x ~dx$
+- **Solution:** $u_2 = \sin (x)$, $v_2 = e^x$, $du_2 = \cos (x) ~dx$, $dv_2 = e^x ~dx$
 
 - **Solution:** $e^x \cos (x) - \int - e^x \sin (x) ~dx = e^x \cos (x) + (e^x \sin (x) - \int e^x \cos (x) ~dx)$
 

@@ -17,7 +17,7 @@ review: draft
 ---
 
 ::: {.fact}
-For $ (R, {\mathfrak{m}}_R) $ a local ring, minimal generators of $ M\in   {}_{R}{\mathsf{Mod}} $ biject with $ k\operatorname{mod} $ bases for $ M/{\mathfrak{m}}_R M $ where $ k \coloneqq R/{\mathfrak{m}}_R $.
+For $(R, {\mathfrak{m}}_R)$ a local ring, minimal generators of $M\in   {}_{R}{\mathsf{Mod}}$ biject with $k\operatorname{mod}$ bases for $M/{\mathfrak{m}}_R M$ where $k \coloneqq R/{\mathfrak{m}}_R$.
 
-Any two such sets of minimal generators for $ M $ of size $ n $ are related by a matrix in $ \operatorname{GL}_n(R) $.
+Any two such sets of minimal generators for $M$ of size $n$ are related by a matrix in $\operatorname{GL}_n(R)$.
 :::
