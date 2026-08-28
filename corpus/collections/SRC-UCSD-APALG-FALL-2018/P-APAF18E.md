@@ -10,6 +10,7 @@ classification:
   - Representation Theory
   - Character Theory
 relations: []
+review: draft
 audit:
 - event: solution-written
   by: Gemini 3.7 Flash

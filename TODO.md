@@ -1151,7 +1151,8 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Across the site 375 titles are shared by 836 pages: 5 pages are titled `Closed subsets of compact spaces are compact`, 4 `Cauchy's theorem`. A search row separates them only by a small grey path.
   Merging started, per the owner's decision, and the count is now measured rather than guessed.
   Of the 354 card title groups, 266 hold different mathematics under one title: those are not duplicates and merging them would delete problems.
-  Of the 88 that hold identical mathematics, 32 were one concept minted twice from two wiki pages -- same kind, same classification, no relations, each transcluded on one page. Those are merged: both pages now show one card.
+  Of the 88 that hold identical mathematics, 32 were one concept minted twice from two wiki pages -- same kind, same classification, no relations, each transcluded on one page.
+  Those are merged: both pages now show one card.
   56 remain: 7 record the same statement at two sittings inside one compilation, which the corpus already dispositioned as keep-both at `f3a918092`; 1 is a sourced card against an unsourced twin; and 48 pair an imported `exercise` against a `problem` with the same statement.
   The 48 need one decision, which governs all of them: when an imported exercise and a hand-made problem carry the same statement and neither is on an exam, which kind survives.
   The corpus documents no difference between the two kinds beyond both posing work to a reader.
