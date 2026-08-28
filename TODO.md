@@ -1116,14 +1116,17 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Browse exposes area, topic, institution, and year filters over the same facets.
 
 - [x] Sort exam sittings by term within a year.
-  The order is institution, year, area, then term alphabetically, so `TAMU real-analysis Fall 2015` precedes `TAMU real-analysis Spring 2015`.
-  Fixed: a sitting now sorts by the term it was sat in, read from the term type rather than written out a second time in SQL.
+  The order is institution, year, area, then term alphabetically, so `TAMU real-analysis Fall 2015` precedes `TAMU real-analysis Spring 2015`. Fixed: a sitting now sorts by the term it was sat in, read from the term type rather than written out a second time in SQL.
 
 ### Findability
 
-- [ ] Rank title matches above body matches in search.
+- [x] Rank title matches above body matches in search.
   The query `compact` returns Cone, Cover, Cochain, Cocycle, Colimit, Coproduct, Coboundary, Commutator, and three Continuity rows before `Compactness` at rank 14. None of the first nine carry the word in the title.
   The order tracks title length.
+  Does not reproduce. Running `site/app.js`'s own ranking over the built `search.json`, `compact` returns Compactness, Compact space, Compact operator, Compact topological space; no Co-word appears in the first fifteen.
+  `cone`, `continuity`, `sylow` and `residue theorem` all lead with title matches.
+  The ranking landed in 8a8d493d0, two days before this observation, so the browsed page was running an older script than the one the build wrote.
+  Remaining, and not this item: within the body-match tier the tie-break is still title length, so `residue theorem` puts a page titled `Topics` above one titled `Residues`.
 
 - [ ] Name one canonical page per concept.
   The query `Sylow` returns `Sylow Theorems` as a card, `Sylow Theorems` as a wiki page, `Sylow theorems` as a problem, and `Sylow Theory` as a guide page.
