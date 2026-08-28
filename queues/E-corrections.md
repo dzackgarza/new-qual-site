@@ -12,7 +12,7 @@ No scripts, no pattern matching.
 | --- | --- | --- |
 | 1-25 | 140A_Exam_Review — ALGEBRA_REVIEW1 | done |
 | 26-50 | Algebra_Solutions — basic-08F | done |
-| 51-100 | basic-08S — chapter-4 | in progress |
+| 51-100 | basic-08S — chapter-5 | in progress |
 | 101-200 |  | pending |
 | 201-354 |  | pending |
 
@@ -277,6 +277,24 @@ No scripts, no pattern matching.
 
   - Surviving-choice gaps, kept as extracted (needs source check): Q3 (A) `\cos ^ { 3 }` (unlikely distractor shape for this problem class); Q8 (B) `x - \sin \alpha x` and (D) `x + \sin \tan x`; Q9 (C) `e ^ { - 1 / 3 }` (missing the `t` in the exponent) and (D) exponents `e ^ { - t / 3 }`, `e ^ { - 2 t }` (neither matches the characteristic roots); Q10 (A) `x ^ { \ast }` (asterisk instead of a power); Q12 (E) `e ^ { - x / y } = - x` (sign arrangement uncertain).
     Q4 images: see above.
+
+### Batch 14: file 97
+
+- **chapter-5.md** (97): 8912 bytes, 0 control bytes, 0 odd-`$` lines.
+  Chapter 5 review questions, 20 linear-algebra problems.
+  Data fixes: 9 (two OCR-fabricated fractions, one phantom box, one stray `\cdot`, one `X_f` garble, one `\mathrm{ard}` word garble, two Unicode subscript swaps, one degree-garble, one `\mathbf` miss).
+
+  - **Data fixes:** Q18 `\frac { 3 } { 3 }` → `\frac { 1 } { 3 }` in choices (A) and (B) (the eigenvalue of $A ^ { - 1 }$ is the reciprocal; the `3/3` is a scan duplication). Q7 `{ \cdot 5 }` → `{ 5 }` (matrix entry 5). Q5 `{ \mathrm { a r d } }` → `\text { and }` (joins the two matrices in the “are inverses of each other” statement). Q16 `$9 0 ^ { \circ }$` → `$90 ^ { \circ }$`. Q6 subscripts `\mathfrak { z }` → `1`, `2` (`\mathbf { v } _ { 1 } , \mathbf { v } _ { 2 }`); Q13 `y _ { i }` → `y _ { 1 }` in choices (C) and (D) (the collinear-point determinant uses `y _ { 1 }` twice with `y _ { 2 }`). Q12 (B) `\hbar - 1` → `n - 1` (dimension formula n(n−1)/2; the `\hbar` is a scan substitution). Q18 stem `$X _ { f }$` → `$\mathbf { x } ,$`. Q17 (A) matrix trailing `{ 0 , }` → `{ 0 }`.
+
+  - Question numbers added/restored where the scan dropped or merged them: 5, 6, 7, 8 (inserted as “8. If” before the determinant display), 10 (`10 For` → `10. For`), 11, 12, 13, 14, 15 (`. Let` → `15. Let`), 19 (`## 19.` → `19.`), 20 (`## 20.` → `20.`). Q12 stem rebuilt from prose garbles: `A que matri A is said to be symeric it equals its wn tranose:A = A. … imen sion` → “A square matrix $A$ is said to be symmetric if it equals its own transpose: $A = A ^ { \top } .$ What is the dimension …”. Q14 stem rebuilt as far as possible: “$T : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$ that maps $( 1 , \cdot )$ to $( 1 , 1 )$ and $( 0 , \cdot )$ to $( 2 , \cdot )$” (second coordinates lost).
+
+  - Choice letters restored where the value survived the scan: Q4 (C)/(D); Q6 (B)/(D); Q7 (D); Q9 (B)/(C)/(D); Q10 (A)/(B)/(E); Q11 (C)/(D)/(E); Q13 (A)/(B)/(E); Q15 (A)/(B)/(D)/(E); Q16 (A) (`(AST= I` → `(A) $S T = I$`) and (C) (`)TS = I` → `(C) $T S = I$`); Q18 (A)-(D) (`) The matrix …` and unlettered lines); Q19 (B), with `(D) 5.` punctuation cleaned. Scattered multi-line choice blocks collapsed inline to match the rest of the file.
+
+  - Math normalization: Q12 choice wrappers `\textstyle`, `\scriptstyle`, and the `\begin{array}` in (D) dropped; Q17 (B) bottom-right `{ 1 \rule { 0 ex } { 5 ex } }` → `{ 1 }` (phantom box stands in for the diagonal 1; inference flagged below); `{ \mathrm { s p a n } }` → `\operatorname { span }`; `\operatorname { k }` → `k` (Q6); Unicode all replaced by LaTeX: `≠` → `\neq`, `⇒` / `→` → `\Rightarrow` / `\to` (Q14, Q15 stems), `Ⅲ` (U+2162) → `III`, `R²` → `\mathbb { R } ^ { 2 }`, `R³` / `R5` → `\mathbb { R } ^ { 3 }` / `\mathbb { R } ^ { 5 }`, `→` → `\to`; stray `$\Re ^ { 2 }$` dropped after the Q13 stem; residual plain-text math delimited throughout (Q1 (C) `$A$`, Q2 `$a$` / `$a + b$`, Q3 matrices `$2 \times 2$`, Q5 `$c$`, Q9 `$x$`, Q16 `$S$` / `$T$` / `$I$`, Q17 v and x, Q18 choices `$\mathbf { x }$` etc., Q19 `$-4$` / `$b - 1 .$`).
+
+  - Answers verified against the mathematics (stem and choices otherwise kept as extracted): Q1 (E) (two distinct solutions to a consistent system ⇒ infinitely many; (C) is not necessary: square singular $A = [ [ 1 , 0 ] , [ 0 , 0 ] ]$, $\mathbf { b } = ( 1 , 0 )$); Q2 $a + b = - 1$ (the solution (a, b, a) forces a = −1/2 and b = 2a² − 1 = −1/2); Q3 (D) none (I fails for nilpotent [[0,1],[0,0]]; II fails $AB = AC \not \Rightarrow B = C$; III fails the reflection diag(1,−1)); Q4 (D) 6 ($[ [ 1 , 1 ] , [ 0 , 1 ] ] ^ { n } - [ [ 1 , 0 ] , [ 1 , 1 ] ] ^ { n } = [ [ 0 , n ] , [ - n , 0 ] ]$); Q5 (C) 0 (AB = I forces a = b = c = 0); Q6 (B) −1 (det = −2(k+1)); Q7 (E) 2 (rank 2, determinant 0); Q8 −2d (column ops C₂ := C₂ + 2C₁, C₃ := C₃ − C₁; the answer choices are entirely absent from the scan); Q9 (B) 0 (4×4 determinant −x); Q10 (B) 10 ($b = \alpha ( 1 , 4 , 7 ) + \beta ( 2 , 5 , 8 ) + 0 \cdot ( 3 , 6 , 9 )$ with $\alpha = - 38 / 3$, $\beta = 37 / 3$); Q12 (D) n(n+1)/2; Q13 (D) (determinant zero ⇔ (x, y), (0, y₁), (1, y₂) collinear, a line of slope y₂ − y₁); Q15 (C) (dim ker = 3 in R⁵ ⇒ rank 2 ⇒ image a plane through the origin); Q16 (E) ($S T = - T S$: matrix products [[0,−1],[−1,0]] vs [[0,1],[−1,0]]); Q17 (A) (cross-product matrix [[0,−c,b],[c,0,−a],[−b,a,0]]); Q18 (A) ($A ^ { - 1 }$ has eigenvalue 1/3 with the same eigenvector; (B) misstates the eigenvector as the entrywise reciprocals); Q19 (E) 6 (eigenvalues −4 and b − 1; trace 1 = −4 + b − 1); Q20 eigenvalues 1 and 7 (Hermitian, trace 8, determinant 7).
+
+  - Surviving-choice gaps, kept as extracted (needs source check): Q8 — all answer choices missing from the scan. Q11 — choice (B) missing, and vectors 5 and 6 of the span have 6 entries (not 5), so the dimension cannot be computed reliably from the extraction. Q12 (E) `${ } _ { \textrm { 2 } \hbar \mathrm { ! } } ^ { \perp }` unrecoverable garble. Q14 stem — the two images of the domain basis are lost (“maps $( 1 , \cdot )$ to $( 1 , 1 )$ and $( 0 , \cdot )$ to $( 2 , \cdot )$”), so the question cannot be answered from the extraction (an `<!-- image-->` marker precedes it). Q17 (B) — the `\rule`-replacement of the (3,3) entry as `1` is an inference; a source check should confirm the candidate is the all-diagonal-1s matrix. Q17 (D) — two fragments (`\left( - c \mathrm { ~ ~ \sigma ~ } _ { 1 } \mathrm { ~ ~ \sigma ~ } _ { a } \right)` plus a 3×3 matrix), unrecoverable as a choice. Q20 — letters (B) and (C) lost, `3` survives unlettered, and none of the readable choices (−1, 3, i, 1+i) is an eigenvalue (1 and 7); the correct choice is absent, needs source check.
 
 ## Unrecoverable extractions
 
