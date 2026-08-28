@@ -238,6 +238,14 @@ mjx-container[display="true"] {
   cursor: pointer;
 }
 
+/* A folder's summary is its own page's link. Sidebar links are blocks, which
+   put the disclosure marker on the line above the label; inside a summary the
+   link sits beside the marker instead. */
+.wiki-sidebar summary > a {
+  display: inline;
+  padding-left: 0;
+}
+
 .wiki-sidebar summary:hover,
 .wiki-sidebar summary:focus-visible {
   color: var(--accent-dark);

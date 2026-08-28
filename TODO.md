@@ -1148,8 +1148,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 
 ### Wiki navigation
 
-- [ ] Stop rendering each folder twice in the sidebar.
+- [x] Stop rendering each folder twice in the sidebar.
   The group label `Algebra` carries a first child link `Algebra`; the group `Groups` carries a first child `Groups`. Identical text one line apart: one expands, one navigates.
+  Fixed: the folder's own page is its summary.
+  A link is interactive content, so clicking it follows it and the disclosure marker still toggles.
 
 - [ ] Order section contents by subject, not by filename prefix.
   Groups reads: Groups, Algebra Group and Ring Theory Resources, Notation, Basics, Actions, Counting theorems, Sylow Theorems, Classification, Series.

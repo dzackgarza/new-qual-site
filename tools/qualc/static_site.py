@@ -287,8 +287,8 @@ def _wiki_tree(
             case _ as unreachable:
                 assert_never(unreachable)
 
-    def branch(links: list[NavigationLink], lead: str = "") -> str:
-        items: list[str] = [lead] if lead else []
+    def branch(links: list[NavigationLink]) -> str:
+        items: list[str] = []
         for link in links:
             match link.target:
                 case LevelOnly():
@@ -299,9 +299,15 @@ def _wiki_tree(
                 case PageTarget():
                     anchor = _current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)
                     if children[link.key]:
+                        # The folder's own page is the summary. Writing the
+                        # title in the summary and again as the first child put
+                        # the same word on two lines, one to expand and one to
+                        # navigate, with nothing to tell them apart. A link is
+                        # interactive content, so clicking it follows it and
+                        # leaves the disclosure alone; the marker still toggles.
                         open_attribute = " open" if link.key in open_directories or link.key == navigation.current_key else ""
-                        nested = branch(children[link.key], f"<li>{anchor}</li>")
-                        items.append(f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>")
+                        nested = branch(children[link.key])
+                        items.append(f"<li><details{open_attribute}><summary>{anchor}</summary>{nested}</details></li>")
                     else:
                         items.append("<li>" + anchor + "</li>")
                 case _ as unreachable:

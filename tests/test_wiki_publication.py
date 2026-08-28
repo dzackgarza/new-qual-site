@@ -600,6 +600,10 @@ def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     assert navigation.details == [(1, "Algebra", True), (1, "Topology", False)]
     assert ("Groups", "groups.html", True) in navigation.links
     assert ("Compactness", "../topology/compactness.html", False) in navigation.links
+    # A folder's own page is its summary, and is offered once. The label used to
+    # be written again as the folder's first child: the same word on two lines,
+    # one expanding and one navigating.
+    assert [link for link in navigation.links if link[0] == "Algebra"] == [("Algebra", "index.html", False)]
 
     index_navigation = WikiNavigationParser()
     index_navigation.feed((page.parents[1] / "index.html").read_text())
