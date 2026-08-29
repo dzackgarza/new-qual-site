@@ -9,6 +9,10 @@ classification:
   topics: ['Theta Functions', 'Modular Forms', 'Partitions']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -22,4 +26,28 @@ U (x) = \frac {u _ {0} + (u _ {1} - a u _ {0}) x}{(1 - \alpha x) (1 - \beta x)} 
 $$
 
 where it is an easy matter to solve for A and B. Finally, this gives $u _ { n } = A \alpha ^ { n } +$ $B \beta ^ { n }$ . Note that this approach yields a solution to our problem if the roots of $p$ are distinct, namely $\alpha \neq \beta$ . A variant of the formula holds if $\alpha = \beta$
+:::
+
+::: {.solution}
+<1>1. The recurrence $u_n = a u_{n-1} + b u_{n-2}$ gives, for the generating function $U(x) = \sum_{n \ge 0} u_n x^n$,
+$$U(x)(1 - ax - bx^2) = u_0 + (u_1 - a u_0)x.$$
+Proof: multiply the recurrence by $x^n$ and sum over $n \ge 2$, then rearrange.
+
+<1>2. Hence $U(x) = \frac{u_0 + (u_1 - a u_0)x}{1 - ax - bx^2}$.
+Proof: <1>1.
+
+<1>3. The denominator factors as $1 - ax - bx^2 = (1 - \alpha x)(1 - \beta x)$, where $\alpha, \beta$ are the roots of $x^2 - ax - b$.
+Proof: $x^2 - ax - b = (x - \alpha)(x - \beta)$, so $1 - ax - bx^2 = (1 - \alpha x)(1 - \beta x)$.
+
+<1>4. If $\alpha \neq \beta$, partial fractions give $U(x) = \frac{A}{1 - \alpha x} + \frac{B}{1 - \beta x}$ for constants $A, B$.
+Proof: <1>2 and <1>3.
+
+<1>5. Expanding, $U(x) = A \sum_{n \ge 0} \alpha^n x^n + B \sum_{n \ge 0} \beta^n x^n$, so $u_n = A \alpha^n + B \beta^n$.
+Proof: <1>4 and comparing coefficients.
+
+<1>6. If $\alpha = \beta$, then $U(x) = \frac{A}{1 - \alpha x} + \frac{B}{(1 - \alpha x)^2}$, giving $u_n = (A + B(n+1))\alpha^n$.
+Proof: the repeated-root partial fraction decomposition.
+
+<1>7. Q.E.D.
+Proof: <1>5 and <1>6.
 :::
