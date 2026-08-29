@@ -11,19 +11,48 @@ classification:
   - van Kampen
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: problem
-4. Let $A = S^n - \theset{n_p = \text{North Pole}}, B = S^n - \theset{s_p = \text{South Pole}}$.
-   Then $A\union B = S^n$ and $A\intersect B = S^n - \theset{n_p, s_p}$.
-   Since $A,B$ are open and path connected, we can apply van Kampen's theorem to obtain $\pi_1(X) = \pi_1(A) * \pi_1(B)$ amalgamated over $\pi_1(A\cap B)$.
-   But $A \cong \RR^{n} \cong B$ via stereographic projection, and since $\RR^n$ is contractible, $\pi_1(\RR^n) = 0 = \pi_1(A) = \pi_1(B)$.
-   So $\pi_1(X) = 0 * 0 = 0$ as desired.
+Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the **Seifert–van Kampen Theorem** by decomposing the $n$-sphere $S^n$ into the complements of the north and south poles.
+:::
 
-This follow because we can compute $A \cap B \cong \RR^n - \theset{\text{pt}} \cong S^n{-1}$, and so $\pi_1(A\intersect B) = \pi_1(S^n) \cross \pi_1(\RR^1) = 0 \cross 0 = 0$, and so has the presentation $\pi_1(A\cap B) = \left< w \mid w^1 = e\right>$.
-We can then look at the inclusions $i: A\cap B \into A$ $j: A\cap B \into B$ and the induced homomorphisms $I: \pi_1(A\cap B) \into \pi_1(A)$ $J: \pi_1(A\cap B) \into \pi_1(B)$.
-But since both sides in both maps are trivial, these are constant maps between identities.
-We can then present the group $0 = \pi_1(A) =\left< a\mid a^1 = e\right>$ and since $I(w) J(w)^{-1} = e e^{-1} = e$, we have $\pi_1(B) = \left< b \mid b^1 = e\right>$, so $\pi_1(A) *_{\pi_1(A\cap B)} \pi_1(B) = \left< a,b \mid a^1 =b^1 = e\right>$.
+::: solution
+**Goal:** Prove that $\pi_1(S^n) = 0$ for all $n \ge 2$ using the Seifert–van Kampen Theorem.
 
-(See https://en.wikipedia.org/wiki/Seifert%E2%80%93van_Kampen_theorem for presentation of amalgamated product)
+<1>1. Open Cover of $S^n$:
+    *Proof:*
+    <2>1. Let $n \ge 2$, and let $N = (0, \dots, 0, 1)$ and $S = (0, \dots, 0, -1)$ denote the north and south poles of the $n$-sphere $S^n \subset \mathbb{R}^{n+1}$.
+    <2>2. Define the two open sets:
+        $$U = S^n \setminus \{S\}, \qquad V = S^n \setminus \{N\}.$$
+    <2>3. Then $U \cup V = S^n$.
+    <2>4. Via stereographic projection from the south pole, $U \cong \mathbb{R}^n$, which is contractible ($U \simeq \{*\}$).
+    <2>5. Via stereographic projection from the north pole, $V \cong \mathbb{R}^n$, which is contractible ($V \simeq \{*\}$).
+    <2>6. Thus both $U$ and $V$ are open, path-connected subsets with trivial fundamental groups:
+        $$\pi_1(U, x_0) = 0, \qquad \pi_1(V, x_0) = 0.$$
+
+<1>2. Path-Connectedness of the Intersection $U \cap V$:
+    *Proof:*
+    <2>1. The intersection is $U \cap V = S^n \setminus \{N, S\}$.
+    <2>2. Stereographic projection from the north pole maps $U \cap V$ homeomorphically to $\mathbb{R}^n \setminus \{0\}$.
+    <2>3. The punctured Euclidean space $\mathbb{R}^n \setminus \{0\}$ deformation retracts radially onto the equatorial sphere $S^{n-1}$.
+    <2>4. Since $n \ge 2$, the dimension of the equatorial sphere is $n - 1 \ge 1$.
+    <2>5. The sphere $S^{n-1}$ is **path-connected** for all $n - 1 \ge 1$ (i.e. $n \ge 2$).
+    <2>6. Therefore, $U \cap V$ is a non-empty, **path-connected** open subset of $S^n$.
+
+<1>3. Application of the Seifert–van Kampen Theorem:
+    *Proof:*
+    <2>1. Choose a basepoint $x_0 \in U \cap V$ (e.g. an equatorial point $(1, 0, \dots, 0)$).
+    <2>2. Since $U, V$, and $U \cap V$ are all open and path-connected with $U \cup V = S^n$, the hypotheses of the **Seifert–van Kampen Theorem** are satisfied.
+    <2>3. The fundamental group of the union is the amalgamated free product:
+        $$\pi_1(S^n, x_0) \cong \pi_1(U, x_0) *_{\pi_1(U \cap V, x_0)} \pi_1(V, x_0).$$
+    <2>4. Since $\pi_1(U, x_0) = \{e\}$ and $\pi_1(V, x_0) = \{e\}$:
+        $$\pi_1(S^n, x_0) \cong \{e\} *_{\pi_1(U \cap V, x_0)} \{e\} = \{e\} = 0.$$
+
+<1>4. Conclusion:
+    The fundamental group $\pi_1(S^n) = 0$ is trivial (simply connected) for all $n \ge 2$. Q.E.D.
 :::
