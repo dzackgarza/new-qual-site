@@ -1397,7 +1397,7 @@ Rules that go with it:
 
 ### Sample tree: Complex Analysis, in full
 
-109 pages become about 40. Every current page has a destination.
+Every current page has a destination, and every area has a place for the notes not written yet.
 
 ```
 wiki/complex-analysis/
@@ -1508,16 +1508,29 @@ Topology's `Basics/` and `Point_set/` are the same area under two names; they me
 
 ### Notes to write
 
-Two subjects have areas and no prose.
-Their cards exist; the notes do not.
+An area with no note is a slot for work, not an empty folder.
+The tree names every area the six subjects need, and each area without prose becomes a queue item.
+The card counts are already there; the writing is not.
+
+Whole branches:
 
 - **Applied algebra**: 278 cards, five areas, zero notes.
-  The whole branch is to be written.
-  `Applied_Algebra/` holds only an index and a source archive today.
+  `Applied_Algebra/` holds an index and a source archive today.
 
 - **Prelim**: 280 cards, eleven areas, two notes (`Useful Tricks`, `Prelim Resources`).
 
-This is the largest block of new writing in the reorganization, and it is the point of it: the tree names what the subject needs, and each missing note becomes a queue item rather than a silent gap.
+Areas inside the four written subjects that hold one or two notes today:
+
+| Area | Notes today |
+| --- | ---: |
+| `Topology/{Basics, Degree, Examples, Manifolds}` | 1 each |
+| `Real_Analysis/Functional_analysis` | 1 |
+| `Algebra/{Modules, Representation_theory}` | 2 each |
+| `Real_Analysis/{Measure, Fourier}` | 2 each |
+| `Topology/{Homology, Appendices}` | 2 each |
+| `Complex_Analysis/{Maps_of_the_disc, Omitted_values}` | 3 each |
+
+Topology carries the thinnest coverage of any written subject: six of its areas hold one note.
 
 ### Disposition of everything the tree holds now
 
@@ -1536,8 +1549,7 @@ This is the largest block of new writing in the reorganization, and it is the po
 | `Archives/{Card_Archives, Prelims_Source_Archive}` | `exams.html` | Duplicate |
 | `Archives/{Topics, Further Studying, Graduate_Topics, Solution Compendia}` | `wiki/reading/` | Real content, off the syllabus |
 
-The `Archives` branch ends.
-Nothing is left at `order: 90`.
+`Archives` becomes `wiki/reading/`: the reading past the syllabus keeps its branch, and the duplicated source dumps become the exam browser they copy.
 
 ### The one code change this needs
 
@@ -1566,7 +1578,8 @@ Each step ships on its own.
 
 - [ ] 1. **Curate the topic list** (≈120 topics across six subjects), extending the guide sections, and map the 668 raw strings onto it.
 
-- [ ] 2. **Add the `problems:` query block**, then delete the 90 `Quals/` pages and the source-archive pages.
+- [ ] 2. **Add the `problems:` query block**, then replace the 90 `Quals/` pages and the source-archive pages with it.
+  These are the only pages the reorganization removes, and their content survives: it is card data, rendered.
 
 - [ ] 3. **Lift the writeups** — PSets, worked exams, workshop notes — into the corpus as solution cards on their collections, or into the concept notes.
 
@@ -1576,11 +1589,13 @@ Each step ships on its own.
 - [ ] 5. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out.
   This closes the section 10 item that says six subjects have five shapes.
 
-- [ ] 6. **Retire `Archives`.**
+- [ ] 6. **Re-file `Archives`** into `wiki/reading/`, the branch for reading past the syllabus.
 
 - [ ] 7. **Write the applied algebra branch**: five area indexes and their notes, against the 278 cards.
 
 - [ ] 8. **Write the prelim branch**: eleven area indexes and their notes, against the 280 cards.
 
-After step 6 the tree holds about 175 pages, from 367: the 127 existing notes, and index pages that are generated rather than typed.
-Steps 7 and 8 then grow it again with mathematics rather than with scaffolding.
+- [ ] 9. **Fill the thin areas** named above, one area at a time.
+
+Steps 1 to 6 stop the tree from carrying a hand-typed second copy of card data; nothing there is lost, because the query renders it.
+Steps 7 to 9 are the work the tree exists to hold, and they are the larger half.
