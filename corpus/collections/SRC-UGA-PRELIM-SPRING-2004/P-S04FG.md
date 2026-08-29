@@ -23,3 +23,32 @@ a) Prove that $g$ must be injective.
 
 b) Give an example to show that $f$ need not be injective.
 :::
+
+::: {.solution}
+**Part (a).**
+
+<1>1. $g$ is injective.
+<2>1. Suppose $g(x) = g(y)$ for $x, y \in A$.
+Proof: take two elements with equal image under $g$.
+<2>2. Then $(f \circ g)(x) = f(g(x)) = f(g(y)) = (f \circ g)(y)$.
+Proof: apply $f$ to both sides of $g(x) = g(y)$.
+<2>3. Since $f \circ g$ is injective, $x = y$.
+Proof: injectivity of $f \circ g$ applied to <2>2.
+<2>4. Hence $g(x) = g(y)$ implies $x = y$, so $g$ is injective.
+Proof: <2>1–<2>3.
+
+**Part (b).**
+
+<1>1. Take $A = \NN$ (or any set with at least two elements), and define $g(n) = 2n$ and $f(n) = \lfloor n/2 \rfloor$.
+<2>1. $g$ is injective.
+Proof: $2n = 2m$ implies $n = m$.
+<2>2. $f \circ g = \id_{\NN}$.
+Proof: $(f \circ g)(n) = f(2n) = \lfloor 2n/2 \rfloor = n$.
+<2>3. Hence $f \circ g$ is injective.
+Proof: the identity is injective.
+<2>4. But $f$ is not injective.
+Proof: $f(0) = 0$ and $f(1) = 0$, yet $0 \neq 1$.
+
+<1>2. Q.E.D.
+Proof: <1>1 gives an example where $f \circ g$ is injective but $f$ is not.
+:::
