@@ -13,6 +13,10 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: problem
@@ -144,4 +148,31 @@ Then $A\vector s \in S^\perp$ since
 .\end{align*}
 
 $\qed$
+:::
+
+::: {.solution}
+**Goal.** Show a self-adjoint operator has real eigenvalues and is unitarily diagonalizable.
+
+<1>1. Every eigenvalue of $A$ is real.
+<2>1. Let $A\vector v = \lambda \vector v$ with $\vector v \neq 0$.
+Proof: take an eigenpair.
+<2>2. $\inner{A\vector v}{\vector v} = \lambda \norm{\vector v}^2$.
+Proof: $\inner{A\vector v}{\vector v} = \inner{\lambda \vector v}{\vector v} = \lambda \inner{\vector v}{\vector v}$.
+<2>3. $\inner{A\vector v}{\vector v} = \overline{\lambda} \norm{\vector v}^2$.
+Proof: $\inner{A\vector v}{\vector v} = \inner{\vector v}{A^*\vector v} = \inner{\vector v}{A\vector v} = \inner{\vector v}{\lambda \vector v} = \overline{\lambda}\inner{\vector v}{\vector v}$.
+<2>4. Hence $\lambda = \overline{\lambda}$, so $\lambda \in \RR$.
+Proof: equate <2>2 and <2>3 and divide by $\norm{\vector v}^2 \neq 0$.
+
+<1>2. $A$ is unitarily diagonalizable.
+<2>1. By Schur's theorem, $A = UTU\inv$ with $U$ unitary and $T$ upper triangular.
+Proof: Schur's theorem.
+<2>2. $T^* = T$.
+Proof: $T = U\inv A U = U^* A U$, so $T^* = (U^* A U)^* = U^* A^* U = U^* A U = T$.
+<2>3. $T$ is diagonal.
+Proof: $T$ is upper triangular and $T^* = T$ forces $T_{ij} = 0$ for $i \neq j$.
+<2>4. Hence $A$ is unitarily similar to a diagonal matrix.
+Proof: <2>1 and <2>3.
+
+<1>3. Q.E.D.
+Proof: <1>1 and <1>2.
 :::
