@@ -1357,19 +1357,201 @@ Two other operations ride along here, and each is justified on its own terms:
 
 Judge each on its own claim. Do not let the second pay for the first, and do not let either stand in for the third.
 
-### The table of contents is unwritten
 
-The current tree is folder archaeology: five axes at one level — topic, sitting, institution, course week, and resource type — inherited from five source repositories.
-No one has yet decided what the study guide's chapters are.
+### The table of contents
 
-That decision is editorial and belongs to the maintainer.
-It is not derivable from the corpus: topic strings, card kinds, tag frequencies, and the guide section lists describe storage, not exposition.
+A table of contents, not a folder scheme.
 
-- [ ] Author the table of contents, one subject at a time, starting with complex analysis.
-  Include the pages that have no counterpart in the current tree: the technique drilldowns ("which contour do I close", "how do I show a group of order n is not simple"), the compendia (counterexamples, standard contour integrals, proof sketches for last-week review), and the groupings by conclusion (the theorems that hand you a constant function).
+#### What the wiki is for
+
+A student uses a qual guide in five ways, and only two of them are served by a textbook:
+
+1. **Learn the material** — read a chapter.
+
+2. **Drill** — do problems by topic. *The corpus already does this: Browse, Generate, 4,921 problems.*
+
+3. **Recognize** — see a problem, know which tool it wants. Hardest thing on the exam, and no textbook teaches it.
+
+4. **Compress** — the week before, get everything into your head.
+
+5. **Look up mid-problem** — "Fubini or Tonelli, and what exactly do I need to check?"
+
+Delegate (2) to the corpus.
+The chapters serve (1) and (5). (3) and (4) need page kinds the current tree has none of.
+
+#### Four page kinds
+
+- **Chapter** — the exposition. Definitions, theorems with hypotheses stated exactly, proofs, worked examples.
+
+- **Recognition page** — a decision procedure keyed on *the form of the problem*, not on the theory. Sits at the head of the chapter whose tools it dispatches to.
+
+- **Compendium** — a table you scan, not prose you read. Cross-cutting, so it sits at subject level.
+
+- **Review sheet** — one page per subject; everything that must be in your head walking in.
+
+A recognition page lives with its mathematics — you want "which contour" while you are reading about contours.
+Only the genuinely cross-chapter pages sit at subject level.
+
+#### Complex analysis, worked in full
+
+```
+complex-analysis/
+├── index.md                 what the exam asks, the recurring problem types,
+│                            and which chapter treats each
+├── review.md                every theorem statement, one page
+├── counterexamples.md       entire but unbounded; holomorphic on a punctured
+│                            disc; the hypotheses that are load-bearing
+├── standard-integrals.md    ∫sin x/x, ∫1/(1+xⁿ), ∫x^a/(1+x), ∫ over [0,2π] —
+│                            each with its contour and its arc estimate
+│
+├── holomorphic-functions/
+│   ├── is-it-holomorphic.md          ← recognition: CR, power series, Morera,
+│   │                                   or "it isn't, and here's the obstruction"
+│   ├── complex-arithmetic-and-log.md
+│   ├── the-cauchy-riemann-equations.md
+│   ├── power-series.md
+│   └── harmonic-functions.md         harmonic conjugates, mean value
+│
+├── cauchy-theory/
+│   ├── theorems-that-give-a-constant.md  ← recognition: Liouville, maximum
+│   │                                       modulus, open mapping, identity —
+│   │                                       and which hypothesis each needs
+│   ├── cauchys-theorem.md
+│   ├── the-integral-formula.md
+│   ├── cauchy-estimates-and-liouville.md
+│   ├── morera-and-converses.md
+│   ├── the-identity-principle.md
+│   ├── maximum-modulus-and-open-mapping.md
+│   └── schwarz-reflection.md
+│
+├── singularities/
+│   ├── classifying-a-singularity.md  ← recognition: the limit test, the
+│   │                                   Laurent test, the boundedness test
+│   ├── laurent-series.md
+│   ├── removable-poles-essential.md
+│   ├── meromorphic-functions.md
+│   └── casorati-weierstrass-and-picard.md
+│
+├── residues-and-contours/
+│   ├── which-contour-do-i-close.md   ← recognition, keyed on the integrand:
+│   │                                   semicircle | keyhole (branch cut) |
+│   │                                   rectangle (periodic) | indented
+│   │                                   (pole on the line) | unit circle (trig)
+│   ├── the-residue-theorem.md
+│   ├── computing-residues.md         simple, higher order, by series
+│   ├── arc-estimates.md              ML, Jordan's lemma, the small-arc lemma
+│   └── real-integrals-by-residues.md
+│
+├── counting-zeros/
+│   ├── how-many-zeros-in-this-region.md  ← recognition: argument principle,
+│   │                                       Rouché, or direct factoring
+│   ├── the-argument-principle.md
+│   ├── rouches-theorem.md
+│   └── hurwitz.md
+│
+└── conformal-maps/
+    ├── build-me-a-map.md             ← recognition: the standard domains and
+    │                                   the composition that gets you there
+    ├── mobius-transformations.md
+    ├── the-schwarz-lemma.md
+    ├── blaschke-factors-and-automorphisms.md
+    ├── the-riemann-mapping-theorem.md
+    └── normal-families-and-montel.md
+```
+
+Six chapters in dependency order, six recognition pages, three subject-level compendia.
+The `Quals/` link lists and the `Exercises/`, `Workshops/`, `Resources/` folders do not appear, because problems arrive by query and the bibliography is one page.
+
+#### The other subjects
+
+**Algebra** — `index` · `review` · `counterexamples` (the "is every X a Y" questions) · `groups-of-small-order.md` (the table: order ≤ 20, structure, Aut, whether it's simple)
+
+```
+groups/                  is-this-group-abelian.md · basics · quotients ·
+                         the standard families
+group-actions/           show-g-is-not-simple.md ← the single most useful page
+                         in the subject · orbit-stabilizer · class equation ·
+                         Sylow (which is where Sylow belongs: it is the
+                         counting argument, not a chapter of its own)
+rings-and-ideals/        domains · factorization · polynomial rings
+modules/                 classify-this-module.md · over a PID · tensor ·
+                         exact sequences
+linear-algebra/          find-the-canonical-form.md ← given a matrix, the
+                         recipe · determinants · eigen · JCF · RCF · SNF ·
+                         spectral
+fields/                  extensions · splitting · separability · finite fields
+galois-theory/           compute-this-galois-group.md ← by degree, by
+                         discriminant, by reduction mod p · the correspondence
+                         · solvability · cyclotomic
+representations/         Maschke · characters · Schur
+```
+
+**Real analysis** — `index` · `review` · `counterexamples.md` (the largest one; 76 cards, and half the exam is "is this true") · `inequalities.md`
+
+```
+undergraduate/           sequences · continuity · differentiability ·
+                         uniform convergence · metric spaces
+measure/                 outer measure · measurable sets and functions ·
+                         Littlewood's three principles
+integration/             which-convergence-theorem.md ← MCT, DCT, Fatou,
+                         and what each costs · construction · L¹
+fubini-tonelli/          its own chapter: asked constantly, and the
+                         hypotheses are where the points are
+lp-spaces/               duality · Hölder and Minkowski · density
+fourier/                 convolution · the transform · inversion
+functional-analysis/     Banach · Hilbert · the big four theorems
+```
+
+**Topology** — `index` · `review` · `the-standard-spaces.md` (Sⁿ, Tⁿ, RPⁿ, Klein bottle, wedges, with π₁ and H\_∗ tabulated — the highest-value page in the subject) · `counterexamples.md`
+
+```
+spaces-and-constructions/  subspace · product · quotient
+connectedness-and-compactness/
+separation-and-metrization/
+fundamental-group/         compute-pi-1.md ← van Kampen, or deformation
+                           retract, or covering space
+covering-spaces/
+cw-complexes/
+homology/                  compute-h-star.md ← Mayer-Vietoris, cellular,
+                           or long exact sequence of a pair
+degree-and-fixed-points/   Brouwer · Lefschetz · Borsuk-Ulam
+surfaces-and-manifolds/    classification
+```
+
+**Prelim** — the eleven sections of the paper, plus `useful-tricks.md`, which already exists and is exactly a recognition page.
+
+**Applied algebra** — matrix analysis · representation theory · symmetric functions · Gröbner bases and varieties · invariant theory.
+All unwritten; 247 problems and no theory cards, so the wiki is the only place its mathematics can live.
+
+#### What generated this
+
+Chapters follow **dependency**, not textbook chapter order — Sylow sits under group actions because it *is* the counting argument, and Fubini–Tonelli gets its own chapter because the exam treats it as one.
+
+Recognition pages are keyed on **what the problem looks like**, since that is all you have at minute forty.
+Their existence is why Rouché and the argument principle share a chapter: you choose between them, so you compare them on one page.
+
+Compendia exist where **scanning beats reading** — and they are the pages a reader returns to most.
+
+Nothing here is derived from the corpus.
+The corpus supplies the problems under each page and the statements to inline.
+
+#### Authoring queue
+
+One subject at a time, chapter by chapter, reading the existing pages before each one.
+
+- [ ] Complex analysis.
+
+- [ ] Algebra.
+
+- [ ] Real analysis.
+
+- [ ] Topology.
+
+- [ ] Prelim.
+
+- [ ] Applied algebra.
 
 Everything below is evidence for that authoring, not a plan that precedes it.
-
 ### What is there now (measured)
 
 | Kind of page | Count | Share |
