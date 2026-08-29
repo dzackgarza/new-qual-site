@@ -11,10 +11,53 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
-Show that $[\QQ(\sqrt 2 + \sqrt 3) : \QQ] = 4$.
+(1) Prove that $\mathbb{Q}(\sqrt{2} + \sqrt{3}) = \mathbb{Q}(\sqrt{2} - \sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3})$.
+(2) Prove that $[\mathbb{Q}(\sqrt{2} + \sqrt{3}) : \mathbb{Q}] = 4$.
+:::
 
-- Show that $\QQ(\sqrt 2 + \sqrt 3) = \QQ(\sqrt 2 - \sqrt 3) = \QQ(\sqrt 2, \sqrt 3)$.
+::: solution
+**Goal:** Prove that $\alpha = \sqrt{2} + \sqrt{3}$ generates the biquadratic extension $\mathbb{Q}(\sqrt{2}, \sqrt{3})$ over $\mathbb{Q}$ and has degree 4.
+
+<1>1. Algebraic field equality $\mathbb{Q}(\sqrt{2} + \sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3})$:
+    *Proof:*
+    <2>1. Let $\alpha = \sqrt{2} + \sqrt{3}$.
+    <2>2. Clearly $\alpha \in \mathbb{Q}(\sqrt{2}, \sqrt{3})$, so $\mathbb{Q}(\alpha) \subseteq \mathbb{Q}(\sqrt{2}, \sqrt{3})$.
+    <2>3. Compute the reciprocal $\alpha^{-1}$:
+        $$\frac{1}{\alpha} = \frac{1}{\sqrt{3} + \sqrt{2}} = \frac{\sqrt{3} - \sqrt{2}}{(\sqrt{3} + \sqrt{2})(\sqrt{3} - \sqrt{2})} = \sqrt{3} - \sqrt{2} = -(\sqrt{2} - \sqrt{3}).$$
+    <2>4. Since $\mathbb{Q}(\alpha)$ is a field, $\frac{1}{\alpha} \in \mathbb{Q}(\alpha)$, and hence:
+        $$\sqrt{2} - \sqrt{3} = -\frac{1}{\alpha} \in \mathbb{Q}(\alpha).$$
+        This also immediately proves $\mathbb{Q}(\sqrt{2} - \sqrt{3}) = \mathbb{Q}(\sqrt{2} + \sqrt{3})$.
+    <2>5. Recovering individual generators:
+        $$\sqrt{2} = \frac{(\sqrt{2} + \sqrt{3}) + (\sqrt{2} - \sqrt{3})}{2} = \frac{\alpha - \alpha^{-1}}{2} \in \mathbb{Q}(\alpha),$$
+        $$\sqrt{3} = \frac{(\sqrt{2} + \sqrt{3}) - (\sqrt{2} - \sqrt{3})}{2} = \frac{\alpha + \alpha^{-1}}{2} \in \mathbb{Q}(\alpha).$$
+    <2>6. Since both $\sqrt{2}, \sqrt{3} \in \mathbb{Q}(\alpha)$, we have $\mathbb{Q}(\sqrt{2}, \sqrt{3}) \subseteq \mathbb{Q}(\alpha)$.
+    <2>7. Combining both inclusions yields $\mathbb{Q}(\sqrt{2} + \sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3}) = \mathbb{Q}(\sqrt{2} - \sqrt{3})$.
+
+<1>2. Degree Computation $[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}] = 4$:
+    *Proof:*
+    <2>1. By the Tower Law:
+        $$[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}] = [\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}(\sqrt{2})] \cdot [\mathbb{Q}(\sqrt{2}) : \mathbb{Q}].$$
+    <2>2. The polynomial $x^2 - 2$ is irreducible over $\mathbb{Q}$ by Eisenstein ($p=2$), so $[\mathbb{Q}(\sqrt{2}) : \mathbb{Q}] = 2$.
+    <2>3. $\sqrt{3} \notin \mathbb{Q}(\sqrt{2})$: If $\sqrt{3} = a + b\sqrt{2}$ with $a, b \in \mathbb{Q}$, then squaring gives $3 = a^2 + 2b^2 + 2ab\sqrt{2}$.
+        - If $ab \ne 0$, then $\sqrt{2} = \frac{3 - a^2 - 2b^2}{2ab} \in \mathbb{Q}$, contradiction.
+        - If $b = 0$, $a^2 = 3$, impossible in $\mathbb{Q}$.
+        - If $a = 0$, $2b^2 = 3 \implies b^2 = 3/2$, impossible in $\mathbb{Q}$.
+    <2>4. Thus $x^2 - 3$ is irreducible over $\mathbb{Q}(\sqrt{2})$, so $[\mathbb{Q}(\sqrt{2}, \sqrt{3}) : \mathbb{Q}(\sqrt{2})] = 2$.
+    <2>5. Therefore, $[\mathbb{Q}(\sqrt{2} + \sqrt{3}) : \mathbb{Q}] = 2 \cdot 2 = 4$.
+
+<1>3. Minimal Polynomial of $\sqrt{2} + \sqrt{3}$:
+    *Proof:*
+    <2>1. $\alpha = \sqrt{2} + \sqrt{3} \implies \alpha^2 = 5 + 2\sqrt{6} \implies \alpha^2 - 5 = 2\sqrt{6}$.
+    <2>2. Squaring again: $(\alpha^2 - 5)^2 = 24 \implies \alpha^4 - 10\alpha^2 + 1 = 0$.
+    <2>3. The minimal polynomial is $m_\alpha(x) = x^4 - 10x^2 + 1$, which is irreducible of degree 4 over $\mathbb{Q}$.
+
+<1>4. Conclusion:
+    $\mathbb{Q}(\sqrt{2} + \sqrt{3}) = \mathbb{Q}(\sqrt{2} - \sqrt{3}) = \mathbb{Q}(\sqrt{2}, \sqrt{3})$ and $[\mathbb{Q}(\sqrt{2} + \sqrt{3}) : \mathbb{Q}] = 4$. Q.E.D.
 :::
