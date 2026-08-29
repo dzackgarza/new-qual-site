@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-CVUQ3
 kind: problem
-title: Galois group of $x^{15}+2$ over $\QQ$ is a semidirect product of a Sylow $2$-subgroup
-  with $\ZZ/15\ZZ$
+title: Galois group of $x^{15}+2$ over $\QQ$ is a semidirect product of a Sylow $2$-subgroup with $\ZZ/15\ZZ$
 classification:
   areas:
   - algebra

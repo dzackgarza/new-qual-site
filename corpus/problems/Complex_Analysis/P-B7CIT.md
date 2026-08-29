@@ -47,3 +47,21 @@ Proof: <1>3 and $\abs h \equiv 1$ (<1>2): the constant value lies on the unit ci
 
 <1>5. Q.E.D. Proof: <1>1 and <1>4 give $f = hg = e^{i\theta} g$ on $\Omega$.
 :::
+
+::: {.solution}
+Define $F(z) \da {f(z) \over g(z)}$.
+
+::: {.claim}
+$F$ is holomorphic on $\Omega$.
+:::
+
+::: {.proof title="of claim"}
+Note that $g(a) = 0$ iff $f(a) = 0$, so $F$ has no poles.
+If $F$ has a singularity at $z_0$, noting that $\abs{F(z_0)} = 1$, $F$ is bounded in a neighborhood of $z_0$ and thus the singularity must be removable.
+By Riemann's removable singularity theorem, $F$ extends to a holomorphic function.
+:::
+
+Given this, note that $\abs{F(z)} = 1$ for all $z$, so $F(\Omega) \subseteq S^1$, which is codimension 1 in $\CC$ and not open.
+By the open mapping theorem, $F$ must be constant, so $F(z) = \lambda$, and in particular since $\abs{F(z)} = 1$, $\lambda = e^{it}\in S^1$ for some $t$.
+Then $f(z) = \lambda g(z)$.
+:::
