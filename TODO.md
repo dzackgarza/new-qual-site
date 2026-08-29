@@ -1329,6 +1329,23 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30. Section 10 repairs the copy inside the current tree; this section replaces the tree.
 
+### Three operations, not one
+
+Reorganization moves pages.
+It cannot change how much content exists: a page that moves still exists.
+Page count is not a score for it, and a reorganization that lowers the count has destroyed something.
+The expected direction here is up: the main move is splitting one page that holds several concepts into one note per concept, and the tree adds an index for each area.
+
+Two other operations ride along here, and each is justified on its own terms:
+
+- **Deduplication.** The 90 `Quals/` link lists and the source-archive pages are card data typed a second time.
+  Replacing them with a query removes no content, because the query renders the same problems from the same cards.
+
+- **Writing.** The areas that hold no notes.
+  This is the only one of the three that changes how much content exists, and it only adds.
+
+Judge each on its own claim. Do not let the second pay for the first, and do not let either stand in for the third.
+
 ### What is there now (measured)
 
 | Kind of page | Count | Share |
@@ -1339,7 +1356,7 @@ Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, 
 | `Exercises/` (PSet writeups) | 18 | 5% |
 | `Archives/` (tracking, topics, source dumps) | 14 | 4% |
 | `Appendices/` + `Workshops/` + `Review/` | 24 | 6% |
-| **Mathematical notes** | **127** | **35%** |
+| Mathematical notes | 127 | 35% |
 
 4,051 card references.
 115 pages are more link than text.
@@ -1477,6 +1494,25 @@ wiki/complex-analysis/
 The 34 `Quals/` pages become query blocks.
 `Exercises/` (2), `Workshops/` (3), and `Resources/Source_Archive` move to the corpus.
 `Basics/Tips_Techs`, `Appendices/Appendix Unsorted`, and `Quals/Unsorted` name no subject: each sentence moves into the note it belongs to, and the wrapper page ends.
+
+### Pages that split
+
+The sample tree above shows merges, because complex analysis is where the duplication is worst.
+Across the wiki the commoner move is the other one: one page holds several concepts, and the contract gives each its own note.
+
+| Page | Size | Sections | Splits into |
+| --- | ---: | ---: | --- |
+| `Algebra/Fields/Galois_Theory_Computations.md` | 26 kB | 5 h2, 10 h3 | the computation techniques, one note each |
+| `Algebra/Fields/Fields_Extensions.md` | 20 kB | 6 h2 | extensions, splitting fields, separability, finite fields |
+| `Algebra/Groups/Groups_Classification.md` | 20 kB | 5 h2 | the classification arguments by order |
+| `Algebra/Groups/Groups_Basics.md` | 18 kB | 8 h2 | subgroups, quotients, isomorphism theorems, the standard families |
+| `Archives/Topics.md` | 14 kB | 10 h2, 10 h3 | to `wiki/reading/`, by topic |
+| `Topology/Examples/Examples.md` | 14 kB | 2 h2 | the standard spaces, one note each |
+| `Complex_Analysis/Basics/Tips_Techs.md` | 13 kB | 11 h2 | the techniques, into the note each belongs to |
+| `Algebra/index.md` | | | `index.md`, `syllabus.md`, and the twelve-week sequence |
+| `Topology/Basics/Preface.md` | 4 kB | 2 h2 | notation and background, into `point-set/` |
+
+Add to that one `index.md` per area — about 30 of them, replacing 70 hand-typed ones that mostly index folders the new tree does not have.
 
 ### The six subjects, as area lists
 
