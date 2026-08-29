@@ -11,7 +11,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-TLP6GSQI]]
 
-[[E-AMD-AFTMXRJB]]
+[[P-YKJVQ]]
 
 [[E-AMD-V76MBREM]]
 
@@ -21,17 +21,17 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-YBSKHIZ3]]
 
-[[E-AMD-AP77PHAC]]
+[[P-QEZAI]]
 
 [[E-AMD-TSJ7AKE5]]
 
 [[E-AMD-OQDKJ6H2]]
 
-[[E-AMD-SDHQZWAH]]
+[[P-5IV34]]
 
 [[E-AMD-F5ZHMJNK]]
 
-[[E-AMD-QV73WN77]]
+[[P-3HAZ4]]
 
 [[E-AMD-UDJALSZY]]
 
@@ -41,15 +41,15 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-SF2B6RZ6]]
 
-[[E-AMD-DQIMPK6W]]
+[[P-JX3FO]]
 
 ### Primes in Group Theory
 
-[[E-AMD-ZKVM4LO2]]
+[[P-NZOMZ]]
 
 [[E-AMD-IWU3CMM5]]
 
-[[E-AMD-VGXLKNK7]]
+[[P-AYZ4J]]
 
 [[E-AMD-5QO44RPA]]
 
@@ -63,7 +63,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-4ZKQKRLH]]
 
-[[E-AMD-YSTR6E6Y]]
+[[P-2LX63]]
 
 ### p-Groups
 
@@ -73,13 +73,13 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-R4LGOQ33]]
 
-[[E-AMD-QSLDGE3Y]]
+[[P-WP76T]]
 
 [[E-AMD-Y5JUYURM]]
 
 [[E-AMD-CM4ZVMMU]]
 
-[[E-AMD-JNN3C5JP]]
+[[P-2J6HK]]
 
 [[E-AMD-VGBOZDXZ]]
 
@@ -87,33 +87,33 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-DGMOEV2O]]
 
-[[E-AMD-4M4FKNN3]]
+[[P-2BYEN]]
 
 [[E-AMD-TM3LMADH]]
 
 ### Symmetric Groups
 
-[[E-AMD-VNVKX2GG]]
+[[P-UFD6Y]]
 
 [[E-AMD-74T5EHRR]]
 
-[[E-AMD-CAHG6URT]]
+[[P-N5247]]
 
 [[E-AMD-PLA4XW64]]
 
-[[E-AMD-SJ5YNSD4]]
+[[P-PDJ5S]]
 
 [[E-AMD-XFC4PD2E]]
 
 [[E-AMD-DHOWRFW5]]
 
-[[E-AMD-XNG7QKTN]]
+[[P-6CUJZ]]
 
 [[E-AMD-Z7OGMPKS]]
 
 [[E-AMD-JFCWSOUA]]
 
-[[E-AMD-7PWB6RWV]]
+[[P-XEOMT]]
 
 [[E-AMD-EYNVK4T2]]
 
@@ -123,7 +123,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-S42H2VZL]]
 
-[[E-AMD-PCUOHZZM]]
+[[P-UQDSR]]
 
 [[E-AMD-IBD5SNJO]]
 
@@ -131,11 +131,11 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-GY2JTPQI]]
 
-[[E-AMD-T6WHXAFT]]
+[[P-BOSWW]]
 
 [[E-AMD-AY43ETMO]]
 
-[[E-AMD-2OEGAZBX]]
+[[P-WOUSR]]
 
 ### Dihedral Groups
 
@@ -149,13 +149,13 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 ### Classification
 
-[[E-AMD-V4PIAPYT]]
+[[P-QYRBQ]]
 
-[[E-AMD-U26FM22F]]
+[[P-Q3X6W]]
 
 [[E-AMD-ELQV5ZEQ]]
 
-[[E-AMD-IT4OF64Y]]
+[[P-6FFAX]]
 
 [[E-AMD-I4NOLHWA]]
 
@@ -171,7 +171,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-2MV56W7X]]
 
-[[E-AMD-2I76LR6O]]
+[[P-E6TJF]]
 
 [[E-AMD-Y3DIXRGP]]
 
@@ -183,25 +183,25 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-KGEXBKIW]]
 
-[[E-AMD-BWCHB3FQ]]
+[[P-GWP4W]]
 
 [[E-AMD-JPKP6MG6]]
 
-[[E-AMD-S35GBZDQ]]
+[[P-ZFVEO]]
 
 [[E-AMD-5LBXBRCH]]
 
-[[E-AMD-O2JIRA5Y]]
+[[P-S2KMD]]
 
 [[E-AMD-J2G54GWY]]
 
-[[E-AMD-KZTZ3MVL]]
+[[P-7LMGJ]]
 
-[[E-AMD-WWQ53K3Z]]
+[[P-MMYH6]]
 
 [[E-AMD-3TYWSS7F]]
 
-[[E-AMD-7XKGOFTW]]
+[[P-NPVTP]]
 
 [[E-AMD-IBDKWV2J]]
 
@@ -217,13 +217,13 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-NY3QKBRB]]
 
-[[E-AMD-O5Z4EIMM]]
+[[P-QG7S4]]
 
 [[E-AMD-HT4WUY5D]]
 
 ### Nonstandard Topics
 
-[[E-AMD-LUQWX7QK]]
+[[P-QASPQ]]
 
 [[E-AMD-4M7MSCEI]]
 
@@ -239,7 +239,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 ### Ideals
 
-[[E-AMD-O5KKBVFE]]
+[[P-2E7UB]]
 
 [[P-AMD-62OZUWBP]]
 
@@ -311,15 +311,15 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 ## Field Theory
 
-[[E-AMD-UKCVS66D]]
+[[P-OVRL2]]
 
-[[E-AMD-ILZR6AQL]]
+[[P-5GGTM]]
 
-[[E-AMD-HKV2RQT2]]
+[[P-GOLWQ]]
 
 [[E-AMD-GEZ3H4G7]]
 
-[[E-AMD-4WRRHZMI]]
+[[P-O6JP3]]
 
 [[E-AMD-H6ID66W4]]
 
@@ -327,27 +327,27 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-E3UUQEAP]]
 
-[[E-AMD-ZIA4GXKO]]
+[[P-TGGYQ]]
 
-[[E-AMD-RFPK4CUW]]
+[[P-JWYGQ]]
 
-[[E-AMD-7LZS7WZJ]]
+[[P-AAA6O]]
 
 [[E-AMD-HICDBVN4]]
 
-[[E-AMD-OJADDUBZ]]
+[[P-ECG25]]
 
-[[E-AMD-7FXAGE7X]]
+[[P-KEPIB]]
 
 [[E-AMD-H7JVMMY4]]
 
 [[E-AMD-CY7I27YM]]
 
-[[E-AMD-JPS54GOJ]]
+[[P-EJHML]]
 
 [[E-AMD-TSKS3JTO]]
 
-[[E-AMD-73ABFI2F]]
+[[P-TKCUS]]
 
 [[E-AMD-GLBUESVX]]
 
@@ -359,7 +359,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-JABWTITN]]
 
-[[E-AMD-7JE3646E]]
+[[P-TCB4X]]
 
 [[E-AMD-CCULHKQJ]]
 
@@ -375,19 +375,19 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-CZJRDRNT]]
 
-[[E-AMD-MMCQCRJI]]
+[[P-S2LCU]]
 
 [[E-AMD-BYJBCLC5]]
 
-[[E-AMD-L24KJMCM]]
+[[P-6JCW5]]
 
 [[E-AMD-FCSNELC6]]
 
 [[E-AMD-2QM6SJIQ]]
 
-[[E-AMD-6DAGEQIM]]
+[[P-73LXN]]
 
-[[E-AMD-WXKX3EOU]]
+[[P-CVUQ3]]
 
 [[E-AMD-HIFDV6WB]]
 
@@ -399,7 +399,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-RRYNGX7L]]
 
-[[E-AMD-5X2XEHTC]]
+[[P-VAK32]]
 
 [[E-AMD-HO6G56UF]]
 
@@ -407,7 +407,7 @@ The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
 
 [[E-AMD-FAT34AQV]]
 
-[[E-AMD-DY5TIGO2]]
+[[P-D6PI7]]
 
 [[E-AMD-KCLZUB2B]]
 

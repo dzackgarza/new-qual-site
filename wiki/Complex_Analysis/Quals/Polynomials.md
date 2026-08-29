@@ -8,7 +8,7 @@ order: 51
 
 ### Tie's Extra Questions: Fall 2011, Fall 2009 (Polynomial upper bound, $d=2$)
 
-[[E-NUMZV]]
+[[P-ACDEH]]
 
 ### Tie's Extra Questions: Spring 2015, Fall 2016 (Polynomial upper bound, $d$ arbitrary)
 

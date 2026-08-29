@@ -24,7 +24,7 @@ order: 22
 
 ## Entire functions with singularities at $\infty$
 
-[[E-RAVAC]]
+[[P-VDVNE]]
 
 ## Sum formula for $\sin^2$
 

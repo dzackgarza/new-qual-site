@@ -62,7 +62,7 @@ status: completed
 
 ### Tie's Extra Questions: Fall 2009
 
-[[E-6ROMA]]
+[[P-4PTIX]]
 
 ### Tie's Extra Questions: Fall 2015 (Blaschke factor properties)
 
@@ -74,7 +74,7 @@ status: completed
 
 ## Tie's Extra Questions: Spring 2015 (Equality of modulus)
 
-[[E-YW6CQ]]
+[[P-B7CIT]]
 
 # Fixed Points
 
