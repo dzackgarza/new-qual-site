@@ -1160,8 +1160,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   57 of them by statement rather than by whole body -- a solution written onto one twin makes the bodies differ while the question asked stays the same.
   Everything the exercise carried moved across, including three second solutions that argue the statement a different way.
   Merging is now exhausted: 8 identical-body groups are left and every one records the same statement at two sittings inside one compilation, which `f3a918092` dispositioned as keep-both.
-  Title sharing is down from 375 groups over 836 pages to 315 over 739.
-  For the rest, a search row said `Page` for both a wiki page and a guide section, so `Sylow Theorems` the wiki page and `Sylow Theory` the guide page were told apart only by the grey path.
+  Title sharing is down from 375 groups over 836 pages to 315 over 739. For the rest, a search row said `Page` for both a wiki page and a guide section, so `Sylow Theorems` the wiki page and `Sylow Theory` the guide page were told apart only by the grey path.
   The row now names the surface -- Problem, Card, Wiki, Guide -- in the badge.
   What is left is not merging: 315 groups hold different mathematics under one title, and separating those is retitling, one judgement per group, which belongs to the mathematics program under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2).
 
