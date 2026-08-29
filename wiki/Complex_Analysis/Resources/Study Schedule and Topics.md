@@ -10,81 +10,137 @@ title: "Study Schedule and Topics"
 # Scheduling
 
 - Week 1 (May 19):  **Preliminary Review**
-	- $\CC, \DD, \HH, \CP^1$
-	- [[Complex_Analysis/Basics/Complex Arithmetic|Complex arithmetic]]
-	- [[Complex_Analysis/Basics/Complex Log|Arguments, branch cuts, complex log]]
-	- [[Complex_Analysis/Basics/Precalculus|Elementary geometry, conic sections]]
-	- Analysis Review 
-		- Uniform (continuity,  differentiability, convergence)
-		- Heine-Cantor
-	- [[Complex_Analysis/Basics/Calculus_Preliminaries|Calculus review]]
-		- [[Calculus_Preliminaries#Implicit Function Theorem|Implicit function theorem]]
-		- [[Calculus_Preliminaries#Inverse Function Theorem|Inverse function theorem]]
-		- [[Calculus_Preliminaries#Green's Theorem|Green's theorem]]
-		- [[Calculus_Preliminaries#Stokes Theorem|Stokes' theorem]]
+
+  - $\CC, \DD, \HH, \CP^1$
+
+  - [[Complex_Analysis/Basics/Complex Arithmetic|Complex arithmetic]]
+
+  - [[Complex_Analysis/Basics/Complex Log|Arguments, branch cuts, complex log]]
+
+  - [[Complex_Analysis/Basics/Precalculus|Elementary geometry, conic sections]]
+
+  - Analysis Review
+
+    - Uniform (continuity,  differentiability, convergence)
+
+    - Heine-Cantor
+
+  - [[Complex_Analysis/Basics/Calculus_Preliminaries|Calculus review]]
+
+    - [[Calculus_Preliminaries#Implicit Function Theorem|Implicit function theorem]]
+
+    - [[Calculus_Preliminaries#Inverse Function Theorem|Inverse function theorem]]
+
+    - [[Calculus_Preliminaries#Green's Theorem|Green's theorem]]
+
+    - [[Calculus_Preliminaries#Stokes Theorem|Stokes' theorem]]
 
 - Week 2 (May 26): **Differentiation and integration**
-    - [[Complex_Analysis/Basics/Calculus_Preliminaries|Calculus preliminaries]]
-    - The Laplace equation, 
-    - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|Cauchy-Riemann]], 
-    - [[Complex_Analysis/Basics/Harmonic Functions|Harmonic functions]]
-    - Contours, parameterization, primitives
-    - [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's integral formula]]
-    - [[Complex_Analysis/Cauchy/Cauchy Inequality|Cauchy's inequality]]
+
+  - [[Complex_Analysis/Basics/Calculus_Preliminaries|Calculus preliminaries]]
+
+  - The Laplace equation,
+
+  - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|Cauchy-Riemann]],
+
+  - [[Complex_Analysis/Basics/Harmonic Functions|Harmonic functions]]
+
+  - Contours, parameterization, primitives
+
+  - [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's integral formula]]
+
+  - [[Complex_Analysis/Cauchy/Cauchy Inequality|Cauchy's inequality]]
 
 - Week 3 (June 2): **Analytic Functions and singularities**
-	- [[Complex_Analysis/Basics/Series Reference|Power series and convergence]]
-	- [[Complex_Analysis/Basics/Series Exercises|Laurent expansions]]
-	- [[Complex_Analysis/Zeros_and_poles/Singularities|Isolated singularities]]
-		- Poles, meromorphic functions, essential singularities
-	- [[Complex_Analysis/Zeros_and_poles/Riemann removable singularity|Riemann's removable singularity theorem]]
+
+  - [[Complex_Analysis/Basics/Series Reference|Power series and convergence]]
+
+  - [[Complex_Analysis/Basics/Series Exercises|Laurent expansions]]
+
+  - [[Complex_Analysis/Zeros_and_poles/Singularities|Isolated singularities]]
+
+    - Poles, meromorphic functions, essential singularities
+
+  - [[Complex_Analysis/Zeros_and_poles/Riemann removable singularity|Riemann's removable singularity theorem]]
 
 - Week 4 (June 9): **Integration I**
-	- [[Complex_Analysis/Cauchy/Cauchy_Theorem|Cauchy's theorem]] and [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's theorem]]
-	- [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's Integral Formula]]
-	- [[Complex_Analysis/Zeros_and_poles/MMP|Maximum Modulus Principle]]
-	- [[Complex_Analysis/Cauchy/Schwarz reflection principle|Schwarz reflection principle]]
-	- [[Complex_Analysis/Cauchy/Mean Value Theorem|Mean value theorem]]
+
+  - [[Complex_Analysis/Cauchy/Cauchy_Theorem|Cauchy's theorem]] and [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's theorem]]
+
+  - [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's Integral Formula]]
+
+  - [[Complex_Analysis/Zeros_and_poles/MMP|Maximum Modulus Principle]]
+
+  - [[Complex_Analysis/Cauchy/Schwarz reflection principle|Schwarz reflection principle]]
+
+  - [[Complex_Analysis/Cauchy/Mean Value Theorem|Mean value theorem]]
 
 - Week 5 (June 16): **Integration II**
-    - [[Complex_Analysis/Residues/Residues|Residues]]
-    - [[Complex_Analysis/Residues/Exercises_Integrals|Techniques in contour integration]]
+
+  - [[Complex_Analysis/Residues/Residues|Residues]]
+
+  - [[Complex_Analysis/Residues/Exercises_Integrals|Techniques in contour integration]]
 
 - Week 6 (June 23): **Entire functions**
-	- [[Complex_Analysis/Cauchy/Liouville|Liouville's theorem]]
-	- [[Complex_Analysis/Appendices/Appendix FTA Proofs|The fundamental theorem of algebra]]
+
+  - [[Complex_Analysis/Cauchy/Liouville|Liouville's theorem]]
+
+  - [[Complex_Analysis/Appendices/Appendix FTA Proofs|The fundamental theorem of algebra]]
 
 - Week 7 (June 30): **Roots**
-	- [[Complex_Analysis/Zeros_and_poles/Argument Principle|Argument principle]]
-	- [[Complex_Analysis/Zeros_and_poles/Rouche|Rouche's theorem]]
+
+  - [[Complex_Analysis/Zeros_and_poles/Argument Principle|Argument principle]]
+
+  - [[Complex_Analysis/Zeros_and_poles/Rouche|Rouche's theorem]]
 
 - Week 8 (July 7): **Conformal Maps**
-	- [[Complex_Analysis/Conformal_maps/Conformal_Standard|Conformal maps]]
-	- [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Linear Fractional/Mobius Transformations|Mobius transformations and linear fractional transformations]]
-	- [[Conformal_Standard#The Big 9 Conformal Maps|The big 9 standard maps]]
-	- [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]], 
+
+  - [[Complex_Analysis/Conformal_maps/Conformal_Standard|Conformal maps]]
+
+  - [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Linear Fractional/Mobius Transformations|Mobius transformations and linear fractional transformations]]
+
+  - [[Conformal_Standard#The Big 9 Conformal Maps|The big 9 standard maps]]
+
+  - [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]],
 
 - Week 9 (July 14): **Schwarz lemma**
-	- [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Blaschke Factors|Blaschke Factors]]
-	- [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma]] 
-	- [[Complex_Analysis/Zeros_and_poles/Open Mapping|Open Mapping Theorem]]
+
+  - [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Blaschke Factors|Blaschke Factors]]
+
+  - [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma]]
+
+  - [[Complex_Analysis/Zeros_and_poles/Open Mapping|Open Mapping Theorem]]
 
 - Week 10  (July 21): **Omitted values**
-	- [[Complex_Analysis/Omitted_values/Casorati-Weierstrass|Casorati-Weierstrass]]
-	- [[Complex_Analysis/Omitted_values/Picard|Picard's theorem]]
+
+  - [[Complex_Analysis/Omitted_values/Casorati-Weierstrass|Casorati-Weierstrass]]
+
+  - [[Complex_Analysis/Omitted_values/Picard|Picard's theorem]]
 
 - Week 11 (July 28): **Montel**
-	- [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
-	- [[Complex_Analysis/Omitted_values/Montel#Normal Families|Normal families]]
-	- [[Complex_Analysis/Omitted_values/Montel|Montel's theorem]]
-	- [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|Riemann mapping theorem and unformization]]
+
+  - [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
+
+  - [[Complex_Analysis/Omitted_values/Montel#Normal Families|Normal families]]
+
+  - [[Complex_Analysis/Omitted_values/Montel|Montel's theorem]]
+
+  - [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|Riemann mapping theorem and unformization]]
 
 - **Other misc topics:**
-	- $\mathrm{SL}_2(\mathbf{R})$, modularity and elliptic curves
-	- The hyperbolic metric
-	- Riemann surfaces
-	- [[Complex_Analysis/Appendices/Special Functions|Special functions]]
-		- The [[Complex_Analysis/Appendices/Special Functions#The Gamma Function|Gamma function]], [[Complex_Analysis/Appendices/Special Functions#Riemann Zeta|zeta functions]] and [[Complex_Analysis/Appendices/Special Functions#Elliptic Functions|elliptic functions]]
-	- Canonical products
-	- Dirichlet's problem
-	- Hurwitz's theorem
+
+  - $\mathrm{SL}_2(\mathbf{R})$, modularity and elliptic curves
+
+  - The hyperbolic metric
+
+  - Riemann surfaces
+
+  - [[Complex_Analysis/Appendices/Special Functions|Special functions]]
+
+    - The [[Complex_Analysis/Appendices/Special Functions#The Gamma Function|Gamma function]], [[Complex_Analysis/Appendices/Special Functions#Riemann Zeta|zeta functions]] and [[Complex_Analysis/Appendices/Special Functions#Elliptic Functions|elliptic functions]]
+
+  - Canonical products
+
+  - Dirichlet's problem
+
+  - Hurwitz's theorem

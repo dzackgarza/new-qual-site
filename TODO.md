@@ -951,13 +951,20 @@ Owner: [issue #8](https://github.com/dzackgarza/new-qual-site/issues/8)
 Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [issue #23](https://github.com/dzackgarza/new-qual-site/issues/23)
 
 - [x] Make source pages and emitted routes set-equal.
-  367 authored pages, 367 routes, 367 in the manifest. `test_every_authored_page_is_emitted_once` holds it.
+  367 authored pages, 367 routes, 367 in the manifest.
+  `test_every_authored_page_is_emitted_once` holds it.
 
-- [ ] Retain all authored prose and references.
+- [x] Retain all authored prose and references.
+  Every long word of all 367 authored pages reaches its page, discounting wikilink targets, HTML comments, and formula source, which are addresses and instructions rather than prose.
+  Three spellings used to lose text: `[[page]]: words` reads to Markdown as a link reference definition and the reader discarded the line, a part label alone above a blank line left an empty item and orphaned the block below it, and a bare list marker emitted an empty item.
+  All three are repaired, and `validate_wiki_sources` fails the build on the first.
 
-- [ ] Validate every emitted fragment.
+- [x] Validate every emitted fragment.
+  All 9560 pages parse with balanced tags, none carries a stray closing tag, and none renders shorter than 40 characters of text.
 
-- [ ] Inspect the real pages for remaining publisher defects.
+- [x] Inspect the real pages for remaining publisher defects.
+  The 37 empty list items are down to one, in `E-SS5.PR-1`, where the scan dropped the body of an equation the card still numbers.
+  That needs the book: [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60).
 
 ### Publish each subject branch
 
@@ -986,7 +993,8 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
   The generator used to derive its own area list from whatever the problem data happened to carry; it reads the registry now.
 
 - [x] Compare browser and generator problem sets with that catalog.
-  Symmetric difference 0, against each other and against the catalog. `test_the_browser_and_the_generator_offer_the_same_problems` holds it.
+  Symmetric difference 0, against each other and against the catalog.
+  `test_the_browser_and_the_generator_offer_the_same_problems` holds it.
 
 - [x] Exercise each supported facet and combined filter.
   Area, topic and institution together give 32 rows: every shown row matches all three, and every row matching all three is shown, so nothing is over- or under-hidden.
@@ -1009,29 +1017,41 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
 
 Owner: [issue #41](https://github.com/dzackgarza/new-qual-site/issues/41)
 
-- [ ] Reproduce each remaining rendered-page defect.
+- [x] Reproduce each remaining rendered-page defect.
+  Each of the three text-losing spellings was cut down to a two-line wiki page that reproduces it on its own.
 
-- [ ] Repair one defect at a time.
+- [x] Repair one defect at a time.
+  The list-item spellings, then the 404 page's assets, then the facet labels.
 
-- [ ] Render and inspect the affected page after each repair.
+- [x] Render and inspect the affected page after each repair.
+  The repaired pages were rebuilt and read back each time.
 
 ### Prove the deployed site
 
 Owner: [issue #30](https://github.com/dzackgarza/new-qual-site/issues/30)
 
-- [ ] Verify the route and catalog manifests.
+- [x] Verify the route and catalog manifests.
+  Every manifest route is a file on disk, every search record opens a page, and every card has a search record.
 
-- [ ] Visit every subject branch root and terminal route.
+- [x] Visit every subject branch root and terminal route.
+  415,728 internal links across the 9560 pages resolve to a file that exists, and following links from the home page reaches all 9560.
 
-- [ ] Exercise search, filters, disclosures, diagrams, citations, and generation.
+- [x] Exercise search, filters, disclosures, diagrams, citations, and generation.
+  Driven in a real browser: the dialog answers `Sylow` with 30 hits whose first opens its page; area and institution together narrow 4921 rows to 232, all matching both, and a term narrows those to 45 and clears back; a card's three disclosures start closed and hold their text when opened; a tikzcd diagram renders 813px wide; a syllabus carries 35 citations into `source/`; the generator draws six topology problems and no solutions.
+  No page threw a script error.
 
-- [ ] Inspect widths of 375, 768, 1024, and 1440 CSS pixels.
+- [x] Inspect widths of 375, 768, 1024, and 1440 CSS pixels.
+  19 pages, one per kind, at each of the four widths: nothing lies outside the viewport that is not inside a container that scrolls, and no page scrolls sideways.
 
-- [ ] Inspect browser console and network results.
+- [x] Inspect browser console and network results.
+  The only response at or over 400 is the deliberate request for a page that does not exist.
+  The 404 page used to be one: its stylesheet and script were written as static tags, and Chrome's preload scanner fetched them against the requested path before the page's own script set the site root, so the page rendered unstyled at every depth.
 
 - [ ] Confirm that local and deployed artifacts use the same revision.
 
 - [ ] Record every unexercised path and nonclaim.
+  Not exercised: printing a generated sheet, the site with JavaScript off, and any browser other than Chromium.
+  Not claimed: that the mathematics on a page is correct, only that it renders; and that a card's title names what the card asks, which [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) owns for 315 title groups.
 
 Owner [issue #6](https://github.com/dzackgarza/new-qual-site/issues/6) closes only after all publication and subject-branch obligations hold.
 
