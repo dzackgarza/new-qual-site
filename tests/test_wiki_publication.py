@@ -1059,7 +1059,7 @@ Show the deck group of a regular cover acts simply transitively on each fibre.
 
 def problems_panel_ids(html: str) -> list[str]:
     """The card ids the `problems:` panel lists, in the order it lists them."""
-    panel = html.split('page-problems', 1)[1] if "page-problems" in html else ""
+    panel = html.split("page-problems", 1)[1] if "page-problems" in html else ""
     return re.findall(r"tag/([A-Z]+-[A-Z0-9]+)\.html", panel)
 
 
@@ -1075,9 +1075,7 @@ def test_a_problems_query_lists_every_problem_on_its_topic_in_its_own_subject(tm
     """
     work = fixture_repo(tmp_path)
     (work / "corpus" / "PRB-COVERGROUP.md").write_text(TOPOLOGY_PROBLEM)
-    (work / "wiki" / "Algebra" / "groups.md").write_text(
-        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Groups]\n---\n\n# Groups\n\nThe chapter.\n"
-    )
+    (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Groups]\n---\n\n# Groups\n\nThe chapter.\n")
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -1097,9 +1095,7 @@ def test_build_refuses_a_problems_query_that_matches_nothing(tmp_path: Path) -> 
     it stops the build instead of rendering the claim with nothing under it.
     """
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "groups.md").write_text(
-        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Sheaf Cohomology]\n---\n\n# Groups\n\nThe chapter.\n"
-    )
+    (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Sheaf Cohomology]\n---\n\n# Groups\n\nThe chapter.\n")
 
     result = run("build", work)
     assert result.returncode != 0
@@ -1108,8 +1104,6 @@ def test_build_refuses_a_problems_query_that_matches_nothing(tmp_path: Path) -> 
 
 def test_check_rejects_a_problems_query_that_is_not_a_topic_list(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "groups.md").write_text(
-        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: Groups\n---\n\n# Groups\n\nThe chapter.\n"
-    )
+    (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\nproblems:\n  topics: Groups\n---\n\n# Groups\n\nThe chapter.\n")
 
     assert DiagnosticCode.PAGE_PROBLEMS_QUERY_INVALID in diagnostic_codes(work)
