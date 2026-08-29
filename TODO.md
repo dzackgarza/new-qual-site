@@ -1586,7 +1586,16 @@ Tested in a worktree, not inferred:
 So "definitions and theorems are the content of a page, inlined" works today, and it is the single thing the table of contents most depends on.
 Landed in `7aba6b8a0`; `queues/11-design-issues.md` item 6 recorded the opposite and is corrected.
 
-What still needs code is the `problems:` query block, and that is a new capability rather than a reorganization.
+What still needs code is one thing, and it is a new capability rather than a reorganization.
+
+A guide manifest can already name cards two ways. `- ref: D-P6XOT` names one card.
+`- query: {kind: problem, topics: [Zorn's Lemma], limit: 500, review: {mode: any}}` names a rule, and the build resolves it against the corpus every time it runs (`publication.py`, `PublicationQuery`).
+A wiki page has no such rule. It can only name cards one at a time, by writing `[[P-XXXXX]]`.
+That is why the 90 `Quals/` pages exist: someone typed out by hand which problems belong to Sylow theory, and the list goes stale whenever a card is added or reclassified.
+
+Giving a wiki page the same rule -- called the `problems:` query block throughout this section -- is what lets those 90 pages stop existing.
+It is written out under "The 90 pages that retype card data" below.
+
 
 #### What the machinery does not make hard
 
