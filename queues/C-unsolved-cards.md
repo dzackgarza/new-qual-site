@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-5230 problem and exercise cards have no solution section and no incoming
+5225 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,13 +11,12 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1627
-- Problems: 3603
-- Total: 5230
+- Exercises: 1624
+- Problems: 3601
+- Total: 5225
 
-## Exercises (1627)
+## Exercises (1624)
 
-- [ ] E-AMD-LJNBDMIP — "A permutation is odd iff it has an odd number of even cycles"
 - [ ] E-AMD-LSAG5UZT — "Groups of order $p^3$ have a normal subgroup of order $p^2$"
 - [ ] E-AMD-NY3QKBRB — "Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$"
 - [ ] E-AMD-O2OGRSJP — "$Z(S_n)=1$ for $n\geq 4$"
@@ -108,7 +107,6 @@ commit, and writing the solution removes the line.
 - [ ] E-DWC4M — "The equalizer of two maps into a Hausdorff space is closed"
 - [ ] E-DX7N2 — "The seventeen basic properties under continuous maps"
 - [ ] E-DXQMY — "Schwarz-Pick Lemma"
-- [ ] E-DYY0W — "Coset spaces of locally compact groups are locally compact"
 - [ ] E-E3JL6 — "Products of Hausdorff spaces are Hausdorff"
 - [ ] E-E5ZWY — "Every order topology is regular"
 - [ ] E-E7FYR — "Compactness and limit points, the first two conditions of a TFAE list"
@@ -1514,7 +1512,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS8.EX-4 — "SS 8.4: No holomorphic surjection from the disc onto the plane"
 - [ ] E-SS8.EX-5 — "SS 8.5: A conformal map from the half-disc to the upper half-plane"
 - [ ] E-SS8.EX-6 — "Give another proof of Lemma 1"
-- [ ] E-SS8.EX-7 — "Provide all the details in the proof of the formula for the solution of the Diri"
 - [ ] E-SS8.EX-8 — "Find a harmonic function u in the open first quadrant that extends continuously "
 - [ ] E-SS8.EX-9 — "SS 8.9: An unbounded harmonic function with zero boundary values"
 - [ ] E-SS8.PR-1 — "Isogonality and isotropy at a point"
@@ -1645,7 +1642,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3603)
+## Problems (3601)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -3080,7 +3077,6 @@ commit, and writing the solution removes the line.
 - [ ] P-DO7TE — "$\sin z/z$ has no poles"
 - [ ] P-DPYAI — "$S^n$ minus $k$ points is a wedge of $k-1$ spheres"
 - [ ] P-DQTVL — "A conformal map from $\DD\setminus[0,1)$ to $\DD$"
-- [ ] P-DRVWD — "Cell structure, $\pi_1$, and $H_*$ of the mapping torus $z\mapsto z^2$"
 - [ ] P-DU7X7 — "Hilbert's theorem 90"
 - [ ] P-DUUFY — "$NH$ is a subgroup when $N$ is normal"
 - [ ] P-DUVZD — "Cycle type, order, and sign of $(4\,2\,1)(6\,1\,3\,2)$"
@@ -4230,7 +4226,6 @@ commit, and writing the solution removes the line.
 - [ ] P-RASP08E — "Contraction mapping principle for integral equation"
 - [ ] P-RASP08F — "Translation of distributions and distributional derivative"
 - [ ] P-RASP08G — "Distributional derivative of H(x) log|x|"
-- [ ] P-RASP09A — "True or false: everywhere-large L^1 functions, Fubini with counting measure, signed measure absolute continuity, products in measure, norm lower semicontinuity"
 - [ ] P-RASP09B — "Bilinear maps on Banach spaces: separate boundedness implies joint continuity"
 - [ ] P-RASP09C — "Measure convergence with L^p domination implies L^p convergence"
 - [ ] P-RASP09D — "Principal value of 1/(x1 + x2) defines a distribution on R^2"
