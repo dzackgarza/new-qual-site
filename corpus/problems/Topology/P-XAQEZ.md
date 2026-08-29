@@ -12,152 +12,75 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: problem
-We start with a few known facts.
-Let $A=M$, the Mobius strip, and $B= D^2$, the solid disk.
+Compute the integer homology groups $H_*(\mathbb{RP}^2; \mathbb{Z})$ using the **Mayer–Vietoris sequence** by decomposing $\mathbb{RP}^2$ as the union of a Möbius strip $M$ and a 2-disk $D^2$ along their boundary circle $\partial M = S^1$.
+:::
 
-- $\RP^2 = M \disjoint_\del D^2$
+::: solution
+**Goal:** Compute $H_*(\mathbb{RP}^2; \mathbb{Z})$ via the Mayer–Vietoris exact sequence associated to the decomposition $\mathbb{RP}^2 = M \cup_{S^1} D^2$.
 
-- $H_*(M) = H_*(S^1)$, by a deformation retract of $M$ onto its center circle.
+<1>1. Decomposition of $\mathbb{RP}^2$:
+    *Proof:*
+    <2>1. The real projective plane $\mathbb{RP}^2$ can be decomposed into two open neighborhoods (or deformation retracts) $A = M$ (Möbius band) and $B = D^2$ (topological 2-disk).
+    <2>2. Their intersection is their common boundary circle:
+        $$A \cap B = M \cap D^2 = \partial M = S^1.$$
+    <2>3. Their union is the entire space:
+        $$A \cup B = M \cup_{S^1} D^2 = \mathbb{RP}^2.$$
 
-- $H_*(D^2) = \ZZ\delta_0$
+<1>2. Homology Groups of the Pieces:
+    *Proof:*
+    <2>1. **For $A \cap B = S^1$:**
+        $$H_0(S^1) \cong \mathbb{Z}, \quad H_1(S^1) \cong \mathbb{Z}, \quad H_k(S^1) = 0 \text{ for } k \ge 2.$$
+    <2>2. **For $A = M$ (Möbius band):**
+        $M$ deformation retracts onto its central core circle $S^1$, so:
+        $$H_0(M) \cong \mathbb{Z}, \quad H_1(M) \cong \mathbb{Z}, \quad H_k(M) = 0 \text{ for } k \ge 2.$$
+    <2>3. **For $B = D^2$ (Disk):**
+        $D^2$ is contractible ($D^2 \simeq \{*\}$), so:
+        $$H_0(D^2) \cong \mathbb{Z}, \quad H_k(D^2) = 0 \text{ for } k \ge 1.$$
 
-- $H_*(S^1)= \ZZ(\delta_0 + \delta_1)$
+<1>3. Induced Maps on Homology:
+    *Proof:*
+    <2>1. Let $i: S^1 \hookrightarrow M$ and $j: S^1 \hookrightarrow D^2$ be the inclusion maps.
+    <2>2. In degree 1:
+        - The boundary circle $\partial M = S^1$ wraps **twice** around the central core circle of the Möbius strip $M$. Thus the induced map on $H_1 \cong \mathbb{Z}$ is multiplication by 2:
+          $$i_*: H_1(S^1) \longrightarrow H_1(M), \qquad 1 \longmapsto 2.$$
+        - For the disk, $H_1(D^2) = 0$, so $j_*: H_1(S^1) \to H_1(D^2)$ is the zero map:
+          $$j_*: H_1(S^1) \longrightarrow H_1(D^2) = 0, \qquad 1 \longmapsto 0.$$
+        - Thus $(i_*, -j_*)_1: \mathbb{Z} \to \mathbb{Z} \oplus 0$ is given by $x \mapsto (2x, 0)$.
+    <2>3. In degree 0:
+        - Both $M$ and $D^2$ are path-connected, so $i_*: H_0(S^1) \to H_0(M)$ and $j_*: H_0(S^1) \to H_0(D^2)$ are isomorphisms $\mathbb{Z} \to \mathbb{Z}$ sending $1 \mapsto 1$.
+        - Thus $(i_*, -j_*)_0: \mathbb{Z} \to \mathbb{Z} \oplus \mathbb{Z}$ is given by $x \mapsto (x, -x)$, which is injective with image of rank 1.
 
-- $M \intersect D^2 = \del M = S^1$
+<1>4. Mayer–Vietoris Exact Sequence Analysis:
+    *Proof:*
+    <2>1. **For $k \ge 3$:**
+        $$0 = H_k(M) \oplus H_k(D^2) \longrightarrow H_k(\mathbb{RP}^2) \longrightarrow H_{k-1}(S^1) = 0 \implies H_k(\mathbb{RP}^2) = 0.$$
+    <2>2. **For $k = 2$:**
+        $$0 = H_2(M) \oplus H_2(D^2) \longrightarrow H_2(\mathbb{RP}^2) \xrightarrow{\partial_*} H_1(S^1) \xrightarrow{(i_*, -j_*)_1} H_1(M) \oplus H_1(D^2).$$
+        Substituting the groups and maps:
+        $$0 \longrightarrow H_2(\mathbb{RP}^2) \xrightarrow{\partial_*} \mathbb{Z} \xrightarrow{x \mapsto (2x, 0)} \mathbb{Z} \oplus 0.$$
+        Since $x \mapsto (2x, 0)$ is injective ($\ker = 0$), exactness forces $\operatorname{im}(\partial_*) = \ker(i_*, -j_*)_1 = 0$.
+        Since $\partial_*$ is injective ($\ker(\partial_*) = 0$), this gives:
+        $$H_2(\mathbb{RP}^2) \cong 0.$$
+    <2>3. **For $k = 1$:**
+        $$H_1(S^1) \xrightarrow{x \mapsto (2x, 0)} H_1(M) \oplus H_1(D^2) \xrightarrow{\Phi} H_1(\mathbb{RP}^2) \xrightarrow{\partial_*} H_0(S^1) \xrightarrow{x \mapsto (x, -x)} H_0(M) \oplus H_0(D^2).$$
+        - Since $x \mapsto (x, -x)$ is injective, $\ker(i_*, -j_*)_0 = 0$, so $\operatorname{im}(\partial_*) = 0 \implies \partial_* = 0$.
+        - Therefore, $\Phi: H_1(M) \oplus H_1(D^2) \to H_1(\mathbb{RP}^2)$ is **surjective**.
+        - By exactness at $H_1(M) \oplus H_1(D^2) = \mathbb{Z} \oplus 0$:
+          $$\ker(\Phi) = \operatorname{im}(i_*, -j_*)_1 = 2\mathbb{Z} \oplus 0.$$
+        - By the First Isomorphism Theorem:
+          $$H_1(\mathbb{RP}^2) \cong \frac{H_1(M) \oplus H_1(D^2)}{\operatorname{im}(i_*, -j_*)_1} = \frac{\mathbb{Z} \oplus 0}{2\mathbb{Z} \oplus 0} \cong \mathbb{Z}/2\mathbb{Z}.$$
+    <2>4. **For $k = 0$:**
+        Since $\mathbb{RP}^2$ is path-connected:
+        $$H_0(\mathbb{RP}^2) \cong \mathbb{Z}.$$
 
-From Mayer-Vietoris, we have
-
-```{=latex}
-\begin{tikzcd}
-&  &  &  & \cdots 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
-&  &  &  &  \\
-H_2 \partial M \arrow[rr] \arrow[rr, "{(i^*, -j^*)_2}"] &  & H_2 M \oplus H_2 D^2 \arrow[rr, "(l^* - r^*)_2"] &  & H_2 \mathbb{RP}^2 \arrow[lllldd, "\delta_2"', out=0, in=-180] \\
-&  &  &  &  \\
-H_1\partial M \arrow[rr, "{(i^*, -j^*)_1}"] &  & H_1 M \oplus H_1 D^2 \arrow[rr, "(l^*-r^*)_1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
-&  &  &  &  \\
-H_0 \partial M \arrow[rr, "{(i^*, -j^*)_0}"] &  & H_0 M \oplus H_0 D^2 \arrow[rr, "(l^* - r^*)_0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
-&  &  &  &  \\
-0 &  &  &  &
-\end{tikzcd}
-```
-
-and plugging in what is known yields
-
-```{=latex}
-\begin{tikzcd}
-&  &  &  & 0 \arrow[lllldd, out=0, in=-180, "\delta_3"'] \\
-&  &  &  &  \\
-0 \arrow[rr] \arrow[rr, "{(i^2, -j^2)}"] &  & 0 \oplus 0 \arrow[rr, "l^2 - r^2"] &  & H_2 \mathbb{RP}^2 \arrow[lllldd, "\delta_2"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{(i^1, -j^1)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "l^1-r^1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
-&  &  &  &  \\
-0 &  &  &  &
-\end{tikzcd}
-```
-
-where $i: S^1 \into M$ and $j: S^1 \into D^2$.
-
-We can then identify all of the induced maps:
-
-- $i^2: H_2 \del M \into H_2 M \implies i^2: 0 \to 0 \implies i^2 = 0$
-
-- $i^1: H_1 \del M \into H_1 M$, i.e. $i^1: \ZZ \to \ZZ$ where $1 \mapsto 2$
-
-  - Since $M$ deformation retracts onto its center circle, $H_1 M \cong H_1 S_M$ where $S_M$ is the center circle (homotopies induce isomorphisms on homology).
-    But $H_1 \del M$ is generated by a cycle of edges with includes into $\del M$, which retracts onto a cycle that double covers $S_M$, so this map acts by doubling the generator.
-
-- $i^0: H_0 \del M \into H_0 M$, i.e. $i^0: \ZZ \to \ZZ$
-
-- $j^2: H_2 \del M \to H_2 D^2 \implies j^2: 0 \to 0 \implies j^2 = 0$
-
-- $j^1: H_1 \del M \to H_1 D^2 \implies j^1: \ZZ \to 0 \implies j^1 = 0$
-
-- $j^0: H_0 \del M \to H_0 D^2 \implies j_0: \ZZ \to \ZZ$
-
-So we can that the only nontrivial maps are $j^0, i^0, i^1$.
-
-**Claim: $H_2(\RP^2) = 0$:**
-
-We consider the portion of the sequence $$\cdots 0 \mapsvia{} H_2{\RP^2} \mapsvia{\delta_2} H_1 \del M \mapsvia{(i^1, -j^1)} H_1M \oplus H_1 D^2 \cdots\\
-\cdots 0 \mapsvia{} H_2\RP^2 \mapsvia{\delta_2} \ZZ \mapsvia{(i^1, -j^1)} \ZZ \oplus 0 \cdots$$
-
-We will show that $\ker \delta_2 = \im \delta_2 = 0$.
-By the first isomorphism theorem, we would then have $\frac{H_2 \RP^2}{\ker \delta_2} \cong \im \delta_2$ yielding $\frac{H_2 \RP^2}{0} = H_2 \RP^2 \cong 0$.
-
-- *Claim: $\ker \delta_2 = 0$*
-
-  This follows because it is on the left tail of an exact sequence, where $\ker \delta_2 = \im 0 = 0$.
-
-- *Claim: $\im \delta_2 = 0$*
-
-  $$(i^1, -j^1): H_1 \del M \to H_1 M \oplus H_1 D^2$$ is injective; explicitly, it is the map $$M_2: \ZZ \to \ZZ \oplus 0\\~1\mapsto (2, 0)$$
-
-  From above, know that $-j^1$ is a zero map, and that $i^1$ doubles each generator.
-  By this explicit construction, it is injective since 0 maps to 0.
-
-  But then $\ker (i^1, -j^1) = \im \delta_2 = 0$ by exactness.
-
-So now we have:
-
-```{=latex}
-\begin{tikzcd}
-&  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
-&  &  &  &  \\
-0 \arrow[rr] \arrow[rr, "{0\times 0}"] &  & 0 \oplus 0 \arrow[rr, "0"] &  & 0 \arrow[lllldd, "0"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{x \mapsto (2x, 0)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "l^1-r^1"] &  & H_1 \mathbb{RP}^2 \arrow[lllldd, "\delta_1"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
-&  &  &  &  \\
-0 &  &  &  &
-\end{tikzcd}
-```
-
-**Claim: $H_1(\RP^2) = \ZZ_2$**
-
-Here we are examining this portion of the sequence:
-
-$$
-\cdots \ZZ \mapsvia{x\mapsto (2x, 0)} H_1 M \oplus H_1 D^2 \mapsvia{l^1 - r^1} H_1 \RP^1 \mapsvia{\delta_1} H_0 \del M \mapsvia{(i^0, -j^0)} H_0 M \oplus H_0 D^2 \cdots\\
-\cdots \ZZ \mapsvia{x\mapsto (2x, 0)} \ZZ \oplus 0 \mapsvia{l^1-r^1} H_1 \RP^1 \mapsvia{\delta_1} \ZZ \mapsvia{(i^0, -j^0)} \ZZ \oplus \ZZ\cdots
-$$
-
-In general, we have the first isomorphism theorem: given any map $f$ we have $\frac{\mathrm{dom}f}{\ker f} \cong \im f$.
-Here we will take $f = l^1 - r^1$ and identify the necessary components to apply this theorem.
-
-- Claim: $\im l^1 - r^1 = H_1 \RP^2$.
-
-  - We use the fact that the maps $(i^*, j^*)$ are all injections, so in particular $0 = \ker (i^0, j^0) = \im \delta_1$ by exactness.
-    Consequently $\ker \delta_1 = H_1\RP^1 = \im l^1 - r^1$ by exactness.
-
-- What is $\ker (l^1-r^1)$?
-
-  - By exactness, $\ker (l^1 - r^1) = \im (x \mapsto (2x, 0)) = 2\ZZ \oplus 0$
-
-By the first isomorphism theorem, we have $\im (l^1-r^1) \cong \frac{\mathrm{dom} (l^1-r^1)}{\ker (l^1-r^1)} = \frac{\ZZ\oplus 0}{2\ZZ \oplus 0} \cong \ZZ_2$.
-
-Note that $l^1 - r^1$ is a nontrivial homomorphism from $2\ZZ\cong \ZZ$ to $\ZZ_2$, of which there is only one: the natural quotient map $x \mapsto x \mod 2$.
-
-There is also no nontrivial homomorphism from $\ZZ_2 \to \ZZ$, so $\delta_1 = 0$.
-
-We now have:
-
-```{=latex}
-\begin{tikzcd}
-&  &  &  & 0 \arrow[lllldd, out=0, in=-180, "0"'] \\
-&  &  &  &  \\
-0 \arrow[rr] \arrow[rr, "{0\times 0}"] &  & 0 \oplus 0 \arrow[rr, "0"] &  & 0 \arrow[lllldd, "0"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{x \mapsto (2x, 0)}"] &  & \mathbb{Z} \oplus 0 \arrow[rr, "x \mapsto x \mod 2"] &  & \mathbb{Z}_2 \arrow[lllldd, "0"', out=0, in=-180] \\
-&  &  &  &  \\
-\mathbb{Z} \arrow[rr, "{(i^0, -j^0)}"] &  & \mathbb{Z} \oplus \mathbb{Z} \arrow[rr, "l^0 - r^0"] &  & H_0 \mathbb{RP}^2 \arrow[lllldd, "\delta_0"', out=0, in=-180] \\
-&  &  &  &  \\
-0 &  &  &  &
-\end{tikzcd}
-```
+<1>5. Conclusion:
+    $$H_k(\mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & \text{if } k = 0, \\ \mathbb{Z}/2\mathbb{Z} & \text{if } k = 1, \\ 0 & \text{if } k \ge 2. \end{cases}$$
+    Q.E.D.
 :::
