@@ -61,7 +61,7 @@ Things to know well:
 - [[Complex_Analysis/residues-and-contours/computing-residues|Computing residues]]
 	- [[Complex_Analysis/Quals/Computing Integrals|Qual integrals]]
 - Jordan's lemma
-- [[Complex_Analysis/Basics/The Cauchy-Riemann equations|The Cauchy-Riemann equations]]
+- [[Complex_Analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy-Riemann equations]]
 - [[Complex_Analysis/counting-zeros/the-argument-principle|The argument principle]]
 - [[Complex_Analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
 - [[Complex_Analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]

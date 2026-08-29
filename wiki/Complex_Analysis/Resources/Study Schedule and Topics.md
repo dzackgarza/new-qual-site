@@ -15,7 +15,7 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/Basics/Complex Arithmetic|Complex arithmetic]]
 
-  - [[Complex_Analysis/Basics/Complex Log|Arguments, branch cuts, complex log]]
+  - [[Complex_Analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, complex log]]
 
   - [[Complex_Analysis/Basics/Precalculus|Elementary geometry, conic sections]]
 
@@ -41,9 +41,9 @@ title: "Study Schedule and Topics"
 
   - The Laplace equation,
 
-  - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|Cauchy-Riemann]],
+  - [[Complex_Analysis/holomorphic-functions/the-cauchy-riemann-equations|Cauchy-Riemann]],
 
-  - [[Complex_Analysis/Basics/Harmonic Functions|Harmonic functions]]
+  - [[Complex_Analysis/holomorphic-functions/harmonic-functions|Harmonic functions]]
 
   - Contours, parameterization, primitives
 
@@ -55,7 +55,7 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/Basics/Series Reference|Power series and convergence]]
 
-  - [[Complex_Analysis/Basics/Series Exercises|Laurent expansions]]
+  - [[Complex_Analysis/holomorphic-functions/power-series|Laurent expansions]]
 
   - [[Complex_Analysis/singularities/removable-poles-essential|Isolated singularities]]
 
