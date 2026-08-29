@@ -11,6 +11,10 @@ classification:
   - Quotient Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: {.exercise}
@@ -28,4 +32,61 @@ Conclude that $G/H$ is a homogeneous space.
 (c) Show that the quotient map $p: G \to G/H$ is open.
 
 (d) Show that if $H$ is closed in the topology of $G$ and is a normal subgroup of $G$, then $G/H$ is a topological group.
+:::
+
+::: {.solution}
+**Part (a).**
+
+<1>1. $f_\alpha(x) = \alpha x$ is a homeomorphism of $G$.
+Proof: left multiplication by $\alpha$ is continuous with continuous inverse $f_{\alpha^{-1}}$.
+
+<1>2. $f_\alpha$ sends the coset $xH$ to $(\alpha x)H$.
+Proof: $f_\alpha(xH) = \{\alpha x h : h \in H\} = (\alpha x)H$.
+
+<1>3. Hence $f_\alpha$ induces a well-defined bijection $\bar f_\alpha: G/H \to G/H$, $xH \mapsto (\alpha x)H$.
+Proof: <1>2.
+
+<1>4. $\bar f_\alpha$ is a homeomorphism.
+Proof: it is induced by the homeomorphism $f_\alpha$ and is compatible with the quotient topology (its inverse is $\bar f_{\alpha^{-1}}$).
+
+<1>5. Hence $G/H$ is homogeneous: for any two cosets $xH$ and $yH$, the map $\bar f_{yx^{-1}}$ sends $xH$ to $yH$.
+Proof: <1>4.
+
+**Part (b).**
+
+<1>1. A one-point set in $G/H$ is $\{xH\} = p(xH)$.
+Proof: definition.
+
+<1>2. $p^{-1}(\{xH\}) = xH$, which is closed in $G$ (since $H$ is closed and left multiplication is a homeomorphism).
+Proof: $xH = f_x(H)$ is closed.
+
+<1>3. Hence $\{xH\}$ is closed in $G/H$.
+Proof: by the definition of the quotient topology, a subset is closed iff its preimage under $p$ is closed.
+
+**Part (c).**
+
+<1>1. Let $U \subseteq G$ be open; we show $p(U)$ is open in $G/H$.
+Proof: setup.
+
+<1>2. $p^{-1}(p(U)) = UH = \bigcup_{h \in H} Uh$, which is open (a union of open sets, since right multiplication is a homeomorphism).
+Proof: $p^{-1}(p(U)) = \{uh : u \in U, h \in H\} = UH = \bigcup_{h \in H} Uh$.
+
+<1>3. Hence $p(U)$ is open in $G/H$.
+Proof: by the definition of the quotient topology, $p(U)$ is open iff $p^{-1}(p(U))$ is open.
+
+**Part (d).**
+
+<1>1. $G/H$ is a group (since $H$ is normal), and the group operations are continuous.
+<2>1. Multiplication in $G/H$ is continuous.
+Proof: the multiplication $G/H \times G/H \to G/H$ is induced by the continuous multiplication $G \times G \to G$, and the quotient map is open (part (c)), so the induced map is continuous.
+<2>2. Inversion in $G/H$ is continuous.
+Proof: inversion $G/H \to G/H$ is induced by the continuous inversion $G \to G$.
+<2>3. One-point sets are closed in $G/H$ (part (b)).
+Proof: part (b).
+
+<1>2. Hence $G/H$ is a topological group.
+Proof: <1>1.
+
+<1>3. Q.E.D.
+Proof: <1>5 (a), <1>3 (b), <1>3 (c), and <1>2 (d).
 :::
