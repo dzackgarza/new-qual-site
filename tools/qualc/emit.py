@@ -1739,17 +1739,16 @@ def _facet_terms(joined: str | None) -> list[str]:
 def _facet_option_label(axis: str, value: str, area_names: dict[str, str]) -> str:
     """What to call one facet value on screen.
 
-    An area is called what `vocabularies/areas.yaml` calls it. Title-casing the
-    id instead made the registry's own `name` dead data and the site's fifth
+    An area is called what the wiki's own folder calls it. Title-casing the id
+    instead made the registry's own `name` dead data and the site's fifth
     vocabulary: it agrees with the registry by luck and disagrees silently.
-    Topics and years are authored display strings already; an institution id is
-    an acronym, which upper-cases.
+    Every other value arrives as it is written: topics and years are authored
+    display strings, and an institution is the acronym the rows already carry,
+    which title-casing turned back into `Uga`.
     """
-    if axis in {"topic", "year"}:
-        return value
     if axis == "area":
         return area_names[value]
-    return value.replace("-", " ").title()
+    return value
 
 
 def _listing_filters(

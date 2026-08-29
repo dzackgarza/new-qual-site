@@ -160,10 +160,20 @@ class NotFoundPage:
 
 PageChrome = StandardPage | SubjectPage | AuthoredPage | NotFoundPage
 
+# The 404 page is the one page served at a path that is not its own, so its
+# links need a `<base>` naming the site root. Its stylesheet and script have to
+# be created by the same code: written as static tags, Chrome's preload scanner
+# fetches them relative to the requested path before the base exists, and both
+# come back 404.
 SITE_ROOT_BASE = """<script>
     var root = location.hostname.endsWith(".github.io") ? "/" + location.pathname.split("/")[1] + "/" : "/";
     document.head.appendChild(Object.assign(document.createElement("base"), {href: root}));
+    document.head.appendChild(Object.assign(document.createElement("link"), {rel: "stylesheet", href: root + "styles.css"}));
+    document.head.appendChild(Object.assign(document.createElement("script"), {defer: true, src: root + "app.js"}));
   </script>"""
+
+PAGE_ASSETS = """<link rel="stylesheet" href="{prefix}styles.css">
+  <script defer src="{prefix}app.js"></script>"""
 
 
 def build_asset_catalog(root: Path) -> AssetCatalog:
@@ -535,24 +545,28 @@ def page_document(
     match chrome:
         case StandardPage():
             base_html = ""
+            asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = ""
             breadcrumb_html = ""
             reading_order_html = ""
             layout_class = "page-layout"
         case NotFoundPage():
             base_html = SITE_ROOT_BASE
+            asset_html = ""
             subject_html = ""
             breadcrumb_html = ""
             reading_order_html = ""
             layout_class = "page-layout"
         case SubjectPage(navigation=navigation):
             base_html = ""
+            asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _subject_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
             layout_class = "page-layout subject-layout"
         case AuthoredPage(navigation=navigation):
             base_html = ""
+            asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _wiki_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
@@ -566,10 +580,9 @@ def page_document(
   {base_html}
   <title>{escape(title)} · Qual Corpus</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="{prefix}styles.css">
+  {asset_html}
   {mathjax_header}
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
-  <script defer src="{prefix}app.js"></script>
 </head>
 <body data-search-index="{prefix}search.json">
   <header class="site-header">
