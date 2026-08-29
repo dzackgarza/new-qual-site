@@ -1546,7 +1546,8 @@ The corpus supplies the problems under each page and the statements to inline.
 One subject at a time, chapter by chapter, reading the existing pages before each one.
 
 - [ ] Complex analysis.
-  Three of the six chapters are authored, each with its recognition page, each rendered and read: `residues-and-contours` (`78c9cc7a6`, described in `dbbe898ad`), `counting-zeros` (`d1869aaea`), `singularities` (`5e15fdf71`). Remaining: `holomorphic-functions`, `cauchy-theory`, `conformal-maps`, and the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`). `Zeros_and_poles` and `Omitted_values` are down to the pages the Cauchy theory and conformal maps chapters claim, and dissolve when those are written.
+  All six chapters are authored, each with its recognition page, each rendered and read: `holomorphic-functions` (`cd06aa114`), `cauchy-theory` (`ae4df7c87`), `singularities` (`5e15fdf71`), `residues-and-contours` (`78c9cc7a6`, described in `dbbe898ad`), `counting-zeros` (`d1869aaea`), `conformal-maps` (`baa62f788`). `Cauchy`, `Zeros_and_poles`, `Omitted_values`, `Maps_of_the_disc` and `Conformal_maps` are gone; `Basics` holds the undergraduate layer and the reference tables under that name.
+  Remaining for this subject: the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`), and the `Quals`, `Exercises`, `Workshops` and `Resources` folders, which the table of contents replaces with the `problems:` query rather than moving.
 
 - [ ] Algebra.
 
