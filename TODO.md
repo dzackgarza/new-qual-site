@@ -1141,7 +1141,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Fixed: each page says what it is and links to the other.
   A guide is one ordered path read front to back; the wiki is notes filed to be looked up.
   `guides.html` shows each guide's own lede, which the manifests already carried and the page showed none of.
-  `wiki/index.html` is titled `Wiki`. Whether the site should carry both hierarchies at all is the next item, and still open.
+  `wiki/index.html` is titled `Wiki`. Both stay: the wiki is the study guide, and a guide is one path read through it. `AGENTS.md`, "The wiki is a textbook", settles it.
 
 - [x] Reconcile the four subject vocabularies.
   Browse filter: Algebra, Applied Algebra, Complex Analysis, Prelim, Real Analysis, Topology.
@@ -1205,7 +1205,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Merging is now exhausted: 8 identical-body groups are left and every one records the same statement at two sittings inside one compilation, which `f3a918092` dispositioned as keep-both.
   Title sharing is down from 375 groups over 836 pages to 315 over 739. For the rest, a search row said `Page` for both a wiki page and a guide section, so `Sylow Theorems` the wiki page and `Sylow Theory` the guide page were told apart only by the grey path.
   The row now names the surface -- Problem, Card, Wiki, Guide -- in the badge.
-  What is left is not merging: 315 groups hold different mathematics under one title, and separating those is retitling, one judgement per group, which belongs to the mathematics program under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2).
+  What is left is not retitling either.
+  A concept appears on its own page, again in a technique drilldown, and again in a compendium, and a study guide is better for it; the badge names the surface, which is what a reader needed.
+  Retitle a page when its title misnames what is on it. `Complex_Analysis/Maps_of_the_disc/Schwarz lemma.md` holds Blaschke factors and hyperbolic translations: that one is wrong.
+  Finding the rest is reading, one page at a time, under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2).
 
 - [x] Order and page the problem browser.
   `problems.html` sorts 4921 problems by raw title string, so the page opens with the formula-titled problems.
@@ -1266,7 +1269,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   The page never explains Guides against Wiki.
   Fixed: one sentence of scale, then each of the five header entries with what it is for.
   Guides and Wiki are separated by shape -- a path to read against notes to look a topic up -- which is what the two artifacts already are.
-  Whether the site should carry both remains open above.
+  Both stay, per `AGENTS.md`.
   Every figure is still counted off the catalog.
 
 ## 10. Repair wiki copy and organization
@@ -1275,7 +1278,9 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 ### Dead content
 
-- [ ] Delete the dead heading skeletons above the real content — 167 empty headings.
+- [ ] Resolve the 167 empty headings.
+  An empty heading is a section with nothing under it, which is either a heading list left above the content or a problem named and never transcribed.
+  Read each one and either write the section or remove the heading; the two are not distinguishable from the file.
   Several qual pages carry an old, fully-empty heading list, then repeat the same exams under a second naming scheme where the content actually lives.
   `wiki/Real_Analysis/Quals/Measure Theory.md` opens with 21 headings that render as empty `<h2>` (`## Spring 2020 # 2`, `## Fall 2019 # 3`, ...), then restarts at `## Fall 2021.3` where every heading has a card.
   Verified in the build: `build/quarto/_site/wiki/real-analysis/quals/measure-theory.html` emits all 21 as real headings.
@@ -1290,7 +1295,8 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Real_Analysis/Integration/Lp.md:46` — a `.proof` block whose whole body is `?`; `:176` — `\converges{??}\to 0`. `Complex_Analysis/Appendices/Appendix FTA Proofs.md:141` — `???`. `Algebra/Fields/Galois_Theory_Computations.md:30` — a stated fact ending "**(I think)**". `Complex_Analysis/Basics/Tips_Techs.md:34` — "Casorati-Weierstrass Theorem (no page yet)"; `:170` — "put it in the denominator!
   No one can stop you!"
 
-- [ ] Merge the duplicated content inside a single page.
+- [ ] Merge the duplicated content inside a single page, where reading both proves it is duplicated.
+  A shared name is not evidence: six complex analysis pages are titled Schwarz and they are three different subjects.
   `Real_Analysis/Basics/Notation.md` and `Notation_Real_Analysis.md` are the same 7-row table in the same directory.
   One is titled "Sup-norm notation", which describes only its first two rows.
   `Complex_Analysis/Basics/Tips_Techs.md:24-60` — "Greatest Hits" is two overlapping lists, the first a subset of the second, never merged.
@@ -1312,9 +1318,11 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   Both, plus `Algebra/index.md`, link to none of their own child pages, so landing on a subject gives no navigation.
   `Topology/index.md` puts `# References` as a second H1. Citation style differs four ways across those four pages.
   The Algebra one is broken: `> References: 1,3,4` appears five times, but the reference list renders as `[DuFo04] [HoKu71] [Hung74] [Smit]` — unnumbered, so the pointers resolve to nothing.
-  This is the item with a design choice in it: decide whether subject index pages carry the syllabus, the child-page navigation, or both, then make all six match.
+  A subject page opens a chapter: it tells a reader what the exam asks and where to start reading.
+  Decide that shape once and give all six the same one. The syllabus is a page of its own.
 
-- [ ] Fix the named-for-nothing organization.
+- [ ] File the content sitting under a heading that names nothing.
+  Renaming a section `Unsorted` to something else moves no mathematics. Each fragment needs the page it belongs on, which is the authoring in section 11.
   Six pages named `Preface`: four are acknowledgements, one is a Folland exercise list with no H1, one (`Topology/Basics/Preface.md`) is a full notation-and-background chapter.
   ~20 published sections named "Unsorted" or "Misc", including whole pages (`Complex_Analysis/Quals/Unsorted.md`, `Topology/Appendices/Appendix.md` → "Appendix: Unsorted Stuff"). `Archives/Tracking/index.md` lists 7 links for 5 subjects: Complex and Real each have two rival tracking pages, and the list mixes labeled links with unlabeled ones, so the duplicates read as separate topics.
 
