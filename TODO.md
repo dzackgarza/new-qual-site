@@ -1325,11 +1325,9 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Real_Analysis/Resources/Preface.md` — the Folland exercise lists run together with no separators and an unclosed paren: "...9 (in 9(c) you can use Exercise 1.29 without proof Exercises 10, 12, 13...". Unreadable as written.
   Also broken by paste-through: `Algebra/index.md` bullets end in stray commas and `⇒?`, use "Eigenstuff" / "$M/IM$ stuff" / "Bonus optional stuff", break list nesting after "such as:", and weeks 10–13 of the "study path" are empty workshop scheduling ("Buffer", "Buffer", "No meeting (Mock AMS)").
 
-
 ## 11. Reorganize the wiki
 
-Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30.
-Section 10 repairs the copy inside the current tree; this section replaces the tree.
+Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30. Section 10 repairs the copy inside the current tree; this section replaces the tree.
 
 ### What is there now (measured)
 
@@ -1350,8 +1348,7 @@ Section 10 repairs the copy inside the current tree; this section replaces the t
 
 ### The one structural fault
 
-The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**.
-Every subject folder holds all five.
+The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**. Every subject folder holds all five.
 
 The result is that one concept has many homes.
 Complex analysis files the Schwarz lemma and the Schwarz reflection principle across six pages in three folders.
@@ -1374,8 +1371,7 @@ One axis per level: `subject → concept area → note`. Sittings, institutions,
 
 ### The areas are the guide sections
 
-Each subject's concept areas are the section list of its guide in `publications/`.
-The guide and the wiki then share one spine and render it two ways: the guide reads front to back, the wiki files for lookup.
+Each subject's concept areas are the section list of its guide in `publications/`. The guide and the wiki then share one spine and render it two ways: the guide reads front to back, the wiki files for lookup.
 The sections already carry `query.topics`, so an area index and a guide section select the same problems without a second topic list.
 
 ### Page-kind contract
@@ -1394,7 +1390,8 @@ Rules that go with it:
 
 - Names are lowercase kebab-case, so the filename equals the emitted slug and a wikilink target reads like its URL.
 
-- `order` is a small integer, spaced by 10 within a folder. `100001` disappears.
+- `order` is a small integer, spaced by 10 within a folder.
+  `100001` disappears.
 
 - One `# H1` per page, equal to `title`.
 
@@ -1511,9 +1508,11 @@ Topology's `Basics/` and `Point_set/` are the same area under two names; they me
 
 ### Notes to write
 
-Two subjects have areas and no prose. Their cards exist; the notes do not.
+Two subjects have areas and no prose.
+Their cards exist; the notes do not.
 
-- **Applied algebra**: 278 cards, five areas, zero notes. The whole branch is to be written.
+- **Applied algebra**: 278 cards, five areas, zero notes.
+  The whole branch is to be written.
   `Applied_Algebra/` holds only an index and a source archive today.
 
 - **Prelim**: 280 cards, eleven areas, two notes (`Useful Tricks`, `Prelim Resources`).
@@ -1537,7 +1536,8 @@ This is the largest block of new writing in the reorganization, and it is the po
 | `Archives/{Card_Archives, Prelims_Source_Archive}` | `exams.html` | Duplicate |
 | `Archives/{Topics, Further Studying, Graduate_Topics, Solution Compendia}` | `wiki/reading/` | Real content, off the syllabus |
 
-The `Archives` branch ends. Nothing is left at `order: 90`.
+The `Archives` branch ends.
+Nothing is left at `order: 90`.
 
 ### The one code change this needs
 
