@@ -97,8 +97,8 @@ Some useful numerology that comes up when trying to estimate when poles fall wit
 
 \[
 x^2 + bx + c = 0 
-\iff x^2 + bx {\color{red\, + \qty{b\over 2}^2 - \qty{b\over 2}^2 } + c = 0 \\
-\iff \qty{x+ \qty{b\over 2}^2}^2 + \qty{c - \qty{b\over 2}^2} = 0
+\iff x^2 + bx {\color{red} \, + \qty{b\over 2}^2 - \qty{b\over 2}^2 } + c = 0 \\
+\iff \qty{x+ {b\over 2}}^2 + \qty{c - \qty{b\over 2}^2} = 0
 .\]
 
 More generally:
