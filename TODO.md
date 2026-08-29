@@ -1110,9 +1110,9 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Browse, Generate, and the problem browser's headings now call an area what the registry calls it, and offer the six in the registry's order.
   Applied Algebra now has a guide, per the owner's decision, so Guides covers all six areas and Workshops is the seventh entry rather than a substitute for one.
   It is built from problem panels: the subject has 247 problems and no definition, theorem or example cards, and the other five guides open each section with those.
-  Writing them is its own piece of mathematics and belongs under issue #2.
-  The registry is gone: the subjects are the wiki's top-level folders, so `Prelim` and `Prelims` cannot disagree any more -- the folder is the id and its title is the display name.
-  Workshops was never a subject; listing it beside the six is what made Guides and the wiki look like they disagreed. It sits under `Across the subjects` now, and the wiki goes on filing each workshop week under the subject it belongs to.
+  Writing them is its own piece of mathematics and belongs under issue #2. The registry is gone: the subjects are the wiki's top-level folders, so `Prelim` and `Prelims` cannot disagree any more -- the folder is the id and its title is the display name.
+  Workshops was never a subject; listing it beside the six is what made Guides and the wiki look like they disagreed.
+  It sits under `Across the subjects` now, and the wiki goes on filing each workshop week under the subject it belongs to.
   Browse, Generate, Guides and the Wiki offer the same six ids in the same order.
 
 ### Collections
