@@ -11,8 +11,8 @@ Books, problem lists, and solutions for the topology qual.
 
 - [[Topology/Resources/Topics|Topics]], the topic checklist.
 
-- [[Problems|Problems (Topology)]], the problem index.
+- [[Topology/Resources/Problems|Problems (Topology)]], the problem index.
 
-- [[Solutions|Solutions (Topology)]], the solution index.
+- [[Topology/Resources/Solutions|Solutions (Topology)]], the solution index.
 
 - [[Topology/Resources/Source_Archive|Topology Source Archive]], the imported exams by source.

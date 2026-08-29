@@ -11,7 +11,7 @@ Books, problem lists, and solutions for the complex-analysis qual.
 
 - [[Study Schedule and Topics|Study Schedule and Topics]], the reading plan; it still points at some notes under Appendices.
 
-- [[Problems|Problems (Complex)]], the problem index.
+- [[Complex_Analysis/Resources/Problems|Problems (Complex)]], the problem index.
 
 - [[Complex_Analysis/Resources/Solutions|Solutions (Complex)]], the solution index.
 

@@ -19,11 +19,11 @@ The first consequences:
 
 - [[Mean Value Theorem|The mean value theorem]].
 
-- [[Liouville|Liouville's Theorem]].
+- [[Complex_Analysis/Cauchy/Liouville|Liouville's Theorem]].
 
 - [[Identity Principle|The Identity/Continuation Principle]], analytic continuation.
 
-- [[Schwarz|Schwarz lemma]], the disc-mapping bound; the argument is $f(z)/z$ and maximum modulus.
+- [[Complex_Analysis/Cauchy/Schwarz|Schwarz lemma]], the disc-mapping bound; the argument is $f(z)/z$ and maximum modulus.
 
 - [[Schwarz reflection principle|Schwarz reflection principle]], the actual reflection across a segment.
 
@@ -31,4 +31,4 @@ The first consequences:
 
 - [[Maximum modulus principle|Maximum modulus principle]].
 
-- [[Exercises|Exercises]].
+- [[Complex_Analysis/Cauchy/Exercises|Exercises]].

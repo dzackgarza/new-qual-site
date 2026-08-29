@@ -13,13 +13,13 @@ Metric spaces, continuity, sequences, and the $\varepsilon\dash\delta$ layer the
 
 - [[Notation|Sup-norm notation]], the shorter table.
 
-- [[Definitions|Definitions]].
+- [[Real_Analysis/Basics/Definitions|Definitions]].
 
 - [[Basics|Theorems]], the theorem list: uniform continuity, sequences.
 
 - [[Sets|Sets and compactness]], compactness and smallness for sets and functions.
 
-- [[Continuity|Continuity]].
+- [[Real_Analysis/Basics/Continuity|Continuity]].
 
 - [[Sequences_Series|Sequences and Series]].
 
@@ -31,4 +31,4 @@ Metric spaces, continuity, sequences, and the $\varepsilon\dash\delta$ layer the
 
 - [[Integrability|Riemann Integrability]].
 
-- [[Counterexamples|Counterexamples]].
+- [[Real_Analysis/Basics/Counterexamples|Counterexamples]].

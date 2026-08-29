@@ -26,9 +26,9 @@ Problems sat at UGA, each under the sitting it came from.
 
 - [[Fields and Galois Theory|Galois theory]]
 
-- [[Modules|Modules]]
+- [[Algebra/Quals/Modules|Modules]]
 
-- [[Linear Algebra|Linear algebra: diagonalizability]]
+- [[Algebra/Quals/Linear Algebra|Linear algebra: diagonalizability]]
 
 - [[Linear Algebra_JCF|Linear algebra: canonical forms]]
 
@@ -51,10 +51,10 @@ The lists overlap each other.
 
 - [[Extra Problems Linear Algebra|Linear algebra]]
 
-- [[Extra|Linear algebra and Galois theory, after Pierce]]
+- [[Algebra/Quals/Extra|Linear algebra and Galois theory, after Pierce]]
 
-- [[Extra_Questions|Even more algebra questions]]
+- [[Algebra/Quals/Extra_Questions|Even more algebra questions]]
 
 ## Kept whole
 
-- [[2021_Fall|Fall 2021]], the one sitting held together rather than split by topic.
+- [[Algebra/Quals/2021_Fall|Fall 2021]], the one sitting held together rather than split by topic.

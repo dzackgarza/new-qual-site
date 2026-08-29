@@ -26,4 +26,4 @@ The real-part claim is the same identities applied to $u=\Re f$, or the observat
 
 :::
 
-The exercises for this section live on [[Exercises]].
+The exercises for this section live on [[Complex_Analysis/Cauchy/Exercises|Exercises]].

@@ -9,7 +9,7 @@ Isolated singularities, the argument principle, Rouché, and meromorphic functio
 
 Two parallel notes cover the classification:
 
-- [[Singularities|Isolated singularities]], by valuation, branch points, and the Laurent and limit tests.
+- [[Complex_Analysis/Zeros_and_poles/Singularities|Isolated singularities]], by valuation, branch points, and the Laurent and limit tests.
 
 - [[Zeros and Poles|Zeros, poles, and examples]].
 
@@ -17,7 +17,7 @@ Then:
 
 - [[Counting_Zeros_and_Poles_ArgPrinciple_Rouche|Counting Zeros and Poles]].
 
-- [[Argument Principle|Argument Principle]].
+- [[Complex_Analysis/Zeros_and_poles/Argument Principle|Argument Principle]].
 
 - [[Rouche|Rouché]].
 
@@ -29,4 +29,4 @@ Then:
 
 - [[Riemann removable singularity|Removable Singularities]].
 
-- [[Exercises|Exercises: Singularities]].
+- [[Complex_Analysis/Zeros_and_poles/Exercises|Exercises: Singularities]].

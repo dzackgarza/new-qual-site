@@ -15,7 +15,7 @@ Material off the subject study paths: source lists and reading past the syllabus
 
 - [[Qual Workshop Index]], the week-by-week workshop table of contents; the weeks themselves sit under each subject.
 
-- [[Topics]], undergraduate and prelim-level miscellany.
+- [[Archives/Topics|Topics]], undergraduate and prelim-level miscellany.
 
 - [[Further Studying|Further Studying]] and [[Graduate_Topics|Graduate Topics]], reading past the qual syllabus.
 

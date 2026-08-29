@@ -6,7 +6,7 @@ order: 8
 # Quals
 
 Past real-analysis qualifying exams, mostly by topic.
-[[Preface|Preface]] records thanks and how to find an exam on this page.
+[[Real_Analysis/Quals/Preface|Preface]] records thanks and how to find an exam on this page.
 
 ## By topic
 
@@ -22,11 +22,11 @@ Past real-analysis qualifying exams, mostly by topic.
 
 - [[Convolution and Fourier Analysis|$L^2$ and Fourier Analysis]].
 
-- [[Functional Analysis|Functional Analysis: General]].
+- [[Real_Analysis/Quals/Functional Analysis|Functional Analysis: General]].
 
 ## Kept whole
 
-- [[2021_Fall|Fall 2021]].
+- [[Real_Analysis/Quals/2021_Fall|Fall 2021]].
 
 - [[2021-10-30|Saturday, October 30]].
 
@@ -34,7 +34,7 @@ Past real-analysis qualifying exams, mostly by topic.
 
 ## Extra drill
 
-- [[Extra|Extras]].
+- [[Real_Analysis/Quals/Extra|Extras]].
 
 - [[Extra_Problems_MeasureTheory|Extra Problems: Measure Theory]].
 

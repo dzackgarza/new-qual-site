@@ -7,7 +7,7 @@ order: 2
 
 UGA-style prelims with writeups, one page per exam.
 
-- [[Fall 2014|Fall 2014]].
+- [[Prelim/Worked_Exams/Fall 2014|Fall 2014]].
 
 - [[Fall 2015|Fall 2015]].
 

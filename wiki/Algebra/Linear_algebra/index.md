@@ -9,15 +9,15 @@ Canonical forms, the spectral theorem in finite dimension, and the matrix groups
 
 The undergraduate base:
 
-- [[Definitions|Definitions]].
+- [[Algebra/Linear_algebra/Definitions|Definitions]].
 
 - [[Undergrad|Undergrad Review]].
 
 The subject proper:
 
-- [[Linear Algebra|Linear Algebra]], adjoints, inner products, and the SNF algorithm.
+- [[Algebra/Linear_algebra/Linear Algebra|Linear Algebra]], adjoints, inner products, and the SNF algorithm.
 
-- [[Polynomials|Polynomials in Linear Algebra]], the $F[t]\dash$module view.
+- [[Algebra/Linear_algebra/Polynomials|Polynomials in Linear Algebra]], the $F[t]\dash$module view.
 
 The three forms, and diagonalizability:
 
@@ -33,10 +33,10 @@ The $\mathrm{GL}_n$ layer:
 
 - [[Matrix_Groups|Matrix Groups]].
 
-- [[Counterexamples|Matrix Counterexamples]].
+- [[Algebra/Linear_algebra/Counterexamples|Matrix Counterexamples]].
 
 Drill:
 
 - [[Enumerating|Enumerating]].
 
-- [[Exercises|Exercises]].
+- [[Algebra/Linear_algebra/Exercises|Exercises]].

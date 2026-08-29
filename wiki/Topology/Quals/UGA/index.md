@@ -10,7 +10,7 @@ Past UGA topology exams, filed by topic.
 
 - [[General|General Topology]].
 
-- [[Fundamental Group|The Fundamental Group]].
+- [[Topology/Quals/UGA/Fundamental Group|The Fundamental Group]].
 
 - [[Covering Spaces|Covering Spaces]].
 

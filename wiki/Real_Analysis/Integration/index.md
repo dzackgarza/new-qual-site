@@ -15,4 +15,4 @@ Lebesgue integral, $L^1$ and $L^p$, Fubini--Tonelli, and the techniques used on 
 
 - [[Techniques]], the bag of tricks.
 
-- [[Counterexamples|Counterexamples]], the usual pathologies: uniqueness of the integral, missing hypotheses.
+- [[Real_Analysis/Integration/Counterexamples|Counterexamples]], the usual pathologies: uniqueness of the integral, missing hypotheses.
