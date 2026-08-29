@@ -1327,14 +1327,13 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 ## 11. Reorganize the wiki
 
-Evidence: a structural read of `wiki/` (367 pages), `corpus/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30.
-Filed verbatim as proposed.
+Evidence: a structural read of `wiki/` (367 pages), `corpus/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30. Filed verbatim as proposed.
 Section 10 repairs the copy inside the current tree; this section replaces the tree.
 
 ### What is there now (measured)
 
 | Kind of page | Count | Share |
-|---|---:|---:|
+| --- | ---: | ---: |
 | `index.md` navigation stubs | 70 | 19% |
 | `Quals/` hand-listed problem indexes | 90 | 25% |
 | `Resources/` (bibliography, source archives) | 24 | 7% |
@@ -1343,19 +1342,31 @@ Section 10 repairs the copy inside the current tree; this section replaces the t
 | `Appendices/` + `Workshops/` + `Review/` | 24 | 6% |
 | **Mathematical notes** | **127** | **35%** |
 
-4,051 card references. 115 pages are more link than text. 120 filenames contain spaces, 75 contain underscores. 69 pages carry `order: 100001` — the marker for "no place in the tree".
+4,051 card references.
+115 pages are more link than text.
+120 filenames contain spaces, 75 contain underscores.
+69 pages carry `order: 100001` — the marker for "no place in the tree".
 
 ### The one structural fault
 
 The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**. Every subject folder holds all five.
 
-The result is that one concept has many homes. Complex analysis files the Schwarz lemma and the Schwarz reflection principle across six pages in three folders. The maximum modulus principle has three. Rouché has four. Argument principle has two. UCSD Fall 2014 exists twice — `Topology/Quals/UCSD/UCSD_Fall 2014.md` (card links) and `Topology/Quals/UCSD/Quals/Old/Fall 2014.md` (the raw pre-import copy), at depth 3 and depth 5.
+The result is that one concept has many homes.
+Complex analysis files the Schwarz lemma and the Schwarz reflection principle across six pages in three folders.
+The maximum modulus principle has three.
+Rouché has four.
+Argument principle has two.
+UCSD Fall 2014 exists twice — `Topology/Quals/UCSD/UCSD_Fall 2014.md` (card links) and `Topology/Quals/UCSD/Quals/Old/Fall 2014.md` (the raw pre-import copy), at depth 3 and depth 5.
 
-Worse, two of those five axes are **already data**. `corpus/collections/*/index.md` records institution, term, and the ordered problem list. Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data. The 90 `Quals/` pages are a third, hand-typed copy that drifts.
+Worse, two of those five axes are **already data**. `corpus/collections/*/index.md` records institution, term, and the ordered problem list.
+Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
+The 90 `Quals/` pages are a third, hand-typed copy that drifts.
 
 ### The principle
 
-> **The wiki owns prose. The corpus owns problems. The wiki never hand-lists what the corpus can generate.**
+> **The wiki owns prose.
+> The corpus owns problems.
+> The wiki never hand-lists what the corpus can generate.**
 
 One axis per level: `subject → concept area → note`. Sittings, institutions, and course weeks leave the tree.
 
@@ -1364,7 +1375,7 @@ One axis per level: `subject → concept area → note`. Sittings, institutions,
 Only three kinds of page may exist:
 
 | Kind | Path | Content rule |
-|---|---|---|
+| --- | --- | --- |
 | **Index** | `*/index.md` | One orientation paragraph, then links to its children. No mathematics. |
 | **Note** | `<subject>/<area>/<name>.md` | One concept. Definitions, statements, proofs, technique. Problems come from a query, not from typing. |
 | **Register** | `<subject>/{syllabus,references}.md` | The official topic list; the books and links. One of each per subject, never a folder. |
@@ -1372,8 +1383,12 @@ Only three kinds of page may exist:
 Rules that go with it:
 
 - Depth is capped at 3. Today 39 pages sit deeper.
+
 - Names are lowercase kebab-case, so the filename equals the emitted slug and a wikilink target reads like its URL.
-- `order` is a small integer, spaced by 10 within a folder. `100001` disappears.
+
+- `order` is a small integer, spaced by 10 within a folder.
+  `100001` disappears.
+
 - One `# H1` per page, equal to `title`.
 
 ### Sample tree: Complex Analysis, in full
@@ -1473,12 +1488,14 @@ wiki/
                        degree-and-fixed-points · surfaces-and-manifolds
 ```
 
-Two subject-level changes worth naming. Algebra's `Fields/` currently holds both field theory and Galois computation; these split, because the syllabus, the guide, and the problem topics all treat them separately. Topology's `Basics/` and `Point_set/` are the same area under two names; they merge.
+Two subject-level changes worth naming.
+Algebra's `Fields/` currently holds both field theory and Galois computation; these split, because the syllabus, the guide, and the problem topics all treat them separately.
+Topology's `Basics/` and `Point_set/` are the same area under two names; they merge.
 
 ### Disposition of everything the tree holds now
 
 | Today | Goes to | Why |
-|---|---|---|
+| --- | --- | --- |
 | `*/Quals/<topic>.md` (≈70) | a query block on the concept note | The topics are on the cards already |
 | `*/Quals/<sitting>.md` (≈20) | `/exam/<collection>` | The collection records the sitting and its problem order |
 | `Topology/Quals/{UCSD,UGA}/**` | `/exam/` | Institution is a card field, not a folder |
@@ -1493,11 +1510,13 @@ Two subject-level changes worth naming. Algebra's `Fields/` currently holds both
 | `Archives/{Topics, Further Studying, Graduate_Topics, Solution Compendia}` | `wiki/reading/` | Real content, off the syllabus |
 | `Applied_Algebra/` (3, no notes) | no wiki branch | It is a source archive with a guide, not a set of notes |
 
-The `Archives` branch ends. Nothing is left at `order: 90`.
+The `Archives` branch ends.
+Nothing is left at `order: 90`.
 
 ### The one code change this needs
 
-Ninety pages exist only to type out problem lists. Replace them with a query in the note's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
+Ninety pages exist only to type out problem lists.
+Replace them with a query in the note's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
 
 ```yaml
 ---
@@ -1508,25 +1527,32 @@ problems:
 ---
 ```
 
-`emit.py` renders "Problems on this topic (N)" at the foot of the page from the corpus index. The list stops drifting, and it never has to be re-typed when a card is added.
+`emit.py` renders "Problems on this topic (N)" at the foot of the page from the corpus index.
+The list stops drifting, and it never has to be re-typed when a card is added.
 
-One caveat: the corpus has 668 distinct topic strings and 166 of them appear exactly once. A query spine needs a curated topic list — roughly 20 per subject — mapped onto that folksonomy. That is its own job, and it should happen before the query blocks go in, not after.
+One caveat: the corpus has 668 distinct topic strings and 166 of them appear exactly once.
+A query spine needs a curated topic list — roughly 20 per subject — mapped onto that folksonomy.
+That is its own job, and it should happen before the query blocks go in, not after.
 
 ### Migration order
 
 Each step ships on its own.
 
-- [ ] 1. **Record the redirect map.** All 367 routes change, because `_route()` slugs the source path. Emit a stub for each old route, or accept the breakage deliberately.
+- [ ] 1. **Record the redirect map.** All 367 routes change, because `_route()` slugs the source path.
+  Emit a stub for each old route, or accept the breakage deliberately.
 
 - [ ] 2. **Curate the topic list** (≈120 topics across six subjects) and map the 668 raw strings onto it.
 
-- [ ] 3. **Add the `problems:` query block**, then delete the 90 `Quals/` pages and the source-archive pages. The wiki drops by a third and loses nothing.
+- [ ] 3. **Add the `problems:` query block**, then delete the 90 `Quals/` pages and the source-archive pages.
+  The wiki drops by a third and loses nothing.
 
 - [ ] 4. **Lift the writeups** — PSets, worked exams, workshop notes — into the corpus or into the concept notes.
 
-- [ ] 5. **Rename and reparent** to the three-level kebab-case tree. The wikilink resolver fails loudly on an ambiguous target, which is the safety net for this step.
+- [ ] 5. **Rename and reparent** to the three-level kebab-case tree.
+  The wikilink resolver fails loudly on an ambiguous target, which is the safety net for this step.
 
-- [ ] 6. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out. This closes the `TODO.md` §10 item that says six subjects have five shapes.
+- [ ] 6. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out.
+  This closes the `TODO.md` §10 item that says six subjects have five shapes.
 
 - [ ] 7. **Retire `Archives`.**
 
