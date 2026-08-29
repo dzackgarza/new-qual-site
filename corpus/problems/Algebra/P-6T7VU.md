@@ -12,61 +12,58 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: problem
-**Lemma:**
-If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
+Let $R$ be a Principal Ideal Domain (PID), and let $r, s \in R \setminus \{0\}$ be non-zero elements.
+Determine the **invariant factors** of the $R$-module:
+$$M = R/(r) \oplus R/(s).$$
+:::
 
-**Lemma:**
-Let $A$ be a cyclic module, so $A = Ra$. If the order of $A$ is $r$, so $\mathcal O_a = (r)$, then $A \cong R/(r)$.
+::: solution
+**Goal:** Prove that the invariant factors of $R/(r) \oplus R/(s)$ are $d_1 = \gcd(r, s)$ and $d_2 = \operatorname{lcm}(r, s)$ with $d_1 \mid d_2$.
 
-This means that we can write $A = R/(a)$ and $B = R/(b)$, and $a, b$ are the invariant factors of $A, B$ respectively, and $M\definedas A \oplus B \cong R/(ab)$.
+<1>1. Elementary Divisors via Prime Factorization:
+    *Proof:*
+    <2>1. Since $R$ is a PID, it is a Unique Factorization Domain (UFD).
+    <2>2. Let $\{p_1, p_2, \dots, p_k\}$ be the set of all distinct irreducible elements (primes up to units) dividing $r$ or $s$.
+    <2>3. Write the prime factorizations (up to units):
+        $$r = u \prod_{i=1}^k p_i^{a_i}, \qquad s = v \prod_{i=1}^k p_i^{b_i}$$
+        where $u, v \in R^\times$ are units and $a_i, b_i \ge 0$ are non-negative integers.
+    <2>4. By the **Chinese Remainder Theorem for PIDs**, each cyclic module decomposes into primary cyclic components:
+        $$R/(r) \cong \bigoplus_{i=1}^k R/(p_i^{a_i}), \qquad R/(s) \cong \bigoplus_{i=1}^k R/(p_i^{b_i}).$$
+    <2>5. Taking the direct sum, the module $M$ decomposes into its primary components:
+        $$M = R/(r) \oplus R/(s) \cong \bigoplus_{i=1}^k \left( R/(p_i^{a_i}) \oplus R/(p_i^{b_i}) \right).$$
+    <2>6. Thus the **elementary divisors** of $M$ are the prime powers $\{p_i^{a_i}, p_i^{b_i} \mid a_i > 0 \text{ or } b_i > 0\}$.
 
-Since $R$ is a PID, there is unique factorization, so we can write
-\[
-\begin{align*}
-r &= \prod_{i=1}^n p_i^{k_i} \\
-s &= \prod_{i=1}^n p_i^{\ell_i} \\
-\implies rs &= \prod_{i=1}^n p_i^{k_i + \ell_i},
-\end{align*}
-\]
+<1>2. Assembling Invariant Factors from Elementary Divisors:
+    *Proof:*
+    <2>1. By the Structure Theorem for finitely generated torsion modules over a PID, the invariant factors $d_1 \mid d_2 \mid \cdots \mid d_m$ are reconstructed from the elementary divisors by grouping the prime power factors:
+        - The largest invariant factor $d_{\max} = d_2$ takes the **highest power** of each prime appearing among the primary components:
+          $$d_2 \coloneqq \prod_{i=1}^k p_i^{\max(a_i, b_i)} = \operatorname{lcm}(r, s).$$
+        - The remaining powers for each prime are allocated to the second invariant factor $d_1$:
+          $$d_1 \coloneqq \prod_{i=1}^k p_i^{\min(a_i, b_i)} = \gcd(r, s).$$
+    <2>2. Since $\min(a_i, b_i) \le \max(a_i, b_i)$ for every $i \in \{1, \dots, k\}$, the divisibility condition holds:
+        $$d_1 \mid d_2 \quad (\gcd(r, s) \mid \operatorname{lcm}(r, s)).$$
+    <2>3. By the Chinese Remainder Theorem:
+        $$R/(d_1) \cong \bigoplus_{i=1}^k R/(p_i^{\min(a_i, b_i)}), \qquad R/(d_2) \cong \bigoplus_{i=1}^k R/(p_i^{\max(a_i, b_i)}).$$
+    <2>4. Thus:
+        $$M \cong R/(d_1) \oplus R/(d_2) = R/(\gcd(r, s)) \oplus R/(\operatorname{lcm}(r, s)).$$
 
-where we allow some $k_i, \ell_i = 0$ so that we can take the product over the same set of primes.
+<1>3. Alternative Presentation Matrix Method (Smith Normal Form):
+    *Proof:*
+    <2>1. The module $M = R/(r) \oplus R/(s)$ has presentation matrix $A = \begin{bmatrix} r & 0 \\ 0 & s \end{bmatrix}$.
+    <2>2. The determinantal divisors of $A$ are:
+        - $\Delta_1 = \gcd(r, 0, 0, s) = \gcd(r, s)$.
+        - $\Delta_2 = \det(A) = rs = u \cdot \gcd(r, s) \cdot \operatorname{lcm}(r, s)$.
+    <2>3. The invariant factors from the determinantal divisors are:
+        - $d_1 = \Delta_1 = \gcd(r, s)$.
+        - $d_2 = \Delta_2 / \Delta_1 = \operatorname{lcm}(r, s)$.
 
-However, means that the elementary divisors of $M$ are given by the multiset $L \definedas \theset{p_i^{k_i}} \union \theset{p_i^{\ell_i}}$.
-
-The largest invariant factor $d_1$ of $M$ is obtained from the elementary divisors
-by 
-
-a. Forming the multiset $L$ of elementary divisors,
-b. Selecting the highest power of each prime occurring, say $s_i \definedas p_i^{\max(k_i, \ell_i)}$,
-c. Removing $s_i$ from $L$,
-d. Then letting $d_1 = \prod s_i$.
-
-However, this process yields $d_1 = \mathrm{lcm}(r, s)$ by construction, since 
-$$
-d_1 = \prod_{i=1}^n s_i = \prod_{i=1}^n p_i^{\max(k_i, \ell_i)} \definedas \mathrm{lcm}(r_s).
-$$
-
-The next largest invariant factor is obtained by performing the same process on the remaining prime powers in $L$.
-However, we can note that after obtaining $d_1$, we have $L = \theset{p_i^{\min(k_i, \ell_i)}}$, since **there were only two choices** for each $p_i$ occurring and we chose the copy with the maximal exponent.
-
-But this means when we perform step (b) to obtain $d_2$, **there is now only one choice**, and thus each $s_i = p_i^{\min(k_i, \ell_i)}$ and we have
-$$
-d_2 = \prod_{i=1}^n s_i = \prod_i p_i^{\min(k_i, \ell_i)} \definedas \gcd(r, s).
-$$
-
-> Note: by construction, $d_2 \divides d_1$, since we are choosing from the same prime powers but with smaller exponents.
-
-Since there were only at most two copies of each prime occurring in $L$, where one of them was chosen for $d_1$ and the other was chosen for $d_2$, this exhausts all of the elements in $L$. But this means $M$ has only two invariant divisors,
-\[
-\begin{align*}
-d_1 &= \lcm(r, s) \\
-d_2 &= \gcd(r, s)
-,\end{align*}
-\]
-
-which is what we wanted to show.
-$\qed$
+<1>4. Conclusion:
+    The invariant factors of $R/(r) \oplus R/(s)$ are $d_1 = \gcd(r, s)$ and $d_2 = \operatorname{lcm}(r, s)$. Q.E.D.
 :::
