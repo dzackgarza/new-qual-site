@@ -1,5 +1,7 @@
 ---
 order: 20
+problems:
+  topics: [Sylow Theory, Sylow Theorems]
 ---
 
 # Sylow Theorems

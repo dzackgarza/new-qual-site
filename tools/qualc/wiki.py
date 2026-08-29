@@ -53,6 +53,29 @@ def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
     return Diagnostic(DiagnosticCode.READER_WARNING, str(path), warning)
 
 
+@dataclass(frozen=True)
+class ProblemsQuery:
+    """The problems a page claims, named by rule instead of one id at a time.
+
+    A wiki page could only name cards by writing each id out, so the folders
+    that list the problems on a topic are a hand-typed copy of what the cards
+    already record, and they drift as soon as a card is added or reclassified.
+    This is the same rule a study-guide manifest gets from `PublicationQuery`,
+    with two differences the wiki forces:
+
+    Every match is rendered. A guide panel is an excerpt inside a longer
+    section and states how long it is; a topic page is the list, and a limit on
+    it would drop problems the page claims to hold without saying so.
+
+    Provenance does not narrow it. A card is an `exercise` rather than a
+    `problem` when it came from a book or a worksheet, which says where it was
+    written down and nothing about what it asks, so a reader drilling a topic
+    wants both.
+    """
+
+    topics: tuple[str, ...]
+
+
 @dataclass
 class WikiPage:
     source_path: Path
@@ -62,6 +85,7 @@ class WikiPage:
     order: int
     blocks: list[pf.Block]
     search_text: str
+    problems: ProblemsQuery | None
 
 
 # Obsidian anchors a block by putting `^<id>` on the line after it. Pandoc has
@@ -183,6 +207,24 @@ def _order(metadata: dict[str, object], path: Path) -> int | Diagnostic:
     return value
 
 
+def _problems(metadata: dict[str, object], path: Path) -> ProblemsQuery | None | Diagnostic:
+    """The `problems:` block, or nothing when the page does not claim any."""
+    if "problems" not in metadata:
+        return None
+    block = metadata["problems"]
+    invalid = Diagnostic(
+        DiagnosticCode.PAGE_PROBLEMS_QUERY_INVALID,
+        str(path),
+        "problems must be a mapping with a non-empty topics list of strings",
+    )
+    if not isinstance(block, dict) or set(block) != {"topics"}:
+        return invalid
+    topics = block["topics"]
+    if not isinstance(topics, list) or not topics or not all(isinstance(topic, str) and topic for topic in topics):
+        return invalid
+    return ProblemsQuery(topics=tuple(cast(list[str], topics)))
+
+
 # `[[page]]: some words` reads to Markdown as a link reference definition --
 # `[` followed by `[page]: some words` -- so the reader consumes the line and
 # the item renders empty. The words are not dropped by a filter here; they never
@@ -274,6 +316,10 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             if isinstance(order, Diagnostic):
                 errors.append(order)
                 continue
+            problems = _problems(metadata, path)
+            if isinstance(problems, Diagnostic):
+                errors.append(problems)
+                continue
             parsed.append(
                 WikiPage(
                     source_path=path,
@@ -283,6 +329,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                     order=order,
                     blocks=_without_first_title(document),
                     search_text=pf.stringify(document).strip(),
+                    problems=problems,
                 )
             )
     if restored:

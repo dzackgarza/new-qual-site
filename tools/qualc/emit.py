@@ -78,6 +78,7 @@ from .wiki import (
     WIKI_BATCH_SIZE,
     WikiPage,
     incoming_wiki_links,
+    slug,
     wiki_card_mentions,
 )
 from .wiki import (
@@ -703,7 +704,37 @@ def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row])
     return list(pf.Doc(*blocks).walk(visit).content)
 
 
-def _wiki_blocks(page: WikiPage, incoming: list[WikiPage], cards: dict[str, sqlite3.Row]) -> list[pf.Block]:
+PROBLEMS_PANEL_HEADING = "Problems"
+
+
+def _problems_panel(hits: list[sqlite3.Row], inline_cache: dict[str, list[pf.Inline]]) -> pf.Div:
+    """The problems a `problems:` page claims, listed at its foot."""
+    return pf.Div(
+        pf.Header(*_inlines(PROBLEMS_PANEL_HEADING, inline_cache), level=2),
+        pf.BulletList(
+            *[
+                pf.ListItem(
+                    pf.Plain(
+                        pf.Link(*_inlines(hit["title"], inline_cache), url=hit["id"]),
+                        pf.Space(),
+                        pf.Code(hit["id"]),
+                    )
+                )
+                for hit in hits
+            ]
+        ),
+        classes=["panel", "page-problems"],
+        attributes={"count": str(len(hits))},
+    )
+
+
+def _wiki_blocks(
+    page: WikiPage,
+    incoming: list[WikiPage],
+    cards: dict[str, sqlite3.Row],
+    problems: list[sqlite3.Row],
+    inline_cache: dict[str, list[pf.Inline]],
+) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
     Only the card path ran `_rename`, so every `:::{.remark}`, `:::{.proof}`
@@ -713,6 +744,8 @@ def _wiki_blocks(page: WikiPage, incoming: list[WikiPage], cards: dict[str, sqli
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
     blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
+    if problems:
+        blocks.append(_problems_panel(problems, inline_cache))
     html_block = _wiki_incoming_html(incoming)
     if html_block:
         blocks.append(pf.RawBlock(html_block, format="html"))
@@ -1339,6 +1372,59 @@ def run_query(
     sql += " order by c.title limit ?"
     args.append(query.limit)
     return _rows(con, sql, tuple(args))
+
+
+# A card is an `exercise` rather than a `problem` when it was written down in a
+# book or on a worksheet instead of sat at an exam. That is provenance, and a
+# reader drilling a topic wants the problems on it either way.
+PROBLEM_KINDS = ("problem", "exercise")
+
+
+def run_page_problems(con: sqlite3.Connection, area: str, topics: tuple[str, ...]) -> list[sqlite3.Row]:
+    """Every problem in one subject carrying any of these topics.
+
+    The wiki counterpart of `run_query`, and unlimited where that one is not:
+    a guide panel excerpts, a topic page lists. See `ProblemsQuery`.
+    """
+    placeholders = ",".join("?" * len(topics))
+    kinds = ",".join("?" * len(PROBLEM_KINDS))
+    return _rows(
+        con,
+        f"""
+        select distinct c.* from cards c
+        join classifications a on a.card_id=c.id and a.axis='area' and a.term=?
+        join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({placeholders})
+        where c.kind in ({kinds})
+        order by c.title
+        """,
+        (area, *topics, *PROBLEM_KINDS),
+    )
+
+
+def resolve_page_problems(con: sqlite3.Connection, pages: list[WikiPage]) -> dict[str, list[sqlite3.Row]]:
+    """Each page's `problems:` block, resolved against the corpus.
+
+    A page is scoped to the subject it is filed under, which is its top-level
+    folder and already what a card's `area` names, so a topic that two subjects
+    share cannot pull the other one's problems onto the page.
+
+    A query that matches nothing fails the build. The page claims to hold the
+    problems on a topic, and an empty panel under that claim is the drift this
+    block exists to end -- a misspelled topic would otherwise read as a subject
+    with nothing written on it yet.
+    """
+    resolved: dict[str, list[sqlite3.Row]] = {}
+    for page in pages:
+        key = page.source_rel.as_posix()
+        if page.problems is None:
+            resolved[key] = []
+            continue
+        area = slug(page.source_rel.parts[0])
+        hits = run_page_problems(con, area, page.problems.topics)
+        if not hits:
+            raise ValueError(f"problems query has no matches in area {area}: wiki/{key}")
+        resolved[key] = hits
+    return resolved
 
 
 # --- pages ------------------------------------------------------------------
@@ -2303,6 +2389,7 @@ def project(
             ACROSS_SUBJECTS_LEDE,
         ]
     )
+    inline_values.append(PROBLEMS_PANEL_HEADING)
     inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
@@ -2489,11 +2576,18 @@ def project(
     if wiki_pages:
         cards = {row["id"]: row for row in _rows(con, "select * from cards")}
         wiki_navigation = _wiki_navigation(wiki_pages)
+        page_problems = resolve_page_problems(con, wiki_pages)
         wiki_items: list[PageItem] = [
             (
                 (
                     {"title": page.title},
-                    _wiki_blocks(page, incoming_pages[page.route.as_posix()], cards),
+                    _wiki_blocks(
+                        page,
+                        incoming_pages[page.route.as_posix()],
+                        cards,
+                        page_problems[page.source_rel.as_posix()],
+                        inline_cache,
+                    ),
                 ),
                 out / page.route.with_suffix(".qmd"),
                 _wiki_chrome(wiki_navigation, page),

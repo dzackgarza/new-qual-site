@@ -1035,3 +1035,81 @@ def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
     assert "../../../guides.html" in body.hrefs
     assert "../../../problems.html" in body.hrefs
     assert (site / "guides.html").exists()
+
+
+TOPOLOGY_PROBLEM = """---
+schema: qual/card@1
+id: PRB-COVERGROUP
+kind: problem
+title: Deck transformations of a regular cover
+classification:
+  areas:
+  - topology
+  topics:
+  - Groups
+relations: []
+review: draft
+---
+
+::: problem
+Show the deck group of a regular cover acts simply transitively on each fibre.
+:::
+"""
+
+
+def problems_panel_ids(html: str) -> list[str]:
+    """The card ids the `problems:` panel lists, in the order it lists them."""
+    panel = html.split('page-problems', 1)[1] if "page-problems" in html else ""
+    return re.findall(r"tag/([A-Z]+-[A-Z0-9]+)\.html", panel)
+
+
+def test_a_problems_query_lists_every_problem_on_its_topic_in_its_own_subject(tmp_path: Path) -> None:
+    """A page names the problems it holds by rule, and the rule is resolved here.
+
+    Three claims the hand-typed lists could not make. Every match is rendered,
+    so the page cannot quietly hold fewer problems than the corpus classifies
+    under it. Provenance does not narrow the panel: `PRB-INDEXP` was sat at an
+    exam and `EXE-CENTER` was set as an exercise, and a reader drilling groups
+    wants both. The subject scopes it: `PRB-COVERGROUP` carries the same topic
+    under topology and must not reach an algebra page.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "PRB-COVERGROUP.md").write_text(TOPOLOGY_PROBLEM)
+    (work / "wiki" / "Algebra" / "groups.md").write_text(
+        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Groups]\n---\n\n# Groups\n\nThe chapter.\n"
+    )
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    # Ordered by title: "Show a subgroup ..." before "The centre of ...".
+    assert problems_panel_ids((site / "wiki" / "algebra" / "groups.html").read_text()) == ["PRB-INDEXP", "EXE-CENTER"]
+    # A page that claims no problems grows no panel.
+    assert problems_panel_ids((site / "wiki" / "index.html").read_text()) == []
+
+
+def test_build_refuses_a_problems_query_that_matches_nothing(tmp_path: Path) -> None:
+    """An empty panel would read as a topic nobody has written problems for.
+
+    The page claims to hold the problems on a topic. A misspelled topic, or one
+    that belongs to another subject, is the drift this block exists to end, so
+    it stops the build instead of rendering the claim with nothing under it.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "Algebra" / "groups.md").write_text(
+        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Sheaf Cohomology]\n---\n\n# Groups\n\nThe chapter.\n"
+    )
+
+    result = run("build", work)
+    assert result.returncode != 0
+    assert not (work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups.html").exists()
+
+
+def test_check_rejects_a_problems_query_that_is_not_a_topic_list(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "Algebra" / "groups.md").write_text(
+        "---\ntitle: Groups\norder: 2\nproblems:\n  topics: Groups\n---\n\n# Groups\n\nThe chapter.\n"
+    )
+
+    assert DiagnosticCode.PAGE_PROBLEMS_QUERY_INVALID in diagnostic_codes(work)
