@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-5231 problem and exercise cards have no solution section and no incoming
+5230 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,13 +11,12 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1628
+- Exercises: 1627
 - Problems: 3603
-- Total: 5231
+- Total: 5230
 
-## Exercises (1628)
+## Exercises (1627)
 
-- [ ] E-AMD-LDJWILVY — "If $H\le N_G(K)$ then $HK$ is a subgroup"
 - [ ] E-AMD-LJNBDMIP — "A permutation is odd iff it has an odd number of even cycles"
 - [ ] E-AMD-LSAG5UZT — "Groups of order $p^3$ have a normal subgroup of order $p^2$"
 - [ ] E-AMD-NY3QKBRB — "Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$"
