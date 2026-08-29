@@ -964,6 +964,22 @@ def _prompts_json(card: sqlite3.Row) -> list[dict]:
     return [{"t": "RawBlock", "c": ["html", f'<div class="review-question">{html.escape(prompt)}</div>']} for prompt in cast(list[str], json.loads(card["prompts"]))]
 
 
+def _hints_before_solutions(body: list[dict], hints: list[dict]) -> list[dict]:
+    """A hint is only a hint while the answer is still hidden.
+
+    A problem that writes its own solution into its body, and also carries a
+    hint card, showed the solution above the hint. The hints go in front of the
+    first solution the body already holds, not after everything.
+    """
+    if not hints:
+        return body
+    for position, block in enumerate(body):
+        classes = block.get("c", [[None, [], []]])[0][1] if block.get("t") == "Div" else []
+        if "qual-solution" in classes:
+            return body[:position] + hints + body[position:]
+    return body + hints
+
+
 def _dup[T](value: T) -> T:
     return copy.deepcopy(value)
 
@@ -983,11 +999,14 @@ def problem_json(
 
     body = _dup(jcache[card["id"]])
     _rename_json(body)
-    for kind in ("hints-at", "solves"):
+    hints: list[dict] = []
+    solutions: list[dict] = []
+    for kind, into in (("hints-at", hints), ("solves", solutions)):
         for rel in _related_rows(data, card["id"], kind):
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
-            body += rb
+            into += rb
+    body = _hints_before_solutions(body, hints) + solutions
     body.extend(_prompts_json(card))
     body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
