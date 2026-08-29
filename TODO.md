@@ -1325,9 +1325,10 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Real_Analysis/Resources/Preface.md` — the Folland exercise lists run together with no separators and an unclosed paren: "...9 (in 9(c) you can use Exercise 1.29 without proof Exercises 10, 12, 13...". Unreadable as written.
   Also broken by paste-through: `Algebra/index.md` bullets end in stray commas and `⇒?`, use "Eigenstuff" / "$M/IM$ stuff" / "Bonus optional stuff", break list nesting after "such as:", and weeks 10–13 of the "study path" are empty workshop scheduling ("Buffer", "Buffer", "No meeting (Mock AMS)").
 
+
 ## 11. Reorganize the wiki
 
-Evidence: a structural read of `wiki/` (367 pages), `corpus/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30. Filed verbatim as proposed.
+Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30.
 Section 10 repairs the copy inside the current tree; this section replaces the tree.
 
 ### What is there now (measured)
@@ -1349,7 +1350,8 @@ Section 10 repairs the copy inside the current tree; this section replaces the t
 
 ### The one structural fault
 
-The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**. Every subject folder holds all five.
+The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**.
+Every subject folder holds all five.
 
 The result is that one concept has many homes.
 Complex analysis files the Schwarz lemma and the Schwarz reflection principle across six pages in three folders.
@@ -1370,6 +1372,12 @@ The 90 `Quals/` pages are a third, hand-typed copy that drifts.
 
 One axis per level: `subject → concept area → note`. Sittings, institutions, and course weeks leave the tree.
 
+### The areas are the guide sections
+
+Each subject's concept areas are the section list of its guide in `publications/`.
+The guide and the wiki then share one spine and render it two ways: the guide reads front to back, the wiki files for lookup.
+The sections already carry `query.topics`, so an area index and a guide section select the same problems without a second topic list.
+
 ### Page-kind contract
 
 Only three kinds of page may exist:
@@ -1386,8 +1394,7 @@ Rules that go with it:
 
 - Names are lowercase kebab-case, so the filename equals the emitted slug and a wikilink target reads like its URL.
 
-- `order` is a small integer, spaced by 10 within a folder.
-  `100001` disappears.
+- `order` is a small integer, spaced by 10 within a folder. `100001` disappears.
 
 - One `# H1` per page, equal to `title`.
 
@@ -1470,27 +1477,48 @@ wiki/complex-analysis/
     └── analytic-number-theory.md  ← Basics/Analytic_NT
 ```
 
-Leaving the wiki: all 34 `Quals/` pages, `Exercises/` (2), `Workshops/` (3), `Resources/Source_Archive`, and the three wrapper pages with no subject — `Basics/Tips_Techs`, `Appendices/Appendix Unsorted`, `Quals/Unsorted`. Their sentences move into the note each one belongs to; the wrappers are deleted.
+The 34 `Quals/` pages become query blocks.
+`Exercises/` (2), `Workshops/` (3), and `Resources/Source_Archive` move to the corpus.
+`Basics/Tips_Techs`, `Appendices/Appendix Unsorted`, and `Quals/Unsorted` name no subject: each sentence moves into the note it belongs to, and the wrapper page ends.
 
-### The other subjects, as area lists
+### The six subjects, as area lists
+
+Each list is the section list of that subject's guide.
 
 ```
 wiki/
 ├── index.md
-├── prelim/            techniques · logic-and-proof · limits · linear-algebra ·
-│                      groups-rings-fields
+├── prelim/            logic-and-proof · limits-and-continuity · integration-techniques ·
+│                      sequences-and-series · multivariable-calculus · linear-algebra ·
+│                      groups · rings-and-modules · fields-and-galois ·
+│                      complex-numbers · counterexamples
 ├── algebra/           groups · rings · modules · fields · galois ·
 │                      linear-algebra · representations
 ├── real-analysis/     undergraduate · measure · integration · lp-spaces ·
 │                      fourier · functional-analysis
 ├── complex-analysis/  (above)
-└── topology/          point-set · homotopy · cw-complexes · homology ·
-                       degree-and-fixed-points · surfaces-and-manifolds
+├── topology/          point-set · homotopy · cw-complexes · homology ·
+│                      degree-and-fixed-points · surfaces-and-manifolds
+└── applied-algebra/   matrix-analysis · representation-theory · symmetric-functions ·
+                       grobner-bases-and-varieties · invariant-theory
 ```
+
+Prelim is a subject with the same shape as the other five.
 
 Two subject-level changes worth naming.
 Algebra's `Fields/` currently holds both field theory and Galois computation; these split, because the syllabus, the guide, and the problem topics all treat them separately.
 Topology's `Basics/` and `Point_set/` are the same area under two names; they merge.
+
+### Notes to write
+
+Two subjects have areas and no prose. Their cards exist; the notes do not.
+
+- **Applied algebra**: 278 cards, five areas, zero notes. The whole branch is to be written.
+  `Applied_Algebra/` holds only an index and a source archive today.
+
+- **Prelim**: 280 cards, eleven areas, two notes (`Useful Tricks`, `Prelim Resources`).
+
+This is the largest block of new writing in the reorganization, and it is the point of it: the tree names what the subject needs, and each missing note becomes a queue item rather than a silent gap.
 
 ### Disposition of everything the tree holds now
 
@@ -1499,19 +1527,17 @@ Topology's `Basics/` and `Point_set/` are the same area under two names; they me
 | `*/Quals/<topic>.md` (≈70) | a query block on the concept note | The topics are on the cards already |
 | `*/Quals/<sitting>.md` (≈20) | `/exam/<collection>` | The collection records the sitting and its problem order |
 | `Topology/Quals/{UCSD,UGA}/**` | `/exam/` | Institution is a card field, not a folder |
-| `*/Exercises/PSet *.md` (18) | corpus solution cards | These are worked solutions; the problems are already `SRC-MATH8100-ASSIGNMENT-*` |
+| `*/Exercises/PSet *.md` (18) | solution cards on `SRC-MATH8100-ASSIGNMENT-*` | A problem set is a collection: problems, and a solution where one is written |
+| `Prelim/Worked_Exams/**` (5) | solution cards on the prelim collections | Same: a sitting is a collection |
 | `*/Workshops/Week *.md` (11) | the concept notes for the topics they cover | The week order lives in `GUIDE-WORKSHOPS` |
 | `*/Resources/**` (24) | one `references.md` per subject | Six pages replace 24 |
 | `*/Resources/Source_Archive.md` | `exams.html` | Duplicate of the source browser |
 | `*/Appendices/**` (12) | `<subject>/further-topics/` | Each one is a topic, not an appendix |
-| `Prelim/Worked_Exams/**` | corpus solution cards on the prelim collections | Same argument as the PSets |
-| `Archives/Tracking/**` (7) | out of the published wiki | One person's 2014–2016 to-dos, already flagged in `TODO.md` §10 |
+| `Archives/Tracking/**` (7) | out of the published wiki | One person's 2014–2016 to-dos, already flagged in section 10 |
 | `Archives/{Card_Archives, Prelims_Source_Archive}` | `exams.html` | Duplicate |
 | `Archives/{Topics, Further Studying, Graduate_Topics, Solution Compendia}` | `wiki/reading/` | Real content, off the syllabus |
-| `Applied_Algebra/` (3, no notes) | no wiki branch | It is a source archive with a guide, not a set of notes |
 
-The `Archives` branch ends.
-Nothing is left at `order: 90`.
+The `Archives` branch ends. Nothing is left at `order: 90`.
 
 ### The one code change this needs
 
@@ -1532,40 +1558,29 @@ The list stops drifting, and it never has to be re-typed when a card is added.
 
 One caveat: the corpus has 668 distinct topic strings and 166 of them appear exactly once.
 A query spine needs a curated topic list — roughly 20 per subject — mapped onto that folksonomy.
-That is its own job, and it should happen before the query blocks go in, not after.
+The guide sections are where that curation already started, so it continues there.
 
 ### Migration order
 
 Each step ships on its own.
 
-- [ ] 1. **Record the redirect map.** All 367 routes change, because `_route()` slugs the source path.
-  Emit a stub for each old route, or accept the breakage deliberately.
+- [ ] 1. **Curate the topic list** (≈120 topics across six subjects), extending the guide sections, and map the 668 raw strings onto it.
 
-- [ ] 2. **Curate the topic list** (≈120 topics across six subjects) and map the 668 raw strings onto it.
+- [ ] 2. **Add the `problems:` query block**, then delete the 90 `Quals/` pages and the source-archive pages.
 
-- [ ] 3. **Add the `problems:` query block**, then delete the 90 `Quals/` pages and the source-archive pages.
-  The wiki drops by a third and loses nothing.
+- [ ] 3. **Lift the writeups** — PSets, worked exams, workshop notes — into the corpus as solution cards on their collections, or into the concept notes.
 
-- [ ] 4. **Lift the writeups** — PSets, worked exams, workshop notes — into the corpus or into the concept notes.
-
-- [ ] 5. **Rename and reparent** to the three-level kebab-case tree.
+- [ ] 4. **Rename and reparent** to the three-level kebab-case tree.
   The wikilink resolver fails loudly on an ambiguous target, which is the safety net for this step.
 
-- [ ] 6. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out.
-  This closes the `TODO.md` §10 item that says six subjects have five shapes.
+- [ ] 5. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out.
+  This closes the section 10 item that says six subjects have five shapes.
 
-- [ ] 7. **Retire `Archives`.**
+- [ ] 6. **Retire `Archives`.**
 
-End state: about 175 pages, from 367. The 127 mathematical notes all survive; the loss is duplicate indexes and navigation scaffolding.
+- [ ] 7. **Write the applied algebra branch**: five area indexes and their notes, against the 278 cards.
 
-### Four decisions only you can make
+- [ ] 8. **Write the prelim branch**: eleven area indexes and their notes, against the 280 cards.
 
-- [ ] 1. **URLs.** Redirect stubs for 367 old routes, or a clean break?
-
-- [ ] 2. **Worked exams and PSet writeups.** Move them into the corpus as solution cards (correct, more work), or keep a `solutions/` area per subject (cheaper, keeps a second home for solutions)?
-
-- [ ] 3. **Applied Algebra.** Drop the wiki branch, or keep a stub carrying only the syllabus?
-
-- [ ] 4. **Prelim.** A sixth subject, or a level-0 "before the quals" branch that sits above the subjects?
-
-Answer 2 and 4 to start at step 1. Step 2, the topic curation, is the first real work: steps 3 and 5 both depend on it.
+After step 6 the tree holds about 175 pages, from 367: the 127 existing notes, and index pages that are generated rather than typed.
+Steps 7 and 8 then grow it again with mathematics rather than with scaffolding.
