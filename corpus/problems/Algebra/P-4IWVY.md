@@ -12,25 +12,55 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: problem
-**Irreducible:** Let $a\in M$ be arbitrary; we can then consider the cyclic submodule $aR \normal M$.
-Since $M$ is irreducible, we must have $aR = 0$ or $aR = M$.
-If $aR = 0$ then $a$ must be $0$.
+Let $R$ be a Principal Ideal Domain (PID).
+(1) Prove that the irreducible (simple) $R$-modules are precisely $R/(p)$ where $p \in R$ is a prime (irreducible) element.
+(2) Prove that the finitely generated indecomposable $R$-modules are precisely $R$ and $R/(p^n)$ where $p \in R$ is prime and $n \ge 1$.
+:::
 
-Otherwise, $aR = M$ implies that $M$ itself is a cyclic module with generator $a$.
-Since $R$ is a PID, we can find an element $p$ such that $\ann_R(M) = (p) \normal R$, in which case $M \cong R/(p)$.
+::: solution
+**Goal:** Classify all simple $R$-modules and all finitely generated indecomposable $R$-modules over a PID $R$.
 
-It is also necessarily the case that $(p)$ is maximal, for if there were another ideal $(p) \subseteq J \normal R$, then $J/(p) \normal R/(p) \cong M$ is a submodule by the correspondence theorem for ideals.
-But this necessarily forces $J/(p) = 0$ or $M$ by irreducibility of $M$, so $J = (p)$ or $R$.
+<1>1. Classification of Simple (Irreducible) $R$-modules:
+    *Proof:*
+    <2>1. Let $M$ be a simple $R$-module (i.e. $M \ne \{0\}$ and the only submodules of $M$ are $\{0\}$ and $M$).
+    <2>2. Choose any non-zero element $x \in M \setminus \{0\}$.
+    <2>3. The cyclic submodule $R x = \{r x \mid r \in R\} \subseteq M$ is a non-zero submodule of $M$.
+    <2>4. Since $M$ is simple, $R x = M$. Thus $M$ is cyclic.
+    <2>5. Consider the surjective $R$-module homomorphism $\phi: R \to M$ defined by $\phi(r) = r x$.
+    <2>6. By the First Isomorphism Theorem for modules, $M \cong R / \ker\phi = R / \mathfrak{m}$, where $\mathfrak{m} = \operatorname{Ann}_R(x) = \ker\phi$.
+    <2>7. By the Lattice Isomorphism Theorem (Correspondence Theorem) for submodules, the submodules of $R/\mathfrak{m}$ correspond bijectively to the ideals of $R$ containing $\mathfrak{m}$.
+    <2>8. Since $M$ has no non-trivial proper submodules, $R/\mathfrak{m}$ has no non-trivial proper ideals, which means $\mathfrak{m}$ is a **maximal ideal** of $R$.
+    <2>9. In a PID, every non-zero prime ideal is maximal. Thus $\mathfrak{m} = (p)$ for some prime (irreducible) element $p \in R$.
+    <2>10. Conversely, if $p \in R$ is prime, $(p)$ is maximal, so $R/(p)$ is a field, and any 1-dimensional vector space over a field is simple.
+    <2>11. Thus the simple $R$-modules are precisely $R/(p)$ for prime elements $p \in R$.
 
-Thus irreducible modules are exactly the cyclic modules, or equivalently those of the form $R/(p)$ where $(p)$ is a maximal ideal.
+<1>2. Classification of Finitely Generated Indecomposable $R$-modules:
+    *Proof:*
+    <2>1. An $R$-module $M$ is **indecomposable** if $M \ne \{0\}$ and $M \cong N_1 \oplus N_2 \implies N_1 = \{0\}$ or $N_2 = \{0\}$.
+    <2>2. By the Structure Theorem for Finitely Generated Modules over a PID (Primary Decomposition):
+        $$M \cong R^r \oplus \bigoplus_{i=1}^k R/(p_i^{n_i})$$
+        where $r \ge 0$, $p_i \in R$ are prime elements, and $n_i \ge 1$.
+    <2>3. If $M$ is indecomposable:
+        - $M$ cannot be a non-trivial direct sum of two or more non-zero modules.
+        - If $r > 0$ and $k > 0$, $M \cong R \oplus (R^{r-1} \oplus \bigoplus R/(p_i^{n_i}))$ is decomposable.
+        - If $r \ge 2$, $M \cong R \oplus R^{r-1}$ is decomposable.
+        - If $k \ge 2$, $M \cong R/(p_1^{n_1}) \oplus \bigoplus_{i=2}^k R/(p_i^{n_i})$ is decomposable.
+    <2>4. Therefore, an indecomposable finitely generated module must have exactly one direct summand:
+        - Either $r = 1, k = 0 \implies M \cong R$.
+        - Or $r = 0, k = 1 \implies M \cong R/(p^n)$ for some prime $p \in R$ and integer $n \ge 1$.
+    <2>5. **$R$ is indecomposable:** Since $R$ is an integral domain, $R \cong N_1 \oplus N_2 \implies$ one of the summands has rank 0 and is torsion-free, hence is $\{0\}$.
+    <2>6. **$R/(p^n)$ is indecomposable:** The submodules of $R/(p^n)$ are the ideals containing $(p^n)$, which form a strictly nested chain:
+        $$(p^n)/(p^n) \subset (p^{n-1})/(p^n) \subset \cdots \subset (p)/(p^n) \subset R/(p^n).$$
+        Every non-zero submodule contains the unique minimal submodule $(p^{n-1})/(p^n)$.
+        Thus any two non-zero submodules have non-trivial intersection, so $R/(p^n)$ cannot be written as an internal direct sum $N_1 \oplus N_2$ of non-zero submodules.
 
-**Indecomposable:** We first note that by the structure theorem for modules over a PID, any module $M$ has a primary decomposition $M \cong \bigoplus_i R/(p_i^{k_i})$.
-
-This means that if $M$ is indecomposable, we must have $M \cong R/(p^n)$ (with a single summand) for some prime $p \in R$; otherwise the primary decomposition would yield additional summands.
-Moreover, by the Chinese Remainder Theorem, $M$ can not be decomposed further.
-
-Thus all indecomposable module are of the form $R/(p^n)$ for some $n\geq 1$.
+<1>3. Conclusion:
+    The simple $R$-modules are $R/(p)$, and the indecomposable finitely generated $R$-modules are $R$ and $R/(p^n)$ ($n \ge 1$). Q.E.D.
 :::
