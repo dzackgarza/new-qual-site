@@ -23,7 +23,7 @@ $$
 where $\mu ( n )$ is the M¨obius function defined by
 
 $$
-\mu (n) = \left\{ \begin{array}{l l} 1 & \text {if n = 1 ,} \\ (- 1) ^ {k} & \text {if n = p_{1} \cdots p_{k} , and the p_{j} are distinct primes ,} \\ 0 & \text {otherwise .} \end{array} \right.
+\mu (n) = \left\{ \begin{array}{l l} 1 & \text{if } n = 1, \\ (- 1) ^ {k} & \text{if } n = p_{1} \cdots p_{k} \text{, and the } p_{j} \text{ are distinct primes,} \\ 0 & \text{otherwise.} \end{array} \right.
 $$
 
 Note that $\mu ( n m ) = \mu ( n ) \mu ( m )$ whenever n and m are relatively prime.
