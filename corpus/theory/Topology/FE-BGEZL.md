@@ -22,8 +22,8 @@ review: draft
 Take limit along $y=x$ and compare to $y=0$:
 \begin{align*}
 f(x, y) = 
-{\begin{dcases}
-xy \over x^2 +y^2} & (x, y) \neq \vector 0 \\
+\begin{dcases}
+{xy \over x^2 +y^2} & (x, y) \neq \vector 0 \\
 0 & \text{else}
 \end{dcases}
 .\end{align*}
