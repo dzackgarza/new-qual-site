@@ -1552,6 +1552,97 @@ One subject at a time, chapter by chapter, reading the existing pages before eac
 - [ ] Applied algebra.
 
 Everything below is evidence for that authoring, not a plan that precedes it.
+
+### What the migration costs
+
+Build measured: `just build` runs clean in 142 s.
+Read from the generator rather than assumed.
+The wiki pipeline is carefully built. The hard parts are elsewhere, and there is one genuine trap.
+
+#### What the machinery does not make hard
+
+**URLs.** Routes are `slug()` of the source path (`wiki.py:148`).
+Nothing outside links in: README, CONTRIBUTING, and SDL contain zero wiki deep links, and all seven guide manifests contain one.
+
+**Images — the scary-looking one that is fine.** 142 relative asset references, 118 of them four levels deep (`../../../../assets/assets/figures/...`).
+That reads as fatal for a move.
+It isn't: `_asset_source` (`static_site.py:515`) discards the relative prefix entirely.
+It splits on the literal `assets` path segment, then falls back to a basename lookup in the catalog.
+Depth-independent. Moving a page cannot break its figures.
+
+**Ordering.** `order` sorts within a parent — key is `(parent_key, order, title, key)` at `emit.py:503`.
+There is no global sequence to reconcile; a moved page needs one number relative to its new siblings.
+
+**Subject identity.** Area ids are `slug(folder_name)` (`index.py:78`), and `Complex_Analysis` and `complex-analysis` slug identically.
+Kebab-casing the six top-level folders is a no-op for all 9,104 cards' area validation.
+One constraint: a new non-subject branch like `reading/` needs `subject: false` in its index or it becomes a seventh area in Browse, Generate, and Guides.
+
+**Tests.** Zero coupling.
+Every wiki test builds a synthetic tree in `tmp_path` via `fixture_repo`. No test asserts a real wiki path.
+
+**The catalog.** No table stores a wiki route; pages reach `emit.project` as objects.
+
+**The ledgers.** 1,353 wiki paths across 10 `sources/*.jsonl` files, and the build reads none of them.
+They record where content came from at import and stay as written.
+
+**Card links.** 4,051 of the 5,152 wikilinks are card ids — id-resolved, move-immune.
+
+**And it fails loud.** A missing or ambiguous page reference becomes a `Diagnostic` and `cli.py:103` returns 1 before anything is emitted.
+You cannot ship a broken link.
+
+#### The one real trap
+
+`_page_target` (`wiki.py:414-421`) tries a bare link against the linking page's *own folder* before falling back to a global stem match.
+There are 776 bare links, and **54 of them name a stem that exists in more than one folder**: `Exercises` ×5, `Problems` ×4, `Definitions` ×3, `Counterexamples` ×3, `2021_Fall` ×3, `Functional Analysis` ×3, and nine more.
+
+Move the linking page and those links silently retarget a *different existing page*.
+No error, no diagnostic, correct-looking build.
+This is the only failure the machinery cannot catch, and it is the one that would corrupt the text quietly.
+
+- [ ] Rewrite the 54 ambiguous bare links to full paths, before anything moves.
+  After that the resolver's failure mode is loud everywhere and the migration is self-checking.
+
+#### The second coupling, which is not a bug
+
+`wikilinks_title_after_pipe` means `[[Sylow_Theorems]]` renders as the literal text "Sylow_Theorems".
+776 links display their target's name.
+The TOC renames nearly every page, so a rename is never just a rename — the link text is part of a sentence, and each one needs re-reading in context.
+This is authoring work created by an engineering choice, and it is unavoidable short of rewriting all 776 to piped form.
+
+#### Why "moving files around" describes the smallest part
+
+Complex analysis: 109 pages today, ~43 in the filed TOC. Of those 43 —
+
+- **~26** are edits of existing prose, mostly merges and splits.
+
+- **6** are area indexes.
+
+- **~11 do not exist in any form**: the six recognition pages, three compendia, the review sheet.
+
+- The **45** `Quals`/`Exercises`/`Workshops`/`Resources` pages do not move anywhere.
+  They are replaced by a mechanism that is not built.
+
+That mechanism is the gate.
+The `problems:` query block does not exist — `publication.py` has query handling for guides, the wiki page path has none, and adding it is work inside `emit.py` (2,512 lines).
+It is worthless until the topic vocabulary is curated: 668 strings, 166 of them singletons, and curating them is reading.
+
+Then the eight pages that hold several chapters each — 26 kB of Galois computations under five headings, 18 kB of group basics under eight — split by mathematical reading, not by any tool.
+
+#### Effort shape
+
+| Work | Character |
+| --- | --- |
+| Rewrite the 54 ambiguous bare links | Read once each. Do first. Unblocks everything. |
+| `problems:` query in `emit.py` | Ordinary engineering, one mechanism, mirrors `publication.py`. |
+| Curate the topic vocabulary | Reading, ~120 topics, gates the query block. |
+| Moves, renames, `order` values, 325 path links | Mechanical, and the build proves each step. |
+| 776 link texts | Reading, one sentence at a time. |
+| Split the eight omnibus pages | Mathematical reading. |
+| Write ~11 new pages per subject, and two whole subjects | This is the project, not the migration. |
+
+The infrastructure is not the obstacle.
+Strip out the authoring and this is mechanical work with a 142-second proof loop and a build that refuses to ship a broken link.
+The reason it is large is that the plan asks for pages that were never written — which is the point of the plan.
 ### What is there now (measured)
 
 | Kind of page | Count | Share |
