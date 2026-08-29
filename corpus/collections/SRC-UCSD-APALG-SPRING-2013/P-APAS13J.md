@@ -11,6 +11,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: problem
@@ -28,4 +32,50 @@ Find the reduced Gröbner basis for $I$ relative to lexicographic order where $y
 (c) Find all solutions to these equations that lie in $\mathbb{C}^2$.
 
 (d) Find a vector space basis for $\mathbb{C}[x,y]/I$.
+:::
+
+::: {.solution}
+**Part (a).**
+
+<1>1. The reduced Gröbner basis of $I$ for lex order with $y > x$ is
+$$\{x^3 + x^2 - 6x,\ x^2 - xy - 2x,\ 2x^2 - 4x - y^2 + y\}.$$
+Proof: Buchberger's algorithm (or a computer algebra system) applied to the two generators $x^2 - xy - 2x$ and $y^2 - 2xy - y$; the leading monomials are $x^3$, $xy$, and $y^2$.
+
+**Part (b).**
+
+<1>1. $\CC[x] \cap I = (x^3 + x^2 - 6x)$.
+Proof: by the elimination theorem, the polynomials in the Gröbner basis of <1>1 that involve only $x$ generate the elimination ideal; the only such polynomial is $x^3 + x^2 - 6x$.
+
+<1>2. A reduced Gröbner basis for $\CC[x] \cap I$ is $\{x^3 + x^2 - 6x\}$.
+Proof: <1>1; a single polynomial is its own reduced Gröbner basis.
+
+**Part (c).**
+
+<1>1. $x^3 + x^2 - 6x = x(x-2)(x+3)$.
+Proof: factor.
+
+<1>2. The solutions are $(-3, -5)$, $(0, 0)$, $(0, 1)$, and $(2, 0)$.
+<2>1. For $x = -3$: the second equation gives $y^2 + 6y - y = y^2 + 5y = y(y+5) = 0$, and the first gives $9 + 3y + 6 = 0 \Rightarrow y = -5$.
+Proof: substitute $x = -3$; the consistent solution is $y = -5$.
+<2>2. For $x = 0$: the first equation is $0 = 0$, and the second gives $y^2 - y = y(y-1) = 0$, so $y = 0$ or $y = 1$.
+Proof: substitute $x = 0$.
+<2>3. For $x = 2$: the first equation gives $4 - 2y - 4 = -2y = 0 \Rightarrow y = 0$, and the second gives $y^2 - 4y - y = y^2 - 5y = 0$, consistent with $y = 0$.
+Proof: substitute $x = 2$.
+
+<1>3. Hence the solution set is $\{(-3,-5), (0,0), (0,1), (2,0)\}$.
+Proof: <1>1 and <1>2.
+
+**Part (d).**
+
+<1>1. The leading monomials of the Gröbner basis are $x^3$, $xy$, and $y^2$.
+Proof: <1>1.
+
+<1>2. The standard monomials (those not divisible by any leading monomial) are $1, x, x^2, y$.
+Proof: a monomial $x^a y^b$ is standard iff $a < 3$, $b < 2$, and not ($a \ge 1$ and $b \ge 1$); this leaves exactly $1, x, x^2, y$.
+
+<1>3. Hence $\{1, x, x^2, y\}$ is a vector space basis for $\CC[x,y]/I$.
+Proof: the standard monomials form a basis of the quotient (Macaulay's theorem).
+
+<1>4. Q.E.D.
+Proof: <1>1 (a), <1>2 (b), <1>3 (c), and <1>3 (d).
 :::
