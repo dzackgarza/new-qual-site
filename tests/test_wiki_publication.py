@@ -14,7 +14,6 @@ from pathlib import Path
 import pytest
 from conftest import SUBJECTS, diagnostic_codes, write_subject_branches
 from qualc.diagnostics import DiagnosticCode
-from qualc.emit import SearchRecordKind
 from qualc.wiki import slug
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -384,10 +383,12 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
     assert "../assets/figures/diagram.png" in links.srcs
     assert (site / "assets" / "figures" / "diagram.png").read_bytes() == b"fixture image"
 
-    records = json.loads((site / "search.json").read_text())
-    page = next(record for record in records if record["url"] == "wiki/index.html")
-    assert SearchRecordKind(page["kind"]) == SearchRecordKind.WIKI
-    assert "fixture index" in page["search"]
+    # The page is a search result, filed as a wiki page, and what it says is
+    # what is indexed: the indexer reads the region the shell marks.
+    indexed = (site / "wiki" / "index.html").read_text()
+    assert "data-pagefind-body" in indexed
+    assert 'data-pagefind-filter="kind:wiki"' in indexed
+    assert "Fixture index" in indexed
 
 
 def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
@@ -734,13 +735,13 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     assert "Wiley, 2004" in text
     assert "Smith, R." in text
 
-    records = json.loads((work / "build" / "quarto" / "_site" / "search.json").read_text())
-    index = next(record for record in records if record["url"] == "wiki/index.html")
-    assert "dummit, d. s. and r. m. foote" in index["search"]
     # Pandoc records the citeproc request in the document metadata. The page is
-    # searchable for what it says, not for the names of the files it was built with.
-    assert "references.bib" not in index["search"]
-    assert "style.csl" not in index["search"]
+    # searchable for what it says, not for the names of the files it was built
+    # with, and what is searchable is the region the indexer is pointed at.
+    body = html.split("data-pagefind-body", 1)[1]
+    assert "Dummit, D. S. and R. M. Foote" in body
+    assert "references.bib" not in body
+    assert "style.csl" not in body
 
 
 def test_check_rejects_a_citation_the_bibliography_does_not_define(

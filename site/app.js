@@ -1,207 +1,195 @@
 (() => {
+  // One index, two readers: the dialog in the header searches everything, and a
+  // listing page searches one kind of card with the facets it offers. Both ask
+  // the index for the page of results in front of the reader. They used to be
+  // given the whole corpus and asked to filter it themselves.
+  const siteRoot = new URL(document.body.dataset.siteRoot || "./", document.baseURI);
+  let pagefind;
+  const index = async () => {
+    if (!pagefind) {
+      pagefind = await import(new URL("pagefind/pagefind.js", siteRoot).href);
+      await pagefind.options({ baseUrl: siteRoot.pathname });
+    }
+    return pagefind;
+  };
+
+  // A result's title is its source, so a card named for a formula arrives as
+  // `$\# G = [G:H]\,\#H$`. Whatever is built from one has to be typeset once it
+  // is in the document; MathJax's own pass ran before any of it existed.
+  const typesetInto = async (node) => {
+    await window.MathJax?.startup?.promise;
+    await window.MathJax?.typesetPromise?.([node]);
+  };
+
   const dialog = document.querySelector("#site-search");
-  const openButton = document.querySelector("#search-open");
-  const closeButton = document.querySelector("#search-close");
-  const input = document.querySelector("#site-search-input");
-  const results = document.querySelector("#site-search-results");
-  const searchIndexUrl = new URL(
-    document.body.dataset.searchIndex,
-    document.baseURI,
-  );
-  let records;
+  if (dialog) {
+    const openButton = document.querySelector("#search-open");
+    const closeButton = document.querySelector("#search-close");
+    const input = document.querySelector("#site-search-input");
+    const results = document.querySelector("#site-search-results");
 
-  const loadIndex = async () => {
-    if (!records) {
-      const response = await fetch(searchIndexUrl);
-      if (!response.ok) {
-        throw new Error(`Search index failed: ${response.status}`);
+    const openSearch = async () => {
+      dialog.showModal();
+      input.focus();
+      await index();
+    };
+    const closeSearch = () => dialog.close();
+
+    let pending = 0;
+    const renderResults = async () => {
+      const query = input.value.trim();
+      const turn = ++pending;
+      results.replaceChildren();
+      if (query.length < 2) return;
+      const search = await (await index()).search(query);
+      // A slower earlier query must not overwrite a later one's results.
+      if (turn !== pending) return;
+      const shown = await Promise.all(search.results.slice(0, 30).map((result) => result.data()));
+      if (turn !== pending) return;
+      for (const data of shown) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = data.url;
+        link.textContent = data.meta.title || data.url;
+        const metadata = document.createElement("span");
+        metadata.className = "search-result-meta";
+        const kind = document.createElement("span");
+        kind.className = "search-result-kind";
+        kind.textContent = (data.filters.kind || [])[0] || "";
+        const detail = document.createElement("span");
+        detail.className = "search-result-detail";
+        detail.textContent = data.plain_excerpt ? data.plain_excerpt.slice(0, 120) : "";
+        detail.title = decodeURIComponent(data.url);
+        metadata.append(kind, detail);
+        item.append(link, metadata);
+        results.append(item);
       }
-      records = await response.json();
-    }
-    return records;
-  };
+      await typesetInto(results);
+    };
 
-  const openSearch = async () => {
-    dialog.showModal();
-    input.focus();
-    await loadIndex();
-  };
+    openButton.addEventListener("click", openSearch);
+    closeButton.addEventListener("click", closeSearch);
+    input.addEventListener("input", renderResults);
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) closeSearch();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "/" && !dialog.open) {
+        event.preventDefault();
+        openSearch();
+      }
+    });
+  }
 
-  const closeSearch = () => dialog.close();
-
-  // Index order is publication order, and every page precedes every card, so an
-  // unranked filter answered "sylow" with wiki pages and never reached a Sylow
-  // theorem or problem. Rank by where in the record the query landed.
-  const rank = (record, query, terms) => {
-    const title = record.title.toLocaleLowerCase();
-    if (title === query) return 4;
-    if (title.startsWith(query)) return 3;
-    if (terms.every((term) => title.includes(term))) return 2;
-    // A card's kind and id live in `detail`, which makes "P-A4JGH" an id lookup.
-    if (record.detail.toLocaleLowerCase().includes(query)) return 1;
-    return 0;
-  };
-
-  // Every wiki page carries the same constant `detail`, and three of them are
-  // titled "Residues", two in one folder: only the path separates those rows.
-  // A card keeps its own `detail`, which names a kind its route does not.
-  // Only the last two segments are shown: the rail truncates from the right,
-  // and the tail is where same-titled pages differ. The rest is the tooltip.
-  const locate = (record) => {
-    const parts = decodeURIComponent(record.url).replace(/\.html$/, "").split("/");
-    return parts.length < 3 ? "" : parts.slice(-2).join(" / ");
-  };
-
-  const renderResults = async () => {
-    const query = input.value.trim().toLocaleLowerCase();
-    results.replaceChildren();
-    if (query.length < 2) return;
-    const terms = query.split(/\s+/);
-    const matches = (await loadIndex())
-      .filter((record) => terms.every((term) => record.search.includes(term)))
-      .map((record) => ({ record, score: rank(record, query, terms) }))
-      .sort(
-        (a, b) =>
-          b.score - a.score ||
-          a.record.title.length - b.record.title.length ||
-          a.record.title.localeCompare(b.record.title) ||
-          a.record.url.localeCompare(b.record.url),
-      )
-      .slice(0, 30)
-      .map((match) => match.record);
-    for (const record of matches) {
-      const item = document.createElement("li");
-      const link = document.createElement("a");
-      link.href = new URL(record.url, searchIndexUrl).href;
-      link.textContent = record.title;
-      const metadata = document.createElement("span");
-      metadata.className = "search-result-meta";
-      const kind = document.createElement("span");
-      kind.className = "search-result-kind";
-      kind.textContent = record.kind;
-      const detail = document.createElement("span");
-      detail.className = "search-result-detail";
-      detail.textContent = locate(record) || record.detail;
-      detail.title = decodeURIComponent(record.url);
-      metadata.append(kind, detail);
-      item.append(link, metadata);
-      results.append(item);
-    }
-    // Titles are stored as their source, so a card named for a formula listed as
-    // `$\# G = [G:H]\,\#H$`. MathJax ran before the dialog had any results in it,
-    // so the list has to ask for itself.
-    await window.MathJax?.typesetPromise?.([results]);
-  };
-
-  openButton.addEventListener("click", openSearch);
-  closeButton.addEventListener("click", closeSearch);
-  input.addEventListener("input", renderResults);
-  dialog.addEventListener("click", (event) => {
-    if (event.target === dialog) closeSearch();
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "/" && !dialog.open) {
-      event.preventDefault();
-      openSearch();
-    }
-  });
-
-  // A filtered listing: rows under group headings, a text box and a select per
-  // facet. Two pages have one -- the problem browser and the source index --
-  // and neither is named here: the axes come from the controls the page emitted
-  // and the noun for the count comes off the search box.
-  // ?q= seeds the filter on load and tracks it as the reader types,
-  // which makes a filtered view shareable and bookmarkable.
-  const listingSearch = document.querySelector("#listing-search");
-  if (listingSearch) {
+  // A listing page: a text box, a select per facet, and the rows the index
+  // answers with. The page says which kind of card it lists and which axes it
+  // offers; nothing here names a page.
+  // ?q= and ?axis= seed the controls on load and track them as the reader
+  // works, which makes a filtered view shareable and bookmarkable.
+  const controls = document.querySelector(".listing-filters");
+  const resultList = document.querySelector("#listing-results");
+  if (controls && resultList) {
+    const listingSearch = document.querySelector("#listing-search");
+    const moreButton = document.querySelector("#listing-more");
+    const count = document.querySelector("#listing-count");
+    const noun = listingSearch.dataset.noun;
+    const listingKind = controls.dataset.listingKind;
     const facets = [...document.querySelectorAll("[data-facet]")].map((select) => ({
       axis: select.dataset.facet,
       select,
     }));
-    const noun = listingSearch.dataset.noun;
-    const selected = (select) =>
-      [...select.selectedOptions].map((option) => option.value);
-    const queryValues = (axis) => {
-      const value = new URLSearchParams(location.search).get(axis);
-      return value ? value.split(",").filter(Boolean) : [];
-    };
-    const setSelected = (select, values) => {
-      for (const option of select.options) option.selected = values.includes(option.value);
-    };
-    // Topics are free strings and may contain spaces; facet values are joined with `|`.
-    const matchesFacet = (row, axis, values) =>
-      !values.length || values.every((value) => row.dataset[axis].split("|").includes(value));
-    const applyFilter = () => {
-      const terms = listingSearch.value.toLocaleLowerCase().trim().split(/\s+/);
-      let visible = 0;
-      // A heading whose rows are all filtered out has to go with them, or the
-      // page shows a group that has nothing under it.
-      let group = null;
-      let inGroup = 0;
-      const closeGroup = () => {
-        if (!group) return;
-        group.hidden = inGroup === 0;
-        // A group that carries a count in its heading has to say how many it is
-        // showing, not how many it holds: "University exams (338)" over thirty
-        // rows is a wrong number, not a total.
-        const label = group.dataset.label;
-        const heading = label && group.querySelector("h2");
-        if (heading) heading.textContent = `${label} (${inGroup})`;
-      };
-      for (const node of document.querySelectorAll(".listing-group, .listing-row")) {
-        if (node.classList.contains("listing-group")) {
-          closeGroup();
-          group = node;
-          inGroup = 0;
-          continue;
-        }
-        const matchesSearch = !listingSearch.value.trim() || terms.every((term) => node.dataset.search.includes(term));
-        const matchesFacets = facets.every(({ axis, select }) => matchesFacet(node, axis, selected(select)));
-        node.hidden = !(matchesSearch && matchesFacets);
-        if (!node.hidden) {
-          visible += 1;
-          inGroup += 1;
-        }
-      }
-      closeGroup();
-      const count = document.querySelector("#listing-count");
-      if (count) count.textContent = `${visible} ${noun}${visible === 1 ? "" : "s"} shown`;
-    };
-    // A row marked `mathjax_ignore` is skipped by MathJax's pass over the page
-    // and typeset the first time it is scrolled near, which is what a reader
-    // can actually see. The problem browser marks all 4921 of its rows: doing
-    // them at load cost ten seconds before the filter could be touched.
-    // This script and MathJax's are both deferred and run in document order, so
-    // `startup` exists here; its promise is what has not settled yet. Waiting
-    // on it keeps a row observed until there is something that can typeset it.
-    const typeset = new IntersectionObserver(
-      async (entries) => {
-        const ready = entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target);
-        if (!ready.length) return;
-        await window.MathJax?.startup?.promise;
-        for (const row of ready) {
-          row.classList.remove("mathjax_ignore");
-          typeset.unobserve(row);
-        }
-        await window.MathJax?.typesetPromise?.(ready);
-      },
-      { rootMargin: "400px" },
-    );
-    for (const row of document.querySelectorAll(".listing-row.mathjax_ignore")) typeset.observe(row);
+    const PAGE = 50;
+    const selected = (select) => [...select.selectedOptions].map((option) => option.value);
+    // A filter matches on an id and a row shows a name. The controls the page
+    // emitted already carry both, so the names are read off them rather than
+    // sent a second time: `algebra` is shown as whatever the registry calls it.
+    const names = new Map();
+    for (const { axis, select } of facets) {
+      for (const option of select.options) names.set(`${axis}:${option.value}`, option.textContent);
+    }
+    const named = (axis, values) => (values || []).map((value) => names.get(`${axis}:${value}`) || value);
 
-    // No `q` in the URL is a real state, not a missing value: it means no filter.
-    const query = new URLSearchParams(location.search).get("q");
-    listingSearch.value = query === null ? "" : query;
-    for (const { axis, select } of facets) setSelected(select, queryValues(axis));
-    applyFilter();
-    const updateUrl = () => {
-      applyFilter();
-      const url = new URL(location.href);
-      if (listingSearch.value) {
-        url.searchParams.set("q", listingSearch.value);
-      } else {
-        url.searchParams.delete("q");
+    let held = [];
+    let drawn = 0;
+    let turn = 0;
+
+    const row = (data) => {
+      const item = document.createElement("li");
+      item.className = "listing-row";
+      const title = document.createElement("p");
+      const link = document.createElement("a");
+      link.href = data.url;
+      link.textContent = data.meta.title || data.url;
+      title.append(link);
+      const facetLine = document.createElement("p");
+      const values = data.filters || {};
+      facetLine.textContent =
+        [
+          (values.institution || []).join(", "),
+          named("source_kind", values.source_kind).join(", "),
+          named("area", values.area).join(", "),
+          (values.year || []).join(", "),
+        ]
+          .filter(Boolean)
+          .join(" · ") || "Unclassified";
+      const aside = document.createElement("p");
+      // A collection says how much of it is worked, which no filter can count.
+      // A card says what it is about, which its topics already say.
+      aside.textContent = data.meta.worked || (values.topic || []).join(", ");
+      item.append(title, facetLine, aside);
+      return item;
+    };
+
+    const draw = async () => {
+      const mine = turn;
+      const page = held.slice(drawn, drawn + PAGE);
+      const shown = await Promise.all(page.map((result) => result.data()));
+      if (mine !== turn) return;
+      const fragment = document.createDocumentFragment();
+      for (const data of shown) fragment.append(row(data));
+      resultList.append(fragment);
+      drawn += page.length;
+      moreButton.hidden = drawn >= held.length;
+      moreButton.textContent = `Show more (${held.length - drawn} left)`;
+      await typesetInto(resultList);
+    };
+
+    const run = async () => {
+      const mine = ++turn;
+      const filters = { kind: listingKind };
+      for (const { axis, select } of facets) {
+        const values = selected(select);
+        if (values.length) filters[axis] = { any: values };
       }
+      const term = listingSearch.value.trim();
+      // Browsing and searching want different orders. With nothing typed there
+      // is nothing to rank against, so the rows keep the order the listing puts
+      // them in; a term ranks them by how well they answer it.
+      const options = term ? { filters } : { filters, sort: { listing: "asc" } };
+      const search = await (await index()).search(term || null, options);
+      if (mine !== turn) return;
+      held = search.results;
+      drawn = 0;
+      resultList.replaceChildren();
+      count.textContent = `${held.length} ${noun}${held.length === 1 ? "" : "s"}`;
+      await draw();
+    };
+
+    moreButton.addEventListener("click", draw);
+
+    const readUrl = () => {
+      const params = new URLSearchParams(location.search);
+      // No `q` is a real state, not a missing value: it means no term.
+      listingSearch.value = params.get("q") ?? "";
+      for (const { axis, select } of facets) {
+        const wanted = (params.get(axis) || "").split(",").filter(Boolean);
+        for (const option of select.options) option.selected = wanted.includes(option.value);
+      }
+    };
+    const writeUrl = () => {
+      const url = new URL(location.href);
+      if (listingSearch.value) url.searchParams.set("q", listingSearch.value);
+      else url.searchParams.delete("q");
       for (const { axis, select } of facets) {
         const values = selected(select);
         if (values.length) url.searchParams.set(axis, values.join(","));
@@ -209,8 +197,15 @@
       }
       history.replaceState(null, "", url);
     };
-    listingSearch.addEventListener("input", updateUrl);
-    for (const { select } of facets) select.addEventListener("change", updateUrl);
+    const changed = () => {
+      writeUrl();
+      run();
+    };
+
+    readUrl();
+    run();
+    listingSearch.addEventListener("input", changed);
+    for (const { select } of facets) select.addEventListener("change", changed);
   }
 
   const headings = [

@@ -23,7 +23,6 @@ import subprocess
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
-from enum import Enum
 from pathlib import Path
 from typing import cast
 from urllib.parse import urlsplit
@@ -73,7 +72,6 @@ from .static_site import (
     SubjectPage,
     build_asset_catalog,
     write_page,
-    write_search_index,
 )
 from .wiki import (
     SITE_PAGES,
@@ -84,9 +82,6 @@ from .wiki import (
 )
 from .wiki import (
     link_targets as wiki_link_targets,
-)
-from .wiki import (
-    search_records as wiki_search_records,
 )
 
 KNOWN_PANDOC_WARNINGS = (
@@ -986,6 +981,23 @@ def _dup[T](value: T) -> T:
     return copy.deepcopy(value)
 
 
+def _statement_first(blocks: list[dict]) -> list[dict]:
+    """The card's own blocks, with the question marked off from the answers.
+
+    A practice sheet needs the question and must not carry the answer, and the
+    generator asks the card's page for it rather than being handed every
+    statement on the site. Which blocks are the question is something the
+    emitter knows and a reader of the HTML would have to guess: taking blocks
+    up to the first answer truncates the 11 problems that write more of the
+    question after one.
+    """
+    statement = [block for block in blocks if not (block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES)]
+    answers = [block for block in blocks if block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES]
+    if not statement:
+        return answers
+    return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
+
+
 def problem_json(
     data: CardPageData,
     card: sqlite3.Row,
@@ -999,7 +1011,7 @@ def problem_json(
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
 
-    body = _dup(jcache[card["id"]])
+    body = _statement_first(_dup(jcache[card["id"]]))
     _rename_json(body)
     hints: list[dict] = []
     solutions: list[dict] = []
@@ -1042,20 +1054,43 @@ def plain_json(
     return meta, body
 
 
-def _card_filters(data: CardPageData, card: sqlite3.Row) -> tuple[tuple[str, str], ...]:
+def _card_filters(
+    data: CardPageData,
+    card: sqlite3.Row,
+    also: tuple[tuple[str, str], ...] = (),
+) -> tuple[tuple[str, str], ...]:
     """The values a card's page answers under, in the spelling the rows carry.
 
     These are ids and acronyms, not display names: a filter value is matched,
-    and what a reader is shown is the registry's business.
+    and what a reader is shown is the registry's business. `also` carries what
+    a particular kind of card knows and the `cards` row does not -- a
+    collection's source kind lives in `sources`.
     """
     facets = _page_rows(data.facets, card["id"])
     return (
         ("kind", card["kind"]),
+        *also,
         *(("area", term) for term in _page_terms(data, card["id"], "area")),
         *(("topic", term) for term in _page_terms(data, card["id"], "topic")),
         *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
         *sorted({("year", str(row["year"])) for row in facets if row["year"] is not None}),
+        # A practice sheet can be asked for problems that were really set. That
+        # is "has an institution", which no filter over the values can ask.
+        ("sourced", "yes" if any(row["institution"] for row in facets) else "no"),
     )
+
+
+def _listing_sort(data: CardPageData, card: sqlite3.Row) -> str:
+    """Where a card falls in its listing when nothing has been searched for.
+
+    Browsing and searching want different orders, and a listing that has only
+    relevance has no order at all until a reader types. This is the order the
+    problem browser used to emit its rows in: by area, and within an area the
+    titles that begin with prose before the ones that begin with mathematics,
+    because `$` sorts ahead of every letter and the page opened on 483 formulas.
+    """
+    areas = " ".join(_page_terms(data, card["id"], "area"))
+    return f"{areas}|{1 if card['title'].startswith('$') else 0}|{card['title']}"
 
 
 def write_json_pages(
@@ -1785,6 +1820,8 @@ def _facet_option_label(axis: str, value: str, area_names: dict[str, str]) -> st
     """
     if axis == "area":
         return area_names[value]
+    if axis == "source_kind":
+        return SOURCE_KIND_HEADINGS[value]
     return value
 
 
@@ -1793,15 +1830,21 @@ def _listing_filters(
     placeholder: str,
     facet_values: dict[str, list[str]],
     area_names: dict[str, str],
+    kind: str,
 ) -> pf.RawBlock:
-    """The search box and one select per facet, above a filtered listing.
+    """The search box, one select per facet, and the region results are put in.
 
     `app.js` reads the axes off the `data-facet` attributes rather than being
     told which page it is on, so a page adds an axis by emitting a control for
-    it. `noun` is what the running count calls the rows.
+    it. `noun` is what the running count calls the rows, and `kind` is the
+    filter every query on this page carries -- what the page is a listing of.
+
+    The rows themselves are not here. The listing asks the index for the page
+    of results a reader is looking at; it used to carry all of them and hide
+    the ones that did not match.
     """
     return pf.RawBlock(
-        '<div class="listing-filters">'
+        f'<div class="listing-filters" data-listing-kind="{html.escape(kind, quote=True)}">'
         '<label for="listing-search">Search'
         f'<input id="listing-search" type="search" data-noun="{html.escape(noun, quote=True)}"'
         f' placeholder="{html.escape(placeholder, quote=True)}">'
@@ -1813,143 +1856,32 @@ def _listing_filters(
             + "</select></label>"
             for axis, values in facet_values.items()
         )
-        + '<output id="listing-count" aria-live="polite"></output></div>',
+        + '<output id="listing-count" aria-live="polite"></output></div>'
+        + '<ol class="listing" id="listing-results"></ol>'
+        + '<button class="listing-more" id="listing-more" type="button" hidden>Show more</button>',
         format="html",
     )
 
 
 def problem_browser_page(
     con: sqlite3.Connection,
-    inline_cache: dict[str, list[pf.Inline]],
     area_names: dict[str, str],
 ) -> Page:
+    """The facet controls. The rows come from the index, a page at a time.
+
+    The controls are built from the catalog rather than from the index: the
+    catalog is what says which values exist, and a control rendered before any
+    script runs is one whose shape a reader can see straight away.
+    """
     facet_values = {
         "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
         "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
         "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
         "year": sorted({str(row["year"]) for row in _rows(con, "select year from sources where year is not null")}),
     }
-    problems = _rows(
-        con,
-        f"""
-        select c.*,
-          (select group_concat(term, '{FACET_SEP}') from classifications
-           where card_id=c.id and axis='area') as areas,
-          (select group_concat(term, '{FACET_SEP}') from classifications
-           where card_id=c.id and axis='topic') as topics,
-          (select group_concat(institution, '{FACET_SEP}') from (
-             select distinct upper(e.institution) as institution
-             from collection_problems cp join exam_sources e on e.id=cp.collection_id
-             where cp.problem_id=c.id
-           )) as institutions,
-          (select group_concat(year, '{FACET_SEP}') from (
-             select distinct s.year as year
-             from collection_problems cp join sources s on s.id=cp.collection_id
-             where cp.problem_id=c.id and s.year is not null
-           )) as years
-        from cards c
-        where c.kind='problem'
-        -- Grouped by area, and within an area the titles that begin with prose
-        -- come before the ones that begin with mathematics. Ordering by the raw
-        -- title alone opened the page on 483 formulas, because `$` sorts ahead
-        -- of every letter.
-        order by areas, case when c.title like '$%' then 1 else 0 end, c.title, c.id
-        """,
-    )
-    sources_by_problem: dict[str, list[sqlite3.Row]] = {}
-    for source in _rows(
-        con,
-        """
-        select distinct cp.problem_id, cp.collection_id as source_id, s.title, s.route
-        from collection_problems cp join cards s on s.id=cp.collection_id
-        order by s.title
-        """,
-    ):
-        sources_by_problem.setdefault(source["problem_id"], []).append(source)
-    rows: list[pf.Block] = []
-    heading_area = ""
-    for problem in problems:
-        area_terms = _facet_terms(problem["areas"])
-        topic_terms = _facet_terms(problem["topics"])
-        # One heading per area, carrying the area's own name so the filter can
-        # hide a heading whose problems are all hidden.
-        if problem["areas"] != heading_area:
-            heading_area = problem["areas"]
-            label = ", ".join(_facet_option_label("area", a, area_names) for a in area_terms) or "Unclassified"
-            rows.append(
-                pf.Div(
-                    pf.Header(pf.Str(label), level=2),
-                    classes=["listing-group"],
-                    attributes={"data-area": FACET_SEP.join(area_terms), "data-label": label},
-                )
-            )
-        institution_terms = _facet_terms(problem["institutions"])
-        year_terms = _facet_terms(problem["years"])
-        facet_text = " · ".join(
-            part
-            for part in (
-                ", ".join(_facet_option_label("area", a, area_names) for a in area_terms),
-                ", ".join(institution_terms),
-                ", ".join(year_terms),
-            )
-            if part
-        )
-        source_rows = sources_by_problem.get(problem["id"], [])
-        source_links: list[pf.Inline] = []
-        for index, source in enumerate(source_rows):
-            if index:
-                source_links.append(pf.Str(","))
-                source_links.append(pf.Space())
-            source_links.append(
-                pf.Link(
-                    *_inlines(source["title"], inline_cache),
-                    url=f"{source['route']}/{source['source_id']}.html",
-                )
-            )
-        search = " ".join(
-            str(value)
-            for value in (
-                problem["title"],
-                problem["id"],
-                problem["areas"],
-                problem["topics"],
-                problem["institutions"],
-                problem["years"],
-            )
-            if value
-        ).lower()
-        rows.append(
-            pf.Div(
-                # Para, not Plain: Plain writes the text with no element around
-                # it, and three of those in a row are one anonymous grid item,
-                # not three. The row's columns had nothing to lay out.
-                pf.Para(_link_inline(problem, inline_cache, base="")),
-                pf.Para(pf.Str(facet_text or "Unclassified")),
-                pf.Para(pf.Str("Sources: "), *source_links) if source_links else pf.Para(pf.Str("Sources: none")),
-                # 4161 of the 4921 titles are mathematics. Typesetting all of
-                # them on load cost ten seconds before a reader could touch the
-                # filter. `mathjax_ignore` is MathJax's own opt-out class, so
-                # the initial pass skips every row; `app.js` removes it from a
-                # row and typesets that row when it scrolls into view.
-                classes=["listing-row", "mathjax_ignore"],
-                attributes={
-                    "data-search": search,
-                    "data-area": FACET_SEP.join(area_terms),
-                    "data-topic": FACET_SEP.join(topic_terms),
-                    "data-institution": FACET_SEP.join(institution_terms),
-                    "data-year": FACET_SEP.join(year_terms),
-                },
-            )
-        )
     return {"title": "Problems"}, [
-        pf.Para(
-            *_inlines(
-                "Every problem in the corpus.",
-                inline_cache,
-            )
-        ),
-        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values, area_names),
-        pf.Div(*rows, classes=["listing"]),
+        pf.Para(pf.Str("Every problem in the corpus.")),
+        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values, area_names, "problem"),
     ]
 
 
@@ -2013,7 +1945,6 @@ def _guide_sections(
 
 def source_index_page(
     con: sqlite3.Connection,
-    inline_cache: dict[str, list[pf.Inline]],
     area_names: dict[str, str],
 ) -> Page:
     """Every collection the corpus draws from, under the kind of thing it is.
@@ -2025,18 +1956,12 @@ def source_index_page(
     """
     collections = _rows(
         con,
-        f"""
-        select c.*, s.source_kind, s.year,
+        """
+        select s.source_kind, s.year,
           coalesce(e.institution, '') as institution,
-          coalesce(e.area, '') as area,
-          (select count(*) from collection_problems where collection_id=c.id) as problems,
-          (select count(*) from collection_problems cp
-           where cp.collection_id=c.id
-             and (cp.problem_id in (select card_id from sections where section_kind='solution')
-                  or cp.problem_id in (select target_id from relations where kind='solves'))) as solved
+          coalesce(e.area, '') as area
         from cards c join sources s on s.id=c.id
         left join exam_sources e on e.id=s.id
-        order by e.institution, s.year, {TERM_RANK}, e.area, c.title, c.id
         """,
     )
     unlisted = {row["source_kind"] for row in collections} - set(SOURCE_KIND_HEADINGS)
@@ -2044,47 +1969,15 @@ def source_index_page(
         raise ValueError(f"source kinds with no heading on the source index: {sorted(unlisted)}")
 
     facet_values = {
+        "source_kind": [kind for kind in SOURCE_KIND_HEADINGS if any(row["source_kind"] == kind for row in collections)],
         "area": sorted({row["area"] for row in collections if row["area"]}),
         "institution": sorted({row["institution"].upper() for row in collections if row["institution"]}),
         "year": sorted({str(row["year"]) for row in collections if row["year"] is not None}),
     }
     blocks: list[pf.Block] = [
-        pf.Para(*_inlines(f"Every collection the corpus draws problems from: {len(collections)} in all.", inline_cache)),
-        _listing_filters("source", "UGA, topology, 2019…", facet_values, area_names),
+        pf.Para(pf.Str(f"Every collection the corpus draws problems from: {len(collections)} in all.")),
+        _listing_filters("source", "UGA, topology, 2019…", facet_values, area_names, "collection"),
     ]
-    rows: list[pf.Block] = []
-    for kind, heading in SOURCE_KIND_HEADINGS.items():
-        listed = [row for row in collections if row["source_kind"] == kind]
-        rows.append(
-            pf.Div(
-                pf.Header(pf.Str(f"{heading} ({len(listed)})"), level=2),
-                classes=["listing-group"],
-                # The filter rewrites the count to what it is showing, so the
-                # heading has to say what the label alone is.
-                attributes={"data-label": heading},
-            )
-        )
-        for row in listed:
-            institution = row["institution"].upper()
-            year = "" if row["year"] is None else str(row["year"])
-            # How much of a collection is worked is the fact a reader picking one
-            # to sit is after, and no listing carried it.
-            solutions = f"{row['problems']} problems, {row['solved']} solved" if row["problems"] else "no problems listed"
-            rows.append(
-                pf.Div(
-                    pf.Para(_link_inline(row, inline_cache, "")),
-                    pf.Para(pf.Str(" · ".join(part for part in (institution, row["area"].replace("-", " ").title(), year) if part) or "—")),
-                    pf.Para(pf.Str(solutions)),
-                    classes=["listing-row"],
-                    attributes={
-                        "data-search": " ".join(str(part) for part in (row["title"], row["id"], institution, row["area"], year) if part).lower(),
-                        "data-area": row["area"],
-                        "data-institution": institution,
-                        "data-year": year,
-                    },
-                )
-            )
-    blocks.append(pf.Div(*rows, classes=["listing"]))
     return {"title": "Sources"}, blocks
 
 
@@ -2135,15 +2028,6 @@ PROBLEMS_LISTING = {
     "categories": "cloud",
     "page-size": 100,
 }
-
-
-class SearchRecordKind(Enum):
-    """The search index's record vocabulary: the value is the JSON wire string."""
-
-    CARD = "Card"
-    GUIDE = "Guide"
-    WIKI = "Wiki"
-    PROBLEM = "Problem"
 
 
 def mathjax_header(macros: dict) -> str:
@@ -2233,68 +2117,6 @@ def _link_targets(
     return targets
 
 
-def _search_records(
-    con: sqlite3.Connection,
-    guides: list[PublicationManifest],
-    wiki_pages: list[WikiPage] | None = None,
-) -> list[dict[str, object]]:
-    card_records: list[dict[str, object]] = []
-    cards = _rows(
-        con,
-        """
-        select c.id, c.kind, c.title, c.route,
-          coalesce((select group_concat(term, ' ') from classifications
-                    where card_id=c.id), '') as facets,
-          coalesce((select group_concat(text, ' ') from sections
-                    where card_id=c.id), '') as body
-        from cards c
-        order by c.id
-        """,
-    )
-    for card in cards:
-        directory = card["route"]
-        search = " ".join(
-            (
-                card["id"],
-                card["kind"],
-                card["title"],
-                card["facets"],
-                card["body"],
-            )
-        ).lower()
-        card_records.append(
-            {
-                "title": card["title"],
-                "kind": (SearchRecordKind.PROBLEM if card["kind"] == "problem" else SearchRecordKind.CARD).value,
-                "detail": f"{card['kind']} · {card['id']}",
-                "url": f"{directory}/{card['id']}.html",
-                "search": search,
-            }
-        )
-    page_records: list[dict[str, object]] = []
-    for guide in guides:
-        page_records.append(
-            {
-                "title": guide.title,
-                "kind": SearchRecordKind.GUIDE.value,
-                "detail": "the whole guide",
-                "url": _publication_root_route(guide).as_posix(),
-                "search": " ".join([guide.title, guide.lede] + [section.title for section in guide.sections]).lower(),
-            }
-        )
-        page_records.extend(
-            {
-                "title": section.title,
-                "kind": SearchRecordKind.GUIDE.value,
-                "detail": guide.title,
-                "url": _publication_section_route(guide, section).as_posix(),
-                "search": (f"{guide.title} {section.title} {section.lede}").lower(),
-            }
-            for section in guide.sections
-        )
-    return wiki_search_records(wiki_pages or []) + page_records + card_records
-
-
 def _wiki_manifest(pages: list[WikiPage]) -> list[dict[str, str]]:
     manifest = [
         {
@@ -2308,70 +2130,6 @@ def _wiki_manifest(pages: list[WikiPage]) -> list[dict[str, str]]:
     if len(routes) != len(set(routes)):
         raise ValueError("wiki page route collision")
     return manifest
-
-
-def _generate_data(
-    pandoc: PandocServer,
-    con: sqlite3.Connection,
-) -> list[dict]:
-    """Every problem as a selectable exam question: statement HTML + facets.
-
-    The statement is recovered from the card AST (never the flattened section
-    text, which loses the math) with a single batched pandoc call rather than one
-    per problem, and each problem carries the areas and institutions it is filed
-    under so the generator can select the way make-me-a-qual did -- by area.
-
-    The sheet is statements only, so the AST goes through `_statement_only`
-    first. `_html_ast` is the tag-page extraction and is wrong here: it hides
-    answers behind a disclosure the reader can open, which on a printed practice
-    sheet means printing them."""
-    problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
-    areas: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
-    for r in _rows(con, "select card_id, term from classifications where axis='area'"):
-        if r["card_id"] in areas:
-            areas[r["card_id"]].append(r["term"])
-    topics: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
-    for r in _rows(con, "select card_id, term from classifications where axis='topic'"):
-        if r["card_id"] in topics:
-            topics[r["card_id"]].append(r["term"])
-    insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
-    years: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
-    sources: dict[str, dict[str, tuple[str, str]]] = {problem["id"]: {} for problem in problems}
-    for r in _rows(
-        con,
-        """
-        select cp.problem_id pid, e.institution inst, s.year, cp.collection_id as source_id, c.title source_title, c.route
-        from collection_problems cp
-        join sources s on s.id=cp.collection_id
-        join cards c on c.id=cp.collection_id
-        left join exam_sources e on e.id=cp.collection_id
-        """,
-    ):
-        if r["pid"] in insts:
-            if r["inst"]:
-                insts[r["pid"]].add(r["inst"])
-            if r["year"] is not None:
-                years[r["pid"]].add(str(r["year"]))
-            sources[r["pid"]][r["source_id"]] = (r["source_title"], r["route"])
-    bodies = _successful_html_outputs(
-        pandoc.write_html([_statement_ast(problem["ast"]) for problem in problems]),
-        "generator statement HTML write",
-    )
-    out = []
-    for r, body in zip(problems, bodies, strict=True):
-        stmt = body.strip()
-        out.append(
-            {
-                "id": r["id"],
-                "areas": areas[r["id"]],
-                "topics": topics[r["id"]],
-                "insts": sorted(insts[r["id"]]),
-                "years": sorted(years[r["id"]]),
-                "sources": [{"id": source_id, "title": title, "route": route} for source_id, (title, route) in sorted(sources[r["id"]].items())],
-                "q": stmt,
-            }
-        )
-    return out
 
 
 GENERATE_QMD = """---
@@ -2417,51 +2175,77 @@ title: Generate a practice set
       and typeset here.</p>
   </div>
 </div>
-<script>
-const QDATA=__GENDATA__;
-const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
-const escapeHtml=(value)=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
-const label=(value)=>value.replaceAll("-"," ").replace(/\\b\\w/g,(letter)=>letter.toUpperCase());
-// The registry names, in the order Browse offers them. Reading the areas out of
-// the problem data instead gave the same six in whatever order the first
-// problem carrying each happened to appear.
+<script type="module">
+// The generator asks the index which problems match, samples from the answer,
+// and fetches only the ones it drew. It used to be handed the statement of
+// every problem on the site -- 5.1MB of script -- so it could pick eight.
 const AREAS=__AREANAMES__;
-const topics=[...new Set(QDATA.flatMap(q=>q.topics))].filter(Boolean).sort();
-const years=[...new Set(QDATA.flatMap(q=>q.years))].filter(Boolean).sort((a,b)=>Number(b)-Number(a));
+const escapeHtml=(value)=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
+const pagefind=await import("./pagefind/pagefind.js");
+await pagefind.options({});
+const available=await pagefind.filters();
+const values=(axis)=>Object.keys(available[axis]||{});
+
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
   .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
     value="${escapeHtml(k)}"> ${escapeHtml(v)}</label>`)
   .join("");
-document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${escapeHtml(i)}">${escapeHtml(i.toUpperCase())}</option>`).join("");
-document.getElementById("gen-topic").innerHTML='<option value="">Any</option>'+topics.map(t=>`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join("");
-document.getElementById("gen-year").innerHTML='<option value="">Any</option>'+years.map(y=>`<option value="${escapeHtml(y)}">${escapeHtml(y)}</option>`).join("");
+const fill=(id,items,label)=>{
+  document.getElementById(id).innerHTML='<option value="">Any</option>'+
+    items.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(label?label(v):v)}</option>`).join("");
+};
+fill("gen-inst",values("institution").sort());
+fill("gen-topic",values("topic").sort());
+fill("gen-year",values("year").sort((a,b)=>Number(b)-Number(a)));
+
 function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
-document.getElementById("gen-go").onclick=()=>{
+
+// The question, taken from the card's own page. The page marks it, so what
+// reaches a practice sheet is what the card asks and never what answers it.
+const statementOf=async (url)=>{
+  const response=await fetch(url);
+  if(!response.ok) return "";
+  const parsed=new DOMParser().parseFromString(await response.text(),"text/html");
+  const statement=parsed.querySelector(".card-statement");
+  return statement?statement.innerHTML:"";
+};
+
+document.getElementById("gen-go").onclick=async()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
   const inst=document.getElementById("gen-inst").value;
   const topic=document.getElementById("gen-topic").value;
   const year=document.getElementById("gen-year").value;
   const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
   const needSrc=document.getElementById("gen-src").checked;
-  let pool=QDATA.filter(q=>q.q.length>10
-    &&(!areas.length||q.areas.some(a=>areas.includes(a)))
-    &&(!inst||q.insts.includes(inst))
-    &&(!topic||q.topics.includes(topic))
-    &&(!year||q.years.includes(year))
-    &&(!needSrc||q.sources.length));
-  const pick=sample(pool,n);
   const sheet=document.getElementById("gen-sheet");
+  sheet.innerHTML='<p class="text-muted">Drawing…</p>';
+
+  const filters={kind:"problem"};
+  if(areas.length) filters.area={any:areas};
+  if(inst) filters.institution=inst;
+  if(topic) filters.topic=topic;
+  if(year) filters.year=year;
+  if(needSrc) filters.sourced="yes";
+  const found=await pagefind.search(null,{filters});
+  const pick=sample(found.results,n);
   if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
-  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"")+(topic?" · "+topic:"")+(year?" · "+year:"");
-  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${pick.length} problems · ${title}</p>`+
-    pick.map((q,i)=>`<div class="q">
+
+  const drawn=await Promise.all(pick.map(async(result)=>{
+    const data=await result.data();
+    return {data,statement:await statementOf(data.url)};
+  }));
+  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst:"")+(topic?" · "+topic:"")+(year?" · "+year:"");
+  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} problems · ${escapeHtml(title)}</p>`+
+    drawn.map(({data,statement},i)=>{
+      const sat=[(data.filters.institution||[]).join(", "),(data.filters.year||[]).join(", ")].filter(Boolean).join(" · ");
+      return `<div class="q">
       <div class="qn">${i+1}.</div>
-      <div class="qb">${q.q}
-        <div class="src">${q.sources.length?q.sources.map(s=>`<a href="${s.route}/${s.id}.html">${s.title}</a>`).join(", "):"No recorded exam"} ·
-          <a href="tag/${q.id}.html">${q.id}</a>
+      <div class="qb">${statement}
+        <div class="src">${escapeHtml(sat||"No recorded exam")} ·
+          <a href="${escapeHtml(data.url)}">${escapeHtml(data.url.split("/").pop().replace(".html",""))}</a>
         </div>
       </div>
-    </div>`).join("");
+    </div>`;}).join("");
   if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
 };
 document.getElementById("gen-print").onclick=()=>window.print();
@@ -2537,10 +2321,18 @@ def project(
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(card_page_data, card, jcache, appearances, mentions)
-        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, SearchDocument(_card_filters(card_page_data, card))))
+        document = SearchDocument(
+            _card_filters(card_page_data, card),
+            sort=(("listing", _listing_sort(card_page_data, card)),),
+        )
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
     for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
         meta, body = plain_json(card_page_data, card, jcache, appearances, mentions)
-        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, SearchDocument(_card_filters(card_page_data, card))))
+        document = SearchDocument(
+            _card_filters(card_page_data, card),
+            sort=(("listing", _listing_sort(card_page_data, card)),),
+        )
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
     write_json_pages(
         pandoc,
         tag_pages,
@@ -2552,23 +2344,47 @@ def project(
     )
 
     pages: list[PageItem] = []
+    # How much of a collection is worked is what a reader picking one is after,
+    # and the index cannot count it: it is carried as page metadata.
+    collection_facts = {
+        row["id"]: (
+            row["source_kind"],
+            f"{row['problems']} problems, {row['solved']} solved" if row["problems"] else "no problems listed",
+            f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['area']}",
+        )
+        for row in _rows(
+            con,
+            f"""
+            select s.id, s.source_kind,
+              coalesce(e.institution, '') as institution, coalesce(e.area, '') as area, s.year,
+              {TERM_RANK} as term_rank,
+              (select count(*) from collection_problems where collection_id=s.id) as problems,
+              (select count(*) from collection_problems cp
+               where cp.collection_id=s.id
+                 and (cp.problem_id in (select card_id from sections where section_kind='solution')
+                      or cp.problem_id in (select target_id from relations where kind='solves'))) as solved
+            from sources s left join exam_sources e on e.id=s.id
+            """,
+        )
+    }
     for src in _rows(con, "select * from cards where kind='collection'"):
+        kind, worked, order = collection_facts.get(src["id"], ("", "", ""))
         pages.append(
             (
                 collection_page(con, src, inline_cache),
                 out / src["route"] / f"{src['id']}.qmd",
-                StandardPage(SearchDocument(_card_filters(card_page_data, src))),
+                StandardPage(
+                    SearchDocument(
+                        _card_filters(card_page_data, src, (("source_kind", kind),) if kind else ()),
+                        (("worked", worked),) if worked else (),
+                        (("listing", order),),
+                    )
+                ),
             )
         )
 
-    generator_data = json.dumps(
-        _generate_data(pandoc, con),
-        separators=(",", ":"),
-    )
-    for unsafe, escaped in (("&", "\\u0026"), ("<", "\\u003c"), (">", "\\u003e")):
-        generator_data = generator_data.replace(unsafe, escaped)
     used_areas = {row["term"] for row in _rows(con, "select term from classifications where axis='area'")}
-    generate_qmd = GENERATE_QMD.replace("__GENDATA__", generator_data).replace(
+    generate_qmd = GENERATE_QMD.replace(
         "__AREANAMES__",
         json.dumps({area: area_names[area] for area in sorted(used_areas, key=lambda a: area_names[a])}, separators=(",", ":")),
     )
@@ -2626,14 +2442,14 @@ def project(
 
     pages.append(
         (
-            problem_browser_page(con, inline_cache, area_names),
+            problem_browser_page(con, area_names),
             out / "problems.qmd",
             StandardPage(Listing()),
         ),
     )
     pages.append(
         (
-            source_index_page(con, inline_cache, area_names),
+            source_index_page(con, area_names),
             out / "exams.qmd",
             StandardPage(Listing()),
         ),
@@ -2693,5 +2509,4 @@ def project(
                 link_targets,
                 assets,
             )
-    write_search_index(site_root, _search_records(con, guides, wiki_pages))
     con.close()

@@ -3,6 +3,7 @@ and the order and shape a listing page presents its contents in."""
 
 from __future__ import annotations
 
+import html
 import json
 import re
 from html.parser import HTMLParser
@@ -13,6 +14,15 @@ from conftest import fixture_repo, run_qualc
 from qualc.emit import mathjax_header
 from qualc.static_site import Listing, StandardPage, build_asset_catalog, write_page
 from test_invariants import Element, read_html
+
+LISTING_KEY = re.compile(r'data-pagefind-sort="listing:([^"]*)"')
+
+
+def listing_key(page: Path) -> str:
+    """The order key a page carries, which is the order its listing shows."""
+    match = LISTING_KEY.search(page.read_text())
+    assert match is not None, f"no listing sort key on {page}"
+    return html.unescape(match.group(1))
 
 
 def _mathjax_macros(header: str) -> dict[str, str]:
@@ -234,7 +244,8 @@ def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(tmp_path:
     """Spring 2019 was sat before Fall 2019, so it is listed first.
 
     Ordering by card id put Fall ahead of Spring in every year on the real
-    site, because `FALL` precedes `SPRING`.
+    site, because `FALL` precedes `SPRING`. The listing asks the index for the
+    rows it shows, so the order it shows them in is the key each page carries.
     """
     work = fixture_repo(
         tmp_path,
@@ -247,15 +258,11 @@ def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(tmp_path:
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    links = LinkCollector()
-    links.feed((work / "build" / "quarto" / "_site" / "exams.html").read_text())
+    site = work / "build" / "quarto" / "_site"
     # SRC-UGA-FIX is the fixture corpus's own Spring 2019 sitting.
-    sittings = [href for href in links.hrefs if href.startswith("exam/SRC-UGA")]
-    assert sittings == [
-        "exam/SRC-UGA-FIX.html",
-        "exam/SRC-UGA-FALL-2019.html",
-        "exam/SRC-UGA-SPRING-2020.html",
-    ]
+    sittings = ["SRC-UGA-FIX", "SRC-UGA-FALL-2019", "SRC-UGA-SPRING-2020"]
+    keyed = sorted(sittings, key=lambda name: listing_key(site / "exam" / f"{name}.html"))
+    assert keyed == sittings
 
 
 FORMULA_TITLED_PROBLEM = """---
@@ -291,20 +298,17 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
-    browser = page.root.find_all("div", **{"class": "listing"})[0]
-    order = [
-        child.find_all("h2")[0].text if child.attrs["class"].startswith("listing-group") else child.find_all("a")[0].attrs["href"]
-        for child in browser.children
-        if isinstance(child, Element)
-    ]
-    assert order[0] == "Algebra"
-    assert order.index("tag/P-PACKET-1.html") < order.index("tag/P-PACKET-2.html")
+    site = work / "build" / "quarto" / "_site"
+    prose = listing_key(site / "tag" / "P-PACKET-1.html")
+    formula = listing_key(site / "tag" / "P-PACKET-2.html")
+    assert prose.startswith("algebra|"), prose
+    assert prose < formula, (prose, formula)
 
-    # Every row opts out of the initial MathJax pass; app.js typesets a row when
-    # it is scrolled near. All 4921 at once cost ten seconds before a reader
-    # could touch the filter.
-    assert len(browser.find_all("div", **{"class": "listing-row mathjax_ignore"})) == len(order) - 1
+    # The page carries the controls and nothing else: the rows come from the
+    # index, a page of them at a time.
+    page = (site / "problems.html").read_text()
+    assert 'id="listing-results"' in page
+    assert "listing-row" not in page
 
 
 def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) -> None:
@@ -312,33 +316,30 @@ def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) 
 
     Munkres, 586 problems and the largest collection on the site, was one of the
     43 that appeared on no index at all: a reader reached it from a problem card
-    or not at all.
+    or not at all. The index now answers the listing, so what puts a collection
+    on it is the filter its own page carries.
     """
     work = fixture_repo(tmp_path)
 
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    page = read_html(work / "build" / "quarto" / "_site" / "exams.html")
-    body = page.root.find_all("article", **{"class": "page-body"})[0]
-    headings = [h.text for h in body.find_all("h2")]
-    assert headings == [
-        "University exams (1)",
-        "Compiled scans (1)",
-        "Homework sets (1)",
-        "Textbooks (1)",
-    ]
-
-    links = LinkCollector()
-    links.feed((work / "build" / "quarto" / "_site" / "exams.html").read_text())
+    site = work / "build" / "quarto" / "_site"
     # A sitting is under `exam/`. A compilation, a homework sheet and a textbook
     # are not exams, and calling their pages exams is what `source/` fixes.
-    assert {href for href in links.hrefs if href.startswith(("exam/", "source/"))} == {
-        "exam/SRC-UGA-FIX.html",
-        "source/SRC-NEILNOTES.html",
-        "source/SRC-HW.html",
-        "source/SRC-DUMMIT.html",
+    filed = {
+        "exam/SRC-UGA-FIX.html": "university-exam",
+        "source/SRC-NEILNOTES.html": "compilation",
+        "source/SRC-HW.html": "homework",
+        "source/SRC-DUMMIT.html": "textbook",
     }
+    for route, kind in filed.items():
+        page = (site / route).read_text()
+        assert f'data-pagefind-filter="source_kind:{kind}"' in page, route
+        assert "data-pagefind-body" in page, route
+
+    offered = read_html(site / "exams.html").root.find_all("select", id="listing-source_kind")[0]
+    assert {option.attrs["value"] for option in offered.find_all("option")} == set(filed.values())
 
 
 def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
@@ -382,6 +383,5 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
     assert embedded is not None, "the generator must embed the area names"
     assert list(json.loads(embedded.group(1)).items()) == browse
 
-    # The heading over a group of problems is the same name.
-    groups = read_html(site / "problems.html").root.find_all("section", **{"class": "listing-group"})
-    assert [group.find_all("h2")[0].text for group in groups] == ["Abstract Algebra"]
+    # A row shows the same name, which it reads off the control rather than
+    # being sent a second copy of.

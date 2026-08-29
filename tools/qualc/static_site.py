@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import os
 import posixpath
 import re
@@ -128,12 +127,18 @@ class PublicationNavigation:
 class SearchDocument:
     """A page search returns, and the filter values it answers under.
 
-    Each pair is one `axis, value`; an axis may repeat, because a card is filed
-    under several topics. The values are written into attributes rather than
-    into text, so nothing here is added to what the page says.
+    Each filter pair is one `axis, value`; an axis may repeat, because a card is
+    filed under several topics. `meta` carries what a listing shows about the
+    page and cannot work out from the filters -- how much of a collection is
+    solved, say, and `sort` carries the key a listing puts its rows in order by
+    when the reader has typed nothing to rank them against. All three are
+    written into attributes rather than into text, so nothing here is added to
+    what the page says.
     """
 
     filters: tuple[tuple[str, str], ...]
+    meta: tuple[tuple[str, str], ...] = ()
+    sort: tuple[tuple[str, str], ...] = ()
 
 
 @dataclass(frozen=True)
@@ -196,7 +201,7 @@ PAGE_ASSETS = """<link rel="stylesheet" href="{prefix}styles.css">
   <script defer src="{prefix}app.js"></script>"""
 
 
-def _search_document(filters: tuple[tuple[str, str], ...]) -> tuple[str, str]:
+def _search_document(document: SearchDocument) -> tuple[str, str]:
     """How the indexer is told this page is a result, and what it answers under.
 
     Pagefind indexes only the pages that carry `data-pagefind-body` once any
@@ -204,7 +209,9 @@ def _search_document(filters: tuple[tuple[str, str], ...]) -> tuple[str, str]:
     A filter written as `axis:value` takes its value from the attribute, so the
     carrier elements stay empty and contribute nothing to the indexed text.
     """
-    carriers = "".join(f'<span data-pagefind-filter="{escape(axis, quote=True)}:{escape(value, quote=True)}"></span>' for axis, value in filters)
+    carriers = "".join(f'<span data-pagefind-filter="{escape(axis, quote=True)}:{escape(value, quote=True)}"></span>' for axis, value in document.filters)
+    carriers += "".join(f'<span data-pagefind-meta="{escape(name, quote=True)}:{escape(value, quote=True)}"></span>' for name, value in document.meta)
+    carriers += "".join(f'<span data-pagefind-sort="{escape(name, quote=True)}:{escape(value, quote=True)}"></span>' for name, value in document.sort)
     return " data-pagefind-body", f'<div class="search-facets" hidden>{carriers}</div>'
 
 
@@ -588,14 +595,14 @@ def page_document(
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
     subtitle_html = f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
     match chrome:
-        case StandardPage(role=SearchDocument(filters=filters)):
+        case StandardPage(role=SearchDocument() as document):
             base_html = ""
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = ""
             breadcrumb_html = ""
             reading_order_html = ""
             layout_class = "page-layout"
-            indexed, facet_html = _search_document(filters)
+            indexed, facet_html = _search_document(document)
         case StandardPage(role=Listing()):
             base_html = ""
             asset_html = PAGE_ASSETS.format(prefix=prefix)
@@ -614,7 +621,7 @@ def page_document(
             layout_class = "page-layout"
         case SubjectPage(navigation=navigation):
             base_html = ""
-            indexed, facet_html = _search_document((("kind", "guide"),))
+            indexed, facet_html = _search_document(SearchDocument((("kind", "guide"),)))
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _subject_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
@@ -622,7 +629,7 @@ def page_document(
             layout_class = "page-layout subject-layout"
         case AuthoredPage(navigation=navigation):
             base_html = ""
-            indexed, facet_html = _search_document((("kind", "wiki"),))
+            indexed, facet_html = _search_document(SearchDocument((("kind", "wiki"),)))
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _wiki_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
@@ -641,7 +648,7 @@ def page_document(
   {mathjax_header}
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 </head>
-<body data-search-index="{prefix}search.json">
+<body data-site-root="{prefix}">
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
       <a class="site-brand" href="{prefix}index.html">Qual Corpus</a>
@@ -718,5 +725,3 @@ def write_page(
     )
 
 
-def write_search_index(site_root: Path, records: list[dict[str, object]]) -> None:
-    (site_root / "search.json").write_text(json.dumps(records, ensure_ascii=False, separators=(",", ":")))

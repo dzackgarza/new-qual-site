@@ -76,23 +76,33 @@ A sheet exists to list the problems it set.
 """
 
 
-def test_the_browser_and_the_generator_offer_the_same_problems(tmp_path: Path) -> None:
-    """Both read the catalog, and a problem in one but not the other is a defect.
+def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) -> None:
+    """Browse and the generator both ask the index, so both offer what it holds.
 
-    The generator used to derive its own area list from whatever the problem
-    data happened to carry, which is the shape this guards against.
+    Each used to carry its own copy of the problem set -- the browser as rows,
+    the generator as a script literal -- and a problem in one and not the other
+    was the defect this guarded against. There is one copy now, and what makes
+    it right is that every problem's page is a document filed under `problem`
+    and no other page is.
     """
     site, con = built(tmp_path)
     catalog = {r["id"] for r in con.execute("select id from cards where kind='problem'")}
     assert catalog, "the fixture must carry problems for this to mean anything"
 
-    browser = set(CARD_LINK.findall((site / "problems.html").read_text()))
-    embedded = re.search(r"const QDATA=(\[.*?\]);", (site / "generate.html").read_text(), re.S)
-    assert embedded is not None, "the generator must embed its problems"
-    generator = {q["id"] for q in json.loads(embedded.group(1))}
+    indexed = set()
+    for page in sorted(site.rglob("*.html")):
+        text = page.read_text()
+        if 'data-pagefind-filter="kind:problem"' not in text:
+            continue
+        assert "data-pagefind-body" in text, f"{page} is filed as a problem but is not a document"
+        indexed.add(page.stem)
+    assert indexed == catalog, f"the index and the catalog differ by {sorted(indexed ^ catalog)}"
 
-    assert browser >= catalog, f"the browser drops {sorted(catalog - browser)}"
-    assert generator == catalog, f"the generator and the catalog differ by {sorted(generator ^ catalog)}"
+    # Neither listing carries the rows any more; both ask for them.
+    for listing in ("problems.html", "generate.html"):
+        markup = (site / listing).read_text()
+        assert "data-pagefind-body" not in markup, f"{listing} is a listing, not a result"
+        assert "pagefind" in markup or "app.js" in markup, f"{listing} must read the index"
 
 
 def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:

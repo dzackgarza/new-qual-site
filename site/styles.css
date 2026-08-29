@@ -355,7 +355,7 @@ mjx-container[display="true"] {
   max-width: var(--measure);
 }
 
-.page-body :is(figure, table, mjx-container[display="true"]) {
+.page-body :is(figure, table, mjx-container[display="true"], .listing, .listing-row, .listing-filters) {
   max-width: 100%;
 }
 
@@ -616,6 +616,10 @@ mjx-container[display="true"] {
   display: grid;
   gap: 0.45rem;
   margin-top: 1rem;
+  /* The rows are list items now: the index answers with a list of results,
+     where the page used to hold every row and hide most of them. */
+  padding-left: 0;
+  list-style: none;
   /* A row's three columns fit or they do not, and what decides that is the
      width of this list, not the width of the window: the on-this-page rail
      takes a fixed slice of the page above 56rem and none below it. A viewport
