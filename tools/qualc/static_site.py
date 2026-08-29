@@ -723,5 +723,3 @@ def write_page(
             chrome,
         )
     )
-
-

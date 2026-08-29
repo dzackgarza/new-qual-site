@@ -1014,7 +1014,10 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
 
 - [ ] Decide the supported `tikzcd` boundary.
 
-- [ ] Decide whether facets need separate typed controls.
+- [x] Decide whether facets need separate typed controls.
+  No: one control per axis, and the axes come from the page rather than from the script.
+  Browse and Generate had two sets of controls over the same facets because each carried its own copy of the corpus to filter.
+  Both ask the index now, so both offer what it holds.
 
 ### Repair rendered-page residue
 
@@ -1053,7 +1056,8 @@ Owner: [issue #30](https://github.com/dzackgarza/new-qual-site/issues/30)
 - [ ] Confirm that local and deployed artifacts use the same revision.
 
 - [ ] Record every unexercised path and nonclaim.
-  Not exercised: printing a generated sheet, the site with JavaScript off, and any browser other than Chromium.
+  Not exercised: printing a generated sheet, and any browser other than Chromium.
+  Not supported: the site with JavaScript off. Browse, the source index, the search dialog and the generator all ask the index for the rows in front of the reader, so with no script they show their controls and nothing under them. Every card, wiki page and collection is still a page of its own, reachable by link from the home page, which the crawl holds.
   Not claimed: that the mathematics on a page is correct, only that it renders; and that a card's title names what the card asks, which [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) owns for 315 title groups.
 
 Owner [issue #6](https://github.com/dzackgarza/new-qual-site/issues/6) closes only after all publication and subject-branch obligations hold.

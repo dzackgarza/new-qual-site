@@ -710,5 +710,3 @@ def _page_detail(page: WikiPage) -> str:
     if parts[-1] == "index" and len(parts) > 1:
         parts = parts[:-1]
     return "/".join(parts[-2:])
-
-
