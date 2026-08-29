@@ -11,18 +11,51 @@ classification:
   - Field Extensions
   - Solvable Groups
 relations: []
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 review: draft
 ---
 
 ::: problem
-Suppose $F = K[\alpha_1, \cdots, \alpha_n]$ where $\alpha_1^{n_1} \in K$ for some $n_1$ and for each $i$ we have $\alpha_i^{n_i} \in K[\alpha_1, \cdots, \alpha_{i-1}]$ for some powers $n_i$.
+Suppose $F = K[\alpha_1, \cdots, \alpha_n]$ where $\alpha_1^{n_1} \in K$ for some $n_1$ and for each $i$ we have $\alpha_i^{n_i} \in K[\alpha_1, \cdots \alpha_{i-1}]$ for some powers $n_i$.
 We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satisfies a similar condition.
+:::
 
-Let $A = \theset{\alpha_i \suchthat \alpha_i \not\in E}$.
-Since $E \injects F$, adjoining all elements of $A$ to $E$ yields exactly $F$.
-Using the order of $\alpha_i$ given by the definition of $F$ as a radical extension, let $\beta_1$ be the $\alpha_i \in A$ with the smallest index $i$.
-Then by assumption, there is some $m_1$ such that $\beta_1^{m_1} \in K[\alpha_1, \cdots, \alpha_{i-1}] \subset F$, so we can construct $F_1 \definedas E[\beta_1]$ which will be a radical extension.
+::: solution
+Let
+\[
+S=\{\alpha_i\in F:\alpha_i\notin E\}.
+\]
+Since $F=K(\alpha_1,\dots,\alpha_n)$ and $K\subseteq E$, adjoining all elements of $S$ to $E$ gives
+\[
+F=E(S).
+\]
+Write the elements of $S$ in increasing index order
+\[
+\alpha_{i_1},\alpha_{i_2},\dots,\alpha_{i_m},\qquad i_1<i_2<\cdots<i_m.
+\]
+Define recursively
+\[
+E_0:=E,\qquad E_r:=E_{r-1}(\alpha_{i_r}),\ r=1,\dots,m.
+\]
 
-Inductively letting $A_2 = A \setminus\theset{\beta_1}$ and repeating this process to construct $F_2, F_3, \ldots$ will yield radical extensions at every step, and since $A$ is finite, there is some $N$ such that $F_N = F$.
-But then $F$ is a radical extension over $E$ as desired.
+For each $r$, by hypothesis
+\[
+\alpha_{i_r}^{n_{i_r}}\in K[\alpha_1,\dots,\alpha_{i_r-1}]
+\]
+for some $n_{i_r}>0$.
+Every factor $\alpha_j$ with $j<i_r$ either belongs to $E$ or is among
+$\alpha_{i_1},\dots,\alpha_{i_{r-1}}$, so
+\[
+K[\alpha_1,\dots,\alpha_{i_r-1}] \subseteq E_{r-1}.
+\]
+Hence $\alpha_{i_r}^{n_{i_r}}\in E_{r-1}$ and $E_r=E_{r-1}(\alpha_{i_r})$ is a radical extension.
+
+After $m$ steps,
+\[
+E_m=E(\alpha_{i_1},\dots,\alpha_{i_m})=E(S)=F.
+\]
+So $F=E[\beta_1,\dots,\beta_m]$ with $\beta_r=\alpha_{i_r}$ and the required radical conditions.
 :::
