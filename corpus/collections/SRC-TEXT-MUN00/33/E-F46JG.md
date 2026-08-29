@@ -11,6 +11,10 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -47,4 +51,39 @@ for all $k$ and $n$.
 Proceed as in the Urysohn lemma.
 
 This exercise is adapted from [M-Z], to which the reader is referred for further results on topological groups.
+:::
+
+::: {.solution}
+<1>1. We must show $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k$ and $n$.
+Proof: the claim to prove.
+
+<1>2. We prove by induction on $n$. For $n = 0$: $U(0) = \varnothing$ and $U(1) = V_0$, so $V_0 \cdot U(0) = \varnothing \subset U(1)$.
+Proof: base case.
+
+<1>3. Assume the claim holds for $n$; we prove it for $n+1$.
+Proof: induction step.
+
+<1>4. For $k$ even, $k = 2j$: $U(k/2^{n+1}) = U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$.
+Proof: the definitions.
+
+<1>5. Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot U(j/2^n) = U((k+1)/2^{n+1})$.
+Proof: <1>4.
+
+<1>6. For $k$ odd, $k = 2j+1$: $U(k/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+2)/2^{n+1}) = U((j+1)/2^n)$.
+Proof: the definitions.
+
+<1>7. Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot V_{n+1} \cdot U(j/2^n) \subset V_n \cdot U(j/2^n) \subset U((j+1)/2^n) = U((k+1)/2^{n+1})$.
+Proof: <1>6, using $V_{n+1} \cdot V_{n+1} \subset V_n$ and the induction hypothesis.
+
+<1>8. Hence $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k, n$.
+Proof: <1>2, <1>5, <1>7.
+
+<1>9. Proceeding as in the Urysohn lemma, this defines a continuous function $f : G \to [0,1]$ with $f(e) = 0$ and $f = 1$ outside $V_0$, separating $e$ from the closed set $G \setminus V_0$.
+Proof: the Urysohn-lemma construction using the nested open sets $U(p)$.
+
+<1>10. Hence $G$ is completely regular.
+Proof: <1>9 (every point can be separated from a closed set by a continuous function, using translation invariance).
+
+<1>11. Q.E.D.
+Proof: <1>8 and <1>10.
 :::

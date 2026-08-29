@@ -10,6 +10,10 @@ classification:
   - Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -21,4 +25,57 @@ Prove that if $[L:F] = n!$ then:
 (b) For each root $r$ of $f$, $r$ is the unique root of $f$ in $F(r)$.
 
 (c) For every root $r$ of $f$, there are no proper intermediate fields $F \subset \mathfrak{L} \subset F(r)$.
+:::
+
+::: {.solution}
+<1>1. $[L : F] = n!$ and $L$ is the splitting field of a separable degree-$n$ polynomial, so $|\operatorname{Gal}(L/F)| = [L:F] = n!$.
+Proof: $L/F$ is Galois (splitting field of a separable polynomial), so $|\operatorname{Gal}(L/F)| = [L:F]$.
+
+<1>2. $\operatorname{Gal}(L/F)$ embeds into $S_n$ (it permutes the $n$ roots), and $|S_n| = n!$.
+Proof: the Galois group acts faithfully on the $n$ roots.
+
+<1>3. Hence $\operatorname{Gal}(L/F) \cong S_n$.
+Proof: <1>1 and <1>2 (a subgroup of $S_n$ of order $n!$ is all of $S_n$).
+
+**(a).**
+
+<1>1. $S_n$ acts transitively on the $n$ roots.
+Proof: $S_n$ is transitive.
+
+<1>2. Hence $f$ is irreducible.
+Proof: the Galois group acts transitively on the roots iff $f$ is irreducible.
+
+**(b).**
+
+<1>1. Let $r$ be a root of $f$, and let $H = \operatorname{Gal}(L/F(r))$ be its stabilizer.
+Proof: the stabilizer of $r$ under the $S_n$-action.
+
+<1>2. $H \cong S_{n-1}$ (the stabilizer of one point in $S_n$).
+Proof: <1>3 (a) (the stabilizer of a point in $S_n$ is $S_{n-1}$).
+
+<1>3. The roots of $f$ lying in $F(r)$ correspond to the fixed points of $H$ acting on the $n$ roots.
+Proof: a root $s$ lies in $F(r)$ iff it is fixed by $\operatorname{Gal}(L/F(r)) = H$.
+
+<1>4. $H = S_{n-1}$ fixes exactly one point (the point $r$).
+Proof: $S_{n-1}$ acting on $\{1, \ldots, n\}$ fixes only the point $n$ (the one not permuted).
+
+<1>5. Hence $r$ is the unique root of $f$ in $F(r)$.
+Proof: <1>3 and <1>4.
+
+**(c).**
+
+<1>1. An intermediate field $F \subset \mathfrak{L} \subset F(r)$ corresponds to a subgroup $K$ with $H \le K \le S_n$ (where $H = S_{n-1}$).
+Proof: Galois correspondence.
+
+<1>2. $S_{n-1}$ is a maximal subgroup of $S_n$.
+Proof: standard fact (the stabilizer of a point is maximal in $S_n$).
+
+<1>3. Hence there is no subgroup strictly between $H = S_{n-1}$ and $S_n$.
+Proof: <1>2.
+
+<1>4. Therefore there are no proper intermediate fields $F \subsetneq \mathfrak{L} \subsetneq F(r)$.
+Proof: <1>1 and <1>3.
+
+<1>5. Q.E.D.
+Proof: <1>2 (a), <1>5 (b), <1>4 (c).
 :::
