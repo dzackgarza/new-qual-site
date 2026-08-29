@@ -25,8 +25,7 @@ Further, show that this inequality is strict for all $z \in \mathbb{D} \setminus
 ::: {.solution}
 **Goal.** Prove $|f(z) + f(-z)| \le 2|z|^2$ and characterize equality.
 
-<1>1. Write $f(z) = \sum_{n=1}^\infty a_n z^n$ (since $f(0) = 0$).
-Proof: Taylor expansion of $f$ at $0$.
+<1>1. Write $f(z) = \sum_{n=1}^\infty a_n z^n$ (since $f(0) = 0$). Proof: Taylor expansion of $f$ at $0$.
 
 <1>2. $f(z) + f(-z) = 2\sum_{k=1}^\infty a_{2k} z^{2k}$ (the odd terms cancel).
 Proof: $f(-z) = \sum a_n (-z)^n$, so $f(z) + f(-z) = \sum a_n (1 + (-1)^n) z^n = 2\sum a_{2k} z^{2k}$.
@@ -36,8 +35,7 @@ Proof: divide by $2z^2$; $g$ is holomorphic on $\DD$ (the series starts at $k=1$
 
 <1>4. $g: \DD \to \DD$ (a holomorphic self-map of the disk).
 <2>1. $g$ is holomorphic on $\DD$.
-Proof: <1>3.
-<2>2. $|g(z)| \le 1$ for all $z \in \DD$.
+Proof: <1>3. <2>2. $|g(z)| \le 1$ for all $z \in \DD$.
 Proof: for $|z| = r < 1$, $|g(z)| = \frac{|f(z)+f(-z)|}{2r^2} \le \frac{|f(z)|+|f(-z)|}{2r^2} < \frac{2}{2r^2} = \frac{1}{r^2}$; by the maximum modulus principle on $|z| \le r$ and letting $r \to 1^-$, $|g(z)| \le 1$.
 
 <1>5. Hence $|f(z) + f(-z)| = 2|z|^2 |g(z)| \le 2|z|^2$.
@@ -51,6 +49,5 @@ Proof: a holomorphic function attaining its maximum modulus at an interior point
 <2>3. Hence $g \equiv c$ with $|c| = 1$, so $f(z) + f(-z) = 2cz^2$.
 Proof: $f(z) + f(-z) = 2z^2 g(z) = 2cz^2$.
 
-<1>7. Q.E.D.
-Proof: <1>5 gives the inequality; <1>6 gives the equality case.
+<1>7. Q.E.D. Proof: <1>5 gives the inequality; <1>6 gives the equality case.
 :::
