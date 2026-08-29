@@ -38,8 +38,7 @@ Proof: statement of the theorem.
 Proof: subtract.
 
 <1>2. Let $C = A - B$; then $x^H C x = 0$ for all $x$ implies $C = 0$.
-<2>1. $C$ is Hermitian (or, more generally, the condition $x^H C x = 0$ for all $x$ forces $C = 0$).
-Proof: if $x^H C x = 0$ for all $x$, then by polarization, $x^H C y = 0$ for all $x, y$ (using $x^H C x = 0$ for all $x$ and the polarization identity), so $C = 0$.
+<2>1. $C$ is Hermitian (or, more generally, the condition $x^H C x = 0$ for all $x$ forces $C = 0$). Proof: if $x^H C x = 0$ for all $x$, then by polarization, $x^H C y = 0$ for all $x, y$ (using $x^H C x = 0$ for all $x$ and the polarization identity), so $C = 0$.
 <2>2. Hence $A = B$.
 Proof: <2>1.
 
@@ -51,6 +50,5 @@ Proof: $B = 0$.
 <2>3. But $A \neq B$.
 Proof: $A \neq 0$.
 
-<1>4. Q.E.D.
-Proof: <1>2 (b) and <1>3 (counterexample).
+<1>4. Q.E.D. Proof: <1>2 (b) and <1>3 (counterexample).
 :::
