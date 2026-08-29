@@ -11,6 +11,10 @@ classification:
   - Homotopy
   - Quotient Spaces
 relations: []
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 review: draft
 ---
 
@@ -44,4 +48,22 @@ Continuous as product of continuous functions, need to check injective/surjectiv
 Need to check injective/surjective, show that kernel is $S^1 \cross 1$, then use first isomorphism theorem.)
 
 But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
+:::
+
+::: solution
+**Theorem.**  
+If $X$ is path connected and $\pi_1(X)=0$, then every map $f:S^1\to X$ extends over $D^2$.
+
+*Proof.*
+
+1. A map $f:S^1\to X$ extends to $D^2$ exactly when its class in
+   $[S^1,X]_*= [S^1,x_0]\cong \pi_1(X,x_0)$ is trivial after choosing any basepoint $x_0$ in the component of $f(S^1)$.
+2. Since $\pi_1(X,x_0)=0$, this class is trivial for every $f$.
+3. Therefore $f$ is null-homotopic to a constant map.
+4. The quotient $q:S^1\times I\to S^1\times I/(S^1\times\{1\})\cong D^2$ is a cofiber map.
+   The homotopy from (3) gives $H:S^1\times I\to X$ with $H(\cdot,0)=f$ and $H(\cdot,1)=x_0$.
+   Since $H$ is constant on $S^1\times\{1\}$, it descends through $q$ to
+   $\hat H:D^2\to X$.
+
+Hence $f$ extends to $D^2$. ∎
 :::
