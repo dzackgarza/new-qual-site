@@ -25,38 +25,66 @@ Prove that $\mu$ is Radon if and only if for all convergent subsequences $\{x_{j
 :::
 
 ::: solution
-Write the measure as
-\[
-\mu=\sum_{j\ge1} c_j\delta_{x_j}.
-\]
+**Theorem.**  
+Let
+$$\mu=\sum_{j\ge1} c_j\delta_{x_j},\qquad c_j>0.$$
+Then $\mu$ is Radon iff every convergent subsequence $\{x_{j_k}\}$ satisfies
+$$
+\sum_{k=1}^\infty c_{j_k}<\infty.
+$$
 
-($\Rightarrow$) If $\mu$ is Radon, it is locally finite.  
-Let $\{x_{j_k}\}$ converge to $x$. Then
-\[
-K:=\{x\}\cup\{x_{j_k}:k\ge1\}
-\]
-is compact in $\mathbb R^n$, so $\mu(K)<\infty$.
-Because atoms at distinct points are disjoint,
-\[
+*Proof.* We prove both implications.
+
+**Lemma 1.**  
+If $\mu$ is Radon, then every convergent subsequence has finite mass.
+
+*Proof.*  
+Let $\{x_{j_k}\}$ be convergent and set
+$$
+K:=\{x\}\cup\{x_{j_k}:k\ge1\}.
+$$
+Radon means locally finite, hence compact sets have finite measure.
+Therefore $\mu(K)<\infty$ and because the atoms at distinct points are disjoint,
+$$
 \sum_{k=1}^\infty c_{j_k}\le \mu(K)<\infty.
-\]
+$$
+So the subseries is finite. ∎
 
-($\Leftarrow$) Assume every convergent subsequence has finite weight.
-To show $\mu$ is Radon on $\mathbb R^n$, it is enough to show $\mu(K)<\infty$ for every compact $K$.
+**Lemma 2.**  
+If every convergent subsequence has finite mass, then every compact set $C\subseteq\mathbb R^n$ has $\mu(C)<\infty$.
 
-Suppose some compact $K$ has $\mu(K)=\infty$.
-Since $K$ is infinite as a support set for the atoms, choose a convergent sequence
-$x_{j_k}\in K$ with limit $x\in K$ such that
-\[
-\sum_{k=1}^\infty c_{j_k}=\infty.
-\]
-This is possible by picking, for each $m$, a finite set of points in
-$K\cap B(x,1/m)$ with total mass $>1$ and ordering these finite blocks for
-decreasing radii; concatenating them gives a sequence converging to $x$ with
-divergent total mass.
-This contradicts the hypothesis.
+*Proof.*  
+Assume some compact $C$ has $\mu(C)=\infty$ and fix a point $x\in C$.
+By compactness, if every $r>0$ satisfies $\mu(C\cap B(x,r))<\infty$, then a finite cover by such balls would force $\mu(C)<\infty$.
+Hence for this $x$, there exists a radius sequence $r_m\downarrow0$ such that
+$$
+\mu\bigl(C\cap B(x,r_m)\bigr)=\infty.
+$$
+Choose disjoint finite index blocks
+$$
+I_m\subseteq\{j:x_j\in C\cap B(x,r_m)\},\qquad
+\max I_{m-1}<\min I_m,
+$$
+with
+$$
+\sum_{j\in I_m}c_j>1.
+$$
+The concatenation of indices in $I_1,I_2,\dots$ gives a convergent subsequence
+$\{x_{j_k}\}$ with limit $x$, and selected mass
+$$
+\sum_{k=1}^\infty c_{j_k}=\sum_{m=1}^\infty\sum_{j\in I_m}c_j=\infty,
+$$
+contradiction. Hence every compact set has finite measure. ∎
 
-Hence $\mu(K)<\infty$ for all compact $K$, so the atomic measure is locally finite.
-For atomic Borel measures on $\mathbb R^n$, local finiteness gives inner and outer
-regularity on Borel sets, so $\mu$ is Radon.
+**Lemma 3.**  
+If every compact set has finite $\mu$-mass, then $\mu$ is Radon.
+
+*Proof.*  
+For an atomic Borel measure on $\mathbb R^n$, finite mass on compacts is
+equivalent to local finiteness.
+Local finiteness is exactly the defining condition for being Radon on $\mathbb R^n$. ∎
+
+Lemma 1 gives the forward implication.
+Lemmas 2 and 3 give the reverse implication.
+Therefore the theorem holds. ∎
 :::
