@@ -12,19 +12,16 @@ There are three tests, they cost different amounts, and the right one depends on
 
 The removable/pole/essential classification applies only to an *isolated* singularity, and a problem that hands you a branch is testing whether you noticed.
 
-:::{.warnings title="Branch singularities"}
-$f(z) \da z^{1\over 2}$ has a singularity at $z=0$ that admits no Laurent expansion, so it is not in the classification at all: $z=0$ is a **branch singularity**.
-So is each of $z = 0, 1$ for $\qty{z(z-1)}^{1\over 2}$, and $z=0$ for $\Log(z)$.
-
+::: {.warnings title="Branch singularities"}
+$f(z) \da z^{1\over 2}$ has a singularity at $z=0$ that admits no Laurent expansion, so it is not in the classification at all: $z=0$ is a **branch singularity**. So is each of $z = 0, 1$ for $\qty{z(z-1)}^{1\over 2}$, and $z=0$ for $\Log(z)$.
 :::
 
-:::{.example title="Isolated, and not"}
+::: {.example title="Isolated, and not"}
 A rational function has only isolated singularities, since a polynomial has finitely many zeros.
 
 $\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood meets the branch cut $(-\infty, 0)$, where $\Log$ is not defined at all.
 
 $G(z) \da 1/\sin(\pi/z)$ has isolated singularities at every $1/n$, and a non-isolated one at $0$, since the others accumulate there.
-
 :::
 
 ## The limit test: fastest, and usually enough
@@ -32,7 +29,9 @@ $G(z) \da 1/\sin(\pi/z)$ has isolated singularities at every $1/n$, and a non-is
 Take $z \to z_0$ and see what happens:
 
 - $\lim_{z\to z_0} f(z)$ exists and is finite: **removable**.
+
 - $\lim_{z\to z_0} \abs{f(z)} = \infty$: **pole**.
+
 - the limit does not exist, even as $\infty$: **essential**.
 
 The three cases are exhaustive for an isolated singularity, which is why the test always terminates.
@@ -53,16 +52,17 @@ Use this whenever you can estimate $\abs f$ but cannot evaluate it, which is the
 Expand $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc and count the negative terms:
 
 - none, so $c_{k} = 0$ for $k \leq -1$: **removable**.
+
 - finitely many, the lowest being $k = -N$: a **pole of order $N$**.
+
 - infinitely many: **essential**.
 
 This is the most expensive test and the most informative: the other two say which kind, this one says which order, and the order is what a residue computation needs next.
 
-:::{.remark title="Order as a valuation"}
+::: {.remark title="Order as a valuation"}
 Writing $f(z) = \sum_{k\in\ZZ} a_k(z-a)^k$ about $a$, set $v_a(f) = n$ when $a_n \neq 0$ and $a_k = 0$ for all $k < n$: the lowest power of $(z-a)$ that occurs.
 Then a zero of order $n$ is $v_a(f) = n$, a pole of order $n$ is $v_a(f) = -n$, removable is $v_a(f) \geq 0$, and essential is $v_a(f) = -\infty$.
 The three cases are one number.
-
 :::
 
 ## Which test to use
