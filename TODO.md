@@ -1672,6 +1672,29 @@ Then the eight pages that hold several chapters each — 26 kB of Galois computa
 The infrastructure is not the obstacle.
 Strip out the authoring and this is mechanical work with a 142-second proof loop and a build that refuses to ship a broken link.
 The reason it is large is that the plan asks for pages that were never written — which is the point of the plan.
+
+#### Addendum: what this assessment covers, and what it does not
+
+The first version of this section read the inputs — routes, assets, `order`, area ids, ledgers, tests — and concluded the migration was cheap.
+It never opened the rendering path, so it could not answer whether the renderer is written against the tree that exists.
+It is not, and a worktree test says so rather than a reading. Two conclusions changed:
+
+- Reorganizing needs no code. Measured above, not inferred.
+
+- Transclusion exists, since `7aba6b8a0`. The earlier claim that a bare `[[card-id]]` never transcludes came from `queues/11-design-issues.md`, which predates it.
+
+What is still unverified:
+
+- One folder move and one chapter rename were tested. A whole-subject reorganization, a page split, and a page merge were not.
+
+- The new page kinds are untested as rendered output. A recognition page is prose and a compendium is a table, so both are ordinary; a review sheet transcluding forty theorem cards onto one page is not, and its size and typesetting cost are unknown.
+
+- Nothing was looked at. The evidence is exit codes and emitted paths, which is a build proving itself, not a page proving itself. Before any of this is called done, render it and read it.
+
+- The `problems:` query block is unimplemented, so every claim about it is a claim about work not started.
+
+- Search behaviour across renamed routes was not checked beyond the build succeeding.
+
 ### What is there now (measured)
 
 | Kind of page | Count | Share |
