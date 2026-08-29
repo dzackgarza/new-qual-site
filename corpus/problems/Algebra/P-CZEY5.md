@@ -10,40 +10,38 @@ classification:
   - Number Theory
   - Cyclic Groups
 relations: []
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 review: draft
 ---
 
 ::: problem
 Suppose $\phi(n) = 2$.
-Take a prime factorization of $n$, so we have
-$$
-2 = \phi(n) = \prod_{i=1}^m \phi(p_i^{k_i}) 
-$$
+:::
 
-Since the only factors of 2 are 1 and 2, we must have $\phi(p_i^{k_i}) = 2$ for exactly one $i$, and the rest must be equal to 1.
+::: solution
+**Theorem.**  
+If $\phi(n)=2$, then $n\in\{3,4,6\}$.
 
-Consider the term that equals 2. We have $\phi(p_i^{k_i}) = p^{k_i - 1}(p-1) = 2$, so we must have either
+*Proof.*
 
-- Case 1: $p-1 = 2$ and $p^{k_i - 1} = 1$, so $p=3$ and $k_i = 1$.
-  So $3 \divides n$, but $3^\ell$ does *not* divide $n$ for any $\ell > 1$.
+1. Let $n=\prod_{i=1}^r p_i^{\alpha_i}$ be the prime factorization. Then
+   \[
+   \phi(n)=\prod_{i=1}^r \phi(p_i^{\alpha_i})=2,\qquad
+   \phi(p_i^{\alpha_i})=p_i^{\alpha_i-1}(p_i-1)\in\mathbb Z_{>0}.
+   \]
+2. Every factor $p_i^{\alpha_i-1}(p_i-1)$ equals $1$ or $2$, and exactly one factor equals $2$.
+3. If one factor equals $2$ for an odd prime $p_i$, then $\alpha_i=1$ and $p_i-1=2$, so $p_i=3$.
+4. If one factor equals $2$ for $p_i=2$, then $2^{\alpha_i-1}(2-1)=2$, hence $\alpha_i=2$ so $2^2\mid n$.
+5. Any remaining factors equal $1$, so $\phi(p_i^{\alpha_i})=1$. This forces $p_i=2$ and $\alpha_i=1$.
+6. Therefore
+   - $n=3$ if the factor $2$ comes from $3$ and no extra $2$-factor appears;
+   - $n=4$ if it comes from $2^2$;
+   - $n=6$ if both $3$ and one factor of $2$ appear.
+   No other primes can appear because they would contribute a factor $>2$.
+7. Conversely, $\phi(3)=\phi(4)=\phi(6)=2$.
 
-- Case 2: $p^{k_i - 1} = 2$ and $(p-1) = 1$, so $p=2$ and $k_i = 2$.
-  Thus $2^2$ divides $n$ but $2^\ell$ does not for any $\ell > 2$.
-
-In either case, it remains to check are whether the other factors where $\phi(p_j^{k_j}) = 1$ can contribute any other distinct divisors to $n$.
-We can note that $\phi(p_j^{k_j}) = 1$ iff $p^{k_j-1}(p-1) = 1$, so this forces $p=2$ and $k_j = 1$.
-So $n$ may or may not contain a single factor of 2, but by uniqueness of prime factorization, this can only happen in case 1. Note that this also forces $2\divides n$ but $2^2$ does not divide $n$.
-
-In summary, we've found that $\phi(n) = 2$ implies that
-
-- $3 \divides n$, 9 does not divide $n$, and
-
-  - $2\divides n$, 4 does not divide $n$
-
-  - $2$ does not divide $n$
-
-- $2^2 \divides n, 2^3$ does not divide n.
-
-This reduces the possibilities to the finite set $n \in \theset{6,3,4}$, and $\phi(6) = \phi(3) = \phi(4) = 2$.
-$\qed$
+So the only integers with $\phi(n)=2$ are exactly $3,4,6$.
 :::
