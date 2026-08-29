@@ -1271,9 +1271,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
 
 ## 10. Repair wiki copy and organization
 
-Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked against the
-rendered page under `build/quarto/_site`. Ordered by how visible the damage is on the built
-site.
+Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked against the rendered page under `build/quarto/_site`. Ordered by how visible the damage is on the built site.
 
 ### Dead content
 
@@ -1286,26 +1284,25 @@ site.
 
 - [ ] Remove the placeholders and notes-to-self published as reader copy.
   `Archives/Tracking/Complex Qual Progress.md:11` — the entire body under `# Qual Problems ToDo` is the words **"See and"**. The link was dropped.
-  Same file, `:15` — "Note: linking directly to sections doesn't seem to work yet. Just ctrl-F and search the page."
+  Same file, `:15` — "Note: linking directly to sections doesn't seem to work yet.
+  Just ctrl-F and search the page."
   `Real_Analysis/Basics/Notation.md:11` and `Notation_Real_Analysis.md:10` — the meaning column for $\norm{f}_{L^\infty}$ reads **"The ?"**. (It is the essential supremum.)
-  `Real_Analysis/Integration/Lp.md:46` — a `.proof` block whose whole body is `?`; `:176` — `\converges{??}\to 0`.
-  `Complex_Analysis/Appendices/Appendix FTA Proofs.md:141` — `???`.
-  `Algebra/Fields/Galois_Theory_Computations.md:30` — a stated fact ending "**(I think)**".
-  `Complex_Analysis/Basics/Tips_Techs.md:34` — "Casorati-Weierstrass Theorem (no page yet)"; `:170` — "put it in the denominator! No one can stop you!"
+  `Real_Analysis/Integration/Lp.md:46` — a `.proof` block whose whole body is `?`; `:176` — `\converges{??}\to 0`. `Complex_Analysis/Appendices/Appendix FTA Proofs.md:141` — `???`. `Algebra/Fields/Galois_Theory_Computations.md:30` — a stated fact ending "**(I think)**". `Complex_Analysis/Basics/Tips_Techs.md:34` — "Casorati-Weierstrass Theorem (no page yet)"; `:170` — "put it in the denominator!
+  No one can stop you!"
 
 - [ ] Merge the duplicated content inside a single page.
-  `Real_Analysis/Basics/Notation.md` and `Notation_Real_Analysis.md` are the same 7-row table in the same directory. One is titled "Sup-norm notation", which describes only its first two rows.
+  `Real_Analysis/Basics/Notation.md` and `Notation_Real_Analysis.md` are the same 7-row table in the same directory.
+  One is titled "Sup-norm notation", which describes only its first two rows.
   `Complex_Analysis/Basics/Tips_Techs.md:24-60` — "Greatest Hits" is two overlapping lists, the first a subset of the second, never merged.
-  `Complex_Analysis/Residues/Residues.md:37` and `:146` — the same remark twice ("Check: do you need residues at all??").
-  `Real_Analysis/Basics/Advice and Essentials.md:53-54` — the same bullet twice; `:116` has an unbalanced `\abs{F(x) - F(y}`.
+  `Complex_Analysis/Residues/Residues.md:37` and `:146` — the same remark twice ("Check: do you need residues at all??"). `Real_Analysis/Basics/Advice and Essentials.md:53-54` — the same bullet twice; `:116` has an unbalanced `\abs{F(x) - F(y}`.
 
 ### Private state on a public site
 
 - [ ] Take the private study state off the public reference site.
   `Archives/Tracking/Prelims_Exam_tracking.md` is one person's 2014–2016 to-dos ("Go through Pugh", "Find a way to consistently + quickly remember the direction of injectivity"). It contains no tracking.
   Four tracking tables have a column **"Imported to MakeMeAQual"** — pipeline bookkeeping for a differently-named project.
-  112 `- [ ]` / `- [x]` reading-progress checkboxes, mostly in `Complex_Analysis/Resources/Solutions.md` (45) and `Prelim/Prelim Resources.md` (41). That file also carries a trailing "Really well organized!" after a tag, and lists the same UCSD URL twice under two names (`:7`, `:9`).
-  47 Obsidian tags (`#resources/solutions`, `#algebra/qual/stuck`) leak into rendered text, two of them inside headings.
+  112 `- [ ]` / `- [x]` reading-progress checkboxes, mostly in `Complex_Analysis/Resources/Solutions.md` (45) and `Prelim/Prelim Resources.md` (41). That file also carries a trailing "Really well organized!"
+  after a tag, and lists the same UCSD URL twice under two names (`:7`, `:9`). 47 Obsidian tags (`#resources/solutions`, `#algebra/qual/stuck`) leak into rendered text, two of them inside headings.
 
 ### Organization
 
@@ -1313,15 +1310,13 @@ site.
   Six subjects, five shapes.
   `Real_Analysis/index.md` and `Complex_Analysis/index.md` both use the H1 **"Qualifying Exam Syllabus"** — neither names its subject.
   Both, plus `Algebra/index.md`, link to none of their own child pages, so landing on a subject gives no navigation.
-  `Topology/index.md` puts `# References` as a second H1.
-  Citation style differs four ways across those four pages.
+  `Topology/index.md` puts `# References` as a second H1. Citation style differs four ways across those four pages.
   The Algebra one is broken: `> References: 1,3,4` appears five times, but the reference list renders as `[DuFo04] [HoKu71] [Hung74] [Smit]` — unnumbered, so the pointers resolve to nothing.
   This is the item with a design choice in it: decide whether subject index pages carry the syllabus, the child-page navigation, or both, then make all six match.
 
 - [ ] Fix the named-for-nothing organization.
   Six pages named `Preface`: four are acknowledgements, one is a Folland exercise list with no H1, one (`Topology/Basics/Preface.md`) is a full notation-and-background chapter.
-  ~20 published sections named "Unsorted" or "Misc", including whole pages (`Complex_Analysis/Quals/Unsorted.md`, `Topology/Appendices/Appendix.md` → "Appendix: Unsorted Stuff").
-  `Archives/Tracking/index.md` lists 7 links for 5 subjects: Complex and Real each have two rival tracking pages, and the list mixes labeled links with unlabeled ones, so the duplicates read as separate topics.
+  ~20 published sections named "Unsorted" or "Misc", including whole pages (`Complex_Analysis/Quals/Unsorted.md`, `Topology/Appendices/Appendix.md` → "Appendix: Unsorted Stuff"). `Archives/Tracking/index.md` lists 7 links for 5 subjects: Complex and Real each have two rival tracking pages, and the list mixes labeled links with unlabeled ones, so the duplicates read as separate topics.
 
 ### Content errors
 
