@@ -20,13 +20,11 @@ audit:
 Consider the function $f(x) = \frac{x}{1-x^2}$,
 $x \in (0,1)$.
 
-1.  
 By using the $\epsilon-\delta$ definition of the limit only,
 prove that $f$ is continuous on $(0,1)$. (Note: You are not
 allowed to trivialize the problem by using properties of
 limits).
 
-2.  
 Is $f$ uniformly continuous on $(0,1)$? Justify your answer.
 
 :::{.proof}

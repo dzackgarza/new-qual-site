@@ -36,30 +36,30 @@ Missing part (c)
 
 a.
 
-- Take $\sum {z^n \over n^2}$
-- Then \[\abs{z}\leq 1 \implies \abs{z^n\over n^2} \leq {1\over n^2}\] which is summable
-- So the series converges for $\abs{z}\leq 1$.
+    - Take $\sum {z^n \over n^2}$
+    - Then \[\abs{z}\leq 1 \implies \abs{z^n\over n^2} \leq {1\over n^2}\] which is summable
+    - So the series converges for $\abs{z}\leq 1$.
 
 b.
-- Take $\sum {z^n \over n}$; 
-- Then $z=1$ yields the harmonic series, which diverges.
+    - Take $\sum {z^n \over n}$; 
+    - Then $z=1$ yields the harmonic series, which diverges.
 
-- For $z\in S^1\setminus\theset{1}$, we have $z = e^{2\pi it}$ for $0<t<2\pi$. 
-- So fix $t$.
+    - For $z\in S^1\setminus\theset{1}$, we have $z = e^{2\pi it}$ for $0<t<2\pi$. 
+    - So fix $t$.
 
-- Toward applying the Dirichlet test, set $a_n = 1/n, b_n = z^n$.
+    - Toward applying the Dirichlet test, set $a_n = 1/n, b_n = z^n$.
 
-- Then for all $N$,
-\[
-\abs{\sum_{n=1}^N b_n}
-= \abs{\sum_{n=1}^N b_n}
-= \abs{\sum_{n=1}^N z^n}
-= \abs{  {z-z^{N+1} \over \abs{1 - z}} } 
-\leq {2 \over 1-z} < \infty
-.\]
+    - Then for all $N$,
+    \[
+    \abs{\sum_{n=1}^N b_n}
+    = \abs{\sum_{n=1}^N b_n}
+    = \abs{\sum_{n=1}^N z^n}
+    = \abs{  {z-z^{N+1} \over \abs{1 - z}} } 
+    \leq {2 \over 1-z} < \infty
+    .\]
 
-- Thus $\sum a_n b_n < \infty$ and $\sum z^n/n$ converges.
+    - Thus $\sum a_n b_n < \infty$ and $\sum z^n/n$ converges.
 
-c. ?
+    c. ?
 
 :::

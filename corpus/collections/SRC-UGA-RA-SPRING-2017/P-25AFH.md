@@ -49,25 +49,25 @@ A_c \definedas \theset{ x\in X \suchthat \abs{f(x)} \geq c  } \implies \mu(A_c) 
 
 a.
 
-- Strategy: use approximation by simple functions to show absolute continuity and apply Radon-Nikodym 
+    - Strategy: use approximation by simple functions to show absolute continuity and apply Radon-Nikodym 
 
-- Claim: $\lambda \ll \mu$, i.e. $\mu(E) = 0 \implies \lambda(E) = 0$.
+    - Claim: $\lambda \ll \mu$, i.e. $\mu(E) = 0 \implies \lambda(E) = 0$.
 
-  - Note that if this holds, by Radon-Nikodym, $f = \dd{\lambda}{\mu} \implies d\lambda = f d\mu$, which would yield 
-  \[  
-  \int g ~d\lambda = \int g f ~d\mu
-  .\]
+      - Note that if this holds, by Radon-Nikodym, $f = \dd{\lambda}{\mu} \implies d\lambda = f d\mu$, which would yield 
+      \[  
+      \int g ~d\lambda = \int g f ~d\mu
+      .\]
 
-- So let $E$ be measurable and suppose $\mu(E) = 0$.
+    - So let $E$ be measurable and suppose $\mu(E) = 0$.
 
-- Then
-\[
-\lambda(E) \definedas \int_E f ~d\mu 
-&= \lim_{n\to\infty} \theset{\int_E s_n \,d\mu \suchthat s_n \definedas \sum_{j=1}^\infty c_j \mu(E_j),\, s_n \nearrow f}
-\]
-  where we take a sequence of simple functions increasing to $f$.
+    - Then
+    \[
+    \lambda(E) \definedas \int_E f ~d\mu 
+    &= \lim_{n\to\infty} \theset{\int_E s_n \,d\mu \suchthat s_n \definedas \sum_{j=1}^\infty c_j \mu(E_j),\, s_n \nearrow f}
+    \]
+      where we take a sequence of simple functions increasing to $f$.
 
-- But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$, so every such $s_n$ must be zero and thus $\lambda(E) = 0$.
+    - But since each $E_j \subseteq E$, we must have $\mu(E_j) = 0$ for any such $E_j$, so every such $s_n$ must be zero and thus $\lambda(E) = 0$.
 
 :::{.remark}
 What is the final step in this approximation?
@@ -75,34 +75,34 @@ What is the final step in this approximation?
 
 b.
 
-- Set $g(x) = x^2$, note that $g$ is positive and measurable.
-- By part (a), there exists a positive $f$ such that for any $E\subseteq \RR$,
-\[
-\int_E g ~dm = \int_E gf ~d\mu 
-\]
+    - Set $g(x) = x^2$, note that $g$ is positive and measurable.
+    - By part (a), there exists a positive $f$ such that for any $E\subseteq \RR$,
+    \[
+    \int_E g ~dm = \int_E gf ~d\mu 
+    \]
 
-  - The LHS is zero by assumption and thus so is the RHS.
+      - The LHS is zero by assumption and thus so is the RHS.
 
-  - $m \ll \mu$ by construction.
+      - $m \ll \mu$ by construction.
 
-  - Note that $gf$ is positive.
+      - Note that $gf$ is positive.
 
-- Define $A_k = \theset{x\in X \suchthat gf \cdot \chi_E > {1 \over k} }$, for $k\in \ZZ^{\geq 0}$
+    - Define $A_k = \theset{x\in X \suchthat gf \cdot \chi_E > {1 \over k} }$, for $k\in \ZZ^{\geq 0}$
 
-- Then by Chebyshev with $p=1$, for every $k$ we have
+    - Then by Chebyshev with $p=1$, for every $k$ we have
 
-\[
-\mu(A_k) \leq k \int_E gf ~d\mu = 0
-\]
+    \[
+    \mu(A_k) \leq k \int_E gf ~d\mu = 0
+    \]
 
-- Then noting that $A_k \searrow A \definedas \theset{x\in X \suchthat gf\cdot \chi_E(x)  > 0}$, we have $\mu(A) = 0$.
+    - Then noting that $A_k \searrow A \definedas \theset{x\in X \suchthat gf\cdot \chi_E(x)  > 0}$, we have $\mu(A) = 0$.
 
-- Since $gf$ is positive, we have 
-\[
-x\in E \iff gf\chi_E(x) > 0 \iff x\in A
-\]
-  so $E = A$ and $\mu(E) = \mu(A)$.
+    - Since $gf$ is positive, we have 
+    \[
+    x\in E \iff gf\chi_E(x) > 0 \iff x\in A
+    \]
+      so $E = A$ and $\mu(E) = \mu(A)$.
 
-- But $m \ll \mu$ and $\mu(E) = 0$, so we can conclude that $m(E) = 0$.
+    - But $m \ll \mu$ and $\mu(E) = 0$, so we can conclude that $m(E) = 0$.
 :::
 

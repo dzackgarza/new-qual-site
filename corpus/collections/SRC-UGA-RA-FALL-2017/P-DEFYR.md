@@ -41,34 +41,34 @@ Show that
 
 a.
 
-$f_n\to 0$ pointwise:
+    $f_n\to 0$ pointwise:
 
-- Finding the maximum: can check that $\dd{f_n}{x} = x(1-x)^{n-1} \qty{1 + (n^2-1)x}$
-- This has critical points $x=0, 1, {-1 \over n^2 + 1}$, and the latter is a global max on $[0, 1]$.
-- Set $x_n \definedas {-1 \over n^2 + 1}$
-- Compute
-\[  
-\lim f_n(x_n) = \lim_{n\to \infty } {-n \over n^2 + 1} \qty{1 + x_n}^n = 0\cdot 1 = 0
-.\]
-- So $\sup f_n \to 0$, forcing $f_n \to 0$ pointwise.
+    - Finding the maximum: can check that $\dd{f_n}{x} = x(1-x)^{n-1} \qty{1 + (n^2-1)x}$
+    - This has critical points $x=0, 1, {-1 \over n^2 + 1}$, and the latter is a global max on $[0, 1]$.
+    - Set $x_n \definedas {-1 \over n^2 + 1}$
+    - Compute
+    \[  
+    \lim f_n(x_n) = \lim_{n\to \infty } {-n \over n^2 + 1} \qty{1 + x_n}^n = 0\cdot 1 = 0
+    .\]
+    - So $\sup f_n \to 0$, forcing $f_n \to 0$ pointwise.
 
-The convergence is not uniform:
+    The convergence is not uniform:
 
-- Let $x_n = \frac 1 n$ and $\varepsilon > e\inv$, then
-\[
-\norm{nx(1-x)^n - 0}_\infty
-&\geq \abs{nx_n (1-x_n)^n} \\
-&= \abs{\left( 1 - \frac 1 n\right)^n} \\
-&> e^{-1} \\
-&> \varepsilon
-.\]
+    - Let $x_n = \frac 1 n$ and $\varepsilon > e\inv$, then
+    \[
+    \norm{nx(1-x)^n - 0}_\infty
+    &\geq \abs{nx_n (1-x_n)^n} \\
+    &= \abs{\left( 1 - \frac 1 n\right)^n} \\
+    &> e^{-1} \\
+    &> \varepsilon
+    .\]
 
-  - Here we've used that $(1 + {x\over n})^n \leq e^x$ for all $x\in \RR$ and all $n$.
-  - Follows from $1+y \leq e^y$ applied to $y = x/n$.
+      - Here we've used that $(1 + {x\over n})^n \leq e^x$ for all $x\in \RR$ and all $n$.
+      - Follows from $1+y \leq e^y$ applied to $y = x/n$.
 
-- Thus $\norm{f_n - 0}_\infty = \norm{f_n}_\infty > e^{-1} > 0$.
+    - Thus $\norm{f_n - 0}_\infty = \norm{f_n}_\infty > e^{-1} > 0$.
 
-b. ?
+    b. ?
 
 :::{.remark}
 Possible to use part a with $\sin(x) \leq x$ on $[0, \pi/2]$?

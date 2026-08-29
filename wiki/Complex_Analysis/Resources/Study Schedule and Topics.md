@@ -83,7 +83,7 @@ title: "Study Schedule and Topics"
 	- $\mathrm{SL}_2(\mathbf{R})$, modularity and elliptic curves
 	- The hyperbolic metric
 	- Riemann surfaces
-	- [[Complex_Analysis/Appendices/Special Functions|Special functions]]: 
+	- [[Complex_Analysis/Appendices/Special Functions|Special functions]]
 		- The [[Complex_Analysis/Appendices/Special Functions#The Gamma Function|Gamma function]], [[Complex_Analysis/Appendices/Special Functions#Riemann Zeta|zeta functions]] and [[Complex_Analysis/Appendices/Special Functions#Elliptic Functions|elliptic functions]]
 	- Canonical products
 	- Dirichlet's problem

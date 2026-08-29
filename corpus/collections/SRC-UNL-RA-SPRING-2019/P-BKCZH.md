@@ -17,7 +17,6 @@ audit:
   date: 2026-08-25
 ---
 
-1.  
 Suppose that $f: [0,1] \to \mathbb{R}$ is differentiable and
 $f(0) = 0$. Assume that there is a $k > 0$ such that
 $$|f'(x)| \leq k|f(x)|$$ for all $x\in [0,1]$. Prove that $f(x) = 0$

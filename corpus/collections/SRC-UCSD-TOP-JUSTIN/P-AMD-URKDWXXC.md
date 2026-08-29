@@ -15,5 +15,4 @@ review: draft
 ::: {.problem}
 Compute $\tor(\QQ, A)$
 1. Compute $\tor(\QQ/\ZZ, A)$
-5.
 :::

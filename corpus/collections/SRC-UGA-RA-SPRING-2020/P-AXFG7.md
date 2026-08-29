@@ -66,63 +66,63 @@ Q \subseteq \Union_{i=1}^N S_i \implies \abs{Q} \leq \sum_{i=1}^N \abs{S_i} \leq
 
 a.
 
-- If $m_*(E) = \infty$, then take $B = \RR^n$ since $m(\RR^n) = \infty$.
-- Suppose $N \definedas m_*(E) < \infty$.
+    - If $m_*(E) = \infty$, then take $B = \RR^n$ since $m(\RR^n) = \infty$.
+    - Suppose $N \definedas m_*(E) < \infty$.
 
-- Since $m_*(E)$ is an infimum, by definition, for every $\eps> 0$ there exists a covering by closed cubes $\theset{Q_i(\eps)}_{i=1}^\infty \covers E$ depending on $\eps$ such that 
-$$
-\sum_{i=1}^\infty \abs{Q_i(\eps)} < N + \eps
-.$$
+    - Since $m_*(E)$ is an infimum, by definition, for every $\eps> 0$ there exists a covering by closed cubes $\theset{Q_i(\eps)}_{i=1}^\infty \covers E$ depending on $\eps$ such that 
+    $$
+    \sum_{i=1}^\infty \abs{Q_i(\eps)} < N + \eps
+    .$$
 
-- For each fixed $n$, set $\eps_n = {1\over n}$ to produce such a covering $\theset{Q_i(\eps_n)}_{i=1}^\infty$ and set $B_n \definedas \Union_{i=1}^\infty Q_i(\eps_n)$.
+    - For each fixed $n$, set $\eps_n = {1\over n}$ to produce such a covering $\theset{Q_i(\eps_n)}_{i=1}^\infty$ and set $B_n \definedas \Union_{i=1}^\infty Q_i(\eps_n)$.
 
-- The outer measure of cubes is *equal* to the sum of their volumes, so 
-\[
-m_*(B_n) = \sum_{i=1}^\infty \abs{Q_i(\eps_n)} < N + \eps_n = N + {1\over n}
-.\]
+    - The outer measure of cubes is *equal* to the sum of their volumes, so 
+    \[
+    m_*(B_n) = \sum_{i=1}^\infty \abs{Q_i(\eps_n)} < N + \eps_n = N + {1\over n}
+    .\]
 
-- Now set $B \definedas \Intersect_{n=1}^\infty B_n$.
+    - Now set $B \definedas \Intersect_{n=1}^\infty B_n$.
 
-  - Since $E\subseteq B_n$ for every $n$, $E\subseteq B$
-  - Since $B$ is a countable intersection of countable unions of closed sets, $B$ is Borel.
-  - Since $B_n \subseteq B$ for every $n$, we can apply subadditivity to obtain the inequality
-  \[
-  E \subseteq B \subseteq B_n \implies
-  N \leq m_*(B) \leq m_*(B_n) < N + {1\over n} \qtext{for all} n\in \ZZ^{\geq 1}
-  .\]
+      - Since $E\subseteq B_n$ for every $n$, $E\subseteq B$
+      - Since $B$ is a countable intersection of countable unions of closed sets, $B$ is Borel.
+      - Since $B_n \subseteq B$ for every $n$, we can apply subadditivity to obtain the inequality
+      \[
+      E \subseteq B \subseteq B_n \implies
+      N \leq m_*(B) \leq m_*(B_n) < N + {1\over n} \qtext{for all} n\in \ZZ^{\geq 1}
+      .\]
 
-- This forces $m_*(E) = m_*(B)$.
+    - This forces $m_*(E) = m_*(B)$.
 
 
 b.
 
-Suppose $m_*(E) < \infty$.
+    Suppose $m_*(E) < \infty$.
 
-- By (a), find a Borel set $B\supseteq E$ such that $m_*(B) = m_*(E)$
-- Note that $E\subseteq B \implies B\Intersect E = E$ and $B\Intersect E^c = B\setminus E$.
-- By assumption, 
-\[
-m_*(B) &= m_*(B\Intersect E) + m_*(B\Intersect E^c) \\
-m_*(E) &= m_*(E) + m_*(B\setminus E) \\ 
-m_*(E) - m_*(E) &= m_*(B\setminus E) \qquad\qquad\text{since } m_*(E) < \infty \\ 
-\implies m_*(B\setminus E) &= 0
-.\]
-- So take $N = B\setminus E$; this shows $m_*(N) = 0$ and $E = B\setminus (B\setminus E) = B\setminus N$.
+    - By (a), find a Borel set $B\supseteq E$ such that $m_*(B) = m_*(E)$
+    - Note that $E\subseteq B \implies B\Intersect E = E$ and $B\Intersect E^c = B\setminus E$.
+    - By assumption, 
+    \[
+    m_*(B) &= m_*(B\Intersect E) + m_*(B\Intersect E^c) \\
+    m_*(E) &= m_*(E) + m_*(B\setminus E) \\ 
+    m_*(E) - m_*(E) &= m_*(B\setminus E) \qquad\qquad\text{since } m_*(E) < \infty \\ 
+    \implies m_*(B\setminus E) &= 0
+    .\]
+    - So take $N = B\setminus E$; this shows $m_*(N) = 0$ and $E = B\setminus (B\setminus E) = B\setminus N$.
 
 
-If $m_*(E) = \infty$:
+    If $m_*(E) = \infty$:
 
-- Apply result to $E_R\definedas E \Intersect [R, R+1)^n \subset \RR^n$ for $R\in \ZZ$, so $E = \disjoint_R E_R$
-- Obtain $B_R, N_R$ such that $E_R = B_R \setminus N_R$, $m_*(E_R) = m_*(B_R)$, and $m_*(N_R) = 0$.
-- Note that
-  -   $B\definedas \Union_R B_R$ is a union of Borel sets and thus still Borel
-  -  $E = \Union_R E_R$
-  - $N\definedas B\setminus E$
-  - $N' \definedas \Union_R N_R$ is a union of null sets and thus still null
-- Since $E_R \subset B_R$ for every $R$, we have $E\subset B$
-- We can compute
-\[
-N = B\setminus E = \qty{ \Union_R B_R } \setminus \qty{\Union_R E_R } \subseteq \Union_R \qty{B_R\setminus E_R} = \Union_R N_R \definedas N'
-\]
-where $m_*(N') = 0$ since $N'$ is null, and thus subadditivity forces $m_*(N) = 0$.
+    - Apply result to $E_R\definedas E \Intersect [R, R+1)^n \subset \RR^n$ for $R\in \ZZ$, so $E = \disjoint_R E_R$
+    - Obtain $B_R, N_R$ such that $E_R = B_R \setminus N_R$, $m_*(E_R) = m_*(B_R)$, and $m_*(N_R) = 0$.
+    - Note that
+      -   $B\definedas \Union_R B_R$ is a union of Borel sets and thus still Borel
+      -  $E = \Union_R E_R$
+      - $N\definedas B\setminus E$
+      - $N' \definedas \Union_R N_R$ is a union of null sets and thus still null
+    - Since $E_R \subset B_R$ for every $R$, we have $E\subset B$
+    - We can compute
+    \[
+    N = B\setminus E = \qty{ \Union_R B_R } \setminus \qty{\Union_R E_R } \subseteq \Union_R \qty{B_R\setminus E_R} = \Union_R N_R \definedas N'
+    \]
+    where $m_*(N') = 0$ since $N'$ is null, and thus subadditivity forces $m_*(N) = 0$.
 :::

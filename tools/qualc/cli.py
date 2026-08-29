@@ -13,7 +13,7 @@ from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
-from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_tree
+from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
 
 
 def load(
@@ -38,6 +38,7 @@ def load(
         if wiki_pages:
             assets = build_asset_catalog(root / "assets")
             errors.extend(validate_wiki_tree(wiki_pages))
+            errors.extend(validate_wiki_sources(root / "wiki"))
             errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
             link_citations(wiki_pages, card_routes)
     if not errors:

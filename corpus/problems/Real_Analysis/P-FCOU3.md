@@ -63,15 +63,12 @@ Let $x$ and $u_n$ be arbitrary.
 \inner{x - \sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n}
 &=
 \inner{x}{u_n}
--
 \inner{\sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n} \\
 &=
 \inner{x}{u_n}
--
 \sum_{k=1}^\infty  \inner{\inner{x}{u_k}u_k }{u_n} \\
 &=
 \inner{x}{u_n}
--
 \sum_{k=1}^\infty  \inner{x}{u_k} \inner{u_k }{u_n} \\
 &= \inner{x}{u_n} - \inner{x}{u_n} = 0 \\
 \implies 

@@ -32,7 +32,6 @@ Facts Used:[^fix_facts_on_ext_oskar]
 \ext(\ZZ/n, \ZZ) = \ZZ/n
 .\]
 
-- 
 \[
 \ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
 \\ \text{where } d \da \gcd(m, n)

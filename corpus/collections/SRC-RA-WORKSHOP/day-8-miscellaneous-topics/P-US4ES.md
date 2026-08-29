@@ -28,12 +28,10 @@ $f^{-1}(-\infty, b) = \{x \in X \, \colon \,  f(x)<b\}$ is open in
 $X$ for every $b \in \mathbb{R}$.
 
 
-1.  
 Prove that a function $f \colon X \to \mathbb{R}$ is continuous
 if and only if $f$ is both l.s.c. and u.s.c.
 
 
-2.  
 Prove that $f$ is lower semi-continuous if and only if
 $\liminf_{n \to \infty} f(x_n) \geq f(x)$ whenever
 $\{x_n\}_{n=1}^\infty \subseteq X$ such that $x_n \to x$ in $X$.

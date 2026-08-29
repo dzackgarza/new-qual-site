@@ -102,7 +102,6 @@ order: 5
 
 - $\mu(X) = \norm{\id}_{L^1(X)} = \int_X 1 \dmu$
 
-- 
 
 # The Absolute Essentials
 

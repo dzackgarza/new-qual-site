@@ -183,6 +183,30 @@ def _order(metadata: dict[str, object], path: Path) -> int | Diagnostic:
     return value
 
 
+# `[[page]]: some words` reads to Markdown as a link reference definition --
+# `[` followed by `[page]: some words` -- so the reader consumes the line and
+# the item renders empty. The words are not dropped by a filter here; they never
+# survive parsing, which is why nothing downstream notices. Four list items on
+# three pages were silently blank before this check existed.
+SWALLOWED_BY_REFERENCE_DEFINITION = re.compile(r"\[\[[^\]]*\]\]\s*:")
+
+
+def validate_wiki_sources(root: Path) -> list[Diagnostic]:
+    """Authored spellings the Markdown reader throws away without complaining."""
+    errors: list[Diagnostic] = []
+    for path in discover(root):
+        for number, line in enumerate(path.read_text().splitlines(), start=1):
+            if SWALLOWED_BY_REFERENCE_DEFINITION.search(line):
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.PAGE_SWALLOWED_LINE,
+                        f"{path}:{number}",
+                        "a wikilink followed by a colon reads as a link reference definition, and the rest of the line is discarded",
+                    )
+                )
+    return errors
+
+
 def validate_wiki_tree(pages: list[WikiPage]) -> list[Diagnostic]:
     """A directory is in the tree only when it has an index.md that names it."""
     indexed = {page.source_rel.parent.as_posix() for page in pages if page.source_rel.stem.lower() == "index" and len(page.source_rel.parts) > 1}

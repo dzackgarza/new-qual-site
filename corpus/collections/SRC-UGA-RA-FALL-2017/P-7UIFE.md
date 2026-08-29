@@ -27,7 +27,6 @@ and prove the following:
 
 1. Each $f\ast K_j$ is smooth and compactly supported.
 
-2. 
 \[
 \lim _{j \to \infty} \norm{f * K_{j}-f}_{1} = 0
 \]

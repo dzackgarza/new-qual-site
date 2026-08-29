@@ -45,24 +45,24 @@ a.
 
 b.
 
-Homotopy lifting property:
+    Homotopy lifting property:
 
-\begin{tikzcd}
-                                                                   &  & \tilde X \arrow[dd, "\pi"] \\
-                                                                   &  &                            \\
-Y\cross I \arrow[rr, "H"] \arrow[rruu, "\exists \tilde H", dashed] &  & X                         
-\end{tikzcd}
+    \begin{tikzcd}
+                                                                       &  & \tilde X \arrow[dd, "\pi"] \\
+                                                                       &  &                            \\
+    Y\cross I \arrow[rr, "H"] \arrow[rruu, "\exists \tilde H", dashed] &  & X                         
+    \end{tikzcd}
 
-$\pi$ clearly induces a map $p_*$ on $\pi_1$ by functoriality, so we'll show that $\ker p_*$ is trivial.
-Let $\gamma: S^1 \to \tilde X \in \pi_1(\tilde X)$ and suppose $\alpha \definedas p_*(\gamma) = [e] \in \pi_1(X)$. 
-We'll show $\gamma \homotopic [e]$ in $\pi_1(\tilde X)$.
+    $\pi$ clearly induces a map $p_*$ on $\pi_1$ by functoriality, so we'll show that $\ker p_*$ is trivial.
+    Let $\gamma: S^1 \to \tilde X \in \pi_1(\tilde X)$ and suppose $\alpha \definedas p_*(\gamma) = [e] \in \pi_1(X)$. 
+    We'll show $\gamma \homotopic [e]$ in $\pi_1(\tilde X)$.
 
-Since $\alpha = [e]$, $\alpha \homotopic \const$ and thus there is a homotopy $H: I\cross S^1 \to X$ such that $H_0 = \const(x_0)$ and $H_1 = \gamma$.
-By the HLP, this lifts to $\tilde H: I\cross S^1 \to \tilde X$.
-Noting that $\pi\inv(\const(x_0))$ is still a constant loop, this says that $\gamma$ is homotopic to a constant loop and thus nullhomotopic. 
+    Since $\alpha = [e]$, $\alpha \homotopic \const$ and thus there is a homotopy $H: I\cross S^1 \to X$ such that $H_0 = \const(x_0)$ and $H_1 = \gamma$.
+    By the HLP, this lifts to $\tilde H: I\cross S^1 \to \tilde X$.
+    Noting that $\pi\inv(\const(x_0))$ is still a constant loop, this says that $\gamma$ is homotopic to a constant loop and thus nullhomotopic. 
 
 c.
 
-Since both spaces are path-connected, the degree o the covering map $\pi$ is precisely the index of the included fundamental group.
-This forces $\pi$ to be a degree 1 covering and hence a homeomorphism.
+    Since both spaces are path-connected, the degree o the covering map $\pi$ is precisely the index of the included fundamental group.
+    This forces $\pi$ to be a degree 1 covering and hence a homeomorphism.
 :::

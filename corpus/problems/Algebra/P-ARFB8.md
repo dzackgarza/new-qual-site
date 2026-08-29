@@ -48,7 +48,6 @@ t & 2t \\ 2t & t
 \left[\begin{array}{cc}
 1 \\ 0
 \end{array}\right]
-+
 \left[\begin{array}{cc}
 s \\ 0
 \end{array}\right]

@@ -25,7 +25,6 @@ $f \in \mathcal{R}(\alpha)[-1,1]$, i.e., $f$ is Riemann
 integrable with respect to $\alpha$ on $[-1,1]$, and
 $\int_{-1}^1 f d\alpha = 2f(0)$.
 
-2.  
 Let $g \colon [0,1] \to \mathbb{R}$ be a continuous function
 such that $\int_0^1 g(x)x^{3k+2} dx = 0$ for all
 $k = 0, 1, 2, \ldots$. Prove that $g(x) =0$ for all
