@@ -30,7 +30,7 @@ Things to know well:
 - [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum Modulus Principle]]
 - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouché's Theorem]]
 - [[Complex_Analysis/cauchy-theory/schwarz-reflection|The Schwarz Reflection Principle]]
-- [[Complex_Analysis/Cauchy/Schwarz|The Schwarz Lemma]]
+- [[Complex_Analysis/conformal-maps/the-schwarz-lemma|The Schwarz Lemma]]
 - Casorati-Weierstrass Theorem (no page yet)
 - Properties of linear fractional transformations
 - Automorphisms of $\DD, \CC, \CP^1$.
@@ -47,12 +47,12 @@ Things to know well:
 - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
 	- [[Complex_Analysis/Quals/Rouche Applications|Rouche qual questions]]
 - [[Complex_Analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
-- [[Complex_Analysis/Maps_of_the_disc/Schwarz lemma|The Schwarz lemma]]
+- [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|The Schwarz lemma]]
 	- [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma qual questions]]
 - [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
 	- [[Complex_Analysis/Quals/Riemann Mapping, Casorati|Casorati-Weierstrass Qual questions]]
-- [[Complex_Analysis/Conformal_maps/Conformal_Standard|Conformal maps]]
-- [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]]
+- [[Complex_Analysis/conformal-maps/build-me-a-map|Conformal maps]]
+- [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and plane]]
 	- The Cayley transformation and other Mobius transformations
 	- [[Complex_Analysis/Quals/Conformal Maps|Conformal map questions]]
 - [[Complex_Analysis/cauchy-theory/the-identity-principle|The identity principle]]
@@ -63,7 +63,7 @@ Things to know well:
 - Jordan's lemma
 - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|The Cauchy-Riemann equations]]
 - [[Complex_Analysis/counting-zeros/the-argument-principle|The argument principle]]
-- [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|The Riemann mapping theorem]]
+- [[Complex_Analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
 - [[Complex_Analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
 
 For just the statements of most of these theorems: [[attachments/ComplexAnalysisNotes.pdf|see this doc]].

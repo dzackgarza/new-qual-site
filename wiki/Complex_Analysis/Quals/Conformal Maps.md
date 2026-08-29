@@ -4,7 +4,7 @@ title: "Conformal Maps"
 status: completed
 ---
 
-See also [conformal map exercises](Complex_Analysis/Conformal_maps/Conformal_Exercises.md).
+See also [[Complex_Analysis/conformal-maps/build-me-a-map|conformal map exercises]].
 
 ## Classifying conformal maps
 

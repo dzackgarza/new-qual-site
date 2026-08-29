@@ -6,7 +6,7 @@ title: "Alternative sum of maps and abelian $\\pi_n$"
 classification:
   areas:
   - topology
-topics:
+  topics:
   - Higher Homotopy Groups
 relations: []
 audit:

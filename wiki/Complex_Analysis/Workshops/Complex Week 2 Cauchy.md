@@ -5,7 +5,7 @@ title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
 
 # Topics
 
-- [[Complex_Analysis/Maps_of_the_disc/Schwarz lemma|Blaschke factors]]
+- [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]]
 
 - Toy contours
 

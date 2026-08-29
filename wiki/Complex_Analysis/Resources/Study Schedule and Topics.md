@@ -95,17 +95,17 @@ title: "Study Schedule and Topics"
 
 - Week 8 (July 7): **Conformal Maps**
 
-  - [[Complex_Analysis/Conformal_maps/Conformal_Standard|Conformal maps]]
+  - [[Complex_Analysis/conformal-maps/build-me-a-map|Conformal maps]]
 
-  - [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Linear Fractional/Mobius Transformations|Mobius transformations and linear fractional transformations]]
+  - [[Complex_Analysis/conformal-maps/mobius-transformations|Mobius transformations and linear fractional transformations]]
 
-  - [[Conformal_Standard#The Big 9 Conformal Maps|The big 9 standard maps]]
+  - [[Complex_Analysis/conformal-maps/build-me-a-map|The big 9 standard maps]]
 
-  - [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]],
+  - [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and plane]],
 
 - Week 9 (July 14): **Schwarz lemma**
 
-  - [[Complex_Analysis/Conformal_maps/Conformal Map Theory and Background#Blaschke Factors|Blaschke Factors]]
+  - [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke Factors]]
 
   - [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma]]
 
@@ -121,11 +121,11 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/cauchy-theory/the-identity-principle|The identity principle]]
 
-  - [[Complex_Analysis/Omitted_values/Montel#Normal Families|Normal families]]
+  - [[Complex_Analysis/conformal-maps/normal-families-and-montel|Normal families]]
 
-  - [[Complex_Analysis/Omitted_values/Montel|Montel's theorem]]
+  - [[Complex_Analysis/conformal-maps/normal-families-and-montel|Montel's theorem]]
 
-  - [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|Riemann mapping theorem and unformization]]
+  - [[Complex_Analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem and unformization]]
 
 - **Other misc topics:**
 
