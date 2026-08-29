@@ -89,9 +89,9 @@ title: "Study Schedule and Topics"
 
 - Week 7 (June 30): **Roots**
 
-  - [[Complex_Analysis/Zeros_and_poles/Argument Principle|Argument principle]]
+  - [[Complex_Analysis/counting-zeros/the-argument-principle|Argument principle]]
 
-  - [[Complex_Analysis/Zeros_and_poles/Rouche|Rouche's theorem]]
+  - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
 
 - Week 8 (July 7): **Conformal Maps**
 

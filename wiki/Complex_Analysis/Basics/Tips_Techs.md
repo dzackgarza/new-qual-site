@@ -28,7 +28,7 @@ Things to know well:
 - [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's Theorem]]
 - [[Complex_Analysis/Cauchy/Liouville|Liouville's Theorem]]
 - [[Complex_Analysis/Cauchy/Maximum modulus principle|Maximum Modulus Principle]]
-- [[Complex_Analysis/Zeros_and_poles/Rouche|Rouché's Theorem]]
+- [[Complex_Analysis/counting-zeros/rouches-theorem|Rouché's Theorem]]
 - [[Complex_Analysis/Cauchy/Schwarz reflection principle|The Schwarz Reflection Principle]]
 - [[Complex_Analysis/Cauchy/Schwarz|The Schwarz Lemma]]
 - Casorati-Weierstrass Theorem (no page yet)
@@ -44,7 +44,7 @@ Things to know well:
 	- [[Complex_Analysis/Quals/Morera|Morera qual questions]]
 - [[Complex_Analysis/Cauchy/Liouville|Liouville's theorem]]
 	- [[Complex_Analysis/Quals/Liouville|Liouville qual questions]]
-- [[Complex_Analysis/Zeros_and_poles/Rouche|Rouche's theorem]]
+- [[Complex_Analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
 	- [[Complex_Analysis/Quals/Rouche Applications|Rouche qual questions]]
 - [[Complex_Analysis/Cauchy/Schwarz reflection principle|The Schwarz reflection principle]]
 - [[Complex_Analysis/Maps_of_the_disc/Schwarz lemma|The Schwarz lemma]]
@@ -62,7 +62,7 @@ Things to know well:
 	- [[Complex_Analysis/Quals/Computing Integrals|Qual integrals]]
 - Jordan's lemma
 - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|The Cauchy-Riemann equations]]
-- [[Complex_Analysis/Zeros_and_poles/Argument Principle|The argument principle]]
+- [[Complex_Analysis/counting-zeros/the-argument-principle|The argument principle]]
 - [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|The Riemann mapping theorem]]
 - [[Complex_Analysis/Zeros_and_poles/Riemann removable singularity|Riemann's removable singularity theorem]]
 

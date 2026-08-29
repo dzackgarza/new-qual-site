@@ -1,11 +1,12 @@
 ---
 title: Zeros and poles
-order: 3
+order: 5
 ---
 
 # Zeros and poles
 
-Isolated singularities, the argument principle, Rouché, and meromorphic functions.
+Isolated singularities and meromorphic functions.
+Counting the zeros in a region is [[Complex_Analysis/counting-zeros/index|its own chapter]].
 
 Two parallel notes cover the classification:
 
@@ -14,12 +15,6 @@ Two parallel notes cover the classification:
 - [[Zeros and Poles|Zeros, poles, and examples]].
 
 Then:
-
-- [[Counting_Zeros_and_Poles_ArgPrinciple_Rouche|Counting Zeros and Poles]].
-
-- [[Complex_Analysis/Zeros_and_poles/Argument Principle|Argument Principle]].
-
-- [[Rouche|Rouché]].
 
 - [[Open Mapping|Open Mapping Theorem]].
 
