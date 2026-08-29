@@ -1935,6 +1935,46 @@ GUIDES_LEDE = (
 )
 
 
+ACROSS_SUBJECTS_LEDE = (
+    "Not a subject. These read the same problems the subject guides do, in a different order, "
+    "so a subject appears in both and neither is a copy of the other. "
+    "The wiki files each of these pages under the subject it belongs to."
+)
+
+
+def _guide_sections(
+    guides: list[PublicationManifest],
+    area_names: dict[str, str],
+    inline_cache: dict[str, list[pf.Inline]],
+) -> list[pf.Block]:
+    """The subject guides, then the guides that cross subjects rather than being one.
+
+    A guide's id names its subject -- that is how its query panels are scoped --
+    so whether it is a subject is already recorded and does not become a field
+    an author can forget.
+    """
+
+    def listing(chosen: list[PublicationManifest]) -> pf.BulletList:
+        return pf.BulletList(
+            *[
+                pf.ListItem(
+                    pf.Plain(pf.Link(pf.Str(guide.title), url=f"guide/{guide.id}.html")),
+                    pf.Para(*_inlines(guide.lede, inline_cache)),
+                )
+                for guide in chosen
+            ]
+        )
+
+    subjects = [guide for guide in guides if guide.area in area_names]
+    crossing = [guide for guide in guides if guide.area not in area_names]
+    blocks: list[pf.Block] = [listing(subjects)]
+    if crossing:
+        blocks.append(pf.Header(pf.Str("Across the subjects"), level=2))
+        blocks.append(pf.Para(*_inlines(ACROSS_SUBJECTS_LEDE, inline_cache)))
+        blocks.append(listing(crossing))
+    return blocks
+
+
 def source_index_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
@@ -2439,6 +2479,7 @@ def project(
             "Every problem in the corpus.",
             f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
             GUIDES_LEDE,
+            ACROSS_SUBJECTS_LEDE,
         ]
     )
     inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
@@ -2567,17 +2608,16 @@ def project(
                 [
                     pf.Para(*_inlines(GUIDES_LEDE, inline_cache)),
                     # Each guide states what it is in its manifest and the list
-                    # showed none of it: six bare subject names, the same six
-                    # the wiki offers, with nothing to choose between them.
-                    pf.BulletList(
-                        *[
-                            pf.ListItem(
-                                pf.Plain(pf.Link(pf.Str(guide.title), url=f"guide/{guide.id}.html")),
-                                pf.Para(*_inlines(guide.lede, inline_cache)),
-                            )
-                            for guide in guides
-                        ]
-                    ),
+                    # showed none of it: bare subject names, the same ones the
+                    # wiki offers, with nothing to choose between them.
+                    #
+                    # A guide whose id names an area is a subject. Workshops is
+                    # not one, and listing it beside the six read as a seventh
+                    # subject -- which is why Guides and the wiki appeared to
+                    # disagree about what the subjects are. The wiki files each
+                    # workshop week under the subject it belongs to, correctly;
+                    # the guide crosses them on purpose, and says so here.
+                    *_guide_sections(guides, area_names, inline_cache),
                 ],
             ),
             out / "guides.qmd",

@@ -1100,7 +1100,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   `guides.html` shows each guide's own lede, which the manifests already carried and the page showed none of.
   `wiki/index.html` is titled `Wiki`. Whether the site should carry both hierarchies at all is the next item, and still open.
 
-- [ ] Reconcile the four subject vocabularies.
+- [x] Reconcile the four subject vocabularies.
   Browse filter: Algebra, Applied Algebra, Complex Analysis, Prelim, Real Analysis, Topology.
   Generate: the same six in a different order.
   Guides: drops Applied Algebra, adds Workshops.
@@ -1110,7 +1110,10 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Browse, Generate, and the problem browser's headings now call an area what the registry calls it, and offer the six in the registry's order.
   Applied Algebra now has a guide, per the owner's decision, so Guides covers all six areas and Workshops is the seventh entry rather than a substitute for one.
   It is built from problem panels: the subject has 247 problems and no definition, theorem or example cards, and the other five guides open each section with those.
-  Writing them is its own piece of mathematics and belongs under issue #2. What is left of this item: the wiki files Workshops under each subject rather than beside them, and calls the prelim branch `Prelims` where the registry says `Prelim`.
+  Writing them is its own piece of mathematics and belongs under issue #2.
+  The registry is gone: the subjects are the wiki's top-level folders, so `Prelim` and `Prelims` cannot disagree any more -- the folder is the id and its title is the display name.
+  Workshops was never a subject; listing it beside the six is what made Guides and the wiki look like they disagreed. It sits under `Across the subjects` now, and the wiki goes on filing each workshop week under the subject it belongs to.
+  Browse, Generate, Guides and the Wiki offer the same six ids in the same order.
 
 ### Collections
 
