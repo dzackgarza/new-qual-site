@@ -1325,26 +1325,42 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Real_Analysis/Resources/Preface.md` — the Folland exercise lists run together with no separators and an unclosed paren: "...9 (in 9(c) you can use Exercise 1.29 without proof Exercises 10, 12, 13...". Unreadable as written.
   Also broken by paste-through: `Algebra/index.md` bullets end in stray commas and `⇒?`, use "Eigenstuff" / "$M/IM$ stuff" / "Bonus optional stuff", break list nesting after "such as:", and weeks 10–13 of the "study path" are empty workshop scheduling ("Buffer", "Buffer", "No meeting (Mock AMS)").
 
-## 11. Reorganize the wiki
 
-Evidence: a structural read of `wiki/` (367 pages), `corpus/`, `publications/`, and the route rules in `tools/qualc/wiki.py` on 2026-08-30. Section 10 repairs the copy inside the current tree; this section replaces the tree.
+## 11. Author the wiki as a study guide
+
+`AGENTS.md`, "The wiki is a textbook", governs this section.
+The organizing question is what a reader studying for the exam needs, and what has to sit next to it.
+Evidence below: a structural read of `wiki/` (367 pages), `corpus/`, and `publications/` on 2026-08-30.
 
 ### Three operations, not one
 
 Reorganization moves pages.
 It cannot change how much content exists: a page that moves still exists.
 Page count is not a score for it, and a reorganization that lowers the count has destroyed something.
-The expected direction here is up: the main move is splitting one page that holds several concepts into one note per concept, and the tree adds an index for each area.
+The expected direction is up: the main editorial move is splitting one page that holds several concepts into one page per concept.
 
 Two other operations ride along here, and each is justified on its own terms:
 
 - **Deduplication.** The 90 `Quals/` link lists and the source-archive pages are card data typed a second time.
   Replacing them with a query removes no content, because the query renders the same problems from the same cards.
 
-- **Writing.** The areas that hold no notes.
+- **Writing.** The chapters that do not exist yet.
   This is the only one of the three that changes how much content exists, and it only adds.
 
 Judge each on its own claim. Do not let the second pay for the first, and do not let either stand in for the third.
+
+### The table of contents is unwritten
+
+The current tree is folder archaeology: five axes at one level — topic, sitting, institution, course week, and resource type — inherited from five source repositories.
+No one has yet decided what the study guide's chapters are.
+
+That decision is editorial and belongs to the maintainer.
+It is not derivable from the corpus: topic strings, card kinds, tag frequencies, and the guide section lists describe storage, not exposition.
+
+- [ ] Author the table of contents, one subject at a time, starting with complex analysis.
+  Include the pages that have no counterpart in the current tree: the technique drilldowns ("which contour do I close", "how do I show a group of order n is not simple"), the compendia (counterexamples, standard contour integrals, proof sketches for last-week review), and the groupings by conclusion (the theorems that hand you a constant function).
+
+Everything below is evidence for that authoring, not a plan that precedes it.
 
 ### What is there now (measured)
 
@@ -1363,204 +1379,19 @@ Judge each on its own claim. Do not let the second pay for the first, and do not
 120 filenames contain spaces, 75 contain underscores.
 69 pages carry `order: 100001` — the marker for "no place in the tree".
 
-### The one structural fault
+### Chapters that do not exist yet
 
-The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**. Every subject folder holds all five.
-
-The result is that one concept has many homes, and that pages sharing a name are assumed to share a subject when they do not.
-Six complex analysis pages carry Schwarz in the title, across three folders, and they are three different subjects:
-`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`), `Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`),
-and `Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations under a heading that names neither.
-Merging these on the name would file the automorphism material under a lemma it is not about.
-The maximum modulus principle has three.
-Rouché has four.
-Argument principle has two.
-UCSD Fall 2014 exists twice — `Topology/Quals/UCSD/UCSD_Fall 2014.md` (card links) and `Topology/Quals/UCSD/Quals/Old/Fall 2014.md` (the raw pre-import copy), at depth 3 and depth 5.
-
-Worse, two of those five axes are **already data**. `corpus/collections/*/index.md` records institution, term, and the ordered problem list.
-Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
-The 90 `Quals/` pages are a third, hand-typed copy that drifts.
-
-### The principle
-
-> **The wiki owns prose.
-> The corpus owns problems.
-> The wiki never hand-lists what the corpus can generate.**
-
-One axis per level: `subject → concept area → note`. Sittings, institutions, and course weeks leave the tree.
-
-### The areas are the guide sections
-
-Each subject's concept areas are the section list of its guide in `publications/`. The guide and the wiki then share one spine and render it two ways: the guide reads front to back, the wiki files for lookup.
-The sections already carry `query.topics`, so an area index and a guide section select the same problems without a second topic list.
-
-### Page-kind contract
-
-Only three kinds of page may exist:
-
-| Kind | Path | Content rule |
-| --- | --- | --- |
-| **Index** | `*/index.md` | One orientation paragraph, then links to its children. No mathematics. |
-| **Note** | `<subject>/<area>/<name>.md` | One concept. Definitions, statements, proofs, technique. Problems come from a query, not from typing. |
-| **Register** | `<subject>/{syllabus,references}.md` | The official topic list; the books and links. One of each per subject, never a folder. |
-
-Rules that go with it:
-
-- Depth is capped at 3. Today 39 pages sit deeper.
-
-- Names are lowercase kebab-case, so the filename equals the emitted slug and a wikilink target reads like its URL.
-
-- `order` is a small integer, spaced by 10 within a folder.
-  `100001` disappears.
-
-- One `# H1` per page, equal to `title`.
-
-### Sample tree: Complex Analysis, in full
-
-Every current page has a destination, and every area has a place for the notes not written yet.
-
-```
-wiki/complex-analysis/
-├── index.md                       what the exam is, the five areas, links to guide + exams
-├── syllabus.md                    ← the syllabus half of today's index.md
-├── references.md                  ← Resources/{Books_Notes, Study Schedule and Topics,
-│                                              Problems, Solutions}
-├── foundations/
-│   ├── index.md
-│   ├── complex-arithmetic.md      ← Basics/{Complex Arithmetic, Precalculus,
-│   │                                        Complex_Preliminaries}
-│   ├── the-complex-logarithm.md   ← Basics/Complex Log
-│   ├── holomorphy.md              ← Basics/{Analyticity, Holomorphy and Calculus,
-│   │                                        Calculus_Preliminaries}
-│   ├── cauchy-riemann.md          ← Basics/The Cauchy-Riemann equations
-│   │                                + Quals/CR and Holomorphy
-│   ├── harmonic-functions.md      ← Basics/Harmonic Functions
-│   └── power-series.md            ← Basics/{Series Reference, Series Exercises}
-│                                    + Quals/Series Convergence
-├── cauchy-theory/
-│   ├── index.md
-│   ├── cauchy-theorem.md          ← Cauchy/Cauchy_Theorem + Quals/Cauchy Theorem
-│   ├── integral-formula.md        ← Cauchy/Cauchy Integral Formula
-│   ├── cauchy-estimates.md        ← Cauchy/Cauchy Inequality
-│   ├── liouville.md               ← Cauchy/Liouville
-│   │                                + Quals/{Liouville, Liouville_PowerSeries}
-│   ├── morera.md                  ← Cauchy/Morera_Theorem + Quals/Morera
-│   ├── identity-principle.md      ← Cauchy/Identity Principle
-│   ├── maximum-modulus.md         ← Cauchy/Maximum modulus principle
-│   │                                + Zeros_and_poles/MMP + Quals/Maximum_Modulus
-│   ├── mean-value.md              ← Cauchy/Mean Value Theorem
-│   └── schwarz-reflection.md      ← Cauchy/Schwarz reflection principle
-│                                    + Quals/Schwarz Reflection
-├── singularities/
-│   ├── index.md
-│   ├── classification.md          ← Zeros_and_poles/Singularities
-│   │                                + Quals/{Singularities, Laurent_Singularities}
-│   ├── removable.md               ← Zeros_and_poles/Riemann removable singularity
-│   ├── laurent-series.md          ← Quals/Laurent Expansions
-│   ├── meromorphic-functions.md   ← Zeros_and_poles/Meromorphic Functions
-│   ├── casorati-weierstrass.md    ← Omitted_values/Casorati-Weierstrass
-│   └── picard.md                  ← Omitted_values/Picard
-├── residues-and-counting/
-│   ├── index.md
-│   ├── residue-theorem.md         ← Residues/Residues
-│   ├── contour-integration.md     ← Residues/{Integrals, Residues for integrals,
-│   │                                          Exercises_Integrals}
-│   │                                + Quals/{Computing Integrals, IntegralsCauchy}
-│   ├── zeros-and-poles.md         ← Zeros_and_poles/Zeros and Poles
-│   ├── argument-principle.md      ← Zeros_and_poles/Argument Principle
-│   │                                + Quals/Argument Principle
-│   ├── rouche.md                  ← Zeros_and_poles/{Rouche,
-│   │                                  Counting_Zeros_and_Poles_ArgPrinciple_Rouche}
-│   │                                + Quals/{Rouche 8155h, Rouche Applications}
-│   └── open-mapping.md            ← Zeros_and_poles/Open Mapping
-├── conformal-maps/
-│   ├── index.md
-│   ├── conformal-mapping.md       ← Conformal_maps/{Conformal_Mapping,
-│   │                                  Conformal Map Theory and Background}
-│   ├── standard-maps.md           ← Conformal_maps/Conformal_Standard
-│   ├── schwarz-lemma.md           ← Cauchy/Schwarz + Quals/Schwarz_Lemma
-│   ├── blaschke-factors.md        ← Maps_of_the_disc/Schwarz lemma, which is about
-│   │                                Blaschke factors, not the lemma
-│   ├── automorphisms.md           ← Maps_of_the_disc/Automorphisms of the disc and plane
-│   ├── riemann-mapping.md         ← Maps_of_the_disc/Riemann Mapping
-│   │                                + Quals/{Riemann Mapping and Casorati,
-│   │                                         "Riemann Mapping, Casorati"}
-│   └── normal-families.md         ← Omitted_values/Montel + Quals/Montel
-└── further-topics/
-    ├── index.md
-    ├── fundamental-theorem-of-algebra.md  ← Appendices/Appendix FTA Proofs
-    ├── gauss-lucas.md
-    ├── hurwitz.md
-    ├── special-functions.md
-    ├── harmonic-pde.md            ← Appendices/PDEs
-    └── analytic-number-theory.md  ← Basics/Analytic_NT
-```
-
-The 34 `Quals/` pages become query blocks.
-`Exercises/` (2), `Workshops/` (3), and `Resources/Source_Archive` move to the corpus.
-`Basics/Tips_Techs`, `Appendices/Appendix Unsorted`, and `Quals/Unsorted` name no subject: each sentence moves into the note it belongs to, and the wrapper page ends.
-
-### Pages that split
-
-The sample tree above shows merges, because complex analysis is where the duplication is worst.
-Across the wiki the commoner move is the other one: one page holds several concepts, and the contract gives each its own note.
-
-| Page | Size | Sections | Splits into |
-| --- | ---: | ---: | --- |
-| `Algebra/Fields/Galois_Theory_Computations.md` | 26 kB | 5 h2, 10 h3 | the computation techniques, one note each |
-| `Algebra/Fields/Fields_Extensions.md` | 20 kB | 6 h2 | extensions, splitting fields, separability, finite fields |
-| `Algebra/Groups/Groups_Classification.md` | 20 kB | 5 h2 | the classification arguments by order |
-| `Algebra/Groups/Groups_Basics.md` | 18 kB | 8 h2 | subgroups, quotients, isomorphism theorems, the standard families |
-| `Archives/Topics.md` | 14 kB | 10 h2, 10 h3 | to `wiki/reading/`, by topic |
-| `Topology/Examples/Examples.md` | 14 kB | 2 h2 | the standard spaces, one note each |
-| `Complex_Analysis/Basics/Tips_Techs.md` | 13 kB | 11 h2 | the techniques, into the note each belongs to |
-| `Algebra/index.md` | | | `index.md`, `syllabus.md`, and the twelve-week sequence |
-| `Topology/Basics/Preface.md` | 4 kB | 2 h2 | notation and background, into `point-set/` |
-
-Add to that one `index.md` per area — about 30 of them, replacing 70 hand-typed ones that mostly index folders the new tree does not have.
-
-### The six subjects, as area lists
-
-Each list is the section list of that subject's guide.
-
-```
-wiki/
-├── index.md
-├── prelim/            logic-and-proof · limits-and-continuity · integration-techniques ·
-│                      sequences-and-series · multivariable-calculus · linear-algebra ·
-│                      groups · rings-and-modules · fields-and-galois ·
-│                      complex-numbers · counterexamples
-├── algebra/           groups · rings · modules · fields · galois ·
-│                      linear-algebra · representations
-├── real-analysis/     undergraduate · measure · integration · lp-spaces ·
-│                      fourier · functional-analysis
-├── complex-analysis/  (above)
-├── topology/          point-set · homotopy · cw-complexes · homology ·
-│                      degree-and-fixed-points · surfaces-and-manifolds
-└── applied-algebra/   matrix-analysis · representation-theory · symmetric-functions ·
-                       grobner-bases-and-varieties · invariant-theory
-```
-
-Prelim is a subject with the same shape as the other five.
-
-Two subject-level changes worth naming.
-Algebra's `Fields/` currently holds both field theory and Galois computation; these split, because the syllabus, the guide, and the problem topics all treat them separately.
-Topology's `Basics/` and `Point_set/` are the same area under two names; they merge.
-
-### Notes to write
-
-An area with no note is a slot for work, not an empty folder.
-The tree names every area the six subjects need, and each area without prose becomes a queue item.
 The card counts are already there; the writing is not.
+This is the largest body of work in the section.
 
-Whole branches:
+- **Applied algebra**: 247 problems, zero theory cards, zero prose.
+  `Applied_Algebra/` holds an index and a source archive.
 
-- **Applied algebra**: 278 cards, five areas, zero notes.
-  `Applied_Algebra/` holds an index and a source archive today.
+- **Prelim**: 257 problems, zero theory cards, two notes (`Useful Tricks`, `Prelim Resources`).
 
-- **Prelim**: 280 cards, eleven areas, two notes (`Useful Tricks`, `Prelim Resources`).
+Both subjects have no theory cards at all, so the wiki is the only place their mathematics can live.
 
-Areas inside the four written subjects that hold one or two notes today:
+Inside the four written subjects, these areas hold one or two notes each:
 
 | Area | Notes today |
 | --- | ---: |
@@ -1571,31 +1402,41 @@ Areas inside the four written subjects that hold one or two notes today:
 | `Topology/{Homology, Appendices}` | 2 each |
 | `Complex_Analysis/{Maps_of_the_disc, Omitted_values}` | 3 each |
 
-Topology carries the thinnest coverage of any written subject: six of its areas hold one note.
+Topology carries the thinnest coverage of any written subject.
 
-### Disposition of everything the tree holds now
+### Pages that hold several chapters
 
-| Today | Goes to | Why |
-| --- | --- | --- |
-| `*/Quals/<topic>.md` (≈70) | a query block on the concept note | The topics are on the cards already |
-| `*/Quals/<sitting>.md` (≈20) | `/exam/<collection>` | The collection records the sitting and its problem order |
-| `Topology/Quals/{UCSD,UGA}/**` | `/exam/` | Institution is a card field, not a folder |
-| `*/Exercises/PSet *.md` (18) | solution cards on `SRC-MATH8100-ASSIGNMENT-*` | A problem set is a collection: problems, and a solution where one is written |
-| `Prelim/Worked_Exams/**` (5) | solution cards on the prelim collections | Same: a sitting is a collection |
-| `*/Workshops/Week *.md` (11) | the concept notes for the topics they cover | The week order lives in `GUIDE-WORKSHOPS` |
-| `*/Resources/**` (24) | one `references.md` per subject | Six pages replace 24 |
-| `*/Resources/Source_Archive.md` | `exams.html` | Duplicate of the source browser |
-| `*/Appendices/**` (12) | `<subject>/further-topics/` | Each one is a topic, not an appendix |
-| `Archives/Tracking/**` (7) | out of the published wiki | One person's 2014–2016 to-dos, already flagged in section 10 |
-| `Archives/{Card_Archives, Prelims_Source_Archive}` | `exams.html` | Duplicate |
-| `Archives/{Topics, Further Studying, Graduate_Topics, Solution Compendia}` | `wiki/reading/` | Real content, off the syllabus |
+Whatever table of contents is authored, these pages hold more than one subject each and will split.
 
-`Archives` becomes `wiki/reading/`: the reading past the syllabus keeps its branch, and the duplicated source dumps become the exam browser they copy.
+| Page | Size | Sections |
+| --- | ---: | ---: |
+| `Algebra/Fields/Galois_Theory_Computations.md` | 26 kB | 5 h2, 10 h3 |
+| `Algebra/Fields/Fields_Extensions.md` | 20 kB | 6 h2 |
+| `Algebra/Groups/Groups_Classification.md` | 20 kB | 5 h2 |
+| `Algebra/Groups/Groups_Basics.md` | 18 kB | 8 h2 |
+| `Archives/Topics.md` | 14 kB | 10 h2, 10 h3 |
+| `Topology/Examples/Examples.md` | 14 kB | 2 h2 |
+| `Complex_Analysis/Basics/Tips_Techs.md` | 13 kB | 11 h2 |
+| `Algebra/index.md` | | syllabus and a twelve-week sequence in one page |
 
-### The one code change this needs
+### A name is not a subject
 
-Ninety pages exist only to type out problem lists.
-Replace them with a query in the note's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
+Six complex analysis pages carry Schwarz in the title, across three folders, and they are three different subjects.
+`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`).
+`Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`).
+`Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations, under a heading that names neither.
+
+Merging these on the name files the automorphism material under a lemma it is not about.
+Every same-name pair in `wiki/` needs both pages read before anything is decided about them.
+
+### The 90 pages that retype card data
+
+`corpus/collections/*/index.md` records institution, term, and the ordered problem list.
+Every card records `classification.topics`.
+The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
+The `Quals/` folders are a third, hand-typed copy, and they drift.
+
+Replace them with a query in the page's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
 
 ```yaml
 ---
@@ -1606,37 +1447,26 @@ problems:
 ---
 ```
 
-`emit.py` renders "Problems on this topic (N)" at the foot of the page from the corpus index.
-The list stops drifting, and it never has to be re-typed when a card is added.
+`emit.py` renders the matching problems at the foot of the page from the corpus index.
 
-One caveat: the corpus has 668 distinct topic strings and 166 of them appear exactly once.
-A query spine needs a curated topic list — roughly 20 per subject — mapped onto that folksonomy.
-The guide sections are where that curation already started, so it continues there.
+- [ ] Add the `problems:` query block to `emit.py`.
 
-### Migration order
+- [ ] Replace the 90 `Quals/` pages and the source-archive pages with it.
+  These are the only pages this section removes, and their content survives: it is card data, rendered.
 
-Each step ships on its own.
+One caveat: the corpus has 668 distinct topic strings and 166 appear exactly once.
+A query needs a curated topic list, and that curation is reading, not scripting.
 
-- [ ] 1. **Curate the topic list** (≈120 topics across six subjects), extending the guide sections, and map the 668 raw strings onto it.
+- [ ] Curate the topic vocabulary, subject by subject, and map the raw strings onto it.
 
-- [ ] 2. **Add the `problems:` query block**, then replace the 90 `Quals/` pages and the source-archive pages with it.
-  These are the only pages the reorganization removes, and their content survives: it is card data, rendered.
+### Mechanical constraints
 
-- [ ] 3. **Lift the writeups** — PSets, worked exams, workshop notes — into the corpus as solution cards on their collections, or into the concept notes.
+Plumbing. These decide nothing about what the text should be.
 
-- [ ] 4. **Rename and reparent** to the three-level kebab-case tree.
-  The wikilink resolver fails loudly on an ambiguous target, which is the safety net for this step.
+- Every directory needs an `index.md`, or the build drops it from the tree.
 
-- [ ] 5. **Rewrite the six subject indexes** to one shape and split `syllabus.md` out.
-  This closes the section 10 item that says six subjects have five shapes.
+- Every page needs an integer `order`. The 69 pages at `100001` have none that means anything.
 
-- [ ] 6. **Re-file `Archives`** into `wiki/reading/`, the branch for reading past the syllabus.
+- Routes are slugged from the source path, so a filename with spaces or underscores reads differently from its URL. Lowercase kebab-case makes the two agree.
 
-- [ ] 7. **Write the applied algebra branch**: five area indexes and their notes, against the 278 cards.
-
-- [ ] 8. **Write the prelim branch**: eleven area indexes and their notes, against the 280 cards.
-
-- [ ] 9. **Fill the thin areas** named above, one area at a time.
-
-Steps 1 to 6 stop the tree from carrying a hand-typed second copy of card data; nothing there is lost, because the query renders it.
-Steps 7 to 9 are the work the tree exists to hold, and they are the larger half.
+- One `# H1` per page, equal to `title`. Six pages named `Preface` and a second H1 on `Topology/index.md` are section 10 items.
