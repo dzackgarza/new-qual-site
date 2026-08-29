@@ -78,13 +78,15 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # `graphicx`, and draws U+21A4. `\varinjlim` and `\varprojlim` are renewed over
 # the amsmath originals in terms of `\varlim@` and `\nmlimits@`, which are
 # amsmath's own internals: MathJax already provides both, so its versions
-# stand. `\envlist` is vertical glue with no mathematics in it at all.
+# stand. `\fps` is written with stmaryrd's `\llbracket` and `\rrbracket`, which
+# are U+27E6 and U+27E7. `\envlist` is vertical glue with no mathematics in it.
 UNRENDERABLE = {
     "notdivides": "\\mathrel{\\nmid}",
     "contradiction": "\\mathord{\\unicode{x21AF}}",
     "one": "{\\unicode{x1D7D9}}",
     "indic": "{\\unicode{x1D7D9}}\\left[#1\\right]",
     "mapsfrom": "\\mathrel{\\unicode{x21A4}}",
+    "fps": "{\\unicode{x27E6} #1 \\unicode{x27E7}}",
     "envlist": "",
 }
 
@@ -152,11 +154,7 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
-    macros = {
-        "\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip()
-        for name, body in sorted(keep.items())
-        if name not in NATIVE
-    }
+    macros = {"\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items()) if name not in NATIVE}
     (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
     undefined = sorted(n for n in used if n not in defined)

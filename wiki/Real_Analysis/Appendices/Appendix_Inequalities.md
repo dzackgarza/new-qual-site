@@ -175,7 +175,7 @@ q &= \frac p {p-1}
 \envlist
 
 - It's an equality when $t=0$.
-- $\dd{}{t} 1+ t < \dd{t}e^t \iff t<0$
+- $\dd{}{t} 1+ t < \dd{}{t}e^t \iff t<0$
 
 :::
 

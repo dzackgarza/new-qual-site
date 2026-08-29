@@ -66,7 +66,7 @@ For a group $G$ acting on a set $X$,
 |                                                                                        |                     |
 
 \[
-OO(x) = Gx = \theset{g\cdot x \suchthat g\in G} \subseteq X  && \text[Orbit}
+OO(x) = Gx = \theset{g\cdot x \suchthat g\in G} \subseteq X  && \text{Orbit}
 \]
 
 Note that being in the same orbit is an equivalence relation which partitions $X$, and $G$ acts transitively if restricted to any single orbit.

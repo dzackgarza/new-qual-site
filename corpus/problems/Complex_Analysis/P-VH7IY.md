@@ -37,7 +37,7 @@ Also show that this function is not continuous in $r>0$.
 **Goal:** (a) Derive the polar form of the Cauchy–Riemann equations; (b) use it to show the principal logarithm $\log z = \log r + i\theta$ ($z = re^{i\theta}$, $-\pi < \theta < \pi$) is holomorphic on the slit plane, and show this function is not continuous on all of $r > 0$.
 
 <1>1. Chain rule in polar coordinates: $u_r = u_x \cos\theta + u_y \sin\theta$ and $u_\theta = r(-u_x \sin\theta + u_y \cos\theta)$; same for $v$.
-    Proof: With $x = r\cos\theta$, $y = r\sin\theta$, $\dd{r} = \cos\theta\,\dd{x} + \sin\theta\,\dd{y}$ and $\dd{\theta} = -r\sin\theta\,\dd{x} + r\cos\theta\,\dd{y}$ by the chain rule.
+    Proof: With $x = r\cos\theta$, $y = r\sin\theta$, $dr = \cos\theta\,dx + \sin\theta\,dy$ and $d\theta = -r\sin\theta\,dx + r\cos\theta\,dy$ by the chain rule.
 
 <1>2. (a): $u_r = \frac{1}{r} v_\theta$ and $v_r = -\frac{1}{r} u_\theta$.
     Proof: The Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ imply, by <1>1, $u_r = u_x\cos\theta + u_y\sin\theta = v_y\cos\theta - v_x\sin\theta = \frac{1}{r}\qty(-v_x r\sin\theta + v_y r\cos\theta) = \frac{1}{r} v_\theta$. Similarly $v_r = v_x\cos\theta + v_y\sin\theta = -u_y\cos\theta + u_x\sin\theta = -\frac{1}{r}\qty(-u_x r\sin\theta + u_y r\cos\theta) = -\frac{1}{r} u_\theta$.

@@ -44,9 +44,9 @@ Proof: From <1>1–<1>2: $I(1 - e^{2\pi i a/n}) = 2\pi i \cdot \qty(-\frac{1}{n}
 <1>4. For (ii), differentiate the $a$-family at the right point or integrate by parts: use $F(a) = \int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx = \frac{\pi}{\sin(\pi a/2)}$ (case $n = 2$ of (i), valid for $0 < a < 2$) and differentiate with respect to $a$ at $a = 1$... but the integrand is $\log x/(1+x^2)^2$, not $\log x \cdot x^{a-1}/(1+x^2)$.
 Instead, differentiate $G(a) = \int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx$: $G'(a) = \int_0^\infty \frac{\log x \, x^{a-1}}{1+x^2}\,dx$.
 We need $\int \frac{\log x}{(1+x^2)^2}$.
-Relate: $\ddd{a} \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx = \int_0^\infty \frac{\log x \, x^{a-1}}{(1+x^2)^2}\,dx$; at $a = 1$ this is exactly the desired integral.
-So compute $H(a) = \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx$ by differentiating the standard $\int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx = \frac{\pi}{\sin(\pi a/2)}$ with respect to the exponent of the denominator: alternatively use $\frac{1}{(1+x^2)^2} = -\dd{\beta}\frac{1}{\beta + x^2}\big|_{\beta = 1}$, or directly: $H(a) = \lim_{\beta \to 1} -\dd{\beta} \int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx$.
-Using $\int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx = \beta^{a/2 - 1}\frac{\pi}{2\sin(\pi a/2)}$ (substitute $x = \sqrt\beta t$): $H(a) = -\dd{\beta}\qty[\beta^{a/2 - 1}]\big|_{\beta=1} \frac{\pi}{2\sin(\pi a/2)} = \qty(1 - a/2)\frac{\pi}{2\sin(\pi a/2)}$.
+Relate: $\ddd{}{a} \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx = \int_0^\infty \frac{\log x \, x^{a-1}}{(1+x^2)^2}\,dx$; at $a = 1$ this is exactly the desired integral.
+So compute $H(a) = \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx$ by differentiating the standard $\int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx = \frac{\pi}{\sin(\pi a/2)}$ with respect to the exponent of the denominator: alternatively use $\frac{1}{(1+x^2)^2} = -\dd{}{\beta}\frac{1}{\beta + x^2}\big|_{\beta = 1}$, or directly: $H(a) = \lim_{\beta \to 1} -\dd{}{\beta} \int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx$.
+Using $\int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx = \beta^{a/2 - 1}\frac{\pi}{2\sin(\pi a/2)}$ (substitute $x = \sqrt\beta t$): $H(a) = -\dd{}{\beta}\qty[\beta^{a/2 - 1}]\big|_{\beta=1} \frac{\pi}{2\sin(\pi a/2)} = \qty(1 - a/2)\frac{\pi}{2\sin(\pi a/2)}$.
 At $a = 1$: $H(1) = \frac{1}{2} \cdot \frac{\pi}{2\sin(\pi/2)} = \frac{\pi}{4}$.
 
 <1>5. Then $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx = H'(1)$.

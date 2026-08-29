@@ -181,7 +181,7 @@
   "\\floor": "{\\left\\lfloor #1 \\right\\rfloor}",
   "\\formalpowerseries": "\\fps{#1}",
   "\\fourier": "\\widehat{#1}",
-  "\\fps": "{\\llbracket #1 \\rrbracket  }",
+  "\\fps": "{\\unicode{x27E6} #1 \\unicode{x27E7}}",
   "\\from": "\\leftarrow",
   "\\gal": "{ \\operatorname{Gal}}",
   "\\generators": "\\left\\langle{#1}\\right\\rangle",

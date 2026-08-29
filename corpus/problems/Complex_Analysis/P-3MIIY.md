@@ -52,9 +52,9 @@ Proof: $\frac{\cos(ax) - \cos(bx)}{x^2} = \int_a^b \frac{\sin(tx)}{x}\,dt$, so b
 Proof: Sector contour of angle $2\pi/n$ as in the standard computation: the pole at $e^{i\pi/n}$ contributes, and the second ray picks up a factor $e^{2\pi i a/n}$; solving gives $\frac{\pi}{n\sin(\pi a/n)}$.
 
 <1>6. (vi) $\int_0^\infty \frac{\log x}{1 + x^n}\,dx = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi}{n})$ for $n \ge 2$.
-Proof: Differentiate (v) with respect to $a$ at... rather, note $\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{\pi}{n\sin(\pi a/n)}$; differentiating in $a$: $\int_0^\infty \frac{\log x \, x^{a-1}}{1+x^n}\,dx = \dd{a}\frac{\pi}{n\sin(\pi a/n)} = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi a}{n})\csc\qty(\frac{\pi a}{n})$.
+Proof: Differentiate (v) with respect to $a$ at... rather, note $\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{\pi}{n\sin(\pi a/n)}$; differentiating in $a$: $\int_0^\infty \frac{\log x \, x^{a-1}}{1+x^n}\,dx = \dd{}{a}\frac{\pi}{n\sin(\pi a/n)} = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi a}{n})\csc\qty(\frac{\pi a}{n})$.
 At $a = 1$: $= -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi}{n})\csc\qty(\frac{\pi}{n})$ — but the desired integrand has $x^{a-1}$ with $a = 1$: yes, $x^{0} = 1$, so the integral is exactly $\int_0^\infty \frac{\log x}{1 + x^n}\,dx = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi}{n})$ since $\csc(\pi/n)$... wait: at $a = 1$, $\cot(\pi/n)\csc(\pi/n)$ — the answer commonly quoted is $-\frac{\pi^2}{n^2}\cot(\pi/n)$.
-Recheck: $\dd{a} \frac{\pi}{n \sin(\pi a/n)} = \frac{\pi}{n} \cdot \frac{-\cos(\pi a/n)\cdot \pi/n}{\sin^2(\pi a/n)} = -\frac{\pi^2}{n^2} \frac{\cos(\pi a/n)}{\sin^2(\pi a/n)}$.
+Recheck: $\dd{}{a} \frac{\pi}{n \sin(\pi a/n)} = \frac{\pi}{n} \cdot \frac{-\cos(\pi a/n)\cdot \pi/n}{\sin^2(\pi a/n)} = -\frac{\pi^2}{n^2} \frac{\cos(\pi a/n)}{\sin^2(\pi a/n)}$.
 At $a=1$: $-\frac{\pi^2}{n^2}\cot(\pi/n)\csc(\pi/n)$.
 Hmm, this is $\int_0^\infty \frac{\log x \cdot x^0}{1+x^n}$ — correct, the answer is indeed $-\frac{\pi^2}{n^2}\cot(\pi/n)\csc(\pi/n)$?
 The standard result: $\int_0^\infty \frac{\ln x}{1+x^n} = -\frac{\pi^2}{n^2} \frac{\cos(\pi/n)}{\sin^2(\pi/n)}$?
