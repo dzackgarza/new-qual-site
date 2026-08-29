@@ -24,38 +24,65 @@ We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satis
 :::
 
 ::: solution
-Let
-\[
-S=\{\alpha_i\in F:\alpha_i\notin E\}.
-\]
-Since $F=K(\alpha_1,\dots,\alpha_n)$ and $K\subseteq E$, adjoining all elements of $S$ to $E$ gives
-\[
-F=E(S).
-\]
-Write the elements of $S$ in increasing index order
-\[
-\alpha_{i_1},\alpha_{i_2},\dots,\alpha_{i_m},\qquad i_1<i_2<\cdots<i_m.
-\]
-Define recursively
-\[
-E_0:=E,\qquad E_r:=E_{r-1}(\alpha_{i_r}),\ r=1,\dots,m.
-\]
+**Theorem.**  
+Let $F=K(\alpha_1,\dots,\alpha_n)$ be radical over $K$.  
+If $K\subseteq E\subseteq F$, then there are elements
+$$\beta_1,\dots,\beta_m\in F$$
+such that
+$$
+F=E(\beta_1,\dots,\beta_m),\qquad \beta_r^{N_r}\in E(\beta_1,\dots,\beta_{r-1})\text{ for some }N_r>0.
+$$
 
-For each $r$, by hypothesis
-\[
+**Proof.**  
+Set
+$$
+S:=\{\alpha_i:\alpha_i\notin E\}.
+$$
+
+**Lemma 1.**  
+There is a unique ordering
+$$\alpha_{i_1},\alpha_{i_2},\dots,\alpha_{i_m}\qquad(i_1<\cdots<i_m)$$
+of $S$ such that
+$$
+F=E(\alpha_{i_1},\dots,\alpha_{i_m}).
+$$
+
+*Proof.* Because $K\subseteq E$ and $F=K(\alpha_1,\dots,\alpha_n)$, every generator in $S$ is needed to adjoin to $E$.
+Listing the elements of $S$ in increasing original index order gives the stated chain. ∎
+
+Define
+$$E_0:=E,\qquad E_r:=E_{r-1}(\alpha_{i_r}),\ r=1,\dots,m.$$
+
+**Lemma 2.**  
+For each $r\in\{1,\dots,m\}$, there exists $N_r>0$ with
+$$
+\alpha_{i_r}^{N_r}\in E_{r-1}.
+$$
+
+*Proof.*  
+By hypothesis on the original tower,
+$$
 \alpha_{i_r}^{n_{i_r}}\in K[\alpha_1,\dots,\alpha_{i_r-1}]
-\]
-for some $n_{i_r}>0$.
-Every factor $\alpha_j$ with $j<i_r$ either belongs to $E$ or is among
-$\alpha_{i_1},\dots,\alpha_{i_{r-1}}$, so
-\[
-K[\alpha_1,\dots,\alpha_{i_r-1}] \subseteq E_{r-1}.
-\]
-Hence $\alpha_{i_r}^{n_{i_r}}\in E_{r-1}$ and $E_r=E_{r-1}(\alpha_{i_r})$ is a radical extension.
+$$
+for some integer $n_{i_r}>0$.
+Every factor on the right has index $<i_r$, so it belongs to $E_{r-1}$:
+either it is already in $E$ or equals $\alpha_{i_t}$ with $t<r$.
+Hence
+$$
+\alpha_{i_r}^{n_{i_r}}\in E_{r-1}.
+$$
+Set $N_r:=n_{i_r}$. ∎
 
-After $m$ steps,
-\[
-E_m=E(\alpha_{i_1},\dots,\alpha_{i_m})=E(S)=F.
-\]
-So $F=E[\beta_1,\dots,\beta_m]$ with $\beta_r=\alpha_{i_r}$ and the required radical conditions.
+**Lemma 3.**  
+We have $F=E_m$.
+
+*Proof.*  
+By definition of the $E_r$,
+$$
+E_m=E(\alpha_{i_1},\dots,\alpha_{i_m})=E(S).
+$$
+Since $S$ is exactly the set of generators removed from $K(\alpha_1,\dots,\alpha_n)$ when passing from $K$ to $E$, $E(S)=F$. ∎
+
+Take $\beta_r:=\alpha_{i_r}$ for $r=1,\dots,m$.
+By Lemma 2 each radical step is over the previous field, and by Lemma 3 the full extension is $E_m=F$. ∎
 :::
