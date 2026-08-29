@@ -11,6 +11,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -26,4 +30,43 @@ z&=v.
 (b) Find the equation of the smallest variety $V$ that contains $S$.
 
 (c) Show that $S=V$.
+:::
+
+::: {.solution}
+**(a).**
+
+<1>1. The ideal is $I = (x - u + 2v, y - uv, z - v) \subseteq \mathbb{C}[u, v, x, y, z]$.
+Proof: the parametric equations give the generators $x - (u - 2v)$, $y - uv$, $z - v$.
+
+<1>2. Eliminating $u$ and $v$ (using $v = z$ and $u = x + 2z$), we get $y = uv = (x + 2z)z = xz + 2z^2$.
+Proof: substitute $v = z$ and $u = x + 2z$ into $y = uv$.
+
+<1>3. Hence the reduced Gröbner basis (for lex order $u > v > x > y > z$) is
+$$\{u - x - 2z,\ v - z,\ y - xz - 2z^2\}.$$
+Proof: <1>2 (these are the elimination polynomials, and they form a reduced Gröbner basis).
+
+**(b).**
+
+<1>1. The smallest variety containing $S$ is $V(y - xz - 2z^2)$.
+Proof: the image of the parametrization satisfies $y = xz + 2z^2$, and this is the only relation (the parametrization is injective on a Zariski-open set).
+
+<1>2. Hence $V = V(y - xz - 2z^2) = \{(x, y, z) : y = xz + 2z^2\}$.
+Proof: <1>1.
+
+**(c).**
+
+<1>1. Every point of $S$ satisfies $y = xz + 2z^2$, so $S \subseteq V$.
+Proof: <1>2 (b).
+
+<1>2. Conversely, given $(x, y, z) \in V$ (so $y = xz + 2z^2$), set $u = x + 2z$ and $v = z$; then $u - 2v = x$, $uv = (x + 2z)z = xz + 2z^2 = y$, and $v = z$.
+Proof: solve for $u, v$ in terms of $x, y, z$.
+
+<1>3. Hence $(x, y, z) \in S$, so $V \subseteq S$.
+Proof: <1>2.
+
+<1>4. Therefore $S = V$.
+Proof: <1>1 and <1>3.
+
+<1>5. Q.E.D.
+Proof: <1>3 (a), <1>2 (b), <1>4 (c).
 :::
