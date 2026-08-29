@@ -20,7 +20,7 @@ Find a conformal map from the sector $\ts{\Arg(z) \in (0, \alpha)} \to \DD$.
 ::: {.solution}
 The picture:
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-13-13.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-13-13.png)
 
 In steps:
 

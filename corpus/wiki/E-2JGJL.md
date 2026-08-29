@@ -20,7 +20,7 @@ Compute $\int_\Gamma \Re(z) \dz$ for $\Gamma$ the unit square.
 ::: {.solution}
 Write $\Gamma = \sum_{1\leq k \leq 4}\gamma_k$, starting at zero and traversing clockwise:
 
-![](../../assets/30_Complex_Analysis/010_Basics/figures/2021-12-19_03-22-20.png)
+![](../../assets/Complex_Analysis/010_Basics/figures/2021-12-19_03-22-20.png)
 
 Compute:
 

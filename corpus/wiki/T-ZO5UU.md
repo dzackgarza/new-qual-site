@@ -21,7 +21,7 @@ define
 C_R \da \ts{ z=Re^{it} \st t\in [0, \pi] }
 .\]
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-20_20-35-11.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_20-35-11.png)
 \[
 \abs{\int_{C_R} e^{i\alpha z} g(z) \dz} \leq \pi\alpha\inv M_R \qquad M_R \da \sup_{z\in C_R} \abs{g(z)}
 .\]

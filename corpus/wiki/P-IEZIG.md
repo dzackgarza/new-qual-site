@@ -18,5 +18,5 @@ Which is $x\in \CC(x)$?
 What is an example of a clearly non-algebraic element of a field?
 
 ::: {.solution}
-![](../../assets/10_Algebra/999_Review/image/SmartSelect_20210419-233920_Xodo_Docs.jpg)
+![](../../assets/Algebra/999_Review/image/SmartSelect_20210419-233920_Xodo_Docs.jpg)
 :::

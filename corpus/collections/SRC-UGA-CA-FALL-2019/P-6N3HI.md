@@ -24,7 +24,7 @@ to the unit disk $\Delta=\{z:|z|<1\}$.
 :::{.solution}
 This is a lune-type region:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-30_02-25-54.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_02-25-54.png)
 
 The usual strategy is to blow up the tangency, so send $1\to\infty$ with
 \[
@@ -34,7 +34,7 @@ f(z) \da {1\over z-1}
 :::{.claim}
 $f$ has the following effect:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-30_03-27-22.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_03-27-22.png)
 
 :::
 

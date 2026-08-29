@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- assets/10_Algebra/500_Exercises/PSets/PSet 5/Qual Problems.pdf
+- assets/Algebra/500_Exercises/PSets/PSet 5/Qual Problems.pdf
 source:
   source_kind: homework
   area: algebra

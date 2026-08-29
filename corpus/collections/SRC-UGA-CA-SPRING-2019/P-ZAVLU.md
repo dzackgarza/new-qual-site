@@ -27,7 +27,7 @@ Show that this inequality is strict for $z\neq w$ except when $f$ is a linear fr
 
 The Schwarz conjugation trick:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-11-27_01-09-06.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-11-27_01-09-06.png)
 
 Write the RHS as $a$, we then want something in the form $\abs{F(a)}\leq \abs{a}$.
 The choice $a=\psi_w(z)$ is forced, so $z= \psi_w\inv(a)$.

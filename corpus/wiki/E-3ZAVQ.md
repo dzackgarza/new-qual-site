@@ -40,7 +40,7 @@ To compute the full integral, use an indented semicircular contour:
 - $C_R \da R e^{it}$ with $t\in [0, \pi]$
 - $\Gamma \da C_+ + C_R + C_- - C_\eps$, noting that $C_\eps$ is is taken with a reversed orientation.
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-20_06-55-40.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_06-55-40.png)
 
 Write $I$ for the original integral, and
 \[

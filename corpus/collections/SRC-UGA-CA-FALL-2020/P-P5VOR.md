@@ -27,7 +27,7 @@ Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate
 Write $I$ for the integral, $\zeta_3\da e^{2\pi i\over 3}, \omega_3 \da e^{i\pi\pver 3}$.
 Take a indented semicircular wedge $\Gamma$ at an angle of $2\pi/3$, noting the pole at $\omega_3 \da e^{i \pi \over 3}$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-30_06-01-59.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_06-01-59.png)
 
 Choosing a branch cut of $\log$ along $\theta = -\pi/2$, so $\arg(z) \in (-\pi/2, 3\pi/2)$, this makes $f(z) \da z^{\alpha-1}/(1+z^3)$ meromorphic on $\Gamma$.
 

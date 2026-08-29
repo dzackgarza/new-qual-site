@@ -32,7 +32,7 @@ I = {1\over 2}I',\qquad I' \da \int_{-1}^1 {1\over \sqrt{z^2-1}} \dz
 Each branch point $\pm 1$ introduces a monodromy factor of $\sqrt{e^{2i\pi}} = e^{i\pi} = -1$, which cancel provided loops are not able to encircle a single branch point. 
 So take the branch cut to be the slit $[-1, 1]$, forcing any loop to encircle neither or both of $\pm 1$ -- now use a dogbone contour $\Gamma$ around the slit and apply the residue theorem to the *exterior* region:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-28_00-37-42.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_00-37-42.png)
 
 The contribution from the top segment $\gamma_1$:
 \[

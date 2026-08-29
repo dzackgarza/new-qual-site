@@ -44,7 +44,7 @@ For $S$, let $z_0\da {1\over 2}(1+i)\in S$, then $f(z_0) = 1-i$.
 So the arc $(1,z_0, 0)$ maps to $(1, 1-i,\infty)$, so this is a vertical line through $\Re(z) = 1$ oriented downward.
 The region is to the right of $S$, so we have
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_18-14-29.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-14-29.png)
 
 The rest is standard:
 
@@ -64,7 +64,7 @@ Send $1\to \infty$ with $f(z) \da {1\over z-1}$, and check that
 
 By tracking tangent/normal vectors, this results in the region $-1<\Re(z) < -{1\over 2}$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_18-32-10.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-32-10.png)
 
 The rest is standard:
 
@@ -108,7 +108,7 @@ Orienting the bigon positively, we have $(-1, 0, 1)\mapsto (0, -1, \infty)$, i.e
 Similarly $(1, z_3, -1)\mapsto (\infty, \omega_4^3, 0)$, which is a line passing through $\omega_4^3$, oriented from $Q_3\to Q_1$.
 Since the original region was on the left of both curves, we get
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_20-01-07.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_20-01-07.png)
 
 Now
 
@@ -126,7 +126,7 @@ For $a\in \RR$, $\psi_a(\RR) = \RR$ and this will map the partial slit from $a$ 
 **Part 5**:
 Dealing with the slit:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_22-17-44.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_22-17-44.png)
 
 - Use a Blaschke factor to send $a\da -1/2\to 0$, so $z\mapsto {a-z\over 1-\bar{a} z}$.
   Checking that $(-1/2, 0, 1)\to (0, -1/2, -1)$, the image is $\DD\sm(-1, 0]$.

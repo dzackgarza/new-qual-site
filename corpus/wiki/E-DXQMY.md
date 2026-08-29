@@ -32,6 +32,6 @@ If equality holds for some $z\neq w$ in either expression, then $f= \lambda F$ w
 
 ![](../../assets/figures/2021-11-27_00-55-19.png)
 
-![](../../assets/30_Complex_Analysis/060_Maps%20of%20Disc/figures/2021-12-14_01-48-57.png)
+![](../../assets/Complex_Analysis/060_Maps%20of%20Disc/figures/2021-12-14_01-48-57.png)
 
 :::

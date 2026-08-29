@@ -40,7 +40,7 @@ $\impliedby$:
 We still have $s_i = \theta_i s_{i-1}$ for some angles $\theta_i$
 We have
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-04_20-53-12.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-04_20-53-12.png)
 
 and
 \[

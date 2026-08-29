@@ -26,7 +26,7 @@ Show that if $a>0$, then
 .\]
 
 > Hint: use the following contour.
-> ![](../../assets/30_Complex_Analysis/999_Quals/figures/image_2020-06-17-21-53-19.png)
+> ![](../../assets/Complex_Analysis/999_Quals/figures/image_2020-06-17-21-53-19.png)
 :::
 
 ::: {.solution}

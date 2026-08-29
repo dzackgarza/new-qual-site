@@ -18,5 +18,5 @@ Can there be a function $f:I\to \RR$ that is continuous on $\QQ$ and discontinuo
 :::
 
 ::: {.solution}
-![](../../assets/20_Real_Analysis/figures/2021-10-29_18-23-37.png)
+![](../../assets/Real_Analysis/figures/2021-10-29_18-23-37.png)
 :::

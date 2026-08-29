@@ -17,5 +17,5 @@ review: draft
 ::: {.problem}
 Use cellular chain complexes to compute the homology of the solid triangular prism whose faces are identified as shown.
 
-![Triangular prism with identified faces](../../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1518395440173.png)
+![Triangular prism with identified faces](../../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1518395440173.png)
 :::

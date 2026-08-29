@@ -14,5 +14,5 @@ review: draft
 
 ::: {.theorem}
 
-![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-14_17-23-35.png)
+![](../../assets/Complex_Analysis/900 Unsorted/figures/2021-12-14_17-23-35.png)
 :::

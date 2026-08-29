@@ -27,7 +27,7 @@ where
 - $\gamma_2 = \ts{r_0 e^{-it} \st t\in (\pi, 0) }$
 
 
-![The situation](../../assets/30_Complex_Analysis/010_Basics/figures/2021-12-19_03-19-37.png)
+![The situation](../../assets/Complex_Analysis/010_Basics/figures/2021-12-19_03-19-37.png)
 
 :::
 

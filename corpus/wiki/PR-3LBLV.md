@@ -20,7 +20,7 @@ z &\mapsto \sin(z)
 .\]
 
 The mapping $z\mapsto \sin(z)$:
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-12-31_23-01-11.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-31_23-01-11.png)
 
 
 - As $z$ travels from $i\infty \to i0$, $\sin(iz) = i\sinh(z)$ also traverses $i\infty\to i0$ 

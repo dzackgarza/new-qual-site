@@ -24,7 +24,7 @@ R \da \ts{\abs{z - \lambda} < 1} \intersect \ts{\abs{z-\bar{\lambda}} < 1 } \too
 :::{.solution}
 The region looks like the following:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-29_19-19-01.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_19-19-01.png)
 
 Following the general strategy for lunar regions, send the intersection points to $0$ and $\infty$ to get triangular sector.
 So choose to send $0\to 0$ and $1\to \infty$ by taking
@@ -39,7 +39,7 @@ f(z) \da {z\over z-1}
 f(R) = \ts{z\st -\theta_0 < \Arg(z) < \theta_0 },\qquad \theta_0 \da {\pi \over 6}
 .\]
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-29_19-35-44.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_19-35-44.png)
 
 :::
 

@@ -29,7 +29,7 @@ Write the integrand as $f$.
 :::{.claim}
 $f\in \bigo\qty{1\over z^{3}} \subseteq \bigo\qty{1\over z^{1+\eps}}$ means that a semicircular contour will work:
 
-![Semicircular contour](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
+![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
 
 :::
 

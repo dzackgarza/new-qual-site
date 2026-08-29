@@ -34,7 +34,7 @@ Define a contour
 
 So this, but with a semicircular contour instead of a rectangle:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-21_01-47-37.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_01-47-37.png)
 
 By Jordan's lemma, $\int_{C_R}\to 0$, and $\qty{\int_{C_2} + \int_{C_3} + \int_{C_4}}\to 0$, while $\int_\Gamma = 0$ since it encloses no singularities.
 Thus

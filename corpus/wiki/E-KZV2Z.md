@@ -38,7 +38,7 @@ So introduce a log with a branch cut along $\theta = 0$, and consider
 \int f(z) \log(z)
 .\]
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-24_04-03-05.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-03-05.png)
 
 Let $\gamma_+ = \ts{t + i\eps \st t\geq 0}$ (right-to left) and $\gamma_0 = \ts{t-i\eps \st t\geq 0}$ (left-to-right).
 Now use the general fact

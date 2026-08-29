@@ -62,5 +62,5 @@ $\impliedby$:
 
 - For free homotopies, the sides don't have to be constant, to merge $h$ and $h\inv$ into the sides to get a free homotopy from $f$ to $g$:
 
-![image_2021-06-04-00-44-45.png](../../assets/40_Topology/figures/image_2021-06-04-00-44-45.png)
+![image_2021-06-04-00-44-45.png](../../assets/Topology/figures/image_2021-06-04-00-44-45.png)
 :::

@@ -27,7 +27,7 @@ Note the simple pole at $x=a$ and the branch points $x=\pm 1$, coming from facto
 The standard dog bone contour will work, but will involve a residue at $z=a$ and at $z=\infty$.
 Instead of taking the usual branch cut $[-1, 1]$, take instead $(-\infty, -1] \union [1, \infty)$ and the following T-bone contour (noting that it is oriented *negatively*):
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-28_02-47-45.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_02-47-45.png)
 
 Note that in the limit, the two vertical pieces cancel since there is no phase introduced in $f$ when taking a path from $Q_1$ to $Q_2$, and the two upper horizontal segment limit to $\gamma_1\da \ts{t+i\eps \st t\in[-1, 1]}$.
 Also note that $\int_{\gamma_1}f(z)\dz \to I$.

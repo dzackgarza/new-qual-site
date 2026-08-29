@@ -27,7 +27,7 @@ i.e. a lune with vertices $-1$ and $1$.
 The key insight: for lunes, map the corners to $0$ and $\infty$; this yields a sector.
 Here we want $-1\mapsto 0$ and $1\mapsto \infty$, so $f(z) = {z+1\over z-1}$ gets things started.
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-01-04.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_22-01-04.png)
 
 In steps:
 

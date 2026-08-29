@@ -149,7 +149,7 @@ where $E$ is again invertible, yielding a diagonal matrix.
 
 Since it is not necessarily the case that $d_N$ divides $z$ here, a small additional modification is needed. This is accomplished by a series of row operations, as described here:
 
-![Image](../../assets/10_Algebra/500_Exercises/PSets/PSet%209/figures/2019-11-26-22%3A38.png)\
+![Image](../../assets/Algebra/500_Exercises/PSets/PSet%209/figures/2019-11-26-22%3A38.png)\
 
 This yields the desired form in the top-left $2\times 2$ block, zeroing out the first column and row, so the inductive hypothesis applies to the remaining block. $\qed$
 :::

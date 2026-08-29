@@ -25,7 +25,7 @@ Find a conformal map:
 :::{.solution}
 The picture:
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_23-07-02.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_23-07-02.png)
 
 - Key insight: send the point of tangency to $\infty$ to get parallel lines.
   Send $z\mapsto {1+z \over 1-z}$ to send $-1\to 0, 0\to 1, 1\to \infty$ to get a vertical strip.

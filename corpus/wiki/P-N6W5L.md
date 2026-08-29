@@ -43,7 +43,7 @@ On $\gamma_1$, note
 These can be interpreted geometrically: the former is the hypotenuse of a triangle and the latter is a leg, so $\abs{M(z)} \geq \abs{m(z)}$ will hold:
 
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2022-01-06_05-02-12.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2022-01-06_05-02-12.png)
 
 Now note that $z^3 + 1$ has roots $\omega_3, \omega_3^2, \omega_3^3=-1$ for $\omega_k \da e^{i\pi\over k}$, and the first two are in the right half-plane.
 So $2 = \size Z_M = \size Z_f$ by Rouché.

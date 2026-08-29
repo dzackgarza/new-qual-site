@@ -42,7 +42,7 @@ In steps:
 
 - Use $z\mapsto 1/z$ to get a vertical strip $0<\Re(z) < 1$, where the slit maps to $[1/2, 1]$.
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_23-13-16.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_23-13-16.png)
 
 - Shift and dilate with $z\mapsto \pi(z-1/2)$ to get $-\pi/2<\Re(z) < \pi/2$, where the slit is now at $[0, \pi/2]$.
 - Apply $z\mapsto \sin(z)$ to get $\CC\sm[0, 1]$.

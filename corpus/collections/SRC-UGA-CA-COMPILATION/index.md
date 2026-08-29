@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- assets/Complex Analysis/UGA Question (no solutions)/Complex_Analysis_Problems.pdf
+- assets/Complex_Analysis/UGA Question (no solutions)/Complex_Analysis_Problems.pdf
 source:
   source_kind: compilation
   area: complex-analysis

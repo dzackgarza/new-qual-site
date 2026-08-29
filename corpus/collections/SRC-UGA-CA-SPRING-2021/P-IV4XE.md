@@ -35,7 +35,7 @@ Note $\cosh(z) \da {1\over 2}(e^z + e^{-z})$, and
 .\]
 So take the following rectangular contour enclosing the singularity $z= i\pi/2$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-11-11_22-15-56.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-11-11_22-15-56.png)
 
 Then letting $\Gamma$ be the entire contour and $I$ be the desired integral, we can solve for $I$:
 \[

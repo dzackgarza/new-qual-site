@@ -77,7 +77,7 @@ I
 :::{.solution title="The log trick"}
 Consider the auxiliary function $g(z) \da \log(z) f(z)$, and take a keyhole contour:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-23_00-39-57.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_00-39-57.png)
 
 Let $\Gamma$ be the counterclockwise contour consisting of
 

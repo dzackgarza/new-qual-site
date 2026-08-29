@@ -26,7 +26,7 @@ I\da \int_0^\infty {\log(x) \over (1+x^2)^2}\dx = -{\pi \over 4}
 Let $f$ be the integrand, then $f\sim \log(z)/(z^4+1)$, so an indented semicircular contour will work since $\abs{f}\to 0$ as $\abs{z\to\infty}$, and the inner integral will be dominated by a term of the form $\eps\log(\eps)/\eps^4\to 0$ as $\eps\to 0$.
 So take such a contour, branch cutting along $\theta = -\pi/2$:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-22_05-21-05.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-21-05.png)
 
 Now consider the contribution from $\gamma_2$:
 \[

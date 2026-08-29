@@ -27,11 +27,11 @@ This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
 
 We have the following subgroup diagram (Figure 1).
 
-![Subgroup Diagram](../../assets/10_Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-10%3A23.png)\
+![Subgroup Diagram](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-10%3A23.png)\
 
 where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
 
-![Subgroups up to Conjugacy](../../assets/10_Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-11%3A25.png)\
+![Subgroups up to Conjugacy](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-11%3A25.png)\
 
 We can explicitly identify the relevant automorphisms:
 \[
@@ -55,7 +55,7 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
 
 which, up to conjugacy, fix the following intermediate field extensions (Figure 3).
 
-![Intermediate Field Extensions up to Conjugacy](../../assets/10_Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-12%3A12.png)\
+![Intermediate Field Extensions up to Conjugacy](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-12%3A12.png)\
 
 $\qed$
 :::

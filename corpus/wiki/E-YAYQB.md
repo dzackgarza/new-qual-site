@@ -25,7 +25,7 @@ Find a conformal map
 :::{.solution}
 The picture:
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_16-51-43.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_16-51-43.png)
 
 In steps:
 

@@ -22,7 +22,7 @@ Find a conformal map from $\DD^c \intersect \HH$ to $\HH$ using cross-ratios.
 Idea: all cross-ratios send the complement of a positively oriented region $(a,b,c)$ to the half-hemisphere $(1,0,\infty)$ on $\CP^1$.
 So take $(i, -1, 1)\to (1,0,\infty)$:
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2022-01-02_19-52-53.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2022-01-02_19-52-53.png)
 
 This is the cross-ratio
 \[

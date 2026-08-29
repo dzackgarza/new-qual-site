@@ -27,7 +27,7 @@ I\da \int_0^\infty {\log(x) \over 1+x^a}\dx
 :::{.solution}
 For the usual reasons, integrals along semicircles of radius $R$ and $\eps$ go to zero, so noting the poles at $\omega_a \da e^{i\pi\over a}$, take an indented sector:^[Sector monodromy.]
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
 
 Set $\zeta_a \da e^{2\pi i \over a}$.
 Contributions from the contours: let $\gamma_1$ be the contour along $\RR$ and $\gamma_2$ along $\zeta_a \RR$, oriented so the overall contour is counterclockwise.

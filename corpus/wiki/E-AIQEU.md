@@ -42,7 +42,7 @@ Noting that if $z\da e^{ib}$ then $\bar{z} = e^{-ib}$, this forces $z\in \RR$, s
 Taking $z=+1$ forces $b=0$, which is the original contour, so taking $z=-1$ yields $b=\pi i$.
 So we take the following contour:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-22_05-16-12.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-16-12.png)
 
 Computing the integral on the upper contour:
 \[

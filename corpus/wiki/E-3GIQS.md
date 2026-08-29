@@ -24,7 +24,7 @@ Map $\DD^c \intersect \HH$ to $\HH$, sending
 
 :::{.solution}
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
 
 Compose to get:
 \[

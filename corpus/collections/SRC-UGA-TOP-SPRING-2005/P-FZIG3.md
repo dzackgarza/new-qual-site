@@ -34,7 +34,7 @@ Statement: show that the *Lebesgue number* is well-defined for compact metric sp
   - **Claim**: the function $d(\wait, Y): X\to \RR$ is continuous for a fixed set.
   - Proof: Todo, not obvious.
 
-![](../../assets/40_Topology/figures/image_2020-05-22-00-24-45.png)
+![](../../assets/Topology/figures/image_2020-05-22-00-24-45.png)
 
 - Define a function
 \begin{align*}

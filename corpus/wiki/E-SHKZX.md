@@ -33,7 +33,7 @@ Explain the similarity and difference between the above assertion and the Weiers
 
 :::{.solution}
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2022-01-05_05-27-45.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2022-01-05_05-27-45.png)
 
 As in the proof of Casorati-Weierstrass, fix $w$ and suppose toward a contradiction that no sequence sequence exists.
 Then there is some $\eps, R$ such that 

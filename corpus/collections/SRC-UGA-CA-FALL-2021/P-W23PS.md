@@ -22,7 +22,7 @@ Suppose $n \geq 2$. Use a wedge of angle $\frac{2 \pi}{n}$ to evaluate the integ
 :::
 
 ::: remark
-The current Quals `.docx` writes the OMML limits as $-\infty$ to $\infty$ (Word’s default nary limits). That integral has a pole on the real axis when $n$ is odd, and the same sentence asks for a wedge of angle $2\pi/n$, which evaluates the integral from $0$ to $\infty$. The exam as transcribed in `9999_2021_Fall.md.source`, and the existing solutions, are $\int_0^\infty$.
+The current Quals `.docx` writes the OMML limits as $-\infty$ to $\infty$ (Word’s default nary limits). That integral has a pole on the real axis when $n$ is odd, and the same sentence asks for a wedge of angle $2\pi/n$, which evaluates the integral from $0$ to $\infty$. The exam as transcribed in `2021_Fall.md.source`, and the existing solutions, are $\int_0^\infty$.
 :::
 
 :::{.solution title="Newer, sketch"}

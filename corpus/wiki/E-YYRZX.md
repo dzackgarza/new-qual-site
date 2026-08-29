@@ -35,7 +35,7 @@ f(z + 2\pi i) = e^{ib\over 2}f(z) = e^{2\pi i \over 2}f(z) = -f(z)
 
 So take the following rectangle where $H_-$ is at $2\pi i$ and $H_+$ is at 0, with sides at $\pm R$:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-21_21-25-04.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_21-25-04.png)
 
 Write $\Gamma$ for the entire contour.
 Note that integrating left-to-right on $H_-$ yields $-I$, since $w = z+2\pi i$ for $w\in H_-$ and $f(w) = -f(z)$.

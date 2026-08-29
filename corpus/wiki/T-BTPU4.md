@@ -38,7 +38,7 @@ A \Disjoint_{Z} B   & A\ar[l] \\
 B \ar[u]          & Z \ar[l, "\iota_{B}"] \ar[u, "\iota_{A}"]
 \end{tikzcd}
 
-![Example of a pushout of spaces](../../assets/40_Topology/figures/image_2020-06-01-00-07-39.png)
+![Example of a pushout of spaces](../../assets/Topology/figures/image_2020-06-01-00-07-39.png)
 
 For groups, the pushout is realized by the amalgamated free product: if 
 \[

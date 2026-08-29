@@ -82,7 +82,7 @@ $\impliedby$:
   .\end{align*}
 - But $A = Y\setminus B$ where $B$ is closed, so $A$ is open and thus a nontrivial clopen subset.
 
-![](../../assets/40_Topology/figures/image_2020-05-26-20-08-04.png)
+![](../../assets/Topology/figures/image_2020-05-26-20-08-04.png)
 
 :::
 

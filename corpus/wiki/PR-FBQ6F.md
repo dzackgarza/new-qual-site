@@ -14,5 +14,5 @@ review: draft
 
 ::: {.proposition}
 
-![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_19-58-44.png)
+![](../../assets/Complex_Analysis/900 Unsorted/figures/2021-12-19_19-58-44.png)
 :::

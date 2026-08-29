@@ -28,13 +28,13 @@ review: draft
 
 Relevant covers:
 
-1. ![1512964258737](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512964258737.png)
+1. ![1512964258737](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512964258737.png)
 
-2. ![1512964650272](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512964650272.png)
+2. ![1512964650272](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512964650272.png)
 
-3. ![1512965253808](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512965253808.png)
+3. ![1512965253808](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512965253808.png)
 
-4. ![1512965792844](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512965792844.png)
+4. ![1512965792844](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512965792844.png)
 
-5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then: ![1512966232873](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512966232873.png)
+5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then: ![1512966232873](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512966232873.png)
 :::

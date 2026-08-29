@@ -33,7 +33,7 @@ to $\mathbb{H}$.
 :::{.solution}
 The main step: blow up the tangency.
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-30_00-52-48.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_00-52-48.png)
 
 The individual maps:
 

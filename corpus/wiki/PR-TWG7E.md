@@ -26,7 +26,7 @@ This satisfies
 .\]
 
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_20-38-28.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_20-38-28.png)
 
 Note that $\Psi$ inverse from above can be recovered by post-composing with a rotation by $\pi/2$:
 \[
@@ -39,7 +39,7 @@ F(-iz) = {1+ iz \over 1-iz} = {-i + z \over -i-z} = -{z-i\over z+i} = -\Psi(z) &
 
 This restricts to a map $F: \DD \intersect \HH\to Q_1$:
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-36-20.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-36-20.png)
 
 
 - Why this lands in the first quadrant: 

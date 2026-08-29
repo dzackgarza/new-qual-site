@@ -33,7 +33,7 @@ I = {2n \choose n} {\pi \over 4^n}
 :::{.solution}
 The integrand is $f\in \bigo\qty{1\over z^{2n+2}} \subseteq \bigo\qty{1\over z^{1+\eps}}$, so a semicircular contour will work:
 
-![Semicircular contour](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-23_18-05-57.png)
+![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-05-57.png)
 
 Thus
 \[

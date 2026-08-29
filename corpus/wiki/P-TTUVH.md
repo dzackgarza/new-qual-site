@@ -17,5 +17,5 @@ review: draft
 How do you construct finite fields with $p^n$ elements?
 
 ::: {.solution}
-![Projects/Quals/Algebra/image/SmartSelect_20210420-000422_Xodo_Docs.jpg](../../assets/10_Algebra/999_Review/image/SmartSelect_20210420-000422_Xodo_Docs.jpg)
+![Projects/Quals/Algebra/image/SmartSelect_20210420-000422_Xodo_Docs.jpg](../../assets/Algebra/999_Review/image/SmartSelect_20210420-000422_Xodo_Docs.jpg)
 :::

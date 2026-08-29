@@ -18,6 +18,6 @@ F: \DD^c \intersect \HH &\to \CC\sm[-2, 2] \\
 z &\mapsto z+ z\inv
 .\]
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-47-48.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-47-48.png)
 
 :::

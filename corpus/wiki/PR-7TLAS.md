@@ -19,7 +19,7 @@ z &\mapsto e^{iz} \\
 -i\Log(w) &\mapsfrom w
 .\]
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_18-22-45.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_18-22-45.png)
 
 This is essentially polar coordinates: write $e^z = e^{-y} e^{ix}$, then $x\in (-\pi/2, \pi/2)$ and $y\in (0, \infty)$ so this fills out a half-disc as $x,y$ vary.
 :::

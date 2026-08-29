@@ -25,7 +25,7 @@ I\da \int_0^\infty {x^{1\over 3} \over 1 + x^2} \dx = {\pi \over \sqrt 3}
 :::{.solution title="Semicircle monodromy"}
 Write $f(z) \da {z^{1\over 3}\over z^2+1}$, the claim is that an indented semicircular contour will work:
 
-![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-26_20-04-14.png)
+![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-26_20-04-14.png)
 
 Why:
 after parameterizing $C_R$, the integrand is approximately $R\cdot R^{1\over 3}/ R^2 \sim R^{{4\over 3} - 2} = R{-{2\over 3}}$, which goes to zero as $R\to \infty$.

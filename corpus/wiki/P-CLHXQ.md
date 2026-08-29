@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: problem
-2. $S^2$ ![1513072379449](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513072379449.png) So we have $C_0 = 1,2,3,4,5,6$ $C_1 = 12,14,15,16,23,25,26,34,35,36,45,46$ $C_2 = 126, 236, 346, 146, 125, 235, 345, 145$
+2. $S^2$ ![1513072379449](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1513072379449.png) So we have $C_0 = 1,2,3,4,5,6$ $C_1 = 12,14,15,16,23,25,26,34,35,36,45,46$ $C_2 = 126, 236, 346, 146, 125, 235, 345, 145$
 
 $C_3 = \emptyset$
 

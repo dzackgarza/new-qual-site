@@ -48,7 +48,7 @@ using that $-x \leq \abs{x\sin \qty{1\over x}}\leq x$.
 But now notice that the $\cos\qty{1\over x}$ term in $f'$ isn't enveloped by an $x^c$ term, so $\lim_{x\to 0} f'(x)$ does not exist for oscillatory reasons:
 
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-11-07_17-14-32.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-11-07_17-14-32.png)
 
 In particular, $\lim_{x\to 0}f'(x) \neq f'(0) = 0$.
 :::

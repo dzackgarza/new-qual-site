@@ -26,7 +26,7 @@ I \da \int_0^\infty {x^\alpha \over (x+1)^2}\dx && 0 < \alpha < 2
 Note the single pole of order 2 at $z=-1$, and also the branch singularity.^[Keyhole contour.]
 Choose a branch cut of $\log$ by deleting $\theta=0$, and take a keyhole contour.
 
-![Keyhole contour](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-24_04-00-31.png)
+![Keyhole contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-00-31.png)
 
 Write the contours as 
 

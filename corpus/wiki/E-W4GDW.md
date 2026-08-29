@@ -23,7 +23,7 @@ Find the conformal map that takes the upper half-plane conformally onto the half
 :::{.solution}
 It's well known that $z\mapsto \sin(z)$ sends $-\pi/2<\Re(z) < \pi/2$ with $\Im(z) > 0$ to $\HH$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-31_23-37-00.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_23-37-00.png)
 
 So take $z\mapsto \arcsin(z)$.
 

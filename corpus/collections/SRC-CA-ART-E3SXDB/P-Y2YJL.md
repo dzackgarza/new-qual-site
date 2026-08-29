@@ -27,7 +27,7 @@ Show that
 > Hint: integrate $e^{-x^2}$ over the following contour, using the fact that $\int_{-\infty}^{\infty} e^{-x^{2}} d x=\sqrt{\pi}$:
 
 
-![Image](../../assets/30_Complex_Analysis/999_Quals/figures/2020-02-03-13%3A51.png)\
+![Image](../../assets/Complex_Analysis/999_Quals/figures/2020-02-03-13%3A51.png)\
 :::
 
 ::: {.solution}

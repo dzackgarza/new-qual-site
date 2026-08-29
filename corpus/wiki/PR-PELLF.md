@@ -21,7 +21,7 @@ e^w &\mapsfrom w
 .\]
 
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_17-56-47.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_17-56-47.png)
 
 In general,
 

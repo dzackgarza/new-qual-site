@@ -26,13 +26,13 @@ Otherwise computing the argument of the resulting lines is tricky...
 :::{.solution}
 The region:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-29_22-11-00.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_22-11-00.png)
 
 Note that you can find that $i, -i$ are the intersection points by noting that $i\RR$ is the perpendicular bisector through the line segment connecting the centers of the circles, then expanding $\abs{z-1}^2 = (x-1)^2 + y^2 = 2$ and setting $x=0$ to get $y=\pm i$.
 
 First rotate this by $\pi/2$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-29_22-18-07.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_22-18-07.png)
 
 Call the upper circle $C_1$ and the lower $C_2$.
 Send $-1\to 0, 1\to \infty$ by taking
@@ -71,7 +71,7 @@ and $(-1, -ic, 1)\mapsto (0, f(-ic), \infty)$, so $f(C_2)$ is oriented from $Q_3
 
 Since the origin region was to the left of the curves, it remains to the left, so the resulting region is $\ts{z\st 3\pi/4 < \Arg(z) < 5\pi/4}$:
 
-![](../../assets/30_Complex_Analysis/999_Quals/figures/2021-12-29_23-12-17.png)
+![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_23-12-17.png)
 
 From here, it's a standard exercise, so to sum up:
 

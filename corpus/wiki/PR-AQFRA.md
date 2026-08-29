@@ -27,6 +27,6 @@ w^{\pi \over \alpha} &\mapsfrom w
 .\]
 
 
-![](../../assets/30_Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-05-03.png)
+![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-05-03.png)
 
 :::
