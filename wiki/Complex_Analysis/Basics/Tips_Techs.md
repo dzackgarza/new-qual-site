@@ -49,14 +49,14 @@ Things to know well:
 - [[Complex_Analysis/Cauchy/Schwarz reflection principle|The Schwarz reflection principle]]
 - [[Complex_Analysis/Maps_of_the_disc/Schwarz lemma|The Schwarz lemma]]
 	- [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma qual questions]]
-- [[Complex_Analysis/Omitted_values/Casorati-Weierstrass|Casorati-Weierstrass]]
+- [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
 	- [[Complex_Analysis/Quals/Riemann Mapping, Casorati|Casorati-Weierstrass Qual questions]]
 - [[Complex_Analysis/Conformal_maps/Conformal_Standard|Conformal maps]]
 - [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]]
 	- The Cayley transformation and other Mobius transformations
 	- [[Complex_Analysis/Quals/Conformal Maps|Conformal map questions]]
 - [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
-- [[Complex_Analysis/Omitted_values/Picard|Picard theorems]]
+- [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Picard theorems]]
 - [[Complex_Analysis/Zeros_and_poles/Open Mapping|The open mapping theorem]]
 - [[Complex_Analysis/residues-and-contours/computing-residues|Computing residues]]
 	- [[Complex_Analysis/Quals/Computing Integrals|Qual integrals]]
@@ -64,7 +64,7 @@ Things to know well:
 - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|The Cauchy-Riemann equations]]
 - [[Complex_Analysis/counting-zeros/the-argument-principle|The argument principle]]
 - [[Complex_Analysis/Maps_of_the_disc/Riemann Mapping|The Riemann mapping theorem]]
-- [[Complex_Analysis/Zeros_and_poles/Riemann removable singularity|Riemann's removable singularity theorem]]
+- [[Complex_Analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
 
 For just the statements of most of these theorems: [[attachments/ComplexAnalysisNotes.pdf|see this doc]].
 

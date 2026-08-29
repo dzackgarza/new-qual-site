@@ -57,11 +57,11 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/Basics/Series Exercises|Laurent expansions]]
 
-  - [[Complex_Analysis/Zeros_and_poles/Singularities|Isolated singularities]]
+  - [[Complex_Analysis/singularities/removable-poles-essential|Isolated singularities]]
 
     - Poles, meromorphic functions, essential singularities
 
-  - [[Complex_Analysis/Zeros_and_poles/Riemann removable singularity|Riemann's removable singularity theorem]]
+  - [[Complex_Analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
 
 - Week 4 (June 9): **Integration I**
 
@@ -113,9 +113,9 @@ title: "Study Schedule and Topics"
 
 - Week 10  (July 21): **Omitted values**
 
-  - [[Complex_Analysis/Omitted_values/Casorati-Weierstrass|Casorati-Weierstrass]]
+  - [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
 
-  - [[Complex_Analysis/Omitted_values/Picard|Picard's theorem]]
+  - [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Picard's theorem]]
 
 - Week 11 (July 28): **Montel**
 

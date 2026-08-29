@@ -1,27 +1,14 @@
 ---
-title: Zeros and poles
+title: Open mapping and maximum modulus
 order: 5
 ---
 
-# Zeros and poles
+# Open mapping and maximum modulus
 
-Isolated singularities and meromorphic functions.
-Counting the zeros in a region is [[Complex_Analysis/counting-zeros/index|its own chapter]].
+The two theorems that say a nonconstant holomorphic map cannot hold still: it is open, so it has no interior maximum of modulus.
 
-Two parallel notes cover the classification:
+- [[Open Mapping|Open Mapping Theorem]], proved from Rouché, from the argument principle, and by local degree.
 
-- [[Complex_Analysis/Zeros_and_poles/Singularities|Isolated singularities]], by valuation, branch points, and the Laurent and limit tests.
+- [[MMP|Maximum Modulus Principle]], with the mean-value proof and its harmonic version.
 
-- [[Zeros and Poles|Zeros, poles, and examples]].
-
-Then:
-
-- [[Open Mapping|Open Mapping Theorem]].
-
-- [[MMP|Maximum Modulus Principle]], as it applies here.
-
-- [[Meromorphic Functions|Meromorphic Functions]].
-
-- [[Riemann removable singularity|Removable Singularities]].
-
-- [[Complex_Analysis/Zeros_and_poles/Exercises|Exercises: Singularities]].
+Where the zeros are is [[Complex_Analysis/counting-zeros/index|Counting zeros]], and what happens at a singularity is [[Complex_Analysis/singularities/index|Singularities]].

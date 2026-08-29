@@ -1,10 +1,10 @@
 ---
-title: Omitted values
+title: Normal families
 order: 7
 ---
 
-# Omitted values
+# Normal families
 
-Casorati–Weierstrass, Montel's theorem, and Picard: what a holomorphic function can miss.
+- [[Complex_Analysis/Omitted_values/Montel|Montel's theorem]], compactness for families of holomorphic functions.
 
-[[Casorati-Weierstrass|Casorati-Weierstrass]], [[Complex_Analysis/Omitted_values/Montel|Montel]], [[Picard|Picard]].
+What a function must omit near an essential singularity is [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass and Picard]].
