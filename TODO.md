@@ -950,7 +950,8 @@ Owner: [issue #8](https://github.com/dzackgarza/new-qual-site/issues/8)
 
 Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [issue #23](https://github.com/dzackgarza/new-qual-site/issues/23)
 
-- [ ] Make source pages and emitted routes set-equal.
+- [x] Make source pages and emitted routes set-equal.
+  367 authored pages, 367 routes, 367 in the manifest. `test_every_authored_page_is_emitted_once` holds it.
 
 - [ ] Retain all authored prose and references.
 
@@ -980,15 +981,25 @@ Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [is
 
 Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
 
-- [ ] Make the reader and generator use the same complete catalog.
+- [x] Make the reader and generator use the same complete catalog.
+  Both are the catalog's 4921 problems exactly.
+  The generator used to derive its own area list from whatever the problem data happened to carry; it reads the registry now.
 
-- [ ] Compare browser and generator problem sets with that catalog.
+- [x] Compare browser and generator problem sets with that catalog.
+  Symmetric difference 0, against each other and against the catalog. `test_the_browser_and_the_generator_offer_the_same_problems` holds it.
 
-- [ ] Exercise each supported facet and combined filter.
+- [x] Exercise each supported facet and combined filter.
+  Area, topic and institution together give 32 rows: every shown row matches all three, and every row matching all three is shown, so nothing is over- or under-hidden.
+  A text term on top narrows to 13, all still matching the three facets; clearing it restores 32, and the URL seeds the controls.
+  Every facet value a card carries is offered, which `test_the_filters_offer_every_value_the_corpus_carries` holds.
 
-- [ ] Inspect a statements-only generated exam.
+- [x] Inspect a statements-only generated exam.
+  Six Topology problems from UGA sittings: each carries its statement, cites the sitting and its card, and no solution reaches the sheet.
 
-- [ ] Inspect a diagram, citation, collection link, hint, and solution.
+- [x] Inspect a diagram, citation, collection link, hint, and solution.
+  `PR-YCTNC` renders its tikzcd as SVG with its coloured arrows intact.
+  A citation on the algebra syllabus links to the textbook's own collection page, through the `source/` prefix.
+  `P-PKXBP` carries a collection link, a hint and two solutions, each a closed disclosure labelled for what it is.
 
 - [ ] Decide the supported `tikzcd` boundary.
 
@@ -1049,7 +1060,10 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
   One card was already repaired.
   The other 26 now contain the exact statement from the Fall 2015, Fall 2016, or Fall 2017 UGA exam, followed by the solution.
 
-- [ ] Decide whether collection and problem pages satisfy reachability for every problem.
+- [x] Decide whether collection and problem pages satisfy reachability for every problem.
+  They do, and it is measured rather than decided.
+  Every problem and exercise belongs to a collection, and every one is linked from that collection's page.
+  `just backlog`'s `orphans` check reports 0 cards reachable from no page or manifest, and `test_a_collection_page_links_every_problem_the_collection_lists` holds the emitter's half.
 
 - [ ] Record each decision on its owning GitHub issue.
 
