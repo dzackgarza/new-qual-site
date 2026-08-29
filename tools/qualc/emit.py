@@ -55,6 +55,7 @@ from .static_site import (
     Crumb,
     EndReading,
     LevelOnly,
+    Listing,
     MiddleReading,
     NavigationLink,
     NavigationParent,
@@ -66,6 +67,7 @@ from .static_site import (
     PublicationNavigation,
     ReadingLink,
     RootParent,
+    SearchDocument,
     StandardPage,
     StartReading,
     SubjectPage,
@@ -570,7 +572,7 @@ def _wiki_chrome(
     page: WikiPage,
 ) -> PageChrome:
     found = navigation.get(page.route.as_posix())
-    return AuthoredPage(found) if found else StandardPage()
+    return AuthoredPage(found) if found else StandardPage(Listing())
 
 
 def _wiki_incoming_html(sources: list[WikiPage]) -> str:
@@ -1040,9 +1042,25 @@ def plain_json(
     return meta, body
 
 
+def _card_filters(data: CardPageData, card: sqlite3.Row) -> tuple[tuple[str, str], ...]:
+    """The values a card's page answers under, in the spelling the rows carry.
+
+    These are ids and acronyms, not display names: a filter value is matched,
+    and what a reader is shown is the registry's business.
+    """
+    facets = _page_rows(data.facets, card["id"])
+    return (
+        ("kind", card["kind"]),
+        *(("area", term) for term in _page_terms(data, card["id"], "area")),
+        *(("topic", term) for term in _page_terms(data, card["id"], "topic")),
+        *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
+        *sorted({("year", str(row["year"])) for row in facets if row["year"] is not None}),
+    )
+
+
 def write_json_pages(
     pandoc: PandocServer,
-    items: list[tuple[Path, dict, list]],
+    items: list[tuple[Path, dict, list, SearchDocument]],
     api: list,
     site_root: Path,
     mathjax: str,
@@ -1058,7 +1076,7 @@ def write_json_pages(
                 "blocks": blocks,
             }
         )
-        for _, _, blocks in items
+        for _, _, blocks, _ in items
     ]
     bodies = _successful_outputs(
         pandoc.write_markdown(documents, MARKDOWN),
@@ -1068,7 +1086,7 @@ def write_json_pages(
         pandoc.write_html(_html_asts(documents)),
         "tag-page HTML write",
     )
-    for (path, meta, _), body, html_body in zip(
+    for (path, meta, _, role), body, html_body in zip(
         items,
         bodies,
         html_bodies,
@@ -1093,7 +1111,7 @@ def write_json_pages(
             mathjax,
             link_targets,
             assets,
-            StandardPage(),
+            StandardPage(role),
         )
 
 
@@ -2516,13 +2534,13 @@ def project(
 
     jcache, api = load_json(con)
     card_page_data = load_card_page_data(con)
-    tag_pages: list[tuple[Path, dict, list]] = []
+    tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(card_page_data, card, jcache, appearances, mentions)
-        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, SearchDocument(_card_filters(card_page_data, card))))
     for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
         meta, body = plain_json(card_page_data, card, jcache, appearances, mentions)
-        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, SearchDocument(_card_filters(card_page_data, card))))
     write_json_pages(
         pandoc,
         tag_pages,
@@ -2539,7 +2557,7 @@ def project(
             (
                 collection_page(con, src, inline_cache),
                 out / src["route"] / f"{src['id']}.qmd",
-                StandardPage(),
+                StandardPage(SearchDocument(_card_filters(card_page_data, src))),
             )
         )
 
@@ -2564,7 +2582,7 @@ def project(
         mathjax,
         link_targets,
         assets,
-        StandardPage(),
+        StandardPage(Listing()),
     )
 
     write_page(
@@ -2610,14 +2628,14 @@ def project(
         (
             problem_browser_page(con, inline_cache, area_names),
             out / "problems.qmd",
-            StandardPage(),
+            StandardPage(Listing()),
         ),
     )
     pages.append(
         (
             source_index_page(con, inline_cache, area_names),
             out / "exams.qmd",
-            StandardPage(),
+            StandardPage(Listing()),
         ),
     )
     pages.append(
@@ -2640,10 +2658,10 @@ def project(
                 ],
             ),
             out / "guides.qmd",
-            StandardPage(),
+            StandardPage(Listing()),
         ),
     )
-    pages.append((index_page(pandoc, con), out / "index.qmd", StandardPage()))
+    pages.append((index_page(pandoc, con), out / "index.qmd", StandardPage(Listing())))
     write_pages(
         pandoc,
         pages,

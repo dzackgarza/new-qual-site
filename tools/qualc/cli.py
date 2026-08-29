@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -66,6 +67,22 @@ def _publication_references(root: Path, known: set[str]) -> list[Diagnostic]:
     ]
 
 
+# Pinned: the index the browser reads and the reader that reads it ship
+# together, and an unpinned build would change one of them without the other.
+PAGEFIND = "pagefind@1.5.2"
+
+
+def build_search_index(site: Path) -> None:
+    """Index the emitted pages, so a reader downloads a query and not a corpus.
+
+    Pagefind shards the index by term and writes one fragment per page, so a
+    search fetches a shard and the pages it shows, rather than every record.
+    The pages it indexes are the ones carrying `data-pagefind-body`, which the
+    shell puts on the documents and withholds from the listings.
+    """
+    subprocess.run(["bunx", "--bun", PAGEFIND, "--site", str(site)], check=True)
+
+
 def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:
     db = root / "build" / "catalog.sqlite"
     index.build(parsed, db)
@@ -105,5 +122,6 @@ def main(argv: list[str] | None = None) -> int:
             json.loads((args.root / "vocabularies" / "macros.json").read_text()),
             wiki_pages,
         )
+        build_search_index(args.root / "build" / "quarto" / "_site")
         print(f"wrote {db} and {args.root / 'build' / 'quarto'}")
         return 0

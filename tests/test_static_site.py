@@ -11,7 +11,7 @@ from pathlib import Path
 import pytest
 from conftest import fixture_repo, run_qualc
 from qualc.emit import mathjax_header
-from qualc.static_site import StandardPage, build_asset_catalog, write_page
+from qualc.static_site import Listing, StandardPage, build_asset_catalog, write_page
 from test_invariants import Element, read_html
 
 
@@ -62,7 +62,7 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
         "",
         {"P-TWO": Path("tag/P-TWO.html")},
         build_asset_catalog(assets_root),
-        StandardPage(),
+        StandardPage(Listing()),
     )
 
     links = LinkCollector()
@@ -85,7 +85,7 @@ def test_missing_asset_fails_the_build(tmp_path: Path) -> None:
             "",
             {},
             build_asset_catalog(assets_root),
-            StandardPage(),
+            StandardPage(Listing()),
         )
 
 

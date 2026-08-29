@@ -125,8 +125,28 @@ class PublicationNavigation:
 
 
 @dataclass(frozen=True)
+class SearchDocument:
+    """A page search returns, and the filter values it answers under.
+
+    Each pair is one `axis, value`; an axis may repeat, because a card is filed
+    under several topics. The values are written into attributes rather than
+    into text, so nothing here is added to what the page says.
+    """
+
+    filters: tuple[tuple[str, str], ...]
+
+
+@dataclass(frozen=True)
+class Listing:
+    """A page that shows other pages. Search returns those, never this one."""
+
+
+PageRole = SearchDocument | Listing
+
+
+@dataclass(frozen=True)
 class StandardPage:
-    pass
+    role: PageRole
 
 
 @dataclass(frozen=True)
@@ -174,6 +194,18 @@ SITE_ROOT_BASE = """<script>
 
 PAGE_ASSETS = """<link rel="stylesheet" href="{prefix}styles.css">
   <script defer src="{prefix}app.js"></script>"""
+
+
+def _search_document(filters: tuple[tuple[str, str], ...]) -> tuple[str, str]:
+    """How the indexer is told this page is a result, and what it answers under.
+
+    Pagefind indexes only the pages that carry `data-pagefind-body` once any
+    page does, so marking the documents is also what excludes the listings.
+    A filter written as `axis:value` takes its value from the attribute, so the
+    carrier elements stay empty and contribute nothing to the indexed text.
+    """
+    carriers = "".join(f'<span data-pagefind-filter="{escape(axis, quote=True)}:{escape(value, quote=True)}"></span>' for axis, value in filters)
+    return " data-pagefind-body", f'<div class="search-facets" hidden>{carriers}</div>'
 
 
 def build_asset_catalog(root: Path) -> AssetCatalog:
@@ -556,15 +588,25 @@ def page_document(
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
     subtitle_html = f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
     match chrome:
-        case StandardPage():
+        case StandardPage(role=SearchDocument(filters=filters)):
             base_html = ""
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = ""
             breadcrumb_html = ""
             reading_order_html = ""
             layout_class = "page-layout"
+            indexed, facet_html = _search_document(filters)
+        case StandardPage(role=Listing()):
+            base_html = ""
+            asset_html = PAGE_ASSETS.format(prefix=prefix)
+            subject_html = ""
+            breadcrumb_html = ""
+            reading_order_html = ""
+            layout_class = "page-layout"
+            indexed, facet_html = "", ""
         case NotFoundPage():
             base_html = SITE_ROOT_BASE
+            indexed, facet_html = "", ""
             asset_html = ""
             subject_html = ""
             breadcrumb_html = ""
@@ -572,6 +614,7 @@ def page_document(
             layout_class = "page-layout"
         case SubjectPage(navigation=navigation):
             base_html = ""
+            indexed, facet_html = _search_document((("kind", "guide"),))
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _subject_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
@@ -579,6 +622,7 @@ def page_document(
             layout_class = "page-layout subject-layout"
         case AuthoredPage(navigation=navigation):
             base_html = ""
+            indexed, facet_html = _search_document((("kind", "wiki"),))
             asset_html = PAGE_ASSETS.format(prefix=prefix)
             subject_html = _wiki_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
@@ -624,7 +668,8 @@ def page_document(
   </dialog>
   <div class="{layout_class}">
     {subject_html}
-    <main id="main-content">
+    <main id="main-content"{indexed}>
+      {facet_html}
       <header class="page-heading">
         {breadcrumb_html}
         <h1>{escape(title)}</h1>
