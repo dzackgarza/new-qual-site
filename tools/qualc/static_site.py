@@ -337,6 +337,13 @@ def _wiki_tree(
     navigation: PublicationNavigation,
 ) -> str:
     roots, children = _navigation_structure(navigation)
+    # The wiki's own index is filed beside the subjects rather than above them,
+    # so it arrived as one more root and the tree listed "Wiki" among Prelims,
+    # Algebra and the rest -- a page shown as a peer of its own children. It is
+    # the tree's root, so it is the heading the tree hangs under.
+    own_route = navigation.trail[0].route
+    own = next((link for link in roots if link.target == PageTarget(own_route)), None)
+    roots = [link for link in roots if link is not own]
     by_key = {link.key: link for link in navigation.links}
     open_directories: set[str] = set()
     cursor = by_key[navigation.current_key]
@@ -378,10 +385,16 @@ def _wiki_tree(
         return f"<ol>{''.join(items)}</ol>" if items else ""
 
     tree = branch(roots)
+    if own is None:
+        label = escape(navigation.trail[0].title)
+    elif own.key == navigation.current_key:
+        label = _current_navigation_link(relative_path, own)
+    else:
+        label = _navigation_link(relative_path, own)
     return (
         '<aside class="subject-sidebar wiki-sidebar">'
         '<nav class="sidebar-wide" aria-label="Wiki">'
-        f'<strong class="subject-label">Wiki</strong>{tree}</nav>'
+        f'<strong class="subject-label">{label}</strong>{tree}</nav>'
         '<details class="sidebar-narrow"><summary>Wiki navigation</summary>'
         f'<nav aria-label="Wiki navigation">{tree}</nav></details></aside>'
     )

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-TGFTL
 kind: proposition
-title: The trace pairing identifies $\Hom(V,W)$ with $\Hom(W,V)^\dual$
+title: The trace pairing identifies $\Hom(V,W)$ with $\Hom(W,V)\dual$
 classification:
   areas:
   - algebra
