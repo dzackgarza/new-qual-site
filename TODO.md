@@ -1546,6 +1546,7 @@ The corpus supplies the problems under each page and the statements to inline.
 One subject at a time, chapter by chapter, reading the existing pages before each one.
 
 - [ ] Complex analysis.
+  Three of the six chapters are authored, each with its recognition page, each rendered and read: `residues-and-contours` (`78c9cc7a6`, described in `dbbe898ad`), `counting-zeros` (`d1869aaea`), `singularities` (`5e15fdf71`). Remaining: `holomorphic-functions`, `cauchy-theory`, `conformal-maps`, and the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`). `Zeros_and_poles` and `Omitted_values` are down to the pages the Cauchy theory and conformal maps chapters claim, and dissolve when those are written.
 
 - [ ] Algebra.
 
