@@ -13,7 +13,7 @@ Undergraduate analysis and calculus the later quals treat as known: $\varepsilon
 
 - [[Prelim/Problems/Integral Practice|Integral Practice]], a drill sheet.
 
-- Worked Exams, the prelims written out year by year.
+- [[Prelim/Worked_Exams/index|Worked Exams]], the prelims written out year by year.
 
 - [[Prelim Resources]] and [[Useful Tricks]], notes for this layer.
 
