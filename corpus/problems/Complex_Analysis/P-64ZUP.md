@@ -11,8 +11,43 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: problem
 Find a conformal map from $D = \{z :\  |z| < 1,\ |z - 1/2| > 1/2\}$ to the unit disk $\Delta=\{z: \ |z|<1\}$.
+:::
+
+::: {.solution}
+<1>1. $D$ is the unit disk with the disk $\{|z - 1/2| \le 1/2\}$ removed; it is a simply connected region bounded by two circles tangent at $z = 1$.
+Proof: the two circles $|z| = 1$ and $|z - 1/2| = 1/2$ are tangent at $z = 1$.
+
+<1>2. The Möbius map $w = \frac{1}{1-z}$ sends $z = 1$ to $\infty$ and maps the two tangent circles to two parallel lines.
+Proof: a Möbius map sending the tangency point to $\infty$ turns the two tangent circles into parallel lines.
+
+<1>3. Under $w = \frac{1}{1-z}$, the region $D$ maps to a vertical strip.
+<2>1. The circle $|z| = 1$ maps to the line $\operatorname{Re} w = 1/2$.
+Proof: for $|z| = 1$, $w = \frac{1}{1-z}$ satisfies $\operatorname{Re} w = 1/2$ (since $\frac{1}{1-e^{i\theta}} = \frac{1}{2} + \frac{i}{2}\cot(\theta/2)$).
+<2>2. The circle $|z - 1/2| = 1/2$ maps to the line $\operatorname{Re} w = 1$.
+Proof: for $z = 1/2 + (1/2)e^{i\theta}$, $w = \frac{1}{1-z} = \frac{1}{1/2 - (1/2)e^{i\theta}} = \frac{2}{1 - e^{i\theta}}$, whose real part is $1$.
+<2>3. Hence $D$ maps to the strip $\{w : 1/2 < \operatorname{Re} w < 1\}$.
+Proof: <2>1 and <2>2.
+
+<1>4. Map the strip $\{1/2 < \operatorname{Re} w < 1\}$ to the unit disk.
+<2>1. First translate and scale to the strip $\{0 < \operatorname{Re} \zeta < 1\}$ via $\zeta = 2w - 1$.
+Proof: $\zeta = 2w - 1$ maps $\operatorname{Re} w = 1/2$ to $\operatorname{Re} \zeta = 0$ and $\operatorname{Re} w = 1$ to $\operatorname{Re} \zeta = 1$.
+<2>2. The map $\eta = e^{\pi \zeta}$ sends the strip $\{0 < \operatorname{Re} \zeta < 1\}$ to the upper half-plane.
+Proof: $e^{\pi \zeta}$ maps the vertical strip of width $1$ to the upper half-plane.
+<2>3. The map $\xi = \frac{\eta - i}{\eta + i}$ sends the upper half-plane to the unit disk.
+Proof: the Cayley transform.
+
+<1>5. Composing, a conformal map $D \to \Delta$ is
+$$z \mapsto \frac{e^{\pi(2/(1-z) - 1)} - i}{e^{\pi(2/(1-z) - 1)} + i}.$$
+Proof: <1>3 and <1>4.
+
+<1>6. Q.E.D.
+Proof: <1>5.
 :::
