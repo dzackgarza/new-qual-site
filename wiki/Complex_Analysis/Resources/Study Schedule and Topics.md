@@ -47,9 +47,9 @@ title: "Study Schedule and Topics"
 
   - Contours, parameterization, primitives
 
-  - [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's integral formula]]
+  - [[Complex_Analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 
-  - [[Complex_Analysis/Cauchy/Cauchy Inequality|Cauchy's inequality]]
+  - [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
 
 - Week 3 (June 2): **Analytic Functions and singularities**
 
@@ -65,15 +65,15 @@ title: "Study Schedule and Topics"
 
 - Week 4 (June 9): **Integration I**
 
-  - [[Complex_Analysis/Cauchy/Cauchy_Theorem|Cauchy's theorem]] and [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's theorem]]
+  - [[Complex_Analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]] and [[Complex_Analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
 
-  - [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's Integral Formula]]
+  - [[Complex_Analysis/cauchy-theory/the-integral-formula|Cauchy's Integral Formula]]
 
-  - [[Complex_Analysis/Zeros_and_poles/MMP|Maximum Modulus Principle]]
+  - [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum Modulus Principle]]
 
-  - [[Complex_Analysis/Cauchy/Schwarz reflection principle|Schwarz reflection principle]]
+  - [[Complex_Analysis/cauchy-theory/schwarz-reflection|Schwarz reflection principle]]
 
-  - [[Complex_Analysis/Cauchy/Mean Value Theorem|Mean value theorem]]
+  - [[Complex_Analysis/cauchy-theory/the-integral-formula|Mean value theorem]]
 
 - Week 5 (June 16): **Integration II**
 
@@ -83,7 +83,7 @@ title: "Study Schedule and Topics"
 
 - Week 6 (June 23): **Entire functions**
 
-  - [[Complex_Analysis/Cauchy/Liouville|Liouville's theorem]]
+  - [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
 
   - [[Complex_Analysis/Appendices/Appendix FTA Proofs|The fundamental theorem of algebra]]
 
@@ -109,7 +109,7 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma]]
 
-  - [[Complex_Analysis/Zeros_and_poles/Open Mapping|Open Mapping Theorem]]
+  - [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|Open Mapping Theorem]]
 
 - Week 10  (July 21): **Omitted values**
 
@@ -119,7 +119,7 @@ title: "Study Schedule and Topics"
 
 - Week 11 (July 28): **Montel**
 
-  - [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
+  - [[Complex_Analysis/cauchy-theory/the-identity-principle|The identity principle]]
 
   - [[Complex_Analysis/Omitted_values/Montel#Normal Families|Normal families]]
 

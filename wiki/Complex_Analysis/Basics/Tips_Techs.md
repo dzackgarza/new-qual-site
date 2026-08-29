@@ -22,31 +22,31 @@ Some useful notation:
 Things to know well:
 
 - Estimates for derivatives, mean value theorem
-- [[Complex_Analysis/Cauchy/Cauchy_Theorem|Cauchy's Theorem]]
-- [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's Integral Formula]]
-- [[Complex_Analysis/Cauchy/Cauchy Inequality|Cauchy's Inequality]]
-- [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's Theorem]]
-- [[Complex_Analysis/Cauchy/Liouville|Liouville's Theorem]]
-- [[Complex_Analysis/Cauchy/Maximum modulus principle|Maximum Modulus Principle]]
+- [[Complex_Analysis/cauchy-theory/cauchys-theorem|Cauchy's Theorem]]
+- [[Complex_Analysis/cauchy-theory/the-integral-formula|Cauchy's Integral Formula]]
+- [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's Inequality]]
+- [[Complex_Analysis/cauchy-theory/morera-and-converses|Morera's Theorem]]
+- [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's Theorem]]
+- [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum Modulus Principle]]
 - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouché's Theorem]]
-- [[Complex_Analysis/Cauchy/Schwarz reflection principle|The Schwarz Reflection Principle]]
+- [[Complex_Analysis/cauchy-theory/schwarz-reflection|The Schwarz Reflection Principle]]
 - [[Complex_Analysis/Cauchy/Schwarz|The Schwarz Lemma]]
 - Casorati-Weierstrass Theorem (no page yet)
 - Properties of linear fractional transformations
 - Automorphisms of $\DD, \CC, \CP^1$.
 
 - Estimates for derivatives
-- [[Complex_Analysis/Cauchy/Cauchy_Theorem]]
-- [[Complex_Analysis/Cauchy/Mean Value Theorem|MVT for Harmonic Functions]]
-- [[Complex_Analysis/Cauchy/Cauchy Integral Formula|Cauchy's integral formula]]
-- [[Complex_Analysis/Cauchy/Cauchy Inequality|Cauchy's inequality]]
-- [[Complex_Analysis/Cauchy/Morera_Theorem|Morera's theorem]]
+- [[Complex_Analysis/cauchy-theory/cauchys-theorem]]
+- [[Complex_Analysis/cauchy-theory/the-integral-formula|MVT for Harmonic Functions]]
+- [[Complex_Analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
+- [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
+- [[Complex_Analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
 	- [[Complex_Analysis/Quals/Morera|Morera qual questions]]
-- [[Complex_Analysis/Cauchy/Liouville|Liouville's theorem]]
+- [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
 	- [[Complex_Analysis/Quals/Liouville|Liouville qual questions]]
 - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
 	- [[Complex_Analysis/Quals/Rouche Applications|Rouche qual questions]]
-- [[Complex_Analysis/Cauchy/Schwarz reflection principle|The Schwarz reflection principle]]
+- [[Complex_Analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
 - [[Complex_Analysis/Maps_of_the_disc/Schwarz lemma|The Schwarz lemma]]
 	- [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma qual questions]]
 - [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
@@ -55,9 +55,9 @@ Things to know well:
 - [[Complex_Analysis/Maps_of_the_disc/Automorphisms of the disc and plane|Automorphisms of the disc and plane]]
 	- The Cayley transformation and other Mobius transformations
 	- [[Complex_Analysis/Quals/Conformal Maps|Conformal map questions]]
-- [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
+- [[Complex_Analysis/cauchy-theory/the-identity-principle|The identity principle]]
 - [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Picard theorems]]
-- [[Complex_Analysis/Zeros_and_poles/Open Mapping|The open mapping theorem]]
+- [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|The open mapping theorem]]
 - [[Complex_Analysis/residues-and-contours/computing-residues|Computing residues]]
 	- [[Complex_Analysis/Quals/Computing Integrals|Qual integrals]]
 - Jordan's lemma
