@@ -2,14 +2,28 @@
 
 Source: `just doctor`, against 367 wiki pages.
 
-The wiki is an authored study guide; see `AGENTS.md`, "The wiki is a textbook".
-A checker measures the file, never the exposition.
+See `AGENTS.md`, "Two concerns, and the test that separates them".
+A checker measures the file. What the file should say is a reading.
 
-## Defects
+## Engineering defects
+
+The build or the reader hits each of these. One checkbox each.
+
+### unreadable-wiki-pages (0)
+
+Pages the reader cannot parse.
+
+ok
+
+### empty-bodies (0)
+
+Pages with no body.
+
+ok
 
 ### order-at-least-100001 (44)
 
-Pages with no position in their folder. `100001` is the marker an importer left; the page needs the position its author would give it.
+Pages with no position in their folder. `100001` is the marker an importer left.
 
 - [ ] wiki/Algebra/Exercises/PSets/Final/AlgebraFinal.md: order 100001
 - [ ] wiki/Algebra/Exercises/PSets/PSet 10/PSet 10 Quals.md: order 100001
@@ -56,6 +70,12 @@ Pages with no position in their folder. `100001` is the marker an importer left;
 - [ ] wiki/Topology/Quals/UCSD/Quals/Topology Problems (Solutions).md: order 100001
 - [ ] wiki/Topology/Workshops/Topology Week 1 Preliminaries.md: order 100001
 
+### sibling-duplicate-titles (1)
+
+Two pages in one folder rendering the same text in the sidebar.
+
+- [ ] wiki/Complex_Analysis/Residues: title 'Residues' on Residues.md, index.md
+
 ### obsidian-embed-syntax (9)
 
 Obsidian `![[...]]` embeds, which Pandoc reads as literal text.
@@ -69,6 +89,12 @@ Obsidian `![[...]]` embeds, which Pandoc reads as literal text.
 - [ ] wiki/Prelim/Useful Tricks.md
 - [ ] wiki/Real_Analysis/Resources/Problems.md
 - [ ] wiki/Real_Analysis/Resources/Solutions.md
+
+### notion-so-or-notion-site-urls (0)
+
+Links into a Notion workspace no reader can open.
+
+ok
 
 ### task-list-item-lines (5)
 
@@ -98,29 +124,13 @@ Bare `#resources` tag lines published as reader copy.
 
 ok
 
-### notion-so-or-notion-site-urls (0)
+## Authoring signals
 
-Links into a Notion workspace no reader can open.
-
-ok
-
-### empty-bodies (0)
-
-Pages with no body.
-
-ok
-
-### unreadable-wiki-pages (0)
-
-Pages the reader cannot parse.
-
-ok
-
-## Measurements
+True about the filesystem. What to do about each is a reading, so none carries a checkbox.
 
 ### one-markdown-child-directories (15)
 
-Folders holding one page besides the index.
+Folders holding one page besides the index. A chapter with one section written reads the same from the filesystem as a page in the wrong place.
 
 - wiki/Algebra/Appendices (index.md + Appendix.md)
 - wiki/Algebra/Exercises/PSets/Final (index.md + AlgebraFinal.md)
@@ -137,12 +147,6 @@ Folders holding one page besides the index.
 - wiki/Topology/Exercises (index.md + Extra_Problems_AT.md)
 - wiki/Topology/Manifolds (index.md + Surfaces_Manifolds.md)
 - wiki/Topology/Workshops (index.md + Topology Week 1 Preliminaries.md)
-
-### sibling-duplicate-titles (1)
-
-Pages in one folder sharing a title.
-
-- wiki/Complex_Analysis/Residues: title 'Residues' on Residues.md, index.md
 
 ### heading-or-wikilink-only-bodies (60)
 

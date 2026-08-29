@@ -16,7 +16,7 @@ Two kinds of queue files:
 | `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
-| `F-wiki-doctor.md` | 58 | Wiki doctor defects: 44 pages with no position in their folder, 9 Obsidian embeds, 5 pages of reading-progress checkboxes. One-child folders (15), shared sibling titles (1) and heading-only bodies (60) are listed there as measurements, not work. |
+| `F-wiki-doctor.md` | 59 | Engineering defects: 44 pages with no position in their folder, 9 Obsidian embeds, 5 pages of reading-progress checkboxes, 1 sibling title rendered twice in the sidebar. Under `Authoring signals` it also lists 15 one-page folders and 60 heading-only bodies, which state a fact and no work. |
 
 ## Validity review queues (TODO.md items)
 

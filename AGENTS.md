@@ -168,10 +168,34 @@ Read the mathematics. Decide what a student needs. Write the page. Group,
 split, collect, and drill down as the exposition requires, and justify each
 move by what it does for a reader.
 
-The build imposes a few mechanical constraints — every directory needs an
-`index.md`, every page needs an integer `order`, and routes are slugged from
-the source path. Satisfy them. They are plumbing, and they decide nothing about
-what the text should be.
+### Two concerns, and the test that separates them
+
+The wiki has an engineering side and an authoring side. Both are real work and
+neither substitutes for the other.
+
+The engineering side measures the file. Does the page parse; does its
+mathematics typeset; do its links resolve; does it carry a title and an integer
+`order`; does its directory carry an `index.md`; is Obsidian syntax reaching
+the reader as literal text; do two pages in one folder render the same text
+twice in the sidebar. These are mechanical, they have exact answers, and a
+checker should be strict about them. `just doctor` is that checker and it earns
+its place. The rules in "What a tool may do" apply to it unchanged: it reports
+a measurement named for exactly what it measured, and nothing acts on the
+measurement.
+
+The authoring side decides what the text says and how it is arranged. What a
+reader needs, what belongs on one page, which pages a chapter has, what has to
+sit next to what.
+
+The test: **can the answer be wrong in a way only a mathematician reading the
+page would notice?** If yes, it is authoring, and no checker gets a vote. "This
+directory holds one page" is a fact about the filesystem; whether that is a
+chapter with one section written or a page in the wrong place is a reading.
+"These two pages share a title" is a fact; whether they hold the same
+mathematics is a reading — six complex analysis pages titled Schwarz are three
+different subjects.
+
+Report the fact under its own name. Leave the reading to a reader.
 
 ## Work one item at a time
 
