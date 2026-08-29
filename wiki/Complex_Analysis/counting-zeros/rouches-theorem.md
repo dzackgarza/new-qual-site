@@ -11,15 +11,14 @@ order: 20
 
 [[FT-ZJQ2T]]
 
-:::{.slogan}
+::: {.slogan}
 The number of zeros and poles in a region is fixed by a dominating function on the boundary.
 A perturbation $m$ may be added to $M$ without changing the count, where small means $\abs{m} < \abs{M}$ on the boundary.
-
 :::
 
 ## How to use it
 
-:::{.remark}
+::: {.remark}
 The whole skill is choosing the split.
 
 - Given $f$ and a region, find a big part $M$ and set $m \da f - M$.
@@ -36,23 +35,20 @@ The whole skill is choosing the split.
 - A common trick: show $\abs{f-g} < 1$ together with $\abs f > 1$ or $\abs g > 1$.
 
 - For a power series $f_n \to f$: find a *lower* bound $L$ for $f$ and an *upper* bound $U$ for the tail $f - f_n$, so that $\abs{f_n - f} < U < L < \abs f$ and $Z_f = Z_{f_n}$.
-
 :::
 
-:::{.proof title="of Rouché"}
+::: {.proof title="of Rouché"}
 Apply the argument principle to $(f+g)/f$.
 Alternatively, note that $N(f+tg, \Omega)$ is a continuous $\ZZ\dash$valued function of $t \in [0,1]$, hence constant.
 
 ![](../../../../assets/assets/figures/2021-12-10_22-23-58.png)
-
 :::
 
-:::{.proof title="of Rouché, alternative"}
+::: {.proof title="of Rouché, alternative"}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-25-41.png)
 
 ![](../../../../assets/assets/figures/2021-12-15_02-24-10.png)
-
 :::
 
 ![](../../../../assets/assets/figures/2021-10-29_01-39-19.png)
@@ -61,7 +57,7 @@ Alternatively, note that $N(f+tg, \Omega)$ is a continuous $\ZZ\dash$valued func
 
 ## Worked counts
 
-:::{.example title="The same polynomial, two radii, two splittings"}
+::: {.example title="The same polynomial, two radii, two splittings"}
 Take $P(z) = z^4 + 6z + 3$.
 
 - On $\abs{z} < 2$: set $M(z) = z^4$ and $m(z) = 6z + 3$.
@@ -69,16 +65,14 @@ Take $P(z) = z^4 + 6z + 3$.
 
 - On $\abs{z} < 1$: the dominant term changes.
   Set $M(z) = 6z$ and $m(z) = z^4 + 3$, so $\abs{m} \leq \abs z^4 + 3 = 4 < 6 = \abs{M}$ on $\abs z = 1$, and $P$ has 1 zero there.
-
 :::
 
-:::{.example title="Exactly one solution"}
+::: {.example title="Exactly one solution"}
 Claim: $\alpha z e^z = 1$ has exactly one solution in $\DD$ whenever $\abs\alpha > e$.
 
 Set $M(z) = \alpha z$ and $m(z) = e^{-z}$.
 On $\abs z = 1$, $\abs{m} = \abs{e^{-z}} = e^{-\Re(z)} \leq e < \abs\alpha = \abs{M}$.
 Since $M$ has the single zero $z_0 = 0$, so does $M + m$.
-
 :::
 
 [[C-FRF33]]
@@ -89,13 +83,4 @@ Since $M$ has the single zero $z_0 = 0$, so does $M + m$.
 
 ## Exercises
 
-[[E-T4VAX]]
-[[E-XQ4BS]]
-[[P-FAGTL]]
-[[P-YSJO3]]
-[[P-WECI4]]
-[[P-GW3Y7]]
-[[P-ER23C]]
-[[P-5S2DR]]
-[[P-4JM4Y]]
-[[P-4NBXB]]
+[[E-T4VAX]] [[E-XQ4BS]] [[P-FAGTL]] [[P-YSJO3]] [[P-WECI4]] [[P-GW3Y7]] [[P-ER23C]] [[P-5S2DR]] [[P-4JM4Y]] [[P-4NBXB]]
