@@ -1559,6 +1559,35 @@ Build measured: `just build` runs clean in 142 s.
 Read from the generator rather than assumed.
 The wiki pipeline is carefully built. The hard parts are elsewhere, and there is one genuine trap.
 
+#### Reorganizing touches no code, tested
+
+The renderer is generic over whatever tree it is given.
+There are no content literals in `tools/qualc/*.py` outside comments: no folder name, no page name, no subject name.
+Path handling is `parts[:-1]` and `parts[:-2]`, and the current tree already renders a depth-5 page (`Topology/Quals/UCSD/Quals/Old/Fall 2014.md`).
+Every page goes through one path — `_wiki_blocks(page, incoming, cards)` and `_wiki_chrome(nav, page)` over `wiki_pages` — with no per-page or per-folder branch.
+Navigation, breadcrumbs, previous and next, the manifest and the sidebar are all derived from the page list, and `.subject-sidebar ol ol` is a descendant selector, so any nesting depth indents.
+
+Tested in a worktree, not inferred:
+
+- Pure folder move, `Topology/Degree` to `degree-and-fixed-points`, filenames unchanged: **0 errors**.
+
+- Folder move plus ten kebab-case file renames, `Cauchy/` to `cauchy-theory/`: **32 errors**, each naming the exact file and the exact broken reference.
+  Restoring the filenames left **19**, all path-form links in two files, cleared by one `sed` on the path prefix.
+
+- `qualc build` on the reorganized tree: **exit 0, 139 s**, rendering `wiki/complex-analysis/cauchy-theory/`.
+
+- Code changed: **none**.
+
+`qualc check`, which is parse plus validate plus link resolution and stops before emit, runs in **44 s**. That is the loop for a reorganization.
+
+#### The mechanism the table of contents needs already exists
+
+`emit.py:578-660` transcludes. A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink, the way the Stacks Project prints a result under its tag; a wikilink inside a sentence stays a link.
+So "definitions and theorems are the content of a page, inlined" works today, and it is the single thing the table of contents most depends on.
+Landed in `7aba6b8a0`; `queues/11-design-issues.md` item 6 recorded the opposite and is corrected.
+
+What still needs code is the `problems:` query block, and that is a new capability rather than a reorganization.
+
 #### What the machinery does not make hard
 
 **URLs.** Routes are `slug()` of the source path (`wiki.py:148`).

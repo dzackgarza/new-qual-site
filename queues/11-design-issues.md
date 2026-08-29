@@ -18,15 +18,15 @@ Each item is marked with validity status after checking against current source a
   - Validity: BEING FIXED. 95 wiki source files have `title="?"` at HEAD. 108 `title="?"` removed across 91 files in uncommitted working tree (pure `:::{.proof title="?"}` → `:::{.proof}`). Fix is in progress, not committed. Mark open until committed and rebuilt.
 
 - [ ] 4. Adjacent links merge into one underlined run. 151 paragraphs on 78 pages.
-  - Validity: REAL (source-level). Bare `[[P-XXXXX]] [[P-VPCLD]]` lines confirmed in wiki source. 4,542 `[[wikilinks]]` across wiki/. No transclusion (`[[...]]` renders as link, confirmed in `site/app.js` / `tools/qualc/static_site.py` — no transclusion logic). Defect stands.
+  - Validity: SUPERSEDED by `7aba6b8a0`, which transcludes. A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink (`emit.py:578-660`); a wikilink inside a sentence stays a link. A run of adjacent links is no longer a paragraph of links.
 
 - [ ] 5. All 12 environment kinds look identical. 859 blocks, same 3px grey left border (`site/styles.css:324`).
   - Validity: REAL. `site/styles.css:324` confirmed `border-left: 3px solid var(--line)`. `.theorem` and `.concept` get no treatment (confirmed in CSS — no distinct rules). Defect stands.
 
 ## Link-list pages, not content pages
 
-- [ ] 6. 108 of 398 pages (27%) are >60% link text. Bare `[[card-id]]` renders as link, never transcludes. 3,968 such lines across 245 pages.
-  - Validity: REAL. 4,542 `[[wikilinks]]` in wiki source. No transclusion in `site/app.js` or `tools/qualc/static_site.py`. Needs build to confirm page-level percentages, but the mechanism is confirmed. This is the structural defect — needs a decision on transclusion before fixing.
+- [x] 6. 108 of 398 pages (27%) were >60% link text, because a bare `[[card-id]]` rendered as a link.
+  - Validity: FIXED by `7aba6b8a0`. A standalone card link transcludes the card's body under its tag, so those pages carry the mathematics they name. Which pages should exist at all is TODO.md section 11.
 
 - [ ] 7. Same-title links sit next to each other. 22 titles duplicated on one page.
   - Validity: REAL (consequence of defect 6). Distinct cards sharing a title render identically. No disambiguation in the link rendering.
