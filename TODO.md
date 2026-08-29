@@ -1141,7 +1141,8 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Fixed: each page says what it is and links to the other.
   A guide is one ordered path read front to back; the wiki is notes filed to be looked up.
   `guides.html` shows each guide's own lede, which the manifests already carried and the page showed none of.
-  `wiki/index.html` is titled `Wiki`. Both stay: the wiki is the study guide, and a guide is one path read through it. `AGENTS.md`, "The wiki is a textbook", settles it.
+  `wiki/index.html` is titled `Wiki`. Both stay: the wiki is the study guide, and a guide is one path read through it.
+  `AGENTS.md`, "The wiki is a textbook", settles it.
 
 - [x] Reconcile the four subject vocabularies.
   Browse filter: Algebra, Applied Algebra, Complex Analysis, Prelim, Real Analysis, Topology.
@@ -1207,7 +1208,8 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   The row now names the surface -- Problem, Card, Wiki, Guide -- in the badge.
   What is left is not retitling either.
   A concept appears on its own page, again in a technique drilldown, and again in a compendium, and a study guide is better for it; the badge names the surface, which is what a reader needed.
-  Retitle a page when its title misnames what is on it. `Complex_Analysis/Maps_of_the_disc/Schwarz lemma.md` holds Blaschke factors and hyperbolic translations: that one is wrong.
+  Retitle a page when its title misnames what is on it.
+  `Complex_Analysis/Maps_of_the_disc/Schwarz lemma.md` holds Blaschke factors and hyperbolic translations: that one is wrong.
   Finding the rest is reading, one page at a time, under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2).
 
 - [x] Order and page the problem browser.
@@ -1269,8 +1271,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   The page never explains Guides against Wiki.
   Fixed: one sentence of scale, then each of the five header entries with what it is for.
   Guides and Wiki are separated by shape -- a path to read against notes to look a topic up -- which is what the two artifacts already are.
-  Both stay, per `AGENTS.md`.
-  Every figure is still counted off the catalog.
+  Both stay, per `AGENTS.md`. Every figure is still counted off the catalog.
 
 ## 10. Repair wiki copy and organization
 
@@ -1319,11 +1320,12 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Topology/index.md` puts `# References` as a second H1. Citation style differs four ways across those four pages.
   The Algebra one is broken: `> References: 1,3,4` appears five times, but the reference list renders as `[DuFo04] [HoKu71] [Hung74] [Smit]` — unnumbered, so the pointers resolve to nothing.
   A subject page opens a chapter: it tells a reader what the exam asks and where to start reading.
-  Decide that shape once and give all six the same one. The syllabus is a page of its own.
+  Decide that shape once and give all six the same one.
+  The syllabus is a page of its own.
 
 - [ ] File the content sitting under a heading that names nothing.
-  Renaming a section `Unsorted` to something else moves no mathematics. Each fragment needs the page it belongs on, which is the authoring in section 11.
-  Six pages named `Preface`: four are acknowledgements, one is a Folland exercise list with no H1, one (`Topology/Basics/Preface.md`) is a full notation-and-background chapter.
+  Renaming a section `Unsorted` to something else moves no mathematics.
+  Each fragment needs the page it belongs on, which is the authoring in section 11. Six pages named `Preface`: four are acknowledgements, one is a Folland exercise list with no H1, one (`Topology/Basics/Preface.md`) is a full notation-and-background chapter.
   ~20 published sections named "Unsorted" or "Misc", including whole pages (`Complex_Analysis/Quals/Unsorted.md`, `Topology/Appendices/Appendix.md` → "Appendix: Unsorted Stuff"). `Archives/Tracking/index.md` lists 7 links for 5 subjects: Complex and Real each have two rival tracking pages, and the list mixes labeled links with unlabeled ones, so the duplicates read as separate topics.
 
 ### Content errors
@@ -1332,7 +1334,6 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Topology/Basics/Preface.md:36-37` — the notation table has the definitions **swapped**: it calls $G=1$ "the trivial abelian group" and $G=0$ "the trivial nonabelian group".
   `Real_Analysis/Resources/Preface.md` — the Folland exercise lists run together with no separators and an unclosed paren: "...9 (in 9(c) you can use Exercise 1.29 without proof Exercises 10, 12, 13...". Unreadable as written.
   Also broken by paste-through: `Algebra/index.md` bullets end in stray commas and `⇒?`, use "Eigenstuff" / "$M/IM$ stuff" / "Bonus optional stuff", break list nesting after "such as:", and weeks 10–13 of the "study path" are empty workshop scheduling ("Buffer", "Buffer", "No meeting (Mock AMS)").
-
 
 ## 11. Author the wiki as a study guide
 
@@ -1355,8 +1356,8 @@ Two other operations ride along here, and each is justified on its own terms:
 - **Writing.** The chapters that do not exist yet.
   This is the only one of the three that changes how much content exists, and it only adds.
 
-Judge each on its own claim. Do not let the second pay for the first, and do not let either stand in for the third.
-
+Judge each on its own claim.
+Do not let the second pay for the first, and do not let either stand in for the third.
 
 ### The table of contents
 
@@ -1368,9 +1369,11 @@ A student uses a qual guide in five ways, and only two of them are served by a t
 
 1. **Learn the material** — read a chapter.
 
-2. **Drill** — do problems by topic. *The corpus already does this: Browse, Generate, 4,921 problems.*
+2. **Drill** — do problems by topic.
+   *The corpus already does this: Browse, Generate, 4,921 problems.*
 
-3. **Recognize** — see a problem, know which tool it wants. Hardest thing on the exam, and no textbook teaches it.
+3. **Recognize** — see a problem, know which tool it wants.
+   Hardest thing on the exam, and no textbook teaches it.
 
 4. **Compress** — the week before, get everything into your head.
 
@@ -1381,11 +1384,14 @@ The chapters serve (1) and (5). (3) and (4) need page kinds the current tree has
 
 #### Four page kinds
 
-- **Chapter** — the exposition. Definitions, theorems with hypotheses stated exactly, proofs, worked examples.
+- **Chapter** — the exposition.
+  Definitions, theorems with hypotheses stated exactly, proofs, worked examples.
 
-- **Recognition page** — a decision procedure keyed on *the form of the problem*, not on the theory. Sits at the head of the chapter whose tools it dispatches to.
+- **Recognition page** — a decision procedure keyed on *the form of the problem*, not on the theory.
+  Sits at the head of the chapter whose tools it dispatches to.
 
-- **Compendium** — a table you scan, not prose you read. Cross-cutting, so it sits at subject level.
+- **Compendium** — a table you scan, not prose you read.
+  Cross-cutting, so it sits at subject level.
 
 - **Review sheet** — one page per subject; everything that must be in your head walking in.
 
@@ -1555,16 +1561,15 @@ Everything below is evidence for that authoring, not a plan that precedes it.
 
 ### What the migration costs
 
-Build measured: `just build` runs clean in 142 s.
-Read from the generator rather than assumed.
-The wiki pipeline is carefully built. The hard parts are elsewhere, and there is one genuine trap.
+Build measured: `just build` runs clean in 142 s. Read from the generator rather than assumed.
+The wiki pipeline is carefully built.
+The hard parts are elsewhere, and there is one genuine trap.
 
 #### Reorganizing touches no code, tested
 
 The renderer is generic over whatever tree it is given.
 There are no content literals in `tools/qualc/*.py` outside comments: no folder name, no page name, no subject name.
-Path handling is `parts[:-1]` and `parts[:-2]`, and the current tree already renders a depth-5 page (`Topology/Quals/UCSD/Quals/Old/Fall 2014.md`).
-Every page goes through one path — `_wiki_blocks(page, incoming, cards)` and `_wiki_chrome(nav, page)` over `wiki_pages` — with no per-page or per-folder branch.
+Path handling is `parts[:-1]` and `parts[:-2]`, and the current tree already renders a depth-5 page (`Topology/Quals/UCSD/Quals/Old/Fall 2014.md`). Every page goes through one path — `_wiki_blocks(page, incoming, cards)` and `_wiki_chrome(nav, page)` over `wiki_pages` — with no per-page or per-folder branch.
 Navigation, breadcrumbs, previous and next, the manifest and the sidebar are all derived from the page list, and `.subject-sidebar ol ol` is a descendant selector, so any nesting depth indents.
 
 Tested in a worktree, not inferred:
@@ -1582,34 +1587,32 @@ Tested in a worktree, not inferred:
 
 #### The mechanism the table of contents needs already exists
 
-`emit.py:578-660` transcludes. A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink, the way the Stacks Project prints a result under its tag; a wikilink inside a sentence stays a link.
+`emit.py:578-660` transcludes.
+A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink, the way the Stacks Project prints a result under its tag; a wikilink inside a sentence stays a link.
 So "definitions and theorems are the content of a page, inlined" works today, and it is the single thing the table of contents most depends on.
 Landed in `7aba6b8a0`; `queues/11-design-issues.md` item 6 recorded the opposite and is corrected.
 
 What still needs code is one thing, and it is a new capability rather than a reorganization.
 
-A guide manifest can already name cards two ways. `- ref: D-P6XOT` names one card.
-`- query: {kind: problem, topics: [Zorn's Lemma], limit: 500, review: {mode: any}}` names a rule, and the build resolves it against the corpus every time it runs (`publication.py`, `PublicationQuery`).
-A wiki page has no such rule. It can only name cards one at a time, by writing `[[P-XXXXX]]`.
-That is why the 90 `Quals/` pages exist: someone typed out by hand which problems belong to Sylow theory, and the list goes stale whenever a card is added or reclassified.
+A guide manifest can already name cards two ways.
+`- ref: D-P6XOT` names one card.
+`- query: {kind: problem, topics: [Zorn's Lemma], limit: 500, review: {mode: any}}` names a rule, and the build resolves it against the corpus every time it runs (`publication.py`, `PublicationQuery`). A wiki page has no such rule.
+It can only name cards one at a time, by writing `[[P-XXXXX]]`. That is why the 90 `Quals/` pages exist: someone typed out by hand which problems belong to Sylow theory, and the list goes stale whenever a card is added or reclassified.
 
 Giving a wiki page the same rule -- called the `problems:` query block throughout this section -- is what lets those 90 pages stop existing.
 It is written out under "The 90 pages that retype card data" below.
 
-
 #### What the machinery does not make hard
 
-**URLs.** Routes are `slug()` of the source path (`wiki.py:148`).
-Nothing outside links in: README, CONTRIBUTING, and SDL contain zero wiki deep links, and all seven guide manifests contain one.
+**URLs.** Routes are `slug()` of the source path (`wiki.py:148`). Nothing outside links in: README, CONTRIBUTING, and SDL contain zero wiki deep links, and all seven guide manifests contain one.
 
-**Images — the scary-looking one that is fine.** 142 relative asset references, 118 of them four levels deep (`../../../../assets/assets/figures/...`).
-That reads as fatal for a move.
+**Images — the scary-looking one that is fine.** 142 relative asset references, 118 of them four levels deep (`../../../../assets/assets/figures/...`). That reads as fatal for a move.
 It isn't: `_asset_source` (`static_site.py:515`) discards the relative prefix entirely.
 It splits on the literal `assets` path segment, then falls back to a basename lookup in the catalog.
-Depth-independent. Moving a page cannot break its figures.
+Depth-independent.
+Moving a page cannot break its figures.
 
-**Ordering.** `order` sorts within a parent — key is `(parent_key, order, title, key)` at `emit.py:503`.
-There is no global sequence to reconcile; a moved page needs one number relative to its new siblings.
+**Ordering.** `order` sorts within a parent — key is `(parent_key, order, title, key)` at `emit.py:503`. There is no global sequence to reconcile; a moved page needs one number relative to its new siblings.
 
 **Subject identity.** Area ids are `slug(folder_name)` (`index.py:78`), and `Complex_Analysis` and `complex-analysis` slug identically.
 Kebab-casing the six top-level folders is a no-op for all 9,104 cards' area validation.
@@ -1633,17 +1636,17 @@ You cannot ship a broken link.
 `_page_target` (`wiki.py:414-421`) tries a bare link against the linking page's *own folder* before falling back to a global stem match.
 There are 776 bare links, and **54 of them name a stem that exists in more than one folder**: `Exercises` ×5, `Problems` ×4, `Definitions` ×3, `Counterexamples` ×3, `2021_Fall` ×3, `Functional Analysis` ×3, and nine more.
 
-Move the linking page and those links silently retarget a *different existing page*.
-No error, no diagnostic, correct-looking build.
+Move the linking page and those links silently retarget a *different existing page*. No error, no diagnostic, correct-looking build.
 This is the only failure the machinery cannot catch, and it is the one that would corrupt the text quietly.
 
-- [ ] Rewrite the 54 ambiguous bare links to full paths, before anything moves.
+- [x] Rewrite the 54 ambiguous bare links to full paths, before anything moves.
   After that the resolver's failure mode is loud everywhere and the migration is self-checking.
+  Done in `29680a98e`: all 54 resolved in-folder before the rewrite and point at the same pages after it, each keeping its display text after a pipe.
+  No bare link in the wiki now names a stem that exists in more than one folder.
 
 #### The second coupling, which is not a bug
 
-`wikilinks_title_after_pipe` means `[[Sylow_Theorems]]` renders as the literal text "Sylow_Theorems".
-776 links display their target's name.
+`wikilinks_title_after_pipe` means `[[Sylow_Theorems]]` renders as the literal text "Sylow_Theorems". 776 links display their target's name.
 The TOC renames nearly every page, so a rename is never just a rename — the link text is part of a sentence, and each one needs re-reading in context.
 This is authoring work created by an engineering choice, and it is unavoidable short of rewriting all 776 to piped form.
 
@@ -1686,19 +1689,25 @@ The reason it is large is that the plan asks for pages that were never written �
 
 The first version of this section read the inputs — routes, assets, `order`, area ids, ledgers, tests — and concluded the migration was cheap.
 It never opened the rendering path, so it could not answer whether the renderer is written against the tree that exists.
-It is not, and a worktree test says so rather than a reading. Two conclusions changed:
+It is not, and a worktree test says so rather than a reading.
+Two conclusions changed:
 
-- Reorganizing needs no code. Measured above, not inferred.
+- Reorganizing needs no code.
+  Measured above, not inferred.
 
 - Transclusion exists, since `7aba6b8a0`. The earlier claim that a bare `[[card-id]]` never transcludes came from `queues/11-design-issues.md`, which predates it.
 
 What is still unverified:
 
-- One folder move and one chapter rename were tested. A whole-subject reorganization, a page split, and a page merge were not.
+- One folder move and one chapter rename were tested.
+  A whole-subject reorganization, a page split, and a page merge were not.
 
-- The new page kinds are untested as rendered output. A recognition page is prose and a compendium is a table, so both are ordinary; a review sheet transcluding forty theorem cards onto one page is not, and its size and typesetting cost are unknown.
+- The new page kinds are untested as rendered output.
+  A recognition page is prose and a compendium is a table, so both are ordinary; a review sheet transcluding forty theorem cards onto one page is not, and its size and typesetting cost are unknown.
 
-- Nothing was looked at. The evidence is exit codes and emitted paths, which is a build proving itself, not a page proving itself. Before any of this is called done, render it and read it.
+- Nothing was looked at.
+  The evidence is exit codes and emitted paths, which is a build proving itself, not a page proving itself.
+  Before any of this is called done, render it and read it.
 
 - The `problems:` query block is unimplemented, so every claim about it is a claim about work not started.
 
@@ -1759,14 +1768,12 @@ Whatever table of contents is authored, these pages hold more than one subject e
 | `Archives/Topics.md` | 14 kB | 10 h2, 10 h3 |
 | `Topology/Examples/Examples.md` | 14 kB | 2 h2 |
 | `Complex_Analysis/Basics/Tips_Techs.md` | 13 kB | 11 h2 |
-| `Algebra/index.md` | | syllabus and a twelve-week sequence in one page |
+| `Algebra/index.md` |  | syllabus and a twelve-week sequence in one page |
 
 ### A name is not a subject
 
 Six complex analysis pages carry Schwarz in the title, across three folders, and they are three different subjects.
-`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`).
-`Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`).
-`Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations, under a heading that names neither.
+`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`). `Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`). `Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations, under a heading that names neither.
 
 Merging these on the name files the automorphism material under a lemma it is not about.
 Every same-name pair in `wiki/` needs both pages read before anything is decided about them.
@@ -1774,8 +1781,7 @@ Every same-name pair in `wiki/` needs both pages read before anything is decided
 ### The 90 pages that retype card data
 
 `corpus/collections/*/index.md` records institution, term, and the ordered problem list.
-Every card records `classification.topics`.
-The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
+Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
 The `Quals/` folders are a third, hand-typed copy, and they drift.
 
 Replace them with a query in the page's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
@@ -1803,7 +1809,8 @@ A query needs a curated topic list, and that curation is reading, not scripting.
 
 ### Mechanical constraints
 
-Plumbing. These decide nothing about what the text should be.
+Plumbing.
+These decide nothing about what the text should be.
 
 - Every directory needs an `index.md`, or the build drops it from the tree.
 
