@@ -966,12 +966,8 @@ Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [is
   The 37 empty list items are down to one, in `E-SS5.PR-1`, where the scan dropped the body of an equation the card still numbers.
   That needs the book: [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60).
 
-  All 57,841 distinct formulas the corpus writes now typeset. MathJax prints a
-  command it does not know as red source rather than raising, so this was
-  visible on the pages and invisible to every check: the sync read `\newcommand`
-  but not `\def`, five macros are built on `bbm`, `graphicx`, `stmaryrd` and
-  amsmath's internals, twenty-six cards called names the preamble spells
-  differently, and four carried a stray brace or bracket.
+  All 57,841 distinct formulas the corpus writes now typeset.
+  MathJax prints a command it does not know as red source rather than raising, so this was visible on the pages and invisible to every check: the sync read `\newcommand` but not `\def`, five macros are built on `bbm`, `graphicx`, `stmaryrd` and amsmath's internals, twenty-six cards called names the preamble spells differently, and four carried a stray brace or bracket.
 
 ### Publish each subject branch
 
