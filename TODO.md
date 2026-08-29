@@ -1797,7 +1797,9 @@ problems:
 
 `emit.py` renders the matching problems at the foot of the page from the corpus index.
 
-- [ ] Add the `problems:` query block to `emit.py`.
+- [x] Add the `problems:` query block to `emit.py`. Done in `088386d79`. Two differences from the guide query, both forced by what a topic page is: every match renders, because a limit would drop problems the page claims to hold; and a card's kind does not narrow it, because `exercise` against `problem` records where a question was set, not what it asks.
+  The page is scoped to the subject it is filed under, and a query matching nothing stops the build.
+  First use is `wiki/Algebra/Groups/Sylow_Theorems.md`, which lists all 167 algebra problems on Sylow theory.
 
 - [ ] Replace the 90 `Quals/` pages and the source-archive pages with it.
   These are the only pages this section removes, and their content survives: it is card data, rendered.
