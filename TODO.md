@@ -1367,8 +1367,11 @@ Judge each on its own claim. Do not let the second pay for the first, and do not
 
 The tree mixes five incompatible axes at the same level: **topic**, **sitting**, **institution**, **course week**, and **resource type**. Every subject folder holds all five.
 
-The result is that one concept has many homes.
-Complex analysis files the Schwarz lemma and the Schwarz reflection principle across six pages in three folders.
+The result is that one concept has many homes, and that pages sharing a name are assumed to share a subject when they do not.
+Six complex analysis pages carry Schwarz in the title, across three folders, and they are three different subjects:
+`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`), `Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`),
+and `Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations under a heading that names neither.
+Merging these on the name would file the automorphism material under a lemma it is not about.
 The maximum modulus principle has three.
 Rouché has four.
 Argument principle has two.
@@ -1446,8 +1449,8 @@ wiki/complex-analysis/
 │   ├── maximum-modulus.md         ← Cauchy/Maximum modulus principle
 │   │                                + Zeros_and_poles/MMP + Quals/Maximum_Modulus
 │   ├── mean-value.md              ← Cauchy/Mean Value Theorem
-│   └── schwarz-reflection.md      ← Cauchy/{Schwarz, Schwarz reflection principle}
-│                                    + Quals/{Schwarz, Schwarz Reflection}
+│   └── schwarz-reflection.md      ← Cauchy/Schwarz reflection principle
+│                                    + Quals/Schwarz Reflection
 ├── singularities/
 │   ├── index.md
 │   ├── classification.md          ← Zeros_and_poles/Singularities
@@ -1475,7 +1478,9 @@ wiki/complex-analysis/
 │   ├── conformal-mapping.md       ← Conformal_maps/{Conformal_Mapping,
 │   │                                  Conformal Map Theory and Background}
 │   ├── standard-maps.md           ← Conformal_maps/Conformal_Standard
-│   ├── schwarz-lemma.md           ← Maps_of_the_disc/Schwarz lemma + Quals/Schwarz_Lemma
+│   ├── schwarz-lemma.md           ← Cauchy/Schwarz + Quals/Schwarz_Lemma
+│   ├── blaschke-factors.md        ← Maps_of_the_disc/Schwarz lemma, which is about
+│   │                                Blaschke factors, not the lemma
 │   ├── automorphisms.md           ← Maps_of_the_disc/Automorphisms of the disc and plane
 │   ├── riemann-mapping.md         ← Maps_of_the_disc/Riemann Mapping
 │   │                                + Quals/{Riemann Mapping and Casorati,
