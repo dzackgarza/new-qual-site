@@ -13,47 +13,51 @@ classification:
   - Torsion
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Gemini 3.7 Flash
+  date: 2026-08-30
 ---
 
 ::: problem
-The claim is that every element in $M \definedas R^n/\im A$ is torsion $\iff$ the matrix rank of $A$ is exactly $n \iff$ the Smith normal form of $A$ has exactly $n$ nonzero invariant factors.
+Let $R$ be a Principal Ideal Domain (PID) and let $A \in M_n(R)$ be an $n \times n$ matrix representing an $R$-module homomorphism $A: R^n \to R^n$.
+Let $M = R^n / \operatorname{im}(A)$ be the cokernel module.
+Prove that the following three conditions are equivalent:
+(1) $M = R^n / \operatorname{im}(A)$ is a **torsion module** (every element of $M$ is annihilated by some non-zero $r \in R$).
+(2) The matrix rank of $A$ is $\operatorname{rank}_R(A) = n$ (equivalently, $\det(A) \ne 0$).
+(3) The Smith Normal Form of $A$ has exactly $n$ non-zero invariant factors $d_1, d_2, \dots, d_n \ne 0$.
+:::
 
-To see that this is the case, we can apply the structure theorem for finitely-generated modules over a PID. This gives us
-$$
-M \cong F \oplus \bigoplus R/(r_i)
-$$
+::: solution
+**Goal:** Prove the equivalence of torsion cokernel, full matrix rank, and non-vanishing invariant factors over a PID using the Smith Normal Form and the Structure Theorem for finitely generated modules.
 
-where $F$ is free of finite rank, $R/(r_i)$ is cyclic torsion, and $r_i \divides r_{i+1} \divides \cdots$ are the invariant factors of $M$.
+<1>1. Smith Normal Form and Decomposition of $M$:
+    *Proof:*
+    <2>1. Since $R$ is a PID, every matrix $A \in M_n(R)$ can be diagonalized via invertible elementary row and column operations (matrices $P, Q \in \operatorname{GL}_n(R)$):
+        $$P A Q = D = \operatorname{diag}(d_1, d_2, \dots, d_n)$$
+        where $d_1 \mid d_2 \mid \cdots \mid d_n \in R$ are the **invariant factors** of $A$.
+    <2>2. The invertible changes of basis $P, Q$ induce an isomorphism of $R$-modules on the cokernel:
+        $$M = R^n / \operatorname{im}(A) \cong R^n / \operatorname{im}(D) \cong \bigoplus_{i=1}^n R / (d_i).$$
 
-We thus have
-$$
-M \cong R^n/\im A \cong F \oplus \bigoplus R/(r_i),
-$$
+<1>2. Equivalence of (1) and (3) ($M$ is Torsion $\iff$ All $d_i \ne 0$):
+    *Proof:*
+    <2>1. A direct sum of modules $\bigoplus_{i=1}^n R/(d_i)$ is torsion if and only if each component $R/(d_i)$ is a torsion $R$-module.
+    <2>2. For any $d \in R$:
+        - If $d \ne 0$: for any $x + (d) \in R/(d)$, we have $d \cdot (x + (d)) = 0 + (d)$, so every element is annihilated by the non-zero element $d \in R \setminus \{0\}$. Thus $R/(d)$ is torsion.
+        - If $d = 0$: $R/(0) \cong R$. Since $R$ is an integral domain, $R$ is a free $R$-module of rank 1, which contains non-zero non-torsion elements (e.g. $1 \in R$ has $\operatorname{Ann}(1) = (0)$).
+    <2>3. Therefore, $M \cong \bigoplus_{i=1}^n R/(d_i)$ is a torsion module if and only if $d_i \ne 0$ for all $i = 1, \dots, n$.
+    <2>4. Since the divisibility chain is $d_1 \mid d_2 \mid \cdots \mid d_n$, all $d_i \ne 0 \iff d_1 \ne 0 \iff$ all $n$ invariant factors are non-zero.
 
-which will be pure torsion if and only if $F = 0$.
+<1>3. Equivalence of (2) and (3) (Full Rank $\iff$ All $d_i \ne 0$):
+    *Proof:*
+    <2>1. Let $K = \operatorname{Frac}(R)$ be the field of fractions of the PID $R$.
+    <2>2. The rank of $A$ over $R$ is the dimension of the column space of $A$ over $K$: $\operatorname{rank}_R(A) = \operatorname{rank}_K(A)$.
+    <2>3. Since $P, Q \in \operatorname{GL}_n(R) \subset \operatorname{GL}_n(K)$ are invertible over $K$:
+        $$\operatorname{rank}_R(A) = \operatorname{rank}_K(D) = \operatorname{rank}_K(\operatorname{diag}(d_1, \dots, d_n)).$$
+    <2>4. The rank of a diagonal matrix over a field is the number of its non-zero diagonal entries.
+    <2>5. Thus $\operatorname{rank}_R(A) = n \iff d_i \ne 0$ for all $i = 1, \dots, n$.
+    <2>6. Equivalently, $\det(A) = \det(P^{-1}) \left(\prod_{i=1}^n d_i\right) \det(Q^{-1}) \ne 0 \iff \prod_{i=1}^n d_i \ne 0 \iff d_i \ne 0$ for all $i$.
 
-But if we compute the smith normal for of $A$, we obtain
-$$
-SNF(A) = 
-\left[ \begin{array}{rrrrrr}
- d_1 & 0 & \cdots & 0 & \cdots & 0 \\
-0 & d_2 & \cdot & 0 & \cdots & 0\\
-\vdots & \vdots & \ddots & \vdots & \cdots & 0\\
-0 & 0 & \cdots & d_n & \cdots & 0
-\end{array}\right]
-$$
-
-where $d_1 \divides d_2 \divides \cdots \divides d_n$, and thus
-\[
-\begin{align*}
-\im A \cong \im SNF(A) &\cong d_1 R \oplus d_2 R \oplus \cdots \oplus d_n R \\  \\
-\implies M = R^n/\im A &\cong \frac{R^n}{d_1 R \oplus d_2 R \oplus \cdots d_n R} \\ \\
-&\cong R/(d_1) \oplus R/(d_2) \cdots \oplus R/(d_n)
-\end{align*}
-\]
-
-where $R/(d_i)$ is a cyclic torsion module precisely when $d_i \neq 0$.
-If instead some $d_i = 0$, we then have $R/(d_i) \cong R$, which is a free $R\dash$module, yielding non-torsion elements in $M$.
-
-But $\det(A) = \det(SNF(A)) = \prod_{i=1}^n d_i$, and so if $d_i=0$ for some $i$ iff $\det A = 0$ iff $\rank A < n$.
+<1>4. Conclusion:
+    $M = R^n / \operatorname{im}(A)$ is torsion $\iff \operatorname{rank}_R(A) = n \iff d_1, \dots, d_n \ne 0$ in the Smith Normal Form. Q.E.D.
 :::
