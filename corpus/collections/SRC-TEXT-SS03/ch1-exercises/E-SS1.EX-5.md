@@ -9,6 +9,10 @@ classification:
   topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
 ---
 
 ::: exercise
@@ -29,4 +33,65 @@ conclude that $\Omega = \Omega _ { 1 }$ as desired.
 
 The proof actually shows that the regularity and type of curves we used to define pathwise connectedness can be relaxed without changing the equivalence between the two definitions when Ω is open.
 For instance, we may take all curves to be continuous, or simply polygonal lines.<sup>2</sup>
+:::
+
+::: {.solution}
+**Part (a).**
+
+<1>1. $z(t^*) \in \Omega_1$ or $z(t^*) \in \Omega_2$, since $\Omega = \Omega_1 \cup \Omega_2$.
+Proof: $z(t^*) \in \Omega$ and $\Omega$ is the disjoint union of $\Omega_1$ and $\Omega_2$.
+
+<1>2. $z(t^*) \notin \Omega_1$.
+<2>1. If $z(t^*) \in \Omega_1$, then since $\Omega_1$ is open there is $\epsilon > 0$ with $z(t) \in \Omega_1$ for all $t \in (t^* - \epsilon, t^* + \epsilon)$.
+Proof: continuity of $z$ and openness of $\Omega_1$.
+<2>2. This contradicts the definition of $t^*$ as the supremum.
+Proof: then $z(s) \in \Omega_1$ for all $s < t^* + \epsilon$, so $t^*$ is not an upper bound.
+
+<1>3. $z(t^*) \notin \Omega_2$.
+<2>1. If $z(t^*) \in \Omega_2$, then since $\Omega_2$ is open there is $\epsilon > 0$ with $z(t) \in \Omega_2$ for all $t \in (t^* - \epsilon, t^* + \epsilon)$.
+Proof: continuity and openness.
+<2>2. But by definition of $t^*$, there are $s$ arbitrarily close to $t^*$ from below with $z(s) \in \Omega_1$.
+Proof: $t^*$ is the supremum of the set of such $t$.
+<2>3. This contradicts $z(s) \in \Omega_2$ for those $s$ (since $\Omega_1 \cap \Omega_2 = \varnothing$).
+Proof: <2>1 and <2>2.
+
+<1>4. Contradiction.
+Proof: <1>1, <1>2, and <1>3 show $z(t^*)$ lies in neither $\Omega_1$ nor $\Omega_2$.
+
+<1>5. Hence $\Omega$ cannot be written as a disjoint union of two nonempty open sets, so $\Omega$ is connected.
+Proof: <1>4.
+
+**Part (b).**
+
+<1>1. $\Omega_1$ is open.
+<2>1. Let $p \in \Omega_1$, joined to $w$ by a curve $\gamma$.
+Proof: definition of $\Omega_1$.
+<2>2. Since $\Omega$ is open, there is a disk $D \subset \Omega$ centered at $p$.
+Proof: openness of $\Omega$.
+<2>3. Every $q \in D$ is joined to $w$ by $\gamma$ followed by the straight segment from $p$ to $q$.
+Proof: concatenate curves.
+<2>4. Hence $D \subset \Omega_1$, so $\Omega_1$ is open.
+Proof: <2>3.
+
+<1>2. $\Omega_2$ is open.
+<2>1. Let $p \in \Omega_2$ and $D \subset \Omega$ a disk centered at $p$.
+Proof: openness of $\Omega$.
+<2>2. If some $q \in D$ were in $\Omega_1$, then $p$ would be joined to $w$ via $q$.
+Proof: join $p$ to $q$ by a segment and $q$ to $w$ by a curve.
+<2>3. This contradicts $p \in \Omega_2$.
+Proof: <2>2.
+<2>4. Hence $D \subset \Omega_2$, so $\Omega_2$ is open.
+Proof: <2>3.
+
+<1>3. $\Omega_1$ and $\Omega_2$ are disjoint and $\Omega = \Omega_1 \cup \Omega_2$.
+Proof: by definition, every point either can or cannot be joined to $w$.
+
+<1>4. $\Omega_1 \neq \varnothing$.
+Proof: $w \in \Omega_1$ (joined to itself by the constant curve).
+
+<1>5. Hence $\Omega_2 = \varnothing$, so $\Omega = \Omega_1$.
+Proof: $\Omega$ is connected, so it cannot be a disjoint union of two nonempty open sets; since $\Omega_1 \neq \varnothing$ and $\Omega_1$ is open, $\Omega_2$ must be empty.
+
+<1>6. Q.E.D.
+Proof: <1>5 shows every point of $\Omega$ is joined to $w$, so $\Omega$ is pathwise connected.
 :::
