@@ -31,7 +31,7 @@ Proof: For $z = x + iy \in S$, $e^{\pi z} = e^{\pi x} e^{i\pi y}$; since $y \in 
 Proof: If $e^{\pi z_1} = e^{\pi z_2}$, then $\pi(z_1 - z_2) \in 2\pi i \ZZ$, i.e. $z_1 - z_2 \in 2i\ZZ$; but for $z_1, z_2 \in S$, $\Im(z_1 - z_2) \in (-1, 1)$, so the only integer multiple of $2i$ in that range is $0$, hence $z_1 = z_2$.
 
 <1>3. $e^{\pi z}$ is holomorphic with nowhere-vanishing derivative on $S$.
-Proof: The exponential is entire and $\dv{z} e^{\pi z} = \pi e^{\pi z} \neq 0$ for all $z$.
+Proof: The exponential is entire and $\ddd{z} e^{\pi z} = \pi e^{\pi z} \neq 0$ for all $z$.
 
 <1>4. $T(z) = e^{\pi z}$ is a conformal map from $S$ onto $\HH$.
 Proof: By <1>1 it is onto, by <1>2 it is injective, and by <1>3 it is holomorphic with nonzero derivative; a bijective holomorphic map with nonzero derivative is a biholomorphism, i.e. conformal.

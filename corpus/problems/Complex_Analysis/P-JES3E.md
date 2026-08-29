@@ -35,10 +35,10 @@ Show that there exist points $(x,y)\in D$ such that $\displaystyle{\limsup_{n\to
 **Goal:** (1) Verify that $u_n(x,y) = \frac{e^{ny} - e^{-ny}}{2n^2}\sin(nx)$ solves, on $D = \{x^2 + y^2 < 1\}$, the Cauchy problem $\Delta u = 0$, $u(x,0) = 0$, $u_y(x,0) = \frac{\sin(nx)}{n}$; (2) show there exist points $(x,y) \in D$ with $\limsup_{n \to \infty} \abs{u_n(x,y)} = \infty$.
 
 <1>1. Verify the boundary conditions at $y = 0$.
-    Proof: $u_n(x,0) = \frac{e^0 - e^0}{2n^2}\sin(nx) = 0$. And $\pdv{u_n}{y} = \frac{n e^{ny} + n e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} + e^{-ny}}{2n}\sin(nx)$, so $\pdv{u_n}{y}(x,0) = \frac{2}{2n}\sin(nx) = \frac{\sin(nx)}{n}$.
+    Proof: $u_n(x,0) = \frac{e^0 - e^0}{2n^2}\sin(nx) = 0$. And $\dd{u_n}{y} = \frac{n e^{ny} + n e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} + e^{-ny}}{2n}\sin(nx)$, so $\dd{u_n}{y}(x,0) = \frac{2}{2n}\sin(nx) = \frac{\sin(nx)}{n}$.
 
 <1>2. Verify $\Delta u_n = 0$ on $D$.
-    Proof: $\pdv[2]{u_n}{x} = -n^2 u_n$ (since $\dv[2]{x}\sin(nx) = -n^2\sin(nx)$), and $\pdv[2]{u_n}{y} = \frac{n^2 e^{ny} - n^2 e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} - e^{-ny}}{2}\sin(nx) = n^2 u_n$. Hence $u_{xx} + u_{yy} = -n^2 u_n + n^2 u_n = 0$.
+    Proof: ${\partial^2 u_n \over \partial x^2} = -n^2 u_n$ (since ${d^2 \over dx^2}\sin(nx) = -n^2\sin(nx)$), and ${\partial^2 u_n \over \partial y^2} = \frac{n^2 e^{ny} - n^2 e^{-ny}}{2n^2}\sin(nx) = \frac{e^{ny} - e^{-ny}}{2}\sin(nx) = n^2 u_n$. Hence $u_{xx} + u_{yy} = -n^2 u_n + n^2 u_n = 0$.
 
 <1>3. For (2), choose $x \in (0,1)$ with $x/\pi$ irrational.
     Proof: Any such $x$ has $\abs{x} < 1$, so $(x,y) \in D$ whenever $y$ is small enough that $x^2 + y^2 < 1$; e.g. $x = 1/\pi$ and $y = 1/2$ works since $1/\pi^2 + 1/4 < 1$.

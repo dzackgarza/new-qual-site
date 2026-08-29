@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OTS37
 kind: problem
-title: Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\End_K(V)$
+title: Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$
 classification:
   areas:
   - algebra

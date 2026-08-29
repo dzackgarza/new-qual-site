@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-5559 problem and exercise cards have no solution section and no incoming
+5540 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1681
-- Problems: 3878
-- Total: 5559
+- Exercises: 1674
+- Problems: 3866
+- Total: 5540
 
-## Exercises (1681)
+## Exercises (1674)
 
 - [ ] E-AMD-LDJWILVY — "If $H\le N_G(K)$ then $HK$ is a subgroup"
 - [ ] E-AMD-LJNBDMIP — "A permutation is odd iff it has an odd number of even cycles"
@@ -418,7 +418,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-3.B-1 — "Homology and cohomology of $\mathbb{RP}^m \times \mathbb{RP}^n$"
 - [ ] E-HAT-3.B-3 — "Non-naturality of the Künneth splitting"
 - [ ] E-HAT-3.B-4 — "Cross product of fundamental classes"
-- [ ] E-HAT-3.B-5 — "Slant products"
 - [ ] E-HAT-3.C-1 — "H-space structure and strict identity"
 - [ ] E-HAT-3.C-10 — "Product of maps in an H-space"
 - [ ] E-HAT-3.C-11 — "Pontryagin ring of the torus"
@@ -548,7 +547,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-4.D-2 — "Cohomology of $K(\mathbb{Z}_p, 1)$ via Leray--Hirsch"
 - [ ] E-HAT-4.D-3 — "Cohomology of Stiefel manifolds via Leray--Hirsch"
 - [ ] E-HAT-4.D-4 — "Cohomology of complex flag manifolds"
-- [ ] E-HAT-4.D-5 — "Gysin sequence and Hopf invariant of sphere bundles"
 - [ ] E-HAT-4.D-7 — "Thom class implies orientability"
 - [ ] E-HAT-4.D-8 — "Thom space of a product bundle"
 - [ ] E-HAT-4.D-9 — "Torus inclusion in $U(n)$ is nullhomotopic"
@@ -641,7 +639,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-15-2 — "Verifying $A(AB) = A^2B$ directly"
 - [ ] E-HK-15-3 — "Non-zero square-zero $2 \times 2$ matrices"
 - [ ] E-HK-15-4 — "Factoring a matrix inverse through elementary matrices"
-- [ ] E-HK-15-5 — "Solving $CA = B$ for a left factor"
 - [ ] E-HK-15-6 — "Columns of a product are combinations of the left factor's columns"
 - [ ] E-HK-15-7 — "One-sided inverses of square matrices are two-sided"
 - [ ] E-HK-15-8 — "Which matrices are commutators?"
@@ -925,7 +922,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-72-21 — "Irreducible real action forces complex diagonalizability"
 - [ ] E-HK-72-3 — "An eigenspace with no complementary invariant subspace"
 - [ ] E-HK-72-4 — "Annihilator ideals inside the eigenspace of a Jordan block"
-- [ ] E-HK-72-5 — "Applying a polynomial distributes over direct sums of invariant subspaces"
 - [ ] E-HK-72-6 — "Equal annihilators are preserved by applying polynomials"
 - [ ] E-HK-72-7 — "Minimal polynomials and rational forms of three real matrices"
 - [ ] E-HK-72-9 — "Rationalizing a given real matrix"
@@ -1062,7 +1058,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-HN2G — "Determinant criterion for $2 \times 2$ invertibility via row operations"
 - [ ] E-HK-IF5V — "Solutions to a homogeneous system over $\CC$"
 - [ ] E-HK-J2K6 — "Row-reduction and factorization over $\CC$"
-- [ ] E-HK-OAOP — "Product of non-square matrices is not invertible"
 - [ ] E-HK-OY2K — "Solving a system of four equations in five unknowns"
 - [ ] E-HK-PNK2 — "Non-row-equivalent matrices"
 - [ ] E-HK-PPAO — "Eigenvectors of a triangular matrix"
@@ -1538,7 +1533,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS6.EX-9 — "The hypergeometric series  was defined in Exercise 16 of Chapter 1"
 - [ ] E-SS6.PR-1 — "This problem provides further estimates for  and  near"
 - [ ] E-SS7.EX-1 — "Bounded partial sums give convergence of the Dirichlet series for Re(s) > 0"
-- [ ] E-SS7.EX-2 — "The following links the multiplication of Dirichlet series with the divisibility"
 - [ ] E-SS7.EX-3 — "SS 7.3: The Dirichlet series of the Moebius function and 1/zeta"
 - [ ] E-SS7.EX-4 — "Dirichlet L-series for periodic coefficients"
 - [ ] E-SS7.PR-1 — "Dirichlet series with bounded coefficients converge in a half-plane"
@@ -1598,7 +1592,6 @@ commit, and writing the solution removes the line.
 - [ ] E-TUPHD — "Pasting schemes for two polygonal regions"
 - [ ] E-TZ1IN — "Complete normality characterized by separated sets"
 - [ ] E-U00IE — "Well-ordered sets times the half-open interval are linear continua"
-- [ ] E-U8UBU — "Coset spaces of topological groups"
 - [ ] E-U919Z — "Convex subsets that are not intervals or rays"
 - [ ] E-U9VN1 — "Manifolds imbed as closed subspaces of codimension at least one"
 - [ ] E-UAMGV — "The coarsest topology making a family of maps continuous"
@@ -1699,7 +1692,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3878)
+## Problems (3866)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-35I3B — "The series of iterates $\sum f^n$ of a non-rotation $f$ analytic on $\mathbb{D}$ with $f(0)=0$ converges locally uniformly"
@@ -1958,7 +1951,6 @@ commit, and writing the solution removes the line.
 - [ ] P-7Q1AX — "$\ZZ_n[m]\cong\ZZ_{(m,n)}$"
 - [ ] P-7QJS2 — "A holomorphic function on the punctured disk dominated by a power of the logarithm"
 - [ ] P-7QSIF — "Hungerford 2.5.6"
-- [ ] P-7UIYI — "$\lim|a_{n+1}/a_n|=L$ implies $\lim|a_n|^{1/n}=L$, and the ratio test for the radius of convergence"
 - [ ] P-7UTDI — "Constancy of holomorphic functions of constant modulus, real part, argument, or conjugate"
 - [ ] P-7VKFN — "The quaternion group and the number of elements of each order"
 - [ ] P-7XSR6 — "A nonsurjective map $S^3\times S^3\to\RP^3$ is homotopic to a constant"
@@ -2340,7 +2332,6 @@ commit, and writing the solution removes the line.
 - [ ] P-ALGF22C — "Galois group and primitive element for Q(sqrt(2), sqrt(3), i)"
 - [ ] P-ALGF22D — "Galois group of an irreducible cubic with exactly one real root is S_3"
 - [ ] P-ALGF22E — "Flat quotient ring implies I ∩ J = IJ for all ideals J"
-- [ ] P-ALGF22F — "Coefficients of monic polynomials with product in the integral closure must lie in it"
 - [ ] P-ALGF23A — "Proper subgroups of nilpotent groups and normality of maximal subgroups"
 - [ ] P-ALGF23B — "Groups of order pm with a self-normalizing Sylow p-subgroup"
 - [ ] P-ALGF23C — "Irreducibility, non-primality, and projectivity in Z[sqrt(-5)]"
@@ -2544,7 +2535,6 @@ commit, and writing the solution removes the line.
 - [ ] P-AMD-AF6CJFKN — "Cauchy's theorem"
 - [ ] P-AMD-AFCXP5C6 — "$\QQ/\ZZ$ as torsion in $\RR/\ZZ$ and as the roots of unity"
 - [ ] P-AMD-ASWUIIA5 — "Class sums form an $R$-basis of the center of the group ring $RG$"
-- [ ] P-AMD-BWEE5VHM — "Given: $|G| = pqr, p < q < r$"
 - [ ] P-AMD-CM4OPBUE — "Fundamental groups of band-and-disc spaces"
 - [ ] P-AMD-CSSMXFWS — "Given: $|G| =595$"
 - [ ] P-AMD-D4G4SW2S — "Given: $H \subseteq G, P \in \text{Syl}_p(G)$"
@@ -2647,7 +2637,6 @@ commit, and writing the solution removes the line.
 - [ ] P-APA22C — "Simultaneous orthogonal basis for two positive definite inner products"
 - [ ] P-APA22D — "One-dimensional irreps and dimensions for a group of order $16$"
 - [ ] P-APA22E — "Permutation representation on perfect matchings and a map onto $S^{(n,n)}$"
-- [ ] P-APA22F — "Inner products of skew Schur functions and the number of SYT of shape $(5,3,2,2,1)$"
 - [ ] P-APA22G — "Spectrum of the sum of all transpositions on the Specht module $S^{(4,2,1)}$"
 - [ ] P-APA22H — "Sum of two simple bivectors is not a single exterior product"
 - [ ] P-APA23B — "Hermitian–skew Hermitian splitting and eigenvalue bounds for real and imaginary parts"
@@ -3175,7 +3164,6 @@ commit, and writing the solution removes the line.
 - [ ] P-CASP25E — "Bounded holomorphic sequence converging on a convergent sequence converges uniformly on compact subsets"
 - [ ] P-CASP25F — "Three-circles type theorem for holomorphic functions vanishing only at 0"
 - [ ] P-CASP26B — "Bound on an even holomorphic function on D with f(0)=0 and |f|<2000"
-- [ ] P-CASP26C — "The polynomial 1 + z + az^n has a root in |z| <= 2 for all a and n >= 2"
 - [ ] P-CASP26D — "Holomorphic function on the upper half-plane with real boundary values and polynomial growth is a Laurent polynomial"
 - [ ] P-CASP26E — "Bounded harmonic function on |z|>1 with u<=0 on |z|=1 is non-positive"
 - [ ] P-CASP26F — "Simultaneous polynomial approximation and separation on disjoint compact sets"
@@ -3268,7 +3256,6 @@ commit, and writing the solution removes the line.
 - [ ] P-EMAF1 — "Finite field containment characterization"
 - [ ] P-EMAF2 — "Finite field extensions are cyclic Galois"
 - [ ] P-EMAF3 — "Splitting field with maximal Galois group"
-- [ ] P-EMAF4 — "Galois extensions and splitting fields over Q"
 - [ ] P-EMAG2 — "Normalizer properly contains proper p-subgroup"
 - [ ] P-EMAG3 — "Subgroup of index n in S_n"
 - [ ] P-EMAG4 — "Non-simplicity and cyclicity of specific order groups"
@@ -3276,7 +3263,6 @@ commit, and writing the solution removes the line.
 - [ ] P-EMAG9 — "Unique subgroup per divisor implies cyclic; finite subgroups of F^* are cyclic"
 - [ ] P-EMAL1 — "Matrix is conjugate to its transpose"
 - [ ] P-EMAL3 — "Double dual evaluation map"
-- [ ] P-EMAR1 — "Power series ring is Euclidean domain"
 - [ ] P-EMAR3 — "Maximal ideals, PID prime ideals, and quotient fields"
 - [ ] P-EMCA1 — "Residue computation of cos(x)/(x^2+1)^2"
 - [ ] P-EMCA10 — "Rouche's theorem and local injectivity"
@@ -3378,7 +3364,6 @@ commit, and writing the solution removes the line.
 - [ ] P-FQNYQ — "Embedding, fundamental group, and homology of a torus with two $2$-cells attached along distinct meridians"
 - [ ] P-FRRZE — "Fundamental group of $\mathbb{R}^3$ minus the three coordinate axes"
 - [ ] P-FS6W6 — "A conformal map from $\DD$ to $\HH$"
-- [ ] P-FUHGO — "A closed curve on a surface that is nullhomologous but not nullhomotopic"
 - [ ] P-FVQWC — "The surface with polygonal symbol $xyzxy^{-1}z^{-1}$"
 - [ ] P-FWNW3 — "Uniform approximation of holomorphic functions by polynomials"
 - [ ] P-FX46W — "Representations of finite groups: irreducibles, complete reducibility, and invariant inner products"
@@ -3421,7 +3406,6 @@ commit, and writing the solution removes the line.
 - [ ] P-GRNXH — "Which interpolations $f(1/n)$ are possible for a holomorphic function on the disk"
 - [ ] P-GSFRX — "Minimal and characteristic polynomials of a $5\times 5$ real matrix with eigenvalues $0,1\pm i,1\pm 2i$"
 - [ ] P-GSJ2A — "Eigenvalues of a symmetric matrix"
-- [ ] P-GSKRZ — "Inner automorphisms, and cycle-type-preserving automorphisms of $S_n$ are inner"
 - [ ] P-GSTFL — "Uniformly continuous functions preserve uniform convergence of sequences"
 - [ ] P-GT22M — "If $K/F$ is cyclic and $E/F$ is normal then $E/F$ and $K/E$ are cyclic"
 - [ ] P-GVWWY — "Minimal and characteristic polynomials; Cayley-Hamilton"
@@ -3432,7 +3416,7 @@ commit, and writing the solution removes the line.
 - [ ] P-GZX6P — "Galois group of an irreducible of degree $n$ embeds in $S_n$; examples with $G=S_n$, and the cubic case"
 - [ ] P-H3PWT — "Degree of a compositum when the factors have coprime degrees, and a counterexample without coprimeness"
 - [ ] P-H442E — "Gaussian integrals $\int e^{-x^2}\,dx$ and $\int e^{-(x-\mu)^2/(2\sigma^2)}\,dx$"
-- [ ] P-HAGJY — "$\End_R(A)$ is a ring"
+- [ ] P-HAGJY — "$\Endo_R(A)$ is a ring"
 - [ ] P-HAI2R — "Galois group and intermediate fields of $x^3-7$ over $\QQ$, and Galois groups over $\RR$ and $\FF_{13}$"
 - [ ] P-HBECH — "Compact connected surfaces of Euler characteristic $-3$, possibly with boundary or nonorientable"
 - [ ] P-HBWYH — "$F(\alpha)=F(\alpha^2)$ when $\alpha$ has odd degree over $F$, and $\alpha^{2020}$ has odd degree"
@@ -3726,7 +3710,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHUFA02CAK — "Evaluate integral of u^2/(u^6+1) over [0,infty)"
 - [ ] P-JHUFA05ANA — "L2 mass of order 1/n squared forces a.e. convergence to zero"
 - [ ] P-JHUFA05ANB — "Translation continuity of L1 functions on the line"
-- [ ] P-JHUFA05ANC — "Weak convergence to zero on the circle"
 - [ ] P-JHUFA05AND — "Weak Lower Semicontinuity of the Norm and Strong Convergence"
 - [ ] P-JHUFA05ANE — "A contour-integral evaluation"
 - [ ] P-JHUFA05ANF — "Automorphisms of the right half plane"
@@ -4040,7 +4023,6 @@ commit, and writing the solution removes the line.
 - [ ] P-M81A4-E3 — "Uniform integrability and L1 convergence"
 - [ ] P-M81A5-1 — "Interchanging nonnegative double series"
 - [ ] P-M81A5-2 — "An integral identity for a tail integral"
-- [ ] P-M81A5-3 — "Integrability of a function on a triangular region"
 - [ ] P-M81A5-4 — "Positive-measure sumsets have interior"
 - [ ] P-M81A5-5 — "Integration by parts for indefinite Lebesgue integrals"
 - [ ] P-M81A5-E1 — "Conditional convergence of the sine integral"
@@ -4233,7 +4215,7 @@ commit, and writing the solution removes the line.
 - [ ] P-OSS6X — "Spring 2021, 7"
 - [ ] P-OSVPH — "Evaluate $\int\frac{\sin^3 x}{\cos x-\cos^3 x}\,dx$"
 - [ ] P-OSZPJ — "Cell structure and homology of the torus $S^1\times S^1$"
-- [ ] P-OTS37 — "Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\End_K(V)$"
+- [ ] P-OTS37 — "Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$"
 - [ ] P-OTXNQ — "Does this hold when $A$ is open? (statement incomplete)"
 - [ ] P-OU7QZ — "The Galois group of an irreducible quintic with two non-real roots is $S_5$"
 - [ ] P-OUQ2Q — "$\mathbb{Q}[x]$-modules from order-$6$ matrices in $M_4(\mathbb{Q})$, and groups of order $24$"
@@ -5396,7 +5378,6 @@ commit, and writing the solution removes the line.
 - [ ] P-VN6VF — "Example of a UFD that is not a Euclidean domain"
 - [ ] P-VOGZ5 — "Splitting field of $x^4-2$ over $\QQ$: Galois group $D_8$ and quartic subfields"
 - [ ] P-VPACG — "The quotient $\RR^n/U$ by a bounded open set is not Hausdorff"
-- [ ] P-VPB55 — "Jordan canonical form over a non-algebraically closed field"
 - [ ] P-VPPPN — "Mayer–Vietoris and homology of two solid tori $S^1\times D^2$ glued by $(z,w)\mapsto(zw^3,w)$"
 - [ ] P-VQUPX — "Taylor coefficients of an entire function as contour integrals, uniform convergence on bounded sets, and uniform convergence on $\mathbb{C}$"
 - [ ] P-VSGSG — "No simple group of order $pq^k$ when $k$ is least with $p\mid q^k-1$"

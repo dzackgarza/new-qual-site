@@ -32,7 +32,7 @@ What are the poles of ${1\over 1 + z^4}$ ?
 **Goal:** Evaluate $\int_\RR \frac{dx}{1 + x^4}$ and identify the poles of $1/(1 + z^4)$.
 
 <1>1. The poles of $1/(1 + z^4)$ are the simple poles $z_k = e^{i\pi(1 + 2k)/4}$, $k = 0, 1, 2, 3$.
-    Proof: $1 + z^4 = 0$ iff $z^4 = -1 = e^{i\pi}$, so $z_k = e^{i(\pi + 2\pi k)/4}$ for $k = 0,1,2,3$: $z_0 = e^{i\pi/4}$, $z_1 = e^{3i\pi/4}$, $z_2 = e^{5i\pi/4}$, $z_3 = e^{7i\pi/4}$. Each is simple since $\dv{z}(1 + z^4) = 4z^3 \neq 0$ at each root.
+    Proof: $1 + z^4 = 0$ iff $z^4 = -1 = e^{i\pi}$, so $z_k = e^{i(\pi + 2\pi k)/4}$ for $k = 0,1,2,3$: $z_0 = e^{i\pi/4}$, $z_1 = e^{3i\pi/4}$, $z_2 = e^{5i\pi/4}$, $z_3 = e^{7i\pi/4}$. Each is simple since $\ddd{z}(1 + z^4) = 4z^3 \neq 0$ at each root.
 
 <1>2. Two poles lie in the upper half-plane: $z_0 = e^{i\pi/4}$ and $z_1 = e^{3i\pi/4}$.
     Proof: <1>1: $z_0, z_1$ have positive imaginary parts; $z_2, z_3$ have negative imaginary parts.

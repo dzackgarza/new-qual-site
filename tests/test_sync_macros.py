@@ -25,6 +25,7 @@ LATEXMACS = r"""
   \MakeUppercase{\romannumeral #1}%
 }
 \renewcommand{\too}[0]{\longrightarrow}
+\def\falling#1#2{ \qty{#1}_{ (#2) }}
 """
 
 PREAMBLE_COMMON = r"""
@@ -63,3 +64,7 @@ def test_the_preamble_is_read_as_latex_reads_it(tmp_path: Path) -> None:
     # nothing defines, over the top of the `\exp` MathJax already has.
     assert "exp" not in defined
     assert defined["divides"] == r"\bigm|"
+    # `\def` defines too. The preamble writes three macros that way and the
+    # corpus uses two of them, so reading only `\newcommand` left them undefined
+    # and MathJax printed `\falling{2n}{n}` as its own source.
+    assert defined["falling"] == r" \qty{#1}_{ (#2) }"

@@ -39,7 +39,7 @@ Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and eac
 Proof: $\sin(\pi z) = (e^{i\pi z} - e^{-i\pi z})/2i$, so $\sin(\pi z) = 0$ iff $e^{2i\pi z} = 1$ iff $2i\pi z = 2\pi i k$ for some $k \in \ZZ$ iff $z = k \in \ZZ$.
 
 <1>2. Each zero $z = n$ is simple.
-Proof: $\dv{z}\sin(\pi z) = \pi \cos(\pi z)$, and $\cos(\pi n) = (-1)^n \neq 0$ for $n \in \ZZ$.
+Proof: $\ddd{z}\sin(\pi z) = \pi \cos(\pi z)$, and $\cos(\pi n) = (-1)^n \neq 0$ for $n \in \ZZ$.
 
 <1>3. $1/\sin(\pi z)$ has a simple pole at each $z = n \in \ZZ$.
 Proof: The denominator vanishes to order exactly 1 at each integer (<1>2) and the numerator is the nonzero constant 1.

@@ -40,7 +40,7 @@ Show that for sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs
     Proof: Choose $n$ so that $\abs{e^z - P_n(z)} < e^{-10} \leq \abs{e^z}$ on $\abs{z} = 10$ (possible by <1>1 and <1>2). Rouch\'e's theorem applied to $e^z$ and $P_n - e^z$ shows $P_n$ and $e^z$ have equally many zeros in $\abs{z} < 10$; $e^z$ has none, so neither does $P_n$.
 
 <1>4. $e^z - 1$ has exactly 3 zeros in $\abs{z} < 10$, all simple.
-    Proof: The zeros of $e^z - 1$ are $z = 2\pi i k$, $k \in \ZZ$; those with $\abs{z} < 10$ are $k = -1, 0, 1$, i.e. $z = 0, \pm 2\pi i$, and each is simple since $\dv{z}(e^z - 1) = e^z \neq 0$ at each.
+    Proof: The zeros of $e^z - 1$ are $z = 2\pi i k$, $k \in \ZZ$; those with $\abs{z} < 10$ are $k = -1, 0, 1$, i.e. $z = 0, \pm 2\pi i$, and each is simple since $\ddd{z}(e^z - 1) = e^z \neq 0$ at each.
 
 <1>5. On $\abs{z} = 10$, $\abs{e^z - 1} \geq m$ for some $m > 0$.
     Proof: $e^z - 1$ is continuous on the compact circle and has no zeros there (all zeros lie strictly inside by <1>4, since $\abs{2\pi i} \approx 6.28 < 10$ and $\abs{4\pi i} \approx 12.57 > 10$), so its minimum $m$ on the circle is positive.

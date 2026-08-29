@@ -2128,16 +2128,8 @@ class SearchRecordKind(Enum):
     PROBLEM = "Problem"
 
 
-# Commands the author's LaTeX gets from a package that MathJax has no package
-# for. `\one` and `\indic` are written in terms of `\mathbbm`, which the `bbm`
-# package supplies; MathJax printed the five uses as red `\mathbbm1` text. The
-# shims belong here rather than in `macros.json`, which is the preamble's own
-# copy and is rewritten by `sync_macros`.
-PACKAGE_SHIMS: dict[str, object] = {"mathbbm": ["{\\mathbb{#1}}", 1]}
-
-
 def mathjax_header(macros: dict) -> str:
-    mathjax_macros: dict[str, object] = dict(PACKAGE_SHIMS)
+    mathjax_macros: dict[str, object] = {}
     for tex_name, definition in macros.items():
         if not isinstance(tex_name, str):
             raise TypeError(f"invalid TeX macro name type: {type(tex_name).__name__}")

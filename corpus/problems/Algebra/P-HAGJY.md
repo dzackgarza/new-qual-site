@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HAGJY
 kind: problem
-title: $\End_R(A)$ is a ring
+title: $\Endo_R(A)$ is a ring
 classification:
   areas:
   - algebra

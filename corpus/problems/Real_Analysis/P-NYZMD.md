@@ -43,7 +43,7 @@ Compute $\norm{f - g}_2$.
     <2>3. $\inner{e_0}{e_1} = \int_0^1 \sqrt 3(2x-1)\,dx = \sqrt 3(1 - 1) = 0$.
         Proof: $\int_0^1 2x\,dx - \int_0^1 1\,dx = 1 - 1 = 0$.
 
-<1>2. (b) The closest degree-$\le 1$ polynomial to $f(x) = x^2$ is the orthogonal projection onto $\span\{e_0, e_1\}$: $h = \inner{f}{e_0}e_0 + \inner{f}{e_1}e_1$.
+<1>2. (b) The closest degree-$\le 1$ polynomial to $f(x) = x^2$ is the orthogonal projection onto $\spanof\{e_0, e_1\}$: $h = \inner{f}{e_0}e_0 + \inner{f}{e_1}e_1$.
     <2>1. $\inner{f}{e_0} = \int_0^1 x^2\,dx = \frac13$.
         Proof: direct.
     <2>2. $\inner{f}{e_1} = \sqrt 3\int_0^1 x^2(2x - 1)\,dx = \sqrt 3\left(\frac12 - \frac13\right) = \frac{\sqrt 3}{6}$.
@@ -52,7 +52,7 @@ Compute $\norm{f - g}_2$.
         Proof: substitute the coefficients into $h = \frac13 e_0 + \frac{\sqrt3}{6}e_1$.
 
 <1>3. (c) $\|f - h\|_2 = \frac{1}{6\sqrt 5}$.
-    <2>1. $\|f - h\|_2^2 = \|f\|_2^2 - \|h\|_2^2$ (Pythagoras, since $f - h \perp \span\{e_0, e_1\} \ni h$).
+    <2>1. $\|f - h\|_2^2 = \|f\|_2^2 - \|h\|_2^2$ (Pythagoras, since $f - h \perp \spanof\{e_0, e_1\} \ni h$).
         Proof: orthogonal decomposition; $h$ is the projection of $f$.
     <2>2. $\|f\|_2^2 = \int_0^1 x^4\,dx = \frac15$.
         Proof: direct.

@@ -50,6 +50,10 @@ INPUT_RE = re.compile(r"\\input\{([^}]+)\}")
 # The optional groups are LaTeX's argument count and default first argument.
 COMMAND_RE = re.compile(r"\\(?:re|provide)?newcommand\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{")
 OPERATOR_RE = re.compile(r"\\DeclareMathOperator\*?\s*\{?\\([A-Za-z]+)\}?\s*\{")
+# `\def` is a definition too. The preamble writes three macros with it, and the
+# corpus uses two of them, so `\rising{n}{k}` and `\falling{2n}{n}` reached the
+# page as red source. The parameter markers sit between the name and the body.
+DEF_RE = re.compile(r"\\def\s*\\([A-Za-z]+)\s*(?:#[1-9])*\s*\{")
 # A card's front-matter title is stored cut short at an ellipsis, and the cut
 # lands mid-name often enough to matter: `$\sq…` is `\sqrt` and `\I…` is `\Im`.
 # The committed vocabulary carried `\sq` and `\I` because of it. `[A-Za-z]` is
@@ -68,10 +72,26 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # same relation from the standard tables, which MathJax does implement.
 # `\Lightning` is a marvosym symbol, so `\contradiction` reached the page as
 # red literal text. U+21AF DOWNWARDS ZIGZAG ARROW is the same sign.
+#
+# `\one` and `\indic` are built on `\mathbbm`, declared from `bbm.sty`; the
+# blackboard-bold digit is U+1D7D9. `\mapsfrom` reflects `\mapsto` with
+# `graphicx`, and draws U+21A4. `\varinjlim` and `\varprojlim` are renewed over
+# the amsmath originals in terms of `\varlim@` and `\nmlimits@`, which are
+# amsmath's own internals: MathJax already provides both, so its versions
+# stand. `\envlist` is vertical glue with no mathematics in it at all.
 UNRENDERABLE = {
     "notdivides": "\\mathrel{\\nmid}",
     "contradiction": "\\mathord{\\unicode{x21AF}}",
+    "one": "{\\unicode{x1D7D9}}",
+    "indic": "{\\unicode{x1D7D9}}\\left[#1\\right]",
+    "mapsfrom": "\\mathrel{\\unicode{x21A4}}",
+    "envlist": "",
 }
+
+# Preamble macros that renew an amsmath original in terms of amsmath's own
+# internals. MathJax carries the originals, so its definitions are left to
+# stand: naming them here would define each macro as itself.
+NATIVE = frozenset({"varinjlim", "varprojlim"})
 
 USED_IN = ("corpus", "wiki")
 
@@ -110,6 +130,8 @@ def definitions(text: str) -> dict[str, str]:
         found.append((match.start(), match.group(1), group_at(text, match.end())))
     for match in OPERATOR_RE.finditer(text):
         found.append((match.start(), match.group(1), f"\\operatorname{{{group_at(text, match.end())}}}"))
+    for match in DEF_RE.finditer(text):
+        found.append((match.start(), match.group(1), group_at(text, match.end())))
     return {name: body for _, name, body in sorted(found)}
 
 
@@ -130,7 +152,11 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
-    macros = {"\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items())}
+    macros = {
+        "\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip()
+        for name, body in sorted(keep.items())
+        if name not in NATIVE
+    }
     (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
     undefined = sorted(n for n in used if n not in defined)

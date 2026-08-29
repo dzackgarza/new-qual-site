@@ -40,7 +40,7 @@ Proof: trivial case.
 <2>2. Otherwise $M^\perp \neq \{0\}$; pick $g_0 \in M^\perp$ with $\|g_0\| = 1$ (normalize a nonzero element).
 Proof: $M^\perp \ne \{0\}$ since $L^2 = M \oplus M^\perp$ and $\Lambda \ne 0$ implies $M \ne L^2$.
 <2>3. For $f \in L^2$, write $f = m + \langle f, g_0\rangle g_0$ (with $m \in M$): then $\Lambda(f) = \Lambda(\langle f, g_0\rangle g_0) = \langle f, g_0\rangle\Lambda(g_0)$.
-Proof: $\Lambda(m) = 0$ by $m \in M$; decompose $f$'s component in $M^\perp = \span\{g_0\}$ as $\langle f, g_0\rangle g_0$ (the orthogonal projection onto a line).
+Proof: $\Lambda(m) = 0$ by $m \in M$; decompose $f$'s component in $M^\perp = \spanof\{g_0\}$ as $\langle f, g_0\rangle g_0$ (the orthogonal projection onto a line).
 <2>4. Set $g = \overline{\Lambda(g_0)}\,g_0$; then $\Lambda(f) = \langle f, g_0\rangle\Lambda(g_0) = \Lambda(g_0)\int_X f\overline{g_0} = \int_X f\,\overline{\overline{\Lambda(g_0)}g_0} = \int_X g\,\bar f$.
 Proof: <2>3 and the computation $\overline{\overline{\Lambda(g_0)}g_0} = \Lambda(g_0)\bar g_0$-adjusted: $\int f\,\overline{g} = \int f\,\overline{\overline{\Lambda(g_0)}g_0} = \Lambda(g_0)\int f\bar g_0 = \langle f, g_0\rangle\Lambda(g_0)$.
 

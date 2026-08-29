@@ -25,7 +25,7 @@ Show that if $f$ has a primitive $F$ on $\Omega$ then $\int_\gamma f = 0$ for ev
 **Goal:** Show that if $f$ has a primitive $F$ on $\Omega$ (i.e. $F' = f$ on $\Omega$), then $\int_\gamma f = 0$ for every closed curve $\gamma \subseteq \Omega$.
 
 <1>1. If $\gamma$ is a smooth curve from $a$ to $b$ parametrized by $z(t)$, $t \in [0,1]$, then $\int_\gamma f = F(b) - F(a)$.
-Proof: By the chain rule, $\dv{t}F(z(t)) = F'(z(t)) z'(t) = f(z(t)) z'(t)$, so $\int_\gamma f = \int_0^1 f(z(t))z'(t)\,dt = \int_0^1 \dv{t}F(z(t))\,dt = F(z(1)) - F(z(0)) = F(b) - F(a)$.
+Proof: By the chain rule, $\ddd{t}F(z(t)) = F'(z(t)) z'(t) = f(z(t)) z'(t)$, so $\int_\gamma f = \int_0^1 f(z(t))z'(t)\,dt = \int_0^1 \ddd{t}F(z(t))\,dt = F(z(1)) - F(z(0)) = F(b) - F(a)$.
 
 <1>2. For a closed curve $\gamma$, the endpoints coincide, so $\int_\gamma f = F(a) - F(a) = 0$.
 Proof: <1>1 with $b = a$: a closed curve has $z(1) = z(0)$.

@@ -29,7 +29,7 @@ Proof: $\Omega$ is an open connected subset of $\CC$; such sets are path-connect
 
 <1>2. If $f' \equiv 0$ on a segment, then $f$ is constant along that segment.
 Proof: Parametrize the segment $z(t) = z_0 + t(z_1 - z_0)$, $t \in [0,1]$.
-Then $\dv{t} f(z(t)) = f'(z(t)) z'(t) = 0 \cdot (z_1 - z_0) = 0$, so $t \mapsto f(z(t))$ is constant, and $f(z_1) = f(z_0)$.
+Then $\ddd{t} f(z(t)) = f'(z(t)) z'(t) = 0 \cdot (z_1 - z_0) = 0$, so $t \mapsto f(z(t))$ is constant, and $f(z_1) = f(z_0)$.
 
 <1>3. $f$ is constant on each convex neighborhood, in particular on each small disk in $\Omega$.
 Proof: A disk is convex, so by <1>2 every point of the disk has the same value as its center (join by the straight segment, which stays in the disk).

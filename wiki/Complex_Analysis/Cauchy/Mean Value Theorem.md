@@ -17,8 +17,8 @@ f(z_0)
 .\]
 For the area mean, integrate the circle identity in the radius: if $0<\rho<r$ then
 \[
-\int_0^r \int_0^{2\pi} f(z_0+\rho e^{i\theta})\,\rho\,\dtheta\,\d\rho
-= \int_0^r 2\pi f(z_0)\,\rho\,\d\rho
+\int_0^r \int_0^{2\pi} f(z_0+\rho e^{i\theta})\,\rho\,\dtheta\,\drho
+= \int_0^r 2\pi f(z_0)\,\rho\,\drho
 = \pi r^2 f(z_0)
 ,\]
 so $f(z_0)=\frac{1}{\pi r^2}\iint_{D_r(z_0)} f(z)\,dA$.

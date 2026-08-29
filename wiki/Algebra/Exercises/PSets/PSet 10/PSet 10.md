@@ -241,7 +241,7 @@ R_{12}:  3J_i^1 \oplus J_{-i}^1 \oplus 3J_7^1
 
 # Problem 6
 
-Let $\phi \in \endo(V)$. Following a different proof [@Hun74], define an action
+Let $\phi \in \Endo(V)$. Following a different proof [@Hun74], define an action
 
 \begin{align*}
 k[x] &\actson V \\

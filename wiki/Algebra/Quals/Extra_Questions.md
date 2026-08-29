@@ -868,7 +868,7 @@ Source: a PDF whose author is not identified.
 
 [[P-SB67D]]
 
-### Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\End_K(V)$
+### Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$
 
 [[P-OTS37]]
 
