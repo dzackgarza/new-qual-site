@@ -77,9 +77,9 @@ title: "Study Schedule and Topics"
 
 - Week 5 (June 16): **Integration II**
 
-  - [[Complex_Analysis/Residues/Residues|Residues]]
+  - [[Complex_Analysis/residues-and-contours/computing-residues|Residues]]
 
-  - [[Complex_Analysis/Residues/Exercises_Integrals|Techniques in contour integration]]
+  - [[Complex_Analysis/residues-and-contours/which-contour-do-i-close|Techniques in contour integration]]
 
 - Week 6 (June 23): **Entire functions**
 

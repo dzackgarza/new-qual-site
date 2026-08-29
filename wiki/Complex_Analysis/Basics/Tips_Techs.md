@@ -58,7 +58,7 @@ Things to know well:
 - [[Complex_Analysis/Cauchy/Identity Principle|The identity principle]]
 - [[Complex_Analysis/Omitted_values/Picard|Picard theorems]]
 - [[Complex_Analysis/Zeros_and_poles/Open Mapping|The open mapping theorem]]
-- [[Complex_Analysis/Residues/Residues|Computing residues]]
+- [[Complex_Analysis/residues-and-contours/computing-residues|Computing residues]]
 	- [[Complex_Analysis/Quals/Computing Integrals|Qual integrals]]
 - Jordan's lemma
 - [[Complex_Analysis/Basics/The Cauchy-Riemann equations|The Cauchy-Riemann equations]]

@@ -11,6 +11,10 @@ classification:
   - Homotopy
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -29,4 +33,34 @@ Lemma: If $f\homotopic g$, then $f\circ h \homotopic g \circ h$ for any $h$.
 
 But this says $\gamma\bar\alpha \homotopic c_x$ and $\alpha\bar\gamma \homotopic c_x$.
 But $\gamma \homotopic c_x \circ \gamma \homotopic (\alpha\bar\gamma) \circ \gamma \homotopic \alpha\circ (\bar\gamma \circ\gamma) \homotopic \alpha$, which is what we desired.
+:::
+
+::: solution
+**Goal:** Show that two paths in a simply connected space with common endpoints are homotopic rel endpoints.
+
+<1>1. Let $\gamma,\alpha:I\to X$ satisfy $\gamma(0)=\alpha(0)=x$ and $\gamma(1)=\alpha(1)=y$.
+    *Proof:* Since $X$ is simply connected, $\pi_1(X,x)=0$ and $\pi_1(X,y)=0$.
+<1>2. The loops $\gamma * \overline{\alpha}$ at $x$ and $\overline{\alpha} * \alpha$ at $y$ are both null-homotopic:
+    *Proof:* Triviality of the two fundamental groups gives
+    \[
+    \gamma * \overline{\alpha}\sim c_x,\qquad
+    \overline{\alpha} * \alpha\sim c_y.
+    \]
+<1>3. Concatenate the first homotopy on the right with $\alpha$:
+    *Proof:* If $u\sim v$ then $u * \alpha\sim v * \alpha$, so
+    \[
+    (\gamma * \overline{\alpha}) * \alpha \sim c_x * \alpha.
+    \]
+    Re-associating,
+    \[
+    \gamma * (\overline{\alpha} * \alpha)\sim \alpha.
+    \]
+<1>4. Replace $\overline{\alpha} * \alpha$ by $c_y$ and remove the unit loop:
+    *Proof:* From the second homotopy,
+    \[
+    \gamma \sim \gamma * c_y \sim \gamma * (\overline{\alpha} * \alpha).
+    \]
+    Combining with step <1>3 gives $\gamma\sim\alpha$ by concatenating homotopies.
+    Hence, with endpoints fixed, $\gamma$ and $\alpha$ are path-homotopic.
+Q.E.D.
 :::
