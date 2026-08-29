@@ -2105,7 +2105,8 @@ class SearchRecordKind(Enum):
     """The search index's record vocabulary: the value is the JSON wire string."""
 
     CARD = "Card"
-    PAGE = "Page"
+    GUIDE = "Guide"
+    WIKI = "Wiki"
     PROBLEM = "Problem"
 
 
@@ -2239,8 +2240,8 @@ def _search_records(
         page_records.append(
             {
                 "title": guide.title,
-                "kind": SearchRecordKind.PAGE.value,
-                "detail": "study guide",
+                "kind": SearchRecordKind.GUIDE.value,
+                "detail": "the whole guide",
                 "url": _publication_root_route(guide).as_posix(),
                 "search": " ".join([guide.title, guide.lede] + [section.title for section in guide.sections]).lower(),
             }
@@ -2248,7 +2249,7 @@ def _search_records(
         page_records.extend(
             {
                 "title": section.title,
-                "kind": SearchRecordKind.PAGE.value,
+                "kind": SearchRecordKind.GUIDE.value,
                 "detail": guide.title,
                 "url": _publication_section_route(guide, section).as_posix(),
                 "search": (f"{guide.title} {section.title} {section.lede}").lower(),

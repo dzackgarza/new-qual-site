@@ -386,7 +386,7 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
 
     records = json.loads((site / "search.json").read_text())
     page = next(record for record in records if record["url"] == "wiki/index.html")
-    assert SearchRecordKind(page["kind"]) == SearchRecordKind.PAGE
+    assert SearchRecordKind(page["kind"]) == SearchRecordKind.WIKI
     assert "fixture index" in page["search"]
 
 

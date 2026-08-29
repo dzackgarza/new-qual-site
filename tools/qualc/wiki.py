@@ -692,7 +692,7 @@ def search_records(pages: list[WikiPage]) -> list[dict[str, object]]:
     return [
         {
             "title": page.title,
-            "kind": "Page",
+            "kind": "Wiki",
             "detail": _page_detail(page),
             "url": page.route.as_posix(),
             "search": f"{page.title} {page.source_rel} {page.search_text}".lower(),

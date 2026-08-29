@@ -1149,16 +1149,21 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   The ranking landed in 8a8d493d0, two days before this observation, so the browsed page was running an older script than the one the build wrote.
   Remaining, and not this item: within the body-match tier the tie-break is still title length, so `residue theorem` puts a page titled `Topics` above one titled `Residues`.
 
-- [ ] Name one canonical page per concept.
+- [x] Name one canonical page per concept.
   The query `Sylow` returns `Sylow Theorems` as a card, `Sylow Theorems` as a wiki page, `Sylow theorems` as a problem, and `Sylow Theory` as a guide page.
   Across the site 375 titles are shared by 836 pages: 5 pages are titled `Closed subsets of compact spaces are compact`, 4 `Cauchy's theorem`. A search row separates them only by a small grey path.
   Merging started, per the owner's decision, and the count is now measured rather than guessed.
   Of the 354 card title groups, 266 hold different mathematics under one title: those are not duplicates and merging them would delete problems.
   Of the 88 that hold identical mathematics, 32 were one concept minted twice from two wiki pages -- same kind, same classification, no relations, each transcluded on one page.
   Those are merged: both pages now show one card.
-  56 remain: 7 record the same statement at two sittings inside one compilation, which the corpus already dispositioned as keep-both at `f3a918092`; 1 is a sourced card against an unsourced twin; and 48 pair an imported `exercise` against a `problem` with the same statement.
-  The 48 need one decision, which governs all of them: when an imported exercise and a hand-made problem carry the same statement and neither is on an exam, which kind survives.
-  The corpus documents no difference between the two kinds beyond both posing work to a reader.
+  The exercise/problem pairs are merged too, per the owner: the problem survives, because a problem is what they are.
+  57 of them by statement rather than by whole body -- a solution written onto one twin makes the bodies differ while the question asked stays the same.
+  Everything the exercise carried moved across, including three second solutions that argue the statement a different way.
+  Merging is now exhausted: 8 identical-body groups are left and every one records the same statement at two sittings inside one compilation, which `f3a918092` dispositioned as keep-both.
+  Title sharing is down from 375 groups over 836 pages to 315 over 739.
+  For the rest, a search row said `Page` for both a wiki page and a guide section, so `Sylow Theorems` the wiki page and `Sylow Theory` the guide page were told apart only by the grey path.
+  The row now names the surface -- Problem, Card, Wiki, Guide -- in the badge.
+  What is left is not merging: 315 groups hold different mathematics under one title, and separating those is retitling, one judgement per group, which belongs to the mathematics program under [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2).
 
 - [x] Order and page the problem browser.
   `problems.html` sorts 4921 problems by raw title string, so the page opens with the formula-titled problems.
