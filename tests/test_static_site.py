@@ -177,9 +177,10 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
 def test_the_not_found_page_resolves_its_links_from_the_site_root(tmp_path: Path) -> None:
     """404.html is served for a request at any depth, so `../` cannot be used.
 
-    It installs a `<base>` naming the site root instead, and that has to happen
-    before the first URL in the head, or the stylesheet is fetched against the
-    address the reader asked for and the page arrives unstyled.
+    It installs a `<base>` naming the site root instead. The stylesheet and the
+    script cannot be written as tags at all: Chrome's preload scanner fetches
+    them against the address the reader asked for before any script runs, and
+    the page arrives unstyled. The same script that sets the base creates them.
     """
     work = fixture_repo(tmp_path)
 
@@ -188,7 +189,10 @@ def test_the_not_found_page_resolves_its_links_from_the_site_root(tmp_path: Path
 
     page = (work / "build" / "quarto" / "_site" / "404.html").read_text()
     head = page.split("</head>", 1)[0]
-    assert head.index('createElement("base")') < head.index('href="styles.css"')
+    assert 'href="styles.css"' not in head
+    assert 'src="app.js"' not in head
+    assert head.index('createElement("base")') < head.index('root + "styles.css"')
+    assert 'root + "app.js"' in head
 
     links = LinkCollector()
     links.feed(page)

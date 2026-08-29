@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-5612 problem and exercise cards have no solution section and no incoming
+5593 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1696
-- Problems: 3916
-- Total: 5612
+- Exercises: 1692
+- Problems: 3901
+- Total: 5593
 
-## Exercises (1696)
+## Exercises (1692)
 
 - [ ] E-AMD-LDJWILVY — "If $H\le N_G(K)$ then $HK$ is a subgroup"
 - [ ] E-AMD-LJNBDMIP — "A permutation is odd iff it has an odd number of even cycles"
@@ -321,7 +321,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-2.2-32 — "Mayer–Vietoris gives suspension isomorphism $\tilde{H}_n(SX) \approx \tilde{H}_{n-1}(X)$"
 - [ ] E-HAT-2.2-33 — "Nerve-type vanishing: $\tilde{H}_i(X) = 0$ for $i \geq n-1$ when intersections are acyclic"
 - [ ] E-HAT-2.2-36 — "Künneth formula $H_i(X \times S^n) \approx H_i(X) \oplus H_{i-n}(X)$"
-- [ ] E-HAT-2.2-37 — "Elementary derivation of Mayer–Vietoris sequence in simplicial homology"
 - [ ] E-HAT-2.2-38 — "Algebraic lemma: diagram with two exact rows and isomorphisms every third vertical map yields long exact sequence"
 - [ ] E-HAT-2.2-4 — "Surjective map $S^n \to S^n$ of degree zero"
 - [ ] E-HAT-2.2-40 — "Universal coefficient short exact sequence for homology with $\mathbb{Z}_n$ coefficients"
@@ -773,7 +772,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-42-5 — "$F^\infty$ has no zero divisors"
 - [ ] E-HK-42-6 — "Polynomials of distinct degrees are independent"
 - [ ] E-HK-42-7 — "Powers of a linear polynomial form a basis of $F[x]$"
-- [ ] E-HK-42-8 — "Substitution by $h$ is injective, surjective only for $\deg h = 1$"
 - [ ] E-HK-42-9 — "Formal integration and differentiation operators on $F[x]$"
 - [ ] E-HK-43-1 — "Lagrange interpolation through four points"
 - [ ] E-HK-43-2 — "Interpolation by quadratics at four points has one compatibility condition"
@@ -920,7 +918,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-71-8 — "Commutants of operators with cyclic vectors"
 - [ ] E-HK-72-1 — "A cyclic subspace with no disjoint cyclic subspace"
 - [ ] E-HK-72-10 — "Minimal polynomials of a one-parameter Jordan family in three cases"
-- [ ] E-HK-72-11 — "Characteristic plus minimal polynomial determine $3 \times 3$ similarity, not $4 \times 4$"
 - [ ] E-HK-72-12 — "Similarity over $\CC$ implies similarity over the subfield"
 - [ ] E-HK-72-13 — "Real spectrum forces real similarity"
 - [ ] E-HK-72-14 — "Separating vectors for the polynomial algebra of an operator"
@@ -1354,7 +1351,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SF828 — "Coverings of second-countable regular spaces"
 - [ ] E-SKM03 — "Positive eigenvalues for nonnegative matrices"
 - [ ] E-SMI-8000E-AB1 — "Finitely generated ends of a short exact sequence of abelian groups"
-- [ ] E-SMI-8000E-AB2 — "A short exact sequence ending in free abelian splits"
 - [ ] E-SMI-8000E-AB6 — "$(\QQ,+)$ is not free abelian"
 - [ ] E-SMI-8000E-CY1 — "Conjugates of cycles in $S_n$"
 - [ ] E-SMI-8000E-CY10 — "Solvability via the derived series"
@@ -1714,7 +1710,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3916)
+## Problems (3901)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-35I3B — "The series of iterates $\sum f^n$ of a non-rotation $f$ analytic on $\mathbb{D}$ with $f(0)=0$ converges locally uniformly"
@@ -2163,7 +2159,6 @@ commit, and writing the solution removes the line.
 - [ ] P-8XT17 — "The Schwarz lemma with a zero at an arbitrary point of the disk"
 - [ ] P-8XT18 — "Entire functions with polynomially bounded real part are polynomials"
 - [ ] P-8XT19 — "The two-circles bound for subharmonic functions"
-- [ ] P-8XT20 — "3. Define $f , g \in L ^ { 2 } ( \mathbb { R } )f * g\mathbb { R }$"
 - [ ] P-8XT21 — "Entire functions with polynomially bounded maximum modulus are polynomials"
 - [ ] P-8XT22 — "If f^2 is holomorphic then f is holomorphic"
 - [ ] P-8XT23 — "Schwarz lemma bound for holomorphic function on unit disc"
@@ -2215,7 +2210,6 @@ commit, and writing the solution removes the line.
 - [ ] P-8XT69 — "A power series is injective if $\sum_{n\ge 2}n|a_n|\le|a_1|$"
 - [ ] P-8XT70 — "If $f$ and $f^2$ are harmonic then $f$ or $\overline{f}$ is holomorphic"
 - [ ] P-8XT71 — "A family of holomorphic functions with uniformly bounded $L^2$ disk integrals is locally bounded"
-- [ ] P-8XT72 — "Monotone pointwise convergence of continuous functions on $[0,1]$ to a continuous limit is uniform"
 - [ ] P-8XT73 — "Differentiability of the Laplace transform of an $L^1(0,\infty)$ function"
 - [ ] P-8XT74 — "An integrable function with vanishing integrals on every interval is zero a.e."
 - [ ] P-8XT75 — "If $f>0$ a.e. and $\int_{E_k}f\to 0$ then $m(E_k)\to 0$"
@@ -2248,7 +2242,6 @@ commit, and writing the solution removes the line.
 - [ ] P-A33VH — "Setwise distance of compact sets is attained, and vanishes only on a nonempty intersection"
 - [ ] P-A3USX — "Possible homology groups of a torus with a $2$-cell attached"
 - [ ] P-A3ZPA — "Presentation of $\pi_1(\Sigma_2)$, a surjection onto $F_2$, and no covering $\Sigma_2\to S^1\times S^1$"
-- [ ] P-A46P2 — "A power series convergent at $z_0\neq 0$ converges absolutely for $|z|<|z_0|$ and uniformly on $|z|\le r<|z_0|$"
 - [ ] P-A4HRU — "Image $pA$ and kernel $A[p]$ of multiplication by $p$"
 - [ ] P-A4V62 — "Whether algebraic, normal, and separable remain so over $E$"
 - [ ] P-A5CFD — "Closed graphs and continuous maps between topological spaces"
@@ -2272,7 +2265,6 @@ commit, and writing the solution removes the line.
 - [ ] P-ALGF06F — "Structure and module-theoretic properties of Z[X]/(2^X + 1)"
 - [ ] P-ALGF06G — "Units, irreducibility, primality, and factorization in Z[sqrt(10)]"
 - [ ] P-ALGF06H — "Splitting fields and Galois groups of polynomials over Q"
-- [ ] P-ALGF07A — "Sylow subgroups of a group of order 240 and elements of order 15"
 - [ ] P-ALGF07C — "Ring homomorphism from C[x] onto C and non-surjective examples"
 - [ ] P-ALGF07D — "Finitely generated modules over Z and C[x]; scalars and module structure"
 - [ ] P-ALGF07E — "Conditions for f(x^p) to be a p-th power in characteristic p"
@@ -2404,7 +2396,6 @@ commit, and writing the solution removes the line.
 - [ ] P-ALGS05H — "A finite extension with finitely many intermediate fields is simple"
 - [ ] P-ALGS05I — "Galois group of x^3 + 3x^2 + 2 over Q and over F_5"
 - [ ] P-ALGS05J — "Classification of all rings with identity having nine elements"
-- [ ] P-ALGS05K — "In a ring where every element satisfies x^n = x, every prime ideal is maximal"
 - [ ] P-ALGS05M — "Infinitely many maximal right ideals in n × n matrices over Q"
 - [ ] P-ALGS06A — "Left and right eigenvectors of a matrix for distinct eigenvalues"
 - [ ] P-ALGS06B — "Existence and uniqueness of polar decomposition"
@@ -2956,7 +2947,6 @@ commit, and writing the solution removes the line.
 - [ ] P-BIFDZ — "Non-isomorphic groups can have isomorphic automorphism groups"
 - [ ] P-BJDIE — "Order of $\GL_n(\FF_q)$"
 - [ ] P-BL7XW — "Groups of order $p^3$"
-- [ ] P-BMUR2 — "Hungerford 4.4.1"
 - [ ] P-BNSGA — "$\pi_1$ and the universal cover of the unit sphere union a diameter"
 - [ ] P-BNURB — "Homology of the Klein bottle via Mayer–Vietoris"
 - [ ] P-BOH76 — "Groups of order $p^2$ and of order $pq$"
@@ -3306,7 +3296,6 @@ commit, and writing the solution removes the line.
 - [ ] P-EMAG7 — "Classify groups of order 15 and 30"
 - [ ] P-EMAG9 — "Unique subgroup per divisor implies cyclic; finite subgroups of F^* are cyclic"
 - [ ] P-EMAL1 — "Matrix is conjugate to its transpose"
-- [ ] P-EMAL2 — "Conjugacy classes of matrices with prescribed minimal polynomial"
 - [ ] P-EMAL3 — "Double dual evaluation map"
 - [ ] P-EMAR1 — "Power series ring is Euclidean domain"
 - [ ] P-EMAR3 — "Maximal ideals, PID prime ideals, and quotient fields"
@@ -3347,14 +3336,12 @@ commit, and writing the solution removes the line.
 - [ ] P-F03C1 — "Continuity of $1/x$ at $x=1$"
 - [ ] P-F03D3 — "$x^2\sin(1/x)$ is differentiable everywhere but $f'$ is discontinuous at $0$"
 - [ ] P-F03EV — "Eigenvectors for distinct eigenvalues are linearly independent"
-- [ ] P-F03P2 — "A matrix $P$ diagonalizing $\begin{pmatrix} 1 & 2 \\ 1/2 & 1 \end{pmatrix}$"
 - [ ] P-F03VW — "Nullspace of $M$ is the orthogonal complement of the column space of $M^t$"
 - [ ] P-F04C7 — "$\varepsilon$-$\delta$ continuity, and the sum of functions continuous at $3$"
 - [ ] P-F04I9 — "$f:\mathbb{R}\to\mathbb{R}^2$ and $g:\mathbb{R}^2\to\mathbb{R}$ cannot compose to a diffeomorphism"
 - [ ] P-F04L8 — "Line integral of $y^2\,dx+(2x-3y)\,dy$ on $x^2+y^2=9$"
 - [ ] P-F04N4 — "No $n$ makes both $(21n-3)/4$ and $(15n+2)/4$ integers"
 - [ ] P-F04T5 — "An injective linear map sends independent sets to independent sets"
-- [ ] P-F05AB — "Diagonalize $\begin{pmatrix} 8 & 9 \\ -6 & -7 \end{pmatrix}$ as $ABA^{-1}$"
 - [ ] P-F05BN — "Binomial theorem and $(x+y)^p \equiv x^p+y^p \pmod{p}$"
 - [ ] P-F05DM — "De Morgan: complement of an intersection is the union of complements"
 - [ ] P-F06DN — "Inductive formula for the derivatives of $xe^{2x}$"
@@ -3468,7 +3455,6 @@ commit, and writing the solution removes the line.
 - [ ] P-GZX6P — "Galois group of an irreducible of degree $n$ embeds in $S_n$; examples with $G=S_n$, and the cubic case"
 - [ ] P-H3PWT — "Degree of a compositum when the factors have coprime degrees, and a counterexample without coprimeness"
 - [ ] P-H442E — "Gaussian integrals $\int e^{-x^2}\,dx$ and $\int e^{-(x-\mu)^2/(2\sigma^2)}\,dx$"
-- [ ] P-HAEQ7 — "Cayley-Hamilton theorem"
 - [ ] P-HAGJY — "$\End_R(A)$ is a ring"
 - [ ] P-HAI2R — "Galois group and intermediate fields of $x^3-7$ over $\QQ$, and Galois groups over $\RR$ and $\FF_{13}$"
 - [ ] P-HBECH — "Compact connected surfaces of Euler characteristic $-3$, possibly with boundary or nonorientable"
@@ -3507,7 +3493,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HCAO4 — "Two unique factorization domains which are not principal ideal domains"
 - [ ] P-HCAO40 — "A principal ideal domain has dimension zero or one"
 - [ ] P-HCAO41 — "A Noetherian valuation ring which is not a field is a discrete valuation ring"
-- [ ] P-HCAO42 — "Product equals intersection for pairwise comaximal ideals"
 - [ ] P-HCAO43 — "Localization of annihilators"
 - [ ] P-HCAO44 — "Residue field before and after localization"
 - [ ] P-HCAO45 — "A finite module equal to every maximal-ideal multiple is zero"
@@ -3627,7 +3612,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HGRO40 — "A group generated by two involutions is dihedral"
 - [ ] P-HGRO41 — "State and prove the core theorem"
 - [ ] P-HGRO42 — "Six-bead necklaces with two colors"
-- [ ] P-HGRO43 — "Multiple and sharp transitivity"
 - [ ] P-HGRO44 — "The Frobenius kernel of a sharply two-transitive action"
 - [ ] P-HGRO45 — "Highly transitive finite permutation groups"
 - [ ] P-HGRO5 — "A nonabelian group of order 27"
@@ -3963,7 +3947,6 @@ commit, and writing the solution removes the line.
 - [ ] P-K2CGJ — "Conjugacy class size equals the index of the centralizer; restriction to a subgroup of index $2$"
 - [ ] P-K2U6D — "A group of order $231$ has a normal Sylow $7$-subgroup and a central Sylow $11$-subgroup"
 - [ ] P-K4M43 — "Splitting field of $x^4-4x^2-3$ over $\mathbb{Q}$: degree, Galois group, and subfields"
-- [ ] P-K4WSJ — "Characterizations of Möbius transformations preserving $\RR\cup\{\infty\}$"
 - [ ] P-K5L2R — "Splitting field of $x^3-5$ over $\QQ$: degree, Galois group, subfields, and which are Galois over $\QQ$"
 - [ ] P-K6HWV — "Homology of $(S^1\times S^1)\vee S^1$"
 - [ ] P-K7XDT — "A conformal map from $\{\Re z>0,\ |z-i|>1\}$ onto $\HH$"
@@ -4307,7 +4290,6 @@ commit, and writing the solution removes the line.
 - [ ] P-PCOHF — "Every closed convex subset of a Hilbert space has a unique element of minimal norm"
 - [ ] P-PCSZ2 — "The semidirect product $J\rtimes_\varphi L$ is direct iff $\varphi$ is trivial"
 - [ ] P-PDAPQ — "Examples of maximal ideals, prime non-maximal ideals, torsion-free modules, UFDs, and non-Noetherian rings"
-- [ ] P-PDJ5S — "Transitive subgroups of $S_4$ are $S_4$, $A_4$, $D_4$, $\ZZ_2^2$, and $\ZZ_4$"
 - [ ] P-PDRT9 — "Intermediate fields of a Galois extension with group $\ZZ_{42}$"
 - [ ] P-PE7IZ — "$\ZZ$ is initial among unital rings, so every abelian group has a unique $\ZZ$-module structure"
 - [ ] P-PF5MC — "Galois group of $x^5-2$"
@@ -4771,7 +4753,6 @@ commit, and writing the solution removes the line.
 - [ ] P-T09B2 — "A covering space of a Hausdorff space is Hausdorff"
 - [ ] P-T09B3 — "A finitely presented group has finitely many index-3 subgroups"
 - [ ] P-T09B4 — "Homology of a torus attached to a cylinder along a circle"
-- [ ] P-T10A1 — "The set $\{f\le g\}$ is closed, and $\min\{f,g\}$ is continuous"
 - [ ] P-T10A2 — "A point and a disjoint compact set in a Hausdorff space can be separated by opens"
 - [ ] P-T10A3 — "A product of locally path-connected spaces is locally path-connected"
 - [ ] P-T10A4 — "Identifying one point from each of two disjoint connected spaces yields a connected quotient"
