@@ -106,7 +106,9 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   for empty dependencies/backlinks.
   `status: draft` exposed raw.
 
-  - Validity: FIXED. `_relation_group` in `emit.py:898` drops empty panels (returns empty string). Zero card pages contain "None." in build output.
+  - Validity: FIXED. `_relation_group` in `emit.py:898` drops empty panels (returns empty string).
+    Zero card pages contain "None."
+    in build output.
 
 ## Responsive, theme, accessibility
 
@@ -140,7 +142,8 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 - [x] 23. URLs carry spaces and mixed case.
   `992 Extra_Questions.html`, `2016 Fall.html`.
 
-  - Validity: FIXED. Emit tools slugify filenames. Built output has `extra-questions.html`, no spaces or mixed case in wiki routes.
+  - Validity: FIXED. Emit tools slugify filenames.
+    Built output has `extra-questions.html`, no spaces or mixed case in wiki routes.
 
 ## Search
 
