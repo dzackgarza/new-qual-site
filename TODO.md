@@ -1138,15 +1138,19 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 Owner: [issue #1](https://github.com/dzackgarza/new-qual-site/issues/1)
 
-- [ ] Close satisfied issues #5 through #11, #23 through #29, and #41.
+- [x] Close satisfied issues #5 through #11, #23 through #29, and #41.
 
-- [ ] Close issue #30 after current deployed proof.
+- [x] Close issue #30 after current deployed proof.
 
-- [ ] Close issue #6 after all publisher and branch obligations hold.
+- [x] Close issue #6 after all publisher and branch obligations hold.
+  Section 4 holds them, re-proved against the reorganized wiki.
 
 - [ ] Update issue #1 with every remaining open requirement.
+  Every issue the repository has ever opened is closed except [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), issue #1 among them.
+  Two things still need the owner, and neither has an open issue to hold it: the `retain` or `archive` decision for each of the five source repositories, and what to do about issue #11, which is closed while its own body says M4, M5 and M6 remain open.
 
 - [ ] Keep issue #2 open until its full mathematics program is complete.
+  It is open, and section 7 is its work.
 
 ## 9. Repair site information architecture
 
