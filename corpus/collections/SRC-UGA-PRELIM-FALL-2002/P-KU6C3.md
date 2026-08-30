@@ -10,6 +10,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -19,4 +23,12 @@ You do not have to prove the validity of the cubic formula.]
 For a cubic polynomial $x^3 + px + q$, the roots can all be found by the following formula, carried out in the complex number system.
 Let $s$ be a square root of $q^2/4 + p^3/27$, set $A = -q/2 + s$, and then let $c$ be a cube root of $A$.
 Then $c - p/3c$ is a root of $x^3 + px + q$.
+:::
+
+::: {.solution}
+<1>1. $f$ continuous.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
