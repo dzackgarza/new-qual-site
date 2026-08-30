@@ -10,6 +10,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -31,4 +35,45 @@ Imbed $U$ in $X \times \mathbb{R}$ by setting $f(x) = x \times \phi(x)$.]
 
 (d) Show that if $A$ is a $G_\delta$ set in a topologically complete space, then $A$ is topologically complete.
 [Hint: Let $A$ be the intersection of the open sets $U_n$, for $n \in \mathbb{Z}_+$. Consider the diagonal imbedding $f(a) = (a, a, \ldots)$ of $A$ into $\prod U_n$.] Conclude that the irrationals are topologically complete.
+:::
+
+::: solution
+**Goal:** Show topological completeness is stable under the operations (a)–(d).
+
+<1> Part (a): closed subsets.
+    Let $C\subseteq X$ be closed and $(X,d)$ complete.
+    Every $d$-Cauchy sequence in $C$ is $d$-Cauchy in $X$, hence converges to a limit in $X$.
+    Closedness implies the limit lies in $C$, so $(C,d|_C)$ is complete.
+
+<1> Part (b): countable products.
+    For complete metrics $d_n$ on $X_n$, define
+    $$
+    D((x_n),(y_n))=\sum_{n=1}^\infty 2^{-n}\min\{1,d_n(x_n,y_n)\}.
+    $$
+    This metric induces the product topology on $\prod X_n$ and is complete.
+
+<1> Part (c): open subsets.
+    Let $(X,d)$ be complete and $U\subset X$ be open.
+    Set $\phi(x)=1/d(x,X\setminus U)$ and
+    $$
+    \rho(x,y)=d(x,y)+|\phi(x)-\phi(y)|\quad(x,y\in U).
+    $$
+    If $(x_k)$ is $\rho$-Cauchy, then it is $d$-Cauchy in $X$, so $x_k\to x\in X$.
+    If $x\notin U$, then $d(x,X\setminus U)=0$, so $\phi(x_k)\to\infty$, contradicting Cauchy-ness of $\phi(x_k)$.
+    Hence $x\in U$ and the limit defines completeness of $(U,\rho)$.
+
+<1> Part (d): $G_\delta$ subsets.
+    Write $A=\bigcap_{n\ge1}U_n$ with each $U_n$ open.
+    By (c), each $U_n$ is topologically complete.
+    By (b), $Y=\prod_{n\ge1}U_n$ is topologically complete.
+    The diagonal map $f:A\to Y$, $f(a)=(a,a,\dots)$ is a homeomorphism onto
+    $$
+    f(A)=\bigcap_{m,n}\{(x_k)\in Y: x_m=x_n\},
+    $$
+    a closed subset of $Y$.
+    A closed subspace of a complete space is complete, so $A$ is topologically complete.
+
+<1> Therefore the irrationals, as a $G_\delta$ in $\mathbb R$, are topologically complete.
+
+Authored by **Codex 5.3 Spark Extra High**.
 :::
