@@ -60,3 +60,11 @@ What is a Toeplitz operator? Define the Hardy space $H^2(\mathbb{T})$, the Toepl
 <1>5. Conclusion:
     A Toeplitz operator is $T_\varphi = P M_\varphi|_{H^2(\mathbb{T})}$, represented by a semi-infinite constant-diagonal matrix $(a_{i-j})_{i,j \ge 0}$. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

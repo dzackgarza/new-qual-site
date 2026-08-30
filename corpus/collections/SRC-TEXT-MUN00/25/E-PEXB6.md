@@ -10,6 +10,10 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -20,4 +24,12 @@ Let $T$ denote the union of all line segments joining the point $p = 0 \times 1$
 (a) Show that $T$ is path connected, but is locally connected only at the point $p$.
 
 (b) Find a subset of $\mathbb{R}^2$ that is path connected but is locally connected at none of its points.
+:::
+
+::: {.solution}
+<1>1. $X$ Hausdorff.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
