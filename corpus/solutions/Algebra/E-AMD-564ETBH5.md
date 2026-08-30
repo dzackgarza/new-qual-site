@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-564ETBH5
-kind: solution
+kind: exercise
 title: $a+\nilrad{R}$ nilpotent implies $a\in\nilrad{R}$
 classification:
   areas:
@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: {.exercise}
+Let $R$ be a commutative ring. Show that if $a + \nilrad{R}$ is nilpotent in $R/\nilrad{R}$, then $a \in \nilrad{R}$.
+:::
 
 ::: {.solution}
 \envlist

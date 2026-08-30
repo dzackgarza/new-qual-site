@@ -832,13 +832,6 @@ sections:
       - query:
           kind: solution
           topics:
-            - Integral Domains
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: solution
-          topics:
             - Maximal Ideals
           limit: 500
           review:

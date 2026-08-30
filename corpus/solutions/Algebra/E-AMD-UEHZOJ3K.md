@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-UEHZOJ3K
-kind: solution
+kind: exercise
 title: Nilradical is the intersection of all prime ideals
 classification:
   areas:
@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: {.exercise}
+Show that the nilradical of a commutative ring is the intersection of all of its prime ideals.
+:::
 
 ::: {.solution}
 \envlist

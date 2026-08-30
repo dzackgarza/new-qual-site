@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-E3N4BHJH
-kind: solution
+kind: exercise
 title: A maximal ideal is prime; $(0)$ in $\ZZ$ is prime but not maximal
 classification:
   areas:
@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: {.exercise}
+Show that every maximal ideal is prime, and give an example of a prime ideal that is not maximal.
+:::
 
 ::: {.solution}
 - Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.

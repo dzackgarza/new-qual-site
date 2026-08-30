@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4SSSVQJY
-kind: solution
+kind: exercise
 title: Every element of a finite ring is a unit or a zero-divisor
 classification:
   areas:
@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: {.exercise}
+Show that every element of a finite ring is either a unit or a zero divisor.
+:::
 
 ::: {.solution}
 

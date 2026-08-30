@@ -784,7 +784,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   Done in `e5b29bd99`. 141 same-title theory-card groups over 364 cards were read: 56 state one result in two notations and now carry a `variant-of` relation to the card the wiki chapters use; 85 state different mathematics under a shared title and are left alone.
   Comparing titles with their mathematics stripped out is what makes this audit produce false pairs: it groups $e^{2\pi i/6}$ with $e^{2\pi i/3}$, and $\Phi_p$ with $\Phi_{2p}$.
 
-- [ ] Resolve card-kind and source-structure defects.
+- [x] Resolve card-kind and source-structure defects.
+  Five cards declared `kind: solution` but proved no exercise: they carried a proof with no statement and no `solves` relation anywhere in the corpus.
+  Each now states the result it proves and is an `exercise`.
+  The `solution`/`Integral Domains` query in `publications/algebra-guide.yaml` selected exactly one of them, so it is gone; the section's `exercise`/`Integral Domains` query reaches that card with its proof attached.
+  The eleven remaining id-prefix disagreements are not defects: `FR-*` cards hold `::: {.proof}` bodies and `P-X1WOB` holds `::: exercise`, so the prefix is not a kind convention.
 
 - [x] Use the Stein--Shakarchi normal-family convention: every sequence has a subsequence that converges locally uniformly to a holomorphic function.
   `D-QTJ7T` is the canonical definition.
