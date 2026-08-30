@@ -43,16 +43,14 @@ Proof: homology of $T^2$ and disjoint union $H_k(T^2 \sqcup T^2) \cong H_k(T^2) 
 \]
 Proof: Mayer–Vietoris theorem for open regular neighborhoods in manifolds.
 
-<1>2. Compute $H_0(X)$ and path components:
-<2>1. $\widetilde{H}_0(S^3) = 0$, $\widetilde{H}_0(N) = 0$ (since $N$ is path-connected), and $\widetilde{H}_0(A) \cong \mathbb{Z}$ (since $A = T_0^2 \sqcup T_1^2$ has two path components).
+<1>2. Compute $H_0(X)$ and path components: <2>1. $\widetilde{H}_0(S^3) = 0$, $\widetilde{H}_0(N) = 0$ (since $N$ is path-connected), and $\widetilde{H}_0(A) \cong \mathbb{Z}$ (since $A = T_0^2 \sqcup T_1^2$ has two path components).
 Proof: path connectivity of $S^3, N$ and two components of $A$.
 <2>2. The tail of the Mayer–Vietoris sequence gives $0 \to \widetilde{H}_0(A) \xrightarrow{i_*} \widetilde{H}_0(X) \to 0$.
 Proof: $\widetilde{H}_1(S^3) = 0$ and $\widetilde{H}_0(N) = 0$.
 <2>3. Thus $\widetilde{H}_0(X) \cong \widetilde{H}_0(A) \cong \mathbb{Z}$, so $H_0(X) \cong \mathbb{Z}^2$ ($X$ has two path components).
 Proof: $H_0(X) \cong \widetilde{H}_0(X) \oplus \mathbb{Z}$.
 
-<1>3. Compute $H_2(X)$ and $H_k(X)$ for $k \ge 3$:
-<2>1. $X$ is a compact 3-manifold with non-empty boundary $\partial X = T^2 \sqcup T^2$, so $H_k(X) = 0$ for all $k \ge 3$.
+<1>3. Compute $H_2(X)$ and $H_k(X)$ for $k \ge 3$: <2>1. $X$ is a compact 3-manifold with non-empty boundary $\partial X = T^2 \sqcup T^2$, so $H_k(X) = 0$ for all $k \ge 3$.
 Proof: homology of non-closed 3-manifolds vanishes in dimension $\ge 3$.
 <2>2. The sequence at degree 3 to 2 is:
 \[
@@ -66,15 +64,13 @@ Proof: quotient of $\mathbb{Z}^2$ by a rank-1 primitive submodule.
 <2>5. By exactness, $H_2(X) \oplus \mathbb{Z} \cong \operatorname{coker}(\partial_3) \cong \mathbb{Z}$, which implies $H_2(X) \cong 0$.
 Proof: <2>2 and <2>4.
 
-<1>4. Compute $H_1(X)$:
-<2>1. Since $\widetilde{H}_2(S^3) = 0$ and $\widetilde{H}_1(S^3) = 0$, the sequence at degree 1 is an isomorphism:
+<1>4. Compute $H_1(X)$: <2>1. Since $\widetilde{H}_2(S^3) = 0$ and $\widetilde{H}_1(S^3) = 0$, the sequence at degree 1 is an isomorphism:
 \[
 0 \to H_1(A) \xrightarrow{(i_{X*}, i_{N*})} H_1(X) \oplus H_1(N) \to 0.
 \]
 Proof: Mayer–Vietoris exactness.
 <2>2. Thus $H_1(X) \oplus H_1(N) \cong H_1(A) \cong \mathbb{Z}^4$.
-Proof: <2>1 and <1>1.
-<2>3. Since $H_1(N) \cong \mathbb{Z}^2$ is a free abelian group of rank 2, $H_1(X) \cong \mathbb{Z}^4 / \mathbb{Z}^2 \cong \mathbb{Z}^2$.
+Proof: <2>1 and <1>1. <2>3. Since $H_1(N) \cong \mathbb{Z}^2$ is a free abelian group of rank 2, $H_1(X) \cong \mathbb{Z}^4 / \mathbb{Z}^2 \cong \mathbb{Z}^2$.
 Proof: classification of finitely generated free abelian groups.
 
 <1>5. Conclusion:
@@ -85,6 +81,5 @@ H_k(X; \mathbb{Z}) \cong \begin{cases}
 0 & k \ge 2.
 \end{cases}
 \]
-Q.E.D.
-Proof: <1>2, <1>3, and <1>4.
+Q.E.D. Proof: <1>2, <1>3, and <1>4.
 :::

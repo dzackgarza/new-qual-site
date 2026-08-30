@@ -22,9 +22,49 @@ Show that there is $C$ such that $\|B(x,y)\| \leq C\|x\|\|y\|$.
 :::
 
 ::: {.solution}
-<1>1. $f$ measurable.
-Proof: check.
+<1>1. Define a family of linear operators from $Y$ to $Z$: <2>1. For each $x \in X$ with $\|x\| \le 1$, define $T_x: Y \to Z$ by $T_x(y) = B(x, y)$.
+Proof: definition.
+<2>2. By hypothesis, for each fixed $x \in X$, $B(x, \cdot) \in L(Y, Z)$, so $T_x$ is a bounded linear operator from the Banach space $Y$ to the Banach space $Z$.
+Proof: hypothesis.
+<2>3. Consider the family of operators $\mathcal{F} = \{T_x : x \in X, \|x\| \le 1\} \subset L(Y, Z)$.
+Proof: definition of $\mathcal{F}$.
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>2. Show that the family $\mathcal{F}$ is pointwise bounded on $Y$: <2>1. Fix an arbitrary $y \in Y$.
+Proof: setup.
+<2>2. Define the linear operator $S_y: X \to Z$ by $S_y(x) = B(x, y)$.
+Proof: definition.
+<2>3. By hypothesis, $B(\cdot, y) \in L(X, Z)$, so $S_y$ is a bounded linear operator with operator norm $\|S_y\| < \infty$.
+Proof: hypothesis.
+<2>4. For any $x \in X$ with $\|x\| \le 1$:
+\[
+\|T_x(y)\| = \|B(x, y)\| = \|S_y(x)\| \le \|S_y\| \|x\| \le \|S_y\|.
+\]
+Proof: definition of operator norm for $S_y$.
+<2>5. Taking the supremum over all $T_x \in \mathcal{F}$:
+\[
+\sup_{T_x \in \mathcal{F}} \|T_x(y)\| = \sup_{\|x\| \le 1} \|B(x, y)\| \le \|S_y\| < \infty.
+\]
+Proof: <2>4.
+
+<1>3. Apply the Uniform Boundedness Principle (Banach–Steinhaus Theorem): <2>1. $Y$ is a Banach space, $Z$ is a normed space, and $\mathcal{F} \subset L(Y, Z)$ is a pointwise bounded family of bounded linear operators.
+Proof: hypothesis and <1>2. <2>2. By the Uniform Boundedness Principle, $\mathcal{F}$ is uniformly bounded in operator norm:
+\[
+C \coloneqq \sup_{T_x \in \mathcal{F}} \|T_x\|_{L(Y, Z)} = \sup_{\|x\| \le 1} \|B(x, \cdot)\|_{L(Y, Z)} < \infty.
+\]
+Proof: Uniform Boundedness Principle.
+
+<1>4. Deduce the joint boundedness of $B$: <2>1. Let $x \in X$ and $y \in Y$ be arbitrary non-zero vectors (for $x = 0$ or $y = 0$, $\|B(x, y)\| = 0 \le C \|x\| \|y\|$ holds trivially).
+Proof: case distinction.
+<2>2. Set $u = \frac{x}{\|x\|}$, so $\|u\| = 1$.
+Proof: normalization.
+<2>3. By bilinearity of $B$:
+\[
+\|B(x, y)\| = \|x\| \|B(u, y)\| = \|x\| \|T_u(y)\| \le \|x\| \|T_u\|_{L(Y, Z)} \|y\|.
+\]
+Proof: bilinearity and definition of operator norm.
+<2>4. Since $\|u\| = 1$, $\|T_u\|_{L(Y, Z)} \le C$ by <1>3. Proof: <1>3. <2>5. Therefore $\|B(x, y)\| \le C \|x\| \|y\|$ for all $(x, y) \in X \times Y$.
+Proof: <2>3 and <2>4.
+
+<1>5. Conclusion: There exists a constant $C > 0$ such that $\|B(x, y)\| \le C \|x\| \|y\|$ for all $x \in X, y \in Y$.
+Q.E.D. Proof: <1>4.
 :::

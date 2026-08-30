@@ -39,8 +39,7 @@ Proof: $\mathbb{Q}^\infty$ is a countable subset of itself and is dense in itsel
 Proof: setup.
 <2>2. For each point $x \in \mathbb{Q}^\infty$, choose an open set $U_x \in \mathcal{U}$ containing $x$.
 Proof: $\mathcal{U}$ covers $\mathbb{Q}^\infty$.
-<2>3. The subcollection $\{U_x : x \in \mathbb{Q}^\infty\}$ covers $\mathbb{Q}^\infty$ and is countable since $\mathbb{Q}^\infty$ is countable by <1>1.
-Proof: image of a countable set under a choice function.
+<2>3. The subcollection $\{U_x : x \in \mathbb{Q}^\infty\}$ covers $\mathbb{Q}^\infty$ and is countable since $\mathbb{Q}^\infty$ is countable by <1>1. Proof: image of a countable set under a choice function.
 <2>4. Hence every open cover has a countable subcover.
 Proof: <2>3.
 
@@ -60,11 +59,9 @@ Proof: $|y^{(k)}_n| = 0 < \varepsilon_{k,n}$ for $n \neq k$ and $|y^{(k)}_k| = |
 <2>7. But $|y^{(k)}_k| = |q_k| > \delta_k$, so $y^{(k)} \notin W$.
 Proof: definition of $W$.
 <2>8. Thus $B_k \not\subseteq W$ for all $k \ge 1$, contradicting that $\{B_k\}$ is a neighborhood basis at $\mathbf{0}$.
-Proof: <2>6 and <2>7.
-<2>9. Hence $\mathbb{Q}^\infty$ is not first-countable, and therefore not second-countable.
+Proof: <2>6 and <2>7. <2>9. Hence $\mathbb{Q}^\infty$ is not first-countable, and therefore not second-countable.
 Proof: <2>8 and second-countability implies first-countability.
 
-<1>5. Conclusion:
-$\mathbb{Q}^\infty$ satisfies the Lindelöf and separability axioms, but does not satisfy the first-countability or second-countability axioms. Q.E.D.
-Proof: <1>2, <1>3, <1>4.
+<1>5. Conclusion: $\mathbb{Q}^\infty$ satisfies the Lindelöf and separability axioms, but does not satisfy the first-countability or second-countability axioms.
+Q.E.D. Proof: <1>2, <1>3, <1>4.
 :::

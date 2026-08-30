@@ -58,8 +58,7 @@ Proof: intersection of subsets in $G$.
 <1>6. Assume $[G : H] = 2$ and $x \in H$.
 Proof: hypothesis.
 
-<1>7. Relate the indices of centralizers:
-<2>1. By (a), $|x^G| = [G : Z_G(x)]$ and $|x^H| = [H : Z_H(x)]$.
+<1>7. Relate the indices of centralizers: <2>1. By (a), $|x^G| = [G : Z_G(x)]$ and $|x^H| = [H : Z_H(x)]$.
 Proof: (a) applied to $G$ and $H$.
 <2>2. By the tower law for subgroup indices:
 \[
@@ -77,24 +76,19 @@ Proof: $Z_H(x) = H \cap Z_G(x) \le Z_G(x) \le G$.
 \]
 Proof: <2>2 and <2>3.
 
-<1>8. Determine the possible values of $[Z_G(x) : Z_H(x)]$:
-<2>1. By the Second Isomorphism Theorem / product formula:
+<1>8. Determine the possible values of $[Z_G(x) : Z_H(x)]$: <2>1. By the Second Isomorphism Theorem / product formula:
 \[
 [Z_G(x) : Z_H(x)] = [Z_G(x) : H \cap Z_G(x)] = [H Z_G(x) : H].
 \]
-Proof: $H \cap Z_G(x) = Z_H(x)$ from (b).
-<2>2. Since $H \le H Z_G(x) \le G$ and $[G : H] = 2$, the index $[H Z_G(x) : H]$ divides $[G : H] = 2$.
+Proof: $H \cap Z_G(x) = Z_H(x)$ from (b). <2>2. Since $H \le H Z_G(x) \le G$ and $[G : H] = 2$, the index $[H Z_G(x) : H]$ divides $[G : H] = 2$.
 Proof: tower law $[G : H] = [G : H Z_G(x)][H Z_G(x) : H]$.
 <2>3. Thus $[Z_G(x) : Z_H(x)] \in \{1, 2\}$.
 Proof: the only divisors of 2 are 1 and 2.
 
-<1>9. Evaluate $|x^H|$ for both cases:
-<2>1. **Case 1:** If $[Z_G(x) : Z_H(x)] = 2$ (equivalently $Z_G(x) \not\subseteq H$), then $2 |x^H| = 2 |x^G| \implies |x^H| = |x^G|$.
-Proof: <1>7 and <1>8.
-<2>2. **Case 2:** If $[Z_G(x) : Z_H(x)] = 1$ (equivalently $Z_G(x) \subseteq H$), then $2 |x^H| = |x^G| \implies |x^H| = \frac{1}{2} |x^G|$.
+<1>9. Evaluate $|x^H|$ for both cases: <2>1. **Case 1:** If $[Z_G(x) : Z_H(x)] = 2$ (equivalently $Z_G(x) \not\subseteq H$), then $2 |x^H| = 2 |x^G| \implies |x^H| = |x^G|$.
+Proof: <1>7 and <1>8. <2>2. **Case 2:** If $[Z_G(x) : Z_H(x)] = 1$ (equivalently $Z_G(x) \subseteq H$), then $2 |x^H| = |x^G| \implies |x^H| = \frac{1}{2} |x^G|$.
 Proof: <1>7 and <1>8.
 
-<1>10. Conclusion:
-Either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$. Q.E.D.
-Proof: <1>4, <1>5, and <1>9.
+<1>10. Conclusion: Either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$.
+Q.E.D. Proof: <1>4, <1>5, and <1>9.
 :::

@@ -51,8 +51,7 @@ Proof: recall statement in the problem.
 \]
 Proof: <1>4 with $z = u_n$.
 
-<1>6. Take the limit as $n \to \infty$:
-<2>1. The vector $u - y \in H$ defines a continuous linear functional $\langle u - y, \cdot \rangle$ on $H$.
+<1>6. Take the limit as $n \to \infty$: <2>1. The vector $u - y \in H$ defines a continuous linear functional $\langle u - y, \cdot \rangle$ on $H$.
 Proof: Riesz representation / inner product properties.
 <2>2. Since $u_n \rightharpoonup u$ weakly, $u_n - y \rightharpoonup u - y$ weakly in $H$.
 Proof: weak convergence is preserved under translation.
@@ -78,8 +77,7 @@ Proof: Hilbert projection theorem applied to the closed convex set $K_n$ and $x 
 \]
 Proof: expanding the inner product $\langle -x_n, z - x_n \rangle = - \langle x_n, z \rangle + \|x_n\|^2 \le 0$.
 
-<1>11. The sequence of norms $\{\|x_n\|\}$ is monotonically non-decreasing:
-<2>1. For any $m \ge n$, $K_m \subseteq K_n$, so $x_m \in K_n$.
+<1>11. The sequence of norms $\{\|x_n\|\}$ is monotonically non-decreasing: <2>1. For any $m \ge n$, $K_m \subseteq K_n$, so $x_m \in K_n$.
 Proof: hypothesis that $\{K_n\}$ is a decreasing sequence.
 <2>2. Setting $z = x_m$ in <1>10 gives $\langle x_n, x_m \rangle \ge \|x_n\|^2$.
 Proof: <1>10 applied to $z = x_m \in K_n$.
@@ -95,19 +93,16 @@ Proof: Cauchy–Schwarz inequality in $H$.
 \]
 Proof: expanding the norm squared and using $\langle x_n, x_m \rangle \ge \|x_n\|^2$ from <2>2.
 
-<1>13. $\{x_n\}$ is a Cauchy sequence in $H$:
-<2>1. Since $\{\|x_n\|\}$ is non-decreasing and bounded above (by $\operatorname{dist}(0, \bigcap K_n) < \infty$), $L = \lim_{n\to\infty} \|x_n\| < \infty$ exists.
+<1>13. $\{x_n\}$ is a Cauchy sequence in $H$: <2>1. Since $\{\|x_n\|\}$ is non-decreasing and bounded above (by $\operatorname{dist}(0, \bigcap K_n) < \infty$), $L = \lim_{n\to\infty} \|x_n\| < \infty$ exists.
 Proof: monotone convergence theorem for bounded sequences in $\mathbb{R}$.
 <2>2. For $m \ge n$, $\|x_m - x_n\|^2 \le \|x_m\|^2 - \|x_n\|^2 \to L^2 - L^2 = 0$ as $n, m \to \infty$.
-Proof: <1>12 and <2>1.
-<2>3. Thus $\{x_n\}$ is a Cauchy sequence.
+Proof: <1>12 and <2>1. <2>3. Thus $\{x_n\}$ is a Cauchy sequence.
 Proof: <2>2.
 
 <1>14. Since $H$ is a complete Hilbert space, there exists $x^* \in H$ such that $\lim_{n\to\infty} x_n = x^*$ in norm.
 Proof: completeness of Hilbert spaces.
 
-<1>15. Show that $x^* \in \bigcap_{n=1}^\infty K_n$:
-<2>1. Fix any integer $k \ge 1$.
+<1>15. Show that $x^* \in \bigcap_{n=1}^\infty K_n$: <2>1. Fix any integer $k \ge 1$.
 Proof: arbitrary choice of index.
 <2>2. For all $n \ge k$, $x_n \in K_n \subseteq K_k$.
 Proof: nesting $K_{n+1} \subseteq K_n$.
@@ -116,7 +111,6 @@ Proof: closed sets contain all their limit points.
 <2>4. Since this holds for all $k \ge 1$, $x^* \in \bigcap_{k=1}^\infty K_k$.
 Proof: <2>3 for all $k$.
 
-<1>16. Conclusion:
-$\bigcap_{n=1}^\infty K_n \neq \emptyset$. Q.E.D.
-Proof: <1>8 (1) and <1>15 (2).
+<1>16. Conclusion: $\bigcap_{n=1}^\infty K_n \neq \emptyset$.
+Q.E.D. Proof: <1>8 (1) and <1>15 (2).
 :::

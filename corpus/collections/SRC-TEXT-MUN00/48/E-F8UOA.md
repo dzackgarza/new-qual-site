@@ -42,8 +42,7 @@ Proof: definition.
 <1>2. Each $U_n$ is open in $\mathbb{R}$.
 Proof: an arbitrary union of open sets in a topological space is open.
 
-<1>3. Prove that $C = \bigcap_{n=1}^\infty U_n$:
-<2>1. ($\subseteq$) Let $x_0 \in C$, so $f$ is continuous at $x_0$.
+<1>3. Prove that $C = \bigcap_{n=1}^\infty U_n$: <2>1. ($\subseteq$) Let $x_0 \in C$, so $f$ is continuous at $x_0$.
 Proof: definition of $C$.
 <2>2. For any $n \in \mathbb{Z}_+$, by continuity at $x_0$ there exists an open interval $U \ni x_0$ such that $f(U) \subseteq \left(f(x_0) - \frac{1}{3n}, f(x_0) + \frac{1}{3n}\right)$.
 Proof: $\varepsilon$-$\delta$ definition of continuity with $\varepsilon = \frac{1}{3n}$.
@@ -60,8 +59,7 @@ Proof: definition of $U_n$ as a union.
 <2>8. For all $y \in U$, $|f(y) - f(x_0)| \le \operatorname{diam}(f(U)) < \varepsilon$, so $f$ is continuous at $x_0$.
 Proof: definition of diameter.
 <2>9. Thus $x_0 \in C$.
-Proof: <2>8.
-<2>10. Hence $C = \bigcap_{n=1}^\infty U_n$.
+Proof: <2>8. <2>10. Hence $C = \bigcap_{n=1}^\infty U_n$.
 Proof: <2>4 and <2>9.
 
 <1>4. Since each $U_n$ is open, $C$ is a countable intersection of open sets, hence a $G_\delta$ set in $\mathbb{R}$.
@@ -75,14 +73,11 @@ Proof: hypothesis.
 <1>6. Assume for contradiction that $D$ is a $G_\delta$ set in $\mathbb{R}$, so $D = \bigcap_{n=1}^\infty W_n$ for open sets $W_n \subseteq \mathbb{R}$.
 Proof: proof by contradiction assumption.
 
-<1>7. Each $W_n$ is dense and open in $\mathbb{R}$:
-<2>1. $W_n$ is open by assumption.
-Proof: <1>6.
-<2>2. $D \subseteq W_n$ and $D$ is dense in $\mathbb{R}$, so $W_n$ is dense in $\mathbb{R}$.
+<1>7. Each $W_n$ is dense and open in $\mathbb{R}$: <2>1. $W_n$ is open by assumption.
+Proof: <1>6. <2>2. $D \subseteq W_n$ and $D$ is dense in $\mathbb{R}$, so $W_n$ is dense in $\mathbb{R}$.
 Proof: a superset of a dense set is dense.
 
-<1>8. For each $k \in \mathbb{Z}_+$, define $V_k = \mathbb{R} \setminus \{d_k\}$:
-<2>1. $\{d_k\}$ is a closed singleton in the Hausdorff space $\mathbb{R}$, so $V_k$ is open.
+<1>8. For each $k \in \mathbb{Z}_+$, define $V_k = \mathbb{R} \setminus \{d_k\}$: <2>1. $\{d_k\}$ is a closed singleton in the Hausdorff space $\mathbb{R}$, so $V_k$ is open.
 Proof: complement of a closed set.
 <2>2. The singleton $\{d_k\}$ has empty interior, so $V_k$ is dense in $\mathbb{R}$.
 Proof: $\mathbb{R}$ has no isolated points.
@@ -99,8 +94,7 @@ Proof: Baire Category Theorem for complete metric spaces.
 \]
 Proof: $\bigcap V_k = \mathbb{R} \setminus \bigcup \{d_k\} = \mathbb{R} \setminus D$.
 
-<1>12. The empty set $\emptyset$ is not dense, contradicting <1>10.
-Proof: $\emptyset \neq \mathbb{R}$.
+<1>12. The empty set $\emptyset$ is not dense, contradicting <1>10. Proof: $\emptyset \neq \mathbb{R}$.
 
 <1>13. Therefore $D$ is not a $G_\delta$ set in $\mathbb{R}$.
 Proof: <1>6 and <1>12.
@@ -108,13 +102,9 @@ Proof: <1>6 and <1>12.
 **Theorem.**
 
 <1>14. There is no function $f: \mathbb{R} \to \mathbb{R}$ whose set of continuity points is precisely $D$.
-<2>1. If such an $f$ existed, its continuity set $C = D$ would be a $G_\delta$ set by Part (a).
-Proof: <1>4.
-<2>2. By Part (b), $D$ is not a $G_\delta$ set, a contradiction.
-Proof: <1>13.
-<2>3. Thus no such function $f$ exists.
+<2>1. If such an $f$ existed, its continuity set $C = D$ would be a $G_\delta$ set by Part (a). Proof: <1>4. <2>2. By Part (b), $D$ is not a $G_\delta$ set, a contradiction.
+Proof: <1>13. <2>3. Thus no such function $f$ exists.
 Proof: <2>1 and <2>2.
 
-<1>15. Q.E.D.
-Proof: <1>4, <1>13, and <1>14.
+<1>15. Q.E.D. Proof: <1>4, <1>13, and <1>14.
 :::

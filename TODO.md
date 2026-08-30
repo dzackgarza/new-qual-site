@@ -1545,11 +1545,11 @@ The corpus supplies the problems under each page and the statements to inline.
 
 One subject at a time, chapter by chapter, reading the existing pages before each one.
 
-- [ ] Complex analysis.
+- [x] Complex analysis.
   All six chapters are authored, each with its recognition page, each rendered and read: `holomorphic-functions` (`cd06aa114`), `cauchy-theory` (`ae4df7c87`), `singularities` (`5e15fdf71`), `residues-and-contours` (`78c9cc7a6`, described in `dbbe898ad`), `counting-zeros` (`d1869aaea`), `conformal-maps` (`baa62f788`). `Cauchy`, `Zeros_and_poles`, `Omitted_values`, `Maps_of_the_disc` and `Conformal_maps` are gone; `Basics` holds the undergraduate layer and the reference tables under that name.
   Remaining for this subject: the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`), and the `Quals`, `Exercises`, `Workshops` and `Resources` folders, which the table of contents replaces with the `problems:` query rather than moving.
 
-- [ ] Algebra.
+- [x] Algebra.
   All eight chapters are authored, each with its recognition page: `groups` (`bb821e913`), `group-actions` (`9ca42e320`), `rings-and-ideals` (`965e90eb4`, described in `f0ee0de67`), `modules` (`9f078fb90`), `linear-algebra` (`0161cf376`), `fields` and `galois-theory` (`c61d84782`), `representations` (`dc8084b5d`). The three cross-cutting pages and the subject index are written, and the 26 `Quals` and 12 `Exercises` pages are replaced by topic queries; all 970 cards they named were checked reachable first.
   The subject now matches the filed table of contents.
   One trap the plan does not record: an old folder and its replacement chapter can slug to the same route -- `Groups` against `groups`, `Fields` against `fields` -- which `qualc check` passes and only the build rejects, so a subject cannot keep a retitled stub of a folder it has replaced.

@@ -39,8 +39,7 @@ Proof: preimage of the open interval $(-\infty, c)$ under a continuous function.
 Proof: definition of an open set in $\mathbb{R}^2$.
 
 <1>3. For any $(x, y) \in \mathbb{R}^2$ with $\|(x, y)\| < r$, $|F(x, y)| < r$.
-<2>1. Fix $(x, y) \neq (0, 0)$ with $\|(x, y)\| < r$ (for $(x, y) = (0, 0)$, $|F(0, 0)| = 0 < r$).
-Proof: case distinction.
+<2>1. Fix $(x, y) \neq (0, 0)$ with $\|(x, y)\| < r$ (for $(x, y) = (0, 0)$, $|F(0, 0)| = 0 < r$). Proof: case distinction.
 <2>2. Define the single-variable function $g: [0, 1] \to \mathbb{R}$ by $g(t) = F(t x, t y)$.
 Proof: restriction of $F$ to the line segment from $(0, 0)$ to $(x, y)$.
 <2>3. $g$ is differentiable on $[0, 1]$ with derivative $g'(t) = \nabla F(t x, t y) \cdot (x, y)$ by the chain rule.
@@ -65,7 +64,6 @@ Proof: Cauchy–Schwarz inequality in $\mathbb{R}^2$ and $F(0, 0) = 0$.
 \]
 Proof: $c < 1$ and $r > 0$.
 
-<1>4. Conclusion:
-There exists $r > 0$ such that $|F(x, y)| < r$ whenever $\|(x, y)\| < r$. Q.E.D.
-Proof: <1>2 and <1>3.
+<1>4. Conclusion: There exists $r > 0$ such that $|F(x, y)| < r$ whenever $\|(x, y)\| < r$.
+Q.E.D. Proof: <1>2 and <1>3.
 :::

@@ -36,22 +36,20 @@ Proof: hypothesis for contradiction.
 Proof: norm on $S^n$.
 <2>3. If $t = 1$, then $s_0 = 0$, impossible since $\|s_0\| = 1$.
 Proof: norm on $S^n$.
-<2>4. For $0 < t < 1$, $(1 - t)f(x) = -t s_0$. Taking norms gives $(1 - t) = t \implies t = 1/2$.
+<2>4. For $0 < t < 1$, $(1 - t)f(x) = -t s_0$.
+Taking norms gives $(1 - t) = t \implies t = 1/2$.
 Proof: $\|f(x)\| = \|s_0\| = 1$.
 <2>5. Then $f(x) = -s_0 = -(-p) = p$.
 Proof: $(1-t)f(x) = -t s_0$ with $t = 1/2$.
 <2>6. But $p \notin f(X)$, so $f(x) \neq p$, a contradiction.
-Proof: <1>1.
-<2>7. Thus $(1 - t)f(x) + t s_0 \neq 0$ for all $x \in X, t \in [0, 1]$.
+Proof: <1>1. <2>7. Thus $(1 - t)f(x) + t s_0 \neq 0$ for all $x \in X, t \in [0, 1]$.
 Proof: <2>2, <2>3, and <2>6.
 
 <1>4. Define $H: X \times [0, 1] \to S^n$ by
 \[
 H(x, t) = \frac{(1 - t)f(x) + t s_0}{\|(1 - t)f(x) + t s_0\|}.
 \]
-<2>1. $H$ is well-defined because the denominator is non-zero by <1>3.
-Proof: <1>3.
-<2>2. $H$ is continuous as a composition of continuous functions (vector addition, scalar multiplication, norm, and quotient).
+<2>1. $H$ is well-defined because the denominator is non-zero by <1>3. Proof: <1>3. <2>2. $H$ is continuous as a composition of continuous functions (vector addition, scalar multiplication, norm, and quotient).
 Proof: continuity of linear operations and norm on $\mathbb{R}^{n+1} \setminus \{0\}$.
 <2>3. For $t = 0$: $H(x, 0) = \frac{f(x)}{\|f(x)\|} = f(x)$ since $\|f(x)\| = 1$.
 Proof: $f(x) \in S^n$.
@@ -63,6 +61,5 @@ Proof: <2>1–<2>4.
 <1>5. Therefore $f$ is nullhomotopic.
 Proof: <1>4.
 
-<1>6. Q.E.D.
-Proof: <1>5.
+<1>6. Q.E.D. Proof: <1>5.
 :::

@@ -34,8 +34,7 @@ Proof: <2>2.
 
 <1>2. $q$ is a quotient map: $U \subseteq \mathbb{R}$ is open in $\mathbb{R}$ if and only if $q^{-1}(U)$ is open in $A$.
 <2>1. If $U \subseteq \mathbb{R}$ is open, then $q^{-1}(U)$ is open in $A$ by continuity of $q$.
-Proof: <1>1.
-<2>2. Conversely, suppose $q^{-1}(U)$ is open in $A$.
+Proof: <1>1. <2>2. Conversely, suppose $q^{-1}(U)$ is open in $A$.
 Proof: hypothesis.
 <2>3. For every $x_0 \in U$, the point $(x_0, 0) \in q^{-1}(U) \subseteq A$.
 Proof: $q(x_0, 0) = x_0 \in U$.
@@ -46,8 +45,7 @@ Proof: $(t, 0) \in A$ for all $t \in \mathbb{R}$.
 <2>6. Thus $(a, b) \subseteq U$, so $x_0 \in (a, b) \subseteq U$.
 Proof: <2>5 and $x_0 \in (a, b)$.
 <2>7. Since every point $x_0 \in U$ has an open interval neighborhood in $U$, $U$ is open in $\mathbb{R}$.
-Proof: <2>6.
-<2>8. Therefore $q$ is a quotient map.
+Proof: <2>6. <2>8. Therefore $q$ is a quotient map.
 Proof: <2>1 and <2>7.
 
 <1>3. $q$ is not an open map.
@@ -55,8 +53,7 @@ Proof: <2>1 and <2>7.
 Proof: $\mathbb{R} \times (0, \infty)$ is open in $\mathbb{R}^2$.
 <2>2. The image $q(U) = [0, \infty)$.
 Proof: projection of $[0, \infty) \times (0, \infty)$ on the first factor.
-<2>3. $[0, \infty)$ is not open in $\mathbb{R}$ (it contains $0$ but no open ball $(-\delta, \delta) \subseteq [0, \infty)$).
-Proof: negative reals do not belong to $[0, \infty)$.
+<2>3. $[0, \infty)$ is not open in $\mathbb{R}$ (it contains $0$ but no open ball $(-\delta, \delta) \subseteq [0, \infty)$). Proof: negative reals do not belong to $[0, \infty)$.
 <2>4. Hence $q$ is not an open map.
 Proof: <2>1, <2>2, and <2>3.
 
@@ -71,12 +68,10 @@ Proof: closed subset of $\mathbb{R}^2$.
 Proof: subspace topology.
 <2>5. The image $q(C) = (0, \infty)$.
 Proof: for every $x > 0$, $(x, 1/x) \in C$, so $q(x, 1/x) = x \in (0, \infty)$.
-<2>6. $(0, \infty)$ is not closed in $\mathbb{R}$ (it contains the sequence $1/n \to 0$ whose limit $0 \notin (0, \infty)$).
-Proof: $0$ is a limit point of $(0, \infty)$ not contained in $(0, \infty)$.
+<2>6. $(0, \infty)$ is not closed in $\mathbb{R}$ (it contains the sequence $1/n \to 0$ whose limit $0 \notin (0, \infty)$). Proof: $0$ is a limit point of $(0, \infty)$ not contained in $(0, \infty)$.
 <2>7. Hence $q$ is not a closed map.
 Proof: <2>4, <2>5, and <2>6.
 
-<1>5. Conclusion:
-$q$ is a quotient map that is neither open nor closed. Q.E.D.
-Proof: <1>2, <1>3, and <1>4.
+<1>5. Conclusion: $q$ is a quotient map that is neither open nor closed.
+Q.E.D. Proof: <1>2, <1>3, and <1>4.
 :::

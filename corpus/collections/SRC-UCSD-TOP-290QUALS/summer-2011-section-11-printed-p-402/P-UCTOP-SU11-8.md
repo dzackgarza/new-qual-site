@@ -32,23 +32,20 @@ Proof: the rotation acts transitively on the 3 vertices and 3 edges.
 <2>3. The top and bottom 2-dimensional hemispherical disks are identified to a single 2-cell $e^2$.
 Proof: gluing map identifies top and bottom faces.
 <2>4. The interior of the solid 3-ball forms a single 3-cell $e^3$.
-Proof: the 3-ball has dimension 3.
-<2>5. The cellular chain groups are:
+Proof: the 3-ball has dimension 3. <2>5. The cellular chain groups are:
 \[
 C_3(X) = \mathbb{Z}e^3,\quad C_2(X) = \mathbb{Z}e^2,\quad C_1(X) = \mathbb{Z}e^1,\quad C_0(X) = \mathbb{Z}e^0,\quad C_k(X) = 0 \text{ for } k \ge 4.
 \]
 Proof: one cell in each dimension $0, 1, 2, 3$.
 
-<1>3. Compute the cellular boundary maps:
-<2>1. $d_1: C_1(X) \to C_0(X)$ is $d_1(e^1) = e^0 - e^0 = 0$.
+<1>3. Compute the cellular boundary maps: <2>1. $d_1: C_1(X) \to C_0(X)$ is $d_1(e^1) = e^0 - e^0 = 0$.
 Proof: the 1-cell is a closed loop starting and ending at $e^0$.
 <2>2. $d_2: C_2(X) \to C_1(X)$ is $d_2(e^2) = 3e^1$.
 Proof: the boundary of the 2-cell traverses the equatorial circle, which consists of 3 identified copies of $e^1$ oriented in the same direction.
 <2>3. $d_3: C_3(X) \to C_2(X)$ is $d_3(e^3) = 0$.
 Proof: $\partial e^3 = D^2_{\text{top}} - D^2_{\text{bot}} = e^2 - e^2 = 0$ (the identification matches the two disks with opposite outward normal orientations).
 
-<1>4. Compute the homology groups $H_k(X) = \ker(d_k)/\operatorname{im}(d_{k+1})$:
-<2>1. $H_0(X) = \ker(d_0)/\operatorname{im}(d_1) = \mathbb{Z}e^0 / 0 \cong \mathbb{Z}$.
+<1>4. Compute the homology groups $H_k(X) = \ker(d_k)/\operatorname{im}(d_{k+1})$: <2>1. $H_0(X) = \ker(d_0)/\operatorname{im}(d_1) = \mathbb{Z}e^0 / 0 \cong \mathbb{Z}$.
 Proof: $\ker(d_0) = \mathbb{Z}$ and $d_1 = 0$.
 <2>2. $H_1(X) = \ker(d_1)/\operatorname{im}(d_2) = \mathbb{Z}e^1 / (3\mathbb{Z}e^1) \cong \mathbb{Z}/3\mathbb{Z}$.
 Proof: $\ker(d_1) = \mathbb{Z}$ and $\operatorname{im}(d_2) = 3\mathbb{Z}$.
@@ -69,6 +66,5 @@ H_k(X; \mathbb{Z}) \cong \begin{cases}
 0 & k \ge 4.
 \end{cases}
 \]
-Q.E.D.
-Proof: <1>4.
+Q.E.D. Proof: <1>4.
 :::

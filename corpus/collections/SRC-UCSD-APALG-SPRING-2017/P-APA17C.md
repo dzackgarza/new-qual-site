@@ -65,6 +65,5 @@ Proof: <1>1 and <1>7.
 <1>9. Thus $\sigma_i(A) > \sigma_i(B)$ for all $i = 1, \dots, n$.
 Proof: <1>8 holds for each index $i \in \{1, \dots, n\}$.
 
-<1>10. Q.E.D.
-Proof: <1>9.
+<1>10. Q.E.D. Proof: <1>9.
 :::

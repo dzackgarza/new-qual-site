@@ -69,8 +69,7 @@ Proof: $x^k + (f) = h(x) + (f) \iff x^k - h(x) \in (f)$.
 <1>10. There exists a polynomial $q(x) \in \mathbb{Z}[x]$ such that $x^k - h(x) = q(x)f(x)$.
 Proof: definition of the principal ideal $(f(x))$ in $\mathbb{Z}[x]$.
 
-<1>11. Equating leading coefficients:
-<2>1. Since $k = d + 1 > d \ge \deg(h)$, the leading term of the left-hand side $x^k - h(x)$ is $1 \cdot x^k$.
+<1>11. Equating leading coefficients: <2>1. Since $k = d + 1 > d \ge \deg(h)$, the leading term of the left-hand side $x^k - h(x)$ is $1 \cdot x^k$.
 Proof: $h(x)$ has degree $\le d < k$, so it cannot cancel the $x^k$ term.
 <2>2. The leading term of the right-hand side $q(x)f(x)$ is $\operatorname{LC}(q) \cdot a_n \cdot x^{\deg(q) + n}$.
 Proof: multiplication of polynomials over the integral domain $\mathbb{Z}$.
@@ -82,7 +81,6 @@ Proof: coefficients of polynomials in $\mathbb{Z}[x]$.
 <2>4. Since $\operatorname{LC}(q), a_n \in \mathbb{Z}$, $a_n$ is a unit in $\mathbb{Z}$, which implies $a_n = \pm 1$.
 Proof: the only units in the ring of integers $\mathbb{Z}$ are $1$ and $-1$.
 
-<1>12. Conclusion:
-$R = \mathbb{Z}[x]/(f)$ is a finitely generated $\mathbb{Z}$-module if and only if $a_n = \pm 1$. Q.E.D.
-Proof: <1>4 and <1>11.
+<1>12. Conclusion: $R = \mathbb{Z}[x]/(f)$ is a finitely generated $\mathbb{Z}$-module if and only if $a_n = \pm 1$.
+Q.E.D. Proof: <1>4 and <1>11.
 :::

@@ -43,8 +43,7 @@ Proof: definition of $pA = \{px : x \in A\}$.
 <2>5. Hence $ra + pA = r'a' + pA$, so the action is independent of the choice of coset representatives.
 Proof: <2>3 and <2>4.
 
-<1>2. The action satisfies all module axioms:
-<2>1. Distributivity over module addition:
+<1>2. The action satisfies all module axioms: <2>1. Distributivity over module addition:
 \[
 (r + (p)) \cdot \bigl((a + pA) + (b + pA)\bigr) = (r + (p)) \cdot (a + b + pA) = r(a+b) + pA = (ra + pA) + (rb + pA).
 \]
@@ -68,7 +67,6 @@ Proof: module axiom $1_R a = a$.
 <1>3. If $(p)$ is a maximal ideal in $R$, then $R/(p)$ is a field, and any module over a field is a vector space.
 Proof: quotient of a commutative ring by a maximal ideal is a field.
 
-<1>4. Conclusion:
-$A/pA$ is an $R/(p)$-module, and is a vector space over $R/(p)$ when $(p)$ is maximal. Q.E.D.
-Proof: <1>1, <1>2, and <1>3.
+<1>4. Conclusion: $A/pA$ is an $R/(p)$-module, and is a vector space over $R/(p)$ when $(p)$ is maximal.
+Q.E.D. Proof: <1>1, <1>2, and <1>3.
 :::

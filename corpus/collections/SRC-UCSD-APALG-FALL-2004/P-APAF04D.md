@@ -62,8 +62,7 @@ Proof: definition of the inner product of class functions.
 \[
 \langle \chi^*, \chi^* \rangle = \frac{1}{|G|} \sum_{\sigma \in G} |\chi(\sigma)|^2 = \langle \chi, \chi \rangle.
 \]
-Proof: <2>3 and <2>4.
-<2>6. Since $\chi$ is irreducible, $\langle \chi, \chi \rangle = 1$, so $\langle \chi^*, \chi^* \rangle = 1$.
+Proof: <2>3 and <2>4. <2>6. Since $\chi$ is irreducible, $\langle \chi, \chi \rangle = 1$, so $\langle \chi^*, \chi^* \rangle = 1$.
 Proof: <2>5 and irreducibility of $\chi$.
 <2>7. Therefore $\chi^*$ is an irreducible character of $G$.
 Proof: <1>1, <2>1, and <2>6.
@@ -89,12 +88,9 @@ Proof: Maschke's theorem for finite groups over $\mathbb{C}$.
 <2>2. The multiplicity of an irreducible representation $V_i$ in $V$ is uniquely determined by the character via $m_i = \langle \chi_V, \chi_i \rangle$.
 Proof: orthogonality of irreducible characters.
 <2>3. Since $\chi_A = \chi_B$, $A$ and $B$ have the same irreducible constituents with the same multiplicities.
-Proof: <1>1 and <2>2.
-<2>4. Thus $A \cong B$ as $\mathbb{C}[G]$-modules.
-Proof: <2>1 and <2>3.
-<2>5. Consequently, there exists an invertible matrix $T \in \operatorname{GL}_n(\mathbb{C})$ such that $T^{-1}A(\sigma)T = B(\sigma)$ for all $\sigma \in G$.
+Proof: <1>1 and <2>2. <2>4. Thus $A \cong B$ as $\mathbb{C}[G]$-modules.
+Proof: <2>1 and <2>3. <2>5. Consequently, there exists an invertible matrix $T \in \operatorname{GL}_n(\mathbb{C})$ such that $T^{-1}A(\sigma)T = B(\sigma)$ for all $\sigma \in G$.
 Proof: isomorphism of matrix representations.
 
-<1>3. Q.E.D.
-Proof: <1>2 (a) and <1>2 (b).
+<1>3. Q.E.D. Proof: <1>2 (a) and <1>2 (b).
 :::

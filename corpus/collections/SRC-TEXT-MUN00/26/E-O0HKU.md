@@ -50,7 +50,6 @@ Proof: for any $y_0 \notin f(C)$, Hausdorff separation gives disjoint open neigh
 <2>3. Hence $f(C)$ is closed in $Y$.
 Proof: <1>3, <2>1, and <2>2.
 
-<1>5. Conclusion:
-$f$ maps every closed set $C \subseteq X$ to a closed set $f(C) \subseteq Y$, so $f$ is a closed map. Q.E.D.
-Proof: <1>1 and <1>4.
+<1>5. Conclusion: $f$ maps every closed set $C \subseteq X$ to a closed set $f(C) \subseteq Y$, so $f$ is a closed map.
+Q.E.D. Proof: <1>1 and <1>4.
 :::

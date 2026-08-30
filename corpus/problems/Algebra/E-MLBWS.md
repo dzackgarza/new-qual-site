@@ -23,8 +23,8 @@ Give an example of a finite extension of fields that has infinitely many interme
 :::
 
 ::: {.solution}
-<1>1. Define the base field and extension:
-Let $p$ be a prime. Let $k = \mathbb{F}_p(u, v)$ be the rational function field in two indeterminates $u, v$ over $\mathbb{F}_p$, and let $K = \mathbb{F}_p(u^p, v^p) \subset k$.
+<1>1. Define the base field and extension: Let $p$ be a prime.
+Let $k = \mathbb{F}_p(u, v)$ be the rational function field in two indeterminates $u, v$ over $\mathbb{F}_p$, and let $K = \mathbb{F}_p(u^p, v^p) \subset k$.
 Proof: definition of the fields.
 
 <1>2. The extension $k/K$ is finite of degree $p^2$.
@@ -46,21 +46,18 @@ Proof: $[E_c : K]$ divides $[k : K] = p^2$ and is strictly greater than 1, while
 Proof: hypothesis for contradiction.
 <2>2. Then $u + c_1 v \in E_{c_1}$ and $u + c_2 v \in E_{c_1}$.
 Proof: definition of $E_{c_1}$ and assumption $E_{c_2} \subseteq E_{c_1}$.
-<2>3. Subtracting gives $(c_1 - c_2) v \in E_{c_1}$. Since $c_1 - c_2 \in K^\times$, $v = (c_1 - c_2)^{-1}(c_1 - c_2)v \in E_{c_1}$.
+<2>3. Subtracting gives $(c_1 - c_2) v \in E_{c_1}$.
+Since $c_1 - c_2 \in K^\times$, $v = (c_1 - c_2)^{-1}(c_1 - c_2)v \in E_{c_1}$.
 Proof: $E_{c_1}$ is a field containing $K$.
 <2>4. Then $u = (u + c_1 v) - c_1 v \in E_{c_1}$.
-Proof: <2>2 and <2>3.
-<2>5. Thus $k = K(u, v) \subseteq E_{c_1}$, which implies $[E_{c_1} : K] = [k : K] = p^2$.
-Proof: <2>3 and <2>4.
-<2>6. This contradicts $[E_{c_1} : K] = p$ established in <1>3.
-Proof: $p < p^2$ for any prime $p$.
+Proof: <2>2 and <2>3. <2>5. Thus $k = K(u, v) \subseteq E_{c_1}$, which implies $[E_{c_1} : K] = [k : K] = p^2$.
+Proof: <2>3 and <2>4. <2>6. This contradicts $[E_{c_1} : K] = p$ established in <1>3. Proof: $p < p^2$ for any prime $p$.
 <2>7. Hence $E_{c_1} \neq E_{c_2}$ whenever $c_1 \neq c_2$.
 Proof: <2>1–<2>6.
 
 <1>5. Since $K = \mathbb{F}_p(u^p, v^p)$ is an infinite field, the family $\{E_c : c \in K\}$ contains infinitely many distinct intermediate fields between $K$ and $k$.
 Proof: the set of powers $\{u^{pn} : n \ge 1\} \subset K$ provides infinitely many distinct choices of $c \in K$.
 
-<1>6. Conclusion:
-$k/K = \mathbb{F}_p(u, v) / \mathbb{F}_p(u^p, v^p)$ is a finite field extension of degree $p^2$ with infinitely many distinct intermediate fields. Q.E.D.
-Proof: <1>2 and <1>5.
+<1>6. Conclusion: $k/K = \mathbb{F}_p(u, v) / \mathbb{F}_p(u^p, v^p)$ is a finite field extension of degree $p^2$ with infinitely many distinct intermediate fields.
+Q.E.D. Proof: <1>2 and <1>5.
 :::

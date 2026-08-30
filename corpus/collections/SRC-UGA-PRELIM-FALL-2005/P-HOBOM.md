@@ -34,8 +34,7 @@ Proof: Lagrange's theorem.
 <2>4. Since $g \neq e$, $|\langle g \rangle| > 1$, so $|\langle g \rangle| = 5$.
 Proof: $5$ is prime, so its only positive divisors are $1$ and $5$.
 <2>5. Therefore, $G = \langle g \rangle \cong \mathbb{Z}/5\mathbb{Z}$, which is cyclic and abelian.
-Proof: <2>4.
-<2>6. No nonabelian group of order $5$ exists.
+Proof: <2>4. <2>6. No nonabelian group of order $5$ exists.
 Proof: <2>5.
 
 **Case $n = 6$:**
@@ -54,6 +53,5 @@ Proof: $(1\ 2\ 3) \neq (1\ 3\ 2)$ (for example, they map $1$ to different elemen
 <2>6. Hence $S_3$ (or equivalently the dihedral group $D_3$) is a nonabelian group of order $6$.
 Proof: <2>1 and <2>5.
 
-<1>3. Q.E.D.
-Proof: <1>1 and <1>2.
+<1>3. Q.E.D. Proof: <1>1 and <1>2.
 :::

@@ -30,18 +30,18 @@ b. Prove there is a sequence $T_n$ of bounded linear operators from $H$ to $H$ s
 ::: {.solution}
 **Part (a).**
 
-<1>1. Let $x_0 \in B$, so $\|x_0\| \le 1$. We construct a sequence $\{x_n\} \subset S$ such that $x_n \rightharpoonup x_0$ weakly.
+<1>1. Let $x_0 \in B$, so $\|x_0\| \le 1$.
+We construct a sequence $\{x_n\} \subset S$ such that $x_n \rightharpoonup x_0$ weakly.
 Proof: setup.
 
 <1>2. If $\|x_0\| = 1$, then $x_0 \in S$, so the constant sequence $x_n = x_0$ lies in $S$ and converges weakly to $x_0$.
 Proof: constant sequence is in $S$.
 
-<1>3. Suppose $\|x_0\| < 1$. Let $c = \sqrt{1 - \|x_0\|^2} > 0$.
+<1>3. Suppose $\|x_0\| < 1$.
+Let $c = \sqrt{1 - \|x_0\|^2} > 0$.
 Proof: $\|x_0\| < 1 \implies 1 - \|x_0\|^2 > 0$.
 
-<1>4. Construct an orthonormal sequence $\{e_n\}_{n=1}^\infty$ in $x_0^\perp$:
-<2>1. The orthogonal complement $x_0^\perp = \{v \in H : \langle x_0, v \rangle = 0\}$ is a closed subspace of codimension at most 1.
-Proof: kernel of the continuous linear functional $\langle x_0, \cdot \rangle$.
+<1>4. Construct an orthonormal sequence $\{e_n\}_{n=1}^\infty$ in $x_0^\perp$: <2>1. The orthogonal complement $x_0^\perp = \{v \in H : \langle x_0, v \rangle = 0\}$ is a closed subspace of codimension at most 1. Proof: kernel of the continuous linear functional $\langle x_0, \cdot \rangle$.
 <2>2. Since $H$ is infinite-dimensional, $x_0^\perp$ is infinite-dimensional.
 Proof: codimension $\le 1$ in an infinite-dimensional space.
 <2>3. Choose a countably infinite orthonormal sequence $\{e_n\}_{n=1}^\infty \subset x_0^\perp$ by the Gram–Schmidt process.
@@ -57,12 +57,10 @@ Proof: expansion of the inner product norm.
 \[
 \|x_n\|^2 = \|x_0\|^2 + 0 + c^2 = \|x_0\|^2 + (1 - \|x_0\|^2) = 1.
 \]
-Proof: <1>3 and <1>4.
-<2>3. Thus $x_n \in S$ for all $n \ge 1$.
+Proof: <1>3 and <1>4. <2>3. Thus $x_n \in S$ for all $n \ge 1$.
 Proof: <2>2.
 
-<1>6. The sequence $x_n \rightharpoonup x_0$ weakly:
-<2>1. By the Riesz Representation Theorem, any continuous linear functional on $H$ is of the form $y \mapsto \langle y, v \rangle$ for some $v \in H$.
+<1>6. The sequence $x_n \rightharpoonup x_0$ weakly: <2>1. By the Riesz Representation Theorem, any continuous linear functional on $H$ is of the form $y \mapsto \langle y, v \rangle$ for some $v \in H$.
 Proof: Riesz Representation Theorem for Hilbert spaces.
 <2>2. For any $v \in H$, by Bessel's inequality:
 \[
@@ -75,8 +73,7 @@ Proof: terms of a convergent series tend to zero.
 \[
 \lim_{n\to\infty} \langle x_n, v \rangle = \lim_{n\to\infty} \bigl(\langle x_0, v \rangle + c \langle e_n, v \rangle\bigr) = \langle x_0, v \rangle + c \cdot 0 = \langle x_0, v \rangle.
 \]
-Proof: linearity of inner product and <2>3.
-<2>5. Thus $x_n \rightharpoonup x_0$ weakly in $H$.
+Proof: linearity of inner product and <2>3. <2>5. Thus $x_n \rightharpoonup x_0$ weakly in $H$.
 Proof: definition of weak convergence.
 
 <1>7. Hence every point of $B$ is in the weak closure of $S$, so $S$ is weakly dense in $B$.
@@ -100,14 +97,12 @@ Proof: $\langle e_n, e_n \rangle = 1$.
 <2>4. Hence $\|T_n\| = 1$ for all $n \ge 1$.
 Proof: <2>2 and <2>3.
 
-<1>10. Show strong convergence $T_n(x) \to 0$ for all $x \in H$:
-<2>1. For any fixed $x \in H$, by Bessel's inequality $\sum_{n=1}^\infty |\langle x, e_n \rangle|^2 \le \|x\|^2 < \infty$.
+<1>10. Show strong convergence $T_n(x) \to 0$ for all $x \in H$: <2>1. For any fixed $x \in H$, by Bessel's inequality $\sum_{n=1}^\infty |\langle x, e_n \rangle|^2 \le \|x\|^2 < \infty$.
 Proof: Bessel's inequality.
 <2>2. Thus $\lim_{n\to\infty} |\langle x, e_n \rangle| = 0$.
 Proof: convergence of the series.
 <2>3. Therefore $\|T_n(x)\| = |\langle x, e_n \rangle| \to 0$ as $n \to \infty$, so $\lim_{n\to\infty} T_n(x) = 0$ in $H$.
 Proof: <1>9 and <2>2.
 
-<1>11. Q.E.D.
-Proof: <1>7 (a) and <1>10 (b).
+<1>11. Q.E.D. Proof: <1>7 (a) and <1>10 (b).
 :::

@@ -36,8 +36,7 @@ Proof: over $\mathbb{C}$, the $p$-th roots of unity are distinct.
 <1>2. The minimal polynomial $m_g(t) = t^p - 1$ has $p$ distinct roots over $\mathbb{C}$, so $g$ is diagonalizable.
 Proof: a matrix is diagonalizable over an algebraically closed field if and only if its minimal polynomial has no repeated roots.
 
-<1>3. Since $g \in \operatorname{GL}_p(\mathbb{C})$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1.
-Proof: the sum of the multiplicities is $\deg(\operatorname{char}_g(t)) = p$, and each of the $p$ roots of $m_g(t)$ must be an eigenvalue.
+<1>3. Since $g \in \operatorname{GL}_p(\mathbb{C})$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1. Proof: the sum of the multiplicities is $\deg(\operatorname{char}_g(t)) = p$, and each of the $p$ roots of $m_g(t)$ must be an eigenvalue.
 
 <1>4. Therefore the Jordan canonical form of $g$ is the diagonal matrix:
 \[
@@ -77,6 +76,5 @@ J = J_p(1) = \begin{pmatrix}
 \]
 Proof: <1>7 and the matrix dimension is $p$.
 
-<1>9. Q.E.D.
-Proof: <1>4 (a) and <1>8 (b).
+<1>9. Q.E.D. Proof: <1>4 (a) and <1>8 (b).
 :::

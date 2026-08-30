@@ -32,8 +32,7 @@ Let $\Omega = \{g \in G \mid g^p = 1\}$ and let $P$ be a Sylow $p$-subgroup of $
 ::: {.solution}
 **Part (a).**
 
-<1>1. Show that $C_G(P) \cap \Omega \subseteq P$:
-<2>1. Let $g \in C_G(P) \cap \Omega$.
+<1>1. Show that $C_G(P) \cap \Omega \subseteq P$: <2>1. Let $g \in C_G(P) \cap \Omega$.
 Proof: setup.
 <2>2. $g$ commutes with every element of $P$ and $g^p = 1$, so $\langle g \rangle$ is a cyclic group of order 1 or $p$ centralizing $P$.
 Proof: $g \in C_G(P)$ and $g \in \Omega$.
@@ -42,19 +41,16 @@ Proof: since $g \in C_G(P)$, $\langle g \rangle$ normalizes $P$ (in fact central
 <2>4. The order of $H$ is $|H| = \frac{|P| |\langle g\rangle|}{|P \cap \langle g\rangle|}$.
 Proof: product formula for subgroups.
 <2>5. Since $|P| = p^a$ and $|\langle g\rangle| \in \{1, p\}$, $|H|$ is a power of $p$, so $H$ is a $p$-subgroup of $G$.
-Proof: <2>4.
-<2>6. $P \le H$ and $P$ is a Sylow $p$-subgroup of $G$ (a maximal $p$-subgroup), which implies $H = P$.
+Proof: <2>4. <2>6. $P \le H$ and $P$ is a Sylow $p$-subgroup of $G$ (a maximal $p$-subgroup), which implies $H = P$.
 Proof: definition of Sylow $p$-subgroup.
 <2>7. Thus $g \in P$, so $C_G(P) \cap \Omega \subseteq P$.
 Proof: $g \in H = P$.
 
-<1>2. Show that $C_G(P) \cap \Omega = Z(P) \cap \Omega$ is a non-trivial $p$-subgroup of $P$:
-<2>1. Since $C_G(P) \cap \Omega \subseteq P$, $C_G(P) \cap \Omega = (C_G(P) \cap P) \cap \Omega = Z(P) \cap \Omega$.
+<1>2. Show that $C_G(P) \cap \Omega = Z(P) \cap \Omega$ is a non-trivial $p$-subgroup of $P$: <2>1. Since $C_G(P) \cap \Omega \subseteq P$, $C_G(P) \cap \Omega = (C_G(P) \cap P) \cap \Omega = Z(P) \cap \Omega$.
 Proof: $C_G(P) \cap P = Z(P)$.
 <2>2. $Z(P) \cap \Omega = \{z \in Z(P) : z^p = 1\}$ is the $p$-torsion subgroup of the abelian group $Z(P)$, hence an elementary abelian $p$-subgroup.
 Proof: $Z(P)$ is an abelian group, so the map $z \mapsto z^p$ is a homomorphism whose kernel is $Z(P) \cap \Omega$.
-<2>3. Since $p \mid |G|$, $P$ is non-trivial ($|P| = p^a \ge p$), so the center $Z(P)$ is non-trivial ($|Z(P)| \ge p$).
-Proof: non-trivial $p$-groups have non-trivial centers.
+<2>3. Since $p \mid |G|$, $P$ is non-trivial ($|P| = p^a \ge p$), so the center $Z(P)$ is non-trivial ($|Z(P)| \ge p$). Proof: non-trivial $p$-groups have non-trivial centers.
 <2>4. By Cauchy's Theorem for abelian groups, $Z(P)$ contains an element of order $p$.
 Proof: $p$ divides $|Z(P)|$.
 <2>5. Thus $Z(P) \cap \Omega$ contains elements other than the identity, so $C_G(P) \cap \Omega$ is a non-trivial $p$-subgroup of $P$.
@@ -68,8 +64,7 @@ Proof: conjugation preserves powers.
 <2>2. This defines a valid group action of $P$ on the set $\Omega$.
 Proof: $1g1^{-1} = g$ and $(xy)g(xy)^{-1} = x(ygy^{-1})x^{-1}$.
 
-<1>4. Apply the fixed point congruence for $p$-group actions:
-<2>1. The fixed point set of the action is:
+<1>4. Apply the fixed point congruence for $p$-group actions: <2>1. The fixed point set of the action is:
 \[
 \Omega^P = \{g \in \Omega : xgx^{-1} = g \text{ for all } x \in P\} = \{g \in \Omega : g \in C_G(P)\} = C_G(P) \cap \Omega.
 \]
@@ -79,15 +74,12 @@ Proof: Orbit–Stabilizer Theorem: $|\operatorname{Orb}(g)| = [P : \operatorname
 <2>3. Thus $|\Omega| \equiv |\Omega^P| \pmod p$.
 Proof: partition of $\Omega$ into orbits.
 
-<1>5. Determine $|\Omega^P| \pmod p$:
-<2>1. By Part (a), $\Omega^P = Z(P) \cap \Omega$ is a non-trivial elementary abelian $p$-group.
-Proof: <1>2.
-<2>2. Thus $|\Omega^P| = p^k$ for some integer $k \ge 1$.
+<1>5. Determine $|\Omega^P| \pmod p$: <2>1. By Part (a), $\Omega^P = Z(P) \cap \Omega$ is a non-trivial elementary abelian $p$-group.
+Proof: <1>2. <2>2. Thus $|\Omega^P| = p^k$ for some integer $k \ge 1$.
 Proof: order of an elementary abelian $p$-group is $p^k$.
 <2>3. In particular, $|\Omega^P| \equiv 0 \pmod p$.
 Proof: $k \ge 1 \implies p \mid p^k$.
 
-<1>6. Conclusion:
-$|\Omega| \equiv |\Omega^P| \equiv 0 \pmod p$, so $p$ divides $|\Omega|$. Q.E.D.
-Proof: <2>3 and <1>5.
+<1>6. Conclusion: $|\Omega| \equiv |\Omega^P| \equiv 0 \pmod p$, so $p$ divides $|\Omega|$.
+Q.E.D. Proof: <2>3 and <1>5.
 :::
