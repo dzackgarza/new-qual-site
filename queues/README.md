@@ -25,7 +25,7 @@ Two kinds of queue files:
 | `01-corpus-defects.md` | 2 | 2 | #2 (OPEN) | 1.3/1.4 done, 1.1/1.2 open (source review) |
 | `02-publish-authored-pages.md` | 0 | 4 | #5, #23 (COMPLETED) | All verified via Queue 06 |
 | `03-publish-subject-branches.md` | 0 | 8 | #24–#29 (COMPLETED) | All verified via Queue 06 |
-| `04-reader-exam-generator.md` | 2 | 5 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
+| `04-reader-exam-generator.md` | 0 | 7 | #10 (COMPLETED) | All done |
 | `05-repair-rendered-residue.md` | 0 | 3 | #41 (COMPLETED) | All defects resolved (Queue 11) |
 | `06-prove-deployed-site.md` | 0 | 7 | #30 (COMPLETED) | All verified against local build |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
