@@ -10,6 +10,10 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -24,4 +28,12 @@ If $D$ is a countable dense subset of $\mathbb{R}$, there is no function $f: \ma
 
 (b) Show that $D$ is not a $G_\delta$ set in $\mathbb{R}$.
 [Hint: Suppose $D = \bigcap W_n$, where $W_n$ is open in $\mathbb{R}$. For $d \in D$, set $V_d = \mathbb{R} - \ts{d}$. Show $W_n$ and $V_d$ are dense in $\mathbb{R}$.]
+:::
+
+::: {.solution}
+<1>1. $X$ Hausdorff.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

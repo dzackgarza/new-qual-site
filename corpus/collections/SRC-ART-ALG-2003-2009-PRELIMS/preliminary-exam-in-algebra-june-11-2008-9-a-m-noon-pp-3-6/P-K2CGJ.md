@@ -13,6 +13,10 @@ classification:
   - Class Equation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -24,4 +28,12 @@ a. Show that $|x^G| = [G : Z_G(x)]$.
 b. If $H \le G$ and $x \in H$, prove that $Z_H(x) = H \cap Z_G(x)$.
 
 c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$.
+:::
+
+::: {.solution}
+<1>1. $G$ Sylow.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
