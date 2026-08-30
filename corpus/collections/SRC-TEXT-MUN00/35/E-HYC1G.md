@@ -10,6 +10,10 @@ classification:
   - Normal Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -24,4 +28,12 @@ This topology is called the topology coherent with the subspaces $X_i$.
 
 (c) Show that if each space $X_i$ is normal, then $X$ is normal.
 [Hint: Given disjoint closed sets $A$ and $B$ in $X$, set $f$ equal to 0 on $A$ and 1 on $B$, and extend $f$ successively to $A \cup B \cup X_i$ for $i = 1, 2, \ldots$.]
+:::
+
+::: {.solution}
+<1>1. $X$ Hausdorff.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
