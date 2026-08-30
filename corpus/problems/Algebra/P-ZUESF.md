@@ -23,45 +23,50 @@ Suppose that $n_p$ divides an integer $q < p$.
 Prove that $n_p = 1$, and consequently every Sylow $p$-subgroup is normal in $G$.
 :::
 
-::: solution
-**Goal:** Prove that if $n_p \mid q$ and $q < p$, then $n_p = 1$.
-
+::: {.solution}
 <1>1. Sylow's Third Theorem Congruence:
-    *Proof:*
-    <2>1. By **Sylow's Third Theorem**, the number $n_p$ of Sylow $p$-subgroups of $G$ satisfies the modular congruence:
-        $$n_p \equiv 1 \pmod p.$$
-    <2>2. This means that $n_p = 1 + k p$ for some non-negative integer $k \in \mathbb{N}_0 = \{0, 1, 2, \dots\}$.
+<2>1. By Sylow’s Third Theorem, the number $n_p$ of Sylow $p$-subgroups of $G$ satisfies:
+\[
+n_p \equiv 1 \pmod p.
+\]
+Proof: Sylow's Third Theorem.
+<2>2. Thus $n_p = 1 + k p$ for some non-negative integer $k \in \{0, 1, 2, \dots\}$.
+Proof: definition of modular congruence for positive integers.
 
 <1>2. Upper Bound from Divisibility:
-    *Proof:*
-    <2>1. We are given that $n_p$ divides $q$, where $q$ is a positive integer strictly less than $p$ ($1 \le q < p$).
-    <2>2. Since $n_p \ge 1$ is a positive divisor of $q$, we have the inequality:
-        $$n_p \le q.$$
-    <2>3. Combining this with $q < p$ yields:
-        $$1 \le n_p < p.$$
+<2>1. We are given that $n_p$ divides $q$, where $q$ is a positive integer strictly less than $p$ ($1 \le q < p$).
+Proof: hypothesis.
+<2>2. Since $n_p \ge 1$ divides $q$, we have $n_p \le q$.
+Proof: a positive divisor of a positive integer is less than or equal to the integer.
+<2>3. Combining this with $q < p$ yields:
+\[
+1 \le n_p < p.
+\]
+Proof: transitivity of order relation.
 
-<1>3. Forcing $k = 0$:
-    *Proof:*
-    <2>1. If $k \ge 1$, then:
-        $$n_p = 1 + k p \ge 1 + p > p.$$
-    <2>2. This directly contradicts the bound $n_p < p$ established in Step <1>2.
-    <2>3. Therefore, the only possible value for $k$ is $k = 0$.
-    <2>4. Substituting $k = 0$ gives:
-        $$n_p = 1 + 0 \cdot p = 1.$$
+<1>3. Deduce that $n_p = 1$:
+<2>1. If $k \ge 1$, then:
+\[
+n_p = 1 + k p \ge 1 + p > p,
+\]
+which contradicts $n_p < p$ from <1>2.
+Proof: $k \ge 1 \implies 1 + kp > p$.
+<2>2. Therefore $k = 0$.
+Proof: $k \in \mathbb{Z}_{\ge 0}$ and $k \not\ge 1$.
+<2>3. Substituting $k = 0$ yields:
+\[
+n_p = 1 + 0 \cdot p = 1.
+\]
+Proof: <2>2.
 
 <1>4. Consequence (Normality):
-    *Proof:*
-    <2>1. Since $n_p = 1$, the group $G$ possesses a unique Sylow $p$-subgroup $P$.
-    <2>2. Because all Sylow $p$-subgroups are conjugate in $G$, $g P g^{-1} = P$ for all $g \in G$, so $P \trianglelefteq G$ is normal.
+<2>1. Since $n_p = 1$, the group $G$ possesses a unique Sylow $p$-subgroup $P$.
+Proof: $n_p = 1$.
+<2>2. By Sylow’s Second Theorem, all Sylow $p$-subgroups of $G$ are conjugate to $P$.
+Since $P$ is unique, $g P g^{-1} = P$ for all $g \in G$, so $P \trianglelefteq G$ is normal.
+Proof: invariance under all inner automorphisms.
 
 <1>5. Conclusion:
-    $n_p \mid q < p$ forces $n_p = 1$ and $P \trianglelefteq G$. Q.E.D.
-:::
-
-::: {.solution}
-<1>1. $R$ ring.
-Proof: ideal.
-
-<1>2. Q.E.D.
-Proof: <1>1.
+$n_p \mid q < p \implies n_p = 1$, and the unique Sylow $p$-subgroup is normal in $G$. Q.E.D.
+Proof: <1>1 through <1>4.
 :::
