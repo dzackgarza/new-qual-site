@@ -46,3 +46,11 @@ Give a proof of your answer.
 
 Authored by **Codex 5.3 Spark Extra High**.
 :::
+
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
