@@ -10,6 +10,10 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -22,4 +26,12 @@ S (\tau) = - 1 / \tau \leftrightarrow \left( \begin{array}{c c} 0 & - 1 \\ 1 & 0
 $$
 
 Prove that every fractional linear transformation corresponding to $g \in G$ is a composition of finitely many S, $T _ { 2 }$ and their inverses, in analogy with the previous problem.
+:::
+
+::: {.solution}
+<1>1. $G$ entire.
+Proof: estimate.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

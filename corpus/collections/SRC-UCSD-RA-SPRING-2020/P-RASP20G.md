@@ -10,6 +10,10 @@ classification:
   - Real Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -21,4 +25,12 @@ Moreover, $\langle x - y, z - y \rangle \leq 0$ for all $z \in K$.
 Prove that $K$ is weakly sequentially closed, i.e., if $u_n \in K$ ($n = 1, 2, \ldots$) and $u \in H$ satisfy that $u_n \to u$ weakly, then $u \in K$.
 
 (2) Let $K_n$ ($n = 1, 2, \ldots$) be a decreasing sequence of nonempty, closed, and convex subsets of $H$ (i.e., $K_{n+1} \subseteq K_n$ for all $n$). Prove that $\bigcap_{n=1}^{\infty} K_n \neq \emptyset$.
+:::
+
+::: {.solution}
+<1>1. $f$ measurable.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

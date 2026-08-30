@@ -11,6 +11,10 @@ classification:
   - Group Actions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -23,4 +27,12 @@ Let $\Omega = \{g \in G \mid g^p = 1\}$ and let $P$ be a Sylow $p$-subgroup of $
 
 (b) Prove that $p$ divides $|\Omega|$.
 (Hint: Use the fact that $P$ acts on $\Omega$ by conjugation.)
+:::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: Galois.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

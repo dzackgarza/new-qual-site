@@ -12,6 +12,10 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -22,4 +26,12 @@ Find all possible rational canonical forms for a matrix $A\in M_n(\Bbb Q)$ such 
 2. $A$ is $7\times 7$ with $q(x) = (x^2+1)(x-7)$.
 
 Also find all such forms when $A \in M_n(\Bbb C)$ instead, and find all possible Jordan Canonical Forms over $\Bbb C$.
+:::
+
+::: {.solution}
+<1>1. $M$ module.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

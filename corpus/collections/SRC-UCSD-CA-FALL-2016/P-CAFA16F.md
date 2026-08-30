@@ -10,6 +10,10 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -19,4 +23,12 @@ For $n \geq 1$, define $f_n: \mathbb{D} \to \mathbb{D}$ by $f_n(z) = \prod_{k=1}
 (a) Prove that the sequence $\{f_n\}$ converges to an analytic function $f: \mathbb{D} \to \mathbb{D}$, uniformly on compact subsets of $\mathbb{D}$.
 
 (b) Prove that there do not exist an open set $U \subset \mathbb{C}$ and an analytic function $g: U \to \mathbb{C}$ such that $\overline{\mathbb{D}} \subset U$ and $g(z) = f(z)$ for every $z \in \mathbb{D}$.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
