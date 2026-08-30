@@ -11,6 +11,10 @@ classification:
   - Normal Operators
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -20,4 +24,12 @@ If
 \|A\|_F^2\leq|\lambda_1|^2+\cdots+|\lambda_n|^2,
 \]
 show that $A$ is normal, i.e., $AA^*=A^*A$.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

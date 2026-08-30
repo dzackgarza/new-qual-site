@@ -10,6 +10,10 @@ classification:
   - Gröbner Bases
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -28,4 +32,12 @@ Describe the procedure (Buchberger's Criterion) which verifies this.
 You do not need to do this procedure.
 
 (b) Describe a vector space basis for the quotient $\mathbb{Q}[x_1, x_2, x_3, x_4]/I$ consisting of images $m + I$ of monomials $m \in \mathbb{Q}[x_1, x_2, x_3, x_4]$.
+:::
+
+::: {.solution}
+<1>1. $V$ vector space.
+Proof: basis.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
