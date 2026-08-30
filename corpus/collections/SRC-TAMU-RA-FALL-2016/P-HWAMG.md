@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -19,4 +23,12 @@ review: draft
 Prove that the set of points at which $f$ is discontinuous is a countable union of closed subsets.
 
 (b) Prove that there is no real valued function on $[0,1]$ that is continuous at all rational points but discontinuous at all irrational points.
+:::
+
+::: {.solution}
+<1>1. $f$ measurable.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

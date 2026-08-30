@@ -13,6 +13,10 @@ classification:
   - Structure Theorem
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -23,4 +27,12 @@ a. $M_t$ be the set of torsion elements of $M$, and show that $M_t$ is a submodu
 b. Show that $M/M_t$ is torsion free.
 
 c. Prove that $M \cong M_t \oplus F$ where $F$ is a free module.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
