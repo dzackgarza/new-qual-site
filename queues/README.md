@@ -16,7 +16,7 @@ Two kinds of queue files:
 | `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
-| `F-wiki-doctor.md` | 16 | Regenerated 2026-08-31: 6 one-child dirs, 7 Obsidian embeds, 3 heading-only bodies |
+| `F-wiki-doctor.md` | 0 | 16 | All fixed or dismissed: 41 embeds converted, 9 structural findings are chapters not yet written |
 
 ## Validity review queues (TODO.md items)
 

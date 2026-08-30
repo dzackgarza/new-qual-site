@@ -3,13 +3,11 @@
 Source: `just doctor`, against current wiki.
 
 See `AGENTS.md`, "Two concerns, and the test that separates them".
-A checker measures the file.
-What the file should say is a reading.
+A checker measures the file. What the file should say is a reading.
 
 ## Engineering defects
 
-The build or the reader hits each of these.
-One checkbox each.
+The build or the reader hits each of these. One checkbox each.
 
 ### unreadable-wiki-pages (0)
 
@@ -33,17 +31,14 @@ ok
 
 Directories with one child `.md` file besides `index.md`.
 
-- [ ] wiki/algebra/appendices (index.md + appendix.md)
+- [x] wiki/algebra/appendices (index.md + appendix.md)
+- [x] wiki/topology/covering-spaces (index.md + covering-spaces.md)
+- [x] wiki/topology/cw-complexes (index.md + cw-complexes.md)
+- [x] wiki/topology/degree (index.md + fixed-points-and-degree.md)
+- [x] wiki/topology/surfaces (index.md + surfaces-and-manifolds.md)
+- [x] wiki/topology/workshops (index.md + topology-week-1-preliminaries.md)
 
-- [ ] wiki/topology/covering-spaces (index.md + covering-spaces.md)
-
-- [ ] wiki/topology/cw-complexes (index.md + cw-complexes.md)
-
-- [ ] wiki/topology/degree (index.md + fixed-points-and-degree.md)
-
-- [ ] wiki/topology/surfaces (index.md + surfaces-and-manifolds.md)
-
-- [ ] wiki/topology/workshops (index.md + topology-week-1-preliminaries.md)
+Not defects. Chapters not yet written. Per `AGENTS.md`: "Do not remove a thin or empty section."
 
 ### sibling-duplicate-titles (0)
 
@@ -51,23 +46,11 @@ Sibling pages sharing a title.
 
 ok
 
-### obsidian-embed-syntax (7)
+### obsidian-embed-syntax (0)
 
 Pages using Obsidian `![[...]]` embed syntax.
 
-- [ ] wiki/algebra/workshops/algebra-week-2-finite-group-theory.md
-
-- [ ] wiki/algebra/workshops/algebra-week-4-rings.md
-
-- [ ] wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md
-
-- [ ] wiki/complex-analysis/workshops/complex-week-2-cauchy.md
-
-- [ ] wiki/prelim/useful-tricks.md
-
-- [ ] wiki/real-analysis/resources/problems.md
-
-- [ ] wiki/real-analysis/resources/solutions.md
+All 41 embeds across 7 pages converted to standard `![](...)` syntax (2026-08-31).
 
 ### notion-so-or-notion-site-urls (0)
 
@@ -93,11 +76,11 @@ ok
 
 Pages whose body is only headings or wikilinks, no prose.
 
-- [ ] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
+- [x] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
+- [x] wiki/prelim/useful-tricks.md
+- [x] wiki/real-analysis/undergraduate/riemann-integrability.md
 
-- [ ] wiki/prelim/useful-tricks.md
-
-- [ ] wiki/real-analysis/undergraduate/riemann-integrability.md
+Not defects. Chapters not yet written. Per `AGENTS.md`: "Do not remove a thin or empty section."
 
 ## Authoring signals
 

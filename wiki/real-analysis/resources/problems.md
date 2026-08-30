@@ -28,7 +28,7 @@ Exercises from [@Fol13]:
 
 - Chapter 3: Exercises 3(b,c), 5, 6, 9, 12, 13, 14, 16, 20, 21, 22
 
-- ![[attachments/Folland Clipped Questions.pdf]]
+- ![](attachments/Folland Clipped Questions.pdf)
 
 - [Folland Clipped Questions.pdf](attachments/Folland_Clipped_Questions.pdf)
 

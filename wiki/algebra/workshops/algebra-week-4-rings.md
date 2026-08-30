@@ -17,13 +17,13 @@ title: Algebra Qual Prep Week 4
 
 - Bonus optional stuff: localization
 
-![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 15.png]]
+![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 15.png)
 
-![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 16.png]]
+![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 16.png)
 
-![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 17.png]]
+![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 17.png)
 
-![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 18.png]]
+![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 18.png)
 
 [[P-3PTP5]]
 

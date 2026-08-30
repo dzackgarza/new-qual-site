@@ -106,16 +106,16 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
 ## Qual Problems
 
-![[_attachments/Untitled 14.png]]
+![](_attachments/Untitled 14.png)
 
-![[_attachments/Pasted image 20210526171835.png]]
+![](_attachments/Pasted image 20210526171835.png)
 
-![[_attachments/Pasted image 20210526172046.png]]
+![](_attachments/Pasted image 20210526172046.png)
 
-![[_attachments/Pasted image 20210526172119.png]]
+![](_attachments/Pasted image 20210526172119.png)
 
-![[_attachments/Pasted image 20210526172140.png]]
+![](_attachments/Pasted image 20210526172140.png)
 
 Needs some Sylow theory:
 
-![[_attachments/Pasted image 20210526173749.png]]
+![](_attachments/Pasted image 20210526173749.png)

@@ -6,7 +6,7 @@ order: 20
 
 ## Collections
 
-- ![[My Solutions to Old Analysis Quals.pdf|Jacob S Townson Solutions to Analysis Quals]]
+- ![](My Solutions to Old Analysis Quals.pdf|Jacob S Townson Solutions to Analysis Quals)
 
 - [Giant List of Problems.pdf](attachments/Giant_List_of_Problems.pdf)
 
