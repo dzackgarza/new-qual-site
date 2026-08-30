@@ -27,8 +27,7 @@ $\ZZ/2 \normal V_4 \normal A_4$ but $\ZZ/2$ is not normal in $A_4$.
 
 ## Rings
 
-The tower and one witness per step is on [[Algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]].
-The three that recur:
+The tower and one witness per step is on [[Algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]]. The three that recur:
 
 **Every irreducible is prime** -- false: $3$ in $\ZZ[\sqrt{-5}]$, where $9 = 3\cdot 3 = (2+\sqrt{-5})(2-\sqrt{-5})$.
 

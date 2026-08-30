@@ -52,13 +52,10 @@ problems:
 
 [[PR-DDDXH]]
 
-:::{.proof}
-$\implies$:
-If $0\neq x\in I\normal R$ and every nonzero element is a unit, then $x$ is a unit, so $xx\inv = 1 \in I$ and $I = R$.
+::: {.proof}
+$\implies$: If $0\neq x\in I\normal R$ and every nonzero element is a unit, then $x$ is a unit, so $xx\inv = 1 \in I$ and $I = R$.
 
-$\impliedby$:
-For $x\in R\nonzero$, $Rx = R$ gives $1 = rx$ for some $r$, so $x = r\inv$.
-
+$\impliedby$: For $x\in R\nonzero$, $Rx = R$ gives $1 = rx$ for some $r$, so $x = r\inv$.
 :::
 
 ## Radicals
