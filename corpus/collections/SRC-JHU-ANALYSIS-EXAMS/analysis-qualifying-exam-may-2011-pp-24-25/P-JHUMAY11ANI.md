@@ -28,6 +28,5 @@ Is it true that $\begin{array} { r } { \int e ^ { 9 9 | x | ^ { 2 } } | f ( x ) 
 <1>1. $f$ entire with growth bound implies constant by Liouville.
 Proof: estimate.
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>2. Q.E.D. Proof: <1>1.
 :::

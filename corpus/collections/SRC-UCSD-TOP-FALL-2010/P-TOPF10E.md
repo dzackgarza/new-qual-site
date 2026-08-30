@@ -34,8 +34,7 @@ Proof: cohomology of $\mathbb{CP}^2$.
 <1>3. Suppose $f : S^2 \times S^2 \to \mathbb{CP}^2$ has degree $1$.
 Proof: assume such a map exists.
 
-<1>4. Then $f^* : H^4(\mathbb{CP}^2) \to H^4(S^2 \times S^2)$ is an isomorphism (multiplication by $\deg f = 1$).
-Proof: degree $1$ means $f^*$ sends the fundamental class to the fundamental class.
+<1>4. Then $f^* : H^4(\mathbb{CP}^2) \to H^4(S^2 \times S^2)$ is an isomorphism (multiplication by $\deg f = 1$). Proof: degree $1$ means $f^*$ sends the fundamental class to the fundamental class.
 
 <1>5. Write $f^*(x) = a\alpha + b\beta$ for integers $a, b$.
 Proof: <1>1.
@@ -52,6 +51,5 @@ Proof: <1>6 and <1>7; $2ab$ is even, $\pm 1$ is odd.
 <1>9. Contradiction, so no degree-$1$ map exists.
 Proof: <1>8.
 
-<1>10. Q.E.D.
-Proof: <1>9.
+<1>10. Q.E.D. Proof: <1>9.
 :::

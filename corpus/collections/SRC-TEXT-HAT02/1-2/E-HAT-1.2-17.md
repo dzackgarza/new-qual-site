@@ -23,8 +23,7 @@ Show that $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable.
 <1>1. $\mathbb{R}^2 - \mathbb{Q}^2$ is the plane with the countable dense set $\mathbb{Q}^2$ removed.
 Proof: $\mathbb{Q}^2$ is countable.
 
-<1>2. For each irrational $\alpha$, the vertical line $L_\alpha = \{(\alpha, y) : y \in \mathbb{R}\}$ is contained in $\mathbb{R}^2 - \mathbb{Q}^2$ (since $\alpha \notin \mathbb{Q}$).
-Proof: a point $(\alpha, y)$ is in $\mathbb{Q}^2$ only if $\alpha \in \mathbb{Q}$.
+<1>2. For each irrational $\alpha$, the vertical line $L_\alpha = \{(\alpha, y) : y \in \mathbb{R}\}$ is contained in $\mathbb{R}^2 - \mathbb{Q}^2$ (since $\alpha \notin \mathbb{Q}$). Proof: a point $(\alpha, y)$ is in $\mathbb{Q}^2$ only if $\alpha \in \mathbb{Q}$.
 
 <1>3. For each irrational $\alpha$, choose a basepoint $p_\alpha = (\alpha, 0)$ and a loop $\gamma_\alpha$ that goes around the point $(\alpha, 0)$ once (a small circle).
 Proof: construct a loop.
@@ -38,6 +37,5 @@ Proof: $\mathbb{R} \setminus \mathbb{Q}$ is uncountable.
 <1>6. Hence $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ contains uncountably many distinct elements, so it is uncountable.
 Proof: <1>4 and <1>5.
 
-<1>7. Q.E.D.
-Proof: <1>6.
+<1>7. Q.E.D. Proof: <1>6.
 :::

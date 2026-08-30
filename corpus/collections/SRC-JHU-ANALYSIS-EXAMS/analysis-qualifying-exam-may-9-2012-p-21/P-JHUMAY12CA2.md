@@ -33,12 +33,10 @@ Proof: $g - h = f$, and $|f(z)| < |h(z)| = |z| = 1$ on the boundary.
 <1>4. Hence $g$ and $h$ have the same number of zeros in $D(0,1)$.
 Proof: Rouché's theorem.
 
-<1>5. $h(z) = -z$ has exactly one zero in $D(0,1)$ (at $z = 0$).
-Proof: obvious.
+<1>5. $h(z) = -z$ has exactly one zero in $D(0,1)$ (at $z = 0$). Proof: obvious.
 
 <1>6. Hence $g(z) = f(z) - z$ has exactly one zero in $D(0,1)$, i.e. there is a unique $a \in D(0,1)$ with $f(a) = a$.
 Proof: <1>4 and <1>5.
 
-<1>7. Q.E.D.
-Proof: <1>6.
+<1>7. Q.E.D. Proof: <1>6.
 :::

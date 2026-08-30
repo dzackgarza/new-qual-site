@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: {.exercise}
-Let $R$ be a commutative ring. Show that if $a + \nilrad{R}$ is nilpotent in $R/\nilrad{R}$, then $a \in \nilrad{R}$.
+Let $R$ be a commutative ring.
+Show that if $a + \nilrad{R}$ is nilpotent in $R/\nilrad{R}$, then $a \in \nilrad{R}$.
 :::
 
 ::: {.solution}

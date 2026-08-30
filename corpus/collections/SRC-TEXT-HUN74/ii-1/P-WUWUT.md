@@ -29,8 +29,7 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part 1: $\mathbb{Q}$ is not finitely generated:
-<2>1. Suppose for contradiction that $\mathbb{Q}$ is finitely generated as an abelian group:
+<1>1. Part 1: $\mathbb{Q}$ is not finitely generated: <2>1. Suppose for contradiction that $\mathbb{Q}$ is finitely generated as an abelian group:
 \[
 \mathbb{Q} = \left\langle \frac{a_1}{b_1}, \frac{a_2}{b_2}, \ldots, \frac{a_k}{b_k} \right\rangle,
 \]
@@ -50,11 +49,9 @@ This implies $p \mid B$, which contradicts $p > B \ge 1$.
 Therefore $\frac{1}{p} \notin \frac{1}{B}\mathbb{Z}$, so $\mathbb{Q}$ is not finitely generated.
 Proof: existence of arbitrarily large primes.
 
-<1>2. Part 2: $\mathbb{Q}$ is not a free abelian group:
-<2>1. Suppose for contradiction that $\mathbb{Q}$ is a free abelian group with basis $\mathcal{B} \subset \mathbb{Q}$.
+<1>2. Part 2: $\mathbb{Q}$ is not a free abelian group: <2>1. Suppose for contradiction that $\mathbb{Q}$ is a free abelian group with basis $\mathcal{B} \subset \mathbb{Q}$.
 Proof: assumption.
-<2>2. If $|\mathcal{B}| = 1$, then $\mathbb{Q} \cong \mathbb{Z}$, so $\mathbb{Q}$ would be cyclic and finitely generated, contradicting <1>1.
-Proof: rank 1 free abelian group is cyclic.
+<2>2. If $|\mathcal{B}| = 1$, then $\mathbb{Q} \cong \mathbb{Z}$, so $\mathbb{Q}$ would be cyclic and finitely generated, contradicting <1>1. Proof: rank 1 free abelian group is cyclic.
 <2>3. If $|\mathcal{B}| \ge 2$, choose two distinct basis elements $x, y \in \mathcal{B}$.
 Write $x = \frac{a}{b}$ and $y = \frac{c}{d}$ with non-zero integers $a, b, c, d \in \mathbb{Z} \setminus \{0\}$.
 Consider the linear combination:
@@ -67,14 +64,12 @@ Proof: non-zero integer relation.
 <2>4. Therefore $\mathbb{Q}$ cannot be a free abelian group.
 Proof: proof by contradiction.
 
-<1>3. Part 3: Counterexample to "torsion-free implies free" without finite generation:
-<2>1. The group $\mathbb{Q}$ is torsion-free: if $n \cdot \frac{a}{b} = 0$ for $n \in \mathbb{Z} \setminus \{0\}$, then $na = 0 \implies a = 0 \implies \frac{a}{b} = 0$.
+<1>3. Part 3: Counterexample to "torsion-free implies free" without finite generation: <2>1. The group $\mathbb{Q}$ is torsion-free: if $n \cdot \frac{a}{b} = 0$ for $n \in \mathbb{Z} \setminus \{0\}$, then $na = 0 \implies a = 0 \implies \frac{a}{b} = 0$.
 Proof: integral domain property of $\mathbb{Z}$.
 <2>2. By Part 2, $\mathbb{Q}$ is not free.
 Therefore, the statement "every torsion-free abelian group is free" is false in general, and the finite generation hypothesis in Exercise 9 is indispensable.
 Proof: <1>2 and <2>1.
 
-<1>4. Conclusion:
-$\mathbb{Q}$ is not finitely generated, not free, and serves as a counterexample to the torsion-free freeness theorem for infinitely generated groups. Q.E.D.
-Proof: <1>1 through <1>3.
+<1>4. Conclusion: $\mathbb{Q}$ is not finitely generated, not free, and serves as a counterexample to the torsion-free freeness theorem for infinitely generated groups.
+Q.E.D. Proof: <1>1 through <1>3.
 :::

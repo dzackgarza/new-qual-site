@@ -41,6 +41,5 @@ Proof: <1>3 and <1>4.
 <1>6. Therefore $\mathbb{CP}^2$ has no orientation-reversing self-homeomorphism.
 Proof: <1>5.
 
-<1>7. Q.E.D.
-Proof: <1>6.
+<1>7. Q.E.D. Proof: <1>6.
 :::

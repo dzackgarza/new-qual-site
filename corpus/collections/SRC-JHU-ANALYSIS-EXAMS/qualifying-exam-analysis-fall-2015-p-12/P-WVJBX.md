@@ -43,6 +43,5 @@ Proof: a function with finite integral is finite almost everywhere.
 <1>6. Therefore $|f_{n_k}(x)|^2 \to 0$, i.e. $f_{n_k}(x) \to 0$, for almost every $x$.
 Proof: the terms of a convergent series tend to $0$.
 
-<1>7. Q.E.D.
-Proof: <1>6.
+<1>7. Q.E.D. Proof: <1>6.
 :::

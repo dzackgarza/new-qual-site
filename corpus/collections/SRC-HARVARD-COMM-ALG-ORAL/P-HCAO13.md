@@ -49,6 +49,5 @@ Proof: each term lies in $I$ (the first three contain a factor in $I$, and the l
 <1>8. But $s_1 s_2 \in S$ (since $S$ is multiplicative), so $s_1 s_2 \in I \cap S$, contradicting $I \cap S = \emptyset$.
 Proof: $S$ is closed under multiplication, and $I$ is disjoint from $S$.
 
-<1>9. Q.E.D.
-Proof: the contradiction in <1>8 shows $I$ is prime.
+<1>9. Q.E.D. Proof: the contradiction in <1>8 shows $I$ is prime.
 :::

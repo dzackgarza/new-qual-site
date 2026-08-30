@@ -40,6 +40,5 @@ Proof: the induced maps on cohomology and homology are dual.
 <1>7. Hence $d = 1$, so $f$ has degree $+1$ and is orientation-preserving.
 Proof: <1>4 and <1>6.
 
-<1>8. Q.E.D.
-Proof: <1>7.
+<1>8. Q.E.D. Proof: <1>7.
 :::

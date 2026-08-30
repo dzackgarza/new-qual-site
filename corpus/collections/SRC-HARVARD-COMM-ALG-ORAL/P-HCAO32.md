@@ -54,8 +54,7 @@ Proof: the three generators $y - x^2$, $z - x^3$, and $xz - y^2$ form a Gröbner
 
 **Part (c).**
 
-<1>1. The closure $\overline X$ in $\PP^3$ is the projective twisted cubic, parametrized by $[x:y:z:w] = [\lambda : \lambda^2 : \lambda^3 : 1]$ (equivalently $[s^3 : s^2 t : s t^2 : t^3]$).
-Proof: homogenize the affine parametrization $(t, t^2, t^3)$.
+<1>1. The closure $\overline X$ in $\PP^3$ is the projective twisted cubic, parametrized by $[x:y:z:w] = [\lambda : \lambda^2 : \lambda^3 : 1]$ (equivalently $[s^3 : s^2 t : s t^2 : t^3]$). Proof: homogenize the affine parametrization $(t, t^2, t^3)$.
 
 <1>2. The three given quadrics $x^2 - yw$, $xz - y^2$, $xy - zw$ are the $2 \times 2$ minors of the matrix $\begin{pmatrix} x & y & z \\ w & x & y \end{pmatrix}$.
 Proof: $\det\begin{pmatrix} x & y \\ w & x \end{pmatrix} = x^2 - yw$, $\det\begin{pmatrix} x & y \\ y & z \end{pmatrix} = xz - y^2$, $\det\begin{pmatrix} x & z \\ w & y \end{pmatrix} = xy - zw$.
@@ -71,6 +70,5 @@ Proof: the ideal of $2 \times 2$ minors of a $2 \times 3$ matrix of linear forms
 <1>1. The Hilbert polynomial of the twisted cubic is $3d + 1$.
 Proof: the twisted cubic has degree $3$ and genus $0$, so its Hilbert polynomial is $3d + 1$ (the Hilbert polynomial of a degree-$3$ rational curve in $\PP^3$).
 
-<1>2. Q.E.D.
-Proof: <1>2 (a), <1>2 (b), <1>4 (c), and <1>1 (d).
+<1>2. Q.E.D. Proof: <1>2 (a), <1>2 (b), <1>4 (c), and <1>1 (d).
 :::

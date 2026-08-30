@@ -34,6 +34,5 @@ Proof: the covering dimension is monotone under taking subspaces (any open cover
 <1>3. Hence every closed subspace of $\RR^N$ has dimension $\le N$.
 Proof: <1>1 and <1>2.
 
-<1>4. Q.E.D.
-Proof: <1>3 is the claim.
+<1>4. Q.E.D. Proof: <1>3 is the claim.
 :::

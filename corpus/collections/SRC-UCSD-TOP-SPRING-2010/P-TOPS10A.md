@@ -41,6 +41,5 @@ Proof: by cellular approximation, $\tilde f$ is homotopic to a map into the $n$-
 <1>4. Hence $f = p \circ \tilde f$ is nullhomotopic.
 Proof: a nullhomotopy of $\tilde f$ composes with the covering map $p: S^{n+1} \to \RP^{n+1}$ to give a nullhomotopy of $f$.
 
-<1>5. Q.E.D.
-Proof: <1>4.
+<1>5. Q.E.D. Proof: <1>4.
 :::

@@ -49,6 +49,5 @@ Proof: $T$ sends lines to lines (it is linear), and no line is fixed because a f
 <2>2. Example: $T(x_1, \dots, x_{2n}) = (-x_2, x_1, -x_4, x_3, \dots, -x_{2n}, x_{2n-1})$, a block rotation by $90^\circ$ in each coordinate pair.
 Proof: $T$ has no real eigenvectors (its eigenvalues are $\pm i$), so the induced map on $\RP^{2n-1}$ has no fixed point.
 
-<1>4. Q.E.D.
-Proof: <1>1, <1>2, and <1>3 are the three requested statements.
+<1>4. Q.E.D. Proof: <1>1, <1>2, and <1>3 are the three requested statements.
 :::

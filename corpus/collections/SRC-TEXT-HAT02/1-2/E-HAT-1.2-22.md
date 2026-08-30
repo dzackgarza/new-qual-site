@@ -63,6 +63,5 @@ Proof: the knot is connected, so its diagram is connected.
 <1>4. Hence all generators $x_i$ are identified, so the abelianization is $\langle x \rangle \cong \ZZ$.
 Proof: <1>2 and <1>3.
 
-<1>5. Q.E.D.
-Proof: <1>5 (a) and <1>4 (b).
+<1>5. Q.E.D. Proof: <1>5 (a) and <1>4 (b).
 :::

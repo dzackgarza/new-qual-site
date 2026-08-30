@@ -42,6 +42,5 @@ Proof: van Kampen (or the fact that $\pi_1$ of a wedge is the free product of th
 <2>2. Hence $\pi_1(X) = \ZZ$.
 Proof: <1>1.2 and <1>3.1.
 
-<1>4. Q.E.D.
-Proof: $\pi_1(X) = \ZZ$.
+<1>4. Q.E.D. Proof: $\pi_1(X) = \ZZ$.
 :::

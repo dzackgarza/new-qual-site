@@ -39,8 +39,7 @@ Proof: a simplicial complex with $n$ vertices has no simplices of dimension $\ge
 <1>6. Hence $\tilde H_i(X) = 0$ for $i \ge n - 1$.
 Proof: <1>4 and <1>5 (the nerve has $n$ vertices, so $H_i(N) = 0$ for $i \ge n$; combined with the shift, $\tilde H_i(X) = 0$ for $i \ge n-1$).
 
-<1>7. Example showing sharpness: take $X = S^{n-1}$ covered by the $n$ open hemispheres $A_i = \{x \in S^{n-1} : x_i > 0\}$ (and their slight enlargements to make them open and cover $S^{n-1}$).
-Proof: construct the example.
+<1>7. Example showing sharpness: take $X = S^{n-1}$ covered by the $n$ open hemispheres $A_i = \{x \in S^{n-1} : x_i > 0\}$ (and their slight enlargements to make them open and cover $S^{n-1}$). Proof: construct the example.
 
 <1>8. Each intersection of these hemispheres is contractible (or empty), so the hypothesis holds, but $\tilde H_{n-1}(S^{n-1}) = \ZZ \neq 0$.
 Proof: <1>7 (the intersections are convex, hence contractible, but $S^{n-1}$ has $\tilde H_{n-1} = \ZZ$).
@@ -48,6 +47,5 @@ Proof: <1>7 (the intersections are convex, hence contractible, but $S^{n-1}$ has
 <1>9. Hence the bound $i \ge n-1$ is best possible.
 Proof: <1>8.
 
-<1>10. Q.E.D.
-Proof: <1>6 and <1>9.
+<1>10. Q.E.D. Proof: <1>6 and <1>9.
 :::

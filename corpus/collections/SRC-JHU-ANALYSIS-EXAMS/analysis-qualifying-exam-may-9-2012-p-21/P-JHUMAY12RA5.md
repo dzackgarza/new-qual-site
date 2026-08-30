@@ -23,11 +23,8 @@ a. If $\{f_i\}$ is a sequence in $L^2([0,1])$ converging weakly to $f$ in $L^2([
 b. If $\{f_i\}$ is a sequence in $L^2([0,1])$ converging strongly to $f$ in $L^2([0,1])$, then $f_i^2$ converges strongly to $f^2$ in $L^1([0,1])$.
 
 ::: {.solution}
-<1>1. Part (a): Weak convergence in $L^2$ does not imply weak convergence of squares in $L^1$:
-<2>1. **The assertion is FALSE.**
-Proof: statement of falsity.
-<2>2. **Counterexample:**
-Let $f_n(x) = \sin(2\pi n x)$ on $[0, 1]$.
+<1>1. Part (a): Weak convergence in $L^2$ does not imply weak convergence of squares in $L^1$: <2>1. **The assertion is FALSE.** Proof: statement of falsity.
+<2>2. **Counterexample:** Let $f_n(x) = \sin(2\pi n x)$ on $[0, 1]$.
 By the Riemann–Lebesgue Lemma, for any test function $g \in L^2([0, 1])$:
 \[
 \lim_{n \to \infty} \int_0^1 f_n(x) g(x) \, dx = \lim_{n \to \infty} \int_0^1 \sin(2\pi n x) g(x) \, dx = 0.
@@ -50,9 +47,7 @@ In particular, for the constant function $h(x) = 1 \in L^\infty([0, 1])$:
 Thus $f_n^2 \rightharpoonup \frac{1}{2} \neq 0$ weakly in $L^1([0, 1])$.
 Proof: weak limit in $L^1$ against $L^\infty$ functionals.
 
-<1>2. Part (b): Strong convergence in $L^2$ implies strong convergence of squares in $L^1$:
-<2>1. **The assertion is TRUE.**
-Proof: statement of truth.
+<1>2. Part (b): Strong convergence in $L^2$ implies strong convergence of squares in $L^1$: <2>1. **The assertion is TRUE.** Proof: statement of truth.
 <2>2. Let $\{f_i\}$ be a sequence converging strongly to $f$ in $L^2([0, 1])$, so $\|f_i - f\|_{L^2} \to 0$.
 Since convergent sequences in normed spaces are bounded, there exists $M < \infty$ such that $\|f_i\|_{L^2} \le M$ for all $i \ge 1$.
 Proof: boundedness of convergent sequences.
@@ -73,7 +68,6 @@ Therefore:
 Thus $f_i^2 \to f^2$ strongly in $L^1([0, 1])$.
 Proof: squeeze theorem.
 
-<1>3. Conclusion:
-(a) is False (with counterexample $f_n = \sin(2\pi n x)$) and (b) is True (by Cauchy–Schwarz). Q.E.D.
-Proof: <1>1 and <1>2.
+<1>3. Conclusion: (a) is False (with counterexample $f_n = \sin(2\pi n x)$) and (b) is True (by Cauchy–Schwarz).
+Q.E.D. Proof: <1>1 and <1>2.
 :::

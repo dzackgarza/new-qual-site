@@ -49,6 +49,5 @@ Proof: <1>6 and the hypothesis $\chi(M) = k$.
 <1>8. $H_2(M) \cong \ZZ^{k-2}$.
 Proof: $H_2(M)$ is free abelian (its torsion would pair nontrivially with $H_1$ under Poincaré duality, but $H_1 = 0$), so $H_2(M) \cong \ZZ^{b_2} = \ZZ^{k-2}$ by <1>7.
 
-<1>9. Q.E.D.
-Proof: <1>1, <1>2, <1>8, <1>4, <1>3.
+<1>9. Q.E.D. Proof: <1>1, <1>2, <1>8, <1>4, <1>3.
 :::

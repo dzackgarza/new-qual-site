@@ -32,9 +32,7 @@ Proof: the mapping cylinder of $f: S \to X$ has boundary $S$ (the "top" of the c
 <1>3. Apply Mayer–Vietoris to $\RR^3 = N \cup (\RR^3 \setminus \operatorname{int} N)$ with intersection $S$.
 Proof: decompose $\RR^3$ into the neighborhood $N$ and its complement, meeting along the boundary surface $S$.
 
-<1>4. The relevant part of the Mayer–Vietoris sequence is
-$$H_2(\RR^3) \to H_1(S) \to H_1(N) \oplus H_1(\RR^3 \setminus \operatorname{int} N) \to H_1(\RR^3).$$
-Proof: the Mayer–Vietoris sequence in low degrees.
+<1>4. The relevant part of the Mayer–Vietoris sequence is $$H_2(\RR^3) \to H_1(S) \to H_1(N) \oplus H_1(\RR^3 \setminus \operatorname{int} N) \to H_1(\RR^3).$$ Proof: the Mayer–Vietoris sequence in low degrees.
 
 <1>5. $H_2(\RR^3) = 0$ and $H_1(\RR^3) = 0$.
 Proof: $\RR^3$ is contractible.
@@ -45,8 +43,7 @@ Proof: <1>4 and <1>5 (the map is injective since its kernel is the image of $H_2
 <1>7. $H_1(S)$ is free abelian (since $S$ is a closed orientable surface).
 Proof: $H_1$ of a closed orientable surface of genus $g$ is $\ZZ^{2g}$.
 
-<1>8. $H_1(N) \cong H_1(X)$ (the mapping cylinder deformation retracts onto $X$).
-Proof: a mapping cylinder deformation retracts onto its base.
+<1>8. $H_1(N) \cong H_1(X)$ (the mapping cylinder deformation retracts onto $X$). Proof: a mapping cylinder deformation retracts onto its base.
 
 <1>9. The map $H_1(S) \to H_1(N) \oplus H_1(\RR^3 \setminus \operatorname{int} N)$ is an isomorphism.
 Proof: it is injective (<1>6), and its cokernel maps into $H_1(\RR^3) = 0$ (<1>5), so it is also surjective.
@@ -63,6 +60,5 @@ Proof: <1>10 and <1>11.
 <1>13. Hence no such embedding exists.
 Proof: <1>1–<1>12.
 
-<1>14. Q.E.D.
-Proof: <1>13.
+<1>14. Q.E.D. Proof: <1>13.
 :::

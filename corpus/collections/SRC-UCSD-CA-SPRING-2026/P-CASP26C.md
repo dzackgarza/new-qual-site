@@ -43,8 +43,7 @@ Proof: <1>4 and the reverse triangle inequality.
 <1>6. Hence on $|z| = 2$, $|az^n| < 1 \le |1 + z|$, so by Rouché's theorem, $1 + z + az^n$ and $1 + z$ have the same number of zeros in $|z| < 2$.
 Proof: Rouché's theorem.
 
-<1>7. $1 + z$ has exactly one zero in $|z| < 2$ (at $z = -1$).
-Proof: $1 + z = 0$ iff $z = -1$, which has modulus $1 < 2$.
+<1>7. $1 + z$ has exactly one zero in $|z| < 2$ (at $z = -1$). Proof: $1 + z = 0$ iff $z = -1$, which has modulus $1 < 2$.
 
 <1>8. Hence $1 + z + az^n$ has a root in $|z| < 2$, contradicting the assumption that all roots have modulus $> 2$.
 Proof: <1>6 and <1>7.
@@ -52,6 +51,5 @@ Proof: <1>6 and <1>7.
 <1>9. Therefore $1 + z + az^n$ has at least one root in $|z| \le 2$.
 Proof: <1>1–<1>8.
 
-<1>10. Q.E.D.
-Proof: <1>9.
+<1>10. Q.E.D. Proof: <1>9.
 :::

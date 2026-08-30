@@ -21,8 +21,7 @@ Prove Picard's theorem using the fact that the modular invariant $j$ uniformizes
 :::
 
 ::: {.solution}
-<1>1. The modular invariant $j : \mathbb{H} \to \mathbb{C}$ is a surjective holomorphic map that is invariant under $\operatorname{PSL}_2(\mathbb{Z})$, and it uniformizes the hyperbolic triangle of type $(2,3,\infty)$: it is a covering map onto $\mathbb{C} \setminus \{0, 1\}$ (with ramification of order $2$ over $1$, order $3$ over $0$, and a cusp at $\infty$).
-Proof: the given fact about $j$.
+<1>1. The modular invariant $j : \mathbb{H} \to \mathbb{C}$ is a surjective holomorphic map that is invariant under $\operatorname{PSL}_2(\mathbb{Z})$, and it uniformizes the hyperbolic triangle of type $(2,3,\infty)$: it is a covering map onto $\mathbb{C} \setminus \{0, 1\}$ (with ramification of order $2$ over $1$, order $3$ over $0$, and a cusp at $\infty$). Proof: the given fact about $j$.
 
 <1>2. Let $f : \mathbb{C} \to \mathbb{C} \setminus \{0, 1\}$ be an entire function omitting $0$ and $1$.
 Proof: suppose $f$ omits two values (normalize them to $0$ and $1$).
@@ -42,6 +41,5 @@ Proof: <1>3–<1>5 (if $g$ is constant then $\tilde f$ is constant, so $f = j \c
 <1>7. Therefore any entire function omitting two values is constant — Picard's (little) theorem.
 Proof: <1>2 and <1>6.
 
-<1>8. Q.E.D.
-Proof: <1>7.
+<1>8. Q.E.D. Proof: <1>7.
 :::

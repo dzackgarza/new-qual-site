@@ -37,6 +37,5 @@ Proof: $\ZZ^n$ is torsion-free, so a finite group has no nontrivial homomorphism
 <1>4. Hence $[X, T^n]$ has a single element, so every map $f : X \to T^n$ is null-homotopic.
 Proof: <1>2 and <1>3.
 
-<1>5. Q.E.D.
-Proof: <1>4.
+<1>5. Q.E.D. Proof: <1>4.
 :::

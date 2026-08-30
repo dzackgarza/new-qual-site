@@ -38,6 +38,5 @@ Proof: $\pi_1(S^{n-1}) = 0$ for $n - 1 \ge 2$, and the fundamental group of a we
 <1>5. Hence $\pi_1(\RR^n \sm \theset{p_1, \dots, p_k}) = 0$.
 Proof: <1>3 and <1>4 (homotopy invariance of $\pi_1$).
 
-<1>6. Q.E.D.
-Proof: <1>1 and <1>5 show the complement is simply connected.
+<1>6. Q.E.D. Proof: <1>1 and <1>5 show the complement is simply connected.
 :::
