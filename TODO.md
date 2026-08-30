@@ -1554,13 +1554,18 @@ One subject at a time, chapter by chapter, reading the existing pages before eac
   The subject now matches the filed table of contents.
   One trap the plan does not record: an old folder and its replacement chapter can slug to the same route -- `Groups` against `groups`, `Fields` against `fields` -- which `qualc check` passes and only the build rejects, so a subject cannot keep a retitled stub of a folder it has replaced.
 
-- [ ] Real analysis.
+- [x] Real analysis.
+  Seven chapters, three cross-cutting pages, and the subject index (`fdd09201a`, described in `93f661b84`; earlier chapters in `3c91a0e0b`, described in `937cfd83a`). The 20 `Quals` and 4 `Exercises` pages are replaced by topic queries, all 187 cards checked reachable first, and the twelve exam PDF links from the deleted tracking page are recorded on the collection cards.
 
-- [ ] Topology.
+- [x] Topology.
+  Seven chapters, three cross-cutting pages, and the subject index (`119777b56`). `the-standard-spaces.md` is the table the plan calls the highest-value page in the subject.
+  The 22 `Quals` pages are replaced by topic queries, all 306 cards checked reachable first.
 
-- [ ] Prelim.
+- [x] Prelim.
+  `which-technique.md` and `counterexamples.md`, with the subject index rewritten to route to them (`79c1b8233`). This paper is computational, so the recognition page carries most of the subject.
 
-- [ ] Applied algebra.
+- [x] Applied algebra.
+  Five chapters, all authored rather than moved, since the subject had 247 problems and no theory pages at all (`79c1b8233`). Each carries a topics query, so those problems now sit under the theory they use.
 
 Everything below is evidence for that authoring, not a plan that precedes it.
 
