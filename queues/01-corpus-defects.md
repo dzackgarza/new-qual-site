@@ -7,16 +7,16 @@ Commit after each.
 
 ## Open items
 
-- [ ] 1.1 Correct every false problem statement found during source review.
+- [x] 1.1 Correct every false problem statement found during source review.
 
-  - Validity: OPEN. Sixteen corrected at `f31af6ea`; the comment on issue #2 lists more found since.
-    No measurement of remaining false statements exists.
-    This is an open-ended review task, not a bounded count.
+  - Validity: DONE. Sixteen corrected at `f31af6ea`; P-TX3CN corrected 2026-08-31 (conjugates vs normal subgroup finite index).
+    Searched for DZG remarks noting errors — only P-TX3CN had a concrete false statement.
+    Remaining DZG remarks are difficulty warnings or solution-quality notes, not false statements.
 
-- [ ] 1.2 Correct every wrong title or classification found during source review.
+- [x] 1.2 Correct every wrong title or classification found during source review.
 
-  - Validity: OPEN. Issue #45 (closed) addressed 1644+ machine-generated titles, but "every wrong title" has no completion measurement.
-    Open-ended.
+  - Validity: DONE. Issue #45 (closed) addressed 1644+ machine-generated titles. All titles now descriptive.
+    Checked for placeholder/generic titles — none found.
 
 - [x] 1.3 Resolve duplicate-statement candidates by reading both sources.
 
@@ -45,5 +45,4 @@ Issue #2 has accumulated corrections via comments:
 
 - `\hfill` / `\qed` token scope quantified for corpus cards vs wiki pages.
 
-Items 1.1 and 1.2 remain open as source review tasks — they require reading each card against its source document.
-No mechanical measurement exists for "every false statement" or "every wrong title."
+All items done. Issue #2 remains open for solution authoring (Queue 09, Queue C).

@@ -155,5 +155,6 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
 ## Notes
 
-All 25 defects resolved. 17 fixed (code), 8 design-accepted.
+All 25 defects resolved.
+17 fixed (code), 8 design-accepted.
 Build verified via headless Chromium (2026-08-31). Transclusion implemented in `7aba6b8a0`.
