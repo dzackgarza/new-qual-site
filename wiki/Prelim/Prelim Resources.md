@@ -142,7 +142,6 @@ Pointwise uniform convergence of functions, equi-continuity, *l*2, *L*2(*S*1),
 
 - [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-
 - [prelimsolutions_0.pdf](attachments/prelimsolutions_0.pdf)
 
 - [prelimsolutions.pdf](attachments/prelimsolutions.pdf)

@@ -22,7 +22,6 @@ order: 90
 
   - [Hints/Solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
 
-
 ## Galois Theory
 
 [Algebra HW 11 Solns.pdf](attachments/Algebra_HW_11_Solns.pdf)
