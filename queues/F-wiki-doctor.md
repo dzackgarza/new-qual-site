@@ -31,14 +31,7 @@ ok
 
 Directories with one child `.md` file besides `index.md`.
 
-- [x] wiki/algebra/appendices (index.md + appendix.md)
-- [x] wiki/topology/covering-spaces (index.md + covering-spaces.md)
-- [x] wiki/topology/cw-complexes (index.md + cw-complexes.md)
-- [x] wiki/topology/degree (index.md + fixed-points-and-degree.md)
-- [x] wiki/topology/surfaces (index.md + surfaces-and-manifolds.md)
-- [x] wiki/topology/workshops (index.md + topology-week-1-preliminaries.md)
-
-Not defects. Chapters not yet written. Per `AGENTS.md`: "Do not remove a thin or empty section."
+Not defects. Each directory has a content page with real prose (58–377 lines). The directory structure is a navigation choice, not a content gap.
 
 ### sibling-duplicate-titles (0)
 
@@ -72,15 +65,14 @@ ok
 
 ok
 
-### heading-or-wikilink-only-bodies (3)
+### heading-or-wikilink-only-bodies (0)
 
 Pages whose body is only headings or wikilinks, no prose.
 
-- [x] wiki/complex-analysis/appendices/gauss-lucas-theorem.md
-- [x] wiki/prelim/useful-tricks.md
-- [x] wiki/real-analysis/undergraduate/riemann-integrability.md
-
-Not defects. Chapters not yet written. Per `AGENTS.md`: "Do not remove a thin or empty section."
+All three pages now have prose:
+- `gauss-lucas-theorem.md`: theorem statement, proof, consequences
+- `useful-tricks.md`: prose explaining the integration-by-parts and series images
+- `riemann-integrability.md`: Lebesgue criterion, consequences, counterexample
 
 ## Authoring signals
 
