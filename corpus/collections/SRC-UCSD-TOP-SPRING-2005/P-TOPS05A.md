@@ -12,6 +12,10 @@ classification:
   - Spheres
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -19,4 +23,12 @@ review: draft
 Prove if $G$ has $2$ elements, then one of them is the antipodal map.
 
 (b) If $S^{2n} \to X$ is a covering space, prove $X$ is homeomorphic to $S^{2n}$ or $\mathbb{RP}^{2n}$.
+:::
+
+::: {.solution}
+<1>1. $M$ manifold.
+Proof: chart.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
