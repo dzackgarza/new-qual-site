@@ -12,6 +12,10 @@ classification:
   - Modules
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -22,4 +26,12 @@ Explain how this relates to part (a).
 
 c. Determine all conjugacy classes of 3x3 matrices over $\mathbb{Q}$ with characteristic polynomial $x^3 - 2x^2 + x$.
 Explain how this relates to part (a).
+:::
+
+::: {.solution}
+<1>1. $G$ Sylow.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

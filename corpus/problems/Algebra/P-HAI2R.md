@@ -13,6 +13,10 @@ classification:
   - Finite Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -27,4 +31,12 @@ Let $f(x) = x^3 - 7$.
 
 3. Let $M$ be the splitting field for $f$ over $\mathbb F_{13}$, the field with 13 elements.
    What is the Galois group of $M / \mathbb F_{13}$?
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
