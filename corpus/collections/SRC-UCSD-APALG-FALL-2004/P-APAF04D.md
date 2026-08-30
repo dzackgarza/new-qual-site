@@ -11,6 +11,10 @@ classification:
   - Character Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -25,4 +29,12 @@ then there exist a nonsingular matrix $T$ such that for all $\sigma$,
 \[
 T^{-1}A(\sigma)T=B(\sigma).
 \]
+:::
+
+::: {.solution}
+<1>1. $R$ PID.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
