@@ -15,6 +15,8 @@ order: 1
 
 - [[algebra/groups/groups-of-small-order|Groups of small order]], the table to check against.
 
+- [[algebra/groups/characteristic-subgroups|Characteristic subgroups, normal closures, and cores]].
+
 - [[algebra/groups/series-and-solvability|Series and solvability]], and where nilpotence sits.
 
 The counting arguments are [[algebra/group-actions/index|Group actions]].

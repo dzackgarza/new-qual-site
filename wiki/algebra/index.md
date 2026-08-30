@@ -46,7 +46,7 @@ Across the chapters:
 
 - [[algebra/groups/groups-of-small-order|Groups of small order]] -- the table to check a counting argument against.
 
-Also here: [[algebra/appendices/index|appendices]], [[algebra/resources/index|resources]], and [[algebra/workshops/index|workshops]].
+Also here: [[algebra/resources/index|resources]] and [[algebra/workshops/index|workshops]].
 
 ## The syllabus
 

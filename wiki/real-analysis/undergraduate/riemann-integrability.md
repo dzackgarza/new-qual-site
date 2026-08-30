@@ -8,7 +8,8 @@ problems:
 
 # Riemann Integrability
 
-The Riemann integral of a bounded function $f \colon [a,b] \to \RR$ is defined via upper and lower sums over partitions. The key question is: which functions are Riemann integrable?
+The Riemann integral of a bounded function $f \colon [a,b] \to \RR$ is defined via upper and lower sums over partitions.
+The key question is: which functions are Riemann integrable?
 
 ## The Lebesgue criterion
 
@@ -18,7 +19,8 @@ The complete answer is the Lebesgue criterion, which connects Riemann integrabil
 [[PR-TDH2A]] A bounded function $f \colon [a,b] \to \RR$ is Riemann integrable if and only if its set of discontinuities $D_f$ has Lebesgue measure zero.
 :::
 
-This means "most" bounded functions are Riemann integrable — the discontinuity set must be small (null), but can be infinite. The Cantor set is uncountable yet has measure zero, so a function discontinuous exactly on the Cantor set is Riemann integrable.
+This means "most" bounded functions are Riemann integrable — the discontinuity set must be small (null), but can be infinite.
+The Cantor set is uncountable yet has measure zero, so a function discontinuous exactly on the Cantor set is Riemann integrable.
 
 ## Key consequences
 
@@ -38,4 +40,6 @@ The upper Riemann sums are always $b-a$ and the lower sums are always $0$, so th
 
 ## Relationship to the Lebesgue integral
 
-Every Riemann integrable function is Lebesgue integrable, and the integrals agree. But the Lebesgue integral is strictly more general: $\chi_\QQ$ is Lebesgue integrable with $\int \chi_\QQ = 0$, yet not Riemann integrable. The Lebesgue criterion is the bridge: Riemann integrability is exactly the condition that makes the two theories coincide.
+Every Riemann integrable function is Lebesgue integrable, and the integrals agree.
+But the Lebesgue integral is strictly more general: $\chi_\QQ$ is Lebesgue integrable with $\int \chi_\QQ = 0$, yet not Riemann integrable.
+The Lebesgue criterion is the bridge: Riemann integrability is exactly the condition that makes the two theories coincide.

@@ -87,3 +87,12 @@ If $\mfm$ is maximal and $x\in R\sm\mfm$ then $\mfm + Rx = R = \gens 1$.
 This is the standard way a maximality hypothesis gets used: it turns "not in $\mfm$" into "generates everything together with $\mfm$".
 
 :::
+
+## Gorenstein rings
+
+[[D-DU4UQ]]
+
+:::{.example title="Why care about Gorenstein rings?"}
+If $R\in \gr\kAlg$ with $\dim_k R < \infty$, then $R$ decomposes as $R = R_0 \oplus R_1 \oplus \cdots R_n$ with $R_0 \da k$, and $R$ is Gorenstein iff $R$ satisfies "Poincaré duality": $\dim_k R_0 = \dim_k R_n = 1$ and there is a perfect pairing $R_i \tensor_k R_{n-j} \to R_n$.
+
+:::
