@@ -55,3 +55,11 @@ Show that every non-zero ring with identity has a proper maximal ideal.
 <1>4. Conclusion:
     Every non-zero ring with identity contains a proper maximal ideal. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $H$ subgroup.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

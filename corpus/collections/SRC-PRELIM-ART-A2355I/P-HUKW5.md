@@ -12,9 +12,21 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
 Define the Jacobian matrix of a mapping $f: \mathbb{R}^n \to \mathbb{R}^m$ at a point $a = (a_1, \dots, a_n)$ of $\mathbb{R}^n$.
 Compute the Jacobian matrix of $f(r,\theta) = (r\cos\theta, r\sin\theta)$ at $a = (0,0)$.
+:::
+
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

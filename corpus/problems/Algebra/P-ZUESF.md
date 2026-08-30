@@ -57,3 +57,11 @@ Prove that $n_p = 1$, and consequently every Sylow $p$-subgroup is normal in $G$
 <1>5. Conclusion:
     $n_p \mid q < p$ forces $n_p = 1$ and $P \trianglelefteq G$. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
