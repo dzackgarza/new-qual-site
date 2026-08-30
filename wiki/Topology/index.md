@@ -5,6 +5,51 @@ order: 40
 
 # Topology
 
+## What the exam asks
+
+The paper is a third point-set and two thirds algebraic, and each half asks a small number of questions.
+
+| The question | Where it is decided |
+| --- | --- |
+| Compute $\pi_1$ of this space | [[Topology/fundamental-group/compute-pi-1\|Compute $\pi_1$]] |
+| Compute the homology of this space | [[Topology/homology/compute-h-star\|Compute $H_*$]] |
+| What is this space, and what are its invariants | [[Topology/the-standard-spaces\|The standard spaces]] |
+| Is this true for all spaces | [[Topology/counterexamples\|Counterexamples]] |
+
+The standard-spaces table answers more problems outright than any computation, since most spaces on the paper are one of its rows, or a wedge, product, or puncture of one.
+
+## The chapters, in dependency order
+
+1. [[Topology/point-set/index|Point-set topology]] -- constructions, connectedness, compactness, separation.
+
+2. [[Topology/fundamental-group/index|Fundamental group]] -- homotopy and van Kampen.
+
+3. [[Topology/covering-spaces/index|Covering spaces]] -- lifting and the classification.
+
+4. [[Topology/cw-complexes/index|CW complexes]] -- cell structures and attaching maps.
+
+5. [[Topology/homology/index|Homology]] -- cellular, Mayer-Vietoris, the long exact sequence.
+
+6. [[Topology/degree/index|Degree and fixed points]] -- Brouwer, Lefschetz, Borsuk-Ulam.
+
+7. [[Topology/surfaces/index|Surfaces and manifolds]] -- the classification.
+
+Across the chapters:
+
+- [[Topology/review|Review sheet]] -- every statement, on one page.
+
+- [[Topology/the-standard-spaces|The standard spaces]] -- the table, with $\pi_1$ and $H_*$.
+
+- [[Topology/counterexamples|Counterexamples]] -- filed by the statement each refutes.
+
+Also here: [[Topology/Appendices/index|appendices]], [[Topology/Resources/index|resources]], and [[Topology/Workshops/index|workshops]].
+
+## Acknowledgements
+
+A great deal of credit goes to Mike Usher, who created the initial PDF of past UGA qual questions organized by topic.
+
+## Syllabus
+
 ## Syllabus
 
 Revised May 2006.
@@ -41,7 +86,7 @@ Revised May 2006.
 
 - Lefschetz fixed point theorem [@Hat02, p. 179]; [@Mun84, sec. 22]
 
-# References
+## References
 
 - [@Mun00]
 
