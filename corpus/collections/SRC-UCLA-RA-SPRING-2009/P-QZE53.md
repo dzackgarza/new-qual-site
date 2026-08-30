@@ -14,6 +14,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -24,4 +28,12 @@ a. Prove that $F(z) = \int_\mathbb{C} \frac{1}{z-w}\,d\mu(w)$ exists for almost 
 b. Prove that for almost every horizontal line $L$ and all compact $K\subseteq L$, $\int_K |F(x+iy)|\,dx < \infty$.
 
 c. Prove that for almost all open squares $S$ with sides parallel to the axes, $$\mu(S) = \frac{1}{2\pi i}\int_{\partial S} F(z)\,dz.$$
+:::
+
+::: {.solution}
+<1>1. $f$ measurable.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
