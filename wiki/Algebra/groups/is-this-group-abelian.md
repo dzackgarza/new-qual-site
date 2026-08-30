@@ -25,10 +25,9 @@ The $p^2$ case is the argument worth remembering: the class equation forces $Z(G
 
 ## From a quotient
 
-:::{.remark title="The $G/Z(G)$ trick"}
+::: {.remark title="The $G/Z(G)$ trick"}
 If $G/Z(G)$ is cyclic then $G$ is abelian.
 So $\size{Z(G)}$ can never be exactly $\size G / p$ for $p$ prime, which rules out most of the possibilities the class equation leaves open.
-
 :::
 
 ## From the structure theorem
@@ -42,6 +41,9 @@ This is the same computation as [[Algebra/modules/classify-this-module|Classify 
 Then the question is which nonabelian group, and the tools are:
 
 - A normal Sylow subgroup, giving a semidirect product, from [[Algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
+
 - The number of elements of each order, which distinguishes $D_4$ from $Q_8$: $D_4$ has five elements of order $2$ and $Q_8$ has one.
+
 - The abelianization $G/[G,G]$, which is an invariant computable from a presentation.
+
 - The centre, the conjugacy class sizes, and the automorphism group, in that order of cheapness.

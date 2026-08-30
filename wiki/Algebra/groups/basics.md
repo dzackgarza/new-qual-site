@@ -44,9 +44,7 @@ problems:
 
 [[E-VPWK4]]
 
-[[E-ZCJZC]]
-[[E-BSGSM]]
-[[E-47X7Y]]
+[[E-ZCJZC]] [[E-BSGSM]] [[E-47X7Y]]
 
 ## Normal subgroups
 
@@ -92,5 +90,4 @@ problems:
 
 ## Exercises
 
-[[E-BAOST]]
-[[E-BH6Q6]]
+[[E-BAOST]] [[E-BH6Q6]]

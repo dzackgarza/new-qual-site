@@ -44,8 +44,7 @@ The general classifications for orders $p$, $p^2$ and $pq$ give the shape of the
 
 [[FF-JKCAM]]
 
-:::{.remark title="How to use the table"}
+::: {.remark title="How to use the table"}
 Work the counting argument first and check the answer against the list; the table is a check, not a substitute.
 Two orders are worth memorizing outright because they recur: order $8$ has five groups, of which $D_4$ and $Q_8$ are the nonabelian ones, and order $12$ has five, of which $A_4$, $D_6$ and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
-
 :::
