@@ -52,3 +52,11 @@ $$F_1 \cong F_2 \cong \mathbb{F}_{27}.$$
 <1>4. Conclusion:
     Every field of order 27 is the splitting field of $x^{27} - x$ over $\mathbb{F}_3$; by uniqueness of splitting fields, all fields of order 27 are isomorphic. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: Galois.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

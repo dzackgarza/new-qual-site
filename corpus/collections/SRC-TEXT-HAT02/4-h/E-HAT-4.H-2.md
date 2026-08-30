@@ -59,3 +59,11 @@ Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B 
 
 Authored by **Codex 5.3 Spark Extra High**.
 :::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

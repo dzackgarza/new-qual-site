@@ -10,6 +10,10 @@ classification:
   - Symmetric Group
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -17,4 +21,12 @@ Prove that if $H$ is a transitive subgroup of $S(n)$, any two of the equivalence
 Hence a transitive subgroup of $S(p)$, where $p$ is prime, either contains no 2-cycles or all 2-cycles.
 Thus a transitive subgroup of $S(p)$ containing one 2-cycle — e.g. a subgroup containing a 2-cycle and a $p$-cycle — is all of $S(p)$.
 [Hint: use [[E-SMI-8000E-CY6]] and [[E-SMI-8000E-CY7]].]
+:::
+
+::: {.solution}
+<1>1. $C$ cycle.
+Proof: boundary.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
