@@ -16,8 +16,8 @@ Each item: read the source mathematics before changing. Commit after each.
 - [x] 1.3 Resolve duplicate-statement candidates by reading both sources.
   - Validity: DONE. `BACKLOG.md` reports one duplicate-body group (`P-UCTOP-FA12-5` / `P-UCTOP-SU09-5`), dispositioned at `f3a918092` as "keep both (different exams, different hypotheses)." The duplicate-bodies measurement is clear of new candidates.
 
-- [ ] 1.4 Resolve card-kind and source-structure defects.
-  - Validity: PARTIALLY DONE. The repaired Prelim source structure is recorded (`0960c8092`). `BACKLOG.md` `incomplete-metadata: 0` and `orphans: 0` show no remaining card-kind or structure defects measured. But "resolve every" is open-ended without a completion measurement. Mark open pending a final sweep.
+- [x] 1.4 Resolve card-kind and source-structure defects.
+  - Validity: DONE. `BACKLOG.md` `incomplete-metadata: 0` and `orphans: 0`. `card_completeness.py` confirms 0 incomplete problem/exercise cards (all have title, areas, topics, body). Prelim source structure repaired at `0960c8092`.
 
 ## Done (reference)
 
@@ -31,3 +31,5 @@ Issue #2 has accumulated corrections via comments:
 - Holomorphy definition fix: printed `(f(z_0+h)-f(h))/h`, corrected.
 - "Closed in Hausdorff implies compact" was false; corrected.
 - `\hfill` / `\qed` token scope quantified for corpus cards vs wiki pages.
+
+Items 1.1 and 1.2 remain open as source review tasks — they require reading each card against its source document. No mechanical measurement exists for "every false statement" or "every wrong title."

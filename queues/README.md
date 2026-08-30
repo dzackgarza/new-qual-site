@@ -22,7 +22,7 @@ Two kinds of queue files:
 
 | File | Open | Done | Owner | Notes |
 | --- | ---: | ---: | --- | --- |
-| `01-corpus-defects.md` | 3 | 1 | #2 (OPEN) | 1.3 done, 1.1/1.2/1.4 open |
+| `01-corpus-defects.md` | 2 | 2 | #2 (OPEN) | 1.3/1.4 done, 1.1/1.2 open (source review) |
 | `02-publish-authored-pages.md` | 4 | 0 | #5, #23 (COMPLETED) | Needs build inspection |
 | `03-publish-subject-branches.md` | 2 | 6 | #24–#29 (COMPLETED) | Publication done; proof not |
 | `04-reader-exam-generator.md` | 3 | 4 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
