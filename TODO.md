@@ -797,8 +797,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
-- [x] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60).
-  `E-SS5.PR-1` through `E-SS5.PR-4` now hold one Chapter 5 problem each.
+- [x] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60). `E-SS5.PR-1` through `E-SS5.PR-4` now hold one Chapter 5 problem each.
   Problem 4 includes equation (8) and the complete source hint.
 
 - [x] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
