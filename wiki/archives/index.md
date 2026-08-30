@@ -19,4 +19,3 @@ Material off the subject study paths: source lists and reading past the syllabus
 
 - [[further-studying|Further Studying]] and [[graduate-topics|Graduate Topics]], reading past the qual syllabus.
 
-- [[prelims-source-archive|Prelims Source Archive]], the imported prelim exams.

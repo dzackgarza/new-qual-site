@@ -15,4 +15,4 @@ Books, problem lists, and solutions for the complex-analysis qual.
 
 - [[complex-analysis/resources/solutions|Solutions (Complex)]], the solution index.
 
-- [[complex-analysis/resources/source-archive|Complex Analysis Source Archive]], the imported exams by source, including the department's posted exam PDFs.
+- Every imported exam is on [the Sources listing](exams.html); the department's posted PDFs are recorded on each collection card's provenance.

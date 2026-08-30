@@ -19,4 +19,4 @@ Books, problem lists, and solutions for the real-analysis qual.
 
 - [[real-analysis/resources/extra-questions|Extra Questions]], a workshop TeX dump: UNL Math 825/826 papers mixed with the UNL packet's January, June and May tags, not a UGA quals exam.
 
-- [[real-analysis/resources/source-archive|Real Analysis Source Archive]], the imported exams by source, including the department's posted exam PDFs.
+- Every imported exam is on [the Sources listing](exams.html); the department's posted PDFs are recorded on each collection card's provenance.

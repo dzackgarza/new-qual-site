@@ -98,3 +98,47 @@ Its complement is a union of open intervals, and can't contain an interval since
 ## Baire category
 
 [[PR-CZS5F]]
+
+## From the UNL summer workshop
+
+Continuity, compactness and convergence, as stated in the workshop notes.
+
+[[T-RA-WORKSHOP-D4-3-1]]
+
+[[T-RA-WORKSHOP-D4-3-2]]
+
+[[T-RA-WORKSHOP-D4-3-3]]
+
+[[T-RA-WORKSHOP-D4-3-4]]
+
+[[T-RA-WORKSHOP-D4-3-5]]
+
+[[T-RA-WORKSHOP-D5-4-1]]
+
+[[T-RA-WORKSHOP-D5-4-2]]
+
+[[T-RA-WORKSHOP-D5-4-3]]
+
+[[T-RA-WORKSHOP-D6-5-1]]
+
+[[T-RA-WORKSHOP-D6-5-2]]
+
+[[T-RA-WORKSHOP-D6-5-3]]
+
+[[T-RA-WORKSHOP-D6-5-4]]
+
+[[T-RA-WORKSHOP-D6-5-5]]
+
+[[T-RA-WORKSHOP-D7-6-1]]
+
+[[T-RA-WORKSHOP-D7-6-2]]
+
+[[T-RA-WORKSHOP-D7-6-3]]
+
+[[T-RA-WORKSHOP-D7-6-4]]
+
+[[T-RA-WORKSHOP-D7-6-5]]
+
+[[T-RA-WORKSHOP-D7-6-7]]
+
+[[D-RA-WORKSHOP-D7-CONVERGENCE]]

@@ -19,4 +19,4 @@ UCSD Math 202. Five subjects, none of which the other papers cover in this form.
 
 Past exams are listed in the source archive; each collection page lists its problems in exam order.
 
-[[applied-algebra/resources/index|Resources]] and [[applied-algebra/resources/source-archive|the source archive]].
+[[applied-algebra/resources/index|Resources]], and every imported exam on [the Sources listing](exams.html).

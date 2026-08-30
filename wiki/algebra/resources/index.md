@@ -17,4 +17,4 @@ Books, problem lists, and solutions for the algebra qual.
 
 - [[solutions-algebra|Solutions (Algebra)]], the solution index.
 
-- [[algebra/resources/source-archive|Algebra Source Archive]], the imported exams by source.
+- Every imported exam is on [the Sources listing](exams.html), filtered by subject, institution and year.
