@@ -12,6 +12,10 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -48,4 +52,12 @@ which is a nontrivial module homomorphisms.
 
 So any such $f$ appearing must be the zero map, and thus $\overline{\pi}$ is also the zero map.
 $\qed$
+:::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
