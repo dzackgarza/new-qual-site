@@ -12,8 +12,20 @@ classification:
   - Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
 Prove that a subgroup of index two is normal.
+:::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

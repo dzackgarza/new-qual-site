@@ -10,6 +10,10 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -20,4 +24,12 @@ Define $\rho$ on $X \times X$ by $$\rho(x, y) := \sum_{n=1}^{\infty} \frac{1}{n^
 
 (b) Let $\{x_j\}$ be a sequence in $X$, and $x \in X$.
 Prove that $\lim_{j \to \infty} \rho(x_j, x) = 0$ if and only if $\lim_{j \to \infty} \rho_n(x_j, x) = 0$ for all $n \geq 1$.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
