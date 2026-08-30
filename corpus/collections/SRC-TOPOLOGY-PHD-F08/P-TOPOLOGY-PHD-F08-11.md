@@ -11,6 +11,10 @@ classification:
   - Point-Set Topology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -20,4 +24,12 @@ Prove that in a locally connected space the connected components of $X$ are open
 
 ::: remark
 The phrase “the connected components of each point form a base of neighborhoods of $X$” is retained from the source page.
+:::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

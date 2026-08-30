@@ -13,6 +13,10 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 :::{.problem}
@@ -22,4 +26,10 @@ Let $n\in \ZZ^{\geq 1}$ and $0<\theta<\pi$ and show that
 .\]
 :::
 
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
 
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

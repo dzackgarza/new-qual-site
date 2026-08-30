@@ -10,6 +10,10 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -20,4 +24,12 @@ F^{\mathrm{ab}} := \{e \in E \mid \theta(e) = e \text{ for all } \theta \in [G,G
 \]
 That is, $F^{\mathrm{ab}}$ is the fixed field of $[G,G]$.
 Prove that an element $e \in E$ lies in $F^{\mathrm{ab}}$ if and only if the field extension $F[e]/F$ is Galois and its Galois group $\operatorname{Gal}(F[e]/F)$ is abelian.
+:::
+
+::: {.solution}
+<1>1. $G$ finite.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
