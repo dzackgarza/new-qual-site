@@ -13,6 +13,10 @@ classification:
   - Sylow Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -21,4 +25,12 @@ Give an example of a solvable nonabelian group.
 
 Show \(A_4\) is solvable.
 Do the Sylow theorems tell you anything about whether this index 3 subgroup of \(A_4\) is normal?
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: definition.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

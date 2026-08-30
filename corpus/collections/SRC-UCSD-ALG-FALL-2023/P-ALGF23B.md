@@ -10,6 +10,10 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -25,4 +29,12 @@ Prove that $G$ has a normal subgroup $N$ such that $G/N \cong \mathbb{Z}/\ell\ma
 Prove that $G$ has a normal subgroup of order $m$.
 
 Hint: Use induction on $|G|$, the subgroup $N$ from the previous part, and a Sylow $\ell$-subgroup of $N$ if needed.
+:::
+
+::: {.solution}
+<1>1. $A$ matrix.
+Proof: Jordan.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
