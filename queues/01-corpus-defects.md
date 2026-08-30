@@ -15,7 +15,8 @@ Commit after each.
 
 - [x] 1.2 Correct every wrong title or classification found during source review.
 
-  - Validity: DONE. Issue #45 (closed) addressed 1644+ machine-generated titles. All titles now descriptive.
+  - Validity: DONE. Issue #45 (closed) addressed 1644+ machine-generated titles.
+    All titles now descriptive.
     Checked for placeholder/generic titles — none found.
 
 - [x] 1.3 Resolve duplicate-statement candidates by reading both sources.
@@ -45,4 +46,5 @@ Issue #2 has accumulated corrections via comments:
 
 - `\hfill` / `\qed` token scope quantified for corpus cards vs wiki pages.
 
-All items done. Issue #2 remains open for solution authoring (Queue 09, Queue C).
+All items done.
+Issue #2 remains open for solution authoring (Queue 09, Queue C).

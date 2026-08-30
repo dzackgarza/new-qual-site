@@ -30,7 +30,7 @@ Two kinds of queue files:
 | `06-prove-deployed-site.md` | 0 | 7 | #30 (COMPLETED) | All verified against local build |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
 | `08-owner-decisions.md` | 0 | 3 | none | All done |
-| `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |
+| ~~`09-author-solutions.md`~~ | — | — | — | Removed: redundant with Queue C |
 | `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
 | `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
 
