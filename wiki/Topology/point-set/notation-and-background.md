@@ -33,8 +33,8 @@ Some fun resources:
 | $\ZZ^n$                                              | The free abelian group of rank $n$  |
 | $F_n, \ZZ^{\ast n}$                                  | The free group on $n$ generators    |
 | $\pi_0(X)$                                           | The *set* of path components of $X$ |
-| $G=1$                                                | The trivial abelian group           |
-| $G=0$                                                | The trivial nonabelian group        |
+| $G=1$                                                | The trivial group, written multiplicatively |
+| $G=0$                                                | The trivial group, written additively       |
 
 :::{.remark}
 These notes use $e_G$ or $1_G, 0_G$ to denote identity elements in a group $G$.

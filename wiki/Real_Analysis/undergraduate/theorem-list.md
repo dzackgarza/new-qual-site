@@ -91,8 +91,10 @@ Its complement is a union of open intervals, and can't contain an interval since
 ![](../../../../assets/assets/figures/2021-06-11_18-04-52.png)
 :::
 
-## Unsorted
+## Continuity
 
 [[PR-SX6NO]]
+
+## Baire category
 
 [[PR-CZS5F]]

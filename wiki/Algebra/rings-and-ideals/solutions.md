@@ -12,7 +12,7 @@ order: 90
 
 [Ch17Sltns.pdf](attachments/Ch17Sltns.pdf)
 
-[603_11.pdf](attachments/603_11.pdf) #resources/problem_collections #resources/solutions
+[603_11.pdf](attachments/603_11.pdf)
 
 - Week 6: Commutative algebra (3/8)
 
@@ -21,7 +21,7 @@ order: 90
   - Extra problems for practice: 2015 Spring M5
 
   - [Hints/Solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
-    #resources/problem_collections #resources/solutions
+
 
 ## Galois Theory
 

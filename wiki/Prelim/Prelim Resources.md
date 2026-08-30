@@ -110,86 +110,85 @@ Pointwise uniform convergence of functions, equi-continuity, *l*2, *L*2(*S*1),
 
 ## Problems
 
-- [ ] [[attachments/Big_List_of_Math_Problems.pdf]]
+- [[attachments/Big_List_of_Math_Problems.pdf]]
 
-- [ ]  [Duke Analysis and Linear Algebra Quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
+- [Duke Analysis and Linear Algebra Quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
 
-- [ ]  [UCLA Practice GRE Problems (No Solutions)](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf)
+- [UCLA Practice GRE Problems (No Solutions)](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf)
 
-- [ ]   [calculus_practice_test3.pdf](attachments/calculus_practice_test3.pdf)
+- [calculus_practice_test3.pdf](attachments/calculus_practice_test3.pdf)
 
-- [ ]  [linear_algebra_from_test2.pdf](attachments/linear_algebra_from_test2.pdf)
+- [linear_algebra_from_test2.pdf](attachments/linear_algebra_from_test2.pdf)
 
-- [ ]  [chapter-1.pdf](attachments/chapter-1.pdf)
+- [chapter-1.pdf](attachments/chapter-1.pdf)
 
-- [ ]  [chapter-2.pdf](attachments/chapter-2.pdf)
+- [chapter-2.pdf](attachments/chapter-2.pdf)
 
-- [ ]  [chapter-3.pdf](attachments/chapter-3.pdf)
+- [chapter-3.pdf](attachments/chapter-3.pdf)
 
-- [ ]   [chapter-4.pdf](attachments/chapter-4.pdf)
+- [chapter-4.pdf](attachments/chapter-4.pdf)
 
-- [ ]   [chapter-5.pdf](attachments/chapter-5.pdf)
+- [chapter-5.pdf](attachments/chapter-5.pdf)
 
-- [ ]   [chapter-6.pdf](attachments/chapter-6.pdf)
+- [chapter-6.pdf](attachments/chapter-6.pdf)
 
-- [ ]   [Chapter-7.pdf](attachments/Chapter-7.pdf)
+- [Chapter-7.pdf](attachments/Chapter-7.pdf)
 
-- [ ]   [[UCLA_Basic_Exam_Prelim.pdf]]
+- [[UCLA_Basic_Exam_Prelim.pdf]]
 
-- [ ]   [[attachments/Series_Problems_.pdf]]
+- [[attachments/Series_Problems_.pdf]]
 
 ## Solutions
 
-- [ ]  [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
+- [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-- [ ]  [UCLA basic exam problems: linear algebra (55p)](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-- [ ]  [prelimsolutions_0.pdf](attachments/prelimsolutions_0.pdf)
+- [prelimsolutions_0.pdf](attachments/prelimsolutions_0.pdf)
 
-- [ ]  [prelimsolutions.pdf](attachments/prelimsolutions.pdf)
+- [prelimsolutions.pdf](attachments/prelimsolutions.pdf)
 
-- [ ]  [multivariable_calculus.pdf](attachments/multivariable_calculus.pdf)
+- [multivariable_calculus.pdf](attachments/multivariable_calculus.pdf)
 
-- [ ]  [more_calculus_from_test2.pdf](attachments/more_calculus_from_test2.pdf)
+- [more_calculus_from_test2.pdf](attachments/more_calculus_from_test2.pdf)
 
-- [ ]  [Week1_solns.pdf](attachments/Week1_solns.pdf)
+- [Week1_solns.pdf](attachments/Week1_solns.pdf)
 
-- [ ]  [Week2_solns.pdf](attachments/Week2_solns.pdf)
+- [Week2_solns.pdf](attachments/Week2_solns.pdf)
 
-- [ ]  [Week3_solns.pdf](attachments/Week3_solns.pdf)
+- [Week3_solns.pdf](attachments/Week3_solns.pdf)
 
-- [ ]  [Week4_solns.pdf](attachments/Week4_solns.pdf)
+- [Week4_solns.pdf](attachments/Week4_solns.pdf)
 
-- [ ]  [Week5_solns.pdf](attachments/Week5_solns.pdf)
+- [Week5_solns.pdf](attachments/Week5_solns.pdf)
 
-- [ ]  [Week6_solns.pdf](attachments/Week6_solns.pdf)
+- [Week6_solns.pdf](attachments/Week6_solns.pdf)
 
-- [ ]  [solution.pdf](attachments/solution.pdf)
+- [solution.pdf](attachments/solution.pdf)
 
-- [ ]  [solution1.pdf](attachments/solution1.pdf)
+- [solution1.pdf](attachments/solution1.pdf)
 
-- [ ]  [solution3.pdf](attachments/solution3.pdf)
+- [solution3.pdf](attachments/solution3.pdf)
 
-- [ ]  [solution4.pdf](attachments/solution4.pdf)
+- [solution4.pdf](attachments/solution4.pdf)
 
-- [ ]  [solution5.pdf](attachments/solution5.pdf)
+- [solution5.pdf](attachments/solution5.pdf)
 
-- [ ]  [solution6.pdf](attachments/solution6.pdf)
+- [solution6.pdf](attachments/solution6.pdf)
 
-- [ ]  [solution7.pdf](attachments/solution7.pdf)
+- [solution7.pdf](attachments/solution7.pdf)
 
-- [ ]  [solution9.pdf](attachments/solution9.pdf)
+- [solution9.pdf](attachments/solution9.pdf)
 
-- [ ]  [solution8.pdf](attachments/solution8.pdf)
+- [solution8.pdf](attachments/solution8.pdf)
 
-- [ ]  [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-- [ ]  [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
+- [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
 
-- [ ]  Linear Algebra
+- Linear Algebra
 
-- [ ] [Harvard Math 21b](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html) (Linear Algebra) *Lots of practice finals with solutions*
+- [Harvard Math 21b](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html) (Linear Algebra) *Lots of practice finals with solutions*
 
-- [ ] [[attachments/f03solution.pdf]]
+- [[attachments/f03solution.pdf]]
 
-- [ ] [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf]]
+- [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf]]

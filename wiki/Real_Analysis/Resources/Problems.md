@@ -18,7 +18,7 @@ Exercises from [@Fol13]:
 
 - Chapter 2:
 
-  - Exercises 2, 3, 7, 9 - (in 9(c) you can use Exercise 1.29 without proof
+  - Exercises 2, 3, 7, 9 (in 9(c), Exercise 1.29 may be used without proof)
 
   - Exercises 10, 12, 13, 14, 16, 19
 
@@ -28,31 +28,31 @@ Exercises from [@Fol13]:
 
 - Chapter 3: Exercises 3(b,c), 5, 6, 9, 12, 13, 14, 16, 20, 21, 22
 
-- [ ] ![[attachments/Folland Clipped Questions.pdf]]
+- ![[attachments/Folland Clipped Questions.pdf]]
 
-- [ ] [Folland Clipped Questions.pdf](attachments/Folland_Clipped_Questions.pdf)
+- [Folland Clipped Questions.pdf](attachments/Folland_Clipped_Questions.pdf)
 
 ## Others
 
-- [ ] [Sequence Series (Neil Lyall 2019).pdf](attachments/Sequence_Series_(Neil_Lyall_2019).pdf)
+- [Sequence Series (Neil Lyall 2019).pdf](attachments/Sequence_Series_(Neil_Lyall_2019).pdf)
 
-- [ ] [analysis_jan2014.pdf](attachments/analysis_jan2014.pdf)
+- [analysis_jan2014.pdf](attachments/analysis_jan2014.pdf)
 
-- [ ] [analysis 2008-2013.pdf](attachments/analysis_2008-2013.pdf)
+- [analysis 2008-2013.pdf](attachments/analysis_2008-2013.pdf)
 
-- [ ] [topology 2006-2014.pdf](attachments/topology_2006-2014.pdf)
+- [topology 2006-2014.pdf](attachments/topology_2006-2014.pdf)
 
-- [ ] [topology 2005-2003.pdf](attachments/topology_2005-2003.pdf)
+- [topology 2005-2003.pdf](attachments/topology_2005-2003.pdf)
 
-- [ ] [analysis 2014-2016.pdf](attachments/analysis_2014-2016.pdf)
+- [analysis 2014-2016.pdf](attachments/analysis_2014-2016.pdf)
 
-- [ ] [analysis 2003-2007.pdf](attachments/analysis_2003-2007.pdf)
+- [analysis 2003-2007.pdf](attachments/analysis_2003-2007.pdf)
 
-- [ ] [Mark Coleman's MATH341 problem sheets (Manchester)](https://personalpages.manchester.ac.uk/staff/mark.coleman/old/341/341qu.pdf)
+- [Mark Coleman's MATH341 problem sheets (Manchester)](https://personalpages.manchester.ac.uk/staff/mark.coleman/old/341/341qu.pdf)
 
-- [ ] [UC Riverside historical real analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/realanalysis_qual_exams_historical.pdf)
+- [UC Riverside historical real analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/realanalysis_qual_exams_historical.pdf)
 
-- [ ]  [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)
+- [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)
 
 # Qual Workshop Materials
 

@@ -119,8 +119,12 @@ Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $
 
 :::
 
-# Unsorted Theorems
+## Singularities and omitted values
+
+Stated here because the fundamental theorem of algebra is proved from them below; they are developed on [[Complex_Analysis/singularities/index|Singularities]].
+
 [[T-ISZP3]]
+
 [[T-AELHU]]
 
 :::{.corollary}
@@ -128,8 +132,12 @@ The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
 
 :::
 :::{.proof}
-???
+If $fg \equiv 0$ with $f\not\equiv 0$, then the zero set of $f$ is discrete by the identity principle, so $g$ vanishes on the complement of a discrete set.
+That set has a limit point in the domain, so $g\equiv 0$ by the identity principle again.
 
 :::
-Morera
+## A Banach space of holomorphic functions
+
+Proved with Morera's theorem.
+
 [[E-QO2S7]]

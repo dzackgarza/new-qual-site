@@ -47,7 +47,7 @@ Two standard consequences: a degree that is prime has no proper intermediate fie
  ,\]
  and invert: reading the first row of $A\inv$ against $\vector b$ gives a polynomial in $x$.
 
-- If $\alpha\beta \in \QQ$ then $\alpha \in \QQ(\beta)$ and conversely.
+- If $\alpha\beta \in \QQ$ with $\beta \neq 0$, then $\alpha = (\alpha\beta)/\beta \in \QQ(\beta)$, and symmetrically.
 
 :::
 

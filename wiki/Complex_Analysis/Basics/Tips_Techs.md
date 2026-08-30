@@ -31,7 +31,7 @@ Things to know well:
 - [[Complex_Analysis/counting-zeros/rouches-theorem|Rouché's Theorem]]
 - [[Complex_Analysis/cauchy-theory/schwarz-reflection|The Schwarz Reflection Principle]]
 - [[Complex_Analysis/conformal-maps/the-schwarz-lemma|The Schwarz Lemma]]
-- Casorati-Weierstrass Theorem (no page yet)
+- [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass Theorem]]
 - Properties of linear fractional transformations
 - Automorphisms of $\DD, \CC, \CP^1$.
 
@@ -167,7 +167,8 @@ Integral of a complex exponential:
 
 :::
 - Set $w=e^z$.
-- If $f$ has no zeros, put it in the denominator! No one can stop you!
+- If $f$ has no zeros, $1/f$ is holomorphic, so apply a theorem about holomorphic functions to the reciprocal.
+  This is the standard route to the minimum modulus principle and to Liouville arguments about functions bounded below.
 - If $f$ is holomorphic in a neighborhood of $\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a finite Blaschke product.
 - If $\Omega$ is connected, $f$ admits a log and exponential, so try setting $f^{1\over n} = \exp\qty{{1\over n}\log(f)}$.
 

@@ -50,8 +50,7 @@ order: 5
   - Calculus techniques: Taylor series, IVT, MVT, etc.
   - Break up $\RR^n = \theset{\abs{x} \leq 1} \coprod \theset{\abs{x} > 1}$.
 
-    - Or break integration region into disjoint annuli.
-    - Or break integration region into disjoint annuli: 
+    - Or break the integration region into disjoint annuli: 
     \[
     \int_\RR f = \sum_{k\geq 0}\int_{2^k}^{2^{k+1}} d
     .\]
@@ -113,7 +112,7 @@ order: 5
 \envlist
 - Follows from an $\varepsilon/3$ argument: 
   \[  
-  \abs{F(x) - F(y} \leq 
+  \abs{F(x) - F(y)} \leq 
   \abs{F(x) - F_N(x)} + \abs{F_N(x) - F_N(y)} + \abs{F_N(y) - F(y)} 
   \leq \eps \to 0
   .\]

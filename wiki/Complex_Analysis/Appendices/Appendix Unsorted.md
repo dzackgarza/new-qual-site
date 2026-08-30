@@ -1,8 +1,9 @@
 ---
 order: 91
+title: The Gamma function, and conic sections
 ---
 
-# Appendix
+# The Gamma function, and conic sections
 
 [[D-Q3MYK]]
 
@@ -26,7 +27,7 @@ $\mcl(t^{z-1}, s=1) = \Gamma(z)$ and $\mcl(t^n, s=1) = \Gamma(n+1)$.
 
 [[T-ZAEWG]]
 
-## Misc Basic Algebra
+## Conic sections
 
 :::{.fact title="Standard forms of conic sections"}
 \envlist

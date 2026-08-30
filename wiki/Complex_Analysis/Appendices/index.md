@@ -9,7 +9,7 @@ Notes that were never filed into Basics--Omitted values, but are not junk: they 
 
 - [[Appendix FTA Proofs|Proofs of the Fundamental Theorem of Algebra]], from the argument principle and otherwise.
 
-- [[Appendix Unsorted|Appendix]], $\Gamma\dash$function identities.
+- [[Appendix Unsorted|The Gamma function, and conic sections]], the $\Gamma\dash$function identities and the standard conics.
 
 - [[Gauss-Lucas Theorem]], zeros of $p'$ in the convex hull of the zeros of $p$.
 

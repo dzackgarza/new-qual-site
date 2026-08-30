@@ -1,8 +1,9 @@
 ---
 order: 299
+title: Higher homotopy and further topics
 ---
 
-# Appendix: Unsorted Stuff
+# Higher homotopy and further topics
 
 * Assorted info about other Lie Groups:
  * $O_n, U_n, SO_n, SU_n, Sp_n$
@@ -154,7 +155,7 @@ LES of pair $(A,B) \implies \cdots H_n(B) \into H_n(A) \into H_n(A,B) \into H_{n
 * $\pi_3 S^2 \cong \ZZ$
 * $\pi_4 S^2 \cong \ZZ_2$
 
-## Misc
+## Loop spaces
 
 * $\Omega(\wait)$ is an exact functor.
 

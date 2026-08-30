@@ -7,7 +7,7 @@ order: 1
 
 The layer the qual assumes, and the third of the paper that tests it directly.
 
-- [[Real_Analysis/undergraduate/definitions|Definitions]] and [[Real_Analysis/undergraduate/notation|notation]], with the [[Real_Analysis/undergraduate/sup-norm-notation|sup-norm table]].
+- [[Real_Analysis/undergraduate/definitions|Definitions]] and [[Real_Analysis/undergraduate/notation|notation]].
 
 - [[Real_Analysis/undergraduate/sequences-and-series|Sequences and series]].
 
