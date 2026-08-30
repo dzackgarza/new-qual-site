@@ -25,32 +25,27 @@ Is this map null-homotopic?
 Give a proof of your answer.
 :::
 
-::: solution
-**Goal:** Show the universal covering map is not null-homotopic.
-
-<1> Let $p:S^2\to \RP^2$ be the given covering map.
-    *Proof:* Since $p$ is a covering map, for $n\ge2$ the induced map
-    $$
-    p_*:\pi_n(S^2)\to\pi_n(\RP^2)
-    $$
-    is an isomorphism.
-
-<1> In degree $2$, $\pi_2(S^2)\cong\mathbf Z$ and therefore
-    $\pi_2(\RP^2)\cong\mathbf Z$.
-    Since $p_*:\pi_2(S^2)\to\pi_2(\RP^2)$ is an isomorphism, it is nonzero.
-
-<1> If $p$ were null-homotopic, then the induced map on every homotopy group is zero; in particular $p_*:\pi_2(S^2)\to\pi_2(\RP^2)$ would be zero.
-    This contradicts the isomorphism property above.
-
-<1> Therefore the covering map $S^2\to\RP^2$ is not null-homotopic.
-
-Authored by **Codex 5.3 Spark Extra High**.
-:::
-
 ::: {.solution}
-<1>1. $f$ holomorphic.
-Proof: Cauchy.
+<1>1. The universal covering map $p: S^2 \to \mathbb{RP}^2$ is **not null-homotopic**.
+Proof: statement of claim.
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>2. Proof via higher homotopy groups:
+<2>1. Since $p: S^2 \to \mathbb{RP}^2$ is a covering map with discrete fiber $S^0 \cong \mathbb{Z}_2$, the induced homomorphism on homotopy groups:
+\[
+p_*: \pi_n(S^2) \xrightarrow{\sim} \pi_n(\mathbb{RP}^2)
+\]
+is an isomorphism for all $n \ge 2$.
+Proof: long exact sequence of homotopy groups for covering spaces.
+<2>2. In degree $n = 2$, $\pi_2(S^2) \cong \mathbb{Z}$.
+Thus $\pi_2(\mathbb{RP}^2) \cong \mathbb{Z}$, and $p_*: \pi_2(S^2) \to \pi_2(\mathbb{RP}^2)$ is an isomorphism of non-trivial groups.
+Proof: Hurewicz theorem and <2>1.
+<2>3. If $p$ were null-homotopic ($p \simeq c$ for a constant map $c$), then the induced homomorphism $p_*: \pi_2(S^2) \to \pi_2(\mathbb{RP}^2)$ would be the zero homomorphism ($p_* = c_* = 0$).
+Proof: homotopic maps induce identical homomorphisms on homotopy groups.
+<2>4. Since $p_*$ is an isomorphism between non-trivial groups $\mathbb{Z} \to \mathbb{Z}$, $p_* \neq 0$.
+This contradicts $p_* = 0$.
+Proof: non-zero isomorphism cannot be the zero map.
+
+<1>3. Conclusion:
+$p: S^2 \to \mathbb{RP}^2$ is not null-homotopic. Q.E.D.
+Proof: <1>1 and <1>2.
 :::
