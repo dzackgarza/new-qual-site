@@ -18,4 +18,3 @@ Material off the subject study paths: source lists and reading past the syllabus
 - [[archives/topics|Topics]], undergraduate and prelim-level miscellany.
 
 - [[further-studying|Further Studying]] and [[graduate-topics|Graduate Topics]], reading past the qual syllabus.
-

@@ -8,4 +8,3 @@ title: "Card Archives"
 The corpus listed by its source is [the Sources listing](exams.html), filtered by subject, institution and year.
 
 ## Source archives
-
