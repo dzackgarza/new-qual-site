@@ -1830,7 +1830,9 @@ problems:
 One caveat: the corpus has 668 distinct topic strings and 166 appear exactly once.
 A query needs a curated topic list, and that curation is reading, not scripting.
 
-- [ ] Curate the topic vocabulary, subject by subject, and map the raw strings onto it.
+- [x] Curate the topic vocabulary, subject by subject, and map the raw strings onto it.
+  Done in `a39ebe785`: 290 topic entries on 276 cards merged onto one spelling each, taking 668 distinct strings to 627. It did not gate the query block, which was built and used across all six subjects before this ran; merging shortened the queries that had to name every variant.
+  Four apparent clusters are deliberately left: `L¹`/`L²`/`L∞`, the Cauchy integral formula against his integral theorem, weak against weak-star, and spectral theory against the spectral theorem.
 
 ### Mechanical constraints
 
