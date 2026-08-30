@@ -4,24 +4,27 @@ Current findings from `just doctor` (2026-08-31):
 
 | Finding | Count | Status |
 |---------|-------|--------|
-| one-markdown-child-directories | 5 | Structural — each has real content |
+| one-markdown-child-directories | 5 | Structural — each has real content and proper index |
 | heading-or-wikilink-only-bodies | 0 | Resolved |
 | obsidian-embed-syntax | 0 | Resolved |
 
-## One-child directories (structural, not defects)
+## One-child directories
 
-| Directory | Child page | Lines | Status |
-|-----------|-----------|-------|--------|
-| `wiki/topology/covering-spaces/` | `covering-spaces.md` | 377 | Well-organized, substantial |
-| `wiki/topology/cw-complexes/` | `cw-complexes.md` | 200+ | Well-organized, substantial |
-| `wiki/topology/degree/` | `fixed-points-and-degree.md` | 100+ | Prose added (Brouwer→Lefschetz→Borsuk-Ulam→Hairy Ball chain) |
-| `wiki/topology/surfaces/` | `surfaces-and-manifolds.md` | 300+ | Well-organized, substantial |
-| `wiki/topology/workshops/` | `topology-week-1-preliminaries.md` | 80+ | Tube lemma prose added, qual questions contextualized |
+| Directory | Index | Content page | Lines |
+|-----------|-------|-------------|-------|
+| `wiki/topology/covering-spaces/` | Topics listed | Full treatment | 377 |
+| `wiki/topology/cw-complexes/` | Topics listed | Full treatment | 147 |
+| `wiki/topology/degree/` | Topics listed | Full treatment | 100+ |
+| `wiki/topology/surfaces/` | Topics listed | Full treatment | 300+ |
+| `wiki/topology/workshops/` | Topics listed | Full treatment | 80+ |
 
-These are dedicated topic pages with real content. The one-child structure is a navigation choice — each topic gets its own directory with an index and a main page.
+These are dedicated topic directories. Each has an index page listing the covered topics and linking to the detailed page. The one-child structure is a navigation choice, not a defect.
 
 ## Resolved this session
 
-- **Algebra appendices** — content redistributed into `groups/characteristic-subgroups.md`, expanded `groups/series-and-solvability.md`, and added Gorenstein to `rings-and-ideals/which-kind-of-ring.md`. Directory deleted.
-- **Heading-only bodies** — `gauss-lucas-theorem.md`, `riemann-integrability.md`, `useful-tricks.md` all written with prose.
-- **Obsidian embeds** — 41 `![[...]]` converted to `![](...)` across 7 pages.
+- Algebra appendix: content redistributed into `groups/characteristic-subgroups.md`, expanded `groups/series-and-solvability.md`, Gorenstein added to `rings-and-ideals/which-kind-of-ring.md`. Directory deleted.
+- Degree page: prose connecting Brouwer, Lefschetz, Borsuk-Ulam, Hairy Ball.
+- Workshop page: tube lemma explanation, qual question context.
+- All index pages rewritten as proper study-guide entries.
+- 41 Obsidian embeds converted to standard markdown.
+- 3 heading-only bodies written with prose.
