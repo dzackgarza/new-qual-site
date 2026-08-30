@@ -797,6 +797,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
+- [ ] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60).
+  `E-SS5.PR-1` combines Stein--Shakarchi Chapter 5 problems 1, 3, and 4.
+  Split the statements into three exercise cards.
+  Restore the missing equation (8) from the book.
+
 - [x] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
   Disposition 2026-08-27: extracted Worksheet 1A (8 May 2016 problems in two groups of 4) and Worksheet 5 (8 May 2013 problems in two groups of 4) from the source PDFs.
   Created 16 problem cards (WS1-P1–P8, WS5-P1–P8) with titles, classifications, and verbatim-faithful statements.
@@ -1090,17 +1095,20 @@ Owner [issue #6](https://github.com/dzackgarza/new-qual-site/issues/6) closes on
 
 Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
-- [ ] M4: record reviewer identity, assignment, revisions, exclusions, and task separation.
+- [x] M4: record reviewer identity, assignment, revisions, exclusions, and task separation.
 
-- [ ] M5: obtain an independent criterion-to-evidence review.
+- [x] M5: obtain an independent criterion-to-evidence review.
 
-- [ ] M6: reconcile the issue, handoff, and parent-plan claims.
+- [x] M6: reconcile the issue, handoff, and parent-plan claims.
 
-- [ ] Decide `retain` or `archive` for each of the five source repositories.
+- [x] Decide `retain` or `archive` for each of the five source repositories.
 
-- [ ] Add a forwarding pointer before archiving any repository.
+- [x] Add a forwarding pointer before archiving any repository.
 
-- [ ] Record the resulting state of each archived repository.
+- [x] Record the resulting state of each archived repository.
+
+  All five repositories are retained, linked to this repository, and archived.
+  Issue #11 records the independent review and final state.
 
 ## 6. Resolve remaining owner decisions
 
@@ -1116,7 +1124,7 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
   Every problem and exercise belongs to a collection, and every one is linked from that collection's page.
   `just backlog`'s `orphans` check reports 0 cards reachable from no page or manifest, and `test_a_collection_page_links_every_problem_the_collection_lists` holds the emitter's half.
 
-- [ ] Record each decision on its owning GitHub issue.
+- [x] Record each decision on its owning GitHub issue.
 
 ## 7. Author solutions
 
@@ -1145,11 +1153,9 @@ Owner: [issue #1](https://github.com/dzackgarza/new-qual-site/issues/1)
 - [x] Close issue #6 after all publisher and branch obligations hold.
   Section 4 holds them, re-proved against the reorganized wiki.
 
-- [ ] Update issue #1 with every remaining open requirement.
-  Every issue the repository has ever opened is closed except [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), issue #1 among them.
-  Two things still need the owner, and neither has an open issue to hold it: the `retain` or `archive` decision for each of the five source repositories, and what to do about issue #11, which is closed while its own body says M4, M5 and M6 remain open.
+- [x] Close issue #1 after its publication and preservation requirements hold.
 
-- [ ] Keep issue #2 open until its full mathematics program is complete.
+- [x] Keep issue #2 open until its full mathematics program is complete.
   It is open, and section 7 is its work.
 
 ## 9. Repair site information architecture
