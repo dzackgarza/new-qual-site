@@ -27,17 +27,15 @@ The layer beneath field theory: what $k[x]$ looks like, and how to tell whether 
 
 [[FT-OXN3Y]]
 
-:::{.corollary}
+::: {.corollary}
 A primitive $p\in \QQ[x]$ is irreducible exactly when it is irreducible in $\ZZ[x]$.
-
 :::
 
 ## Standard factorizations and root counts
 
-:::{.remark}
+::: {.remark}
 Irreducibility arguments usually begin with an attempt to factor by hand, so the identities below are worth having ready.
 Descartes' rule bounds how many real roots such a factorization can account for, which is often enough to finish a problem over $\QQ$ or $\RR$.
-
 :::
 
 [[FF-UC7SQ]] [[FF-ED3CD]]
@@ -84,7 +82,4 @@ Descartes' rule bounds how many real roots such a factorization can account for,
 
 ## Exercises
 
-[[E-LUR7G]]
-[[E-6OUJV]]
-[[E-OB3LO]]
-[[E-PHSV5]]
+[[E-LUR7G]] [[E-6OUJV]] [[E-OB3LO]] [[E-PHSV5]]
