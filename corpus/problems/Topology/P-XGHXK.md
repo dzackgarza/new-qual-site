@@ -11,6 +11,10 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -25,4 +29,12 @@ So a  variant of the straight line homotopy will work, by interpolating between 
 So let $H:X \cross I \to S^n$ be defined by $H(x, t) = P(ts_0  + (1-t)f(x))$, where $P: \mathbb{R}^{n+1} \to S^n$ is given by $P(x) = x/\norm{x}$.
 This is well defined, since the denominator is zero iff $f(x) = s_0$, which by assumption is not the case.
 This is a homotopy, since $H(x, 0) =P(f(x)) = f(x)$ (since $P$ fixes $S^n$) and $H(x, 1) = P(s_0) = s_0$ (since $s_0 \in S^n$).
+:::
+
+::: {.solution}
+<1>1. $X$ compact.
+Proof: Heine-Borel.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

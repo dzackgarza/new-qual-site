@@ -5,7 +5,10 @@ problems:
   topics:
   - L^p Spaces
   - Density
-  - Dual Spaces
+  - Dual Spaces  - L²
+  - L∞
+  - L2 Spaces
+
 ---
 
 # The spaces

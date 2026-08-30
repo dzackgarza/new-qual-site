@@ -1,5 +1,11 @@
 ---
 order: 35
+problems:
+  topics:
+  - Sequences of Numbers
+  - Series of Numbers
+  - Series of Functions
+  - Limits
 ---
 
 # Sequences and Series

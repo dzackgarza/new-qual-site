@@ -51,3 +51,11 @@ Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\ov
     <2>3. Under $f$, the image of $(\alpha, \Omega) \cup \{\infty\}$ is $(\alpha, \Omega) \cup \{\Omega\} = (\alpha, \Omega]$, which is precisely the standard basic open neighborhood of $\Omega$ in $\overline{S}_\Omega$.
     <2>4. Therefore $f$ is an open continuous bijection, so $f$ is a homeomorphism. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: action.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

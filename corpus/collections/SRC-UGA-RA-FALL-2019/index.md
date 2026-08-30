@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BFall%202019%5D.docx
+- https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2019.pdf
 source:
   source_kind: university-exam
   institution: uga

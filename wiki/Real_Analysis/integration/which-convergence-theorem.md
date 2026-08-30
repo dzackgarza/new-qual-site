@@ -56,7 +56,7 @@ In each case no integrable $g$ dominates, which is the precise reason dominated 
 
 ## Nearby interchanges
 
-The same question is asked about other pairs of limits, and the answers are on [[Real_Analysis/Basics/Commuting_Limits|Commuting limits]] --
+The same question is asked about other pairs of limits, and the answers are on [[Real_Analysis/undergraduate/commuting-limits|Commuting limits]] --
 
 - $\lim_n \int$ against $\int \lim_n$: this page.
 

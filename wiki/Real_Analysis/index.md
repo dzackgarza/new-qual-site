@@ -3,7 +3,52 @@ title: Real Analysis
 order: 20
 ---
 
-# Qualifying Exam Syllabus
+# Real Analysis
+
+## What the exam asks
+
+| The question | Where it is decided |
+| --- | --- |
+| Compute the limit of these integrals | [[Real_Analysis/integration/which-convergence-theorem\|Which convergence theorem?]] |
+| Swap these two integrals | [[Real_Analysis/fubini-tonelli/which-one-applies\|Which one applies?]] |
+| Bound this integral, or this norm | [[Real_Analysis/lp-spaces/which-inequality\|Which inequality?]] |
+| Is this function measurable | [[Real_Analysis/measure/is-it-measurable\|Is it measurable?]] |
+| Is this operator bounded, or this family uniformly so | [[Real_Analysis/functional-analysis/which-big-theorem\|Which big theorem?]] |
+| Is this statement true | [[Real_Analysis/counterexamples\|Counterexamples]] |
+
+The last row is not a joke: roughly half the paper is true-or-false, and the work is producing the witness.
+
+## The chapters, in dependency order
+
+1. [[Real_Analysis/undergraduate/index|Undergraduate analysis]] -- sequences, continuity, differentiability, compactness.
+
+2. [[Real_Analysis/measure/index|Measure]] -- outer measure, measurability, Littlewood's principles.
+
+3. [[Real_Analysis/integration/index|Integration]] -- the convergence theorems and $L^1$.
+
+4. [[Real_Analysis/fubini-tonelli/index|Fubini and Tonelli]] -- its own chapter, because the exam treats it as one.
+
+5. [[Real_Analysis/lp-spaces/index|$L^p$ spaces]] -- the inequalities, duality, density.
+
+6. [[Real_Analysis/fourier/index|Fourier]] -- convolution, the transform, approximate identities.
+
+7. [[Real_Analysis/functional-analysis/index|Functional analysis]] -- Banach, Hilbert, the big four.
+
+Across the chapters:
+
+- [[Real_Analysis/review|Review sheet]] -- every statement, on one page.
+
+- [[Real_Analysis/counterexamples|Counterexamples]] -- filed by the statement each refutes.
+
+- [[Real_Analysis/inequalities|Inequalities]] -- filed by what each bounds.
+
+Also here: [[Real_Analysis/Appendices/index|appendices]], [[Real_Analysis/Resources/index|resources]], and [[Real_Analysis/Workshops/index|workshops]].
+
+## Acknowledgements
+
+Thanks to Peter Woolfitt for supplying many solutions and checking many proofs in problem sessions.
+
+## The syllabus
 
 ## Undergraduate Analysis
 
