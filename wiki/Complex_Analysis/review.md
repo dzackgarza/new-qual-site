@@ -86,8 +86,7 @@ Proved in [[Complex_Analysis/singularities/index|Singularities]].
 
 [[T-ZO5UU]]
 
-Proved in [[Complex_Analysis/residues-and-contours/index|Residues and contours]].
-The integrals themselves are on [[Complex_Analysis/standard-integrals|Standard integrals]].
+Proved in [[Complex_Analysis/residues-and-contours/index|Residues and contours]]. The integrals themselves are on [[Complex_Analysis/standard-integrals|Standard integrals]].
 
 ## Counting zeros
 
