@@ -29,16 +29,21 @@ Normal is the largest of these and is the right hypothesis for the spectral theo
 ## The factorizations
 
 - **Spectral:** $A = U\Lambda U^*$ for normal $A$.
+
 - **Singular value:** $A = U\Sigma V^*$ for any $A$, with $\Sigma$ the nonnegative square roots of the eigenvalues of $A^*A$.
   This is the tool when $A$ is not square or not normal, and it is what makes the operator norm computable: $\norm A_2 = \sigma_{\max}$.
+
 - **Cholesky:** $A = LL^*$ for positive definite $A$.
+
 - **QR:** Gram--Schmidt, stated as a factorization.
 
 ## Eigenvalue location without computing
 
 - **Gershgorin:** every eigenvalue lies in some disc centred at a diagonal entry with radius the absolute row sum off the diagonal.
   A disjoint disc contains exactly one eigenvalue, which is how the discs are used.
+
 - **Rayleigh quotients and Courant--Fischer:** the eigenvalues of a Hermitian matrix are the min-max values of $x^*Ax/x^*x$, which gives interlacing under rank-one perturbation.
+
 - **Trace and determinant** bound the spectrum crudely and are worth checking first.
 
 ## Norms
