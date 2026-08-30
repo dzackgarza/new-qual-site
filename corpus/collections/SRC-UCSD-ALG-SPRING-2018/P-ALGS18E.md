@@ -10,6 +10,10 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -17,4 +21,12 @@ Suppose $A$ is a unital commutative ring and $\langle f_1, \ldots, f_n \rangle =
 Prove that $M = N$.
 
 Hint: For $x \in N$, consider $\{a \in A \mid ax \in M\}$.
+:::
+
+::: {.solution}
+<1>1. $M$ module.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

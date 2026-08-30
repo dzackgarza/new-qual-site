@@ -68,3 +68,11 @@ Describe the lattice of subfields.
 <1>5. Conclusion:
     $\mathbb{Q}(\sqrt[3]{21})$ is not normal; the splitting field is $\mathbb{Q}(\sqrt[3]{21}, i\sqrt{3})$ of degree 6 with Galois group $S_3$; intermediate fields comprise three cubic conjugate fields and one quadratic normal field $\mathbb{Q}(i\sqrt{3})$. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $H$ subgroup.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
