@@ -31,8 +31,7 @@ In this problem, we discuss Blaschke products, which are bounded analogues in th
    \sum_{n=1}^{\infty}(1-|\alpha_n|)<\infty.
    $$
 
-   This condition holds when $\{\alpha_n\}$ are the zeros of a bounded holomorphic function on the unit disc, by Problem 1.
-   Show that the product
+   This condition holds when $\{\alpha_n\}$ are the zeros of a bounded holomorphic function on the unit disc, by Problem 1. Show that the product
 
    $$
    f(z)=\prod_{n=1}^{\infty}

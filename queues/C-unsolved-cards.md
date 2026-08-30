@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4590 problem and exercise cards have no solution section and no incoming
+4585 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1406
-- Problems: 3184
-- Total: 4590
+- Exercises: 1404
+- Problems: 3181
+- Total: 4585
 
-## Exercises (1406)
+## Exercises (1404)
 
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
 - [ ] E-AMD-PX2UMZEG — "Intersections, products, and sums of ideals are ideals"
@@ -573,7 +573,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-32-11 — "Equal ranks of $T$ and $T^2$ force range and null space to be disjoint"
 - [ ] E-HK-32-2 — "Is the operator prescribed on the standard basis of $\CC^3$ invertible?"
 - [ ] E-HK-32-3 — "An invertible operator on $\RR^3$ and a rule for its inverse"
-- [ ] E-HK-32-4 — "The operator of Exercise 3 satisfies $(T^2 - I)(T - 3I) = 0$"
 - [ ] E-HK-32-5 — "Rank of left multiplication by a rank-one matrix, and its square"
 - [ ] E-HK-32-6 — "A composition through a lower-dimensional space is never invertible"
 - [ ] E-HK-32-7 — "Operators with $TU = 0$ but $UT \neq 0$"
@@ -956,7 +955,6 @@ commit, and writing the solution removes the line.
 - [ ] E-MAH4O — "Winding of a curve about the origin from its position in the complement"
 - [ ] E-MC21D — "Density of uncountable products of the line"
 - [ ] E-MGLSK — "Right-continuous functions and the lower limit topology"
-- [ ] E-MI1BO — "Locally euclidean spaces are locally compact and locally metrizable"
 - [ ] E-MJQTF — "Interior and boundary of a connected set"
 - [ ] E-MKK6X — "The minimal uncountable order is not separable"
 - [ ] E-ML7VU — "The topologist's sine curve has dimension one"
@@ -1424,7 +1422,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3184)
+## Problems (3181)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -1706,7 +1704,6 @@ commit, and writing the solution removes the line.
 - [ ] P-8TF23 — "A cell decomposition of the Klein bottle and its homology"
 - [ ] P-8TF25 — "A continuous bijection of connected spaces that is not a homeomorphism"
 - [ ] P-8TF26 — "Identification of a drawn surface via the classification"
-- [ ] P-8TF27 — "The product of two compact spaces is compact"
 - [ ] P-8TF28 — "An example of a connected space that is not path-connected"
 - [ ] P-8TF29 — "Definition of a covering space, and a covering of a simply connected space is a homeomorphism"
 - [ ] P-8TF30 — "Every free group is a subgroup of $F_2$, via covering spaces"
@@ -1808,7 +1805,6 @@ commit, and writing the solution removes the line.
 - [ ] P-8XT59 — "Separability of $X^*$ implies separability of $X$"
 - [ ] P-8XT60 — "Integral of f' bounded by f(1)-f(0) for increasing f, and termwise differentiation of a series of increasing functions"
 - [ ] P-8XT61 — "Dyadic averages $E_n f$ converge to $f$ almost everywhere"
-- [ ] P-8XT62 — "Haar functions form an orthonormal expansion of mean-zero $L^2$ and $L^1$ functions"
 - [ ] P-8XT64 — "$L^p(\mathbb{R})$ convergence yields an a.e.-convergent subsequence; an $L^2$ null sequence that fails a.e."
 - [ ] P-8XT65 — "Jensen for $\log|f|$ on circles, and boundary zeros of a disk-holomorphic function have measure zero"
 - [ ] P-8XT66 — "Harnack compactness for positive harmonic functions normalized at a point"
@@ -4561,7 +4557,6 @@ commit, and writing the solution removes the line.
 - [ ] P-Y7C7Z — "Homology of the plane union a cylinder attached along two disjoint circles"
 - [ ] P-YAODF — "Hungerford 5.6.1"
 - [ ] P-YBQ3V — "When compact sets are closed, and $\overline{A\times B}=\overline{A}\times\overline{B}$"
-- [ ] P-YCLOT — "Groups of order $p^2$"
 - [ ] P-YCRKO — "The derived series, the commutator, and two theorems on derived series"
 - [ ] P-YCZ6A — "Homology of $S^2\times S^2$"
 - [ ] P-YFOG7 — "Galois group $D_6$ and intermediate fields of $\QQ(\sqrt[3]{2},\sqrt{3},\zeta_3)/\QQ$"
