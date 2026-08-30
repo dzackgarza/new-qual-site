@@ -11,6 +11,10 @@ classification:
   - Integration by Parts
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -37,4 +41,12 @@ review: draft
   - **Used 2019**
 
   4. $\displaystyle \int \ln(x^2-1) ~dx =  \color{blue} { (x + 1) \ln(x + 1) + (x - 1) \ln(x - 1) - 2x}$
+:::
+
+::: {.solution}
+<1>1. $f$ integrable.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

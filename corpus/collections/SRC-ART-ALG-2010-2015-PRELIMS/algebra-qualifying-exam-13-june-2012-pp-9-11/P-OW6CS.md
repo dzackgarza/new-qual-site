@@ -11,6 +11,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -28,4 +32,12 @@ d. A subfield $E$ of the splitting field of $x^5 + x - 1$ with $[E:\mathbb{Q}] =
 e. A field extension $K/F$ which is finite dimensional but not separable.
 
 f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by radicals.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
