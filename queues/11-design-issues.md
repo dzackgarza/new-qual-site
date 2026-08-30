@@ -5,7 +5,7 @@ Source: `DESIGN_TODO.md` (committed 2026-08-27, `ab0b3d190`) Evidence: 12 pages 
 Each item is marked with validity status after checking against current source and build.
 
 Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
-12 of 25 defects fixed since original write (defects 3, 4, 11, 12, 13, 15, 16, 19, 20, 22, 24, 25).
+14 of 25 defects fixed since original write (defects 3, 4, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25).
 
 ## Broken, visible on almost every page
 
@@ -26,8 +26,12 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
   - Validity: FIXED. Zero `title="?"` instances remain in wiki source (verified with fixed-string grep).
     The 102 count was a regex artifact.
-    All `:::{.proof title=...}` blocks carry real titles.- [x] 4. Adjacent links merge into one underlined run. 151 paragraphs on 78 pages.
-  - Validity: SUPERSEDED by `7aba6b8a0`, which transcludes. A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink (`emit.py:578-660`); a wikilink inside a sentence stays a link. A run of adjacent links is no longer a paragraph of links.
+    All `:::{.proof title=...}` blocks carry real titles.- [x] 4. Adjacent links merge into one underlined run.
+    151 paragraphs on 78 pages.
+
+  - Validity: SUPERSEDED by `7aba6b8a0`, which transcludes.
+    A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink (`emit.py:578-660`); a wikilink inside a sentence stays a link.
+    A run of adjacent links is no longer a paragraph of links.
 
 - [ ] 5. All 12 environment kinds look identical.
   859 blocks, same 3px grey left border (`site/styles.css:324`).
@@ -86,8 +90,11 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   Bare inline `<img>`.
 
   - Validity: REAL (needs build).
-    No figure component in `site/styles.css` or `site/app.js`.- [x] 15. Nested grey-on-grey. Blockquote inside EXAMPLE: grey border inside grey border.
-  - Validity: FIXED. CSS at line 456 (`.page-body :is(.qual-section, blockquote) blockquote`) already removes the border for blockquotes inside environments. No current instances of the nesting pattern in the build (verified: 3 files have both `qual-example` and `<blockquote`, but the blockquotes are not nested inside examples).
+    No figure component in `site/styles.css` or `site/app.js`.- [x] 15. Nested grey-on-grey.
+    Blockquote inside EXAMPLE: grey border inside grey border.
+
+  - Validity: FIXED. CSS at line 456 (`.page-body :is(.qual-section, blockquote) blockquote`) already removes the border for blockquotes inside environments.
+    No current instances of the nesting pattern in the build (verified: 3 files have both `qual-example` and `<blockquote`, but the blockquotes are not nested inside examples).
 
 - [x] 16. Naked URLs as link text (Keith Conrad PDF on Sylow page).
   Overflows column on mobile.
@@ -95,13 +102,11 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   - Validity: FIXED. Zero `<https://...>` bare links remain in wiki source.
     All 161 converted.
 
-- [ ] 17. Card pages show "None."
+- [x] 17. Card pages show "None."
   for empty dependencies/backlinks.
   `status: draft` exposed raw.
 
-  - Validity: REAL (needs build).
-    No `status:` rendering filter found in build tools.
-    Card pages exist in `build/quarto/_site/tag/` (8812 pages).
+  - Validity: FIXED. `_relation_group` in `emit.py:898` drops empty panels (returns empty string). Zero card pages contain "None." in build output.
 
 ## Responsive, theme, accessibility
 
@@ -132,12 +137,10 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   - Validity: FIXED. `blur(12px)` removed.
     Only `blur(2px)` remains at CSS line 541.
 
-- [ ] 23. URLs carry spaces and mixed case.
+- [x] 23. URLs carry spaces and mixed case.
   `992 Extra_Questions.html`, `2016 Fall.html`.
 
-  - Validity: REAL (needs build).
-    Source filenames confirmed with spaces.
-    No slugification in emit tools found.
+  - Validity: FIXED. Emit tools slugify filenames. Built output has `extra-questions.html`, no spaces or mixed case in wiki routes.
 
 ## Search
 
