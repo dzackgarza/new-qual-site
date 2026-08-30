@@ -12,6 +12,10 @@ classification:
   - van Kampen
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -36,4 +40,12 @@ Write down the fundamental group of the following spaces:
 9. $\mathbb{R}^3 - \{ (x,y,0) \mid x^2 + y^2 = 1\}$
 
 10. $\mathbb{R}^2 - H$, the Hopf link
+:::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
