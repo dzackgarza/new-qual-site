@@ -2369,6 +2369,14 @@ def project(
         shutil.copy(site / asset, out / Path(asset).name)
     for asset in ("styles.css", "app.js"):
         shutil.copy(site / asset, site_root / asset)
+    # ETBook font files for Tufte-style typography.
+    fonts_src = site / "fonts"
+    if fonts_src.is_dir():
+        fonts_dst = site_root / "fonts"
+        fonts_dst.mkdir(exist_ok=True)
+        for f in fonts_src.iterdir():
+            if f.suffix == ".woff":
+                shutil.copy(f, fonts_dst / f.name)
 
     guides = load_publications(publications)
     link_targets = _link_targets(con, guides)
