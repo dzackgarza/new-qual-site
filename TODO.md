@@ -772,11 +772,17 @@ State the evidence in an empty audit commit.
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] Correct every false problem statement found during source review.
+- [x] Correct every false problem statement found during source review.
+  Six found and corrected in `e5b29bd99`, all exposed by reading the duplicate candidates against each other.
+  Two are false as written (`FD-C7EQD` diverges at $k=m$ where the limit is finite and nonzero; `PR-O4AY4` drops the integrability hypothesis), two are garbled (`PR-HLPMX`, `PR-I44DD`), and two are truncated (`T-VCX3Y` ends mid-word, `D-YL6FR` never says what its condition defines).
 
-- [ ] Correct every wrong title or classification found during source review.
+- [x] Correct every wrong title or classification found during source review.
+  No wrong titles survive: every candidate the audit raised turned out to be an artifact of comparing titles without their mathematics.
+  The classification defect that did exist was vocabulary rather than error, and is `a39ebe785`.
 
-- [ ] Resolve duplicate-statement candidates by reading both sources.
+- [x] Resolve duplicate-statement candidates by reading both sources.
+  Done in `e5b29bd99`. 141 same-title theory-card groups over 364 cards were read: 56 state one result in two notations and now carry a `variant-of` relation to the card the wiki chapters use; 85 state different mathematics under a shared title and are left alone.
+  Comparing titles with their mathematics stripped out is what makes this audit produce false pairs: it groups $e^{2\pi i/6}$ with $e^{2\pi i/3}$, and $\Phi_p$ with $\Phi_{2p}$.
 
 - [ ] Resolve card-kind and source-structure defects.
 
