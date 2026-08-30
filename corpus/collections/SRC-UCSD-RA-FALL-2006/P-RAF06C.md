@@ -13,6 +13,10 @@ classification:
   - Closed Range
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -24,4 +28,40 @@ Let $H$ be a Hilbert space, $T : H \to H$ a bounded linear operator, $T^* : H \t
 
 Hint for (b): Show that, for every $y \in N(T)^\perp$, there is a bounded linear functional $\Lambda : R(T) \to \mathbb{C}$ with the property that $\Lambda(Tx) = (x, y)$.
 Use this to show that $N(T)^\perp \subset R(T^*)$.
+:::
+
+::: {.solution}
+**(a).**
+
+<1>1. $N(T^*)=\{y: T^*y=0\}$.
+Proof: definition.
+
+<1>2. $y\in N(T^*)$ iff $(Tx,y)=0$ for all $x$, i.e. $y\perp R(T)$.
+Proof: $(Tx,y)=(x,T^*y)$.
+
+<1>3. Hence $N(T^*)=R(T)^\perp$.
+Proof: <1>2.
+
+<1>4. $N(T)=R(T^*)^\perp$, so $N(T)^\perp = \overline{R(T^*)}^{\perp\perp}= \overline{R(T^*)}$.
+Proof: take orthogonals of <1>3 with $T$ replaced by $T^*$ and double orthogonal is closure.
+
+**(b).**
+
+<1>1. Assume $R(T)$ closed.
+Proof: hypothesis.
+
+<1>2. For $y\in N(T)^\perp =\overline{R(T^*)}$, define $\Lambda: R(T)\to\mathbb{C}$ by $\Lambda(Tx)=(x,y)$.
+Proof: well-defined because if $Tx_1=Tx_2$ then $x_1-x_2\in N(T)\perp y$.
+
+<1>3. $\Lambda$ is bounded: $|\Lambda(Tx)|\le \|y\|\|P_{N(T)^\perp}x\|\le C\|Tx\|$ (closed range gives $c\|P_{N(T)^\perp}x\|\le\|Tx\|$).
+Proof: closed range estimate.
+
+<1>4. Extend $\Lambda$ by Hahn–Banach and Riesz to $z$ with $(Tx,z)=\Lambda(Tx)=(x,y)$, so $y=T^*z$.
+Proof: Riesz representation.
+
+<1>5. Hence $N(T)^\perp\subset R(T^*)$, so $R(T^*)=N(T)^\perp$ is closed.
+Proof: <1>4 and <1>4(a) ($\overline{R(T^*)}\subset R(T^*)$).
+
+<1>6. Q.E.D.
+Proof: <1>3 and <1>5.
 :::
