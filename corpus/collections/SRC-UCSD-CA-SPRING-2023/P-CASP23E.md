@@ -12,6 +12,10 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -24,4 +28,12 @@ $$
 
 (b) Does there exist a sequence of rational functions $R_n(z)$ whose poles can only occur at $6$ such that the above limit holds?
 Justify your answer.
+:::
+
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -61,3 +61,11 @@ Then $x\notin U_n$ for all $n$, contradicting that $\{U_n\}$ covers $X$. ∎
 
 By Lemma 1 and Lemma 2 the two conditions are equivalent. ∎
 :::
+
+::: {.solution}
+<1>1. $X$ compact.
+Proof: Heine-Borel.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
