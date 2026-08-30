@@ -10,6 +10,10 @@ classification:
   - Invariant Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -22,4 +26,12 @@ and let $G$ be the cyclic subgroup of $\mathrm{GL}_2(\mathbb{C})$ of order $4$ g
 (a) Calculate the Hilbert series of the invariant ring $\mathbb{C}[x, y]^G$.
 
 (b) Describe a finite set of polynomials which generates $\mathbb{C}[x, y]^G$ as a $\mathbb{C}$-algebra (you need not compute this set explicitly).
+:::
+
+::: {.solution}
+<1>1. $H$ group.
+Proof: action.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

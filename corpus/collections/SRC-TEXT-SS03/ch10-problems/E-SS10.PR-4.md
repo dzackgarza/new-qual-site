@@ -11,6 +11,10 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -58,4 +62,12 @@ ${ \bf 6 . ^ { * } }$ Here we will deduce the formula for $r _ { 8 } ( n )$ , wh
 The method is parallel to that of $r _ { 4 } ( n )$ but the details are less delicate.
 
 Theorem: $r _ { 8 } ( n ) = 1 6 \sigma _ { 3 } ^ { * } ( n )$
+:::
+
+::: {.solution}
+<1>1. $G$ entire.
+Proof: estimate.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
