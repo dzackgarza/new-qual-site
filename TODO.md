@@ -786,8 +786,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Resolve card-kind and source-structure defects.
   Five cards declared `kind: solution` but proved no exercise: they carried a proof with no statement and no `solves` relation anywhere in the corpus.
-  Each now states the result it proves and is an `exercise`.
-  The `solution`/`Integral Domains` query in `publications/algebra-guide.yaml` selected exactly one of them, so it is gone; the section's `exercise`/`Integral Domains` query reaches that card with its proof attached.
+  Each now states the result it proves and is an `exercise`. The `solution`/`Integral Domains` query in `publications/algebra-guide.yaml` selected exactly one of them, so it is gone; the section's `exercise`/`Integral Domains` query reaches that card with its proof attached.
   The eleven remaining id-prefix disagreements are not defects: `FR-*` cards hold `::: {.proof}` bodies and `P-X1WOB` holds `::: exercise`, so the prefix is not a kind convention.
 
 - [x] Use the Stein--Shakarchi normal-family convention: every sequence has a subsequence that converges locally uniformly to a holomorphic function.
@@ -981,21 +980,30 @@ Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [is
 
 ### Publish each subject branch
 
-- [ ] Complete Prelims publication under [issue #24](https://github.com/dzackgarza/new-qual-site/issues/24).
+- [x] Complete Prelims publication under [issue #24](https://github.com/dzackgarza/new-qual-site/issues/24).
 
-- [ ] Complete Algebra publication under [issue #25](https://github.com/dzackgarza/new-qual-site/issues/25).
+- [x] Complete Algebra publication under [issue #25](https://github.com/dzackgarza/new-qual-site/issues/25).
 
-- [ ] Complete Real Analysis publication under [issue #26](https://github.com/dzackgarza/new-qual-site/issues/26).
+- [x] Complete Real Analysis publication under [issue #26](https://github.com/dzackgarza/new-qual-site/issues/26).
 
-- [ ] Complete Complex Analysis publication under [issue #27](https://github.com/dzackgarza/new-qual-site/issues/27).
+- [x] Complete Complex Analysis publication under [issue #27](https://github.com/dzackgarza/new-qual-site/issues/27).
 
-- [ ] Complete Topology publication under [issue #28](https://github.com/dzackgarza/new-qual-site/issues/28).
+- [x] Complete Topology publication under [issue #28](https://github.com/dzackgarza/new-qual-site/issues/28).
 
-- [ ] Complete Workshops publication under [issue #29](https://github.com/dzackgarza/new-qual-site/issues/29).
+- [x] Complete Workshops publication under [issue #29](https://github.com/dzackgarza/new-qual-site/issues/29).
 
-- [ ] Map every branch criterion to current proof.
+- [x] Map every branch criterion to current proof.
+  The six issues ask the same five things of every branch, and the reorganization rewrote the wiki under all of them, so each is re-proved against the current tree.
+  A reachable root and hierarchy, and every source page and card reachable: `just crawl` walks the built site from the home page and reaches 9449 of its 9450 pages.
+  The one it does not is `404.html`, which the server serves for a path that is not a page and which nothing links on purpose.
+  No broken references or assets: the same walk resolves every internal link.
+  Breadcrumbs and a supported reading order: 256 of the 257 wiki pages carry both, the exception being the wiki root, which is the top of the hierarchy and the start of the traversal.
+  Stable card routes: a card's route is its id, so it does not move when a page does.
+  Manual inspection: the six subject roots and four terminal pages read at 1280 CSS pixels, and two of them at 375, with no console error and no page scrolling sideways.
 
-- [ ] Settle every branch-specific gap before closing its issue.
+- [x] Settle every branch-specific gap before closing its issue.
+  The crawl found twenty unreachable complex-analysis pages, repaired in `e0024d19e`, and reading the roots found two sidebar entries a reader cannot tell from a sibling, repaired in `eeacea4d7`.
+  Topology's issue defers unextracted attachment content to [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9), which is where it remains.
 
 ### Complete the reader and exam generator
 
