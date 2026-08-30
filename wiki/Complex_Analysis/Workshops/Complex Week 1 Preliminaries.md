@@ -1,10 +1,9 @@
 ---
-order: 100001
+order: 20
 title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 ---
 
-# Week 1: Preliminaries
-
+# Complex Analysis Qual Prep Week 1: Preliminaries
 ## Topics
 
 - Complex arithmetic and geometry, conic section equations

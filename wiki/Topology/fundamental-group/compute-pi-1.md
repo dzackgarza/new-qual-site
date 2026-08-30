@@ -1,5 +1,5 @@
 ---
-title: Compute pi_1
+title: Compute $\pi_1$
 order: 0
 problems:
   topics:

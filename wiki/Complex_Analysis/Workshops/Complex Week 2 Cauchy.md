@@ -1,10 +1,9 @@
 ---
-order: 100002
+order: 30
 title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
 ---
 
-# Topics
-
+# Complex Analysis Qual Prep Week 2: Things Named After Cauchy
 - [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]]
 
 - Toy contours
@@ -85,14 +84,14 @@ Jordan's Lemma: ![[_attachments/Pasted image 20210527182026.png]]
 
 ![[_attachments/Pasted image 20210527175435.png]]
 
-# Warmups
+## Warmups
 
 [[E-W3QMS]]
 
-# Questions
+## Questions
 
 [[P-IOUZO]]
 
-# Qual Problems
+## Qual Problems
 
 [[P-AQRVL]]

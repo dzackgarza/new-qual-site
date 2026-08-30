@@ -54,7 +54,7 @@ Exercises from [@Fol13]:
 
 - [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)
 
-# Qual Workshop Materials
+## Qual Workshop Materials
 
 > UNL analysis workshop packet.
 > Day 1, Day 9, and Day 10 are Math 825/826 qualifying exams (Day 1 prints Avery Hall 347). Day 2–8 are topic sheets that reuse tagged exam items.

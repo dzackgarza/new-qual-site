@@ -25,7 +25,7 @@ order: 100
 ## Spring 2020 HW 1 # 11
 [[P-UYWZ5]]
 
-# Holomorphicity
+## Holomorphicity
 
 ## Spring 2020 HW 1 # 7
 [[P-CV2MR]]
@@ -155,7 +155,7 @@ The inversion $z\to 1/z$ is easiest to understand in polar coordinates, $Re^{i\t
 
 :::
 
-# Exercises
+## Exercises
 
 [[E-X4MBB]]
 

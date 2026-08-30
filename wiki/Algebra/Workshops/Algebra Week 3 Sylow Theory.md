@@ -1,10 +1,9 @@
 ---
-order: 100003
+order: 39
 title: Algebra Qual Prep Week 3
 ---
 
-# Week 3: Sylow Theory
-
+# Algebra Qual Prep Week 3
 ## Topics
 
 - The 3 Sylow theorems

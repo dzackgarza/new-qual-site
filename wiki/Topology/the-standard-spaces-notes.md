@@ -208,7 +208,7 @@ Possible modifications to a space $X$:
 
 :::
 
-# Low Dimensional Homology Examples
+## Low Dimensional Homology Examples
 
 :::{.fact title="Table of low-dimensional homology"}
 \[
@@ -229,7 +229,7 @@ S^1   &=  &[&\ZZ, &\ZZ,               &0,    &0,      &0,    &0\rightarrow & ]\\
 
 :::
 
-# Table of Homotopy and Homology Structures
+## Table of Homotopy and Homology Structures
 
 :::{.remark}
 The following is a giant list of known homology/homotopy.

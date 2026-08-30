@@ -80,7 +80,7 @@ Behold:
 
 :::
 
-# Exercises
+## Exercises
 
 [[E-SS1.EX-19]]
 [[E-ORJPT]]

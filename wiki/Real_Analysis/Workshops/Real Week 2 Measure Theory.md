@@ -1,10 +1,9 @@
 ---
-order: 100002
+order: 29
 title: "Real Analysis Qual Prep Week 2: Measure Theory, Fubini Tonelli"
 ---
 
-# Study Guide
-
+# Real Analysis Qual Prep Week 2: Measure Theory, Fubini Tonelli
 References:
 
 - [@Fol13, chap. 1]
@@ -153,7 +152,7 @@ Some things that qual questions are commonly based on:
 
 ![](_attachments/Pasted image 20210528190207.png)
 
-# Qual Problems
+## Qual Problems
 
 > Suggested by Peter Woolfitt!
 

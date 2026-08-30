@@ -1,10 +1,9 @@
 ---
-order: 100002
+order: 29
 title: "Algebra Qual Prep Week 2: Finite Group Theory"
 ---
 
-# Week 2: Finite Groups
-
+# Algebra Qual Prep Week 2: Finite Group Theory
 ## Topics
 
 - Recognition of direct products and semidirect products
@@ -104,7 +103,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
 [[P-RPSTO]]
 
-# Qual Problems
+## Qual Problems
 
 ![[_attachments/Untitled 14.png]]
 

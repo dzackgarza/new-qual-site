@@ -24,7 +24,7 @@ Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/top
 
 [Harvard Math 131 midterm](https://people.math.harvard.edu/~bullery/math131/Midterm.pdf)
 
-# Qual Workshop Materials
+## Qual Workshop Materials
 
 [Topology Workshop Worksheet 1A.pdf](attachments/Topology_Workshop_Worksheet_1A.pdf)
 

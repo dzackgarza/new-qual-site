@@ -1,5 +1,5 @@
 ---
-title: Lp spaces
+title: $L^p$ spaces
 order: 5
 ---
 

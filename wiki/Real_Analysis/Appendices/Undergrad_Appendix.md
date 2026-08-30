@@ -1,10 +1,9 @@
 ---
 title: Undergraduate Review
-order: 9900
+order: 43
 ---
 
-# Appendix: Undergrad Review
-
+# Undergraduate Review
 [[D-G2I5Q]]
 
 ::: {.example}

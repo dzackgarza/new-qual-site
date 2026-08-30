@@ -1,5 +1,5 @@
 ---
-title: Show G is not simple
+title: Show $G$ is not simple
 order: 0
 problems:
   topics:

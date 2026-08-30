@@ -86,7 +86,7 @@ order: 10
 
   - Radon-Nikodym
 
-# References
+## References
 
 - Topics
 

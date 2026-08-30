@@ -1,6 +1,6 @@
 ---
 title: Common Inequalities
-order: 9900
+order: 23
 ---
 
 title: Basics

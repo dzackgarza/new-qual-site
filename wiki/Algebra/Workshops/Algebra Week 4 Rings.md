@@ -1,10 +1,9 @@
 ---
-order: 100004
+order: 49
 title: Algebra Qual Prep Week 4
 ---
 
-# Week 4: Rings
-
+# Algebra Qual Prep Week 4
 - Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
 
 - Irreducible and prime elements, nilpotent, units

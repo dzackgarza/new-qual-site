@@ -1,6 +1,6 @@
 ---
 title: "Appendix: Functional Analysis"
-order: 9900
+order: 33
 ---
 
 # Appendix: Functional Analysis

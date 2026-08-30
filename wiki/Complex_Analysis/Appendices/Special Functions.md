@@ -1,5 +1,5 @@
 ---
-order: 100004
+order: 121
 ---
 
 # Special Functions
@@ -73,7 +73,7 @@ The residues:
 
 :::
 
-# Elliptic Functions
+## Elliptic Functions
 
 An **elliptic function** (relative to a lattice $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ with $\omega_1/\omega_2\notin\RR$) is a meromorphic function $f$ on $\CC$ satisfying $f(z+\omega)=f(z)$ for every $\omega\in\Lambda$.
 Entire elliptic functions are constant: they are bounded on a fundamental parallelogram, hence bounded on $\CC$, hence constant by Liouville.

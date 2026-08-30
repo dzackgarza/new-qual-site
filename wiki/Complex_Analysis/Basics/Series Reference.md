@@ -152,7 +152,7 @@ The product of two sequences is given by the Cauchy product
 
 :::
 
-# Inverting Series
+## Inverting Series
 
 ## Cauchy product formula for coefficients of $1/A(z)$
 

@@ -1,5 +1,5 @@
 ---
-order: 100002
+order: 18
 title: Prelim Resources
 ---
 
@@ -11,8 +11,7 @@ title: Prelim Resources
 
 [[Prelim/Problems/Berkeley Prelims]]
 
-# Prelim/GRE Level
-
+# Prelim Resources
 ## References and Study Material
 
 [UCLA summer notes](https://www.math.ucla.edu/~bonsoon/summer2020/files/concepts.pdf)

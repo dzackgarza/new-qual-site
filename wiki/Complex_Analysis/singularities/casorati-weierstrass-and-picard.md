@@ -8,8 +8,7 @@ problems:
   - Picard's Theorem
 ---
 
-# Casorati–Weierstrass and Picard
-
+# Casorati-Weierstrass and Picard
 How much of the plane a function must cover near an essential singularity.
 The two theorems say the same kind of thing at different strengths, and the exam usually wants the weaker one.
 

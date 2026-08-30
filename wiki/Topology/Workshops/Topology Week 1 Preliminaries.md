@@ -1,10 +1,9 @@
 ---
-order: 100001
+order: 19
 title: "Topology Qual Prep Week 1: Point-Set"
 ---
 
-# Topics
-
+# Topology Qual Prep Week 1: Point-Set
 - Definitions:
 
   - topologies,
@@ -53,7 +52,7 @@ title: "Topology Qual Prep Week 1: Point-Set"
 
 - Common counterexamples (sine curve)
 
-# Warmups
+## Warmups
 
 - State the axioms of a topology.
 
@@ -61,13 +60,13 @@ title: "Topology Qual Prep Week 1: Point-Set"
   Closed?
   [[E-YUGKU]] [[E-OIS5D]] [[E-EE4EE]] [[E-KJQUD]] [[E-FLVZU]] [[E-6W4WA]] [[E-XSXAZ]] [[E-ARJT3]] [[E-45N4G]]
 
-# Exercises
+## Exercises
 
 - Prove Cantor's intersection theorem.
 
 - Determine if the following subsets of $\RR$ are opened, closed, both, or neither: [[P-MFWBK]] [[P-HPN6K]] [[P-N7RR5]] [[P-2V6GL]] [[P-3GOJI]] [[P-JAEYU]] [[P-FNJCM]] [[P-WXTVX]] [[P-NNHWB]] [[P-OTXNQ]] [[P-NJNNL]] [[P-SG462]] [[P-GAA3C]] [[P-YBQ3V]] [[P-ZQBPZ]] [[P-WHXWM]] [[P-TC2PJ]]
 
-# Qual Questions
+## Qual Questions
 
 Tube lemma: ![](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520142907.png)
 

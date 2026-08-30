@@ -1,5 +1,5 @@
 ---
-title: Compute H_*
+title: Compute $H_*$
 order: 0
 problems:
   topics:

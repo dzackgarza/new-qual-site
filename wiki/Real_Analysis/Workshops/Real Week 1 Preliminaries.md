@@ -1,10 +1,9 @@
 ---
-order: 100001
+order: 19
 title: "Real Analysis Qual Prep Week 1: Preliminaries"
 ---
 
-# Week 1: Preliminaries
-
+# Real Analysis Qual Prep Week 1: Preliminaries
 ## Topics
 
 - Continuity and uniform continuity

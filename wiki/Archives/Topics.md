@@ -7,8 +7,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 [UCLA Prelims and Quals](https://secure.math.ucla.edu/gradquals/hbquals.php)
 [Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-# Undergraduate / Prelim Level
-
+# Topics
 ## Calculus (Stewart)
 - chain rule; 
 - Derivatives of maps from $\RR^m\to\RR^n$ 
@@ -196,7 +195,7 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 
 ---
 
-# Graduate Level
+## Graduate Level
 
 ## Algebra
 Categories and Functors: 

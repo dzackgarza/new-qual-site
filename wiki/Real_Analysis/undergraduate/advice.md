@@ -102,7 +102,7 @@ order: 5
 - $\mu(X) = \norm{\id}_{L^1(X)} = \int_X 1 \dmu$
 
 
-# The Absolute Essentials
+## The Absolute Essentials
 
 [[PR-IGVTV]]
 
@@ -155,7 +155,7 @@ Take $N\da E\setminus K$, then $m(N) = 0$.
 
 :::
 
-# Quintessential Qual Problems
+## Quintessential Qual Problems
 
 [[E-OMK54]]
 [[PR-6NDTF]]

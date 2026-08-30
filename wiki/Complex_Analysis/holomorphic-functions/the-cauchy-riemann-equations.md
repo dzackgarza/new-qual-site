@@ -8,8 +8,7 @@ problems:
   - Partial Derivatives
 ---
 
-# The Cauchy–Riemann equations
-
+# The Cauchy-Riemann equations
 The condition that a real-differentiable map $\RR^2 \to \RR^2$ is complex differentiable.
 
 [[D-V6UQJ]]

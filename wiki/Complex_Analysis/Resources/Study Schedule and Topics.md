@@ -3,11 +3,10 @@ order: 0
 title: "Study Schedule and Topics"
 ---
 
-# Topics
-
+# Study Schedule and Topics
 [UGA List of topics](attachments/Complex_Analysis_Prelim_Review.pdf)
 
-# Scheduling
+## Scheduling
 
 - Week 1 (May 19):  **Preliminary Review**
 

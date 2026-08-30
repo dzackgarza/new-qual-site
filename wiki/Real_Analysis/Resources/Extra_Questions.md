@@ -1,5 +1,5 @@
 ---
-order: 100001
+order: 710
 ---
 
 > Source: a TeX file used while studying for quals; not original to this corpus. This is a workshop dump, not a UGA Quals exam. The opening May 2016 Qual block is Day 1 of `SRC-RA-WORKSHOP`, which is the collection `SRC-UNL-RA-SUMMER-2016`. Later headings are the UNL packet's own tags (January / June / May), including the Day 2 item tagged May 2019 #1. The June tags are citations printed on Days 2–8 of that packet; they are not UGA qualifying exams. UGA's posted archive is Fall and Spring only.
@@ -24,7 +24,7 @@ order: 100001
 ##  (May 2016, 6) 
 [[P-BDFPC]]
 
-# Metric Spaces and Topology
+## Metric Spaces and Topology
 
 ##  (May 2019, 1) 
 
@@ -45,7 +45,7 @@ order: 100001
 ## 5?
 [[P-HOUMA]]
 
-# Sequences and Series
+## Sequences and Series
 
 ## (June 2013 1a) 
 [[P-MCFQT]]
@@ -69,7 +69,7 @@ order: 100001
 
 [[P-GGJ5N]]
 
-# Differential Calculus
+## Differential Calculus
 
 ##  (June 2005 1a) 
 
@@ -97,7 +97,7 @@ order: 100001
 
 [[P-NXMNQ]]
 
-# Integral Calculus
+## Integral Calculus
 
 ##  (January 2006 4b) 
 
@@ -119,7 +119,7 @@ order: 100001
 
 [[P-VG7GK]]
 
-# Sequences and Series of Functions
+## Sequences and Series of Functions
 
 ## (June 2010 6a) 
 
@@ -145,7 +145,7 @@ order: 100001
 
 [[P-KZZ7M]]
 
-# Miscellaneous Topics
+## Miscellaneous Topics
 
 ## Bounded Variation {#bounded-variation .unnumbered}
 
@@ -177,7 +177,7 @@ order: 100001
 
 [[P-U354O]]
 
-# Integral Calculus
+## Integral Calculus
 
 ##  (June 2009 \#5b)
 
@@ -191,7 +191,7 @@ order: 100001
 
 [[P-ZCPFV]]
 
-# Sequences and Series (and of Functions) 
+## Sequences and Series (and of Functions) 
 
 ##  (January 2006 1) 
 

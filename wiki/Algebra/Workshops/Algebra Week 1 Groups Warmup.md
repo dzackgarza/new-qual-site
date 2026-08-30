@@ -1,10 +1,9 @@
 ---
-order: 100001
+order: 19
 title: "Algebra Qual Prep Week 1: Groups Warmup"
 ---
 
-# Week 1: Finite Groups
-
+# Algebra Qual Prep Week 1: Groups Warmup
 ## Week 1 Topics
 
 - Subgroups

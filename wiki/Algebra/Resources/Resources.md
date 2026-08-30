@@ -10,7 +10,7 @@ order: 0
 
 - Individual PDFs on the [UGA algebra exam archive](https://www.math.uga.edu/algebra-exams).
 
-# Problems (no solutions)
+## Problems (no solutions)
 
 Question bank: [LSU algebra syllabus and problems](https://www.math.lsu.edu/gradfiles/algsyl99.pdf)
 
