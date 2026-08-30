@@ -14,6 +14,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -33,4 +37,12 @@ e. A UFD which is not a PID.
 f. An integral domain which is not Noetherian.
 
 (Conventions: All rings are rings with 1, and an integral domain is commutative.)
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -11,6 +11,10 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -57,4 +61,12 @@ The idea is to think of $w$ as a vector lying in the tangent space at $z .$ . Ob
 We pass from the infinitesimal hyperbolic length of tangent vectors to the global hyperbolic distance between two points by integration.
 
 (a) Given two complex numbers $z _ { 1 }$ and $z _ { 2 }$ in the disc, we define the hyperbolic distance between them by
+:::
+
+::: {.solution}
+<1>1. $u$ harmonic.
+Proof: mean value.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

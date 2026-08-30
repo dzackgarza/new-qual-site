@@ -50,3 +50,11 @@ Show that $\RP^2 \lor S^1$ is *not* homotopy equivalent to a compact surface (po
 
 Authored by **Codex 5.3 Spark Extra High**.
 :::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

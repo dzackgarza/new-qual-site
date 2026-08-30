@@ -86,3 +86,11 @@ audit:
 <1>6. Conclusion:
     $D_4$ has 4 1D characters and 1 standard 2D geometric rotation/reflection representation. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
