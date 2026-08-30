@@ -1821,7 +1821,8 @@ problems:
   The page is scoped to the subject it is filed under, and a query matching nothing stops the build.
   First use is `wiki/Algebra/Groups/Sylow_Theorems.md`, which lists all 167 algebra problems on Sylow theory.
 
-- [ ] Replace the 90 `Quals/` pages and the source-archive pages with it.
+- [x] Replace the 90 `Quals/` pages and the source-archive pages with it.
+  Done for all six subjects, and for the six source archives in `567504e71`. Every card each page named was checked reachable from a chapter page before deletion.
   These are the only pages this section removes, and their content survives: it is card data, rendered.
   Complex analysis is done: 35 pages, 348 cards, each checked reachable from a chapter page before deletion (`00a38780b`). Two things that were not card data had to be moved first rather than deleted: the acknowledgements on `Quals/Preface`, which name four people, and eight exam PDF links that existed nowhere else and are now on the provenance of the collection card for each sitting.
   Expect both in the other subjects.
