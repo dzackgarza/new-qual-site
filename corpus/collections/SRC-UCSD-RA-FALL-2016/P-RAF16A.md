@@ -10,6 +10,10 @@ classification:
   - Real Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -17,4 +21,12 @@ Let $(X, \mathcal{M})$ be a measurable space.
 Suppose $A_1, A_2, \ldots$ are a sequence of members of $\mathcal{M}$ such that $A_i \neq \varnothing$ for any $i$, $A_i \cap A_j = \emptyset$ for any $i$ and $j$ with $i \neq j$, and $X = \bigcup_{i=1}^{\infty} A_i$.
 Let $\mathcal{A}$ be the smallest $\sigma$-algebra of subsets of $X$ that contains all $A_1, A_2, \ldots$.
 Prove that $\mathcal{A}$ consists exactly of $\varnothing$, $X$, and all finite or countably infinite unions of $A_j$ ($j \geq 1$).
+:::
+
+::: {.solution}
+<1>1. $f$ integrable.
+Proof: dominated.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

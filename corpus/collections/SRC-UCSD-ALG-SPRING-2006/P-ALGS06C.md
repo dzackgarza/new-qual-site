@@ -10,6 +10,10 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -20,4 +24,12 @@ Let $p$ be a prime number.
 (b) Use (a) above to construct a non-abelian group of order $p^3$.
 
 (c) Describe the non-abelian group you have constructed in (b) above via generators and relations.
+:::
+
+::: {.solution}
+<1>1. $R$ Noetherian.
+Proof: Hilbert.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

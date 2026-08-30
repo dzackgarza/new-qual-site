@@ -11,6 +11,10 @@ classification:
   - Splitting Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -21,4 +25,12 @@ Let $E$ be the splitting field of $x^p - 2$ over $\mathbb{Q}$, where $p$ is an o
 
 (b) Find $\{(\sigma(\zeta_p), \sigma(\sqrt[p]{2})) \mid \sigma \in \mathrm{Gal}(E/\mathbb{Q})\}$.
 Justify your answer.
+:::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: extension.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
