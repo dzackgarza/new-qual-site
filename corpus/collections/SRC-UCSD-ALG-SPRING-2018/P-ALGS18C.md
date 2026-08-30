@@ -10,6 +10,10 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -18,4 +22,12 @@ Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname
 (a) Find the Jordan form of $g$ if $F = \mathbb{C}$.
 
 (b) Find the Jordan form of $g$ if $F = \overline{\mathbb{F}}_p$ is an algebraic closure of the finite field $\mathbb{F}_p$.
+:::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: extension.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
