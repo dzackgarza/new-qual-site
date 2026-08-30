@@ -1265,7 +1265,7 @@ commit, and writing the solution removes the line.
 - [ ] E-SS5.EX-6 — "SS 5.6: Wallis's product formula"
 - [ ] E-SS5.EX-8 — "SS 5.8: A cosine product for sin z over z"
 - [ ] E-SS5.EX-9 — "SS 5.9: A binary product expansion of 1/(1-z)"
-- [ ] E-SS5.PR-1 — "Prove that if f is holomorphic in the unit disc, bounded and not identically zer"
+- [ ] E-SS5.PR-1 — "Zeros of a bounded holomorphic function satisfy the Blaschke condition"
 - [ ] E-SS6.EX-10 — "SS 6.10: Mellin transforms of cosine and sine"
 - [ ] E-SS6.EX-11 — "The Fourier transform of e^{az} e^{-e^z} is the Gamma function"
 - [ ] E-SS6.EX-13 — "SS 6.13: Second derivative of log Gamma as a summed series"
