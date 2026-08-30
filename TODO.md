@@ -797,8 +797,9 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
-- [ ] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60). `E-SS5.PR-1` combines Stein--Shakarchi Chapter 5 problems 1, 3, and 4. Split the statements into three exercise cards.
-  Restore the missing equation (8) from the book.
+- [x] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60).
+  `E-SS5.PR-1` through `E-SS5.PR-4` now hold one Chapter 5 problem each.
+  Problem 4 includes equation (8) and the complete source hint.
 
 - [x] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
   Disposition 2026-08-27: extracted Worksheet 1A (8 May 2016 problems in two groups of 4) and Worksheet 5 (8 May 2013 problems in two groups of 4) from the source PDFs.
