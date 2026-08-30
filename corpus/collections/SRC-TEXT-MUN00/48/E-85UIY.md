@@ -70,3 +70,11 @@ $$
     $f \in \bigcap_{n=1}^\infty B(f_n, \delta_n) \subseteq U_0 \cap \bigcap_{n=1}^\infty D_n \neq \varnothing$.
     Thus $\mathcal{C}(X, Y)$ is a Baire space in the fine topology. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $X$ Hausdorff.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

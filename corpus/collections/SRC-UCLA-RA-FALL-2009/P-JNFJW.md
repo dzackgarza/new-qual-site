@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -21,4 +25,12 @@ Assume $f$ is a holomorphic function on $\Omega$ and the $\text{Re}(f'(z))>0$ fo
 a. Prove that $f$ is one-to-one.
 
 b. Show by example that the word "convex" cannot be replaced by "connected and simply connected".
+:::
+
+::: {.solution}
+<1>1. $f$ measurable.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
