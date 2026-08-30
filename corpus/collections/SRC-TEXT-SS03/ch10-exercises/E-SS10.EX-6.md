@@ -9,6 +9,10 @@ classification:
   topics: ['Theta Functions', 'Modular Forms', 'Partitions']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -27,4 +31,44 @@ $$
 $$
 
 and it sufices to take $y = A m ^ { - 1 / 2 }$ where A is a large constant, and use the fact that the sequence $p ( n )$ is increasing.]
+::: solution
+**Goal:** Produce $p(n)\asymp e^{\Theta(\sqrt n)}$ bounds.
+
+<1>1. Upper bound:
+    *Proof:*  
+    The hint gives constants $C,c>0$ with
+    $$F(e^{-y})=\sum_{n\ge0}p(n)e^{-ny}\le C e^{c/y}\qquad(y\to0^+).$$
+    So for each $n$,
+    $$p(n)e^{-ny}\le C e^{c/y},\qquad\text{hence }p(n)\le C e^{c/y+ny}.$$
+    Set $y=n^{-1/2}$:
+    $$p(n)\le C e^{c\sqrt n+\sqrt n}=e^{c_2\sqrt n}.$$
+
+<1>2. Lower bound:
+    *Proof:*  
+    Use
+    $$\sum_{k=0}^m p(k)e^{-ky}\ge
+    C\!\left(e^{c/y}-\sum_{k=m+1}^\infty e^{c\sqrt k}e^{-ky}\right).$$
+    For fixed large $A$, set $y=A/\sqrt m$.
+    Since $p$ is increasing,
+    $$\sum_{k=0}^m p(k)e^{-ky}\le p(m)\sum_{k=0}^m e^{-ky}\le p(m)\frac1{1-e^{-y}}.$$
+    Also
+    $$\sum_{k=m+1}^\infty e^{c\sqrt k}e^{-ky}
+    \le \sum_{k=m+1}^\infty e^{-(A-c)/\sqrt m\,k}
+    =O\!\left(e^{-\eta\sqrt m}\right)$$
+    for $A>c$ and some $\eta>0$.
+    Thus for large $m$,
+    \[
+    p(m)\frac1{1-e^{-y}}\ge C' e^{c_1\sqrt m}
+    \]
+    with $c_1>0$. Since $1-e^{-y}\asymp A/\sqrt m$, absorb the polynomial factor into
+    the exponential constant:
+    \[
+    p(m)\ge e^{c_1'\sqrt m}.
+    \]
+
+<1>3. Conclusion:
+    *Proof:*  
+    Renaming constants gives
+    $$e^{c_1\sqrt n}\le p(n)\le e^{c_2\sqrt n}$$
+    for all large $n$, and finitely many remaining $n$ are absorbed by larger constants.
 :::
