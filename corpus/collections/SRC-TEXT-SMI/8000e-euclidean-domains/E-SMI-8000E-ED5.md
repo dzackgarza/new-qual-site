@@ -23,6 +23,7 @@ Assume $R$ is a Euclidean domain.
 Prove every $m \times n$ matrix over $R$ can be diagonalized by invertible row and column operations.
 
 [Hint: use induction on the size of the upper left entry of the matrix instead of on the number of prime factors.]
+:::
 
 ::: {.solution}
 <1>1. Induction on the Euclidean size $N(a_{11})$ of the $(1,1)$-entry (after permuting rows/columns to make $a_{11}\neq0$ minimal).

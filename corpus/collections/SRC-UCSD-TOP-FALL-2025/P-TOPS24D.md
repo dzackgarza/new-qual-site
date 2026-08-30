@@ -20,6 +20,7 @@ audit:
 ::: problem
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 180 degree rotations, as shown.
 Compute the homology $H_*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. $X$ has one $0$-cell, three $1$-cells, three $2$-cells, one $3$-cell.

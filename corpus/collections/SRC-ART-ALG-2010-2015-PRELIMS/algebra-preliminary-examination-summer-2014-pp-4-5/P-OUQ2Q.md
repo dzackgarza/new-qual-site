@@ -13,6 +13,10 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -23,4 +27,12 @@ a. What are all of the isomorphism classes of $\mathbb{Q}[x]$-modules that can a
 b. For each of your answers above, write down the rational canonical form of the corresponding matrix $A$.
 
 c. What are all the of the abelian groups of size 24 (up to isomorphism)?
+:::
+
+::: {.solution}
+<1>1. $G$ order $p^2q$ etc.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

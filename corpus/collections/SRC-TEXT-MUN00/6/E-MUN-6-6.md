@@ -25,7 +25,7 @@ audit:
 
 ::: {.solution}
 <1>1. Map $\mathcal P(A)\to X^n$ by $S\mapsto (\chi_S(1),\dots,\chi_S(n))$ where $\chi_S$ characteristic.
-Proof: bijection, inverse $ (x_i)\mapsto\{i:x_i=1\}$.
+Proof: bijection, inverse $(x_i)\mapsto\{i:x_i=1\}$.
 
 <1>2. Hence $|\mathcal P(A)|=2^n$ finite.
 Proof: $X^n$ has $2^n$ elements.
