@@ -1,4 +1,5 @@
 ---
+title: Homology theory and computations
 order: 230
 problems:
   topics:
@@ -10,7 +11,7 @@ problems:
 
 ---
 
-# Homology
+# Homology theory and computations
 
 ## Useful Facts
 

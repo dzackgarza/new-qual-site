@@ -1,8 +1,9 @@
 ---
+title: Undergraduate counterexamples
 order: 90
 ---
 
-# Counterexamples
+# Undergraduate counterexamples
 
 :::{.example}
 A series of continuous functions that does *not* converge uniformly but is still continuous:
