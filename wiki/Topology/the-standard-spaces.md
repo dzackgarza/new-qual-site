@@ -30,20 +30,26 @@ Nearly every problem is one of these spaces, a wedge or product of them, or one 
 | $\Sigma_g$, genus $g$ | $\gens{a_i,b_i \st \prod[a_i,b_i]}$ | $\ZZ, \ZZ^{2g}, \ZZ$ | closed orientable |
 | $N_k$, $k$ crosscaps | $\gens{a_i \st \prod a_i^2}$ | $\ZZ, \ZZ^{k-1}\oplus\ZZ/2, 0$ | closed non-orientable |
 | $\bigvee_n S^1$ | free on $n$ | $\ZZ, \ZZ^n$ | $\pi_1$ free, homology free |
-| $\bigvee_n S^2$ | $1$ | $\ZZ, 0, \ZZ^n$ | |
+| $\bigvee_n S^2$ | $1$ | $\ZZ, 0, \ZZ^n$ |  |
 | Möbius band | $\ZZ$ | $\ZZ, \ZZ$ | retracts to its core circle |
-| $S^1\times S^2$ | $\ZZ$ | $\ZZ, \ZZ, \ZZ, \ZZ$ | |
+| $S^1\times S^2$ | $\ZZ$ | $\ZZ, \ZZ, \ZZ, \ZZ$ |  |
 
 ## How to use it
 
 - **Wedges** add reduced homology: $\tilde H_*(X\vee Y) = \tilde H_*(X)\oplus\tilde H_*(Y)$, and $\pi_1$ takes the free product.
+
 - **Products** multiply $\pi_1$ and, by Künneth, tensor homology.
+
 - **Deleting a point** from an $n\dash$manifold leaves something homotopy equivalent to a lower complex; deleting a point from a closed surface leaves a wedge of circles.
+
 - **Connected sums** are handled by Mayer--Vietoris along the separating sphere; for surfaces the genus adds.
 
 ## The pairs to keep straight
 
 - $T^2$ against $K$: same $H_1$ rank, different torsion, and $H_2$ separates them.
+
 - $\RP^2$ against $S^2$: same $H_0$, and $\pi_1$ separates them at once.
+
 - $\RP^3$ against $S^1\times S^2$: both have $\pi_1$ abelian of order dividing 2 or infinite, and homology separates them.
+
 - $S^2\vee S^1$ against $T^2$: same $H_1$, different $H_2$.
