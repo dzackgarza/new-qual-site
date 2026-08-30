@@ -35,9 +35,52 @@ You do not need to do this procedure.
 :::
 
 ::: {.solution}
-<1>1. $V$ vector space.
-Proof: basis.
+<1>1. Part (a): Buchberger’s Criterion:
+<2>1. For the lexicographic term order with $x_1 > x_2 > x_3 > x_4$, the leading terms of the generators in $G = \{f_1, f_2, f_3, f_4, f_5\}$ are:
+\[
+\operatorname{LT}(f_1) = x_1^2, \quad \operatorname{LT}(f_2) = x_2^2, \quad \operatorname{LT}(f_3) = x_3^2, \quad \operatorname{LT}(f_4) = x_4^2, \quad \operatorname{LT}(f_5) = x_1 x_2 x_3.
+\]
+Proof: leading monomials under lex order.
+<2>2. For any pair $f_i, f_j \in G$, define the $S$-polynomial by:
+\[
+S(f_i, f_j) = \frac{\operatorname{lcm}(\operatorname{LM}(f_i), \operatorname{LM}(f_j))}{\operatorname{LT}(f_i)} f_i - \frac{\operatorname{lcm}(\operatorname{LM}(f_i), \operatorname{LM}(f_j))}{\operatorname{LT}(f_j)} f_j.
+\]
+Proof: definition of $S$-polynomial.
+<2>3. **Buchberger's Criterion:** A finite set $G \subset I$ is a Gröbner basis for $I = \langle G \rangle$ if and only if for every pair $1 \le i < j \le |G|$, the remainder on division of $S(f_i, f_j)$ by $G$ using the multivariate division algorithm is zero:
+\[
+\overline{S(f_i, f_j)}^G = 0.
+\]
+Proof: Buchberger's Theorem.
+<2>4. The verification procedure consists of:
+(i) For pairs $(f_i, f_j)$ with $1 \le i < j \le 4$, $\operatorname{gcd}(\operatorname{LM}(f_i), \operatorname{LM}(f_j)) = \operatorname{gcd}(x_i^2, x_j^2) = 1$. By Buchberger's First Criterion, $\overline{S(f_i, f_j)}^G = 0$ automatically.
+(ii) For each of the remaining 4 pairs $(f_i, f_5)$ for $i \in \{1, 2, 3, 4\}$, form $S(f_i, f_5)$ and reduce by $G$ via multivariate polynomial division, verifying that the remainder is 0.
+Proof: Buchberger's algorithm and coprimality criterion.
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>2. Part (b): Monomial basis for $\mathbb{Q}[x_1, x_2, x_3, x_4]/I$:
+<2>1. By Macaulay's Theorem, a $\mathbb{Q}$-vector space basis for the quotient $\mathbb{Q}[x_1, x_2, x_3, x_4]/I$ is given by the cosets $m + I$ of the **standard monomials** $m$, which are all monomials not divisible by any leading term in $\operatorname{LT}(G) = \{x_1^2, x_2^2, x_3^2, x_4^2, x_1 x_2 x_3\}$.
+Proof: Macaulay's Basis Theorem.
+<2>2. A monomial $m = x_1^{a_1} x_2^{a_2} x_3^{a_3} x_4^{a_4}$ is not divisible by $x_i^2$ for any $i \in \{1, 2, 3, 4\}$ if and only if each exponent $a_i \in \{0, 1\}$ (i.e. $m$ is square-free).
+There are $2^4 = 16$ such square-free monomials.
+Proof: divisibility condition for monomial ideals.
+<2>3. Among the 16 square-free monomials, those divisible by $\operatorname{LT}(f_5) = x_1 x_2 x_3$ are precisely those with $a_1 = a_2 = a_3 = 1$:
+\[
+x_1 x_2 x_3 \quad (\text{degree 3}), \qquad x_1 x_2 x_3 x_4 \quad (\text{degree 4}).
+\]
+Proof: divisibility by $x_1 x_2 x_3$.
+<2>4. Excluding these two monomials leaves exactly $16 - 2 = 14$ standard monomials:
+- Degree 0 (1): $1$
+- Degree 1 (4): $x_1, x_2, x_3, x_4$
+- Degree 2 (6): $x_1 x_2, x_1 x_3, x_1 x_4, x_2 x_3, x_2 x_4, x_3 x_4$
+- Degree 3 (3): $x_1 x_2 x_4, x_1 x_3 x_4, x_2 x_3 x_4$
+Proof: listing remaining square-free monomials.
+<2>5. Thus a vector space basis for $\mathbb{Q}[x_1, x_2, x_3, x_4]/I$ is:
+\[
+\mathcal{B} = \{ m + I \mid m \in \{1, x_1, x_2, x_3, x_4, x_1 x_2, x_1 x_3, x_1 x_4, x_2 x_3, x_2 x_4, x_3 x_4, x_1 x_2 x_4, x_1 x_3 x_4, x_2 x_3 x_4\} \}.
+\]
+The dimension of the quotient ring as a $\mathbb{Q}$-vector space is $\dim_\mathbb{Q}(\mathbb{Q}[x_1, x_2, x_3, x_4]/I) = 14$.
+Proof: Macaulay's Theorem.
+
+<1>3. Conclusion:
+Buchberger's criterion verifies $\overline{S(f_i, f_j)}^G = 0$ for all pairs, and the monomial basis consists of the 14 standard monomials in $\mathcal{B}$. Q.E.D.
+Proof: <1>1 and <1>2.
 :::
