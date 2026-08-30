@@ -27,22 +27,21 @@ The two are the same theorem -- the structure theorem for $F[t]\dash$modules -- 
 
 ## The recipe, given a matrix
 
-1. **Compute $\chi_A(t) = \det(tI - A)$.**
-   Its roots are the eigenvalues with algebraic multiplicities.
+1. **Compute $\chi_A(t) = \det(tI - A)$.** Its roots are the eigenvalues with algebraic multiplicities.
    Shortcuts: $\tr A = \sum\lambda_i$ and $\det A = \prod \lambda_i$, and for a triangular matrix the diagonal *is* the spectrum.
 
-2. **Compute $\min_A(t)$.**
-   It divides $\chi_A$, and has the same irreducible factors, so the only freedom is the exponents.
+2. **Compute $\min_A(t)$.** It divides $\chi_A$, and has the same irreducible factors, so the only freedom is the exponents.
    Test the candidates in increasing degree: the correct one is the lowest-degree monic $p$ with $p(A) = 0$.
 
-3. **Read off diagonalizability.**
-   $A$ is diagonalizable over $F$ exactly when $\min_A$ splits into *distinct* linear factors.
+3. **Read off diagonalizability.** $A$ is diagonalizable over $F$ exactly when $\min_A$ splits into *distinct* linear factors.
    If it does, stop: the form is $\diag(\lambda_i)$ with multiplicities from $\chi_A$.
 
-4. **If not, get the block sizes.**
-   For each eigenvalue $\lambda$:
+4. **If not, get the block sizes.** For each eigenvalue $\lambda$:
+
    - the exponent of $(t-\lambda)$ in $\min_A$ is the size of the *largest* Jordan block;
+
    - the exponent in $\chi_A$ is the *total* size of all blocks for $\lambda$;
+
    - $\dim\ker(A-\lambda I)$ is the *number* of blocks.
 
    Those three numbers determine the blocks outright when the multiplicity is small, which is the case on an exam.
