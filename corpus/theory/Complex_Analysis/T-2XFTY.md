@@ -10,7 +10,9 @@ classification:
   - Biholomorphisms
   - Blaschke Factors
   - Conformal Maps
-relations: []
+relations:
+- kind: variant-of
+  target: T-HSWGS
 review: draft
 ---
 

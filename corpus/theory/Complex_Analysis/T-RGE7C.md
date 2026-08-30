@@ -9,7 +9,9 @@ classification:
   topics:
   - Identity Theorem
   - Zeros
-relations: []
+relations:
+- kind: variant-of
+  target: T-SVF2W
 review: draft
 ---
 

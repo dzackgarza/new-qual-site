@@ -7,7 +7,11 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Point-Set Topology
+  - Contour Integration
+  - Entire Functions
+  - Conformal Maps
+  - Harmonic Functions
 relations: []
 review: draft
 ---

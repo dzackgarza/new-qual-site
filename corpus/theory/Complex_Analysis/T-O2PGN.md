@@ -9,12 +9,14 @@ classification:
   topics:
   - Biholomorphisms
   - Fractional Linear Transformations
-relations: []
+relations:
+- kind: variant-of
+  target: T-VGDFW
 review: draft
 ---
 
 :::{.theorem}
 \[
-\Aut_\CC(\HH) = \ts{ z \mapsto {az+b \over cz+d} \st a,b,c,d\in \CC, ad-bc=1 } \cong\PSL_2(\RR)
+\Aut_\CC(\HH) = \ts{ z \mapsto {az+b \over cz+d} \st a,b,c,d\in \RR, ad-bc=1 } \cong\PSL_2(\RR)
 .\]
 :::

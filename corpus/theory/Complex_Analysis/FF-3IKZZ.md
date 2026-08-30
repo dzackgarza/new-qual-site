@@ -11,7 +11,9 @@ classification:
   topics:
   - Contour Integration
   - Integrals
-relations: []
+relations:
+- kind: variant-of
+  target: T-SFXI7
 review: draft
 ---
 

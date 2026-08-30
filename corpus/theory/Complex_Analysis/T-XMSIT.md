@@ -9,7 +9,9 @@ classification:
   topics:
   - Schwarz Lemma
   - Maximum Modulus Principle
-relations: []
+relations:
+- kind: variant-of
+  target: T-DAETF
 review: draft
 ---
 

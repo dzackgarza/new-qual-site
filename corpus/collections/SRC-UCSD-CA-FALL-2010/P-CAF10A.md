@@ -7,7 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Analytic Continuation
+  - Radius of Convergence
+  - Point-Set Topology
+  - Automorphisms
 relations: []
 review: draft
 ---

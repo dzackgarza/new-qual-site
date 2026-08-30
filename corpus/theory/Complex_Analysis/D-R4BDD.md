@@ -9,7 +9,9 @@ classification:
   topics:
   - Poles
   - Singularities
-relations: []
+relations:
+- kind: variant-of
+  target: D-AUD6K
 review: draft
 ---
 

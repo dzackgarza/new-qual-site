@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Annuli
+  - Laurent Series
+  - Sequences of Functions
 relations: []
 review: draft
 ---

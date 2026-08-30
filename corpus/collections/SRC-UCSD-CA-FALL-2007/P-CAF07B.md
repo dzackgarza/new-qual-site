@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Schwarz Lemma
+  - Zeros of Holomorphic Functions
 relations: []
 review: draft
 ---

@@ -9,7 +9,9 @@ classification:
   topics:
   - Removable Singularities
   - Singularities
-relations: []
+relations:
+- kind: variant-of
+  target: T-ZZJDP
 review: draft
 ---
 

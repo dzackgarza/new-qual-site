@@ -9,7 +9,9 @@ classification:
   topics:
   - Contour Integration
   - Residues
-relations: []
+relations:
+- kind: variant-of
+  target: T-ZO5UU
 review: draft
 ---
 

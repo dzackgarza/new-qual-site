@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Maximum Modulus Principle
+  - Zeros of Polynomials
+  - Schwarz Lemma
 relations: []
 review: draft
 ---

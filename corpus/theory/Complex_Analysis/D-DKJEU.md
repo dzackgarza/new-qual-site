@@ -9,7 +9,9 @@ classification:
   topics:
   - Fractional Linear Transformations
   - Conformal Maps
-relations: []
+relations:
+- kind: variant-of
+  target: D-FRVBV
 review: draft
 ---
 
