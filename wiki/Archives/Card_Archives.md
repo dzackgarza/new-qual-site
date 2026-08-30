@@ -18,4 +18,3 @@ The pages that list the corpus by its source: the exams and artifacts of each su
 - [[Complex_Analysis/Resources/Source_Archive]]
 
 - [[Topology/Resources/Source_Archive]]
-

@@ -3,7 +3,6 @@ order: 90
 title: Algebra Group and Ring Theory Resources
 ---
 
-
 # Algebra Group and Ring Theory Resources
 
 ## Notes / Reference
