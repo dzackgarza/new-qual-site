@@ -45,8 +45,10 @@ The three standard escapes of mass, worth knowing by name:
 
 - **Escape to height:** $f_n = n\chi_{[0,1/n]}$ on $[0,1]$.
   $f_n \to 0$ pointwise, $\int f_n = 1$.
+
 - **Escape to width:** $f_n = \frac1n \chi_{[0,n]}$ on $\RR$.
   Same, and this one is uniformly bounded, so it shows why bounded convergence needs finite measure.
+
 - **Escape to infinity:** $f_n = \chi_{[n, n+1]}$.
   Same again, and it is the reason a pointwise limit says nothing about the integral on an infinite measure space.
 
@@ -57,8 +59,11 @@ In each case no integrable $g$ dominates, which is the precise reason dominated 
 The same question is asked about other pairs of limits, and the answers are on [[Real_Analysis/Basics/Commuting_Limits|Commuting limits]] --
 
 - $\lim_n \int$ against $\int \lim_n$: this page.
+
 - $\sum_k \int$ against $\int \sum_k$: monotone convergence for nonnegative terms, dominated convergence via $\sum\int\abs{f_k} < \infty$ otherwise, which is Tonelli and Fubini for counting measure.
+
 - $\partial_t \int$ against $\int \partial_t$: differentiation under the integral, which is dominated convergence applied to difference quotients, and needs a dominating function for $\partial_t f$.
+
 - $\int\int$ in either order: [[Real_Analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 Every one of them is the same theorem wearing a different hat, which is worth noticing because a problem will state whichever form is least convenient.

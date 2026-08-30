@@ -37,5 +37,7 @@ That two-step is the answer to almost every problem in this chapter.
 Three uses that are not about swapping the order:
 
 - **Computing a single integral** by writing it as a double one, the standard example being $\int_0^\infty \frac{\sin x}{x}\dx$ via $\frac1x = \int_0^\infty e^{-xt}\dt$.
+
 - **The layer cake formula** $\int \abs f = \int_0^\infty \mu(\abs f > t)\dt$, which is Tonelli applied to the region under the graph.
+
 - **Convolution**, whose basic properties are all Tonelli, on [[Real_Analysis/fourier/index|Fourier]].

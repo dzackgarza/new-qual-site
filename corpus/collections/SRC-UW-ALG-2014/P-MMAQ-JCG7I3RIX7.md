@@ -13,6 +13,10 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -20,4 +24,12 @@ review: draft
   Show that $G$ contains a `\textit{normal}`{=tex} subgroup $N$ such that $n\leq[G:N]\leq n!$
 
 - Use part (a) to show that there is no simple group of order 36.
+:::
+
+::: {.solution}
+<1>1. $M$ module.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
