@@ -30,6 +30,10 @@ build:
 # Build and render the site to build/quarto/_site
 site: build
 
+# Report pages the home page cannot reach, and links to pages that are not there
+crawl: build
+    uv run python tools/crawl.py
+
 # Serve the compiled site the way GitHub Pages serves it, 404.html included
 preview port="8000": build
     uv run python tools/preview.py {{ port }}
