@@ -25,15 +25,47 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. (a) If $y\in\beta(X)\setminus X$ were limit of $x_n\in X$, then $\{x_n\}\cup\{y\}$ countable compact, $X$ normal implies $y$ has countable neighborhood base, etc., but $\beta(X)\setminus X$ has no $G_\delta$ points when $X$ normal noncompact.
-Proof: $y$ would be $G_\delta$, but points of $\beta(X)\setminus X$ are not $G_\delta$ when $X$ normal.
+<1>1. Part (a): Points of $\beta(X) \setminus X$ are not sequential limits of points in $X$:
+<2>1. Suppose for contradiction that there exists a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n \to y \in \beta(X) \setminus X$.
+Since $y \notin X$, the set of points $S = \{x_n \mid n \in \mathbb{N}\}$ has no accumulation points in $X$, so $S$ is a closed discrete subset of $X$.
+Proof: if $S$ had an accumulation point $x \in X$, then by Hausdorff property of $\beta(X)$, $x_n \to x \neq y$, contradiction.
+<2>2. Partition $S$ into two disjoint closed subsets of $X$:
+\[
+A = \{x_{2k} \mid k \in \mathbb{N}\}, \qquad B = \{x_{2k-1} \mid k \in \mathbb{N}\}.
+\]
+Because $X$ is normal, by Urysohn's Lemma there exists a continuous function $f: X \to [0, 1]$ such that:
+\[
+f(a) = 0 \quad \forall a \in A, \qquad f(b) = 1 \quad \forall b \in B.
+\]
+Proof: Urysohn's Lemma for normal spaces.
+<2>3. By the universal property of the Stone–Čech compactification, $f$ extends to a continuous function $\beta f: \beta(X) \to [0, 1]$.
+Proof: universal property of $\beta(X)$.
+<2>4. Since $x_n \to y$ in $\beta(X)$, continuity of $\beta f$ implies:
+\[
+\lim_{n \to \infty} f(x_n) = \beta f(y).
+\]
+However, along the even subsequence, $\lim_{k\to\infty} f(x_{2k}) = \lim_{k\to\infty} 0 = 0$, while along the odd subsequence, $\lim_{k\to\infty} f(x_{2k-1}) = \lim_{k\to\infty} 1 = 1$.
+Thus $0 = \beta f(y) = 1$, a contradiction.
+Proof: uniqueness of sequential limits in Hausdorff spaces.
+<2>5. Therefore no point $y \in \beta(X) \setminus X$ can be the limit of a sequence in $X$.
+Proof: proof by contradiction.
 
-<1>2. (b) If $\beta(X)$ metrizable then second countable, so $X$ second countable, but $\beta(X)\setminus X$ would be $F_\sigma$, and $X$ would be $G_\delta$ in compact metric, hence Lindelöf, and noncompact completely regular $X$ has $\beta(X)$ not first countable at infinity.
-Proof: metrizable compact is second countable.
+<1>2. Part (b): Nonmetrizability of $\beta(X)$ for noncompact completely regular $X$:
+<2>1. Since $X$ is noncompact, $X \subsetneq \beta(X)$, so there exists a point $y \in \beta(X) \setminus X$.
+Proof: compactification of a noncompact space is strictly larger.
+<2>2. The subspace $X$ is dense in $\beta(X)$, so $y \in \overline{X}$.
+Proof: definition of compactification.
+<2>3. Suppose for contradiction that $\beta(X)$ is metrizable.
+In any metric space, the topological closure coincides with the sequential closure: every point in the closure of a subset is the limit of a sequence of points in that subset.
+Thus there must exist a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n \to y$ in $\beta(X)$.
+Proof: sequential characterization of closure in metric spaces.
+<2>4. By the same construction as in <1>1 (as $C(X, [0, 1])$ separates points and closed sets in completely regular spaces), the sequence $(x_n)$ can be split into two subsets separated by a continuous function to $[0, 1]$, showing that $x_n$ cannot converge to $y \in \beta(X) \setminus X$.
+This contradicts the existence of such a converging sequence.
+Proof: <1>1 applied to completely regular spaces.
+<2>5. Therefore $\beta(X)$ is not metrizable.
+Proof: proof by contradiction.
 
-<1>3. Hence $\beta(X)$ not metrizable.
-Proof: <1>2.
-
-<1>4. Q.E.D.
-Proof: <1>1 and <1>3.
+<1>3. Conclusion:
+Points in $\beta(X) \setminus X$ are not sequential limits of $X$, and $\beta(X)$ is not metrizable for any noncompact completely regular space $X$. Q.E.D.
+Proof: <1>1 and <1>2.
 :::
