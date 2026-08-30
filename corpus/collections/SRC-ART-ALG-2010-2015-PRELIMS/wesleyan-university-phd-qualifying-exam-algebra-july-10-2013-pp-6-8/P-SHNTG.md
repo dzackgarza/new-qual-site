@@ -12,6 +12,10 @@ classification:
   - Rings
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -24,4 +28,12 @@ This new ideal is called the join of $I$ with $J$: $I \vee J$.
 
 c. If $I$ and $J$ are ideals of $R$, let $$IJ = \left\{\sum_{i=1}^n x_i y_i : n > 0, x_1,\dots,x_n \in I, \text{ and } y_1,\dots,y_n \in J\right\}.$$ Show that $IJ$ is an ideal of $R$ that is contained in both $I$ and $J$.
 If $K$ is any ideal of $R$ that is contained in both $I$ and $J$, must $K$ be contained in $IJ$?
+:::
+
+::: {.solution}
+<1>1. $G$ Sylow.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -12,6 +12,10 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -56,4 +60,12 @@ $1\cdot x = x$:
 1_R + (p) \actson x + pA &= 1_R x + pA = x + pA
 .\end{align*}
 \]
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

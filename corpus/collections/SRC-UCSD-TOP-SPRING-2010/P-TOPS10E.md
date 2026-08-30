@@ -12,6 +12,10 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -24,4 +28,12 @@ $$
 \chi_2(X) = \sum_i (-1)^i \dim_{\mathbb{Z}_2} H_i(X; \mathbb{Z}_2).
 $$
 Use the universal coefficient theorem to show that $\chi(X) = \chi_2(X)$.
+:::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
