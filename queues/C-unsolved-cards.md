@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4596 problem and exercise cards have no solution section and no incoming
+4595 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,13 +11,12 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1412
+- Exercises: 1411
 - Problems: 3184
-- Total: 4596
+- Total: 4595
 
-## Exercises (1412)
+## Exercises (1411)
 
-- [ ] E-AMD-LSAG5UZT — "Groups of order $p^3$ have a normal subgroup of order $p^2$"
 - [ ] E-AMD-NY3QKBRB — "Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$"
 - [ ] E-AMD-O2OGRSJP — "$Z(S_n)=1$ for $n\geq 4$"
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
