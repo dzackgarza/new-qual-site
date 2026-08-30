@@ -28,10 +28,9 @@ Where the tower on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of r
 
 [[D-R4H6F]]
 
-:::{.remark title="Prime against irreducible"}
+::: {.remark title="Prime against irreducible"}
 Prime always implies irreducible in a domain; the converse needs a UFD, and its failure is exactly what $\ZZ[\sqrt{-5}]$ exhibits.
 A problem that asks you to distinguish the two is asking whether the ring is a UFD.
-
 :::
 
 ## Types of ring

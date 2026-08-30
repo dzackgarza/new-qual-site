@@ -15,7 +15,9 @@ The largest of the cross-cutting pages, because half the paper is "is this true"
 **The limit of the integrals is the integral of the limit** -- false, three ways, and each blocks a different theorem:
 
 - $f_n = n\chi_{[0,1/n]}$, mass escaping to height;
+
 - $f_n = \frac1n\chi_{[0,n]}$, escaping to width, and uniformly bounded, which shows why bounded convergence needs finite measure;
+
 - $f_n = \chi_{[n,n+1]}$, escaping to infinity.
 
 In each, no integrable $g$ dominates.
