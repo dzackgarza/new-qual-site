@@ -9,7 +9,7 @@ classification:
   topics:
   - Fiber Bundles
   - Hopf Fibration
-  - Homotopy Theory
+  - Homotopy
 relations: []
 review: draft
 ---

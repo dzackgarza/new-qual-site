@@ -10,7 +10,7 @@ classification:
   - Homology
   - Manifolds
   - Euler Characteristic
-  - Poincare Duality
+  - Poincaré Duality
 relations: []
 review: draft
 audit:

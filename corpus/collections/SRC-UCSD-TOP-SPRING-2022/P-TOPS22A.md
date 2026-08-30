@@ -15,7 +15,7 @@ classification:
   - Covering Spaces
   - Euler Characteristic
   - Projective Spaces
-  - Homotopy Theory
+  - Homotopy
 relations: []
 review: draft
 ---

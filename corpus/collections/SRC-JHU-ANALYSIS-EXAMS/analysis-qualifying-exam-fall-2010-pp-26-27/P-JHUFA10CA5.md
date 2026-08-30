@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Residue Formula
+  - Residue Theorem
 relations: []
 review: draft
 audit:

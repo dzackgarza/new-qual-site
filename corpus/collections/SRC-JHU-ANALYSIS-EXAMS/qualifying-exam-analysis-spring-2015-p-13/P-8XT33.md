@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

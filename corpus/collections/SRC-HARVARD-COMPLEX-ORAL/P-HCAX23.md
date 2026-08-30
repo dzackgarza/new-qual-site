@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Möbius Transformations
+  - Mobius Transformations
 relations: []
 review: draft
 ---

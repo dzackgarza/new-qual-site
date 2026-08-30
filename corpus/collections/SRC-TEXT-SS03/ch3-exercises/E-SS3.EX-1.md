@@ -6,7 +6,7 @@ title: "SS 3.1: Zeros of sin pi-z and residues of its reciprocal"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 ---

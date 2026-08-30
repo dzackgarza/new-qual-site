@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Lefschetz Fixed Point Theorem
-  - Projective Space
+  - Projective Spaces
 relations: []
 review: draft
 ---

@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Normal Families
-  - Montel Theorem
+  - Montel
 relations: []
 review: draft
 ---

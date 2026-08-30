@@ -8,9 +8,9 @@ classification:
   - real-analysis
   topics:
   - Borel Measures
-  - Stone-Weierstrass Theorem
-  - Radon-Nikodym Theorem
-  - Uniform Boundedness
+  - Stone-Weierstrass
+  - Radon-Nikodym
+  - Uniform Boundedness Principle
   - Banach-Alaoglu Theorem
 relations: []
 review: draft

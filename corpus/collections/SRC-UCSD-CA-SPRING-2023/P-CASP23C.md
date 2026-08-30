@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Maximum Principle
-  - Rouche Theorem
+  - Rouché
   - Holomorphic Functions
 relations: []
 review: draft

@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - Borel-Cantelli Lemma
+  - Borel-Cantelli
   - Lebesgue Points
   - Weak Convergence
   - Schwartz Space

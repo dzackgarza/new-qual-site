@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Cohomology
-  - Degree Theory
+  - Degree
   - Manifolds
 relations: []
 review: draft

@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Spheres
 relations: []
 review: draft

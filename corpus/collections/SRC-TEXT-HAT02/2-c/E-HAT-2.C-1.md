@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Simplicial Approximation
-  - Degree Theory
+  - Degree
   - Graphs
 relations: []
 review: draft

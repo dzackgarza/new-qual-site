@@ -6,7 +6,7 @@ title: "SS 3.7: The integral of dtheta over (a+cos theta)^2"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 audit:

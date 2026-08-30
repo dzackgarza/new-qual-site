@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Homology
-  - Mayer–Vietoris
+  - Mayer-Vietoris
   - Surfaces
   - Embeddings
 relations: []

@@ -6,7 +6,7 @@ title: "SS 3.10: The integral of log x over x^2+a^2"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 ---

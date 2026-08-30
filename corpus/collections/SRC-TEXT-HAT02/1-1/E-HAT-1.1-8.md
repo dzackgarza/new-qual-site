@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Borsuk–Ulam
+  - Borsuk-Ulam Theorem
   - Fixed Point Theorems
 relations: []
 review: draft

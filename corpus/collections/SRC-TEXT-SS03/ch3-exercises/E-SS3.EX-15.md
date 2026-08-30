@@ -6,7 +6,7 @@ title: "Applications of the Cauchy inequalities and the maximum modulus principl
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 ---

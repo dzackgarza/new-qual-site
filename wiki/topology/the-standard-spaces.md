@@ -6,12 +6,12 @@ problems:
   - Cell Complexes
   - Surfaces
   - Projective Spaces
-  - Projective Space
   - Spheres
   - Suspension
   - Suspensions
   - Simply Connected
   - Graphs
+
 ---
 
 # The standard spaces

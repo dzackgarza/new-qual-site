@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Uniformization
-  - Riemann Mapping
+  - Riemann Mapping Theorem
   - Conformal Maps
 relations: []
 review: draft

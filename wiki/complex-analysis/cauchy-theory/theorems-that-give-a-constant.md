@@ -4,8 +4,8 @@ order: 0
 problems:
   topics:
   - Liouville's Theorem
-  - Liouville Theorem
   - Entire Functions
+
 ---
 
 # Theorems that give a constant

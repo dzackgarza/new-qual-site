@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Euler Characteristic
-  - Poincare Duality
+  - Poincaré Duality
   - Manifolds
 relations: []
 review: draft

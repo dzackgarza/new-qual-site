@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Fixed Point Theorems
-  - Projective Space
+  - Projective Spaces
 relations: []
 review: draft
 audit:

@@ -6,7 +6,7 @@ title: "SS 3.18: The Cauchy integral formula via homotopy"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 ---

@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Borsuk–Ulam
+  - Borsuk-Ulam Theorem
   - Measure Theory
 relations: []
 review: draft

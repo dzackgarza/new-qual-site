@@ -9,7 +9,7 @@ classification:
   topics:
   - Fundamental Group
   - Surfaces
-  - Van Kampen
+  - van Kampen
 relations: []
 review: draft
 audit:

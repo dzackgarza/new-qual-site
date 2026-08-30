@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Gauss--Lucas Theorem
+  - Gauss-Lucas Theorem
 relations: []
 review: draft
 ---

@@ -5,7 +5,7 @@ problems:
   topics:
   - Fractional Linear Transformations
   - Mobius Transformations
-  - Möbius Transformations
+
 ---
 
 # Möbius transformations

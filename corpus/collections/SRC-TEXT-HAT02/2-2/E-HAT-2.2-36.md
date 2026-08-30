@@ -9,7 +9,7 @@ classification:
   topics:
   - Homology
   - Products
-  - Mayer–Vietoris
+  - Mayer-Vietoris
 relations: []
 review: draft
 ---

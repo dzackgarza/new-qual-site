@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Homotopy Theory
+  - Homotopy
   - Fundamental Group
   - Tori
 relations: []

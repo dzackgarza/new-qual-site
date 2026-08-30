@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Entire Functions
-  - Liouville Theorem
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

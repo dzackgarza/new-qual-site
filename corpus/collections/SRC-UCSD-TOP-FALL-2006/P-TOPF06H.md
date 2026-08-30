@@ -9,7 +9,7 @@ classification:
   topics:
   - Suspensions
   - Fundamental Group
-  - Homotopy Theory
+  - Homotopy
 relations: []
 review: draft
 ---

@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Fixed Point Theorems
   - Vector Fields
 relations: []

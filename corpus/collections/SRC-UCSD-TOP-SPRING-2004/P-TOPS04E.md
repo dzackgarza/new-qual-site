@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Surfaces
   - Mod 2
 relations: []

@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Harmonic Functions
-  - Liouville Theorem
+  - Liouville's Theorem
   - Positive Functions
 relations: []
 review: draft

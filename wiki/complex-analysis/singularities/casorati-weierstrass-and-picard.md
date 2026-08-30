@@ -5,7 +5,7 @@ problems:
   topics:
   - Casorati-Weierstrass
   - Picard
-  - Picard's Theorem
+
 ---
 
 # Casorati-Weierstrass and Picard

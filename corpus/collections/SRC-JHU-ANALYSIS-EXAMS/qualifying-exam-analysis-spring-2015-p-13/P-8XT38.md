@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Rouché's Theorem
+  - Rouché
 relations: []
 review: draft
 ---

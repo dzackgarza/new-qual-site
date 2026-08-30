@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Fundamental Group
-  - Van Kampen
+  - van Kampen
   - CW Complexes
 relations: []
 review: draft

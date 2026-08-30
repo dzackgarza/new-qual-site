@@ -6,7 +6,8 @@ problems:
   - Cohomology Ring
   - Cup Product
   - Künneth Formula
-  - Poincare Duality
+  - Poincaré Duality
+
 ---
 
 # Homology

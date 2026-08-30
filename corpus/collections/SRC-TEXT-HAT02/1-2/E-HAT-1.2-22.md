@@ -9,7 +9,7 @@ classification:
   topics:
   - Fundamental Group
   - Knots
-  - Van Kampen
+  - van Kampen
 relations: []
 review: draft
 audit:

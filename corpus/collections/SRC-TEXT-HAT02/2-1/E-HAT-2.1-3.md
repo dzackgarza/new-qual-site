@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Homology
-  - Projective Space
+  - Projective Spaces
   - Simplicial Complexes
 relations: []
 review: draft

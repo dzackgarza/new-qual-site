@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Projective Spaces
   - Homotopy Equivalence
 relations: []

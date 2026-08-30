@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - commutative algebra
+  - Commutative Algebra
 relations: []
 review: draft
 completion: complete

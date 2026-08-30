@@ -8,7 +8,7 @@ classification:
   - real-analysis
   topics:
   - Uniform Boundedness Principle
-  - Baire Category Theorem
+  - Baire Category
   - Continuous Functions
 relations: []
 review: draft

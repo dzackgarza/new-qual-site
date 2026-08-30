@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Homology
-  - Projective Space
+  - Projective Spaces
   - Cellular Homology
 relations: []
 review: draft

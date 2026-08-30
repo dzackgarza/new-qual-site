@@ -9,7 +9,7 @@ classification:
   topics:
   - Cohomology
   - Cup Product
-  - Degree Theory
+  - Degree
   - Manifolds
 relations: []
 review: draft

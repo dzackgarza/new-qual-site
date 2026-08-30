@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Homotopy Theory
+  - Homotopy
   - Covering Spaces
   - Projective Spaces
 relations: []

@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Fixed Points
-  - Rouche Theorem
+  - Rouché
   - Holomorphic Functions
 relations: []
 review: draft

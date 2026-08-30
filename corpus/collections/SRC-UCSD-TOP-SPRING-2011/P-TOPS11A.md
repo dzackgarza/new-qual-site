@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Homotopy Theory
+  - Homotopy
   - Spheres
 relations: []
 review: draft

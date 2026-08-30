@@ -6,7 +6,7 @@ title: "SS 3.8: The integral of dtheta over a+b cos theta"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 audit:

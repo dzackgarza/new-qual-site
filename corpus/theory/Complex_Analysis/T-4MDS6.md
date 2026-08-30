@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Riemann Mapping
+  - Riemann Mapping Theorem
   - Conformal Maps
   - Biholomorphisms
 relations: []

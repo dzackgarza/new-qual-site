@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
+  - Degree
   - Manifolds
   - Projective Spaces
   - Fundamental Group

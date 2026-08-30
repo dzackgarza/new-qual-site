@@ -9,7 +9,7 @@ classification:
   topics:
   - Fundamental Group
   - Mapping Torus
-  - Van Kampen
+  - van Kampen
 relations: []
 review: draft
 ---

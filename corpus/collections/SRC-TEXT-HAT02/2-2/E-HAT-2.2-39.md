@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Homology
-  - Mayer–Vietoris
+  - Mayer-Vietoris
   - CW Complexes
 relations: []
 review: draft

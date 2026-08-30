@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Harmonic Functions
-  - Mean-Value Property
+  - Mean Value Property
 relations: []
 review: draft
 ---

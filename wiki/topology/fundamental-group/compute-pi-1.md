@@ -6,10 +6,10 @@ problems:
   - Fundamental Group
   - Homotopy
   - van Kampen
-  - Van Kampen
   - Seifert-van Kampen Theorem
   - Retracts
   - Retractions
+
 ---
 
 # Compute $\pi_1$

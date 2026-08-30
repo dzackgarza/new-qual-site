@@ -10,7 +10,7 @@ classification:
   - Harmonic Functions
   - Holomorphic Functions
   - Uniform Convergence
-  - Liouville Theorem
+  - Liouville's Theorem
   - Sheaf of Germs
 relations: []
 review: draft

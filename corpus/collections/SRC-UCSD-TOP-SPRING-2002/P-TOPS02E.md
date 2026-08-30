@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Covering Spaces
-  - Homotopy Theory
+  - Homotopy
   - Projective Spaces
 relations: []
 review: draft

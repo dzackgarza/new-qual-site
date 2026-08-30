@@ -3,7 +3,6 @@ order: 240
 problems:
   topics:
   - Degree
-  - Degree Theory
   - Fixed Points
   - Fixed Point Theorems
   - Fixed Point Theory
@@ -11,6 +10,7 @@ problems:
   - Antipodal Map
   - Lefschetz Fixed Point Theorem
   - Invariance of Domain
+
 ---
 
 # Fixed Points and Degree Theory

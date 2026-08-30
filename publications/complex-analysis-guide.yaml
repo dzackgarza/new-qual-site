@@ -464,7 +464,7 @@ sections:
             - Normal Families
             - Montel
             - Picard
-            - Riemann Mapping
+            - Riemann Mapping Theorem
           limit: 6
           review:
             mode: any

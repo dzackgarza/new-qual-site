@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Polynomial Roots
-  - Rouche Theorem
+  - Rouché
   - Argument Principle
 relations: []
 review: draft

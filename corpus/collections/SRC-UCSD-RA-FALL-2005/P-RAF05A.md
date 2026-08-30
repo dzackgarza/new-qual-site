@@ -8,8 +8,8 @@ classification:
   - real-analysis
   topics:
   - Monotone Convergence
-  - Stone-Weierstrass Theorem
-  - Baire Category Theorem
+  - Stone-Weierstrass
+  - Baire Category
   - L1 Spaces
 relations: []
 review: draft

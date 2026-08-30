@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - Homotopy Theory
-  - Degree Theory
+  - Homotopy
+  - Degree
   - Manifolds
 relations: []
 review: draft

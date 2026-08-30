@@ -9,7 +9,7 @@ classification:
   topics:
   - Fundamental Group
   - CW Complexes
-  - Van Kampen
+  - van Kampen
 relations: []
 review: draft
 ---

@@ -5,9 +5,9 @@ problems:
   topics:
   - Homology
   - Mayer-Vietoris
-  - Mayer–Vietoris
   - Simplicial Homology
   - Relative Homology
+
 ---
 
 # Compute $H_*$

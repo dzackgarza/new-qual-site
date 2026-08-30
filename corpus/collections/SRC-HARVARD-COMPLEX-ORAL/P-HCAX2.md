@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Picard's Theorem
+  - Picard
 relations: []
 review: draft
 audit:

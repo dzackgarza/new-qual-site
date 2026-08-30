@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Hurwitz's Theorem
+  - Hurwitz
   - Normal Families
 relations: []
 review: draft

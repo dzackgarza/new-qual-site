@@ -7,17 +7,17 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Cauchy Theorem
+  - Cauchy's Theorem
   - Cauchy Integral Formula
-  - Morera Theorem
-  - Liouville Theorem
+  - Morera
+  - Liouville's Theorem
   - Casorati-Weierstrass
   - Open Mapping Theorem
   - Maximum Principle
   - Residue Theorem
   - Argument Principle
   - Weierstrass Theorem
-  - Hurwitz Theorem
+  - Hurwitz
   - Reflection Principle
   - Riemann Mapping Theorem
 relations: []

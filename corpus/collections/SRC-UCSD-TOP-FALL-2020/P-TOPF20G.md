@@ -10,7 +10,7 @@ classification:
   - Fixed Point Theory
   - Euler Characteristic
   - Manifolds
-  - Lefschetz Fixed Point
+  - Lefschetz Fixed Point Theorem
 relations: []
 review: draft
 ---

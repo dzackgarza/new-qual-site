@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - Radon-Nikodym Theorem
+  - Radon-Nikodym
   - Holder Continuity
   - Borel Measures
 relations: []

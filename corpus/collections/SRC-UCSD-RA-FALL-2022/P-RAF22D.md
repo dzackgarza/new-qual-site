@@ -10,7 +10,7 @@ classification:
   - Compact Metric Spaces
   - Separability
   - Second Countability
-  - Stone-Weierstrass Theorem
+  - Stone-Weierstrass
 relations: []
 review: draft
 ---

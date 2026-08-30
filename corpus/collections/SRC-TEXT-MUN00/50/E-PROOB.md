@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - Dimension Theory
+  - Dimension
   - Manifolds
 relations: []
 review: draft

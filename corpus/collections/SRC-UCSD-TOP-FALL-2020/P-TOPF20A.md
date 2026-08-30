@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Fundamental Group
-  - Degree Theory
+  - Degree
 relations: []
 review: draft
 ---

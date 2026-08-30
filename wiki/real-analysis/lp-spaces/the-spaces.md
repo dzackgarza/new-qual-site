@@ -3,7 +3,7 @@ title: The spaces
 order: 10
 problems:
   topics:
-  - L^p Spaces
+  - Lp Spaces
   - Density
   - Dual Spaces  - L²
   - L∞

@@ -8,7 +8,7 @@ classification:
   - applied-algebra
   topics:
   - Group Theory
-  - p-groups
+  - p-Groups
 relations: []
 review: draft
 ---

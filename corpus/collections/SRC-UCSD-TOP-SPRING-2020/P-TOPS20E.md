@@ -8,8 +8,8 @@ classification:
   - topology
   topics:
   - Homology
-  - Degree Theory
-  - Poincare Duality
+  - Degree
+  - Poincaré Duality
   - Manifolds
 relations: []
 review: draft

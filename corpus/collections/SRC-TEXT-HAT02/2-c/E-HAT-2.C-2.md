@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Lefschetz Fixed Point Theorem
-  - Degree Theory
+  - Degree
 relations: []
 review: draft
 audit:

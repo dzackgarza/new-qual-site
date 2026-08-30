@@ -9,7 +9,7 @@ classification:
   topics:
   - Density
   - L1 Spaces
-  - Stone-Weierstrass Theorem
+  - Stone-Weierstrass
 relations: []
 review: draft
 ---

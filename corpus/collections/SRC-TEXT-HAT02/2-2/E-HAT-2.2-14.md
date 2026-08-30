@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - Degree Theory
-  - Projective Space
+  - Degree
+  - Projective Spaces
 relations: []
 review: draft
 ---

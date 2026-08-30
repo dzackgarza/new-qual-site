@@ -6,9 +6,9 @@ problems:
   - Harmonic Functions
   - Subharmonic Functions
   - Mean Value Property
-  - Mean-Value Property
   - Poisson Kernel
   - Dirichlet Problem
+
 ---
 
 # Harmonic functions

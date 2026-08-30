@@ -8,7 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Harmonic Functions
-  - Harnack's Theorem
+  - Harnack Theorem
 relations: []
 review: draft
 ---

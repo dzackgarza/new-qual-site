@@ -9,7 +9,7 @@ classification:
   topics:
   - Normal Families
   - Entire Functions
-  - Montel Theorem
+  - Montel
 relations: []
 review: draft
 ---

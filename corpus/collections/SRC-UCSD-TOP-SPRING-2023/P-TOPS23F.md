@@ -8,9 +8,9 @@ classification:
   - topology
   topics:
   - Homology
-  - Degree Theory
+  - Degree
   - Manifolds
-  - Poincare Duality
+  - Poincaré Duality
 relations: []
 review: draft
 ---

@@ -3,11 +3,12 @@ order: 202
 problems:
   topics:
   - Homotopy Equivalence
-  - Homotopy Theory
+  - Homotopy
   - Homotopy Type
   - Higher Homotopy Groups
   - Homotopy Groups
   - Hurewicz Theorem
+
 ---
 
 # Theorems: Algebraic Topology

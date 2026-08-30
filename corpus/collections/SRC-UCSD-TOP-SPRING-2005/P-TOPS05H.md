@@ -9,7 +9,7 @@ classification:
   topics:
   - Cohomology
   - Projective Spaces
-  - Degree Theory
+  - Degree
 relations: []
 review: draft
 ---

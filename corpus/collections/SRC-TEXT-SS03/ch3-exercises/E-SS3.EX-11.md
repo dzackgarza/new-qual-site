@@ -6,7 +6,7 @@ title: "SS 3.11: The mean value of log of 1 minus a e^(i-theta)"
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
+  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
 relations: []
 review: draft
 ---

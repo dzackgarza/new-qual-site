@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Homology
-  - Degree Theory
+  - Degree
   - Covering Spaces
 relations: []
 review: draft

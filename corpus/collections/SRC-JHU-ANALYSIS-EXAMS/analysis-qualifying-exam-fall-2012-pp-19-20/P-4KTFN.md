@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - Fatou's Lemma
+  - Fatou
   - Dominated Convergence
 relations: []
 review: draft

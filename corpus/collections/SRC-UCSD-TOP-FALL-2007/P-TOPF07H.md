@@ -9,7 +9,7 @@ classification:
   topics:
   - Euler Characteristic
   - Manifolds
-  - Poincare Duality
+  - Poincaré Duality
 relations: []
 review: draft
 ---

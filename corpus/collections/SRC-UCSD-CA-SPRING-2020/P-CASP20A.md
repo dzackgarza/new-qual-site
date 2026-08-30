@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Rouche Theorem
+  - Rouché
   - Polynomial Roots
   - Argument Principle
 relations: []

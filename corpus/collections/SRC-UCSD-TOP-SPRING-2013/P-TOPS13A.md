@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - Cohomology
-  - Poincare Duality
+  - Poincaré Duality
   - Universal Coefficient Theorem
   - Manifolds
 relations: []
