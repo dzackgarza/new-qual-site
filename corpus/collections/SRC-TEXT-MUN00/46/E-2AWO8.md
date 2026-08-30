@@ -65,3 +65,11 @@ If $X$ is compact, the first two coincide, and if $X$ is discrete, the second tw
     <2>4. This is a finite intersection of open sets in the pointwise convergence topology, hence pointwise-open.
     <2>5. Thus (compact convergence) $\subseteq$ (pointwise), so the compact convergence and pointwise convergence topologies coincide. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $X$ Hausdorff.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
