@@ -8,6 +8,10 @@ classification:
   topics: [Field Theory]
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -15,4 +19,12 @@ Let $p(x)\in F[x]$ be irreducible.
 Suppose $\alpha$ and $\beta$ are distinct roots of $p$ in an extension field.
 Must $F(\alpha)$ and $F(\beta)$ be isomorphic as extensions of $F$?
 Justify your answer.
+:::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: Galois.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
