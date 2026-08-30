@@ -25,9 +25,49 @@ Show by an example that the assumption $\mu(X) < \infty$ cannot be dropped.
 :::
 
 ::: {.solution}
-<1>1. $H$ Hilbert.
-Proof: Riesz.
+<1>1. Convergence of integrals under uniform convergence on finite measure spaces:
+<2>1. Let $\varepsilon > 0$ be given.
+If $\mu(X) = 0$, the integrals are identically zero.
+Otherwise, assume $\mu(X) \in (0, \infty)$.
+Proof: case distinction on measure.
+<2>2. Since $f_n \to f$ uniformly on $X$, there exists an integer $N \in \mathbb{N}$ such that for all $n \ge N$:
+\[
+\sup_{x \in X} |f_n(x) - f(x)| < \frac{\varepsilon}{\mu(X)}.
+\]
+Proof: definition of uniform convergence.
+<2>3. By the integral triangle inequality and monotonicity of the Lebesgue integral:
+\[
+\left| \int_X f_n \, d\mu - \int_X f \, d\mu \right| \le \int_X |f_n - f| \, d\mu \le \left( \sup_{x \in X} |f_n(x) - f(x)| \right) \mu(X).
+\]
+Proof: triangle inequality for Lebesgue integrals.
+<2>4. For all $n \ge N$:
+\[
+\left| \int_X f_n \, d\mu - \int_X f \, d\mu \right| < \frac{\varepsilon}{\mu(X)} \cdot \mu(X) = \varepsilon.
+\]
+Since $\varepsilon > 0$ was arbitrary, $\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu$.
+Proof: definition of limit in $\mathbb{C}$.
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>2. Counterexample showing $\mu(X) < \infty$ is necessary:
+<2>1. Let $X = [0, \infty)$ equipped with the standard Lebesgue measure $m$, so $m(X) = \infty$.
+Define the sequence of functions:
+\[
+f_n(x) = \frac{1}{n} \mathbf{1}_{[0, n]}(x) \quad \text{for } n \ge 1.
+\]
+Proof: well-defined sequence of bounded measurable functions.
+<2>2. For every $n \ge 1$, $\sup_{x \in [0, \infty)} |f_n(x) - 0| = \frac{1}{n}$.
+As $n \to \infty$, $\frac{1}{n} \to 0$, so $f_n \to 0$ uniformly on $[0, \infty)$.
+Proof: supremum calculation.
+<2>3. For every $n \ge 1$, compute the integral:
+\[
+\int_{[0, \infty)} f_n \, dm = \int_0^n \frac{1}{n} \, dx = \frac{1}{n} \cdot n = 1.
+\]
+Thus:
+\[
+\lim_{n \to \infty} \int_{[0, \infty)} f_n \, dm = 1 \neq 0 = \int_{[0, \infty)} 0 \, dm.
+\]
+Proof: calculation of Lebesgue integral of step functions.
+
+<1>3. Conclusion:
+The convergence holds when $\mu(X) < \infty$, and the sequence $f_n = \frac{1}{n}\mathbf{1}_{[0, n]}$ provides a counterexample when $\mu(X) = \infty$. Q.E.D.
+Proof: <1>1 and <1>2.
 :::
