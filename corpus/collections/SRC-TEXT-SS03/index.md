@@ -132,6 +132,9 @@ source:
   - name: Ch5 Problems
     problems:
     - E-SS5.PR-1
+    - E-SS5.PR-2
+    - E-SS5.PR-3
+    - E-SS5.PR-4
   - name: Ch6 Exercises
     problems:
     - E-SS6.EX-1
@@ -227,5 +230,4 @@ source:
     - E-SS10.PR-3
     - E-SS10.PR-4
 ---
-
 
