@@ -28,10 +28,9 @@ Almost every integral is one of six forms, and recognizing the form is the whole
 
 Two habits that shorten most problems:
 
-- **Check for symmetry first.**
-  An odd integrand over a symmetric interval integrates to zero, and an even one halves the work.
-- **Check whether the answer is a standard form.**
-  $\int \frac{\dx}{a^2+x^2}$, $\int\frac{\dx}{\sqrt{a^2-x^2}}$ and $\int \sec x \dx$ appear constantly and are worth knowing rather than deriving.
+- **Check for symmetry first.** An odd integrand over a symmetric interval integrates to zero, and an even one halves the work.
+
+- **Check whether the answer is a standard form.** $\int \frac{\dx}{a^2+x^2}$, $\int\frac{\dx}{\sqrt{a^2-x^2}}$ and $\int \sec x \dx$ appear constantly and are worth knowing rather than deriving.
 
 ## Repeated integration by parts
 
@@ -40,6 +39,7 @@ When parts must be applied more than once, the tabular method is faster and less
 ## Series
 
 - **Convergence:** ratio test for factorials and powers, root test for $n$th powers, comparison against a $p\dash$series otherwise, alternating series test for alternating ones, and integral test when the terms come from a monotone function.
+
 - **Value:** geometric, telescoping, or a known expansion evaluated at a point.
   Almost every prelim series is one of those three.
 
@@ -51,8 +51,11 @@ For sequences defined recursively, show monotone and bounded and identify the li
 ## Multivariable
 
 - **Line integrals:** check whether the field is conservative first, since then only the endpoints matter.
+
 - **A closed curve in the plane:** Green's theorem.
+
 - **A closed surface:** the divergence theorem.
+
 - **Otherwise:** parameterize, and choose coordinates matching the symmetry of the region.
 
 The tables and worked cases are on [[Prelim/Useful Tricks|Useful tricks]].
