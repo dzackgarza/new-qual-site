@@ -10,9 +10,21 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
 Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function.
 Show that the series $$\sum_{n=0}^{\infty} \frac{f^{(n)}(z)}{n!}$$ converges uniformly on compact subsets of $\mathbb{C}$.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
