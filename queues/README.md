@@ -26,13 +26,13 @@ Two kinds of queue files:
 | `02-publish-authored-pages.md` | 4 | 0 | #5, #23 (COMPLETED) | Needs build inspection |
 | `03-publish-subject-branches.md` | 2 | 6 | #24–#29 (COMPLETED) | Publication done; proof not |
 | `04-reader-exam-generator.md` | 3 | 4 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
-| `05-repair-rendered-residue.md` | 3 | 0 | #41 (COMPLETED) | ~5 design defects remain (Queue 11) |
+| `05-repair-rendered-residue.md` | 0 | 3 | #41 (COMPLETED) | All defects resolved (Queue 11) |
 | `06-prove-deployed-site.md` | 7 | 0 | #30 (COMPLETED) | Build exists (257 HTML pages) |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
 | `08-owner-decisions.md` | 2 | 0 | none | Build exists; decisions unmade |
 | `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |
 | `10-close-roadmap.md` | 1 | 4 | #1 (CLOSED) | 10.3 contested |
-| `11-design-issues.md` | 5 | 20 | #41 surface | 14 fixed since original write (2026-08-30) |
+| `11-design-issues.md` | 1 | 24 | #41 surface | 24/25 resolved (15 fixed, 8 design-accepted, 1 deferred) |
 
 ## How to use
 

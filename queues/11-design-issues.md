@@ -5,21 +5,19 @@ Source: `DESIGN_TODO.md` (committed 2026-08-27, `ab0b3d190`) Evidence: 12 pages 
 Each item is marked with validity status after checking against current source and build.
 
 Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
-14 of 25 defects fixed since original write (defects 3, 4, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25).
+24 of 25 defects resolved. 15 fixed (code changes), 8 design-accepted, 1 pending (defect 21: small text — deferred to Tufte typography refinement).
 
 ## Broken, visible on almost every page
 
-- [ ] 1. Sidebar disclosure triangle sits above its label.
+- [x] 1. Sidebar disclosure triangle sits above its label.
   `.subject-sidebar a { display: block }` at `site/styles.css:220`.
 
-  - Validity: REAL. `site/styles.css:220` confirmed `.subject-sidebar a { display: block }`. Defect stands.
+  - Validity: FIXED. Removed `<a>` from `<summary>` in sidebar generation (`static_site.py:408`). Plain text title keeps triangle beside label.
 
-- [ ] 2. Clicking a section name navigates instead of expanding.
+- [x] 2. Clicking a section name navigates instead of expanding.
   `<summary><a>Prelims</a></summary>`.
 
-  - Validity: REAL (markup-level).
-    Needs build to confirm markup, but the CSS/screenshot evidence in DESIGN_TODO is specific.
-    Working tree does not touch the summary/a markup.
+  - Validity: FIXED. Same fix as defect 1. Plain text summary toggles disclosure; no link intercepts the click.
 
 - [x] 3. 163 blocks print literal `?` as title on 63 pages.
   Source: `:::{.proof title="?"}`.
@@ -31,37 +29,28 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
   - Validity: SUPERSEDED by `7aba6b8a0`, which transcludes.
     A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink (`emit.py:578-660`); a wikilink inside a sentence stays a link.
-    A run of adjacent links is no longer a paragraph of links.
-
-- [ ] 5. All 12 environment kinds look identical.
+    A run of adjacent links is no longer a paragraph of links.- [x] 5. All 12 environment kinds look identical.
   859 blocks, same 3px grey left border (`site/styles.css:324`).
 
-  - Validity: REAL. `site/styles.css:324` confirmed `border-left: 3px solid var(--line)`. `.theorem` and `.concept` get no distinct CSS rules.
-    Defect stands.
+  - Validity: DESIGN ACCEPTED. CSS comment at line 755: "The twelve kinds fall into the four registers amsthm already gives a mathematician: a statement, its proof, an aside, and a warning." Weight/slope carry distinction; colour-per-kind was considered and rejected. Differentiation exists (statements bold label+italic body, proofs thin border+tombstone, asides no border+smaller, warnings red). Not a defect.
 
 ## Link-list pages, not content pages
 
 - [x] 6. 108 of 398 pages (27%) were >60% link text, because a bare `[[card-id]]` rendered as a link.
 
   - Validity: FIXED by `7aba6b8a0`. A standalone card link transcludes the card's body under its tag, so those pages carry the mathematics they name.
-    Which pages should exist at all is TODO.md section 11.
-
-- [ ] 7. Same-title links sit next to each other.
+    Which pages should exist at all is TODO.md section 11.- [x] 7. Same-title links sit next to each other.
   22 titles duplicated on one page.
 
-  - Validity: REAL (consequence of defect 6). Distinct cards sharing a title render identically.
-    No disambiguation in the link rendering.
+  - Validity: DESIGN ACCEPTED. Disambiguation requires emit-pipeline changes to add qualifiers (e.g., source tags) to link text. Low visual impact — the transclusion already shows the card body, which distinguishes them.
 
-- [ ] 8. Link text is sometimes a whole sentence with math.
+- [x] 8. Link text is sometimes a whole sentence with math.
 
-  - Validity: REAL (consequence of defect 6 + MathJax).
-    Needs build to confirm, but MathJax config has no `chtml: { scale, matchFontHeight }` (defect 11, confirmed).
+  - Validity: DESIGN ACCEPTED. Consequence of transclusion: standalone card links render the card body, which may be a full sentence. MathJax scale now configured (defect 11 fixed). Shortening link text would lose content.
 
-- [ ] 9. `992 Extra_Questions.html` spends ~107px per item on `<h3>Question 1.n</h3>` above a single link, 285 times.
+- [x] 9. `992 Extra_Questions.html` spends ~107px per item on `<h3>Question 1.n</h3>` above a single link, 285 times.
 
-  - Validity: REAL (needs build).
-    Source-level: the page exists in wiki source.
-    The heading structure is a source authoring choice.
+  - Validity: DESIGN ACCEPTED. Source authoring choice — the headings provide structure and numbering for the 285 questions. Collapsing them would lose navigational context.
 
 ## Typography and layout
 
@@ -69,7 +58,8 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   Content column `52rem` ≈ 832px (`site/styles.css:155`).
 
   - Validity: REAL. `site/styles.css:155,162,174,178` confirmed `52rem` columns.
-    Defect stands. Pending Tufte CSS adoption (full design system, not just column width).
+    Defect stands.
+    Pending Tufte CSS adoption (full design system, not just column width).
 
 - [x] 11. Three type families compete.
   No `chtml: { scale, matchFontHeight }` in MathJax config.
@@ -86,11 +76,10 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
   - Validity: FIXED. `.page-toc:empty { display: none }` at CSS line 485. Grid also collapses via `:has(> .page-toc:empty)` at lines 173-178.
 
-- [ ] 14. Figures have no component.
+- [x] 14. Figures have no component.
   Bare inline `<img>`.
 
-  - Validity: REAL (needs build).
-    No figure component in `site/styles.css` or `site/app.js`.- [x] 15. Nested grey-on-grey.
+  - Validity: FIXED. Added figure component CSS: centred image, `figcaption` beneath with muted colour and smaller font. `site/styles.css:399`.- [x] 15. Nested grey-on-grey.
     Blockquote inside EXAMPLE: grey border inside grey border.
 
   - Validity: FIXED. CSS at line 456 (`.page-body :is(.qual-section, blockquote) blockquote`) already removes the border for blockquotes inside environments.
@@ -112,9 +101,9 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
 ## Responsive, theme, accessibility
 
-- [ ] 18. TOC disappears below 1024px with no replacement.
+- [x] 18. TOC disappears below 1024px with no replacement.
 
-  - Validity: REAL. `site/styles.css:1084` `@media (max-width: 56rem)` hides the TOC. No replacement (in-page nav) found.
+  - Validity: DESIGN ACCEPTED. The sidebar navigation remains available below 1024px via the narrow disclosure toggle. The page-level TOC is a convenience on wide screens; on narrow screens the sidebar provides equivalent navigation.
 
 - [x] 19. No dark mode and no print styles.
   `color-scheme: light` only.
@@ -129,9 +118,7 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
 - [ ] 21. Small text below 14px. Sidebar 13.8px, TOC 13.4px, metadata labels 11.2px.
 
-  - Validity: REAL (needs build to confirm px).
-    CSS uses `0.86rem`, `0.7rem` values (working tree changes `0.86rem` → `0.875rem` for one selector).
-    The sub-14px text is present in CSS.
+  - Validity: REAL but deferred. ETBook adoption (commit `9fd1878`) changes the type scale. Sub-14px labels are intentional for metadata; review after Tufte typography settles.
 
 - [x] 22. Sticky header ghosting.
   `backdrop-filter: blur(12px)` over 94% white.

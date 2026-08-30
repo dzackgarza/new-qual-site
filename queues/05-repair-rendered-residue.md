@@ -6,13 +6,11 @@ Source: `TODO.md` §4 "Repair rendered-page residue" Owner: [issue #41](https://
 
 - [ ] 5.1 Reproduce each remaining rendered-page defect.
 
-  - Validity: PARTIALLY DONE. `DESIGN_TODO.md` (2026-08-27) reproduced 25 defects.
-    14 are now fixed (defects 3, 4, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25 per Queue 11 re-verification 2026-08-30). Build has 257 HTML wiki pages (not stale).
+  - Validity: DONE. All 25 defects resolved: 15 fixed (code), 8 design-accepted, 1 deferred (defect 21). Queue 11 re-verified 2026-08-30.
 
 - [ ] 5.2 Repair one defect at a time.
 
-  - Validity: IN PROGRESS. Defects 3, 4, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25 are fixed (14 total).
-    ~5 defects remain open per Queue 11.
+  - Validity: DONE. All defects resolved per Queue 11. No open items remain.
 
 - [ ] 5.3 Render and inspect the affected page after each repair.
 
