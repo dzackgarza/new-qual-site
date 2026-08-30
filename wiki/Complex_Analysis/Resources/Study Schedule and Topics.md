@@ -107,7 +107,7 @@ title: "Study Schedule and Topics"
 
   - [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke Factors]]
 
-  - [[Complex_Analysis/Quals/Schwarz_Lemma|Schwarz lemma]]
+  - [[Complex_Analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]
 
   - [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|Open Mapping Theorem]]
 

@@ -1,6 +1,15 @@
 ---
 title: Blaschke factors and automorphisms
 order: 30
+problems:
+  topics:
+  - Blaschke Factors
+  - Blaschke Products
+  - Automorphisms
+  - Automorphisms of the Disc
+  - Disc Automorphisms
+  - Biholomorphisms
+  - Biholomorphic Maps
 ---
 
 # Blaschke factors and automorphisms

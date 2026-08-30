@@ -1,6 +1,9 @@
 ---
 title: Computing residues
 order: 20
+problems:
+  topics:
+  - Residues
 ---
 
 # Computing residues

@@ -1,6 +1,11 @@
 ---
 title: Casorati-Weierstrass and Picard
 order: 40
+problems:
+  topics:
+  - Casorati-Weierstrass
+  - Picard
+  - Picard's Theorem
 ---
 
 # Casorati–Weierstrass and Picard

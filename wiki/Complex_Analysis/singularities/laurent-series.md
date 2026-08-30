@@ -1,6 +1,11 @@
 ---
 title: Laurent series
 order: 10
+problems:
+  topics:
+  - Laurent Series
+  - Principal Parts
+  - Annuli
 ---
 
 # Laurent series

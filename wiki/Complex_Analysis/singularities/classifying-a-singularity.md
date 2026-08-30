@@ -1,6 +1,10 @@
 ---
 title: Classifying a singularity
 order: 0
+problems:
+  topics:
+  - Singularities
+  - Isolated Singularities
 ---
 
 # Classifying a singularity

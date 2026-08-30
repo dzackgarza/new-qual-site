@@ -1,6 +1,10 @@
 ---
 title: The argument principle
 order: 10
+problems:
+  topics:
+  - Argument Principle
+  - Winding Number
 ---
 
 # The argument principle

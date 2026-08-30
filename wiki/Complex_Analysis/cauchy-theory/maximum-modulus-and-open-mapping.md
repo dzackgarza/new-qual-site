@@ -1,6 +1,13 @@
 ---
 title: Maximum modulus and open mapping
 order: 60
+problems:
+  topics:
+  - Maximum Modulus Principle
+  - Maximum Modulus
+  - Maximum Principle
+  - Minimum Principle
+  - Open Mapping Theorem
 ---
 
 # Maximum modulus and open mapping

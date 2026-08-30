@@ -1,6 +1,24 @@
 ---
 order: 5
 title: Calculus Preliminaries
+problems:
+  topics:
+  - Calculus
+  - Continuity
+  - Uniform Continuity
+  - Multivariable Calculus
+  - Riemann Integrability
+  - Mean Value Theorem
+  - Point-Set Topology
+  - Compactness
+  - Connectedness
+  - Metric Spaces
+  - Completeness
+  - Euclidean Spaces
+  - Sequences of Numbers
+  - Limits
+  - Convergence
+  - Differentiation
 ---
 
 # Calculus Preliminaries

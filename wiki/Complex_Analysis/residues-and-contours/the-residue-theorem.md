@@ -1,6 +1,10 @@
 ---
 title: The residue theorem
 order: 10
+problems:
+  topics:
+  - Residue Theorem
+  - Residue Formula
 ---
 
 # The residue theorem

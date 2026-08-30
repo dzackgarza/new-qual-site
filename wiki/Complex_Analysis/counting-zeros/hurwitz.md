@@ -1,6 +1,11 @@
 ---
 title: Hurwitz's theorem
 order: 30
+problems:
+  topics:
+  - Hurwitz
+  - Hurwitz Theorem
+  - Hurwitz's Theorem
 ---
 
 # Hurwitz's theorem

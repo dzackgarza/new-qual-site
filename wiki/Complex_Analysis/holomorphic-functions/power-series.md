@@ -1,6 +1,16 @@
 ---
 title: Power series
 order: 30
+problems:
+  topics:
+  - Power Series
+  - Taylor Series
+  - Radius of Convergence
+  - Convergence Tests
+  - Series of Functions
+  - Series of Numbers
+  - Sequences of Functions
+  - Uniform Convergence
 ---
 
 # Power series

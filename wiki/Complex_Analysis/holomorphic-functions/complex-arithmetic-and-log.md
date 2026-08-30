@@ -1,6 +1,12 @@
 ---
 title: Complex arithmetic and the logarithm
 order: 10
+problems:
+  topics:
+  - Complex Numbers
+  - Complex Logarithm
+  - Trigonometry
+  - Hyperbolic Functions
 ---
 
 # Complex arithmetic and the logarithm

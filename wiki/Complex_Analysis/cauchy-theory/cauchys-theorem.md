@@ -1,6 +1,12 @@
 ---
 title: Cauchy's theorem
 order: 10
+problems:
+  topics:
+  - Cauchy's Theorem
+  - Cauchy Theorem
+  - Cauchy Integral Theorem
+  - Green's Theorem
 ---
 
 # Cauchy's theorem

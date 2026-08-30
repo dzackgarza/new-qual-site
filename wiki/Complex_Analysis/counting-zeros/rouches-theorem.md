@@ -1,6 +1,12 @@
 ---
 title: Rouché's theorem
 order: 20
+problems:
+  topics:
+  - Rouché
+  - Rouché's Theorem
+  - Rouche Theorem
+  - Rouche's Theorem
 ---
 
 # Rouché's theorem

@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BFall%C2%A02018%5D.docx
+- https://www.math.uga.edu/sites/default/files/inline-files/Complex%20Fall%202018pdf.pdf
 source:
   source_kind: university-exam
   institution: uga

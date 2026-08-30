@@ -1,6 +1,11 @@
 ---
 title: Morera and converses
 order: 40
+problems:
+  topics:
+  - Morera
+  - Morera Theorem
+  - Morera's Theorem
 ---
 
 # Morera and converses

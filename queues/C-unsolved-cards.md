@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-5009 problem and exercise cards have no solution section and no incoming
+4984 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1546
-- Problems: 3463
-- Total: 5009
+- Exercises: 1537
+- Problems: 3447
+- Total: 4984
 
-## Exercises (1546)
+## Exercises (1537)
 
 - [ ] E-AMD-LSAG5UZT — "Groups of order $p^3$ have a normal subgroup of order $p^2$"
 - [ ] E-AMD-NY3QKBRB — "Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$"
@@ -48,7 +48,6 @@ commit, and writing the solution removes the line.
 - [ ] E-AMD-Y3DIXRGP — "The stabilizer of an element need not be a normal subgroup"
 - [ ] E-AMD-YHZCDPYO — "$\mathrm{rad}(IJ)=\mathrm{rad}(I)\cap\mathrm{rad}(J)$"
 - [ ] E-AMD-YITMZNBK — "In a PID, $x$ is irreducible iff $(x)$ is maximal"
-- [ ] E-AMD-ZF6SCEFC — "Groups of order $p^2q^2$ are abelian when $q\nmid p^2-1$ and $p\nmid q^2-1$"
 - [ ] E-APRPU — "Higher-dimensional separation theorems from the no-retraction theorem"
 - [ ] E-ARGEV — "Pointwise bounded collections that fail equicontinuity"
 - [ ] E-ARJT3 — "Separable space"
@@ -84,7 +83,6 @@ commit, and writing the solution removes the line.
 - [ ] E-CGJJG — "Order-two group actions on the torus"
 - [ ] E-CH8HI — "Product topologies under refinement of the factors"
 - [ ] E-CHQXB — "Closure points detected by convergent nets"
-- [ ] E-CJA01 — "The unit interval is not limit point compact in the lower limit topology"
 - [ ] E-CJGFE — "Heredity of the seventeen basic properties"
 - [ ] E-CKXKK — "G-delta subspaces of compact Hausdorff or complete metric spaces are Baire"
 - [ ] E-CLMEK — "Differentiable contractions are uniformly continuous"
@@ -149,7 +147,6 @@ commit, and writing the solution removes the line.
 - [ ] E-H7BO5 — "A sequentially compact space is totally bounded"
 - [ ] E-HAT-1.1-1 — "Cancellation property for composition of paths"
 - [ ] E-HAT-1.1-10 — "Explicit homotopy for commuting loops in product spaces"
-- [ ] E-HAT-1.1-11 — "Inclusion of path-component induces isomorphism on $\pi_1$"
 - [ ] E-HAT-1.1-13 — "Surjectivity of inclusion-induced map on $\pi_1$ iff paths in $X$ with endpoints in $A$ are homotopic to paths in $A$"
 - [ ] E-HAT-1.1-14 — "Isomorphism $\pi_1(X \times Y) \approx \pi_1(X) \times \pi_1(Y)$ given by projections"
 - [ ] E-HAT-1.1-15 — "Naturality square for basepoint-change homomorphisms"
@@ -172,7 +169,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-1.2-15 — "Canonical map from loop complex $L(X)$ to $X$ induces isomorphism on $\pi_1$"
 - [ ] E-HAT-1.2-16 — "Fundamental group of surface of infinite genus is free on infinitely many generators"
 - [ ] E-HAT-1.2-18 — "Suspension vs reduced suspension of convergent sequence; reduced suspension of contractible space need not be contractible"
-- [ ] E-HAT-1.2-19 — "Union of spheres of radius $1/n$ centered at $(1/n, 0, 0)$ is simply-connected"
 - [ ] E-HAT-1.2-2 — "Union of convex open sets with triple intersections nonempty is simply-connected"
 - [ ] E-HAT-1.2-20 — "Fundamental group of union of tangent circles equals that of infinite wedge, and spaces are homotopy equivalent but not homeomorphic"
 - [ ] E-HAT-1.2-21 — "Join of path-connected space with any nonempty space is simply-connected"
@@ -308,7 +304,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-2.B-7 — "Modified Alexander horned sphere"
 - [ ] E-HAT-2.B-8 — "Real division algebras and the Borsuk--Ulam theorem"
 - [ ] E-HAT-2.C-1 — "Minimum number of edges for simplicial map $S^1 \to S^1$ of degree $n$"
-- [ ] E-HAT-2.C-2 — "Lefschetz fixed point theorem: map $S^n \to S^n$ has fixed point unless degree equals antipodal degree"
 - [ ] E-HAT-2.C-3 — "Conjugate-linear map on $\mathbb{C}^{2k}$ induces fixed-point-free map on $\mathbb{CP}^{2k-1}$"
 - [ ] E-HAT-2.C-4 — "Lefschetz number of simplicial homeomorphism equals Euler characteristic of fixed point set"
 - [ ] E-HAT-2.C-5 — "Can reflection of closed orientable surface across plane be homotoped to fixed-point-free?"
@@ -510,7 +505,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-4.G-2 — "Projection from $\Delta X$ is a fiber bundle"
 - [ ] E-HAT-4.G-3 — "Nerve of the open star cover"
 - [ ] E-HAT-4.H-1 — "Cofibrations give fibrations on function spaces"
-- [ ] E-HAT-4.H-2 — "Cofibrations are preserved by pushout"
 - [ ] E-HAT-4.H-3 — "Fiber-preserving homotopy equivalences are fiber homotopy equivalences"
 - [ ] E-HAT-4.H-4 — "Dual of an iterated mapping cylinder"
 - [ ] E-HAT-4.I-1 — "Suspension of a retract splits as a wedge"
@@ -534,7 +528,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-101-10 — "Rank of a bilinear form via its right radical"
 - [ ] E-HK-101-11 — "Non-degenerate restrictions bound the rank below"
 - [ ] E-HK-101-12 — "Factoring forms through a non-singular form"
-- [ ] E-HK-101-13 — "The factorization of Exercise 12 fails for singular $g$"
 - [ ] E-HK-101-14 — "Rank-one bilinear forms are exactly products of two functionals"
 - [ ] E-HK-101-2 — "Matrices of a bilinear form on $\RR^2$ in three bases"
 - [ ] E-HK-101-4 — "Symmetric bilinear forms on $\RR^3$"
@@ -986,7 +979,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-SHA8 — "$AB$ not invertible when $n < m$"
 - [ ] E-HK-UBFI — "Consistency and solutions of a three-equation system"
 - [ ] E-HK-XY48 — "Inverse of a $4 \times 4$ upper-triangular matrix"
-- [ ] E-HOJKE — "$A$ is a field iff $A$ is a simple ring iff every homomorphism from $A$ to a nonzero field is injective"
 - [ ] E-HQ8N3 — "Fundamental group of the wedge of a circle and a sphere"
 - [ ] E-HQSSE — "Two disjoint curves on the sphere make three regions"
 - [ ] E-HYC1G — "Topology coherent with an increasing sequence of closed subspaces"
@@ -1402,7 +1394,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS5.EX-8 — "SS 5.8: A cosine product for sin z over z"
 - [ ] E-SS5.EX-9 — "SS 5.9: A binary product expansion of 1/(1-z)"
 - [ ] E-SS5.PR-1 — "Prove that if f is holomorphic in the unit disc, bounded and not identically zer"
-- [ ] E-SS6.EX-1 — "SS 6.1: Gauss's limit formula for the Gamma function"
 - [ ] E-SS6.EX-10 — "SS 6.10: Mellin transforms of cosine and sine"
 - [ ] E-SS6.EX-11 — "The Fourier transform of e^{az} e^{-e^z} is the Gamma function"
 - [ ] E-SS6.EX-13 — "SS 6.13: Second derivative of log Gamma as a summed series"
@@ -1564,7 +1555,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3463)
+## Problems (3447)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -2219,7 +2210,6 @@ commit, and writing the solution removes the line.
 - [ ] P-ALGS16B — "Groups of order greater than $2$ have a nontrivial automorphism"
 - [ ] P-ALGS16C — "Non-abelian group of order $39$"
 - [ ] P-ALGS16E — "Whether $\mathbb{F}_9$ embeds in $\mathbb{F}_{27}$"
-- [ ] P-ALGS16F — "Solvability by radicals of $x^5 - 16x + 2 = 0$"
 - [ ] P-ALGS16G — "Galois extension of $\mathbb{Q}$ with cyclic Galois group of order $4$"
 - [ ] P-ALGS16H — "Ideal $(2,\sqrt{-6})$ in $\mathbb{Z}[\sqrt{-6}]$ is flat but not free"
 - [ ] P-ALGS16I — "Local vanishing at maximals over $I$ implies $M = IM$"
@@ -2412,7 +2402,6 @@ commit, and writing the solution removes the line.
 - [ ] P-APA23F — "Character table of the alternating group $A_4$"
 - [ ] P-APA23G — "Indecomposable modules for $C_4 \times C_3 \times C_2$ over $\mathbb{F}_3$"
 - [ ] P-APA23H — "Irreducible decomposition of homogeneous quadrics under $S_5$"
-- [ ] P-APA23I — "Trace of exterior powers of a normal operator and characteristic polynomial coefficients"
 - [ ] P-APA23J — "Monomial ideal $\langle x_2^2,\dots,x_n^2\rangle$: basis, Hilbert function, and variety"
 - [ ] P-APA24A — "Dimension formula for the sum of two subspaces"
 - [ ] P-APA24B — "A matrix is unitarily diagonalizable if and only if it is normal"
@@ -3128,7 +3117,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HCAO22 — "Integral closure of a one-dimensional Noetherian domain"
 - [ ] P-HCAO23 — "Integral closure of a one-dimensional Noetherian domain is Noetherian"
 - [ ] P-HCAO24 — "Define the Hilbert function"
-- [ ] P-HCAO25 — "When the Hilbert function agrees with a polynomial"
 - [ ] P-HCAO26 — "Invariants encoded by the Hilbert polynomial"
 - [ ] P-HCAO27 — "Compute the Hilbert function of an ideal"
 - [ ] P-HCAO28 — "Gröbner bases, term orders, and initial ideals"
@@ -3191,7 +3179,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HCAX7 — "Complex tori and their automorphisms"
 - [ ] P-HCAX8 — "Zeros of a polynomial derivative remain in a containing half-plane"
 - [ ] P-HCAX9 — "Derivatives under compact-uniform convergence"
-- [ ] P-HCQNH — "A formula for $\chi(X)$ in terms of $\chi(U)$, $\chi(V)$, and $\chi(U\cap V)$"
 - [ ] P-HEOYS — "Colorings of a tetrahedron with $C$ colors up to symmetry"
 - [ ] P-HFGO1 — "A polynomial not solvable by radicals"
 - [ ] P-HFGO10 — "Degree of a field's algebraic closure"
@@ -3298,7 +3285,6 @@ commit, and writing the solution removes the line.
 - [ ] P-I2MBC — "$\ZZ/p\ZZ\otimes\ZZ/q\ZZ$ for distinct primes $p$ and $q$"
 - [ ] P-I3UPP — "The line integral $\int_\tau x\,dy+y\,dx$ along the unit-circle arc from $(1,0)$ to $(3/5,4/5)$"
 - [ ] P-I5GAL — "Every finite group is a Galois group over some extension $E \supseteq F$"
-- [ ] P-I753O — "An operator with L-infinity and weak-L1 bounds is L2 bounded"
 - [ ] P-IAW24 — "Constructible numbers"
 - [ ] P-IBFJV — "Are there two nonisomorphic groups with the same representations?"
 - [ ] P-IBLLK — "Homology of $S^2$ with equatorial antipodes identified"
@@ -3319,7 +3305,6 @@ commit, and writing the solution removes the line.
 - [ ] P-IOVNM — "The quotient of a compact Hausdorff space by a closed equivalence relation is Hausdorff"
 - [ ] P-IPPQ6 — "Consider a nonconstant function between two compact Riemann Surfaces."
 - [ ] P-IQPLX — "An $m$-cycle is odd iff $m$ is even"
-- [ ] P-IR6HQ — "Hungerford 7.4.4"
 - [ ] P-IRNN2 — "$\int_C \frac{dz}{f(z)-f(z_0)}=\frac{2\pi i}{f'(z_0)}$ for a small circle about a noncritical point"
 - [ ] P-IS9SV — "Evaluation makes $A$ a module over $\mathrm{End}(A)$"
 - [ ] P-IT3OF — "Fundamental group and homology of a $2$-cell attached to $S^1$ by $z\mapsto z^n$, and which $X_n$ is a surface"
@@ -3327,7 +3312,6 @@ commit, and writing the solution removes the line.
 - [ ] P-IVRLI — "$SL_2(\ZZ)$ is not solvable"
 - [ ] P-IXED6 — "A generator of $(a)\vee(b)$ in a PID, and $x\equiv c\pmod{(a)}$, $x\equiv d\pmod{(b)}$ iff $c\equiv d\pmod{(a)\vee(b)}$"
 - [ ] P-IXL2P — "Cayley graph of $\ZZ \times \ZZ$ as a covering space"
-- [ ] P-IZW2T — "Expand the following functions into Laurent series in the indicated"
 - [ ] P-IZZ3T — "Riemann integrability under $|g(x)-g(y)|\le|f(x)-f(y)|$"
 - [ ] P-J3FBW — "Groups of order $28$"
 - [ ] P-J5U34 — "Necessary and sufficient conditions for the Galois group of a degree $5$ polynomial to have order divisible by $3$"
@@ -3373,7 +3357,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHUFA02CAE — "The sum of the odd sine series and the Basel problem"
 - [ ] P-JHUFA02CAF — "A holomorphic function on an annulus need not extend, but extends meromorphically"
 - [ ] P-JHUFA02CAG — "there is no one-to-one holomorphic mapping of the open annulus onto the puncture"
-- [ ] P-JHUFA02CAH — "Entire functions bounded by the square of the modulus"
 - [ ] P-JHUFA02CAI — "D denote the unit disc . Determine a holomorphic mapping f of D onto itself for"
 - [ ] P-JHUFA02CAJ — "P has no multiple zeros. (b) (15 points) Determine the number of zeros of P that"
 - [ ] P-JHUFA02CAK — "Evaluate integral of u^2/(u^6+1) over [0,infty)"
@@ -3825,7 +3808,6 @@ commit, and writing the solution removes the line.
 - [ ] P-OREB6 — "A permutation is odd iff it has an odd number of even-length cycles"
 - [ ] P-OS765 — "Irreducible factors of $f(g(x))$ have degree a multiple of $\deg f$, and of $x^{2n}-r$ over $\mathbb{Q}$ when $r$ is not a square"
 - [ ] P-OSS6X — "Spring 2021, 7"
-- [ ] P-OSVPH — "Evaluate $\int\frac{\sin^3 x}{\cos x-\cos^3 x}\,dx$"
 - [ ] P-OTS37 — "Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$"
 - [ ] P-OTXNQ — "Does this hold when $A$ is open? (statement incomplete)"
 - [ ] P-OU7QZ — "The Galois group of an irreducible quintic with two non-real roots is $S_5$"
@@ -3856,7 +3838,6 @@ commit, and writing the solution removes the line.
 - [ ] P-PE7IZ — "$\ZZ$ is initial among unital rings, so every abelian group has a unique $\ZZ$-module structure"
 - [ ] P-PF5MC — "Galois group of $x^5-2$"
 - [ ] P-PFUVL — "Which groups of order 4 can be realised as a Galois group over $\QQ$?"
-- [ ] P-PGDJ2 — "Zeros of a polynomial in the annulus from one to three"
 - [ ] P-PGDPX — "Integral equals integral of distribution function"
 - [ ] P-PHHXJ — "Integrals of $\sqrt{1-x^2}$, $\sqrt{16-x^2}$ on $[-4,4]$, and $(1+x)\sqrt{1-x^2}$ on $[-1,1]$"
 - [ ] P-PJA4A — "Unique quadratic subfield of a Galois extension of degree $14$, and two distinct degree-$7$ subfields imply a nonabelian Galois group"
@@ -4240,8 +4221,6 @@ commit, and writing the solution removes the line.
 - [ ] P-T06Q2-9 — "Singular chain groups of an increasing open cover"
 - [ ] P-T07A1 — "Disjoint open sets in an extremally disconnected space have disjoint closures"
 - [ ] P-T07A2 — "A connected locally path-connected space is path-connected"
-- [ ] P-T07A3 — "If $f$ is a compact-to-Hausdorff continuous surjection and $g\circ f$ is continuous, then $g$ is continuous"
-- [ ] P-T07A4 — "The product of two locally compact spaces is locally compact"
 - [ ] P-T07B1 — "A simply-connected open cover of $T^2$ has an empty or disconnected consecutive intersection"
 - [ ] P-T07B2 — "A covering space restricts to a subspace, with $\ker\iota_*\subseteq\operatorname{im}q_*$"
 - [ ] P-T07B3 — "A genus-2 surface is not a retract of the region it bounds"
@@ -4543,13 +4522,11 @@ commit, and writing the solution removes the line.
 - [ ] P-TOPF20A — "No symmetric map from T^2 to S^1 fixing the diagonal"
 - [ ] P-TOPF20C — "Homology of RP^2 x RP^2"
 - [ ] P-TOPF20D — "CP^n cannot be covered by n contractible open subsets"
-- [ ] P-TOPF20E — "No retraction of S^n x S^n onto the coordinate axes union"
 - [ ] P-TOPF20F — "A map of nonzero degree induces injection on rational cohomology"
 - [ ] P-TOPF20G — "The swap map on M x M has a fixed point when chi(M) is nonzero"
 - [ ] P-TOPF20H — "A CW complex with finite nontrivial pi_1 and no higher homotopy cannot be finite"
 - [ ] P-TOPF21A — "Connected sum and wedge of RP^2 and T^2: pi_1, homology, cohomology ring, orientability, manifold property, double cover Euler characteristic"
 - [ ] P-TOPF21B — "CP^2 as a covering space, homology of CP^2 x RP^2"
-- [ ] P-TOPF21C — "A simply-connected closed 3-manifold is homotopy equivalent to S^3"
 - [ ] P-TOPF22B — "Fundamental group and H_2 of universal cover of a torus with attached discs"
 - [ ] P-TOPF22C — "Mod 2 cohomology ring of the Klein bottle times S^1"
 - [ ] P-TOPF22D — "Connected closed non-orientable 3-manifold has infinite fundamental group"
@@ -4853,7 +4830,6 @@ commit, and writing the solution removes the line.
 - [ ] P-UOENS — "Evaluate $\int\sin x\cos x\cot x\tan x\,dx$"
 - [ ] P-UQDSR — "A $k$-cycle as a product of transpositions"
 - [ ] P-USAQT — "Ideals, $\spec$, $\maxspec$, and radicals"
-- [ ] P-USPU6 — "A finite abelian group is the product of its Sylow subgroups"
 - [ ] P-UU43Q — "Path-independence of $\int_C (x+y^3)\,dx+(e^y+3xy^2)\,dy$"
 - [ ] P-UUACQ — "Antiderivative of $\frac{x}{\sqrt{4-x^4}}$"
 - [ ] P-UVSXF — "Antiderivative of $x\sqrt{x+1}$"
@@ -4967,7 +4943,6 @@ commit, and writing the solution removes the line.
 - [ ] P-XYIBX — "Evaluate $\int\frac{1-\sqrt{x}}{1+\sqrt{x}}\,dx$"
 - [ ] P-XZRST — "Whether $L^1$ has a natural multiplication making it an algebra"
 - [ ] P-Y3MQA — "Schwarz-Pick type inequality for holomorphic self-map of disk"
-- [ ] P-Y3PUL — "$\RP^2\vee S^1$ is not homotopy equivalent to a compact surface"
 - [ ] P-Y4XPA — "The ring of arithmetic functions under Dirichlet convolution"
 - [ ] P-Y6XVP — "Antiderivative of $e^{x+e^x}$"
 - [ ] P-Y6Y6V — "Neither diagonalizable nor invertible implies the other"
