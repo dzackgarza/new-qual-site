@@ -10,6 +10,10 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -27,4 +31,21 @@ Prove that $G$ has the following presentation
 \[
 \langle a, b \mid a^4 = e,\; a^2 = b^2,\; a^{-1}ba = b^{-1} \rangle.
 \]
+:::
+
+::: {.solution}
+<1>1. $G$ has $8$ elements as listed.
+Proof: check closure.
+
+<1>2. Put $a=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$, $b=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
+Proof: define.
+
+<1>3. $a^4=I$, $a^2=b^2=-I$, $a^{-1}ba=b^{-1}$.
+Proof: compute.
+
+<1>4. So $G$ satisfies relations, and $|G|=8$ implies presentation is $G$.
+Proof: <1>3 and order.
+
+<1>5. Q.E.D.
+Proof: <1>4.
 :::
