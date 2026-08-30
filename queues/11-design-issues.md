@@ -126,8 +126,8 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
 - [x] 21. Small text below 14px. Sidebar 13.8px, TOC 13.4px, metadata labels 11.2px.
 
-  - Validity: FIXED. `subject-label` font-size bumped from `0.72rem` (11.5px) to `0.8rem` (12.8px).
-    Sidebar (`0.875rem` = 14px) was already at threshold. ETBook type scale now settled.
+  - Validity: FIXED. `subject-label` font-size bumped from `0.72rem` (11.5px) to `0.8rem` (12.8px). Sidebar (`0.875rem` = 14px) was already at threshold.
+    ETBook type scale now settled.
 
 - [x] 22. Sticky header ghosting.
   `backdrop-filter: blur(12px)` over 94% white.
