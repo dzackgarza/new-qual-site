@@ -5,4 +5,6 @@ order: 3
 
 # Covering spaces
 
-- [[topology/covering-spaces/covering-spaces|Covering spaces]], lifting, the classification, and deck groups.
+The classification of covers by subgroups of $\pi_1$, lifting criteria for maps and homotopies, deck transformation groups, and universal covers.
+
+See [[topology/covering-spaces/covering-spaces|Covering spaces (detailed)]].

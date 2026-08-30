@@ -5,4 +5,6 @@ order: 4
 
 # CW complexes
 
-- [[topology/cw-complexes/cw-complexes|CW complexes]], attaching maps and cell structures.
+Cell structures, attaching maps, cellular homology, and the chain complex. Also: simplicial complexes, Euler characteristic from cell counts, and constructing spaces with prescribed homology.
+
+See [[topology/cw-complexes/cw-complexes|CW complexes (detailed)]].
