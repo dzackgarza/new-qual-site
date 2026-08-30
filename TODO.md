@@ -1805,6 +1805,8 @@ problems:
 
 - [ ] Replace the 90 `Quals/` pages and the source-archive pages with it.
   These are the only pages this section removes, and their content survives: it is card data, rendered.
+  Complex analysis is done: 35 pages, 348 cards, each checked reachable from a chapter page before deletion (`00a38780b`). Two things that were not card data had to be moved first rather than deleted: the acknowledgements on `Quals/Preface`, which name four people, and eight exam PDF links that existed nowhere else and are now on the provenance of the collection card for each sitting.
+  Expect both in the other subjects.
 
 One caveat: the corpus has 668 distinct topic strings and 166 appear exactly once.
 A query needs a curated topic list, and that curation is reading, not scripting.
