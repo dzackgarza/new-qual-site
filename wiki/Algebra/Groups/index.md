@@ -5,15 +5,10 @@ order: 1
 
 # Groups
 
-Group theory for the algebra qual: subgroups and quotients, Lagrange, homomorphisms, actions, Sylow, and the standard families ($p$-groups, dihedral, symmetric, alternating).
+Subgroups and quotients, homomorphisms, and the standard families ($p$-groups, dihedral, symmetric, alternating).
+Lagrange, the orbit-stabilizer counting and Sylow are [[Algebra/group-actions/index|Group actions]].
 
 - [[Notation_Algebra|Notation]] and [[Groups_Basics|Basics]], where to start.
-
-- [[Actions|Actions]], the counting and orbit-stabilizer layer.
-
-- [[Groups_Counting_Actions|Counting theorems]], Lagrange and the order-divides-index consequences written out.
-
-- [[Sylow_Theorems|Sylow Theorems]].
 
 - [[Groups_Classification|Classification]].
 
