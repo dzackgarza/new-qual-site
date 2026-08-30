@@ -6,7 +6,7 @@ Source: `TODO.md` §4 "Repair rendered-page residue" Owner: [issue #41](https://
 
 - [ ] 5.1 Reproduce each remaining rendered-page defect.
 
-  - Validity: DONE. All 25 defects resolved: 15 fixed (code), 8 design-accepted, 1 deferred (defect 21). Queue 11 re-verified 2026-08-30.
+  - Validity: DONE. All 25 defects resolved: 17 fixed (code), 8 design-accepted. Queue 11 re-verified 2026-08-30.
 
 - [ ] 5.2 Repair one defect at a time.
 

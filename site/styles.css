@@ -176,14 +176,14 @@ mjx-container[display="true"] {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 52rem) minmax(11rem, 15rem);
+  grid-template-columns: minmax(0, 45rem) minmax(11rem, 15rem);
   gap: 4rem;
   width: min(100% - 3rem, 74rem);
   margin: 3.5rem auto 7rem;
 }
 
 .page-layout.subject-layout {
-  grid-template-columns: minmax(12rem, 16rem) minmax(0, 52rem) minmax(
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 45rem) minmax(
       10rem,
       13rem
     );
@@ -195,11 +195,11 @@ mjx-container[display="true"] {
    box does not release the grid track it sits in: a three-line page read as a
    third of a page beside a reserved void. Drop the track itself. */
 .page-layout:has(> .page-toc:empty) {
-  grid-template-columns: minmax(0, 52rem);
+  grid-template-columns: minmax(0, 45rem);
 }
 
 .page-layout.subject-layout:has(> .page-toc:empty) {
-  grid-template-columns: minmax(12rem, 16rem) minmax(0, 52rem);
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 45rem);
 }
 
 .subject-sidebar {
@@ -217,7 +217,7 @@ mjx-container[display="true"] {
   display: block;
   margin-bottom: 0.7rem;
   color: var(--ink);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
@@ -417,8 +417,7 @@ mjx-container[display="true"] {
   line-height: 1.4;
 }
 
-/* A footnote is a sidenote: the note sits in the margin beside the line that
-   raises it. Running text stops at the measure while the column runs to 52rem,
+/* A footnote is a sidenote: the note sits in the margin beside the line that    raises it. Running text stops at the measure while the column runs to 45rem,
    so the margin is the space the prose already leaves -- the note costs no
    width and moves nothing. Both the mark and the note draw their number from
    one counter, so nothing has to thread an index through the AST. */
@@ -1094,7 +1093,7 @@ div.panel > ul {
 @media (max-width: 64rem) {
   .page-layout.subject-layout {
     display: block;
-    width: min(100% - 2rem, 52rem);
+    width: min(100% - 2rem, 45rem);
     margin-top: 2.5rem;
   }
 
@@ -1171,7 +1170,7 @@ div.panel > ul {
 
   .page-layout {
     display: block;
-    width: min(100% - 2rem, 52rem);
+    width: min(100% - 2rem, 45rem);
     margin-top: 2.5rem;
   }
 
@@ -1194,7 +1193,7 @@ div.panel > ul {
   }
 
   .page-layout {
-    width: min(100% - 1.25rem, 52rem);
+    width: min(100% - 1.25rem, 45rem);
   }
 
   .listing-filters {

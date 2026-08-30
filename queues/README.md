@@ -32,7 +32,7 @@ Two kinds of queue files:
 | `08-owner-decisions.md` | 2 | 0 | none | Build exists; decisions unmade |
 | `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |
 | `10-close-roadmap.md` | 1 | 4 | #1 (CLOSED) | 10.3 contested |
-| `11-design-issues.md` | 1 | 24 | #41 surface | 24/25 resolved (15 fixed, 8 design-accepted, 1 deferred) |
+| `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
 
 ## How to use
 
