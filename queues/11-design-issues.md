@@ -69,7 +69,7 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
   Content column `52rem` ≈ 832px (`site/styles.css:155`).
 
   - Validity: REAL. `site/styles.css:155,162,174,178` confirmed `52rem` columns.
-    Defect stands.
+    Defect stands. Pending Tufte CSS adoption (full design system, not just column width).
 
 - [x] 11. Three type families compete.
   No `chtml: { scale, matchFontHeight }` in MathJax config.
