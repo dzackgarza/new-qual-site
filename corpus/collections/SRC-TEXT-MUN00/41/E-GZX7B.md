@@ -11,6 +11,10 @@ classification:
   - Compactness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -23,4 +27,12 @@ If $X_0$ is a component of $X$, then $X_0$ is locally compact and paracompact.
 Let $\mathcal{C}$ be a locally finite covering of $X_0$ by sets open in $X_0$ that have compact closures.
 Let $U_1$ be a nonempty element of $\mathcal{C}$, and in general let $U_n$ be the union of all elements of $\mathcal{C}$ that intersect $\overline{U}_{n-1}$.
 Show that $\overline{U}_n$ is compact, and the sets $U_n$ cover $X_0$.
+:::
+
+::: {.solution}
+<1>1. $X$ compact.
+Proof: Heine-Borel.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
