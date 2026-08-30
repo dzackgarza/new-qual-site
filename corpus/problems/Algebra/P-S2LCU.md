@@ -54,3 +54,11 @@ Let $L/K$ be a finite separable field extension. Prove that $L/K$ is normal if a
 <1>3. Conclusion:
     A finite separable extension $L/K$ is normal if and only if it is the splitting field of a polynomial over $K$. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
