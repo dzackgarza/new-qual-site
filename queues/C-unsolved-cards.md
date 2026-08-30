@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4587 problem and exercise cards have no solution section and no incoming
+4588 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1403
+- Exercises: 1404
 - Problems: 3184
-- Total: 4587
+- Total: 4588
 
-## Exercises (1403)
+## Exercises (1404)
 
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
 - [ ] E-AMD-PX2UMZEG — "Intersections, products, and sums of ideals are ideals"
@@ -1266,6 +1266,7 @@ commit, and writing the solution removes the line.
 - [ ] E-SS5.EX-8 — "SS 5.8: A cosine product for sin z over z"
 - [ ] E-SS5.EX-9 — "SS 5.9: A binary product expansion of 1/(1-z)"
 - [ ] E-SS5.PR-1 — "Zeros of a bounded holomorphic function satisfy the Blaschke condition"
+- [ ] E-SS5.PR-2 — "Infinite Blaschke products from sequences satisfying the Blaschke condition"
 - [ ] E-SS6.EX-10 — "SS 6.10: Mellin transforms of cosine and sine"
 - [ ] E-SS6.EX-11 — "The Fourier transform of e^{az} e^{-e^z} is the Gamma function"
 - [ ] E-SS6.EX-13 — "SS 6.13: Second derivative of log Gamma as a summed series"
