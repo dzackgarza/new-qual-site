@@ -1,17 +1,12 @@
 ---
-title: Groups
-order: 1
+title: Group notation and resources
+order: 15
 ---
 
-# Groups
+# Group notation and resources
 
-Subgroups and quotients, homomorphisms, and the standard families ($p$-groups, dihedral, symmetric, alternating).
-Lagrange, the orbit-stabilizer counting and Sylow are [[Algebra/group-actions/index|Group actions]].
+- [[Notation_Algebra|Notation]].
 
-- [[Notation_Algebra|Notation]] and [[Groups_Basics|Basics]], where to start.
+- [[References|Algebra group and ring theory resources]], a PDF packet covering groups and rings together.
 
-- [[Groups_Classification|Classification]].
-
-- [[Groups_Series|Series]], composition series and solvability.
-
-- [[References|Algebra Group and Ring Theory Resources]], a PDF packet covering groups and rings together.
+The subject itself is [[Algebra/groups/index|Groups]] and [[Algebra/group-actions/index|Group actions]].
