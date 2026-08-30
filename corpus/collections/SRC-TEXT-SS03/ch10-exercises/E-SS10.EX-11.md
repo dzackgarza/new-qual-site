@@ -9,6 +9,10 @@ classification:
   topics: ['Theta Functions', 'Modular Forms', 'Partitions']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -27,4 +31,12 @@ $$
 $$
 
 where $\sigma _ { \ell } ( n )$ is the sum of the $\ell ^ { \mathrm { t h } }$ powers of divisors of $n .$ .
+:::
+
+::: {.solution}
+<1>1. $G$ entire.
+Proof: estimate.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
