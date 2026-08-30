@@ -4,6 +4,7 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 ---
 
 # Complex Analysis Qual Prep Week 1: Preliminaries
+
 ## Topics
 
 - Complex arithmetic and geometry, conic section equations

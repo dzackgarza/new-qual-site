@@ -4,6 +4,7 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 ---
 
 # Real Analysis Qual Prep Week 1: Preliminaries
+
 ## Topics
 
 - Continuity and uniform continuity

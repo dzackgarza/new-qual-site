@@ -4,6 +4,7 @@ title: "Study Schedule and Topics"
 ---
 
 # Study Schedule and Topics
+
 [UGA List of topics](attachments/Complex_Analysis_Prelim_Review.pdf)
 
 ## Scheduling

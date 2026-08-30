@@ -7,6 +7,7 @@ aliases: [Algebra Fields Review 1]
 ---
 
 # Algebra Fields Review 1
+
 ## Review
 
 Exercises

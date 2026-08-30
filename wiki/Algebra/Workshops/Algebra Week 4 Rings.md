@@ -4,6 +4,7 @@ title: Algebra Qual Prep Week 4
 ---
 
 # Algebra Qual Prep Week 4
+
 - Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
 
 - Irreducible and prime elements, nilpotent, units

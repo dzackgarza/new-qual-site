@@ -4,6 +4,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 ---
 
 # Algebra Qual Prep Week 2: Finite Group Theory
+
 ## Topics
 
 - Recognition of direct products and semidirect products

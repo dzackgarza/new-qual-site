@@ -4,6 +4,7 @@ title: "Topology Qual Prep Week 1: Point-Set"
 ---
 
 # Topology Qual Prep Week 1: Point-Set
+
 - Definitions:
 
   - topologies,
