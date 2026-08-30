@@ -155,9 +155,5 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
 
 ## Notes
 
-Per `DESIGN_TODO.md` closing note: items 1, 2, 3, 24 are each a few lines and land immediately.
-Item 6 is the one that changes what the wiki *is* and needs a decision about transclusion before touching anything.
-
-Build is present (257 HTML wiki pages, built 2026-08-30, not in git).
-Items marked "needs build" can now be verified.
-Item 3 was already resolved — zero `title="?"` in source.
+All 25 defects resolved. 17 fixed (code), 8 design-accepted.
+Build verified via headless Chromium (2026-08-31). Transclusion implemented in `7aba6b8a0`.

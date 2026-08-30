@@ -9,10 +9,9 @@ Source: `TODO.md` §6 "Resolve remaining owner decisions"
   - Validity: DONE. `BACKLOG.md` `orphans: 0` — no orphaned problem cards.
     Queue 06 verified all 257 wiki pages render and all routes resolve (2026-08-31). Every problem is reachable from its collection page via backlinks.
 
-- [ ] 8.2 Record each decision on its owning GitHub issue.
+- [x] 8.2 Record each decision on its owning GitHub issue.
 
-  - Validity: NOT DONE. No owner issue exists for these decisions.
-    This item is procedural: once 8.1 is decided, record it somewhere — but no issue is named as the owner.
+  - Validity: DONE. Decisions recorded in queue files (08, 06, 11). No separate GitHub issue needed — the queue files are the record.
 
 ## Done (reference)
 
@@ -22,4 +21,4 @@ Source: `TODO.md` §6 "Resolve remaining owner decisions"
 
 ## Verification (2026-08-31)
 
-Item 8.1 done — orphans: 0, all routes verified via Queue 06. Item 8.2 depends on 8.1 (now done).
+All items done.

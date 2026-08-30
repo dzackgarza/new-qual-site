@@ -30,9 +30,16 @@ Source: `TODO.md` §4 "Complete the reader and exam generator" Owner: [issue #10
   - Validity: VERIFIED. Build has 257 wiki pages.
     Queue 06 confirmed rendering via headless Chromium: MathJax renders math, citations use bibliography system, collection links resolve, solutions render.
     `tikzcd` compiles to inline SVG (2026-08-31).- [x] 4.6 Decide the supported `tikzcd` boundary.
-  - Validity: NOT A DECISION. `tikzcd` renders all authored diagrams correctly — SVG output contains glyph paths for labels. If a diagram fails to render, that is a content defect to fix, not a policy boundary. Verified against build (2026-08-31).- [x] 4.7 Decide whether facets need separate typed controls.
-  - Validity: ALREADY IMPLEMENTED. Listing pages use `<select>` elements per facet axis (`data-facet` attributes in `site/app.js:97`). Filter axes include topic, area, kind, institution. URL-seeded and shareable. No additional decision needed.
+
+  - Validity: NOT A DECISION. `tikzcd` renders all authored diagrams correctly — SVG output contains glyph paths for labels.
+    If a diagram fails to render, that is a content defect to fix, not a policy boundary.
+    Verified against build (2026-08-31).- [x] 4.7 Decide whether facets need separate typed controls.
+
+  - Validity: ALREADY IMPLEMENTED. Listing pages use `<select>` elements per facet axis (`data-facet` attributes in `site/app.js:97`). Filter axes include topic, area, kind, institution.
+    URL-seeded and shareable.
+    No additional decision needed.
 
 ## Verification (2026-08-27)
 
-Issue #10 closed COMPLETED: "The reader, catalog browser, search, occurrence links, disclosure controls, and statements-only generator are present as one published product."All items done. Search ranking committed (`8a8d493d0`). Tikzcd renders all diagrams; facet controls already implemented.
+Issue #10 closed COMPLETED: "The reader, catalog browser, search, occurrence links, disclosure controls, and statements-only generator are present as one published product."All items done.
+Search ranking committed (`8a8d493d0`). Tikzcd renders all diagrams; facet controls already implemented.
