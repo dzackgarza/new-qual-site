@@ -322,5 +322,3 @@ $$
 $$
 
 > A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).
-
-# General Info / Tips / Techniques

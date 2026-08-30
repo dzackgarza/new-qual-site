@@ -4,7 +4,7 @@ order: 20
 
 # Algebra Books and Notes
 
-# Books
+## Books
 
 - Standards
 
@@ -22,7 +22,7 @@ order: 20
 
   - Lie groups and algebras, Chapters 7-10.
 
-# Notes
+## Notes
 
 [Review of definitions and theorems](attachments/Algebra_Notes.pdf)
 

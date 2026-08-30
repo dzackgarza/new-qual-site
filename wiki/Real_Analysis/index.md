@@ -50,7 +50,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 ## The syllabus
 
-## Undergraduate Analysis
+### Undergraduate Analysis
 
 > - **References**
 >   
@@ -74,7 +74,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Weierstrass Approximation Theorem
 
-## Measure and Integration
+### Measure and Integration
 
 > - **References**:
 >   
@@ -110,7 +110,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Fubini and Tonelli theorems
 
-## Function Spaces
+### Function Spaces
 
 > - **References**:
 >   
@@ -130,7 +130,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
   - $L^\infty$ as the dual of $L^1$
 
-## Hilbert space and $L^2$ spaces
+### Hilbert space and $L^2$ spaces
 
 > - **References**:
 >   

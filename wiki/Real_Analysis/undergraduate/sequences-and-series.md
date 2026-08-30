@@ -10,8 +10,6 @@ problems:
 
 # Sequences and Series
 
-## Sequences
-
 ## Sequences of functions
 
 [[D-S2YWR]]

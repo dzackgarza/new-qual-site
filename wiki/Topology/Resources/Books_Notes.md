@@ -4,7 +4,7 @@ order: 0
 
 # Topology References
 
-# Books
+## Books
 
 - [@Hat02]
 
@@ -14,7 +14,7 @@ order: 0
 
 - Greenberg and Harper: Algebraic Topology: A First Course
 
-# Notes
+## Notes
 
 [Cambridge Part II algebraic topology notes](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
 

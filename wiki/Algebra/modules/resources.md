@@ -2,17 +2,13 @@
 order: 90
 ---
 
-# Resources
-
-# Solutions
+# Module Resources
 
 ## Modules
 
 [ExerciseSet8f06a.pdf](attachments/ExerciseSet8f06a.pdf)
 
-# Problems
-
-# Notes / Reference Material
+## Notes / Reference Material
 
 [Linear algebra something](https://people.math.sc.edu/mcnulty/qfers/linalg.pdf)
 

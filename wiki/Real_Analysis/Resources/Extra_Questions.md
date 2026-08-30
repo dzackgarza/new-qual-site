@@ -6,15 +6,6 @@ order: 100001
 
 # May 2016 Qual
 
-##  (May 2016, \#1)
-##  (May 2016, \#2)
-
-## (May 2016, \#3)
-
-## (May 2016, \#4)
-##  (May 2016, \#5)
-##  (May 2016, \#6)
-
 ##  May 2016, 1 
 
 [[P-XEEUX]]
@@ -34,11 +25,6 @@ order: 100001
 [[P-BDFPC]]
 
 # Metric Spaces and Topology
-
-##  (May 2019, \#1)
-##  (June 2003, \#1b,c)
-##  (January 2009, \#4a)
-##  (January 2011 \#3a)
 
 ##  (May 2019, 1) 
 
@@ -60,15 +46,6 @@ order: 100001
 [[P-HOUMA]]
 
 # Sequences and Series
-
-## (June 2013 \#1a)
-
-## (January 2014 \#2)
-##  (May 2011 \#4a)
-
-## (June 2005 \#3b)
-
-## (January 2011 \#5)
 
 ## (June 2013 1a) 
 [[P-MCFQT]]
@@ -92,16 +69,7 @@ order: 100001
 
 [[P-GGJ5N]]
 
-# Continuity of Functions
-
 # Differential Calculus
-
-##  (June 2005 \#1a)
-##  (January 2006 \#2b)
-##  (June 2007 \#3a)
-##  (June 2008 \#3a)
-##  (January 2012 \#4b, extended)
-##  (June 2012 \#1a)
 
 ##  (June 2005 1a) 
 
@@ -153,13 +121,9 @@ order: 100001
 
 # Sequences and Series of Functions
 
-## (June 2010 \#6a)
-
 ## (June 2010 6a) 
 
 [[P-7P5F5]]
-
-##  (January 2008 5a) 
 
 ##  (January 2005 \#4, June 2010 \#6b)
 
@@ -168,8 +132,6 @@ order: 100001
 ##  (January 2005 4, June 2010 6b) 
 
 [[P-AITX4]]
-
-##  (January 2020 4a) 
 
 ##  (January 2005 \#3b)
 
@@ -187,19 +149,19 @@ order: 100001
 
 ## Bounded Variation {#bounded-variation .unnumbered}
 
-##  (January 2018) 
+### (January 2018)
 
 [[P-DX6EM]]
 
-##  (January 2007, 6a) 
+### (January 2007, 6a)
 
 [[P-I6PEO]]
 
-##  (January 2017, 2a) 
+### (January 2017, 2a)
 
 [[P-FTV4U]]
 
-##  (January 2020, 6a) 
+### (January 2020, 6a)
 
 [[P-UFRBU]]
 
@@ -207,20 +169,16 @@ order: 100001
 
 [[P-GR6TV]]
 
-##  (May 2017 6) 
+### (May 2017 6)
 
 [[P-US4ES]]
 
-##  (January 2017 3) 
+### (January 2017 3)
 
 [[P-U354O]]
 
 # Integral Calculus
 
-##  (January 2006 \#4b)
-##  (June 2005 \#1b)
-##  (January 2010 \#5)
-##  (January 2009 \#4b)
 ##  (June 2009 \#5b)
 
 [[P-3SSNK]]

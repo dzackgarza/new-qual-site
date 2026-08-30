@@ -4,7 +4,7 @@ order: 0
 
 # Complex Analysis Books and Notes
 
-# Books
+## Books
 
 - Ahlfors, *Complex Analysis*
 
@@ -37,7 +37,7 @@ order: 0
 
 - Conway
 
-# UGA Material
+## UGA Material
 
 - The Riemann Mapping Theorem: [[attachments/8.3 Riemann Mapping Theorem (1).pdf]]
 
@@ -45,7 +45,7 @@ order: 0
 
 - Further examples: [[attachments/8.1.2 Further Examples (1).pdf]]
 
-# Summaries
+## Summaries
 
 - [Very condensed summary with lots of explicit computations](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf) #resources/summaries
 
@@ -65,7 +65,7 @@ order: 0
 
 - [Cambridge notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis_trim.pdf) #resources/summaries
 
-# Course Notes
+## Course Notes
 
 - [Harvard 2021 Complex Analysis courses notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf) #resources/course_notes
 
@@ -79,6 +79,6 @@ order: 0
 
 - [[McMullen_-_Advanced_Complex_Analysis.pdf|McMulllen Advanced Complex Analysis]]
 
-# Fun Extras
+## Fun Extras
 
 [Good Paper: Hormander 1955](https://projecteuclid.org/download/pdf_1/euclid.acta/1485892151)

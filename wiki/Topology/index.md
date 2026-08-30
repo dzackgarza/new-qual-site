@@ -50,8 +50,6 @@ A great deal of credit goes to Mike Usher, who created the initial PDF of past U
 
 ## Syllabus
 
-## Syllabus
-
 Revised May 2006.
 
 > The weight of topics on the exam should be about 1/3 general topology and 2/3 algebraic topology.
@@ -86,7 +84,7 @@ Revised May 2006.
 
 - Lefschetz fixed point theorem [@Hat02, p. 179]; [@Mun84, sec. 22]
 
-## References
+### References
 
 - [@Mun00]
 

@@ -23,8 +23,6 @@ problems:
 
 # Calculus Preliminaries
 
-## Definitions
-
 ## Derivatives 
 
 [[PR-5ZSSQ]]

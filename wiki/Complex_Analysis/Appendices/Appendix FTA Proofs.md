@@ -4,8 +4,6 @@ order: 90
 
 # Proofs of the Fundamental Theorem of Algebra
 
-### Argument Principle
-
 ## Argument Principle 
 
 :::{.proof title="using the argument principle"}
@@ -22,8 +20,6 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 - Integrate term-by-term to get $N(0) = n$.
 
 :::
-
-### Rouche's Theorem
 
 ## Rouche's Theorem
 
@@ -60,8 +56,6 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::
 
-### Liouville's Theorem
-
 ## Liouville's Theorem
 
 :::{.proof}
@@ -95,8 +89,6 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::
 
-### Open Mapping Theorem
-
 ## Open Mapping Theorem
 
 :::{.proof title="using the Open Mapping theorem"}
@@ -114,8 +106,6 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 - So $p$ has a root.
 
 :::
-
-### Generalized Liouville
 
 ## Generalized Liouville
 

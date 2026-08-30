@@ -3,9 +3,10 @@ order: 90
 title: Algebra Group and Ring Theory Resources
 ---
 
-# Solutions
 
-# Notes / Reference
+# Algebra Group and Ring Theory Resources
+
+## Notes / Reference
 
 [Group Theory Review UCSD.pdf](attachments/groups.pdf)
 
@@ -15,7 +16,7 @@ Group Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.s
 
 Ring Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
 
-# Groups
+## Groups
 
 [Ch6Sltns.pdf](attachments/Ch6Sltns.pdf)
 
@@ -35,7 +36,7 @@ Ring Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.sc
 
 [Nilpotent Group Practice](attachments/solns7.pdf)
 
-# Rings
+## Rings
 
 [Ch12Sltns.pdf](attachments/Ch12Sltns.pdf)
 
@@ -43,7 +44,7 @@ Ring Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.sc
 
 [Ch14Sltns.pdf](attachments/Ch14Sltns.pdf)
 
-# Problems
+## Problems
 
 [Group Theory Midterm No Solns.pdf](attachments/Group_Theory_(No_Solns).pdf)
 

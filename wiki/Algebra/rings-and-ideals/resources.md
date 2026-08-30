@@ -2,8 +2,6 @@
 order: 90
 ---
 
-# Resources
+# Ring Resources
 
 [Field Theory Summary](attachments/fields.pdf) #resources/summaries
-
-## Problems

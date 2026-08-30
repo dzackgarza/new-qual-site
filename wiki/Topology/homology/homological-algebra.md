@@ -97,8 +97,6 @@ where $F$ denotes taking the free group.
 Every abelian groups has a resolution of this form and length 2.
 :::
 
-## Properties of Tensor Products
-
 ## Properties of Tensor
 
 - $A\tensor B \cong B\tensor A$

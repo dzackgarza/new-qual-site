@@ -512,8 +512,6 @@ Chapters 7-9 in D&F
 
 - Weierstrass product theorem
 
-## Topology
-
 ## Differential Topology
 
 - degree theory
