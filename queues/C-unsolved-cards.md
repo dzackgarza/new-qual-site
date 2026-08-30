@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4605 problem and exercise cards have no solution section and no incoming
+4596 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1414
-- Problems: 3191
-- Total: 4605
+- Exercises: 1412
+- Problems: 3184
+- Total: 4596
 
-## Exercises (1414)
+## Exercises (1412)
 
 - [ ] E-AMD-LSAG5UZT — "Groups of order $p^3$ have a normal subgroup of order $p^2$"
 - [ ] E-AMD-NY3QKBRB — "Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$"
@@ -531,7 +531,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-15-4 — "Factoring a matrix inverse through elementary matrices"
 - [ ] E-HK-15-6 — "Columns of a product are combinations of the left factor's columns"
 - [ ] E-HK-15-7 — "One-sided inverses of square matrices are two-sided"
-- [ ] E-HK-15-8 — "Which matrices are commutators?"
 - [ ] E-HK-1EVA — "Row-reduced $2 \times 2$ complex matrices with trace zero"
 - [ ] E-HK-21-1 — "$F^n$ is a vector space over $F$"
 - [ ] E-HK-21-2 — "A four-vector rearrangement identity in a vector space"
@@ -940,7 +939,6 @@ commit, and writing the solution removes the line.
 - [ ] E-KVFCT — "Sigma-compact regular spaces are paracompact"
 - [ ] E-KWBI9 — "Connected T1 spaces have positive dimension"
 - [ ] E-KY2W7 — "The dictionary order plane is metrizable"
-- [ ] E-KZPIX — "Countability axioms of the rationals in the box topology"
 - [ ] E-KZUFG — "Covering maps of topological groups lift the group structure"
 - [ ] E-L0BW8 — "The reduction algorithm applied to eight schemes"
 - [ ] E-L2EHD — "The Stone-Cech compactification of a discrete space"
@@ -1432,7 +1430,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3191)
+## Problems (3184)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -1821,7 +1819,6 @@ commit, and writing the solution removes the line.
 - [ ] P-8XT65 — "Jensen for $\log|f|$ on circles, and boundary zeros of a disk-holomorphic function have measure zero"
 - [ ] P-8XT66 — "Harnack compactness for positive harmonic functions normalized at a point"
 - [ ] P-8XT67 — "A self-map of the disk that agrees with holomorphic self-maps at every triple of points is holomorphic"
-- [ ] P-8XT68 — "Jensen's inequality for $\int e^{f}$ on $[0,1]$, with equality only for constants"
 - [ ] P-8XT69 — "A power series is injective if $\sum_{n\ge 2}n|a_n|\le|a_1|$"
 - [ ] P-8XT70 — "If $f$ and $f^2$ are harmonic then $f$ or $\overline{f}$ is holomorphic"
 - [ ] P-8XT71 — "A family of holomorphic functions with uniformly bounded $L^2$ disk integrals is locally bounded"
@@ -2200,7 +2197,6 @@ commit, and writing the solution removes the line.
 - [ ] P-AP4TX — "$\mathrm{Hom}_{\ZZ}(\ZZ_m,A)\cong A[m]$"
 - [ ] P-APA17A — "Jordan form from the rank sequence of a $10\times 10$ nilpotent matrix"
 - [ ] P-APA17B — "Simultaneous orthogonal diagonalization of commuting real symmetric matrices"
-- [ ] P-APA17C — "Pointwise larger Euclidean action implies strictly larger singular values"
 - [ ] P-APA17D — "Character table of the quaternion group $Q_8$"
 - [ ] P-APA17E — "Irreducible decomposition of cubic forms under $S_4$ and $\operatorname{End}_{S_4}(V)$"
 - [ ] P-APA17F — "Examples: real irreducible with non-scalar endomorphism; infinite indecomposable not irreducible"
@@ -2226,7 +2222,6 @@ commit, and writing the solution removes the line.
 - [ ] P-APA24J — "Generators of the invariant ring for a given subgroup of $\operatorname{GL}_3(\mathbb{C})$"
 - [ ] P-APAF04A — "State and prove the Cayley–Hamilton theorem"
 - [ ] P-APAF04B — "Real linear independence over $\mathbb{C}$; real eigenvalues of real matrices"
-- [ ] P-APAF04D — "Twisting irreducible characters by a linear character; pointwise similarity of representations"
 - [ ] P-APAF04E — "Group determinant via the regular representation and a circulant evaluation"
 - [ ] P-APAF04F — "Character values on conjugate partitions of $S_n$"
 - [ ] P-APAF06A — "Eigenpair of algebraic and geometric multiplicity one yields a complementary block form"
@@ -2909,7 +2904,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HCAO57 — "The elimination theorem"
 - [ ] P-HCAO6 — "Irreducible elements generate maximal ideals in a principal ideal domain"
 - [ ] P-HCAO7 — "Every finite integral domain is a field"
-- [ ] P-HCAO8 — "Rings in which every prime ideal is maximal"
 - [ ] P-HCAO9 — "A prime ideal with finite quotient is maximal"
 - [ ] P-HCAX1 — "A continuous isolated singularity is removable"
 - [ ] P-HCAX10 — "A compact-uniform limit of univalent functions can be constant"
@@ -3016,7 +3010,6 @@ commit, and writing the solution removes the line.
 - [ ] P-HLAG5 — "Images of circles $|z|=r$ and rays $\arg z=\theta_0$ under $z+1/z$"
 - [ ] P-HLKLH — "A holomorphic function with $|f|=1$ on the unit circle, or $|f|\geq 1$ with an interior point of modulus less than $1$, covers the disc"
 - [ ] P-HMX5O — "Induced representations"
-- [ ] P-HOBOM — "Existence of nonabelian groups of order $5$ and $6$"
 - [ ] P-HOIQ3 — "The one-point compactification of a locally compact Hausdorff space, and those of $(0,1)$ and $\RR^2$"
 - [ ] P-HOJTU — "Why $H_1$ of a point vanishes in the singular chain complex"
 - [ ] P-HPN6K — "$\ZZ$"
@@ -3944,7 +3937,6 @@ commit, and writing the solution removes the line.
 - [ ] P-T13A4 — "Local connectedness iff components of open sets are open; quotients preserve local connectedness"
 - [ ] P-T13B1 — "$S^2$ with poles identified is homotopy equivalent to $S^1\vee S^2$; its connected covering spaces"
 - [ ] P-T13B2 — "Seifert–van Kampen for wedge sums; presentation complex of $\langle a,b,c:a^2=1\rangle$"
-- [ ] P-T13B3 — "Simplicial homology of the $\Delta$-complex with one simplex in each dimension $\le 3$"
 - [ ] P-T13B4 — "Cell structure on $S^2$ with two 2-cells; homology of $S^n$ via a long exact sequence"
 - [ ] P-T14A2 — "$q\times\mathrm{id}_I$ is continuous; the cone $CX$ deformation-retracts to a point"
 - [ ] P-T14A3 — "Compact sets with noncompact intersection in the infinite ray topology on $\mathbb{R}$"
@@ -3972,7 +3964,6 @@ commit, and writing the solution removes the line.
 - [ ] P-T17Q1-3 — "Complete regularity checked on a subbasis, and products of completely regular spaces"
 - [ ] P-T17Q1-4 — "Proper maps between compact Hausdorff spaces are closed"
 - [ ] P-T17Q1-5 — "Fundamental group of a CW complex from 2-cells on the four-cycles of $K_{3,2}$"
-- [ ] P-T17Q1-6 — "Two distinct 2-sheeted covering spaces of the torus"
 - [ ] P-T17Q1-7 — "Schreier's theorem in rank one - an index-$k$ subgroup of $F_n$ is free of rank $k(n-1)+1$"
 - [ ] P-T17Q1-8 — "Cyclicity of homology groups of a Delta-complex with at most one simplex per dimension"
 - [ ] P-T17Q2-4 — "The finite-support points are dense in a countable product"

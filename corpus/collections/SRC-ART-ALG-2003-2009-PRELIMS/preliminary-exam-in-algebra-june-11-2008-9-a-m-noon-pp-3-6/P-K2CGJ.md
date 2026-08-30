@@ -31,9 +31,70 @@ c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H
 :::
 
 ::: {.solution}
-<1>1. $G$ Sylow.
-Proof: check.
+**Part (a).**
 
-<1>2. Q.E.D.
-Proof: <1>1.
+<1>1. Consider the group action of $G$ on itself by conjugation: $(g, y) \mapsto gyg^{-1}$.
+Proof: $(gh)y(gh)^{-1} = g(hyh^{-1})g^{-1}$ and $1y1^{-1} = y$.
+
+<1>2. The orbit of $x$ is the conjugacy class $x^G = \{gxg^{-1} : g \in G\}$, and the stabilizer of $x$ is the centralizer $Z_G(x) = \{g \in G : gxg^{-1} = x\}$.
+Proof: definitions of orbit and stabilizer for the conjugation action.
+
+<1>3. By the Orbit–Stabilizer Theorem, the map $\Phi: G/Z_G(x) \to x^G$ given by $g Z_G(x) \mapsto gxg^{-1}$ is a well-defined bijection.
+Proof: $g_1 Z_G(x) = g_2 Z_G(x) \iff g_2^{-1} g_1 \in Z_G(x) \iff (g_2^{-1} g_1)x(g_2^{-1} g_1)^{-1} = x \iff g_1 x g_1^{-1} = g_2 x g_2^{-1}$.
+
+<1>4. Therefore $|x^G| = |G / Z_G(x)| = [G : Z_G(x)]$.
+Proof: <1>3.
+
+**Part (b).**
+
+<1>5. For $H \le G$ and $x \in H$:
+\[
+Z_H(x) = \{h \in H : hxh^{-1} = x\} = \{g \in G : g \in H \text{ and } gxg^{-1} = x\} = H \cap Z_G(x).
+\]
+Proof: intersection of subsets in $G$.
+
+**Part (c).**
+
+<1>6. Assume $[G : H] = 2$ and $x \in H$.
+Proof: hypothesis.
+
+<1>7. Relate the indices of centralizers:
+<2>1. By (a), $|x^G| = [G : Z_G(x)]$ and $|x^H| = [H : Z_H(x)]$.
+Proof: (a) applied to $G$ and $H$.
+<2>2. By the tower law for subgroup indices:
+\[
+[G : Z_H(x)] = [G : H][H : Z_H(x)] = 2 |x^H|.
+\]
+Proof: multiplicativity of index and $[G : H] = 2$.
+<2>3. On the other hand:
+\[
+[G : Z_H(x)] = [G : Z_G(x)][Z_G(x) : Z_H(x)] = |x^G| [Z_G(x) : Z_H(x)].
+\]
+Proof: $Z_H(x) = H \cap Z_G(x) \le Z_G(x) \le G$.
+<2>4. Equating the two expressions for $[G : Z_H(x)]$ yields:
+\[
+2 |x^H| = |x^G| [Z_G(x) : Z_H(x)].
+\]
+Proof: <2>2 and <2>3.
+
+<1>8. Determine the possible values of $[Z_G(x) : Z_H(x)]$:
+<2>1. By the Second Isomorphism Theorem / product formula:
+\[
+[Z_G(x) : Z_H(x)] = [Z_G(x) : H \cap Z_G(x)] = [H Z_G(x) : H].
+\]
+Proof: $H \cap Z_G(x) = Z_H(x)$ from (b).
+<2>2. Since $H \le H Z_G(x) \le G$ and $[G : H] = 2$, the index $[H Z_G(x) : H]$ divides $[G : H] = 2$.
+Proof: tower law $[G : H] = [G : H Z_G(x)][H Z_G(x) : H]$.
+<2>3. Thus $[Z_G(x) : Z_H(x)] \in \{1, 2\}$.
+Proof: the only divisors of 2 are 1 and 2.
+
+<1>9. Evaluate $|x^H|$ for both cases:
+<2>1. **Case 1:** If $[Z_G(x) : Z_H(x)] = 2$ (equivalently $Z_G(x) \not\subseteq H$), then $2 |x^H| = 2 |x^G| \implies |x^H| = |x^G|$.
+Proof: <1>7 and <1>8.
+<2>2. **Case 2:** If $[Z_G(x) : Z_H(x)] = 1$ (equivalently $Z_G(x) \subseteq H$), then $2 |x^H| = |x^G| \implies |x^H| = \frac{1}{2} |x^G|$.
+Proof: <1>7 and <1>8.
+
+<1>10. Conclusion:
+Either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$. Q.E.D.
+Proof: <1>4, <1>5, and <1>9.
 :::

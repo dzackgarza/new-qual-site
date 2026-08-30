@@ -65,10 +65,3 @@ Determine the number of abelian groups of order $200$ up to isomorphism, and lis
     There are exactly $6$ abelian groups of order $200$ up to isomorphism ($p(3) \times p(2) = 3 \times 2 = 6$). Q.E.D.
 :::
 
-::: {.solution}
-<1>1. $G$ group.
-Proof: Sylow.
-
-<1>2. Q.E.D.
-Proof: <1>1.
-:::

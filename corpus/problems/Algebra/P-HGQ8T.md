@@ -54,10 +54,3 @@ Let $A, B \in M_n(R)$ be $n \times n$ matrices over a commutative ring $R$.
     $AB$ is symmetric iff $AB = BA$; $B B^t$ and $B + B^t$ are symmetric, while $B - B^t$ is skew-symmetric. Q.E.D.
 :::
 
-::: {.solution}
-<1>1. $G$ group.
-Proof: Sylow.
-
-<1>2. Q.E.D.
-Proof: <1>1.
-:::

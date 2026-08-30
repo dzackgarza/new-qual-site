@@ -76,10 +76,3 @@ audit:
     $A_5$ is simple via class size sums $\{1, 12, 12, 15, 20\}$, making $S_5$ non-solvable and preventing radical solutions for quintics. Q.E.D.
 :::
 
-::: {.solution}
-<1>1. $R$ ring.
-Proof: ideal.
-
-<1>2. Q.E.D.
-Proof: <1>1.
-:::

@@ -18,23 +18,51 @@ audit:
 ---
 
 ::: problem
-1. **Main Idea**: A linear homotopy projected onto the sphere works.
-
-Let $f: X \to S^n \subset \RR^{n+1}$ be an arbitrary map that fails to be surjective.
-Then, by definition, there is at least one point $s_0 \in S^n - f(X)$.
-
-Then, $\forall x\in X$, since $f(x) \neq s_0$, there is a unique geodesic $C$ connecting $f(x)$ and $s_0$.
-So a  variant of the straight line homotopy will work, by interpolating between $f(x)$ and $s_0$ along $C$.
-
-So let $H:X \cross I \to S^n$ be defined by $H(x, t) = P(ts_0  + (1-t)f(x))$, where $P: \mathbb{R}^{n+1} \to S^n$ is given by $P(x) = x/\norm{x}$.
-This is well defined, since the denominator is zero iff $f(x) = s_0$, which by assumption is not the case.
-This is a homotopy, since $H(x, 0) =P(f(x)) = f(x)$ (since $P$ fixes $S^n$) and $H(x, 1) = P(s_0) = s_0$ (since $s_0 \in S^n$).
+Let $f: X \to S^n$ be a continuous map that is not surjective.
+Prove that $f$ is nullhomotopic.
 :::
 
 ::: {.solution}
-<1>1. $X$ compact.
-Proof: Heine-Borel.
+<1>1. Since $f$ is not surjective, there exists a point $p \in S^n \setminus f(X)$.
+Proof: definition of non-surjectivity.
 
-<1>2. Q.E.D.
+<1>2. Let $s_0 = -p \in S^n$ be the antipodal point to $p$.
+Proof: definition of antipodal point on $S^n$.
+
+<1>3. For all $x \in X$ and all $t \in [0, 1]$, $(1 - t)f(x) + t s_0 \neq 0$ in $\mathbb{R}^{n+1}$.
+<2>1. Suppose $(1 - t)f(x) + t s_0 = 0$ for some $t \in [0, 1]$ and $x \in X$.
+Proof: hypothesis for contradiction.
+<2>2. If $t = 0$, then $f(x) = 0$, impossible since $f(x) \in S^n \implies \|f(x)\| = 1$.
+Proof: norm on $S^n$.
+<2>3. If $t = 1$, then $s_0 = 0$, impossible since $\|s_0\| = 1$.
+Proof: norm on $S^n$.
+<2>4. For $0 < t < 1$, $(1 - t)f(x) = -t s_0$. Taking norms gives $(1 - t) = t \implies t = 1/2$.
+Proof: $\|f(x)\| = \|s_0\| = 1$.
+<2>5. Then $f(x) = -s_0 = -(-p) = p$.
+Proof: $(1-t)f(x) = -t s_0$ with $t = 1/2$.
+<2>6. But $p \notin f(X)$, so $f(x) \neq p$, a contradiction.
 Proof: <1>1.
+<2>7. Thus $(1 - t)f(x) + t s_0 \neq 0$ for all $x \in X, t \in [0, 1]$.
+Proof: <2>2, <2>3, and <2>6.
+
+<1>4. Define $H: X \times [0, 1] \to S^n$ by
+\[
+H(x, t) = \frac{(1 - t)f(x) + t s_0}{\|(1 - t)f(x) + t s_0\|}.
+\]
+<2>1. $H$ is well-defined because the denominator is non-zero by <1>3.
+Proof: <1>3.
+<2>2. $H$ is continuous as a composition of continuous functions (vector addition, scalar multiplication, norm, and quotient).
+Proof: continuity of linear operations and norm on $\mathbb{R}^{n+1} \setminus \{0\}$.
+<2>3. For $t = 0$: $H(x, 0) = \frac{f(x)}{\|f(x)\|} = f(x)$ since $\|f(x)\| = 1$.
+Proof: $f(x) \in S^n$.
+<2>4. For $t = 1$: $H(x, 1) = \frac{s_0}{\|s_0\|} = s_0$ since $\|s_0\| = 1$.
+Proof: $s_0 \in S^n$.
+<2>5. Hence $H$ is a homotopy between $f$ and the constant map $x \mapsto s_0$.
+Proof: <2>1–<2>4.
+
+<1>5. Therefore $f$ is nullhomotopic.
+Proof: <1>4.
+
+<1>6. Q.E.D.
+Proof: <1>5.
 :::

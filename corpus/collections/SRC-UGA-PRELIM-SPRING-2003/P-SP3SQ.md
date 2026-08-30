@@ -49,10 +49,3 @@ $$\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}.$$
     By mathematical induction, the formula holds for all integers $n \ge 1$. Q.E.D.
 :::
 
-::: {.solution}
-<1>1. $f$ continuous.
-Proof: check.
-
-<1>2. Q.E.D.
-Proof: <1>1.
-:::
