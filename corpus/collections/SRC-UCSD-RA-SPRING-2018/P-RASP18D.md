@@ -10,6 +10,10 @@ classification:
   - Real Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -24,4 +28,21 @@ $$
 $$
 \lim_{\lambda \to \infty} \int_{\mathbb{R}} f(x) \varphi'(\lambda x)\,dx = 0.
 $$
+:::
+
+::: {.solution}
+<1>1. Integrate by parts: $\int f\varphi'(\lambda x)dx = -\lambda^{-1}\int f'(x)\varphi(\lambda x)dx$.
+Proof: $u=f$, $dv=\varphi'(\lambda x)dx$.
+
+<1>2. Bound by $M\|f'\|_1/\lambda$.
+Proof: $|\varphi|\le M$.
+
+<1>3. For $L^1$, approximate by $C_c^1$ and use density.
+Proof: $C_c^1$ dense in $L^1$, uniform bound.
+
+<1>4. Hence limit $0$.
+Proof: <1>3.
+
+<1>5. Q.E.D.
+Proof: <1>4.
 :::
