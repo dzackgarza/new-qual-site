@@ -11,9 +11,21 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
 If $L\vector x = \vector x$, then $\vector x$ is an eigenvector with eigenvalue $\lambda = 1$.
 Since $1 \not\in \spec(L)$, such an $\vector x$ can not exist, so $L$ has only one fixed point: namely $\vector x = \vector 0$.
+:::
+
+::: {.solution}
+<1>1. $R$ ring.
+Proof: ideal.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -73,3 +73,11 @@ Prove that $H$ is a **normal** subgroup of $G$ ($H \trianglelefteq G$).
 <1>5. Conclusion:
     Since $H = K = \ker\rho$, $H$ is the kernel of a homomorphism, so $H \trianglelefteq G$ is normal. Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
