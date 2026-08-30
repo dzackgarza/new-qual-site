@@ -1279,7 +1279,9 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 ### Dead content
 
-- [ ] Resolve the 167 empty headings.
+- [x] Resolve the 167 empty headings.
+  The subject authoring removed 117 by deleting the pages that carried them; the remaining 52 are resolved in `caaf57d5b`, each read and dispositioned.
+  Zero empty headings remain in the wiki.
   An empty heading is a section with nothing under it, which is either a heading list left above the content or a problem named and never transcribed.
   Read each one and either write the section or remove the heading; the two are not distinguishable from the file.
   Several qual pages carry an old, fully-empty heading list, then repeat the same exams under a second naming scheme where the content actually lives.
@@ -1288,7 +1290,8 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   Same shape in `Undergraduate Analysis.md` (17), `Integrals Convergence.md` (11), `Integration and L1.md` (9), `Functional Analysis.md` (9), `Resources/Extra_Questions.md` (30), and the four `0*_20*_Fall_Exam*.md` files.
   `just doctor` does not catch this — it checks empty *bodies*, not empty *sections*.
 
-- [ ] Remove the placeholders and notes-to-self published as reader copy.
+- [x] Remove the placeholders and notes-to-self published as reader copy.
+  Done in `c6f28e3a9`. The `?` in the notation table is the essential supremum, the `???` proof is written out from the identity principle, and the two exclamations are technical prose.
   `Archives/Tracking/Complex Qual Progress.md:11` — the entire body under `# Qual Problems ToDo` is the words **"See and"**. The link was dropped.
   Same file, `:15` — "Note: linking directly to sections doesn't seem to work yet.
   Just ctrl-F and search the page."
@@ -1296,7 +1299,8 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   `Real_Analysis/Integration/Lp.md:46` — a `.proof` block whose whole body is `?`; `:176` — `\converges{??}\to 0`. `Complex_Analysis/Appendices/Appendix FTA Proofs.md:141` — `???`. `Algebra/Fields/Galois_Theory_Computations.md:30` — a stated fact ending "**(I think)**". `Complex_Analysis/Basics/Tips_Techs.md:34` — "Casorati-Weierstrass Theorem (no page yet)"; `:170` — "put it in the denominator!
   No one can stop you!"
 
-- [ ] Merge the duplicated content inside a single page, where reading both proves it is duplicated.
+- [x] Merge the duplicated content inside a single page, where reading both proves it is duplicated.
+  Done in `c6f28e3a9`: the two notation tables were the same seven rows and the fuller one survives; the repeated advice bullet and the unbalanced brace are fixed.
   A shared name is not evidence: six complex analysis pages are titled Schwarz and they are three different subjects.
   `Real_Analysis/Basics/Notation.md` and `Notation_Real_Analysis.md` are the same 7-row table in the same directory.
   One is titled "Sup-norm notation", which describes only its first two rows.
@@ -1305,7 +1309,9 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 ### Private state on a public site
 
-- [ ] Take the private study state off the public reference site.
+- [x] Take the private study state off the public reference site.
+  Done in `c6f28e3a9`: the `Archives/Tracking` folder is deleted, along with 112 reading-progress checkboxes and 42 Obsidian tags.
+  What those tables tracked is now recorded by the corpus and measured by the exam listing.
   `Archives/Tracking/Prelims_Exam_tracking.md` is one person's 2014–2016 to-dos ("Go through Pugh", "Find a way to consistently + quickly remember the direction of injectivity"). It contains no tracking.
   Four tracking tables have a column **"Imported to MakeMeAQual"** — pipeline bookkeeping for a differently-named project.
   112 `- [ ]` / `- [x]` reading-progress checkboxes, mostly in `Complex_Analysis/Resources/Solutions.md` (45) and `Prelim/Prelim Resources.md` (41). That file also carries a trailing "Really well organized!"
@@ -1313,7 +1319,8 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
 
 ### Organization
 
-- [ ] Make the subject entry pages agree on what they are.
+- [x] Make the subject entry pages agree on what they are.
+  Settled by the section 11 authoring: all six subject indexes now open with what the exam asks, as a table routing each recurring question to the page that decides it, then the chapters in dependency order, then the syllabus.
   Six subjects, five shapes.
   `Real_Analysis/index.md` and `Complex_Analysis/index.md` both use the H1 **"Qualifying Exam Syllabus"** — neither names its subject.
   Both, plus `Algebra/index.md`, link to none of their own child pages, so landing on a subject gives no navigation.
@@ -1323,14 +1330,17 @@ Evidence: a read of `wiki/` (367 pages) on 2026-08-30, with each claim checked a
   Decide that shape once and give all six the same one.
   The syllabus is a page of its own.
 
-- [ ] File the content sitting under a heading that names nothing.
+- [x] File the content sitting under a heading that names nothing.
+  Most were filed by the section 11 authoring.
+  The rest are done in `c6f28e3a9`: two appendix pages titled `Unsorted` are named for what they hold, and five fragments are filed under the subjects they belong to.
   Renaming a section `Unsorted` to something else moves no mathematics.
   Each fragment needs the page it belongs on, which is the authoring in section 11. Six pages named `Preface`: four are acknowledgements, one is a Folland exercise list with no H1, one (`Topology/Basics/Preface.md`) is a full notation-and-background chapter.
   ~20 published sections named "Unsorted" or "Misc", including whole pages (`Complex_Analysis/Quals/Unsorted.md`, `Topology/Appendices/Appendix.md` → "Appendix: Unsorted Stuff"). `Archives/Tracking/index.md` lists 7 links for 5 subjects: Complex and Real each have two rival tracking pages, and the list mixes labeled links with unlabeled ones, so the duplicates read as separate topics.
 
 ### Content errors
 
-- [ ] Correct two content errors worth fixing regardless.
+- [x] Correct two content errors worth fixing regardless.
+  Done in `c6f28e3a9`: the topology notation table had its two definitions swapped, and the Folland exercise lists ran together with an unclosed parenthesis.
   `Topology/Basics/Preface.md:36-37` — the notation table has the definitions **swapped**: it calls $G=1$ "the trivial abelian group" and $G=0$ "the trivial nonabelian group".
   `Real_Analysis/Resources/Preface.md` — the Folland exercise lists run together with no separators and an unclosed paren: "...9 (in 9(c) you can use Exercise 1.29 without proof Exercises 10, 12, 13...". Unreadable as written.
   Also broken by paste-through: `Algebra/index.md` bullets end in stray commas and `⇒?`, use "Eigenstuff" / "$M/IM$ stuff" / "Bonus optional stuff", break list nesting after "such as:", and weeks 10–13 of the "study path" are empty workshop scheduling ("Buffer", "Buffer", "No meeting (Mock AMS)").
