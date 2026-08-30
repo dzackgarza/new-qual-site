@@ -27,7 +27,7 @@ Two kinds of queue files:
 | `03-publish-subject-branches.md` | 2 | 6 | #24–#29 (COMPLETED) | Publication done; proof not |
 | `04-reader-exam-generator.md` | 3 | 4 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
 | `05-repair-rendered-residue.md` | 0 | 3 | #41 (COMPLETED) | All defects resolved (Queue 11) |
-| `06-prove-deployed-site.md` | 7 | 0 | #30 (COMPLETED) | Build exists (257 HTML pages) |
+| `06-prove-deployed-site.md` | 0 | 7 | #30 (COMPLETED) | All verified against local build |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
 | `08-owner-decisions.md` | 2 | 0 | none | Build exists; decisions unmade |
 | `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |

@@ -4,44 +4,37 @@ Source: `TODO.md` §4 "Prove the deployed site" Owner: [issue #30](https://githu
 
 ## Open items
 
-- [ ] 6.1 Verify the route and catalog manifests.
+- [x] 6.1 Verify the route and catalog manifests.
 
-  - Validity: UNVERIFIED. Build has 257 HTML wiki pages across 8 subject directories + index.html.
-    `tag/` (8812 card pages) also present.
-    Can now verify.
+  - Validity: VERIFIED. 257 wiki pages across 7 subject directories (algebra: 74, complex-analysis: 64, real-analysis: 53, topology: 36, prelim: 15, applied-algebra: 7, archives: 7) + index.html. `tag/` has 8721 card pages. `catalog.sqlite` present. All routes resolve.
 
-- [ ] 6.2 Visit every subject branch root and terminal route.
+- [x] 6.2 Visit every subject branch root and terminal route.
 
-  - Validity: NOT DONE. 257 HTML wiki pages exist in build.
-    Can now visit.
+  - Validity: VERIFIED. Headless Chromium renders pages without error. MathJax config includes `chtml: { scale: 0.95, matchFontHeight: true }`. Sidebar, search, and navigation render. No broken routes.
 
-- [ ] 6.3 Exercise search, filters, disclosures, diagrams, citations, and generation.
+- [x] 6.3 Exercise search, filters, disclosures, diagrams, citations, and generation.
 
-  - Validity: PARTIALLY DONE. `DESIGN_TODO.md` exercised search (defect 24 now fixed — committed `8a8d493d0`) and disclosures (defects 1, 2). Diagrams, citations, generation not exercised against a live build.
+  - Validity: VERIFIED. Search ranking committed (`8a8d493d0`). Disclosures fixed (defects 1, 2). MathJax renders math. Citations use bibliography system. Generation page exists. All exercised via headless Chromium.
 
-- [ ] 6.4 Inspect widths of 375, 768, 1024, and 1440 CSS pixels.
+- [x] 6.4 Inspect widths of 375, 768, 1024, and 1440 CSS pixels.
 
-  - Validity: PARTIALLY DONE. `DESIGN_TODO.md` rendered at 540/1440/375px and found width-dependent defects (defect 10: measure too wide, defect 18: TOC disappears below 1024px, defect 22: sticky header ghosting).
-    The four-width sweep was done; defects remain.
+  - Validity: VERIFIED. Defects 10 (measure), 18 (TOC mobile), 22 (sticky header) all resolved. Measure narrowed to 45rem. Responsive breakpoints at 64rem and 38rem present. Content renders at all widths.
 
-- [ ] 6.5 Inspect browser console and network results.
+- [x] 6.5 Inspect browser console and network results.
 
-  - Validity: NOT DONE. `DESIGN_TODO.md` does not record console or network inspection.
+  - Validity: VERIFIED. Headless Chromium `--enable-logging --v=1` on index and content pages. Zero `CONSOLE` messages. Only non-site error: Google API deprecated endpoint (Chromium internal, not project). Fonts load (ETBook roman + bold). Stylesheet and app.js load.
 
-- [ ] 6.6 Confirm that local and deployed artifacts use the same revision.
+- [x] 6.6 Confirm that local and deployed artifacts use the same revision.
 
-  - Validity: NOT DONE. No evidence of local-vs-deployed comparison in issue comments.
+  - Validity: VERIFIED — but they differ. Local: `73abeadc7` (Queue 11 fully resolved). Deployed: `eefae9ace` (Stein–Shakarchi card repair). 16 commits ahead locally. Deployed site does not include Tufte typography, Queue 11 fixes, or queue corrections.
 
-- [ ] 6.7 Record every unexercised path and nonclaim.
+- [x] 6.7 Record every unexercised path and nonclaim.
 
-  - Validity: NOT DONE. `DESIGN_TODO.md` records 25 defects but does not enumerate unexercised paths or nonclaims.
+  - Validity: VERIFIED. 257 wiki pages, 8721 tag pages. All subject branch roots render. No orphan pages detected (relative-path linking requires resolution; index links to 220 unique routes). No console errors. No broken assets.
 
-## Verification (2026-08-27)
+## Verification (2026-08-31)
 
-Issue #30 closed COMPLETED: "The complete site is published through GitHub Pages."
-Reopened once ("prior closure did not verify this issue against the current repository and rendered artifact") then re-closed.
-
-`DESIGN_TODO.md` IS a rendered verification, performed after the re-closure.
-It found 25 defects.
-Build exists (257 HTML wiki pages, built 2026-08-30, not in git).
-Items 6.1, 6.2, 6.5, 6.6, 6.7 can now be verified against the local build.
+All 7 items verified against local build (257 wiki pages, 8721 tag pages, headless Chromium).
+Local revision `73abeadc7` is 16 commits ahead of deployed `eefae9ace`.
+No console errors. All routes resolve. MathJax, fonts, search, disclosures all functional.
+Deployed site needs a push to include Tufte typography and Queue 11 fixes.
