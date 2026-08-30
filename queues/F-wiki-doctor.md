@@ -1,6 +1,10 @@
-# Document queue F: Wiki doctor findings
+# Document queue F: Wiki doctor findings — STALE
 
 Source: `just doctor`, against 367 wiki pages.
+
+**All 59 items are stale.** They reference old wiki paths (`wiki/Algebra/`, `wiki/Complex_Analysis/`, etc.) that no longer exist. The wiki was restructured to lowercase (`wiki/algebra/`, `wiki/complex-analysis/`, etc.).
+
+This queue needs to be regenerated from `just doctor` against the current wiki structure before any items can be acted on.
 
 See `AGENTS.md`, "Two concerns, and the test that separates them".
 A checker measures the file. What the file should say is a reading.

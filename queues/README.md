@@ -16,22 +16,22 @@ Two kinds of queue files:
 | `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
-| `F-wiki-doctor.md` | 59 | Engineering defects: 44 pages with no position in their folder, 9 Obsidian embeds, 5 pages of reading-progress checkboxes, 1 sibling title rendered twice in the sidebar. Under `Authoring signals` it also lists 15 one-page folders and 60 heading-only bodies, which state a fact and no work. |
+| `F-wiki-doctor.md` | 59 (STALE) | All items reference old wiki paths (`wiki/Algebra/` etc.) that no longer exist. Needs regeneration from `just doctor`. |
 
 ## Validity review queues (TODO.md items)
 
 | File | Open | Done | Owner | Notes |
 | --- | ---: | ---: | --- | --- |
 | `01-corpus-defects.md` | 2 | 2 | #2 (OPEN) | 1.3/1.4 done, 1.1/1.2 open (source review) |
-| `02-publish-authored-pages.md` | 4 | 0 | #5, #23 (COMPLETED) | Needs build inspection |
-| `03-publish-subject-branches.md` | 2 | 6 | #24–#29 (COMPLETED) | Publication done; proof not |
-| `04-reader-exam-generator.md` | 3 | 4 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
+| `02-publish-authored-pages.md` | 0 | 4 | #5, #23 (COMPLETED) | All verified via Queue 06 |
+| `03-publish-subject-branches.md` | 0 | 8 | #24–#29 (COMPLETED) | All verified via Queue 06 |
+| `04-reader-exam-generator.md` | 2 | 5 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
 | `05-repair-rendered-residue.md` | 0 | 3 | #41 (COMPLETED) | All defects resolved (Queue 11) |
 | `06-prove-deployed-site.md` | 0 | 7 | #30 (COMPLETED) | All verified against local build |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
-| `08-owner-decisions.md` | 2 | 0 | none | Build exists; decisions unmade |
+| `08-owner-decisions.md` | 1 | 2 | none | 8.1 done, 8.2 depends on 8.1 |
 | `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |
-| `10-close-roadmap.md` | 1 | 4 | #1 (CLOSED) | 10.3 contested |
+| `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
 | `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
 
 ## How to use

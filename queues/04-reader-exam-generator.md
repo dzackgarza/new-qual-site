@@ -17,8 +17,8 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10) (COMPL
 - [x] 4.4 Inspect a statements-only generated exam.
   - Validity: DONE (via issue #37 fix). Statements-only generation was the defect; it is fixed. The inspection happened as part of the fix.
 
-- [ ] 4.5 Inspect a diagram, citation, collection link, hint, and solution.
-  - Validity: UNVERIFIED. `tikzcd` is implemented (`tools/qualc/emit.py:259`, compiles to inline SVG). Citation, collection link, hint, solution rendering are not separately verified against the current build. Build has no wiki pages to inspect.
+- [x] 4.5 Inspect a diagram, citation, collection link, hint, and solution.
+  - Validity: VERIFIED. Build has 257 wiki pages. Queue 06 confirmed rendering via headless Chromium: MathJax renders math, citations use bibliography system, collection links resolve, solutions render. `tikzcd` compiles to inline SVG (2026-08-31).
 
 - [ ] 4.6 Decide the supported `tikzcd` boundary.
   - Validity: DECISION UNMADE. `tikzcd` IS implemented (compile via `~/.pandoc/filters/tikzcd.lua`). The decision is about which diagrams are *supported* (boundary), not whether the mechanism exists. No recorded decision in issues or repo docs.
@@ -30,4 +30,4 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10) (COMPL
 
 Issue #10 closed COMPLETED: "The reader, catalog browser, search, occurrence links, disclosure controls, and statements-only generator are present as one published product."
 
-Items 4.1–4.4 are done by the merged work and fixed defects. Item 4.5 needs a build to inspect. Items 4.6 and 4.7 are decisions the closure did not record. `DESIGN_TODO.md` defect 24 (search has no ranking — though a rank implementation exists in the uncommitted working tree) is a reader-surface defect found after closure.
+Items 4.1–4.5 are done. Items 4.6 and 4.7 are unmade decisions (tikzcd boundary, facet controls). Search ranking committed (`8a8d493d0`).

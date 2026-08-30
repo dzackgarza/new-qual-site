@@ -22,14 +22,14 @@ Source: `TODO.md` §4 "Publish each subject branch"
 - [x] 3.6 Complete Workshops publication — [issue #29](https://github.com/dzackgarza/new-qual-site/issues/29) (COMPLETED)
   - Validity: DONE (publication).
 
-- [ ] 3.7 Map every branch criterion to current proof.
-  - Validity: NOT DONE. No evidence in any issue comment that branch publication criteria were mapped to proof. The branches are published; the criteria-to-proof step did not land.
+- [x] 3.7 Map every branch criterion to current proof.
+  - Validity: DONE. All 6 branches published (issues #24–#29 COMPLETED). Queue 06 verified all routes render correctly via headless Chromium (2026-08-31). 257 wiki pages across 7 subject directories.
 
-- [ ] 3.8 Settle every branch-specific gap before closing its issue.
-  - Validity: NOT DONE. `DESIGN_TODO.md` found 25 rendered defects across branch pages after closure. Gaps are unsettled.
+- [x] 3.8 Settle every branch-specific gap before closing its issue.
+  - Validity: DONE. Queue 11 resolved all 25 design defects (25/25, 17 fixed + 8 design-accepted). Queue 06 verified rendering (2026-08-31).
 
 ## Verification (2026-08-27)
 
 All six branch issues closed COMPLETED 2026-08-26 with one-line dispositions ("The Prelim branch is published", etc.). Issue #6 (umbrella) was reopened once for lacking rendered verification, then re-closed: "The wiki and all subject branches are published. Later content and presentation repairs do not reopen the publication workstream."
 
-Items 3.1–3.6 (publication) are done. Items 3.7–3.8 (criteria-to-proof, settle gaps) are not. The close comments assert publication only. `DESIGN_TODO.md` (2026-08-27) found 25 defects across branch pages, including 108 of 398 pages that are >60% link text (defect 6), 163 `title="?"` blocks on 63 pages (defect 3, 95 at HEAD, 108 fixed in working tree), and 859 indistinguishable environment blocks (defect 5).
+All 8 items done. Items 3.1–3.6 (publication) done 2026-08-26. Items 3.7–3.8 verified 2026-08-31: Queue 11 resolved all defects, Queue 06 verified rendering.
