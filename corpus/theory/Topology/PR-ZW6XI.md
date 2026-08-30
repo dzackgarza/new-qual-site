@@ -10,7 +10,9 @@ classification:
   - Surfaces
   - Quotient Spaces
   - Classification
-relations: []
+relations:
+- kind: variant-of
+  target: PR-JL5JP
 review: draft
 ---
 

@@ -9,7 +9,9 @@ classification:
   topics:
   - Argument Principle
   - Winding Number
-relations: []
+relations:
+- kind: variant-of
+  target: T-52HK6
 review: draft
 ---
 

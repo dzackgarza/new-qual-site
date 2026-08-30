@@ -11,7 +11,9 @@ classification:
   topics:
   - Cauchy Estimates
   - Cauchy Integral Formula
-relations: []
+relations:
+- kind: variant-of
+  target: FT-5MASA
 review: draft
 ---
 

@@ -9,7 +9,9 @@ classification:
   topics:
   - Winding Number
   - Contour Integration
-relations: []
+relations:
+- kind: variant-of
+  target: D-PJ7JM
 review: draft
 ---
 

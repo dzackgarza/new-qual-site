@@ -9,7 +9,9 @@ classification:
   topics:
   - Characteristic
   - Rings
-relations: []
+relations:
+- kind: variant-of
+  target: D-JNCUB
 review: draft
 ---
 

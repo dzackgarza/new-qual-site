@@ -9,7 +9,9 @@ classification:
   topics:
   - Orbit-Stabilizer
   - Group Actions
-relations: []
+relations:
+- kind: variant-of
+  target: T-QYDVH
 review: draft
 ---
 

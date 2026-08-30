@@ -9,7 +9,9 @@ classification:
   topics:
   - Green's Theorem
   - Integrals
-relations: []
+relations:
+- kind: variant-of
+  target: T-4M73O
 review: draft
 ---
 

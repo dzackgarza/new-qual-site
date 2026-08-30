@@ -9,7 +9,9 @@ classification:
   topics:
   - Integrals
   - Measure Theory
-relations: []
+relations:
+- kind: variant-of
+  target: PR-HLPMX
 review: draft
 ---
 

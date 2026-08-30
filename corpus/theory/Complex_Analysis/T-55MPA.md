@@ -10,7 +10,9 @@ classification:
   - Riemann Mapping Theorem
   - Conformal Maps
   - Biholomorphisms
-relations: []
+relations:
+- kind: variant-of
+  target: T-4MDS6
 review: draft
 ---
 

@@ -12,7 +12,9 @@ classification:
   - Continuity
   - Counterexamples
   - Euclidean Spaces
-relations: []
+relations:
+- kind: variant-of
+  target: FE-BGEZL
 review: draft
 ---
 

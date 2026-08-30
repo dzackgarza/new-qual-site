@@ -10,7 +10,9 @@ classification:
   - Dual Spaces
   - Tensor Products
   - Linear Algebra
-relations: []
+relations:
+- kind: variant-of
+  target: PR-LPJLD
 review: draft
 ---
 

@@ -11,7 +11,9 @@ classification:
   topics:
   - Rings
   - Integral Domains
-relations: []
+relations:
+- kind: variant-of
+  target: D-4I3SL
 review: draft
 ---
 

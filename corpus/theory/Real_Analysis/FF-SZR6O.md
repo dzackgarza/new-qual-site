@@ -11,7 +11,9 @@ classification:
   topics:
   - Density
   - Countability
-relations: []
+relations:
+- kind: variant-of
+  target: FD-QEQIY
 review: draft
 ---
 

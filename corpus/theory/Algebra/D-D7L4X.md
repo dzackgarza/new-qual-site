@@ -10,7 +10,9 @@ classification:
   - Subgroup Series
   - Nilpotent Groups
   - Commutators
-relations: []
+relations:
+- kind: variant-of
+  target: D-BGNME
 review: draft
 ---
 

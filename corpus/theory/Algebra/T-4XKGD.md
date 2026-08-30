@@ -10,7 +10,9 @@ classification:
   - Sylow Theory
   - Centralizers and Normalizers
   - Normal Subgroups
-relations: []
+relations:
+- kind: variant-of
+  target: L-6QBOJ
 review: draft
 ---
 

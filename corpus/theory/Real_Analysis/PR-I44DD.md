@@ -8,7 +8,9 @@ classification:
   - real-analysis
   topics:
   - Measure Theory
-relations: []
+relations:
+- kind: variant-of
+  target: PR-552IH
 review: draft
 ---
 
@@ -20,7 +22,7 @@ review: draft
 
 - Sums and differences of measurable functions are measurable,
 
-- Cones $F(x,y) = f(x)$ are measurable,
+- Cylinders $F(x,y) = f(x)$ are measurable,
 
 - Compositions $f\circ T$ for $T$ a linear transformation are measurable,
 

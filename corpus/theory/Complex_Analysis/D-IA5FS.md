@@ -10,7 +10,9 @@ classification:
   - Argument Principle
   - Poles
   - Zeros
-relations: []
+relations:
+- kind: variant-of
+  target: D-WHYOA
 review: draft
 ---
 

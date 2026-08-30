@@ -9,7 +9,9 @@ classification:
   topics:
   - Cauchy Integral Formula
   - Contour Integration
-relations: []
+relations:
+- kind: variant-of
+  target: T-LA2UI
 review: draft
 ---
 

@@ -9,7 +9,9 @@ classification:
   topics:
   - Compactness
   - Hausdorff Spaces
-relations: []
+relations:
+- kind: variant-of
+  target: D-MQSFD
 review: draft
 ---
 

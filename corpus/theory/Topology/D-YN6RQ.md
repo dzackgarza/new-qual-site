@@ -8,7 +8,9 @@ classification:
   - topology
   topics:
   - Connectedness
-relations: []
+relations:
+- kind: variant-of
+  target: D-VZFJQ
 review: draft
 ---
 

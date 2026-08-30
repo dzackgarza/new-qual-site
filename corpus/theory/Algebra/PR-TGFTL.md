@@ -10,7 +10,9 @@ classification:
   - Dual Spaces
   - Trace
   - Linear Algebra
-relations: []
+relations:
+- kind: variant-of
+  target: PR-GXII2
 review: draft
 ---
 

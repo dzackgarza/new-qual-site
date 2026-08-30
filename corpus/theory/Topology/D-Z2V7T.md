@@ -9,7 +9,9 @@ classification:
   topics:
   - Homological Algebra
   - Category Theory
-relations: []
+relations:
+- kind: variant-of
+  target: D-S7L6M
 review: draft
 ---
 

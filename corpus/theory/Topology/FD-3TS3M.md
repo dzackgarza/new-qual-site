@@ -11,7 +11,9 @@ classification:
   topics:
   - Point-Set Topology
   - Countability
-relations: []
+relations:
+- kind: variant-of
+  target: D-E2NWN
 review: draft
 ---
 

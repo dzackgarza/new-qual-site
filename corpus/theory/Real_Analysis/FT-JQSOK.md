@@ -12,7 +12,9 @@ classification:
   - Arzelà-Ascoli
   - Equicontinuity
   - Uniform Convergence
-relations: []
+relations:
+- kind: variant-of
+  target: FF-XZGIY
 review: draft
 ---
 

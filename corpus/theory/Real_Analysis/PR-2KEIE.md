@@ -9,7 +9,9 @@ classification:
   topics:
   - L¹
   - Measure Theory
-relations: []
+relations:
+- kind: variant-of
+  target: PR-26CWE
 review: draft
 ---
 

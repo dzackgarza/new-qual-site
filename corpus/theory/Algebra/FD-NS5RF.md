@@ -10,7 +10,9 @@ classification:
   - algebra
   topics:
   - Field Extensions
-relations: []
+relations:
+- kind: variant-of
+  target: FD-HVSOB
 review: draft
 ---
 

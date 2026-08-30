@@ -13,6 +13,8 @@ classification:
   - Rings
 relations:
 - kind: variant-of
+  target: FD-CI4NB
+- kind: variant-of
   target: FD-24RNF
 review: draft
 ---

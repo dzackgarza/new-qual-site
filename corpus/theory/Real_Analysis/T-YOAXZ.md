@@ -10,7 +10,9 @@ classification:
   - Uniform Continuity
   - Compactness
   - Continuity
-relations: []
+relations:
+- kind: variant-of
+  target: T-O4UD3
 review: draft
 ---
 

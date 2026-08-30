@@ -10,12 +10,14 @@ classification:
   - Uniform Continuity
   - Metric Spaces
   - Continuity
-relations: []
+relations:
+- kind: variant-of
+  target: D-WGYSB
 review: draft
 ---
 
 :::{.definition}
-For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces,
+For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces, $f$ is **uniformly continuous** iff
 \[
 \forall \eps > 0, ~\exists \delta > 0 \text{ such that } \quad d_{X}(x_{1}, x_{2}) < \delta \implies d_{Y}(f(x_{1}), f(x_{2})) < \eps
 .\]

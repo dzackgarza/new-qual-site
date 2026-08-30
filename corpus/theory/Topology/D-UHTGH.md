@@ -9,7 +9,9 @@ classification:
   topics:
   - Closure
   - Point-Set Topology
-relations: []
+relations:
+- kind: variant-of
+  target: D-ASXW6
 review: draft
 ---
 

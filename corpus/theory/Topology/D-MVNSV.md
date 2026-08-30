@@ -9,7 +9,9 @@ classification:
   topics:
   - Modules
   - Bases
-relations: []
+relations:
+- kind: variant-of
+  target: D-I7D56
 review: draft
 ---
 

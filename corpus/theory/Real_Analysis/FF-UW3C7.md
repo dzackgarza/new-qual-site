@@ -12,7 +12,9 @@ classification:
   - Measure Theory
   - Cantor Set
   - Counterexamples
-relations: []
+relations:
+- kind: variant-of
+  target: FE-YOIJM
 review: draft
 ---
 

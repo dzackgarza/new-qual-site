@@ -8,7 +8,9 @@ classification:
   - algebra
   topics:
   - Zorn's Lemma
-relations: []
+relations:
+- kind: variant-of
+  target: FT-PUVIQ
 review: draft
 ---
 

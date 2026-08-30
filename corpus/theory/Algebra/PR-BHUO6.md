@@ -10,7 +10,9 @@ classification:
   - Dual Spaces
   - Tensor Products
   - Vector Spaces
-relations: []
+relations:
+- kind: variant-of
+  target: PR-5PDNQ
 review: draft
 ---
 

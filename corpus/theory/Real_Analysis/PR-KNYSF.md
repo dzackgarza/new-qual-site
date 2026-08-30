@@ -10,7 +10,9 @@ classification:
   - L¹
   - Convergence of Integrals
   - Norms
-relations: []
+relations:
+- kind: variant-of
+  target: PR-H4ZVI
 review: draft
 ---
 

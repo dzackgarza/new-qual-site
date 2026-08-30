@@ -9,7 +9,9 @@ classification:
   topics:
   - Borel-Cantelli
   - Measure Theory
-relations: []
+relations:
+- kind: variant-of
+  target: T-OTR5M
 review: draft
 ---
 

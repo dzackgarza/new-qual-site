@@ -9,7 +9,9 @@ classification:
   topics:
   - Cosets and Lagrange
   - Subgroups
-relations: []
+relations:
+- kind: variant-of
+  target: C-HWX2P
 review: draft
 ---
 

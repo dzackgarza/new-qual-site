@@ -10,7 +10,9 @@ classification:
   - Point-Set Topology
   - Separation Axioms
   - Counterexamples
-relations: []
+relations:
+- kind: variant-of
+  target: D-4DXA7
 review: draft
 ---
 

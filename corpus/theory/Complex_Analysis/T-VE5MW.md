@@ -11,7 +11,9 @@ classification:
   - Contour Integration
   - Winding Number
   - Meromorphic Functions
-relations: []
+relations:
+- kind: variant-of
+  target: T-HRPNO
 review: draft
 ---
 

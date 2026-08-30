@@ -8,7 +8,9 @@ classification:
   - topology
   topics:
   - Metric Spaces
-relations: []
+relations:
+- kind: variant-of
+  target: D-B7CYY
 review: draft
 ---
 

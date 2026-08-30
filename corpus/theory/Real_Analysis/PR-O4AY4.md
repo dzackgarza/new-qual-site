@@ -9,10 +9,12 @@ classification:
   topics:
   - Continuity of Measure
   - L¹
-relations: []
+relations:
+- kind: variant-of
+  target: PR-4OXGZ
 review: draft
 ---
 
 ::: {.proposition}
-$m(E) \to 0 \implies \int_E f \to 0$.
+If $f\in L^1$, then $m(E) \to 0 \implies \int_E f \to 0$.
 :::

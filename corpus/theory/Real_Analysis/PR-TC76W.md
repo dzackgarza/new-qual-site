@@ -11,7 +11,9 @@ classification:
   - Uniform Convergence
   - L¹
   - Counterexamples
-relations: []
+relations:
+- kind: variant-of
+  target: PR-SETHQ
 review: draft
 ---
 

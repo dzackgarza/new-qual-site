@@ -13,6 +13,8 @@ classification:
   - Fields
 relations:
 - kind: variant-of
+  target: FD-J3HIA
+- kind: variant-of
   target: FD-3V3ZW
 review: draft
 ---

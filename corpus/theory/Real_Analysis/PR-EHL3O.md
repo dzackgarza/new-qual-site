@@ -10,7 +10,9 @@ classification:
   - Uniform Continuity
   - L¹
   - Limits
-relations: []
+relations:
+- kind: variant-of
+  target: PR-BDHAT
 review: draft
 ---
 

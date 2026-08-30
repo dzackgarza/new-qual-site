@@ -10,7 +10,9 @@ classification:
   - Point-Set Topology
   - Closure
   - Density
-relations: []
+relations:
+- kind: variant-of
+  target: D-KJBAK
 review: draft
 ---
 

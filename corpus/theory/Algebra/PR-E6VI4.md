@@ -10,7 +10,9 @@ classification:
   - Group Actions
   - Normal Subgroups
   - Cosets and Lagrange
-relations: []
+relations:
+- kind: variant-of
+  target: PR-PADL7
 review: draft
 ---
 

@@ -10,7 +10,9 @@ classification:
   - Burnside's Lemma
   - Group Actions
   - Orbit-Stabilizer
-relations: []
+relations:
+- kind: variant-of
+  target: C-HE5SL
 review: draft
 ---
 
