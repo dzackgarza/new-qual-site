@@ -1002,8 +1002,7 @@ Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and [is
   Manual inspection: the six subject roots and four terminal pages read at 1280 CSS pixels, and two of them at 375, with no console error and no page scrolling sideways.
 
 - [x] Settle every branch-specific gap before closing its issue.
-  The crawl found twenty unreachable complex-analysis pages, repaired in `e0024d19e`, and reading the roots found two sidebar entries a reader cannot tell from a sibling, repaired in `eeacea4d7`.
-  Topology's issue defers unextracted attachment content to [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9), which is where it remains.
+  The crawl found twenty unreachable complex-analysis pages, repaired in `e0024d19e`, and reading the roots found two sidebar entries a reader cannot tell from a sibling, repaired in `eeacea4d7`. Topology's issue defers unextracted attachment content to [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9), which is where it remains.
 
 ### Complete the reader and exam generator
 
@@ -1030,7 +1029,10 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
   A citation on the algebra syllabus links to the textbook's own collection page, through the `source/` prefix.
   `P-PKXBP` carries a collection link, a hint and two solutions, each a closed disclosure labelled for what it is.
 
-- [ ] Decide the supported `tikzcd` boundary.
+- [x] Decide the supported `tikzcd` boundary.
+  A raw TeX block is written to the page when it holds a `tikzcd` environment, which the pandoc lua filter compiles to inline SVG; any other raw TeX block is dropped.
+  That is the whole of what the corpus writes: 66 `tikzcd` environments over 39 files, and one `tikzpicture`, which is commented out and stands above the image that replaced it.
+  A raw TeX block the filter cannot compile fails the build rather than emitting a page without it.
 
 - [x] Decide whether facets need separate typed controls.
   No: one control per axis, and the axes come from the page rather than from the script.
@@ -1071,9 +1073,11 @@ Owner: [issue #30](https://github.com/dzackgarza/new-qual-site/issues/30)
   The only response at or over 400 is the deliberate request for a page that does not exist.
   The 404 page used to be one: its stylesheet and script were written as static tags, and Chrome's preload scanner fetched them against the requested path before the page's own script set the site root, so the page rendered unstyled at every depth.
 
-- [ ] Confirm that local and deployed artifacts use the same revision.
+- [x] Confirm that local and deployed artifacts use the same revision.
+  The deploy workflow writes the commit it built from to `revision.txt` at the site root.
+  The deployed file reads `2d8140a9e`, which is `origin/main`.
 
-- [ ] Record every unexercised path and nonclaim.
+- [x] Record every unexercised path and nonclaim.
   Not exercised: printing a generated sheet, and any browser other than Chromium.
   Not supported: the site with JavaScript off.
   Browse, the source index, the search dialog and the generator all ask the index for the rows in front of the reader, so with no script they show their controls and nothing under them.
