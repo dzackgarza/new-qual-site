@@ -11,6 +11,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -29,4 +33,12 @@ Consider $\operatorname{ann}(x)$ for $x \in N_i$.)
 Prove that there exist a submodule $N$ of $M$ and $P \in \operatorname{Spec}(A)$ such that $N \simeq A/P$.
 (Hint.
 Consider $\Sigma := \{\operatorname{ann}(x) \mid x \in M \setminus \{0\}\}$.)
+:::
+
+::: {.solution}
+<1>1. $R$ PID.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
