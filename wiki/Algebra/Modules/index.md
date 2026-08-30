@@ -1,11 +1,10 @@
 ---
-title: Modules
-order: 4
+title: Module resources
+order: 12
 ---
 
-# Modules
+# Module resources
 
-Modules over PIDs: structure theorem, invariant factors, elementary divisors, and the usual applications to abelian groups and rational canonical form.
+- [[Algebra/Modules/Resources|Resources]], the reading list.
 
-[[Algebra/Modules/Modules|Modules]] is the note.
-[[Algebra/Modules/Resources|Resources]] is the reading list.
+The subject itself is [[Algebra/modules/index|Modules]].

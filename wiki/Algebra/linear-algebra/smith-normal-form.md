@@ -27,7 +27,7 @@ The algorithm by row and column operations is in Dummit and Foote, page 479. The
 Two questions, and they are the same question:
 
 - **Classify a finitely generated module over a PID.** Present it as the cokernel of a matrix, take the Smith form, and read the invariant factors off the diagonal.
-  This is how a module classification is carried out in practice.
+  This is how [[Algebra/modules/classify-this-module|Classify this module]] is carried out in practice.
 
 - **Classify a finitely generated abelian group.** The same computation over $\ZZ$, where the invariant factors are the orders of the cyclic summands.
 
