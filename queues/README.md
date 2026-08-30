@@ -28,7 +28,7 @@ Two kinds of queue files:
 | `04-reader-exam-generator.md` | 0 | 7 | #10 (COMPLETED) | All done |
 | `05-repair-rendered-residue.md` | 0 | 3 | #41 (COMPLETED) | All defects resolved (Queue 11) |
 | `06-prove-deployed-site.md` | 0 | 7 | #30 (COMPLETED) | All verified against local build |
-| `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
+| `07-source-preservation-closeout.md` | 0 | 6 | #11 (COMPLETED) | All done |
 | `08-owner-decisions.md` | 0 | 3 | none | All done |
 | ~~`09-author-solutions.md`~~ | — | — | — | Removed: redundant with Queue C |
 | `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
