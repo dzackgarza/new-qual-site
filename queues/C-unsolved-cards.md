@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4592 problem and exercise cards have no solution section and no incoming
+4587 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,19 +11,14 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1408
+- Exercises: 1403
 - Problems: 3184
-- Total: 4592
+- Total: 4587
 
-## Exercises (1408)
+## Exercises (1403)
 
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
-- [ ] E-AMD-ON37VIEN — "$\nilrad{R}=\rad(0)$"
-- [ ] E-AMD-PLA4XW64 — "Transitive subgroups of $S_3$ are $S_3$ and $A_3$"
 - [ ] E-AMD-PX2UMZEG — "Intersections, products, and sums of ideals are ideals"
-- [ ] E-AMD-QRCIRKQ7 — "Prime ideals are irreducible"
-- [ ] E-AMD-R4LGOQ33 — "$p$-groups are solvable"
-- [ ] E-AMD-S42H2VZL — "Disjoint cycles commute"
 - [ ] E-AMD-SF2B6RZ6 — "$HK$ is a subgroup of $G$ iff $HK=KH$"
 - [ ] E-AMD-TLP6GSQI — "Finitely generated modules over a Noetherian local ring are flat iff free"
 - [ ] E-AMD-TM3LMADH — "Nontrivial normal subgroups of a finite $p$-group meet the center"
