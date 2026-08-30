@@ -63,3 +63,11 @@ Classify all groups of order 14 up to isomorphism. Prove your classification.
 <1>4. Conclusion:
     Up to isomorphism, the only groups of order 14 are $\mathbb{Z}_{14}$ (abelian) and $D_7$ (non-abelian). Q.E.D.
 :::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
