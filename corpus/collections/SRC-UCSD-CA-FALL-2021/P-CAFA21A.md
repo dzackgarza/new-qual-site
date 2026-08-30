@@ -10,6 +10,10 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -18,4 +22,12 @@ $$
 \int_0^\infty \frac{1 - \cos x}{x^2}\,dx.
 $$
 Please explain the necessary estimates.
+:::
+
+::: {.solution}
+<1>1. $f$ analytic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

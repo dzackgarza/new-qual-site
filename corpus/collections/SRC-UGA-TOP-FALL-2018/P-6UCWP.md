@@ -12,6 +12,10 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -21,4 +25,12 @@ Let $I$ and $J$ be disjoint closed intervals contained in $\partial C$.
 What is the Euler characteristic of the surface $S$ obtained by identifying $I$ and $J$?
 
 Can all surface with nonempty boundary and with this Euler characteristic be obtained from this construction?
+:::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

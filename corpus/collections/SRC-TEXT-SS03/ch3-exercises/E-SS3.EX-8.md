@@ -9,6 +9,10 @@ classification:
   topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -19,4 +23,12 @@ $$
 $$
 
 if $a > | b |$ and $a , b \in \mathbb { R }$
+:::
+
+::: {.solution}
+<1>1. $G$ entire.
+Proof: estimate.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

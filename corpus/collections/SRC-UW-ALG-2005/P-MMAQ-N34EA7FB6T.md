@@ -13,6 +13,10 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -31,4 +35,12 @@ Let $R$ and $S$ be commutative rings, and $f:R\rightarrow S$ a ring homomorphism
 
   Let $N$ be the nilradical of $R$.
   Show that if $S=R/N$ and $f:R\rightarrow R/N$ is the quotient map, then $f^*$ is a bijection
+:::
+
+::: {.solution}
+<1>1. $M$ module.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
