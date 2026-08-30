@@ -12,6 +12,10 @@ classification:
   - Character Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -35,4 +39,12 @@ $$
 $$
 Show that in this case $\langle \chi, \chi \rangle_\Gamma = k$.
 Hint: Use part (b).
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

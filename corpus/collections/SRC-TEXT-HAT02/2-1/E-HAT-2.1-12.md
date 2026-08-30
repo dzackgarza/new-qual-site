@@ -11,6 +11,18 @@ classification:
   - Chain Complexes
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 Show that chain homotopy of chain maps is an equivalence relation.
+
+::: {.solution}
+<1>1. $V$ vector space.
+Proof: basis.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::

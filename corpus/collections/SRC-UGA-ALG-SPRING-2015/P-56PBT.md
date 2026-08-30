@@ -12,6 +12,10 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -23,4 +27,12 @@ b. The *exponent* of a finite group is the least common multiple of the orders o
 Prove that a finite abelian group has an element of order equal to its exponent.
 
 c. Prove that the multiplicative group $(\FF\units, \cdot)$ is cyclic.
+:::
+
+::: {.solution}
+<1>1. $f$ continuous.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

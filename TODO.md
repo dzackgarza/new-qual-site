@@ -1550,6 +1550,9 @@ One subject at a time, chapter by chapter, reading the existing pages before eac
   Remaining for this subject: the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`), and the `Quals`, `Exercises`, `Workshops` and `Resources` folders, which the table of contents replaces with the `problems:` query rather than moving.
 
 - [ ] Algebra.
+  All eight chapters are authored, each with its recognition page: `groups` (`bb821e913`), `group-actions` (`9ca42e320`), `rings-and-ideals` (`965e90eb4`, described in `f0ee0de67`), `modules` (`9f078fb90`), `linear-algebra` (`0161cf376`), `fields` and `galois-theory` (`c61d84782`), `representations` (`dc8084b5d`). The three cross-cutting pages and the subject index are written, and the 26 `Quals` and 12 `Exercises` pages are replaced by topic queries; all 970 cards they named were checked reachable first.
+  The subject now matches the filed table of contents.
+  One trap the plan does not record: an old folder and its replacement chapter can slug to the same route -- `Groups` against `groups`, `Fields` against `fields` -- which `qualc check` passes and only the build rejects, so a subject cannot keep a retitled stub of a folder it has replaced.
 
 - [ ] Real analysis.
 
