@@ -19,4 +19,4 @@ order: 1
 
 The counting arguments are [[Algebra/group-actions/index|Group actions]].
 
-- [[Notation_Algebra|Notation]] and [[References|Algebra group and ring theory resources]].
+- [[Algebra/groups/notation|Notation]] and [[Algebra/groups/resources|Algebra group and ring theory resources]].

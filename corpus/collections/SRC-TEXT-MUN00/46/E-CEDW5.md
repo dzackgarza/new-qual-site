@@ -10,6 +10,10 @@ classification:
   - Function Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.exercise}
@@ -24,4 +28,12 @@ $$
 (This is a standard fact about power series.)
 
 (b) Show that $(f_n)$ does not converge in the uniform topology.
+:::
+
+::: {.solution}
+<1>1. $X$ Tychonoff.
+Proof: Urysohn.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

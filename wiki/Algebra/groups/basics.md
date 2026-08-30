@@ -6,6 +6,8 @@ problems:
   - Groups
   - Group Theory
   - Subgroups
+  - Normal Subgroups
+  - Homomorphisms
 ---
 
 # Basics

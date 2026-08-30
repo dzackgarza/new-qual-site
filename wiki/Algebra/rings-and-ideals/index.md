@@ -13,4 +13,4 @@ order: 3
 
 - [[Algebra/rings-and-ideals/polynomial-rings|Polynomial rings]], and what survives adjoining a variable.
 
-- [[NumberTheory|Number theory]], the $\ZZ$ and $\ZZ[i]$ layer the qual treats as ring theory.
+- [[Algebra/rings-and-ideals/number-theory|Number theory]], the $\ZZ$ and $\ZZ[i]$ layer the qual treats as ring theory.

@@ -6,6 +6,8 @@ problems:
   - Determinants
   - Eigenvalues and Eigenvectors
   - Trace
+  - Vector Spaces
+  - Linear Transformations
 ---
 
 # Determinants and eigenvalues

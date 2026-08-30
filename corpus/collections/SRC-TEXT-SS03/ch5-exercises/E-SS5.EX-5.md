@@ -9,6 +9,10 @@ classification:
   topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -27,4 +31,12 @@ $$
 $$
 
 by considering the two cases $| t | ^ { \alpha - 1 } \leq A | z | { \mathrm { ~ a n d ~ } } | t | ^ { \alpha - 1 } \geq A | z | .$ , for an appropriate constant A.]
+:::
+
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

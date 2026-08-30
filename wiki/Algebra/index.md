@@ -5,254 +5,56 @@ order: 10
 
 # Algebra
 
-The UGA algebra qualifying exam: the official topic list, then a twelve-week study sequence used in a summer workshop.
-Students are expected to know proofs and to carry out the standard computations (Jordan and rational canonical form of a given matrix, Galois group of a given polynomial).
+## What the exam asks
 
-## Syllabus
+The paper is a small number of recurring questions, and each one is decided by a page here.
 
-### Group Theory
+| The question | Where it is decided |
+| --- | --- |
+| Show $G$ is not simple, or classify the groups of order $n$ | [[Algebra/group-actions/show-g-is-not-simple\|Show $G$ is not simple]] |
+| Is this group abelian? | [[Algebra/groups/is-this-group-abelian\|Is this group abelian?]] |
+| What kind of ring is this, and is every $X$ a $Y$? | [[Algebra/rings-and-ideals/which-kind-of-ring\|Which kind of ring is this?]] |
+| Classify this module, or this abelian group | [[Algebra/modules/classify-this-module\|Classify this module]] |
+| Find the canonical form of this matrix | [[Algebra/linear-algebra/find-the-canonical-form\|Find the canonical form]] |
+| Compute this Galois group | [[Algebra/galois-theory/compute-this-galois-group\|Compute this Galois group]] |
 
-- Subgroups and quotient groups
+Three of those are the same theorem in different clothes: classifying a finitely generated abelian group, finding a rational canonical form, and classifying a module over a PID are one computation over $\ZZ$, over $k[x]$, and in general.
 
-- Lagrange's Theorem
+## The chapters, in dependency order
 
-- Fundamental homomorphism theorems
+1. [[Algebra/groups/index|Groups]] -- subgroups, quotients, the standard families.
 
-- Group actions with applications to the structure of groups such as the Sylow Theorems
+2. [[Algebra/group-actions/index|Group actions]] -- Lagrange, orbit-stabilizer, the class equation, Sylow.
 
-- group constructions such as direct and semi-direct products
+3. [[Algebra/rings-and-ideals/index|Rings and ideals]] -- the ring tower, ideals, factorization.
 
-- structures of special types of groups such as:
+4. [[Algebra/modules/index|Modules]] -- the structure theorem, free and projective.
 
-  - p-groups
+5. [[Algebra/linear-algebra/index|Linear algebra]] -- the canonical forms.
 
-  - dihedral,
+6. [[Algebra/fields/index|Fields]] -- extensions, splitting, separability, finite fields.
 
-  - symmetric
+7. [[Algebra/galois-theory/index|Galois theory]] -- the correspondence, and computing groups.
 
-  - alternating
+8. [[Algebra/representations/index|Representations]] -- Maschke, Schur, characters.
 
-- Cycle decompositions
+Across the chapters:
 
-- The simplicity of $A_n$, for n $\geq$ 5
+- [[Algebra/review|Review sheet]] -- every statement, on one page.
 
-- Free groups, generators and relations
+- [[Algebra/counterexamples|Counterexamples]] -- filed by the statement each refutes.
 
-- Solvable groups
+- [[Algebra/groups/groups-of-small-order|Groups of small order]] -- the table to check a counting argument against.
 
-> References: 1,3,4
+Also here: [[Algebra/Appendices/index|appendices]], [[Algebra/Resources/index|resources]], and [[Algebra/Workshops/index|workshops]].
 
-### Linear Algebra
+## The syllabus
 
-- Determinants
+See [[Algebra/Resources/Syllabus|Syllabus]].
 
-- Eigenvalues and eigenvectors
+## Acknowledgements
 
-- Cayley-Hamilton Theorem
+Thanks to Paco Adajar and Swaroop Hegde for solutions and proofs.
+Many solutions contain input from other graduate students and faculty at UGA, and from questions answered on Math Stack Exchange and MathOverflow.
 
-- Canonical forms for matrices
-
-- Linear groups ($\GL_n , \SL_n, O_n, U_n$)
-
-- Duality
-
-  - Dual spaces,
-
-  - Dual bases,
-
-  - Induced dual map,
-
-  - Double duals
-
-- Finite-dimensional spectral theorem
-
-> References: 1,2,4
-
-### Foundations
-
-- Zorn's Lemma and its uses in various existence theorems such as that of
-
-  - A basis for a vector space or
-
-  - Existence of maximal ideals.
-
-> References: 1,3,4
-
-### Rings and Modules
-
-- Basic properties of ideals and quotient rings
-
-- Fundamental homomorphism theorems for rings and modules
-
-- Characterizations and properties of special domains such as:
-
-- Euclidean implies PID implies UFD
-
-- Classification of finitely generated modules over PIDs with emphasis on Euclidean domains applications to the structure of:
-
-  - Finitely generated abelian groups
-
-  - Canonical forms of matrices
-
-> References: 1,3,4
-
-### Field Theory
-
-- Algebraic extensions of fields
-
-- Fundamental theorem of Galois theory
-
-- Properties of finite fields
-
-- Separable extensions
-
-- Computations of Galois groups of polynomials of small degree and cyclotomic polynomials solvability of polynomials by radicals
-
-> References: 1,3,4
-
-### References
-
-- [@DF04]
-
-- [@HK71]
-
-- [@Hun74]
-
-- [@Smi]
-
-The [UGA algebra study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf) (December 2016) lists the same core, compressed: Sylow, $p$-groups, solvable groups, free groups; tensor products, determinants, Jordan form, PIDs, UFDs, polynomial rings; splitting fields, separable and inseparable extensions; fundamental theorem of Galois theory, finite fields, cyclotomic fields.
-Extra topics named there are representations of finite groups (character theory, induced representations, the group ring) and the basics of Lie groups and Lie algebras (exponential map, nilpotent and semisimple Lie algebras and groups).
-
-## A twelve-week study sequence
-
-This sequence was given as a summer workshop.
-The calendar dates below are that workshop's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August).
-The week contents are the study path.
-
-### Week 1 (18 May): Preliminary review
-
-- Subgroups, quotients, isomorphism theorems, cosets, index of a subgroup
-
-  - One step subgroup test
-
-- Cauchy, Lagrange
-
-- Everything about: cyclic, symmetric, alternating, dihedral groups of order ≤ 20
-
-- Especially useful problems: if G is nonabelian of order $p^3$, then $Z(G) = [G, G]$)
-
-### Week 2 (25 May): Finite groups
-
-- Special types of groups, the symmetric group, p-groups
-
-- Series of groups, solvable, simple, nilpotent; Jordan-Holder theorem
-
-- Group actions, orbit-stabilizer, class equation,
-
-- Cayley representation, permutation representation
-
-- FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
-
-  - Invariant factors
-
-  - Elementary divisors
-
-  - How to go back and forth
-
-- Recognition of direct products and semidirect products
-
-### Week 3 (1 June): Sylow theorems
-
-- Showing groups are abelian
-
-- Classification: isomorphism classes of groups of a given order, recognizing direct and semidirect products
-
-### Week 4 (8 June): Rings and commutative algebra
-
-- Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
-
-- Irreducible and prime elements, nilpotent, units
-
-- Radical, nilradical, spec and maxspec
-
-- Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
-
-- Zorn's lemma arguments
-
-- Bonus optional stuff: localization
-
-### Week 5 (15 June): Modules and homological algebra
-
-- Morphisms, submodules, isomorphism theorems, principal ideals
-
-- Free and projective, free rank, torsion submodule, annihilators
-
-- Tensor product
-
-- SESs and splitting
-
-- Flat and torsionfree
-
-- Classification theorem for modules over a PID, elementary divisors and invariant factors
-
-- $M/IM$ stuff, $R[x]$ modules
-
-### Week 6 (22 June): Field theory
-
-- Finite and algebraic extensions, degrees, towers
-
-- Finite fields
-
-- Separable and normal extensions, splitting fields
-
-- Irreducible polynomials
-
-- Algebraic closure
-
-- Primitive element theorem, perfect fields, Frobenius
-
-### Week 7 (29 June): Galois theory and number theory
-
-- Fundamental theorem
-
-- Computing Galois groups
-
-- Solvability by radicals
-
-- Cyclotomic polynomials, primitive roots
-
-- Properties in towers (normal, separable, Galois, etc)
-
-- Bonus: rings of integers, splitting of primes, p-adics?
-
-### Week 8 (6 July): Linear algebra
-
-- Bases, Singularity and invertibility, determinant and trace, rank-nullity (all over arbitrary fields)
-
-- Eigenstuff, minimal and characteristic polynomials
-
-- Canonical forms (RCF, JCF), decomposition into $F[x]$-modules
-
-- Spectral theorem, Cayley-Hamilton
-
-- Similarity, diagonalizability, simultaneously diagonalizable operators
-
-- (Bonus) Quadratic and bilinear forms, lattices, Gram matrix, special types of matrices (Hermitian, symmetric, orthogonal, unitary, etc)
-
-### Week 9 (13 July): More linear algebra, or representation theory of finite groups
-
-- Maschke's theorem
-
-- Orthogonality of characters, character tables
-
-- Schur's lemma
-
-### Week 10 (20 July): Buffer
-
-### Week 11 (27 July): Buffer
-
-### Week 12 (3 August): No meeting (Mock AMS)
-
-### Week 13 (10 August): Timed practice exam
-
-### Quals: Monday and Tuesday 16–17 August
+Extra drill problems are drawn from Pierce's algebra qual collections at UC Riverside, on [groups](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/) and on [Galois theory](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/galois/).

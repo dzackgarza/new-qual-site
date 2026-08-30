@@ -6,6 +6,8 @@ problems:
   - Ideals
   - Prime Ideals
   - Maximal Ideals
+  - Nilpotence
+  - Algebras
 ---
 
 # Ideals and quotients
@@ -82,3 +84,15 @@ For $x\in R\nonzero$, $Rx = R$ gives $1 = rx$ for some $r$, so $x = r\inv$.
 [[E-G4KAC]]
 
 Zorn's lemma, and the maximal ideal it produces, are on [[Algebra/rings-and-ideals/commutative-algebra|Commutative algebra]].
+
+## Nilradicals and Jacobson radicals, worked
+
+[[E-AMD-4SSSVQJY]]
+
+[[E-AMD-564ETBH5]]
+
+[[E-AMD-E3N4BHJH]]
+
+[[E-AMD-MCTH4JE3]]
+
+[[E-AMD-UEHZOJ3K]]

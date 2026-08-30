@@ -61,7 +61,7 @@ See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uc
 :::{.remark}
 Being in the same orbit is an equivalence relation, so orbits partition $X$, and $G$ acts transitively on each one.
 A point is fixed exactly when $\Orb(x) = \ts x$, equivalently when $\Stab_G(x) = G$.
-Notation is on [[Algebra/Groups/Notation_Algebra|the algebra notation page]].
+Notation is on [[Algebra/groups/notation|the algebra notation page]].
 
 :::
 

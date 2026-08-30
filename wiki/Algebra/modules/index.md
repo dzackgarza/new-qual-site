@@ -13,4 +13,4 @@ order: 4
 
 - [[Algebra/modules/exact-sequences|Exact sequences and tensor products]], splitting and right exactness.
 
-- [[Algebra/Modules/Resources|Resources]], the reading list.
+- [[Algebra/modules/resources|Resources]], the reading list.

@@ -21,4 +21,3 @@ The pages that list the corpus by its source: the exams and artifacts of each su
 
 ## Problem chapters
 
-- [[Algebra/Exercises/Extra Problems]]
