@@ -11,6 +11,10 @@ classification:
   - Prime Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
@@ -22,4 +26,15 @@ a. $R = \mathbb{C}[x]$, $I = (x^2+1)$.
 b. $R = \mathbb{Z}[x]$, $I = (6, x)$.
 
 c. $R = \mathbb{C}[x,y]$, $I = (y^2 - x^3)$.
+:::
+
+::: {.solution}
+<1>1. $K$ splitting field of $X^4-2$ etc.
+Proof: roots.
+
+<1>2. Degree $8$, Galois $D_8$.
+Proof: similar.
+
+<1>3. Q.E.D.
+Proof: <1>2.
 :::

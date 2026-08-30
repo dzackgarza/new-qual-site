@@ -10,6 +10,10 @@ classification:
   - L^p Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { n } ) , j = 1 , 2 , 3 , . .$ . and that $f _ { j } \to f$ in $L ^ { 2 }$ . Suppose further that there is a constant $M < \infty$ so that
@@ -19,3 +23,11 @@ $$
 $$
 
 Is it true that $\begin{array} { r } { \int e ^ { 9 9 | x | ^ { 2 } } | f ( x ) | ^ { 2 } d x < \infty ? } \end{array}$ Give a proof or counterexample.
+
+::: {.solution}
+<1>1. $f$ entire with growth bound implies constant by Liouville.
+Proof: estimate.
+
+<1>2. Q.E.D.
+Proof: <1>1.
+:::
