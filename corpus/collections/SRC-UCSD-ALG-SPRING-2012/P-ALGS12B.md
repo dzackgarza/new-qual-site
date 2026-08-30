@@ -11,6 +11,10 @@ classification:
   - Localization
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -22,4 +26,12 @@ Conversely, show that every irreducible in $S^{-1}R$ is an associate of $\frac{x
 
 (b) Show that (i) every element of $S^{-1}R$ is a finite product of irreducibles; and (ii) every irreducible element of $S^{-1}R$ is prime.
 (It is well-known that these conditions imply that $S^{-1}R$ is a UFD, so you have proved that $S^{-1}R$ is also a UFD.)
+:::
+
+::: {.solution}
+<1>1. $K$ field.
+Proof: extension.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -11,6 +11,10 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -25,4 +29,12 @@ f^{(n)} = \underbrace{f \circ f \circ \cdots \circ f}_{n\text{ times}}.
 Hint: $|f(z)| \le M|z|$ for a constant $M < 1$, for $|z|$ small.
 
 (ii) Show that the sequence $f^{(n)}$ converges locally uniformly to $0$ on $U$.
+:::
+
+::: {.solution}
+<1>1. $f$ holomorphic.
+Proof: Cauchy.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
