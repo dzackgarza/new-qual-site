@@ -6,22 +6,24 @@ Frequency counts from built HTML in `build/quarto/_site/wiki` (398 pages).
 
 Each item is marked with validity status after checking against current source and build.
 
+Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale). 10 of 25 defects fixed since original write (defects 3, 11, 12, 13, 16, 19, 20, 22, 24, 25).
+
 ## Broken, visible on almost every page
 
-- [ ] 1. Sidebar disclosure triangle sits above its label. `.subject-sidebar a { display: block }` at `site/styles.css:194`.
-  - Validity: REAL. `site/styles.css:194` confirmed `.subject-sidebar a { display: block }`. Working tree removes `color: inherit` but does not change `display: block`. Defect stands.
+- [ ] 1. Sidebar disclosure triangle sits above its label. `.subject-sidebar a { display: block }` at `site/styles.css:220`.
+  - Validity: REAL. `site/styles.css:220` confirmed `.subject-sidebar a { display: block }`. Defect stands.
 
 - [ ] 2. Clicking a section name navigates instead of expanding. `<summary><a>Prelims</a></summary>`.
   - Validity: REAL (markup-level). Needs build to confirm markup, but the CSS/screenshot evidence in DESIGN_TODO is specific. Working tree does not touch the summary/a markup.
 
 - [x] 3. 163 blocks print literal `?` as title on 63 pages. Source: `:::{.proof title="?"}`.
-  - Validity: BEING FIXED. 95 wiki source files have `title="?"` at HEAD. 108 `title="?"` removed across 91 files in uncommitted working tree (pure `:::{.proof title="?"}` → `:::{.proof}`). Fix is in progress, not committed. Mark open until committed and rebuilt.
+  - Validity: FIXED. Zero `title="?"` instances remain in wiki source (verified with fixed-string grep). The 102 count was a regex artifact. All `:::{.proof title=...}` blocks carry real titles.
 
 - [ ] 4. Adjacent links merge into one underlined run. 151 paragraphs on 78 pages.
   - Validity: SUPERSEDED by `7aba6b8a0`, which transcludes. A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink (`emit.py:578-660`); a wikilink inside a sentence stays a link. A run of adjacent links is no longer a paragraph of links.
 
 - [ ] 5. All 12 environment kinds look identical. 859 blocks, same 3px grey left border (`site/styles.css:324`).
-  - Validity: REAL. `site/styles.css:324` confirmed `border-left: 3px solid var(--line)`. `.theorem` and `.concept` get no treatment (confirmed in CSS — no distinct rules). Defect stands.
+  - Validity: REAL. `site/styles.css:324` confirmed `border-left: 3px solid var(--line)`. `.theorem` and `.concept` get no distinct CSS rules. Defect stands.
 
 ## Link-list pages, not content pages
 
@@ -39,17 +41,17 @@ Each item is marked with validity status after checking against current source a
 
 ## Typography and layout
 
-- [ ] 10. Measure too wide. Content column `52rem` ≈ 832px (`site/styles.css:140`).
-  - Validity: REAL. `site/styles.css:140,147` confirmed `52rem` columns. Also at lines 683, 756 (responsive). Defect stands.
+- [ ] 10. Measure too wide. Content column `52rem` ≈ 832px (`site/styles.css:155`).
+  - Validity: REAL. `site/styles.css:155,162,174,178` confirmed `52rem` columns. Defect stands.
 
-- [ ] 11. Three type families compete. No `chtml: { scale, matchFontHeight }` in MathJax config.
-  - Validity: REAL. No MathJax scale config found. Working tree does not add it.
+- [x] 11. Three type families compete. No `chtml: { scale, matchFontHeight }` in MathJax config.
+  - Validity: FIXED. Added `chtml: { scale: 0.95, matchFontHeight: true }` to MathJax config in `tools/qualc/emit.py:2171`.
 
-- [ ] 12. List rhythm inconsistent. CSS never normalises loose/tight.
-  - Validity: REAL. No list-normalization rule in `site/styles.css`.
+- [x] 12. List rhythm inconsistent. CSS never normalises loose/tight.
+  - Validity: FIXED. Added `.page-body :is(ul, ol)` padding/margin normalization and `.page-body :is(ul, ol) > li + li` rhythm rule in `site/styles.css:446`.
 
-- [ ] 13. Pages with no headings keep empty TOC rail. `site/styles.css:349` `.page-toc:empty`.
-  - Validity: REAL. `site/styles.css:349` confirmed `.page-toc:empty` rule exists. Needs build to confirm the dead-space claim, but the rule is present.
+- [x] 13. Pages with no headings keep empty TOC rail. `site/styles.css:349` `.page-toc:empty`.
+  - Validity: FIXED. `.page-toc:empty { display: none }` at CSS line 485. Grid also collapses via `:has(> .page-toc:empty)` at lines 173-178.
 
 - [ ] 14. Figures have no component. Bare inline `<img>`.
   - Validity: REAL (needs build). No figure component in `site/styles.css` or `site/app.js`.
@@ -58,7 +60,7 @@ Each item is marked with validity status after checking against current source a
   - Validity: REAL (needs build). CSS has single container style for blockquote/example.
 
 - [x] 16. Naked URLs as link text (Keith Conrad PDF on Sylow page). Overflows column on mobile.
-  - Validity: BEING FIXED. Working tree converts 161 naked URL lines to `[link text](url)` across wiki files. Uncommitted. Mark open until committed.
+  - Validity: FIXED. Zero `<https://...>` bare links remain in wiki source. All 161 converted.
 
 - [ ] 17. Card pages show "None." for empty dependencies/backlinks. `status: draft` exposed raw.
   - Validity: REAL (needs build). No `status:` rendering filter found in build tools. Card pages exist in `build/quarto/_site/tag/` (8812 pages).
@@ -66,19 +68,19 @@ Each item is marked with validity status after checking against current source a
 ## Responsive, theme, accessibility
 
 - [ ] 18. TOC disappears below 1024px with no replacement.
-  - Validity: REAL. `site/styles.css:736` `@media (max-width: 56rem)` hides the TOC. No replacement (in-page nav) found.
+  - Validity: REAL. `site/styles.css:1084` `@media (max-width: 56rem)` hides the TOC. No replacement (in-page nav) found.
 
-- [ ] 19. No dark mode and no print styles. `color-scheme: light` only. Zero `prefers-color-scheme` or `@media print` rules.
-  - Validity: REAL. Confirmed: zero matches for `prefers-color-scheme`, `@media print`, `color-scheme: dark` in `site/styles.css`.
+- [x] 19. No dark mode and no print styles. `color-scheme: light` only. Zero `prefers-color-scheme` or `@media print` rules.
+  - Validity: FIXED. `@media (prefers-color-scheme: dark)` at CSS line 1163, `@media print` at line 1187. Both present with full color variable overrides.
 
-- [ ] 20. Focus styles exist for one element (`.wiki-sidebar summary`). Everything else falls back to UA ring.
-  - Validity: REAL. `site/styles.css:216` `.wiki-sidebar summary:focus-visible` is the only focus rule. No other `:focus` or `outline` rules.
+- [x] 20. Focus styles exist for one element (`.wiki-sidebar summary`). Everything else falls back to UA ring.
+  - Validity: FIXED. Global `:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 0.2rem; }` at CSS line 53 covers all elements. `.wiki-sidebar summary:focus-visible` at line 250 is additional, not the only one.
 
 - [ ] 21. Small text below 14px. Sidebar 13.8px, TOC 13.4px, metadata labels 11.2px.
   - Validity: REAL (needs build to confirm px). CSS uses `0.86rem`, `0.7rem` values (working tree changes `0.86rem` → `0.875rem` for one selector). The sub-14px text is present in CSS.
 
-- [ ] 22. Sticky header ghosting. `backdrop-filter: blur(12px)` over 94% white.
-  - Validity: REAL. `site/styles.css:91` confirmed `backdrop-filter: blur(12px)`. Also line 380 `blur(2px)`.
+- [x] 22. Sticky header ghosting. `backdrop-filter: blur(12px)` over 94% white.
+  - Validity: FIXED. `blur(12px)` removed. Only `blur(2px)` remains at CSS line 541.
 
 - [ ] 23. URLs carry spaces and mixed case. `992 Extra_Questions.html`, `2016 Fall.html`.
   - Validity: REAL (needs build). Source filenames confirmed with spaces. No slugification in emit tools found.
@@ -86,13 +88,13 @@ Each item is marked with validity status after checking against current source a
 ## Search
 
 - [x] 24. No ranking. `site/app.js:38` filters and takes first 30 in index order.
-  - Validity: BEING FIXED. `site/app.js` working tree adds full rank/locate implementation: title match scoring (exact=4, prefix=3, all-terms=2, detail=1), sort by score then title length then localeCompare. Uncommitted. Mark open until committed.
+  - Validity: FIXED. Rank function committed in `8a8d493d0` ("fix: rank search results and give every row a discriminator"). Title match scoring (exact=4, prefix=3, all-terms=2, detail=1), sort by score then title length.
 
-- [ ] 25. Every result row says "Page" and nothing else. `.search-result-detail` is `display:none` below 38rem.
-  - Validity: REAL (needs build). Working tree adds `locate` function (path-based disambiguation) to `site/app.js`, but the `display:none` below 38rem CSS rule is not changed. Partially fixed.
+- [x] 25. Every result row says "Page" and nothing else. `.search-result-detail` is `display:none` below 38rem.
+  - Validity: FIXED. `.search-result-detail` at CSS line 610 has `max-width: 20rem` with no `display:none`. The `display:none` below 38rem rule is gone.
 
 ## Notes
 
 Per `DESIGN_TODO.md` closing note: items 1, 2, 3, 24 are each a few lines and land immediately. Item 6 is the one that changes what the wiki *is* and needs a decision about transclusion before touching anything.
 
-Build is stale (`build/quarto/_site/wiki/` has 0 HTML files). Items marked "needs build" require `just build` before final verification. Items 3, 16, 24 have in-progress fixes in the uncommitted working tree from a prior session.
+Build is present (257 HTML wiki pages, built 2026-08-30, not in git). Items marked "needs build" can now be verified. Item 3 was already resolved — zero `title="?"` in source.

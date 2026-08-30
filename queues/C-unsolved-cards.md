@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4585 problem and exercise cards have no solution section and no incoming
+4566 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1404
-- Problems: 3181
-- Total: 4585
+- Exercises: 1397
+- Problems: 3169
+- Total: 4566
 
-## Exercises (1404)
+## Exercises (1397)
 
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
 - [ ] E-AMD-PX2UMZEG — "Intersections, products, and sums of ideals are ideals"
@@ -413,7 +413,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HAT-4.2-4 — "Homotopy of infinite wedge of spheres"
 - [ ] E-HAT-4.2-6 — "Relative Hurewicz implies absolute"
 - [ ] E-HAT-4.2-7 — "CW complexes with prescribed homotopy groups"
-- [ ] E-HAT-4.2-8 — "Suspension of acyclic CW complex is contractible"
 - [ ] E-HAT-4.2-9 — "Contractible mapping cone implies homotopy equivalence"
 - [ ] E-HAT-4.3-1 — "Map $\mathbb{RP}^\infty \to K(\mathbb{Z},2)$ trivial on homology"
 - [ ] E-HAT-4.3-10 — "Action of $\pi_1(E)$ on $\pi_n(F)$ for fibrations"
@@ -469,7 +468,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HE912 — "Details of the Nagata-Smirnov examples"
 - [ ] E-HK-0H3A — "Invertibility of upper-triangular matrices"
 - [ ] E-HK-0YG3 — "Row-reduced echelon form is unique given the solution set"
-- [ ] E-HK-101-1 — "Which functions on $\RR^2$ are bilinear forms?"
 - [ ] E-HK-101-11 — "Non-degenerate restrictions bound the rank below"
 - [ ] E-HK-101-12 — "Factoring forms through a non-singular form"
 - [ ] E-HK-101-14 — "Rank-one bilinear forms are exactly products of two functionals"
@@ -617,7 +615,6 @@ commit, and writing the solution removes the line.
 - [ ] E-HK-37-1 — "Computing the pullback $T^t f$ for three operators on $F^2$"
 - [ ] E-HK-37-2 — "The transpose of differentiation applied to an integral functional"
 - [ ] E-HK-37-3 — "The transpose of the commutator operator applied to trace"
-- [ ] E-HK-37-4 — "Characteristic vectors of $T$ give characteristic functionals of $T^t$"
 - [ ] E-HK-37-5 — "Vanishing of $\operatorname{trace}(A^t A)$ forces $A = 0$"
 - [ ] E-HK-37-7 — "Transposition is an isomorphism $L(V, V) \to L(V^*, V^*)$"
 - [ ] E-HK-37-8 — "Every functional on the matrix space is $A \mapsto \operatorname{trace}(B^t A)$"
@@ -1007,7 +1004,6 @@ commit, and writing the solution removes the line.
 - [ ] E-MUN-6-2 — "Subsets of finite sets are finite"
 - [ ] E-MUN-6-3 — "Cantor's theorem for $X^{\omega}$"
 - [ ] E-MUN-6-4 — "Finite simply ordered sets have a largest element"
-- [ ] E-MUN-6-5 — "Finiteness of Cartesian products"
 - [ ] E-MUN-6-7 — "Finiteness of function sets between finite sets"
 - [ ] E-MUN-7-1 — "Countability of $\mathbb{Q}$"
 - [ ] E-MUN-7-2 — "Bijections in the countability proofs for $\mathbb{Q}$"
@@ -1218,7 +1214,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS2.EX-6 — "Cauchy's theorem for a triangle with one bounded interior singularity"
 - [ ] E-SS2.EX-7 — "The image diameter bounds twice the derivative at the center"
 - [ ] E-SS2.EX-8 — "SS 2.8: Derivatives inherit polynomial growth on a strip"
-- [ ] E-SS2.PR-3 — "SS 2.PR-3: Morera's theorem for circles and toy contours"
 - [ ] E-SS3.EX-1 — "SS 3.1: Zeros of sin pi-z and residues of its reciprocal"
 - [ ] E-SS3.EX-10 — "SS 3.10: The integral of log x over x^2+a^2"
 - [ ] E-SS3.EX-11 — "SS 3.11: The mean value of log of 1 minus a e^(i-theta)"
@@ -1280,7 +1275,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS6.EX-6 — "SS 6.6: Odd harmonic partial sums approach gamma/2 + log 2"
 - [ ] E-SS6.EX-7 — "SS 6.7: The Beta function and its relation to Gamma"
 - [ ] E-SS6.EX-9 — "The hypergeometric series  was defined in Exercise 16 of Chapter 1"
-- [ ] E-SS6.PR-1 — "This problem provides further estimates for  and  near"
 - [ ] E-SS7.EX-1 — "Bounded partial sums give convergence of the Dirichlet series for Re(s) > 0"
 - [ ] E-SS7.EX-3 — "SS 7.3: The Dirichlet series of the Moebius function and 1/zeta"
 - [ ] E-SS7.EX-4 — "Dirichlet L-series for periodic coefficients"
@@ -1304,7 +1298,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS8.EX-4 — "SS 8.4: No holomorphic surjection from the disc onto the plane"
 - [ ] E-SS8.EX-5 — "SS 8.5: A conformal map from the half-disc to the upper half-plane"
 - [ ] E-SS8.EX-6 — "Give another proof of Lemma 1"
-- [ ] E-SS8.EX-8 — "Find a harmonic function u in the open first quadrant that extends continuously "
 - [ ] E-SS8.EX-9 — "SS 8.9: An unbounded harmonic function with zero boundary values"
 - [ ] E-SS8.PR-1 — "Isogonality and isotropy at a point"
 - [ ] E-SS8.PR-3 — "Hyperbolic metric on the disc and the Schwarz-Pick lemma"
@@ -1422,7 +1415,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3181)
+## Problems (3169)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -1480,7 +1473,6 @@ commit, and writing the solution removes the line.
 - [ ] P-2TOZB — "Hungerford 4.6.2"
 - [ ] P-2TVO4 — "The splitting field of $(x^p-2)(x^q-2)$ over $\mathbb{Q}$"
 - [ ] P-2UD52 — "Groups of order $pq$ ($q<p$) are never simple, and are cyclic if $q\nmid(p-1)$"
-- [ ] P-2UVDX — "$e^{-\pi\xi^2}=\int_{-\infty}^\infty e^{-\pi x^2}e^{2\pi i x\xi}\,dx$ for all $\xi\in\CC$"
 - [ ] P-2VG2D — "The integers form a PID"
 - [ ] P-2WRPV — "Cokernel of a map $\ZZ^4\to\ZZ^3$ is $\ZZ/12\ZZ$"
 - [ ] P-2WRUJ — "The identity $\sum_{m=k}^n\binom{m}{k}=\binom{n+1}{k+1}$"
@@ -2216,7 +2208,6 @@ commit, and writing the solution removes the line.
 - [ ] P-APAF04F — "Character values on conjugate partitions of $S_n$"
 - [ ] P-APAF06A — "Eigenpair of algebraic and geometric multiplicity one yields a complementary block form"
 - [ ] P-APAF06C — "Center when $G/Z(G)$ is cyclic; center of a nonabelian group of order $p^3$; order-$16$ example"
-- [ ] P-APAF06D — "Finiteness and order of $\langle x,y\mid x^3=1,\,xyx^{-1}=y^n\rangle$"
 - [ ] P-APAF07A — "Singular Value Decomposition Theorem"
 - [ ] P-APAF07C — "Matrices near diagonalizable; orthonormal eigenbasis iff $A^HA=AA^H$"
 - [ ] P-APAF11A — "Character table of $S_4$ via Murnaghan–Nakayama; restriction of $A^{(2,2)}$"
@@ -2279,7 +2270,6 @@ commit, and writing the solution removes the line.
 - [ ] P-APAS04I — "Frobenius reciprocity and transitivity of induced representations"
 - [ ] P-APAS04J — "The prime ring of an integral domain is $\mathbb{Z}$ or $\mathbb{Z}_p$"
 - [ ] P-APAS04K — "Gröbner basis for the ideal cut out by $x^2+2y^2=2$ and $x^2-xy+y^2=1$"
-- [ ] P-APAS04M — "Invariants of the order-four rotation; Molien series and Cohen–Macaulay generators"
 - [ ] P-APAS04N — "Permutation representation from cosets; fixed-point character on $S_n$"
 - [ ] P-APAS05A — "Skew part map $T(X)=\frac12(X-X^T)$ on $M_n(\mathbb{R})$"
 - [ ] P-APAS05C — "Eigenpair of algebraic and geometric multiplicity one yields a complementary block form"
@@ -2509,7 +2499,6 @@ commit, and writing the solution removes the line.
 - [ ] P-CAFA16B — "Convergence of the series Σ f(z^n) for a self-map of the unit disk"
 - [ ] P-CAFA16C — "Evaluation of the integral of log(x)/(x^2+1) via residues"
 - [ ] P-CAFA16D — "An analytic function on the disk vanishing on an arc of the boundary is identically zero"
-- [ ] P-CAFA16E — "Normal family of functions vanishing at a point has a convergent subsequence"
 - [ ] P-CAFA16G — "Analytic continuation of the logarithm along a path is always a branch of the logarithm"
 - [ ] P-CAFA16H — "An L^2 harmonic function on C satisfies the mean value property and must be zero"
 - [ ] P-CAFA17A — "Evaluation of the integral of (log x)^2/(1+x^2) via residues"
@@ -3080,7 +3069,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHUFA01RAE — "Lp inclusion relationships"
 - [ ] P-JHUFA02CAA — "A continuous nowhere differentiable function built from the triangle wave"
 - [ ] P-JHUFA02CAB — "the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i"
-- [ ] P-JHUFA02CAC — "Equicontinuity and the Arzela-Ascoli theorem on a Sobolev family"
 - [ ] P-JHUFA02CAE — "The sum of the odd sine series and the Basel problem"
 - [ ] P-JHUFA02CAF — "A holomorphic function on an annulus need not extend, but extends meromorphically"
 - [ ] P-JHUFA02CAG — "there is no one-to-one holomorphic mapping of the open annulus onto the puncture"
@@ -3133,7 +3121,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHUFA11AND — "for all , there exists a unique holomorphic function such that and Notation: |A|"
 - [ ] P-JHUFA11ANE — "An L2-bounded sequence in L2 of the line without convergent subsequences"
 - [ ] P-JHUFA11ANF — "the Fourier transfo"
-- [ ] P-JHUFA11ANG — ", be the distribution function of a given , where Does tend to a limit as Give a"
 - [ ] P-JHUFA11ANH — "No convolution identity in $L^1(\RR^n)$"
 - [ ] P-JHUMAY06ANA — "No holomorphic logarithm of a meromorphic function with a pole"
 - [ ] P-JHUMAY06ANB — "Zeros of a septic in the disks of radius one and two"
@@ -3145,7 +3132,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHUMAY06ANL — "Cesaro means of an orthonormal sequence converge to zero a.e."
 - [ ] P-JHUMAY09ANA — "all meromorphic functions f on C such that $$ Give explicit formulas for the fun"
 - [ ] P-JHUMAY09ANB — "your answer is correct."
-- [ ] P-JHUMAY09ANC — "Uniformly convergent holomorphic sequences with a single zero each"
 - [ ] P-JHUMAY09AND — "the Fourier transform $$ Show th"
 - [ ] P-JHUMAY09ANE — "the convolution $f\mathbb { R } .$"
 - [ ] P-JHUMAY09ANF — "be the unit circle with the usual Lebesgue measure. For each let be a nonnegativ"
@@ -3520,7 +3506,6 @@ commit, and writing the solution removes the line.
 - [ ] P-PDAPQ — "Examples of maximal ideals, prime non-maximal ideals, torsion-free modules, UFDs, and non-Noetherian rings"
 - [ ] P-PDRT9 — "Intermediate fields of a Galois extension with group $\ZZ_{42}$"
 - [ ] P-PE7IZ — "$\ZZ$ is initial among unital rings, so every abelian group has a unique $\ZZ$-module structure"
-- [ ] P-PF5MC — "Galois group of $x^5-2$"
 - [ ] P-PFUVL — "Which groups of order 4 can be realised as a Galois group over $\QQ$?"
 - [ ] P-PGDPX — "Integral equals integral of distribution function"
 - [ ] P-PHHXJ — "Integrals of $\sqrt{1-x^2}$, $\sqrt{16-x^2}$ on $[-4,4]$, and $(1+x)\sqrt{1-x^2}$ on $[-1,1]$"
@@ -3665,7 +3650,6 @@ commit, and writing the solution removes the line.
 - [ ] P-RAF22E — "Invertibility on Hilbert space is equivalent to T and T* both bounded below"
 - [ ] P-RAF22F — "Adding an L^1 density to a Radon measure stays Radon"
 - [ ] P-RAF22G — "A distribution supported at the origin is a finite linear combination of derivatives of delta"
-- [ ] P-RAF23A — "True/false on distributional derivative of monotone function and countable sets"
 - [ ] P-RAF23C — "Measure equality implies density one"
 - [ ] P-RAF23D — "Sinc function, Shannon sampling, and bandlimited functions"
 - [ ] P-RAF23E — "Parallelogram law implies Hilbert space"
@@ -3944,7 +3928,6 @@ commit, and writing the solution removes the line.
 - [ ] P-T15B4 — "Reduced singular homology of $S^1\times(S^1\vee S^1)$"
 - [ ] P-T16A1 — "Closure of a product is the product of closures"
 - [ ] P-T16A2 — "Two closed sets with connected union and intersection are connected"
-- [ ] P-T16A3 — "Compactness under the intersection and union of Euclidean and excluded-point topologies"
 - [ ] P-T16B1 — "The diagonal of the torus is a retract but not a deformation retract"
 - [ ] P-T16B2 — "Residual finiteness detected by finite-sheeted covers of a presentation complex"
 - [ ] P-T16B3 — "Homeomorphic bases have homeomorphic universal covers"
@@ -4030,7 +4013,6 @@ commit, and writing the solution removes the line.
 - [ ] P-TOP-WORKSHOP-2020-WS2A-HW5 — "Analyze the topologist’s sine wave (warm-up)"
 - [ ] P-TOP-WORKSHOP-2020-WS2A-P1 — "An open connected subset of Euclidean space is path connected"
 - [ ] P-TOP-WORKSHOP-2020-WS2B-HW2 — "Construct the radial deformation retraction of punctured Euclidean space (warm-up)"
-- [ ] P-TOP-WORKSHOP-2020-WS2B-HW3 — "Construct the mapping cylinder of a constant disk map (warm-up)"
 - [ ] P-TOP-WORKSHOP-2020-WS2B-P3 — "Homotopy is compatible with composition, but cancellation can fail"
 - [ ] P-TOP-WORKSHOP-2020-WS3A-HW2 — "State the Seifert–van Kampen theorem (warm-up)"
 - [ ] P-TOP-WORKSHOP-2020-WS3A-HW3 — "Describe the classification of compact boundaryless surfaces (warm-up)"
@@ -4049,7 +4031,6 @@ commit, and writing the solution removes the line.
 - [ ] P-TOP-WORKSHOP-2020-WS5-P6 — "Apply Seifert--van Kampen to a wedge sum and identify a presentation complex as a wedge of familiar spaces"
 - [ ] P-TOP-WORKSHOP-2020-WS5-P8 — "Cell structure on $S^2$ and long exact sequence computation of $H_i(S^n)$"
 - [ ] P-TOP-WORKSHOP-D1-02 — "Cartesian products of locally compact spaces (closure formulation)"
-- [ ] P-TOP-WORKSHOP-D1-07 — "A continuous bijection from compact to Hausdorff is a homeomorphism"
 - [ ] P-TOP-WORKSHOP-D1-08 — "A compact subset of a product with the indiscrete two-point space"
 - [ ] P-TOP-WORKSHOP-D1-09 — "A finite intersection of closed sets contained in a prescribed open neighborhood"
 - [ ] P-TOP-WORKSHOP-D1-W2 — "Compactness warm-up statement with $A\subseteq Y$ (verbatim source wording)"

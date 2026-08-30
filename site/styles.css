@@ -443,6 +443,18 @@ mjx-container[display="true"] {
   margin-top: 0.5rem;
 }
 
+/* List rhythm: normalise the spacing browsers apply inconsistently between
+   consecutive list items, whether loose (multiple paragraphs) or tight (bare
+   text). The single margin value keeps prose and math lists visually even. */
+.page-body :is(ul, ol) {
+  padding-inline-start: 1.5rem;
+  margin-block: 0.5rem;
+}
+
+.page-body :is(ul, ol) > li + li {
+  margin-top: 0.25rem;
+}
+
 .page-body blockquote {
   margin-inline: 0;
   padding-left: 1rem;

@@ -40,11 +40,15 @@ Since $X$ is locally compact Hausdorff and second-countable, $X^*$ is a compact 
 <2>3. **Construction of closed embedding into $\mathbb{R}^{2m+2}$:** Let $p_0 = g(\infty) \in \mathbb{R}^{2m+1}$.
 For $x \in X$, $g(x) \neq p_0$.
 Define $F: X \to \mathbb{R}^{2m+1} \times \mathbb{R} = \mathbb{R}^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\|g(x) - p_0\|} \right).$$ <2>4. **Embedding and properness:** - Since $g$ and $\|\cdot - p_0\|^{-1}$ are continuous, $F$ is continuous.
+
 - Since $g|_X$ is injective, $F$ is injective.
+
 - If a sequence $(x_k)$ in $X$ leaves every compact set of $X$, then $x_k \to \infty$ in $X^*$.
+
 - Then $g(x_k) \to g(\infty) = p_0$, so $\|g(x_k) - p_0\| \to 0$, which forces the last coordinate $\frac{1}{\|g(x_k) - p_0\|} \to \infty$.
+
 - Hence $\|F(x_k)\| \to \infty$, showing that $F$ is a proper map.
-<2>5. Any proper continuous injection into a Hausdorff space is a closed embedding, so $F(X)$ is closed in $\mathbb{R}^{2m+2}$.
+  <2>5. Any proper continuous injection into a Hausdorff space is a closed embedding, so $F(X)$ is closed in $\mathbb{R}^{2m+2}$.
 
 <1>3. Conclusion: $X$ embeds as a closed subspace of $\mathbb{R}^{2m+2}$ with $N = 2m+2$.
 Q.E.D.

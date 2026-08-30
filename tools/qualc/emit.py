@@ -2168,6 +2168,7 @@ def mathjax_header(macros: dict) -> str:
         "  window.MathJax = {\n"
         "    tex: { macros: " + json.dumps(mathjax_macros) + ", "
         "inlineMath: [['$','$'],['\\\\(','\\\\)']] },\n"
+        "    chtml: { scale: 0.95, matchFontHeight: true },\n"
         "    options: { renderActions: { wrapAligned: [15,\n"
         "      function (doc) { for (var m of doc.math) { wrap(m); } },\n"
         "      function (math) { wrap(math); }\n"

@@ -11,8 +11,8 @@ Two kinds of queue files:
 
 | File | Checkboxes | What |
 | --- | ---: | --- |
-| `A-title-question-marks.md` | 95 | Wiki files with `:::{.proof title="?"}` at HEAD. 108 instances fixed in uncommitted working tree. |
-| `B-naked-urls.md` | 17 | Wiki files with bare `<https://...>` link text. 161 conversions in uncommitted working tree. |
+| `A-title-question-marks.md` | 0 | Wiki files with `:::{.proof title="?"}` at HEAD. All resolved — zero instances remain. |
+| `B-naked-urls.md` | 0 | Wiki files with bare `<https://...>` link text. All 161 converted and committed. |
 | `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
@@ -22,17 +22,17 @@ Two kinds of queue files:
 
 | File | Open | Done | Owner | Notes |
 | --- | ---: | ---: | --- | --- |
-| `01-corpus-defects.md` | 2 | 2 | #2 (OPEN) | 1.3 done, 1.4 partial |
-| `02-publish-authored-pages.md` | 4 | 0 | #5, #23 (COMPLETED) | Needs rebuild |
+| `01-corpus-defects.md` | 3 | 1 | #2 (OPEN) | 1.3 done, 1.1/1.2/1.4 open |
+| `02-publish-authored-pages.md` | 4 | 0 | #5, #23 (COMPLETED) | Needs build inspection |
 | `03-publish-subject-branches.md` | 2 | 6 | #24–#29 (COMPLETED) | Publication done; proof not |
 | `04-reader-exam-generator.md` | 3 | 4 | #10 (COMPLETED) | 4.6/4.7 decisions unmade |
-| `05-repair-rendered-residue.md` | 3 | 0 | #41 (COMPLETED) | 22 defects untouched |
-| `06-prove-deployed-site.md` | 7 | 0 | #30 (COMPLETED) | Needs rebuild |
+| `05-repair-rendered-residue.md` | 3 | 0 | #41 (COMPLETED) | ~9 design defects remain (Queue 11) |
+| `06-prove-deployed-site.md` | 7 | 0 | #30 (COMPLETED) | Build exists (257 HTML pages) |
 | `07-source-preservation-closeout.md` | 2 | 4 | #11 (COMPLETED) | M4/M6 record-keeping |
-| `08-owner-decisions.md` | 2 | 0 | none | Needs rebuild + decision |
+| `08-owner-decisions.md` | 2 | 0 | none | Build exists; decisions unmade |
 | `09-author-solutions.md` | 6 | 0 | #2 (OPEN) | Repeating loop |
 | `10-close-roadmap.md` | 1 | 4 | #1 (CLOSED) | 10.3 contested |
-| `11-design-issues.md` | 22 | 3 | #41 surface | 3 being fixed in working tree |
+| `11-design-issues.md` | 9 | 16 | #41 surface | 10 fixed since original write (2026-08-30) |
 
 ## How to use
 

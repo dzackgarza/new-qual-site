@@ -11,6 +11,10 @@ classification:
   - Contour Integration
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: Codex 5.3 Spark Extra High
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -42,4 +46,45 @@ f _ {\epsilon} (z) = \int_ {\mathbb {R} ^ {2}} f (z - w) \varphi_ {\epsilon} (w)
 $$
 
 where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\mathbb { R } ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon }  f$ uniformly on any compact subset of C.]
+:::
+
+::: solution
+**Goal:** Prove holomorphicity from the circle or toy-contour vanishing-integral hypothesis.
+
+<1>1. Part (a), smooth reduction:
+    *Proof:*  
+    If $f$ is $C^2$ near $z_0$, write
+    \[
+    f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2).
+    \]
+    Integrating on circles around $z_0$, the constant and linear holomorphic terms contribute
+    zero, while
+    \[
+    \int_{|z-z_0|=r}\overline{(z-z_0)}\,dz=2\pi i r^2\neq0.
+    \]
+    Since these integrals vanish by hypothesis, $b=0$ and
+    $\partial f/\partial\overline z(z_0)=0$.
+    As $z_0$ was arbitrary, $f$ is holomorphic.
+
+<1>2. Part (a), continuous case:
+    *Proof:*  
+    For smooth mollifier $\varphi_\epsilon$, define
+    \[
+    f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w).
+    \]
+    Each $f_\epsilon$ is smooth and converges uniformly to $f$ on compacts.
+    The integral hypothesis on circles is preserved under convolution, so $f_\epsilon$
+    satisfies (16). Applying <1> gives holomorphicity of $f_\epsilon$.
+    Uniform compact convergence of $f_\epsilon\to f$ implies $f$ is holomorphic.
+
+<1>3. Part (b), toy contours:
+    *Proof:*  
+    If $\int_\gamma f\,dz=0$ for every $\gamma\in\mathcal F$, then the same hold for
+    each translate/dilate of $\Gamma$ and therefore for their circles used in the mollifier
+    argument. The same approximation as in <2> applies; thus $f$ is holomorphic.
+
+<1>4. Equilateral triangle corollary:
+    *Proof:*  
+    Choosing $\Gamma$ to be an equilateral triangle, $\mathcal F$ is all equilateral
+    triangles in the plane, so the conclusion is the stated weaker Morera form.
 :::

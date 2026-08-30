@@ -6,13 +6,13 @@ Owner: [issue #41](https://github.com/dzackgarza/new-qual-site/issues/41) (COMPL
 ## Open items
 
 - [ ] 5.1 Reproduce each remaining rendered-page defect.
-  - Validity: PARTIALLY DONE. `DESIGN_TODO.md` (2026-08-27) reproduced 25 defects by rendering the built site. This item is satisfied for the 25 defects; any further defects need a rebuild (current build has no wiki pages).
+  - Validity: PARTIALLY DONE. `DESIGN_TODO.md` (2026-08-27) reproduced 25 defects. 7 are now fixed (defects 13, 16, 19, 20, 22, 24, 25 per Queue 11 re-verification 2026-08-30). Build has 257 HTML wiki pages (not stale).
 
 - [ ] 5.2 Repair one defect at a time.
-  - Validity: IN PROGRESS (uncommitted). Working tree has fixes for defect 3 (108 `title="?"` removed across 91 files) and defect 16 (naked URLs → link text). These are uncommitted. Defect 24 (search ranking) has a full rank/locate implementation in `site/app.js` working tree. None of the other 22 defects are addressed.
+  - Validity: IN PROGRESS. Defects 3, 11, 12, 13, 16, 19, 20, 22, 24, 25 are fixed (10 total). ~9 defects remain open per Queue 11.
 
 - [ ] 5.3 Render and inspect the affected page after each repair.
-  - Validity: NOT DONE. Cannot inspect without a build. The build directory has no wiki pages. This step requires `just build` first.
+  - Validity: NOT DONE. Build exists (257 HTML wiki pages, built 2026-08-30) but is not in git. Can now verify after each repair.
 
 ## Verification (2026-08-27)
 
@@ -20,4 +20,4 @@ Issue #41 closed COMPLETED: "The remaining defects were already repaired in comm
 
 `DESIGN_TODO.md` (2026-08-27, 13 days after that repair) records 25 NEW rendered defects. These are post-repair residue. See `queues/11-design-issues.md` for the concrete list.
 
-The working tree has in-progress fixes from a prior session for defects 3, 16, and 24, but they are uncommitted and the other 22 defects are untouched.
+Defects 3, 11, 12, 13, 16, 19, 20, 22, 24, 25 are fixed (10 total). ~9 defects remain open. See `queues/11-design-issues.md` for the updated concrete list (re-verified 2026-08-30).
