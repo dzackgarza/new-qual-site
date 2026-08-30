@@ -5,7 +5,7 @@ Source: `DESIGN_TODO.md` (committed 2026-08-27, `ab0b3d190`) Evidence: 12 pages 
 Each item is marked with validity status after checking against current source and build.
 
 Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
-15 of 25 defects fixed since original write (defects 3, 4, 10, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25).
+14 of 25 defects fixed since original write (defects 3, 4, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 25).
 
 ## Broken, visible on almost every page
 
@@ -63,8 +63,13 @@ Re-verified 2026-08-30. Build has 257 HTML wiki pages (not stale).
     Source-level: the page exists in wiki source.
     The heading structure is a source authoring choice.
 
-## Typography and layout- [x] 10. Measure too wide. Content column `52rem` ≈ 832px (`site/styles.css:155`).
-  - Validity: FIXED. Narrowed to `45rem` (720px) — Tufte-style content width. Updated across grid templates and responsive rules.
+## Typography and layout
+
+- [ ] 10. Measure too wide.
+  Content column `52rem` ≈ 832px (`site/styles.css:155`).
+
+  - Validity: REAL. `site/styles.css:155,162,174,178` confirmed `52rem` columns.
+    Defect stands.
 
 - [x] 11. Three type families compete.
   No `chtml: { scale, matchFontHeight }` in MathJax config.
