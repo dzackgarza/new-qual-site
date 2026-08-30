@@ -30,4 +30,4 @@ The rule of thumb: properties defined by factorization survive, properties defin
 
 :::
 
-The irreducibility criteria and the field theory built on $k[x]$ are [[Algebra/fields/polynomials|Polynomials over a field]].
+The irreducibility criteria and the field theory built on $k[x]$ are [[algebra/fields/polynomials|Polynomials over a field]].

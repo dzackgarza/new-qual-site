@@ -7,14 +7,14 @@ order: 9
 
 Qual-prep weeks, in the order they were given.
 
-- [[Algebra Week 1 Groups Warmup|Week 1, groups]].
+- [[algebra-week-1-groups-warmup|Week 1, groups]].
 
-- [[Algebra Week 2 Finite Group Theory|Week 2, finite groups]].
+- [[algebra-week-2-finite-group-theory|Week 2, finite groups]].
 
-- [[Algebra Week 3 Sylow Theory|Week 3, Sylow]].
+- [[algebra-week-3-sylow-theory|Week 3, Sylow]].
 
-- [[Algebra Week 4 Rings|Week 4, rings]].
+- [[algebra-week-4-rings|Week 4, rings]].
 
-- [[Algebra Week n Rep Theory|Representation theory]].
+- [[algebra-week-n-rep-theory|Representation theory]].
 
-- [[Algebra Week n+1 Linear Algebra|Linear algebra]].
+- [[algebra-week-n-1-linear-algebra|Linear algebra]].

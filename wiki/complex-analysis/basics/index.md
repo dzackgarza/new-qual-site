@@ -7,16 +7,16 @@ order: 12
 
 The undergraduate layer, and the reference tables the rest of the subject draws on.
 
-- [[Tips_Techs|Info / Tips / Techniques]], the working list of named theorems.
+- [[tips-techs|Info / Tips / Techniques]], the working list of named theorems.
 
-- [[Precalculus|Precalculus Preliminaries]].
+- [[precalculus|Precalculus Preliminaries]].
 
-- [[Calculus_Preliminaries|Calculus Preliminaries]].
+- [[calculus-preliminaries|Calculus Preliminaries]].
 
-- [[Series Reference|Series: Reference]], the standard series and the factorial notation.
+- [[series-reference|Series: Reference]], the standard series and the factorial notation.
 
-- [[Complex Arithmetic|Complex Arithmetic]], the problem sets.
+- [[complex-arithmetic|Complex Arithmetic]], the problem sets.
 
-- [[Analytic_NT|Analytic Number Theory Faves]], the $\zeta$ and $L\dash$function asides.
+- [[analytic-nt|Analytic Number Theory Faves]], the $\zeta$ and $L\dash$function asides.
 
-Holomorphy itself is [[Complex_Analysis/holomorphic-functions/index|Holomorphic functions]].
+Holomorphy itself is [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].

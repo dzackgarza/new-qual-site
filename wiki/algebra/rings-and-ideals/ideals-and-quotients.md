@@ -80,7 +80,7 @@ $\impliedby$: For $x\in R\nonzero$, $Rx = R$ gives $1 = rx$ for some $r$, so $x 
 
 [[E-G4KAC]]
 
-Zorn's lemma, and the maximal ideal it produces, are on [[Algebra/rings-and-ideals/commutative-algebra|Commutative algebra]].
+Zorn's lemma, and the maximal ideal it produces, are on [[algebra/rings-and-ideals/commutative-algebra|Commutative algebra]].
 
 ## Nilradicals and Jacobson radicals, worked
 

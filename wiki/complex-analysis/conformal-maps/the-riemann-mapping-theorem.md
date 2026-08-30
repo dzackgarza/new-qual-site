@@ -65,7 +65,7 @@ h'_w(w) &= {1\over 1 - \abs{w}^2}
 :::
 
 :::{.remark title="What the proof is made of"}
-Every ingredient is from earlier in the subject: [[Complex_Analysis/conformal-maps/normal-families-and-montel|Montel]] supplies compactness, [[Complex_Analysis/counting-zeros/hurwitz|Hurwitz]] supplies injectivity of the limit, [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|the Cauchy estimate]] bounds the derivative so the supremum is finite, and the Schwarz lemma is behind the hyperbolic translations.
+Every ingredient is from earlier in the subject: [[complex-analysis/conformal-maps/normal-families-and-montel|Montel]] supplies compactness, [[complex-analysis/counting-zeros/hurwitz|Hurwitz]] supplies injectivity of the limit, [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|the Cauchy estimate]] bounds the derivative so the supremum is finite, and the Schwarz lemma is behind the hyperbolic translations.
 The theorem is not proved by a new idea; it is proved by having all of them at once.
 
 :::

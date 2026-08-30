@@ -81,7 +81,7 @@ The function $g(z) \da f(Rz)$ satisfies the hypotheses of the Schwarz lemma, so 
 
 :::
 
-Which problems these close, and what else closes them, is [[Complex_Analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]].
+Which problems these close, and what else closes them, is [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]].
 
 ## Exercises
 

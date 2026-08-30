@@ -7,14 +7,14 @@ order: 11
 
 Books, problem lists, and solutions for the algebra qual.
 
-- [[Algebra/Resources/Resources|Resources (Algebra)]], the bibliography and links.
+- [[algebra/resources/resources|Resources (Algebra)]], the bibliography and links.
 
-- [[Syllabus|Topics and Remarks]], a topic checklist.
+- [[syllabus|Topics and Remarks]], a topic checklist.
 
-- [[Algebra/Resources/Books_Notes|Algebra Books and Notes]], the annotated reading.
+- [[algebra/resources/books-notes|Algebra Books and Notes]], the annotated reading.
 
-- [[Algebra/Resources/Problems|Algebra Problems]], the problem index.
+- [[algebra/resources/problems|Algebra Problems]], the problem index.
 
-- [[Solutions_Algebra|Solutions (Algebra)]], the solution index.
+- [[solutions-algebra|Solutions (Algebra)]], the solution index.
 
-- [[Algebra/Resources/Source_Archive|Algebra Source Archive]], the imported exams by source.
+- [[algebra/resources/source-archive|Algebra Source Archive]], the imported exams by source.

@@ -30,7 +30,7 @@ Nothing is proved here; each result links to the chapter that proves it and to t
 
 [[T-NRSFZ]]
 
-Proved in [[Complex_Analysis/holomorphic-functions/index|Holomorphic functions]].
+Proved in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 ## Cauchy theory
 
@@ -60,7 +60,7 @@ Proved in [[Complex_Analysis/holomorphic-functions/index|Holomorphic functions]]
 
 [[T-Q3GGF]]
 
-Proved in [[Complex_Analysis/cauchy-theory/index|Cauchy theory]].
+Proved in [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 ## Singularities
 
@@ -76,7 +76,7 @@ Proved in [[Complex_Analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-DDOWW]]
 
-Proved in [[Complex_Analysis/singularities/index|Singularities]].
+Proved in [[complex-analysis/singularities/index|Singularities]].
 
 ## Residues and contours
 
@@ -86,7 +86,7 @@ Proved in [[Complex_Analysis/singularities/index|Singularities]].
 
 [[T-ZO5UU]]
 
-Proved in [[Complex_Analysis/residues-and-contours/index|Residues and contours]]. The integrals themselves are on [[Complex_Analysis/standard-integrals|Standard integrals]].
+Proved in [[complex-analysis/residues-and-contours/index|Residues and contours]]. The integrals themselves are on [[complex-analysis/standard-integrals|Standard integrals]].
 
 ## Counting zeros
 
@@ -98,7 +98,7 @@ Proved in [[Complex_Analysis/residues-and-contours/index|Residues and contours]]
 
 [[T-FZWEC]]
 
-Proved in [[Complex_Analysis/counting-zeros/index|Counting zeros]].
+Proved in [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 ## Conformal maps
 
@@ -118,9 +118,9 @@ Proved in [[Complex_Analysis/counting-zeros/index|Counting zeros]].
 
 [[T-4MDS6]]
 
-Proved in [[Complex_Analysis/conformal-maps/index|Conformal maps]].
+Proved in [[complex-analysis/conformal-maps/index|Conformal maps]].
 
 ## What to check before using each one
 
 The statements above are the easy half.
-The hypotheses that actually decide exam problems are collected on [[Complex_Analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the examples showing each hypothesis is necessary are on [[Complex_Analysis/counterexamples|Counterexamples]].
+The hypotheses that actually decide exam problems are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the examples showing each hypothesis is necessary are on [[complex-analysis/counterexamples|Counterexamples]].

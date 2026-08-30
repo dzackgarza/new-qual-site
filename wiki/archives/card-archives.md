@@ -9,12 +9,12 @@ The pages that list the corpus by its source: the exams and artifacts of each su
 
 ## Source archives
 
-- [[Prelims_Source_Archive]]
+- [[prelims-source-archive]]
 
-- [[Algebra/Resources/Source_Archive]]
+- [[algebra/resources/source-archive]]
 
-- [[Real_Analysis/Resources/Source_Archive]]
+- [[real-analysis/resources/source-archive]]
 
-- [[Complex_Analysis/Resources/Source_Archive]]
+- [[complex-analysis/resources/source-archive]]
 
-- [[Topology/Resources/Source_Archive]]
+- [[topology/resources/source-archive]]

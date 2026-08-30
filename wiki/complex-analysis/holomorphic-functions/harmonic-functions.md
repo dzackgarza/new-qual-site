@@ -72,7 +72,7 @@ F(r) = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it}) \dt \too u(z_0)
 
 :::{.remark title="The converse, which is the useful direction"}
 A continuous $u$ satisfying the mean value property on every disc is automatically harmonic.
-That is what makes the property a *characterization* rather than a corollary, and it is why harmonic functions inherit the maximum principle from [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|the same argument]] that gives it for holomorphic ones: the proof there uses only the averaging identity.
+That is what makes the property a *characterization* rather than a corollary, and it is why harmonic functions inherit the maximum principle from [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|the same argument]] that gives it for holomorphic ones: the proof there uses only the averaging identity.
 
 :::
 

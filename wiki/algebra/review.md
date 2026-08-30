@@ -29,7 +29,7 @@ Every statement the exam assumes, in the order the chapters develop them.
 
 [[T-OSJ5S]]
 
-Proved in [[Algebra/groups/index|Groups]].
+Proved in [[algebra/groups/index|Groups]].
 
 ## Group actions
 
@@ -57,7 +57,7 @@ Proved in [[Algebra/groups/index|Groups]].
 
 [[PR-PADL7]]
 
-Proved in [[Algebra/group-actions/index|Group actions]].
+Proved in [[algebra/group-actions/index|Group actions]].
 
 ## Rings and ideals
 
@@ -75,7 +75,7 @@ Proved in [[Algebra/group-actions/index|Group actions]].
 
 [[T-QSTRJ]]
 
-Proved in [[Algebra/rings-and-ideals/index|Rings and ideals]].
+Proved in [[algebra/rings-and-ideals/index|Rings and ideals]].
 
 ## Modules
 
@@ -89,7 +89,7 @@ Proved in [[Algebra/rings-and-ideals/index|Rings and ideals]].
 
 [[PR-RPL4Q]]
 
-Proved in [[Algebra/modules/index|Modules]].
+Proved in [[algebra/modules/index|Modules]].
 
 ## Linear algebra
 
@@ -109,7 +109,7 @@ Proved in [[Algebra/modules/index|Modules]].
 
 [[PR-GV5CF]]
 
-Proved in [[Algebra/linear-algebra/index|Linear algebra]].
+Proved in [[algebra/linear-algebra/index|Linear algebra]].
 
 ## Fields and Galois theory
 
@@ -137,7 +137,7 @@ Proved in [[Algebra/linear-algebra/index|Linear algebra]].
 
 [[T-EN5H4]]
 
-Proved in [[Algebra/fields/index|Fields]] and [[Algebra/galois-theory/index|Galois theory]].
+Proved in [[algebra/fields/index|Fields]] and [[algebra/galois-theory/index|Galois theory]].
 
 ## Representations
 
@@ -145,8 +145,8 @@ Proved in [[Algebra/fields/index|Fields]] and [[Algebra/galois-theory/index|Galo
 
 [[T-YHH3M]]
 
-Proved in [[Algebra/representations/index|Representations]].
+Proved in [[algebra/representations/index|Representations]].
 
 ## What to check before using each one
 
-The hypotheses that decide problems are collected on the recognition pages, and the examples showing each is necessary are on [[Algebra/counterexamples|Counterexamples]].
+The hypotheses that decide problems are collected on the recognition pages, and the examples showing each is necessary are on [[algebra/counterexamples|Counterexamples]].

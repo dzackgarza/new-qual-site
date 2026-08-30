@@ -121,7 +121,7 @@ Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $
 
 ## Singularities and omitted values
 
-Stated here because the fundamental theorem of algebra is proved from them below; they are developed on [[Complex_Analysis/singularities/index|Singularities]].
+Stated here because the fundamental theorem of algebra is proved from them below; they are developed on [[complex-analysis/singularities/index|Singularities]].
 
 [[T-ISZP3]]
 

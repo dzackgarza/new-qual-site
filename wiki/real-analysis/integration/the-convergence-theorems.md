@@ -9,7 +9,7 @@ problems:
 
 # The convergence theorems
 
-Which one a problem wants is [[Real_Analysis/integration/which-convergence-theorem|Which convergence theorem?]]; this page is their statements and proofs.
+Which one a problem wants is [[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]]; this page is their statements and proofs.
 
 ## Monotone convergence
 

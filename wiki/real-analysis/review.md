@@ -15,7 +15,7 @@ order: 7
 
 [[T-OTR5M]]
 
-Proved in [[Real_Analysis/measure/index|Measure]].
+Proved in [[real-analysis/measure/index|Measure]].
 
 ## Integration
 
@@ -35,7 +35,7 @@ Proved in [[Real_Analysis/measure/index|Measure]].
 
 [[T-BFOJT]]
 
-Proved in [[Real_Analysis/integration/index|Integration]].
+Proved in [[real-analysis/integration/index|Integration]].
 
 ## Fubini and Tonelli
 
@@ -45,7 +45,7 @@ Proved in [[Real_Analysis/integration/index|Integration]].
 
 [[T-X7XZX]]
 
-Proved in [[Real_Analysis/fubini-tonelli/index|Fubini and Tonelli]].
+Proved in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 ## $L^p$
 
@@ -59,7 +59,7 @@ Proved in [[Real_Analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 [[T-S3C3S]]
 
-Proved in [[Real_Analysis/lp-spaces/index|$L^p$ spaces]].
+Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
 
 ## Fourier
 
@@ -73,7 +73,7 @@ Proved in [[Real_Analysis/lp-spaces/index|$L^p$ spaces]].
 
 [[T-4CDKK]]
 
-Proved in [[Real_Analysis/fourier/index|Fourier]].
+Proved in [[real-analysis/fourier/index|Fourier]].
 
 ## Functional analysis
 
@@ -89,7 +89,7 @@ Proved in [[Real_Analysis/fourier/index|Fourier]].
 
 [[T-W5SDY]]
 
-Proved in [[Real_Analysis/functional-analysis/index|Functional analysis]].
+Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
 
 ## Undergraduate
 
@@ -101,8 +101,8 @@ Proved in [[Real_Analysis/functional-analysis/index|Functional analysis]].
 
 [[T-O4UD3]]
 
-Proved in [[Real_Analysis/undergraduate/index|Undergraduate analysis]].
+Proved in [[real-analysis/undergraduate/index|Undergraduate analysis]].
 
 ## What to check before using each one
 
-The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[Real_Analysis/counterexamples|Counterexamples]].
+The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[real-analysis/counterexamples|Counterexamples]].

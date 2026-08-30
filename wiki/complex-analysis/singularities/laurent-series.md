@@ -59,9 +59,9 @@ The integral formula defines $c_k$ and is used to prove things about it; a compu
 
 Two things, and they are the reason this page sits where it does.
 
-- The coefficient $c_{-1}$ is the residue, which is what [[Complex_Analysis/residues-and-contours/the-residue-theorem|the residue theorem]] integrates.
+- The coefficient $c_{-1}$ is the residue, which is what [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]] integrates.
 
-- The pattern of negative terms is the classification on [[Complex_Analysis/singularities/classifying-a-singularity|Classifying a singularity]] -- none, finitely many, or infinitely many.
+- The pattern of negative terms is the classification on [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]] -- none, finitely many, or infinitely many.
 
 ## Exercises
 

@@ -9,14 +9,14 @@ order: 90
 
 Material off the subject study paths: source lists and reading past the syllabus.
 
-- [[Card_Archives|Card Archives]], the imported exams by source.
+- [[card-archives|Card Archives]], the imported exams by source.
 
-- [[Solution Compendia|Solution Compendia]], solution writeups not filed under a subject.
+- [[solution-compendia|Solution Compendia]], solution writeups not filed under a subject.
 
-- [[Qual Workshop Index]], the week-by-week workshop table of contents; the weeks themselves sit under each subject.
+- [[qual-workshop-index]], the week-by-week workshop table of contents; the weeks themselves sit under each subject.
 
-- [[Archives/Topics|Topics]], undergraduate and prelim-level miscellany.
+- [[archives/topics|Topics]], undergraduate and prelim-level miscellany.
 
-- [[Further Studying|Further Studying]] and [[Graduate_Topics|Graduate Topics]], reading past the qual syllabus.
+- [[further-studying|Further Studying]] and [[graduate-topics|Graduate Topics]], reading past the qual syllabus.
 
-- [[Prelims_Source_Archive|Prelims Source Archive]], the imported prelim exams.
+- [[prelims-source-archive|Prelims Source Archive]], the imported prelim exams.

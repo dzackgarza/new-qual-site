@@ -32,7 +32,7 @@ Two facts that shorten the search:
 This is the case whenever $f$ is a sum whose terms have visibly different sizes on the boundary: a polynomial where one monomial dominates on $\abs z = R$, or an entire function against a polynomial.
 
 Write $f = M + m$, show $\abs{m} < \abs{M}$ on $\gamma$, and count the zeros of $M$, which you chose to be something you can count.
-The strategies are on [[Complex_Analysis/counting-zeros/rouches-theorem|Rouché's theorem]]; the splitting usually changes with the radius, which is why the same polynomial needs a different $M$ on $\abs z < 1$ than on $\abs z < 2$.
+The strategies are on [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]; the splitting usually changes with the radius, which is why the same polynomial needs a different $M$ on $\abs z < 1$ than on $\abs z < 2$.
 
 Rouché needs a *strict* inequality on the whole boundary curve, and it counts zeros minus poles, so for a meromorphic $f$ read the conclusion carefully.
 

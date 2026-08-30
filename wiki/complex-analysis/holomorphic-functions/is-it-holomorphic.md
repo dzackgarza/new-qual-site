@@ -20,21 +20,21 @@ The equations alone are not sufficient, and problems exploit this: CR plus *cont
 In polar form the same test reads $u_r = \frac1r v_\theta$ and $v_r = -\frac1r u_\theta$, which is the version to use on anything written with $r$ and $\theta$.
 
 The one-line version is the $\delbar$ test: $f$ is holomorphic exactly when $\delbar f = 0$, which is the Cauchy–Riemann equations packaged as a single equation.
-See [[Complex_Analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy–Riemann equations]].
+See [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy–Riemann equations]].
 
 ## You are given a series
 
 **Check the radius of convergence.**
 A convergent power series is holomorphic on the open disc of convergence, and holomorphic functions are exactly the ones locally given by such series.
 Nothing else needs checking, which makes this the cheapest test when it applies.
-See [[Complex_Analysis/holomorphic-functions/power-series|Power series]].
+See [[complex-analysis/holomorphic-functions/power-series|Power series]].
 
 ## You are given a limit or an integral
 
 **Use Morera.**
 If $f$ is continuous and $\int_{\bd T} f = 0$ for every triangle, then $f$ is holomorphic.
 This is the test for a function you cannot differentiate directly: a locally uniform limit of holomorphic functions, a series of them, or a function defined by an integral depending on a parameter.
-See [[Complex_Analysis/cauchy-theory/morera-and-converses|Morera and converses]].
+See [[complex-analysis/cauchy-theory/morera-and-converses|Morera and converses]].
 
 ## You are given a formula built from holomorphic pieces
 

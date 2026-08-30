@@ -56,7 +56,7 @@ In each case no integrable $g$ dominates, which is the precise reason dominated 
 
 ## Nearby interchanges
 
-The same question is asked about other pairs of limits, and the answers are on [[Real_Analysis/undergraduate/commuting-limits|Commuting limits]] --
+The same question is asked about other pairs of limits, and the answers are on [[real-analysis/undergraduate/commuting-limits|Commuting limits]] --
 
 - $\lim_n \int$ against $\int \lim_n$: this page.
 
@@ -64,6 +64,6 @@ The same question is asked about other pairs of limits, and the answers are on [
 
 - $\partial_t \int$ against $\int \partial_t$: differentiation under the integral, which is dominated convergence applied to difference quotients, and needs a dominating function for $\partial_t f$.
 
-- $\int\int$ in either order: [[Real_Analysis/fubini-tonelli/index|Fubini and Tonelli]].
+- $\int\int$ in either order: [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 Every one of them is the same theorem wearing a different hat, which is worth noticing because a problem will state whichever form is least convenient.

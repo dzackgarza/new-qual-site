@@ -46,4 +46,4 @@ We freely abuse notation.
 ## Where the theorem is used
 
 The residue theorem converts a closed contour integral into a finite sum.
-Turning a *real* integral into a closed contour integral is the other half, and which curve to close is decided on [[Complex_Analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
+Turning a *real* integral into a closed contour integral is the other half, and which curve to close is decided on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].

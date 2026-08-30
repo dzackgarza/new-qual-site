@@ -3,13 +3,13 @@ order: 18
 title: Prelim Resources
 ---
 
-[[Useful Tricks]]
+[[useful-tricks]]
 
-[[Prelim/Problems/Integral Practice]]
+[[prelim/problems/integral-practice]]
 
-[[Prelim/Problems/UCLA Prelims]]
+[[prelim/problems/ucla-prelims]]
 
-[[Prelim/Problems/Berkeley Prelims]]
+[[prelim/problems/berkeley-prelims]]
 
 # Prelim Resources
 

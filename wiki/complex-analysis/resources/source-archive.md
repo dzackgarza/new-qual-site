@@ -47,7 +47,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 [[SRC-UGA-CA-FALL-2021]]
 
 Official exam PDFs as posted by the department, recorded on each collection card's provenance.
-The problems themselves are filed under the chapter that treats them, from [[Complex_Analysis/index|the subject index]].
+The problems themselves are filed under the chapter that treats them, from [[complex-analysis/index|the subject index]].
 
 These exams are in the corpus:
 

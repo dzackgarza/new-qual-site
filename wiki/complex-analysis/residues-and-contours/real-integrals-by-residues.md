@@ -8,7 +8,7 @@ problems:
 # Real integrals by residues
 
 The worked cases.
-[[Complex_Analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]] decides which one a given integral is; this page carries the computations and the drill.
+[[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]] decides which one a given integral is; this page carries the computations and the drill.
 
 ## Rational, superlinear decay
 

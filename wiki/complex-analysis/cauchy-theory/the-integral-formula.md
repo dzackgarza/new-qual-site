@@ -68,7 +68,7 @@ The real-part claim is the same identity applied to $u=\Re f$.
 
 :::{.remark title="Where the mean value property is used"}
 It is the hypothesis of the maximum principle: a value equal to the average of its neighbours cannot exceed all of them.
-That is the whole proof of [[Complex_Analysis/cauchy-theory/maximum-modulus-and-open-mapping|maximum modulus]], and it is also what makes harmonic functions behave the same way.
+That is the whole proof of [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|maximum modulus]], and it is also what makes harmonic functions behave the same way.
 
 :::
 

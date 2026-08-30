@@ -12,7 +12,7 @@ problems:
 # Removable singularities, poles, essential singularities
 
 The three kinds of isolated singularity, and the theory each one carries.
-Deciding which one you have is [[Complex_Analysis/singularities/classifying-a-singularity|Classifying a singularity]].
+Deciding which one you have is [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]].
 
 [[D-VAXQT]]
 
@@ -182,7 +182,7 @@ Likewise $g(z) \da \sin\qty{1\over z}$ is essential at $z=0$, with a neighborhoo
 
 :::
 
-How much of the plane the image must cover is [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass and Picard]].
+How much of the plane the image must cover is [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass and Picard]].
 
 ## At infinity
 

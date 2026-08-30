@@ -11,38 +11,38 @@ The earlier table of contents listed a Complex “Week n misc” page that is no
 
 ## Complex Analysis
 
-- [[Complex_Analysis/Workshops/index|Workshops]]
+- [[complex-analysis/workshops/index|Workshops]]
 
-- [[Complex_Analysis/Workshops/Complex Week 1 Preliminaries]]
+- [[complex-analysis/workshops/complex-week-1-preliminaries]]
 
-- [[Complex_Analysis/Workshops/Complex Week 2 Cauchy]]
+- [[complex-analysis/workshops/complex-week-2-cauchy]]
 
 ## Real Analysis
 
-- [[Real_Analysis/Workshops/index|Workshops]]
+- [[real-analysis/workshops/index|Workshops]]
 
-- [[Real_Analysis/Workshops/Real Week 1 Preliminaries]]
+- [[real-analysis/workshops/real-week-1-preliminaries]]
 
-- [[Real_Analysis/Workshops/Real Week 2 Measure Theory]]
+- [[real-analysis/workshops/real-week-2-measure-theory]]
 
 ## Algebra
 
-- [[Algebra/Workshops/index|Workshops]]
+- [[algebra/workshops/index|Workshops]]
 
-- [[Algebra/Workshops/Algebra Week 1 Groups Warmup]]
+- [[algebra/workshops/algebra-week-1-groups-warmup]]
 
-- [[Algebra/Workshops/Algebra Week 2 Finite Group Theory]]
+- [[algebra/workshops/algebra-week-2-finite-group-theory]]
 
-- [[Algebra/Workshops/Algebra Week 3 Sylow Theory]]
+- [[algebra/workshops/algebra-week-3-sylow-theory]]
 
-- [[Algebra/Workshops/Algebra Week 4 Rings]]
+- [[algebra/workshops/algebra-week-4-rings]]
 
-- [[Algebra/Workshops/Algebra Week n Rep Theory]]
+- [[algebra/workshops/algebra-week-n-rep-theory]]
 
-- [[Algebra/Workshops/Algebra Week n+1 Linear Algebra]]
+- [[algebra/workshops/algebra-week-n-1-linear-algebra]]
 
 ## Topology
 
-- [[Topology/Workshops/index|Workshops]]
+- [[topology/workshops/index|Workshops]]
 
-- [[Topology/Workshops/Topology Week 1 Preliminaries]]
+- [[topology/workshops/topology-week-1-preliminaries]]

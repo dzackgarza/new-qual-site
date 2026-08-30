@@ -7,7 +7,7 @@ order: 7
 
 ## Point-set
 
-Proved in [[Topology/point-set/index|Point-set topology]] -- the characterizations of compactness, Tychonoff, Urysohn and Tietze, the metrization theorems, and Baire.
+Proved in [[topology/point-set/index|Point-set topology]] -- the characterizations of compactness, Tychonoff, Urysohn and Tietze, the metrization theorems, and Baire.
 
 ## Fundamental group
 
@@ -33,7 +33,7 @@ Proved in [[Topology/point-set/index|Point-set topology]] -- the characterizatio
 
 [[PR-EWJMJ]]
 
-Proved in [[Topology/fundamental-group/index|Fundamental group]].
+Proved in [[topology/fundamental-group/index|Fundamental group]].
 
 ## Homology
 
@@ -49,12 +49,12 @@ Proved in [[Topology/fundamental-group/index|Fundamental group]].
 
 [[PR-6PENU]]
 
-Proved in [[Topology/homology/index|Homology]].
+Proved in [[topology/homology/index|Homology]].
 
 ## The standard computations
 
-The table is [[Topology/the-standard-spaces|The standard spaces]], and it answers more exam questions than the theorems above.
+The table is [[topology/the-standard-spaces|The standard spaces]], and it answers more exam questions than the theorems above.
 
 ## What to check before using each one
 
-The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[Topology/counterexamples|Counterexamples]].
+The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[topology/counterexamples|Counterexamples]].

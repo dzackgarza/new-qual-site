@@ -10,7 +10,7 @@ problems:
 
 # Representation theory
 
-The same subject as [[Algebra/representations/index|the algebra qual's representations chapter]], asked in more detail: this paper expects character tables to be built, not just used.
+The same subject as [[algebra/representations/index|the algebra qual's representations chapter]], asked in more detail: this paper expects character tables to be built, not just used.
 
 ## The framework
 
@@ -32,5 +32,5 @@ with the number of irreducibles equal to the number of conjugacy classes.
 
 - **Induced and restricted representations,** with Frobenius reciprocity $\inner{\Ind_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H$, which is the tool for building characters of a large group from a subgroup.
 - **The symmetric group specifically:** irreducibles are indexed by partitions of $n$, characters are computed by the Murnaghan--Nakayama rule, and dimensions by the hook length formula.
-  That connects directly to [[Applied_Algebra/symmetric-functions/index|symmetric functions]].
+  That connects directly to [[applied-algebra/symmetric-functions/index|symmetric functions]].
 - **Real and quaternionic types,** detected by the Frobenius--Schur indicator.

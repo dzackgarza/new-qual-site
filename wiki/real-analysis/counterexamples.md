@@ -56,4 +56,4 @@ It is true if the derivatives converge uniformly, which is the correct hypothesi
 
 **A continuous function on a bounded set is uniformly continuous** -- false without compactness: $1/x$ on $(0,1)$.
 
-More are on [[Real_Analysis/counterexamples-undergraduate|the undergraduate counterexample list]].
+More are on [[real-analysis/counterexamples-undergraduate|the undergraduate counterexample list]].

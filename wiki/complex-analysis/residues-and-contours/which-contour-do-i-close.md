@@ -13,8 +13,8 @@ The whole problem is choosing the closed curve, and the choice is decided by the
 This page is that decision, case by case.
 Each case says what the integrand looks like, which curve to close, why the added piece vanishes, and what identity falls out.
 
-The estimates that kill the added piece are on [[Complex_Analysis/residues-and-contours/arc-estimates|Arc estimates]].
-The residue computations are on [[Complex_Analysis/residues-and-contours/computing-residues|Computing residues]].
+The estimates that kill the added piece are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]].
+The residue computations are on [[complex-analysis/residues-and-contours/computing-residues|Computing residues]].
 
 ## First: do you need residues at all?
 

@@ -6,7 +6,7 @@ order: 8
 # Standard integrals
 
 The integrals that recur, each with the contour it wants and the estimate that kills the added arc.
-Choosing among them is [[Complex_Analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]]; this page is the answers.
+Choosing among them is [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]]; this page is the answers.
 
 ## $\displaystyle\int_\RR {\dx \over 1+x^2} = \pi$
 

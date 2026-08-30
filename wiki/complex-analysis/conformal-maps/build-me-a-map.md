@@ -34,7 +34,7 @@ Everything here is open; boundaries are not included.
   The variant ${i-z\over i+z}$ is the same map composed with $z\mapsto -z$.
 
 - **$\DD \to \DD$**: $\lambda\, {z-a\over 1-\bar a z}$ for $\lambda \in S^1$.
-  These are all of them, which is [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
+  These are all of them, which is [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 - **Sector $\to \HH$**: $z\mapsto z^n$ opens $\ts{0 < \Arg z < \pi/n}$ to $\HH$.
   In general $z \mapsto z^a$ sends $\ts{\Arg z \in (-\theta_0, \theta_0)}$ to $\ts{\Arg z \in (-a\theta_0, a\theta_0)}$, so $a = \pi/2\theta_0$ opens a symmetric sector to a half plane.

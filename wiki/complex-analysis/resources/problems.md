@@ -32,7 +32,7 @@ tag:complex/exercise path:"30_Complex"
 
 - [Azoff's Problems by Topic](attachments/Azoff%20Problems%20by%20Topic.pdf)
 
-- [[Complex_Analysis/index|UGA qual problems]], filed by chapter
+- [[complex-analysis/index|UGA qual problems]], filed by chapter
 
 - [Problem sheet from Cambridge Part 1B](attachments/Cambridge%20Examples%20Sheets.pdf)
 

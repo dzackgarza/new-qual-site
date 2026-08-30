@@ -36,4 +36,4 @@ The ones the exam expects without derivation, filed by what they bound.
 - Cauchy--Schwarz, which is Hölder at $p=q=2$ and the only case with an inner-product proof.
 - Bernoulli, $(1+x)^n \geq 1 + nx$, and $1 + x\leq e^x$, the two that turn a sum into a product.
 
-The full statements are on [[Real_Analysis/Appendices/Appendix_Inequalities|Appendix: common inequalities]].
+The full statements are on [[real-analysis/appendices/appendix-inequalities|Appendix: common inequalities]].

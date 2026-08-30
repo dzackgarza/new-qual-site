@@ -44,6 +44,6 @@ The second is the entire technique: decompose a representation by computing inne
 
 :::{.remark title="Where the permutation character comes from"}
 $\chi(g) = \size{\Fix(g)}$ is exactly the quantity Burnside's lemma averages, so the number of orbits is $\inner{\chi}{\chi_{\text{triv}}}$.
-The character theory and the [[Algebra/group-actions/the-class-equation|counting arguments]] are the same computation, which is worth noticing because a problem may be stated in either language.
+The character theory and the [[algebra/group-actions/the-class-equation|counting arguments]] are the same computation, which is worth noticing because a problem may be stated in either language.
 
 :::

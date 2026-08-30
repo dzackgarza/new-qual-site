@@ -42,7 +42,7 @@ $\implies$: if $\min_A$ splits into linear factors then so does every invariant 
 
 :::{.remark title="The test to remember"}
 $A$ is diagonalizable over $F$ exactly when $\min_A$ is a product of *distinct* linear factors over $F$.
-Squarefree is the whole criterion, which is why hypotheses like $A^2 = A$ or $A^k=I$ settle diagonalizability immediately -- see [[Algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
+Squarefree is the whole criterion, which is why hypotheses like $A^2 = A$ or $A^k=I$ settle diagonalizability immediately -- see [[algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
 
 :::
 

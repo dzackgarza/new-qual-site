@@ -30,5 +30,5 @@ This is the standard shape of a meromorphic-function argument: remove the poles,
 [[T-DB3DO]]
 
 ::: {.remark title="Where they appear"}
-A meromorphic function is what the [[Complex_Analysis/counting-zeros/the-argument-principle|argument principle]] counts, and it is the natural class for [[Complex_Analysis/residues-and-contours/the-residue-theorem|the residue theorem]] -- the residue at a pole is defined by the Laurent expansion, and meromorphic says every singularity has one with finitely many negative terms.
+A meromorphic function is what the [[complex-analysis/counting-zeros/the-argument-principle|argument principle]] counts, and it is the natural class for [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]] -- the residue at a pole is defined by the Laurent expansion, and meromorphic says every singularity has one with finitely many negative terms.
 :::

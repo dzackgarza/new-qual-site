@@ -28,4 +28,4 @@ Lusin needs the function finite a.e., which is the same hypothesis in disguise.
 
 :::
 
-The statements and proofs are on [[Real_Analysis/integration/the-convergence-theorems|The convergence theorems]].
+The statements and proofs are on [[real-analysis/integration/the-convergence-theorems|The convergence theorems]].

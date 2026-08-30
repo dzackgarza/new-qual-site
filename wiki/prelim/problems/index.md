@@ -7,4 +7,4 @@ order: 1
 
 Prelim papers to work, not UGA quals.
 
-[[Berkeley Prelims]] is the Berkeley archive (syllabus plus years of exams and some solutions, as PDFs). [[UCLA Prelims]] is the corresponding UCLA collection. [[Integral Practice]] is a computational sheet: evaluate the integral, no theory.
+[[berkeley-prelims]] is the Berkeley archive (syllabus plus years of exams and some solutions, as PDFs). [[ucla-prelims]] is the corresponding UCLA collection. [[integral-practice]] is a computational sheet: evaluate the integral, no theory.

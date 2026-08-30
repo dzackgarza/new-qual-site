@@ -7,8 +7,8 @@ order: 8
 
 Ordinary representations of finite groups over $\CC$.
 
-- [[Algebra/representations/maschke-and-schur|Maschke and Schur]], the two theorems the subject rests on.
+- [[algebra/representations/maschke-and-schur|Maschke and Schur]], the two theorems the subject rests on.
 
-- [[Algebra/representations/characters|Characters]], and the orthogonality that makes them computable.
+- [[algebra/representations/characters|Characters]], and the orthogonality that makes them computable.
 
-- [[Algebra/representations/resources|Resources]], the reading list.
+- [[algebra/representations/resources|Resources]], the reading list.

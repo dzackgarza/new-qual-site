@@ -20,7 +20,7 @@ Given a group acting linearly on a polynomial ring, describe the subring it fixe
 ## The standard computations
 
 - **$S_n$ permuting variables:** the invariants are the symmetric polynomials, generated freely by $e_1, \dots, e_n$.
-  This is the fundamental theorem of [[Applied_Algebra/symmetric-functions/index|symmetric functions]] read as an invariant theory statement.
+  This is the fundamental theorem of [[applied-algebra/symmetric-functions/index|symmetric functions]] read as an invariant theory statement.
 - **$\ZZ/n$ acting by a root of unity:** the invariants are spanned by monomials whose exponent sum is divisible by $n$.
 - **A finite group acting on $k[x,y]$:** compute by Molien's series
   \[
@@ -31,4 +31,4 @@ Given a group acting linearly on a polynomial ring, describe the subring it fixe
 ## Why the Reynolds operator is the mechanism
 
 Averaging over $G$ projects the polynomial ring onto its invariants and commutes with multiplication by invariants, which is what makes $k[V]^G$ a direct summand and gives finite generation.
-It needs $\size G$ invertible, so modular invariant theory is a separate and much harder subject -- the same hypothesis, and the same failure, as in [[Algebra/representations/maschke-and-schur|Maschke's theorem]].
+It needs $\size G$ invertible, so modular invariant theory is a separate and much harder subject -- the same hypothesis, and the same failure, as in [[algebra/representations/maschke-and-schur|Maschke's theorem]].

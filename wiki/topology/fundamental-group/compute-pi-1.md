@@ -59,7 +59,7 @@ So an explicit universal cover computes $\pi_1$ outright: $\RR \to S^1$ gives $\
 
 $\pi_1(X\times Y) \cong \pi_1(X)\times\pi_1(Y)$, which handles the torus and every product of the standard spaces.
 
-For quotients, [[Topology/the-standard-spaces|the standard spaces]] table is faster than any computation.
+For quotients, [[topology/the-standard-spaces|the standard spaces]] table is faster than any computation.
 
 ## Choosing between them
 

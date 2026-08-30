@@ -11,39 +11,39 @@ The paper is six recurring kinds of question, and each one is treated by a chapt
 
 | The question | Where it is treated |
 | --- | --- |
-| Is this function holomorphic, and where? | [[Complex_Analysis/holomorphic-functions/is-it-holomorphic\|Is it holomorphic?]] |
-| Show that $f$ is constant | [[Complex_Analysis/cauchy-theory/theorems-that-give-a-constant\|Theorems that give a constant]] |
-| Classify this singularity, or compute its order | [[Complex_Analysis/singularities/classifying-a-singularity\|Classifying a singularity]] |
-| Evaluate this real integral | [[Complex_Analysis/residues-and-contours/which-contour-do-i-close\|Which contour do I close?]] |
-| How many zeros are in this region? | [[Complex_Analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
-| Find a conformal map from here to there | [[Complex_Analysis/conformal-maps/build-me-a-map\|Build me a map]] |
+| Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic\|Is it holomorphic?]] |
+| Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant\|Theorems that give a constant]] |
+| Classify this singularity, or compute its order | [[complex-analysis/singularities/classifying-a-singularity\|Classifying a singularity]] |
+| Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close\|Which contour do I close?]] |
+| How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
+| Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
 
 Each of those pages is a decision procedure keyed on the form of the problem, since at minute forty that is all you have.
 The chapter behind each one carries the statements and proofs.
 
 ## The chapters, in dependency order
 
-1. [[Complex_Analysis/holomorphic-functions/index|Holomorphic functions]] -- arithmetic, the logarithm, Cauchy-Riemann, power series, harmonic functions.
+1. [[complex-analysis/holomorphic-functions/index|Holomorphic functions]] -- arithmetic, the logarithm, Cauchy-Riemann, power series, harmonic functions.
 
-2. [[Complex_Analysis/cauchy-theory/index|Cauchy theory]] -- the integral theorems and what they immediately give.
+2. [[complex-analysis/cauchy-theory/index|Cauchy theory]] -- the integral theorems and what they immediately give.
 
-3. [[Complex_Analysis/singularities/index|Singularities]] -- Laurent series, the classification, meromorphic functions.
+3. [[complex-analysis/singularities/index|Singularities]] -- Laurent series, the classification, meromorphic functions.
 
-4. [[Complex_Analysis/residues-and-contours/index|Residues and contours]] -- the residue theorem and the real integrals it evaluates.
+4. [[complex-analysis/residues-and-contours/index|Residues and contours]] -- the residue theorem and the real integrals it evaluates.
 
-5. [[Complex_Analysis/counting-zeros/index|Counting zeros]] -- the argument principle, Rouché, Hurwitz.
+5. [[complex-analysis/counting-zeros/index|Counting zeros]] -- the argument principle, Rouché, Hurwitz.
 
-6. [[Complex_Analysis/conformal-maps/index|Conformal maps]] -- Möbius transformations, Schwarz, Riemann mapping.
+6. [[complex-analysis/conformal-maps/index|Conformal maps]] -- Möbius transformations, Schwarz, Riemann mapping.
 
 Three pages sit across the chapters:
 
-- [[Complex_Analysis/review|Review sheet]] -- every statement, on one page.
+- [[complex-analysis/review|Review sheet]] -- every statement, on one page.
 
-- [[Complex_Analysis/counterexamples|Counterexamples]] -- filed by the hypothesis each one shows is load-bearing.
+- [[complex-analysis/counterexamples|Counterexamples]] -- filed by the hypothesis each one shows is load-bearing.
 
-- [[Complex_Analysis/standard-integrals|Standard integrals]] -- the recurring ones, with their contours and estimates.
+- [[complex-analysis/standard-integrals|Standard integrals]] -- the recurring ones, with their contours and estimates.
 
-Also here: [[Complex_Analysis/Basics/index|background and reference]] for the undergraduate layer and the standard series, and [[Complex_Analysis/Appendices/index|appendix notes]].
+Also here: [[complex-analysis/basics/index|background and reference]] for the undergraduate layer and the standard series, and [[complex-analysis/appendices/index|appendix notes]].
 
 ## The syllabus
 

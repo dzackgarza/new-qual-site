@@ -56,11 +56,11 @@ It is the source of every rigidity statement in the chapter.
 
 ::: {.remark title="Why the normalization is not a restriction"}
 The hypotheses $f(0)=0$ and $\abs f \leq 1$ look special, but a Blaschke factor moves any point of the disc to the origin, so a self-map with $f(a) = b$ is handled by pre- and post-composing with $\psi_a$ and $\psi_b$.
-That composition is exactly how the automorphism group is computed on [[Complex_Analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]], and it is also how the Schwarz–Pick estimates are derived.
+That composition is exactly how the automorphism group is computed on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]], and it is also how the Schwarz–Pick estimates are derived.
 :::
 
 ::: {.remark title="What it is used for"}
-Three things, in rough order of frequency on an exam: bounding $\abs{f(z)}$ or $\abs{f'(0)}$ for a self-map of the disc, proving a map with too many fixed points is the identity, and proving Liouville, which is on [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
+Three things, in rough order of frequency on an exam: bounding $\abs{f(z)}$ or $\abs{f'(0)}$ for a self-map of the disc, proving a map with too many fixed points is the identity, and proving Liouville, which is on [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
 :::
 
 ## Exercises

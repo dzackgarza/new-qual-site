@@ -62,7 +62,7 @@ By the integral formula, for $f$ holomorphic on $D_R(z_0)$, all $k\geq 0$ and al
 \[
 c_k = {1\over 2\pi r^k} \int_0^{2\pi} f(z_0 + re^{i\theta}) e^{-ik\theta}\dtheta
 .\]
-Bounding this integrand is exactly the [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimate]], and letting the expansion run to negative $k$ is the [[Complex_Analysis/singularities/laurent-series|Laurent series]].
+Bounding this integrand is exactly the [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimate]], and letting the expansion run to negative $k$ is the [[complex-analysis/singularities/laurent-series|Laurent series]].
 
 :::
 
@@ -145,7 +145,7 @@ Define $A_n \da \sum_{k\leq n} a_k$, use $a_k = A_k - A_{k-1}$, reindex, and pee
 
 [[PR-NZZ2C]]
 
-The standard series and the factorial notation are collected on [[Complex_Analysis/Basics/Series Reference|Series: Reference]].
+The standard series and the factorial notation are collected on [[complex-analysis/basics/series-reference|Series: Reference]].
 
 ## Exercises
 

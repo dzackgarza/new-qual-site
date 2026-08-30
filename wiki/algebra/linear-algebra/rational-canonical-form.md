@@ -10,7 +10,7 @@ problems:
 # Rational canonical form
 
 The invariant factor decomposition, read as a matrix.
-Unlike the [[Algebra/linear-algebra/jordan-canonical-form|Jordan form]] it exists over every field, because it never needs $\chi_A$ to split -- which is why a problem stated over $\QQ$ almost always wants this one.
+Unlike the [[algebra/linear-algebra/jordan-canonical-form|Jordan form]] it exists over every field, because it never needs $\chi_A$ to split -- which is why a problem stated over $\QQ$ almost always wants this one.
 
 [[D-HJR7M]]
 

@@ -58,4 +58,4 @@ For sequences defined recursively, show monotone and bounded and identify the li
 
 - **Otherwise:** parameterize, and choose coordinates matching the symmetry of the region.
 
-The tables and worked cases are on [[Prelim/Useful Tricks|Useful tricks]].
+The tables and worked cases are on [[prelim/useful-tricks|Useful tricks]].

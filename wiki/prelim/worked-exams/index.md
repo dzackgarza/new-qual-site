@@ -7,12 +7,12 @@ order: 2
 
 UGA-style prelims with writeups, one page per exam.
 
-- [[Prelim/Worked_Exams/Fall 2014|Fall 2014]].
+- [[prelim/worked-exams/fall-2014|Fall 2014]].
 
-- [[Fall 2015|Fall 2015]].
+- [[fall-2015|Fall 2015]].
 
-- [[Fall 2016|Fall 2016]].
+- [[fall-2016|Fall 2016]].
 
-- [[Fall 2017|Fall 2017]].
+- [[fall-2017|Fall 2017]].
 
-- [[All|Qualifying Exam Review]], the same material collated onto one page.
+- [[all|Qualifying Exam Review]], the same material collated onto one page.

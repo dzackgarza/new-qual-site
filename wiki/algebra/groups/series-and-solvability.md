@@ -38,5 +38,5 @@ problems:
 with none reversing.
 A finite group is nilpotent exactly when every Sylow subgroup is normal, equivalently when it is the direct product of its Sylow subgroups, so nilpotence is a Sylow statement and is checked by a Sylow count.
 
-Solvability is what the [[Algebra/galois-theory/cyclotomic-and-radical-extensions|Galois theory]] side needs, and $S_n$ is solvable exactly for $n\leq 4$.
+Solvability is what the [[algebra/galois-theory/cyclotomic-and-radical-extensions|Galois theory]] side needs, and $S_n$ is solvable exactly for $n\leq 4$.
 :::

@@ -36,7 +36,7 @@ If $\abs{f(z)} \leq C\abs{z}^n$ for large $\abs z$, the estimate on the $(n+1)$s
 ,\]
 so $f^{(n+1)} \equiv 0$ and $f$ is a polynomial of degree at most $n$.
 Liouville is the case $n=0$.
-See [[Complex_Analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
+See [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
 
 ## $\abs f$ attains an interior maximum
 
@@ -65,7 +65,7 @@ The hypothesis is easy to miss because it is usually phrased as data rather than
 Any of those has a limit point in the domain, and the conclusion is $f\equiv 0$ on the whole connected domain.
 
 Its everyday use is transferring a real identity to $\CC$: $\sin^2 + \cos^2 = 1$ holds on $\RR$, which has limit points, hence on $\CC$.
-See [[Complex_Analysis/cauchy-theory/the-identity-principle|The identity principle]].
+See [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]].
 
 ## $f'\equiv 0$ on a domain
 
@@ -76,7 +76,7 @@ Worth listing because it is the cheapest of all and is the last step of most of 
 
 **Little Picard.**
 A nonconstant entire function misses at most one point of $\CC$.
-Reach for this only when the problem is genuinely about omitted values, since [[Complex_Analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass]] settles most such questions with an elementary proof.
+Reach for this only when the problem is genuinely about omitted values, since [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass]] settles most such questions with an elementary proof.
 
 ## Which hypothesis each one consumes
 

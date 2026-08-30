@@ -61,7 +61,7 @@ See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uc
 :::{.remark}
 Being in the same orbit is an equivalence relation, so orbits partition $X$, and $G$ acts transitively on each one.
 A point is fixed exactly when $\Orb(x) = \ts x$, equivalently when $\Stab_G(x) = G$.
-Notation is on [[Algebra/groups/notation|the algebra notation page]].
+Notation is on [[algebra/groups/notation|the algebra notation page]].
 
 :::
 
@@ -182,7 +182,7 @@ For $H < G$ proper, $G$ acts on $G/H$ by left translation.
 - $\Fix(\phi) = \emptyset$, by transitivity.
 - The kernel is $\Intersect_{g\in G} gHg\inv$, the **normal core** of $H$: the largest normal subgroup of $G$ contained in $H$.
 
-This is the action behind arguments 3, 4 and 7 on [[Algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
+This is the action behind arguments 3, 4 and 7 on [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
 
 :::
 

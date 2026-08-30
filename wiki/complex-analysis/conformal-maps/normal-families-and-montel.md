@@ -13,7 +13,7 @@ problems:
 # Normal families and Montel
 
 Compactness for families of holomorphic functions.
-This is the machinery the Riemann mapping theorem runs on: it produces a limit out of a sequence, and [[Complex_Analysis/counting-zeros/hurwitz|Hurwitz]] then says the limit kept what the sequence had.
+This is the machinery the Riemann mapping theorem runs on: it produces a limit out of a sequence, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz]] then says the limit kept what the sequence had.
 
 ::: {.remark}
 Throughout, "locally" means "on all compact subsets".

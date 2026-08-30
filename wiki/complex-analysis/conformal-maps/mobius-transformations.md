@@ -130,4 +130,4 @@ For the upper half disc to the negative half strip, follow the boundary: as $x$ 
 
 [[PR-KKU6N]]
 
-Which of these to reach for is [[Complex_Analysis/conformal-maps/build-me-a-map|Build me a map]].
+Which of these to reach for is [[complex-analysis/conformal-maps/build-me-a-map|Build me a map]].

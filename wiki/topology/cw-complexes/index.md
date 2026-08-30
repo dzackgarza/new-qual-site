@@ -5,4 +5,4 @@ order: 4
 
 # CW complexes
 
-- [[Topology/cw-complexes/cw-complexes|CW complexes]], attaching maps and cell structures.
+- [[topology/cw-complexes/cw-complexes|CW complexes]], attaching maps and cell structures.

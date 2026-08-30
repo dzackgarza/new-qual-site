@@ -53,7 +53,7 @@ This is the method for a quotient: compute the pair instead, and read the quotie
 ## Checks that catch errors
 
 - $H_0 = \ZZ^{\#\text{components}}$, always.
-- $H_1$ is the abelianization of $\pi_1$, so it can be checked against [[Topology/fundamental-group/compute-pi-1|a fundamental group computation]].
+- $H_1$ is the abelianization of $\pi_1$, so it can be checked against [[topology/fundamental-group/compute-pi-1|a fundamental group computation]].
 - Euler characteristic: $\sum (-1)^n \rank H_n = \sum (-1)^n \#\ts{n\text{-cells}}$, computable two ways, and disagreement means an arithmetic slip.
 - For a closed orientable $n\dash$manifold, $H_n = \ZZ$; for a closed non-orientable one, $H_n = 0$ and there is $\ZZ/2$ torsion in $H_{n-1}$.
   That last pair distinguishes the torus from the Klein bottle immediately.

@@ -5,12 +5,12 @@ order: 3
 
 # Rings and ideals
 
-- [[Algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]], the tower and one counterexample per step.
+- [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]], the tower and one counterexample per step.
 
-- [[Algebra/rings-and-ideals/ideals-and-quotients|Ideals and quotients]], the isomorphism theorems and radicals.
+- [[algebra/rings-and-ideals/ideals-and-quotients|Ideals and quotients]], the isomorphism theorems and radicals.
 
-- [[Algebra/rings-and-ideals/domains-and-factorization|Domains and factorization]], primes against irreducibles.
+- [[algebra/rings-and-ideals/domains-and-factorization|Domains and factorization]], primes against irreducibles.
 
-- [[Algebra/rings-and-ideals/polynomial-rings|Polynomial rings]], and what survives adjoining a variable.
+- [[algebra/rings-and-ideals/polynomial-rings|Polynomial rings]], and what survives adjoining a variable.
 
-- [[Algebra/rings-and-ideals/number-theory|Number theory]], the $\ZZ$ and $\ZZ[i]$ layer the qual treats as ring theory.
+- [[algebra/rings-and-ideals/number-theory|Number theory]], the $\ZZ$ and $\ZZ[i]$ layer the qual treats as ring theory.

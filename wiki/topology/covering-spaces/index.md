@@ -5,4 +5,4 @@ order: 3
 
 # Covering spaces
 
-- [[Topology/covering-spaces/covering-spaces|Covering spaces]], lifting, the classification, and deck groups.
+- [[topology/covering-spaces/covering-spaces|Covering spaces]], lifting, the classification, and deck groups.

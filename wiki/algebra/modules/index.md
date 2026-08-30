@@ -5,12 +5,12 @@ order: 4
 
 # Modules
 
-- [[Algebra/modules/classify-this-module|Classify this module]], which question the ring allows you to ask.
+- [[algebra/modules/classify-this-module|Classify this module]], which question the ring allows you to ask.
 
-- [[Algebra/modules/over-a-pid|Modules over a PID]], the structure theorem and its consequences.
+- [[algebra/modules/over-a-pid|Modules over a PID]], the structure theorem and its consequences.
 
-- [[Algebra/modules/free-and-projective|Free and projective modules]], the properties that separate once the ring is worse.
+- [[algebra/modules/free-and-projective|Free and projective modules]], the properties that separate once the ring is worse.
 
-- [[Algebra/modules/exact-sequences|Exact sequences and tensor products]], splitting and right exactness.
+- [[algebra/modules/exact-sequences|Exact sequences and tensor products]], splitting and right exactness.
 
-- [[Algebra/modules/resources|Resources]], the reading list.
+- [[algebra/modules/resources|Resources]], the reading list.

@@ -11,20 +11,20 @@ The [guides](guides.html) cover the same subjects as one ordered path each, to b
 
 Start at the syllabus for your exam:
 
-- [[Prelim/index|Prelims]]
+- [[prelim/index|Prelims]]
 
-- [[Algebra/index|Algebra]]
+- [[algebra/index|Algebra]]
 
-- [[Real_Analysis/index|Real Analysis]]
+- [[real-analysis/index|Real Analysis]]
 
-- [[Complex_Analysis/index|Complex Analysis]]
+- [[complex-analysis/index|Complex Analysis]]
 
-- [[Topology/index|Topology]]
+- [[topology/index|Topology]]
 
-- [[Applied_Algebra/index|Applied Algebra]]
+- [[applied-algebra/index|Applied Algebra]]
 
 Within a subject the pages run core notes, then exercises, then past quals.
-Source dumps are in [[Archives/index|Archives]].
+Source dumps are in [[archives/index|Archives]].
 
 Past papers from other programs, for extra drill:
 

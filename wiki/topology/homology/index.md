@@ -5,10 +5,10 @@ order: 5
 
 # Homology
 
-- [[Topology/homology/compute-h-star|Compute $H_*$]], the three methods and the checks.
+- [[topology/homology/compute-h-star|Compute $H_*$]], the three methods and the checks.
 
-- [[Topology/homology/homology|Homology]], the theory and the known computations.
+- [[topology/homology/homology|Homology]], the theory and the known computations.
 
-- [[Topology/homology/homological-algebra|Homological algebra]], the machinery underneath.
+- [[topology/homology/homological-algebra|Homological algebra]], the machinery underneath.
 
-- [[Topology/homology/exercises|Exercises]].
+- [[topology/homology/exercises|Exercises]].

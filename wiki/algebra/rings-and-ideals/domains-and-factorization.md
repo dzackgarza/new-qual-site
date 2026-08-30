@@ -10,7 +10,7 @@ problems:
 
 # Domains and factorization
 
-Where the tower on [[Algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]] comes from.
+Where the tower on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]] comes from.
 
 ## Elements
 

@@ -9,7 +9,7 @@ problems:
 # Jordan canonical form
 
 The elementary divisor decomposition, read as a matrix.
-It exists exactly when $\chi_A$ splits; when it does not, the [[Algebra/linear-algebra/rational-canonical-form|rational form]] is the substitute.
+It exists exactly when $\chi_A$ splits; when it does not, the [[algebra/linear-algebra/rational-canonical-form|rational form]] is the substitute.
 
 > A useful reference: [Matt Baker's post on the Jordan canonical form](https://mattbaker.blog/2015/07/31/the-jordan-canonical-form/).
 

@@ -42,7 +42,7 @@ It is open, and therefore its modulus has no interior maximum.
 :::
 
 :::{.remark title="Where the proofs come from"}
-All three count solutions of $f(z) = w$ for $w$ near $f(z_0)$ and show the count is positive on a whole neighborhood, which is [[Complex_Analysis/counting-zeros/how-many-zeros-in-this-region|counting zeros]] again.
+All three count solutions of $f(z) = w$ for $w$ near $f(z_0)$ and show the count is positive on a whole neighborhood, which is [[complex-analysis/counting-zeros/how-many-zeros-in-this-region|counting zeros]] again.
 Rouché is the shortest route: perturbing $w$ slightly cannot change the number of solutions.
 
 :::

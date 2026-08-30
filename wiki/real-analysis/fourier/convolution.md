@@ -16,7 +16,7 @@ $f * g(x) \da \int f(x-y)g(y)\dy$ is defined by an integral in one variable depe
 - commutativity and associativity: the change of variables $y \mapsto x-y$, then Fubini;
 - Young's inequality $\norm{f*g}_r \leq \norm f_p\norm g_q$ with $\frac1r = \frac1p + \frac1q - 1$: Hölder inside Tonelli.
 
-So a convolution problem is a [[Real_Analysis/fubini-tonelli/index|Fubini--Tonelli]] problem, and the only question is whether the absolute value has finite iterated integral.
+So a convolution problem is a [[real-analysis/fubini-tonelli/index|Fubini--Tonelli]] problem, and the only question is whether the absolute value has finite iterated integral.
 
 :::
 

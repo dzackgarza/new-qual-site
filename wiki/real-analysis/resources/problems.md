@@ -58,7 +58,7 @@ Exercises from [@Fol13]:
 
 > UNL analysis workshop packet.
 > Day 1, Day 9, and Day 10 are Math 825/826 qualifying exams (Day 1 prints Avery Hall 347). Day 2–8 are topic sheets that reuse tagged exam items.
-> [[Real_Analysis/Resources/Extra_Questions|Extra_Questions]] transcribes Day 1 and many of those tags; it is not a UGA Quals page.
+> [[real-analysis/resources/extra-questions|Extra_Questions]] transcribes Day 1 and many of those tags; it is not a UGA Quals page.
 
 [Day 1 May 2016 Qual.pdf](attachments/Day_1_May_2016_Qual.pdf)
 

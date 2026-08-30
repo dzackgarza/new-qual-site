@@ -16,10 +16,10 @@ Which form, and how much work it takes, is decided by what you were given and by
 
 | You are over | You want to classify | Use |
 | --- | --- | --- |
-| a field with all eigenvalues present | similarity | [[Algebra/linear-algebra/jordan-canonical-form\|Jordan]] |
-| a field where $\chi_A$ does not split | similarity | [[Algebra/linear-algebra/rational-canonical-form\|rational]] |
-| a PID, or a f.g. module | isomorphism | [[Algebra/linear-algebra/smith-normal-form\|Smith]] |
-| $\RR$ or $\CC$ with an inner product | orthogonal similarity | [[Algebra/linear-algebra/the-spectral-theorem\|spectral]] |
+| a field with all eigenvalues present | similarity | [[algebra/linear-algebra/jordan-canonical-form\|Jordan]] |
+| a field where $\chi_A$ does not split | similarity | [[algebra/linear-algebra/rational-canonical-form\|rational]] |
+| a PID, or a f.g. module | isomorphism | [[algebra/linear-algebra/smith-normal-form\|Smith]] |
+| $\RR$ or $\CC$ with an inner product | orthogonal similarity | [[algebra/linear-algebra/the-spectral-theorem\|spectral]] |
 
 Jordan form exists exactly when $\chi_A$ splits.
 Rational form always exists, over any field, and is the one to reach for when the problem says "over $\QQ$" and the polynomial does not factor.

@@ -29,7 +29,7 @@ Those are the properties that separate over a general ring and coincide over a P
 
 2. **Take the Smith normal form of $A$.**
    The invariant factors $a_1 \divides a_2 \divides \cdots \divides a_k$ appear on the diagonal, and are computed as $a_i = d_i/d_{i-1}$ with $d_i$ the gcd of the $i\times i$ minors.
-   See [[Algebra/linear-algebra/smith-normal-form|Smith normal form]].
+   See [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
 
 3. **Read off the decomposition.**
    \[
@@ -46,8 +46,8 @@ Those are the properties that separate over a general ring and coincide over a P
 | Ring | Module | The theorem is called |
 | --- | --- | --- |
 | $\ZZ$ | abelian group | the structure theorem for finitely generated abelian groups |
-| $k[x]$ | vector space with an operator | [[Algebra/linear-algebra/rational-canonical-form\|rational canonical form]] |
-| $k[x]$, $\chi$ split | the same | [[Algebra/linear-algebra/jordan-canonical-form\|Jordan canonical form]] |
+| $k[x]$ | vector space with an operator | [[algebra/linear-algebra/rational-canonical-form\|rational canonical form]] |
+| $k[x]$, $\chi$ split | the same | [[algebra/linear-algebra/jordan-canonical-form\|Jordan canonical form]] |
 
 Recognizing which one a problem is asking is usually the difficulty.
 A question about a matrix over $\QQ$ and a question about an abelian group of order $360$ are the same computation over different rings.
