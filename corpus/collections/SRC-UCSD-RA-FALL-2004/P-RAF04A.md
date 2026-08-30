@@ -12,6 +12,10 @@ classification:
   - Improper Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -22,4 +26,12 @@ Find, with justification, the values of the following limits and integrals:
 (b) $\displaystyle\int_0^\infty \left[\int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx\right] dt$
 
 (c) $\displaystyle\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$
+:::
+
+::: {.solution}
+<1>1. $f$ entire.
+Proof: Liouville.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
