@@ -13,10 +13,22 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: {.problem}
 a. Let $f$ be a real-valued function defined on $\mathbb{R}^n$.
 Define differentiability of $f$ at a point $p$.
 b. Show that the function $f: \mathbb{R}^2 \to \mathbb{R}$ defined by $$f(x,y) = \frac{xy}{x^2+y^2} \text{ for } (x,y) \neq (0,0), \text{ and } f(0,0) = 0$$ is not differentiable at $(0,0)$.
+:::
+
+::: {.solution}
+<1>1. $X$ CW.
+Proof: cellular.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
