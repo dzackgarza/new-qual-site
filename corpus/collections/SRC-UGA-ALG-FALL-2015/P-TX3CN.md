@@ -16,9 +16,11 @@ review: draft
 ---
 
 Let $G$ be a group containing a subgroup $H$ not equal to $G$ of finite index.
-Prove that $G$ has a normal subgroup which is contained in every conjugate of $H$ which is of finite index.
+Prove that $G$ has a normal subgroup of finite index which is contained in every conjugate of $H$.
 
-> (DZG) A remark: it's not the conjugates that should be finite index here, but rather the normal subgroup.
+::: {.remark}
+The original source printed "which is of finite index" as modifying the conjugates; it modifies the normal subgroup instead.
+:::
 
 ::: {.solution}
 \envlist
