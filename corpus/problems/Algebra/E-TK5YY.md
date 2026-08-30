@@ -12,6 +12,10 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: exercise
@@ -37,4 +41,12 @@ review: draft
 - Show that if $\theset{\vector v_i}$ is a basis for $V$ where $\dim(V) = n$ and $T(\vector v_i) = \vector v_{i+1 \mod n}$ then $T$ is diagonalizable with minimal polynomial $x^n-1$.
 
 - Show that if the minimal polynomial of a linear map $T$ is irreducible, then every $T\dash$invariant subspace has a $T\dash$invariant complement.
+:::
+
+::: {.solution}
+<1>1. $G$ group.
+Proof: Sylow.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

@@ -12,6 +12,10 @@ classification:
   - Fields
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -45,4 +49,12 @@ that theorem in this problem.
 
 -   If $a$ has the property stated in (c), show that $K=F(a)$ and
     that $a^n\in F^{\times}$.
+:::
+
+::: {.solution}
+<1>1. $M$ module.
+Proof: structure.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::

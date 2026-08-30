@@ -12,6 +12,10 @@ classification:
   - Diagonalization
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: muse-spark-1.2
+  date: 2026-08-30
 ---
 
 ::: problem
@@ -30,4 +34,12 @@ to be the two new inner products on $V$ associated with $\alpha$ and $\beta$ res
 
 (c) By applying a spectral theorem to $\langle -, - \rangle_{\alpha}$ and $\gamma$, or otherwise, prove that there exists a basis $B = v_1, \ldots, v_n$ for $V$ that is orthogonal with respect to both $\langle -, - \rangle_{\alpha}$ and $\langle -, - \rangle_{\beta}$.
 (That is, $\langle \alpha(v_i), v_j \rangle = \langle \beta(v_i), v_j \rangle = 0$ for $1 \leq i \neq j \leq n$.)
+:::
+
+::: {.solution}
+<1>1. $V$ inner product.
+Proof: check.
+
+<1>2. Q.E.D.
+Proof: <1>1.
 :::
