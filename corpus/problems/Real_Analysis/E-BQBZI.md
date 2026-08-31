@@ -19,29 +19,42 @@ audit:
 ---
 
 ::: exercise
-- $\star$: Show that if $X\subseteq \RR$ with $\mu(X) < \infty$ then
-\[  
-\norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty
-.\]
+Show that if $X \subseteq \mathbb{R}$ is a measurable set with finite measure $\mu(X) < \infty$, then for any measurable function $f: X \to \mathbb{C}$,
+$$
+\lim_{p \to \infty} \|f\|_{L^p(X)} = \|f\|_{L^\infty(X)}.
+$$
 :::
 
-::: {.solution}
-**Goal:** For $X \subseteq \mathbb{R}$ with $\mu(X) < \infty$ and $f \in L^p(X)$ for some $p_0 \in [1, \infty)$, show $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$ (both sides allowed to be $+\infty$).
+::: solution
+**Goal:** Prove that on a finite measure space $(X, \mu)$ with $\mu(X) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(X)} = \|f\|_{L^\infty(X)}$ for any measurable function $f$.
 
-<1>1. $\limsup_{p \to \infty} \|f\|_p \leq \|f\|_\infty$.
-    <2>1. If $\|f\|_\infty < \infty$: $\|f\|_p \leq \|f\|_\infty \, \mu(X)^{1/p}$ for all $p \geq p_0$.
-        Proof: $|f| \leq \|f\|_\infty$ a.e., so $\int_X |f|^p \leq \|f\|_\infty^p \mu(X)$; raise to the $1/p$.
-    <2>2. Taking the limsup: $\limsup_p \|f\|_p \leq \|f\|_\infty \lim_p \mu(X)^{1/p} = \|f\|_\infty$, since $\mu(X) < \infty$.
-        Proof: $\mu(X) > 0$ (else $f = 0$ a.e. and both sides are $0$); $\mu(X)^{1/p} \to 1$. If $\|f\|_\infty = \infty$ the inequality is trivial.
-<1>2. $\liminf_{p \to \infty} \|f\|_p \geq \|f\|_\infty$.
-    <2>1. For every $0 < \alpha < \|f\|_\infty$: $\|f\|_p \geq \alpha \, \mu\theset{|f| \geq \alpha}^{1/p}$.
-        Proof: on $A_\alpha := \theset{|f| \geq \alpha}$, $|f| \geq \alpha$, so $\int_X |f|^p \geq \int_{A_\alpha} \alpha^p = \alpha^p \mu(A_\alpha)$.
-    <2>2. $\mu(A_\alpha) > 0$ for every $\alpha < \|f\|_\infty$.
-        Proof: otherwise $|f| \leq \alpha$ a.e., forcing $\|f\|_\infty \leq \alpha$, contradiction.
-    <2>3. Hence $\liminf_p \|f\|_p \geq \alpha$ for every $\alpha < \|f\|_\infty$.
-        Proof: by <2>1, $\|f\|_p \geq \alpha \mu(A_\alpha)^{1/p}$ with $\mu(A_\alpha)^{1/p} \to 1$ (a fixed positive constant raised to $1/p$), so $\liminf_p \|f\|_p \geq \alpha$.
-    <2>4. Q.E.D.
-        Proof: if $\|f\|_\infty < \infty$, let $\alpha \to \|f\|_\infty$ in <2>3; if $\|f\|_\infty = \infty$, <2>3 holds for all $\alpha$, so $\liminf_p \|f\|_p = \infty$.
-<1>3. Q.E.D.
-    Proof: <1>1 and <1>2 give $\|f\|_\infty \leq \liminf \|f\|_p \leq \limsup \|f\|_p \leq \|f\|_\infty$, so $\lim_p \|f\|_p = \|f\|_\infty$.
+<1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty}$.
+    *Proof:*
+    <2>1. If $\|f\|_{L^\infty} = \infty$, the upper bound $\limsup_{p \to \infty} \|f\|_{L^p} \le \infty$ holds vacuously.
+    <2>2. If $\mu(X) = 0$, then $\|f\|_{L^p} = 0$ for all $p$ and $\|f\|_{L^\infty} = 0$, so the limit is trivially 0.
+    <2>3. Assume $\|f\|_{L^\infty} < \infty$ and $0 < \mu(X) < \infty$.
+    <2>4. For almost every $x \in X$, $|f(x)| \le \|f\|_{L^\infty}$.
+    <2>5. Integrating over $X$:
+    $$\|f\|_{L^p} = \left( \int_X |f(x)|^p \, d\mu \right)^{1/p} \le \left( \int_X \|f\|_{L^\infty}^p \, d\mu \right)^{1/p} = \|f\|_{L^\infty} (\mu(X))^{1/p}.$$
+    <2>6. Since $\mu(X) \in (0, \infty)$, $\lim_{p \to \infty} (\mu(X))^{1/p} = 1$.
+    <2>7. Taking the limit superior as $p \to \infty$:
+    $$\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty} \lim_{p \to \infty} (\mu(X))^{1/p} = \|f\|_{L^\infty}.$$
+
+<1>2. Lower bound: $\liminf_{p \to \infty} \|f\|_{L^p} \ge \|f\|_{L^\infty}$.
+    *Proof:*
+    <2>1. If $\|f\|_{L^\infty} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p} = 0$ for all $p \ge 1$ and the inequality holds trivially.
+    <2>2. Assume $\|f\|_{L^\infty} > 0$. For any real number $\alpha$ satisfying $0 < \alpha < \|f\|_{L^\infty}$, define the superlevel set
+    $$A_\alpha = \{x \in X : |f(x)| \ge \alpha\}.$$
+    <2>3. By definition of the essential supremum, $\mu(A_\alpha) > 0$.
+    <2>4. Restricting the integral to $A_\alpha$:
+    $$\|f\|_{L^p} = \left( \int_X |f(x)|^p \, d\mu \right)^{1/p} \ge \left( \int_{A_\alpha} |f(x)|^p \, d\mu \right)^{1/p} \ge \left( \int_{A_\alpha} \alpha^p \, d\mu \right)^{1/p} = \alpha (\mu(A_\alpha))^{1/p}.$$
+    <2>5. Since $\mu(A_\alpha) \in (0, \infty)$, $\lim_{p \to \infty} (\mu(A_\alpha))^{1/p} = 1$.
+    <2>6. Taking the limit inferior as $p \to \infty$:
+    $$\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha \lim_{p \to \infty} (\mu(A_\alpha))^{1/p} = \alpha.$$
+    <2>7. If $\|f\|_{L^\infty} < \infty$, taking the supremum over all $\alpha < \|f\|_{L^\infty}$ gives $\liminf_{p \to \infty} \|f\|_{L^p} \ge \|f\|_{L^\infty}$.
+    <2>8. If $\|f\|_{L^\infty} = \infty$, the bound $\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha$ holds for arbitrarily large $\alpha > 0$, so $\lim_{p \to \infty} \|f\|_{L^p} = \infty = \|f\|_{L^\infty}$.
+
+<1>3. Conclusion:
+    *Proof:*
+    Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p} = \|f\|_{L^\infty}$.
 :::

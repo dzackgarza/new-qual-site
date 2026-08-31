@@ -15,100 +15,59 @@ relations: []
 review: draft
 ---
 
-Let $V$ be a finite dimensional vector space over a field $F$ and let $T: V\to V$ be a linear operator with characteristic polynomial $f(x) \in F[x]$.
+::: problem
+Let $V$ be a finite-dimensional vector space over a field $F$ and let $T: V \to V$ be a linear operator with characteristic polynomial $f(x) = \det(x I - T) \in F[x]$.
 
-a.
-Show that $f(x)$ is irreducible in $F[x] \iff$ there are no proper nonzero subspaces $W< V$ with $T(W) \subseteq W$.
+(a) Show that $f(x)$ is irreducible in $F[x]$ if and only if there are no proper non-zero $T$-invariant subspaces of $V$ (i.e. $W \le V$ with $T(W) \subseteq W$ implies $W = \{0\}$ or $W = V$).
 
-b.
-If $f(x)$ is irreducible in $F[x]$ and the characteristic of $F$ is 0, show that $T$ is diagonalizable when we extend the field to its algebraic closure.
-
-:::{.remark}
-Is there a proof without matrices? What if $V$ is infinite dimensional?
-:::
-:::{.remark}
-How to extend basis?
+(b) If $f(x)$ is irreducible in $F[x]$ and $\operatorname{char}(F) = 0$, show that $T$ is diagonalizable over the algebraic closure $\overline{F}$.
 :::
 
-:::{.concept}
-\envlist
+::: solution
+**Goal:** Prove the equivalence between irreducibility of the characteristic polynomial and simplicity of the $F[x]$-module $V$ in (a), and deduce diagonalizability over $\overline{F}$ in characteristic zero in (b).
 
-- Every $\vector v\in V$ is $T\dash$cyclic $\iff \chi_T(x)/\kk$ is irreducible.
-  - $\implies$: Same as argument below.
-  - $\impliedby$: Suppose $f$ is irreducible, then $f$ is equal to the minimal polynomial of $T$.
+<1>1. Part (a) ($\implies$): If $f(x)$ is irreducible, $V$ has no proper non-zero $T$-invariant subspaces.
+    *Proof:*
+    <2>1. We prove the contrapositive: suppose there exists a $T$-invariant subspace $W \le V$ such that $0 < \dim W < \dim V$.
+    <2>2. Let $k = \dim W$ and $n = \dim V$, so $1 \le k \le n - 1$.
+    <2>3. Choose a basis $\{w_1, \dots, w_k\}$ for $W$, and extend it to an ordered basis $\mathcal{B} = \{w_1, \dots, w_k, v_1, \dots, v_{n-k}\}$ of $V$.
+    <2>4. Since $T(W) \subseteq W$, the matrix representation of $T$ with respect to $\mathcal{B}$ is block upper-triangular:
+    $$[T]_\mathcal{B} = \begin{pmatrix} A & B \\ 0 & C \end{pmatrix},$$
+    where $A \in M_{k \times k}(F)$ is the matrix of the restriction $T|_W$, and $C \in M_{(n-k) \times (n-k)}(F)$ is the matrix of the induced operator on the quotient space $V/W$.
+    <2>5. Compute the characteristic polynomial of $T$:
+    $$f(x) = \det(x I_n - [T]_\mathcal{B}) = \det \begin{pmatrix} x I_k - A & -B \\ 0 & x I_{n-k} - C \end{pmatrix} = \det(x I_k - A) \cdot \det(x I_{n-k} - C).$$
+    <2>6. Let $g(x) = \det(x I_k - A) \in F[x]$ and $h(x) = \det(x I_{n-k} - C) \in F[x]$.
+    <2>7. Since $\deg g = k \ge 1$ and $\deg h = n - k \ge 1$, $f(x) = g(x) h(x)$ is a factorization into polynomials of strictly smaller positive degrees.
+    <2>8. Thus $f(x)$ is reducible in $F[x]$.
+    <2>9. By contraposition, if $f(x)$ is irreducible, $V$ has no proper non-zero $T$-invariant subspaces.
 
-- Characterization of diagonalizability: $T$ is diagonalizable over $F \iff \min_{T, F}$ is squarefree in $\bar{F}[x]$?
+<1>2. Part (a) ($\impliedby$): If $V$ has no proper non-zero $T$-invariant subspaces, $f(x)$ is irreducible.
+    *Proof:*
+    <2>1. Choose any non-zero vector $v \in V \setminus \{0\}$.
+    <2>2. The cyclic subspace $W_v = \operatorname{span}_F\{T^j v : j \ge 0\} = F[T] v$ is a non-zero $T$-invariant subspace of $V$.
+    <2>3. By hypothesis, $V$ contains no proper non-zero $T$-invariant subspaces, so $W_v = V$.
+    <2>4. Thus $v$ is a cyclic vector for $V$, and the minimal polynomial $m_T(x)$ of $T$ has degree equal to $\dim W_v = \dim V = n$.
+    <2>5. By the Cayley–Hamilton Theorem, $m_T(x) \mid f(x)$. Since both $m_T(x)$ and $f(x)$ are monic of degree $n$, we have $f(x) = m_T(x)$.
+    <2>6. Now suppose for contradiction that $f(x)$ is reducible in $F[x]$, so $f(x) = g(x) h(x)$ with $\deg g \ge 1$, $\deg h \ge 1$, and $\deg g + \deg h = n$.
+    <2>7. Since $m_T(x) = f(x)$ and $\deg g < n$, $g(T) \ne 0$ as a linear operator on $V$.
+    <2>8. Thus there exists some vector $u \in V$ such that $w = g(T) u \ne 0$.
+    <2>9. Consider the cyclic subspace $U = F[T] w$. Since $w \ne 0$, $U \ne \{0\}$.
+    <2>10. Evaluate $h(T)$ on $w$:
+    $$h(T) w = h(T)(g(T) u) = (h(T) g(T)) u = f(T) u = 0.$$
+    <2>11. Thus $h(T)$ annihilates $w$, which implies that the minimal polynomial of $w$ divides $h(x)$.
+    <2>12. Therefore $\dim U \le \deg h < n$, so $U$ is a non-zero $T$-invariant subspace strictly contained in $V$ ($0 < \dim U < n$).
+    <2>13. This contradicts the hypothesis that $V$ has no proper non-zero $T$-invariant subspaces.
+    <2>14. Hence $f(x)$ must be irreducible in $F[x]$.
 
-:::
+<1>3. Part (b): Diagonalizability over $\overline{F}$ in characteristic 0.
+    *Proof:*
+    <2>1. By Part (a), since $f(x)$ is irreducible in $F[x]$, the minimal polynomial of $T$ is $m_T(x) = f(x)$.
+    <2>2. Since $\operatorname{char}(F) = 0$ and $f(x)$ is irreducible, $f(x)$ is a separable polynomial: its derivative $f'(x)$ is a non-zero polynomial with $\deg f' = n - 1 < n = \deg f$, so $\gcd(f(x), f'(x)) = 1$.
+    <2>3. Over the algebraic closure $\overline{F}$, $f(x)$ splits completely into distinct linear factors:
+    $$f(x) = (x - \lambda_1)(x - \lambda_2) \cdots (x - \lambda_n), \quad \text{where } \lambda_i \ne \lambda_j \text{ for all } i \ne j.$$
+    <2>4. Since the minimal polynomial $m_T(x) = f(x)$ splits over $\overline{F}$ into distinct linear factors (is square-free), $T$ is diagonalizable over $\overline{F}$.
 
-:::{.solution}
-\envlist
-
-Let $f$ be the characteristic polynomial of $T$.
-
-:::{.proof title="of a, $\implies$. Matrix-dependent"}
-$\implies$:
-
-- By contrapositive, suppose there is a proper nonzero invariant subspace $W<V$ with $T(W) \subseteq W$, we will show the characteristic polynomial $f \definedas \chi_{V, T}(x)$ is reducible.
-- Since $T(W)\subseteq W$, the restriction $g\definedas \chi_{V, T}(x) \mid_W: W\to W$ is a linear operator on $W$.
-
-:::{.claim}
-$g$ divides $f$ in $\FF[x]$ and $\deg(g) < \deg(f)$.
-:::
-
-- Choose an ordered basis for $W$, say $\mcb_W \definedas \theset{\vector w_1, \cdots, \vector w_k}$ where $k=\dim_F(W)$
-- Claim: this can be extended to a basis of $V$, say $\mcb_V \definedas \theset{\vector w_1, \cdots, \vector w_k, \vector v_1, \cdots, \vector v_j}$ where $k+j = \dim_F(V)$.
-  - Note that since $W<V$ is proper, $j\geq 1$.
-- Restrict $T$ to $W$ to get $T_W$, then let $B = [T_W]_{\mcb_W}$ be the matrix representation of $T_W$ with respect to $\mcb_W$.
-- Now consider the matrix representation $[T]_{\mcb_V}$, in block form this is given by
-\[
-[T]_{\mcb_V} = 
-\begin{bmatrix}
-B & C \\
-0 & D
-\end{bmatrix}
-\]
-  where we've used that $W<V$ is proper to get the existence of $C, D$ (there is at least one additional row/column since $j\geq 1$ in the extended basis.)
-:::{.remark}
-Why?
-:::
-
-- Now expand along the first column block to obtain
-\[
-\chi_{T, V}(x) \definedas \det([T]_{\mcb_V} - xI) = \det(B - xI)\cdot \det(D - xI) \definedas \chi_{T, W}(x) \cdot \det(D-xI)
-.\]
-
-- Claim: $\det(D - xI) \in xF[x]$ is nontrivial
-
-- The claim follows because this forces $\deg(\det(D-xI)) \geq 1$ and so $\chi_{T, W}(x)$ is a proper divisor of $\chi_{T, V}(x)$.
-
-- Thus $f$ is reducible.
-
-:::
-
-:::{.proof title="of a, $\impliedby$"}
-$\impliedby$
-
-- Suppose $f$ is reducible, then we will produce a proper $T\dash$invariant subspace.
-- Claim: if $f$ is reducible, there exists a nonzero, noncyclic vector $\vector v$.
-- Then $\spanof_k\theset{T^j\vector v}_{j=1}^d$ is a $T\dash$invariant subspace that is nonzero, and not the entire space since $\vector v$ is not cyclic.
-
-:::
-
-:::{.proof title="of b"}
-\envlist
-
-- Let $\min_{T, F}(x)$ be the minimal polynomial of $T$ and $\chi_{T, F}(x)$ be its characteristic polynomial.
-- By Cayley-Hamilton, $\min_{T, F}(x)$ divides $\chi_{T, F}$
-- Since $\chi_{T, F}$ is irreducible, these polynomials are equal.
-- Claim: $T/F$ is diagonalizable $\iff \min_{T, F}$ splits over $F$ and is squarefree.
-- Replace $F$ with its algebraic closure, then $\min_{T, F}$ splits.
-- Claim: in characteristic zero, every irreducible polynomial is separable
-  - Proof: it must be the case that either $\gcd(f, f') = 1$ or $f' \equiv 0$, where the second case only happens in characteristic $p>0$.
-  - The first case is true because $\deg f' < \deg f$, and if $\gcd(f, f') = p$, then $\deg p < \deg f$ and $p\divides f$ forces $p=1$ since $f$ is irreducible.
-- So $\min_{T, F}$ splits into distinct linear factors
-- Thus $T$ is diagonalizable.
-
-:::
-
+<1>4. Conclusion:
+    *Proof:*
+    The characteristic polynomial $f(x)$ is irreducible in $F[x]$ if and only if $V$ is a simple $F[T]$-module, and in characteristic zero this guarantees that $T$ has $n$ distinct eigenvalues in $\overline{F}$, hence is diagonalizable over $\overline{F}$.
 :::

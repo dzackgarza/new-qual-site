@@ -14,74 +14,61 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-Prove the following:
+::: problem
+Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \mathbb{C} : |z| = 1\}$:
 
-a. $\sum_{n} nz^n$ does not converge at any point of $S^1$
+(a) $\sum_{n=1}^\infty n z^n$ does not converge at any point of $S^1$.
 
-b. $\sum_n {z^n \over n^2}$ converges at every point of $S^1$.
+(b) $\sum_{n=1}^\infty \frac{z^n}{n^2}$ converges at every point of $S^1$.
 
-c. $\sum_n {z^n \over n}$ converges at every point of $S^1$ except $z=1$.
-
+(c) $\sum_{n=1}^\infty \frac{z^n}{n}$ converges at every point of $S^1$ except $z = 1$, where it diverges.
 :::
 
-:::{.concept}
-\envlist
+::: solution
+**Goal:** Determine the convergence behavior of $\sum n z^n$, $\sum \frac{z^n}{n^2}$, and $\sum \frac{z^n}{n}$ on the boundary circle $S^1$.
 
-- Summation by parts:
-  Set $B_0 \da 0, B_n \da \sum_{k\leq n} b_k$, then
-\[
-\sum_{n=M}^{N} a_{n} b_{n}=a_{N} B_{N}-a_{M} B_{M-1}-\sum_{n=M}^{N-1}\left(a_{n+1}-a_{n}\right) B_{n}
-.\]
+<1>1. Part (a): Divergence of $\sum_{n=1}^\infty n z^n$ on $S^1$.
+    *Proof:*
+    <2>1. Let $z \in S^1$, so $|z| = 1$.
+    <2>2. The $n$-th term of the series is $c_n = n z^n$.
+    <2>3. Compute the modulus of $c_n$:
+    $$|c_n| = |n z^n| = n |z|^n = n \cdot 1^n = n.$$
+    <2>4. As $n \to \infty$, $|c_n| = n \to \infty$, which implies $\lim_{n \to \infty} c_n \ne 0$.
+    <2>5. By the Term Test for divergence, the series $\sum_{n=1}^\infty n z^n$ diverges at every point $z \in S^1$.
 
-- Summing a geometric series:
-\[
-\sum_{1\leq k \leq N} z^k = {1 - z^{N+1}\over 1-z}
-.\]
+<1>2. Part (b): Convergence of $\sum_{n=1}^\infty \frac{z^n}{n^2}$ on $S^1$.
+    *Proof:*
+    <2>1. Let $z \in S^1$, so $|z| = 1$.
+    <2>2. Compute the modulus of the $n$-th term:
+    $$\left| \frac{z^n}{n^2} \right| = \frac{|z|^n}{n^2} = \frac{1}{n^2}.$$
+    <2>3. The real $p$-series $\sum_{n=1}^\infty \frac{1}{n^2}$ converges because $p = 2 > 1$.
+    <2>4. By the Direct Comparison Test, $\sum_{n=1}^\infty \frac{z^n}{n^2}$ converges absolutely for every $z \in S^1$.
+    <2>5. Since absolute convergence in $\mathbb{C}$ implies convergence, the series converges at every point of $S^1$.
 
-:::
+<1>3. Part (c): Divergence at $z = 1$.
+    *Proof:*
+    <2>1. At $z = 1 \in S^1$, the series evaluates to
+    $$\sum_{n=1}^\infty \frac{1^n}{n} = \sum_{n=1}^\infty \frac{1}{n}.$$
+    <2>2. This is the harmonic series ($p$-series with $p = 1$), which diverges to $+\infty$.
 
-:::{.solution}
-**Part 1**:
-This series does not have small tails: writing $c_n \da n z^n$ we have $\abs{c_n} = \abs{nz^n} = \abs{n}\to \infty$ when $\abs{z} = 1$.
+<1>4. Part (c): Convergence at $z \in S^1 \setminus \{1\}$ via Dirichlet's Test.
+    *Proof:*
+    <2>1. Let $z \in S^1$ with $z \ne 1$. Write the series as $\sum_{n=1}^\infty a_n b_n$, where $a_n = \frac{1}{n}$ and $b_n = z^n$.
+    <2>2. Monotonicity and limit of $a_n$: $a_n > 0$, $a_{n+1} = \frac{1}{n+1} < \frac{1}{n} = a_n$, and $\lim_{n \to \infty} a_n = 0$.
+    <2>3. Partial sums of $b_n$: For each $N \ge 1$, the geometric sum is
+    $$B_N = \sum_{k=1}^N z^k = z \sum_{k=0}^{N-1} z^k = z \frac{1 - z^N}{1 - z}.$$
+    <2>4. Boundedness of $B_N$: Since $|z| = 1$, the triangle inequality yields
+    $$|B_N| = |z| \frac{|1 - z^N|}{|1 - z|} = \frac{|1 - z^N|}{|1 - z|} \le \frac{1 + |z|^N}{|1 - z|} = \frac{2}{|1 - z|}.$$
+    <2>5. Since $z \ne 1$, the bound $M_z = \frac{2}{|1 - z|}$ is finite and independent of $N$, so $|B_N| \le M_z$ for all $N \ge 1$.
+    <2>6. By summation by parts, for any $N > M \ge 1$:
+    $$\sum_{n=M}^N a_n b_n = a_N B_N - a_M B_{M-1} - \sum_{n=M}^{N-1} (a_{n+1} - a_n) B_n.$$
+    <2>7. Bounding the tail using $|B_n| \le M_z$ and telescoping $a_{n+1} - a_n \le 0$:
+    $$\left| \sum_{n=M}^N a_n b_n \right| \le M_z a_N + M_z a_M + M_z \sum_{n=M}^{N-1} (a_n - a_{n+1}) = 2 M_z a_M = \frac{2 M_z}{M}.$$
+    <2>8. Since $\lim_{M \to \infty} \frac{2 M_z}{M} = 0$, the sequence of partial sums satisfies the Cauchy criterion in $\mathbb{C}$.
+    <2>9. Therefore $\sum_{n=1}^\infty \frac{z^n}{n}$ converges for every $z \in S^1 \setminus \{1\}$.
 
-**Part 2**:
-This converges absolutely and absolute convergence implies convergence:
-\[
-\abs{\sum n^{-2} z^n} \leq \sum \abs{n^{-2}z^n} = \sum n^{-2} < \infty
-.\]
-
-
-**Part 3**:
-Write $f(z) = \sum_{k\geq 1} k\inv z^k$.
-The value $f(1)$ is the harmonic series, which we know diverges from undergraduate Calculus.
-For $z\neq 1$, apply summation by parts with $a_k \da k\inv$ and $b_k \da z^k$, so 
-
-- $a_N = N\inv$
-- $a_M = M\inv$
-- $B_N = \sum_{k\leq N} z^k = {1-z^{N+1} \over 1-z}$
-- $B_M = \sum_{k\leq M} z^k$
-- $a_{n+1} - a_n = (n+1)\inv + n\inv = - (n(n+1))\inv$
-
-Note that $\abs{B_N} \leq C_z \da {2\over \abs{1-z} }$ for any $N$, since $\abs{z} = 1$ is on $S^1$ and the maximum distance between two points on $S^1$ is 2.
-Moreover $C_z < \infty$ when $z\neq 1$.
-
-Applying the formula:
-
-\[
-\abs{\sum_{n=M}^N n\inv z^n }
-&\leq
-\abs{
-N\inv B_N - M\inv B_{M-1} - \sum_{n=M}^{N-1} \left[
--(n(n+1))\inv B_n 
-\right] }\\
-&\leq N\inv C_z + M\inv C_z + \sum_{M\leq n \leq N-1} C_z \qty{1\over n^2 + n}\\
-&\leq C_z\qty{N\inv + M\inv + \sum_{M\leq n \leq N-1} n^{-2}} \\
-&\convergesto{M, N\to\infty} 0
-,\]
-
-where we've used the triangle inequality and convergence of $\sum n^{-2}$.
-By the Cauchy criterion for sums, $f(z)$ converges pointwise for $z\neq 1$.
-
+<1>5. Conclusion:
+    *Proof:*
+    The three parts (a), (b), and (c) are established.
 :::
 

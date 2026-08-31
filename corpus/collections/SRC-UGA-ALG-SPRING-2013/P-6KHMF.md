@@ -14,68 +14,64 @@ relations: []
 review: draft
 ---
 
-Let $R$ be a commutative ring.
+::: problem
+Let $R$ be a commutative ring with identity $1 \ne 0$.
 
-a.
-Define a *maximal ideal* and prove that $R$ has a maximal ideal.
+(a) Define a **maximal ideal** and prove that $R$ contains at least one maximal ideal.
 
-b.
-Show than an element $r\in R$ is not invertible $\iff r$ is contained in a maximal ideal.
+(b) Show that an element $r \in R$ is not invertible if and only if $r$ is contained in some maximal ideal of $R$.
 
-c.
-Let $M$ be an $R\dash$module, and recall that for $0\neq \mu \in M$, the *annihilator* of $\mu$ is the set
-\[
-\ann(\mu) = \theset{r\in R \suchthat r\mu = 0}
-.\]
-  Suppose that $I$ is an ideal in $R$ which is maximal with respect to the property that there exists an element $\mu \in M$ such that $I = \ann(\mu)$ for some $\mu \in M$.
-  In other words, $I = \ann(\mu)$ but there does not exist $\nu\in M$ with $J = \ann(\nu) \subsetneq R$ such that $I\subsetneq J$.
-
-  Prove that $I$ is a prime ideal.
-
-
-:::{.solution}
-\envlist
-
-:::{.proof title="part a and b"}
-\envlist
-
-- Maximal: a proper ideal $I\normal R$, so $I\neq R$, such that if $J\contains I$ is any other ideal, $J = R$.
-- Existence of a maximal ideal: use that $0\in \Id(R)$ always, so $S\da \ts{I\in \Id(R) \st I\neq R}$ is a nonempty poset under subset inclusion.
-  Applying the usual Zorn's lemma argument produces a maximal element.
+(c) Let $M$ be an $R$-module. For any $m \in M$, the **annihilator** of $m$ is the ideal
+$$
+\operatorname{Ann}(m) = \{r \in R : r m = 0\}.
+$$
+Suppose that $I = \operatorname{Ann}(\mu)$ for some non-zero element $\mu \in M \setminus \{0\}$ is maximal among all proper annihilator ideals $\{\operatorname{Ann}(m) : m \in M, \, m \ne 0\}$. Prove that $I$ is a prime ideal of $R$.
 :::
 
-:::{.proof title="part c"}
-$\impliedby$:
-By contrapositive: if $r\in R$ is a unit and $\mfm$ is maximal, then $r\in \mfm \implies \mfm = R$, contradicting that $\mfm$ is proper.
+::: solution
+**Goal:** Define maximal ideals and prove their existence via Zorn's Lemma in (a), characterize non-units via containment in maximal ideals in (b), and prove that maximal element-annihilators are prime ideals in (c).
 
+<1>1. Part (a): Definition of maximal ideal and existence via Zorn's Lemma.
+    *Proof:*
+    <2>1. An ideal $\mathfrak{m} \subset R$ is a maximal ideal if $\mathfrak{m} \ne R$ (i.e. $\mathfrak{m}$ is a proper ideal) and the only ideals containing $\mathfrak{m}$ are $\mathfrak{m}$ and $R$.
+    <2>2. Define the family of proper ideals:
+    $$\mathcal{S} = \{I \subseteq R : I \text{ is an ideal of } R \text{ and } I \ne R\}.$$
+    <2>3. Since $R \ne 0$, the zero ideal $\{0\} \ne R$, so $\{0\} \in \mathcal{S}$ and $\mathcal{S} \ne \emptyset$.
+    <2>4. Partially order $\mathcal{S}$ by set inclusion $\subseteq$. Let $\mathcal{C} \subseteq \mathcal{S}$ be a non-empty totally ordered chain of proper ideals.
+    <2>5. The union $J = \bigcup_{I \in \mathcal{C}} I$ is an ideal of $R$: for any $x, y \in J$ and $r \in R$, there exist $I_1, I_2 \in \mathcal{C}$ with $x \in I_1$ and $y \in I_2$. Since $\mathcal{C}$ is a chain, assume without loss of generality that $I_1 \subseteq I_2$. Then $x, y \in I_2$, so $x - y \in I_2 \subseteq J$ and $r x \in I_2 \subseteq J$.
+    <2>6. The ideal $J$ is proper: if $J = R$, then $1 \in J = \bigcup_{I \in \mathcal{C}} I$, so $1 \in I_0$ for some $I_0 \in \mathcal{C}$, which would mean $I_0 = R$, contradicting $I_0 \in \mathcal{S}$. Thus $1 \notin J$, so $J \in \mathcal{S}$.
+    <2>7. Since $J$ contains every $I \in \mathcal{C}$, $J$ is an upper bound for $\mathcal{C}$ in $\mathcal{S}$.
+    <2>8. By Zorn's Lemma, $\mathcal{S}$ contains a maximal element $\mathfrak{m}$, which is a maximal ideal of $R$.
 
-$\implies$:
+<1>2. Part (b): Characterization of non-units by maximal ideals.
+    *Proof:*
+    <2>1. ($\impliedby$): Let $\mathfrak{m}$ be a maximal ideal and suppose $r \in \mathfrak{m}$. If $r$ were invertible (a unit), then $1 = r^{-1} r \in \mathfrak{m}$, which implies $\mathfrak{m} = R$, contradicting the definition of a maximal ideal ($\mathfrak{m} \ne R$). Thus $r$ is not invertible.
+    <2>2. ($\implies$): Suppose $r \in R$ is not invertible.
+    <2>3. The principal ideal $\langle r \rangle = R r$ is a proper ideal of $R$, because $1 \in \langle r \rangle \iff r$ is invertible.
+    <2>4. Define the family of proper ideals containing $\langle r \rangle$:
+    $$\mathcal{S}_r = \{J \subseteq R : J \text{ is an ideal of } R, \, \langle r \rangle \subseteq J, \text{ and } J \ne R\}.$$
+    <2>5. Since $\langle r \rangle \in \mathcal{S}_r$, $\mathcal{S}_r \ne \emptyset$.
+    <2>6. Exactly as in <1>1, every non-empty chain in $\mathcal{S}_r$ has its union as an upper bound in $\mathcal{S}_r$.
+    <2>7. By Zorn's Lemma, $\mathcal{S}_r$ contains a maximal element $\mathfrak{m}$.
+    <2>8. The ideal $\mathfrak{m}$ is a maximal ideal of $R$ containing $r$.
 
-- Suppose $a$ is not a unit, we'll produce a maximal ideal containing it.
-- Let $I\da Ra$ be the principal ideal generated by $a$, then $Ra \neq R$ since $a$ is not a unit.
-- Take a poset $S \da \ts{J\in \Id(R) \st J\contains Ra, J\neq R}$ ordered by set inclusion.
-  - Let $C_*$ be a chain in $S$, set $\hat{C} \da \union C_i$.
-    Then $\hat{C} \in S$:
+<1>3. Part (c): Proof that maximal element-annihilator $I$ is prime.
+    *Proof:*
+    <2>1. $I$ is a proper ideal: since $\mu \ne 0$, $1 \cdot \mu = \mu \ne 0$, so $1 \notin \operatorname{Ann}(\mu) = I$, which means $I \ne R$.
+    <2>2. Let $a, b \in R$ such that $a b \in I$. We show that $a \in I$ or $b \in I$.
+    <2>3. Suppose $b \notin I$. By definition of $I = \operatorname{Ann}(\mu)$, this means $b \mu \ne 0$ in $M$.
+    <2>4. Define the element $\nu = b \mu \in M \setminus \{0\}$, and consider its annihilator $J = \operatorname{Ann}(\nu) = \operatorname{Ann}(b \mu)$.
+    <2>5. $J$ is a proper ideal: since $\nu \ne 0$, $1 \notin J$.
+    <2>6. Containment $I \subseteq J$: for any $x \in I = \operatorname{Ann}(\mu)$, $x \mu = 0$, so
+    $$x \nu = x (b \mu) = b (x \mu) = b \cdot 0 = 0,$$
+    which proves $x \in \operatorname{Ann}(\nu) = J$. Thus $I \subseteq J$.
+    <2>7. Maximality of $I$: by hypothesis, $I$ is maximal among the set of all proper annihilator ideals of non-zero module elements. Since $J = \operatorname{Ann}(b \mu)$ is a proper annihilator ideal containing $I$, we must have $I = J = \operatorname{Ann}(b \mu)$.
+    <2>8. Deducing $a \in I$: since $a b \in I = \operatorname{Ann}(\mu)$, we have $(a b)\mu = 0$.
+    <2>9. Rewriting: $a (b \mu) = (a b) \mu = 0$, so $a \in \operatorname{Ann}(b \mu) = J$.
+    <2>10. Since $J = I$, we conclude $a \in I$.
+    <2>11. Therefore, $a b \in I \implies a \in I \lor b \in I$, so $I$ is a prime ideal of $R$.
 
-    - $\hat{C} \neq R$, since if so it contains a unit, forcing some $C_i$ to contain a unit and thus equal $R$.
-    - $\hat{C} \contains Ra$, since e.g. $\hat{C} \contains C_1 \contains Ra$.
-    - $\hat{C}$ is an ideal since $xy\in \hat{C} \implies x\in C_i, y\in C_j$ and $C_i \subseteq C_j$ without loss of generality, so $xy\in C_j \subseteq \hat{C}$.
-- Then $Ra \subseteq \hat{C}$, some maximal ideal.
-
-:::
-
-:::{.proof title="of d"}
-\envlist
-
-- Write $I \da \Ann(u)$ for some $u$, and toward a contradiction suppose $ab\in I$ but $a,b\not\in I$.
-- Then $abu=0$ but $au\neq 0, bu\neq 0$.
-- Since $abu=0$, we have $a\in \Ann(bu)$.
-  Note that $\Ann(bu) \contains \Ann(u)$, since $su = 0\implies bsu=sbu=0$.
-- We can't have $\Ann(bu) = R$, since if $sbu=0$ for all $s\in R$, so we could take $s=1$ to get $bu=0$ and $b\in \Ann(u)$.
-- By maximality, this forces $\Ann(u) = \Ann(bu)$, so $sbu = 0 \implies su=0$ for any $s\in R$.
-- Now take $s=a$, and since $abu=0$ we get $au=0$ and $a\in \Ann(u)$. $\contradiction$
-
-:::
-
-
+<1>4. Conclusion:
+    *Proof:*
+    Maximal ideals exist by Zorn's Lemma, non-units are precisely elements in maximal ideals, and maximal element-annihilator ideals are prime.
 :::

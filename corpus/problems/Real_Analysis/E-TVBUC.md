@@ -19,25 +19,42 @@ audit:
 ---
 
 ::: exercise
-- Show that if $E\subseteq \RR^n$ is measurable with $\mu(E) < \infty$ and $f\in L^p(X)$ then $$\norm{f}_{L^p(X)} \converges{p\to\infty}\to \norm{f}_\infty.$$
+Show that if $E \subseteq \mathbb{R}^n$ is a measurable set with finite measure $\mu(E) < \infty$, then for any measurable function $f: E \to \mathbb{C}$,
+$$
+\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}.
+$$
 :::
 
-::: {.solution}
-**Setup:** the card mixes $E$ and $X$; the intended statement is: if $(E, \mu)$ is a finite-measure space and $f$ is measurable with $\|f\|_p < \infty$ for all large $p$, then $\|f\|_{L^p(E)} \to \|f\|_{L^\infty(E)}$ as $p \to \infty$.
+::: solution
+**Goal:** Prove that on a set $E \subseteq \mathbb{R}^n$ with $\mu(E) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
 
-<1>1. Upper bound: $\limsup_{p \to \infty}\|f\|_p \le \|f\|_\infty$.
-<2>1. $\|f\|_p \le \|f\|_\infty\,\mu(E)^{1/p}$ for every finite $p$.
-Proof: $|f| \le \|f\|_\infty$ a.e., so $\int_E |f|^p \le \|f\|_\infty^p\,\mu(E)$.
-<2>2. Q.E.D. Proof: $\mu(E)^{1/p} \to 1$ as $p \to \infty$ since $0 < \mu(E) < \infty$ (the case $\mu(E) = 0$ is trivial, and if $\|f\|_\infty = \infty$ the bound is vacuous but the lower bound below handles it).
+<1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)}$.
+    *Proof:*
+    <2>1. If $\|f\|_{L^\infty(E)} = \infty$, the upper bound holds vacuously.
+    <2>2. If $\mu(E) = 0$, then $\|f\|_{L^p(E)} = 0$ for all $p$ and $\|f\|_{L^\infty(E)} = 0$, so the limit is trivially 0.
+    <2>3. Assume $\|f\|_{L^\infty(E)} < \infty$ and $0 < \mu(E) < \infty$.
+    <2>4. For almost every $x \in E$, $|f(x)| \le \|f\|_{L^\infty(E)}$.
+    <2>5. Integrating over $E$:
+    $$\|f\|_{L^p(E)} = \left( \int_E |f(x)|^p \, d\mu \right)^{1/p} \le \left( \int_E \|f\|_{L^\infty(E)}^p \, d\mu \right)^{1/p} = \|f\|_{L^\infty(E)} (\mu(E))^{1/p}.$$
+    <2>6. Since $\mu(E) \in (0, \infty)$, $\lim_{p \to \infty} (\mu(E))^{1/p} = 1$.
+    <2>7. Taking the limit superior as $p \to \infty$:
+    $$\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)} \lim_{p \to \infty} (\mu(E))^{1/p} = \|f\|_{L^\infty(E)}.$$
 
-<1>2. Lower bound: $\liminf_{p \to \infty}\|f\|_p \ge \|f\|_\infty$.
-<2>1. For any $M < \|f\|_\infty$, the set $A_M = \{x : |f(x)| > M\}$ has $\mu(A_M) > 0$.
-Proof: definition of the essential supremum.
-<2>2. $\|f\|_p \ge M\,\mu(A_M)^{1/p}$ for every $p$.
-Proof: on $A_M$, $|f|^p > M^p$, so $\int_E|f|^p \ge M^p\mu(A_M)$.
-<2>3. $\liminf_{p\to\infty}\|f\|_p \ge M$, and letting $M \nearrow \|f\|_\infty$ gives $\liminf_p \|f\|_p \ge \|f\|_\infty$.
-Proof: $\mu(A_M)^{1/p} \to 1$ as $p \to \infty$ (positive finite measure); if $\|f\|_\infty = \infty$, take $M$ arbitrarily large.
-<2>4. Q.E.D. Proof: <2>1–<2>3.
+<1>2. Lower bound: $\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge \|f\|_{L^\infty(E)}$.
+    *Proof:*
+    <2>1. If $\|f\|_{L^\infty(E)} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p(E)} = 0$ for all $p \ge 1$ and the inequality holds trivially.
+    <2>2. Assume $\|f\|_{L^\infty(E)} > 0$. For any real number $M$ with $0 < M < \|f\|_{L^\infty(E)}$, define the superlevel set
+    $$A_M = \{x \in E : |f(x)| > M\}.$$
+    <2>3. By definition of the essential supremum, $\mu(A_M) > 0$.
+    <2>4. Restricting the integral to $A_M$:
+    $$\|f\|_{L^p(E)} = \left( \int_E |f(x)|^p \, d\mu \right)^{1/p} \ge \left( \int_{A_M} |f(x)|^p \, d\mu \right)^{1/p} \ge \left( \int_{A_M} M^p \, d\mu \right)^{1/p} = M (\mu(A_M))^{1/p}.$$
+    <2>5. Since $\mu(A_M) \in (0, \infty)$, $\lim_{p \to \infty} (\mu(A_M))^{1/p} = 1$.
+    <2>6. Taking the limit inferior as $p \to \infty$:
+    $$\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge M \lim_{p \to \infty} (\mu(A_M))^{1/p} = M.$$
+    <2>7. If $\|f\|_{L^\infty(E)} < \infty$, taking the supremum over all $M < \|f\|_{L^\infty(E)}$ yields $\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge \|f\|_{L^\infty(E)}$.
+    <2>8. If $\|f\|_{L^\infty(E)} = \infty$, the bound holds for all $M > 0$, so $\lim_{p \to \infty} \|f\|_{L^p(E)} = \infty = \|f\|_{L^\infty(E)}$.
 
-<1>3. Q.E.D. Proof: <1>1 and <1>2 sandwich $\|f\|_p$ between quantities converging to $\|f\|_\infty$.
+<1>3. Conclusion:
+    *Proof:*
+    Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
 :::

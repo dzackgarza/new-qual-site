@@ -14,64 +14,57 @@ relations: []
 review: draft
 ---
 
-a.
-Define a *Euclidean domain*.
+::: problem
+(a) Define a **Euclidean domain**.
 
-b.
-Define a *unique factorization domain*.
+(b) Define a **unique factorization domain (UFD)**.
 
-c.
-Is a Euclidean domain an UFD? 
-Give either a proof or a counterexample with justification.
+(c) Is every Euclidean domain a UFD? Give either a proof or a counterexample with justification.
 
-d.
-Is a UFD a Euclidean domain?
-Give either a proof or a counterexample with justification.
+(d) Is every UFD a Euclidean domain? Give either a proof or a counterexample with justification.
+:::
 
+::: solution
+**Goal:** Define Euclidean domains and UFDs, prove that every Euclidean domain is a UFD in (c), and provide a counterexample showing the converse is false in (d).
 
-:::{.solution}
-\envlist
+<1>1. Part (a): Definition of a Euclidean domain.
+    *Proof:*
+    <2>1. An integral domain $R$ is a Euclidean domain if there exists a function $N: R \setminus \{0\} \to \mathbb{Z}_{\ge 0}$ (called a Euclidean norm or degree function) satisfying the division algorithm:
+    <2>2. For any $a, b \in R$ with $b \ne 0$, there exist elements $q, r \in R$ such that
+    $$a = b q + r,$$
+    where either $r = 0$ or $N(r) < N(b)$.
 
-- $R$ is Euclidean iff it admits a Euclidean algorithm: there is a degree function $f: R\to \ZZ_{\geq 0}$ such that for all $a,b\in R$, there exist $q, r\in R$ such that $a = bq + r$ where $f(r) <f(b)$ or $r=0$.
+<1>2. Part (b): Definition of a unique factorization domain (UFD).
+    *Proof:*
+    <2>1. An integral domain $R$ is a Unique Factorization Domain (UFD) if:
+    <2>2. Existence of factorization: Every non-zero non-unit $r \in R$ can be written as a product of irreducibles,
+    $$r = p_1 p_2 \cdots p_n,$$
+    where $n \ge 1$ and each $p_i \in R$ is irreducible.
+    <2>3. Uniqueness of factorization: If $r = p_1 \cdots p_n = q_1 \cdots q_m$ are two factorizations into irreducibles, then $n = m$ and there exists a permutation $\sigma \in S_n$ such that $p_i$ is an associate of $q_{\sigma(i)}$ (i.e. $p_i = u_i q_{\sigma(i)}$ for some unit $u_i \in R^\times$) for all $1 \le i \le n$.
 
-- $R$ is a UFD iff every nonzero $r\in R$ can be written as $r = u \prod_{i=1}^n p_i$ with $n\geq 0$, $u\in R\units$, and $p_i$ irreducible.
-  This is unique up to associates of the $p_i$ and reordering.
+<1>3. Part (c): Every Euclidean domain is a UFD.
+    *Proof:*
+    <2>1. Substep 1: Every Euclidean domain $R$ is a Principal Ideal Domain (PID).
+        *Proof:* Let $I \subseteq R$ be an ideal. If $I = \{0\}$, then $I = \langle 0 \rangle$ is principal. If $I \ne \{0\}$, the set $\{N(x) : x \in I \setminus \{0\}\} \subset \mathbb{Z}_{\ge 0}$ is non-empty and has a minimal element; choose $b \in I \setminus \{0\}$ achieving this minimal norm. For any $a \in I$, write $a = b q + r$ with $r = 0$ or $N(r) < N(b)$. Since $r = a - b q \in I$, minimality of $N(b)$ forces $r = 0$, so $a = b q \in \langle b \rangle$. Thus $I = \langle b \rangle$.
+    <2>2. Substep 2: In a PID, every non-zero non-unit factors into irreducibles.
+        *Proof:* Every PID is Noetherian (every ideal is finitely generated), so $R$ satisfies the ascending chain condition on principal ideals (ACCP). If a non-zero non-unit $r$ could not be factored into irreducibles, one could construct a strictly ascending chain of principal ideals $\langle r \rangle \subsetneq \langle r_1 \rangle \subsetneq \langle r_2 \rangle \subsetneq \cdots$, contradicting the ACCP.
+    <2>3. Substep 3: In a PID, every irreducible element is prime.
+        *Proof:* Let $p \in R$ be irreducible, and suppose $p \mid a b$. If $p \nmid a$, the ideal $\langle p, a \rangle = \langle d \rangle$ since $R$ is a PID. Since $d \mid p$ and $p$ is irreducible, either $d$ is a unit or $d$ is an associate of $p$. Since $p \nmid a$, $d$ cannot be an associate of $p$, so $\langle d \rangle = R$. Thus $1 = x p + y a$ for some $x, y \in R$. Multiplying by $b$ gives $b = x p b + y a b$. Since $p \mid a b$, $p$ divides the right side, so $p \mid b$. Thus $p$ is prime.
+    <2>4. Substep 4: Primeness implies uniqueness of factorization.
+        *Proof:* Suppose $p_1 \cdots p_n = q_1 \cdots q_m$. Since $p_1$ is prime, $p_1 \mid \prod q_j$, so $p_1 \mid q_j$ for some $j$. Relabeling so $j = 1$, since $q_1$ is irreducible, $p_1$ and $q_1$ are associates ($q_1 = u_1 p_1$). Canceling $p_1$ gives $p_2 \cdots p_n = u_1 q_2 \cdots q_m$. By induction on $n$, $n = m$ and each $p_i$ is associate to some $q_{\sigma(i)}$.
+    <2>5. Therefore, every Euclidean domain is a UFD.
 
-- Euclidean implies UFD:
-  - Euclidean implies PID:
-    - If $I \in \Id(R)$ one can use the degree function to find any $b \in I$ where $f(b)$ is minimal.
-    - Then $I = \gens{b}$, since if $a\in I$ one can write $a = bq + r$ and use that $a-bq \in I \implies r\in I$.
-    - But by minimality, we can't have $f(r)<f(b)$, so $r=0$ and $b \divides a$, so $a\in \gens{b}$.
-    
-  - PID implies UFD:
-    - Existence: a PID is Noetherian, and the ascending chain condition forces every nonzero nonunit to factor into finitely many irreducibles.
-    Since irreducible implies prime in a PID, this is a factorization into primes.
-    - Supposing $x = u_p \prod_{i=1}^m p_i = u_q \prod_{i=1}^n q_i$, use that $p_1$ divides the LHS and so $p_1$ divides the RHS.
-    WLOG, $p_1\divides q_1$, so $q_1 = u_1 p_1$ for $u\in R\units$, so $x = u_q u_1 p_1 \prod_{i=2}^m q_i$ by rewriting a term on the RHS.
-    - Note that this makes $p_1, q_1$ associates.
-    - Continuing up to $m$, we get
-  \[
-  x 
-  &= u_p \prod_{i=1}^m p_i \\
-  &= 
-  u_q \prod_{i=1}^m u_i p_i \prod_{k=m+1}^n q_i \\
-  \implies 
-  u_p 
-  &= u_q \prod_{i=1}^m u_i \prod_{k=m+1}^n q_i \\
-  \tilde u 
-  &= \prod_{k=m+1}^n q_i
-  ,\]
-    where we've moved all units to the LHS.
-    This makes $p_i, q_i$ associates for $i\leq m$.
-    - But primes aren't units and the product of nontrivial primes can't be a unit, so the right-hand side product must be empty.
-    - So $m=n$ and all $p_i, q_i$ are associate, QED.
+<1>4. Part (d): A UFD is not necessarily a Euclidean domain.
+    *Proof:*
+    <2>1. Consider the ring of polynomials in two variables $R = \mathbb{C}[x, y]$.
+    <2>2. Since $\mathbb{C}$ is a field, $\mathbb{C}[x]$ is a Euclidean domain, hence a UFD. By Gauss's Lemma, polynomial rings over UFDs are UFDs, so $R = \mathbb{C}[x, y] = (\mathbb{C}[x])[y]$ is a UFD.
+    <2>3. However, the ideal $I = \langle x, y \rangle \subset \mathbb{C}[x, y]$ is not principal: any generator $d$ of $\langle x, y \rangle$ must divide both $x$ and $y$, forcing $d \in \mathbb{C}^\times$, which would mean $\langle x, y \rangle = \mathbb{C}[x, y]$, a contradiction since the evaluation at the origin gives $\mathbb{C}[x, y]/\langle x, y \rangle \cong \mathbb{C} \ne 0$.
+    <2>4. Thus $\mathbb{C}[x, y]$ is not a PID.
+    <2>5. Since every Euclidean domain is a PID by <1>3, $\mathbb{C}[x, y]$ cannot be a Euclidean domain.
 
-- UFD does not imply Euclidean:
-  - It suffices to find a UFD that is not a PID.
-  - Take $R \da \CC[x, y]$, which is a UFD by the usual factorization of polynomials.
-  It is not a PID, since $\gens{x, y}$ is not principal.
-
-
+<1>5. Conclusion:
+    *Proof:*
+    Every Euclidean domain is a UFD, but a UFD need not be a Euclidean domain.
 :::
 
 

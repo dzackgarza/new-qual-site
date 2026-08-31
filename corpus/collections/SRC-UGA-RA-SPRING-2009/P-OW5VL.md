@@ -14,70 +14,49 @@ relations: []
 review: draft
 ---
 
-Prove that if $f: [0, 1] \to \RR$ is continuous then
-\[
-\lim_{k\to\infty} \int_0^1 kx^{k-1} f(x) \,dx = f(1)
-.\]
-
-:::{.concept}
-\envlist
-
-- DCT
-- Weierstrass Approximation Theorem
-  - If $f: [a, b] \to \RR$ is continuous, then for every $\eps>0$ there exists a polynomial $p_\eps(x)$ such that $\norm{f - p_\eps}_\infty < \eps$.
+::: problem
+Prove that if $f: [0, 1] \to \mathbb{R}$ is continuous, then
+$$
+\lim_{k \to \infty} \int_0^1 k x^{k-1} f(x) \, dx = f(1).
+$$
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove that $\lim_{k \to \infty} \int_0^1 k x^{k-1} f(x) \, dx = f(1)$ using the continuity of $f$ and the approximate identity property of the kernel $k x^{k-1}$.
 
-- Suppose $p$ is a polynomial, then integrate by parts:
-\[
-\lim_{k\to\infty} \int_0^1 kx^{k-1} p(x) \, dx
-&= \lim_{k\to\infty} \int_0^1 \qty{ \dd{}{x}x^k } p(x) \, dx \\
-&= \lim_{k\to\infty} \left[ x^k p(x) \evalfrom_0^1 - \int_0^1 x^k \qty{\dd{p}{x}(x) } \, dx \right] \quad\text{IBP}\\
-&= p(1) - \lim_{k\to\infty} \int_0^1 x^k \qty{\dd{p}{x}(x) } \, dx
-,\]
+<1>1. Integral of the kernel:
+    *Proof:*
+    <2>1. For every integer $k \ge 1$, compute the integral of the weight function:
+    $$\int_0^1 k x^{k-1} \, dx = \left[ x^k \right]_0^1 = 1 - 0 = 1.$$
+    <2>2. Multiplying by the constant $f(1)$:
+    $$f(1) = \int_0^1 k x^{k-1} f(1) \, dx.$$
+    <2>3. Subtracting the two expressions gives
+    $$\int_0^1 k x^{k-1} f(x) \, dx - f(1) = \int_0^1 k x^{k-1} (f(x) - f(1)) \, dx.$$
 
-- Thus it suffices to show that
-\[
-\lim_{k\to\infty} \int_0^1 x^k \qty{\dd{p}{x} (x) } \, dx = 0
-.\]
+<1>2. Boundedness and continuity of $f$:
+    *Proof:*
+    <2>1. Since $f$ is continuous on the compact interval $[0, 1]$, the difference $|f(x) - f(1)|$ is continuous and bounded:
+    $$M = \sup_{x \in [0, 1]} |f(x) - f(1)| < \infty.$$
+    <2>2. If $M = 0$, $f$ is constant, and the result is immediate. Assume $M > 0$.
+    <2>3. Let $\varepsilon > 0$ be given.
+    <2>4. By continuity of $f$ at $x = 1$, there exists $\delta \in (0, 1)$ such that
+    $$x \in [1 - \delta, 1] \implies |f(x) - f(1)| < \frac{\varepsilon}{2}.$$
 
-- Integrating by parts a second time yields
-\[
-\lim_{k\to\infty} 
-\int_0^1 x^k \qty{\dd{p}{x}(x) } \, dx
-&= \lim_{k\to\infty} 
-{x^{k+1} \over k+1} \dd{p}{x}(x) \evalfrom_0^1 - \int_0^1 {x^{k+1} \over k+1} \qty{ \dd{^2 p}{x^2}(x)} \, dx \\
-&= \lim_{k\to\infty} {p'(1) \over k+1} - \lim_{k\to\infty} \int_0^1 {x^{k+1} \over k+1} \qty{ \dd{^2p}{x^2}(x)} \, dx \\
-&= - \lim_{k\to\infty} \int_0^1 {x^{k+1} \over k+1} \qty{ \dd{^2p}{x^2}(x)} \, dx \\
-&= - \int_0^1 \lim_{k\to\infty}  {x^{k+1} \over k+1} \qty{ \dd{^2p}{x^2}(x)} \, dx \quad\text{by DCT} \\
-&= - \int_0^1 0 \qty{ \dd{^2p}{x^2}(x)} \, dx \\
-&= 0
-.\]
+<1>3. Splitting the integral:
+    *Proof:*
+    <2>1. Split the domain $[0, 1] = [0, 1 - \delta] \cup [1 - \delta, 1]$:
+    $$\left| \int_0^1 k x^{k-1} (f(x) - f(1)) \, dx \right| \le \int_0^{1-\delta} k x^{k-1} |f(x) - f(1)| \, dx + \int_{1-\delta}^1 k x^{k-1} |f(x) - f(1)| \, dx.$$
+    <2>2. Bound on the near-boundary interval $[1 - \delta, 1]$:
+    $$\int_{1-\delta}^1 k x^{k-1} |f(x) - f(1)| \, dx \le \frac{\varepsilon}{2} \int_{1-\delta}^1 k x^{k-1} \, dx \le \frac{\varepsilon}{2} \int_0^1 k x^{k-1} \, dx = \frac{\varepsilon}{2}.$$
+    <2>3. Bound on the away interval $[0, 1 - \delta]$:
+    $$\int_0^{1-\delta} k x^{k-1} |f(x) - f(1)| \, dx \le M \int_0^{1-\delta} k x^{k-1} \, dx = M \left[ x^k \right]_0^{1-\delta} = M (1 - \delta)^k.$$
+    <2>4. Since $0 < 1 - \delta < 1$, $\lim_{k \to \infty} (1 - \delta)^k = 0$.
+    <2>5. Choose an integer $K \ge 1$ such that for all $k \ge K$:
+    $$M (1 - \delta)^k < \frac{\varepsilon}{2}.$$
+    <2>6. Combining the bounds, for all $k \ge K$:
+    $$\left| \int_0^1 k x^{k-1} f(x) \, dx - f(1) \right| < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
-  - The DCT can be applied here because polynomials are smooth and $[0, 1]$ is compact, so $\dd{^2 p}{x^2}$ is bounded on $[0, 1]$ by some constant $M$ and 
-  \[ \int_0^1 \abs{x^k \dd{^2 p}{x^2} (x)} \leq \int_0^1 1\cdot M = M < \infty.\]
-
-- So the result holds when $f$ is a polynomial.
-
-- Now use the Weierstrass approximation theorem: 
-  - If $f: [a, b] \to \RR$ is continuous, then for every $\eps>0$ there exists a polynomial $p_\eps(x)$ such that $\norm{f - p_\eps}_\infty < \eps$.
-
-- Thus 
-\[
-\abs{ \int_0^1 kx^{k-1} p_\eps(x)\,dx - \int_0^1 kx^{k-1}f(x)\,dx  } 
-&= \abs{ \int_0^1 kx^{k-1} \qty{p_\eps(x) - f(x)} \,dx  } \\
-&\leq \abs{ \int_0^1 kx^{k-1} \norm{p_\eps-f}_\infty \,dx  } \\
-&= \norm{p_\eps-f}_\infty \cdot \abs{ \int_0^1 kx^{k-1} \,dx  } \\
-&= \norm{p_\eps-f}_\infty \cdot x^k \evalfrom_0^1 \\
-&= \norm{p_\eps-f}_\infty \\ \\
-&\converges{\eps\to 0}\to 0
-\]
-
-  and the integrals are equal. 
-
-- By the first argument, $$\int_0^1 kx^{k-1} p_\eps(x) \,dx = p_\eps(1) \text{ for each } \eps$$ 
-- Since uniform convergence implies pointwise convergence, $p_\eps(1) \converges{\eps\to 0}\to f(1)$.
-
+<1>4. Conclusion:
+    *Proof:*
+    Since $\varepsilon > 0$ was arbitrary, $\lim_{k \to \infty} \int_0^1 k x^{k-1} f(x) \, dx = f(1)$.
 :::

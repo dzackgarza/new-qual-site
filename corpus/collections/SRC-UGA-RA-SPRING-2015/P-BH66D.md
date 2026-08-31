@@ -13,51 +13,38 @@ relations: []
 review: draft
 ---
 
-Let $(X, d)$ and $(Y, \rho)$ be metric spaces, $f: X\to Y$, and $x_0 \in X$.
+::: problem
+Let $(X, d)$ and $(Y, \rho)$ be metric spaces, let $f: X \to Y$ be a function, and let $x_0 \in X$. Prove that the following two statements are equivalent:
 
-Prove that the following statements are equivalent:
-
-1. For every $\varepsilon > 0 \quad \exists \delta > 0$ such that $\rho( f(x), f(x_0)  ) < \varepsilon$ whenever $d(x, x_0) < \delta$.
-
-2. The sequence $\theset{f(x_n)}_{n=1}^\infty \to f(x_0)$ for every sequence $\theset{x_n} \to x_0$ in $X$.
-
-::: {.concept}
-\envlist
-
-- What it means for a sequence to converge.
-
-- Trading $N$s for $\delta$s.
+1. For every $\varepsilon > 0$, there exists $\delta > 0$ such that $\rho(f(x), f(x_0)) < \varepsilon$ whenever $d(x, x_0) < \delta$.
+2. For every sequence $(x_n)_{n=1}^\infty$ in $X$ with $\lim_{n \to \infty} x_n = x_0$, the image sequence satisfies $\lim_{n \to \infty} f(x_n) = f(x_0)$ in $Y$.
 :::
 
-::: {.solution}
-\envlist
+::: solution
+**Goal:** Prove the equivalence between $\varepsilon$-$\delta$ continuity and sequential continuity of $f$ at a point $x_0$.
 
-::: {.proof title="1 $\implies$ 2"}
-\envlist
+<1>1. Statement (1) implies Statement (2):
+    *Proof:*
+    <2>1. Assume Statement (1) holds. Let $(x_n)_{n=1}^\infty$ be a sequence in $X$ with $\lim_{n \to \infty} x_n = x_0$.
+    <2>2. Let $\varepsilon > 0$ be given.
+    <2>3. By (1), there exists $\delta > 0$ such that for all $x \in X$, $d(x, x_0) < \delta \implies \rho(f(x), f(x_0)) < \varepsilon$.
+    <2>4. Since $x_n \to x_0$ in $(X, d)$, there exists an integer $N \ge 1$ such that $d(x_n, x_0) < \delta$ for all $n \ge N$.
+    <2>5. Therefore, for all $n \ge N$, $\rho(f(x_n), f(x_0)) < \varepsilon$.
+    <2>6. This proves $\lim_{n \to \infty} f(x_n) = f(x_0)$ in $(Y, \rho)$, establishing Statement (2).
 
-- Let $\theset{x_n} \converges{n\to\infty}\to x_0$ be arbitrary; we want to show $\theset{f(x_n)}\converges{n\to\infty}\to f(x_0)$.
+<1>2. Statement (2) implies Statement (1):
+    *Proof:*
+    <2>1. We prove the contrapositive: suppose Statement (1) does not hold.
+    <2>2. The logical negation of Statement (1) states: there exists $\varepsilon_0 > 0$ such that for every $\delta > 0$, there exists a point $x \in X$ satisfying $d(x, x_0) < \delta$ and $\rho(f(x), f(x_0)) \ge \varepsilon_0$.
+    <2>3. For each positive integer $n \ge 1$, set $\delta = 1/n > 0$.
+    <2>4. By <2>2, there exists a point $x_n \in X$ such that
+    $$d(x_n, x_0) < \frac{1}{n} \quad \text{and} \quad \rho(f(x_n), f(x_0)) \ge \varepsilon_0.$$
+    <2>5. Since $0 \le d(x_n, x_0) < 1/n$ for all $n \ge 1$, the Squeeze Theorem implies $\lim_{n \to \infty} d(x_n, x_0) = 0$, so $x_n \to x_0$ in $X$.
+    <2>6. However, since $\rho(f(x_n), f(x_0)) \ge \varepsilon_0 > 0$ for all $n \ge 1$, the sequence $(f(x_n))_{n=1}^\infty$ cannot converge to $f(x_0)$ in $Y$.
+    <2>7. Thus Statement (2) fails.
+    <2>8. By contraposition, Statement (2) implies Statement (1).
 
-  - We thus want to show that for every $\eps>0$, there exists an $N(\eps)$ such that \[n\geq N(\eps) \implies \rho(f(x_n),  f(x_0)) < \eps.\]
-
-- Let $\eps>0$ be arbitrary, then by (1) choose $\delta$ such that $\rho(f(x), f(x_0)) < \eps$ when $d(x, x_0) < \delta$.
-
-- Since $x_n\to x$, there is some $N$ such that $n\geq N \implies d(x_n, x_0) < \delta$
-
-- Then for $n\geq N$, $d(x_n, x_0) < \delta$ and thus $\rho(f(x_n), f(x_0)) < \eps$, so $f(x_n)\to f(x_0)$ by definition.
-:::
-
-::: {.proof title="$2\implies 1$"}
-
-> The direct implication is not a good idea here, since you need a handle on *all* $x$ in a neighborhood of $x_0$, not just a specific sequence.
-
-- By contrapositive, show that $\not 1\implies \not 2$.
-
-- Need to show: if $f$ is not $\eps\dash\delta$ continuous at $x_0$, then there exists a sequence $x_n\to x_0$ where $f(x_n)\not\to f(x_0)$.
-
-- Negating $1$, we have that there exists an $\eps>0$ such that for all $\delta$, there exists an $x$ with $d(x, x_0) < \delta$ but $\rho(f(x), f(x_0))>\eps$
-
-- So take a sequence of deltas $\delta_n = {1\over n}$, apply this to produce a sequence $x_n$ with $d(x_n, x_0) < \delta_n \da {1\over n} \too 0$ and $\rho(f(x_n), f(x_0)) > \eps$ for all $n$.
-
-- This yields a sequence $x_n \to x_0$ where $f(x_n) \not\to f(x_0)$.
-:::
+<1>3. Conclusion:
+    *Proof:*
+    Statements (1) and (2) are logically equivalent.
 :::
