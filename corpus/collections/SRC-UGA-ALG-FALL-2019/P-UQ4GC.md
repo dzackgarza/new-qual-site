@@ -38,7 +38,7 @@ $$
 **Goal:** Prove lattice containment $\Lambda \subseteq \Lambda^\vee$, establish invertibility of the Gram matrix $M$, and compute the index $|\Lambda^\vee/\Lambda|$ using the Smith normal form of $M$.
 
 <1>1. Part (a): $\Lambda \subseteq \Lambda^\vee$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $v \in \Lambda$, so $v = \sum_{i=1}^n r_i e_i$ with $r_i \in \mathbb{Z}$.
     <2>2. Let $x \in \Lambda$, so $x = \sum_{j=1}^n s_j e_j$ with $s_j \in \mathbb{Z}$.
     <2>3. Compute the bilinear product:
@@ -48,8 +48,10 @@ $$
     <2>6. Since $x \in \Lambda$ was arbitrary, $v \in \Lambda^\vee$.
     <2>7. Thus $\Lambda \subseteq \Lambda^\vee$.
 
+:::
+
 <1>2. Part (b): $\det M \ne 0$.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose $c = (c_1, \dots, c_n)^T \in \mathbb{R}^n$ satisfies $M c = 0$.
     <2>2. Define the vector $v = \sum_{j=1}^n c_j e_j \in V$.
     <2>3. For each basis vector $e_i$ ($1 \le i \le n$):
@@ -60,8 +62,10 @@ $$
     <2>6. Since $\{e_1, \dots, e_n\}$ is a basis of $V$, $v = \sum c_j e_j = 0 \implies c_j = 0$ for all $j$.
     <2>7. Thus $\ker M = \{0\}$, so $M$ is invertible in $M_n(\mathbb{R})$, which proves $\det M \ne 0$.
 
+:::
+
 <1>3. Part (b): $\Lambda^\vee = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
-    *Proof:*
+::: {.proof}
     <2>1. For each $i \in \{1, \dots, n\}$, define $e_i^* = \sum_{j=1}^n (M^{-1})_{ji} e_j \in V$.
     <2>2. Compute $e_k \cdot e_i^*$:
     $$e_k \cdot e_i^* = \sum_{j=1}^n (M^{-1})_{ji} (e_k \cdot e_j) = \sum_{j=1}^n M_{kj} (M^{-1})_{ji} = (M M^{-1})_{ki} = \delta_{ki}.$$
@@ -73,8 +77,10 @@ $$
     $$v = \sum_{j=1}^n y_j e_j = \sum_{j=1}^n \left( \sum_{i=1}^n (M^{-1})_{ji} z_i \right) e_j = \sum_{i=1}^n z_i \left( \sum_{j=1}^n (M^{-1})_{ji} e_j \right) = \sum_{i=1}^n z_i e_i^*.$$
     <2>8. Thus $\Lambda^\vee = \left\{ \sum_{i=1}^n z_i e_i^* \;\middle|\; z_i \in \mathbb{Z} \right\} = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
 
+:::
+
 <1>4. Part (c): $|\Lambda^\vee / \Lambda| = |\det M|$.
-    *Proof:*
+::: {.proof}
     <2>1. Express the basis $\{e_j\}$ of $\Lambda$ in terms of the basis $\{e_i^*\}$ of $\Lambda^\vee$:
     $$e_j = \sum_{i=1}^n (e_i \cdot e_j) e_i^* = \sum_{i=1}^n M_{ij} e_i^*.$$
     <2>2. Thus $\Lambda$ is the image of the $\mathbb{Z}$-linear map $M: \Lambda^\vee \to \Lambda^\vee$, so
@@ -88,7 +94,10 @@ $$
     <2>6. Taking determinants:
     $$\det D = |\det(P M Q)| = |\det P| \cdot |\det M| \cdot |\det Q| = 1 \cdot |\det M| \cdot 1 = |\det M|.$$
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $\Lambda \subseteq \Lambda^\vee$, $\det M \ne 0$, the dual basis vectors $e_i^*$ span $\Lambda^\vee$, and $|\Lambda^\vee / \Lambda| = |\det M|$.
+:::
 :::

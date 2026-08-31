@@ -42,7 +42,7 @@ $$
 **Goal:** Prove the boundedness of the family of convolution operators $A_\delta$ on $L^1(\mathbb{R})$ via Tonelli's Theorem in (a), and prove $L^1$ convergence to $\alpha f$ via the Dominated Convergence Theorem on translations in (b).
 
 <1>1. Part (a): Boundedness of $A_\delta f$ in $L^1(\mathbb{R})$.
-    *Proof:*
+::: {.proof}
     <2>1. Define $\varphi_\delta(y) = \delta^{-1} \varphi(\delta^{-1} y)$.
     <2>2. By the change of variables $u = \delta^{-1} y$ ($du = \delta^{-1} dy$):
     $$\|\varphi_\delta\|_{L^1} = \int_{\mathbb{R}} \delta^{-1} |\varphi(\delta^{-1} y)| \, dy = \int_{\mathbb{R}} |\varphi(u)| \, du = \|\varphi\|_{L^1}.$$
@@ -54,8 +54,10 @@ $$
     <2>6. Thus:
     $$\|A_\delta f\|_{L^1} \le \|f\|_{L^1} \int_{\mathbb{R}} |\varphi_\delta(y)| \, dy = \|f\|_{L^1} \|\varphi_\delta\|_{L^1} = \|\varphi\|_{L^1} \|f\|_{L^1}.$$
 
+:::
+
 <1>2. Part (b): Representation of the error $A_\delta f(x) - \alpha f(x)$.
-    *Proof:*
+::: {.proof}
     <2>1. By change of variables, $\int_{\mathbb{R}} \varphi_\delta(y) \, dy = \int_{\mathbb{R}} \delta^{-1} \varphi(\delta^{-1} y) \, dy = \int_{\mathbb{R}} \varphi(u) \, du = \alpha$.
     <2>2. Multiply this identity by $f(x)$:
     $$\alpha f(x) = \int_{\mathbb{R}} f(x) \varphi_\delta(y) \, dy.$$
@@ -64,8 +66,10 @@ $$
     <2>4. Substitute $y = \delta z$ ($dy = \delta dz$):
     $$A_\delta f(x) - \alpha f(x) = \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz.$$
 
+:::
+
 <1>3. Part (b): $L^1$ norm estimate and Dominated Convergence Theorem.
-    *Proof:*
+::: {.proof}
     <2>1. Take the $L^1$ norm:
     $$\|A_\delta f - \alpha f\|_{L^1} = \int_{\mathbb{R}} \left| \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz \right| dx \le \int_{\mathbb{R}} \int_{\mathbb{R}} |f(x - \delta z) - f(x)| |\varphi(z)| \, dz \, dx.$$
     <2>2. By Tonelli's Theorem, interchange the order of integration:
@@ -83,8 +87,11 @@ $$
     <2>5. By the Dominated Convergence Theorem:
     $$\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} \le \int_{\mathbb{R}} \lim_{\delta \to 0^+} \left( |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \right) dz = \int_{\mathbb{R}} 0 \, dz = 0.$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\|A_\delta f\|_{L^1} \le \|\varphi\|_{L^1} \|f\|_{L^1}$ and $\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} = 0$.
+:::
 :::
 

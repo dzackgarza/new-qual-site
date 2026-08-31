@@ -25,14 +25,16 @@ $$
 **Goal:** Prove the absolute continuity of the Lebesgue integral by truncating $|f|$ by height $N$ and applying the Monotone Convergence Theorem.
 
 <1>1. Pointwise convergence and monotonicity of truncations:
-    *Proof:*
+::: {.proof}
     <2>1. For each integer $N \ge 1$, define the truncated function:
     $$f_N(x) = \min(|f(x)|, N) = \begin{cases} |f(x)| & \text{if } |f(x)| \le N, \\ N & \text{if } |f(x)| > N. \end{cases}$$
     <2>2. For every $x \in \mathbb{R}$, $0 \le f_N(x) \le f_{N+1}(x)$ and $\lim_{N \to \infty} f_N(x) = |f(x)|$.
     <2>3. Each $f_N$ is measurable and bounded by $N$.
 
+:::
+
 <1>2. Approximation of $|f|$ by $f_N$ in $L^1(\mathbb{R})$:
-    *Proof:*
+::: {.proof}
     <2>1. By the Monotone Convergence Theorem:
     $$\lim_{N \to \infty} \int_{\mathbb{R}} f_N(x) \, dx = \int_{\mathbb{R}} |f(x)| \, dx.$$
     <2>2. Since $f \in L^1(\mathbb{R})$, $\int_{\mathbb{R}} |f(x)| \, dx < \infty$.
@@ -41,8 +43,10 @@ $$
     <2>4. Let $\varepsilon > 0$. There exists an integer $N_0 \ge 1$ such that
     $$\int_{\mathbb{R}} (|f(x)| - f_{N_0}(x)) \, dx < \frac{\varepsilon}{2}.$$
 
+:::
+
 <1>3. Choice of $\delta > 0$ and integration bound:
-    *Proof:*
+::: {.proof}
     <2>1. Define $\delta = \frac{\varepsilon}{2 N_0} > 0$.
     <2>2. Let $E \subseteq \mathbb{R}$ be any measurable set with $m(E) < \delta$.
     <2>3. Decompose the integral over $E$:
@@ -54,8 +58,11 @@ $$
     <2>6. Combining the two estimates:
     $$\int_E |f(x)| \, dx < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     For any $\varepsilon > 0$, choosing $\delta = \frac{\varepsilon}{2 N_0}$ ensures $\int_E |f| < \varepsilon$ whenever $m(E) < \delta$.
+:::
 :::
 

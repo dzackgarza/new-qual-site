@@ -29,7 +29,7 @@ review: draft
 **Goal:** Prove non-triviality of the center for $p$-groups via the class equation in (a), deduce abelianness of order $p^2$ in (b), establish direct product decomposition of order $5^2 \cdot 7^2$ via Sylow theory in (c), and enumerate isomorphism classes in (d).
 
 <1>1. Part (a): Finite $p$-groups have non-trivial centers.
-    *Proof:*
+::: {.proof}
     <2>1. Let $G$ be a group of order $|G| = p^k$ with $k \ge 1$.
     <2>2. $G$ acts on itself by conjugation ($g \cdot x = g x g^{-1}$).
     <2>3. The orbit of $x \in G$ is the conjugacy class $\operatorname{Cl}(x)$, and the stabilizer of $x$ is the centralizer $C_G(x)$.
@@ -45,8 +45,10 @@ review: draft
     <2>10. Since $e \in Z(G)$, $|Z(G)| \ge 1$. Since $p \mid |Z(G)|$, $|Z(G)| \ge p > 1$.
     <2>11. Thus $Z(G)$ is non-trivial.
 
+:::
+
 <1>2. Part (b): Every group of order $p^2$ is abelian.
-    *Proof:*
+::: {.proof}
     <2>1. Let $|G| = p^2$. By Part (a), $|Z(G)| \in \{p, p^2\}$.
     <2>2. If $|Z(G)| = p^2$, then $Z(G) = G$, so $G$ is abelian.
     <2>3. If $|Z(G)| = p$, then the quotient group $G/Z(G)$ has order $|G/Z(G)| = p^2 / p = p$.
@@ -59,8 +61,10 @@ review: draft
     <2>6. But if $G$ is abelian, $Z(G) = G$, so $|Z(G)| = p^2 \ne p$, a contradiction.
     <2>7. Therefore $|Z(G)| = p^2$, which proves $G$ is abelian.
 
+:::
+
 <1>3. Part (c): Every group of order $5^2 \cdot 7^2$ is abelian.
-    *Proof:*
+::: {.proof}
     <2>1. Let $|G| = 5^2 \cdot 7^2 = 1225$.
     <2>2. By Sylow's Theorems:
         - Number of Sylow 5-subgroups: $n_5 \equiv 1 \pmod 5$ and $n_5 \mid 7^2 = 49$.
@@ -75,8 +79,10 @@ review: draft
     <2>7. By Part (b), since $|P| = 5^2$ and $|Q| = 7^2$, both $P$ and $Q$ are abelian.
     <2>8. The direct product of abelian groups is abelian, so $G$ is abelian.
 
+:::
+
 <1>4. Part (d): Isomorphism classes of groups of order $5^2 \cdot 7^2$.
-    *Proof:*
+::: {.proof}
     <2>1. By Part (c), every group of order $5^2 \cdot 7^2$ is abelian of the form $P \times Q$, where $P$ has order 25 and $Q$ has order 49.
     <2>2. By the Fundamental Theorem of Finite Abelian Groups:
         - Abelian groups of order $5^2 = 25$: $\mathbb{Z}/25\mathbb{Z}$ and $\mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z}$.
@@ -87,8 +93,11 @@ review: draft
     3. $\mathbb{Z}/25\mathbb{Z} \times (\mathbb{Z}/7\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z})$
     4. $(\mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z}) \times (\mathbb{Z}/7\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z})$
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $p$-groups have $|Z(G)| \ge p$, order $p^2$ groups are abelian, order $5^2 \cdot 7^2$ groups decompose into $P \times Q$ (hence abelian), with exactly 4 isomorphism classes.
+:::
 :::
 

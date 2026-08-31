@@ -29,7 +29,7 @@ $$
 **Goal:** Construct a sequence of narrowing triangular spikes of height 1 in (a), and use uniform continuity to lower-bound the integral on disjoint intervals in (b).
 
 <1>1. Part (a): Explicit counterexample for continuous $L^1$ functions.
-    *Proof:*
+::: {.proof}
     <2>1. For each integer $n \ge 2$, define the symmetric triangle function supported on $\left[n - \frac{1}{n^2}, n + \frac{1}{n^2}\right]$:
     $$f_n(x) = \begin{cases} 1 - n^2 |x - n| & \text{if } |x - n| \le \frac{1}{n^2}, \\ 0 & \text{otherwise}. \end{cases}$$
     <2>2. Define $f: \mathbb{R} \to \mathbb{R}$ by $f(x) = \sum_{n=2}^\infty f_n(x)$.
@@ -47,8 +47,10 @@ $$
         - Along the sequence $x_n = n \to \infty$, $\lim_{n \to \infty} f(x_n) = 1 \ne 0$.
         - Therefore $f(x) \not\to 0$ as $|x| \to \infty$.
 
+:::
+
 <1>2. Part (b): Uniform continuity forces $\lim_{|x| \to \infty} f(x) = 0$.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose for contradiction that $\lim_{|x| \to \infty} f(x) \ne 0$.
     <2>2. Then there exists $\varepsilon_0 > 0$ and a sequence $(x_n)_{n=1}^\infty$ with $|x_n| \to \infty$ such that
     $$|f(x_n)| \ge \varepsilon_0 \quad \text{for all } n \ge 1.$$
@@ -62,9 +64,12 @@ $$
     <2>7. This contradicts $f \in L^1(\mathbb{R})$ ($\int_{\mathbb{R}} |f| < \infty$).
     <2>8. Therefore $\lim_{|x| \to \infty} f(x) = 0$.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     A continuous $L^1$ function may produce narrow spikes of height 1 with summable areas, but uniform continuity prevents spike narrowing and forces $\lim_{|x| \to \infty} f(x) = 0$.
+:::
 :::
 
 

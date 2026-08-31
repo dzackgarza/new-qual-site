@@ -29,7 +29,7 @@ but there is no based homotopy between $\gamma_0$ and $\gamma_1$ (that is, no co
 **Goal:** Provide an explicit example of loops on $\Sigma_2$ that are freely homotopic (conjugate in $\pi_1$) but not based homotopic (distinct in $\pi_1$), and prove both properties.
 
 <1>1. General characterization of free vs based homotopy:
-    *Proof:*
+::: {.proof}
     <2>1. For any path-connected space $X$ with basepoint $x_0$, the set of free homotopy classes of unbased loops $[S^1, X]$ is in natural bijection with the conjugacy classes of the fundamental group:
     $$[S^1, X] \longleftrightarrow \operatorname{Conj}(\pi_1(X, x_0)) = \pi_1(X, x_0) / \sim_{\text{conjugacy}}.$$
     <2>2. Two based loops $\gamma_0, \gamma_1$ with $[\gamma_0] = g_0$ and $[\gamma_1] = g_1$ in $\pi_1(X, x_0)$ are:
@@ -37,27 +37,35 @@ but there is no based homotopy between $\gamma_0$ and $\gamma_1$ (that is, no co
         - *Based homotopic* if and only if $g_1 = g_0$ in $\pi_1(X, x_0)$.
     <2>3. Thus $\gamma_0$ and $\gamma_1$ are freely homotopic but not based homotopic if and only if $g_1 = h g_0 h^{-1}$ with $g_1 \ne g_0$ (meaning $g_0$ and $h$ do not commute in $\pi_1(X, x_0)$).
 
+:::
+
 <1>2. Fundamental group of the genus 2 surface $\Sigma_2$:
-    *Proof:*
+::: {.proof}
     <2>1. Choose a basepoint $x_0 \in \Sigma_2$.
     <2>2. The fundamental group of the closed genus 2 surface has the standard presentation:
     $$\pi_1(\Sigma_2, x_0) = \langle a_1, b_1, a_2, b_2 \mid [a_1, b_1][a_2, b_2] = 1 \rangle.$$
     <2>3. Here $a_1$ and $b_1$ represent the canonical meridian and longitude loops around the first handle passing through $x_0$.
 
+:::
+
 <1>3. Explicit construction of the pair of loops:
-    *Proof:*
+::: {.proof}
     <2>1. Let $\gamma_0: S^1 \to \Sigma_2$ be the meridian loop around the first handle representing $a_1 \in \pi_1(\Sigma_2, x_0)$.
     <2>2. Let $\beta: S^1 \to \Sigma_2$ be the longitudinal loop around the first handle representing $b_1 \in \pi_1(\Sigma_2, x_0)$.
     <2>3. Define $\gamma_1$ to be the conjugated loop $\gamma_1 = \beta * \gamma_0 * \bar{\beta}$ representing
     $$[\gamma_1] = b_1 a_1 b_1^{-1} \in \pi_1(\Sigma_2, x_0).$$
 
+:::
+
 <1>4. Proof of free homotopy:
-    *Proof:*
+::: {.proof}
     <2>1. By <1>1, since $[\gamma_1] = b_1 [\gamma_0] b_1^{-1}$ is conjugate to $[\gamma_0]$ in $\pi_1(\Sigma_2, x_0)$, $\gamma_0$ and $\gamma_1$ are freely homotopic.
     <2>2. Geometrically, the homotopy $\Gamma(s, t)$ is obtained by dragging the loop $\gamma_0$ along the longitudinal path $\beta(s)$ from $s = 0$ to $s = 1$.
 
+:::
+
 <1>5. Proof of non-based homotopy:
-    *Proof:*
+::: {.proof}
     <2>1. Suppose for contradiction that $\gamma_0$ and $\gamma_1$ are based homotopic.
     <2>2. Then $[\gamma_0] = [\gamma_1]$ in $\pi_1(\Sigma_2, x_0)$, which requires
     $$a_1 = b_1 a_1 b_1^{-1} \implies [a_1, b_1] = a_1 b_1 a_1^{-1} b_1^{-1} = 1.$$
@@ -67,7 +75,10 @@ but there is no based homotopy between $\gamma_0$ and $\gamma_1$ (that is, no co
     <2>6. Thus $a_1 \ne b_1 a_1 b_1^{-1}$ in $\pi_1(\Sigma_2, x_0)$.
     <2>7. Therefore $\gamma_0$ and $\gamma_1$ are not homotopic relative to $x_0$.
 
+:::
+
 <1>6. Conclusion:
-    *Proof:*
+::: {.proof}
     $\gamma_0 = a_1$ and $\gamma_1 = b_1 * a_1 * \bar{b}_1$ are freely homotopic but not based homotopic on $\Sigma_2$.
+:::
 :::

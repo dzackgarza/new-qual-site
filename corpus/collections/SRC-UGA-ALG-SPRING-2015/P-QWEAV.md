@@ -36,7 +36,7 @@ $$
 **Goal:** Prove Cayley's embedding in (a), determine the parity of left translation permutations in (b), and construct an index-2 normal subgroup via the sign homomorphism to prove nonsimplicity in (c).
 
 <1>1. Part (a): Cayley map is an injective group homomorphism.
-    *Proof:*
+::: {.proof}
     <2>1. Homomorphism property:
         - For any $g, h \in G$ and all $x \in G$:
         $$C(g h)(x) = (g h) x = g (h x) = C(g)(h x) = C(g)(C(h)(x)) = (C(g) \circ C(h))(x).$$
@@ -47,8 +47,10 @@ $$
         - Evaluating at $x = e$ gives $g e = e \implies g = e$.
         - Thus $\ker(C) = \{e\}$, so $C$ is injective.
 
+:::
+
 <1>2. Part (b): $\varepsilon(a) = -1 \iff d$ is even and $N/d$ is odd.
-    *Proof:*
+::: {.proof}
     <2>1. Let $a \in G$ have order $d = \operatorname{ord}(a)$.
     <2>2. The cyclic group $\langle a \rangle \le G$ has order $d$.
     <2>3. The action of $\langle a \rangle$ on $G$ by left translation partitions $G$ into $m = [G : \langle a \rangle] = N/d$ orbits, each of which is a right coset $\langle a \rangle x = \{a^j x \mid 0 \le j < d\}$.
@@ -60,8 +62,10 @@ $$
     <2>8. The product $\frac{N}{d}(d - 1)$ is odd if and only if both factors are odd:
     $$\frac{N}{d} \text{ is odd} \quad \text{and} \quad d - 1 \text{ is odd} \iff \frac{N}{d} \text{ is odd} \quad \text{and} \quad d \text{ is even}.$$
 
+:::
+
 <1>3. Part (c): $G$ is not simple when $N > 2$ and $N \equiv 2 \pmod 4$.
-    *Proof:*
+::: {.proof}
     <2>1. Since $N \equiv 2 \pmod 4$, $2 \mid N$ and $N/2$ is an odd integer.
     <2>2. By Cauchy's Theorem for finite groups, since $2 \mid |G| = N$, $G$ contains an element $g \in G$ of order $d = 2$.
     <2>3. For this element $g$, the order $d = 2$ is even and $N/d = N/2$ is odd.
@@ -74,8 +78,11 @@ $$
     <2>9. Since $N > 2$, $1 < |H| = N/2 < N$, so $H$ is a non-trivial, proper normal subgroup of $G$.
     <2>10. Therefore $G$ is not simple.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $C$ is injective, $\varepsilon(a) = (-1)^{\frac{N}{d}(d-1)}$, and the kernel of $\varepsilon$ provides an index 2 normal subgroup when $N \equiv 2 \pmod 4$ and $N > 2$.
+:::
 :::
 

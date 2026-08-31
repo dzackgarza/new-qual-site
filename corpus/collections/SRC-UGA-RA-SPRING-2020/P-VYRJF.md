@@ -24,7 +24,7 @@ $$
 **Goal:** Evaluate the limit using the Dominated Convergence Theorem with dominating function $g(x) = \frac{1}{1 + x^2}$, and compute the resulting Gaussian integral.
 
 <1>1. Pointwise limit of the integrands:
-    *Proof:*
+::: {.proof}
     <2>1. Define the sequence of functions $f_n: [0, \infty) \to \mathbb{R}$ by
     $$f_n(x) = \chi_{[0, n]}(x) \left(1 + \frac{x^2}{n}\right)^{-(n+1)}.$$
     <2>2. For any fixed $x \ge 0$, for all $n > x$, $\chi_{[0, n]}(x) = 1$.
@@ -35,8 +35,10 @@ $$
     <2>5. Thus for every $x \in [0, \infty)$:
     $$\lim_{n \to \infty} f_n(x) = \frac{1}{1 \cdot e^{x^2}} = e^{-x^2}.$$
 
+:::
+
 <1>2. Construction of an integrable dominating function:
-    *Proof:*
+::: {.proof}
     <2>1. By Bernoulli's inequality (or the binomial expansion), for any $u = \frac{x^2}{n} \ge 0$:
     $$\left(1 + \frac{x^2}{n}\right)^n \ge 1 + n \left(\frac{x^2}{n}\right) = 1 + x^2.$$
     <2>2. Since $1 + \frac{x^2}{n} \ge 1$:
@@ -46,14 +48,18 @@ $$
     <2>4. The function $g(x) = \frac{1}{1 + x^2}$ is Lebesgue integrable on $[0, \infty)$:
     $$\int_0^\infty g(x) \, dx = \int_0^\infty \frac{dx}{1 + x^2} = \left[ \arctan(x) \right]_0^\infty = \frac{\pi}{2} < \infty.$$
 
+:::
+
 <1>3. Application of the Dominated Convergence Theorem:
-    *Proof:*
+::: {.proof}
     <2>1. The sequence $(f_n)$ is dominated by the integrable function $g \in L^1([0, \infty))$ and converges pointwise to $e^{-x^2}$.
     <2>2. By the Dominated Convergence Theorem:
     $$\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \lim_{n \to \infty} \int_0^\infty f_n(x) \, dx = \int_0^\infty \lim_{n \to \infty} f_n(x) \, dx = \int_0^\infty e^{-x^2} \, dx.$$
 
+:::
+
 <1>4. Evaluation of the limiting Gaussian integral:
-    *Proof:*
+::: {.proof}
     <2>1. Let $I = \int_0^\infty e^{-x^2} \, dx$.
     <2>2. Since $e^{-x^2}$ is an even function, $I = \frac{1}{2} \int_{-\infty}^\infty e^{-x^2} \, dx$.
     <2>3. By Tonelli's Theorem and conversion to polar coordinates:
@@ -63,8 +69,11 @@ $$
     <2>5. Thus:
     $$I^2 = \frac{1}{4} (2\pi) \left(\frac{1}{2}\right) = \frac{\pi}{4} \implies I = \frac{\sqrt{\pi}}{2}.$$
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \frac{\sqrt{\pi}}{2}$.
+:::
 :::
 
