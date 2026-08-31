@@ -37,5 +37,8 @@ Show that every $p\dash$group is solvable.
 <2>5. Applying step <2>4 with $N = Z(G)$ makes $G$ solvable.
 
 :::
-<1>4. Q.E.D. *Proof:* Steps <1>2 and <1>3 complete the induction, so every $p$-group is solvable.
+<1>4. Q.E.D.
+::: {.proof}
+Steps <1>2 and <1>3 complete the induction, so every $p$-group is solvable.
+:::
 :::
