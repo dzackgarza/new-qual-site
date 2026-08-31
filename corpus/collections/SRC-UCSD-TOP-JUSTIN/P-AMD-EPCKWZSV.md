@@ -31,8 +31,9 @@ Show that $S^1 \times I \simeq M$, the Mobius strip.
 <2>3. $H_1$ is continuous, $H_1((z, t), 0) = (z, t) = \operatorname{id}_{S^1 \times I}$, $H_1((z, t), 1) = (z, 1/2) = \iota_1(r_1(z, t))$, and $H_1((z, 1/2), s) = (z, 1/2)$ for all $s \in [0, 1]$.
 <2>4. Thus $H_1$ is a strong deformation retraction of $S^1 \times [0, 1]$ onto the circle $S^1 \times \{1/2\} \cong S^1$.
 <2>5. Consequently, $S^1 \times [0, 1] \simeq S^1$.
-<2>6. Proof: By construction of the deformation retraction.
-Q.E.D.
+::: {.proof}
+<2>6. The three identities in <2>3 are exactly the defining conditions of a strong deformation retraction, so $H_1$ is a strong deformation retraction of $S^1 \times [0, 1]$ onto $S^1 \times \{1/2\} \cong S^1$.
+:::
 
 <1>2. Show that the Möbius strip $M$ deformation retracts to the circle $S^1$.
 <2>1. Let $M = ([0, 1] \times [0, 1]) / ((0, y) \sim (1, 1-y))$, and let $C = \{[(x, 1/2)] \mid x \in [0, 1]\} \subset M$ be the core circle.
@@ -41,15 +42,21 @@ Q.E.D.
 <2>4. $H_2$ respects the quotient identification because at $x = 1$, $H_2([(1, 1-y)], s) = [(1, (1-s)(1-y) + s/2)] = [(0, 1 - ((1-s)(1-y) + s/2))] = [(0, (1-s)y + s/2)] = H_2([(0, y)], s)$.
 <2>5. $H_2$ is a strong deformation retraction of $M$ onto the core circle $C \cong S^1$.
 <2>6. Consequently, $M \simeq S^1$.
-<2>7. Proof: By construction of the deformation retraction.
-Q.E.D.
+::: {.proof}
+<2>7. The map $H_2$ is well-defined by <2>4 and satisfies the defining conditions of a strong deformation retraction, so it is a strong deformation retraction of $M$ onto the core circle $C \cong S^1$.
+:::
 
 <1>3. Combine homotopy equivalences.
 <2>1. Homotopy equivalence ($\simeq$) is an equivalence relation on topological spaces.
 <2>2. By <1>1, $S^1 \times [0, 1] \simeq S^1$.
 <2>3. By <1>2, $M \simeq S^1$.
 <2>4. By transitivity and symmetry, $S^1 \times [0, 1] \simeq M$.
-<2>5. Proof: By <2>1–<2>4. Q.E.D.
+::: {.proof}
+<2>5. Since $\simeq$ is an equivalence relation, $S^1 \times [0, 1] \simeq S^1$ and $M \simeq S^1$ together imply $S^1 \times [0, 1] \simeq M$.
+:::
 
-<1>4. Q.E.D. <2>1. Proof: <1>3 establishes $S^1 \times [0, 1] \simeq M$.
+<1>4. Q.E.D.
+::: {.proof}
+<2>1. <1>3 establishes $S^1 \times [0, 1] \simeq M$.
+:::
 :::

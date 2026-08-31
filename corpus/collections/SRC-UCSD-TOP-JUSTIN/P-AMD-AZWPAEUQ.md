@@ -68,8 +68,9 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
   This contributes to $k = (i+j) + 1 = 4$.
 
 - For all other $i, j$, at least one factor is free ($\mathbb{Z}$ or $0$), so all other Tor terms vanish.
-  <2>5. Proof: By Künneth theorem.
-  Q.E.D.
+::: {.proof}
+  <2>5. The Künneth formula expresses $H_k(A \times B)$ as the direct sum of the tensor terms over $i + j = k$ and the Tor terms over $i + j = k - 1$; the computations in <2>3–<2>4 evaluate each of these terms.
+:::
 
 <1>3. Combine terms for each dimension $k$.
 <2>1. $k = 0$: $H_0 \cong \mathbb{Z}$.
@@ -78,9 +79,13 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 <2>4. $k = 3$: $H_3 \cong \mathbb{Z}/2\mathbb{Z}$.
 <2>5. $k = 4$: $H_4 \cong \operatorname{Tor}_1(H_2(A), H_1(B)) \cong \mathbb{Z}/2\mathbb{Z}$.
 <2>6. $k \ge 5$: $H_k = 0$.
-<2>7. Proof: Sum of tensor and Tor components.
-Q.E.D.
+::: {.proof}
+<2>7. Each $H_k$ is the direct sum of the tensor terms (from <1>2.<2>3) and the Tor terms (from <1>2.<2>4) in that degree; summing them gives the groups listed in <2>1–<2>6.
+:::
 
 <1>4. Conclusion.
-<2>1. The homology groups are: $$H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z}/2\mathbb{Z} & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$ <2>2. Proof: By <1>1–<1>3. Q.E.D.
+<2>1. The homology groups are: $$H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z}/2\mathbb{Z} & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$
+::: {.proof}
+<2>2. The groups computed in <1>3 assemble into the stated description of $H_k$ for all $k \ge 0$.
+:::
 :::

@@ -41,8 +41,7 @@ Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
     - Circle with two tails / theta-graph variant: $\text{A, R}$.
   - Two loops ($\pi_1 \cong \mathbb{Z} * \mathbb{Z}$):
     - Figure-eight / double loop: $\text{B}$.
-  <2>2. Proof: By viewing each glyph as a finite 1-dimensional simplicial complex / graph. Q.E.D.
-
+  <2>2. Each glyph is a finite 1-dimensional CW complex: its edges are the strokes and its vertices are the endpoints and junctions, so the classification reduces to the standard theory of finite graphs.
 <1>2. Classification up to Homotopy Equivalence ($\simeq$).
   <2>1. A finite connected 1-dimensional CW complex (graph) $G$ deformation retracts to a wedge sum of circles $\bigvee_{g} S^1$, where $g = 1 - \chi(G) = \operatorname{rank}(\pi_1(G))$ is the first Betti number / number of independent cycles.
   <2>2. Connected graphs are completely classified up to homotopy equivalence by their fundamental group $\pi_1(G) \cong *^g \mathbb{Z}$:
@@ -55,7 +54,7 @@ Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
   - **Group 3 ($g = 2$, homotopy equivalent to $S^1 \vee S^1$):**
     $$\{\text{B}\}.$$
     Contains two cycles (two enclosed regions), hence deformation retracts to the figure eight $S^1 \vee S^1$.
-  <2>3. Proof: By standard homotopy theory of 1-dimensional CW complexes. Q.E.D.
+  <2>3. A finite connected graph deformation retracts onto a maximal tree, and collapsing that tree leaves a wedge of $g$ circles, where $g = 1 - \chi(G)$ is the first Betti number; two connected graphs are homotopy equivalent exactly when their first Betti numbers agree.
 
 <1>3. Classification up to Homeomorphism ($\cong$).
   <2>1. Homeomorphism preserves:
@@ -89,9 +88,9 @@ Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
   - **Class 8 (Figure eight / theta graph, two loops, two 3-way junctions or one 4-way junction):**
     $$\{\text{B}\}.$$
     (Has 2 enclosed regions, uniquely distinguishing it from all other letters).
-  <2>3. Proof: By local cut point degree invariants. Q.E.D.
+  <2>3. The local degree $d(p)$ is a homeomorphism invariant: a homeomorphism carries a neighborhood of $p$ to a neighborhood of its image, preserving the number of components obtained by deleting the point. Hence the multiset of local degrees of all points is a complete invariant for finite graphs, and the eight classes in <2>2 are distinguished by their valence profiles.
 
 <1>4. Q.E.D.
-  <2>1. Proof: <1>2 gives the 3 homotopy classes, and <1>3 gives the topological classification by homeomorphism.
+  <2>1. <1>2 gives the 3 homotopy classes, and <1>3 gives the topological classification by homeomorphism.
 :::
 

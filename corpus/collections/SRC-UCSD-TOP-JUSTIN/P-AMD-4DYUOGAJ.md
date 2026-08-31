@@ -35,8 +35,9 @@ For $\omega \in \Lambda^1$, define $d_\omega \colon \Lambda^p \to \Lambda^{p+1}$
 <2>1. For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
 <2>2. Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
 <2>3. Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
-<2>4. Proof: By associativity and the alternating property of the exterior product.
-Q.E.D.
+::: {.proof}
+<2>4. The computation $d_\omega(d_\omega(\alpha)) = \alpha \wedge (\omega \wedge \omega) = 0$ uses associativity of the wedge product and the fact that $\omega \wedge \omega = 0$ for $\omega \in \Lambda^1$; hence $d_\omega^2 = 0$.
+:::
 
 <1>2. Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$). <2>1. Decompose $V$ as $V = k \cdot dx_1 \oplus W$, where $W = \operatorname{span}_k\{dx_2, \dots, dx_n\}$.
 <2>2. The exterior algebra decomposes as a tensor product: $\Lambda^* V \cong \Lambda^*(k \cdot dx_1) \otimes_k \Lambda^* W$.
@@ -46,14 +47,20 @@ Q.E.D.
 <2>6. By the Künneth formula for chain complexes of vector spaces over a field $k$: $$H^*(\Lambda^* V, d_{dx_1}) \cong H^*(\Lambda^*(k \cdot dx_1), d_{dx_1}) \otimes_k \Lambda^* W \cong 0 \otimes_k \Lambda^* W = 0.$$ <2>7. Alternatively, define a contracting homotopy $h \colon \Lambda^p \to \Lambda^{p-1}$ by $h(\alpha + \beta \wedge dx_1) = \beta$ where $\alpha, \beta \in \Lambda^* W$.
 Then $(d h + h d)(\alpha + \beta \wedge dx_1) = d(\beta) + h(\alpha \wedge dx_1) = \beta \wedge dx_1 + \alpha = \alpha + \beta \wedge dx_1 = \operatorname{id}$.
 Since $\operatorname{id}$ is chain homotopic to 0, all homology groups vanish: $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p \in \{0, \dots, n\}$.
-<2>8. Proof: By explicit contracting homotopy / Künneth theorem.
-Q.E.D.
+::: {.proof}
+<2>8. The Künneth formula (<2>6) and the explicit contracting homotopy (<2>7) are two independent arguments; each shows $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$.
+:::
 
 <1>3. Compute the homology when $dx_1$ is replaced with an arbitrary non-zero $\omega \in \Lambda^1 = V^*$.
 <2>1. Let $\omega \in \Lambda^1$ be non-zero: $\omega = \sum_{i=1}^n c_i dx_i$ with some $c_j \neq 0$.
 <2>2. Since $k$ is a field and $\omega \neq 0$, there exists an invertible linear transformation $T \colon V \to V$ such that $T^*(dx_1) = \omega$ (i.e. by completing $\{\omega\}$ to a basis $\{e_1 = \omega, e_2, \dots, e_n\}$ of $\Lambda^1$). <2>3. The linear isomorphism $T$ induces an algebra automorphism $\bigwedge^* T \colon \Lambda^* V \to \Lambda^* V$ mapping $dx_1 \mapsto \omega$.
-<2>4. The automorphism $\bigwedge^* T$ defines an isomorphism of chain complexes: $$(\Lambda^* V, d_{dx_1}) \xrightarrow{\bigwedge^* T} (\Lambda^* V, d_\omega).$$ <2>5. Since isomorphic chain complexes have isomorphic homology groups, and $H^*(\Lambda^* V, d_{dx_1}) = 0$ by <1>2: $$H^p(\Lambda^* V, d_\omega) \cong H^p(\Lambda^* V, d_{dx_1}) = 0 \quad \text{for all } p \in \{0, \dots, n\}.$$ <2>6. Proof: By change of basis and functoriality of homology.
-Q.E.D.
+<2>4. The automorphism $\bigwedge^* T$ defines an isomorphism of chain complexes: $$(\Lambda^* V, d_{dx_1}) \xrightarrow{\bigwedge^* T} (\Lambda^* V, d_\omega).$$ <2>5. Since isomorphic chain complexes have isomorphic homology groups, and $H^*(\Lambda^* V, d_{dx_1}) = 0$ by <1>2: $$H^p(\Lambda^* V, d_\omega) \cong H^p(\Lambda^* V, d_{dx_1}) = 0 \quad \text{for all } p \in \{0, \dots, n\}.$$
+::: {.proof}
+<2>6. The linear isomorphism $T$ with $T^*(dx_1) = \omega$ induces an algebra automorphism $\bigwedge^* T$ that intertwines $d_{dx_1}$ and $d_\omega$; functoriality of homology then gives $H^p(\Lambda^*, d_\omega) \cong H^p(\Lambda^*, d_{dx_1}) = 0$.
+:::
 
-<1>4. Q.E.D. <2>1. Proof: Steps <1>1–<1>3 show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
+<1>4. Q.E.D.
+::: {.proof}
+<2>1. Steps <1>1–<1>3 show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
+:::
 :::

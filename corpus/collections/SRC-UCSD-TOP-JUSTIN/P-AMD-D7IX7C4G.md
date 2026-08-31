@@ -47,7 +47,12 @@ Q.E.D.
 <2>1. <1>1 shows $\deg(g) = 2k + 1 \neq 0$.
 <2>2. <1>2 shows $\deg(g) = 0$.
 <2>3. This contradiction proves no continuous odd map $f \colon S^2 \to S^1$ can exist.
-<2>4. Proof: By <1>1 and <1>2. Q.E.D.
+::: {.proof}
+<2>4. <1>1 gives $\deg(g) = 2k + 1 \neq 0$, while <1>2 gives $\deg(g) = 0$; these contradict each other, so the assumed odd map $f$ cannot exist.
+:::
 
-<1>4. Q.E.D. <2>1. Proof: By <1>3.
+<1>4. Q.E.D.
+::: {.proof}
+<2>1. <1>3 establishes the result.
+:::
 :::

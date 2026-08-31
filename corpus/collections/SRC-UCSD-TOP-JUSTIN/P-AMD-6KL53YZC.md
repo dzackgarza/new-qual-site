@@ -32,7 +32,9 @@ For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
   <2>3. The suspension isomorphism $\sigma \colon \widetilde{H}_n(S^n) \xrightarrow{\cong} \widetilde{H}_{n+1}(\Sigma S^n)$ is the connecting isomorphism in the Mayer-Vietoris sequence of the suspension:
   $$\widetilde{H}_{n+1}(C_+ S^n) \oplus \widetilde{H}_{n+1}(C_- S^n) \to \widetilde{H}_{n+1}(\Sigma S^n) \xrightarrow{\partial} \widetilde{H}_n(S^n) \to \widetilde{H}_n(C_+ S^n) \oplus \widetilde{H}_n(C_- S^n).$$
   Since cones are contractible, $\partial \colon \widetilde{H}_{n+1}(\Sigma S^n) \to \widetilde{H}_n(S^n)$ is an isomorphism, and $\sigma = \partial^{-1}$.
-  <2>4. Proof: By Mayer-Vietoris sequence for suspension. Q.E.D.
+::: {.proof}
+  <2>4. In the Mayer–Vietoris sequence of the suspension, the terms $\widetilde{H}_*(C_+ S^n)$ and $\widetilde{H}_*(C_- S^n)$ vanish because cones are contractible, so the connecting homomorphism $\partial$ is an isomorphism.
+:::
 
 <1>2. Prove $\deg(\Sigma f) = \deg(f)$.
   <2>1. The suspension map $\Sigma f \colon \Sigma S^n \to \Sigma S^n$ preserves the cones $C_+ S^n, C_- S^n$ and restricts on the equator $S^n$ to $f$.
@@ -50,7 +52,9 @@ For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
   <2>5. Applying $\sigma = \partial^{-1}$ yields:
   $$(\Sigma f)_*(\beta) = (\deg f) \beta.$$
   <2>6. By definition of degree, $(\Sigma f)_*(\beta) = (\deg \Sigma f) \beta$, hence $\deg(\Sigma f) = \deg(f)$.
-  <2>7. Proof: By commutativity of the Mayer-Vietoris naturality square. Q.E.D.
+::: {.proof}
+  <2>7. The naturality square of <2>2 commutes, so $\partial((\Sigma f)_*(\beta)) = f_*(\partial(\beta))$; combining this with <2>4–<2>5 gives $(\Sigma f)_*(\beta) = (\deg f)\beta$, and comparing with the definition of degree yields $\deg(\Sigma f) = \deg(f)$.
+:::
 
 <1>3. Conclude that $\pi_n(S^n) \cong \mathbb{Z}$ for all $n \ge 1$.
   <2>1. Base case $n = 1$: $\pi_1(S^1) \cong \mathbb{Z}$ via the degree map / winding number (fundamental group of the circle).
@@ -58,9 +62,13 @@ For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
   <2>3. $\deg$ is surjective: The map $z \mapsto z^d$ on $S^1$ has degree $d$. Taking $n-1$ successive suspensions $\Sigma^{n-1}(z \mapsto z^d)$ yields a map $S^n \to S^n$ of degree $d$ by <1>2.
   <2>4. $\deg$ is injective: By the Hopf degree theorem, two continuous maps $f, g \colon S^n \to S^n$ are homotopic if and only if $\deg(f) = \deg(g)$. (Equivalently, by the Hurewicz theorem, since $S^n$ is $(n-1)$-connected for $n \ge 2$, the Hurewicz homomorphism $h \colon \pi_n(S^n) \to H_n(S^n) \cong \mathbb{Z}$ given by $[f] \mapsto f_*([S^n]) = (\deg f)[S^n]$ is an isomorphism).
   <2>5. Therefore, $\pi_n(S^n) \cong \mathbb{Z}$.
-  <2>6. Proof: By Hurewicz theorem and Hopf degree theorem. Q.E.D.
+::: {.proof}
+  <2>6. The degree map is a surjective homomorphism by <2>2–<2>3, and it is injective by the Hopf degree theorem (equivalently the Hurewicz theorem) in <2>4, so it is an isomorphism $\pi_n(S^n) \cong \mathbb{Z}$.
+:::
 
 <1>4. Q.E.D.
-  <2>1. Proof: Steps <1>1–<1>3 complete the proof.
+::: {.proof}
+  <2>1. Steps <1>1–<1>3 complete the proof.
+:::
 :::
 

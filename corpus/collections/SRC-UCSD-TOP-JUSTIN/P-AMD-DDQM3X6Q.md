@@ -38,9 +38,10 @@ Prove that the suspension $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim 
   Thus $\widetilde{H}_k(U) = 0$ and $\widetilde{H}_k(V) = 0$ for all $k \ge 0$.
   <2>4. The intersection $U \cap V = X \times (-1, 1)$ deformation retracts onto $X \times \{0\} \cong X$.
   Thus $\widetilde{H}_k(U \cap V) \cong \widetilde{H}_k(X)$ for all $k \ge 0$.
-  <2>5. Write the Mayer-Vietoris sequence in reduced homology for $(\Sigma X; U, V)$: $$\cdots \to \widetilde{H}_i(U) \oplus \widetilde{H}_i(V) \to \widetilde{H}_i(\Sigma X) \xrightarrow{\partial} \widetilde{H}_{i-1}(U \cap V) \to \widetilde{H}_{i-1}(U) \oplus \widetilde{H}_{i-1}(V) \to \cdots$$ <2>6. Substituting the vanishing groups from <2>3 gives exact sequences: $$0 \longrightarrow \widetilde{H}_i(\Sigma X) \xrightarrow{\partial} \widetilde{H}_{i-1}(X) \longrightarrow 0.$$ <2>7. Therefore, the connecting homomorphism $\partial \colon \widetilde{H}_i(\Sigma X) \xrightarrow{\cong} \widetilde{H}_{i-1}(X)$ is an isomorphism for all $i \in \mathbb{Z}$.
-  <2>8. Proof: By Mayer-Vietoris sequence for the suspension open cover.
-  Q.E.D.
+  <2>5. Write the Mayer-Vietoris sequence in reduced homology for $(\Sigma X; U, V)$: $$\cdots \to \widetilde{H}_i(U) \oplus \widetilde{H}_i(V) \to \widetilde{H}_i(\Sigma X) \xrightarrow{\partial} \widetilde{H}_{i-1}(U \cap V) \to \widetilde{H}_{i-1}(U) \oplus \widetilde{H}_{i-1}(V) \to \cdots$$ <2>6. Substituting the vanishing groups from <2>3 gives exact sequences: $$0 \longrightarrow \widetilde{H}_i(\Sigma X) \xrightarrow{\partial} \widetilde{H}_{i-1}(X) \longrightarrow 0.$$   <2>7. Therefore, the connecting homomorphism $\partial \colon \widetilde{H}_i(\Sigma X) \xrightarrow{\cong} \widetilde{H}_{i-1}(X)$ is an isomorphism for all $i \in \mathbb{Z}$.
+::: {.proof}
+  <2>8. Substituting $\widetilde{H}_*(U) = \widetilde{H}_*(V) = 0$ into the Mayer–Vietoris sequence of the suspension open cover leaves the short exact sequence $0 \to \widetilde{H}_i(\Sigma X) \xrightarrow{\partial} \widetilde{H}_{i-1}(X) \to 0$, so $\partial$ is an isomorphism.
+:::
 
 <1>2. Prove $\Sigma S^n \cong S^{n+1}$.
 <2>1. Realize $S^n \subset \mathbb{R}^{n+1}$ as $\{x \in \mathbb{R}^{n+1} \mid \|x\| = 1\}$, and $S^{n+1} \subset \mathbb{R}^{n+2} = \mathbb{R}^{n+1} \times \mathbb{R}$ as $\{(x, t) \in \mathbb{R}^{n+1} \times \mathbb{R} \mid \|x\|^2 + t^2 = 1\}$.
@@ -61,8 +62,12 @@ Prove that the suspension $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim 
   If $t = \pm 1$, $(x, t) = (0, \pm 1) = f(u, \pm 1)$.
   <2>6. Thus $f$ induces a continuous bijection from the quotient space $\Sigma S^n = (S^n \times [-1, 1]) / (S^n \times \{1\} \sim N, S^n \times \{-1\} \sim S)$ onto $S^{n+1}$.
   <2>7. Since $\Sigma S^n$ is compact (quotient of compact $S^n \times [-1, 1]$) and $S^{n+1}$ is Hausdorff, any continuous bijection $\overline{f} \colon \Sigma S^n \to S^{n+1}$ is a homeomorphism.
-  <2>8. Proof: By compact-to-Hausdorff homeomorphism theorem.
-  Q.E.D.
+::: {.proof}
+  <2>8. A continuous bijection from a compact space to a Hausdorff space is a homeomorphism, so $\overline{f}$ is a homeomorphism.
+:::
 
-<1>3. Q.E.D. <2>1. Proof: <1>1 establishes the suspension isomorphism and <1>2 establishes $\Sigma S^n \cong S^{n+1}$.
+<1>3. Q.E.D.
+::: {.proof}
+<2>1. <1>1 establishes the suspension isomorphism and <1>2 establishes $\Sigma S^n \cong S^{n+1}$.
+:::
 :::

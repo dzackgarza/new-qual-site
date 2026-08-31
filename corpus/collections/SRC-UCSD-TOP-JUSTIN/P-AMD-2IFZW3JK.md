@@ -51,7 +51,9 @@ $$
   - Surjectivity of $k - l$: By definition, every generator of $S_n(A+B)$ is either in $S_n(A)$ (image of $(\alpha, 0)$) or in $S_n(B)$ (image of $(0, -\beta)$).
   <2>5. Similarly, the short exact sequence for $\{C, D\}$ in $Y$ is
   $$0 \longrightarrow S_\bullet(C \cap D) \xrightarrow{i' \oplus j'} S_\bullet(C) \oplus S_\bullet(D) \xrightarrow{k' - l'} S_\bullet(C+D) \longrightarrow 0.$$
-  <2>6. Proof: By standard singular chain definitions. Q.E.D.
+::: {.proof}
+  <2>6. The three exactness checks in <2>4 follow directly from the definitions of the singular chain groups: $i \oplus j$ is injective because it is the diagonal map, the middle term is exact because $k(\alpha) - l(\beta) = 0$ forces $\alpha = \beta$ to lie in $S_n(A \cap B)$, and $k - l$ is surjective because every generator of $S_n(A+B)$ lies in $S_n(A)$ or $S_n(B)$.
+:::
 
 <1>2. The map $f$ induces a morphism of short exact sequences of chain complexes.
   <2>1. Since $f(A) \subseteq C$ and $f(B) \subseteq D$, we have $f(A \cap B) \subseteq f(A) \cap f(B) \subseteq C \cap D$.
@@ -65,7 +67,9 @@ $$
   <2>4. Commutativity of the right square at chain level:
   For $(\alpha, \beta) \in S_n(A) \oplus S_n(B)$,
   $$f_\sharp((k - l)(\alpha, \beta)) = f_\sharp(\alpha - \beta) = f_\sharp \alpha - f_\sharp \beta = (k' - l')(f_\sharp \alpha, f_\sharp \beta) = (k' - l')((f_\sharp \oplus f_\sharp)(\alpha, \beta)).$$
-  <2>5. Proof: By <2>1–<2>4, we have a commutative diagram of short exact sequences of chain complexes. Q.E.D.
+::: {.proof}
+  <2>5. The two computations in <2>3 and <2>4 verify that both squares of the diagram of chain complexes commute, so <2>1–<2>4 assemble into a commutative diagram of short exact sequences of chain complexes.
+:::
 
 <1>3. Naturality of the connecting homomorphism in homological algebra implies commutativity of the homology ladder.
   <2>1. By the Snake Lemma / Naturality of the long exact homology sequence associated to a morphism of short exact sequences of chain complexes:
@@ -89,9 +93,13 @@ $$
   <2>3. The inclusion chain maps $\iota \colon S_\bullet(A+B) \hookrightarrow S_\bullet(X)$ and $\iota' \colon S_\bullet(C+D) \hookrightarrow S_\bullet(Y)$ induce isomorphisms on homology $\iota_* \colon H_n(S_\bullet(A+B)) \xrightarrow{\cong} H_n(X)$ and $\iota'_* \colon H_n(S_\bullet(C+D)) \xrightarrow{\cong} H_n(Y)$ by the small simplices theorem / Mayer-Vietoris theorem.
   <2>4. The diagram commutes with $f_\sharp \circ \iota = \iota' \circ f_\sharp$, hence $f_* \circ \iota_* = \iota'_* \circ f_*$.
   <2>5. Identifying $H_n(S_\bullet(A+B))$ with $H_n(X)$ and $H_n(S_\bullet(C+D))$ with $H_n(Y)$ via these natural isomorphisms yields the commutative Mayer-Vietoris sequence.
-  <2>6. Proof: By <2>1–<2>5. Q.E.D.
+::: {.proof}
+  <2>6. The Snake Lemma (<2>1) applied to the commutative diagram of <1>2 gives commutativity of the homology ladder (<2>2); the small-simplices theorem (<2>3) identifies the middle terms with $H_n(X)$ and $H_n(Y)$; and the naturality of this identification (<2>4) transfers the commutativity to the Mayer–Vietoris sequence (<2>5).
+:::
 
 <1>4. Q.E.D.
-  <2>1. Proof: <1>1–<1>3 completes the verification of naturality for the Mayer-Vietoris sequence.
+::: {.proof}
+  <2>1. <1>1–<1>3 completes the verification of naturality for the Mayer-Vietoris sequence.
+:::
 :::
 

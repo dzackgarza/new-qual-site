@@ -48,7 +48,9 @@ Let $X = S^n\cross I$ with its ends glued together by a map $S^n \circlearrowlef
   <2>5. Summary for $n \geq 2$:
   - If $d = 1$: $H_0(X) \cong \mathbb{Z}, H_1(X) \cong \mathbb{Z}, H_n(X) \cong \mathbb{Z}, H_{n+1}(X) \cong \mathbb{Z}$, and all other $H_k(X) = 0$. (When $n=1$, handled in <1>2).
   - If $d \neq 1$: $H_0(X) \cong \mathbb{Z}, H_1(X) \cong \mathbb{Z}, H_n(X) \cong \mathbb{Z}/|1-d|\mathbb{Z}$, and all other $H_k(X) = 0$.
-  <2>6. Proof: By exactness of the Mayer-Vietoris sequence. Q.E.D.
+::: {.proof}
+  <2>6. Each entry in <2>4–<2>5 is read off from the Mayer–Vietoris sequence of <2>2: the map $\Phi_k$ reduces to $\operatorname{id}_* - f_* = 1 - d$ on $\widetilde{H}_n(S^n) \cong \mathbb{Z}$, and exactness forces the kernel and cokernel to be as stated.
+:::
 
 <1>2. Case $n = 1$.
   <2>1. For $n = 1$, the circle $S^1$ has $H_1(S^1) \cong \mathbb{Z}$.
@@ -60,14 +62,20 @@ Let $X = S^n\cross I$ with its ends glued together by a map $S^n \circlearrowlef
   $$H_1(X) \cong \mathbb{Z} \oplus (\mathbb{Z}/|1-d|\mathbb{Z}).$$
   If $d = 1$, $H_1(X) \cong \mathbb{Z} \oplus \mathbb{Z} = \mathbb{Z}^2$.
   <2>6. For $k \ge 3$, $H_k(X) = 0$.
-  <2>7. Proof: By Mayer-Vietoris sequence for $n=1$. Q.E.D.
+::: {.proof}
+  <2>7. The segment in <2>2 is the Mayer–Vietoris sequence for $n = 1$; the groups $H_2(X) \cong \ker(1-d)$ and $H_1(X) \cong \mathbb{Z} \oplus \operatorname{coker}(1-d)$ follow from exactness and the splitting of the short exact sequence over the free group $\mathbb{Z}$.
+:::
 
 <1>3. Case $n = 0$.
   <2>1. $S^0 = \{-1, 1\}$. A map $f \colon S^0 \to S^0$ has degree defined via 0-dimensional homology / end points:
   - If $f = \operatorname{id}$ ($d = 1$), $X \cong S^1 \sqcup S^1$, so $H_0(X) \cong \mathbb{Z}^2, H_1(X) \cong \mathbb{Z}^2$.
   - If $f$ swaps the two points ($d = -1$), $X$ is a single connected circle of double length $S^1$, so $H_0(X) \cong \mathbb{Z}, H_1(X) \cong \mathbb{Z}$.
-  <2>2. Proof: By direct topological inspection of the mapping torus of a 2-point space. Q.E.D.
+::: {.proof}
+  <2>2. For $S^0 = \{-1, 1\}$, the mapping torus of the identity is two disjoint circles, and the mapping torus of the swap is a single circle; reading off $H_0$ and $H_1$ in each case gives the stated groups.
+:::
 
 <1>4. Q.E.D.
-  <2>1. Proof: Steps <1>1–<1>3 determine $H_*(X)$ completely for all $n \ge 0$ and all degrees $d$.
+::: {.proof}
+  <2>1. Steps <1>1–<1>3 determine $H_*(X)$ completely for all $n \ge 0$ and all degrees $d$.
+:::
 :::
