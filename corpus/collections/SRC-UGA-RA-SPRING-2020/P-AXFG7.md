@@ -15,114 +15,75 @@ review: draft
 
 Let $m_*$ denote the Lebesgue outer measure on \( \RR \).
 
-a.. 
-Prove that for every $E\subseteq \RR$ there exists a Borel set $B$ containing $E$ such that
-\[
-m_*(B) = m_*(E)
-.\]
+::: problem
+Let $m_*$ denote the Lebesgue outer measure on $\mathbb{R}$.
 
-b.. 
-Prove that if $E\subseteq \RR$ has the property that
-\[
-m_*(A) = m_*(A\Intersect E) + m_*(A\Intersect E^c)
-\]
-for every set $A\subseteq \RR$, then there exists a Borel set $B\subseteq \RR$ such that $E = B\setminus N$ with $m_*(N) = 0$.
+(a) Prove that for every $E \subseteq \mathbb{R}$, there exists a Borel set $B \subseteq \mathbb{R}$ containing $E$ ($E \subseteq B$) such that
+$$
+m_*(B) = m_*(E).
+$$
 
+(b) Prove that if $E \subseteq \mathbb{R}$ satisfies Carathéodory's measurability condition:
+$$
+m_*(A) = m_*(A \cap E) + m_*(A \cap E^c) \quad \text{for every } A \subseteq \mathbb{R},
+$$
+then there exists a Borel set $B \subseteq \mathbb{R}$ such that $E = B \setminus N$ with $m_*(N) = 0$.
 Be sure to address the case when $m_*(E) = \infty$.
-
-:::{.concept}
-\envlist
-- Definition of outer measure: 
-  \[ 
-  m_*(E) = \inf_{\theset{Q_j} \covers E} \sum \abs {Q_j}
-  \] 
-  where $\theset{Q_j}$ is a countable collection of closed cubes.
-- Break $\RR$ into $\disjoint_{n\in \ZZ} [n, n+1)$, each with finite measure.
-- Theorem: $m_*(Q) = \abs{Q}$ for $Q$ a closed cube (i.e. the outer measure equals the volume).
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Construct a Borel $G_\delta$ hull $B \supseteq E$ with $m(B) = m_*(E)$ in (a), and apply Carathéodory's criterion with test set $A = B$ in (b) to show $E$ differs from $B$ by a null set.
 
-:::{.proof}
-\envlist
-- $m_*(Q) \leq \abs{Q}$:
-- Since $Q\subseteq Q$, $Q\covers Q$ and $m_*(Q) \leq \abs{Q}$ since $m_*$ is an infimum over such coverings.
-- $\abs{Q} \leq m_*(Q)$:
-- Fix $\eps > 0$.
-- Let $\theset{Q_i}_{i=1}^\infty \covers Q$ be arbitrary, it suffices to show that 
-    $$\abs{Q} \leq \qty{\sum_{i=1}^\infty \abs{Q_i}} + \eps.$$
--  Pick open cubes $S_i$ such that $Q_i\subseteq S_i$ and $\abs{Q_i} \leq \abs{S_i} \leq (1+\eps)\abs{Q_i}$.
-- Then $\theset{S_i} \covers Q$, so by compactness of $Q$ pick a finite subcover with $N$ elements.
+<1>1. Part (a): Case $m_*(E) < \infty$.
+    *Proof:*
+    <2>1. By definition of outer measure on $\mathbb{R}$, for any $E \subseteq \mathbb{R}$:
+    $$m_*(E) = \inf \left\{ \sum_{j=1}^\infty |I_j| \;\middle|\; E \subseteq \bigcup_{j=1}^\infty I_j, \, I_j \text{ open intervals} \right\}.$$
+    <2>2. For each integer $k \ge 1$, by the definition of the infimum, there exists a countable collection of open intervals $\{I_{j, k}\}_{j=1}^\infty$ covering $E$ such that
+    $$\sum_{j=1}^\infty |I_{j, k}| < m_*(E) + \frac{1}{k}.$$
+    <2>3. Define the open set $U_k = \bigcup_{j=1}^\infty I_{j, k}$.
+    <2>4. Then $E \subseteq U_k$, and by countable subadditivity, $m_*(U_k) \le \sum_{j=1}^\infty |I_{j, k}| < m_*(E) + \frac{1}{k}$.
+    <2>5. Define the $G_\delta$ set $B = \bigcap_{k=1}^\infty U_k$.
+    <2>6. Since $B$ is a countable intersection of open sets, $B$ is a Borel set.
+    <2>7. Since $E \subseteq U_k$ for every $k$, $E \subseteq B$.
+    <2>8. By monotonicity of outer measure:
+    $$m_*(E) \le m_*(B) \le m_*(U_k) < m_*(E) + \frac{1}{k} \quad \text{for all } k \ge 1.$$
+    <2>9. Taking $k \to \infty$ gives $m_*(B) = m_*(E)$.
 
-- Note 
-\[
-Q \subseteq \Union_{i=1}^N S_i \implies \abs{Q} \leq \sum_{i=1}^N \abs{S_i} \leq \sum_{i=1}^N (1+\eps) \abs{Q_j} \leq (1+\eps)\sum_{i=1}^\infty \abs{Q_i } 
-.\]
-- Taking an infimum over coverings on the RHS preserves the inequality, so 
-  $$\abs{Q} \leq (1+\eps) m_*(Q)$$
-- Take $\eps\to 0$ to obtain final inequality.
-:::
+<1>2. Part (a): Case $m_*(E) = \infty$.
+    *Proof:*
+    <2>1. Partition $\mathbb{R}$ into bounded, pairwise disjoint intervals $J_n = [n, n+1)$ for $n \in \mathbb{Z}$.
+    <2>2. Define $E_n = E \cap J_n$ for each $n \in \mathbb{Z}$.
+    <2>3. Since $E_n \subseteq J_n$, $m_*(E_n) \le m_*(J_n) = 1 < \infty$.
+    <2>4. By <1>1, for each $n \in \mathbb{Z}$, there exists a Borel set $B_n \supseteq E_n$ such that $m_*(B_n) = m_*(E_n)$.
+    <2>5. Define $B = \bigcup_{n \in \mathbb{Z}} B_n$.
+    <2>6. As a countable union of Borel sets, $B$ is Borel, and $E = \bigcup_{n \in \mathbb{Z}} E_n \subseteq \bigcup_{n \in \mathbb{Z}} B_n = B$.
+    <2>7. Since $E \subseteq B$, $m_*(E) \le m_*(B)$.
+    <2>8. Since $m_*(E) = \infty$, $m_*(B) = \infty = m_*(E)$.
 
-a.
+<1>3. Part (b): Case $m_*(E) < \infty$.
+    *Proof:*
+    <2>1. By <1>1, choose a Borel set $B \supseteq E$ such that $m_*(B) = m_*(E) < \infty$.
+    <2>2. Apply Carathéodory's condition to the test set $A = B$:
+    $$m_*(B) = m_*(B \cap E) + m_*(B \cap E^c).$$
+    <2>3. Since $E \subseteq B$, $B \cap E = E$ and $B \cap E^c = B \setminus E$.
+    <2>4. Thus:
+    $$m_*(B) = m_*(E) + m_*(B \setminus E).$$
+    <2>5. Since $m_*(B) = m_*(E) < \infty$, subtract $m_*(E)$ from both sides:
+    $$m_*(B \setminus E) = m_*(B) - m_*(E) = 0.$$
+    <2>6. Set $N = B \setminus E$. Then $m_*(N) = 0$ and $E = B \setminus N$.
 
-    - If $m_*(E) = \infty$, then take $B = \RR^n$ since $m(\RR^n) = \infty$.
-    - Suppose $N \definedas m_*(E) < \infty$.
+<1>4. Part (b): Case $m_*(E) = \infty$.
+    *Proof:*
+    <2>1. Again partition $\mathbb{R}$ via $J_n = [n, n+1)$ for $n \in \mathbb{Z}$, and set $E_n = E \cap J_n$.
+    <2>2. Since $E$ is Carathéodory-measurable and each interval $J_n$ is measurable, each $E_n = E \cap J_n$ is Carathéodory-measurable with $m_*(E_n) \le 1 < \infty$.
+    <2>3. By <1>3, for each $n \in \mathbb{Z}$, there exists a Borel set $B_n \supseteq E_n$ such that $N_n = B_n \setminus E_n$ has $m_*(N_n) = 0$.
+    <2>4. Define $B = \bigcup_{n \in \mathbb{Z}} B_n$. Then $B$ is a Borel set containing $E$.
+    <2>5. Define $N = B \setminus E = \left( \bigcup_{n \in \mathbb{Z}} B_n \right) \setminus \left( \bigcup_{n \in \mathbb{Z}} E_n \right) \subseteq \bigcup_{n \in \mathbb{Z}} (B_n \setminus E_n) = \bigcup_{n \in \mathbb{Z}} N_n$.
+    <2>6. By countable subadditivity of outer measure:
+    $$m_*(N) \le \sum_{n \in \mathbb{Z}} m_*(N_n) = \sum_{n \in \mathbb{Z}} 0 = 0.$$
+    <2>7. Thus $m_*(N) = 0$ and $E = B \setminus N$.
 
-    - Since $m_*(E)$ is an infimum, by definition, for every $\eps> 0$ there exists a covering by closed cubes $\theset{Q_i(\eps)}_{i=1}^\infty \covers E$ depending on $\eps$ such that 
-    $$
-    \sum_{i=1}^\infty \abs{Q_i(\eps)} < N + \eps
-    .$$
-
-    - For each fixed $n$, set $\eps_n = {1\over n}$ to produce such a covering $\theset{Q_i(\eps_n)}_{i=1}^\infty$ and set $B_n \definedas \Union_{i=1}^\infty Q_i(\eps_n)$.
-
-    - The outer measure of cubes is *equal* to the sum of their volumes, so 
-    \[
-    m_*(B_n) = \sum_{i=1}^\infty \abs{Q_i(\eps_n)} < N + \eps_n = N + {1\over n}
-    .\]
-
-    - Now set $B \definedas \Intersect_{n=1}^\infty B_n$.
-
-      - Since $E\subseteq B_n$ for every $n$, $E\subseteq B$
-      - Since $B$ is a countable intersection of countable unions of closed sets, $B$ is Borel.
-      - Since $B_n \subseteq B$ for every $n$, we can apply subadditivity to obtain the inequality
-      \[
-      E \subseteq B \subseteq B_n \implies
-      N \leq m_*(B) \leq m_*(B_n) < N + {1\over n} \qtext{for all} n\in \ZZ^{\geq 1}
-      .\]
-
-    - This forces $m_*(E) = m_*(B)$.
-
-
-b.
-
-    Suppose $m_*(E) < \infty$.
-
-    - By (a), find a Borel set $B\supseteq E$ such that $m_*(B) = m_*(E)$
-    - Note that $E\subseteq B \implies B\Intersect E = E$ and $B\Intersect E^c = B\setminus E$.
-    - By assumption, 
-    \[
-    m_*(B) &= m_*(B\Intersect E) + m_*(B\Intersect E^c) \\
-    m_*(E) &= m_*(E) + m_*(B\setminus E) \\ 
-    m_*(E) - m_*(E) &= m_*(B\setminus E) \qquad\qquad\text{since } m_*(E) < \infty \\ 
-    \implies m_*(B\setminus E) &= 0
-    .\]
-    - So take $N = B\setminus E$; this shows $m_*(N) = 0$ and $E = B\setminus (B\setminus E) = B\setminus N$.
-
-
-    If $m_*(E) = \infty$:
-
-    - Apply result to $E_R\definedas E \Intersect [R, R+1)^n \subset \RR^n$ for $R\in \ZZ$, so $E = \disjoint_R E_R$
-    - Obtain $B_R, N_R$ such that $E_R = B_R \setminus N_R$, $m_*(E_R) = m_*(B_R)$, and $m_*(N_R) = 0$.
-    - Note that
-      -   $B\definedas \Union_R B_R$ is a union of Borel sets and thus still Borel
-      -  $E = \Union_R E_R$
-      - $N\definedas B\setminus E$
-      - $N' \definedas \Union_R N_R$ is a union of null sets and thus still null
-    - Since $E_R \subset B_R$ for every $R$, we have $E\subset B$
-    - We can compute
-    \[
-    N = B\setminus E = \qty{ \Union_R B_R } \setminus \qty{\Union_R E_R } \subseteq \Union_R \qty{B_R\setminus E_R} = \Union_R N_R \definedas N'
-    \]
-    where $m_*(N') = 0$ since $N'$ is null, and thus subadditivity forces $m_*(N) = 0$.
+<1>5. Conclusion:
+    *Proof:*
+    Every set $E$ is contained in a Borel set of equal outer measure, and every Carathéodory-measurable set is of the form $E = B \setminus N$ where $B$ is Borel and $m_*(N) = 0$.
 :::

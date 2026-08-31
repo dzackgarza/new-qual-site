@@ -34,10 +34,14 @@ Show that the transitive subgroups of $S_3$ are $S_3, A_3$
 
 :::
 <1>3. $\abs H \in \ts{3, 6}$.
-*Proof:* $\abs H$ divides $\abs{S_3} = 6$ by Lagrange, and step <1>2 rules out $1$ and $2$.
+::: {.proof}
+$\abs H$ divides $\abs{S_3} = 6$ by Lagrange, and step <1>2 rules out $1$ and $2$.
+:::
 
 <1>4. If $\abs H = 6$ then $H = S_3$.
-*Proof:* $H \leq S_3$ and the two have the same finite order.
+::: {.proof}
+$H \leq S_3$ and the two have the same finite order.
+:::
 
 <1>5. If $\abs H = 3$ then $H = A_3$.
 ::: {.proof}
@@ -47,7 +51,12 @@ Show that the transitive subgroups of $S_3$ are $S_3, A_3$
 
 :::
 <1>6. Both $S_3$ and $A_3$ are transitive.
-*Proof:* $(1\,2\,3) \in A_3$ carries $1$ to $2$ to $3$, so the orbit of $1$ under $A_3$, and a fortiori under $S_3$, is all of $X$.
+::: {.proof}
+$(1\,2\,3) \in A_3$ carries $1$ to $2$ to $3$, so the orbit of $1$ under $A_3$, and a fortiori under $S_3$, is all of $X$.
+:::
 
-<1>7. Q.E.D. *Proof:* Steps <1>3 through <1>5 show a transitive subgroup is $S_3$ or $A_3$, and step <1>6 shows both are.
+<1>7. Q.E.D.
+::: {.proof}
+Steps <1>3 through <1>5 show a transitive subgroup is $S_3$ or $A_3$, and step <1>6 shows both are.
+:::
 :::
