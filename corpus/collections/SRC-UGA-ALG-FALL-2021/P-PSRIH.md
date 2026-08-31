@@ -15,35 +15,46 @@ relations: []
 review: draft
 ---
 
-Give generators and relations for the non-commutative group $G$ of order 63 containing an element of order $9 .$
+::: problem
+Give generators and relations (a presentation) for a non-abelian group $G$ of order $63$ containing an element of order $9$.
+:::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Construct a non-abelian group of order $63$ with an element of order $9$ as a semidirect product $\mathbb{Z}/7\mathbb{Z} \rtimes_\theta \mathbb{Z}/9\mathbb{Z}$ and derive its presentation.
 
-- Idea: take a semidirect product involving $C_9$ and $C_7$.
-  We'll need some facts: $\Hom(C_m, C_n) \cong C_d$ where $d = \gcd(m, n)$, and $\Aut(C_m)\cong C_m\units$ which has order $\phi(m)$ (since one needs to send generators to generators), which can be explicitly calculated based on the prime factorization of $m$.
+<1>1. Sylow structure and semidirect product:
+    *Proof:*
+    <2>1. The order of $G$ is $|G| = 63 = 3^2 \cdot 7$.
+    <2>2. By Sylow's Theorems, the number $n_7$ of Sylow 7-subgroups satisfies $n_7 \equiv 1 \pmod 7$ and $n_7 \mid 9$.
+    <2>3. The only divisor of 9 congruent to $1 \pmod 7$ is $n_7 = 1$.
+    <2>4. Thus the unique Sylow 7-subgroup $P \cong \mathbb{Z}/7\mathbb{Z}$ is normal in $G$ ($P \trianglelefteq G$).
+    <2>5. By hypothesis, $G$ contains an element of order 9, so the Sylow 3-subgroup $Q \le G$ of order 9 is cyclic: $Q \cong \mathbb{Z}/9\mathbb{Z}$.
+    <2>6. Since $P \trianglelefteq G$, $P \cap Q = \{e\}$ (coprime orders), and $|P Q| = |P||Q| = 63$, $G$ is the semidirect product:
+    $$G \cong P \rtimes_\theta Q \cong \mathbb{Z}/7\mathbb{Z} \rtimes_\theta \mathbb{Z}/9\mathbb{Z},$$
+    determined by a homomorphism $\theta: \mathbb{Z}/9\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/7\mathbb{Z})$.
 
-- Some calculations we'll need:
-  - $\Aut(C_9) \cong C_9\units \cong C_{\phi(9)} \cong C_6$, using that $\phi(p^k) = p^{k-1}(p-1)$.
-  - $\Aut(C_7) \cong C_7\units \cong C_{\phi(7)}\cong C_6$ using that $\phi(p) = p-1$.
-- To get a nonabelian group, we need a nontrivial semidirect product, so look at $\Hom(G, \Aut(H))$ in the two possible combinations.
-  - $\Hom(C_7, \Aut(C_9)) \cong \Hom(C_7, C_6) \cong C_1 \da \ts{e}$ using that $\Hom(C_m, C_n) \cong C_{d}$ for $d = \gcd(m, n)$.
-    So there are no nontrivial homs here, so only the direct product is possible.
-  - $\Hom(C_9, \Aut(C_7)) \cong \Hom(C_9, C_6) \cong C_3$, so use this!
-  - Note that we don't have to consider possibilities for $C_3\cross C_3$, since including this as a factor would yield no elements of order 9.
+<1>2. Classification of homomorphisms $\theta: \mathbb{Z}/9\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/7\mathbb{Z})$:
+    *Proof:*
+    <2>1. The automorphism group of the cyclic group $\mathbb{Z}/7\mathbb{Z}$ is
+    $$\operatorname{Aut}(\mathbb{Z}/7\mathbb{Z}) \cong (\mathbb{Z}/7\mathbb{Z})^\times \cong \mathbb{Z}/6\mathbb{Z}.$$
+    <2>2. Any homomorphism $\theta: \mathbb{Z}/9\mathbb{Z} \to (\mathbb{Z}/7\mathbb{Z})^\times$ is uniquely determined by $\theta(1) = k \in (\mathbb{Z}/7\mathbb{Z})^\times$, where the order of $k$ must divide $\gcd(9, 6) = 3$.
+    <2>3. In $(\mathbb{Z}/7\mathbb{Z})^\times$, the elements of order dividing 3 satisfy $k^3 \equiv 1 \pmod 7$:
+    $$1^3 \equiv 1 \pmod 7, \quad 2^3 = 8 \equiv 1 \pmod 7, \quad 4^3 = 64 \equiv 1 \pmod 7.$$
+    <2>4. Since $G$ is non-abelian, $\theta$ must be non-trivial, so $\operatorname{ord}(k) = 3$, meaning $k \in \{2, 4\} \pmod 7$.
+    <2>5. Choosing $k = 2$ defines the action $\theta(y)(x) = x^2$, where $x$ generates $\mathbb{Z}/7\mathbb{Z}$ and $y$ generates $\mathbb{Z}/9\mathbb{Z}$. (The choice $k = 4$ corresponds to replacing generator $y$ with $y^2$, yielding an isomorphic group.)
 
-- So take $G\da C_7 \semidirect_\psi C_9$ for some $\psi: C_9 \to \Aut(C_7)$, and we can take the presentation
-\[
-G = \gens{x, y\st x^7, y^9, yxy\inv = \psi(x)}
-.\]
+<1>3. Presentation of $G$:
+    *Proof:*
+    <2>1. Let $x$ be a generator of $P \cong \mathbb{Z}/7\mathbb{Z}$, giving the relation $x^7 = e$.
+    <2>2. Let $y$ be a generator of $Q \cong \mathbb{Z}/9\mathbb{Z}$, giving the relation $y^9 = e$.
+    <2>3. The conjugation action $\theta(y)(x) = x^2$ yields the relation $y x y^{-1} = x^2$.
+    <2>4. Consistency check:
+    $$y^9 x y^{-9} = x^{2^9} = x^{512} = x^{7 \cdot 73 + 1} = x^1 = x,$$
+    which is compatible with $y^9 = e$.
+    <2>5. Thus a presentation for $G$ is:
+    $$G = \langle x, y \mid x^7 = e, \, y^9 = e, \, y x y^{-1} = x^2 \rangle.$$
 
-- It now suffices to find a nontrivial $\psi: C_7\to C_7$.
-  Writing it multiplicatively as $C_7 = \gens{x\st x^7}$, any map that sends $x$ to a generator will do.
-  It suffices to choose any $k$ coprime to $7$, and then take $\psi(x) \da x^k$, which will be another generator.
-
-- So take 
-
-\[
-G = \gens{x, y\st x^7, y^9, yxy\inv = x^2}
-.\]
+<1>4. Conclusion:
+    *Proof:*
+    $G = \langle x, y \mid x^7 = e, \, y^9 = e, \, y x y^{-1} = x^2 \rangle$ is a non-abelian group of order 63 containing an element $y$ of order 9.
 :::
