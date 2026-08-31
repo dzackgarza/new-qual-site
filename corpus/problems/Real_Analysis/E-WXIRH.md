@@ -26,11 +26,6 @@ F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d 
 
 :::
 
-:::{.proof}
-Fubini-Tonelli, and sketch region to change integration bounds.
-#todo
-:::
-
 ::: {.solution}
 <1>1. The double integral $\iint_{0 \le y \le x \le 1} |f(y)||g(x)|\,dy\,dx$ is finite.
     ::: {.proof}

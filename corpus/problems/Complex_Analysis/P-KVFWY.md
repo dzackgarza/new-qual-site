@@ -33,18 +33,24 @@ Just reproducing the proof of holomorphicity in the Schwarz reflection theorem.
 
   - Then let $\Delta_\eps$ be the perturbation $\Delta + i\eps = \theset{z+ i\eps \suchthat z\in \Delta}$; then $\Delta_\eps \intersect \RR = 0$ and $\int_{\Delta_\eps} f = 0$.
 
-  - Now let $\eps\to 0$ and conclude by continuity of $f$ (???)
+  - Now let $\eps\to 0$ and conclude by continuity of $f$.
 
-    - We want
-    $$
-    \int_{\Delta_\eps} f = \int_a^b f(\gamma_\eps(t)) \gamma_\eps'(t)\,dt \converges{\eps\to 0}\to \int_a^b f(\gamma(t)) \gamma_\eps'(t)\,dt =\int_{\Delta}  f
-    $$
-    where $\gamma_\eps, \gamma$ are curves parametrizing $\Delta_\eps, \Delta$ respectively.
+    - Parametrize $\Delta$ by a piecewise-smooth closed curve $\gamma: [a,b] \to \CC$, and write $\gamma_\eps(t) \da \gamma(t) + i\eps$ for the corresponding parametrization of $\Delta_\eps$.
+      Then $\gamma_\eps'(t) = \gamma'(t)$, so
+      $$
+      \int_{\Delta_\eps} f = \int_a^b f(\gamma_\eps(t)) \gamma_\eps'(t)\,dt = \int_a^b f(\gamma(t) + i\eps) \gamma'(t)\,dt.
+      $$
 
-    - Since $\gamma, \gamma_\eps$ are closed and bounded in $\CC$, they are compact subsets.
-      Thus it suffices to show that $f(\gamma_\eps(t)) \gamma_\eps'(t)$ converges uniformly to $f(\gamma(t))\gamma'(t)$.
-
-    - ??
+    - We claim this converges to $\int_\Delta f = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ as $\eps \to 0$.
+      The image $\gamma([a,b])$ is compact, so $f$ is uniformly continuous on a compact neighborhood of it: for every $\eta > 0$ there is $\eps_0 > 0$ such that $|f(\gamma(t) + i\eps) - f(\gamma(t))| < \eta$ for all $t \in [a,b]$ and all $0 < \eps < \eps_0$.
+      Since $\gamma'$ is bounded on $[a,b]$ (it is continuous on a compact interval), say $|\gamma'(t)| \le M$, we get
+      $$
+      \left| \int_a^b f(\gamma(t)+i\eps)\gamma'(t)\,dt - \int_a^b f(\gamma(t))\gamma'(t)\,dt \right|
+      \le \int_a^b |f(\gamma(t)+i\eps) - f(\gamma(t))|\,|\gamma'(t)|\,dt
+      \le \eta M (b-a),
+      $$
+      which tends to $0$ as $\eta \to 0$.
+      Hence $\int_{\Delta_\eps} f \to \int_\Delta f$, and since each $\int_{\Delta_\eps} f = 0$, we get $\int_\Delta f = 0$.
 
 - Case 3: $\Delta$ intersects both $\HH^+$ and $\HH^-$.
 
