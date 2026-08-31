@@ -39,5 +39,5 @@ Equivalently, there is a strict chain of proper ideals:
 Because $k[x, y] / \langle x, y \rangle \cong k$ is a field, $\langle x, y \rangle$ is maximal, while $\langle x \rangle$ is not.
 
 <1>3. Conclusion: In $\mathbb{Z}$, the zero ideal $\langle 0 \rangle$ is prime but not maximal; in $k[x, y]$, $\langle x \rangle$ is prime but not maximal.
-Q.E.D. Proof: <1>1 and <1>2.
+Q.E.D.
 :::

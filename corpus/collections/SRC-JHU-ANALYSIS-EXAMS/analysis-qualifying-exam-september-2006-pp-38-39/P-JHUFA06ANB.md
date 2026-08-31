@@ -37,7 +37,7 @@ Therefore $f_0$ has at most one zero in $D$ (and if present, it must be a simple
 For example, let $f_n(z) = z - (1 - \frac{1}{n})$ on $D$.
 Each $f_n$ has unique zero $c_n = 1 - \frac{1}{n} \in D$, and $f_n(z) \to f_0(z) = z - 1$ uniformly on $D$.
 The limit function $f_0(z) = z - 1$ has no zeros in $D$ since $|z| < 1 \implies z \neq 1$.
-<2>2. **Necessary and sufficient condition:** $f_0$ has no zeros in $D$ if and only if $\lim_{n \to \infty} |c_n| = 1$ (i.e. the sequence of zeros $(c_n)$ has no accumulation points in $D$). Proof: statement of condition.
+<2>2. **Necessary and sufficient condition:** $f_0$ has no zeros in $D$ if and only if $\lim_{n \to \infty} |c_n| = 1$ (i.e. the sequence of zeros $(c_n)$ has no accumulation points in $D$).
 <2>3. **Proof ($\Rightarrow$):** Suppose $f_0$ has no zeros in $D$.
 If $(c_n)$ had an accumulation point $c \in D$, there would exist a subsequence $c_{n_k} \to c \in D$.
 By uniform convergence on compact sets:
@@ -52,5 +52,5 @@ Since $c_n$ is the unique zero of $f_n$, this implies $c_n \in B(z_0, r)$ for al
 Thus $f_0$ has no zeros in $D$.
 
 <1>3. Conclusion: $f_0$ has at most one zero in $D$, and $f_0$ is zero-free if and only if $|c_n| \to 1$.
-Q.E.D. Proof: <1>1 and <1>2.
+Q.E.D.
 :::

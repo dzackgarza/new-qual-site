@@ -29,7 +29,7 @@ For a projective subscheme $X \subseteq \mathbb{P}^n$, $P_X(d)$ denotes the Hilb
 \[
 \dim(X) = \deg(P_X(d)) = r.
 \]
-(Equivalently, the Krull dimension of the coordinate ring $S(X)$ is $\dim(S(X)) = r + 1$). Proof: Hilbert–Serre theorem relating degree of Hilbert polynomial to dimension.
+(Equivalently, the Krull dimension of the coordinate ring $S(X)$ is $\dim(S(X)) = r + 1$).
 <2>2. **Degree:** Writing the Hilbert polynomial in the binomial basis:
 \[
 P_X(d) = \sum_{i=0}^r a_i \binom{d}{i} = \frac{\deg(X)}{r!} d^r + O(d^{r-1}),
@@ -55,5 +55,5 @@ For a smooth projective curve ($r = 1$), $P_X(d) = (\deg X) d + (1 - g)$, so the
 <2>5. **Moduli / Hilbert Scheme Invariant:** By Grothendieck's theorem, the Hilbert polynomial is invariant in flat families of projective schemes, and closed subschemes of $\mathbb{P}^n$ with a fixed Hilbert polynomial $P(d)$ are parameterized by the projective **Hilbert scheme** $\operatorname{Hilb}^{P(d)}(\mathbb{P}^n)$.
 
 <1>3. Conclusion: The Hilbert polynomial encodes the dimension, degree, arithmetic genus, Euler characteristic of twists $\chi(\mathcal{O}_X(d))$, and the Hilbert scheme parameterization.
-Q.E.D. Proof: <1>1 and <1>2.
+Q.E.D.
 :::

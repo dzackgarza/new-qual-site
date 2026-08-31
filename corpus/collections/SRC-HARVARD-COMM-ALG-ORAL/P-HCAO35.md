@@ -52,5 +52,5 @@ I_1 \subsetneq I_2 \subsetneq I_3 \subsetneq \cdots \subsetneq I_n \subsetneq \c
 Therefore $R = \overline{\mathbb{Z}}$ does not satisfy the ascending chain condition on ideals, so $R$ is not Noetherian.
 
 <1>5. Conclusion: $R = \overline{\mathbb{Z}}$ is a 1-dimensional, integrally closed domain that is not Noetherian.
-Q.E.D. Proof: <1>1 through <1>4.
+Q.E.D.
 :::
