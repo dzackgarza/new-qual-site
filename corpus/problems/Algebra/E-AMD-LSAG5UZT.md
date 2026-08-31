@@ -72,5 +72,7 @@ Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
 :::
 <1>5. Q.E.D.
-    *Proof:* Step <1>1 produces $N$, and steps <1>3 and <1>4 classify $G$ in the two stated cases.
+::: {.proof}
+Step <1>1 produces $N$, and steps <1>3 and <1>4 classify $G$ in the two stated cases.
+:::
 :::
