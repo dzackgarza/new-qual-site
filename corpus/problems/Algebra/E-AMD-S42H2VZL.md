@@ -26,7 +26,7 @@ Show that disjoint cycles commute.
 <1>1. Let $\sigma$ and $\tau$ be cycles with disjoint supports $A = \supp(\sigma)$ and $B = \supp(\tau)$, so $A \cap B = \emptyset$, and let $x$ be any point.
 
 <1>2. $\sigma$ maps $A$ to itself, and $\tau$ maps $B$ to itself.
-*Proof:* A permutation fixes every point outside its support, so it cannot carry a point of the support to one outside it without failing to be injective there.
+    *Proof:* If $a \in A$ then $\sigma(a) \neq a$, so $\sigma^{-1}(\sigma(a)) = a \neq \sigma(a)$, which means $\sigma(a)$ is not fixed by $\sigma^{-1}$. But $\sigma$ and $\sigma^{-1}$ have the same support (a point is moved by $\sigma$ iff it is moved by $\sigma^{-1}$), so $\sigma(a) \in A$.
 
 <1>3. If $x \in A$ then $(\sigma\tau)(x) = (\tau\sigma)(x)$.
 *Proof:* <2>1. $x \notin B$, so $\tau(x) = x$ and $(\sigma\tau)(x) = \sigma(x)$.

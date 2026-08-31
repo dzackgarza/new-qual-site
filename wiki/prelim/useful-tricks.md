@@ -14,8 +14,7 @@ Alternate signs starting with $+$, multiply across, and sum.
 
 ![](Pasted image 20211031235625.png)
 
-A common exam pattern: $\int x^2 e^x \, dx$ requires two rounds.
-Don't try to be clever with substitution — just grind through the parts.
+A common exam pattern: $\int x^2 e^x \, dx$ requires two rounds of differentiation on the polynomial factor. Apply the method systematically rather than searching for a shortcut.
 
 ## Common Series
 

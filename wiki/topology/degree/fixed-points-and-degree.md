@@ -64,7 +64,7 @@ Brouwer is the special case of Lefschetz for $X = B^n$. Since $B^n$ is contracti
 The Lefschetz number $\Lambda_f$ is computed from the induced maps on homology. If $\Lambda_f \neq 0$, the map $f$ must have a fixed point — a nonzero trace means the map "wraps" homology around itself in a way that cannot be achieved without a fixed point. The converse holds for triangulable spaces: if $\Lambda_f = 0$, a small perturbation can remove all fixed points.
 
 :::{.proof}
-*[Proof of Brouwer via Lefschetz]* Suppose $f: B^n \to B^n$ has no fixed points. Define $g: B^n \to S^{n-1}$ by sending $x$ to the intersection of the ray from $f(x)$ through $x$ with $\partial B^n = S^{n-1}$. Then $g$ restricted to $S^{n-1}$ is a retraction $r: S^{n-1} \to S^{n-1}$, and $r$ is homotopic to the identity via the straight-line homotopy. But $\deg r = \deg \id = 1$, while any retraction $S^{n-1} \to S^{n-1}$ factors through the contractible $B^n$, giving $\deg r = 0$. Contradiction.
+*[Proof of Brouwer via Lefschetz]* Suppose $f: B^n \to B^n$ has no fixed points. Define $g: B^n \to S^{n-1}$ by sending $x$ to the intersection of the ray from $f(x)$ through $x$ with $\partial B^n = S^{n-1}$. Then $g$ restricted to $S^{n-1}$ is a retraction $r: S^{n-1} \to S^{n-1}$, and $r$ is homotopic to the identity via the straight-line homotopy $H(x,t) = \frac{x - tf(x)}{\|x - tf(x)\|}$, so $\deg r = \deg \id = 1$. On the other hand, $r$ factors as $S^{n-1} \xrightarrow{\iota} B^n \xrightarrow{g} S^{n-1}$ where $\iota$ is the inclusion. Since $B^n$ is contractible, $g_*$ is the zero map on $H_{n-1}$, so $r_* = g_* \circ \iota_* = 0$ on $H_{n-1}(S^{n-1})$. But $\deg r$ is exactly the scalar by which $r_*$ acts on $H_{n-1}(S^{n-1}) \cong \ZZ$, so $\deg r = 0$. Contradiction.
 :::
 
 ## Borsuk-Ulam
@@ -76,7 +76,7 @@ Borsuk-Ulam says that antipodal symmetry forces agreement somewhere. The $n=1$ c
 Applications include:
 
 - **Ham sandwich theorem**: $n$ measurable sets in $\RR^n$ can be simultaneously bisected by a single hyperplane. Apply Borsuk-Ulam to the map that sends a direction on $S^{n-1}$ to the $n$-tuple of measures on each side of the perpendicular hyperplane.
-- **Brouwer as corollary**: If $f: B^n \to B^n$ had no fixed points, define $g: S^{n-1} \to S^{n-1}$ by $g(x) = \frac{x - f(x)}{\|x - f(x)\|}$. Then $g$ is odd ($g(-x) = -g(x)$), contradicting Borsuk-Ulam for $n \geq 1$.
+- **Brouwer as corollary**: The Brouwer fixed-point theorem also follows from Borsuk-Ulam via the degree argument above: if $f: B^n \to B^n$ has no fixed points, the retraction $r: S^{n-1} \to S^{n-1}$ constructed from $f$ has degree $1$ (homotopic to the identity) and degree $0$ (factors through the contractible $B^n$), a contradiction.
 
 ## Hairy Ball
  
