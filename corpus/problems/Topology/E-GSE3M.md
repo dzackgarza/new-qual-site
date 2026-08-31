@@ -20,31 +20,38 @@ Show that $[0, 1]$ is connected.
 [Reference](https://sites.math.washington.edu/~morrow/334_16/connected.pdf) [A potentially shorter proof](https://math.stackexchange.com/questions/934421/proof-of-that-every-interval-is-connected)
 :::
 
-Let $I = [0, 1] = A\union B$ be a disconnection, so
+<1>1. Suppose for contradiction that $I = [0,1]$ is disconnected, so $I = A \union B$ with $A, B$ nonempty, disjoint, and separated: $\cl_I(A) \intersect B = A \intersect \cl_I(B) = \emptyset$.
+Proof: definition of a disconnection.
 
-- $A, B \neq \emptyset$
+<1>2. Relabel so that $0 \in A$, and set $s \da \sup A$.
+Proof: $0$ lies in exactly one of $A, B$; swap the labels if needed. The supremum exists because $A \subseteq [0,1]$ is bounded above and $\RR$ has the least-upper-bound property.
 
-- $A \disjoint B = I$
+<1>3. $s \in A$.
+<2>1. Suppose instead $s \in B$.
+Proof: $s \in [0,1] = A \union B$, so if $s \notin A$ then $s \in B$.
+<2>2. Since $\cl_I(A) \intersect B = \emptyset$, the point $s \in B$ is not in $\cl_I(A)$, so there is a neighborhood $U$ of $s$ with $U \intersect A = \emptyset$.
+Proof: a point outside the closure of $A$ has a neighborhood disjoint from $A$.
+<2>3. But $s = \sup A$ means every neighborhood of $s$ meets $A$: for any $\eps > 0$ there is $a \in A$ with $s - \eps < a \le s$.
+Proof: if some neighborhood $(s-\eps, s+\eps)$ missed $A$, then $s - \eps$ would be an upper bound of $A$ smaller than $s$, contradicting that $s$ is the least upper bound.
+<2>4. <2>2 and <2>3 contradict each other, so $s \notin B$, hence $s \in A$.
+Proof: <2>1.
 
-- $\cl_I(A) \intersect B = A \intersect \cl_I(B) = \emptyset$.
-  Let $a\in A$ and $b\in B$ where WLOG $a<b$
+<1>4. $s = 1$.
+<2>1. Since $A \intersect \cl_I(B) = \emptyset$, the point $s \in A$ is not in $\cl_I(B)$, so there is $\eps > 0$ with $(s - \eps, s + \eps) \intersect I \subseteq A$.
+Proof: a point outside the closure of $B$ has a neighborhood disjoint from $B$; within $I$ that neighborhood lies entirely in $A$.
+<2>2. If $s < 1$, then $(s, s + \eps) \intersect I$ contains points of $A$ strictly larger than $s$.
+Proof: take any $t$ with $s < t < \min(s + \eps, 1)$; then $t \in (s-\eps, s+\eps) \intersect I \subseteq A$.
+<2>3. This contradicts $s = \sup A$, so $s = 1$.
+Proof: <2>2 produces an element of $A$ exceeding the supremum $s$.
 
-- (since either $a<b$ or $b<a$, and $a\neq b$ since $A, B$ are disjoint) Let $K = [a, b]$ and define $A_K \definedas A\intersect K$ and $B_K \definedas B\intersect K$.
-  Now $A_K, B_K$ is a disconnection of $K$.
-  Let $s = \sup(A_K)$, which exists since $\RR$ is complete and has the LUB property Claim: $s \in \cl_I(A_K)$.
-  Proof:
+<1>5. Contradiction: $1 = s \in A$, but $B$ is nonempty.
+<2>1. Since $B \neq \emptyset$, pick $b \in B \subseteq [0,1]$.
+Proof: $B$ is nonempty by hypothesis.
+<2>2. $b \le 1 = s = \sup A$, so for every $\eps > 0$ there is $a \in A$ with $b - \eps < a \le b$.
+Proof: $b$ is below the supremum of $A$, so $A$ meets every neighborhood of $b$.
+<2>3. Hence $b \in \cl_I(A)$, contradicting $\cl_I(A) \intersect B = \emptyset$.
+Proof: <2>2 shows every neighborhood of $b$ meets $A$, which is the definition of $b \in \cl_I(A)$.
 
-- If $s\in A_K$ there's nothing to show since $A_K \subset \cl_I(A_K)$, so assume $s\in I\setminus A_K$.
-
-- Now let $N_s$ be an arbitrary neighborhood of $s$, then using ??? we can find an $\eps>0$ such that $B_\eps(s) \subset N_s$
-
-- Since $s$ is a supremum, there exists an $a\in A_K$ such that $s-\eps < a$.
-
-- But then $a \in B_\eps(s)$ and $a\in N_s$ with $a\neq s$.
-
-- Since $N_s$ was arbitrary, every $N_s$ contains a point of $A_K$ not equal to $s$, so $s$ is a limit point by definition.
-  Since $s\in \cl_I(A_K)$ and $\cl_I(A_K)\intersect B_K = \emptyset$, we have $s\not \in B_K$.
-  Then the subinterval $(x, b] \intersect A_K = \emptyset$ for every $x>c$ since $c \definedas \sup A_K$.
-  But since $A_K \disjoint B_K = K$, we must have $(x, b] \subset B_K$, and thus $s\in \cl_I(B_K)$.
-  Since $A_K, B_K$ were assumed disconnecting, $s\not \in A_K$ But then $s\in K$ but $s\not\in A_K \disjoint B_K = K$, a contradiction.
+<1>6. Therefore no disconnection of $[0,1]$ exists, so $[0,1]$ is connected.
+Proof: <1>1 through <1>5.
 :::

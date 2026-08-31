@@ -23,5 +23,9 @@ So suppose $A$ is a nilpotent matrix.
 Therefore, $$A^\alpha=0\Rightarrow\underbrace{A\cdot A\cdots A}_{\alpha}=0\Rightarrow\underbrace{(A-0I)(A-0I)\cdots(A-0I)}_{\alpha}=0$$ $$\Rightarrow A\text{ is a root for the polynomial }\underbrace{(x-0)(x-0)\cdots(x-0)}_{\alpha}\Rightarrow A\text{ is a root for }\underbrace{x\cdot x\cdots x}_{\alpha}\Rightarrow x^\alpha\text{ is the minimal polynomial for }A$$ This minimal polynomial will yield the following $\alpha\times\alpha$ companion matrix: $$\begin{bmatrix}0&&&\\1&0&&\\&1&\ddots&\\&&\ddots&0\\&&&1&0\end{bmatrix}$$ Furthermore, any other invariant factor of $A$ must divide $x^\alpha$, so it must be of the form $x^{\beta_i}$, with $\beta_1\mid\beta_2\mid\dots\mid\beta_n\mid\alpha$.
 Each of these invariant factors will give a $\beta_i\times\beta_i$ matrix of the same companion form.
 Now, using these companion matrices to construct the rational canonical form for $A$ we will get a matrix of the form: $$\begin{bmatrix}M_1&&&\\&M_2&&\\&&\ddots&\\&&&M_t\end{bmatrix}$$ Where the $M_i$'s are the square companion matrices as described above.
-Clearly this is similar to the desired matrix.
+Each companion matrix $M_i$ is the companion matrix of the invariant factor $x^{\beta_i}$, which is the $\beta_i \times \beta_i$ matrix
+$$\begin{bmatrix}0&&&&\\1&0&&&\\&1&\ddots&&\\&&\ddots&0&\\&&&1&0\end{bmatrix}$$
+with ones on the subdiagonal and zeros elsewhere.
+This is exactly the block $N_i$ in the desired form, so the rational canonical form of $A$ is a block diagonal matrix whose blocks are precisely the $N_i$.
+Since $A$ is similar to its rational canonical form, $A$ is similar to the desired block diagonal matrix.
 :::
