@@ -15,58 +15,65 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$.
-Assume $f'$ exists in an open set containing $\gamma$ and $\Omega_2$ with $\lim_{z\to \infty} f(z) = A$.
-Show that
+::: problem
+Let $\gamma$ be a positively oriented (counterclockwise) piecewise smooth simple closed curve in $\mathbb{C}$ with interior $\Omega_1$ and exterior $\Omega_2$.
+Assume $f$ is holomorphic on an open set containing $\gamma \cup \Omega_2$, with $\lim_{z \to \infty} f(z) = A$.
+
+Prove that the Cauchy integral
 $$
-F(z) \da \frac{1}{2 \pi i} \int_{\gamma} \frac{f(\xi)}{\xi-z} d \xi=\left\{\begin{array}{ll}
-A, & \text { if } z \in \Omega_{1} \\
--f(z)+A, & \text { if } z \in \Omega_{2}
-\end{array}\right.
-.$$
-
-> NOTE (DZG): I think there is a typo in this question....probably this should equal $f(z)$ for $z\in \Omega_1$, which is Cauchy's formula...
-
+F(z) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(\xi)}{\xi - z} \, d\xi = \begin{cases} A & \text{if } z \in \Omega_1, \\ -f(z) + A & \text{if } z \in \Omega_2. \end{cases}
+$$
 :::
 
-:::{.solution}
-Note that $G_z(\xi) \da {f(\xi) \over \xi - z}$ has a pole of order one at $\xi = z$ and also a pole at $\xi = \infty$.
-If $z\in \Omega_1$, then $\gamma$ encloses just the pole $\xi = z$, so apply the residue theorem:
-\[
-F(z) 
-&\da {1\over 2\pi i}\oint_\gamma {f(\xi) \over \xi - z}\dxi \\
-&= {1\over 2\pi i}\oint_\gamma G_z(\xi) \dxi \\
-&= \Res_{\xi = z} G_z(\xi) \\
-&= \lim_{\xi\to z} (\xi - z) G_z(\xi) \\ 
-&= \lim_{\xi\to z} (\xi - z) {f(\xi) \over \xi-z} \\ 
-&= \lim_{\xi\to z} f(\xi) \\
-&= f(z)
-.\]
+::: solution
+**Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{|\xi| = R\}$, and taking the limit as $R \to \infty$.
 
-Now if $z\in \Omega_2$, then $\gamma$ encloses both $\xi=z, \infty$, and is oriented negatively,so
-\[
-F(z) 
-&= {1\over 2\pi i} \oint_\gamma G_z(\xi) \dxi \\
-&= -\qty{\Res_{\xi = z} G_z(\xi) + \Res_{\xi = \infty} G_z(\xi)}\\
-&= -\qty{f(z) + \Res_{\xi = \infty} G_z(\xi)}\\
-,\]
-where the last line proceeds by the same calculation as above.
-It remains to compute the unknown residue.
-Residues at $\xi = \infty$ are computed as residues at $\xi =0$, and the change of variables $G_z(\xi)\dxi \mapsto G_z(w) \dw$ for $w\da 1/\xi$ yields $G_z(\xi)\dxi \to G_z\qty{1\over \xi}(-1/\xi^2)\dxi$.
-Thus
-\[
-\Res_{\xi=\infty} G_z(\xi) 
-&= -\Res_{\xi=0} G_z\qty{\xi\inv}\xi^{-2} \\
-&= - \Res_{\xi=0} {f(\xi\inv) \over \xi^2(\xi\inv - z) } \\
-&= - \Res_{\xi=0} {f(\xi\inv) \over \xi(1 - z\xi) } \\
-&= -\lim_{\xi \to 0} {f(\xi\inv) \over 1-z\xi} \\
-&= -\lim_{\xi \to 0}f(\xi \inv) \\
-&= -\lim_{\xi\to\infty} f(\xi) \\
-&= -A
-.\]
-So combining this yields
-\[
-F(z) = -\qty{f(z) - A} = -f(z) + A
-.\]
+<1>1. Asymptotic limit of the integral along a large circle $C_R$:
+    *Proof:*
+    <2>1. Let $C_R$ denote the circle $\{|\xi| = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \mathbb{D}_R$ and (if $z \in \Omega_2$) $|z| < R$.
+    <2>2. Split the integral along $C_R$:
+    $$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = \frac{A}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} + \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi.$$
+    <2>3. Since $|z| < R$, the winding number of $C_R$ around $z$ is 1:
+    $$\frac{1}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} = 1.$$
+    <2>4. Bound the error term:
+        - Let $\varepsilon > 0$. Since $\lim_{\xi \to \infty} f(\xi) = A$, there exists $R_0 > 0$ such that $|f(\xi) - A| < \varepsilon$ for all $|\xi| \ge R_0$.
+        - For $R \ge R_0$ with $R > |z|$:
+        $$\left| \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi \right| \le \frac{1}{2\pi} \cdot \frac{\varepsilon}{R - |z|} \cdot 2\pi R = \varepsilon \frac{R}{R - |z|}.$$
+        - Taking $R \to \infty$, the upper bound approaches $\varepsilon$. Since $\varepsilon > 0$ was arbitrary:
+        $$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi = 0.$$
+    <2>5. Therefore:
+    $$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = A \cdot 1 + 0 = A.$$
+
+<1>2. Case $z \in \Omega_1$:
+    *Proof:*
+    <2>1. Let $z \in \Omega_1$.
+    <2>2. Choose $R > 0$ large enough that $\gamma \subset \mathbb{D}_R$.
+    <2>3. Consider the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$ between $\gamma$ and $C_R$.
+    <2>4. The boundary is $\partial U_R = C_R - \gamma$ (where $-\gamma$ indicates that the inner boundary is oriented clockwise relative to $U_R$).
+    <2>5. Since $z \in \Omega_1$, $z \notin U_R$. Thus the function $\xi \mapsto \frac{f(\xi)}{\xi - z}$ is holomorphic on an open neighborhood of $\overline{U_R}$.
+    <2>6. By Cauchy's Integral Theorem on $U_R$:
+    $$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi - \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = 0.$$
+    <2>7. Thus:
+    $$F(z) = \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi.$$
+    <2>8. Since the left-hand side $F(z)$ is independent of $R$, take $R \to \infty$ and apply <1>1:
+    $$F(z) = A.$$
+
+<1>3. Case $z \in \Omega_2$:
+    *Proof:*
+    <2>1. Let $z \in \Omega_2$.
+    <2>2. Choose $R > |z|$ large enough that $\gamma \subset \mathbb{D}_R$.
+    <2>3. Now the point $z$ lies in the interior of the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$.
+    <2>4. The function $\xi \mapsto \frac{f(\xi)}{\xi - z}$ is holomorphic on $\overline{U_R} \setminus \{z\}$ with a simple pole at $\xi = z$.
+    <2>5. The residue at $\xi = z$ is:
+    $$\operatorname{Res}_{\xi = z} \frac{f(\xi)}{\xi - z} = f(z).$$
+    <2>6. By the Residue Theorem / Cauchy's Integral Formula on $U_R$:
+    $$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi - \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = f(z).$$
+    <2>7. Rearranging for $F(z)$:
+    $$F(z) = \frac{1}{2\pi i} \int_\gamma \frac{f(\xi)}{\xi - z} \, d\xi = -f(z) + \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi.$$
+    <2>8. Taking $R \to \infty$ and applying <1>1:
+    $$F(z) = -f(z) + A.$$
+
+<1>4. Conclusion:
+    *Proof:*
+    $F(z) = A$ for $z \in \Omega_1$ and $F(z) = -f(z) + A$ for $z \in \Omega_2$.
 :::
