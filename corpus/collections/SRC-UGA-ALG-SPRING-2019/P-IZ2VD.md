@@ -15,79 +15,45 @@ relations: []
 review: draft
 ---
 
-Let $F = \FF_p$ , where $p$ is a prime number.
+::: problem
+Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 
-a.
-Show that if $\pi(x) \in F[x]$ is irreducible of degree $d$, then $\pi(x)$ divides $x^{p^d} - x$.
+(a) Show that if $\pi(x) \in \mathbb{F}_p[x]$ is irreducible of degree $d$, then $\pi(x)$ divides $x^{p^d} - x$ in $\mathbb{F}_p[x]$.
 
-b.
-Show that if $\pi(x) \in F[x]$ is an irreducible polynomial that divides $x^{p^n} - x$, then $\deg \pi(x)$ divides $n$.
-
-:::{.concept}
-\envlist
-
-- Go to a field extension.
-  - Orders of multiplicative groups for finite fields are known.
-- $\GF(p^n)$ is the splitting field of $x^{p^n} - x \in \FF_p[x]$.
-- $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$
-- $\GF(p^d) \leq \GF(p^n) \iff d\divides n$
-- $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
-
+(b) Show that if $\pi(x) \in \mathbb{F}_p[x]$ is an irreducible polynomial that divides $x^{p^n} - x$, then $\deg \pi(x)$ divides $n$.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove that an irreducible polynomial of degree $d$ over $\mathbb{F}_p$ divides $x^{p^d} - x$ in (a), and that any irreducible factor of $x^{p^n} - x$ has degree dividing $n$ in (b).
 
-:::{.proof title="of a"}
-We can consider the quotient $K = \displaystyle{\frac{\FF_p[x]}{\generators{\pi(x)}}}$, which since $\pi(x)$ is irreducible is an extension of $\FF_p$ of degree $d$ and thus a field of size $p^d$ with a natural quotient map of rings $\rho: \FF_p[x] \to K$.
+<1>1. Part (a): $\pi(x) \mid (x^{p^d} - x)$ for irreducible $\pi(x)$ of degree $d$.
+    *Proof:*
+    <2>1. Construct the field $K = \mathbb{F}_p[x]/\langle \pi(x) \rangle$. Since $\pi(x)$ is irreducible over $\mathbb{F}_p$, $\langle \pi(x) \rangle$ is a maximal ideal, so $K$ is a field.
+    <2>2. The extension degree is $[K : \mathbb{F}_p] = \deg \pi(x) = d$, so $|K| = p^d$.
+    <2>3. The multiplicative group $K^\times = K \setminus \{0\}$ is a group of order $p^d - 1$.
+    <2>4. By Lagrange's Theorem (or Euler's Theorem for finite groups), every element $\alpha \in K^\times$ satisfies $\alpha^{p^d - 1} = 1$, which implies $\alpha^{p^d} = \alpha$.
+    <2>5. For $\alpha = 0$, $0^{p^d} - 0 = 0$. Thus $\alpha^{p^d} - \alpha = 0$ for all $\alpha \in K$.
+    <2>6. Consider the residue class $\bar{x} = x + \langle \pi(x) \rangle \in K$.
+    <2>7. Applying the polynomial identity to $\bar{x}$ gives
+    $$\bar{x}^{p^d} - \bar{x} = 0 \quad \text{in } K = \mathbb{F}_p[x]/\langle \pi(x) \rangle.$$
+    <2>8. By definition of the quotient ring, this means $x^{p^d} - x \in \langle \pi(x) \rangle$.
+    <2>9. Therefore $\pi(x)$ divides $x^{p^d} - x$ in $\mathbb{F}_p[x]$.
 
-Since $K\units$ is a group of size $p^d-1$, we know that for any $y \in K\units$, we have by Lagrange's theorem that the order of $y$ divides $p^d-1$ and so $y^{p^d} = y$.
+<1>2. Part (b): If $\pi(x) \mid (x^{p^n} - x)$, then $\deg \pi(x) \mid n$.
+    *Proof:*
+    <2>1. Let $L = \mathbb{F}_{p^n}$ be the splitting field of $x^{p^n} - x$ over $\mathbb{F}_p$, which is a finite field of degree $[L : \mathbb{F}_p] = n$.
+    <2>2. The elements of $L$ are precisely the $p^n$ distinct roots of $x^{p^n} - x$.
+    <2>3. Since $\pi(x) \mid (x^{p^n} - x)$ in $\mathbb{F}_p[x]$, every root of $\pi(x)$ in an algebraic closure $\overline{\mathbb{F}}_p$ is also a root of $x^{p^n} - x$, and therefore lies in $L$.
+    <2>4. Let $\alpha \in L$ be a root of $\pi(x)$.
+    <2>5. Since $\pi(x)$ is irreducible over $\mathbb{F}_p$, it is a scalar multiple of the minimal polynomial $m_{\alpha, \mathbb{F}_p}(x)$, so
+    $$[\mathbb{F}_p(\alpha) : \mathbb{F}_p] = \deg \pi(x).$$
+    <2>6. Since $\alpha \in L$, we have the tower of subfields $\mathbb{F}_p \subseteq \mathbb{F}_p(\alpha) \subseteq L$.
+    <2>7. By the Tower Law for field extensions:
+    $$n = [L : \mathbb{F}_p] = [L : \mathbb{F}_p(\alpha)] \cdot [\mathbb{F}_p(\alpha) : \mathbb{F}_p] = [L : \mathbb{F}_p(\alpha)] \cdot \deg \pi(x).$$
+    <2>8. Since $[L : \mathbb{F}_p(\alpha)]$ is an integer, $\deg \pi(x)$ divides $n$.
 
-So every element in $K$ is a root of $q(x) = x^{p^d}-x$.
-
-Since $\rho$ is a ring morphism, we have
-
-\[
-\rho(q(x)) = \rho(x^{p^d} - x) &= \rho(x)^{p^d} - \rho(x)
-= 0 \in K \\
-&\iff q(x) \in \ker \rho \\
-&\iff q(x) \in \generators{\pi(x)} \\
-&\iff \pi(x) \divides q(x) = x^{p^d}-x
-,\]
-  where we've used that "to contain is to divide" in the last step.
-
-
-:::
-
-:::{.proof title="of b"}
-
-:::{.claim}
-$\pi(x)$ divides $x^{p^n}-x \iff \deg \pi$ divides $n$.
-:::
-
-:::{.proof title="of claim, $\implies$"}
-Let $L \cong \GF(p^n)$ be the splitting field of $\phi_n(x) \definedas x^{p^n}-x$; then since $\pi \divides \phi_n$ by assumption, $\pi$ splits in $L$.
-Let $\alpha \in L$ be any root of $\pi$; then there is a tower of extensions $\FF_p \leq \FF_p(\alpha) \leq L$.
-
-Then $\FF_p \leq \FF_p(\alpha) \leq L$, and so
-\[
-n &= [L: \FF_p] \\
-&= [L: \FF_p(\alpha)]~[\FF_p(\alpha): \FF_p] \\
-&= \ell d
-,\]
-
-for some $\ell \in \ZZ^{\geq 1}$, so $d$ divides $n$.
-
-:::
-
-:::{.proof title="of claim, $\impliedby$"}
-$\impliedby$:
-If $d\divides n$, use the fact (claim) that $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$. 
-So $f = f_i$ for some $i$.
-
-:::
-
-:::
-
+<1>3. Conclusion:
+    *Proof:*
+    Irreducible polynomials of degree $d$ divide $x^{p^d} - x$, and any irreducible factor of $x^{p^n} - x$ has degree dividing $n$.
 :::
 

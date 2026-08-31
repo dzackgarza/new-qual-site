@@ -14,69 +14,48 @@ relations: []
 review: draft
 ---
 
-Let 
-\[
-f(x) = \sum _{n=0}^{\infty} \frac{x^{n}}{n !}.
-\]
-Describe the intervals on which $f$ does and does not converge uniformly.
-
-:::{.concept}
-\envlist
-- $f_N\to f$ uniformly $\iff$ $\norm{f_N - f}_\infty \to 0$.
-  - Applied to sums: 
-  \[
-\sum_{0 \leq k\leq N} f_n \converges{u}\to \sum_{k\geq 0} f_n \iff \norm{\sum_{k\geq N+1} f_n }_{\infty} \to 0
-  .\]
-- An infinite sum is defined as the pointwise limit of its partial sums:
- \[
-\sum_{n=0}^\infty c_n x^n \definedas \lim_{N\to \infty} \sum_{n=0}^N c_n x^n
- .\]
-- Uniformly decaying terms for uniformly convergent series: if $\sum_{n=0}^\infty f_n(x)$ converges uniformly on a set $A$, then 
-\[
-\norm{f_n}_{\infty, A} \da \sup_{x\in A} \abs{f_n(x)} \converges{n\to\infty}\too 0
-.\]
-- $M\dash$test: if $f_n:A \to\CC$ with $\norm{f_n}_\infty < M_n$ and $\sum M_n < \infty$, then $\sum f_n$ converges uniformly and absolutely.
-  - If the $f_n$ are continuous, the uniform limit theorem implies $\sum f_n$ is also continuous.
+::: problem
+Let
+$$
+f(x) = \sum_{n=0}^{\infty} \frac{x^{n}}{n!}.
+$$
+Determine all intervals $I \subseteq \mathbb{R}$ on which the series converges uniformly, and prove the characterization.
 :::
 
-:::{.strategy}
-No real place to start, so pick the nicest place: compact intervals.
-Then bounded intervals, then unbounded sets.
-:::
+::: solution
+**Goal:** Prove that the power series $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on an interval $I \subseteq \mathbb{R}$ if and only if $I$ is bounded.
 
-:::{.solution}
-\envlist
+<1>1. Uniform convergence on bounded intervals (Weierstrass $M$-test):
+    *Proof:*
+    <2>1. Let $I \subseteq \mathbb{R}$ be a bounded interval.
+    <2>2. Since $I$ is bounded, there exists $M \in (0, \infty)$ such that $|x| \le M$ for all $x \in I$.
+    <2>3. For each $n \ge 0$ and $x \in I$, the terms are bounded by
+    $$\left| \frac{x^n}{n!} \right| = \frac{|x|^n}{n!} \le \frac{M^n}{n!} =: M_n.$$
+    <2>4. The numerical series $\sum_{n=0}^\infty M_n = \sum_{n=0}^\infty \frac{M^n}{n!} = e^M < \infty$ converges.
+    <2>5. By the Weierstrass $M$-test, the series $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly (and absolutely) on $I$.
 
+<1>2. Necessary condition for uniform convergence of series:
+    *Proof:*
+    <2>1. If a series of functions $\sum_{n=0}^\infty u_n(x)$ converges uniformly on a set $E$, then its sequence of partial sums $S_N(x) = \sum_{n=0}^N u_n(x)$ is uniformly Cauchy on $E$.
+    <2>2. In particular, the general term must converge uniformly to 0 on $E$:
+    $$\lim_{n \to \infty} \sup_{x \in E} |u_n(x)| = \lim_{n \to \infty} \sup_{x \in E} |S_n(x) - S_{n-1}(x)| = 0.$$
 
-- Set $f_N(x) = \sum_{n=1}^N {x^n \over n!}$.
-  - Then by definition, $f_N(x) \to f(x)$ pointwise on $\RR$.
+<1>3. Failure of uniform convergence on unbounded intervals:
+    *Proof:*
+    <2>1. Let $I \subseteq \mathbb{R}$ be an unbounded interval.
+    <2>2. Case 1 ($I$ is unbounded from above):
+        - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to +\infty$.
+        - For any fixed $n \ge 1$:
+        $$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \mathbb{N}} \frac{x_k^n}{n!} = \infty.$$
+        - Thus the terms $u_n(x) = \frac{x^n}{n!}$ do not tend to 0 uniformly on $I$.
+    <2>3. Case 2 ($I$ is unbounded from below):
+        - There exists a sequence $(x_k)_{k=1}^\infty \subset I$ such that $x_k \to -\infty$.
+        - For any fixed $n \ge 1$:
+        $$\sup_{x \in I} \left| \frac{x^n}{n!} \right| \ge \sup_{k \in \mathbb{N}} \frac{|x_k|^n}{n!} = \infty.$$
+        - Again, $\sup_{x \in I} |u_n(x)| = \infty$ for each $n \ge 1$.
+    <2>4. In either case, by the criterion in <1>2, the series does not converge uniformly on $I$.
 
-- **Claim**: $f_N$ converges on compact intervals
-  - For any compact interval $[-M, M]$, we have
-  \[
-  \norm{f_N(x) - f(x)}_\infty
-  &= \sup_{x\in [-M, M] } ~\abs{\sum_{n=N+1}^\infty {x^n \over {n!}} } \\
-  &\leq \sup_{x\in [-M, M] } ~\sum_{n=N+1}^\infty \abs{ {x^n \over {n!}} } \\
-  &\leq \sum_{n=N+1}^\infty {M^n \over n!} \\
-  &\leq \sum_{n=0}^\infty {M^n \over  {n!} } \quad\text{since all additional terms are positive} \\
-  &= e^M \\
-  &<\infty
-  ,\]
-    so $f_N \to f$ uniformly on $[-M, M]$ by the M-test.
-    - Note: we've used that this power series converges to $e^x$ pointwise everywhere.
-
-- This argument shows that $f$ converges on any bounded set.
-
-- **Claim**:
-$f_N$ does not converge uniformly on all of $\RR$.
-  - Uniformly convergent sums have uniformly decaying terms:
-  \[
-  \sum_{n\leq N} g_n \converges{N\to\infty}\too \sum g_n \text{ uniformly on } A \implies \norm{g_n}_{\infty, A} \da \sup_{x\in A} \abs{g_n(x)} \converges{n\to\infty}\too 0
-  .\]
-
-  - Take $B_N$ a ball of radius $N$ about 0, then for $N>1$, note that $x=N$ on the boundary and so
-  \[
-  \norm{x^k \over k!}_{\infty, B_N} = {N^k \over k!} \converges{N\to\infty}\too \infty
-  .\]
-- **Conclusion**: $f_N$ converges on any bounded $A\subseteq \RR$ but not on all of $\RR$.
+<1>4. Conclusion:
+    *Proof:*
+    The series converges uniformly on an interval $I$ if and only if $I$ is bounded.
 :::

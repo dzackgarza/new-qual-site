@@ -15,194 +15,94 @@ relations: []
 review: draft
 ---
 
-Let $p$ be a prime number.
-Let $A$ be a $p \times p$ matrix over a field $F$ with 1 in all
-entries except 0 on the main diagonal.
+::: problem
+Let $p$ be a prime number, and let $A \in M_p(F)$ be the $p \times p$ matrix with $0$ on the main diagonal and $1$ in all off-diagonal entries:
+$$
+A = \begin{pmatrix}
+0 & 1 & 1 & \cdots & 1 \\
+1 & 0 & 1 & \cdots & 1 \\
+1 & 1 & 0 & \cdots & 1 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & 1 & 1 & \cdots & 0
+\end{pmatrix}.
+$$
+Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis matrix $P$ putting $A$ in Jordan canonical form:
 
-Determine the Jordan canonical form (JCF) of $A$
+(a) When $F = \mathbb{Q}$,
 
-a. 
-When $F = \QQ$,
-
-b.
-When $F = \FF_p$.
-
-> Hint: In both cases, all eigenvalues lie in the ground field. In each case find a
-matrix $P$ such that $P\inv AP$ is in JCF.
-
-
-:::{.strategy}
-\envlist
-
-- Work with matrix of all ones instead.
-- Eyeball eigenvectors.
-- Coefficients in minimal polynomial: size of largest Jordan block
-- Dimension of eigenspace: number of Jordan blocks
-- We can always read off the *characteristic* polynomial from the spectrum.
+(b) When $F = \mathbb{F}_p$.
 :::
 
-:::{.concept}
-\envlist
+::: solution
+**Goal:** Compute the characteristic polynomial, eigenspaces, Jordan canonical forms, and transition matrices of $A$ over $\mathbb{Q}$ in (a) and over $\mathbb{F}_p$ in (b).
 
-- Todo
-:::
+<1>1. Relation to the all-ones matrix $J_p$:
+    *Proof:*
+    <2>1. Let $J_p \in M_p(F)$ denote the $p \times p$ all-ones matrix ($J_{i, j} = 1$ for all $1 \le i, j \le p$).
+    <2>2. Then $A = J_p - I_p$.
+    <2>3. For any scalar $\mu \in F$ and vector $v \in F^p$:
+    $$J_p v = \mu v \iff A v = (J_p - I_p) v = (\mu - 1) v.$$
+    <2>4. Thus the eigenvalues of $A$ are $\lambda = \mu - 1$, where $\mu$ is an eigenvalue of $J_p$, and the corresponding eigenspaces are identical.
 
-:::{.solution}
-**Proof of (a)**:
-Let $A$ be the matrix in the question, and $B$ be the matrix containing 1's in every entry.
+<1>2. Part (a): JCF and change-of-basis matrix over $\mathbb{Q}$.
+    *Proof:*
+    <2>1. Spectrum of $J_p$:
+        - For the vector $v_1 = (1, 1, \dots, 1)^t \in \mathbb{Q}^p$, $J_p v_1 = p v_1$, so $\mu_1 = p$ is an eigenvalue of $J_p$.
+        - For each $i \in \{1, \dots, p-1\}$, let $u_i = e_1 - e_{i+1} = (1, 0, \dots, -1, \dots, 0)^t$. Since the sum of entries of $u_i$ is $1 - 1 = 0$, $J_p u_i = 0 = 0 \cdot u_i$.
+        - The $p-1$ vectors $\{u_1, \dots, u_{p-1}\}$ are linearly independent: if $\sum_{i=1}^{p-1} c_i u_i = 0$, the $(i+1)$-st component is $-c_i = 0$ for each $i$.
+        - Thus $\mu_0 = 0$ is an eigenvalue of $J_p$ with geometric multiplicity $p - 1$.
+    <2>2. Eigenvalues and eigenspaces of $A$:
+        - The eigenvalue $\mu_1 = p$ corresponds to $\lambda_1 = p - 1$ for $A$ with eigenvector $v_1$.
+        - The eigenvalue $\mu_0 = 0$ corresponds to $\lambda_0 = -1$ for $A$ with $(p-1)$-dimensional eigenspace spanned by $\{u_1, \dots, u_{p-1}\}$.
+    <2>3. Diagonalizability:
+        - The sum of geometric multiplicities is $1 + (p - 1) = p = \dim \mathbb{Q}^p$.
+        - Therefore $A$ is diagonalizable over $\mathbb{Q}$, so its JCF is diagonal:
+        $$J_{\mathbb{Q}}(A) = \operatorname{diag}(p - 1, -1, -1, \dots, -1).$$
+    <2>4. Transformation matrix $P$:
+        - Define $P \in \operatorname{GL}_p(\mathbb{Q})$ with columns given by the eigenbasis:
+        $$P = \begin{pmatrix} v_1 & u_1 & u_2 & \cdots & u_{p-1} \end{pmatrix} = \begin{pmatrix}
+        1 & 1 & 1 & \cdots & 1 \\
+        1 & -1 & 0 & \cdots & 0 \\
+        1 & 0 & -1 & \cdots & 0 \\
+        \vdots & \vdots & \vdots & \ddots & \vdots \\
+        1 & 0 & 0 & \cdots & -1
+        \end{pmatrix}.$$
+        - Then $P^{-1} A P = J_{\mathbb{Q}}(A)$.
 
-- Noting that $B = A+I$, we have
-  \[
-  &B\vector x = \lambda \vector x \\
-  &\iff (A+I) \vector x = \lambda \vector x \\
-  &\iff A \vector x = (\lambda - 1) \vector x
-  ,\]
-    so we will find the eigenvalues of $B$ and subtract one from each.
+<1>3. Part (b): JCF and change-of-basis matrix over $\mathbb{F}_p$.
+    *Proof:*
+    <2>1. Characteristic polynomial over $\mathbb{F}_p$:
+        - In $\mathbb{F}_p$, $p - 1 \equiv -1 \pmod p$.
+        - Thus $\chi_A(x) = (x - (p - 1))(x + 1)^{p-1} \equiv (x + 1)^p \pmod p$.
+        - The only eigenvalue of $A$ in $\mathbb{F}_p$ is $\lambda = -1$, with algebraic multiplicity $p$.
+    <2>2. Nilpotent part $N = A - (-1) I_p = A + I_p = J_p$:
+        - Over $\mathbb{F}_p$, $N^2 = J_p^2 = p J_p \equiv 0 \in M_p(\mathbb{F}_p)$.
+        - Since $J_p \ne 0$, the minimal polynomial of $A$ is $m_A(x) = (x + 1)^2$.
+        - Thus the largest Jordan block has size 2.
+    <2>3. Geometric multiplicity:
+        - All rows of $J_p$ are identical and non-zero, so $\operatorname{rank}(J_p) = 1$.
+        - By Rank-Nullity, $\dim \ker(A + I_p) = \dim \ker(J_p) = p - 1$.
+        - There are exactly $p - 1$ Jordan blocks for $\lambda = -1$.
+    <2>4. Jordan block structure:
+        - Since the partition of $p$ into $p - 1$ parts with largest part 2 is uniquely $2 + 1 + 1 + \dots + 1$, the JCF over $\mathbb{F}_p$ consists of one $2 \times 2$ block and $p - 2$ blocks of size $1 \times 1$:
+        $$J_{\mathbb{F}_p}(A) = \begin{pmatrix}
+        -1 & 1 & 0 & \cdots & 0 \\
+        0 & -1 & 0 & \cdots & 0 \\
+        0 & 0 & -1 & \cdots & 0 \\
+        \vdots & \vdots & \vdots & \ddots & \vdots \\
+        0 & 0 & 0 & \cdots & -1
+        \end{pmatrix}.$$
+    <2>5. Jordan basis and matrix $P$:
+        - Choose the generalized eigenvector $w = e_1 = (1, 0, 0, \dots, 0)^t \in \mathbb{F}_p^p$.
+        - Apply $A + I = J_p$:
+        $$(A + I) w = J_p e_1 = (1, 1, \dots, 1)^t = v_1.$$
+        - Since $(A + I) v_1 = J_p v_1 = p v_1 \equiv 0$, the pair $\{v_1, w\}$ forms a Jordan chain of length 2:
+        $$A v_1 = -v_1, \qquad A w = v_1 - w.$$
+        - For the remaining $p - 2$ blocks of size 1, choose eigenvectors $u_1, \dots, u_{p-2}$ where $u_i = e_1 - e_{i+1}$.
+        - These $p$ vectors $\{v_1, w, u_1, u_2, \dots, u_{p-2}\}$ form a basis of $\mathbb{F}_p^p$.
+        - Setting $P = \begin{pmatrix} v_1 & w & u_1 & u_2 & \cdots & u_{p-2} \end{pmatrix} \in \operatorname{GL}_p(\mathbb{F}_p)$ satisfies $P^{-1} A P = J_{\mathbb{F}_p}(A)$.
 
-- Note that $B\vector v = \thevector{\sum v_i, \sum v_i, \cdots, \sum v_i}$, i.e. it has the effect of summing all of the entries of $\vector v$ and placing that sum in each component.
-
-- We proceed by finding $p$ eigenvectors and eigenvalues, since the JCF and minimal polynomials will involve eigenvalues and the transformation matrix will involve (generalized) eigenvectors.
-
-:::{.claim title="1"}
-Each vector of the form $\vector p_i \definedas \vector e_1 - \vector e_{i+1} = \thevector{1, 0, 0,\cdots, 0 -1, 0, \cdots, 0 }$ where $i\neq j$ is also an eigenvector with eigenvalues $\lambda_0 = 0$, and this gives $p-1$ linearly independent vectors spanning the eigenspace $E_{\lambda_0}$
-:::
-
-:::{.claim title="2"}
-$\vector v_1 = \thevector{1, 1, \cdots, 1}$ is an eigenvector with eigenvalue $\lambda_1 = p$.
-:::
-
-- Using that the eigenvalues of $A$ are $1+\lambda_i$ for $\lambda_i$ the above eigenvalues for $B$,
-\[
-\spec(B) \definedas \theset{(\lambda_i, m_i)} &=  \theset{(p, 1), (0, p-1)}  \implies \chi_{B}(x) = (x-p)x^{p-1} \\ 
-\implies \spec(A) &= \theset{(p-1,1), (-1, p-1) }  \implies \chi_{A}(x) = (x- p+1)(x+1)^{p-1} \\
-\]
-
-- The dimensions of eigenspaces are preserved, thus
-\[
-JCF_\QQ(A)
-=  J_{p-1}^{1} \oplus (p-1)J_{-1}^1
-=
-\left[\begin{array}{r|r|r|r|r|r}
-p-1 & 0 & 0 & \cdots & 0 & 0 \\
-\hline
-0& -1 & 0 & 0 & 0 & 0 \\ \hline
-0& 0 & -1 & 0 & 0 & 0 \\ \hline
-0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
-0& 0 & 0 & \cdots & -1 & 0 \\ \hline
-0& 0 & 0 & \cdots & 0 & -1 \\
-\end{array}\right]
-.\]
-
-- The matrix $P$ such that $A = PJP\inv$ will have columns the bases of the generalized eigenspaces.
-- In this case, the generalized eigenspaces are the usual eigenspaces, so
-\[
-P = [\vector v_1, \vector p_1, \cdots, \vector p_{p-1}] =
-\left[\begin{array}{rrrrrr}
-1 & 1 & 1 & 1 & 1 & 1  \\
-1 & -1 & 0 & 0 & 0 & 0 \\
-1 & 0 & -1 & 0 & 0 & 0 \\
-1 & 0 & 0 & -1 & 0 & 0 \\
-1 & \vdots & \vdots & \vdots & \ddots & \vdots\\
-1 & 0 & 0 & 0 & 0 & -1 \\
-\end{array}\right]
-.\]
-
-:::{.proof title="of claim 1"}
-\envlist
-
-- Compute $$B \vector p_i = \thevector{ 1 + 0 + \cdots + 0 + (-1) + 0 + \cdots + 0} = \thevector{0, 0, \cdots, 0}$$
-- So every $\vector p_i \in \ker(B)$, so they are eigenvectors with eigenvalue 0.
-- Since the first component is fixed and we have $p-1$ choices for where to place a $-1$, this yields $p-1$ possibilities for $\vector p_i$
-- These are linearly independent since the $(p-1)\times (p-1)$ matrix $\thevector{ \vector p_1^t, \cdots, \vector p_{p-1}^t}$ satisfies
-\[
-\det 
-\begin{bmatrix}
-1 & 1 & 1 & \cdots & 1\\
--1 & 0  & 0 & \cdots & 0\\
-0 & -1  & 0 & \cdots & 0\\
-0 & 0 & -1 & \cdots & 0\\
-\vdots & \vdots  & \vdots & \ddots & \vdots \\
-0 & 0  & 0 & \cdots & -1\\
-\end{bmatrix}
-&= (1) \cdot \det 
-\begin{bmatrix}
--1 & 0  & 0 & \cdots & 0\\
-0 & -1  & 0 & \cdots & 0\\
-0 & 0 & -1 & \cdots & 0\\
-\vdots & \vdots  & \vdots & \ddots & \vdots \\
-0 & 0  & 0 & \cdots & -1\\
-\end{bmatrix}
-\\
-&= (-1)^{p-2} \neq 0
-.\]
-
-where the first equality follows from expanding along the first row and noting this is the first minor, and every other minor contains a row of zeros.
-
-:::
-
-:::{.proof title="of claim 2"}
-\envlist
-
-- Compute $$B\vector v = \thevector{\sum_{i=1}^p 1, \sum_{i=1}^p 1, \cdots, \sum_{i=1}^p 1} = \thevector{p, p, \cdots, p} = p \thevector{1, 1, \cdots, 1} = p\vector{v}_1,$$ thus $\lambda_1 = p$
-- $\dim E_{\lambda_1} = 1$ since the eigenspaces are orthogonal and $E_{\lambda_0} \oplus E_{\lambda_1} \leq F^p$ is a subspace, so $p > \dim(E_{\lambda_0}) + \dim E_{\lambda_1} = p-1 + \dim E_{\lambda_1}$ and it isn't zero dimensional.
-
-:::
-
-**Proof of (b)**:
-
-For $F = \FF_p$, all eigenvalues/vectors still lie in $\FF_p$, but now $-1 = p-1$, making $(x-(p-1))(x+1)^{p-1} = (x+1)(x+1)^{p-1}$, so $\chi_{A, \FF_p}(x) = (x+1)^p$, and the Jordan blocks may merge.
-
-- A computation shows that $(A+I)^2 = pA = 0 \in M_p(\FF_p)$ and $(A+I) \neq 0$, so $\min_{A, \FF_p}(x) = (x+1)^2$.
-  - Thus the largest Jordan block corresponding to $\lambda = -1$ is of size 2
-- Can check that $\det(A) = \pm 1 \in \FF_p\units$, so the vectors $\vector e_1 - \vector e_i$ are still linearly independent and thus $\dim E_{-1} = p-1$
-  - So there are $p-1$ Jordan blocks for $\lambda = 0$.
-
-Summary:
-\[
-\min_{A, \FF_p}(x) &= (x+1)^2 \\
-\chi_{A, \FF_p}(x) &\equiv (x+1)^p \\
-\dim E_{-1} &= p-1
-.\]
-
-Thus
-\[
-JCF_{\FF_p}(A)
-=  J_{-1}^{2} \oplus (p-2)J_{-1}^1
-= \left[\begin{array}{rr|r|r|r|r}
--1 & 1 & 0 & \cdots & 0 & 0 \\
-0& -1 & 0 & 0 & 0 & 0 \\
-\hline
-0& 0 & -1 & 0 & 0 & 0 \\ \hline
-0& 0 & 0 & \ddots & \ddots & 0 \\ \hline
-0& 0 & 0 & \cdots & -1 & 0 \\ \hline
-0& 0 & 0 & \cdots & 0 & -1 \\
-\end{array}\right]
-.\]
-
-To obtain a basis for $E_{\lambda = 0}$, first note that the matrix $P = [\vector v_1, \vector p_1, \cdots , \vector p_{p-1}]$ from part (a) is singular over $\FF_p$, since
-\[
-\vector v_1 + \vector p_1 + \vector p_2 + \cdots + \vector p_{p-2}
-&= [p-1, 0, 0, \cdots, 0, 1] \\
-&= [-1, 0,0,\cdots, 0, 1] \\
-&= - \vector p_{p-1}
-.\]
-
-We still have a linearly independent set given by the first $p-1$ columns of $P$, so we can extend this to a basis by finding one linearly independent generalized eigenvector.
-
-Solving $(A-I\lambda)\vector x = \vector v_1$ is our only option (the others won't yield solutions).
-This amounts to solving $B\vector x = \vector v_1$, which imposes the condition $\sum x_i = 1$, so we can choose $\vector x = [1, 0, \cdots, 0]$.
-
-Thus
-\[
-P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
-\left[\begin{array}{rrrrrr}
-1 & 1 & 1 & 1 & 1 & 1  \\
-1 & 0 & -1 & 0 & 0 & 0 \\
-1 & 0 & 0 & -1 & 0 & 0 \\
-1 & \vdots & \vdots & \vdots & \ddots & \vdots \\
-1 & 0 & 0 & 0 & 0 & -1\\
-1 & 0 & 0 & 0 & 0 & 0 \\
-\end{array}\right]
-.\]
-
+<1>4. Conclusion:
+    *Proof:*
+    Over $\mathbb{Q}$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\mathbb{F}_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
 :::

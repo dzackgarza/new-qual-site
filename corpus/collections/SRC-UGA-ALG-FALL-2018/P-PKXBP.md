@@ -15,61 +15,47 @@ relations: []
 review: draft
 ---
 
-Let $G$ be a finite group whose order is divisible by a prime number $p$.
-Let $P$ be a normal $p\dash$subgroup of $G$
-(so $\abs P = p^c$ for some $c$).
+::: problem
+Let $G$ be a finite group whose order is divisible by a prime number $p$, and let $P \trianglelefteq G$ be a normal $p$-subgroup of $G$ with $|P| = p^c$ for some integer $c \ge 1$.
 
-a.
-Show that $P$ is contained in every Sylow $p\dash$subgroup of $G$.
+(a) Show that $P$ is contained in every Sylow $p$-subgroup of $G$.
 
-b.
-Let $M$ be a maximal proper subgroup of $G$. Show that either $P \subseteq M$ or $|G/M | = p^b$ for some $b \leq c$.
-
-:::{.concept}
-\envlist
-
-- Sylow 2: All Sylow $p\dash$subgroups are conjugate.
-- $\abs{HK} = \abs{H} \abs{K} / \abs{H\intersect K}$.
-- Lagrange's Theorem: $H\leq G \implies \abs{H} \divides \abs{G}$
-
+(b) Let $M$ be a maximal proper subgroup of $G$. Show that either $P \subseteq M$ or the index satisfies $[G : M] = p^b$ for some integer $1 \le b \le c$.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove that a normal $p$-subgroup is contained in the intersection of all Sylow $p$-subgroups in (a), and deduce that a maximal subgroup either contains $P$ or has $p$-power index in (b).
 
-:::{.proof title="of a"}
-\envlist
+<1>1. Part (a): $P$ is contained in every Sylow $p$-subgroup of $G$.
+    *Proof:*
+    <2>1. By the Sylow Theorems, $G$ contains at least one Sylow $p$-subgroup $Q_0 \in \operatorname{Syl}_p(G)$, and every $p$-subgroup of $G$ is contained in some Sylow $p$-subgroup.
+    <2>2. Since $P$ is a $p$-subgroup of $G$, choose a Sylow $p$-subgroup $Q_0 \in \operatorname{Syl}_p(G)$ such that $P \subseteq Q_0$.
+    <2>3. Let $Q \in \operatorname{Syl}_p(G)$ be an arbitrary Sylow $p$-subgroup.
+    <2>4. By the Second Sylow Theorem, all Sylow $p$-subgroups of $G$ are conjugate: there exists an element $g \in G$ such that $Q = g Q_0 g^{-1}$.
+    <2>5. Conjugating the inclusion $P \subseteq Q_0$ by $g$ gives:
+    $$g P g^{-1} \subseteq g Q_0 g^{-1} = Q.$$
+    <2>6. Since $P$ is normal in $G$, $g P g^{-1} = P$.
+    <2>7. Thus $P \subseteq Q$.
+    <2>8. Since $Q \in \operatorname{Syl}_p(G)$ was arbitrary, $P \subseteq \bigcap_{Q \in \operatorname{Syl}_p(G)} Q$.
 
-- Every $p\dash$subgroup is contained in some Sylow $p\dash$subgroup, so $P \subseteq S_p^i$ for some $S_p^i \in \mathrm{Syl}_p(G)$.
+<1>2. Part (b): Either $P \subseteq M$ or $[G : M] = p^b$ with $1 \le b \le c$.
+    *Proof:*
+    <2>1. Let $M < G$ be a maximal proper subgroup.
+    <2>2. If $P \subseteq M$, the first alternative holds.
+    <2>3. Suppose $P \not\subseteq M$.
+    <2>4. Subgroup property of the product: Since $P \trianglelefteq G$ is normal, the set product $M P = \{m p : m \in M, \, p \in P\}$ is a subgroup of $G$.
+    <2>5. Strict inclusion: Since $P \not\subseteq M$, there exists an element $p_0 \in P \setminus M$. Since $e \in M$, $p_0 = e p_0 \in M P$, which implies $M \subsetneq M P \le G$.
+    <2>6. Maximality of $M$: Since $M$ is a maximal proper subgroup and $M \subsetneq M P \le G$, we must have $M P = G$.
+    <2>7. Index calculation: By the Second Isomorphism Theorem for groups (or the product formula $|M P| = \frac{|M| |P|}{|M \cap P|}$):
+    $$[G : M] = [M P : M] = [P : M \cap P] = \frac{|P|}{|M \cap P|}.$$
+    <2>8. Prime power divisibility: The intersection $M \cap P$ is a subgroup of $P$. Since $|P| = p^c$, Lagrange's Theorem implies $|M \cap P| = p^a$ for some integer $0 \le a \le c$.
+    <2>9. Since $P \not\subseteq M$, $M \cap P \ne P$, so $a < c$.
+    <2>10. Setting $b = c - a$, we obtain
+    $$[G : M] = \frac{p^c}{p^a} = p^{c - a} = p^b,$$
+    where $1 \le b \le c$.
 
-- $P \normal G \iff gPg\inv = P$ for all $g\in G$.
-
-- Let $S_p^j$ be any other Sylow $p\dash$subgroup, 
-- Since Sylow $p\dash$subgroups are all conjugate $gS_p^i g\inv = S_p^j$ for *some* $g\in G$.
-
-- Then 
-\[
-P = gPg\inv \subseteq gS_p^i g\inv = S_p^j
-.\]
-
-:::
-
-:::{.proof title="of b"}
-\envlist
-
-- If $P$ is not contained in $M$, then $M < MP$ is a proper subgroup
-- By maximality of $M$, $MP = G$
-- Note that $M\intersect P \leq P$ and $\abs{P} = p^c$ implies $\abs{M\intersect P} = p^a$ for some $a\leq c$ by Lagrange
-- Then write
-  \[
-  G = MP
-  &\iff \abs{G} = \frac{\abs{M} \abs{P}}{\abs{M\intersect P}} \\ \\
-  &\iff { \abs{G} \over \abs{M}} = {\abs{P}  \over \abs{M\intersect P}} = {p^c \over p^a} = p^{c-a} \definedas p^b
-  \]
-
-  where $a\leq c \implies 0 \leq c-b \leq c$ so $0\leq b \leq c$.
-
-:::
-
+<1>3. Conclusion:
+    *Proof:*
+    $P$ lies in every Sylow $p$-subgroup, and any maximal subgroup not containing $P$ has index $p^b$ with $1 \le b \le c$.
 :::
 

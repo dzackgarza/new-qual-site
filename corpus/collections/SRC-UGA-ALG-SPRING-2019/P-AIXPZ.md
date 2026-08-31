@@ -14,73 +14,51 @@ relations: []
 review: draft
 ---
 
-Let $A$ be a square matrix over the complex numbers.
-Suppose that $A$ is nonsingular
-and that $A^{2019}$ is diagonalizable over $\CC$.
+::: problem
+Let $A \in M_m(\mathbb{C})$ be an $m \times m$ matrix over the complex numbers. Suppose that $A$ is non-singular ($\det A \ne 0$) and that $A^k$ is diagonalizable over $\mathbb{C}$ for some integer $k \ge 1$ (for instance, $k = 2019$).
 
-Show that $A$ is also diagonalizable over $\CC$.
-
-:::{.concept}
-\envlist
-
-- $A$ is diagonalizable iff $\min_A(x)$ is separable.
-  - See [further discussion here](https://math.stackexchange.com/questions/3027664/if-a-is-invertible-and-an-is-diagonalizable-then-a-is-diagonalizable).
-
+Show that $A$ is also diagonalizable over $\mathbb{C}$.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove that an invertible complex matrix whose power $A^k$ is diagonalizable must itself be diagonalizable, using the square-free criterion for minimal polynomials.
 
-:::{.claim}
-If $A \in \Gl(m, \FF)$ is invertible and $A^n/\FF$ is diagonalizable, then $A/\FF$ is diagonalizable.
-:::
+<1>1. Diagonalizability criterion and factorization of $m_{A^k}(x)$:
+    *Proof:*
+    <2>1. A matrix over $\mathbb{C}$ is diagonalizable if and only if its minimal polynomial is square-free (splits into distinct linear factors).
+    <2>2. Since $A^k$ is diagonalizable over $\mathbb{C}$, its minimal polynomial $m_{A^k}(x) \in \mathbb{C}[x]$ factors as
+    $$m_{A^k}(x) = \prod_{i=1}^r (x - \lambda_i),$$
+    where $\lambda_1, \dots, \lambda_r \in \mathbb{C}$ are the distinct eigenvalues of $A^k$.
 
+<1>2. Non-zero eigenvalues:
+    *Proof:*
+    <2>1. Since $A$ is non-singular, $\det(A) \ne 0$.
+    <2>2. By the multiplicative property of determinants, $\det(A^k) = (\det A)^k \ne 0$.
+    <2>3. Since the determinant is the product of all eigenvalues with multiplicity, $0$ is not an eigenvalue of $A^k$.
+    <2>4. Thus $\lambda_i \ne 0$ for each $i \in \{1, \dots, r\}$.
 
-:::{.proof title="of claim"}
-- Let $A \in \Gl(m, \FF)$. 
-- Since $A^n$ is diagonalizable, $\min_{A^n}(x) \in \FF[x]$ is separable and thus factors as a product of $m$ **distinct** linear factors:
-\[
-\min_{A^n}(x) = \prod_{i=1}^m (x-\lambda_i), \quad \min_{A^n}(A^n) = 0
-\]
+<1>3. Annihilating polynomial $P(x) = m_{A^k}(x^k)$:
+    *Proof:*
+    <2>1. Define the polynomial $P(x) \in \mathbb{C}[x]$ by
+    $$P(x) = m_{A^k}(x^k) = \prod_{i=1}^r (x^k - \lambda_i).$$
+    <2>2. Evaluating $P$ on $A$:
+    $$P(A) = m_{A^k}(A^k) = 0.$$
+    <2>3. Since $P(A) = 0$, the minimal polynomial $m_A(x)$ of $A$ divides $P(x)$ in $\mathbb{C}[x]$.
 
-  where $\theset{\lambda_i}_{i=1}^m \subset \FF$ are the **distinct** eigenvalues of $A^n$.
+<1>4. $P(x)$ has distinct roots in $\mathbb{C}$:
+    *Proof:*
+    <2>1. For each $i \in \{1, \dots, r\}$, since $\lambda_i \ne 0$, the polynomial $x^k - \lambda_i$ has derivative $k x^{k-1} \ne 0$. The only root of the derivative is $x = 0$, which is not a root of $x^k - \lambda_i$ because $\lambda_i \ne 0$.
+    <2>2. Thus $\gcd(x^k - \lambda_i, k x^{k-1}) = 1$, so each $x^k - \lambda_i$ has $k$ distinct roots in $\mathbb{C}$, given explicitly by
+    $$\mu_{i, j} = \lambda_i^{1/k} e^{2\pi i j / k} \quad \text{for } j \in \{0, 1, \dots, k-1\}.$$
+    <2>3. For $i \ne j$, the polynomials $x^k - \lambda_i$ and $x^k - \lambda_j$ share no roots: if $\alpha \in \mathbb{C}$ were a common root, then $\alpha^k = \lambda_i$ and $\alpha^k = \lambda_j$, implying $\lambda_i = \lambda_j$, a contradiction.
+    <2>4. Therefore, $P(x) = \prod_{i=1}^r (x^k - \lambda_i)$ has exactly $k r$ distinct roots in $\mathbb{C}$.
 
-- Moreover $A\in \GL(m,\FF) \implies A^n \in \GL(m,\FF)$: $A$ is invertible $\iff \det(A) = d \in \FF\units$, and so $\det(A^n) = \det(A)^n = d^n \in \FF\units$ using the fact that the determinant is a ring morphism $\det: \mat (m\times m) \to\FF$ and $\FF\units$ is closed under multiplication.
+<1>5. Diagonalizability of $A$:
+    *Proof:*
+    <2>1. Since $m_A(x)$ divides $P(x)$ and $P(x)$ is a product of distinct linear factors over $\mathbb{C}$, $m_A(x)$ is also a product of distinct linear factors over $\mathbb{C}$.
+    <2>2. By the criterion in <1>1, $A$ is diagonalizable over $\mathbb{C}$.
 
-- So $A^n$ is invertible, and thus has trivial kernel, and thus zero is not an eigenvalue, so $\lambda_i \neq 0$ for any $i$.
-
-- Since the $\lambda_i$ are distinct and nonzero, this implies $x^k$ is not a factor of $\mu_{A^n}(x)$ for any $k\geq 0$. 
-Thus the $m$ terms in the product correspond to precisely $m$ **distinct linear** factors.
-
-- We can now construct a polynomial that annihilates $A$, namely
-$$
-q_A(x) \definedas \min_{A^n}(x^n) = \prod_{i=1}^m (x^n-\lambda_i) \in \FF[x],
-$$
-
-  where we can note that $q_A(A) = \min_{A^n}(A^n) = 0$, and so $\min_A(x) \divides q_A(x)$ by minimality.
-
-
-:::{.claim}
-$q_A(x)$ has exactly $nm$ distinct linear factors in $\FFbar[x]$
-:::
-
-
-- This reduces to showing that no pair $x^n-\lambda_i, x^n-\lambda_j$ share a root.
-and that $x^n-\lambda_i$ does not have multiple roots.
-
-- For the first claim, we can factor
-  \[
-  x^n - \lambda_i = \prod_{k=1}^n (x - \lambda_i^{1\over n} e^{2\pi i k \over n}) \definedas \prod_{k=1}^n (x-\lambda^{1\over n} \zeta_n^k)
-  ,\]
-  where we now use the fact that $i\neq j \implies \lambda_i^{1\over n} \neq \lambda_j^{1\over n}$. 
-  Thus no term in the above product appears as a factor in $x^n - \lambda_j$ for $j\neq i$.
-
-- For the second claim, we can check that $\dd{}{x}\qty{x^n - \lambda_i} = nx^{n-1}\neq 0\in \FF$, and $\gcd(x^n-\lambda_i, nx^{n-1}) = 1$ since the latter term has only the roots $x=0$ with multiplicity $n-1$, whereas $\lambda_i\neq 0 \implies$ zero is not a root of $x^n-\lambda_i$.
-
-But now since $q_A(x)$ has exactly distinct linear factors in $\bar \FF[x]$ and $\min_A(x) \divides q_A(x)$, $\min_A(x) \in \FF[x]$ can only have distinct linear factors, and $A$ is thus diagonalizable over $\FF$.
-
-:::
-
-
-
+<1>6. Conclusion:
+    *Proof:*
+    $A$ is diagonalizable over $\mathbb{C}$.
 :::

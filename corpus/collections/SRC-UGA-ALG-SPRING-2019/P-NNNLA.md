@@ -14,85 +14,59 @@ relations: []
 review: draft
 ---
 
-Let $\zeta = e^{2\pi i/8}$.
+::: problem
+Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$.
 
-a.
-What is the degree of $\QQ(\zeta)/\QQ$?
+(a) What is the degree $[\mathbb{Q}(\zeta) : \mathbb{Q}]$?
 
-b.
-How many quadratic subfields of $\QQ(\zeta)$ are there?
+(b) How many quadratic subfields of $\mathbb{Q}(\zeta)$ are there? List them with justification.
 
-c.
-What is the degree of $\QQ(\zeta, \sqrt[4] 2)$ over $\QQ$?
-
-:::{.concept}
-\envlist
-
-- $\zeta_n \definedas e^{2\pi i \over n}$, and $\zeta_n^k$ is a primitive $n$th root of unity $\iff \gcd(n, k) = 1$
-  - In general, $\zeta_n^k$ is a primitive ${n \over \gcd(n, k)}$th root of unity.
-- $\deg \Phi_n(x) = \phi(n)$
-- $\phi(p^k) = p^k - p^{k-1} = p^{k-1}(p-1)$ 
-  - Proof: for a nontrivial gcd, the possibilities are 
-  \[
-  p, 2p, 3p, 4p, \cdots, p^{k-2}p, p^{k-1}p
-  .\]
-
-- $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(n)\units$
-
+(c) What is the degree $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}]$?
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Compute the cyclotomic extension degree in (a), classify its quadratic subfields via Galois correspondence in (b), and compute the field degree of $\mathbb{Q}(\zeta, \sqrt[4]{2})/\mathbb{Q}$ in (c).
 
-Let $K = \QQ(\zeta)$.
+<1>1. Part (a): Degree $[\mathbb{Q}(\zeta) : \mathbb{Q}] = 4$.
+    *Proof:*
+    <2>1. The element $\zeta = e^{2\pi i / 8}$ is a primitive $8$-th root of unity.
+    <2>2. The minimal polynomial of $\zeta$ over $\mathbb{Q}$ is the $8$-th cyclotomic polynomial:
+    $$\Phi_8(x) = \frac{x^8 - 1}{x^4 - 1} = x^4 + 1.$$
+    <2>3. $\Phi_8(x)$ is irreducible over $\mathbb{Q}$ (for instance, $\Phi_8(x+1) = x^4 + 4x^3 + 6x^2 + 4x + 2$ is irreducible by Eisenstein's criterion at $p = 2$).
+    <2>4. Therefore $[\mathbb{Q}(\zeta) : \mathbb{Q}] = \deg \Phi_8(x) = \varphi(8) = 8(1 - 1/2) = 4$.
 
-:::{.proof title="of a"}
-\envlist
+<1>2. Part (b): There are exactly 3 quadratic subfields of $\mathbb{Q}(\zeta)$.
+    *Proof:*
+    <2>1. The extension $\mathbb{Q}(\zeta)/\mathbb{Q}$ is Galois, with Galois group isomorphic to the unit group $(\mathbb{Z}/8\mathbb{Z})^\times$:
+    $$\operatorname{Gal}(\mathbb{Q}(\zeta)/\mathbb{Q}) \cong (\mathbb{Z}/8\mathbb{Z})^\times = \{1, 3, 5, 7\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z},$$
+    which is the Klein four-group $V_4$.
+    <2>2. By the Fundamental Theorem of Galois Theory, intermediate fields $E$ with $[E : \mathbb{Q}] = 2$ correspond bijectively to subgroups $H \le \operatorname{Gal}(\mathbb{Q}(\zeta)/\mathbb{Q})$ of index 2 (which are subgroups of order 2).
+    <2>3. The group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ has exactly three subgroups of order 2:
+    $$H_1 = \langle 3 \rangle, \qquad H_2 = \langle 5 \rangle, \qquad H_3 = \langle 7 \rangle.$$
+    <2>4. Compute the fixed fields:
+        - Note $\zeta = \cos(\pi/4) + i \sin(\pi/4) = \frac{\sqrt{2}}{2}(1 + i)$.
+        - Then $\zeta^2 = i$, so $\mathbb{Q}(i) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
+        - $\zeta + \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) + \frac{\sqrt{2}}{2}(1 - i) = \sqrt{2}$, so $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
+        - $\zeta - \zeta^{-1} = \frac{\sqrt{2}}{2}(1 + i) - \frac{\sqrt{2}}{2}(1 - i) = i \sqrt{2} = \sqrt{-2}$, so $\mathbb{Q}(\sqrt{-2}) \subset \mathbb{Q}(\zeta)$ is a quadratic subfield.
+    <2>5. The three distinct quadratic subfields are $\mathbb{Q}(i)$, $\mathbb{Q}(\sqrt{2})$, and $\mathbb{Q}(\sqrt{-2})$.
 
-- $\zeta \definedas e^{2\pi i / 8}$ is a primitive $8$th root of unity
-- The minimal polynomial of a **primitive** $n$th root of unity is the $n$th cyclotomic polynomial $\Phi_n$
-- The degree of the field extension is the degree of $\Phi_8$, which is
-\[
-\phi(8) = \phi(2^3) = 2^{3-1} \cdot (2-1) = 4
-.\]
-- So $[\QQ(\zeta): \QQ] = 4$.
+<1>3. Part (c): $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = 8$.
+    *Proof:*
+    <2>1. From <1>2, $\mathbb{Q}(\zeta) = \mathbb{Q}(i, \sqrt{2})$.
+    <2>2. Since $(\sqrt[4]{2})^2 = \sqrt{2}$, we have $\mathbb{Q}(\sqrt{2}) \subseteq \mathbb{Q}(\sqrt[4]{2})$.
+    <2>3. Therefore, adjoining $\sqrt[4]{2}$ to $\mathbb{Q}(\zeta) = \mathbb{Q}(i, \sqrt{2})$ gives
+    $$\mathbb{Q}(\zeta, \sqrt[4]{2}) = \mathbb{Q}(i, \sqrt{2}, \sqrt[4]{2}) = \mathbb{Q}(i, \sqrt[4]{2}).$$
+    <2>4. The polynomial $x^4 - 2 \in \mathbb{Q}[x]$ is irreducible over $\mathbb{Q}$ by Eisenstein at $p = 2$, so $[\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 4$.
+    <2>5. The field $\mathbb{Q}(\sqrt[4]{2})$ is a subfield of $\mathbb{R}$.
+    <2>6. Since $i \notin \mathbb{R}$, $i \notin \mathbb{Q}(\sqrt[4]{2})$.
+    <2>7. The minimal polynomial of $i$ over $\mathbb{Q}(\sqrt[4]{2})$ is $x^2 + 1$, which has degree 2.
+    <2>8. Thus $[\mathbb{Q}(i, \sqrt[4]{2}) : \mathbb{Q}(\sqrt[4]{2})] = 2$.
+    <2>9. By the Tower Law of extension degrees:
+    $$[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = [\mathbb{Q}(i, \sqrt[4]{2}) : \mathbb{Q}(\sqrt[4]{2})] \cdot [\mathbb{Q}(\sqrt[4]{2}) : \mathbb{Q}] = 2 \cdot 4 = 8.$$
 
-:::
-
-:::{.proof title="of b"}
-\envlist
-
-- $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(2) \cross \ZZ/(2)$, the Klein four-group.
-  It is **not** $\ZZ/(4)$: every element of $\ZZ/(8)\units = \ts{1,3,5,7}$ squares to $1$, so there is no element of order $4$.
-- The Klein four-group has exactly three subgroups of index 2.
-- Thus there are exactly **three** intermediate fields of degree 2, namely $\QQ(i)$, $\QQ(\sqrt 2)$ and $\QQ(\sqrt{-2})$.
-
-:::
-
-:::{.proof title="of c"}
-\envlist
-
-- Let $L = \QQ(\zeta, \sqrt[4] 2)$.
-
-- Note $\QQ(\zeta) = \QQ(i, \sqrt 2)$
-  - $\QQ(i, \sqrt{2})\subseteq \QQ(\zeta)$
-    - $\zeta_8^2 = i$, and $\zeta_8 = \sqrt{2}\inv + i\sqrt{2}\inv$ so $\zeta_8 + \zeta_8 \inv = 2/\sqrt{2} = \sqrt{2}$.
-  - $\QQ(\zeta) \subseteq \QQ(i, \sqrt{2})$: 
-    - $\zeta = e^{2\pi i / 8} = \cos(\pi/4) + i\sin(\pi/4) = {\sqrt 2 \over 2}\qty{1+i}$.
-
-- Thus $L = \QQ(i, \sqrt{2})(\sqrt[4]{2}) = \QQ(i, \sqrt 2, \sqrt[4] 2) = \QQ(i, \sqrt[4]{2})$.
-  - Uses the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$ since $\sqrt[4]{2}^2 = \sqrt{2}$ 
-
-- Conclude
-\[
-[L: \QQ] = [L: \QQ(\sqrt[4] 2)] ~[\QQ(\sqrt[4] 2): \QQ] = 2 \cdot 4 = 8
-\]
-  using the fact that the minimal polynomial of $i$ over any subfield of $\RR$ is always $x^2 + 1$, so $\min_{\QQ(\sqrt[4] 2)}(i) = x^2 + 1$ which is degree 2.
-
-
-:::
-
-
+<1>4. Conclusion:
+    *Proof:*
+    $[\mathbb{Q}(\zeta) : \mathbb{Q}] = 4$, there are 3 quadratic subfields, and $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = 8$.
 :::
 
 

@@ -15,135 +15,68 @@ relations: []
 review: draft
 ---
 
-Let $\varphi$ be a compactly supported smooth function that vanishes outside of an interval $[-N, N]$ such that $\int _{\RR} \varphi(x) \, dx = 1$.
+::: problem
+Let $\varphi \in C_c^\infty(\mathbb{R})$ be a smooth, compactly supported function supported in $[-N, N]$ such that $\int_\mathbb{R} \varphi(x) \, dx = 1$. For $f \in L^1(\mathbb{R})$ and $j \in \mathbb{N}$, define the mollifier sequence
+$$
+K_j(x) = j \varphi(j x), \qquad (f * K_j)(x) = \int_\mathbb{R} f(x - y) K_j(y) \, dy.
+$$
+Prove:
 
-For $f\in L^1(\RR)$, define
-\[
-K_{j}(x) \definedas j \varphi(j x), 
-\qquad 
-f \ast K_{j}(x) \definedas \int_{\RR} f(x-y) K_{j}(y) \, dy
-\]
-and prove the following:
+(a) Each $f * K_j$ is smooth ($C^\infty(\mathbb{R})$), and if $f$ is compactly supported, then $f * K_j \in C_c^\infty(\mathbb{R})$.
 
-1. Each $f\ast K_j$ is smooth and compactly supported.
-
-\[
-\lim _{j \to \infty} \norm{f * K_{j}-f}_{1} = 0
-\]
-
-> Hint:
-\[
-\lim _{y \to 0} \int _{\RR} |f(x-y)-f(x)| dy = 0
-\]
-
-:::{.solution}
-:::{.concept}
-- ?
+(b) $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
 :::
 
-**Part a**
+::: solution
+**Goal:** Prove that convolution with a smooth compactly supported mollifier yields smooth functions in (a), and that $K_j$ acts as an approximate identity in $L^1(\mathbb{R})$ in (b).
 
-**Lemma:** If $\varphi \in C_c^1$, then
-$(f \ast \varphi)' = f \ast \varphi'$ almost everywhere.
+<1>1. Part (a): Smoothness and support of $f * K_j$.
+    *Proof:*
+    <2>1. Change of variables in convolution:
+        For any $x \in \mathbb{R}$, by substitution $y = x - t$:
+        $$(f * K_j)(x) = \int_\mathbb{R} f(y) K_j(x - y) \, dy = \int_\mathbb{R} f(y) j \varphi(j(x - y)) \, dy.$$
+    <2>2. First derivative of $f * K_j$:
+        For $h \ne 0$, the difference quotient is
+        $$\frac{(f * K_j)(x + h) - (f * K_j)(x)}{h} = \int_\mathbb{R} f(y) \left( \frac{K_j(x + h - y) - K_j(x - y)}{h} \right) dy.$$
+        By the Mean Value Theorem, for each $x, y, h$, there exists $\xi$ between $x - y$ and $x + h - y$ such that
+        $$\left| \frac{K_j(x + h - y) - K_j(x - y)}{h} \right| = |K_j'(\xi)| = j^2 |\varphi'(j \xi)| \le j^2 \|\varphi'\|_\infty.$$
+        Since $\varphi \in C_c^\infty(\mathbb{R})$, $\|\varphi'\|_\infty < \infty$, so the integrand is dominated by the integrable function $j^2 \|\varphi'\|_\infty |f(y)| \in L^1(\mathbb{R})$.
+        By the Dominated Convergence Theorem:
+        $$(f * K_j)'(x) = \int_\mathbb{R} f(y) K_j'(x - y) \, dy = (f * K_j')(x).$$
+    <2>3. Higher derivatives ($C^\infty$ property):
+        By induction, for every $m \in \mathbb{N}$, the $m$-th derivative exists and satisfies
+        $$(f * K_j)^{(m)}(x) = (f * K_j^{(m)})(x) = \int_\mathbb{R} f(y) j^{m+1} \varphi^{(m)}(j(x - y)) \, dy.$$
+        Since $\varphi^{(m)} \in C_c^\infty(\mathbb{R})$ is bounded and uniformly continuous, each $(f * K_j)^{(m)}$ is continuous on $\mathbb{R}$. Thus $f * K_j \in C^\infty(\mathbb{R})$.
+    <2>4. Compact support when $f$ is compactly supported:
+        If $\operatorname{supp}(f) \subseteq [-M, M]$, then since $\operatorname{supp}(K_j) \subseteq [-N/j, N/j]$, the convolution vanishes whenever $x - y \notin [-N/j, N/j]$ for all $y \in [-M, M]$.
+        Thus $\operatorname{supp}(f * K_j) \subseteq \operatorname{supp}(f) + \operatorname{supp}(K_j) \subseteq [-M - N/j, M + N/j]$, which is compact.
 
-*Silly Proof:*
+<1>2. Part (b): $L^1$ convergence $\lim_{j \to \infty} \|f * K_j - f\|_{L^1} = 0$.
+    *Proof:*
+    <2>1. Normalization identity:
+        Using $\int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} j \varphi(jy) \, dy = \int_\mathbb{R} \varphi(u) \, du = 1$, we write
+        $$f(x) = f(x) \int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} f(x) K_j(y) \, dy.$$
+    <2>2. Integral representation of error:
+        $$(f * K_j)(x) - f(x) = \int_\mathbb{R} (f(x - y) - f(x)) K_j(y) \, dy.$$
+    <2>3. Fubini-Tonelli bound:
+        Taking the $L^1$ norm:
+        $$\|f * K_j - f\|_{L^1} = \int_\mathbb{R} \left| \int_\mathbb{R} (f(x - y) - f(x)) K_j(y) \, dy \right| dx \le \int_\mathbb{R} \int_\mathbb{R} |f(x - y) - f(x)| |K_j(y)| \, dy \, dx.$$
+        Applying Tonelli's Theorem:
+        $$\|f * K_j - f\|_{L^1} \le \int_\mathbb{R} |K_j(y)| \left( \int_\mathbb{R} |f(x - y) - f(x)| \, dx \right) dy = \int_\mathbb{R} |K_j(y)| \|\tau_y f - f\|_{L^1} \, dy,$$
+        where $\tau_y f(x) = f(x - y)$.
+    <2>4. Change of variables $u = j y$:
+        Since $K_j(y) = j \varphi(jy)$, substituting $u = j y$ ($dy = \frac{1}{j} du$) yields
+        $$\|f * K_j - f\|_{L^1} \le \int_\mathbb{R} |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du = \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du.$$
+    <2>5. Dominated Convergence Theorem:
+        - For each fixed $u \in [-N, N]$, as $j \to \infty$, $u/j \to 0$. By the $L^1$ continuity of translations, $\lim_{j \to \infty} \|\tau_{u/j} f - f\|_{L^1} = 0$.
+        - The integrand is dominated on $[-N, N]$ by
+        $$|\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \le 2 \|f\|_{L^1} |\varphi(u)| \in L^1([-N, N]).$$
+        - By the Dominated Convergence Theorem:
+        $$\lim_{j \to \infty} \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du = \int_{-N}^N |\varphi(u)| \cdot 0 \, du = 0.$$
+    <2>6. Therefore $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
 
-\[
-\mathcal{F}(
-	(f \ast \varphi)'
- )
-&= 2\pi i \xi ~\mathcal{F}(f\ast \varphi) \\
-&= 2\pi i \xi ~ \mathcal{F}(f) ~ \mathcal{F}(\varphi) \\
-&= \mathcal{F}(f) \cdot \left( 2\pi i \xi ~\mathcal{F}(\varphi)\right) \\
-&= \mathcal{F}(f) \cdot \mathcal{F}(\varphi') \\
-&= \mathcal{F}(f\ast \varphi')
-.\]
-
-*Actual proof*:
-
-\[
-(f\ast \varphi)'(x)
-&= (\varphi\ast f)'(x) \\
-&= \lim_{h\to 0} \frac{(\varphi\ast f)'(x+h) - (\varphi\ast f)'(x)}{h} \\
-&= \lim_{h\to 0} \int \frac{\varphi(x + h - y) - \varphi(x - y)}{h} f(y) \\
-&\overset{DCT}=  \int \lim_{h\to 0} \frac{\varphi(x + h - y) - \varphi(x - y)}{h} f(y) \\
-&= \int \varphi'(x-y) f(y) \\
-&= (\varphi' \ast f)(x) \\
-&= (f \ast \varphi')(x)
-.\]
- 
-
- To see that the DCT is justified, we can apply the MVT on the interval $[0, h]$ to $f$ to obtain
-
-\[
-\frac{\varphi(x + h - y) - \varphi(x - y)}{h}
-&= \varphi'(c) \quad c\in [0, h]
-,\]
- 
-and since $\varphi'$ is continuous and compactly supported, $\varphi'$ is bounded by some $M < \infty$ by the extreme value theorem and thus
-\[
-\int \abs{\frac{\varphi(x + h - y) - \varphi(x - y)}{h} f(y)} 
-&= \int \abs{\varphi'(c) f(y)} \\
-&\leq \int \abs{M}\abs{f} \\
-&= \abs{M} \int \abs{f} < \infty
-,\]
-
-since $f\in L^1$ by assumption, so we can take $g\definedas \abs{M} \abs{f}$ as the dominating function.
-
-Applying this theorem infinitely many times shows that $f\ast \varphi$ is smooth.
-
-To see that $f\ast \varphi$ is compactly supported, approximate $f$ by a *continuous* compactly supported function $h$, so $\norm{h - f}_1 \converges{L^1}\to 0$. 
-
-Now let $g_x(y) = \varphi(x-y)$, and note that $\mathrm{supp}(g) = x - \mathrm{supp}(\varphi)$ which is still compact.
- 
-But since $\mathrm{supp}(h)$ is bounded, there is some $N$ such that 
-$$
-\abs{x} > N \implies A_x\definedas \mathrm{supp}(h) \intersect \mathrm{supp}(g_x) = \emptyset
-$$
-
-and thus 
-\[
-(h\ast \varphi)(x) 
-&= \int_\RR \varphi(x-y) h(y)~dy \\
-&= \int_{A_x} g_x(y) h(y) \\
-&= 0
-,\]
-
-so $\theset{x \suchthat f\ast g(x) = 0}$ is open, and its complement is closed and bounded and thus compact.
-
-**Part b**
-
-\[
-\norm{f\ast K_j - f}_1 
-&= \int \abs{\int f(x-y) K_j(y) ~dy  - f(x)}~dx \\
-&= \int \abs{\int f(x-y) K_j(y) ~dy  - \int f(x) K_j(y) ~ dy}~dx \\
-&= \int \abs{\int ( f(x-y) - f(x) ) K_j(y) ~dy } ~dx \\
-&\leq \int \int \abs{(f(x-y) - f(x))} \cdot \abs{K_j(y)} ~ dy~dx \\
-&\overset{FT}= \int \int \abs{(f(x-y) - f(x))} \cdot \abs{K_j(y)} \mathbf{~ dx~dy}\\
-&= \int \abs{K_j(y)} \left( \int \abs{(f(x-y) - f(x))}  ~ dx\right) ~dy \\
-&= \int \abs{K_j(y)} \cdot \norm{f - \tau_y f}_1 ~dy
-.\]
-
-We now split the integral up into pieces. 
-
-1. Chose $\delta$ small enough such that
- $\abs{y} < \delta \implies \norm{f - \tau_y f}_1 < \varepsilon$ by continuity of translation in $L^1$, and
-
-2. Since $\varphi$ is compactly supported, choose $J$ large enough such that
-$$
-j > J \implies \int_{\abs{y} \geq \delta} \abs{K_j(y)} ~dy 
-= \int_{\abs{y} \geq \delta} \abs{j\varphi(jy)} = 0
-$$
-
-Then
-\[
-\norm{f\ast K_j - f}_1 
-&\leq 
-\int \abs{K_j(y)} \cdot \norm{f - \tau_y f}_1 ~dy \\
-&= \int_{\abs y < \delta} \abs{K_j(y)} \cdot \norm{f - \tau_y f}_1 ~dy+ \int_{\abs y \geq  \delta} \abs{K_j(y)} \cdot \norm{f - \tau_y f}_1 ~dy \\
-&= \varepsilon \int_{\abs y \geq  \delta} \abs{K_j(y)} + 0 \\
-&\leq \varepsilon(1) \to 0
-.\]
-
+<1>3. Conclusion:
+    *Proof:*
+    $f * K_j \in C^\infty(\mathbb{R})$, with compact support if $f$ has compact support, and $f * K_j \to f$ in $L^1(\mathbb{R})$.
 :::
 
