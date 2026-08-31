@@ -15,96 +15,76 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-Suppose $\varphi\in L^1(\RR)$ with 
-\[  
-\int \varphi(x) \, dx = \alpha
-.\]
-For each $\delta > 0$ and $f\in L^1(\RR)$, define
-\[  
-A_\delta f(x) \da \int f(x-y) \delta^{-1} \varphi\qty{\delta^{-1} y}\, dy
-.\]
+::: problem
+Suppose $\varphi \in L^1(\mathbb{R})$ with
+$$
+\int_{\mathbb{R}} \varphi(x) \, dx = \alpha.
+$$
+For each $\delta > 0$ and $f \in L^1(\mathbb{R})$, define
+$$
+A_\delta f(x) = \int_{\mathbb{R}} f(x-y) \delta^{-1} \varphi(\delta^{-1} y) \, dy.
+$$
 
-a.
-Prove that for all $\delta > 0$,
-\[  
-\norm{A_\delta f}_1 \leq \norm{\varphi}_1 \norm{f}_1
-.\]
+(a) Prove that for all $\delta > 0$,
+$$
+\|A_\delta f\|_{L^1} \le \|\varphi\|_{L^1} \|f\|_{L^1}.
+$$
 
-b.
-Prove that 
-\[  
-A_\delta f \to \alpha f \text{ in } L^1(\RR) \qtext{as} \delta\to 0^+
-.\]
+(b) Prove that
+$$
+A_\delta f \to \alpha f \quad \text{in } L^1(\mathbb{R}) \text{ as } \delta \to 0^+.
+$$
 
-> Hint: you may use without proof the fact that for all $f\in L^1(\RR)$,
-\[  
-\lim_{y\to 0} \int_\RR \abs{f(x-y) - f(x)}\, dx = 0
-.\]
-
+*(You may use without proof the fact that for all $f \in L^1(\mathbb{R})$, $\lim_{y \to 0} \int_{\mathbb{R}} |f(x-y) - f(x)| \, dx = 0$.)*
 :::
 
-:::{.remark}
-See Folland 8.14.
-:::
+::: solution
+**Goal:** Prove the boundedness of the family of convolution operators $A_\delta$ on $L^1(\mathbb{R})$ via Tonelli's Theorem in (a), and prove $L^1$ convergence to $\alpha f$ via the Dominated Convergence Theorem on translations in (b).
 
-:::{.solution title="Part 1"}
-This is a direct application of Fubini-Tonelli:
-\[
-\norm{A_\delta f} 
-&\da \int \abs{ \int f(x-y)\delta\inv \varphi(\delta\inv y)\dy} \dx\\
-&\leq \int \int \abs{f(x-y)\delta\inv \varphi(\delta\inv y)} \dy \dx\\
-&\equalsbecause{FT} \int \int \abs{ f(x-y) } \cdot \abs{\delta\inv \varphi(\delta\inv y)} \dx\dy\\
-&= \int \abs{ \delta\inv \varphi(\delta\inv y) } \qty{ \int \abs{ f(x-y) }\dx } \dy \\
-&= \int \abs{ \delta\inv \varphi(\delta\inv y)}\cdot  \norm{f} \dy \\
-&= \norm{f} \cdot \int \abs{ \delta\inv \varphi(\delta\inv y) }  \dy \\
-&= \norm{f} \cdot \norm{\varphi} 
-.\]
-Here we've used translation and dilation invariance of the Lebesgue integral.
+<1>1. Part (a): Boundedness of $A_\delta f$ in $L^1(\mathbb{R})$.
+    *Proof:*
+    <2>1. Define $\varphi_\delta(y) = \delta^{-1} \varphi(\delta^{-1} y)$.
+    <2>2. By the change of variables $u = \delta^{-1} y$ ($du = \delta^{-1} dy$):
+    $$\|\varphi_\delta\|_{L^1} = \int_{\mathbb{R}} \delta^{-1} |\varphi(\delta^{-1} y)| \, dy = \int_{\mathbb{R}} |\varphi(u)| \, du = \|\varphi\|_{L^1}.$$
+    <2>3. Apply the integral Minkowski inequality (or Tonelli's Theorem to the non-negative product):
+    $$\|A_\delta f\|_{L^1} = \int_{\mathbb{R}} \left| \int_{\mathbb{R}} f(x-y) \varphi_\delta(y) \, dy \right| dx \le \int_{\mathbb{R}} \int_{\mathbb{R}} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx.$$
+    <2>4. By Tonelli's Theorem, interchange the order of integration:
+    $$\int_{\mathbb{R}} \int_{\mathbb{R}} |f(x-y)| |\varphi_\delta(y)| \, dy \, dx = \int_{\mathbb{R}} |\varphi_\delta(y)| \left( \int_{\mathbb{R}} |f(x-y)| \, dx \right) dy.$$
+    <2>5. By translation invariance of Lebesgue measure, $\int_{\mathbb{R}} |f(x-y)| \, dx = \|f\|_{L^1}$ for every $y \in \mathbb{R}$.
+    <2>6. Thus:
+    $$\|A_\delta f\|_{L^1} \le \|f\|_{L^1} \int_{\mathbb{R}} |\varphi_\delta(y)| \, dy = \|f\|_{L^1} \|\varphi_\delta\|_{L^1} = \|\varphi\|_{L^1} \|f\|_{L^1}.$$
 
-:::
+<1>2. Part (b): Representation of the error $A_\delta f(x) - \alpha f(x)$.
+    *Proof:*
+    <2>1. By change of variables, $\int_{\mathbb{R}} \varphi_\delta(y) \, dy = \int_{\mathbb{R}} \delta^{-1} \varphi(\delta^{-1} y) \, dy = \int_{\mathbb{R}} \varphi(u) \, du = \alpha$.
+    <2>2. Multiply this identity by $f(x)$:
+    $$\alpha f(x) = \int_{\mathbb{R}} f(x) \varphi_\delta(y) \, dy.$$
+    <2>3. Subtract this from $A_\delta f(x)$:
+    $$A_\delta f(x) - \alpha f(x) = \int_{\mathbb{R}} (f(x-y) - f(x)) \delta^{-1} \varphi(\delta^{-1} y) \, dy.$$
+    <2>4. Substitute $y = \delta z$ ($dy = \delta dz$):
+    $$A_\delta f(x) - \alpha f(x) = \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz.$$
 
-:::{.solution title="Part 2" .foldopen}
-Write $\phi_\delta(y) \da \delta\inv\phi(\delta\inv y)$, then
-\[
-\norm{A_\delta f - \alpha f}_1
-&\da \int \abs{A_\delta f(x) - \alpha f(x) } \dx \\
-&= \int \abs{ \int {f(x-y) \phi_\delta(y) } \dy - \alpha f(x) }\dx \\
-&= \int \abs{ \int { \tau_y f (x) \phi_\delta(y) } \dy - \int f(x) \phi_\delta(y) \dy }\dx \\
-&\leq \int\int \abs{\tau_y f(x) - f(x)}\cdot \abs{\phi_\delta(y)} \dy\dx\\
-&= \int\int \abs{\tau_y f(x) - f(x)}\cdot \abs{\phi_\delta(y)} \dx\dy \\
-&= \int\abs{\phi_\delta(y)}\cdot \norm{\tau_yf - f}_1 \dy
-,\]
-where the interchange of integration order is justified by Tonelli since the integrands are positive.
-The goal is to now make this small when $\delta$ is small.
+<1>3. Part (b): $L^1$ norm estimate and Dominated Convergence Theorem.
+    *Proof:*
+    <2>1. Take the $L^1$ norm:
+    $$\|A_\delta f - \alpha f\|_{L^1} = \int_{\mathbb{R}} \left| \int_{\mathbb{R}} (f(x - \delta z) - f(x)) \varphi(z) \, dz \right| dx \le \int_{\mathbb{R}} \int_{\mathbb{R}} |f(x - \delta z) - f(x)| |\varphi(z)| \, dz \, dx.$$
+    <2>2. By Tonelli's Theorem, interchange the order of integration:
+    $$\|A_\delta f - \alpha f\|_{L^1} \le \int_{\mathbb{R}} |\varphi(z)| \left( \int_{\mathbb{R}} |f(x - \delta z) - f(x)| \, dx \right) dz = \int_{\mathbb{R}} |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \, dz,$$
+    where $\tau_h f(x) = f(x - h)$.
+    <2>3. Pointwise convergence:
+        - For each fixed $z \in \mathbb{R}$, as $\delta \to 0^+$, the shift $h = \delta z \to 0$.
+        - By $L^1$-continuity of translations:
+        $$\lim_{\delta \to 0^+} \|\tau_{\delta z} f - f\|_{L^1} = 0 \implies \lim_{\delta \to 0^+} |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} = 0.$$
+    <2>4. Domination:
+        - By the triangle inequality, $\|\tau_{\delta z} f - f\|_{L^1} \le \|\tau_{\delta z} f\|_{L^1} + \|f\|_{L^1} = 2 \|f\|_{L^1}$.
+        - Thus for all $\delta > 0$ and all $z \in \mathbb{R}$:
+        $$|\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \le 2 \|f\|_{L^1} |\varphi(z)| =: g(z).$$
+        - Since $\varphi \in L^1(\mathbb{R})$, $g \in L^1(\mathbb{R})$.
+    <2>5. By the Dominated Convergence Theorem:
+    $$\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} \le \int_{\mathbb{R}} \lim_{\delta \to 0^+} \left( |\varphi(z)| \|\tau_{\delta z} f - f\|_{L^1} \right) dz = \int_{\mathbb{R}} 0 \, dz = 0.$$
 
-One way to do this immediately: make a change of variables $y=tz$ to get
-\[
-\norm{A_\delta f - \alpha f}_1 \leq\int {\abs{\phi(z)}} \norm{\tau_{tz}f -f}_1 \dz
-,\]
-use that $\norm{\tau_{tz} f- f}_1 \leq 2\norm{f}_1 < \infty$ by the triangle inequality and apply the DCT:
-\[
-\lim_{t\to 0}
-\int {\abs{\phi(z)}} \cdot \norm{\tau_{tz}f -f}_1 \dz =
-\int {\abs{\phi(z)}} \lim_{t\to 0} \norm{\tau_{tz}f -f}_1 \dz = 0
-.\]
-
-More directly, use continuity in $L^1$ (as per the hint) to pick a $h>0$ such that \[
-\norm{\tau_y f - f}< \eps \quad \text{ for } y\in A \da \ts{y\st \abs{y} \leq h}
-.\]
-Now choose $\delta_0 \gg 1$ large enough so that 
-\[
-\int_{A^c}\abs{\phi_\delta(y)}\dy < \eps \quad \text{ for all }\delta > \delta_0
-.\]
-Now
-\[
-\int_\RR \abs{\phi_\delta(y)}\cdot \norm{\tau_yf - f}_1 \dy
-&=
-\int_A \abs{\phi_\delta(y)}\cdot \norm{\tau_yf - f}_1 \dy + \int_{A^c} \abs{\phi_\delta(y)}\cdot \norm{\tau_yf - f}_1 \dy \\
-&\leq 
-\int_A \abs{\phi_\delta(y)}\cdot \eps \dy + \int_{A^c} \abs{\phi_\delta(y)} \cdot 2\norm{f}_1 \dy \\
-&\leq \eps\norm{\phi_\delta}_1 + 2\eps\norm{f}_1 \\
-&\too 0
-.\]
+<1>4. Conclusion:
+    *Proof:*
+    $\|A_\delta f\|_{L^1} \le \|\varphi\|_{L^1} \|f\|_{L^1}$ and $\lim_{\delta \to 0^+} \|A_\delta f - \alpha f\|_{L^1} = 0$.
 :::
 
