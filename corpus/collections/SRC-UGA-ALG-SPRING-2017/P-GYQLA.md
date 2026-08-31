@@ -15,91 +15,48 @@ relations: []
 review: draft
 ---
 
-Let $G$ be a finite group and $\pi: G\to \sym(G)$ the Cayley representation.
+::: problem
+Let $G$ be a finite group and let $\pi: G \to \operatorname{Sym}(G)$ be the Cayley (left regular) representation, where $\pi(x)(g) = x g$ for all $g \in G$.
 
-> (Recall that this means that for an element $x\in G$, $\pi(x)$ acts by left translation on $G$.)
-
-Prove that $\pi(x)$ is an odd permutation $\iff$ the order $\abs{\pi(x)}$ of $\pi(x)$ is even and $\abs{G} / \abs{\pi(x)}$ is odd.
-
-:::{.warnings}
-(DZG): This seems like an unusually hard group theory problem.
-My guess is this year's qual class spent more time than usual on the proof of Cayley's theorem.
+Prove that $\pi(x)$ is an odd permutation if and only if the order $\operatorname{ord}(\pi(x))$ is even and $|G| / \operatorname{ord}(\pi(x))$ is odd.
 :::
 
-:::{.concept}
-\envlist
+::: solution
+**Goal:** Prove that the sign of the left regular permutation $\pi(x)$ is $(-1)^{m(k-1)}$, where $k = \operatorname{ord}(\pi(x))$ and $m = |G|/k$, and characterize when it is odd.
 
-- $\Sym(G) \da \Aut_\Set(G, G)$ is the group of set morphisms from $G$ to itself, i.e. permutations of elements of $G$.
-- More standard terminology: this is related to the **left regular representation** where $g\mapsto \phi_g$ where $\phi_g(x) = gx$, regarded instead as a permutation representation.
-  - This action is transitive!
-- Cayley's theorem: every $G$ is isomorphic to a subgroup of a permutation group.
-  In particular, take \( \ts{ \phi_g \st G\in G } \) with function composition as a subgroup of $\Aut_\Set(G)$.
-:::
+<1>1. Disjoint cycle decomposition of $\pi(x)$:
+    *Proof:*
+    <2>1. Let $x \in G$, and let $k = \operatorname{ord}(x)$ be the order of $x$ in $G$.
+    <2>2. Since the left regular action is faithful, $\operatorname{ord}(\pi(x)) = \operatorname{ord}(x) = k$.
+    <2>3. The permutation $\pi(x)$ acts on the finite set $G$ by left multiplication $g \mapsto x g$.
+    <2>4. The orbit of an element $g \in G$ under the action of $\langle x \rangle$ is the right coset:
+    $$\mathcal{O}_g = \{x^j g \mid 0 \le j < k\} = \langle x \rangle g.$$
+    <2>5. Since $|\langle x \rangle g| = |\langle x \rangle| = k$ for every $g \in G$, every orbit of $\pi(x)$ has size exactly $k$.
+    <2>6. On each orbit $\mathcal{O}_g$, the cyclic action of $\pi(x)$ forms a cycle of length $k$:
+    $$(g, \, x g, \, x^2 g, \, \dots, \, x^{k-1} g).$$
+    <2>7. The number of disjoint orbits is the number of right cosets of $\langle x \rangle$ in $G$:
+    $$m = [G : \langle x \rangle] = \frac{|G|}{k} = \frac{|G|}{\operatorname{ord}(\pi(x))}.$$
+    <2>8. Thus $\pi(x)$ decomposes into the product of $m$ disjoint cycles of length $k$.
 
-:::{.solution}
-\envlist
+<1>2. Parity and sign of $\pi(x)$:
+    *Proof:*
+    <2>1. A cycle of length $k$ can be factored into a product of $k - 1$ transpositions:
+    $$(c_1, c_2, \dots, c_k) = (c_1, c_k)(c_1, c_{k-1}) \cdots (c_1, c_2).$$
+    <2>2. Thus the sign of a $k$-cycle is $\operatorname{sgn}(\text{cycle of length } k) = (-1)^{k - 1}$.
+    <2>3. Because the sign homomorphism $\operatorname{sgn}: \operatorname{Sym}(G) \to \{\pm 1\}$ is multiplicative on products of disjoint cycles:
+    $$\operatorname{sgn}(\pi(x)) = \left( (-1)^{k - 1} \right)^m = (-1)^{m(k - 1)}.$$
 
-> (DZG): Warning!! I haven't checked this solution very carefully, and this is kind of a delicate parity argument.
-  Most of the key ideas are borrowed [from here](https://math.stackexchange.com/questions/3028603/show-that-phig-is-an-even-permutation).
+<1>3. Characterization of odd permutations:
+    *Proof:*
+    <2>1. By definition, $\pi(x)$ is an odd permutation if and only if $\operatorname{sgn}(\pi(x)) = -1$.
+    <2>2. From <1>2, $(-1)^{m(k - 1)} = -1$ if and only if the exponent $m(k - 1)$ is an odd integer.
+    <2>3. A product of two integers is odd if and only if both factors are odd:
+    $$m(k - 1) \text{ is odd} \iff m \text{ is odd and } (k - 1) \text{ is odd}.$$
+    <2>4. The integer $k - 1$ is odd if and only if $k$ is even.
+    <2>5. Thus $\operatorname{sgn}(\pi(x)) = -1$ if and only if $k$ is even and $m$ is odd.
+    <2>6. Substituting $k = \operatorname{ord}(\pi(x))$ and $m = |G|/\operatorname{ord}(\pi(x))$ completes the equivalence.
 
-- Write $k \da o(\pi_g)$, then since $\pi$ is injective, $k = o(g)$ in $G$.
-- Since $\pi_g$ as a cycle is obtained from the action of $g$, we can pick an element $x_0$ in $G$, take the orbit under the action, and obtain a cycle of length $k$ since the order of $g$ is $k$.
-  Then continue by taking any $x_1$ not in the first orbit and taking *its* orbit.
-  Continuing this way exhausts all group elements and yields a decomposition into disjoint cycles:
-\[
-\pi_g = 
-(x_0, gx_0, g^2 x_0, \cdots, g^{k-1} x_0)
-(x_1, gx_1, g^2 x_1, \cdots, g^{k-1} x_1)
-\cdots
-(x_m, gx_m, g^2 x_m, \cdots, g^{k-1} x_m)
-.\]
-- So there are $m$ orbits all of length exactly $k$.
-  Proceed by casework.
-- A cycle of length $k$ has sign $(-1)^{k-1}$, so $\sgn(\pi_g) = (-1)^{m(k-1)}$.
-- If $k$ is odd:
-  - Then $k-1$ is even, each of the $m$ cycles is an even permutation, and $\sgn(\pi_g) = +1$.
-  - So $\pi_g \in \ker\sgn$ is an even permutation, whatever $m$ is.
-- If $k$ is even:
-  - Then $k-1$ is odd, each of the $m$ cycles is an odd permutation, and $\sgn(\pi_g) = (-1)^m$.
-  - So $\pi_g$ is even iff $m$ is even, and odd iff $m$ is odd.
-- The claim is that the number of orbit representatives $m$ is equal to $[G:H] = \size G/H$ for $H = \gens{ g }$. 
-  - Proof: define a map
-  \[
-  \ts{ \text{Orbit representatives } x_i } &\to H\backslash G \\
-  x &\mapsto Hx
-  .\]
-
-  The orbits are the RIGHT cosets $Hx = \ts{ g^\ell x }$, since $g$ acts by left translation.
-  - This is injective and surjective because
-  \[
-  Hx = Hy &\iff xy\inv \in H = \gens{ g } \\
-  &\iff xy\inv = g^\ell \\
-  &\iff x=g^\ell y \\
-  &\iff y\in \OO_x
-  ,\]
-  so $y$ and $x$ are in the same orbit and have the same orbit representative.
-
-- We now have
-\[
-\pi_g \text{ is an even permutation } \iff
-\begin{cases}
-k \text{ is odd} &
-\\
-\text{ or } & \\
-k \text{ is even and } m \text{ is even}
- & .
-\end{cases}
-\]
-- Everything was an iff, so flip the evens to odds:
-\[
-\pi_g \text{ is an odd permutation } \iff k \text{ is even and } m \text{ is odd}
-.\]
-- Then just recall that $k\da o(\pi_g)$ and 
-\[
-m= [G: \gens{ g }] = \size G / \size \gens{ g }= \size G / o(g) = \size G/ o(\pi_g)
-.\]
-
-
-
-
+<1>4. Conclusion:
+    *Proof:*
+    $\pi(x)$ is an odd permutation if and only if $\operatorname{ord}(\pi(x))$ is even and $|G|/\operatorname{ord}(\pi(x))$ is odd.
 :::
