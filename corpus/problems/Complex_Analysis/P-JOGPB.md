@@ -47,16 +47,27 @@ Prove that along the circular arcs $\gamma_r(t) = a + r e^{it}$ ($t \in [0, \bet
 ### Step 1: Parametrize the Integral and Isolate the Main Term
 
 <1>1. **Parametrize $\int_{\gamma_r} \frac{A}{z-a}\,dz$.** <2>1. With $\gamma_r(t) = a + r e^{it}$ for $t \in [0, \beta_0]$, $dz = i r e^{it} dt$.
-*Proof:* Derivative of parametrization.
-<2>2. The integral of the simple pole term is: $$\int_{\gamma_r} \frac{A}{z-a} \, dz = \int_0^{\beta_0} \frac{A}{r e^{it}} \cdot i r e^{it} \, dt = i A \int_0^{\beta_0} dt = i A \beta_0.$$ *Proof:* Direct cancellation of $r e^{it}$ and integration of constant $1$.
+::: {.proof}
+Differentiating the parametrization $\gamma_r(t) = a + r e^{it}$ with respect to $t$ gives $\gamma_r'(t) = i r e^{it}$, so $dz = i r e^{it}\,dt$.
+:::
+<2>2. The integral of the simple pole term is: $$\int_{\gamma_r} \frac{A}{z-a} \, dz = \int_0^{\beta_0} \frac{A}{r e^{it}} \cdot i r e^{it} \, dt = i A \int_0^{\beta_0} dt = i A \beta_0.$$
+::: {.proof}
+Substituting $z - a = r e^{it}$ and $dz = i r e^{it}\,dt$, the factors $r e^{it}$ cancel, leaving the integral of the constant $iA$ over $[0, \beta_0]$, which is $iA\beta_0$.
+:::
 <2>3. Q.E.D.
 
 <1>2. **Express $f(z)$ as $\frac{A}{z-a} + \frac{g(z)}{z-a}$ where $g(z) = (z-a)f(z) - A$.** <2>1. Define $g(z) = (z-a)f(z) - A$ for $z \in S$.
-*Proof:* Algebraic definition.
+::: {.proof}
+This is the definition of $g$: the difference between $(z-a)f(z)$ and its limit $A$.
+:::
 <2>2. By the hypothesis $\lim_{z \to a, z \in S} (z-a)f(z) = A$, we have $\lim_{z \to a, z \in S} g(z) = 0$.
-*Proof:* Definition of limit.
+::: {.proof}
+Subtracting the constant $A$ from a function converging to $A$ gives a function converging to $0$.
+:::
 <2>3. For any $z \in S$, $f(z) = \frac{A + g(z)}{z-a} = \frac{A}{z-a} + \frac{g(z)}{z-a}$.
-*Proof:* Dividing $g(z) + A = (z-a)f(z)$ by $z-a \neq 0$.
+::: {.proof}
+Since $g(z) + A = (z-a)f(z)$, dividing both sides by $z - a \neq 0$ (valid because $z \in S$ has $|z-a| > 0$) gives the decomposition.
+:::
 <2>4. Q.E.D.
 
 * * *
