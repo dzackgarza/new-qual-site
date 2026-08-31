@@ -27,10 +27,17 @@ Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 <1>1. Write $\rad{I} = \ts{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \ts{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
 
 <1>2. $\nilrad{R} \subseteq \rad{(0)}$.
-*Proof:* If $x^n = 0$ then $x^n \in (0)$, since $(0) = \ts 0$.
+::: {.proof}
+If $x^n = 0$ then $x^n \in (0)$, since $(0) = \ts 0$.
+:::
 
 <1>3. $\rad{(0)} \subseteq \nilrad{R}$.
-*Proof:* If $x^n \in (0)$ then $x^n = 0$, since $(0)$ has $0$ as its only element.
+::: {.proof}
+If $x^n \in (0)$ then $x^n = 0$, since $(0)$ has $0$ as its only element.
+:::
 
-<1>4. Q.E.D. *Proof:* Steps <1>2 and <1>3 give the two inclusions, so $\nilrad{R} = \rad{(0)}$.
+<1>4. Q.E.D.
+::: {.proof}
+Steps <1>2 and <1>3 give the two inclusions, so $\nilrad{R} = \rad{(0)}$.
+:::
 :::

@@ -14,33 +14,69 @@ relations: []
 review: draft
 ---
 
-Let $V$ be a finite dimensional vector space over a field (the field is not necessarily algebraically closed).
+::: problem
+Let $V$ be a finite-dimensional vector space over a field $F$, and let $\phi: V \to V$ be a linear transformation.
 
-Let $\phi : V \to V$ be a linear transformation.
-Prove that there exists a decomposition of $V$ as $V = U \oplus W$ , where $U$ and $W$ are $\phi\dash$invariant subspaces of $V$ , $\restrictionof{\phi}{U}$ is nilpotent, and $\restrictionof{\phi}{W}$ is nonsingular.
+Prove that there exists a direct sum decomposition
+$$
+V = U \oplus W,
+$$
+where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent, and $\phi|_W$ is invertible (nonsingular).
+:::
 
-::: {.solution}
-Let $m(x)$ be the minimal polynomial of $\phi$.
-If $x$ does not divide $m(x)$, then $0$ is not an eigenvalue of $\phi$, so $\phi$ is nonsingular and $V = 0 \oplus V$ works, the zero space carrying the nilpotent part.
+::: solution
+**Goal:** Prove Fitting's Lemma for linear operators on finite-dimensional vector spaces using the stabilization of kernels and images of powers of $\phi$.
 
-Otherwise, write $m(x) = x^k \rho(x)$ with $k\geq 1$ and $\gcd(x, \rho(x)) = 1$, so $\rho(0)\neq 0$.
+<1>1. Stabilization of kernel and image chains:
+    *Proof:*
+    <2>1. Let $n = \dim_F V < \infty$.
+    <2>2. Consider the ascending chain of kernels and the descending chain of images:
+    $$\ker(\phi) \subseteq \ker(\phi^2) \subseteq \ker(\phi^3) \subseteq \cdots \subseteq V,$$
+    $$V \supseteq \operatorname{Im}(\phi) \supseteq \operatorname{Im}(\phi^2) \supseteq \operatorname{Im}(\phi^3) \supseteq \cdots$$
+    <2>3. Because $\dim_F V = n < \infty$, the sequence of dimensions $\dim_F \ker(\phi^m)$ is non-decreasing and bounded above by $n$.
+    <2>4. Thus the chain of kernels must stabilize: there exists an integer $k \le n$ such that
+    $$\ker(\phi^k) = \ker(\phi^{k+1}) = \ker(\phi^{k+2}) = \cdots = \ker(\phi^{2k}).$$
+    <2>5. Define $U = \ker(\phi^k)$ and $W = \operatorname{Im}(\phi^k)$.
 
-View $V$ as a $k[x]\dash$module with $x$ acting by $\phi$, and set
-\[
-U \definedas \ker \phi^k, \qquad W \definedas \ker \rho(\phi)
-.\]
+<1>2. $U$ and $W$ are $\phi$-invariant subspaces:
+    *Proof:*
+    <2>1. For $u \in U = \ker(\phi^k)$:
+    $$\phi^k(\phi(u)) = \phi(\phi^k(u)) = \phi(0) = 0,$$
+    so $\phi(u) \in \ker(\phi^k) = U$.
+    <2>2. For $w \in W = \operatorname{Im}(\phi^k)$, write $w = \phi^k(v)$ for some $v \in V$:
+    $$\phi(w) = \phi(\phi^k(v)) = \phi^k(\phi(v)) \in \operatorname{Im}(\phi^k) = W.$$
 
-Since $x^k$ and $\rho$ are coprime, there are $u(x), v(x)$ with $u x^k + v\rho = 1$.
-Applying this to any $w\in V$ writes $w = v(\phi)\rho(\phi) w + u(\phi)\phi^k w$ with the first summand in $U$ and the second in $W$, because $m(\phi) = 0$.
-If $w \in U\intersect W$ then the same identity gives $w = 0$.
-Hence
-\[
-V = U \oplus W
-.\]
+<1>3. Direct sum decomposition $V = U \oplus W$:
+    *Proof:*
+    <2>1. Intersection $U \cap W = \{0\}$:
+        - Let $v \in U \cap W$.
+        - Since $v \in W = \operatorname{Im}(\phi^k)$, there exists $x \in V$ such that $v = \phi^k(x)$.
+        - Since $v \in U = \ker(\phi^k)$, $\phi^k(v) = 0$, which gives $\phi^{2k}(x) = 0$.
+        - Thus $x \in \ker(\phi^{2k})$.
+        - By stabilization at index $k$ (<1>1), $\ker(\phi^{2k}) = \ker(\phi^k)$, so $x \in \ker(\phi^k)$.
+        - Therefore $v = \phi^k(x) = 0$.
+        - Hence $U \cap W = \{0\}$.
+    <2>2. Sum $V = U + W$:
+        - By the Rank-Nullity Theorem applied to the linear map $\phi^k: V \to V$:
+        $$\dim_F \ker(\phi^k) + \dim_F \operatorname{Im}(\phi^k) = \dim_F V.$$
+        - Since $U \cap W = \{0\}$, $\dim_F(U \oplus W) = \dim_F U + \dim_F W = \dim_F V$.
+        - A subspace of $V$ with the same finite dimension as $V$ must be $V$ itself.
+        - Thus $V = U \oplus W$.
 
-Both summands are $\phi\dash$invariant, since $\phi$ commutes with $\phi^k$ and with $\rho(\phi)$.
+<1>4. Properties of the restrictions $\phi|_U$ and $\phi|_W$:
+    *Proof:*
+    <2>1. $\phi|_U$ is nilpotent:
+        - For every $u \in U = \ker(\phi^k)$, $(\phi|_U)^k(u) = \phi^k(u) = 0$.
+        - Thus $(\phi|_U)^k = 0$, so $\phi|_U$ is nilpotent.
+    <2>2. $\phi|_W$ is invertible:
+        - Since $W$ is finite-dimensional, $\phi|_W: W \to W$ is invertible if and only if $\ker(\phi|_W) = \{0\}$.
+        - Let $w \in \ker(\phi|_W)$. Then $w \in W$ and $\phi(w) = 0$.
+        - Then $\phi^k(w) = \phi^{k-1}(\phi(w)) = \phi^{k-1}(0) = 0$, so $w \in \ker(\phi^k) = U$.
+        - Thus $w \in U \cap W$.
+        - By <1>3, $U \cap W = \{0\}$, so $w = 0$.
+        - Therefore $\ker(\phi|_W) = \{0\}$, which proves that $\phi|_W$ is invertible.
 
-Finally $\restrictionof{\phi}{U}$ is nilpotent, because $\phi^k$ kills $U$ by definition, and $\restrictionof{\phi}{W}$ is nonsingular: if $\phi w = 0$ for $w\in W$ then $\rho(\phi)w = \rho(0)w = 0$, and $\rho(0)\neq 0$ forces $w=0$.
-
-> Note that $V \cong k[x]/(m(x))$ only when $V$ is a cyclic $k[x]\dash$module, which is not given here, so the decomposition is taken on $V$ itself rather than on the quotient ring.
+<1>5. Conclusion:
+    *Proof:*
+    $V = U \oplus W$ with $U = \ker(\phi^k)$ and $W = \operatorname{Im}(\phi^k)$ is the required Fitting decomposition.
 :::
