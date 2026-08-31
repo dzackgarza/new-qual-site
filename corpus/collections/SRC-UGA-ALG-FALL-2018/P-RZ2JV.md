@@ -29,15 +29,17 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 **Goal:** Characterize maximal submodules via simplicity of quotients in (a), deduce prime-order quotients for abelian groups in (b), and prove that the divisible group of roots of unity has no maximal submodules in (c).
 
 <1>1. Part (a): $N \subset M$ is maximal if and only if $M/N$ is simple.
-    *Proof:*
+::: {.proof}
     <2>1. By the Submodule Correspondence Theorem (Lattice Isomorphism Theorem for modules), the canonical quotient projection $\pi: M \to M/N$ induces an inclusion-preserving bijection between the set of submodules of $M$ containing $N$ and the set of submodules of $M/N$:
     $$P \longleftrightarrow P/N = \pi(P).$$
     <2>2. Under this correspondence, proper intermediate submodules $N \subsetneq P \subsetneq M$ correspond bijectively to non-zero proper submodules $\{0\} \subsetneq P/N \subsetneq M/N$.
     <2>3. $N$ is maximal if and only if $N \ne M$ and no such intermediate submodule $P$ exists.
     <2>4. This occurs if and only if $M/N \ne \{0\}$ and $M/N$ contains no submodules other than $\{0\}$ and $M/N$, which is the definition of $M/N$ being a simple $R$-module.
 
+:::
+
 <1>2. Part (b): A $\mathbb{Z}$-submodule $N \subseteq M$ is maximal if and only if $|M/N| = p$ is prime.
-    *Proof:*
+::: {.proof}
     <2>1. A $\mathbb{Z}$-module is an abelian group, and $\mathbb{Z}$-submodules are subgroups.
     <2>2. By Part (a), $N$ is maximal if and only if $A = M/N$ is a simple abelian group.
     <2>3. ($\impliedby$): If $|A| = p$ is prime, then by Lagrange's Theorem the only subgroups of $A$ are $\{0\}$ and $A$. Since $p \ge 2$, $A \ne \{0\}$, so $A$ is simple.
@@ -48,8 +50,10 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
     <2>8. If $n$ is composite, let $p$ be a prime divisor of $n$ with $1 < p < n$. The subgroup $\langle (n/p) x \rangle$ has order $p$, so $\{0\} \subsetneq \langle (n/p) x \rangle \subsetneq A$, contradicting simplicity.
     <2>9. Therefore $n = p$ must be prime, so $|M/N| = |A| = p$.
 
+:::
+
 <1>3. Part (c): $M = \mu_\infty$ has no maximal $\mathbb{Z}$-submodules.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose for contradiction that $N \subset M$ is a maximal $\mathbb{Z}$-submodule (subgroup).
     <2>2. By Part (b), the quotient group $M/N$ has prime order $|M/N| = p$.
     <2>3. In any finite group of order $p$, every element raised to the power $p$ is the identity: for all $x \in M$, $(x N)^p = x^p N = N$, which implies $x^p \in N$.
@@ -61,7 +65,10 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
     <2>9. This implies $M \subseteq N$, so $N = M$, which contradicts the definition of a maximal submodule ($N \subsetneq M$).
     <2>10. Thus no maximal $\mathbb{Z}$-submodule of $M$ exists.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     Maximal submodules correspond to simple quotients, simple abelian groups are cyclic of prime order, and the divisible group of roots of unity possesses no maximal submodules.
+:::
 :::

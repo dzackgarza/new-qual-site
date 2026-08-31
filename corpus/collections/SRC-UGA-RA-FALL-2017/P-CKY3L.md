@@ -26,7 +26,7 @@ $$
 **Goal:** Prove that the span of interval indicator functions $S$ is dense in $L^1(\mathbb{R})$ using simple function density and Lebesgue regularity.
 
 <1>1. Approximation of $f$ by integrable simple functions:
-    *Proof:*
+::: {.proof}
     <2>1. Let $f \in L^1(\mathbb{R})$ and let $\varepsilon > 0$ be given.
     <2>2. By the standard construction of Lebesgue integrals, the set of integrable simple functions is dense in $L^1(\mathbb{R})$.
     <2>3. Thus there exists a simple function
@@ -34,8 +34,10 @@ $$
     where $c_k \in \mathbb{C}$ and $E_k \subset \mathbb{R}$ are disjoint measurable sets with $m(E_k) < \infty$, such that
     $$\|f - \psi\|_{L^1} < \frac{\varepsilon}{2}.$$
 
+:::
+
 <1>2. Approximation of measurable sets of finite measure by finite unions of open intervals:
-    *Proof:*
+::: {.proof}
     <2>1. Fix $k \in \{1, \dots, m\}$. Since $m(E_k) < \infty$, by the definition of Lebesgue outer measure, there exists an open set $U_k \supset E_k$ such that
     $$m(U_k \setminus E_k) < \frac{\varepsilon}{4 m (|c_k| + 1)}.$$
     <2>2. Every open set in $\mathbb{R}$ is a countable disjoint union of bounded open intervals: $U_k = \bigsqcup_{j=1}^\infty (a_{k, j}, b_{k, j})$.
@@ -47,22 +49,29 @@ $$
     <2>6. Therefore, the $L^1$ distance between indicators satisfies:
     $$\|\chi_{E_k} - \chi_{V_k}\|_{L^1} = \int_\mathbb{R} |\chi_{E_k} - \chi_{V_k}| \, dm = m(E_k \Delta V_k) < \frac{\varepsilon}{2 m (|c_k| + 1)}.$$
 
+:::
+
 <1>3. Construction and approximation in $S$:
-    *Proof:*
+::: {.proof}
     <2>1. Since $V_k$ is a finite disjoint union of open intervals $(a_{k, j}, b_{k, j})$, the indicator function $\chi_{V_k} = \sum_{j=1}^{N_k} \chi_{(a_{k, j}, b_{k, j})} \in S$.
     <2>2. Define the function $g = \sum_{k=1}^m c_k \chi_{V_k}$. Since each $\chi_{V_k} \in S$, $g \in S$.
     <2>3. Bound the distance between $\psi$ and $g$:
     $$\|\psi - g\|_{L^1} = \left\| \sum_{k=1}^m c_k (\chi_{E_k} - \chi_{V_k}) \right\|_{L^1} \le \sum_{k=1}^m |c_k| \|\chi_{E_k} - \chi_{V_k}\|_{L^1} < \sum_{k=1}^m |c_k| \frac{\varepsilon}{2 m (|c_k| + 1)} < \frac{\varepsilon}{2}.$$
 
+:::
+
 <1>4. Triangle inequality:
-    *Proof:*
+::: {.proof}
     <2>1. Combining the approximations:
     $$\|f - g\|_{L^1} \le \|f - \psi\|_{L^1} + \|\psi - g\|_{L^1} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
     <2>2. Since $\varepsilon > 0$ was arbitrary, this establishes that $S$ is dense in $L^1(\mathbb{R})$.
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $S$ is dense in $L^1(\mathbb{R})$.
+:::
 :::
 
 

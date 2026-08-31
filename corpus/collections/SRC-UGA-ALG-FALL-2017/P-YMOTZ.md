@@ -30,7 +30,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 **Goal:** Classify abelian groups of order 36, prove that non-abelian groups with normal Sylow 2-subgroups admit an $A_4$ quotient, prove direct product decomposition, and exhibit $D_{18}$ as a non-abelian counterexample to Sylow 2 normality.
 
 <1>1. Part (a): Classification of abelian groups of order 36.
-    *Proof:*
+::: {.proof}
     <2>1. The prime factorization of 36 is $36 = 2^2 \cdot 3^2$.
     <2>2. By the Fundamental Theorem of Finitely Generated Abelian Groups, any finite abelian group is isomorphic to a direct product of cyclic groups of prime power orders.
     <2>3. Partitions of the prime exponents:
@@ -42,8 +42,10 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
         3. $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/12\mathbb{Z}$.
         4. $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z} \times \mathbb{Z}/6\mathbb{Z}$.
 
+:::
+
 <1>2. Part (b): If $P \in \operatorname{Syl}_2(G)$ is normal, then $G/N \cong A_4$ for some normal subgroup $N \trianglelefteq G$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $P \in \operatorname{Syl}_2(G)$ with $|P| = 4$ and $P \trianglelefteq G$.
     <2>2. Number of Sylow 3-subgroups: By Sylow's Theorems, $n_3 \equiv 1 \pmod 3$ and $n_3 \mid 4$, so $n_3 \in \{1, 4\}$.
     <2>3. If $n_3 = 1$, let $Q \in \operatorname{Syl}_3(G)$ ($|Q| = 9$). Then $Q \trianglelefteq G$.
@@ -66,8 +68,10 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
         - Since $\operatorname{Im}(\rho)$ is a subgroup of order 12 in $S_4$, by the given assumption $\operatorname{Im}(\rho) = A_4$.
         - Therefore $G/N \cong A_4$, where $N = \ker(\rho) \trianglelefteq G$ is of order 3.
 
+:::
+
 <1>3. Part (c): Direct product decomposition $G \cong N \times H$.
-    *Proof:*
+::: {.proof}
     <2>1. We are given $N \trianglelefteq G$ with $G/N \cong A_4$ ($|N| = 3$) and $H \le G$ with $H \cong A_4$ ($|H| = 12$).
     <2>2. Trivial intersection $N \cap H = \{e\}$:
         - $N \cap H$ is a normal subgroup of $H \cong A_4$ whose order divides $|N| = 3$.
@@ -84,8 +88,10 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
         - Thus $h n h^{-1} = n$, i.e., $n h = h n$ for all $n \in N$ and $h \in H$.
     <2>5. Hence $G$ is the internal direct product $G \cong N \times H \cong \mathbb{Z}/3\mathbb{Z} \times A_4$.
 
+:::
+
 <1>4. Part (d): $D_{18}$ is non-abelian of order 36 with non-normal Sylow 2-subgroups.
-    *Proof:*
+::: {.proof}
     <2>1. The dihedral group of order 36 has presentation:
     $$D_{18} = \langle r, s \mid r^{18} = 1, s^2 = 1, s r s = r^{-1} \rangle.$$
     <2>2. $|D_{18}| = 36$. Since $s r = r^{17} s \ne r s$, $D_{18}$ is non-abelian.
@@ -96,7 +102,10 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
     <2>6. Since $s r^{16} \notin P$ ($16 \not\equiv 0, 9 \pmod{18}$), $r P r^{-1} \ne P$.
     <2>7. Thus the Sylow 2-subgroup $P$ is not normal in $D_{18}$.
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     Abelian groups of order 36 are classified by integer partitions, normal Sylow 2-subgroups yield an $A_4$ quotient via conjugation on $\operatorname{Syl}_3(G)$, subgroups isomorphic to $A_4$ decompose $G$ as a direct product $\mathbb{Z}/3\mathbb{Z} \times A_4$, and $D_{18}$ has non-normal Sylow 2-subgroups.
+:::
 :::

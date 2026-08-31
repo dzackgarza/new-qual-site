@@ -33,7 +33,7 @@ is an ideal that is contained in every prime ideal of $R$.
 **Goal:** Prove that the nilradical is an ideal contained in all prime ideals in (a), use Zorn's Lemma to construct a prime ideal avoiding powers of a non-nilpotent element in (b), and prove that every element in a ring with a unique prime ideal is nilpotent or a unit in (c).
 
 <1>1. Part (a): $N$ is an ideal contained in every prime ideal.
-    *Proof:*
+::: {.proof}
     <2>1. $N$ is an ideal:
         - $0 \in N$ since $0^1 = 0$.
         - If $x, y \in N$, there exist $m, n \ge 1$ such that $x^m = 0$ and $y^n = 0$. By the Binomial Theorem (since $R$ is commutative):
@@ -48,8 +48,10 @@ is an ideal that is contained in every prime ideal of $R$.
         - By induction on $n$, $x^n \in \mathfrak{p} \implies x \in \mathfrak{p}$.
         - Thus $N \subseteq \mathfrak{p}$.
 
+:::
+
 <1>2. Part (b): Existence of a prime ideal avoiding powers of $r$.
-    *Proof:*
+::: {.proof}
     <2>1. Define the multiplicative set $\Sigma = \{r^k \mid k \in \mathbb{N}_{\ge 1}\}$.
     <2>2. Define the family of ideals:
     $$\mathcal{S} = \{I \trianglelefteq R \mid I \cap \Sigma = \emptyset\}.$$
@@ -70,8 +72,10 @@ is an ideal that is contained in every prime ideal of $R$.
         - This contradicts $P \cap \Sigma = \emptyset$.
         - Thus $a \in P$ or $b \in P$, proving that $P$ is a prime ideal in $\mathcal{S}$.
 
+:::
+
 <1>3. Part (c): Rings with a unique prime ideal consist of nilpotents and units.
-    *Proof:*
+::: {.proof}
     <2>1. Let $P$ be the unique prime ideal of $R$.
     <2>2. Since every maximal ideal of $R$ is prime, and maximal ideals exist in every non-trivial commutative ring by Krull's Theorem, $P$ must also be the unique maximal ideal of $R$.
     <2>3. Let $r \in R$. Suppose $r$ is not a unit.
@@ -85,7 +89,10 @@ is an ideal that is contained in every prime ideal of $R$.
     <2>11. Thus $r \in N$, so $r$ is nilpotent.
     <2>12. Therefore every element of $R$ is either a unit or nilpotent.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $N$ is an ideal contained in every prime, Zorn's Lemma yields a prime ideal avoiding powers of non-nilpotents, and every element in a ring with a unique prime is a unit or nilpotent.
+:::
 :::

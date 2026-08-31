@@ -25,15 +25,17 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 **Goal:** Prove that if $N \trianglelefteq G$ has $\gcd(|N|, [G : N]) = 1$, then any subgroup $K \le G$ with $|K| = |N|$ satisfies $K = N$, using Bézout's identity and orders in the quotient group $G/N$.
 
 <1>1. Setting up notation and Bézout's identity:
-    *Proof:*
+::: {.proof}
     <2>1. Let $n = |N|$ and $m = [G : N] = |G/N|$.
     <2>2. Since $N \trianglelefteq G$, the quotient group $G/N$ is well-defined and has order $|G/N| = m$.
     <2>3. By hypothesis, $\gcd(n, m) = 1$.
     <2>4. By Bézout's identity, there exist integers $s, t \in \mathbb{Z}$ such that
     $$n s + m t = 1.$$
 
+:::
+
 <1>2. Inclusion $K \subseteq N$ for any subgroup $K \le G$ of order $|K| = n$:
-    *Proof:*
+::: {.proof}
     <2>1. Let $K \le G$ be a subgroup with $|K| = n$.
     <2>2. Let $x \in K$ be an arbitrary element.
     <2>3. By Lagrange's Theorem in $K$, the element order $\operatorname{ord}(x)$ divides $|K| = n$, so $x^n = e$.
@@ -45,13 +47,18 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
     <2>7. Since $x N = N$, $x \in N$.
     <2>8. Since $x \in K$ was arbitrary, $K \subseteq N$.
 
+:::
+
 <1>3. Equality $K = N$:
-    *Proof:*
+::: {.proof}
     <2>1. $K \subseteq N$ and $|K| = |N| = n < \infty$.
     <2>2. Any subset of a finite set with the same cardinality must be the entire set.
     <2>3. Thus $K = N$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $N$ is the unique subgroup of $G$ of order $|N|$.
+:::
 :::

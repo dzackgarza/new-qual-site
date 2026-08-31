@@ -26,7 +26,7 @@ Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
 **Goal:** Prove that the centralizer of a cyclic operator is the polynomial algebra $k[A]$ in (a), and characterize cyclicity via $\chi_A(x) = m_A(x)$ in (b).
 
 <1>1. Part (a): Any commuting matrix $B$ is a polynomial in $A$.
-    *Proof:*
+::: {.proof}
     <2>1. Since $\{v, A v, \dots, A^{n-1} v\}$ contains $n$ linearly independent vectors in $k^n$, it forms a basis $\mathcal{B} = \{v, A v, \dots, A^{n-1} v\}$ for $k^n$.
     <2>2. Since $\mathcal{B}$ spans $k^n$, the vector $B v \in k^n$ can be expressed as a linear combination of basis vectors:
     $$B v = \sum_{j=0}^{n-1} c_j A^j v = p(A) v,$$
@@ -38,8 +38,10 @@ Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
     <2>5. Since the linear maps $B$ and $p(A)$ agree on all $n$ basis vectors of $\mathcal{B}$, they are equal as linear transformations on $k^n$.
     <2>6. Thus $B = p(A)$, so $B$ is a polynomial in $A$.
 
+:::
+
 <1>2. Part (b) ($\implies$): Linear independence implies $\chi_A(x) = m_A(x)$.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose $\{v, A v, \dots, A^{n-1} v\}$ is linearly independent in $k^n$.
     <2>2. If $\deg m_A(x) = d < n$, write $m_A(x) = \sum_{j=0}^d a_j x^j$ with $a_d = 1$.
     <2>3. Then $0 = m_A(A) v = \sum_{j=0}^d a_j A^j v$.
@@ -48,8 +50,10 @@ Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
     <2>6. By the Cayley–Hamilton Theorem, $m_A(x) \mid \chi_A(x)$.
     <2>7. Since $\deg \chi_A(x) = n$ and both $m_A(x)$ and $\chi_A(x)$ are monic polynomials of degree $n$, we conclude $\chi_A(x) = m_A(x)$.
 
+:::
+
 <1>3. Part (b) ($\impliedby$): $\chi_A(x) = m_A(x)$ implies existence of a cyclic vector.
-    *Proof:*
+::: {.proof}
     <2>1. Regard $V = k^n$ as a finitely generated module over the principal ideal domain $k[x]$, where the action is given by $x \cdot w = A w$ for $w \in V$.
     <2>2. By the Structure Theorem for finitely generated modules over a PID (Invariant Factor Decomposition), there exist monic polynomials $d_1(x) \mid d_2(x) \mid \dots \mid d_r(x)$ in $k[x]$ such that
     $$V \cong \bigoplus_{i=1}^r \frac{k[x]}{\langle d_i(x) \rangle}$$
@@ -64,7 +68,10 @@ Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
     <2>8. In the quotient ring $k[x]/\langle \chi_A(x) \rangle$, the elements $\{\bar{1}, \bar{x}, \bar{x}^2, \dots, \bar{x}^{n-1}\}$ form a $k$-vector space basis because $\deg \chi_A(x) = n$.
     <2>9. Applying the $k[x]$-module isomorphism, the corresponding elements $\{v, A v, A^2 v, \dots, A^{n-1} v\}$ form a $k$-basis for $V = k^n$, and are in particular linearly independent.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     The matrix $B$ is a polynomial in $A$, and a cyclic vector exists if and only if $\chi_A(x) = m_A(x)$.
+:::
 :::

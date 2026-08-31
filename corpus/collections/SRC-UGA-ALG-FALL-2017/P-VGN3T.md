@@ -35,7 +35,7 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
 **Goal:** Prove properties of the ring $\mathbb{Z}[\sqrt{-5}]$ using the field norm $N(a + b\sqrt{-5}) = a^2 + 5b^2$, deduce that $3$ is irreducible but not prime, and conclude $R$ is not a PID.
 
 <1>1. Part (a): $R$ is an integral domain.
-    *Proof:*
+::: {.proof}
     <2>1. $R = \mathbb{Z}[\sqrt{-5}]$ is a subring of the field of complex numbers $\mathbb{C}$:
         - $1 = 1 + 0\sqrt{-5} \in R$.
         - For $\alpha = a + b\sqrt{-5}$ and $\beta = c + d\sqrt{-5} \in R$:
@@ -44,8 +44,10 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
     <2>2. Since $\mathbb{C}$ is a field, $\mathbb{C}$ has no non-zero zero-divisors.
     <2>3. Any subring of a field is an integral domain. Thus $R$ is an integral domain.
 
+:::
+
 <1>2. Part (b): $U(R) = \{\pm 1\}$.
-    *Proof:*
+::: {.proof}
     <2>1. Define the algebraic norm $N: R \to \mathbb{Z}_{\ge 0}$ by
     $$N(a + b\sqrt{-5}) = |a + b\sqrt{-5}|^2 = a^2 + 5b^2.$$
     <2>2. The norm is multiplicative: $N(\alpha \beta) = N(\alpha) N(\beta)$ for all $\alpha, \beta \in R$.
@@ -56,8 +58,10 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
     <2>7. Conversely, $(\pm 1)(\pm 1) = 1$, so $\pm 1 \in U(R)$.
     <2>8. Therefore $U(R) = \{\pm 1\}$.
 
+:::
+
 <1>3. Part (c): $3$, $2 + \sqrt{-5}$, and $2 - \sqrt{-5}$ are irreducible in $R$.
-    *Proof:*
+::: {.proof}
     <2>1. Compute the norms:
         $$N(3) = 3^2 + 5(0)^2 = 9,$$
         $$N(2 + \sqrt{-5}) = 2^2 + 5(1)^2 = 4 + 5 = 9,$$
@@ -73,8 +77,10 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
     <2>7. By Part (b), an element of norm 1 is a unit ($\pm 1$). Thus either $x \in U(R)$ or $y \in U(R)$.
     <2>8. Since $N(\alpha) = 9 > 1$, $\alpha$ is not a unit. Hence $3$, $2 + \sqrt{-5}$, and $2 - \sqrt{-5}$ are irreducible in $R$.
 
+:::
+
 <1>4. Part (d): $3$ is not prime in $R$.
-    *Proof:*
+::: {.proof}
     <2>1. Consider the factorization:
     $$(2 + \sqrt{-5})(2 - \sqrt{-5}) = 2^2 - (-5) = 4 + 5 = 9 = 3 \cdot 3.$$
     <2>2. Thus $3 \mid (2 + \sqrt{-5})(2 - \sqrt{-5})$ in $R$.
@@ -86,8 +92,10 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
     <2>5. Thus $3 \nmid (2 + \sqrt{-5})$ and $3 \nmid (2 - \sqrt{-5})$.
     <2>6. Therefore $3$ is not a prime element in $R$.
 
+:::
+
 <1>5. Part (e): $R$ is not a PID.
-    *Proof:*
+::: {.proof}
     <2>1. In any principal ideal domain $D$, every irreducible element is prime:
         - Let $p \in D$ be irreducible. If $p \mid a b$ and $p \nmid a$, then $\gcd(p, a) = 1$.
         - In a PID, Bézout's identity gives $x p + y a = 1$ for some $x, y \in D$.
@@ -96,8 +104,11 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
     <2>2. In $R = \mathbb{Z}[\sqrt{-5}]$, the element $3$ is irreducible (by Part (c)) but is not prime (by Part (d)).
     <2>3. By contraposition, $R$ cannot be a principal ideal domain.
 
+:::
+
 <1>6. Conclusion:
-    *Proof:*
+::: {.proof}
     $R = \mathbb{Z}[\sqrt{-5}]$ is an integral domain with units $\{\pm 1\}$, has $3$ as an irreducible non-prime element, and is not a PID.
+:::
 :::
 

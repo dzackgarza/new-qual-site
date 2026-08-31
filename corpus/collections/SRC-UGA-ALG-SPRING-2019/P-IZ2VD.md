@@ -27,7 +27,7 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 **Goal:** Prove that an irreducible polynomial of degree $d$ over $\mathbb{F}_p$ divides $x^{p^d} - x$ in (a), and that any irreducible factor of $x^{p^n} - x$ has degree dividing $n$ in (b).
 
 <1>1. Part (a): $\pi(x) \mid (x^{p^d} - x)$ for irreducible $\pi(x)$ of degree $d$.
-    *Proof:*
+::: {.proof}
     <2>1. Construct the field $K = \mathbb{F}_p[x]/\langle \pi(x) \rangle$. Since $\pi(x)$ is irreducible over $\mathbb{F}_p$, $\langle \pi(x) \rangle$ is a maximal ideal, so $K$ is a field.
     <2>2. The extension degree is $[K : \mathbb{F}_p] = \deg \pi(x) = d$, so $|K| = p^d$.
     <2>3. The multiplicative group $K^\times = K \setminus \{0\}$ is a group of order $p^d - 1$.
@@ -39,8 +39,10 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
     <2>8. By definition of the quotient ring, this means $x^{p^d} - x \in \langle \pi(x) \rangle$.
     <2>9. Therefore $\pi(x)$ divides $x^{p^d} - x$ in $\mathbb{F}_p[x]$.
 
+:::
+
 <1>2. Part (b): If $\pi(x) \mid (x^{p^n} - x)$, then $\deg \pi(x) \mid n$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $L = \mathbb{F}_{p^n}$ be the splitting field of $x^{p^n} - x$ over $\mathbb{F}_p$, which is a finite field of degree $[L : \mathbb{F}_p] = n$.
     <2>2. The elements of $L$ are precisely the $p^n$ distinct roots of $x^{p^n} - x$.
     <2>3. Since $\pi(x) \mid (x^{p^n} - x)$ in $\mathbb{F}_p[x]$, every root of $\pi(x)$ in an algebraic closure $\overline{\mathbb{F}}_p$ is also a root of $x^{p^n} - x$, and therefore lies in $L$.
@@ -52,8 +54,11 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
     $$n = [L : \mathbb{F}_p] = [L : \mathbb{F}_p(\alpha)] \cdot [\mathbb{F}_p(\alpha) : \mathbb{F}_p] = [L : \mathbb{F}_p(\alpha)] \cdot \deg \pi(x).$$
     <2>8. Since $[L : \mathbb{F}_p(\alpha)]$ is an integer, $\deg \pi(x)$ divides $n$.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     Irreducible polynomials of degree $d$ divide $x^{p^d} - x$, and any irreducible factor of $x^{p^n} - x$ has degree dividing $n$.
+:::
 :::
 

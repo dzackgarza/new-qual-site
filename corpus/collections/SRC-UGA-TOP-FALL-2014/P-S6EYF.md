@@ -28,7 +28,7 @@ $$
 **Goal:** Compute the integral homology groups $H_k(X; \mathbb{Z})$ for all $k \ge 0$ using the Mayer–Vietoris sequence.
 
 <1>1. Topology of the pieces and their intersection:
-    *Proof:*
+::: {.proof}
     <2>1. $Y = \{x^2 + y^2 + z^2 = 1\} \cong S^2$ is the standard unit 2-sphere.
     <2>2. $Z = \{x^2 + y^2 + z^2/4 = 1\} \cong S^2$ is an ellipsoid, homeomorphic to $S^2$.
     <2>3. Compute the intersection $A = Y \cap Z$:
@@ -37,8 +37,10 @@ $$
         - Thus $A = Y \cap Z = \{(x, y, 0) \in \mathbb{R}^3 \mid x^2 + y^2 = 1\} \cong S^1$ is the equatorial circle.
     <2>4. The intersection $A$ is a deformation retract of an open neighborhood in $Y$ and in $Z$.
 
+:::
+
 <1>2. Mayer–Vietoris sequence setup:
-    *Proof:*
+::: {.proof}
     <2>1. Choose open neighborhoods $U \supset Y$ and $V \supset Z$ in $X$ that deformation retract onto $Y$ and $Z$, respectively, with $U \cap V$ deformation retracting onto $A = Y \cap Z \cong S^1$.
     <2>2. The reduced Mayer–Vietoris sequence is:
     $$\cdots \to \tilde{H}_k(A) \xrightarrow{(i_*, j_*)} \tilde{H}_k(Y) \oplus \tilde{H}_k(Z) \to \tilde{H}_k(X) \xrightarrow{\partial} \tilde{H}_{k-1}(A) \to \cdots$$
@@ -46,8 +48,10 @@ $$
         - $\tilde{H}_k(A) = \tilde{H}_k(S^1) = \begin{cases} \mathbb{Z} & k = 1, \\ 0 & k \ne 1. \end{cases}$
         - $\tilde{H}_k(Y) \oplus \tilde{H}_k(Z) = \tilde{H}_k(S^2) \oplus \tilde{H}_k(S^2) = \begin{cases} \mathbb{Z} \oplus \mathbb{Z} & k = 2, \\ 0 & k \ne 2. \end{cases}$
 
+:::
+
 <1>3. Computation of homology groups:
-    *Proof:*
+::: {.proof}
     <2>1. Degree $k = 0$:
         - $X$ is path-connected because $Y$ and $Z$ are path-connected and $Y \cap Z = S^1 \ne \emptyset$.
         - Thus $H_0(X) \cong \mathbb{Z}$.
@@ -67,8 +71,11 @@ $$
         - Since $\mathbb{Z}$ is free abelian, the sequence splits:
         $$H_2(X) \cong (\mathbb{Z} \oplus \mathbb{Z}) \oplus \mathbb{Z} \cong \mathbb{Z}^3.$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     The integral homology groups of $X$ are:
     $$H_k(X; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z} & k = 1, \\ \mathbb{Z}^3 & k = 2, \\ 0 & k \ge 3. \end{cases}$$
+:::
 :::

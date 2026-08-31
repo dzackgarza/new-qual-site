@@ -34,7 +34,7 @@ for all positive integers $k < K$, then $\mu(B) = 1$.
 **Goal:** Prove the measurability of $\limsup B_n$ in (a), the First Borel–Cantelli Lemma via countable subadditivity in (b), and the Second Borel–Cantelli Lemma via complement independence and exponential bounds in (c).
 
 <1>1. Part (a): $B$ is $\mathcal{B}$-measurable.
-    *Proof:*
+::: {.proof}
     <2>1. An element $x \in X$ belongs to infinitely many $B_n$ if and only if for every $k \ge 1$, there exists $n \ge k$ such that $x \in B_n$.
     <2>2. In set-theoretic notation:
     $$B = \bigcap_{k=1}^\infty \bigcup_{n=k}^\infty B_n = \limsup_{n \to \infty} B_n.$$
@@ -42,8 +42,10 @@ for all positive integers $k < K$, then $\mu(B) = 1$.
     <2>4. For each $k \ge 1$, $E_k = \bigcup_{n=k}^\infty B_n \in \mathcal{B}$ since each $B_n \in \mathcal{B}$.
     <2>5. Therefore $B = \bigcap_{k=1}^\infty E_k \in \mathcal{B}$.
 
+:::
+
 <1>2. Part (b): $\sum_{n=1}^\infty \mu(B_n) < \infty \implies \mu(B) = 0$.
-    *Proof:*
+::: {.proof}
     <2>1. For each $k \ge 1$, $B = \bigcap_{j=1}^\infty \bigcup_{n=j}^\infty B_n \subseteq \bigcup_{n=k}^\infty B_n$.
     <2>2. By monotonicity and countable subadditivity of the measure $\mu$:
     $$\mu(B) \le \mu\left( \bigcup_{n=k}^\infty B_n \right) \le \sum_{n=k}^\infty \mu(B_n) \quad \text{for every } k \ge 1.$$
@@ -51,8 +53,10 @@ for all positive integers $k < K$, then $\mu(B) = 1$.
     $$\lim_{k \to \infty} \sum_{n=k}^\infty \mu(B_n) = 0.$$
     <2>4. Taking $k \to \infty$ on both sides gives $0 \le \mu(B) \le 0$, so $\mu(B) = 0$.
 
+:::
+
 <1>3. Part (c): $\sum_{n=1}^\infty \mu(B_n) = \infty$ and independence $\implies \mu(B) = 1$.
-    *Proof:*
+::: {.proof}
     <2>1. Complement of $B$: By De Morgan's laws,
     $$B^c = \left( \bigcap_{k=1}^\infty \bigcup_{n=k}^\infty B_n \right)^c = \bigcup_{k=1}^\infty \bigcap_{n=k}^\infty B_n^c.$$
     <2>2. By countable subadditivity of $\mu$:
@@ -68,8 +72,11 @@ for all positive integers $k < K$, then $\mu(B) = 1$.
     <2>8. Summing over all $k \ge 1$ gives $\mu(B^c) \le \sum_{k=1}^\infty 0 = 0$, so $\mu(B^c) = 0$.
     <2>9. Since $\mu(X) = 1$, $\mu(B) = \mu(X) - \mu(B^c) = 1 - 0 = 1$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $B$ is measurable, $\mu(B) = 0$ when $\sum \mu(B_n) < \infty$, and $\mu(B) = 1$ when $\sum \mu(B_n) = \infty$ under the independence condition.
+:::
 :::
 

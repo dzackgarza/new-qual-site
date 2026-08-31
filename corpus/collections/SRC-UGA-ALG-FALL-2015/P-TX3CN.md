@@ -25,14 +25,16 @@ Prove that $G$ contains a normal subgroup $N \trianglelefteq G$ of finite index 
 **Goal:** Prove the existence of the normal core $N = \operatorname{Core}_G(H) = \bigcap_{g \in G} g H g^{-1}$ using the left regular action of $G$ on the coset space $G/H$.
 
 <1>1. Permutation action on cosets:
-    *Proof:*
+::: {.proof}
     <2>1. Let $n = [G : H] < \infty$, and let $X = G/H = \{g H \mid g \in G\}$ be the set of left cosets of $H$ in $G$, so $|X| = n$.
     <2>2. $G$ acts on $X$ by left multiplication:
     $$g \cdot (x H) = (g x) H \quad \text{for all } g \in G \text{ and } x H \in X.$$
     <2>3. This group action defines a permutation homomorphism $\rho: G \to \operatorname{Sym}(X) \cong S_n$.
 
+:::
+
 <1>2. Kernel characterization and containment in all conjugates:
-    *Proof:*
+::: {.proof}
     <2>1. Define $N = \ker(\rho)$.
     <2>2. An element $g \in G$ belongs to $\ker(\rho)$ if and only if $g \cdot (x H) = x H$ for all $x \in G$.
     <2>3. Equivalence of condition:
@@ -41,8 +43,10 @@ Prove that $G$ contains a normal subgroup $N \trianglelefteq G$ of finite index 
     $$N = \ker(\rho) = \bigcap_{x \in G} x H x^{-1}.$$
     <2>5. Consequently, $N \subseteq g H g^{-1}$ for every $g \in G$, so $N$ is contained in every conjugate of $H$.
 
+:::
+
 <1>3. Normality and finite index:
-    *Proof:*
+::: {.proof}
     <2>1. As the kernel of a group homomorphism $\rho: G \to \operatorname{Sym}(X)$, $N \trianglelefteq G$.
     <2>2. By the First Isomorphism Theorem:
     $$G/N \cong \operatorname{Im}(\rho) \le \operatorname{Sym}(X) \cong S_n.$$
@@ -51,7 +55,10 @@ Prove that $G$ contains a normal subgroup $N \trianglelefteq G$ of finite index 
     <2>4. By Lagrange's Theorem, $[G : N]$ divides $|\operatorname{Sym}(X)| = n! = [G : H]!$.
     <2>5. Since $n < \infty$, $[G : N] \le n! < \infty$, so $N$ is of finite index in $G$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $N = \bigcap_{x \in G} x H x^{-1}$ is a normal subgroup of finite index $[G : N] \le [G : H]!$ contained in every conjugate of $H$.
+:::
 :::

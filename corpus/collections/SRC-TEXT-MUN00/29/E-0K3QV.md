@@ -28,12 +28,14 @@ Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\ov
 <1>1. Properties of $\overline{S}_\Omega$: 1. $\overline{S}_\Omega = [0, \Omega]$ in the order topology is compact and Hausdorff.
 2. The subspace topology on $S_\Omega = [0, \Omega) \subset \overline{S}_\Omega$ is identical to the intrinsic order topology on $S_\Omega$.
 3. The remainder $\overline{S}_\Omega \setminus S_\Omega = \{\Omega\}$ is a single point.
-*Proof:* <2>1. Every well-ordered set with a largest element is compact in the order topology (Munkres Theorem 27.1), and every order topology is Hausdorff.
+::: {.proof}
+<2>1. Every well-ordered set with a largest element is compact in the order topology (Munkres Theorem 27.1), and every order topology is Hausdorff.
 Thus $\overline{S}_\Omega$ is compact Hausdorff.
 <2>2. Since $S_\Omega$ is an initial segment (convex set) in $\overline{S}_\Omega$, the subspace topology and the order topology on $S_\Omega$ coincide.
 
 <1>2. Compact subsets of $S_\Omega$: A closed subset $C \subseteq S_\Omega$ is compact in $S_\Omega$ if and only if $C$ is bounded above by some $\alpha < \Omega$.
-*Proof:* <2>1. ($\impliedby$) If $C$ is closed and bounded by $\alpha < \Omega$, then $C$ is a closed subset of the compact interval $[0, \alpha]$, hence $C$ is compact.
+::: {.proof}
+<2>1. ($\impliedby$) If $C$ is closed and bounded by $\alpha < \Omega$, then $C$ is a closed subset of the compact interval $[0, \alpha]$, hence $C$ is compact.
 <2>2. ($\implies$) If $C$ is unbounded in $S_\Omega$, the collection of open rays $\{[0, \beta) : \beta \in S_\Omega\}$ forms an open cover of $C$ with no finite subcover (since the supremum of any finite set of elements in $S_\Omega$ is strictly less than $\Omega$). Thus $C$ cannot be compact.
 
 <1>3. Construction of the bijection $f: S_\Omega^* \to \overline{S}_\Omega$: Define $f: S_\Omega^* \to \overline{S}_\Omega$ by: $$f(x) = x \quad \text{for } x \in S_\Omega, \qquad f(\infty) = \Omega.$$ This is a bijection: it is injective because the restriction to $S_\Omega$ is the identity (so distinct points of $S_\Omega$ have distinct images) and $\Omega$ is not in $S_\Omega$ (so $\infty$ is the only point mapping to $\Omega$); it is surjective because every point of $\overline{S}_\Omega = S_\Omega \cup \{\Omega\}$ is hit, the points of $S_\Omega$ by themselves and $\Omega$ by $\infty$.

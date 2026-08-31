@@ -32,7 +32,7 @@ $$
 **Goal:** Prove that $\operatorname{tor}(M)$ is a submodule over integral domains in (a), provide a counterexample over non-domains in (b), and prove the existence of non-zero torsion elements over rings with zero-divisors in (c).
 
 <1>1. Part (a): $\operatorname{tor}(M)$ is an $R$-submodule when $R$ is an integral domain.
-    *Proof:*
+::: {.proof}
     <2>1. Non-empty: $0 \in \operatorname{tor}(M)$ since $1 \cdot 0 = 0$ and $1 \ne 0$ in $R$.
     <2>2. Closure under scalar multiplication:
         - Let $m \in \operatorname{tor}(M)$ and $r \in R$.
@@ -48,8 +48,10 @@ $$
         - Thus $m_1 + m_2 \in \operatorname{tor}(M)$.
     <2>4. Therefore $\operatorname{tor}(M)$ is an $R$-submodule of $M$.
 
+:::
+
 <1>2. Part (b): Counterexample where $\operatorname{tor}(M)$ is not a submodule.
-    *Proof:*
+::: {.proof}
     <2>1. Let $R = \mathbb{Z}/6\mathbb{Z}$ and consider $M = R = \mathbb{Z}/6\mathbb{Z}$ as a regular module over itself.
     <2>2. The element $\bar{2} \in \mathbb{Z}/6\mathbb{Z}$ is torsion: $3 \cdot \bar{2} = \bar{6} = \bar{0}$ with $\bar{3} \ne \bar{0}$, so $\bar{2} \in \operatorname{tor}(M)$.
     <2>3. The element $\bar{3} \in \mathbb{Z}/6\mathbb{Z}$ is torsion: $2 \cdot \bar{3} = \bar{6} = \bar{0}$ with $\bar{2} \ne \bar{0}$, so $\bar{3} \in \operatorname{tor}(M)$.
@@ -58,8 +60,10 @@ $$
     <2>6. For any $r \in \mathbb{Z}/6\mathbb{Z}$, $r \cdot \bar{5} = \bar{0} \implies r = r \cdot \bar{5} \cdot \bar{5} = \bar{0} \cdot \bar{5} = \bar{0}$.
     <2>7. Thus $\bar{5} \notin \operatorname{tor}(M)$, showing that $\operatorname{tor}(M)$ is not closed under addition.
 
+:::
+
 <1>3. Part (c): Existence of non-zero torsion elements when $R$ has zero-divisors.
-    *Proof:*
+::: {.proof}
     <2>1. Since $R$ has zero-divisors, there exist non-zero elements $a, b \in R \setminus \{0\}$ such that $a b = 0$.
     <2>2. Let $M \ne \{0\}$ be any non-zero $R$-module. Choose a non-zero element $m \in M \setminus \{0\}$.
     <2>3. Consider the element $b m \in M$:
@@ -72,8 +76,11 @@ $$
         - Since $a \in R \setminus \{0\}$ and $w \ne 0$, $w = b m$ is a non-zero torsion element of $M$.
     <2>6. In both cases, $M$ contains at least one non-zero torsion element.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\operatorname{tor}(M)$ is a submodule over integral domains, fails to be a submodule in general rings, and non-zero modules over rings with zero-divisors always contain non-zero torsion elements.
+:::
 :::
 

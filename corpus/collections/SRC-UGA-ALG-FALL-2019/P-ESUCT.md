@@ -27,14 +27,16 @@ Let $\zeta_n \in \mathbb{C}$ denote a primitive $n$-th root of unity, and let $p
 **Goal:** Prove that cyclotomic extensions are Galois with abelian Galois group $(\mathbb{Z}/n\mathbb{Z})^\times$ in (a), and count the subfields of $\mathbb{Q}(\zeta_{20})$ via the Galois correspondence in (b).
 
 <1>1. Part (a): $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois.
-    *Proof:*
+::: {.proof}
     <2>1. Splitting field: The polynomial $x^n - 1 \in \mathbb{Q}[x]$ has roots $\{e^{2\pi i k / n} : 0 \le k < n\} = \{\zeta_n^k : 0 \le k < n\}$. All of these roots belong to $\mathbb{Q}(\zeta_n)$.
     <2>2. Thus $\mathbb{Q}(\zeta_n)$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$.
     <2>3. Since $\mathbb{Q}$ has characteristic 0, every algebraic extension over $\mathbb{Q}$ is separable.
     <2>4. Because $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is a splitting field of a separable polynomial, it is normal and separable, hence Galois.
 
+:::
+
 <1>2. Part (a): $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$.
-    *Proof:*
+::: {.proof}
     <2>1. Field degree: By hypothesis, the roots of the minimal polynomial $p_n(x)$ of $\zeta_n$ over $\mathbb{Q}$ are precisely the primitive $n$-th roots of unity. The number of primitive $n$-th roots of unity is $\varphi(n)$, so $[\mathbb{Q}(\zeta_n) : \mathbb{Q}] = \deg p_n(x) = \varphi(n)$.
     <2>2. Action on generators: Any automorphism $\sigma \in \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is uniquely determined by its value $\sigma(\zeta_n)$, since $\mathbb{Q}(\zeta_n) = \mathbb{Q}[\zeta_n]$.
     <2>3. Roots of minimal polynomial: $\sigma(\zeta_n)$ must be a root of $p_n(x)$, which means $\sigma(\zeta_n) = \zeta_n^a$ for some integer $a$ with $1 \le a \le n$ and $\gcd(a, n) = 1$.
@@ -47,8 +49,10 @@ Let $\zeta_n \in \mathbb{C}$ denote a primitive $n$-th root of unity, and let $p
     <2>6. Isomorphism: Since $|\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})| = [\mathbb{Q}(\zeta_n) : \mathbb{Q}] = \varphi(n) = |(\mathbb{Z}/n\mathbb{Z})^\times|$, the injective homomorphism $\Psi$ is a bijection, and hence an isomorphism:
     $$\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times.$$
 
+:::
+
 <1>3. Part (b): Number of subfields of $\mathbb{Q}(\zeta_{20})$.
-    *Proof:*
+::: {.proof}
     <2>1. Galois group structure:
         For $n = 20 = 2^2 \cdot 5$, by the Chinese Remainder Theorem:
         $$G = \operatorname{Gal}(\mathbb{Q}(\zeta_{20})/\mathbb{Q}) \cong (\mathbb{Z}/20\mathbb{Z})^\times \cong (\mathbb{Z}/4\mathbb{Z})^\times \times (\mathbb{Z}/5\mathbb{Z})^\times \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/4\mathbb{Z}.$$
@@ -69,8 +73,11 @@ Let $\zeta_n \in \mathbb{C}$ denote a primitive $n$-th root of unity, and let $p
         $$1 + 3 + 3 + 1 = 8 \text{ subgroups}.$$
     <2>5. Therefore $\mathbb{Q}(\zeta_{20})$ has exactly 8 subfields.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois with group $(\mathbb{Z}/n\mathbb{Z})^\times$, and $\mathbb{Q}(\zeta_{20})$ has 8 subfields.
+:::
 :::
 

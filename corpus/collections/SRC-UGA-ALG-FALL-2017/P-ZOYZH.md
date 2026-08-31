@@ -26,7 +26,7 @@ A ring $R$ is called *simple* if its only two-sided ideals are $\{0\}$ and $R$.
 **Goal:** Prove that commutative unital simple rings are fields in (a), and that matrix rings $M_n(k)$ over a field are simple in (b) using matrix units.
 
 <1>1. Part (a): $R$ is simple if and only if $R$ is a field.
-    *Proof:*
+::: {.proof}
     <2>1. Forward direction ($\implies$):
         - Assume $R$ is simple, commutative, with $1 \ne 0$.
         - Let $x \in R \setminus \{0\}$ be a non-zero element.
@@ -45,8 +45,10 @@ A ring $R$ is called *simple* if its only two-sided ideals are $\{0\}$ and $R$.
         - For every $r \in R$, $r = r \cdot 1 \in I$, so $I = R$.
         - Thus the only ideals of $R$ are $\{0\}$ and $R$, proving $R$ is simple.
 
+:::
+
 <1>2. Part (b): $M_n(k)$ is a simple ring.
-    *Proof:*
+::: {.proof}
     <2>1. Let $I \subseteq M_n(k)$ be a non-zero two-sided ideal.
     <2>2. Matrix units: For $1 \le i, j \le n$, let $E_{i j} \in M_n(k)$ denote the standard matrix unit with 1 in the $(i, j)$-entry and 0 elsewhere.
     <2>3. Multiplication rule for matrix units:
@@ -68,7 +70,10 @@ A ring $R$ is called *simple* if its only two-sided ideals are $\{0\}$ and $R$.
         - For any matrix $M \in M_n(k)$, $M = M I_n \in I$, so $I = M_n(k)$.
         - Thus the only two-sided ideals of $M_n(k)$ are $\{0\}$ and $M_n(k)$, so $M_n(k)$ is simple.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     Commutative unital simple rings are fields, and $M_n(k)$ is a simple ring.
+:::
 :::

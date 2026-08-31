@@ -34,7 +34,7 @@ and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
 **Goal:** Prove anti-monotonicity of orthogonal complements in (a), construct an injective evaluation map on quotient spaces in (b), and prove it is an isomorphism in finite dimensions by dimension counting.
 
 <1>1. Part (a): $Y \subseteq X \implies X^\perp \subseteq Y^\perp$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $v \in X^\perp$.
     <2>2. By definition of $X^\perp$, $(v, x) = 0$ for every $x \in X$.
     <2>3. Since $Y \subseteq X$, every element $y \in Y$ satisfies $y \in X$.
@@ -42,8 +42,10 @@ and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
     <2>5. By definition of $Y^\perp$, $v \in Y^\perp$.
     <2>6. Therefore $X^\perp \subseteq Y^\perp$.
 
+:::
+
 <1>2. Part (b): Construction and well-definedness of $\psi$.
-    *Proof:*
+::: {.proof}
     <2>1. For each $u \in Y^\perp$, consider the linear functional $f_u: X \to F$ defined by $f_u(x) = (u, x)$.
     <2>2. Since $u \in Y^\perp$, $(u, y) = 0$ for all $y \in Y$, so $Y \subseteq \ker(f_u)$.
     <2>3. By the universal property of quotient vector spaces, $f_u$ induces a unique linear functional $\bar{f}_u \in (X/Y)^*$ given by
@@ -58,16 +60,20 @@ and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
         - By bilinearity of $(\cdot, \cdot)$, $\bar{f}_{a u_1 + b u_2}(x + Y) = (a u_1 + b u_2, x) = a (u_1, x) + b (u_2, x) = a \bar{f}_{u_1}(x + Y) + b \bar{f}_{u_2}(x + Y)$.
         - Thus $\psi$ is an $F$-linear transformation.
 
+:::
+
 <1>3. Part (b): Injectivity of $\psi$.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose $u + X^\perp \in \ker(\psi)$.
     <2>2. Then $\psi(u + X^\perp) = 0$, so $\bar{f}_u(x + Y) = (u, x) = 0$ for all $x \in X$.
     <2>3. This means $(u, x) = 0$ for all $x \in X$, which implies $u \in X^\perp$.
     <2>4. Therefore $u + X^\perp = 0 + X^\perp$ in $Y^\perp / X^\perp$.
     <2>5. Thus $\ker(\psi) = \{0\}$, so $\psi$ is injective.
 
+:::
+
 <1>4. Part (b): Isomorphism when $\dim_F V < \infty$.
-    *Proof:*
+::: {.proof}
     <2>1. Assume $\dim_F V = n < \infty$.
     <2>2. Since $(\cdot, \cdot)$ is non-degenerate, the map $v \mapsto (v, \cdot)$ is an isomorphism $V \cong V^*$.
     <2>3. For any subspace $W \subseteq V$, $\dim_F W^\perp = \dim_F V - \dim_F W$.
@@ -78,7 +84,10 @@ and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
     <2>6. An injective linear map between finite-dimensional vector spaces of the same dimension is an isomorphism.
     <2>7. Thus $\psi: Y^\perp / X^\perp \to (X/Y)^*$ is an isomorphism.
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $Y \subseteq X \implies X^\perp \subseteq Y^\perp$, and $\psi(u + X^\perp)(x + Y) = (u, x)$ defines an injective map which is an isomorphism in finite dimensions.
+:::
 :::

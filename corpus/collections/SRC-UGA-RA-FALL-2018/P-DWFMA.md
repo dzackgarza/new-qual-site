@@ -20,7 +20,7 @@ Let $E \subseteq \mathbb{R}$ be a Lebesgue measurable set. Show that there exist
 **Goal:** Prove that every Lebesgue measurable set contains an $F_\sigma$ Borel subset differing by a set of Lebesgue measure zero, using closed approximations on finite-measure pieces.
 
 <1>1. Case 1: $E$ has finite measure ($m(E) < \infty$).
-    *Proof:*
+::: {.proof}
     <2>1. By the regularity of Lebesgue measure (or outer regularity applied to $E^c$), for every $\varepsilon > 0$, there exists a closed set $F \subseteq E$ such that $m(E \setminus F) < \varepsilon$.
     <2>2. For each $n \in \mathbb{N}_{\ge 1}$, choose a closed set $F_n \subseteq E$ such that
     $$m(E \setminus F_n) < \frac{1}{n}.$$
@@ -33,8 +33,10 @@ Let $E \subseteq \mathbb{R}$ be a Lebesgue measurable set. Show that there exist
     $$m(E \setminus B) \le m(E \setminus F_n) < \frac{1}{n} \quad \text{for all } n \ge 1.$$
     <2>8. Taking $n \to \infty$ yields $m(E \setminus B) = 0$.
 
+:::
+
 <1>2. Case 2: $E$ has arbitrary (possibly infinite) measure.
-    *Proof:*
+::: {.proof}
     <2>1. Partition $\mathbb{R}$ into bounded intervals: $\mathbb{R} = \bigsqcup_{k \in \mathbb{Z}} [k, k+1)$.
     <2>2. For each $k \in \mathbb{Z}$, define the bounded measurable set $E_k = E \cap [k, k+1)$.
     <2>3. Then $E = \bigsqcup_{k \in \mathbb{Z}} E_k$, and $m(E_k) \le m([k, k+1)) = 1 < \infty$.
@@ -49,8 +51,11 @@ Let $E \subseteq \mathbb{R}$ be a Lebesgue measurable set. Show that there exist
     $$m(E \setminus B) \le \sum_{k \in \mathbb{Z}} m(E_k \setminus B_k) = \sum_{k \in \mathbb{Z}} 0 = 0.$$
     <2>10. Thus $m(E \setminus B) = 0$.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     Every Lebesgue measurable set $E \subseteq \mathbb{R}$ contains a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
+:::
 :::
 

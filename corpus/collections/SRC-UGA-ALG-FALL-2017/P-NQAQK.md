@@ -31,7 +31,7 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
 **Goal:** Characterize module homomorphisms and isomorphisms for polynomial modules $V_T$, and analyze simplicity via invariant subspaces and eigenvalues.
 
 <1>1. Part (a): $F[x]$-module homomorphisms correspond to intertwining linear maps ($R T = S R$).
-    *Proof:*
+::: {.proof}
     <2>1. Forward direction ($\implies$):
         - Let $\varphi: V_T \to W_S$ be an $F[x]$-module homomorphism.
         - Since $F \subset F[x]$, $\varphi(c v) = c \varphi(v)$ for all $c \in F$ and $\varphi(v_1 + v_2) = \varphi(v_1) + \varphi(v_2)$, so $\varphi$ is an $F$-linear transformation $R: V \to W$.
@@ -46,16 +46,20 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
         $$R(p(x) \cdot v) = R\left( \sum_{k=0}^d a_k T^k(v) \right) = \sum_{k=0}^d a_k R(T^k(v)) = \sum_{k=0}^d a_k S^k(R(v)) = p(x) \cdot R(v).$$
         - Together with additivity, $R$ is an $F[x]$-module homomorphism.
 
+:::
+
 <1>2. Part (b): $V_T \cong W_S \iff T = P^{-1} S P$ for an $F$-linear isomorphism $P$.
-    *Proof:*
+::: {.proof}
     <2>1. An $F[x]$-module isomorphism is a bijective $F[x]$-module homomorphism.
     <2>2. By Part (a), a map $P: V_T \to W_S$ is an $F[x]$-module homomorphism if and only if $P: V \to W$ is $F$-linear and $P T = S P$.
     <2>3. A map between vector spaces is a bijective module homomorphism if and only if it is an $F$-linear isomorphism whose inverse is also compatible.
     <2>4. If $P$ is invertible, multiplying $P T = S P$ on the left by $P^{-1}$ gives $T = P^{-1} S P$.
     <2>5. Conversely, if $P: V \to W$ is an $F$-linear isomorphism with $T = P^{-1} S P$, then $P T = S P$, so $P$ is an $F[x]$-module isomorphism.
 
+:::
+
 <1>3. Part (c): Example of a simple $V_T$ of dimension 2 over $\mathbb{R}$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $F = \mathbb{R}$, $V = \mathbb{R}^2$, and let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be given by the matrix
     $$T = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}.$$
     <2>2. Submodules of $V_T$ are precisely the $T$-invariant $\mathbb{R}$-subspaces of $\mathbb{R}^2$.
@@ -66,8 +70,10 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
     <2>6. Since $x^2 + 1$ has no real roots, $T$ has no real eigenvalues, and therefore no 1-dimensional $T$-invariant subspaces.
     <2>7. Thus the only $T$-invariant subspaces of $\mathbb{R}^2$ are $\{0\}$ and $\mathbb{R}^2$, so $V_T$ is simple.
 
+:::
+
 <1>4. Part (d): Over an algebraically closed field $F$, $V_T$ is never simple when $\dim_F V = 2$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $F$ be algebraically closed and $\dim_F V = 2$.
     <2>2. The characteristic polynomial $\chi_T(x) = \det(x I - T) \in F[x]$ has degree 2.
     <2>3. Because $F$ is algebraically closed, $\chi_T(x)$ has at least one root $\lambda \in F$.
@@ -78,7 +84,10 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
     <2>8. Since $\dim_F U = 1$ and $\dim_F V = 2$, $\{0\} \subsetneq U \subsetneq V_T$, so $U$ is a proper non-trivial submodule.
     <2>9. Therefore $V_T$ is not simple.
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     $F[x]$-homomorphisms intertwine operators, isomorphisms correspond to similarity, $90^\circ$ rotation on $\mathbb{R}^2$ gives a simple module, and over algebraically closed fields existence of eigenvalues prevents simplicity in dimension 2.
+:::
 :::

@@ -25,13 +25,15 @@ review: draft
 **Goal:** Prove that $\mathbb{Q}(\theta)$ for an $S_4$-quartic has no non-trivial intermediate subfields using maximal subgroups in (a), and that every degree 4 Galois extension has intermediate subfields via order 2 subgroups in (b).
 
 <1>1. Part (a): Degree $[\mathbb{Q}(\theta) : \mathbb{Q}] = 4$.
-    *Proof:*
+::: {.proof}
     <2>1. The polynomial $f(x) \in \mathbb{Q}[x]$ is irreducible and of degree 4.
     <2>2. Since $f(\theta) = 0$, $f(x)$ is a non-zero constant multiple of the minimal polynomial $\operatorname{irr}(\theta, \mathbb{Q})$.
     <2>3. Therefore, $[\mathbb{Q}(\theta) : \mathbb{Q}] = \deg \operatorname{irr}(\theta, \mathbb{Q}) = \deg f = 4$.
 
+:::
+
 <1>2. Part (a): No intermediate fields strictly between $\mathbb{Q}$ and $\mathbb{Q}(\theta)$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $K$ be the splitting field of $f(x)$ over $\mathbb{Q}$, so $K/\mathbb{Q}$ is Galois with Galois group $G = \operatorname{Gal}(K/\mathbb{Q}) \cong S_4$.
     <2>2. The roots of $f(x)$ are $\theta = \theta_1, \theta_2, \theta_3, \theta_4 \in K$.
     <2>3. Under the isomorphism $G \cong S_4$ acting on the 4 roots, the subgroup fixing $\theta = \theta_1$ is the stabilizer $H = \operatorname{Stab}_G(\theta_1) \cong S_3$.
@@ -48,8 +50,10 @@ review: draft
     <2>9. Therefore, the only subgroups containing $H$ are $H$ and $G$ themselves ($H$ is a maximal subgroup of $S_4$).
     <2>10. Hence, there are no intermediate fields strictly between $\mathbb{Q}$ and $\mathbb{Q}(\theta)$.
 
+:::
+
 <1>3. Part (b): Existence of an intermediate field for degree 4 Galois extensions.
-    *Proof:*
+::: {.proof}
     <2>1. Let $K/\mathbb{Q}$ be a Galois extension of degree $[K : \mathbb{Q}] = 4$.
     <2>2. The Galois group $G = \operatorname{Gal}(K/\mathbb{Q})$ has order $|G| = [K : \mathbb{Q}] = 4$.
     <2>3. Every group of order 4 is isomorphic to either the cyclic group $\mathbb{Z}/4\mathbb{Z}$ or the Klein 4-group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
@@ -60,7 +64,10 @@ review: draft
     $$[E : \mathbb{Q}] = [G : H] = \frac{4}{2} = 2, \quad [K : E] = |H| = 2.$$
     <2>6. Thus $\mathbb{Q} \subsetneq E \subsetneq K$ is an intermediate field strictly between $\mathbb{Q}$ and $K$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\mathbb{Q}(\theta)$ has no non-trivial intermediate subfields because $S_3$ is maximal in $S_4$, whereas every Galois extension of degree 4 contains an intermediate subfield of degree 2.
+:::
 :::

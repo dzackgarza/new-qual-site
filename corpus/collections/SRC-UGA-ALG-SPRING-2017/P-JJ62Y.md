@@ -28,7 +28,7 @@ $$
 **Goal:** Compute the Galois group of the splitting field of $x^5 - 2$ as an affine matrix group over $\mathbb{F}_5$, and classify all normal subgroups to determine the Galois intermediate extensions.
 
 <1>1. Part (a): Splitting field and extension degree.
-    *Proof:*
+::: {.proof}
     <2>1. The roots of $x^5 - 2$ in $\mathbb{C}$ are $\alpha_k = \sqrt[5]{2} \zeta_5^k$ for $k \in \{0, 1, 2, 3, 4\}$, where $\sqrt[5]{2} \in \mathbb{R}$ is the real 5-th root and $\zeta_5 = e^{2\pi i / 5}$ is a primitive 5-th root of unity.
     <2>2. The splitting field is $K = \mathbb{Q}(\sqrt[5]{2}, \zeta_5)$.
     <2>3. By Eisenstein's criterion with $p = 2$, $x^5 - 2$ is irreducible over $\mathbb{Q}$, so $[\mathbb{Q}(\sqrt[5]{2}) : \mathbb{Q}] = 5$.
@@ -37,8 +37,10 @@ $$
     $$[K : \mathbb{Q}] = [\mathbb{Q}(\sqrt[5]{2}) : \mathbb{Q}] \cdot [\mathbb{Q}(\zeta_5) : \mathbb{Q}] = 5 \cdot 4 = 20.$$
     <2>6. Thus $|G| = |\operatorname{Gal}(K/\mathbb{Q})| = 20$.
 
+:::
+
 <1>2. Part (a): Group isomorphism with $\operatorname{Aff}(\mathbb{F}_5)$.
-    *Proof:*
+::: {.proof}
     <2>1. Any automorphism $\sigma \in G = \operatorname{Gal}(K/\mathbb{Q})$ is uniquely determined by its action on the generators $\zeta_5$ and $\sqrt[5]{2}$.
     <2>2. Since $\sigma(\zeta_5)$ must be a primitive 5-th root of unity and $\sigma(\sqrt[5]{2})$ must be a root of $x^5 - 2$:
     $$\sigma(\zeta_5) = \zeta_5^a \quad \text{for some } a \in \mathbb{F}_5^\times = \{1, 2, 3, 4\},$$
@@ -55,8 +57,10 @@ $$
     <2>8. Thus $\Psi$ is a group homomorphism. Since $\Psi(\sigma_{a, b}) = I \iff a = 1, b = 0 \iff \sigma_{a, b} = \operatorname{id}$, $\Psi$ is injective.
     <2>9. Since both groups have order 20, $\Psi$ is an isomorphism.
 
+:::
+
 <1>3. Part (b): Classification of Galois intermediate fields.
-    *Proof:*
+::: {.proof}
     <2>1. By the Fundamental Theorem of Galois Theory, intermediate fields $E$ that are Galois over $\mathbb{Q}$ correspond bijectively to normal subgroups $N \trianglelefteq G$.
     <2>2. Structure of normal subgroups of $G \cong \operatorname{Aff}(\mathbb{F}_5) \cong \mathbb{Z}/5\mathbb{Z} \rtimes \mathbb{Z}/4\mathbb{Z}$:
         - Sylow 5-subgroup: $N_5 = \left\{ \begin{pmatrix} 1 & b \\ 0 & 1 \end{pmatrix} \;\middle|\; b \in \mathbb{F}_5 \right\} \cong \mathbb{Z}/5\mathbb{Z}$.
@@ -78,7 +82,10 @@ $$
     <2>6. The corresponding intermediate fields Galois over $\mathbb{Q}$ are:
     $$\mathbb{Q}, \quad \mathbb{Q}(\sqrt{5}), \quad \mathbb{Q}(\zeta_5), \quad \mathbb{Q}(\sqrt[5]{2}, \zeta_5).$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\operatorname{Gal}(K/\mathbb{Q}) \cong \operatorname{Aff}(\mathbb{F}_5)$, and the intermediate fields Galois over $\mathbb{Q}$ are $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\zeta_5)$, and $K$.
+:::
 :::

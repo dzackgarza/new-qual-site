@@ -29,7 +29,7 @@ Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of conv
 **Goal:** Provide examples illustrating boundary convergence/divergence vs analyticity, and prove that every power series with radius of convergence 1 has at least one singularity on its circle of convergence.
 
 <1>1. Part (a): Example converging everywhere on $S^1$.
-    *Proof:*
+::: {.proof}
     <2>1. Define the power series
     $$f(z) = \sum_{n=1}^\infty \frac{z^n}{n^2}.$$
     <2>2. Radius of convergence:
@@ -40,8 +40,10 @@ Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of conv
         - By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\mathbb{D}} = \{|z| \le 1\}$.
     <2>4. Thus $f(z)$ converges at every point of $S^1$.
 
+:::
+
 <1>2. Part (b): Example analytic at $z = 1$ with divergent series $\sum a_n$.
-    *Proof:*
+::: {.proof}
     <2>1. Define the function
     $$f(z) = \frac{1}{1 + z} = \sum_{n=0}^\infty (-1)^n z^n \quad \text{for } |z| < 1.$$
     <2>2. Radius of convergence: $R = 1$ because the sequence of coefficients is $a_n = (-1)^n$, so $\limsup_{n \to \infty} |a_n|^{1/n} = 1$.
@@ -52,8 +54,10 @@ Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of conv
         - At $z = 1$, $\sum_{n=0}^\infty a_n 1^n = \sum_{n=0}^\infty (-1)^n = 1 - 1 + 1 - 1 + \cdots$.
         - The sequence of terms does not converge to 0 ($\lim_{n \to \infty} (-1)^n \ne 0$), so the series diverges by the Divergence Test.
 
+:::
+
 <1>3. Part (c): $f$ cannot be analytic at every point of $S^1$.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose for contradiction that $f$ can be analytically continued across every point of $S^1$.
     <2>2. Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \mathbb{C}$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \mathbb{D}$.
     <2>3. Open cover of compact $S^1$:
@@ -73,8 +77,11 @@ Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of conv
         - This contradicts the hypothesis that the radius of convergence is exactly 1.
     <2>7. Therefore, $f$ must have at least one singular point on $S^1$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\sum z^n/n^2$ converges on $S^1$, $\frac{1}{1+z}$ is analytic at 1 with divergent series, and every power series has a singularity on its circle of convergence by compactness and Taylor's theorem.
+:::
 :::
 

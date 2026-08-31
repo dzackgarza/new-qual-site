@@ -28,7 +28,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 **Goal:** Prove that the extension degree $[F(\omega) : F]$ for a primitive $n$-th root of unity over $\mathbb{F}_q$ equals the multiplicative order of $q$ modulo $n$.
 
 <1>1. Part (a): $n$ divides $q^k - 1$.
-    *Proof:*
+::: {.proof}
     <2>1. The field $E = F(\omega)$ is a finite field extension of $F = \mathbb{F}_q$ of degree $[E : F] = k$.
     <2>2. The cardinality of $E$ is $|E| = |F|^k = q^k$.
     <2>3. The multiplicative group of units $E^\times = E \setminus \{0\}$ has order $|E^\times| = q^k - 1$.
@@ -36,15 +36,19 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
     <2>5. By Lagrange's Theorem for finite groups, the order of any element divides the order of the group.
     <2>6. Thus $n$ divides $q^k - 1$.
 
+:::
+
 <1>2. Part (b): $m$ divides $k$.
-    *Proof:*
+::: {.proof}
     <2>1. By Part (a), $n \mid (q^k - 1)$, which means $q^k \equiv 1 \pmod n$.
     <2>2. Since $\gcd(n, q) = 1$, the residue class $[q]_n \in (\mathbb{Z}/n\mathbb{Z})^\times$ has finite order $m = \operatorname{ord}_n(q)$.
     <2>3. In any group, $g^k = e$ if and only if the order $\operatorname{ord}(g)$ divides $k$.
     <2>4. Applying this to $[q]_n \in (\mathbb{Z}/n\mathbb{Z})^\times$ yields $m \mid k$.
 
+:::
+
 <1>3. Part (c): $m = k$.
-    *Proof:*
+::: {.proof}
     <2>1. Since $m = \operatorname{ord}_n(q)$, $q^m \equiv 1 \pmod n$, so $n$ divides $q^m - 1$.
     <2>2. Let $K = \mathbb{F}_{q^m}$ be the unique subfield of $\overline{F}$ with $q^m$ elements, which is an extension of $F = \mathbb{F}_q$ of degree $[K : F] = m$.
     <2>3. The multiplicative group $K^\times$ is cyclic of order $q^m - 1$.
@@ -58,8 +62,11 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
     <2>9. This implies $k \le m$ (and $k \mid m$).
     <2>10. Combining $m \mid k$ (from Part (b)) and $k \le m$ with $k, m \ge 1$ forces $m = k$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $n \mid (q^k - 1)$, $m \mid k$, and $[F(\omega) : F] = m = \operatorname{ord}_n(q)$.
+:::
 :::
 

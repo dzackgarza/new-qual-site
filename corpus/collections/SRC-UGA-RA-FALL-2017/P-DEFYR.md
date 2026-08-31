@@ -29,7 +29,7 @@ $$
 **Goal:** Prove pointwise convergence to zero and failure of uniform convergence in (a) via the supremum of $f_n$, and evaluate the integral limit in (b) using the Squeeze Theorem.
 
 <1>1. Part (a): Pointwise convergence $f_n(x) \to 0$ on $[0, 1]$.
-    *Proof:*
+::: {.proof}
     <2>1. For $x = 0$: $f_n(0) = n \cdot 0 \cdot (1 - 0)^n = 0 \to 0$ as $n \to \infty$.
     <2>2. For $x = 1$: $f_n(1) = n \cdot 1 \cdot (1 - 1)^n = 0 \to 0$ as $n \to \infty$.
     <2>3. For $x \in (0, 1)$: let $r = 1 - x \in (0, 1)$. Then $f_n(x) = x \cdot n r^n$.
@@ -38,8 +38,10 @@ $$
     <2>5. Thus for each fixed $x \in (0, 1)$, $\lim_{n \to \infty} f_n(x) = x \cdot 0 = 0$.
     <2>6. Therefore $f_n \to 0$ pointwise on $[0, 1]$.
 
+:::
+
 <1>2. Part (a): Convergence is not uniform on $[0, 1]$.
-    *Proof:*
+::: {.proof}
     <2>1. Compute the derivative of $f_n$ on $(0, 1)$:
     $$f_n'(x) = n (1 - x)^n - n^2 x (1 - x)^{n-1} = n (1 - x)^{n-1} \left( (1 - x) - n x \right) = n (1 - x)^{n-1} (1 - (n + 1)x).$$
     <2>2. On $[0, 1]$, $f_n'(x) = 0$ at the unique critical point $x_n = \frac{1}{n + 1} \in (0, 1)$.
@@ -49,8 +51,10 @@ $$
     $$\lim_{n \to \infty} \|f_n\|_\infty = \lim_{n \to \infty} \frac{n}{n+1} \cdot \lim_{n \to \infty} \left(1 - \frac{1}{n+1}\right)^n = 1 \cdot e^{-1} = \frac{1}{e} > 0.$$
     <2>5. Since $\lim_{n \to \infty} \|f_n - 0\|_\infty = e^{-1} \ne 0$, $f_n$ does not converge uniformly to $0$ on $[0, 1]$.
 
+:::
+
 <1>3. Part (b): $\lim_{n \to \infty} \int_0^1 n (1 - x)^n \sin x \, dx = 0$.
-    *Proof:*
+::: {.proof}
     <2>1. For all $x \in [0, 1]$, $0 \le \sin x \le x$.
     <2>2. Multiply by the non-negative kernel $n (1 - x)^n \ge 0$:
     $$0 \le n (1 - x)^n \sin x \le n x (1 - x)^n = f_n(x) \quad \text{for all } x \in [0, 1].$$
@@ -61,7 +65,10 @@ $$
     <2>5. Since $\lim_{n \to \infty} \frac{n}{(n+1)(n+2)} = 0$, by the Squeeze Theorem:
     $$\lim_{n \to \infty} \int_0^1 n (1 - x)^n \sin x \, dx = 0.$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $f_n \to 0$ pointwise with $\|f_n\|_\infty \to 1/e$ (non-uniform), and the integral limit is 0 by the Squeeze Theorem.
+:::
 :::

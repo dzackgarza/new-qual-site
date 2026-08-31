@@ -35,7 +35,7 @@ $$
 **Goal:** Prove Bessel's inequality in (a) by expanding the norm of orthogonal projections, and prove the Riesz–Fischer theorem in (b) by establishing convergence of orthogonal series in complete inner product spaces.
 
 <1>1. Part (a): Bessel's inequality $\sum_{n=1}^\infty |\langle x, u_n \rangle|^2 \le \|x\|^2$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $N \in \mathbb{N}$ and consider the $N$-th partial sum $S_N = \sum_{n=1}^N \langle x, u_n \rangle u_n \in \mathcal{H}$.
     <2>2. Expand the squared norm of $x - S_N$:
     $$\|x - S_N\|^2 = \langle x - S_N, x - S_N \rangle = \|x\|^2 - \langle x, S_N \rangle - \langle S_N, x \rangle + \|S_N\|^2.$$
@@ -51,8 +51,10 @@ $$
     <2>7. Since this holds for every $N \in \mathbb{N}$ and the sequence of partial sums of non-negative terms is non-decreasing, taking the limit as $N \to \infty$ gives
     $$\sum_{n=1}^\infty |\langle x, u_n \rangle|^2 \le \|x\|^2.$$
 
+:::
+
 <1>2. Part (b): Existence of $x \in \mathcal{H}$ with $\langle x, u_n \rangle = a_n$ and $\|x\|^2 = \sum |a_n|^2$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $(a_n)_{n=1}^\infty \in \ell^2(\mathbb{N})$, so $\sum_{n=1}^\infty |a_n|^2 < \infty$.
     <2>2. Define the sequence of partial sums $s_N = \sum_{n=1}^N a_n u_n \in \mathcal{H}$.
     <2>3. For any $M > N \ge 1$, by the Pythagorean theorem for orthonormal systems:
@@ -66,7 +68,10 @@ $$
     <2>8. Norm of $x$: By the continuity of the Hilbert space norm:
     $$\|x\|^2 = \lim_{N \to \infty} \|s_N\|^2 = \lim_{N \to \infty} \sum_{n=1}^N |a_n|^2 = \sum_{n=1}^\infty |a_n|^2 = \sum_{n=1}^\infty |\langle x, u_n \rangle|^2.$$
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     Bessel's inequality holds for all $x \in \mathcal{H}$, and every $\ell^2$ sequence corresponds to an element $x \in \mathcal{H}$ satisfying Parseval's equality.
+:::
 :::

@@ -31,7 +31,7 @@ $$
 **Goal:** Prove conjugacy of stabilizers in (a), prove that conjugates of a proper subgroup do not cover $G$ in (b), and deduce the existence of a fixed-point-free element (derangement) for transitive actions in (c).
 
 <1>1. Part (a): Conjugacy of stabilizers in an orbit.
-    *Proof:*
+::: {.proof}
     <2>1. Let $x \in X$ and $g \in G$, and let $y = g \cdot x \in X$.
     <2>2. An element $h \in G$ stabilizes $y$ if and only if $h \cdot y = y$.
     <2>3. Substituting $y = g \cdot x$:
@@ -40,8 +40,10 @@ $$
     $$g^{-1} h g \in G_x \iff h \in g G_x g^{-1}.$$
     <2>5. Therefore $G_y = G_{g \cdot x} = g G_x g^{-1}$.
 
+:::
+
 <1>2. Part (b): Conjugates of a proper subgroup do not cover $G$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $N_G(H) = \{g \in G : g H g^{-1} = H\}$ be the normalizer of $H$ in $G$.
     <2>2. The distinct conjugates of $H$ in $G$ are parameterized by the cosets of $N_G(H)$, so there are precisely $k = [G : N_G(H)]$ distinct conjugates $H_1, H_2, \dots, H_k$.
     <2>3. Since $H \le N_G(H) \le G$, by the tower law of indices $[G : H] = [G : N_G(H)] [N_G(H) : H] \ge [G : N_G(H)] = k$.
@@ -56,8 +58,10 @@ $$
     $$\left| \bigcup_{g \in G} g H g^{-1} \right| \le |G| + 1 - [G : H] \le |G| - 1 < |G|.$$
     <2>10. Therefore $\bigcup_{g \in G} g H g^{-1} \subsetneq G$.
 
+:::
+
 <1>3. Part (c): Transitive actions on $|S| \ge 2$ have a fixed-point-free element.
-    *Proof:*
+::: {.proof}
     <2>1. Method 1 (via Part (b)):
         <3>1. Choose an arbitrary point $s_0 \in S$, and let $H = G_{s_0} \le G$ be its stabilizer.
         <3>2. By the Orbit-Stabilizer Theorem, since the action is transitive, $[G : H] = |G \cdot s_0| = |S| \ge 2$.
@@ -77,7 +81,10 @@ $$
         a contradiction.
         <3>5. Thus there exists at least one $g \in G$ with $|X^g| = 0$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     Stabilizers in an orbit are conjugate, conjugates of a proper subgroup cannot cover a finite group, and transitive actions on sets of size $\ge 2$ always contain derangements.
+:::
 :::

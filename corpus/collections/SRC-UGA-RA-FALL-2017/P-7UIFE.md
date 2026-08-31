@@ -31,7 +31,7 @@ Prove:
 **Goal:** Prove that convolution with a smooth compactly supported mollifier yields smooth functions in (a), and that $K_j$ acts as an approximate identity in $L^1(\mathbb{R})$ in (b).
 
 <1>1. Part (a): Smoothness and support of $f * K_j$.
-    *Proof:*
+::: {.proof}
     <2>1. Change of variables in convolution:
         For any $x \in \mathbb{R}$, by substitution $y = x - t$:
         $$(f * K_j)(x) = \int_\mathbb{R} f(y) K_j(x - y) \, dy = \int_\mathbb{R} f(y) j \varphi(j(x - y)) \, dy.$$
@@ -51,8 +51,10 @@ Prove:
         If $\operatorname{supp}(f) \subseteq [-M, M]$, then since $\operatorname{supp}(K_j) \subseteq [-N/j, N/j]$, the convolution vanishes whenever $x - y \notin [-N/j, N/j]$ for all $y \in [-M, M]$.
         Thus $\operatorname{supp}(f * K_j) \subseteq \operatorname{supp}(f) + \operatorname{supp}(K_j) \subseteq [-M - N/j, M + N/j]$, which is compact.
 
+:::
+
 <1>2. Part (b): $L^1$ convergence $\lim_{j \to \infty} \|f * K_j - f\|_{L^1} = 0$.
-    *Proof:*
+::: {.proof}
     <2>1. Normalization identity:
         Using $\int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} j \varphi(jy) \, dy = \int_\mathbb{R} \varphi(u) \, du = 1$, we write
         $$f(x) = f(x) \int_\mathbb{R} K_j(y) \, dy = \int_\mathbb{R} f(x) K_j(y) \, dy.$$
@@ -75,8 +77,11 @@ Prove:
         $$\lim_{j \to \infty} \int_{-N}^N |\varphi(u)| \|\tau_{u/j} f - f\|_{L^1} \, du = \int_{-N}^N |\varphi(u)| \cdot 0 \, du = 0.$$
     <2>6. Therefore $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     $f * K_j \in C^\infty(\mathbb{R})$, with compact support if $f$ has compact support, and $f * K_j \to f$ in $L^1(\mathbb{R})$.
+:::
 :::
 

@@ -25,7 +25,7 @@ review: draft
 **Goal:** Prove that integral domains admitting non-integral monic factorizations in their fraction field are not UFDs via Gauss's Lemma, and apply this to $x^2 - 2$ over $\mathbb{Z}[2\sqrt{2}]$.
 
 <1>1. Part (a): $R$ is not a UFD.
-    *Proof:*
+::: {.proof}
     <2>1. Suppose for contradiction that $R$ is a UFD.
     <2>2. Gauss's Lemma for UFDs states that if a monic polynomial $p(x) \in R[x]$ factors as $p(x) = a(x) b(x)$ for non-constant monic polynomials $a(x), b(x) \in F[x]$, then there exist elements $c, d \in F^\times$ such that
     $$c a(x) \in R[x], \quad d b(x) \in R[x], \quad \text{and} \quad c d = 1.$$
@@ -39,8 +39,10 @@ review: draft
     <2>9. This contradicts the hypothesis that $a(x) \notin R[x]$.
     <2>10. Therefore, $R$ is not a UFD.
 
+:::
+
 <1>2. Part (b): $\mathbb{Z}[2\sqrt{2}]$ is not a UFD.
-    *Proof:*
+::: {.proof}
     <2>1. Set $R = \mathbb{Z}[2\sqrt{2}] = \{u + 2v\sqrt{2} \mid u, v \in \mathbb{Z}\}$.
     <2>2. The fraction field of $R$ is $F = \mathbb{Q}(\sqrt{2})$.
     <2>3. Define $p(x) = x^2 - 2$. Since $-2 \in R$, $p(x) \in R[x]$, and $p(x)$ is monic.
@@ -55,8 +57,11 @@ review: draft
     <2>6. All hypotheses of Part (a) hold for $p(x) = x^2 - 2 \in R[x]$ and $a(x) = x - \sqrt{2} \in F[x] \setminus R[x]$.
     <2>7. Therefore, by Part (a), $\mathbb{Z}[2\sqrt{2}]$ is not a UFD.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     Monics factoring in $F[x]$ with non-integral factors contradict Gauss's Lemma for UFDs, so $\mathbb{Z}[2\sqrt{2}]$ is not a UFD via $x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})$.
+:::
 :::
 

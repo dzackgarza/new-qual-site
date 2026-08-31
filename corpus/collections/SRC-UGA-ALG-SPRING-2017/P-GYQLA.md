@@ -25,7 +25,7 @@ Prove that $\pi(x)$ is an odd permutation if and only if the order $\operatornam
 **Goal:** Prove that the sign of the left regular permutation $\pi(x)$ is $(-1)^{m(k-1)}$, where $k = \operatorname{ord}(\pi(x))$ and $m = |G|/k$, and characterize when it is odd.
 
 <1>1. Disjoint cycle decomposition of $\pi(x)$:
-    *Proof:*
+::: {.proof}
     <2>1. Let $x \in G$, and let $k = \operatorname{ord}(x)$ be the order of $x$ in $G$.
     <2>2. Since the left regular action is faithful, $\operatorname{ord}(\pi(x)) = \operatorname{ord}(x) = k$.
     <2>3. The permutation $\pi(x)$ acts on the finite set $G$ by left multiplication $g \mapsto x g$.
@@ -38,16 +38,20 @@ Prove that $\pi(x)$ is an odd permutation if and only if the order $\operatornam
     $$m = [G : \langle x \rangle] = \frac{|G|}{k} = \frac{|G|}{\operatorname{ord}(\pi(x))}.$$
     <2>8. Thus $\pi(x)$ decomposes into the product of $m$ disjoint cycles of length $k$.
 
+:::
+
 <1>2. Parity and sign of $\pi(x)$:
-    *Proof:*
+::: {.proof}
     <2>1. A cycle of length $k$ can be factored into a product of $k - 1$ transpositions:
     $$(c_1, c_2, \dots, c_k) = (c_1, c_k)(c_1, c_{k-1}) \cdots (c_1, c_2).$$
     <2>2. Thus the sign of a $k$-cycle is $\operatorname{sgn}(\text{cycle of length } k) = (-1)^{k - 1}$.
     <2>3. Because the sign homomorphism $\operatorname{sgn}: \operatorname{Sym}(G) \to \{\pm 1\}$ is multiplicative on products of disjoint cycles:
     $$\operatorname{sgn}(\pi(x)) = \left( (-1)^{k - 1} \right)^m = (-1)^{m(k - 1)}.$$
 
+:::
+
 <1>3. Characterization of odd permutations:
-    *Proof:*
+::: {.proof}
     <2>1. By definition, $\pi(x)$ is an odd permutation if and only if $\operatorname{sgn}(\pi(x)) = -1$.
     <2>2. From <1>2, $(-1)^{m(k - 1)} = -1$ if and only if the exponent $m(k - 1)$ is an odd integer.
     <2>3. A product of two integers is odd if and only if both factors are odd:
@@ -56,7 +60,10 @@ Prove that $\pi(x)$ is an odd permutation if and only if the order $\operatornam
     <2>5. Thus $\operatorname{sgn}(\pi(x)) = -1$ if and only if $k$ is even and $m$ is odd.
     <2>6. Substituting $k = \operatorname{ord}(\pi(x))$ and $m = |G|/\operatorname{ord}(\pi(x))$ completes the equivalence.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $\pi(x)$ is an odd permutation if and only if $\operatorname{ord}(\pi(x))$ is even and $|G|/\operatorname{ord}(\pi(x))$ is odd.
+:::
 :::

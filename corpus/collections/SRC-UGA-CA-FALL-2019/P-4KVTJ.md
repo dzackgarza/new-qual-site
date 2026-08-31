@@ -29,7 +29,7 @@ $$
 **Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{|\xi| = R\}$, and taking the limit as $R \to \infty$.
 
 <1>1. Asymptotic limit of the integral along a large circle $C_R$:
-    *Proof:*
+::: {.proof}
     <2>1. Let $C_R$ denote the circle $\{|\xi| = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \mathbb{D}_R$ and (if $z \in \Omega_2$) $|z| < R$.
     <2>2. Split the integral along $C_R$:
     $$\frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = \frac{A}{2\pi i} \int_{C_R} \frac{d\xi}{\xi - z} + \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi) - A}{\xi - z} \, d\xi.$$
@@ -44,8 +44,10 @@ $$
     <2>5. Therefore:
     $$\lim_{R \to \infty} \frac{1}{2\pi i} \int_{C_R} \frac{f(\xi)}{\xi - z} \, d\xi = A \cdot 1 + 0 = A.$$
 
+:::
+
 <1>2. Case $z \in \Omega_1$:
-    *Proof:*
+::: {.proof}
     <2>1. Let $z \in \Omega_1$.
     <2>2. Choose $R > 0$ large enough that $\gamma \subset \mathbb{D}_R$.
     <2>3. Consider the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$ between $\gamma$ and $C_R$.
@@ -58,8 +60,10 @@ $$
     <2>8. Since the left-hand side $F(z)$ is independent of $R$, take $R \to \infty$ and apply <1>1:
     $$F(z) = A.$$
 
+:::
+
 <1>3. Case $z \in \Omega_2$:
-    *Proof:*
+::: {.proof}
     <2>1. Let $z \in \Omega_2$.
     <2>2. Choose $R > |z|$ large enough that $\gamma \subset \mathbb{D}_R$.
     <2>3. Now the point $z$ lies in the interior of the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$.
@@ -73,7 +77,10 @@ $$
     <2>8. Taking $R \to \infty$ and applying <1>1:
     $$F(z) = -f(z) + A.$$
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     $F(z) = A$ for $z \in \Omega_1$ and $F(z) = -f(z) + A$ for $z \in \Omega_2$.
+:::
 :::

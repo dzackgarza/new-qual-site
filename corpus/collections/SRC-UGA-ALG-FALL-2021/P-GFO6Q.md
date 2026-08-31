@@ -32,7 +32,7 @@ $$
 **Goal:** Prove that quotients by maximal ideals in finite-dimensional $\mathbb{C}$-algebras are $\mathbb{C}$ in (a), construct an evaluation map for 2-dimensional algebras in (b), and classify 2-dimensional algebras via quotient polynomials in (c).
 
 <1>1. Part (a): $\operatorname{codim}_R \mathfrak{m} = 1$ for every maximal ideal $\mathfrak{m}$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $\mathfrak{m} \subset R$ be a maximal ideal.
     <2>2. The quotient ring $K = R/\mathfrak{m}$ is a simple $\mathbb{C}$-algebra.
     <2>3. Since $R$ is a finite-dimensional $\mathbb{C}$-algebra and $\mathfrak{m}$ is a proper subspace, $K$ is a non-zero finite-dimensional $\mathbb{C}$-algebra:
@@ -48,8 +48,10 @@ $$
     <2>11. Thus $K = \mathbb{C} \cdot 1_K \cong \mathbb{C}$, so $\dim_{\mathbb{C}}(R/\mathfrak{m}) = 1$.
     <2>12. Therefore $\operatorname{codim}_R \mathfrak{m} = \dim_{\mathbb{C}} R - \dim_{\mathbb{C}} \mathfrak{m} = \dim_{\mathbb{C}}(R/\mathfrak{m}) = 1$.
 
+:::
+
 <1>2. Part (b): Existence of a surjective $\mathbb{C}$-algebra homomorphism $\phi: \mathbb{C}[t] \to R$.
-    *Proof:*
+::: {.proof}
     <2>1. Since $R$ is a unital $\mathbb{C}$-algebra, $1_R \ne 0$, so $\mathbb{C} \cdot 1_R$ is a 1-dimensional subspace of $R$.
     <2>2. Since $\dim_{\mathbb{C}} R = 2$, choose an element $x \in R \setminus (\mathbb{C} \cdot 1_R)$.
     <2>3. The set $\{1_R, x\}$ is linearly independent over $\mathbb{C}$, hence forms a $\mathbb{C}$-basis of $R$.
@@ -59,8 +61,10 @@ $$
     <2>6. Since $\operatorname{Im}(\phi)$ contains the basis $\{1_R, x\}$, $\operatorname{Im}(\phi) = R$.
     <2>7. Thus $\phi$ is surjective.
 
+:::
+
 <1>3. Part (c): Classification of 2-dimensional $\mathbb{C}$-algebras and their maximal ideals.
-    *Proof:*
+::: {.proof}
     <2>1. By the First Isomorphism Theorem for rings, $R \cong \mathbb{C}[t] / \ker(\phi)$.
     <2>2. Since $\phi$ is surjective and $\dim_{\mathbb{C}} R = 2$, $\dim_{\mathbb{C}}(\mathbb{C}[t]/\ker(\phi)) = 2$.
     <2>3. Since $\mathbb{C}[t]$ is a PID, $\ker(\phi) = (f(t))$ for a unique monic quadratic polynomial $f(t) = t^2 + a t + b \in \mathbb{C}[t]$.
@@ -81,7 +85,10 @@ $$
           $$\mathfrak{m} = (\epsilon) = \mathbb{C} \cdot \epsilon.$$
     <2>7. Thus there are exactly two isomorphism classes of 2-dimensional unital $\mathbb{C}$-algebras: $\mathbb{C} \times \mathbb{C}$ and $\mathbb{C}[\epsilon]/(\epsilon^2)$.
 
+:::
+
 <1>4. Conclusion:
-    *Proof:*
+::: {.proof}
     Every maximal ideal has codimension 1, every 2-dimensional $\mathbb{C}$-algebra is a quotient of $\mathbb{C}[t]$, and the only two isomorphism classes are $\mathbb{C} \times \mathbb{C}$ (with 2 maximal ideals) and $\mathbb{C}[\epsilon]/(\epsilon^2)$ (with 1 maximal ideal).
+:::
 :::

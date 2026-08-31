@@ -27,7 +27,7 @@ Let $G$ be a finite group whose order is divisible by a prime number $p$, and le
 **Goal:** Prove that a normal $p$-subgroup is contained in the intersection of all Sylow $p$-subgroups in (a), and deduce that a maximal subgroup either contains $P$ or has $p$-power index in (b).
 
 <1>1. Part (a): $P$ is contained in every Sylow $p$-subgroup of $G$.
-    *Proof:*
+::: {.proof}
     <2>1. By the Sylow Theorems, $G$ contains at least one Sylow $p$-subgroup $Q_0 \in \operatorname{Syl}_p(G)$, and every $p$-subgroup of $G$ is contained in some Sylow $p$-subgroup.
     <2>2. Since $P$ is a $p$-subgroup of $G$, choose a Sylow $p$-subgroup $Q_0 \in \operatorname{Syl}_p(G)$ such that $P \subseteq Q_0$.
     <2>3. Let $Q \in \operatorname{Syl}_p(G)$ be an arbitrary Sylow $p$-subgroup.
@@ -38,8 +38,10 @@ Let $G$ be a finite group whose order is divisible by a prime number $p$, and le
     <2>7. Thus $P \subseteq Q$.
     <2>8. Since $Q \in \operatorname{Syl}_p(G)$ was arbitrary, $P \subseteq \bigcap_{Q \in \operatorname{Syl}_p(G)} Q$.
 
+:::
+
 <1>2. Part (b): Either $P \subseteq M$ or $[G : M] = p^b$ with $1 \le b \le c$.
-    *Proof:*
+::: {.proof}
     <2>1. Let $M < G$ be a maximal proper subgroup.
     <2>2. If $P \subseteq M$, the first alternative holds.
     <2>3. Suppose $P \not\subseteq M$.
@@ -54,8 +56,11 @@ Let $G$ be a finite group whose order is divisible by a prime number $p$, and le
     $$[G : M] = \frac{p^c}{p^a} = p^{c - a} = p^b,$$
     where $1 \le b \le c$.
 
+:::
+
 <1>3. Conclusion:
-    *Proof:*
+::: {.proof}
     $P$ lies in every Sylow $p$-subgroup, and any maximal subgroup not containing $P$ has index $p^b$ with $1 \le b \le c$.
+:::
 :::
 

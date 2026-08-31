@@ -28,14 +28,16 @@ audit:
 **Goal:** Prove simplicity of $A_5$, non-solvability of $S_5$, and detail Galois's criterion for solvability by radicals.
 
 <1>1. Solvability by Radicals and Galois Criterion:
-    *Proof:*
+::: {.proof}
     <2>1. A polynomial $f(x) \in F[x]$ is **solvable by radicals** if its roots lie in a radical extension tower:
         $$F = K_0 \subseteq K_1 \subseteq K_2 \subseteq \cdots \subseteq K_m$$
         where each step $K_{i+1} = K_i(\alpha_i)$ with $\alpha_i^{n_i} \in K_i$ for some integer $n_i \ge 2$.
     <2>2. **Theorem (Galois):** A polynomial $f(x) \in F[x]$ is solvable by radicals if and only if its Galois group $\operatorname{Gal}(f/F)$ is a **solvable group**.
 
+:::
+
 <1>2. Simplicity of $A_5$:
-    *Proof:*
+::: {.proof}
     <2>1. The alternating group $A_5$ has order $|A_5| = 5!/2 = 60$.
     <2>2. We compute the conjugacy classes of $A_5$ by cycle types:
         - Identity: $1$ element ($e$).
@@ -61,8 +63,10 @@ audit:
     <2>7. Thus the only divisors obtainable as class sums are $1$ and $60$.
     <2>8. Therefore, the only normal subgroups of $A_5$ are $\{e\}$ and $A_5$, proving $A_5$ is **simple**.
 
+:::
+
 <1>3. Insolvability of $S_5$ and General Quintics:
-    *Proof:*
+::: {.proof}
     <2>1. The composition series of $S_5$ is:
         $$\{e\} \triangleleft A_5 \triangleleft S_5.$$
     <2>2. The composition factors are:
@@ -71,6 +75,8 @@ audit:
     <2>3. Since $A_5$ is simple and non-abelian ($|A_5| = 60$ is not prime), its composition series cannot be refined to abelian factors.
     <2>4. Therefore, $S_5$ is **not solvable**.
     <2>5. By Galois Theory, any quintic polynomial over $\mathbb{Q}$ with Galois group $S_5$ (e.g. $f(x) = x^5 - 4x - 2$) cannot be solved by radicals (Abel-Ruffini Theorem).
+
+:::
 
 <1>4. Conclusion:
     $A_5$ is simple via class size sums $\{1, 12, 12, 15, 20\}$, making $S_5$ non-solvable and preventing radical solutions for quintics. Q.E.D.

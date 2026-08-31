@@ -36,21 +36,25 @@ splits.
 **Goal:** Define free and torsion-free modules, prove that free modules are projective (surjective maps split), and deduce the direct sum decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over PIDs.
 
 <1>1. Part (a): Definition of a free $R$-module.
-    *Proof:*
+::: {.proof}
     An $R$-module $F$ is called **free** if it satisfies any of the following equivalent conditions:
     1. $F$ possesses an $R$-basis: a subset $B \subseteq F$ such that every element $m \in F$ can be expressed uniquely as a finite $R$-linear combination $m = \sum_{b \in B} r_b b$ with coefficients $r_b \in R$.
     2. $F$ is isomorphic to a direct sum of copies of the regular module $R$: $F \cong \bigoplus_{b \in B} R$.
     3. Universal property of free modules: There exists a subset $B \subseteq F$ such that for every $R$-module $Y$ and every set map $f: B \to Y$, there exists a unique $R$-module homomorphism $\tilde{f}: F \to Y$ such that $\tilde{f}|_B = f$.
 
+:::
+
 <1>2. Part (b): Definition of a torsion-free $R$-module.
-    *Proof:*
+::: {.proof}
     Let $R$ be an integral domain (or a commutative ring).
     1. An element $m \in M$ is called a **torsion element** if there exists a non-zero element $r \in R \setminus \{0\}$ such that $r m = 0$.
     2. The **torsion submodule** is $\operatorname{tor}(M) = \{m \in M \mid \exists r \in R \setminus \{0\}, \, r m = 0\}$.
     3. An $R$-module $M$ is called **torsion-free** if $\operatorname{tor}(M) = \{0\}$; that is, for all $r \in R$ and $m \in M$, $r m = 0$ implies $r = 0$ or $m = 0$.
 
+:::
+
 <1>3. Part (c): Splitting of $0 \to N \xrightarrow{\iota} M \xrightarrow{\pi} F \to 0$ when $F$ is free.
-    *Proof:*
+::: {.proof}
     <2>1. Let $B \subseteq F$ be an $R$-basis of the free module $F$.
     <2>2. Construct a set map on the basis: Since $\pi: M \to F$ is surjective, for each basis element $b \in B$, the fiber $\pi^{-1}(\{b\})$ is non-empty. Choose an element $y_b \in M$ such that $\pi(y_b) = b$.
     <2>3. Extend to a module homomorphism: By the universal property of the free module $F$ (Part (a)), there exists a unique $R$-module homomorphism $\sigma: F \to M$ such that $\sigma(b) = y_b$ for all $b \in B$.
@@ -61,8 +65,10 @@ splits.
         - Thus $\pi \circ \sigma = \operatorname{id}_F$.
     <2>5. By the Splitting Lemma, the exact sequence splits, and $M \cong \iota(N) \oplus \sigma(F) \cong N \oplus F$.
 
+:::
+
 <1>4. Part (d): Decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over a PID.
-    *Proof:*
+::: {.proof}
     <2>1. Define $T = \operatorname{tor}(M)$. Since $R$ is a PID (hence an integral domain), $T$ is an $R$-submodule of $M$.
     <2>2. Consider the canonical short exact sequence:
     $$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
@@ -81,7 +87,10 @@ splits.
     $$M \cong T \oplus M/T = \operatorname{tor}(M) \oplus F,$$
     where $\operatorname{tor}(M)$ is a torsion module and $F \cong M/T$ is a free module.
 
+:::
+
 <1>5. Conclusion:
-    *Proof:*
+::: {.proof}
     Free modules have bases, torsion-free modules have no non-zero annihilators, surjections onto free modules split, and finitely generated modules over PIDs decompose as $\operatorname{tor}(M) \oplus F$.
+:::
 :::
