@@ -57,7 +57,7 @@ Show that $f(N)$ is normal; conclude that $\ker(g \circ f) = f^{-1}(\ker g) \sub
     <2>1. Taking preimages under $f$ gives:
         $$\ker(g \circ f) = f^{-1}(\ker g) \subseteq f^{-1}(f(N)).$$
     <2>2. We claim $f^{-1}(f(N)) = N$:
-        - Clearly $N \subseteq f^{-1}(f(N))$.
+        - We have $N \subseteq f^{-1}(f(N))$: for any $n \in N$, $f(n) \in f(N)$, so $n \in f^{-1}(f(N))$ by definition of the preimage.
         - If $x \in f^{-1}(f(N))$, then $f(x) = f(n)$ for some $n \in N$.
         - Then $f(x n^{-1}) = f(x) f(n)^{-1} = 1_H$, which means $x n^{-1} \in \ker f$.
         - Since $\ker f \subseteq N$, $x = (x n^{-1}) n \in N \cdot N = N$.

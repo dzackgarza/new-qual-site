@@ -52,7 +52,7 @@ Prove that if $x \in R$ is not a left-invertible unit (or non-unit in a commutat
         - Since each $I_\alpha \in \mathcal{P}$ is proper, $1 \notin I_\alpha$ for every $\alpha \in A$.
         - Therefore, $1 \notin \bigcup_{\alpha \in A} I_\alpha = U$.
         - Thus $U \subsetneq R$, so $U \in \mathcal{P}$.
-    <2>5. Clearly $I_\alpha \subseteq U$ for all $\alpha \in A$, so $U$ is an **upper bound** for the chain $\mathcal{C}$ in $\mathcal{P}$.
+    <2>5. We have $I_\alpha \subseteq U$ for all $\alpha \in A$: by definition $U = \bigcup_{\alpha \in A} I_\alpha$, so each $I_\alpha$ is one of the sets in the union and is therefore contained in $U$. Hence $U$ is an **upper bound** for the chain $\mathcal{C}$ in $\mathcal{P}$.
 
 <1>3. Application of Zorn's Lemma:
     *Proof:*

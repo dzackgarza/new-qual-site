@@ -38,7 +38,7 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 See Spring 2021.1 above.
 
 **Part 2, holomorphicity**: 
-This is clearly meromorphic, as it's a rational function, and has a singularity only at $z$ such that $\bar w z = 1$.
+This is meromorphic: it is a rational function of $z$ (a quotient of polynomials in $z$), hence meromorphic, and it has a singularity only at $z$ such that $\bar w z = 1$.
 This can only happen if $z, w \in S^1$: taking the modulus yields
 \[
 \bar w z = 1 \implies \abs{w}^2\abs{z}^2 = 1 

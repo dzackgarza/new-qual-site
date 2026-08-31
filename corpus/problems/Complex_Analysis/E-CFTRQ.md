@@ -34,7 +34,7 @@ which is nonzero (making the map conformal) precisely when $bd-ad\neq 0$.
 $\supseteq$:
 All LFTs are bijective, since if $f$ is an LFT then $f = A_1 \circ I \circ A_2$ with the $A_i$ affine and invertible, and $I(z)$ is invertible on $\CP^1$, so $f\inv = A_2\inv \circ I\inv \circ A_1\inv$.
 Noting that the $A_i$ are conformal, if $I$ is conformal then by the chain rule $f'\neq 0$.
-That $I$ is conformal on $\CP^1$: this clearly holds away from $z=0$ and $z=\infty$.
+That $I$ is conformal on $\CP^1$: away from $z=0$ and $z=\infty$, $I(z) = 1/z$ is holomorphic with derivative $I'(z) = -1/z^2 \neq 0$, so it is conformal there.
 Now use that $I\qty{1\over w} = w$ is conformal at zero, and ${1\over I(z)}$ is conformal at $\infty$.
 
 $\subseteq$:
@@ -46,7 +46,7 @@ So $f$ has a pole of order 1 at $\infty$, and by injectivity, $f\inv(\infty) = \
 Now $G(z) \da {f(z) - f(0) \over z}$ is bounded on $\CC$ and thus constant, so $f(z) - f(0) = cz \implies f(z) = cz + f(0)$.
 
 If $f(\infty) = w < \infty$, consider $F(z) \da {1\over z-w}$.
-By inspection, $F$ is an LFT, and $G(z) \da {1\over f(z) - w} = (F\circ f)(z)$ is an automorphisms of $\CP^1$ satisfying $G(\infty) = \infty$.
+The map $F$ is an LFT (it has the form $\frac{az+b}{cz+d}$ with $a=0, b=1, c=1, d=-w$), and $G(z) \da {1\over f(z) - w} = (F\circ f)(z)$ is an automorphism of $\CP^1$ satisfying $G(\infty) = \infty$ (since $f(\infty) = w$ makes $f(z) - w \to 0$ as $z \to \infty$, so $G(z) \to \infty$).
 By the previous case, $G$ is affine, so 
 \[
 G(z) = az + b \implies {1\over f(z) - w} = az + b \implies f(z) = {1\over az + b } + w = {waz + wb\over az+b }

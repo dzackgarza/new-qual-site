@@ -44,7 +44,7 @@ Show that $N \cong \im f \oplus \ker g$.
   &= g(n) - g(n) \\
   &= 0
   .\]
-  - The second term is clearly in $\im f$.
+  - The second term is in $\im f$: it is $(f\circ g)(n) = f(g(n))$, which is the image under $f$ of the element $g(n) \in M$.
 - Claim: the sum is direct.
   - Suppose $n\in \ker(g) \intersect \im(f)$, so $g(n) = 0$ and $n=f(m)$ for some $m\in M$.
   Then

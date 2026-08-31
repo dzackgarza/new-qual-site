@@ -60,7 +60,7 @@ For the left:
 ,\]
 where we've thrown away positive terms in the denominator, which only makes this quantity larger.
 
-Finding the poles within $\Gamma$: by inspection, there are poles when $e^z=-1$, so at $z=(2k+1)\pi i$ for $k\in \ZZ$.
+Finding the poles within $\Gamma$: the poles occur when the denominator vanishes, i.e. when $e^z = -1$; writing $z = x + iy$, $e^z = e^x e^{iy} = -1$ forces $e^x = 1$ (so $x = 0$) and $e^{iy} = -1$ (so $y = (2k+1)\pi$), giving $z = (2k+1)\pi i$ for $k \in \ZZ$.
 Exactly one falls into this contour, $z_k = i\pi$.
 By the residue theorem,
 \[

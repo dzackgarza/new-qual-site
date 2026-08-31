@@ -30,7 +30,7 @@ Prove that your polynomial is irreducible over $\mathbb{F}_p$.
     *Proof:*
     <2>1. For any prime $p$, consider the **Artin-Schreier polynomial**:
         $$f(x) \coloneqq x^p - x - 1 \in \mathbb{F}_p[x].$$
-    <2>2. The degree of $f(x)$ is clearly $\deg(f) = p$.
+    <2>2. The degree of $f(x)$ is $\deg(f) = p$: the leading term is $x^p$, whose coefficient is $1 \neq 0$ in $\mathbb{F}_p$.
 
 <1>2. Properties of the Roots of $f(x)$:
     *Proof:*

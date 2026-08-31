@@ -26,7 +26,7 @@ What is the Galois group of $\mathbb{Q}(\sqrt{2}, \sqrt{3}) / \mathbb{Q}$?
 
 <1>1. Degree of the extension $[K : \mathbb{Q}]$:
     *Proof:*
-    <2>1. Clearly $[\mathbb{Q}(\sqrt{2}) : \mathbb{Q}] = 2$ because $x^2 - 2$ is irreducible over $\mathbb{Q}$ by Eisenstein at $p = 2$.
+    <2>1. We have $[\mathbb{Q}(\sqrt{2}) : \mathbb{Q}] = 2$: the polynomial $x^2 - 2$ is irreducible over $\mathbb{Q}$ by Eisenstein's criterion at $p = 2$ (the leading coefficient $1$ is not divisible by $2$, the constant term $-2$ is divisible by $2$ but not by $4$, and the middle coefficient $0$ is divisible by $2$), so it is the minimal polynomial of $\sqrt{2}$, which has degree $2$.
     <2>2. We show $\sqrt{3} \notin \mathbb{Q}(\sqrt{2})$.
         - Suppose $\sqrt{3} = a + b\sqrt{2}$ for some $a, b \in \mathbb{Q}$.
         - Squaring both sides: $3 = (a^2 + 2b^2) + 2ab\sqrt{2}$.

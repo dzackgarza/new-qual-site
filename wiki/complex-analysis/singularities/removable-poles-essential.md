@@ -157,11 +157,12 @@ f(z) = (z-z_0)^{-n} h(z), \qquad h(z) \da {1\over g(z)}
 Claim: if $f$ has a pole of order $m$ at $z_0$, then $g(z) \da f(z^2)$ has a pole of order $2m$ there.
 Assume $z_0 = 0$.
 
-By Laurent expansion this is immediate:
+By Laurent expansion: writing $f(z) = \sum_{k\geq -m} c_k z^k$ with $c_{-m} \neq 0$, substituting $z^2$ gives
 \[
-f(z) = \sum_{k\geq -m} c_k z^k \implies g(z) = \sum_{k\geq -m} c_k z^{2k}
+g(z) = \sum_{k\geq -m} c_k z^{2k}
 = {c_{-m} \over z^{2m}} + \cdots
-.\]
+,\]
+so the lowest power of $z$ appearing is $z^{-2m}$ with nonzero coefficient $c_{-m}$, which is exactly a pole of order $2m$.
 By the characterization above, write $f(z) = z^{-m}h(z)$ with $h$ holomorphic and $h(0) \neq 0$; then $f(z^2) = z^{-2m}h(z^2)$ and $h(z^2)\mid_{z=0} = h(0) \neq 0$.
 
 :::

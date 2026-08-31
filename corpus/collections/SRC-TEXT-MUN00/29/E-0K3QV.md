@@ -36,7 +36,7 @@ Thus $\overline{S}_\Omega$ is compact Hausdorff.
 *Proof:* <2>1. ($\impliedby$) If $C$ is closed and bounded by $\alpha < \Omega$, then $C$ is a closed subset of the compact interval $[0, \alpha]$, hence $C$ is compact.
 <2>2. ($\implies$) If $C$ is unbounded in $S_\Omega$, the collection of open rays $\{[0, \beta) : \beta \in S_\Omega\}$ forms an open cover of $C$ with no finite subcover (since the supremum of any finite set of elements in $S_\Omega$ is strictly less than $\Omega$). Thus $C$ cannot be compact.
 
-<1>3. Construction of the bijection $f: S_\Omega^* \to \overline{S}_\Omega$: Define $f: S_\Omega^* \to \overline{S}_\Omega$ by: $$f(x) = x \quad \text{for } x \in S_\Omega, \qquad f(\infty) = \Omega.$$ $f$ is clearly a bijection.
+<1>3. Construction of the bijection $f: S_\Omega^* \to \overline{S}_\Omega$: Define $f: S_\Omega^* \to \overline{S}_\Omega$ by: $$f(x) = x \quad \text{for } x \in S_\Omega, \qquad f(\infty) = \Omega.$$ This is a bijection: it is injective because the restriction to $S_\Omega$ is the identity (so distinct points of $S_\Omega$ have distinct images) and $\Omega$ is not in $S_\Omega$ (so $\infty$ is the only point mapping to $\Omega$); it is surjective because every point of $\overline{S}_\Omega = S_\Omega \cup \{\Omega\}$ is hit, the points of $S_\Omega$ by themselves and $\Omega$ by $\infty$.
 
 <1>4. $f$ is a homeomorphism: *Proof:* <2>1. For $x \in S_\Omega$, a local neighborhood basis at $x$ in $S_\Omega^*$ consists of open intervals $(a, b) \subseteq S_\Omega$ containing $x$.
 In $\overline{S}_\Omega$, open intervals $(a, b)$ with $b < \Omega$ form the exact same local neighborhood basis at $x$.

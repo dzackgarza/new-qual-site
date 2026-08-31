@@ -30,7 +30,7 @@ x^2\sin\qty{1\over x} & x\neq 0
 \end{cases}
 .\]
 
-Away from zero, this is clearly differentiable since we can just compute the derivative by the chain rule. It turns out that
+Away from zero, $f$ is differentiable: on $\RR \setminus \{0\}$ it is the product of the differentiable functions $x \mapsto x^2$ and $x \mapsto \sin(1/x)$ (the latter differentiable by the chain rule, since $1/x$ and $\sin$ are differentiable), so the product rule applies. It turns out that
 \[
 f'(x) = 
 \begin{cases}

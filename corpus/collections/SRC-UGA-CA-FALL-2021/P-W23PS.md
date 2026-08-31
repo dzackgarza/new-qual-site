@@ -57,8 +57,8 @@ z^n+1  = \prod_{1\leq k \leq n}(z-\omega_{n, k}) =
 \cdots (z-e^{(2n-1)i\pi \over n})
 .\]
 Note that only the root $e^{i\pi\over n}$ lies in the $2\pi/n$ wedge, so it is the only (simple) pole of $f(z) \da {1\over 1+z^n}$ in this region.
-Since the pole is simple, we can compute the residue easily.
-Write $r_0 \da e^{e\pi\over n}$, then By L'Hopital,
+Since the pole is simple, the residue is computed by the simple-pole formula $\Res_{z=r_0} f = \lim_{z \to r_0} (z - r_0) f(z)$.
+Write $r_0 \da e^{i\pi\over n}$, then by L'Hôpital,
 \[
 \Res_{z = r_0} {1\over 1+z^n}
 &= \lim_{z\to r_0} {z-r_0 \over 1 + z^n} \\

@@ -36,7 +36,7 @@ D_{2m} = \gens{\sigma, \tau \suchthat \sigma^m = 1 = \tau^2, \tau \sigma = \sigm
 r &\mapsto ab \\
 t &\mapsto b
 .\]
-- This is clearly surjective since it hits all generators.
+- This is surjective: the generators $ab$ and $b$ of $G$ are both in the image (they are the images of $r$ and $t$ respectively), and a homomorphism whose image contains a generating set is surjective.
 - We'll show that $ab, a$ satisfy all of the relations defining $D_{2n}$, which factors $\psi$ through $\ker \pi$, yielding a surjection $\tilde \psi: D_{2n} \surjects G$.
   - $(ab)^n = e$ by construction, $b^2 = e$ by assumption, and 
   \[

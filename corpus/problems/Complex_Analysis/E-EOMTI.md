@@ -37,7 +37,7 @@ Now consider the contribution from $\gamma_2$:
 &= \int_{\eps}^{R} {\ln\abs{x} + i\pi  \over (x^2 + 1)^2 }\dx \\
 &\to I + i\pi \int_{0}^\infty {1\over (x^2 + 1)^2}\dx
 .\]
-This auxiliary integral can be handled easily with a usual semicircular contour, since the integrand is $\bigo(x^4)$:
+This auxiliary integral is handled with a usual semicircular contour: the integrand decays like $1/x^4$ at infinity, so the integral over the large semicircular arc vanishes as its radius tends to infinity, and the residue theorem applies to the poles in the upper half-plane:
 \[
 \int_{0}^\infty {1\over (z^2 + 1)}\dx 
 &= 2\pi i \sum_{z_k\in \HH}\Res_{z=z_k} {1\over (z^2 + 1)} \\

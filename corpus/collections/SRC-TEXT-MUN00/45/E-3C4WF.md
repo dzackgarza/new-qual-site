@@ -46,7 +46,7 @@ If $X$ is compact in the metric $d$, then the space $\mathcal{H}$ is compact in 
 <1>1. Part (a): $D$ is a well-defined metric on $\mathcal{H}$.
     *Proof:*
     <2>1. **Finiteness:** For bounded sets $A, B \in \mathcal{H}$, picking $a_0 \in A, b_0 \in B$ gives $d(a, b) \le \operatorname{diam}(A) + d(a_0, b_0) + \operatorname{diam}(B) < \infty$, so $D(A, B) < \infty$.
-    <2>2. **Non-negativity and Identity of Indiscernibles:** Clearly $D(A, B) \ge 0$.
+    <2>2. **Non-negativity and Identity of Indiscernibles:** $D(A, B) \ge 0$ because it is the infimum of a set of non-negative real numbers (each $\varepsilon$ in the defining set is $\ge 0$).
         $$D(A, B) = 0 \iff \forall \varepsilon > 0, A \subseteq U(B, \varepsilon) \text{ and } B \subseteq U(A, \varepsilon) \iff A \subseteq \overline{B} = B \text{ and } B \subseteq \overline{A} = A \iff A = B.$$
     <2>3. **Symmetry:** $D(A, B) = D(B, A)$ by the symmetric definition.
     <2>4. **Triangle inequality:** If $A \subseteq U(B, \varepsilon_1)$ and $B \subseteq U(C, \varepsilon_2)$, then for any $a \in A$, there exists $b \in B$ with $d(a, b) < \varepsilon_1$, and there exists $c \in C$ with $d(b, c) < \varepsilon_2$. Then $d(a, c) \le d(a, b) + d(b, c) < \varepsilon_1 + \varepsilon_2$, so $A \subseteq U(C, \varepsilon_1 + \varepsilon_2)$. By symmetry, $C \subseteq U(A, \varepsilon_1 + \varepsilon_2)$. Taking infimums over $\varepsilon_1, \varepsilon_2$ yields $D(A, C) \le D(A, B) + D(B, C)$.

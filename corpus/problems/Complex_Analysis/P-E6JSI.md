@@ -35,7 +35,7 @@ Prove that $f$ extends to a holomorphic function on the entire unit disk $\mathb
 
 <1>2. Continuity of $F$ on $\mathbb{D}$:
     *Proof:*
-    <2>1. $F$ is clearly continuous on $S^\circ$ and on $(S^-)^\circ$ (since $z \mapsto \bar{z}$ and $w \mapsto \bar{w}$ are continuous).
+    <2>1. $F$ is continuous on $S^\circ$ and on $(S^-)^\circ$: on $S^\circ$ it is $f(z)$, and on $(S^-)^\circ$ it is $\overline{f(\bar z)}$, and each of these is a composition of continuous maps ($z \mapsto \bar{z}$, $w \mapsto \bar{w}$, and the holomorphic $f$ are all continuous).
     <2>2. On the real diameter $I = (-1, 1)$, for any $x \in I$:
         - From the upper half-plane: $\lim_{z \to x, \operatorname{Im}(z) \ge 0} F(z) = f(x)$.
         - From the lower half-plane: $\lim_{z \to x, \operatorname{Im}(z) < 0} F(z) = \lim_{\bar{z} \to x} \overline{f(\bar{z})} = \overline{f(x)}$.
