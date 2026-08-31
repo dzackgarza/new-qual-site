@@ -14,90 +14,56 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-If $X$ is a topological space and $S \subset X$, define in terms of
-open subsets of $X$ what it means for $S$ **not** to be connected. 
+::: problem
+If $X$ is a topological space and $S \subseteq X$, define in terms of open subsets of $X$ what it means for $S$ **not** to be connected.
 
-Show that if $S$ is not connected there are nonempty subsets $A, B \subset X$ 
-such that 
+Show that if $S$ is not connected, there exist non-empty subsets $A, B \subseteq X$ such that
 $$
-A \cup B = S \qtext{and} A \cap \bar B = \bar A \cap B = \emptyset
-$$ 
-
-> Here $\bar A$ and $\bar B$ denote closure with respect to the topology on the ambient space $X$.
-
-
+A \cup B = S \quad \text{and} \quad A \cap \bar{B} = \bar{A} \cap B = \emptyset,
+$$
+where $\bar{A}$ and $\bar{B}$ denote the closures of $A$ and $B$ with respect to the topology on the ambient space $X$.
 :::
 
-:::{.concept}
-\envlist
-- Topic: closure and connectedness in the subspace topology.
-    - See Munkres p.148
-:::
+::: solution
+**Goal:** Define disconnectedness of a subspace via ambient open sets, and construct separated sets $A, B$ whose ambient closures do not intersect the other set.
 
-:::{.concept}
-\envlist
-- Lemma: $X$ is connected iff the only subsets of $X$ that are closed and open are $\emptyset, X$.
-:::
+<1>1. Definition of disconnected subspace in terms of open subsets of $X$:
+    *Proof:*
+    <2>1. A subspace $S \subseteq X$ is not connected (disconnected) if and only if there exist open sets $U, V \subseteq X$ such that:
+        1. $S \cap U \ne \emptyset$ and $S \cap V \ne \emptyset$,
+        2. $(S \cap U) \cap (S \cap V) = S \cap U \cap V = \emptyset$,
+        3. $S \subseteq U \cup V$.
+    <2>2. Equivalently, $S \cap U$ and $S \cap V$ form a separation of $S$ into disjoint non-empty sets open in the subspace topology on $S$.
 
-:::{.solution}
-\envlist
+<1>2. Construction of $A$ and $B$:
+    *Proof:*
+    <2>1. Assume $S$ is not connected, and choose ambient open sets $U, V \subseteq X$ satisfying <1>1.
+    <2>2. Define $A = S \cap U$ and $B = S \cap V$.
+    <2>3. By condition (1), $A \ne \emptyset$ and $B \ne \emptyset$.
+    <2>4. By condition (3), $A \cup B = (S \cap U) \cup (S \cap V) = S \cap (U \cup V) = S$.
 
-:::{.proof title="Variant 1"}
-\envlist
+<1>3. Proof that $\bar{A} \cap B = \emptyset$:
+    *Proof:*
+    <2>1. From condition (2), $(S \cap U) \cap (S \cap V) = \emptyset$, which means $A \cap V = \emptyset$.
+    <2>2. Thus $A \subseteq X \setminus V$.
+    <2>3. Because $V$ is open in $X$, the complement $X \setminus V$ is closed in the ambient space $X$.
+    <2>4. The closure $\bar{A} = \operatorname{cl}_X(A)$ is the smallest closed subset of $X$ containing $A$.
+    <2>5. Since $X \setminus V$ is a closed set containing $A$, $\bar{A} \subseteq X \setminus V$.
+    <2>6. Thus $\bar{A} \cap V = \emptyset$.
+    <2>7. Since $B = S \cap V \subseteq V$, we obtain:
+    $$\bar{A} \cap B \subseteq \bar{A} \cap V = \emptyset \implies \bar{A} \cap B = \emptyset.$$
 
-- $S\subset X$ is **not ** connected if $S$ with the subspace topology is not connected.
-  - I.e. there exist $A, B \subset S$ such that 
-    - $A, B \neq \emptyset$,
-    - $A\intersect B = \emptyset$,
-    - $A \disjoint B = S$.
-- Or equivalently, there exists a nontrivial $A\subset S$ that is clopen in $S$.
+<1>4. Proof that $A \cap \bar{B} = \emptyset$:
+    *Proof:*
+    <2>1. Symmetrically, condition (2) implies $B \cap U = \emptyset$, so $B \subseteq X \setminus U$.
+    <2>2. Because $U$ is open in $X$, $X \setminus U$ is closed in $X$.
+    <2>3. Therefore $\bar{B} = \operatorname{cl}_X(B) \subseteq X \setminus U$.
+    <2>4. Thus $\bar{B} \cap U = \emptyset$.
+    <2>5. Since $A = S \cap U \subseteq U$, we obtain:
+    $$A \cap \bar{B} \subseteq U \cap \bar{B} = \emptyset \implies A \cap \bar{B} = \emptyset.$$
 
-Show stronger statement: this is an iff.
-
-$\implies$:
-
-- Suppose $S$ is not connected; we then have sets $A \union B = S$ from above and it suffices to show $\cl_Y(A) \intersect B = A \intersect \cl_X(B) = \emptyset$. 
-- $A$ is open by assumption and $Y\setminus A = B$ is closed in $Y$, so $A$ is clopen.
-- Write $\cl_Y(A) \definedas \cl_X(A) \intersect Y$.
-- Since $A$ is closed in $Y$, $A = \cl_Y(A)$ by definition, so $A = \cl_Y(A) = \cl_X(A) \intersect Y$.
-- Since $A\intersect B = \emptyset$, we then have $\cl_Y(A) \intersect B = \emptyset$.
-- The same argument applies to $B$, so $\cl_Y(B) \intersect A = \emptyset$.
-
-$\impliedby$:
-
-- Suppose displayed condition holds; given such $A, B$ we will show they are clopen in $Y$.
-- Since $\cl_Y(A) \intersect B = \emptyset$, (claim) we have $\cl_Y(A) = A$ and thus $A$ is closed in $Y$.
-  - Why?
-  \begin{align*}
-  \cl_Y(A) &\definedas \cl_X(A) \intersect Y \\ 
-  &= \cl_X(A) \intersect \qty{A\disjoint B} \\ 
-  &= \qty{\cl_X(A) \intersect A} \disjoint \qty{\cl_X(A) \intersect B} \\
-  &= A  \disjoint \qty{\cl_X(A) \intersect B} 
-  \quad\text{since } A \subset \cl_Y(A) \\
-  &= A \disjoint \qty{\cl_Y(A) \intersect B} 
-  \quad \text{since } B \subset Y \\
-  &= A \disjoint \emptyset \quad\text{using the assumption} \\
-  &= A
-  .\end{align*}
-- But $A = Y\setminus B$ where $B$ is closed, so $A$ is open and thus a nontrivial clopen subset.
-
-![](../../assets/Topology/figures/image_2020-05-26-20-08-04.png)
-
-:::
-
-:::{.proof title="Variant 2"}
-\envlist
-
-If $S\subset X$ is not connected, then there exists a subset $A\subset S$ that is both open and closed in the subspace topology, where $A\neq \emptyset, S$.
-
-Suppose $S$ is not connected, then choose $A$ as above.
-Then $B = S\setminus A$ yields a pair $A, B$ that disconnects $S$.
-Since $A$ is closed in $S$, $\bar A = A$ and thus $\bar A \cap B = A \cap B = \emptyset$.
-Similarly, since $A$ is open, $B$ is closed, and $\bar B = B \implies \bar B \cap A = B \cap A = \emptyset$.
-
-
-:::
-
+<1>5. Conclusion:
+    *Proof:*
+    The non-empty sets $A = S \cap U$ and $B = S \cap V$ satisfy $A \cup B = S$ and $A \cap \bar{B} = \bar{A} \cap B = \emptyset$.
 :::
 
