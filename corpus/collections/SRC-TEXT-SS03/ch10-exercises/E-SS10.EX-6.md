@@ -33,7 +33,7 @@ and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use 
 **Goal:** Prove the asymptotic exponential bounds $e^{c_1 \sqrt{n}} \le p(n) \le e^{c_2 \sqrt{n}}$ for the partition function $p(n)$.
 
 <1>1. Upper bound $p(n) \le e^{c_2 \sqrt{n}}$:
-    *Proof:*
+    ::: {.proof}
     <2>1. The partition generating function is $F(e^{-y}) = \sum_{k=0}^\infty p(k) e^{-ky}$ for $y > 0$.
     <2>2. From Exercise 5 (modular transformation of the Dedekind eta function / Jacobi theta function), there exist positive constants $C, c > 0$ such that $F(e^{-y}) \le C e^{c/y}$ for all $y \in (0, 1]$.
     <2>3. Because every partition count $p(k) \ge 0$, for any integer $n \ge 1$ and any $y > 0$:
@@ -42,8 +42,9 @@ and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use 
     <2>5. Choose $y = \sqrt{c/n} > 0$. Then $\frac{c}{y} + ny = c \sqrt{\frac{n}{c}} + n \sqrt{\frac{c}{n}} = 2\sqrt{c n}$.
     <2>6. Thus $p(n) \le C e^{2\sqrt{c n}} \le e^{c_2 \sqrt{n}}$ for all $n \ge 1$, where $c_2 = 2\sqrt{c} + \max(0, \ln C)$.
 
+:::
 <1>2. Lower bound $p(n) \ge e^{c_1 \sqrt{n}}$:
-    *Proof:*
+    ::: {.proof}
     <2>1. From Exercise 5, the asymptotic behavior as $y \to 0^+$ gives a lower bound $F(e^{-y}) \ge C_0 e^{c_0/y}$ for constants $C_0, c_0 > 0$.
     <2>2. For any positive integer $m$, split the series into the head and tail:
     $$\sum_{k=0}^m p(k) e^{-ky} = F(e^{-y}) - \sum_{k=m+1}^\infty p(k) e^{-ky} \ge C_0 e^{c_0/y} - \sum_{k=m+1}^\infty p(k) e^{-ky}.$$
@@ -61,9 +62,11 @@ and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use 
     $$p(m) \ge \frac{1}{2} C_0 (1 - e^{-A/\sqrt{m}}) e^{(c_0/A)\sqrt{m}} \ge \frac{C_0 A}{4\sqrt{m}} e^{(c_0/A)\sqrt{m}} \ge e^{c_1 \sqrt{m}}$$
     for some positive constant $c_1 \in (0, c_0/A)$.
 
+:::
 <1>3. Conclusion:
-    *Proof:*
+    ::: {.proof}
     Decreasing $c_1 > 0$ to accommodate the finitely many values $1 \le n < M$ (since $p(n) \ge 1$ for all $n \ge 1$), we obtain
     $$e^{c_1 \sqrt{n}} \le p(n) \le e^{c_2 \sqrt{n}}$$
     for all $n \ge 1$.
+:::
 :::

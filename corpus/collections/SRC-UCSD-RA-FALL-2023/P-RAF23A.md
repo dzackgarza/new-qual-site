@@ -33,7 +33,7 @@ $$
 **Goal:** Determine the truth value of each statement with complete mathematical proofs.
 
 <1>1. Statement (i) is TRUE.
-    *Proof:*
+    ::: {.proof}
     <2>1. A locally integrable function $f \in L_{\text{loc}}^1(\mathbb{R})$ defines a distribution whose derivative $f' \in \mathcal{D}'(\mathbb{R})$ acts on test functions $\phi \in C_c^\infty(\mathbb{R})$ by
     $$\langle f', \phi \rangle = -\int_{-\infty}^\infty f(t) \phi'(t)\,dt.$$
     <2>2. We claim that $-f'$ is a positive distribution: for any test function $\phi \in C_c^\infty(\mathbb{R})$ with $\phi(t) \ge 0$ for all $t$, $\langle -f', \phi \rangle = \int_{-\infty}^\infty f(t) \phi'(t)\,dt \ge 0$.
@@ -49,8 +49,9 @@ $$
     <2>6. By the Riesz–Markov–Kakutani / Schwartz Representation Theorem for positive distributions, every positive distribution on $\mathbb{R}$ is represented by a unique positive Radon measure $\mu \ge 0$ on $\mathbb{R}$, so $\langle -f', \phi \rangle = \int_\mathbb{R} \phi\,d\mu$.
     <2>7. Thus $f' = -\mu$ is a non-positive Radon measure on $\mathbb{R}$.
 
+:::
 <1>2. Statement (ii) is FALSE.
-    *Proof:*
+    ::: {.proof}
     <2>1. Consider the set $E = \mathbb{Q} \cap [0, 1]$. The set $E$ is countable and satisfies $E \subset [0, 1]$.
     <2>2. Suppose $\{I_k\}_{k=1}^n$ is any finite cover of $E$ by open intervals $I_k = (a_k, b_k)$. Then $E \subseteq \bigcup_{k=1}^n I_k$.
     <2>3. Taking topological closures in $\mathbb{R}$ of both sides:
@@ -61,7 +62,9 @@ $$
     <2>6. Thus the sum of lengths $\sum_{k=1}^n m(I_k)$ is at least 1 for any finite open cover of $E$.
     <2>7. Choosing $\epsilon \in (0, 1)$ shows that no such finite cover can satisfy $\sum_{k=1}^n m(I_k) < \epsilon$.
 
+:::
 <1>3. Conclusion:
-    *Proof:*
+    ::: {.proof}
     Statement (i) is TRUE, and statement (ii) is FALSE.
+:::
 :::

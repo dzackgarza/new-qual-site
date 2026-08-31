@@ -33,7 +33,7 @@ audit:
 **Goal:** Prove that every group of order $p^2$ (for $p$ prime) is abelian and isomorphic to either $C_{p^2}$ or $C_p \times C_p$.
 
 <1>1. Every group $G$ of order $p^2$ is abelian.
-    *Proof:*
+    ::: {.proof}
     <2>1. By the class equation for the action of $G$ on itself by conjugation,
     $$|G| = |Z(G)| + \sum_{i=1}^k [G : C_G(x_i)],$$
     where the sum runs over representatives of non-central conjugacy classes.
@@ -48,8 +48,9 @@ audit:
     Thus $G$ is abelian, so $Z(G) = G$, contradicting $|Z(G)| = p$.
     <2>8. Therefore $|Z(G)| = p^2$, which means $Z(G) = G$, so $G$ is abelian.
 
+:::
 <1>2. Classification of abelian groups of order $p^2$.
-    *Proof:*
+    ::: {.proof}
     <2>1. By Lagrange's theorem, the order of every element of $G$ divides $p^2$, so $o(g) \in \{1, p, p^2\}$ for all $g \in G$.
     <2>2. Case 1: $G$ contains an element $a$ of order $p^2$.
     Then the cyclic subgroup $\langle a \rangle$ has order $p^2 = |G|$, so $G = \langle a \rangle \cong C_{p^2}$.
@@ -64,7 +65,9 @@ audit:
     <2>7. The map $\psi: H \times K \to G$ defined by $\psi(h, k) = hk$ is a homomorphism (since $G$ is abelian) with trivial kernel (since $H \cap K = \{e\}$) and full image $HK = G$.
     <2>8. Thus $\psi$ is an isomorphism, so $G \cong H \times K \cong C_p \times C_p$.
 
+:::
 <1>3. Conclusion:
-    *Proof:*
+    ::: {.proof}
     Up to isomorphism, the only groups of order $p^2$ are $C_{p^2}$ and $C_p \times C_p$. Both are abelian.
+:::
 :::

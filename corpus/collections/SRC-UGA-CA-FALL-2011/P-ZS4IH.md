@@ -19,16 +19,14 @@ audit:
 ---
 
 ::: problem
-Let $\bar B(a, r)$ denote the closed disc of radius $r$ about $a\in \CC$.
-Let $f$ be holomorphic on an open set containing $\bar B(a, r)$ and let 
-\[  
-M \definedas \sup_{z\in \bar B(a, r)} \abs{f(z)}
-.\]
-
-Prove that 
-\[  
-z\in \bar B\qty{a, {r\over 2}},\,z\neq a, \qquad {\abs{ f(z) - f(a)} \over \abs{z-a}} \leq {2M \over r}
-.\]
+Let $\bar{B}(a, r)$ denote the closed disk of radius $r > 0$ centered at $a \in \mathbb{C}$. Let $f$ be holomorphic on an open neighborhood containing $\bar{B}(a, r)$, and define
+$$
+M = \sup_{z \in \bar{B}(a, r)} |f(z)|.
+$$
+Prove that for all $z \in \bar{B}(a, r/2)$ with $z \ne a$:
+$$
+\frac{|f(z) - f(a)|}{|z - a|} \le \frac{2M}{r}.
+$$
 :::
 
 ::: {.solution}

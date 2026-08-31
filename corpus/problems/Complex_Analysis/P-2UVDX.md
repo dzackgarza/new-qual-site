@@ -33,15 +33,16 @@ e^{-\pi\xi^2}=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx.
 $$
 
 <1>1. Define the transform:
-    *Proof:*
+    ::: {.proof}
     <2>1. For $\xi=u+iv$, the integrand satisfies
         $$|e^{-\pi x^2}e^{2\pi i x\xi}|=e^{-\pi x^2-2\pi vx}=e^{-\pi(x+v)^2+\pi v^2}.$$
     <2>2. Hence
         $$F(\xi):=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx$$
         is well-defined for all $\xi\in\mathbb C$ and is entire by dominated convergence on compact sets.
 
+:::
 <1>2. Derive a differential equation:
-    *Proof:*
+    ::: {.proof}
     <2>1. Differentiate under the integral to get
         $$F'(\xi)=\int_{-\infty}^{\infty}(2\pi i x)e^{-\pi x^2}e^{2\pi i x\xi}\,dx.$$
     <2>2. Integrate by parts:
@@ -55,13 +56,15 @@ $$
         \end{aligned}
         $$
 
+:::
 <1>3. Solve the ODE:
-    *Proof:*
+    ::: {.proof}
     <2>1. $F'+2\pi\xi F=0$ has general solution $F(\xi)=Ce^{-\pi\xi^2}$.
     <2>2. Evaluate at $\xi=0$:
         $$F(0)=\int_{-\infty}^{\infty}e^{-\pi x^2}\,dx=1,$$
         so $C=1$.
 
+:::
 <1>4. Conclusion:
     By uniqueness of solutions to this linear ODE on entire functions,
     $$F(\xi)=e^{-\pi\xi^2}$$

@@ -55,7 +55,7 @@ $$
 **Goal:** Establish asymptotic bounds for $\zeta(s)$ and $\zeta'(s)$ near $\Re(s)=1$ and integral representations yielding its meromorphic continuation.
 
 <1>1. Part 1(a): Expansion for $\zeta(s)$ with truncation parameter $N$.
-    *Proof:*
+    ::: {.proof}
     <2>1. For $\Re(s) > 1$, the Dirichlet series converges absolutely:
     $$\zeta(s) = \sum_{n=1}^\infty n^{-s} = \sum_{n=1}^{N-1} n^{-s} + \sum_{n=N}^\infty n^{-s}.$$
     <2>2. For each $n \ge N$, write $n^{-s} = \int_n^{n+1} x^{-s}\,dx + \delta_n(s)$, where $\delta_n(s) = \int_n^{n+1} (n^{-s} - x^{-s})\,dx$.
@@ -69,8 +69,9 @@ $$
     The series $\sum_{n \ge N} \delta_n(s)$ converges locally uniformly for $\Re(s) > 0$, defining a holomorphic function on $\Re(s) > 0$.
     <2>6. By analytic continuation, the identity holds for all $\Re(s) > 0$ with $s \neq 1$.
 
+:::
 <1>2. Part 1(b): Bound $|\zeta(1+it)| = O(\log |t|)$ as $|t| \to \infty$.
-    *Proof:*
+    ::: {.proof}
     <2>1. Set $s = 1+it$ with $|t| \ge 2$, and choose $N = \lfloor |t| \rfloor \ge 2$.
     <2>2. In the expansion from <1>1:
     $$\left| \sum_{1 \le n < N} n^{-1-it} \right| \le \sum_{n=1}^{N-1} \frac{1}{n} \le 1 + \int_1^N \frac{dx}{x} = 1 + \log N \le 1 + \log |t|.$$
@@ -80,8 +81,9 @@ $$
     $$\left| \sum_{n=N}^\infty \delta_n(1+it) \right| \le (1+|t|) \sum_{n=N}^\infty \frac{1}{n^2} \le (1+|t|) \frac{1}{N-1} \le \frac{1+|t|}{|t|-1} \le 3 = O(1).$$
     <2>5. Summing the three bounds gives $|\zeta(1+it)| \le \log |t| + O(1) = O(\log |t|)$.
 
+:::
 <1>3. Part 1(c): Bound $|\zeta'(1+it)| = O((\log |t|)^2)$ as $|t| \to \infty$.
-    *Proof:*
+    ::: {.proof}
     <2>1. Differentiating the identity from <1>1 with respect to $s$:
     $$\zeta'(s) = -\sum_{1 \le n < N} n^{-s} \log n - \frac{N^{1-s} \log N}{s-1} - \frac{N^{1-s}}{(s-1)^2} + \sum_{n=N}^\infty \delta_n'(s).$$
     <2>2. At $s = 1+it$ with $N = \lfloor |t| \rfloor$:
@@ -92,8 +94,9 @@ $$
     $$\left| \sum_{n=N}^\infty \delta_n'(1+it) \right| \le C |t| \sum_{n=N}^\infty \frac{\log n}{n^2} = O\left(|t| \frac{\log N}{N}\right) = O(\log |t|).$$
     <2>5. Therefore $|\zeta'(1+it)| = O((\log |t|)^2)$.
 
+:::
 <1>4. Part 1(d): Partial sums are bounded but do not converge for $t \neq 0$.
-    *Proof:*
+    ::: {.proof}
     <2>1. Let $S_m(t) = \sum_{n=1}^m n^{-1-it}$. Applying <1>1 with $s = 1+it$ and $N = m+1$:
     $$S_m(t) = \zeta(1+it) - \frac{(m+1)^{-it}}{it} - \sum_{n=m+1}^\infty \delta_n(1+it).$$
     <2>2. The tail satisfies $\left| \sum_{n=m+1}^\infty \delta_n(1+it) \right| \le (1+|t|) \frac{1}{m} \le 1+|t|$ for all $m \ge 1$.
@@ -101,8 +104,9 @@ $$
     <2>4. If $S_m(t)$ converged to $\zeta(1+it)$ as $m \to \infty$, then $(m+1)^{-it} = e^{-it \log(m+1)}$ would converge as $m \to \infty$. But for $t \neq 0$, the sequence $e^{-it \log(m+1)}$ oscillates around the unit circle and has no limit.
     <2>5. Hence the series $\sum_{n=1}^\infty n^{-1-it}$ diverges.
 
+:::
 <1>5. Part 2: First integral representation via fractional part.
-    *Proof:*
+    ::: {.proof}
     <2>1. For $\Re(s) > 1$ and $M \in \mathbb{N}$, apply Abel summation (integration by parts):
     $$\sum_{n=1}^M n^{-s} = \int_{1^-}^M x^{-s}\,d\lfloor x \rfloor = \frac{\lfloor M \rfloor}{M^s} + s \int_1^M \frac{\lfloor x \rfloor}{x^{s+1}}\,dx = M^{1-s} + s \int_1^M \frac{x - \{x\}}{x^{s+1}}\,dx.$$
     <2>2. Split the integral:
@@ -113,8 +117,9 @@ $$
     <2>5. Because $0 \le \{x\} < 1$, the integral $\int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx$ converges absolutely and uniformly on compact subsets of $\Re(s) > 0$.
     <2>6. Taking $M \to \infty$ gives $\zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx$ for $\Re(s) > 1$, and by analytic continuation this holds for all $\Re(s) > 0$ with $s \neq 1$.
 
+:::
 <1>6. Part 3: Recursive periodic refinement.
-    *Proof:*
+    ::: {.proof}
     <2>1. Substitute $\{x\} = Q(x) + 1/2$ into Part 2:
     $$\zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{1/2}{x^{s+1}}\,dx - s \int_1^\infty \frac{Q(x)}{x^{s+1}}\,dx = \frac{s}{s-1} - \frac{1}{2} - s \int_1^\infty \frac{Q(x)}{x^{s+1}}\,dx.$$
     <2>2. For $k \ge 1$, the function $Q_k(x)$ is periodic with period 1 and continuous on $\mathbb{R}$ with $Q_k(0) = Q_k(1) = 0$ (since $\int_0^1 Q_{k-1} = 0$).
@@ -124,4 +129,5 @@ $$
     <2>5. By induction on $k$, for $\Re(s) > -k$:
     $$\zeta(s) = \frac{s}{s-1} - \frac{1}{2} - s(s+1)\cdots(s+k) \int_1^\infty \frac{Q_k(x)}{x^{s+k+1}}\,dx.$$
     This gives the analytic continuation of $\zeta(s)$ to $\Re(s) > -k$.
+:::
 :::

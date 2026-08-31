@@ -38,7 +38,7 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
 **Goal:** Analyze the ring of invariants of the order-4 rotation.
 
 <1>1. Generate the action and part (a):
-    *Proof:*
+    ::: {.proof}
     <2>1. $G=\langle A\rangle$ with
         $$A=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix},\qquad A^4=I,$$
         so $|G|=4$ and
@@ -48,8 +48,9 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
     <2>3. The element $A^2=-I$ sends $x^iy^j\mapsto(-1)^{i+j}x^iy^j$.
     <2>4. Invariance under $A^2$ therefore forces $i+j$ even, so no invariant monomial has odd total degree. Hence part (a).
 
+:::
 <1>2. Compute the Hilbert series (part (b)):
-    *Proof:*
+    ::: {.proof}
     <2>1. Molien gives
         $$\phi_G(z)=\frac1{4}\sum_{g\in G}\frac{1}{\det(I-zg)}.$$
     <2>2. The four determinants are:
@@ -61,8 +62,9 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
         $$\phi_G(z)=\frac14\left(\frac{1}{(1-z)^2}+\frac{2}{1+z^2}+\frac{1}{(1+z)^2}\right)
         =\frac{1+z^4}{(1-z^2)(1-z^4)}.$$
 
+:::
 <1>3. Part (c), Cohen–Macaulay structure:
-    *Proof:*
+    ::: {.proof}
     <2>1. Use coordinates
         $$u=x+iy,\qquad v=x-iy.$$
         Then
@@ -83,5 +85,6 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
     <2>6. Therefore $\mathbb C[x,y]^G$ is Cohen–Macaulay, with homogeneous system of parameters
         $r$ (degree $2$), $s$ (degree $4$), and separators $\{1,t\}$.
 
+:::
 <1>4. Conclusion: All requested properties hold, and the stated Hilbert series is proved. Q.E.D.
 :::

@@ -31,9 +31,11 @@ A third point is needed to build that transposition, and $n \geq 4$ supplies one
 *Proof:* $\ts{1, \dots, n}$ has $n \geq 4$ elements and $\ts{i,j}$ has two.
 
 <1>3. $\sigma$ does not commute with the transposition $\tau = (j\, k)$.
-*Proof:* <2>1. $(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \ts{j,k}$ and so $\tau$ fixes $i$.
+::: {.proof}
+<2>1. $(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \ts{j,k}$ and so $\tau$ fixes $i$.
 <2>2. $(\tau\sigma)(i) = \tau(\sigma(i)) = \tau(j) = k$.
 <2>3. $j \neq k$ by the choice of $k$, so $\sigma\tau \neq \tau\sigma$.
 
+:::
 <1>4. Q.E.D. *Proof:* Steps <1>1 through <1>3 show that no $\sigma \neq \id$ is central, so $Z(S_n) = 1$.
 :::
