@@ -26,7 +26,9 @@ Show that disjoint cycles commute.
 <1>1. Let $\sigma$ and $\tau$ be cycles with disjoint supports $A = \supp(\sigma)$ and $B = \supp(\tau)$, so $A \cap B = \emptyset$, and let $x$ be any point.
 
 <1>2. $\sigma$ maps $A$ to itself, and $\tau$ maps $B$ to itself.
-    *Proof:* If $a \in A$ then $\sigma(a) \neq a$, so $\sigma^{-1}(\sigma(a)) = a \neq \sigma(a)$, which means $\sigma(a)$ is not fixed by $\sigma^{-1}$. But $\sigma$ and $\sigma^{-1}$ have the same support (a point is moved by $\sigma$ iff it is moved by $\sigma^{-1}$), so $\sigma(a) \in A$.
+::: {.proof}
+If $a \in A$ then $\sigma(a) \neq a$, so $\sigma^{-1}(\sigma(a)) = a \neq \sigma(a)$, which means $\sigma(a)$ is not fixed by $\sigma^{-1}$. But $\sigma$ and $\sigma^{-1}$ have the same support (a point is moved by $\sigma$ iff it is moved by $\sigma^{-1}$), so $\sigma(a) \in A$.
+:::
 
 <1>3. If $x \in A$ then $(\sigma\tau)(x) = (\tau\sigma)(x)$.
 ::: {.proof}
@@ -36,10 +38,17 @@ Show that disjoint cycles commute.
 
 :::
 <1>4. If $x \in B$ then $(\sigma\tau)(x) = (\tau\sigma)(x)$.
-*Proof:* Exchange the roles of $\sigma$ and $\tau$ in step <1>3.
+::: {.proof}
+Exchange the roles of $\sigma$ and $\tau$ in step <1>3.
+:::
 
 <1>5. If $x \notin A \cup B$ then both composites fix $x$.
-*Proof:* $\sigma$ and $\tau$ each fix every point outside their own support.
+::: {.proof}
+$\sigma$ and $\tau$ each fix every point outside their own support.
+:::
 
-<1>6. Q.E.D. *Proof:* Steps <1>3 through <1>5 cover every point, so $\sigma\tau = \tau\sigma$.
+<1>6. Q.E.D.
+::: {.proof}
+Steps <1>3 through <1>5 cover every point, so $\sigma\tau = \tau\sigma$.
+:::
 :::
