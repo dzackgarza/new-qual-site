@@ -1,0 +1,38 @@
+extends: existence
+message: "Avoid '%s' — fill in the argument or cite a specific theorem."
+level: warning
+ignorecase: true
+tokens:
+  - it can be shown
+  - it can be verified
+  - it can be checked
+  - it can be proved
+  - one can show
+  - one can verify
+  - one can check
+  - it follows that
+  - it is easy to see
+  - it is easy to verify
+  - it is easy to check
+  - the reader can verify
+  - the reader can check
+  - left as an exercise
+  - left to the reader
+  - as an exercise
+  - as an exercise for the reader
+  - it is an exercise
+  - this is an exercise
+  - by a straightforward
+  - by a simple
+  - by an easy
+  - by a direct
+  - by a routine
+  - a routine
+  - a straightforward
+  - a simple computation
+  - an easy computation
+  - a straightforward computation
+  - a routine computation
+  - an easy exercise
+  - a simple exercise
+  - a straightforward exercise
