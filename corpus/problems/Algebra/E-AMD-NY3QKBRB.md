@@ -35,5 +35,8 @@ Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto ghg\
 <2>4. That is the defining condition for $g \in Z(G)$.
 
 :::
-<1>3. Q.E.D. *Proof:* Step <1>2 is the equality $\ker \varphi = Z(G)$ of subsets, and both sides are subgroups of $G$.
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the equality $\ker \varphi = Z(G)$ of subsets, and both sides are subgroups of $G$.
+:::
 :::
