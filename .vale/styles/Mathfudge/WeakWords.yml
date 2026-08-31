@@ -1,18 +1,15 @@
 extends: existence
-message: "Avoid '%s' in mathematical prose — state the reasoning explicitly."
+message: "Avoid '%s' — state the reasoning explicitly."
 level: warning
 ignorecase: true
 tokens:
   - obviously
   - clearly
   - trivially
-  - naturally
-  - simply
-  - of course
-  - as everyone knows
-  - as is well known
-  - it is well known
-  - it is known
-  - it is a standard
-  - it is standard
-  - as is standard
+  - it is trivial
+  - this is trivial
+  - it is obvious
+  - this is obvious
+  - straightforward
+  - it is immediate
+  - this is immediate
