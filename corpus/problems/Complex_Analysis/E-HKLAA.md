@@ -46,7 +46,7 @@ The region is to the right of $S$, so we have
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-14-29.png)
 
-The rest is standard:
+The remaining steps are:
 
 - Dilate and rotate to $0<\Im(z) < \pi$ using $z\mapsto i\pi z$.
 - Exponentiate using $z\mapsto e^z$ \to get $\HH$.
@@ -66,7 +66,7 @@ By tracking tangent/normal vectors, this results in the region $-1<\Re(z) < -{1\
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-32-10.png)
 
-The rest is standard:
+The remaining steps are:
 
 - Translate to the right by $z\mapsto z+{1\over 2}$ to get $-{1\over 2}<\Re(z) < 0$.
 - Rotate and dilate by $z\mapsto -2i\pi z$ to get $0<\Im(z) < \pi$

@@ -25,10 +25,6 @@ c. Let $X = (0, 1]$.
 Is $X$ compact?
 :::
 
-::: {.remark}
-Incomplete proof for part 3.
-:::
-
 ::: {.concept}
 See Munkres p.164, especially for (ii).
 :::
@@ -54,9 +50,10 @@ b. Direct proof:
 
 - So there are only *finitely* many points in $X\setminus U_j$, each of which is in $U_{j(n)}$ for some $j(n) \in J$ depending on $n$.
 
-c. Todo
+c. $X = (0, 1]$ is not compact.
 
-::: {.remark}
-Need direct proof
-:::
-:::
+- Consider the open cover $\mathcal{U} = \theset{(1/n, 1] \suchthat n \in \ZZ^+}$ of $(0, 1]$.
+  - This is a cover: for any $x \in (0, 1]$, choose $n$ with $1/n < x$ (possible since $1/n \to 0$), so $x \in (1/n, 1]$.
+  - Each $(1/n, 1]$ is open in the subspace topology on $(0, 1]$ (it is the intersection of $(0,1]$ with the open interval $(1/n, 2)$ in $\RR$).
+- No finite subcollection covers $(0, 1]$: given finitely many sets $(1/n_1, 1], \dots, (1/n_k, 1]$, let $N = \max(n_1, \dots, n_k)$; then $1/N \in (0, 1]$ but $1/N \notin (1/n_i, 1]$ for any $i$ (since $1/N \le 1/n_i$), so $1/N$ is not covered.
+- Hence $(0, 1]$ admits an open cover with no finite subcover, so it is not compact.

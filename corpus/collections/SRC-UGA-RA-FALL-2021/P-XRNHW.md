@@ -69,19 +69,17 @@ where we've used that $y\in F\implies \delta_F(y) = 0$ and applied the bound fro
 We've also implicitly used Fubini-Tonelli to change the order of integration, justified by positivity of the integrand and the finite iterated integral.
 This forces $I(x) < \infty$ for almost every $x\in F$, since if $I(x)$ is unbounded on any positive measure set then this integral would diverge.
 
-If $x\not\in F$, pick an $\eps\dash$ball $A$ about $x$ avoiding $F$ so that $\abs{x-y}> \eps$ for any $y\in A^c$ and thus $(x-y)^{-2} \leq \eps^{-2}$.
-Note that $\delta_F(y)\geq \eps$, so
+If $x\not\in F$, then since $F$ is closed, $F^c$ is open, so there is $r > 0$ with $B_r(x) \subseteq F^c$; in fact $\delta_F(x) = d(x, F) > 0$, and we take $r = \delta_F(x)/2$.
+For $y \in B_r(x)$, the distance from $y$ to $F$ is at least $\delta_F(x) - |x - y| \ge \delta_F(x) - r = r$ (by the triangle inequality, $d(y, F) \ge d(x, F) - |x - y|$).
+Therefore
 \[
-I(x) 
-&= \int_\RR\delta_F(y) (x-y)^{-2} \dy \\
-&\geq \int_{A^c} \delta_F(y) (x-y)^{-2} \dy \\
-&\geq \int_{A^c} \delta_F(y) \eps^{-2} \dy\\
-&\geq \int_{A^c} \eps^{-1} \dy \\
-&= \mu(A^c)\eps^{-1}
-,\]
-which can be made arbitrarily large by taking $\eps\to 0$.
-
-#todo: Not great, $A^c$ depends on $\eps$ so this ratio has a competing numerator...
+I(x) = \int_\RR \frac{\delta_F(y)}{|x-y|^2}\,dy
+\ge \int_{B_r(x)} \frac{\delta_F(y)}{|x-y|^2}\,dy
+\ge \int_{B_r(x)} \frac{r}{|x-y|^2}\,dy
+= r \cdot 2\int_0^r \frac{1}{t^2}\,dt = \infty,
+\]
+since $\int_0^r t^{-2}\,dt = \infty$ (the singularity at $t = 0$ is non-integrable).
+Hence $I(x) = \infty$ for every $x \notin F$.
 
 :::
 

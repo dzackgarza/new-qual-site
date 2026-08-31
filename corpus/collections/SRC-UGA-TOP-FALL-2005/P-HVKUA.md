@@ -30,14 +30,14 @@ $X$ is connected:
 
 - Write $X = L\disjoint G$ where $L = \theset{0} \cross [-1, 1]$ and $G = \theset{\Gamma(\sin(x)) \suchthat x\in (0, 1]}$ is the graph of $\sin(x)$.
 - $L \cong [0, 1]$ which is connected
-  - Claim: Every interval is connected (todo)
+  - Claim: Every interval is connected. This is proved by the standard argument: if $[a,b] = A \sqcup B$ were a disconnection with $a \in A$, then $s = \sup A$ lies in $A$ (since $A$ is closed in $[a,b]$) and also in $B$ (since $s$ is a limit point of $B$), a contradiction; the same argument applies to any interval.
 - Claim: $G$ is connected (i.e. as the graph of a continuous function on a connected set)
   - The function 
   \begin{align*}
   f: (0, 1] &\to [-1, 1] \\
   x &\mapsto \sin(x)
   \end{align*}
-  is continuous (how to prove?)
+  is continuous: for any $x_0 \in (0,1]$ and $\eps > 0$, take $\delta = \eps$ (since $|\sin x - \sin x_0| \le |x - x_0|$ by the mean value theorem, as $|\cos t| \le 1$), so $|x - x_0| < \delta$ implies $|\sin x - \sin x_0| < \eps$.
   - Products of continuous functions are continuous iff all of the components are continuous.
   - Claim: The diagonal map $\Delta: Y\to Y\cross Y$ where $\Delta(t) = (t, t)$ is continuous for any $Y$ since $\Delta = (\id, \id)$
     - Product of identity functions, which are continuous.
@@ -61,7 +61,6 @@ $X$ is connected:
     - So $U \intersect L \intersect G \neq \emptyset$, contradicting $L\intersect G = \emptyset$.
 
 - Claim: $X$ is *not* path-connected.
-  - Todo: "can't get from $L$ to $G$ in finite time".
   - Toward a contradiction, choose a continuous function $f:I \to X$ with $f(0) \in G$ and $f(1) \in L$.
     - Since $L \cong [0, 1]$, use path-connectedness to create a path $f(1) \to (0, 1)$
     - Concatenate paths and reparameterize to obtain $f(1) = (0, 1) \in L \subset \RR^2$.
