@@ -55,7 +55,7 @@ U(z) \da
 .\]
 Then $U$ is a harmonic extension of $u$ to $S \da S^+ \union (S^+ \intersect \RR) \union S^-$.
 To see that $U$ is harmonic on $S$, it suffices to check that $U$ satisfies the mean value property on $S$.
-Clearly this holds in $S^+$, so for $z_0\in S^+$ we have
+This holds in $S^+$: on $S^+$ we have $U = u$, and $u$ is harmonic, so $u$ satisfies the mean value property there. Thus for $z_0\in S^+$ we have
 \[
 U(z_0) 
 &= u(z_0) \\

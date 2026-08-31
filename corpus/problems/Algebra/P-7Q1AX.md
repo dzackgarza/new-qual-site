@@ -22,7 +22,7 @@ So let $d = \gcd(m, n)$, then there exist integers $a, b$ such that $am + bn = d
 But we can now just take $k=a$ and $\ell = b$.
 $\qed$
 
-We claim that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediately follows by part 1.
+We claim that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result follows by part 1 (applied to the quotient $\ZZ_n[m] \cong \ZZ_{(m,n)}$).
 
 Let $d \definedas \gcd(m,n)$ and define a map
 \[

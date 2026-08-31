@@ -25,7 +25,7 @@ $$
 x, y \in IS,~ r\in R \implies x + y \in IS \text{ and } rx \in IS.
 $$
 
-Closure under addition is immediate: concatenating the two sums
+Closure under addition: concatenating the two sums
 $$
 x = \sum_{i=1}^n r_i a_i, \qquad y = \sum_{j=1}^m r_j' a_j'
 $$

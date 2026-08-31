@@ -32,7 +32,7 @@ Noting that $F$ is an even function, $f(z) = \lambda z^2 + f_o(z)$ for $f_o$ som
 $f_0$ is identically zero.
 :::
 
-Given this, the result follows immediately since $f(z) = \lambda z^2$.
+Given this, the result follows: since $f_0 \equiv 0$ and $f(z) = \lambda z^2$ (with $f_0$ the difference $f - \lambda z^2$), we get $f(z) = \lambda z^2$.
 
 :::{.proof title="of claim"}
 Note that on the LHS, $\abs{ f(re^{it})} \to 1$ as $r\to 1$ for any $t$.

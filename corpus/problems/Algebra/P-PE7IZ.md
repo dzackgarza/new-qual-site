@@ -34,7 +34,15 @@ We first show that there exists a ring homomorphism $\ZZ \to R$, namely
 n &\mapsto \sum_{i=1}^n 1_R
 .\end{align*}
 
-Note that $\phi(1) = 1_R$ and $\phi(-1) = -1_R$, and it is routine to check that $\phi$ is a ring homomorphism.
+Note that $\phi(1) = 1_R$ and $\phi(-1) = -1_R$. We verify that $\phi$ is a ring homomorphism: for $m, n \in \ZZ$,
+\[
+\phi(m+n) = \sum_{i=1}^{m+n} 1_R = \sum_{i=1}^m 1_R + \sum_{i=1}^n 1_R = \phi(m) + \phi(n),
+\]
+and
+\[
+\phi(mn) = \sum_{i=1}^{mn} 1_R = \left(\sum_{i=1}^m 1_R\right)\left(\sum_{i=1}^n 1_R\right) = \phi(m)\phi(n),
+\]
+(the second equality is the distributive law applied to the product of the two sums), and $\phi(1) = 1_R$ by definition. Hence $\phi$ is a ring homomorphism.
 
 Now toward a contradiction, suppose there were another such ring homomorphism $\psi: \ZZ \to R$.
 From the definition of a ring homomorphism, $\psi$ must satisfy,

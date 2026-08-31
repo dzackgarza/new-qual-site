@@ -39,7 +39,7 @@ So $x$ can not be a torsion element.
 But since $x \in E$ was arbitrary, $E$ must be torsion-free.
 
 For an example of a torsion-free module over an integral domain that is *not* free, consider $\QQ$ as a $\ZZ\dash$module.
-Then $\QQ$ is clearly torsion-free, since it is an integral domain and the same argument as above applies.
+Then $\QQ$ is torsion-free: if $n \cdot q = 0$ for some $n \in \ZZ$ and $q \in \QQ$, then either $n = 0$ or $q = 0$ (since $\QQ$ is a field, hence an integral domain, and $n \cdot q = 0$ in $\QQ$ with $n \neq 0$ forces $q = 0$), so no nonzero element of $\QQ$ is annihilated by a nonzero integer.
 
 But $\QQ$ is not free as $\ZZ\dash$module.
 Supposing that $\mathcal B =\theset{\vector b_1, \vector b_2, \cdots} \subset \QQ$ was a $\ZZ\dash$basis, consider $\vector b_1 = \frac {p_1} {q_1}$ and $\vector b_2 = \frac {p_2} {q_2}$.
