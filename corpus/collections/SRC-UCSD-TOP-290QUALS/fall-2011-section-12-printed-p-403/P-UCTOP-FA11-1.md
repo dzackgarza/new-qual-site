@@ -21,20 +21,34 @@ Show that $f$ is homotopic to $g$.
 
 ::: {.solution}
 <1>1. For each $x \in X$, $f(x)$ and $g(x)$ are not antipodal, so the segment from $f(x)$ to $g(x)$ does not pass through the origin.
-Proof: hypothesis (antipodal points are $p$ and $-p$, and the segment between them passes through $0$).
+::: {.proof}
+hypothesis (antipodal points are $p$ and $-p$, and the segment between them passes through $0$).
+:::
 
 <1>2. Define $H : X \times [0,1] \to S^2$ by $$H(x, t) = \frac{(1 - t) f(x) + t g(x)}{\|(1 - t) f(x) + t g(x)\|}.$$ Proof: the straight-line homotopy, normalized to lie on $S^2$.
 
-<1>3. The denominator is never zero: if $(1-t)f(x) + t g(x) = 0$, then $f(x)$ and $g(x)$ would be antipodal (for $0 < t < 1$), contradicting <1>1. Proof: <1>1.
+<1>3. The denominator is never zero: if $(1-t)f(x) + t g(x) = 0$, then $f(x)$ and $g(x)$ would be antipodal (for $0 < t < 1$), contradicting <1>1.
+::: {.proof}
+<1>1.
+:::
 
 <1>4. Hence $H$ is well-defined and continuous.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. $H(x, 0) = f(x)$ and $H(x, 1) = g(x)$.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 
 <1>6. Hence $f \simeq g$.
-Proof: <1>4 and <1>5.
+::: {.proof}
+<1>4 and <1>5.
+:::
 
-<1>7. Q.E.D. Proof: <1>6.
+<1>7. Q.E.D.
+::: {.proof}
+<1>6.
+:::
 :::

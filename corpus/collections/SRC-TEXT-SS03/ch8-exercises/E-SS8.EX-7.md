@@ -57,51 +57,79 @@ $$
 **(a).**
 
 <1>1. The conformal map $G$ from the strip $\{0 < \operatorname{Im} z < 1\}$ to the unit disk sends $z = iy$ to $G(iy) = r e^{i\theta}$.
-Proof: setup from Section 1.3.
+::: {.proof}
+setup from Section 1.3.
+:::
 
 <1>2. $G(iy) = i \frac{\cos \pi y}{1 + \sin \pi y}$.
-Proof: the explicit formula for the strip-to-disk map evaluated on the imaginary axis.
+::: {.proof}
+the explicit formula for the strip-to-disk map evaluated on the imaginary axis.
+:::
 
 <1>3. For $0 < y \le 1/2$, $\cos \pi y \ge 0$ and $1 + \sin \pi y > 0$, so $G(iy)$ is purely imaginary with positive imaginary part, giving $\theta = \pi/2$.
-Proof: <1>2, reading off the argument.
+::: {.proof}
+<1>2, reading off the argument.
+:::
 
 <1>4. For $1/2 \le y < 1$, $\cos \pi y \le 0$, so $G(iy)$ is purely imaginary with negative imaginary part, giving $\theta = -\pi/2$.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 
 <1>5. $r^2 = |G(iy)|^2 = \frac{\cos^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin \pi y}{1 + \sin \pi y}$.
-Proof: <1>2 and $\cos^2 = 1 - \sin^2$.
+::: {.proof}
+<1>2 and $\cos^2 = 1 - \sin^2$.
+:::
 
 <1>6. The Poisson kernel is $P_r(\theta - \varphi) = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2}$.
-Proof: definition of the Poisson kernel.
+::: {.proof}
+definition of the Poisson kernel.
+:::
 
 <1>7. Substituting $r^2 = \frac{1 - \sin \pi y}{1 + \sin \pi y}$ and $\theta = \pm \pi/2$ (so $\cos(\theta - \varphi) = \pm \sin \varphi$), one obtains
 $$P_r(\theta - \varphi) = \frac{\sin \pi y}{1 - \cos \pi y \sin \varphi}.$$
-Proof: <1>5 and <1>6, simplifying the resulting expression.
+::: {.proof}
+<1>5 and <1>6, simplifying the resulting expression.
+:::
 
 **(b).**
 
 <1>1. The change of variables is $t = F(e^{i\varphi})$, where $F$ is the inverse of the map $t \mapsto \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
-Proof: setup.
+::: {.proof}
+setup.
+:::
 
 <1>2. $e^{i\varphi} = \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
-Proof: given.
+::: {.proof}
+given.
+:::
 
 <1>3. Taking imaginary parts: $\sin \varphi = \operatorname{Im}\left(\frac{i - e^{\pi t}}{i + e^{\pi t}}\right) = \frac{1}{\cosh \pi t}$.
-Proof: rationalizing the denominator and using $\operatorname{Im}$.
+::: {.proof}
+rationalizing the denominator and using $\operatorname{Im}$.
+:::
 
 <1>4. Differentiating <1>2 with respect to $t$ and taking imaginary parts gives $\frac{d\varphi}{dt} = \frac{\pi}{\cosh \pi t}$.
-Proof: implicit differentiation of the identity in <1>2.
+::: {.proof}
+implicit differentiation of the identity in <1>2.
+:::
 
 <1>5. Substituting <1>3 and <1>4 into the integral, and using $\tilde f_0(\varphi) = f_0(t)$,
 $$\frac{1}{2\pi}\int_0^\pi P_r(\theta - \varphi)\tilde f_0(\varphi)\,d\varphi = \frac{\sin \pi y}{2}\int_{-\infty}^{\infty} \frac{f_0(t)}{\cosh \pi t - \cos \pi y}\,dt.$$
-Proof: <1>7 (a), <1>3, <1>4, and the change of variables.
+::: {.proof}
+<1>7 (a), <1>3, <1>4, and the change of variables.
+:::
 
 **(c).**
 
 <1>1. The same argument with $\theta = -\pi/2$ and $\tilde f_1$ in place of $\tilde f_0$ gives
 $$\frac{1}{2\pi}\int_{-\pi}^0 P_r(\theta - \varphi)\tilde f_1(\varphi)\,d\varphi = \frac{\sin \pi y}{2}\int_{-\infty}^{\infty} \frac{f_1(t)}{\cosh \pi t - \cos \pi y}\,dt.$$
-Proof: identical computation to (b), with the lower half of the circle.
+::: {.proof}
+identical computation to (b), with the lower half of the circle.
+:::
 
 <1>2. Q.E.D.
-Proof: <1>5 (a), <1>5 (b), <1>1 (c).
+::: {.proof}
+<1>5 (a), <1>5 (b), <1>1 (c).
+:::
 :::

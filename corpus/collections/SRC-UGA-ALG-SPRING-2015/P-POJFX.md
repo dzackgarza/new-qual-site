@@ -32,15 +32,16 @@ Show that $A$ has a Jordan normal form over $F$ and find it.
 
 :::{.solution}
 Note that if $\vector x = \tv{x_1,\cdots, x_n}$ then $A\vector x = \tv{\sum x_i, \sum x_i, \cdots, \sum x_i}$, so $A$ acts by summing the entries in $\vector x$ and setting every coordinate to that sum.
-By inspection (or clever guessing), we can find eigenvalues and eigenvectors:
+From this description we read off the eigenvalues and eigenvectors directly:
 
-- $\lambda = 0$ and:
+- An eigenvector with eigenvalue $\lambda$ satisfies $A\vector x = \lambda \vector x$, i.e. every coordinate of $A\vector x$ equals $\lambda x_i$. Since all coordinates of $A\vector x$ equal the common sum $S = \sum_i x_i$, this forces $\lambda x_1 = \lambda x_2 = \cdots = \lambda x_n = S$.
+- If $\lambda = 0$, then $S = 0$, so the eigenvectors are exactly the vectors with $\sum_i x_i = 0$. A basis of this $(n-1)$-dimensional space is
   - $\vector v_1 = \tv{1,0,0,\cdots,0, -1}$ 
   - $\vector v_2 = \tv{0,1,0,\cdots,0, -1}$
   - $\vector v_3 = \tv{0,0,1,\cdots,0, -1}$
   - $\cdots$
   - $\vector v_{n-1} = \tv{0,0,0,\cdots,1, -1}$
-- $\lambda = n$ and $\vector v_n = \tv{1,1,\cdots, 1}$
+- If $\lambda \neq 0$, then $x_1 = x_2 = \cdots = x_n$, so $\vector x$ is a scalar multiple of the all-ones vector $\tv{1,1,\cdots,1}$, and $A\tv{1,1,\cdots,1} = \tv{n,\cdots,n} = n\tv{1,\cdots,1}$, giving the eigenvalue $\lambda = n$ with eigenvector $\vector v_n = \tv{1,1,\cdots, 1}$.
 
 Note that for $\lambda = n$, we have $A \tv{1,1,\cdots, 1} = \tv{n\cdot 1,\cdots, n\cdot 1}$.
 So for $n\cdot 1\neq 0$, there are two eigenspaces corresponding to $\lambda = 0, n$, and if $n\cdot 1 = 0$ these collapse to just a single eigenspace for $\lambda = 0$.

@@ -21,20 +21,32 @@ Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n
 
 ::: {.solution}
 <1>1. $\{f_n\}$ is uniformly bounded by $10$, hence normal (Montel).
-Proof: Montel's theorem.
+::: {.proof}
+Montel's theorem.
+:::
 
 <1>2. Any subsequence has a further subsequence converging uniformly on compacta to holomorphic $f$.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 
 <1>3. If $f,g$ are two subsequential limits, they agree on $\{2^{-j}\}$ (by hypothesis the limits exist there and coincide).
-Proof: hypothesis.
+::: {.proof}
+hypothesis.
+:::
 
 <1>4. $\{2^{-j}\}$ accumulates at $0\in\mathbb{D}$, so $f=g$ by identity theorem.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 
 <1>5. Hence all subsequential limits coincide, so the full sequence converges pointwise (Vitali).
-Proof: <1>4 (normal family with unique subsequential limit converges).
+::: {.proof}
+<1>4 (normal family with unique subsequential limit converges).
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

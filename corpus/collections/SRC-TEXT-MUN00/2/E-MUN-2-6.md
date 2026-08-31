@@ -23,23 +23,37 @@ Let $f: \mathbb{R} \to \mathbb{R}$ be the function $f(x) = x^3 - x$ . By restric
 
 ::: {.solution}
 <1>1. $f(x) = x^3 - x = x(x-1)(x+1)$, with critical points at $x = \pm 1/\sqrt{3}$.
-Proof: $f'(x) = 3x^2 - 1 = 0$ at $x = \pm 1/\sqrt{3}$.
+::: {.proof}
+$f'(x) = 3x^2 - 1 = 0$ at $x = \pm 1/\sqrt{3}$.
+:::
 
 <1>2. $f$ is strictly increasing on $[1/\sqrt{3}, \infty)$.
-Proof: $f'(x) > 0$ for $x > 1/\sqrt{3}$.
+::: {.proof}
+$f'(x) > 0$ for $x > 1/\sqrt{3}$.
+:::
 
 <1>3. Restrict the domain to $[1/\sqrt{3}, \infty)$ and the range to $f([1/\sqrt{3}, \infty)) = [f(1/\sqrt{3}), \infty)$.
-Proof: <1>2 (a strictly increasing function is injective, and restricting the codomain to the image makes it surjective).
+::: {.proof}
+<1>2 (a strictly increasing function is injective, and restricting the codomain to the image makes it surjective).
+:::
 
 <1>4. Then $g = f|_{[1/\sqrt{3}, \infty)} : [1/\sqrt{3}, \infty) \to [f(1/\sqrt{3}), \infty)$ is bijective.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. $f(1/\sqrt{3}) = (1/\sqrt{3})^3 - 1/\sqrt{3} = \frac{1}{3\sqrt{3}} - \frac{1}{\sqrt{3}} = -\frac{2}{3\sqrt{3}}$.
-Proof: compute the minimum value.
+::: {.proof}
+compute the minimum value.
+:::
 
 <1>6. Hence $g : [1/\sqrt{3}, \infty) \to [-2/(3\sqrt{3}), \infty)$, $g(x) = x^3 - x$, is a bijection.
-Proof: <1>4 and <1>5.
+::: {.proof}
+<1>4 and <1>5.
+:::
 
 <1>7. Q.E.D.
-Proof: <1>6.
+::: {.proof}
+<1>6.
+:::
 :::

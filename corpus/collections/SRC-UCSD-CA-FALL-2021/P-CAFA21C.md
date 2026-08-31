@@ -76,7 +76,9 @@ definition of the order of an entire function.
 \]
 ::: {.proof}
 <1>1 and <2>2. <2>4. Taking logarithms yields $\limsup_{r \to \infty} \frac{\log \log M_f(r)}{\log r} \le \rho + \varepsilon$ for every $\varepsilon > 0$.
-Proof: definition of order $\operatorname{order}(f) = \limsup_{r\to\infty} \frac{\log\log M(r)}{\log r}$.
+::: {.proof}
+definition of order $\operatorname{order}(f) = \limsup_{r\to\infty} \frac{\log\log M(r)}{\log r}$.
+:::
 :::
 <2>5. Thus $\operatorname{order}(f) \le \rho = \max(\operatorname{order}(a), \operatorname{order}(b)) < \infty$.
 ::: {.proof}
@@ -111,5 +113,8 @@ Cauchy's differentiation formula shows $f^{(k)}(0) = 0$ for all $k > d$.
 :::
 
 <1>4. Conclusion: Both claims (i) and (ii) hold.
-Q.E.D. Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
+Q.E.D.
 :::

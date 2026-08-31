@@ -20,11 +20,17 @@ What are the primitive elements of the Hopf algebra $\mathbb{Z}_p[x]$ for $p$ pr
 
 ::: {.solution}
 <1>1. $H_*(T^n)\cong\Lambda[x_1,\dots,x_n]$ exterior.
-Proof: Kunneth.
+::: {.proof}
+Kunneth.
+:::
 
 <1>2. Pontryagin product corresponds to algebra structure.
-Proof: group law.
+::: {.proof}
+group law.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 :::

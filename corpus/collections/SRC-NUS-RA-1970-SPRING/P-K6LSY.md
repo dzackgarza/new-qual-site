@@ -46,7 +46,9 @@ Prove or disprove each of the following statements.
     $$
   <2>2. Counterexample: Let $E = \mathbb{Q} \cap [0, 1]$.
   <2>3. $m^*(E) = 0$.
-    Proof: $E$ is countable, so as a countable set of real numbers, its Lebesgue outer measure is $m^*(E) = 0$.
+    ::: {.proof}
+    $E$ is countable, so as a countable set of real numbers, its Lebesgue outer measure is $m^*(E) = 0$.
+    :::
   <2>4. $\mu(E) = 1$.
     <3>1. Let $\{I_1, \dots, I_n\}$ be any finite collection of open intervals such that $E \subseteq \bigcup_{i=1}^n I_i$.
     <3>2. Since $E = \mathbb Q \cap [0, 1]$ is dense in $[0, 1]$, the closure of $E$ is $\overline{E} = [0, 1]$.
@@ -66,18 +68,26 @@ Prove or disprove each of the following statements.
 <1>2. **Statement (g) is TRUE (Proved).**
   <2>1. Let $(\RR, \mathcal L, m)$ be the Lebesgue measure space and $(\RR, \mathcal B)$ be the Borel measurable space on $\RR$.
   <2>2. A function $f: \RR \to \RR$ is (Lebesgue) measurable if and only if for every open set $U \subseteq \RR$, $f^{-1}(U) \in \mathcal L$.
-    Proof: This is the standard definition of Lebesgue measurability of a real-valued function (equivalent to $f^{-1}((a, \infty)) \in \mathcal L$ for all $a \in \RR$).
+    ::: {.proof}
+    This is the standard definition of Lebesgue measurability of a real-valued function (equivalent to $f^{-1}((a, \infty)) \in \mathcal L$ for all $a \in \RR$).
+    :::
   <2>3. Define the family of sets $\mathcal S \definedas \{A \subseteq \RR : f^{-1}(A) \in \mathcal L\}$.
   <2>4. $\mathcal S$ is a $\sigma$-algebra on $\RR$.
     <3>1. $\emptyset \in \mathcal S$ since $f^{-1}(\emptyset) = \emptyset \in \mathcal L$.
     <3>2. If $A \in \mathcal S$, then $f^{-1}(\RR \setminus A) = \RR \setminus f^{-1}(A) \in \mathcal L$ (since $\mathcal L$ is closed under complements), so $\RR \setminus A \in \mathcal S$.
     <3>3. If $\{A_n\}_{n=1}^\infty \subseteq \mathcal S$, then $f^{-1}\left(\bigcup_{n=1}^\infty A_n\right) = \bigcup_{n=1}^\infty f^{-1}(A_n) \in \mathcal L$ (since $\mathcal L$ is closed under countable unions), so $\bigcup_{n=1}^\infty A_n \in \mathcal S$.
   <2>5. $\mathcal S$ contains all open subsets of $\RR$.
-    Proof: By <2>2, for every open set $U \subseteq \RR$, $f^{-1}(U) \in \mathcal L$, so $U \in \mathcal S$.
+    ::: {.proof}
+    By <2>2, for every open set $U \subseteq \RR$, $f^{-1}(U) \in \mathcal L$, so $U \in \mathcal S$.
+    :::
   <2>6. $\mathcal B \subseteq \mathcal S$.
-    Proof: The Borel $\sigma$-algebra $\mathcal B$ is by definition the smallest $\sigma$-algebra containing all open sets in $\RR$. Since $\mathcal S$ is a $\sigma$-algebra containing all open sets, $\mathcal B \subseteq \mathcal S$.
+    ::: {.proof}
+    The Borel $\sigma$-algebra $\mathcal B$ is by definition the smallest $\sigma$-algebra containing all open sets in $\RR$. Since $\mathcal S$ is a $\sigma$-algebra containing all open sets, $\mathcal B \subseteq \mathcal S$.
+    :::
   <2>7. For every Borel set $E \in \mathcal B$, $f^{-1}(E) \in \mathcal L$ (i.e. $f^{-1}(E)$ is Lebesgue measurable).
-    Proof: Since $E \in \mathcal B \subseteq \mathcal S$, by definition of $\mathcal S$ we have $f^{-1}(E) \in \mathcal L$.
+    ::: {.proof}
+    Since $E \in \mathcal B \subseteq \mathcal S$, by definition of $\mathcal S$ we have $f^{-1}(E) \in \mathcal L$.
+    :::
 
 <1>3. **Conclusion.**
   Statement (f) is false (disproved by counterexample $\mathbb Q \cap [0, 1]$), and Statement (g) is true (proved by the preimage $\sigma$-algebra argument). Q.E.D.

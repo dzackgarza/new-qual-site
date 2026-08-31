@@ -30,7 +30,9 @@ audit:
 
 <1>1. Make the substitution $u = 4 - x$.
 Then $du = -dx \implies dx = -du$.
-Proof: By the standard substitution rule for indefinite integrals.
+::: {.proof}
+By the standard substitution rule for indefinite integrals.
+:::
 
 <1>2. Transform and evaluate the integral: $$\int \sqrt{4-x} \, dx = \int u^{1/2} (-du) = -\int u^{1/2} \, du = -\frac{2}{3} u^{3/2} + C.$$ Proof: By the power rule for integration $\int u^p \, du = \frac{u^{p+1}}{p+1} + C$ with $p = 1/2$.
 

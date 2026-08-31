@@ -31,20 +31,26 @@ Thus:
 \[
 \int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \int_{-\infty}^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \operatorname{Re} \left( \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx \right).
 \]
-Proof: symmetry and $\operatorname{Re}(1 - e^{ix}) = 1 - \cos x$.
+::: {.proof}
+symmetry and $\operatorname{Re}(1 - e^{ix}) = 1 - \cos x$.
+:::
 <2>2. Let $f(z) = \frac{1 - e^{iz}}{z^2}$.
 Consider the closed indented contour $\Gamma_{R, \epsilon}$ in the upper half-plane consisting of:
 - $[-R, -\epsilon]$ along the real axis,
 - $C_\epsilon$: clockwise semicircle centered at $0$ from $-\epsilon$ to $\epsilon$ of radius $\epsilon$,
 - $[\epsilon, R]$ along the real axis,
 - $C_R$: counterclockwise semicircle centered at $0$ in the upper half-plane of radius $R$.
-Proof: standard indented contour.
+::: {.proof}
+standard indented contour.
+:::
 <2>3. Since $f(z)$ is holomorphic on $\mathbb{C} \setminus \{0\}$, it has no poles inside the region bounded by $\Gamma_{R, \epsilon}$.
 By Cauchy’s Integral Theorem:
 \[
 \oint_{\Gamma_{R, \epsilon}} f(z) \, dz = \int_{-R}^{-\epsilon} f(x) \, dx + \int_{C_\epsilon} f(z) \, dz + \int_\epsilon^R f(x) \, dx + \int_{C_R} f(z) \, dz = 0.
 \]
-Proof: Cauchy's Integral Theorem on simply connected domain.
+::: {.proof}
+Cauchy's Integral Theorem on simply connected domain.
+:::
 
 <1>2. Contour estimates:
 <2>1. **Large semicircle estimate on $C_R$:**
@@ -54,7 +60,9 @@ The integral along $C_R$ is bounded by:
 \[
 \left| \int_{C_R} f(z) \, dz \right| \le \frac{2}{R^2} \cdot \pi R = \frac{2\pi}{R} \xrightarrow{R \to \infty} 0.
 \]
-Proof: ML-inequality.
+::: {.proof}
+ML-inequality.
+:::
 <2>2. **Small indented semicircle limit on $C_\epsilon$:**
 Expanding $e^{iz} = 1 + iz - \frac{z^2}{2} + O(z^3)$ near $z = 0$:
 \[
@@ -65,21 +73,29 @@ Integrating along the clockwise semicircle $C_\epsilon$:
 \[
 \lim_{\epsilon \to 0} \int_{C_\epsilon} f(z) \, dz = -\pi i \operatorname{Res}(f, 0) = -\pi i (-i) = -\pi.
 \]
-Proof: Fractional Residue Lemma for simple poles.
+::: {.proof}
+Fractional Residue Lemma for simple poles.
+:::
 
 <1>3. Evaluation of the integral:
 <2>1. Taking $R \to \infty$ and $\epsilon \to 0^+$ in Cauchy’s Theorem:
 \[
 \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx + (-\pi) + 0 = 0 \implies \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx = \pi.
 \]
-Proof: taking limits of the contour components.
+::: {.proof}
+taking limits of the contour components.
+:::
 <2>2. Taking the real part yields:
 \[
 \int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \operatorname{Re}(\pi) = \frac{\pi}{2}.
 \]
-Proof: <1>1 (<2>1).
+::: {.proof}
+<1>1 (<2>1).
+:::
 
 <1>4. Conclusion:
 $\int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{\pi}{2}$. Q.E.D.
-Proof: <1>1 through <1>3.
+::: {.proof}
+<1>1 through <1>3.
+:::
 :::

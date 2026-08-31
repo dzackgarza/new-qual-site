@@ -33,7 +33,7 @@ Show that $H$ is a **free group**.
     <2>2. $H$ is a subgroup of $G$ ($H \le G$).
     <2>3. By the **Nielsen–Schreier Theorem** (topologically: the fundamental group of any covering space of a 1-dimensional CW complex / graph $S^1 \vee S^1$ is the fundamental group of a graph, hence free):
         $$\text{Every subgroup of a free group is free}.$$
-    <2>4. Since $H \le G$ is a subgroup of the free group $G$, $H$ is immediately a **free group**.
+    <2>4. Since $H \le G$ is a subgroup of the free group $G$, the Nielsen–Schreier theorem (<2>3) applies directly to $H$, so $H$ is a **free group**.
 
 <1>2. Method 2: Geometric Realization via Covering Spaces and Tree of Generators:
     *Proof:*

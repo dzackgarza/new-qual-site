@@ -26,8 +26,12 @@ What is their tensor product?
 
 ::: {.solution}
 <1>1. $\Z/p\otimes\Z/q=0$ for $p\neq q$.
-Proof: $a\otimes b = p(a/p)\otimes b = a\otimes pb = a\otimes0=0$ using $p$ invertible mod $q$; more directly $1\otimes1 = q(1\otimes1/q)=0$ and $p(1\otimes1)=0$, so $\gcd(p,q)=1$ gives $1\otimes1=0$.
+::: {.proof}
+$a\otimes b = p(a/p)\otimes b = a\otimes pb = a\otimes0=0$ using $p$ invertible mod $q$; more directly $1\otimes1 = q(1\otimes1/q)=0$ and $p(1\otimes1)=0$, so $\gcd(p,q)=1$ gives $1\otimes1=0$.
+:::
 
 <1>2. Q.E.D.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 :::

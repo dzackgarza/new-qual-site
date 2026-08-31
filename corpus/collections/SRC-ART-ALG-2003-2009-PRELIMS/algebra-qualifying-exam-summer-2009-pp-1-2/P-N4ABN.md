@@ -26,17 +26,27 @@ If $A$ and $B$ are normal in $G$, and $G/A$ and $G/B$ are abelian, show that $G/
 **Goal.** If $A, B \normal G$ with $G/A$ and $G/B$ abelian, show $G/(A \cap B)$ is abelian.
 
 <1>1. $G/A$ abelian means $[G, G] \subseteq A$.
-Proof: $G/A$ abelian iff the commutator subgroup $[G,G]$ maps to the identity in $G/A$, i.e. $[G,G] \subseteq A$.
+::: {.proof}
+$G/A$ abelian iff the commutator subgroup $[G,G]$ maps to the identity in $G/A$, i.e. $[G,G] \subseteq A$.
+:::
 
 <1>2. Similarly $[G, G] \subseteq B$.
-Proof: same argument for $G/B$.
+::: {.proof}
+same argument for $G/B$.
+:::
 
 <1>3. Hence $[G, G] \subseteq A \cap B$.
-Proof: $[G,G]$ is contained in both $A$ and $B$.
+::: {.proof}
+$[G,G]$ is contained in both $A$ and $B$.
+:::
 
 <1>4. Therefore $G/(A \cap B)$ is abelian.
-Proof: $G/N$ is abelian iff $[G,G] \subseteq N$; here $N = A \cap B$ contains $[G,G]$.
+::: {.proof}
+$G/N$ is abelian iff $[G,G] \subseteq N$; here $N = A \cap B$ contains $[G,G]$.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>4 is the claim.
+::: {.proof}
+<1>4 is the claim.
+:::
 :::

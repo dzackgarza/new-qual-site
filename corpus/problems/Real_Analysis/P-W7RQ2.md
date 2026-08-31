@@ -39,22 +39,30 @@ f(x) &\da \int_0^{\infty } K_{\delta}(x) e^{-\pi \delta} \delta^{\epsilon - 1} \
 
 <1>1. Define $f(x) \da \int_0^\infty K_\delta(x)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta$ for $\eps > 0$.
 <1>2. $f \in L^1(\RR^n)$.
-    Proof: by Tonelli and $\int K_\delta = 1$,
+    ::: {.proof}
+    by Tonelli and $\int K_\delta = 1$,
+    :::
     \[
     \int_{\RR^n}|f(x)|\,dx \le \int_0^\infty e^{-\pi\delta}\,\delta^{\eps-1} \Big(\int_{\RR^n} K_\delta(x)\,dx\Big)\,d\delta = \int_0^\infty e^{-\pi\delta}\delta^{\eps-1}\,d\delta = \frac{\Gamma(\eps)}{\pi^\eps} < \infty .
     \]
 <1>3. Compute $\fourier{f}$.
-    Proof: since $f$ is an integral of $L^1$ functions, the Fourier transform passes under the integral (Fubini for the absolutely convergent double integral):
+    ::: {.proof}
+    since $f$ is an integral of $L^1$ functions, the Fourier transform passes under the integral (Fubini for the absolutely convergent double integral):
+    :::
     \[
     \fourier{f}(\xi) = \int_0^\infty \fourier{K_\delta}(\xi)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta = \int_0^\infty e^{-\pi\delta|\xi|^2}\,e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta = \int_0^\infty e^{-\pi\delta(1+|\xi|^2)}\,\delta^{\eps-1}\,d\delta .
     \]
 <1>4. Evaluate the last integral.
-    Proof: substitute $t = \pi\delta(1+|\xi|^2)$:
+    ::: {.proof}
+    substitute $t = \pi\delta(1+|\xi|^2)$:
+    :::
     \[
     \int_0^\infty e^{-\pi\delta(1+|\xi|^2)}\,\delta^{\eps-1}\,d\delta = \Big(\pi(1+|\xi|^2)\Big)^{-\eps} \int_0^\infty e^{-t} t^{\eps-1}\,dt = \pi^{-\eps}\,\Gamma(\eps)\,\Big(1+|\xi|^2\Big)^{-\eps} .
     \]
 <1>5. Conclude.
-    Proof: by <1>3 and <1>4, $\fourier{f}(\xi) = \pi^{-\eps}\Gamma(\eps)\,(1+|\xi|^2)^{-\eps}$, so
+    ::: {.proof}
+    by <1>3 and <1>4, $\fourier{f}(\xi) = \pi^{-\eps}\Gamma(\eps)\,(1+|\xi|^2)^{-\eps}$, so
+    :::
     \[
     F(\xi) = \Big(1+|\xi|^2\Big)^{-\eps} = \frac{\pi^\eps}{\Gamma(\eps)}\,\fourier{f}(\xi) = \fourier{\Big(\frac{\pi^\eps}{\Gamma(\eps)} f\Big)}(\xi),
     \]

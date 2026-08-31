@@ -28,41 +28,65 @@ is uniformly continuous and ${ \widehat { f } } ( t ) \to 0 { \mathrm { ~ a s ~ 
 ::: {.solution}
 <1>1. For $t, s \in \mathbb{R}$,
 $$|\widehat f(t) - \widehat f(s)| = \left| \int_{\mathbb{R}} (e^{-ixt} - e^{-ixs}) f(x)\,dx \right| \le \int_{\mathbb{R}} |e^{-ixt} - e^{-ixs}|\,|f(x)|\,dx.$$
-Proof: definition of $\widehat f$ and the triangle inequality.
+::: {.proof}
+definition of $\widehat f$ and the triangle inequality.
+:::
 
 <1>2. $|e^{-ixt} - e^{-ixs}| = |e^{-ixs}(e^{-ix(t-s)} - 1)| = |e^{-ix(t-s)} - 1| \le |x|\,|t - s|$.
-Proof: $|e^{iu} - 1| \le |u|$ for real $u$.
+::: {.proof}
+$|e^{iu} - 1| \le |u|$ for real $u$.
+:::
 
 <1>3. Hence $|\widehat f(t) - \widehat f(s)| \le |t - s| \int_{\mathbb{R}} |x|\,|f(x)|\,dx$.
-Proof: <1>1 and <1>2.
+::: {.proof}
+<1>1 and <1>2.
+:::
 
 <1>4. The quantity $C = \int_{\mathbb{R}} |x|\,|f(x)|\,dx$ may be infinite, so we instead approximate: for any $\varepsilon > 0$, choose $R$ with $\int_{|x| > R} |f| < \varepsilon/4$.
-Proof: $f \in L^1$, so the tail integral tends to $0$.
+::: {.proof}
+$f \in L^1$, so the tail integral tends to $0$.
+:::
 
 <1>5. Then
 $$|\widehat f(t) - \widehat f(s)| \le \int_{|x| \le R} |x|\,|t-s|\,|f(x)|\,dx + 2\int_{|x| > R} |f(x)|\,dx \le R\,|t-s|\,\|f\|_1 + \varepsilon/2.$$
-Proof: <1>2 split over $|x| \le R$ and $|x| > R$, using $|e^{-ixt} - e^{-ixs}| \le 2$.
+::: {.proof}
+<1>2 split over $|x| \le R$ and $|x| > R$, using $|e^{-ixt} - e^{-ixs}| \le 2$.
+:::
 
 <1>6. Choose $\delta = \varepsilon/(2R\|f\|_1)$; then $|t - s| < \delta$ implies $|\widehat f(t) - \widehat f(s)| < \varepsilon$.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 
 <1>7. Hence $\widehat f$ is uniformly continuous.
-Proof: <1>6 (the choice of $\delta$ is independent of $t, s$).
+::: {.proof}
+<1>6 (the choice of $\delta$ is independent of $t, s$).
+:::
 
 <1>8. For the decay: for $t \neq 0$, substitute $u = x - \pi/t$ (so $x = u + \pi/t$):
 $$\widehat f(t) = \int_{\mathbb{R}} e^{-i(u + \pi/t)t} f(u + \pi/t)\,du = -\int_{\mathbb{R}} e^{-iut} f(u + \pi/t)\,du.$$
-Proof: $e^{-i\pi} = -1$.
+::: {.proof}
+$e^{-i\pi} = -1$.
+:::
 
 <1>9. Averaging the two expressions for $\widehat f(t)$:
 $$\widehat f(t) = \frac{1}{2}\int_{\mathbb{R}} e^{-ixt}\left(f(x) - f(x - \pi/t)\right)\,dx.$$
-Proof: <1>8 and the original definition.
+::: {.proof}
+<1>8 and the original definition.
+:::
 
 <1>10. Hence $|\widehat f(t)| \le \frac{1}{2}\int_{\mathbb{R}} |f(x) - f(x - \pi/t)|\,dx \to 0$ as $|t| \to \infty$.
-Proof: <1>9 and the continuity of translation in $L^1$ (as $|t| \to \infty$, $\pi/t \to 0$, so $\|f - f(\cdot - \pi/t)\|_1 \to 0$).
+::: {.proof}
+<1>9 and the continuity of translation in $L^1$ (as $|t| \to \infty$, $\pi/t \to 0$, so $\|f - f(\cdot - \pi/t)\|_1 \to 0$).
+:::
 
 <1>11. Therefore $\widehat f(t) \to 0$ as $t \to \infty$.
-Proof: <1>10.
+::: {.proof}
+<1>10.
+:::
 
 <1>12. Q.E.D.
-Proof: <1>7 and <1>11.
+::: {.proof}
+<1>7 and <1>11.
+:::
 :::

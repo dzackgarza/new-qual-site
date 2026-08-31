@@ -32,17 +32,27 @@ Hint: Use the fact that the upper triangular matrices contain a Sylow 17-subgrou
 
 ::: {.solution}
 <1>1. Let $B$ be upper triangular Sylow $17$-subgroup.
-Proof: order $17$.
+::: {.proof}
+order $17$.
+:::
 
 <1>2. (a) Any $x$ of order $17$ is unipotent, conjugate to $\begin{pmatrix}1&b\\0&1\end{pmatrix}$.
-Proof: $x$ has eigenvalue $1$ (order $17$ in $\F_{17}^\times$ is $16$, so eigenvalues $1$).
+::: {.proof}
+$x$ has eigenvalue $1$ (order $17$ in $\F_{17}^\times$ is $16$, so eigenvalues $1$).
+:::
 
 <1>3. (b) $N_G(B)=B$, and $n_{17}=[G:N_G(B)]=|G|/17=18$.
-Proof: Sylow count.
+::: {.proof}
+Sylow count.
+:::
 
 <1>4. (c) Each Sylow has $16$ non-identity elements of order $17$, distinct Sylows intersect trivially, so $18\cdot16=288$ elements of order $17$.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>2 and <1>4.
+::: {.proof}
+<1>2 and <1>4.
+:::
 :::

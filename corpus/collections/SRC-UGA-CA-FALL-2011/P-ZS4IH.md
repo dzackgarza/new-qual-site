@@ -34,24 +34,38 @@ $$
 $$\frac{\abs{f(z) - f(a)}}{\abs{z - a}} \leq \frac{2M}{r}.$$
 
 <1>1. Reduce to the unit disk by scaling: define $g(w) := f(a + rw)$ for $\abs w \leq 1$.
-    Proof: $g$ is holomorphic on a neighborhood of the closed unit disk, and $\abs{g(w)} \leq M$ there.
+    ::: {.proof}
+    $g$ is holomorphic on a neighborhood of the closed unit disk, and $\abs{g(w)} \leq M$ there.
+    :::
 
 <1>2. Define $h(w) := g(w) - g(0)$; then $h(0) = 0$ and $\abs{h(w)} \leq 2M$ on $\abs w \leq 1$.
-    Proof: $\abs{h(w)} = \abs{g(w) - g(0)} \leq \abs{g(w)} + \abs{g(0)} \leq 2M$.
+    ::: {.proof}
+    $\abs{h(w)} = \abs{g(w) - g(0)} \leq \abs{g(w)} + \abs{g(0)} \leq 2M$.
+    :::
 
 <1>3. Apply Schwarz's lemma to $\frac{h}{2M}$.
     <2>1. $\frac{h}{2M}$ is holomorphic on $\DD$ and maps $\DD$ into $\overline{\DD}$, with value $0$ at $w = 0$.
-        Proof: <1>2; if $M = 0$ then $f \equiv 0$ and the result is trivial, so assume $M > 0$.
+        ::: {.proof}
+        <1>2; if $M = 0$ then $f \equiv 0$ and the result is trivial, so assume $M > 0$.
+        :::
     <2>2. $\abs{h(w)} \leq 2M \abs w$ for $\abs w < 1$.
-        Proof: Schwarz's lemma applied to $h/2M$.
+        ::: {.proof}
+        Schwarz's lemma applied to $h/2M$.
+        :::
 
 <1>4. Translate back to $z$.
     <2>1. For $z \in \bar B(a, r/2)$, set $w := (z - a)/r$; then $\abs w \leq 1/2 < 1$.
-        Proof: $\abs{z - a} \leq r/2$.
+        ::: {.proof}
+        $\abs{z - a} \leq r/2$.
+        :::
     <2>2. $\abs{f(z) - f(a)} = \abs{h(w)} \leq 2M\abs w = \frac{2M}{r}\abs{z - a}$.
-        Proof: <1>1, <1>2 and <1>3.2, with $f(z) - f(a) = g(w) - g(0) = h(w)$.
+        ::: {.proof}
+        <1>1, <1>2 and <1>3.2, with $f(z) - f(a) = g(w) - g(0) = h(w)$.
+        :::
 
 <1>5. Q.E.D.
-    Proof: <1>4.2 is exactly the claimed inequality (both sides well-defined since $z \neq a$).
+    ::: {.proof}
+    <1>4.2 is exactly the claimed inequality (both sides well-defined since $z \neq a$).
+    :::
 
 :::

@@ -26,14 +26,22 @@ What do the tensors look like in the case of vector spaces?
 
 ::: {.solution}
 <1>1. $V\otimes W$ is the quotient of free vector space on $V\times W$ by bilinear relations.
-Proof: construction.
+::: {.proof}
+construction.
+:::
 
 <1>2. Universal property: bilinear $B:V\times W\to U$ factors uniquely through $V\otimes W$ via $v\otimes w\mapsto B(v,w)$.
-Proof: universal property.
+::: {.proof}
+universal property.
+:::
 
 <1>3. For vector spaces with bases $\{e_i\},\{f_j\}$, $V\otimes W$ has basis $\{e_i\otimes f_j\}$, and tensors are finite sums $\sum c_{ij}e_i\otimes f_j$.
-Proof: basis.
+::: {.proof}
+basis.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 :::

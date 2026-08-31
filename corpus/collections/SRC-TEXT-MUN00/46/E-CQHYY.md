@@ -26,28 +26,50 @@ Show that the set $\mathcal{B}(\mathbb{R}, \mathbb{R})$ of bounded functions $f:
 
 <1>1. $\mathcal B(\RR,\RR)$ is closed in the uniform topology.
 <2>1. Let $f_n \in \mathcal B(\RR,\RR)$ converge uniformly to $f$.
-Proof: take a sequence of bounded functions converging uniformly.
+::: {.proof}
+take a sequence of bounded functions converging uniformly.
+:::
 <2>2. Each $f_n$ is bounded by some $M_n$.
-Proof: definition of bounded.
+::: {.proof}
+definition of bounded.
+:::
 <2>3. Uniform convergence gives $N$ with $\sup_x |f_N(x) - f(x)| < 1$.
-Proof: definition of uniform convergence.
+::: {.proof}
+definition of uniform convergence.
+:::
 <2>4. Hence $|f(x)| \le |f_N(x)| + 1 \le M_N + 1$ for all $x$, so $f$ is bounded.
-Proof: triangle inequality.
+::: {.proof}
+triangle inequality.
+:::
 <2>5. Hence $f \in \mathcal B(\RR,\RR)$, so $\mathcal B$ is closed.
-Proof: the uniform limit of bounded functions is bounded.
+::: {.proof}
+the uniform limit of bounded functions is bounded.
+:::
 
 <1>2. $\mathcal B(\RR,\RR)$ is not closed in the compact-convergence topology.
 <2>1. Take $f_n(x) = x$ for $|x| \le n$ and $f_n(x) = 0$ otherwise (or simply $f_n(x) = \min(|x|, n)$).
-Proof: define a sequence of bounded functions.
+::: {.proof}
+define a sequence of bounded functions.
+:::
 <2>2. Each $f_n$ is bounded.
-Proof: $|f_n(x)| \le n$ for all $x$.
+::: {.proof}
+$|f_n(x)| \le n$ for all $x$.
+:::
 <2>3. $f_n \to f$ in the compact-convergence topology, where $f(x) = x$ (unbounded).
-Proof: on any compact set $K$, for $n \ge \sup_{x \in K} |x|$, we have $f_n(x) = x = f(x)$ on $K$, so $f_n \to f$ uniformly on every compact set.
+::: {.proof}
+on any compact set $K$, for $n \ge \sup_{x \in K} |x|$, we have $f_n(x) = x = f(x)$ on $K$, so $f_n \to f$ uniformly on every compact set.
+:::
 <2>4. $f \notin \mathcal B(\RR,\RR)$ (it is unbounded).
-Proof: $f(x) = x$ is unbounded.
+::: {.proof}
+$f(x) = x$ is unbounded.
+:::
 <2>5. Hence $\mathcal B$ is not closed in the compact-convergence topology.
-Proof: there is a sequence in $\mathcal B$ converging (in compact convergence) to a function outside $\mathcal B$.
+::: {.proof}
+there is a sequence in $\mathcal B$ converging (in compact convergence) to a function outside $\mathcal B$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 and <1>2 prove the two claims.
+::: {.proof}
+<1>1 and <1>2 prove the two claims.
+:::
 :::

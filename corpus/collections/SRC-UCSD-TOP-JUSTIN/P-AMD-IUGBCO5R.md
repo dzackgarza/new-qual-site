@@ -28,18 +28,30 @@ Show that $\ker A \into A\tensor \QQ$ given by $a \mapsto a\tensor 1$ is the tor
 
 <1>1. Every torsion element lies in the kernel.
 <2>1. If $a \in A$ has $na = 0$ for some $n > 0$, then $a \otimes 1 = 0$ in $A \otimes \QQ$.
-Proof: $a \otimes 1 = a \otimes (n \cdot \frac1n) = (na) \otimes \frac1n = 0 \otimes \frac1n = 0$.
+::: {.proof}
+$a \otimes 1 = a \otimes (n \cdot \frac1n) = (na) \otimes \frac1n = 0 \otimes \frac1n = 0$.
+:::
 <2>2. Hence $T(A) \subseteq \ker$.
-Proof: <1>1.1 applies to every torsion element.
+::: {.proof}
+<1>1.1 applies to every torsion element.
+:::
 
 <1>2. Every element of the kernel is torsion.
 <2>1. $A \otimes \QQ \cong S^{-1}A$ where $S = \ZZ \sm \theset{0}$.
-Proof: $\QQ$ is the localization of $\ZZ$ at the nonzero integers, and $A \otimes \QQ \cong A \otimes S^{-1}\ZZ \cong S^{-1}A$.
+::: {.proof}
+$\QQ$ is the localization of $\ZZ$ at the nonzero integers, and $A \otimes \QQ \cong A \otimes S^{-1}\ZZ \cong S^{-1}A$.
+:::
 <2>2. The map $A \to S^{-1}A$, $a \mapsto a/1$, has kernel exactly $T(A)$.
-Proof: $a/1 = 0$ in $S^{-1}A$ iff $sa = 0$ for some $s \in S$, i.e. iff $a$ is torsion.
+::: {.proof}
+$a/1 = 0$ in $S^{-1}A$ iff $sa = 0$ for some $s \in S$, i.e. iff $a$ is torsion.
+:::
 <2>3. Hence $\ker = T(A)$.
-Proof: combine <1>2.1 and <1>2.2.
+::: {.proof}
+combine <1>2.1 and <1>2.2.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 and <1>2 give both inclusions.
+::: {.proof}
+<1>1 and <1>2 give both inclusions.
+:::
 :::

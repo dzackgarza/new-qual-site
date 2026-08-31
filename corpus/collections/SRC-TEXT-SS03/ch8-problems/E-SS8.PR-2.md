@@ -70,19 +70,25 @@ The tangent vectors to the image curves $\tilde{\gamma} = f \circ \gamma$ and $\
 \[
 \tilde{v} = f'(z_0) v \quad \text{and} \quad \tilde{w} = f'(z_0) w.
 \]
-Proof: chain rule for complex differentiation.
+::: {.proof}
+chain rule for complex differentiation.
+:::
 <2>2. The Euclidean inner product on $\mathbb{R}^2 \cong \mathbb{C}$ is $(z_1, z_2) = \operatorname{Re}(z_1 \bar{z}_2)$.
 Compute the inner product of $\tilde{v}$ and $\tilde{w}$:
 \[
 (\tilde{v}, \tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(f'(z_0) w)}\big) = \operatorname{Re}\big(|f'(z_0)|^2 v \bar{w}\big) = |f'(z_0)|^2 \operatorname{Re}(v \bar{w}) = |f'(z_0)|^2 (v, w).
 \]
-Proof: algebraic properties of complex conjugation and modulus.
+::: {.proof}
+algebraic properties of complex conjugation and modulus.
+:::
 <2>3. The norms are $|\tilde{v}| = |f'(z_0)| |v|$ and $|\tilde{w}| = |f'(z_0)| |w|$.
 Thus the cosine of the angle $\tilde{\alpha}$ between $\tilde{v}$ and $\tilde{w}$ satisfies:
 \[
 \cos \tilde{\alpha} = \frac{(\tilde{v}, \tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{|f'(z_0)|^2 (v, w)}{|f'(z_0)|^2 |v| |w|} = \frac{(v, w)}{|v| |w|} = \cos \alpha.
 \]
-Proof: <2>2 and norm scaling.
+::: {.proof}
+<2>2 and norm scaling.
+:::
 <2>4. Similarly, compute the sine of the angle $\tilde{\alpha}$:
 \[
 (\tilde{v}, -i\tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(-i f'(z_0) w)}\big) = |f'(z_0)|^2 \operatorname{Re}(v \cdot i \bar{w}) = |f'(z_0)|^2 (v, -iw).
@@ -91,25 +97,35 @@ Dividing by $|\tilde{v}| |\tilde{w}|$ yields:
 \[
 \sin \tilde{\alpha} = \frac{(\tilde{v}, -i\tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{(v, -iw)}{|v| |w|} = \sin \alpha.
 \]
-Proof: definition of oriented sine.
+::: {.proof}
+definition of oriented sine.
+:::
 <2>5. Since $\cos \tilde{\alpha} = \cos \alpha$ and $\sin \tilde{\alpha} = \sin \alpha$, the oriented angle is preserved: $\tilde{\alpha} = \alpha$.
-Proof: angle is uniquely determined in $(-\pi, \pi]$ by its sine and cosine.
+::: {.proof}
+angle is uniquely determined in $(-\pi, \pi]$ by its sine and cosine.
+:::
 
 <1>2. Part (b): Preservation of oriented angles implies holomorphicity:
 <2>1. Let $T = Df(z_0): \mathbb{R}^2 \to \mathbb{R}^2$ be the real total derivative, represented by the Jacobian matrix:
 \[
 J = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}, \quad \text{with } \det(J) \neq 0.
 \]
-Proof: real differentiability of $f = u + iv$.
+::: {.proof}
+real differentiability of $f = u + iv$.
+:::
 <2>2. Since $f$ preserves oriented angles at $z_0$, the linear map $T$ preserves oriented angles between all pairs of non-zero vectors in $\mathbb{R}^2$.
-Proof: tangent mapping of smooth curves.
+::: {.proof}
+tangent mapping of smooth curves.
+:::
 <2>3. Consider the standard basis $e_1 = (1, 0)^T$ and $e_2 = (0, 1)^T$.
 $e_1$ and $e_2$ are orthogonal of equal length with $\det(e_1, e_2) = 1 > 0$.
 Thus their images $T e_1 = (u_x, v_x)^T$ and $T e_2 = (u_y, v_y)^T$ must be orthogonal, have equal non-zero length $\lambda > 0$, and satisfy $\det(T e_1, T e_2) > 0$:
 \[
 u_x u_y + v_x v_y = 0, \qquad u_x^2 + v_x^2 = u_y^2 + v_y^2 = \lambda^2 > 0, \qquad u_x v_y - u_y v_x > 0.
 \]
-Proof: preservation of right angles and orientation.
+::: {.proof}
+preservation of right angles and orientation.
+:::
 <2>4. Any $2 \times 2$ matrix satisfying these conditions has the form of a positive scalar times a rotation matrix:
 \[
 J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} \quad (a, b \in \mathbb{R}, \, a^2 + b^2 = \lambda^2 > 0).
@@ -118,15 +134,21 @@ Therefore:
 \[
 u_x = v_y = a, \qquad u_y = -v_x = -b.
 \]
-Proof: classification of orientation-preserving conformal linear maps on $\mathbb{R}^2$.
+::: {.proof}
+classification of orientation-preserving conformal linear maps on $\mathbb{R}^2$.
+:::
 <2>5. The equations in <2>4 are the **Cauchy–Riemann equations** for $f$ at $z_0$.
 Since $f$ is real-differentiable at $z_0$ and satisfies the Cauchy–Riemann equations, $f$ is complex-differentiable (holomorphic) at $z_0$ with:
 \[
 f'(z_0) = u_x(z_0) + i v_x(z_0) = a + ib \neq 0.
 \]
-Proof: complex differentiability characterization via Cauchy–Riemann equations and real differentiability.
+::: {.proof}
+complex differentiability characterization via Cauchy–Riemann equations and real differentiability.
+:::
 
 <1>3. Conclusion:
 $f$ preserves angles if and only if $f$ is holomorphic with $f'(z_0) \neq 0$. Q.E.D.
-Proof: <1>1 and <1>2.
+::: {.proof}
+<1>1 and <1>2.
+:::
 :::

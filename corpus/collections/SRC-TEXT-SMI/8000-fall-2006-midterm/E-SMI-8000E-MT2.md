@@ -27,25 +27,39 @@ audit:
 **(a).**
 
 <1>1. Let $R$ be a PID. First, $R$ is Noetherian.
-Proof: every ideal is principal, hence finitely generated.
+::: {.proof}
+every ideal is principal, hence finitely generated.
+:::
 
 <1>2. Every nonzero nonunit $a \in R$ factors into a product of irreducibles.
-Proof: if $a$ is not irreducible, write $a = bc$ with $b, c$ nonunits; iterating, the ascending chain of ideals $(a) \subsetneq (b) \subsetneq \cdots$ must terminate (Noetherian, <1>1), so the process stops at irreducibles.
+::: {.proof}
+if $a$ is not irreducible, write $a = bc$ with $b, c$ nonunits; iterating, the ascending chain of ideals $(a) \subsetneq (b) \subsetneq \cdots$ must terminate (Noetherian, <1>1), so the process stops at irreducibles.
+:::
 
 <1>3. Irreducibles in a PID are prime.
-Proof: if $p$ is irreducible and $p \mid ab$, then $(p)$ is maximal (since $R$ is a PID and $p$ irreducible implies $(p)$ is maximal among proper principal ideals, hence maximal), so $R/(p)$ is a field, hence an integral domain, so $p$ is prime.
+::: {.proof}
+if $p$ is irreducible and $p \mid ab$, then $(p)$ is maximal (since $R$ is a PID and $p$ irreducible implies $(p)$ is maximal among proper principal ideals, hence maximal), so $R/(p)$ is a field, hence an integral domain, so $p$ is prime.
+:::
 
 <1>4. Uniqueness: if $a = p_1 \cdots p_m = q_1 \cdots q_n$ are two factorizations into irreducibles, then $p_1$ divides some $q_j$ (since $p_1$ is prime), and by induction the factorizations agree up to order and units.
-Proof: <1>3 and the standard induction.
+::: {.proof}
+<1>3 and the standard induction.
+:::
 
 <1>5. Hence $R$ has unique factorization.
-Proof: <1>2 and <1>4.
+::: {.proof}
+<1>2 and <1>4.
+:::
 
 **(b).**
 
 <1>1. $\mathbb{Z}[x]$ is a UFD but not a PID.
-Proof: $\mathbb{Z}[x]$ is a UFD (Gauss's lemma), but the ideal $(2, x)$ is not principal.
+::: {.proof}
+$\mathbb{Z}[x]$ is a UFD (Gauss's lemma), but the ideal $(2, x)$ is not principal.
+:::
 
 <1>2. Q.E.D.
-Proof: <1>5 (a) and <1>1 (b).
+::: {.proof}
+<1>5 (a) and <1>1 (b).
+:::
 :::

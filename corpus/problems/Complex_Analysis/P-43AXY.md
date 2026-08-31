@@ -31,18 +31,28 @@ p(z) = z^3 + 2z + 4
 **Goal:** Prove that all roots of $p(z) = z^3 + 2z + 4$ lie outside the unit circle.
 
 <1>1. On $\abs{z} = 1$, the modulus of the first two terms is at most $3$.
-    Proof: $\abs{z^3 + 2z} \leq \abs{z}^3 + 2\abs{z} = 1 + 2 = 3$ by the triangle inequality.
+    ::: {.proof}
+    $\abs{z^3 + 2z} \leq \abs{z}^3 + 2\abs{z} = 1 + 2 = 3$ by the triangle inequality.
+    :::
 
 <1>2. On $\abs{z} = 1$, $\abs{z^3 + 2z} < \abs{4}$.
-    Proof: By <1>1, $\abs{z^3 + 2z} \leq 3 < 4 = \abs{4}$.
+    ::: {.proof}
+    By <1>1, $\abs{z^3 + 2z} \leq 3 < 4 = \abs{4}$.
+    :::
 
 <1>3. $p(z) = z^3 + 2z + 4$ has the same number of zeros in $\abs{z} < 1$ as the constant $4$.
-    Proof: Apply Rouch\'e's theorem to $f(z) = 4$ and $g(z) = z^3 + 2z$ on the circle $\abs{z} = 1$; the strict inequality $\abs{g(z)} < \abs{f(z)}$ from <1>2 holds on the whole circle, so $f$ and $f + g = p$ have equally many zeros inside.
+    ::: {.proof}
+    Apply Rouch\'e's theorem to $f(z) = 4$ and $g(z) = z^3 + 2z$ on the circle $\abs{z} = 1$; the strict inequality $\abs{g(z)} < \abs{f(z)}$ from <1>2 holds on the whole circle, so $f$ and $f + g = p$ have equally many zeros inside.
+    :::
 
 <1>4. $p$ has no zeros in $\abs{z} < 1$ and none on $\abs{z} = 1$.
-    Proof: The constant $4$ has no zeros, so by <1>3 neither does $p$ inside the circle; and <1>2 rules out zeros on the circle itself (there $\abs{p(z)} \geq \abs{4} - \abs{z^3 + 2z} \geq 4 - 3 = 1 > 0$).
+    ::: {.proof}
+    The constant $4$ has no zeros, so by <1>3 neither does $p$ inside the circle; and <1>2 rules out zeros on the circle itself (there $\abs{p(z)} \geq \abs{4} - \abs{z^3 + 2z} \geq 4 - 3 = 1 > 0$).
+    :::
 
 <1>5. Q.E.D.
-    Proof: <1>4 shows every root of $p$ satisfies $\abs{z} > 1$, i.e. lies strictly outside the unit circle.
+    ::: {.proof}
+    <1>4 shows every root of $p$ satisfies $\abs{z} > 1$, i.e. lies strictly outside the unit circle.
+    :::
 
 :::

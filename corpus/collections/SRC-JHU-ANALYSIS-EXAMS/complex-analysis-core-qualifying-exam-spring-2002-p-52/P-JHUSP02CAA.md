@@ -21,14 +21,22 @@ audit:
 
 ::: {.solution}
 <1>1. $f(\C)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.
-Proof: $5-f$ omits $(-\infty,0]$, so $h=\sqrt{5-f}$ entire and $\operatorname{Re}h>0$? Actually $5-f$ omits $[0,\infty)$? Wait $f$ omits $[5,\infty)$, so $5-f$ omits $(-\infty,0]$.
+::: {.proof}
+$5-f$ omits $(-\infty,0]$, so $h=\sqrt{5-f}$ entire and $\operatorname{Re}h>0$? Actually $5-f$ omits $[0,\infty)$? Wait $f$ omits $[5,\infty)$, so $5-f$ omits $(-\infty,0]$.
+:::
 
 <1>2. $g=\sqrt{5-f}$ maps $\C$ into right half-plane, then $\phi=(g-1)/(g+1)$ bounded by $1$.
-Proof: Cayley.
+::: {.proof}
+Cayley.
+:::
 
 <1>3. $\phi$ entire bounded, so constant by Liouville, hence $f$ constant.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 :::

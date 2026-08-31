@@ -27,23 +27,37 @@ can be defined via the indicated cellular formulas.
 
 ::: {.solution}
 <1>1. First slant product: define $H_n(X \times Y) \times H^j(Y) \to H_{n-j}(X)$ on cellular chains by $(e^i \times e^j, \varphi) \mapsto \varphi(e^j) e^i$, where $e^i$ is an $i$-cell of $X$ and $e^j$ a $j$-cell of $Y$.
-Proof: definition on the cellular level.
+::: {.proof}
+definition on the cellular level.
+:::
 
 <1>2. This is well-defined on homology.
 <2>1. The formula is bilinear and compatible with the boundary maps.
-Proof: $\partial(e^i \times e^j) = \partial e^i \times e^j + (-1)^i e^i \times \partial e^j$, and applying the slant product (with $\varphi$ a cocycle, so $\varphi(\partial e^j) = 0$) gives $\varphi(e^j)\partial e^i$, which is the boundary of $\varphi(e^j) e^i$; hence the slant product is a chain map.
+::: {.proof}
+$\partial(e^i \times e^j) = \partial e^i \times e^j + (-1)^i e^i \times \partial e^j$, and applying the slant product (with $\varphi$ a cocycle, so $\varphi(\partial e^j) = 0$) gives $\varphi(e^j)\partial e^i$, which is the boundary of $\varphi(e^j) e^i$; hence the slant product is a chain map.
+:::
 <2>2. Hence it induces a well-defined map on homology.
-Proof: <2>1.
+::: {.proof}
+<2>1.
+:::
 
 <1>3. Second slant product: define $H^n(X \times Y) \times H_j(Y) \to H^{n-j}(X)$ by $(\varphi, e^j) \mapsto (e^i \mapsto \varphi(e^i \times e^j))$.
-Proof: definition on the cellular level.
+::: {.proof}
+definition on the cellular level.
+:::
 
 <1>4. This is well-defined on cohomology.
 <2>1. The formula is bilinear and compatible with the coboundary maps.
-Proof: if $\varphi$ is a cocycle, then the resulting cochain $e^i \mapsto \varphi(e^i \times e^j)$ is a cocycle (its coboundary vanishes since $\delta\varphi = 0$ and $\partial e^j = 0$ for a cycle $e^j$).
+::: {.proof}
+if $\varphi$ is a cocycle, then the resulting cochain $e^i \mapsto \varphi(e^i \times e^j)$ is a cocycle (its coboundary vanishes since $\delta\varphi = 0$ and $\partial e^j = 0$ for a cycle $e^j$).
+:::
 <2>2. Hence it induces a well-defined map on cohomology.
-Proof: <2>1.
+::: {.proof}
+<2>1.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>2 and <1>4.
+::: {.proof}
+<1>2 and <1>4.
+:::
 :::

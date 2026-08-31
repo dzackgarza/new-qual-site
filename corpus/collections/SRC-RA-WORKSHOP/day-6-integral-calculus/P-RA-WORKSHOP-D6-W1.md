@@ -25,7 +25,8 @@ audit:
 <1>1. Reduce to squares and sums.
 Proof: the identity $fg = \frac14\big((f+g)^2 - (f-g)^2\big)$ reduces the claim to: $\mathcal{R}$ is closed under addition (and scalar multiplication), and $h \in \mathcal{R} \implies h^2 \in \mathcal{R}$.
 <1>2. $\mathcal{R}$ is a vector space.
-Proof: for $f, g \in \mathcal{R}$ and a partition $P$, the oscillation bound $\mathrm{osc}_{[x_{i-1},x_i]}(f+g) \le \mathrm{osc}_{[x_{i-1},x_i]}(f) + \mathrm{osc}_{[x_{i-1},x_i]}(g)$ gives $U_{f+g}(P) - L_{f+g}(P) \le \big(U_f(P) - L_f(P)\big) + \big(U_g(P) - L_g(P)\big)$, which tends to $0$ along a suitable sequence of partitions; scalar multiples are immediate.
+Proof: for $f, g \in \mathcal{R}$ and a partition $P$, the oscillation bound $\mathrm{osc}_{[x_{i-1},x_i]}(f+g) \le \mathrm{osc}_{[x_{i-1},x_i]}(f) + \mathrm{osc}_{[x_{i-1},x_i]}(g)$ gives $U_{f+g}(P) - L_{f+g}(P) \le \big(U_f(P) - L_f(P)\big) + \big(U_g(P) - L_g(P)\big)$, which tends to $0$ along a suitable sequence of partitions.
+For a scalar $c$, the oscillation bound $\mathrm{osc}(cf) = |c|\,\mathrm{osc}(f)$ gives $U_{cf}(P) - L_{cf}(P) = |c|\big(U_f(P) - L_f(P)\big) \to 0$ along the same sequence of partitions.
 Hence $f+g, cf \in \mathcal{R}$.
 <1>3. $h \in \mathcal{R}$ bounded implies $h^2 \in \mathcal{R}$.
 Proof: let $|h| \le M$.

@@ -24,20 +24,32 @@ Show that $\prod_{n\in \ZZ} (1 + a_n) < \infty$ if $\ts{a_n} \in \ell_1(\ZZ)$.
 
 ::: {.solution}
 <1>1. Since $\{a_n\} \in \ell_1(\ZZ)$, we have $\sum_{n \in \ZZ} |a_n| < \infty$.
-Proof: definition of $\ell_1$.
+::: {.proof}
+definition of $\ell_1$.
+:::
 
 <1>2. Hence $a_n \to 0$, so for all sufficiently large $|n|$ we have $|a_n| < 1/2$.
-Proof: a convergent series has terms tending to $0$.
+::: {.proof}
+a convergent series has terms tending to $0$.
+:::
 
 <1>3. For $|a_n| < 1/2$, $|\log(1 + a_n)| \le 2|a_n|$.
-Proof: $|\log(1+z)| \le 2|z|$ for $|z| \le 1/2$ (standard estimate).
+::: {.proof}
+$|\log(1+z)| \le 2|z|$ for $|z| \le 1/2$ (standard estimate).
+:::
 
 <1>4. Hence $\sum_{n} |\log(1 + a_n)| \le 2\sum_n |a_n| < \infty$.
-Proof: <1>3 and <1>1.
+::: {.proof}
+<1>3 and <1>1.
+:::
 
 <1>5. Therefore $\sum_n \log(1 + a_n)$ converges absolutely, so the product $\prod_n (1 + a_n)$ converges to a finite nonzero value.
-Proof: a product $\prod (1 + a_n)$ converges (absolutely) iff $\sum \log(1 + a_n)$ converges (absolutely).
+::: {.proof}
+a product $\prod (1 + a_n)$ converges (absolutely) iff $\sum \log(1 + a_n)$ converges (absolutely).
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

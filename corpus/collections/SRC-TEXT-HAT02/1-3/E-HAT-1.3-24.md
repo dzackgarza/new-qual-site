@@ -29,33 +29,51 @@ Show:
 **(a).**
 
 <1>1. Let $p : Y \to X/G$ be a path-connected covering space, and choose a basepoint $y_0 \in Y$ with $p(y_0) = x_0$.
-Proof: setup.
+::: {.proof}
+setup.
+:::
 
 <1>2. Since $X \to X/G$ is the universal cover (a covering space action of $G$ on a simply-connected $X$), there is a lift $\tilde p : X \to Y$ of the covering $X \to X/G$ through $p$.
-Proof: the universal property of the universal cover (lifting criterion).
+::: {.proof}
+the universal property of the universal cover (lifting criterion).
+:::
 
 <1>3. The deck transformation group of $X \to X/G$ is $G$, and the subgroup $H = p_*(\pi_1(Y))$ (or equivalently the stabilizer of the lift) acts on $X$ with quotient $Y$.
-Proof: covering space theory; $Y \cong X/H$ where $H$ is the subgroup of $G$ corresponding to the subgroup $p_*(\pi_1(Y)) \le \pi_1(X/G) = G$.
+::: {.proof}
+covering space theory; $Y \cong X/H$ where $H$ is the subgroup of $G$ corresponding to the subgroup $p_*(\pi_1(Y)) \le \pi_1(X/G) = G$.
+:::
 
 <1>4. Hence $Y \cong X/H$ for some subgroup $H \le G$.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 
 **(b).**
 
 <1>1. $X/H_1$ and $X/H_2$ are isomorphic as covering spaces of $X/G$ iff $H_1$ and $H_2$ are conjugate in $G$.
-Proof: two subgroups give isomorphic covers iff they are conjugate (the isomorphism is induced by a deck transformation of $X$ conjugating one subgroup to the other).
+::: {.proof}
+two subgroups give isomorphic covers iff they are conjugate (the isomorphism is induced by a deck transformation of $X$ conjugating one subgroup to the other).
+:::
 
 <1>2. Hence the claim.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 
 **(c).**
 
 <1>1. The cover $X/H \to X/G$ is normal iff $H$ is normal in $G$.
-Proof: a covering is normal iff the corresponding subgroup is normal in the fundamental group.
+::: {.proof}
+a covering is normal iff the corresponding subgroup is normal in the fundamental group.
+:::
 
 <1>2. If $H \trianglelefteq G$, the deck transformation group of $X/H \to X/G$ is $N_G(H)/H = G/H$.
-Proof: the deck transformations of $X/H \to X/G$ are the elements of $G$ normalizing $H$, modulo $H$; when $H$ is normal, $N_G(H) = G$.
+::: {.proof}
+the deck transformations of $X/H \to X/G$ are the elements of $G$ normalizing $H$, modulo $H$; when $H$ is normal, $N_G(H) = G$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>4 (a), <1>2 (b), <1>2 (c).
+::: {.proof}
+<1>4 (a), <1>2 (b), <1>2 (c).
+:::
 :::

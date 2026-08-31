@@ -31,15 +31,21 @@ Then:
 \[
 \int_X \liminf_{n \to \infty} f_n \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
 \]
-Proof: statement of Fatou's Lemma.
+::: {.proof}
+statement of Fatou's Lemma.
+:::
 
 <1>2. Part (b): Statement and Proof of the Dominated Convergence Theorem: <2>1. **Statement:** Let $\{f_n\}$ be a sequence of measurable functions on $(X, \mu)$ converging pointwise almost everywhere to $f$.
 If there exists an integrable function $g \in L^1(X, \mu)$ such that $|f_n(x)| \le g(x)$ for almost every $x$ and all $n \ge 1$, then $f \in L^1(X, \mu)$ and:
 \[
 \lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu.
 \]
-Proof: statement of DCT. <2>2. **Proof:** Since $|f_n(x)| \le g(x)$ a.e. and $f_n(x) \to f(x)$ a.e., taking $n \to \infty$ gives $|f(x)| \le g(x)$ a.e., so $f \in L^1(X, \mu)$.
-Proof: monotonicity of limits and integrability of dominator.
+::: {.proof}
+statement of DCT. <2>2. **Proof:** Since $|f_n(x)| \le g(x)$ a.e. and $f_n(x) \to f(x)$ a.e., taking $n \to \infty$ gives $|f(x)| \le g(x)$ a.e., so $f \in L^1(X, \mu)$.
+:::
+::: {.proof}
+monotonicity of limits and integrability of dominator.
+:::
 <2>3. Consider the non-negative sequence $u_n = g + f_n \ge 0$.
 Applying Fatou's Lemma to $\{u_n\}$:
 \[
@@ -49,7 +55,9 @@ Subtracting the finite value $\int_X g \, d\mu < \infty$:
 \[
 \int_X f \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
 \]
-Proof: linearity of integrals and Fatou's Lemma.
+::: {.proof}
+linearity of integrals and Fatou's Lemma.
+:::
 <2>4. Symmetrically, consider the non-negative sequence $v_n = g - f_n \ge 0$.
 Applying Fatou's Lemma to $\{v_n\}$:
 \[
@@ -59,19 +67,26 @@ Subtracting $\int_X g \, d\mu$ and multiplying by $-1$:
 \[
 \limsup_{n \to \infty} \int_X f_n \, d\mu \le \int_X f \, d\mu.
 \]
-Proof: $\liminf(-a_n) = -\limsup(a_n)$.
+::: {.proof}
+$\liminf(-a_n) = -\limsup(a_n)$.
+:::
 <2>5. Combining <2>3 and <2>4:
 \[
 \limsup_{n \to \infty} \int_X f_n \, d\mu \le \int_X f \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
 \]
 Since $\liminf \le \limsup$, all inequalities are equalities, establishing $\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu$.
-Proof: squeeze principle.
+::: {.proof}
+squeeze principle.
+:::
 
 <1>3. Part (c): Counterexample with vanishing pointwise limit and non-zero integral: <2>1. Define $f_n: [0, 1] \to \mathbb{R}$ by:
 \[
 f_n(x) = n \, \mathbf{1}_{(0, 1/n)}(x) = \begin{cases} n & \text{if } 0 < x < 1/n, \\ 0 & \text{otherwise.} \end{cases}
 \]
-(Alternatively, $f_n(x) = \mathbf{1}_{[n, n+1]}(x)$ on $\mathbb{R}$). Proof: explicit construction.
+(Alternatively, $f_n(x) = \mathbf{1}_{[n, n+1]}(x)$ on $\mathbb{R}$).
+::: {.proof}
+explicit construction.
+:::
 <2>2. **Pointwise limit:**
 
 - If $x = 0$, $f_n(0) = 0$ for all $n$.
@@ -79,14 +94,21 @@ f_n(x) = n \, \mathbf{1}_{(0, 1/n)}(x) = \begin{cases} n & \text{if } 0 < x < 1/
 - If $x \in (0, 1]$, choose $N > 1/x$.
   For all $n \ge N$, $1/n < x$, so $f_n(x) = 0$.
   Thus $f_n(x) \to 0$ for all $x \in [0, 1]$ (pointwise everywhere).
-  Proof: Archimedean property of $\mathbb{R}$.
+  ::: {.proof}
+  Archimedean property of $\mathbb{R}$.
+  :::
   <2>3. **Integral limit:** For every $n \ge 1$:
 \[
 \int_0^1 f_n(x) \, dx = \int_0^{1/n} n \, dx = n \cdot \frac{1}{n} = 1.
 \]
 Thus $\lim_{n \to \infty} \int_0^1 f_n(x) \, dx = 1 \neq 0 = \int_0^1 \lim_{n \to \infty} f_n(x) \, dx$.
-Proof: Riemann/Lebesgue integral of step functions.
+::: {.proof}
+Riemann/Lebesgue integral of step functions.
+:::
 
 <1>4. Conclusion: Fatou's Lemma is stated, DCT is proven, and $f_n(x) = n \mathbf{1}_{(0, 1/n)}(x)$ provides the required example.
-Q.E.D. Proof: <1>1 through <1>3.
+::: {.proof}
+<1>1 through <1>3.
+:::
+Q.E.D.
 :::

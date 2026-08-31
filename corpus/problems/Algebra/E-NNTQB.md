@@ -23,17 +23,27 @@ Show that if $G$ is finite then $\abs{G}/\abs{H} = [G: H]$.
 
 ::: {.solution}
 <1>1. The left cosets of $H$ in $G$ partition $G$ into $[G : H]$ disjoint sets.
-Proof: the cosets $gH$ are the equivalence classes of the relation $g_1 \sim g_2 \iff g_1^{-1}g_2 \in H$.
+::: {.proof}
+the cosets $gH$ are the equivalence classes of the relation $g_1 \sim g_2 \iff g_1^{-1}g_2 \in H$.
+:::
 
 <1>2. Each coset $gH$ has exactly $|H|$ elements.
-Proof: the map $H \to gH$, $h \mapsto gh$, is a bijection.
+::: {.proof}
+the map $H \to gH$, $h \mapsto gh$, is a bijection.
+:::
 
 <1>3. Hence $|G| = [G : H] \cdot |H|$.
-Proof: <1>1 and <1>2 (the total number of elements is the number of cosets times the size of each coset).
+::: {.proof}
+<1>1 and <1>2 (the total number of elements is the number of cosets times the size of each coset).
+:::
 
 <1>4. Therefore $|G|/|H| = [G : H]$.
-Proof: <1>3, dividing by $|H|$.
+::: {.proof}
+<1>3, dividing by $|H|$.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
 :::

@@ -71,7 +71,7 @@ $$
 
   > Idea: take sequence starting points for the triangles: $0, 0 + {1\over 4}, 0 + {1 \over 4} + {1\over 8}, \cdots$ which converges to $1/2$ since $\sum_{k=1}^\infty{1\over 2^k} = -{1\over 2} + \sum_{k=0}^\infty  {1\over 2^k}$.
 
-- Then each $f_n$ is clearly integrable, since its graph is contained in the unit square.
+- Then each $f_n$ is integrable: each $f_n$ is a piecewise-linear function on $[0,1]$ (constant on two subintervals and linear on a third), hence continuous except possibly at finitely many points, so it is Riemann integrable and in particular Lebesgue integrable; its graph is contained in the unit square $[0,1]^2$.
 - $\theset{f_n}$ is Cauchy: geometrically subtracting areas yields a single triangle whose area tends to 0.
 - But $f_n$ converges to $\chi_{[{1\over 2}, 1]}$ which is discontinuous.
 

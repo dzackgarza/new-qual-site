@@ -56,21 +56,33 @@ Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendicular to t
 **Goal:** Prove that for a continuously differentiable function $f: \mathbb{R}^2 \to \mathbb{R}$, the gradient vector $\nabla f(\mathbf{p})$ at any point $\mathbf{p}$ on a level curve $C = \{(x,y) \in \mathbb{R}^2 \mid f(x,y) = c\}$ is orthogonal to the tangent vector of every smooth curve in $C$ passing through $\mathbf{p}$.
 
 <1>1. Let $\mathbf{p} = (x_0, y_0) \in C$ such that $f(\mathbf{p}) = c$. Let $\gamma: (-\varepsilon, \varepsilon) \to \mathbb{R}^2$ be a differentiable parametrized curve such that $\gamma(0) = \mathbf{p}$ and $\gamma(t) \in C$ for all $t \in (-\varepsilon, \varepsilon)$.
-    Proof: By definition of a smooth curve on the level set $C$.
+    ::: {.proof}
+    By definition of a smooth curve on the level set $C$.
+    :::
 
 <1>2. The composite function $g(t) = (f \circ \gamma)(t) = f(\gamma(t))$ is constant on $(-\varepsilon, \varepsilon)$ with value $c$.
-    Proof: Since $\gamma(t) \in C$ for all $t$, $f(\gamma(t)) = c$ identically.
+    ::: {.proof}
+    Since $\gamma(t) \in C$ for all $t$, $f(\gamma(t)) = c$ identically.
+    :::
 
 <1>3. $g'(0) = 0$.
-    Proof: The derivative of a constant function is identically zero.
+    ::: {.proof}
+    The derivative of a constant function is identically zero.
+    :::
 
 <1>4. By the multivariable Chain Rule, $g'(0) = \nabla f(\gamma(0)) \cdot \gamma'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0)$.
-    Proof: Since $f$ is continuously differentiable and $\gamma$ is differentiable at $t=0$, the chain rule applies:
+    ::: {.proof}
+    Since $f$ is continuously differentiable and $\gamma$ is differentiable at $t=0$, the chain rule applies:
+    :::
     $$g'(0) = \left.\frac{d}{dt} f(x(t), y(t))\right|_{t=0} = \frac{\partial f}{\partial x}(\mathbf{p}) x'(0) + \frac{\partial f}{\partial y}(\mathbf{p}) y'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0).$$
 
 <1>5. $\nabla f(\mathbf{p}) \cdot \gamma'(0) = 0$.
-    Proof: Combining <1>3 and <1>4 gives $\nabla f(\mathbf{p}) \cdot \gamma'(0) = g'(0) = 0$.
+    ::: {.proof}
+    Combining <1>3 and <1>4 gives $\nabla f(\mathbf{p}) \cdot \gamma'(0) = g'(0) = 0$.
+    :::
 
 <1>6. Conclusion: $\nabla f(\mathbf{p})$ is orthogonal to the tangent vector $\gamma'(0)$ of any curve lying on the level set through $\mathbf{p}$.
-    Proof: Since two vectors with zero dot product are orthogonal by definition, and $\gamma$ was arbitrary. Q.E.D.
+    ::: {.proof}
+    Since two vectors with zero dot product are orthogonal by definition, and $\gamma$ was arbitrary. Q.E.D.
+    :::
 :::

@@ -25,23 +25,37 @@ Prove $f$ is analytic on $U$.
 
 ::: {.solution}
 <1>1. Let $Z = \{z \in U : f(z) = 0\}$ be the zero set of $f$.
-Proof: definition.
+::: {.proof}
+definition.
+:::
 
 <1>2. On $U \setminus Z$, $f$ is nonzero, and $f = f^2/f$ is the quotient of two analytic functions, hence analytic.
-Proof: $f^2$ is analytic and $f$ is nonzero (so $1/f = f/f^2$ is analytic where $f \neq 0$).
+::: {.proof}
+$f^2$ is analytic and $f$ is nonzero (so $1/f = f/f^2$ is analytic where $f \neq 0$).
+:::
 
 <1>3. At a point $z_0 \in Z$, if $f$ is identically zero in a neighborhood of $z_0$, then $f$ is analytic there (it is the zero function).
-Proof: the zero function is analytic.
+::: {.proof}
+the zero function is analytic.
+:::
 
 <1>4. Otherwise, $z_0$ is an isolated zero of $f$ (since $f^2$ is analytic and not identically zero, its zeros are isolated, and $f$ and $f^2$ have the same zeros).
-Proof: the zeros of the analytic function $f^2$ are isolated (unless $f^2 \equiv 0$).
+::: {.proof}
+the zeros of the analytic function $f^2$ are isolated (unless $f^2 \equiv 0$).
+:::
 
 <1>5. Near an isolated zero $z_0$, $f$ is continuous and $f^2$ is analytic with a zero of some order $2m$; then $f$ has a removable singularity at $z_0$ (it is bounded near $z_0$ since $f$ is continuous), and $f$ extends analytically.
-Proof: $f$ is continuous, hence bounded near $z_0$, so any singularity is removable; and $f = \pm \sqrt{f^2}$ locally (choosing a consistent branch), which is analytic.
+::: {.proof}
+$f$ is continuous, hence bounded near $z_0$, so any singularity is removable; and $f = \pm \sqrt{f^2}$ locally (choosing a consistent branch), which is analytic.
+:::
 
 <1>6. Hence $f$ is analytic on all of $U$.
-Proof: <1>2, <1>3, <1>5.
+::: {.proof}
+<1>2, <1>3, <1>5.
+:::
 
 <1>7. Q.E.D.
-Proof: <1>6.
+::: {.proof}
+<1>6.
+:::
 :::

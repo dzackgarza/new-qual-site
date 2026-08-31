@@ -23,20 +23,32 @@ Show that normal groups absorb conjugacy classes: if $N\normal G$ and $[g_i]$ is
 
 ::: {.solution}
 <1>1. Suppose $[g_i] \cap N \neq \varnothing$, and let $h \in [g_i] \cap N$.
-Proof: assume the intersection is nonempty.
+::: {.proof}
+assume the intersection is nonempty.
+:::
 
 <1>2. Then $[g_i] = \{x h x^{-1} : x \in G\}$ (the conjugacy class of $h$).
-Proof: $h \in [g_i]$, so $[g_i]$ is the conjugacy class of $h$.
+::: {.proof}
+$h \in [g_i]$, so $[g_i]$ is the conjugacy class of $h$.
+:::
 
 <1>3. For every $x \in G$, $x h x^{-1} \in N$.
-Proof: $N$ is normal, so it is closed under conjugation.
+::: {.proof}
+$N$ is normal, so it is closed under conjugation.
+:::
 
 <1>4. Hence $[g_i] \subseteq N$.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. Therefore either $[g_i] \subseteq N$ or $[g_i] \cap N = \varnothing$.
-Proof: <1>1–<1>4.
+::: {.proof}
+<1>1–<1>4.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

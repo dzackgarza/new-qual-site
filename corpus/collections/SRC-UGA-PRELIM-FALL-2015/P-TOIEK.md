@@ -45,7 +45,9 @@ for all natural numbers $n$ and all real numbers $x$.
 **Goal:** Let $E$ be a set, and let $(f_n)_{n=1}^\infty$ be a sequence of functions $f_n: E \to \mathbb{R}$ such that each $f_n$ is bounded on $E$. Suppose $f_n \to g$ uniformly on $E$. Prove that the sequence $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$, i.e., there exists a constant $M > 0$ such that $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
 
 <1>1. Definition of uniform convergence: There exists an integer $N \ge 1$ such that for all $n \ge N$ and all $x \in E$, $|f_n(x) - g(x)| < 1$.
-    Proof: By the definition of uniform convergence with $\varepsilon = 1 > 0$.
+    ::: {.proof}
+    By the definition of uniform convergence with $\varepsilon = 1 > 0$.
+    :::
 
 <1>2. For all $n \ge N$ and all $x \in E$, $|f_n(x)| \le |f_N(x)| + 2$.
     Proof:
@@ -57,7 +59,9 @@ for all natural numbers $n$ and all real numbers $x$.
         $$|f_n(x)| \le |f_N(x)| + |f_n(x) - f_N(x)| < |f_N(x)| + 2.$$
 
 <1>3. For each $k \in \{1, 2, \dots, N\}$, there exists a constant $M_k < \infty$ such that $|f_k(x)| \le M_k$ for all $x \in E$.
-    Proof: By hypothesis, each function $f_k$ is bounded on $E$.
+    ::: {.proof}
+    By hypothesis, each function $f_k$ is bounded on $E$.
+    :::
 
 <1>4. Define $M = \max\{M_1, M_2, \dots, M_{N-1}, M_N + 2\}$. Then $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
     Proof:
@@ -67,5 +71,7 @@ for all natural numbers $n$ and all real numbers $x$.
     <2>3. In all cases, $|f_n(x)| \le M$ for all $n \in \mathbb{N}$ and all $x \in E$.
 
 <1>5. Conclusion: $(f_n)_{n=1}^\infty$ is uniformly bounded on $E$.
-    Proof: Follows directly from <1>4. Q.E.D.
+    ::: {.proof}
+    Follows directly from <1>4. Q.E.D.
+    :::
 :::

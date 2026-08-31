@@ -23,8 +23,12 @@ If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
 
 ::: {.solution}
 <1>1. $A$ sine curve separates.
-Proof: Jordan.
+::: {.proof}
+Jordan.
+:::
 
 <1>2. Q.E.D.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 :::

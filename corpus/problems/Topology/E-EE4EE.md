@@ -25,17 +25,27 @@ audit:
 
 ::: {.solution}
 <1>1. Let $X$ be a topological space and $A \subseteq X$.
-Proof: setup.
+::: {.proof}
+setup.
+:::
 
 <1>2. A point $x \in A$ is an **interior point** of $A$ if there is an open set $U$ with $x \in U \subseteq A$.
-Proof: definition of interior point.
+::: {.proof}
+definition of interior point.
+:::
 
 <1>3. A point $x \in A$ is an **isolated point** of $A$ if there is an open set $U$ with $U \cap A = \{x\}$.
-Proof: definition of isolated point.
+::: {.proof}
+definition of isolated point.
+:::
 
 <1>4. A point $x \in X$ is a **limit point** (accumulation point) of $A$ if every open set $U$ containing $x$ meets $A$ in a point other than $x$, i.e. $(U \setminus \{x\}) \cap A \neq \varnothing$.
-Proof: definition of limit point.
+::: {.proof}
+definition of limit point.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>2, <1>3, <1>4.
+::: {.proof}
+<1>2, <1>3, <1>4.
+:::
 :::

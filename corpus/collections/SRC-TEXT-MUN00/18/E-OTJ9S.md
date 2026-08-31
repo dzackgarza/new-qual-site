@@ -29,20 +29,32 @@ are imbeddings.
 
 ::: {.solution}
 <1>1. $f : X \to X \times Y$, $f(x) = (x, y_0)$ is injective.
-Proof: if $f(x_1) = f(x_2)$ then $(x_1, y_0) = (x_2, y_0)$, so $x_1 = x_2$.
+::: {.proof}
+if $f(x_1) = f(x_2)$ then $(x_1, y_0) = (x_2, y_0)$, so $x_1 = x_2$.
+:::
 
 <1>2. $f$ is continuous.
-Proof: the coordinate functions are $\pi_1 \circ f = \operatorname{id}_X$ (continuous) and $\pi_2 \circ f = \text{constant } y_0$ (continuous), so $f$ is continuous (a map into a product is continuous iff its coordinates are).
+::: {.proof}
+the coordinate functions are $\pi_1 \circ f = \operatorname{id}_X$ (continuous) and $\pi_2 \circ f = \text{constant } y_0$ (continuous), so $f$ is continuous (a map into a product is continuous iff its coordinates are).
+:::
 
 <1>3. $f$ is a homeomorphism onto its image $X \times \{y_0\}$.
-Proof: the inverse is the projection $\pi_1$ restricted to $X \times \{y_0\}$, which is continuous.
+::: {.proof}
+the inverse is the projection $\pi_1$ restricted to $X \times \{y_0\}$, which is continuous.
+:::
 
 <1>4. Hence $f$ is an imbedding.
-Proof: <1>1–<1>3 (an imbedding is an injective continuous map that is a homeomorphism onto its image).
+::: {.proof}
+<1>1–<1>3 (an imbedding is an injective continuous map that is a homeomorphism onto its image).
+:::
 
 <1>5. The same argument shows $g : Y \to X \times Y$, $g(y) = (x_0, y)$ is an imbedding.
-Proof: symmetric to <1>1–<1>4, using $\pi_2$ as the inverse.
+::: {.proof}
+symmetric to <1>1–<1>4, using $\pi_2$ as the inverse.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>4 and <1>5.
+::: {.proof}
+<1>4 and <1>5.
+:::
 :::

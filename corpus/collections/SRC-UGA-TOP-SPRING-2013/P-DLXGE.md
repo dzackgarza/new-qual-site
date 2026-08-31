@@ -30,20 +30,34 @@ b. Compute the fundamental group of the connected sum of the projective plane an
 
 <1>1. Definition of connected sum.
 <2>1. Remove an open disk from each surface: $S_i^\circ \definedas S_i \sm \operatorname{int} D^2$.
-Proof: each surface admits an embedded closed disk; remove its interior.
+::: {.proof}
+each surface admits an embedded closed disk; remove its interior.
+:::
 <2>2. Glue the two boundary circles by a homeomorphism.
-Proof: $S_1 \# S_2 \definedas S_1^\circ \sqcup S_2^\circ / \sim$, where $\sim$ identifies $\partial S_1^\circ$ with $\partial S_2^\circ$ via a homeomorphism $S^1 \to S^1$.
+::: {.proof}
+$S_1 \# S_2 \definedas S_1^\circ \sqcup S_2^\circ / \sim$, where $\sim$ identifies $\partial S_1^\circ$ with $\partial S_2^\circ$ via a homeomorphism $S^1 \to S^1$.
+:::
 <2>3. The result is a surface, independent of the choices up to homeomorphism.
-Proof: gluing along boundary circles of two surfaces yields a surface; the disk and gluing map choices give homeomorphic results.
+::: {.proof}
+gluing along boundary circles of two surfaces yields a surface; the disk and gluing map choices give homeomorphic results.
+:::
 
 <1>2. Compute $\pi_1(\RP^2 \# T^2)$.
 <2>1. $\pi_1(\RP^2) = \ZZ/2$ and $\pi_1(T^2) = \ZZ^2$.
-Proof: $\RP^2$ has universal cover $S^2$ with deck group $\ZZ/2$; $T^2 = S^1 \times S^1$.
+::: {.proof}
+$\RP^2$ has universal cover $S^2$ with deck group $\ZZ/2$; $T^2 = S^1 \times S^1$.
+:::
 <2>2. The connected sum of two surfaces has fundamental group the free product of the two groups.
-Proof: by van Kampen, the two punctured surfaces intersect in a circle (path-connected), and a punctured surface deformation-retracts onto a wedge of circles, so $\pi_1(S_1 \# S_2) \cong \pi_1(S_1) \ast \pi_1(S_2)$.
+::: {.proof}
+by van Kampen, the two punctured surfaces intersect in a circle (path-connected), and a punctured surface deformation-retracts onto a wedge of circles, so $\pi_1(S_1 \# S_2) \cong \pi_1(S_1) \ast \pi_1(S_2)$.
+:::
 <2>3. $\pi_1(\RP^2 \# T^2) \cong (\ZZ/2) \ast \ZZ^2$.
-Proof: apply <1>2.2 with $\pi_1(\RP^2) = \ZZ/2$ and $\pi_1(T^2) = \ZZ^2$.
+::: {.proof}
+apply <1>2.2 with $\pi_1(\RP^2) = \ZZ/2$ and $\pi_1(T^2) = \ZZ^2$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>2.3 is the requested fundamental group.
+::: {.proof}
+<1>2.3 is the requested fundamental group.
+:::
 :::

@@ -25,23 +25,37 @@ Prove that $X$ is homotopy-equivalent to the "bouquet of two spheres" $S^2 \vee 
 
 ::: {.solution}
 <1>1. $X$ is simply connected, so by the Hurewicz theorem $\pi_2(X) \cong H_2(X) \cong \ZZ \oplus \ZZ$.
-Proof: Hurewicz theorem (the first nonzero homotopy group is isomorphic to the first nonzero homology group).
+::: {.proof}
+Hurewicz theorem (the first nonzero homotopy group is isomorphic to the first nonzero homology group).
+:::
 
 <1>2. Choose generators $f_1, f_2 : S^2 \to X$ representing a basis of $\pi_2(X) \cong \ZZ^2$.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 
 <1>3. These combine to a map $f : S^2 \vee S^2 \to X$.
-Proof: the wedge is the coproduct, so two maps out of $S^2$ give a map out of the wedge.
+::: {.proof}
+the wedge is the coproduct, so two maps out of $S^2$ give a map out of the wedge.
+:::
 
 <1>4. $f$ induces an isomorphism on $H_2$ (and trivially on $H_0$, $H_1$, and $H_{\ge 3}$).
-Proof: $H_2(S^2 \vee S^2) = \ZZ^2$ and $f$ sends the two generators to the basis $f_1, f_2$; $H_1 = 0$ on both sides (both simply connected), and $H_{\ge 3} = 0$ on both sides.
+::: {.proof}
+$H_2(S^2 \vee S^2) = \ZZ^2$ and $f$ sends the two generators to the basis $f_1, f_2$; $H_1 = 0$ on both sides (both simply connected), and $H_{\ge 3} = 0$ on both sides.
+:::
 
 <1>5. Hence $f$ induces an isomorphism on all homology groups.
-Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
 
 <1>6. Both $X$ and $S^2 \vee S^2$ are simply connected CW complexes, so by Whitehead's theorem $f$ is a homotopy equivalence.
-Proof: a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence.
+::: {.proof}
+a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence.
+:::
 
 <1>7. Q.E.D.
-Proof: <1>6.
+::: {.proof}
+<1>6.
+:::
 :::

@@ -91,7 +91,7 @@ f(x^-) &= \lim_{h\to 0} \sum_{q_k \leq x-h} \alpha_k = \sum_{q_k < x} \alpha_k
 f(x^+) &= f(q_m^+) = \sum_{q_k < q_m} \alpha_k + \alpha_m \\
 f(x^-) &= f(a_m^-) = \sum_{q_k< q_m} \alpha_k
 ,\]
-which clearly differ if $\alpha_m \neq 0$.
+which differ when $\alpha_m \neq 0$: the right-hand limit $f(q_m^+)$ equals $\sum_{q_k < q_m}\alpha_k + \alpha_m$, while the left-hand limit $f(q_m^-)$ equals $\sum_{q_k < q_m}\alpha_k$, so their difference is exactly $\alpha_m \neq 0$.
 
 - Taking $x\not\in Q$, we have $\ts{q_k \leq x} = \ts{q_k < x}$, since $\ts{q_k=x} = \emptyset$, so
 \[

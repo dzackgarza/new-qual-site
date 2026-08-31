@@ -36,5 +36,7 @@ Then $du = \cos(x) \, dx$.
 <2>2. Since $\frac{d}{dx}(\csc(x)) = -\csc(x)\cot(x)$, we have: $$\int \csc(x)\cot(x) \, dx = -\csc(x) + C.$$
 
 <1>3. Conclusion: $\int \frac{\cos(x)}{\sin^2(x)} \, dx = -\csc(x) + C$.
-Proof: Follows from <1>1 and <1>2. Q.E.D.
+::: {.proof}
+Follows from <1>1 and <1>2. Q.E.D.
+:::
 :::

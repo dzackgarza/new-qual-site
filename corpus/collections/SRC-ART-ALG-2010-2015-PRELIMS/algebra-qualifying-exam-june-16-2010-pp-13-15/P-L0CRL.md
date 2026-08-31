@@ -27,20 +27,32 @@ Prove that, in a local ring $R$, any $r \in R$ is either a unit or an element of
 **Goal.** In a local ring $R$ with unique maximal ideal $M$, show every $r \in R$ is a unit or lies in $M$.
 
 <1>1. Suppose $r \notin M$.
-Proof: consider an element not in the maximal ideal.
+::: {.proof}
+consider an element not in the maximal ideal.
+:::
 
 <1>2. The ideal $(r)$ is not contained in $M$.
-Proof: $r \in (r)$ and $r \notin M$.
+::: {.proof}
+$r \in (r)$ and $r \notin M$.
+:::
 
 <1>3. $(r)$ is not contained in any maximal ideal.
-Proof: $M$ is the unique maximal ideal, and $(r) \not\subseteq M$, so $(r)$ is contained in no maximal ideal.
+::: {.proof}
+$M$ is the unique maximal ideal, and $(r) \not\subseteq M$, so $(r)$ is contained in no maximal ideal.
+:::
 
 <1>4. Hence $(r) = R$.
-Proof: every proper ideal is contained in a maximal ideal (Zorn's lemma); since $(r)$ is contained in no maximal ideal, it is not proper, so $(r) = R$.
+::: {.proof}
+every proper ideal is contained in a maximal ideal (Zorn's lemma); since $(r)$ is contained in no maximal ideal, it is not proper, so $(r) = R$.
+:::
 
 <1>5. Hence $1 \in (r)$, so $r$ is a unit.
-Proof: $1 \in (r)$ means $1 = sr$ for some $s \in R$, so $r$ has a left inverse $s$; in a commutative ring this makes $r$ a unit.
+::: {.proof}
+$1 \in (r)$ means $1 = sr$ for some $s \in R$, so $r$ has a left inverse $s$; in a commutative ring this makes $r$ a unit.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>1–<1>5 show $r \notin M$ forces $r$ to be a unit, so every element is a unit or lies in $M$.
+::: {.proof}
+<1>1–<1>5 show $r \notin M$ forces $r$ to be a unit, so every element is a unit or lies in $M$.
+:::
 :::

@@ -27,47 +27,75 @@ Show that the dimension of $\ker i_*$ equals $g$.
 
 ::: {.solution}
 <1>1. $\dim_\QQ H_1(\Sigma; \QQ) = 2g$.
-Proof: $\Sigma$ is a closed orientable surface of genus $g$, so its first Betti number is $2g$.
+::: {.proof}
+$\Sigma$ is a closed orientable surface of genus $g$, so its first Betti number is $2g$.
+:::
 
 <1>2. By Poincaré–Lefschetz duality, $H_1(M; \QQ) \cong H^2(M, \partial M; \QQ)$.
-Proof: duality for a compact orientable $3$-manifold with boundary.
+::: {.proof}
+duality for a compact orientable $3$-manifold with boundary.
+:::
 
 <1>3. The long exact sequence of the pair $(M, \partial M)$ gives
 $$H_1(\partial M) \xrightarrow{i_*} H_1(M) \to H_1(M, \partial M) \to H_0(\partial M) \to H_0(M).$$
-Proof: homology long exact sequence of the pair.
+::: {.proof}
+homology long exact sequence of the pair.
+:::
 
 <1>4. $H_0(\partial M) \to H_0(M)$ is an isomorphism (both $\cong \QQ$, since $\partial M$ and $M$ are connected).
-Proof: $\Sigma$ is connected and $M$ is connected.
+::: {.proof}
+$\Sigma$ is connected and $M$ is connected.
+:::
 
 <1>5. Hence $H_1(M, \partial M) \to H_0(\partial M)$ is injective, so the sequence
 $$H_1(\partial M) \xrightarrow{i_*} H_1(M) \to H_1(M, \partial M) \to 0$$
 is exact.
-Proof: <1>3 and <1>4.
+::: {.proof}
+<1>3 and <1>4.
+:::
 
 <1>6. Therefore $\operatorname{im} i_* \cong H_1(M)/\ker$, and $\dim \operatorname{im} i_* = \dim H_1(M) - \dim \ker i_*$.
-Proof: rank-nullity.
+::: {.proof}
+rank-nullity.
+:::
 
 <1>7. By duality, $\dim H_1(M; \QQ) = \dim H^2(M, \partial M; \QQ) = \dim H_1(M, \partial M; \QQ)$.
-Proof: <1>2 and the universal coefficient theorem over $\QQ$.
+::: {.proof}
+<1>2 and the universal coefficient theorem over $\QQ$.
+:::
 
 <1>8. From the exact sequence in <1>5, $\dim H_1(\partial M) = \dim \operatorname{im} i_* + \dim H_1(M, \partial M)$.
-Proof: exactness at $H_1(M)$.
+::: {.proof}
+exactness at $H_1(M)$.
+:::
 
 <1>9. Substituting: $2g = \dim \operatorname{im} i_* + \dim H_1(M)$.
-Proof: <1>1, <1>7, <1>8.
+::: {.proof}
+<1>1, <1>7, <1>8.
+:::
 
 <1>10. Also $\dim H_1(\partial M) = \dim \ker i_* + \dim \operatorname{im} i_*$, so $2g = \dim \ker i_* + \dim \operatorname{im} i_*$.
-Proof: rank-nullity for $i_*$.
+::: {.proof}
+rank-nullity for $i_*$.
+:::
 
 <1>11. Comparing <1>9 and <1>10, $\dim \ker i_* = \dim H_1(M)$.
-Proof: both equal $2g - \dim \operatorname{im} i_*$.
+::: {.proof}
+both equal $2g - \dim \operatorname{im} i_*$.
+:::
 
 <1>12. The image of $i_*$ is a Lagrangian (half-dimensional) subspace: $\dim \operatorname{im} i_* = g$.
-Proof: the intersection form on $H_1(\Sigma)$ vanishes on $\operatorname{im} i_*$ (the boundary of $M$ is null-homologous in $M$), and $\operatorname{im} i_*$ is a maximal isotropic subspace, hence has dimension $g$.
+::: {.proof}
+the intersection form on $H_1(\Sigma)$ vanishes on $\operatorname{im} i_*$ (the boundary of $M$ is null-homologous in $M$), and $\operatorname{im} i_*$ is a maximal isotropic subspace, hence has dimension $g$.
+:::
 
 <1>13. Hence $\dim \ker i_* = 2g - g = g$.
-Proof: <1>10 and <1>12.
+::: {.proof}
+<1>10 and <1>12.
+:::
 
 <1>14. Q.E.D.
-Proof: <1>13.
+::: {.proof}
+<1>13.
+:::
 :::

@@ -68,5 +68,7 @@ Describe the construction of a field with eight elements.
 <1>3. Construction of $\mathbb{F}_8$:
     $$\mathbb{F}_8 \cong \mathbb{F}_2[t]/\langle t^3 + t + 1\rangle = \{a_0 + a_1 \alpha + a_2 \alpha^2 \mid a_0, a_1, a_2 \in \mathbb{F}_2\},$$
     where $\alpha = t \pmod{t^3+t+1}$ satisfies $\alpha^3 = \alpha + 1$.
-    Proof: Follows directly from <1>1 and <1>2. Q.E.D.
+    ::: {.proof}
+    Follows directly from <1>1 and <1>2. Q.E.D.
+    :::
 :::

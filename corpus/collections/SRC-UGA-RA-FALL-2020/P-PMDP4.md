@@ -71,7 +71,7 @@ and since this limit exists and is finite, $F$ is differentiable at $y_0$.
 &= - \int \lim_{y_n \to y_0} xf(x) \sin(y_n x) \dx \\
 &= - \int xf(x) \sin(y_0x) \dx 
 ,\]
-where we've used that $y\mapsto \sin(yx)$ is clearly continuous.
+where we've used that $y\mapsto \sin(yx)$ is continuous (for each fixed $x$, the map $y \mapsto \sin(yx)$ is a composition of the continuous functions $y \mapsto yx$ and $\sin$, hence continuous).
 
 
 

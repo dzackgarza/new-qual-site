@@ -61,7 +61,7 @@ so $\sigma$ fixes $E_1 E_2$.
 :::
 
 :::{.proof title="of b"}
-That $H_1 H_2 \subseteq G$ is clear, since if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$.
+That $H_1 H_2 \subseteq G$ holds: if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$; hence $\sigma$ is an automorphism of $K$ fixing $\QQ$, i.e. $\sigma \in G$.
 
 :::{.claim}
 All elements in this subset commute.

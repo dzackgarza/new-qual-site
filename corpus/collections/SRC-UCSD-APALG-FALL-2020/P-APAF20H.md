@@ -24,20 +24,32 @@ Prove that, if $K$ is a closed subspace of $H$ invariant under the action of $G$
 
 ::: {.solution}
 <1>1. Let $v \in K^\perp$ and $g \in G$.
-Proof: take an arbitrary element of $K^\perp$ and an arbitrary group element.
+::: {.proof}
+take an arbitrary element of $K^\perp$ and an arbitrary group element.
+:::
 
 <1>2. For any $w \in K$, $\langle U(g)v, w \rangle = \langle v, U(g)^* w \rangle = \langle v, U(g)^{-1} w \rangle = \langle v, U(g^{-1}) w \rangle$.
-Proof: $U(g)$ is unitary, so $U(g)^* = U(g)^{-1} = U(g^{-1})$.
+::: {.proof}
+$U(g)$ is unitary, so $U(g)^* = U(g)^{-1} = U(g^{-1})$.
+:::
 
 <1>3. $U(g^{-1}) w \in K$ (since $K$ is $G$-invariant).
-Proof: hypothesis.
+::: {.proof}
+hypothesis.
+:::
 
 <1>4. Hence $\langle U(g)v, w \rangle = \langle v, U(g^{-1})w \rangle = 0$ (since $v \in K^\perp$).
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. Therefore $U(g)v \in K^\perp$ for all $g \in G$, so $K^\perp$ is $G$-invariant.
-Proof: <1>4 (for arbitrary $w \in K$).
+::: {.proof}
+<1>4 (for arbitrary $w \in K$).
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

@@ -35,76 +35,130 @@ Prove that $f \equiv 0$.
 
 ::: {.solution}
 <1>1. Proof of (a): <2>1. Map the upper half-plane $\mathbb{H}$ conformally to the unit disk $\mathbb{D}$ via the Cayley transform $\Phi(z) = \frac{z - i}{z + i}$.
-Proof: standard biholomorphism between $\mathbb{H}$ and $\mathbb{D}$.
+::: {.proof}
+standard biholomorphism between $\mathbb{H}$ and $\mathbb{D}$.
+:::
 <2>2. Define $g(w) = (f \circ \Phi^{-1})(w)$ for $w \in \mathbb{D}$.
 Then $g: \mathbb{D} \to \mathbb{C}$ is a bounded holomorphic function.
-Proof: composition of holomorphic and bounded maps.
+::: {.proof}
+composition of holomorphic and bounded maps.
+:::
 <2>3. The zeros of $g$ in $\mathbb{D}$ are $\alpha_k = \Phi(\tau_k) = \frac{\tau_k - i}{\tau_k + i}$.
 Compute $1 - |\alpha_k|^2$:
 \[
 1 - |\alpha_k|^2 = 1 - \left|\frac{x_k + i(y_k - 1)}{x_k + i(y_k + 1)}\right|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}.
 \]
-Proof: modulus calculation.
+::: {.proof}
+modulus calculation.
+:::
 <2>4. Since $|x_k| \le 1$ and $0 < y_k \le 1$, the denominator satisfies $x_k^2 + (y_k + 1)^2 \le 1^2 + 2^2 = 5$.
-Proof: bounds on $x_k, y_k$.
+::: {.proof}
+bounds on $x_k, y_k$.
+:::
 <2>5. Therefore $1 - |\alpha_k| \ge \frac{1}{2}(1 - |\alpha_k|^2) \ge \frac{2}{5} y_k$.
-Proof: $1 - r \ge \frac{1}{2}(1 - r^2)$ for $r \in [0, 1)$.
+::: {.proof}
+$1 - r \ge \frac{1}{2}(1 - r^2)$ for $r \in [0, 1)$.
+:::
 <2>6. Summing over $k$:
 \[
 \sum_{k=1}^\infty (1 - |\alpha_k|) \ge \frac{2}{5} \sum_{k=1}^\infty y_k = \infty.
 \]
-Proof: hypothesis $\sum y_k = \infty$.
+::: {.proof}
+hypothesis $\sum y_k = \infty$.
+:::
 <2>7. By the Blaschke condition for bounded holomorphic functions on $\mathbb{D}$, a bounded holomorphic function whose zeros satisfy $\sum (1 - |\alpha_k|) = \infty$ must be identically zero.
 Thus $g \equiv 0 \implies f \equiv 0$.
-Proof: Jensen's formula / Blaschke product theorem for bounded analytic functions.
+::: {.proof}
+Jensen's formula / Blaschke product theorem for bounded analytic functions.
+:::
 
 <1>2. Proof of (b): <2>1. Since $\gcd(c, d) = 1$, by Bézout’s Identity there exist integers $a_0, b_0$ such that $a_0 d - b_0 c = 1$.
-Proof: Euclidean algorithm in $\mathbb{Z}$.
+::: {.proof}
+Euclidean algorithm in $\mathbb{Z}$.
+:::
 <2>2. The general integer solutions to $x d - y c = 1$ are $a = a_0 + c t$ and $b = b_0 + d t$ for $t \in \mathbb{Z}$.
-Proof: parameterization of solutions to linear Diophantine equation.
+::: {.proof}
+parameterization of solutions to linear Diophantine equation.
+:::
 <2>3. A matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \operatorname{SL}_2(\mathbb{Z})$ belongs to $G = \Gamma_\theta$ if and only if $a \equiv d \pmod 2$ and $b \equiv c \pmod 2$.
-Proof: characterization of the theta group $\Gamma_\theta$.
+::: {.proof}
+characterization of the theta group $\Gamma_\theta$.
+:::
 <2>4. **Case $c$ even, $d$ odd:** Since $a d - b c = 1$ with $c$ even, $a d$ is odd, so $a_0 \equiv 1 \pmod 2$ and $a = a_0 + ct \equiv 1 \pmod 2$ for all $t$.
 To make $b = b_0 + dt$ even, since $d$ is odd, choose $t \equiv -b_0 \pmod 2$.
 Then $a \equiv d \equiv 1 \pmod 2$ and $b \equiv c \equiv 0 \pmod 2$, so $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
-Proof: parity check.
+::: {.proof}
+parity check.
+:::
 <2>5. **Case $c$ odd, $d$ even:** Since $a d - b c = 1$ with $d$ even, $b c$ is odd, so $b_0 \equiv 1 \pmod 2$ and $b = b_0 + dt \equiv 1 \pmod 2$ for all $t$.
 To make $a = a_0 + ct$ even, since $c$ is odd, choose $t \equiv -a_0 \pmod 2$.
 Then $a \equiv d \equiv 0 \pmod 2$ and $b \equiv c \equiv 1 \pmod 2$, so $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
-Proof: parity check.
+::: {.proof}
+parity check.
+:::
 
 <1>3. Proof of (c): <2>1. Suppose for contradiction that $\sum_{\gcd(c,d)=1, c \not\equiv d (2)} \frac{1}{c^2 + d^2} < \infty$.
-Proof: proof by contradiction setup.
+::: {.proof}
+proof by contradiction setup.
+:::
 <2>2. If $a, b$ are coprime and both odd, then $c = \frac{a+b}{2}$ and $d = \frac{a-b}{2}$ are coprime integers of opposite parity, and $c^2 + d^2 = \frac{a^2 + b^2}{2}$.
-Proof: change of variables for odd coprime pairs.
+::: {.proof}
+change of variables for odd coprime pairs.
+:::
 <2>3. Thus $\sum_{\gcd(a,b)=1} \frac{1}{a^2 + b^2} < \infty$.
-Proof: splitting into parity classes.
+::: {.proof}
+splitting into parity classes.
+:::
 <2>4. Multiplying by $\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6} < \infty$ gives:
 \[
 \sum_{(k, \ell) \in \mathbb{Z}^2 \setminus \{(0, 0)\}} \frac{1}{k^2 + \ell^2} = \left(\sum_{n=1}^\infty \frac{1}{n^2}\right) \left(\sum_{\gcd(a, b)=1} \frac{1}{a^2 + b^2}\right) < \infty.
 \]
-Proof: every non-zero pair $(k, \ell) = n(a, b)$ with $n = \gcd(k, \ell) \ge 1$ and $\gcd(a, b) = 1$.
+::: {.proof}
+every non-zero pair $(k, \ell) = n(a, b)$ with $n = \gcd(k, \ell) \ge 1$ and $\gcd(a, b) = 1$.
+:::
 <2>5. However, by integral comparison with polar coordinates on $\mathbb{R}^2$:
 \[
 \sum_{(k, \ell) \neq (0, 0)} \frac{1}{k^2 + \ell^2} \ge \int_{|x| \ge 1} \frac{dx\,dy}{x^2 + y^2} = \int_1^\infty \int_0^{2\pi} \frac{r\,dr\,d\theta}{r^2} = 2\pi \int_1^\infty \frac{dr}{r} = \infty.
 \]
-Proof: integral test on lattice sums.
+::: {.proof}
+integral test on lattice sums.
+:::
 <2>6. This contradiction proves that $\sum_{\gcd(c, d)=1, c \not\equiv d (2)} \frac{1}{c^2 + d^2} = \infty$.
-Proof: <2>4 contradicts <2>5.
+::: {.proof}
+<2>4 contradicts <2>5.
+:::
 
 <1>4. Proof of (d): <2>1. Replace $F(\tau)$ by $F_0(\tau) = F(\tau) - F(i)$.
 Then $F_0$ is holomorphic, bounded on $\mathbb{H}$, $G$-invariant, and satisfies $F_0(i) = 0$.
-Proof: constants are $G$-invariant.
-<2>2. For each pair $(c, d)$ of coprime integers with opposite parity, choose $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$ by (b). Proof: <1>2. <2>3. Compute $g(i) = \frac{ai + b}{ci + d} = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{ad-bc}{c^2+d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{1}{c^2+d^2}$.
-Proof: algebraic calculation with $ad - bc = 1$.
+::: {.proof}
+constants are $G$-invariant.
+:::
+<2>2. For each pair $(c, d)$ of coprime integers with opposite parity, choose $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$ by (b).
+::: {.proof}
+<1>2. <2>3. Compute $g(i) = \frac{ai + b}{ci + d} = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{ad-bc}{c^2+d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{1}{c^2+d^2}$.
+:::
+::: {.proof}
+algebraic calculation with $ad - bc = 1$.
+:::
 <2>4. By applying an appropriate power of $T^2 = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix} \in G$, we obtain points $\tau_{c,d} = x_{c,d} + i y_{c,d}$ in the $G$-orbit of $i$ such that $|x_{c,d}| \le 1$ and $y_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$.
-Proof: translation by $2\mathbb{Z}$.
+::: {.proof}
+translation by $2\mathbb{Z}$.
+:::
 <2>5. Since $F_0$ is $G$-invariant, $F_0(\tau_{c,d}) = F_0(i) = 0$.
-Proof: $G$-invariance of $F_0$.
+::: {.proof}
+$G$-invariance of $F_0$.
+:::
 <2>6. By (c), $\sum y_{c,d} = \sum \frac{1}{c^2 + d^2} = \infty$.
-Proof: <1>3. <2>7. By (a), $F_0 \equiv 0$, which implies $F(\tau) = F(i)$ is identically constant on $\mathbb{H}$.
-Proof: <1>1 applied to $F_0$.
+::: {.proof}
+<1>3. <2>7. By (a), $F_0 \equiv 0$, which implies $F(\tau) = F(i)$ is identically constant on $\mathbb{H}$.
+:::
+::: {.proof}
+<1>1 applied to $F_0$.
+:::
 
 <1>5. Conclusion: Every bounded $G$-invariant holomorphic function on $\mathbb{H}$ is constant.
-Q.E.D. Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
+Q.E.D.
 :::

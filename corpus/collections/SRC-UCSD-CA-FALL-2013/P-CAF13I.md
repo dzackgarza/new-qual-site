@@ -29,22 +29,38 @@ If so, what is the value $u(0)$?
 
 <1>1. (a) Such a harmonic function exists, and $u(0) = 1/2$.
 <2>1. $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
-Proof: the double-angle identity.
+::: {.proof}
+the double-angle identity.
+:::
 <2>2. The harmonic function with boundary value $\cos^2\theta$ is $u(re^{i\theta}) = \frac{1}{2} + \frac{1}{2} r^2 \cos 2\theta$.
-Proof: the Poisson integral of $\cos^2\theta$; the term $\frac12$ is constant (harmonic), and $\frac12 \cos 2\theta$ extends to $\frac12 r^2 \cos 2\theta = \frac12 \Re(z^2)$ (harmonic).
+::: {.proof}
+the Poisson integral of $\cos^2\theta$; the term $\frac12$ is constant (harmonic), and $\frac12 \cos 2\theta$ extends to $\frac12 r^2 \cos 2\theta = \frac12 \Re(z^2)$ (harmonic).
+:::
 <2>3. $u(0) = \frac12$.
-Proof: evaluate at $r = 0$: $u(0) = \frac12 + 0 = \frac12$ (equivalently, the mean value property gives $u(0) = \frac{1}{2\pi}\int_0^{2\pi}\cos^2\theta\,d\theta = \frac12$).
+::: {.proof}
+evaluate at $r = 0$: $u(0) = \frac12 + 0 = \frac12$ (equivalently, the mean value property gives $u(0) = \frac{1}{2\pi}\int_0^{2\pi}\cos^2\theta\,d\theta = \frac12$).
+:::
 
 <1>2. (b) No holomorphic $f$ has boundary values $e^{-i\theta}$.
 <2>1. Suppose such $f$ exists.
-Proof: assume for contradiction.
+::: {.proof}
+assume for contradiction.
+:::
 <2>2. Then $\int_{|z|=1} f(z)\,dz = \int_0^{2\pi} f(e^{i\theta}) i e^{i\theta}\,d\theta = \int_0^{2\pi} e^{-i\theta} i e^{i\theta}\,d\theta = \int_0^{2\pi} i\,d\theta = 2\pi i$.
-Proof: parametrize the unit circle and use the boundary values.
+::: {.proof}
+parametrize the unit circle and use the boundary values.
+:::
 <2>3. But $\int_{|z|=1} f(z)\,dz = 0$ by Cauchy's theorem (since $f$ is holomorphic on $\DD$ and continuous on $\overline{\DD}$).
-Proof: Cauchy's integral theorem.
+::: {.proof}
+Cauchy's integral theorem.
+:::
 <2>4. Contradiction: $2\pi i \neq 0$.
-Proof: <1>2.2 and <1>2.3.
+::: {.proof}
+<1>2.2 and <1>2.3.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 answers (a); <1>2 proves (b).
+::: {.proof}
+<1>1 answers (a); <1>2 proves (b).
+:::
 :::

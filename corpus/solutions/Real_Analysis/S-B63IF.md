@@ -21,7 +21,9 @@ review: draft
 
 (b) If $f_n\to f$ almost everywhere and $|f_n|\le g$ for some integrable function $g$ and all $n$, then $\int |f-f_n| \to 0$.
 
-Proof: Since $|f_n|\le g$ and $f_n\to f$ almost everywhere, we also have $|f|\le g$ almost everywhere, so the functions $2g-|f-f_n|$ are non-negative. Thus we can apply Fatou's lemma to get
+::: {.proof}
+Since $|f_n|\le g$ and $f_n\to f$ almost everywhere, we also have $|f|\le g$ almost everywhere, so the functions $2g-|f-f_n|$ are non-negative. Thus we can apply Fatou's lemma to get
+:::
 $$\int \liminf_{n\to\infty} 2g-|f-f_n| \le \liminf_{n\to\infty} \int (2g-|f-f_n|).$$
 The left side simplifies to $\int 2g$ and the right side simplifies to $\int 2g - \limsup_{n\to\infty}\int |f-f_n|$. Thus by canceling and rearranging we get $\limsup \int |f-f_n| \le 0$, and since it's a limsup of non-negative quantities this implies the limit exists and equals 0. $\square$
 

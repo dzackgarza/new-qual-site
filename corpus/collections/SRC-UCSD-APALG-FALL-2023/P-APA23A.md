@@ -30,25 +30,43 @@ Give an example for which $x^T A x = x^T B x$ for all $x \in \mathbb{C}^n$ but $
 **Part (a).**
 
 <1>1. Schur decomposition: every $A \in M_n$ is unitarily similar to an upper triangular matrix, i.e. there is a unitary $U$ and an upper triangular $T$ with $A = U T U^H$.
-Proof: statement of the theorem.
+::: {.proof}
+statement of the theorem.
+:::
 
 **Part (b).**
 
 <1>1. If $x^H A x = x^H B x$ for all $x$, then $x^H (A - B) x = 0$ for all $x$.
-Proof: subtract.
+::: {.proof}
+subtract.
+:::
 
 <1>2. Let $C = A - B$; then $x^H C x = 0$ for all $x$ implies $C = 0$.
-<2>1. $C$ is Hermitian (or, more generally, the condition $x^H C x = 0$ for all $x$ forces $C = 0$). Proof: if $x^H C x = 0$ for all $x$, then by polarization, $x^H C y = 0$ for all $x, y$ (using $x^H C x = 0$ for all $x$ and the polarization identity), so $C = 0$.
+<2>1. $C$ is Hermitian (or, more generally, the condition $x^H C x = 0$ for all $x$ forces $C = 0$).
+::: {.proof}
+if $x^H C x = 0$ for all $x$, then by polarization, $x^H C y = 0$ for all $x, y$ (using $x^H C x = 0$ for all $x$ and the polarization identity), so $C = 0$.
+:::
 <2>2. Hence $A = B$.
-Proof: <2>1.
+::: {.proof}
+<2>1.
+:::
 
 <1>3. Counterexample for the transpose: $A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ and $B = 0$.
 <2>1. $x^T A x = 0$ for all $x \in \CC^2$.
-Proof: for $x = (x_1, x_2)$, $x^T A x = (x_1, x_2)\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = x_1 x_2 - x_2 x_1 = 0$.
+::: {.proof}
+for $x = (x_1, x_2)$, $x^T A x = (x_1, x_2)\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = x_1 x_2 - x_2 x_1 = 0$.
+:::
 <2>2. $x^T B x = 0$ for all $x$.
-Proof: $B = 0$.
+::: {.proof}
+$B = 0$.
+:::
 <2>3. But $A \neq B$.
-Proof: $A \neq 0$.
+::: {.proof}
+$A \neq 0$.
+:::
 
-<1>4. Q.E.D. Proof: <1>2 (b) and <1>3 (counterexample).
+<1>4. Q.E.D.
+::: {.proof}
+<1>2 (b) and <1>3 (counterexample).
+:::
 :::

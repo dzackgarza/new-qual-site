@@ -31,7 +31,9 @@ H_k(X) = \begin{cases}
 0 & k = 1, 3 \text{ or } k \ge 5.
 \end{cases}
 \]
-Proof: suspension isomorphism for reduced homology.
+::: {.proof}
+suspension isomorphism for reduced homology.
+:::
 <2>2. By the Universal Coefficient Theorem for Cohomology, $H^k(X) \cong \operatorname{Hom}(H_k(X), \mathbb{Z}) \oplus \operatorname{Ext}(H_{k-1}(X), \mathbb{Z})$:
 - $H^0(X) \cong \mathbb{Z}$,
 - $H^1(X) \cong \operatorname{Hom}(0, \mathbb{Z}) \oplus \operatorname{Ext}(\mathbb{Z}, \mathbb{Z}) = 0$,
@@ -40,14 +42,18 @@ Proof: suspension isomorphism for reduced homology.
 - $H^4(X) \cong \operatorname{Hom}(\mathbb{Z}, \mathbb{Z}) \oplus \operatorname{Ext}(0, \mathbb{Z}) \cong \mathbb{Z}$,
 - $H^k(X) = 0$ for $k \ge 5$.
 Symmetrically for $Y = \Sigma L(q)$, $H^*(Y) = (\mathbb{Z}, 0, 0, \mathbb{Z}_q, \mathbb{Z}, 0, \ldots)$.
-Proof: Universal Coefficient Theorem for Cohomology.
+::: {.proof}
+Universal Coefficient Theorem for Cohomology.
+:::
 
 <1>2. Cohomology of the product $\Sigma L(p) \times \Sigma L(q)$ via the Künneth Formula:
 <2>1. The Künneth formula for cohomology splits as:
 \[
 H^k(X \times Y) \cong \left( \bigoplus_{i+j=k} H^i(X) \otimes H^j(Y) \right) \oplus \left( \bigoplus_{i+j=k+1} \operatorname{Tor}(H^i(X), H^j(Y)) \right).
 \]
-Proof: Künneth Theorem for cohomology with principal ideal domain coefficients $\mathbb{Z}$.
+::: {.proof}
+Künneth Theorem for cohomology with principal ideal domain coefficients $\mathbb{Z}$.
+:::
 <2>2. Evaluating each degree $k \in \{0, 1, \dots, 8\}$:
 - **$k = 0$:** $H^0(X) \otimes H^0(Y) \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 - **$k = 1$:** $0$.
@@ -59,7 +65,9 @@ Proof: Künneth Theorem for cohomology with principal ideal domain coefficients 
 - **$k = 7$:** $(H^3(X) \otimes H^4(Y)) \oplus (H^4(X) \otimes H^3(Y)) \cong \mathbb{Z}_p \oplus \mathbb{Z}_q$.
 - **$k = 8$:** $H^4(X) \otimes H^4(Y) \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 - **$k \ge 9$:** $H^k(X \times Y) = 0$.
-Proof: direct calculation from the Künneth components.
+::: {.proof}
+direct calculation from the Künneth components.
+:::
 
 <1>3. Conclusion:
 The integral cohomology groups $H^k(\Sigma L(p) \times \Sigma L(q))$ for $k = 0, 1, \dots, 8$ are:
@@ -67,5 +75,7 @@ The integral cohomology groups $H^k(\Sigma L(p) \times \Sigma L(q))$ for $k = 0,
 \mathbb{Z}, \quad 0, \quad 0, \quad \mathbb{Z}_p \oplus \mathbb{Z}_q, \quad \mathbb{Z} \oplus \mathbb{Z}, \quad \mathbb{Z}_{\gcd(p, q)}, \quad \mathbb{Z}_{\gcd(p, q)}, \quad \mathbb{Z}_p \oplus \mathbb{Z}_q, \quad \mathbb{Z},
 \]
 and $0$ for all $k \ge 9$. Q.E.D.
-Proof: <1>1 and <1>2.
+::: {.proof}
+<1>1 and <1>2.
+:::
 :::

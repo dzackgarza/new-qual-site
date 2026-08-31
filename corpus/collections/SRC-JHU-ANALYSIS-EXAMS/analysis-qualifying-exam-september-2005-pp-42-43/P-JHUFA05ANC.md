@@ -24,22 +24,36 @@ Give either a proof or a counterexample.
 
 ::: {.solution}
 <1>1. No, $g_n$ need not converge weakly to $0$.
-Proof: exhibit a counterexample.
+::: {.proof}
+exhibit a counterexample.
+:::
 
 <1>2. Let $g_n(e^{i\theta}) = n e^{in\theta}$.
-Proof: define the sequence.
+::: {.proof}
+define the sequence.
+:::
 
 <1>3. For each fixed $k \in \ZZ$, $\int_{S^1} e^{ik\theta} g_n(e^{i\theta})\, d\theta \to 0$.
-Proof: $\int_{S^1} e^{ik\theta} n e^{in\theta}\, d\theta = n\int_{S^1} e^{i(k+n)\theta}\, d\theta$, which is $0$ whenever $k + n \neq 0$; for fixed $k$, this holds for all $n > |k|$, so the integral is $0$ for all sufficiently large $n$.
+::: {.proof}
+$\int_{S^1} e^{ik\theta} n e^{in\theta}\, d\theta = n\int_{S^1} e^{i(k+n)\theta}\, d\theta$, which is $0$ whenever $k + n \neq 0$; for fixed $k$, this holds for all $n > |k|$, so the integral is $0$ for all sufficiently large $n$.
+:::
 
 <1>4. But $g_n$ does not converge weakly to $0$.
 <2>1. $\|g_n\|_{L^1} = \int_{S^1} |n e^{in\theta}|\, d\theta = 2\pi n \to \infty$.
-Proof: $|e^{in\theta}| = 1$.
+::: {.proof}
+$|e^{in\theta}| = 1$.
+:::
 <2>2. A weakly convergent sequence in a normed space is bounded (by the uniform boundedness principle).
-Proof: the functionals $f \mapsto \int f g_n$ on $C(S^1)$ have norm $\|g_n\|_{L^1}$, and a weakly convergent sequence of functionals is bounded.
+::: {.proof}
+the functionals $f \mapsto \int f g_n$ on $C(S^1)$ have norm $\|g_n\|_{L^1}$, and a weakly convergent sequence of functionals is bounded.
+:::
 <2>3. Hence $g_n$ cannot converge weakly to $0$.
-Proof: <2>1 and <2>2.
+::: {.proof}
+<2>1 and <2>2.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>3 and <1>4 give a counterexample.
+::: {.proof}
+<1>3 and <1>4 give a counterexample.
+:::
 :::

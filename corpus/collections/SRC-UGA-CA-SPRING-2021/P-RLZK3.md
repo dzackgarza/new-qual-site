@@ -58,7 +58,7 @@ So write
 &\iff 0 \leq (1 - \abs z^2 )(1 - \abs w^2)
 ,\]
 where we've used part 1.
-But this is clearly true when $\abs{z}, \abs{w} < 1$, so the RHS is positive.
+But this holds when $\abs{z}, \abs{w} < 1$: then $1 - \abs z^2 > 0$ and $1 - \abs w^2 > 0$, so their product $(1 - \abs z^2)(1 - \abs w^2) > 0$, making the RHS positive.
 Moreover if $\abs{z} = \abs{w} = 1$, the RHS is zero, yielding equalities at every step instead.
 
 

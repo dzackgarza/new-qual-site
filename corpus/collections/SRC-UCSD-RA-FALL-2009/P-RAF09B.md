@@ -23,14 +23,22 @@ Assume that there exists an integrable function $F$ such that $|f_n| \leq F$ $\m
 
 ::: {.solution}
 <1>1. For $\epsilon>0$, $|\{|f_n-f|>\epsilon\}|\le \epsilon^{-p}\int|f_n-f|^p$ but use dominated: $|f_n-f|\le2F$.
-Proof: Chebyshev.
+::: {.proof}
+Chebyshev.
+:::
 
 <1>2. $f_n\to f$ a.e. and $|f_n-f|\le2F\in L^1$, so $\int|f_n-f|\wedge1\to0$ by DCT.
-Proof: DCT.
+::: {.proof}
+DCT.
+:::
 
 <1>3. Hence $\mu(\{|f_n-f|>\epsilon\})\to0$.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 :::

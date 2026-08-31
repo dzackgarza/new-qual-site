@@ -34,33 +34,51 @@ $$
 
 ::: {.solution}
 <1>1. Expand $e^{ixt} = \sum_{m=0}^{\infty} \frac{(ixt)^m}{m!}$.
-Proof: power series of the exponential.
+::: {.proof}
+power series of the exponential.
+:::
 
 <1>2. Then
 $$\int_{-1}^{1} e^{ixt}(1 - t^2)^{\nu - 1/2}\,dt = \sum_{m=0}^{\infty} \frac{(ix)^m}{m!}\int_{-1}^{1} t^m (1 - t^2)^{\nu - 1/2}\,dt.$$
-Proof: <1>1, integrating term by term.
+::: {.proof}
+<1>1, integrating term by term.
+:::
 
 <1>3. For $m$ odd, $\int_{-1}^{1} t^m (1 - t^2)^{\nu - 1/2}\,dt = 0$ (the integrand is odd).
-Proof: symmetry.
+::: {.proof}
+symmetry.
+:::
 
 <1>4. For $m = 2k$ even, $\int_{-1}^{1} t^{2k}(1 - t^2)^{\nu - 1/2}\,dt = \frac{\Gamma(k + 1/2)\Gamma(\nu + 1/2)}{\Gamma(\nu + k + 1)}$.
-Proof: beta function (substituting $u = t^2$).
+::: {.proof}
+beta function (substituting $u = t^2$).
+:::
 
 <1>5. Hence
 $$\int_{-1}^{1} e^{ixt}(1 - t^2)^{\nu - 1/2}\,dt = \sum_{k=0}^{\infty} \frac{(ix)^{2k}}{(2k)!} \cdot \frac{\Gamma(k + 1/2)\Gamma(\nu + 1/2)}{\Gamma(\nu + k + 1)}.$$
-Proof: <1>2–<1>4.
+::: {.proof}
+<1>2–<1>4.
+:::
 
 <1>6. Using $\Gamma(k + 1/2) = \frac{(2k)!}{4^k k!}\sqrt{\pi}$ and $(ix)^{2k} = (-1)^k x^{2k}$:
 $$\int_{-1}^{1} e^{ixt}(1 - t^2)^{\nu - 1/2}\,dt = \Gamma(\nu + 1/2)\sqrt{\pi}\sum_{k=0}^{\infty} \frac{(-1)^k (x/2)^{2k}}{k!\,\Gamma(\nu + k + 1)}.$$
-Proof: <1>5 and the identity for $\Gamma(k + 1/2)$.
+::: {.proof}
+<1>5 and the identity for $\Gamma(k + 1/2)$.
+:::
 
 <1>7. Multiplying by $\frac{(x/2)^\nu}{\Gamma(\nu + 1/2)\sqrt{\pi}}$:
 $$J_\nu(x) = \frac{(x/2)^\nu}{\Gamma(\nu + 1/2)\sqrt{\pi}}\int_{-1}^{1} e^{ixt}(1 - t^2)^{\nu - 1/2}\,dt = \left(\frac{x}{2}\right)^\nu \sum_{k=0}^{\infty} \frac{(-1)^k (x/2)^{2k}}{k!\,\Gamma(\nu + k + 1)}.$$
-Proof: <1>6.
+::: {.proof}
+<1>6.
+:::
 
 <1>8. This is the standard power series for $J_\nu(x)$.
-Proof: <1>7.
+::: {.proof}
+<1>7.
+:::
 
 <1>9. Q.E.D.
-Proof: <1>8.
+::: {.proof}
+<1>8.
+:::
 :::

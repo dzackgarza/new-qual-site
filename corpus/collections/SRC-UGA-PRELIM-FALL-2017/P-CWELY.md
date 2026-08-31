@@ -67,17 +67,23 @@ V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.
         Thus $c\mathbf{u} + \mathbf{v} \in V$. By the Subspace Criterion, $V \le \mathbb{R}^3$.
 
 <1>2. $\dim(V) = 2$.
-    Proof: $V$ is the kernel of the nonzero linear functional $\phi: \mathbb{R}^3 \to \mathbb{R}$, $\phi(x,y,z) = 3x+4y+5z$. Since $\operatorname{im}(\phi) = \mathbb{R}$ has dimension $1$, the Rank-Nullity Theorem yields $\dim(V) = \dim(\ker \phi) = 3 - 1 = 2$.
+    ::: {.proof}
+    $V$ is the kernel of the nonzero linear functional $\phi: \mathbb{R}^3 \to \mathbb{R}$, $\phi(x,y,z) = 3x+4y+5z$. Since $\operatorname{im}(\phi) = \mathbb{R}$ has dimension $1$, the Rank-Nullity Theorem yields $\dim(V) = \dim(\ker \phi) = 3 - 1 = 2$.
+    :::
     A basis for $V$ is given by $\{v_1, v_2\}$ where $v_1 = (4, -3, 0)^T$ and $v_2 = (5, 0, -3)^T$.
 
 <1>3. There exists a linear map $S: \mathbb{R}^3 \to \mathbb{R}^3$ with $\ker(S) = V$.
-    Proof: Define $S$ via the matrix:
+    ::: {.proof}
+    Define $S$ via the matrix:
+    :::
     $$S = \begin{pmatrix} 3 & 4 & 5 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}.$$
     For any $\mathbf{x} = (x,y,z)^T \in \mathbb{R}^3$, $S\mathbf{x} = (3x+4y+5z, 0, 0)^T$.
     Thus $S\mathbf{x} = \mathbf{0} \iff 3x+4y+5z = 0 \iff \mathbf{x} \in V$. Hence $\ker(S) = V$.
 
 <1>4. There exists a linear map $T: \mathbb{R}^3 \to \mathbb{R}^3$ with $\operatorname{im}(T) = V$.
-    Proof: By <1>2, $v_1 = (4, -3, 0)^T \in V$ and $v_2 = (5, 0, -3)^T \in V$ are linearly independent.
+    ::: {.proof}
+    By <1>2, $v_1 = (4, -3, 0)^T \in V$ and $v_2 = (5, 0, -3)^T \in V$ are linearly independent.
+    :::
     Define $T: \mathbb{R}^3 \to \mathbb{R}^3$ by the matrix whose columns are $v_1, v_2, \mathbf{0}$:
     $$T = \begin{pmatrix} 4 & 5 & 0 \\ -3 & 0 & 0 \\ 0 & -3 & 0 \end{pmatrix}.$$
     The image of $T$ is the column space of $T$, which is $\operatorname{span}\{v_1, v_2\} = V$.

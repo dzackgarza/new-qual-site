@@ -28,34 +28,62 @@ Given two disjoint connected $n$-manifolds $M_1$ and $M_2$, a connected $n$-mani
 
 <1>1. (a) $H_i(M_1 \sharp M_2) \cong H_i(M_1) \oplus H_i(M_2)$ for $0 < i < n$ (with one exception).
 <2>1. $M_1 \sharp M_2 = (M_1 \sm \operatorname{int} B_1) \cup (M_2 \sm \operatorname{int} B_2)$ glued along $S^{n-1}$.
-Proof: definition of connected sum.
+::: {.proof}
+definition of connected sum.
+:::
 <2>2. Apply Mayer–Vietoris to the two punctured manifolds with intersection $S^{n-1}$.
-Proof: the two pieces are $M_1 \sm \operatorname{int} B_1$ and $M_2 \sm \operatorname{int} B_2$, intersecting in $S^{n-1}$.
+::: {.proof}
+the two pieces are $M_1 \sm \operatorname{int} B_1$ and $M_2 \sm \operatorname{int} B_2$, intersecting in $S^{n-1}$.
+:::
 <2>3. For $0 < i < n-1$: $H_i(M_j \sm \operatorname{int} B_j) \cong H_i(M_j)$ and $H_i(S^{n-1}) = 0$, so $H_i(M_1 \sharp M_2) \cong H_i(M_1) \oplus H_i(M_2)$.
-Proof: removing a ball does not change $H_i$ for $i < n-1$, and $H_i(S^{n-1}) = 0$ for $0 < i < n-1$.
+::: {.proof}
+removing a ball does not change $H_i$ for $i < n-1$, and $H_i(S^{n-1}) = 0$ for $0 < i < n-1$.
+:::
 <2>4. For $i = n-1$: the Mayer–Vietoris sequence gives $0 \to H_{n-1}(S^{n-1}) \to H_{n-1}(M_1 \sm B_1) \oplus H_{n-1}(M_2 \sm B_2) \to H_{n-1}(M_1 \sharp M_2) \to 0$.
-Proof: the relevant part of the Mayer–Vietoris sequence (with $H_{n-2}(S^{n-1}) = 0$ for $n > 2$).
+::: {.proof}
+the relevant part of the Mayer–Vietoris sequence (with $H_{n-2}(S^{n-1}) = 0$ for $n > 2$).
+:::
 <2>5. $H_{n-1}(M_j \sm \operatorname{int} B_j) \cong H_{n-1}(M_j)$.
-Proof: removing a ball does not change $H_{n-1}$.
+::: {.proof}
+removing a ball does not change $H_{n-1}$.
+:::
 <2>6. Hence $H_{n-1}(M_1 \sharp M_2) \cong \qty(H_{n-1}(M_1) \oplus H_{n-1}(M_2)) / \im(\ZZ \to \cdots)$.
-Proof: the map $H_{n-1}(S^{n-1}) = \ZZ \to H_{n-1}(M_1) \oplus H_{n-1}(M_2)$ sends the generator to the boundary sphere class in each summand.
+::: {.proof}
+the map $H_{n-1}(S^{n-1}) = \ZZ \to H_{n-1}(M_1) \oplus H_{n-1}(M_2)$ sends the generator to the boundary sphere class in each summand.
+:::
 <2>7. If at least one of $M_1, M_2$ is orientable, the boundary sphere class is $0$ in that summand, so the quotient is the direct sum $H_{n-1}(M_1) \oplus H_{n-1}(M_2)$.
-Proof: in an orientable manifold, the boundary sphere of a ball is null-homologous.
+::: {.proof}
+in an orientable manifold, the boundary sphere of a ball is null-homologous.
+:::
 <2>8. If both are nonorientable, the boundary sphere class is the $\ZZ_2$ generator in each $H_{n-1}(M_j)$, so the quotient replaces one $\ZZ_2$ summand by $\ZZ$.
-Proof: the map $\ZZ \to \ZZ_2 \oplus \ZZ_2$ sends $1 \mapsto (1, 1)$, and the quotient $(\ZZ_2 \oplus \ZZ_2)/\langle(1,1)\rangle \cong \ZZ_2 \oplus \ZZ$ (one $\ZZ_2$ survives, and the diagonal gives a $\ZZ$).
+::: {.proof}
+the map $\ZZ \to \ZZ_2 \oplus \ZZ_2$ sends $1 \mapsto (1, 1)$, and the quotient $(\ZZ_2 \oplus \ZZ_2)/\langle(1,1)\rangle \cong \ZZ_2 \oplus \ZZ$ (one $\ZZ_2$ survives, and the diagonal gives a $\ZZ$).
+:::
 
 <1>2. (b) $\chi(M_1 \sharp M_2) = \chi(M_1) + \chi(M_2) - \chi(S^n)$.
 <2>1. $\chi(M_1 \sharp M_2) = \chi(M_1 \sm \operatorname{int} B_1) + \chi(M_2 \sm \operatorname{int} B_2) - \chi(S^{n-1})$.
-Proof: additivity of Euler characteristic for a union along a common subspace (inclusion-exclusion).
+::: {.proof}
+additivity of Euler characteristic for a union along a common subspace (inclusion-exclusion).
+:::
 <2>2. $\chi(M_j \sm \operatorname{int} B_j) = \chi(M_j) - \chi(\operatorname{int} B_j) = \chi(M_j) - (-1)^n$.
-Proof: removing the interior of an $n$-ball removes a cell of dimension $n$, contributing $(-1)^n$ to $\chi$.
+::: {.proof}
+removing the interior of an $n$-ball removes a cell of dimension $n$, contributing $(-1)^n$ to $\chi$.
+:::
 <2>3. $\chi(S^{n-1}) = 1 + (-1)^{n-1}$.
-Proof: $S^{n-1}$ has one cell in dimensions $0$ and $n-1$.
+::: {.proof}
+$S^{n-1}$ has one cell in dimensions $0$ and $n-1$.
+:::
 <2>4. Hence $\chi(M_1 \sharp M_2) = \chi(M_1) + \chi(M_2) - 2(-1)^n - (1 + (-1)^{n-1})$.
-Proof: substitute <1>2.2 and <1>2.3 into <1>2.1.
+::: {.proof}
+substitute <1>2.2 and <1>2.3 into <1>2.1.
+:::
 <2>5. $= \chi(M_1) + \chi(M_2) - (1 + (-1)^n) = \chi(M_1) + \chi(M_2) - \chi(S^n)$.
-Proof: $\chi(S^n) = 1 + (-1)^n$, and $-2(-1)^n - (1 + (-1)^{n-1}) = -2(-1)^n - 1 + (-1)^n = -1 - (-1)^n = -(1 + (-1)^n)$.
+::: {.proof}
+$\chi(S^n) = 1 + (-1)^n$, and $-2(-1)^n - (1 + (-1)^{n-1}) = -2(-1)^n - 1 + (-1)^n = -1 - (-1)^n = -(1 + (-1)^n)$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 proves (a); <1>2 proves (b).
+::: {.proof}
+<1>1 proves (a); <1>2 proves (b).
+:::
 :::

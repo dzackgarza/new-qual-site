@@ -25,22 +25,36 @@ Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 **Goal.** Show $S_a f \to f$ in $L^1$ as $a \to 1$ for $f \in L^1$.
 
 <1>1. $\|S_a f\|_1 = a \|f\|_1$.
-Proof: $\int |f(x/a)|\,dx = a\int |f(y)|\,dy$ (substitute $y = x/a$).
+::: {.proof}
+$\int |f(x/a)|\,dx = a\int |f(y)|\,dy$ (substitute $y = x/a$).
+:::
 
 <1>2. It suffices to prove the result for a dense class (e.g. continuous functions with compact support).
-Proof: the operators $S_a$ are uniformly bounded in $a$ near $1$ (since $\|S_a\| = a \to 1$), so by a standard density argument, convergence on a dense set implies convergence on all of $L^1$.
+::: {.proof}
+the operators $S_a$ are uniformly bounded in $a$ near $1$ (since $\|S_a\| = a \to 1$), so by a standard density argument, convergence on a dense set implies convergence on all of $L^1$.
+:::
 
 <1>3. For $f$ continuous with compact support, $S_a f \to f$ in $L^1$.
 <2>1. $S_a f$ is supported in a fixed compact set for $a$ near $1$.
-Proof: if $\operatorname{supp} f \subseteq [-M, M]$, then $\operatorname{supp} S_a f \subseteq [-aM, aM]$, which is bounded for $a$ near $1$.
+::: {.proof}
+if $\operatorname{supp} f \subseteq [-M, M]$, then $\operatorname{supp} S_a f \subseteq [-aM, aM]$, which is bounded for $a$ near $1$.
+:::
 <2>2. $S_a f \to f$ uniformly.
-Proof: $f$ is uniformly continuous, so $|f(x/a) - f(x)| \to 0$ uniformly as $a \to 1$.
+::: {.proof}
+$f$ is uniformly continuous, so $|f(x/a) - f(x)| \to 0$ uniformly as $a \to 1$.
+:::
 <2>3. Hence $S_a f \to f$ in $L^1$.
-Proof: uniform convergence on a fixed compact set implies $L^1$ convergence.
+::: {.proof}
+uniform convergence on a fixed compact set implies $L^1$ convergence.
+:::
 
 <1>4. Hence $S_a f \to f$ in $L^1$ for all $f \in L^1$.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>4 is the claim.
+::: {.proof}
+<1>4 is the claim.
+:::
 :::

@@ -33,20 +33,32 @@ Prove that $G \cong H$.
 
 ::: {.solution}
 <1>1. In $H$, $A^8=I$, $BA=A^{-1}B$, $B^2=A^4=-I$.
-Proof: direct.
+::: {.proof}
+direct.
+:::
 
 <1>2. So $H$ satisfies relations of $G$, hence $H$ is quotient of $G$ via $a\mapsto A$, $b\mapsto B$.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 
 <1>3. $|H|=16$ (elements $A^i, A^iB$ distinct, $A^4=-I\neq I$).
-Proof: order.
+::: {.proof}
+order.
+:::
 
 <1>4. $|G|\le16$ (every word reduces to $a^i$ or $a^ib$, $i<8$).
-Proof: relations.
+::: {.proof}
+relations.
+:::
 
 <1>5. Surjection $G\to H$ between groups of order $\le16$ and $16$ is iso.
-Proof: <1>2 and <1>4.
+::: {.proof}
+<1>2 and <1>4.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

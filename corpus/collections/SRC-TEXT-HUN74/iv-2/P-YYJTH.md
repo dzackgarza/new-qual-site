@@ -24,8 +24,12 @@ If $V$ is a finite dimensional vector space and $$V^m \coloneqq V \oplus V \oplu
 
 ::: {.solution}
 <1>1. $\dim V^m = m\dim V$.
-Proof: if $\{e_i\}$ basis of $V$, then $\{(e_i\text{ in }j\text{th summand})\}$ is basis of $V^m$, of size $m\dim V$.
+::: {.proof}
+if $\{e_i\}$ basis of $V$, then $\{(e_i\text{ in }j\text{th summand})\}$ is basis of $V^m$, of size $m\dim V$.
+:::
 
 <1>2. Q.E.D.
-Proof: <1>1.
+::: {.proof}
+<1>1.
+:::
 :::

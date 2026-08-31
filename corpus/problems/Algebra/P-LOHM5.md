@@ -36,26 +36,54 @@ audit:
 
 <1>1. $G$ has a normal subgroup of order $p^2$.
 <2>1. $G$ is a $p$-group, so it has a nontrivial center $Z(G)$.
-Proof: a nontrivial $p$-group has a nontrivial center.
+::: {.proof}
+a nontrivial $p$-group has a nontrivial center.
+:::
 <2>2. $|Z(G)|$ is $p$, $p^2$, or $p^3$.
-Proof: $Z(G)$ is a subgroup of $G$, so its order divides $p^3$.
+::: {.proof}
+$Z(G)$ is a subgroup of $G$, so its order divides $p^3$.
+:::
 <2>3. If $|Z(G)| \ge p^2$, then $Z(G)$ (or a subgroup of it of order $p^2$) is a normal subgroup of order $p^2$.
-Proof: the center is normal, and a subgroup of the center is normal.
+::: {.proof}
+the center is normal, and a subgroup of the center is normal.
+:::
 <2>4. If $|Z(G)| = p$, then $G/Z(G)$ has order $p^2$, hence is abelian.
-Proof: a group of order $p^2$ is abelian.
-<2>5. $G/Z(G)$ abelian implies $G$ is abelian (since $[G,G] \subseteq Z(G)$ and $G/Z(G)$ abelian forces $[G,G] \subseteq Z(G)$, but this does not force $G$ abelian in general; however, a group of order $p^3$ with $|Z(G)| = p$ has $G/Z(G) \cong \ZZ/p \times \ZZ/p$). Proof: standard.
+::: {.proof}
+a group of order $p^2$ is abelian.
+:::
+<2>5. $G/Z(G)$ abelian implies $G$ is abelian (since $[G,G] \subseteq Z(G)$ and $G/Z(G)$ abelian forces $[G,G] \subseteq Z(G)$, but this does not force $G$ abelian in general; however, a group of order $p^3$ with $|Z(G)| = p$ has $G/Z(G) \cong \ZZ/p \times \ZZ/p$).
+::: {.proof}
+standard.
+:::
 <2>6. In any case, $G$ has a subgroup of order $p^2$ (a subgroup of index $p$), and a subgroup of index $p$ in a $p$-group is normal.
-Proof: a subgroup of index $p$ in a $p$-group is normal (its normalizer has index dividing $p$, and index $1$ or $p$; a subgroup of index $p$ is normal since $[G:N_G(H)] \mid p$ and $[G:N_G(H)] \equiv 1 \pmod p$ forces $[G:N_G(H)] = 1$).
+::: {.proof}
+a subgroup of index $p$ in a $p$-group is normal (its normalizer has index dividing $p$, and index $1$ or $p$; a subgroup of index $p$ is normal since $[G:N_G(H)] \mid p$ and $[G:N_G(H)] \equiv 1 \pmod p$ forces $[G:N_G(H)] = 1$).
+:::
 
 <1>2. Classification when $N = \langle h \rangle$ is cyclic.
 <2>1. If $|h| = p^3$, then $G = \langle h \rangle \cong \ZZ/p^3$ is cyclic.
-Proof: $h$ has order $p^3 = |G|$, so it generates $G$.
+::: {.proof}
+$h$ has order $p^3 = |G|$, so it generates $G$.
+:::
 <2>2. If $|h| = p$, then $N = \langle h \rangle \cong \ZZ/p$, and $G/N$ has order $p^2$.
-Proof: $|G/N| = p^3/p = p^2$.
+::: {.proof}
+$|G/N| = p^3/p = p^2$.
+:::
 <2>3. $G/N$ is abelian (order $p^2$), so $G/N \cong \ZZ/p^2$ or $\ZZ/p \times \ZZ/p$.
-Proof: classification of groups of order $p^2$.
-<2>4. $G$ is a semidirect product $N \rtimes (G/N)$ (or an extension of $N$ by $G/N$). Proof: $N$ is normal, and $G$ is an extension of $N$ by $G/N$; since $N$ is cyclic of order $p$, the extension is a semidirect product (or a central extension).
-<2>5. The possibilities for $G$ (with $N = \langle h \rangle$ cyclic of order $p$) are: $\ZZ/p \times \ZZ/p^2$, $\ZZ/p \times \ZZ/p \times \ZZ/p$, and the nonabelian groups of order $p^3$ (the Heisenberg group and the semidirect product $\ZZ/p^2 \rtimes \ZZ/p$). Proof: the classification of groups of order $p^3$.
+::: {.proof}
+classification of groups of order $p^2$.
+:::
+<2>4. $G$ is a semidirect product $N \rtimes (G/N)$ (or an extension of $N$ by $G/N$).
+::: {.proof}
+$N$ is normal, and $G$ is an extension of $N$ by $G/N$; since $N$ is cyclic of order $p$, the extension is a semidirect product (or a central extension).
+:::
+<2>5. The possibilities for $G$ (with $N = \langle h \rangle$ cyclic of order $p$) are: $\ZZ/p \times \ZZ/p^2$, $\ZZ/p \times \ZZ/p \times \ZZ/p$, and the nonabelian groups of order $p^3$ (the Heisenberg group and the semidirect product $\ZZ/p^2 \rtimes \ZZ/p$).
+::: {.proof}
+the classification of groups of order $p^3$.
+:::
 
-<1>3. Q.E.D. Proof: <1>1 proves the normal subgroup; <1>2 classifies the cyclic cases.
+<1>3. Q.E.D.
+::: {.proof}
+<1>1 proves the normal subgroup; <1>2 classifies the cyclic cases.
+:::
 :::

@@ -24,7 +24,9 @@ Prove that $$\int_0^1 \cos x \frac{x\phi'(x)-\phi(x)+\phi(0)}{x^2}\,dx<\frac{3}{
 :::
 ::: {.solution}
 <1>1. Rewrite the numerator as an integral.
-    Proof: let $N(x) \da x\phi'(x) - \phi(x) + \phi(0)$. Differentiating,
+    ::: {.proof}
+    let $N(x) \da x\phi'(x) - \phi(x) + \phi(0)$. Differentiating,
+    :::
     \[
     \frac{d}{dx}\big(x\phi'(x) - \phi(x) + \phi(0)\big) = \phi'(x) + x\phi''(x) - \phi'(x) = x\phi''(x),
     \]
@@ -33,18 +35,24 @@ Prove that $$\int_0^1 \cos x \frac{x\phi'(x)-\phi(x)+\phi(0)}{x^2}\,dx<\frac{3}{
     N(x) = \int_0^x y\,\phi''(y)\,dy .
     \]
 <1>2. Bound $|N(x)|$.
-    Proof: by <1>1,
+    ::: {.proof}
+    by <1>1,
+    :::
     \[
     |N(x)| \le \int_0^x y\,|\phi''(y)|\,dy \le \norm{\phi''}_\infty \int_0^x y\,dy = \norm{\phi''}_\infty \frac{x^2}{2} .
     \]
 <1>3. Bound the integrand.
-    Proof: for $x > 0$,
+    ::: {.proof}
+    for $x > 0$,
+    :::
     \[
     \Big|\cos x \cdot \frac{N(x)}{x^2}\Big| \le \frac{|N(x)|}{x^2} \le \frac{\norm{\phi''}_\infty}{2},
     \]
     using $|\cos x| \le 1$ and <1>2. (The integrand is bounded as $x \to 0^+$ by the same estimate, so it extends continuously to $0$.)
 <1>4. Conclude.
-    Proof: integrating <1>3 over $[0,1]$,
+    ::: {.proof}
+    integrating <1>3 over $[0,1]$,
+    :::
     \[
     \int_0^1 \cos x \,\frac{x\phi'(x) - \phi(x) + \phi(0)}{x^2}\,dx \le \int_0^1 \frac{\norm{\phi''}_\infty}{2}\,dx = \frac{1}{2}\norm{\phi''}_\infty < \frac{3}{2}\norm{\phi''}_\infty .
     \]

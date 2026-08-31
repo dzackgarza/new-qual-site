@@ -30,11 +30,17 @@ c. $R = \mathbb{C}[x,y]$, $I = (y^2 - x^3)$.
 
 ::: {.solution}
 <1>1. $K$ splitting field of $X^4-2$ etc.
-Proof: roots.
+::: {.proof}
+roots.
+:::
 
 <1>2. Degree $8$, Galois $D_8$.
-Proof: similar.
+::: {.proof}
+similar.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 :::

@@ -30,11 +30,17 @@ Prove that $f$ is differentiable on $(0,1)$.
 :::
 ::: {.solution}
 <1>1. Pointwise convergence on $[0,1)$.
-Proof: for $x \in [0,1)$, $0 \le \frac{x^k}{1+x^k} \le x^k$, and $\sum_k x^k$ is a convergent geometric series; hence $\sum_k \frac{x^k}{1+x^k}$ converges, defining $f(x)$.
+::: {.proof}
+for $x \in [0,1)$, $0 \le \frac{x^k}{1+x^k} \le x^k$, and $\sum_k x^k$ is a convergent geometric series; hence $\sum_k \frac{x^k}{1+x^k}$ converges, defining $f(x)$.
+:::
 <1>2. Uniform convergence on $[0,a]$ for $0 < a < 1$.
-Proof: for $x \le a$, $\frac{x^k}{1+x^k} \le a^k$, and $\sum_k a^k$ converges (geometric, $a < 1$); by the Weierstrass $M$-test the convergence is uniform on $[0,a]$.
+::: {.proof}
+for $x \le a$, $\frac{x^k}{1+x^k} \le a^k$, and $\sum_k a^k$ converges (geometric, $a < 1$); by the Weierstrass $M$-test the convergence is uniform on $[0,a]$.
+:::
 <1>3. $f$ is differentiable on $(0,1)$.
-Proof: each term $g_k(x) = \frac{x^k}{1+x^k}$ is differentiable with $g_k'(x) = \frac{kx^{k-1}}{(1+x^k)^2}$.
+::: {.proof}
+each term $g_k(x) = \frac{x^k}{1+x^k}$ is differentiable with $g_k'(x) = \frac{kx^{k-1}}{(1+x^k)^2}$.
+:::
 Fix $0 < a < 1$.
 For $x \le a$, \[
 |g_k'(x)| \le k a^{k-1},

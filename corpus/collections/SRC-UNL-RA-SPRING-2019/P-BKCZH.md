@@ -58,22 +58,36 @@ Otherwise, we set $\delta_1< \frac{1}{k}$ so that $kx_1< 1$. ◻
 :::
 ::: {.solution}
 <1>1. $f$ is continuous on $[0,1]$, so $M = \max_{[0,1]}|f|$ is finite; and $|f'(x)| \le k|f(x)| \le kM$ on $[0,1]$.
-    Proof: differentiable implies continuous; Extreme Value Theorem; the hypothesis bounds $f'$ pointwise by $k|f|$.
+    ::: {.proof}
+    differentiable implies continuous; Extreme Value Theorem; the hypothesis bounds $f'$ pointwise by $k|f|$.
+    :::
 
 <1>2. $f$ is Lipschitz on $[0,1]$: $|f(x) - f(y)| \le kM|x - y|$.
-    Proof: the Mean Value Theorem on $[x,y]$ and <1>1 give $|f(x)-f(y)| = |f'(\xi)||x-y| \le kM|x-y|$.
+    ::: {.proof}
+    the Mean Value Theorem on $[x,y]$ and <1>1 give $|f(x)-f(y)| = |f'(\xi)||x-y| \le kM|x-y|$.
+    :::
 
 <1>3. For every $x \in [0,1]$: $|f(x)| \le k\int_0^x |f(t)|\,dt$.
-    Proof: $f$ is Lipschitz, hence absolutely continuous, so the Fundamental Theorem of Calculus gives $f(x) = f(0) + \int_0^x f'(t)\,dt = \int_0^x f'(t)\,dt$ (since $f(0) = 0$); take absolute values inside the integral and use $|f'(t)| \le k|f(t)|$.
+    ::: {.proof}
+    $f$ is Lipschitz, hence absolutely continuous, so the Fundamental Theorem of Calculus gives $f(x) = f(0) + \int_0^x f'(t)\,dt = \int_0^x f'(t)\,dt$ (since $f(0) = 0$); take absolute values inside the integral and use $|f'(t)| \le k|f(t)|$.
+    :::
 
 <1>4. For every $n \ge 1$ and every $x \in [0,1]$: $|f(x)| \le M\,(kx)^n / n!$.
     <2>1. Base case $n = 1$: $|f(x)| \le k\int_0^x M\,dt = Mkx$.
-        Proof: <1>3 and $|f(t)| \le M$.
+        ::: {.proof}
+        <1>3 and $|f(t)| \le M$.
+        :::
     <2>2. Inductive step: if $|f(t)| \le M\,(kt)^n / n!$ for all $t$, then $|f(x)| \le k\int_0^x M(kt)^n/n!\,dt = M k^{n+1} x^{n+1}/(n+1)! = M(kx)^{n+1}/(n+1)!$.
-        Proof: substitute the induction hypothesis into <1>3 and integrate.
+        ::: {.proof}
+        substitute the induction hypothesis into <1>3 and integrate.
+        :::
     <2>3. Q.E.D.
-        Proof: induction using <2>1 and <2>2.
+        ::: {.proof}
+        induction using <2>1 and <2>2.
+        :::
 
 <1>5. $f \equiv 0$ on $[0,1]$.
-    Proof: <1>4 gives $|f(x)| \le M(kx)^n/n! \to 0$ as $n \to \infty$ for each fixed $x$ (the factorial dominates the exponential), so $|f(x)| = 0$; $x$ was arbitrary.
+    ::: {.proof}
+    <1>4 gives $|f(x)| \le M(kx)^n/n! \to 0$ as $n \to \infty$ for each fixed $x$ (the factorial dominates the exponential), so $|f(x)| = 0$; $x$ was arbitrary.
+    :::
 :::

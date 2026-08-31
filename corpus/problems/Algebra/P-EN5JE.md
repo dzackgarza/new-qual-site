@@ -23,23 +23,37 @@ audit:
 
 ::: {.solution}
 <1>1. Consider the map $\phi: H \times K \to HK$ given by $\phi(h, k) = hk$.
-Proof: definition.
+::: {.proof}
+definition.
+:::
 
 <1>2. $\phi$ is surjective.
-Proof: every element of $HK$ is of the form $hk$ with $h \in H$, $k \in K$.
+::: {.proof}
+every element of $HK$ is of the form $hk$ with $h \in H$, $k \in K$.
+:::
 
 <1>3. The fibers of $\phi$ all have size $|H \cap K|$.
 <2>1. $\phi(h_1, k_1) = \phi(h_2, k_2)$ iff $h_1 k_1 = h_2 k_2$ iff $h_2^{-1} h_1 = k_2 k_1^{-1} \in H \cap K$.
-Proof: rearrange the equation.
+::: {.proof}
+rearrange the equation.
+:::
 <2>2. Hence the fiber over $hk$ is $\{(hx, x^{-1}k) : x \in H \cap K\}$, which has $|H \cap K|$ elements.
-Proof: <2>1.
+::: {.proof}
+<2>1.
+:::
 
 <1>4. Therefore $|H \times K| = |HK| \cdot |H \cap K|$, i.e. $|H||K| = |HK| \cdot |H \cap K|$.
-Proof: <1>2 and <1>3 (counting the domain by fibers).
+::: {.proof}
+<1>2 and <1>3 (counting the domain by fibers).
+:::
 
 <1>5. Hence $|HK| = |H||K|/|H \cap K|$.
-Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

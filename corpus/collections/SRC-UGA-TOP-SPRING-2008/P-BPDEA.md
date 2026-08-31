@@ -21,7 +21,7 @@ Give an example of a quotient map in which the domain is Hausdorff, but the quot
 ::: {.solution}
 \envlist
 
-- $\RR$ is clearly Hausdorff, and $\RR/\QQ$ has the indiscrete topology, and is thus non-Hausdorff.
+- $\RR$ is Hausdorff (it is a metric space, and metric spaces are Hausdorff), and $\RR/\QQ$ has the indiscrete topology, and is thus non-Hausdorff.
 
 - So take the quotient map $\pi:\RR \to \RR/\QQ$.
 

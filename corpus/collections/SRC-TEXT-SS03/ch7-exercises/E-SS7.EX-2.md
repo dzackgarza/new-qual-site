@@ -40,21 +40,31 @@ Here $d ( n )$ equals the number of divisors of $n _ { \mathrm { : } }$ , and $\
 **Part (a).**
 
 <1>1. For $\operatorname{Re}(s) > 1$, both series $\sum_m \frac{a_m}{m^s}$ and $\sum_k \frac{b_k}{k^s}$ converge absolutely.
-Proof: $|a_m|, |b_k|$ are bounded, and $\sum \frac{1}{n^{\operatorname{Re} s}}$ converges for $\operatorname{Re} s > 1$.
+::: {.proof}
+$|a_m|, |b_k|$ are bounded, and $\sum \frac{1}{n^{\operatorname{Re} s}}$ converges for $\operatorname{Re} s > 1$.
+:::
 
 <1>2. Hence their product is the Cauchy product:
 $$\left(\sum_m \frac{a_m}{m^s}\right)\left(\sum_k \frac{b_k}{k^s}\right) = \sum_{m,k} \frac{a_m b_k}{(mk)^s} = \sum_{n=1}^{\infty} \frac{c_n}{n^s},$$
 where $c_n = \sum_{mk = n} a_m b_k$.
-Proof: absolute convergence justifies rearranging the double sum by grouping terms with $mk = n$.
+::: {.proof}
+absolute convergence justifies rearranging the double sum by grouping terms with $mk = n$.
+:::
 
 **Part (b).**
 
 <1>1. $\zeta(s)^2 = \left(\sum_m \frac{1}{m^s}\right)\left(\sum_k \frac{1}{k^s}\right) = \sum_n \frac{d(n)}{n^s}$.
-Proof: by part (a) with $a_m = b_k = 1$, we get $c_n = \sum_{mk = n} 1 = d(n)$ (the number of divisors of $n$).
+::: {.proof}
+by part (a) with $a_m = b_k = 1$, we get $c_n = \sum_{mk = n} 1 = d(n)$ (the number of divisors of $n$).
+:::
 
 <1>2. $\zeta(s)\zeta(s-a) = \left(\sum_m \frac{1}{m^s}\right)\left(\sum_k \frac{k^a}{k^s}\right) = \sum_n \frac{\sigma_a(n)}{n^s}$.
-Proof: by part (a) with $a_m = 1$ and $b_k = k^a$, we get $c_n = \sum_{mk = n} k^a = \sigma_a(n)$ (the sum of the $a$-th powers of the divisors of $n$).
+::: {.proof}
+by part (a) with $a_m = 1$ and $b_k = k^a$, we get $c_n = \sum_{mk = n} k^a = \sigma_a(n)$ (the sum of the $a$-th powers of the divisors of $n$).
+:::
 
 <1>3. Q.E.D.
-Proof: <1>2 (a) and <1>1–<1>2 (b).
+::: {.proof}
+<1>2 (a) and <1>1–<1>2 (b).
+:::
 :::

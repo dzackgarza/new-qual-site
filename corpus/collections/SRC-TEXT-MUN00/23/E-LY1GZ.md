@@ -25,26 +25,42 @@ Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X 
 
 ::: {.solution}
 <1>1. Suppose for contradiction that $C \cap \operatorname{Bd} A = \varnothing$.
-Proof: assume the conclusion fails.
+::: {.proof}
+assume the conclusion fails.
+:::
 
 <1>2. Then $C \subseteq X - \operatorname{Bd} A = \operatorname{Int} A \cup \operatorname{Int}(X - A)$.
-Proof: $X$ is the disjoint union $\operatorname{Int} A \sqcup \operatorname{Bd} A \sqcup \operatorname{Int}(X - A)$.
+::: {.proof}
+$X$ is the disjoint union $\operatorname{Int} A \sqcup \operatorname{Bd} A \sqcup \operatorname{Int}(X - A)$.
+:::
 
 <1>3. Hence $C = (C \cap \operatorname{Int} A) \cup (C \cap \operatorname{Int}(X - A))$, a union of two disjoint sets open in $C$.
-Proof: <1>2, and $\operatorname{Int} A \cap \operatorname{Int}(X - A) = \varnothing$.
+::: {.proof}
+<1>2, and $\operatorname{Int} A \cap \operatorname{Int}(X - A) = \varnothing$.
+:::
 
 <1>4. Since $C$ is connected, one of these two sets is empty.
-Proof: <1>3 and the definition of connectedness (no separation by disjoint nonempty open sets).
+::: {.proof}
+<1>3 and the definition of connectedness (no separation by disjoint nonempty open sets).
+:::
 
 <1>5. If $C \cap \operatorname{Int} A = \varnothing$, then $C \subseteq \operatorname{Int}(X - A) \subseteq X - A$, contradicting $C \cap A \neq \varnothing$.
-Proof: <1>4, first case.
+::: {.proof}
+<1>4, first case.
+:::
 
 <1>6. If $C \cap \operatorname{Int}(X - A) = \varnothing$, then $C \subseteq \operatorname{Int} A \subseteq A$, contradicting $C \cap (X - A) \neq \varnothing$.
-Proof: <1>4, second case.
+::: {.proof}
+<1>4, second case.
+:::
 
 <1>7. Both cases contradict the hypotheses, so $C \cap \operatorname{Bd} A \neq \varnothing$.
-Proof: <1>5 and <1>6.
+::: {.proof}
+<1>5 and <1>6.
+:::
 
 <1>8. Q.E.D.
-Proof: <1>7.
+::: {.proof}
+<1>7.
+:::
 :::

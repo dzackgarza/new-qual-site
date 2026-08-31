@@ -27,29 +27,47 @@ Show that $X$ is homotopy equivalent to $S^4$.
 
 ::: {.solution}
 <1>1. $\pi_1(X) = 1$.
-Proof: the suspension of a path-connected space is simply connected (the two cones are contractible and their intersection is $M$, which is path-connected, so van Kampen gives the trivial group).
+::: {.proof}
+the suspension of a path-connected space is simply connected (the two cones are contractible and their intersection is $M$, which is path-connected, so van Kampen gives the trivial group).
+:::
 
 <1>2. $H_0(X) = \ZZ$.
-Proof: $X$ is path-connected.
+::: {.proof}
+$X$ is path-connected.
+:::
 
 <1>3. $H_1(X) = 0$.
-Proof: $H_1(X) \cong H_0(M)$ by the suspension isomorphism, and $H_0(M) = \ZZ$; more precisely $\widetilde H_{n+1}(\Sigma M) \cong \widetilde H_n(M)$, so $H_1(X) \cong \widetilde H_0(M) = 0$.
+::: {.proof}
+$H_1(X) \cong H_0(M)$ by the suspension isomorphism, and $H_0(M) = \ZZ$; more precisely $\widetilde H_{n+1}(\Sigma M) \cong \widetilde H_n(M)$, so $H_1(X) \cong \widetilde H_0(M) = 0$.
+:::
 
 <1>4. $H_2(X) = 0$.
-Proof: $H_2(X) \cong \widetilde H_1(M) = 0$ (since $M$ is a homology sphere, $\widetilde H_1(M) = 0$).
+::: {.proof}
+$H_2(X) \cong \widetilde H_1(M) = 0$ (since $M$ is a homology sphere, $\widetilde H_1(M) = 0$).
+:::
 
 <1>5. $H_3(X) = 0$.
-Proof: $H_3(X) \cong \widetilde H_2(M) = 0$ (homology sphere).
+::: {.proof}
+$H_3(X) \cong \widetilde H_2(M) = 0$ (homology sphere).
+:::
 
 <1>6. $H_4(X) = \ZZ$.
-Proof: $H_4(X) \cong \widetilde H_3(M) = \ZZ$ (homology sphere).
+::: {.proof}
+$H_4(X) \cong \widetilde H_3(M) = \ZZ$ (homology sphere).
+:::
 
 <1>7. Hence $X$ has the homology of $S^4$ and trivial fundamental group.
-Proof: <1>1–<1>6.
+::: {.proof}
+<1>1–<1>6.
+:::
 
 <1>8. $X$ is a simply connected CW complex, so it is homotopy equivalent to $S^4$.
-Proof: by the Hurewicz theorem, $\pi_4(X) \cong H_4(X) = \ZZ$; a generator $S^4 \to X$ induces an isomorphism on all homology groups, hence (Whitehead's theorem) is a homotopy equivalence.
+::: {.proof}
+by the Hurewicz theorem, $\pi_4(X) \cong H_4(X) = \ZZ$; a generator $S^4 \to X$ induces an isomorphism on all homology groups, hence (Whitehead's theorem) is a homotopy equivalence.
+:::
 
 <1>9. Q.E.D.
-Proof: <1>7 and <1>8.
+::: {.proof}
+<1>7 and <1>8.
+:::
 :::

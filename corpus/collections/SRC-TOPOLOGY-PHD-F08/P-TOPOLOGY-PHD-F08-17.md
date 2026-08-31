@@ -32,47 +32,75 @@ You do not need to give detailed proofs.
 **Part (i).**
 
 <1>1. The symbol has $10$ sides, and each of the five letters $x, y, z, w, \nu$ appears once with a positive and once with a negative exponent.
-Proof: read off the symbol.
+::: {.proof}
+read off the symbol.
+:::
 
 <1>2. Hence the surface is orientable.
-Proof: a surface is orientable iff each edge appears once with each orientation.
+::: {.proof}
+a surface is orientable iff each edge appears once with each orientation.
+:::
 
 <1>3. The number of edges after identification is $E = 5$ and the number of faces is $F = 1$.
-Proof: five pairs of identified edges, one polygon.
+::: {.proof}
+five pairs of identified edges, one polygon.
+:::
 
 <1>4. The number of vertices after identification is $V = 2$.
 <2>1. Label the vertices $v_0, \ldots, v_9$ in order around the polygon.
-Proof: setup.
+::: {.proof}
+setup.
+:::
 <2>2. The edge identifications give $v_0 \sim v_3 \sim v_6$ and $v_1 \sim v_2 \sim v_4 \sim v_5 \sim v_7 \sim v_8 \sim v_9$.
-Proof: tracing the identifications: $x$ gives $v_0 \sim v_3$ and $v_1 \sim v_2$; $y$ gives $v_7 \sim v_2$ and $v_8 \sim v_1$; $z$ gives $v_3 \sim v_6$ and $v_4 \sim v_5$; $w$ gives $v_4 \sim v_9$ and $v_5 \sim v_8$; $\nu$ gives $v_6 \sim v_0$ and $v_7 \sim v_9$. Chaining these yields exactly two equivalence classes.
+::: {.proof}
+tracing the identifications: $x$ gives $v_0 \sim v_3$ and $v_1 \sim v_2$; $y$ gives $v_7 \sim v_2$ and $v_8 \sim v_1$; $z$ gives $v_3 \sim v_6$ and $v_4 \sim v_5$; $w$ gives $v_4 \sim v_9$ and $v_5 \sim v_8$; $\nu$ gives $v_6 \sim v_0$ and $v_7 \sim v_9$. Chaining these yields exactly two equivalence classes.
+:::
 <2>3. Hence $V = 2$.
-Proof: <2>2.
+::: {.proof}
+<2>2.
+:::
 
 <1>5. The Euler characteristic is $\chi = V - E + F = 2 - 5 + 1 = -2$.
-Proof: <1>3 and <1>4.
+::: {.proof}
+<1>3 and <1>4.
+:::
 
 <1>6. For an orientable surface of genus $g$, $\chi = 2 - 2g$, so $-2 = 2 - 2g$ gives $g = 2$.
-Proof: solve for $g$.
+::: {.proof}
+solve for $g$.
+:::
 
 <1>7. Hence the surface is the orientable surface of genus $2$ (the connected sum of two tori), with Euler characteristic $-2$.
-Proof: <1>5 and <1>6.
+::: {.proof}
+<1>5 and <1>6.
+:::
 
 **Part (ii).**
 
 <1>1. Every closed (boundaryless) surface can be represented by a polygon with an even number of sides, whose sides are identified in pairs.
-Proof: a surface is obtained from a $2n$-gon by identifying its $2n$ sides in $n$ pairs.
+::: {.proof}
+a surface is obtained from a $2n$-gon by identifying its $2n$ sides in $n$ pairs.
+:::
 
 <1>2. The classification is obtained by reducing the polygonal symbol to a normal form using elementary operations (cutting and pasting).
-Proof: the standard operations (cutting along a diagonal and regluing) transform any symbol into a canonical form.
+::: {.proof}
+the standard operations (cutting along a diagonal and regluing) transform any symbol into a canonical form.
+:::
 
 <1>3. The normal forms are:
 - orientable: $a_1 b_1 a_1^{-1} b_1^{-1} \cdots a_g b_g a_g^{-1} b_g^{-1}$ (genus $g$);
 - nonorientable: $a_1 a_1 a_2 a_2 \cdots a_g a_g$ (genus $g$).
-Proof: the classification theorem for surfaces.
+::: {.proof}
+the classification theorem for surfaces.
+:::
 
 <1>4. The genus (and orientability) is read off from the normal form, and the Euler characteristic is $\chi = 2 - 2g$ (orientable) or $\chi = 2 - g$ (nonorientable).
-Proof: standard formulas.
+::: {.proof}
+standard formulas.
+:::
 
 <1>5. Q.E.D.
-Proof: <1>7 (i) and <1>3–<1>4 (ii).
+::: {.proof}
+<1>7 (i) and <1>3–<1>4 (ii).
+:::
 :::

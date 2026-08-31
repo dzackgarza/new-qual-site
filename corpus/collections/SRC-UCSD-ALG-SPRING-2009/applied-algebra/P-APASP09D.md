@@ -28,14 +28,22 @@ Calculate the coefficient of $s_{[6,3,1]}$.
 
 ::: {.solution}
 <1>1. $\mathcal P_N$ projects onto $S_N$-invariants, $\mathcal T_N$ symmetrizes.
-Proof: definition.
+::: {.proof}
+definition.
+:::
 
 <1>2. $\operatorname{Tr}((\mathcal P_N\otimes\mathcal P_N\cdot\mathcal T_N)d)= \sum_{\lambda} c_\lambda s_\lambda(x)$ with $c_\lambda$ given by inner product of characters.
-Proof: trace.
+::: {.proof}
+trace.
+:::
 
 <1>3. For $\lambda=[6,3,1]$, $c_\lambda=1$ (dominant term).
-Proof: Littlewood-Richardson.
+::: {.proof}
+Littlewood-Richardson.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>3.
+::: {.proof}
+<1>3.
+:::
 :::

@@ -50,37 +50,57 @@ $$
 **Part (a).**
 
 <1>1. Define $g(z) = 2\frac{\partial u}{\partial z} = u_x - i u_y$.
-Proof: $\frac{\partial u}{\partial z} = \frac{1}{2}(u_x - i u_y)$.
+::: {.proof}
+$\frac{\partial u}{\partial z} = \frac{1}{2}(u_x - i u_y)$.
+:::
 
 <1>2. $g$ is holomorphic.
-Proof: $\frac{\partial g}{\partial \bar z} = 2\frac{\partial^2 u}{\partial \bar z \partial z} = \frac{1}{2}\Delta u = 0$ (since $u$ is harmonic), so $g$ satisfies the Cauchy–Riemann equations.
+::: {.proof}
+$\frac{\partial g}{\partial \bar z} = 2\frac{\partial^2 u}{\partial \bar z \partial z} = \frac{1}{2}\Delta u = 0$ (since $u$ is harmonic), so $g$ satisfies the Cauchy–Riemann equations.
+:::
 
 <1>3. Since $\DD$ is simply connected, $g$ has a primitive $F$ with $F' = g$.
-Proof: a holomorphic function on a simply connected domain has a primitive.
+::: {.proof}
+a holomorphic function on a simply connected domain has a primitive.
+:::
 
 <1>4. $\operatorname{Re} F$ differs from $u$ by a real constant.
-Proof: $\frac{\partial}{\partial x}\operatorname{Re} F = \operatorname{Re} F' = \operatorname{Re} g = u_x$, and $\frac{\partial}{\partial y}\operatorname{Re} F = \operatorname{Re}(iF') = \operatorname{Re}(ig) = u_y$; hence $\operatorname{Re} F$ and $u$ have the same gradient, so they differ by a constant.
+::: {.proof}
+$\frac{\partial}{\partial x}\operatorname{Re} F = \operatorname{Re} F' = \operatorname{Re} g = u_x$, and $\frac{\partial}{\partial y}\operatorname{Re} F = \operatorname{Re}(iF') = \operatorname{Re}(ig) = u_y$; hence $\operatorname{Re} F$ and $u$ have the same gradient, so they differ by a constant.
+:::
 
 <1>5. Hence $f = F - c$ (for a suitable real constant $c$) is holomorphic with $\operatorname{Re} f = u$.
-Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
 
 <1>6. The imaginary part is unique up to an additive real constant.
-Proof: if $\operatorname{Re} f_1 = \operatorname{Re} f_2 = u$, then $f_1 - f_2$ is holomorphic with zero real part, hence constant (purely imaginary), so $f_1 - f_2 = ic$ for a real constant $c$.
+::: {.proof}
+if $\operatorname{Re} f_1 = \operatorname{Re} f_2 = u$, then $f_1 - f_2$ is holomorphic with zero real part, hence constant (purely imaginary), so $f_1 - f_2 = ic$ for a real constant $c$.
+:::
 
 **Part (b).**
 
 <1>1. By part (a), $u = \operatorname{Re} f$ for a holomorphic $f$ on $\DD$, continuous on $\overline{\DD}$.
-Proof: part (a) and the hypothesis that $u$ is continuous on the closure.
+::: {.proof}
+part (a) and the hypothesis that $u$ is continuous on the closure.
+:::
 
 <1>2. By the Cauchy integral formula (Exercise 11), for $z = re^{i\theta}$,
 $$f(z) = \frac{1}{2\pi}\int_0^{2\pi} \frac{e^{i\varphi} + z}{e^{i\varphi} - z} u(\varphi)\, d\varphi.$$
-Proof: the Cauchy integral formula for the disk, applied to $f$ and taking real parts.
+::: {.proof}
+the Cauchy integral formula for the disk, applied to $f$ and taking real parts.
+:::
 
 <1>3. Taking real parts gives the Poisson integral formula
 $$u(z) = \frac{1}{2\pi}\int_0^{2\pi} P_r(\theta - \varphi) u(\varphi)\, d\varphi,$$
 where $P_r(\gamma) = \frac{1 - r^2}{1 - 2r\cos\gamma + r^2}$.
-Proof: $\operatorname{Re}\frac{e^{i\varphi} + re^{i\theta}}{e^{i\varphi} - re^{i\theta}} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
+::: {.proof}
+$\operatorname{Re}\frac{e^{i\varphi} + re^{i\theta}}{e^{i\varphi} - re^{i\theta}} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>6 (a) and <1>3 (b).
+::: {.proof}
+<1>6 (a) and <1>3 (b).
+:::
 :::

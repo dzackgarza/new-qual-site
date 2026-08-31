@@ -26,20 +26,32 @@ Prove that there exists a sequence of rational functions $R_n$ analytic in $\mat
 
 ::: {.solution}
 <1>1. The two compact sets $\overline{\DD}$ and $A = \{2 \le |z| \le 3\}$ are disjoint, and $\mathbb C \setminus \{3/2\}$ is connected.
-Proof: $\overline{\DD} \cap A = \varnothing$, and $\mathbb C \setminus \{3/2\}$ is connected (a punctured plane).
+::: {.proof}
+$\overline{\DD} \cap A = \varnothing$, and $\mathbb C \setminus \{3/2\}$ is connected (a punctured plane).
+:::
 
 <1>2. Define a function $h$ on a neighborhood of $\overline{\DD} \cup A$ by $h = 1$ on a neighborhood of $\overline{\DD}$ and $h = 2$ on a neighborhood of $A$.
-Proof: since $\overline{\DD}$ and $A$ are disjoint compact sets, they have disjoint neighborhoods, so $h$ is well-defined and holomorphic (locally constant).
+::: {.proof}
+since $\overline{\DD}$ and $A$ are disjoint compact sets, they have disjoint neighborhoods, so $h$ is well-defined and holomorphic (locally constant).
+:::
 
 <1>3. By Runge's theorem, for each $n$ there is a rational function $R_n$ with poles only at $3/2$ such that $|R_n(z) - h(z)| < 1/n$ for all $z \in \overline{\DD} \cup A$.
-Proof: Runge's theorem (rational approximation with prescribed poles at $3/2$ on the connected set $\mathbb C \setminus \{3/2\}$).
+::: {.proof}
+Runge's theorem (rational approximation with prescribed poles at $3/2$ on the connected set $\mathbb C \setminus \{3/2\}$).
+:::
 
 <1>4. Hence $R_n(z) \to 1$ uniformly on $\overline{\DD}$ and $R_n(z) \to 2$ uniformly on $A$.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. In particular, $R_n(z) \to 1$ for all $z \in \DD$ and $R_n(z) \to 2$ for all $2 \le |z| \le 3$.
-Proof: <1>4.
+::: {.proof}
+<1>4.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

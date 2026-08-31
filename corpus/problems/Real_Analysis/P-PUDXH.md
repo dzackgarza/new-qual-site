@@ -44,17 +44,23 @@ one has
 We prove this corrected form.
 
 <1>1. Write $F(x) \da \int_0^x f(y)\,dy$ and expand the double integral by Tonelli.
-    Proof: all integrands are non-negative, so Tonelli applies:
+    ::: {.proof}
+    all integrands are non-negative, so Tonelli applies:
+    :::
     \[
     \int_0^\infty \frac{g(x)}{x} F(x)\, dx = \int_0^\infty \frac{g(x)}{x} \int_0^x f(y)\,dy\,dx = \int_0^\infty f(y) \int_y^\infty \frac{g(x)}{x}\, dx\, dy .
     \]
 <1>2. Bound the inner integral for each fixed $y > 0$.
-    Proof: by Cauchy--Schwarz,
+    ::: {.proof}
+    by Cauchy--Schwarz,
+    :::
     \[
     \int_y^\infty \frac{g(x)}{x}\, dx \le \qty{\int_y^\infty g(x)^2\,dx}^{1/2} \qty{\int_y^\infty x^{-2}\,dx}^{1/2} \le B \cdot y^{-1/2}.
     \]
 <1>3. Conclude.
-    Proof: substituting <1>2 into <1>1,
+    ::: {.proof}
+    substituting <1>2 into <1>1,
+    :::
     \[
     \int_0^\infty \frac{g(x)}{x} F(x)\,dx \le \int_0^\infty f(y)\, B y^{-1/2}\, dy = BA.
     \]

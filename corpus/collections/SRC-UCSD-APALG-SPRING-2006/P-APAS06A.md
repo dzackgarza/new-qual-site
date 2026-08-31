@@ -30,24 +30,42 @@ Prove that if $\lambda$ has a left-eigenvector $y$ such that $y^*x=0$, then $\op
 
 <1>1. (a) $y_i^* x_j = 0$ for $\lambda_i \neq \lambda_j$.
 <2>1. $y_i^* A = \lambda_i y_i^*$ and $A x_j = \lambda_j x_j$.
-Proof: $y_i$ is a left eigenvector and $x_j$ a right eigenvector.
+::: {.proof}
+$y_i$ is a left eigenvector and $x_j$ a right eigenvector.
+:::
 <2>2. $\lambda_i y_i^* x_j = y_i^* A x_j = \lambda_j y_i^* x_j$.
-Proof: $y_i^* A x_j = (y_i^* A) x_j = \lambda_i y_i^* x_j$, and also $y_i^* A x_j = y_i^* (A x_j) = \lambda_j y_i^* x_j$.
+::: {.proof}
+$y_i^* A x_j = (y_i^* A) x_j = \lambda_i y_i^* x_j$, and also $y_i^* A x_j = y_i^* (A x_j) = \lambda_j y_i^* x_j$.
+:::
 <2>3. Hence $(\lambda_i - \lambda_j) y_i^* x_j = 0$, so $y_i^* x_j = 0$.
-Proof: $\lambda_i \neq \lambda_j$.
+::: {.proof}
+$\lambda_i \neq \lambda_j$.
+:::
 
 <1>2. (b) If $y^* x = 0$ for a left eigenvector $y$ of $\lambda$, then $\operatorname{am}(\lambda) > 1$.
 <2>1. Suppose $\operatorname{am}(\lambda) = 1$.
-Proof: assume for contradiction.
+::: {.proof}
+assume for contradiction.
+:::
 <2>2. Then the generalized eigenspace for $\lambda$ is one-dimensional, spanned by $x$.
-Proof: algebraic multiplicity $1$ means the generalized eigenspace has dimension $1$.
+::: {.proof}
+algebraic multiplicity $1$ means the generalized eigenspace has dimension $1$.
+:::
 <2>3. The left generalized eigenspace for $\lambda$ is also one-dimensional, spanned by $y$.
-Proof: the left and right generalized eigenspaces for the same eigenvalue have the same dimension.
+::: {.proof}
+the left and right generalized eigenspaces for the same eigenvalue have the same dimension.
+:::
 <2>4. The pairing between the left and right generalized eigenspaces for $\lambda$ is nondegenerate.
-Proof: the left and right generalized eigenspaces for $\lambda$ are dual to each other under the pairing $(y, x) \mapsto y^* x$, and this pairing is nondegenerate.
+::: {.proof}
+the left and right generalized eigenspaces for $\lambda$ are dual to each other under the pairing $(y, x) \mapsto y^* x$, and this pairing is nondegenerate.
+:::
 <2>5. Hence $y^* x \neq 0$, contradicting $y^* x = 0$.
-Proof: a nondegenerate pairing on a one-dimensional space cannot vanish on the nonzero pair $(y, x)$.
+::: {.proof}
+a nondegenerate pairing on a one-dimensional space cannot vanish on the nonzero pair $(y, x)$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 proves (a); <1>2 proves (b).
+::: {.proof}
+<1>1 proves (a); <1>2 proves (b).
+:::
 :::

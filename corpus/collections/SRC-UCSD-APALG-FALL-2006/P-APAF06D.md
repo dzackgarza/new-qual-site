@@ -65,7 +65,11 @@ G_n = \langle x, y \mid x^3 = 1,\ xyx^{-1} = y^n \rangle.
         $$\phi(x)(i,k)=(i+1,\, nk),\qquad \phi(y)(i,k)=(i,\,k+1),$$
         where indices are mod $3$ and mod $m$.
     <2>2. Since $\gcd(n,m)=1$, $n$ is invertible mod $m$.
-    <2>3. One checks directly that $\phi(x)^3=\mathrm{id}$ and $\phi(x)\phi(y)\phi(x)^{-1}=\phi(y)^n$, so $\phi$ is a homomorphism.
+    <2>3. We verify that $\phi$ respects the two relations, so it is a homomorphism.
+    First, $\phi(x)^3(i,k) = (i+3, n^3 k) = (i, n^3 k)$, and since $m = |n^3 - 1|$ we have $n^3 \equiv 1 \pmod m$, so $n^3 k \equiv k \pmod m$; hence $\phi(x)^3 = \mathrm{id}$.
+    Second, compute $\phi(x)\phi(y)\phi(x)^{-1}$: applying $\phi(x)^{-1}$ gives $(i-1, n^{-1}k)$ (using that $n$ is invertible mod $m$ by <2>2), then $\phi(y)$ gives $(i-1, n^{-1}k + 1)$, then $\phi(x)$ gives $(i, n(n^{-1}k + 1)) = (i, k + n)$.
+    But $\phi(y)^n(i,k) = (i, k+n)$, so $\phi(x)\phi(y)\phi(x)^{-1} = \phi(y)^n$.
+    Thus $\phi$ is a homomorphism.
     *Hence:* $G_n$ is finite, because its image is finite.
 
 :::

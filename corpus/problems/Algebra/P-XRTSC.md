@@ -122,31 +122,53 @@ $\qed$
 
 <1>1. Every $D$-module is free, and rank-nullity holds.
 <2>1. A linear map $\phi: D^m \to D^n$ gives a short exact sequence $0 \to \ker\phi \to D^m \to \im\phi \to 0$.
-Proof: exactness at each term is the definition of kernel and image.
+::: {.proof}
+exactness at each term is the definition of kernel and image.
+:::
 <2>2. $\im\phi \leq D^n$ is a submodule of a free module over a division ring, hence free.
-Proof: every module over a division ring is free (a basis is a maximal linearly independent set).
+::: {.proof}
+every module over a division ring is free (a basis is a maximal linearly independent set).
+:::
 <2>3. The sequence splits, so $D^m \cong \ker\phi \oplus \im\phi$.
-Proof: the rightmost term $\im\phi$ is free, hence projective, so the surjection $D^m \surjects \im\phi$ admits a section.
+::: {.proof}
+the rightmost term $\im\phi$ is free, hence projective, so the surjection $D^m \surjects \im\phi$ admits a section.
+:::
 <2>4. $m = \dim\ker\phi + \rank\phi$.
-Proof: dimension is additive over direct sums, and $\rank\phi \definedas \dim\im\phi$.
+::: {.proof}
+dimension is additive over direct sums, and $\rank\phi \definedas \dim\im\phi$.
+:::
 
 <1>2. $A$ has a left inverse $B$ (i.e. $BA = I_m$) iff $\rank A = m$.
 <2>1. ($\Rightarrow$) If $\rank A < m$, some two columns of $A$ are linearly dependent.
-Proof: $m$ columns spanning a space of dimension $< m$ are dependent.
+::: {.proof}
+$m$ columns spanning a space of dimension $< m$ are dependent.
+:::
 <2>2. Linear dependence of columns $\vector a_1, \vector a_2$ contradicts $BA = I_m$.
-Proof: if $d_1\vector a_1 + d_2\vector a_2 = 0$ with $d_1, d_2 \neq 0$, then applying the first row $\vector b_1$ of $B$ gives $d_1 \inner{\vector b_1}{\vector a_1} + d_2 \inner{\vector b_1}{\vector a_2} = 0$; but $BA = I_m$ forces $\inner{\vector b_1}{\vector a_1} = 1$ and $\inner{\vector b_1}{\vector a_2} = 0$, so $d_1 = 0$, a contradiction.
+::: {.proof}
+if $d_1\vector a_1 + d_2\vector a_2 = 0$ with $d_1, d_2 \neq 0$, then applying the first row $\vector b_1$ of $B$ gives $d_1 \inner{\vector b_1}{\vector a_1} + d_2 \inner{\vector b_1}{\vector a_2} = 0$; but $BA = I_m$ forces $\inner{\vector b_1}{\vector a_1} = 1$ and $\inner{\vector b_1}{\vector a_2} = 0$, so $d_1 = 0$, a contradiction.
+:::
 <2>3. ($\Leftarrow$) If $\rank A = m$, then $A$ is injective.
-Proof: by <1>4, $m = \dim\ker\phi + m$, so $\ker\phi = 0$.
+::: {.proof}
+by <1>4, $m = \dim\ker\phi + m$, so $\ker\phi = 0$.
+:::
 <2>4. An injective map has a left inverse, giving $B$ with $BA = I_m$.
-Proof: any injective set map $f: S_1 \to S_2$ admits $g: S_2 \to S_1$ with $g\circ f = \id_{S_1}$; the matrix of $g$ is $B$.
+::: {.proof}
+any injective set map $f: S_1 \to S_2$ admits $g: S_2 \to S_1$ with $g\circ f = \id_{S_1}$; the matrix of $g$ is $B$.
+:::
 
 <1>3. $A$ has a right inverse $B$ (i.e. $AB = I_n$) iff $\rank A = n$.
 <2>1. ($\Rightarrow$) If $\rank A < n$, two rows of $A$ are linearly dependent, contradicting $AB = I_n$ by the row-analogue of <1>2.2.
 <2>2. ($\Leftarrow$) If $\rank A = n$, then $A$ is surjective.
-Proof: $\rank A = \dim\im A = n$ means $\im A = D^n$.
+::: {.proof}
+$\rank A = \dim\im A = n$ means $\im A = D^n$.
+:::
 <2>3. A surjective map has a right inverse, giving $B$ with $AB = I_n$.
-Proof: any surjective set map $f: S_1 \to S_2$ admits $g: S_2 \to S_1$ with $f\circ g = \id_{S_2}$.
+::: {.proof}
+any surjective set map $f: S_1 \to S_2$ admits $g: S_2 \to S_1$ with $f\circ g = \id_{S_2}$.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>2 and <1>3 are the two claimed equivalences.
+::: {.proof}
+<1>2 and <1>3 are the two claimed equivalences.
+:::
 :::

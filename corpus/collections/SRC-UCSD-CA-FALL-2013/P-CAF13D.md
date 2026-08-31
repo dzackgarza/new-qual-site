@@ -25,10 +25,16 @@ Find a holomorphic function that maps the upper half-plane $\mathbb{C}_+$ onto t
 
 <1>1. The exponential maps a horizontal strip onto the punctured disk.
 <2>1. $z \mapsto e^{iz}$ maps the strip $\theset{z : 0 < \Im z < \infty}$ onto $\DD \sm \theset{0}$.
-Proof: for $z = x + iy$ with $y > 0$, $e^{iz} = e^{-y} e^{ix}$ has modulus $e^{-y} \in (0, 1)$ and arbitrary argument, so the image is $\theset{w : 0 < \abs w < 1} = \DD \sm \theset{0}$.
+::: {.proof}
+for $z = x + iy$ with $y > 0$, $e^{iz} = e^{-y} e^{ix}$ has modulus $e^{-y} \in (0, 1)$ and arbitrary argument, so the image is $\theset{w : 0 < \abs w < 1} = \DD \sm \theset{0}$.
+:::
 <2>2. The map is holomorphic and surjective onto $\DD \sm \theset{0}$.
-Proof: $e^{iz}$ is entire; by <1>2.1 its restriction to the upper half-plane has image exactly the punctured disk.
+::: {.proof}
+$e^{iz}$ is entire; by <1>2.1 its restriction to the upper half-plane has image exactly the punctured disk.
+:::
 
 <1>3. Q.E.D.
-Proof: $f(z) = e^{iz}$ is the required map.
+::: {.proof}
+$f(z) = e^{iz}$ is the required map.
+:::
 :::

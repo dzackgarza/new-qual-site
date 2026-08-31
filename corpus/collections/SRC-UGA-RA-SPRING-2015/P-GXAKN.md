@@ -46,7 +46,7 @@ where
 
 - Both terms converge by the $p\dash$tests.
 
-The use of iterated integration is justified by Tonelli's theorem on $\abs{f} = f$, since $f$ is non-negative and clearly measurable on $\RR^2$, and if any iterated integral is finite then it is equal to $\int \abs{f}$.
+The use of iterated integration is justified by Tonelli's theorem on $\abs{f} = f$, since $f$ is non-negative and measurable on $\RR^2$ (a non-negative function is measurable if its sublevel sets are measurable, which holds here by the explicit description of $f$), and if any iterated integral is finite then it is equal to $\int \abs{f}$.
 
 :::
 

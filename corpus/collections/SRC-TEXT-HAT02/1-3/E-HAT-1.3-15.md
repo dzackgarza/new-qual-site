@@ -21,19 +21,31 @@ Show that $p: \tilde{A} \to A$ is the covering space corresponding to the kernel
 
 ::: {.solution}
 <1>1. $p: \tilde A \to A$ is a covering space.
-Proof: the restriction of a covering map to a path-component of the preimage of a subspace is a covering map.
+::: {.proof}
+the restriction of a covering map to a path-component of the preimage of a subspace is a covering map.
+:::
 
 <1>2. The covering $p: \tilde A \to A$ corresponds to the subgroup $p_*(\pi_1(\tilde A)) \le \pi_1(A)$.
-Proof: the fundamental theorem of covering spaces: a covering corresponds to the image of the fundamental group of the total space.
+::: {.proof}
+the fundamental theorem of covering spaces: a covering corresponds to the image of the fundamental group of the total space.
+:::
 
 <1>3. $p_*(\pi_1(\tilde A)) = \ker(\pi_1(A) \to \pi_1(X))$.
 <2>1. $p_*(\pi_1(\tilde A)) \subseteq \ker(\pi_1(A) \to \pi_1(X))$.
-Proof: the composition $\pi_1(\tilde A) \xrightarrow{p_*} \pi_1(A) \to \pi_1(X)$ factors through $\pi_1(\tilde X) = 0$ (since $\tilde A \subseteq \tilde X$ and $\tilde X$ is simply connected), so its image is trivial.
+::: {.proof}
+the composition $\pi_1(\tilde A) \xrightarrow{p_*} \pi_1(A) \to \pi_1(X)$ factors through $\pi_1(\tilde X) = 0$ (since $\tilde A \subseteq \tilde X$ and $\tilde X$ is simply connected), so its image is trivial.
+:::
 <2>2. $\ker(\pi_1(A) \to \pi_1(X)) \subseteq p_*(\pi_1(\tilde A))$.
-Proof: a loop $\gamma$ in $A$ whose image in $\pi_1(X)$ is trivial lifts to a loop in $\tilde X$; since $\gamma$ is based in $A$ and its lift starts in $\tilde A$, the lift lies entirely in $\tilde A$ (a path-component of $p^{-1}(A)$), so $\gamma$ is the image of a loop in $\tilde A$, i.e. $\gamma \in p_*(\pi_1(\tilde A))$.
+::: {.proof}
+a loop $\gamma$ in $A$ whose image in $\pi_1(X)$ is trivial lifts to a loop in $\tilde X$; since $\gamma$ is based in $A$ and its lift starts in $\tilde A$, the lift lies entirely in $\tilde A$ (a path-component of $p^{-1}(A)$), so $\gamma$ is the image of a loop in $\tilde A$, i.e. $\gamma \in p_*(\pi_1(\tilde A))$.
+:::
 <2>3. Hence equality holds.
-Proof: <2>1 and <2>2.
+::: {.proof}
+<2>1 and <2>2.
+:::
 
 <1>4. Q.E.D.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 :::

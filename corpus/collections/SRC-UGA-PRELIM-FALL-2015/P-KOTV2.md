@@ -47,7 +47,9 @@ from which we find that $\vector v_1 = \thevector{1,0,-2,-3}$ and $\vector v_2 =
 
 <1>1. Let $v_1 = (1,1,1,1)$, $v_2 = (3,4,6,7)$, and $v_3 = (5,6,8,9)$. The subspace $W$ equals the row space $\operatorname{Row}(A)$ of the matrix:
     $$A = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 3 & 4 & 6 & 7 \\ 5 & 6 & 8 & 9 \end{pmatrix}.$$
-    Proof: By definition of the row space of a matrix.
+    ::: {.proof}
+    By definition of the row space of a matrix.
+    :::
 
 <1>2. The reduced row echelon form (RREF) of $A$ is:
     $$R = \begin{pmatrix} 1 & 0 & -2 & -3 \\ 0 & 1 & 3 & 4 \\ 0 & 0 & 0 & 0 \end{pmatrix}.$$
@@ -59,7 +61,9 @@ from which we find that $\vector v_1 = \thevector{1,0,-2,-3}$ and $\vector v_2 =
     This matrix is in RREF.
 
 <1>3. Elementary row operations preserve the row space, so $\operatorname{Row}(A) = \operatorname{Row}(R)$.
-    Proof: Standard linear algebra theorem: each elementary row operation is invertible and preserves linear combinations of the rows.
+    ::: {.proof}
+    Standard linear algebra theorem: each elementary row operation is invertible and preserves linear combinations of the rows.
+    :::
 
 <1>4. The nonzero rows of $R$, namely $w_1 = (1, 0, -2, -3)$ and $w_2 = (0, 1, 3, 4)$, form a basis for $W$.
     Proof:

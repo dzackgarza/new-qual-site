@@ -33,29 +33,47 @@ In particular, this exercise shows that when applicable, the ratio test can be u
 
 ::: {.solution}
 <1>1. Let $\varepsilon > 0$.
-Proof: fix an arbitrary tolerance.
+::: {.proof}
+fix an arbitrary tolerance.
+:::
 
 <1>2. There exists $N$ such that for all $n \ge N$, $L - \varepsilon < \frac{|a_{n+1}|}{|a_n|} < L + \varepsilon$.
-Proof: the hypothesis $\lim \frac{|a_{n+1}|}{|a_n|} = L$.
+::: {.proof}
+the hypothesis $\lim \frac{|a_{n+1}|}{|a_n|} = L$.
+:::
 
 <1>3. For $n > N$, $|a_n| = |a_N| \prod_{k=N}^{n-1} \frac{|a_{k+1}|}{|a_k|}$.
-Proof: telescoping product.
+::: {.proof}
+telescoping product.
+:::
 
 <1>4. Hence $|a_N| (L - \varepsilon)^{n-N} < |a_n| < |a_N| (L + \varepsilon)^{n-N}$.
-Proof: <1>2 and <1>3.
+::: {.proof}
+<1>2 and <1>3.
+:::
 
 <1>5. Taking $n$-th roots: $|a_N|^{1/n} (L - \varepsilon)^{(n-N)/n} < |a_n|^{1/n} < |a_N|^{1/n} (L + \varepsilon)^{(n-N)/n}$.
-Proof: <1>4, and $n$-th roots preserve order for positive quantities.
+::: {.proof}
+<1>4, and $n$-th roots preserve order for positive quantities.
+:::
 
 <1>6. As $n \to \infty$, $|a_N|^{1/n} \to 1$ and $(n-N)/n \to 1$.
-Proof: $|a_N|$ is a fixed positive constant.
+::: {.proof}
+$|a_N|$ is a fixed positive constant.
+:::
 
 <1>7. Hence $L - \varepsilon \le \liminf |a_n|^{1/n} \le \limsup |a_n|^{1/n} \le L + \varepsilon$.
-Proof: <1>5 and <1>6.
+::: {.proof}
+<1>5 and <1>6.
+:::
 
 <1>8. Since $\varepsilon > 0$ was arbitrary, $\lim |a_n|^{1/n} = L$.
-Proof: <1>7, letting $\varepsilon \to 0$.
+::: {.proof}
+<1>7, letting $\varepsilon \to 0$.
+:::
 
 <1>9. Q.E.D.
-Proof: <1>8.
+::: {.proof}
+<1>8.
+:::
 :::

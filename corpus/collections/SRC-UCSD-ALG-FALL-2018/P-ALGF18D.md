@@ -24,20 +24,32 @@ Prove that $P \otimes_A Q$ is a projective $A$-module.
 
 ::: {.solution}
 <1>1. $P$ is a direct summand of a free module: $P \oplus P' \cong A^{(I)}$ for some set $I$.
-Proof: a module is projective iff it is a direct summand of a free module.
+::: {.proof}
+a module is projective iff it is a direct summand of a free module.
+:::
 
 <1>2. $Q$ is a direct summand of a free module: $Q \oplus Q' \cong A^{(J)}$ for some set $J$.
-Proof: same characterization.
+::: {.proof}
+same characterization.
+:::
 
 <1>3. $(P \oplus P') \otimes_A (Q \oplus Q') \cong A^{(I)} \otimes_A A^{(J)} \cong A^{(I \times J)}$ is free.
-Proof: tensor product distributes over direct sums, and $A^{(I)} \otimes_A A^{(J)} \cong A^{(I \times J)}$.
+::: {.proof}
+tensor product distributes over direct sums, and $A^{(I)} \otimes_A A^{(J)} \cong A^{(I \times J)}$.
+:::
 
 <1>4. $P \otimes_A Q$ is a direct summand of $(P \oplus P') \otimes_A (Q \oplus Q')$.
-Proof: expanding the tensor product, $P \otimes Q$ appears as a direct summand (the tensor product distributes over direct sums, so $(P \oplus P') \otimes (Q \oplus Q') \cong (P \otimes Q) \oplus (P \otimes Q') \oplus (P' \otimes Q) \oplus (P' \otimes Q')$).
+::: {.proof}
+expanding the tensor product, $P \otimes Q$ appears as a direct summand (the tensor product distributes over direct sums, so $(P \oplus P') \otimes (Q \oplus Q') \cong (P \otimes Q) \oplus (P \otimes Q') \oplus (P' \otimes Q) \oplus (P' \otimes Q')$).
+:::
 
 <1>5. Hence $P \otimes_A Q$ is a direct summand of a free module, so it is projective.
-Proof: <1>3, <1>4, and the characterization in <1>1.
+::: {.proof}
+<1>3, <1>4, and the characterization in <1>1.
+:::
 
 <1>6. Q.E.D.
-Proof: <1>5.
+::: {.proof}
+<1>5.
+:::
 :::

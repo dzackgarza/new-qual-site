@@ -46,33 +46,53 @@ Then apply the mean value theorem to $u _ { 0 }$ , and make a change of variable
 
 ::: {.solution}
 <1>1. Let $T(z) = \frac{z_0 - z}{1 - \overline{z_0} z}$ and define $u_0(z) = u(T(z))$.
-Proof: the hint.
+::: {.proof}
+the hint.
+:::
 
 <1>2. $T$ is a holomorphic automorphism of the disk with $T(0) = z_0$ and $T(z_0) = 0$.
-Proof: $T$ is a Blaschke factor (an involution of $\mathbb{D}$).
+::: {.proof}
+$T$ is a Blaschke factor (an involution of $\mathbb{D}$).
+:::
 
 <1>3. $u_0$ is harmonic.
-Proof: $u_0 = u \circ T$ is the composition of a harmonic function with a holomorphic map, which is harmonic.
+::: {.proof}
+$u_0 = u \circ T$ is the composition of a harmonic function with a holomorphic map, which is harmonic.
+:::
 
 <1>4. By the mean value theorem (the special case $z_0 = 0$), $u_0(0) = \frac{1}{2\pi}\int_0^{2\pi} u_0(e^{i\theta})\,d\theta$.
-Proof: the mean value property of harmonic functions at the origin.
+::: {.proof}
+the mean value property of harmonic functions at the origin.
+:::
 
 <1>5. $u_0(0) = u(T(0)) = u(z_0)$.
-Proof: <1>2.
+::: {.proof}
+<1>2.
+:::
 
 <1>6. Hence $u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} u(T(e^{i\theta}))\,d\theta$.
-Proof: <1>4 and <1>5.
+::: {.proof}
+<1>4 and <1>5.
+:::
 
 <1>7. Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
-Proof: the derivative of $T$ on the unit circle has modulus $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}$.
+::: {.proof}
+the derivative of $T$ on the unit circle has modulus $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}$.
+:::
 
 <1>8. Hence
 $$u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} u(e^{i\theta})\,d\theta.$$
-Proof: <1>6 and <1>7.
+::: {.proof}
+<1>6 and <1>7.
+:::
 
 <1>9. For $z_0 = re^{i\varphi}$, $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
-Proof: $|e^{i\theta} - re^{i\varphi}|^2 = 1 - 2r\cos(\theta - \varphi) + r^2$.
+::: {.proof}
+$|e^{i\theta} - re^{i\varphi}|^2 = 1 - 2r\cos(\theta - \varphi) + r^2$.
+:::
 
 <1>10. Q.E.D.
-Proof: <1>8 and <1>9.
+::: {.proof}
+<1>8 and <1>9.
+:::
 :::

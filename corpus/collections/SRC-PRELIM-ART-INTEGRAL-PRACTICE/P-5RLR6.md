@@ -34,7 +34,9 @@ audit:
 **Goal:** Evaluate the indefinite integral $\int e^{\sin^2(x)} \sin(2x) \, dx$.
 
 <1>1. Make the substitution $u = \sin^2(x)$.
-Proof: By the chain rule, $\frac{du}{dx} = 2\sin(x)\cos(x)$.
+::: {.proof}
+By the chain rule, $\frac{du}{dx} = 2\sin(x)\cos(x)$.
+:::
 By the double-angle identity for sine, $2\sin(x)\cos(x) = \sin(2x)$.
 Thus $du = \sin(2x) \, dx$.
 

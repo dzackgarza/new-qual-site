@@ -46,10 +46,14 @@ Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formu
 **Goal:** Find a closed formula for the $n$-th derivative $f^{(n)}(x)$ of $f(x) = x e^{2x}$ for all integers $n \ge 0$, and prove it by induction.
 
 <1>1. Claim: For all $n \ge 0$, $f^{(n)}(x) = (2^n x + n 2^{n-1}) e^{2x}$.
-    Proof: By mathematical induction on $n$.
+    ::: {.proof}
+    By mathematical induction on $n$.
+    :::
 
 <1>2. Base Case ($n = 0$): $f^{(0)}(x) = f(x) = (2^0 x + 0 \cdot 2^{-1}) e^{2x} = x e^{2x}$.
-    Proof: Direct substitution: $2^0 = 1$ and $0 \cdot 2^{-1} = 0$, which matches $f(x)$.
+    ::: {.proof}
+    Direct substitution: $2^0 = 1$ and $0 \cdot 2^{-1} = 0$, which matches $f(x)$.
+    :::
 
 <1>3. Inductive Step: Assume the statement holds for some integer $k \ge 0$, i.e., $f^{(k)}(x) = (2^k x + k 2^{k-1}) e^{2x}$. Then it holds for $k+1$.
     Proof:
@@ -72,5 +76,7 @@ Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formu
         $$f^{(n)}(x) = \binom{n}{0} x (2^n e^{2x}) + \binom{n}{1} (1) (2^{n-1} e^{2x}) = (2^n x + n 2^{n-1}) e^{2x}.$$
 
 <1>5. Conclusion: $f^{(n)}(x) = (2^n x + n 2^{n-1}) e^{2x} = 2^{n-1}(2x + n)e^{2x}$ for all $n \ge 0$.
-    Proof: Follows from <1>1 through <1>4. Q.E.D.
+    ::: {.proof}
+    Follows from <1>1 through <1>4. Q.E.D.
+    :::
 :::

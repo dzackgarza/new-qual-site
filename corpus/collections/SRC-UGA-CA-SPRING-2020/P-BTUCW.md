@@ -47,7 +47,7 @@ The claim is that $\eps$ can be chosen such
 \[
 z\in \bd U' \implies \abs{f(z) - w} > 0 \qquad \forall w\in W_\eps
 .\]
-The theorem then follows immediately: $F(w): U' \to W_\eps$ is a continuous and $\ZZ\dash$valued, thus constant.
+The theorem then follows: $F(w): U' \to W_\eps$ is a continuous and $\ZZ\dash$valued function on the connected set $W_\eps$ (a disc), and a continuous integer-valued function on a connected set is constant (its image is a connected subset of the discrete space $\ZZ$, hence a single point).
 Then noting that $F(w_0) = 1$ since $z_0\in U'$ and $w_0\in W_\eps$, we have $F\equiv 1 > 0$ for all $w$.
 
 

@@ -30,16 +30,26 @@ Let $M$ be the maximum of $|f(z)|$ on the unit circle about the origin.
 
 <1>1. (a) $|a_0| \le M$.
 <2>1. $a_0 = \frac{1}{2\pi i}\oint_{|z|=1} \frac{f(z)}{z}\,dz$.
-Proof: Cauchy's integral formula for the coefficient $a_0 = f(0)$.
+::: {.proof}
+Cauchy's integral formula for the coefficient $a_0 = f(0)$.
+:::
 <2>2. $|a_0| \le \frac{1}{2\pi}\int_0^{2\pi} |f(e^{i\theta})|\,d\theta \le M$.
-Proof: parametrize $z = e^{i\theta}$; $|f(e^{i\theta})| \le M$ on the unit circle, so the average is $\le M$.
+::: {.proof}
+parametrize $z = e^{i\theta}$; $|f(e^{i\theta})| \le M$ on the unit circle, so the average is $\le M$.
+:::
 
 <1>2. (b) $|a_N| \le M$.
 <2>1. $a_N = \frac{1}{2\pi i}\oint_{|z|=1} \frac{f(z)}{z^{N+1}}\,dz$.
-Proof: Cauchy's integral formula for the coefficient $a_N$.
+::: {.proof}
+Cauchy's integral formula for the coefficient $a_N$.
+:::
 <2>2. $|a_N| \le \frac{1}{2\pi}\int_0^{2\pi} |f(e^{i\theta})|\,d\theta \le M$.
-Proof: parametrize $z = e^{i\theta}$; $|z^{N+1}| = 1$ on the unit circle, so the integrand has modulus $|f(e^{i\theta})| \le M$.
+::: {.proof}
+parametrize $z = e^{i\theta}$; $|z^{N+1}| = 1$ on the unit circle, so the integrand has modulus $|f(e^{i\theta})| \le M$.
+:::
 
 <1>3. Q.E.D.
-Proof: <1>1 and <1>2 give (a) and (b).
+::: {.proof}
+<1>1 and <1>2 give (a) and (b).
+:::
 :::
