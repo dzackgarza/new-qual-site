@@ -30,7 +30,9 @@ Show that every prime ideal is irreducible.
 <1>2. Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
 
 <1>3. There are $a \in J \sm \mfp$ and $b \in K \sm \mfp$.
-*Proof:* $\mfp = J \cap K \subseteq J$, so $\mfp \neq J$ gives an $a \in J$ outside $\mfp$, and likewise for $K$.
+::: {.proof}
+$\mfp = J \cap K \subseteq J$, so $\mfp \neq J$ gives an $a \in J$ outside $\mfp$, and likewise for $K$.
+:::
 
 <1>4. $ab \in \mfp$.
 ::: {.proof}
@@ -39,5 +41,8 @@ Show that every prime ideal is irreducible.
 <2>3. So $ab \in J \cap K = \mfp$.
 
 :::
-<1>5. Q.E.D. *Proof:* $\mfp$ is prime and $ab \in \mfp$, so $a \in \mfp$ or $b \in \mfp$, contradicting step <1>3. Hence $\mfp = J$ or $\mfp = K$, and $\mfp$ is irreducible.
+<1>5. Q.E.D.
+::: {.proof}
+$\mfp$ is prime and $ab \in \mfp$, so $a \in \mfp$ or $b \in \mfp$, contradicting step <1>3. Hence $\mfp = J$ or $\mfp = K$, and $\mfp$ is irreducible.
+:::
 :::
