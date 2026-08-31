@@ -41,22 +41,36 @@ Show (i) using (1) as well as, (ii) without using (1) that there exists a positi
 
 <1>1. **Define $f(z) = z^m p(z) - 1$.**
   <2>1. $f(z)$ is a polynomial, hence entire.
-    *Proof:* Product and sum of polynomials.
+::: {.proof}
+$z^m p(z)$ is the product of two polynomials, and subtracting the constant $1$ gives a polynomial, which is entire.
+:::
   <2>2. $f(0) = 0^m p(0) - 1 = -1$ since $m \geq 1$.
-    *Proof:* $0^m = 0$ for $m \geq 1$.
+::: {.proof}
+Since $m \ge 1$, we have $0^m = 0$, so $f(0) = 0 \cdot p(0) - 1 = -1$.
+:::
   <2>3. Thus $|f(0)| = |-1| = 1$.
-    *Proof:* Absolute value of $-1$.
+::: {.proof}
+The absolute value of $-1$ is $1$.
+:::
   <2>4. Q.E.D.
 
 <1>2. **Apply the Maximum Modulus Principle to $f(z)$ on the disk $\overline{D}(0, R)$.**
   <2>1. If $p(z) \equiv 0$, then $f(z) \equiv -1$, which is constant, so $M_R = |-1| = 1$ would hold. However, if $p(z) \equiv 0$, then on $|z|=R$, $|z^m(0) - 1| = 1$. But for any polynomial $p(z) \not\equiv 0$, $f(z)$ is non-constant. (If $p \equiv 0$, then $z^m p(z) - 1 \equiv -1$. Note: the problem formulation assumes $p$ is a non-trivial polynomial or that $M_R \geq 1$ with strict inequality $M_R > 1$ for non-constant $f$; if $p(z) \neq 0$, $f$ has degree $\geq m \geq 1$, so $f$ is non-constant).
-    *Proof:* For any polynomial $p \neq 0$, $\deg(f) = m + \deg(p) \geq 1$, so $f$ is non-constant.
+::: {.proof}
+For any polynomial $p \not\equiv 0$, the term $z^m p(z)$ has degree $m + \deg(p) \ge m \ge 1$, so $f(z) = z^m p(z) - 1$ is non-constant.
+:::
   <2>2. By the Maximum Modulus Principle, a non-constant holomorphic function on a bounded domain cannot attain its maximum in the interior.
-    *Proof:* Maximum Modulus Principle on the connected domain $D(0, R)$.
+::: {.proof}
+The Maximum Modulus Principle states that a non-constant holomorphic function on a connected bounded domain has no interior maximum of its modulus.
+:::
   <2>3. Since $0 \in D(0, R)$ is an interior point, $M_R = \sup_{|z|=R} |f(z)| > |f(0)| = 1$.
-    *Proof:* Strict inequality for interior vs boundary values of non-constant analytic functions.
+::: {.proof}
+If $f$ is non-constant, its modulus on the boundary circle $|z| = R$ must exceed its value $|f(0)| = 1$ at the interior point $0$; hence $M_R > 1$.
+:::
   <2>4. (For $p \equiv 0$, $|p(z) - z^{-m}| = |z|^{-m}$, whose supremum on $K$ is $r^{-m} > 0$).
-    *Proof:* Remark on edge case.
+::: {.proof}
+When $p \equiv 0$, the function $z^m p(z) - 1 \equiv -1$ is constant, so the strict inequality $M_R > 1$ fails; this degenerate case is handled separately in Part (2).
+:::
   <2>5. Q.E.D.
 
 ---
@@ -66,14 +80,22 @@ Show (i) using (1) as well as, (ii) without using (1) that there exists a positi
 <1>3. **Establish the uniform lower bound using Part (1).**
   <2>1. For any polynomial $p(z)$ and $z \in K$, on the outer boundary $|z| = R$:
   $$|p(z) - z^{-m}| = \frac{|z^m p(z) - 1|}{|z|^m} = \frac{|z^m p(z) - 1|}{R^m}.$$
-    *Proof:* Factoring out $z^{-m}$ with $|z| = R$.
+::: {.proof}
+Multiplying $p(z) - z^{-m}$ by $z^m$ gives $z^m p(z) - 1$, so $|p(z) - z^{-m}| = \frac{|z^m p(z) - 1|}{|z|^m}$; on $|z| = R$ this denominator is $R^m$.
+:::
   <2>2. Taking the supremum over the sub-circle $|z| = R \subset K$:
   $$\sup_{z \in K} |p(z) - z^{-m}| \geq \sup_{|z|=R} |p(z) - z^{-m}| = \frac{1}{R^m} \sup_{|z|=R} |z^m p(z) - 1| = \frac{M_R}{R^m}.$$
-    *Proof:* Subset inequality for supremum and <2>1.
+::: {.proof}
+The supremum over the larger set $K$ is at least the supremum over the subset $|z| = R$; by <2>1 the latter equals $\frac{1}{R^m} M_R$.
+:::
   <2>3. By Part (1), for non-zero polynomials $M_R > 1 \geq 1$, and for $p \equiv 0$, $\sup_{z \in K} |0 - z^{-m}| = r^{-m} > R^{-m}$. Thus for all polynomials $p$, $M_R \geq 1$.
-    *Proof:* Combining non-constant and constant cases.
+::: {.proof}
+For $p \not\equiv 0$, Part (1) gives $M_R > 1$; for $p \equiv 0$, the supremum of $|z^{-m}|$ on $K$ is $r^{-m}$, which exceeds $R^{-m}$ since $r < R$.
+:::
   <2>4. Therefore, setting $\varepsilon_0 = \frac{1}{R^m} > 0$, we have $\sup_{z \in K} |p(z) - z^{-m}| \geq \varepsilon_0$ for all polynomials $p(z)$.
-    *Proof:* $\frac{M_R}{R^m} \geq \frac{1}{R^m} = \varepsilon_0 > 0$.
+::: {.proof}
+By <2>2> and <2>3>, $\sup_{z \in K} |p(z) - z^{-m}| \ge \frac{M_R}{R^m} \ge \frac{1}{R^m} = \varepsilon_0 > 0$.
+:::
   <2>5. Q.E.D.
 
 ---

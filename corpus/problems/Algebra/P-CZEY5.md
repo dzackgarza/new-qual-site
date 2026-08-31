@@ -21,11 +21,10 @@ review: draft
 Suppose $\phi(n) = 2$.
 :::
 
-::: solution
-**Theorem.**  
-If $\phi(n)=2$, then $n\in\{3,4,6\}$.
+::: {.solution}
+**Theorem.** If $\phi(n)=2$, then $n\in\{3,4,6\}$.
 
-*Proof.*
+::: {.proof}
 
 1. Let $n=\prod_{i=1}^r p_i^{\alpha_i}$ be the prime factorization. Then
    \[
@@ -44,4 +43,5 @@ If $\phi(n)=2$, then $n\in\{3,4,6\}$.
 7. Conversely, $\phi(3)=\phi(4)=\phi(6)=2$.
 
 So the only integers with $\phi(n)=2$ are exactly $3,4,6$.
+:::
 :::

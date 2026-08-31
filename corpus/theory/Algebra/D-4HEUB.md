@@ -15,5 +15,5 @@ review: draft
 
 ::: {.definition}
 A module $M$ is **decomposable** iff it admits a direct sum decomposition $M \cong M_1 \oplus M_2$ with $M_1, M_2 \neq 0$.
-An **indecomposable** module is defined in the obvious way.
+A module $M$ is **indecomposable** if it admits no non-trivial direct sum decomposition: the only decompositions $M \cong M_1 \oplus M_2$ have $M_1 = 0$ or $M_2 = 0$.
 :::
