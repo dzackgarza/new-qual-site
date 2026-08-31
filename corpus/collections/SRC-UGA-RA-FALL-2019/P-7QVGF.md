@@ -15,102 +15,69 @@ relations: []
 review: draft
 ---
 
-a.
-Show that if $f$ is continuous with compact support on $\RR$, then 
-\[
-\lim _{y \rightarrow 0} \int_{\mathbb{R}}|f(x-y)-f(x)| d x=0
-\]
+::: problem
+(a) Show that if $f \in C_c(\mathbb{R})$ is continuous with compact support on $\mathbb{R}$, then
+$$
+\lim_{y \to 0} \int_{\mathbb{R}} |f(x - y) - f(x)| \, dx = 0.
+$$
 
-b. 
-Let $f\in L^1(\RR)$ and for each $h > 0$ let 
-\[
-\mathcal{A}_{h} f(x):=\frac{1}{2 h} \int_{|y| \leq h} f(x-y) d y
-\]
-
-  - Prove that $\left\|\mathcal{A}_{h} f\right\|_{1} \leq\|f\|_{1}$ for all $h > 0$.
-
-  - Prove that $\mathcal{A}_h f \to f$ in $L^1(\RR)$ as $h \to 0^+$.
-
-:::{.concept}
-\envlist
-- Continuity in $L^1$ (recall that DCT won't work! Notes 19.4, prove it for a dense subset first).
-- Lebesgue differentiation in 1-dimensional case. See HW 5.6.
+(b) Let $f \in L^1(\mathbb{R})$, and for each $h > 0$ define the local average
+$$
+\mathcal{A}_h f(x) = \frac{1}{2h} \int_{|y| \le h} f(x - y) \, dy.
+$$
+- Prove that $\|\mathcal{A}_h f\|_{L^1(\mathbb{R})} \le \|f\|_{L^1(\mathbb{R})}$ for all $h > 0$.
+- Prove that $\lim_{h \to 0^+} \|\mathcal{A}_h f - f\|_{L^1(\mathbb{R})} = 0$.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove continuity of translations for $C_c(\mathbb{R})$ functions in (a), and use it along with density in $L^1(\mathbb{R})$ to prove boundedness and $L^1$ convergence of the rolling averages $\mathcal{A}_h f$ in (b).
 
-:::{.proof title="of a"}
+<1>1. Part (a): $\lim_{y \to 0} \|\tau_y f - f\|_{L^1} = 0$ for $f \in C_c(\mathbb{R})$.
+    *Proof:*
+    <2>1. Since $f$ has compact support, there exists $M > 0$ such that $\operatorname{supp}(f) \subseteq [-M, M]$.
+    <2>2. For any $|y| \le 1$, if $x \notin [-M - 1, M + 1]$, then both $x \notin [-M, M]$ and $x - y \notin [-M, M]$, so $f(x - y) - f(x) = 0 - 0 = 0$.
+    <2>3. Thus $\operatorname{supp}(\tau_y f - f) \subseteq [-M - 1, M + 1]$ for all $|y| \le 1$.
+    <2>4. Since $f \in C_c(\mathbb{R})$, $f$ is uniformly continuous on $\mathbb{R}$ by the Heine-Cantor Theorem.
+    <2>5. Let $\varepsilon > 0$. By uniform continuity, there exists $\delta \in (0, 1)$ such that $|y| < \delta$ implies
+    $$|f(x - y) - f(x)| < \frac{\varepsilon}{2(M + 1)} \quad \text{for all } x \in \mathbb{R}.$$
+    <2>6. For any $|y| < \delta$:
+    $$\int_\mathbb{R} |f(x - y) - f(x)| \, dx = \int_{-M-1}^{M+1} |f(x - y) - f(x)| \, dx \le \int_{-M-1}^{M+1} \frac{\varepsilon}{2(M + 1)} \, dx = \varepsilon.$$
+    <2>7. Thus $\lim_{y \to 0} \int_\mathbb{R} |f(x - y) - f(x)| \, dx = 0$.
 
-- Fix $\varepsilon > 0$.
-  If we can find a set $A$ such that the following calculation holds for $h$ small enough, we're done:
-  \[
-  \int_\RR \abs{f(x-h) - f(x)} \dx 
-  &= \int_A \abs{f(x-h) - f(x)} \dx \\
-  &\leq \int_A \eps \\
-  &= \eps \mu(A) \too 0
-  ,\]
-  provided $h\to 0$ as $\eps\to 0$, which we can arrange if $\abs{h} < \eps$.
+<1>2. Part (b), Subpart 1: $\|\mathcal{A}_h f\|_{L^1} \le \|f\|_{L^1}$ for all $h > 0$.
+    *Proof:*
+    <2>1. Write out the $L^1$ norm:
+    $$\|\mathcal{A}_h f\|_{L^1} = \int_\mathbb{R} \left| \frac{1}{2h} \int_{-h}^h f(x - y) \, dy \right| dx.$$
+    <2>2. Apply the integral triangle inequality:
+    $$\|\mathcal{A}_h f\|_{L^1} \le \frac{1}{2h} \int_\mathbb{R} \left( \int_{-h}^h |f(x - y)| \, dy \right) dx.$$
+    <2>3. By Tonelli's Theorem, interchange the order of integration:
+    $$\|\mathcal{A}_h f\|_{L^1} \le \frac{1}{2h} \int_{-h}^h \left( \int_\mathbb{R} |f(x - y)| \, dx \right) dy.$$
+    <2>4. By translation invariance of Lebesgue measure, $\int_\mathbb{R} |f(x - y)| \, dx = \|f\|_{L^1}$ for each fixed $y$.
+    <2>5. Thus
+    $$\|\mathcal{A}_h f\|_{L^1} \le \frac{1}{2h} \int_{-h}^h \|f\|_{L^1} \, dy = \frac{1}{2h} (2h) \|f\|_{L^1} = \|f\|_{L^1}.$$
 
-- Choose $A\contains \supp f$ compact such that $\supp f \pm 1 \subseteq A$
-  - Why this can be done: $\supp f$ is compact, so closed and bounded, and contained in some compact interval $[-M, M]$.
-  So e.g. $A\da [-M-1, M+1]$ suffices.
-- Note that $f$ is still continuous on $A$, since it is zero on $A\sm \supp f$, and thus uniformly continuous (by Heine-Cantor, for example).
-- We can rephrase the usual definition of uniform continuity:
-\[
-\forall \eps \exists \delta = \delta(\eps) \text{ such that } \abs{x - y} < \delta \implies \abs{f(x) - f(y)} < \eps \quad \forall x, y\in A
-\]
-as
-\[
-\forall \eps \exists \delta = \delta(\eps) \text{ such that } \abs{h} < \delta \implies \abs{f(x-h) - f(x)} < \eps \quad \forall x \text{ such that }x, x\pm h \in A
-\]
+<1>3. Part (b), Lemma: Continuity of translations in $L^1(\mathbb{R})$ for all $f \in L^1(\mathbb{R})$.
+    *Proof:*
+    <2>1. Let $f \in L^1(\mathbb{R})$ and $\varepsilon > 0$.
+    <2>2. Since $C_c(\mathbb{R})$ is dense in $L^1(\mathbb{R})$, choose $g \in C_c(\mathbb{R})$ such that $\|f - g\|_{L^1} < \varepsilon / 3$.
+    <2>3. By translation invariance of the $L^1$ norm, $\|\tau_y f - \tau_y g\|_{L^1} = \|f - g\|_{L^1} < \varepsilon / 3$ for all $y \in \mathbb{R}$.
+    <2>4. By Part (a), choose $\delta > 0$ such that $|y| < \delta \implies \|\tau_y g - g\|_{L^1} < \varepsilon / 3$.
+    <2>5. By the triangle inequality, for all $|y| < \delta$:
+    $$\|\tau_y f - f\|_{L^1} \le \|\tau_y f - \tau_y g\|_{L^1} + \|\tau_y g - g\|_{L^1} + \|g - f\|_{L^1} < \frac{\varepsilon}{3} + \frac{\varepsilon}{3} + \frac{\varepsilon}{3} = \varepsilon.$$
+    <2>6. Thus $\lim_{y \to 0} \|\tau_y f - f\|_{L^1} = 0$ for all $f \in L^1(\mathbb{R})$.
 
-- So fix $\eps$ and choose such a $\delta$ for $A$, and choose $h$ such that $\abs{h} < \min(1, \delta)$.
-  Then the desired computation goes through by uniform continuity of $f$ on $A$.
+<1>4. Part (b), Subpart 2: $\lim_{h \to 0^+} \|\mathcal{A}_h f - f\|_{L^1} = 0$.
+    *Proof:*
+    <2>1. Using $\frac{1}{2h} \int_{-h}^h 1 \, dy = 1$, write
+    $$\mathcal{A}_h f(x) - f(x) = \frac{1}{2h} \int_{-h}^h (f(x - y) - f(x)) \, dy.$$
+    <2>2. Take the $L^1$ norm and apply Tonelli's Theorem:
+    $$\|\mathcal{A}_h f - f\|_{L^1} \le \frac{1}{2h} \int_{-h}^h \left( \int_\mathbb{R} |f(x - y) - f(x)| \, dx \right) dy = \frac{1}{2h} \int_{-h}^h \|\tau_y f - f\|_{L^1} \, dy.$$
+    <2>3. Bound the average by the supremum on $[-h, h]$:
+    $$\|\mathcal{A}_h f - f\|_{L^1} \le \sup_{|y| \le h} \|\tau_y f - f\|_{L^1}.$$
+    <2>4. By <1>3, $\lim_{h \to 0^+} \sup_{|y| \le h} \|\tau_y f - f\|_{L^1} = 0$.
+    <2>5. Therefore $\lim_{h \to 0^+} \|\mathcal{A}_h f - f\|_{L^1} = 0$.
 
-:::
-
-:::{.proof title="of b"}
-We have
-\[
-\int_\RR \abs{A_h(f)(x)} ~dx 
-&= \int_\RR \abs{\frac{1}{2h} \int_{x-h}^{x+h} f(y)~dy} ~dx \\
-&\leq \frac{1}{2h} \int_\RR \int_{x-h}^{x+h} \abs{f(y)} ~dy ~dx    \\
-&=_{FT} \frac{1}{2h} \int_\RR \int_{y-h}^{y+h} \abs{f(y)} ~\mathbf{dx} ~\mathbf{dy}    \\
-&= \int_\RR \abs{f(y)} ~{dy} \\
-&= \norm{f}_1
-,\]
-
-and (rough sketch)
-
-\[
-\int_\RR \abs{A_h(f)(x) - f(x)} ~dx 
-&= \int_\RR \abs{ \left(\frac{1}{2h} \int_{B(h, x)} f(y)~dy\right) - f(x)}~dx \\
-&= \int_\RR \abs{ \left(\frac{1}{2h} \int_{B(h, x)} f(y)~dy\right) - \frac{1}{2h}\int_{B(h, x)} f(x) ~dy}~dx \\
-&\leq_{FT} \frac{1}{2h} \int_\RR  \int_{B(h, x)}\abs{ f(y-x) - f(x)} ~\mathbf{dx} ~\mathbf{dy} \\
-&\leq \frac 1 {2h} \int_\RR \norm{\tau_x f - f}_1 ~dy \\
-&\to 0 \quad\text{by (a)}
-.\]
-
-:::
-
-:::
-
-:::{.remark}
-This works for arbitrary $f\in L^1$, using approximation by continuous functions with compact support:
-
-- Choose $g\in C_c^0$ such that $\norm{f- g}_1 \to 0$.
-
-- By translation invariance, $\norm{\tau_h f - \tau_h g}_1 \to 0$.
-
-- Write
-\[
-\norm{\tau f - f}_1 
-&= \norm{\tau_h f - g + g - \tau_h g + \tau_h g - f}_1 \\
-&\leq \norm{\tau_h f - \tau_h g} + \norm{g - f} + \norm{\tau_h g - g} \\
-&\to \norm{\tau_h g - g}
-,\]
-
-  so it suffices to show that $\norm{\tau_h g - g} \to 0$.
-
+<1>5. Conclusion:
+    *Proof:*
+    $C_c(\mathbb{R})$ functions have continuous translations, $\mathcal{A}_h$ is an $L^1$-contraction ($\|\mathcal{A}_h f\|_1 \le \|f\|_1$), and $\mathcal{A}_h f \to f$ in $L^1(\mathbb{R})$ as $h \to 0^+$.
 :::

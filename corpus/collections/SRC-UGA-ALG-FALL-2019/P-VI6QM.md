@@ -15,133 +15,72 @@ relations: []
 review: draft
 ---
 
-Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
+::: problem
+Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorname{Syl}_3(G)$, $Q \in \operatorname{Syl}_5(G)$, and $R \in \operatorname{Syl}_7(G)$ be Sylow 3-, 5-, and 7-subgroups of $G$, respectively.
 
-a.
-Prove that at least one of $Q$ and $R$ is normal in $G$.
+(a) Prove that at least one of $Q$ and $R$ is normal in $G$.
 
-b.
-Prove that $G$ has a cyclic subgroup of order 35.
+(b) Prove that $G$ has a cyclic subgroup of order 35.
 
-c.
-Prove that both $Q$ and $R$ are normal in $G$.
+(c) Prove that both $Q$ and $R$ are normal in $G$.
 
-d.
-Prove that if $P$ is normal in $G$ then $G$ is cyclic.
-
-:::{.concept}
-\envlist
-
-- The $pqr$ theorem.
-- Sylow 3: $\abs{G} = p^n m$ implies $n_p \divides m$ and $n_p \cong 1 \mod p$.
-
-- **Theorem**: If $H, K \leq G$ and any of the following conditions hold, $HK$ is a subgroup:
-  - $H\normal G$ (wlog)
-  - $[H, K] = 1$
-  - $H \leq N_G(K)$ 
-
-- **Theorem**: For a positive integer $n$, all groups of order $n$ are cyclic $\iff n$ is
-squarefree and, for each pair of distinct primes $p$ and $q$ dividing $n$, $q - 1 \neq 0 \mod p$.
-
-- **Theorem:** 
-\[
-A_i\normal G, \quad G = A_1 \cdots A_k,\quad A_k \intersect \prod_{i\neq k} A_i = \emptyset \implies G = \prod A_i
-.\]
-
-- The intersection of subgroups is a again a subgroup.
-- Any subgroups of coprime order intersect trivially?
-
+(d) Prove that if $P$ is normal in $G$, then $G$ is cyclic.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+**Goal:** Prove normality of Sylow subgroups, existence of a cyclic subgroup of order 35, and deduce that $G$ is cyclic when all Sylow subgroups are normal.
 
-:::{.proof title="of 1"}
-\envlist
+<1>1. Part (a): At least one of $Q$ or $R$ is normal in $G$.
+    *Proof:*
+    <2>1. By Sylow's Theorems, the number $n_5$ of Sylow 5-subgroups satisfies $n_5 \equiv 1 \pmod 5$ and $n_5 \mid (3 \cdot 7) = 21$. Thus $n_5 \in \{1, 21\}$.
+    <2>2. The number $n_7$ of Sylow 7-subgroups satisfies $n_7 \equiv 1 \pmod 7$ and $n_7 \mid (3 \cdot 5) = 15$. Thus $n_7 \in \{1, 15\}$.
+    <2>3. Suppose for contradiction that neither $Q$ nor $R$ is normal in $G$, so $n_5 = 21$ and $n_7 = 15$.
+    <2>4. Count elements:
+        - Each Sylow 5-subgroup has prime order 5, so any two distinct Sylow 5-subgroups intersect only in the identity $\{e\}$. Together they contain $21 \cdot (5 - 1) = 84$ elements of order 5.
+        - Each Sylow 7-subgroup has prime order 7, so any two distinct Sylow 7-subgroups intersect only in $\{e\}$. Together they contain $15 \cdot (7 - 1) = 90$ elements of order 7.
+        - Since 5 and 7 are distinct primes, no element can have both order 5 and order 7.
+    <2>5. The identity, the elements of order 5, and the elements of order 7 give at least
+    $$1 + 84 + 90 = 175 \text{ distinct elements in } G.$$
+    <2>6. This contradicts $|G| = 105$.
+    <2>7. Thus $n_5 = 1$ or $n_7 = 1$, so at least one of $Q$ or $R$ is normal in $G$.
 
-- We have 
+<1>2. Part (b): $G$ has a cyclic subgroup of order 35.
+    *Proof:*
+    <2>1. By Part (a), $Q \trianglelefteq G$ or $R \trianglelefteq G$.
+    <2>2. If one of two subgroups is normal, their set product is a subgroup. Thus $H = Q R \le G$.
+    <2>3. By Lagrange's Theorem, $|Q \cap R|$ divides $\gcd(|Q|, |R|) = \gcd(5, 7) = 1$, so $Q \cap R = \{e\}$.
+    <2>4. The order of $H$ is
+    $$|H| = \frac{|Q| |R|}{|Q \cap R|} = \frac{5 \cdot 7}{1} = 35.$$
+    <2>5. $H$ is cyclic:
+        - In $H$, the number of Sylow 7-subgroups $n_7(H)$ satisfies $n_7(H) \equiv 1 \pmod 7$ and $n_7(H) \mid 5 \implies n_7(H) = 1$, so the Sylow 7-subgroup $R \trianglelefteq H$.
+        - The number of Sylow 5-subgroups $n_5(H)$ satisfies $n_5(H) \equiv 1 \pmod 5$ and $n_5(H) \mid 7 \implies n_5(H) = 1$, so the Sylow 5-subgroup $Q \trianglelefteq H$.
+        - Since $Q, R \trianglelefteq H$ and $Q \cap R = \{e\}$, $H \cong Q \times R \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z} \cong \mathbb{Z}/35\mathbb{Z}$.
+    <2>6. Thus $H$ is a cyclic subgroup of order 35 in $G$.
 
-- $n_3 \divides 5\cdot 7, \quad n_3 \cong 1 \mod 3 \implies n_3 \in \theset{1, 5, 7, 35} \setminus \theset{5, 35}$
-- $n_5 \divides 3\cdot 7, \quad n_5 \cong 1 \mod 5 \implies n_5 \in \theset{1, 3, 7, 21}\setminus \theset{3, 7}$
-- $n_7 \divides 3\cdot 5, \quad n_7 \cong 1 \mod 7 \implies n_7 \in \theset{1, 3, 5, 15}\setminus\theset{3, 5}$
+<1>3. Part (c): Both $Q$ and $R$ are normal in $G$.
+    *Proof:*
+    <2>1. Let $H \le G$ be the cyclic subgroup of order 35 from Part (b).
+    <2>2. The index of $H$ in $G$ is $[G : H] = \frac{105}{35} = 3$.
+    <2>3. Since 3 is the smallest prime dividing $|G| = 105$, any subgroup of index 3 is normal in $G$. Thus $H \trianglelefteq G$.
+    <2>4. In the cyclic group $H \cong \mathbb{Z}/35\mathbb{Z}$, $Q$ is the unique subgroup of order 5, and $R$ is the unique subgroup of order 7.
+    <2>5. Because $Q$ and $R$ are uniquely determined by their orders in $H$, they are characteristic subgroups of $H$: for every automorphism $\sigma \in \operatorname{Aut}(H)$, $\sigma(Q) = Q$ and $\sigma(R) = R$.
+    <2>6. Since $H \trianglelefteq G$, conjugation by any $g \in G$ restricts to an automorphism of $H$.
+    <2>7. Thus $g Q g^{-1} = Q$ and $g R g^{-1} = R$ for all $g \in G$, proving that both $Q \trianglelefteq G$ and $R \trianglelefteq G$.
 
-- Thus
-\[
-n_3 \in \theset{1, 7} \quad n_5 \in \theset{1, 21} \quad n_7 \in \theset{1, 15}
-.\]
+<1>4. Part (d): If $P \trianglelefteq G$, then $G$ is cyclic.
+    *Proof:*
+    <2>1. Assume $P \trianglelefteq G$. By Part (c), $Q \trianglelefteq G$ and $R \trianglelefteq G$.
+    <2>2. All three Sylow subgroups $P, Q, R$ are normal in $G$.
+    <2>3. Since $|P| = 3$, $|Q| = 5$, $|R| = 7$ are pairwise coprime:
+        - $P \cap (Q R) = \{e\}$ because $|P| = 3$ and $|Q R| = 35$ with $\gcd(3, 35) = 1$.
+        - $Q \cap R = \{e\}$ because $\gcd(5, 7) = 1$.
+    <2>4. The product $P Q R$ is a subgroup of $G$ with order $|P Q R| = |P| |Q| |R| = 3 \cdot 5 \cdot 7 = 105 = |G|$, so $G = P Q R$.
+    <2>5. Therefore $G$ is isomorphic to the internal direct product:
+    $$G \cong P \times Q \times R \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z}.$$
+    <2>6. By the Chinese Remainder Theorem, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z} \cong \mathbb{Z}/105\mathbb{Z}$, which is cyclic.
 
-- Toward a contradiction, if $n_5\neq 1$ and $n_7 \neq 1$, then 
-\[
-\abs{\syl(5) \union \syl(7)} = (5-1)n_5 + (7-1)n_7 + 1 
-&= 4(21) + 6(15) = 174 > 105 \text{ elements}
-\]
-  using the fact that Sylow $p\dash$subgroups for distinct primes $p$ intersect trivially (?).
-
-:::
-
-:::{.proof title="of 2"}
-\envlist
-- By (a), either $Q$ or $R$ is normal.
-- Thus $QR \leq G$ is a subgroup, and it has order $\abs{Q} \cdot \abs{R} = 5\cdot 7 = 35$.
-- By the $pqr$ theorem, since $5$ does not divide $7-1=6$, $QR$ is cyclic.
-
-:::
-
-:::{.remark}
-Part (b) not finished!
-:::
-
-:::{.proof title="of 3"}
-\envlist
-
-- We want to show $Q, R\normal G$, so we proceed by showing $\textbf{not }\qty{n_5 = 21 \text{ or } n_7 = 15}$, which is equivalent to $\qty{n_5 = 1 \text{ and } n_7 = 1}$ by the previous restrictions.
-
-- Note that we can write
-\[
-G = \theset{\text{elements of order } n} \disjoint \theset{\text{elements of order not } n}
-.\]
-  for any $n$, so we count for $n=5, 7$:
-
-  - Elements in $QR$ of order **not** equal to 5: $\abs{QR - Q\theset{\id} + \theset{\id}} = 35 - 5 + 1 = 31$
-  - Elements in $QR$ of order **not** equal to 7: $\abs{QR - \theset{\id}R + \theset{\id}} = 35 - 7 + 1 = 29$
-
-- Since $QR \leq G$, we have
-
-  - Elements in $G$ of order **not** equal to 5 $\geq 31$.
-  - Elements in $G$ of order **not** equal to 7 $\geq 29$.
-
-- Now both cases lead to contradictions:
-
-  - $n_5 = 21$:
-\[
-\abs{G}  &= \abs{\theset{\text{elements of order } 5} \disjoint \theset{\text{elements of order not } 5}} \\
-&\geq n_5(5-1) + 31 = 21(4) + 31 = 115 > 105 = \abs{G}
-.\]
-
-  - $n_7 = 15$:
-\[
-\abs{G}  &= \abs{\theset{\text{elements of order } 7} \disjoint \theset{\text{elements of order not } 7}} \\
-&\geq n_7(7-1) + 29 = 15(6) + 29 = 119 > 105 = \abs{G}
-.\]
-
-:::
-
-:::{.proof title="of 4"}
-Suppose $P$ is normal and recall $\abs{P} = 3, \abs{Q} = 5, \abs{R} = 7$.
-
-- $P\intersect QR = \theset{e}$ since $(3, 35) = 1$ 
-- $R\intersect PQ = \theset{e}$ since $(5, 21) = 1$ 
-- $Q\intersect RP = \theset{e}$ since $(7, 15) = 1$ 
-
-We also have $PQR = G$ since $\abs{PQR} = \abs{G}$ (???).
-
-We thus have an internal direct product 
-\[
-G \cong P\cross Q \cross R \cong \ZZ_3 \cross \ZZ_5 \cross \ZZ_7 \cong \ZZ_{105}
-.\]
-by the Chinese Remainder Theorem, which is cyclic.
-
-:::
-
+<1>5. Conclusion:
+    *Proof:*
+    $Q$ and $R$ are normal in $G$, $G$ contains a cyclic subgroup of order 35, and normality of $P$ implies $G \cong \mathbb{Z}/105\mathbb{Z}$.
 :::
 
