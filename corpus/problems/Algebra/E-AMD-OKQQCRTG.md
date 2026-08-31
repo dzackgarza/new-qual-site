@@ -40,6 +40,9 @@ Show that p-groups $\implies$ nilpotent
 <2>3. $Z_{m+1}/Z_m = Z(G/Z_m)$, so $Z_{m+1}$ strictly contains $Z_m$.
 
 :::
-<1>4. Q.E.D. *Proof:* By step <1>3 the orders $\abs{Z_0} < \abs{Z_1} < \cdots$ strictly increase while $Z_m \neq G$, and they are bounded by $p^n$.
+<1>4. Q.E.D.
+::: {.proof}
+By step <1>3 the orders $\abs{Z_0} < \abs{Z_1} < \cdots$ strictly increase while $Z_m \neq G$, and they are bounded by $p^n$.
 So $Z_m = G$ for some $m \leq n$, which is the definition of $G$ being nilpotent.
+:::
 :::

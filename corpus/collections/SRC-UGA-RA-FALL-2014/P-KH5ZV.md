@@ -14,56 +14,48 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-Let $f\in L^1(\RR)$. Show that
-\[
-\forall\varepsilon > 0 \exists \delta > 0 \text{ such that } \qquad 
-m(E) < \delta 
-\implies 
-\int _{E} |f(x)| \, dx < \varepsilon
-\]
-
+::: problem
+Let $f \in L^1(\mathbb{R})$. Prove that for every $\varepsilon > 0$, there exists $\delta > 0$ such that for every Lebesgue measurable set $E \subseteq \mathbb{R}$ with $m(E) < \delta$,
+$$
+\int_E |f(x)| \, dx < \varepsilon.
+$$
 :::
 
-:::{.solution title="by contradiction" }
+::: solution
+**Goal:** Prove the absolute continuity of the Lebesgue integral by truncating $|f|$ by height $N$ and applying the Monotone Convergence Theorem.
 
-- Note that if $m(E) = 0$ then $\int_E f = 0$ for any $f$.
-- Toward a contradiction, suppose there exists an $\eps>0$ such that for all $\delta>0$ there exists a set $E_\delta \subseteq \RR$ with $m(E) < \delta$ but $\int_{E_\delta} \abs f > \eps$.
-- Let $\delta_n \decreasesto 0$ be any sequence converging to zero and choose $E_n$ with $\int_{E_n} \abs f > \eps$ for every $n$.
-- Define $E \da \limsup_n E_n \da \Intersect_{N\geq 1} \Union_{n\geq N} E_n$, then $m(E) = 0$ by Borel-Cantelli.
-- Now estimate using Fatou:
-\[
-\int_{E} \abs{f} 
-&= \int_X \chi_E \abs{f} \\
-&= \int_X \limsup_n \chi_{E_n} \abs{f} \\
-&\geq \limsup_n \int_X \chi_{E_n }\abs{f}  \\
-&\geq \limsup_n \int_{E_n} \abs{f} \\
-&\geq \limsup_n \eps \\
-&= \eps
-,\]
-however $\displaystyle\int_E \abs{f}\dm = 0$ since $m(E) = 0$, a contradiction. $\contradiction$.
-:::
+<1>1. Pointwise convergence and monotonicity of truncations:
+    *Proof:*
+    <2>1. For each integer $N \ge 1$, define the truncated function:
+    $$f_N(x) = \min(|f(x)|, N) = \begin{cases} |f(x)| & \text{if } |f(x)| \le N, \\ N & \text{if } |f(x)| > N. \end{cases}$$
+    <2>2. For every $x \in \mathbb{R}$, $0 \le f_N(x) \le f_{N+1}(x)$ and $\lim_{N \to \infty} f_N(x) = |f(x)|$.
+    <2>3. Each $f_N$ is measurable and bounded by $N$.
 
-:::{.solution title="direct" }
-Note that this is clear for simple functions: let $\phi = \sum_{k\leq n} c_k m(A_k) < \infty$ be simple function. then $\phi$ is necessarily bounded on $\RR$, so let $M\da \sup_\RR \phi$ and estimate
-\[
-\int_E \phi 
-&\da \sum_k c_k m(A_k \intersect E) \\
-&\leq \sum_k M\cdot m(E)\\ 
-&= C M m(E) 
-,\]
-for some constant $C$, so choosing $\delta < { \eps \over C M}$ (and its corresponding $E$ with $m(E) < \delta$) bounds this above by $\eps$.
+<1>2. Approximation of $|f|$ by $f_N$ in $L^1(\mathbb{R})$:
+    *Proof:*
+    <2>1. By the Monotone Convergence Theorem:
+    $$\lim_{N \to \infty} \int_{\mathbb{R}} f_N(x) \, dx = \int_{\mathbb{R}} |f(x)| \, dx.$$
+    <2>2. Since $f \in L^1(\mathbb{R})$, $\int_{\mathbb{R}} |f(x)| \, dx < \infty$.
+    <2>3. Thus:
+    $$\lim_{N \to \infty} \int_{\mathbb{R}} (|f(x)| - f_N(x)) \, dx = \int_{\mathbb{R}} |f(x)| \, dx - \lim_{N \to \infty} \int_{\mathbb{R}} f_N(x) \, dx = 0.$$
+    <2>4. Let $\varepsilon > 0$. There exists an integer $N_0 \ge 1$ such that
+    $$\int_{\mathbb{R}} (|f(x)| - f_{N_0}(x)) \, dx < \frac{\varepsilon}{2}.$$
 
-For arbitrary $f \in L^1$, there is a sequence of simple functions $\phi_n$ with $\int \phi_n \increasesto \int f$ and $\norm{\phi_n - f}_{L_1} \convergesto{n\to\infty} 0$.
-Choose $\delta$ and $E$ as above,
-and use the triangle inequality to estimate
-\[
-\int_E \abs{f} 
-&= \int_E \abs{f - \phi_n + \phi_n} \\
-&\leq \int_E \abs{f - \phi_n} + \int_E \abs{\phi_n}
-,\]
-choose $n\gg 1$ to bound the first term by $\eps$, noting that the second term is bounded by $\eps$ by the case for simple functions.
+<1>3. Choice of $\delta > 0$ and integration bound:
+    *Proof:*
+    <2>1. Define $\delta = \frac{\varepsilon}{2 N_0} > 0$.
+    <2>2. Let $E \subseteq \mathbb{R}$ be any measurable set with $m(E) < \delta$.
+    <2>3. Decompose the integral over $E$:
+    $$\int_E |f(x)| \, dx = \int_E (|f(x)| - f_{N_0}(x)) \, dx + \int_E f_{N_0}(x) \, dx.$$
+    <2>4. Bound the first term using non-negativity and <1>2:
+    $$\int_E (|f(x)| - f_{N_0}(x)) \, dx \le \int_{\mathbb{R}} (|f(x)| - f_{N_0}(x)) \, dx < \frac{\varepsilon}{2}.$$
+    <2>5. Bound the second term using the bound $0 \le f_{N_0}(x) \le N_0$:
+    $$\int_E f_{N_0}(x) \, dx \le \int_E N_0 \, dx = N_0 \cdot m(E) < N_0 \cdot \delta = N_0 \cdot \frac{\varepsilon}{2 N_0} = \frac{\varepsilon}{2}.$$
+    <2>6. Combining the two estimates:
+    $$\int_E |f(x)| \, dx < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
-
+<1>4. Conclusion:
+    *Proof:*
+    For any $\varepsilon > 0$, choosing $\delta = \frac{\varepsilon}{2 N_0}$ ensures $\int_E |f| < \varepsilon$ whenever $m(E) < \delta$.
 :::
 
