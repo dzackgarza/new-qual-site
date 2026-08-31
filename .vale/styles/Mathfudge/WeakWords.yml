@@ -4,6 +4,7 @@ level: warning
 ignorecase: true
 tokens:
   - obviously
+  - obvious
   - clearly
   - trivially
   - trivial
