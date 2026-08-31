@@ -25,7 +25,9 @@ where $C^2 = \sum_{k=0}^\infty \frac{1}{1+k^2} < \infty$.
 $$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\widehat{g}(k)}(1+k^2).$$
 If $g$ represents $L$ then we must have
 $$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\widehat{g}(k)}(1+k^2) = f(1) = \sum_{k=0}^\infty \widehat{f}(k).$$
-It's clear that if $\widehat{g}(k)=\frac{1}{1+k^2}$ then this would be satisfied. So we can just define
+We verify that the choice $\widehat{g}(k)=\frac{1}{1+k^2}$ works: substituting into the inner product gives
+$$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\frac{1}{1+k^2}}(1+k^2) = \sum_{k=0}^\infty \widehat{f}(k) = f(1),$$
+since $\frac{1}{1+k^2}$ is real and $\frac{1}{1+k^2}(1+k^2) = 1$. So we can define
 $$g(z) = \sum_{k=0}^\infty \frac{1}{1+k^2}z^k.$$
 The series converges uniformly on $\overline{\mathbb{D}}$ so this definition actually makes sense (and in fact is holomorphic, but that's not necessary). $\square$
 

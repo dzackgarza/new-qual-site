@@ -24,7 +24,7 @@ $$|A_N(f)-I(f)| \le |A_N(f)-A_N(P)|+|A_N(P)-I(P)|+|I(P)-I(f)|$$
 $$\le 2\epsilon+|A_N(P)-I(P)|.$$
 First take $N\to\infty$, then we see that $|\lim_{N\to\infty} A_N(f)-I(f)|<2\epsilon$, and since this holds for arbitrary $\epsilon$, the desired result follows. $\square$
 
-(b) Let $f=\chi_{[a,b]}$. Let $g_k$ and $h_k$ be sequences of continuous functions satisfying $0\le g_k\le f\le h_k\le1$ for all $k$, and $g_k$ and $h_k$ both converge almost everywhere to $f$ as $k\to\infty$ (it's clear that such sequences exist by just taking the graph of $f$ and smoothing it out a bit). Then for each $N$ and $k$ we have
+(b) Let $f=\chi_{[a,b]}$. Let $g_k$ and $h_k$ be sequences of continuous functions satisfying $0\le g_k\le f\le h_k\le1$ for all $k$, and $g_k$ and $h_k$ both converge almost everywhere to $f$ as $k\to\infty$. Such sequences exist: take $g_k$ to be the continuous function that is $1$ on $[a+\frac1k, b-\frac1k]$, $0$ outside $[a-\frac1k, b+\frac1k]$, and linear on the two transition intervals, and take $h_k$ similarly with the roles of the transition intervals reversed (so $h_k$ is $1$ on $[a-\frac1k, b+\frac1k]$ and $0$ outside $[a+\frac1k, b-\frac1k]$); then $g_k \nearrow f$ and $h_k \searrow f$ pointwise except at the endpoints $a, b$. Then for each $N$ and $k$ we have
 $$A_N(g_k) \le A_N(f) \le A_N(h_k), \quad I(g_k) \le I(f) \le I(h_k).$$
 For $k$ fixed, take $N\to\infty$. Since $g_k$ and $h_k$ are continuous, this implies that
 $$I(g_k) \le \liminf_{N\to\infty} A_N(f) \le \limsup_{N\to\infty} A_N(f) \le I(h_k).$$

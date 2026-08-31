@@ -106,7 +106,7 @@ How to compute:
 
 6. Note that $\ZZ^m \mapsvia{f} \ZZ^n$ has an $n\times m$ matrix
 
-7. Row reduce, image is span of rows with pivots. Kernel can be easily found by taking RREF, padding with zeros so matrix is square and has all diagonals, then reading down diagonal - if a zero is encountered on $n$th element, take that column vector as a basis element with $-1$ substituted in for the $n$th entry.
+7. Row reduce, image is span of rows with pivots. The kernel is found by taking the RREF, padding with zero rows so the matrix is square with all diagonal entries present, then reading down the diagonal: whenever a zero is encountered in the $n$-th diagonal position, take the column vector with $-1$ in the $n$-th entry and zeros elsewhere (and the pivot columns filled in to satisfy the homogeneous equations) as a basis element of the kernel.
 
   For example:
 \[

@@ -52,7 +52,7 @@ G & H
 
 > Note that if any of these matrix multiplications don't make sense, the results won't be valid!
 
-If $A$ is upper triangular, some entries of $A^k$ can be computed easily:
+If $A$ is upper triangular, the diagonal entries of $A^k$ are the $k$-th powers of the diagonal entries of $A$:
 
 \[
 A\da\left(\begin{array}{ccc}
@@ -67,6 +67,7 @@ a_1^k & & * \\
 0 & & a_n^k
 \end{array}\right)
 .\]
+This follows by induction on $k$: the product of two upper-triangular matrices is upper-triangular, and the $i$-th diagonal entry of a product is the product of the $i$-th diagonal entries, so the diagonal of $A^k$ is $(a_1^k, \dots, a_n^k)$.
 
 Traces of products can be commuted: $\trace(AB) = \trace(BA)$, so similar matrices have identical traces since $\trace(PJP\inv) = \trace{PP\inv J} = \trace{J}$.
 
@@ -83,7 +84,7 @@ Testing $f(2) = 0$ works, and dividing by $x-2$ yields
 
 ![](../../../assets/figures/2021-07-24_18-32-38.png)
 
-The rest can be factored by inspection:
+The remaining quadratic factor is $x^2-4x+4 = (x-2)^2$ (it is a perfect square, since $x^2 - 4x + 4 = (x-2)^2$), so
 \[
 f(x) = (x-2)(x^2-4x+4) = (x-2)^3
 .\]

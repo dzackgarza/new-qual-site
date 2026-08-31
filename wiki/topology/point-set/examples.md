@@ -156,7 +156,7 @@ Some facts about the discrete topology:
 - Always Hausdorff
 - Compact iff finite
 - Totally disconnected
-- If $X$ is discrete, every map $f:X\to Y$ for any $Y$ is continuous (obvious!)
+- If $X$ is discrete, every map $f:X\to Y$ for any $Y$ is continuous: for any open $V \subseteq Y$, the preimage $f^{-1}(V)$ is a subset of $X$, and every subset of a discrete space is open, so $f^{-1}(V)$ is open.
 
 :::
 
@@ -165,7 +165,7 @@ Some facts about the indiscrete topology:
 
 - Definition: the only open sets are $\emptyset, X$
 - Never Hausdorff
-- If $Y$ is indiscrete, every map $f:X\to Y$ is continuous (obvious!)
+- If $Y$ is indiscrete, every map $f:X\to Y$ is continuous: the only open sets in $Y$ are $\emptyset$ and $Y$, whose preimages are $\emptyset$ and $X$, both open in $X$.
 - Always compact
 
 :::

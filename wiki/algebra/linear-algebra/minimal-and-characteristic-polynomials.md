@@ -63,7 +63,7 @@ Since $f(2) = 0$, divide by $x-2$:
 
 ![](../../../../assets/assets/figures/2021-07-24_18-32-38.png)
 
-and factor the rest by inspection, $f(x) = (x-2)(x^2-4x+4) = (x-2)^3$.
+and the remaining quadratic factor is $x^2-4x+4 = (x-2)^2$ (a perfect square), so $f(x) = (x-2)(x^2-4x+4) = (x-2)^3$.
 
 :::
 
