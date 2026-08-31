@@ -51,10 +51,11 @@ Let $U \in X$ be closed.
 :::
 
 ::: {.proof title="of b"}
-Note that any finite space is clearly compact.
+Note that any finite space is compact: a finite set has only finitely many open sets, so every open cover is finite and admits a finite subcover (the cover itself).
 
 Take $f: ([2], \tau_1) \to ([2], \tau_2)$ to be the identity map, where $\tau_1$ is the discrete topology and $\tau_2$ is the indiscrete topology.
-Any map into an indiscrete topology is continuous, and $f$ is clearly a bijection.
+Any map into an indiscrete topology is continuous, since the only open sets in the codomain are $\emptyset$ and $[2]$, whose preimages ($\emptyset$ and $[2]$) are open in $\tau_1$.
+The identity map is a bijection.
 
 Let $g$ be the inverse map; then note that $1 \in \tau_1$ but $g\inv(1) = 1$ is not in $\tau_2$, so $g$ is not continuous.
 :::

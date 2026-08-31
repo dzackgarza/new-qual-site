@@ -93,7 +93,7 @@ Compare Example 3 of §31.]
 
 <1>2. Part (c) & (d): Homeomorphism $f_c: \mathbb{R}^2 \to A \cup B_c$ and local 2-euclidean structure.
     *Proof:*
-    <2>1. $f_c$ is clearly bijective from $\mathbb{R}^2$ onto $A \cup B_c$.
+    <2>1. $f_c$ is bijective from $\mathbb{R}^2$ onto $A \cup B_c$: on $x > 0$ it is the diffeomorphism onto $A$ of <2>2, on $x < 0$ it is the Cartesian identification onto $B_c$ of <2>3, and the two pieces meet only at $x = 0$, where $f_c(0, y) = (0, c, 0)$ is the single point of $A \cap B_c$; hence $f_c$ is injective and surjective onto $A \cup B_c$.
     <2>2. On $x > 0$, $f_c(x, y) = (x, c + xy, 0)$ is a smooth diffeomorphism onto $A$ with continuous inverse $(u, v, 0) \mapsto (u, \frac{v-c}{u})$.
     <2>3. On $x < 0$, $f_c(x, y) = (x, y, c)$ is the standard Cartesian identification.
     <2>4. At $x = 0$, the image of the basic product neighborhood $(-\varepsilon, \varepsilon) \times (a, b) \subset \mathbb{R}^2$ under $f_c$ is precisely $A_c((a, b), \varepsilon) \cup B_c((a, b), \varepsilon)$, which is the type (iii) basis element of $X$.

@@ -47,7 +47,7 @@ Since $p^k m = 0$, we obtain $atm + 0 = m$, so $atm = m$.
 
 **(b) Characterization of purity for $\langle p \rangle$-primary modules:**
 
-The forward direction ($\implies$) is immediate by setting $r = p^k$.
+The forward direction ($\implies$): if $S$ is pure, then $S \cap rM = rS$ holds for every $r \in R$; taking $r = p^k$ for each $k \ge 0$ gives exactly $S \cap p^k M = p^k S$.
 
 For the reverse direction ($\Longleftarrow$): Assume $S \cap p^k M = p^k S$ for all $k \geq 0$.
 Let $r \in R$.

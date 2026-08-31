@@ -47,7 +47,7 @@ $$\overline{A} = \bigcap \{F \subseteq X \mid F \text{ is closed and } A \subset
 <1>3. Proof that $K \subseteq \overline{A}$:
     *Proof:*
     <2>1. We show that $\overline{A}$ itself is a closed set containing $A$.
-    <2>2. Clearly $A \subseteq \overline{A}$ (since if $a \in A$, any neighborhood $U \ni a$ contains $a \in U \cap A$).
+    <2>2. We have $A \subseteq \overline{A}$: if $a \in A$, then any neighborhood $U \ni a$ contains $a$, and $a \in A$, so $U \cap A \neq \emptyset$; hence $a$ satisfies the defining condition of $\overline{A}$.
     <2>3. To see that $\overline{A}$ is closed, consider its complement $X \setminus \overline{A}$.
         If $y \in X \setminus \overline{A}$, there exists an open set $V \ni y$ such that $V \cap A = \varnothing$.
         For any $z \in V$, $V$ is an open neighborhood of $z$ disjoint from $A$, so $z \notin \overline{A}$.

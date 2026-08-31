@@ -37,7 +37,7 @@ Show that the product of two Hausdorff spaces is Hausdorff.
     $$x_1 \in U_1, \qquad x_2 \in U_2, \qquad U_1 \cap U_2 = \emptyset.$$
     <2>2. Define $W_1 = U_1 \times Y$ and $W_2 = U_2 \times Y$.
     <2>3. By the definition of the product topology, $W_1$ and $W_2$ are open subsets of $X \times Y$.
-    <2>4. Clearly $p_1 = (x_1, y_1) \in W_1$ and $p_2 = (x_2, y_2) \in W_2$.
+    <2>4. We have $p_1 = (x_1, y_1) \in W_1$ since $x_1 \in U_1$ and $y_1 \in Y$, and $p_2 = (x_2, y_2) \in W_2$ since $x_2 \in U_2$ and $y_2 \in Y$.
     <2>5. The intersection is
     $$W_1 \cap W_2 = (U_1 \times Y) \cap (U_2 \times Y) = (U_1 \cap U_2) \times Y = \emptyset \times Y = \emptyset.$$
     <2>6. Thus $W_1$ and $W_2$ are disjoint open neighborhoods separating $p_1$ and $p_2$.

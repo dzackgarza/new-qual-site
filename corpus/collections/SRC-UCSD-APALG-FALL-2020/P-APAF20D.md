@@ -79,7 +79,24 @@ definition of the inner product.
 :::
 <2>3. The value is $3$.
 ::: {.proof}
-direct computation (verified numerically): the inner product equals $3$.
+Compute the product characters: $\chi_2\chi_5 = (24, 0, \frac{-1-\sqrt{-7}}{2}, \frac{-1+\sqrt{-7}}{2}, 0, 0)$ and $\chi_3\chi_5 = (24, 0, \frac{-1+\sqrt{-7}}{2}, \frac{-1-\sqrt{-7}}{2}, 0, 0)$.
+Only the classes $\gamma_1, \gamma_3, \gamma_4$ contribute (the others have a zero factor), so
+\[
+\langle \chi_2\chi_5, \chi_3\chi_5\rangle
+= \frac{1}{168}\left[1\cdot 24\cdot 24 + 24\cdot \frac{-1-\sqrt{-7}}{2}\cdot \frac{-1-\sqrt{-7}}{2} + 24\cdot \frac{-1+\sqrt{-7}}{2}\cdot \frac{-1+\sqrt{-7}}{2}\right].
+\]
+Here $\overline{\frac{-1+\sqrt{-7}}{2}} = \frac{-1-\sqrt{-7}}{2}$, and
+\[
+\left(\frac{-1-\sqrt{-7}}{2}\right)^2 = \frac{-3+\sqrt{-7}}{2}, \qquad
+\left(\frac{-1+\sqrt{-7}}{2}\right)^2 = \frac{-3-\sqrt{-7}}{2}.
+\]
+Therefore
+\[
+\langle \chi_2\chi_5, \chi_3\chi_5\rangle
+= \frac{1}{168}\left[576 + 24\cdot\frac{-3+\sqrt{-7}}{2} + 24\cdot\frac{-3-\sqrt{-7}}{2}\right]
+= \frac{1}{168}\left[576 - 36 - 36\right]
+= \frac{504}{168} = 3.
+\]
 :::
 
 <1>3. Q.E.D.

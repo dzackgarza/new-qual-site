@@ -57,8 +57,8 @@ $(0,1)$ defined by $x_n = \frac{n}{n+1}$. Observe that
 $$f(x_n) = \frac{\frac{n}{n+1}}{1-\left(\frac{n}{n+1}\right)^2} 
 = \frac{n(n+1)}{(n+1)^2 - n^2} = \frac{n(n+1)}{[(n+1)-n][(n+1)+n]} 
 = \frac{n(n+1)}{2n+1}$$ Written as
-$x_n = 1 - \frac{1}{n+1}$, one can more easily see that
-$(x_n)_{n=1}^\infty$ converges to $1$ in $\mathbb{R}$, hence is
+$x_n = 1 - \frac{1}{n+1}$, we see directly that
+$(x_n)_{n=1}^\infty$ converges to $1$ in $\mathbb{R}$ (since $\frac{1}{n+1} \to 0$), hence is
 Cauchy in $(0,1)$. Now, let $\delta > 0$ and choose
 $N\in \mathbb{N}$ such that $|x_n - x_m| < \delta$ when
 $n,m \geq N$. For $\epsilon < \frac{1}{8}$ we have

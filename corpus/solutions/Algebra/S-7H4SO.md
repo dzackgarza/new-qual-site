@@ -51,4 +51,6 @@ Classes in $G/Z(G)$ are either images of $1$ or $2$ classes in $G$:
 | $\chi_8$ | 5 | -1 | 1 | 0 | 0 |
 
 Observe it's a simple group of order 60. So it must be $A_5$.
+
+To justify this: the character table shows $H$ has no nontrivial proper normal subgroup, since a normal subgroup would be a union of conjugacy classes whose size divides $60$ and whose character-theoretic kernel is nontrivial; checking the class sizes $\{1, 1, 20, 12, 12\}$ (after merging under $Z(G)$) shows no such union forms a subgroup. Hence $H$ is simple of order $60$. The only simple group of order $60$ is $A_5$ (a standard classification: a simple group of order $60$ has $n_2 \in \{5, 15\}$ and $n_5 = 6$, forcing it to act faithfully on $5$ Sylow $2$-subgroups or $6$ Sylow $5$-subgroups, embedding it in $S_5$; the only simple subgroup of $S_5$ of order $60$ is $A_5$).
 :::

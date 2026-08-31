@@ -16,7 +16,7 @@ review: draft
 ---
 
 :::{.solution}
-(a) Define $A_N(f) = \frac1N\sum_{n=0}^{N-1} f(n\alpha+\mathbb{Z})$ and $I(f)=\int_0^1 f(x+\mathbb{Z})\,dx$. First we show the conclusion when $f$ is a trig polynomial. By linearity, it's enough to assume $f(x)=e^{2\pi ikx}$ for some $k\in\mathbb{Z}$. If $k=0$ then both sides are clearly equal to 1 so assume $k\ne0$. Then we have
+(a) Define $A_N(f) = \frac1N\sum_{n=0}^{N-1} f(n\alpha+\mathbb{Z})$ and $I(f)=\int_0^1 f(x+\mathbb{Z})\,dx$. First we show the conclusion when $f$ is a trig polynomial. By linearity, it's enough to assume $f(x)=e^{2\pi ikx}$ for some $k\in\mathbb{Z}$. If $k=0$ then $f \equiv 1$, so $A_N(f) = \frac1N\sum_{n=0}^{N-1} 1 = 1$ and $I(f) = \int_0^1 1\,dx = 1$, hence both sides equal $1$; so assume $k\ne0$. Then we have
 $$A_N(f) = \frac1N\sum_{n=0}^{N-1}(e^{2\pi ik\alpha})^n = \frac1N\frac{1-e^{2\pi ik\alpha N}}{1-e^{2\pi ik\alpha}} \to 0 \quad \text{as } N\to\infty$$
 $$I(f) = \int_0^1 e^{2\pi ikx}\,dx = 0.$$
 So the result is verified for trig polynomials. Now for general $f\in C(\mathbb{R}/\mathbb{Z})$, fix $\epsilon>0$ and let $P$ be a trig polynomial with $||f-P||_{L^\infty}<\epsilon$. Then we have

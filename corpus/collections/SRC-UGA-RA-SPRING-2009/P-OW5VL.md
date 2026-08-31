@@ -37,7 +37,7 @@ $$
     *Proof:*
     <2>1. Since $f$ is continuous on the compact interval $[0, 1]$, the difference $|f(x) - f(1)|$ is continuous and bounded:
     $$M = \sup_{x \in [0, 1]} |f(x) - f(1)| < \infty.$$
-    <2>2. If $M = 0$, $f$ is constant, and the result is immediate. Assume $M > 0$.
+    <2>2. If $M = 0$, then $|f(x) - f(1)| = 0$ for all $x$, so $f \equiv f(1)$ is constant; then $\int_0^1 k x^{k-1} f(x)\,dx = f(1)\int_0^1 k x^{k-1}\,dx = f(1)$ by <1>1, and the result holds. Assume $M > 0$.
     <2>3. Let $\varepsilon > 0$ be given.
     <2>4. By continuity of $f$ at $x = 1$, there exists $\delta \in (0, 1)$ such that
     $$x \in [1 - \delta, 1] \implies |f(x) - f(1)| < \frac{\varepsilon}{2}.$$

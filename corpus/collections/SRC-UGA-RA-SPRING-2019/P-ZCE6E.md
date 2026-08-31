@@ -56,7 +56,7 @@ where we define
 H: \RR^d \cross \RR &\to \RR \\
 (x, t) &\mapsto f(x) - t
 .\]
-  - Note: this is "clearly" measurable!
+  - Note: $H$ is measurable because it is the difference of two measurable functions, as shown below.
 
 - If we can show both sets are measurable, we're done, since $\sigma\dash$algebras are closed under countable intersections.
 - The first set is measurable since it is a Borel set in $\RR^{d+1}$.

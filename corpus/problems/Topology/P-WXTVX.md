@@ -37,7 +37,7 @@ Prove that $X$ is **connected** if and only if the only subsets of $X$ that are 
     <2>4. Since $A \ne X$, $V = X \setminus A$ is non-empty.
     <2>5. Since $A$ is open in $X$, $U = A$ is open in $X$.
     <2>6. Since $A$ is closed in $X$, $V = X \setminus A$ is open in $X$.
-    <2>7. Clearly, $U \cap V = A \cap (X \setminus A) = \varnothing$ and $U \cup V = A \cup (X \setminus A) = X$.
+    <2>7. We have $U \cap V = A \cap (X \setminus A) = \varnothing$ (no point lies both in $A$ and in its complement) and $U \cup V = A \cup (X \setminus A) = X$ (every point of $X$ lies in $A$ or in its complement).
     <2>8. Thus $\{U, V\}$ forms a separation of $X$, so $X$ is **disconnected** (not connected).
     <2>9. Therefore, if $X$ is connected, the only clopen subsets must be $\varnothing$ and $X$.
 

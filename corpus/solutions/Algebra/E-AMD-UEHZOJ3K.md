@@ -30,7 +30,7 @@ $$
     <2>2. Let $\mathfrak{p} \in \operatorname{Spec}(R)$ be any prime ideal of $R$.
     <2>3. Since $\mathfrak{p}$ is an ideal, $0 \in \mathfrak{p}$, so $x^n \in \mathfrak{p}$.
     <2>4. We prove by induction on $k \ge 1$ that $x^k \in \mathfrak{p} \implies x \in \mathfrak{p}$.
-    <2>5. Base case $k = 1$ is immediate.
+    <2>5. Base case $k = 1$: $x^1 = x \in \mathfrak{p}$ is exactly the hypothesis, so the claim holds.
     <2>6. Induction step: if $x^k = x \cdot x^{k-1} \in \mathfrak{p}$, then since $\mathfrak{p}$ is prime, either $x \in \mathfrak{p}$ or $x^{k-1} \in \mathfrak{p}$. By the induction hypothesis, $x \in \mathfrak{p}$ in either case.
     <2>7. Thus $x \in \mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $R$.
     <2>8. Therefore $x \in \bigcap_{\mathfrak{p} \in \operatorname{Spec}(R)} \mathfrak{p}$.
