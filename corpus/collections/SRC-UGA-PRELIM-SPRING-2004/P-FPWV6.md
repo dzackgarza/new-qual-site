@@ -40,9 +40,7 @@ e) a (real) power series whose domain of convergence is the closed interval $[0,
 P(n) \implies Q(n), \quad \text{where } P(n) \text{ is } ``4 \mid n" \text{ and } Q(n) \text{ is } ``2 \mid n".
 \]
 If $4 \mid n$, then $n = 4k = 2(2k)$, so $2 \mid n$, which is a true implication.
-Proof: divisibility in $\mathbb{Z}$.
 <2>2. The converse $Q(n) \implies P(n)$ is false, as witnessed by the counterexample $n = 2$: $2 \mid 2$ is true, but $4 \mid 2$ is false.
-Proof: counterexample $n = 2$.
 
 <1>2. Part (b): Continuous at $7$ but not differentiable at $7$:
 <2>1. Define $f: \mathbb{R} \to \mathbb{R}$ by:
@@ -50,59 +48,48 @@ Proof: counterexample $n = 2$.
 f(x) = |x - 7|.
 \]
 $f$ is continuous on $\mathbb{R}$ as the composition of continuous functions.
-Proof: continuity of absolute value and polynomial maps.
 <2>2. Compute the one-sided derivative difference quotients at $x = 7$:
 \[
 \lim_{h \to 0^+} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^+} \frac{|h|}{h} = 1, \qquad \lim_{h \to 0^-} \frac{f(7+h) - f(7)}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1.
 \]
 Because the left and right limits do not agree, $f'(7)$ does not exist.
-Proof: distinct one-sided limits.
 
 <1>3. Part (c): Separately continuous on $\mathbb{R}^2$ but not continuous at $(0, 0)$:
 <2>1. Define $f: \mathbb{R}^2 \to \mathbb{R}$ by:
 \[
 f(x, y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & (x, y) \neq (0, 0), \\ 0 & (x, y) = (0, 0). \end{cases}
 \]
-Proof: definition.
 <2>2. For any fixed $y_0$, $x \mapsto f(x, y_0)$ is continuous on $\mathbb{R}$ (at $x = 0$, $f(x, 0) = 0$ for all $x$, so $\lim_{x\to 0} f(x, 0) = 0 = f(0, 0)$).
 Symmetrically, for any fixed $x_0$, $y \mapsto f(x_0, y)$ is continuous on $\mathbb{R}$.
 Thus $f$ is separately continuous in each variable.
-Proof: single-variable limits along horizontal and vertical lines.
 <2>3. Along the line $y = x$, for $x \neq 0$:
 \[
 f(x, x) = \frac{x^2}{x^2 + x^2} = \frac{1}{2}.
 \]
 Thus $\lim_{x \to 0} f(x, x) = \frac{1}{2} \neq 0 = f(0, 0)$, so $f$ is not continuous at $(0, 0)$.
-Proof: limit along the diagonal line.
 
 <1>4. Part (d): A bounded sequence that is not Cauchy:
 <2>1. Consider the sequence $(a_n)_{n=1}^\infty$ defined by $a_n = (-1)^n$.
 Then $|a_n| = 1 \le 1$ for all $n$, so the sequence is bounded.
-Proof: bounded by 1.
 <2>2. For any $n \in \mathbb{N}$, $|a_{n+1} - a_n| = |(-1)^{n+1} - (-1)^n| = 2$.
 Taking $\varepsilon = 1$, there is no $N$ such that $|a_n - a_m| < 1$ for all $n, m \ge N$.
 Thus $(a_n)$ is not Cauchy.
-Proof: consecutive differences bounded away from 0.
 
 <1>5. Part (e): A real power series whose domain of convergence is $[0, 2]$:
 <2>1. Define the power series centered at $c = 1$:
 \[
 S(x) = \sum_{n=1}^\infty \frac{(x - 1)^n}{n^2}.
 \]
-Proof: definition.
 <2>2. The radius of convergence $R$ satisfies:
 \[
 \frac{1}{R} = \lim_{n \to \infty} \left| \frac{1}{n^2} \right|^{1/n} = 1 \implies R = 1.
 \]
 Thus the series converges absolutely for $|x - 1| < 1$ (i.e. $x \in (0, 2)$) and diverges for $|x - 1| > 1$.
-Proof: Cauchy–Hadamard formula.
 <2>3. At the endpoints:
 - For $x = 2$: $\sum_{n=1}^\infty \frac{1^n}{n^2} = \sum_{n=1}^\infty \frac{1}{n^2}$, which converges (a $p$-series with $p = 2 > 1$).
 - For $x = 0$: $\sum_{n=1}^\infty \frac{(-1)^n}{n^2}$, which converges absolutely by comparison to $\sum \frac{1}{n^2}$.
 Therefore the exact interval of convergence is the closed interval $[0, 2]$.
-Proof: endpoint analysis.
 
 <1>6. Conclusion:
 All five requested examples are defined and verified. Q.E.D.
-Proof: <1>1 through <1>5.
 :::

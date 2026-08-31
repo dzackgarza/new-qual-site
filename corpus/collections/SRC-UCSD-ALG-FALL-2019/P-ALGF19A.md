@@ -29,30 +29,25 @@ Since $P$ is not a Sylow $p$-subgroup, there exists a Sylow $p$-subgroup $Q \le 
 \[
 P \subsetneq Q.
 \]
-Proof: Sylow's Theorem on subgroup containment.
 
 <1>2. Action of $P$ on the coset space $Q/P$:
 <2>1. Let $X = Q/P = \{xP \mid x \in Q\}$ be the set of left cosets of $P$ in $Q$.
 Because $P \subsetneq Q$ and $Q$ is a $p$-group, $|X| = [Q : P] = p^k$ for some integer $k \ge 1$.
-Proof: Lagrange's Theorem for $p$-groups.
 <2>2. Let $P$ act on $X$ by left multiplication: $y \cdot (xP) = (yx)P$ for $y \in P, x \in Q$.
 Since $P$ is a $p$-group, the number of fixed points satisfies the fixed point congruence:
 \[
 |X^P| \equiv |X| \equiv 0 \pmod p.
 \]
-Proof: Orbit-Stabilizer Theorem / fixed-point congruence for $p$-group actions.
 <2>3. A coset $xP \in X$ is fixed by $P$ if and only if:
 \[
 y x P = x P \quad \forall y \in P \iff x^{-1} y x \in P \quad \forall y \in P \iff x \in N_Q(P).
 \]
 Therefore the fixed point set is $X^P = N_Q(P) / P$.
-Proof: definition of normalizer in $Q$.
 <2>4. The coset $eP = P$ is always fixed, so $|X^P| \ge 1$.
 Since $p \mid |X^P|$ and $|X^P| \ge 1$, we have $|X^P| = [N_Q(P) : P] \ge p$, and:
 \[
 p \mid [N_Q(P) : P].
 \]
-Proof: congruence modulo $p$ with non-zero fixed points.
 
 <1>3. Divisibility of $|N_G(P)/P|$:
 <2>1. Since $N_Q(P) = N_G(P) \cap Q$, we have the tower of subgroups $P \le N_Q(P) \le N_G(P)$.
@@ -60,11 +55,8 @@ By the multiplicativity of subgroup indices:
 \[
 |N_G(P) / P| = [N_G(P) : P] = [N_G(P) : N_Q(P)] \cdot [N_Q(P) : P].
 \]
-Proof: Tower Law for subgroup indices.
 <2>2. Since $p$ divides $[N_Q(P) : P]$, $p$ divides $|N_G(P)/P|$.
-Proof: divisibility in $\mathbb{Z}$.
 
 <1>4. Conclusion:
 $p$ divides $|N_G(P)/P|$. Q.E.D.
-Proof: <1>1 through <1>3.
 :::

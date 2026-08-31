@@ -28,14 +28,12 @@ Show that if $A$ is a retract of $B^2$, then every continuous map $f: A \to A$ h
 r(a) = a \quad \text{for all } a \in A.
 \]
 Let $i: A \hookrightarrow B^2$ denote the inclusion map.
-Proof: definition of a topological retract.
 <2>2. Let $f: A \to A$ be an arbitrary continuous map.
 Define the map $g: B^2 \to B^2$ by composition:
 \[
 g = i \circ f \circ r : B^2 \to B^2.
 \]
 Because $r, f$, and $i$ are continuous, $g$ is a continuous map from the closed unit disk $B^2$ to itself.
-Proof: composition of continuous maps.
 
 <1>2. Existence of a fixed point via Brouwer’s Fixed Point Theorem:
 <2>1. By the Brouwer Fixed Point Theorem in dimension 2, every continuous map from $B^2$ to $B^2$ has at least one fixed point.
@@ -43,7 +41,6 @@ Thus there exists a point $x_0 \in B^2$ such that:
 \[
 g(x_0) = x_0.
 \]
-Proof: Brouwer Fixed Point Theorem for $B^2$.
 
 <1>3. Proof that $x_0 \in A$ and $f(x_0) = x_0$:
 <2>1. By definition of $g$, the image of $g$ is contained in $A$:
@@ -51,17 +48,13 @@ Proof: Brouwer Fixed Point Theorem for $B^2$.
 x_0 = g(x_0) = f(r(x_0)) \in A.
 \]
 Thus the fixed point $x_0$ necessarily belongs to the subspace $A$.
-Proof: image of $f$ is in $A$.
 <2>2. Since $x_0 \in A$ and $r$ is the identity on $A$, we have $r(x_0) = x_0$.
-Proof: $r|_A = \operatorname{id}_A$.
 <2>3. Substituting $r(x_0) = x_0$ into the equation $x_0 = f(r(x_0))$ gives:
 \[
 f(x_0) = x_0.
 \]
 Thus $x_0 \in A$ is a fixed point of $f$.
-Proof: substitution.
 
 <1>4. Conclusion:
 Every continuous map $f: A \to A$ has a fixed point. Q.E.D.
-Proof: <1>1 through <1>3.
 :::

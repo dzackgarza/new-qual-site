@@ -42,22 +42,18 @@ The annihilator of $x$ is:
 \[
 \operatorname{ann}(x) = \{r \in A \mid r a \in P_1\} = (P_1 : a).
 \]
-Proof: definition of annihilator for quotient modules.
 <2>2. Because $P_1$ is a prime ideal and $a \notin P_1$, the condition $ra \in P_1$ implies $r \in P_1$.
 Thus:
 \[
 \operatorname{ann}(x) = P_1 \quad \text{for every } x \in N_1 \setminus \{0\}.
 \]
-Proof: definition of prime ideal.
 <2>3. By identical reasoning:
 \[
 \operatorname{ann}(y) = P_2 \quad \text{for every } y \in N_2 \setminus \{0\}.
 \]
-Proof: symmetry.
 <2>4. Let $z \in N_1 \cap N_2$.
 If $z \neq 0$, then simultaneously $\operatorname{ann}(z) = P_1$ and $\operatorname{ann}(z) = P_2$, which implies $P_1 = P_2$, contradicting $P_1 \neq P_2$.
 Therefore $z = 0$, so $N_1 \cap N_2 = \{0\}$.
-Proof: proof by contradiction.
 
 <1>2. Part (b): Existence of $N \cong A/P$ over a Noetherian ring:
 <2>1. Assuming $M \neq 0$, consider the family of ideals:
@@ -65,10 +61,8 @@ Proof: proof by contradiction.
 \Sigma = \{ \operatorname{ann}(x) \mid x \in M \setminus \{0\} \}.
 \]
 Because $M \neq 0$, $\Sigma$ is non-empty.
-Proof: existence of a non-zero element in $M$.
 <2>2. Since $A$ is a Noetherian ring, the non-empty family $\Sigma$ has a maximal element with respect to inclusion.
 Let $P = \operatorname{ann}(x_0) \in \Sigma$ be a maximal element for some $x_0 \in M \setminus \{0\}$.
-Proof: Noetherian ascending chain condition on ideals.
 <2>3. We show that $P$ is a prime ideal:
 - Since $1 \cdot x_0 = x_0 \neq 0$, $1 \notin P$, so $P \subsetneq A$.
 - Let $a, b \in A$ with $ab \in P$ and $b \notin P$.
@@ -79,15 +73,12 @@ Proof: Noetherian ascending chain condition on ideals.
 - By the maximality of $P$ in $\Sigma$ and $P \subseteq \operatorname{ann}(y)$, we must have $\operatorname{ann}(y) = P$.
 - Since $a \in \operatorname{ann}(y) = P$, $a \in P$.
 Thus $P \in \operatorname{Spec}(A)$.
-Proof: primality verification via maximality in $\Sigma$.
 <2>4. Consider the submodule $N = A x_0 \subseteq M$.
 By the First Isomorphism Theorem for modules, the surjective homomorphism $A \to A x_0$ given by $r \mapsto r x_0$ has kernel $\operatorname{ann}(x_0) = P$, giving:
 \[
 N = A x_0 \cong A / P.
 \]
-Proof: First Isomorphism Theorem for modules.
 
 <1>3. Conclusion:
 Parts (a) and (b) are proven. Q.E.D.
-Proof: <1>1 and <1>2.
 :::

@@ -27,26 +27,19 @@ Show that if $U$ is open in $X$ and $A$ is closed in $X$, then $U - A$ is open i
 \[
 U \setminus A = U \cap (X \setminus A).
 \]
-Proof: set-theoretic identity.
 <2>2. Since $A$ is closed in $X$, its complement $X \setminus A$ is open in $X$.
-Proof: definition of closed set.
 <2>3. Because both $U$ and $X \setminus A$ are open in $X$, their finite intersection $U \cap (X \setminus A)$ is open in $X$.
 Therefore $U \setminus A$ is open in $X$.
-Proof: topology axioms (finite intersections of open sets are open).
 
 <1>2. Proof that $A \setminus U$ is closed in $X$:
 <2>1. By definition of set difference:
 \[
 A \setminus U = A \cap (X \setminus U).
 \]
-Proof: set-theoretic identity.
 <2>2. Since $U$ is open in $X$, its complement $X \setminus U$ is closed in $X$.
-Proof: definition of closed set.
 <2>3. Because both $A$ and $X \setminus U$ are closed in $X$, their intersection $A \cap (X \setminus U)$ is closed in $X$.
 Therefore $A \setminus U$ is closed in $X$.
-Proof: topology axioms (intersections of closed sets are closed).
 
 <1>3. Conclusion:
 $U \setminus A$ is open and $A \setminus U$ is closed in $X$. Q.E.D.
-Proof: <1>1 and <1>2.
 :::

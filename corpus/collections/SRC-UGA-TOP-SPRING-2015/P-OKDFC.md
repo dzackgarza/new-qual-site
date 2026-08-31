@@ -34,14 +34,11 @@ Define the set:
 D = \{x_n \mid B_n \in \mathcal{B}, \, B_n \neq \emptyset\}.
 \]
 As a subset of the indexed set of positive integers, $D$ is at most countable.
-Proof: countable choice / indexing by $\mathbb{N}$.
 <2>2. To prove $D$ is dense in $X$, let $U \subseteq X$ be any non-empty open set.
 Since $\mathcal{B}$ is a basis, there exists a non-empty basis element $B_k \in \mathcal{B}$ such that $B_k \subseteq U$.
-Proof: definition of a topological basis.
 <2>3. By construction, $x_k \in B_k \subseteq U$, so $x_k \in D \cap U \neq \emptyset$.
 Thus $D$ intersects every non-empty open set of $X$, so $\overline{D} = X$.
 Hence $X$ has a countable dense subset (is separable).
-Proof: density criterion.
 
 <1>2. Part (b): Separable metric space implies second countable:
 <2>1. Let $(X, d)$ be a metric space containing a countable dense subset $D = \{d_n\}_{n=1}^\infty$.
@@ -50,25 +47,19 @@ Consider the collection of open balls with centers in $D$ and rational radii:
 \mathcal{B} = \{ B(d_n, r) \mid d_n \in D, \, r \in \mathbb{Q}_{>0} \}.
 \]
 As a product of two countable sets $D \times \mathbb{Q}_{>0}$, $\mathcal{B}$ is a countable collection of open subsets of $X$.
-Proof: Cartesian product of countable sets is countable.
 <2>2. Let $U \subseteq X$ be an open set and $x \in U$.
 By definition of the metric topology, there exists $\epsilon > 0$ such that $B(x, \epsilon) \subseteq U$.
 Choose a rational number $r \in \mathbb{Q}$ such that $0 < r < \epsilon / 2$.
-Proof: density of $\mathbb{Q}$ in $\mathbb{R}$.
 <2>3. Since $D$ is dense in $X$, the open ball $B(x, r)$ contains some point $d_n \in D$, so $d(x, d_n) < r$.
 Then $x \in B(d_n, r)$.
-Proof: density of $D$.
 <2>4. For any $y \in B(d_n, r)$, by the triangle inequality:
 \[
 d(y, x) \le d(y, d_n) + d(d_n, x) < r + r = 2r < \epsilon.
 \]
 Thus $y \in B(x, \epsilon) \subseteq U$, which proves $B(d_n, r) \subseteq U$.
 Therefore $x \in B(d_n, r) \subseteq U$ with $B(d_n, r) \in \mathcal{B}$.
-Proof: triangle inequality.
 <2>5. Thus $\mathcal{B}$ is a countable basis for the topology of $X$, so $X$ is second countable.
-Proof: basis criterion for open sets.
 
 <1>3. Conclusion:
 Every second countable space is separable, and every separable metric space is second countable. Q.E.D.
-Proof: <1>1 and <1>2.
 :::

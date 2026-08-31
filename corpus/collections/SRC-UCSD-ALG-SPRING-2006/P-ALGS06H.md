@@ -31,55 +31,44 @@ Find the characteristic and minimal polynomials of $\phi$.
 <2>1. Let $G = \mathbb{F}_q^\times$ be the multiplicative group of the finite field $\mathbb{F}_q$, which is an abelian group of order $|G| = q - 1$.
 Let $m = \exp(G)$ denote the exponent of $G$, which is the least common multiple of the orders of all elements in $G$.
 By Lagrange's Theorem, $m \le q - 1$.
-Proof: definition of exponent of a finite abelian group.
 <2>2. By definition of exponent, every element $x \in \mathbb{F}_q^\times$ satisfies $x^m - 1 = 0$.
 The polynomial $x^m - 1 \in \mathbb{F}_q[x]$ has degree $m$ and can have at most $m$ roots in the field $\mathbb{F}_q$.
 Because all $q - 1$ elements of $\mathbb{F}_q^\times$ are roots:
 \[
 q - 1 \le m.
 \]
-Proof: number of roots of a polynomial over a field cannot exceed its degree.
 <2>3. Combining $m \le q - 1$ and $q - 1 \le m$ gives $m = q - 1$.
 For any finite abelian group, there exists an element whose order equals the exponent $m$.
 Thus there exists $\alpha \in \mathbb{F}_q^\times$ with $o(\alpha) = q - 1 = |\mathbb{F}_q^\times|$, so $\mathbb{F}_q^\times = \langle \alpha \rangle$ is cyclic.
-Proof: existence of an element of maximal order in finite abelian groups.
 
 <1>2. Part (b): Existence of an irreducible polynomial of degree $n$ over $\mathbb{F}_q$:
 <2>1. Consider the finite field extension $\mathbb{F}_{q^n}$, which is an $n$-dimensional vector space over $\mathbb{F}_q$, so $[\mathbb{F}_{q^n} : \mathbb{F}_q] = n$.
-Proof: existence and uniqueness of finite fields $\mathbb{F}_{q^n}$.
 <2>2. By Part (a), the multiplicative group $\mathbb{F}_{q^n}^\times$ is cyclic.
 Let $\gamma$ be a generator of $\mathbb{F}_{q^n}^\times$.
 Then $\mathbb{F}_{q^n} = \mathbb{F}_q(\gamma)$.
-Proof: all non-zero elements of $\mathbb{F}_{q^n}$ are powers of $\gamma$.
 <2>3. Let $m_\gamma(x) \in \mathbb{F}_q[x]$ be the minimal polynomial of $\gamma$ over $\mathbb{F}_q$.
 By field theory, $m_\gamma(x)$ is irreducible over $\mathbb{F}_q$, and its degree is:
 \[
 \deg(m_\gamma) = [\mathbb{F}_q(\gamma) : \mathbb{F}_q] = [\mathbb{F}_{q^n} : \mathbb{F}_q] = n.
 \]
 Thus $m_\gamma(x)$ is an irreducible polynomial of degree $n$ over $\mathbb{F}_q$.
-Proof: degree of minimal polynomial of a primitive generator.
 
 <1>3. Part (c): Characteristic and minimal polynomials of the Frobenius endomorphism $\phi$:
 <2>1. The map $\phi: \mathbb{F}_{q^n} \to \mathbb{F}_{q^n}$ given by $\phi(x) = x^q$ is the Frobenius $\mathbb{F}_q$-automorphism.
 For any $x \in \mathbb{F}_{q^n}$, $\phi^n(x) = x^{q^n} = x$, so $\phi^n = \operatorname{id}_{\mathbb{F}_{q^n}}$.
 Thus $\phi$ satisfies the polynomial $T^n - 1 \in \mathbb{F}_q[T]$.
-Proof: $x^{q^n} = x$ for all $x \in \mathbb{F}_{q^n}$.
 <2>2. By Dedekind's Theorem on the linear independence of distinct group characters/automorphisms, the automorphisms $\{\operatorname{id}, \phi, \phi^2, \ldots, \phi^{n-1}\}$ are linearly independent over $\mathbb{F}_{q^n}$ (and hence over $\mathbb{F}_q$).
-Proof: Dedekind's Lemma on linear independence of automorphisms.
 <2>3. Therefore, no non-zero polynomial in $\mathbb{F}_q[T]$ of degree strictly less than $n$ can annihilate $\phi$.
 Since $T^n - 1$ is a monic polynomial of degree $n$ annihilating $\phi$, the minimal polynomial is:
 \[
 m_\phi(T) = T^n - 1.
 \]
-Proof: definition of minimal polynomial.
 <2>4. The characteristic polynomial $\chi_\phi(T)$ is a monic polynomial of degree $\dim_{\mathbb{F}_q}(\mathbb{F}_{q^n}) = n$ which is divisible by $m_\phi(T)$.
 Since $\deg(m_\phi) = n = \deg(\chi_\phi)$ and both are monic:
 \[
 \chi_\phi(T) = T^n - 1.
 \]
-Proof: degree comparison and Cayley–Hamilton Theorem.
 
 <1>4. Conclusion:
 $\mathbb{F}_q^\times$ is cyclic, an irreducible polynomial of degree $n$ exists for every $n \ge 1$, and both the minimal and characteristic polynomials of $\phi$ are $T^n - 1$. Q.E.D.
-Proof: <1>1 through <1>3.
 :::
