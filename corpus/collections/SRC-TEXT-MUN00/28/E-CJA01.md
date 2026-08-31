@@ -22,30 +22,28 @@ Show that $[0, 1]$ is not limit point compact as a subspace of $\mathbb{R}_\ell$
 :::
 
 ::: solution
-**Goal:** Find an infinite subset of $[0,1]$ with no limit point in $\mathbb{R}_\ell$.
+**Goal:** Prove that the closed unit interval $[0, 1]$ endowed with the subspace topology from the lower limit line $\mathbb{R}_\ell$ is not limit point compact.
 
-<1> Work in the Sorgenfrey subspace $[0,1]\subseteq\mathbb{R}_\ell$ and let
-    $$A=\{1-\tfrac1n\mid n\ge2\}\subseteq[0,1].$$
-    The set $A$ is infinite.
-
-<1> Show no point of $[0,1]$ is a limit point of $A$.
+<1>1. Definition of limit point compactness:
     *Proof:*
-    <2>1. Points of $A$ are ordered
-        $$\frac12<\frac23<\frac34<\cdots<1- \frac1n<\cdots .$$
-    <2>2. Let $x_n=1-\frac1n$ with $n\ge2$.
-    <2>3. If $x=x_n$, choose
-        $$\epsilon=\frac12\!\left(\frac{1}{n}-\frac{1}{n+1}\right)>0.$$
-        Then the basic neighborhood $[x_n,x_n+\epsilon)$ contains no point of $A$ except $x_n$.
-    <2>4. If $x\in\left[0,\frac12\right)$, choose $\epsilon<\frac12-x$.
-        Then $[x,x+\epsilon)\cap A=\varnothing$.
-    <2>5. If $x\in(x_n,x_{n+1})$ for some $n\ge2$, choose
-        $$\epsilon< x_{n+1}-x .$$
-        Then $[x,x+\epsilon)\cap A=\varnothing$.
-    <2>6. At $x=1$, the basic neighborhood $[1,1+\epsilon)$ is $\{1\}$ in the subspace $[0,1]$ and has empty intersection with $A$.
+    <2>1. A topological space $X$ is limit point compact (also called countably compact for $T_1$ spaces) if every infinite subset of $X$ has at least one limit point in $X$.
+    <2>2. A point $x \in X$ is a limit point of $A \subseteq X$ if every open neighborhood $U$ of $x$ contains a point of $A$ distinct from $x$ (i.e. $(U \setminus \{x\}) \cap A \neq \emptyset$).
 
-<1> Conclusion:
-    <2>1. $A$ has no limit point in $[0,1]$.
-    <2>2. Therefore $[0,1]$ is not limit point compact in $\mathbb{R}_\ell$.
+<1>2. Construction of an infinite subset $A \subset [0, 1]$:
+    *Proof:*
+    <2>1. Define
+    $$A = \left\{ 1 - \frac{1}{n} : n \in \mathbb{N}, \; n \ge 2 \right\} = \left\{ \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \dots \right\} \subset [0, 1].$$
+    <2>2. Since the sequence $x_n = 1 - 1/n$ is strictly increasing, $A$ is an infinite subset of $[0, 1]$.
 
-Authored by **Codex 5.3 Spark Extra High**.
+<1>3. Verification that $A$ has no limit points in $[0, 1]_{\mathbb{R}_\ell}$:
+    *Proof:*
+    We show that for every $x \in [0, 1]$, there exists an open neighborhood $U_x$ of $x$ in $[0, 1]_{\mathbb{R}_\ell}$ such that $(U_x \setminus \{x\}) \cap A = \emptyset$.
+    <2>1. Case $x \in [0, 1/2)$: The set $U_x = [x, 1/2) \cap [0, 1]$ is open in $[0, 1]_{\mathbb{R}_\ell}$, contains $x$, and satisfies $U_x \cap A = \emptyset$ because every element of $A$ is $\ge 1/2$.
+    <2>2. Case $x = 1 - 1/n \in A$ for some $n \ge 2$: The set $U_x = [1 - 1/n, 1 - 1/(n+1)) \cap [0, 1]$ is open in the lower limit subspace topology, contains $x$, and contains no other element of $A$, so $(U_x \setminus \{x\}) \cap A = \emptyset$.
+    <2>3. Case $x \in (1 - 1/n, 1 - 1/(n+1))$ for some $n \ge 2$: The set $U_x = [x, 1 - 1/(n+1)) \cap [0, 1]$ is open, contains $x$, and satisfies $U_x \cap A = \emptyset$.
+    <2>4. Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\mathbb{R}_\ell}$ and contains no point of $A$, so $(U_1 \setminus \{1\}) \cap A = \emptyset$.
+
+<1>4. Conclusion:
+    *Proof:*
+    The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\mathbb{R}_\ell}$. Therefore $[0, 1]$ is not limit point compact in $\mathbb{R}_\ell$.
 :::

@@ -30,33 +30,41 @@ Show that TFAE:
 :::
 
 ::: solution
-**Goal:** Prove the three statements are equivalent.
+**Goal:** Prove that for a non-trivial commutative ring $A$ with unity $1 \neq 0$, the following statements are equivalent:
+(1) $A$ is a field.
+(2) $A$ is a simple ring (the only ideals of $A$ are $(0)$ and $A$).
+(3) Every ring homomorphism from $A$ to a field $B$ is injective.
 
-<1> Show a field is simple and has injective maps to nonzero fields.
+<1>1. Statement (1) implies Statement (2):
     *Proof:*
-    <2>1. If $A$ is a field and $I\subseteq A$ is an ideal, then either $I=0$ or $1\in I$.
-    <2>2. Since $I= A$ iff $1\in I$, every ideal is $0$ or $A$, so $A$ is simple.
-    <2>3. Let $\varphi:A\to B$ with $B$ a nonzero field and $\varphi\ne0$.
-    <2>4. If $a\in\ker\varphi$ is nonzero, then $a^{-1}$ exists and
-        $$\varphi(1)=\varphi(a a^{-1})=\varphi(a)\varphi(a^{-1})=0,$$
-        impossible. Thus $\ker\varphi=0$.
+    <2>1. Assume $A$ is a field. Let $I \subseteq A$ be an ideal of $A$.
+    <2>2. If $I \neq (0)$, there exists a non-zero element $x \in I$.
+    <2>3. Since $A$ is a field, $x$ has a multiplicative inverse $x^{-1} \in A$.
+    <2>4. By the ideal absorption property, $1 = x^{-1} x \in I$.
+    <2>5. Since $1 \in I$, for any $a \in A$ we have $a = a \cdot 1 \in I$, so $I = A$.
+    <2>6. Thus the only ideals of $A$ are $(0)$ and $A$, which means $A$ is a simple ring.
 
-<1> Show simplicity implies injective maps to nonzero fields.
+<1>2. Statement (2) implies Statement (3):
     *Proof:*
-    <2>1. Let $A$ be simple and $\varphi:A\to B$ a nonzero homomorphism to a nonzero field.
-    <2>2. $\ker\varphi$ is an ideal of $A$, and $\ker\varphi\neq A$ because $\varphi\ne0$.
-    <2>3. Simplicity gives $\ker\varphi=0$, hence $\varphi$ is injective.
+    <2>1. Assume $A$ is simple, and let $\varphi: A \to B$ be a ring homomorphism to a field $B$ (with $\varphi(1_A) = 1_B \neq 0_B$).
+    <2>2. The kernel $\ker \varphi = \{a \in A : \varphi(a) = 0_B\}$ is an ideal of $A$.
+    <2>3. Because $\varphi(1_A) = 1_B \neq 0_B$, $1_A \notin \ker \varphi$, so $\ker \varphi \neq A$.
+    <2>4. Since $A$ is simple, the only other possibility is $\ker \varphi = (0)$.
+    <2>5. Therefore $\varphi$ is injective.
 
-<1> Show injective maps to fields force field and simplicity.
+<1>3. Statement (3) implies Statement (1):
     *Proof:*
-    <2>1. Assume every nonzero homomorphism $A\to$ nonzero field is injective.
-    <2>2. Let $0\ne a\in A$ and suppose $(a)$ is proper.
-    <2>3. Choose a maximal ideal $\mathfrak m\supseteq(a)$.
-    <2>4. The quotient map $\pi:A\to A/\mathfrak m$ is a nonzero map to a field.
-    <2>5. By hypothesis, $\pi$ is injective, so $\mathfrak m=\ker\pi=0$.
-    <2>6. This contradicts $a\in\mathfrak m$ and $a\ne0$. Hence every nonzero $a$ is a unit.
-    <2>7. Thus $A$ is a field (commutative ring with unity is understood by context).
-    <2>8. Then every nonzero ideal of $A$ is all of $A$, so $A$ is simple.
+    <2>1. Assume every ring homomorphism from $A$ to a field is injective.
+    <2>2. Let $x \in A$ be any non-zero element. We want to show that $x$ is a unit in $A$.
+    <2>3. Suppose for contradiction that the principal ideal $(x)$ is proper ($(x) \neq A$).
+    <2>4. By Krull's Theorem, every proper ideal is contained in a maximal ideal, so there exists a maximal ideal $\mathfrak{m} \subset A$ with $(x) \subseteq \mathfrak{m}$.
+    <2>5. The quotient $B = A/\mathfrak{m}$ is a field, and the canonical projection $\pi: A \to A/\mathfrak{m}$ is a ring homomorphism.
+    <2>6. By hypothesis (3), $\pi$ must be injective, which implies $\ker \pi = \mathfrak{m} = (0)$.
+    <2>7. But $x \in (x) \subseteq \mathfrak{m} = (0)$, so $x = 0$, contradicting $x \neq 0$.
+    <2>8. Thus $(x) = A$, which means there exists $y \in A$ such that $xy = 1$.
+    <2>9. Therefore every non-zero element of $A$ is invertible, so $A$ is a field.
 
-Authored by **Codex 5.3 Spark Extra High**.
+<1>4. Conclusion:
+    *Proof:*
+    By <1>1, <1>2, and <1>3, the circular chain of implications $(1) \implies (2) \implies (3) \implies (1)$ holds, establishing equivalence.
 :::

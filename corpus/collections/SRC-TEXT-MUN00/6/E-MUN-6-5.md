@@ -17,24 +17,30 @@ audit:
 ---
 
 ::: {.exercise}
-
 If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
+:::
 
 ::: solution
-**Goal:** Show $A$ and $B$ are finite from finiteness of $A\times B$.
+**Goal:** Determine whether finiteness of $A \times B$ implies finiteness of $A$ and $B$.
 
-<1>1. If $A$ is empty or $B$ is empty, then $A\times B=\varnothing$ is finite and both $A$ and $B$ are finite.
+<1>1. The claim is FALSE in general if one of the sets is empty.
+    *Proof:*
+    <2>1. Suppose $B = \emptyset$.
+    <2>2. By definition of the Cartesian product, $A \times \emptyset = \emptyset$.
+    <2>3. The empty set $\emptyset$ has cardinality $0$, which is finite.
+    <2>4. However, $A$ can be chosen to be an arbitrary infinite set (for example, $A = \mathbb{N}$).
+    <2>5. Thus $A \times B$ is finite while $A$ is infinite.
 
-<1>2. Assume both $A$ and $B$ are nonempty.
-    <2>1. Choose $b_0\in B$.
-    <2>2. The map
-    $$\iota:A\to A\times\{b_0\},\qquad a\mapsto(a,b_0),$$
-    is injective.
-    <2>3. Since $A\times\{b_0\}\subseteq A\times B$, the set $A$ injects into a finite set.
-    <2>4. Therefore $A$ is finite.
+<1>2. If both $A$ and $B$ are nonempty, then BOTH $A$ and $B$ must be finite.
+    *Proof:*
+    <2>1. Since $B \neq \emptyset$, fix an element $b_0 \in B$.
+    <2>2. Define the inclusion map $\iota: A \to A \times B$ by $\iota(a) = (a, b_0)$.
+    <2>3. The map $\iota$ is injective: if $\iota(a_1) = \iota(a_2)$, then $(a_1, b_0) = (a_2, b_0)$, so $a_1 = a_2$.
+    <2>4. Since $A \times B$ is finite and $\iota(A) \subseteq A \times B$, the image $\iota(A)$ is finite.
+    <2>5. Since $\iota: A \to \iota(A)$ is a bijection, $A$ is finite.
+    <2>6. Symmetrically, fixing $a_0 \in A$ and considering $b \mapsto (a_0, b)$ shows that $B$ is finite.
 
-<1>3. Symmetrically, choose $a_0\in A$ and use
-    $$\jmath:B\to\{a_0\}\times B,\qquad b\mapsto(a_0,b),$$
-    to conclude $B$ is finite.
-:::
+<1>3. Conclusion:
+    *Proof:*
+    It does not follow in general, because if one factor is empty the other may be infinite. It does follow whenever both $A$ and $B$ are nonempty.
 :::

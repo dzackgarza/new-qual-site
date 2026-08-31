@@ -27,23 +27,33 @@ Show that $\{f_n\}$ converges uniformly on compact subsets of $G$ to $f \equiv 0
 :::
 
 ::: solution
-**Goal:** Prove (a) via subsequence contradiction and (b) via normality plus identity theorem.
+**Goal:** Prove the metric subsequence characterization of convergence in (a), and use Montel's Theorem and the Identity Theorem to prove compact convergence to 0 in (b).
 
-<1> Part (a): assume $x_n\nrightarrow x$.
-    Then there is $\varepsilon>0$ and a subsequence $x_{n_k}$ with $d(x_{n_k},x)\ge\varepsilon$ for all $k$.
-    Any further subsequence has all terms outside $B(x,\varepsilon)$, so none can converge to $x$.
-    This contradicts the hypothesis. Hence $x_n\to x$.
+<1>1. Part (a): Subsequence criterion for metric convergence.
+    *Proof:*
+    <2>1. Suppose for contradiction that the sequence $(x_n)_{n=1}^\infty$ does not converge to $x$.
+    <2>2. By the negation of the definition of convergence, there exists $\varepsilon_0 > 0$ such that for every integer $N \ge 1$, there exists some $n \ge N$ satisfying $d(x_n, x) \ge \varepsilon_0$.
+    <2>3. Inductively choosing indices $n_1 < n_2 < n_3 < \dots$ constructs a subsequence $(x_{n_k})_{k=1}^\infty$ such that
+    $$d(x_{n_k}, x) \ge \varepsilon_0 \quad \text{for all } k \ge 1.$$
+    <2>4. By hypothesis, the subsequence $(x_{n_k})$ must have a further subsequence $(x_{n_{k_j}})_{j=1}^\infty$ that converges to $x$.
+    <2>5. Convergence implies $\lim_{j \to \infty} d(x_{n_{k_j}}, x) = 0$.
+    <2>6. But $d(x_{n_{k_j}}, x) \ge \varepsilon_0 > 0$ for all $j \ge 1$, which gives the contradiction $0 \ge \varepsilon_0 > 0$.
+    <2>7. Therefore $(x_n)$ converges to $x$.
 
-<1> Part (b): local boundedness gives normality of $\{f_n\}$ on $G$ (Montel), so every subsequence has a subsequence converging uniformly on compacta to a holomorphic function.
-    Let $f_{n_k}\to f$ uniformly on compact subsets.
+<1>2. Part (b): Normality and sub-subsequence limit identification via the Identity Theorem.
+    *Proof:*
+    <2>1. Let $H(G)$ denote the space of holomorphic functions on the region $G$, equipped with the topology of uniform convergence on compact subsets (which is metrizable as a Fréchet space).
+    <2>2. Since $\{f_n\}$ is locally bounded on the open region $G$, Montel's Theorem asserts that $\{f_n\}$ is a normal family in $H(G)$.
+    <2>3. Let $(f_{n_k})_{k=1}^\infty$ be an arbitrary subsequence of $(f_n)$.
+    <2>4. By normality, there exists a further sub-subsequence $(f_{n_{k_j}})_{j=1}^\infty$ that converges uniformly on every compact subset $K \subset G$ to a holomorphic function $g \in H(G)$.
+    <2>5. For every point $z \in A$, $\lim_{n \to \infty} f_n(z) = 0$ by definition of $A$. Pointwise convergence of the sub-subsequence implies
+    $$g(z) = \lim_{j \to \infty} f_{n_{k_j}}(z) = 0 \quad \text{for all } z \in A.$$
+    <2>6. Thus $A \subseteq \{z \in G : g(z) = 0\}$.
+    <2>7. Since $A$ has an accumulation point in the connected open region $G$, the Identity Theorem for holomorphic functions implies $g \equiv 0$ on all of $G$.
 
-<1> For any $z\in A$, by definition $f_n(z)\to 0$ and by convergence of the subsequence we also have $f_{n_k}(z)\to f(z)$.
-    Therefore $f(z)=0$ for all $z\in A$.
-    The set $A$ has a limit point in $G$, so by the identity theorem $f\equiv 0$ on $G$.
-
-<1> Every subsequence of $\{f_n\}$ has a further subsequence converging to $0$ on compact sets.
-    A sequence in a metric space is convergent iff every subsequence has such a convergent further subsequence with unique limit.
-    Therefore $f_n\to 0$ uniformly on compact subsets of $G$.
-
-Authored by **Codex 5.3 Spark Extra High**.
+<1>3. Part (b): Conclusion of uniform convergence on compact sets.
+    *Proof:*
+    <2>1. By <1>2, every subsequence of $\{f_n\}$ possesses a further subsequence that converges in $H(G)$ to the zero function $f \equiv 0$.
+    <2>2. Applying the result of part (a) (<1>1) to the metric space $H(G)$ and the target point $f \equiv 0$, the full sequence $\{f_n\}$ converges to $f \equiv 0$ in $H(G)$.
+    <2>3. Therefore $\{f_n\}$ converges to $0$ uniformly on all compact subsets of $G$.
 :::

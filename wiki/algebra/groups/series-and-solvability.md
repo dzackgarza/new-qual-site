@@ -76,9 +76,9 @@ For $G$ a finite group, TFAE:
 ::: {.fact}
 \envlist
 
-- Nilpotent groups satisfy the 2 out of 3 property.
-
-- $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$
+- Subgroups and quotient groups of nilpotent groups are nilpotent, but extensions of nilpotent groups need not be nilpotent (e.g., $S_3$ has normal subgroup $A_3 \cong C_3$ and quotient $S_3/A_3 \cong C_2$, both nilpotent, but $S_3$ is not nilpotent).
+- In contrast, solvable groups satisfy the two-out-of-three property: if $N \trianglelefteq G$, then $G$ is solvable if and only if both $N$ and $G/N$ are solvable.
+- A finite nilpotent group $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$.
 :::
 
 The characterization via normalizers is the most useful for computations: to check nilpotence, pick a proper subgroup $H$ and verify $H < N_G(H)$.

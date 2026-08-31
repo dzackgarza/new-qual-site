@@ -28,42 +28,41 @@ whenever $s \neq 0 , - 1 , - 2 , . . .$
 :::
 
 ::: solution
-**Goal:** Prove
+**Goal:** Prove Gauss's limit formula for the Gamma function:
 $$
-\Gamma (s)=\lim_{n\to\infty}\frac{n^s n!}{s(s+1)\cdots(s+n)}.
+\Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \mathbb{C} \setminus \{0, -1, -2, \dots\}.
 $$
 
-<1> Use the Euler--Weierstrass product for $1/\Gamma$.
+<1>1. The Weierstrass product formula for the reciprocal Gamma function:
     *Proof:*
-    <2>1. For $s\notin\{0,-1,-2,\ldots\}$,
-        $$\frac1{\Gamma(s)}=s\,e^{\gamma s}\prod_{k=1}^\infty\left(1+\frac{s}{k}\right)e^{-s/k},$$
-        where $\gamma=\lim_{n\to\infty}(H_n-\log n)$ and $H_n=\sum_{k=1}^n \frac1k$.
-    <2>2. Let
-        $$A_n:=\prod_{k=1}^n\left(1+\frac{s}{k}\right)e^{-s/k}.$$
-    <2>3. Then
-        $$
-        A_n = \frac{s(s+1)\cdots(s+n)}{s\,n!}\,e^{- \sum_{k=1}^n s/k}
-        = \frac{s(s+1)\cdots(s+n)}{s\,n!}\,e^{-sH_n}.
-        $$
+    <2>1. For any $s \in \mathbb{C} \setminus \{0, -1, -2, \dots\}$, the reciprocal Gamma function is given by the entire product
+    $$\frac{1}{\Gamma(s)} = s \, e^{\gamma s} \prod_{k=1}^\infty \left(1 + \frac{s}{k}\right) e^{-s/k},$$
+    where $\gamma = \lim_{n \to \infty} \left( H_n - \log n \right)$ is the Euler–Mascheroni constant and $H_n = \sum_{k=1}^n \frac{1}{k}$.
+    <2>2. Define the $n$-th partial product:
+    $$P_n(s) = \prod_{k=1}^n \left(1 + \frac{s}{k}\right) e^{-s/k}.$$
+    <2>3. By definition of the infinite product, $\lim_{n \to \infty} P_n(s) = \frac{e^{-\gamma s}}{s \Gamma(s)}$.
 
-<1> Isolate the target expression.
+<1>2. Algebraic simplification of the partial product:
     *Proof:*
-    <2>1. Multiply the previous identity by $e^{s\gamma_n}$ with $\gamma_n=H_n-\log n$:
-        $$
-        e^{s\gamma_n}A_n
-        =\frac{s(s+1)\cdots(s+n)}{n^s}.
-        $$
-    <2>2. The right side is exactly the reciprocal quantity in the claim.
+    <2>1. The product of linear factors simplifies to:
+    $$\prod_{k=1}^n \left(1 + \frac{s}{k}\right) = \prod_{k=1}^n \frac{s + k}{k} = \frac{(s+1)(s+2)\cdots(s+n)}{n!} = \frac{s(s+1)(s+2)\cdots(s+n)}{s \cdot n!}.$$
+    <2>2. The product of exponential factors simplifies to:
+    $$\prod_{k=1}^n e^{-s/k} = \exp\left( -s \sum_{k=1}^n \frac{1}{k} \right) = e^{-s H_n}.$$
+    <2>3. Combining these factors yields
+    $$P_n(s) = \frac{s(s+1)\cdots(s+n)}{s \cdot n!} e^{-s H_n}.$$
 
-<1> Pass to the limit.
+<1>3. Introducing the sequence $\gamma_n = H_n - \log n$:
     *Proof:*
-    <2>1. By the product formula, $A_n\to e^{-\gamma s}/(s\Gamma(s))$.
-    <2>2. Since $\gamma_n\to\gamma$,
-        $$\lim_{n\to\infty}e^{s\gamma_n}A_n=e^{s\gamma}\cdot\frac{e^{-\gamma s}}{s\Gamma(s)}=\frac1{s\Gamma(s)}.$$
-    <2>3. Therefore
-        $$\lim_{n\to\infty}\frac{s(s+1)\cdots(s+n)}{n^s}=\frac1{\Gamma(s)}.$$
-    <2>4. Invert both sides:
-        $$\Gamma(s)=\lim_{n\to\infty}\frac{n^s n!}{s(s+1)\cdots(s+n)}.$$
+    <2>1. Multiply $P_n(s)$ by $s e^{s \gamma_n}$, where $\gamma_n = H_n - \log n$:
+    $$s e^{s \gamma_n} P_n(s) = s e^{s(H_n - \log n)} \cdot \left[ \frac{s(s+1)\cdots(s+n)}{s \cdot n!} e^{-s H_n} \right].$$
+    <2>2. The $s$ in the numerator and denominator cancel, and the $e^{s H_n}$ and $e^{-s H_n}$ cancel:
+    $$s e^{s \gamma_n} P_n(s) = e^{-s \log n} \frac{s(s+1)\cdots(s+n)}{n!} = n^{-s} \frac{s(s+1)\cdots(s+n)}{n!} = \frac{s(s+1)\cdots(s+n)}{n^s n!}.$$
 
-Authored by **Codex 5.3 Spark Extra High**.
+<1>4. Passing to the limit $n \to \infty$:
+    *Proof:*
+    <2>1. Since $\gamma_n \to \gamma$ as $n \to \infty$, continuity of the exponential function implies $\lim_{n \to \infty} e^{s \gamma_n} = e^{s \gamma}$.
+    <2>2. Using step 1.3 for $\lim_{n \to \infty} P_n(s)$:
+    $$\lim_{n \to \infty} \frac{s(s+1)\cdots(s+n)}{n^s n!} = \lim_{n \to \infty} \left[ s e^{s \gamma_n} P_n(s) \right] = s e^{\gamma s} \left( \frac{e^{-\gamma s}}{s \Gamma(s)} \right) = \frac{1}{\Gamma(s)}.$$
+    <2>3. Since $\Gamma(s) \neq 0$ and $s \notin \{0, -1, -2, \dots\}$, taking the reciprocal of both sides gives:
+    $$\Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)}.$$
 :::

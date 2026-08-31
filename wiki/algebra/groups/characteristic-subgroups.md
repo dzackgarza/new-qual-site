@@ -12,9 +12,8 @@ Normality is not transitive: if $H \normal G$ and $N \normal H$, it does not fol
 [[D-53LTN]]
 
 :::{.remark title="Characteristic isn't equivalent to normalcy"}
-Characteristic subgroups are normal, because $\psi_g(\wait) \da g(\wait)g\inv$ is an (inner) automorphism of $G$.
-Not every normal subgroup is characteristic: take $G \da H_1 \cross H_2$ and $\psi(x, y) = (y, x)$.
-
+Every characteristic subgroup is normal, because conjugation by $g \in G$, $\psi_g(x) = gxg^{-1}$, is an automorphism of $G$.
+However, not every normal subgroup is characteristic. For example, in the Klein four-group $V \cong C_2 \times C_2$, the subgroup $H = C_2 \times \{e\}$ is normal (since $V$ is abelian), but the automorphism swapping the two direct factors maps $H$ to $\{e\} \times C_2 \neq H$.
 :::
 
 [[PR-NESS4]]
@@ -22,12 +21,11 @@ Not every normal subgroup is characteristic: take $G \da H_1 \cross H_2$ and $\p
 [[PR-IOMVN]]
 
 :::{.proof}
-$A \ch B \normal C \implies A\normal C$:
+To show $A \operatorname{char} B \trianglelefteq C \implies A \trianglelefteq C$:
 
-- $A\ch B$ iff $A$ is fixed by every $\psi\in \Aut(B)$., WTS $cAc\inv = A$ for all $c\in C$.
-- Since $B\normal C$, the automorphism $\psi(\wait) \da c(\wait)c\inv$ descends to an element of $\Aut(B)$.
-- Then $\psi(A) = A$ since $A\ch B$, so $cAc\inv = A$ and $A\normal C$.
-
+- Let $c \in C$. Conjugation by $c$, $\psi_c(b) = cbc^{-1}$, defines an automorphism of $B$ because $B \trianglelefteq C$.
+- Since $A \operatorname{char} B$, $A$ is invariant under all automorphisms of $B$, so $\psi_c(A) = A$.
+- Thus $cAc^{-1} = A$ for every $c \in C$, which proves $A \trianglelefteq C$.
 :::
 
 [[PR-GJLQP]]

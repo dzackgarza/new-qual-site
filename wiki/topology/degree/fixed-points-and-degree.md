@@ -34,7 +34,7 @@ The main theorems form a chain. Brouwer says every self-map of the ball has a fi
 
 - $\text{deg} (f\circ g) = \deg f \cdot \deg g$
 
-- $\deg(H_{x_i}) = -1$ for $H_{x_i}$ any rotation about the hyperplane $x_i = 0$, i.e. 
+- $\deg(H_{x_i}) = -1$ for $H_{x_i}$ the reflection across the hyperplane $x_i = 0$, i.e. 
 \[
 H_{x_i}: \RR^{n+1} &\to \RR^{n+1} 
 \tv{x_1, \cdots, x_i, \cdots, x_{n+1}} 
@@ -79,10 +79,18 @@ Applications include:
 - **Brouwer as corollary**: If $f: B^n \to B^n$ had no fixed points, define $g: S^{n-1} \to S^{n-1}$ by $g(x) = \frac{x - f(x)}{\|x - f(x)\|}$. Then $g$ is odd ($g(-x) = -g(x)$), contradicting Borsuk-Ulam for $n \geq 1$.
 
 ## Hairy Ball
-
+ 
 [[T-VQTR6]]
-
-The Hairy Ball theorem is a consequence of Borsuk-Ulam: a non-vanishing vector field on $S^{2n}$ would define an odd map $S^{2n} \to S^{2n}$ (normalize the vector at each point), but $\deg(\text{odd map}) = -1$ while $\deg(\id) = 1$, so no such map exists in even dimensions.
+ 
+The Hairy Ball theorem is a consequence of degree theory: suppose $S^k$ admits a non-vanishing continuous tangent vector field $v(x)$. Because $v(x)$ is tangent to $S^k$, $x \cdot v(x) = 0$. One can define a homotopy $H: S^k \times [0, 1] \to S^k$ from the identity map to the antipodal map by rotating along great circles:
+\[
+H(x, t) = x \cos(\pi t) + \frac{v(x)}{\|v(x)\|} \sin(\pi t).
+\]
+Because $x \perp v(x)$, $\|H(x, t)\|^2 = \cos^2(\pi t) + \sin^2(\pi t) = 1$, so $H(x, t) \in S^k$ for all $t$.
+At $t=0$, $H(x, 0) = x = \operatorname{id}_{S^k}(x)$.
+At $t=1$, $H(x, 1) = -x = -\operatorname{id}_{S^k}(x)$.
+Homotopy invariance of degree implies $\deg(\operatorname{id}_{S^k}) = \deg(-\operatorname{id}_{S^k})$. But $\deg(\operatorname{id}_{S^k}) = 1$ and $\deg(-\operatorname{id}_{S^k}) = (-1)^{k+1}$.
+Thus $1 = (-1)^{k+1}$, which is impossible when $k = 2n$ is even ($1 \neq -1$). Hence no non-vanishing continuous vector field exists on even-dimensional spheres $S^{2n}$.
 
 The odd-dimensional spheres ($S^1, S^3, S^7$) *do* admit non-vanishing vector fields — $S^1$ has the unit tangent field, and $S^3 \subset \HH$ admits a family of them via quaternionic multiplication. This is specific to the Hopf structure.
 

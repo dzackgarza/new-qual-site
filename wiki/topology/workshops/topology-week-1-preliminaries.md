@@ -68,8 +68,7 @@ The tube lemma appears in qual problems in several disguises:
    Given a closed $A \subseteq X \times Y$ and a point $x \notin p(A)$, the complement of $A$ is open and contains $\{x\} \times Y$.
    The tube lemma gives a neighborhood $U$ of $x$ with $U \times Y$ disjoint from $A$, so $U \cap p(A) = \emptyset$.
 
-3. **Quotient maps and compact fibers.** If $f: X \to Y$ is a quotient map with compact fibers, and $g: Y \to Z$ is a map, then $g \circ f$ continuous $\implies$ $g$ continuous.
-   The tube lemma lets you lift open sets from the quotient back through the fibers.
+3. **Quotient maps and products with compact fibers.** While any quotient map $f: X \to Y$ satisfies $g \circ f \text{ continuous} \iff g \text{ continuous}$, products of quotient maps need not be quotient maps in general. However, if $f: X \to Y$ is a quotient map with compact fibers (or if $Z$ is locally compact Hausdorff), then $f \times \operatorname{id}_Z: X \times Z \to Y \times Z$ is a quotient map. The tube lemma is the tool used to show that saturated open sets in $X \times Z$ project to open sets in $Y \times Z$.
 
 ## Qual Questions
 
