@@ -16,177 +16,72 @@ relations: []
 review: draft
 ---
 
-Let $R$ be a ring with unity.
+::: problem
+Let $R$ be a ring with identity $1 \ne 0$.
 
-a.
-Give a definition for a free module over $R$.
+(a) Give a definition for a free $R$-module.
 
-b.
-Define what it means for an $R\dash$module to be torsion free.
+(b) Define what it means for an $R$-module to be torsion-free.
 
-c.
-Prove that if $F$ is a free module, then any short exact sequence of $R\dash$modules of the following form splits:
-\[
-0 \to N \to M \to F \to 0
-.\]
+(c) Prove that if $F$ is a free $R$-module, then any short exact sequence of $R$-modules of the form
+$$
+0 \to N \xrightarrow{\iota} M \xrightarrow{\pi} F \to 0
+$$
+splits.
 
-d.
-Let $R$ be a PID. 
-Show that any finitely generated $R\dash$module $M$ can be expressed as a direct sum of a torsion module and a free module.
-  
-> You may assume that a finitely generated torsionfree module over a PID is free.
-
-:::{.solution}
-Let $R$ be a ring with 1.
-
-:::{.proof title="of a"}
-An $R\dash$module $M$ is **free** if any of the following conditions hold:
-
-- $M$ admits an $R\dash$linearly independent spanning set $\theset{\vector b_\alpha}$, so $$m\in M \implies m = \sum_\alpha r_\alpha \vector b_\alpha$$ and $$\sum_\alpha r_\alpha \vector b_\alpha = 0_M \implies r_\alpha = 0_R$$ for all $\alpha$.
-- $M$ admits a decomposition $M \cong \bigoplus_{\alpha} R$ as a direct sum of $R\dash$submodules.
-- There is a nonempty set $X$ an monomorphism $X\injects M$ of sets such that for every $R\dash$module $N$, every set map $X\to N$ lifts to a unique $R\dash$module morphism $M\to N$, so the following diagram commutes:
-
-\begin{tikzcd}
-M \ar[rd, dotted, "\exists ! \tilde f"] & \\
-X \ar[u, hook] \ar[r, "f"] & N
-\end{tikzcd}
-
-Equivalently,
-\[
-\Hom_\Set(X, \Forget(N)) \mapsvia{\sim} \Hom_{\rmod}(M, N)
-.\]
-
-
+(d) Let $R$ be a principal ideal domain (PID). Show that any finitely generated $R$-module $M$ can be expressed as a direct sum of a torsion module and a free module. (You may assume that every finitely generated torsion-free module over a PID is free.)
 :::
 
-:::{.proof title="of b"}
-\envlist
+::: solution
+**Goal:** Define free and torsion-free modules, prove that free modules are projective (surjective maps split), and deduce the direct sum decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over PIDs.
 
-- Define the annihilator:
-\[
-\Ann(m) \definedas \theset{r\in R \suchthat r\cdot m = 0_M} \normal R
-.\]
-  - Note that $mR \cong R/\Ann(m)$.
-- Define the torsion submodule:
-\[
-M_t \definedas \theset{m\in M \suchthat \Ann(m) \neq 0} \leq M
-\]
-- $M$ is **torsionfree** iff $M_t = 0$ is the trivial submodule.
+<1>1. Part (a): Definition of a free $R$-module.
+    *Proof:*
+    An $R$-module $F$ is called **free** if it satisfies any of the following equivalent conditions:
+    1. $F$ possesses an $R$-basis: a subset $B \subseteq F$ such that every element $m \in F$ can be expressed uniquely as a finite $R$-linear combination $m = \sum_{b \in B} r_b b$ with coefficients $r_b \in R$.
+    2. $F$ is isomorphic to a direct sum of copies of the regular module $R$: $F \cong \bigoplus_{b \in B} R$.
+    3. Universal property of free modules: There exists a subset $B \subseteq F$ such that for every $R$-module $Y$ and every set map $f: B \to Y$, there exists a unique $R$-module homomorphism $\tilde{f}: F \to Y$ such that $\tilde{f}|_B = f$.
 
-:::
+<1>2. Part (b): Definition of a torsion-free $R$-module.
+    *Proof:*
+    Let $R$ be an integral domain (or a commutative ring).
+    1. An element $m \in M$ is called a **torsion element** if there exists a non-zero element $r \in R \setminus \{0\}$ such that $r m = 0$.
+    2. The **torsion submodule** is $\operatorname{tor}(M) = \{m \in M \mid \exists r \in R \setminus \{0\}, \, r m = 0\}$.
+    3. An $R$-module $M$ is called **torsion-free** if $\operatorname{tor}(M) = \{0\}$; that is, for all $r \in R$ and $m \in M$, $r m = 0$ implies $r = 0$ or $m = 0$.
 
-:::{.proof title="of c"}
-\envlist
+<1>3. Part (c): Splitting of $0 \to N \xrightarrow{\iota} M \xrightarrow{\pi} F \to 0$ when $F$ is free.
+    *Proof:*
+    <2>1. Let $B \subseteq F$ be an $R$-basis of the free module $F$.
+    <2>2. Construct a set map on the basis: Since $\pi: M \to F$ is surjective, for each basis element $b \in B$, the fiber $\pi^{-1}(\{b\})$ is non-empty. Choose an element $y_b \in M$ such that $\pi(y_b) = b$.
+    <2>3. Extend to a module homomorphism: By the universal property of the free module $F$ (Part (a)), there exists a unique $R$-module homomorphism $\sigma: F \to M$ such that $\sigma(b) = y_b$ for all $b \in B$.
+    <2>4. Verify the section condition $\pi \circ \sigma = \operatorname{id}_F$:
+        - For any element $x \in F$, write $x = \sum_{b \in B} r_b b$ as a finite linear combination.
+        - Applying $\pi \circ \sigma$:
+        $$(\pi \circ \sigma)(x) = \pi\left( \sigma\left( \sum_{b \in B} r_b b \right) \right) = \pi\left( \sum_{b \in B} r_b y_b \right) = \sum_{b \in B} r_b \pi(y_b) = \sum_{b \in B} r_b b = x.$$
+        - Thus $\pi \circ \sigma = \operatorname{id}_F$.
+    <2>5. By the Splitting Lemma, the exact sequence splits, and $M \cong \iota(N) \oplus \sigma(F) \cong N \oplus F$.
 
-- Let the following be an SES where $F$ is a free $R\dash$module:
-\[
-0 \to N \to M \mapsvia{\pi} F \to 0
-.\]
+<1>4. Part (d): Decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over a PID.
+    *Proof:*
+    <2>1. Define $T = \operatorname{tor}(M)$. Since $R$ is a PID (hence an integral domain), $T$ is an $R$-submodule of $M$.
+    <2>2. Consider the canonical short exact sequence:
+    $$0 \to T \xrightarrow{\iota} M \xrightarrow{q} M/T \to 0,$$
+    where $q(m) = m + T$.
+    <2>3. $M/T$ is finitely generated: If $\{x_1, \dots, x_k\}$ generates $M$, then $\{q(x_1), \dots, q(x_k)\}$ generates $M/T$.
+    <2>4. $M/T$ is torsion-free:
+        - Let $\bar{m} = m + T \in M/T$ and suppose $r \bar{m} = \bar{0}$ in $M/T$ for some $r \in R \setminus \{0\}$.
+        - Then $r m \in T = \operatorname{tor}(M)$.
+        - By definition of $\operatorname{tor}(M)$, there exists $s \in R \setminus \{0\}$ such that $s (r m) = 0$.
+        - By associativity in $M$, $(s r) m = 0$.
+        - Since $R$ is an integral domain and $s \ne 0, r \ne 0$, the product $s r \ne 0$.
+        - Thus $m \in \operatorname{tor}(M) = T$, which means $\bar{m} = m + T = \bar{0}$ in $M/T$.
+        - Therefore $M/T$ is torsion-free.
+    <2>5. By the given theorem, every finitely generated torsion-free module over a PID is free, so $F = M/T$ is a free $R$-module.
+    <2>6. By Part (c), the short exact sequence splits, yielding an isomorphism:
+    $$M \cong T \oplus M/T = \operatorname{tor}(M) \oplus F,$$
+    where $\operatorname{tor}(M)$ is a torsion module and $F \cong M/T$ is a free module.
 
-- Since $F$ is free, there is a generating set $X = \theset{x_\alpha}$ and a map $\iota:X\injects F$ satisfying the 3rd property from (a).
-  - If we construct any map $f: X\to M$, the universal property modules will give a lift $\tilde f: F\to M$
-
-- Identify $X$ with $\iota(X) \subseteq F$. 
-- For every $x\in X$, the preimage $\pi\inv(x)$ is nonempty by surjectivity.
-  So arbitrarily pick any preimage.
-- $\theset{\iota(x_\alpha)} \subseteq F$ and $\pi$ is surjective, so choose fibers $\theset{y_\alpha} \subseteq M$ such that $\pi(y_\alpha) = \iota(x_\alpha)$ and define
-\[
-f: X&\to M \\
-x_\alpha &\mapsto y_\alpha
-.\]
-- The universal property yields $h: F\to M$:
-
-\begin{tikzcd}
-& & & X=\theset{x_\alpha} \ar[dd, hook, "\iota"]\ar[ddl, "f"'] &  \\ \\
-0 \ar[r]& N \ar[r] & M\ar[r, "\pi"'] & \ar[l, bend right, dotted ,"\exists ! h"'] F \ar[r] & 0
-\end{tikzcd}
-
-- It remains to check that it's a section.
-  - Write $f= \sum r_i x_i$, then since both maps are $R\dash$module morphism, by $R\dash$linearity we can write
-  \[
-  (\pi \circ h)(f) 
-  &= (\pi \circ h)\qty{ \sum r_i x_i } \\
-  &= \sum r_i (\pi \circ h)(x_i)
-  ,\]
-  but since $h(x_i) \in \pi\inv(x_i)$, we have $(\pi \circ h)(x_i) = x_i$.
-  So this recovers $f$.
-
-
-:::
-
-:::{.proof title="of c, shorter proof"}
-\envlist
-
-- Free implies projective
-
-  - Universal property of **projective** objects: for every epimorphism $\pi:M\surjects N$ and every $f:P\to N$ there exists a unique lift $\tilde f: P\to M$:
-
-  \begin{tikzcd}
-  & P\ar[d, "f"] \ar[dl, dotted, "\exists ! \tilde f"'] \\
-  M \ar[r, "\pi"] & N
-  \end{tikzcd}
-
-  - Construct $\phi$ in the following diagram using the same method as above (surjectivity to pick elements in preimage):
-
-\begin{tikzcd}
-	&& X \\
-	\\
-	&& F \\
-	\\
-	M && N && 0
-	\arrow["\iota", hook, from=1-3, to=3-3]
-	\arrow["f", from=3-3, to=5-3]
-	\arrow["\pi"', two heads, from=5-1, to=5-3]
-	\arrow[from=5-3, to=5-5]
-	\arrow["{\exists \tilde \phi}"', dashed, from=3-3, to=5-1]
-	\arrow["\phi"', curve={height=24pt}, from=1-3, to=5-1]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCw0LCJNIl0sWzIsNCwiTiJdLFs0LDQsIjAiXSxbMiwyLCJGIl0sWzIsMCwiWCJdLFs0LDMsIlxcaW90YSIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsMSwiZiJdLFswLDEsIlxccGkiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMSwyXSxbMywwLCJcXGV4aXN0cyBcXHRpbGRlIFxccGhpIiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsMCwiXFxwaGkiLDIseyJjdXJ2ZSI6NH1dXQ==)
-
-
-
-- Now take the identity map, then commutativity is equivalent to being a section.
-
-\begin{tikzcd}
- & & & F\ar[d, "\one_F"]\ar[dl, "\exists ! h"'] & \\
-0 \ar[r] & N\ar[r] & M\ar[r] & F \ar[r] & 0
-\end{tikzcd}
-
-:::
-
-:::{.proof title="of d"}
-\envlist
-
-There is a SES
-
-\begin{tikzcd}
-0 \ar[r] & M_t \ar[r] & M \ar[r] & M/M_t \ar[r] & 0
-\end{tikzcd}
-
-
-:::{.claim}
-$M/M_t$ is a free \(R\dash\)module, so this sequence splits and
-$M\cong M_t \oplus {M\over M_t}$, where $M_t$ is a torsion $R\dash$module.
-
-> Note that by the hint, since $R$ is a PID, it suffices to show that $M/M_t$ is torsionfree.
-
-:::
-
-- Let $m+M_t \in M/M_t$ be arbitrary.
-  Suppose this is a torsion element, the claim is that it must be the trivial coset.
-  This will follow if $m\in M_t$
-- Since this is torsion, there exists $r\in R$ such that
-\[
-M_t = r(m + M_t) \da (rm) + M_t \implies rm\in M_t
-.\]
-- Then $rm$ is torsion in $M$, so there exists some $s\in R$ such $s(rm) = 0_M$.
-- Then $(sr)m = 0_M$ which forces $m\in M_t$
-
-:::
-
-
-
-
-
+<1>5. Conclusion:
+    *Proof:*
+    Free modules have bases, torsion-free modules have no non-zero annihilators, surjections onto free modules split, and finitely generated modules over PIDs decompose as $\operatorname{tor}(M) \oplus F$.
 :::
