@@ -25,7 +25,7 @@ Prove that there exists $\delta > 0$ (a **Lebesgue number** for the covering) su
 <1>1. Finite subcovering and closed complements:
 ::: {.proof}
     <2>1. Since $X$ is compact and $\mathcal{U}$ is an open cover, there exists a finite subcover $\{U_1, U_2, \dots, U_n\} \subseteq \mathcal{U}$ such that $X = \bigcup_{i=1}^n U_i$.
-    <2>2. If any $U_i = X$, then for any $\delta > 0$ and all $x \in X$, $B_\delta(x) \subseteq X = U_i$, so the claim holds trivially.
+    <2>2. If any $U_i = X$, then for any $\delta > 0$ and all $x \in X$, $B_\delta(x) \subseteq X = U_i$, so the claim holds with $\delta$ arbitrary.
     <2>3. Assume henceforth that $U_i \subsetneq X$ for all $i \in \{1, \dots, n\}$, and define the closed non-empty complements $C_i = X \setminus U_i$.
 
 :::

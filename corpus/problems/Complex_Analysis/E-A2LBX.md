@@ -35,7 +35,7 @@ Provide an upper bound for $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |,$ w
 The **complex line integral** of $f$ along $\alpha$ is defined by: $$\int_\alpha f(z) \, dz = \int_a^b f(\alpha(t)) \alpha'(t) \, dt,$$ where the right-hand side is the standard Riemann integral of the complex-valued function of a real variable $t \mapsto f(\alpha(t)) \alpha'(t) = u(t) + i v(t)$.
 
 <1>2. Part (b): Proof of the $ML$-inequality: *Proof:* <2>1. Let $I = \int_\alpha f(z) \, dz = \int_a^b f(\alpha(t)) \alpha'(t) \, dt \in \mathbb{C}$.
-<2>2. If $I = 0$, then $|I| = 0 \le M \cdot \operatorname{length}(\alpha)$ holds trivially since $M \ge 0$ and $\operatorname{length}(\alpha) \ge 0$.
+<2>2. If $I = 0$, then $|I| = 0 \le M \cdot \operatorname{length}(\alpha)$ holds since $M \ge 0$ and $\operatorname{length}(\alpha) \ge 0$.
 <2>3. If $I \neq 0$, write $I$ in polar form as $I = |I| e^{i\theta}$ for some $\theta \in [0, 2\pi)$.
 <2>4. Multiplying both sides by $e^{-i\theta}$: $$|I| = e^{-i\theta} \int_a^b f(\alpha(t)) \alpha'(t) \, dt = \int_a^b e^{-i\theta} f(\alpha(t)) \alpha'(t) \, dt.$$ <2>5. Since $|I|$ is real, it equals the real part of the integral: $$|I| = \operatorname{Re}\left( \int_a^b e^{-i\theta} f(\alpha(t)) \alpha'(t) \, dt \right) = \int_a^b \operatorname{Re}\left( e^{-i\theta} f(\alpha(t)) \alpha'(t) \right) \, dt.$$ <2>6. Using the inequality $\operatorname{Re}(w) \le |w|$ for all $w \in \mathbb{C}$: $$|I| \le \int_a^b \left| e^{-i\theta} f(\alpha(t)) \alpha'(t) \right| \, dt = \int_a^b |f(\alpha(t))| |\alpha'(t)| \, dt.$$ <2>7. Since $|f(\alpha(t))| \le M$ for all $t \in [a, b]$: $$|I| \le M \int_a^b |\alpha'(t)| \, dt = M \cdot \operatorname{length}(\alpha).$$
 

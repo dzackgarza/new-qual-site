@@ -80,7 +80,7 @@ $F_\sigma$ sets and $G_\delta$ sets are Borel, hence measurable; adding or remov
 :::
 
 <1>4. Inner regularity equivalence: $m(E) = \sup\{m(K) : K \subseteq E \text{ compact}\}$ iff for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \eps$.
-<2>1. ($\Leftarrow$) is immediate: the condition says $m(E) - \eps$ is never an upper bound of the compact-measures below $E$; hence the supremum is $\ge m(E)$, and $\le m(E)$ since $K \subseteq E$ gives $m(K) \le m(E)$.
+<2>1. ($\Leftarrow$) The condition says $m(E) - \eps$ is never an upper bound of the compact-measures below $E$; hence the supremum is $\ge m(E)$, and $\le m(E)$ since $K \subseteq E$ gives $m(K) \le m(E)$.
 ::: {.proof}
 definition of supremum.
 :::

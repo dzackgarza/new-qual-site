@@ -31,7 +31,7 @@ $$
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty}$.
 ::: {.proof}
 <2>1. If $\|f\|_{L^\infty} = \infty$, the upper bound $\limsup_{p \to \infty} \|f\|_{L^p} \le \infty$ holds vacuously.
-<2>2. If $\mu(X) = 0$, then $\|f\|_{L^p} = 0$ for all $p$ and $\|f\|_{L^\infty} = 0$, so the limit is trivially 0.
+<2>2. If $\mu(X) = 0$, then $\|f\|_{L^p} = 0$ for all $p$ and $\|f\|_{L^\infty} = 0$, so the limit is $0$.
 <2>3. Assume $\|f\|_{L^\infty} < \infty$ and $0 < \mu(X) < \infty$.
 <2>4. For almost every $x \in X$, $|f(x)| \le \|f\|_{L^\infty}$.
 <2>5. Integrating over $X$:
@@ -43,7 +43,7 @@ $$\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty} \lim_{p \to \infty} (\
 
 <1>2. Lower bound: $\liminf_{p \to \infty} \|f\|_{L^p} \ge \|f\|_{L^\infty}$.
 ::: {.proof}
-<2>1. If $\|f\|_{L^\infty} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p} = 0$ for all $p \ge 1$ and the inequality holds trivially.
+<2>1. If $\|f\|_{L^\infty} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p} = 0$ for all $p \ge 1$ and the inequality holds.
 <2>2. Assume $\|f\|_{L^\infty} > 0$. For any real number $\alpha$ satisfying $0 < \alpha < \|f\|_{L^\infty}$, define the superlevel set
 $$A_\alpha = \{x \in X : |f(x)| \ge \alpha\}.$$
 <2>3. By definition of the essential supremum, $\mu(A_\alpha) > 0$.

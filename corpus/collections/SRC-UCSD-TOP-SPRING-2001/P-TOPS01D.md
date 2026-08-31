@@ -39,7 +39,7 @@ Hurewicz theorem (the first nonzero homotopy group is isomorphic to the first no
 the wedge is the coproduct, so two maps out of $S^2$ give a map out of the wedge.
 :::
 
-<1>4. $f$ induces an isomorphism on $H_2$ (and trivially on $H_0$, $H_1$, and $H_{\ge 3}$).
+<1>4. $f$ induces an isomorphism on $H_2$, and is the zero map on $H_0$, $H_1$, and $H_{\ge 3}$.
 ::: {.proof}
 $H_2(S^2 \vee S^2) = \ZZ^2$ and $f$ sends the two generators to the basis $f_1, f_2$; $H_1 = 0$ on both sides (both simply connected), and $H_{\ge 3} = 0$ on both sides.
 :::

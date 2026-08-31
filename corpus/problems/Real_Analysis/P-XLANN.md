@@ -48,7 +48,7 @@ $$\limsup_{p \to \infty} \|g\|_{L^p} \le \|g\|_{L^\infty}.$$
 
 <1>2. Part (a): Lower bound $\liminf_{p \to \infty} \|g\|_{L^p} \ge \|g\|_{L^\infty}$.
 ::: {.proof}
-<2>1. If $\|g\|_{L^\infty} = 0$, then $g = 0$ almost everywhere, so $\|g\|_{L^p} = 0$ for all $p$ and the limit is trivially 0.
+<2>1. If $\|g\|_{L^\infty} = 0$, then $g = 0$ almost everywhere, so $\|g\|_{L^p} = 0$ for all $p$ and the limit is $0$.
 <2>2. Assume $\|g\|_{L^\infty} > 0$. For any $0 < M < \|g\|_{L^\infty}$, define the superlevel set $E_M = \{x \in [0, 1] : |g(x)| > M\}$.
 <2>3. By definition of the essential supremum, $m(E_M) > 0$.
 <2>4. Restricting the $L^p$ integral to $E_M$:

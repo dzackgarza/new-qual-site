@@ -37,7 +37,7 @@ The second is the entire technique: decompose a representation by computing inne
 ## Building a character table
 
 1. Count conjugacy classes; that is the number of irreducibles, so the table is square.
-2. Write down the trivial character, and any obvious ones: the sign character for $S_n$, and the characters of $G/[G,G]$, which are the degree-one ones.
+2. Write down the trivial character, and the degree-one characters: the sign character for $S_n$, and the characters of $G/[G,G]$, which are the degree-one ones.
 3. Use $\size G = \sum d_i^2$ to pin the remaining degrees.
 4. Get one more row from the permutation representation: for $G$ acting on a set $X$, $\chi(g) = \size{\Fix(g)}$, and subtracting the trivial character usually leaves an irreducible.
 5. Fill the rest by column orthogonality, which for the identity column is again $\size G = \sum d_i^2$.

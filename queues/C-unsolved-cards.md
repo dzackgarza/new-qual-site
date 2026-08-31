@@ -1,6 +1,6 @@
 # Document queue C: Unsolved problem/exercise cards
 
-4566 problem and exercise cards have no solution section and no incoming
+4551 problem and exercise cards have no solution section and no incoming
 `solves` relation. These are the cards issue #2 targets: write a Lamport-style
 structured proof for each.
 
@@ -11,11 +11,11 @@ commit, and writing the solution removes the line.
 
 ## Count
 
-- Exercises: 1397
-- Problems: 3169
-- Total: 4566
+- Exercises: 1396
+- Problems: 3155
+- Total: 4551
 
-## Exercises (1397)
+## Exercises (1396)
 
 - [ ] E-AMD-OFJC25BM — "Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})=\QQ(\sqrt{2}+\sqrt{3})$"
 - [ ] E-AMD-PX2UMZEG — "Intersections, products, and sums of ideals are ideals"
@@ -1197,7 +1197,6 @@ commit, and writing the solution removes the line.
 - [ ] E-SS10.EX-2 — "SS 10.2: The generating function of the Fibonacci numbers"
 - [ ] E-SS10.EX-4 — "SS 10.4: Euler's recurrence for the partition function"
 - [ ] E-SS10.EX-5 — "SS 10.5: Logarithmic asymptotics of the partition generating function"
-- [ ] E-SS10.EX-6 — "SS 10.6: Exponential square-root bounds for the partition function"
 - [ ] E-SS10.EX-7 — "SS 10.7: Triangular and septagonal number identities via the theta function"
 - [ ] E-SS10.EX-8 — "SS 10.8: Parametrization of Pythagorean triples"
 - [ ] E-SS10.EX-9 — "SS 10.9: The two-squares theorem via the representation count r2(n)"
@@ -1415,7 +1414,7 @@ commit, and writing the solution removes the line.
 - [ ] E-ZY1RB — "Connected ordered sets are linear continua"
 - [ ] E-ZYJGG — "Absolute retracts"
 
-## Problems (3169)
+## Problems (3155)
 
 - [ ] E-2JG2B — "Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$"
 - [ ] E-44SHD — "$A+\lambda B$ is invertible for all but finitely many $\lambda$"
@@ -1532,7 +1531,6 @@ commit, and writing the solution removes the line.
 - [ ] P-4Y4QT — "$\int_0^\infty\frac{x^{\alpha-1}}{1+x^3}\,dx$ for $0<a<4$"
 - [ ] P-4ZDQQ — "Possible Galois groups of an abelian extension of degree $540$, and quadratic intermediate extensions $L/E$"
 - [ ] P-52FST — "$H\operatorname{char} K\trianglelefteq G$ implies $H\trianglelefteq G$"
-- [ ] P-5AS2X — "Hungerford 7.1.3"
 - [ ] P-5CQNK — "Monotone and absolutely continuous functions: two true-or-false statements"
 - [ ] P-5EHW6 — "Groups of order 2012"
 - [ ] P-5EROX — "$AB-BA=A$ implies $\det A=0$ in characteristic zero, but not in characteristic $2$"
@@ -2673,7 +2671,6 @@ commit, and writing the solution removes the line.
 - [ ] P-DE22H — "Elementary divisors and invariant factors of a given $\QQ[x]$-module"
 - [ ] P-DEJGY — "(a) $f(z)= u(x,y) +i v(x,y)$ be analytic in a domain"
 - [ ] P-DEZSR — "Classify finite fields, their subfields, and their field extensions."
-- [ ] P-DFB3Y — "Homology of the mapping cone of a degree-$k$ map $S^n\to S^n$"
 - [ ] P-DFBUX — "An interesting subgroup of $(\QQ,+)$"
 - [ ] P-DFHS3 — "$\int_0^\infty\frac{1}{(1+z)^2(z+9x^2)}\,dx$"
 - [ ] P-DG3XG — "If $M/K$ is Galois, whether $L/K$ or $M/L$ is Galois"
@@ -2695,7 +2692,6 @@ commit, and writing the solution removes the line.
 - [ ] P-E53UO — "Attaching a $2$-cell along homotopic maps yields homotopy-equivalent spaces"
 - [ ] P-E54MV — "Galois group of $x^3-3x-3$ over $\QQ$ is $S_3$"
 - [ ] P-E5WUU — "Evaluate $\int_0^1\int_y^1\sin(x^2)\,dx\,dy$"
-- [ ] P-E5Y7W — "Hungerford 4.1.7"
 - [ ] P-E6DTF — "Schur's lemma: $\operatorname{Hom}_{kG}(V,V)=k$ for an irreducible representation over an algebraically closed field"
 - [ ] P-E6Y7R — "Antiderivatives of $x\arcsin(1/x)$, $x\arctan x$, and $x\sin(2x)$"
 - [ ] P-E7N6V — "Infinite nested-radical antiderivative and several trigonometric definite integrals"
@@ -3013,10 +3009,8 @@ commit, and writing the solution removes the line.
 - [ ] P-IE2G7 — "Discrete spaces are totally disconnected, but not conversely"
 - [ ] P-IE52K — "Sylow theorems, and groups of order 1225"
 - [ ] P-IF6H2 — "$\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx$ for $0<a<n$ and $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx$"
-- [ ] P-IFN65 — "Freely homotopic loops on a closed genus-$2$ surface that are not homotopic rel basepoint"
 - [ ] P-IH6FO — "There are five nonisomorphic groups of order 8. For"
 - [ ] P-IK7LQ — "Hungerford 1.9.1"
-- [ ] P-IKJXT — "$\QQ[\theta]$ for an $S_4$-quartic has no intermediate fields, unlike Galois extensions of degree $4$"
 - [ ] P-IMVV7 — "Permutations, combinations, and the number of injections from a $k$-set to an $n$-set"
 - [ ] P-INJCV — "Abelian groups of order 16"
 - [ ] P-IOAQB — "Integrals of $\frac{1}{x(\ln x)^2}$ and $\frac{1}{x^2}\cos\frac{1}{x}$"
@@ -3223,7 +3217,6 @@ commit, and writing the solution removes the line.
 - [ ] P-JHXZS — "Evaluate $\int 2018^x\,dx$"
 - [ ] P-JIAQR — "Evaluate $\int\frac{x}{1+x^4}\,dx$"
 - [ ] P-JIFL3 — "Homology of $S^2$ glued to a torus along an equatorial circle"
-- [ ] P-JJ62Y — "Galois group of $x^5-2$ over $\QQ$ isomorphic to $\begin{pmatrix}a&b\\0&1\end{pmatrix}$ with $a\in\FF_5^\times$ and $b\in\FF_5$, and the Galois intermediate fields"
 - [ ] P-JKJG3 — "Factor 6 in two different ways in $\ZZ[\sqrt{-5}]$"
 - [ ] P-JKYJU — "Uniform limits on compact sets preserve the zero count (Hurwitz)"
 - [ ] P-JLPVR — "The projection onto the line $x+2y=0$ along $\operatorname{span}\{(1,2)\}$"
@@ -3300,9 +3293,7 @@ commit, and writing the solution removes the line.
 - [ ] P-LMVF6 — "Finite trees are contractible"
 - [ ] P-LQXXN — "Hungerford 5.1.8"
 - [ ] P-LRCVT — "Blaschke factors as automorphisms of the disk"
-- [ ] P-LSJ7W — "Consider the quotient space"
 - [ ] P-LU2L3 — "Similarity classes of order-$8$ matrices in $M_n(\mathbb{Q})$ for $n=3,4,5$"
-- [ ] P-LW3KB — "$Y\subset X$ implies $X^\perp\subseteq Y^\perp$, and $Y^\perp/X^\perp\hookrightarrow(X/Y)^*$, for a nondegenerate symmetric bilinear form"
 - [ ] P-LWGC4 — "Fixed points of $\id_{\RP^2}\vee\ast$ and $\ast\vee\id_{S^1}$ on $\RP^2\vee S^1$"
 - [ ] P-LYMLT — "No retraction from $S^2$ onto an equatorial circle"
 - [ ] P-LZ5CZ — "$H_i(T,B)$ for a torus and the boundary of an embedded disk"
@@ -3444,7 +3435,6 @@ commit, and writing the solution removes the line.
 - [ ] P-NNJHK — "$\hom_R(A, B)$ under pointwise addition is an abelian group"
 - [ ] P-NPHPR — "A proper subgroup of a finite $p$-group is proper in its normalizer"
 - [ ] P-NPHUQ — "$x^{p^n}-x$ is the product of all monic irreducibles of degree dividing $n$"
-- [ ] P-NQAQK — "$F[x]$-modules of linear operators, similarity, and simplicity in dimension $2$"
 - [ ] P-NQRYU — "The center of $M_n(R)$ is $Z(R)I_n$"
 - [ ] P-NQTGP — "Infinitely many primes congruent to $1\bmod m$ via cyclotomic polynomials"
 - [ ] P-NRCTX — "Uniformly continuous increasing convex function is differentiable a.e."
@@ -3480,7 +3470,6 @@ commit, and writing the solution removes the line.
 - [ ] P-OQCJR — "$Ax=0$ has a nontrivial solution iff $\rank(A)<m$"
 - [ ] P-OQW4B — "The cube roots of $2-2i$"
 - [ ] P-OREB6 — "A permutation is odd iff it has an odd number of even-length cycles"
-- [ ] P-OS765 — "Irreducible factors of $f(g(x))$ have degree a multiple of $\deg f$, and of $x^{2n}-r$ over $\mathbb{Q}$ when $r$ is not a square"
 - [ ] P-OSS6X — "Spring 2021, 7"
 - [ ] P-OTS37 — "Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$"
 - [ ] P-OTXNQ — "Does this hold when $A$ is open? (statement incomplete)"
@@ -3532,7 +3521,6 @@ commit, and writing the solution removes the line.
 - [ ] P-Q4LAQ — "Hungerford 7.2.5"
 - [ ] P-Q4P4R — "Galois groups over $\mathbb{Q}$ of $x^4+4$ and $x^3+x^2-2x-1$"
 - [ ] P-Q5D6X — "Number of invertible matrices over $\ZZ/p\ZZ$"
-- [ ] P-Q5ICU — "Hungerford 7.5.7"
 - [ ] P-Q5LN7 — "Cube and square roots of $-2+2\sqrt{3}i$"
 - [ ] P-Q5NH5 — "Group rings"
 - [ ] P-Q5PQ6 — "Intermediate fields of $\QQ(2^{1/4},\zeta_8)$"
@@ -3771,7 +3759,6 @@ commit, and writing the solution removes the line.
 - [ ] P-REKYU — "Quotients of dihedral groups are dihedral"
 - [ ] P-RGBUN — "The integral of log x over x^2 + 2 by contour integration"
 - [ ] P-RGCVM — "Characteristic and minimal polynomials classify similarity of $3\times 3$ matrices over $\CC$, but not $4\times 4$"
-- [ ] P-RHIIP — "Hungerford 7.1.5"
 - [ ] P-RHQC5 — "Weierstrass's theorem: locally uniform limits of holomorphic functions are holomorphic"
 - [ ] P-RI3ZA — "Normality of field extensions is not transitive"
 - [ ] P-RI6SK — "$O_p(G)$ is the maximal normal $p$-subgroup of $G$"
@@ -3813,7 +3800,6 @@ commit, and writing the solution removes the line.
 - [ ] P-S52PP — "A commutative integral domain is a field if and only if it is semisimple if and only if every module is projective"
 - [ ] P-S5JSR — "Galois theory exercises: splitting fields, intermediate extensions, finite fields"
 - [ ] P-S5SYL — "Sylow $2$-subgroup of $S_5$, Sylow $5$-subgroup of $S_{15}$, and Sylow $p$-subgroups of $S_p$"
-- [ ] P-S6EYF — "Integral homology of the union of the unit sphere and the ellipsoid $x^2+y^2+z^2/4=1$"
 - [ ] P-S7NFA — "Definition of a splitting field, and $[E:F] \le n!$ without the fundamental theorem"
 - [ ] P-S7TUY — "Irreducible varieties"
 - [ ] P-SABYI — "How does one prove the structure theorem for modules over PID?"
@@ -4548,7 +4534,6 @@ commit, and writing the solution removes the line.
 - [ ] P-YLFU2 — "Structure theorem for finitely generated modules over a PID: invariant factors and elementary divisors"
 - [ ] P-YLM7G — "Composition of surjections is surjective, but the converse fails"
 - [ ] P-YMK7Z — "The subring of $F[X]$ of polynomials with vanishing $X$-coefficient is not a UFD"
-- [ ] P-YMOTZ — "Abelian groups of order 36, and nonabelian groups of order 36"
 - [ ] P-YP3XF — "Multiplication operator on L2 is self-adjoint but not compact"
 - [ ] P-YPGAW — "L1 convergence gives an a.e.-convergent subsequence but not uniform convergence"
 - [ ] P-YPKW5 — "Real differentiability: definition, partials without differentiability, and real but nowhere complex differentiability"

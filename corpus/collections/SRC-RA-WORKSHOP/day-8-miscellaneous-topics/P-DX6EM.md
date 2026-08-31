@@ -48,6 +48,6 @@ $V(y) \ge V(x) + |f(y) - f(x)|$: a partition of $[a,x]$ achieving within $\eps$ 
 
 <1>4. Q.E.D.: $f = \frac12(V + f) - \frac12(V - f)$ is a difference of two increasing functions.
 ::: {.proof}
-<1>2 and <1>3 show both $V + f$ and $V - f$ are increasing (multiplying by $1/2$ preserves monotonicity), and the identity is trivial.
+<1>2 and <1>3 show both $V + f$ and $V - f$ are increasing (multiplying by $1/2$ preserves monotonicity), and the identity $f = \frac12(V+f) - \frac12(V-f)$ is a direct algebraic rearrangement.
 :::
 :::

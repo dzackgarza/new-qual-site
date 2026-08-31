@@ -82,7 +82,7 @@ The numerator is at most $|a| + |z|$ and the positive denominator is at least $1
 
 ### Step 3: Lower Bound for $|f(z)|$
 
-<1>4. **Prove $|f(z)| \geq \frac{|a| - |z|}{1 + |a||z|}$.** <2>1. If $|z| \geq |a|$, then $\frac{|a| - |z|}{1 + |a||z|} \leq 0$, so the inequality $|f(z)| \geq 0 \geq \frac{|a|-|z|}{1+|a||z|}$ holds trivially.
+<1>4. **Prove $|f(z)| \geq \frac{|a| - |z|}{1 + |a||z|}$.** <2>1. If $|z| \geq |a|$, then $\frac{|a| - |z|}{1 + |a||z|} \leq 0$, so the inequality $|f(z)| \geq 0 \geq \frac{|a|-|z|}{1+|a||z|}$ holds.
 ::: {.proof}
 The modulus of any complex number is non-negative, and $\frac{|a| - |z|}{1 + |a||z|} \le 0$ when $|z| \ge |a|$, so $|f(z)| \ge 0$ dominates it.
 :::

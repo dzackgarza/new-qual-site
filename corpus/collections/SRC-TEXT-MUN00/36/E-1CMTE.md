@@ -42,7 +42,7 @@ You should be able to answer all but one of the 340 questions involved in Exerci
         - Finite products of paracompact spaces need not be paracompact: The Sorgenfrey line $\mathbb{R}_l$ is paracompact (and Lindelöf), but the Sorgenfrey plane $\mathbb{R}_l \times \mathbb{R}_l$ is not normal, hence not paracompact.
         - If $X$ is paracompact and $Y$ is compact, then $X \times Y$ is paracompact.
     <2>4. Metrizability & Compactness:
-        - Every compact Hausdorff space is paracompact (finite subcovers are trivially locally finite).
+        - Every compact Hausdorff space is paracompact: a finite subcover is locally finite because each point meets at most finitely many members of the cover (indeed, at most all of them, and the cover is finite).
         - Every metrizable space is paracompact (Stone's Theorem, Munkres Theorem 41.4).
 
 <1>2. Property (19): Topological Completeness (Complete Metrizability).

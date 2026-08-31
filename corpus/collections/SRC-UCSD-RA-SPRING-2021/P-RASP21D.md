@@ -73,7 +73,7 @@ C \coloneqq \sup_{T_x \in \mathcal{F}} \|T_x\|_{L(Y, Z)} = \sup_{\|x\| \le 1} \|
 Uniform Boundedness Principle.
 :::
 
-<1>4. Deduce the joint boundedness of $B$: <2>1. Let $x \in X$ and $y \in Y$ be arbitrary non-zero vectors (for $x = 0$ or $y = 0$, $\|B(x, y)\| = 0 \le C \|x\| \|y\|$ holds trivially).
+<1>4. Deduce the joint boundedness of $B$: <2>1. Let $x \in X$ and $y \in Y$ be arbitrary non-zero vectors (for $x = 0$ or $y = 0$, bilinearity gives $B(x, y) = 0$, so $\|B(x, y)\| = 0 \le C \|x\| \|y\|$).
 ::: {.proof}
 case distinction.
 :::

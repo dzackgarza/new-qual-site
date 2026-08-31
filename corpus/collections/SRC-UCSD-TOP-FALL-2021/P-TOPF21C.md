@@ -55,7 +55,7 @@ Show that $X$ is homotopy equivalent to $S^3$.
     <2>2. By definition of the Hurewicz homomorphism, the induced map $f_*: H_3(S^3; \mathbb{Z}) \to H_3(X; \mathbb{Z})$ sends the fundamental class $[S^3]$ to $h([f])$, which is a generator of $H_3(X; \mathbb{Z})$.
     <2>3. Thus $f_*: H_3(S^3; \mathbb{Z}) \to H_3(X; \mathbb{Z})$ is an isomorphism.
     <2>4. In degree 0, $f_*: H_0(S^3; \mathbb{Z}) \to H_0(X; \mathbb{Z})$ is an isomorphism $\mathbb{Z} \to \mathbb{Z}$ since $S^3$ and $X$ are non-empty and connected.
-    <2>5. In all other degrees $k \neq 0, 3$, $H_k(S^3) = H_k(X) = 0$, so $f_*$ is trivially an isomorphism.
+    <2>5. In all other degrees $k \neq 0, 3$, $H_k(S^3) = H_k(X) = 0$, so $f_*\colon 0 \to 0$ is an isomorphism.
     <2>6. By Moise's Theorem, every 3-manifold admits a triangulation as a finite simplicial complex, so $X$ is a finite CW complex.
     <2>7. By Whitehead's Theorem for simply connected CW complexes, a continuous map inducing isomorphisms on all homology groups is a homotopy equivalence.
     <2>8. Therefore $f: S^3 \to X$ is a homotopy equivalence, so $X \simeq S^3$.

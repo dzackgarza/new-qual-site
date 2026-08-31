@@ -56,7 +56,7 @@ What are the total spaces?
 
 <1>3. Identify the total space $\widetilde{X}_1$ for $\phi_1$ ($\phi_1(a) = -1, \phi_1(b) = 1$). <2>1. The loop $a$ has non-trivial monodromy (swaps the two sheets), while $b$ lifts to closed loops on both sheets.
 <2>2. The basepoint lifts to 2 points $x_1, x_2$.
-<2>3. The circle $S^1$ lifts to a single circle of twice the length connecting $x_1$ and $x_2$ (a single circle $\widetilde{S}^1 \cong S^1$). <2>4. The $\mathbb{RP}^2$ lifts trivially to two disjoint copies of $\mathbb{RP}^2$, one attached at $x_1$ and one attached at $x_2$.
+<2>3. The circle $S^1$ lifts to a single circle of twice the length connecting $x_1$ and $x_2$ (a single circle $\widetilde{S}^1 \cong S^1$). <2>4. The $\mathbb{RP}^2$ lifts to two disjoint copies of $\mathbb{RP}^2$ (the monodromy of $\phi_1$ on the $\mathbb{RP}^2$ factor is the identity), one attached at $x_1$ and one attached at $x_2$.
 <2>5. Thus, the total space is a circle with an $\mathbb{RP}^2$ attached at each of two distinct points: $$\widetilde{X}_1 \cong S^1 \cup_{p_1} \mathbb{RP}^2 \cup_{p_2} \mathbb{RP}^2 \simeq S^1 \vee \mathbb{RP}^2 \vee \mathbb{RP}^2.$$
 ::: {.proof}
 <2>6. Since $\phi_1(a) = -1$, the circle lifts to a single circle of double length; since $\phi_1(b) = 1$, each copy of $\mathbb{RP}^2$ lifts to two disjoint copies, one over each sheet, attached at the two basepoint lifts.

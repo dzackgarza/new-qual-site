@@ -82,7 +82,7 @@ $G$ acts by conjugation on its $n_p$ Sylow $p\dash$subgroups, giving $\rho: G \t
 The kernel is normal, so if $G$ is simple then $\rho$ is injective and $\size G \divides n_p!$.
 Sylow 2 says the action is transitive, so the kernel is proper whenever $n_p > 1$.
 
-This subsumes argument 3 with $H = N_G(P)$ and is the form to reach for when the index itself is not obviously useful.
+This subsumes argument 3 with $H = N_G(P)$ and is the form to reach for when the index itself does not directly yield a contradiction.
 
 ## What each argument needs
 

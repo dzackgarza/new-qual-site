@@ -46,7 +46,7 @@ So the equation $f(z) = 0$ has $n$ solutions.
 Now use that $F$ is a continuous function of $w$ on $\DD$ and integer valued, thus constant.
 So $F(w) = n$ for any $w$, meaning $f(z) = w$ has $n$ solutions in $\DD$ for every $w$.
 
-> Alternative: $F$ continuously depends on the $a_k$, so send them all to zero to get $f(z) = z^n$ which trivially has $n$ zeros.
+> Alternative: $F$ continuously depends on the $a_k$, so send them all to zero to get $f(z) = z^n$, which has exactly $n$ zeros at the origin.
 
 :::
 

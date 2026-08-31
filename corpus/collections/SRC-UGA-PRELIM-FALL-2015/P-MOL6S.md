@@ -33,7 +33,7 @@ Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formu
     and (claim) so we find that 
   $$D^n f = 2^{n-1}e^{2x} + 2D^{n-1}f.$$
   
-    This is trivially the case for $n=1$, where we've computed $D^1 f = e^2x + 2xe^{2x} = 2^0e^{2x} + 2D^0 f$, and the inductive step holds exactly because 
+    This holds for $n=1$: we have $D^1 f = e^{2x} + 2xe^{2x} = 2^0e^{2x} + 2D^0 f$, and the inductive step holds exactly because 
   $$
   D^{n+1}f = DD^{n}f \\
   = D(2^{n-1}e^{2x} + 2D^{n-1}f) \\

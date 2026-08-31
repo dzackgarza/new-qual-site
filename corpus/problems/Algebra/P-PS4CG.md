@@ -23,7 +23,7 @@ Now consider sub-cases for $n_q$:
 
 - $n_q = p^2$: count the elements of order exactly $q$.
 
-  A Sylow $q\dash$subgroup has prime order $q$, so two distinct ones intersect in a subgroup of order dividing $q$ and properly contained in each, hence trivially.
+  A Sylow $q\dash$subgroup has prime order $q$, so two distinct ones intersect in a subgroup of order dividing $q$ and properly contained in each; the only such subgroup is $\{e\}$, so the intersection is $\{e\}$.
   The $n_q = p^2$ of them therefore contribute
   \[
   \abs{ \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e} } = n_q(q-1) = p^2(q-1)

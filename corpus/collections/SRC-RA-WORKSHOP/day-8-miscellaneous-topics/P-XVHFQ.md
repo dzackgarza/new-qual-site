@@ -37,7 +37,7 @@ the intervals $(2^{-(n+1)}, 2^{-n}]$ for $n = 1, 2, \ldots$ are disjoint (they p
 Hence for each $x$, at most one of the values $f_n(x)$ is nonzero.
 <1>3. Pointwise limit: $S(x) = \sum_n f_n(x) = f_{n(x)}(x)$ where $n(x)$ is the unique index with $x \in (2^{-(n+1)}, 2^{-n}]$, and $S(x) = 0$ otherwise.
 ::: {.proof}
-by <1>2, at most one term is nonzero at each $x$, so the series converges trivially.
+by <1>2, at most one term is nonzero at each $x$, so the series has at most one nonzero summand and converges.
 :::
 <1>4. Uniform convergence on $\RR$.
 ::: {.proof}

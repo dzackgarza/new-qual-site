@@ -53,7 +53,7 @@ Provide an upper bound for $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |,$ w
 ### Part (b): Proof of the $ML$-Inequality
 
 <1>2. **Let $I = \int_\alpha f(z)\,dz$.
-If $I = 0$, the inequality holds trivially.** <2>1. If $I = 0$, then $|I| = 0 \leq M \cdot \text{length}(\alpha)$ because $M \geq 0$ and $\text{length}(\alpha) \geq 0$.
+If $I = 0$, then $|I| = 0 \leq M \cdot \text{length}(\alpha)$ because $M \geq 0$ and $\text{length}(\alpha) \geq 0$.** <2>1. If $I = 0$, then $|I| = 0 \leq M \cdot \text{length}(\alpha)$ because $M \geq 0$ and $\text{length}(\alpha) \geq 0$.
 *Proof:* Non-negativity of length and supremum norm.
 <2>2. Q.E.D.
 

@@ -132,7 +132,7 @@ Substituting orbit-stabilizer into the second term is how every counting formula
 
 ## The four standard actions
 
-:::{.example title="Left translation on $G$: trivial"}
+:::{.example title="Left translation on $G$"}
 $G$ acts on itself by $\phi: g \mapsto (h\mapsto gh)$.
 
 - $\Orb(x) = G$, so the action is transitive.

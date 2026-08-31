@@ -44,7 +44,7 @@ What are the continuous maps $f: \mathbb{R} \to \mathbb{R}_\ell$?
     <2>2. The continuous image of a connected space is connected, so $f(\mathbb{R})$ must be a connected subset of $\mathbb{R}_\ell$.
     <2>3. By <1>1, the only non-empty connected subsets of $\mathbb{R}_\ell$ are singletons.
     <2>4. Hence $f(\mathbb{R}) = \{c\}$ for some $c \in \mathbb{R}$, which means $f(x) = c$ for all $x \in \mathbb{R}$.
-    <2>5. Conversely, every constant map is trivially continuous.
+    <2>5. Conversely, every constant map is continuous (the preimage of any open set is either $\emptyset$ or the whole space).
 
 <1>3. Conclusion:
     The components and path components of $\mathbb{R}_\ell$ are the singletons $\{x\}$, and the continuous maps $\mathbb{R} \to \mathbb{R}_\ell$ are the constant maps. Q.E.D.

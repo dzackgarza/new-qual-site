@@ -26,7 +26,7 @@ So pick annihilators $a_m, a_n \neq 0 \in R$ where $a_m m = 0$ and $a_n n = 0$.
 
 Since $a_m \neq 0$ and $a_n \neq 0$, the product $a_m a_n \neq 0$ **because $R$ is a domain**.
 
-Since $0 \in T(M)$, we can suppose $rm+n \neq 0$ (otherwise this is in $T(M)$ trivially).
+Since $0 \in T(M)$, we can suppose $rm+n \neq 0$ (otherwise $rm+n = 0$ so $m$ is torsion by definition).
 Then
 
 \[

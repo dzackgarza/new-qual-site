@@ -50,7 +50,7 @@ Prove that every real symmetric matrix $A \in M_n(\mathbb{R})$ has **real eigenv
 
 <1>3. Induction on Dimension $n$:
     *Proof:*
-    <2>1. **Base Case $n = 1$:** Any $1 \times 1$ real matrix is trivially diagonalized by $Q = [1]$.
+    <2>1. **Base Case $n = 1$:** Any $1 \times 1$ real matrix is already diagonal, so $Q = [1]$ diagonalizes it.
     <2>2. **Inductive Hypothesis:** Assume every $(n-1) \times (n-1)$ real symmetric matrix has an orthonormal basis of eigenvectors.
     <2>3. **Inductive Step:**
         - Choose an orthonormal basis $\{q_2, \dots, q_n\}$ for the $(n-1)$-dimensional subspace $W$.

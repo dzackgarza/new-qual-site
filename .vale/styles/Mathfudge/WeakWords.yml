@@ -1,13 +1,26 @@
+# WeakWords — flag prose that hides an argument.
+#
+# "trivial X" is always a true positive: it can always be replaced by a precise
+# equality ("= 0", "= 1", "= {e}", "the zero homomorphism", "the action fixing
+# every element"). So "trivial" and "trivially" are flagged unconditionally.
+#
+# The other words have one narrow standard use each, excluded below.
+
 extends: existence
 message: "Avoid '%s' — state the reasoning explicitly."
 level: warning
 ignorecase: true
 tokens:
+  # Flag unconditionally.
   - obviously
   - obvious
   - clearly
-  - trivially
-  - trivial
   - straightforward
-  - immediate
-  - reader
+  - trivial
+  - trivially
+
+  # "immediate" is standard only in "immediate predecessor/successor".
+  - '\bimmediate\b(?!\s+(?:predecessor|successor))'
+
+  # "reader" is standard only as a citation pointer.
+  - '\breader\b(?!\s+(?:is|are)\s+referred)(?!\s+to\b)'

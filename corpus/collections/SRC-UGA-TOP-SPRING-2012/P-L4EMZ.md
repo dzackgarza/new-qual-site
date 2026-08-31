@@ -57,3 +57,4 @@ c. $X = (0, 1]$ is not compact.
   - Each $(1/n, 1]$ is open in the subspace topology on $(0, 1]$ (it is the intersection of $(0,1]$ with the open interval $(1/n, 2)$ in $\RR$).
 - No finite subcollection covers $(0, 1]$: given finitely many sets $(1/n_1, 1], \dots, (1/n_k, 1]$, let $N = \max(n_1, \dots, n_k)$; then $1/N \in (0, 1]$ but $1/N \notin (1/n_i, 1]$ for any $i$ (since $1/N \le 1/n_i$), so $1/N$ is not covered.
 - Hence $(0, 1]$ admits an open cover with no finite subcover, so it is not compact.
+:::

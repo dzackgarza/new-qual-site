@@ -31,7 +31,7 @@ for any sequence $a = (a_j)_{j=1}^\infty \in \mathbb{C}^\mathbb{N}$, where $\|a\
 
 <1>1. Case 1: $q = \infty$ (where $0 < p < \infty$).
 ::: {.proof}
-<2>1. If $\|a\|_{\ell^p} = \infty$, the inequality $\|a\|_{\ell^\infty} \le \infty$ is immediate.
+<2>1. If $\|a\|_{\ell^p} = \infty$, then the right-hand side of $\|a\|_{\ell^\infty} \le \|a\|_{\ell^p}$ is $\infty$, and every extended real number is $\le \infty$, so the inequality holds.
 <2>2. Assume $\|a\|_{\ell^p} < \infty$. For every fixed index $k \ge 1$:
 $$|a_k|^p \le \sum_{j=1}^\infty |a_j|^p = \|a\|_{\ell^p}^p.$$
 <2>3. Taking the $(1/p)$-th power of both sides (since $t \mapsto t^{1/p}$ is strictly increasing on $[0, \infty)$):
@@ -43,7 +43,7 @@ $$\|a\|_{\ell^\infty} = \sup_{k \ge 1} |a_k| \le \|a\|_{\ell^p}.$$
 <1>2. Case 2: $q < \infty$ (where $0 < p < q < \infty$).
 ::: {.proof}
 <2>1. If $\|a\|_{\ell^p} = 0$, then $a_j = 0$ for all $j$, so $\|a\|_{\ell^q} = 0 = \|a\|_{\ell^p}$.
-<2>2. If $\|a\|_{\ell^p} = \infty$, the inequality holds trivially.
+<2>2. If $\|a\|_{\ell^p} = \infty$, the inequality holds.
 <2>3. Assume $0 < \|a\|_{\ell^p} < \infty$. Define the normalized sequence $b = (b_j)_{j=1}^\infty$ by $b_j = \frac{a_j}{\|a\|_{\ell^p}}$.
 <2>4. The normalized sequence satisfies
 $$\|b\|_{\ell^p}^p = \sum_{j=1}^\infty |b_j|^p = \sum_{j=1}^\infty \frac{|a_j|^p}{\|a\|_{\ell^p}^p} = 1.$$

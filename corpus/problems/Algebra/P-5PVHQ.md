@@ -24,5 +24,5 @@ Let $R$ be a commutative ring and $M$ an $R-$module.
    Justify why $m$ is torsion.
 
 3. Show that if $R$ is a domain, then the subset of elements of $M$ that are torsion is an $R-$submodule of $M$.
-   Clearly show where the hypothesis that $R$ is a domain is used.
+   Make explicit where the hypothesis that $R$ is a domain is used.
 :::

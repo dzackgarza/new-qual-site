@@ -31,7 +31,7 @@ substitute $y = x/t$: $\int t^{-n}\phi(x/t)\,dx = \int \phi(y)\,dy = 1$.
 
 <1>2. Pointwise identity: $$(f \ast \phi_t)(x) - f(x) = \int \phi_t(y)\,(f(x-y) - f(x))\,dy = \int \phi(y)\,(f(x - ty) - f(x))\,dy.$$ Proof: $f \ast \phi_t = \int f(x-y)\phi_t(y)\,dy$; subtract $f(x)\int\phi_t = f(x)$ (by <1>1); the second equality is the change of variables $y \mapsto ty$.
 
-<1>3. Given $\eps > 0$: <2>1. Choose $R$ with $\int_{|z| > R}|\phi(z)|\,dz < \dfrac{\eps}{4\|f\|_\infty}$ (possible since $\phi \in L^1$; take $\|f\|_\infty = 0$ as trivial).
+<1>3. Given $\eps > 0$: <2>1. Choose $R$ with $\int_{|z| > R}|\phi(z)|\,dz < \dfrac{\eps}{4\|f\|_\infty}$ (possible since $\phi \in L^1$; if $\|f\|_\infty = 0$ then $f \equiv 0$, so $f \ast \phi_t = 0 = f$ for every $t$; hence assume $\|f\|_\infty > 0$).
 ::: {.proof}
 dominated convergence / definition of the $L^1$ integral.
 :::

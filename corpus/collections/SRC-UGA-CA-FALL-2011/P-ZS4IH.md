@@ -46,7 +46,7 @@ $$\frac{\abs{f(z) - f(a)}}{\abs{z - a}} \leq \frac{2M}{r}.$$
 <1>3. Apply Schwarz's lemma to $\frac{h}{2M}$.
     <2>1. $\frac{h}{2M}$ is holomorphic on $\DD$ and maps $\DD$ into $\overline{\DD}$, with value $0$ at $w = 0$.
         ::: {.proof}
-        <1>2; if $M = 0$ then $f \equiv 0$ and the result is trivial, so assume $M > 0$.
+        <1>2; if $M = 0$ then $f \equiv 0$ and $\abs{h(w)} \leq 0$ holds, so assume $M > 0$.
         :::
     <2>2. $\abs{h(w)} \leq 2M \abs w$ for $\abs w < 1$.
         ::: {.proof}

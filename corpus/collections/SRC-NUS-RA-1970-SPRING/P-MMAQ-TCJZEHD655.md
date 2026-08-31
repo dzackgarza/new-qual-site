@@ -25,7 +25,7 @@ If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \
 
 <1>1. Reduction to the case $l \in \RR$; the cases $l = \pm\infty$ are handled at the end.
 ::: {.proof}
-If $l = +\infty$ the claim is trivial.
+If $l = +\infty$ the claim is vacuous: $\limsup_n \frac{1}{n}\sum_{i=1}^n a_i \le +\infty$ holds for every real sequence $\{a_n\}$.
 :::
 If $l = -\infty$, the argument of <1>2 applied with $l$ replaced by arbitrarily negative $K$ gives the claim.
 So assume $l$ is finite.

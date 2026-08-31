@@ -32,7 +32,7 @@ Does diagonalizable imply distinct eigenvalues?
     *Proof:*
     <2>1. Consider the $n \times n$ identity matrix $I_n$ for $n \ge 2$ (or any scalar matrix $c I_n$ with $c \in F$):
         $$I_n = \begin{pmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{pmatrix} \in M_n(F).$$
-    <2>2. The matrix $I_n$ is already diagonal, hence trivially diagonalizable (with change-of-basis matrix $P = I_n$).
+    <2>2. The matrix $I_n$ is already diagonal, hence diagonalizable with change-of-basis $P = I_n$.
     <2>3. The characteristic polynomial is $p(x) = \det(x I_n - I_n) = (x - 1)^n$.
     <2>4. The unique eigenvalue of $I_n$ is $\lambda = 1$, which has algebraic multiplicity $n \ge 2$.
     <2>5. Because there is only 1 distinct eigenvalue for an $n \times n$ matrix with $n \ge 2$, the eigenvalues are not distinct.

@@ -31,7 +31,7 @@ $$
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)}$.
 ::: {.proof}
 <2>1. If $\|f\|_{L^\infty(E)} = \infty$, the upper bound holds vacuously.
-<2>2. If $\mu(E) = 0$, then $\|f\|_{L^p(E)} = 0$ for all $p$ and $\|f\|_{L^\infty(E)} = 0$, so the limit is trivially 0.
+<2>2. If $\mu(E) = 0$, then $\|f\|_{L^p(E)} = 0$ for all $p$ and $\|f\|_{L^\infty(E)} = 0$, so the limit is $0$.
 <2>3. Assume $\|f\|_{L^\infty(E)} < \infty$ and $0 < \mu(E) < \infty$.
 <2>4. For almost every $x \in E$, $|f(x)| \le \|f\|_{L^\infty(E)}$.
 <2>5. Integrating over $E$:
@@ -43,7 +43,7 @@ $$\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)} \lim_{p \to \inf
 
 <1>2. Lower bound: $\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge \|f\|_{L^\infty(E)}$.
 ::: {.proof}
-<2>1. If $\|f\|_{L^\infty(E)} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p(E)} = 0$ for all $p \ge 1$ and the inequality holds trivially.
+<2>1. If $\|f\|_{L^\infty(E)} = 0$, then $f = 0$ almost everywhere, so $\|f\|_{L^p(E)} = 0$ for all $p \ge 1$ and the inequality holds.
 <2>2. Assume $\|f\|_{L^\infty(E)} > 0$. For any real number $M$ with $0 < M < \|f\|_{L^\infty(E)}$, define the superlevel set
 $$A_M = \{x \in E : |f(x)| > M\}.$$
 <2>3. By definition of the essential supremum, $\mu(A_M) > 0$.

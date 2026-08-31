@@ -29,7 +29,7 @@ Prove that $\sim$ is an **equivalence relation** on $\{1, 2, \dots, n\}$.
 
 <1>1. Reflexivity ($j \sim j$):
     *Proof:*
-    <2>1. By definition of the relation, for every $j \in \{1, 2, \dots, n\}$, $j = j$, so $j \sim j$ holds trivially.
+    <2>1. For every $j \in \{1, 2, \dots, n\}$, the first clause of the definition applies: $j = j$, so $j \sim j$.
 
 <1>2. Symmetry ($j \sim k \implies k \sim j$):
     *Proof:*

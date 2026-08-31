@@ -27,5 +27,5 @@ Now $\abs{z} \leq R$ is a closed and bounded set, thus compact, and since $f$ is
 Then $\abs{f(z)} \leq \max(M_1, M_2)$ on $\CC$ is entire and bounded, thus constant by Liouville, a contradiction.
 $\contradiction$
 
-Conversely, if $f$ is constant, $f$ is trivially bounded in every neighborhood of $\infty$, making it a removable singularity.
+Conversely, if $f$ is constant, $f$ is bounded in every neighborhood of $\infty$, making it a removable singularity.
 :::

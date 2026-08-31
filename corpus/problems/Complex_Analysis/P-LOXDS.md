@@ -58,6 +58,7 @@ First note $S_- \cap S_+ = \emptyset$: if $t$ lay in both, then $E \cap (-\infty
 Since $S_-$ is downward closed and $S_+$ is upward closed, their disjointness forces $\sup S_- \le \inf S_+$ (if $\sup S_- > \inf S_+$, some $t$ with $\inf S_+ < t < \sup S_-$ would lie in both).
 Moreover $\sup S_- < \inf S_+$: if $\sup S_- = \inf S_+ = c$, then $E \cap (-\infty, c) = \bigcup_n E \cap (-\infty, c - 1/n)$ is a countable union of countable sets (each $c - 1/n < c = \sup S_-$ lies in $S_-$), hence countable, so $c \in S_-$; symmetrically $E \cap (c, \infty) = \bigcup_n E \cap (c + 1/n, \infty)$ is countable, so $c \in S_+$, contradicting $S_- \cap S_+ = \emptyset$.
 Therefore $(\sup S_-, \inf S_+)$ is a nonempty open interval, and by the two inclusions above it equals $S$, so $S$ is nonempty and open.
+:::
 
 
 

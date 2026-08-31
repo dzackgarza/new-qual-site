@@ -28,7 +28,7 @@ Let $(X, d)$ be a metric space.
 
 **$(\Longrightarrow)$ Compact $\implies$ Sequentially Compact:** Let $(x_n)_{n=1}^\infty$ be a sequence in $X$.
 
-- If the set of values $S = \{x_n : n \in \mathbb{N}\}$ is finite, then by the Pigeonhole Principle there is a point $x \in S$ and a subsequence that is identically constant $x_{n_k} = x$, which trivially converges to $x$.
+- If the set of values $S = \{x_n : n \in \mathbb{N}\}$ is finite, then by the Pigeonhole Principle there is a point $x \in S$ and a subsequence that is identically constant $x_{n_k} = x$, which converges to $x$.
 
 - If $S$ is infinite: Suppose towards a contradiction that $(x_n)$ has no convergent subsequence.
   Then no point $x \in X$ is an accumulation point of $S$.

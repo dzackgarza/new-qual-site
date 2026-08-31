@@ -22,7 +22,7 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The case $U = \RR^n$ is immediate: the unit cubes $\prod_{i=1}^n [m_i, m_i+1]$ ($m_i \in \ZZ$) are closed, countable, cover $\RR^n$, and have pairwise disjoint interiors (almost disjoint).
+<1>1. The case $U = \RR^n$ is handled directly: the unit cubes $\prod_{i=1}^n [m_i, m_i+1]$ ($m_i \in \ZZ$) are closed, countable, cover $\RR^n$, and have pairwise disjoint interiors (almost disjoint).
 Henceforth assume $U \neq \RR^n$.
 
 <1>2. Call a cube *dyadic* if it has the form $\prod_{i=1}^n [m_i 2^{-k}, (m_i+1)2^{-k}]$ for integers $m_i$ and $k \ge 0$.
