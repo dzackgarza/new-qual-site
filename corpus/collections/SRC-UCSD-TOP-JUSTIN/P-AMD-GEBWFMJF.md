@@ -46,8 +46,12 @@ Since $|\chi_{A_i \cap H^+(u_k)}| \le \chi_{A_i}$ and $\mu(A_i) < \infty$, the D
 <2>1. By the Borsuk-Ulam theorem (proved in P-AMD-6OJQMSOZ for $n=2$, and holding for all $n \ge 1$), for any continuous map $F \colon S^n \to \mathbb{R}^n$, there exists a point $u^* \in S^n$ such that: $$F(u^*) = F(-u^*).$$ <2>2. In terms of coordinate functions, this means for all $i \in \{1, \dots, n\}$: $$f_i(u^*) = f_i(-u^*) \iff \mu(A_i \cap H^+(u^*)) = \mu(A_i \cap H^+(-u^*)).$$ <2>3. Combining with the total measure equality from <1>1: $$\mu(A_i \cap H^+(u^*)) + \mu(A_i \cap H^+(-u^*)) = \mu(A_i) \implies 2 \mu(A_i \cap H^+(u^*)) = \mu(A_i) \implies \mu(A_i \cap H^+(u^*)) = \frac{1}{2} \mu(A_i).$$ <2>4. If $v^* = 0$, then $u^* = (0, \pm 1)$, giving $H^+(u^*) = \mathbb{R}^n$ or $\emptyset$, which would mean $\mu(A_i) = 0$ for all $i$.
 If any $\mu(A_i) > 0$, then $v^* \neq 0$, so $H(u^*)$ is a genuine affine hyperplane in $\mathbb{R}^n$.
 <2>5. The hyperplane $H(u^*)$ bisects all $n$ sets $A_1, \dots, A_n$ simultaneously.
-<2>6. Proof: By Borsuk-Ulam theorem.
-Q.E.D.
+::: {.proof}
+<2>6. Borsuk–Ulam gives $F(u^*) = F(-u^*)$, which by <2>2–<2>3 forces $\mu(A_i \cap H^+(u^*)) = \frac{1}{2}\mu(A_i)$ for every $i$; hence $H(u^*)$ bisects each $A_i$.
+:::
 
-<1>4. Q.E.D. <2>1. Proof: <1>1–<1>3 establish the Ham Sandwich theorem for any $n$ measurable sets of finite measure in $\mathbb{R}^n$.
+<1>4. Conclusion.
+::: {.proof}
+<2>1. <1>1–<1>3 establish the Ham Sandwich theorem for any $n$ measurable sets of finite measure in $\mathbb{R}^n$.
+:::
 :::

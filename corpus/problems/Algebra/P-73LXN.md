@@ -78,8 +78,14 @@ Since $|G| = p(p-1)$ by <1>2.<2>5 and no two distinct pairs can define the same 
 :::
 
 <1>4. Group composition law and algebraic structure: <2>1. For $\sigma_{a_1, b_1}, \sigma_{a_2, b_2} \in G$, the composition satisfies $\sigma_{a_1, b_1} \circ \sigma_{a_2, b_2} = \sigma_{a_1 + b_1 a_2, b_1 b_2}$.
-<3>1. Action on $\zeta_p$: $$(\sigma_{a_1, b_1} \circ \sigma_{a_2, b_2})(\zeta_p) = \sigma_{a_1, b_1}(\zeta_p^{b_2}) = (\sigma_{a_1, b_1}(\zeta_p))^{b_2} = (\zeta_p^{b_1})^{b_2} = \zeta_p^{b_1 b_2}.$$ Proof: Direct computation using field homomorphism properties.
-<3>2. Action on $\sqrt[p]{2}$: $$(\sigma_{a_1, b_1} \circ \sigma_{a_2, b_2})(\sqrt[p]{2}) = \sigma_{a_1, b_1}(\sqrt[p]{2}\zeta_p^{a_2}) = \sigma_{a_1, b_1}(\sqrt[p]{2}) \cdot \sigma_{a_1, b_1}(\zeta_p)^{a_2} = (\sqrt[p]{2}\zeta_p^{a_1}) \cdot (\zeta_p^{b_1})^{a_2} = \sqrt[p]{2} \zeta_p^{a_1 + b_1 a_2}.$$ Proof: Direct computation using field homomorphism properties.
+<3>1. Action on $\zeta_p$: $$(\sigma_{a_1, b_1} \circ \sigma_{a_2, b_2})(\zeta_p) = \sigma_{a_1, b_1}(\zeta_p^{b_2}) = (\sigma_{a_1, b_1}(\zeta_p))^{b_2} = (\zeta_p^{b_1})^{b_2} = \zeta_p^{b_1 b_2}.$$
+::: {.proof}
+Each step uses that $\sigma_{a,b}$ is a field homomorphism: it preserves powers and multiplication, and $\sigma_{a,b}(\zeta_p) = \zeta_p^b$ by definition.
+:::
+<3>2. Action on $\sqrt[p]{2}$: $$(\sigma_{a_1, b_1} \circ \sigma_{a_2, b_2})(\sqrt[p]{2}) = \sigma_{a_1, b_1}(\sqrt[p]{2}\zeta_p^{a_2}) = \sigma_{a_1, b_1}(\sqrt[p]{2}) \cdot \sigma_{a_1, b_1}(\zeta_p)^{a_2} = (\sqrt[p]{2}\zeta_p^{a_1}) \cdot (\zeta_p^{b_1})^{a_2} = \sqrt[p]{2} \zeta_p^{a_1 + b_1 a_2}.$$
+::: {.proof}
+The first equality uses $\sigma_{a_2,b_2}(\sqrt[p]{2}) = \sqrt[p]{2}\zeta_p^{a_2}$; the second uses multiplicativity of $\sigma_{a_1,b_1}$; the third uses the definitions of $\sigma_{a_1,b_1}$ on the two generators; the last combines the powers of $\zeta_p$.
+:::
 <3>3. Q.E.D.
 ::: {.proof}
 Matches the definition of $\sigma_{a_1 + b_1 a_2, b_1 b_2}$.

@@ -27,6 +27,12 @@ $$
 
 :::: {.solution}
 <1>1. Expand both sides using bilinearity and symmetry of the inner product.
-Proof: for $x, y$ in a real inner product space, \[\lVert x+y\rVert^2 = \langle x+y, x+y\rangle = \lVert x\rVert^2 + 2\langle x, y\rangle + \lVert y\rVert^2,\] \[\lVert x-y\rVert^2 = \langle x-y, x-y\rangle = \lVert x\rVert^2 - 2\langle x, y\rangle + \lVert y\rVert^2.\] <1>2. Add.
-Proof: adding the two identities, the cross terms cancel: \[\lVert x+y\rVert^2 + \lVert x-y\rVert^2 = 2\lVert x\rVert^2 + 2\lVert y\rVert^2.\] <1>3. Q.E.D.
+::: {.proof}
+For $x, y$ in a real inner product space, \[\lVert x+y\rVert^2 = \langle x+y, x+y\rangle = \lVert x\rVert^2 + 2\langle x, y\rangle + \lVert y\rVert^2,\] \[\lVert x-y\rVert^2 = \langle x-y, x-y\rangle = \lVert x\rVert^2 - 2\langle x, y\rangle + \lVert y\rVert^2.\]
 :::
+<1>2. Add.
+::: {.proof}
+Adding the two identities, the cross terms cancel: \[\lVert x+y\rVert^2 + \lVert x-y\rVert^2 = 2\lVert x\rVert^2 + 2\lVert y\rVert^2.\]
+:::
+<1>3. Q.E.D.
+::::

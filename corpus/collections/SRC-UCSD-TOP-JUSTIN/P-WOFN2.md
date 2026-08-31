@@ -29,8 +29,10 @@ Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting close
 
 <1>1. Topological identification of $M$.
 <2>1. $B^2$ is the 2-disk $D^2$, whose boundary is $S^1$.
-<2>2. Gluing two copies of the 2-disk $D^2$ along their common boundary via the identity map yields the 2-sphere $S^2$: $$D^2 \cup_{\operatorname{id}_{S^1}} D^2 \cong S^2.$$ <2>3. Since the gluing map on $S^1 \times \partial B^2$ is $\operatorname{id}_{S^1 \times \partial B^2} = \operatorname{id}_{S^1} \times \operatorname{id}_{S^1}$, the product structure factors through the gluing: $$M = (S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2.$$ <2>4. Proof: By distributivity of cartesian product over pushouts along identity maps.
-Q.E.D.
+<2>2. Gluing two copies of the 2-disk $D^2$ along their common boundary via the identity map yields the 2-sphere $S^2$: $$D^2 \cup_{\operatorname{id}_{S^1}} D^2 \cong S^2.$$ <2>3. Since the gluing map on $S^1 \times \partial B^2$ is $\operatorname{id}_{S^1 \times \partial B^2} = \operatorname{id}_{S^1} \times \operatorname{id}_{S^1}$, the product structure factors through the gluing: $$M = (S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2.$$
+::: {.proof}
+<2>4. The gluing map is the identity on both the $S^1$ factor and the boundary $S^1$ of $B^2$, so the pushout distributes over the product: $(S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2$.
+:::
 
 <1>2. Compute $H_*(S^1 \times S^2; \mathbb{Z})$ using the Künneth formula.
 <2>1. The homology groups of the circle $S^1$ and the sphere $S^2$ are:
@@ -50,8 +52,9 @@ Q.E.D.
 - $k = 3$: $(H_1(S^1) \otimes H_2(S^2)) = \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 
 - $k \ge 4$: All terms are 0, so $H_k(M) = 0$.
-  <2>4. Proof: By Künneth theorem for homology of products of spaces with torsion-free homology.
-  Q.E.D.
+::: {.proof}
+  <2>4. Since $H_i(S^1)$ and $H_j(S^2)$ are free abelian, all Tor terms vanish and the Künneth formula reduces to the direct sum of tensor products; evaluating these for each $k$ gives the groups in <2>3.
+:::
 
 <1>3. Alternative verification via the Mayer-Vietoris sequence.
 <2>1. Let $A = S^1 \times B^2$ and $B = S^1 \times B^2$.
@@ -64,10 +67,13 @@ Q.E.D.
 - From $0 \to H_2(M) \xrightarrow{\partial} \ker(i_*, j_*) \to 0$, we get $H_2(M) \cong \mathbb{Z}$.
 
 - From $0 \to \operatorname{coker}(i_*, j_*) \to H_1(M) \to 0$, we get $H_1(M) \cong \mathbb{Z}$.
-  <2>6. Proof: By Mayer-Vietoris exact sequence.
-  Q.E.D.
+::: {.proof}
+  <2>6. The Mayer–Vietoris sequence, together with the vanishing of $H_2(A)$ and $H_2(B)$ and the explicit form of $(i_*, j_*)$ on $H_1(T^2)$, gives the short exact sequences that determine $H_3(M)$, $H_2(M)$, and $H_1(M)$.
+:::
 
 <1>4. Conclusion.
 <2>1. The homology groups of $M$ are: $$H_0(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_1(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_2(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_3(M; \mathbb{Z}) \cong \mathbb{Z},$$ and $H_k(M; \mathbb{Z}) = 0$ for all $k \ge 4$.
-<2>2. Proof: By <1>1–<1>3. Q.E.D.
+::: {.proof}
+<2>2. The Künneth computation in <1>2 and the Mayer–Vietoris computation in <1>3 agree, giving the stated homology groups.
+:::
 :::

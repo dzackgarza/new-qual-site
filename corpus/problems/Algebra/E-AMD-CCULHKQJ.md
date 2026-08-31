@@ -115,7 +115,10 @@ By <1>2.<2>2. <2>4. The homomorphism $\rho$ is surjective.
 ::: {.proof}
 Any $F$-automorphism $\tau \in \operatorname{Gal}(E/F)$ extends to an automorphism of the splitting field $K$ over $F$ by the Isomorphism Extension Theorem.
 :::
-<2>5. By the First Isomorphism Theorem for groups: $$\operatorname{Gal}(E/F) \cong G / \ker(\rho) = \operatorname{Gal}(K/F) / \operatorname{Gal}(K/E) = G / H.$$ Proof: Direct application of the First Isomorphism Theorem to the surjective homomorphism $\rho$.
+<2>5. By the First Isomorphism Theorem for groups: $$\operatorname{Gal}(E/F) \cong G / \ker(\rho) = \operatorname{Gal}(K/F) / \operatorname{Gal}(K/E) = G / H.$$
+::: {.proof}
+The First Isomorphism Theorem applied to the surjective homomorphism $\rho \colon G \to \operatorname{Gal}(E/F)$ gives $\operatorname{Gal}(E/F) \cong G / \ker(\rho)$; by <1>2.<2>2, $\ker(\rho) = \operatorname{Gal}(K/E) = H$.
+:::
 
 <1>5. Conclusion: All parts of the Fundamental Theorem of Galois Theory for intermediate fields are proven.
 ::: {.proof}

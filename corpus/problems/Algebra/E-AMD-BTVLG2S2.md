@@ -86,10 +86,22 @@ $\psi$ is both injective and surjective.
 Since $\psi$ is a bijection between the finite set $H \cap K$ and $\phi^{-1}(x)$.
 :::
 
-<1>3. Counting the cardinality $|HK|$: <2>1. By the Fiber Counting Theorem (partitioning the domain $H \times K$ by the fibers of $\phi$): $$|H \times K| = \sum_{x \in HK} |\phi^{-1}(x)|.$$ Proof: The preimages $\phi^{-1}(x)$ for $x \in HK$ form a partition of the domain $H \times K$.
-<2>2. Since each fiber has constant size $|\phi^{-1}(x)| = |H \cap K|$ (<1>2.<2>5): $$|H \times K| = \sum_{x \in HK} |H \cap K| = |HK| \cdot |H \cap K|.$$ Proof: Summing the constant value $|H \cap K|$ over all $|HK|$ elements of $HK$.
-<2>3. Substituting $|H \times K| = |H| \cdot |K|$ (<1>1.<2>2) gives: $$|H| \cdot |K| = |HK| \cdot |H \cap K|.$$ Proof: Equating the two expressions for $|H \times K|$.
-<2>4. Since $|H \cap K| \ge 1$ (as $e \in H \cap K$), dividing by $|H \cap K|$ gives: $$|HK| = \frac{|H| \cdot |K|}{|H \cap K|}.$$ Proof: Division by non-zero integer $|H \cap K|$.
+<1>3. Counting the cardinality $|HK|$: <2>1. By the Fiber Counting Theorem (partitioning the domain $H \times K$ by the fibers of $\phi$): $$|H \times K| = \sum_{x \in HK} |\phi^{-1}(x)|.$$
+::: {.proof}
+The preimages $\phi^{-1}(x)$ for $x \in HK$ form a partition of the domain $H \times K$.
+:::
+<2>2. Since each fiber has constant size $|\phi^{-1}(x)| = |H \cap K|$ (<1>2.<2>5): $$|H \times K| = \sum_{x \in HK} |H \cap K| = |HK| \cdot |H \cap K|.$$
+::: {.proof}
+Summing the constant value $|H \cap K|$ over all $|HK|$ elements of $HK$ gives $|HK| \cdot |H \cap K|$.
+:::
+<2>3. Substituting $|H \times K| = |H| \cdot |K|$ (<1>1.<2>2) gives: $$|H| \cdot |K| = |HK| \cdot |H \cap K|.$$
+::: {.proof}
+Equating the two expressions for $|H \times K|$ from <2>1 and <2>2.
+:::
+<2>4. Since $|H \cap K| \ge 1$ (as $e \in H \cap K$), dividing by $|H \cap K|$ gives: $$|HK| = \frac{|H| \cdot |K|}{|H \cap K|}.$$
+::: {.proof}
+Division by the non-zero integer $|H \cap K|$ is valid because $e \in H \cap K$ makes $|H \cap K| \ge 1$.
+:::
 
 <1>4. Conclusion: $|HK| = \frac{|H| |K|}{|H \cap K|}$.
 ::: {.proof}

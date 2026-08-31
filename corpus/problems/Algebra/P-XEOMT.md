@@ -111,6 +111,6 @@ Direct evaluation of the order of $A_n$.
 :::
 <2>3. Since $[A_n, A_n] = A_n \neq \{e\}$, $A_n$ is not abelian.
 ::: {.proof}
-By contrapositive of <2>1. <2>4. Q.E.D. Proof: Follows from <2>1 through <2>3.
+<2>4. By the contrapositive of <2>1, a group whose commutator subgroup is nontrivial is not abelian; since $[A_n, A_n] = A_n \neq \{e\}$, $A_n$ is not abelian.
 :::
 :::

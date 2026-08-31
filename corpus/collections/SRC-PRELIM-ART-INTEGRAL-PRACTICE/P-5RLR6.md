@@ -40,7 +40,13 @@ By the chain rule, $\frac{du}{dx} = 2\sin(x)\cos(x)$.
 By the double-angle identity for sine, $2\sin(x)\cos(x) = \sin(2x)$.
 Thus $du = \sin(2x) \, dx$.
 
-<1>2. Transform and evaluate the integral in terms of $u$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = \int e^u \, du = e^u + C.$$ Proof: The antiderivative of the natural exponential function $e^u$ is $e^u + C$.
+<1>2. Transform and evaluate the integral in terms of $u$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = \int e^u \, du = e^u + C.$$
+::: {.proof}
+By <1>1, $\sin(2x)\,dx = du$, so the integral becomes $\int e^u\,du$; the antiderivative of $e^u$ is $e^u + C$.
+:::
 
-<1>3. Substitute back $u = \sin^2(x)$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = e^{\sin^2(x)} + C.$$ Proof: Follows directly from <1>1 and <1>2. Q.E.D.
+<1>3. Substitute back $u = \sin^2(x)$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = e^{\sin^2(x)} + C.$$
+::: {.proof}
+Replacing $u$ by $\sin^2(x)$ in the antiderivative $e^u + C$ from <1>2 gives $e^{\sin^2(x)} + C$.
+:::
 :::
