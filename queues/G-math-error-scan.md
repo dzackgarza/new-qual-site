@@ -17,6 +17,23 @@ Disposition order follows the finding numbers.
   Lines 30 and 32 now read $Z(G)$; line 28 and the $[G:Z(g)]$ factors keep the
   centralizer reading.
 - [ ] 2. T-BRWA7 — Five-lemma proof is garbled
+  Investigation 2026-09-01: finding confirmed, and deeper than reported.
+  (a) The proof body is ill-typed ($p \circ n$ with $n(x) \in B'$, an
+  undefined $n'$, $p$ applied to $B'$-elements).
+  (b) The committed statement reverses the outer hypotheses: the five lemma
+  needs $q$ surjective and $l$ injective, not $q$ injective and $l$
+  surjective. Verified against Wikipedia "Five lemma" (proof citing Massey
+  1991 p. 184), fetched 2026-09-01.
+  (c) The diagram needs verticals at $A$ and $D$ as well as $B, C, E$; the
+  chases use all three squares.
+  Repair method: restate the card in the source's own labeling (top row
+  $A \to B \to C \to D \to E$ with maps $k, l, m, n$; bottom row primed;
+  verticals $f, g, h, i, j$; hypotheses $k$ epi, $l, m$ iso, $n$ mono,
+  conclusion $g$ iso) and copy the source's two chases verbatim. Do not
+  translate to the card's old letters: the source's $l, m, n, q$ name
+  different arrows than the card's, and the notation dictionary is the
+  failure mode that corrupted four drafting attempts.
+  Card left at committed state.
 - [ ] 3. FR-EDJWQ — Difference quotient set equal to the derivative
 - [ ] 4. E-J3QMJ — Constancy on a closed subdisk: wrong/inadequate justification
 - [ ] 5. E-BXDQY — Bounded comparison mis-written
