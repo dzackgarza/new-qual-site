@@ -1,5 +1,68 @@
 # Outstanding work
 
+## Content issues and policy violations build log
+
+Built log from live GH issues and local queue logs.
+
+### Content issues log (issue source: label `bug` or `documentation`)
+
+Total instances: **31**  
+Open: **21**  
+Closed: **10**
+
+Open content issues:
+1. https://github.com/dzackgarza/new-qual-site/issues/61 — Rendering defects visible on card pages: collapsed lists, lost nesting, stem-derived titles, duplicate backlinks
+2. https://github.com/dzackgarza/new-qual-site/issues/62 — Design: guide section headings rendered as card links instead of section headings
+3. https://github.com/dzackgarza/new-qual-site/issues/63 — Guide pages list problems as flat topic-bucket dumps, not curated reading sequences
+4. https://github.com/dzackgarza/new-qual-site/issues/64 — Topic vocabulary has cross-subject homonyms (e.g. `Algebras` spans commutative and representation theory)
+5. https://github.com/dzackgarza/new-qual-site/issues/65 — Eliminate standalone `kind: solution` cards
+6. https://github.com/dzackgarza/new-qual-site/issues/67 — Wiki prose stance: audience is reviewing graduate students, not first-time learners
+7. https://github.com/dzackgarza/new-qual-site/issues/68 — Card page metadata + appearance list issues
+8. https://github.com/dzackgarza/new-qual-site/issues/69 — Hints inlined into solutions instead of hidden hints envs
+9. https://github.com/dzackgarza/new-qual-site/issues/70 — Duplicate cards and metadata-strip defects
+10. https://github.com/dzackgarza/new-qual-site/issues/71 — Guide pages do not define or link named terms
+11. https://github.com/dzackgarza/new-qual-site/issues/72 — Guide prose leaks internal authoring status
+12. https://github.com/dzackgarza/new-qual-site/issues/73 — Maintain a policy index of corpus defect patterns
+13. https://github.com/dzackgarza/new-qual-site/issues/74 — Defer definitions/theorems to external oracles where they exist
+14. https://github.com/dzackgarza/new-qual-site/issues/75 — Lamport solution blocks render as flat prose
+15. https://github.com/dzackgarza/new-qual-site/issues/76 — Compilation collections render as flat unsectioned dumps
+16. https://github.com/dzackgarza/new-qual-site/issues/77 — Guide ledes use formulaic copy
+17. https://github.com/dzackgarza/new-qual-site/issues/78 — Guide sidebar parent-child tree and “Study path” navigation
+18. https://github.com/dzackgarza/new-qual-site/issues/79 — Guide pages mix authored cards with query dumps
+19. https://github.com/dzackgarza/new-qual-site/issues/80 — Pages dump bare links instead of narrative content
+20. https://github.com/dzackgarza/new-qual-site/issues/81 — Centralize/structure resource pages and intake external PDFs into collections
+21. https://github.com/dzackgarza/new-qual-site/issues/82 — In-page TOC includes footer metadata blocks
+
+Closed content issues:
+1. https://github.com/dzackgarza/new-qual-site/issues/21 — Node runtime fix for pinned Pages actions
+2. https://github.com/dzackgarza/new-qual-site/issues/36 — `sync_macros.py` regeneration failure
+3. https://github.com/dzackgarza/new-qual-site/issues/42 — Macro vocabulary coverage gap
+4. https://github.com/dzackgarza/new-qual-site/issues/44 — Missing wiki hierarchy navigation
+5. https://github.com/dzackgarza/new-qual-site/issues/49 — Truncated LaTeX in PDF-extracted cards
+6. https://github.com/dzackgarza/new-qual-site/issues/54 — Blank viewport for heading-fragment navigation
+7. https://github.com/dzackgarza/new-qual-site/issues/56 — Duplicate card-body candidates found by title migration
+8. https://github.com/dzackgarza/new-qual-site/issues/57 — Inline math parsing failure in many sites
+9. https://github.com/dzackgarza/new-qual-site/issues/58 — Search shows raw TeX titles
+10. https://github.com/dzackgarza/new-qual-site/issues/59 — Footnotes with marks but no note
+
+### Policy-violation oriented log
+
+No explicit `policy` label appears on open issues.  
+Open policy pattern instance:
+1. https://github.com/dzackgarza/new-qual-site/issues/73
+
+Related keyword-hit instance with “policy” text only:
+2. https://github.com/dzackgarza/new-qual-site/issues/16 (closed, QC formatting scope boundary)
+
+### Queue logs that support the same area
+
+- `queues/README.md`: issue categories and queue state summary.
+- `queues/F-wiki-doctor.md`: all measured findings closed except 5 structural one-child directories marked non-defects.
+- `queues/11-design-issues.md`: 25/25 defects resolved.
+- `queues/G-math-error-scan.md`: 66 candidate mathematical error findings; 1 dispositioned fixed, 65 open candidates.
+
+---
+
 Work through this queue one item at a time.
 Read the source mathematics before each change.
 Commit each completed item before starting the next item.
