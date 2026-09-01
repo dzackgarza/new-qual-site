@@ -210,7 +210,7 @@ the collection card and extracting its problems.
 - [ ] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 8 problems) — algebra — Fall 19
 - [ ] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 7 problems) — applied-algebra — Fall 19
 - [ ] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017
-- [ ] [My Solutions to Old Analysis Quals.pdf](assets/attachments/extracted/My Solutions to Old Analysis Quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017
+- [ ] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017
 - [ ] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 12 problems) — complex-analysis
 - [ ] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 12 problems) — Berkeley — applied-algebra
 - [ ] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — UNL — diff-geom — January 2007
