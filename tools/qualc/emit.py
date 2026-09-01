@@ -25,7 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
-from urllib.parse import urlsplit
+from urllib.parse import quote_plus, urlsplit
 
 import panflute as pf
 import yaml
@@ -2016,6 +2016,61 @@ def _query_heading(query: PublicationQuery) -> str:
     return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
 
 
+def _generator_deep_link(area: str, topics: list[str]) -> str:
+    """A link into the generator, scoped to this guide's area and one topic.
+
+    The `generate.html` controls are a single-select for topic and a set of
+    area checkboxes, and the values they match are the same display strings the
+    guide's queries carry. The URL survives because `app.js` and the generator
+    both read the params on load and select the matching options.
+
+    A deep link only ever renders on a guide *section* page (a guide root
+    carries no items), which lives two folders below the site root, so the
+    generator is spelled `../../generate.html` and quarto resolves it from the
+    section's own location.
+    """
+    params: list[str] = []
+    if area:
+        params.append(f"area={quote_plus(area)}")
+    if topics:
+        params.append(f"topic={quote_plus(topics[0])}")
+    return f"../../generate.html?{'&'.join(params)}"
+
+
+def _generator_deep_link_block(
+    area: str,
+    query: PublicationQuery,
+    hits: list[sqlite3.Row],
+    inline_cache: dict[str, list[pf.Inline]],
+) -> pf.Block:
+    """The guide's way to drill a topic: send the reader to the generator.
+
+    The static `publication-query` panel duplicated the generator's output by
+    hand, so the two fell out of sync the moment a card was added or
+    reclassified. The generator owns the listing (it filters, sorts, samples,
+    and offers a print/PDF view the guide's panel never had), so the guide
+    keeps the call to action and the topic that scopes it, and nothing else.
+    """
+    topic = query.topics[0] if query.topics else ""
+    focus = f" on {topic}" if topic else ""
+    noun = query.kind if len(hits) == 1 else _plural(query.kind)
+    return pf.Div(
+        pf.Para(
+            pf.Link(
+                pf.Str(f"Drill the {noun}{focus} in the generator"),
+                url=_generator_deep_link(area, query.topics),
+            ),
+            pf.Space(),
+            pf.Str(f"({len(hits)} {noun})."),
+        ),
+        classes=["panel", "generator-link"],
+        attributes={
+            "query-kind": query.kind,
+            "count": str(len(hits)),
+        },
+    )
+
+
 def publication_section_page(
     con: sqlite3.Connection,
     manifest: PublicationManifest,
@@ -2036,34 +2091,37 @@ def publication_section_page(
                 hits = run_query(con, query, manifest.area)
                 if not hits:
                     raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
-                blocks.append(
-                    pf.Div(
-                        pf.Header(
-                            *_inlines(_query_heading(query), inline_cache),
-                            level=2,
-                        ),
-                        pf.BulletList(
-                            *[
-                                pf.ListItem(
-                                    pf.Plain(
-                                        pf.Link(
-                                            *_inlines(hit["title"], inline_cache),
-                                            url=hit["id"],
-                                        ),
-                                        pf.Space(),
-                                        pf.Code(hit["id"]),
+                if query.kind in PROBLEM_KINDS:
+                    blocks.append(_generator_deep_link_block(manifest.area, query, hits, inline_cache))
+                else:
+                    blocks.append(
+                        pf.Div(
+                            pf.Header(
+                                *_inlines(_query_heading(query), inline_cache),
+                                level=2,
+                            ),
+                            pf.BulletList(
+                                *[
+                                    pf.ListItem(
+                                        pf.Plain(
+                                            pf.Link(
+                                                *_inlines(hit["title"], inline_cache),
+                                                url=hit["id"],
+                                            ),
+                                            pf.Space(),
+                                            pf.Code(hit["id"]),
+                                        )
                                     )
-                                )
-                                for hit in hits
-                            ]
-                        ),
-                        classes=["panel", "publication-query"],
-                        attributes={
-                            "query-kind": query.kind,
-                            "count": str(len(hits)),
-                        },
+                                    for hit in hits
+                                ]
+                            ),
+                            classes=["panel", "publication-query"],
+                            attributes={
+                                "query-kind": query.kind,
+                                "count": str(len(hits)),
+                            },
+                        )
                     )
-                )
     return {"title": section.title}, blocks
 
 
@@ -2577,6 +2635,17 @@ const fill=(id,items,label)=>{
 fill("gen-inst",values("institution").sort());
 fill("gen-topic",values("topic").sort());
 fill("gen-year",values("year").sort((a,b)=>Number(b)-Number(a)));
+
+// A guide section deep-links here so a reader lands with the controls set to
+// the section's subject rather than on an empty form. The params carry the
+// same display strings the controls hold, so a value matches by equality.
+const p=new URLSearchParams(location.search);
+const has=(k,v)=>{const el=document.getElementById(k);return [...el.options].some(o=>o.value===v);};
+const area=p.get("area");
+if(area)for(const el of document.querySelectorAll(".ga"))if(el.value===area)el.checked=true;
+if(p.get("topic")&&has("gen-topic",p.get("topic")))document.getElementById("gen-topic").value=p.get("topic");
+if(p.get("institution")&&has("gen-inst",p.get("institution")))document.getElementById("gen-inst").value=p.get("institution");
+if(p.get("year")&&has("gen-year",p.get("year")))document.getElementById("gen-year").value=p.get("year");
 
 function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
 

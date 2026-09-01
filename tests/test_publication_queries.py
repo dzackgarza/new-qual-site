@@ -39,7 +39,27 @@ review: draft
 """
 
 
-def manifest(*topics: str) -> dict[str, object]:
+DEFINITION = """---
+schema: qual/card@1
+id: {id}
+kind: definition
+title: {title}
+classification:
+  areas:
+  - topology
+  topics:
+  - {topic}
+relations: []
+review: draft
+---
+
+::: {{.definition}}
+{body}
+:::
+"""
+
+
+def manifest(*topics: str, kind: str = "problem") -> dict[str, object]:
     """A one-section Topology guide whose only item is a panel over `topics`."""
     return {
         "schema": "qual/publication@2",
@@ -56,7 +76,7 @@ def manifest(*topics: str) -> dict[str, object]:
                 "items": [
                     {
                         "query": {
-                            "kind": "problem",
+                            "kind": kind,
                             "topics": list(topics),
                             "limit": 5,
                             "review": {"mode": "any"},
@@ -91,7 +111,15 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     }
 
 
-def test_a_subject_guide_panel_lists_only_that_subject(tmp_path: Path) -> None:
+def test_a_problem_panel_is_a_deep_link_into_the_generator(tmp_path: Path) -> None:
+    """A problem query does not re-list the catalog; it points into it.
+
+    The generator owns the listing, so the guide keeps a single call to action
+    carrying the area and zero-in on the topic. The count is still scoped to the
+    subject: the real-analysis problem carries `compactness` but belongs to a
+    different area, and it must not enter the count -- the defect this proves
+    absent.
+    """
     work = fixture_repo(
         tmp_path,
         {
@@ -117,19 +145,26 @@ def test_a_subject_guide_panel_lists_only_that_subject(tmp_path: Path) -> None:
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("section", **{"class": "panel publication-query"})
+    panels = page.root.find_all("div", **{"class": "panel generator-link"})
     assert len(panels) == 1
-    listed = {link.attrs["href"] for link in panels[0].find_all("a")}
+    links = panels[0].find_all("a")
+    assert len(links) == 1
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
 
-    # Both problems carry `compactness`; only the topology one belongs to this
-    # guide. The real-analysis problem is the defect this proves absent.
-    assert listed == {"../../tag/PRB-CPT-TOP.html"}
+    # The generator is single-select over topic, so `compactness` is zeroed in;
+    # the RA problem never enters the scoped count.
     assert panels[0].attrs["data-count"] == "1"
+    assert panels[0].attrs["data-query-kind"] == "problem"
 
 
-def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(
-    tmp_path: Path,
-) -> None:
+def test_a_problem_panel_count_spans_the_topics_it_names(tmp_path: Path) -> None:
+    """`run_query` still ORs the topics; a card carrying any one is counted.
+
+    The guide's wording names the family -- several topics under one section
+    lead. `PRB-CPT` and `PRB-CON` each carry one named topic and are both in;
+    `PRB-SEP` carries neither and proves the panel tracks the query, not the
+    whole subject.
+    """
     work = fixture_repo(
         tmp_path,
         {
@@ -163,14 +198,46 @@ def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("section", **{"class": "panel publication-query"})
-    listed = {link.attrs["href"] for link in panels[0].find_all("a")}
-
-    # No card carries both terms, so conjunction returns nothing and the build
-    # fails before it reaches here. `PRB-SEP` carries neither and proves the
-    # panel is still a query rather than the whole subject.
-    assert listed == {"../../tag/PRB-CPT.html", "../../tag/PRB-CON.html"}
+    panels = page.root.find_all("div", **{"class": "panel generator-link"})
+    assert len(panels) == 1
     assert panels[0].attrs["data-count"] == "2"
+
+    # The first topic scopes the deep link; the generator's single select cannot
+    # span a family, and the family is what run_query counted.
+    links = panels[0].find_all("a")
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
+
+
+def test_a_definition_panel_still_offers_a_static_listing(tmp_path: Path) -> None:
+    """The generator drills problems; a definition is reference, not practice.
+
+    Only problem and exercise kinds become a deep link. A definition stays a
+    `publication-query` panel -- a heading and the cards that carry the term --
+    because a reader does not go to the generator to drill a definition.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {
+            "D-CPT.md": DEFINITION.format(
+                id="D-CPT",
+                title="Compact",
+                topic="compactness",
+                body="A space is compact when every open cover has a finite subcover.",
+            )
+        },
+    )
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness", kind="definition"), sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
+    panels = page.root.find_all("section", **{"class": "panel publication-query"})
+    assert len(panels) == 1
+    assert panels[0].attrs["data-query-kind"] == "definition"
+    listed = {link.attrs["href"] for link in panels[0].find_all("a")}
+    assert listed == {"../../tag/D-CPT.html"}
+    assert panels[0].attrs["data-count"] == "1"
 
 
 def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None:
@@ -225,7 +292,18 @@ def test_a_guide_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
     same crumb in the wiki was a folder path. The sidebar is where the
     prerequisite tree belongs; the breadcrumb says where the page is.
     """
-    work = fixture_repo(tmp_path, {"PRB-CPT.md": PROBLEM.format(id="PRB-CPT", title="Compact", area="topology", topic="compactness", body="Show it.")})
+    work = fixture_repo(
+        tmp_path,
+        {
+            "PRB-CPT.md": PROBLEM.format(
+                id="PRB-CPT",
+                title="Compact",
+                area="topology",
+                topic="compactness",
+                body="Show it.",
+            )
+        },
+    )
     (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(reference_manifest("second"), sort_keys=False))
 
     result = run_qualc("build", work)
