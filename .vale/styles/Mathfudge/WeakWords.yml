@@ -1,23 +1,17 @@
 # WeakWords — flag prose that hides an argument.
 #
-# Every flagged phrase means the same thing: the author should replace
-# the flagged text with the actual reasoning.
+# "trivial X" is always a true positive: it can always be replaced by a precise
+# equality ("= 0", "= 1", "= {e}", "the zero homomorphism", "the action fixing
+# every element"). So "trivial" and "trivially" are flagged unconditionally.
 #
-# "trivial" is always a true positive: it can always be replaced by a
-# precise equality ("= 0", "= {e}", "the zero homomorphism", etc.).
-#
-# The other single words have narrow standard uses, excluded by regex
-# lookahead where applicable.
-#
-# Multi-word phrases are unconditional: none of them is the right way
-# to write a proof.
+# The other words have one narrow standard use each, excluded below.
 
 extends: existence
 message: "Avoid '%s' — state the reasoning explicitly."
 level: warning
 ignorecase: true
 tokens:
-  # ── Single words ──────────────────────────────────────────────
+  # Flag unconditionally.
   - obviously
   - obvious
   - clearly
@@ -25,33 +19,8 @@ tokens:
   - trivial
   - trivially
 
-  # "immediate" — standard only in "immediate predecessor/successor".
+  # "immediate" is standard only in "immediate predecessor/successor".
   - '\bimmediate\b(?!\s+(?:predecessor|successor))'
 
-  # "reader" — standard only as a citation pointer.
+  # "reader" is standard only as a citation pointer.
   - '\breader\b(?!\s+(?:is|are)\s+referred)(?!\s+to\b)'
-
-  # ── Multi-word handwaving ─────────────────────────────────────
-  # "it is easy to show/see/prove/verify/check"
-  - '\bit is easy to (?:show|see|prove|verify|check)\b'
-
-  # "it can be shown/proved/verified/checked"
-  - '\bit can be (?:shown|proved|verified|checked)\b'
-
-  # "it is not hard to see/show/prove"
-  - '\bit is not hard to (?:see|show|prove)\b'
-
-  # "as is easily seen/verified"
-  - '\bas is easily (?:seen|verified)\b'
-
-  # "by a straightforward/simple/direct computation/argument/..."
-  - '\b(?:by )?(?:a |the )(?:straightforward|simple|direct) (?:computation|argument|verification|check|calculation)\b'
-
-  # "left to the reader" / "left as an exercise"
-  - '\bleft (?:to the reader|as an exercise)\b'
-
-  # "routine verification/checking"
-  - '\broutine (?:verification|checking)\b'
-
-  # "one can easily ..."
-  - '\bone can easily\b'

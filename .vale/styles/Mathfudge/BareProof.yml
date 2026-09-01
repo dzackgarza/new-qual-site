@@ -1,6 +1,0 @@
-extends: existence
-message: "Bare 'Proof:' text should be inside a ::: {.proof} div, not inline."
-level: error
-ignorecase: false
-tokens:
-  - "Proof:"

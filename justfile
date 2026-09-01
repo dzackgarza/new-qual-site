@@ -46,6 +46,10 @@ test:
 query sql: build
     @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
+# Lint prose for handwaving and weak reasoning (pass files, or defaults to corpus)
+vale *args:
+    vale --config .vale.ini {{ if args == '' { 'corpus/problems/**/*.md corpus/collections/**/*.md' } else { args } }}
+
 # Report problem/exercise cards missing metadata (title, areas, topics, body)
 complete *args:
     uv run python -m qualc.card_completeness {{ args }}
