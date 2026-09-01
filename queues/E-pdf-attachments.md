@@ -26,16 +26,10 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — Winter 2014
 
-- [ ] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra
-  Partial 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists,
-  complete, with the department URL as provenance, and its eight cards match
-  the extracted paper in source order. One card is not settled: P-APAF17C
-  states the hypothesis as "$A-B$ is positive definite" while the extraction
-  reads "$A \otimes B$". The two readings give different problems — under
-  $\otimes$ the hypothesis is vacuous, since the Kronecker product of positive
-  definite matrices is always positive definite. Settling which the paper
-  prints needs a look at the PDF, which no extraction can decide. Left open
-  for that reading.
+- [ ] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra Partial 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists, complete, with the department URL as provenance, and its eight cards match the extracted paper in source order.
+  One card is not settled: P-APAF17C states the hypothesis as "$A-B$ is positive definite" while the extraction reads "$A \otimes B$". The two readings give different problems — under $\otimes$ the hypothesis is vacuous, since the Kronecker product of positive definite matrices is always positive definite.
+  Settling which the paper prints needs a look at the PDF, which no extraction can decide.
+  Left open for that reading.
 
 - [ ] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — January 2003
 
