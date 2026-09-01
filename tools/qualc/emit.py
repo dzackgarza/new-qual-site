@@ -790,7 +790,7 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
     for row in _rows(
         con,
         """
-        select cp.problem_id, e.institution, s.year
+        select cp.problem_id, e.institution, case when s.source_kind='exam' then s.year else null end as year
         from collection_problems cp
         join sources s on s.id=cp.collection_id
         left join exam_sources e on e.id=s.id
@@ -910,14 +910,16 @@ def _relation_group(key: str, heading: str, items: str) -> str:
 def _relation_groups_json(
     data: CardPageData,
     card_id: str,
-    appearances: dict[str, list[Appearance]],
+    source_collections: dict[str, list[Appearance]],
+    guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: list[WikiPage],
 ) -> list[dict]:
     dependencies = _page_rows(data.dependencies, card_id)
     backlinks = _page_rows(data.backlinks, card_id)
     panels = [
+        _relation_group("source-collections", "Source Collections", _appearance_items(source_collections.get(card_id, []))),
+        _relation_group("guide-appearances", "Guide Appearances", _appearance_items(guide_appearances.get(card_id, []))),
         _relation_group("dependencies", "Dependencies", _card_relation_items(dependencies)),
-        _relation_group("appearances", "Appearances", _appearance_items(appearances[card_id])),
         _relation_group("backlinks", "Backlinks", _card_relation_items(backlinks)),
         _wiki_incoming_html(wiki_mentions),
     ]
@@ -1035,7 +1037,8 @@ def problem_json(
     data: CardPageData,
     card: sqlite3.Row,
     jcache: dict,
-    appearances: dict[str, list[Appearance]],
+    source_collections: dict[str, list[Appearance]],
+    guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     facets = _page_rows(data.facets, card["id"])
@@ -1055,16 +1058,18 @@ def problem_json(
             into += rb
     body = _hints_before_solutions(body, hints) + solutions
     body.extend(_prompts_json(card))
-    body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
-    meta = {
+    body.extend(_relation_groups_json(data, card["id"], source_collections, guide_appearances, wiki_mentions.get(card["id"], [])))
+    meta: dict[str, object] = {
         "title": card["title"],
         "subtitle": card["id"],
         "area": ", ".join(a.replace("-", " ").title() for a in areas),
-        "institutions": ", ".join(institutions) or "—",
-        "years": ", ".join(years) or "—",
         "review": card["review"],
         "categories": sorted(set(topics + areas + institutions + years)),
     }
+    if institutions:
+        meta["institutions"] = ", ".join(institutions)
+    if years:
+        meta["years"] = ", ".join(years)
     return meta, body
 
 
@@ -1072,13 +1077,14 @@ def plain_json(
     data: CardPageData,
     card: sqlite3.Row,
     jcache: dict,
-    appearances: dict[str, list[Appearance]],
+    source_collections: dict[str, list[Appearance]],
+    guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
     _rename_json(body)
     body.extend(_prompts_json(card))
-    body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
+    body.extend(_relation_groups_json(data, card["id"], source_collections, guide_appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -1440,7 +1446,7 @@ def problem_page(
     facets = _rows(
         con,
         """
-        select distinct e.institution, s.year
+        select distinct e.institution, case when s.source_kind='exam' then s.year else null end as year
         from collection_problems cp
         join sources s on s.id=cp.collection_id
         left join exam_sources e on e.id=s.id
@@ -1616,7 +1622,7 @@ def _publication_navigation(
                 key=section.slug,
                 title=section.title,
                 target=PageTarget(_publication_section_route(manifest, section)),
-                parent=NodeParent(section.parent),
+                parent=NodeParent(manifest.id),
             )
             for section in manifest.sections
         ),
@@ -1774,17 +1780,11 @@ def publication_section_page(
     return {"title": section.title}, blocks
 
 
-def card_appearances(
+def card_source_collections(
     con: sqlite3.Connection,
-    manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    """Where each card shows up: guide sections, and for a problem, the
-    collections that list it.
-
-    The listing edge is the reverse of the collection page: a problem is on an
-    exam exactly when that exam's `problems:` (or a textbook section) names it.
-    Position is the list index."""
-    appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
+    """Collections that list this problem."""
+    sources: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for row in _rows(
         con,
         """
@@ -1794,16 +1794,22 @@ def card_appearances(
         order by c.title, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
-        # The listing's own comment is the locator the source uses -- "Fall 2011",
-        # "Munkres §28". Where an entry has none, the position in the list is all
-        # the collection knows about where the problem sat.
         locator = row["comment"] or f"problem {row['ordinal'] + 1}"
-        appearances[row["problem_id"]].append(
+        sources[row["problem_id"]].append(
             Appearance(
                 target_key=row["collection_id"],
                 title=f"{row['title']}, {locator}",
             )
         )
+    return sources
+
+
+def card_guide_appearances(
+    con: sqlite3.Connection,
+    manifests: list[PublicationManifest],
+) -> dict[str, list[Appearance]]:
+    """Guide sections that reference or query this card."""
+    guide_appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
@@ -1811,7 +1817,7 @@ def card_appearances(
                 match item:
                     case ReferenceItem(ref=card_id):
                         _manifest_card(con, card_id)
-                        appearances[card_id].append(
+                        guide_appearances[card_id].append(
                             Appearance(
                                 target_key=target_key,
                                 title=section.title,
@@ -1822,13 +1828,13 @@ def card_appearances(
                         if not hits:
                             raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
                         for hit in hits:
-                            appearances[hit["id"]].append(
+                            guide_appearances[hit["id"]].append(
                                 Appearance(
                                     target_key=target_key,
                                     title=section.title,
                                 )
                             )
-    return appearances
+    return guide_appearances
 
 
 def index_page(
@@ -2382,7 +2388,8 @@ def project(
     link_targets = _link_targets(con, guides)
     link_targets.update(wiki_link_targets(wiki_pages or []))
     (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
-    appearances = card_appearances(con, guides)
+    source_collections = card_source_collections(con)
+    guide_appearances = card_guide_appearances(con, guides)
     mentions = wiki_card_mentions(wiki_pages or [])
     incoming_pages = incoming_wiki_links(wiki_pages or [])
     assets = build_asset_catalog(site.parent / "assets")
@@ -2416,14 +2423,14 @@ def project(
     card_page_data = load_card_page_data(con)
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        meta, body = problem_json(card_page_data, card, jcache, appearances, mentions)
+        meta, body = problem_json(card_page_data, card, jcache, source_collections, guide_appearances, mentions)
         document = SearchDocument(
             _card_filters(card_page_data, card),
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
     for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
-        meta, body = plain_json(card_page_data, card, jcache, appearances, mentions)
+        meta, body = plain_json(card_page_data, card, jcache, source_collections, guide_appearances, mentions)
         document = SearchDocument(
             _card_filters(card_page_data, card),
             sort=(("listing", _listing_sort(card_page_data, card)),),

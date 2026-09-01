@@ -349,8 +349,8 @@ def _subject_tree(
     return (
         '<aside class="subject-sidebar">'
         '<nav class="sidebar-wide" aria-label="Subject">'
-        f'<strong class="subject-label">Study path</strong>{tree}</nav>'
-        '<details class="sidebar-narrow"><summary>Study path</summary>'
+        f'<strong class="subject-label">Contents</strong>{tree}</nav>'
+        '<details class="sidebar-narrow"><summary>Contents</summary>'
         f'<nav aria-label="Subject navigation">{tree}</nav></details></aside>'
     )
 
@@ -414,7 +414,7 @@ def _wiki_tree(
                         # and intercepts clicks meant to toggle.
                         open_attribute = " open" if link.key in open_directories or link.key == navigation.current_key else ""
                         nested = branch(children[link.key])
-                        items.append(f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>")
+                        items.append(f"<li><details{open_attribute}><summary>{anchor}</summary>{nested}</details></li>")
                     else:
                         items.append("<li>" + anchor + "</li>")
                 case _ as unreachable:
@@ -686,7 +686,7 @@ def page_document(
       </article>
       {reading_order_html}
     </main>
-    <aside id="page-toc" class="page-toc" aria-label="On this page"></aside>
+    <aside id="page-toc" class="page-toc" aria-label="Contents"></aside>
   </div>
 </body>
 </html>

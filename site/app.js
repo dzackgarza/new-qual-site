@@ -210,11 +210,11 @@
 
   const headings = [
     ...document.querySelectorAll(".page-body h2, .page-body h3"),
-  ];
+  ].filter((heading) => !heading.closest(".relation-group, .card-appearances, footer, .metadata-panel"));
   const toc = document.querySelector("#page-toc");
   if (headings.length && toc) {
     const label = document.createElement("strong");
-    label.textContent = "On this page";
+    label.textContent = "Contents";
     const list = document.createElement("ol");
     for (const heading of headings) {
       if (!heading.id) {
@@ -244,9 +244,9 @@
       const narrow = document.createElement("details");
       narrow.className = "page-toc-narrow";
       const summary = document.createElement("summary");
-      summary.textContent = "On this page";
+      summary.textContent = "Contents";
       const nav = document.createElement("nav");
-      nav.setAttribute("aria-label", "On this page");
+      nav.setAttribute("aria-label", "Contents");
       nav.append(list.cloneNode(true));
       narrow.append(summary, nav);
       document.querySelector(".page-body").before(narrow);
