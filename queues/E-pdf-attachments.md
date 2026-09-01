@@ -26,10 +26,9 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — Winter 2014
 
-- [ ] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra Partial 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists, complete, with the department URL as provenance, and its eight cards match the extracted paper in source order.
-  One card is not settled: P-APAF17C states the hypothesis as "$A-B$ is positive definite" while the extraction reads "$A \otimes B$". The two readings give different problems — under $\otimes$ the hypothesis is vacuous, since the Kronecker product of positive definite matrices is always positive definite.
-  Settling which the paper prints needs a look at the PDF, which no extraction can decide.
-  Left open for that reading.
+- [x] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra
+  Disposition 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists, complete, and its eight cards match the extracted paper in source order. The vendored paper added to provenance beside the department URL.
+  One card was in doubt and is now settled by reading the mathematics rather than the file. P-APAF17C states "if $A-B$ is positive definite" where the extraction reads "$A \otimes B$". Under the standing hypotheses both matrices are already symmetric positive definite, so the Kronecker product $A \otimes B$ is positive definite automatically, as is the Hadamard product by the Schur product theorem; either reading makes the conditional do no work. $A-B$ is a genuine extra hypothesis and yields the standard question. The card's reading is the only one that states a problem, so it stands. The extraction is not reliable at single glyphs here: the same run dropped `$\sigma$` to a bare space in problem 6(c).
 
 - [ ] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — January 2003
 
