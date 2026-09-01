@@ -98,3 +98,13 @@ $$
 :::
 
 :::
+
+:::{.solution}
+The Weierstrass Approximation Thm & the density of $C([0,1])$ in $L^2([0,1])$ ensures $\exists$ sequence $\{P_j\}$ of polynomials s.t. $\lim_{j\to\infty} \|f - P_j\|_2 = 0$.
+
+The moment assumption states that $\langle f, x^n \rangle = 0$ for every $n \ge 0$.
+By linearity of the inner product in the second argument, $\langle f, P_j \rangle = 0$ for every polynomial $P_j$ (each $P_j$ is a finite linear combination of monomials $x^n$).
+It follows that
+$$\|f\|_2^2 = \langle f,f\rangle = \langle f, f-P_j\rangle \overset{\text{Cauchy–Schwarz}}{\le} \|f\|_2 \|f-P_j\|_2 \quad \forall j$$
+and hence that $\|f\|_2 = 0$ which implies $f=0$ a.e.
+:::

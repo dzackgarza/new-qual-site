@@ -23,6 +23,10 @@ Let $G$ be a finite group whose order is divisible by a prime number $p$, and le
 (b) Let $M$ be a maximal proper subgroup of $G$. Show that either $P \subseteq M$ or the index satisfies $[G : M] = p^b$ for some integer $1 \le b \le c$.
 :::
 
+::: {.hint}
+Normality of $P$ buys you a *subgroup* $PS$, not merely a subset. Compute its order.
+:::
+
 ::: solution
 **Goal:** Prove that a normal $p$-subgroup is contained in the intersection of all Sylow $p$-subgroups in (a), and deduce that a maximal subgroup either contains $P$ or has $p$-power index in (b).
 
