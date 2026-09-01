@@ -18,12 +18,7 @@
   --bs-border-color: var(--line);
   --bs-tertiary-bg: var(--wash);
   font-family:
-    "ETBook",
-    Charter,
-    "Bitstream Charter",
-    "Iowan Old Style",
-    Georgia,
-    serif;
+    "ETBook", Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
   line-height: 1.6;
   color: var(--ink);
   background: var(--paper);
@@ -392,7 +387,15 @@ mjx-container[display="true"] {
   max-width: var(--measure);
 }
 
-.page-body :is(figure, table, mjx-container[display="true"], .listing, .listing-row, .listing-filters) {
+.page-body
+  :is(
+    figure,
+    table,
+    mjx-container[display="true"],
+    .listing,
+    .listing-row,
+    .listing-filters
+  ) {
   max-width: 100%;
 }
 
@@ -872,7 +875,13 @@ div.qual-proof > p:last-child::after {
 
 /* An aside runs alongside the argument rather than inside it: no rule, one
    step down in size, and a label that does not compete with a statement's. */
-div:is(.qual-remark, .qual-example, .qual-slogan, .qual-strategy, .qual-concept) {
+div:is(
+  .qual-remark,
+  .qual-example,
+  .qual-slogan,
+  .qual-strategy,
+  .qual-concept
+) {
   padding-left: 0;
   border-left: 0;
   font-size: 0.95em;
@@ -965,6 +974,36 @@ details.reveal > summary {
 }
 details.reveal[open] > summary {
   margin-bottom: 0.5rem;
+}
+
+/* Lamport-structured steps: a nested outline, each step labelled by its
+   authored number and indented one stop per level so the proof skeleton reads
+   at a scan. The `<1>…<2>…` markers arrive as literal text without this. */
+.pf-group {
+  margin: 0.4rem 0;
+}
+.pf-step {
+  margin: 0.35rem 0;
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
+}
+.pf-step .pf-group {
+  margin-left: 1.4rem;
+  padding-left: 0;
+  text-indent: 0;
+}
+.pf-step .pf-group .pf-step {
+  padding-left: 1.6rem;
+  text-indent: -1.6rem;
+}
+.pf-step .pf-group .pf-step .pf-group .pf-step {
+  padding-left: 1.8rem;
+  text-indent: -1.8rem;
+}
+.pf-number {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  margin-right: 0.25rem;
 }
 
 /* Position on the collection page is the list index. */
