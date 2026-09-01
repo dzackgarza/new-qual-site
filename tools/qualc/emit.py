@@ -526,6 +526,124 @@ def _lamport(element: pf.Element, document: pf.Doc) -> pf.Element | None:
     return element
 
 
+def _lamport_rewrite_ref(inline: object) -> object:
+    """Rewrite a `step <1>1.4` inline Str to its rendered number, raw JSON."""
+    if isinstance(inline, dict) and inline.get("t") == "Str":
+        match = _LAMPORT_REF.match(inline.get("c", ""))
+        if match is not None:
+            inline["c"] = f"{match.group(2)}{match.group(3)}{match.group(4)}"
+    return inline
+
+
+def _lamport_json_group(
+    segments: list[tuple[int, str, list[object]]],
+    prefix: tuple[int, ...] = (),
+) -> dict:
+    """A nested `pf-group` of `pf-step`s, as raw pandoc JSON."""
+    children: list[dict] = []
+    i = 0
+    index = 0
+    while i < len(segments):
+        level, _num, content = segments[i]
+        index += 1
+        path = prefix + (index,)
+        label = ".".join(str(part) for part in path)
+        number: list[object] = [
+            {
+                "t": "Span",
+                "c": [["", ["pf-number"], []], [{"t": "Str", "c": f"{label}."}]],
+            }
+        ]
+        body: list[object] = [{"t": "Para", "c": [*number, *[_lamport_rewrite_ref(x) for x in content]]}]
+        i += 1
+        deeper: list[tuple[int, str, list[object]]] = []
+        while i < len(segments) and segments[i][0] > level:
+            deeper.append(segments[i])
+            i += 1
+        if deeper:
+            body.append(_lamport_json_group(deeper, path))
+        children.append({"t": "Div", "c": [["", ["pf-step", f"pf-level-{level}"], []], body]})
+    return {"t": "Div", "c": [["", ["pf-group"], []], children]}
+
+
+def _lamport_json_paragraph(inlines: list[object]) -> dict | None:
+    """Split a flat marker-carrying inline list into one nested group, or None.
+
+    `<1>1. claim. <2>1. because …` reads as one flat paragraph; pandoc does
+    not know the `<N>` markers, so the authored hierarchy is rebuilt here.
+    """
+    segments: list[tuple[int, str, list[object]]] = []
+    cur: list[object] = []
+    cur_level = -1
+    cur_num = ""
+    for inline in inlines:
+        if isinstance(inline, dict) and inline.get("t") == "Str":
+            marker = _marker_level(inline.get("c", ""))
+            if marker is not None:
+                if cur_level >= 0 or cur:
+                    segments.append((cur_level, cur_num, cur))
+                cur_level, cur_num = marker
+                cur = []
+                continue
+        if isinstance(inline, dict) and inline.get("t") == "SoftBreak":
+            continue
+        cur.append(inline)
+    if cur_level >= 0 or cur:
+        segments.append((cur_level, cur_num, cur))
+    kept = [segment for segment in segments if segment[0] >= 0]
+    if not kept:
+        return None
+    return _lamport_json_group(kept)
+
+
+def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
+    """`_lamport_blocks` on raw pandoc JSON plus the ref rewrite.
+
+    The card-page path keeps bodies as raw JSON (see `_rename_json`) rather
+    than walking pf objects, so the structured-proof pass has to run on the
+    same shape. It walks Divs whose authored class is a proof/solution/hint/
+    strategy, recursing into list items and blockquotes, splitting marker
+    paragraphs into nested `pf-group`/`pf-step` groups, and rewriting in-text
+    `<1>1.4` refs.
+    """
+    out: list[dict] = []
+    for block in blocks:
+        t = block.get("t")
+        if t in ("Para", "Plain"):
+            inlines = block.get("c", [])
+            if any(isinstance(x, dict) and x.get("t") == "Str" and _marker_level(x.get("c", "")) is not None for x in inlines):
+                grouped = _lamport_json_paragraph(inlines)
+                if grouped is not None:
+                    out.append(grouped)
+                    continue
+            block["c"] = [_lamport_rewrite_ref(x) for x in inlines]
+            out.append(block)
+        elif t == "Div":
+            classes = block.get("c", [["", [], []]])[0][1]
+            if _LAMPORT_DIVS.intersection(classes):
+                block["c"][1] = _lamport_json_blocks(block["c"][1])
+            out.append(block)
+        elif t in ("BulletList", "OrderedList"):
+            for item in block.get("c", []):
+                if isinstance(item, dict) and item.get("t") == "ListItem":
+                    item["c"] = _lamport_json_blocks(item["c"])
+            out.append(block)
+        elif t == "BlockQuote":
+            quoted: list[object] = []
+            for q in block.get("c", []):
+                if isinstance(q, list):
+                    quoted.append(_lamport_json_blocks(q))
+                elif isinstance(q, dict):
+                    quoted.append(_lamport_json_blocks([q])[0])
+                else:
+                    quoted.append(q)
+            block["c"] = quoted
+            out.append(block)
+        else:
+            out.append(block)
+    return out
+
+
 def _prepare_html(
     element: pf.Element,
     document: pf.Doc,
@@ -1196,6 +1314,7 @@ def problem_json(
     topics = _page_terms(data, card["id"], "topic")
 
     body = _statement_first(_dup(jcache[card["id"]]))
+    body = _lamport_json_blocks(body)
     _rename_json(body)
     hints: list[dict] = []
     solutions: list[dict] = []
@@ -1238,6 +1357,7 @@ def plain_json(
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
+    body = _lamport_json_blocks(body)
     _rename_json(body)
     body.extend(_prompts_json(card))
     body.extend(
