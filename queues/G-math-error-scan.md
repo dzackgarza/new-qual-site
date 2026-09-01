@@ -12,7 +12,10 @@ Disposition order follows the finding numbers.
 
 ## Disposition checklist
 
-- [ ] 1. E-6AOD7 — Centralizer/center confusion in the class equation
+- [x] 1. E-6AOD7 — Centralizer/center confusion in the class equation
+  Disposition 2026-09-01: confirmed by re-derivation and fixed on the card.
+  Lines 30 and 32 now read $Z(G)$; line 28 and the $[G:Z(g)]$ factors keep the
+  centralizer reading.
 - [ ] 2. T-BRWA7 — Five-lemma proof is garbled
 - [ ] 3. FR-EDJWQ — Difference quotient set equal to the derivative
 - [ ] 4. E-J3QMJ — Constancy on a closed subdisk: wrong/inadequate justification

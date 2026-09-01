@@ -27,9 +27,9 @@ $p\dash$groups have nontrivial centers:
 
 - Abusing notation by identifying sets with their cardinalities, the class equation says $G = Z(G) + \sum_{g}' [G: Z(g)]$ where the terms in the sum are all bigger than 1.
 
-- Reducing mod $p$ yields $0 = Z(g) + 0$, since $p$ must divide $[G:Z(g)]$ when $[G:Z(g)] > 1$ because $G = [G:Z(g)]Z(g)$ and $p$ divides the LHS.
+- Reducing mod $p$ yields $0 = Z(G) + 0$, since $p$ must divide $[G:Z(g)]$ when $[G:Z(g)] > 1$ because $G = [G:Z(g)]Z(g)$ and $p$ divides the LHS.
 
-- So $p$ divides $Z(g)$, making $Z(g)$ nontrivial.
+- So $p$ divides $Z(G)$, making $Z(G)$ nontrivial.
 
 $p^2$ groups are abelian:
 
