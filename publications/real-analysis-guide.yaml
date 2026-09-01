@@ -2,13 +2,7 @@ schema: qual/publication@2
 id: GUIDE-REAL-ANALYSIS
 kind: study-guide
 title: Real Analysis
-lede: 'Follow one dependency-ordered path across the subject as the qualifying exams
-  pose it. The first half is the single-variable core: what a sequence of numbers
-  can do, what compactness buys a continuous function, what differentiation extracts
-  from it, what the Riemann-Stieltjes integral accumulates, and which of those properties
-  survive a limit of functions. The second half rebuilds the integral on a measure
-  and asks the same questions again, where the answers are the convergence theorems,
-  the $L^p$ spaces and their duals, and the Fourier transform.'
+lede: 'The qualifying exam syllabus in real analysis: metric topology, sequences, continuity, differentiation, Riemann-Stieltjes integration, Lebesgue measure, convergence theorems, $L^p$ spaces and duality, and Fourier analysis.'
 sections:
 - slug: sequences-and-series-of-numbers
   title: Sequences and Series of Numbers
@@ -121,19 +115,6 @@ sections:
         mode: any
   - query:
       kind: problem
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: solution
       topics:
       - Sequences of Numbers
       - Series of Numbers
@@ -292,20 +273,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
 - slug: continuity
   title: Continuity
   parent: metric-spaces
@@ -405,15 +372,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
 - slug: differentiation
   title: Differentiation
   parent: continuity
@@ -483,16 +441,6 @@ sections:
         mode: any
   - query:
       kind: problem
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: solution
       topics:
       - Differentiation
       - Mean Value Theorem
@@ -760,23 +708,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
 - slug: measure-and-measurable-functions
   title: Measure and Measurable Functions
   parent: GUIDE-REAL-ANALYSIS
@@ -914,18 +845,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
 - slug: the-lebesgue-integral
   title: The Lebesgue Integral
   parent: measure-and-measurable-functions
@@ -1047,18 +966,6 @@ sections:
         mode: any
   - query:
       kind: problem
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: solution
       topics:
       - Integrals
       - Convergence of Integrals
@@ -1205,20 +1112,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
 - slug: hilbert-spaces-and-duality
   title: Hilbert Spaces and Duality
   parent: lp-spaces
@@ -1319,20 +1212,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
 - slug: fourier-analysis
   title: Fourier Analysis
   parent: hilbert-spaces-and-duality
@@ -1385,13 +1264,6 @@ sections:
       limit: 500
       review:
         mode: any
-  - query:
-      kind: solution
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
 - slug: problems-from-the-joint-exams
   title: Problems from the Joint Analysis Exams
   parent: GUIDE-REAL-ANALYSIS
@@ -1407,28 +1279,6 @@ sections:
   items:
   - query:
       kind: problem
-      topics:
-      - Holomorphic Functions
-      - Entire Functions
-      - Meromorphic Functions
-      - Singularities
-      - Conformal Maps
-      - Biholomorphisms
-      - Fractional Linear Transformations
-      - Normal Families
-      - Harmonic Functions
-      - Residues
-      - Contour Integration
-      - Rouché
-      - Hurwitz
-      - Schwarz Lemma
-      - Argument Principle
-      - PDEs
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: solution
       topics:
       - Holomorphic Functions
       - Entire Functions

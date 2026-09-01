@@ -2,11 +2,7 @@ schema: qual/publication@2
 id: GUIDE-TOPOLOGY
 kind: study-guide
 title: Topology
-lede: 'Follow one dependency-ordered path from the open-set axioms to the algebraic
-  invariants: which separation and countability hypotheses a space needs before its
-  points behave, what compactness and connectedness give a continuous map, and how
-  homotopy, covering spaces, and homology turn those spaces into groups that can be
-  computed.'
+lede: 'The qualifying exam syllabus in general and algebraic topology: point-set axioms, separation and countability, compactness and connectedness, quotient constructions, the fundamental group, covering spaces, CW complexes, and singular homology.'
 sections:
 - slug: spaces-and-continuous-maps
   title: Spaces and Continuous Maps
