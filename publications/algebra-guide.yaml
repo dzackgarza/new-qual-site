@@ -2,12 +2,13 @@ schema: qual/publication@2
 id: GUIDE-ALGEBRA
 kind: study-guide
 title: Algebra
-lede: 'The core topics of graduate qualifying algebra: counting arguments and Sylow theorems on finite groups, ideal theory and factorization in commutative rings, module structure over PIDs with applications to canonical forms, and Galois theory for field extensions.'
+lede: "The core topics of graduate qualifying algebra: counting arguments and Sylow theorems on finite groups, ideal theory and factorization in commutative rings, module structure over PIDs with applications to canonical forms, and Galois theory for field extensions."
 sections:
   - slug: preliminaries
     title: Preliminaries
     parent: GUIDE-ALGEBRA
-    lede: "Two things get used everywhere and proved nowhere else. Zorn's lemma is
+    lede:
+      "Two things get used everywhere and proved nowhere else. Zorn's lemma is
       where every maximality argument bottoms out -- the existence of a maximal ideal
       containing a given proper ideal, and with it the existence of algebraic closures
       and of bases for infinite-dimensional spaces -- so it is worth seeing once in
@@ -63,7 +64,8 @@ sections:
   - slug: groups-and-subgroups
     title: Groups and Subgroups
     parent: preliminaries
-    lede: 'The subject begins with one object and one relation: a group and its subgroups.
+    lede:
+      "The subject begins with one object and one relation: a group and its subgroups.
       Lagrange supplies the first constraint -- the order of a subgroup divides the
       order of the group -- and it rests on the single fact about cosets that everything
       else reuses, that two cosets are either equal or disjoint. Normality is exactly
@@ -72,7 +74,7 @@ sections:
       and a normal subgroup meet in a diamond, nested quotients cancel, and the subgroups
       of a quotient are the subgroups containing the kernel. Cyclic groups are the case
       where all of it is visible at once, and Cauchy is the first partial converse to
-      Lagrange: a prime dividing the order really is realised by an element.'
+      Lagrange: a prime dividing the order really is realised by an element."
     items:
       - ref: D-IQ4OX
       - ref: PR-U5CHT
@@ -227,17 +229,11 @@ sections:
           limit: 500
           review:
             mode: any
-      - query:
-          kind: hint
-          topics:
-            - Groups
-          limit: 500
-          review:
-            mode: any
   - slug: group-actions-and-counting
     title: Group Actions and Counting
     parent: groups-and-subgroups
-    lede: "An action turns a group into arithmetic. Orbit-stabilizer says an orbit has
+    lede:
+      "An action turns a group into arithmetic. Orbit-stabilizer says an orbit has
       the size of the index of any of its stabilizers, so every orbit count divides
       the order of the group. Conjugation is the action of a group on itself: its orbits
       are the conjugacy classes, its stabilizers are the centralizers, and reading orbit-stabilizer
@@ -370,7 +366,8 @@ sections:
   - slug: sylow-theory
     title: Sylow Theory
     parent: group-actions-and-counting
-    lede: Sylow is the counting of the previous section applied to the set of p-subgroups.
+    lede:
+      Sylow is the counting of the previous section applied to the set of p-subgroups.
       The first theorem says a subgroup of order the full power of p dividing the group
       order exists; the second says any two are conjugate, so there is really only one
       up to the action; the third says their number divides the complementary factor
@@ -426,14 +423,15 @@ sections:
   - slug: permutation-groups
     title: Permutation Groups
     parent: group-actions-and-counting
-    lede: 'Every group embeds in a symmetric group, so the symmetric groups are where
+    lede:
+      "Every group embeds in a symmetric group, so the symmetric groups are where
       abstract statements get tested. The sign homomorphism is the first invariant:
       a cycle of even length is an odd permutation, conjugation preserves cycle type,
       and the conjugacy classes of the symmetric group on n letters are therefore the
       partitions of n. The alternating groups are simple from degree five onwards, which
       is the fact that later obstructs solvability by radicals, and the transitive subgroups
       of the small symmetric groups are the list a Galois group of a polynomial of that
-      degree must come from.'
+      degree must come from."
     items:
       - ref: D-6BTFJ
       - ref: D-BZ3KD
@@ -489,7 +487,8 @@ sections:
   - slug: series-and-solvability
     title: Series, Solvability, and Nilpotence
     parent: group-actions-and-counting
-    lede: A composition series breaks a finite group into simple pieces, and Jordan-Holder
+    lede:
+      A composition series breaks a finite group into simple pieces, and Jordan-Holder
       says the multiset of pieces does not depend on how the breaking was done. Two
       conditions on the pieces name the two classes that matter. Solvable means the
       factors are abelian, equivalently that the derived series -- iterate the commutator
@@ -563,14 +562,15 @@ sections:
   - slug: products-and-classification
     title: Presentations, Products, and Classification
     parent: sylow-theory
-    lede: 'Classifying the groups of a given order is the exercise that uses everything
+    lede:
+      "Classifying the groups of a given order is the exercise that uses everything
       above. The recognition theorems say when a group is a product: a direct product
       when both factors are normal and meet trivially, a semidirect product when only
       one is, and the semidirect products are then counted by homomorphisms into the
       automorphism group of the normal factor, which for a cyclic group is its unit
       group. Sylow supplies the normal factor, the fundamental theorem of finite abelian
       groups supplies the abelian possibilities in both invariant-factor and elementary-divisor
-      form, and a presentation is how the nonabelian answer gets written down.'
+      form, and a presentation is how the nonabelian answer gets written down."
     items:
       - ref: D-V6UJ7
       - ref: D-4R2Z5
@@ -675,7 +675,8 @@ sections:
   - slug: rings-and-ideals
     title: Rings and Ideals
     parent: preliminaries
-    lede: "A ring is a group with a second operation, and an ideal is the subobject
+    lede:
+      "A ring is a group with a second operation, and an ideal is the subobject
       the second operation forces: the kernels of ring maps are exactly the ideals,
       so the isomorphism theorems transfer verbatim. Two kinds of ideal control everything
       downstream, and both are recognised by their quotients: an ideal is prime exactly
@@ -814,7 +815,8 @@ sections:
   - slug: factorization-and-polynomials
     title: Factorization and Polynomials
     parent: rings-and-ideals
-    lede: "Unique factorization is not automatic, and the chain fields, Euclidean domains,
+    lede:
+      "Unique factorization is not automatic, and the chain fields, Euclidean domains,
       principal ideal domains, unique factorization domains, integral domains records
       exactly how much of it survives each weakening. Prime and irreducible are the
       two notions that come apart: prime always implies irreducible, and the converse
@@ -934,7 +936,8 @@ sections:
   - slug: commutative-algebra
     title: Commutative Algebra
     parent: factorization-and-polynomials
-    lede: "Localization inverts a multiplicative set and is how a ring is studied one
+    lede:
+      "Localization inverts a multiplicative set and is how a ring is studied one
       prime at a time: localizing at a prime produces a local ring, whose single maximal
       ideal is what makes Nakayama's lemma -- a finitely generated module killed by
       its maximal ideal is zero -- into the workhorse it is. The nilradical and the
@@ -1088,13 +1091,14 @@ sections:
   - slug: modules
     title: Modules
     parent: rings-and-ideals
-    lede: 'A module is a vector space over a ring, and dropping the field is exactly
+    lede:
+      "A module is a vector space over a ring, and dropping the field is exactly
       what makes the subject interesting: bases need not exist, so free, projective,
       and torsion-free become three different conditions instead of one. Free implies
       projective implies torsion-free over a domain, and none of the arrows reverse.
       Exactness is the language for comparing modules, a short exact sequence splits
       precisely when the quotient is projective, and the tensor product is the construction
-      that turns bilinear data into linear data and fails to be exact on the left.'
+      that turns bilinear data into linear data and fails to be exact on the left."
     items:
       - ref: D-NQZUY
       - ref: PR-JBDUI
@@ -1195,7 +1199,8 @@ sections:
   - slug: structure-theorem
     title: The Structure Theorem over a PID
     parent: modules
-    lede: One theorem subsumes two apparently unrelated classifications. A finitely
+    lede:
+      One theorem subsumes two apparently unrelated classifications. A finitely
       generated module over a principal ideal domain is a free part plus a torsion part,
       and the torsion part is a sum of cyclic modules recorded either by invariant factors,
       each dividing the next, or by elementary divisors, the prime powers. Over the
@@ -1237,7 +1242,8 @@ sections:
   - slug: fields-and-extensions
     title: Fields and Extensions
     parent: factorization-and-polynomials
-    lede: 'An extension of fields is a vector space over the base, and its degree is
+    lede:
+      "An extension of fields is a vector space over the base, and its degree is
       multiplicative in towers, which converts questions about roots into arithmetic.
       An element is algebraic exactly when it generates a finite extension, and the
       degree of that extension is the degree of its minimal polynomial. Two conditions
@@ -1245,7 +1251,7 @@ sections:
       one root has all of them, which is the same as being a splitting field; and separable,
       meaning no minimal polynomial has a repeated root, which the derivative test detects
       and which is automatic over a perfect field. Finite fields are the case where
-      both hold for free and everything is determined by the order.'
+      both hold for free and everything is determined by the order."
     items:
       - ref: FD-J3HIA
       - ref: FD-3V3ZW
@@ -1405,7 +1411,8 @@ sections:
   - slug: galois-theory
     title: Galois Theory
     parent: fields-and-extensions
-    lede: 'Galois means normal and separable, equivalently that the fixed field of the
+    lede:
+      "Galois means normal and separable, equivalently that the fixed field of the
       automorphism group is exactly the base, equivalently that the number of automorphisms
       equals the degree. The correspondence is then an inclusion-reversing bijection
       between intermediate fields and subgroups of the Galois group, under which degrees
@@ -1414,7 +1421,7 @@ sections:
       extension. Everything computational follows: the Galois group of a polynomial
       is a transitive subgroup of the symmetric group on its roots, the discriminant
       decides whether it lands in the alternating group, and the resolvent decides the
-      quartic.'
+      quartic."
     items:
       - ref: D-5JYEI
       - ref: FD-4GFTY
@@ -1470,7 +1477,8 @@ sections:
   - slug: linear-algebra
     title: Linear Algebra
     parent: modules
-    lede: "Linear algebra returns here as the case of module theory where the ring is
+    lede:
+      "Linear algebra returns here as the case of module theory where the ring is
       a field, so bases exist, rank and nullity add to the dimension, and every short
       exact sequence splits. What is left is the geometry a form puts on the space.
       A bilinear form is recorded by its Gram matrix, nondegeneracy is invertibility
@@ -1665,7 +1673,8 @@ sections:
   - slug: canonical-forms
     title: Canonical Forms
     parent: structure-theorem
-    lede: 'This is the structure theorem over a principal ideal domain, read for the
+    lede:
+      "This is the structure theorem over a principal ideal domain, read for the
       polynomial ring in one variable. A linear operator makes its space a module over
       that ring; the invariant factors give the rational canonical form, a block diagonal
       of companion matrices, which exists over any field; the elementary divisors give
@@ -1675,7 +1684,7 @@ sections:
       polynomial is the total size of all of them, and the dimension of the eigenspace
       is how many there are. An operator is diagonalisable exactly when its minimal
       polynomial is a product of distinct linear factors, which is the separability
-      condition of the Galois sections said about a matrix.'
+      condition of the Galois sections said about a matrix."
     items:
       - ref: D-GK5SF
       - ref: D-QFYAC
@@ -1743,7 +1752,8 @@ sections:
   - slug: semisimplicity-and-representations
     title: Semisimplicity and Representations
     parent: modules
-    lede: "A representation is a module over the group algebra, which puts the last
+    lede:
+      "A representation is a module over the group algebra, which puts the last
       two sections to work on groups. Maschke says that when the characteristic does
       not divide the order of the group the group algebra is semisimple, so every representation
       splits into irreducibles; Artin-Wedderburn then says a semisimple ring is a finite

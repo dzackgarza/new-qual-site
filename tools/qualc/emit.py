@@ -105,19 +105,10 @@ def _successful_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(
-                    f"pandoc {operation} failed for item {index}: {error}"
-                )
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-            and not message.message.startswith(ignored)
-        ]
+                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(ignored)]
         if warnings:
-            raise ValueError(
-                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
-            )
+            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
     return outputs
 
@@ -135,19 +126,10 @@ def _successful_html_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(
-                    f"pandoc {operation} failed for item {index}: {error}"
-                )
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-            and not message.message.startswith(KNOWN_PANDOC_WARNINGS)
-        ]
+                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(KNOWN_PANDOC_WARNINGS)]
         if warnings:
-            raise ValueError(
-                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
-            )
+            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
     return outputs
 
@@ -319,9 +301,7 @@ def _compile_tikzcd_block(tex_source: str) -> str:
         env={**os.environ, "HOME": str(Path.home())},
     )
     if result.returncode != 0:
-        raise RuntimeError(
-            f"tikzcd compilation failed (exit {result.returncode}): {result.stderr.strip()[:300]}"
-        )
+        raise RuntimeError(f"tikzcd compilation failed (exit {result.returncode}): {result.stderr.strip()[:300]}")
     return result.stdout
 
 
@@ -444,9 +424,7 @@ def _lamport_group(
         index += 1
         path = prefix + (index,)
         label = ".".join(str(part) for part in path)
-        body: list[pf.Block] = [
-            pf.Para(pf.Span(pf.Str(f"{label}."), classes=["pf-number"]), *content)
-        ]
+        body: list[pf.Block] = [pf.Para(pf.Span(pf.Str(f"{label}."), classes=["pf-number"]), *content)]
         i += 1
         deeper: list[tuple[int, str, list[pf.Inline]]] = []
         while i < len(segments) and segments[i][0] > level:
@@ -497,10 +475,7 @@ def _lamport_blocks(blocks: list[pf.Block]) -> list[pf.Block]:
         if isinstance(block, pf.Para | pf.Plain):
             seen = False
             for inline in block.content:
-                if (
-                    isinstance(inline, pf.Str)
-                    and _marker_level(inline.text or "") is not None
-                ):
+                if isinstance(inline, pf.Str) and _marker_level(inline.text or "") is not None:
                     seen = True
                     break
             out.append(_lamport_paragraph(block) if seen else block)
@@ -591,9 +566,7 @@ def _wiki_node(page: WikiPage) -> tuple[str, NavigationParent]:
     parts = page.source_rel.parts
     if page.source_rel.stem.lower() == "index" and len(parts) > 1:
         parent_parts = parts[:-2]
-        parent: NavigationParent = (
-            RootParent() if not parent_parts else NodeParent("/".join(parent_parts))
-        )
+        parent: NavigationParent = RootParent() if not parent_parts else NodeParent("/".join(parent_parts))
         return "/".join(parts[:-1]), parent
     parent_parts = parts[:-1]
     parent = RootParent() if not parent_parts else NodeParent("/".join(parent_parts))
@@ -678,9 +651,7 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
         while True:
             match cursor.target:
                 case LevelOnly():
-                    raise ValueError(
-                        f"a wiki page is a level, not a page: {cursor.key}"
-                    )
+                    raise ValueError(f"a wiki page is a level, not a page: {cursor.key}")
                 case PageTarget(route=route):
                     steps.append(Crumb(title=cursor.title, route=route))
             match cursor.parent:
@@ -700,23 +671,13 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
             following = members[index + 1] if index + 1 < len(members) else None
             position: StartReading | MiddleReading | EndReading | OnlyReading
             if previous is None and following is not None:
-                position = StartReading(
-                    following=ReadingLink.of(
-                        links[page_keys[following.route.as_posix()]]
-                    )
-                )
+                position = StartReading(following=ReadingLink.of(links[page_keys[following.route.as_posix()]]))
             elif following is None and previous is not None:
-                position = EndReading(
-                    previous=ReadingLink.of(links[page_keys[previous.route.as_posix()]])
-                )
+                position = EndReading(previous=ReadingLink.of(links[page_keys[previous.route.as_posix()]]))
             elif previous is not None and following is not None:
                 position = MiddleReading(
-                    previous=ReadingLink.of(
-                        links[page_keys[previous.route.as_posix()]]
-                    ),
-                    following=ReadingLink.of(
-                        links[page_keys[following.route.as_posix()]]
-                    ),
+                    previous=ReadingLink.of(links[page_keys[previous.route.as_posix()]]),
+                    following=ReadingLink.of(links[page_keys[following.route.as_posix()]]),
                 )
             else:
                 position = OnlyReading()
@@ -741,10 +702,7 @@ def _wiki_chrome(
 def _wiki_incoming_html(sources: list[WikiPage]) -> str:
     if not sources:
         return ""
-    items = "".join(
-        f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>'
-        for page in sources
-    )
+    items = "".join(f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>' for page in sources)
     return f'<section class="relation-group" data-relation-group="wiki-backlinks"><h2>What links to this</h2><ul>{items}</ul></section>'
 
 
@@ -762,13 +720,7 @@ CARD_ROUTE = "tag/"
 
 # Sorts a sitting within its year. A sitting with no recorded term sorts after
 # the ones that have one rather than ahead of spring.
-TERM_RANK = (
-    "case s.term "
-    + " ".join(
-        f"when '{term}' then {rank}" for rank, term in enumerate(TERMS_IN_YEAR_ORDER)
-    )
-    + f" else {len(TERMS_IN_YEAR_ORDER)} end"
-)
+TERM_RANK = "case s.term " + " ".join(f"when '{term}' then {rank}" for rank, term in enumerate(TERMS_IN_YEAR_ORDER)) + f" else {len(TERMS_IN_YEAR_ORDER)} end"
 WIKILINK_CLASS = "wikilink"
 
 
@@ -809,9 +761,7 @@ def _transclusion_head(card: sqlite3.Row) -> dict:
     # The brackets are inside the anchor so the whole `(Tag …)` wraps as one
     # piece; outside it, a long name left the closing bracket alone on the
     # next line.
-    tag = (
-        f'<a class="qual-section-tag" href="{href}">(Tag {html.escape(card["id"])})</a>'
-    )
+    tag = f'<a class="qual-section-tag" href="{href}">(Tag {html.escape(card["id"])})</a>'
     return {
         "t": "RawBlock",
         "c": [
@@ -858,9 +808,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
     return cast(pf.Div, from_ast(json.dumps(document)).content[0])
 
 
-def _transclude_wikilinks(
-    blocks: list[pf.Block], cards: dict[str, sqlite3.Row]
-) -> list[pf.Block]:
+def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row]) -> list[pf.Block]:
     """Replace every standalone-wikilink paragraph with the cards it names.
 
     A card already transcluded on the page is dropped rather than repeated: the
@@ -890,9 +838,7 @@ def _transclude_wikilinks(
 PROBLEMS_PANEL_HEADING = "Problems"
 
 
-def _problems_panel(
-    hits: list[sqlite3.Row], inline_cache: dict[str, list[pf.Inline]]
-) -> pf.Div:
+def _problems_panel(hits: list[sqlite3.Row], inline_cache: dict[str, list[pf.Inline]]) -> pf.Div:
     """The problems a `problems:` page claims, listed at its foot."""
     return pf.Div(
         pf.Header(*_inlines(PROBLEMS_PANEL_HEADING, inline_cache), level=2),
@@ -928,9 +874,7 @@ def _wiki_blocks(
     Transcluded cards are inserted first, so the same walk labels those too.
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
-    blocks = list(
-        pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content
-    )
+    blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
     if problems:
         blocks.append(_problems_panel(problems, inline_cache))
     html_block = _wiki_incoming_html(incoming)
@@ -1082,14 +1026,7 @@ def _card_relation_items(
 def _appearance_items(appearances: list[Appearance]) -> str:
     if not appearances:
         return ""
-    return (
-        "<ul>"
-        + "".join(
-            f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>'
-            for appearance in appearances
-        )
-        + "</ul>"
-    )
+    return "<ul>" + "".join(f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>' for appearance in appearances) + "</ul>"
 
 
 def _relation_group(key: str, heading: str, items: str) -> str:
@@ -1124,9 +1061,7 @@ def _relation_groups_json(
             "Guide Appearances",
             _appearance_items(guide_appearances.get(card_id, [])),
         ),
-        _relation_group(
-            "dependencies", "Dependencies", _card_relation_items(dependencies)
-        ),
+        _relation_group("dependencies", "Dependencies", _card_relation_items(dependencies)),
         _relation_group("backlinks", "Backlinks", _card_relation_items(backlinks)),
         _wiki_incoming_html(wiki_mentions),
     ]
@@ -1182,13 +1117,9 @@ def _rename_json(node: object, number: str = "") -> None:
                 kind = DIV_CLASS_TO_KIND[owned[0]]
                 attr[1].append(SECTION_CLASS)
                 attr[2].append(["data-label", f"{kind.title()}{number}"])
-                title = next(
-                    (value.strip() for key, value in attr[2] if key == "title"), ""
-                )
+                title = next((value.strip() for key, value in attr[2] if key == "title"), "")
                 if title and kind in TITLED_KINDS:
-                    node["c"][1].insert(
-                        0, {"t": "RawBlock", "c": ["html", _title_html(title)]}
-                    )
+                    node["c"][1].insert(0, {"t": "RawBlock", "c": ["html", _title_html(title)]})
         _rename_json(node.get("c"))
 
 
@@ -1223,9 +1154,7 @@ def _hints_before_solutions(body: list[dict], hints: list[dict]) -> list[dict]:
     if not hints:
         return body
     for position, block in enumerate(body):
-        classes = (
-            block.get("c", [[None, [], []]])[0][1] if block.get("t") == "Div" else []
-        )
+        classes = block.get("c", [[None, [], []]])[0][1] if block.get("t") == "Div" else []
         if "qual-solution" in classes:
             return body[:position] + hints + body[position:]
     return body + hints
@@ -1245,16 +1174,8 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     up to the first answer truncates the 11 problems that write more of the
     question after one.
     """
-    statement = [
-        block
-        for block in blocks
-        if not (block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES)
-    ]
-    answers = [
-        block
-        for block in blocks
-        if block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES
-    ]
+    statement = [block for block in blocks if not (block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES)]
+    answers = [block for block in blocks if block.get("t") == "Div" and set(block["c"][0][1]) & ANSWER_CLASSES]
     if not statement:
         return answers
     return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
@@ -1269,9 +1190,7 @@ def problem_json(
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     facets = _page_rows(data.facets, card["id"])
-    institutions = sorted(
-        {f["institution"].upper() for f in facets if f["institution"]}
-    )
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
@@ -1333,12 +1252,7 @@ def plain_json(
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(
-            set(
-                _page_terms(data, card["id"], "topic")
-                + _page_terms(data, card["id"], "area")
-            )
-        ),
+        "categories": sorted(set(_page_terms(data, card["id"], "topic") + _page_terms(data, card["id"], "area"))),
     }
     return meta, body
 
@@ -1361,16 +1275,8 @@ def _card_filters(
         *also,
         *(("area", term) for term in _page_terms(data, card["id"], "area")),
         *(("topic", term) for term in _page_terms(data, card["id"], "topic")),
-        *sorted(
-            {
-                ("institution", row["institution"].upper())
-                for row in facets
-                if row["institution"]
-            }
-        ),
-        *sorted(
-            {("year", str(row["year"])) for row in facets if row["year"] is not None}
-        ),
+        *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
+        *sorted({("year", str(row["year"])) for row in facets if row["year"] is not None}),
         # A practice sheet can be asked for problems that were really set. That
         # is "has an institution", which no filter over the values can ask.
         ("sourced", "yes" if any(row["institution"] for row in facets) else "no"),
@@ -1623,9 +1529,7 @@ def run_query(
     sql = "select distinct c.* from cards c join classifications a on a.card_id=c.id and a.axis='area' and a.term=?"
     args: list = [area]
     if query.topics:
-        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(
-            ",".join("?" * len(query.topics))
-        )
+        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(",".join("?" * len(query.topics)))
         args += list(query.topics)
     sql += " where c.kind=?"
     args.append(query.kind)
@@ -1646,9 +1550,7 @@ def run_query(
 PROBLEM_KINDS = ("problem", "exercise")
 
 
-def run_page_problems(
-    con: sqlite3.Connection, area: str, topics: tuple[str, ...]
-) -> list[sqlite3.Row]:
+def run_page_problems(con: sqlite3.Connection, area: str, topics: tuple[str, ...]) -> list[sqlite3.Row]:
     """Every problem in one subject carrying any of these topics.
 
     The wiki counterpart of `run_query`, and unlimited where that one is not:
@@ -1669,9 +1571,7 @@ def run_page_problems(
     )
 
 
-def resolve_page_problems(
-    con: sqlite3.Connection, pages: list[WikiPage]
-) -> dict[str, list[sqlite3.Row]]:
+def resolve_page_problems(con: sqlite3.Connection, pages: list[WikiPage]) -> dict[str, list[sqlite3.Row]]:
     """Each page's `problems:` block, resolved against the corpus.
 
     A page is scoped to the subject it is filed under, which is its top-level
@@ -1692,9 +1592,7 @@ def resolve_page_problems(
         area = slug(page.source_rel.parts[0])
         hits = run_page_problems(con, area, page.problems.topics)
         if not hits:
-            raise ValueError(
-                f"problems query has no matches in area {area}: wiki/{key}"
-            )
+            raise ValueError(f"problems query has no matches in area {area}: wiki/{key}")
         resolved[key] = hits
     return resolved
 
@@ -1720,9 +1618,7 @@ def problem_page(
         """,
         (card["id"],),
     )
-    institutions = sorted(
-        {f["institution"].upper() for f in facets if f["institution"]}
-    )
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
     areas = _terms(con, card["id"], "area")
     topics = _terms(con, card["id"], "topic")
@@ -1740,9 +1636,7 @@ def problem_page(
     )
     if uses:
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
-        blocks.append(
-            pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses])
-        )
+        blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
 
     return {
         "title": card["title"],
@@ -1759,9 +1653,7 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     return {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(
-            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
-        ),
+        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
     }, _blocks(card)
 
 
@@ -1780,9 +1672,7 @@ def collection_page(
         """,
         (src["id"],),
     )
-    completion_rows = _rows(
-        con, "select completion from sources where id=?", (src["id"],)
-    )
+    completion_rows = _rows(con, "select completion from sources where id=?", (src["id"],))
     completion = completion_rows[0]["completion"] if completion_rows else "complete"
     provenance = [
         row["href"]
@@ -1792,9 +1682,7 @@ def collection_page(
             (src["id"],),
         )
     ]
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
-        con, listed, inline_cache, completion, provenance
-    )
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(con, listed, inline_cache, completion, provenance)
 
 
 def _collection_listing(
@@ -1818,23 +1706,10 @@ def _collection_listing(
 
     blocks: list[pf.Block] = []
     if completion == "incomplete":
-        blocks.append(
-            pf.Para(
-                pf.Str(
-                    "This collection is incomplete; listed items are a prefix of the source, and further extraction is pending."
-                )
-            )
-        )
+        blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
     if provenance:
         blocks.append(pf.Header(pf.Str("Provenance"), level=2))
-        blocks.append(
-            pf.BulletList(
-                *[
-                    pf.ListItem(pf.Plain(pf.Link(pf.Str(href), url=href)))
-                    for href in provenance
-                ]
-            )
-        )
+        blocks.append(pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(pf.Str(href), url=href))) for href in provenance]))
     blocks.append(
         pf.Para(
             pf.Str(str(len(listed))),
@@ -1939,9 +1814,7 @@ def _publication_navigation(
         section = next(item for item in manifest.sections if item.slug == current_key)
         trail = (
             *trail,
-            Crumb(
-                title=section.title, route=_publication_section_route(manifest, section)
-            ),
+            Crumb(title=section.title, route=_publication_section_route(manifest, section)),
         )
     return PublicationNavigation(
         links=links,
@@ -2020,11 +1893,7 @@ def _query_heading(query: PublicationQuery) -> str:
     manifest, so the heading restates the query rather than inventing a title.
     """
     topics = ", ".join(query.topics)
-    return (
-        f"{_plural(query.kind).title()}: {topics}"
-        if topics
-        else _plural(query.kind).title()
-    )
+    return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
 
 
 def publication_section_page(
@@ -2046,9 +1915,7 @@ def publication_section_page(
             case QueryItem(query=query):
                 hits = run_query(con, query, manifest.area)
                 if not hits:
-                    raise ValueError(
-                        f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}"
-                    )
+                    raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
                 blocks.append(
                     pf.Div(
                         pf.Header(
@@ -2084,9 +1951,7 @@ def card_source_collections(
     con: sqlite3.Connection,
 ) -> dict[str, list[Appearance]]:
     """Collections that list this problem."""
-    sources: dict[str, list[Appearance]] = {
-        row["id"]: [] for row in _rows(con, "select id from cards order by id")
-    }
+    sources: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for row in _rows(
         con,
         """
@@ -2111,9 +1976,7 @@ def card_guide_appearances(
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
     """Guide sections that reference or query this card."""
-    guide_appearances: dict[str, list[Appearance]] = {
-        row["id"]: [] for row in _rows(con, "select id from cards order by id")
-    }
+    guide_appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
@@ -2130,9 +1993,7 @@ def card_guide_appearances(
                     case QueryItem(query=query):
                         hits = run_query(con, query, manifest.area)
                         if not hits:
-                            raise ValueError(
-                                f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}"
-                            )
+                            raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
                         for hit in hits:
                             guide_appearances[hit["id"]].append(
                                 Appearance(
@@ -2194,9 +2055,7 @@ def listing_page(
     lede: str,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    return {"title": title, "listing": listing}, [
-        pf.Para(*_inlines(lede, inline_cache))
-    ]
+    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede, inline_cache))]
 
 
 # Separates multi-valued facet terms in HTML data attributes. Topics are free
@@ -2252,10 +2111,7 @@ def _listing_filters(
         + "".join(
             f'<label for="listing-{axis}">{axis.title()}'
             f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
-            + "".join(
-                f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names))}</option>'
-                for value in values
-            )
+            + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names))}</option>' for value in values)
             + "</select></label>"
             for axis, values in facet_values.items()
         )
@@ -2277,40 +2133,14 @@ def problem_browser_page(
     script runs is one whose shape a reader can see straight away.
     """
     facet_values = {
-        "area": sorted(
-            {
-                row["term"]
-                for row in _rows(
-                    con, "select term from classifications where axis='area'"
-                )
-            }
-        ),
-        "topic": sorted(
-            {
-                row["term"]
-                for row in _rows(
-                    con, "select term from classifications where axis='topic'"
-                )
-            }
-        ),
-        "institution": sorted(
-            {
-                row["institution"].upper()
-                for row in _rows(con, "select institution from exam_sources")
-            }
-        ),
-        "year": sorted(
-            {
-                str(row["year"])
-                for row in _rows(con, "select year from sources where year is not null")
-            }
-        ),
+        "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
+        "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
+        "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
+        "year": sorted({str(row["year"]) for row in _rows(con, "select year from sources where year is not null")}),
     }
     return {"title": "Problems"}, [
         pf.Para(pf.Str("Every problem in the corpus.")),
-        _listing_filters(
-            "problem", "Group theory, UGA, 2019…", facet_values, area_names, "problem"
-        ),
+        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values, area_names, "problem"),
     ]
 
 
@@ -2355,9 +2185,7 @@ def _guide_sections(
         return pf.BulletList(
             *[
                 pf.ListItem(
-                    pf.Plain(
-                        pf.Link(pf.Str(guide.title), url=f"guide/{guide.id}.html")
-                    ),
+                    pf.Plain(pf.Link(pf.Str(guide.title), url=f"guide/{guide.id}.html")),
                     pf.Para(*_inlines(guide.lede, inline_cache)),
                 )
                 for guide in chosen
@@ -2397,33 +2225,17 @@ def source_index_page(
     )
     unlisted = {row["source_kind"] for row in collections} - set(SOURCE_KIND_HEADINGS)
     if unlisted:
-        raise ValueError(
-            f"source kinds with no heading on the source index: {sorted(unlisted)}"
-        )
+        raise ValueError(f"source kinds with no heading on the source index: {sorted(unlisted)}")
 
     facet_values = {
-        "source_kind": [
-            kind
-            for kind in SOURCE_KIND_HEADINGS
-            if any(row["source_kind"] == kind for row in collections)
-        ],
+        "source_kind": [kind for kind in SOURCE_KIND_HEADINGS if any(row["source_kind"] == kind for row in collections)],
         "area": sorted({row["area"] for row in collections if row["area"]}),
-        "institution": sorted(
-            {row["institution"].upper() for row in collections if row["institution"]}
-        ),
-        "year": sorted(
-            {str(row["year"]) for row in collections if row["year"] is not None}
-        ),
+        "institution": sorted({row["institution"].upper() for row in collections if row["institution"]}),
+        "year": sorted({str(row["year"]) for row in collections if row["year"] is not None}),
     }
     blocks: list[pf.Block] = [
-        pf.Para(
-            pf.Str(
-                f"Every collection the corpus draws problems from: {len(collections)} in all."
-            )
-        ),
-        _listing_filters(
-            "source", "UGA, topology, 2019…", facet_values, area_names, "collection"
-        ),
+        pf.Para(pf.Str(f"Every collection the corpus draws problems from: {len(collections)} in all.")),
+        _listing_filters("source", "UGA, topology, 2019…", facet_values, area_names, "collection"),
     ]
     return {"title": "Sources"}, blocks
 
@@ -2485,22 +2297,16 @@ def mathjax_header(macros: dict) -> str:
         if not tex_name.startswith("\\") or tex_name == "\\":
             raise ValueError(f"invalid TeX macro name: {tex_name!r}")
         if not isinstance(definition, str):
-            raise TypeError(
-                f"invalid definition for TeX macro {tex_name}: {definition!r}"
-            )
+            raise TypeError(f"invalid definition for TeX macro {tex_name}: {definition!r}")
         name = tex_name[1:]
         if name in mathjax_macros:
             raise ValueError(f"duplicate MathJax macro name: {name}")
-        parameters = {
-            int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)
-        }
+        parameters = {int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)}
         if parameters:
             argument_count = max(parameters)
             expected = set(range(1, argument_count + 1))
             if parameters != expected:
-                raise ValueError(
-                    f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}"
-                )
+                raise ValueError(f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}")
             mathjax_macros[name] = [definition, argument_count]
         else:
             mathjax_macros[name] = definition
@@ -2748,25 +2554,18 @@ def project(
     guides = load_publications(publications)
     link_targets = _link_targets(con, guides)
     link_targets.update(wiki_link_targets(wiki_pages or []))
-    (out / "wiki-manifest.json").write_text(
-        json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2)
-        + "\n"
-    )
+    (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
     source_collections = card_source_collections(con)
     guide_appearances = card_guide_appearances(con, guides)
     mentions = wiki_card_mentions(wiki_pages or [])
     incoming_pages = incoming_wiki_links(wiki_pages or [])
     assets = build_asset_catalog(site.parent / "assets")
     area_names = load_areas(site.parent / "wiki")
-    inline_values = [
-        row["title"] for row in _rows(con, "select distinct title from cards")
-    ]
+    inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
         [
             "problems.",
-            (
-                "Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."
-            ),
+            ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
             f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
             GUIDES_LEDE,
@@ -2774,21 +2573,10 @@ def project(
         ]
     )
     inline_values.append(PROBLEMS_PANEL_HEADING)
-    inline_values.extend(
-        _query_heading(item.query)
-        for guide in guides
-        for section in guide.sections
-        for item in section.items
-        if isinstance(item, QueryItem)
-    )
+    inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
-    inline_values.extend(
-        value
-        for guide in guides
-        for section in guide.sections
-        for value in (section.title, section.lede)
-    )
+    inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
     inline_values.extend(
         row["section_name"]
         for row in _rows(
@@ -2815,9 +2603,7 @@ def project(
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(
-        con, "select * from cards where kind not in ('problem','collection')"
-    ):
+    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
         meta, body = plain_json(
             card_page_data,
             card,
@@ -2847,9 +2633,7 @@ def project(
     collection_facts = {
         row["id"]: (
             row["source_kind"],
-            f"{row['problems']} problems, {row['solved']} solved"
-            if row["problems"]
-            else "no problems listed",
+            f"{row['problems']} problems, {row['solved']} solved" if row["problems"] else "no problems listed",
             f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['area']}",
         )
         for row in _rows(
@@ -2887,17 +2671,11 @@ def project(
             )
         )
 
-    used_areas = {
-        row["term"]
-        for row in _rows(con, "select term from classifications where axis='area'")
-    }
+    used_areas = {row["term"] for row in _rows(con, "select term from classifications where axis='area'")}
     generate_qmd = GENERATE_QMD.replace(
         "__AREANAMES__",
         json.dumps(
-            {
-                area: area_names[area]
-                for area in sorted(used_areas, key=lambda a: area_names[a])
-            },
+            {area: area_names[area] for area in sorted(used_areas, key=lambda a: area_names[a])},
             separators=(",", ":"),
         ),
     )
