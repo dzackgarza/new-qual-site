@@ -19,6 +19,9 @@ Then $E=\{(x,y):x-y\in A\}$ is a Borel subset of the plane.
 If $m(A)=0$, then $m\times m(E)=0$.
 :::
 
-:::{.solution}
-$f:\mathbb{R}^2\to\mathbb{R}$ by $f(x,y)=x-y$ is continuous. Thus, $E=f^{-1}(A)$ is Borel. $E^y=\{x\in\mathbb{R}:(x,y)\in E\}=y+A$ which is a null set since $m(y+A)=m(A)=0$. Thus $m\times m(E)=\int m(E^y)dm(y)=0$.
+::: {.solution}
+$f:\mathbb{R}^2\to\mathbb{R}$ by $f(x,y)=x-y$ is continuous.
+Thus, $E=f^{-1}(A)$ is Borel.
+$E^y=\{x\in\mathbb{R}:(x,y)\in E\}=y+A$ which is a null set since $m(y+A)=m(A)=0$.
+Thus $m\times m(E)=\int m(E^y)dm(y)=0$.
 :::

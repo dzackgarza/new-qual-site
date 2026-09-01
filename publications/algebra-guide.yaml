@@ -4,1804 +4,1804 @@ kind: study-guide
 title: Algebra
 lede: 'The core topics of graduate qualifying algebra: counting arguments and Sylow theorems on finite groups, ideal theory and factorization in commutative rings, module structure over PIDs with applications to canonical forms, and Galois theory for field extensions.'
 sections:
-- slug: preliminaries
-  title: Preliminaries
-  parent: GUIDE-ALGEBRA
-  lede: 'Two things get used everywhere and proved nowhere else. Zorn''s lemma is
-    where every maximality argument bottoms out -- the existence of a maximal ideal
-    containing a given proper ideal, and with it the existence of algebraic closures
-    and of bases for infinite-dimensional spaces -- so it is worth seeing once in
-    the form the rest of the subject calls: a poset in which every chain has an upper
-    bound has a maximal element. The arithmetic of the integers is the other. The
-    totient counts the generators of a cyclic group and, later, the degree of a cyclotomic
-    extension; the Chinese remainder theorem splits a cyclic group into its prime-power
-    parts and returns as the decomposition of a module over a principal ideal domain;
-    Fermat and Euler are the multiplicative-order statements that finite field theory
-    will generalise.'
-  items:
-  - ref: D-P6XOT
-  - ref: FT-PUVIQ
-  - ref: T-V7JRG
-  - ref: FF-QELG7
-  - ref: T-QSTRJ
-  - ref: PR-UTFSY
-  - ref: D-JX3YC
-  - ref: FF-SOE5P
-  - ref: FT-RVIGS
-  - ref: FT-BAV4D
-  - ref: T-TTZ2Y
-  - ref: FD-JI2RH
-  - ref: FD-BWVRA
-  - query:
-      kind: problem
-      topics:
-      - Zorn's Lemma
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Zorn's Lemma
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Number Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Chinese Remainder Theorem
-      limit: 500
-      review:
-        mode: any
-- slug: groups-and-subgroups
-  title: Groups and Subgroups
-  parent: preliminaries
-  lede: 'The subject begins with one object and one relation: a group and its subgroups.
-    Lagrange supplies the first constraint -- the order of a subgroup divides the
-    order of the group -- and it rests on the single fact about cosets that everything
-    else reuses, that two cosets are either equal or disjoint. Normality is exactly
-    the condition that makes the coset space a group again, and the four isomorphism
-    theorems are its consequences: a homomorphism factors through its kernel, a subgroup
-    and a normal subgroup meet in a diamond, nested quotients cancel, and the subgroups
-    of a quotient are the subgroups containing the kernel. Cyclic groups are the case
-    where all of it is visible at once, and Cauchy is the first partial converse to
-    Lagrange: a prime dividing the order really is realised by an element.'
-  items:
-  - ref: D-IQ4OX
-  - ref: PR-U5CHT
-  - ref: FF-QVQXM
-  - ref: D-D36IY
-  - ref: D-VJGH5
-  - ref: PR-VUKHO
-  - ref: T-5KGVV
-  - ref: T-SZRXI
-  - ref: T-F4O3E
-  - ref: C-HWX2P
-  - ref: PR-SF6ZE
-  - ref: PR-YY3JG
-  - ref: D-ZTPHF
-  - ref: T-XDMK2
-  - ref: T-QMKXQ
-  - ref: D-EKE4Q
-  - ref: D-BPRD3
-  - ref: D-QMVEB
-  - ref: D-53LTN
-  - ref: PR-GJLQP
-  - ref: PR-IOMVN
-  - ref: T-WR7CD
-  - ref: T-I5N43
-  - ref: T-NFQBO
-  - ref: T-6CQEB
-  - ref: T-RLVA4
-  - ref: PR-DJZLY
-  - query:
-      kind: definition
-      topics:
-      - Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Cosets and Lagrange
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Cyclic Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Normal Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Homomorphisms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Isomorphism Theorems
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Cosets and Lagrange
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Cosets and Lagrange
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Cosets and Lagrange
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Cyclic Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Normal Subgroups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: strategy
-      topics:
-      - Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: hint
-      topics:
-      - Groups
-      limit: 500
-      review:
-        mode: any
-- slug: group-actions-and-counting
-  title: Group Actions and Counting
-  parent: groups-and-subgroups
-  lede: 'An action turns a group into arithmetic. Orbit-stabilizer says an orbit has
-    the size of the index of any of its stabilizers, so every orbit count divides
-    the order of the group. Conjugation is the action of a group on itself: its orbits
-    are the conjugacy classes, its stabilizers are the centralizers, and reading orbit-stabilizer
-    for it gives the class equation. Two consequences carry the rest of finite group
-    theory. A p-group has a nontrivial center, because every nontrivial class has
-    size divisible by p and the identity is not enough to make the count work; and
-    Burnside''s lemma counts orbits as the average number of fixed points, which is
-    what makes colouring problems finite computations.'
-  items:
-  - ref: D-WYC7C
-  - ref: D-3T6O2
-  - ref: D-KGGWK
-  - ref: FD-W3MQW
-  - ref: FD-XRRNZ
-  - ref: T-OBPSZ
-  - ref: T-KANHW
-  - ref: PR-GSDKO
-  - ref: PR-KGHJ2
-  - ref: PR-E6VI4
-  - ref: D-HLDEY
-  - ref: D-PX64W
-  - ref: D-NK7G7
-  - ref: D-OZ2RR
-  - ref: C-A6UAR
-  - ref: FD-L2TEC
-  - ref: T-4CDTT
-  - ref: L-DJKXL
-  - ref: L-354HC
-  - ref: PR-PYYRK
-  - ref: C-CM7ZS
-  - ref: FF-OL75S
-  - query:
-      kind: problem
-      topics:
-      - Group Actions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Orbit-Stabilizer
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Conjugacy
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Centralizers and Normalizers
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Class Equation
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Burnside's Lemma
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Centralizers and Normalizers
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: definition
-      topics:
-      - Group Actions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Group Actions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Orbit-Stabilizer
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Class Equation
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Burnside's Lemma
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Orbit-Stabilizer
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Burnside's Lemma
-      limit: 500
-      review:
-        mode: any
-- slug: sylow-theory
-  title: Sylow Theory
-  parent: group-actions-and-counting
-  lede: Sylow is the counting of the previous section applied to the set of p-subgroups.
-    The first theorem says a subgroup of order the full power of p dividing the group
-    order exists; the second says any two are conjugate, so there is really only one
-    up to the action; the third says their number divides the complementary factor
-    and is congruent to one modulo p. The third is the one that does the work on an
-    exam, because those two conditions together usually leave a single possibility,
-    and a unique Sylow subgroup is normal. Frattini's argument and the p-group results
-    are how Sylow feeds back into the structure theory that follows.
-  items:
-  - ref: D-7TQ2M
-  - ref: T-4RADG
-  - ref: T-WRMBM
-  - ref: T-RRK4J
-  - ref: T-EF2MZ
-  - ref: T-3X5FF
-  - ref: ST-DKYXZ
-  - ref: T-S5T5C
-  - ref: FT-ZENUU
-  - ref: L-WROBY
-  - ref: L-6QBOJ
-  - ref: T-4XKGD
-  - ref: D-FIB7S
-  - ref: FD-OR3BW
-  - ref: PR-IGLFV
-  - ref: L-Q44MT
-  - query:
-      kind: problem
-      topics:
-      - Sylow Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - p-Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Sylow Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - p-Groups
-      limit: 500
-      review:
-        mode: any
-- slug: permutation-groups
-  title: Permutation Groups
-  parent: group-actions-and-counting
-  lede: 'Every group embeds in a symmetric group, so the symmetric groups are where
-    abstract statements get tested. The sign homomorphism is the first invariant:
-    a cycle of even length is an odd permutation, conjugation preserves cycle type,
-    and the conjugacy classes of the symmetric group on n letters are therefore the
-    partitions of n. The alternating groups are simple from degree five onwards, which
-    is the fact that later obstructs solvability by radicals, and the transitive subgroups
-    of the small symmetric groups are the list a Galois group of a polynomial of that
-    degree must come from.'
-  items:
-  - ref: D-6BTFJ
-  - ref: D-BZ3KD
-  - ref: FD-PIVQZ
-  - ref: FD-GHDF2
-  - ref: FF-6MNV6
-  - ref: D-TMME3
-  - ref: FD-X4DBP
-  - ref: PR-JY4PV
-  - ref: D-7UIPO
-  - ref: PR-5PI25
-  - ref: D-T2NZ4
-  - ref: FD-2UWAQ
-  - ref: PR-5FGA7
-  - ref: T-EN5H4
-  - ref: PR-2JG3F
-  - ref: PR-434DX
-  - query:
-      kind: problem
-      topics:
-      - Permutations
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Simple Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Partitions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Permutations
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Simple Groups
-      limit: 500
-      review:
-        mode: any
-- slug: series-and-solvability
-  title: Series, Solvability, and Nilpotence
-  parent: group-actions-and-counting
-  lede: A composition series breaks a finite group into simple pieces, and Jordan-Holder
-    says the multiset of pieces does not depend on how the breaking was done. Two
-    conditions on the pieces name the two classes that matter. Solvable means the
-    factors are abelian, equivalently that the derived series -- iterate the commutator
-    subgroup -- reaches the identity; nilpotent means the central series does, which
-    is strictly stronger and equivalent for a finite group to every Sylow subgroup
-    being normal. The symmetric groups are solvable exactly up to degree four, which
-    is where the classical formulas for the cubic and the quartic stop.
-  items:
-  - ref: D-KM2DV
-  - ref: D-FYX4I
-  - ref: FD-PLAEO
-  - ref: T-OSJ5S
-  - ref: D-BQ4BQ
-  - ref: D-W2QAA
-  - ref: D-DFIDP
-  - ref: FD-T7IQV
-  - ref: T-QPMGT
-  - ref: PR-2ZOAV
-  - ref: D-5NV3N
-  - ref: D-BGNME
-  - ref: D-D7L4X
-  - ref: D-XEDSI
-  - ref: D-53JVH
-  - ref: T-4INET
-  - ref: T-7PU33
-  - ref: T-GM7EB
-  - ref: T-OHEFT
-  - ref: D-43MDF
-  - query:
-      kind: problem
-      topics:
-      - Subgroup Series
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Solvable Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Nilpotent Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Commutators
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Solvable Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Nilpotent Groups
-      limit: 500
-      review:
-        mode: any
-- slug: products-and-classification
-  title: Presentations, Products, and Classification
-  parent: sylow-theory
-  lede: 'Classifying the groups of a given order is the exercise that uses everything
-    above. The recognition theorems say when a group is a product: a direct product
-    when both factors are normal and meet trivially, a semidirect product when only
-    one is, and the semidirect products are then counted by homomorphisms into the
-    automorphism group of the normal factor, which for a cyclic group is its unit
-    group. Sylow supplies the normal factor, the fundamental theorem of finite abelian
-    groups supplies the abelian possibilities in both invariant-factor and elementary-divisor
-    form, and a presentation is how the nonabelian answer gets written down.'
-  items:
-  - ref: D-V6UJ7
-  - ref: D-4R2Z5
-  - ref: D-KRKV7
-  - ref: T-SVJUN
-  - ref: FT-7NMQR
-  - ref: T-YNKCZ
-  - ref: T-SB6AV
-  - ref: PR-N6S6P
-  - ref: PR-NESS4
-  - ref: PR-LFGHA
-  - ref: PR-SLWTB
-  - ref: FF-TSZNT
-  - ref: FF-TEGRU
-  - ref: FF-TDXQT
-  - ref: FF-C3SN4
-  - ref: FF-2NPCE
-  - ref: FF-I6XN6
-  - ref: FF-GWCXC
-  - ref: FF-Q6XCL
-  - ref: FF-IRHG3
-  - ref: FF-MBUKG
-  - ref: FF-JKCAM
-  - ref: FF-VAKLJ
-  - query:
-      kind: problem
-      topics:
-      - Group Presentations
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Free Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Direct Products
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Semidirect Products
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Automorphisms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Abelian Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Classification
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Classification
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Abelian Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Automorphisms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Direct Products
-      limit: 500
-      review:
-        mode: any
-- slug: rings-and-ideals
-  title: Rings and Ideals
-  parent: preliminaries
-  lede: 'A ring is a group with a second operation, and an ideal is the subobject
-    the second operation forces: the kernels of ring maps are exactly the ideals,
-    so the isomorphism theorems transfer verbatim. Two kinds of ideal control everything
-    downstream, and both are recognised by their quotients: an ideal is prime exactly
-    when the quotient is a domain, and maximal exactly when the quotient is a field,
-    which makes maximal imply prime and shows the converse fails already in the integers
-    at the zero ideal. Zorn''s lemma from the first section is what produces maximal
-    ideals in the first place.'
-  items:
-  - ref: D-GURUB
-  - ref: D-GXMDW
-  - ref: PR-PZZUO
-  - ref: D-QQIQZ
-  - ref: D-4I3SL
-  - ref: FD-S62UB
-  - ref: D-QJ3QL
-  - ref: D-7O2CH
-  - ref: D-UI6CU
-  - ref: D-JNCUB
-  - ref: D-O26OY
-  - ref: T-U3EZL
-  - ref: D-EOCCU
-  - ref: D-GOFWL
-  - ref: D-A7MC4
-  - ref: D-D7VK2
-  - ref: PR-ZDWKC
-  - ref: PR-RHQZT
-  - ref: D-5BM46
-  - ref: D-7XH2R
-  - ref: PR-76BDN
-  - ref: D-CXXCG
-  - ref: D-NX4KW
-  - ref: PR-Z3YWJ
-  - ref: PR-GGCEU
-  - ref: PR-LJE4C
-  - ref: PR-DDDXH
-  - ref: FD-SNOTW
-  - ref: T-GYVNQ
-  - query:
-      kind: definition
-      topics:
-      - Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Prime Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Maximal Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Integral Domains
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Characteristic
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: definition
-      topics:
-      - Prime Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: definition
-      topics:
-      - Maximal Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Prime Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Maximal Ideals
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Integral Domains
-      limit: 500
-      review:
-        mode: any
-- slug: factorization-and-polynomials
-  title: Factorization and Polynomials
-  parent: rings-and-ideals
-  lede: 'Unique factorization is not automatic, and the chain fields, Euclidean domains,
-    principal ideal domains, unique factorization domains, integral domains records
-    exactly how much of it survives each weakening. Prime and irreducible are the
-    two notions that come apart: prime always implies irreducible, and the converse
-    holds in a unique factorization domain and fails in the ring of integers adjoined
-    a square root of minus five, which is the standard witness. For polynomials the
-    questions become effective: Gauss''s lemma moves irreducibility between the integers
-    and the rationals, Eisenstein certifies it from a single prime, and reduction
-    modulo a prime certifies it by finite computation.'
-  items:
-  - ref: D-AVBIP
-  - ref: D-R4H6F
-  - ref: D-TO3IY
-  - ref: D-AWSKI
-  - ref: PR-LX7GH
-  - ref: D-INULL
-  - ref: FD-25SUQ
-  - ref: D-NKRGN
-  - ref: FD-GXXBV
-  - ref: D-HTIL5
-  - ref: PR-LLBRB
-  - ref: PR-GEHJF
-  - ref: PR-ASW5L
-  - ref: FD-CI4NB
-  - ref: FD-24RNF
-  - ref: D-BVMTZ
-  - ref: FD-GHY34
-  - ref: FT-2P5VV
-  - ref: T-CF6S3
-  - ref: D-4VC6X
-  - ref: T-JEZZY
-  - ref: FT-OXN3Y
-  - ref: D-W3DSO
-  - ref: D-FK47C
-  - ref: FF-HK72Z
-  - ref: D-WUGPG
-  - ref: FF-UC7SQ
-  - ref: FF-ED3CD
-  - ref: FF-2AKVH
-  - ref: FF-HAMDC
-  - query:
-      kind: definition
-      topics:
-      - Factorization
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Factorization
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Principal Ideal Domains
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Euclidean Domains
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Polynomials
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Irreducibility Criteria
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Symmetric Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Polynomials
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: definition
-      topics:
-      - Polynomials
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Factorization
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Principal Ideal Domains
-      limit: 500
-      review:
-        mode: any
-- slug: commutative-algebra
-  title: Commutative Algebra
-  parent: factorization-and-polynomials
-  lede: 'Localization inverts a multiplicative set and is how a ring is studied one
-    prime at a time: localizing at a prime produces a local ring, whose single maximal
-    ideal is what makes Nakayama''s lemma -- a finitely generated module killed by
-    its maximal ideal is zero -- into the workhorse it is. The nilradical and the
-    Jacobson radical are the two intersections that measure different defects, the
-    first of all primes and the second of all maximal ideals, and they agree for a
-    finitely generated algebra over a field. The Noetherian condition is what keeps
-    all of this finite, and Hilbert''s basis theorem is what says polynomial rings
-    inherit it.
+  - slug: preliminaries
+    title: Preliminaries
+    parent: GUIDE-ALGEBRA
+    lede: "Two things get used everywhere and proved nowhere else. Zorn's lemma is
+      where every maximality argument bottoms out -- the existence of a maximal ideal
+      containing a given proper ideal, and with it the existence of algebraic closures
+      and of bases for infinite-dimensional spaces -- so it is worth seeing once in
+      the form the rest of the subject calls: a poset in which every chain has an upper
+      bound has a maximal element. The arithmetic of the integers is the other. The
+      totient counts the generators of a cyclic group and, later, the degree of a cyclotomic
+      extension; the Chinese remainder theorem splits a cyclic group into its prime-power
+      parts and returns as the decomposition of a module over a principal ideal domain;
+      Fermat and Euler are the multiplicative-order statements that finite field theory
+      will generalise."
+    items:
+      - ref: D-P6XOT
+      - ref: FT-PUVIQ
+      - ref: T-V7JRG
+      - ref: FF-QELG7
+      - ref: T-QSTRJ
+      - ref: PR-UTFSY
+      - ref: D-JX3YC
+      - ref: FF-SOE5P
+      - ref: FT-RVIGS
+      - ref: FT-BAV4D
+      - ref: T-TTZ2Y
+      - ref: FD-JI2RH
+      - ref: FD-BWVRA
+      - query:
+          kind: problem
+          topics:
+            - Zorn's Lemma
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Zorn's Lemma
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Number Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Chinese Remainder Theorem
+          limit: 500
+          review:
+            mode: any
+  - slug: groups-and-subgroups
+    title: Groups and Subgroups
+    parent: preliminaries
+    lede: 'The subject begins with one object and one relation: a group and its subgroups.
+      Lagrange supplies the first constraint -- the order of a subgroup divides the
+      order of the group -- and it rests on the single fact about cosets that everything
+      else reuses, that two cosets are either equal or disjoint. Normality is exactly
+      the condition that makes the coset space a group again, and the four isomorphism
+      theorems are its consequences: a homomorphism factors through its kernel, a subgroup
+      and a normal subgroup meet in a diamond, nested quotients cancel, and the subgroups
+      of a quotient are the subgroups containing the kernel. Cyclic groups are the case
+      where all of it is visible at once, and Cauchy is the first partial converse to
+      Lagrange: a prime dividing the order really is realised by an element.'
+    items:
+      - ref: D-IQ4OX
+      - ref: PR-U5CHT
+      - ref: FF-QVQXM
+      - ref: D-D36IY
+      - ref: D-VJGH5
+      - ref: PR-VUKHO
+      - ref: T-5KGVV
+      - ref: T-SZRXI
+      - ref: T-F4O3E
+      - ref: C-HWX2P
+      - ref: PR-SF6ZE
+      - ref: PR-YY3JG
+      - ref: D-ZTPHF
+      - ref: T-XDMK2
+      - ref: T-QMKXQ
+      - ref: D-EKE4Q
+      - ref: D-BPRD3
+      - ref: D-QMVEB
+      - ref: D-53LTN
+      - ref: PR-GJLQP
+      - ref: PR-IOMVN
+      - ref: T-WR7CD
+      - ref: T-I5N43
+      - ref: T-NFQBO
+      - ref: T-6CQEB
+      - ref: T-RLVA4
+      - ref: PR-DJZLY
+      - query:
+          kind: definition
+          topics:
+            - Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Cosets and Lagrange
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Cyclic Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Normal Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Homomorphisms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Isomorphism Theorems
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Cosets and Lagrange
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Cosets and Lagrange
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Cosets and Lagrange
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Cyclic Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Normal Subgroups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: strategy
+          topics:
+            - Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: hint
+          topics:
+            - Groups
+          limit: 500
+          review:
+            mode: any
+  - slug: group-actions-and-counting
+    title: Group Actions and Counting
+    parent: groups-and-subgroups
+    lede: "An action turns a group into arithmetic. Orbit-stabilizer says an orbit has
+      the size of the index of any of its stabilizers, so every orbit count divides
+      the order of the group. Conjugation is the action of a group on itself: its orbits
+      are the conjugacy classes, its stabilizers are the centralizers, and reading orbit-stabilizer
+      for it gives the class equation. Two consequences carry the rest of finite group
+      theory. A p-group has a nontrivial center, because every nontrivial class has
+      size divisible by p and the identity is not enough to make the count work; and
+      Burnside's lemma counts orbits as the average number of fixed points, which is
+      what makes colouring problems finite computations."
+    items:
+      - ref: D-WYC7C
+      - ref: D-3T6O2
+      - ref: D-KGGWK
+      - ref: FD-W3MQW
+      - ref: FD-XRRNZ
+      - ref: T-OBPSZ
+      - ref: T-KANHW
+      - ref: PR-GSDKO
+      - ref: PR-KGHJ2
+      - ref: PR-E6VI4
+      - ref: D-HLDEY
+      - ref: D-PX64W
+      - ref: D-NK7G7
+      - ref: D-OZ2RR
+      - ref: C-A6UAR
+      - ref: FD-L2TEC
+      - ref: T-4CDTT
+      - ref: L-DJKXL
+      - ref: L-354HC
+      - ref: PR-PYYRK
+      - ref: C-CM7ZS
+      - ref: FF-OL75S
+      - query:
+          kind: problem
+          topics:
+            - Group Actions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Orbit-Stabilizer
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Conjugacy
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Centralizers and Normalizers
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Class Equation
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Burnside's Lemma
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Centralizers and Normalizers
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: definition
+          topics:
+            - Group Actions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Group Actions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Orbit-Stabilizer
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Class Equation
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Burnside's Lemma
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Orbit-Stabilizer
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Burnside's Lemma
+          limit: 500
+          review:
+            mode: any
+  - slug: sylow-theory
+    title: Sylow Theory
+    parent: group-actions-and-counting
+    lede: Sylow is the counting of the previous section applied to the set of p-subgroups.
+      The first theorem says a subgroup of order the full power of p dividing the group
+      order exists; the second says any two are conjugate, so there is really only one
+      up to the action; the third says their number divides the complementary factor
+      and is congruent to one modulo p. The third is the one that does the work on an
+      exam, because those two conditions together usually leave a single possibility,
+      and a unique Sylow subgroup is normal. Frattini's argument and the p-group results
+      are how Sylow feeds back into the structure theory that follows.
+    items:
+      - ref: D-7TQ2M
+      - ref: T-4RADG
+      - ref: T-WRMBM
+      - ref: T-RRK4J
+      - ref: T-EF2MZ
+      - ref: T-3X5FF
+      - ref: ST-DKYXZ
+      - ref: T-S5T5C
+      - ref: FT-ZENUU
+      - ref: L-WROBY
+      - ref: L-6QBOJ
+      - ref: T-4XKGD
+      - ref: D-FIB7S
+      - ref: FD-OR3BW
+      - ref: PR-IGLFV
+      - ref: L-Q44MT
+      - query:
+          kind: problem
+          topics:
+            - Sylow Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - p-Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Sylow Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - p-Groups
+          limit: 500
+          review:
+            mode: any
+  - slug: permutation-groups
+    title: Permutation Groups
+    parent: group-actions-and-counting
+    lede: 'Every group embeds in a symmetric group, so the symmetric groups are where
+      abstract statements get tested. The sign homomorphism is the first invariant:
+      a cycle of even length is an odd permutation, conjugation preserves cycle type,
+      and the conjugacy classes of the symmetric group on n letters are therefore the
+      partitions of n. The alternating groups are simple from degree five onwards, which
+      is the fact that later obstructs solvability by radicals, and the transitive subgroups
+      of the small symmetric groups are the list a Galois group of a polynomial of that
+      degree must come from.'
+    items:
+      - ref: D-6BTFJ
+      - ref: D-BZ3KD
+      - ref: FD-PIVQZ
+      - ref: FD-GHDF2
+      - ref: FF-6MNV6
+      - ref: D-TMME3
+      - ref: FD-X4DBP
+      - ref: PR-JY4PV
+      - ref: D-7UIPO
+      - ref: PR-5PI25
+      - ref: D-T2NZ4
+      - ref: FD-2UWAQ
+      - ref: PR-5FGA7
+      - ref: T-EN5H4
+      - ref: PR-2JG3F
+      - ref: PR-434DX
+      - query:
+          kind: problem
+          topics:
+            - Permutations
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Simple Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Partitions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Permutations
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Simple Groups
+          limit: 500
+          review:
+            mode: any
+  - slug: series-and-solvability
+    title: Series, Solvability, and Nilpotence
+    parent: group-actions-and-counting
+    lede: A composition series breaks a finite group into simple pieces, and Jordan-Holder
+      says the multiset of pieces does not depend on how the breaking was done. Two
+      conditions on the pieces name the two classes that matter. Solvable means the
+      factors are abelian, equivalently that the derived series -- iterate the commutator
+      subgroup -- reaches the identity; nilpotent means the central series does, which
+      is strictly stronger and equivalent for a finite group to every Sylow subgroup
+      being normal. The symmetric groups are solvable exactly up to degree four, which
+      is where the classical formulas for the cubic and the quartic stop.
+    items:
+      - ref: D-KM2DV
+      - ref: D-FYX4I
+      - ref: FD-PLAEO
+      - ref: T-OSJ5S
+      - ref: D-BQ4BQ
+      - ref: D-W2QAA
+      - ref: D-DFIDP
+      - ref: FD-T7IQV
+      - ref: T-QPMGT
+      - ref: PR-2ZOAV
+      - ref: D-5NV3N
+      - ref: D-BGNME
+      - ref: D-D7L4X
+      - ref: D-XEDSI
+      - ref: D-53JVH
+      - ref: T-4INET
+      - ref: T-7PU33
+      - ref: T-GM7EB
+      - ref: T-OHEFT
+      - ref: D-43MDF
+      - query:
+          kind: problem
+          topics:
+            - Subgroup Series
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Solvable Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Nilpotent Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Commutators
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Solvable Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Nilpotent Groups
+          limit: 500
+          review:
+            mode: any
+  - slug: products-and-classification
+    title: Presentations, Products, and Classification
+    parent: sylow-theory
+    lede: 'Classifying the groups of a given order is the exercise that uses everything
+      above. The recognition theorems say when a group is a product: a direct product
+      when both factors are normal and meet trivially, a semidirect product when only
+      one is, and the semidirect products are then counted by homomorphisms into the
+      automorphism group of the normal factor, which for a cyclic group is its unit
+      group. Sylow supplies the normal factor, the fundamental theorem of finite abelian
+      groups supplies the abelian possibilities in both invariant-factor and elementary-divisor
+      form, and a presentation is how the nonabelian answer gets written down.'
+    items:
+      - ref: D-V6UJ7
+      - ref: D-4R2Z5
+      - ref: D-KRKV7
+      - ref: T-SVJUN
+      - ref: FT-7NMQR
+      - ref: T-YNKCZ
+      - ref: T-SB6AV
+      - ref: PR-N6S6P
+      - ref: PR-NESS4
+      - ref: PR-LFGHA
+      - ref: PR-SLWTB
+      - ref: FF-TSZNT
+      - ref: FF-TEGRU
+      - ref: FF-TDXQT
+      - ref: FF-C3SN4
+      - ref: FF-2NPCE
+      - ref: FF-I6XN6
+      - ref: FF-GWCXC
+      - ref: FF-Q6XCL
+      - ref: FF-IRHG3
+      - ref: FF-MBUKG
+      - ref: FF-JKCAM
+      - ref: FF-VAKLJ
+      - query:
+          kind: problem
+          topics:
+            - Group Presentations
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Free Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Direct Products
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Semidirect Products
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Automorphisms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Abelian Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Classification
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Classification
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Abelian Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Automorphisms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Direct Products
+          limit: 500
+          review:
+            mode: any
+  - slug: rings-and-ideals
+    title: Rings and Ideals
+    parent: preliminaries
+    lede: "A ring is a group with a second operation, and an ideal is the subobject
+      the second operation forces: the kernels of ring maps are exactly the ideals,
+      so the isomorphism theorems transfer verbatim. Two kinds of ideal control everything
+      downstream, and both are recognised by their quotients: an ideal is prime exactly
+      when the quotient is a domain, and maximal exactly when the quotient is a field,
+      which makes maximal imply prime and shows the converse fails already in the integers
+      at the zero ideal. Zorn's lemma from the first section is what produces maximal
+      ideals in the first place."
+    items:
+      - ref: D-GURUB
+      - ref: D-GXMDW
+      - ref: PR-PZZUO
+      - ref: D-QQIQZ
+      - ref: D-4I3SL
+      - ref: FD-S62UB
+      - ref: D-QJ3QL
+      - ref: D-7O2CH
+      - ref: D-UI6CU
+      - ref: D-JNCUB
+      - ref: D-O26OY
+      - ref: T-U3EZL
+      - ref: D-EOCCU
+      - ref: D-GOFWL
+      - ref: D-A7MC4
+      - ref: D-D7VK2
+      - ref: PR-ZDWKC
+      - ref: PR-RHQZT
+      - ref: D-5BM46
+      - ref: D-7XH2R
+      - ref: PR-76BDN
+      - ref: D-CXXCG
+      - ref: D-NX4KW
+      - ref: PR-Z3YWJ
+      - ref: PR-GGCEU
+      - ref: PR-LJE4C
+      - ref: PR-DDDXH
+      - ref: FD-SNOTW
+      - ref: T-GYVNQ
+      - query:
+          kind: definition
+          topics:
+            - Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Prime Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Maximal Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Integral Domains
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Characteristic
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: definition
+          topics:
+            - Prime Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: definition
+          topics:
+            - Maximal Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Prime Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Maximal Ideals
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Integral Domains
+          limit: 500
+          review:
+            mode: any
+  - slug: factorization-and-polynomials
+    title: Factorization and Polynomials
+    parent: rings-and-ideals
+    lede: "Unique factorization is not automatic, and the chain fields, Euclidean domains,
+      principal ideal domains, unique factorization domains, integral domains records
+      exactly how much of it survives each weakening. Prime and irreducible are the
+      two notions that come apart: prime always implies irreducible, and the converse
+      holds in a unique factorization domain and fails in the ring of integers adjoined
+      a square root of minus five, which is the standard witness. For polynomials the
+      questions become effective: Gauss's lemma moves irreducibility between the integers
+      and the rationals, Eisenstein certifies it from a single prime, and reduction
+      modulo a prime certifies it by finite computation."
+    items:
+      - ref: D-AVBIP
+      - ref: D-R4H6F
+      - ref: D-TO3IY
+      - ref: D-AWSKI
+      - ref: PR-LX7GH
+      - ref: D-INULL
+      - ref: FD-25SUQ
+      - ref: D-NKRGN
+      - ref: FD-GXXBV
+      - ref: D-HTIL5
+      - ref: PR-LLBRB
+      - ref: PR-GEHJF
+      - ref: PR-ASW5L
+      - ref: FD-CI4NB
+      - ref: FD-24RNF
+      - ref: D-BVMTZ
+      - ref: FD-GHY34
+      - ref: FT-2P5VV
+      - ref: T-CF6S3
+      - ref: D-4VC6X
+      - ref: T-JEZZY
+      - ref: FT-OXN3Y
+      - ref: D-W3DSO
+      - ref: D-FK47C
+      - ref: FF-HK72Z
+      - ref: D-WUGPG
+      - ref: FF-UC7SQ
+      - ref: FF-ED3CD
+      - ref: FF-2AKVH
+      - ref: FF-HAMDC
+      - query:
+          kind: definition
+          topics:
+            - Factorization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Factorization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Principal Ideal Domains
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Euclidean Domains
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Polynomials
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Irreducibility Criteria
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Symmetric Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Polynomials
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: definition
+          topics:
+            - Polynomials
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Factorization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Principal Ideal Domains
+          limit: 500
+          review:
+            mode: any
+  - slug: commutative-algebra
+    title: Commutative Algebra
+    parent: factorization-and-polynomials
+    lede: "Localization inverts a multiplicative set and is how a ring is studied one
+      prime at a time: localizing at a prime produces a local ring, whose single maximal
+      ideal is what makes Nakayama's lemma -- a finitely generated module killed by
+      its maximal ideal is zero -- into the workhorse it is. The nilradical and the
+      Jacobson radical are the two intersections that measure different defects, the
+      first of all primes and the second of all maximal ideals, and they agree for a
+      finitely generated algebra over a field. The Noetherian condition is what keeps
+      all of this finite, and Hilbert's basis theorem is what says polynomial rings
+      inherit it.
 
-    This section is where the guide leans hardest on the flashcard layer: several
-    of these results appear in the corpus only as a stated fact with its geometric
-    reading and no worked problem, which is honest about what the source pages contain.'
-  items:
-  - ref: D-3AYJJ
-  - ref: D-OXIVT
-  - ref: D-TGB4R
-  - ref: D-JSZ77
-  - ref: FF-CQSNC
-  - ref: D-HWLVG
-  - ref: D-VK2KZ
-  - ref: D-TZXBO
-  - ref: FD-GNRTS
-  - ref: T-YYLPH
-  - ref: FF-CSABG
-  - ref: FF-3K36R
-  - ref: FF-ESIOA
-  - ref: D-GIGM2
-  - ref: D-C2IM4
-  - ref: D-JLCOX
-  - ref: D-PQHHJ
-  - ref: FF-U4FHF
-  - ref: D-2IO6Q
-  - ref: FF-7U6UY
-  - ref: FF-QWCKR
-  - ref: D-JGYK4
-  - ref: D-FJ53F
-  - ref: FD-LHLDU
-  - ref: FF-NREXC
-  - ref: FF-45SK3
-  - ref: FF-QILDV
-  - ref: FF-6K35J
-  - ref: FF-X6C7Z
-  - ref: FF-HJGPV
-  - ref: FF-IBDAT
-  - ref: D-DU4UQ
-  - query:
-      kind: problem
-      topics:
-      - Commutative Algebra
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Localization
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Local Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Noetherian Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Nilpotence
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Jacobson Radical
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Primary Decomposition
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Valuation Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Integral Extensions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Geometry
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Nakayama's Lemma
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Local Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Nilpotence
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Noetherian Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Nakayama's Lemma
-      limit: 500
-      review:
-        mode: any
-- slug: modules
-  title: Modules
-  parent: rings-and-ideals
-  lede: 'A module is a vector space over a ring, and dropping the field is exactly
-    what makes the subject interesting: bases need not exist, so free, projective,
-    and torsion-free become three different conditions instead of one. Free implies
-    projective implies torsion-free over a domain, and none of the arrows reverse.
-    Exactness is the language for comparing modules, a short exact sequence splits
-    precisely when the quotient is projective, and the tensor product is the construction
-    that turns bilinear data into linear data and fails to be exact on the left.'
-  items:
-  - ref: D-NQZUY
-  - ref: PR-JBDUI
-  - ref: D-JUYFQ
-  - ref: PR-TAPZF
-  - ref: FD-SK4ON
-  - ref: D-HY7UU
-  - ref: FD-S2W5E
-  - ref: PR-RIJSC
-  - ref: D-LIEMF
-  - ref: D-IGB7I
-  - ref: FD-CVEAI
-  - ref: PR-DLPTR
-  - ref: PR-RPL4Q
-  - ref: D-RHJMK
-  - ref: FD-6XJ7D
-  - ref: D-ZJJ7G
-  - ref: FD-BPUNZ
-  - ref: FD-U6KUJ
-  - ref: FF-CY5EA
-  - ref: PR-4K4XZ
-  - ref: D-BJYH3
-  - ref: D-3JJJN
-  - ref: PR-OODAV
-  - ref: D-B5X33
-  - ref: PR-LPJLD
-  - ref: PR-5PDNQ
-  - ref: PR-KX7L7
-  - ref: D-4KM4P
-  - ref: D-CRWZ7
-  - ref: D-CYAJI
-  - ref: D-4HEUB
-  - ref: FD-2EUYX
-  - ref: FD-BVM37
-  - query:
-      kind: problem
-      topics:
-      - Modules
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Free Modules
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Projective Modules
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Torsion
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Exact Sequences
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Homological Algebra
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Tensor Products
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Modules
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Modules
-      limit: 500
-      review:
-        mode: any
-- slug: structure-theorem
-  title: The Structure Theorem over a PID
-  parent: modules
-  lede: One theorem subsumes two apparently unrelated classifications. A finitely
-    generated module over a principal ideal domain is a free part plus a torsion part,
-    and the torsion part is a sum of cyclic modules recorded either by invariant factors,
-    each dividing the next, or by elementary divisors, the prime powers. Over the
-    integers this is the classification of finitely generated abelian groups. Over
-    the polynomial ring in one variable it is the classification of linear operators,
-    because a vector space with an operator is exactly a module over that ring --
-    which is why the next-to-last section of this guide is about canonical forms.
-  items:
-  - ref: PR-UVUS6
-  - ref: D-SS34F
-  - ref: D-JQNJQ
-  - ref: FD-JTWOB
-  - ref: FD-H764S
-  - ref: PR-TLPVU
-  - ref: L-VDLNM
-  - ref: L-Y5KNM
-  - ref: L-W5S2W
-  - query:
-      kind: problem
-      topics:
-      - Structure Theorem
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Smith Normal Form
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Structure Theorem
-      limit: 500
-      review:
-        mode: any
-- slug: fields-and-extensions
-  title: Fields and Extensions
-  parent: factorization-and-polynomials
-  lede: 'An extension of fields is a vector space over the base, and its degree is
-    multiplicative in towers, which converts questions about roots into arithmetic.
-    An element is algebraic exactly when it generates a finite extension, and the
-    degree of that extension is the degree of its minimal polynomial. Two conditions
-    on an extension then matter separately: normal, meaning every irreducible with
-    one root has all of them, which is the same as being a splitting field; and separable,
-    meaning no minimal polynomial has a repeated root, which the derivative test detects
-    and which is automatic over a perfect field. Finite fields are the case where
-    both hold for free and everything is determined by the order.'
-  items:
-  - ref: FD-J3HIA
-  - ref: FD-3V3ZW
-  - ref: FD-QPNDA
-  - ref: FD-NS5RF
-  - ref: FD-2EVYB
-  - ref: T-NGBVC
-  - ref: PR-ABSJX
-  - ref: PR-ZO73V
-  - ref: D-PUOGJ
-  - ref: D-KGF4K
-  - ref: D-JMATC
-  - ref: FD-LHTRR
-  - ref: D-LZTAK
-  - ref: FD-JJFZ3
-  - ref: PR-TZN4M
-  - ref: D-XD5NG
-  - ref: C-4GQK3
-  - ref: PR-MHOVR
-  - ref: PR-OZYUC
-  - ref: D-ZT46D
-  - ref: D-JGYLA
-  - ref: FD-6WSIA
-  - ref: D-WB4M5
-  - ref: PR-3VQBI
-  - ref: PR-ENHVC
-  - ref: PR-OMKPN
-  - ref: PR-TLBPS
-  - ref: C-C2GYX
-  - ref: D-KQFIV
-  - ref: FD-YYLYR
-  - ref: PR-IK6AM
-  - ref: PR-XB3O7
-  - ref: PR-25FLW
-  - ref: T-3HPWT
-  - ref: PR-YCTNC
-  - ref: PR-KFQJG
-  - ref: PR-32R3E
-  - ref: T-QBQLM
-  - ref: PR-Q2IFX
-  - ref: PR-ADLQN
-  - ref: PR-DEG36
-  - ref: PR-3X3TO
-  - ref: PR-F2N4L
-  - ref: D-BLV6F
-  - ref: FD-HM4P2
-  - ref: PR-DCK6S
-  - ref: D-IPR4B
-  - ref: PR-JLDJ6
-  - ref: FF-MUJDE
-  - ref: FF-UACKH
-  - query:
-      kind: definition
-      topics:
-      - Field Extensions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Field Extensions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Splitting Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Separability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Finite Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Roots of Unity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Transcendence
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Field Extensions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: definition
-      topics:
-      - Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Finite Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Separability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Fields
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Finite Fields
-      limit: 500
-      review:
-        mode: any
-- slug: galois-theory
-  title: Galois Theory
-  parent: fields-and-extensions
-  lede: 'Galois means normal and separable, equivalently that the fixed field of the
-    automorphism group is exactly the base, equivalently that the number of automorphisms
-    equals the degree. The correspondence is then an inclusion-reversing bijection
-    between intermediate fields and subgroups of the Galois group, under which degrees
-    over the base become indices, and an intermediate field is normal over the base
-    exactly when its subgroup is normal, with quotient the Galois group of the smaller
-    extension. Everything computational follows: the Galois group of a polynomial
-    is a transitive subgroup of the symmetric group on its roots, the discriminant
-    decides whether it lands in the alternating group, and the resolvent decides the
-    quartic.'
-  items:
-  - ref: D-5JYEI
-  - ref: FD-4GFTY
-  - ref: FT-3WWKN
-  - ref: D-5FG7E
-  - ref: D-MN47W
-  - ref: FD-YJEDU
-  - ref: T-SGY3O
-  - ref: PR-ZCKLJ
-  - ref: FT-GJ6NR
-  - ref: T-NLPZY
-  - ref: PR-QDRB4
-  - ref: PR-3TYBE
-  - ref: PR-FM5FN
-  - ref: PR-LXSGE
-  - ref: T-AILFB
-  - ref: PR-XPDHE
-  - ref: D-4DWC5
-  - ref: PR-E4T3S
-  - ref: PR-OFBRQ
-  - ref: C-BOM4E
-  - ref: PR-PB6UE
-  - ref: PR-XDWOP
-  - ref: T-QX5QU
-  - query:
-      kind: definition
-      topics:
-      - Galois Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Galois Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Galois Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Galois Theory
-      limit: 500
-      review:
-        mode: any
-- slug: linear-algebra
-  title: Linear Algebra
-  parent: modules
-  lede: 'Linear algebra returns here as the case of module theory where the ring is
-    a field, so bases exist, rank and nullity add to the dimension, and every short
-    exact sequence splits. What is left is the geometry a form puts on the space.
-    A bilinear form is recorded by its Gram matrix, nondegeneracy is invertibility
-    of that matrix, and a symmetric form in characteristic other than two is the same
-    data as a quadratic form; over the reals the spectral theorem diagonalises it
-    orthogonally and Sylvester''s law says the signature is the only invariant. The
-    matrix groups are the stabilizers of these forms, and counting their elements
-    over a finite field is the standard application of choosing an ordered basis one
-    vector at a time.
+      This section is where the guide leans hardest on the flashcard layer: several
+      of these results appear in the corpus only as a stated fact with its geometric
+      reading and no worked problem, which is honest about what the source pages contain."
+    items:
+      - ref: D-3AYJJ
+      - ref: D-OXIVT
+      - ref: D-TGB4R
+      - ref: D-JSZ77
+      - ref: FF-CQSNC
+      - ref: D-HWLVG
+      - ref: D-VK2KZ
+      - ref: D-TZXBO
+      - ref: FD-GNRTS
+      - ref: T-YYLPH
+      - ref: FF-CSABG
+      - ref: FF-3K36R
+      - ref: FF-ESIOA
+      - ref: D-GIGM2
+      - ref: D-C2IM4
+      - ref: D-JLCOX
+      - ref: D-PQHHJ
+      - ref: FF-U4FHF
+      - ref: D-2IO6Q
+      - ref: FF-7U6UY
+      - ref: FF-QWCKR
+      - ref: D-JGYK4
+      - ref: D-FJ53F
+      - ref: FD-LHLDU
+      - ref: FF-NREXC
+      - ref: FF-45SK3
+      - ref: FF-QILDV
+      - ref: FF-6K35J
+      - ref: FF-X6C7Z
+      - ref: FF-HJGPV
+      - ref: FF-IBDAT
+      - ref: D-DU4UQ
+      - query:
+          kind: problem
+          topics:
+            - Commutative Algebra
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Localization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Local Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Noetherian Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Nilpotence
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Jacobson Radical
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Primary Decomposition
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Valuation Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Integral Extensions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Geometry
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Nakayama's Lemma
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Local Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Nilpotence
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Noetherian Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Nakayama's Lemma
+          limit: 500
+          review:
+            mode: any
+  - slug: modules
+    title: Modules
+    parent: rings-and-ideals
+    lede: 'A module is a vector space over a ring, and dropping the field is exactly
+      what makes the subject interesting: bases need not exist, so free, projective,
+      and torsion-free become three different conditions instead of one. Free implies
+      projective implies torsion-free over a domain, and none of the arrows reverse.
+      Exactness is the language for comparing modules, a short exact sequence splits
+      precisely when the quotient is projective, and the tensor product is the construction
+      that turns bilinear data into linear data and fails to be exact on the left.'
+    items:
+      - ref: D-NQZUY
+      - ref: PR-JBDUI
+      - ref: D-JUYFQ
+      - ref: PR-TAPZF
+      - ref: FD-SK4ON
+      - ref: D-HY7UU
+      - ref: FD-S2W5E
+      - ref: PR-RIJSC
+      - ref: D-LIEMF
+      - ref: D-IGB7I
+      - ref: FD-CVEAI
+      - ref: PR-DLPTR
+      - ref: PR-RPL4Q
+      - ref: D-RHJMK
+      - ref: FD-6XJ7D
+      - ref: D-ZJJ7G
+      - ref: FD-BPUNZ
+      - ref: FD-U6KUJ
+      - ref: FF-CY5EA
+      - ref: PR-4K4XZ
+      - ref: D-BJYH3
+      - ref: D-3JJJN
+      - ref: PR-OODAV
+      - ref: D-B5X33
+      - ref: PR-LPJLD
+      - ref: PR-5PDNQ
+      - ref: PR-KX7L7
+      - ref: D-4KM4P
+      - ref: D-CRWZ7
+      - ref: D-CYAJI
+      - ref: D-4HEUB
+      - ref: FD-2EUYX
+      - ref: FD-BVM37
+      - query:
+          kind: problem
+          topics:
+            - Modules
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Free Modules
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Projective Modules
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Torsion
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Exact Sequences
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Homological Algebra
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Tensor Products
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Modules
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Modules
+          limit: 500
+          review:
+            mode: any
+  - slug: structure-theorem
+    title: The Structure Theorem over a PID
+    parent: modules
+    lede: One theorem subsumes two apparently unrelated classifications. A finitely
+      generated module over a principal ideal domain is a free part plus a torsion part,
+      and the torsion part is a sum of cyclic modules recorded either by invariant factors,
+      each dividing the next, or by elementary divisors, the prime powers. Over the
+      integers this is the classification of finitely generated abelian groups. Over
+      the polynomial ring in one variable it is the classification of linear operators,
+      because a vector space with an operator is exactly a module over that ring --
+      which is why the next-to-last section of this guide is about canonical forms.
+    items:
+      - ref: PR-UVUS6
+      - ref: D-SS34F
+      - ref: D-JQNJQ
+      - ref: FD-JTWOB
+      - ref: FD-H764S
+      - ref: PR-TLPVU
+      - ref: L-VDLNM
+      - ref: L-Y5KNM
+      - ref: L-W5S2W
+      - query:
+          kind: problem
+          topics:
+            - Structure Theorem
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Smith Normal Form
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Structure Theorem
+          limit: 500
+          review:
+            mode: any
+  - slug: fields-and-extensions
+    title: Fields and Extensions
+    parent: factorization-and-polynomials
+    lede: 'An extension of fields is a vector space over the base, and its degree is
+      multiplicative in towers, which converts questions about roots into arithmetic.
+      An element is algebraic exactly when it generates a finite extension, and the
+      degree of that extension is the degree of its minimal polynomial. Two conditions
+      on an extension then matter separately: normal, meaning every irreducible with
+      one root has all of them, which is the same as being a splitting field; and separable,
+      meaning no minimal polynomial has a repeated root, which the derivative test detects
+      and which is automatic over a perfect field. Finite fields are the case where
+      both hold for free and everything is determined by the order.'
+    items:
+      - ref: FD-J3HIA
+      - ref: FD-3V3ZW
+      - ref: FD-QPNDA
+      - ref: FD-NS5RF
+      - ref: FD-2EVYB
+      - ref: T-NGBVC
+      - ref: PR-ABSJX
+      - ref: PR-ZO73V
+      - ref: D-PUOGJ
+      - ref: D-KGF4K
+      - ref: D-JMATC
+      - ref: FD-LHTRR
+      - ref: D-LZTAK
+      - ref: FD-JJFZ3
+      - ref: PR-TZN4M
+      - ref: D-XD5NG
+      - ref: C-4GQK3
+      - ref: PR-MHOVR
+      - ref: PR-OZYUC
+      - ref: D-ZT46D
+      - ref: D-JGYLA
+      - ref: FD-6WSIA
+      - ref: D-WB4M5
+      - ref: PR-3VQBI
+      - ref: PR-ENHVC
+      - ref: PR-OMKPN
+      - ref: PR-TLBPS
+      - ref: C-C2GYX
+      - ref: D-KQFIV
+      - ref: FD-YYLYR
+      - ref: PR-IK6AM
+      - ref: PR-XB3O7
+      - ref: PR-25FLW
+      - ref: T-3HPWT
+      - ref: PR-YCTNC
+      - ref: PR-KFQJG
+      - ref: PR-32R3E
+      - ref: T-QBQLM
+      - ref: PR-Q2IFX
+      - ref: PR-ADLQN
+      - ref: PR-DEG36
+      - ref: PR-3X3TO
+      - ref: PR-F2N4L
+      - ref: D-BLV6F
+      - ref: FD-HM4P2
+      - ref: PR-DCK6S
+      - ref: D-IPR4B
+      - ref: PR-JLDJ6
+      - ref: FF-MUJDE
+      - ref: FF-UACKH
+      - query:
+          kind: definition
+          topics:
+            - Field Extensions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Field Extensions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Splitting Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Separability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Finite Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Roots of Unity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Transcendence
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Field Extensions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: definition
+          topics:
+            - Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Finite Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Separability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Fields
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Finite Fields
+          limit: 500
+          review:
+            mode: any
+  - slug: galois-theory
+    title: Galois Theory
+    parent: fields-and-extensions
+    lede: 'Galois means normal and separable, equivalently that the fixed field of the
+      automorphism group is exactly the base, equivalently that the number of automorphisms
+      equals the degree. The correspondence is then an inclusion-reversing bijection
+      between intermediate fields and subgroups of the Galois group, under which degrees
+      over the base become indices, and an intermediate field is normal over the base
+      exactly when its subgroup is normal, with quotient the Galois group of the smaller
+      extension. Everything computational follows: the Galois group of a polynomial
+      is a transitive subgroup of the symmetric group on its roots, the discriminant
+      decides whether it lands in the alternating group, and the resolvent decides the
+      quartic.'
+    items:
+      - ref: D-5JYEI
+      - ref: FD-4GFTY
+      - ref: FT-3WWKN
+      - ref: D-5FG7E
+      - ref: D-MN47W
+      - ref: FD-YJEDU
+      - ref: T-SGY3O
+      - ref: PR-ZCKLJ
+      - ref: FT-GJ6NR
+      - ref: T-NLPZY
+      - ref: PR-QDRB4
+      - ref: PR-3TYBE
+      - ref: PR-FM5FN
+      - ref: PR-LXSGE
+      - ref: T-AILFB
+      - ref: PR-XPDHE
+      - ref: D-4DWC5
+      - ref: PR-E4T3S
+      - ref: PR-OFBRQ
+      - ref: C-BOM4E
+      - ref: PR-PB6UE
+      - ref: PR-XDWOP
+      - ref: T-QX5QU
+      - query:
+          kind: definition
+          topics:
+            - Galois Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Galois Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Galois Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Galois Theory
+          limit: 500
+          review:
+            mode: any
+  - slug: linear-algebra
+    title: Linear Algebra
+    parent: modules
+    lede: "Linear algebra returns here as the case of module theory where the ring is
+      a field, so bases exist, rank and nullity add to the dimension, and every short
+      exact sequence splits. What is left is the geometry a form puts on the space.
+      A bilinear form is recorded by its Gram matrix, nondegeneracy is invertibility
+      of that matrix, and a symmetric form in characteristic other than two is the same
+      data as a quadratic form; over the reals the spectral theorem diagonalises it
+      orthogonally and Sylvester's law says the signature is the only invariant. The
+      matrix groups are the stabilizers of these forms, and counting their elements
+      over a finite field is the standard application of choosing an ordered basis one
+      vector at a time.
 
-    The three operator-theory questions at the end of this section reach past finite
-    dimensions -- Toeplitz operators, polar decomposition, and the spectral theorem
-    on a Hilbert space -- because the oral exams asked them; they are collected here
-    rather than dropped.'
-  items:
-  - ref: D-J5AAX
-  - ref: D-J5AAX
-  - ref: D-P5D3T
-  - ref: D-P5D3T
-  - ref: D-3ZPR7
-  - ref: D-3ZPR7
-  - ref: D-GY7ZN
-  - ref: D-QZ2LQ
-  - ref: D-QZ2LQ
-  - ref: D-MCUTE
-  - ref: D-MCUTE
-  - ref: D-3V3SP
-  - ref: D-3V3SP
-  - ref: PR-OYP6J
-  - ref: PR-UQ3XJ
-  - ref: PR-GXII2
-  - ref: PR-TGFTL
-  - ref: D-O4WWN
-  - ref: D-5BR4D
-  - ref: D-H4TDM
-  - ref: D-RG5FO
-  - ref: PR-WDPF7
-  - ref: D-NRRIT
-  - ref: D-SSGKC
-  - ref: D-BSUV4
-  - ref: T-WQHMA
-  - ref: FD-K6FVX
-  - ref: T-6ABNR
-  - ref: FT-BC6S2
-  - ref: PR-GV5CF
-  - ref: L-C5DDK
-  - ref: D-B4VTH
-  - ref: PR-24CPI
-  - ref: D-HGMOW
-  - ref: D-23FX7
-  - ref: FF-VKYM3
-  - query:
-      kind: problem
-      topics:
-      - Linear Algebra
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Vector Spaces
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Bases
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Matrices
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Matrix Groups
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Determinants
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Trace
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Rank and Nullity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Dual Spaces
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Eigenvalues and Eigenvectors
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Diagonalization
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Inner Product Spaces
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Bilinear Forms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Quadratic Forms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Functional Analysis
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Matrices
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Dual Spaces
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Matrices
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Diagonalization
-      limit: 500
-      review:
-        mode: any
-- slug: canonical-forms
-  title: Canonical Forms
-  parent: structure-theorem
-  lede: 'This is the structure theorem over a principal ideal domain, read for the
-    polynomial ring in one variable. A linear operator makes its space a module over
-    that ring; the invariant factors give the rational canonical form, a block diagonal
-    of companion matrices, which exists over any field; the elementary divisors give
-    the Jordan form, which needs the characteristic polynomial to split. The dictionary
-    is worth memorising in one direction: the exponent in the minimal polynomial is
-    the size of the largest block for that eigenvalue, the exponent in the characteristic
-    polynomial is the total size of all of them, and the dimension of the eigenspace
-    is how many there are. An operator is diagonalisable exactly when its minimal
-    polynomial is a product of distinct linear factors, which is the separability
-    condition of the Galois sections said about a matrix.'
-  items:
-  - ref: D-GK5SF
-  - ref: D-QFYAC
-  - ref: FD-GOB47
-  - ref: T-SJCF7
-  - ref: PR-UFVPY
-  - ref: PR-EDD7U
-  - ref: PR-EDD7U
-  - ref: D-JIGMN
-  - ref: D-JRPTK
-  - ref: D-HJR7M
-  - ref: D-HJR7M
-  - ref: FD-XT6HD
-  - ref: PR-TI6YA
-  - ref: PR-4GQIZ
-  - ref: PR-GBL6P
-  - ref: PR-OF7ZW
-  - ref: L-CD6QT
-  - ref: PR-5A2W4
-  - ref: PR-5A2W4
-  - ref: PR-K6MMW
-  - ref: PR-K6MMW
-  - query:
-      kind: problem
-      topics:
-      - Canonical Forms
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Minimal and Characteristic Polynomials
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Jordan Canonical Form
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Rational Canonical Form
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Jordan Canonical Form
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Minimal and Characteristic Polynomials
-      limit: 500
-      review:
-        mode: any
-- slug: semisimplicity-and-representations
-  title: Semisimplicity and Representations
-  parent: modules
-  lede: 'A representation is a module over the group algebra, which puts the last
-    two sections to work on groups. Maschke says that when the characteristic does
-    not divide the order of the group the group algebra is semisimple, so every representation
-    splits into irreducibles; Artin-Wedderburn then says a semisimple ring is a finite
-    product of matrix rings over division rings, which is why the irreducibles are
-    finite in number and their dimensions square-sum to the order of the group. Schur''s
-    lemma is the local statement that makes the character theory work, and characters
-    are class functions, so the character table is square: as many irreducibles as
-    conjugacy classes.'
-  items:
-  - ref: T-ZOTWN
-  - ref: T-PIO2B
-  - ref: T-YHH3M
-  - ref: D-CTAKB
-  - query:
-      kind: definition
-      topics:
-      - Semisimplicity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Semisimplicity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Algebras
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Group Rings
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Representation Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Character Theory
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics: []
-      limit: 1500
-      review:
-        mode: any
+      The three operator-theory questions at the end of this section reach past finite
+      dimensions -- Toeplitz operators, polar decomposition, and the spectral theorem
+      on a Hilbert space -- because the oral exams asked them; they are collected here
+      rather than dropped."
+    items:
+      - ref: D-J5AAX
+      - ref: D-J5AAX
+      - ref: D-P5D3T
+      - ref: D-P5D3T
+      - ref: D-3ZPR7
+      - ref: D-3ZPR7
+      - ref: D-GY7ZN
+      - ref: D-QZ2LQ
+      - ref: D-QZ2LQ
+      - ref: D-MCUTE
+      - ref: D-MCUTE
+      - ref: D-3V3SP
+      - ref: D-3V3SP
+      - ref: PR-OYP6J
+      - ref: PR-UQ3XJ
+      - ref: PR-GXII2
+      - ref: PR-TGFTL
+      - ref: D-O4WWN
+      - ref: D-5BR4D
+      - ref: D-H4TDM
+      - ref: D-RG5FO
+      - ref: PR-WDPF7
+      - ref: D-NRRIT
+      - ref: D-SSGKC
+      - ref: D-BSUV4
+      - ref: T-WQHMA
+      - ref: FD-K6FVX
+      - ref: T-6ABNR
+      - ref: FT-BC6S2
+      - ref: PR-GV5CF
+      - ref: L-C5DDK
+      - ref: D-B4VTH
+      - ref: PR-24CPI
+      - ref: D-HGMOW
+      - ref: D-23FX7
+      - ref: FF-VKYM3
+      - query:
+          kind: problem
+          topics:
+            - Linear Algebra
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Vector Spaces
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Bases
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Matrices
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Matrix Groups
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Determinants
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Trace
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Rank and Nullity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Dual Spaces
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Eigenvalues and Eigenvectors
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Diagonalization
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Inner Product Spaces
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Bilinear Forms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Quadratic Forms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Functional Analysis
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Matrices
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Dual Spaces
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Matrices
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Diagonalization
+          limit: 500
+          review:
+            mode: any
+  - slug: canonical-forms
+    title: Canonical Forms
+    parent: structure-theorem
+    lede: 'This is the structure theorem over a principal ideal domain, read for the
+      polynomial ring in one variable. A linear operator makes its space a module over
+      that ring; the invariant factors give the rational canonical form, a block diagonal
+      of companion matrices, which exists over any field; the elementary divisors give
+      the Jordan form, which needs the characteristic polynomial to split. The dictionary
+      is worth memorising in one direction: the exponent in the minimal polynomial is
+      the size of the largest block for that eigenvalue, the exponent in the characteristic
+      polynomial is the total size of all of them, and the dimension of the eigenspace
+      is how many there are. An operator is diagonalisable exactly when its minimal
+      polynomial is a product of distinct linear factors, which is the separability
+      condition of the Galois sections said about a matrix.'
+    items:
+      - ref: D-GK5SF
+      - ref: D-QFYAC
+      - ref: FD-GOB47
+      - ref: T-SJCF7
+      - ref: PR-UFVPY
+      - ref: PR-EDD7U
+      - ref: PR-EDD7U
+      - ref: D-JIGMN
+      - ref: D-JRPTK
+      - ref: D-HJR7M
+      - ref: D-HJR7M
+      - ref: FD-XT6HD
+      - ref: PR-TI6YA
+      - ref: PR-4GQIZ
+      - ref: PR-GBL6P
+      - ref: PR-OF7ZW
+      - ref: L-CD6QT
+      - ref: PR-5A2W4
+      - ref: PR-5A2W4
+      - ref: PR-K6MMW
+      - ref: PR-K6MMW
+      - query:
+          kind: problem
+          topics:
+            - Canonical Forms
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Minimal and Characteristic Polynomials
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Jordan Canonical Form
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Rational Canonical Form
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Jordan Canonical Form
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Minimal and Characteristic Polynomials
+          limit: 500
+          review:
+            mode: any
+  - slug: semisimplicity-and-representations
+    title: Semisimplicity and Representations
+    parent: modules
+    lede: "A representation is a module over the group algebra, which puts the last
+      two sections to work on groups. Maschke says that when the characteristic does
+      not divide the order of the group the group algebra is semisimple, so every representation
+      splits into irreducibles; Artin-Wedderburn then says a semisimple ring is a finite
+      product of matrix rings over division rings, which is why the irreducibles are
+      finite in number and their dimensions square-sum to the order of the group. Schur's
+      lemma is the local statement that makes the character theory work, and characters
+      are class functions, so the character table is square: as many irreducibles as
+      conjugacy classes."
+    items:
+      - ref: T-ZOTWN
+      - ref: T-PIO2B
+      - ref: T-YHH3M
+      - ref: D-CTAKB
+      - query:
+          kind: definition
+          topics:
+            - Semisimplicity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Semisimplicity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Algebras
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Group Rings
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Representation Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Character Theory
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics: []
+          limit: 1500
+          review:
+            mode: any

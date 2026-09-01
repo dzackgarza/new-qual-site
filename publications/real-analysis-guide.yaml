@@ -4,1304 +4,1304 @@ kind: study-guide
 title: Real Analysis
 lede: 'The qualifying exam syllabus in real analysis: metric topology, sequences, continuity, differentiation, Riemann-Stieltjes integration, Lebesgue measure, convergence theorems, $L^p$ spaces and duality, and Fourier analysis.'
 sections:
-- slug: sequences-and-series-of-numbers
-  title: Sequences and Series of Numbers
-  parent: GUIDE-REAL-ANALYSIS
-  lede: 'Everything later is a limit of something, so the path starts where limits
-    are only about numbers. The limit superior and inferior always exist in the extended
-    reals, which is what lets an argument name a limit before proving it exists. For
-    series the subject is really a subject about the tails: convergence forces the
-    terms to zero and the tails to vanish, the comparison, root, ratio, and condensation
-    tests all decide convergence by bounding one tail against another, and the $p$-test
-    fixes the scale against which those comparisons are made.'
-  items:
-  - ref: D-HOKQD
-  - ref: PR-IGVTV
-  - ref: PR-6C3GQ
-  - ref: PR-P6NHI
-  - ref: PR-4EVYE
-  - ref: PR-6OHTJ
-  - ref: PR-OPSAC
-  - query:
-      kind: definition
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: lemma
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Sequences of Numbers
-      - Series of Numbers
-      - Limits
-      - Convergence of Numbers
-      - Convergence Tests
-      - Bernoulli
-      - Countability
-      limit: 500
-      review:
-        mode: any
-- slug: metric-spaces
-  title: Metric Spaces, Compactness and Completeness
-  parent: sequences-and-series-of-numbers
-  lede: 'A metric is the least structure under which the previous section''s arguments
-    still run, and the point of the abstraction is that two different-looking hypotheses
-    become the same one. Compactness has three faces here -- open covers, sequential
-    compactness, and complete plus totally bounded -- and they agree in a metric space,
-    which is why an exam problem may hand you any of the three. Heine-Borel says which
-    subsets of $\mathbb R^n$ qualify, and the counterexamples say why the theorem
-    needs $\mathbb R^n$: closed and bounded is not enough in $\mathbb Q$ or in $C([0,1])$.
-    Completeness is the hypothesis Baire needs, and Baire is what makes the nowhere
-    dense sets and the Cantor set into tools rather than curiosities.'
-  items:
-  - ref: D-TVKFM
-  - ref: D-G5N6I
-  - ref: T-QPTHZ
-  - ref: PR-25GM2
-  - ref: T-YOZX6
-  - ref: FD-BA2WU
-  - ref: D-2MJRE
-  - ref: T-7FJFK
-  - query:
-      kind: definition
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Metric Spaces
-      - Compactness
-      - Completeness
-      - Closure
-      - Connectedness
-      - Euclidean Spaces
-      - Cantor Set
-      - Density
-      limit: 500
-      review:
-        mode: any
-- slug: continuity
-  title: Continuity
-  parent: metric-spaces
-  lede: 'Start from the four equivalent readings of continuity, because each later
-    argument picks the one it needs: the sequential form for limits, the preimage
-    form for topological arguments, and the epsilon-delta form for estimates. Compactness
-    is what upgrades continuity into the two facts the rest of the path depends on:
-    attained extrema and uniform continuity. The distinction between continuity and
-    uniform continuity is where the exam problems live, so the section carries the
-    standard witnesses that the two differ on a non-compact domain.'
-  items:
-  - ref: D-HHVPT
-  - ref: T-RA-WORKSHOP-D4-3-1
-  - ref: T-RA-WORKSHOP-D4-3-2
-  - ref: T-RA-WORKSHOP-D4-3-3
-  - ref: T-RA-WORKSHOP-D4-3-4
-  - ref: T-RA-WORKSHOP-D4-3-5
-  - ref: T-O4UD3
-  - query:
-      kind: definition
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: lemma
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Continuity
-      - Uniform Continuity
-      - Fixed Points
-      limit: 500
-      review:
-        mode: any
-- slug: differentiation
-  title: Differentiation
-  parent: continuity
-  lede: Differentiation is where attained extrema become a computational tool. Fermat
-    turns an interior extremum into a vanishing derivative, the Mean Value Theorem
-    turns that into control of the function across an interval, and Taylor's theorem
-    makes the control quantitative by naming the remainder. Almost every exam problem
-    in this section is the Mean Value Theorem applied once and then estimated. Bounded
-    variation appears here because it is the class on which a derivative can still
-    be integrated back, which is what the next two sections need.
-  items:
-  - ref: T-RA-WORKSHOP-D5-4-1
-  - ref: T-RA-WORKSHOP-D5-4-2
-  - ref: T-OXNTU
-  - ref: T-RA-WORKSHOP-D5-4-3
-  - ref: T-2R7PC
-  - ref: PR-LTRLV
-  - query:
-      kind: theorem
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Differentiation
-      - Mean Value Theorem
-      - Variation
-      - Calculus
-      limit: 500
-      review:
-        mode: any
-- slug: riemann-stieltjes-integration
-  title: Riemann-Stieltjes Integration
-  parent: differentiation
-  lede: The Stieltjes integral is stated against a general integrator, so the criterion
-    for integrability is a statement about upper and lower sums rather than about
-    the integrand alone. Integration by parts and the reduction to a Riemann integral
-    are the two tools that make it computable; the fundamental theorem and the integral
-    mean value theorem then connect it back to the derivative. Lebesgue's criterion
-    closes the section by naming exactly which bounded functions are Riemann integrable,
-    which is the sentence the measure-theoretic half of the guide is built to prove.
-  items:
-  - ref: T-RA-WORKSHOP-D6-5-1
-  - ref: T-RA-WORKSHOP-D6-5-2
-  - ref: T-RA-WORKSHOP-D6-5-3
-  - ref: T-RA-WORKSHOP-D6-5-4
-  - ref: T-RA-WORKSHOP-D6-5-5
-  - ref: PR-TDH2A
-  - query:
-      kind: theorem
-      topics:
-      - Riemann Integrability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Riemann Integrability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Riemann Integrability
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Riemann Integrability
-      limit: 500
-      review:
-        mode: any
-- slug: sequences-and-series-of-functions
-  title: Sequences and Series of Functions
-  parent: riemann-stieltjes-integration
-  lede: 'Every property established so far is a property of one function, and the
-    question here is which of them a limit inherits. Separating pointwise from uniform
-    convergence is what makes that question answerable. Uniform convergence preserves
-    continuity and commutes with the integral, differentiability needs the stronger
-    hypothesis on the derivatives, and the Weierstrass M-test is how uniform convergence
-    is usually established in practice. Arzela-Ascoli and Stone-Weierstrass close
-    the section from opposite directions, one saying which families are compact and
-    the other which are dense. The counterexample cards are load-bearing here: the
-    four standard modes of convergence are pairwise incomparable, and each failure
-    has a standard witness.'
-  items:
-  - ref: D-RA-WORKSHOP-D7-CONVERGENCE
-  - ref: T-RA-WORKSHOP-D7-6-1
-  - ref: T-ERNLN
-  - ref: T-RA-WORKSHOP-D7-6-2
-  - ref: PR-O2XFF
-  - ref: T-RA-WORKSHOP-D7-6-3
-  - ref: T-RA-WORKSHOP-D7-6-4
-  - ref: T-DS4VW
-  - ref: D-2CCDB
-  - ref: T-RA-WORKSHOP-D7-6-5
-  - ref: FT-JQSOK
-  - ref: T-RA-WORKSHOP-D7-6-7
-  - ref: T-3QNBQ
-  - query:
-      kind: definition
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: corollary
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: lemma
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: strategy
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Uniform Convergence
-      - Convergence of Functions
-      - Sequences of Functions
-      - Series of Functions
-      - Equicontinuity
-      - Arzelà-Ascoli
-      - Stone-Weierstrass
-      - Polynomials
-      - Trigonometry
-      - Roots of Unity
-      - Counterexamples
-      limit: 500
-      review:
-        mode: any
-- slug: measure-and-measurable-functions
-  title: Measure and Measurable Functions
-  parent: GUIDE-REAL-ANALYSIS
-  lede: 'This section opens the second half of the guide and depends on the whole
-    of the first: it exists because the Riemann integral of the fifth section fails
-    on the limits of the sixth. That dependence is stated here rather than in the
-    study-path tree, which indents by depth and becomes unreadable past about seven
-    levels. The repair is to replace the partition of the domain by a measure on it.
-    Outer measure is defined for every set and is only countably subadditive; the
-    Caratheodory condition selects the subfamily on which it is additive, and that
-    family is the one closed under the countable operations every later argument performs.
-    Measurability of a set is then equivalent to approximation by an open, closed,
-    or compact set, which is the form actually used in proofs. A measurable function
-    is one whose sublevel sets are measurable, a condition preserved by sups, infs,
-    and pointwise limits -- exactly the failure the Riemann theory had. Egorov and
-    Lusin bound how far measurable behaviour is from uniform and continuous behaviour,
-    and Borel-Cantelli converts a convergent sum of measures into an almost-everywhere
-    statement.'
-  items:
-  - ref: D-3XE77
-  - ref: D-MDJII
-  - ref: T-IIKSW
-  - ref: T-KZNWM
-  - ref: PR-KKJ6O
-  - ref: D-DHFN4
-  - ref: D-553MO
-  - ref: T-OTR5M
-  - ref: T-XZE3E
-  - ref: T-CGFCU
-  - query:
-      kind: definition
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: strategy
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Measure Theory
-      - Borel-Cantelli
-      - Egorov
-      - Continuity of Measure
-      - Absolute Continuity
-      - Radon-Nikodym
-      limit: 500
-      review:
-        mode: any
-- slug: the-lebesgue-integral
-  title: The Lebesgue Integral
-  parent: measure-and-measurable-functions
-  lede: 'The integral is defined by supremum over simple functions below the integrand,
-    so monotone convergence is nearly a restatement of the definition, and Fatou and
-    dominated convergence follow from it. These three are the section''s whole content:
-    essentially every exam problem asking for a limit of integrals is an application
-    of one of them, and the counterexamples show what happens when the dominating
-    hypothesis is dropped. Fubini and Tonelli exchange the order of a double integral
-    under integrability and non-negativity respectively, and the distinction between
-    those hypotheses is itself examined. Chebyshev''s inequality and the vanishing
-    of small tails are the two estimates that make the rest quantitative.'
-  items:
-  - ref: D-BF5L2
-  - ref: D-R4VKE
-  - ref: T-5K3IO
-  - ref: T-LDJNS
-  - ref: T-IJQQG
-  - ref: PR-YO7MV
-  - ref: T-RIY2P
-  - ref: T-6PRW3
-  - ref: T-4GPEF
-  - ref: T-X7XZX
-  - query:
-      kind: definition
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: strategy
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Integrals
-      - Convergence of Integrals
-      - Fatou
-      - Fubini-Tonelli
-      - Small Tails
-      - Maximal Functions
-      limit: 500
-      review:
-        mode: any
-- slug: lp-spaces
-  title: Lp Spaces and Convolution
-  parent: the-lebesgue-integral
-  lede: 'Holder and Minkowski make $\|\cdot\|_p$ a norm and the Riesz-Fischer theorem
-    makes it complete, so the integral has finally produced a Banach space. Which
-    $L^p$ contains which depends on whether the measure is finite, and the $p$-test
-    decides the model cases. The essential supremum is the right endpoint at $p=\infty$,
-    and the limit of $\|f\|_p$ recovers it. Convolution is the multiplication these
-    spaces carry: Young''s inequality says which exponents it lands in, and an approximate
-    identity is a family of convolvers converging to the identity that $L^1$ itself
-    does not contain. Continuity of translation in $L^p$ is the lemma underneath most
-    of these proofs.'
-  items:
-  - ref: D-3PVRB
-  - ref: D-MFDEJ
-  - ref: PR-7BGSE
-  - ref: PR-XUVZY
-  - ref: PR-L35O7
-  - ref: FT-GQRV2
-  - ref: T-BFOJT
-  - ref: D-TS42Y
-  - ref: PR-2C3SZ
-  - ref: D-ARQFC
-  - ref: T-HHFGB
-  - query:
-      kind: definition
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: example
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proof
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Lp Spaces
-      - L¹
-      - L²
-      - L∞
-      - Norms
-      - Function Spaces
-      - Convolution
-      - Approximations to the Identity
-      limit: 500
-      review:
-        mode: any
-- slug: hilbert-spaces-and-duality
-  title: Hilbert Spaces and Duality
-  parent: lp-spaces
-  lede: '$L^2$ is the one $L^p$ whose norm comes from an inner product, and that single
-    fact supplies orthogonal projection, Bessel''s inequality, and the identification
-    of the space with $\ell^2$ through any complete orthonormal set. Riesz representation
-    makes the dual of a Hilbert space the space itself, and for $L^p$ with $p$ finite
-    it makes the dual $L^q$; the failure at $p=\infty$ is worth knowing precisely.
-    The four standard theorems of Banach space theory -- Hahn-Banach, uniform boundedness,
-    open mapping, closed graph -- are collected here because the exam problems that
-    use them state their hypotheses in $L^p$ or $\ell^p$ terms. Weak convergence appears
-    last: the unit ball is not norm-compact in infinite dimensions, and weak convergence
-    is what replaces the missing subsequence.'
-  items:
-  - ref: D-7QQUO
-  - ref: D-4IXAO
-  - ref: T-4BDE3
-  - ref: D-SLYE5
-  - ref: T-5AALA
-  - ref: T-J3AN3
-  - ref: D-EPSKF
-  - ref: T-5IWCG
-  - ref: D-T4LOC
-  - ref: D-PQIQO
-  - ref: T-LDCZB
-  - ref: T-5BFVS
-  - ref: T-OW2QG
-  - ref: T-F2THV
-  - ref: T-KQTPR
-  - ref: T-TTLXS
-  - query:
-      kind: definition
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: fact
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Hilbert Spaces
-      - Inner Product Spaces
-      - Bases
-      - Riesz Representation
-      - Dual Spaces
-      - Functional Analysis
-      - Weak Convergence
-      - Open Mapping Theorem
-      limit: 500
-      review:
-        mode: any
-- slug: fourier-analysis
-  title: Fourier Analysis
-  parent: hilbert-spaces-and-duality
-  lede: 'The Fourier transform is the one operator that uses every preceding section:
-    it is defined by an integral, bounded on $L^1$, an isometry on $L^2$ by Plancherel,
-    and it turns convolution into multiplication. Riemann-Lebesgue is the statement
-    that the transform of an $L^1$ function has small tails, which is what forbids
-    an identity for convolution. The inversion formula is stated where it holds, and
-    the standard exercises ask for the transform of a Gaussian, which is its own eigenfunction,
-    and for the failure cases where $\hat f$ leaves $L^1$.'
-  items:
-  - ref: D-5LZQ4
-  - ref: PR-DY2B3
-  - ref: PR-DPRY7
-  - ref: PR-IGMH4
-  - ref: T-DTXIA
-  - ref: PR-CCDRN
-  - query:
-      kind: definition
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: theorem
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: proposition
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: exercise
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics:
-      - Fourier Analysis
-      limit: 500
-      review:
-        mode: any
-- slug: problems-from-the-joint-exams
-  title: Problems from the Joint Analysis Exams
-  parent: GUIDE-REAL-ANALYSIS
-  lede: 'These thirty problems carry the real-analysis area label but state complex
-    analysis: entire and holomorphic functions, conformal maps, normal families, residues
-    and contour integrals, Rouche, Hurwitz, and the Schwarz lemma. They come from
-    combined analysis prelims where one paper covers both subjects, and the area label
-    followed the paper rather than the mathematics. They are collected here so that
-    no card in the area is unreachable from the guide, and so that the misfiled area
-    is visible rather than hidden; the adjudication of that label is not this guide''s
-    to make. A reader preparing complex analysis should work them from the Complex
-    Analysis guide instead, where the surrounding theory lives.'
-  items:
-  - query:
-      kind: problem
-      topics:
-      - Holomorphic Functions
-      - Entire Functions
-      - Meromorphic Functions
-      - Singularities
-      - Conformal Maps
-      - Biholomorphisms
-      - Fractional Linear Transformations
-      - Normal Families
-      - Harmonic Functions
-      - Residues
-      - Contour Integration
-      - Rouché
-      - Hurwitz
-      - Schwarz Lemma
-      - Argument Principle
-      - PDEs
-      limit: 500
-      review:
-        mode: any
-  - query:
-      kind: problem
-      topics: []
-      limit: 1000
-      review:
-        mode: any
+  - slug: sequences-and-series-of-numbers
+    title: Sequences and Series of Numbers
+    parent: GUIDE-REAL-ANALYSIS
+    lede: 'Everything later is a limit of something, so the path starts where limits
+      are only about numbers. The limit superior and inferior always exist in the extended
+      reals, which is what lets an argument name a limit before proving it exists. For
+      series the subject is really a subject about the tails: convergence forces the
+      terms to zero and the tails to vanish, the comparison, root, ratio, and condensation
+      tests all decide convergence by bounding one tail against another, and the $p$-test
+      fixes the scale against which those comparisons are made.'
+    items:
+      - ref: D-HOKQD
+      - ref: PR-IGVTV
+      - ref: PR-6C3GQ
+      - ref: PR-P6NHI
+      - ref: PR-4EVYE
+      - ref: PR-6OHTJ
+      - ref: PR-OPSAC
+      - query:
+          kind: definition
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: lemma
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Sequences of Numbers
+            - Series of Numbers
+            - Limits
+            - Convergence of Numbers
+            - Convergence Tests
+            - Bernoulli
+            - Countability
+          limit: 500
+          review:
+            mode: any
+  - slug: metric-spaces
+    title: Metric Spaces, Compactness and Completeness
+    parent: sequences-and-series-of-numbers
+    lede: 'A metric is the least structure under which the previous section''s arguments
+      still run, and the point of the abstraction is that two different-looking hypotheses
+      become the same one. Compactness has three faces here -- open covers, sequential
+      compactness, and complete plus totally bounded -- and they agree in a metric space,
+      which is why an exam problem may hand you any of the three. Heine-Borel says which
+      subsets of $\mathbb R^n$ qualify, and the counterexamples say why the theorem
+      needs $\mathbb R^n$: closed and bounded is not enough in $\mathbb Q$ or in $C([0,1])$.
+      Completeness is the hypothesis Baire needs, and Baire is what makes the nowhere
+      dense sets and the Cantor set into tools rather than curiosities.'
+    items:
+      - ref: D-TVKFM
+      - ref: D-G5N6I
+      - ref: T-QPTHZ
+      - ref: PR-25GM2
+      - ref: T-YOZX6
+      - ref: FD-BA2WU
+      - ref: D-2MJRE
+      - ref: T-7FJFK
+      - query:
+          kind: definition
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Metric Spaces
+            - Compactness
+            - Completeness
+            - Closure
+            - Connectedness
+            - Euclidean Spaces
+            - Cantor Set
+            - Density
+          limit: 500
+          review:
+            mode: any
+  - slug: continuity
+    title: Continuity
+    parent: metric-spaces
+    lede: 'Start from the four equivalent readings of continuity, because each later
+      argument picks the one it needs: the sequential form for limits, the preimage
+      form for topological arguments, and the epsilon-delta form for estimates. Compactness
+      is what upgrades continuity into the two facts the rest of the path depends on:
+      attained extrema and uniform continuity. The distinction between continuity and
+      uniform continuity is where the exam problems live, so the section carries the
+      standard witnesses that the two differ on a non-compact domain.'
+    items:
+      - ref: D-HHVPT
+      - ref: T-RA-WORKSHOP-D4-3-1
+      - ref: T-RA-WORKSHOP-D4-3-2
+      - ref: T-RA-WORKSHOP-D4-3-3
+      - ref: T-RA-WORKSHOP-D4-3-4
+      - ref: T-RA-WORKSHOP-D4-3-5
+      - ref: T-O4UD3
+      - query:
+          kind: definition
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: lemma
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Continuity
+            - Uniform Continuity
+            - Fixed Points
+          limit: 500
+          review:
+            mode: any
+  - slug: differentiation
+    title: Differentiation
+    parent: continuity
+    lede: Differentiation is where attained extrema become a computational tool. Fermat
+      turns an interior extremum into a vanishing derivative, the Mean Value Theorem
+      turns that into control of the function across an interval, and Taylor's theorem
+      makes the control quantitative by naming the remainder. Almost every exam problem
+      in this section is the Mean Value Theorem applied once and then estimated. Bounded
+      variation appears here because it is the class on which a derivative can still
+      be integrated back, which is what the next two sections need.
+    items:
+      - ref: T-RA-WORKSHOP-D5-4-1
+      - ref: T-RA-WORKSHOP-D5-4-2
+      - ref: T-OXNTU
+      - ref: T-RA-WORKSHOP-D5-4-3
+      - ref: T-2R7PC
+      - ref: PR-LTRLV
+      - query:
+          kind: theorem
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Differentiation
+            - Mean Value Theorem
+            - Variation
+            - Calculus
+          limit: 500
+          review:
+            mode: any
+  - slug: riemann-stieltjes-integration
+    title: Riemann-Stieltjes Integration
+    parent: differentiation
+    lede: The Stieltjes integral is stated against a general integrator, so the criterion
+      for integrability is a statement about upper and lower sums rather than about
+      the integrand alone. Integration by parts and the reduction to a Riemann integral
+      are the two tools that make it computable; the fundamental theorem and the integral
+      mean value theorem then connect it back to the derivative. Lebesgue's criterion
+      closes the section by naming exactly which bounded functions are Riemann integrable,
+      which is the sentence the measure-theoretic half of the guide is built to prove.
+    items:
+      - ref: T-RA-WORKSHOP-D6-5-1
+      - ref: T-RA-WORKSHOP-D6-5-2
+      - ref: T-RA-WORKSHOP-D6-5-3
+      - ref: T-RA-WORKSHOP-D6-5-4
+      - ref: T-RA-WORKSHOP-D6-5-5
+      - ref: PR-TDH2A
+      - query:
+          kind: theorem
+          topics:
+            - Riemann Integrability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Riemann Integrability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Riemann Integrability
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Riemann Integrability
+          limit: 500
+          review:
+            mode: any
+  - slug: sequences-and-series-of-functions
+    title: Sequences and Series of Functions
+    parent: riemann-stieltjes-integration
+    lede: 'Every property established so far is a property of one function, and the
+      question here is which of them a limit inherits. Separating pointwise from uniform
+      convergence is what makes that question answerable. Uniform convergence preserves
+      continuity and commutes with the integral, differentiability needs the stronger
+      hypothesis on the derivatives, and the Weierstrass M-test is how uniform convergence
+      is usually established in practice. Arzela-Ascoli and Stone-Weierstrass close
+      the section from opposite directions, one saying which families are compact and
+      the other which are dense. The counterexample cards are load-bearing here: the
+      four standard modes of convergence are pairwise incomparable, and each failure
+      has a standard witness.'
+    items:
+      - ref: D-RA-WORKSHOP-D7-CONVERGENCE
+      - ref: T-RA-WORKSHOP-D7-6-1
+      - ref: T-ERNLN
+      - ref: T-RA-WORKSHOP-D7-6-2
+      - ref: PR-O2XFF
+      - ref: T-RA-WORKSHOP-D7-6-3
+      - ref: T-RA-WORKSHOP-D7-6-4
+      - ref: T-DS4VW
+      - ref: D-2CCDB
+      - ref: T-RA-WORKSHOP-D7-6-5
+      - ref: FT-JQSOK
+      - ref: T-RA-WORKSHOP-D7-6-7
+      - ref: T-3QNBQ
+      - query:
+          kind: definition
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: corollary
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: lemma
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: strategy
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Uniform Convergence
+            - Convergence of Functions
+            - Sequences of Functions
+            - Series of Functions
+            - Equicontinuity
+            - Arzelà-Ascoli
+            - Stone-Weierstrass
+            - Polynomials
+            - Trigonometry
+            - Roots of Unity
+            - Counterexamples
+          limit: 500
+          review:
+            mode: any
+  - slug: measure-and-measurable-functions
+    title: Measure and Measurable Functions
+    parent: GUIDE-REAL-ANALYSIS
+    lede: 'This section opens the second half of the guide and depends on the whole
+      of the first: it exists because the Riemann integral of the fifth section fails
+      on the limits of the sixth. That dependence is stated here rather than in the
+      study-path tree, which indents by depth and becomes unreadable past about seven
+      levels. The repair is to replace the partition of the domain by a measure on it.
+      Outer measure is defined for every set and is only countably subadditive; the
+      Caratheodory condition selects the subfamily on which it is additive, and that
+      family is the one closed under the countable operations every later argument performs.
+      Measurability of a set is then equivalent to approximation by an open, closed,
+      or compact set, which is the form actually used in proofs. A measurable function
+      is one whose sublevel sets are measurable, a condition preserved by sups, infs,
+      and pointwise limits -- exactly the failure the Riemann theory had. Egorov and
+      Lusin bound how far measurable behaviour is from uniform and continuous behaviour,
+      and Borel-Cantelli converts a convergent sum of measures into an almost-everywhere
+      statement.'
+    items:
+      - ref: D-3XE77
+      - ref: D-MDJII
+      - ref: T-IIKSW
+      - ref: T-KZNWM
+      - ref: PR-KKJ6O
+      - ref: D-DHFN4
+      - ref: D-553MO
+      - ref: T-OTR5M
+      - ref: T-XZE3E
+      - ref: T-CGFCU
+      - query:
+          kind: definition
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: strategy
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Measure Theory
+            - Borel-Cantelli
+            - Egorov
+            - Continuity of Measure
+            - Absolute Continuity
+            - Radon-Nikodym
+          limit: 500
+          review:
+            mode: any
+  - slug: the-lebesgue-integral
+    title: The Lebesgue Integral
+    parent: measure-and-measurable-functions
+    lede: "The integral is defined by supremum over simple functions below the integrand,
+      so monotone convergence is nearly a restatement of the definition, and Fatou and
+      dominated convergence follow from it. These three are the section's whole content:
+      essentially every exam problem asking for a limit of integrals is an application
+      of one of them, and the counterexamples show what happens when the dominating
+      hypothesis is dropped. Fubini and Tonelli exchange the order of a double integral
+      under integrability and non-negativity respectively, and the distinction between
+      those hypotheses is itself examined. Chebyshev's inequality and the vanishing
+      of small tails are the two estimates that make the rest quantitative."
+    items:
+      - ref: D-BF5L2
+      - ref: D-R4VKE
+      - ref: T-5K3IO
+      - ref: T-LDJNS
+      - ref: T-IJQQG
+      - ref: PR-YO7MV
+      - ref: T-RIY2P
+      - ref: T-6PRW3
+      - ref: T-4GPEF
+      - ref: T-X7XZX
+      - query:
+          kind: definition
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: strategy
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Integrals
+            - Convergence of Integrals
+            - Fatou
+            - Fubini-Tonelli
+            - Small Tails
+            - Maximal Functions
+          limit: 500
+          review:
+            mode: any
+  - slug: lp-spaces
+    title: Lp Spaces and Convolution
+    parent: the-lebesgue-integral
+    lede: 'Holder and Minkowski make $\|\cdot\|_p$ a norm and the Riesz-Fischer theorem
+      makes it complete, so the integral has finally produced a Banach space. Which
+      $L^p$ contains which depends on whether the measure is finite, and the $p$-test
+      decides the model cases. The essential supremum is the right endpoint at $p=\infty$,
+      and the limit of $\|f\|_p$ recovers it. Convolution is the multiplication these
+      spaces carry: Young''s inequality says which exponents it lands in, and an approximate
+      identity is a family of convolvers converging to the identity that $L^1$ itself
+      does not contain. Continuity of translation in $L^p$ is the lemma underneath most
+      of these proofs.'
+    items:
+      - ref: D-3PVRB
+      - ref: D-MFDEJ
+      - ref: PR-7BGSE
+      - ref: PR-XUVZY
+      - ref: PR-L35O7
+      - ref: FT-GQRV2
+      - ref: T-BFOJT
+      - ref: D-TS42Y
+      - ref: PR-2C3SZ
+      - ref: D-ARQFC
+      - ref: T-HHFGB
+      - query:
+          kind: definition
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: example
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proof
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Lp Spaces
+            - L¹
+            - L²
+            - L∞
+            - Norms
+            - Function Spaces
+            - Convolution
+            - Approximations to the Identity
+          limit: 500
+          review:
+            mode: any
+  - slug: hilbert-spaces-and-duality
+    title: Hilbert Spaces and Duality
+    parent: lp-spaces
+    lede: '$L^2$ is the one $L^p$ whose norm comes from an inner product, and that single
+      fact supplies orthogonal projection, Bessel''s inequality, and the identification
+      of the space with $\ell^2$ through any complete orthonormal set. Riesz representation
+      makes the dual of a Hilbert space the space itself, and for $L^p$ with $p$ finite
+      it makes the dual $L^q$; the failure at $p=\infty$ is worth knowing precisely.
+      The four standard theorems of Banach space theory -- Hahn-Banach, uniform boundedness,
+      open mapping, closed graph -- are collected here because the exam problems that
+      use them state their hypotheses in $L^p$ or $\ell^p$ terms. Weak convergence appears
+      last: the unit ball is not norm-compact in infinite dimensions, and weak convergence
+      is what replaces the missing subsequence.'
+    items:
+      - ref: D-7QQUO
+      - ref: D-4IXAO
+      - ref: T-4BDE3
+      - ref: D-SLYE5
+      - ref: T-5AALA
+      - ref: T-J3AN3
+      - ref: D-EPSKF
+      - ref: T-5IWCG
+      - ref: D-T4LOC
+      - ref: D-PQIQO
+      - ref: T-LDCZB
+      - ref: T-5BFVS
+      - ref: T-OW2QG
+      - ref: T-F2THV
+      - ref: T-KQTPR
+      - ref: T-TTLXS
+      - query:
+          kind: definition
+          topics:
+            - Hilbert Spaces
+            - Inner Product Spaces
+            - Bases
+            - Riesz Representation
+            - Dual Spaces
+            - Functional Analysis
+            - Weak Convergence
+            - Open Mapping Theorem
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Hilbert Spaces
+            - Inner Product Spaces
+            - Bases
+            - Riesz Representation
+            - Dual Spaces
+            - Functional Analysis
+            - Weak Convergence
+            - Open Mapping Theorem
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Hilbert Spaces
+            - Inner Product Spaces
+            - Bases
+            - Riesz Representation
+            - Dual Spaces
+            - Functional Analysis
+            - Weak Convergence
+            - Open Mapping Theorem
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: fact
+          topics:
+            - Hilbert Spaces
+            - Inner Product Spaces
+            - Bases
+            - Riesz Representation
+            - Dual Spaces
+            - Functional Analysis
+            - Weak Convergence
+            - Open Mapping Theorem
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Hilbert Spaces
+            - Inner Product Spaces
+            - Bases
+            - Riesz Representation
+            - Dual Spaces
+            - Functional Analysis
+            - Weak Convergence
+            - Open Mapping Theorem
+          limit: 500
+          review:
+            mode: any
+  - slug: fourier-analysis
+    title: Fourier Analysis
+    parent: hilbert-spaces-and-duality
+    lede: 'The Fourier transform is the one operator that uses every preceding section:
+      it is defined by an integral, bounded on $L^1$, an isometry on $L^2$ by Plancherel,
+      and it turns convolution into multiplication. Riemann-Lebesgue is the statement
+      that the transform of an $L^1$ function has small tails, which is what forbids
+      an identity for convolution. The inversion formula is stated where it holds, and
+      the standard exercises ask for the transform of a Gaussian, which is its own eigenfunction,
+      and for the failure cases where $\hat f$ leaves $L^1$.'
+    items:
+      - ref: D-5LZQ4
+      - ref: PR-DY2B3
+      - ref: PR-DPRY7
+      - ref: PR-IGMH4
+      - ref: T-DTXIA
+      - ref: PR-CCDRN
+      - query:
+          kind: definition
+          topics:
+            - Fourier Analysis
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: theorem
+          topics:
+            - Fourier Analysis
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: proposition
+          topics:
+            - Fourier Analysis
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - Fourier Analysis
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - Fourier Analysis
+          limit: 500
+          review:
+            mode: any
+  - slug: problems-from-the-joint-exams
+    title: Problems from the Joint Analysis Exams
+    parent: GUIDE-REAL-ANALYSIS
+    lede: "These thirty problems carry the real-analysis area label but state complex
+      analysis: entire and holomorphic functions, conformal maps, normal families, residues
+      and contour integrals, Rouche, Hurwitz, and the Schwarz lemma. They come from
+      combined analysis prelims where one paper covers both subjects, and the area label
+      followed the paper rather than the mathematics. They are collected here so that
+      no card in the area is unreachable from the guide, and so that the misfiled area
+      is visible rather than hidden; the adjudication of that label is not this guide's
+      to make. A reader preparing complex analysis should work them from the Complex
+      Analysis guide instead, where the surrounding theory lives."
+    items:
+      - query:
+          kind: problem
+          topics:
+            - Holomorphic Functions
+            - Entire Functions
+            - Meromorphic Functions
+            - Singularities
+            - Conformal Maps
+            - Biholomorphisms
+            - Fractional Linear Transformations
+            - Normal Families
+            - Harmonic Functions
+            - Residues
+            - Contour Integration
+            - Rouché
+            - Hurwitz
+            - Schwarz Lemma
+            - Argument Principle
+            - PDEs
+          limit: 500
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics: []
+          limit: 1000
+          review:
+            mode: any

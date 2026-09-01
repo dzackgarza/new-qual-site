@@ -19,7 +19,7 @@ review: draft
 Show that $\displaystyle\lim_{p\to\infty} \|f\|_p = \|f\|_{\infty}$.
 :::
 
-:::{.solution}
+::: {.solution}
 Since $\limsup_{p\to\infty} \|f\|_p \le \|f\|_{\infty}$, it suffices to show $\liminf_{p\to\infty} \|f\|_p \ge \|f\|_{\infty}$.
 
 Let $\varepsilon>0$ be arbitrary and define $A_{\varepsilon} := \{x : f(x) \ge \|f\|_{\infty} - \varepsilon\}$.

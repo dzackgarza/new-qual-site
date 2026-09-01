@@ -20,6 +20,8 @@ Let $X,Y$ be Banach spaces and $T:X\to Y$ be a one-to-one, bounded and linear op
 Show that for each continuous linear functional $\phi$ on $X$ there is a continuous linear functional $\psi$ on $Y$, so that $\phi=\psi\circ T$.
 :::
 
-:::{.solution}
-By open mapping theorem, $\phi\circ T^{-1}$ is a well-defined linear bounded functional on $T(X)$. Then, by Hahn-Banach Thm, it can be extent to some $\psi$ on $Y$, say, $y\in T(X)$ implies that $\phi\circ T^{-1}(y)=\psi(y)$. It implies that $\psi(T(x))=\phi(x)$ for all $x\in X$.
+::: {.solution}
+By open mapping theorem, $\phi\circ T^{-1}$ is a well-defined linear bounded functional on $T(X)$.
+Then, by Hahn-Banach Thm, it can be extent to some $\psi$ on $Y$, say, $y\in T(X)$ implies that $\phi\circ T^{-1}(y)=\psi(y)$.
+It implies that $\psi(T(x))=\phi(x)$ for all $x\in X$.
 :::
