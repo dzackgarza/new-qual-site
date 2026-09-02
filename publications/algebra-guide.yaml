@@ -815,8 +815,8 @@ sections:
   - slug: commutative-algebra
     title: Commutative Algebra
     parent: factorization-and-polynomials
-    lede: "Localization inverts a multiplicative set and is how a ring is studied one
-      prime at a time: localizing at a prime produces a local ring, whose single maximal
+    lede: "Localization inverts a submonoid of the multiplicative monoid of a ring and
+      is how a ring is studied one prime at a time: localizing at a prime produces a local ring, whose single maximal
       ideal is what makes Nakayama's lemma -- a finitely generated module killed by
       its maximal ideal is zero -- into the workhorse it is. The nilradical and the
       Jacobson radical are the two intersections that measure different defects, the
@@ -829,7 +829,6 @@ sections:
       of these results appear in the corpus only as a stated fact with its geometric
       reading and no worked problem, which is honest about what the source pages contain."
     items:
-      - ref: D-3AYJJ
       - ref: D-OXIVT
       - ref: D-TGB4R
       - ref: D-JSZ77

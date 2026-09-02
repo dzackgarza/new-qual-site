@@ -133,6 +133,30 @@ layer: they let a statement be cited, reused, collected into a guide, and
 located. The Stacks Project is a book whose statements carry tags. It is not a
 tag collection with a book laid over it. This wiki is the same.
 
+### External oracles versus local statement cards
+
+A stable card id is not a reason to duplicate a standard definition or theorem.
+Judge statement cards one at a time. If a canonical external oracle is strictly
+more complete and maintained, and the local card adds no qual-specific
+mathematical value, do not keep a proxy restatement merely so the repository can
+own a tag for it. Authored prose should resolve that reference through the
+external oracle. A stable permalink whose job is to take the reader to the
+canonical definition or theorem is navigation, not a substitute bibliography:
+link that permalink directly, but keep author/title/year attribution and other
+bibliographic claims under the citation policy below.
+
+The converse matters just as much: retain a local card when it adds something
+the oracle does not supply in the form this audience needs -- a useful slogan,
+specialization, proof sketch, example, counterexample, warning, computation, or
+other review-specific synthesis. This is an editorial judgment, never a bulk
+deduplication rule and never a heuristic based on card kind or title.
+
+For localization, authored prerequisites name the denominator data as a
+**submonoid of the multiplicative monoid** $(R,\cdot)$ when $1\in S$ is part of
+the hypothesis. Do not weaken or silently rewrite source-authored problem text:
+a merely nonempty multiplication-closed subset need not contain $1$ and need not
+be a submonoid.
+
 ### Where agents get this wrong
 
 **Do not score a reorganization by page count.** Reorganization relocates and

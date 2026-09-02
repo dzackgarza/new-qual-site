@@ -64,7 +64,11 @@ The pattern is a chain argument on a poset of partial objects, and the only step
 
 [[D-OXIVT]]
 
-[[D-3AYJJ]]
+Use the [Stacks Project localization section](https://stacks.math.columbia.edu/tag/00CM)
+for the canonical construction and universal property.
+
+For a submonoid $S\leq (R,\cdot)$, write $S^{-1}R$ for the localization of $R$
+obtained by inverting the image of $S$.
 
 :::{.warnings}
 The canonical map
