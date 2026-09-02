@@ -98,8 +98,8 @@ sections:
     title: Complex Analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Two sessions against the Complex Analysis branch, following its first two sections: the
-      preliminaries behind holomorphy, then Cauchy theory, where the exercises are worked
+      Two sessions against the Complex Analysis branch: [Holomorphy and Analyticity](../GUIDE-COMPLEX-ANALYSIS/holomorphy-and-analyticity.html),
+      then [Cauchy Theory](../GUIDE-COMPLEX-ANALYSIS/cauchy-theory.html), where the exercises are worked
       applications of the integral formula rather than restatements of it.
     items:
       # Complex Week 1 Preliminaries
@@ -148,14 +148,12 @@ sections:
     title: Real Analysis Workshop Packet
     parent: real-analysis
     lede: >-
-      The UNL real-analysis workshop packet as one collection, days as sections,
-      extracted from the worksheets rather than from the wiki week pages above.
+      The UNL real-analysis workshop packet as one collection, with days as sections,
+      extracted from the worksheets.
       Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying
-      exams; Days 2–8 are the topic sheets. The twenty numbered results the
-      worksheets state and then set problems against follow the packet: no
-      collection lists them, so this is the only
-      place in the branch they can be read. Their numbering runs 3.1 to 6.7 with
-      6.6 absent, which is how the source has it.
+      exams; Days 2–8 are the topic sheets. The packet states twenty numbered results
+      and then sets problems against them. Their numbering runs 3.1 to 6.7 with 6.6
+      absent, matching the source.
     items:
       - ref: SRC-RA-WORKSHOP
       # The numbered results the worksheets state and then set problems against.

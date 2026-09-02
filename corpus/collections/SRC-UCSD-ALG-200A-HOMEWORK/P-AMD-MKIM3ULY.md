@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-MKIM3ULY
 kind: problem
-title: 'Given: $G/Z(G)$ is cyclic'
+title: A group with cyclic quotient by its center is abelian
 classification:
   areas:
   - algebra

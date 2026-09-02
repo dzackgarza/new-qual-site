@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-14
 kind: exercise
-title: "Prove that all conformal mappings from the upper half-plane H to the unit disc D"
+title: Conformal maps from the upper half-plane to the unit disk
 classification:
   areas:
   - complex-analysis

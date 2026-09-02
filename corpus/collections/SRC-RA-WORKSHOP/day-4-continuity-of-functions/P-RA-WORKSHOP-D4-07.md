@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-07
 kind: problem
-title: Prove the extreme value theorem in one real dimension
+title: Extreme value theorem in one real dimension
 classification:
   areas:
   - real-analysis

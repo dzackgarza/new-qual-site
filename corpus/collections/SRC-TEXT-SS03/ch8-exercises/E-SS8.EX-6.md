@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-6
 kind: exercise
-title: "Give another proof of Lemma 1"
+title: Conformal invariance of harmonicity via the Laplacian
 classification:
   areas:
   - complex-analysis

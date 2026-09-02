@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AYDDA
 kind: problem
-title: Describe the process that extends a measure on an algebra
+title: Carathéodory extension of a measure from an algebra
 classification:
   areas:
   - real-analysis

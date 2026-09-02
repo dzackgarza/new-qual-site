@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JNH77
 kind: problem
-title: Can you prove the fundamental theorem of algebra using Galois theory?
+title: A Galois-theoretic proof of the fundamental theorem of algebra
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-MU3IE25C
 kind: problem
-title: 'Given: $H_1, H_2, H_3 \leq G, G = H_1 \cup H_2$'
+title: A group is not the union of two proper subgroups
 classification:
   areas:
   - algebra

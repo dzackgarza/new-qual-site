@@ -178,8 +178,8 @@ sections:
       Two conditions that are invisible to the topology alone appear at this level:
       completeness, which is a statement about Cauchy sequences and not about open sets,
       and total boundedness, which bounds how many balls of a fixed radius are needed.
-      Their conjunction is exactly compactness for metric spaces, which is the reason
-      the next section can be read twice, once by covers and once by sequences. The
+      Their conjunction is exactly compactness for metric spaces, which is why
+      [Compactness](compactness.html) can be read twice, once by covers and once by sequences. The
       Lebesgue number lemma is the technical bridge between the two readings.'
     items:
       - ref: D-B7CYY
@@ -337,9 +337,10 @@ sections:
     parent: connectedness-and-homotopy
     lede: Homotopy classes of maps form only a set; restricting to loops at a basepoint
       makes concatenation a group law, and that is the whole content of the construction.
-      Simple connectedness is then the statement that this group is trivial, which is
-      where path-connectedness from the previous section is needed for the basepoint
-      to be immaterial. Convexity supplies the one family of spaces whose homotopies
+      Simple connectedness is then the statement that this group is trivial, and
+      [Connectedness and Homotopy](connectedness-and-homotopy.html) supplies the
+      path-connectedness needed for the basepoint to be immaterial. Convexity supplies
+      the one family of spaces whose homotopies
       can be written down directly, and Seifert-van Kampen converts an open cover by
       path-connected sets into an amalgamated free product, so the group of a union
       is computed from the groups of the pieces and their intersection. The wedge is
@@ -434,8 +435,8 @@ sections:
     lede: 'Everything computed after this point is computed from a cell structure, so
       the spaces have to be built rather than merely described. A CW complex is assembled
       by induction on dimension, attaching $n$-cells to the $(n-1)$-skeleton along maps
-      out of $S^{n-1}$ and giving the union the weak topology, which is the quotient
-      construction from the second section applied one dimension at a time. The standard
+      out of $S^{n-1}$ and giving the union the weak topology, which applies the quotient
+      constructions from [Constructions of Spaces](constructions-of-spaces.html) one dimension at a time. The standard
       operations are all instances: the cone, the suspension, the wedge, the smash,
       the mapping cylinder and the mapping cone. Cellular approximation says no homotopy
       information is lost by insisting maps respect the skeleta, and the product of
@@ -479,7 +480,7 @@ sections:
     lede: The fundamental group is nonabelian and hard to compute above dimension one,
       so the remaining invariants are the homology groups. Singular homology is defined
       from maps of simplices and is manifestly a homotopy invariant; cellular homology
-      computes the same groups from the cell structure of the previous section, with
+      computes the same groups from the cell structure in [Cell Complexes](cell-complexes.html), with
       the differentials given by degrees of maps between spheres. Three tools do all
       the work. The long exact sequence of a pair converts a subspace into a correction
       term, excision says the relative groups do not see what is cut out well inside

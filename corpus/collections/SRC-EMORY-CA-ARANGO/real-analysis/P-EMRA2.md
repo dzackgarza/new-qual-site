@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMRA2
 kind: problem
-title: "State and prove Fatou's lemma"
+title: Fatou's lemma
 classification:
   areas:
   - real-analysis

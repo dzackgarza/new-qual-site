@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-2MKY6V2W
 kind: exercise
-title: Does diagonalizable imply invertible? The converse?
+title: Diagonalizability versus invertibility
 classification:
   areas:
   - algebra

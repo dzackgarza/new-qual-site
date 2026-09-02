@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20A
 kind: problem
-title: "Classify all index-2 subgroups of Z * (Z + Z) via covering spaces"
+title: Index-$2$ subgroups of $\mathbb Z*(\mathbb Z\oplus\mathbb Z)$ via covering spaces
 classification:
   areas:
   - topology

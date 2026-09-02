@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PXZN2
 kind: problem
-title: Which finite groups are Galois groups for some field extension?
+title: Finite groups as Galois groups
 classification:
   areas:
   - algebra

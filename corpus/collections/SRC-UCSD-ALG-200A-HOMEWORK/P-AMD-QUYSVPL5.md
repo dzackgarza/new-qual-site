@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-QUYSVPL5
 kind: problem
-title: 'Given: $G$ is nilpotent'
+title: Nilpotence passes to subgroups and quotients
 classification:
   areas:
   - algebra

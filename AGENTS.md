@@ -269,6 +269,21 @@ After the statement is on a problem card and linked to its exam collection,
 delete the screenshot. Do not delete an unmatched screenshot to tidy the tree:
 until the exam is identified, the image may be the only copy of the label.
 
+## Migration archives are history, not assets
+
+Snapshots of repositories that fed the migration are historical transport
+material. Git history preserves them; they do not remain as a second live source
+tree and they must not be kept under `assets/` merely because an importer once
+read them there. Migration ledgers may name the paths those files had during the
+migration; those are historical evidence, not current asset links.
+
+`assets/` is for material the built corpus actually uses as an asset: source
+documents such as exam PDFs under `assets/attachments/`, figures used by cards or
+wiki pages, and the checked-in Markdown extractions of those PDFs. If a live card
+still points into a migration snapshot, move or copy the needed figure/source
+document into the appropriate subject or attachment asset location and point the
+card there; do not retain the migration snapshot to satisfy the link.
+
 ## Heuristics have no place in this repo
 
 A heuristic is a proxy for intelligent work that hasn't been done yet. It

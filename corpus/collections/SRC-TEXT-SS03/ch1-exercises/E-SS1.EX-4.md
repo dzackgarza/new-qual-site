@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-4
 kind: exercise
-title: "Show that it is impossible to define a total ordering on C"
+title: The complex numbers admit no ordered-field structure
 classification:
   areas:
   - complex-analysis

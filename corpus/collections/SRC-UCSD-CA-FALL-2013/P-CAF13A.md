@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF13A
 kind: problem
-title: "State and prove classical theorems in complex analysis"
+title: 'Classical complex-analysis theorems: statements and proof sketches'
 classification:
   areas:
   - complex-analysis

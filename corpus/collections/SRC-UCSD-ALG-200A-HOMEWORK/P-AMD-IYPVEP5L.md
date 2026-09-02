@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-IYPVEP5L
 kind: problem
-title: 'Given: $H\leq G, N \normal G, H \in \text{Hall}(G)$'
+title: Hall subgroups under intersection with a normal subgroup and passage to the quotient
 classification:
   areas:
   - algebra
@@ -40,9 +40,7 @@ Now
 \[
 \gcd\!\left(\frac{|H|}{|H\cap N|},\,[N:H\cap N]\right)=1.
 \]
-Indeed, if a prime $p$ divided both, then $p\mid |H|$ and $p\mid [N:H\cap N]$
-implies $p\mid [G:H]=[G:HN]\,[N:H\cap N]$, so $p$ divides both
-$|H|$ and $[G:H]$, a contradiction.
+Indeed, if a prime $p$ divided both, then $p\mid |H|$ and $p\mid [N:H\cap N]$ implies $p\mid [G:H]=[G:HN]\,[N:H\cap N]$, so $p$ divides both $|H|$ and $[G:H]$, a contradiction.
 Hence $H\cap N$ is a Hall subgroup of $N$.
 
 For the quotient, by the Second Isomorphism Theorem again,
@@ -53,8 +51,7 @@ Also
 \[
 [G/N:HN/N]=[G:HN].
 \]
-From the same divisibility argument with $\gcd(|H|,[G:H])=1$ and
-$[G:HN]\mid [G:H]$, we get
+From the same divisibility argument with $\gcd(|H|,[G:H])=1$ and $[G:HN]\mid [G:H]$, we get
 \[
 \gcd(|HN/N|,[G/N:HN/N])=1,
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF05B
 kind: problem
-title: "Find Lebesgue measurable sets whose sum is not Lebesgue measurable"
+title: Measurable planar sets with nonmeasurable Minkowski sum
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YCHOS
 kind: exercise
-title: Find a conformal map from the upper half-disc to the upper half-plane.
+title: A conformal map from the upper half-disc to the upper half-plane
 classification:
   areas:
   - complex-analysis

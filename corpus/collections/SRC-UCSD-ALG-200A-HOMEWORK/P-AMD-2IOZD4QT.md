@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2IOZD4QT
 kind: problem
-title: 'Given: $G \actson X, \quad |G| < \infty , \quad 1 < |X| < \infty$'
+title: Fixed-point-free elements in group actions on finite sets
 classification:
   areas:
   - algebra

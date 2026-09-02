@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-22
 kind: exercise
-title: "Show that there is no holomorphic function f in the unit disc D that extends con"
+title: No holomorphic function on the disk can extend continuously with boundary values $1/z$
 classification:
   areas:
   - complex-analysis

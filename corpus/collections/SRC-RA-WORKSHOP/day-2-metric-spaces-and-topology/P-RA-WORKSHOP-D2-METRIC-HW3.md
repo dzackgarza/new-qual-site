@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW3
 kind: problem
-title: Decide whether the set of binary sequences is countable (warm-up)
+title: Uncountability of the set of binary sequences (warm-up)
 classification:
   areas:
   - real-analysis

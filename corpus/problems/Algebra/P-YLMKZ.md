@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YLMKZ
 kind: problem
-title: Can a polynomial over a division ring have more roots than its degree?
+title: Root bounds for polynomials over division rings
 classification:
   areas:
   - algebra

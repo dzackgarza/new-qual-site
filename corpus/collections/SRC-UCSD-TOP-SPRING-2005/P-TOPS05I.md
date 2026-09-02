@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05I
 kind: problem
-title: "Construct a space with the homology of a lens space but not homotopy equivalent to it"
+title: A space with the homology but not the homotopy type of a lens space
 classification:
   areas:
   - topology

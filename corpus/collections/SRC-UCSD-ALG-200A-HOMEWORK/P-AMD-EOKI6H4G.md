@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-EOKI6H4G
 kind: problem
-title: 'Given: $H \leq G$. Show: $\text{core}(H)$ is'
+title: Equivalent descriptions of the core of a subgroup
 classification:
   areas:
   - algebra

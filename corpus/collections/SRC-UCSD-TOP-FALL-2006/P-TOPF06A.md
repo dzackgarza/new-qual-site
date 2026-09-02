@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF06A
 kind: problem
-title: "Construct a 2D CW complex with one 0-cell and one 2-cell with given pi_1 presentation"
+title: A $2$-dimensional CW complex with $\pi_1=\langle a,b,c\mid abca=cb\rangle$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-VEPW3OF5
 kind: problem
-title: 'Given: $r$ beads of $n$ colors'
+title: Counting circular bracelets made from $r$ beads in $n$ colors
 classification:
   areas:
   - algebra

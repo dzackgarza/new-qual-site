@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-MLE74H7M42
 kind: problem
-title: Classify (with proof) all fields with finitely many elements.
+title: Classification of finite fields
 classification:
   areas:
   - algebra

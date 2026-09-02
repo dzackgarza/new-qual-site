@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO37
 kind: problem
-title: Can a surjective ring homomorphism fail to be finite?
+title: Finiteness of surjective ring homomorphisms
 classification:
   areas:
   - algebra

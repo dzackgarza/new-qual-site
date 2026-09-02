@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-BWEE5VHM
 kind: problem
-title: 'Given: $|G| = pqr, p < q < r$'
+title: A group of squarefree order $pqr$ has a normal Sylow subgroup
 classification:
   areas:
   - algebra

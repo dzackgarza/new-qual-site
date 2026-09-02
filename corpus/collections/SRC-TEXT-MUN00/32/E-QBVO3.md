@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QBVO3
 kind: exercise
-title: Are all topological groups normal
+title: Normality of topological groups
 classification:
   areas:
   - topology

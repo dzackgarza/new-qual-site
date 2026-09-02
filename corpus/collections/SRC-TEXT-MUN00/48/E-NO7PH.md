@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NO7PH
 kind: exercise
-title: Is the lower limit line a Baire space
+title: Baire property of the lower limit line
 classification:
   areas:
   - topology

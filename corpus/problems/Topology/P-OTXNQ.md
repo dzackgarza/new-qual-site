@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OTXNQ
 kind: problem
-title: Does this hold when $A$ is open? (statement incomplete)
+title: Open subsets of compact spaces
 classification:
   areas:
   - topology

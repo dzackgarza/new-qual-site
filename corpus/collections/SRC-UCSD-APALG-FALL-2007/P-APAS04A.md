@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS04A
 kind: problem
-title: State and prove the Schur decomposition theorem
+title: 'Schur decomposition theorem'
 classification:
   areas:
   - applied-algebra

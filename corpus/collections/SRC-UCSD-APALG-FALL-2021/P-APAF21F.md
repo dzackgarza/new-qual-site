@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF21F
 kind: problem
-title: Are indecomposable $\mathbb{Z}$-modules over $\mathbb{C}$ irreducible?
+title: 'Indecomposable versus irreducible complex representations of $\mathbb{Z}$'
 classification:
   areas:
   - applied-algebra

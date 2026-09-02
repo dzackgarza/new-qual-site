@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANA
 kind: problem
-title: "is a sequence of continuous functions on [0, 1] which converges to a continuous"
+title: Pointwise versus uniform convergence of continuous functions
 classification:
   areas:
   - real-analysis

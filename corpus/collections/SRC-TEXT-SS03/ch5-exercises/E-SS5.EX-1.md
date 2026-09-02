@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-1
 kind: exercise
-title: "Give another proof of Jensen’s formula in the unit disc using the functions (cal"
+title: Jensen’s formula via Blaschke factors
 classification:
   areas:
   - complex-analysis

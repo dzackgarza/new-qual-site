@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-GD7M37XG
 kind: problem
-title: 'Given: $P \leq H \leq K \leq G < \infty, P \in \text{Syl}_p(G)$'
+title: Normality of Sylow subgroups in an intermediate subgroup chain
 classification:
   areas:
   - algebra

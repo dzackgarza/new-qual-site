@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G3BXN
 kind: problem
-title: Is $\CC[x, y]$ a PID?
+title: Principal and prime ideals in $\CC[x,y]$
 classification:
   areas:
   - algebra

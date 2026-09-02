@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP25D
 kind: problem
-title: "Find all analytic automorphisms of the punctured disk D\\{a}"
+title: Automorphisms of the punctured disk $\mathbb D\setminus\{a\}$
 classification:
   areas:
   - complex-analysis

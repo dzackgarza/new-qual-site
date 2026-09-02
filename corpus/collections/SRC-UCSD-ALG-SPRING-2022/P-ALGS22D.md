@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS22D
 kind: problem
-title: "When does A^m = I imply diagonalizable for 2×2 matrices over algebraically closed fields"
+title: 'Diagonalizability of $2\times2$ matrices satisfying $A^m=I$'
 classification:
   areas:
   - algebra

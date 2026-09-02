@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GAA3C
 kind: problem
-title: Does the converse hold? (statement incomplete)
+title: Closed versus compact subsets of Hausdorff spaces
 classification:
   areas:
   - topology

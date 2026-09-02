@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IEZIG
 kind: problem
-title: What does it mean for an element to be algebraic or transcendental?
+title: Algebraic and transcendental elements
 classification:
   areas:
   - algebra

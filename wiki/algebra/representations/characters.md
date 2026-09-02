@@ -11,7 +11,7 @@ problems:
 [[D-CTAKB]]
 
 :::{.remark title="Why a trace is enough"}
-The character $\chi_V(g) \da \tr\rho_V(g)$ forgets almost everything about $\rho_V$ and still determines it up to isomorphism, because Maschke makes a representation a list of multiplicities and Schur makes those multiplicities inner products of characters.
+The character $\chi_V(g) \da \tr\rho_V(g)$ forgets almost everything about $\rho_V$ and still determines it up to isomorphism: [[T-PIO2B|Maschke's theorem]] splits representations into irreducibles, and [[T-YHH3M|Schur's lemma]] makes their multiplicities character inner products.
 
 Three properties that make it computable:
 

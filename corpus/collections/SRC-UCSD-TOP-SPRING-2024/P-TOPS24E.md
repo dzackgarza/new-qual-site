@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS24E
 kind: problem
-title: Compute $\operatorname{Tor}(M, \mathbb{Z}_2)$ for a presented abelian group
+title: $\operatorname{Tor}(M,\mathbb Z_2)$ for a presented abelian group
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW4
 kind: problem
-title: Verify the parallelogram law for an inner-product norm (warm-up)
+title: The parallelogram law for inner-product norms (warm-up)
 classification:
   areas:
   - real-analysis

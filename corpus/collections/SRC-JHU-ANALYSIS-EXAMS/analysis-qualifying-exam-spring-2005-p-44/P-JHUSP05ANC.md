@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP05ANC
 kind: problem
-title: "Which L^p spaces embed in which"
+title: $L^p$ inclusions on finite- and infinite-measure spaces
 classification:
   areas:
   - real-analysis

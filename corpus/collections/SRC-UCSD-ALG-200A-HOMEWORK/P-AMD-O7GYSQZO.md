@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-O7GYSQZO
 kind: problem
-title: 'Given: $H, K \normal HK \leq G$'
+title: The quotient $HK/(H\cap K)$ as a product of quotients
 classification:
   areas:
   - algebra

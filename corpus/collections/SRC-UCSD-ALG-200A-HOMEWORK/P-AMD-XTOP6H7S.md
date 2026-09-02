@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-XTOP6H7S
 kind: problem
-title: 'Given: $G=H_1 \cup H_2 \cup H_3, G$ finite'
+title: 'A finite group covered by three subgroups: one is all of $G$ or all have index $2$'
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3A-HW2
 kind: problem
-title: State the Seifert–van Kampen theorem (warm-up)
+title: 'Seifert–van Kampen theorem'
 classification:
   areas:
   - topology

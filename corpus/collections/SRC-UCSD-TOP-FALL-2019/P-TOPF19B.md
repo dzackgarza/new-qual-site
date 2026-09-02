@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19B
 kind: problem
-title: "Classify all index-m subgroups of a surface group via covering spaces"
+title: Index-$m$ subgroups of a surface group via covering spaces
 classification:
   areas:
   - topology

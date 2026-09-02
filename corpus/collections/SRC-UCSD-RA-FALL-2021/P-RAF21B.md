@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF21B
 kind: problem
-title: "Can a nonnegative Borel function have infinite integral over every interval?"
+title: 'Nonnegative Borel functions with infinite integral on every interval'
 classification:
   areas:
   - real-analysis

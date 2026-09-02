@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO27
 kind: problem
-title: Compute the Hilbert function of an ideal
+title: Hilbert functions of ideals in graded polynomial rings
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JOHQOJDS
 kind: problem
-title: 'Given: $H~\text{char}~G$'
+title: Characteristic subgroups are normal
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-Q626TCVB
 kind: problem
-title: 'Given: $\forall x \in G, x^2 = e$'
+title: Groups of exponent $2$ are abelian
 classification:
   areas:
   - algebra

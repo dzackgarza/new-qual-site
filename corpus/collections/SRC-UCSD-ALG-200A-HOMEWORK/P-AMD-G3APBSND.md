@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-G3APBSND
 kind: problem
-title: 'i: $|G| < \infty, H < G$'
+title: Conjugates of a proper subgroup are indexed by $G/N_G(H)$ and do not cover $G$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF04A
 kind: problem
-title: "Compute three limits and integrals involving Fubini and dominated convergence"
+title: Three Fubini and dominated-convergence limits and integrals
 classification:
   areas:
   - real-analysis
@@ -29,8 +29,7 @@ Find, with justification, the values of the following limits and integrals:
 :::
 
 ::: {.solution}
-<1>1. Part (a): Evaluation of $\lim_{n \to \infty} \int_0^\infty \cos\left(\frac{x}{n}\right) e^{-x} \, dx$:
-<2>1. Let $f_n(x) = \cos(x/n) e^{-x}$ on $(0, \infty)$.
+<1>1. Part (a): Evaluation of $\lim_{n \to \infty} \int_0^\infty \cos\left(\frac{x}{n}\right) e^{-x} \, dx$: <2>1. Let $f_n(x) = \cos(x/n) e^{-x}$ on $(0, \infty)$.
 For each fixed $x \in (0, \infty)$, $\lim_{n \to \infty} x/n = 0$, so:
 \[
 \lim_{n \to \infty} f_n(x) = \cos(0) e^{-x} = e^{-x}.
@@ -54,8 +53,7 @@ $|\cos \theta| \le 1$.
 Lebesgue Dominated Convergence Theorem.
 :::
 
-<1>2. Part (b): Evaluation of $\int_0^\infty \left[ \int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx \right] dt$:
-<2>1. The integrand $f(x, t) = \frac{x}{1 + x^2} e^{-xt}$ is non-negative and measurable on the product domain $(0, \infty) \times (0, \infty)$.
+<1>2. Part (b): Evaluation of $\int_0^\infty \left[ \int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx \right] dt$: <2>1. The integrand $f(x, t) = \frac{x}{1 + x^2} e^{-xt}$ is non-negative and measurable on the product domain $(0, \infty) \times (0, \infty)$.
 By Tonelli’s Theorem, the order of integration can be exchanged:
 \[
 \int_0^\infty \left[ \int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx \right] dt = \int_0^\infty \frac{x}{1 + x^2} \left[ \int_0^\infty e^{-xt} \, dt \right] dx.
@@ -78,8 +76,7 @@ antiderivative of exponential function.
 standard antiderivative of $\frac{1}{1+x^2}$.
 :::
 
-<1>3. Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$:
-<2>1. For each $n \in \mathbb{N}$, make the linear substitution $u = x + n$, so $du = dx$.
+<1>3. Part (c): Evaluation of $\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$: <2>1. For each $n \in \mathbb{N}$, make the linear substitution $u = x + n$, so $du = dx$.
 The integral becomes:
 \[
 \int_{-\infty}^\infty e^{-|x+n|} \, dx = \int_{-\infty}^\infty e^{-|u|} \, du.
@@ -102,8 +99,8 @@ symmetry of even function.
 limit of a constant sequence.
 :::
 
-<1>4. Conclusion:
-The values are (a) $1$, (b) $\frac{\pi}{2}$, and (c) $2$. Q.E.D.
+<1>4. Conclusion: The values are (a) $1$, (b) $\frac{\pi}{2}$, and (c) $2$.
+Q.E.D.
 ::: {.proof}
 <1>1 through <1>3.
 :::

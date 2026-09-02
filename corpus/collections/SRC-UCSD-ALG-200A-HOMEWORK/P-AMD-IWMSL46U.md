@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-IWMSL46U
 kind: problem
-title: 'Given: $|G|<\infty, |G| = 0\mod 2$'
+title: Every finite group of even order has an element of order $2$
 classification:
   areas:
   - algebra

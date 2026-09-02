@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS00B
 kind: problem
-title: "Compute Ext^1(Z/n, Q/Z)"
+title: $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,\mathbb Q/\mathbb Z)$
 classification:
   areas:
   - topology

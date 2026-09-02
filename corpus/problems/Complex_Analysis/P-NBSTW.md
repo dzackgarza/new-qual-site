@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NBSTW
 kind: problem
-title: Find $\tan$ using geometric series
+title: Power series of $\tan z$ via geometric-series inversion
 classification:
   areas:
   - complex-analysis

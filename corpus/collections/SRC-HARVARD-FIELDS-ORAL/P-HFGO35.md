@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO35
 kind: problem
-title: Construct a field of order 27 from an irreducible polynomial
+title: $\mathbb F_{27}$ as a cubic extension of $\mathbb F_3$
 classification:
   areas: [algebra]
   topics: [Finite Fields]

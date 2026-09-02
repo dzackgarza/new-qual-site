@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMAG7
 kind: problem
-title: "Classify groups of order 15 and 30"
+title: Groups of orders $15$ and $30$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-YAHFRBZF
 kind: problem
-title: 'Given: $H ~\text{char}~ K \normal G$'
+title: A characteristic subgroup of a normal subgroup is normal
 classification:
   areas:
   - algebra

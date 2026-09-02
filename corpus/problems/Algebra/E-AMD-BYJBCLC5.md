@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BYJBCLC5
 kind: exercise
-title: Is $\QQ(2^{1\over 3})/\QQ$ normal?
+title: Normality of $\QQ(\sqrt[3]{2})/\QQ$
 classification:
   areas:
   - algebra

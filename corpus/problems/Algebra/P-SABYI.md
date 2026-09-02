@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SABYI
 kind: problem
-title: How does one prove the structure theorem for modules over PID?
+title: Structure theorem for finitely generated modules over a PID
 classification:
   areas:
   - algebra

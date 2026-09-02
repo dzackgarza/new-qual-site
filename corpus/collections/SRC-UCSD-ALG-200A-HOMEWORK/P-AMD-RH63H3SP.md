@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-RH63H3SP
 kind: problem
-title: 'Given: $[H : G]= n < \infty$'
+title: Finite-index subgroup cores and orders of simple groups
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW2
 kind: problem
-title: Prove compactness of the reciprocal-integer set (warm-up)
+title: Compactness of the reciprocal-integer set
 classification:
   areas:
   - real-analysis

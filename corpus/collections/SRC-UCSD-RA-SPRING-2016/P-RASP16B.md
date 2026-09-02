@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP16B
 kind: problem
-title: "Compute a Lebesgue-Stieltjes measure from its distribution function"
+title: Lebesgue-Stieltjes measure of a piecewise distribution function
 classification:
   areas:
   - real-analysis

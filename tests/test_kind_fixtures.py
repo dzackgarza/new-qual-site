@@ -311,11 +311,24 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
 
 def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
+    local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
+    local_pdf.parent.mkdir(parents=True, exist_ok=True)
+    local_pdf.write_bytes(b"%PDF-1.4\n%%EOF\n")
+    local_extraction = local_pdf.parent / "extracted" / "fixture-paper.md"
+    local_extraction.parent.mkdir()
+    local_extraction.write_text("A checked-in extraction of the fixture paper.\n")
     exam = work / "corpus" / "SRC-UGA-FIX.md"
+    provenance = (
+        "review: draft\n"
+        "provenance:\n"
+        "  - https://www.math.uga.edu/past-qualifying-exams-1\n"
+        "  - https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf\n"
+        "  - assets/attachments/fixture-paper.pdf\n"
+    )
     exam.write_text(
         exam.read_text().replace(
             "review: draft\n",
-            "review: draft\nprovenance:\n  - https://www.math.uga.edu/past-qualifying-exams-1\n  - https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf\n",
+            provenance,
             1,
         )
     )
@@ -325,10 +338,14 @@ def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     assert "Provenance" in exam_qmd
     assert "https://www.math.uga.edu/past-qualifying-exams-1" in exam_qmd
     assert "https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" in exam_qmd
+    assert "assets/attachments/fixture-paper.pdf" in exam_qmd
+    assert "assets/attachments/extracted/fixture-paper.md" in exam_qmd
+    assert "Markdown extraction" in exam_qmd
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
         "https://www.math.uga.edu/past-qualifying-exams-1",
         "https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf",
+        "assets/attachments/fixture-paper.pdf",
     ]
     assert list(con.execute("select href from collection_provenance where collection_id='SRC-DUMMIT'")) == []
 

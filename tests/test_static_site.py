@@ -82,6 +82,44 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 
 
+def test_problem_lists_survive_display_math_and_keep_nested_items(tmp_path: Path) -> None:
+    """Display math inside one item must not flatten the authored list to prose."""
+    card = r"""---
+schema: qual/card@1
+id: P-LIST
+kind: problem
+title: Units and maximal ideals in a power-series ring
+classification:
+  areas: [algebra]
+  topics: [Rings]
+relations: []
+review: draft
+---
+
+::: problem
+Let $R$ be a ring.
+
+- Show that
+  $$
+  \sum_{i=0}^\infty a_i x^i \in R[[x]]^\times \iff a_0 \in R^\times.
+  $$
+- If $R$ is a field:
+  - show that the zero-constant-term series form a maximal ideal;
+  - show that it is the unique maximal ideal.
+:::
+"""
+    work = fixture_repo(tmp_path, {"P-LIST.md": card})
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-LIST.html")
+    statement = page.root.find_all("div", **{"class": "card-statement"})[0]
+    assert len(statement.find_all("ul")) == 2
+    assert any(item.find_all("ul") for item in statement.find_all("li"))
+    assert any(item.find_all("span", **{"class": "math display"}) for item in statement.find_all("li"))
+
+
 def test_missing_asset_fails_the_build(tmp_path: Path) -> None:
     assets_root = tmp_path / "assets"
     assets_root.mkdir()

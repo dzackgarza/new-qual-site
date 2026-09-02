@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2HERP
 kind: problem
-title: What can you say about the eigenvalues of a skew-symmetric matrix?
+title: Eigenvalues of skew-symmetric matrices
 classification:
   areas:
   - algebra

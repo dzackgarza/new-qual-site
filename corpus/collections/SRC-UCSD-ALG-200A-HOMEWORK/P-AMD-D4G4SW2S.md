@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-D4G4SW2S
 kind: problem
-title: 'Given: $H \subseteq G, P \in \text{Syl}_p(G)$'
+title: Sylow subgroups of subgroups via conjugate intersections
 classification:
   areas:
   - algebra

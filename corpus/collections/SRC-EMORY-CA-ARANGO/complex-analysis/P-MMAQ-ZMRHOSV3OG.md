@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZMRHOSV3OG
 kind: problem
-title: State the Schwarz lemma for analytic functions in the unit disc.
+title: Schwarz lemma and the Schwarz–Pick inequality
 classification:
   areas:
   - complex-analysis

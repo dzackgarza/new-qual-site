@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-26
 kind: exercise
-title: "Suppose f is continuous in a region Ω"
+title: Primitives of a continuous function differ by a constant
 classification:
   areas:
   - complex-analysis

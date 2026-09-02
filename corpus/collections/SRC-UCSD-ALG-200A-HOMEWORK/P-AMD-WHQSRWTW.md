@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WHQSRWTW
 kind: problem
-title: 'Given: For every triplet in $G$, two elements commute'
+title: If every triple contains a commuting pair, the group is abelian
 classification:
   areas:
   - algebra

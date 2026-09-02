@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAF04A
 kind: problem
-title: State and prove the Cayley–Hamilton theorem
+title: 'Cayley–Hamilton theorem'
 classification:
   areas:
   - applied-algebra

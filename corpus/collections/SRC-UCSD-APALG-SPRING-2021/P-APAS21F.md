@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS21F
 kind: problem
-title: Are indecomposable $\mathbb{R}_+$-modules over $\mathbb{C}$ irreducible?
+title: 'Indecomposable versus irreducible complex representations of $\mathbb{R}_+$'
 classification:
   areas:
   - applied-algebra

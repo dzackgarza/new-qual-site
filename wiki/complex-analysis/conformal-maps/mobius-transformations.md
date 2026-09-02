@@ -39,7 +39,7 @@ The condition $f'\neq 0$ alone does not force holomorphy, since an antiholomorph
 
 :::{.remark title="Inverses come for free"}
 A bijective holomorphic map has a holomorphic inverse, and this weakens: an *injective* holomorphic map has $f'(z)\neq 0$ throughout, and its inverse is well defined and holomorphic on the image.
-The self-biholomorphisms of a domain $\Omega$ therefore form a group $\Aut_\CC(\Omega)$, which is what the next page computes for the disc.
+The self-biholomorphisms of a domain $\Omega$ therefore form a group $\Aut_\CC(\Omega)$, computed for the disc in [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 :::
 

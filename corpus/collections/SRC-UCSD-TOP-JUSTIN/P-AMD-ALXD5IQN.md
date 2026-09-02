@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ALXD5IQN
 kind: problem
-title: Show $\pi_1(X\times Y, (x_0, y_0)) \cong \pi_1(X,x_0) \times \pi_1(Y, y_0)$.
+title: The fundamental group of a product is the product of the fundamental groups
 classification:
   areas:
   - topology
@@ -61,7 +61,7 @@ Prove that the canonical map $\Phi \colon \pi_1(X \times Y, (x_0, y_0)) \to \pi_
 - For all $s \in [0, 1]$, $H(0, s) = (F(0, s), G(0, s)) = (x_0, y_0)$ and $H(1, s) = (F(1, s), G(1, s)) = (x_0, y_0)$.
   <2>6. Thus $H$ is a path homotopy in $X \times Y$ between $\gamma$ and the constant loop $c_{(x_0, y_0)}$, so $[\gamma] = 1 \in \pi_1(X \times Y, (x_0, y_0))$.
 ::: {.proof}
-  <2>7. The homotopy $H(t, s) = (F(t, s), G(t, s))$ is continuous because $F$ and $G$ are, and its boundary conditions in <2>5 show it is a path homotopy from $\gamma$ to the constant loop; hence $\ker(\Phi) = \{1\}$, so $\Phi$ is injective.
+<2>7. The homotopy $H(t, s) = (F(t, s), G(t, s))$ is continuous because $F$ and $G$ are, and its boundary conditions in <2>5 show it is a path homotopy from $\gamma$ to the constant loop; hence $\ker(\Phi) = \{1\}$, so $\Phi$ is injective.
 :::
 
 <1>4. Q.E.D.

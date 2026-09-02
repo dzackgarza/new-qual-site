@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2B-HW1
 kind: problem
-title: Determine retractions and deformation retractions in basic spaces (warm-up)
+title: Retractions and deformation retractions of intervals and the circle (warm-up)
 classification:
   areas:
   - topology

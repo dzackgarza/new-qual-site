@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO29
 kind: problem
-title: Compute the ideal of leading forms
+title: Leading-form ideals in polynomial rings
 classification:
   areas:
   - algebra

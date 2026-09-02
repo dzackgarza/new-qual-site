@@ -134,7 +134,7 @@ They are recall rather than derivation, and they are collected here for the same
 [[FF-7KQCC]] [[FF-2VUTS]] [[FF-2ABHQ]]
 
 :::{.remark}
-Written in rectangular coordinates, a root of unity is a pair of these values, and the tangent half-angle substitution from the Geometry section above turns the same values into a rational parameterization of the circle.
+Written in rectangular coordinates, a root of unity is a pair of these values, and the tangent half-angle substitution from [Geometry](#geometry) turns the same values into a rational parameterization of the circle.
 
 :::
 
@@ -157,4 +157,3 @@ The series expansions are collected with the other standard series in [[series-r
 [[FF-AGEQ4]] [[FF-MV5X6]]
 
 [[FF-VFWB6]] [[FF-VR4UT]]
-

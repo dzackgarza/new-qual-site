@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W3
 kind: problem
-title: Prove the uniform-limit continuity theorem directly
+title: Uniform limits of continuous functions are continuous
 classification:
   areas:
   - real-analysis

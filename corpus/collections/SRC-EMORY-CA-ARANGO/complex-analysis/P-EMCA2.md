@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMCA2
 kind: problem
-title: "State and prove the Cauchy integral formula"
+title: Cauchy integral formula
 classification:
   areas:
   - complex-analysis

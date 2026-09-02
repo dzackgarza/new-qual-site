@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP18E
 kind: problem
-title: "Construct a bounded holomorphic function on D with zeros at alpha_n = 1 - 1/n^2"
+title: A bounded Blaschke product with zeros $\alpha_n=1-1/n^2$
 classification:
   areas:
   - complex-analysis

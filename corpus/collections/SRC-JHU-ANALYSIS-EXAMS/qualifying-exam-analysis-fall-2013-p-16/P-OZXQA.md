@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OZXQA
 kind: problem
-title: Compute limit of Fourier transform of sinc function
+title: Fourier transform of the sinc function
 classification:
   areas:
   - complex-analysis

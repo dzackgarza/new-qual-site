@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4URWK
 kind: problem
-title: Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
+title: 'Hausdorffness of arbitrary products'
 classification:
   areas:
   - topology

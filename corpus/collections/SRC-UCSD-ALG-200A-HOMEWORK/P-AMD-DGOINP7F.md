@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-DGOINP7F
 kind: problem
-title: 'Given: $\sigma \in Aut(G)$'
+title: Automorphisms, inner automorphisms, and central displacement
 classification:
   areas:
   - algebra

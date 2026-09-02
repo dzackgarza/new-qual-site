@@ -14,7 +14,7 @@ The same subject as [[algebra/representations/index|the algebra qual's represent
 
 ## The framework
 
-Maschke makes every complex representation of a finite group a sum of irreducibles, Schur makes the multiplicities inner products of characters, and together they give
+[[T-PIO2B|Maschke's theorem]] splits every complex representation of a finite group into irreducibles, and [[T-YHH3M|Schur's lemma]] turns the multiplicities into character inner products. Together they give
 \[
 \size G = \sum_i d_i^2
 ,\]

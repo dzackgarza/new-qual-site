@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ARC4WWRO
 kind: problem
-title: 'Given: $K = \langle k \rangle \normal G$'
+title: Every subgroup of a normal cyclic subgroup is normal
 classification:
   areas:
   - algebra

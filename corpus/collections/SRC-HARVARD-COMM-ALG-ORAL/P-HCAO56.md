@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO56
 kind: problem
-title: Decide membership in a polynomial ideal
+title: Ideal membership in polynomial rings
 classification:
   areas:
   - algebra

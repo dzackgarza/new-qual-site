@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP15A
 kind: problem
-title: "State and prove four classical results from complex analysis"
+title: 'Classical complex-analysis theorems: statements and proof sketches'
 classification:
   areas:
   - complex-analysis

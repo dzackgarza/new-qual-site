@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-5VPC4U77
 kind: problem
-title: 'Given: $G = H \semidirect_\psi K$'
+title: Conjugating or precomposing a semidirect-product action preserves the semidirect product up to isomorphism
 classification:
   areas:
   - algebra

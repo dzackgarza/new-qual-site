@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-13
 kind: problem
-title: Prove the ratio test from the root test
+title: The ratio test follows from the root test
 classification:
   areas:
   - real-analysis

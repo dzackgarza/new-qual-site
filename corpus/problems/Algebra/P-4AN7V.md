@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4AN7V
 kind: problem
-title: Determine for which integers the ring
+title: $\mathbb Z/n\mathbb Z$ as a direct sum of fields
 classification:
   areas:
   - algebra

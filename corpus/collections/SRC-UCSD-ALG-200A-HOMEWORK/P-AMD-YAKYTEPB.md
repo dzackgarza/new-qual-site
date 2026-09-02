@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-YAKYTEPB
 kind: problem
-title: 'Given: $G\in \mathbf{Ab}$'
+title: The torsion elements of an abelian group form a subgroup
 classification:
   areas:
   - algebra

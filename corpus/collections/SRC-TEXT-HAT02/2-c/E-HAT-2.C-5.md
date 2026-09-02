@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.C-5
 kind: exercise
-title: Can reflection of closed orientable surface across plane be homotoped to fixed-point-free?
+title: Fixed-point-free homotopies of reflected surfaces
 classification:
   areas:
   - topology

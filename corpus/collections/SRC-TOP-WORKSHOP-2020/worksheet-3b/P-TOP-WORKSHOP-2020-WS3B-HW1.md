@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW1
 kind: problem
-title: Find universal covers of a circle and a wedge of circles (warm-up)
+title: Universal covers of $S^1$ and $S^1\vee S^1$ (warm-up)
 classification:
   areas:
   - topology

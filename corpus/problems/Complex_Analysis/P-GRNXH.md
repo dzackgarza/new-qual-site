@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-GRNXH
 kind: problem
-title: Which interpolations $f(1/n)$ are possible for a holomorphic function on the
-  disk
+title: Holomorphic interpolation at sequences accumulating at zero
 classification:
   areas:
   - complex-analysis

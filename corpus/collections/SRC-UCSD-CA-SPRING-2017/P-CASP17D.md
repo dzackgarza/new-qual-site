@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP17D
 kind: problem
-title: "Construct entire and meromorphic functions with prescribed zeros and poles"
+title: Entire and meromorphic functions with prescribed zeros, poles, and residues
 classification:
   areas:
   - complex-analysis

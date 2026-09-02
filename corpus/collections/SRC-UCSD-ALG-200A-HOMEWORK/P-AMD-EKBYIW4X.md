@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-EKBYIW4X
 kind: problem
-title: $|G| < \infty$
+title: Characteristically simple finite groups and minimal normal subgroups
 classification:
   areas:
   - algebra
@@ -20,11 +20,16 @@ audit:
 
 ::: {.problem}
 $|G| < \infty$
+
 - Given: $G$ is characteristically simple
-   - Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
-   - Show: Whether or not the converse holds
+
+  - Show: $\exists H~(\text{simple})~ \ni G \cong H^n$.
+
+  - Show: Whether or not the converse holds
+
 - Given: $N \normal G$ minimal
-   - Show: $N$ is characteristically simple, $N \cong H^n$
+
+  - Show: $N$ is characteristically simple, $N \cong H^n$
 :::
 
 ::: {.solution}

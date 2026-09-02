@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-RIGIX
 kind: exercise
-title: Which spaces are completely normal
+title: Complete normality of standard spaces and constructions
 classification:
   areas:
   - topology

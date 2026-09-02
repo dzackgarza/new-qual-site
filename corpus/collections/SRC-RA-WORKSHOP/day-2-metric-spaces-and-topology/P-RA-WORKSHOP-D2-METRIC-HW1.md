@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW1
 kind: problem
-title: State the open-cover definition of compactness (warm-up)
+title: 'Compactness via open covers'
 classification:
   areas:
   - real-analysis

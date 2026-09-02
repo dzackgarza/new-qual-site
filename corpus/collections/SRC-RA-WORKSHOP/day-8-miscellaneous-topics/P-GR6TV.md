@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GR6TV
 kind: problem
-title: Find an example of a metric space $X$ and a subset $E \subseteq X$
+title: A closed bounded noncompact subset of a metric space
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ROLXZ
 kind: problem
-title: What can you say about the kernel of an irreducible representation?
+title: Kernels of irreducible representations and exactness of induction
 classification:
   areas:
   - algebra

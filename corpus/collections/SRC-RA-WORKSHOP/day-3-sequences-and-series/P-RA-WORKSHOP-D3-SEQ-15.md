@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-15
 kind: problem
-title: Prove the monotone, nth-term, and Cauchy condensation theorems
+title: Monotone convergence, the nth-term test, and Cauchy condensation
 classification:
   areas:
   - real-analysis

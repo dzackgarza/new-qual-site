@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZTLK4VHF
 kind: problem
-title: 'Given: $R$ a commutative ring, $x,y \in R$ nilpotent'
+title: Nilpotents in commutative rings and perturbations of units
 classification:
   areas:
   - algebra

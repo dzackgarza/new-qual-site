@@ -114,7 +114,7 @@ sections:
       imaginary parts are harmonic. The section closes by naming the other candidate
       definition, analyticity, and recording the one direction that needs no integration:
       a convergent power series is smooth on its disc, so analytic implies holomorphic.
-      The converse is the debt the next section pays.'
+      The converse is proved in [Cauchy Theory](cauchy-theory.html).'
     items:
       - ref: D-E7A5W
       - ref: PR-37QA5
@@ -232,7 +232,7 @@ sections:
   - slug: zeros-and-singularities
     title: Zeros and Singularities
     parent: cauchy-theory
-    lede: "The power series expansion from the last section is a local normal form,
+    lede: "The power series expansion from [Cauchy Theory](cauchy-theory.html) is a local normal form,
       and this section reads it off. A nonzero function's zero has a finite order because
       some coefficient is the first nonzero one, so zeros factor as a power times a
       nonvanishing function and are therefore isolated. Allowing negative powers classifies
@@ -241,7 +241,8 @@ sections:
       it a pole, whose leading coefficient is the residue; infinitely many makes it
       essential, where Casorati-Weierstrass shows the image of every punctured neighborhood
       is dense. Meromorphic means the only singularities are poles, which is the hypothesis
-      the next two sections run on."
+      used by [The Argument Principle](argument-principle.html) and [Residues and Contour
+      Integration](residues.html)."
     items:
       - ref: PR-5A64G
       - ref: PR-EWOP5
@@ -487,7 +488,7 @@ sections:
       Hadamard sharpens it for functions of finite order, where the exponential factor
       is a polynomial of bounded degree. The classical functions are what the machinery
       was built for: the product for sine is the identity behind the summation formulas
-      evaluated by residues two sections back, and Gamma and zeta are the standard examples
+      evaluated in [Residues and Contour Integration](residues.html), and Gamma and zeta are the standard examples
       of meromorphic continuation past the half-plane where their integral and series
       converge. This section is under-filled relative to the others and should be read
       as a pointer rather than a treatment. The corpus carries the definitions and the
@@ -519,8 +520,9 @@ sections:
   - slug: problems-from-the-qualifying-exams
     title: Problems from the Qualifying Exams
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: 'A revision pass rather than a new traversal. The sections above reach their
-      problems through the theory that answers them; these four panels reach the recurring
+    lede: 'A revision pass rather than a new traversal. The subject sections in the
+      [Complex Analysis guide](../GUIDE-COMPLEX-ANALYSIS.html) reach their problems through
+      the theory that answers them; these four panels reach the recurring
       shapes directly, one per family: a growth bound with the conclusion that the function
       is a polynomial, an expansion problem, a question about what survives a limit
       of holomorphic functions, and the counterexamples. Read after the theory, the

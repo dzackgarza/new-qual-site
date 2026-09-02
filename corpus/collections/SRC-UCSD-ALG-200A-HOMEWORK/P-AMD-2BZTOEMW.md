@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2BZTOEMW
 kind: problem
-title: 'Given: $|G| = p(p+1)$'
+title: A group of order $p(p+1)$ has a normal subgroup of order $p$ or $p+1$
 classification:
   areas:
   - algebra

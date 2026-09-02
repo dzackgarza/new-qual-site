@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DEZSR
 kind: problem
-title: Classify finite fields, their subfields, and their field extensions.
+title: Finite fields, subfields, extensions, and automorphisms
 classification:
   areas:
   - algebra

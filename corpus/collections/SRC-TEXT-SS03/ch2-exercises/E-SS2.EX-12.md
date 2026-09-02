@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-12
 kind: exercise
-title: "Let u be a real-valued function defined on the unit disc D"
+title: Harmonic conjugates and Poisson representation on the unit disk
 classification:
   areas:
   - complex-analysis
@@ -86,15 +86,12 @@ if $\operatorname{Re} f_1 = \operatorname{Re} f_2 = u$, then $f_1 - f_2$ is holo
 part (a) and the hypothesis that $u$ is continuous on the closure.
 :::
 
-<1>2. By the Cauchy integral formula (Exercise 11), for $z = re^{i\theta}$,
-$$f(z) = \frac{1}{2\pi}\int_0^{2\pi} \frac{e^{i\varphi} + z}{e^{i\varphi} - z} u(\varphi)\, d\varphi.$$
+<1>2. By the Cauchy integral formula (Exercise 11), for $z = re^{i\theta}$, $$f(z) = \frac{1}{2\pi}\int_0^{2\pi} \frac{e^{i\varphi} + z}{e^{i\varphi} - z} u(\varphi)\, d\varphi.$$
 ::: {.proof}
 the Cauchy integral formula for the disk, applied to $f$ and taking real parts.
 :::
 
-<1>3. Taking real parts gives the Poisson integral formula
-$$u(z) = \frac{1}{2\pi}\int_0^{2\pi} P_r(\theta - \varphi) u(\varphi)\, d\varphi,$$
-where $P_r(\gamma) = \frac{1 - r^2}{1 - 2r\cos\gamma + r^2}$.
+<1>3. Taking real parts gives the Poisson integral formula $$u(z) = \frac{1}{2\pi}\int_0^{2\pi} P_r(\theta - \varphi) u(\varphi)\, d\varphi,$$ where $P_r(\gamma) = \frac{1 - r^2}{1 - 2r\cos\gamma + r^2}$.
 ::: {.proof}
 $\operatorname{Re}\frac{e^{i\varphi} + re^{i\theta}}{e^{i\varphi} - re^{i\theta}} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
 :::

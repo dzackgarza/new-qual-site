@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-1
 kind: exercise
-title: "Describe geometrically the sets of points z in the complex plane defined by the "
+title: Geometric loci in the complex plane
 classification:
   areas:
   - complex-analysis

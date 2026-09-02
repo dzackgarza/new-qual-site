@@ -286,7 +286,7 @@ sections:
   - slug: sylow-theory
     title: Sylow Theory
     parent: group-actions-and-counting
-    lede: Sylow is the counting of the previous section applied to the set of p-subgroups.
+    lede: Sylow theory applies [Group Actions and Counting](group-actions-and-counting.html) to the set of p-subgroups.
       The first theorem says a subgroup of order the full power of p dividing the group
       order exists; the second says any two are conjugate, so there is really only one
       up to the action; the third says their number divides the complementary factor
@@ -597,8 +597,8 @@ sections:
       downstream, and both are recognised by their quotients: an ideal is prime exactly
       when the quotient is a domain, and maximal exactly when the quotient is a field,
       which makes maximal imply prime and shows the converse fails already in the integers
-      at the zero ideal. Zorn's lemma from the first section is what produces maximal
-      ideals in the first place."
+      at the zero ideal. [Preliminaries](preliminaries.html) supplies Zorn's lemma,
+      which produces maximal ideals in the first place."
     items:
       - ref: D-GURUB
       - ref: D-GXMDW
@@ -1076,7 +1076,7 @@ sections:
       integers this is the classification of finitely generated abelian groups. Over
       the polynomial ring in one variable it is the classification of linear operators,
       because a vector space with an operator is exactly a module over that ring --
-      which is why the next-to-last section of this guide is about canonical forms.
+      the bridge used again in [Canonical Forms](canonical-forms.html).
     items:
       - ref: PR-UVUS6
       - ref: D-SS34F
@@ -1554,15 +1554,12 @@ sections:
   - slug: semisimplicity-and-representations
     title: Semisimplicity and Representations
     parent: modules
-    lede: "A representation is a module over the group algebra, which puts the last
-      two sections to work on groups. Maschke says that when the characteristic does
-      not divide the order of the group the group algebra is semisimple, so every representation
-      splits into irreducibles; Artin-Wedderburn then says a semisimple ring is a finite
-      product of matrix rings over division rings, which is why the irreducibles are
-      finite in number and their dimensions square-sum to the order of the group. Schur's
-      lemma is the local statement that makes the character theory work, and characters
-      are class functions, so the character table is square: as many irreducibles as
-      conjugacy classes."
+    lede: >-
+      Representations are $k[G]$-modules. Under the semisimplicity hypotheses they
+      split into irreducibles; semisimple rings decompose into matrix blocks over
+      division rings; over an algebraically closed field, irreducibles have only
+      scalar equivariant endomorphisms. Characters are class functions, and the
+      number of irreducible characters equals the number of conjugacy classes.
     items:
       - ref: T-ZOTWN
       - ref: T-PIO2B

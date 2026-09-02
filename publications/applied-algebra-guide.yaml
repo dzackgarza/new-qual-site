@@ -117,9 +117,9 @@ sections:
     title: Representation Theory
     parent: matrix-analysis
     lede: >-
-      A representation is a homomorphism into a matrix group, so everything the
-      previous section established about unitary structure and diagonalisation is in
-      force from the start: averaging puts an invariant inner product on the space,
+      A representation is a homomorphism into a matrix group, so the unitary structure
+      and diagonalisation from [Matrix Analysis](matrix-analysis.html) are in force
+      from the start: averaging puts an invariant inner product on the space,
       which is what makes every finite-group representation over $\mathbb{C}$ a direct
       sum of irreducibles. The character is the trace, and because trace is invariant
       under conjugation it is a function on conjugacy classes; orthogonality of
@@ -199,7 +199,7 @@ sections:
     title: Symmetric Functions and the Symmetric Group
     parent: representation-theory
     lede: >-
-      For $S_n$ the general theory of the previous section becomes combinatorics.
+      For $S_n$, [Representation Theory](representation-theory.html) becomes combinatorics.
       Partitions of $n$ index the conjugacy classes and therefore the irreducibles,
       the Specht modules; standard Young tableaux count their dimensions;
       Murnaghan--Nakayama evaluates a character by removing rim hooks rather than by
@@ -314,8 +314,9 @@ sections:
     title: Invariant Theory
     parent: grobner-bases-and-varieties
     lede: >-
-      The last section is the other two joined: a finite group acts linearly on a
-      polynomial ring and the question is what survives. The invariant ring is
+      Invariant theory joins [Representation Theory](representation-theory.html) with
+      [Gröbner Bases and Varieties](grobner-bases-and-varieties.html): a finite group acts
+      linearly on a polynomial ring and the question is what survives. The invariant ring is
       finitely generated, generators can be produced by averaging over the group and
       reduced with a Gröbner basis, and the Hilbert series counts invariants degree by
       degree. Molien's formula computes that series from the character of the action

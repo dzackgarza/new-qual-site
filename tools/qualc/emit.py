@@ -1695,6 +1695,7 @@ def collection_page(
     con: sqlite3.Connection,
     src: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
+    repo_root: Path,
 ) -> Page:
     listed = _rows(
         con,
@@ -1716,7 +1717,36 @@ def collection_page(
             (src["id"],),
         )
     ]
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(con, listed, inline_cache, completion, provenance)
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
+        con,
+        listed,
+        inline_cache,
+        completion,
+        provenance,
+        repo_root,
+    )
+
+
+def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
+    """The checked-in Markdown extraction for one local provenance PDF.
+
+    This is a filesystem fact, not a semantic inference. External URLs have no
+    repository sibling. Local PDFs use one of the two established extraction
+    spellings: `extracted/<stem>.md` or `<stem>_extracted.md`.
+    """
+    if href.startswith(("http://", "https://")):
+        return None
+    source = repo_root / href
+    if source.suffix.lower() != ".pdf":
+        return None
+    candidates = (
+        source.parent / "extracted" / f"{source.stem}.md",
+        source.with_name(f"{source.stem}_extracted.md"),
+    )
+    for candidate in candidates:
+        if candidate.is_file() and candidate.stat().st_size:
+            return candidate.relative_to(repo_root).as_posix()
+    return None
 
 
 def _collection_listing(
@@ -1725,6 +1755,7 @@ def _collection_listing(
     inline_cache: dict[str, list[pf.Inline]],
     completion: str = "complete",
     provenance: list[str] | None = None,
+    repo_root: Path | None = None,
 ) -> list[pf.Block]:
     """The collection card's `problems:` / `sections:` list is the page body.
 
@@ -1743,7 +1774,21 @@ def _collection_listing(
         blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
     if provenance:
         blocks.append(pf.Header(pf.Str("Provenance"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(pf.Str(href), url=href))) for href in provenance]))
+        provenance_items: list[pf.ListItem] = []
+        for href in provenance:
+            inlines: list[pf.Inline] = [pf.Link(pf.Str(href), url=href)]
+            extraction = _pdf_extraction_href(repo_root, href) if repo_root is not None else None
+            if extraction is not None:
+                inlines.extend(
+                    (
+                        pf.Space(),
+                        pf.Str("—"),
+                        pf.Space(),
+                        pf.Link(pf.Str("Markdown extraction"), url=extraction),
+                    )
+                )
+            provenance_items.append(pf.ListItem(pf.Plain(*inlines)))
+        blocks.append(pf.BulletList(*provenance_items))
     blocks.append(
         pf.Para(
             pf.Str(str(len(listed))),
@@ -2695,7 +2740,7 @@ def project(
         kind, worked, order = collection_facts.get(src["id"], ("", "", ""))
         pages.append(
             (
-                collection_page(con, src, inline_cache),
+                collection_page(con, src, inline_cache, site.parent),
                 out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(
                     SearchDocument(

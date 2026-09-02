@@ -18,3 +18,7 @@ review: draft
 Let $k$ be a field with $\ch(k)$ not dividing $\size G$.
 Then any finite-dimensional representation of $G$ decomposes into a direct sum of irreducible representations.
 :::
+
+::: {.slogan}
+If $\ch(k)\nmid |G|$, finite-dimensional $k[G]$-modules split into irreducibles.
+:::

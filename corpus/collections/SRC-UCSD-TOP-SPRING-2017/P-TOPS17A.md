@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS17A
 kind: problem
-title: "Construct a covering space of S^1 vee S^1 corresponding to a given subgroup"
+title: The covering of $S^1\vee S^1$ associated to a specified subgroup
 classification:
   areas:
   - topology

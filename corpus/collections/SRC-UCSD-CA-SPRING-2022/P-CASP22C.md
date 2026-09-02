@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP22C
 kind: problem
-title: "Does (z^2+1)/(z^2-1) have a primitive on |z|>2?"
+title: 'Primitive of $(z^2+1)/(z^2-1)$ on $|z|>2$'
 classification:
   areas:
   - complex-analysis

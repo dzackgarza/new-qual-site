@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-CSSMXFWS
 kind: problem
-title: 'Given: $|G| =595$'
+title: Sylow subgroup normality in groups of order $595$
 classification:
   areas:
   - algebra

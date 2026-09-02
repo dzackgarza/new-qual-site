@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW3
 kind: problem
-title: State the Galois correspondence theorem for universal covers (warm-up)
+title: 'Galois correspondence for universal covers'
 classification:
   areas:
   - topology

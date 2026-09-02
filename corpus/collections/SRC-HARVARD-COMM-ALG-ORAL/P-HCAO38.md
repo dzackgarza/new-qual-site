@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO38
 kind: problem
-title: State and illustrate Nakayama's lemma
+title: Nakayama's lemma and an example
 classification:
   areas:
   - algebra

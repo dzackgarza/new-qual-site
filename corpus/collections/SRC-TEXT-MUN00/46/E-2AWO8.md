@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2AWO8
 kind: exercise
-title: Prove Theorem 46.7
+title: Uniform, compact-convergence, and pointwise topologies on $Y^X$
 classification:
   areas:
   - topology

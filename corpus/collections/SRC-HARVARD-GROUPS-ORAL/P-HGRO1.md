@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO1
 kind: problem
-title: Classify finitely generated abelian groups
+title: Classification of finitely generated abelian groups
 classification:
   areas: [algebra]
   topics: [Abelian Groups]

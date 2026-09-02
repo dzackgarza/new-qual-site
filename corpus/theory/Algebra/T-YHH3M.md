@@ -22,3 +22,7 @@ If $M \in \modsleft{G}$ is an irreducible representation of $G$ with $\dim_k M <
 The conclusion is about the endomorphism ring of $M$, not about $M$ itself.
 Over a general field the ring $\Endo_G(M)$ is a division algebra over $k$, and it collapses to $k$ exactly because $k$ is algebraically closed.
 :::
+
+::: {.slogan}
+Over an algebraically closed field, an irreducible representation has only scalar equivariant endomorphisms.
+:::

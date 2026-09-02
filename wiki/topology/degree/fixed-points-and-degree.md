@@ -16,7 +16,7 @@ problems:
 
 Degree theory assigns an integer to a map $f: S^n \to S^n$ that measures "how many times $f$ wraps the sphere around itself." This integer is a homotopy invariant — two maps with the same degree can be continuously deformed into each other — and it controls the existence of fixed points: if the degree is wrong, every map in the homotopy class must have a fixed point.
 
-The main theorems form a chain. Brouwer says every self-map of the ball has a fixed point. Lefschetz generalizes this to arbitrary compact spaces via the trace on homology. Borsuk-Ulam says every map $S^n \to \RR^n$ identifies some antipodal pair. The Hairy Ball theorem — that even-dimensional spheres admit no non-vanishing vector field — is a corollary of Borsuk-Ulam.
+The main theorems form a chain. [[T-S2OLJ|Brouwer]] gives fixed points for self-maps of the ball. [[T-BX4LD|Lefschetz]] detects fixed points by the alternating trace on homology. [[T-WNOWY|Borsuk-Ulam]] forces an antipodal pair to have the same image under every map $S^n \to \RR^n$. [[T-VQTR6|Hairy Ball]] rules out non-vanishing tangent vector fields on even-dimensional spheres.
 
 ## The degree
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZQASEE4Z36
 kind: problem
-title: State the Dominated Convergence Theorem for Lebesgue integrals.
+title: Dominated convergence under convergence in measure
 classification:
   areas:
   - real-analysis

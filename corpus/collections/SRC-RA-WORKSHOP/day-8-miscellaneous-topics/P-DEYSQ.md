@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DEYSQ
 kind: problem
-title: 'Prove : $f \in \mathcal{R}(\alpha)$ on $[a,b]$ if and'
+title: Riemann-Stieltjes integrability and additivity across a subdivision point
 classification:
   areas:
   - real-analysis

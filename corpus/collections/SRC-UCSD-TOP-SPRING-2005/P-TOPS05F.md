@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05F
 kind: problem
-title: "Can a space with the homotopy type of S^3 vee S^5 be a manifold or H-space?"
+title: 'Manifold and H-space realizability of $S^3\vee S^5$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU11-4
 kind: problem
-title: When is CP^n / CP^k homotopy-equivalent to a manifold
+title: 'Manifold homotopy types of $\mathbb{CP}^n/\mathbb{CP}^k$'
 classification:
   areas:
   - topology

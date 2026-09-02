@@ -51,8 +51,9 @@ sections:
   - slug: metric-spaces
     title: Metric Spaces, Compactness and Completeness
     parent: sequences-and-series-of-numbers
-    lede: 'A metric is the least structure under which the previous section''s arguments
-      still run, and the point of the abstraction is that two different-looking hypotheses
+    lede: 'A metric is the least structure under which the arguments from [Sequences and
+      Series of Numbers](sequences-and-series-of-numbers.html) still run, and the point of
+      the abstraction is that two different-looking hypotheses
       become the same one. Compactness has three faces here -- open covers, sequential
       compactness, and complete plus totally bounded -- and they agree in a metric space,
       which is why an exam problem may hand you any of the three. Heine-Borel says which
@@ -142,7 +143,8 @@ sections:
       makes the control quantitative by naming the remainder. Almost every exam problem
       in this section is the Mean Value Theorem applied once and then estimated. Bounded
       variation appears here because it is the class on which a derivative can still
-      be integrated back, which is what the next two sections need.
+      be integrated back, a point used in [Riemann-Stieltjes Integration](riemann-stieltjes-integration.html)
+      and [Sequences and Series of Functions](sequences-and-series-of-functions.html).
     items:
       - ref: T-RA-WORKSHOP-D5-4-1
       - ref: T-RA-WORKSHOP-D5-4-2
@@ -258,11 +260,10 @@ sections:
   - slug: measure-and-measurable-functions
     title: Measure and Measurable Functions
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'This section opens the second half of the guide and depends on the whole
-      of the first: it exists because the Riemann integral of the fifth section fails
-      on the limits of the sixth. That dependence is stated here rather than in the
-      study-path tree, which indents by depth and becomes unreadable past about seven
-      levels. The repair is to replace the partition of the domain by a measure on it.
+    lede: '[Riemann-Stieltjes Integration](riemann-stieltjes-integration.html) is not
+      stable under the limiting operations in [Sequences and Series of Functions](sequences-and-series-of-functions.html).
+      Measure theory repairs that failure by replacing partitions of the domain with a
+      measure on it.
       Outer measure is defined for every set and is only countably subadditive; the
       Caratheodory condition selects the subfamily on which it is additive, and that
       family is the one closed under the countable operations every later argument performs.
@@ -454,7 +455,8 @@ sections:
   - slug: fourier-analysis
     title: Fourier Analysis
     parent: hilbert-spaces-and-duality
-    lede: 'The Fourier transform is the one operator that uses every preceding section:
+    lede: 'The Fourier transform combines [The Lebesgue Integral](the-lebesgue-integral.html),
+      [Lp Spaces and Convolution](lp-spaces.html), and [Hilbert Spaces and Duality](hilbert-spaces-and-duality.html):
       it is defined by an integral, bounded on $L^1$, an isometry on $L^2$ by Plancherel,
       and it turns convolution into multiplication. Riemann-Lebesgue is the statement
       that the transform of an $L^1$ function has small tails, which is what forbids

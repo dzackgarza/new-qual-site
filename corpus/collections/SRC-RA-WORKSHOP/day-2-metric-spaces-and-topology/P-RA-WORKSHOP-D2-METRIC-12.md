@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-12
 kind: problem
-title: Prove the finite-or-countable interval decomposition of open subsets of R
+title: Open subsets of $\mathbb R$ are finite or countable unions of disjoint open intervals
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZTRBMIG65D
 kind: problem
-title: State and prove the Cauchy integral formula for holomorphic
+title: Cauchy integral formula for holomorphic functions
 classification:
   areas:
   - complex-analysis
