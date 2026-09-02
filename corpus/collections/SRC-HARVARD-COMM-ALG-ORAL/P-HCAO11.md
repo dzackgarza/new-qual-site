@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Modules
+  - Homomorphisms
+  - Rings
 relations: []
 review: draft
 ---

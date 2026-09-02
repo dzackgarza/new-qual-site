@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Modules
+  - Nakayama's Lemma
+  - Maximal Ideals
 relations: []
 review: draft
 audit:

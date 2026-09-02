@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Factorization
+  - Holomorphic Functions
+  - Prime Ideals
 relations: []
 review: draft
 ---

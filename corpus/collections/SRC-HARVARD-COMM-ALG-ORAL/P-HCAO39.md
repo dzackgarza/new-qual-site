@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Local Rings
+  - Matrices
+  - Invertibility
 relations: []
 review: draft
 ---

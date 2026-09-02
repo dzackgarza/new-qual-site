@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Nakayama's Lemma
+  - Jacobson Radical
+  - Modules
 relations: []
 review: draft
 ---

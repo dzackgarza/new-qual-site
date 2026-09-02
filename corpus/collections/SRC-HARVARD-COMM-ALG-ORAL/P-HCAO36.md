@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Faithful Flatness
+  - Ideals
+  - Modules
 relations: []
 review: draft
 ---

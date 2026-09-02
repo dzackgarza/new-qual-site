@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Integral Closure
+  - Krull Dimension
+  - Noetherian Rings
 relations: []
 review: draft
 audit:

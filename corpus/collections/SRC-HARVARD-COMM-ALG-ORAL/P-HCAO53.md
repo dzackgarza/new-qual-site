@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Associated Primes
+  - Primary Decomposition
+  - Polynomial Ideals
 relations: []
 review: draft
 ---

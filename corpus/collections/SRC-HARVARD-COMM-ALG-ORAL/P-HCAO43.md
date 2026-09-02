@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Localization
+  - Annihilators
+  - Modules
 relations: []
 review: draft
 ---

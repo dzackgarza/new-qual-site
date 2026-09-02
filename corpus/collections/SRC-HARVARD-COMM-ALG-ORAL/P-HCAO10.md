@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Prime Ideals
+  - Maximal Ideals
 relations: []
 review: draft
 ---

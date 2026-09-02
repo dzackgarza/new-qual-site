@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Principal Ideal Domains
+  - Krull Dimension
+  - Prime Ideals
 relations: []
 review: draft
 ---

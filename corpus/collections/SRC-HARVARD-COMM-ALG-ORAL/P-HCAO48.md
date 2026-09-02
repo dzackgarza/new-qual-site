@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Dedekind Domains
+  - Ideals
 relations: []
 review: draft
 ---

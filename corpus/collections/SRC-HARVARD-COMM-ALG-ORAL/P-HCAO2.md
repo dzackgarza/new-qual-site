@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Modular Arithmetic
+  - Unit Groups
 relations: []
 review: draft
 ---

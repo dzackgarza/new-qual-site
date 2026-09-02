@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Hilbert Functions
+  - Hilbert Polynomials
+  - Graded Rings
 relations: []
 review: draft
 audit:

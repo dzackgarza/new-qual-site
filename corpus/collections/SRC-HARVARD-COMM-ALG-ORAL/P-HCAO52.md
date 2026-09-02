@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Noetherian Rings
+  - Homomorphisms
+  - Ideals
 relations: []
 review: draft
 ---

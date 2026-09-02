@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Localization
+  - Local Rings
+  - Modules
 relations: []
 review: draft
 ---

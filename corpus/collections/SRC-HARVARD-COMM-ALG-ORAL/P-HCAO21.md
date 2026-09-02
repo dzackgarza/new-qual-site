@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Gorenstein Rings
+  - Hom and Duality
+  - Modules
 relations: []
 review: draft
 ---

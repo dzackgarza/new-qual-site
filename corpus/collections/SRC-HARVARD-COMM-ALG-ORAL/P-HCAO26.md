@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Hilbert Polynomials
+  - Krull Dimension
+  - Algebraic Geometry
 relations: []
 review: draft
 audit:

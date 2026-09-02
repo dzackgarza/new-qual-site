@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Ideals
+  - Chinese Remainder Theorem
 relations: []
 review: draft
 audit:

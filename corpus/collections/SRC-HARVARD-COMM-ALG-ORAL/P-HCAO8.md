@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Prime Ideals
+  - Maximal Ideals
+  - Artinian Rings
 relations: []
 review: draft
 audit:

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Cohen–Macaulay Rings
+  - Gorenstein Rings
+  - Homological Algebra
 relations: []
 review: draft
 ---

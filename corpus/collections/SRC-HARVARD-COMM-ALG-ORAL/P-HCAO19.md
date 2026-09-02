@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Cohen–Macaulay Rings
+  - Noetherian Rings
+  - Krull Dimension
 relations: []
 review: draft
 ---

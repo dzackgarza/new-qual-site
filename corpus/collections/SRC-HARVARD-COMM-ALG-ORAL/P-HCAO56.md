@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Gröbner Bases
+  - Polynomial Ideals
 relations: []
 review: draft
 ---

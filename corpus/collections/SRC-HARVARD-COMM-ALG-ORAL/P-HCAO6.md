@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Principal Ideal Domains
+  - Factorization
+  - Maximal Ideals
 relations: []
 review: draft
 ---

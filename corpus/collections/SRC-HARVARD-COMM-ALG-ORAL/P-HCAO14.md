@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Division Rings
+  - Polynomials
+  - Ring Theory
 relations: []
 review: draft
 ---

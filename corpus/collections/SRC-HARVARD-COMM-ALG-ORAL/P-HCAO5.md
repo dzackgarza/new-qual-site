@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Polynomial Roots
+  - Field Extensions
 relations: []
 review: draft
 audit:

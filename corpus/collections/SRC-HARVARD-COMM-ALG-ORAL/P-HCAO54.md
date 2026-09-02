@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Integral Closure
+  - Singularities
+  - Algebraic Geometry
 relations: []
 review: draft
 ---

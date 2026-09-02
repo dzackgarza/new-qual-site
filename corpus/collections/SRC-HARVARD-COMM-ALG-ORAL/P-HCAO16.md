@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - Commutative Algebra
+  - Dedekind Domains
+  - Noetherian Rings
+  - Integral Closure
 relations: []
 review: draft
 ---
