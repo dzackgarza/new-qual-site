@@ -9,7 +9,6 @@ classification:
   topics:
   - Characteristic
   - Fields
-  - Finite Fields
 relations: []
 review: draft
 ---

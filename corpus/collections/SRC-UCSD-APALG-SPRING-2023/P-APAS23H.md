@@ -8,7 +8,7 @@ classification:
   - applied-algebra
   topics:
   - Representation Theory
-  - Modules
+  - Inner Product Spaces
 relations: []
 review: draft
 ---

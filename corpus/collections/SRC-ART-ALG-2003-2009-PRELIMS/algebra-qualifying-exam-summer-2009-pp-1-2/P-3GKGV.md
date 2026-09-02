@@ -7,9 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - Noetherian Rings
+  - Artinian Rings
   - Rings
-  - Modules
 relations: []
 review: draft
 ---

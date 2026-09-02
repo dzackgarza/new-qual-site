@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Fields
-  - Rings
+  - Valuation Rings
+  - Discrete Valuation Rings
   - Commutative Algebra
 relations: []
 review: draft

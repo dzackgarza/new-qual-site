@@ -9,7 +9,7 @@ classification:
   topics:
   - Semisimplicity
   - Rings
-  - Algebras
+  - Structure Theorem
 relations: []
 review: draft
 ---

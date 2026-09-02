@@ -9,7 +9,6 @@ classification:
   topics:
   - Local Rings
   - Maximal Ideals
-  - Fields
 relations: []
 review: draft
 ---

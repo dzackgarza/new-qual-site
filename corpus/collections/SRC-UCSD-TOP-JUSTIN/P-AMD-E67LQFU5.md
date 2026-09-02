@@ -8,9 +8,9 @@ classification:
   areas:
   - topology
   topics:
+  - Tensor Products
   - Modules
   - Homological Algebra
-  - Groups
 relations: []
 review: draft
 audit:

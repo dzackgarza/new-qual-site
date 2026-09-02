@@ -9,7 +9,6 @@ classification:
   topics:
   - Modules
   - Torsion
-  - Fields
 relations: []
 review: draft
 ---

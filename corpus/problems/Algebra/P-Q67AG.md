@@ -7,9 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - Integral Domains
   - Rings
-  - Fields
+  - Invertibility
 relations: []
 review: draft
 ---

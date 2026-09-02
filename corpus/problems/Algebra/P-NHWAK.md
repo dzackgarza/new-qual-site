@@ -9,7 +9,8 @@ classification:
   topics:
   - Jacobson Radical
   - Ideals
-  - Algebras
+  - Maximal Ideals
+  - Prime Ideals
 relations: []
 review: draft
 audit:
