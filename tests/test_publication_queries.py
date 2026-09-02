@@ -264,8 +264,12 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
 
     first = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html")
     second = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "second.html")
-    assert first.root.find_all("section", **{"data-card-id": "PRB-CPT"}) == []
-    assert len(second.root.find_all("section", **{"data-card-id": "PRB-CPT"})) == 1
+    # A referenced card is transcluded as its Stacks statement block, whose id is
+    # the card id; it belongs to whichever section names it, not both.
+    assert first.root.find_all("div", id="PRB-CPT") == []
+    blocks = second.root.find_all("div", id="PRB-CPT")
+    assert len(blocks) == 1
+    assert "qual-section" in blocks[0].attrs["class"].split()
 
 
 def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> None:

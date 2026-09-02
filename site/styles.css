@@ -1021,25 +1021,6 @@ div.panel > ul {
   margin-bottom: 0;
 }
 
-.publication-card {
-  padding: 0.25rem 0 1.5rem;
-  border-bottom: 1px solid var(--line);
-  scroll-margin-top: 6rem;
-}
-
-.publication-card > h2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-
-.publication-card > h2 code {
-  color: var(--muted);
-  font-size: 0.68em;
-  font-weight: 500;
-}
-
 .relation-groups {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

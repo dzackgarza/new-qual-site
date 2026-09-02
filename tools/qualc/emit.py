@@ -1954,28 +1954,6 @@ def _manifest_card(
     return matches[0]
 
 
-def _publication_card(
-    card: sqlite3.Row,
-    inline_cache: dict[str, list[pf.Inline]],
-) -> list[pf.Block]:
-    card_id = html.escape(card["id"], quote=True)
-    return [
-        pf.RawBlock(
-            f'<section class="publication-card" data-card-id="{card_id}">',
-            format="html",
-        ),
-        pf.Header(
-            pf.Link(
-                *_inlines(card["title"], inline_cache),
-                url=card["id"],
-            ),
-            level=2,
-        ),
-        *_blocks(card),
-        pf.RawBlock("</section>", format="html"),
-    ]
-
-
 def publication_root_page(
     manifest: PublicationManifest,
     inline_cache: dict[str, list[pf.Inline]],
@@ -2080,13 +2058,11 @@ def publication_section_page(
     blocks: list[pf.Block] = [
         pf.Para(*_inlines(section.lede, inline_cache)),
     ]
+    counts: Counter[str] = Counter()
     for item in section.items:
         match item:
             case ReferenceItem(ref=card_id):
-                blocks += _publication_card(
-                    _manifest_card(con, card_id),
-                    inline_cache,
-                )
+                blocks.append(_transclude(_manifest_card(con, card_id), counts))
             case QueryItem(query=query):
                 hits = run_query(con, query, manifest.area)
                 if not hits:
