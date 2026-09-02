@@ -510,6 +510,52 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
     assert "Algebra homework 3, Spring 2020, problem 2" in uncommented
 
 
+def test_textbook_source_is_not_exam_metadata_and_stays_separate_from_guide_appearances(tmp_path: Path) -> None:
+    """A textbook date belongs to the source, not to the problem's exam facts.
+
+    The same problem may also be deliberately placed in a study guide. Those
+    two edges answer different questions and therefore render in separate
+    relation groups: where the problem came from, and where the site uses it.
+    """
+    work = fixture_repo(tmp_path)
+    corpus = work / "corpus"
+    (corpus / "P-INDEXP.md").write_text((corpus / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
+    textbook = work / "corpus" / "SRC-DUMMIT.md"
+    textbook.write_text(
+        textbook.read_text().replace(
+            "    year: 2004\n",
+            "    year: 2004\n  sections:\n  - name: '4.1'\n    problems:\n    - id: P-INDEXP\n      comment: Exercise 4.1.7\n",
+            1,
+        )
+    )
+    (work / "publications" / "algebra-guide.yaml").write_text(
+        """schema: qual/publication@2
+id: GUIDE-ALGEBRA
+kind: study-guide
+title: Algebra
+lede: A short algebra guide.
+sections:
+- slug: groups
+  title: Groups
+  parent: GUIDE-ALGEBRA
+  lede: The group-theory section.
+  items:
+  - ref: P-INDEXP
+"""
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = (work / "build" / "quarto" / "_site" / "tag" / "P-INDEXP.html").read_text()
+    assert "<dt>Seen at</dt>" not in page
+    assert "<dt>Years</dt>" not in page
+    assert 'data-relation-group="source-collections"' in page
+    assert "Dummit and Foote, Abstract Algebra, Exercise 4.1.7" in page
+    assert 'data-relation-group="guide-appearances"' in page
+    assert ">Groups</a>" in page
+
+
 def test_commented_entry_must_still_be_an_id(tmp_path: Path) -> None:
     """A comment does not buy an entry out of the id check. Prose in the id
     position fails the build rather than entering the catalog as a problem."""

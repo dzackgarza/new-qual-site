@@ -497,20 +497,22 @@ are generated automatically to populate this information. Cards should not
 contain prose like "this problem appears in Exam X" or "see also collection Y"
 — the site renders this from collection relationships.
 
-# Card subtitle
+# Card titles and source locators
 
-Any card may carry `subtitle:`, a second line shown under the card's name.
+A card title names the mathematics on the card. A textbook section number, exam
+problem number, or other source locator is not a title. Source locators belong to
+the collection entry that lists the problem, because one problem may occur at
+different locations in different sources.
 
 ```yaml
-title: Complex numbers $x+y\sqrt2$ form a subfield of $\CC$
-subtitle: Hoffman and Kunze 1.2.1
+- id: P-EXAMPLE
+  comment: Hungerford 4.1.7
 ```
 
-The title names the card. The subtitle is the smaller line beneath it, and it
-never replaces the title: a card whose only name is `Munkres §52.2` is an
-untitled card, not a subtitled one. The field is free text and optional. Absent
-means the card has no subtitle. Nothing derives one, so a card with no second
-line to show gets no `subtitle:` key rather than a copy of its own title.
+The card itself keeps only its mathematical name. The rendered Source Collections
+panel combines the collection name with that appearance comment. Do not add a
+card-level `subtitle:` for provenance; that field was retired once collection
+appearances became the canonical home for locators.
 
 # Review prompts
 

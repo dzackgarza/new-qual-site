@@ -61,7 +61,8 @@ source:
     problems:
     - P-457V6
     - P-7J6RO
-    - P-E5Y7W
+    - id: P-E5Y7W
+      comment: Hungerford 4.1.7
     - P-CPUQK
   - name: IV.2
     problems:

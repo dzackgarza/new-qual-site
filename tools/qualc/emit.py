@@ -1669,15 +1669,18 @@ def problem_page(
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
         blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
 
-    return {
+    meta: dict[str, object] = {
         "title": card["title"],
         "subtitle": card["id"],
         "area": ", ".join(a.replace("-", " ").title() for a in areas),
-        "institutions": ", ".join(institutions) or "—",
-        "years": ", ".join(years) or "—",
         "review": card["review"],
         "categories": sorted(set(topics + areas + institutions + years)),
-    }, blocks
+    }
+    if institutions:
+        meta["institutions"] = ", ".join(institutions)
+    if years:
+        meta["years"] = ", ".join(years)
+    return meta, blocks
 
 
 def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
