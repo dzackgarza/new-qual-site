@@ -469,3 +469,31 @@ def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) 
     assert heading_ids == {"groups", "sylow", "rings"}
     # The same rail is offered as a disclosure where the layout hides the rail.
     assert built.root.find_all("details", **{"class": "page-toc-narrow"}) != []
+
+
+def test_contents_rail_excludes_relation_apparatus(tmp_path: Path) -> None:
+    site_root = tmp_path / "_site"
+    assets_root = tmp_path / "assets"
+    assets_root.mkdir()
+    write_page(
+        site_root,
+        Path("tag/P-ONE.html"),
+        {"title": "One"},
+        (
+            "<h2>Authored section</h2><p>Mathematics.</p>"
+            '<section class="relation-group" data-relation-group="wiki-backlinks">'
+            "<h2>What links to this</h2><ul><li>Backlink</li></ul></section>"
+        ),
+        "",
+        {},
+        build_asset_catalog(assets_root),
+        StandardPage(Listing()),
+    )
+
+    built = read_html(site_root / "tag" / "P-ONE.html")
+    aside = built.root.find_all("aside", id="page-toc")[0]
+    assert aside.text.startswith("Contents")
+    assert [a.text for a in aside.find_all("a")] == ["Authored section"]
+    body = built.root.find_all("article", **{"class": "page-body"})[0]
+    relation = body.find_all("section", **{"data-relation-group": "wiki-backlinks"})[0]
+    assert relation.find_all("h2")[0].text == "What links to this"
