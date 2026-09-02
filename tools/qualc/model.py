@@ -84,7 +84,6 @@ DateSpec = Annotated[
 # --- minimal card schema ----------------------------------------------------
 
 RelationKind = Literal[
-    "solves",
     "hints-at",
     "uses",
     "related-to",
@@ -355,10 +354,6 @@ class CollectionCard(CardBase):
 # Every remaining kind is CardBase plus a prose body. They are separate classes
 # rather than one class with a `kind` field because the union is what makes an
 # unknown kind a build failure instead of a silently accepted string.
-class SolutionCard(CardBase):
-    kind: Literal["solution"]
-
-
 class HintCard(CardBase):
     kind: Literal["hint"]
 
@@ -435,7 +430,6 @@ class SloganCard(CardBase):
 Card = Annotated[
     ProblemCard
     | CollectionCard
-    | SolutionCard
     | HintCard
     | DefinitionCard
     | TheoremCard
@@ -455,10 +449,12 @@ Card = Annotated[
     Field(discriminator="kind"),
 ]
 
-# Authored fenced-div class -> card kind. Total over every class measured in the
-# two prose repos; an unmapped class is a build failure, never silent prose.
-# `warnings` is plural in the source and singular as a kind: the div vocabulary
-# is an input format, not the domain type.
+# Authored fenced-div class -> semantic section kind. Total over every class
+# measured in the two prose repos; an unmapped class is a build failure, never
+# silent prose. A section kind need not be a card kind: `solution` deliberately
+# exists only inside a problem/exercise card. `warnings` is plural in the source
+# and singular downstream: the div vocabulary is an input format, not the
+# domain type.
 DIV_CLASS_TO_KIND = {
     "problem": "problem",
     "solution": "solution",
@@ -668,7 +664,7 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
 
 
 class UnmappedDivClass(ValueError):
-    """A fenced-div class with no card kind. Carries the classes so the caller
+    """A fenced-div class with no semantic section kind. Carries the classes so the caller
     can emit a typed diagnostic rather than re-parsing its own message."""
 
     def __init__(self, classes: list[str]) -> None:

@@ -10,4 +10,4 @@ This page is an index of existing algebra solution collections, not a second cop
 [[algebra/rings-and-ideals/solutions|Solutions (Rings)]] is the field and Galois homework solutions already in this subject.
 [[algebra/groups/resources|Groups, references]] includes the group-theory homework solutions.
 
-Authored solutions in the corpus sit on the problem cards they solve (incoming `solves` relations), not in a separate algebra-only ledger.
+Authored solutions in the corpus live directly on the problem cards they answer, not in a separate algebra-only ledger.

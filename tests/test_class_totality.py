@@ -37,15 +37,19 @@ A group is a monoid whose every element is invertible.
 
 NESTED_IN_QUOTE = """---
 schema: qual/card@1
-id: S-QUOTE1
-kind: solution
-title: A solution whose proof sits inside a block quote
+id: P-QUOTE1
+kind: problem
+title: A problem whose solution contains a quoted proof
 classification:
   areas: [algebra]
   topics: [groups]
 relations: []
 review: draft
 ---
+
+::: problem
+Show the subgroup index is an integer.
+:::
 
 ::: solution
 The argument is quoted from the original sheet.
@@ -85,5 +89,5 @@ def test_section_inside_a_non_div_container_is_still_found(tmp_path: Path) -> No
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'S-QUOTE1'")]
-    assert kinds == ["solution", "proof"], kinds
+    kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'P-QUOTE1'")]
+    assert kinds == ["problem", "solution", "proof"], kinds

@@ -1058,7 +1058,7 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
         """
         select r.target_id, r.kind as relation_kind, c.*
         from relations r join cards c on c.id=r.source_id
-        where r.kind in ('hints-at', 'solves')
+        where r.kind='hints-at'
         order by r.target_id, r.kind, c.id
         """,
     ):
@@ -1315,13 +1315,11 @@ def problem_json(
     body = _lamport_json_blocks(body)
     _rename_json(body)
     hints: list[dict] = []
-    solutions: list[dict] = []
-    for kind, into in (("hints-at", hints), ("solves", solutions)):
-        for rel in _related_rows(data, card["id"], kind):
-            rb = _dup(jcache[rel["id"]])
-            _rename_json(rb)
-            into += rb
-    body = _hints_before_solutions(body, hints) + solutions
+    for rel in _related_rows(data, card["id"], "hints-at"):
+        rb = _dup(jcache[rel["id"]])
+        _rename_json(rb)
+        hints += rb
+    body = _hints_before_solutions(body, hints)
     body.extend(_prompts_json(card))
     body.extend(
         _relation_groups_json(
@@ -1705,9 +1703,8 @@ def problem_page(
 
     blocks = _blocks(card)
 
-    for kind in ("hints-at", "solves"):
-        for rel in _related(con, card["id"], kind):
-            blocks += _blocks(rel)
+    for rel in _related(con, card["id"], "hints-at"):
+        blocks += _blocks(rel)
 
     uses = _rows(
         con,
@@ -2084,8 +2081,7 @@ def index_page(
           (select count(*) from exam_sources) as sittings,
           (select count(distinct institution) from exam_sources) as institutions,
           (select count(*) from cards where kind in ('problem', 'exercise')
-             and (id in (select card_id from sections where section_kind = 'solution')
-                  or id in (select target_id from relations where kind = 'solves'))) as solved
+             and id in (select card_id from sections where section_kind = 'solution')) as solved
         """,
     )[0]
     output = _successful_outputs(
@@ -2733,8 +2729,7 @@ def project(
               (select count(*) from collection_problems where collection_id=s.id) as problems,
               (select count(*) from collection_problems cp
                where cp.collection_id=s.id
-                 and (cp.problem_id in (select card_id from sections where section_kind='solution')
-                      or cp.problem_id in (select target_id from relations where kind='solves'))) as solved
+                 and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
             from sources s left join exam_sources e on e.id=s.id
             """,
         )

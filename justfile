@@ -58,9 +58,9 @@ complete *args:
 backlog:
     uv run python tools/backlog.py
 
-# Print n random unsolved problem/exercise cards: no solution section and no incoming solves relation
+# Print n random unsolved problem/exercise cards: no solution section
 sample-unsolved n="5": build
-    @sqlite3 -box build/catalog.sqlite "select id from cards where kind in ('problem', 'exercise') and id not in (select card_id from sections where section_kind = 'solution') and id not in (select target_id from relations where kind = 'solves') order by random() limit {{ n }}"
+    @sqlite3 -box build/catalog.sqlite "select id from cards where kind in ('problem', 'exercise') and id not in (select card_id from sections where section_kind = 'solution') order by random() limit {{ n }}"
 
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:
