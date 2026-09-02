@@ -160,7 +160,10 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
     """
     work = fixture_repo(
         tmp_path,
-        {"SRC-PACKET.md": COMPILATION_LISTING_A_SIBLING, "P-PACKET-1.md": PACKET_PROBLEM},
+        {
+            "SRC-PACKET.md": COMPILATION_LISTING_A_SIBLING,
+            "P-PACKET-1.md": PACKET_PROBLEM,
+        },
     )
 
     result = run_qualc("build", work)
@@ -184,7 +187,9 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
     assert dead == []
 
 
-def test_the_not_found_page_resolves_its_links_from_the_site_root(tmp_path: Path) -> None:
+def test_the_not_found_page_resolves_its_links_from_the_site_root(
+    tmp_path: Path,
+) -> None:
     """404.html is served for a request at any depth, so `../` cannot be used.
 
     It installs a `<base>` naming the site root instead. The stylesheet and the
@@ -240,7 +245,9 @@ One sitting.
 """
 
 
-def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(tmp_path: Path) -> None:
+def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(
+    tmp_path: Path,
+) -> None:
     """Spring 2019 was sat before Fall 2019, so it is listed first.
 
     Ordering by card id put Fall ahead of Spring in every year on the real
@@ -285,7 +292,9 @@ Exhibit an ideal of $\\mathbb{Z}[x]$ that no single element generates.
 """
 
 
-def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(tmp_path: Path) -> None:
+def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
+    tmp_path: Path,
+) -> None:
     """483 of the 4921 titles begin with mathematics, and `$` sorts under every
     letter, so ordering by the raw title opened the page on a wall of formulas
     with nothing above them naming a subject.
@@ -385,3 +394,40 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
 
     # A row shows the same name, which it reads off the control rather than
     # being sent a second copy of.
+
+
+def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) -> None:
+    """The in-page Contents rail is built at compile time, not in the browser.
+
+    A page's own <h2>/<h3> become the rail, in document order, each anchor
+    resolving to an id written onto the heading; an <h3> is marked a
+    subsection. This is the guarantee app.js used to provide at load, now the
+    compiler's.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "Algebra" / "reading-order.md").write_text(
+        "---\ntitle: Reading Order\norder: 5\n---\n\n# Reading Order\n\n## Groups\n\ntext\n\n### Sylow\n\nmore\n\n## Rings\n\neven more\n"
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    built = read_html(work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "reading-order.html")
+    aside = built.root.find_all("aside", id="page-toc")[0]
+    assert [a.attrs["href"] for a in aside.find_all("a")] == [
+        "#groups",
+        "#sylow",
+        "#rings",
+    ]
+    assert [a.text for a in aside.find_all("a")] == ["Groups", "Sylow", "Rings"]
+    assert [li.attrs.get("class", "") for li in aside.find_all("li")] == [
+        "",
+        "toc-subsection",
+        "",
+    ]
+
+    body = built.root.find_all("article", **{"class": "page-body"})[0]
+    heading_ids = {h.attrs["id"] for h in body.find_all("h2")} | {h.attrs["id"] for h in body.find_all("h3")}
+    assert heading_ids == {"groups", "sylow", "rings"}
+    # The same rail is offered as a disclosure where the layout hides the rail.
+    assert built.root.find_all("details", **{"class": "page-toc-narrow"}) != []

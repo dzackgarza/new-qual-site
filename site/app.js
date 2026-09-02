@@ -107,7 +107,8 @@
     for (const { axis, select } of facets) {
       for (const option of select.options) names.set(`${axis}:${option.value}`, option.textContent);
     }
-    const named = (axis, values) => (values || []).map((value) => names.get(`${axis}:${value}`) || value);
+    const named = (axis, values) =>
+      (values || []).map((value) => names.get(`${axis}:${value}`) || value);
 
     let held = [];
     let drawn = 0;
@@ -206,50 +207,5 @@
     run();
     listingSearch.addEventListener("input", changed);
     for (const { select } of facets) select.addEventListener("change", changed);
-  }
-
-  const headings = [
-    ...document.querySelectorAll(".page-body h2, .page-body h3"),
-  ].filter((heading) => !heading.closest(".relation-group, .card-appearances, footer, .metadata-panel"));
-  const toc = document.querySelector("#page-toc");
-  if (headings.length && toc) {
-    const label = document.createElement("strong");
-    label.textContent = "Contents";
-    const list = document.createElement("ol");
-    for (const heading of headings) {
-      if (!heading.id) {
-        heading.id = heading.textContent
-          .toLocaleLowerCase()
-          .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
-          .replace(/(^-|-$)/g, "");
-      }
-      const item = document.createElement("li");
-      const link = document.createElement("a");
-      link.href = `#${heading.id}`;
-      // Copying textContent flattened a heading's mathematics to its source
-      // characters, so a card titled with a formula read as raw TeX in the
-      // index. Cloning the nodes keeps the math markup, which MathJax then
-      // typesets here the same as it does in the heading itself.
-      link.append(...heading.cloneNode(true).childNodes);
-      item.className = heading.tagName === "H3" ? "toc-subsection" : "";
-      item.append(link);
-      list.append(item);
-    }
-    toc.append(label, list);
-    // The rail is hidden on narrow viewports, which left long pages with no
-    // in-page navigation at all. Asking the layout whether the rail is showing
-    // keeps its breakpoint in one place: when it is not, the same headings go
-    // above the article as a disclosure, like the mobile wiki nav.
-    if (getComputedStyle(toc).display === "none") {
-      const narrow = document.createElement("details");
-      narrow.className = "page-toc-narrow";
-      const summary = document.createElement("summary");
-      summary.textContent = "Contents";
-      const nav = document.createElement("nav");
-      nav.setAttribute("aria-label", "Contents");
-      nav.append(list.cloneNode(true));
-      narrow.append(summary, nav);
-      document.querySelector(".page-body").before(narrow);
-    }
   }
 })();

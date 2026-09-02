@@ -576,6 +576,71 @@ def _rewrite_body(
     return pattern.sub(replace, body)
 
 
+# The in-page Contents rail. Pandoc's fragment writer leaves authored headings
+# without an id, so the rail used to be built in the browser: app.js read the
+# rendered <h2>/<h3>, slugified an id onto each, and cloned the node into the
+# aside. That is work the build can do once. Here the same pass runs over the
+# finished body HTML: every heading outside the relation/footer apparatus takes
+# an id (written back so the anchor resolves) and earns a Contents entry that
+# reuses the heading's own rendered markup, mathematics included.
+_RELATION_SECTION = re.compile(r'<section class="relation-group"[\s\S]*?</section>')
+_HEADING = re.compile(r"<h([23])(\s[^>]*)?>([\s\S]*?)</h\1>")
+_TAG = re.compile(r"<[^>]+>")
+
+
+def _heading_slug(text: str) -> str:
+    slug = re.sub(r"[^\w]+", "-", text, flags=re.UNICODE).strip("-").casefold()
+    return slug or "section"
+
+
+def _toc(body: str) -> tuple[str, str]:
+    """Return (body with heading ids, Contents markup); empty markup if no headings.
+
+    Relation groups are masked before the heading pass: their <h2> is site
+    apparatus, not a section of the page, so it must neither take an id nor
+    appear in the rail.
+    """
+    masked: list[str] = []
+
+    def mask(match: re.Match[str]) -> str:
+        masked.append(match.group(0))
+        return f"\x00{len(masked) - 1}\x00"
+
+    work = _RELATION_SECTION.sub(mask, body)
+    entries: list[tuple[int, str, str]] = []
+    used: set[str] = set()
+
+    def annotate(match: re.Match[str]) -> str:
+        level = int(match.group(1))
+        attrs = match.group(2) or ""
+        inner = match.group(3)
+        existing = re.search(r'id="([^"]+)"', attrs)
+        if existing:
+            anchor = existing.group(1)
+        else:
+            base = _heading_slug(_TAG.sub("", inner))
+            anchor, n = base, 1
+            while anchor in used:
+                n += 1
+                anchor = f"{base}-{n}"
+            attrs = f'{attrs} id="{escape(anchor, quote=True)}"'
+        used.add(anchor)
+        entries.append((level, anchor, inner))
+        return f"<h{level}{attrs}>{inner}</h{level}>"
+
+    work = _HEADING.sub(annotate, work)
+    for index, section in enumerate(masked):
+        work = work.replace(f"\x00{index}\x00", section)
+    if not entries:
+        return body, ""
+
+    def item(level: int, anchor: str, inner: str) -> str:
+        cls = ' class="toc-subsection"' if level == 3 else ""
+        return f'<li{cls}><a href="#{escape(anchor, quote=True)}">{inner}</a></li>'
+
+    return work, "<ol>" + "".join(item(*entry) for entry in entries) + "</ol>"
+
+
 def page_document(
     relative_path: Path,
     meta: dict[str, object],
@@ -584,6 +649,9 @@ def page_document(
     chrome: PageChrome,
 ) -> str:
     prefix = _prefix(relative_path)
+    body, toc = _toc(body)
+    toc_rail = f"<strong>Contents</strong>{toc}" if toc else ""
+    toc_narrow = f'<details class="page-toc-narrow"><summary>Contents</summary><nav aria-label="Contents">{toc}</nav></details>' if toc else ""
     try:
         raw_title = meta["title"]
     except KeyError:
@@ -681,12 +749,13 @@ def page_document(
         {subtitle_html}
         {_metadata(meta)}
       </header>
+      {toc_narrow}
       <article class="page-body">
         {body}
       </article>
       {reading_order_html}
     </main>
-    <aside id="page-toc" class="page-toc" aria-label="Contents"></aside>
+    <aside id="page-toc" class="page-toc" aria-label="Contents">{toc_rail}</aside>
   </div>
 </body>
 </html>
