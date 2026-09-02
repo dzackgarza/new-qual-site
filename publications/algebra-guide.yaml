@@ -102,13 +102,6 @@ sections:
       - ref: T-RLVA4
       - ref: PR-DJZLY
       - query:
-          kind: definition
-          topics:
-            - Subgroups
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: problem
           topics:
             - Groups
@@ -165,34 +158,6 @@ sections:
           review:
             mode: any
       - query:
-          kind: theorem
-          topics:
-            - Groups
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: proposition
-          topics:
-            - Subgroups
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: corollary
-          topics:
-            - Cosets and Lagrange
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: theorem
-          topics:
-            - Cosets and Lagrange
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: exercise
           topics:
             - Groups
@@ -217,13 +182,6 @@ sections:
           kind: exercise
           topics:
             - Normal Subgroups
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: strategy
-          topics:
-            - Groups
           limit: 500
           review:
             mode: any
@@ -308,41 +266,6 @@ sections:
           kind: exercise
           topics:
             - Centralizers and Normalizers
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: definition
-          topics:
-            - Group Actions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: proposition
-          topics:
-            - Group Actions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: theorem
-          topics:
-            - Orbit-Stabilizer
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: corollary
-          topics:
-            - Class Equation
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: corollary
-          topics:
-            - Burnside's Lemma
           limit: 500
           review:
             mode: any
@@ -707,13 +630,6 @@ sections:
       - ref: FD-SNOTW
       - ref: T-GYVNQ
       - query:
-          kind: definition
-          topics:
-            - Rings
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: problem
           topics:
             - Rings
@@ -759,20 +675,6 @@ sections:
           kind: exercise
           topics:
             - Ideals
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: definition
-          topics:
-            - Prime Ideals
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: definition
-          topics:
-            - Maximal Ideals
           limit: 500
           review:
             mode: any
@@ -848,13 +750,6 @@ sections:
       - ref: FF-2AKVH
       - ref: FF-HAMDC
       - query:
-          kind: definition
-          topics:
-            - Factorization
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: problem
           topics:
             - Factorization
@@ -898,13 +793,6 @@ sections:
             mode: any
       - query:
           kind: exercise
-          topics:
-            - Polynomials
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: definition
           topics:
             - Polynomials
           limit: 500
@@ -1178,13 +1066,6 @@ sections:
           limit: 500
           review:
             mode: any
-      - query:
-          kind: fact
-          topics:
-            - Modules
-          limit: 500
-          review:
-            mode: any
   - slug: structure-theorem
     title: The Structure Theorem over a PID
     parent: modules
@@ -1291,13 +1172,6 @@ sections:
       - ref: FF-MUJDE
       - ref: FF-UACKH
       - query:
-          kind: definition
-          topics:
-            - Field Extensions
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: problem
           topics:
             - Field Extensions
@@ -1354,34 +1228,6 @@ sections:
           review:
             mode: any
       - query:
-          kind: definition
-          topics:
-            - Fields
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: proposition
-          topics:
-            - Fields
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: proposition
-          topics:
-            - Finite Fields
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: proposition
-          topics:
-            - Separability
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: exercise
           topics:
             - Fields
@@ -1433,13 +1279,6 @@ sections:
       - ref: PR-XDWOP
       - ref: T-QX5QU
       - query:
-          kind: definition
-          topics:
-            - Galois Theory
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: problem
           topics:
             - Galois Theory
@@ -1448,13 +1287,6 @@ sections:
             mode: any
       - query:
           kind: exercise
-          topics:
-            - Galois Theory
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: example
           topics:
             - Galois Theory
           limit: 500
@@ -1635,20 +1467,6 @@ sections:
           review:
             mode: any
       - query:
-          kind: proposition
-          topics:
-            - Dual Spaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: example
-          topics:
-            - Matrices
-          limit: 500
-          review:
-            mode: any
-      - query:
           kind: exercise
           topics:
             - Diagonalization
@@ -1750,13 +1568,6 @@ sections:
       - ref: T-PIO2B
       - ref: T-YHH3M
       - ref: D-CTAKB
-      - query:
-          kind: definition
-          topics:
-            - Semisimplicity
-          limit: 500
-          review:
-            mode: any
       - query:
           kind: problem
           topics:

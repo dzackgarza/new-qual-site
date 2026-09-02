@@ -35,26 +35,11 @@ ReviewConstraint = Annotated[
 
 
 class PublicationQuery(Strict):
-    kind: Literal[
-        "problem",
-        "solution",
-        "hint",
-        "definition",
-        "theorem",
-        "proposition",
-        "corollary",
-        "lemma",
-        "proof",
-        "example",
-        "exercise",
-        "remark",
-        "strategy",
-        "concept",
-        "fact",
-        "claim",
-        "warning",
-        "slogan",
-    ]
+    # A guide is authored mathematics, not a projection of the card database.
+    # Queries exist only to hand a family of practice problems to the generator;
+    # reference material enters the guide by an explicit `ref:` chosen by the
+    # author and is transcluded where the exposition needs it.
+    kind: Literal["problem", "exercise"]
     topics: list[str]
     limit: int = Field(gt=0)
     review: ReviewConstraint

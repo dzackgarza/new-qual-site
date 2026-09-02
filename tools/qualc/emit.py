@@ -1982,18 +1982,6 @@ def _plural(kind: str) -> str:
     return f"{kind[:-1]}ies" if kind.endswith("y") else f"{kind}s"
 
 
-def _query_heading(query: PublicationQuery) -> str:
-    """What a query panel holds, said in the author's own words.
-
-    Every panel used to be headed `More from the catalog`, so a section with
-    ten of them offered ten indistinguishable headings and nothing under them
-    was addressable. The kind and the topics are already written in the
-    manifest, so the heading restates the query rather than inventing a title.
-    """
-    topics = ", ".join(query.topics)
-    return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
-
-
 def _generator_deep_link(area: str, topics: list[str]) -> str:
     """A link into the generator, scoped to this guide's area and one topic.
 
@@ -2059,53 +2047,15 @@ def publication_section_page(
         pf.Para(*_inlines(section.lede, inline_cache)),
     ]
     counts: Counter[str] = Counter()
-    shown: set[str] = set()
     for item in section.items:
         match item:
             case ReferenceItem(ref=card_id):
                 blocks.append(_transclude(_manifest_card(con, card_id), counts))
-                shown.add(card_id)
             case QueryItem(query=query):
                 hits = run_query(con, query, manifest.area)
                 if not hits:
                     raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
-                if query.kind in PROBLEM_KINDS:
-                    blocks.append(_generator_deep_link_block(manifest.area, query, hits, inline_cache))
-                else:
-                    # A card the section already shows in full is not listed
-                    # again as a bullet beneath it. A panel whose every match is
-                    # already on the page has nothing left to say, so it goes.
-                    listed = [hit for hit in hits if hit["id"] not in shown]
-                    if not listed:
-                        continue
-                    blocks.append(
-                        pf.Div(
-                            pf.Header(
-                                *_inlines(_query_heading(query), inline_cache),
-                                level=2,
-                            ),
-                            pf.BulletList(
-                                *[
-                                    pf.ListItem(
-                                        pf.Plain(
-                                            pf.Link(
-                                                *_inlines(hit["title"], inline_cache),
-                                                url=hit["id"],
-                                            ),
-                                            pf.Space(),
-                                            pf.Code(hit["id"]),
-                                        )
-                                    )
-                                    for hit in listed
-                                ]
-                            ),
-                            classes=["panel", "publication-query"],
-                            attributes={
-                                "query-kind": query.kind,
-                                "count": str(len(listed)),
-                            },
-                        )
-                    )
+                blocks.append(_generator_deep_link_block(manifest.area, query, hits, inline_cache))
     return {"title": section.title}, blocks
 
 
@@ -2137,26 +2087,24 @@ def card_guide_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    """Guide sections that reference or query this card."""
+    """Guide sections that explicitly reference this card.
+
+    A query is a link from the guide into the practice generator. Its current
+    result set is not content displayed by the guide, so matching a query does
+    not make a card "appear" there. Only an authored `ref:` does.
+    """
     guide_appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
-            # A section surfaces a card once, however many ways it names it: a
-            # card both written as a `ref:` and caught by the section's topic
-            # query used to append two identical appearances, so the card page
-            # listed the same section twice under Guide Appearances.
             surfaced: list[str] = []
             for item in section.items:
                 match item:
                     case ReferenceItem(ref=card_id):
                         _manifest_card(con, card_id)
                         surfaced.append(card_id)
-                    case QueryItem(query=query):
-                        hits = run_query(con, query, manifest.area)
-                        if not hits:
-                            raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
-                        surfaced.extend(hit["id"] for hit in hits)
+                    case QueryItem():
+                        pass
             for card_id in dict.fromkeys(surfaced):
                 guide_appearances[card_id].append(
                     Appearance(
@@ -2747,7 +2695,6 @@ def project(
         ]
     )
     inline_values.append(PROBLEMS_PANEL_HEADING)
-    inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))

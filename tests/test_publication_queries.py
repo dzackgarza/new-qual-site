@@ -14,9 +14,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
 import yaml
 from conftest import diagnostic_codes, fixture_repo, run_qualc
+from pydantic import ValidationError
 from qualc.diagnostics import DiagnosticCode
+from qualc.publication import PublicationManifest
 from test_invariants import read_html
 
 PROBLEM = """---
@@ -208,90 +211,14 @@ def test_a_problem_panel_count_spans_the_topics_it_names(tmp_path: Path) -> None
     assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
 
 
-def test_a_definition_panel_still_offers_a_static_listing(tmp_path: Path) -> None:
-    """The generator drills problems; a definition is reference, not practice.
+def test_reference_material_cannot_be_selected_by_a_publication_query() -> None:
+    """A guide authors reference material explicitly; it never derives a catalog panel."""
+    guide = manifest("compactness", kind="definition")
 
-    Only problem and exercise kinds become a deep link. A definition stays a
-    `publication-query` panel -- a heading and the cards that carry the term --
-    because a reader does not go to the generator to drill a definition.
-    """
-    work = fixture_repo(
-        tmp_path,
-        {
-            "D-CPT.md": DEFINITION.format(
-                id="D-CPT",
-                title="Compact",
-                topic="compactness",
-                body="A space is compact when every open cover has a finite subcover.",
-            )
-        },
-    )
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness", kind="definition"), sort_keys=False))
+    with pytest.raises(ValidationError) as exc_info:
+        PublicationManifest.model_validate(guide)
 
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("section", **{"class": "panel publication-query"})
-    assert len(panels) == 1
-    assert panels[0].attrs["data-query-kind"] == "definition"
-    listed = {link.attrs["href"] for link in panels[0].find_all("a")}
-    assert listed == {"../../tag/D-CPT.html"}
-    assert panels[0].attrs["data-count"] == "1"
-
-
-def test_a_card_shown_in_full_is_not_listed_again_in_its_panel(tmp_path: Path) -> None:
-    """A section that both transcludes a definition and queries it shows it once.
-
-    The reference-kind panel used to repeat, as a bullet link, every card the
-    section already rendered in full above it. With its only match already on
-    the page, the panel has nothing left to list and is dropped.
-    """
-    work = fixture_repo(
-        tmp_path,
-        {
-            "D-CPT.md": DEFINITION.format(
-                id="D-CPT",
-                title="Compact",
-                topic="compactness",
-                body="A space is compact when every open cover has a finite subcover.",
-            )
-        },
-    )
-    guide = {
-        "schema": "qual/publication@2",
-        "id": "GUIDE-TOPOLOGY",
-        "kind": "study-guide",
-        "title": "Topology",
-        "lede": "One path through the point-set material the qual asks about.",
-        "sections": [
-            {
-                "slug": "compactness",
-                "title": "Compactness",
-                "parent": "GUIDE-TOPOLOGY",
-                "lede": "Open covers, finite subcovers, and what compactness buys.",
-                "items": [
-                    {"ref": "D-CPT"},
-                    {
-                        "query": {
-                            "kind": "definition",
-                            "topics": ["compactness"],
-                            "limit": 5,
-                            "review": {"mode": "any"},
-                        }
-                    },
-                ],
-            }
-        ],
-    }
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    assert len(page.root.find_all("div", id="D-CPT")) == 1
-    assert page.root.find_all("section", **{"class": "panel publication-query"}) == []
+    assert "Input should be 'problem' or 'exercise'" in str(exc_info.value)
 
 
 def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None:
@@ -380,6 +307,29 @@ def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -
     groups = card.root.find_all("section", **{"data-relation-group": "guide-appearances"})
     assert len(groups) == 1
     assert [li.text for li in groups[0].find_all("li")] == ["Compactness"]
+
+
+def test_a_query_match_is_not_a_guide_appearance(tmp_path: Path) -> None:
+    """A generator query points outward; its result set is not displayed guide content."""
+    work = fixture_repo(
+        tmp_path,
+        {
+            "PRB-CPT.md": PROBLEM.format(
+                id="PRB-CPT",
+                title="A compact Hausdorff space is normal",
+                area="topology",
+                topic="compactness",
+                body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
+            )
+        },
+    )
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness"), sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    card = read_html(work / "build" / "quarto" / "_site" / "tag" / "PRB-CPT.html")
+    assert card.root.find_all("section", **{"data-relation-group": "guide-appearances"}) == []
 
 
 def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> None:
