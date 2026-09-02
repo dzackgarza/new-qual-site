@@ -84,7 +84,6 @@ DateSpec = Annotated[
 # --- minimal card schema ----------------------------------------------------
 
 RelationKind = Literal[
-    "hints-at",
     "uses",
     "related-to",
     "cites",
@@ -354,10 +353,6 @@ class CollectionCard(CardBase):
 # Every remaining kind is CardBase plus a prose body. They are separate classes
 # rather than one class with a `kind` field because the union is what makes an
 # unknown kind a build failure instead of a silently accepted string.
-class HintCard(CardBase):
-    kind: Literal["hint"]
-
-
 class DefinitionCard(CardBase):
     kind: Literal["definition"]
 
@@ -430,7 +425,6 @@ class SloganCard(CardBase):
 Card = Annotated[
     ProblemCard
     | CollectionCard
-    | HintCard
     | DefinitionCard
     | TheoremCard
     | PropositionCard
@@ -451,9 +445,9 @@ Card = Annotated[
 
 # Authored fenced-div class -> semantic section kind. Total over every class
 # measured in the two prose repos; an unmapped class is a build failure, never
-# silent prose. A section kind need not be a card kind: `solution` deliberately
-# exists only inside a problem/exercise card. `warnings` is plural in the source
-# and singular downstream: the div vocabulary is an input format, not the
+# silent prose. A section kind need not be a card kind: `solution` and `hint`
+# deliberately exist only inside a problem/exercise card. `warnings` is plural
+# in the source and singular downstream: the div vocabulary is an input format, not the
 # domain type.
 DIV_CLASS_TO_KIND = {
     "problem": "problem",

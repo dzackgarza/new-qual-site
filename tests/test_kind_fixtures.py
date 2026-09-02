@@ -78,6 +78,26 @@ def test_solves_relation_is_rejected(tmp_path: Path) -> None:
         parse_card(path)
 
 
+def test_standalone_hint_kind_is_rejected(tmp_path: Path) -> None:
+    """A hint is a section of a problem/exercise, never its own card."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "H-OLD.md"
+    path.write_text((FIXTURES / "PRB-INDEXP.md").read_text().replace("id: PRB-INDEXP", "id: H-OLD", 1).replace("kind: problem", "kind: hint", 1))
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_hints_at_relation_is_rejected(tmp_path: Path) -> None:
+    """There is no relation-based second home for a hint."""
+    from qualc.model import parse_card
+
+    path = tmp_path / "PRB-INDEXP.md"
+    path.write_text((FIXTURES / "PRB-INDEXP.md").read_text().replace("relations: []", "relations:\n- kind: hints-at\n  target: EXE-CENTER", 1))
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
 def test_collection_completion_defaults_to_complete() -> None:
     from qualc.model import parse_card
 

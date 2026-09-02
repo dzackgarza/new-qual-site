@@ -80,9 +80,11 @@ on every commit. Never run it manually — it is redundant.
 ## This corpus is authored content
 
 This is a curated corpus of qualifying-exam mathematics, like the Stacks
-Project. Every card is hand-authored: a problem statement, a definition, a
-theorem, a solution, a hint. The fields on a card — title, classification,
-relations, body — are content a human wrote or will write.
+Project. Every card is hand-authored: a problem or exercise, a definition, a
+theorem, or another addressable mathematical statement. Solutions and hints are
+semantic sections of the problem/exercise card they belong to. The fields on a
+card — title, classification, relations, body — are content a human wrote or
+will write.
 
 Good work on this corpus is reading mathematics, understanding what a statement
 says, and making curation decisions: writing a title that names the problem,

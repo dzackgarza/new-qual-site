@@ -127,8 +127,8 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
 
 def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
-    a card that is. The emitter renders attached hints on their problem's route,
-    so a reader does reach them -- but only through it.
+    a card that is. Hints and solutions are sections of problem/exercise cards,
+    not separately addressable cards.
 
     The same holds one level up, for the same reason: `emit.collection_page`
     renders the collection's `problems:` / `sections:` list, each linked to its
@@ -156,10 +156,9 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
         for block in page.blocks:
             visit(block)
 
-    # Close under attachment: a hint or variant is read through the card it
-    # points at. Solutions are not cards; they live inside problem/exercise
-    # bodies as `.solution` sections.
-    attaches = {"hints-at", "variant-of"}
+    # Close under attachment for card-level variants. Hints and solutions are
+    # sections inside problem/exercise bodies and therefore need no edge.
+    attaches = {"variant-of"}
     edges: dict[str, set[str]] = {}
     for item in parsed:
         for relation in item.card.relations:

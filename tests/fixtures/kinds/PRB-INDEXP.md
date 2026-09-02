@@ -17,6 +17,11 @@ Let $G$ be a finite $p\dash$group and $H \leq G$ with $[G:H] = p$.
 Show $H \normal G$.
 :::
 
+::: {.hint}
+The index is the smallest prime dividing $\abs G$.
+What does that force about the image of the coset action?
+:::
+
 ::: solution
 Let $G$ act on $G/H$ by left translation, giving $\varphi: G \to S_p$ with $\ker \varphi \leq H$.
 

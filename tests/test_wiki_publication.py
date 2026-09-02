@@ -337,9 +337,9 @@ def test_a_cards_review_prompts_render_wherever_the_card_does(tmp_path: Path) ->
 def test_a_card_shows_only_the_relation_panels_it_has(tmp_path: Path) -> None:
     """A heading whose body reads "None." tells the reader nothing.
 
-    Two of the three panels were empty on a typical card. An empty panel is
-    dropped and a card with no relations at all loses the band, rather than
-    framing three headings around the word "None."
+    Empty panels are dropped rather than framing headings around the word
+    "None." The fixture problem has one incoming wiki link and no card-level
+    relations, so that is the only relation panel it should show.
     """
     work = fixture_repo(tmp_path)
     result = run("build", work)
@@ -347,7 +347,7 @@ def test_a_card_shows_only_the_relation_panels_it_has(tmp_path: Path) -> None:
 
     tags = work / "build" / "quarto" / "_site" / "tag"
     problem = (tags / "PRB-INDEXP.html").read_text()
-    assert re.findall(r'data-relation-group="([a-z-]+)"', problem) == ["backlinks", "wiki-backlinks"]
+    assert re.findall(r'data-relation-group="([a-z-]+)"', problem) == ["wiki-backlinks"]
     assert "None." not in problem
 
     lemma = (tags / "LEM-FRATTINI.html").read_text()

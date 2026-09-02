@@ -1003,8 +1003,9 @@ def _wiki_blocks(
 #
 # The 3,200 tag pages are the bulk of the build. Composing them through panflute
 # means one pandoc process per card to load and one per page to write -- an hour.
-# Their bodies are only a card's own blocks plus, for a problem, any solution
-# or hint. No `uses` link, no title parsing: every piece is already pandoc JSON
+# Their bodies are only a card's own blocks. For a problem, hints and solutions
+# are already semantic sections in that body. No `uses` link, no title parsing:
+# every piece is already pandoc JSON
 # in the catalog. These pages are assembled as JSON and written in bounded
 # batches through one persistent Pandoc server. The other pages use the same
 # writer boundary after Panflute composition.
@@ -1020,7 +1021,6 @@ class Appearance:
 class CardPageData:
     terms: dict[tuple[str, str], list[str]]
     facets: dict[str, list[sqlite3.Row]]
-    related: dict[tuple[str, str], list[sqlite3.Row]]
     dependencies: dict[str, list[sqlite3.Row]]
     backlinks: dict[str, list[sqlite3.Row]]
 
@@ -1051,21 +1051,6 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
         if card_id not in facets:
             facets[card_id] = []
         facets[card_id].append(row)
-
-    related: dict[tuple[str, str], list[sqlite3.Row]] = {}
-    for row in _rows(
-        con,
-        """
-        select r.target_id, r.kind as relation_kind, c.*
-        from relations r join cards c on c.id=r.source_id
-        where r.kind='hints-at'
-        order by r.target_id, r.kind, c.id
-        """,
-    ):
-        key = (row["target_id"], row["relation_kind"])
-        if key not in related:
-            related[key] = []
-        related[key].append(row)
 
     dependencies: dict[str, list[sqlite3.Row]] = {}
     for row in _rows(
@@ -1099,7 +1084,6 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
     return CardPageData(
         terms=terms,
         facets=facets,
-        related=related,
         dependencies=dependencies,
         backlinks=backlinks,
     )
@@ -1112,11 +1096,6 @@ def _page_terms(data: CardPageData, card_id: str, axis: str) -> list[str]:
 
 def _page_rows(rows: dict[str, list[sqlite3.Row]], card_id: str) -> list[sqlite3.Row]:
     return rows[card_id] if card_id in rows else []
-
-
-def _related_rows(data: CardPageData, card_id: str, kind: str) -> list[sqlite3.Row]:
-    key = (card_id, kind)
-    return data.related[key] if key in data.related else []
 
 
 def _card_relation_items(
@@ -1260,22 +1239,6 @@ def _prompts_json(card: sqlite3.Row) -> list[dict]:
     ]
 
 
-def _hints_before_solutions(body: list[dict], hints: list[dict]) -> list[dict]:
-    """A hint is only a hint while the answer is still hidden.
-
-    A problem that writes its own solution into its body, and also carries a
-    hint card, showed the solution above the hint. The hints go in front of the
-    first solution the body already holds, not after everything.
-    """
-    if not hints:
-        return body
-    for position, block in enumerate(body):
-        classes = block.get("c", [[None, [], []]])[0][1] if block.get("t") == "Div" else []
-        if "qual-solution" in classes:
-            return body[:position] + hints + body[position:]
-    return body + hints
-
-
 def _dup[T](value: T) -> T:
     return copy.deepcopy(value)
 
@@ -1314,12 +1277,6 @@ def problem_json(
     body = _statement_first(_dup(jcache[card["id"]]))
     body = _lamport_json_blocks(body)
     _rename_json(body)
-    hints: list[dict] = []
-    for rel in _related_rows(data, card["id"], "hints-at"):
-        rb = _dup(jcache[rel["id"]])
-        _rename_json(rb)
-        hints += rb
-    body = _hints_before_solutions(body, hints)
     body.extend(_prompts_json(card))
     body.extend(
         _relation_groups_json(
@@ -1702,9 +1659,6 @@ def problem_page(
     topics = _terms(con, card["id"], "topic")
 
     blocks = _blocks(card)
-
-    for rel in _related(con, card["id"], "hints-at"):
-        blocks += _blocks(rel)
 
     uses = _rows(
         con,
