@@ -356,6 +356,7 @@ mjx-container[display="true"] {
 }
 
 .page-body {
+  --ol-gutter: 2.5rem;
   overflow-wrap: anywhere;
   /* A formula wider than a narrow column has nowhere to go: `mjx-container`
      scrolls display math, but inline math is sized by its run and paints past
@@ -509,6 +510,17 @@ mjx-container[display="true"] {
 .page-body :is(ul, ol) {
   padding-inline-start: 1.5rem;
   margin-block: 0.5rem;
+}
+
+/* An ordered-list marker is wider than a bullet, and `.page-body` scrolls
+   horizontally to hold inline mathematics wider than the column -- which also
+   clips an outside marker that overruns its gutter. Two- and three-digit
+   markers ("10.", "831.") were losing their leading digit against the article
+   edge. Ordered lists get a gutter (`--ol-gutter`) that clears the widest
+   marker in the corpus; the marker and its text move right together, so the
+   hanging indent a wrapped item keeps is unchanged. */
+.page-body ol {
+  padding-inline-start: var(--ol-gutter);
 }
 
 .page-body :is(ul, ol) > li + li {
@@ -1008,7 +1020,7 @@ details.reveal[open] > summary {
 
 /* Position on the collection page is the list index. */
 div.qual-exam-listing ol {
-  padding-left: 1.5rem;
+  padding-left: var(--ol-gutter);
 }
 div.qual-exam-listing li {
   margin-block: 0.35rem;
