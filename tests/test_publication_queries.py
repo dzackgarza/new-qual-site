@@ -240,6 +240,60 @@ def test_a_definition_panel_still_offers_a_static_listing(tmp_path: Path) -> Non
     assert panels[0].attrs["data-count"] == "1"
 
 
+def test_a_card_shown_in_full_is_not_listed_again_in_its_panel(tmp_path: Path) -> None:
+    """A section that both transcludes a definition and queries it shows it once.
+
+    The reference-kind panel used to repeat, as a bullet link, every card the
+    section already rendered in full above it. With its only match already on
+    the page, the panel has nothing left to list and is dropped.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {
+            "D-CPT.md": DEFINITION.format(
+                id="D-CPT",
+                title="Compact",
+                topic="compactness",
+                body="A space is compact when every open cover has a finite subcover.",
+            )
+        },
+    )
+    guide = {
+        "schema": "qual/publication@2",
+        "id": "GUIDE-TOPOLOGY",
+        "kind": "study-guide",
+        "title": "Topology",
+        "lede": "One path through the point-set material the qual asks about.",
+        "sections": [
+            {
+                "slug": "compactness",
+                "title": "Compactness",
+                "parent": "GUIDE-TOPOLOGY",
+                "lede": "Open covers, finite subcovers, and what compactness buys.",
+                "items": [
+                    {"ref": "D-CPT"},
+                    {
+                        "query": {
+                            "kind": "definition",
+                            "topics": ["compactness"],
+                            "limit": 5,
+                            "review": {"mode": "any"},
+                        }
+                    },
+                ],
+            }
+        ],
+    }
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
+    assert len(page.root.find_all("div", id="D-CPT")) == 1
+    assert page.root.find_all("section", **{"class": "panel publication-query"}) == []
+
+
 def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None:
     work = fixture_repo(
         tmp_path,

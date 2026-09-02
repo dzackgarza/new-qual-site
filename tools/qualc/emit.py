@@ -2059,10 +2059,12 @@ def publication_section_page(
         pf.Para(*_inlines(section.lede, inline_cache)),
     ]
     counts: Counter[str] = Counter()
+    shown: set[str] = set()
     for item in section.items:
         match item:
             case ReferenceItem(ref=card_id):
                 blocks.append(_transclude(_manifest_card(con, card_id), counts))
+                shown.add(card_id)
             case QueryItem(query=query):
                 hits = run_query(con, query, manifest.area)
                 if not hits:
@@ -2070,6 +2072,12 @@ def publication_section_page(
                 if query.kind in PROBLEM_KINDS:
                     blocks.append(_generator_deep_link_block(manifest.area, query, hits, inline_cache))
                 else:
+                    # A card the section already shows in full is not listed
+                    # again as a bullet beneath it. A panel whose every match is
+                    # already on the page has nothing left to say, so it goes.
+                    listed = [hit for hit in hits if hit["id"] not in shown]
+                    if not listed:
+                        continue
                     blocks.append(
                         pf.Div(
                             pf.Header(
@@ -2088,13 +2096,13 @@ def publication_section_page(
                                             pf.Code(hit["id"]),
                                         )
                                     )
-                                    for hit in hits
+                                    for hit in listed
                                 ]
                             ),
                             classes=["panel", "publication-query"],
                             attributes={
                                 "query-kind": query.kind,
-                                "count": str(len(hits)),
+                                "count": str(len(listed)),
                             },
                         )
                     )
