@@ -1,14 +1,4 @@
-"""What a study guide's catalog panel is allowed to list.
-
-The panel is titled "More from the catalog" and sits inside a subject section,
-so a problem from another subject in it is a wrong answer, not a wide one.
-Topic terms are shared across subjects -- `integrals` carries both real- and
-complex-analysis problems in the real corpus -- so topic alone cannot scope it.
-
-Within the subject, several topics name a family: topic vocabulary is finer than
-a section, and a section about convergence covers four terms of it. A panel
-naming them lists a problem carrying any one.
-"""
+"""How an authored study-guide practice query becomes a generator deep link."""
 
 from __future__ import annotations
 
@@ -37,26 +27,6 @@ review: draft
 ---
 
 ::: problem
-{body}
-:::
-"""
-
-
-DEFINITION = """---
-schema: qual/card@1
-id: {id}
-kind: definition
-title: {title}
-classification:
-  areas:
-  - topology
-  topics:
-  - {topic}
-relations: []
-review: draft
----
-
-::: {{.definition}}
 {body}
 :::
 """
@@ -114,15 +84,8 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     }
 
 
-def test_a_problem_panel_is_a_deep_link_into_the_generator(tmp_path: Path) -> None:
-    """A problem query does not re-list the catalog; it points into it.
-
-    The generator owns the listing, so the guide keeps a single call to action
-    carrying the area and zero-in on the topic. The count is still scoped to the
-    subject: the real-analysis problem carries `compactness` but belongs to a
-    different area, and it must not enter the count -- the defect this proves
-    absent.
-    """
+def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) -> None:
+    """The guide records the filter; only the generator evaluates it."""
     work = fixture_repo(
         tmp_path,
         {
@@ -152,22 +115,13 @@ def test_a_problem_panel_is_a_deep_link_into_the_generator(tmp_path: Path) -> No
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert len(links) == 1
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
-
-    # The generator is single-select over topic, so `compactness` is zeroed in;
-    # the RA problem never enters the scoped count.
-    assert panels[0].attrs["data-count"] == "1"
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&kind=problem&topic=compactness"
     assert panels[0].attrs["data-query-kind"] == "problem"
+    assert "data-count" not in panels[0].attrs
 
 
-def test_a_problem_panel_count_spans_the_topics_it_names(tmp_path: Path) -> None:
-    """`run_query` still ORs the topics; a card carrying any one is counted.
-
-    The guide's wording names the family -- several topics under one section
-    lead. `PRB-CPT` and `PRB-CON` each carry one named topic and are both in;
-    `PRB-SEP` carries neither and proves the panel tracks the query, not the
-    whole subject.
-    """
+def test_a_generator_link_preserves_every_topic_in_the_authored_family(tmp_path: Path) -> None:
+    """A multi-topic guide query must not silently narrow to its first topic."""
     work = fixture_repo(
         tmp_path,
         {
@@ -203,12 +157,46 @@ def test_a_problem_panel_count_spans_the_topics_it_names(tmp_path: Path) -> None
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
     panels = page.root.find_all("div", **{"class": "panel generator-link"})
     assert len(panels) == 1
-    assert panels[0].attrs["data-count"] == "2"
-
-    # The first topic scopes the deep link; the generator's single select cannot
-    # span a family, and the family is what run_query counted.
     links = panels[0].find_all("a")
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&kind=problem&topic=compactness&topic=connectedness"
+    assert "data-count" not in panels[0].attrs
+
+
+def test_an_exercise_query_preserves_its_kind_without_needing_a_matching_card(tmp_path: Path) -> None:
+    """Rendering a generator link never snapshots the catalog at build time."""
+    work = fixture_repo(tmp_path, {})
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness", kind="exercise"), sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
+    panel = page.root.find_all("div", **{"class": "panel generator-link"})[0]
+    link = panel.find_all("a")[0]
+    assert link.attrs["href"] == "../../generate.html?area=topology&kind=exercise&topic=compactness"
+
+
+def test_the_generator_can_realize_the_complete_guide_filter(tmp_path: Path) -> None:
+    """The destination understands kind plus an OR-family of repeated topics."""
+    work = fixture_repo(tmp_path)
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    generator_path = work / "build" / "quarto" / "_site" / "generate.html"
+    page = read_html(generator_path)
+    kind = page.root.find_all("select", id="gen-kind")[0]
+    assert [(option.attrs["value"], option.text) for option in kind.find_all("option")] == [
+        ("problem", "Problems"),
+        ("exercise", "Exercises"),
+    ]
+
+    topics = page.root.find_all("select", id="gen-topic")[0]
+    assert "multiple" in topics.attrs
+
+    source = generator_path.read_text()
+    assert 'const topics=p.getAll("topic");' in source
+    assert "const filters={kind};" in source
+    assert "filters.topic={any:topics};" in source
 
 
 def test_reference_material_cannot_be_selected_by_a_publication_query() -> None:

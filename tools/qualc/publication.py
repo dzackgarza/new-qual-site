@@ -83,9 +83,8 @@ class PublicationManifest(Strict):
         terms are shared between subjects, so `integrals` carries 19
         real-analysis problems as well as 7 complex-analysis ones.
 
-        A guide whose id names no area in the corpus scopes to nothing, and its
-        first query panel fails the build with no matches rather than quietly
-        drawing from every subject.
+        The value is carried directly into each generator deep link. The guide
+        does not resolve the query against the catalog at build time.
         """
         return self.id.removeprefix("GUIDE-").lower()
 

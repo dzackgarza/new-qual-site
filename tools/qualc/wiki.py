@@ -60,12 +60,13 @@ class ProblemsQuery:
     A wiki page could only name cards by writing each id out, so the folders
     that list the problems on a topic are a hand-typed copy of what the cards
     already record, and they drift as soon as a card is added or reclassified.
-    This is the same rule a study-guide manifest gets from `PublicationQuery`,
-    with two differences the wiki forces:
+    The study-guide counterpart is only a deep link into the generator. A wiki
+    `problems:` block is different because the authored page claims to contain
+    the listing itself:
 
-    Every match is rendered. A guide panel is an excerpt inside a longer
-    section and states how long it is; a topic page is the list, and a limit on
-    it would drop problems the page claims to hold without saying so.
+    Every match is rendered. A guide query is never resolved at build time; a
+    topic page is the list, and dropping matches would make the page's claim
+    false.
 
     Provenance does not narrow it. A card is an `exercise` rather than a
     `problem` when it came from a book or a worksheet, which says where it was

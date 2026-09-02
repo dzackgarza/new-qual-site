@@ -25,7 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
-from urllib.parse import quote_plus, urlsplit
+from urllib.parse import urlencode, urlsplit
 
 import panflute as pf
 import yaml
@@ -39,13 +39,11 @@ from .pandoc_batch import (
     PandocServer,
 )
 from .publication import (
-    AnyReview,
     PublicationManifest,
     PublicationQuery,
     PublicationSection,
     QueryItem,
     ReferenceItem,
-    SelectedReviews,
     load_publications,
 )
 from .static_site import (
@@ -1625,45 +1623,6 @@ def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite
 # --- publication manifests --------------------------------------------------
 
 
-def run_query(
-    con: sqlite3.Connection,
-    query: PublicationQuery,
-    area: str,
-) -> list[sqlite3.Row]:
-    """The only query surface a publication manifest gets. Deliberately small.
-
-    Every key is required. A manifest that omits `limit` is a manifest whose
-    author has not decided how long the panel is, and the build should say so
-    rather than pick a number.
-
-    `area` is the guide's own subject, not a manifest key: the panel renders
-    inside a subject section and reads as scoped to it, so a query is scoped
-    whether or not its author thought about scoping.
-
-    `topics` matches a card carrying **any** of them. Topic vocabulary is finer
-    than a section: convergence alone splits four ways, and a section about
-    convergence wants all of it. One join per topic asked for a card carrying
-    every one, which no card does, so the panel a section actually wants was
-    unsayable.
-    """
-    sql = "select distinct c.* from cards c join classifications a on a.card_id=c.id and a.axis='area' and a.term=?"
-    args: list = [area]
-    if query.topics:
-        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(",".join("?" * len(query.topics)))
-        args += list(query.topics)
-    sql += " where c.kind=?"
-    args.append(query.kind)
-    match query.review:
-        case AnyReview():
-            pass
-        case SelectedReviews(values=reviews):
-            sql += " and c.review in ({})".format(",".join("?" * len(reviews)))
-            args += reviews
-    sql += " order by c.title limit ?"
-    args.append(query.limit)
-    return _rows(con, sql, tuple(args))
-
-
 # A card is an `exercise` rather than a `problem` when it was written down in a
 # book or on a worksheet instead of sat at an exam. That is provenance, and a
 # reader drilling a topic wants the problems on it either way.
@@ -1673,8 +1632,9 @@ PROBLEM_KINDS = ("problem", "exercise")
 def run_page_problems(con: sqlite3.Connection, area: str, topics: tuple[str, ...]) -> list[sqlite3.Row]:
     """Every problem in one subject carrying any of these topics.
 
-    The wiki counterpart of `run_query`, and unlimited where that one is not:
-    a guide panel excerpts, a topic page lists. See `ProblemsQuery`.
+    Wiki `problems:` blocks deliberately render a complete topic listing. Study
+    guides do not call this path: their practice queries are generator deep
+    links and are not resolved against the catalog at build time.
     """
     placeholders = ",".join("?" * len(topics))
     kinds = ",".join("?" * len(PROBLEM_KINDS))
@@ -1982,57 +1942,55 @@ def _plural(kind: str) -> str:
     return f"{kind[:-1]}ies" if kind.endswith("y") else f"{kind}s"
 
 
-def _generator_deep_link(area: str, topics: list[str]) -> str:
-    """A link into the generator, scoped to this guide's area and one topic.
+def _generator_deep_link(area: str, query: PublicationQuery) -> str:
+    """A link into the generator carrying the guide's complete practice filter.
 
-    The `generate.html` controls are a single-select for topic and a set of
-    area checkboxes, and the values they match are the same display strings the
-    guide's queries carry. The URL survives because `app.js` and the generator
-    both read the params on load and select the matching options.
+    Area comes from the guide, while kind and every topic come from the authored
+    query. Repeating `topic=` preserves the query's OR-family exactly; selecting
+    only its first topic would silently narrow many real-analysis and complex-
+    analysis sections.
 
     A deep link only ever renders on a guide *section* page (a guide root
     carries no items), which lives two folders below the site root, so the
     generator is spelled `../../generate.html` and quarto resolves it from the
     section's own location.
     """
-    params: list[str] = []
+    params: list[tuple[str, str]] = []
     if area:
-        params.append(f"area={quote_plus(area)}")
-    if topics:
-        params.append(f"topic={quote_plus(topics[0])}")
-    return f"../../generate.html?{'&'.join(params)}"
+        params.append(("area", area))
+    params.append(("kind", query.kind))
+    params.extend(("topic", topic) for topic in query.topics)
+    return f"../../generate.html?{urlencode(params)}"
 
 
 def _generator_deep_link_block(
     area: str,
     query: PublicationQuery,
-    hits: list[sqlite3.Row],
-    inline_cache: dict[str, list[pf.Inline]],
 ) -> pf.Block:
-    """The guide's way to drill a topic: send the reader to the generator.
+    """The guide's practice-discovery surface is one generator link, not a list.
 
-    The static `publication-query` panel duplicated the generator's output by
-    hand, so the two fell out of sync the moment a card was added or
-    reclassified. The generator owns the listing (it filters, sorts, samples,
-    and offers a print/PDF view the guide's panel never had), so the guide
-    keeps the call to action and the topic that scopes it, and nothing else.
+    In particular this block does not execute the query to compute a count. A
+    build-time count would be another static snapshot of the catalog, and the
+    old query limits already truncated dozens of live guide panels. The
+    generator alone owns which cards currently match.
     """
-    topic = query.topics[0] if query.topics else ""
-    focus = f" on {topic}" if topic else ""
-    noun = query.kind if len(hits) == 1 else _plural(query.kind)
+    if len(query.topics) == 1:
+        focus = f" on {query.topics[0]}"
+    elif query.topics:
+        focus = " for this section"
+    else:
+        focus = ""
+    noun = _plural(query.kind)
     return pf.Div(
         pf.Para(
             pf.Link(
                 pf.Str(f"Drill the {noun}{focus} in the generator"),
-                url=_generator_deep_link(area, query.topics),
+                url=_generator_deep_link(area, query),
             ),
-            pf.Space(),
-            pf.Str(f"({len(hits)} {noun})."),
         ),
         classes=["panel", "generator-link"],
         attributes={
             "query-kind": query.kind,
-            "count": str(len(hits)),
         },
     )
 
@@ -2052,10 +2010,7 @@ def publication_section_page(
             case ReferenceItem(ref=card_id):
                 blocks.append(_transclude(_manifest_card(con, card_id), counts))
             case QueryItem(query=query):
-                hits = run_query(con, query, manifest.area)
-                if not hits:
-                    raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
-                blocks.append(_generator_deep_link_block(manifest.area, query, hits, inline_cache))
+                blocks.append(_generator_deep_link_block(manifest.area, query))
     return {"title": section.title}, blocks
 
 
@@ -2287,9 +2242,9 @@ def _guide_sections(
 ) -> list[pf.Block]:
     """The subject guides, then the guides that cross subjects rather than being one.
 
-    A guide's id names its subject -- that is how its query panels are scoped --
-    so whether it is a subject is already recorded and does not become a field
-    an author can forget.
+    A guide's id names its subject -- that is how its generator deep links are
+    scoped -- so whether it is a subject is already recorded and does not
+    become a field an author can forget.
     """
 
     def listing(chosen: list[PublicationManifest]) -> pf.BulletList:
@@ -2532,8 +2487,14 @@ title: Generate a practice set
 <div class="gen-panel">
   <form class="gen-controls" onsubmit="return false">
     <div class="grp"><label class="h">Areas</label><div id="gen-areas"></div></div>
+    <div class="grp"><label class="h">Kind</label>
+      <select id="gen-kind" class="form-select">
+        <option value="problem">Problems</option>
+        <option value="exercise">Exercises</option>
+      </select>
+    </div>
     <div class="grp"><label class="h">Institution</label><select id="gen-inst" class="form-select"></select></div>
-    <div class="grp"><label class="h">Topic</label><select id="gen-topic" class="form-select"></select></div>
+    <div class="grp"><label class="h">Topics</label><select id="gen-topic" class="form-select" multiple size="8"></select></div>
     <div class="grp"><label class="h">Year</label><select id="gen-year" class="form-select"></select></div>
     <div class="grp"><label class="h">Number of problems</label><input type="number" id="gen-n" value="8" min="1" max="40"></div>
     <div class="grp"><label class="opt"><input type="checkbox" id="gen-src"> Only from a recorded exam</label></div>
@@ -2566,17 +2527,20 @@ const fill=(id,items,label)=>{
     items.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(label?label(v):v)}</option>`).join("");
 };
 fill("gen-inst",values("institution").sort());
-fill("gen-topic",values("topic").sort());
+document.getElementById("gen-topic").innerHTML=values("topic").sort()
+  .map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
 fill("gen-year",values("year").sort((a,b)=>Number(b)-Number(a)));
 
-// A guide section deep-links here so a reader lands with the controls set to
-// the section's subject rather than on an empty form. The params carry the
-// same display strings the controls hold, so a value matches by equality.
+// A guide section deep-links here with its complete practice filter. Repeated
+// `topic=` parameters select the same OR-family the authored query names.
 const p=new URLSearchParams(location.search);
 const has=(k,v)=>{const el=document.getElementById(k);return [...el.options].some(o=>o.value===v);};
 const area=p.get("area");
 if(area)for(const el of document.querySelectorAll(".ga"))if(el.value===area)el.checked=true;
-if(p.get("topic")&&has("gen-topic",p.get("topic")))document.getElementById("gen-topic").value=p.get("topic");
+const kind=p.get("kind");
+if(kind&&has("gen-kind",kind))document.getElementById("gen-kind").value=kind;
+const topics=p.getAll("topic");
+if(topics.length)for(const option of document.getElementById("gen-topic").options)option.selected=topics.includes(option.value);
 if(p.get("institution")&&has("gen-inst",p.get("institution")))document.getElementById("gen-inst").value=p.get("institution");
 if(p.get("year")&&has("gen-year",p.get("year")))document.getElementById("gen-year").value=p.get("year");
 
@@ -2594,18 +2558,19 @@ const statementOf=async (url)=>{
 
 document.getElementById("gen-go").onclick=async()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
+  const kind=document.getElementById("gen-kind").value;
   const inst=document.getElementById("gen-inst").value;
-  const topic=document.getElementById("gen-topic").value;
+  const topics=[...document.getElementById("gen-topic").selectedOptions].map(o=>o.value);
   const year=document.getElementById("gen-year").value;
   const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
   const needSrc=document.getElementById("gen-src").checked;
   const sheet=document.getElementById("gen-sheet");
   sheet.innerHTML='<p class="text-muted">Drawing…</p>';
 
-  const filters={kind:"problem"};
+  const filters={kind};
   if(areas.length) filters.area={any:areas};
   if(inst) filters.institution=inst;
-  if(topic) filters.topic=topic;
+  if(topics.length) filters.topic={any:topics};
   if(year) filters.year=year;
   if(needSrc) filters.sourced="yes";
   const found=await pagefind.search(null,{filters});
@@ -2616,8 +2581,9 @@ document.getElementById("gen-go").onclick=async()=>{
     const data=await result.data();
     return {data,statement:await statementOf(data.url)};
   }));
-  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst:"")+(topic?" · "+topic:"")+(year?" · "+year:"");
-  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} problems · ${escapeHtml(title)}</p>`+
+  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst:"")+(topics.length?" · "+topics.join(", "):"")+(year?" · "+year:"");
+  const noun=kind==="exercise"?"exercises":"problems";
+  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} ${noun} · ${escapeHtml(title)}</p>`+
     drawn.map(({data,statement},i)=>{
       const sat=[(data.filters.institution||[]).join(", "),(data.filters.year||[]).join(", ")].filter(Boolean).join(" · ");
       return `<div class="q">
@@ -2631,6 +2597,7 @@ document.getElementById("gen-go").onclick=async()=>{
   if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
 };
 document.getElementById("gen-print").onclick=()=>window.print();
+if([...p.keys()].some(k=>["area","kind","topic","institution","year"].includes(k)))document.getElementById("gen-go").click();
 </script>
 ```
 """
