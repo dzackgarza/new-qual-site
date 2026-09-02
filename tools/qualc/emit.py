@@ -2134,27 +2134,28 @@ def card_guide_appearances(
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
+            # A section surfaces a card once, however many ways it names it: a
+            # card both written as a `ref:` and caught by the section's topic
+            # query used to append two identical appearances, so the card page
+            # listed the same section twice under Guide Appearances.
+            surfaced: list[str] = []
             for item in section.items:
                 match item:
                     case ReferenceItem(ref=card_id):
                         _manifest_card(con, card_id)
-                        guide_appearances[card_id].append(
-                            Appearance(
-                                target_key=target_key,
-                                title=section.title,
-                            )
-                        )
+                        surfaced.append(card_id)
                     case QueryItem(query=query):
                         hits = run_query(con, query, manifest.area)
                         if not hits:
                             raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
-                        for hit in hits:
-                            guide_appearances[hit["id"]].append(
-                                Appearance(
-                                    target_key=target_key,
-                                    title=section.title,
-                                )
-                            )
+                        surfaced.extend(hit["id"] for hit in hits)
+            for card_id in dict.fromkeys(surfaced):
+                guide_appearances[card_id].append(
+                    Appearance(
+                        target_key=target_key,
+                        title=section.title,
+                    )
+                )
     return guide_appearances
 
 

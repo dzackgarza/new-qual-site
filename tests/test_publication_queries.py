@@ -272,6 +272,62 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
     assert "qual-section" in blocks[0].attrs["class"].split()
 
 
+def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -> None:
+    """A guide section surfaces a card once, however many ways it reaches it.
+
+    The section names `PRB-CPT` as a `ref:` and also carries a topic query that
+    matches the same card. Each used to append its own Guide Appearance, so the
+    card page listed the one section twice.
+    """
+    work = fixture_repo(
+        tmp_path,
+        {
+            "PRB-CPT.md": PROBLEM.format(
+                id="PRB-CPT",
+                title="A compact Hausdorff space is normal",
+                area="topology",
+                topic="compactness",
+                body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
+            )
+        },
+    )
+    manifest = {
+        "schema": "qual/publication@2",
+        "id": "GUIDE-TOPOLOGY",
+        "kind": "study-guide",
+        "title": "Topology",
+        "lede": "A short topology guide.",
+        "sections": [
+            {
+                "slug": "compactness",
+                "title": "Compactness",
+                "parent": "GUIDE-TOPOLOGY",
+                "lede": "Open covers and finite subcovers.",
+                "items": [
+                    {"ref": "PRB-CPT"},
+                    {
+                        "query": {
+                            "kind": "problem",
+                            "topics": ["compactness"],
+                            "limit": 5,
+                            "review": {"mode": "any"},
+                        }
+                    },
+                ],
+            }
+        ],
+    }
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest, sort_keys=False))
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    card = read_html(work / "build" / "quarto" / "_site" / "tag" / "PRB-CPT.html")
+    groups = card.root.find_all("section", **{"data-relation-group": "guide-appearances"})
+    assert len(groups) == 1
+    assert [li.text for li in groups[0].find_all("li")] == ["Compactness"]
+
+
 def test_check_names_a_publication_reference_no_card_answers(tmp_path: Path) -> None:
     """Deleting a card a guide names has to fail the check, not the build.
 
