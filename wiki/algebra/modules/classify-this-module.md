@@ -54,12 +54,12 @@ A question about a matrix over $\QQ$ and a question about an abelian group of or
 
 ## Over a general ring: which property is being asked
 
-For finitely generated $M$ over a commutative ring:
+For modules over an integral domain:
 \[
 \text{free} \implies \text{projective} \implies \text{flat} \implies \text{torsion-free}
 ,\]
 and none of the arrows reverses in general.
-Over a PID all four coincide for finitely generated modules, which is why the distinctions only appear once the ring is worse.
+For finitely generated modules over a PID, all four conditions coincide. The separating examples below relax either the domain/PID hypothesis or finite generation.
 
 The standard separating examples:
 
@@ -72,4 +72,4 @@ The standard separating examples:
 An ideal $I \subseteq R$ over an integral domain is free as a module exactly when it is principal.
 The reason is that any two elements of $I$ are dependent: $m_1m_2 - m_2m_1 = 0$ is a nontrivial relation by commutativity, so a basis has at most one element.
 
-This is worth remembering because it converts a module question into a ring question, and it is why non-principal ideals are the standard source of non-free torsion-free modules.
+Thus freeness of an ideal reduces to principality in the ring; non-principal ideals are the standard source of torsion-free, non-free modules.

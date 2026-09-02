@@ -40,9 +40,9 @@ problems:
 
 ::: {.remark title="Recognizing a semidirect product"}
 $G \cong N \semidirect H$ exactly when $N \normal G$, $H \leq G$, $N\intersect H = 1$ and $NH = G$.
-The first condition is what a Sylow argument produces, which is why "show $G$ is not simple" and "classify groups of order $n$" are the same problem: once a Sylow subgroup is normal, the classification is a question about which homomorphisms $H \to \Aut(N)$ exist.
+When a Sylow argument produces a normal subgroup $N$, classification reduces to the possible complements and actions $H \to \Aut(N)$; this is the semidirect-product step in many small-order classifications.
 
-That last step is why $\Aut$ of the standard families is worth knowing: $\Aut(\ZZ/n) \cong (\ZZ/n)^\times$, and the number of semidirect products is the number of its subgroups of the right order up to conjugacy.
+For cyclic kernels, $\Aut(\ZZ/n) \cong (\ZZ/n)^\times$, so the possible actions are homomorphisms into this unit group, modulo the relevant equivalences.
 :::
 
 ## Automorphism groups

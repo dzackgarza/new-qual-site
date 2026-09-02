@@ -14,7 +14,11 @@ problems:
 
 # Fixed Points and Degree Theory
 
-Degree theory assigns an integer to a map $f: S^n \to S^n$ that measures "how many times $f$ wraps the sphere around itself." This integer is a homotopy invariant — two maps with the same degree can be continuously deformed into each other — and it controls the existence of fixed points: if the degree is wrong, every map in the homotopy class must have a fixed point.
+For $n\geq 1$ and $f:S^n\to S^n$, the degree is defined by
+\[
+f_*[S^n]=\deg(f)[S^n]\in H_n(S^n;\ZZ).
+\]
+It is homotopy invariant, and self-maps of $S^n$ are homotopic exactly when they have the same degree.
 
 The main theorems form a chain. [[T-S2OLJ|Brouwer]] gives fixed points for self-maps of the ball. [[T-BX4LD|Lefschetz]] detects fixed points by the alternating trace on homology. [[T-WNOWY|Borsuk-Ulam]] forces an antipodal pair to have the same image under every map $S^n \to \RR^n$. [[T-VQTR6|Hairy Ball]] rules out non-vanishing tangent vector fields on even-dimensional spheres.
 
@@ -61,7 +65,7 @@ Brouwer is the special case of Lefschetz for $X = B^n$. Since $B^n$ is contracti
 
 [[T-BX4LD]]
 
-The Lefschetz number $\Lambda_f$ is computed from the induced maps on homology. If $\Lambda_f \neq 0$, the map $f$ must have a fixed point — a nonzero trace means the map "wraps" homology around itself in a way that cannot be achieved without a fixed point. The converse holds for triangulable spaces: if $\Lambda_f = 0$, a small perturbation can remove all fixed points.
+The Lefschetz number $\Lambda_f$ is computed from the induced maps on homology. If $\Lambda_f \neq 0$, the map $f$ must have a fixed point. The converse fails in general: $\Lambda_f=0$ by itself does not imply that $f$ is homotopic to a fixed-point-free map.
 
 :::{.proof}
 *[Proof of Brouwer via Lefschetz]* Suppose $f: B^n \to B^n$ has no fixed points. Define $g: B^n \to S^{n-1}$ by sending $x$ to the intersection of the ray from $f(x)$ through $x$ with $\partial B^n = S^{n-1}$. Then $g$ restricted to $S^{n-1}$ is a retraction $r: S^{n-1} \to S^{n-1}$, and $r$ is homotopic to the identity via the straight-line homotopy $H(x,t) = \frac{x - tf(x)}{\|x - tf(x)\|}$, so $\deg r = \deg \id = 1$. On the other hand, $r$ factors as $S^{n-1} \xrightarrow{\iota} B^n \xrightarrow{g} S^{n-1}$ where $\iota$ is the inclusion. Since $B^n$ is contractible, $g_*$ is the zero map on $H_{n-1}$, so $r_* = g_* \circ \iota_* = 0$ on $H_{n-1}(S^{n-1})$. But $\deg r$ is exactly the scalar by which $r_*$ acts on $H_{n-1}(S^{n-1}) \cong \ZZ$, so $\deg r = 0$. Contradiction.
@@ -71,7 +75,7 @@ The Lefschetz number $\Lambda_f$ is computed from the induced maps on homology. 
 
 [[T-WNOWY]]
 
-Borsuk-Ulam says that antipodal symmetry forces agreement somewhere. The $n=1$ case is the intermediate value theorem: a continuous function $f: S^1 \to \RR$ that satisfies $f(-x) = f(x)$ must hit the same value at some pair of antipodal points. The general case follows from degree arguments.
+Borsuk-Ulam says that antipodal symmetry forces agreement somewhere. For $n=1$, set $g(x)=f(x)-f(-x)$; then $g(-x)=-g(x)$, so the intermediate value theorem gives some $x$ with $g(x)=0$, i.e. $f(x)=f(-x)$. The general case follows from degree arguments.
 
 Applications include:
 
@@ -92,8 +96,4 @@ At $t=1$, $H(x, 1) = -x = -\operatorname{id}_{S^k}(x)$.
 Homotopy invariance of degree implies $\deg(\operatorname{id}_{S^k}) = \deg(-\operatorname{id}_{S^k})$. But $\deg(\operatorname{id}_{S^k}) = 1$ and $\deg(-\operatorname{id}_{S^k}) = (-1)^{k+1}$.
 Thus $1 = (-1)^{k+1}$, which is impossible when $k = 2n$ is even ($1 \neq -1$). Hence no non-vanishing continuous vector field exists on even-dimensional spheres $S^{2n}$.
 
-The odd-dimensional spheres ($S^1, S^3, S^7$) *do* admit non-vanishing vector fields — $S^1$ has the unit tangent field, and $S^3 \subset \HH$ admits a family of them via quaternionic multiplication. This is specific to the Hopf structure.
-
-:::{.remark}
-The Hairy Ball theorem is often stated as "you can't comb a hairy ball flat without a cowlick." The mathematical content is stronger: there is no continuous choice of tangent direction at every point. The "cowlick" is a zero of the vector field, and the theorem says it must exist.
-:::
+Every odd-dimensional sphere $S^{2n+1}\subset\CC^{n+1}$ admits a non-vanishing tangent vector field, for example $v(z)=iz$. The spheres $S^1$, $S^3$, and $S^7$ are exceptional in the stronger sense that they are parallelizable.

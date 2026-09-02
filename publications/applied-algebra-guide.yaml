@@ -17,14 +17,11 @@ sections:
     title: Matrix Analysis
     parent: GUIDE-APPLIED-ALGEBRA
     lede: >-
-      The subject starts where linear algebra stops being about solving systems and
-      starts being about the structure a matrix carries. The Hermitian case is the
-      one everything else is measured against: its eigenvalues are real, Rayleigh
+      For a Hermitian matrix the eigenvalues are real, Rayleigh
       quotients and Courant--Fischer characterise them variationally, and interlacing
       says what a low-rank update can move them by. Normality is the exact condition
-      for a unitary diagonalisation, and the singular value decomposition is what
-      survives when normality fails, which is why it, and not the eigendecomposition,
-      is the factorisation the applied problems reach for. Positive definiteness
+      for a unitary diagonalisation; every matrix still has a singular value
+      decomposition, so SVD remains available when eigendecomposition does not. Positive definiteness
       supplies the square root and with it the polar factorisation $A = UH$, and the
       Jordan form is kept for the questions that are genuinely about a nilpotent part
       -- reading a form off a rank sequence, or watching it fail to be continuous.
@@ -119,13 +116,12 @@ sections:
     lede: >-
       A representation is a homomorphism into a matrix group, so the unitary structure
       and diagonalisation from [Matrix Analysis](matrix-analysis.html) are in force
-      from the start: averaging puts an invariant inner product on the space,
-      which is what makes every finite-group representation over $\mathbb{C}$ a direct
+      from the start: averaging puts an invariant inner product on the space, and
+      Maschke then decomposes every finite-group representation over $\mathbb{C}$ as a direct
       sum of irreducibles. The character is the trace, and because trace is invariant
       under conjugation it is a function on conjugacy classes; orthogonality of
-      characters turns the decomposition of a module into an inner product of two
-      integer vectors, which is why so much of the section is arithmetic on a
-      character table. The counts the table has to satisfy -- the number of
+      characters recovers multiplicities by inner products. The counts a character
+      table has to satisfy -- the number of
       irreducibles against the number of classes, the sum of the squares of the
       degrees against the group order -- are usually enough to reconstruct a table
       from very little, and the questions here exploit that. Induction and
@@ -320,8 +316,7 @@ sections:
       finitely generated, generators can be produced by averaging over the group and
       reduced with a Gröbner basis, and the Hilbert series counts invariants degree by
       degree. Molien's formula computes that series from the character of the action
-      alone, which is why this section assumes the character theory as much as it
-      assumes the polynomial algebra above it -- and why two isomorphic subgroups of
+      alone. Consequently two isomorphic abstract subgroups of
       $\mathrm{GL}_2(\mathbb{C})$ can have different Hilbert series: the series is an
       invariant of the representation, not of the abstract group.
     items:

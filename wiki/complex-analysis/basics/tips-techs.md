@@ -72,8 +72,6 @@ For just the statements of most of these theorems: [[attachments/ComplexAnalysis
 
 - Virtually any time: consider $1/f(z)$ and $f(1/z)$.
 
-- Setting $w=e^z$ is useful.
-
 :::{.remark title="Showing a function is constant"}
 If you want to show that a function $f$ is constant, try one of the following:
 

@@ -53,7 +53,7 @@ Thus $F$ is continuous on $\Omega$ and its two holomorphic pieces agree on $I$, 
 
 :::{.remark}
 The real axis is not special: $\HH^\pm$ may be replaced by any region symmetric about a line segment, and by a Möbius transformation, about any arc of a circle.
-That generalization is what makes reflection useful for conformal maps of regions bounded by circular arcs.
+After a Möbius change of coordinates, the same reflection argument therefore applies across circular boundary arcs.
 
 :::
 

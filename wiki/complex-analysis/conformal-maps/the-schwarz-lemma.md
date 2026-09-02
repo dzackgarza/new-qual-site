@@ -10,7 +10,6 @@ problems:
 # The Schwarz lemma
 
 A holomorphic self-map of the disc fixing the origin cannot expand: it is bounded by the identity, and touching that bound anywhere forces it to *be* a rotation.
-It is the source of every rigidity statement in the chapter.
 
 [[T-DAETF]]
 

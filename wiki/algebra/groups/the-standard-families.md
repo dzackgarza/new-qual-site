@@ -9,8 +9,6 @@ problems:
 
 # The standard families
 
-The groups every problem is built from, and the invariants that tell them apart.
-
 [[D-4R2Z5]]
 
 [[D-KRKV7]]
@@ -27,9 +25,10 @@ The groups every problem is built from, and the invariants that tell them apart.
 
 [[E-DAS3L]]
 
-::: {.remark title="Why they are the base case"}
+::: {.remark title="Cyclic groups"}
 A cyclic group has exactly one subgroup of each order dividing $\size G$, and every quotient and subgroup is cyclic.
-So any question about a cyclic group reduces to arithmetic in $\ZZ/n$, which is why the structure theorem is a complete answer for abelian groups.
+Questions about a cyclic group therefore reduce to arithmetic in $\ZZ/n$.
+The structure theorem reduces a finite abelian group further to a product of cyclic prime-power groups.
 :::
 
 ## Symmetric and alternating groups

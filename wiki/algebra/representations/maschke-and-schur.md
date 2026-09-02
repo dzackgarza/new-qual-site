@@ -11,7 +11,7 @@ problems:
 
 # Maschke and Schur
 
-Two theorems, and between them they reduce every question about a complex representation of a finite group to linear algebra on the irreducibles.
+Maschke decomposes finite complex representations into irreducibles; Schur determines the Hom and End spaces between irreducibles.
 
 [[D-FHUV5]]
 
@@ -19,13 +19,13 @@ Two theorems, and between them they reduce every question about a complex repres
 
 [[T-PIO2B]]
 
-:::{.remark title="What it buys, and what it costs"}
+:::{.remark title="Statement, hypotheses, and proof"}
 Maschke says every representation of a finite $G$ over a field of characteristic not dividing $\size G$ is a direct sum of irreducibles.
-So $\CC[G]$ is semisimple and the category of representations is as simple as it could be: no extensions to compute, and a representation is determined by its multiplicities.
+Thus $\CC[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by its irreducible multiplicities.
 
 Both hypotheses are load-bearing.
 Over $\FF_p$ with $p \divides \size G$ it fails: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable but not irreducible.
-For infinite $G$ it fails too, which is why the theory over $\ZZ$ or in characteristic $p$ is a different subject.
+For infinite $G$ it can fail as well; integral and modular representation theory therefore require non-semisimple methods.
 
 The proof is averaging: take any complement, average the projection onto it over $G$, and the result is $G\dash$equivariant.
 Dividing by $\size G$ is where the characteristic hypothesis enters, and it is the only place.
@@ -44,8 +44,8 @@ For irreducible $V, W$:
 
 The second needs algebraic closure, since it is proved by taking an eigenvalue: $f - \lambda I$ is a $G\dash$map with nontrivial kernel, hence zero.
 
-Everything computational follows from this.
-The centre of $\CC[G]$ acts on each irreducible by a scalar, which is what makes character values class functions; and $\Hom_G(V,W)$ has dimension $0$ or $1$, which is what makes the orthogonality relations orthogonality relations.
+Conjugate elements of $G$ act by similar matrices, so characters are class functions. For irreducibles over $\CC$, Schur gives
+$\dim \Hom_G(V,W)=0$ for $V\not\cong W$ and $\dim \End_G(V)=1$; together with Maschke, this is the input to the character orthogonality and multiplicity formulas.
 
 :::
 

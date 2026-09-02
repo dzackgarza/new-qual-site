@@ -10,8 +10,6 @@ problems:
 
 # Cyclotomic and radical extensions
 
-The two families whose Galois groups are known in advance, and therefore the two that every exam problem is built from.
-
 ## Cyclotomic
 
 [[D-JX3YC]]
@@ -60,7 +58,7 @@ This is why $x^3 - 2$ has group $S_3$: the tower is $\QQ \subseteq \QQ(\zeta_3)\
 
 :::{.remark title="The statement to remember"}
 $f$ is solvable by radicals exactly when $\Gal(\SF(f)/\QQ)$ is a solvable group.
-Since $S_n$ is solvable exactly for $n\leq 4$, and a generic quintic has group $S_5$, the general quintic is not solvable -- which is the theorem the whole subject was built to prove.
+Since $S_n$ is solvable exactly for $n\leq 4$, and a generic quintic has group $S_5$, the general quintic is not solvable by radicals.
 
 The practical form on an exam: exhibit a quintic with group $S_5$, usually by showing it is irreducible with exactly three real roots, so that complex conjugation gives a transposition and irreducibility gives a $5\dash$cycle.
 

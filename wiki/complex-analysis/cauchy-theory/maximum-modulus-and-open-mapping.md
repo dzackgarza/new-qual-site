@@ -76,7 +76,7 @@ Since this holds for every $R$, equality throughout forces $f$ constant on $\DD_
 
 :::{.remark title="The real version underneath"}
 The mean value proof never uses holomorphy directly, only the averaging identity, so it proves the statement for harmonic functions at the same time.
-That is why the real and complex maximum principles are the same theorem told twice.
+Thus the harmonic and holomorphic maximum principles have the same averaging proof.
 
 :::
 

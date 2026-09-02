@@ -7,15 +7,14 @@ sections:
   - slug: spaces-and-continuous-maps
     title: Spaces and Continuous Maps
     parent: GUIDE-TOPOLOGY
-    lede: 'One structure carries the whole subject: a family of open sets closed under
-      arbitrary unions and finite intersections. A basis is how such a family is produced
+    lede: 'A topology is a family of open sets closed under arbitrary unions and finite
+      intersections. A basis produces such a family
       in practice, and the closed sets, the closure, and the limit points are the same
-      data read through the complement. Continuity is defined by preimages rather than
-      by points, which is what makes it checkable against a basis; Munkres 18.1 collects
+      data read through the complement. Continuity can be checked on basis elements;
+      Munkres 18.1 collects
       the equivalent forms, and open and closed maps isolate the one-sided condition
-      that continuity alone does not supply. A homeomorphism is the two-sided case,
-      a bijection on points and on open sets at once, and it is the equivalence this
-      subject is trying to decide.'
+      that continuity alone does not supply. A homeomorphism is a continuous bijection
+      with continuous inverse.'
     items:
       - ref: D-XRHTV
       - ref: D-WKURJ
@@ -76,12 +75,11 @@ sections:
   - slug: constructions-of-spaces
     title: Constructions of Spaces
     parent: spaces-and-continuous-maps
-    lede: Every space met after this section is built by one of three constructions,
-      and each is fixed by asking which maps it makes continuous. The subspace topology
+    lede: The subspace topology
       is the coarsest making the inclusion continuous, the product topology the coarsest
       making every projection continuous, and the quotient topology the finest making
-      the projection out continuous, which is why the first two are checked against
-      maps in and the third against maps out. The box topology is the plausible alternative
+      the projection out continuous. Thus maps into a product are checked componentwise,
+      while maps out of a quotient are checked after composition with the quotient map. The box topology is the plausible alternative
       to the product that fails that test. Attaching one space to another along a map
       is the quotient case that builds cell complexes and surfaces later, and the orbit
       space of a group action is the same construction with the identifications supplied
@@ -118,9 +116,7 @@ sections:
   - slug: separation-and-countability
     title: Separation and Countability
     parent: spaces-and-continuous-maps
-    lede: "The axioms so far permit spaces in which distinct points share every neighborhood,
-      so nothing yet forces limits to be unique or points to be closed. The separation
-      axioms are the graded repair: each $T_n$ condition says which pair of disjoint
+    lede: "Each separation axiom says which pair of disjoint
       objects can be pulled apart by open sets, with $T_1$ exactly the condition that
       points are closed and $T_2$ the hypothesis that later compactness arguments use.
       Urysohn's lemma is the statement that normality is already enough to separate
@@ -178,8 +174,7 @@ sections:
       Two conditions that are invisible to the topology alone appear at this level:
       completeness, which is a statement about Cauchy sequences and not about open sets,
       and total boundedness, which bounds how many balls of a fixed radius are needed.
-      Their conjunction is exactly compactness for metric spaces, which is why
-      [Compactness](compactness.html) can be read twice, once by covers and once by sequences. The
+      Their conjunction is exactly compactness for metric spaces. The
       Lebesgue number lemma is the technical bridge between the two readings.'
     items:
       - ref: D-B7CYY
@@ -226,8 +221,8 @@ sections:
       into global ones, because a finite subcover replaces an arbitrary indexing set
       by a maximum. Read the results in two groups. The first is what a continuous map
       does to a compact set: the image stays compact, a real-valued map attains its
-      extremes, and against a Hausdorff target a continuous bijection is forced to be
-      a homeomorphism, which is why the separation axioms had to come first. The second
+      extremes, and a continuous bijection from a compact space to a Hausdorff space is
+      a homeomorphism. The second
       is what compactness does inside a product or a metric space, the tube lemma being
       the projection statement that makes products of compact spaces tractable, and
       completeness with total boundedness being the metric reformulation.'
@@ -335,9 +330,9 @@ sections:
   - slug: the-fundamental-group
     title: The Fundamental Group
     parent: connectedness-and-homotopy
-    lede: Homotopy classes of maps form only a set; restricting to loops at a basepoint
-      makes concatenation a group law, and that is the whole content of the construction.
-      Simple connectedness is then the statement that this group is trivial, and
+    lede: The fundamental group $\pi_1(X,x_0)$ is the group of based loops modulo based
+      homotopy, with product given by concatenation. Simple connectedness is the statement
+      that this group is trivial, and
       [Connectedness and Homotopy](connectedness-and-homotopy.html) supplies the
       path-connectedness needed for the basepoint to be immaterial. Convexity supplies
       the one family of spaces whose homotopies
@@ -432,9 +427,8 @@ sections:
   - slug: cell-complexes
     title: Cell Complexes
     parent: constructions-of-spaces
-    lede: 'Everything computed after this point is computed from a cell structure, so
-      the spaces have to be built rather than merely described. A CW complex is assembled
-      by induction on dimension, attaching $n$-cells to the $(n-1)$-skeleton along maps
+    lede: 'A CW complex is assembled by induction on dimension, attaching $n$-cells
+      to the $(n-1)$-skeleton along maps
       out of $S^{n-1}$ and giving the union the weak topology, which applies the quotient
       constructions from [Constructions of Spaces](constructions-of-spaces.html) one dimension at a time. The standard
       operations are all instances: the cone, the suspension, the wedge, the smash,
@@ -477,12 +471,10 @@ sections:
   - slug: homology
     title: Homology
     parent: cell-complexes
-    lede: The fundamental group is nonabelian and hard to compute above dimension one,
-      so the remaining invariants are the homology groups. Singular homology is defined
-      from maps of simplices and is manifestly a homotopy invariant; cellular homology
+    lede: Singular homology is defined from maps of simplices and is a homotopy invariant;
+      cellular homology
       computes the same groups from the cell structure in [Cell Complexes](cell-complexes.html), with
-      the differentials given by degrees of maps between spheres. Three tools do all
-      the work. The long exact sequence of a pair converts a subspace into a correction
+      the differentials given by degrees of maps between spheres. The long exact sequence of a pair converts a subspace into a correction
       term, excision says the relative groups do not see what is cut out well inside
       the subspace, and Mayer-Vietoris is the sequence attached to a cover by two open
       sets, the homological counterpart of van Kampen. Wedges split and the Kunneth

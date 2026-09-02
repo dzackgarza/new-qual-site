@@ -65,8 +65,8 @@ There are formulas:
 e^{a i \omega}-e^{b i \omega}
 &=2 i \sin \left(\frac{a-b}{2} \omega\right) e^{\frac{a+b}{2} i \omega}
 .\]
-Why this is useful: you can reduce a sum of two exponentials to a complex scalar times a real trig function, e.g. when computing a residue to get a real number.
-Why this is true: for the right choice of $\ell$,
+Thus a sum of two exponentials reduces to a complex scalar times a real trigonometric function, e.g. when a residue computation must simplify to a real number.
+For the derivation, choose $\ell$ so that
 \[
 e^{aiw} + e^{biw} = e^{\ell iw} \qty{ e^{(l-a)iw} + e^{(\ell - b)iw} } = e^{\ell i w} \qty{ e^{kiw} + e^{-kiw}} = e^{\ell i w}\cdot 2\cos(kw)
 .\]

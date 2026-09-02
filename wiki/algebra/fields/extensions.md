@@ -25,9 +25,12 @@ problems:
 
 [[T-NGBVC]]
 
-:::{.remark title="Degrees multiply, and that is most of the subject"}
-The tower law $[M:K] = [M:L][L:K]$ is the single most used fact in field theory, and almost every degree computation is an application of it.
-Two standard consequences: a degree that is prime has no proper intermediate fields, and $[\QQ(\alpha):\QQ]$ divides $[\SF(f):\QQ]$ for every root $\alpha$ of $f$, which is what bounds a Galois group's order from below.
+:::{.remark title="Tower law and degree constraints"}
+The tower law is
+\[
+[M:K]=[M:L][L:K].
+\]
+Two standard consequences: an extension of prime degree has no proper intermediate fields, and $[\QQ(\alpha):\QQ]$ divides $[\SF(f):\QQ]$ for every root $\alpha$ of $f$, giving a lower bound on the order of the Galois group.
 
 :::
 

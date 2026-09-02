@@ -9,7 +9,7 @@ problems:
 
 # Littlewood's three principles
 
-The three approximations that make measure theory usable, and the theorem behind each.
+Three approximation patterns and their governing theorems:
 
 | Principle | Theorem |
 | --- | --- |
@@ -19,7 +19,7 @@ The three approximations that make measure theory usable, and the theorem behind
 
 "Nearly" means outside a set of measure less than $\eps$, and in each case the exceptional set can be taken to be open or closed as convenient.
 
-::: {.remark title="Why they are stated together"}
+::: {.remark title="Transfer pattern"}
 Each converts a measure-theoretic hypothesis into a hypothesis from undergraduate analysis, where the tools are stronger.
 That is the standard use: to prove something about a measurable function, prove it for continuous functions and transfer with Lusin; to prove something about an a.e. convergent sequence, prove it for uniform convergence and transfer with Egorov.
 

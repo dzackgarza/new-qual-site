@@ -12,8 +12,6 @@ problems:
 
 # Determinants and eigenvalues
 
-The computational layer everything else in the chapter rests on.
-
 ## Definitions
 
 [[D-5BR4D]]
@@ -102,7 +100,7 @@ For a triangular matrix the diagonal *is* the spectrum, so the determinant is th
 :::{.fact title="Trace is conjugation invariant"}
 $\trace(AB) = \trace(BA)$, so similar matrices have the same trace:
 $\trace(PJP\inv) = \trace(P\inv P J) = \trace J$.
-The same argument gives that the determinant, the characteristic polynomial and the minimal polynomial are all similarity invariants, which is what makes them usable as tests.
+Determinant, characteristic polynomial, and minimal polynomial are also similarity invariants; if any of these differ, the matrices are not similar.
 
 :::
 

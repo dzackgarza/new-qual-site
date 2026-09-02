@@ -55,7 +55,7 @@ problems:
 
 [[PR-C626A]]
 
-::: {.remark title="What completeness buys"}
-Riesz--Fischer, that $L^p$ is complete, is what makes these function spaces usable: it is the reason a Cauchy sequence of approximations has a limit to converge to, and its proof is the one place the convergence theorems are used to build rather than to compute.
+::: {.remark title="Riesz--Fischer consequences"}
+Riesz--Fischer says that $L^p$ is complete, so every $L^p$-Cauchy sequence converges in $L^p$.
 The same proof shows that an $L^p$ convergent sequence has an a.e. convergent subsequence, which is the standard bridge between the two kinds of convergence.
 :::

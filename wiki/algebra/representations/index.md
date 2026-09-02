@@ -7,7 +7,7 @@ order: 8
 
 Ordinary representations of finite groups over $\CC$.
 
-- [[algebra/representations/maschke-and-schur|Maschke and Schur]], the two theorems the subject rests on.
+- [[algebra/representations/maschke-and-schur|Maschke and Schur]] -- semisimplicity and irreducible Hom/End.
 
 - [[algebra/representations/characters|Characters]], and the orthogonality that makes them computable.
 

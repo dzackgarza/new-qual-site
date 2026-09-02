@@ -241,8 +241,23 @@ reading and mathematical judgment.
 
 ## Public audience and remarks
 
-The audience for this project is graduate students studying mathematics. The
-public-facing surface — essentially the body of every card — should contain
+The audience for this project is graduate students reviewing for a qualifying
+exam after already taking a graduate course on the material. They are not
+first-time learners. Public prose exists to support recall and problem solving:
+state the result, link or transclude the statement, record the hypothesis that
+usually gets missed, give the consequence used in solutions, or name the
+counterexample/technique that decides a problem. Do not spend a sentence merely
+convincing the reader that a theorem is important, useful, elegant, a
+"workhorse", or what "makes the theory work". Replace that framing with the
+mathematical payload it was standing in for.
+
+A causal sentence is not filler merely because it contains "because" or "so".
+"Apply monotone convergence to partial sums to interchange $\sum$ and $\int$"
+is review content. "Monotone convergence matters because it is useful for
+series" is not. This distinction is editorial and must be made by reading the
+mathematics, never by a phrase-matching rewrite.
+
+The public-facing surface — essentially the body of every card — should contain
 only mathematical content: problem statements, definitions, theorems, solutions,
 hints, errata, notes on questions (e.g. noting that a question is starred), and
 contextual mathematical remarks (e.g. a remark explaining a reference to

@@ -15,8 +15,7 @@ problems:
 
 # Power series
 
-Holomorphic and analytic are the same condition, and this page is why.
-Everything else in the subject uses the equivalence in one direction or the other: expansions come from the integral formula, and estimates on coefficients come from expansions.
+Holomorphic and analytic are equivalent: the Cauchy integral formula gives the power-series expansion, and the coefficient formula gives the Cauchy estimates.
 
 ![](../../../../assets/assets/figures/2021-10-28_21-22-12.png)
 

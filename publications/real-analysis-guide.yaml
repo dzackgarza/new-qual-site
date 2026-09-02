@@ -7,10 +7,9 @@ sections:
   - slug: sequences-and-series-of-numbers
     title: Sequences and Series of Numbers
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'Everything later is a limit of something, so the path starts where limits
-      are only about numbers. The limit superior and inferior always exist in the extended
-      reals, which is what lets an argument name a limit before proving it exists. For
-      series the subject is really a subject about the tails: convergence forces the
+    lede: 'The limit superior and inferior always exist in the extended reals, so an
+      argument can record asymptotic upper and lower bounds before ordinary convergence
+      is known. For series, convergence forces the
       terms to zero and the tails to vanish, the comparison, root, ratio, and condensation
       tests all decide convergence by bounding one tail against another, and the $p$-test
       fixes the scale against which those comparisons are made.'
@@ -51,16 +50,13 @@ sections:
   - slug: metric-spaces
     title: Metric Spaces, Compactness and Completeness
     parent: sequences-and-series-of-numbers
-    lede: 'A metric is the least structure under which the arguments from [Sequences and
-      Series of Numbers](sequences-and-series-of-numbers.html) still run, and the point of
-      the abstraction is that two different-looking hypotheses
-      become the same one. Compactness has three faces here -- open covers, sequential
-      compactness, and complete plus totally bounded -- and they agree in a metric space,
-      which is why an exam problem may hand you any of the three. Heine-Borel says which
+    lede: 'In metric spaces, compactness by open covers, sequential compactness,
+      and completeness plus total boundedness are equivalent, so an exam problem may
+      supply any one of the three formulations. Heine-Borel says which
       subsets of $\mathbb R^n$ qualify, and the counterexamples say why the theorem
       needs $\mathbb R^n$: closed and bounded is not enough in $\mathbb Q$ or in $C([0,1])$.
-      Completeness is the hypothesis Baire needs, and Baire is what makes the nowhere
-      dense sets and the Cantor set into tools rather than curiosities.'
+      Completeness is the hypothesis in Baire''s theorem: in a complete metric space,
+      every countable intersection of open dense sets is dense.'
     items:
       - ref: D-TVKFM
       - ref: D-G5N6I
@@ -260,11 +256,7 @@ sections:
   - slug: measure-and-measurable-functions
     title: Measure and Measurable Functions
     parent: GUIDE-REAL-ANALYSIS
-    lede: '[Riemann-Stieltjes Integration](riemann-stieltjes-integration.html) is not
-      stable under the limiting operations in [Sequences and Series of Functions](sequences-and-series-of-functions.html).
-      Measure theory repairs that failure by replacing partitions of the domain with a
-      measure on it.
-      Outer measure is defined for every set and is only countably subadditive; the
+    lede: 'Outer measure is defined for every set and is only countably subadditive; the
       Caratheodory condition selects the subfamily on which it is additive, and that
       family is the one closed under the countable operations every later argument performs.
       Measurability of a set is then equivalent to approximation by an open, closed,
@@ -360,7 +352,7 @@ sections:
     title: Lp Spaces and Convolution
     parent: the-lebesgue-integral
     lede: 'Holder and Minkowski make $\|\cdot\|_p$ a norm and the Riesz-Fischer theorem
-      makes it complete, so the integral has finally produced a Banach space. Which
+      makes $L^p$ complete. Which
       $L^p$ contains which depends on whether the measure is finite, and the $p$-test
       decides the model cases. The essential supremum is the right endpoint at $p=\infty$,
       and the limit of $\|f\|_p$ recovers it. Convolution is the multiplication these
@@ -415,7 +407,7 @@ sections:
       fact supplies orthogonal projection, Bessel''s inequality, and the identification
       of the space with $\ell^2$ through any complete orthonormal set. Riesz representation
       makes the dual of a Hilbert space the space itself, and for $L^p$ with $p$ finite
-      it makes the dual $L^q$; the failure at $p=\infty$ is worth knowing precisely.
+      it makes the dual $L^q$; this identification fails at $p=\infty$.
       The four standard theorems of Banach space theory -- Hahn-Banach, uniform boundedness,
       open mapping, closed graph -- are collected here because the exam problems that
       use them state their hypotheses in $L^p$ or $\ell^p$ terms. Weak convergence appears

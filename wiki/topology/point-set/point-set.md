@@ -95,9 +95,8 @@ Take a finite subcover by compactness of $X$, then they push forward to a finite
 ## Separation Axioms
 
 :::{.remark}
-The separation axioms grade a space by how far apart open sets can hold things.
-Hausdorff separates pairs of points, normality separates pairs of disjoint closed sets.
-Urysohn's lemma upgrades that set-level separation to a continuous function, which is what makes normality usable in proofs.
+Hausdorff separates pairs of points; normality separates pairs of disjoint closed sets.
+Urysohn's lemma separates disjoint closed sets by a continuous function to $[0,1]$.
 :::
 
 [[FT-MHQGF]]

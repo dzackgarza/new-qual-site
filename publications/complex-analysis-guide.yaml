@@ -18,16 +18,11 @@ sections:
   - slug: complex-arithmetic-and-elementary-functions
     title: Complex Arithmetic and the Elementary Functions
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: 'Nothing here is yet about holomorphy. It is about having the plane and its
-      standard functions at hand, because every later estimate is finally a computation
-      in them. The exponential is the whole content: sine and cosine are its even and
-      odd parts along the imaginary axis, the hyperbolic pair is the same combination
-      along the real axis, and the two families therefore differ by a rotation, which
-      is the identity every contour argument on a rectangle later runs on. Inverting
-      the exponential is where the subject first refuses to cooperate. The logarithm
+    lede: 'Sine and cosine are the even and odd parts of the exponential along the
+      imaginary axis; the hyperbolic pair is the corresponding combination along the
+      real axis, so the two families differ by a rotation. The logarithm
       cannot be defined continuously on a punctured plane, only on a slit one, and fixing
-      a branch is a choice that later integrals pay for making: the monodromy factor
-      a keyhole contour collects is exactly the discontinuity recorded here. Complex
+      a branch determines the jump recorded by a keyhole contour. Complex
       powers inherit the same ambiguity through the same definition.'
     items:
       - ref: FD-XUGN3
@@ -63,16 +58,14 @@ sections:
   - slug: series-and-convergence
     title: Series and Convergence
     parent: complex-arithmetic-and-elementary-functions
-    lede: "A power series is the object the rest of the subject converges to, so the
-      tests that decide when one converges come first. The root test is the one that
-      matters, because it returns a radius rather than a verdict, and the radius is
-      what makes a disc of convergence a domain. Inside that disc the convergence is
+    lede: "The root test gives the radius of convergence. Inside the corresponding
+      disc the convergence is
       uniform on compact subsets, which is the hypothesis every later interchange of
       limit and integral quotes. The boundary is where the tests separate: absolute
       convergence settles the circle in one stroke when the coefficients are summable,
       and when they are not, summation by parts and Dirichlet's test decide the circle
-      point by point, which is why the same three series appear over and over as the
-      standard examples of every possible behaviour. Abel's theorem then connects a
+      point by point. The standard examples realize the possible boundary behaviours.
+      Abel's theorem then connects a
       boundary value back to the radial limit."
     items:
       - ref: PR-NQ64T
@@ -107,9 +100,7 @@ sections:
   - slug: holomorphy-and-analyticity
     title: Holomorphy and Analyticity
     parent: series-and-convergence
-    lede: 'Start with the complex derivative as a limit that must agree from every direction.
-      That single requirement is the whole subject in compressed form: approaching along
-      the real and imaginary axes and equating the two answers produces the Cauchy-Riemann
+    lede: 'Comparing the complex derivative along the real and imaginary directions gives the Cauchy-Riemann
       equations, which say that the delbar derivative vanishes and that the real and
       imaginary parts are harmonic. The section closes by naming the other candidate
       definition, analyticity, and recording the one direction that needs no integration:
@@ -180,14 +171,12 @@ sections:
   - slug: cauchy-theory
     title: Cauchy Theory
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: "Integration is what converts the pointwise derivative condition into global
-      information. Cauchy-Goursat says a holomorphic function integrates to zero around
+    lede: "Cauchy-Goursat says a holomorphic function integrates to zero around
       any closed path in a simply connected region, and the Cauchy integral formula
       turns that vanishing into a reproducing formula: the values on a circle determine
       the value and every derivative at the center. Expanding the kernel in a geometric
       series proves the converse owed above, that holomorphic functions are analytic
-      with coefficients read off the circle. Everything after is a consequence of that
-      formula. Bounding the integrand gives Cauchy's estimate, which gives Liouville.
+      with coefficients read off the circle. Bounding the integrand gives Cauchy's estimate, which gives Liouville.
       Averaging gives the mean value property, which gives the maximum modulus principle.
       Reading the coefficient formula backwards gives the identity theorem, and Morera
       reverses the whole implication by promoting vanishing triangle integrals back

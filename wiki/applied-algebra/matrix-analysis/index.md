@@ -48,5 +48,6 @@ Normal is the largest of these and is the right hypothesis for the spectral theo
 
 ## Norms
 
-Submultiplicativity $\norm{AB}\leq\norm A\norm B$ is what makes matrix norms useful, and it fails for the entrywise max norm, which is the standard trap.
+For estimates involving products, use a submultiplicative norm: $\norm{AB}\leq\norm A\norm B$.
+The entrywise max norm fails this inequality and is the standard trap.
 The spectral radius is at most every submultiplicative norm, with equality in the limit: $\rho(A) = \lim \norm{A^n}^{1/n}$.

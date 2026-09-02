@@ -26,7 +26,7 @@ Continuous images preserve compactness and connectedness, not closedness.
 It is also the standard example of connected but not locally connected.
 
 **Countable products of nice spaces stay nice** -- false in the box topology, true in the product topology.
-$\RR^\omega$ is connected in the product topology and not in the box topology, which is why the product topology is the default.
+$\RR^\omega$ is connected in the product topology and not in the box topology; connectedness of arbitrary products is a theorem for the product topology, not the box topology.
 
 **A metric space is complete** -- not a topological property: $(0,1)$ and $\RR$ are homeomorphic and only one is complete.
 
@@ -57,4 +57,4 @@ The Klein bottle has $H_2 = 0$, which is exactly how it is told apart from the t
 
 **Every manifold is triangulable** -- true in dimensions at most three, false in general.
 
-**Homotopy equivalent manifolds are homeomorphic** -- false, and the failure is why the classification of surfaces is a theorem rather than an observation.
+**Homotopy equivalent manifolds are homeomorphic** -- false: homotopy type does not determine homeomorphism type.

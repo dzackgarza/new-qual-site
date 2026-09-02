@@ -180,7 +180,7 @@ If $f$ is not even, look for the sector instead.
 
 ## Estimates you will reach for
 
-The reverse triangle inequality is the workhorse for bounding a denominator from below:
+Use the reverse triangle inequality to bound a denominator from below:
 \[
 \abs{z-w} \geq \abs{\abs{z} - \abs{w}} \implies {1\over \abs{z-w}} \leq \abs{1 \over \abs z - \abs w}
 ,\]

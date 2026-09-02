@@ -40,9 +40,7 @@ That proof is on [[complex-analysis/cauchy-theory/morera-and-converses|Morera an
 
 :::
 
-## What it gives
-
-Almost everything downstream is a corollary, and in this order:
+## Immediate consequences
 
 - [[complex-analysis/cauchy-theory/the-integral-formula|The integral formula]] recovers $f$ inside a curve from $f$ on it.
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's estimates]] bound the derivatives, and Liouville follows.

@@ -57,10 +57,9 @@ problems:
 
 [[PR-UHWNM]]
 
-:::{.remark title="Carathéodory is the whole construction"}
+::: {.remark title="Carathéodory is the whole construction"}
 Outer measure is defined on every set and is only countably subadditive; the Carathéodory criterion picks out the sets on which it is additive, and those are the measurable ones.
-Every property of Lebesgue measure is proved by checking that criterion once and then quoting it, which is why the definition looks unmotivated until it is used.
-
+After Carathéodory measurability is established, the restriction of outer measure to the measurable sets is a measure, and later arguments work inside that $\sigma$-algebra.
 :::
 
 [[PR-TGQFG]]

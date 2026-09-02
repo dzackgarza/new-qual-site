@@ -28,7 +28,8 @@ Bounded convergence is dominated convergence with $g$ a constant, which is only 
 ## The decision
 
 1. **Is the sequence monotone and nonnegative?** Use monotone convergence.
-   No dominating function is needed, which is why this is the theorem for series of nonnegative terms: apply it to the partial sums to interchange $\sum$ and $\int$.
+   No dominating function is needed.
+   For a series of nonnegative terms, apply it to the partial sums to interchange $\sum$ and $\int$.
 
 2. **Can you find an integrable dominating function?** Use dominated convergence.
    The hunt for $g$ is the actual work, and the standard sources are: a bound independent of $n$, the largest term of a convergent series, or $\abs{f_n} \leq \abs{f_1}$ when the sequence decreases.

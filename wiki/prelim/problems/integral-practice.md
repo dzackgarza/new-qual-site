@@ -76,9 +76,6 @@ Techniques to cover, in order of difficulty:
 
 - Bonus round: $\displaystyle \int_\mathbb{R} e^{-x^2}$
 
-  - Every math student should know one way of deriving this.
-    :)
-
 ## Definitions
 
 ##### Level 1

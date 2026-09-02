@@ -48,15 +48,11 @@ The topics below are the standard qual material — definitions, key theorems, a
 
 The tube lemma is the tool you reach for whenever a proof needs to "separate" a compact set from the rest of a product.
 It says: if $Y$ is compact and $N$ is an open set in $X \times Y$ containing the slice $\{x_0\} \times Y$, then there exists an open neighborhood $U$ of $x_0$ in $X$ such that $U \times Y \subseteq N$.
-In other words, a neighborhood of a compact slice can be thickened to a "tube" $U \times Y$.
 
 The proof is elementary compactness: for each $y \in Y$, choose open sets $U_y \ni x_0$ and $V_y \ni y$ with $U_y \times V_y \subseteq N$.
 The $V_y$ cover $Y$, so finitely many suffice: $V_{y_1}, \ldots, V_{y_k}$.
 Set $U = \bigcap_{i=1}^k U_{y_i}$.
 Then $U \times Y \subseteq N$.
-
-**Why it matters**: the tube lemma is the reason compactness interacts well with products.
-Without it, you cannot prove that products of compact spaces are compact, that continuous images of compact spaces are compact in product settings, or that certain quotient maps behave correctly.
 
 ### Typical qual questions
 
@@ -68,7 +64,9 @@ The tube lemma appears in qual problems in several disguises:
    Given a closed $A \subseteq X \times Y$ and a point $x \notin p(A)$, the complement of $A$ is open and contains $\{x\} \times Y$.
    The tube lemma gives a neighborhood $U$ of $x$ with $U \times Y$ disjoint from $A$, so $U \cap p(A) = \emptyset$.
 
-3. **Quotient maps and products with compact fibers.** While any quotient map $f: X \to Y$ satisfies $g \circ f \text{ continuous} \iff g \text{ continuous}$, products of quotient maps need not be quotient maps in general. However, if $f: X \to Y$ is a quotient map with compact fibers (or if $Z$ is locally compact Hausdorff), then $f \times \operatorname{id}_Z: X \times Z \to Y \times Z$ is a quotient map. The tube lemma is the tool used to show that saturated open sets in $X \times Z$ project to open sets in $Y \times Z$.
+3. **Quotient maps and products with a locally compact factor.** While any quotient map $f: X \to Y$ satisfies $g \circ f \text{ continuous} \iff g \text{ continuous}$, products of quotient maps need not be quotient maps in general.
+   If $Z$ is locally compact Hausdorff, then $f \times \operatorname{id}_Z: X \times Z \to Y \times Z$ is a quotient map.
+   The tube lemma is the tool used to show that saturated open sets in $X \times Z$ project to open sets in $Y \times Z$.
 
 ## Qual Questions
 

@@ -83,7 +83,7 @@ How to derive these definitions: use that $\inf$ corresponds to intersections/ex
 
 It's also useful to note that $\liminf E_n \subseteq \limsup E_n$, since $\liminf E_n$ are elements that are eventually in all sets, and $\limsup E_n$ are elements in infinitely many sets.
 
-Why these are useful: for finite measure spaces,
+For finite measure spaces,
 \[
 \mu\qty{\liminf_n E_n }\leq \liminf_n \mu(E_n) \leq \lim_n \mu(E_n) \leq \limsup_n \mu(E_n) \leq \mu\qty{\limsup_n E_n}
 .\]
@@ -159,4 +159,3 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 [[D-BG455]]
 
 [[D-7QQUO]]
-

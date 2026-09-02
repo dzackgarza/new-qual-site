@@ -21,7 +21,7 @@ The question is asked directly, and it is also the hidden form of "classify the 
 | $pq$ with $p \divides q-1$ | a nonabelian one exists |
 | $p^3$ | need not be abelian: $D_4$ and $Q_8$ |
 
-The $p^2$ case is the argument worth remembering: the class equation forces $Z(G)\neq 1$, and $G/Z(G)$ cyclic forces $G$ abelian, so $\size{Z(G)}$ cannot be $p$.
+For the $p^2$ case, the class equation forces $Z(G)\neq 1$, and $G/Z(G)$ cyclic forces $G$ abelian, so $\size{Z(G)}$ cannot be $p$.
 
 ## From a quotient
 

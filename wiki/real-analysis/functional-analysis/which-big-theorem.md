@@ -9,7 +9,7 @@ problems:
 
 # Which big theorem?
 
-Four theorems carry the subject, and each is triggered by a different hypothesis.
+Choose by hypothesis:
 
 | You have | Use | You get |
 | --- | --- | --- |
@@ -18,19 +18,21 @@ Four theorems carry the subject, and each is triggered by a different hypothesis
 | a closed graph | closed graph | the operator is bounded |
 | a bounded functional on a subspace | Hahn--Banach | an extension of the same norm |
 
-The first three all need completeness, and are all Baire category arguments; Hahn--Banach needs none and is a Zorn argument, which is why it works on normed spaces with no completeness at all.
+The first three require completeness and come from Baire category.
+Hahn--Banach is a Zorn argument and holds on normed spaces without a completeness hypothesis.
 
 ## The tells
 
 - **"$\sup_n \norm{T_n x} < \infty$ for each $x$"** is uniform boundedness, always.
   The standard consequence is that a pointwise limit of bounded operators is bounded.
 
-- **"$T$ is a continuous bijection"** is the open mapping theorem, and the conclusion worth remembering is the bounded inverse theorem: a bounded bijection between Banach spaces has bounded inverse, with no separate proof.
+- **"$T$ is a continuous bijection"** is the open mapping theorem.
+  The bounded inverse theorem is the immediate consequence: a bounded bijection between Banach spaces has bounded inverse.
 
 - **"Whenever $x_n \to x$ and $Tx_n\to y$, then $y = Tx$"** is the closed graph theorem, which weakens what must be checked: convergence of $Tx_n$ is assumed rather than proved.
 
 - **"Extend without increasing the norm"**, or "there exists a functional with $f(x) = \norm x$", is Hahn--Banach.
-  Its most used corollary is that the dual separates points, which is what makes weak topologies useful.
+  Its most used corollary is that the dual separates points; in particular, the weak topology is Hausdorff.
 
 ## In Hilbert space, use the projection instead
 

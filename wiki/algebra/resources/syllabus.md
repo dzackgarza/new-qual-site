@@ -131,9 +131,7 @@ See [@DF04, chaps. 1-9].
 
 - The Jordan Holder theorem
 
-> The proof of Jordan-Holder is seldom tested on the qual**, but proofs are always of interest.
-
-> The proof of Jordan-Holder is seldom tested on the qual, but proofs are always of interest.
+> The proof of Jordan-Holder is seldom tested on the qual.
 
 ## Linear Algebra
 

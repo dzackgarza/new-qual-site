@@ -13,10 +13,7 @@ sections:
   - slug: logic-and-proof
     title: Logic and Proof
     parent: GUIDE-PRELIM
-    lede: 'The paper opens on the mechanics of mathematical statements rather than on
-      any subject, and that is deliberate: a candidate who cannot negate a quantified
-      sentence cannot state what a limit failing to exist means. Negation of nested
-      quantifiers is asked directly and repeatedly, along with the converse and contrapositive,
+    lede: 'Negation of nested quantifiers is asked directly and repeatedly, along with the converse and contrapositive,
       which are the two ways a true implication is most often misremembered. Injectivity
       and surjectivity are the first place those quantifiers get used on an object rather
       than a sentence, and equivalence relations are where they get used on a set. Induction

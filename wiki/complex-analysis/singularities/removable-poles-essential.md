@@ -79,7 +79,7 @@ The second is nearly always shorter.
 [[T-YKVFQ]]
 
 :::{.remark}
-Why this matters: every infinite subset of a disc has a limit point, so a holomorphic $f$ with infinitely many zeros in $\DD$ vanishes identically by the identity principle.
+Every infinite subset of a disc has a limit point, so a holomorphic $f$ with infinitely many zeros in $\DD$ vanishes identically by the identity principle.
 
 :::
 

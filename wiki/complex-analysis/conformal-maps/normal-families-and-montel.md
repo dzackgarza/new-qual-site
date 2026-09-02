@@ -57,7 +57,7 @@ This gives sequences $x_k, y_k, f_k$ with $\abs{x_k-y_k}\to 0$ but $\abs{f_k(x_k
 ::: {.remark title="Univalence, and how the complex case differs"}
 If $f: \Omega \to \Omega'$ is a univalent surjection then $f$ is invertible with holomorphic inverse.
 The real case is genuinely worse: $f(x) = x^3$ is injective on $(-c,c)$ for every $c$, yet $f'(0)=0$ and $f\inv(x) = x^{1/3}$ is not differentiable at zero.
-Holomorphy is what rules that out, and it is why the Riemann mapping theorem can extract a *biholomorphism* rather than merely a bijection.
+Thus once the Riemann mapping argument produces a univalent surjection, no separate inverse-regularity step is needed: it is already a biholomorphism.
 :::
 
 [[E-ISFYB]] [[E-LXY7N]] [[E-YFL4K]]

@@ -55,9 +55,7 @@ The integral formula defines $c_k$ and is used to prove things about it; a compu
 
 - **Partial fractions.** A rational function splits into terms with one pole each, and each term is expanded separately on the annulus in question.
 
-## What the expansion is for
-
-Two things, and they are the reason this page sits where it does.
+## Residues and singularity type
 
 - The coefficient $c_{-1}$ is the residue, which is what [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]] integrates.
 

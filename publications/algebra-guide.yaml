@@ -7,12 +7,9 @@ sections:
   - slug: preliminaries
     title: Preliminaries
     parent: GUIDE-ALGEBRA
-    lede: "Two things get used everywhere and proved nowhere else. Zorn's lemma is
-      where every maximality argument bottoms out -- the existence of a maximal ideal
-      containing a given proper ideal, and with it the existence of algebraic closures
-      and of bases for infinite-dimensional spaces -- so it is worth seeing once in
-      the form the rest of the subject calls: a poset in which every chain has an upper
-      bound has a maximal element. The arithmetic of the integers is the other. The
+    lede: "Zorn's lemma says that a nonempty poset in which every chain has an upper
+      bound has a maximal element. It supplies maximal ideals containing proper ideals,
+      algebraic closures, and bases for infinite-dimensional vector spaces. The
       totient counts the generators of a cyclic group and, later, the degree of a cyclotomic
       extension; the Chinese remainder theorem splits a cyclic group into its prime-power
       parts and returns as the decomposition of a module over a principal ideal domain;
@@ -63,10 +60,8 @@ sections:
   - slug: groups-and-subgroups
     title: Groups and Subgroups
     parent: preliminaries
-    lede: 'The subject begins with one object and one relation: a group and its subgroups.
-      Lagrange supplies the first constraint -- the order of a subgroup divides the
-      order of the group -- and it rests on the single fact about cosets that everything
-      else reuses, that two cosets are either equal or disjoint. Normality is exactly
+    lede: 'Two cosets of a subgroup are either equal or disjoint; hence Lagrange:
+      the order of a subgroup divides the order of a finite group. Normality is exactly
       the condition that makes the coset space a group again, and the four isomorphism
       theorems are its consequences: a homomorphism factors through its kernel, a subgroup
       and a normal subgroup meet in a diamond, nested quotients cancel, and the subgroups
@@ -188,15 +183,14 @@ sections:
   - slug: group-actions-and-counting
     title: Group Actions and Counting
     parent: groups-and-subgroups
-    lede: "An action turns a group into arithmetic. Orbit-stabilizer says an orbit has
-      the size of the index of any of its stabilizers, so every orbit count divides
+    lede: "Orbit-stabilizer says an orbit has the size of the index of any of its stabilizers,
+      so every orbit count divides
       the order of the group. Conjugation is the action of a group on itself: its orbits
       are the conjugacy classes, its stabilizers are the centralizers, and reading orbit-stabilizer
-      for it gives the class equation. Two consequences carry the rest of finite group
-      theory. A p-group has a nontrivial center, because every nontrivial class has
-      size divisible by p and the identity is not enough to make the count work; and
-      Burnside's lemma counts orbits as the average number of fixed points, which is
-      what makes colouring problems finite computations."
+      for it gives the class equation. A p-group has a nontrivial center: every noncentral
+      conjugacy class has size divisible by p, so the class equation forces $p\\mid |Z(G)|$; and
+      Burnside's lemma counts orbits as the average number of fixed points, reducing
+      colouring problems to finite fixed-point counts."
     items:
       - ref: D-WYC7C
       - ref: D-3T6O2
@@ -342,8 +336,7 @@ sections:
   - slug: permutation-groups
     title: Permutation Groups
     parent: group-actions-and-counting
-    lede: 'Every group embeds in a symmetric group, so the symmetric groups are where
-      abstract statements get tested. The sign homomorphism is the first invariant:
+    lede: 'By Cayley, every group embeds in a symmetric group. The sign homomorphism is the first invariant:
       a cycle of even length is an odd permutation, conjugation preserves cycle type,
       and the conjugacy classes of the symmetric group on n letters are therefore the
       partitions of n. The alternating groups are simple from degree five onwards, which
@@ -479,8 +472,7 @@ sections:
   - slug: products-and-classification
     title: Presentations, Products, and Classification
     parent: sylow-theory
-    lede: 'Classifying the groups of a given order is the exercise that uses everything
-      above. The recognition theorems say when a group is a product: a direct product
+    lede: 'The recognition theorems say when a group is a product: a direct product
       when both factors are normal and meet trivially, a semidirect product when only
       one is, and the semidirect products are then counted by homomorphisms into the
       automorphism group of the normal factor, which for a cyclic group is its unit
@@ -591,10 +583,8 @@ sections:
   - slug: rings-and-ideals
     title: Rings and Ideals
     parent: preliminaries
-    lede: "A ring is a group with a second operation, and an ideal is the subobject
-      the second operation forces: the kernels of ring maps are exactly the ideals,
-      so the isomorphism theorems transfer verbatim. Two kinds of ideal control everything
-      downstream, and both are recognised by their quotients: an ideal is prime exactly
+    lede: "Ideals are exactly kernels of ring maps, so quotient rings carry the
+      isomorphism theorems. Prime and maximal ideals are recognised by their quotients: an ideal is prime exactly
       when the quotient is a domain, and maximal exactly when the quotient is a field,
       which makes maximal imply prime and shows the converse fails already in the integers
       at the zero ideal. [Preliminaries](preliminaries.html) supplies Zorn's lemma,
@@ -816,9 +806,9 @@ sections:
     title: Commutative Algebra
     parent: factorization-and-polynomials
     lede: "Localization inverts a submonoid of the multiplicative monoid of a ring and
-      is how a ring is studied one prime at a time: localizing at a prime produces a local ring, whose single maximal
-      ideal is what makes Nakayama's lemma -- a finitely generated module killed by
-      its maximal ideal is zero -- into the workhorse it is. The nilradical and the
+      is how a ring is studied one prime at a time: localizing at a prime produces a local ring $(R_\\mathfrak p,\\mathfrak pR_\\mathfrak p)$,
+      and Nakayama says that for a finitely generated module over a local ring,
+      $\\mathfrak mM=M$ forces $M=0$. The nilradical and the
       Jacobson radical are the two intersections that measure different defects, the
       first of all primes and the second of all maximal ideals, and they agree for a
       finitely generated algebra over a field. The Noetherian condition is what keeps
@@ -968,9 +958,8 @@ sections:
   - slug: modules
     title: Modules
     parent: rings-and-ideals
-    lede: 'A module is a vector space over a ring, and dropping the field is exactly
-      what makes the subject interesting: bases need not exist, so free, projective,
-      and torsion-free become three different conditions instead of one. Free implies
+    lede: 'Over a general ring, bases need not exist, so free, projective,
+      and torsion-free are distinct conditions. Free implies
       projective implies torsion-free over a domain, and none of the arrows reverse.
       Exactness is the language for comparing modules, a short exact sequence splits
       precisely when the quotient is projective, and the tensor product is the construction
