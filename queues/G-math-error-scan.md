@@ -63,7 +63,11 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The statement now uses the set
   $\mathcal C(H)=\{gHg^{-1}:g\in G\}$ of conjugate subgroups; its cardinality,
   not the cardinality of their union as subsets of $G$, is $[G:N_G(H)]$.
-- [ ] 9. E-OUBBQ — Wrong difference-quotient factorization for `x^n`
+- [x] 9. E-OUBBQ — Wrong difference-quotient factorization for `x^n`
+  Disposition 2026-09-04: confirmed and fixed. The difference-of-powers
+  factorization now uses
+  $\sum_{k=0}^{n-1}x^{n-1-k}y^k$, yielding the stated Lipschitz bound
+  $nM^{n-1}|x-y|$ and an explicit uniform-continuity $\delta$.
 - [ ] 10. E-ZXKDY — Degree not defined for the factorization maps
 - [ ] 11. T-77SHB — Cayley transform direction is backwards
 - [ ] 12. E-ZCPKK — Cross-multiplication step is mis-written

@@ -13,14 +13,19 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
-Show that $f(x) = x^n$ is uniformly continuous on any interval $[-M, M]$.
-
+::: {.problem}
+For $n\geq1$, show that $f(x)=x^n$ is uniformly continuous on any interval $[-M,M]$.
 :::
 
-:::{.solution}
+::: {.solution}
+If $M=0$, the claim is immediate.
+Assume $M>0$.
+For $x,y\in[-M,M]$,
 \[
-\abs{x^n - y^n} = \abs{y-x}\abs{\sum_{1\leq k \leq n} x^k y^{n-k}} \leq n M^{n-1}\abs{y-x} \convergesto{y\to x}0
-.\]
+\abs{x^n-y^n}
+&=\abs{x-y}\abs{\sum_{k=0}^{n-1}x^{n-1-k}y^k} \\
+&\leq nM^{n-1}\abs{x-y}.
+\]
+Thus $f$ is Lipschitz on $[-M,M]$, hence uniformly continuous.
+Explicitly, given $\varepsilon>0$, take $\delta=\varepsilon/(nM^{n-1})$.
 :::
-
