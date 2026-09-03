@@ -98,6 +98,16 @@ def test_checked_in_guide_sections_have_one_scoped_practice_target_per_kind() ->
                     assert same_kind[0].topics, f"{guide.id}/{section.slug} has an unscoped {kind} practice query"
 
 
+def test_semisimplicity_guide_resolves_its_named_terms() -> None:
+    """The guide named for representations and semisimplicity links both definitions."""
+    publications = Path(__file__).resolve().parents[1] / "publications"
+    [algebra] = [guide for guide in load_publications(publications) if guide.id == "GUIDE-ALGEBRA"]
+    section = next(section for section in algebra.sections if section.slug == "semisimplicity-and-representations")
+
+    assert "[representation](../../wiki/algebra/representations/index.html)" in section.lede
+    assert "[semisimple](../../tag/D-CYAJI.html)" in section.lede
+
+
 def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) -> None:
     """The guide records the filter; only the generator evaluates it."""
     work = fixture_repo(

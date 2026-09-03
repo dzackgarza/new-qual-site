@@ -937,11 +937,14 @@ sections:
     title: Semisimplicity and Representations
     parent: modules
     lede: >-
-      Representations are $k[G]$-modules. Under the semisimplicity hypotheses they
-      split into irreducibles; semisimple rings decompose into matrix blocks over
-      division rings; over an algebraically closed field, irreducibles have only
-      scalar equivariant endomorphisms. Characters are class functions, and the
-      number of irreducible characters equals the number of conjugacy classes.
+      A [representation](../../wiki/algebra/representations/index.html) of a finite
+      group $G$ over a field $k$ is a finite-dimensional left $k[G]$-module. A
+      module is [semisimple](../../tag/D-CYAJI.html) when it is a direct sum of
+      simple modules. Under Maschke's hypotheses representations split into
+      irreducibles; semisimple rings decompose into matrix blocks over division
+      rings; over an algebraically closed field, irreducibles have only scalar
+      equivariant endomorphisms. Characters are class functions, and the number of
+      irreducible characters equals the number of conjugacy classes.
     items:
       - ref: T-ZOTWN
       - ref: T-PIO2B
