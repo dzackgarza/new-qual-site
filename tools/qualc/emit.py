@@ -1013,11 +1013,16 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
     for row in _rows(
         con,
         """
-        select cp.problem_id, e.institution, case when s.source_kind='exam' then s.year else null end as year
+        select cp.problem_id, cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.comment,
+          c.title as collection_title, s.source_kind, s.year as source_year,
+          case when s.source_kind='university-exam' then s.year else null end as exam_year,
+          e.institution
         from collection_problems cp
+        join cards listed on listed.id=cp.problem_id and listed.kind='problem'
+        join cards c on c.id=cp.collection_id
         join sources s on s.id=cp.collection_id
         left join exam_sources e on e.id=s.id
-        order by cp.problem_id, e.institution, s.year
+        order by cp.problem_id, cp.collection_id, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
         card_id = row["problem_id"]
@@ -1220,7 +1225,7 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     """The card's own blocks, with the question marked off from the answers.
 
     A practice sheet needs the question and must not carry the answer, and the
-    generator asks the card's page for it rather than being handed every
+    browser's sampled practice view asks the card's page for it rather than being handed every
     statement on the site. Which blocks are the question is something the
     emitter knows and a reader of the HTML would have to guess: taking blocks
     up to the first answer truncates the 11 problems that write more of the
@@ -1236,7 +1241,7 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
 def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
     facets = _page_rows(data.facets, card["id"])
     institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
-    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
+    years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
     meta: dict[str, object] = {
@@ -1324,11 +1329,14 @@ def _card_filters(
         *also,
         *(("area", term) for term in _page_terms(data, card["id"], "area")),
         *(("topic", term) for term in _page_terms(data, card["id"], "topic")),
+        *sorted({("source_kind", row["source_kind"]) for row in facets}),
+        *sorted({("collection", row["collection_id"]) for row in facets}),
         *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
-        *sorted({("year", str(row["year"])) for row in facets if row["year"] is not None}),
-        # A practice sheet can be asked for problems that were really set. That
-        # is "has an institution", which no filter over the values can ask.
-        ("sourced", "yes" if any(row["institution"] for row in facets) else "no"),
+        *sorted({("year", str(row["source_year"])) for row in facets if row["source_year"] is not None}),
+        # Compatibility for old saved generator URLs. The canonical browser now
+        # exposes source kind directly, but this Boolean still answers whether a
+        # problem has ever appeared on a university exam.
+        ("sourced", "yes" if any(row["source_kind"] == "university-exam" for row in facets) else "no"),
     )
 
 
@@ -1622,10 +1630,11 @@ def collection_page(
     listed = _rows(
         con,
         """
-        select section_ordinal, section_name, ordinal, problem_id
-        from collection_problems
-        where collection_id=?
-        order by coalesce(section_ordinal, -1), ordinal
+        select cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, listed.kind, listed.title
+        from collection_problems cp
+        join cards listed on listed.id=cp.problem_id
+        where cp.collection_id=?
+        order by coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
         (src["id"],),
     )
@@ -1639,9 +1648,12 @@ def collection_page(
             (src["id"],),
         )
     ]
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
-        con,
-        listed,
+    direct_problems = [row for row in listed if row["kind"] == "problem"]
+    included_sources = [(row["problem_id"], row["title"]) for row in listed if row["kind"] == "collection"]
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_summary(
+        src["id"],
+        len(direct_problems),
+        included_sources,
         inline_cache,
         completion,
         provenance,
@@ -1671,26 +1683,22 @@ def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
     return None
 
 
-def _collection_listing(
-    con: sqlite3.Connection,
-    listed: list[sqlite3.Row],
+def _collection_summary(
+    collection_id: str,
+    problem_count: int,
+    included_sources: list[tuple[str, str]],
     inline_cache: dict[str, list[pf.Inline]],
     completion: str = "complete",
     provenance: list[str] | None = None,
     repo_root: Path | None = None,
 ) -> list[pf.Block]:
-    """The collection card's `problems:` / `sections:` list is the page body.
+    """Source identity and provenance; problem display belongs to the browser.
 
-    Position is the list index. An empty list is an unfilled collection, not a
-    cue to invent contents from somewhere else.
+    A collection owns the exact ordered appearance list in the catalog. The
+    source page does not duplicate that list: it links the central problem
+    browser, which can reproduce source sections, order, and locators while
+    still letting the reader filter, search, sample, and print.
     """
-
-    def card_item(problem_id: str) -> pf.ListItem:
-        matches = _rows(con, "select * from cards where id=?", (problem_id,))
-        if matches:
-            return pf.ListItem(_link(matches[0], inline_cache))
-        return pf.ListItem(pf.Plain(pf.Code(problem_id)))
-
     blocks: list[pf.Block] = []
     if completion == "incomplete":
         blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
@@ -1711,35 +1719,26 @@ def _collection_listing(
                 )
             provenance_items.append(pf.ListItem(pf.Plain(*inlines)))
         blocks.append(pf.BulletList(*provenance_items))
+    if included_sources:
+        blocks.append(pf.Header(pf.Str("Included sources"), level=2))
+        blocks.append(pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(*_inlines(title, inline_cache), url=source_id))) for source_id, title in included_sources]))
     blocks.append(
         pf.Para(
-            pf.Str(str(len(listed))),
+            pf.Str(str(problem_count)),
             pf.Space(),
             *_inlines("problems.", inline_cache),
         )
     )
-    if not listed:
-        return blocks
-
-    by_section: list[tuple[str | None, list[str]]] = []
-    for row in listed:
-        name = row["section_name"]
-        if not by_section or by_section[-1][0] != name:
-            by_section.append((name, []))
-        by_section[-1][1].append(row["problem_id"])
-
-    for name, pids in by_section:
-        if name:
-            blocks.append(pf.Header(*_inlines(name, inline_cache), level=2))
+    if problem_count:
         blocks.append(
             pf.Div(
-                pf.OrderedList(
-                    *[card_item(pid) for pid in pids],
-                    start=1,
-                    style="Decimal",
-                    delimiter="Period",
+                pf.Para(
+                    pf.Link(
+                        pf.Str("Browse these problems in source order"),
+                        url=_problem_browser_deep_link(collection=collection_id),
+                    )
                 ),
-                classes=["qual-exam-listing"],
+                classes=["panel", "problem-query-link"],
             )
         )
     return blocks
@@ -1859,18 +1858,24 @@ def publication_root_page(
     ]
 
 
-def _generator_deep_link(area: str, topics: tuple[str, ...] | list[str]) -> str:
-    """A site-root generator link carrying the authored practice filter.
+def _problem_browser_deep_link(
+    area: str = "",
+    topics: tuple[str, ...] | list[str] = (),
+    collection: str = "",
+) -> str:
+    """A site-root link into the one problem-query interface.
 
-    Area comes from the guide or wiki page. Repeated `topic=` parameters
-    preserve the authored OR-family exactly. The shared HTML writer resolves
-    `generate.html` relative to the page that contains the link.
+    Area/topics come from authored guide/wiki selection; collection comes from
+    a source page. Repeated topic parameters preserve the OR-family exactly.
     """
     params: list[tuple[str, str]] = []
     if area:
         params.append(("area", area))
     params.extend(("topic", topic) for topic in topics)
-    return f"generate.html?{urlencode(params)}"
+    if collection:
+        params.append(("collection", collection))
+    suffix = f"?{urlencode(params)}" if params else ""
+    return f"problems.html{suffix}"
 
 
 def _practice_link_block(
@@ -1879,9 +1884,8 @@ def _practice_link_block(
 ) -> pf.Block:
     """One problem-discovery link shared by guides and wiki pages.
 
-    This does not execute the query or compute a count. The generator alone owns
-    which problem cards currently match and lets the reader refine, sample, and
-    print them there.
+    This does not execute the query or compute a count. The central browser owns
+    the live result set and lets the reader refine, sample, and print it there.
     """
     if len(topics) == 1:
         focus = f" on {topics[0]}"
@@ -1892,11 +1896,11 @@ def _practice_link_block(
     return pf.Div(
         pf.Para(
             pf.Link(
-                pf.Str(f"Drill the problems{focus} in the generator"),
-                url=_generator_deep_link(area, topics),
+                pf.Str(f"Browse the problems{focus}"),
+                url=_problem_browser_deep_link(area=area, topics=topics),
             ),
         ),
-        classes=["panel", "generator-link"],
+        classes=["panel", "problem-query-link"],
     )
 
 
@@ -1949,7 +1953,7 @@ def card_guide_appearances(
 ) -> dict[str, list[Appearance]]:
     """Guide sections that explicitly reference this card.
 
-    A query is a link from the guide into the practice generator. Its current
+    A query is a link from the guide into the canonical problem browser. Its current
     result set is not content displayed by the guide, so matching a query does
     not make a card "appear" there. Only an authored `ref:` does.
     """
@@ -2000,10 +2004,8 @@ def index_page(
     )
     links = (
         "## Where to start\n\n"
-        "[Browse](problems.html)\n"
-        ": Every problem, filtered by area, topic, institution and year.\n\n"
-        "[Generate](generate.html)\n"
-        ": A practice set drawn to those same filters.\n\n"
+        "[Problems](problems.html)\n"
+        ": Every problem, with live topic/source filters plus random sampling and print/PDF.\n\n"
         "[Exams](exams.html)\n"
         ": Each sitting as it was sat, problem by problem.\n\n"
         "[Guides](guides.html)\n"
@@ -2022,15 +2024,6 @@ def index_page(
     return {"title": "Qual Corpus"}, list(from_ast(output[0]).content)
 
 
-def listing_page(
-    title: str,
-    listing: dict,
-    lede: str,
-    inline_cache: dict[str, list[pf.Inline]],
-) -> Page:
-    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede, inline_cache))]
-
-
 # Separates multi-valued facet terms in HTML data attributes. Topics are free
 # strings and may contain spaces, so space is not a usable delimiter.
 FACET_SEP = "|"
@@ -2040,21 +2033,51 @@ def _facet_terms(joined: str | None) -> list[str]:
     return [term for term in (joined or "").split(FACET_SEP) if term]
 
 
-def _facet_option_label(axis: str, value: str, area_names: dict[str, str]) -> str:
-    """What to call one facet value on screen.
-
-    An area is called what the wiki's own folder calls it. Title-casing the id
-    instead made the registry's own `name` dead data and the site's fifth
-    vocabulary: it agrees with the registry by luck and disagrees silently.
-    Every other value arrives as it is written: topics and years are authored
-    display strings, and an institution is the acronym the rows already carry,
-    which title-casing turned back into `Uga`.
-    """
+def _facet_option_label(
+    axis: str,
+    value: str,
+    area_names: dict[str, str],
+    collection_names: dict[str, str] | None = None,
+) -> str:
+    """What to call one facet value on screen."""
     if axis == "area":
         return area_names[value]
     if axis == "source_kind":
         return SOURCE_KIND_HEADINGS[value]
+    if axis == "collection" and collection_names is not None:
+        return collection_names[value]
     return value
+
+
+def _listing_markup(
+    noun: str,
+    placeholder: str,
+    facet_values: dict[str, list[str]],
+    area_names: dict[str, str],
+    kind: str,
+    collection_names: dict[str, str] | None = None,
+) -> str:
+    """Shared controls and result list for one index-backed listing."""
+    facet_controls = "".join(
+        f'<label for="listing-{axis}">{axis.replace("_", " ").title()}'
+        f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
+        + "".join(
+            f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names, collection_names))}</option>' for value in values
+        )
+        + "</select></label>"
+        for axis, values in facet_values.items()
+    )
+    return (
+        f'<div class="listing-filters" data-listing-kind="{html.escape(kind, quote=True)}">'
+        '<label for="listing-search">Search'
+        f'<input id="listing-search" type="search" data-noun="{html.escape(noun, quote=True)}"'
+        f' placeholder="{html.escape(placeholder, quote=True)}">'
+        "</label>"
+        + facet_controls
+        + '<output id="listing-count" aria-live="polite"></output></div>'
+        + '<ol class="listing" id="listing-results"></ol>'
+        + '<button class="listing-more" id="listing-more" type="button" hidden>Show more</button>'
+    )
 
 
 def _listing_filters(
@@ -2064,57 +2087,124 @@ def _listing_filters(
     area_names: dict[str, str],
     kind: str,
 ) -> pf.RawBlock:
-    """The search box, one select per facet, and the region results are put in.
-
-    `app.js` reads the axes off the `data-facet` attributes rather than being
-    told which page it is on, so a page adds an axis by emitting a control for
-    it. `noun` is what the running count calls the rows, and `kind` is the
-    filter every query on this page carries -- what the page is a listing of.
-
-    The rows themselves are not here. The listing asks the index for the page
-    of results a reader is looking at; it used to carry all of them and hide
-    the ones that did not match.
-    """
+    """A plain index-backed listing, used for source discovery."""
     return pf.RawBlock(
-        f'<div class="listing-filters" data-listing-kind="{html.escape(kind, quote=True)}">'
-        '<label for="listing-search">Search'
-        f'<input id="listing-search" type="search" data-noun="{html.escape(noun, quote=True)}"'
-        f' placeholder="{html.escape(placeholder, quote=True)}">'
-        "</label>"
-        + "".join(
-            f'<label for="listing-{axis}">{axis.title()}'
-            f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
-            + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names))}</option>' for value in values)
-            + "</select></label>"
-            for axis, values in facet_values.items()
-        )
-        + '<output id="listing-count" aria-live="polite"></output></div>'
-        + '<ol class="listing" id="listing-results"></ol>'
-        + '<button class="listing-more" id="listing-more" type="button" hidden>Show more</button>',
+        _listing_markup(noun, placeholder, facet_values, area_names, kind),
         format="html",
     )
+
+
+def _problem_listing_filters(
+    facet_values: dict[str, list[str]],
+    area_names: dict[str, str],
+    collection_names: dict[str, str],
+) -> pf.RawBlock:
+    """The canonical problem browser adds sampling and print to the shared listing."""
+    listing = _listing_markup(
+        "problem",
+        "Group theory, UGA, 2019…",
+        facet_values,
+        area_names,
+        "problem",
+        collection_names,
+    )
+    practice = (
+        '<div class="practice-actions">'
+        '<label for="practice-count">Random sample'
+        '<input id="practice-count" type="number" min="1" max="100" value="8"></label>'
+        '<button id="practice-sample" type="button">Sample from these results</button>'
+        '<button id="practice-print" type="button" disabled>Print / PDF sample</button>'
+        "</div>"
+        '<section id="practice-sheet" class="practice-sheet" hidden></section>'
+    )
+    # Put the practice controls before the result list so the action is visible
+    # without scrolling through the current matches.
+    marker = '<ol class="listing" id="listing-results"></ol>'
+    return pf.RawBlock(listing.replace(marker, practice + marker), format="html")
 
 
 def problem_browser_page(
     con: sqlite3.Connection,
     area_names: dict[str, str],
 ) -> Page:
-    """The facet controls. The rows come from the index, a page at a time.
-
-    The controls are built from the catalog rather than from the index: the
-    catalog is what says which values exist, and a control rendered before any
-    script runs is one whose shape a reader can see straight away.
-    """
+    """The one problem-query interface: browse, refine, sample, and print."""
+    collection_names = {row["id"]: row["title"] for row in _rows(con, "select id, title from cards where kind='collection'")}
+    appearing_source_kinds = {
+        row["source_kind"]
+        for row in _rows(
+            con,
+            "select distinct s.source_kind from sources s join collection_problems cp on cp.collection_id=s.id",
+        )
+    }
     facet_values = {
         "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
         "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
+        "source_kind": [kind for kind in SOURCE_KIND_HEADINGS if kind in appearing_source_kinds],
         "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
-        "year": sorted({str(row["year"]) for row in _rows(con, "select year from sources where year is not null")}),
+        "year": sorted({str(row["year"]) for row in _rows(con, "select distinct year from sources where year is not null")}),
+        "collection": sorted(collection_names, key=lambda card_id: (collection_names[card_id], card_id)),
     }
     return {"title": "Problems"}, [
-        pf.Para(pf.Str("Every problem in the corpus.")),
-        _listing_filters("problem", "Group theory, UGA, 2019…", facet_values, area_names, "problem"),
+        pf.Para(
+            pf.Str("Every problem in the corpus. Filter the live result set, open a source in its exact order, or draw a printable random sample from the current results.")
+        ),
+        _problem_listing_filters(facet_values, area_names, collection_names),
     ]
+
+
+def collection_problem_index(
+    con: sqlite3.Connection,
+    data: CardPageData,
+) -> dict[str, dict[str, object]]:
+    """Ordered source appearances used lazily by the central problem browser."""
+    collections: dict[str, dict[str, object]] = {}
+    rows = _rows(
+        con,
+        """
+        select cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, cp.comment,
+          source.title as collection_title, problem.title as problem_title, s.source_kind, s.year, e.institution
+        from collection_problems cp
+        join cards source on source.id=cp.collection_id
+        join cards problem on problem.id=cp.problem_id and problem.kind='problem'
+        join sources s on s.id=cp.collection_id
+        left join exam_sources e on e.id=s.id
+        order by cp.collection_id, coalesce(cp.section_ordinal, -1), cp.ordinal
+        """,
+    )
+    for row in rows:
+        collection_id = row["collection_id"]
+        if collection_id not in collections:
+            collections[collection_id] = {
+                "title": row["collection_title"],
+                "items": [],
+            }
+        filters: dict[str, list[str]] = {
+            "area": _page_terms(data, row["problem_id"], "area"),
+            "topic": _page_terms(data, row["problem_id"], "topic"),
+            "source_kind": [row["source_kind"]],
+            "collection": [collection_id],
+        }
+        if row["institution"]:
+            filters["institution"] = [row["institution"].upper()]
+        if row["year"] is not None:
+            filters["year"] = [str(row["year"])]
+        locator = row["comment"] or f"Problem {row['ordinal'] + 1}"
+        items = collections[collection_id]["items"]
+        assert isinstance(items, list)
+        items.append(
+            {
+                "id": row["problem_id"],
+                "url": f"tag/{row['problem_id']}.html",
+                "meta": {
+                    "title": row["problem_title"],
+                    "collection_title": row["collection_title"],
+                    "collection_section": row["section_name"] or "",
+                    "collection_locator": locator,
+                },
+                "filters": filters,
+            }
+        )
+    return collections
 
 
 # Every source kind a collection can declare, in the order a reader meets them,
@@ -2149,7 +2239,7 @@ def _guide_sections(
 ) -> list[pf.Block]:
     """The subject guides, then the guides that cross subjects rather than being one.
 
-    A guide's id names its subject -- that is how its generator deep links are
+    A guide's id names its subject -- that is how its problem-browser deep links are
     scoped -- so whether it is a subject is already recorded and does not
     become a field an author can forget.
     """
@@ -2222,8 +2312,7 @@ QUARTO_YML = {
         "navbar": {
             "left": [
                 {"href": "index.qmd", "text": "Home"},
-                {"href": "problems.qmd", "text": "Browse"},
-                {"href": "generate.qmd", "text": "Generate"},
+                {"href": "problems.qmd", "text": "Problems"},
                 {"href": "exams.qmd", "text": "Sources"},
                 {"href": "guides.qmd", "text": "Guides"},
                 {"href": "wiki/index.qmd", "text": "Wiki"},
@@ -2240,25 +2329,6 @@ QUARTO_YML = {
             "css": "styles.css",
         }
     },
-}
-
-PROBLEMS_LISTING = {
-    "id": "problems",
-    "contents": "tag/P-*.qmd",
-    "type": "table",
-    "fields": ["title", "area", "institutions", "years", "review"],
-    "field-display-names": {
-        "title": "Problem",
-        "area": "Area",
-        "institutions": "Seen at",
-        "years": "Years",
-        "review": "Status",
-    },
-    "sort": ["title"],
-    "sort-ui": ["title", "area", "years", "review"],
-    "filter-ui": True,
-    "categories": "cloud",
-    "page-size": 100,
 }
 
 
@@ -2295,8 +2365,8 @@ def mathjax_header(macros: dict) -> str:
     # a block that says `a &= \begin{cases}...\end{cases} \\ &= b` needs the wrapper for
     # its own alignment characters even though it contains an environment.
     # It runs as a render action rather than once at page load. A `pageReady` hook
-    # rewrites the DOM that exists when the page opens, so `generate.html`, which
-    # injects a sheet and typesets it on demand, never got the wrapper and its
+    # rewrites the DOM that exists when the page opens, so the central problem
+    # browser's sampled practice sheet, injected on demand, never got the wrapper and its
     # mathematics failed on exactly the blocks that render correctly on their own
     # page. A render action runs on every typeset pass, and at priority 15 it sees
     # the TeX after `find` (10) and before `compile` (20) -- so it edits the source
@@ -2363,141 +2433,6 @@ def _wiki_manifest(pages: list[WikiPage]) -> list[dict[str, str]]:
     if len(routes) != len(set(routes)):
         raise ValueError("wiki page route collision")
     return manifest
-
-
-GENERATE_QMD = """---
-title: Generate a practice set
----
-
-```{=html}
-<style>
-/* Every track and flex item is min-width:0. A grid or flex item defaults to a
-   min-content floor, so one wide equation in one problem widened the sheet
-   track and pushed the whole page sideways; `mjx-container{max-width:100%}` in
-   the site stylesheet then resolved against the widened column and never bit.
-   The remaining irreducibly wide block scrolls inside .qb, not on <body>. */
-.gen-panel{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:32px;align-items:start;margin-top:8px}
-.gen-controls .grp{margin-bottom:18px}
-.gen-controls label.h{display:block;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6c757d;margin-bottom:8px}
-.gen-controls .opt{display:block;margin:4px 0}
-#gen-n{width:90px;padding:6px 8px}
-#gen-go{margin-top:6px;padding:10px 18px;font-weight:600;border:0;border-radius:6px;background:#2780e3;color:#fff;cursor:pointer}
-#gen-sheet{min-width:0}
-#gen-sheet .q{display:flex;gap:14px;margin:22px 0;page-break-inside:avoid}
-#gen-sheet .qn{font-weight:700;color:#2780e3;min-width:26px;flex:0 0 auto}
-#gen-sheet .qb{min-width:0;flex:1 1 auto;overflow-x:auto}
-#gen-sheet .src{font-size:.85em;color:#6c757d;font-style:italic;margin-top:6px}
-#gen-sheet h2{text-align:center;border-bottom:2px solid #333;padding-bottom:10px}
-@media (max-width:56rem){.gen-panel{grid-template-columns:minmax(0,1fr)}}
-@media print{.gen-controls,.navbar,#quarto-header,.quarto-title-block{display:none!important}.gen-panel{display:block}}
-</style>
-<div class="gen-panel">
-  <form class="gen-controls" onsubmit="return false">
-    <div class="grp"><label class="h">Areas</label><div id="gen-areas"></div></div>
-    <div class="grp"><label class="h">Institution</label><select id="gen-inst" class="form-select"></select></div>
-    <div class="grp"><label class="h">Topics</label><select id="gen-topic" class="form-select" multiple size="8"></select></div>
-    <div class="grp"><label class="h">Year</label><select id="gen-year" class="form-select"></select></div>
-    <div class="grp"><label class="h">Number of problems</label><input type="number" id="gen-n" value="8" min="1" max="40"></div>
-    <div class="grp"><label class="opt"><input type="checkbox" id="gen-src"> Only from a recorded exam</label></div>
-    <button id="gen-go">Generate set</button>
-    <button id="gen-print" style="margin-top:6px;background:none;border:1px solid #ccc;border-radius:6px;padding:9px 16px;cursor:pointer">Print / PDF</button>
-  </form>
-  <div id="gen-sheet">
-    <p class="text-muted">Pick criteria and press <b>Generate set</b>.
-      Problems are sampled from the corpus
-      and typeset here.</p>
-  </div>
-</div>
-<script type="module">
-// The generator asks the index which problems match, samples from the answer,
-// and fetches only the ones it drew. It used to be handed the statement of
-// every problem on the site -- 5.1MB of script -- so it could pick eight.
-const AREAS=__AREANAMES__;
-const escapeHtml=(value)=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
-const pagefind=await import("./pagefind/pagefind.js");
-await pagefind.options({});
-const available=await pagefind.filters();
-const values=(axis)=>Object.keys(available[axis]||{});
-
-document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
-  .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
-    value="${escapeHtml(k)}"> ${escapeHtml(v)}</label>`)
-  .join("");
-const fill=(id,items,label)=>{
-  document.getElementById(id).innerHTML='<option value="">Any</option>'+
-    items.map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(label?label(v):v)}</option>`).join("");
-};
-fill("gen-inst",values("institution").sort());
-document.getElementById("gen-topic").innerHTML=values("topic").sort()
-  .map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
-fill("gen-year",values("year").sort((a,b)=>Number(b)-Number(a)));
-
-// A guide/wiki page deep-links here with its complete practice filter. Repeated
-// `topic=` parameters select the same OR-family the authored query names.
-const p=new URLSearchParams(location.search);
-const has=(k,v)=>{const el=document.getElementById(k);return [...el.options].some(o=>o.value===v);};
-const area=p.get("area");
-if(area)for(const el of document.querySelectorAll(".ga"))if(el.value===area)el.checked=true;
-const topics=p.getAll("topic");
-if(topics.length)for(const option of document.getElementById("gen-topic").options)option.selected=topics.includes(option.value);
-if(p.get("institution")&&has("gen-inst",p.get("institution")))document.getElementById("gen-inst").value=p.get("institution");
-if(p.get("year")&&has("gen-year",p.get("year")))document.getElementById("gen-year").value=p.get("year");
-
-function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
-
-// The question, taken from the card's own page. The page marks it, so what
-// reaches a practice sheet is what the card asks and never what answers it.
-const statementOf=async (url)=>{
-  const response=await fetch(url);
-  if(!response.ok) return "";
-  const parsed=new DOMParser().parseFromString(await response.text(),"text/html");
-  const statement=parsed.querySelector(".card-statement");
-  return statement?statement.innerHTML:"";
-};
-
-document.getElementById("gen-go").onclick=async()=>{
-  const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
-  const inst=document.getElementById("gen-inst").value;
-  const topics=[...document.getElementById("gen-topic").selectedOptions].map(o=>o.value);
-  const year=document.getElementById("gen-year").value;
-  const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
-  const needSrc=document.getElementById("gen-src").checked;
-  const sheet=document.getElementById("gen-sheet");
-  sheet.innerHTML='<p class="text-muted">Drawing…</p>';
-
-  const filters={kind:"problem"};
-  if(areas.length) filters.area={any:areas};
-  if(inst) filters.institution=inst;
-  if(topics.length) filters.topic={any:topics};
-  if(year) filters.year=year;
-  if(needSrc) filters.sourced="yes";
-  const found=await pagefind.search(null,{filters});
-  const pick=sample(found.results,n);
-  if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
-
-  const drawn=await Promise.all(pick.map(async(result)=>{
-    const data=await result.data();
-    return {data,statement:await statementOf(data.url)};
-  }));
-  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst:"")+(topics.length?" · "+topics.join(", "):"")+(year?" · "+year:"");
-  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} problems · ${escapeHtml(title)}</p>`+
-    drawn.map(({data,statement},i)=>{
-      const sat=[(data.filters.institution||[]).join(", "),(data.filters.year||[]).join(", ")].filter(Boolean).join(" · ");
-      return `<div class="q">
-      <div class="qn">${i+1}.</div>
-      <div class="qb">${statement}
-        <div class="src">${escapeHtml(sat||"No recorded exam")} ·
-          <a href="${escapeHtml(data.url)}">${escapeHtml(data.url.split("/").pop().replace(".html",""))}</a>
-        </div>
-      </div>
-    </div>`;}).join("");
-  if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
-};
-document.getElementById("gen-print").onclick=()=>window.print();
-if([...p.keys()].some(k=>["area","topic","institution","year"].includes(k)))document.getElementById("gen-go").click();
-</script>
-```
-"""
 
 
 def project(
@@ -2572,6 +2507,7 @@ def project(
 
     jcache, api = load_json(con)
     card_page_data = load_card_page_data(con)
+    (site_root / "collection-problems.json").write_text(json.dumps(collection_problem_index(con, card_page_data), ensure_ascii=False, separators=(",", ":")) + "\n")
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = asked_json(
@@ -2654,20 +2590,26 @@ def project(
             )
         )
 
-    used_areas = {row["term"] for row in _rows(con, "select term from classifications where axis='area'")}
-    generate_qmd = GENERATE_QMD.replace(
-        "__AREANAMES__",
-        json.dumps(
-            {area: area_names[area] for area in sorted(used_areas, key=lambda a: area_names[a])},
-            separators=(",", ":"),
-        ),
-    )
+    # `generate.html` was the old second query implementation. Keep the route so
+    # saved links do not break, but immediately forward its filters into the one
+    # canonical problem browser and request the old default eight-item sample.
+    generate_qmd = """---
+title: Practice problems
+---
+
+Practice generation now lives in the [problem browser](problems.html).
+"""
     (out / "generate.qmd").write_text(generate_qmd)
-    generate_html = generate_qmd.split("```{=html}\n", 1)[1].rsplit("\n```", 1)[0]
+    generate_html = (
+        '<p>Practice generation now lives in the <a href="problems.html">problem browser</a>.</p>'
+        '<script>(function(){const target=new URL("problems.html",document.baseURI);'
+        "const source=new URLSearchParams(location.search);for(const [key,value] of source)target.searchParams.append(key,value);"
+        'if(!target.searchParams.has("sample"))target.searchParams.set("sample","8");location.replace(target.href);})();</script>'
+    )
     write_page(
         site_root,
         Path("generate.html"),
-        {"title": "Generate a practice set"},
+        {"title": "Practice problems"},
         generate_html,
         mathjax,
         link_targets,

@@ -17,8 +17,6 @@ from pathlib import Path
 
 from conftest import fixture_repo, run_qualc
 
-CARD_LINK = re.compile(r'href="(?:\.\./)?tag/([A-Z]+-[A-Z0-9.-]+)\.html"')
-
 
 def built(tmp_path: Path) -> tuple[Path, sqlite3.Connection]:
     work = fixture_repo(tmp_path, {"P-EXTRA.md": PROBLEM, "SRC-SHEET.md": COLLECTION})
@@ -77,11 +75,11 @@ A sheet exists to list the problems it set.
 
 
 def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) -> None:
-    """Browse and the generator both ask the index, so both offer what it holds.
+    """The canonical problem browser asks the shared index, so it offers exactly what the catalog holds.
 
     Each used to carry its own copy of the problem set -- the browser as rows,
-    the generator as a script literal -- and a problem in one and not the other
-    was the defect this guarded against. There is one copy now, and what makes
+    a former generator as a script literal -- and a problem in one and not the other
+    was the defect this guarded against. There is one query surface now, and what makes
     it right is that every problem's page is a document filed under `problem`
     and no other page is.
     """
@@ -98,11 +96,13 @@ def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) ->
         indexed.add(page.stem)
     assert indexed == catalog, f"the index and the catalog differ by {sorted(indexed ^ catalog)}"
 
-    # Neither listing carries the rows any more; both ask for them.
-    for listing in ("problems.html", "generate.html"):
-        markup = (site / listing).read_text()
-        assert "data-pagefind-body" not in markup, f"{listing} is a listing, not a result"
-        assert "pagefind" in markup or "app.js" in markup, f"{listing} must read the index"
+    # The canonical problem browser is the only query/listing implementation.
+    markup = (site / "problems.html").read_text()
+    assert "data-pagefind-body" not in markup, "problems.html is a listing, not a result"
+    assert "app.js" in markup, "the problem browser must read the shared index"
+    legacy = (site / "generate.html").read_text()
+    assert "location.replace(target.href)" in legacy
+    assert 'new URL("problems.html",document.baseURI)' in legacy
 
 
 def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:
@@ -119,32 +119,57 @@ def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:
     assert len(manifest) == len(authored), f"{len(authored)} pages, {len(manifest)} in the manifest"
 
 
-def test_a_collection_page_links_every_problem_the_collection_lists(tmp_path: Path) -> None:
-    """A listed problem the page does not link is a problem a reader cannot reach.
-
-    Whether every problem belongs to a collection at all is a fact about the
-    corpus rather than the emitter, and `just backlog`'s `orphans` check owns
-    it. This owns the step after: given that a collection claims a problem, its
-    page carries the link.
-    """
+def test_every_collection_problem_is_exposed_by_the_central_source_order_index(tmp_path: Path) -> None:
+    """Collection pages delegate problem rows, but no listed problem becomes unreachable."""
     site, con = built(tmp_path)
-    listed = {r["problem_id"] for r in con.execute("select problem_id from collection_problems")}
+    listed = {
+        row[0]
+        for row in con.execute(
+            """
+            select cp.problem_id
+            from collection_problems cp join cards c on c.id=cp.problem_id
+            where c.kind='problem'
+            """
+        )
+    }
     assert listed, "the fixture must have a collection listing problems"
 
-    linked: set[str] = set()
-    for directory in ("exam", "source"):
-        for page in (site / directory).glob("*.html"):
-            linked |= set(CARD_LINK.findall(page.read_text()))
-    assert listed <= linked, f"{sorted(listed - linked)} are listed by a collection whose page does not link them"
+    index = json.loads((site / "collection-problems.json").read_text())
+    indexed = {item["id"] for source in index.values() for item in source["items"]}
+    assert listed <= indexed, f"{sorted(listed - indexed)} are missing from the central source-order index"
+
+    for collection_id, source in index.items():
+        route = con.execute("select route from cards where id=?", (collection_id,)).fetchone()[0]
+        page = (site / route / f"{collection_id}.html").read_text()
+        assert f"problems.html?collection={collection_id}" in html.unescape(page)
+        for item in source["items"]:
+            assert f"tag/{item['id']}.html" not in page, "source pages must not duplicate problem rows"
 
 
-def test_the_filters_offer_every_value_the_corpus_carries(tmp_path: Path) -> None:
-    """A facet value a card carries and the filter omits hides that card."""
+def test_the_filters_offer_every_value_problem_appearances_carry(tmp_path: Path) -> None:
+    """A facet value a problem appearance carries and the browser omits hides that problem."""
     site, con = built(tmp_path)
     page = (site / "problems.html").read_text()
-    for axis in ("area", "topic"):
-        carried = {r[0] for r in con.execute("select distinct term from classifications where axis=?", (axis,))}
-        control = re.search(rf'<select id="listing-{axis}".*?</select>', page, re.S)
+
+    carried_by_axis = {
+        "area": {r[0] for r in con.execute("select distinct term from classifications where axis='area'")},
+        "topic": {r[0] for r in con.execute("select distinct term from classifications where axis='topic'")},
+        "source_kind": {
+            r[0]
+            for r in con.execute(
+                "select distinct s.source_kind from sources s join collection_problems cp on cp.collection_id=s.id join cards c on c.id=cp.problem_id where c.kind='problem'"
+            )
+        },
+        "institution": {r[0].upper() for r in con.execute("select distinct institution from exam_sources")},
+        "year": {str(r[0]) for r in con.execute("select distinct year from sources where year is not null")},
+        "collection": {r[0] for r in con.execute("select distinct cp.collection_id from collection_problems cp join cards c on c.id=cp.problem_id where c.kind='problem'")},
+    }
+    for axis, carried in carried_by_axis.items():
+        control = re.search(rf'<select id="listing-{axis}".*?</select>', page, re.DOTALL)
         assert control is not None, f"the browser must offer a {axis} filter"
         offered = {html.unescape(v) for v in re.findall(r'<option value="([^"]*)"', control.group(0))}
         assert carried <= offered, f"{axis}: {sorted(carried - offered)} carried but not offered"
+
+    app = (site / "app.js").read_text()
+    assert 'heading.className = "listing-section"' in app
+    assert "collection-problems.json" in app

@@ -70,19 +70,19 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
         {"title": "One"},
         (
             '<p><a href="P-TWO">Two</a>'
-            '<a href="generate.html?area=algebra&topic=Groups">Practice</a>'
+            '<a href="problems.html?area=algebra&topic=Groups">Practice</a>'
             '<a href="assets/figures/diagram.png">Asset</a>'
             '<img src="../../assets/figures/diagram.png"></p>'
         ),
         "",
-        {"P-TWO": Path("tag/P-TWO.html"), "generate.html": Path("generate.html")},
+        {"P-TWO": Path("tag/P-TWO.html"), "problems.html": Path("problems.html")},
         build_asset_catalog(assets_root),
         StandardPage(Listing()),
     )
 
     links = LinkCollector()
     links.feed((site_root / "tag" / "P-ONE.html").read_text())
-    assert {"P-TWO.html", "../generate.html?area=algebra&topic=Groups", "../assets/figures/diagram.png"} <= set(links.hrefs)
+    assert {"P-TWO.html", "../problems.html?area=algebra&topic=Groups", "../assets/figures/diagram.png"} <= set(links.hrefs)
     assert "../assets/figures/diagram.png" in links.srcs
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 
@@ -440,7 +440,17 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     assert len(filters) == 1
     labels = [child for child in filters[0].children if isinstance(child, Element) and child.tag == "label"]
     controls = [[child.tag for child in label.children if isinstance(child, Element)] for label in labels]
-    assert controls == [["input"], ["select"], ["select"], ["select"], ["select"]]
+    assert controls == [["input"], ["select"], ["select"], ["select"], ["select"], ["select"], ["select"]]
+    assert [select.attrs["id"] for select in page.root.find_all("select") if select.attrs.get("id", "").startswith("listing-")] == [
+        "listing-area",
+        "listing-topic",
+        "listing-source_kind",
+        "listing-institution",
+        "listing-year",
+        "listing-collection",
+    ]
+    assert len(page.root.find_all("button", id="practice-sample")) == 1
+    assert len(page.root.find_all("button", id="practice-print")) == 1
 
 
 def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> None:
@@ -466,12 +476,12 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
     browse = [(option.attrs["value"], option.text) for option in select.find_all("option")]
     assert browse == [("algebra", "Abstract Algebra")]
 
-    embedded = re.search(r"const AREAS=(\{.*?\});", (site / "generate.html").read_text())
-    assert embedded is not None, "the generator must embed the area names"
-    assert list(json.loads(embedded.group(1)).items()) == browse
+    legacy = (site / "generate.html").read_text()
+    assert "location.replace(target.href)" in legacy
+    assert 'new URL("problems.html",document.baseURI)' in legacy
 
-    # A row shows the same name, which it reads off the control rather than
-    # being sent a second copy of.
+    # There is no second area vocabulary on a generator page: the one browser
+    # control above owns both matching ids and their display names.
 
 
 def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) -> None:

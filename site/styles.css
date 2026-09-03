@@ -782,6 +782,94 @@ mjx-container[display="true"] {
   font-size: 0.85rem;
 }
 
+.practice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: end;
+  margin-top: 0.85rem;
+}
+
+.practice-actions label {
+  color: var(--muted);
+  font-size: var(--label);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.practice-actions input {
+  display: block;
+  width: 5rem;
+  margin-top: 0.25rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.practice-actions button,
+.listing-more {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.3rem;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.practice-actions button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.practice-sheet {
+  margin-top: 2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.practice-sheet h2 {
+  text-align: center;
+}
+
+.practice-question {
+  display: flex;
+  gap: 0.85rem;
+  margin: 1.5rem 0;
+  break-inside: avoid;
+}
+
+.practice-number {
+  flex: 0 0 auto;
+  min-width: 1.75rem;
+  font-weight: 750;
+}
+
+.practice-body {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+}
+
+.practice-source {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: var(--label);
+  font-style: italic;
+}
+
+.listing-section {
+  margin-top: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.listing-section h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
 .listing-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(12rem, 1fr);
@@ -1050,14 +1138,6 @@ details.reveal[open] > summary {
   font-variant-numeric: tabular-nums;
   color: var(--muted);
   margin-right: 0.25rem;
-}
-
-/* Position on the collection page is the list index. */
-div.qual-exam-listing ol {
-  padding-left: var(--ol-gutter);
-}
-div.qual-exam-listing li {
-  margin-block: 0.35rem;
 }
 
 div.panel {
@@ -1353,6 +1433,10 @@ div.panel > ul {
   .search-dialog,
   .search-open,
   .listing-filters {
+    display: none;
+  }
+
+  body.printing-practice :is(.page-heading, .listing, .listing-more, .practice-actions, .site-footer) {
     display: none;
   }
 

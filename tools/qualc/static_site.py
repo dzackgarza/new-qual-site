@@ -774,8 +774,7 @@ def page_document(
     <nav class="site-nav" aria-label="Primary">
       <a class="site-brand" href="{prefix}index.html">Qual Corpus</a>
       <div class="site-links">
-        <a href="{prefix}problems.html">Browse</a>
-        <a href="{prefix}generate.html">Generate</a>
+        <a href="{prefix}problems.html">Problems</a>
         <a href="{prefix}exams.html">Sources</a>
         <a href="{prefix}guides.html">Guides</a>
         <a href="{prefix}wiki/index.html">Wiki</a>

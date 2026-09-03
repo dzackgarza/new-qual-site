@@ -1216,8 +1216,8 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 - [x] Decide whether collection and problem pages satisfy reachability for every problem.
   They do, and it is measured rather than decided.
-  Every problem and exercise belongs to a collection, and every one is linked from that collection's page.
-  `just backlog`'s `orphans` check reports 0 cards reachable from no page or manifest, and `test_a_collection_page_links_every_problem_the_collection_lists` holds the emitter's half.
+  Every problem belongs to a collection, and every collection appearance is exposed through the central problem browser.
+  `just backlog`'s `orphans` check reports 0 cards reachable from no page or manifest, and `test_every_collection_problem_is_exposed_by_the_central_source_order_index` holds the emitter's half without duplicating problem rows on source pages.
 
 - [x] Record each decision on its owning GitHub issue.
 
@@ -1284,7 +1284,7 @@ Evidence: the built site at `build/quarto/_site`, rendered and browsed in Chrome
   Writing them is its own piece of mathematics and belongs under issue #2. The registry is gone: the subjects are the wiki's top-level folders, so `Prelim` and `Prelims` cannot disagree any more -- the folder is the id and its title is the display name.
   Workshops was never a subject; listing it beside the six is what made Guides and the wiki look like they disagreed.
   It sits under `Across the subjects` now, and the wiki goes on filing each workshop week under the subject it belongs to.
-  Browse, Generate, Guides and the Wiki offer the same six ids in the same order.
+  Problems, Guides and the Wiki offer the same six ids in the same order; the old Generate route redirects into Problems.
 
 ### Collections
 

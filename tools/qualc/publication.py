@@ -19,10 +19,10 @@ class Strict(BaseModel):
 
 class PublicationQuery(Strict):
     # A guide is authored mathematics, not a projection of the card database.
-    # Queries exist only to hand a topic family to the problem generator;
+    # Queries exist only to hand a topic family to the canonical problem browser;
     # reference material enters the guide by an explicit `ref:` chosen by the
     # author and is transcluded where the exposition needs it. Sampling and
-    # runtime filters belong to the generator, so the manifest stores neither a
+    # runtime filters belong to the browser, so the manifest stores neither a
     # build-time limit nor a source-appearance category such as “exercise”.
     topics: list[str] = Field(min_length=1)
 
@@ -65,7 +65,7 @@ class PublicationManifest(Strict):
         terms are shared between subjects, so `integrals` carries 19
         real-analysis problems as well as 7 complex-analysis ones.
 
-        The value is carried directly into each generator deep link. The guide
+        The value is carried directly into each problem-browser deep link. The guide
         does not resolve the query against the catalog at build time.
         """
         return self.id.removeprefix("GUIDE-").lower()

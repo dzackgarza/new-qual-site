@@ -1037,8 +1037,8 @@ def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
     assert (site / "guides.html").exists()
 
 
-def test_a_wiki_problems_query_is_one_prefilled_generator_link(tmp_path: Path) -> None:
-    """The wiki names a topic family; the generator owns the resulting listing."""
+def test_a_wiki_problems_query_is_one_prefilled_browser_link(tmp_path: Path) -> None:
+    """The wiki names a topic family; the central browser owns the live listing."""
     work = fixture_repo(tmp_path)
     (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\nproblems:\n  topics: [Groups]\n---\n\n# Groups\n\nThe chapter.\n")
 
@@ -1049,8 +1049,8 @@ def test_a_wiki_problems_query_is_one_prefilled_generator_link(tmp_path: Path) -
     html = (site / "wiki" / "algebra" / "groups.html").read_text()
     links = LinkCollector()
     links.feed(html)
-    practice = [(href, classes, text) for href, classes, text in links.links if "generator-link" in html and text.startswith("Drill the problems")]
-    assert practice == [("../../generate.html?area=algebra&topic=Groups", "", "Drill the problems on Groups in the generator")]
+    practice = [(href, classes, text) for href, classes, text in links.links if "problem-query-link" in html and text.startswith("Browse the problems")]
+    assert practice == [("../../problems.html?area=algebra&topic=Groups", "", "Browse the problems on Groups")]
     assert "page-problems" not in html
     assert "tag/PRB-INDEXP.html" not in html
     assert "tag/EXE-CENTER.html" not in html
@@ -1065,7 +1065,7 @@ def test_wiki_problems_query_does_not_snapshot_the_catalog(tmp_path: Path) -> No
     assert result.returncode == 0, result.stderr
     links = LinkCollector()
     links.feed((work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups.html").read_text())
-    assert ("../../generate.html?area=algebra&topic=Sheaf+Cohomology", "", "Drill the problems on Sheaf Cohomology in the generator") in links.links
+    assert ("../../problems.html?area=algebra&topic=Sheaf+Cohomology", "", "Browse the problems on Sheaf Cohomology") in links.links
 
 
 def test_check_rejects_a_problems_query_that_is_not_a_topic_list(tmp_path: Path) -> None:

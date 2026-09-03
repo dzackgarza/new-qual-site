@@ -13,7 +13,7 @@ No installation is required.
 
 - [Browse past exams](https://dzackgarza.github.io/new-qual-site/exams.html).
 
-- [Generate a practice set](https://dzackgarza.github.io/new-qual-site/generate.html).
+- [Browse, filter, sample, and print problems](https://dzackgarza.github.io/new-qual-site/problems.html).
 
 - Press `/` on any page to search titles, statements, proofs, and topics.
 

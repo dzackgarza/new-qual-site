@@ -8,6 +8,7 @@ Each is a real, small, correct statement all the same -- a fixture that says
 
 from __future__ import annotations
 
+import json
 import sqlite3
 import subprocess
 import sys
@@ -172,7 +173,7 @@ def test_empty_provenance_href_is_rejected(tmp_path: Path) -> None:
         parse_card(path)
 
 
-def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
+def test_compilation_sections_are_preserved_in_the_central_problem_index(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     work = fixture_repo(tmp_path)
@@ -189,16 +190,25 @@ def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
     assert isinstance(parsed.source, CompilationSource)
     assert parsed.source.sections[0].name == "Day 1"
     assert parsed.source.listed_problem_ids() == ["P-INDEXP"]
+
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
-    exam_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
-    assert "Day 1" in exam_qmd
+    source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
+    assert "P-INDEXP" not in source_qmd
+    assert "problems.html?collection=SRC-NEILNOTES" in source_qmd
+
+    index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
+    [item] = index["SRC-NEILNOTES"]["items"]
+    assert item["id"] == "P-INDEXP"
+    assert item["meta"]["collection_section"] == "Day 1"
+    assert item["meta"]["collection_locator"] == "Problem 1"
+
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES' order by section_ordinal, ordinal").fetchall()
     assert rows == [("Day 1", "P-INDEXP")]
 
 
-def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
+def test_compilation_section_may_list_a_collection_without_putting_it_in_problem_results(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     work = fixture_repo(tmp_path)
@@ -214,11 +224,15 @@ def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
     assert isinstance(parsed.source, CompilationSource)
     assert [e.id for e in parsed.source.sections[0].problems] == ["SRC-UGA-FIX"]
     assert parsed.source.listed_problem_ids() == []
+
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
-    exam_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
-    assert "Day 1" in exam_qmd
-    assert "SRC-UGA-FIX" in exam_qmd
+    source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
+    assert "Included sources" in source_qmd
+    assert "SRC-UGA-FIX" in source_qmd
+    index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
+    assert "SRC-NEILNOTES" not in index
+
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES'").fetchall()
     assert rows == [("Day 1", "SRC-UGA-FIX")]
@@ -301,11 +315,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     assert "0 problems." in textbook_qmd
 
 
-def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
-    """An exam page is the collection's `problems:` list, in list order.
-
-    An empty list publishes empty. Filling it does not invent locators.
-    """
+def test_collection_page_delegates_problem_display_to_the_central_browser(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
     exam = work / "corpus" / "SRC-UGA-FIX.md"
@@ -317,9 +327,14 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
+
     exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
-    assert "P-INDEXP" in exam_qmd
-    assert "Problem 3" not in exam_qmd
+    assert "P-INDEXP" not in exam_qmd
+    assert "problems.html?collection=SRC-UGA-FIX" in exam_qmd
+
+    index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
+    assert [item["id"] for item in index["SRC-UGA-FIX"]["items"]] == ["P-INDEXP"]
+
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select problem_id from collection_problems where collection_id='SRC-UGA-FIX' order by ordinal")] == ["P-INDEXP"]
     assert list(con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")) == []

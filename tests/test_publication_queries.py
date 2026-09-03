@@ -1,4 +1,4 @@
-"""How an authored study-guide practice query becomes a generator deep link."""
+"""How an authored study-guide practice query becomes a problem-browser deep link."""
 
 from __future__ import annotations
 
@@ -103,8 +103,8 @@ def test_semisimplicity_guide_resolves_its_named_terms() -> None:
     assert "[semisimple](../../tag/D-CYAJI.html)" in section.lede
 
 
-def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) -> None:
-    """The guide records the filter; only the generator evaluates it."""
+def test_a_problem_query_is_only_a_deep_link_into_the_problem_browser(tmp_path: Path) -> None:
+    """The guide records the filter; only the central browser evaluates it."""
     work = fixture_repo(
         tmp_path,
         {
@@ -130,15 +130,15 @@ def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) 
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("div", **{"class": "panel generator-link"})
+    panels = page.root.find_all("div", **{"class": "panel problem-query-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert len(links) == 1
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
+    assert links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness"
     assert "data-count" not in panels[0].attrs
 
 
-def test_a_generator_link_preserves_every_topic_in_the_authored_family(tmp_path: Path) -> None:
+def test_a_problem_browser_link_preserves_every_topic_in_the_authored_family(tmp_path: Path) -> None:
     """A multi-topic guide query must not silently narrow to its first topic."""
     work = fixture_repo(
         tmp_path,
@@ -173,34 +173,41 @@ def test_a_generator_link_preserves_every_topic_in_the_authored_family(tmp_path:
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("div", **{"class": "panel generator-link"})
+    panels = page.root.find_all("div", **{"class": "panel problem-query-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness&topic=connectedness"
+    assert links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness&topic=connectedness"
     assert "data-count" not in panels[0].attrs
 
 
-def test_the_generator_can_realize_the_complete_guide_filter(tmp_path: Path) -> None:
-    """The destination always samples problems and understands topic OR-families."""
+def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirect(tmp_path: Path) -> None:
+    """One interface filters all matches and can sample/print from that result set."""
     work = fixture_repo(tmp_path)
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    generator_path = work / "build" / "quarto" / "_site" / "generate.html"
-    page = read_html(generator_path)
-    assert page.root.find_all("select", id="gen-kind") == []
-    topics = page.root.find_all("select", id="gen-topic")[0]
+    site = work / "build" / "quarto" / "_site"
+    browser = read_html(site / "problems.html")
+    topics = browser.root.find_all("select", id="listing-topic")[0]
     assert "multiple" in topics.attrs
+    assert len(browser.root.find_all("button", id="practice-sample")) == 1
+    assert len(browser.root.find_all("button", id="practice-print")) == 1
+    assert len(browser.root.find_all("section", id="practice-sheet")) == 1
 
-    source = generator_path.read_text()
-    assert 'const topics=p.getAll("topic");' in source
-    assert 'const filters={kind:"problem"};' in source
-    assert "filters.topic={any:topics};" in source
+    app = (site / "app.js").read_text()
+    assert "params.getAll(axis)" in app
+    assert "filters[axis] = { any: values };" in app
+    assert "collection-problems.json" in app
+
+    legacy = (site / "generate.html").read_text()
+    assert 'new URL("problems.html",document.baseURI)' in legacy
+    assert 'target.searchParams.set("sample","8")' in legacy
+    assert "location.replace(target.href)" in legacy
 
 
 @pytest.mark.parametrize("obsolete", [{"kind": "exercise"}, {"limit": 5}, {"review": {"mode": "any"}}])
 def test_publication_query_rejects_obsolete_execution_fields(obsolete: dict[str, object]) -> None:
-    """The manifest stores topics; generator runtime choices do not live here."""
+    """The manifest stores topics; browser runtime choices do not live here."""
     guide = manifest("compactness")
     sections = guide["sections"]
     assert isinstance(sections, list)
@@ -306,7 +313,7 @@ def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -
 
 
 def test_a_query_match_is_not_a_guide_appearance(tmp_path: Path) -> None:
-    """A generator query points outward; its result set is not displayed guide content."""
+    """A problem-browser query points outward; its result set is not displayed guide content."""
     work = fixture_repo(
         tmp_path,
         {

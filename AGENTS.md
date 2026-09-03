@@ -399,6 +399,32 @@ card that carries `provenance:`. A problem carries no provenance; where a
 problem comes from follows from backlinks — every collection whose
 `source.problems` lists it. Collection cards live in `corpus/collections/`.
 
+## One problem-query surface
+
+`problems.html` is the only reader-facing implementation that displays a
+metadata-selected family of problem rows. It owns filtering, source-scoped
+ordering, random sampling, and print/PDF. Do not add a second problem-list or
+practice-set renderer to guides, wiki pages, collection pages, or another site
+route.
+
+- A guide/wiki practice query deep-links to `problems.html` with its authored
+  area/topics prefilled. It never resolves or counts the matching cards at
+  build time.
+- A collection page keeps source identity, provenance, completion state, and
+  links to any nested source collections, but does not enumerate its problems.
+  It deep-links with `collection=SRC-...`. The browser reproduces the exact
+  source sections, order, and appearance locators from `collection_problems`.
+- `generate.html` is compatibility-only: old URLs redirect to `problems.html`
+  with `sample=8`. It must not acquire controls, query logic, or a second
+  problem data path.
+- `E-*` and `P-*` are stable addresses. Every posed mathematical card is
+  `kind: problem`; whether a source called one an exercise, homework problem,
+  or qualifying-exam problem belongs to its collection appearance.
+
+A source's ordered problem membership remains authored corpus data even though
+the source page does not materialize it. Centralizing display does not flatten
+or discard source order.
+
 A collection is a source document, not an exam event. One PDF is one
 collection. If that PDF *is* a single exam's problem set, the collection is
 that exam. If the PDF is a compilation of several papers, the collection is
