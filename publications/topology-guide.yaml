@@ -34,40 +34,10 @@ sections:
           kind: problem
           topics:
             - Point-Set Topology
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Closure
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Continuity
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Limits
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Bases
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Homeomorphisms
           limit: 500
           review:
@@ -96,19 +66,7 @@ sections:
           kind: problem
           topics:
             - Subspace Topology
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Product Topology
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Quotient Spaces
           limit: 500
           review:
@@ -141,26 +99,8 @@ sections:
           kind: problem
           topics:
             - Hausdorff Spaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Separation Axioms
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Countability
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Density
           limit: 500
           review:
@@ -190,26 +130,8 @@ sections:
           kind: problem
           topics:
             - Metric Spaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Completeness
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Euclidean Spaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Convergence
           limit: 500
           review:
@@ -245,6 +167,8 @@ sections:
           kind: problem
           topics:
             - Compactness
+            - Tube Lemma
+            - Paracompactness
           limit: 500
           review:
             mode: any
@@ -252,20 +176,6 @@ sections:
           kind: exercise
           topics:
             - Compactness
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Tube Lemma
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Paracompactness
           limit: 500
           review:
             mode: any
@@ -303,26 +213,8 @@ sections:
           kind: problem
           topics:
             - Connectedness
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Homotopy
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Retracts
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Counterexamples
           limit: 500
           review:
@@ -356,19 +248,7 @@ sections:
           kind: problem
           topics:
             - Fundamental Group
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - van Kampen
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Groups
           limit: 500
           review:
@@ -407,19 +287,7 @@ sections:
           kind: problem
           topics:
             - Covering Spaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Group Actions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Conjugacy
           limit: 500
           review:
@@ -458,12 +326,6 @@ sections:
           kind: problem
           topics:
             - Cell Complexes
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Category Theory
           limit: 500
           review:
@@ -502,26 +364,8 @@ sections:
           kind: problem
           topics:
             - Homology
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Mayer-Vietoris
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Homological Algebra
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Modules
           limit: 500
           review:
@@ -549,12 +393,6 @@ sections:
           kind: problem
           topics:
             - Degree
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Fixed Points
           limit: 500
           review:
@@ -589,19 +427,7 @@ sections:
           kind: problem
           topics:
             - Surfaces
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Classification
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Euler Characteristic
           limit: 500
           review:
@@ -647,33 +473,9 @@ sections:
           kind: problem
           topics:
             - Manifolds
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Orientation
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Cohomology
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Poincaré Duality
           limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics: []
-          limit: 1000
           review:
             mode: any

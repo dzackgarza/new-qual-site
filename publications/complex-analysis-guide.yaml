@@ -198,16 +198,10 @@ sections:
             - Liouville's Theorem
             - Entire Functions
             - Cauchy Estimates
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Identity Theorem
             - Morera
             - Maximum Modulus Principle
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
@@ -248,17 +242,11 @@ sections:
           kind: problem
           topics:
             - Meromorphic Functions
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Singularities
             - Removable Singularities
             - Essential Singularities
             - Casorati-Weierstrass
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
@@ -296,24 +284,12 @@ sections:
           kind: problem
           topics:
             - Rouché
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Argument Principle
             - Winding Number
             - Open Mapping Theorem
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Zeros
             - Polynomials
-          limit: 8
+          limit: 500
           review:
             mode: any
   - slug: residues
@@ -345,15 +321,9 @@ sections:
           kind: problem
           topics:
             - Residues
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Contour Integration
             - Integrals
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
@@ -395,16 +365,10 @@ sections:
           topics:
             - Conformal Maps
             - Fractional Linear Transformations
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Schwarz Lemma
             - Blaschke Factors
             - Biholomorphisms
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
@@ -525,37 +489,13 @@ sections:
           topics:
             - Entire Functions
             - Liouville's Theorem
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Power Series
             - Laurent Series
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Uniform Convergence
             - Sequences of Functions
             - Morera
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
             - Counterexamples
             - Uniform Continuity
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics: []
           limit: 500
           review:
             mode: any

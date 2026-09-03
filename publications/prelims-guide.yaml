@@ -352,9 +352,3 @@ sections:
           limit: 16
           review:
             mode: any
-      - query:
-          kind: problem
-          topics: []
-          limit: 500
-          review:
-            mode: any

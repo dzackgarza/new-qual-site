@@ -9,7 +9,7 @@ import yaml
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from pydantic import ValidationError
 from qualc.diagnostics import DiagnosticCode
-from qualc.publication import PublicationManifest
+from qualc.publication import PublicationManifest, QueryItem, load_publications
 from test_invariants import read_html
 
 PROBLEM = """---
@@ -82,6 +82,20 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
         "lede": "A short topology guide.",
         "sections": sections,
     }
+
+
+def test_checked_in_guide_sections_have_one_scoped_practice_target_per_kind() -> None:
+    """Each asked kind gets one practice escape hatch, not a topic-bucket stack."""
+    publications = Path(__file__).resolve().parents[1] / "publications"
+
+    for guide in load_publications(publications):
+        for section in guide.sections:
+            queries = [item.query for item in section.items if isinstance(item, QueryItem)]
+            for kind in ("problem", "exercise"):
+                same_kind = [query for query in queries if query.kind == kind]
+                assert len(same_kind) <= 1, f"{guide.id}/{section.slug} has {len(same_kind)} {kind} practice queries"
+                if same_kind:
+                    assert same_kind[0].topics, f"{guide.id}/{section.slug} has an unscoped {kind} practice query"
 
 
 def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) -> None:
