@@ -15,14 +15,20 @@ review: draft
 ---
 
 ::: {.exercise}
-Suppose $\abs{f(z)}\leq \abs{g(z)}$ for all $z$.
+Suppose $f$ and $g$ are entire and $\abs{f(z)}\leq \abs{g(z)}$ for all $z\in\CC$.
 What conclusion can you draw?
 :::
 
 ::: {.solution}
-Write $h(z) \da f(z)/g(z)$, then $\abs{f}\leq 1$ is bounded.
-Provided the zeros of $g$ do not have a limit point, the singularities of $h$ are isolated and thus removable.
-By Riemann's removable singularity theorem, $h$ extends to an entire function.
-By continuity, $\abs{h(z)}\leq 1$ on $\CC$ and is thus bounded.
-By Liouville $h$ is constant, making $f = cg$ for some $c$.
+If $g\equiv0$, then the inequality forces $f\equiv0$, so take $c=0$.
+
+Assume $g\not\equiv0$ and set $h=f/g$ away from the zeros of $g$.
+There $\abs{h}\leq1$.
+If $a$ is a zero of $g$, then $h$ is bounded on a punctured neighborhood of $a$, so $a$ is a removable singularity of $h$.
+Thus $h$ extends to an entire function on $\CC$ with $\abs h\leq1$ everywhere.
+By Liouville's theorem, $h\equiv c$ for some $c\in\CC$ with $\abs c\leq1$.
+Hence
+\[
+f=cg.
+\]
 :::

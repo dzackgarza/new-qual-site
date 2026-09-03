@@ -44,7 +44,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The card now assumes
   $f\in\Hol(\DD)$ and $0<r<1$ explicitly and applies the identity theorem to
   $f-c$, which vanishes on the open disk $r\DD$.
-- [ ] 5. E-BXDQY — Bounded comparison mis-written
+- [x] 5. E-BXDQY — Bounded comparison mis-written
+  Disposition 2026-09-04: confirmed and fixed. The statement now records that
+  $f,g$ are entire, and the solution correctly bounds $h=f/g$, removes its
+  singularities at zeros of $g$, and concludes $f=cg$ with $|c|\leq1$.
 - [ ] 6. P-H2AG2 — Kronecker-sequence index typo in statement
 - [ ] 7. E-YAMX6 — Broken intermediate algebra in the keyhole-contour residue step
 - [ ] 8. E-AMD-TSJ7AKE5 — Statement conflates the conjugate union with the conjugate count
