@@ -1633,7 +1633,8 @@ def collection_page(
     listed = _rows(
         con,
         """
-        select cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, listed.kind, listed.title
+        select cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, cp.comment,
+          listed.kind, listed.title, listed.route
         from collection_problems cp
         join cards listed on listed.id=cp.problem_id
         where cp.collection_id=?
@@ -1651,12 +1652,9 @@ def collection_page(
             (src["id"],),
         )
     ]
-    direct_problems = [row for row in listed if row["kind"] == "problem"]
-    included_sources = [(row["problem_id"], row["title"]) for row in listed if row["kind"] == "collection"]
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_summary(
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
         src["id"],
-        len(direct_problems),
-        included_sources,
+        listed,
         inline_cache,
         completion,
         provenance,
@@ -1686,22 +1684,33 @@ def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
     return None
 
 
-def _collection_summary(
+def _collection_listing(
     collection_id: str,
-    problem_count: int,
-    included_sources: list[tuple[str, str]],
+    listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
     completion: str = "complete",
     provenance: list[str] | None = None,
     repo_root: Path | None = None,
 ) -> list[pf.Block]:
-    """Source identity and provenance; problem display belongs to the browser.
+    """Render the collection's authored source-order contents.
 
-    A collection owns the exact ordered appearance list in the catalog. The
-    source page does not duplicate that list: it links the central problem
-    browser, which can reproduce source sections, order, and locators while
-    still letting the reader filter, search, sample, and print.
+    `source.problems` / `source.sections` is intrinsic collection data, not a
+    metadata query. The collection page therefore materializes it directly.
+    The central problem browser remains available as a supplementary searchable
+    and printable view of the direct problem appearances.
     """
+
+    def card_item(row: sqlite3.Row) -> pf.ListItem:
+        inlines: list[pf.Inline] = [
+            pf.Link(
+                *_inlines(row["title"], inline_cache),
+                url=f"../{row['route']}/{row['problem_id']}.html",
+            )
+        ]
+        if row["comment"]:
+            inlines.extend((pf.Space(), pf.Str("—"), pf.Space(), pf.Str(row["comment"])))
+        return pf.ListItem(pf.Plain(*inlines))
+
     blocks: list[pf.Block] = []
     if completion == "incomplete":
         blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
@@ -1722,9 +1731,7 @@ def _collection_summary(
                 )
             provenance_items.append(pf.ListItem(pf.Plain(*inlines)))
         blocks.append(pf.BulletList(*provenance_items))
-    if included_sources:
-        blocks.append(pf.Header(pf.Str("Included sources"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(*_inlines(title, inline_cache), url=source_id))) for source_id, title in included_sources]))
+    problem_count = sum(row["kind"] == "problem" for row in listed)
     blocks.append(
         pf.Para(
             pf.Str(str(problem_count)),
@@ -1732,6 +1739,28 @@ def _collection_summary(
             *_inlines("problems.", inline_cache),
         )
     )
+    if listed:
+        by_section: list[tuple[str | None, list[sqlite3.Row]]] = []
+        for row in listed:
+            name = row["section_name"]
+            if not by_section or by_section[-1][0] != name:
+                by_section.append((name, []))
+            by_section[-1][1].append(row)
+
+        for name, entries in by_section:
+            if name:
+                blocks.append(pf.Header(*_inlines(name, inline_cache), level=2))
+            blocks.append(
+                pf.Div(
+                    pf.OrderedList(
+                        *[card_item(row) for row in entries],
+                        start=1,
+                        style="Decimal",
+                        delimiter="Period",
+                    ),
+                    classes=["qual-exam-listing"],
+                )
+            )
     if problem_count:
         blocks.append(
             pf.Div(
@@ -2062,9 +2091,7 @@ def problem_browser_page(
     """The one problem browser, rendered by DataTables + SearchPanes."""
     del con, area_names
     return {"title": "Problems"}, [
-        pf.Para(
-            pf.Str("Every problem in the corpus. Filter with the facet panes, search or paginate the table, or draw a printable random sample from the filtered rows.")
-        ),
+        pf.Para(pf.Str("Every problem in the corpus. Filter with the facet panes, search or paginate the table, or draw a printable random sample from the filtered rows.")),
         _practice_controls(),
         _data_table(
             "problem-table",

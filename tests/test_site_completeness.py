@@ -119,7 +119,7 @@ def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:
 
 
 def test_every_collection_problem_is_exposed_by_the_central_source_order_index(tmp_path: Path) -> None:
-    """Collection pages delegate problem rows, but no listed problem becomes unreachable."""
+    """Every authored collection problem is visible on its source page and in the browser index."""
     site, con = built(tmp_path)
     listed = {
         row[0]
@@ -142,7 +142,7 @@ def test_every_collection_problem_is_exposed_by_the_central_source_order_index(t
         page = (site / route / f"{collection_id}.html").read_text()
         assert f"problems.html?collection={collection_id}" in html.unescape(page)
         for item in source["items"]:
-            assert f"tag/{item['id']}.html" not in page, "source pages must not duplicate problem rows"
+            assert f"tag/{item['id']}.html" in page, "source pages must enumerate their authored problem contents"
 
 
 def test_the_filters_offer_every_value_problem_appearances_carry(tmp_path: Path) -> None:

@@ -403,9 +403,11 @@ problem comes from follows from backlinks — every collection whose
 
 `problems.html` is the only reader-facing implementation that displays a
 metadata-selected family of problem rows. It owns filtering, source-scoped
-ordering, random sampling, and print/PDF. Do not add a second problem-list or
-practice-set renderer to guides, wiki pages, collection pages, or another site
-route.
+ordering, random sampling, and print/PDF. Do not add a second metadata-query or
+practice-set renderer to guides, wiki pages, or another site route. A
+collection's authored `source.problems` / `source.sections` list is not a query:
+it is the collection's intrinsic contents and is rendered on the collection
+page itself.
 
 The catalog UI itself is standard infrastructure: Problems and Sources are
 DataTables 2 tables with SearchPanes for faceted filtering and RowGroup where
@@ -424,9 +426,12 @@ set.
   Resources, workshop indexes, and other non-topical pages may omit `topics:`
   and therefore get no automatic problem link.
 - A collection page keeps source identity, provenance, completion state, and
-  links to any nested source collections, but does not enumerate its problems.
-  It deep-links with `collection=SRC-...`. The browser reproduces the exact
-  source sections, order, and appearance locators from `collection_problems`.
+  **enumerates the authored source contents in source order**, preserving
+  section structure, problem links, and authored appearance locators. This is
+  the principal purpose of the collection page. It may additionally deep-link
+  with `collection=SRC-...` so the same problems can be searched, filtered,
+  sampled, or printed in the browser. That browser link supplements rather than
+  replaces the collection's own contents.
 - `generate.html` is compatibility-only: old URLs redirect to `problems.html`
   with `sample=8`. It must not acquire controls, query logic, or a second
   problem data path.
@@ -434,9 +439,10 @@ set.
   `kind: problem`; whether a source called one an exercise, homework problem,
   or qualifying-exam problem belongs to its collection appearance.
 
-A source's ordered problem membership remains authored corpus data even though
-the source page does not materialize it. Centralizing display does not flatten
-or discard source order.
+A source's ordered problem membership is authored corpus data and the source
+page materializes it directly. The central browser is a second view of that
+same authored membership for filtering, sampling, and print; it does not own or
+replace the collection's source-order presentation.
 
 A collection is a source document, not an exam event. One PDF is one
 collection. If that PDF *is* a single exam's problem set, the collection is

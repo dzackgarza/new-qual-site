@@ -173,7 +173,7 @@ def test_empty_provenance_href_is_rejected(tmp_path: Path) -> None:
         parse_card(path)
 
 
-def test_compilation_sections_are_preserved_in_the_central_problem_index(tmp_path: Path) -> None:
+def test_compilation_sections_are_the_collection_listing_and_central_problem_index(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     work = fixture_repo(tmp_path)
@@ -194,7 +194,8 @@ def test_compilation_sections_are_preserved_in_the_central_problem_index(tmp_pat
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
-    assert "P-INDEXP" not in source_qmd
+    assert "Day 1" in source_qmd
+    assert "P-INDEXP" in source_qmd
     assert "problems.html?collection=SRC-NEILNOTES" in source_qmd
 
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
@@ -228,7 +229,7 @@ def test_compilation_section_may_list_a_collection_without_putting_it_in_problem
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
-    assert "Included sources" in source_qmd
+    assert "Day 1" in source_qmd
     assert "SRC-UGA-FIX" in source_qmd
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
     assert "SRC-NEILNOTES" not in index
@@ -315,21 +316,22 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     assert "0 problems." in textbook_qmd
 
 
-def test_collection_page_delegates_problem_display_to_the_central_browser(tmp_path: Path) -> None:
+def test_collection_page_lists_problems_and_links_the_central_browser(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
     exam = work / "corpus" / "SRC-UGA-FIX.md"
     exam.write_text(
         exam.read_text().replace(
             "  area: algebra\n  date:\n",
-            "  area: algebra\n  problems:\n  - P-INDEXP\n  date:\n",
+            "  area: algebra\n  problems:\n  - id: P-INDEXP\n    comment: Problem 3\n  date:\n",
         )
     )
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
     exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
-    assert "P-INDEXP" not in exam_qmd
+    assert "P-INDEXP" in exam_qmd
+    assert "Problem 3" in exam_qmd
     assert "problems.html?collection=SRC-UGA-FIX" in exam_qmd
 
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
