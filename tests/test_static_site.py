@@ -82,6 +82,41 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 
 
+def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    revision = "0123456789abcdef0123456789abcdef01234567"
+    monkeypatch.setenv("GITHUB_SHA", revision)
+    assets_root = tmp_path / "assets"
+    assets_root.mkdir()
+    site_root = tmp_path / "_site"
+
+    write_page(
+        site_root,
+        Path("tag/P-FOOTER.html"),
+        {"title": "Footer fixture"},
+        "<p>Mathematics.</p>",
+        "",
+        {},
+        build_asset_catalog(assets_root),
+        StandardPage(Listing()),
+    )
+
+    built = read_html(site_root / "tag" / "P-FOOTER.html")
+    footer = built.root.find_all("footer", **{"class": "site-footer"})
+    assert len(footer) == 1
+    times = footer[0].find_all("time")
+    assert len(times) == 1
+    assert times[0].text.startswith("Generated ")
+    assert times[0].attrs["datetime"].endswith("Z")
+    revision_links = [a for a in footer[0].find_all("a") if a.text == "Revision 012345678"]
+    assert len(revision_links) == 1
+    assert revision_links[0].attrs["href"] == f"https://github.com/dzackgarza/new-qual-site/commit/{revision}"
+    source = footer[0].find_all("a", **{"class": "footer-repository"})
+    assert len(source) == 1
+    assert source[0].attrs["href"] == "https://github.com/dzackgarza/new-qual-site"
+    assert source[0].attrs["aria-label"] == "Source repository on GitHub"
+    assert source[0].find_all("svg") != []
+
+
 def test_problem_lists_survive_display_math_and_keep_nested_items(tmp_path: Path) -> None:
     """Display math inside one item must not flatten the authored list to prose."""
     card = r"""---
