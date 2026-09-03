@@ -36,7 +36,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: repaired with a complete typed diagram and direct
   injectivity/surjectivity chases under the standard hypotheses: left outer
   vertical epi, adjacent verticals isomorphisms, right outer vertical mono.
-- [ ] 3. FR-EDJWQ — Difference quotient set equal to the derivative
+- [x] 3. FR-EDJWQ — Difference quotient set equal to the derivative
+  Disposition 2026-09-04: confirmed and fixed. The proof now keeps the
+  difference quotient as a factor that converges to $f'(x_0)$ instead of
+  asserting that it equals the derivative for nearby $x$.
 - [ ] 4. E-J3QMJ — Constancy on a closed subdisk: wrong/inadequate justification
 - [ ] 5. E-BXDQY — Bounded comparison mis-written
 - [ ] 6. P-H2AG2 — Kronecker-sequence index typo in statement
