@@ -59,7 +59,10 @@ Disposition order follows the finding numbers.
   The card now states $0<\alpha<1$ and gives a coherent branch choice, keyhole
   jump, residue, arc estimates, and final value
   $\pi\alpha\csc(\pi\alpha)$.
-- [ ] 8. E-AMD-TSJ7AKE5 — Statement conflates the conjugate union with the conjugate count
+- [x] 8. E-AMD-TSJ7AKE5 — Statement conflates the conjugate union with the conjugate count
+  Disposition 2026-09-04: confirmed and fixed. The statement now uses the set
+  $\mathcal C(H)=\{gHg^{-1}:g\in G\}$ of conjugate subgroups; its cardinality,
+  not the cardinality of their union as subsets of $G$, is $[G:N_G(H)]$.
 - [ ] 9. E-OUBBQ — Wrong difference-quotient factorization for `x^n`
 - [ ] 10. E-ZXKDY — Degree not defined for the factorization maps
 - [ ] 11. T-77SHB — Cayley transform direction is backwards
