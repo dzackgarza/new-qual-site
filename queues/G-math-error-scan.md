@@ -94,7 +94,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The imaginary part of
   $(\cos\theta+i\sin\theta)^4$ is now copied correctly as
   $4\cos^3\theta\sin\theta-4\cos\theta\sin^3\theta$.
-- [ ] 16. E-WAYFS — Residue of `csc(πz)` wrong
+- [x] 16. E-WAYFS — Residue of `csc(πz)` wrong
+  Disposition 2026-09-04: confirmed and fixed. Since the zeros of
+  $\sin(\pi z)$ are simple,
+  $\Res_{z=k}\csc(\pi z)=1/(\pi\cos(\pi k))=(-1)^k/\pi$.
 - [ ] 17. E-P3RLK — Solution proves the converse theorem, not the stated exercise
 - [ ] 18. E-ASWCD — flawed subtraction step in the proof of continuity from below for outer measure
 - [ ] 19. E-2HIKG — spurious factor of 2 and inconsistent simplification in the semicircular-cont...
@@ -123,7 +126,8 @@ Disposition order follows the finding numbers.
 - [ ] 41. E-PQ7NC, overclaimed image of the Joukowski map $z+1/z$ — 
 - [ ] 42. E-RGDJ7, factor-of-2 error in $\int_{S^1} 2\sinh(z)/z^n\,dz$ for even $n$ — 
 - [ ] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ — 
-- [ ] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ — 
+- [x] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ —
+  duplicate of finding 16; fixed there on 2026-09-04.
 - [ ] 45. E-WXHMJ, remark claims the residues of an elliptic function do not cancel — 
 - [ ] 46. E-WYJ7K, wrong tangency vertex and image region for the tangent lune — 
 - [ ] 47. E-YFBH5 — Analytic self-maps of the disc, zero of order $k$ at $0$, $|f|\to 1$ at boundary

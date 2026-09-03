@@ -17,7 +17,7 @@ review: draft
 
 :::{.exercise}
 Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1.
-Calculate the residue of $1/\sin(\pi x)$ at $z=n\in \ZZ$.
+Calculate the residue of $1/\sin(\pi z)$ at $z=n\in \ZZ$.
 
 :::
 
@@ -38,6 +38,9 @@ where $g(k) = \pm \pi \neq 0$, making $z=k$ an order 1 zero.
 
 For the residues:
 \[
-\Res_{z=k} \csc(\pi z) = \lim_{z\to k} (z-k)\csc(\pi z) \eqLH \sec(k\pi) = (-1)^{k+1}
+\Res_{z=k} \csc(\pi z)
+= \lim_{z\to k}{z-k\over \sin(\pi z)}
+= {1\over \pi\cos(\pi k)}
+= {(-1)^k\over \pi}
 .\]
 :::
