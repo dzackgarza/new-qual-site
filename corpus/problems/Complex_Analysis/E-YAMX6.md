@@ -15,73 +15,51 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
-I \da \int_0^\infty {x^\alpha \over (x+1)^2}\dx && 0 < \alpha < 2
-.\]
-
+I \da \int_0^\infty {x^\alpha \over (1+x)^2}\dx,
+\qquad 0<\alpha<1.
+\]
 :::
 
-:::{.solution}
-Note the single pole of order 2 at $z=-1$, and also the branch singularity.^[Keyhole contour.]
-Choose a branch cut of $\log$ by deleting $\theta=0$, and take a keyhole contour.
+::: {.solution}
+Set
+\[
+f(z)=\frac{z^\alpha}{(1+z)^2},
+\]
+using the branch $z^\alpha=e^{\alpha\Log z}$ with $0<\Arg z<2\pi$.
+Take a positively oriented keyhole contour around the positive real axis.
 
 ![Keyhole contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-00-31.png)
 
-Write the contours as 
-
-- $\gamma_\eps = \ts{\eps e^{it} \st t\in[0+\eps, 2\pi - \eps]}$
-- $\gamma_+ = \ts{x+i\eps \st x\in [\eps, R]}$
-- $\gamma_R = \ts{Re^{it} \st t\in [0+\eps, 2\pi - \eps]}$
-- $\gamma_- = \ts{x-i\eps \st t\in [\eps, R]}$,
-
-all oriented so that the total curve $\Gamma$ is traversed counter-clockwise.
-
-The claim is that $\int_{\gamma_\eps} f, \int_{\gamma_R} f\to 0$, and $\int_{\gamma_+} f$ is a multiple of $\int{\gamma_-} f$. 
-For $z=x-i\eps$ on $\gamma_-$, we have
+On the upper bank, $z^\alpha=x^\alpha$; on the lower bank, $z^\alpha=e^{2\pi i\alpha}x^\alpha$, and the lower bank is traversed from $R$ to $\varepsilon$.
+Hence the two straight segments contribute
 \[
-\log(z) = \log(x-i\eps) = \ln\abs{x-i\eps} + i\Arg(x-i\eps)\convergesto{\eps\to 0} \ln\abs{x} + 2\pi i = e^{2\pi i}z
-,\]
-and 
-\[
-f(e^{2\pi i}z) = {(e^{2\pi i}z)^\alpha \over ((e^{2\pi i}z)^2+1)^2 } = e^{2\pi i\alpha } {z \over z^2+1} = e^{2\pi i\alpha}f(z)
-.\]
-Thus
-\[
-\int_{\gamma_-} f(z)\dz 
-&\too \int_R^\eps f(e^{2\pi i }z)\dz \\
-&= \int_R^\eps e^{2\pi i \alpha}f(z)\dz \\
-&= -e^{2\pi i \alpha}\int_\eps^R f(z)\dz \\
-&= -e^{2\pi i\alpha}\int_{\gamma_+}f(z)\dz
-.\]
+\qty{1-e^{2\pi i\alpha}}
+\int_\varepsilon^R\frac{x^\alpha}{(1+x)^2}\,dx.
+\]
 
-Thus in the limit,
-\[
-2\pi i \sum_{z_k\in \CC\sm\RR_{\geq 0}} \Res_{z=z_k}f(z) 
-&= \int_\Gamma f(z)\dz \\
-&= \int_{\gamma_+}f(z)\dz + \int_{\gamma_-}f(z)\dz \\
-&= (1-e^{2\pi i\alpha})\int_{\gamma_+}f(z)\dz \\
-&= (1-e^{2\pi i\alpha})\int_{\RR}f(z)\dz \\
-.\]
+The small circular contribution is $O(\varepsilon^{\alpha+1})$, while the large circular contribution is $O(R^{\alpha-1})$.
+Both tend to zero because $0<\alpha<1$.
 
-Computing the residue at $z_0 = -1$:
+The only pole inside the contour is the double pole at $z=-1$.
+Since $\Arg(-1)=\pi$ on this branch,
 \[
-\Res_{z=-1}f(z) 
-&= \lim_{z\to -1} \dd{}{z} (z+1)^2 f(z) \\
-&= \lim_{z\to -1} \dd{}{z} z^\alpha \\
-&= \alpha (-1)^{\alpha - 1} \\
-&= \alpha e^{i\pi(\alpha - 1)} \\
-&= -\alpha e^{i\pi \alpha}
-.\]
-Thus
+\Res_{z=-1}f(z)
+=\left.\dd{}{z}z^\alpha\right|_{z=-1}
+=\alpha e^{i\pi(\alpha-1)}
+=-\alpha e^{i\pi\alpha}.
+\]
+Letting $\varepsilon\to0$ and $R\to\infty$ and applying the residue theorem gives
 \[
-\int_\RR f(z) \dz 
-&= 2\pi i \cdot {-\alpha e^{i\pi \alpha}\over 1 - e^{2\pi i \alpha}} \\
-&=-2\pi i \alpha {1\over e^{-i\pi\alpha} (1- e^{2\pi i \alpha})} \\
-&=-2\pi i \alpha {1\over e^{-i\pi\alpha} - e^{i\pi\alpha}} \\
-&=2\pi i \alpha {1\over e^{-i\pi\alpha} - e^{-i\pi\alpha}} \\
-&= \pi \alpha \csc(\pi\alpha)
-.\]
-
+\qty{1-e^{2\pi i\alpha}}I=-2\pi i\alpha e^{i\pi\alpha}.
+\]
+Since
+\[
+1-e^{2\pi i\alpha}=-2i e^{i\pi\alpha}\sin(\pi\alpha),
+\]
+we obtain
+\[
+I=\pi\alpha\csc(\pi\alpha).
+\]
 :::
-

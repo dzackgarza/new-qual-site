@@ -52,7 +52,13 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The statement now defines
   $u_k(j)=\delta_{kj}$, matching the title and the solution, and the stray
   conjunction in the sentence was removed.
-- [ ] 7. E-YAMX6 — Broken intermediate algebra in the keyhole-contour residue step
+- [x] 7. E-YAMX6 — Broken intermediate algebra in the keyhole-contour residue step
+  Disposition 2026-09-04: confirmed, with additional live errors. The original
+  range $0<\alpha<2$ was false for the displayed integral: the large keyhole
+  arc is $O(R^{\alpha-1})$, and the integral diverges for $\alpha\geq1$.
+  The card now states $0<\alpha<1$ and gives a coherent branch choice, keyhole
+  jump, residue, arc estimates, and final value
+  $\pi\alpha\csc(\pi\alpha)$.
 - [ ] 8. E-AMD-TSJ7AKE5 — Statement conflates the conjugate union with the conjugate count
 - [ ] 9. E-OUBBQ — Wrong difference-quotient factorization for `x^n`
 - [ ] 10. E-ZXKDY — Degree not defined for the factorization maps
