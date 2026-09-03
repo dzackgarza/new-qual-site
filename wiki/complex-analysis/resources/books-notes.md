@@ -21,43 +21,39 @@ order: 0
 
 - Barry Simon, *Basic Complex Analysis*
 
-- Hormander, *An Introduction to Complex Analysis in Several Variables*
-
-  > Technically a PDEs book, but mostly analysis.
+- Hörmander, *An Introduction to Complex Analysis in Several Variables*
 
 - Lang, *Complex Analysis*
 
-  > There are plenty of solution manuals.
-
-- Springer GTM, Gilman, *Complex Analysis In the Spirit of Lipman Bers*
+- Gilman, Kra, and Rodríguez, *Complex Analysis: In the Spirit of Lipman Bers*
 
 - Sarason, *Complex Function Theory* [Link to PDF](https://www.dropbox.com/s/3atiop7trmmh1d2/Complex%20Function%20Theory%20-%20Sarason.pdf?dl=0)
 
-- Freitag
+- Freitag and Busam, *Complex Analysis*
 
-- Conway
+- Conway, *Functions of One Complex Variable I*
 
 ## UGA Material
 
-- The Riemann Mapping Theorem: [[attachments/8.3 Riemann Mapping Theorem (1).pdf]]
+- [[attachments/8.3 Riemann Mapping Theorem (1).pdf|UGA notes on the Riemann mapping theorem]]
 
-- Normal families: [[attachments/8.2.3 Normal family.pdf]]
+- [[attachments/8.2.3 Normal family.pdf|UGA notes on normal families]]
 
-- Further examples: [[attachments/8.1.2 Further Examples (1).pdf]]
+- [[attachments/8.1.2 Further Examples (1).pdf|UGA complex-analysis examples]]
 
 ## Summaries
 
-- [Very condensed summary with lots of explicit computations](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf)
+- [Condensed computational summary](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf)
 
-- [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, Stein and Shakarchi speedrun]]
+- [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, complex-analysis notes following Stein–Shakarchi]]
 
 - [[attachments/complex.pdf|Douglas Arnold, notes on various topics]]
 
 - [[attachments/ist_ca_2015.pdf|Sameer Chavan, problems in complex analysis]]
 
-- [UCSD Qual review](http://www.math.ucsd.edu/~rwon/files/qualprep/complex.pdf)
+- [Robert Won, UCSD complex-analysis qual review](http://www.math.ucsd.edu/~rwon/files/qualprep/complex.pdf)
 
-- [Math Camp review](http://web.stanford.edu/~yuvalwig/math/teaching/ComplexAnalysisNotes.pdf)
+- [Stanford Math Camp complex-analysis review](http://web.stanford.edu/~yuvalwig/math/teaching/ComplexAnalysisNotes.pdf)
 
 - [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
 
@@ -67,18 +63,14 @@ order: 0
 
 ## Course Notes
 
-- [Harvard 2021 Complex Analysis courses notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
+- [Harvard 2021 complex-analysis course notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
 
-- [Ko Honda Course Notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
+- [Ko Honda, complex-analysis course notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
 
-- [Some notes?](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
+- [Cambridge complex-analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
 
 - [Arun's course notes](https://web.ma.utexas.edu/users/a.debray/lecture_notes/116notes.pdf)
 
-- [Berkeley 2015 Course Notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
+- [Berkeley 2015 complex-analysis course notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
 
-- [[McMullen_-_Advanced_Complex_Analysis.pdf|McMulllen Advanced Complex Analysis]]
-
-## Fun Extras
-
-[Good Paper: Hormander 1955](https://projecteuclid.org/download/pdf_1/euclid.acta/1485892151)
+- [[McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]

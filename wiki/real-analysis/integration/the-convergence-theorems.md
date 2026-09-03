@@ -63,7 +63,6 @@ Whenever a limit is moved through an integral, sum, derivative, or another limit
 Uniform convergence, domination, and monotonicity are different sufficient mechanisms, and the counterexamples in the surrounding chapter show that pointwise convergence by itself supplies none of them.
 
 For series, summability of the $L^1$ norms is a particularly useful sufficient condition: it gives absolute convergence almost everywhere and in $L^1$, and then the sum and integral can be interchanged.
-The cards below package that argument together with the more general interchange criteria.
 
 [[T-MN6WQ]]
 

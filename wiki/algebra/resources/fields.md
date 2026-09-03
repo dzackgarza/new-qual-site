@@ -11,13 +11,13 @@ order: 60
 
 - [Galois theory notes (Edinburgh)](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
 
-- [Conrad - SOME EXAMPLES OF THE GALOIS CORRESPONDENCE.pdf](attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf)
+- [Conrad, Some Examples of the Galois Correspondence](attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf)
 
 ## Problems
 
-- [Tate_Galois_Theory_Problems.pdf](attachments/Tate_Galois_Theory_Problems.pdf)
+- [Tate, Galois theory problems](attachments/Tate_Galois_Theory_Problems.pdf)
 
-- [Galois Group Practice.pdf](attachments/Galois_Group_Practice.pdf)
+- [Galois-group practice problems](attachments/Galois_Group_Practice.pdf)
 
 - MIT fields and Galois theory: [problems for discussion](https://www.mit.edu/~fengt/FieldGalois.pdf), [combined problem file](https://www.mit.edu/~fengt/FGProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/FieldGaloisSolns.pdf).
 

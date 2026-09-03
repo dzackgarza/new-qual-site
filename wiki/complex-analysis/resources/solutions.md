@@ -14,13 +14,13 @@ order: 20
 
 - [NYU complex analysis midterm solutions](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
 
-- [Some solutions](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
+- [Indian Statistical Institute complex-analysis solutions, 2009–10](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
 
-- [[Complex_Analysis_Exam_Prep_Solutions.pdf]]
+- [[Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]]
 
-- [math185f09-hw7sol.pdf](attachments/math185f09-hw7sol.pdf)
+- [Berkeley Math 185 problem set 7 solutions, Fall 2009](attachments/math185f09-hw7sol.pdf)
 
-- [[complex_prelim.pdf]]
+- [[complex_prelim.pdf|Bahran, Solutions to Complex Prelim Problems (Minnesota)]]
 
 - [Berkeley final solutions](https://math.berkeley.edu/~nikhil/courses/185.f15/finalsol.pdf)
 
@@ -50,31 +50,31 @@ Some homework solutions from an undergrad course at Berkeley:
 
 - [PSet 9](https://math.berkeley.edu/~murphy/185-Solutions9.pdf)
 
-A course at UBC
+UBC Math 440/508, Fall 2017:
 
-- Quiz 1 held on Monday September 11. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz1-Solution.pdf)
+- [Quiz 1 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz1-Solution.pdf)
 
-- Quiz 2 held on Monday September 18. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz2-Solution.pdf)
+- [Quiz 2 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz2-Solution.pdf)
 
-- Quiz 3 held on Monday September 25. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz3-Solution.pdf)
+- [Quiz 3 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz3-Solution.pdf)
 
-- Quiz 4 held on Monday October 2. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz4-Solution.pdf)
+- [Quiz 4 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz4-Solution.pdf)
 
-- Quiz 5 held on Wednesday October 11. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz5-Solution.pdf)
+- [Quiz 5 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz5-Solution.pdf)
 
-- Quiz 6 held on Monday October 16. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz6-Solution.pdf)
+- [Quiz 6 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz6-Solution.pdf)
 
-- Quiz 7 held on Monday October 23. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz7-Solution.pdf)
+- [Quiz 7 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz7-Solution.pdf)
 
-- Quiz 8 held on Monday October 30. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz8-Solution.pdf)
+- [Quiz 8 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz8-Solution.pdf)
 
-- Quiz 9 held on Monday November 6. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz9-Solution.pdf)
+- [Quiz 9 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz9-Solution.pdf)
 
-- Quiz 10 held on Wednesday November 15. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz10-Solution.pdf)
+- [Quiz 10 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz10-Solution.pdf)
 
-- Quiz 11 held on Wednesday November 20. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz11-Solution.pdf)
+- [Quiz 11 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz11-Solution.pdf)
 
-- Quiz 12 held on Wednesday November 27. [Solution.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz12-Solution.pdf)
+- [Quiz 12 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz12-Solution.pdf)
 
 - [Homework 1 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_1_Solutions.pdf)
 
@@ -90,6 +90,4 @@ A course at UBC
 
 Misc:
 
-- [UBC Math 440 homework 4 solutions](https://www.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf)
-
-- [Some Conway solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)
+- [Conway exercise solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)

@@ -4,7 +4,7 @@ order: 30
 
 # Solutions (Topology)
 
-[TopologySept19solutions.pdf](attachments/TopologySept19solutions.pdf)
+[Oregon topology qualifying-exam solutions, Fall 2019](attachments/TopologySept19solutions.pdf)
 
 [John Kerl, geometry/topology qualifying-exam solutions](attachments/prolrevqual.pdf)
 

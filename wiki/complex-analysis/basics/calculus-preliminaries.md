@@ -127,7 +127,8 @@ Some basic facts needed for line integrals in the plane:
 [[T-AZSCN]]
 
 :::{.remark}
-Note that if a power series converges uniformly, then summing commutes with integrating or differentiating.
+Inside its radius of convergence, a power series may be integrated and differentiated term by term; the resulting series have the same radius of convergence.
+For general function series, uniform convergence alone is enough to interchange summation and integration on a compact interval, but not enough to interchange summation and differentiation.
 
 :::
 
@@ -145,10 +146,11 @@ Recall the **$p\dash$test**:
 
 :::
 :::{.fact}
-The product of two sequences is given by the Cauchy product
+The product of two power series is given by the Cauchy product
 \[
-\sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j\leq k} a_k b_{k-j}
+\sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j=0}^k a_j b_{k-j}
 .\]
+See [[complex-analysis/basics/series-reference|Series: Reference]] for the standard power-series identities used below.
 
 :::
 :::{.fact}

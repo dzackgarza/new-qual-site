@@ -15,7 +15,7 @@ order: 40
 
 ## Problems
 
-- [Group Theory Midterm No Solns.pdf](attachments/Group_Theory_(No_Solns).pdf)
+- [Group theory midterm (no solutions)](attachments/Group_Theory_(No_Solns).pdf)
 
 - MIT finite-group review: [problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), [combined problem file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
 
@@ -23,20 +23,20 @@ order: 40
 
 ## Solutions and worked practice
 
-- [Ch6Sltns.pdf](attachments/Ch6Sltns.pdf)
+- [Chapter 6 solutions](attachments/Ch6Sltns.pdf)
 
-- [Ch7Sltns.pdf](attachments/Ch7Sltns.pdf)
+- [Chapter 7 solutions](attachments/Ch7Sltns.pdf)
 
-- [Ch8Sltns.pdf](attachments/Ch8Sltns.pdf)
+- [Chapter 8 solutions](attachments/Ch8Sltns.pdf)
 
-- [Ch9Sltns.pdf](attachments/Ch9Sltns.pdf)
+- [Chapter 9 solutions](attachments/Ch9Sltns.pdf)
 
-- [Ch10PtASltns.pdf](attachments/Ch10PtASltns.pdf)
+- [Chapter 10, part A solutions](attachments/Ch10PtASltns.pdf)
 
-- [Ch10Sltns.pdf](attachments/Ch10Sltns.pdf)
+- [Chapter 10 solutions](attachments/Ch10Sltns.pdf)
 
-- [Ch11Sltns.pdf](attachments/Ch11Sltns.pdf)
+- [Chapter 11 solutions](attachments/Ch11Sltns.pdf)
 
-- [Algebra HW 4 Solns.pdf](attachments/Algebra_HW_4_Solns.pdf)
+- [Algebra homework 4 solutions](attachments/Algebra_HW_4_Solns.pdf)
 
 - [Nilpotent Group Practice](attachments/solns7.pdf)

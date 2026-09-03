@@ -11,23 +11,22 @@ References:
 
 - [@SS05, chaps. 1-2]
 
-## Convergence Tips/Tricks
+## Convergence reminders
 
-- Our favorite tools: **metrics** and **norms**!
+- **Metrics and norms** turn equality and convergence questions into estimates.
 
   - ![](_attachments/Pasted image 20210528184220.png)
 
-  - So show things are equal by showing $\abs{x-y} = 0$.
-    Know the triangle inequality by heart!
+  - To prove equality in a metric setting, it is often enough to prove the distance is zero.
+    The triangle inequality is the basic tool for splitting estimates.
 
 - **Uniform convergence**:
 
   - ![](_attachments/Pasted image 20210528182641.png)
 
-  - Negating: find a bad $\eps$ and a single bad point $x$.
+  - Negating uniform convergence means finding $\eps>0$ such that for every $N$ there are $n\geq N$ and a point $x$ with $\abs{f_n(x)-f(x)}\geq\eps$; the bad point may depend on $n$.
 
-  - Showing a sum converges uniformly: remember that $\sum_{k\geq 1} a_k$ is *defined* to be $\lim_{N\to\infty} \sum_{k\leq N} a_k$.
-    So the trick is to define $f_n(x) := \sum_{k\leq n} a_k$ and then apply the usual criteria above.
+  - For a series of functions $\sum_{k\geq1}a_k(x)$, define the partial sums $f_n(x):=\sum_{k\leq n}a_k(x)$ and apply the usual uniform-convergence criteria to $f_n$.
 
   - It's sometimes useful to trade the $\forall x$ in the definition with $\sup_{x\in X} \abs{f_n(x) - f(x)} < \eps$ instead.
 
@@ -35,11 +34,11 @@ References:
 
   - ![](_attachments/Pasted image 20210528182925.png)
 
-  - The main difference: pointwise can depend on the $x$ and the $\eps$, but uniform needs one $\eps$ that works for *all* $x$ simultaneously.
+  - In pointwise convergence, the threshold $N$ may depend on both $x$ and $\eps$; in uniform convergence, $N$ may depend on $\eps$ but must work for every $x$ simultaneously.
 
   - Note uniform implies pointwise but not conversely.
 
-- The sup norm: $\norm{f}_\infty := \sup_{x\in X} \abs{f_n(x)}$
+- The sup norm: $\norm{f}_\infty := \sup_{x\in X} \abs{f(x)}$.
 
   - A useful way to force uniform convergence: bound your sequence uniformly by a sequence that goes to zero:
 
@@ -57,14 +56,14 @@ $$
 \sum_{n\geq 1} a_n < \infty \implies \lim_{N\to\infty}\sum_{n\geq N} a_n = 0
 $$
 
-- So try bounding things from above by the *tail* of a sum!
+- Thus a tail estimate for a convergent numerical series is a standard way to prove uniform convergence.
 
 - If you can't bound by a tail: as long as you have control over the coefficients, you can pick them to make the sum to converge "fast enough".
 
   - Example: for a fixed $\eps$, choose $a_n = 1/2^n$.
     Note that $\sum_{n\geq 1} 1/2^n = 1$, so choose $a_n := \eps/2^n$:
 $$
-\cdots \leq \sum_{n\geq 1} a_n := \sum_{n\geq 1} {\eps \over 2^n} = \eps \to 0
+\sum_{n\geq 1} a_n := \sum_{n\geq 1} {\eps \over 2^n} = \eps.
 $$
 
 - The $\eps/3$ trick:
@@ -77,8 +76,7 @@ $$
 
 ## Measure Theory
 
-- $F_\sigma$ sets: unions of closed sets ($F$ for *fermi*, French for closed.
-  Sigma for sums, ie unions)
+- $F_\sigma$ sets are countable unions of closed sets; the $F$ recalls French *fermé* (closed), and $\sigma$ indicates a countable union.
 
 - $G_\delta$ sets: intersections of open sets
 

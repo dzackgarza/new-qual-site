@@ -142,14 +142,15 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 :::{.example title="Applications of cellular approximation"}
 \envlist
 
-- $\pi_{k\leq n}S^n = 0$
-- $\pi_{n}(X) \cong \pi_{n}(X^{(n)})$
+- $\pi_k(S^n)=0$ for $k<n$.
+- By cellular approximation, every element of $\pi_n(X)$ has a representative with image in the $n$-skeleton $X^{(n)}$.
+  The inclusion $X^{(n+1)}\hookrightarrow X$ induces an isomorphism on $\pi_n$.
 
 :::
 
 [[T-HZUM7]]
 
-:::{.fact title="Unsorted facts about higher homotopy groups"}
+:::{.fact title="Higher homotopy groups: quick facts"}
 \envlist
 
 - $\pi_{i\geq 2}(X)$ is always abelian.
@@ -161,22 +162,19 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 
 * $\pi_{i}(\hat X) \cong \pi_{i}(X)$ for $i\geq 2$ whenever $\hat X \surjects X$ is a universal cover.
 
-* $\pi_{i}(S^n) = 0$ for $i < n$, $\pi_{n}(S^n) = \ZZ$
-  * Not necessarily true that $\pi_{i}(S^n) = 0$ when $i > n$!!!
-    * E.g. $\pi_{3}(S^2) = \ZZ$ by Hopf fibration
+* $\pi_{i}(S^n) = 0$ for $i < n$, while $\pi_{n}(S^n) = \ZZ$.
+  Higher groups need not vanish; for example $\pi_3(S^2)=\ZZ$.
 
 * $S^n / S^k \homotopic S^n \vee \Sigma S^{k}$
   * $\Sigma S^n = S^{n+1}$
 
-* General mantra: homotopy plays nicely with products, homology with wedge products.[^pullbacks]
-* $\pi_{k}\prod X = \prod \pi_{k} X$ by LES.[^homotopyproduct]
+* Homotopy groups preserve products:
+  \[
+  \pi_k\qty{\prod_\alpha X_\alpha}\cong\prod_\alpha\pi_k(X_\alpha).
+  \]
+  Fibrations are controlled by the long exact sequence of homotopy groups.
 
-- In general, homotopy groups behave nicely under homotopy pull-backs (e.g., fibrations and products), but not homotopy push-outs (e.g., cofibrations and wedges). Homology is the opposite.
-
-- Constructing a $K(\pi, 1)$: since $\pi = \left< S \mid R\right> = F(S)/R$, take $\bigvee^{|S|} S^1 \union_{|R|} e^2$. In English, wedge a circle for each generator and attach spheres for relations.
+- If $\pi=\langle S\mid R\rangle$, the presentation complex obtained from $\bigvee_{s\in S}S^1$ by attaching one $2$-cell for each relation has fundamental group $\pi$.
+  It is not generally a $K(\pi,1)$; higher-dimensional cells may be required to kill its higher homotopy groups.
 
 :::
-
-[^pullbacks]: More generally, in $\mathbf{Top}$, we can look at $A \from \pt \to B$ -- then $A\cross B$ is the pullback and $A \vee B$ is the pushout. In this case, homology $h: \mathbf{Top} \to \mathbf{Grp}$ takes pushouts to pullbacks but doesn't behave well with pullbacks. Similarly, while $\pi$ takes pullbacks to pullbacks, it doesn't behave nicely with pushouts.
-
-[^homotopyproduct]: This follows because $X\cross Y \surjects X$ is a fiber bundle, so use LES in homotopy and the fact that $\pi_{i\geq 2} \in \mathbf{Ab}$.

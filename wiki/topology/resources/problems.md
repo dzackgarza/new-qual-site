@@ -6,13 +6,13 @@ order: 20
 
 Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 
-[topology 2006-2014.pdf](attachments/topology_2006-2014.pdf)
+[Wesleyan topology preliminary exams, 2006–2014](attachments/topology_2006-2014.pdf)
 
-[topology 2005-2003.pdf](attachments/topology_2005-2003.pdf)
+[Wesleyan topology preliminary exams, 2003–2005](attachments/topology_2005-2003.pdf)
 
-[Math 872 - Section 1 - Spring 2014 - Problem sets page.pdf](attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf)
+[Math 872 problem sets, Spring 2014](attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf)
 
-[problemsets.pdf](attachments/problemsets.pdf)
+[Math 871 problem sets, Fall 2013](attachments/problemsets.pdf)
 
 [Harvard Math 131 midterm](https://people.math.harvard.edu/~bullery/math131/Midterm.pdf)
 

@@ -13,7 +13,7 @@ topics:
 
 # Blaschke factors and automorphisms
 
-The disc has exactly one interesting family of self-maps, and this page is the computation that says so.
+Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some $a\in\DD$ and $\theta\in\RR$, where $\psi_a$ is the Blaschke factor below.
 
 ## Blaschke factors
 

@@ -8,65 +8,43 @@ order: 0
 
 Some useful notation:
 
-- $\DD_r(a) \da \ts{z\in \CC \st 0\leq \abs{z-a}< a}$ an open disc about $a$
-- $\bar{\DD}_r(a) \da \ts{z\in \CC \st 0\leq \abs{z-a} \leq a}$ a closed disc about $a$.
-- $\DD^*(a) \da \ts{z\in \CC \st 0 < \abs{z-a} < r}$ a punctured disc about $a$.
+- $\DD_r(a) \da \ts{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
+- $\bar{\DD}_r(a) \da \ts{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
+- $\DD_r^*(a) \da \ts{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
 - $\Delta \da \DD_1(0)$ the standard unit disc
 - $\bar\Delta \da \bar{\DD}_1(0)$ the closed unit disc
 - $\Delta^* \da \DD_1^*(0)$ the punctured unit disc.
 - $\Omega$ an open simply-connected subset of $\CC$.
-- $\OO(\Omega), \Hol(\Omega), \Hol(\Omega, \CC)$ the holomorphic functions $f:\Omega \to \CC$ equipped with the structure of a $\CC\dash$algebra..
+- $\OO(\Omega), \Hol(\Omega), \Hol(\Omega, \CC)$ the holomorphic functions $f:\Omega \to \CC$, equipped with the structure of a $\CC\dash$algebra.
 
 ## Greatest Hits
 
 Things to know well:
 
-- Estimates for derivatives, mean value theorem
-- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's Theorem]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's Integral Formula]]
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's Inequality]]
-- [[complex-analysis/cauchy-theory/morera-and-converses|Morera's Theorem]]
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's Theorem]]
-- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum Modulus Principle]]
-- [[complex-analysis/counting-zeros/rouches-theorem|Rouché's Theorem]]
-- [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz Reflection Principle]]
-- [[complex-analysis/conformal-maps/the-schwarz-lemma|The Schwarz Lemma]]
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass Theorem]]
-- Properties of linear fractional transformations
-- Automorphisms of $\DD, \CC, \CP^1$.
-
 - Estimates for derivatives
 - [[complex-analysis/cauchy-theory/cauchys-theorem]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|MVT for Harmonic Functions]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
+- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula and mean value property]]
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
 - [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
-	- [[complex-analysis/cauchy-theory/morera-and-converses|Morera qual questions]]
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
-	- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville qual questions]]
+- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]]
 - [[complex-analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
-	- [[complex-analysis/counting-zeros/rouches-theorem|Rouche qual questions]]
 - [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|The Schwarz lemma]]
-	- [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma qual questions]]
 - [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
-	- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass Qual questions]]
 - [[complex-analysis/conformal-maps/build-me-a-map|Conformal maps]]
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and plane]]
-	- The Cayley transformation and other Mobius transformations
-	- [[complex-analysis/conformal-maps/build-me-a-map|Conformal map questions]]
 - [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
 - [[complex-analysis/singularities/casorati-weierstrass-and-picard|Picard theorems]]
-- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The open mapping theorem]]
 - [[complex-analysis/residues-and-contours/computing-residues|Computing residues]]
-	- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Qual integrals]]
 - Jordan's lemma
 - [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy-Riemann equations]]
 - [[complex-analysis/counting-zeros/the-argument-principle|The argument principle]]
 - [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
 - [[complex-analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
+- [[complex-analysis/holomorphic-functions/harmonic-functions|Harmonic functions and their mean value property]]
 
-For just the statements of most of these theorems: [[attachments/ComplexAnalysisNotes.pdf|see this doc]].
+For a compact statement sheet, see [[attachments/ComplexAnalysisNotes.pdf|Complex analysis theorem summary]].
 
 ## Common tricks
 
@@ -252,72 +230,24 @@ Some silly arithmetic tricks:
 - If $\abs{f} = M$ on $\bd \Omega$, then if (importantly) $f\neq 0$ in $\Omega$ then $\abs{f} = M$ on all of $\bar \Omega$ by apply the MMP to $f$ and $1/f$.
 	- Why $f\neq 0$ is necessary: take $f(z) = z$.
 - To show that a sequence of harmonic functions converge on e.g. a disc or rectangle, find good estimates on the boundary and apply the MMP.
-- For real analysis: if $f' < M$, apply the mean value theorem to show $f$ is Lipschitz: $\abs{f(x) - f(y)} = \abs{f'(\xi)} \abs{x-y} < M\abs{x-y}$.
+- For real analysis: if $\abs{f'} \leq M$, apply the mean value theorem to get $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
 - To show $\abs{f} \leq \abs{g}$: if you have a factor of $z$ to play with, try to apply Schwarz to $f/g$ to get $\abs{f/g}\leq \abs{z}$.
 
   
 ## Polynomials
 
 - $f$ is polynomial when:
-	- $f^{(n)} =0$ for every $n$ large enough (e.g. using Cauchy's inequality)
-	- $f$ is entire and only has poles at $\infty$.
+		- $f^{(n)} =0$ for every $n$ large enough (e.g. using Cauchy's inequality)
+		- $f$ is entire and its singularity at $\infty$ is a pole (or removable, for a constant polynomial).
 
 ## Series
 
-:::{.fact title="Generalized Binomial Theorem"}
-Define $(n)_k$ to be the falling factorial
+The standard expansions, generalized binomial coefficients, Cauchy products, inverses, and square-root expansions are collected in [[complex-analysis/basics/series-reference|Series: Reference]].
+
+A frequently used geometric expansion is
 \[
-\prod_{j=0}^{k-1} (n-k) = n(n-1)\cdots(n-k+1)
+\frac{1}{z-w}
+=\frac{1}{(z-a)\left(1-\frac{w-a}{z-a}\right)}
+=\sum_{n=0}^{\infty}\frac{(w-a)^n}{(z-a)^{n+1}},
+\qquad \abs{w-a}<\abs{z-a}.
 \]
-and set ${n\choose k} \da (n)_k/k!$, then
-\[
-(x+y)^n = \sum_{k\geq 0} {n\choose k} x^{k}y^{n-k}
-.\]
-
-:::
-:::{.fact title="Some useful series"}
-\[
-\sum_{k=1}^{n} k
-  &=\frac{n(n+1)}{2} \\
-\sum_{k=1}^{n} k^{2}
-  &=\frac{n(n+1)(2 n+1)}{6} \\
-\sum_{k=1}^{n} k^{3}
-  &=\frac{n^{2}(n+1)^{2}}{4}  \\
-\sum_{0\leq k \leq N} z^k
-  &= {1 - z^{N+1} \over 1-z} \\
-{1\over 1-z} &= \sum_{k\geq 0} z^k \\
-e^z &= \sum_{k\geq 0} {z^k \over k!} \\
-\sin(z)
-  &= \sum_{\substack{ k \geq 1 \\ \text{odd} }} (-1)^{k+1 \over 2} {z^k \over k!} \\
-  &= z - {1\over 3!}z^3 + {1\over 5!}z^5 + \cdots \\
-\cos(z)
-  &= \sum_{\substack{ k \geq 0 \\ \text{even}} } (-1)^{k\over 2} {z^k \over k!} \\
-  &= 1 - {1\over 2!}z^2 + {1\over 4!}z^4 + \cdots \\
-  \\
-\cosh(z) &= \sum_{k\geq 0} { z^{2k} \over (2k)! } \\
-\sinh(z) &= \sum_{k\geq 0} { z^{2k+1} \over (2k+1)! } \\
-\log(1-x)
-  &= \sum_{k \geq 0} {z^k\over k} \quad \abs{z} < 1 \\
-\dd{}{z} \sum_{k=0}^\infty a_k z^k
-  &= \sum_{k=0}^\infty a_{k+1}z^k \\
-(1+x)^{1/2}
-  &= 1 + (1/2)x + {(1/2)(-1/2) \over 2!}x^2 + {(1/2)(-1/2)(-3/2) \over 3!}x^3 + \cdots \\
-  &= 1 + {1\over 2} x - {1\over 8}x^2 + {1\over 16}x^3 - \cdots
-\]
-
-:::
-:::{.fact}
-Useful trick for expanding square roots:
-\[
-\sqrt{z} = \sqrt{z_0 + z - z_0} = \sqrt{z_0 \qty{ 1 + {z-z_0 \over z} }} = \sqrt{z_0} \sqrt{1+u},\quad u\da {z-z_0 \over z} \\
-\implies \sqrt{z} = \sqrt{z_0} \sum_{k\geq 0} {1/2 \choose k} \qty{z- z_0 \over z}^k
-.\]
-
-:::
-
-- A common trick:
-$$
-\frac{1}{z-w}=\frac{1}{(z-a)\left(1-\frac{w-a}{z-a}\right)}=\sum_{n=0}^{n} \frac{(w-a)^{n}}{(z-a)^{n+1}} .
-$$
-
-> A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).

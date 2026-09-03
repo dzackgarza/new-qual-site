@@ -6,13 +6,13 @@ order: 90
 
 ## Fields
 
-[Ch15Sltns.pdf](attachments/Ch15Sltns.pdf)
+[Chapter 15 solutions](attachments/Ch15Sltns.pdf)
 
-[Ch16Sltns.pdf](attachments/Ch16Sltns.pdf)
+[Chapter 16 solutions](attachments/Ch16Sltns.pdf)
 
-[Ch17Sltns.pdf](attachments/Ch17Sltns.pdf)
+[Chapter 17 solutions](attachments/Ch17Sltns.pdf)
 
-[603_11.pdf](attachments/603_11.pdf)
+[Algebra homework 11 (Clay Shonkwiler)](attachments/603_11.pdf)
 
 - Week 6: Commutative algebra (3/8)
 
@@ -24,14 +24,14 @@ order: 90
 
 ## Galois Theory
 
-[Algebra HW 11 Solns.pdf](attachments/Algebra_HW_11_Solns.pdf)
+[Algebra homework 11 solutions](attachments/Algebra_HW_11_Solns.pdf)
 
-[solhwg.pdf](attachments/solhwg.pdf)
+[Math 114 Galois-theory homework solutions](attachments/solhwg.pdf)
 
-[Ch20Sltns.pdf](attachments/Ch20Sltns.pdf)
+[Chapter 20 solutions](attachments/Ch20Sltns.pdf)
 
-[calculating_galois_from_polynomial.pdf](attachments/calculating_galois_from_polynomial.pdf)
+[Calculating a Galois group from a polynomial](attachments/calculating_galois_from_polynomial.pdf)
 
-[Nori_Galois_Theory_Problems.pdf](attachments/Nori_Galois_Theory_Problems.pdf)
+[Nori, Galois theory problems](attachments/Nori_Galois_Theory_Problems.pdf)
 
-[Galois Group Practice.pdf](attachments/Galois_Group_Practice.pdf)
+[Galois-group practice problems](attachments/Galois_Group_Practice.pdf)

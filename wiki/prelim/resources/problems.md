@@ -5,7 +5,7 @@ order: 20
 
 # Problems
 
-- [[attachments/Big_List_of_Math_Problems.pdf]]
+- [[attachments/Big_List_of_Math_Problems.pdf|Mathematical Trivium problem collection]]
 
 - [Duke Analysis and Linear Algebra Quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
 
@@ -35,4 +35,4 @@ order: 20
 
 - [[UCLA_Basic_Exam_Prelim.pdf]]
 
-- [[attachments/Series_Problems_.pdf]]
+- [[attachments/Series_Problems_.pdf|Sequence and series problems with solutions]]

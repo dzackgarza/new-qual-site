@@ -9,21 +9,14 @@ topics:
 
 # Sylow theory
 
-Sylow is where the counting arguments of this chapter are pointed at a specific question: which subgroups of prime power order exist, how many, and how they sit relative to each other.
-It is filed here rather than as a chapter of its own because all three statements are conjugation counts.
+The Sylow theorems turn the factorization $|G|=p^km$ with $p\nmid m$ into existence, conjugacy, and counting information for subgroups of order $p^k$.
 
 :::{.remark title="Useful facts"}
 \envlist
 
-- Counting contributions to $\size G$ from $\Syl_p(G)$: writing $\size G = p^k m$ so that $\size{S_p} = p^k$, and using that every element of order $p$ lies in some $S_p$, one gets at least $n_p(\ell - 1)$ for some constant $\ell > 1$.
-
-  - **Warning**: every $S_p$ is the same size, so it is tempting to take $\ell \da \size{S_p} = p^k$.
-    That only works if the $S_p$ intersect trivially, for instance if $k=1$.
-    Otherwise the best available without more information is $\ell = p$, meaning the $S_p$ intersect trivially or in subgroups of order $p$.
-
-  - **Warning**: this is not quite a count of elements of order $p$, since elements of $S_p$ can have order $p^{k'}$ for $k' \leq k$.
-
-- When counting: leave the identity out of every calculation and add it back as a $+1$ at the end.
+- If $n_p$ is the number of Sylow $p$-subgroups, then $n_p\mid m$ and $n_p\equiv1\pmod p$.
+- A Sylow $p$-subgroup is normal exactly when it is unique, i.e. exactly when $n_p=1$.
+- If $k=1$, distinct Sylow $p$-subgroups have trivial intersection, so their nonidentity elements contribute exactly $n_p(p-1)$ distinct elements. For $k>1$, intersections must be analyzed before using such an element count.
 
 :::
 

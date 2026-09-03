@@ -34,7 +34,7 @@ order: 15
 
 - [Harvard 2019 Grad Analysis Course Notes](https://people.math.harvard.edu/~ctm/home/text/class/harvard/212a/19/html/home/course/course.pdf)
 
-- [Real Analysis Course Notes.pdf](attachments/Real_Analysis_Course_Notes.pdf)
+- [Real analysis course notes](attachments/Real_Analysis_Course_Notes.pdf)
 
 - [[cambride_analysis_ii.pdf|Cambridge analysis notes]]
 
@@ -51,4 +51,4 @@ These are that course's sheets, not a live syllabus.
 
 - [[analysis_notes_eamonqg.pdf|More analysis summary]]
 
-- [[Real_Named_Theorems.pdf]]
+- [[Real_Named_Theorems.pdf|Eifler, Real Variables Named Theorems]]

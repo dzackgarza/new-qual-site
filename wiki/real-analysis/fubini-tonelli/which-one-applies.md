@@ -8,7 +8,7 @@ topics:
 
 # Which one applies?
 
-The chapter exists because the exam asks this constantly and because the hypotheses are the whole question.
+The choice between Tonelli and Fubini is determined by the hypotheses: nonnegativity supports Tonelli, while absolute integrability supports Fubini.
 
 ## The rule
 
@@ -19,12 +19,12 @@ The chapter exists because the exam asks this constantly and because the hypothe
   Then the iterated integrals agree with the double integral and with each other.
 
 So the standard move is to run Tonelli on $\abs f$ first: if the iterated integral of $\abs f$ is finite, then $f\in L^1$ and Fubini applies to $f$.
-That two-step is the answer to almost every problem in this chapter.
+This two-step reduction is standard.
 
 ## What each hypothesis is doing
 
-- **$\sigma\dash$finiteness** is what makes the product measure well defined and the sections measurable.
-  Drop it and the conclusion fails: on $[0,1]$ with Lebesgue measure against counting measure, the characteristic function of the diagonal has iterated integrals $1$ and $0$.
+- **$\sigma\dash$finiteness** is a hypothesis in the standard Tonelli--Fubini theorem used here.
+  Without it, equality of the two iterated integrals can fail: on $[0,1]$ with Lebesgue measure against counting measure, the characteristic function of the diagonal has iterated integrals $1$ and $0$.
 
 - **Nonnegativity** in Tonelli is what allows $+\infty$ as an answer; without it the two iterated integrals can be $\infty - \infty$ in different orders.
 

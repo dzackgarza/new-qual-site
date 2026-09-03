@@ -4,74 +4,74 @@ order: 31
 
 # UCLA Prelims
 
-[basic-01F.pdf](attachments/basic-01F.pdf)
+[Fall 2001 Basic Examination](attachments/basic-01F.pdf)
 
-[basic-02F.pdf](attachments/basic-02F.pdf)
+[Fall 2002 Basic Examination](attachments/basic-02F.pdf)
 
-[basic-02S.pdf](attachments/basic-02S.pdf)
+[Spring 2002 Basic Examination](attachments/basic-02S.pdf)
 
-[basic-02W.pdf](attachments/basic-02W.pdf)
+[Winter 2002 Basic Examination](attachments/basic-02W.pdf)
 
-[basic-03F.pdf](attachments/basic-03F.pdf)
+[Fall 2003 Basic Examination](attachments/basic-03F.pdf)
 
-[basic-03S.pdf](attachments/basic-03S.pdf)
+[Spring 2003 Basic Examination](attachments/basic-03S.pdf)
 
-[basic-04F.pdf](attachments/basic-04F.pdf)
+[Fall 2004 Basic Examination](attachments/basic-04F.pdf)
 
-[basic-04S.pdf](attachments/basic-04S.pdf)
+[Spring 2004 Basic Examination](attachments/basic-04S.pdf)
 
-[basic-05F.pdf](attachments/basic-05F.pdf)
+[Fall 2005 Basic Examination](attachments/basic-05F.pdf)
 
-[basic-05S.pdf](attachments/basic-05S.pdf)
+[Spring 2005 Basic Examination](attachments/basic-05S.pdf)
 
-[basic-06S.pdf](attachments/basic-06S.pdf)
+[Spring 2006 Basic Examination](attachments/basic-06S.pdf)
 
-[basic-06W.pdf](attachments/basic-06W.pdf)
+[Winter 2006 Basic Examination](attachments/basic-06W.pdf)
 
-[basic-07F.pdf](attachments/basic-07F.pdf)
+[Fall 2007 Basic Examination](attachments/basic-07F.pdf)
 
-[basic-07S.pdf](attachments/basic-07S.pdf)
+[Spring 2007 Basic Examination](attachments/basic-07S.pdf)
 
-[basic-08F.pdf](attachments/basic-08F.pdf)
+[Fall 2008 Basic Examination](attachments/basic-08F.pdf)
 
-[basic-08S.pdf](attachments/basic-08S.pdf)
+[Spring 2008 Basic Examination](attachments/basic-08S.pdf)
 
-[basic-09F.pdf](attachments/basic-09F.pdf)
+[Fall 2009 Basic Examination](attachments/basic-09F.pdf)
 
-[basic-09S.pdf](attachments/basic-09S.pdf)
+[Spring 2009 Basic Examination](attachments/basic-09S.pdf)
 
-[basic-10F.pdf](attachments/basic-10F.pdf)
+[Fall 2010 Basic Examination](attachments/basic-10F.pdf)
 
-[basic-10S.pdf](attachments/basic-10S.pdf)
+[Spring 2010 Basic Examination](attachments/basic-10S.pdf)
 
-[basic-11F.pdf](attachments/basic-11F.pdf)
+[Fall 2011 Basic Examination](attachments/basic-11F.pdf)
 
-[basic-11S.pdf](attachments/basic-11S.pdf)
+[Spring 2011 Basic Examination](attachments/basic-11S.pdf)
 
-[basic-12F.pdf](attachments/basic-12F.pdf)
+[Fall 2012 Basic Examination](attachments/basic-12F.pdf)
 
-[basic-12S.pdf](attachments/basic-12S.pdf)
+[Spring 2012 Basic Examination](attachments/basic-12S.pdf)
 
-[basic-13F.pdf](attachments/basic-13F.pdf)
+[Fall 2013 Basic Examination](attachments/basic-13F.pdf)
 
-[basic-13S.pdf](attachments/basic-13S.pdf)
+[Spring 2013 Basic Examination](attachments/basic-13S.pdf)
 
-[basic-14F.pdf](attachments/basic-14F.pdf)
+[Fall 2014 Basic Examination](attachments/basic-14F.pdf)
 
-[basic-14S.pdf](attachments/basic-14S.pdf)
+[Spring 2014 Basic Examination](attachments/basic-14S.pdf)
 
-[basic-15F.pdf](attachments/basic-15F.pdf)
+[Fall 2015 Basic Examination](attachments/basic-15F.pdf)
 
-[basic-15S.pdf](attachments/basic-15S.pdf)
+[Spring 2015 Basic Examination](attachments/basic-15S.pdf)
 
-[basic-16F.pdf](attachments/basic-16F.pdf)
+[Fall 2016 Basic Examination](attachments/basic-16F.pdf)
 
-[basic-16S.pdf](attachments/basic-16S.pdf)
+[Spring 2016 Basic Examination](attachments/basic-16S.pdf)
 
-[basic-17F.pdf](attachments/basic-17F.pdf)
+[Fall 2017 Basic Examination](attachments/basic-17F.pdf)
 
-[basic-17S.pdf](attachments/basic-17S.pdf)
+[Spring 2017 Basic Examination](attachments/basic-17S.pdf)
 
-[basic-18F.pdf](attachments/basic-18F.pdf)
+[Fall 2018 Basic Examination](attachments/basic-18F.pdf)
 
-[basic-18S.pdf](attachments/basic-18S.pdf)
+[Spring 2018 Basic Examination](attachments/basic-18S.pdf)

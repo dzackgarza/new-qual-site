@@ -13,7 +13,7 @@ order: 70
 
 ## Problems
 
-- [ExerciseSet8f06a.pdf](attachments/ExerciseSet8f06a.pdf)
+- [Exercise set 8, Fall 2006](attachments/ExerciseSet8f06a.pdf)
 
 - MIT linear algebra: [problems for discussion](https://www.mit.edu/~fengt/LinearAlgebra.pdf), [combined problem file](https://www.mit.edu/~fengt/LAproblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/LinearAlgebraSolns.pdf).
 

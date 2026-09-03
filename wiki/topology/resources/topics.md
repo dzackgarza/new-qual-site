@@ -16,13 +16,13 @@ order: 10
 
   - Connectedness (path-connected & "locally" versions), totally disconnected
 
-  - mSeparation axioms, Hausdorff spaces, normal, regular
+  - Separation axioms, Hausdorff spaces, normal, regular
 
   - The tube lemma
 
   - Common counterexamples (sine curve)
 
-- Week 2 (May 38): The Fundamental Group
+- Week 2 (May 28): The Fundamental Group
 
   - Van Kampen
 

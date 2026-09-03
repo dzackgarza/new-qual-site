@@ -33,18 +33,18 @@ order: 0
 
 - Analysis
 
-  - [[attachments/140A_Exam_Review.pdf]]
+  - [[attachments/140A_Exam_Review.pdf|Math 140A real-analysis exam review (Todd Kemp)]]
 
-  - [[attachments/Real_Analysis_Review_Midterm.pdf]]
+  - [[attachments/Real_Analysis_Review_Midterm.pdf|Real-analysis practice midterm with solutions]]
 
 - Linear Algebra
 
-  - [[attachments/Basic_Linear_Algebra_Review.pdf]]
+  - [[attachments/Basic_Linear_Algebra_Review.pdf|Linear-algebra final-exam review sheet]]
 
 - Probability
 
-  - [[attachments/Probability_Review.pdf]]
+  - [[attachments/Probability_Review.pdf|Review of probability theory (Maleki–Do)]]
 
 - Topology
 
-  - [[attachments/Topology_Prelim_Answers_-_Unknown.pdf]]
+  - [[attachments/Topology_Prelim_Answers_-_Unknown.pdf|Topology prelim answers (Malone–Housley, Summer 2007)]]

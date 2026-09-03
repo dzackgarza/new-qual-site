@@ -15,7 +15,7 @@ order: 50
 
 ## Problems
 
-- [Ring Theory Qual Problems.pdf](attachments/Ring_Theory_Qual_Problems.pdf)
+- [Ring-theory qualifying-exam problems](attachments/Ring_Theory_Qual_Problems.pdf)
 
 - MIT ring theory: [problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), [combined problem file](https://www.mit.edu/~fengt/RingProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
 
@@ -25,8 +25,8 @@ order: 50
 
 ## Solutions
 
-- [Ch12Sltns.pdf](attachments/Ch12Sltns.pdf)
+- [Chapter 12 solutions](attachments/Ch12Sltns.pdf)
 
-- [Ch13Sltns.pdf](attachments/Ch13Sltns.pdf)
+- [Chapter 13 solutions](attachments/Ch13Sltns.pdf)
 
-- [Ch14Sltns.pdf](attachments/Ch14Sltns.pdf)
+- [Chapter 14 solutions](attachments/Ch14Sltns.pdf)

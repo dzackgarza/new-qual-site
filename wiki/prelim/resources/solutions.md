@@ -5,50 +5,56 @@ order: 30
 
 # Solutions
 
+## Berkeley preliminary exams
+
 - [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-- [prelimsolutions_0.pdf](attachments/prelimsolutions_0.pdf)
+- [Fall 2020 online graduate preliminary exam, Part A, with solutions](attachments/prelimsolutions.pdf)
 
-- [prelimsolutions.pdf](attachments/prelimsolutions.pdf)
+- [Spring 2021 online graduate preliminary exam, Part A, with solutions](attachments/prelimsolutions_0.pdf)
 
-- [multivariable_calculus.pdf](attachments/multivariable_calculus.pdf)
+- [[attachments/f03solution.pdf|Fall 2003 preliminary-exam solutions]]
 
-- [more_calculus_from_test2.pdf](attachments/more_calculus_from_test2.pdf)
+## General practice packets
 
-- [Week1_solns.pdf](attachments/Week1_solns.pdf)
+- [Multivariable-calculus practice](attachments/multivariable_calculus.pdf)
 
-- [Week2_solns.pdf](attachments/Week2_solns.pdf)
+- [Additional calculus practice from test 2](attachments/more_calculus_from_test2.pdf)
 
-- [Week3_solns.pdf](attachments/Week3_solns.pdf)
+- [Week 1: Calculus I practice solutions](attachments/Week1_solns.pdf)
 
-- [Week4_solns.pdf](attachments/Week4_solns.pdf)
+- [Week 2: Calculus II, part 1 practice solutions](attachments/Week2_solns.pdf)
 
-- [Week5_solns.pdf](attachments/Week5_solns.pdf)
+- [Week 3: Calculus II, part 2 and Calculus III practice solutions](attachments/Week3_solns.pdf)
 
-- [Week6_solns.pdf](attachments/Week6_solns.pdf)
+- [Week 4: Differential equations and linear algebra practice solutions](attachments/Week4_solns.pdf)
 
-- [solution.pdf](attachments/solution.pdf)
+- [Week 5: Abstract algebra and complex analysis practice solutions](attachments/Week5_solns.pdf)
 
-- [solution1.pdf](attachments/solution1.pdf)
+- [Week 6: Miscellaneous analysis, topology, and probability practice solutions](attachments/Week6_solns.pdf)
 
-- [solution3.pdf](attachments/solution3.pdf)
+## Harvard Math 21b, Spring 2018
 
-- [solution4.pdf](attachments/solution4.pdf)
+- [Course exam archive](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html)
 
-- [solution5.pdf](attachments/solution5.pdf)
+- [Final exam with solutions](attachments/solution.pdf)
 
-- [solution6.pdf](attachments/solution6.pdf)
+- [Practice final 1 with solutions](attachments/solution1.pdf)
 
-- [solution7.pdf](attachments/solution7.pdf)
+- [Practice final 3 with solutions](attachments/solution3.pdf)
 
-- [solution9.pdf](attachments/solution9.pdf)
+- [Practice final 4 with solutions](attachments/solution4.pdf)
 
-- [solution8.pdf](attachments/solution8.pdf)
+- [Practice final 5 with solutions](attachments/solution5.pdf)
 
-- Linear Algebra
+- [Practice final 6 with solutions](attachments/solution6.pdf)
 
-- [Harvard Math 21b](http://people.math.harvard.edu/~knill/teaching/math21b2018/exams.html) (Linear Algebra) *Lots of practice finals with solutions*
+- [Practice final 7 with solutions](attachments/solution7.pdf)
 
-- [[attachments/f03solution.pdf]]
+- [Practice final 8 with solutions](attachments/solution8.pdf)
 
-- [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf]]
+- [Practice final 9 with solutions](attachments/solution9.pdf)
+
+## Topology
+
+- [[attachments/Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf|Point-set topology midterm with solutions]]

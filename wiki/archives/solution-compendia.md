@@ -11,29 +11,19 @@ title: Solution Compendia
 
 [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-[[attachments/Algebra_Solutions.pdf]]
+[[attachments/Algebra_Solutions.pdf|Kleshchev algebra student solution manual, Chapters 1–5]]
 
-[[attachments/qf13sol.pdf]]
+[[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]]
 
-[[attachments/qual18wintersol.pdf]]
+[[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]]
 
-[[attachments/Algebra_Final_Solns.pdf]]
+[[attachments/Algebra_Final_Solns.pdf|Mathematics 504 final solutions, Autumn 2003]]
 
-[[attachments/AlgebraSept2019solutions.pdf]]
+[[attachments/AlgebraSept2019solutions.pdf|Algebra qualifying-exam solutions, Fall 2019]]
 
-[[attachments/Algebra_Solutions 1.pdf]]
+[[attachments/final2011-solns.pdf|Algebra final solutions, 2011]]
 
-[[attachments/Algebra_Final_Solns 1.pdf]]
-
-[[attachments/final2011-solns.pdf]]
-
-[[attachments/Sample_Comp_Fa03Alg.pdf]]
-
-[Maryland Math 600 algebra exam solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf)
-
-[Maryland Math 600 algebra exam solutions, Summer 2001 (MA)](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf)
-
-[Kureh's algebra qual solutions (UCLA)](https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf)
+[[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]]
 
 [Maryland Math 600 algebra exam solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf)
 

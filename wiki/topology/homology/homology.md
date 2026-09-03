@@ -23,11 +23,6 @@ In general, $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$, where $\abs{\pi_0(X)}$ is the n
 
 [[PR-B6BB2]]
 
-:::{.remark}
-May need some good pair condition?
-
-:::
-
 :::{.example title="Application"}
 \[
 H_{n}(\bigvee_{k} S^n) = \ZZ^k
@@ -36,16 +31,21 @@ H_{n}(\bigvee_{k} S^n) = \ZZ^k
 :::
 
 :::{.proof}
-Mayer-Vietoris. 
+Give the finite wedge one $0$-cell and $k$ cells in dimension $n$.
+Its cellular chain group in degree $n$ is therefore $\ZZ^k$, with zero incoming and outgoing cellular differential in that degree, so
+\[
+H_n\qty{\bigvee_{j=1}^k S^n}\cong \ZZ^k.
+\]
 
 :::
 
 :::{.warnings}
 $H_{k} \qty{ \prod_ \alpha X_ \alpha}$ is **not** generally equal to $\prod_ \alpha \qty{ H_{k} X_ \alpha }$.
-The obstruction is due to torsion -- if all groups are torsionfree, then the Kunneth theorem[^kunneth] yields 
+For a finite product, the Künneth theorem describes the correction terms. In particular, if the relevant homology groups are torsion-free, then
 \[
-H_{k} (A\cross B) = \prod_{i+j=k} H_{i} A \tensor H_{j} B
+H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor H_{j}(B)
 \]
+and iteration gives the corresponding tensor-product decomposition for a finite product.
 \[
 H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bigotimes_{i=1}^{k} H_{x_{i}}(X_{i}).
 \]
@@ -56,11 +56,11 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 [[T-FBMYQ]]
 
-:::{.fact title="Assorted facts"}
+:::{.fact title="Cellular-chain quick checks"}
 \envlist
 
-- $H_{n}(X) = 0 \iff X$ has no $n\dash$cells.
-- $C^0 X = \pt \implies d_{1}: C^1 \to C^0$ is the zero map.
+- If a CW complex has no $n\dash$cells, then its cellular chain group $C_n(X)$ is zero, hence $H_n(X)=0$.
+- If a CW complex has a single $0\dash$cell, then its cellular differential $d_1:C_1(X)\to C_0(X)$ is zero.
 
 :::
 
@@ -137,19 +137,28 @@ In particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, whi
 
 ## Relative Homology
 
-:::{.fact title="Some assorted facts"}
+:::{.fact title="Relative and cellular homology"}
 \envlist
 
-- $H_{n}(X/A) \cong \tilde H_{n}(X, A)$ when $A\subset X$ has a neighborhood that deformation retracts onto it.
+- If $(X,A)$ is a good pair, then the quotient map induces
+  \[
+  H_n(X,A)\cong \widetilde H_n(X/A).
+  \]
 
-- LES of a pair
-  - $(A \injects X) \mapsto (A, X, X/A)$
+- The long exact sequence of a pair is
+  \[
+  \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots.
+  \]
 
-- For CW complexes $X = \theset{X^{(i)}}$, we have 
+- For a CW complex $X$, the cellular filtration satisfies
 \[
-H_{n}(X^{(k)},X^{(k-1)}) \cong \begin{cases}\ZZ[\theset{e^n}]~ &k=n,\\ 0 &\text{otherwise}\end{cases} \qquad\text{ since } X^k/X^{k-1} \cong \bigvee S^k
+H_j(X^{(k)},X^{(k-1)}) \cong
+\begin{cases}
+\ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
+0 & j\neq k,
+\end{cases}
 \]
-- $H_{n}(X, A) \cong_? H_{n}(X/A, \pt)$
+since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
 
 :::
 
@@ -158,5 +167,3 @@ H_{n}(X^{(k)},X^{(k-1)}) \cong \begin{cases}\ZZ[\theset{e^n}]~ &k=n,\\ 0 &\text{
 [[P-S7WVQ]]
 
 [[E-AUAOC]]
-
-[^kunneth]: The generalization of Kunneth is as follows: write $\mathcal{P}(n, k)$ be the set of partitions of $n$ into $k$ parts, i.e. $\mathbf{x} \in \mathcal{P}(n,k) \implies \mathbf{x} = (x_{1}, x_{2}, \ldots, x_{k})$ where $\sum x_{i}  = n$. Then

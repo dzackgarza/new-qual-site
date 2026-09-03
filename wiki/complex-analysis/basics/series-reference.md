@@ -10,9 +10,9 @@ Define $\rising{n}{k}$ to be the **rising factorial**
 \rising{n}{k} = n(n+1)(n+2) \cdots (n+(k-1)) = k! {n+k-1\choose k}
 ,\]
 which has exactly $k$ terms.
-Some useful identities:
+For $n\in\ZZ_{>0}$,
 \[
-\rising{n}{k} &= {(n+k-1)! \over (k-1)!} = {\Gamma(n+k) \over \Gamma(n)} \\
+\rising{n}{k} &= {(n+k-1)! \over (n-1)!} = {\Gamma(n+k) \over \Gamma(n)} \\
 {\rising{n}{k} \over k!} &= {n+k-1 \choose k}
 .\]
 
@@ -21,6 +21,7 @@ Similarly define the **falling factorial**
 \falling{n}{k} = n(n-1)(n-2)\cdots(n-(k-1)) = k!{n\choose k}
 ,\]
 which again has $k$ terms.
+For $n\in\ZZ_{\geq 0}$ and $0\leq k\leq n$,
 \[
 \falling{n}{k} &= {n! \over (n-k)!} = {\Gamma(n+1) \over \Gamma(n - (k-1))}\\
 {\falling{n}{k} \over k!} &= {n\choose k}
@@ -34,14 +35,18 @@ Where this comes up most often:
 :::
 
 :::{.fact title="Generalized Binomial Theorem"}
-Extend the binomial coefficients to negative numbers in the following way:
+For $\alpha\in\CC$ and $k\geq 0$, set
 \[
-{-n \choose k} &\da (-n)(-(n+1))\cdots (-(n + (k-1))) \cdot {1\over k!} = (-1)^k {n+k-1 \choose k}
+{\alpha\choose k}
+&\da {\alpha(\alpha-1)\cdots(\alpha-k+1)\over k!},
+\qquad {\alpha\choose 0}=1
 .\]
-Then
+Then, for $\abs z<1$,
 \[
-(x+y)^n = \sum_{k\geq 0} {n\choose k} x^{k}y^{n-k}
-.\]
+(1+z)^\alpha = \sum_{k\geq 0}{\alpha\choose k}z^k,
+\]
+for the holomorphic branch with value $1$ at $z=0$.
+When $\alpha\in\ZZ_{\geq 0}$ the series truncates and recovers the ordinary binomial theorem.
 
 :::
 
@@ -58,7 +63,7 @@ Then
 {1\over 1-z} &= \sum_{k\geq 0} z^k \\
 e^z &= \sum_{k\geq 0} {z^k \over k!} \\
 \sin(z) 
-  &= \sum_{\substack{ k \geq 1 \\ \text{odd} }} (-1)^{k+1 \over 2} {z^k \over k!} \\
+  &= \sum_{\substack{ k \geq 1 \\ \text{odd} }} (-1)^{k-1 \over 2} {z^k \over k!} \\
   &= z - {1\over 3!}z^3 + {1\over 5!}z^5 + \cdots \\ \\
 \cos(z) 
   &= \sum_{\substack{ k \geq 0 \\ \text{even}} } (-1)^{k\over 2} {z^k \over k!} \\
@@ -79,8 +84,9 @@ e^z &= \sum_{k\geq 0} {z^k \over k!} \\
 (1+z)^{\alpha} 
   &= \sum_{k\geq 0} {\alpha \choose k}z^k,\qquad \abs{z} < 1 \\
 {1\over 1+z^n} 
-  &= \sum_{k\geq 0} {n+k-1 \choose k} (-z)^k, \qquad \abs{z} < 1
+  &= \sum_{k\geq 0} (-1)^kz^{nk}, \qquad \abs{z} < 1
 \]
+in the last identity with $n\geq 1$.
 
 Some other classes of series to remember:
 \[
@@ -105,11 +111,13 @@ Remembering that $\sum_{1\leq k \leq n} k = n(n+1)/2$: realize as counting a tri
 
 Write $k^2 = k(k+1) - k$ to get
 \[
-\sum k^2 = \sum k(k+1) - \sum k = {n(n+1/2)(n+2/2) \over 3}
+\sum_{k=1}^n k^2
+= \sum_{k=1}^n k(k+1) - \sum_{k=1}^n k
+= {n(n+1)(2n+1) \over 6}
 .\]
 Similarly $\sum k^3 = (\sum k )^2$.
 
-For summing the odds, $\sum_{k\geq 1} (2k-1)$:
+For summing the first $n$ odd integers, $\sum_{k=1}^{n}(2k-1)=n^2$:
 
 ![](figures/2021-12-11_22-09-24.png)
 
@@ -132,22 +140,24 @@ How to remember the last one:
 [[FF-ENSFJ]] [[FF-5GLOZ]]
 
 :::{.fact title="Expanding square roots"}
+Fix $z_0\neq 0$ and a local branch of $\sqrt{\phantom z}$ near $z_0$.
+For $\abs{z-z_0}<\abs{z_0}$,
 \[
 \sqrt{z} 
 &= \sqrt{z_0 + z - z_0} \\
-&= \sqrt{z_0 \qty{ 1 + {z-z_0 \over z} }} \\
-&= \sqrt{z_0} \sqrt{1+u},\quad u\da {z-z_0 \over z} \\
+&= \sqrt{z_0 \qty{ 1 + {z-z_0 \over z_0} }} \\
+&= \sqrt{z_0} \sqrt{1+u},\quad u\da {z-z_0 \over z_0} \\
 \implies 
 \sqrt{z} 
-&= \sqrt{z_0} \sum_{k\geq 0} {1/2 \choose k} \qty{z- z_0 \over z}^k
+&= \sqrt{z_0} \sum_{k\geq 0} {1/2 \choose k} \qty{z- z_0 \over z_0}^k
 .\]
 
 :::
 
 :::{.fact title="Multiplying series: Cauchy product"}
-The product of two sequences is given by the Cauchy product
+The product of two power series is given by the Cauchy product
 \[
-\sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j\leq k} a_k b_{k-j}
+\sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j=0}^k a_j b_{k-j}
 .\]
 
 :::
@@ -157,7 +167,7 @@ The product of two sequences is given by the Cauchy product
 ## Cauchy product formula for coefficients of $1/A(z)$
 
 :::{.fact title="Multiplicatively inverting a series"}
-Using the general ring theory fact that $A(z) \da \sum_{k\geq 0} a_k z^k \in R[[z]]$ is invertible iff $a_0$ is invertible in $R$, power series over fields can always be inverted.
+Using the general ring theory fact that $A(z) \da \sum_{k\geq 0} a_k z^k \in R[[z]]$ is invertible iff $a_0$ is invertible in $R$, a power series over a field is invertible exactly when $a_0\neq 0$.
 There is a formula: writing $B(z) \da \sum_{k\geq 0 } b_k z^k \da 1/A(z) \in \CC[[z]]$, the coefficients can be inductively computed as
 \[
 b_0 &= a_0\inv \\
@@ -174,8 +184,8 @@ How to prove this:
 \qty{\sum a_k z^k}\qty{\sum b_k z^k} = 1
 \implies 
 a_0b_0 &=1 \\
-a_0b_1 + a_1b_0 &= 1 \\
-a_0b_2 + a_1b_1 + a_2b_0 &= 1 \\
+a_0b_1 + a_1b_0 &= 0 \\
+a_0b_2 + a_1b_1 + a_2b_0 &= 0 \\
 \vdots \quad&\quad \vdots
 \]
 
@@ -206,7 +216,7 @@ where to compute the $z^m$ term you only need to consider the first $m+1$ summan
 
 Purely formally, we have
 \[
-{1\over A(z)} = {1 \over 1- (1-A(z))} = \sum_{k\geq 0} (1-A(z))^k z^k
+{1\over A(z)} = {1 \over 1- (1-A(z))} = \sum_{k\geq 0} (1-A(z))^k
 .\]
 
 :::
@@ -237,7 +247,7 @@ Now just run the grade school algorithm:
       \underline{-(z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots)} & \\
       {1\over 3!}z^3 - {1\over 5!}z^5 + {1\over 7!}z^7 - \cdots \hspace{0em}& \\
      \underline{-{1\over 3!}z^2(z-{1\over 3!}z^3 + {1\over 5!}z^5 + \cdots)} & \\
-      \left( -{1\over 5!} + {1\over 3!3!}\right)z^5 + \left( {1\over 7!} - {1\over 3! 5!} \right)z + \cdots & \\
+      \left( -{1\over 5!} + {1\over 3!3!}\right)z^5 + \left( {1\over 7!} - {1\over 3! 5!} \right)z^7 + \cdots & \\
   \end{array}
 .\]
 
@@ -274,4 +284,3 @@ which is useful for generating the first few low order terms of a series expansi
 :::
 
 [[P-KUNLD]]
-

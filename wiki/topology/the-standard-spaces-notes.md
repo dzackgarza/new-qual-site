@@ -92,34 +92,30 @@ T^n \da \prod_{j=1}^n S^1 = S^1 \times S^1 \times \cdots
 :::
 
 :::{.example title="Grassmannians"}
-The real Grassmannian, $\Gr(n, k)_{/\RR}$, i.e. the set of $k$ dimensional subspaces of $\RR^n$.
-One can similar define $\Gr(n, k)_{\CC}$ for complex subspaces.
-Note that $\RP^n = \Gr(n, 1)_{\RR}$ and $\CP^n = \Gr(n, 1)_{/\CC}$.
+The real Grassmannian $\Gr(k,\RR^n)$ is the space of $k$-dimensional linear subspaces of $\RR^n$; similarly $\Gr(k,\CC^n)$ parametrizes complex $k$-planes.
+In particular, $\RP^{n-1}=\Gr(1,\RR^n)$ and $\CP^{n-1}=\Gr(1,\CC^n)$.
 
 :::
 
 :::{.example title="Stiefel Manifolds"}
-The Stiefel manifold $V_{n}(k)_{\RR}$, the space of orthonormal $k\dash$frames in $\RR^n$?
+The real Stiefel manifold $V_k(\RR^n)$ is the space of ordered orthonormal $k\dash$frames in $\RR^n$.
 
 :::
 
 :::{.example title="Lie Groups"}
 Lie Groups:
 
-* The general linear group, $\GL_{n}(\RR)$
-  * The special linear group $SL_{n}(\RR)$
-* The orthogonal group, $O_{n}(\RR)$
-  * The special orthogonal group, $SO_{n}(\RR)$
-* The real unitary group, $U_{n}(\CC)$
-  * The special unitary group, $SU_{n}(\RR)$
-* The symplectic group $Sp(2n)$
+* The general linear group $\GL_n(\RR)$ and special linear group $\SL_n(\RR)$.
+* The orthogonal group $O(n)$ and special orthogonal group $SO(n)$.
+* The unitary group $U(n)$ and special unitary group $SU(n)$, consisting of complex unitary matrices (with determinant $1$ in the special case).
+* The real symplectic group $Sp(2n,\RR)$.
 
 :::
 
-:::{.example title="More random geometric examples"}
-Some other spaces that show up, but don't usually have great algebraic topological properties:
+:::{.example title="Other geometric examples"}
 
-* Affine $n$-space over a field $\Af^n(k) = k^n \semidirect GL_{n}(k)$
+* Affine $n$-space over a field, $\Af^n(k)=k^n$.
+* The affine linear group $\operatorname{AGL}_n(k)=k^n\rtimes \GL_n(k)$.
 * The projective space $\PP^n(k)$
 * The projective linear group over a ring $R$, $PGL_{n}(R)$
 * The projective special linear group over a ring $R$, $PSL_{n}(R)$
@@ -129,7 +125,7 @@ Some other spaces that show up, but don't usually have great algebraic topologic
 :::
 
 :::{.example title="Eilenberg-MacLane Spaces"}
-$K(G, n)$ is an Eilenberg-MacLane space, the homotopy-unique space satisfying 
+For a group $G$ when $n=1$, or an abelian group $G$ when $n\geq2$, an Eilenberg--MacLane space $K(G,n)$ is a connected space satisfying
 \[
 \pi_{k}(K(G, n)) = 
 \begin{cases}
@@ -137,6 +133,7 @@ G & k=n, \\
 0 & \text{else}
 \end{cases}
 \]
+and is unique up to homotopy equivalence.
 
 Some known examples:
 
@@ -147,20 +144,21 @@ Some known examples:
 :::
 
 :::{.example title="Moore Spaces"}
-$M(G, n)$ is a Moore space, the homotopy-unique space satisfying 
+For an abelian group $G$, a Moore space $M(G,n)$ has reduced integral homology concentrated in degree $n$:
 \[
-H_{k}(M(G, n); G) = 
+\widetilde H_{k}(M(G,n);\ZZ) =
 \begin{cases}
 G & k=n, \\ 
 0 & k\neq n.
 \end{cases}
 \]
+Unlike $K(G,n)$, a Moore space is not generally determined up to homotopy equivalence by this condition alone.
 
 Some known examples:
 
 - $M(\ZZ, n) = S^n$
 - $M(\ZZ/2\ZZ, 1) = \RP^2$
-- $M(\ZZ/p\ZZ, n)$ is made by attaching $e^{n+1}$ to $S^n$ via a degree $p$ map.
+- A standard $M(\ZZ/p\ZZ,n)$ is obtained by attaching an $(n+1)$-cell to $S^n$ by a degree-$p$ map.
 
 :::
 
@@ -169,7 +167,7 @@ Some known examples:
 
 - $\MM \homotopic S^1$ where $\MM$ is the Mobius band.
 - $\CP^n = \CC^n \coprod \CP^{n-1} = \coprod_{i=0}^n \CC^i$
-- $\CP^n = S^{2n+1} / S^n$
+- $\CP^n = S^{2n+1}/S^1$ via the Hopf action of $S^1$.
 - $S^n / S^k \homotopic S^n \vee \Sigma S^k$.
 
 :::
@@ -179,7 +177,7 @@ In low dimensions, there are some "accidental" homeomorphisms:
 
 - $\RP^1 \cong S^1$
 - $\CP^1 \cong S^2$
-- $\SO(3) \cong \RP^2$?
+- $\SO(3) \cong \RP^3$
 
 :::
 
@@ -190,9 +188,11 @@ Write $D(k, X)$ for the space $X$ with $k\in \NN$ distinct points deleted, i.e. 
 
 :::
 
-:::{.example title="Bouquets of Spheres"}
-The "generalized uniform bouquet"? $\mathcal{B}^n(m) = \bigvee_{i=1}^n S^m$.
-There's no standard name for this, but it's an interesting enough object to consider!
+:::{.example title="Wedges of spheres"}
+The wedge of $n$ copies of $S^m$ is
+\[
+\bigvee_{i=1}^n S^m.
+\]
 
 :::
 

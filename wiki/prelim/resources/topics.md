@@ -5,7 +5,7 @@ order: 10
 
 # Topics
 
-Topics: [[attachments/UCLA_Basic_Exam_Topics.pdf]]
+[[attachments/UCLA_Basic_Exam_Topics.pdf|UCLA Basic Examination syllabus]]
 
 ## Linear Algebra
 
