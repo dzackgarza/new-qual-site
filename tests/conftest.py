@@ -54,6 +54,9 @@ def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
     work = tmp_path / "repo"
     for sub in ("vocabularies", "site"):
         shutil.copytree(ROOT / sub, work / sub)
+    table_script = ROOT / "assets" / "scripts" / "catalog-tables.js"
+    (work / "assets" / "scripts").mkdir(parents=True)
+    shutil.copy(table_script, work / "assets" / "scripts" / table_script.name)
     shutil.copytree(FIXTURE_CORPUS, work / "corpus")
     (work / "publications").mkdir()
     write_subject_branches(work)

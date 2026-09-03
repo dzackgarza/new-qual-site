@@ -11,7 +11,6 @@ from __future__ import annotations
 
 import html
 import json
-import re
 import sqlite3
 from pathlib import Path
 
@@ -149,27 +148,48 @@ def test_every_collection_problem_is_exposed_by_the_central_source_order_index(t
 def test_the_filters_offer_every_value_problem_appearances_carry(tmp_path: Path) -> None:
     """A facet value a problem appearance carries and the browser omits hides that problem."""
     site, con = built(tmp_path)
-    page = (site / "problems.html").read_text()
+    payload = json.loads((site / "problems.json").read_text())
+    rows = payload["rows"]
 
-    carried_by_axis = {
-        "area": {r[0] for r in con.execute("select distinct term from classifications where axis='area'")},
-        "topic": {r[0] for r in con.execute("select distinct term from classifications where axis='topic'")},
-        "source_kind": {
-            r[0]
-            for r in con.execute(
-                "select distinct s.source_kind from sources s join collection_problems cp on cp.collection_id=s.id join cards c on c.id=cp.problem_id where c.kind='problem'"
-            )
-        },
-        "institution": {r[0].upper() for r in con.execute("select distinct institution from exam_sources")},
-        "year": {str(r[0]) for r in con.execute("select distinct year from sources where year is not null")},
-        "collection": {r[0] for r in con.execute("select distinct cp.collection_id from collection_problems cp join cards c on c.id=cp.problem_id where c.kind='problem'")},
+    problem_ids = {row["id"] for row in rows}
+    assert problem_ids == {r[0] for r in con.execute("select id from cards where kind='problem'")}
+
+    carried_areas = {r[0] for r in con.execute("select distinct cl.term from classifications cl join cards c on c.id=cl.card_id where c.kind='problem' and cl.axis='area'")}
+    carried_topics = {r[0] for r in con.execute("select distinct cl.term from classifications cl join cards c on c.id=cl.card_id where c.kind='problem' and cl.axis='topic'")}
+    carried_source_kinds = {
+        r[0]
+        for r in con.execute(
+            "select distinct s.source_kind from sources s join collection_problems cp on cp.collection_id=s.id join cards c on c.id=cp.problem_id where c.kind='problem'"
+        )
     }
-    for axis, carried in carried_by_axis.items():
-        control = re.search(rf'<select id="listing-{axis}".*?</select>', page, re.DOTALL)
-        assert control is not None, f"the browser must offer a {axis} filter"
-        offered = {html.unescape(v) for v in re.findall(r'<option value="([^"]*)"', control.group(0))}
-        assert carried <= offered, f"{axis}: {sorted(carried - offered)} carried but not offered"
+    carried_collections = {r[0] for r in con.execute("select distinct cp.collection_id from collection_problems cp join cards c on c.id=cp.problem_id where c.kind='problem'")}
+    carried_institutions = {
+        r[0].upper()
+        for r in con.execute(
+            "select distinct e.institution from exam_sources e join collection_problems cp on cp.collection_id=e.id join cards c on c.id=cp.problem_id where c.kind='problem'"
+        )
+    }
+    carried_years = {
+        str(r[0])
+        for r in con.execute(
+            """
+            select distinct s.year
+            from sources s
+            join collection_problems cp on cp.collection_id=s.id
+            join cards c on c.id=cp.problem_id
+            where c.kind='problem' and s.year is not null
+            """
+        )
+    }
 
-    app = (site / "app.js").read_text()
-    assert 'heading.className = "listing-section"' in app
-    assert "collection-problems.json" in app
+    assert carried_areas <= set(payload["areaNames"])
+    assert carried_source_kinds <= set(payload["sourceKindNames"])
+    assert carried_collections <= set(payload["collectionNames"])
+    assert carried_topics <= {topic for row in rows for topic in row["topics"]}
+    assert carried_institutions <= {institution for row in rows for institution in row["institutions"]}
+    assert carried_years <= {year for row in rows for year in row["years"]}
+
+    table_script = (site / "assets" / "scripts" / "catalog-tables.js").read_text()
+    assert "searchPanes" in table_script
+    assert "preSelect" in table_script
+    assert "collection-problems.json" in table_script

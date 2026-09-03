@@ -13,7 +13,7 @@ import pytest
 from conftest import fixture_repo, run_qualc
 from qualc.emit import mathjax_header
 from qualc.static_site import Listing, StandardPage, build_asset_catalog, write_page
-from test_invariants import Element, read_html
+from test_invariants import read_html
 
 LISTING_KEY = re.compile(r'data-pagefind-sort="listing:([^"]*)"')
 
@@ -391,11 +391,14 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
     assert prose.startswith("algebra|"), prose
     assert prose < formula, (prose, formula)
 
-    # The page carries the controls and nothing else: the rows come from the
-    # index, a page of them at a time.
+    # DataTables owns presentation; the build supplies data and a stable sort key.
     page = (site / "problems.html").read_text()
-    assert 'id="listing-results"' in page
+    assert 'id="problem-table"' in page
     assert "listing-row" not in page
+    table_data = json.loads((site / "problems.json").read_text())
+    keyed = {row["id"]: row["order"] for row in table_data["rows"]}
+    assert keyed["P-PACKET-1"] == prose
+    assert keyed["P-PACKET-2"] == formula
 
 
 def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) -> None:
@@ -425,43 +428,45 @@ def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) 
         assert f'data-pagefind-filter="source_kind:{kind}"' in page, route
         assert "data-pagefind-body" in page, route
 
-    offered = read_html(site / "exams.html").root.find_all("select", id="listing-source_kind")[0]
-    assert {option.attrs["value"] for option in offered.find_all("option")} == set(filed.values())
+    source_rows = json.loads((site / "sources.json").read_text())["rows"]
+    assert {row["sourceKind"] for row in source_rows} == {
+        "University exams",
+        "Compiled scans",
+        "Homework sets",
+        "Textbooks",
+    }
 
 
-def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> None:
+def test_problem_browser_uses_datatables_searchpanes(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
 
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
-    filters = page.root.find_all("div", **{"class": "listing-filters"})
-    assert len(filters) == 1
-    labels = [child for child in filters[0].children if isinstance(child, Element) and child.tag == "label"]
-    controls = [[child.tag for child in label.children if isinstance(child, Element)] for label in labels]
-    assert controls == [["input"], ["select"], ["select"], ["select"], ["select"], ["select"], ["select"]]
-    assert [select.attrs["id"] for select in page.root.find_all("select") if select.attrs.get("id", "").startswith("listing-")] == [
-        "listing-area",
-        "listing-topic",
-        "listing-source_kind",
-        "listing-institution",
-        "listing-year",
-        "listing-collection",
-    ]
+    assert len(page.root.find_all("table", id="problem-table")) == 1
+    markup = (work / "build" / "quarto" / "_site" / "problems.html").read_text()
+    assert "dataTables.dataTables.min.css" in markup
+    assert "searchPanes.dataTables.min.css" in markup
+    assert "dataTables.searchPanes.min.js" in markup
+    assert "assets/scripts/catalog-tables.js" in html.unescape(markup)
+    assert "listing-filters" not in markup
     assert len(page.root.find_all("button", id="practice-sample")) == 1
     assert len(page.root.find_all("button", id="practice-print")) == 1
 
 
-def test_show_more_advances_to_the_newly_appended_results(tmp_path: Path) -> None:
-    """Appending rows above the button must not make a click look inert."""
+def test_problem_pagination_is_library_owned(tmp_path: Path) -> None:
+    """There is no bespoke Show-more implementation beside DataTables paging."""
     work = fixture_repo(tmp_path)
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
     app = (work / "build" / "quarto" / "_site" / "app.js").read_text()
-    assert 'moreButton.addEventListener("click", showMore);' in app
-    assert 'firstNewRow?.scrollIntoView({ block: "start", behavior: "instant" });' in app
+    table_script = (work / "build" / "quarto" / "_site" / "assets" / "scripts" / "catalog-tables.js").read_text()
+    assert "listing-more" not in (work / "build" / "quarto" / "_site" / "problems.html").read_text()
+    assert "moreButton" not in app
+    assert "pageLength: 50" in table_script
+    assert 'bottomEnd: "paging"' in table_script
 
 
 def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> None:
@@ -483,16 +488,15 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
 
     site = work / "build" / "quarto" / "_site"
 
-    select = read_html(site / "problems.html").root.find_all("select", id="listing-area")[0]
-    browse = [(option.attrs["value"], option.text) for option in select.find_all("option")]
-    assert browse == [("algebra", "Abstract Algebra")]
+    browser_data = json.loads((site / "problems.json").read_text())
+    assert browser_data["areaNames"]["algebra"] == "Abstract Algebra"
 
     legacy = (site / "generate.html").read_text()
     assert "location.replace(target.href)" in legacy
     assert 'new URL("problems.html",document.baseURI)' in legacy
 
-    # There is no second area vocabulary on a generator page: the one browser
-    # control above owns both matching ids and their display names.
+    # There is no second area vocabulary on a generator page: the browser data
+    # above owns both matching ids and their display names.
 
 
 def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) -> None:

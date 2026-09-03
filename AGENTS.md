@@ -407,6 +407,14 @@ ordering, random sampling, and print/PDF. Do not add a second problem-list or
 practice-set renderer to guides, wiki pages, collection pages, or another site
 route.
 
+The catalog UI itself is standard infrastructure: Problems and Sources are
+DataTables 2 tables with SearchPanes for faceted filtering and RowGroup where
+source sections need grouping. Do not hand-roll pagination, facet controls,
+facet counts, table search, or result-row lifecycle in `app.js`; `app.js` owns
+site-wide Pagefind search only. Project code may adapt corpus rows into the
+library and add domain actions such as sampling the currently filtered problem
+set.
+
 - A guide section or topical wiki page owns ordinary `topics:` metadata. The
   renderer automatically adds one `problems.html` link with the page's subject
   area and topics prefilled. Do not add `query:` items to guide manifests or a

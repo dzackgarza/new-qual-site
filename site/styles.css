@@ -429,9 +429,7 @@ mjx-container[display="true"] {
     figure,
     table,
     mjx-container[display="true"],
-    .listing,
-    .listing-row,
-    .listing-filters
+    .dt-container
   ) {
   max-width: 100%;
 }
@@ -732,54 +730,18 @@ mjx-container[display="true"] {
   overflow-wrap: anywhere;
 }
 
-.listing {
-  display: grid;
-  gap: 0.45rem;
-  margin-top: 1rem;
-  /* The rows are list items now: the index answers with a list of results,
-     where the page used to hold every row and hide most of them. */
-  padding-left: 0;
-  list-style: none;
-  /* A row's three columns fit or they do not, and what decides that is the
-     width of this list, not the width of the window: the on-this-page rail
-     takes a fixed slice of the page above 56rem and none below it. A viewport
-     query cannot see that. */
-  container-type: inline-size;
-}
-
-.listing-filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
-  gap: 0.65rem;
-  align-items: start;
+.catalog-table {
   margin-top: 1rem;
 }
 
-.listing-filters label {
-  color: var(--muted);
-  font-size: var(--label);
-  font-weight: 650;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.dt-container {
+  margin-top: 1rem;
 }
 
-.listing-filters input,
-.listing-filters select {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 0.25rem;
-  padding: 0.45rem;
-  border: 1px solid var(--line);
-  border-radius: 0.25rem;
-  background: var(--paper);
-  color: var(--ink);
-}
-
-.listing-filters output {
-  grid-column: 1 / -1;
-  color: var(--muted);
-  font-size: 0.85rem;
+#problem-table td:nth-child(2) {
+  min-width: 8rem;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .practice-actions {
@@ -809,8 +771,7 @@ mjx-container[display="true"] {
   color: var(--ink);
 }
 
-.practice-actions button,
-.listing-more {
+.practice-actions button {
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--line);
   border-radius: 0.3rem;
@@ -858,58 +819,6 @@ mjx-container[display="true"] {
   color: var(--muted);
   font-size: var(--label);
   font-style: italic;
-}
-
-.listing-section {
-  margin-top: 1.25rem;
-  padding-top: 0.5rem;
-}
-
-.listing-section h2 {
-  margin: 0;
-  font-size: 1.05rem;
-}
-
-.listing-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(12rem, 1fr);
-  gap: 1rem;
-  padding: 0.75rem 0.85rem;
-  border: 1px solid var(--line);
-  border-radius: 0.35rem;
-}
-
-.listing-row > p {
-  margin: 0;
-}
-
-.listing-row > p:last-child {
-  color: var(--muted);
-  font-size: var(--label);
-  text-align: right;
-}
-
-/* Below this the facets and sources need 21rem of the row's width and the
-   title is left with what is over, which was a title broken one letter to a
-   line. Stack instead. */
-@container (max-width: 44rem) {
-  .listing-row {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.3rem;
-  }
-
-  .listing-row > p:last-child {
-    text-align: left;
-  }
-}
-
-.listing-group h2 {
-  margin-top: 2rem;
-}
-
-.listing-row[hidden],
-.listing-group[hidden] {
-  display: none;
 }
 
 .quarto-title .subtitle {
@@ -1352,18 +1261,6 @@ div.panel > ul {
     width: min(100% - 1.25rem, 45rem);
   }
 
-  .listing-filters {
-    grid-template-columns: 1fr;
-  }
-
-  .listing-row {
-    grid-template-columns: 1fr;
-  }
-
-  .listing-row > p:last-child {
-    text-align: left;
-  }
-
   /* The detail is the only thing separating two rows that both read
      "Algebra / Page", so the narrow layout stacks it under the title instead
      of dropping it. */
@@ -1431,12 +1328,11 @@ div.panel > ul {
   .page-toc-narrow,
   .subject-sidebar,
   .search-dialog,
-  .search-open,
-  .listing-filters {
+  .search-open {
     display: none;
   }
 
-  body.printing-practice :is(.page-heading, .listing, .listing-more, .practice-actions, .site-footer) {
+  body.printing-practice :is(.page-heading, .dt-container, .practice-actions, .site-footer) {
     display: none;
   }
 

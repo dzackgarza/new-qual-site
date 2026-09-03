@@ -180,16 +180,19 @@ def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirec
 
     site = work / "build" / "quarto" / "_site"
     browser = read_html(site / "problems.html")
-    topics = browser.root.find_all("select", id="listing-topic")[0]
-    assert "multiple" in topics.attrs
+    assert len(browser.root.find_all("table", id="problem-table")) == 1
     assert len(browser.root.find_all("button", id="practice-sample")) == 1
     assert len(browser.root.find_all("button", id="practice-print")) == 1
     assert len(browser.root.find_all("section", id="practice-sheet")) == 1
 
-    app = (site / "app.js").read_text()
-    assert "params.getAll(axis)" in app
-    assert "filters[axis] = { any: values };" in app
-    assert "collection-problems.json" in app
+    markup = (site / "problems.html").read_text()
+    assert "dataTables.searchPanes.min.js" in markup
+    table_script = (site / "assets" / "scripts" / "catalog-tables.js").read_text()
+    assert "preSelect" in table_script
+    assert ".getAll(key)" in table_script
+    assert "collection-problems.json" in table_script
+    assert "pageLength: 50" in table_script
+    assert "listing-more" not in markup
 
     legacy = (site / "generate.html").read_text()
     assert 'new URL("problems.html",document.baseURI)' in legacy

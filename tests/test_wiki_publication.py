@@ -240,6 +240,9 @@ def fixture_repo(tmp_path: Path) -> Path:
     assets = work / "assets" / "figures"
     assets.mkdir(parents=True)
     (assets / "diagram.png").write_bytes(b"fixture image")
+    scripts = work / "assets" / "scripts"
+    scripts.mkdir()
+    shutil.copy(ROOT / "assets" / "scripts" / "catalog-tables.js", scripts / "catalog-tables.js")
     wiki = work / "wiki"
     wiki.mkdir()
     (wiki / "index.md").write_text(wiki_md("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n"))

@@ -2017,129 +2017,59 @@ def index_page(
 
 # Separates multi-valued facet terms in HTML data attributes. Topics are free
 # strings and may contain spaces, so space is not a usable delimiter.
-FACET_SEP = "|"
+DATATABLES_ASSETS = """
+<link rel="stylesheet" href="https://cdn.datatables.net/2.3.8/css/dataTables.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/searchpanes/2.3.5/css/searchPanes.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/select/3.1.3/css/select.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/rowgroup/1.6.0/css/rowGroup.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/2.3.8/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/select/3.1.3/js/dataTables.select.min.js"></script>
+<script src="https://cdn.datatables.net/searchpanes/2.3.5/js/dataTables.searchPanes.min.js"></script>
+<script src="https://cdn.datatables.net/rowgroup/1.6.0/js/dataTables.rowGroup.min.js"></script>
+"""
 
 
-def _facet_terms(joined: str | None) -> list[str]:
-    return [term for term in (joined or "").split(FACET_SEP) if term]
-
-
-def _facet_option_label(
-    axis: str,
-    value: str,
-    area_names: dict[str, str],
-    collection_names: dict[str, str] | None = None,
-) -> str:
-    """What to call one facet value on screen."""
-    if axis == "area":
-        return area_names[value]
-    if axis == "source_kind":
-        return SOURCE_KIND_HEADINGS[value]
-    if axis == "collection" and collection_names is not None:
-        return collection_names[value]
-    return value
-
-
-def _listing_markup(
-    noun: str,
-    placeholder: str,
-    facet_values: dict[str, list[str]],
-    area_names: dict[str, str],
-    kind: str,
-    collection_names: dict[str, str] | None = None,
-) -> str:
-    """Shared controls and result list for one index-backed listing."""
-    facet_controls = "".join(
-        f'<label for="listing-{axis}">{axis.replace("_", " ").title()}'
-        f'<select id="listing-{axis}" multiple size="5" data-facet="{axis}">'
-        + "".join(
-            f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value, area_names, collection_names))}</option>' for value in values
-        )
-        + "</select></label>"
-        for axis, values in facet_values.items()
-    )
-    return (
-        f'<div class="listing-filters" data-listing-kind="{html.escape(kind, quote=True)}">'
-        '<label for="listing-search">Search'
-        f'<input id="listing-search" type="search" data-noun="{html.escape(noun, quote=True)}"'
-        f' placeholder="{html.escape(placeholder, quote=True)}">'
-        "</label>"
-        + facet_controls
-        + '<output id="listing-count" aria-live="polite"></output></div>'
-        + '<ol class="listing" id="listing-results"></ol>'
-        + '<button class="listing-more" id="listing-more" type="button" hidden>Show more</button>'
-    )
-
-
-def _listing_filters(
-    noun: str,
-    placeholder: str,
-    facet_values: dict[str, list[str]],
-    area_names: dict[str, str],
-    kind: str,
-) -> pf.RawBlock:
-    """A plain index-backed listing, used for source discovery."""
+def _data_table(table_id: str, headings: tuple[str, ...]) -> pf.RawBlock:
+    """One standard DataTables shell; rows and controls are library-owned."""
+    header = "".join(f"<th>{html.escape(heading)}</th>" for heading in headings)
     return pf.RawBlock(
-        _listing_markup(noun, placeholder, facet_values, area_names, kind),
+        DATATABLES_ASSETS
+        + f'<table id="{html.escape(table_id, quote=True)}" class="display catalog-table" style="width:100%">'
+        + f"<thead><tr>{header}</tr></thead></table>"
+        + '<script src="assets/scripts/catalog-tables.js"></script>',
         format="html",
     )
 
 
-def _problem_listing_filters(
-    facet_values: dict[str, list[str]],
-    area_names: dict[str, str],
-    collection_names: dict[str, str],
-) -> pf.RawBlock:
-    """The canonical problem browser adds sampling and print to the shared listing."""
-    listing = _listing_markup(
-        "problem",
-        "Group theory, UGA, 2019…",
-        facet_values,
-        area_names,
-        "problem",
-        collection_names,
-    )
-    practice = (
+def _practice_controls() -> pf.RawBlock:
+    return pf.RawBlock(
         '<div class="practice-actions">'
         '<label for="practice-count">Random sample'
         '<input id="practice-count" type="number" min="1" max="100" value="8"></label>'
-        '<button id="practice-sample" type="button">Sample from these results</button>'
+        '<button id="practice-sample" type="button">Sample from filtered rows</button>'
         '<button id="practice-print" type="button" disabled>Print / PDF sample</button>'
         "</div>"
-        '<section id="practice-sheet" class="practice-sheet" hidden></section>'
+        '<section id="practice-sheet" class="practice-sheet" hidden></section>',
+        format="html",
     )
-    # Put the practice controls before the result list so the action is visible
-    # without scrolling through the current matches.
-    marker = '<ol class="listing" id="listing-results"></ol>'
-    return pf.RawBlock(listing.replace(marker, practice + marker), format="html")
 
 
 def problem_browser_page(
     con: sqlite3.Connection,
     area_names: dict[str, str],
 ) -> Page:
-    """The one problem browser: browse, refine, sample, and print."""
-    collection_names = {row["id"]: row["title"] for row in _rows(con, "select id, title from cards where kind='collection'")}
-    appearing_source_kinds = {
-        row["source_kind"]
-        for row in _rows(
-            con,
-            "select distinct s.source_kind from sources s join collection_problems cp on cp.collection_id=s.id",
-        )
-    }
-    facet_values = {
-        "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
-        "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
-        "source_kind": [kind for kind in SOURCE_KIND_HEADINGS if kind in appearing_source_kinds],
-        "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
-        "year": sorted({str(row["year"]) for row in _rows(con, "select distinct year from sources where year is not null")}),
-        "collection": sorted(collection_names, key=lambda card_id: (collection_names[card_id], card_id)),
-    }
+    """The one problem browser, rendered by DataTables + SearchPanes."""
+    del con, area_names
     return {"title": "Problems"}, [
         pf.Para(
-            pf.Str("Every problem in the corpus. Filter the live result set, open a source in its exact order, or draw a printable random sample from the current results.")
+            pf.Str("Every problem in the corpus. Filter with the facet panes, search or paginate the table, or draw a printable random sample from the filtered rows.")
         ),
-        _problem_listing_filters(facet_values, area_names, collection_names),
+        _practice_controls(),
+        _data_table(
+            "problem-table",
+            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Order"),
+        ),
     ]
 
 
@@ -2196,6 +2126,90 @@ def collection_problem_index(
             }
         )
     return collections
+
+
+def problem_table_data(
+    con: sqlite3.Connection,
+    data: CardPageData,
+    area_names: dict[str, str],
+) -> dict[str, object]:
+    """Problem rows for DataTables; all interactive behavior stays in the library."""
+    collection_names = {row["id"]: row["title"] for row in _rows(con, "select id, title from cards where kind='collection'")}
+    rows: list[dict[str, object]] = []
+    for card in _rows(con, "select * from cards where kind='problem' order by id"):
+        facets = _page_rows(data.facets, card["id"])
+        area_ids = _page_terms(data, card["id"], "area")
+        topics = _page_terms(data, card["id"], "topic")
+        source_kinds = sorted({row["source_kind"] for row in facets})
+        institutions = sorted({row["institution"].upper() for row in facets if row["institution"]})
+        years = sorted({str(row["source_year"]) for row in facets if row["source_year"] is not None})
+        collections = sorted({collection_names[row["collection_id"]] for row in facets})
+        source_bits = institutions or [SOURCE_KIND_HEADINGS[kind] for kind in source_kinds]
+        if years:
+            source_bits = [*source_bits, ", ".join(years)]
+        rows.append(
+            {
+                "id": card["id"],
+                "title": card["title"],
+                "url": f"tag/{card['id']}.html",
+                "source": " · ".join(source_bits) if source_bits else "Unclassified",
+                "topics": topics,
+                "areas": [area_names[area] for area in area_ids],
+                "sourceKinds": [SOURCE_KIND_HEADINGS[kind] for kind in source_kinds],
+                "institutions": institutions,
+                "years": years,
+                "collections": collections,
+                "section": "",
+                "order": _listing_sort(data, card),
+            }
+        )
+    return {
+        "areaNames": area_names,
+        "sourceKindNames": SOURCE_KIND_HEADINGS,
+        "collectionNames": collection_names,
+        "rows": rows,
+    }
+
+
+def source_table_data(
+    con: sqlite3.Connection,
+    data: CardPageData,
+    area_names: dict[str, str],
+) -> dict[str, object]:
+    """Source rows for the standard source catalog table."""
+    rows: list[dict[str, object]] = []
+    sources = _rows(
+        con,
+        f"""
+        select c.id, c.title, c.route, s.source_kind, s.year, s.term,
+          coalesce(e.institution, '') as institution,
+          coalesce(e.area, '') as exam_area,
+          {TERM_RANK} as term_rank,
+          (select count(*) from collection_problems cp where cp.collection_id=c.id) as problems,
+          (select count(*) from collection_problems cp
+             where cp.collection_id=c.id
+               and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
+        from cards c join sources s on s.id=c.id
+        left join exam_sources e on e.id=s.id
+        order by c.id
+        """,
+    )
+    for row in sources:
+        area_ids = _page_terms(data, row["id"], "area")
+        rows.append(
+            {
+                "id": row["id"],
+                "title": row["title"],
+                "url": f"{row['route']}/{row['id']}.html",
+                "sourceKind": SOURCE_KIND_HEADINGS[row["source_kind"]],
+                "areas": [area_names[area] for area in area_ids],
+                "institution": row["institution"].upper() if row["institution"] else "",
+                "year": str(row["year"]) if row["year"] is not None else "",
+                "worked": f"{row['solved']} / {row['problems']} solved" if row["problems"] else "No problems listed",
+                "order": f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['exam_area']}",
+            }
+        )
+    return {"areaNames": area_names, "sourceKindNames": SOURCE_KIND_HEADINGS, "rows": rows}
 
 
 # Every source kind a collection can declare, in the order a reader meets them,
@@ -2281,15 +2295,10 @@ def source_index_page(
     if unlisted:
         raise ValueError(f"source kinds with no heading on the source index: {sorted(unlisted)}")
 
-    facet_values = {
-        "source_kind": [kind for kind in SOURCE_KIND_HEADINGS if any(row["source_kind"] == kind for row in collections)],
-        "area": sorted({row["area"] for row in collections if row["area"]}),
-        "institution": sorted({row["institution"].upper() for row in collections if row["institution"]}),
-        "year": sorted({str(row["year"]) for row in collections if row["year"] is not None}),
-    }
+    del area_names
     blocks: list[pf.Block] = [
         pf.Para(pf.Str(f"Every collection the corpus draws problems from: {len(collections)} in all.")),
-        _listing_filters("source", "UGA, topology, 2019…", facet_values, area_names, "collection"),
+        _data_table("source-table", ("Source", "Type", "Area", "Institution", "Year", "Worked", "Order")),
     ]
     return {"title": "Sources"}, blocks
 
@@ -2499,6 +2508,8 @@ def project(
     jcache, api = load_json(con)
     card_page_data = load_card_page_data(con)
     (site_root / "collection-problems.json").write_text(json.dumps(collection_problem_index(con, card_page_data), ensure_ascii=False, separators=(",", ":")) + "\n")
+    (site_root / "problems.json").write_text(json.dumps(problem_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
+    (site_root / "sources.json").write_text(json.dumps(source_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = asked_json(
