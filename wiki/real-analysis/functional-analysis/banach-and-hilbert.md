@@ -9,6 +9,14 @@ problems:
 
 # Banach and Hilbert spaces
 
+A Banach space is complete for its norm; a Hilbert space is complete for a norm coming from an inner product.
+Completeness is what makes Cauchy approximation arguments land inside the space.
+The inner product adds orthogonality, projections, Fourier coefficients, and the identification of continuous linear functionals with vectors.
+Thus every Hilbert space is Banach, but the extra geometry is the part used in proofs.
+
+For an orthonormal basis $(e_n)$, Bessel gives $\sum |\langle x,e_n\rangle|^2\le\|x\|^2$ and Parseval upgrades this to equality when the system is complete.
+Riesz--Fischer is the converse existence statement behind the coefficient description, while Riesz representation says every continuous functional on a Hilbert space is $x\mapsto\langle x,y\rangle$ for a unique $y$ (with the convention for which variable is linear fixed once and for all).
+
 [[PR-L35O7]]
 
 [[PR-WS6NT]]
@@ -28,5 +36,5 @@ problems:
 ::: {.remark title="What the inner product buys"}
 A norm coming from an inner product satisfies the parallelogram law, and that is exactly the condition -- so a problem asking whether a given space is a Hilbert space is asking you to test the parallelogram law, usually on two well-chosen functions.
 
-Of the $L^p$ scale only $L^2$ satisfies the parallelogram law; for $p\neq 2$, Hilbert-space arguments using orthogonal projection and inner products are unavailable.
+On any measure space containing two disjoint measurable sets of positive finite measure, $L^p$ satisfies the parallelogram law only for $p=2$: normalized indicators of the two sets already give the counterexample for $p\neq2$ (and for $p=\infty$).  Thus in the standard nondegenerate $L^p$ settings, Hilbert-space arguments using orthogonal projection and inner products are special to $L^2$.
 :::

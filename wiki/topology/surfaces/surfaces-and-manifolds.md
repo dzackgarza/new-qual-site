@@ -32,6 +32,13 @@ The first 4 can be obtained from the following pasting diagrams:
 
 ### The Classification Theorem
 
+For a compact connected surface, first count its boundary components and decide
+orientability.  The classification theorem then reduces the surface to one of two
+normal forms: an orientable genus-$g$ surface with $b$ discs removed, or a
+nonorientable connected sum of $k$ projective planes with $b$ discs removed.  Polygon
+models are the concrete reduction procedure: cut to a polygon, simplify the edge word,
+and read off handles or crosscaps together with the unpaired boundary components.
+
 [[T-NBARV]]
 
 [[FF-GBHJL]]
@@ -42,10 +49,11 @@ The first 4 can be obtained from the following pasting diagrams:
 
 [[PR-ZW6XI]]
 
-:::{.remark}
-Examples, general procedure?
-
-:::
+For closed surfaces $b=0$, orientability and Euler characteristic determine the
+homeomorphism type.  With boundary present, $b$ is an additional invariant: for
+example, the torus and annulus both have Euler characteristic zero but are not
+homeomorphic.  This is why the classification step precedes the Euler-characteristic
+lookup below.
 
 ### Euler Characteristic
 

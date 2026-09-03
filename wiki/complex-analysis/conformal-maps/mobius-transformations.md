@@ -28,12 +28,15 @@ Every tangent vector at $z_0$ is rotated by approximately the same angle, so the
 :::
 
 :::{.fact title="Checking conformality"}
-It suffices to check $f'(p)\neq 0$.
+Once holomorphy is known, it suffices to check $f'(p)\neq 0$.
 
 :::
 
 :::{.warnings}
-The condition $f'\neq 0$ alone does not force holomorphy, since an antiholomorphic map can have nonvanishing derivative: $f(z) = \bar z$ sends $x+iy \mapsto x-iy$ and fails the Cauchy–Riemann equations.
+Do not replace complex differentiability by invertibility of the real derivative.  The
+map $f(z)=\bar z$ has an invertible real Jacobian, but it fails the Cauchy--Riemann
+equations, has no complex derivative, and reverses orientation.  Thus the test
+$f'(z)\neq0$ presupposes that \(f\) is holomorphic.
 
 :::
 
@@ -84,6 +87,18 @@ A Möbius transformation fixing three points is the identity, which is the uniqu
 
 ## Classification and standard images
 
+The standard maps are best remembered as a small composition toolkit rather than as a
+table of unrelated formulas.  Möbius transformations move discs and half-planes while
+preserving generalized circles; power maps multiply arguments and therefore open or
+close sectors; a chosen logarithm branch turns angular width into vertical width and
+maps sectors to strips; exponentials reverse that last step.  Most exam maps are a
+composition of two or three of these operations, chosen by following the boundary.
+
+The Cayley transform is the basic disc/half-plane bridge.  After moving a distinguished
+interior point to \(0\), disc automorphisms give the remaining normalization freedom;
+the Riemann mapping theorem says that for a simply connected proper domain some such
+biholomorphism with the disc exists even when no elementary formula is available.
+
 [[T-77SHB]]
 
 [[T-MEWTS]]
@@ -93,6 +108,12 @@ A Möbius transformation fixing three points is the identity, which is the uniqu
 [[T-2KGOX]]
 
 [[PR-FL6T7]]
+
+For explicit polygonal-looking domains, work with angles.  A power \(z^\alpha\) sends a
+sector of opening \(\theta\) to one of opening \(\alpha\theta\); once a sector has been
+straightened to a half-plane, use Cayley to reach the disc.  If the target is a strip,
+choose a logarithm branch whose argument interval is exactly the desired vertical
+interval.
 
 :::{.remark}
 The map $z\mapsto {z-i\over z+i}$ that is sometimes written instead is the composition of the above with $z\mapsto -z$:

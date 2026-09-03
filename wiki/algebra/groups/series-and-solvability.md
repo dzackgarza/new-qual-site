@@ -9,6 +9,16 @@ problems:
 
 # Series and solvability
 
+Series turn global structure into successive quotients.
+Composition series ask that the factors be simple; central and derived series instead measure how far the group is from being nilpotent or solvable.
+On a qual, the point is rarely to write down a chain for its own sake: the factors or the point at which a canonical series terminates are the invariants used in the next step.
+
+## Normal and composition series
+
+A composition series is a maximal refinement of a normal series with simple factors.
+Jordan--Hölder says that although the chain is not unique, the multiset of simple composition factors is.
+This is the group-theoretic analogue of factoring an object into irreducible pieces.
+
 [[D-KM2DV]]
 
 [[D-5NV3N]]
@@ -22,6 +32,11 @@ problems:
 [[D-T2NZ4]]
 
 [[FD-2UWAQ]]
+
+## Central and derived series
+
+The lower and upper central series detect nilpotence from opposite directions; the derived series repeatedly replaces a group by its commutator subgroup and detects solvability.
+These are canonical series, so unlike a composition series there is no choice once the group is fixed.
 
 [[D-D7L4X]]
 
@@ -77,7 +92,9 @@ For $G$ a finite group, TFAE:
 \envlist
 
 - Subgroups and quotient groups of nilpotent groups are nilpotent, but extensions of nilpotent groups need not be nilpotent (e.g., $S_3$ has normal subgroup $A_3 \cong C_3$ and quotient $S_3/A_3 \cong C_2$, both nilpotent, but $S_3$ is not nilpotent).
+
 - In contrast, solvable groups satisfy the two-out-of-three property: if $N \trianglelefteq G$, then $G$ is solvable if and only if both $N$ and $G/N$ are solvable.
+
 - A finite nilpotent group $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$.
 :::
 

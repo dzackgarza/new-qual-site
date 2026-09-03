@@ -9,6 +9,14 @@ problems:
 
 # The standard families
 
+These are the model groups to test every general statement against.
+Cyclic groups are the completely arithmetic case; dihedral and quaternion groups are the first recurring nonabelian examples; symmetric and alternating groups supply permutation actions and simple groups; finite $p$-groups are where center and Sylow arguments are strongest.
+
+## Nonabelian models and $p$-groups
+
+Know the presentations and obvious normal subgroups of the dihedral and quaternion families well enough to produce examples without recomputing them.
+A transitive subgroup should be read through its action, while a $p$-group should immediately suggest the class equation, a nontrivial center, and induction on the group order.
+
 [[D-4R2Z5]]
 
 [[D-KRKV7]]

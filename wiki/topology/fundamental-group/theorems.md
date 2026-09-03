@@ -23,7 +23,9 @@ X\cross \RR^n \homotopic X \cross \pt \cong X
 :::
 
 :::{.fact title="$\pi_0, H_0$ detect path components"}
-The ranks of $\pi_{0}$ and $H_{0}$ are the number of path components.
+$\pi_0(X)$ is the set of path components of $X$, while $H_0(X;\ZZ)$ is the free
+abelian group on those path components.  Thus if $X$ has finitely many path components,
+$\operatorname{rank}H_0(X;\ZZ)=|\pi_0(X)|$.
 
 :::
 
@@ -114,7 +116,14 @@ $\Leftarrow$: Suppose $\pi_{1}(X) = 0$. Then there is just one element in the fu
 :::
 
 :::{.fact}
-For a graph $G$, we always have $\pi_{1}(G) \cong \ZZ^n$ where $n = |E(G - T)|$, the complement of the set of edges in any maximal tree. Equivalently, $n = 1-\chi(G)$. Moreover, $X \homotopic \bigvee^n S^1$ in this case.
+For a finite connected graph $G$ and a maximal tree $T\subseteq G$,
+\[
+\pi_1(G)\cong F_n,
+\qquad
+n=|E(G\setminus T)|=1-\chi(G),
+\]
+where $F_n$ is the free group of rank $n$.  Equivalently,
+$G\homotopic\bigvee^n S^1$, and hence $H_1(G;\ZZ)\cong\ZZ^n$.
 
 :::
 

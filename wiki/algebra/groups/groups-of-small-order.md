@@ -14,6 +14,10 @@ The general classifications for orders $p$, $p^2$ and $pq$ give the shape of the
 
 ## Groups of special orders
 
+Prime and prime-square orders are controlled before any case-by-case presentation is needed: groups of order \(p\) are cyclic, and groups of order \(p^2\) are abelian.
+For order \(pq\), the Sylow counts determine when the larger-prime Sylow subgroup is normal and hence when a semidirect-product description is available.
+The remaining lemmas in this block are the structural shortcuts used when the order has more prime factors: normal-subgroup arguments, solvability of \(p\)-groups, and Frattini-type reductions should be tried before enumerating presentations.
+
 [[PR-LFGHA]]
 
 [[PR-IGLFV]]
@@ -29,6 +33,9 @@ The general classifications for orders $p$, $p^2$ and $pq$ give the shape of the
 [[PR-2ZOAV]]
 
 ## The small orders
+
+Read these entries as outputs of those arguments, not as independent facts to prove by memorization.
+For a concrete order, first classify the abelian possibilities from the finite-abelian structure theorem, then use Sylow counts and conjugation actions to restrict the nonabelian possibilities; only then compare with the recorded list.
 
 [[FF-VAKLJ]]
 

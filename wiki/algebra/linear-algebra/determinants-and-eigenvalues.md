@@ -14,6 +14,15 @@ problems:
 
 ## Definitions
 
+The definitions here split into two themes.  A bilinear or quadratic form adds geometry
+to a vector space; its Gram matrix records the form in a basis, and nondegeneracy is the
+invertibility condition that makes orthogonal-complement arguments behave as expected.
+For operators, normality over \(\CC\) and semisimplicity describe diagonalization
+behavior, while nilpotent and unipotent parts measure the failure of an operator to be
+semisimple.  Over a perfect field, the Jordan--Chevalley decomposition separates the
+semisimple and nilpotent pieces (or, multiplicatively for an invertible operator, the
+semisimple and unipotent pieces).
+
 [[D-5BR4D]]
 
 [[D-SSGKC]]
@@ -31,6 +40,12 @@ problems:
 [[PR-24CPI]]
 
 [[PR-WDPF7]]
+
+Similarity and matrix equivalence are different relations.  Similarity changes the
+basis of one endomorphism and therefore preserves characteristic/minimal polynomials and
+Jordan data; row-column equivalence changes bases independently in domain and codomain
+and instead records the rank-type data of a linear map.  Decide which relation the
+problem is asking about before reaching for an invariant.
 
 [[D-JIGMN]]
 
@@ -123,6 +138,14 @@ a_1^k & & * \\
 
 ## Matrix groups
 
+The named matrix groups are stabilizers of structure.  \(\GL_n\) consists of all
+invertible changes of basis and \(\SL_n\) imposes determinant \(1\).  Orthogonal and
+special orthogonal groups preserve a symmetric/quadratic form; unitary and special
+unitary groups preserve a Hermitian form; the symplectic group preserves a
+nondegenerate alternating form.  This viewpoint makes their defining equations and
+their inclusions consequences of what structure is being preserved rather than a list
+of unrelated matrix identities.
+
 [[D-J5AAX]]
 
 [[PR-UQ3XJ]]
@@ -140,6 +163,11 @@ a_1^k & & * \\
 [[D-3V3SP]]
 
 ## Counting over a finite field
+
+To count \(\GL_n(\FF_q)\), choose an ordered basis one vector at a time: the first vector
+is nonzero, and each subsequent vector must avoid the span of those already chosen.
+The product \(\prod_{i=0}^{n-1}(q^n-q^i)\) is therefore a basis count, which is the
+template for many finite classical-group counts.
 
 [[PR-OYP6J]]
 

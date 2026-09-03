@@ -19,6 +19,13 @@ f(x) = {1\over 2\pi}\int_\RR e^{i\xi x} \hat{f}(\xi) \dxi
 
 ## The Gamma Function
 
+The Gamma function begins as an integral on the right half-plane.  The functional
+equation is what turns that local definition into a global meromorphic object: it moves
+the argument one unit at a time, supplying continuation past the original half-plane
+and locating the poles.  For review, keep the three stages together—integral
+definition, recurrence, meromorphic continuation—rather than treating them as separate
+facts.
+
 [[D-Q3MYK]]
 
 :::{.remark}
@@ -57,6 +64,15 @@ The residues:
 
 ## Riemann Zeta
 
+The zeta function has the same analytic pattern with an arithmetic input.  Its initial
+series and Euler product live where absolute convergence makes them legitimate; the
+continuation theorem extends the function meromorphically beyond that region, and the
+functional equation relates the two sides of the resulting continuation.  The Euler
+product already shows that $\zeta(s)\neq 0$ for $\operatorname{Re}s>1$; analytic
+continuation is needed to study the zero set outside that initial half-plane, after
+which the functional equation relates zeros on the two sides.  Read the three cards
+below in that order.
+
 [[D-HJYH3]]
 
 [[PR-K4KTF]]
@@ -92,6 +108,13 @@ A nonconstant elliptic function has at least two poles, counted with multiplicit
 ![](../../../../assets/assets/figures/2021-12-14_17-36-04.png)
 
 :::
+
+Infinite products are the multiplicative analogue of power-series constructions.  The
+Weierstrass factorization theorem says that the zeros of an entire function can be
+encoded by a convergent product after inserting suitable elementary factors.  Hadamard
+adds growth information: finite order restricts how complicated those factors and the
+remaining exponential term need to be.  Thus the zeros determine the product part,
+while growth controls the ambiguity left after the zeros are prescribed.
 
 [[T-2WJ4U]]
 

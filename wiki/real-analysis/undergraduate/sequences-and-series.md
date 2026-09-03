@@ -12,19 +12,31 @@ problems:
 
 ## Sequences of functions
 
+Pointwise convergence allows the index \(N\) to depend on \(x\); uniform convergence
+does not.  That quantifier change is what later permits continuity to pass through the
+limit; on finite-measure domains, uniform convergence also controls passage of the
+integral through the limit.  The limsup of functions is useful when an actual pointwise
+limit is unavailable, while the example below is a reminder that continuity of the
+limit does not by itself imply uniform convergence of the approximating series.
+
 [[D-S2YWR]]
 
 :::{.example}
-A series of continuous functions that does *not* converge uniformly but is still continuous:
-\[  
-g(x) \da \sum {1 \over 1 + n^2 x}
-.\]
-
-Take $x = 1/n^2$.
+On $(0,1]$, consider
+\[
+g(x) \da \sum_{n=1}^{\infty} {1 \over 1 + n^2 x}.
+\]
+For every $a>0$ the series converges uniformly on $[a,1]$ by comparison with
+$\sum_{n\ge1}(n^2a)^{-1}$, so $g$ is continuous on $(0,1]$.
+The convergence is not uniform on $(0,1]$: for the $n$th summand,
+\[
+{1\over 1+n^2(1/n^2)}={1\over2},
+\]
+so the summands do not even converge uniformly to zero.
 
 :::
 
-## Sequences of number
+## Sequences of numbers
 
 :::{.slogan}
 $\limsup$ is largest limit of a convergent subsequence, $\liminf$ is the smallest.
@@ -53,6 +65,13 @@ where each group with $a_k$ has $2^k$ terms.
 
 ## Series
 
+For numerical series, the Cauchy criterion is the underlying test: every sufficiently
+late tail must be small.  Comparison and \(p\)-tests turn that criterion into practical
+sufficient tests.  For a function's Taylor series, Taylor's theorem and its remainder
+determine when the formal expansion actually converges back to the function.  For series
+of functions, the same tail criterion is applied in a function norm when uniform control
+is needed.
+
 [[PR-P6NHI]]
 
 [[PR-UJ64S]]
@@ -72,6 +91,18 @@ where each group with $a_k$ has $2^k$ terms.
 [[T-2R7PC]]
 
 ## Uniform Convergence
+
+The sup norm packages uniform convergence as
+
+\[
+f_n\to f \text{ uniformly}
+\quad\Longleftrightarrow\quad
+\|f_n-f\|_\infty\to 0.
+\]
+
+To prove it, bound the supremum independently of \(x\); to disprove it, choose points
+\(x_n\) where the error stays bounded below.  For a series, the Weierstrass \(M\)-test
+reduces the same problem to convergence of a numerical majorant.
 
 [[PR-WUZSG]]
 

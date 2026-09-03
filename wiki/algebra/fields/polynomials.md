@@ -13,6 +13,9 @@ The layer beneath field theory: what $k[x]$ looks like, and how to tell whether 
 
 ## Basics
 
+Over a field, $k[x]$ is Euclidean by degree, hence a PID and a UFD.  That makes irreducible polynomials the prime elements and turns gcd computations into the basic tool for factorization and extension theory.
+Over $\ZZ[x]$, Gauss's lemma is the bridge back to $\QQ[x]$: strip off the content, work with a primitive polynomial, and test irreducibility over the field of fractions.
+
 [[FD-CI4NB]] [[FD-SZKGS]]
 
 [[FD-24RNF]] [[FD-QFRSI]]
@@ -44,7 +47,11 @@ Descartes' rule bounds how many real roots such a factorization can account for,
 
 [[FF-HK72Z]]
 
-## Definitions
+## Field-theoretic prerequisites
+
+Polynomial behavior depends on the base field.
+Characteristic determines the prime subfield and controls derivatives; automorphisms and fixed fields are what later turn roots into Galois data; perfectness is the condition that removes inseparability.
+Keep these notions adjacent to the polynomial criteria because changing the base field can change factorization and which roots lie in the base field.
 
 [[D-JNCUB]]
 
@@ -69,6 +76,13 @@ Descartes' rule bounds how many real roots such a factorization can account for,
 [[PR-IK6AM]]
 
 ## Cyclotomic polynomials
+
+The $n$th cyclotomic polynomial $\Phi_n$ packages the primitive $n$th roots of unity, with
+\[
+x^n-1=\prod_{d\mid n}\Phi_d(x).
+\]
+Over $\QQ$, $\Phi_n$ is irreducible and has degree $\varphi(n)$, so adjoining one primitive $n$th root produces the cyclotomic field of that degree.
+This is the standard place where polynomial factorization, Euler's totient, and Galois theory meet.
 
 [[D-BLV6F]]
 

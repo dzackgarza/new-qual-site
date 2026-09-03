@@ -14,24 +14,23 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-The set of surfaces under connect sum forms a monoid with the presentation
-\[  
-\gens{ \SS^2, \RP^2, \TT \suchthat \SS^2 = 0, 3\RP^2 = \RP^2 + \TT^2} = \ts{ \Sigma_{g, n} \st g, n \in \ZZ^{\geq 0} } 
-.\]
-where $\Sigma_{g, n}$ is a surface of genus $g$ with $n$ discs removed to form boundary components.
+::: {.theorem}
+Let $X$ be a compact connected surface and let $b$ be the number of boundary components.
+Then exactly one of the following holds:
 
-Surfaces are classified up to homeomorphism by orientability and $\chi$, or equivalently "genus" 
+- $X$ is orientable and is homeomorphic to the connected sum of $g\geq 0$ tori with the interiors of $b$ disjoint discs removed;
 
-- In orientable case, actual genus, $g$ equals the number of copies of $\TT^2$.
-- In nonorientable case, $k$ equals the number of copies of $\RP^2$.
+- $X$ is nonorientable and is homeomorphic to the connected sum of $k\geq 1$ copies of $\RP^2$ with the interiors of $b$ disjoint discs removed.
 
-In each case, there is a formula
-\[  
-\chi(X) = 
+The Euler characteristic is
+\[
+\chi(X)=
 \begin{cases}
-2-2g - b & \text{orientable} \\
-2 - k & \text{non-orientable}.
+2-2g-b & \text{if $X$ is orientable}, \\
+2-k-b & \text{if $X$ is nonorientable}.
 \end{cases}
 \]
+
+Thus compact connected surfaces are classified up to homeomorphism by orientability, the number $b$ of boundary components, and $\chi(X)$; equivalently, by $(g,b)$ in the orientable case and $(k,b)$ in the nonorientable case.
+For closed surfaces ($b=0$), orientability and Euler characteristic alone determine the homeomorphism type.
 :::

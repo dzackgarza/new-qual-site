@@ -36,6 +36,13 @@ The pattern is a chain argument on a poset of partial objects, and the only step
 
 ## Nakayama
 
+Nakayama is the local test for whether a finite set really generates.  Over a local
+ring $(R,\mathfrak m)$ and for $M$ finitely generated, the extreme form is
+$\mathfrak mM=M\Rightarrow M=0$; equivalently, generators of the vector space
+$M/\mathfrak mM$ lift to generators of $M$.  This is why reduction modulo the maximal
+ideal detects finite generation phenomena and why the lemma appears in geometric
+statements about fibers and differentials.
+
 [[FF-NREXC]]
 
 [[FF-45SK3]]
@@ -48,6 +55,12 @@ The pattern is a chain argument on a poset of partial objects, and the only step
 
 ## Noetherian rings and Krull dimension
 
+Noetherianity is the finiteness condition that makes ideal-theoretic induction work:
+ascending chains stabilize and every ideal is finitely generated.  The results below
+control what happens to powers and chains of ideals—Krull's principal-ideal and
+intersection theorems, together with Artin--Rees—and are the standard tools for turning
+that finiteness into dimension and separation statements.
+
 [[FF-ESIOA]]
 
 [[FF-3K36R]]
@@ -57,6 +70,12 @@ The pattern is a chain argument on a poset of partial objects, and the only step
 [[FF-CSABG]]
 
 ## Integral extensions
+
+Integral extensions preserve enough prime-ideal structure to compare spectra.  The
+going-up theorem is the chain-lifting statement: once a prime upstairs lies over the
+bottom of a chain downstairs, the rest of the chain can be lifted through the integral
+extension.  This is the prime-ideal analogue of the algebraicity constraints familiar
+from field extensions.
 
 [[FF-IBDAT]]
 
@@ -91,6 +110,11 @@ For an integral domain $R$,
 [[T-YYLPH]]
 
 [[D-JGYK4]]
+
+Hilbert's basis theorem is the permanence result to remember: adjoining finitely many
+polynomial variables to a Noetherian ring keeps it Noetherian.  Primary ideals refine
+prime ideals by allowing nilpotence in the quotient, and are the language in which
+Noetherian ideals are decomposed when a problem asks for more than their radical.
 
 :::{.fact}
 The division algorithm for Euclidean domains.

@@ -50,6 +50,14 @@ A common move: $f^{1/n} = e^{{1\over n}\log f}$, taking a principal branch of $\
 
 :::
 
+The multivalued formula becomes a holomorphic function only after the domain permits a
+consistent choice of argument.  On the principal slit plane, fixing
+\(-\pi<\arg z<\pi\) gives the standard branch; more generally, a simply connected
+domain avoiding \(0\) admits a holomorphic logarithm.  Once a branch of \(\log\) has
+been fixed, fractional powers are not a new construction: define
+\(z^\alpha=e^{\alpha\log z}\), and remember that changing the logarithm branch can
+change the resulting power.
+
 [[PR-MWUJS]]
 
 [[D-4CSPM]]
@@ -57,6 +65,13 @@ A common move: $f^{1/n} = e^{{1\over n}\log f}$, taking a principal branch of $\
 [[D-OMBQT]]
 
 [[D-T6INB]]
+
+For a nonvanishing holomorphic function \(f\), the same issue is detected by the
+logarithmic derivative.  A holomorphic logarithm \(g\) would satisfy
+\(g'=f'/f\); hence the periods of \(f'/f\) around closed curves must vanish.  Conversely,
+when those periods vanish one can integrate \(f'/f\) to construct \(g\).  On a simply
+connected domain this period obstruction disappears, giving the standard existence
+criterion used to define holomorphic roots of nonvanishing functions.
 
 [[T-NRSFZ]]
 

@@ -12,6 +12,9 @@ problems:
 
 ## Basics
 
+Treat \(R[x]\) as a ring construction applied to the coefficient ring \(R\): the constant polynomials retain the coefficient-ring arithmetic, while ideals and ring morphisms are the language for passing to quotients, reducing coefficients, and evaluating polynomials.
+The point of the section is therefore not to relearn the ring axioms, but to track which properties of \(R\) survive after adjoining a variable.
+
 [[D-GURUB]]
 
 [[D-GXMDW]]

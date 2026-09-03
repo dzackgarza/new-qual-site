@@ -40,19 +40,22 @@ This gives sequences $x_k, y_k, f_k$ with $\abs{x_k-y_k}\to 0$ but $\abs{f_k(x_k
 
 ## Normal families
 
-[[D-VZNMF]]
+A normal family is a sequential compactness condition for the topology of locally uniform convergence: from every sequence, extract a subsequence converging uniformly on each compact subset.
+For holomorphic families, local uniform boundedness gives the two inputs needed for compactness.
+Cauchy estimates turn the common bound on a slightly larger compact set into equicontinuity on a smaller one, and Arzelà--Ascoli then extracts uniformly convergent subsequences on compacta.
+This is the mechanism behind Montel's theorem, not a separate compactness principle.
+
+[[D-IJMPJ]]
+
+The hypotheses below are the quantifiers to keep straight.
+"Uniformly bounded on compact subsets" means the bound may depend on the compact set but not on the function in the family; equicontinuity means the same \(\delta(\varepsilon)\) works for every member of the family.
+Once these are uniform across the family, ordinary compactness arguments become available.
+
+[[D-MBDTR]]
 
 [[T-MCB7V]]
 
 [[D-HL4KE]]
-
-[[D-IJMPJ]]
-
-[[D-MBDTR]]
-
-[[D-PPYCK]]
-
-[[FD-4GI2R]]
 
 ::: {.remark title="Univalence, and how the complex case differs"}
 If $f: \Omega \to \Omega'$ is a univalent surjection then $f$ is invertible with holomorphic inverse.
@@ -68,7 +71,7 @@ Thus once the Riemann mapping argument produces a univalent surjection, no separ
 
 ::: {.slogan}
 Locally uniformly bounded families are normal.
-For bounded sequences of holomorphic functions, pointwise convergence is the same as uniform convergence on bounded sets.
+If a locally uniformly bounded sequence of holomorphic functions converges pointwise on the domain, then it converges locally uniformly: Montel gives locally uniformly convergent subsequences, and pointwise convergence forces every such subsequential limit to be the same function.
 :::
 
 ::: {.remark}

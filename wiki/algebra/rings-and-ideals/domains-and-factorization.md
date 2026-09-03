@@ -14,6 +14,11 @@ Where the tower on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of r
 
 ## Elements
 
+Factorization starts with divisibility modulo units.
+Associates differ by a unit and therefore represent the same factor for uniqueness questions.
+An irreducible element cannot be factored nontrivially; a prime element has the stronger divisibility property $p\mid ab\Rightarrow p\mid a$ or $p\mid b$.
+Keeping those two notions distinct is the point of most counterexamples in this section.
+
 [[D-AVBIP]]
 
 [[D-QQIQZ]]
@@ -35,6 +40,10 @@ A problem that asks you to distinguish the two is asking whether the ring is a U
 
 ## Types of ring
 
+The first divide is whether zero divisors exist.
+An integral domain has none, while a field goes further and makes every nonzero element a unit.
+These hypotheses determine which cancellation and factorization arguments are legal before any stronger finiteness condition is invoked.
+
 [[D-7O2CH]]
 
 [[D-4I3SL]]
@@ -53,6 +62,14 @@ A problem that asks you to distinguish the two is asking whether the ring is a U
 
 ### The big ones
 
+For integral domains, remember the implication chain
+\[
+\text{Euclidean domain}\Longrightarrow\text{PID}\Longrightarrow\text{UFD}
+\Longrightarrow\text{integral domain}.
+\]
+A Euclidean function gives an algorithm for gcds, every ideal being principal turns ideal generation into element divisibility, and unique factorization is exactly the stage at which irreducible elements become prime.
+None of the reverse implications is automatic, so examples separating adjacent classes are part of the standard toolkit.
+
 [[D-D7VK2]]
 
 [[D-HTIL5]]
@@ -68,6 +85,12 @@ A problem that asks you to distinguish the two is asking whether the ring is a U
 [[FD-GXXBV]]
 
 ### Others
+
+The remaining adjectives answer different structural questions and should not be read as further steps in the chain above.
+Noetherian means ascending chains of ideals stop; reduced means nilpotents vanish; local means there is a unique maximal ideal.
+Valuation rings and DVRs organize divisibility locally, while Dedekind domains replace global element factorization by unique factorization of nonzero ideals.
+Regularity is a local dimension/generator condition.
+In a problem, identify which of these properties is actually being used rather than trying to place the ring on one master ladder.
 
 [[D-TZXBO]]
 
@@ -96,6 +119,10 @@ A problem that asks you to distinguish the two is asking whether the ring is a U
 [[FF-CQSNC]]
 
 ## Structure theorems
+
+There is a second use of the word "simple" here, now for modules.
+Semisimplicity means decomposition as a direct sum of simples, and Artin--Wedderburn classifies semisimple rings by matrix blocks over division rings.
+This is structural decomposition rather than element factorization; it is included here because ring hypotheses are often translated immediately into statements about their module categories.
 
 [[D-4KM4P]]
 
