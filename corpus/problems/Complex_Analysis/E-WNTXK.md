@@ -21,6 +21,19 @@ Show that $f$ must be constant.
 :::
 
 ::: {.solution}
-Write $T:\CC \to \DD$ for the Cayley map, then $F\da f\circ T$ satisfies $F(\CC) = T(f(\CC)) \subseteq  T(\HH) = \DD$, so $F$ is a bounded entire function and thus constant.
-So $c = F(z) = T(f(z)) \implies f(z) = T\inv(c)$, making $f$ constant.
+Let $T:\HH\to\DD$ be a Cayley transform, for example
+\[
+T(w)=\frac{i-w}{i+w}.
+\]
+Then
+\[
+F\da T\circ f:\CC\to\DD
+\]
+is entire and bounded.
+By Liouville's theorem, $F\equiv c$ for some $c\in\DD$.
+Since $T$ is injective,
+\[
+f\equiv T^{-1}(c),
+\]
+so $f$ is constant.
 :::

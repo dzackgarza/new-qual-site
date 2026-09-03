@@ -86,7 +86,10 @@ Disposition order follows the finding numbers.
   The card now uses the rectangle of height $\pi$, the correct poles
   $(k+1/2)\pi i$, rigorous vertical-side estimates for $|\Re a|<1$, and the
   residue at $i\pi/2$ to obtain $\pi\sec(\pi a/2)$.
-- [ ] 14. E-WNTXK — Wrong function composition in the Cayley argument
+- [x] 14. E-WNTXK — Wrong function composition in the Cayley argument
+  Disposition 2026-09-04: confirmed and fixed. The bounded entire function is
+  $T\circ f:\CC\to\DD$, where $T:\HH\to\DD$ is the Cayley transform; the old
+  text wrote the ill-typed composition $f\circ T$.
 - [ ] 15. E-P7SIB — `sin(4θ)` formula missing the factor 4 and a sign
 - [ ] 16. E-WAYFS — Residue of `csc(πz)` wrong
 - [ ] 17. E-P3RLK — Solution proves the converse theorem, not the stated exercise
