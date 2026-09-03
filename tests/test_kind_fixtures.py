@@ -368,12 +368,20 @@ def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
-    assert "Provenance" in exam_qmd
-    assert "https://www.math.uga.edu/past-qualifying-exams-1" in exam_qmd
-    assert "https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" in exam_qmd
-    assert "assets/attachments/fixture-paper.pdf" in exam_qmd
-    assert "assets/attachments/extracted/fixture-paper.md" in exam_qmd
-    assert "Markdown extraction" in exam_qmd
+    body = exam_qmd.split("---\n", 2)[2]
+    assert "Provenance" not in body
+    assert "assets/attachments/fixture-paper.pdf" not in body
+
+    exam_html = (work / "build" / "quarto" / "_site" / "exam" / "SRC-UGA-FIX.html").read_text()
+    assert "<dt>Area</dt><dd>Algebra</dd>" in exam_html
+    assert "<dt>Topics</dt><dd>Groups</dd>" in exam_html
+    assert "<dt>Status</dt><dd>draft</dd>" in exam_html
+    assert "<dt>Source</dt>" in exam_html
+    assert 'href="https://www.math.uga.edu/past-qualifying-exams-1" aria-label="Source"' in exam_html
+    assert 'href="https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" aria-label="PDF source"' in exam_html
+    assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="PDF source"' in exam_html
+    assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="Markdown extraction"' in exam_html
+    assert ">assets/attachments/fixture-paper.pdf<" not in exam_html
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
         "https://www.math.uga.edu/past-qualifying-exams-1",
@@ -562,6 +570,7 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
     assert "Algebra homework 3, Spring 2020, problem 2" in uncommented
     assert '<div class="card-statement">' in uncommented
     assert "<dt>Area</dt>" in uncommented
+    assert "<dt>Topics</dt>" in uncommented
     assert "<dt>Status</dt>" in uncommented
 
 

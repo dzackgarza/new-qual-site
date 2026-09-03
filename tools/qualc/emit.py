@@ -1241,16 +1241,20 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
 
 
-def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
-    facets = _page_rows(data.facets, card["id"])
-    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
-    years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
-    areas = _page_terms(data, card["id"], "area")
-    topics = _page_terms(data, card["id"], "topic")
+def _card_meta(
+    card: sqlite3.Row,
+    areas: list[str],
+    topics: list[str],
+    institutions: list[str] | None = None,
+    years: list[str] | None = None,
+) -> dict[str, object]:
+    institutions = institutions or []
+    years = years or []
     meta: dict[str, object] = {
         "title": card["title"],
         "subtitle": card["id"],
         "area": ", ".join(a.replace("-", " ").title() for a in areas),
+        "topics": ", ".join(topics),
         "review": card["review"],
         "categories": sorted(set(topics + areas + institutions + years)),
     }
@@ -1259,6 +1263,15 @@ def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
     if years:
         meta["years"] = ", ".join(years)
     return meta
+
+
+def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
+    facets = _page_rows(data.facets, card["id"])
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
+    years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
+    areas = _page_terms(data, card["id"], "area")
+    topics = _page_terms(data, card["id"], "topic")
+    return _card_meta(card, areas, topics, institutions, years)
 
 
 def asked_json(
@@ -1602,26 +1615,13 @@ def problem_page(
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
         blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
 
-    meta: dict[str, object] = {
-        "title": card["title"],
-        "subtitle": card["id"],
-        "area": ", ".join(a.replace("-", " ").title() for a in areas),
-        "review": card["review"],
-        "categories": sorted(set(topics + areas + institutions + years)),
-    }
-    if institutions:
-        meta["institutions"] = ", ".join(institutions)
-    if years:
-        meta["years"] = ", ".join(years)
-    return meta, blocks
+    return _card_meta(card, areas, topics, institutions, years), blocks
 
 
 def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
-    return {
-        "title": card["title"],
-        "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
-    }, _blocks(card)
+    areas = _terms(con, card["id"], "area")
+    topics = _terms(con, card["id"], "topic")
+    return _card_meta(card, areas, topics), _blocks(card)
 
 
 def collection_page(
@@ -1652,14 +1652,46 @@ def collection_page(
             (src["id"],),
         )
     ]
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
+    areas = _terms(con, src["id"], "area")
+    topics = _terms(con, src["id"], "topic")
+    meta = _card_meta(src, areas, topics)
+    source_links = _collection_source_links(repo_root, provenance)
+    if source_links:
+        meta["source_links"] = source_links
+    return meta, _collection_listing(
         src["id"],
         listed,
         inline_cache,
         completion,
-        provenance,
-        repo_root,
     )
+
+
+def _collection_source_links(repo_root: Path, provenance: list[str]) -> list[dict[str, str]]:
+    """Compact source-file links for the common page metadata band.
+
+    Provenance remains authored data. The page header presents its resources by
+    file type instead of exposing repository paths as prose.
+    """
+    links: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+
+    def add(href: str, kind: str, label: str) -> None:
+        key = (href, kind)
+        if key in seen:
+            return
+        seen.add(key)
+        links.append({"href": href, "kind": kind, "label": label})
+
+    for href in provenance:
+        suffix = Path(urlsplit(href).path).suffix.lower()
+        if suffix == ".pdf":
+            add(href, "pdf", "PDF source")
+        else:
+            add(href, "web", "Source")
+        extraction = _pdf_extraction_href(repo_root, href)
+        if extraction is not None:
+            add(extraction, "markdown", "Markdown extraction")
+    return links
 
 
 def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
@@ -1689,8 +1721,6 @@ def _collection_listing(
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
     completion: str = "complete",
-    provenance: list[str] | None = None,
-    repo_root: Path | None = None,
 ) -> list[pf.Block]:
     """Render the collection's authored source-order contents.
 
@@ -1714,23 +1744,6 @@ def _collection_listing(
     blocks: list[pf.Block] = []
     if completion == "incomplete":
         blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
-    if provenance:
-        blocks.append(pf.Header(pf.Str("Provenance"), level=2))
-        provenance_items: list[pf.ListItem] = []
-        for href in provenance:
-            inlines: list[pf.Inline] = [pf.Link(pf.Str(href), url=href)]
-            extraction = _pdf_extraction_href(repo_root, href) if repo_root is not None else None
-            if extraction is not None:
-                inlines.extend(
-                    (
-                        pf.Space(),
-                        pf.Str("—"),
-                        pf.Space(),
-                        pf.Link(pf.Str("Markdown extraction"), url=extraction),
-                    )
-                )
-            provenance_items.append(pf.ListItem(pf.Plain(*inlines)))
-        blocks.append(pf.BulletList(*provenance_items))
     problem_count = sum(row["kind"] == "problem" for row in listed)
     blocks.append(
         pf.Para(

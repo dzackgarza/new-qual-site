@@ -284,9 +284,47 @@ def _prefix(relative_path: Path) -> str:
     return "../" * len(relative_path.parent.parts)
 
 
-def _metadata(meta: dict[str, object]) -> str:
+def _source_link_href(relative_path: Path, href: str) -> str:
+    parsed = urlsplit(href)
+    if parsed.scheme or parsed.netloc:
+        return href
+    return _relative_url(relative_path, Path(unquote(parsed.path)))
+
+
+def _source_links(meta: dict[str, object], relative_path: Path) -> str:
+    raw = meta.get("source_links")
+    if not isinstance(raw, list):
+        return ""
+    links = []
+    badges = {"pdf": "PDF", "markdown": "MD", "web": "↗"}
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        href = item.get("href")
+        kind = item.get("kind")
+        label = item.get("label")
+        if not isinstance(href, str) or not href or not isinstance(kind, str):
+            continue
+        accessible = label if isinstance(label, str) and label else "Source"
+        if kind in badges:
+            badge = badges[kind]
+        else:
+            badge = "↗"
+        links.append(
+            f'<a class="page-source-link page-source-{escape(kind, quote=True)}" '
+            f'href="{escape(_source_link_href(relative_path, href), quote=True)}" '
+            f'aria-label="{escape(accessible, quote=True)}" title="{escape(accessible, quote=True)}">'
+            f'<span aria-hidden="true">{escape(badge)}</span></a>'
+        )
+    if not links:
+        return ""
+    return '<div class="page-source-links">' + "".join(links) + "</div>"
+
+
+def _metadata(meta: dict[str, object], relative_path: Path) -> str:
     labels = {
         "area": "Area",
+        "topics": "Topics",
         "institutions": "Seen at",
         "years": "Years",
         "review": "Status",
@@ -296,6 +334,9 @@ def _metadata(meta: dict[str, object]) -> str:
         value = meta.get(key)
         if isinstance(value, str) and value:
             rows.append(f'<div class="page-fact"><dt>{escape(label)}</dt><dd>{escape(value)}</dd></div>')
+    links = _source_links(meta, relative_path)
+    if links:
+        rows.append(f'<div class="page-fact"><dt>Source</dt><dd>{links}</dd></div>')
     if not rows:
         return ""
     return '<dl class="page-facts">' + "".join(rows) + "</dl>"
@@ -801,7 +842,7 @@ def page_document(
         {breadcrumb_html}
         <h1>{escape(title)}</h1>
         {subtitle_html}
-        {_metadata(meta)}
+        {_metadata(meta, relative_path)}
       </header>
       {toc_narrow}
       <article class="page-body">

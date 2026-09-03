@@ -428,10 +428,13 @@ set.
 - A collection page keeps source identity, provenance, completion state, and
   **enumerates the authored source contents in source order**, preserving
   section structure, problem links, and authored appearance locators. This is
-  the principal purpose of the collection page. It may additionally deep-link
-  with `collection=SRC-...` so the same problems can be searched, filtered,
-  sampled, or printed in the browser. That browser link supplements rather than
-  replaces the collection's own contents.
+  the principal purpose of the collection page. Collection classification and
+  status use the same metadata band as every other card. Provenance resources
+  belong there too as compact typed links (PDF, Markdown extraction, source
+  page); never expose a repository-relative asset path as reader-facing prose.
+  The page may additionally deep-link with `collection=SRC-...` so the same
+  problems can be searched, filtered, sampled, or printed in the browser. That
+  browser link supplements rather than replaces the collection's own contents.
 - `generate.html` is compatibility-only: old URLs redirect to `problems.html`
   with `sample=8`. It must not acquire controls, query logic, or a second
   problem data path.

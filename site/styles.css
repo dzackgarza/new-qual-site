@@ -391,6 +391,43 @@ mjx-container[display="true"] {
   font-size: 0.9rem;
 }
 
+.page-source-links {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 1.55rem;
+}
+
+.page-source-link {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2rem;
+  height: 1.55rem;
+  padding: 0 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  color: var(--accent-dark);
+  background: var(--wash);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.page-source-link:hover,
+.page-source-link:focus-visible {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper));
+}
+
+.page-source-web {
+  min-width: 1.55rem;
+  padding-inline: 0.25rem;
+  font-size: 0.9rem;
+}
+
 .page-body {
   --ol-gutter: 2.5rem;
   overflow-wrap: anywhere;
