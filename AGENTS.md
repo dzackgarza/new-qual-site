@@ -74,6 +74,14 @@ a finding that the two cards are the same statement, and it must never be wired
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
+Semantic recurring review is advisory, not a check. `REVIEW_POLICY.md` is the named
+index of previously observed defect patterns and the reading tasks that can surface
+new candidates. The scheduled corpus-review crawler runs an agent only in an isolated,
+disposable copy of a bounded slice and copies back only its report. It must stop at
+candidate reporting: no candidate is a finding until a human reads it, no agent
+finding triggers an edit, and a run with no candidates is not evidence that the corpus
+is clean.
+
 `just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`
 on every commit. Never run it manually — it is redundant.
 
