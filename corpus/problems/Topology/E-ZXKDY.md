@@ -18,7 +18,20 @@ Show that if $f$ is not surjective then $\deg f = 0$.
 :::
 
 ::: {.solution}
-In this case $f$ factors as $S^n \mapsvia{f_1} S^n\smts{\pt}\mapsvia{f_2} S_n$.
-But $S^n\smts{\pt} \homotopic \RR^n$, to $H_*(f_1) = 0$ and $\deg f_1 = 0$.
-Then apply $\deg f = \qty{\deg f_1} \qty{\deg f_2}$.
+Choose $p\in S^n\setminus f(S^n)$.
+Then $f$ factors as
+\[
+S^n \mapsvia{f_1} S^n\smts{p}\mapsvia{j} S^n,
+\]
+where $j$ is the inclusion.
+Since $S^n\smts{p}\cong\RR^n$ is contractible,
+\[
+H_n(S^n\smts{p})=0.
+\]
+Hence the induced map on top homology factors through the zero group:
+\[
+H_n(S^n)\mapsvia{(f_1)_*}0\mapsvia{j_*}H_n(S^n).
+\]
+Thus $f_*=0$ on $H_n(S^n)\cong\ZZ$.
+By the definition of degree, $\deg f=0$.
 :::

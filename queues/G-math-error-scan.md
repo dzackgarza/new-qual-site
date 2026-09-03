@@ -68,7 +68,11 @@ Disposition order follows the finding numbers.
   factorization now uses
   $\sum_{k=0}^{n-1}x^{n-1-k}y^k$, yielding the stated Lipschitz bound
   $nM^{n-1}|x-y|$ and an explicit uniform-continuity $\delta$.
-- [ ] 10. E-ZXKDY — Degree not defined for the factorization maps
+- [x] 10. E-ZXKDY — Degree not defined for the factorization maps
+  Disposition 2026-09-04: confirmed and fixed. The proof now factors the
+  induced map on $H_n$ through $H_n(S^n\setminus\{p\})=0$ and concludes
+  directly from the definition of degree, without assigning a degree to maps
+  whose source and target are not both $S^n$.
 - [ ] 11. T-77SHB — Cayley transform direction is backwards
 - [ ] 12. E-ZCPKK — Cross-multiplication step is mis-written
 - [ ] 13. E-AIQEU — Final answer `sec`/`csc` slip; pole-location formula wrong
