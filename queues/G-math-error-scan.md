@@ -73,7 +73,10 @@ Disposition order follows the finding numbers.
   induced map on $H_n$ through $H_n(S^n\setminus\{p\})=0$ and concludes
   directly from the definition of degree, without assigning a degree to maps
   whose source and target are not both $S^n$.
-- [ ] 11. T-77SHB — Cayley transform direction is backwards
+- [x] 11. T-77SHB — Cayley transform direction is backwards
+  Disposition 2026-09-04: confirmed and fixed. The card now states that
+  $G(w)=i(1-w)/(1+w)$ maps $\DD\to\HH$, while its inverse
+  $F(z)=(i-z)/(i+z)$ maps $\HH\to\DD$.
 - [ ] 12. E-ZCPKK — Cross-multiplication step is mis-written
 - [ ] 13. E-AIQEU — Final answer `sec`/`csc` slip; pole-location formula wrong
 - [ ] 14. E-WNTXK — Wrong function composition in the Cayley argument
