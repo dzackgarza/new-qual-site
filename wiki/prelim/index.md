@@ -27,4 +27,4 @@ Unlike the other subjects this paper is mostly computational, so the recognition
 
 - [[prelim/problems/index|Problems]], the Berkeley and UCLA archives and the integral drill sheet.
 
-- [[prelim-resources|Resources]].
+- [[prelim/resources/index|Resources]].

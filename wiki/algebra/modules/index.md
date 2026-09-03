@@ -12,5 +12,3 @@ order: 4
 - [[algebra/modules/free-and-projective|Free and projective modules]], the properties that separate once the ring is worse.
 
 - [[algebra/modules/exact-sequences|Exact sequences and tensor products]], splitting and right exactness.
-
-- [[algebra/modules/resources|Resources]], the reading list.

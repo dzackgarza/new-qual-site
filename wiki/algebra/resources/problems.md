@@ -2,8 +2,12 @@
 order: 40
 ---
 
-# Algebra Problems
+# Algebra Problem Collections
 
-- [algebra 2010-2015 prelims.pdf](attachments/algebra_2010-2015_prelims.pdf)
+Two compiled algebra-prelim scans are already represented as source collections; use the collection pages for the problems and the original PDF provenance:
 
-- [algebra 2003-2009 prelims.pdf](attachments/algebra_2003-2009_prelims.pdf)
+- [[SRC-ART-ALG-2010-2015-PRELIMS]]
+
+- [[SRC-ART-ALG-2003-2009-PRELIMS]]
+
+For individual university exams, browse the [Sources listing](exams.html) by subject, institution, and year.

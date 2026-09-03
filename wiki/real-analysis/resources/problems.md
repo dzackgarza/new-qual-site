@@ -28,21 +28,25 @@ Exercises from [@Fol13]:
 
 - Chapter 3: Exercises 3(b,c), 5, 6, 9, 12, 13, 14, 16, 20, 21, 22
 
-- ![](attachments/Folland Clipped Questions.pdf)
-
 - [Folland Clipped Questions.pdf](attachments/Folland_Clipped_Questions.pdf)
 
 ## Others
+
+- [Giant List of Real Analysis Questions](attachments/Giant_List_of_Problems.pdf)
+
+- [Measure Theory Qual Problems.pdf](attachments/Measure_Theory_Qual_Problems.pdf)
+
+- [LSU analysis test bank (2009)](https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf)
+
+- [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
+
+- [Analysis qual problem collection](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
 
 - [Sequence Series (Neil Lyall 2019).pdf](attachments/Sequence_Series_(Neil_Lyall_2019).pdf)
 
 - [analysis_jan2014.pdf](attachments/analysis_jan2014.pdf)
 
 - [analysis 2008-2013.pdf](attachments/analysis_2008-2013.pdf)
-
-- [topology 2006-2014.pdf](attachments/topology_2006-2014.pdf)
-
-- [topology 2005-2003.pdf](attachments/topology_2005-2003.pdf)
 
 - [analysis 2014-2016.pdf](attachments/analysis_2014-2016.pdf)
 
@@ -56,26 +60,5 @@ Exercises from [@Fol13]:
 
 ## Qual Workshop Materials
 
-> UNL analysis workshop packet.
-> Day 1, Day 9, and Day 10 are Math 825/826 qualifying exams (Day 1 prints Avery Hall 347). Day 2–8 are topic sheets that reuse tagged exam items.
-> [[real-analysis/resources/extra-questions|Extra_Questions]] transcribes Day 1 and many of those tags; it is not a UGA Quals page.
-
-[Day 1 May 2016 Qual.pdf](attachments/Day_1_May_2016_Qual.pdf)
-
-[Day 2 Metric Spaces and Topology.pdf](attachments/Day_2_Metric_Spaces_and_Topology.pdf)
-
-[Day 3 Sequences and Series.pdf](attachments/Day_3_Sequences_and_Series.pdf)
-
-[Day 4 Continuity of Functions.pdf](attachments/Day_4_Continuity_of_Functions.pdf)
-
-[Day 5 Differential Calculus.pdf](attachments/Day_5_Differential_Calculus.pdf)
-
-[Day 6 Integral Calculus.pdf](attachments/Day_6_Integral_Calculus.pdf)
-
-[Day 7 Sequences and Series of Functions.pdf](attachments/Day_7_Sequences_and_Series_of_Functions.pdf)
-
-[Day 8 Miscellaneous Topics.pdf](attachments/Day_8_Miscellaneous_Topics.pdf)
-
-[Day 9 January 2019 Qual.pdf](attachments/Day_9_January_2019_Qual.pdf)
-
-[Day 10 May 2018 Qual.pdf](attachments/Day_10_May_2018_Qual.pdf)
+[[SRC-RA-WORKSHOP]] is the UNL real-analysis workshop packet.
+Its collection page preserves the day structure and links the source PDFs; Days 1, 9, and 10 route to their corresponding qualifying-exam collections.

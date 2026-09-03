@@ -13,5 +13,3 @@ The pages below specialize this to ordinary representations over $\CC$.
 - [[algebra/representations/maschke-and-schur|Maschke and Schur]] -- semisimplicity and irreducible Hom/End.
 
 - [[algebra/representations/characters|Characters]], and the orthogonality that makes them computable.
-
-- [[algebra/representations/resources|Resources]], the reading list.

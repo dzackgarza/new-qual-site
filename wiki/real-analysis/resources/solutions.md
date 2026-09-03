@@ -8,8 +8,6 @@ order: 20
 
 - [Jacob S Townson Solutions to Analysis Quals](attachments/my-solutions-to-old-analysis-quals.pdf)
 
-- [Giant List of Problems.pdf](attachments/Giant_List_of_Problems.pdf)
-
 - [UCLA Solutions.pdf](attachments/UCLA_Solutions.pdf)
 
 - [Texas Solns.pdf](attachments/Texas_Solns.pdf)
@@ -32,8 +30,6 @@ order: 20
 
 Huge bank of undergrad/grad questions:
 
-- [LSU analysis test bank (2009)](https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf)
-
 - [Berkeley undergrad pset solutions](https://math.berkeley.edu/~vvdatar/m104su18/Assignments/Solutions_A6.pdf)
 
   - Lots of uniform convergence.
@@ -48,30 +44,16 @@ Huge bank of undergrad/grad questions:
 
 - [Le - MEASURE and INTEGRATION Problems with Solutions.pdf](attachments/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf)
 
-- [Measure Theory Qual Problems.pdf](attachments/Measure_Theory_Qual_Problems.pdf)
-
 - [Measures Integrals and Martingales (Solutions)](attachments/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf)
-
-- [PrincetonQuestions.pdf](attachments/PrincetonQuestions.pdf)
 
 - [Real_solutions.pdf](attachments/Real_solutions.pdf)
 
-- [Spring2020Final.pdf](attachments/Spring2020Final.pdf)
-
 - [Adam Lott's analysis qual solutions (UCLA)](https://www.math.ucla.edu/~adamlott99/analysis_qual_solutions.pdf)
-
-- [analysisqualproblems.pdf](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
 
 - [Harrell's Fall 2003 analysis comp solutions (Georgia Tech)](https://people.math.gatech.edu/~harrell/GP/Comp/compFall03AnSol.pdf)
 
-- [Basic exam problems](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
-
 - [Analysis solutions](https://people.math.gatech.edu/~harrell/GP/Comp/compSpringl04AnSol.pdf)
 
-- [Harvard qual solutions](http://abel.harvard.edu/graduate/quals/qf13sol.pdf)
-
-- [analysisqualproblems.pdf](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
-
-- [GA Tech Solutions](https://people.math.gatech.edu/~harrell/GP/Comp/compFall03AnSol.pdf)
+- [Harvard Qualifying Exams I, Fall 2013 solutions](attachments/qf13sol.pdf)
 
 - [solutions-mims-2ed.pdf](attachments/solutions-mims-2ed.pdf)

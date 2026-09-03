@@ -1,14 +1,18 @@
 # Document queue E: Source documents without collection cards
 
-354 PDF files in assets/attachments/ have no collection card.
-All 354 extracted to full markdown and read.
-Classification by document content.
-Each entry links to the full extraction with line count, problem count, institution, subject, and date where identifiable.
+This queue inventories 354 vendored PDF sources that lacked collection cards when the queue was created.
+Checked entries have since been dispositioned; unchecked entries still require intake.
+All 354 were extracted to full markdown and read for the inventory.
+Classification below is by document content, and each entry links to the extraction with line count, problem count, institution, subject, and date where identifiable.
 
-Per AGENTS.md: the PDF is the provenance.
-The missing work is creating the collection card and extracting its problems.
+Per AGENTS.md, the PDF is the provenance.
+For an unchecked problem-bearing source, the remaining work is to create or reconcile the collection and extract/reuse its problem cards.
+For reference-only material, intake may stop at bibliography/enrichment rather than manufacturing problem cards.
 
-## Qualifying exams (86)
+The #81 resource-page audit uses this as the sole backlog for vendored resource PDFs: every vendored PDF still linked from a subject resource page is either already collection provenance or has an entry here.
+External links that are not vendored remain on the resource pages until a deliberate intake pass brings them into `assets/attachments/`.
+
+## Qualifying exams (76)
 
 - [ ] [8155-starter-problems.pdf](assets/attachments/extracted/8155-starter-problems.md) (59L, 7 problems) — applied-algebra
 
@@ -35,7 +39,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — January 2003
 
-- [ ] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — applied-algebra
+- [ ] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — prelim
 
 - [ ] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — alg-geom
 
@@ -91,12 +95,6 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Fall97.pdf](assets/attachments/extracted/Fall97.md) (60L, 2 problems) — complex-analysis — Fall 19
 
-- [ ] [fields.pdf](assets/attachments/extracted/fields.md) (177L, 0 problems) — applied-algebra — Fall 2007
-
-- [ ] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — UNL — applied-algebra — October 2012
-
-- [ ] [groups.pdf](assets/attachments/extracted/groups.md) (231L, 8 problems) — applied-algebra — Spring 2008
-
 - [ ] [Hartshorne_Solutions.pdf](assets/attachments/extracted/Hartshorne_Solutions.md) (1803L, 9 problems) — alg-geom
 
 - [ ] [ist_ca_2015.pdf](assets/attachments/extracted/ist_ca_2015.md) (395L, 0 problems) — UNL — topology
@@ -105,21 +103,11 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf](assets/attachments/extracted/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.md) (3363L, 58 problems) — alg-geom — Spring 2018
 
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — diff-geom — Spring 2014
-
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — alg-geom — Spring 2014
-
-- [ ] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — applied-algebra **OCR: image placeholders**
-
 - [ ] [more_calculus_from_test2.pdf](assets/attachments/extracted/more_calculus_from_test2.md) (172L, 20 problems) — algebra
 
 - [ ] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019
 
 - [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
-
-- [ ] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — UNL — alg-geom — FALL 2008
-
-- [ ] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — UNL — applied-algebra — October 2012
 
 - [ ] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders**
 
@@ -128,10 +116,6 @@ The missing work is creating the collection card and extracting its problems.
 - [ ] [QualProblemsHomotopy.pdf](assets/attachments/extracted/QualProblemsHomotopy.md) (33L, 0 problems) — alg-geom
 
 - [ ] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/extracted/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.md) (179L, 16 problems) — alg-geom **OCR: image placeholders**
-
-- [ ] [ringsandmodules.pdf](assets/attachments/extracted/ringsandmodules.md) (151L, 0 problems) — alg-geom — Spring 2007
-
-- [ ] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — applied-algebra — August 29
 
 - [ ] [s04.pdf](assets/attachments/extracted/s04.md) (89L, 3 problems) — applied-algebra
 
@@ -173,7 +157,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Symplectic Geometry.pdf](assets/attachments/extracted/Symplectic Geometry.md) (1992L, 2 problems) — UNL — alg-geom
 
-- [ ] [Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf](assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md) (4968L, 14 problems) — UNL — alg-geom
+- [ ] [Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf](assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md) (4968L, 14 problems) — algebra
 
 - [ ] [topology_2005-2003.pdf](assets/attachments/extracted/topology_2005-2003.md) (342L, 22 problems) — Wesleyan — alg-geom — August 30 **OCR: image placeholders**
 
@@ -185,7 +169,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — UNL — alg-geom — FALL 2011
 
-- [ ] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — diff-geom
+- [ ] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — complex-analysis
 
 ## Preliminary exams (47)
 
@@ -365,7 +349,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — real-analysis — SPRING 2018
 
-- [ ] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — topology
+- [ ] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — prelim
 
 ## Exams with solutions (39)
 
@@ -377,7 +361,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011
 
-- [ ] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — UNL — topology
+- [ ] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — complex-analysis
 
 - [ ] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005
 
@@ -483,9 +467,9 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [day_6_covering_spaces.pdf](assets/attachments/extracted/day_6_covering_spaces.md) (31L, 11 problems) — topology — June 2005
 
-- [ ] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — applied-algebra — June 2005
+- [ ] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — topology — June 2005
 
-## Problem sets (9)
+## Problem sets (14)
 
 - [ ] [basic-06S.pdf](assets/attachments/extracted/basic-06S.md) (71L, 0 problems) — no metadata
 
@@ -497,13 +481,23 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis
 
-- [ ] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [ ] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
 
-- [ ] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [ ] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
 
-- [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — applied-algebra
+- [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra
 
 - [ ] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom
+
+- [ ] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012
+
+- [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
+
+- [ ] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders**
+
+- [x] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — real-analysis — October 2012 — exact byte duplicate of `Giant_List_of_Problems.pdf` (same SHA-256); do not create a second collection
+
+- [ ] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — algebra — August 29
 
 ## Homework assignments (53)
 
@@ -525,7 +519,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Algebra_HW_4_Solns.pdf](assets/attachments/extracted/Algebra_HW_4_Solns.md) (351L, 0 problems) — algebra
 
-- [ ] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — alg-geom
+- [ ] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — algebra
 
 - [ ] [analysis_notes_eamonqg.pdf](assets/attachments/extracted/analysis_notes_eamonqg.md) (1041L, 0 problems) — applied-algebra
 
@@ -609,7 +603,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis
 
-- [ ] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — UNL — applied-algebra — October 22 **OCR: image placeholders**
+- [ ] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders**
 
 - [ ] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders**
 
@@ -689,11 +683,15 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [s06solution.pdf](assets/attachments/extracted/s06solution.md) (409L, 0 problems) — applied-algebra
 
-## Lecture notes (2)
+## Lecture notes (4)
 
 - [ ] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis
 
 - [ ] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+
+- [ ] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014
+
+- [ ] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008
 
 ## Textbook/theorem notes (16)
 
@@ -713,15 +711,15 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra
 
-- [ ] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — applied-algebra
+- [ ] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis
 
-- [ ] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — applied-algebra
+- [ ] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis
 
 - [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
 
 - [ ] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis
 
-- [ ] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — alg-geom — July 10 **OCR: image placeholders**
+- [ ] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders**
 
 - [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
 
@@ -729,7 +727,7 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis
 
-## Review sheets (11)
+## Review sheets (14)
 
 - [ ] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders**
 
@@ -747,11 +745,17 @@ The missing work is creating the collection card and extracting its problems.
 
 - [ ] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom
 
-- [ ] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — applied-algebra
+- [ ] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra
 
 - [ ] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology
 
 - [ ] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders**
+
+- [x] [fields.pdf](assets/attachments/extracted/fields.md) (177L, 8 selected qual problems) — algebra — Fall 2007 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-FIELDS`; review-sheet provenance retained and matching exam problems reuse canonical cards.
+
+- [x] [groups.pdf](assets/attachments/extracted/groups.md) (231L, 7 selected qual problems) — algebra — Spring 2008 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-GROUPS`; review-sheet provenance retained and matching exam problems reuse canonical cards.
+
+- [x] [ringsandmodules.pdf](assets/attachments/extracted/ringsandmodules.md) (151L, 8 selected qual problems) — algebra — Spring 2007 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-RINGS-MODULES`; exact matches reuse canonical cards and the modified scalar-extension item has one explicit `variant-of` card.
 
 ## OCR issues (44 files)
 

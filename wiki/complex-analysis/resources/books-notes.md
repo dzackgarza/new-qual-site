@@ -59,7 +59,7 @@ order: 0
 
 - [Math Camp review](http://web.stanford.edu/~yuvalwig/math/teaching/ComplexAnalysisNotes.pdf)
 
-- [Won UCSD Review Sheet](Won_-_Complex_Analysis_Qual_Sheet.pdf)
+- [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
 
 - [[attachments/Complex_Qual_Notes.pdf|Josh Swanson Complex Prelim Notes]]
 

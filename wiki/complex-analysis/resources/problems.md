@@ -38,6 +38,12 @@ tag:complex/exercise path:"30_Complex"
 
 ## Misc
 
+- [UC Riverside complex analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Complex%20Analysis%20Qualifying.pdf)
+
+- [[attachments/JHU Years of Analysis Exams.pdf|JHU analysis exams]]
+
+- [MATH 8150 Final Exam, Spring 2020](attachments/Spring2020Final.pdf)
+
 - [Utah Math 6220 Assignments.](http://www.math.utah.edu/~astephan/134.pdf)
 
 - [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)

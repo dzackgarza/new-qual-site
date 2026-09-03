@@ -4,23 +4,17 @@ order: 20
 
 # Solutions (Complex)
 
-- [UCSD Solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
-
 - [UCSD 2014 Qual with Solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
 
 - [Minnesota complex analysis exam, Fall 2015](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf)
 
 - [Chateley's complex analysis qual solutions](http://www.jchateley.com/project/complex_qual.pdf), arranged by topic.
 
-- [Minnesota complex analysis prelim](http://www-users.math.umn.edu/~bahra004/complex_prelim.pdf)
-
 - [Minnesota complex analysis prelim solutions](http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf)
 
 - [NYU complex analysis midterm solutions](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
 
 - [Some solutions](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
-
-- [UC Riverside complex analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Complex%20Analysis%20Qualifying.pdf)
 
 - [[Complex_Analysis_Exam_Prep_Solutions.pdf]]
 
@@ -31,8 +25,6 @@ order: 20
 - [Berkeley final solutions](https://math.berkeley.edu/~nikhil/courses/185.f15/finalsol.pdf)
 
 - [Antieau midterms solutions](https://math.northwestern.edu/~antieau/201202-132/midterm-sols.pdf)
-
-- [[attachments/JHU Years of Analysis Exams.pdf|JHU Exams]]
 
 - [Rudin solutions](https://pages.uoregon.edu/ncp/Courses/Math618_Sp20_Web/HW/618_Sp20_HW06_Soln.pdf)
 

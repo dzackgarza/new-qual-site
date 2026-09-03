@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: problem
-Let $\phi: \mathbb{C}[x] \to F$ be a ring homomorphism where $F$ is a field.
+Let $\phi: \mathbb{C}[x] \to F$ be a ring homomorphism where $F$ is a field and $\phi(1)\neq 0$.
 
 (a) Give an example where $\phi$ is not onto.
 
-(b) Show that $F \cong \mathbb{C}$.
+(b) If $\phi$ is onto, show that $F \cong \mathbb{C}$.
 :::

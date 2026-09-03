@@ -21,4 +21,4 @@ order: 1
 
 The counting arguments are [[algebra/group-actions/index|Group actions]].
 
-- [[algebra/groups/notation|Notation]] and [[algebra/groups/resources|Algebra group and ring theory resources]].
+- [[algebra/groups/notation|Notation]].
