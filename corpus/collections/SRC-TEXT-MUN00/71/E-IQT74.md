@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IQT74
-kind: exercise
+kind: problem
 title: Hausdorffness of wedges of circles
 classification:
   areas:

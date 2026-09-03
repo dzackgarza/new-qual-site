@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TTFVV
-kind: exercise
+kind: problem
 title: The countable intersection property characterizes Lindelof spaces
 classification:
   areas:

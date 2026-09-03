@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-35
-kind: exercise
+kind: problem
 title: Nonorientable surface or complex with torsion in $H_1$ cannot embed in $\mathbb{R}^3$ with mapping cylinder neighborhood
 classification:
   areas:

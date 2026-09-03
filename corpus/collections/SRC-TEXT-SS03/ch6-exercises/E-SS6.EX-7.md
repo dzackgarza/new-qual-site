@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-7
-kind: exercise
+kind: problem
 title: "SS 6.7: The Beta function and its relation to Gamma"
 classification:
   areas:

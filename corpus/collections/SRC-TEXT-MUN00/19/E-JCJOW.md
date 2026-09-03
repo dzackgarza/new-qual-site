@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JCJOW
-kind: exercise
+kind: problem
 title: Choice axiom and nonempty cartesian products
 classification:
   areas:

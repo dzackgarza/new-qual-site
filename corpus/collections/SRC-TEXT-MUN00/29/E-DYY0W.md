@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DYY0W
-kind: exercise
+kind: problem
 title: Coset spaces of locally compact groups are locally compact
 classification:
   areas:

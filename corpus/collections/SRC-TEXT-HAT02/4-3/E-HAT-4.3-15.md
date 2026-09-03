@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-15
-kind: exercise
+kind: problem
 title: "Homotopy equivalence fibration is fiber homotopy trivial"
 classification:
   areas:

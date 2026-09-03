@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PLSGP
-kind: exercise
+kind: problem
 title: Epsilon-delta continuity implies open-set continuity
 classification:
   areas:

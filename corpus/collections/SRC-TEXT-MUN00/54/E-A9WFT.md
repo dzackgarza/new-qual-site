@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-A9WFT
-kind: exercise
+kind: problem
 title: Induced homomorphisms of the power and reciprocal power maps
 classification:
   areas:

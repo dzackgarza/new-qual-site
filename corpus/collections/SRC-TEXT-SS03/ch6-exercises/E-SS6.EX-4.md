@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-4
-kind: exercise
+kind: problem
 title: "SS 6.4: Asymptotics of binomial coefficients via Gamma"
 classification:
   areas:

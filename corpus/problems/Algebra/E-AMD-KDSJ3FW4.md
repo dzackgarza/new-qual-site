@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-KDSJ3FW4
-kind: exercise
+kind: problem
 title: Every proper ideal is contained in a maximal ideal
 classification:
   areas:

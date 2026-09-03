@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-24
-kind: exercise
+kind: problem
 title: "Reversing orientation negates a contour integral"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-K8RRE
-kind: exercise
+kind: problem
 title: Closure of an interval in the order topology
 classification:
   areas:

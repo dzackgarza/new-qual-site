@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-39
-kind: exercise
+kind: problem
 title: Relative Mayer–Vietoris sequences for CW pairs from algebraic lemma
 classification:
   areas:

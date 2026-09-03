@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-IDVVQWVQ
-kind: exercise
+kind: problem
 title: Every prime ideal is radical
 classification:
   areas:

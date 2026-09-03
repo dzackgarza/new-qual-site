@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-1
-kind: exercise
+kind: problem
 title: "Homology of $S^1$ with twisted $\\mathbb{Z}$ coefficients"
 classification:
   areas:

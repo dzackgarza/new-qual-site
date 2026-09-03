@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-4
-kind: exercise
+kind: problem
 title: "SS 10.4: Euler's recurrence for the partition function"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-N2
-kind: exercise
+kind: problem
 title: Minimal primes of a ufd are principal
 classification:
   areas:

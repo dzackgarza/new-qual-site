@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY4
-kind: exercise
+kind: problem
 title: Normalizers of Sylow subgroups are self-normalizing
 classification:
   areas:

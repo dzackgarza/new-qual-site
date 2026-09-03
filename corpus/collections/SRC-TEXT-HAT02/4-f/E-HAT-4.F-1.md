@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.F-1
-kind: exercise
+kind: problem
 title: "Direct limit axiom vs. wedge sum axiom"
 classification:
   areas:

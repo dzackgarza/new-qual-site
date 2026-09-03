@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-12
-kind: exercise
+kind: problem
 title: "Whitehead theorem via universal covers"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-10
-kind: exercise
+kind: problem
 title: "SS 6.10: Mellin transforms of cosine and sine"
 classification:
   areas:

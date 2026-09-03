@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.B-2
-kind: exercise
+kind: problem
 title: "Fiber bundles $S^k \\to S^m \\to S^n$ and the Hopf invariant"
 classification:
   areas:

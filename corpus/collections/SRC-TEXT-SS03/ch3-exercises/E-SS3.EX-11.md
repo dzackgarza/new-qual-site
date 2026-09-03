@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-11
-kind: exercise
+kind: problem
 title: "SS 3.11: The mean value of log of 1 minus a e^(i-theta)"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NEFI2
-kind: exercise
+kind: problem
 title: Regular Lindelof spaces are normal
 classification:
   areas:

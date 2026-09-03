@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-U9VN1
-kind: exercise
+kind: problem
 title: Manifolds imbed as closed subspaces of codimension at least one
 classification:
   areas:

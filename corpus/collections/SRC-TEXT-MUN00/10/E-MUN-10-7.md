@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-7
-kind: exercise
+kind: problem
 title: Principle of transfinite induction
 classification:
   areas:

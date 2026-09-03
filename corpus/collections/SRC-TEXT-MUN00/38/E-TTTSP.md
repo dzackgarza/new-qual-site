@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TTTSP
-kind: exercise
+kind: problem
 title: Compactifications of the minimal uncountable well-ordered set
 classification:
   areas:

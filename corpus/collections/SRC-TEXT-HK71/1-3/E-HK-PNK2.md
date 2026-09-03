@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-PNK2
-kind: exercise
+kind: problem
 title: Non-row-equivalent matrices
 classification:
   areas:

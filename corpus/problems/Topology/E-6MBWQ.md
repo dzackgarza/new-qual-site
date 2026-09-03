@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6MBWQ
-kind: exercise
+kind: problem
 title: A metrizable space is compact if and only if it is sequentially compact
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-25
-kind: exercise
+kind: problem
 title: "Non-Hausdorff orbit space from a covering space action"
 classification:
   areas:

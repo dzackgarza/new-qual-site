@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LP0GM
-kind: exercise
+kind: problem
 title: Uniqueness of the slicing over connected evenly covered sets
 classification:
   areas:

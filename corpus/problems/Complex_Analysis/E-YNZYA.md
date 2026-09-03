@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YNZYA
-kind: exercise
+kind: problem
 title: Residue of $1/z^2 + 1$
 classification:
   areas:

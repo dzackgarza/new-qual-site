@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-18
-kind: exercise
+kind: problem
 title: "The conformal map of the disk extends to the boundary (Caratheodory)"
 classification:
   areas:

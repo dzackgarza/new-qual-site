@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-5
-kind: exercise
+kind: problem
 title: Well-ordering theorem implies the axiom of choice
 classification:
   areas:

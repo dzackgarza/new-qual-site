@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M6XGF
-kind: exercise
+kind: problem
 title: Poincaré's theorem on finite-index subgroups
 classification:
   areas:

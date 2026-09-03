@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-14
-kind: exercise
+kind: problem
 title: "Deduce from Hadamard’s theorem that if  is entire and of growth order  that is n"
 classification:
   areas:

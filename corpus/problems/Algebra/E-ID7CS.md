@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ID7CS
-kind: exercise
+kind: problem
 title: $[F:K]=6$ and $\operatorname{Aut}_{K}F\cong S_{3}$ implies $F$ is a cubic splitting
   field
 classification:

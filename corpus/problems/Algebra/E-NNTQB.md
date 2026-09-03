@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NNTQB
-kind: exercise
+kind: problem
 title: 'Lagrange''s theorem: $|G|/|H|=[G:H]$ for finite $G$'
 classification:
   areas:

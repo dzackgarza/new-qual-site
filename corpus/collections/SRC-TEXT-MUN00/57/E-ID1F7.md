@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ID1F7
-kind: exercise
+kind: problem
 title: The theorem of meteorology
 classification:
   areas:

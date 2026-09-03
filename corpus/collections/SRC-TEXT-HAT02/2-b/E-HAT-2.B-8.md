@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-8
-kind: exercise
+kind: problem
 title: "Real division algebras and the Borsuk--Ulam theorem"
 classification:
   areas:

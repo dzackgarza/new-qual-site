@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UDYDX
-kind: exercise
+kind: problem
 title: $1/x^4+1$, half-line
 classification:
   areas:

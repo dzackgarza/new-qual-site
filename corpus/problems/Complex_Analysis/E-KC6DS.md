@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KC6DS
-kind: exercise
+kind: problem
 title: $\log(x) / x^2+a^2$
 classification:
   areas:

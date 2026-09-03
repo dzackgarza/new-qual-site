@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-XG4QLJKL
-kind: exercise
+kind: problem
 title: Localization at a prime ideal is a local ring
 classification:
   areas:

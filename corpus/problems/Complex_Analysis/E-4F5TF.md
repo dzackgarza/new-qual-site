@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4F5TF
-kind: exercise
+kind: problem
 title: Integral computation
 classification:
   areas:

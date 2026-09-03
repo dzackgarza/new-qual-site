@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y22HZ
-kind: exercise
+kind: problem
 title: Uniform limit of holomorphic derivatives is the derivative
 classification:
   areas:

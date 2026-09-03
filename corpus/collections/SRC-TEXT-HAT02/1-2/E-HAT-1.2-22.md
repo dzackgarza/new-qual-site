@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-22
-kind: exercise
+kind: problem
 title: Wirtinger presentation for fundamental group of knot complement
 classification:
   areas:

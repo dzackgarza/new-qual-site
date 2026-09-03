@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-8
-kind: exercise
+kind: problem
 title: "The Bessel functions arise in the study of spherical symmetries and the Fourier "
 classification:
   areas:

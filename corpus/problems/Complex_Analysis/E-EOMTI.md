@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EOMTI
-kind: exercise
+kind: problem
 title: $\log(x) / (1+x^2)^2$
 classification:
   areas:

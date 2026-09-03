@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-6
-kind: exercise
+kind: problem
 title: Every map $S^n \to S^n$ can be homotoped to have a fixed point
 classification:
   areas:

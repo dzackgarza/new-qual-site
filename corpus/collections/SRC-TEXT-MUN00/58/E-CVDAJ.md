@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CVDAJ
-kind: exercise
+kind: problem
 title: Consequences of an abstract degree theory on spheres
 classification:
   areas:

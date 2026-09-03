@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-9
-kind: exercise
+kind: problem
 title: "SS 10.9: The two-squares theorem via the representation count r2(n)"
 classification:
   areas:

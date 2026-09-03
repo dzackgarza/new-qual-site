@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PDDBF
-kind: exercise
+kind: problem
 title: A point-finite open covering that is not locally finite
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5Q5LW
-kind: exercise
+kind: problem
 title: Nonvanishing holomorphic functions of modulus one on the circle are constant
 classification:
   areas:

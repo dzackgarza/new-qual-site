@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-QRCIRKQ7
-kind: exercise
+kind: problem
 title: Prime ideals are irreducible
 classification:
   areas:

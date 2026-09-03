@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-36
-kind: exercise
+kind: problem
 title: Künneth formula $H_i(X \times S^n) \approx H_i(X) \oplus H_{i-n}(X)$
 classification:
   areas:

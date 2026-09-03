@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GZX7B
-kind: exercise
+kind: problem
 title: Components of locally compact paracompact Hausdorff spaces are second countable
 classification:
   areas:

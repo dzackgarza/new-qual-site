@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GAGCW
-kind: exercise
+kind: problem
 title: Schwarz–Pick lemma
 classification:
   areas:

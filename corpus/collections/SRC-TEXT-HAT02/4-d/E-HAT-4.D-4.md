@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-4
-kind: exercise
+kind: problem
 title: "Cohomology of complex flag manifolds"
 classification:
   areas:

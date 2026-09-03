@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-5
-kind: exercise
+kind: problem
 title: "Cauchy's theorem via Green's theorem for C1 functions"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY10
-kind: exercise
+kind: problem
 title: Solvability via the derived series
 classification:
   areas:

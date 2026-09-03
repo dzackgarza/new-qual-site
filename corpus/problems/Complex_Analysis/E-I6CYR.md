@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-I6CYR
-kind: exercise
+kind: problem
 title: $B(z,w)=\frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}$
 classification:
   areas:

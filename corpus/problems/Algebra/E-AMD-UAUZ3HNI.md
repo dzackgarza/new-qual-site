@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-UAUZ3HNI
-kind: exercise
+kind: problem
 title: The five groups of order 12
 classification:
   areas:

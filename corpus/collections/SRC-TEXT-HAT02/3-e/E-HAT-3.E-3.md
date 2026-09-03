@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.E-3
-kind: exercise
+kind: problem
 title: "Bockstein homomorphisms on smash products of Moore spaces"
 classification:
   areas:

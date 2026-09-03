@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-28
-kind: exercise
+kind: problem
 title: "$\\mathbb{Z}_p \\times \\mathbb{Z}_p$ cannot act freely on spheres"
 classification:
   areas:

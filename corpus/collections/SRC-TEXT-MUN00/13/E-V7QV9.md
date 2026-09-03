@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-V7QV9
-kind: exercise
+kind: problem
 title: Comparing the nine topologies on a three-point set
 classification:
   areas:

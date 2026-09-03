@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-23
-kind: exercise
+kind: problem
 title: "Mapping cylinders and cones have CW type"
 classification:
   areas:

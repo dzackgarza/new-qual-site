@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YGD3Z
-kind: exercise
+kind: problem
 title: Properties of the total space of a covering
 classification:
   areas:

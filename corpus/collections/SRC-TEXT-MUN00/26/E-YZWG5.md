@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YZWG5
-kind: exercise
+kind: problem
 title: Separating disjoint compact sets in a Hausdorff space
 classification:
   areas:

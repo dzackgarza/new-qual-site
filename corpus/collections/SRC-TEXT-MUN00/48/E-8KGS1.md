@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8KGS1
-kind: exercise
+kind: problem
 title: Local Baireness implies Baireness
 classification:
   areas:

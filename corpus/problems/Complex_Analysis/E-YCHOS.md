@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YCHOS
-kind: exercise
+kind: problem
 title: A conformal map from the upper half-disc to the upper half-plane
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DUK6M
-kind: exercise
+kind: problem
 title: $xe^{2ix}/x^2-1$
 classification:
   areas:

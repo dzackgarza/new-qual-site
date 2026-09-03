@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-4
-kind: exercise
+kind: problem
 title: "Deck transformation action on $\\pi_n$ of universal cover"
 classification:
   areas:

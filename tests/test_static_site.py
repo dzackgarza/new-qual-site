@@ -68,16 +68,21 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
         site_root,
         Path("tag/P-ONE.html"),
         {"title": "One"},
-        '<p><a href="P-TWO">Two</a><a href="assets/figures/diagram.png">Asset</a><img src="../../assets/figures/diagram.png"></p>',
+        (
+            '<p><a href="P-TWO">Two</a>'
+            '<a href="generate.html?area=algebra&topic=Groups">Practice</a>'
+            '<a href="assets/figures/diagram.png">Asset</a>'
+            '<img src="../../assets/figures/diagram.png"></p>'
+        ),
         "",
-        {"P-TWO": Path("tag/P-TWO.html")},
+        {"P-TWO": Path("tag/P-TWO.html"), "generate.html": Path("generate.html")},
         build_asset_catalog(assets_root),
         StandardPage(Listing()),
     )
 
     links = LinkCollector()
     links.feed((site_root / "tag" / "P-ONE.html").read_text())
-    assert {"P-TWO.html", "../assets/figures/diagram.png"} <= set(links.hrefs)
+    assert {"P-TWO.html", "../generate.html?area=algebra&topic=Groups", "../assets/figures/diagram.png"} <= set(links.hrefs)
     assert "../assets/figures/diagram.png" in links.srcs
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 
@@ -368,7 +373,7 @@ Exhibit an ideal of $\\mathbb{Z}[x]$ that no single element generates.
 def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
     tmp_path: Path,
 ) -> None:
-    """483 of the 4921 titles begin with mathematics, and `$` sorts under every
+    """Some titles begin with mathematics, and `$` sorts under every
     letter, so ordering by the raw title opened the page on a wall of formulas
     with nothing above them naming a subject.
     """

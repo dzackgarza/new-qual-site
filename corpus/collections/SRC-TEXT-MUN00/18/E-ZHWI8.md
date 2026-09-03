@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZHWI8
-kind: exercise
+kind: problem
 title: The set where f is at most g is closed
 classification:
   areas:

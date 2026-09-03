@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-31
-kind: exercise
+kind: problem
 title: "Split sequences from nullhomotopic fiber inclusions"
 classification:
   areas:

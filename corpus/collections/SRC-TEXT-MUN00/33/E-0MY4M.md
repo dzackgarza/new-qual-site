@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0MY4M
-kind: exercise
+kind: problem
 title: Functions vanishing precisely on a closed G-delta set
 classification:
   areas:

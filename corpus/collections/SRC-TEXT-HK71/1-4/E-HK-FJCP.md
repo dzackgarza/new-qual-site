@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-FJCP
-kind: exercise
+kind: problem
 title: Classification of $2 \times 2$ row-reduced echelon matrices
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2X3VM
-kind: exercise
+kind: problem
 title: Behavior of path connectedness under products, closures, images, and unions
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OTJ9S
-kind: exercise
+kind: problem
 title: Coordinate slices are imbeddings
 classification:
   areas:

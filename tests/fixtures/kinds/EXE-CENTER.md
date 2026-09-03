@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: EXE-CENTER
-kind: exercise
+kind: problem
 title: The centre of a nontrivial $p\dash$group
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-9
-kind: exercise
+kind: problem
 title: DeMorgan's laws for arbitrary unions and intersections
 classification:
   areas:

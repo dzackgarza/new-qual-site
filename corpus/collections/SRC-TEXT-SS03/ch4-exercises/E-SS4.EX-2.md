@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-2
-kind: exercise
+kind: problem
 title: "SS 4.2: Derivatives of functions of moderate decrease"
 classification:
   areas:

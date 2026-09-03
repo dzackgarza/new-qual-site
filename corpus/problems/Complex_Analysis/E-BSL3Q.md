@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BSL3Q
-kind: exercise
+kind: problem
 title: Power series of holomorphic functions on the disk converge uniformly on compacta
 classification:
   areas:

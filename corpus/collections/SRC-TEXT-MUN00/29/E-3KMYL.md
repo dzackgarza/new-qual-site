@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3KMYL
-kind: exercise
+kind: problem
 title: Local compactness of products
 classification:
   areas:

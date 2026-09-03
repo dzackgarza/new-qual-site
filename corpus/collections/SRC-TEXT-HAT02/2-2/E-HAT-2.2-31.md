@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-31
-kind: exercise
+kind: problem
 title: Mayer–Vietoris gives $\tilde{H}_n(X \vee Y) \approx \tilde{H}_n(X) \oplus \tilde{H}_n(Y)$ under neighborhood condition
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EUGUZ
-kind: exercise
+kind: problem
 title: Entire functions with $|f|\leq|g|$ are scalar multiples
 classification:
   areas:

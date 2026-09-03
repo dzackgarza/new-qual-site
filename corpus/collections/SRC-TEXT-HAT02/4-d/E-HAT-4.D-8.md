@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-8
-kind: exercise
+kind: problem
 title: "Thom space of a product bundle"
 classification:
   areas:

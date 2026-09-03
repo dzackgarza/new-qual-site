@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-15
-kind: exercise
+kind: problem
 title: "Here are two properties enjoyed by automorphisms of the upper half-plane"
 classification:
   areas:

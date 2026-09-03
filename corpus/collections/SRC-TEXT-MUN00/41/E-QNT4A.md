@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QNT4A
-kind: exercise
+kind: problem
 title: Perfect maps and paracompactness
 classification:
   areas:

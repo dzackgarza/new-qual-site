@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-5
-kind: exercise
+kind: problem
 title: "Gysin sequence and Hopf invariant of sphere bundles"
 classification:
   areas:

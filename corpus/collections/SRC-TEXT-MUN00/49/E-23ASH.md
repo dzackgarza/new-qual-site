@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-23ASH
-kind: exercise
+kind: problem
 title: Small functions in the nowhere-differentiability open sets
 classification:
   areas:

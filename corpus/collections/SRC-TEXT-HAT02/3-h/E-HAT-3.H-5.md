@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-5
-kind: exercise
+kind: problem
 title: "Cohomology of graphs with group ring coefficients"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZC34M
-kind: exercise
+kind: problem
 title: A holomorphic function attaining a minimum of $|f|$ vanishes there or is constant
 classification:
   areas:

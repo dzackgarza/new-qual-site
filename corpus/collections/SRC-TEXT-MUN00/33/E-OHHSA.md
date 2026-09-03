@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OHHSA
-kind: exercise
+kind: problem
 title: A regular space that is not completely regular
 classification:
   areas:

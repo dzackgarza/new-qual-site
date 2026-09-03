@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GYVM8
-kind: exercise
+kind: problem
 title: Compactness characterized by subnets
 classification:
   areas:

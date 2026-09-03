@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4WQEM
-kind: exercise
+kind: problem
 title: Verifying the one-point compactification example for (0,1)
 classification:
   areas:

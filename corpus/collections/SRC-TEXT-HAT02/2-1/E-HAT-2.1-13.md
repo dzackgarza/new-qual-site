@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-13
-kind: exercise
+kind: problem
 title: Homotopic maps induce equal maps on reduced homology
 classification:
   areas:

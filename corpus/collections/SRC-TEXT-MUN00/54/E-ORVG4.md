@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ORVG4
-kind: exercise
+kind: problem
 title: Where path lifting fails for local homeomorphisms
 classification:
   areas:

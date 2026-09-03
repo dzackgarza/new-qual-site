@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.K-5
-kind: exercise
+kind: problem
 title: "Quasifibrations"
 classification:
   areas:

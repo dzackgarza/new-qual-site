@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-20
-kind: exercise
+kind: problem
 title: Euler characteristic is multiplicative for products of finite CW complexes
 classification:
   areas:

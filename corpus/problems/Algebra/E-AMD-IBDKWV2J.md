@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-IBDKWV2J
-kind: exercise
+kind: problem
 title: Abelian groups are nilpotent
 classification:
   areas:

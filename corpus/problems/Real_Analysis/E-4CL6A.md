@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4CL6A
-kind: exercise
+kind: problem
 title: Complete totally bounded subsets of a metric space are compact
 classification:
   areas:

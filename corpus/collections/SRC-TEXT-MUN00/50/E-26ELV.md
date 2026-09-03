@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-26ELV
-kind: exercise
+kind: problem
 title: Second countable locally compact Hausdorff spaces of finite dimension imbed as closed subspaces
 classification:
   areas:

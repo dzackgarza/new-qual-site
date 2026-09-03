@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VYIZJ
-kind: exercise
+kind: problem
 title: 'Fixed points: multiple'
 classification:
   areas:

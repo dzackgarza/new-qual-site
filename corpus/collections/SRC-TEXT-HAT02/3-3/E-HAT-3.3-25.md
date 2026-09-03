@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-25
-kind: exercise
+kind: problem
 title: "Torsionfree $H_{k-1}$ implies torsionfree $H_k$"
 classification:
   areas:

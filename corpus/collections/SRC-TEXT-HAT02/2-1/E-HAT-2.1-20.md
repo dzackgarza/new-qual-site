@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-20
-kind: exercise
+kind: problem
 title: Reduced homology of suspension is shift of reduced homology
 classification:
   areas:

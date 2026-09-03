@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-KRMOU3CI
-kind: exercise
+kind: problem
 title: Groups of order $pqr$ have a normal Sylow subgroup
 classification:
   areas:

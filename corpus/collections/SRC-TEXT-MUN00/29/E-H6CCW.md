@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-H6CCW
-kind: exercise
+kind: problem
 title: Cofinal subsets of directed sets
 classification:
   areas:

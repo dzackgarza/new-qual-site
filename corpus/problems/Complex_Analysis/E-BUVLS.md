@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BUVLS
-kind: exercise
+kind: problem
 title: Expanding Laurent series in different regions
 classification:
   areas:

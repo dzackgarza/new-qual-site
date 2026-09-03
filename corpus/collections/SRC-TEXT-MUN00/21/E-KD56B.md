@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KD56B
-kind: exercise
+kind: problem
 title: First countability of the lower limit topology and the ordered square
 classification:
   areas:

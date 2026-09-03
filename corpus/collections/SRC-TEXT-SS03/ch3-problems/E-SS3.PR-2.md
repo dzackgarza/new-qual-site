@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.PR-2
-kind: exercise
+kind: problem
 title: "Poisson's integral formula for the disk"
 classification:
   areas:

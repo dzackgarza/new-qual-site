@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-7
-kind: exercise
+kind: problem
 title: Finiteness of function sets between finite sets
 classification:
   areas:

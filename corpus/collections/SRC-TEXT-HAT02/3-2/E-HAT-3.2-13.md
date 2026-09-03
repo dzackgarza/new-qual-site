@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-13
-kind: exercise
+kind: problem
 title: "Cohomology of $\\mathbb{CP}^\\infty/\\mathbb{CP}^1$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-N7AOD
-kind: exercise
+kind: problem
 title: The fundamental group of a topological group is abelian
 classification:
   areas:

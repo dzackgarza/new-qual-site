@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-O2OGRSJP
-kind: exercise
+kind: problem
 title: $Z(S_n)=1$ for $n\geq 4$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-10
-kind: exercise
+kind: problem
 title: "SS 1.10: The operators d/dz and d/dz-bar commute and equal the Laplacian"
 classification:
   areas:

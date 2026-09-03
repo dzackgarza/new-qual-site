@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X4TVL
-kind: exercise
+kind: problem
 title: Rational and irrational anti-diagonals in the Sorgenfrey plane
 classification:
   areas:

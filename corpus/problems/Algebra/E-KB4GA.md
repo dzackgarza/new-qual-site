@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KB4GA
-kind: exercise
+kind: problem
 title: Prime ideals, factorization, and chain conditions in PIDs
 classification:
   areas:

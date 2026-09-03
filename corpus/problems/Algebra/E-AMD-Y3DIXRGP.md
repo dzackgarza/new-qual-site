@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-Y3DIXRGP
-kind: exercise
+kind: problem
 title: The stabilizer of an element need not be a normal subgroup
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TUPHD
-kind: exercise
+kind: problem
 title: Pasting schemes for two polygonal regions
 classification:
   areas:

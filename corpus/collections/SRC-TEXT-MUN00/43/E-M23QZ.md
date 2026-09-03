@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M23QZ
-kind: exercise
+kind: problem
 title: Uniqueness of the completion
 classification:
   areas:

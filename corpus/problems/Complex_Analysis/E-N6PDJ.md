@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-N6PDJ
-kind: exercise
+kind: problem
 title: Nonconstant entire functions have dense image
 classification:
   areas:

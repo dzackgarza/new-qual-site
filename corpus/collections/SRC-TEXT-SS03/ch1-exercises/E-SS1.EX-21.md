@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-21
-kind: exercise
+kind: problem
 title: "SS 1.21: Two dyadic series identities for z/(1-z)"
 classification:
   areas:

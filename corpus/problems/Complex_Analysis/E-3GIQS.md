@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3GIQS
-kind: exercise
+kind: problem
 title: Mapping $\DD^c \cap \HH$ conformally onto $\HH$ with prescribed boundary values
 classification:
   areas:

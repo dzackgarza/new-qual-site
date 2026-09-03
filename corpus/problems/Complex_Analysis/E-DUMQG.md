@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DUMQG
-kind: exercise
+kind: problem
 title: Laurent expansions on annuli
 classification:
   areas:

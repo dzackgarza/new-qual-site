@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XVP93
-kind: exercise
+kind: problem
 title: Closed times compact in topological groups via nets
 classification:
   areas:

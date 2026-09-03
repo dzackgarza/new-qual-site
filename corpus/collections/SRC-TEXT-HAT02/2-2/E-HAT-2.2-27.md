@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-27
-kind: exercise
+kind: problem
 title: Splitting of chain short exact sequences does not give splitting of homology
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-6
-kind: exercise
+kind: problem
 title: "SS 5.6: Wallis's product formula"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2Z1TM
-kind: exercise
+kind: problem
 title: Lifting paths in the polar covering of the punctured plane
 classification:
   areas:

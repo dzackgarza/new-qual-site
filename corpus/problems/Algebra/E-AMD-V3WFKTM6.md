@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-V3WFKTM6
-kind: exercise
+kind: problem
 title: Proper containment $\maxspec(R)\subsetneq\spec(R)$
 classification:
   areas:

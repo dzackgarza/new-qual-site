@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-1
-kind: exercise
+kind: problem
 title: "Free simplicial actions are covering space actions"
 classification:
   areas:

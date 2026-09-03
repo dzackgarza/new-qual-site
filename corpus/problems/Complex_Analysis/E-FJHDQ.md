@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FJHDQ
-kind: exercise
+kind: problem
 title: The standard function juggling trick
 classification:
   areas:

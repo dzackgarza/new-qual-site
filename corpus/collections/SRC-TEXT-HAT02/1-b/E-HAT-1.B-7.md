@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-7
-kind: exercise
+kind: problem
 title: "Bipartite realization of graph products"
 classification:
   areas:

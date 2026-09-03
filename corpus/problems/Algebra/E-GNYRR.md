@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GNYRR
-kind: exercise
+kind: problem
 title: Cayley-Hamilton via invariant flags of an eigenbasis
 classification:
   areas:

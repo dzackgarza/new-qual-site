@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SQ4GJ
-kind: exercise
+kind: problem
 title: Expansion for a reciprocal
 classification:
   areas:

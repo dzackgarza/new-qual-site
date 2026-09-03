@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JX67Q
-kind: exercise
+kind: problem
 title: The Cantor set
 classification:
   areas:

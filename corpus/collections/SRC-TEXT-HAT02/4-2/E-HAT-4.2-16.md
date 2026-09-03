@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-16
-kind: exercise
+kind: problem
 title: "Surfaces with infinite $\\pi_1$ are $K(\\pi, 1)$'s"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-8
-kind: exercise
+kind: problem
 title: "Exactness of $\\pi_1$ sequence for pairs"
 classification:
   areas:

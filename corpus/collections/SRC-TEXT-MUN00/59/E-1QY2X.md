@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1QY2X
-kind: exercise
+kind: problem
 title: A flawed proof that the sphere is simply connected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY7
-kind: exercise
+kind: problem
 title: The 2-cycle relation on a subgroup of the symmetric group
 classification:
   areas:

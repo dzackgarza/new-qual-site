@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-15
-kind: exercise
+kind: problem
 title: $H_n(X^n)$ is free as kernel of cellular boundary map
 classification:
   areas:

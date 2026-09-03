@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WPGNS
-kind: exercise
+kind: problem
 title: Entire functions with $\lim_{z\to\infty}f(z)=\infty$ are polynomials
 classification:
   areas:

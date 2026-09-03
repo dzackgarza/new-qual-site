@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-9
-kind: exercise
+kind: problem
 title: "Transfer sequence for trivial coverings"
 classification:
   areas:

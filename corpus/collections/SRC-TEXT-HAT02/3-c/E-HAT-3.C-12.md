@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-12
-kind: exercise
+kind: problem
 title: "Pontryagin product in lens space homology"
 classification:
   areas:

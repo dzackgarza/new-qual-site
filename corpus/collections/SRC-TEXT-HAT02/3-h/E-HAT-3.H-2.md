@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-2
-kind: exercise
+kind: problem
 title: "Homology of nonorientable surfaces with local coefficients"
 classification:
   areas:

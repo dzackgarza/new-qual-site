@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W6MWU
-kind: exercise
+kind: problem
 title: Disc to upper half-plane, cross-ratio
 classification:
   areas:

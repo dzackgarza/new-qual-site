@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZYJGG
-kind: exercise
+kind: problem
 title: Absolute retracts
 classification:
   areas:

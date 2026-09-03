@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GG2
-kind: exercise
+kind: problem
 title: Constructing the field with 125 elements
 classification:
   areas:

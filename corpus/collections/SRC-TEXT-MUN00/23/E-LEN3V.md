@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LEN3V
-kind: exercise
+kind: problem
 title: Unions of intersecting sequences of connected subspaces
 classification:
   areas:

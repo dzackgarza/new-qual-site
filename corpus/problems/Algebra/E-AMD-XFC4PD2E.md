@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-XFC4PD2E
-kind: exercise
+kind: problem
 title: $S_4$ has two normal subgroups $A_4$ and $\ZZ_2^2$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PHSV5
-kind: exercise
+kind: problem
 title: An irreducible $f\in\mathbb{F}_p[x]$ of degree $d$ divides $x^{p^n}-x$ if and
   only if $d$ divides $n$
 classification:

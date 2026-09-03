@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6XHXX
-kind: exercise
+kind: problem
 title: $\mathbb{R}$ is separable
 classification:
   areas:

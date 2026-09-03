@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.K-6
-kind: exercise
+kind: problem
 title: "Projection from $\\Delta X$ is a quasifibration"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-11
-kind: exercise
+kind: problem
 title: "Common covering space without a common cover"
 classification:
   areas:

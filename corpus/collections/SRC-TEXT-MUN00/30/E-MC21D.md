@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MC21D
-kind: exercise
+kind: problem
 title: Density of uncountable products of the line
 classification:
   areas:

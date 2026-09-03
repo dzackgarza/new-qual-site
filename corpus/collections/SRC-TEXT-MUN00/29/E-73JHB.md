@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-73JHB
-kind: exercise
+kind: problem
 title: The one-point compactification of the positive integers
 classification:
   areas:

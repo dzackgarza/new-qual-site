@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-7
-kind: exercise
+kind: problem
 title: "Modified Alexander horned sphere"
 classification:
   areas:

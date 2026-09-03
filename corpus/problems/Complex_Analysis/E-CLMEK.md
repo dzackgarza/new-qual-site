@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CLMEK
-kind: exercise
+kind: problem
 title: Differentiable contractions are uniformly continuous
 classification:
   areas:

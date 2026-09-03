@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-26
-kind: exercise
+kind: problem
 title: "Isomorphic homotopy but different homotopy type"
 classification:
   areas:

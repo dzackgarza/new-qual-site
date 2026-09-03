@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-5
-kind: exercise
+kind: problem
 title: Three equivalent conditions for simply-connected spaces
 classification:
   areas:

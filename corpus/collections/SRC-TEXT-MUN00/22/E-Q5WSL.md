@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Q5WSL
-kind: exercise
+kind: problem
 title: Examples of topological groups
 classification:
   areas:

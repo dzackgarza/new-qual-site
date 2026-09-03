@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WXHMJ
-kind: exercise
+kind: problem
 title: Poles of elliptic functions
 classification:
   areas:

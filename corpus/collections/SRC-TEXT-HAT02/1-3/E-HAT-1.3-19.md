@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-19
-kind: exercise
+kind: problem
 title: "Abelian covering spaces of closed orientable surfaces"
 classification:
   areas:

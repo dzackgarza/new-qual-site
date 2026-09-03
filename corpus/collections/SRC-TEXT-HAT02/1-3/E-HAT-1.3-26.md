@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-26
-kind: exercise
+kind: problem
 title: "Covering spaces and fundamental groups"
 classification:
   areas:

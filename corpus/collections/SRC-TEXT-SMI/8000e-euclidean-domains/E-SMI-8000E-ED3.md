@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED3
-kind: exercise
+kind: problem
 title: Maps out of a free module are determined by images of generators
 classification:
   areas:

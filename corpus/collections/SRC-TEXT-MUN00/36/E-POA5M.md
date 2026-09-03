@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-POA5M
-kind: exercise
+kind: problem
 title: Compact locally imbeddable spaces imbed in euclidean space
 classification:
   areas:

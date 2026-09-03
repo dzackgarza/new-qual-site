@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY8
-kind: exercise
+kind: problem
 title: Transitive subgroups of S(p) containing a transposition are everything
 classification:
   areas:

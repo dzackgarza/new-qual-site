@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DDGMS
-kind: exercise
+kind: problem
 title: Change of base point along a composite path
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-21
-kind: exercise
+kind: problem
 title: "We consider conformal mappings to triangles"
 classification:
   areas:

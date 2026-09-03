@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-V2VS5
-kind: exercise
+kind: problem
 title: Simple zeros of $\sin(\pi z)$ at the integers, and residues of $1/\sin(\pi
   z)$
 classification:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-7FMEI2QD
-kind: exercise
+kind: problem
 title: A ring is local iff $x$ or $1-x$ is a unit for every $x$
 classification:
   areas:

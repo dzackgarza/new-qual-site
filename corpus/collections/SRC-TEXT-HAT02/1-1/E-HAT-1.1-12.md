@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-12
-kind: exercise
+kind: problem
 title: Every homomorphism $\pi_1(S^1) \to \pi_1(S^1)$ is induced by a map
 classification:
   areas:

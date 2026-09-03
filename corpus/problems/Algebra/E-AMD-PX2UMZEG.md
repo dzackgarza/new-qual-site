@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-PX2UMZEG
-kind: exercise
+kind: problem
 title: Intersections, products, and sums of ideals are ideals
 classification:
   areas:

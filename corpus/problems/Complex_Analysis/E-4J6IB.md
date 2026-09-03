@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4J6IB
-kind: exercise
+kind: problem
 title: When bounds imply removability
 classification:
   areas:

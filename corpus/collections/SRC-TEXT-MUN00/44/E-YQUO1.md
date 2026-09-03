@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YQUO1
-kind: exercise
+kind: problem
 title: Peano spaces and the Hahn-Mazurkiewicz theorem
 classification:
   areas:

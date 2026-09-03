@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UMMOE
-kind: exercise
+kind: problem
 title: A two-fold covering detecting nonabelian fundamental group
 classification:
   areas:

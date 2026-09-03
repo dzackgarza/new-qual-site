@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0GRG4
-kind: exercise
+kind: problem
 title: Countability axioms of R^omega in the uniform topology
 classification:
   areas:

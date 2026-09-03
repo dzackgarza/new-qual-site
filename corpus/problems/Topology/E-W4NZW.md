@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W4NZW
-kind: exercise
+kind: problem
 title: The cofinite topology on $\RR$ is compact
 classification:
   areas:

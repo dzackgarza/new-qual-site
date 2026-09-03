@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MGS22
-kind: exercise
+kind: problem
 title: The continuous image of a compact space is compact
 classification:
   areas:

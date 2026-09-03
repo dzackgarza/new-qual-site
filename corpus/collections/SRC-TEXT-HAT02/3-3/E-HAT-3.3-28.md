@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-28
-kind: exercise
+kind: problem
 title: "Nondegeneracy on large subspaces"
 classification:
   areas:

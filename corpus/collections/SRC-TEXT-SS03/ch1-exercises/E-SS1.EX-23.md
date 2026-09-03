@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-23
-kind: exercise
+kind: problem
 title: "SS 1.23: A smooth function whose Taylor series vanishes identically"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.A-2
-kind: exercise
+kind: problem
 title: "Tor with $\\mathbb{Q}/\\mathbb{Z}$ and the torsion subgroup"
 classification:
   areas:

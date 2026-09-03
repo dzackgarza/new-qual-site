@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-R65PW
-kind: exercise
+kind: problem
 title: Finite unions of compact subspaces are compact
 classification:
   areas:

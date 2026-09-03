@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-H4KPWJ75
-kind: exercise
+kind: problem
 title: The minimal polynomial divides the characteristic polynomial
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-24
-kind: exercise
+kind: problem
 title: "Obstructions for homotopy of lifts"
 classification:
   areas:

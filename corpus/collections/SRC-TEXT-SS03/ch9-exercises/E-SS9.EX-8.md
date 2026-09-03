@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-8
-kind: exercise
+kind: problem
 title: "SS 9.8: Decay of the Eisenstein series E4 toward the cusp"
 classification:
   areas:

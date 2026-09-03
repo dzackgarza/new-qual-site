@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WNXIR
-kind: exercise
+kind: problem
 title: Holomorphic functions have discrete zeros
 classification:
   areas:

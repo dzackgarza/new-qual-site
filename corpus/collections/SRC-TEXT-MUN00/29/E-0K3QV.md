@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0K3QV
-kind: exercise
+kind: problem
 title: The one-point compactification of the minimal uncountable well-ordered set
 classification:
   areas:

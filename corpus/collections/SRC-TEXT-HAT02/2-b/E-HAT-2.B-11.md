@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-11
-kind: exercise
+kind: problem
 title: "Homology of $X \\times \\mathbb{RP}^\\infty$ via transfer"
 classification:
   areas:

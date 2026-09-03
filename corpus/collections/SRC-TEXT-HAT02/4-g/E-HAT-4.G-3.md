@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.G-3
-kind: exercise
+kind: problem
 title: "Nerve of the open star cover"
 classification:
   areas:

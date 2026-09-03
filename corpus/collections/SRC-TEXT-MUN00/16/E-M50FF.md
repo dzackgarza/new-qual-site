@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M50FF
-kind: exercise
+kind: problem
 title: Transitivity of the subspace topology
 classification:
   areas:

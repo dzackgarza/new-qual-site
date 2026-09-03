@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZY1RB
-kind: exercise
+kind: problem
 title: Connected ordered sets are linear continua
 classification:
   areas:

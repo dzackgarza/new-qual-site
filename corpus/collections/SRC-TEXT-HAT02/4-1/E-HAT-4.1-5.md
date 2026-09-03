@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-5
-kind: exercise
+kind: problem
 title: "Relative $\\pi_1$ as cosets"
 classification:
   areas:

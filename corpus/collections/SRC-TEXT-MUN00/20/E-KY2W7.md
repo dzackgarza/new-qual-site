@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KY2W7
-kind: exercise
+kind: problem
 title: The dictionary order plane is metrizable
 classification:
   areas:

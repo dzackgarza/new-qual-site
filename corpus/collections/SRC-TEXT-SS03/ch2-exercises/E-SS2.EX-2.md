@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-2
-kind: exercise
+kind: problem
 title: "SS 2.2: The integral of sin x over x"
 classification:
   areas:

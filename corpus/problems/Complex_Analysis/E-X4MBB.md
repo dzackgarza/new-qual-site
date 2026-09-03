@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X4MBB
-kind: exercise
+kind: problem
 title: Finding complex roots
 classification:
   areas:

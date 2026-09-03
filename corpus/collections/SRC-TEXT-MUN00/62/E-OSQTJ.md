@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OSQTJ
-kind: exercise
+kind: problem
 title: Compact contractible subsets of the sphere do not separate
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TVBUC
-kind: exercise
+kind: problem
 title: $\lim_{p\to\infty}\|f\|_p=\|f\|_\infty$ on a finite-measure space
 classification:
   areas:

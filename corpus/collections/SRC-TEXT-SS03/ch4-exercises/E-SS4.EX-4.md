@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-4
-kind: exercise
+kind: problem
 title: "The Fourier transform of a reciprocal polynomial via residues"
 classification:
   areas:

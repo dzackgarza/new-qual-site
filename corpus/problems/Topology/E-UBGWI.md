@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UBGWI
-kind: exercise
+kind: problem
 title: The closure is the smallest closed set containing $A$
 classification:
   areas:

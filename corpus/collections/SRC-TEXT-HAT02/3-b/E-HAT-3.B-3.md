@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.B-3
-kind: exercise
+kind: problem
 title: "Non-naturality of the Künneth splitting"
 classification:
   areas:

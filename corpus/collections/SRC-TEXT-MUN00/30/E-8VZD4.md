@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8VZD4
-kind: exercise
+kind: problem
 title: One-point sets are G-delta in first-countable T1 spaces
 classification:
   areas:

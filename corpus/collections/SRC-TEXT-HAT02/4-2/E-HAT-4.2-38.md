@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-38
-kind: exercise
+kind: problem
 title: "$\\pi_3(S^1 \\vee S^2)$ is not finitely generated"
 classification:
   areas:

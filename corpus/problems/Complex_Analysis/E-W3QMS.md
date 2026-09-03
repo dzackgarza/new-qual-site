@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W3QMS
-kind: exercise
+kind: problem
 title: Holomorphic functions with vanishing derivative are constant
 classification:
   areas:

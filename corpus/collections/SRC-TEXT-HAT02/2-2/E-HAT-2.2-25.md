@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-25
-kind: exercise
+kind: problem
 title: Unique Euler characteristic function on finite CW complexes
 classification:
   areas:

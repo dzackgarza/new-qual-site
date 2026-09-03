@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-4
-kind: exercise
+kind: problem
 title: Surjective map $S^n \to S^n$ of degree zero
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FPZDC
-kind: exercise
+kind: problem
 title: Analyticity of $\Gamma$ on $\Re(s)>0$ and Euler's reflection formula
 classification:
   areas:

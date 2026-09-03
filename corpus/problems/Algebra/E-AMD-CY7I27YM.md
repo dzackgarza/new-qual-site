@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-CY7I27YM
-kind: exercise
+kind: problem
 title: Algebraic extensions are transitive
 classification:
   areas:

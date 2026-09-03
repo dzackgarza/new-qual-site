@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TXSKL
-kind: exercise
+kind: problem
 title: $\lim_{n\to\infty}\sum_{k\ge 1}k^{-2}\sin^n(k)$ and $\lim_{n\to\infty}\sum_{k\ge
   1}k^{-1}e^{-k/n}$
 classification:

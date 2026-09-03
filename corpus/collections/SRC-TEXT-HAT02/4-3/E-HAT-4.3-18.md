@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-18
-kind: exercise
+kind: problem
 title: "Long exact sequence for $\\langle X, - \\rangle$"
 classification:
   areas:

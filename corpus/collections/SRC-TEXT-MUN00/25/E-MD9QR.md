@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MD9QR
-kind: exercise
+kind: problem
 title: The ordered square is locally connected but not locally path connected
 classification:
   areas:

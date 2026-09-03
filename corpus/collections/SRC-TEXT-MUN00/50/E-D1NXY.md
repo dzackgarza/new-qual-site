@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-D1NXY
-kind: exercise
+kind: problem
 title: The line is a manifold that is not compact
 classification:
   areas:

@@ -13,7 +13,7 @@ Two kinds of queue files:
 | --- | ---: | --- |
 | `A-title-question-marks.md` | 0 | Wiki files with `:::{.proof title="?"}` at HEAD. All resolved — zero instances remain. |
 | `B-naked-urls.md` | 0 | Wiki files with bare `<https://...>` link text. All 161 converted and committed. |
-| `C-unsolved-cards.md` | 4551 | Every unsolved problem/exercise card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
+| `C-unsolved-cards.md` | 4551 | Every unsolved problem card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
 | `E-pdf-attachments.md` | 354 | Every PDF not in any collection provenance, classified by document content. The authored work is creating collection cards and extracting problems, one document at a time. |
 | `F-wiki-doctor.md` | 0 | `just doctor` findings; open items are 5 structural one-child directories, each with real content. |

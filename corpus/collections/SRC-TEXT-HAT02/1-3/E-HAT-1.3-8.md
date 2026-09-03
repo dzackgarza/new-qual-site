@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-8
-kind: exercise
+kind: problem
 title: "Simply-connected covers of homotopy equivalent spaces"
 classification:
   areas:

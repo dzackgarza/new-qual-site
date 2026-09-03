@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GRXN4
-kind: exercise
+kind: problem
 title: True/false
 classification:
   areas:

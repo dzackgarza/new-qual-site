@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZXEH5
-kind: exercise
+kind: problem
 title: Generalized tube lemma for compact rectangles
 classification:
   areas:

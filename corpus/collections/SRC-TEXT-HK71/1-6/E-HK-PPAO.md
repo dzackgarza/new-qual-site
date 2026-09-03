@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-PPAO
-kind: exercise
+kind: problem
 title: Eigenvectors of a triangular matrix
 classification:
   areas:

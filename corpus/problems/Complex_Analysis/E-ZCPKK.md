@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZCPKK
-kind: exercise
+kind: problem
 title: Purely imaginary if on circle
 classification:
   areas:

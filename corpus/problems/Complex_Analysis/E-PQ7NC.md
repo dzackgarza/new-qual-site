@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PQ7NC
-kind: exercise
+kind: problem
 title: Complement of the disc to $\mathbb{H}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SA3HI
-kind: exercise
+kind: problem
 title: Disjoint compact and closed sets have positive distance
 classification:
   areas:

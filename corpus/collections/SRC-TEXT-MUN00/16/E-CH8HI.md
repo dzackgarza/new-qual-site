@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CH8HI
-kind: exercise
+kind: problem
 title: Product topologies under refinement of the factors
 classification:
   areas:

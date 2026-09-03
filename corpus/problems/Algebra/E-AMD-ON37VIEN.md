@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-ON37VIEN
-kind: exercise
+kind: problem
 title: $\nilrad{R}=\rad(0)$
 classification:
   areas:

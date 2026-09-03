@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMOHZ
-kind: exercise
+kind: problem
 title: Limit point of zeros is an essential singularity
 classification:
   areas:

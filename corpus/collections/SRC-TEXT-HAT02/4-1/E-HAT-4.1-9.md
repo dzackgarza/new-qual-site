@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-9
-kind: exercise
+kind: problem
 title: "Extending the long exact sequence to $\\pi_0$"
 classification:
   areas:

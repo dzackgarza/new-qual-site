@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VS4XE
-kind: exercise
+kind: problem
 title: Lune with only one intersection point
 classification:
   areas:

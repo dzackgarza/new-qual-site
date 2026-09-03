@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-8
-kind: exercise
+kind: problem
 title: "Tensor product of Hopf algebras"
 classification:
   areas:

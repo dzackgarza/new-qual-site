@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WNTXK
-kind: exercise
+kind: problem
 title: An entire function with values in $\HH$ is constant
 classification:
   areas:

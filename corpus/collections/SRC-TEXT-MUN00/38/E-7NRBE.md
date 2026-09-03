@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7NRBE
-kind: exercise
+kind: problem
 title: The size of the Stone-Cech compactification of the positive integers
 classification:
   areas:

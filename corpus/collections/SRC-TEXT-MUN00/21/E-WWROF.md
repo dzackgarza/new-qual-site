@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WWROF
-kind: exercise
+kind: problem
 title: Closed sets via the closed-set formulation of continuity
 classification:
   areas:

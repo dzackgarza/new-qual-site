@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HQ8N3
-kind: exercise
+kind: problem
 title: Fundamental group of the wedge of a circle and a sphere
 classification:
   areas:

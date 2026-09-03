@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LY1GZ
-kind: exercise
+kind: problem
 title: Connected sets crossing a set and its complement meet the boundary
 classification:
   areas:

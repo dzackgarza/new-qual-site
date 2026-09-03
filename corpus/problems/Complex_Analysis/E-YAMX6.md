@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YAMX6
-kind: exercise
+kind: problem
 title: $x^\alpha/(x+1)^2$
 classification:
   areas:

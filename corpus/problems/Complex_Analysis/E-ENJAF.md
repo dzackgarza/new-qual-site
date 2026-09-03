@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ENJAF
-kind: exercise
+kind: problem
 title: Expansion at an essential singularity
 classification:
   areas:

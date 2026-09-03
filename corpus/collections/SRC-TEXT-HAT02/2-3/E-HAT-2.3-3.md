@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.3-3
-kind: exercise
+kind: problem
 title: Reduced homology theory vanishes on point; suspension isomorphism follows
 classification:
   areas:

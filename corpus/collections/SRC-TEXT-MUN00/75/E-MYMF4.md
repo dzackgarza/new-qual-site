@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MYMF4
-kind: exercise
+kind: problem
 title: The first homology of the connected sum of the projective plane and the torus
 classification:
   areas:

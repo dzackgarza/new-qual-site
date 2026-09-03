@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-YECG
-kind: exercise
+kind: problem
 title: Solutions of $AX = 0$ for $2 \times 2$ matrices
 classification:
   areas:

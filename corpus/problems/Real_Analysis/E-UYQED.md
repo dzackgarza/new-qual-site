@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UYQED
-kind: exercise
+kind: problem
 title: Uniform, pointwise, and a.e. convergence, and uniform convergence of $\sum
   x^n/n!$ on compacta
 classification:

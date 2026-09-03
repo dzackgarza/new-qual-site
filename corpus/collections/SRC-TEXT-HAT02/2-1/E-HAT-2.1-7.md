@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-7
-kind: exercise
+kind: problem
 title: $\Delta$-complex structure on $S^3$ with a single 3-simplex
 classification:
   areas:

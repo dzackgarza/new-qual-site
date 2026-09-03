@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-3
-kind: exercise
+kind: problem
 title: "Homotopy groups of punctured lens spaces"
 classification:
   areas:

@@ -25,7 +25,7 @@ Commit after each.
 
 - [x] 1.4 Resolve card-kind and source-structure defects.
 
-  - Validity: DONE. `BACKLOG.md` `incomplete-metadata: 0` and `orphans: 0`. `card_completeness.py` confirms 0 incomplete problem/exercise cards (all have title, areas, topics, body).
+  - Validity: DONE. `BACKLOG.md` `incomplete-metadata: 0` and `orphans: 0`. `card_completeness.py` confirms 0 incomplete problem cards (all have title, areas, topics, body).
     Prelim source structure repaired at `0960c8092`.
 
 ## Done (reference)

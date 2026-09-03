@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BTZ9P
-kind: exercise
+kind: problem
 title: Pointwise limits of continuous functions are continuous somewhere uncountably
 classification:
   areas:

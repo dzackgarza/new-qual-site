@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-19
-kind: exercise
+kind: problem
 title: Loops in 1-dimensional CW complexes are homotopic to monotone edge sequences
 classification:
   areas:

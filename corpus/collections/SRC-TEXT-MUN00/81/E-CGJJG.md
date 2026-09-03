@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CGJJG
-kind: exercise
+kind: problem
 title: Order-two group actions on the torus
 classification:
   areas:

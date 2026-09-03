@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YFL4K
-kind: exercise
+kind: problem
 title: Uniformly bounded but not equicontinuous
 classification:
   areas:

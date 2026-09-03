@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-1
-kind: exercise
+kind: problem
 title: "SS 2.1: The Fresnel integrals"
 classification:
   areas:

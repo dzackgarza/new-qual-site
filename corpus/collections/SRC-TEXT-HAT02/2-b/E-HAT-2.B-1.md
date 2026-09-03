@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-1
-kind: exercise
+kind: problem
 title: "Homology of complements of wedges and disjoint unions in spheres"
 classification:
   areas:

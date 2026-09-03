@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-18
-kind: exercise
+kind: problem
 title: Attaching cells of dimension $\geq 2$ gives surjection on $\pi_1$
 classification:
   areas:

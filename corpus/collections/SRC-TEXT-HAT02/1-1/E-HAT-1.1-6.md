@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-6
-kind: exercise
+kind: problem
 title: Natural map from $\pi_1$ to unbased homotopy classes of maps $S^1 \to X$
 classification:
   areas:

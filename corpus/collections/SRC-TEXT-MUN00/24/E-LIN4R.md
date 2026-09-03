@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LIN4R
-kind: exercise
+kind: problem
 title: Linear continua in the dictionary order
 classification:
   areas:

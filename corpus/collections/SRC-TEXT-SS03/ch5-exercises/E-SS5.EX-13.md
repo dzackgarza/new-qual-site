@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-13
-kind: exercise
+kind: problem
 title: "SS 5.13: The equation e^z = z has infinitely many solutions"
 classification:
   areas:

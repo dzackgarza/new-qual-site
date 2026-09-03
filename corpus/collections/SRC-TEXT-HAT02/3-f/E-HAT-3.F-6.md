@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-6
-kind: exercise
+kind: problem
 title: "$\\operatorname{Ext}(\\mathbb{Z}_{p^\\infty}, \\mathbb{Z}_p)$"
 classification:
   areas:

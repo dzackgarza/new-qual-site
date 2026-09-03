@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FMCFR
-kind: exercise
+kind: problem
 title: Continuous maps from compact spaces to Hausdorff spaces are closed
 classification:
   areas:

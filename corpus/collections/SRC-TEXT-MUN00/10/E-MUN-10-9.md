@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-9
-kind: exercise
+kind: problem
 title: Antidictionary order on sequences ending in $1$'s
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-25
-kind: exercise
+kind: problem
 title: "The next three calculations provide some insight into Cauchy’s theorem, which we"
 classification:
   areas:

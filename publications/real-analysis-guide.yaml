@@ -22,7 +22,6 @@ sections:
       - ref: PR-6OHTJ
       - ref: PR-OPSAC
       - query:
-          kind: exercise
           topics:
             - Sequences of Numbers
             - Series of Numbers
@@ -31,22 +30,6 @@ sections:
             - Convergence Tests
             - Bernoulli
             - Countability
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Sequences of Numbers
-            - Series of Numbers
-            - Limits
-            - Convergence of Numbers
-            - Convergence Tests
-            - Bernoulli
-            - Countability
-          limit: 500
-          review:
-            mode: any
   - slug: metric-spaces
     title: Metric Spaces, Compactness and Completeness
     parent: sequences-and-series-of-numbers
@@ -67,7 +50,6 @@ sections:
       - ref: D-2MJRE
       - ref: T-7FJFK
       - query:
-          kind: exercise
           topics:
             - Metric Spaces
             - Compactness
@@ -77,23 +59,6 @@ sections:
             - Euclidean Spaces
             - Cantor Set
             - Density
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Metric Spaces
-            - Compactness
-            - Completeness
-            - Closure
-            - Connectedness
-            - Euclidean Spaces
-            - Cantor Set
-            - Density
-          limit: 500
-          review:
-            mode: any
   - slug: continuity
     title: Continuity
     parent: metric-spaces
@@ -113,23 +78,10 @@ sections:
       - ref: T-RA-WORKSHOP-D4-3-5
       - ref: T-O4UD3
       - query:
-          kind: exercise
           topics:
             - Continuity
             - Uniform Continuity
             - Fixed Points
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Continuity
-            - Uniform Continuity
-            - Fixed Points
-          limit: 500
-          review:
-            mode: any
   - slug: differentiation
     title: Differentiation
     parent: continuity
@@ -149,25 +101,11 @@ sections:
       - ref: T-2R7PC
       - ref: PR-LTRLV
       - query:
-          kind: exercise
           topics:
             - Differentiation
             - Mean Value Theorem
             - Variation
             - Calculus
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Differentiation
-            - Mean Value Theorem
-            - Variation
-            - Calculus
-          limit: 500
-          review:
-            mode: any
   - slug: riemann-stieltjes-integration
     title: Riemann-Stieltjes Integration
     parent: differentiation
@@ -186,12 +124,8 @@ sections:
       - ref: T-RA-WORKSHOP-D6-5-5
       - ref: PR-TDH2A
       - query:
-          kind: problem
           topics:
             - Riemann Integrability
-          limit: 500
-          review:
-            mode: any
   - slug: sequences-and-series-of-functions
     title: Sequences and Series of Functions
     parent: riemann-stieltjes-integration
@@ -220,7 +154,6 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-7
       - ref: T-3QNBQ
       - query:
-          kind: exercise
           topics:
             - Uniform Convergence
             - Convergence of Functions
@@ -233,26 +166,6 @@ sections:
             - Trigonometry
             - Roots of Unity
             - Counterexamples
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Uniform Convergence
-            - Convergence of Functions
-            - Sequences of Functions
-            - Series of Functions
-            - Equicontinuity
-            - Arzelà-Ascoli
-            - Stone-Weierstrass
-            - Polynomials
-            - Trigonometry
-            - Roots of Unity
-            - Counterexamples
-          limit: 500
-          review:
-            mode: any
   - slug: measure-and-measurable-functions
     title: Measure and Measurable Functions
     parent: GUIDE-REAL-ANALYSIS
@@ -278,7 +191,6 @@ sections:
       - ref: T-XZE3E
       - ref: T-CGFCU
       - query:
-          kind: exercise
           topics:
             - Measure Theory
             - Borel-Cantelli
@@ -286,21 +198,6 @@ sections:
             - Continuity of Measure
             - Absolute Continuity
             - Radon-Nikodym
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Measure Theory
-            - Borel-Cantelli
-            - Egorov
-            - Continuity of Measure
-            - Absolute Continuity
-            - Radon-Nikodym
-          limit: 500
-          review:
-            mode: any
   - slug: the-lebesgue-integral
     title: The Lebesgue Integral
     parent: measure-and-measurable-functions
@@ -325,7 +222,6 @@ sections:
       - ref: T-4GPEF
       - ref: T-X7XZX
       - query:
-          kind: exercise
           topics:
             - Integrals
             - Convergence of Integrals
@@ -333,21 +229,6 @@ sections:
             - Fubini-Tonelli
             - Small Tails
             - Maximal Functions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Integrals
-            - Convergence of Integrals
-            - Fatou
-            - Fubini-Tonelli
-            - Small Tails
-            - Maximal Functions
-          limit: 500
-          review:
-            mode: any
   - slug: lp-spaces
     title: Lp Spaces and Convolution
     parent: the-lebesgue-integral
@@ -373,7 +254,6 @@ sections:
       - ref: D-ARQFC
       - ref: T-HHFGB
       - query:
-          kind: exercise
           topics:
             - Lp Spaces
             - L¹
@@ -383,23 +263,6 @@ sections:
             - Function Spaces
             - Convolution
             - Approximations to the Identity
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Lp Spaces
-            - L¹
-            - L²
-            - L∞
-            - Norms
-            - Function Spaces
-            - Convolution
-            - Approximations to the Identity
-          limit: 500
-          review:
-            mode: any
   - slug: hilbert-spaces-and-duality
     title: Hilbert Spaces and Duality
     parent: lp-spaces
@@ -431,7 +294,6 @@ sections:
       - ref: T-KQTPR
       - ref: T-TTLXS
       - query:
-          kind: problem
           topics:
             - Hilbert Spaces
             - Inner Product Spaces
@@ -441,9 +303,6 @@ sections:
             - Functional Analysis
             - Weak Convergence
             - Open Mapping Theorem
-          limit: 500
-          review:
-            mode: any
   - slug: fourier-analysis
     title: Fourier Analysis
     parent: hilbert-spaces-and-duality
@@ -463,19 +322,8 @@ sections:
       - ref: T-DTXIA
       - ref: PR-CCDRN
       - query:
-          kind: exercise
           topics:
             - Fourier Analysis
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - Fourier Analysis
-          limit: 500
-          review:
-            mode: any
   - slug: problems-from-the-joint-exams
     title: Problems from the Joint Analysis Exams
     parent: GUIDE-REAL-ANALYSIS
@@ -487,7 +335,6 @@ sections:
       surrounding theory lives.'
     items:
       - query:
-          kind: problem
           topics:
             - Holomorphic Functions
             - Entire Functions
@@ -505,6 +352,3 @@ sections:
             - Schwarz Lemma
             - Argument Principle
             - PDEs
-          limit: 500
-          review:
-            mode: any

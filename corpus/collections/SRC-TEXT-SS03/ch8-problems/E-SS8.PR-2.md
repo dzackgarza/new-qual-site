@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.PR-2
-kind: exercise
+kind: problem
 title: "The angle between two non-zero complex numbers z and  (taken in that order) is s"
 classification:
   areas:

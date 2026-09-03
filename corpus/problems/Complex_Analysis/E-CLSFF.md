@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CLSFF
-kind: exercise
+kind: problem
 title: Meromorphic functions on $\mathbb{CP}^1$
 classification:
   areas:

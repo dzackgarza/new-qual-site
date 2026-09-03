@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-CCULHKQJ
-kind: exercise
+kind: problem
 title: Fundamental theorem of Galois theory
 classification:
   areas:

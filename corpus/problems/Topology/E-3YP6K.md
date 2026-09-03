@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3YP6K
-kind: exercise
+kind: problem
 title: Compact subsets of Hausdorff spaces are closed
 classification:
   areas:

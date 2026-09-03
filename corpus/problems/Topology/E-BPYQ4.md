@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BPYQ4
-kind: exercise
+kind: problem
 title: $[0,1]$ is compact
 classification:
   areas:

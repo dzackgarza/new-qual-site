@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UU8CC
-kind: exercise
+kind: problem
 title: The degree of a map of the circle
 classification:
   areas:

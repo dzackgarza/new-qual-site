@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HEJJK
-kind: exercise
+kind: problem
 title: Entire functions missing a disc
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-J3YZ5TXF
-kind: exercise
+kind: problem
 title: The Galois group of $x^n - 2$ over $\QQ$
 classification:
   areas:

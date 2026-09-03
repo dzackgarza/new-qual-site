@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-01BSA
-kind: exercise
+kind: problem
 title: Isometries of compact metric spaces are surjective
 classification:
   areas:

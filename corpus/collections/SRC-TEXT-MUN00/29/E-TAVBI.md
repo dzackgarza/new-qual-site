@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TAVBI
-kind: exercise
+kind: problem
 title: Continuity characterized by nets
 classification:
   areas:

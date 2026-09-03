@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KDAVR
-kind: exercise
+kind: problem
 title: A closed subset of a compact space is compact
 classification:
   areas:

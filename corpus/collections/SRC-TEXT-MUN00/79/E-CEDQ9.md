@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CEDQ9
-kind: exercise
+kind: problem
 title: Maps of higher spheres into the circle are nulhomotopic
 classification:
   areas:

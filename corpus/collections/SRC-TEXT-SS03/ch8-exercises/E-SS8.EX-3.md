@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-3
-kind: exercise
+kind: problem
 title: "Simple connectedness is a conformal invariant"
 classification:
   areas:

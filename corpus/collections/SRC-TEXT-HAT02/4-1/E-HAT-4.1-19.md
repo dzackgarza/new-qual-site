@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-19
-kind: exercise
+kind: problem
 title: "Weak homotopy equivalence via common CW approximation"
 classification:
   areas:

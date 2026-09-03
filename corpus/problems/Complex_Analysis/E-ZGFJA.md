@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZGFJA
-kind: exercise
+kind: problem
 title: More juggling
 classification:
   areas:

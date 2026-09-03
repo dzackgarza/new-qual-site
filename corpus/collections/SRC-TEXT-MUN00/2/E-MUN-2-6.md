@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-2-6
-kind: exercise
+kind: problem
 title: Restricting domain and range to obtain a bijection
 classification:
   areas:

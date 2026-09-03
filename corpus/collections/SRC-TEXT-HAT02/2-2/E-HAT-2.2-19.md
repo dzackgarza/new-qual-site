@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-19
-kind: exercise
+kind: problem
 title: $H_i(\mathbb{RP}^n/\mathbb{RP}^m)$ by cellular homology
 classification:
   areas:

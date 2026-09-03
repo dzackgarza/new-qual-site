@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MQTBP
-kind: exercise
+kind: problem
 title: Locally metrizable compact Hausdorff spaces are metrizable
 classification:
   areas:

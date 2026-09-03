@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-11
-kind: exercise
+kind: problem
 title: "One can give a neater formulation of the result in Exercise 10 by proving the fo"
 classification:
   areas:

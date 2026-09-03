@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-10
-kind: exercise
+kind: problem
 title: "Connected covering spaces of $S^1 \\vee S^1$"
 classification:
   areas:

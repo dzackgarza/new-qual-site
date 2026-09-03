@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IZKCV
-kind: exercise
+kind: problem
 title: $1/x^4+1$, balancing exponentials
 classification:
   areas:

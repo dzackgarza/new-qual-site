@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-9
-kind: exercise
+kind: problem
 title: Homology of four specific 2-complexes
 classification:
   areas:

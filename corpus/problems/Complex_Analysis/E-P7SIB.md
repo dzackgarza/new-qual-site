@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P7SIB
-kind: exercise
+kind: problem
 title: Trig identities
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1QGID
-kind: exercise
+kind: problem
 title: Compactness, connectedness, and path connectedness of the K-topology line
 classification:
   areas:

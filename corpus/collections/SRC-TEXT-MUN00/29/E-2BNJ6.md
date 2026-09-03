@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2BNJ6
-kind: exercise
+kind: problem
 title: Subnets of convergent nets converge
 classification:
   areas:

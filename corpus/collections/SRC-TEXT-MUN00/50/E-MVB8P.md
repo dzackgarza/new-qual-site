@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MVB8P
-kind: exercise
+kind: problem
 title: Sigma-compact Hausdorff spaces of finite dimension
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XSXAZ
-kind: exercise
+kind: problem
 title: Six topologies on $\mathbb{R}^{d}$
 classification:
   areas:

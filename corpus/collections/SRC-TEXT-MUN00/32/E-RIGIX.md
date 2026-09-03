@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RIGIX
-kind: exercise
+kind: problem
 title: Complete normality of standard spaces and constructions
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GFNDF
-kind: exercise
+kind: problem
 title: The family $\{z^k\}$ on $[0,1]$ is not equicontinuous
 classification:
   areas:

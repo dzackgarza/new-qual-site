@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KJQUD
-kind: exercise
+kind: problem
 title: Closure of a subspace
 classification:
   areas:

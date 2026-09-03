@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8GBZO
-kind: exercise
+kind: problem
 title: The box topology implication in the maps-into-products theorem
 classification:
   areas:

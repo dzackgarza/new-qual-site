@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-5
-kind: exercise
+kind: problem
 title: Fundamental group of planar graph is free on boundary loops of complementary regions
 classification:
   areas:

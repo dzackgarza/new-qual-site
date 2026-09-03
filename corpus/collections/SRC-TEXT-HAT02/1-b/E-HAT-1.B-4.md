@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-4
-kind: exercise
+kind: problem
 title: "Amalgamated products via van Kampen"
 classification:
   areas:

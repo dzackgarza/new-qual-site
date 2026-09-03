@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6IZL3
-kind: exercise
+kind: problem
 title: Bounded harmonic functions
 classification:
   areas:

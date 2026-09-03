@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-T8UBC
-kind: exercise
+kind: problem
 title: Graphs as an imbedding of the function space into the hyperspace
 classification:
   areas:

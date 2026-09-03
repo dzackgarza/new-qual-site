@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FZXFR
-kind: exercise
+kind: problem
 title: $f\in L^1$ need not imply $\hat f\in L^1$; if both, then $f$ is bounded, uniformly
   continuous, and vanishes at infinity
 classification:

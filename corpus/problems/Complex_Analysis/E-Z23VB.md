@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Z23VB
-kind: exercise
+kind: problem
 title: Conformal maps to arbitrary points
 classification:
   areas:

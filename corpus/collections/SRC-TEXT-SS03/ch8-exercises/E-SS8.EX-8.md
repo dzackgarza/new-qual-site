@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-8
-kind: exercise
+kind: problem
 title: "Harmonic function on the first quadrant with piecewise constant boundary values"
 classification:
   areas:

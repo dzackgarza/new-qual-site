@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-18
-kind: exercise
+kind: problem
 title: Suspension vs reduced suspension of convergent sequence; reduced suspension of contractible space need not be contractible
 classification:
   areas:

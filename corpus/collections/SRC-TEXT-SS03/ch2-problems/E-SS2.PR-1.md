@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.PR-1
-kind: exercise
+kind: problem
 title: "Here are some examples of analytic functions on the unit disc that cannot be ext"
 classification:
   areas:

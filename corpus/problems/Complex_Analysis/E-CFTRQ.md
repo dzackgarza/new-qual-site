@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CFTRQ
-kind: exercise
+kind: problem
 title: Automorphisms of $\CP^1$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.K-3
-kind: exercise
+kind: problem
 title: "$SP_n(I) = \\Delta^n$"
 classification:
   areas:

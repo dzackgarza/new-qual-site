@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IY4BS
-kind: exercise
+kind: problem
 title: F-sigma and G-delta sets
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-15
-kind: exercise
+kind: problem
 title: "Abel’s theorem"
 classification:
   areas:

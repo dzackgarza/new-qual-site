@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-7-2
-kind: exercise
+kind: problem
 title: Bijections in the countability proofs for $\mathbb{Q}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-7
-kind: exercise
+kind: problem
 title: "The family of mappings introduced here plays an important role in complex analys"
 classification:
   areas:

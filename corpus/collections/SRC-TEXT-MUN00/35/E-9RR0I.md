@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9RR0I
-kind: exercise
+kind: problem
 title: The universal extension property
 classification:
   areas:

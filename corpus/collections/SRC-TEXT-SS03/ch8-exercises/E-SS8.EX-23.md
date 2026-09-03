@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-23
-kind: exercise
+kind: problem
 title: "SS 8.23: A conformal map onto a regular polygon"
 classification:
   areas:

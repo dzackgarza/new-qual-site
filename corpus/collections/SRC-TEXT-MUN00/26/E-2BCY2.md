@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2BCY2
-kind: exercise
+kind: problem
 title: Intersections of nested families of closed connected sets are connected
 classification:
   areas:

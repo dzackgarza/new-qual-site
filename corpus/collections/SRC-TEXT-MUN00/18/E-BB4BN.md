@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BB4BN
-kind: exercise
+kind: problem
 title: Intervals homeomorphic with the unit interval
 classification:
   areas:

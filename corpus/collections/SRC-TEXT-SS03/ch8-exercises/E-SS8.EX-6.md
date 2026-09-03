@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-6
-kind: exercise
+kind: problem
 title: Conformal invariance of harmonicity via the Laplacian
 classification:
   areas:

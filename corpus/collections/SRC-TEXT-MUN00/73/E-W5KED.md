@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W5KED
-kind: exercise
+kind: problem
 title: Realizing finitely generated abelian groups and cyclic free products
 classification:
   areas:

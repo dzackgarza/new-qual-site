@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-1
-kind: exercise
+kind: problem
 title: Injective map from $\mathbb{Z}_+$ to $X^{\omega}$ without choice
 classification:
   areas:

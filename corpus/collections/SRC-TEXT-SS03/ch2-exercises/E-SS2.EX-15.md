@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-15
-kind: exercise
+kind: problem
 title: Boundary modulus one with f non-vanishing implies constant (Schwarz reflection)
 classification:
   areas:

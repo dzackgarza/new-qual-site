@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-GEZ3H4G7
-kind: exercise
+kind: problem
 title: The minimal polynomial over $L$ divides the minimal polynomial over $F$
 classification:
   areas:

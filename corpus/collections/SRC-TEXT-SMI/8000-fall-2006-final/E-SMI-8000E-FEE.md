@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEE
-kind: exercise
+kind: problem
 title: Proof choice — algebraicity of finite extensions or existence of root fields
 classification:
   areas:

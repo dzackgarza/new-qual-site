@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TOZQJ
-kind: exercise
+kind: problem
 title: 'Residue from Laurent expansion: $1/(z - \sin(z))$'
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6AOD7
-kind: exercise
+kind: problem
 title: Applications of the class equation
 classification:
   areas:

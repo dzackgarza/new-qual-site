@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PAQWN
-kind: exercise
+kind: problem
 title: Polynomial growth of entire functions and Liouville for bounded real part
 classification:
   areas:

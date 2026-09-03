@@ -1,10 +1,10 @@
-"""Report metadata completeness for problem and exercise cards.
+"""Report metadata completeness for problem cards.
 
 A card is *complete* when every metadata field that a reader or generator
 needs is populated.  The recipe is a measurement, not a gate: incomplete
 cards are candidates for authoring, not build failures.
 
-Completeness criteria (problem / exercise cards):
+Completeness criteria (problem cards):
   1. title is present and non-empty
   2. classification.areas is non-empty
   3. classification.topics is non-empty
@@ -37,7 +37,7 @@ def check_card(path: Path) -> list[str]:
     issues: list[str] = []
     kind = meta.get("kind", "")
 
-    if kind not in ("problem", "exercise"):
+    if kind != "problem":
         return []
 
     title = meta.get("title", "")

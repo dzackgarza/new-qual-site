@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RZTZT
-kind: exercise
+kind: problem
 title: Components of R^omega in product, uniform, and box topologies
 classification:
   areas:

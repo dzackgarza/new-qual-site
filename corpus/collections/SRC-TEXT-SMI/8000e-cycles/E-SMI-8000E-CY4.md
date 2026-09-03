@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY4
-kind: exercise
+kind: problem
 title: Star transpositions generate the symmetric group
 classification:
   areas:

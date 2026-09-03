@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-SHA8
-kind: exercise
+kind: problem
 title: $AB$ not invertible when $n < m$
 classification:
   areas:

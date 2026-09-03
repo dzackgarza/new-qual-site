@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4WKOG
-kind: exercise
+kind: problem
 title: Properly discontinuous actions with compactly supported interference
 classification:
   areas:

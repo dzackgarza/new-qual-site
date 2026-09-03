@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-4
-kind: exercise
+kind: problem
 title: Negation of quantified statements about real numbers
 classification:
   areas:

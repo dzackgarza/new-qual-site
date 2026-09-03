@@ -40,7 +40,6 @@ from .pandoc_batch import (
 )
 from .publication import (
     PublicationManifest,
-    PublicationQuery,
     PublicationSection,
     QueryItem,
     ReferenceItem,
@@ -951,36 +950,10 @@ def _transclude_wikilinks(blocks: list[pf.Block], cards: dict[str, sqlite3.Row])
     return list(pf.Doc(*blocks).walk(visit).content)
 
 
-PROBLEMS_PANEL_HEADING = "Problems"
-
-
-def _problems_panel(hits: list[sqlite3.Row], inline_cache: dict[str, list[pf.Inline]]) -> pf.Div:
-    """The problems a `problems:` page claims, listed at its foot."""
-    return pf.Div(
-        pf.Header(*_inlines(PROBLEMS_PANEL_HEADING, inline_cache), level=2),
-        pf.BulletList(
-            *[
-                pf.ListItem(
-                    pf.Plain(
-                        pf.Link(*_inlines(hit["title"], inline_cache), url=hit["id"]),
-                        pf.Space(),
-                        pf.Code(hit["id"]),
-                    )
-                )
-                for hit in hits
-            ]
-        ),
-        classes=["panel", "page-problems"],
-        attributes={"count": str(len(hits))},
-    )
-
-
 def _wiki_blocks(
     page: WikiPage,
     incoming: list[WikiPage],
     cards: dict[str, sqlite3.Row],
-    problems: list[sqlite3.Row],
-    inline_cache: dict[str, list[pf.Inline]],
 ) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
@@ -991,8 +964,8 @@ def _wiki_blocks(
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
     blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
-    if problems:
-        blocks.append(_problems_panel(problems, inline_cache))
+    if page.problems is not None:
+        blocks.append(_practice_link_block(slug(page.source_rel.parts[0]), page.problems.topics))
     html_block = _wiki_incoming_html(incoming)
     if html_block:
         blocks.append(pf.RawBlock(html_block, format="html"))
@@ -1304,38 +1277,6 @@ def asked_json(
     return _asked_meta(data, card), body
 
 
-def exercise_json(
-    data: CardPageData,
-    card: sqlite3.Row,
-    jcache: dict,
-    source_collections: dict[str, list[Appearance]],
-    guide_appearances: dict[str, list[Appearance]],
-    wiki_mentions: dict[str, list[WikiPage]],
-) -> tuple[dict, list]:
-    """Render a drillable exercise without changing its established body parse.
-
-    Exercises historically took the generic card path, so Lamport markers were
-    normalized before any statement wrapper existed. Keep that ordering: the
-    wrapper is navigation/generator structure, not a license to reinterpret an
-    exercise's authored blocks.
-    """
-    body = _dup(jcache[card["id"]])
-    body = _lamport_json_blocks(body)
-    body = _statement_first(body)
-    _rename_json(body)
-    body.extend(_prompts_json(card))
-    body.extend(
-        _relation_groups_json(
-            data,
-            card["id"],
-            source_collections,
-            guide_appearances,
-            wiki_mentions[card["id"]] if card["id"] in wiki_mentions else [],
-        )
-    )
-    return _asked_meta(data, card), body
-
-
 def plain_json(
     data: CardPageData,
     card: sqlite3.Row,
@@ -1611,60 +1552,6 @@ def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite
 
 
 # --- publication manifests --------------------------------------------------
-
-
-# A card is an `exercise` rather than a `problem` when it was written down in a
-# book or on a worksheet instead of sat at an exam. That is provenance, and a
-# reader drilling a topic wants the problems on it either way.
-PROBLEM_KINDS = ("problem", "exercise")
-
-
-def run_page_problems(con: sqlite3.Connection, area: str, topics: tuple[str, ...]) -> list[sqlite3.Row]:
-    """Every problem in one subject carrying any of these topics.
-
-    Wiki `problems:` blocks deliberately render a complete topic listing. Study
-    guides do not call this path: their practice queries are generator deep
-    links and are not resolved against the catalog at build time.
-    """
-    placeholders = ",".join("?" * len(topics))
-    kinds = ",".join("?" * len(PROBLEM_KINDS))
-    return _rows(
-        con,
-        f"""
-        select distinct c.* from cards c
-        join classifications a on a.card_id=c.id and a.axis='area' and a.term=?
-        join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({placeholders})
-        where c.kind in ({kinds})
-        order by c.title
-        """,
-        (area, *topics, *PROBLEM_KINDS),
-    )
-
-
-def resolve_page_problems(con: sqlite3.Connection, pages: list[WikiPage]) -> dict[str, list[sqlite3.Row]]:
-    """Each page's `problems:` block, resolved against the corpus.
-
-    A page is scoped to the subject it is filed under, which is its top-level
-    folder and already what a card's `area` names, so a topic that two subjects
-    share cannot pull the other one's problems onto the page.
-
-    A query that matches nothing fails the build. The page claims to hold the
-    problems on a topic, and an empty panel under that claim is the drift this
-    block exists to end -- a misspelled topic would otherwise read as a subject
-    with nothing written on it yet.
-    """
-    resolved: dict[str, list[sqlite3.Row]] = {}
-    for page in pages:
-        key = page.source_rel.as_posix()
-        if page.problems is None:
-            resolved[key] = []
-            continue
-        area = slug(page.source_rel.parts[0])
-        hits = run_page_problems(con, area, page.problems.topics)
-        if not hits:
-            raise ValueError(f"problems query has no matches in area {area}: wiki/{key}")
-        resolved[key] = hits
-    return resolved
 
 
 # --- pages ------------------------------------------------------------------
@@ -1972,60 +1859,44 @@ def publication_root_page(
     ]
 
 
-def _plural(kind: str) -> str:
-    return f"{kind[:-1]}ies" if kind.endswith("y") else f"{kind}s"
+def _generator_deep_link(area: str, topics: tuple[str, ...] | list[str]) -> str:
+    """A site-root generator link carrying the authored practice filter.
 
-
-def _generator_deep_link(area: str, query: PublicationQuery) -> str:
-    """A link into the generator carrying the guide's complete practice filter.
-
-    Area comes from the guide, while kind and every topic come from the authored
-    query. Repeating `topic=` preserves the query's OR-family exactly; selecting
-    only its first topic would silently narrow many real-analysis and complex-
-    analysis sections.
-
-    A deep link only ever renders on a guide *section* page (a guide root
-    carries no items), which lives two folders below the site root, so the
-    generator is spelled `../../generate.html` and quarto resolves it from the
-    section's own location.
+    Area comes from the guide or wiki page. Repeated `topic=` parameters
+    preserve the authored OR-family exactly. The shared HTML writer resolves
+    `generate.html` relative to the page that contains the link.
     """
     params: list[tuple[str, str]] = []
     if area:
         params.append(("area", area))
-    params.append(("kind", query.kind))
-    params.extend(("topic", topic) for topic in query.topics)
-    return f"../../generate.html?{urlencode(params)}"
+    params.extend(("topic", topic) for topic in topics)
+    return f"generate.html?{urlencode(params)}"
 
 
-def _generator_deep_link_block(
+def _practice_link_block(
     area: str,
-    query: PublicationQuery,
+    topics: tuple[str, ...] | list[str],
 ) -> pf.Block:
-    """The guide's practice-discovery surface is one generator link, not a list.
+    """One problem-discovery link shared by guides and wiki pages.
 
-    In particular this block does not execute the query to compute a count. A
-    build-time count would be another static snapshot of the catalog, and the
-    old query limits already truncated dozens of live guide panels. The
-    generator alone owns which cards currently match.
+    This does not execute the query or compute a count. The generator alone owns
+    which problem cards currently match and lets the reader refine, sample, and
+    print them there.
     """
-    if len(query.topics) == 1:
-        focus = f" on {query.topics[0]}"
-    elif query.topics:
-        focus = " for this section"
+    if len(topics) == 1:
+        focus = f" on {topics[0]}"
+    elif topics:
+        focus = " matching these topics"
     else:
         focus = ""
-    noun = _plural(query.kind)
     return pf.Div(
         pf.Para(
             pf.Link(
-                pf.Str(f"Drill the {noun}{focus} in the generator"),
-                url=_generator_deep_link(area, query),
+                pf.Str(f"Drill the problems{focus} in the generator"),
+                url=_generator_deep_link(area, topics),
             ),
         ),
         classes=["panel", "generator-link"],
-        attributes={
-            "query-kind": query.kind,
-        },
     )
 
 
@@ -2044,7 +1915,7 @@ def publication_section_page(
             case ReferenceItem(ref=card_id):
                 blocks.append(_transclude(_manifest_card(con, card_id), counts))
             case QueryItem(query=query):
-                blocks.append(_generator_deep_link_block(manifest.area, query))
+                blocks.append(_practice_link_block(manifest.area, query.topics))
     return {"title": section.title}, blocks
 
 
@@ -2114,33 +1985,36 @@ def index_page(
         con,
         """
         select
-          (select count(*) from cards where kind in ('problem', 'exercise')) as asked,
+          (select count(*) from cards where kind='problem') as asked,
           (select count(*) from exam_sources) as sittings,
           (select count(distinct institution) from exam_sources) as institutions,
-          (select count(*) from cards where kind in ('problem', 'exercise')
+          (select count(*) from cards where kind='problem'
              and id in (select card_id from sections where section_kind = 'solution')) as solved
         """,
     )[0]
+    intro = (
+        f"Past qualifying-exam problems, with the sources and notes to work them. "
+        f"{scale['asked']:,} problems, from {scale['sittings']:,} exam sittings "
+        f"at {scale['institutions']} institutions and from textbooks, homework sets and compiled scans. "
+        f"{scale['solved']:,} carry a written solution.\n\n"
+    )
+    links = (
+        "## Where to start\n\n"
+        "[Browse](problems.html)\n"
+        ": Every problem, filtered by area, topic, institution and year.\n\n"
+        "[Generate](generate.html)\n"
+        ": A practice set drawn to those same filters.\n\n"
+        "[Exams](exams.html)\n"
+        ": Each sitting as it was sat, problem by problem.\n\n"
+        "[Guides](guides.html)\n"
+        ": One ordered path per subject, built from the same problems. Read front to back:\n"
+        "  a section assumes only the sections above it.\n\n"
+        "[Wiki](wiki/index.html)\n"
+        ": Written notes filed by subject. Look one topic up rather than read a path.\n"
+    )
     output = _successful_outputs(
         pandoc.read_markdown(
-            [
-                f"Past qualifying-exam problems, with the sources and notes to work them. "
-                f"{scale['asked']:,} problems and exercises, from {scale['sittings']:,} exam sittings "
-                f"at {scale['institutions']} institutions and from textbooks, homework sets and compiled scans. "
-                f"{scale['solved']:,} carry a written solution.\n\n"
-                "## Where to start\n\n"
-                "[Browse](problems.html)\n"
-                ": Every problem, filtered by area, topic, institution and year.\n\n"
-                "[Generate](generate.html)\n"
-                ": A practice set drawn to those same filters.\n\n"
-                "[Exams](exams.html)\n"
-                ": Each sitting as it was sat, problem by problem.\n\n"
-                "[Guides](guides.html)\n"
-                ": One ordered path per subject, built from the same problems. Read front to back:\n"
-                "  a section assumes only the sections above it.\n\n"
-                "[Wiki](wiki/index.html)\n"
-                ": Written notes filed by subject. Look one topic up rather than read a path.\n"
-            ],
+            [intro + links],
             MARKDOWN,
         ),
         "index-page read",
@@ -2520,12 +2394,6 @@ title: Generate a practice set
 <div class="gen-panel">
   <form class="gen-controls" onsubmit="return false">
     <div class="grp"><label class="h">Areas</label><div id="gen-areas"></div></div>
-    <div class="grp"><label class="h">Kind</label>
-      <select id="gen-kind" class="form-select">
-        <option value="problem">Problems</option>
-        <option value="exercise">Exercises</option>
-      </select>
-    </div>
     <div class="grp"><label class="h">Institution</label><select id="gen-inst" class="form-select"></select></div>
     <div class="grp"><label class="h">Topics</label><select id="gen-topic" class="form-select" multiple size="8"></select></div>
     <div class="grp"><label class="h">Year</label><select id="gen-year" class="form-select"></select></div>
@@ -2564,14 +2432,12 @@ document.getElementById("gen-topic").innerHTML=values("topic").sort()
   .map(v=>`<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
 fill("gen-year",values("year").sort((a,b)=>Number(b)-Number(a)));
 
-// A guide section deep-links here with its complete practice filter. Repeated
+// A guide/wiki page deep-links here with its complete practice filter. Repeated
 // `topic=` parameters select the same OR-family the authored query names.
 const p=new URLSearchParams(location.search);
 const has=(k,v)=>{const el=document.getElementById(k);return [...el.options].some(o=>o.value===v);};
 const area=p.get("area");
 if(area)for(const el of document.querySelectorAll(".ga"))if(el.value===area)el.checked=true;
-const kind=p.get("kind");
-if(kind&&has("gen-kind",kind))document.getElementById("gen-kind").value=kind;
 const topics=p.getAll("topic");
 if(topics.length)for(const option of document.getElementById("gen-topic").options)option.selected=topics.includes(option.value);
 if(p.get("institution")&&has("gen-inst",p.get("institution")))document.getElementById("gen-inst").value=p.get("institution");
@@ -2591,7 +2457,6 @@ const statementOf=async (url)=>{
 
 document.getElementById("gen-go").onclick=async()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
-  const kind=document.getElementById("gen-kind").value;
   const inst=document.getElementById("gen-inst").value;
   const topics=[...document.getElementById("gen-topic").selectedOptions].map(o=>o.value);
   const year=document.getElementById("gen-year").value;
@@ -2600,7 +2465,7 @@ document.getElementById("gen-go").onclick=async()=>{
   const sheet=document.getElementById("gen-sheet");
   sheet.innerHTML='<p class="text-muted">Drawing…</p>';
 
-  const filters={kind};
+  const filters={kind:"problem"};
   if(areas.length) filters.area={any:areas};
   if(inst) filters.institution=inst;
   if(topics.length) filters.topic={any:topics};
@@ -2615,8 +2480,7 @@ document.getElementById("gen-go").onclick=async()=>{
     return {data,statement:await statementOf(data.url)};
   }));
   const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst:"")+(topics.length?" · "+topics.join(", "):"")+(year?" · "+year:"");
-  const noun=kind==="exercise"?"exercises":"problems";
-  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} ${noun} · ${escapeHtml(title)}</p>`+
+  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${drawn.length} problems · ${escapeHtml(title)}</p>`+
     drawn.map(({data,statement},i)=>{
       const sat=[(data.filters.institution||[]).join(", "),(data.filters.year||[]).join(", ")].filter(Boolean).join(" · ");
       return `<div class="q">
@@ -2630,7 +2494,7 @@ document.getElementById("gen-go").onclick=async()=>{
   if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
 };
 document.getElementById("gen-print").onclick=()=>window.print();
-if([...p.keys()].some(k=>["area","kind","topic","institution","year"].includes(k)))document.getElementById("gen-go").click();
+if([...p.keys()].some(k=>["area","topic","institution","year"].includes(k)))document.getElementById("gen-go").click();
 </script>
 ```
 """
@@ -2694,7 +2558,6 @@ def project(
             ACROSS_SUBJECTS_LEDE,
         ]
     )
-    inline_values.append(PROBLEMS_PANEL_HEADING)
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
@@ -2724,21 +2587,7 @@ def project(
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(con, "select * from cards where kind='exercise'"):
-        meta, body = exercise_json(
-            card_page_data,
-            card,
-            jcache,
-            source_collections,
-            guide_appearances,
-            mentions,
-        )
-        document = SearchDocument(
-            _card_filters(card_page_data, card),
-            sort=(("listing", _listing_sort(card_page_data, card)),),
-        )
-        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(con, "select * from cards where kind not in ('problem','exercise','collection')"):
+    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
         meta, body = plain_json(
             card_page_data,
             card,
@@ -2914,7 +2763,6 @@ def project(
     if wiki_pages:
         cards = {row["id"]: row for row in _rows(con, "select * from cards")}
         wiki_navigation = _wiki_navigation(wiki_pages)
-        page_problems = resolve_page_problems(con, wiki_pages)
         wiki_items: list[PageItem] = [
             (
                 (
@@ -2923,8 +2771,6 @@ def project(
                         page,
                         incoming_pages[page.route.as_posix()],
                         cards,
-                        page_problems[page.source_rel.as_posix()],
-                        inline_cache,
                     ),
                 ),
                 out / page.route.with_suffix(".qmd"),

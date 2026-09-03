@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HC37E
-kind: exercise
+kind: problem
 title: Nonabelian fundamental groups of higher-genus tori
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-J2G54GWY
-kind: exercise
+kind: problem
 title: Composition factors of finite solvable groups have prime order
 classification:
   areas:

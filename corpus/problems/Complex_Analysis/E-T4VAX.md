@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-T4VAX
-kind: exercise
+kind: problem
 title: $z^5+3z+1$ has five zeros in $|z|\leq 2$
 classification:
   areas:

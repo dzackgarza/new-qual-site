@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DHOWRFW5
-kind: exercise
+kind: problem
 title: $A_n$ is the unique proper nontrivial normal subgroup of $S_n$ for $n\geq 5$
 classification:
   areas:

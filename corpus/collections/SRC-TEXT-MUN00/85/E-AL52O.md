@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AL52O
-kind: exercise
+kind: problem
 title: The Euler number is a topological invariant
 classification:
   areas:

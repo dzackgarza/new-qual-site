@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED7
-kind: exercise
+kind: problem
 title: Quotienting a free module by coordinate cyclic submodules
 classification:
   areas:

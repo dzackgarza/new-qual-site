@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FJZCL
-kind: exercise
+kind: problem
 title: Convergence of $\frac1z\sum_{k=1}^\infty\frac{z^k}{k}$ on $S^1\setminus\{1\}$
   by summation by parts
 classification:

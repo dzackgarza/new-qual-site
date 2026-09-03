@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-20
-kind: exercise
+kind: problem
 title: "Trivial $\\pi_1$-action on $\\pi_n$ of products"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X04YN
-kind: exercise
+kind: problem
 title: Elementary operations behind the classification figures
 classification:
   areas:

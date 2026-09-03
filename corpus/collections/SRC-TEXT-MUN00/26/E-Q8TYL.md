@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Q8TYL
-kind: exercise
+kind: problem
 title: Compactness under comparable topologies
 classification:
   areas:

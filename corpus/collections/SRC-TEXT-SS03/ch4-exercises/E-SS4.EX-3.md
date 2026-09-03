@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-3
-kind: exercise
+kind: problem
 title: "SS 4.3: The Poisson kernel as a Fourier transform pair"
 classification:
   areas:

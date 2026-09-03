@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W7FNF
-kind: exercise
+kind: problem
 title: The lower limit line and the ordered square are not metrizable
 classification:
   areas:

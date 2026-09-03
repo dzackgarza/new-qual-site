@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2M0XQ
-kind: exercise
+kind: problem
 title: Fundamental groups of twelve standard spaces
 classification:
   areas:

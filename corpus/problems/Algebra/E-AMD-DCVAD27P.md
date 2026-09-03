@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DCVAD27P
-kind: exercise
+kind: problem
 title: The union of all maximal ideals is the set of non-units
 classification:
   areas:

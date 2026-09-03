@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-J3QMJ
-kind: exercise
+kind: problem
 title: Constancy on a closed subdisk of $\mathbb{D}$ implies constancy on $\mathbb{D}$
 classification:
   areas:

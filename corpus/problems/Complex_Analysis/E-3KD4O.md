@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3KD4O
-kind: exercise
+kind: problem
 title: Once complex-differentiable functions are holomorphic
 classification:
   areas:

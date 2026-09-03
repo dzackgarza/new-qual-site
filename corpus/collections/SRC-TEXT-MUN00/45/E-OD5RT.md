@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OD5RT
-kind: exercise
+kind: problem
 title: Countable products of compact metrizable spaces are compact
 classification:
   areas:

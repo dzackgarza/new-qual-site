@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-2
-kind: exercise
+kind: problem
 title: Immediate successors in well-ordered sets
 classification:
   areas:

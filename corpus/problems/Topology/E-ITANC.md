@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ITANC
-kind: exercise
+kind: problem
 title: A compact subset of a Hausdorff space is closed
 classification:
   areas:

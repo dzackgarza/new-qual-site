@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XJMHL
-kind: exercise
+kind: problem
 title: Separation by topologist's sine curve variants on the sphere
 classification:
   areas:

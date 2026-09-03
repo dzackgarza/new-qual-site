@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-20CHL
-kind: exercise
+kind: problem
 title: Continuity implies separate continuity
 classification:
   areas:

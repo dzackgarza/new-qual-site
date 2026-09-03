@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-JGCVGZJE
-kind: exercise
+kind: problem
 title: $R\units$ need not be closed under addition
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-27
-kind: exercise
+kind: problem
 title: "Two actions of the fundamental group on the fiber"
 classification:
   areas:

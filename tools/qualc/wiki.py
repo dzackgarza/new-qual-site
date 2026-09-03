@@ -55,23 +55,15 @@ def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
 
 @dataclass(frozen=True)
 class ProblemsQuery:
-    """The problems a page claims, named by rule instead of one id at a time.
+    """The practice family a page names, by topic rather than copied card ids.
 
     A wiki page could only name cards by writing each id out, so the folders
     that list the problems on a topic are a hand-typed copy of what the cards
     already record, and they drift as soon as a card is added or reclassified.
-    The study-guide counterpart is only a deep link into the generator. A wiki
-    `problems:` block is different because the authored page claims to contain
-    the listing itself:
-
-    Every match is rendered. A guide query is never resolved at build time; a
-    topic page is the list, and dropping matches would make the page's claim
-    false.
-
-    Provenance does not narrow it. A card is an `exercise` rather than a
-    `problem` when it came from a book or a worksheet, which says where it was
-    written down and nothing about what it asks, so a reader drilling a topic
-    wants both.
+    Like a study-guide query, this becomes one deep link into the centralized
+    generator. The wiki owns the authored mathematical exposition and the topic
+    family; it does not materialize a second, non-filterable problem browser at
+    the foot of the page.
     """
 
     topics: tuple[str, ...]

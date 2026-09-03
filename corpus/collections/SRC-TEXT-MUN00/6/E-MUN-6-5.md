@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-5
-kind: exercise
+kind: problem
 title: Finiteness of Cartesian products
 classification:
   areas:

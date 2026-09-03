@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-2-2
-kind: exercise
+kind: problem
 title: Preimage preserves all set operations; image preserves unions only
 classification:
   areas:

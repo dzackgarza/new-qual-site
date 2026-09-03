@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JUMC3
-kind: exercise
+kind: problem
 title: Differences of open and closed sets
 classification:
   areas:

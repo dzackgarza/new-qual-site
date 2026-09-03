@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5I2NN
-kind: exercise
+kind: problem
 title: Using the estimates
 classification:
   areas:

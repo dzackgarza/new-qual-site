@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-3
-kind: exercise
+kind: problem
 title: Conjugate-linear map on $\mathbb{C}^{2k}$ induces fixed-point-free map on $\mathbb{CP}^{2k-1}$
 classification:
   areas:

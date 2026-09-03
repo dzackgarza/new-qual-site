@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED8
-kind: exercise
+kind: problem
 title: Structure of finitely generated modules over a Euclidean domain
 classification:
   areas:

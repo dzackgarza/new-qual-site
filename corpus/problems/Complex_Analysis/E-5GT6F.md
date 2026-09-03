@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5GT6F
-kind: exercise
+kind: problem
 title: Radius of convergence of $\sqrt{z}$ about $4+3i$
 classification:
   areas:

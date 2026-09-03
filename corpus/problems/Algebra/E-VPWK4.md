@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VPWK4
-kind: exercise
+kind: problem
 title: Size of a conjugacy class divides the order of the group
 classification:
   areas:

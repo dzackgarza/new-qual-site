@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-28
-kind: exercise
+kind: problem
 title: "Fundamental group of an orbit space"
 classification:
   areas:

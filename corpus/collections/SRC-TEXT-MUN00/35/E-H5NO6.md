@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-H5NO6
-kind: exercise
+kind: problem
 title: Retracts of Hausdorff spaces and the plane
 classification:
   areas:

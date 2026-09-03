@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OUBBQ
-kind: exercise
+kind: problem
 title: Uniform continuity of $x^n$
 classification:
   areas:

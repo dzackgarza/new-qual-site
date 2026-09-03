@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.A-6
-kind: exercise
+kind: problem
 title: "Tor is always a torsion group"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-6
-kind: exercise
+kind: problem
 title: "Connected components as equivalence classes"
 classification:
   areas:

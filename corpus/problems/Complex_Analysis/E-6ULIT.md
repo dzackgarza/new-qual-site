@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6ULIT
-kind: exercise
+kind: problem
 title: Uniform limits preserve continuity and uniform continuity; pointwise limits
   need not
 classification:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7ZCKU
-kind: exercise
+kind: problem
 title: No bijective conformal maps from a disc to an annulus
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DKMHL
-kind: exercise
+kind: problem
 title: Element orders divide the group order
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JZMX6
-kind: exercise
+kind: problem
 title: Restrictions of open maps to open subspaces are open
 classification:
   areas:

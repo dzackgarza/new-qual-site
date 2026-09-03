@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-37
-kind: exercise
+kind: problem
 title: Elementary derivation of Mayer–Vietoris sequence in simplicial homology
 classification:
   areas:

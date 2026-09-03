@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-18
-kind: exercise
+kind: problem
 title: $H_1(\mathbb{R}, \mathbb{Q})$ is free abelian
 classification:
   areas:

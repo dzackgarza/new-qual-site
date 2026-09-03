@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS7.EX-2
-kind: exercise
+kind: problem
 title: "The following links the multiplication of Dirichlet series with the divisibility"
 classification:
   areas:

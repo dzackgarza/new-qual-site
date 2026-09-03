@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WAYFS
-kind: exercise
+kind: problem
 title: Zeros of $\sin(\pi z)$ and singularities of $\csc(\pi z)$
 classification:
   areas:

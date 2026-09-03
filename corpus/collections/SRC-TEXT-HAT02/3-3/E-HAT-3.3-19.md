@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-19
-kind: exercise
+kind: problem
 title: "Countability of homology of open subsets of $\\mathbb{R}^n$"
 classification:
   areas:

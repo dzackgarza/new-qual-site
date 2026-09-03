@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5VQHD
-kind: exercise
+kind: problem
 title: Heine–Cantor theorem
 classification:
   areas:

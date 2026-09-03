@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-1
-kind: exercise
+kind: problem
 title: Brouwer fixed point theorem via degree theory
 classification:
   areas:

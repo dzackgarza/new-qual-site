@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LEE5L
-kind: exercise
+kind: problem
 title: A quotient map that is neither open nor closed
 classification:
   areas:

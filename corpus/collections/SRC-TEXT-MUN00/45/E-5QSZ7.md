@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5QSZ7
-kind: exercise
+kind: problem
 title: Sources of equicontinuity
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-6
-kind: exercise
+kind: problem
 title: "SS 6.6: Odd harmonic partial sums approach gamma/2 + log 2"
 classification:
   areas:

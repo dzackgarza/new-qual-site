@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-MT5
-kind: exercise
+kind: problem
 title: The Cayley-Hamilton theorem
 classification:
   areas:

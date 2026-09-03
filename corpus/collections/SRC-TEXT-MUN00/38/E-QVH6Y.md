@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QVH6Y
-kind: exercise
+kind: problem
 title: Metrizable spaces with metrizable compactifications
 classification:
   areas:

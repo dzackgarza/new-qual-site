@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LXY7N
-kind: exercise
+kind: problem
 title: A non-equicontinuous sequence
 classification:
   areas:

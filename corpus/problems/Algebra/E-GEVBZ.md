@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GEVBZ
-kind: exercise
+kind: problem
 title: Rank-nullity theorem via Jordan canonical form
 classification:
   areas:

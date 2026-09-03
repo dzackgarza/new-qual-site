@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WE7UT
-kind: exercise
+kind: problem
 title: Residues and classifying singularities
 classification:
   areas:

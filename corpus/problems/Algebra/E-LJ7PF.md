@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LJ7PF
-kind: exercise
+kind: problem
 title: Normal matrices are diagonalizable
 classification:
   areas:

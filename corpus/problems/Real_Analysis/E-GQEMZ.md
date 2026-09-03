@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GQEMZ
-kind: exercise
+kind: problem
 title: $\partial_i(f\ast g)=f\ast\partial_i g$ for $f\in L^1$
 classification:
   areas:

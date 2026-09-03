@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TBLM7
-kind: exercise
+kind: problem
 title: Locally compact Hausdorff spaces are completely regular
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TM2Z4
-kind: exercise
+kind: problem
 title: Images of sequences of poles converge to anything
 classification:
   areas:

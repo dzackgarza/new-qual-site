@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.PR-2
-kind: exercise
+kind: problem
 title: "The modular group SL2(Z)"
 classification:
   areas:

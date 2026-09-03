@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZDVLE
-kind: exercise
+kind: problem
 title: Entire functions with nonnegative real part are constant
 classification:
   areas:

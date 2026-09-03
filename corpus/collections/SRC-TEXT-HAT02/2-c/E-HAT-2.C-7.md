@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-7
-kind: exercise
+kind: problem
 title: Lefschetz fixed point theorem with field coefficients
 classification:
   areas:

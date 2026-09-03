@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-10
-kind: exercise
+kind: problem
 title: Existence and uniqueness of positive square roots
 classification:
   areas:

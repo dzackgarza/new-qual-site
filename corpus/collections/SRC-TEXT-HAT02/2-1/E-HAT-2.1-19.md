@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-19
-kind: exercise
+kind: problem
 title: Homology of subspace of $I \times I$ with rational first coordinate
 classification:
   areas:

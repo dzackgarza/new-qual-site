@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XDJRZ
-kind: exercise
+kind: problem
 title: The l2 space is a vector space with the l2 metric
 classification:
   areas:

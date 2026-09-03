@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR8
-kind: exercise
+kind: problem
 title: Contractions of ideals along ring maps
 classification:
   areas:

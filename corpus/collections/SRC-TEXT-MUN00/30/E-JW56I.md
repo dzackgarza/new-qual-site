@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JW56I
-kind: exercise
+kind: problem
 title: Countability axioms of the minimal uncountable well-ordered set
 classification:
   areas:

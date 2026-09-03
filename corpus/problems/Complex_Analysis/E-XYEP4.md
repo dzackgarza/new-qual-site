@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XYEP4
-kind: exercise
+kind: problem
 title: $1/x\sqrt{x^2-1}$
 classification:
   areas:

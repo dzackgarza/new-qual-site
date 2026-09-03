@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-5
-kind: exercise
+kind: problem
 title: "Short exact sequence in mapping torus"
 classification:
   areas:

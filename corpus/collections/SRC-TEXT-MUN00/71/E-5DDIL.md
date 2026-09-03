@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5DDIL
-kind: exercise
+kind: problem
 title: Fundamental groups of wedges with nice neighborhoods
 classification:
   areas:

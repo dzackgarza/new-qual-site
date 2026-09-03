@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BNX60
-kind: exercise
+kind: problem
 title: Local finiteness of the shifted double intervals
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-11
-kind: exercise
+kind: problem
 title: "Picard's little theorem for entire functions of finite order"
 classification:
   areas:

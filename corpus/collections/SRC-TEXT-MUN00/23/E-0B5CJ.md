@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0B5CJ
-kind: exercise
+kind: problem
 title: Punctured products of connected spaces are connected
 classification:
   areas:

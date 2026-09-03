@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-5
-kind: exercise
+kind: problem
 title: Fixed-point-free homotopies of reflected surfaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-2
-kind: exercise
+kind: problem
 title: "Group structure on $\\langle X, S^1 \\rangle$"
 classification:
   areas:

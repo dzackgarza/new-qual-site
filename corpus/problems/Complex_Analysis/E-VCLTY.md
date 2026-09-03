@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VCLTY
-kind: exercise
+kind: problem
 title: Laurent expansions about different points
 classification:
   areas:

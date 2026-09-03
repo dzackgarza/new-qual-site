@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-4
-kind: exercise
+kind: problem
 title: Finite simply ordered sets have a largest element
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1QFIO
-kind: exercise
+kind: problem
 title: Intersections and unions of families of topologies
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XQ4BA
-kind: exercise
+kind: problem
 title: Automorphisms of $\CC$
 classification:
   areas:

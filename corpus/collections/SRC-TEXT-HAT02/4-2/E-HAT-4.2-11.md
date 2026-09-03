@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-11
-kind: exercise
+kind: problem
 title: "$\\pi_2(X, X^1)$ and the kernel of $\\pi_1(X^1) \\to \\pi_1(X)$"
 classification:
   areas:

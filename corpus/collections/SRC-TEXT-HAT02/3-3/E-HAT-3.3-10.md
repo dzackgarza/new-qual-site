@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-10
-kind: exercise
+kind: problem
 title: "Degree 1 implies surjection on $\\pi_1$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5CS9C
-kind: exercise
+kind: problem
 title: R^omega in the uniform topology
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-7
-kind: exercise
+kind: problem
 title: "CW complexes with prescribed homotopy groups"
 classification:
   areas:

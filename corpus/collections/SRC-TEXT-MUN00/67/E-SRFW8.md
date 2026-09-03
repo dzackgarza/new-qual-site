@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SRFW8
-kind: exercise
+kind: problem
 title: Subgroups need not be direct summands
 classification:
   areas:

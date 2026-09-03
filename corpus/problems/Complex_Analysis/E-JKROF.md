@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JKROF
-kind: exercise
+kind: problem
 title: $1/a+b\cos(\theta)$
 classification:
   areas:

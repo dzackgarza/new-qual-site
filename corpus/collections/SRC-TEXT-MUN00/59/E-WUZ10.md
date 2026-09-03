@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WUZ10
-kind: exercise
+kind: problem
 title: Two spheres touching at a point
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JSPEB
-kind: exercise
+kind: problem
 title: Using the estimates
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WH2YQ
-kind: exercise
+kind: problem
 title: "The locus $\\Arg\\qty{z-a\\over z-b}=\\theta$: circular arcs through $a$ and $b$"
 classification:
   areas:

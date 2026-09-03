@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-N6
-kind: exercise
+kind: problem
 title: Localization at a prime is a local ring
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-9
-kind: exercise
+kind: problem
 title: "SS 8.9: An unbounded harmonic function with zero boundary values"
 classification:
   areas:

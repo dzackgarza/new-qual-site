@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-30
-kind: exercise
+kind: problem
 title: Homology of mapping tori via long exact sequence
 classification:
   areas:

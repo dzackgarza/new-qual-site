@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G5BOG
-kind: exercise
+kind: problem
 title: Subspaces of Hausdorff spaces are Hausdorff
 classification:
   areas:

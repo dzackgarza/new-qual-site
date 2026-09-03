@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5VWPC
-kind: exercise
+kind: problem
 title: The shrinking lemma for point-finite open coverings
 classification:
   areas:

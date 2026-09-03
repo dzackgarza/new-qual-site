@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-7
-kind: exercise
+kind: problem
 title: Homotopy of Dehn twist on $S^1 \times I$ stationary on one boundary only
 classification:
   areas:

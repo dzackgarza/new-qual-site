@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DI5UYFIZ
-kind: exercise
+kind: problem
 title: $-1$ is the unique element of order $2$ in the quaternion group
 classification:
   areas:

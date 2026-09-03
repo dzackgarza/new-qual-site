@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FFNIM
-kind: exercise
+kind: problem
 title: Adjoining cells of dimension above two does not change the fundamental group
 classification:
   areas:

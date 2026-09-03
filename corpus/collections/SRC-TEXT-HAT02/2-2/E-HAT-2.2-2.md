@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-2
-kind: exercise
+kind: problem
 title: Map of $S^{2n}$ has fixed point or antipodal point; $\mathbb{RP}^{2n}$ maps have fixed points
 classification:
   areas:

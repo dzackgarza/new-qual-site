@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FJJA6
-kind: exercise
+kind: problem
 title: $\log(x)/1+x^2$
 classification:
   areas:

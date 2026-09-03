@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4GLUR
-kind: exercise
+kind: problem
 title: Singularities of of $\sin(z)/z$
 classification:
   areas:

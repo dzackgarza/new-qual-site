@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-14
-kind: exercise
+kind: problem
 title: Isomorphism $\pi_1(X \times Y) \approx \pi_1(X) \times \pi_1(Y)$ given by projections
 classification:
   areas:

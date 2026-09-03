@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-2-5
-kind: exercise
+kind: problem
 title: Left inverses, right inverses, and bijectivity
 classification:
   areas:

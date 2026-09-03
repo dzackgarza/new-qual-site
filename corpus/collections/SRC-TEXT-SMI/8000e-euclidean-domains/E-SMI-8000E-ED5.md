@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED5
-kind: exercise
+kind: problem
 title: Matrices over a Euclidean domain are diagonalizable by invertible row and column operations
 classification:
   areas:

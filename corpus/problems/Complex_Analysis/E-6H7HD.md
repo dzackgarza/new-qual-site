@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6H7HD
-kind: exercise
+kind: problem
 title: Using algebraic topology
 classification:
   areas:

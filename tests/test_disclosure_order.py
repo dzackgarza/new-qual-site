@@ -1,6 +1,6 @@
 """A card page gives hints their own disclosure tier before solutions.
 
-Hints and solutions are sections of the problem/exercise card. A hint stops
+Hints and solutions are sections of the problem card. A hint stops
 being a hint once the answer is already on the screen above it, so authored
 problem bodies place `.hint` before `.solution`.
 """

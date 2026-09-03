@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-17
-kind: exercise
+kind: problem
 title: "Maps to $K(G,n)$ are determined by $\\pi_n$"
 classification:
   areas:

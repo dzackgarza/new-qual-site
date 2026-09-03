@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-N5AYS
-kind: exercise
+kind: problem
 title: Disjoint open collections in separable spaces are countable
 classification:
   areas:

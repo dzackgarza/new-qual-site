@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-79XXG
-kind: exercise
+kind: problem
 title: Covering transformations of four coverings of the figure eight
 classification:
   areas:

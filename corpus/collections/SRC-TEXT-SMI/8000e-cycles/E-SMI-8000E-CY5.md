@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY5
-kind: exercise
+kind: problem
 title: The sign homomorphism from the Vandermonde polynomial
 classification:
   areas:

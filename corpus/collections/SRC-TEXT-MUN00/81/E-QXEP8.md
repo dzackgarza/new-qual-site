@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QXEP8
-kind: exercise
+kind: problem
 title: Lens spaces
 classification:
   areas:

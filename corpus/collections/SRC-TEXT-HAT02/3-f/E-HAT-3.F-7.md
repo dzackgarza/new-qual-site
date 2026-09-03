@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-7
-kind: exercise
+kind: problem
 title: "Moore spaces as quotients"
 classification:
   areas:

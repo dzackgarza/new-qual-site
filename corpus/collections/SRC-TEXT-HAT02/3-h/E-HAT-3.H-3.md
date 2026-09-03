@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-3
-kind: exercise
+kind: problem
 title: "Classification of group bundles via $B\\operatorname{Aut}(G)$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4FZVU
-kind: exercise
+kind: problem
 title: Continuity and convergence in the product, uniform, and box topologies
 classification:
   areas:

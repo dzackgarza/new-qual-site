@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-5
-kind: exercise
+kind: problem
 title: "Baumslag--Solitar group as a graph of groups"
 classification:
   areas:

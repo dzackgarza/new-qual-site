@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-C7KV4
-kind: exercise
+kind: problem
 title: The lower limit and K-topologies are not comparable
 classification:
   areas:

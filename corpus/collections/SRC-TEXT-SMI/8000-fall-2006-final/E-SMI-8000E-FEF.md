@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEF
-kind: exercise
+kind: problem
 title: Proof choice — existence of algebraic closures or embedding into algebraically closed fields
 classification:
   areas:

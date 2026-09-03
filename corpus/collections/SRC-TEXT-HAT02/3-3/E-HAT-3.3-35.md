@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-35
-kind: exercise
+kind: problem
 title: "Poincaré duality for noncompact manifolds with boundary"
 classification:
   areas:

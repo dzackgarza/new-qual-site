@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-15
-kind: exercise
+kind: problem
 title: "SS 6.15: An integral representation of the zeta function"
 classification:
   areas:

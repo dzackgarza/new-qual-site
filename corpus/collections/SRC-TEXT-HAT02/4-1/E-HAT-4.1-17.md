@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-17
-kind: exercise
+kind: problem
 title: "Connectivity of products and smash products"
 classification:
   areas:

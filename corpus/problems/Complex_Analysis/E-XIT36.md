@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XIT36
-kind: exercise
+kind: problem
 title: Application of summation by parts
 classification:
   areas:

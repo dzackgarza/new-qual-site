@@ -346,9 +346,5 @@ sections:
       nowhere near it. Reading them together is the fastest revision the archive supports.'
     items:
       - query:
-          kind: problem
           topics:
             - Counterexamples
-          limit: 16
-          review:
-            mode: any

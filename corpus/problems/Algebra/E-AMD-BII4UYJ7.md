@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-BII4UYJ7
-kind: exercise
+kind: problem
 title: Prime ideals are primary
 classification:
   areas:

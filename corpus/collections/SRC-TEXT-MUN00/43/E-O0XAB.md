@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O0XAB
-kind: exercise
+kind: problem
 title: Completeness via nested closed sets of vanishing diameter
 classification:
   areas:

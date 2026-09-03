@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OIS5D
-kind: exercise
+kind: problem
 title: Definition of a basis for a topology
 classification:
   areas:

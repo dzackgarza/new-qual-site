@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-3
-kind: exercise
+kind: problem
 title: "In contrast with the result in Lemma 1"
 classification:
   areas:

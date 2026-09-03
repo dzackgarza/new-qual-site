@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-17
-kind: exercise
+kind: problem
 title: Relative homology of surfaces with point and circle subsets
 classification:
   areas:

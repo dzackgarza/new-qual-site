@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EYILL
-kind: exercise
+kind: problem
 title: No fixed points implies homotopic to antipodal
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.PR-3
-kind: exercise
+kind: problem
 title: "SS 10.PR-3: A congruence group and its fundamental domain"
 classification:
   areas:

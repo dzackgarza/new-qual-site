@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-1
-kind: exercise
+kind: problem
 title: Injective maps between finite sets of different sizes
 classification:
   areas:

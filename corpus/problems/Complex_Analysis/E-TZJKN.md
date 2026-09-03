@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TZJKN
-kind: exercise
+kind: problem
 title: Holomorphic functions have harmonic components
 classification:
   areas:

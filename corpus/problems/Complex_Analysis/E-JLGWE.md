@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JLGWE
-kind: exercise
+kind: problem
 title: Extended Liouville theorem
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-28
-kind: exercise
+kind: problem
 title: Mayer–Vietoris computations for torus with Möbius band and $\mathbb{RP}^2$ with Möbius band
 classification:
   areas:

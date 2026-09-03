@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-4
-kind: exercise
+kind: problem
 title: "Maps between Eilenberg--MacLane spaces"
 classification:
   areas:

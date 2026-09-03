@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9V5EM
-kind: exercise
+kind: problem
 title: Powers converge pointwise but not uniformly on [0,1]
 classification:
   areas:

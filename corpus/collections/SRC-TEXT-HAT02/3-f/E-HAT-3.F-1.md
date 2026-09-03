@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-1
-kind: exercise
+kind: problem
 title: "Reverse and double mapping telescopes"
 classification:
   areas:

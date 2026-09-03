@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-KJ3EIH6T
-kind: exercise
+kind: problem
 title: The four groups of order 28
 classification:
   areas:

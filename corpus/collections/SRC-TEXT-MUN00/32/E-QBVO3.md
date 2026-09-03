@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QBVO3
-kind: exercise
+kind: problem
 title: Normality of topological groups
 classification:
   areas:

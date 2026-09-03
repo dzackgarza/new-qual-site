@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-16
-kind: exercise
+kind: problem
 title: Ranks of simplicial chain groups of $\Delta^n$ and homology of skeleta
 classification:
   areas:

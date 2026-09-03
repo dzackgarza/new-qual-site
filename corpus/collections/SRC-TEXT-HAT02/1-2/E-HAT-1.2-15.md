@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-15
-kind: exercise
+kind: problem
 title: Canonical map from loop complex $L(X)$ to $X$ induces isomorphism on $\pi_1$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BPSOU
-kind: exercise
+kind: problem
 title: Entire $O(|z|^p)$ functions are polynomials of degree at most $\lfloor p\rfloor$
 classification:
   areas:

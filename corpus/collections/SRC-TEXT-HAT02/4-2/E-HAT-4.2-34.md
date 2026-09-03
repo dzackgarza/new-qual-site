@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-34
-kind: exercise
+kind: problem
 title: "Hopf bundle composed with torus collapse"
 classification:
   areas:

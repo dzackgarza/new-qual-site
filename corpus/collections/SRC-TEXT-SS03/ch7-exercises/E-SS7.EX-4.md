@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS7.EX-4
-kind: exercise
+kind: problem
 title: "Dirichlet L-series for periodic coefficients"
 classification:
   areas:

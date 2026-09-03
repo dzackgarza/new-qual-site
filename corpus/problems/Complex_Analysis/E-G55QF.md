@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G55QF
-kind: exercise
+kind: problem
 title: Mapping $\DD^c \intersect \HH$ to $\HH$ via cross-ratios
 classification:
   areas:

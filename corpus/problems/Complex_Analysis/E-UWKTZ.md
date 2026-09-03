@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UWKTZ
-kind: exercise
+kind: problem
 title: Entire functions for which $f(1/z)$ has a pole at $0$ are polynomials
 classification:
   areas:

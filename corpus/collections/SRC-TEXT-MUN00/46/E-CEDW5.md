@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CEDW5
-kind: exercise
+kind: problem
 title: Power series partial sums converge compactly but not uniformly
 classification:
   areas:

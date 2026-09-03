@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-30
-kind: exercise
+kind: problem
 title: "Fiber bundle projections from subspaces of $\\mathbb{R}^2$"
 classification:
   areas:

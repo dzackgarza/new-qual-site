@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-12
-kind: exercise
+kind: problem
 title: "Homotopic maps give fiber homotopy equivalent fibrations"
 classification:
   areas:

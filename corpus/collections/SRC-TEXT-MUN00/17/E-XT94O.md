@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XT94O
-kind: exercise
+kind: problem
 title: Equivalents of the T1 axiom
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-26QQP
-kind: exercise
+kind: problem
 title: $\sum_{k\in\mathbb{Z}}\frac{(-1)^k}{(k+a)^2}=\pi^2\cos(\pi a)\csc^2(\pi a)$
   for $a\in\mathbb{R}\setminus\mathbb{Z}$
 classification:

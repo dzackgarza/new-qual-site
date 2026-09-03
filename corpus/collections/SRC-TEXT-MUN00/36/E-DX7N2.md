@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DX7N2
-kind: exercise
+kind: problem
 title: The seventeen basic properties under continuous maps
 classification:
   areas:

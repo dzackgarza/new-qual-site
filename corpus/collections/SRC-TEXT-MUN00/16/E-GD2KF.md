@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GD2KF
-kind: exercise
+kind: problem
 title: Refining a topology refines the subspace topologies
 classification:
   areas:

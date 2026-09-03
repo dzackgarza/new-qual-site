@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-II4JY
-kind: exercise
+kind: problem
 title: The first homology of the Klein bottle
 classification:
   areas:

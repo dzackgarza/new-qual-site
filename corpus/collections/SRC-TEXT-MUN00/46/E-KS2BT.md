@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KS2BT
-kind: exercise
+kind: problem
 title: Completeness of the compact convergence topology over sigma-compact domains
 classification:
   areas:

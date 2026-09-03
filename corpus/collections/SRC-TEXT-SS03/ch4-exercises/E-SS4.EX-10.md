@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-10
-kind: exercise
+kind: problem
 title: "This exercise generalizes some of the properties of  related to the fact that it"
 classification:
   areas:

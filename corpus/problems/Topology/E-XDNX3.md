@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XDNX3
-kind: exercise
+kind: problem
 title: Compact subspaces of Hausdorff spaces are closed
 classification:
   areas:

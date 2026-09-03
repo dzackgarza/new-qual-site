@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1KV5G
-kind: exercise
+kind: problem
 title: Translations are homeomorphisms; topological groups are homogeneous
 classification:
   areas:

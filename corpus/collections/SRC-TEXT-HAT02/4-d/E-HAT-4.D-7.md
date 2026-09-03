@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-7
-kind: exercise
+kind: problem
 title: "Thom class implies orientability"
 classification:
   areas:

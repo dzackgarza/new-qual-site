@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FRWVZ
-kind: exercise
+kind: problem
 title: $\int_0^{\infty}\frac{\cos x}{x^2+b^2}\,dx=\frac{\pi e^{-b}}{2b}$
 classification:
   areas:

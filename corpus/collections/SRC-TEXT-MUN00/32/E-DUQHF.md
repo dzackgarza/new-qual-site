@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DUQHF
-kind: exercise
+kind: problem
 title: Closed subspaces of normal spaces are normal
 classification:
   areas:

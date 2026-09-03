@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-2
-kind: exercise
+kind: problem
 title: "SS 5.2: Orders of growth of standard entire functions"
 classification:
   areas:

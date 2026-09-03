@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-16
-kind: exercise
+kind: problem
 title: "Lifting covering spaces through composites"
 classification:
   areas:

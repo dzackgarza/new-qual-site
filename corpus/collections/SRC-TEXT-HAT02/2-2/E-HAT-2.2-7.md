@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-7
-kind: exercise
+kind: problem
 title: Induced map on local homology of invertible linear transformation is $\pm 1$ according to sign of determinant
 classification:
   areas:

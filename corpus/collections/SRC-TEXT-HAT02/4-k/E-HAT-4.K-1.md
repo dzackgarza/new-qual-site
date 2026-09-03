@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.K-1
-kind: exercise
+kind: problem
 title: "Mayer--Vietoris for CW subcomplexes"
 classification:
   areas:

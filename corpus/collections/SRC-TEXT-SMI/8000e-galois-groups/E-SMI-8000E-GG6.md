@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GG6
-kind: exercise
+kind: problem
 title: The Galois group of X^5 - X - 1 over Q is S(5)
 classification:
   areas:

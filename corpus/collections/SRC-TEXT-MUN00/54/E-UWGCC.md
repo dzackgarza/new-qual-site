@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UWGCC
-kind: exercise
+kind: problem
 title: The fundamental group of the torus via the circle covering
 classification:
   areas:

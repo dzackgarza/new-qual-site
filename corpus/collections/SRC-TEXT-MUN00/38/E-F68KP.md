@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F68KP
-kind: exercise
+kind: problem
 title: Nonmetrizability of the Stone-Cech compactification
 classification:
   areas:

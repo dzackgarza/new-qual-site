@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-J2K6
-kind: exercise
+kind: problem
 title: Row-reduction and factorization over $\CC$
 classification:
   areas:

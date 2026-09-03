@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DWC4M
-kind: exercise
+kind: problem
 title: The equalizer of two maps into a Hausdorff space is closed
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-9
-kind: exercise
+kind: problem
 title: Borsuk–Ulam bisects three compact sets in $\mathbb{R}^3$
 classification:
   areas:

@@ -1,7 +1,7 @@
 """Collection `provenance` lists: empty lists, unresolved hrefs, hrefs listed
 on more than one collection, hrefs whose path is a markdown file, hrefs whose
 path is an image file, hrefs whose path is under a forbidden source tree, and
-collections whose area appears on no problem or exercise card.
+collections whose area appears on no problem card.
 
 Named for exactly what it measured. Empty provenance is the YAML list as written,
 not a finding that no source exists. A dead href is the GET status or missing
@@ -11,7 +11,7 @@ one card. A markdown href is a path or URL whose last suffix is `.md` or
 `.markdown`, not a decision that the file is an importer wrapper. An image href
 is a path or URL whose last suffix is an image extension, not a decision that
 no exam paper exists. A collection area without problem cards is that area on
-no `problem` or `exercise` card, not a decision that the collection should be
+no `problem` card, not a decision that the collection should be
 deleted. It is not wired to `qualc check`, `just test`, or the build: a finding
 is a candidate, never an instruction to act.
 
@@ -60,9 +60,6 @@ class Check:
     @property
     def ok(self) -> bool:
         return not self.findings
-
-
-PROBLEM_KINDS = frozenset({"problem", "exercise"})
 
 
 @dataclass(frozen=True)
@@ -167,7 +164,7 @@ def load_corpus_provenance(
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
             raise ValueError(f"{path}: {exc}") from exc
         kind = meta.get("kind")
-        if kind in PROBLEM_KINDS:
+        if kind == "problem":
             problem_areas.update(_areas(meta))
             continue
         if kind != "collection":

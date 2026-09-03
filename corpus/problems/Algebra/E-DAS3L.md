@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DAS3L
-kind: exercise
+kind: problem
 title: Cyclic groups, Euler's totient, and $\operatorname{Aut}(\mathbb{Z}/n\mathbb{Z})$
 classification:
   areas:

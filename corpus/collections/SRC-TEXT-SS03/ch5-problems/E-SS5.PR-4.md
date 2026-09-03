@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.PR-4
-kind: exercise
+kind: problem
 title: Growth order of an entire function from its Taylor coefficients
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LOA25
-kind: exercise
+kind: problem
 title: Metrizability equals paracompact Hausdorff for locally euclidean spaces
 classification:
   areas:

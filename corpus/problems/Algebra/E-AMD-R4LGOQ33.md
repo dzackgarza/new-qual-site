@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-R4LGOQ33
-kind: exercise
+kind: problem
 title: $p$-groups are solvable
 classification:
   areas:

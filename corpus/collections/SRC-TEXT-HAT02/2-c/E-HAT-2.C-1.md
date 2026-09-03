@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-1
-kind: exercise
+kind: problem
 title: Minimum number of edges for simplicial map $S^1 \to S^1$ of degree $n$
 classification:
   areas:

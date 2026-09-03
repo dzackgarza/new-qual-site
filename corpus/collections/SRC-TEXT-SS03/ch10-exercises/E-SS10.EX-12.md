@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-12
-kind: exercise
+kind: problem
 title: "Here we give another identity involving  , which is equivalent to the foursquare"
 classification:
   areas:

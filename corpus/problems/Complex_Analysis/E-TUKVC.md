@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TUKVC
-kind: exercise
+kind: problem
 title: Entire functions with a vanishing Taylor coefficient at every point are polynomials
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DMMQW
-kind: exercise
+kind: problem
 title: Basis theorem for the box and product topologies
 classification:
   areas:

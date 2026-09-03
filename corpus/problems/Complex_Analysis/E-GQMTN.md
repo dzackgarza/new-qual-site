@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GQMTN
-kind: exercise
+kind: problem
 title: There is no entire function with $|f(z)|\ge|z|+1$ for all $z$
 classification:
   areas:

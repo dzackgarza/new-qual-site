@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-6
-kind: exercise
+kind: problem
 title: "SS 4.6: A partial-fraction sum evaluating to coth of pi-a"
 classification:
   areas:

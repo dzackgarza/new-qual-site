@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-12
-kind: exercise
+kind: problem
 title: "The principle that a function and its Fourier transform cannot both be too small"
 classification:
   areas:

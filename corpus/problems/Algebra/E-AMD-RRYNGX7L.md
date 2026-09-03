@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-RRYNGX7L
-kind: exercise
+kind: problem
 title: The cokernel of $A\in M_n(\ZZ)$ is finite of order $|\det A|$ iff $\det A\neq
   0$
 classification:

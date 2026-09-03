@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-14
-kind: exercise
+kind: problem
 title: Even maps $S^n \to S^n$ must have even degree; degree zero when $n$ even
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.D-2
-kind: exercise
+kind: problem
 title: "Fundamental group of $SO(n)$"
 classification:
   areas:

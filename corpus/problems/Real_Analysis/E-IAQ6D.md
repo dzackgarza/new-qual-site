@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IAQ6D
-kind: exercise
+kind: problem
 title: Continuous functions on $[0,1]$ with vanishing moments are identically zero
 classification:
   areas:

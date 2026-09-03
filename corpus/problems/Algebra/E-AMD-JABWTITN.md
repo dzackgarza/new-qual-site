@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-JABWTITN
-kind: exercise
+kind: problem
 title: Splitting fields of separable polynomials are Galois
 classification:
   areas:

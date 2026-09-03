@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-S7K3V
-kind: exercise
+kind: problem
 title: Local compactness of balls versus completeness
 classification:
   areas:

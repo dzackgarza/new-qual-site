@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-21
-kind: exercise
+kind: problem
 title: "Certain sets have geometric properties that guarantee they are simply connected"
 classification:
   areas:

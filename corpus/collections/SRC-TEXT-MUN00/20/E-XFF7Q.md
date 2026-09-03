@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XFF7Q
-kind: exercise
+kind: problem
 title: Uniform balls are not products of intervals
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EG3W7
-kind: exercise
+kind: problem
 title: Isolated zeros of $f'$, and $f'=g'$ implies $f-g$ is constant
 classification:
   areas:

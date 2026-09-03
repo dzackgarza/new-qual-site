@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.3-1
-kind: exercise
+kind: problem
 title: Torsion subgroup and mod-torsion functor do not define homology theories
 classification:
   areas:

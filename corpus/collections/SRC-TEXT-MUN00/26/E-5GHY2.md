@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5GHY2
-kind: exercise
+kind: problem
 title: Projections with compact factor are closed maps
 classification:
   areas:

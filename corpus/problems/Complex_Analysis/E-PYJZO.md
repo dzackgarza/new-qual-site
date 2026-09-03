@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PYJZO
-kind: exercise
+kind: problem
 title: Standard sector
 classification:
   areas:

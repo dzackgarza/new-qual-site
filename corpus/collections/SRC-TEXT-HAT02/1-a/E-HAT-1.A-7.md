@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-7
-kind: exercise
+kind: problem
 title: Nontrivial normal subgroup of infinite index in finitely generated free group is not finitely generated
 classification:
   areas:

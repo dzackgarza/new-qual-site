@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GMYE2
-kind: exercise
+kind: problem
 title: Uniform limits, differentiability counterexamples, and the Cantor set
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ELZ3Z
-kind: exercise
+kind: problem
 title: A function with bounded derivative is uniformly continuous
 classification:
   areas:

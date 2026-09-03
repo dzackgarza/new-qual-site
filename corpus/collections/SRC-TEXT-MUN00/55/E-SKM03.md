@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SKM03
-kind: exercise
+kind: problem
 title: Positive eigenvalues for nonnegative matrices
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.I-2
-kind: exercise
+kind: problem
 title: "Suspension of $K(\\mathbb{Z}_m \\times \\mathbb{Z}_n, 1)$ for coprime $m, n$"
 classification:
   areas:

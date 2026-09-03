@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SKD7P
-kind: exercise
+kind: problem
 title: Power series converge uniformly on their radius of convergence
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-FAT34AQV
-kind: exercise
+kind: problem
 title: Diagonalizable versus distinct eigenvalues
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UDRRC
-kind: exercise
+kind: problem
 title: The euclidean metric via the Cauchy-Schwarz inequality
 classification:
   areas:

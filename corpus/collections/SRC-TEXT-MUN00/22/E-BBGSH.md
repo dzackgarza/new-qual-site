@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BBGSH
-kind: exercise
+kind: problem
 title: Quotients of the plane by level-set relations
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ORJPT
-kind: exercise
+kind: problem
 title: Convergence of $\prod_{n\in\mathbb{Z}}(1+a_n)$ when $\{a_n\}\in\ell_1(\mathbb{Z})$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7EL3U
-kind: exercise
+kind: problem
 title: If $f_n\in C^1[a,b]$ with $f_n'\to g$ uniformly and $f_n(x_0)$ convergent,
   then $f_n\to f$ uniformly with $f'=g$
 classification:

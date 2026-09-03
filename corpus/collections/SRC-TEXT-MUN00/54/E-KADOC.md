@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KADOC
-kind: exercise
+kind: problem
 title: Coverings over simply connected bases are homeomorphisms
 classification:
   areas:

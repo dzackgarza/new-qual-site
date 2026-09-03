@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0SFDE
-kind: exercise
+kind: problem
 title: The line as a countable union of sets with empty interior
 classification:
   areas:

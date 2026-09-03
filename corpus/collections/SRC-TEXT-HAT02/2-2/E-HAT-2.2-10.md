@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-10
-kind: exercise
+kind: problem
 title: Homology of $S^2$ with equatorial antipodal identification, and $S^3$ with equatorial $S^2$ antipodal identification
 classification:
   areas:

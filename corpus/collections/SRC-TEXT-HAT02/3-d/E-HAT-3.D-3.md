@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.D-3
-kind: exercise
+kind: problem
 title: "Pontryagin ring of $SO(5)$"
 classification:
   areas:

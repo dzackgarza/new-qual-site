@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KKI5A
-kind: exercise
+kind: problem
 title: The countable chain of tangent circles
 classification:
   areas:

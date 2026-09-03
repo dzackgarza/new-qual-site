@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: P-X1WOB
-kind: exercise
+kind: problem
 title: -- What does it mean for a series to converge? How can you check this?
 classification:
   areas:

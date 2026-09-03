@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GA3
-kind: exercise
+kind: problem
 title: Kernels of maps onto Z are free abelian of rank one higher
 classification:
   areas:

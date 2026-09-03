@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G4KAC
-kind: exercise
+kind: problem
 title: $x\in J(R)\iff 1-xR\subseteq R^\times$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RLHXB
-kind: exercise
+kind: problem
 title: Integral computation
 classification:
   areas:

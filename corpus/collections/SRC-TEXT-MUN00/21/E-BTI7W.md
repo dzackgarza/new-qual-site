@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BTI7W
-kind: exercise
+kind: problem
 title: Pointwise but not uniform convergence to the zero function
 classification:
   areas:

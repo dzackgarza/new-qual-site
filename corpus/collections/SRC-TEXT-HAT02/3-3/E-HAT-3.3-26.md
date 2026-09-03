@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-26
-kind: exercise
+kind: problem
 title: "Cup product on connected sums of products"
 classification:
   areas:

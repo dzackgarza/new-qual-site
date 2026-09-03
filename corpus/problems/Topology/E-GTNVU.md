@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GTNVU
-kind: exercise
+kind: problem
 title: Homology of product of spheres
 classification:
   areas:

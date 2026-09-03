@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NKQY9
-kind: exercise
+kind: problem
 title: Countable rational-endpoint bases
 classification:
   areas:

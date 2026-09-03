@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MGLSK
-kind: exercise
+kind: problem
 title: Right-continuous functions and the lower limit topology
 classification:
   areas:

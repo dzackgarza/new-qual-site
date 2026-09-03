@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AY5GK
-kind: exercise
+kind: problem
 title: Topologically complete spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KNC0V
-kind: exercise
+kind: problem
 title: Separation properties of the compact-open topology
 classification:
   areas:

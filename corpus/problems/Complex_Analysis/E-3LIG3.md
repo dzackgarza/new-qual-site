@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3LIG3
-kind: exercise
+kind: problem
 title: Entire functions satisfying $g(1-z)=1-g(z)$ are surjective
 classification:
   areas:

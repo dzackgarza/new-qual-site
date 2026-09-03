@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-23
-kind: exercise
+kind: problem
 title: If $M_g$ covers $M_h$ then $g = n(h-1)+1$
 classification:
   areas:

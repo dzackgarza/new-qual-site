@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-2
-kind: exercise
+kind: problem
 title: Connected graph retracts onto any connected subgraph
 classification:
   areas:

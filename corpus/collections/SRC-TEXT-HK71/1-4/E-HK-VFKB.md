@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-VFKB
-kind: exercise
+kind: problem
 title: Inconsistent system of two equations in two unknowns
 classification:
   areas:

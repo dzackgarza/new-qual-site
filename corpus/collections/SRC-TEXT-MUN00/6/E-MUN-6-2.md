@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-2
-kind: exercise
+kind: problem
 title: Subsets of finite sets are finite
 classification:
   areas:

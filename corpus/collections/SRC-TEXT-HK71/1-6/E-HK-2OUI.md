@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-2OUI
-kind: exercise
+kind: problem
 title: Invertibility and the kernel of a matrix
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-6
-kind: exercise
+kind: problem
 title: "Composition of covering spaces need not be a covering space"
 classification:
   areas:

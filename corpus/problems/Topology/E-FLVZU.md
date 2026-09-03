@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FLVZU
-kind: exercise
+kind: problem
 title: Compact topological space
 classification:
   areas:

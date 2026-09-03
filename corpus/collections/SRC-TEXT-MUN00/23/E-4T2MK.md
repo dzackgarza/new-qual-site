@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4T2MK
-kind: exercise
+kind: problem
 title: Connected fibers over a connected base connect the total space
 classification:
   areas:

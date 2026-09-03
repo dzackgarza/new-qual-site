@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SANDE
-kind: exercise
+kind: problem
 title: Classification of compact connected triangulable surfaces with boundary
 classification:
   areas:

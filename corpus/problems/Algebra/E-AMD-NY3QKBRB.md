@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-NY3QKBRB
-kind: exercise
+kind: problem
 title: Kernel of conjugation $G\to\Aut(G)$ is $Z(G)$
 classification:
   areas:

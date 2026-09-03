@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-5-5
-kind: exercise
+kind: problem
 title: Subsets of $\mathbb{R}^{\omega}$ as Cartesian products
 classification:
   areas:

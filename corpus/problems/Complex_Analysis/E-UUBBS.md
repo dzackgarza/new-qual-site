@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UUBBS
-kind: exercise
+kind: problem
 title: Lune between circles
 classification:
   areas:

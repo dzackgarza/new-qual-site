@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-10
-kind: exercise
+kind: problem
 title: Finite connected subgraph of covering space extends to finite covering space
 classification:
   areas:

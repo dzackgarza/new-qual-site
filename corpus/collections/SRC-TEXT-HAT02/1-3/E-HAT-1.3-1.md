@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-1
-kind: exercise
+kind: problem
 title: "Restriction of a covering space to a subspace"
 classification:
   areas:

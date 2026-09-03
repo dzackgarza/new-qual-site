@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XFMJA
-kind: exercise
+kind: problem
 title: Coverings of the torus from subgroups of Z x Z
 classification:
   areas:

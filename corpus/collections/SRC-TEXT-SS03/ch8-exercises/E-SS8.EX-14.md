@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-14
-kind: exercise
+kind: problem
 title: Conformal maps from the upper half-plane to the unit disk
 classification:
   areas:

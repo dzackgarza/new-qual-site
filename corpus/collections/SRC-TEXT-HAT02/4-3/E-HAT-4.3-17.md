@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-17
-kind: exercise
+kind: problem
 title: "$\\Omega X$ is an H-space"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XXZVG
-kind: exercise
+kind: problem
 title: Uniform limit theorem for holomorphic functions
 classification:
   areas:

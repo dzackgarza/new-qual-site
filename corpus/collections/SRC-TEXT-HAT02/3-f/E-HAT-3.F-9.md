@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-9
-kind: exercise
+kind: problem
 title: "Spliced exact sequences for $p$-primary components"
 classification:
   areas:

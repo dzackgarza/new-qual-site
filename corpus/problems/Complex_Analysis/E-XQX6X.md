@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XQX6X
-kind: exercise
+kind: problem
 title: Liouville
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VGNUI
-kind: exercise
+kind: problem
 title: Equality of different integrals
 classification:
   areas:

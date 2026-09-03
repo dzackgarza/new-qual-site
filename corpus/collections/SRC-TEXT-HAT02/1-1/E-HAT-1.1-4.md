@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-4
-kind: exercise
+kind: problem
 title: Locally star-shaped paths are piecewise linear up to homotopy
 classification:
   areas:

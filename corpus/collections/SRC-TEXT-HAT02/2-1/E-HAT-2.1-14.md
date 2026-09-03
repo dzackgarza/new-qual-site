@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-14
-kind: exercise
+kind: problem
 title: Short exact sequences of cyclic groups
 classification:
   areas:

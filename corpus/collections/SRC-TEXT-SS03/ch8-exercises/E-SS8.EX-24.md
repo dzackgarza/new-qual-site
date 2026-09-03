@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-24
-kind: exercise
+kind: problem
 title: "SS 8.24: Identities among the elliptic integrals K and K-prime"
 classification:
   areas:

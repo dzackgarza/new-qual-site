@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WVVWW
-kind: exercise
+kind: problem
 title: Continuous surjections from the line onto euclidean space
 classification:
   areas:

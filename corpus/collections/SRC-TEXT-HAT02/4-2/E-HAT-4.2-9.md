@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-9
-kind: exercise
+kind: problem
 title: "Contractible mapping cone implies homotopy equivalence"
 classification:
   areas:

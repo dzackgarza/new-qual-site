@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8T3QS
-kind: exercise
+kind: problem
 title: The Tychonoff theorem via the well-ordering theorem
 classification:
   areas:

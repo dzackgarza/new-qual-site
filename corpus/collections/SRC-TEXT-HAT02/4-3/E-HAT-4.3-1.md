@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-1
-kind: exercise
+kind: problem
 title: "Map $\\mathbb{RP}^\\infty \\to K(\\mathbb{Z},2)$ trivial on homology"
 classification:
   areas:

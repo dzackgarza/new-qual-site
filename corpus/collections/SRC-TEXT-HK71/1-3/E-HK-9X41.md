@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-9X41
-kind: exercise
+kind: problem
 title: Solutions of $AX = cX$ for eigenvalue equations
 classification:
   areas:

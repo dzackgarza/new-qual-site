@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NVCIF
-kind: exercise
+kind: problem
 title: An entire function $h$ with $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{k\in\mathbb{Z}}\frac{1}{(z-k)^2}+h(z)$
 classification:
   areas:

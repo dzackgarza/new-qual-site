@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GG4
-kind: exercise
+kind: problem
 title: Every finite abelian group is a Galois group over Q via cyclotomic extensions
 classification:
   areas:

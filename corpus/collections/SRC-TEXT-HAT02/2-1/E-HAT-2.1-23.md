@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-23
-kind: exercise
+kind: problem
 title: Second barycentric subdivision of $\Delta$-complex is simplicial
 classification:
   areas:

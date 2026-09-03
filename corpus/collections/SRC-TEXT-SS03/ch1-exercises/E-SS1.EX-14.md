@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-14
-kind: exercise
+kind: problem
 title: "Summation by parts (Abel's formula)"
 classification:
   areas:

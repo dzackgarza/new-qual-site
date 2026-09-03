@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-16
-kind: exercise
+kind: problem
 title: "Radii of convergence for (log n)-squared and factorial coefficients"
 classification:
   areas:

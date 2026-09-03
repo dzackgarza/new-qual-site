@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SHKZX
-kind: exercise
+kind: problem
 title: If poles accumulate at $a$, then every $w\in\mathbb{C}$ is a sequential limit
   of $f$, versus Casorati–Weierstrass
 classification:

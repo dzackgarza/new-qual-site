@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KZPIX
-kind: exercise
+kind: problem
 title: Countability axioms of the rationals in the box topology
 classification:
   areas:

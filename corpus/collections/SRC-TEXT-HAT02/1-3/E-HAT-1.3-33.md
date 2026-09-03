@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-33
-kind: exercise
+kind: problem
 title: "Quotient graphs and freeness of subgroups"
 classification:
   areas:

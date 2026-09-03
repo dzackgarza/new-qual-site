@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-12
-kind: exercise
+kind: problem
 title: Fundamental groups of Klein bottle and related spaces
 classification:
   areas:

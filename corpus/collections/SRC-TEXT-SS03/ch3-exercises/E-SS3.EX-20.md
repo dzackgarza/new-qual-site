@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-20
-kind: exercise
+kind: problem
 title: "This exercise shows how the mean square convergence dominates the uniform conver"
 classification:
   areas:

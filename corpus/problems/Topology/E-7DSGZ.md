@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7DSGZ
-kind: exercise
+kind: problem
 title: An injective continuous map from a compact space to a Hausdorff space is an
   embedding
 classification:

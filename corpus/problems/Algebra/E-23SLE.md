@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-23SLE
-kind: exercise
+kind: problem
 title: Jordan form of $\begin{pmatrix}1&-1&0\\-1&4&-1\\-4&13&-3\end{pmatrix}$
 classification:
   areas:

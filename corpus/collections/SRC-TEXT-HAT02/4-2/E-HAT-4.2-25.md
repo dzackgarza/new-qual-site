@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-25
-kind: exercise
+kind: problem
 title: "Hurewicz cokernel for spaces with few nonzero $\\pi_i$"
 classification:
   areas:

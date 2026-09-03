@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-3
-kind: exercise
+kind: problem
 title: Infinite sets from sequences of injections
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-9
-kind: exercise
+kind: problem
 title: Countably many homotopy types of finite CW complexes
 classification:
   areas:

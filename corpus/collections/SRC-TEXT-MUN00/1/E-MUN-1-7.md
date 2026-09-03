@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-7
-kind: exercise
+kind: problem
 title: Expressing sets using union, intersection, and difference
 classification:
   areas:

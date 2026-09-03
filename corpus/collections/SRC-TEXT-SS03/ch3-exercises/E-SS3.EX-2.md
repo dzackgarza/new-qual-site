@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-2
-kind: exercise
+kind: problem
 title: "SS 3.2: The integral of 1/(1+x^4)"
 classification:
   areas:

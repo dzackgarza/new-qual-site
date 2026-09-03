@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZQGR5
-kind: exercise
+kind: problem
 title: Radius of convergence
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UJAF4
-kind: exercise
+kind: problem
 title: Equicontinuity + pointwise convergence implies uniform convergence
 classification:
   areas:

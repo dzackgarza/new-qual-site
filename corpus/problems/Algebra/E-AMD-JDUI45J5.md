@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-JDUI45J5
-kind: exercise
+kind: problem
 title: Intermediate fields of $\QQ(2^{1/4},\zeta_8)$
 classification:
   areas:

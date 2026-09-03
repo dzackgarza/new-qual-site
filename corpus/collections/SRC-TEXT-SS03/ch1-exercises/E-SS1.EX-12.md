@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-12
-kind: exercise
+kind: problem
 title: "SS 1.12: Cauchy-Riemann at a point does not imply holomorphy"
 classification:
   areas:

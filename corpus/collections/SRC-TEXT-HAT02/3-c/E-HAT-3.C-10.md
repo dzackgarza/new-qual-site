@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-10
-kind: exercise
+kind: problem
 title: "Product of maps in an H-space"
 classification:
   areas:

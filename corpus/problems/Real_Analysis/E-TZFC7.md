@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TZFC7
-kind: exercise
+kind: problem
 title: Uniform limits preserve boundedness and continuity
 classification:
   areas:

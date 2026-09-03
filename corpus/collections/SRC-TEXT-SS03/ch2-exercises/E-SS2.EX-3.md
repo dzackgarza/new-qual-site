@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-3
-kind: exercise
+kind: problem
 title: "SS 2.3: Laplace transforms of sine and cosine via sector contours"
 classification:
   areas:

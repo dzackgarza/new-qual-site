@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-U00IE
-kind: exercise
+kind: problem
 title: Well-ordered sets times the half-open interval are linear continua
 classification:
   areas:

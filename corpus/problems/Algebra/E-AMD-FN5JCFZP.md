@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-FN5JCFZP
-kind: exercise
+kind: problem
 title: Cayley-Hamilton theorem
 classification:
   areas:

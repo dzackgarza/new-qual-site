@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-8
-kind: exercise
+kind: problem
 title: Borsuk–Ulam theorem for the torus
 classification:
   areas:

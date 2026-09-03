@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-S42H2VZL
-kind: exercise
+kind: problem
 title: Disjoint cycles commute
 classification:
   areas:

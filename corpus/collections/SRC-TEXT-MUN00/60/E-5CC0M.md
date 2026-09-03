@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5CC0M
-kind: exercise
+kind: problem
 title: The two-fold covering of the figure eight restricted to the axes
 classification:
   areas:

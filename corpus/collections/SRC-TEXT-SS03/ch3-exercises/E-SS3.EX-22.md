@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-22
-kind: exercise
+kind: problem
 title: No holomorphic function on the disk can extend continuously with boundary values $1/z$
 classification:
   areas:

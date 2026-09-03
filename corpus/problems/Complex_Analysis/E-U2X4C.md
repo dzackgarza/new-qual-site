@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-U2X4C
-kind: exercise
+kind: problem
 title: Entire functions with $|f(z)|>1$ are constant
 classification:
   areas:

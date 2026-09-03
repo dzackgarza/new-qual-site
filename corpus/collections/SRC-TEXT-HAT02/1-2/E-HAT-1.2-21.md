@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-21
-kind: exercise
+kind: problem
 title: Join of path-connected space with any nonempty space is simply-connected
 classification:
   areas:

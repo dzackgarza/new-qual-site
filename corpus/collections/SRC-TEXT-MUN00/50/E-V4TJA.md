@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-V4TJA
-kind: exercise
+kind: problem
 title: Five points in general position and K5 in space
 classification:
   areas:

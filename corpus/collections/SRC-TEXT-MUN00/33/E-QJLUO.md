@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QJLUO
-kind: exercise
+kind: problem
 title: Separating compact sets from closed sets in completely regular spaces
 classification:
   areas:

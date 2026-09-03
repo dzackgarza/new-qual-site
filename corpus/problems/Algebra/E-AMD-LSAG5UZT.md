@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-LSAG5UZT
-kind: exercise
+kind: problem
 title: Groups of order $p^3$ have a normal subgroup of order $p^2$
 classification:
   areas:

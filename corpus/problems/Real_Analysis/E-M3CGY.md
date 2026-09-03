@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M3CGY
-kind: exercise
+kind: problem
 title: Every open set in $\RR^n$ is a countable union of almost disjoint closed cubes
 classification:
   areas:

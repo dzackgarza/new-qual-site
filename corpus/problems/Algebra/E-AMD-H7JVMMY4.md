@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-H7JVMMY4
-kind: exercise
+kind: problem
 title: Algebraicity of $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$
 classification:
   areas:

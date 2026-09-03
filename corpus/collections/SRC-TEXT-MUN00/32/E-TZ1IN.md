@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TZ1IN
-kind: exercise
+kind: problem
 title: Complete normality characterized by separated sets
 classification:
   areas:

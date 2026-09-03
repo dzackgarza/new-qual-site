@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PEXB6
-kind: exercise
+kind: problem
 title: The comb space and a nowhere locally connected path-connected set
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O5T9Y
-kind: exercise
+kind: problem
 title: The lower limit line is disconnected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-14
-kind: exercise
+kind: problem
 title: Cube with face identifications via screw motions has quaternion group as fundamental group
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RKSXA
-kind: exercise
+kind: problem
 title: The boundary of a surface with boundary is intrinsic
 classification:
   areas:

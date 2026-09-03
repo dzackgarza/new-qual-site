@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-21
-kind: exercise
+kind: problem
 title: "Constructing spaces with arbitrary $\\pi_n$"
 classification:
   areas:

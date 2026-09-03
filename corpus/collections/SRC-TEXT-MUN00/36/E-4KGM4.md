@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4KGM4
-kind: exercise
+kind: problem
 title: Properties of compact Hausdorff spaces
 classification:
   areas:

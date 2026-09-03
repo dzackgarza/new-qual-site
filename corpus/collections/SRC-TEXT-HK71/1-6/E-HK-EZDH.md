@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-EZDH
-kind: exercise
+kind: problem
 title: The Hilbert matrix is invertible with integer inverse
 classification:
   areas:

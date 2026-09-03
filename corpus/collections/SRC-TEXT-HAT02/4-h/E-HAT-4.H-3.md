@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.H-3
-kind: exercise
+kind: problem
 title: "Fiber-preserving homotopy equivalences are fiber homotopy equivalences"
 classification:
   areas:

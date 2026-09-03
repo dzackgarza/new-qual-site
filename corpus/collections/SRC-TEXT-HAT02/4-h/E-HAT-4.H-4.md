@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.H-4
-kind: exercise
+kind: problem
 title: "Dual of an iterated mapping cylinder"
 classification:
   areas:

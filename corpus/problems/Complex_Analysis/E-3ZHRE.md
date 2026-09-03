@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3ZHRE
-kind: exercise
+kind: problem
 title: Entire functions satisfying a bound
 classification:
   areas:

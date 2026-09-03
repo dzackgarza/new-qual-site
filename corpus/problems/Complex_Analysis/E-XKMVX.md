@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XKMVX
-kind: exercise
+kind: problem
 title: Combining with Rouche
 classification:
   areas:

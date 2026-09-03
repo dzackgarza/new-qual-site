@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JUT2P
-kind: exercise
+kind: problem
 title: Removable singularities for derivatives
 classification:
   areas:

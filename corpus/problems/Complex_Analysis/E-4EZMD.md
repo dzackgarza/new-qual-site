@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4EZMD
-kind: exercise
+kind: problem
 title: A conformal equivalence from the quarter-disc to the first quadrant
 classification:
   areas:

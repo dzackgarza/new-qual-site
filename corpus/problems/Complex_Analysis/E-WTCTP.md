@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WTCTP
-kind: exercise
+kind: problem
 title: Detecting injectivity using derivatives
 classification:
   areas:

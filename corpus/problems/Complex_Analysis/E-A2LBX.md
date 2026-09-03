@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-A2LBX
-kind: exercise
+kind: problem
 title: '$f: D\rightarrow {\mathbb C}$ be a continuous function, where'
 classification:
   areas:

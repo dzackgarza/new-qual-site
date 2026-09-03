@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-BKDDOBZG
-kind: exercise
+kind: problem
 title: An ideal containing a unit is the whole ring
 classification:
   areas:

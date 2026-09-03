@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ETTEH
-kind: exercise
+kind: problem
 title: In a locally path-connected space, open subsets are locally path-connected,
   connectedness is equivalent to path-connectedness, and path components are the open
   connected components

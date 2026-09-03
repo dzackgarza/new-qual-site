@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-1
-kind: exercise
+kind: problem
 title: "SS 3.1: Zeros of sin pi-z and residues of its reciprocal"
 classification:
   areas:

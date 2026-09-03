@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-17
-kind: exercise
+kind: problem
 title: Infinitely many nonhomotopic retractions $S^1 \lor S^1 \to S^1$
 classification:
   areas:

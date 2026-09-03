@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ML7VU
-kind: exercise
+kind: problem
 title: The topologist's sine curve has dimension one
 classification:
   areas:

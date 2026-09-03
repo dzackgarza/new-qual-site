@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9LY2B
-kind: exercise
+kind: problem
 title: Infinite wedges of circles are not first countable
 classification:
   areas:

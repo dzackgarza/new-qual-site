@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OMK54
-kind: exercise
+kind: problem
 title: Translation invariance of Lebesgue integral, $L^{1}$ continuity, and regularity
   of measurable sets
 classification:

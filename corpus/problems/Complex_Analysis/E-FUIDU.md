@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FUIDU
-kind: exercise
+kind: problem
 title: Using the estimates
 classification:
   areas:

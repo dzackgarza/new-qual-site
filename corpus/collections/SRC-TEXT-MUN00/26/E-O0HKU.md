@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O0HKU
-kind: exercise
+kind: problem
 title: Maps from compact to Hausdorff spaces are closed
 classification:
   areas:

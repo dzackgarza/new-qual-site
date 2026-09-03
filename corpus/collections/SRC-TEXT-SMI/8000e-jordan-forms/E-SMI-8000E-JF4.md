@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-JF4
-kind: exercise
+kind: problem
 title: Change-of-basis matrices into Jordan form
 classification:
   areas:

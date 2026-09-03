@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-7-7
-kind: exercise
+kind: problem
 title: Equal cardinality of $\{0,1\}^{\omega}$ subsets
 classification:
   areas:

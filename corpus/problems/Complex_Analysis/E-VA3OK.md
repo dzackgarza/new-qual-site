@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VA3OK
-kind: exercise
+kind: problem
 title: Computing $\zeta(2)$ by integration
 classification:
   areas:

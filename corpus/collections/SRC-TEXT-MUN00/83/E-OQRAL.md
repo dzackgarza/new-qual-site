@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OQRAL
-kind: exercise
+kind: problem
 title: Euler numbers of standard graphs and their coverings
 classification:
   areas:

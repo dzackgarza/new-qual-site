@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.B-1
-kind: exercise
+kind: problem
 title: "Hopf invariant of compositions"
 classification:
   areas:

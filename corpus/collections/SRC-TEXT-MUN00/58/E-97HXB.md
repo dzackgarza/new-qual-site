@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-97HXB
-kind: exercise
+kind: problem
 title: Retracts of contractible spaces
 classification:
   areas:

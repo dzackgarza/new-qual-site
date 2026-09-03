@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PFQIX
-kind: exercise
+kind: problem
 title: Separation properties of topological groups and coset spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LZX97
-kind: exercise
+kind: problem
 title: Smirnov metrization versus the local metrizability exercises of section 34
 classification:
   areas:

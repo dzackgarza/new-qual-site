@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY6
-kind: exercise
+kind: problem
 title: Three-cycles generate the alternating group
 classification:
   areas:

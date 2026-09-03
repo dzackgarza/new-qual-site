@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XZWER
-kind: exercise
+kind: problem
 title: $\sin z=z$ has infinitely many solutions in $\CC$
 classification:
   areas:

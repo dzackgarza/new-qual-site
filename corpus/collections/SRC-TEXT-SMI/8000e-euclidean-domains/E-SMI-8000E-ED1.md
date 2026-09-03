@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED1
-kind: exercise
+kind: problem
 title: Every ideal in a Euclidean domain is principal
 classification:
   areas:

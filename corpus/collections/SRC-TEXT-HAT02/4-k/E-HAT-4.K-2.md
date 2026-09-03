@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.K-2
-kind: exercise
+kind: problem
 title: "Contractible fibers imply homotopy equivalence"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9OT3C
-kind: exercise
+kind: problem
 title: Quasicomponents equal components in compact Hausdorff spaces
 classification:
   areas:

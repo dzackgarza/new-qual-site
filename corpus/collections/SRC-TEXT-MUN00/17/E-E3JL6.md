@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E3JL6
-kind: exercise
+kind: problem
 title: Products of Hausdorff spaces are Hausdorff
 classification:
   areas:

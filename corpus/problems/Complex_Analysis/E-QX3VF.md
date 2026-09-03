@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QX3VF
-kind: exercise
+kind: problem
 title: Entire functions with poles at infinity
 classification:
   areas:

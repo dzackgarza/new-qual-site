@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-12
-kind: exercise
+kind: problem
 title: "Spaces with isomorphic cohomology but different homotopy type"
 classification:
   areas:

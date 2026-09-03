@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L0BW8
-kind: exercise
+kind: problem
 title: The reduction algorithm applied to eight schemes
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UVWDX
-kind: exercise
+kind: problem
 title: A change of basis in a free abelian group
 classification:
   areas:

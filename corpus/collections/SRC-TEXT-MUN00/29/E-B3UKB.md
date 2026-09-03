@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-B3UKB
-kind: exercise
+kind: problem
 title: Compact closure neighborhoods in locally compact Hausdorff spaces
 classification:
   areas:

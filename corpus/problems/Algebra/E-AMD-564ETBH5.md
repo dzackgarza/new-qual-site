@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-564ETBH5
-kind: exercise
+kind: problem
 title: $a+\nilrad{R}$ nilpotent implies $a\in\nilrad{R}$
 classification:
   areas:

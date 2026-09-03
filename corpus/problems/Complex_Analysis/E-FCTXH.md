@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FCTXH
-kind: exercise
+kind: problem
 title: $f(z)=-\frac12\bigl(z+\frac1z\bigr)$ maps the upper half-disk conformally onto
   the upper half-plane
 classification:

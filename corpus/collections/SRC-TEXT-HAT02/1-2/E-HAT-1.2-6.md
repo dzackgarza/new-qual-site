@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-6
-kind: exercise
+kind: problem
 title: Complement of closed discrete subspace of $\mathbb{R}^n$ simply-connected for $n \geq 3$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TVJFL
-kind: exercise
+kind: problem
 title: Zero derivative implies constant
 classification:
   areas:

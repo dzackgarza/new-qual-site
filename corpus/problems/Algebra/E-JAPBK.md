@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JAPBK
-kind: exercise
+kind: problem
 title: Quotient by nilradical is reduced
 classification:
   areas:

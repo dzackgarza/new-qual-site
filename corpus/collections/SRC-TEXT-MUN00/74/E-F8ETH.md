@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F8ETH
-kind: exercise
+kind: problem
 title: The Klein bottle as a connected sum of two projective planes
 classification:
   areas:

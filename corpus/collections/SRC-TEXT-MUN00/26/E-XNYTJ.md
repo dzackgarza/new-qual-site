@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XNYTJ
-kind: exercise
+kind: problem
 title: Monotone pointwise convergence to a continuous limit is uniform
 classification:
   areas:

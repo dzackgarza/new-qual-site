@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-16
-kind: exercise
+kind: problem
 title: "Torsion in products of CW complexes"
 classification:
   areas:

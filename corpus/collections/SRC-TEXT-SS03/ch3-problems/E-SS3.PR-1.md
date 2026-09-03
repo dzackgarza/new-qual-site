@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.PR-1
-kind: exercise
+kind: problem
 title: Koebe-Bieberbach radius theorem for normalized univalent functions
 classification:
   areas:

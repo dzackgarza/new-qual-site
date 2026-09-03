@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-AB1
-kind: exercise
+kind: problem
 title: Finitely generated ends of a short exact sequence of abelian groups
 classification:
   areas:

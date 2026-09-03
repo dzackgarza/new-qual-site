@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-3
-kind: exercise
+kind: problem
 title: "H-space multiplication gives group structure on $\\pi_n$"
 classification:
   areas:

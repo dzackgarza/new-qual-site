@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-24
-kind: exercise
+kind: problem
 title: "Homology of closed 3-manifolds"
 classification:
   areas:

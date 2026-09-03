@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KIH81
-kind: exercise
+kind: problem
 title: Maximal collections with the finite intersection property
 classification:
   areas:

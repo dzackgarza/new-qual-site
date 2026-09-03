@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-5
-kind: exercise
+kind: problem
 title: "Fundamental group of an H-space is abelian"
 classification:
   areas:

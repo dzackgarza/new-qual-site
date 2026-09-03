@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KVDIA
-kind: exercise
+kind: problem
 title: Dilation invariance of the Lebesgue integral
 classification:
   areas:

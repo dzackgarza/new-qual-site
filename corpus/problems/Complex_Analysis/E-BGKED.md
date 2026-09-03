@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BGKED
-kind: exercise
+kind: problem
 title: Cauchy-Riemann iff holomorphic
 classification:
   areas:

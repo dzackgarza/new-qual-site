@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VBWDH
-kind: exercise
+kind: problem
 title: Uniform boundedness principle
 classification:
   areas:

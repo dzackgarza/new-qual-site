@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2KJEL
-kind: exercise
+kind: problem
 title: "The Jordan canonical form of a matrix"
 classification:
   areas:

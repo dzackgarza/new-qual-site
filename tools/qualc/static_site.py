@@ -8,7 +8,7 @@ import re
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from functools import cache
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 from typing import Literal, assert_never
 from urllib.parse import quote, unquote, urlsplit
@@ -603,13 +603,18 @@ def _rewrite_body(
 
     def replace(match: re.Match[str]) -> str:
         attribute = match.group("attribute")
-        raw_url = match.group("url")
+        # `body` is already HTML. Pandoc therefore hands us `&amp;` inside an
+        # href query string; decode the attribute before URL parsing and escape
+        # it exactly once again when the rewritten attribute is emitted.
+        raw_url = unescape(match.group("url"))
         parsed = urlsplit(raw_url)
         if parsed.scheme or parsed.netloc or raw_url.startswith(("#", "data:", "mailto:")):
             return match.group(0)
         if attribute == "href" and parsed.path in link_targets:
             target = link_targets[parsed.path]
             rewritten = _relative_url(relative_path, target)
+            if parsed.query:
+                rewritten += f"?{parsed.query}"
             if parsed.fragment:
                 rewritten += f"#{parsed.fragment}"
             return f'href="{escape(rewritten, quote=True)}"'

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-7
-kind: exercise
+kind: problem
 title: "Change-of-basepoint for relative homotopy groups"
 classification:
   areas:

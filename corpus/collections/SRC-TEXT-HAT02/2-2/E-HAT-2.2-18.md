@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-18
-kind: exercise
+kind: problem
 title: Relative cellular chain complex for CW pair
 classification:
   areas:

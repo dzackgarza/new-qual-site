@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-6
-kind: exercise
+kind: problem
 title: "Spheres as H-spaces via $J_2(S^n)$"
 classification:
   areas:

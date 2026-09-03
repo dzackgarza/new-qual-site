@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-6
-kind: exercise
+kind: problem
 title: "SS 10.6: Exponential square-root bounds for the partition function"
 classification:
   areas:

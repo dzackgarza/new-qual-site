@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KZV2Z
-kind: exercise
+kind: problem
 title: $1/x^2+3x+2$
 classification:
   areas:

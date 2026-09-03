@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-6WTC
-kind: exercise
+kind: problem
 title: Inconsistent system of three equations in four unknowns
 classification:
   areas:

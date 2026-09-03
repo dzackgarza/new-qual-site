@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8EX2G
-kind: exercise
+kind: problem
 title: The Mobius band is a punctured projective plane
 classification:
   areas:

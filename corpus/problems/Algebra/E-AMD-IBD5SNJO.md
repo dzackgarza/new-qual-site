@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-IBD5SNJO
-kind: exercise
+kind: problem
 title: Generating sets for $S_n$
 classification:
   areas:

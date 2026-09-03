@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-HO6G56UF
-kind: exercise
+kind: problem
 title: Commuting diagonalizable matrices are simultaneously diagonalizable
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-24
-kind: exercise
+kind: problem
 title: $n$-simplices in barycentric subdivision defined by inequalities on barycentric coordinates
 classification:
   areas:

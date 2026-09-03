@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HKLAA
-kind: exercise
+kind: problem
 title: Conformal maps of lunes, slit disks, and half-disks
 classification:
   areas:

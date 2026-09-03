@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-8
-kind: exercise
+kind: problem
 title: Greatest lower bound property of $\mathbb{R}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PBG3W
-kind: exercise
+kind: problem
 title: Composites of covering maps with finite fibers
 classification:
   areas:

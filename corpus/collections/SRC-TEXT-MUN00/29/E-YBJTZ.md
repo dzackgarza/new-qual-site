@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YBJTZ
-kind: exercise
+kind: problem
 title: The one-point compactification of R is the circle
 classification:
   areas:

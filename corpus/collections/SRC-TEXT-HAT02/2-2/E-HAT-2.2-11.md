@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-11
-kind: exercise
+kind: problem
 title: Homology of cube with opposite faces identified via one-quarter twist (quaternion group)
 classification:
   areas:

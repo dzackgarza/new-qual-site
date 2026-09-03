@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YSJOS
-kind: exercise
+kind: problem
 title: Verifying the building blocks of the nowhere-differentiable function
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-23
-kind: exercise
+kind: problem
 title: "Uniqueness of Quillen plus construction"
 classification:
   areas:

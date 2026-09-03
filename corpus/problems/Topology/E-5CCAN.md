@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5CCAN
-kind: exercise
+kind: problem
 title: $\mathbb{R}$ is not homeomorphic to $[0,\infty)$
 classification:
   areas:

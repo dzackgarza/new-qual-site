@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.D-1
-kind: exercise
+kind: problem
 title: "Topological groups with finite CW structure are manifolds"
 classification:
   areas:

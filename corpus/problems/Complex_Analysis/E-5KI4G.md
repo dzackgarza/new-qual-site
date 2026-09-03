@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5KI4G
-kind: exercise
+kind: problem
 title: Uniform convergence of $\sin(nx)/(1+nx)$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-16
-kind: exercise
+kind: problem
 title: "Associativity of cap product"
 classification:
   areas:

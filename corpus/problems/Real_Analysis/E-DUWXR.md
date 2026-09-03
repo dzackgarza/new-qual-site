@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DUWXR
-kind: exercise
+kind: problem
 title: $f,g\in L^1$ implies $f\ast g\in L^1$ and $\|f\ast g\|_1\leq\|f\|_1\|g\|_1$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.A-3
-kind: exercise
+kind: problem
 title: "Rational and mod-$p$ cohomology determine integral homology"
 classification:
   areas:

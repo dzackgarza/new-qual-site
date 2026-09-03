@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WFE4T
-kind: exercise
+kind: problem
 title: Sequential compactness, the third condition of a TFAE list
 classification:
   areas:

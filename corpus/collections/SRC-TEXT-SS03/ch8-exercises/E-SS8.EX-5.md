@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-5
-kind: exercise
+kind: problem
 title: "SS 8.5: A conformal map from the half-disc to the upper half-plane"
 classification:
   areas:

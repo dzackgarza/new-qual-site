@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BTA5L
-kind: exercise
+kind: problem
 title: $f=0$ a.e. iff $\int_E f=0$ for every measurable $E$
 classification:
   areas:

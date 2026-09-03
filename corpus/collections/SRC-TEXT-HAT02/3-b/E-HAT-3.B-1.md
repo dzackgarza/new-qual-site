@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.B-1
-kind: exercise
+kind: problem
 title: "Homology and cohomology of $\\mathbb{RP}^m \\times \\mathbb{RP}^n$"
 classification:
   areas:

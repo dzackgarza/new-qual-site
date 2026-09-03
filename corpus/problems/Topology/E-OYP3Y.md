@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OYP3Y
-kind: exercise
+kind: problem
 title: Continuous maps between compact Hausdorff spaces are proper
 classification:
   areas:

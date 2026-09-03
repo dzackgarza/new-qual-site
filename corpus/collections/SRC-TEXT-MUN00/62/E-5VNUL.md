@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5VNUL
-kind: exercise
+kind: problem
 title: The Borsuk lemma fails without injectivity
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEC
-kind: exercise
+kind: problem
 title: Stating Sylow's theorem and Jordan-Hölder
 classification:
   areas:

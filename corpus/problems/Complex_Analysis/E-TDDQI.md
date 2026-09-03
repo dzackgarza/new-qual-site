@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TDDQI
-kind: exercise
+kind: problem
 title: Area of the image of an annulus under a univalent Laurent series
 classification:
   areas:

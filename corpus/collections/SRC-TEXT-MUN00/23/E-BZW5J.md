@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BZW5J
-kind: exercise
+kind: problem
 title: Unions of connected sets meeting a common connected set
 classification:
   areas:

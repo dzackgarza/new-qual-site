@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-CY9
-kind: exercise
+kind: problem
 title: The commutator subgroup is characteristic
 classification:
   areas:

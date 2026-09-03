@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.E-4
-kind: exercise
+kind: problem
 title: "$SO(5)$ is not a product of two CW complexes"
 classification:
   areas:

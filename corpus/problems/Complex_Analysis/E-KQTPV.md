@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KQTPV
-kind: exercise
+kind: problem
 title: Injective conformal maps from $\{\Re z>0,\ |z-1|>1\}$ onto $\mathbb{D}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-8
-kind: exercise
+kind: problem
 title: Finitely generated group has finitely many subgroups of given finite index
 classification:
   areas:

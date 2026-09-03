@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8Q9TN
-kind: exercise
+kind: problem
 title: Star-fine refinements of open coverings
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QSI4Y
-kind: exercise
+kind: problem
 title: The Tietze extension theorem implies the Urysohn lemma
 classification:
   areas:

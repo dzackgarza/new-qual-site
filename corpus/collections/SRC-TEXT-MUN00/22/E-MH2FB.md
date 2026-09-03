@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MH2FB
-kind: exercise
+kind: problem
 title: Continuity of x times y inverse characterizes topological groups
 classification:
   areas:

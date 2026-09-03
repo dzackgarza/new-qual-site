@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-4
-kind: exercise
+kind: problem
 title: "Simply-connected covering space of a sphere with diameter"
 classification:
   areas:

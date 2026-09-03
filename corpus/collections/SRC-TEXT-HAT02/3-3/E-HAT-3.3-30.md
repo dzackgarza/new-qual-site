@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-30
-kind: exercise
+kind: problem
 title: "Boundary of orientable manifold is orientable"
 classification:
   areas:

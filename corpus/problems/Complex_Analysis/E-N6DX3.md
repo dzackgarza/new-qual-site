@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-N6DX3
-kind: exercise
+kind: problem
 title: Cauchy–Riemann equations and elementary complex analysis
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-MT2
-kind: exercise
+kind: problem
 title: PIDs have unique factorization
 classification:
   areas:

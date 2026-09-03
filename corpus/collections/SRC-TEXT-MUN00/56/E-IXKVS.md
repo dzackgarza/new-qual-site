@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IXKVS
-kind: exercise
+kind: problem
 title: Root location from small lower coefficients
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-8
-kind: exercise
+kind: problem
 title: Power set of a finite set
 classification:
   areas:

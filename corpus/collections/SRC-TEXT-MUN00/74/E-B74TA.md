@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-B74TA
-kind: exercise
+kind: problem
 title: Nonabelian fundamental groups of higher projective planes
 classification:
   areas:

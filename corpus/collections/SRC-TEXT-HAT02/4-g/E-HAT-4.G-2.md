@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.G-2
-kind: exercise
+kind: problem
 title: "Projection from $\\Delta X$ is a fiber bundle"
 classification:
   areas:

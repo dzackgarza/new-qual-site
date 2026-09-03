@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2CPNC
-kind: exercise
+kind: problem
 title: Pasting over a locally finite closed cover
 classification:
   areas:

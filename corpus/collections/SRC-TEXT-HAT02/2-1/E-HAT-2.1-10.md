@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-10
-kind: exercise
+kind: problem
 title: Quotient of disjoint 2-simplices with edge identifications is always a surface
 classification:
   areas:

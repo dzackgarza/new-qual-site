@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DE8TQ
-kind: exercise
+kind: problem
 title: Isometric imbeddings
 classification:
   areas:

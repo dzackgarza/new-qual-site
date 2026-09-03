@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YZ8XN
-kind: exercise
+kind: problem
 title: Simple connectedness implies semilocal simple connectedness
 classification:
   areas:

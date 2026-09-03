@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PWVJS
-kind: exercise
+kind: problem
 title: 'The logarithmic derivative of a product: $\frac{(fg)''}{fg}=\frac{f''}{f}+\frac{g''}{g}$'
 classification:
   areas:

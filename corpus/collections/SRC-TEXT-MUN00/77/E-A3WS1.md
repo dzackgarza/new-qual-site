@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-A3WS1
-kind: exercise
+kind: problem
 title: Reducing schemes of ten sides to standard form
 classification:
   areas:

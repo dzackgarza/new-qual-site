@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-41
-kind: exercise
+kind: problem
 title: Euler characteristic equals alternating sum of dimensions of $H_n(X; F)$ over a field
 classification:
   areas:

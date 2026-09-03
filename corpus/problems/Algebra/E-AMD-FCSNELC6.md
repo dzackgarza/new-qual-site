@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-FCSNELC6
-kind: exercise
+kind: problem
 title: $\GF(p^d)\leq\GF(p^n)$ iff $d$ divides $n$
 classification:
   areas:

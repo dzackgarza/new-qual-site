@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-VGBOZDXZ
-kind: exercise
+kind: problem
 title: Nontrivial normal subgroups of a finite $p$-group meet the center
 classification:
   areas:

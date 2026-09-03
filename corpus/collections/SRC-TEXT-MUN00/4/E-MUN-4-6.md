@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-6
-kind: exercise
+kind: problem
 title: Laws of exponents for real numbers
 classification:
   areas:

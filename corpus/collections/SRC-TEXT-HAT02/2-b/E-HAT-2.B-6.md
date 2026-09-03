@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-6
-kind: exercise
+kind: problem
 title: "Alexander horned sphere with non-simply-connected complement"
 classification:
   areas:

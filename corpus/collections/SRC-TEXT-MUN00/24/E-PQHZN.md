@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PQHZN
-kind: exercise
+kind: problem
 title: The long line
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-12
-kind: exercise
+kind: problem
 title: "Entire functions with no vanishing derivative are exponentials"
 classification:
   areas:

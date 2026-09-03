@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EMISN
-kind: exercise
+kind: problem
 title: Power series are continuous
 classification:
   areas:

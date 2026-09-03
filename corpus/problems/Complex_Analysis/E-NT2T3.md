@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NT2T3
-kind: exercise
+kind: problem
 title: Singularities of $1\over e^z - 1$
 classification:
   areas:

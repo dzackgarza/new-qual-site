@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TTX65
-kind: exercise
+kind: problem
 title: Normal spaces have disjoint closure neighborhoods of closed sets
 classification:
   areas:

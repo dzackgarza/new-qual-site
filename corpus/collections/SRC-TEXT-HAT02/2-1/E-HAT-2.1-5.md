@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-5
-kind: exercise
+kind: problem
 title: Simplicial homology of Klein bottle
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-JF3
-kind: exercise
+kind: problem
 title: Jordan forms of three explicit matrices
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5FLKZ
-kind: exercise
+kind: problem
 title: Second countable spaces are first countable
 classification:
   areas:

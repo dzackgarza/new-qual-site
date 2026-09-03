@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-12
-kind: exercise
+kind: problem
 title: "Covering space of $S^1 \\vee S^1$ for a normal subgroup"
 classification:
   areas:

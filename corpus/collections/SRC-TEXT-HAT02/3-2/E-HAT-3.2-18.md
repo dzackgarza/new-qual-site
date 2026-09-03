@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-18
-kind: exercise
+kind: problem
 title: "Cup product nondegenerality on surfaces"
 classification:
   areas:

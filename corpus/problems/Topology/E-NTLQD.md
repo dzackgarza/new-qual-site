@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NTLQD
-kind: exercise
+kind: problem
 title: Finite products and unions of compact spaces are compact
 classification:
   areas:

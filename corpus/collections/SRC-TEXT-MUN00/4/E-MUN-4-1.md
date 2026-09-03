@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-1
-kind: exercise
+kind: problem
 title: Laws of algebra for $\mathbb{R}$ from the field axioms
 classification:
   areas:

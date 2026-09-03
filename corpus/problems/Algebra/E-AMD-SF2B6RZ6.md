@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-SF2B6RZ6
-kind: exercise
+kind: problem
 title: $HK$ is a subgroup of $G$ iff $HK=KH$
 classification:
   areas:

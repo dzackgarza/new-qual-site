@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OEEU4
-kind: exercise
+kind: problem
 title: Rudin 10.4
 classification:
   areas:

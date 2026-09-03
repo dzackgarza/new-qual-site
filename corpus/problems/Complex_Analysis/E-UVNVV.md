@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UVNVV
-kind: exercise
+kind: problem
 title: Injectivity relates to derivatives
 classification:
   areas:

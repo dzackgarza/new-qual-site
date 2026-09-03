@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-17
-kind: exercise
+kind: problem
 title: Cellular map induces chain map compatible with singular homology isomorphism
 classification:
   areas:

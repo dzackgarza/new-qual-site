@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0LZE7
-kind: exercise
+kind: problem
 title: The figure eight and the theta space are homotopy equivalent
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L2EHD
-kind: exercise
+kind: problem
 title: The Stone-Cech compactification of a discrete space
 classification:
   areas:

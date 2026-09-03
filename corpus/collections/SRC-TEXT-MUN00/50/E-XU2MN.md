@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XU2MN
-kind: exercise
+kind: problem
 title: Hausdorff equals completely regular for locally euclidean spaces
 classification:
   areas:

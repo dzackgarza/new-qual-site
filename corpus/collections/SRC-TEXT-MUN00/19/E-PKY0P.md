@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PKY0P
-kind: exercise
+kind: problem
 title: Closure of the eventually-zero sequences in box and product topologies
 classification:
   areas:

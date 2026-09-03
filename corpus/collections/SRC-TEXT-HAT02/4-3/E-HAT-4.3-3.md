@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-3
-kind: exercise
+kind: problem
 title: "Circle retract from direct summand on $H_1$"
 classification:
   areas:

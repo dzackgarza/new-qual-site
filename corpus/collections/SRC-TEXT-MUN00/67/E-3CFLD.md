@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3CFLD
-kind: exercise
+kind: problem
 title: A full-rank proper subgroup of a free abelian group
 classification:
   areas:

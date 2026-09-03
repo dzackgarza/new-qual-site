@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY3
-kind: exercise
+kind: problem
 title: No group of order 182 is simple
 classification:
   areas:

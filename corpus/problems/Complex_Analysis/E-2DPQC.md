@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2DPQC
-kind: exercise
+kind: problem
 title: Uniform limit of holomorphic is holomorphic
 classification:
   areas:

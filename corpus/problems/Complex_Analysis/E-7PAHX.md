@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7PAHX
-kind: exercise
+kind: problem
 title: Principal parts of $P/Q$ at simple and double poles
 classification:
   areas:

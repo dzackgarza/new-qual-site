@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QCVGX
-kind: exercise
+kind: problem
 title: Laurent expanding tricky exponentials
 classification:
   areas:

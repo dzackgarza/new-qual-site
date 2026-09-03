@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SDQ4U
-kind: exercise
+kind: problem
 title: $L^p$ inclusions on finite measure spaces and $\ell^p$ inclusions on $\mathbb{Z}$
 classification:
   areas:

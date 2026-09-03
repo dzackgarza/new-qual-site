@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L9XR0
-kind: exercise
+kind: problem
 title: Subspace topologies on lines in the Sorgenfrey plane
 classification:
   areas:

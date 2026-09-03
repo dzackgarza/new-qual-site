@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR4
-kind: exercise
+kind: problem
 title: Finite modules over a noetherian ring are noetherian
 classification:
   areas:

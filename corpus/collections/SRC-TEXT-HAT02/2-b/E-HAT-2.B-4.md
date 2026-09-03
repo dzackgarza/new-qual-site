@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-4
-kind: exercise
+kind: problem
 title: "Linking numbers via Mayer--Vietoris"
 classification:
   areas:

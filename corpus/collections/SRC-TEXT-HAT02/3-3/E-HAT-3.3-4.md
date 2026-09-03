@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-4
-kind: exercise
+kind: problem
 title: "Quotients by orientation-preserving actions"
 classification:
   areas:

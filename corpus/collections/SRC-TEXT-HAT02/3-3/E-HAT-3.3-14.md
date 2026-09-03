@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-14
-kind: exercise
+kind: problem
 title: "Shrinking wedge of circles"
 classification:
   areas:

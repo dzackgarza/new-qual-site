@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-MT3
-kind: exercise
+kind: problem
 title: Structure theorem for modules over a Euclidean domain; abelian groups of order 360
 classification:
   areas:

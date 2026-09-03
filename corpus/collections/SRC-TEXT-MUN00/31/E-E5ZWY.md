@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E5ZWY
-kind: exercise
+kind: problem
 title: Every order topology is regular
 classification:
   areas:

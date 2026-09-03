@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-14
-kind: exercise
+kind: problem
 title: "Fibration classes bijection with map classes"
 classification:
   areas:

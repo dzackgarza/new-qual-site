@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.A-4
-kind: exercise
+kind: problem
 title: "Automorphisms of wedge sums of spheres"
 classification:
   areas:

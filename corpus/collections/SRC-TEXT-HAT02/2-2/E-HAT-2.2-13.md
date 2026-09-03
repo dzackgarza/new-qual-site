@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-13
-kind: exercise
+kind: problem
 title: 2-complex from $S^1$ with two 2-cells of degrees 2 and 3
 classification:
   areas:

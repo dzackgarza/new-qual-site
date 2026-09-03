@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-4
-kind: exercise
+kind: problem
 title: Characterizing non-well-ordered sets via $\mathbb{Z}_{-}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.F-3
-kind: exercise
+kind: problem
 title: "Homotopy colimit commutes with loop space"
 classification:
   areas:

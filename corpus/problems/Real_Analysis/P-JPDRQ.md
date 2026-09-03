@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: P-JPDRQ
-kind: exercise
+kind: problem
 title: Sequences, uniform convergence, and Bolzano-Weierstrass
 classification:
   areas:

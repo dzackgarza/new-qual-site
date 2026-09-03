@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-27
-kind: exercise
+kind: problem
 title: Map that is homotopy equivalence on $X$ and $A$ induces isomorphism on relative homology
 classification:
   areas:

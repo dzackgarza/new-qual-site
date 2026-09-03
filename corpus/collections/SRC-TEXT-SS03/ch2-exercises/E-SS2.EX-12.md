@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-12
-kind: exercise
+kind: problem
 title: Harmonic conjugates and Poisson representation on the unit disk
 classification:
   areas:

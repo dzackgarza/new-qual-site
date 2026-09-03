@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-SD3PTZ4O
-kind: exercise
+kind: problem
 title: The union of two ideals need not be an ideal
 classification:
   areas:

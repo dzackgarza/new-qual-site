@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P3RLK
-kind: exercise
+kind: problem
 title: Closed subsets of compact spaces are compact
 classification:
   areas:

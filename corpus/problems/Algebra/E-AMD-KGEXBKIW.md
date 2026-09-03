@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-KGEXBKIW
-kind: exercise
+kind: problem
 title: Cyclic groups are solvable
 classification:
   areas:

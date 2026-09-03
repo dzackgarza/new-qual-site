@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY6
-kind: exercise
+kind: problem
 title: Symmetric groups on five or more letters are not solvable
 classification:
   areas:

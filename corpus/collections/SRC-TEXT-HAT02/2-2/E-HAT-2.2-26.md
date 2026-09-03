@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-26
-kind: exercise
+kind: problem
 title: Retraction of $X \cup CA$ onto $X$ iff $A$ contractible in $X$; homology decomposition
 classification:
   areas:

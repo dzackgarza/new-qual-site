@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UGSM8
-kind: exercise
+kind: problem
 title: The general Ascoli theorem implies the classical version
 classification:
   areas:

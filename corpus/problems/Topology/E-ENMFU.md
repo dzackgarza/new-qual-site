@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ENMFU
-kind: exercise
+kind: problem
 title: A quotient of a compact space is compact
 classification:
   areas:

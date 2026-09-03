@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-B3WXJ
-kind: exercise
+kind: problem
 title: Fixed points for maps of retracts of the disk
 classification:
   areas:

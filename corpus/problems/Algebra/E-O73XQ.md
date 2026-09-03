@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O73XQ
-kind: exercise
+kind: problem
 title: $G/Z(G)$ cyclic implies $G$ abelian; $G/N$ abelian iff $[G,G]\le N$
 classification:
   areas:

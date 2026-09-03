@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ISFYB
-kind: exercise
+kind: problem
 title: Uniformly bounded derivatives implies equicontinuous
 classification:
   areas:

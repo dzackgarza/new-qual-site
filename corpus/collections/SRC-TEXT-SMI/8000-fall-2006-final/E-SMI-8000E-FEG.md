@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEG
-kind: exercise
+kind: problem
 title: Proof choice — Galois correspondence or irreducibility of cyclotomic polynomials
 classification:
   areas:

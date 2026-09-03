@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-YHZCDPYO
-kind: exercise
+kind: problem
 title: $\mathrm{rad}(IJ)=\mathrm{rad}(I)\cap\mathrm{rad}(J)$
 classification:
   areas:

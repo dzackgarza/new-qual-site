@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-40
-kind: exercise
+kind: problem
 title: Universal coefficient short exact sequence for homology with $\mathbb{Z}_n$ coefficients
 classification:
   areas:

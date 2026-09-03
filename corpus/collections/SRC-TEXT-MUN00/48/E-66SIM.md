@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-66SIM
-kind: exercise
+kind: problem
 title: Locally compact Hausdorff spaces are Baire spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-OY2K
-kind: exercise
+kind: problem
 title: Solving a system of four equations in five unknowns
 classification:
   areas:

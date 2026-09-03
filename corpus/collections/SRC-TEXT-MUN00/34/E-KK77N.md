@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KK77N
-kind: exercise
+kind: problem
 title: Locally metrizable regular Lindelof spaces are metrizable
 classification:
   areas:

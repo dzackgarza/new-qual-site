@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X1QM4
-kind: exercise
+kind: problem
 title: Compact locally euclidean Hausdorff spaces are manifolds
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-1
-kind: exercise
+kind: problem
 title: "No retraction $\\mathbb{RP}^n \\to \\mathbb{RP}^k$ via homotopy groups"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F6IXU
-kind: exercise
+kind: problem
 title: Translation is continuous in $L^1$
 classification:
   areas:

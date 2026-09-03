@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UB4PP
-kind: exercise
+kind: problem
 title: Extending cos(1/x) by enlarging the compactification
 classification:
   areas:

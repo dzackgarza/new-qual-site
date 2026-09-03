@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L3CZY
-kind: exercise
+kind: problem
 title: Compactly convergent series of holomorphic functions are holomorphic
 classification:
   areas:

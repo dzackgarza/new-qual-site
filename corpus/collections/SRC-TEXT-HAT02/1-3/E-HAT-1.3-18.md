@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-18
-kind: exercise
+kind: problem
 title: "Universal abelian covering space"
 classification:
   areas:

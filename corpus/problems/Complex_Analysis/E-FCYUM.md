@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FCYUM
-kind: exercise
+kind: problem
 title: 'Computing residues: $1/z^2\sin(z)$'
 classification:
   areas:

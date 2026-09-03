@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3BSN7
-kind: exercise
+kind: problem
 title: Triangular schemes for two collections of four triangles
 classification:
   areas:

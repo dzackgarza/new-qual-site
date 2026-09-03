@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-TSJ7AKE5
-kind: exercise
+kind: problem
 title: The number of conjugates of $H$ equals $[G:N_G(H)]$
 classification:
   areas:

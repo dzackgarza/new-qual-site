@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-29
-kind: exercise
+kind: problem
 title: "Conjugate subgroups give homeomorphic orbit spaces"
 classification:
   areas:

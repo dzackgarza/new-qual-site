@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-4
-kind: exercise
+kind: problem
 title: Largest element of finite subsets of $\{1, \ldots, n\}$
 classification:
   areas:

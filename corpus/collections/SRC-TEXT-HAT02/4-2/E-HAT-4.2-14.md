@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-14
-kind: exercise
+kind: problem
 title: "Inclusion of $S^n$ subcomplex is injective on $\\pi_n$"
 classification:
   areas:

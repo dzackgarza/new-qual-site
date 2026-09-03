@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-2
-kind: exercise
+kind: problem
 title: Union of convex open sets with triple intersections nonempty is simply-connected
 classification:
   areas:

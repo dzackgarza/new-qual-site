@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5WDER
-kind: exercise
+kind: problem
 title: Simple closed curves on the torus may or may not separate
 classification:
   areas:

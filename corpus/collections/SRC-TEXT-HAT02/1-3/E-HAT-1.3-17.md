@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-17
-kind: exercise
+kind: problem
 title: "Normal covering spaces from group extensions"
 classification:
   areas:

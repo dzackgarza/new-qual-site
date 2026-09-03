@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-6
-kind: exercise
+kind: problem
 title: "Characterization of $\\mathbb{CP}^n$-like manifolds"
 classification:
   areas:

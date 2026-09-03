@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KUOXT
-kind: exercise
+kind: problem
 title: Almost everywhere and uniform convergence of approximations to the identity
 classification:
   areas:

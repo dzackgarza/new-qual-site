@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-2
-kind: exercise
+kind: problem
 title: "Mittag--Leffler condition and $\\varprojlim^1$"
 classification:
   areas:

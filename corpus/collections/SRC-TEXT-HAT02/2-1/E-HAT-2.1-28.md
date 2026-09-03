@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-28
-kind: exercise
+kind: problem
 title: Local homology groups of cone on 1-skeleton of $\Delta^3$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QFOPP
-kind: exercise
+kind: problem
 title: Translation invariance of the Lebesgue integral
 classification:
   areas:

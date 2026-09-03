@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RGDJ7
-kind: exercise
+kind: problem
 title: Cauchy formula and $\sinh$
 classification:
   areas:

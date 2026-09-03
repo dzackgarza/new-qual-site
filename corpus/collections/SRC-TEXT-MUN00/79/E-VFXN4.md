@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VFXN4
-kind: exercise
+kind: problem
 title: Maps of the projective plane and the torus into the circle
 classification:
   areas:

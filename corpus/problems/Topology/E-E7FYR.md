@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E7FYR
-kind: exercise
+kind: problem
 title: Compactness and limit points, the first two conditions of a TFAE list
 classification:
   areas:

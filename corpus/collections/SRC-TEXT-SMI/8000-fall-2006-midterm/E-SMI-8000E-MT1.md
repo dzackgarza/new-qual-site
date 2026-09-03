@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-MT1
-kind: exercise
+kind: problem
 title: Zorn's lemma and maximal ideals containing a nonunit
 classification:
   areas:

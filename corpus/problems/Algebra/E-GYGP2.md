@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GYGP2
-kind: exercise
+kind: problem
 title: The conjugates of a proper subgroup of a finite group do not cover the group
 classification:
   areas:

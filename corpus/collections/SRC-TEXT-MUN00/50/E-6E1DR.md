@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6E1DR
-kind: exercise
+kind: problem
 title: Characterization of closed imbeddings into euclidean space
 classification:
   areas:

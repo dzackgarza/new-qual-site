@@ -30,21 +30,10 @@ sections:
       - ref: FD-JI2RH
       - ref: FD-BWVRA
       - query:
-          kind: problem
           topics:
             - Zorn's Lemma
             - Number Theory
             - Chinese Remainder Theorem
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Zorn's Lemma
-          limit: 500
-          review:
-            mode: any
   - slug: groups-and-subgroups
     title: Groups and Subgroups
     parent: preliminaries
@@ -85,7 +74,6 @@ sections:
       - ref: T-RLVA4
       - ref: PR-DJZLY
       - query:
-          kind: problem
           topics:
             - Groups
             - Subgroups
@@ -94,20 +82,6 @@ sections:
             - Normal Subgroups
             - Homomorphisms
             - Isomorphism Theorems
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Subgroups
-            - Groups
-            - Cosets and Lagrange
-            - Cyclic Groups
-            - Normal Subgroups
-          limit: 500
-          review:
-            mode: any
   - slug: group-actions-and-counting
     title: Group Actions and Counting
     parent: groups-and-subgroups
@@ -143,7 +117,6 @@ sections:
       - ref: C-CM7ZS
       - ref: FF-OL75S
       - query:
-          kind: problem
           topics:
             - Group Actions
             - Orbit-Stabilizer
@@ -151,18 +124,6 @@ sections:
             - Centralizers and Normalizers
             - Class Equation
             - Burnside's Lemma
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Centralizers and Normalizers
-            - Orbit-Stabilizer
-            - Burnside's Lemma
-          limit: 500
-          review:
-            mode: any
   - slug: sylow-theory
     title: Sylow Theory
     parent: group-actions-and-counting
@@ -192,21 +153,9 @@ sections:
       - ref: PR-IGLFV
       - ref: L-Q44MT
       - query:
-          kind: problem
           topics:
             - Sylow Theory
             - p-Groups
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Sylow Theory
-            - p-Groups
-          limit: 500
-          review:
-            mode: any
   - slug: permutation-groups
     title: Permutation Groups
     parent: group-actions-and-counting
@@ -235,22 +184,10 @@ sections:
       - ref: PR-2JG3F
       - ref: PR-434DX
       - query:
-          kind: problem
           topics:
             - Permutations
             - Simple Groups
             - Partitions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Permutations
-            - Simple Groups
-          limit: 500
-          review:
-            mode: any
   - slug: series-and-solvability
     title: Series, Solvability, and Nilpotence
     parent: group-actions-and-counting
@@ -284,23 +221,11 @@ sections:
       - ref: T-OHEFT
       - ref: D-43MDF
       - query:
-          kind: problem
           topics:
             - Subgroup Series
             - Solvable Groups
             - Nilpotent Groups
             - Commutators
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Solvable Groups
-            - Nilpotent Groups
-          limit: 500
-          review:
-            mode: any
   - slug: products-and-classification
     title: Presentations, Products, and Classification
     parent: sylow-theory
@@ -336,7 +261,6 @@ sections:
       - ref: FF-JKCAM
       - ref: FF-VAKLJ
       - query:
-          kind: problem
           topics:
             - Group Presentations
             - Free Groups
@@ -345,19 +269,6 @@ sections:
             - Automorphisms
             - Abelian Groups
             - Classification
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Classification
-            - Abelian Groups
-            - Automorphisms
-            - Direct Products
-          limit: 500
-          review:
-            mode: any
   - slug: rings-and-ideals
     title: Rings and Ideals
     parent: preliminaries
@@ -398,7 +309,6 @@ sections:
       - ref: FD-SNOTW
       - ref: T-GYVNQ
       - query:
-          kind: problem
           topics:
             - Rings
             - Ideals
@@ -406,20 +316,6 @@ sections:
             - Maximal Ideals
             - Integral Domains
             - Characteristic
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Ideals
-            - Rings
-            - Prime Ideals
-            - Maximal Ideals
-            - Integral Domains
-          limit: 500
-          review:
-            mode: any
   - slug: factorization-and-polynomials
     title: Factorization and Polynomials
     parent: rings-and-ideals
@@ -464,7 +360,6 @@ sections:
       - ref: FF-2AKVH
       - ref: FF-HAMDC
       - query:
-          kind: problem
           topics:
             - Factorization
             - Principal Ideal Domains
@@ -472,18 +367,6 @@ sections:
             - Polynomials
             - Irreducibility Criteria
             - Symmetric Functions
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Polynomials
-            - Factorization
-            - Principal Ideal Domains
-          limit: 500
-          review:
-            mode: any
   - slug: commutative-algebra
     title: Commutative Algebra
     parent: factorization-and-polynomials
@@ -529,7 +412,6 @@ sections:
       - ref: FF-IBDAT
       - ref: D-DU4UQ
       - query:
-          kind: problem
           topics:
             - Commutative Algebra
             - Localization
@@ -542,19 +424,6 @@ sections:
             - Integral Extensions
             - Geometry
             - Nakayama's Lemma
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Local Rings
-            - Nilpotence
-            - Noetherian Rings
-            - Nakayama's Lemma
-          limit: 500
-          review:
-            mode: any
   - slug: modules
     title: Modules
     parent: rings-and-ideals
@@ -599,7 +468,6 @@ sections:
       - ref: FD-2EUYX
       - ref: FD-BVM37
       - query:
-          kind: problem
           topics:
             - Modules
             - Free Modules
@@ -608,16 +476,6 @@ sections:
             - Exact Sequences
             - Homological Algebra
             - Tensor Products
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Modules
-          limit: 500
-          review:
-            mode: any
   - slug: structure-theorem
     title: The Structure Theorem over a PID
     parent: modules
@@ -640,20 +498,9 @@ sections:
       - ref: L-Y5KNM
       - ref: L-W5S2W
       - query:
-          kind: problem
           topics:
             - Structure Theorem
             - Smith Normal Form
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Structure Theorem
-          limit: 500
-          review:
-            mode: any
   - slug: fields-and-extensions
     title: Fields and Extensions
     parent: factorization-and-polynomials
@@ -718,7 +565,6 @@ sections:
       - ref: FF-MUJDE
       - ref: FF-UACKH
       - query:
-          kind: problem
           topics:
             - Field Extensions
             - Fields
@@ -727,18 +573,6 @@ sections:
             - Finite Fields
             - Roots of Unity
             - Transcendence
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Field Extensions
-            - Fields
-            - Finite Fields
-          limit: 500
-          review:
-            mode: any
   - slug: galois-theory
     title: Galois Theory
     parent: fields-and-extensions
@@ -777,19 +611,8 @@ sections:
       - ref: PR-XDWOP
       - ref: T-QX5QU
       - query:
-          kind: problem
           topics:
             - Galois Theory
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Galois Theory
-          limit: 500
-          review:
-            mode: any
   - slug: linear-algebra
     title: Linear Algebra
     parent: modules
@@ -846,7 +669,6 @@ sections:
       - ref: D-23FX7
       - ref: FF-VKYM3
       - query:
-          kind: problem
           topics:
             - Linear Algebra
             - Vector Spaces
@@ -864,17 +686,6 @@ sections:
             - Quadratic Forms
             - Functional Analysis
             - Counterexamples
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Matrices
-            - Diagonalization
-          limit: 500
-          review:
-            mode: any
   - slug: canonical-forms
     title: Canonical Forms
     parent: structure-theorem
@@ -912,23 +723,11 @@ sections:
       - ref: PR-K6MMW
       - ref: PR-K6MMW
       - query:
-          kind: problem
           topics:
             - Canonical Forms
             - Minimal and Characteristic Polynomials
             - Jordan Canonical Form
             - Rational Canonical Form
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Jordan Canonical Form
-            - Minimal and Characteristic Polynomials
-          limit: 500
-          review:
-            mode: any
   - slug: semisimplicity-and-representations
     title: Semisimplicity and Representations
     parent: modules
@@ -947,13 +746,9 @@ sections:
       - ref: T-YHH3M
       - ref: D-CTAKB
       - query:
-          kind: problem
           topics:
             - Semisimplicity
             - Algebras
             - Group Rings
             - Representation Theory
             - Character Theory
-          limit: 500
-          review:
-            mode: any

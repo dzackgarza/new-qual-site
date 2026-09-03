@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4NU4A
-kind: exercise
+kind: problem
 title: Injective continuous maps from compact spaces to Hausdorff spaces are embeddings
 classification:
   areas:

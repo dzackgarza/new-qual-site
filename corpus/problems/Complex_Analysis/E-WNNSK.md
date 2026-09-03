@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WNNSK
-kind: exercise
+kind: problem
 title: Working with conjugates
 classification:
   areas:

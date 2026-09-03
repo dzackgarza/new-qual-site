@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SADP0
-kind: exercise
+kind: problem
 title: Continuous surjections from the interval onto cubes
 classification:
   areas:

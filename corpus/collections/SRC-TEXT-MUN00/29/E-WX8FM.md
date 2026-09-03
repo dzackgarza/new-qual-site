@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WX8FM
-kind: exercise
+kind: problem
 title: Homeomorphisms extend to one-point compactifications
 classification:
   areas:

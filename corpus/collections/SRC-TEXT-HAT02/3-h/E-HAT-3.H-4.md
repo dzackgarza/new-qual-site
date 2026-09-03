@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-4
-kind: exercise
+kind: problem
 title: "Proper homotopy equivalence of universal covers"
 classification:
   areas:

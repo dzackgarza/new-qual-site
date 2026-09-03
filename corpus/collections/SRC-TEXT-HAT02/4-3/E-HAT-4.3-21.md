@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-21
-kind: exercise
+kind: problem
 title: "H-space Postnikov towers"
 classification:
   areas:

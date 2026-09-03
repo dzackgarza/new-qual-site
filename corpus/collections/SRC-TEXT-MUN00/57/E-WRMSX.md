@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WRMSX
-kind: exercise
+kind: problem
 title: Antipode-separating maps of the sphere are surjective
 classification:
   areas:

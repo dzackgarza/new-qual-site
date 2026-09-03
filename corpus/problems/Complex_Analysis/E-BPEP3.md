@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BPEP3
-kind: exercise
+kind: problem
 title: Entire functions with a pole at infinity are polynomials
 classification:
   areas:

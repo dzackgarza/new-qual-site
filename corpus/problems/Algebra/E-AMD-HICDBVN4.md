@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-HICDBVN4
-kind: exercise
+kind: problem
 title: $K[\alpha_1,\ldots,\alpha_n]=K(\alpha_1,\ldots,\alpha_n)$ for algebraic $\alpha_i$
 classification:
   areas:

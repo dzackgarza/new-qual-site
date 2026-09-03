@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5ZG7B
-kind: exercise
+kind: problem
 title: $\mathbb{R}/\mathbb{Q}$ has the indiscrete topology
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Z13JH
-kind: exercise
+kind: problem
 title: Infinite sets are connected in the finite complement topology
 classification:
   areas:

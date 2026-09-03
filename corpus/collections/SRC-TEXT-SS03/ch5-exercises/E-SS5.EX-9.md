@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-9
-kind: exercise
+kind: problem
 title: "SS 5.9: A binary product expansion of 1/(1-z)"
 classification:
   areas:

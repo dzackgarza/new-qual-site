@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NWR5K
-kind: exercise
+kind: problem
 title: Countability axioms pass through open maps
 classification:
   areas:

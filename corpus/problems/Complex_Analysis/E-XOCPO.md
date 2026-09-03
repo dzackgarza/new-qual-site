@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XOCPO
-kind: exercise
+kind: problem
 title: Laurent expanding exponentials
 classification:
   areas:

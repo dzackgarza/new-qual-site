@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XQW4K
-kind: exercise
+kind: problem
 title: Showing singularities are removable
 classification:
   areas:

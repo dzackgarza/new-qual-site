@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AZ7SN
-kind: exercise
+kind: problem
 title: A continuous real-valued function on a compact space attains its bounds
 classification:
   areas:

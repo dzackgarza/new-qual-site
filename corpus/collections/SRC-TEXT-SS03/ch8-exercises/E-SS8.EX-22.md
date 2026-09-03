@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-22
-kind: exercise
+kind: problem
 title: "If  is a simply connected region bounded by a polygon with vertices  and angles "
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ESQ3V
-kind: exercise
+kind: problem
 title: The Hilbert cube is not locally compact in the uniform topology
 classification:
   areas:

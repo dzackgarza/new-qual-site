@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-6
-kind: exercise
+kind: problem
 title: "Connected sums of manifolds"
 classification:
   areas:

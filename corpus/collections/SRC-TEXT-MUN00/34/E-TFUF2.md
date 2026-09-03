@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TFUF2
-kind: exercise
+kind: problem
 title: Details of the imbedding theorem proof
 classification:
   areas:

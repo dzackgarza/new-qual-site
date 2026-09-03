@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OR2SV
-kind: exercise
+kind: problem
 title: No two of the unit interval variants are homeomorphic
 classification:
   areas:

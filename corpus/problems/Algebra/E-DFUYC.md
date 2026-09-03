@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DFUYC
-kind: exercise
+kind: problem
 title: Recognizing direct products
 classification:
   areas:

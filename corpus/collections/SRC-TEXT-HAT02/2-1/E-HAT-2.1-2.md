@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-2
-kind: exercise
+kind: problem
 title: Edge identifications of $\Delta^3$ producing Klein bottle, torus, $S^2$, $\mathbb{RP}^2$
 classification:
   areas:

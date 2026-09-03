@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BQBZI
-kind: exercise
+kind: problem
 title: $\|f\|_p\to\|f\|_\infty$ as $p\to\infty$ on finite measure spaces
 classification:
   areas:

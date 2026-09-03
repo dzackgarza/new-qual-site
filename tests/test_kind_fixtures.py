@@ -18,7 +18,7 @@ from typing import get_args, get_type_hints
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ExerciseCard, ProblemCard
+from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -59,7 +59,7 @@ def test_every_kind_parses(kind: str) -> None:
 
 
 def test_standalone_solution_kind_is_rejected(tmp_path: Path) -> None:
-    """A solution is a section of a problem/exercise, never its own card."""
+    """A solution is a section of a problem, never its own card."""
     from qualc.model import parse_card
 
     path = tmp_path / "S-OLD.md"
@@ -79,13 +79,29 @@ def test_solves_relation_is_rejected(tmp_path: Path) -> None:
 
 
 def test_standalone_hint_kind_is_rejected(tmp_path: Path) -> None:
-    """A hint is a section of a problem/exercise, never its own card."""
+    """A hint is a section of a problem, never its own card."""
     from qualc.model import parse_card
 
     path = tmp_path / "H-OLD.md"
     path.write_text((FIXTURES / "PRB-INDEXP.md").read_text().replace("id: PRB-INDEXP", "id: H-OLD", 1).replace("kind: problem", "kind: hint", 1))
     with pytest.raises(ValueError):
         parse_card(path)
+
+
+def test_exercise_is_not_a_card_kind_and_e_ids_remain_valid_problem_ids(tmp_path: Path) -> None:
+    """Exercise is source appearance vocabulary, not an intrinsic problem kind."""
+    from qualc.model import parse_card
+
+    e_card = parse_card(FIXTURES / "EXE-CENTER.md")
+    assert isinstance(e_card.card, ProblemCard)
+    assert e_card.card.id == "EXE-CENTER"
+    assert e_card.card.kind == "problem"
+    assert e_card.sections[0][0] == "problem"
+
+    legacy = tmp_path / "E-LEGACY.md"
+    legacy.write_text((FIXTURES / "EXE-CENTER.md").read_text().replace("kind: problem", "kind: exercise", 1))
+    with pytest.raises(ValueError):
+        parse_card(legacy)
 
 
 def test_hints_at_relation_is_rejected(tmp_path: Path) -> None:
@@ -396,8 +412,10 @@ audit:
 
 @pytest.mark.parametrize("fixture", ["PRB-INDEXP.md", "EXE-CENTER.md"])
 def test_audit_rounds_parse_in_authored_order(tmp_path: Path, fixture: str) -> None:
-    """Both kinds that pose work carry the audit list, and a repeated event kind
-    is kept rather than collapsed: two `solution-reviewed` rounds stay two.
+    """Problem cards carry the audit list regardless of their historical ID prefix.
+
+    A repeated event kind is kept rather than collapsed: two
+    `solution-reviewed` rounds stay two.
 
     The dates come back as `datetime.date`, which is what makes them sortable
     and what makes a mistyped day a build failure.
@@ -407,7 +425,7 @@ def test_audit_rounds_parse_in_authored_order(tmp_path: Path, fixture: str) -> N
     path = tmp_path / fixture
     path.write_text((FIXTURES / fixture).read_text().replace("review: draft\n", AUDIT_BLOCK, 1))
     card = parse_card(path).card
-    assert isinstance(card, ProblemCard | ExerciseCard)
+    assert isinstance(card, ProblemCard)
     assert card.audit == [
         AuditEvent(event="solution-written", by="dzackgarza", date=date(2026, 8, 16)),
         AuditEvent(event="source-checked", by="dzackgarza", date=date(2026, 8, 20), note="checked against the UGA prelim paper"),

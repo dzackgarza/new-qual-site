@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4TXVF5CA
-kind: exercise
+kind: problem
 title: An irreducible in $\FF_p[x]$ divides $x^{p^n}-x$ iff its degree divides $n$
 classification:
   areas:

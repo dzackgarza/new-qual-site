@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-5-4
-kind: exercise
+kind: problem
 title: Bijections between finite and countable product spaces
 classification:
   areas:

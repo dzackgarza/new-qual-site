@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-11
-kind: exercise
+kind: problem
 title: "Fibration classes and homotopy equivalence"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-YITMZNBK
-kind: exercise
+kind: problem
 title: In a PID, $x$ is irreducible iff $(x)$ is maximal
 classification:
   areas:

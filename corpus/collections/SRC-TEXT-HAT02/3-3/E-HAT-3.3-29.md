@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-29
-kind: exercise
+kind: problem
 title: "Retractions of surfaces onto graphs"
 classification:
   areas:

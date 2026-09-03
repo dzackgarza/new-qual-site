@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YYL5U
-kind: exercise
+kind: problem
 title: A ring in which every element is a unit or nilpotent is local
 classification:
   areas:

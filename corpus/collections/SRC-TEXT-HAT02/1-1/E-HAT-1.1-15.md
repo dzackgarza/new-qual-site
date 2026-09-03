@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-15
-kind: exercise
+kind: problem
 title: Naturality square for basepoint-change homomorphisms
 classification:
   areas:

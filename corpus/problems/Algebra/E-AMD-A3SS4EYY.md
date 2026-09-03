@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-A3SS4EYY
-kind: exercise
+kind: problem
 title: A ring in which every non-unit is nilpotent is local
 classification:
   areas:

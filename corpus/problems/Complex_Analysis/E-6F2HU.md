@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6F2HU
-kind: exercise
+kind: problem
 title: Real-valued holomorphic functions are constant
 classification:
   areas:

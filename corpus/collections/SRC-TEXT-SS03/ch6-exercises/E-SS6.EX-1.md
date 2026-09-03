@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-1
-kind: exercise
+kind: problem
 title: "SS 6.1: Gauss's limit formula for the Gamma function"
 classification:
   areas:

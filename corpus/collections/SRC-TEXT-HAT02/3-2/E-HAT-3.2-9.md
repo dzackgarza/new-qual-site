@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-9
-kind: exercise
+kind: problem
 title: Hatcher Section 3.2 Exercise 9
 classification:
   areas:

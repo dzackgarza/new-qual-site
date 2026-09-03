@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OLLMN
-kind: exercise
+kind: problem
 title: Closed subsets of closed subspaces are closed
 classification:
   areas:

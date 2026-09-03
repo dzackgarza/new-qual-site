@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AOQLK
-kind: exercise
+kind: problem
 title: Residues using partial fractions/principal parts
 classification:
   areas:

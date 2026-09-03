@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-1
-kind: exercise
+kind: problem
 title: Jensen’s formula via Blaschke factors
 classification:
   areas:

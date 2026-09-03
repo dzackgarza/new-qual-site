@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2AWO8
-kind: exercise
+kind: problem
 title: Uniform, compact-convergence, and pointwise topologies on $Y^X$
 classification:
   areas:

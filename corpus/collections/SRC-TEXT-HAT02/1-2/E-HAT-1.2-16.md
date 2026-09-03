@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-16
-kind: exercise
+kind: problem
 title: Fundamental group of surface of infinite genus is free on infinitely many generators
 classification:
   areas:

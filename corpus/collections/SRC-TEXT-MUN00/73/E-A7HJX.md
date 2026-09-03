@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-A7HJX
-kind: exercise
+kind: problem
 title: Kernels under surjective composites of homomorphisms
 classification:
   areas:

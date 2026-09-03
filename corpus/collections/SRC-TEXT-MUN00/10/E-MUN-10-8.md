@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-8
-kind: exercise
+kind: problem
 title: Well-ordering unions of disjoint well-ordered sets
 classification:
   areas:

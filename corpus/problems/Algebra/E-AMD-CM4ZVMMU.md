@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-CM4ZVMMU
-kind: exercise
+kind: problem
 title: Groups of prime order are cyclic
 classification:
   areas:

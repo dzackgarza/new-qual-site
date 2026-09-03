@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-8
-kind: exercise
+kind: problem
 title: Degree of one-point compactification of polynomial equals degree as polynomial; local degree at roots equals multiplicity
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-2
-kind: exercise
+kind: problem
 title: "Product of covering spaces"
 classification:
   areas:

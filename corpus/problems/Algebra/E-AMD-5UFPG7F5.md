@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-5UFPG7F5
-kind: exercise
+kind: problem
 title: An ideal is maximal iff the quotient is a field
 classification:
   areas:

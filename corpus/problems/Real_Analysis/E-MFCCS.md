@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MFCCS
-kind: exercise
+kind: problem
 title: A pairwise disjoint family of intervals with nonempty interior in $\RR$ is
   countable
 classification:

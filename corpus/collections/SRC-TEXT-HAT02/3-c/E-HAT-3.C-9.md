@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-9
-kind: exercise
+kind: problem
 title: "Euler characteristic of finite H-spaces"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7ML5F
-kind: exercise
+kind: problem
 title: Separation axioms under refinement of topologies
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VLQ5H
-kind: exercise
+kind: problem
 title: The uncountable fundamental group of the infinite earring
 classification:
   areas:

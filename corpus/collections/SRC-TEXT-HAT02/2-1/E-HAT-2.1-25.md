@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-25
-kind: exercise
+kind: problem
 title: Explicit noninductive formula for barycentric subdivision operator
 classification:
   areas:

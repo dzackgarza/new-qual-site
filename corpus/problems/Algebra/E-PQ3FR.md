@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PQ3FR
-kind: exercise
+kind: problem
 title: A ring is local if $R\setminus\mfm$ consists of units, or if $1+\mfm$ consists
   of units
 classification:

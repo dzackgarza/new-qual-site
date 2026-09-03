@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-43
-kind: exercise
+kind: problem
 title: Splitting of chain complexes and universal coefficient formula for $H_n(X; G)$
 classification:
   areas:

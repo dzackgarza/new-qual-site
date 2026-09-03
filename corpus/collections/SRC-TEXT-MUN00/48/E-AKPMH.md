@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AKPMH
-kind: exercise
+kind: problem
 title: The irrationals are a Baire space
 classification:
   areas:

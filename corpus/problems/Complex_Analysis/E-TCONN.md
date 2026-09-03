@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TCONN
-kind: exercise
+kind: problem
 title: Fixed point convergence
 classification:
   areas:

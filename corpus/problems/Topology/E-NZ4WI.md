@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NZ4WI
-kind: exercise
+kind: problem
 title: A set open in a subspace but not in the ambient space
 classification:
   areas:

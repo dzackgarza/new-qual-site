@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DQCYAQBD
-kind: exercise
+kind: problem
 title: Quotients of dihedral groups are dihedral
 classification:
   areas:

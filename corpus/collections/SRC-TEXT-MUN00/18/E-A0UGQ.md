@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-A0UGQ
-kind: exercise
+kind: problem
 title: A function continuous at exactly one point
 classification:
   areas:

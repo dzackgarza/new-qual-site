@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BRPKJ
-kind: exercise
+kind: problem
 title: Where a proof about closures of unions fails
 classification:
   areas:

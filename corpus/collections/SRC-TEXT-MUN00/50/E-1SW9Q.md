@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1SW9Q
-kind: exercise
+kind: problem
 title: The Prufer manifold
 classification:
   areas:

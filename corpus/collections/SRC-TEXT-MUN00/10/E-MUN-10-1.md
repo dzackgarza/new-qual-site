@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-1
-kind: exercise
+kind: problem
 title: Well-ordered sets have the least upper bound property
 classification:
   areas:

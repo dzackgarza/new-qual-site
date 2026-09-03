@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TF33D
-kind: exercise
+kind: problem
 title: Fourier multiplication formula fails for unbounded $g$; $C^1$ functions equal
   their Fourier series
 classification:

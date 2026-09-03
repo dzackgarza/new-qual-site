@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.H-6
-kind: exercise
+kind: problem
 title: "Locally finite homology"
 classification:
   areas:

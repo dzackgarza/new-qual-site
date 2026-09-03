@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.PR-1
-kind: exercise
+kind: problem
 title: "Isogonality and isotropy at a point"
 classification:
   areas:

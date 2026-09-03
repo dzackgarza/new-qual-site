@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.PR-2
-kind: exercise
+kind: problem
 title: Infinite Blaschke products from sequences satisfying the Blaschke condition
 classification:
   areas:

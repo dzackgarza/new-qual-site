@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-1
-kind: exercise
+kind: problem
 title: Free product of nontrivial groups has trivial center and only conjugates of finite-order elements have finite order
 classification:
   areas:

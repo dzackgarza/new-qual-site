@@ -286,7 +286,7 @@ AuditEventKind = Literal["solution-written", "source-checked", "solution-reviewe
 
 
 class AuditEvent(Strict):
-    """One dated audit event on a problem or exercise card.
+    """One dated audit event on a problem card.
 
     Repeated events of one kind are the normal case: a solution reviewed twice
     records two `solution-reviewed` entries. Entries are read in the order
@@ -308,14 +308,11 @@ class AuditEvent(Strict):
     note: str | None = None
 
 
-# The two kinds that pose work to a reader are the two that carry `audit`.
+# Problems are the posed mathematical items. Whether one source printed the
+# item as an exercise, homework problem, or qualifying-exam problem belongs to
+# its collection appearance, not to the card's intrinsic kind.
 class ProblemCard(CardBase):
     kind: Literal["problem"]
-    audit: list[AuditEvent] = []
-
-
-class ExerciseCard(CardBase):
-    kind: Literal["exercise"]
     audit: list[AuditEvent] = []
 
 
@@ -432,7 +429,6 @@ Card = Annotated[
     | LemmaCard
     | ProofCard
     | ExampleCard
-    | ExerciseCard
     | RemarkCard
     | StrategyCard
     | ConceptCard
@@ -446,7 +442,10 @@ Card = Annotated[
 # Authored fenced-div class -> semantic section kind. Total over every class
 # measured in the two prose repos; an unmapped class is a build failure, never
 # silent prose. A section kind need not be a card kind: `solution` and `hint`
-# deliberately exist only inside a problem/exercise card. `warnings` is plural
+# deliberately exist only inside a problem card. `exercise` is an authored
+# source label for a posed item and normalizes to the same domain kind as
+# `problem`; the collection appearance preserves where/how it was posed.
+# `warnings` is plural
 # in the source and singular downstream: the div vocabulary is an input format, not the
 # domain type.
 DIV_CLASS_TO_KIND = {
@@ -460,7 +459,7 @@ DIV_CLASS_TO_KIND = {
     "lemma": "lemma",
     "proof": "proof",
     "example": "example",
-    "exercise": "exercise",
+    "exercise": "problem",
     "remark": "remark",
     "strategy": "strategy",
     "concept": "concept",

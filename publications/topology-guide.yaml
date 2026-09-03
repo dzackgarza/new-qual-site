@@ -31,7 +31,6 @@ sections:
       - ref: D-BCNUH
       - ref: D-KW52R
       - query:
-          kind: problem
           topics:
             - Point-Set Topology
             - Closure
@@ -39,9 +38,6 @@ sections:
             - Limits
             - Bases
             - Homeomorphisms
-          limit: 500
-          review:
-            mode: any
   - slug: constructions-of-spaces
     title: Constructions of Spaces
     parent: spaces-and-continuous-maps
@@ -63,14 +59,10 @@ sections:
       - ref: D-HRU62
       - ref: D-O5NN7
       - query:
-          kind: problem
           topics:
             - Subspace Topology
             - Product Topology
             - Quotient Spaces
-          limit: 500
-          review:
-            mode: any
   - slug: separation-and-countability
     title: Separation and Countability
     parent: spaces-and-continuous-maps
@@ -96,15 +88,11 @@ sections:
       - ref: D-X6LZD
       - ref: D-3O6QH
       - query:
-          kind: problem
           topics:
             - Hausdorff Spaces
             - Separation Axioms
             - Countability
             - Density
-          limit: 500
-          review:
-            mode: any
   - slug: metric-spaces
     title: Metric Spaces
     parent: separation-and-countability
@@ -127,15 +115,11 @@ sections:
       - ref: D-SDMMS
       - ref: T-HGDAG
       - query:
-          kind: problem
           topics:
             - Metric Spaces
             - Completeness
             - Euclidean Spaces
             - Convergence
-          limit: 500
-          review:
-            mode: any
   - slug: compactness
     title: Compactness
     parent: separation-and-countability
@@ -164,21 +148,10 @@ sections:
       - ref: T-HH3YP
       - ref: T-7DICT
       - query:
-          kind: problem
           topics:
             - Compactness
             - Tube Lemma
             - Paracompactness
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Compactness
-          limit: 500
-          review:
-            mode: any
   - slug: connectedness-and-homotopy
     title: Connectedness and Homotopy
     parent: spaces-and-continuous-maps
@@ -210,15 +183,11 @@ sections:
       - ref: D-UH3L5
       - ref: T-TQ4J3
       - query:
-          kind: problem
           topics:
             - Connectedness
             - Homotopy
             - Retracts
             - Counterexamples
-          limit: 500
-          review:
-            mode: any
   - slug: the-fundamental-group
     title: The Fundamental Group
     parent: connectedness-and-homotopy
@@ -245,14 +214,10 @@ sections:
       - ref: PR-OO3DH
       - ref: D-EUX36
       - query:
-          kind: problem
           topics:
             - Fundamental Group
             - van Kampen
             - Groups
-          limit: 500
-          review:
-            mode: any
   - slug: covering-spaces
     title: Covering Spaces
     parent: the-fundamental-group
@@ -284,14 +249,10 @@ sections:
       - ref: T-O44GI
       - ref: C-ILVEB
       - query:
-          kind: problem
           topics:
             - Covering Spaces
             - Group Actions
             - Conjugacy
-          limit: 500
-          review:
-            mode: any
   - slug: cell-complexes
     title: Cell Complexes
     parent: constructions-of-spaces
@@ -323,13 +284,9 @@ sections:
       - ref: PR-QJZDT
       - ref: PR-FG4DK
       - query:
-          kind: problem
           topics:
             - Cell Complexes
             - Category Theory
-          limit: 500
-          review:
-            mode: any
   - slug: homology
     title: Homology
     parent: cell-complexes
@@ -361,15 +318,11 @@ sections:
       - ref: D-KC4BS
       - ref: T-GL7E6
       - query:
-          kind: problem
           topics:
             - Homology
             - Mayer-Vietoris
             - Homological Algebra
             - Modules
-          limit: 500
-          review:
-            mode: any
   - slug: degree-and-fixed-points
     title: Degree and Fixed Points
     parent: homology
@@ -390,13 +343,9 @@ sections:
       - ref: T-VQTR6
       - ref: T-WNOWY
       - query:
-          kind: problem
           topics:
             - Degree
             - Fixed Points
-          limit: 500
-          review:
-            mode: any
   - slug: surfaces
     title: Surfaces
     parent: homology
@@ -424,14 +373,10 @@ sections:
       - ref: PR-QV4U5
       - ref: PR-TU4G5
       - query:
-          kind: problem
           topics:
             - Surfaces
             - Classification
             - Euler Characteristic
-          limit: 500
-          review:
-            mode: any
   - slug: manifolds-and-duality
     title: Manifolds and Duality
     parent: homology
@@ -470,12 +415,8 @@ sections:
       - ref: D-6POU4
       - ref: PR-3FB24
       - query:
-          kind: problem
           topics:
             - Manifolds
             - Orientation
             - Cohomology
             - Poincaré Duality
-          limit: 500
-          review:
-            mode: any

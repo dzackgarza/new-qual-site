@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-3SH7
-kind: exercise
+kind: problem
 title: Row-reduction and invertible matrix factorization $R = PA$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-5
-kind: exercise
+kind: problem
 title: "SS 4.5: Fourier transforms of rational functions by partial fractions"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.F-2
-kind: exercise
+kind: problem
 title: "Suspension sequences of CW complexes"
 classification:
   areas:

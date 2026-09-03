@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-13
-kind: exercise
+kind: problem
 title: "No retraction onto subsurface of high genus"
 classification:
   areas:

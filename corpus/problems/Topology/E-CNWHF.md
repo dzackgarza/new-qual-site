@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CNWHF
-kind: exercise
+kind: problem
 title: Compact metric spaces are complete
 classification:
   areas:

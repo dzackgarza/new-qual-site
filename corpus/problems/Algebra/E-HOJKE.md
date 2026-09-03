@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HOJKE
-kind: exercise
+kind: problem
 title: $A$ is a field iff $A$ is a simple ring iff every homomorphism from $A$ to
   a nonzero field is injective
 classification:

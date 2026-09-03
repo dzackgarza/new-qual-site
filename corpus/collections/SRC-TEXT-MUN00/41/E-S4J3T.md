@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-S4J3T
-kind: exercise
+kind: problem
 title: Unions of closed paracompact subspaces
 classification:
   areas:

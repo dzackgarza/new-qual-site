@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O5SOQ
-kind: exercise
+kind: problem
 title: Entire functions with $|f(z)|\le|\sin z|$ are $c\sin z$ with $|c|\le 1$
 classification:
   areas:

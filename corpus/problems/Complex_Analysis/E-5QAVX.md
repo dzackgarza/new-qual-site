@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5QAVX
-kind: exercise
+kind: problem
 title: Using derivatives
 classification:
   areas:

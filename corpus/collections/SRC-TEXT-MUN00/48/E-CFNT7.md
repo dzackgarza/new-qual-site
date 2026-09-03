@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CFNT7
-kind: exercise
+kind: problem
 title: Countable unions in Baire spaces
 classification:
   areas:

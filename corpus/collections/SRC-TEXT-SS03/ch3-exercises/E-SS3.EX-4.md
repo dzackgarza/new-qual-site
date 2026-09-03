@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-4
-kind: exercise
+kind: problem
 title: "SS 3.4: The integral of x sin x over x^2+a^2"
 classification:
   areas:

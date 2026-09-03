@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-R3NOE
-kind: exercise
+kind: problem
 title: Products of subspaces are subspaces
 classification:
   areas:

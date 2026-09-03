@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-U8UBU
-kind: exercise
+kind: problem
 title: Coset spaces of topological groups
 classification:
   areas:

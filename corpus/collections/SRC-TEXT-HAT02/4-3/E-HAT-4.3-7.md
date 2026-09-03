@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-7
-kind: exercise
+kind: problem
 title: "Addition in $\\langle X, K(G,n) \\rangle$ matches cohomology"
 classification:
   areas:

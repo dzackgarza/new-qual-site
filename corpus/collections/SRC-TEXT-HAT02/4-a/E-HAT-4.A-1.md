@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.A-1
-kind: exercise
+kind: problem
 title: "Homotopies of maps to topological groups are basepoint-preserving"
 classification:
   areas:

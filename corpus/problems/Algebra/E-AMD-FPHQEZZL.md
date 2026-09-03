@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-FPHQEZZL
-kind: exercise
+kind: problem
 title: $\Inn(G)\cong G/Z(G)$
 classification:
   areas:

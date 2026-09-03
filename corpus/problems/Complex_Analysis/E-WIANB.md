@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WIANB
-kind: exercise
+kind: problem
 title: Bounded holomorphic functions form a Banach space
 classification:
   areas:

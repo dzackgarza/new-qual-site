@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-8
-kind: exercise
+kind: problem
 title: "Bockstein sequence on Moore spaces"
 classification:
   areas:

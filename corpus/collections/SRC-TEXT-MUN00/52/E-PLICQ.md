@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PLICQ
-kind: exercise
+kind: problem
 title: Abelian fundamental groups and base-point independence
 classification:
   areas:

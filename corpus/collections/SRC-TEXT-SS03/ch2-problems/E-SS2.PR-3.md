@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.PR-3
-kind: exercise
+kind: problem
 title: "SS 2.PR-3: Morera's theorem for circles and toy contours"
 classification:
   areas:

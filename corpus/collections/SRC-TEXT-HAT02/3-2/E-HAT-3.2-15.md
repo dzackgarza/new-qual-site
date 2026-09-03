@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-15
-kind: exercise
+kind: problem
 title: "Poincaré series and products"
 classification:
   areas:

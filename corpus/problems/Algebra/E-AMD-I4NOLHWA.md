@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-I4NOLHWA
-kind: exercise
+kind: problem
 title: Groups of order 10
 classification:
   areas:

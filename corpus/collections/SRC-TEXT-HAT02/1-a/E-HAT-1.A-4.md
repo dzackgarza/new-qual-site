@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-4
-kind: exercise
+kind: problem
 title: Loop $Y$ in finite graph is element of a basis for $\pi_1$
 classification:
   areas:

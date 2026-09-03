@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SPIVX
-kind: exercise
+kind: problem
 title: $\cos(x) / x^2 + b^2$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MLXNX
-kind: exercise
+kind: problem
 title: Hadamard's ill-posed Cauchy problem for Laplace's equation
 classification:
   areas:

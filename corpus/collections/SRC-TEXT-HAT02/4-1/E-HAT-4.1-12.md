@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-12
-kind: exercise
+kind: problem
 title: "$n$-connected $n$-dimensional CW complexes are contractible"
 classification:
   areas:

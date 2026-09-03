@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-13
-kind: exercise
+kind: problem
 title: "Self-duality of Hopf algebras"
 classification:
   areas:

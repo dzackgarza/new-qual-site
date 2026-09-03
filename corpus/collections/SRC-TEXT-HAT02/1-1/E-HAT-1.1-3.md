@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-3
-kind: exercise
+kind: problem
 title: $\pi_1(X)$ abelian iff basepoint-change homomorphisms depend only on endpoints
 classification:
   areas:

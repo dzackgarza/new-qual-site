@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8IBEP
-kind: exercise
+kind: problem
 title: Free generators for the subgroup lifted over the figure eight
 classification:
   areas:

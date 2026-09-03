@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WXIRH
-kind: exercise
+kind: problem
 title: Integration by parts, special case
 classification:
   areas:

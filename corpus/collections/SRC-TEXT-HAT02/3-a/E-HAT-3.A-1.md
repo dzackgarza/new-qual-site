@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.A-1
-kind: exercise
+kind: problem
 title: "Euler characteristic is independent of coefficient field"
 classification:
   areas:

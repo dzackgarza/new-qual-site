@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-1
-kind: exercise
+kind: problem
 title: Weak topology on a graph with finite vertex degree is a metric topology
 classification:
   areas:

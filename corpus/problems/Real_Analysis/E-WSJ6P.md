@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WSJ6P
-kind: exercise
+kind: problem
 title: The sum of countably many measures is a measure
 classification:
   areas:

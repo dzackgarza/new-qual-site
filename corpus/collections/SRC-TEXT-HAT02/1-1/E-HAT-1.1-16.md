@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-16
-kind: exercise
+kind: problem
 title: No retractions in six specific cases
 classification:
   areas:

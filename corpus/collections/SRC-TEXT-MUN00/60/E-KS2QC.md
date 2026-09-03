@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KS2QC
-kind: exercise
+kind: problem
 title: The projective line and its covering
 classification:
   areas:

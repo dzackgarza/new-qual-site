@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-6
-kind: exercise
+kind: problem
 title: Free generators for commutator subgroup of free group via covering space
 classification:
   areas:

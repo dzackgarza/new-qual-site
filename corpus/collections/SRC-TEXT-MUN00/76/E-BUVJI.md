@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BUVJI
-kind: exercise
+kind: problem
 title: Two reduction sequences for the same scheme disagree
 classification:
   areas:

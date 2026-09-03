@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W2CWJ
-kind: exercise
+kind: problem
 title: Removable singularity at infinity iff constant
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-7
-kind: exercise
+kind: problem
 title: "SS 9.7: Evaluations of zeta at 2 and 4 from the cotangent series"
 classification:
   areas:

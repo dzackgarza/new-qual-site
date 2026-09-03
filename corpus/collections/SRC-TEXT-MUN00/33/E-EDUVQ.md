@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EDUVQ
-kind: exercise
+kind: problem
 title: Box products of the line are completely regular
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-3
-kind: exercise
+kind: problem
 title: "Complement of a disk pair in a sphere pair"
 classification:
   areas:

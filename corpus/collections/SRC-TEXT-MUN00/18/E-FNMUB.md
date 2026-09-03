@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FNMUB
-kind: exercise
+kind: problem
 title: Uniqueness of continuous extensions into Hausdorff spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.A-2
-kind: exercise
+kind: problem
 title: "$\\pi_1$-action on $\\langle X, Y \\rangle$ and Eilenberg--MacLane spaces"
 classification:
   areas:

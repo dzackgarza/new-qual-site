@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED6
-kind: exercise
+kind: problem
 title: Kernel and cokernel are unchanged under isomorphisms of source and target
 classification:
   areas:

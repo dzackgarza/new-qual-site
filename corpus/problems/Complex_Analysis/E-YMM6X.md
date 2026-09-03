@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YMM6X
-kind: exercise
+kind: problem
 title: Weierstrass's theorem on locally uniform limits of holomorphic functions
 classification:
   areas:

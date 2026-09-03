@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.A-3
-kind: exercise
+kind: problem
 title: "Automorphisms of $K(\\pi, 1)$ are outer automorphisms of $\\pi$"
 classification:
   areas:

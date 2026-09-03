@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LXPI7
-kind: exercise
+kind: problem
 title: Constructing functions with specified singularities
 classification:
   areas:

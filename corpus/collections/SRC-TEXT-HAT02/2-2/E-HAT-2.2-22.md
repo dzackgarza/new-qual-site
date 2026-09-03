@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-22
-kind: exercise
+kind: problem
 title: Euler characteristic of $n$-sheeted covering space is $n$ times base
 classification:
   areas:

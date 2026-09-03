@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QWNYJ
-kind: exercise
+kind: problem
 title: Countable products of separable spaces are separable
 classification:
   areas:

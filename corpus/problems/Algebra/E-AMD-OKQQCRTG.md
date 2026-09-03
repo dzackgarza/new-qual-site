@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-OKQQCRTG
-kind: exercise
+kind: problem
 title: $p$-groups are nilpotent
 classification:
   areas:

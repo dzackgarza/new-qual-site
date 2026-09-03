@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-5
-kind: exercise
+kind: problem
 title: "Orientability of products"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-31
-kind: exercise
+kind: problem
 title: "Boundary map sends fundamental class to fundamental class"
 classification:
   areas:

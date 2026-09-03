@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-15
-kind: exercise
+kind: problem
 title: Middle term of exact sequence is zero iff outer maps have expected kernel/cokernel
 classification:
   areas:

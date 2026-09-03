@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CJA01
-kind: exercise
+kind: problem
 title: The unit interval is not limit point compact in the lower limit topology
 classification:
   areas:

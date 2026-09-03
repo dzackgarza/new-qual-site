@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-0H3A
-kind: exercise
+kind: problem
 title: Invertibility of upper-triangular matrices
 classification:
   areas:

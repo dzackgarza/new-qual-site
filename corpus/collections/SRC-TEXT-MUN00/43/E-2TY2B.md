@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2TY2B
-kind: exercise
+kind: problem
 title: Completion via Cauchy sequences
 classification:
   areas:

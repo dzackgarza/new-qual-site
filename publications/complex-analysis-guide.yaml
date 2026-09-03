@@ -40,21 +40,11 @@ sections:
       - ref: PR-MWUJS
       - ref: T-E76LX
       - query:
-          kind: problem
           topics:
             - Geometry
             - Trigonometry
             - Hyperbolic Functions
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
             - Complex Logarithm
-          limit: 6
-          review:
-            mode: any
   - slug: series-and-convergence
     title: Series and Convergence
     parent: complex-arithmetic-and-elementary-functions
@@ -82,21 +72,11 @@ sections:
       - ref: FE-LAN3V
       - ref: FE-EUOB2
       - query:
-          kind: problem
           topics:
             - Convergence Tests
             - Series of Numbers
             - Series of Functions
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
             - Power Series
-          limit: 6
-          review:
-            mode: any
   - slug: holomorphy-and-analyticity
     title: Holomorphy and Analyticity
     parent: series-and-convergence
@@ -117,20 +97,9 @@ sections:
       - ref: D-V6UQJ
       - ref: PR-QNDSD
       - query:
-          kind: problem
           topics:
             - Cauchy-Riemann
             - Holomorphic Functions
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Cauchy-Riemann
-          limit: 6
-          review:
-            mode: any
   - slug: harmonic-functions
     title: Harmonic Functions
     parent: holomorphy-and-analyticity
@@ -153,21 +122,10 @@ sections:
       - ref: C-KOFDQ
       - ref: D-XR64P
       - query:
-          kind: problem
           topics:
             - Harmonic Functions
             - PDEs
             - Mean Value Property
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Harmonic Functions
-          limit: 6
-          review:
-            mode: any
   - slug: cauchy-theory
     title: Cauchy Theory
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -193,7 +151,6 @@ sections:
       - ref: T-SVF2W
       - ref: T-LHSMY
       - query:
-          kind: problem
           topics:
             - Liouville's Theorem
             - Entire Functions
@@ -201,17 +158,8 @@ sections:
             - Identity Theorem
             - Morera
             - Maximum Modulus Principle
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
             - Cauchy Integral Formula
             - Cauchy Integral Theorem
-          limit: 6
-          review:
-            mode: any
   - slug: zeros-and-singularities
     title: Zeros and Singularities
     parent: cauchy-theory
@@ -239,24 +187,14 @@ sections:
       - ref: T-EO65T
       - ref: D-7DFVJ
       - query:
-          kind: problem
           topics:
             - Meromorphic Functions
             - Singularities
             - Removable Singularities
             - Essential Singularities
             - Casorati-Weierstrass
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
             - Laurent Series
             - Principal Parts
-          limit: 8
-          review:
-            mode: any
   - slug: argument-principle
     title: The Argument Principle
     parent: zeros-and-singularities
@@ -281,7 +219,6 @@ sections:
       - ref: C-FRF33
       - ref: T-YLI6Y
       - query:
-          kind: problem
           topics:
             - Rouché
             - Argument Principle
@@ -289,9 +226,6 @@ sections:
             - Open Mapping Theorem
             - Zeros
             - Polynomials
-          limit: 500
-          review:
-            mode: any
   - slug: residues
     title: Residues and Contour Integration
     parent: argument-principle
@@ -316,22 +250,10 @@ sections:
       - ref: T-SSNLT
       - ref: T-WFXQP
       - query:
-          kind: problem
           topics:
             - Residues
             - Contour Integration
             - Integrals
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Residues
-            - Contour Integration
-          limit: 10
-          review:
-            mode: any
   - slug: conformal-maps-and-the-disc
     title: Conformal Maps and the Disc
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -359,23 +281,12 @@ sections:
       - ref: T-DAETF
       - ref: T-W26VL
       - query:
-          kind: problem
           topics:
             - Conformal Maps
             - Fractional Linear Transformations
             - Schwarz Lemma
             - Blaschke Factors
             - Biholomorphisms
-          limit: 500
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
-            - Conformal Maps
-          limit: 10
-          review:
-            mode: any
   - slug: normal-families-and-omitted-values
     title: Normal Families and Omitted Values
     parent: conformal-maps-and-the-disc
@@ -407,24 +318,13 @@ sections:
       - ref: T-HWBWI
       - ref: T-DDOWW
       - query:
-          kind: problem
           topics:
             - Normal Families
             - Montel
             - Picard
             - Riemann Mapping Theorem
-          limit: 6
-          review:
-            mode: any
-      - query:
-          kind: exercise
-          topics:
             - Equicontinuity
-            - Normal Families
             - Uniform Convergence
-          limit: 8
-          review:
-            mode: any
   - slug: special-functions-and-factorization
     title: Special Functions and Factorization
     parent: normal-families-and-omitted-values
@@ -451,15 +351,11 @@ sections:
       - ref: T-ZAEWG
       - ref: C-BKYF7
       - query:
-          kind: exercise
           topics:
             - Gamma Function
             - Riemann Zeta
             - Weierstrass Factorization
             - Riemann Surfaces
-          limit: 8
-          review:
-            mode: any
   - slug: problems-from-the-qualifying-exams
     title: Problems from the Qualifying Exams
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -475,7 +371,6 @@ sections:
       already met above appear here again, which is what a revision pass is for.'
     items:
       - query:
-          kind: problem
           topics:
             - Entire Functions
             - Liouville's Theorem
@@ -486,6 +381,3 @@ sections:
             - Morera
             - Counterexamples
             - Uniform Continuity
-          limit: 500
-          review:
-            mode: any

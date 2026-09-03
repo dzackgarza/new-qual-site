@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-J7FPE
-kind: exercise
+kind: problem
 title: Coverings of the torus are classified by rank
 classification:
   areas:

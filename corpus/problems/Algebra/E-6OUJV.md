@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6OUJV
-kind: exercise
+kind: problem
 title: Irreducible polynomials in characteristic $p$ are $g(x^{p^k})$ for unique separable
   $g$
 classification:

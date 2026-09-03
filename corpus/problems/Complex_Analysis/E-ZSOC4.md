@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZSOC4
-kind: exercise
+kind: problem
 title: Forcing a map to be the identity
 classification:
   areas:

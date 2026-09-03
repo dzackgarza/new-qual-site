@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2V2VL
-kind: exercise
+kind: problem
 title: Compact subspaces of metric spaces are closed and bounded
 classification:
   areas:

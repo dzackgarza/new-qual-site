@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-15
-kind: exercise
+kind: problem
 title: "Simply-connected closed 3-manifolds are $S^3$"
 classification:
   areas:

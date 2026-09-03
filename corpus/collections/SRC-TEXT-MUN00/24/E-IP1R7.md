@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IP1R7
-kind: exercise
+kind: problem
 title: The plane minus countably many points is path connected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-3
-kind: exercise
+kind: problem
 title: "$\\operatorname{Ext}(A, \\mathbb{Q}) = 0$"
 classification:
   areas:

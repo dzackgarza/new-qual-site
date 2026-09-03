@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-8
-kind: exercise
+kind: problem
 title: "The chain rule for the dz and dzbz derivatives"
 classification:
   areas:

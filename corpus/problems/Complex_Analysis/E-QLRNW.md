@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QLRNW
-kind: exercise
+kind: problem
 title: Uniform limits of derivatives, term-by-term differentiation
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-N8
-kind: exercise
+kind: problem
 title: Unique factorization localizes
 classification:
   areas:

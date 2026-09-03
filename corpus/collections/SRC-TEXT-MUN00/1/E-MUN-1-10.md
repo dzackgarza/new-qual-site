@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-10
-kind: exercise
+kind: problem
 title: Cartesian products as subsets of $\mathbb{R} \times \mathbb{R}$
 classification:
   areas:

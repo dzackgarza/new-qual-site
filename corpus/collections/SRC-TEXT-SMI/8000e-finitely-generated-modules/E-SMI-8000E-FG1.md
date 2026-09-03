@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FG1
-kind: exercise
+kind: problem
 title: Classifying groups, modules, and Jordan forms of one fixed type
 classification:
   areas:

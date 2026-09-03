@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-4
-kind: exercise
+kind: problem
 title: "SS 9.4: Periodicity of the Weierstrass function by rearrangement"
 classification:
   areas:

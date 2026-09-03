@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-21
-kind: exercise
+kind: problem
 title: "Postnikov towers and covering spaces commute"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-32
-kind: exercise
+kind: problem
 title: "Compact manifolds do not retract onto boundary"
 classification:
   areas:

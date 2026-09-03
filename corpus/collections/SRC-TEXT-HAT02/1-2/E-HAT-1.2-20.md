@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-20
-kind: exercise
+kind: problem
 title: Fundamental group of union of tangent circles equals that of infinite wedge, and spaces are homotopy equivalent but not homeomorphic
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FS7GZ
-kind: exercise
+kind: problem
 title: Radius of convergence
 classification:
   areas:

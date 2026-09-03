@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NO7PH
-kind: exercise
+kind: problem
 title: Baire property of the lower limit line
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XFXGM
-kind: exercise
+kind: problem
 title: Product metrics, finite and countable
 classification:
   areas:

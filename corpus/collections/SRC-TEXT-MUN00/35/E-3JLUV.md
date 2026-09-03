@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3JLUV
-kind: exercise
+kind: problem
 title: Bounded under every metric, bounded continuous functions, and limit point compactness
 classification:
   areas:

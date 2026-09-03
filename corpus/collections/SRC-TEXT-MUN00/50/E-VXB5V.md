@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VXB5V
-kind: exercise
+kind: problem
 title: Discrete spaces have dimension zero
 classification:
   areas:

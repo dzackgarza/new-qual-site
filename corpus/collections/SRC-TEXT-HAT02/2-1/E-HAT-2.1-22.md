@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-22
-kind: exercise
+kind: problem
 title: Homology of finite-dimensional CW complexes by induction on dimension
 classification:
   areas:

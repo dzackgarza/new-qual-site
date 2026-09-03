@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TTW3C
-kind: exercise
+kind: problem
 title: A continuous map of metric spaces is uniformly continuous on compact subsets
 classification:
   areas:

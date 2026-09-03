@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-1EVA
-kind: exercise
+kind: problem
 title: Row-reduced $2 \times 2$ complex matrices with trace zero
 classification:
   areas:

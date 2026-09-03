@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-3
-kind: exercise
+kind: problem
 title: Degree zero map has fixed and antipodal points; Hairy Ball Theorem
 classification:
   areas:

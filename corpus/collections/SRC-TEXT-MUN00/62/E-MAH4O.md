@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MAH4O
-kind: exercise
+kind: problem
 title: Winding of a curve about the origin from its position in the complement
 classification:
   areas:

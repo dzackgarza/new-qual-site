@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-13
-kind: exercise
+kind: problem
 title: Two ways to identify boundary circles of disk with two holes give non-isomorphic fundamental groups
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-19
-kind: exercise
+kind: problem
 title: "SS 8.19: The plane slit along parallel rays is simply connected"
 classification:
   areas:

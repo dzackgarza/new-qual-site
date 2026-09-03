@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-2
-kind: exercise
+kind: problem
 title: "Deleting a point does not affect orientability"
 classification:
   areas:

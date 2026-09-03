@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-7
-kind: exercise
+kind: problem
 title: "Degree 1 maps to $S^n$"
 classification:
   areas:

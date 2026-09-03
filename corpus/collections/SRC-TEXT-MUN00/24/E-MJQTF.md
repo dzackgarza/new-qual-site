@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MJQTF
-kind: exercise
+kind: problem
 title: Interior and boundary of a connected set
 classification:
   areas:

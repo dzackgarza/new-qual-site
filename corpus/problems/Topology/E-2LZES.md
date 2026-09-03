@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2LZES
-kind: exercise
+kind: problem
 title: Compactness, limit point compactness, and sequential compactness are equivalent for metrizable spaces
 classification:
   areas:

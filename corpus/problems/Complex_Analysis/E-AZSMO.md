@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AZSMO
-kind: exercise
+kind: problem
 title: Sublinear growth
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CGVE4
-kind: exercise
+kind: problem
 title: Countable unions of null sets are null
 classification:
   areas:

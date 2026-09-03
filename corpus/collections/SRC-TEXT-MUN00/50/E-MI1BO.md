@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MI1BO
-kind: exercise
+kind: problem
 title: Locally euclidean spaces are locally compact and locally metrizable
 classification:
   areas:

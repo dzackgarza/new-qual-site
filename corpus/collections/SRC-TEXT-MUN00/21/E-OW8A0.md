@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OW8A0
-kind: exercise
+kind: problem
 title: The subspace metric
 classification:
   areas:

@@ -359,7 +359,6 @@ def test_collection_area_without_problem_cards_is_the_area_on_no_problem(
         tmp_path / "corpus" / "E-ALG.md",
         "E-ALG",
         areas=["algebra"],
-        kind="exercise",
     )
     assert _findings(tmp_path, "collection-area-without-problem-cards") == ["SRC-STAT: statistics"]
 

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TLB44
-kind: exercise
+kind: problem
 title: Open sets in a closed interval versus open sets in the line
 classification:
   areas:

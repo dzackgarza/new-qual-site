@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-4
-kind: exercise
+kind: problem
 title: "Homotopy of infinite wedge of spheres"
 classification:
   areas:

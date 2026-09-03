@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FXYTL
-kind: exercise
+kind: problem
 title: 'Holomorphic functions on a domain: $fg\equiv 0$ implies $f\equiv 0$ or $g\equiv
   0$'
 classification:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YR05O
-kind: exercise
+kind: problem
 title: Antipode-preserving maps of the circle act by odd powers
 classification:
   areas:

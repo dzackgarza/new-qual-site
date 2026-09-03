@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-URH71
-kind: exercise
+kind: problem
 title: Countable unions of nowhere dense closed sets in compact Hausdorff spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OWZBO
-kind: exercise
+kind: problem
 title: Uniqueness of free products
 classification:
   areas:

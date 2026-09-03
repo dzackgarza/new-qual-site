@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CHQXB
-kind: exercise
+kind: problem
 title: Closure points detected by convergent nets
 classification:
   areas:

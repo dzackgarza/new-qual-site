@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-24
-kind: exercise
+kind: problem
 title: "Moore spaces $M(G,1)$ and $H_2(K(G,1))$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LS2QW
-kind: exercise
+kind: problem
 title: The Stone-Cech construction is a functor
 classification:
   areas:

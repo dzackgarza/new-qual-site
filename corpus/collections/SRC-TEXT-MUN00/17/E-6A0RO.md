@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6A0RO
-kind: exercise
+kind: problem
 title: Hausdorff spaces and the closed diagonal
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LESK3
-kind: exercise
+kind: problem
 title: Strong hypotheses short of metrizability
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-4
-kind: exercise
+kind: problem
 title: Simplicial homology of triangular parachute
 classification:
   areas:

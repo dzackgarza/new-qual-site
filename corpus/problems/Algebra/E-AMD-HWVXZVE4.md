@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-HWVXZVE4
-kind: exercise
+kind: problem
 title: The radical of an ideal is the intersection of the primes containing it
 classification:
   areas:

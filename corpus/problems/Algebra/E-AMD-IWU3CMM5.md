@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-IWU3CMM5
-kind: exercise
+kind: problem
 title: Groups of order $pq$ with $q<p$
 classification:
   areas:

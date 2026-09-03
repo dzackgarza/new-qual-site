@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-7
-kind: exercise
+kind: problem
 title: "Primitive elements of $\\mathbb{Z}_p[x]$"
 classification:
   areas:

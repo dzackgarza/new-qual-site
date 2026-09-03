@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F46JG
-kind: exercise
+kind: problem
 title: Every topological group is completely regular
 classification:
   areas:

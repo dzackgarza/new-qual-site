@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-76OHA
-kind: exercise
+kind: problem
 title: Discrete spaces are paracompact; images need not be
 classification:
   areas:

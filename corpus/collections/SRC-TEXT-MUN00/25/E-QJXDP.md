@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QJXDP
-kind: exercise
+kind: problem
 title: Weak local connectedness at a point without local connectedness
 classification:
   areas:

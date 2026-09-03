@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-5NREC
-kind: exercise
+kind: problem
 title: Images of locally compact spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4SSSVQJY
-kind: exercise
+kind: problem
 title: Every element of a finite ring is a unit or a zero-divisor
 classification:
   areas:

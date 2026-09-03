@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IQQAF
-kind: exercise
+kind: problem
 title: ML estimate for a semicircular contour
 classification:
   areas:

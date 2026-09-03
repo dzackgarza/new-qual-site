@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-11
-kind: exercise
+kind: problem
 title: "Degree 1 maps between surfaces"
 classification:
   areas:

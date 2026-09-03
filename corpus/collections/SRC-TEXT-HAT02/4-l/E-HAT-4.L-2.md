@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.L-2
-kind: exercise
+kind: problem
 title: "Cohomology operations distinguish quotients"
 classification:
   areas:

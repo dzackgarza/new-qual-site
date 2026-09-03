@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-APRPU
-kind: exercise
+kind: problem
 title: Higher-dimensional separation theorems from the no-retraction theorem
 classification:
   areas:

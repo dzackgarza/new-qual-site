@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XIQ94
-kind: exercise
+kind: problem
 title: The order of the rectangles in the lifting-of-homotopies proof
 classification:
   areas:

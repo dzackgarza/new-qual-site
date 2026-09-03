@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-2
-kind: exercise
+kind: problem
 title: "Maps to $K(G,1)$ from spaces with trivial $\\pi_1$-to-$G$ homomorphisms"
 classification:
   areas:

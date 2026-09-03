@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-2
-kind: exercise
+kind: problem
 title: "Cohomology of $K(\\mathbb{Z}_p, 1)$ via Leray--Hirsch"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-11
-kind: exercise
+kind: problem
 title: Free groups are residually finite
 classification:
   areas:

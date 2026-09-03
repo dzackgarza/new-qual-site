@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NTKTA
-kind: exercise
+kind: problem
 title: 'Sum formulas: $1/n^2$'
 classification:
   areas:

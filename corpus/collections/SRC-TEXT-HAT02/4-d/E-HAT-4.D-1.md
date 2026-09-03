@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-1
-kind: exercise
+kind: problem
 title: "Cup product structure on pullbacks of $\\mathbb{CP}^3 \\to S^4$"
 classification:
   areas:

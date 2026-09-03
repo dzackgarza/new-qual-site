@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-7
-kind: exercise
+kind: problem
 title: "The Poisson summation formula applied to specific examples often provides intere"
 classification:
   areas:

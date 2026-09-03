@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-3TYWSS7F
-kind: exercise
+kind: problem
 title: Nilpotent groups are solvable
 classification:
   areas:

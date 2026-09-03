@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2RKYE
-kind: exercise
+kind: problem
 title: Trigonometric functions
 classification:
   areas:

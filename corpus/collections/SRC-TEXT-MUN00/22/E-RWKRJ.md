@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RWKRJ
-kind: exercise
+kind: problem
 title: Continuous maps with continuous sections are quotient maps
 classification:
   areas:

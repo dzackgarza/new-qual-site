@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ASWCD
-kind: exercise
+kind: problem
 title: Continuity of outer measure from above and below
 classification:
   areas:

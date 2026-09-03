@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FS62I
-kind: exercise
+kind: problem
 title: Direct sums of cyclic groups are not determined by their factors
 classification:
   areas:

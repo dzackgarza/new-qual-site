@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-9
-kind: exercise
+kind: problem
 title: "Here are further results similar to the Phragm´en-Lindel¨of theorem"
 classification:
   areas:

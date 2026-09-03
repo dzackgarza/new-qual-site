@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-CZJRDRNT
-kind: exercise
+kind: problem
 title: $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$ are isomorphic but not equal
 classification:
   areas:

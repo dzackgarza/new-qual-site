@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEI
-kind: exercise
+kind: problem
 title: Irreducibility and splitting fields of three polynomials
 classification:
   areas:

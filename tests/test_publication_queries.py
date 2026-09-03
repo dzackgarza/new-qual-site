@@ -32,8 +32,8 @@ review: draft
 """
 
 
-def manifest(*topics: str, kind: str = "problem") -> dict[str, object]:
-    """A one-section Topology guide whose only item is a panel over `topics`."""
+def manifest(*topics: str) -> dict[str, object]:
+    """A one-section Topology guide whose only item is a practice query."""
     return {
         "schema": "qual/publication@2",
         "id": "GUIDE-TOPOLOGY",
@@ -49,10 +49,7 @@ def manifest(*topics: str, kind: str = "problem") -> dict[str, object]:
                 "items": [
                     {
                         "query": {
-                            "kind": kind,
                             "topics": list(topics),
-                            "limit": 5,
-                            "review": {"mode": "any"},
                         }
                     }
                 ],
@@ -84,18 +81,16 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     }
 
 
-def test_checked_in_guide_sections_have_one_scoped_practice_target_per_kind() -> None:
-    """Each asked kind gets one practice escape hatch, not a topic-bucket stack."""
+def test_checked_in_guide_sections_have_at_most_one_scoped_practice_target() -> None:
+    """A section has one problem-family escape hatch, not provenance buckets."""
     publications = Path(__file__).resolve().parents[1] / "publications"
 
     for guide in load_publications(publications):
         for section in guide.sections:
             queries = [item.query for item in section.items if isinstance(item, QueryItem)]
-            for kind in ("problem", "exercise"):
-                same_kind = [query for query in queries if query.kind == kind]
-                assert len(same_kind) <= 1, f"{guide.id}/{section.slug} has {len(same_kind)} {kind} practice queries"
-                if same_kind:
-                    assert same_kind[0].topics, f"{guide.id}/{section.slug} has an unscoped {kind} practice query"
+            assert len(queries) <= 1, f"{guide.id}/{section.slug} has {len(queries)} practice queries"
+            if queries:
+                assert queries[0].topics, f"{guide.id}/{section.slug} has an unscoped practice query"
 
 
 def test_semisimplicity_guide_resolves_its_named_terms() -> None:
@@ -139,8 +134,7 @@ def test_a_problem_query_is_only_a_deep_link_into_the_generator(tmp_path: Path) 
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert len(links) == 1
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&kind=problem&topic=compactness"
-    assert panels[0].attrs["data-query-kind"] == "problem"
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness"
     assert "data-count" not in panels[0].attrs
 
 
@@ -182,55 +176,48 @@ def test_a_generator_link_preserves_every_topic_in_the_authored_family(tmp_path:
     panels = page.root.find_all("div", **{"class": "panel generator-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
-    assert links[0].attrs["href"] == "../../generate.html?area=topology&kind=problem&topic=compactness&topic=connectedness"
+    assert links[0].attrs["href"] == "../../generate.html?area=topology&topic=compactness&topic=connectedness"
     assert "data-count" not in panels[0].attrs
 
 
-def test_an_exercise_query_preserves_its_kind_without_needing_a_matching_card(tmp_path: Path) -> None:
-    """Rendering a generator link never snapshots the catalog at build time."""
-    work = fixture_repo(tmp_path, {})
-    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness", kind="exercise"), sort_keys=False))
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panel = page.root.find_all("div", **{"class": "panel generator-link"})[0]
-    link = panel.find_all("a")[0]
-    assert link.attrs["href"] == "../../generate.html?area=topology&kind=exercise&topic=compactness"
-
-
 def test_the_generator_can_realize_the_complete_guide_filter(tmp_path: Path) -> None:
-    """The destination understands kind plus an OR-family of repeated topics."""
+    """The destination always samples problems and understands topic OR-families."""
     work = fixture_repo(tmp_path)
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
     generator_path = work / "build" / "quarto" / "_site" / "generate.html"
     page = read_html(generator_path)
-    kind = page.root.find_all("select", id="gen-kind")[0]
-    assert [(option.attrs["value"], option.text) for option in kind.find_all("option")] == [
-        ("problem", "Problems"),
-        ("exercise", "Exercises"),
-    ]
-
+    assert page.root.find_all("select", id="gen-kind") == []
     topics = page.root.find_all("select", id="gen-topic")[0]
     assert "multiple" in topics.attrs
 
     source = generator_path.read_text()
     assert 'const topics=p.getAll("topic");' in source
-    assert "const filters={kind};" in source
+    assert 'const filters={kind:"problem"};' in source
     assert "filters.topic={any:topics};" in source
 
 
-def test_reference_material_cannot_be_selected_by_a_publication_query() -> None:
-    """A guide authors reference material explicitly; it never derives a catalog panel."""
-    guide = manifest("compactness", kind="definition")
+@pytest.mark.parametrize("obsolete", [{"kind": "exercise"}, {"limit": 5}, {"review": {"mode": "any"}}])
+def test_publication_query_rejects_obsolete_execution_fields(obsolete: dict[str, object]) -> None:
+    """The manifest stores topics; generator runtime choices do not live here."""
+    guide = manifest("compactness")
+    sections = guide["sections"]
+    assert isinstance(sections, list)
+    section = sections[0]
+    assert isinstance(section, dict)
+    items = section["items"]
+    assert isinstance(items, list)
+    item = items[0]
+    assert isinstance(item, dict)
+    query = item["query"]
+    assert isinstance(query, dict)
+    query.update(obsolete)
 
     with pytest.raises(ValidationError) as exc_info:
         PublicationManifest.model_validate(guide)
 
-    assert "Input should be 'problem' or 'exercise'" in str(exc_info.value)
+    assert "Extra inputs are not permitted" in str(exc_info.value)
 
 
 def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None:
@@ -300,10 +287,7 @@ def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -
                     {"ref": "PRB-CPT"},
                     {
                         "query": {
-                            "kind": "problem",
                             "topics": ["compactness"],
-                            "limit": 5,
-                            "review": {"mode": "any"},
                         }
                     },
                 ],

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LQTR7
-kind: exercise
+kind: problem
 title: Schwarz reflection principle on a half-disk
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-5
-kind: exercise
+kind: problem
 title: "SS 6.5: The absolute value of Gamma on the critical line"
 classification:
   areas:

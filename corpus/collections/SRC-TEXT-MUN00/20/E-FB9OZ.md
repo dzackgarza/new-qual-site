@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FB9OZ
-kind: exercise
+kind: problem
 title: Closure of the eventually-zero sequences in the uniform topology
 classification:
   areas:

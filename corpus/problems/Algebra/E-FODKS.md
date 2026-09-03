@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FODKS
-kind: exercise
+kind: problem
 title: An irreducible generates any principal ideal containing it in a PID
 classification:
   areas:

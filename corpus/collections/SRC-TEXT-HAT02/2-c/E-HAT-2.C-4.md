@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-4
-kind: exercise
+kind: problem
 title: Lefschetz number of simplicial homeomorphism equals Euler characteristic of fixed point set
 classification:
   areas:

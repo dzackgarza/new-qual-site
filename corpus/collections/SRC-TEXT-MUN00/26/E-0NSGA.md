@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0NSGA
-kind: exercise
+kind: problem
 title: Products of compact sets in topological groups
 classification:
   areas:

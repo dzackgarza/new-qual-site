@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-24
-kind: exercise
+kind: problem
 title: 1-skeleton of $S^2$ from polygon identifications cannot be certain graphs
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BAOST
-kind: exercise
+kind: problem
 title: Fixed-point-free elements, quotients of $\ZZ^3$ of order $p^2$, groups of order
   $pq$, and cyclic Sylow $2$-subgroups
 classification:

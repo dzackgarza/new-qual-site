@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FZLDN
-kind: exercise
+kind: problem
 title: Holomorphic functions of unit modulus on the circle are constant
 classification:
   areas:

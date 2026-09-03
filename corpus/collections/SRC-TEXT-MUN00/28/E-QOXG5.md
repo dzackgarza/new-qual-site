@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QOXG5
-kind: exercise
+kind: problem
 title: Countable compactness equals limit point compactness for T1 spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-7
-kind: exercise
+kind: problem
 title: Strict cardinality ordering and the continuum
 classification:
   areas:

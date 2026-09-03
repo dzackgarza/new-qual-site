@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JWO2G
-kind: exercise
+kind: problem
 title: Modulus of $e^z$
 classification:
   areas:

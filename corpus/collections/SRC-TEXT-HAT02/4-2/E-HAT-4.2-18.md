@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-18
-kind: exercise
+kind: problem
 title: "Wedge equals product for coprime homology"
 classification:
   areas:

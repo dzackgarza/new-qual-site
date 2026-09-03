@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-9
-kind: exercise
+kind: problem
 title: "Linear projection is fibration but not fiber bundle"
 classification:
   areas:

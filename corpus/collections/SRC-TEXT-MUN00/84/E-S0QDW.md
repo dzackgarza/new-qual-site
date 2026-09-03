@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-S0QDW
-kind: exercise
+kind: problem
 title: Finiteness in the maximal tree argument
 classification:
   areas:

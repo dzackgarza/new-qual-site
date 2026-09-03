@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UAMGV
-kind: exercise
+kind: problem
 title: The coarsest topology making a family of maps continuous
 classification:
   areas:

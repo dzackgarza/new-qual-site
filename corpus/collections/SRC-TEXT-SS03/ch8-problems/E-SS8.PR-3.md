@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.PR-3
-kind: exercise
+kind: problem
 title: Hyperbolic metric on the disc and the Schwarz-Pick lemma
 classification:
   areas:

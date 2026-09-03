@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-MCTH4JE3
-kind: exercise
+kind: problem
 title: The nilradical is contained in the Jacobson radical
 classification:
   areas:

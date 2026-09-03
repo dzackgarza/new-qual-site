@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JY5OT
-kind: exercise
+kind: problem
 title: Reverse triangle inequality, $\sup$ and $\inf$, and the Archimedean property
 classification:
   areas:

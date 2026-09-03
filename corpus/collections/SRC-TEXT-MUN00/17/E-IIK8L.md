@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IIK8L
-kind: exercise
+kind: problem
 title: Closures in the ordered square
 classification:
   areas:

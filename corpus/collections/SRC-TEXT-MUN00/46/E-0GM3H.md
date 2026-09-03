@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0GM3H
-kind: exercise
+kind: problem
 title: The fine topology on function spaces
 classification:
   areas:

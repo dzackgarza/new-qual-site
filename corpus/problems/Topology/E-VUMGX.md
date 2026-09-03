@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VUMGX
-kind: exercise
+kind: problem
 title: $X\times Y$ is Hausdorff if and only if $X$ and $Y$ are Hausdorff
 classification:
   areas:

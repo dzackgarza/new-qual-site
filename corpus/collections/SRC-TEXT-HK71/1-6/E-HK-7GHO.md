@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-7GHO
-kind: exercise
+kind: problem
 title: Simultaneous row and column reduction to diagonal form
 classification:
   areas:

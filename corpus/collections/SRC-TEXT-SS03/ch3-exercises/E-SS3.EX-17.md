@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-17
-kind: exercise
+kind: problem
 title: Image of a non-constant holomorphic map containing the unit disc
 classification:
   areas:

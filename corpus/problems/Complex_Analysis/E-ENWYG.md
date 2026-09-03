@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ENWYG
-kind: exercise
+kind: problem
 title: Keyhole contour and ML estimate
 classification:
   areas:

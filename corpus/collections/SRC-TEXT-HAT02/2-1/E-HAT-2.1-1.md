@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-1
-kind: exercise
+kind: problem
 title: Quotient $\Delta$-complex of 2-simplex with two edges identified
 classification:
   areas:

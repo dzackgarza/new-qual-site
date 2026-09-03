@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-O13MH
-kind: exercise
+kind: problem
 title: Connectedness under refinement of topologies
 classification:
   areas:

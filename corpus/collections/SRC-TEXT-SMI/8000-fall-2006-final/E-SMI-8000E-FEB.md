@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEB
-kind: exercise
+kind: problem
 title: Field theory definitions
 classification:
   areas:

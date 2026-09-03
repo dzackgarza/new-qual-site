@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F01YX
-kind: exercise
+kind: problem
 title: Arbitrary products of connected spaces are connected
 classification:
   areas:

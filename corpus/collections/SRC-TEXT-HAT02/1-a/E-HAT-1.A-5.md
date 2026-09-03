@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-5
-kind: exercise
+kind: problem
 title: Maps $fg = \mathrm{id}$ without inducing isomorphisms on $\pi_1$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-20
-kind: exercise
+kind: problem
 title: "Finiteness of $[X, Y]$ for finite CW complexes"
 classification:
   areas:

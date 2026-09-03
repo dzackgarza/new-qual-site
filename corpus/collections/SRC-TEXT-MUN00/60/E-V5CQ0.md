@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-V5CQ0
-kind: exercise
+kind: problem
 title: Antipodal identification on the disk gives the projective plane
 classification:
   areas:

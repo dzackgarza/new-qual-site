@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-V4WKE
-kind: exercise
+kind: problem
 title: The long line is normal but not metrizable
 classification:
   areas:

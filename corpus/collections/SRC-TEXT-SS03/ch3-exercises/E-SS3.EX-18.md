@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-18
-kind: exercise
+kind: problem
 title: "SS 3.18: The Cauchy integral formula via homotopy"
 classification:
   areas:

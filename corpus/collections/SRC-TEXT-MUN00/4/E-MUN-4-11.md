@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-11
-kind: exercise
+kind: problem
 title: Even and odd integers and irrationality of $\sqrt{2}$
 classification:
   areas:

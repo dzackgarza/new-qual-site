@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NSN6G
-kind: exercise
+kind: problem
 title: Locally uniform limit theorem for holomorphic functions
 classification:
   areas:

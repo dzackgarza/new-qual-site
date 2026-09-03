@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-D62SD
-kind: exercise
+kind: problem
 title: Vandermonde determinant $\det A=\prod_{i<j}(\lambda_i-\lambda_j)$
 classification:
   areas:

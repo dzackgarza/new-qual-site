@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-12
-kind: exercise
+kind: problem
 title: Separating an element from a subgroup by a finite index overgroup in a free group
 classification:
   areas:

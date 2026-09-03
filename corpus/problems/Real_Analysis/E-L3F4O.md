@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L3F4O
-kind: exercise
+kind: problem
 title: Middle-thirds Cantor set is compact, totally disconnected, perfect, and null;
   Borel–Cantelli lemma
 classification:

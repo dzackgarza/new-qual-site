@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TYPSR
-kind: exercise
+kind: problem
 title: An entire function with bounded $n$th derivative is a polynomial of degree
   at most $n$
 classification:

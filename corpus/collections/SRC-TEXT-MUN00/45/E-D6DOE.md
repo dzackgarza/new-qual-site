@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-D6DOE
-kind: exercise
+kind: problem
 title: Ascoli's theorem over proper metric targets
 classification:
   areas:

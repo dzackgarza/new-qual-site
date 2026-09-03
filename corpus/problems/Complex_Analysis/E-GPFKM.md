@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GPFKM
-kind: exercise
+kind: problem
 title: Estimating and conformal maps
 classification:
   areas:

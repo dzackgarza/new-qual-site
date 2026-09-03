@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AKNDW
-kind: exercise
+kind: problem
 title: $1/(1+x^2)^2$
 classification:
   areas:

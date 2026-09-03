@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ER6ZN
-kind: exercise
+kind: problem
 title: Surjections onto R^omega under the product, uniform, and box topologies
 classification:
   areas:

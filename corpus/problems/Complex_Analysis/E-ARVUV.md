@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ARVUV
-kind: exercise
+kind: problem
 title: 'Sum formulas: $1/n^2+a^2$'
 classification:
   areas:

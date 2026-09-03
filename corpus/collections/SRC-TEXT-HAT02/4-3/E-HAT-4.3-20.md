@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-20
-kind: exercise
+kind: problem
 title: "Postnikov towers for $\\Omega X$"
 classification:
   areas:

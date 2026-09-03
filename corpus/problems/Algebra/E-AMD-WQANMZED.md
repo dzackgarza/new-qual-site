@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-WQANMZED
-kind: exercise
+kind: problem
 title: Stabilizers of group actions are subgroups
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JPAJE
-kind: exercise
+kind: problem
 title: Mobius transformations as cross-ratios
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZB4N9
-kind: exercise
+kind: problem
 title: Boundaries and interiors of plane regions
 classification:
   areas:

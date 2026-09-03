@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MW9PV
-kind: exercise
+kind: problem
 title: Free ranks of complete and utilities graphs
 classification:
   areas:

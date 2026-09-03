@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MPI86
-kind: exercise
+kind: problem
 title: Metrically equivalent metrics and completeness
 classification:
   areas:

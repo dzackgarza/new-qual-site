@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.3-4
-kind: exercise
+kind: problem
 title: Wedge axiom follows from other axioms for finite wedge sums
 classification:
   areas:

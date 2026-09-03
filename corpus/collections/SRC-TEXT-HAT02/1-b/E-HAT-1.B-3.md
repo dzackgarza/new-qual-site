@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-3
-kind: exercise
+kind: problem
 title: "Graph products of trivial groups are free"
 classification:
   areas:

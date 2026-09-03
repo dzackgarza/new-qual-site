@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6BH7D
-kind: exercise
+kind: problem
 title: Upper half-disc to upper half-plane
 classification:
   areas:

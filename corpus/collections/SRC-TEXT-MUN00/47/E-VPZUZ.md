@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VPZUZ
-kind: exercise
+kind: problem
 title: Equicontinuous pointwise limits converge compactly
 classification:
   areas:

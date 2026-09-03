@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-AUZQ
-kind: exercise
+kind: problem
 title: Column space characterization for a $4 \times 4$ matrix
 classification:
   areas:

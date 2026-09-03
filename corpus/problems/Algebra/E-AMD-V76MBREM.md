@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-V76MBREM
-kind: exercise
+kind: problem
 title: If $A$ is finite type over Noetherian $R$ and finite over $B$, then $B$ is
   finite type over $R$
 classification:

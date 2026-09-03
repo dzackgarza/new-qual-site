@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EJN4Q
-kind: exercise
+kind: problem
 title: Open subsets of $\mathbb{R}$ are countable unions of disjoint open intervals
 classification:
   areas:

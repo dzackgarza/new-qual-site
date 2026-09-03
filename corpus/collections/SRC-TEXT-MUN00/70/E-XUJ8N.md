@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XUJ8N
-kind: exercise
+kind: problem
 title: Finite presentations of free products and pushouts
 classification:
   areas:

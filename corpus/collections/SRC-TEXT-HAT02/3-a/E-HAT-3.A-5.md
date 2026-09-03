@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.A-5
-kind: exercise
+kind: problem
 title: "Tor vanishes for torsionfree modules"
 classification:
   areas:

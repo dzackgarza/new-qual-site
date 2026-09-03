@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CCLL5
-kind: exercise
+kind: problem
 title: Normal subgroups and regular coverings
 classification:
   areas:

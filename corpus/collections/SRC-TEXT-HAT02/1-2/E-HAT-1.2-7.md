@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-7
-kind: exercise
+kind: problem
 title: Fundamental group of $S^2$ with north and south poles identified
 classification:
   areas:

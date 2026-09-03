@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GA4
-kind: exercise
+kind: problem
 title: Hom from a free abelian group into Q is a rational vector space of the same rank
 classification:
   areas:

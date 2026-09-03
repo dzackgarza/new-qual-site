@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AIQEU
-kind: exercise
+kind: problem
 title: $e^{ax}\operatorname{sech}(z)$
 classification:
   areas:

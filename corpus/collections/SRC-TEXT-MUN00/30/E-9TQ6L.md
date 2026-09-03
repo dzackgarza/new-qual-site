@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9TQ6L
-kind: exercise
+kind: problem
 title: Uncountably many limit points of an uncountable set in a second-countable space
 classification:
   areas:

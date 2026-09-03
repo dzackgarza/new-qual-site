@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ALB7C
-kind: exercise
+kind: problem
 title: Poles of derivatives
 classification:
   areas:

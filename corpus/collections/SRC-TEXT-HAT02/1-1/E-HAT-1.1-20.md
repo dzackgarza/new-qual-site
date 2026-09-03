@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-20
-kind: exercise
+kind: problem
 title: Loops extending to loop of maps $X \to X$ lie in the center of $\pi_1(X)$
 classification:
   areas:

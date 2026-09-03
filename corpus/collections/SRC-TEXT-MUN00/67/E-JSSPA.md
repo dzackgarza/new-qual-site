@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JSSPA
-kind: exercise
+kind: problem
 title: Directness of sums via vanishing of finite sums
 classification:
   areas:

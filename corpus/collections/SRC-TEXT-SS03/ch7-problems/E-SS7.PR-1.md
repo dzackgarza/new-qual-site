@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS7.PR-1
-kind: exercise
+kind: problem
 title: "Dirichlet series with bounded coefficients converge in a half-plane"
 classification:
   areas:

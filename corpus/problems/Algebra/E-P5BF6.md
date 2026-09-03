@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P5BF6
-kind: exercise
+kind: problem
 title: Nilpotents, units, and zero-divisors in $R[x]$
 classification:
   areas:

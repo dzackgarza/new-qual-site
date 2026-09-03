@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KUGNH
-kind: exercise
+kind: problem
 title: Bounded derivatives imply removable singularities
 classification:
   areas:

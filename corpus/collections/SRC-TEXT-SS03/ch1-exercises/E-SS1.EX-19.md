@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-19
-kind: exercise
+kind: problem
 title: 'Stein/Shakarchi 1.20: Series convergence on the circle'
 classification:
   areas:

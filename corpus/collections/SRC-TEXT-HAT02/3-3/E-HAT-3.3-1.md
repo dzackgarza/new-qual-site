@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-1
-kind: exercise
+kind: problem
 title: "Nonorientable 1-manifolds without Hausdorff"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-36
-kind: exercise
+kind: problem
 title: "Whitehead product for $S^1$ and $S^n$"
 classification:
   areas:

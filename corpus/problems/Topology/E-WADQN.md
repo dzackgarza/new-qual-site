@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WADQN
-kind: exercise
+kind: problem
 title: Extreme value theorem
 classification:
   areas:

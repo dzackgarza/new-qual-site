@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0S3OA
-kind: exercise
+kind: problem
 title: Subgroups and closures of subgroups are topological groups
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0EZ4U
-kind: exercise
+kind: problem
 title: Seifert-van Kampen with trivial intersection homomorphism
 classification:
   areas:

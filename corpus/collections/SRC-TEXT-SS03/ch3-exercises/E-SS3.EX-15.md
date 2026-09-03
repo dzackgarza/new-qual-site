@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-15
-kind: exercise
+kind: problem
 title: "Applications of the Cauchy inequalities and the maximum modulus principle"
 classification:
   areas:

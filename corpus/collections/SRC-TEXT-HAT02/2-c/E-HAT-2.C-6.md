@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-6
-kind: exercise
+kind: problem
 title: 'Even-genus analog of Lefschetz example: replace central torus by sphere with antipodal map'
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8K7RQ
-kind: exercise
+kind: problem
 title: Components and continuous maps out of the lower limit line
 classification:
   areas:

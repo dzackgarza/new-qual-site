@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-8
-kind: exercise
+kind: problem
 title: Fundamental group of two tori identified along a circle
 classification:
   areas:

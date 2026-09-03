@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-23
-kind: exercise
+kind: problem
 title: "Simplicial vs. singular compactly supported cohomology"
 classification:
   areas:

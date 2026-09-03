@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-R6I7G
-kind: exercise
+kind: problem
 title: Recognition theorem for internal direct products
 classification:
   areas:

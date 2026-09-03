@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-12
-kind: exercise
+kind: problem
 title: "The partial fractions identity for csc-squared"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-5
-kind: exercise
+kind: problem
 title: "SS 9.5: The Weierstrass sigma function"
 classification:
   areas:

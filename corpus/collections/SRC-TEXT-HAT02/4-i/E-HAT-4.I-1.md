@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.I-1
-kind: exercise
+kind: problem
 title: "Suspension of a retract splits as a wedge"
 classification:
   areas:

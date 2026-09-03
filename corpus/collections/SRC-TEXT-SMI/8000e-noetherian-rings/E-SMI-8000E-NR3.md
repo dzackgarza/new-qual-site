@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR3
-kind: exercise
+kind: problem
 title: The two-out-of-three property for noetherian modules in exact sequences
 classification:
   areas:

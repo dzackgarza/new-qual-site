@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-12
-kind: exercise
+kind: problem
 title: Chain homotopy is an equivalence relation
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KVFCT
-kind: exercise
+kind: problem
 title: Sigma-compact regular spaces are paracompact
 classification:
   areas:

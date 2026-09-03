@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P2PEF
-kind: exercise
+kind: problem
 title: Holomorphic iff delbar vanishes
 classification:
   areas:

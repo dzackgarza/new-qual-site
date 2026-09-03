@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CFHC4
-kind: exercise
+kind: problem
 title: The integral of $1/(1+x^2)^2$ over $\mathbb{R}$
 classification:
   areas:

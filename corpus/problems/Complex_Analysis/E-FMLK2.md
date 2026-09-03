@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FMLK2
-kind: exercise
+kind: problem
 title: Derivatives detect multiplicity of zeros
 classification:
   areas:

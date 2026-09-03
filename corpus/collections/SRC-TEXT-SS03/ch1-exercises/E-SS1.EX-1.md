@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-1
-kind: exercise
+kind: problem
 title: Geometric loci in the complex plane
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4PQ1O
-kind: exercise
+kind: problem
 title: Coordinatewise convergence of nets in products
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MKK6X
-kind: exercise
+kind: problem
 title: The minimal uncountable order is not separable
 classification:
   areas:

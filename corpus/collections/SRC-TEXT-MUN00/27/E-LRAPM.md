@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LRAPM
-kind: exercise
+kind: problem
 title: Compact closed intervals imply the least upper bound property
 classification:
   areas:

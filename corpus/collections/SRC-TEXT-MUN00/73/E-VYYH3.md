@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VYYH3
-kind: exercise
+kind: problem
 title: Finitely presented groups as fundamental groups of compact Hausdorff spaces
 classification:
   areas:

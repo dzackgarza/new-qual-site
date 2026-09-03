@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DDKSS
-kind: exercise
+kind: problem
 title: Polynomial growth
 classification:
   areas:

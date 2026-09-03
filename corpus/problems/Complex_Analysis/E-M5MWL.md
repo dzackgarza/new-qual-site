@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M5MWL
-kind: exercise
+kind: problem
 title: Primitive in the complement of a branch cut
 classification:
   areas:

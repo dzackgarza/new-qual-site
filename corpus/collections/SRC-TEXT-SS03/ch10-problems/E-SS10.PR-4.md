@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.PR-4
-kind: exercise
+kind: problem
 title: "Invariant bounded holomorphic functions on the upper half plane are constant"
 classification:
   areas:

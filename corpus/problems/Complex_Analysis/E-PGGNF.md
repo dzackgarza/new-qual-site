@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PGGNF
-kind: exercise
+kind: problem
 title: Half disc to full disc
 classification:
   areas:

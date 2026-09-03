@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY2
-kind: exercise
+kind: problem
 title: Every group of order $45$ is abelian
 classification:
   areas:

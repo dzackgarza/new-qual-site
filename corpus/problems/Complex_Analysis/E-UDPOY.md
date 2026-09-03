@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UDPOY
-kind: exercise
+kind: problem
 title: A holomorphic function on $\Delta^*$ with nonnegative real part has a removable
   singularity at $0$
 classification:

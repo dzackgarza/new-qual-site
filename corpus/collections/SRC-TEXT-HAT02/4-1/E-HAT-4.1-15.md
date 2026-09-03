@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-15
-kind: exercise
+kind: problem
 title: "Every self-map of $S^n$ is a multiple of the identity"
 classification:
   areas:

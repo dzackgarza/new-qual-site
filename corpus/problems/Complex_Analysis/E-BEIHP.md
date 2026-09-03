@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BEIHP
-kind: exercise
+kind: problem
 title: $1/1+\sin^2$
 classification:
   areas:

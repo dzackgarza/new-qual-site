@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UZY87
-kind: exercise
+kind: problem
 title: Conjugacy classes of finite order in a free product
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-71YOD
-kind: exercise
+kind: problem
 title: Regular spaces have disjoint closure neighborhoods of points
 classification:
   areas:

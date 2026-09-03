@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OYPV7
-kind: exercise
+kind: problem
 title: The hierarchy of conditions on locally euclidean spaces
 classification:
   areas:

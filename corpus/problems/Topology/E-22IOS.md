@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-22IOS
-kind: exercise
+kind: problem
 title: Metric spaces are Hausdorff
 classification:
   areas:

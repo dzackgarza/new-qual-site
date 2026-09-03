@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LKUPH
-kind: exercise
+kind: problem
 title: Transitivity of deformation retracts
 classification:
   areas:

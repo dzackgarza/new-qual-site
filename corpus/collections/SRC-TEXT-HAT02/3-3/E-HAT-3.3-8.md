@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-8
-kind: exercise
+kind: problem
 title: "Degree as sum of local signs"
 classification:
   areas:

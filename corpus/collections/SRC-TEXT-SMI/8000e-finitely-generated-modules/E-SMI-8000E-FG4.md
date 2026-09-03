@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FG4
-kind: exercise
+kind: problem
 title: k[X]-module structures on a three-dimensional vector space over Z/2
 classification:
   areas:

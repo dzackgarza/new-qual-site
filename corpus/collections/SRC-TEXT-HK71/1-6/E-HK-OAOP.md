@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-OAOP
-kind: exercise
+kind: problem
 title: Product of non-square matrices is not invertible
 classification:
   areas:

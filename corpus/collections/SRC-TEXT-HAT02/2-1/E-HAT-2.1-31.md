@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-31
-kind: exercise
+kind: problem
 title: Five-lemma example with zero outer maps and nonzero middle map
 classification:
   areas:

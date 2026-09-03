@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MSDCC
-kind: exercise
+kind: problem
 title: On subgroups
 classification:
   areas:

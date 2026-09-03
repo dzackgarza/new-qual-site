@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9MCHZ
-kind: exercise
+kind: problem
 title: Closures and separation under five topologies on the line
 classification:
   areas:

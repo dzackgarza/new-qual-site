@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3C4WF
-kind: exercise
+kind: problem
 title: The Hausdorff metric on closed bounded subsets
 classification:
   areas:

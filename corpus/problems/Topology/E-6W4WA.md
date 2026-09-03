@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6W4WA
-kind: exercise
+kind: problem
 title: Dense subspace
 classification:
   areas:

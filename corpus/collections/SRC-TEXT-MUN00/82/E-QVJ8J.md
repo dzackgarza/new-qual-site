@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QVJ8J
-kind: exercise
+kind: problem
 title: Countability of the fundamental group under countable basis and regularity
 classification:
   areas:

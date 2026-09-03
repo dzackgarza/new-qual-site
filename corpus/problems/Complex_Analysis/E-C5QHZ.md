@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-C5QHZ
-kind: exercise
+kind: problem
 title: Uniformly bounded derivatives imply equicontinuity
 classification:
   areas:

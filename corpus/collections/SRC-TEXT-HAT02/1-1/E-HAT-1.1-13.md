@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-13
-kind: exercise
+kind: problem
 title: Surjectivity of inclusion-induced map on $\pi_1$ iff paths in $X$ with endpoints in $A$ are homotopic to paths in $A$
 classification:
   areas:

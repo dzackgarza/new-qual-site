@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-F5ZHMJNK
-kind: exercise
+kind: problem
 title: $C_G(H)\trianglelefteq N_G(H)$
 classification:
   areas:

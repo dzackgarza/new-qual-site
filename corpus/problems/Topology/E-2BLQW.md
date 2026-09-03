@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2BLQW
-kind: exercise
+kind: problem
 title: Connectedness versus path-connectedness
 classification:
   areas:

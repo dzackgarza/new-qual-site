@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VWVTY
-kind: exercise
+kind: problem
 title: Convergence of a $\ZZ\dash$index series
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY10
-kind: exercise
+kind: problem
 title: Cauchy's theorem via induction on the group order
 classification:
   areas:

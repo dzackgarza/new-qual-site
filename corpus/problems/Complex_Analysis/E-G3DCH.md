@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G3DCH
-kind: exercise
+kind: problem
 title: Orders of zeros
 classification:
   areas:

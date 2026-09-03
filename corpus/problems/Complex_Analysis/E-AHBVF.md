@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AHBVF
-kind: exercise
+kind: problem
 title: Cosine expansion in $z\inv$
 classification:
   areas:

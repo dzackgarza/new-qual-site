@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-11
-kind: exercise
+kind: problem
 title: "Contractibility from nullhomotopic inclusions"
 classification:
   areas:

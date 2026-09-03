@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NKQPS
-kind: exercise
+kind: problem
 title: The vertex assumption in the normality proof for linear graphs
 classification:
   areas:

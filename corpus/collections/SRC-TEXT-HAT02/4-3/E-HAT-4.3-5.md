@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-5
-kind: exercise
+kind: problem
 title: "$[X, S^n] \\approx H^n(X; \\mathbb{Z})$ for $n$-dimensional $X$"
 classification:
   areas:

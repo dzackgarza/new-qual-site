@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: P-E33SA
-kind: exercise
+kind: problem
 title: Uniform continuity, sets of discontinuities, and non-uniform limits of continuous
   functions
 classification:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-6
-kind: exercise
+kind: problem
 title: Contrapositives of quantified subset statements
 classification:
   areas:

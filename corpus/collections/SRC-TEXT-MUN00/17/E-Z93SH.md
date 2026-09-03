@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Z93SH
-kind: exercise
+kind: problem
 title: Kuratowski's fourteen-set theorem
 classification:
   areas:

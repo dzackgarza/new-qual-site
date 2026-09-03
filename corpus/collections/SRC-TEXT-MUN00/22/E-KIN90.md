@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KIN90
-kind: exercise
+kind: problem
 title: Collapsing K in the K-topology
 classification:
   areas:

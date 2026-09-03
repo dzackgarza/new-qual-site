@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RKPAV
-kind: exercise
+kind: problem
 title: Holomorphic functions satisfying $f^{2}=\overline{f}$ are constant
 classification:
   areas:

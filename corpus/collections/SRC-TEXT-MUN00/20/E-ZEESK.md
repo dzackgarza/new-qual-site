@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZEESK
-kind: exercise
+kind: problem
 title: The metric is continuous exactly for its own topology
 classification:
   areas:

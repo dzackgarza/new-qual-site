@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TTDES
-kind: exercise
+kind: problem
 title: Compact, limit-point compact, and sequentially compact coincide for second-countable
   Hausdorff or metric spaces
 classification:

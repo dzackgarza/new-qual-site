@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.H-2
-kind: exercise
+kind: problem
 title: "Cofibrations are preserved by pushout"
 classification:
   areas:

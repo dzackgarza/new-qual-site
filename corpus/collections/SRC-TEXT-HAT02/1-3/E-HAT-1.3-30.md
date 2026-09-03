@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-30
-kind: exercise
+kind: problem
 title: "Cayley graph of $\\mathbb{Z} * \\mathbb{Z}_2$"
 classification:
   areas:

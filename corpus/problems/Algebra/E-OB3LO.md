@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OB3LO
-kind: exercise
+kind: problem
 title: $x^{\ell}-1$ divides $x^{m}-1$ if and only if $\ell$ divides $m$
 classification:
   areas:

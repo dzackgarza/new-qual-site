@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AFAON
-kind: exercise
+kind: problem
 title: Arithmetic of convergent sequences
 classification:
   areas:

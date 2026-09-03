@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR9
-kind: exercise
+kind: problem
 title: Extensions of ideals along surjective ring maps
 classification:
   areas:

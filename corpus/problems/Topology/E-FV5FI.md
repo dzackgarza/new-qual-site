@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FV5FI
-kind: exercise
+kind: problem
 title: Compact subsets of metric spaces are bounded
 classification:
   areas:

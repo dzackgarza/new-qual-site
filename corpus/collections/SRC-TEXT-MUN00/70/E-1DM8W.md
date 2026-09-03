@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1DM8W
-kind: exercise
+kind: problem
 title: Seifert-van Kampen when one inclusion is surjective
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-70TGS
-kind: exercise
+kind: problem
 title: Shrinking maps and contractions on compact metric spaces
 classification:
   areas:

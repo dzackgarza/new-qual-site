@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-17
-kind: exercise
+kind: problem
 title: "If  for  , prove that"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PIB7A
-kind: exercise
+kind: problem
 title: Cancelling poles
 classification:
   areas:

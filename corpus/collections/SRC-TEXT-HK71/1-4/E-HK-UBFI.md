@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-UBFI
-kind: exercise
+kind: problem
 title: Consistency and solutions of a three-equation system
 classification:
   areas:

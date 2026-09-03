@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-3
-kind: exercise
+kind: problem
 title: Euler characteristic and rank of fundamental group of a finite graph
 classification:
   areas:

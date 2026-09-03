@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MTDPP
-kind: exercise
+kind: problem
 title: The expansion lemma for locally finite families
 classification:
   areas:

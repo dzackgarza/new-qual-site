@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YAEMZ
-kind: exercise
+kind: problem
 title: Compactness, limit point compactness, and sequential compactness in second-countable Hausdorff or metric spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NYYRX
-kind: exercise
+kind: problem
 title: Accumulation points of nets
 classification:
   areas:

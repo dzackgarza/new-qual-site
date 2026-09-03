@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.I-3
-kind: exercise
+kind: problem
 title: "Skeletons of suspended lens spaces"
 classification:
   areas:

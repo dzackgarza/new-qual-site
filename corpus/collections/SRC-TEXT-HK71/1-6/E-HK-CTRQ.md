@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-CTRQ
-kind: exercise
+kind: problem
 title: Invertibility via row operations and finding inverses
 classification:
   areas:

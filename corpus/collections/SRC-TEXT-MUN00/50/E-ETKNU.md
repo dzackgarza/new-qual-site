@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ETKNU
-kind: exercise
+kind: problem
 title: The imbedding theorem for m equals one
 classification:
   areas:

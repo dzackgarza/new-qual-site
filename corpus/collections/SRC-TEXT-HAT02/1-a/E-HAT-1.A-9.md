@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-9
-kind: exercise
+kind: problem
 title: Index $n$ subgroup has at most $n$ conjugates; existence of normal subgroup of finite index contained in $H$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CJGFE
-kind: exercise
+kind: problem
 title: Heredity of the seventeen basic properties
 classification:
   areas:

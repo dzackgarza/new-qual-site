@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR6
-kind: exercise
+kind: problem
 title: Unions of chains of proper ideals are proper
 classification:
   areas:

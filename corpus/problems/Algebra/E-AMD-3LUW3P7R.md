@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-3LUW3P7R
-kind: exercise
+kind: problem
 title: $\Inn(G)$ is normal in $\Aut(G)$
 classification:
   areas:

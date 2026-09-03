@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-J5IB5
-kind: exercise
+kind: problem
 title: Surfaces with k holes
 classification:
   areas:

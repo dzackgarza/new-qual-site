@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EMESP
-kind: exercise
+kind: problem
 title: Nontrivial normal subgroups of a $p$-group meet the center
 classification:
   areas:

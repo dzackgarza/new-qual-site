@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PSR75
-kind: exercise
+kind: problem
 title: Fixed points of continuous self-maps of the interval
 classification:
   areas:

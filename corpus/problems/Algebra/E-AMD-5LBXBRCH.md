@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-5LBXBRCH
-kind: exercise
+kind: problem
 title: A finite group is solvable iff its composition factors have prime order
 classification:
   areas:

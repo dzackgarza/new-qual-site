@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3ZAVQ
-kind: exercise
+kind: problem
 title: Applying Jordan's lemma
 classification:
   areas:

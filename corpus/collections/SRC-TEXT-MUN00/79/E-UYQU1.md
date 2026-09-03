@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-UYQU1
-kind: exercise
+kind: problem
 title: Covering homomorphisms of abelian topological groups
 classification:
   areas:

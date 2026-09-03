@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-0BN1L
-kind: exercise
+kind: problem
 title: Order topologies are Hausdorff
 classification:
   areas:

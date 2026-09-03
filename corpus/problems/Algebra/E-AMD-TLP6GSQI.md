@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-TLP6GSQI
-kind: exercise
+kind: problem
 title: Finitely generated modules over a Noetherian local ring are flat iff free
 classification:
   areas:

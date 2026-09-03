@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QGR6H
-kind: exercise
+kind: problem
 title: Compact unions of closed metrizable subspaces are metrizable
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-39
-kind: exercise
+kind: problem
 title: "Indeterminacy of Toda brackets"
 classification:
   areas:

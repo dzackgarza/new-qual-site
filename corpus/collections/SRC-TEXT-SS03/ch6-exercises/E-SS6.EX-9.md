@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-9
-kind: exercise
+kind: problem
 title: "The hypergeometric series  was defined in Exercise 16 of Chapter 1"
 classification:
   areas:

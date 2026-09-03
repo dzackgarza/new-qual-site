@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LRJKU
-kind: exercise
+kind: problem
 title: Paracompact coverings need not have locally finite subcoverings
 classification:
   areas:

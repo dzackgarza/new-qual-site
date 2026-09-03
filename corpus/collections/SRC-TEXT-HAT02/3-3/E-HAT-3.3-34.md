@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-34
-kind: exercise
+kind: problem
 title: "Poincaré duality diagram for manifolds with boundary"
 classification:
   areas:

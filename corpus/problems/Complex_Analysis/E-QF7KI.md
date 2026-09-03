@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QF7KI
-kind: exercise
+kind: problem
 title: Residues at infinity
 classification:
   areas:

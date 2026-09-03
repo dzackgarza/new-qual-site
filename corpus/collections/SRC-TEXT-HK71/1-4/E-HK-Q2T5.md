@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-Q2T5
-kind: exercise
+kind: problem
 title: Solving a homogeneous system by row reduction
 classification:
   areas:

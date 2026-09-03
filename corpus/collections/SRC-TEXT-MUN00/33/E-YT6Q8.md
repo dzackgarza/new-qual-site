@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YT6Q8
-kind: exercise
+kind: problem
 title: Connected normal and regular spaces with more than one point are uncountable
 classification:
   areas:

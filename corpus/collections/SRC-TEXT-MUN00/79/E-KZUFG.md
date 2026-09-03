@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KZUFG
-kind: exercise
+kind: problem
 title: Covering maps of topological groups lift the group structure
 classification:
   areas:

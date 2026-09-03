@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.B-4
-kind: exercise
+kind: problem
 title: "Cross product of fundamental classes"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.A-5
-kind: exercise
+kind: problem
 title: "Eilenberg--MacLane spaces and Postnikov towers"
 classification:
   areas:

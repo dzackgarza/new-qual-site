@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4M7MSCEI
-kind: exercise
+kind: problem
 title: $H\operatorname{char} K\operatorname{char} G$ implies $H\operatorname{char}
   G$
 classification:

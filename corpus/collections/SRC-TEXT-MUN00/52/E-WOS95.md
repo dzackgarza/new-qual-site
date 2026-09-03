@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WOS95
-kind: exercise
+kind: problem
 title: Induced homomorphisms up to base-point change
 classification:
   areas:

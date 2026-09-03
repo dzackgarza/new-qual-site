@@ -127,7 +127,7 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
 
 def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
-    a card that is. Hints and solutions are sections of problem/exercise cards,
+    a card that is. Hints and solutions are sections of problem cards,
     not separately addressable cards.
 
     The same holds one level up, for the same reason: `emit.collection_page`
@@ -157,7 +157,7 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
             visit(block)
 
     # Close under attachment for card-level variants. Hints and solutions are
-    # sections inside problem/exercise bodies and therefore need no edge.
+    # sections inside problem bodies and therefore need no edge.
     attaches = {"variant-of"}
     edges: dict[str, set[str]] = {}
     for item in parsed:
@@ -234,7 +234,8 @@ def check_collection_lists_problems(parsed: list[ParsedCard]) -> Check:
 def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
     """Every id a collection card lists must exist as the kind that id names.
 
-    `P-`/`E-` entries are problem or exercise cards. `SRC-` entries on a
+    `P-`/`E-` entries are problem cards; the prefix is a stable address, not a
+    semantic kind. `SRC-` entries on a
     section are nested collections (a workshop day that is another source).
     A dangling or mistyped id is a link a reader cannot reach, so it fails
     the build rather than rendering as a dead wikilink.
@@ -263,8 +264,8 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
             if entry not in ids:
                 check.violations.append(f"{card.id}: lists unknown id {entry}")
             elif PROBLEM_ID_RE.match(entry):
-                if ids[entry] not in ("problem", "exercise"):
-                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'problem' or 'exercise'")
+                if ids[entry] != "problem":
+                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'problem'")
             elif COLLECTION_ID_RE.match(entry):
                 if ids[entry] != "collection":
                     check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'collection'")

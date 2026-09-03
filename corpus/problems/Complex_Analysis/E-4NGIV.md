@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4NGIV
-kind: exercise
+kind: problem
 title: Entire doubly periodic functions are constant
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LUH54
-kind: exercise
+kind: problem
 title: Trivially intersecting normal subgroups commute
 classification:
   areas:

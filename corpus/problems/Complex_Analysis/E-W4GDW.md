@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W4GDW
-kind: exercise
+kind: problem
 title: A conformal map from $\HH$ onto $\{-\pi/2<\Re w<\pi/2,\,\Im w>0\}$
 classification:
   areas:

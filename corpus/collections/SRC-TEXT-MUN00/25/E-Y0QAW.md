@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y0QAW
-kind: exercise
+kind: problem
 title: Quotients of locally connected spaces are locally connected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-20
-kind: exercise
+kind: problem
 title: "Expand  in powers of z"
 classification:
   areas:

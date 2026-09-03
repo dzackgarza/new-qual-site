@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LYXHE
-kind: exercise
+kind: problem
 title: Compact support and vanishing at infinity of convolutions
 classification:
   areas:

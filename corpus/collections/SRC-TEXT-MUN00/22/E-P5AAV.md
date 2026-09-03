@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P5AAV
-kind: exercise
+kind: problem
 title: The quotient R over Z as a familiar topological group
 classification:
   areas:

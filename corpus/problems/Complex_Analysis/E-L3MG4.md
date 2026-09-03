@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L3MG4
-kind: exercise
+kind: problem
 title: $\sqrt{x^2-1}$
 classification:
   areas:

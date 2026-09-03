@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E4H2J
-kind: exercise
+kind: problem
 title: Convolution of an $L^1$ function with a bounded function is bounded and uniformly
   continuous
 classification:

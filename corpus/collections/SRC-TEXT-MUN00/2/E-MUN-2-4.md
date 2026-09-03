@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-2-4
-kind: exercise
+kind: problem
 title: Composition of functions and injectivity and surjectivity
 classification:
   areas:

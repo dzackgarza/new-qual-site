@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SUDRI
-kind: exercise
+kind: problem
 title: Entire functions with $f(z)\to\infty$ as $z\to\infty$ are polynomials
 classification:
   areas:

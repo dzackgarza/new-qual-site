@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-3
-kind: exercise
+kind: problem
 title: Order types of $\{1,2\} \times \mathbb{Z}_+$ and $\mathbb{Z}_+ \times \{1,2\}$
 classification:
   areas:

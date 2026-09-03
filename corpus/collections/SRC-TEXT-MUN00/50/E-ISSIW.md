@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ISSIW
-kind: exercise
+kind: problem
 title: The dictionary order plane is locally euclidean and metrizable but not a manifold
 classification:
   areas:

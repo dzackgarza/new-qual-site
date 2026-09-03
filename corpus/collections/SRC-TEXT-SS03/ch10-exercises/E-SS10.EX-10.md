@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-10
-kind: exercise
+kind: problem
 title: "Observe the following irregularities of the functions  and  as n becomes large:
 "
 classification:

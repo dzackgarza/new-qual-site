@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AGJM5
-kind: exercise
+kind: problem
 title: Extension of homotopic maps into open euclidean sets
 classification:
   areas:

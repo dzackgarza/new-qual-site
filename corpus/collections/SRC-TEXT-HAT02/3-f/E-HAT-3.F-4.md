@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.F-4
-kind: exercise
+kind: problem
 title: "Divisible groups and vanishing Ext"
 classification:
   areas:

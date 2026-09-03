@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-Y5JUYURM
-kind: exercise
+kind: problem
 title: Maximal subgroups of a $p$-group are normal
 classification:
   areas:

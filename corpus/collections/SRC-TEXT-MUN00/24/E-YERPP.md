@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YERPP
-kind: exercise
+kind: problem
 title: Order-preserving surjections are homeomorphisms
 classification:
   areas:

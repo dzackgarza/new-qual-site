@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Q7TSH
-kind: exercise
+kind: problem
 title: Every countable discrete space is separable
 classification:
   areas:

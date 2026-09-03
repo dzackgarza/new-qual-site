@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-3
-kind: exercise
+kind: problem
 title: Cantor's theorem for $X^{\omega}$
 classification:
   areas:

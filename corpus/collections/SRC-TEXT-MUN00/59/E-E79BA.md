@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E79BA
-kind: exercise
+kind: problem
 title: Euclidean spaces of different dimensions are not homeomorphic
 classification:
   areas:

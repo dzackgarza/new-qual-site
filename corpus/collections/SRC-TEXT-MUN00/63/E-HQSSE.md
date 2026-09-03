@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HQSSE
-kind: exercise
+kind: problem
 title: Two disjoint curves on the sphere make three regions
 classification:
   areas:

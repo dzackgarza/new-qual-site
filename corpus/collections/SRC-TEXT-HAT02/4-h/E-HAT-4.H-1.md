@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.H-1
-kind: exercise
+kind: problem
 title: "Cofibrations give fibrations on function spaces"
 classification:
   areas:

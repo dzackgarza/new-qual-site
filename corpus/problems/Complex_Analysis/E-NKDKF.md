@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NKDKF
-kind: exercise
+kind: problem
 title: Primitives imply vanishing integral
 classification:
   areas:

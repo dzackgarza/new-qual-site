@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DXQMY
-kind: exercise
+kind: problem
 title: Schwarz-Pick Lemma
 classification:
   areas:

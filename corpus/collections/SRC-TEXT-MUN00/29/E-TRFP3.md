@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TRFP3
-kind: exercise
+kind: problem
 title: Directed sets without antisymmetry
 classification:
   areas:

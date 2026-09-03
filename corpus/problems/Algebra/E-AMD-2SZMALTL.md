@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-2SZMALTL
-kind: exercise
+kind: problem
 title: Finite $p$-groups are nilpotent
 classification:
   areas:

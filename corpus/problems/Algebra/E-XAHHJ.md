@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XAHHJ
-kind: exercise
+kind: problem
 title: Galois group of $x^p-2$ over $\QQ$
 classification:
   areas:

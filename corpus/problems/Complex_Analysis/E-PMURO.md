@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PMURO
-kind: exercise
+kind: problem
 title: Sinc Function
 classification:
   areas:

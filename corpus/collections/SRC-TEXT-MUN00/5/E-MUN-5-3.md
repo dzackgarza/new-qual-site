@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-5-3
-kind: exercise
+kind: problem
 title: Containment and nonemptiness of infinite products
 classification:
   areas:

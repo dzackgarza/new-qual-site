@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4H3JY
-kind: exercise
+kind: problem
 title: Disc to upper half-plane
 classification:
   areas:

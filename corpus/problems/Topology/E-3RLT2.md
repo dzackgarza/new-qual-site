@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3RLT2
-kind: exercise
+kind: problem
 title: A sequentially compact metric space is totally bounded
 classification:
   areas:

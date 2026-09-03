@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-5
-kind: exercise
+kind: problem
 title: "Homology of complements of spheres in spheres"
 classification:
   areas:

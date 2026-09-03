@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-11
-kind: exercise
+kind: problem
 title: Inclusion of path-component induces isomorphism on $\pi_1$
 classification:
   areas:

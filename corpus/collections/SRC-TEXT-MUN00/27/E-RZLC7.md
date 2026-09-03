@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-RZLC7
-kind: exercise
+kind: problem
 title: Connected metric spaces with more than one point are uncountable
 classification:
   areas:

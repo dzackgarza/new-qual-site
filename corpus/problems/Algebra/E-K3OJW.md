@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-K3OJW
-kind: exercise
+kind: problem
 title: Normal Sylow $p$-subgroup when $|G|=p^{e}v$ with $p>v$
 classification:
   areas:

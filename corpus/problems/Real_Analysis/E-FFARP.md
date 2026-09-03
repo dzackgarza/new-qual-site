@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FFARP
-kind: exercise
+kind: problem
 title: Every compact set in a metric space is closed and bounded
 classification:
   areas:

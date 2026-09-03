@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-13
-kind: exercise
+kind: problem
 title: 'SS 1.13: Constant real/imaginary/magnitude implies constant'
 classification:
   areas:

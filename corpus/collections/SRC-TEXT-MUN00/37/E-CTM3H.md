@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CTM3H
-kind: exercise
+kind: problem
 title: Where the countable intersection property breaks the Tychonoff argument
 classification:
   areas:

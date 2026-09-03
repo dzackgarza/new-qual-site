@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ALTNF
-kind: exercise
+kind: problem
 title: Comparing five topologies on the real line
 classification:
   areas:

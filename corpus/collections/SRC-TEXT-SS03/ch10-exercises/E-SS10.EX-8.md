@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-8
-kind: exercise
+kind: problem
 title: "SS 10.8: Parametrization of Pythagorean triples"
 classification:
   areas:

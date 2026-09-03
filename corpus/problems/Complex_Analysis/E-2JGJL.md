@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2JGJL
-kind: exercise
+kind: problem
 title: Line integrals
 classification:
   areas:

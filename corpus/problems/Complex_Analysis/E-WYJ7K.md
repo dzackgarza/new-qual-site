@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WYJ7K
-kind: exercise
+kind: problem
 title: Lune, one intersection
 classification:
   areas:

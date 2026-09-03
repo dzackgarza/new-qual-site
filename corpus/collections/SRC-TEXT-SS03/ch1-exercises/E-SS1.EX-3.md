@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-3
-kind: exercise
+kind: problem
 title: "SS 1.3: Solutions of z^n = omega and their count"
 classification:
   areas:

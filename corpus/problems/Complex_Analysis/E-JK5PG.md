@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JK5PG
-kind: exercise
+kind: problem
 title: The integral of $1/(x^4+1)$ over $\mathbb{R}$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LZTNT
-kind: exercise
+kind: problem
 title: Essential singularities
 classification:
   areas:

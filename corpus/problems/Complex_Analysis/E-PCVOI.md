@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PCVOI
-kind: exercise
+kind: problem
 title: $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n\in\mathbb{Z}}\frac{1}{(z-n)^2}$ by matching
   singularities, principal parts, and decay in a period strip
 classification:

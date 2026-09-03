@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZPC0X
-kind: exercise
+kind: problem
 title: Interchanging limits under uniform convergence
 classification:
   areas:

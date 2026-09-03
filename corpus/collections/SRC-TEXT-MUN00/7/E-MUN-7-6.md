@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-7-6
-kind: exercise
+kind: problem
 title: Schroeder–Bernstein theorem and equal cardinality
 classification:
   areas:

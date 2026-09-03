@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-33
-kind: exercise
+kind: problem
 title: "Homotopy groups if all Hopf-like bundles existed"
 classification:
   areas:

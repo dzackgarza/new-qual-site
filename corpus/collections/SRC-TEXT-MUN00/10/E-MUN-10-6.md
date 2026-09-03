@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-10-6
-kind: exercise
+kind: problem
 title: Properties of the minimal uncountable well-ordered set $S_{\Omega}$
 classification:
   areas:

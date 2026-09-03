@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FEH
-kind: exercise
+kind: problem
 title: Proof choice — spectral theorem or Cayley-Hamilton
 classification:
   areas:

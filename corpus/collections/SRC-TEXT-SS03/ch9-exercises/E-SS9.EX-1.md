@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-1
-kind: exercise
+kind: problem
 title: "SS 9.1: Periods of a meromorphic function with real ratio"
 classification:
   areas:

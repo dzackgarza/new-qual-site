@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8HR3A
-kind: exercise
+kind: problem
 title: Every basis of a second-countable space contains a countable basis
 classification:
   areas:

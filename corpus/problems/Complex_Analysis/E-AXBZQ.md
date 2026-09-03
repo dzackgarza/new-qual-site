@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AXBZQ
-kind: exercise
+kind: problem
 title: $x\sin(x)/1+x^2$
 classification:
   areas:

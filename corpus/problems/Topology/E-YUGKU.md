@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YUGKU
-kind: exercise
+kind: problem
 title: Product, subspace, and quotient topologies
 classification:
   areas:

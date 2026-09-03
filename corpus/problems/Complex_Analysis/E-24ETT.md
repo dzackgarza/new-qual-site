@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-24ETT
-kind: exercise
+kind: problem
 title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f$ is injective holomorphic and
   $f(0)=g(0)$
 classification:

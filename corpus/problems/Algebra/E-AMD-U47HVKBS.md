@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-U47HVKBS
-kind: exercise
+kind: problem
 title: $I$ is a prime ideal iff $R/I$ is an integral domain
 classification:
   areas:

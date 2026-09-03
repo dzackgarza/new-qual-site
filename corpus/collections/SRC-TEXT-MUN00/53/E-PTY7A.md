@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PTY7A
-kind: exercise
+kind: problem
 title: Projection from a product with a discrete space is a covering map
 classification:
   areas:

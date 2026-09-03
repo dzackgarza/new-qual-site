@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-3
-kind: exercise
+kind: problem
 title: Complement of a finite set of points in $\mathbb{R}^n$ is simply-connected for $n \geq 3$
 classification:
   areas:

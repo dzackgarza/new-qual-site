@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-5
-kind: exercise
+kind: problem
 title: "SS 5.5: The Fourier transform of exp(-|t|^alpha) has order alpha/(alpha-1)"
 classification:
   areas:

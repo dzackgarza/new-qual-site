@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-2QM6SJIQ
-kind: exercise
+kind: problem
 title: The Galois group of $x^n-1$ over $\QQ$ is $(\ZZ/n\ZZ)^\times$
 classification:
   areas:

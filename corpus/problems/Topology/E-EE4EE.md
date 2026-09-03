@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-EE4EE
-kind: exercise
+kind: problem
 title: Interior, isolated, and limit points
 classification:
   areas:

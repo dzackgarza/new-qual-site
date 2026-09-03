@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-5-2
-kind: exercise
+kind: problem
 title: Associativity of finite and infinite Cartesian products
 classification:
   areas:

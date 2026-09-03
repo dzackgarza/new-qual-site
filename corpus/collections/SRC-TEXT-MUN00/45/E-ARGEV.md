@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ARGEV
-kind: exercise
+kind: problem
 title: Pointwise bounded collections that fail equicontinuity
 classification:
   areas:

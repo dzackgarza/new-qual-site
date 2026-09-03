@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-11
-kind: exercise
+kind: problem
 title: "Cauchy inequalities and maximum modulus applications"
 classification:
   areas:

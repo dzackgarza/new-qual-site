@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PLJCK
-kind: exercise
+kind: problem
 title: Entire functions with $f(z)/z^{n}\to 0$ at infinity are polynomials of degree
   at most $n-1$
 classification:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-4
-kind: exercise
+kind: problem
 title: "SS 8.4: No holomorphic surjection from the disc onto the plane"
 classification:
   areas:

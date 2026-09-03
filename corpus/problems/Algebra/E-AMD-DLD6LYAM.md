@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DLD6LYAM
-kind: exercise
+kind: problem
 title: Groups of order $12$ with a normal subgroup of order $4$ are isomorphic to
   $A_4$
 classification:

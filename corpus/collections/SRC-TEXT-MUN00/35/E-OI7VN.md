@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OI7VN
-kind: exercise
+kind: problem
 title: The logarithmic spiral and the knotted x-axis as retracts
 classification:
   areas:

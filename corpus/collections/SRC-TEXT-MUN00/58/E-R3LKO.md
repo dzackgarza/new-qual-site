@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-R3LKO
-kind: exercise
+kind: problem
 title: When the inclusion induces an isomorphism on fundamental groups
 classification:
   areas:

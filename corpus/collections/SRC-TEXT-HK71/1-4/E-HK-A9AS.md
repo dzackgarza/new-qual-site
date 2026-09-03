@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-A9AS
-kind: exercise
+kind: problem
 title: Column space characterization for a $3 \times 3$ matrix
 classification:
   areas:

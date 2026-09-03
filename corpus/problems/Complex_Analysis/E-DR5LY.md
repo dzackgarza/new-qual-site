@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DR5LY
-kind: exercise
+kind: problem
 title: Hadamard expansion of $\sin$
 classification:
   areas:

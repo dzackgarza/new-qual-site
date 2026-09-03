@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XH2QU
-kind: exercise
+kind: problem
 title: $R[x]$ is a PID if and only if $R$ is a field
 classification:
   areas:

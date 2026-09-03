@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.C-8
-kind: exercise
+kind: problem
 title: At most countably many homotopy classes of maps between simplicial spaces
 classification:
   areas:

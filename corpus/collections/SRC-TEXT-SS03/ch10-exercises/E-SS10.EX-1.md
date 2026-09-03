@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-1
-kind: exercise
+kind: problem
 title: "SS 10.1: A theta-quotient identity for the Weierstrass function"
 classification:
   areas:

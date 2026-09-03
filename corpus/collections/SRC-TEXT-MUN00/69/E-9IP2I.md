@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-9IP2I
-kind: exercise
+kind: problem
 title: Free products of finite cyclic groups determine their factors
 classification:
   areas:

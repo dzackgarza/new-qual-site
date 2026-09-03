@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BI0O0
-kind: exercise
+kind: problem
 title: Interior and boundary of a subset
 classification:
   areas:

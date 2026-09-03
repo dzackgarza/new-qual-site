@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AWEWJ
-kind: exercise
+kind: problem
 title: An affine coordinate homeomorphism of R^omega
 classification:
   areas:

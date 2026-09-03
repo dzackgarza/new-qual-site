@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ML2I7
-kind: exercise
+kind: problem
 title: $f(z)= u(x,y) +i v(x,y)$ be analytic in a domain
 classification:
   areas:

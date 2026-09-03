@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Z4JCZ
-kind: exercise
+kind: problem
 title: $1/1+a^2+2a\cos(\theta)$, Poisson kernels
 classification:
   areas:

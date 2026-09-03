@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-4S8XS
-kind: exercise
+kind: problem
 title: Nets in Hausdorff spaces have at most one limit
 classification:
   areas:

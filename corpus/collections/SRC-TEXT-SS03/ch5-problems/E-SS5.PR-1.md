@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.PR-1
-kind: exercise
+kind: problem
 title: Zeros of a bounded holomorphic function satisfy the Blaschke condition
 classification:
   areas:

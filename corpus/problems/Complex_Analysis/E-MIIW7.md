@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MIIW7
-kind: exercise
+kind: problem
 title: Schwarz with domain/codomain scaled
 classification:
   areas:

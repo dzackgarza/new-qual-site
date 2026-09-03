@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-12
-kind: exercise
+kind: problem
 title: Quotient map $S^1 \times S^1 \to S^2$ inducing isomorphism on $H_2$; all maps $S^2 \to S^1 \times S^1$ nullhomotopic
 classification:
   areas:

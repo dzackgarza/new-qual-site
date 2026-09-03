@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-2
-kind: exercise
+kind: problem
 title: Choice functions for countable collections
 classification:
   areas:

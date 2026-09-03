@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-X26OEAAA
-kind: exercise
+kind: problem
 title: $[\QQ(\sqrt{2}+\sqrt{3}):\QQ]=4$ and $\QQ(\sqrt{2}+\sqrt{3})=\QQ(\sqrt{2}-\sqrt{3})=\QQ(\sqrt{2},\sqrt{3})$
 classification:
   areas:

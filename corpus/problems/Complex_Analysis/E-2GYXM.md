@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2GYXM
-kind: exercise
+kind: problem
 title: 'Sum formulas: 1/(n-a)^2'
 classification:
   areas:

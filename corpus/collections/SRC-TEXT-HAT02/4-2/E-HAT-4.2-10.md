@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-10
-kind: exercise
+kind: problem
 title: "Finiteness of $\\pi_n'$ vs. $\\pi_n$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FGRFM
-kind: exercise
+kind: problem
 title: Metrizability of the one-point compactification
 classification:
   areas:

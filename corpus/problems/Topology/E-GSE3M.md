@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GSE3M
-kind: exercise
+kind: problem
 title: The interval $[0,1]$ is connected
 classification:
   areas:

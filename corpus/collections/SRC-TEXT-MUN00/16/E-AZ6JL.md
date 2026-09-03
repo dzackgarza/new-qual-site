@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AZ6JL
-kind: exercise
+kind: problem
 title: Three topologies on the unit square
 classification:
   areas:

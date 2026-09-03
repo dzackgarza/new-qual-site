@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QO2S7
-kind: exercise
+kind: problem
 title: Bounded Complex Analytic Functions form a Banach Space
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-15
-kind: exercise
+kind: problem
 title: "Universal cover restricted to a subspace"
 classification:
   areas:

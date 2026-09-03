@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-9
-kind: exercise
+kind: problem
 title: Surface of genus $g$ retracts onto nonseparating circle but not separating circle
 classification:
   areas:

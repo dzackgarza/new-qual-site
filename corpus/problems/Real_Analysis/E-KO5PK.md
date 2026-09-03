@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KO5PK
-kind: exercise
+kind: problem
 title: Translation is continuous in $L^p$ for uniformly continuous functions
 classification:
   areas:

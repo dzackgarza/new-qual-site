@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-17
-kind: exercise
+kind: problem
 title: "The Mellin transform of a Schwartz function"
 classification:
   areas:

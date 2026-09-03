@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-2
-kind: exercise
+kind: problem
 title: "Functoriality of $\\pi_n$ under homotopy equivalence"
 classification:
   areas:

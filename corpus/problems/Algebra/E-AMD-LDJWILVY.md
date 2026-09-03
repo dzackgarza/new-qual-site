@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-LDJWILVY
-kind: exercise
+kind: problem
 title: If $H\le N_G(K)$ then $HK$ is a subgroup
 classification:
   areas:

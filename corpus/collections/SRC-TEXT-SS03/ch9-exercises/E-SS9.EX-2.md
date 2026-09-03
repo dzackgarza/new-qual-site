@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.EX-2
-kind: exercise
+kind: problem
 title: "Zeros minus poles of an elliptic function lands in the period lattice"
 classification:
   areas:

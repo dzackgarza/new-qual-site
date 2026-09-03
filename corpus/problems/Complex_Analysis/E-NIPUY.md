@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NIPUY
-kind: exercise
+kind: problem
 title: Uniform continuity of $x^{-n}$ on $[0,\infty)$
 classification:
   areas:

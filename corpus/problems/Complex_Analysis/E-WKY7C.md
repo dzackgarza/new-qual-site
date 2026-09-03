@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WKY7C
-kind: exercise
+kind: problem
 title: Entire functions agreeing with $e^x$ on $\RR$
 classification:
   areas:

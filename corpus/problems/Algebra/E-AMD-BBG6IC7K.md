@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-BBG6IC7K
-kind: exercise
+kind: problem
 title: Every ideal in a Noetherian ring is finitely generated
 classification:
   areas:

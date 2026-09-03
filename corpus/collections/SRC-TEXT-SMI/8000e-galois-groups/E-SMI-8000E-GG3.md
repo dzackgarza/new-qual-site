@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GG3
-kind: exercise
+kind: problem
 title: Two realizations of the field with 125 elements and an isomorphism between them
 classification:
   areas:

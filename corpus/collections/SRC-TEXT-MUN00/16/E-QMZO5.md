@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QMZO5
-kind: exercise
+kind: problem
 title: Dictionary order topology on the plane as a product topology
 classification:
   areas:

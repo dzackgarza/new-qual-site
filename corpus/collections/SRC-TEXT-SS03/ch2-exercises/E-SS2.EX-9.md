@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-9
-kind: exercise
+kind: problem
 title: "A holomorphic self-map with a fixed point of derivative one"
 classification:
   areas:

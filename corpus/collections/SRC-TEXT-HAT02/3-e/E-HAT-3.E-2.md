@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.E-2
-kind: exercise
+kind: problem
 title: "Homotopy classification of lens spaces"
 classification:
   areas:

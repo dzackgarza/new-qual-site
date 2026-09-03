@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AHENA
-kind: exercise
+kind: problem
 title: Closed continuous surjections preserve normality
 classification:
   areas:

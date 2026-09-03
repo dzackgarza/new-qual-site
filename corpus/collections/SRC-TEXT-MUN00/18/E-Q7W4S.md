@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Q7W4S
-kind: exercise
+kind: problem
 title: Separate continuity does not imply continuity
 classification:
   areas:

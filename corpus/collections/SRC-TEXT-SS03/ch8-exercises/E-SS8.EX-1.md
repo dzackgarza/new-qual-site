@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-1
-kind: exercise
+kind: problem
 title: "A holomorphic mapping  is a local bijection on U if for every  there exists an o"
 classification:
   areas:

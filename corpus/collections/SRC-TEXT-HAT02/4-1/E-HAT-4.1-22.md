@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-22
-kind: exercise
+kind: problem
 title: "Countable CW approximation for countable $\\pi_n$"
 classification:
   areas:

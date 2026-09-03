@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TIFII
-kind: exercise
+kind: problem
 title: Infinite sets with the cofinite topology are compact
 classification:
   areas:

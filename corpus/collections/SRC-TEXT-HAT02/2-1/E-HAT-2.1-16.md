@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-16
-kind: exercise
+kind: problem
 title: When relative homology $H_0(X,A)$ and $H_1(X,A)$ vanish
 classification:
   areas:

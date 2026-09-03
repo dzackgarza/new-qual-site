@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TMOKI
-kind: exercise
+kind: problem
 title: The subspace of $\RR^2$ with at least one rational coordinate is connected
 classification:
   areas:

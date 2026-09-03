@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-29
-kind: exercise
+kind: problem
 title: Homology of double of genus-$g$ surface via Mayer–Vietoris
 classification:
   areas:

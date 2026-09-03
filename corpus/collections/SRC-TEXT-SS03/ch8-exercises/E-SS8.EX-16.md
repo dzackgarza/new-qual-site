@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-16
-kind: exercise
+kind: problem
 title: "SS 8.16: Disc automorphisms through the Cayley transform"
 classification:
   areas:

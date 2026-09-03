@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-N5RKI
-kind: exercise
+kind: problem
 title: Vanishing on $\partial\Omega$ implies constancy or an interior zero
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-4
-kind: exercise
+kind: problem
 title: "SS 5.4: Growth and zeros of a product with geometrically spaced zeros"
 classification:
   areas:

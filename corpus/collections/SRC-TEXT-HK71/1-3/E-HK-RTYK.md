@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-RTYK
-kind: exercise
+kind: problem
 title: Row-reducing a matrix over $\CC$
 classification:
   areas:

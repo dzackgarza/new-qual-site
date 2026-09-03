@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DPKX4
-kind: exercise
+kind: problem
 title: Associativity of finite products
 classification:
   areas:

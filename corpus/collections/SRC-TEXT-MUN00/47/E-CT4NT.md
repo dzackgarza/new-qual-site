@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CT4NT
-kind: exercise
+kind: problem
 title: Arzela's theorem over sigma-compact Hausdorff domains
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-VFEWT
-kind: exercise
+kind: problem
 title: Radical, prime, and maximal ideals correspond under $R\to R/I$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LI4O5
-kind: exercise
+kind: problem
 title: Components of metrizable locally euclidean spaces are manifolds
 classification:
   areas:

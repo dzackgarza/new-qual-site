@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E9PMX
-kind: exercise
+kind: problem
 title: Nested closed sets in countably compact spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GDB6T
-kind: exercise
+kind: problem
 title: Compact Hausdorff spaces are metrizable if and only if second-countable
 classification:
   areas:

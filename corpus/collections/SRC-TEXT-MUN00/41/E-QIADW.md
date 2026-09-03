@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QIADW
-kind: exercise
+kind: problem
 title: Locally compact connected topological groups are paracompact
 classification:
   areas:

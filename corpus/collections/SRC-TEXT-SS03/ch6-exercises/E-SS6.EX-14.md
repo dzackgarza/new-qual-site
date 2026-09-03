@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-14
-kind: exercise
+kind: problem
 title: "This exercise gives an asymptotic formula for log n!"
 classification:
   areas:

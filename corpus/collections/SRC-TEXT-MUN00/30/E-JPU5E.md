@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JPU5E
-kind: exercise
+kind: problem
 title: Lindelofness and separability pass to continuous images
 classification:
   areas:

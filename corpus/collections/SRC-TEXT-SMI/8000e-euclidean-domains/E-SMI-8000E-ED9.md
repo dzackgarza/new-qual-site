@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-ED9
-kind: exercise
+kind: problem
 title: Factorization length bounded by the size function
 classification:
   areas:

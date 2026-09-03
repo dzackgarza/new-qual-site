@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-2
-kind: exercise
+kind: problem
 title: "Retracts of H-spaces"
 classification:
   areas:

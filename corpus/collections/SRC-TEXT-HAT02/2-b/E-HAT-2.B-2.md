@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.B-2
-kind: exercise
+kind: problem
 title: "Homology of complements of finite graphs in spheres"
 classification:
   areas:

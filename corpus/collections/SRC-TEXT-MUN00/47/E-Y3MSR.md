@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y3MSR
-kind: exercise
+kind: problem
 title: Compact closures in the topology of compact convergence
 classification:
   areas:

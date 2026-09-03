@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NZY3B
-kind: exercise
+kind: problem
 title: Complement of a segment
 classification:
   areas:

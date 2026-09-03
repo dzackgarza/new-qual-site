@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-39RRX
-kind: exercise
+kind: problem
 title: Four topologies on l2 and the Hilbert cube
 classification:
   areas:

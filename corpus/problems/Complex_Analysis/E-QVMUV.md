@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QVMUV
-kind: exercise
+kind: problem
 title: Cauchy integral formula for coefficients
 classification:
   areas:

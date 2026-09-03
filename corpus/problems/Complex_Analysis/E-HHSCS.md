@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HHSCS
-kind: exercise
+kind: problem
 title: The integral of $\log x/(1+x^a)$ over $[0,\infty)$
 classification:
   areas:

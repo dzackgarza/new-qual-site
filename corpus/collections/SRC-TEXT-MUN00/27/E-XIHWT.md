@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XIHWT
-kind: exercise
+kind: problem
 title: Distance to a set in a metric space
 classification:
   areas:

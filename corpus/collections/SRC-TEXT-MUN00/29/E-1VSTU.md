@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1VSTU
-kind: exercise
+kind: problem
 title: Net convergence generalizes sequence convergence
 classification:
   areas:

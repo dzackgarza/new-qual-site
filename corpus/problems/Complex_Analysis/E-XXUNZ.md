@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XXUNZ
-kind: exercise
+kind: problem
 title: Uniform convergence $f_n\to f$ implies $\int_\gamma f_n\to\int_\gamma f$
 classification:
   areas:

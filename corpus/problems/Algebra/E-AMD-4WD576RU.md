@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4WD576RU
-kind: exercise
+kind: problem
 title: An operator with irreducible minimal polynomial is semisimple
 classification:
   areas:

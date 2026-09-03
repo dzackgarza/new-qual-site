@@ -26,7 +26,6 @@ sections:
       -- reading a form off a rank sequence, or watching it fail to be continuous.
     items:
       - query:
-          kind: problem
           topics:
             - Linear Algebra
             - Inner Product Spaces
@@ -40,9 +39,6 @@ sections:
             - Minimal and Characteristic Polynomials
             - Linear Transformations
             - Multilinear Algebra
-          limit: 500
-          review:
-            mode: any
   - slug: representation-theory
     title: Representation Theory
     parent: matrix-analysis
@@ -62,7 +58,6 @@ sections:
       reciprocity is the statement that they are adjoint.
     items:
       - query:
-          kind: problem
           topics:
             - Representation Theory
             - Character Theory
@@ -73,9 +68,6 @@ sections:
             - Abelian Groups
             - Classification
             - Modules
-          limit: 500
-          review:
-            mode: any
   - slug: symmetric-functions
     title: Symmetric Functions and the Symmetric Group
     parent: representation-theory
@@ -93,7 +85,6 @@ sections:
       functions -- are the same orbit-counting idea used without the module theory.
     items:
       - query:
-          kind: problem
           topics:
             - Symmetric Functions
             - Tableaux
@@ -102,9 +93,6 @@ sections:
             - Combinatorics
             - Generating Functions
             - Pólya Enumeration
-          limit: 500
-          review:
-            mode: any
   - slug: grobner-bases-and-varieties
     title: Gröbner Bases and Varieties
     parent: GUIDE-APPLIED-ALGEBRA
@@ -121,16 +109,12 @@ sections:
       ideal are the basis that makes the dimension countable.
     items:
       - query:
-          kind: problem
           topics:
             - Gröbner Bases
             - Ideals
             - Commutative Algebra
             - Integral Domains
             - Polynomial Systems
-          limit: 500
-          review:
-            mode: any
   - slug: invariant-theory
     title: Invariant Theory
     parent: grobner-bases-and-varieties
@@ -146,9 +130,5 @@ sections:
       invariant of the representation, not of the abstract group.
     items:
       - query:
-          kind: problem
           topics:
             - Invariant Theory
-          limit: 500
-          review:
-            mode: any

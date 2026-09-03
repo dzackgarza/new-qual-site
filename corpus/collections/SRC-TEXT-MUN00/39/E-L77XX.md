@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L77XX
-kind: exercise
+kind: problem
 title: A countably locally finite collection that is neither countable nor locally finite
 classification:
   areas:

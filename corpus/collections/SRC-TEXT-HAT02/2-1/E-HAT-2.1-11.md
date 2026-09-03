@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-11
-kind: exercise
+kind: problem
 title: Retract induces injective map on homology
 classification:
   areas:

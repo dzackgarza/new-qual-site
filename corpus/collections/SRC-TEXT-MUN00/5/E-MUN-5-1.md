@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-5-1
-kind: exercise
+kind: problem
 title: Bijection between $A \times B$ and $B \times A$
 classification:
   areas:

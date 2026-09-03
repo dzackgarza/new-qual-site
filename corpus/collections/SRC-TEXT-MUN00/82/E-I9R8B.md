@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-I9R8B
-kind: exercise
+kind: problem
 title: The cone on the infinite earring
 classification:
   areas:

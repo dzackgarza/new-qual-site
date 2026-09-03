@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.G-1
-kind: exercise
+kind: problem
 title: "Infinite mapping cylinder deformation retracts onto telescope"
 classification:
   areas:

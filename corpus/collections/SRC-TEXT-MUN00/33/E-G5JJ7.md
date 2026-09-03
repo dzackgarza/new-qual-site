@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G5JJ7
-kind: exercise
+kind: problem
 title: Strong form of the Urysohn lemma
 classification:
   areas:

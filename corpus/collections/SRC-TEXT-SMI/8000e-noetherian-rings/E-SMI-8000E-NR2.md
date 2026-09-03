@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-NR2
-kind: exercise
+kind: problem
 title: Quotients of noetherian rings are noetherian
 classification:
   areas:

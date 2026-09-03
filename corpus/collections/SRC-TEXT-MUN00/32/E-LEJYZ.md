@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LEJYZ
-kind: exercise
+kind: problem
 title: Every linear continuum is normal
 classification:
   areas:

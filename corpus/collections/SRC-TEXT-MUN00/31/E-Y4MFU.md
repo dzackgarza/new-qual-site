@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y4MFU
-kind: exercise
+kind: problem
 title: Perfect maps transfer separation and countability properties
 classification:
   areas:

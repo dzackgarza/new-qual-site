@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.B-2
-kind: exercise
+kind: problem
 title: "Chain homotopy as a chain map on the cone"
 classification:
   areas:

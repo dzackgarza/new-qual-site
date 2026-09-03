@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YI3QM
-kind: exercise
+kind: problem
 title: The closed disk as a surface with boundary
 classification:
   areas:

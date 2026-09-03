@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-16
-kind: exercise
+kind: problem
 title: "Rouche's theorem from a simple-zero comparison"
 classification:
   areas:

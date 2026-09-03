@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-L4UAO
-kind: exercise
+kind: problem
 title: Separation properties project from products to factors
 classification:
   areas:

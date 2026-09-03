@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-13
-kind: exercise
+kind: problem
 title: "Isomorphism on $\\pi_i$ for $i \\leq n$ in $n$-dimensional complexes"
 classification:
   areas:

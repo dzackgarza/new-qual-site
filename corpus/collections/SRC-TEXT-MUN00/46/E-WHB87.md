@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WHB87
-kind: exercise
+kind: problem
 title: Continuity of composition in the compact-open topology
 classification:
   areas:

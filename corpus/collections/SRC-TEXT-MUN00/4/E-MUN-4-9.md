@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-9
-kind: exercise
+kind: problem
 title: Archimedean property and density of $\mathbb{Q}$ in $\mathbb{R}$
 classification:
   areas:

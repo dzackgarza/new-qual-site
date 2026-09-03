@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-GO24I
-kind: exercise
+kind: problem
 title: The rationals are not locally compact
 classification:
   areas:

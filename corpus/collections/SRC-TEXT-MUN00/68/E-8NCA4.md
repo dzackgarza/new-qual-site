@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8NCA4
-kind: exercise
+kind: problem
 title: Free product construction in §68
 classification:
   areas:

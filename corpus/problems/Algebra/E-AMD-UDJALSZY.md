@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-UDJALSZY
-kind: exercise
+kind: problem
 title: $C_H(x)=H\cap C_G(x)$ for $H\leq G$
 classification:
   areas:

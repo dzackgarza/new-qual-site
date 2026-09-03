@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-FWJZ6BSR
-kind: exercise
+kind: problem
 title: Every ring has a proper maximal ideal
 classification:
   areas:

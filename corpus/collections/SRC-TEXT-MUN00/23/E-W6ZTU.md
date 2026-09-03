@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W6ZTU
-kind: exercise
+kind: problem
 title: Discrete spaces are totally disconnected
 classification:
   areas:

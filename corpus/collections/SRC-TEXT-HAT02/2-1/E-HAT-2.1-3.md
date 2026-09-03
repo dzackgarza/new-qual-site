@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-3
-kind: exercise
+kind: problem
 title: $\Delta$-complex structure on $\mathbb{RP}^n$ from $S^n$
 classification:
   areas:

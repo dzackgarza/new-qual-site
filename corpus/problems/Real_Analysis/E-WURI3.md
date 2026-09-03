@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WURI3
-kind: exercise
+kind: problem
 title: The Fourier transform of an $L^1$ function is bounded and uniformly continuous
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JOSK3
-kind: exercise
+kind: problem
 title: Orders of poles
 classification:
   areas:

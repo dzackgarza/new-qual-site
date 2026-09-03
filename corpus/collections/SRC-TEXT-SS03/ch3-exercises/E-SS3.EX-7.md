@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-7
-kind: exercise
+kind: problem
 title: "SS 3.7: The integral of dtheta over (a+cos theta)^2"
 classification:
   areas:

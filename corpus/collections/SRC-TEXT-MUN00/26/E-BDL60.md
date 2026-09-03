@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BDL60
-kind: exercise
+kind: problem
 title: Compact subspaces in the finite complement and countable complement topologies
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.L-1
-kind: exercise
+kind: problem
 title: "Cohomology operations on $H^1$ and $H^2$"
 classification:
   areas:

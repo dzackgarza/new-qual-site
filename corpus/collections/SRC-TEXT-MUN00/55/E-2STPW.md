@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2STPW
-kind: exercise
+kind: problem
 title: Nulhomotopic maps of the circle have fixed and antipodal points
 classification:
   areas:

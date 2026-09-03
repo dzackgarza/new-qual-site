@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HYPCI
-kind: exercise
+kind: problem
 title: Star-convex sets are simply connected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PAQPF
-kind: exercise
+kind: problem
 title: Polar CR equations
 classification:
   areas:

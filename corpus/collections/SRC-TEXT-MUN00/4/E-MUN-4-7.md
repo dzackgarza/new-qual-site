@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-7
-kind: exercise
+kind: problem
 title: Extending the laws of exponents to all integers
 classification:
   areas:

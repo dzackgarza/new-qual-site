@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-21
-kind: exercise
+kind: problem
 title: Euler characteristic of union of subcomplexes
 classification:
   areas:

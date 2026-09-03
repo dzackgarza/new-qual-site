@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-35
-kind: exercise
+kind: problem
 title: "Quotient fiber bundle from quaternionic Hopf bundle"
 classification:
   areas:

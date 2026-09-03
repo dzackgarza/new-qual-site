@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IOZ4G
-kind: exercise
+kind: problem
 title: Every indiscrete space is separable
 classification:
   areas:

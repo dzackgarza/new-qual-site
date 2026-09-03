@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-D5ZZFZKC
-kind: exercise
+kind: problem
 title: Every $p$-group has a nontrivial center
 classification:
   areas:

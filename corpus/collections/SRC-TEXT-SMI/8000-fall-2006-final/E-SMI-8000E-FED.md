@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FED
-kind: exercise
+kind: problem
 title: Proof choice — small groups or simplicity of A5
 classification:
   areas:

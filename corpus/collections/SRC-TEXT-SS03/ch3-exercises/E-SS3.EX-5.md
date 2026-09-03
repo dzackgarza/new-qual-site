@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-5
-kind: exercise
+kind: problem
 title: "SS 3.5: The Fourier transform of (1+x^2)^-2"
 classification:
   areas:

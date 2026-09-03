@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-1-3
-kind: exercise
+kind: problem
 title: Contrapositive, converse, and truth of conditional statements
 classification:
   areas:

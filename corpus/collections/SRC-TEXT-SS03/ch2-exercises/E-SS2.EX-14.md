@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS2.EX-14
-kind: exercise
+kind: problem
 title: "A pole on the circle of convergence and its coefficient growth"
 classification:
   areas:

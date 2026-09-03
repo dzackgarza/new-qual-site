@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KNLQ0
-kind: exercise
+kind: problem
 title: Uniform convergence as convergence in the uniform metric
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-E2LGY
-kind: exercise
+kind: problem
 title: Pointwise limits of entire functions, uniform on segments, are entire and compactly
   convergent
 classification:

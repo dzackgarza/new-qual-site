@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-13
-kind: exercise
+kind: problem
 title: "SS 8.13: The pseudo-hyperbolic metric and the Schwarz-Pick inequality"
 classification:
   areas:

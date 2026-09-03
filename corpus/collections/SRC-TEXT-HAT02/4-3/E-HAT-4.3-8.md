@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-8
-kind: exercise
+kind: problem
 title: "Fibrations from sections of $E^I \\to E_p$"
 classification:
   areas:

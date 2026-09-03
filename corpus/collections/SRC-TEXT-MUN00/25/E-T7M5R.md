@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-T7M5R
-kind: exercise
+kind: problem
 title: The identity component of a topological group is normal
 classification:
   areas:

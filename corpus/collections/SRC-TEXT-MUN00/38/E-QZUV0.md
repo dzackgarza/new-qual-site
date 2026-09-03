@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QZUV0
-kind: exercise
+kind: problem
 title: The Stone-Cech compactification is maximal among compactifications
 classification:
   areas:

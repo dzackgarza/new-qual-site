@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-23
-kind: exercise
+kind: problem
 title: "Surjectivity of Hurewicz in dimension $n+1$"
 classification:
   areas:

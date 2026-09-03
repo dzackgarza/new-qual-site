@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-5
-kind: exercise
+kind: problem
 title: "The harmonic broom has no simply-connected covering space"
 classification:
   areas:

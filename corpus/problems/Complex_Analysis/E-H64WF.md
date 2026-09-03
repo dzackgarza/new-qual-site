@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-H64WF
-kind: exercise
+kind: problem
 title: Line to circle
 classification:
   areas:

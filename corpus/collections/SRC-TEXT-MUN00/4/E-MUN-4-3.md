@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-3
-kind: exercise
+kind: problem
 title: Inductive sets and basic properties of $\mathbb{Z}_+$
 classification:
   areas:

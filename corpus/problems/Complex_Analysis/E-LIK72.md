@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LIK72
-kind: exercise
+kind: problem
 title: Finitely many poles
 classification:
   areas:

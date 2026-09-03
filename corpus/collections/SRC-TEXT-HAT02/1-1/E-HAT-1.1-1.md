@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-1
-kind: exercise
+kind: problem
 title: Cancellation property for composition of paths
 classification:
   areas:

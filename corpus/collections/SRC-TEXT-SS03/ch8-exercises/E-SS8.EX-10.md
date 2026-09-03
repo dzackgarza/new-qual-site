@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-10
-kind: exercise
+kind: problem
 title: "SS 8.10: A Schwarz-type bound on the upper half-plane"
 classification:
   areas:

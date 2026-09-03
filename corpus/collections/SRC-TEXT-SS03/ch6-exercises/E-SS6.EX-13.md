@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-13
-kind: exercise
+kind: problem
 title: "SS 6.13: Second derivative of log Gamma as a summed series"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-F8UOA
-kind: exercise
+kind: problem
 title: Continuity sets are G-delta; no function continuous exactly on the rationals
 classification:
   areas:

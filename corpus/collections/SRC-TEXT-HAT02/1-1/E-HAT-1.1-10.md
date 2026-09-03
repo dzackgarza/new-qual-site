@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-10
-kind: exercise
+kind: problem
 title: Explicit homotopy for commuting loops in product spaces
 classification:
   areas:

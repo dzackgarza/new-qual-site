@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-FG2
-kind: exercise
+kind: problem
 title: Classifying structures annihilated by a fixed element
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-JRUQKWKO
-kind: exercise
+kind: problem
 title: $H$ characteristic in $K\trianglelefteq G$ implies $H\trianglelefteq G$
 classification:
   areas:

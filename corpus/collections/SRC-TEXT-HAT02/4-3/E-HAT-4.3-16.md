@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-16
-kind: exercise
+kind: problem
 title: "Whitehead theorem via homotopy fiber"
 classification:
   areas:

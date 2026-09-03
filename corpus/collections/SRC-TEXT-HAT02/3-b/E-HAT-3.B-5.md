@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.B-5
-kind: exercise
+kind: problem
 title: "Slant products"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IVHVW
-kind: exercise
+kind: problem
 title: Bounded above by Blaschke product
 classification:
   areas:

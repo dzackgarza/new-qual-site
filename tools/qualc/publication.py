@@ -7,42 +7,24 @@ only reading order, hierarchy, connective prose, and appearances of those cards.
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Annotated, Literal
+from typing import Literal
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, model_validator
-
-from .model import Review
 
 
 class Strict(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
-class AnyReview(Strict):
-    mode: Literal["any"]
-
-
-class SelectedReviews(Strict):
-    mode: Literal["selected"]
-    values: list[Review] = Field(min_length=1)
-
-
-ReviewConstraint = Annotated[
-    AnyReview | SelectedReviews,
-    Field(discriminator="mode"),
-]
-
-
 class PublicationQuery(Strict):
     # A guide is authored mathematics, not a projection of the card database.
-    # Queries exist only to hand a family of practice problems to the generator;
+    # Queries exist only to hand a topic family to the problem generator;
     # reference material enters the guide by an explicit `ref:` chosen by the
-    # author and is transcluded where the exposition needs it.
-    kind: Literal["problem", "exercise"]
-    topics: list[str]
-    limit: int = Field(gt=0)
-    review: ReviewConstraint
+    # author and is transcluded where the exposition needs it. Sampling and
+    # runtime filters belong to the generator, so the manifest stores neither a
+    # build-time limit nor a source-appearance category such as “exercise”.
+    topics: list[str] = Field(min_length=1)
 
 
 class ReferenceItem(Strict):

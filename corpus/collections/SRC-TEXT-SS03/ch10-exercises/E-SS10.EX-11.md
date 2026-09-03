@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-11
-kind: exercise
+kind: problem
 title: "SS 10.11: Generating functions for divisor-power sums"
 classification:
   areas:

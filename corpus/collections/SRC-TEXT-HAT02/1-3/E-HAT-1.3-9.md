@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-9
-kind: exercise
+kind: problem
 title: "Maps to $S^1$ from spaces with finite fundamental group"
 classification:
   areas:

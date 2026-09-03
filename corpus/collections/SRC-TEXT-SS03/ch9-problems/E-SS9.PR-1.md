@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS9.PR-1
-kind: exercise
+kind: problem
 title: "Besides the approach in Section 1"
 classification:
   areas:

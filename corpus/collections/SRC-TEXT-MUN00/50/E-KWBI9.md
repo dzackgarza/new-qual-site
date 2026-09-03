@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KWBI9
-kind: exercise
+kind: problem
 title: Connected T1 spaces have positive dimension
 classification:
   areas:

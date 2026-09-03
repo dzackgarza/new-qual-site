@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-69NKI
-kind: exercise
+kind: problem
 title: Homotopy of composites
 classification:
   areas:

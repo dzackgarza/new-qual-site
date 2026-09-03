@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-19
-kind: exercise
+kind: problem
 title: "Exactness improvement via $B$-action"
 classification:
   areas:

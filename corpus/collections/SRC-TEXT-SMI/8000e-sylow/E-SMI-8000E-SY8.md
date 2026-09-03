@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY8
-kind: exercise
+kind: problem
 title: Sylow subgroups of symmetric groups are abelian
 classification:
   areas:

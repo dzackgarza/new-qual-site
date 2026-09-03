@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3OAGD
-kind: exercise
+kind: problem
 title: Inner approximation of a finite-measure set by compact subsets
 classification:
   areas:

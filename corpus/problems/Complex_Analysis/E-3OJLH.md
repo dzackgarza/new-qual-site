@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3OJLH
-kind: exercise
+kind: problem
 title: The equality case
 classification:
   areas:

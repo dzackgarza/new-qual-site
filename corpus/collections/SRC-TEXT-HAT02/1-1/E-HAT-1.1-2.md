@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.1-2
-kind: exercise
+kind: problem
 title: Basepoint-change homomorphism depends only on homotopy class
 classification:
   areas:

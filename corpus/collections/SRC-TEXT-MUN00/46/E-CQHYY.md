@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CQHYY
-kind: exercise
+kind: problem
 title: Bounded functions under uniform and compact convergence topologies
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-W5DZ6
-kind: exercise
+kind: problem
 title: Closure of a product equals the product of closures
 classification:
   areas:

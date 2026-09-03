@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-7-8
-kind: exercise
+kind: problem
 title: Cardinality of countable subsets of $X^{\omega}$
 classification:
   areas:

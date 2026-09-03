@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-16
-kind: exercise
+kind: problem
 title: "Factoring maps through $n$-connective covers"
 classification:
   areas:

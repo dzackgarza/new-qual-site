@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QSNCL
-kind: exercise
+kind: problem
 title: No function continuous on $\QQ$ and discontinuous on $\RR\setminus\QQ$
 classification:
   areas:

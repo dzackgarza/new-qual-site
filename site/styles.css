@@ -851,12 +851,12 @@ div.qual-section::before {
   font-size: var(--label);
 }
 
-/* The twelve kinds fall into the four registers amsthm already gives a
+/* The card kinds fall into the four registers amsthm already gives a
    mathematician: a statement, its proof, an aside, and a warning. Weight and
    slope carry the distinction -- a statement in italic under a bold label, a
    proof under a hairline ending in a tombstone, an aside flush with the prose
    -- and only the warning spends a colour. Colouring each kind separately was
-   considered and rejected: twelve hues is less scannable than the grey it
+   considered and rejected: one hue per kind is less scannable than the grey it
    would replace. */
 div:is(
   .qual-definition,
@@ -866,8 +866,7 @@ div:is(
   .qual-lemma,
   .qual-fact,
   .qual-claim,
-  .qual-problem,
-  .qual-exercise
+  .qual-problem
 ) {
   border-left-color: var(--ink);
 }
@@ -880,16 +879,15 @@ div:is(
     .qual-lemma,
     .qual-fact,
     .qual-claim,
-    .qual-problem,
-    .qual-exercise
+    .qual-problem
   )::before {
   color: var(--ink);
   font-weight: 750;
 }
 
-/* amsthm's plain style: the assertion itself is set in italic. A definition,
-   a problem and an exercise stay upright, as amsthm's definition style has
-   them -- they are read through, not recalled. */
+/* amsthm's plain style: the assertion itself is set in italic. A definition
+   and a problem stay upright, as amsthm's definition style has them -- they
+   are read through, not recalled. */
 div:is(
   .qual-theorem,
   .qual-proposition,

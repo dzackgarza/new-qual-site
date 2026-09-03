@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-11
-kind: exercise
+kind: problem
 title: Fundamental group of mapping torus of map on wedge of circles
 classification:
   areas:

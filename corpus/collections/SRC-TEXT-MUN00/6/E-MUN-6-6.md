@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-6-6
-kind: exercise
+kind: problem
 title: Bijection between $\mathcal{P}(A)$ and $X^n$
 classification:
   areas:

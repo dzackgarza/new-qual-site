@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-HIFDV6WB
-kind: exercise
+kind: problem
 title: Galois group of $x^3+4x+2$ over $\QQ$ is $S_3$
 classification:
   areas:

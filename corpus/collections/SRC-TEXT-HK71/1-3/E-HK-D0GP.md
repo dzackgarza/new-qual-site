@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-D0GP
-kind: exercise
+kind: problem
 title: Row interchange from other elementary operations
 classification:
   areas:

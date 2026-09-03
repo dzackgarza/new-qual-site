@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-32
-kind: exercise
+kind: problem
 title: "Covering spaces of CW complexes from 1-skeleton coverings"
 classification:
   areas:

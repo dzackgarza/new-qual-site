@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QFOOL
-kind: exercise
+kind: problem
 title: Special case of bijections
 classification:
   areas:

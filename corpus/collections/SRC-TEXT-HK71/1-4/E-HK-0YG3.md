@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-0YG3
-kind: exercise
+kind: problem
 title: Row-reduced echelon form is unique given the solution set
 classification:
   areas:

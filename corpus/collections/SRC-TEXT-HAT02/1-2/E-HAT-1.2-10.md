@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-10
-kind: exercise
+kind: problem
 title: Loop nullhomotopic in $D^2 \times I$ but not in complement of two arcs
 classification:
   areas:

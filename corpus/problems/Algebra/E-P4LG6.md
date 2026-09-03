@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-P4LG6
-kind: exercise
+kind: problem
 title: Normal subgroups of $p$-groups intersect the center
 classification:
   areas:

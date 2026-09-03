@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-AB2
-kind: exercise
+kind: problem
 title: A short exact sequence ending in free abelian splits
 classification:
   areas:

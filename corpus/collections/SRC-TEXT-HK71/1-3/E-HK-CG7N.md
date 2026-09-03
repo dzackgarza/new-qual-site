@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-CG7N
-kind: exercise
+kind: problem
 title: Solving $AX = 0$ by row reduction
 classification:
   areas:

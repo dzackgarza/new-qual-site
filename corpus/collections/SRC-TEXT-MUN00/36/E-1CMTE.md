@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1CMTE
-kind: exercise
+kind: problem
 title: Paracompactness and topological completeness in the basics review
 classification:
   areas:

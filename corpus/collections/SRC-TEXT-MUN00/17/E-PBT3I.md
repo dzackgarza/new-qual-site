@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PBT3I
-kind: exercise
+kind: problem
 title: Products of closed sets are closed
 classification:
   areas:

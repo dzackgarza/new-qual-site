@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-I7ZD4
-kind: exercise
+kind: problem
 title: Cayley-Hamilton via Jordan canonical form
 classification:
   areas:

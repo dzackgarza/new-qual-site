@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y75ZB
-kind: exercise
+kind: problem
 title: A countable rational rectangle basis for the plane
 classification:
   areas:

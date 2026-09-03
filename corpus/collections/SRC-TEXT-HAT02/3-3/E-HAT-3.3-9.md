@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-9
-kind: exercise
+kind: problem
 title: "Degree of covering space projections"
 classification:
   areas:

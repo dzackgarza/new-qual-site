@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Y5YAL
-kind: exercise
+kind: problem
 title: Generated topologies as intersections of topologies
 classification:
   areas:

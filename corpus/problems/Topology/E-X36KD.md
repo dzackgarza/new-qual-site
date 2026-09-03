@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X36KD
-kind: exercise
+kind: problem
 title: A continuous map from a compact space to a Hausdorff space is closed
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-6
-kind: exercise
+kind: problem
 title: "H-space structure on $K(G,n)$"
 classification:
   areas:

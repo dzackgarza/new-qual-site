@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IG6PF
-kind: exercise
+kind: problem
 title: Powers of the line are Baire spaces in the box, product, and uniform topologies
 classification:
   areas:

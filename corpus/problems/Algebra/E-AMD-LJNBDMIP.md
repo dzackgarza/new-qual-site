@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-LJNBDMIP
-kind: exercise
+kind: problem
 title: A permutation is odd iff it has an odd number of even cycles
 classification:
   areas:

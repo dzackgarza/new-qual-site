@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IYBZP
-kind: exercise
+kind: problem
 title: A holomorphic function with a vanishing Taylor coefficient at every point is
   a polynomial
 classification:

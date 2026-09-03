@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-9
-kind: exercise
+kind: problem
 title: "Torus inclusion in $U(n)$ is nullhomotopic"
 classification:
   areas:

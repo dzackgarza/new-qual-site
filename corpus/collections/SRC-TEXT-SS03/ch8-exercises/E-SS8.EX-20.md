@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-20
-kind: exercise
+kind: problem
 title: "Other examples of elliptic integrals providing conformal maps from the upper hal"
 classification:
   areas:

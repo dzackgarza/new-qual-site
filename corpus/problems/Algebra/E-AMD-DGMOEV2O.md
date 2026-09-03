@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-DGMOEV2O
-kind: exercise
+kind: problem
 title: $P\cap H\in\syl_p(H)$ for $P\in\syl_p(G)$ and $H\trianglelefteq G$
 classification:
   areas:

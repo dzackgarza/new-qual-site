@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3B2YA
-kind: exercise
+kind: problem
 title: Evaluating integrals
 classification:
   areas:

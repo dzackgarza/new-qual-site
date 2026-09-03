@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.2-19
-kind: exercise
+kind: problem
 title: Union of spheres of radius $1/n$ centered at $(1/n, 0, 0)$ is simply-connected
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NBS6F
-kind: exercise
+kind: problem
 title: Products of Hausdorff spaces in the box and product topologies
 classification:
   areas:

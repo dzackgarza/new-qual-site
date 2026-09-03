@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-13
-kind: exercise
+kind: problem
 title: Element of free group lies in a basis for some finite-index subgroup
 classification:
   areas:

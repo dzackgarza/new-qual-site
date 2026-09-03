@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-QR3SP
-kind: exercise
+kind: problem
 title: The countable complement topology and an infinite complement collection
 classification:
   areas:

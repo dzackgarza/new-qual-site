@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-10
-kind: exercise
+kind: problem
 title: "Action of $\\pi_1(E)$ on $\\pi_n(F)$ for fibrations"
 classification:
   areas:

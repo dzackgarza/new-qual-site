@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-UEHZOJ3K
-kind: exercise
+kind: problem
 title: Nilradical is the intersection of all prime ideals
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-54CQC
-kind: exercise
+kind: problem
 title: Local homeomorphisms of compact Hausdorff spaces are covering maps
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CFH1Q
-kind: exercise
+kind: problem
 title: Closed sets satisfy the topology axioms
 classification:
   areas:

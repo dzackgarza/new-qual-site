@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-Z66NC
-kind: exercise
+kind: problem
 title: The integral of $1/(x\sqrt{x^2-1})$ over $[1,\infty)$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G74LH
-kind: exercise
+kind: problem
 title: Connected open sets in locally path connected spaces
 classification:
   areas:

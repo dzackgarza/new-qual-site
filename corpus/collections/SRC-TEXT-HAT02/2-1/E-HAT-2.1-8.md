@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-8
-kind: exercise
+kind: problem
 title: Simplicial homology of lens space from cyclic tetrahedra
 classification:
   areas:

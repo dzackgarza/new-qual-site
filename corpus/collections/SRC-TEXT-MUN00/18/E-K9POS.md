@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-K9POS
-kind: exercise
+kind: problem
 title: Continuous images of limit points
 classification:
   areas:

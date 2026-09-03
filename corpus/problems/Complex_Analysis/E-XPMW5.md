@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XPMW5
-kind: exercise
+kind: problem
 title: Classifying singularities
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-1
-kind: exercise
+kind: problem
 title: "Alternative sum of maps and abelian $\\pi_n$"
 classification:
   areas:

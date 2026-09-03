@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MPUGI
-kind: exercise
+kind: problem
 title: Products with a locally compact Hausdorff factor preserve quotient maps
 classification:
   areas:

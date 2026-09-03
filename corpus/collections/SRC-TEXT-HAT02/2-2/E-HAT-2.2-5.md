@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-5
-kind: exercise
+kind: problem
 title: Any two reflections of $S^n$ are homotopic through reflections
 classification:
   areas:

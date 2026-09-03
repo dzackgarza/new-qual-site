@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KTHV8
-kind: exercise
+kind: problem
 title: Sets containing a neighborhood of each of their points are open
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-3MQL7TPB
-kind: exercise
+kind: problem
 title: $O_p(G)$ is the unique maximal normal $p$-subgroup of $G$
 classification:
   areas:

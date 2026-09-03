@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-15
-kind: exercise
+kind: problem
 title: "Local homology as sections of a covering"
 classification:
   areas:

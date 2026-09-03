@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3QAC4
-kind: exercise
+kind: problem
 title: f and fbar holomorphic implies constant
 classification:
   areas:

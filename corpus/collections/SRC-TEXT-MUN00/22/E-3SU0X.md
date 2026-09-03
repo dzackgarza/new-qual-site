@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3SU0X
-kind: exercise
+kind: problem
 title: Quotient topology on a three-point image of the line
 classification:
   areas:

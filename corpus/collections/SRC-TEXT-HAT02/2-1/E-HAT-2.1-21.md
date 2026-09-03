@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-21
-kind: exercise
+kind: problem
 title: Explicit chain maps inducing suspension isomorphism
 classification:
   areas:

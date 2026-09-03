@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-KZB33
-kind: exercise
+kind: problem
 title: Injective holomorphic maps have nonvanishing derivative
 classification:
   areas:

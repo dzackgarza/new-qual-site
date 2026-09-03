@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-6TLQZZWT
-kind: exercise
+kind: problem
 title: $A_n$ is simple for $n\geq 5$
 classification:
   areas:

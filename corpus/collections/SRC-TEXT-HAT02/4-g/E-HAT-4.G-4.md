@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.G-4
-kind: exercise
+kind: problem
 title: "Nerve lemma for subcomplex covers of CW complexes"
 classification:
   areas:

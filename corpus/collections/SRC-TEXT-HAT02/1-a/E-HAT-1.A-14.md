@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.A-14
-kind: exercise
+kind: problem
 title: Existence of maximal trees is equivalent to the Axiom of Choice
 classification:
   areas:

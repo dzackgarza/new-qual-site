@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.2-42
-kind: exercise
+kind: problem
 title: Finite group of homeomorphisms of graph injects into $GL_n(\mathbb{Z})$ acting on $H_1$
 classification:
   areas:

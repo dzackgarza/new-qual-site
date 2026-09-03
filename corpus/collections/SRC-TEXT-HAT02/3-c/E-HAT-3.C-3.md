@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-3
-kind: exercise
+kind: problem
 title: "Path-components of homotopy-associative H-spaces"
 classification:
   areas:

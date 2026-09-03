@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-DXXL4
-kind: exercise
+kind: problem
 title: Uniform limit theorem
 classification:
   areas:

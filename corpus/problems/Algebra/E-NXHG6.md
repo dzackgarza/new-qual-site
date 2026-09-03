@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NXHG6
-kind: exercise
+kind: problem
 title: Every non-unit of $R$ is contained in a maximal ideal
 classification:
   areas:

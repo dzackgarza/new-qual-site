@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ENNUD
-kind: exercise
+kind: problem
 title: An infinite set without limit points in the uniform topology
 classification:
   areas:

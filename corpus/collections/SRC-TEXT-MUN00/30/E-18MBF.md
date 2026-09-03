@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-18MBF
-kind: exercise
+kind: problem
 title: Products with a compact factor are Lindelof
 classification:
   areas:

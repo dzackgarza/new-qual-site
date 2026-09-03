@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-6
-kind: exercise
+kind: problem
 title: Simplicial homology of $\Delta$-complex from $n+1$ 2-simplices with cyclic edge identifications
 classification:
   areas:

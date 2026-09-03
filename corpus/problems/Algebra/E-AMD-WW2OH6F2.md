@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-WW2OH6F2
-kind: exercise
+kind: problem
 title: A group of order $p^2 q^2$ has a normal Sylow subgroup
 classification:
   areas:

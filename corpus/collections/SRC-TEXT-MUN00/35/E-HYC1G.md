@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HYC1G
-kind: exercise
+kind: problem
 title: Topology coherent with an increasing sequence of closed subspaces
 classification:
   areas:

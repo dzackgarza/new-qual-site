@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-26
-kind: exercise
+kind: problem
 title: $H_1(X, A)$ not isomorphic to $\tilde{H}_1(X/A)$ for shrinking wedge of circles
 classification:
   areas:

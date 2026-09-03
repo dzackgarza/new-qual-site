@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY7
-kind: exercise
+kind: problem
 title: Fixed points of p-groups and conjugacy of Sylow subgroups
 classification:
   areas:

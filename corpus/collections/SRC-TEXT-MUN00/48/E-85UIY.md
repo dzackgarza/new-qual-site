@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-85UIY
-kind: exercise
+kind: problem
 title: Function spaces are Baire in the fine topology
 classification:
   areas:

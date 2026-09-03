@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-6
-kind: exercise
+kind: problem
 title: Paradoxes of the set of all sets
 classification:
   areas:

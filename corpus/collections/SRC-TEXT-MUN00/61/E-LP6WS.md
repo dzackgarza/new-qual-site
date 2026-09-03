@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LP6WS
-kind: exercise
+kind: problem
 title: The closed topologist's sine curve separates the sphere
 classification:
   areas:

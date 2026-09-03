@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.PR-1
-kind: exercise
+kind: problem
 title: "Estimates for the Riemann zeta function and its derivative near $\\Re(s)=1$"
 classification:
   areas:

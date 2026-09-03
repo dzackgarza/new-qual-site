@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-B4ZSQ
-kind: exercise
+kind: problem
 title: Finding harmonic conjugates
 classification:
   areas:

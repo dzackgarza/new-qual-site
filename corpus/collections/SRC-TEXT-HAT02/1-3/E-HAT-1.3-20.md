@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-20
-kind: exercise
+kind: problem
 title: "Nonnormal covering spaces of the Klein bottle"
 classification:
   areas:

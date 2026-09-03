@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6C2JI
-kind: exercise
+kind: problem
 title: Fundamental groups under the Seifert-van Kampen hypotheses with trivial inclusions
 classification:
   areas:

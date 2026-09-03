@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-6RQWT
-kind: exercise
+kind: problem
 title: Contractibility and the one-point homotopy type
 classification:
   areas:

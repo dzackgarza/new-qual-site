@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-TSKS3JTO
-kind: exercise
+kind: problem
 title: $x^{p^n}-x$ is the product of monic irreducibles in $\FF_p[x]$ of degree dividing
   $n$
 classification:

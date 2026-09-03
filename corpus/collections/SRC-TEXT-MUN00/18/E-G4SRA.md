@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-G4SRA
-kind: exercise
+kind: problem
 title: Products of continuous maps are continuous
 classification:
   areas:

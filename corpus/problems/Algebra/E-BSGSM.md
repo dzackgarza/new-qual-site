@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BSGSM
-kind: exercise
+kind: problem
 title: Normal subgroups are unions of conjugacy classes
 classification:
   areas:

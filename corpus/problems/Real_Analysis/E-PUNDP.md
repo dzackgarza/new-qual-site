@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PUNDP
-kind: exercise
+kind: problem
 title: Convergence of integrals does not imply an integrable dominant
 classification:
   areas:

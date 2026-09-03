@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-N1
-kind: exercise
+kind: problem
 title: Every UFD is integrally closed
 classification:
   areas:

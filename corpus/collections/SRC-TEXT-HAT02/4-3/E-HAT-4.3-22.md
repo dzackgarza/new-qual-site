@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.3-22
-kind: exercise
+kind: problem
 title: "Principal fibrations with sections split"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-27
-kind: exercise
+kind: problem
 title: "Image of $\\pi_2(X) \\to \\pi_2(X,A)$ is central"
 classification:
   areas:

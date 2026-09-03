@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-3M6WZ
-kind: exercise
+kind: problem
 title: Unique fractional linear transformation sending one circle to another with
   two prescribed values
 classification:

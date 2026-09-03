@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-S57IX
-kind: exercise
+kind: problem
 title: Products of quotient maps with locally compact Hausdorff factors
 classification:
   areas:

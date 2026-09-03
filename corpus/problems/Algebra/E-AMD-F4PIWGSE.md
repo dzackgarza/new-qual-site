@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-F4PIWGSE
-kind: exercise
+kind: problem
 title: Sylow subgroups of a group of order $240$, and subgroups of order $15$
 classification:
   areas:

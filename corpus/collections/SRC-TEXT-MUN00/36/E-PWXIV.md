@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PWXIV
-kind: exercise
+kind: problem
 title: Properties of eleven standard spaces
 classification:
   areas:

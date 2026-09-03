@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-21
-kind: exercise
+kind: problem
 title: "Torus with Möbius band attached"
 classification:
   areas:

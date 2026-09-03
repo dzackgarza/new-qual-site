@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-JN4QP
-kind: exercise
+kind: problem
 title: Continuous bijections from compact spaces to Hausdorff spaces are homeomorphisms
 classification:
   areas:

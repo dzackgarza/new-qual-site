@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZGZYQ
-kind: exercise
+kind: problem
 title: $\sin(x)/x$ and $\cos(x)/x$
 classification:
   areas:

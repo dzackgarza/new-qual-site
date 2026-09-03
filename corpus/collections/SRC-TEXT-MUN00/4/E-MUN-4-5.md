@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-4-5
-kind: exercise
+kind: problem
 title: Closure properties of $\mathbb{Z}$ and $\mathbb{Z}_+$
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YFBH5
-kind: exercise
+kind: problem
 title: Analytic self-maps of the disc with a zero of order $k$ at $0$ and $|f|\to
   1$ at the boundary
 classification:

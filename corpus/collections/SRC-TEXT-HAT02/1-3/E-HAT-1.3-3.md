@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.3-3
-kind: exercise
+kind: problem
 title: "Compactness lifts through finite-fiber covering spaces"
 classification:
   areas:

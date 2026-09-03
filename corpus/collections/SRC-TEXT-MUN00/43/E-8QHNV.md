@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-8QHNV
-kind: exercise
+kind: problem
 title: Uniformly continuous maps extend to the closure
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZWNTH
-kind: exercise
+kind: problem
 title: Series convergence on the circle by summation by parts
 classification:
   areas:

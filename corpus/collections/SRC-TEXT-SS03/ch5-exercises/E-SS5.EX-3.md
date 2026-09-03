@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-3
-kind: exercise
+kind: problem
 title: "SS 5.3: The Jacobi theta function has order 2"
 classification:
   areas:

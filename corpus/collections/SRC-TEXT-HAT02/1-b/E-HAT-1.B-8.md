@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-8
-kind: exercise
+kind: problem
 title: "Finite graph products of finitely generated groups"
 classification:
   areas:

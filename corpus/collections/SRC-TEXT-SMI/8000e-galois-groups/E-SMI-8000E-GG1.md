@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-GG1
-kind: exercise
+kind: problem
 title: A field of four elements and nonsolvability by radicals in characteristic two
 classification:
   areas:

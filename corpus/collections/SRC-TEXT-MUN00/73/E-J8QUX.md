@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-J8QUX
-kind: exercise
+kind: problem
 title: The two-dimensional CW complex is metrizable
 classification:
   areas:

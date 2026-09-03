@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-6
-kind: exercise
+kind: problem
 title: "Relative Hurewicz implies absolute"
 classification:
   areas:

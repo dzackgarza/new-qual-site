@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BXDQY
-kind: exercise
+kind: problem
 title: Rudin 10.3
 classification:
   areas:

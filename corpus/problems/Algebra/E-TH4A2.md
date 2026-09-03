@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-TH4A2
-kind: exercise
+kind: problem
 title: Join of intermediate fields and $\mathrm{Aut}$ of a Galois extension
 classification:
   areas:

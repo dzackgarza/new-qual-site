@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CKXKK
-kind: exercise
+kind: problem
 title: G-delta subspaces of compact Hausdorff or complete metric spaces are Baire
 classification:
   areas:

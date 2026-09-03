@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-J3IO7
-kind: exercise
+kind: problem
 title: Compact versus sequentially compact spaces
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-4ZKQKRLH
-kind: exercise
+kind: problem
 title: A normal $p$-subgroup is contained in every Sylow $p$-subgroup
 classification:
   areas:

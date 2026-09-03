@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AUAOC
-kind: exercise
+kind: problem
 title: $S^n$ is not a strong deformation retract of $B^{n+1}$
 classification:
   areas:

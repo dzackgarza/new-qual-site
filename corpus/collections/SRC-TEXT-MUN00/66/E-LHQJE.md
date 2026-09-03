@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LHQJE
-kind: exercise
+kind: problem
 title: The winding number as a degree
 classification:
   areas:

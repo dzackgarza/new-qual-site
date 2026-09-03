@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-CLZ18
-kind: exercise
+kind: problem
 title: A cyclic subgroup of infinite index in the free group of rank two
 classification:
   areas:

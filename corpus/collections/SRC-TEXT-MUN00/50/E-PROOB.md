@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PROOB
-kind: exercise
+kind: problem
 title: Manifolds have dimension at most m
 classification:
   areas:

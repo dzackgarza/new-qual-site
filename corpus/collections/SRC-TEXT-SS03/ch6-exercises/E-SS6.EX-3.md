@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-3
-kind: exercise
+kind: problem
 title: "SS 6.3: Wallis's product and the Gamma duplication formula"
 classification:
   areas:

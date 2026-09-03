@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-FVXIT
-kind: exercise
+kind: problem
 title: Sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
 classification:
   areas:

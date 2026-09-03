@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS6.EX-12
-kind: exercise
+kind: problem
 title: "SS 6.12: Growth observations about the reciprocal Gamma function"
 classification:
   areas:

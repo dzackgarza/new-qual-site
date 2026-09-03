@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-NUJ7W
-kind: exercise
+kind: problem
 title: Nonzero nilpotent matrices are not diagonalizable
 classification:
   areas:

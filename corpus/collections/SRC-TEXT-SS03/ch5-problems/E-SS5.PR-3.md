@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.PR-3
-kind: exercise
+kind: problem
 title: Order of an entire function with coefficients $(n!)^{-\alpha}$
 classification:
   areas:

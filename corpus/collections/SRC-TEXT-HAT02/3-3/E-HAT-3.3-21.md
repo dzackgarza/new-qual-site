@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-21
-kind: exercise
+kind: problem
 title: "Compactly supported cohomology and one-point compactification"
 classification:
   areas:

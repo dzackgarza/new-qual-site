@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-OK0GG
-kind: exercise
+kind: problem
 title: Closure behavior under unions
 classification:
   areas:

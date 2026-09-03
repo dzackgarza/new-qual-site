@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-JF2
-kind: exercise
+kind: problem
 title: Characteristic roots lie in the minimal polynomial; primary subspaces
 classification:
   areas:

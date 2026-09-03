@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.1-9
-kind: exercise
+kind: problem
 title: Homology of $\Delta$-complex from $\Delta^n$ with all faces of same dimension identified
 classification:
   areas:

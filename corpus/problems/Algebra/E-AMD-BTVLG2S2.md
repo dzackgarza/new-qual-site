@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-BTVLG2S2
-kind: exercise
+kind: problem
 title: $|HK|=|H||K|/|H\cap K|$
 classification:
   areas:

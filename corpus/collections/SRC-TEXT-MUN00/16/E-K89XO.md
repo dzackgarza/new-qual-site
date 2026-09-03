@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-K89XO
-kind: exercise
+kind: problem
 title: Projections from a product are open maps
 classification:
   areas:

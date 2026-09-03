@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BEYZ5
-kind: exercise
+kind: problem
 title: Proving functions are harmonic using components of holomorphic functions
 classification:
   areas:

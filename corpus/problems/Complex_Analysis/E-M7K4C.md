@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-M7K4C
-kind: exercise
+kind: problem
 title: Cauchy formula and principal parts
 classification:
   areas:

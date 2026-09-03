@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-LVTFA
-kind: exercise
+kind: problem
 title: Homotopy equivalence is an equivalence relation
 classification:
   areas:

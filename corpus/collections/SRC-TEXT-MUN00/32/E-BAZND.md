@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-BAZND
-kind: exercise
+kind: problem
 title: Uncountable powers of the line are not normal
 classification:
   areas:

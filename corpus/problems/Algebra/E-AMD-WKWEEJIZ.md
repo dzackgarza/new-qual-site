@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-WKWEEJIZ
-kind: exercise
+kind: problem
 title: If $E/k$ and $F/k$ are Galois with $E\cap F=k$, then $EF/k$ is Galois with
   group $G(E/k)\times G(F/k)$
 classification:

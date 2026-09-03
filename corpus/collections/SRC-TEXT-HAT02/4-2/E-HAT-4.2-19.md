@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-19
-kind: exercise
+kind: problem
 title: "$\\pi_n(X^n)$ is free abelian for $K(\\pi,1)$'s"
 classification:
   areas:

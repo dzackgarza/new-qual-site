@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-EYNVK4T2
-kind: exercise
+kind: problem
 title: An $m$-cycle is odd iff $m$ is even
 classification:
   areas:

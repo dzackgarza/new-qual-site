@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.EX-1
-kind: exercise
+kind: problem
 title: "Vanishing Fourier transform forces f = 0 (uniqueness)"
 classification:
   areas:

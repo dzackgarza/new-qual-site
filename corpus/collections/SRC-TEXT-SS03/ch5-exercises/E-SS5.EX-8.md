@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS5.EX-8
-kind: exercise
+kind: problem
 title: "SS 5.8: A cosine product for sin z over z"
 classification:
   areas:

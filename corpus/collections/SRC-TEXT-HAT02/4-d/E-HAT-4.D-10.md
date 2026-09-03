@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.D-10
-kind: exercise
+kind: problem
 title: "Eigenvalues of quaternionic matrices"
 classification:
   areas:

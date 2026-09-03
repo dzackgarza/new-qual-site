@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.3-3
-kind: exercise
+kind: problem
 title: "Covering spaces of orientable manifolds"
 classification:
   areas:

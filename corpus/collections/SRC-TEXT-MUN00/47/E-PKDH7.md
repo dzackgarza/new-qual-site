@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PKDH7
-kind: exercise
+kind: problem
 title: Pointwise boundedness and equicontinuity of four collections
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HK-XY48
-kind: exercise
+kind: problem
 title: Inverse of a $4 \times 4$ upper-triangular matrix
 classification:
   areas:

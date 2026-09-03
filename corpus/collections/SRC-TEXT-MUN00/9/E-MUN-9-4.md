@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-9-4
-kind: exercise
+kind: problem
 title: Identifying implicit use of the axiom of choice
 classification:
   areas:

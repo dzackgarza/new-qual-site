@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-I26BF
-kind: exercise
+kind: problem
 title: Injective implies nonvanishing derivative
 classification:
   areas:

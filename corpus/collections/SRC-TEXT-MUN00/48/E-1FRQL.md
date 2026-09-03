@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-1FRQL
-kind: exercise
+kind: problem
 title: Thomae-type function continuous at each irrational
 classification:
   areas:

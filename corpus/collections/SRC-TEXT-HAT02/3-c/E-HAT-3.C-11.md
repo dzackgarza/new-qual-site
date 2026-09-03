@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-11
-kind: exercise
+kind: problem
 title: "Pontryagin ring of the torus"
 classification:
   areas:

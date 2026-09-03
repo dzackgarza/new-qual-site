@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-WVNJ2
-kind: exercise
+kind: problem
 title: Orbit spaces of compact group actions inherit separation properties
 classification:
   areas:

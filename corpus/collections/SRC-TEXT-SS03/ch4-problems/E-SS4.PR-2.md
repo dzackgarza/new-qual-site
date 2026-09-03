@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS4.PR-2
-kind: exercise
+kind: problem
 title: "SS 4.PR-2: Solving a linear ODE with the Fourier transform"
 classification:
   areas:

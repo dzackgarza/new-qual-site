@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-X3SLC
-kind: exercise
+kind: problem
 title: A bounded metric giving the same topology
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-SY5
-kind: exercise
+kind: problem
 title: Solvability of groups of order pq and p^2 q
 classification:
   areas:

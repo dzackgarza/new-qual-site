@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS3.EX-19
-kind: exercise
+kind: problem
 title: "SS 3.19: The maximum principle for harmonic functions"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SMI-8000E-MT6
-kind: exercise
+kind: problem
 title: Characteristic polynomial, minimal polynomial, and Jordan form of a five-by-five matrix
 classification:
   areas:

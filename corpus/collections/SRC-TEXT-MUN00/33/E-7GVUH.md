@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-7GVUH
-kind: exercise
+kind: problem
 title: Level sets of the Urysohn function
 classification:
   areas:

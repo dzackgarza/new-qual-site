@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS8.EX-7
-kind: exercise
+kind: problem
 title: "Provide all the details in the proof of the formula for the solution of the Diri"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YYRZX
-kind: exercise
+kind: problem
 title: $e^{x/2} / 1+e^x,$ replication
 classification:
   areas:

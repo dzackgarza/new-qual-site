@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-MUN-2-1
-kind: exercise
+kind: problem
 title: Preimage and image under injective and surjective maps
 classification:
   areas:

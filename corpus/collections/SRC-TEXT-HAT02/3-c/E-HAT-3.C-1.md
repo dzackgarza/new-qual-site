@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-1
-kind: exercise
+kind: problem
 title: "H-space structure and strict identity"
 classification:
   areas:

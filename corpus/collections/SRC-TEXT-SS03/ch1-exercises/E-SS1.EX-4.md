@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-4
-kind: exercise
+kind: problem
 title: The complex numbers admit no ordered-field structure
 classification:
   areas:

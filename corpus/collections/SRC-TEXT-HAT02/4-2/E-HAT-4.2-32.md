@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-32
-kind: exercise
+kind: problem
 title: "Fiber bundles $S^k \\to S^m \\to S^n$"
 classification:
   areas:

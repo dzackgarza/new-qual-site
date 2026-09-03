@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AH7RC
-kind: exercise
+kind: problem
 title: Convergence in products via coordinate convergence
 classification:
   areas:

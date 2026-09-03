@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-AMD-5E2GZSH6
-kind: exercise
+kind: problem
 title: Burnside's theorem
 classification:
   areas:

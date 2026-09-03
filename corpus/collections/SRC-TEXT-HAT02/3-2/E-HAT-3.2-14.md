@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.2-14
-kind: exercise
+kind: problem
 title: "Surjection from $\\mathbb{CP}^\\infty$ to $\\mathbb{RP}^\\infty$ on cohomology"
 classification:
   areas:

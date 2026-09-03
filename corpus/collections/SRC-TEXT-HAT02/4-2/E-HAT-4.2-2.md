@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.2-2
-kind: exercise
+kind: problem
 title: "Action of $\\pi_1$ on $\\pi_n$ of $\\mathbb{RP}^n$"
 classification:
   areas:

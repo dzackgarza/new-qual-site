@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ECKDI
-kind: exercise
+kind: problem
 title: Normal forms for pasting schemes
 classification:
   areas:

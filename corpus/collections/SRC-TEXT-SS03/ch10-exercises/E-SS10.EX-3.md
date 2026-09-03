@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS10.EX-3
-kind: exercise
+kind: problem
 title: "More generally, consider the diference equation given by the initial values u<su"
 classification:
   areas:

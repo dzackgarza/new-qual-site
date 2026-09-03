@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-XBYYR
-kind: exercise
+kind: problem
 title: Schwarz reflection and holomorphic functions real on the unit circle
 classification:
   areas:

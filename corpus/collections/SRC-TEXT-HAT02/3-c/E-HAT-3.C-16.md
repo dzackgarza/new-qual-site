@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-3.C-16
-kind: exercise
+kind: problem
 title: "Classification of Hopf algebras over $\\mathbb{Z}$"
 classification:
   areas:

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-2.3-2
-kind: exercise
+kind: problem
 title: Candidate homology theory $\Pi_i \tilde{H}_i(X)/\oplus_i \tilde{H}_i(X)$ satisfies all axioms except wedge axiom
 classification:
   areas:

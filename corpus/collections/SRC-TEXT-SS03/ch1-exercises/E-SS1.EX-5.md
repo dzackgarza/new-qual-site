@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-SS1.EX-5
-kind: exercise
+kind: problem
 title: "A set Ω is said to be pathwise connected if any two points in Ω can be joined by"
 classification:
   areas:

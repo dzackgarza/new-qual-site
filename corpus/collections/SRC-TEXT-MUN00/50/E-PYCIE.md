@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-PYCIE
-kind: exercise
+kind: problem
 title: Closed subspaces of euclidean space have dimension at most N
 classification:
   areas:

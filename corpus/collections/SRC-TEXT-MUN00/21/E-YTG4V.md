@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YTG4V
-kind: exercise
+kind: problem
 title: Continuity of the field operations on R
 classification:
   areas:

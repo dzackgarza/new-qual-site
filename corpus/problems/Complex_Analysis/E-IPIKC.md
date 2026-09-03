@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-IPIKC
-kind: exercise
+kind: problem
 title: Entire functions with $|f(z)/z^{n}|$ bounded at infinity are polynomials of
   degree at most $n$
 classification:

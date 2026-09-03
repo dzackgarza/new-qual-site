@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-YAYQB
-kind: exercise
+kind: problem
 title: Disc minus a slit
 classification:
   areas:

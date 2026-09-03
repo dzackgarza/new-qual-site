@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-2HIKG
-kind: exercise
+kind: problem
 title: $x^? / 1+x^2$
 classification:
   areas:

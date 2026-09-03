@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-1.B-9
-kind: exercise
+kind: problem
 title: "Graph products of finite groups have free subgroups of finite index"
 classification:
   areas:

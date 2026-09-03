@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-ZCJZC
-kind: exercise
+kind: problem
 title: The union of conjugates of a proper subgroup is a proper subset
 classification:
   areas:

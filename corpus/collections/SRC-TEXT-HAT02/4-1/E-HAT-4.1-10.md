@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-HAT-4.1-10
-kind: exercise
+kind: problem
 title: "Quasi-circle has trivial homotopy but is not contractible"
 classification:
   areas:

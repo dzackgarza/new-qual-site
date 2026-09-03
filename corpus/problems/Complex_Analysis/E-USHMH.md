@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: E-USHMH
-kind: exercise
+kind: problem
 title: Product of sines $\sin(k\pi/n)$ via roots of unity
 classification:
   areas:
