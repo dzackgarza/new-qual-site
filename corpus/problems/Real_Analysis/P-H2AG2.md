@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: problem
-Show that the set \( \ts{ u_k(j) \da \delta_{ij} } \subseteq \ell^2(\ZZ) \) and forms an orthonormal system.
+Show that the set \( \ts{ u_k(j) \da \delta_{kj} } \subseteq \ell^2(\ZZ) \) forms an orthonormal system.
 :::
 ::: {.solution}
 <1>1. Each $u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$.

@@ -48,7 +48,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The statement now records that
   $f,g$ are entire, and the solution correctly bounds $h=f/g$, removes its
   singularities at zeros of $g$, and concludes $f=cg$ with $|c|\leq1$.
-- [ ] 6. P-H2AG2 — Kronecker-sequence index typo in statement
+- [x] 6. P-H2AG2 — Kronecker-sequence index typo in statement
+  Disposition 2026-09-04: confirmed and fixed. The statement now defines
+  $u_k(j)=\delta_{kj}$, matching the title and the solution, and the stray
+  conjunction in the sentence was removed.
 - [ ] 7. E-YAMX6 — Broken intermediate algebra in the keyhole-contour residue step
 - [ ] 8. E-AMD-TSJ7AKE5 — Statement conflates the conjugate union with the conjugate count
 - [ ] 9. E-OUBBQ — Wrong difference-quotient factorization for `x^n`
