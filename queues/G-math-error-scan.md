@@ -81,7 +81,11 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The statement now excludes the
   pole $z=-1$, and the solution correctly conjugates the denominator before
   cross-multiplying, giving $2|z|^2-2=0$.
-- [ ] 13. E-AIQEU — Final answer `sec`/`csc` slip; pole-location formula wrong
+- [x] 13. E-AIQEU — Final answer `sec`/`csc` slip; pole-location formula wrong
+  Disposition 2026-09-04: confirmed, with additional corrupted contour algebra.
+  The card now uses the rectangle of height $\pi$, the correct poles
+  $(k+1/2)\pi i$, rigorous vertical-side estimates for $|\Re a|<1$, and the
+  residue at $i\pi/2$ to obtain $\pi\sec(\pi a/2)$.
 - [ ] 14. E-WNTXK — Wrong function composition in the Cayley argument
 - [ ] 15. E-P7SIB — `sin(4θ)` formula missing the factor 4 and a sign
 - [ ] 16. E-WAYFS — Residue of `csc(πz)` wrong
