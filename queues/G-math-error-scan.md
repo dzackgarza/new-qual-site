@@ -90,7 +90,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The bounded entire function is
   $T\circ f:\CC\to\DD$, where $T:\HH\to\DD$ is the Cayley transform; the old
   text wrote the ill-typed composition $f\circ T$.
-- [ ] 15. E-P7SIB — `sin(4θ)` formula missing the factor 4 and a sign
+- [x] 15. E-P7SIB — `sin(4θ)` formula missing the factor 4 and a sign
+  Disposition 2026-09-04: confirmed and fixed. The imaginary part of
+  $(\cos\theta+i\sin\theta)^4$ is now copied correctly as
+  $4\cos^3\theta\sin\theta-4\cos\theta\sin^3\theta$.
 - [ ] 16. E-WAYFS — Residue of `csc(πz)` wrong
 - [ ] 17. E-P3RLK — Solution proves the converse theorem, not the stated exercise
 - [ ] 18. E-ASWCD — flawed subtraction step in the proof of continuity from below for outer measure
@@ -115,7 +118,8 @@ Disposition order follows the finding numbers.
 - [ ] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ — 
 - [ ] 38. E-MCTII, misdirected conformal map for the Schwarz bound — 
 - [ ] 39. E-NIPUY, proves uniform continuity of the wrong function — 
-- [ ] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — 
+- [x] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — duplicate of finding
+  15; fixed there on 2026-09-04.
 - [ ] 41. E-PQ7NC, overclaimed image of the Joukowski map $z+1/z$ — 
 - [ ] 42. E-RGDJ7, factor-of-2 error in $\int_{S^1} 2\sinh(z)/z^n\,dz$ for even $n$ — 
 - [ ] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ — 

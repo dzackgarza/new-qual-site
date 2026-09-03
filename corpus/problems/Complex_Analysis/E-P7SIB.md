@@ -32,9 +32,8 @@ So
 \cos(4\theta) 
 &= \cos^4(\theta) - 6\cos^2(\theta)\sin^2(\theta) + \sin^4(\theta)\\
 \sin(4\theta)
-&= \cos^3(\theta)\sin(\theta) + \cos(\theta)\sin^3(\theta)
+&= 4\cos^3(\theta)\sin(\theta) - 4\cos(\theta)\sin^3(\theta)
 .\]
 
 
 :::
-
