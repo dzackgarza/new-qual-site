@@ -14,9 +14,12 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that if $f$ is constant on any closed disk $r\bar\DD$ for $r<1$, then $f$ is constant on $\DD$.
+Show that if $f\in\Hol(\DD)$ is constant on a closed disk $r\bar\DD$ for some $0<r<1$, then $f$ is constant on $\DD$.
 :::
 
 ::: {.solution}
-By MMP applied to $r\bar \DD$, since $f$ achieves its maximum on the interior $r\DD$, $f$ is necessarily constant.
+Let $c$ be the constant value of $f$ on $r\bar\DD$.
+Then the holomorphic function $f-c$ vanishes on the nonempty open set $r\DD$.
+Since $\DD$ is connected, the identity theorem gives $f-c\equiv0$ on $\DD$.
+Hence $f\equiv c$ on $\DD$.
 :::
