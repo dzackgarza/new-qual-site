@@ -1,9 +1,8 @@
 ---
 title: Minimal and characteristic polynomials
 order: 20
-problems:
-  topics:
-  - Minimal and Characteristic Polynomials
+topics:
+- Minimal and Characteristic Polynomials
 ---
 
 # Minimal and characteristic polynomials

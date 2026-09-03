@@ -1,10 +1,9 @@
 ---
 title: The transform
 order: 10
-problems:
-  topics:
-  - Fourier Transform
-  - Fourier Analysis
+topics:
+- Fourier Transform
+- Fourier Analysis
 ---
 
 # The transform

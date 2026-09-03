@@ -1,10 +1,9 @@
 ---
 title: Which inequality?
 order: 0
-problems:
-  topics:
-  - Lp Spaces
-  - Norms
+topics:
+- Lp Spaces
+- Norms
 ---
 
 # Which inequality?

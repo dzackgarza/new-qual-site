@@ -1,11 +1,10 @@
 ---
 title: Polynomial rings
 order: 30
-problems:
-  topics:
-  - Polynomials
-  - Noetherian Rings
-  - Localization
+topics:
+- Polynomials
+- Noetherian Rings
+- Localization
 ---
 
 # Polynomial rings

@@ -24,6 +24,11 @@ sections:
       cannot be defined continuously on a punctured plane, only on a slit one, and fixing
       a branch determines the jump recorded by a keyhole contour. Complex
       powers inherit the same ambiguity through the same definition.'
+    topics:
+      - Geometry
+      - Trigonometry
+      - Hyperbolic Functions
+      - Complex Logarithm
     items:
       - ref: FD-XUGN3
       - ref: FF-AGEQ4
@@ -39,12 +44,6 @@ sections:
       - ref: D-T6INB
       - ref: PR-MWUJS
       - ref: T-E76LX
-      - query:
-          topics:
-            - Geometry
-            - Trigonometry
-            - Hyperbolic Functions
-            - Complex Logarithm
   - slug: series-and-convergence
     title: Series and Convergence
     parent: complex-arithmetic-and-elementary-functions
@@ -57,6 +56,11 @@ sections:
       point by point. The standard examples realize the possible boundary behaviours.
       Abel's theorem then connects a
       boundary value back to the radial limit."
+    topics:
+      - Convergence Tests
+      - Series of Numbers
+      - Series of Functions
+      - Power Series
     items:
       - ref: PR-NQ64T
       - ref: PR-TOK44
@@ -71,12 +75,6 @@ sections:
       - ref: FE-VWNUI
       - ref: FE-LAN3V
       - ref: FE-EUOB2
-      - query:
-          topics:
-            - Convergence Tests
-            - Series of Numbers
-            - Series of Functions
-            - Power Series
   - slug: holomorphy-and-analyticity
     title: Holomorphy and Analyticity
     parent: series-and-convergence
@@ -86,6 +84,9 @@ sections:
       definition, analyticity, and recording the one direction that needs no integration:
       a convergent power series is smooth on its disc, so analytic implies holomorphic.
       The converse is proved in [Cauchy Theory](cauchy-theory.html).'
+    topics:
+      - Cauchy-Riemann
+      - Holomorphic Functions
     items:
       - ref: D-E7A5W
       - ref: PR-37QA5
@@ -96,10 +97,6 @@ sections:
       - ref: PR-K57J6
       - ref: D-V6UQJ
       - ref: PR-QNDSD
-      - query:
-          topics:
-            - Cauchy-Riemann
-            - Holomorphic Functions
   - slug: harmonic-functions
     title: Harmonic Functions
     parent: holomorphy-and-analyticity
@@ -114,6 +111,10 @@ sections:
       whose real part it is. The Dirichlet problem is the boundary-value question this
       makes it possible to ask, and it is where the subject touches partial differential
       equations rather than absorbing them.'
+    topics:
+      - Harmonic Functions
+      - PDEs
+      - Mean Value Property
     items:
       - ref: D-CFBSA
       - ref: PR-UWGI6
@@ -121,11 +122,6 @@ sections:
       - ref: PR-QW3ZK
       - ref: C-KOFDQ
       - ref: D-XR64P
-      - query:
-          topics:
-            - Harmonic Functions
-            - PDEs
-            - Mean Value Property
   - slug: cauchy-theory
     title: Cauchy Theory
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -139,6 +135,15 @@ sections:
       Reading the coefficient formula backwards gives the identity theorem, and Morera
       reverses the whole implication by promoting vanishing triangle integrals back
       to holomorphy."
+    topics:
+      - Liouville's Theorem
+      - Entire Functions
+      - Cauchy Estimates
+      - Identity Theorem
+      - Morera
+      - Maximum Modulus Principle
+      - Cauchy Integral Formula
+      - Cauchy Integral Theorem
     items:
       - ref: D-6DAXB
       - ref: T-2OVCI
@@ -150,16 +155,6 @@ sections:
       - ref: T-BYNL5
       - ref: T-SVF2W
       - ref: T-LHSMY
-      - query:
-          topics:
-            - Liouville's Theorem
-            - Entire Functions
-            - Cauchy Estimates
-            - Identity Theorem
-            - Morera
-            - Maximum Modulus Principle
-            - Cauchy Integral Formula
-            - Cauchy Integral Theorem
   - slug: zeros-and-singularities
     title: Zeros and Singularities
     parent: cauchy-theory
@@ -174,6 +169,14 @@ sections:
       is dense. Meromorphic means the only singularities are poles, which is the hypothesis
       used by [The Argument Principle](argument-principle.html) and [Residues and Contour
       Integration](residues.html)."
+    topics:
+      - Meromorphic Functions
+      - Singularities
+      - Removable Singularities
+      - Essential Singularities
+      - Casorati-Weierstrass
+      - Laurent Series
+      - Principal Parts
     items:
       - ref: PR-5A64G
       - ref: PR-EWOP5
@@ -186,15 +189,6 @@ sections:
       - ref: D-VKP6N
       - ref: T-EO65T
       - ref: D-7DFVJ
-      - query:
-          topics:
-            - Meromorphic Functions
-            - Singularities
-            - Removable Singularities
-            - Essential Singularities
-            - Casorati-Weierstrass
-            - Laurent Series
-            - Principal Parts
   - slug: argument-principle
     title: The Argument Principle
     parent: zeros-and-singularities
@@ -210,6 +204,13 @@ sections:
       maximize the modulus, and applying that to a reciprocal handles the minimum. Rouche
       is the most heavily exercised theorem in the subject's problem record, which
       is why its panel is the longest in the guide."
+    topics:
+      - Rouché
+      - Argument Principle
+      - Winding Number
+      - Open Mapping Theorem
+      - Zeros
+      - Polynomials
     items:
       - ref: D-IA5FS
       - ref: D-QEVVE
@@ -218,14 +219,6 @@ sections:
       - ref: T-5JNUU
       - ref: C-FRF33
       - ref: T-YLI6Y
-      - query:
-          topics:
-            - Rouché
-            - Argument Principle
-            - Winding Number
-            - Open Mapping Theorem
-            - Zeros
-            - Polynomials
   - slug: residues
     title: Residues and Contour Integration
     parent: argument-principle
@@ -241,6 +234,10 @@ sections:
       factor needs on a large semicircle. Indented arcs at a simple pole contribute
       a fraction of the residue proportional to the angle, and the residue at infinity
       closes off the count when all finite poles are enclosed."
+    topics:
+      - Residues
+      - Contour Integration
+      - Integrals
     items:
       - ref: T-VE5MW
       - ref: T-ESKLY
@@ -249,11 +246,6 @@ sections:
       - ref: T-ZO5UU
       - ref: T-SSNLT
       - ref: T-WFXQP
-      - query:
-          topics:
-            - Residues
-            - Contour Integration
-            - Integrals
   - slug: conformal-maps-and-the-disc
     title: Conformal Maps and the Disc
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -269,6 +261,12 @@ sections:
       the origin, removes the fixing hypothesis and pins down the automorphism group
       exactly. The exam record for this section is almost entirely explicit map-building
       between named regions, so its exercise panel is the one to read for technique.'
+    topics:
+      - Conformal Maps
+      - Fractional Linear Transformations
+      - Schwarz Lemma
+      - Blaschke Factors
+      - Biholomorphisms
     items:
       - ref: D-PCDNH
       - ref: C-FVT4V
@@ -280,13 +278,6 @@ sections:
       - ref: PR-ULJAJ
       - ref: T-DAETF
       - ref: T-W26VL
-      - query:
-          topics:
-            - Conformal Maps
-            - Fractional Linear Transformations
-            - Schwarz Lemma
-            - Blaschke Factors
-            - Biholomorphisms
   - slug: normal-families-and-omitted-values
     title: Normal Families and Omitted Values
     parent: conformal-maps-and-the-disc
@@ -302,6 +293,13 @@ sections:
       converge, which is the Riemann mapping theorem. The same normality criterion,
       applied to families omitting values, strengthens Casorati-Weierstrass from dense
       image to an image omitting at most one point."
+    topics:
+      - Normal Families
+      - Montel
+      - Picard
+      - Riemann Mapping Theorem
+      - Equicontinuity
+      - Uniform Convergence
     items:
       - ref: D-AIQG3
       - ref: C-TODSQ
@@ -317,14 +315,6 @@ sections:
       - ref: T-55MPA
       - ref: T-HWBWI
       - ref: T-DDOWW
-      - query:
-          topics:
-            - Normal Families
-            - Montel
-            - Picard
-            - Riemann Mapping Theorem
-            - Equicontinuity
-            - Uniform Convergence
   - slug: special-functions-and-factorization
     title: Special Functions and Factorization
     parent: normal-families-and-omitted-values
@@ -338,6 +328,11 @@ sections:
       evaluated in [Residues and Contour Integration](residues.html), and Gamma and zeta are the standard examples
       of meromorphic continuation past the half-plane where their integral and series
       converge.'
+    topics:
+      - Gamma Function
+      - Riemann Zeta
+      - Weierstrass Factorization
+      - Riemann Surfaces
     items:
       - ref: T-2WJ4U
       - ref: T-IEJFA
@@ -350,12 +345,6 @@ sections:
       - ref: T-BBQLQ
       - ref: T-ZAEWG
       - ref: C-BKYF7
-      - query:
-          topics:
-            - Gamma Function
-            - Riemann Zeta
-            - Weierstrass Factorization
-            - Riemann Surfaces
   - slug: problems-from-the-qualifying-exams
     title: Problems from the Qualifying Exams
     parent: GUIDE-COMPLEX-ANALYSIS
@@ -369,15 +358,14 @@ sections:
       condition the exam imposes. Expect repeats. A panel selects on topic, and a problem
       carrying several topics is drawn by every panel that names one of them, so problems
       already met above appear here again, which is what a revision pass is for.'
-    items:
-      - query:
-          topics:
-            - Entire Functions
-            - Liouville's Theorem
-            - Power Series
-            - Laurent Series
-            - Uniform Convergence
-            - Sequences of Functions
-            - Morera
-            - Counterexamples
-            - Uniform Continuity
+    topics:
+      - Entire Functions
+      - Liouville's Theorem
+      - Power Series
+      - Laurent Series
+      - Uniform Convergence
+      - Sequences of Functions
+      - Morera
+      - Counterexamples
+      - Uniform Continuity
+    items: []

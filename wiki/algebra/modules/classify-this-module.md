@@ -1,10 +1,9 @@
 ---
 title: Classify this module
 order: 0
-problems:
-  topics:
-  - Modules
-  - Module Theory
+topics:
+- Modules
+- Module Theory
 ---
 
 # Classify this module

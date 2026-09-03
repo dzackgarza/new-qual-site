@@ -1,6 +1,8 @@
 ---
 title: CW complexes
 order: 4
+topics:
+- CW Complexes
 ---
 
 # CW complexes

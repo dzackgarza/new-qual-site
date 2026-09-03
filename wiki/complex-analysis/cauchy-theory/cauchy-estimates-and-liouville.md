@@ -1,11 +1,10 @@
 ---
 title: Cauchy estimates and Liouville
 order: 30
-problems:
-  topics:
-  - Cauchy Estimates
-  - Growth Estimates
-  - Derivative Estimates
+topics:
+- Cauchy Estimates
+- Growth Estimates
+- Derivative Estimates
 ---
 
 # Cauchy estimates and Liouville

@@ -13,6 +13,14 @@ sections:
       terms to zero and the tails to vanish, the comparison, root, ratio, and condensation
       tests all decide convergence by bounding one tail against another, and the $p$-test
       fixes the scale against which those comparisons are made.'
+    topics:
+      - Sequences of Numbers
+      - Series of Numbers
+      - Limits
+      - Convergence of Numbers
+      - Convergence Tests
+      - Bernoulli
+      - Countability
     items:
       - ref: D-HOKQD
       - ref: PR-IGVTV
@@ -21,15 +29,6 @@ sections:
       - ref: PR-4EVYE
       - ref: PR-6OHTJ
       - ref: PR-OPSAC
-      - query:
-          topics:
-            - Sequences of Numbers
-            - Series of Numbers
-            - Limits
-            - Convergence of Numbers
-            - Convergence Tests
-            - Bernoulli
-            - Countability
   - slug: metric-spaces
     title: Metric Spaces, Compactness and Completeness
     parent: sequences-and-series-of-numbers
@@ -40,6 +39,15 @@ sections:
       needs $\mathbb R^n$: closed and bounded is not enough in $\mathbb Q$ or in $C([0,1])$.
       Completeness is the hypothesis in Baire''s theorem: in a complete metric space,
       every countable intersection of open dense sets is dense.'
+    topics:
+      - Metric Spaces
+      - Compactness
+      - Completeness
+      - Closure
+      - Connectedness
+      - Euclidean Spaces
+      - Cantor Set
+      - Density
     items:
       - ref: D-TVKFM
       - ref: D-G5N6I
@@ -49,16 +57,6 @@ sections:
       - ref: FD-BA2WU
       - ref: D-2MJRE
       - ref: T-7FJFK
-      - query:
-          topics:
-            - Metric Spaces
-            - Compactness
-            - Completeness
-            - Closure
-            - Connectedness
-            - Euclidean Spaces
-            - Cantor Set
-            - Density
   - slug: continuity
     title: Continuity
     parent: metric-spaces
@@ -69,6 +67,10 @@ sections:
       attained extrema and uniform continuity. The distinction between continuity and
       uniform continuity is where the exam problems live, so the section carries the
       standard witnesses that the two differ on a non-compact domain.'
+    topics:
+      - Continuity
+      - Uniform Continuity
+      - Fixed Points
     items:
       - ref: D-HHVPT
       - ref: T-RA-WORKSHOP-D4-3-1
@@ -77,11 +79,6 @@ sections:
       - ref: T-RA-WORKSHOP-D4-3-4
       - ref: T-RA-WORKSHOP-D4-3-5
       - ref: T-O4UD3
-      - query:
-          topics:
-            - Continuity
-            - Uniform Continuity
-            - Fixed Points
   - slug: differentiation
     title: Differentiation
     parent: continuity
@@ -93,6 +90,11 @@ sections:
       variation appears here because it is the class on which a derivative can still
       be integrated back, a point used in [Riemann-Stieltjes Integration](riemann-stieltjes-integration.html)
       and [Sequences and Series of Functions](sequences-and-series-of-functions.html).
+    topics:
+      - Differentiation
+      - Mean Value Theorem
+      - Variation
+      - Calculus
     items:
       - ref: T-RA-WORKSHOP-D5-4-1
       - ref: T-RA-WORKSHOP-D5-4-2
@@ -100,12 +102,6 @@ sections:
       - ref: T-RA-WORKSHOP-D5-4-3
       - ref: T-2R7PC
       - ref: PR-LTRLV
-      - query:
-          topics:
-            - Differentiation
-            - Mean Value Theorem
-            - Variation
-            - Calculus
   - slug: riemann-stieltjes-integration
     title: Riemann-Stieltjes Integration
     parent: differentiation
@@ -116,6 +112,8 @@ sections:
       mean value theorem then connect it back to the derivative. Lebesgue's criterion
       closes the section by naming exactly which bounded functions are Riemann integrable,
       which is the sentence the measure-theoretic half of the guide is built to prove.
+    topics:
+      - Riemann Integrability
     items:
       - ref: T-RA-WORKSHOP-D6-5-1
       - ref: T-RA-WORKSHOP-D6-5-2
@@ -123,9 +121,6 @@ sections:
       - ref: T-RA-WORKSHOP-D6-5-4
       - ref: T-RA-WORKSHOP-D6-5-5
       - ref: PR-TDH2A
-      - query:
-          topics:
-            - Riemann Integrability
   - slug: sequences-and-series-of-functions
     title: Sequences and Series of Functions
     parent: riemann-stieltjes-integration
@@ -139,6 +134,18 @@ sections:
       the other which are dense. The counterexamples are load-bearing here: the
       four standard modes of convergence are pairwise incomparable, and each failure
       has a standard witness.'
+    topics:
+      - Uniform Convergence
+      - Convergence of Functions
+      - Sequences of Functions
+      - Series of Functions
+      - Equicontinuity
+      - Arzelà-Ascoli
+      - Stone-Weierstrass
+      - Polynomials
+      - Trigonometry
+      - Roots of Unity
+      - Counterexamples
     items:
       - ref: D-RA-WORKSHOP-D7-CONVERGENCE
       - ref: T-RA-WORKSHOP-D7-6-1
@@ -153,19 +160,6 @@ sections:
       - ref: FT-JQSOK
       - ref: T-RA-WORKSHOP-D7-6-7
       - ref: T-3QNBQ
-      - query:
-          topics:
-            - Uniform Convergence
-            - Convergence of Functions
-            - Sequences of Functions
-            - Series of Functions
-            - Equicontinuity
-            - Arzelà-Ascoli
-            - Stone-Weierstrass
-            - Polynomials
-            - Trigonometry
-            - Roots of Unity
-            - Counterexamples
   - slug: measure-and-measurable-functions
     title: Measure and Measurable Functions
     parent: GUIDE-REAL-ANALYSIS
@@ -179,6 +173,13 @@ sections:
       Lusin bound how far measurable behaviour is from uniform and continuous behaviour,
       and Borel-Cantelli converts a convergent sum of measures into an almost-everywhere
       statement.'
+    topics:
+      - Measure Theory
+      - Borel-Cantelli
+      - Egorov
+      - Continuity of Measure
+      - Absolute Continuity
+      - Radon-Nikodym
     items:
       - ref: D-3XE77
       - ref: D-MDJII
@@ -190,14 +191,6 @@ sections:
       - ref: T-OTR5M
       - ref: T-XZE3E
       - ref: T-CGFCU
-      - query:
-          topics:
-            - Measure Theory
-            - Borel-Cantelli
-            - Egorov
-            - Continuity of Measure
-            - Absolute Continuity
-            - Radon-Nikodym
   - slug: the-lebesgue-integral
     title: The Lebesgue Integral
     parent: measure-and-measurable-functions
@@ -210,6 +203,13 @@ sections:
       under integrability and non-negativity respectively, and the distinction between
       those hypotheses is itself examined. Chebyshev's inequality and the vanishing
       of small tails are the two estimates that make the rest quantitative."
+    topics:
+      - Integrals
+      - Convergence of Integrals
+      - Fatou
+      - Fubini-Tonelli
+      - Small Tails
+      - Maximal Functions
     items:
       - ref: D-BF5L2
       - ref: D-R4VKE
@@ -221,14 +221,6 @@ sections:
       - ref: T-6PRW3
       - ref: T-4GPEF
       - ref: T-X7XZX
-      - query:
-          topics:
-            - Integrals
-            - Convergence of Integrals
-            - Fatou
-            - Fubini-Tonelli
-            - Small Tails
-            - Maximal Functions
   - slug: lp-spaces
     title: Lp Spaces and Convolution
     parent: the-lebesgue-integral
@@ -241,6 +233,15 @@ sections:
       identity is a family of convolvers converging to the identity that $L^1$ itself
       does not contain. Continuity of translation in $L^p$ is the lemma underneath most
       of these proofs.'
+    topics:
+      - Lp Spaces
+      - L¹
+      - L²
+      - L∞
+      - Norms
+      - Function Spaces
+      - Convolution
+      - Approximations to the Identity
     items:
       - ref: D-3PVRB
       - ref: D-MFDEJ
@@ -253,16 +254,6 @@ sections:
       - ref: PR-2C3SZ
       - ref: D-ARQFC
       - ref: T-HHFGB
-      - query:
-          topics:
-            - Lp Spaces
-            - L¹
-            - L²
-            - L∞
-            - Norms
-            - Function Spaces
-            - Convolution
-            - Approximations to the Identity
   - slug: hilbert-spaces-and-duality
     title: Hilbert Spaces and Duality
     parent: lp-spaces
@@ -276,6 +267,15 @@ sections:
       use them state their hypotheses in $L^p$ or $\ell^p$ terms. Weak convergence appears
       last: the unit ball is not norm-compact in infinite dimensions, and weak convergence
       is what replaces the missing subsequence.'
+    topics:
+      - Hilbert Spaces
+      - Inner Product Spaces
+      - Bases
+      - Riesz Representation
+      - Dual Spaces
+      - Functional Analysis
+      - Weak Convergence
+      - Open Mapping Theorem
     items:
       - ref: D-7QQUO
       - ref: D-4IXAO
@@ -293,16 +293,6 @@ sections:
       - ref: T-F2THV
       - ref: T-KQTPR
       - ref: T-TTLXS
-      - query:
-          topics:
-            - Hilbert Spaces
-            - Inner Product Spaces
-            - Bases
-            - Riesz Representation
-            - Dual Spaces
-            - Functional Analysis
-            - Weak Convergence
-            - Open Mapping Theorem
   - slug: fourier-analysis
     title: Fourier Analysis
     parent: hilbert-spaces-and-duality
@@ -314,6 +304,8 @@ sections:
       an identity for convolution. The inversion formula is stated where it holds, and
       the standard exercises ask for the transform of a Gaussian, which is its own eigenfunction,
       and for the failure cases where $\hat f$ leaves $L^1$.'
+    topics:
+      - Fourier Analysis
     items:
       - ref: D-5LZQ4
       - ref: PR-DY2B3
@@ -321,9 +313,6 @@ sections:
       - ref: PR-IGMH4
       - ref: T-DTXIA
       - ref: PR-CCDRN
-      - query:
-          topics:
-            - Fourier Analysis
   - slug: problems-from-the-joint-exams
     title: Problems from the Joint Analysis Exams
     parent: GUIDE-REAL-ANALYSIS
@@ -333,22 +322,21 @@ sections:
       integrals, Rouche, Hurwitz, and the Schwarz lemma. A reader preparing complex
       analysis should work them from the Complex Analysis guide instead, where the
       surrounding theory lives.'
-    items:
-      - query:
-          topics:
-            - Holomorphic Functions
-            - Entire Functions
-            - Meromorphic Functions
-            - Singularities
-            - Conformal Maps
-            - Biholomorphisms
-            - Fractional Linear Transformations
-            - Normal Families
-            - Harmonic Functions
-            - Residues
-            - Contour Integration
-            - Rouché
-            - Hurwitz
-            - Schwarz Lemma
-            - Argument Principle
-            - PDEs
+    topics:
+      - Holomorphic Functions
+      - Entire Functions
+      - Meromorphic Functions
+      - Singularities
+      - Conformal Maps
+      - Biholomorphisms
+      - Fractional Linear Transformations
+      - Normal Families
+      - Harmonic Functions
+      - Residues
+      - Contour Integration
+      - Rouché
+      - Hurwitz
+      - Schwarz Lemma
+      - Argument Principle
+      - PDEs
+    items: []

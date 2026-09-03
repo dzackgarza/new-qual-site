@@ -1,14 +1,13 @@
 ---
 title: Compute $\pi_1$
 order: 0
-problems:
-  topics:
-  - Fundamental Group
-  - Homotopy
-  - van Kampen
-  - Seifert-van Kampen Theorem
-  - Retracts
-  - Retractions
+topics:
+- Fundamental Group
+- Homotopy
+- van Kampen
+- Seifert-van Kampen Theorem
+- Retracts
+- Retractions
 
 ---
 

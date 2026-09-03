@@ -1,15 +1,14 @@
 ---
 title: The spectral theorem
 order: 60
-problems:
-  topics:
-  - Diagonalization
-  - Spectral Theorem
-  - Inner Product Spaces
-  - Bilinear Forms
-  - Quadratic Forms
-  - Dual Spaces
-  - Functional Analysis
+topics:
+- Diagonalization
+- Spectral Theorem
+- Inner Product Spaces
+- Bilinear Forms
+- Quadratic Forms
+- Dual Spaces
+- Functional Analysis
 ---
 
 # The spectral theorem

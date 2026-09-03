@@ -1741,13 +1741,11 @@ Landed in `7aba6b8a0`; `queues/11-design-issues.md` item 6 recorded the opposite
 
 What still needs code is one thing, and it is a new capability rather than a reorganization.
 
-A guide manifest can already name cards two ways.
-`- ref: D-P6XOT` names one card.
-`- query: {kind: problem, topics: [Zorn's Lemma], limit: 500, review: {mode: any}}` names a rule, and the build resolves it against the corpus every time it runs (`publication.py`, `PublicationQuery`). A wiki page has no such rule.
-It can only name cards one at a time, by writing `[[P-XXXXX]]`. That is why the 90 `Quals/` pages exist: someone typed out by hand which problems belong to Sylow theory, and the list goes stale whenever a card is added or reclassified.
-
-Giving a wiki page the same rule -- called the `problems:` query block throughout this section -- is what lets those 90 pages stop existing.
-It is written out under "The 90 pages that retype card data" below.
+This was subsequently simplified further.
+A guide section or wiki page now owns ordinary mathematical `topics:` metadata.
+The renderer turns that metadata into one prefilled link to the canonical `problems.html` browser; there is no guide `query:` item and no wiki `problems:` query block.
+Explicit card `ref:` / wikilinks remain the mechanism for statements that are actually part of the authored exposition.
+Subject landing pages link to their complete area-wide problem view automatically.
 
 #### What the machinery does not make hard
 
@@ -1798,6 +1796,11 @@ The TOC renames nearly every page, so a rename is never just a rename — the li
 This is authoring work created by an engineering choice, and it is unavoidable short of rewriting all 776 to piped form.
 
 #### Why "moving files around" describes the smallest part
+
+> Historical note: the discussion below records the pre-centralization design state.
+> The current schema has no guide `query:` item and no wiki `problems:` block.
+> Guide sections and topical wiki pages own `topics:` metadata; the renderer derives one link into `problems.html`, and subject roots derive an area-wide link.
+> Collection pages likewise delegate their ordered problem view to that browser.
 
 Complex analysis: 109 pages today, ~43 in the filed TOC. Of those 43 —
 
@@ -1931,22 +1934,22 @@ Every same-name pair in `wiki/` needs both pages read before anything is decided
 Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
 The `Quals/` folders are a third, hand-typed copy, and they drift.
 
-Replace them with a query in the page's own front matter, using the mechanism `publications/*.yaml` already runs through `publication.py`:
+The eventual replacement is ordinary page topic metadata, not a problem-list configuration object:
 
 ```yaml
 ---
 title: Sylow Theorems
 order: 40
-problems:
-  topics: [Sylow Theory, p-Groups]
+topics: [Sylow Theory, p-Groups]
 ---
 ```
 
-`emit.py` renders the matching problems at the foot of the page from the corpus index.
+`emit.py` renders one link to the centralized browser with those topics prefilled.
+The browser owns the matching rows, further filters, sampling, and printing.
 
-- [x] Add the `problems:` query block to `emit.py`. Done in `088386d79`. Two differences from the guide query, both forced by what a topic page is: every match renders, because a limit would drop problems the page claims to hold; and a card's kind does not narrow it, because `exercise` against `problem` records where a question was set, not what it asks.
-  The page is scoped to the subject it is filed under, and a query matching nothing stops the build.
-  First use is `wiki/Algebra/Groups/Sylow_Theorems.md`, which lists all 167 algebra problems on Sylow theory.
+- [x] Give topical pages metadata-backed problem discovery.
+  The intermediate `problems:` query implementation landed in `088386d79`; it was later superseded by page-level `topics:` plus the centralized `problems.html` browser.
+  No wiki or guide page now materializes the matching list itself.
 
 - [x] Replace the 90 `Quals/` pages and the source-archive pages with it.
   Done for all six subjects, and for the six source archives in `567504e71`. Every card each page named was checked reachable from a chapter page before deletion.

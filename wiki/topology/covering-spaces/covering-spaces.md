@@ -1,13 +1,12 @@
 ---
 order: 220
-problems:
-  topics:
-  - Covering Spaces
-  - Covering Transformations
-  - Universal Cover
-  - Group Actions
-  - Free Groups
-  - Free Products
+topics:
+- Covering Spaces
+- Covering Transformations
+- Universal Cover
+- Group Actions
+- Free Groups
+- Free Products
 ---
 
 # Covering Spaces

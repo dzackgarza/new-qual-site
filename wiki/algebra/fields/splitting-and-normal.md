@@ -1,10 +1,9 @@
 ---
 title: Splitting fields and normal extensions
 order: 20
-problems:
-  topics:
-  - Splitting Fields
-  - Field Theory
+topics:
+- Splitting Fields
+- Field Theory
 ---
 
 # Splitting fields and normal extensions

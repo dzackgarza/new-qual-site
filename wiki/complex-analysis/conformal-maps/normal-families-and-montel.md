@@ -1,11 +1,10 @@
 ---
 title: Normal families and Montel
 order: 40
-problems:
-  topics:
-  - Normal Families
-  - Montel
-  - Equicontinuity
+topics:
+- Normal Families
+- Montel
+- Equicontinuity
 
 ---
 

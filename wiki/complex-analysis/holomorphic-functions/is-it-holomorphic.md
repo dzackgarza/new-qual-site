@@ -1,9 +1,8 @@
 ---
 title: Is it holomorphic?
 order: 0
-problems:
-  topics:
-  - Holomorphic Functions
+topics:
+- Holomorphic Functions
 ---
 
 # Is it holomorphic?

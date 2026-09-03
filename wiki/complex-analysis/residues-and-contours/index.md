@@ -1,6 +1,9 @@
 ---
 title: Residues and contours
 order: 4
+topics:
+- Residues
+- Contour Integration
 ---
 
 # Residues and contours

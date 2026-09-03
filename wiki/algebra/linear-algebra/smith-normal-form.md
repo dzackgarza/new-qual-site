@@ -1,10 +1,9 @@
 ---
 title: Smith normal form
 order: 50
-problems:
-  topics:
-  - Smith Normal Form
-  - Modules over PIDs
+topics:
+- Smith Normal Form
+- Modules over PIDs
 ---
 
 # Smith normal form

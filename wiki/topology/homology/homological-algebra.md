@@ -1,9 +1,8 @@
 ---
 order: 298
-problems:
-  topics:
-  - Homological Algebra
-  - Exact Sequences
+topics:
+- Homological Algebra
+- Exact Sequences
 ---
 
 # Appendix: Homological Algebra

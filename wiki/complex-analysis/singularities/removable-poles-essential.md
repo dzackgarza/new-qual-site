@@ -1,12 +1,11 @@
 ---
 title: Removable singularities, poles, essential singularities
 order: 20
-problems:
-  topics:
-  - Removable Singularities
-  - Poles
-  - Essential Singularities
-  - Zeros and Poles
+topics:
+- Removable Singularities
+- Poles
+- Essential Singularities
+- Zeros and Poles
 ---
 
 # Removable singularities, poles, essential singularities

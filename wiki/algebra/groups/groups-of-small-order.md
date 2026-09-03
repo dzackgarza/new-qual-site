@@ -1,10 +1,9 @@
 ---
 title: Groups of small order
 order: 40
-problems:
-  topics:
-  - Classification
-  - Group Presentations
+topics:
+- Classification
+- Group Presentations
 ---
 
 # Groups of small order

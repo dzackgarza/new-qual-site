@@ -1,10 +1,9 @@
 ---
 title: Show $G$ is not simple
 order: 0
-problems:
-  topics:
-  - Simple Groups
-  - Sylow Theory
+topics:
+- Simple Groups
+- Sylow Theory
 ---
 
 # Show $G$ is not simple

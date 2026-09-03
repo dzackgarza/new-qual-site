@@ -1,10 +1,9 @@
 ---
 title: Free and projective modules
 order: 20
-problems:
-  topics:
-  - Free Modules
-  - Projective Modules
+topics:
+- Free Modules
+- Projective Modules
 ---
 
 # Free and projective modules

@@ -1,10 +1,9 @@
 ---
 title: Which kind of ring is this?
 order: 0
-problems:
-  topics:
-  - Rings
-  - Commutative Algebra
+topics:
+- Rings
+- Commutative Algebra
 ---
 
 # Which kind of ring is this?

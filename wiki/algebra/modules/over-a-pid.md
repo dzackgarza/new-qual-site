@@ -1,11 +1,10 @@
 ---
 title: Modules over a PID
 order: 10
-problems:
-  topics:
-  - Modules over PIDs
-  - Structure Theorem
-  - Torsion
+topics:
+- Modules over PIDs
+- Structure Theorem
+- Torsion
 ---
 
 # Modules over a PID

@@ -1,13 +1,12 @@
 ---
 order: 250
-problems:
-  topics:
-  - Surfaces
-  - Manifolds
-  - Classification of Surfaces
-  - Classification
-  - Orientation
-  - Knot Theory
+topics:
+- Surfaces
+- Manifolds
+- Classification of Surfaces
+- Classification
+- Orientation
+- Knot Theory
 ---
 
 # Surfaces and Manifolds

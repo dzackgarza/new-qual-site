@@ -1,11 +1,10 @@
 ---
 title: Domains and factorization
 order: 20
-problems:
-  topics:
-  - Integral Domains
-  - Factorization
-  - Euclidean Domains
+topics:
+- Integral Domains
+- Factorization
+- Euclidean Domains
 ---
 
 # Domains and factorization

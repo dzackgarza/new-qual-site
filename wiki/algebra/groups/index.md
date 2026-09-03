@@ -1,6 +1,9 @@
 ---
 title: Groups
 order: 1
+topics:
+- Groups
+- Group Theory
 ---
 
 # Groups

@@ -1,13 +1,12 @@
 ---
 title: Basics
 order: 10
-problems:
-  topics:
-  - Groups
-  - Group Theory
-  - Subgroups
-  - Normal Subgroups
-  - Homomorphisms
+topics:
+- Groups
+- Group Theory
+- Subgroups
+- Normal Subgroups
+- Homomorphisms
 ---
 
 # Basics

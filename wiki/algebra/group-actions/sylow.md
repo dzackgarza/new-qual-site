@@ -1,11 +1,10 @@
 ---
 title: Sylow theory
 order: 30
-problems:
-  topics:
-  - Sylow Theory
-  - Sylow Theorems
-  - p-Groups
+topics:
+- Sylow Theory
+- Sylow Theorems
+- p-Groups
 ---
 
 # Sylow theory

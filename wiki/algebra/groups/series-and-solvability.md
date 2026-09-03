@@ -1,10 +1,9 @@
 ---
 title: Series and solvability
 order: 50
-problems:
-  topics:
-  - Solvable Groups
-  - Nilpotent Groups
+topics:
+- Solvable Groups
+- Nilpotent Groups
 ---
 
 # Series and solvability

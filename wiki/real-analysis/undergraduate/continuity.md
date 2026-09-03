@@ -1,10 +1,9 @@
 ---
 order: 30
-problems:
-  topics:
-  - Continuity
-  - Uniform Continuity
-  - Fixed Points
+topics:
+- Continuity
+- Uniform Continuity
+- Fixed Points
 ---
 
 # Continuity

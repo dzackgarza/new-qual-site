@@ -1,11 +1,10 @@
 ---
 title: Orbit-stabilizer
 order: 10
-problems:
-  topics:
-  - Group Actions
-  - Orbit-Stabilizer
-  - Cosets and Lagrange
+topics:
+- Group Actions
+- Orbit-Stabilizer
+- Cosets and Lagrange
 ---
 
 # Orbit-stabilizer

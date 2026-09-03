@@ -1,6 +1,9 @@
 ---
 title: Integration
 order: 3
+topics:
+- Lebesgue Integration
+- Convergence of Integrals
 ---
 
 # Integration

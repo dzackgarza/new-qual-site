@@ -1,10 +1,9 @@
 ---
 title: Inequalities
 order: 9
-problems:
-  topics:
-  - Norms
-  - Bounded Operators
+topics:
+- Norms
+- Bounded Operators
 ---
 
 # Inequalities

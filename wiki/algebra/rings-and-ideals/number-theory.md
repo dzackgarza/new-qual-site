@@ -1,8 +1,7 @@
 ---
 order: 25
-problems:
-  topics:
-  - Number Theory
+topics:
+- Number Theory
 ---
 
 # Number Theory

@@ -1,9 +1,8 @@
 ---
 title: The statements
 order: 10
-problems:
-  topics:
-  - Measure Theory
+topics:
+- Measure Theory
 ---
 
 # The statements

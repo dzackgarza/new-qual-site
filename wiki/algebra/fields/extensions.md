@@ -1,10 +1,9 @@
 ---
 title: Field extensions
 order: 10
-problems:
-  topics:
-  - Field Extensions
-  - Fields
+topics:
+- Field Extensions
+- Fields
 ---
 
 # Field extensions

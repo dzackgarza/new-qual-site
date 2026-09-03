@@ -1,6 +1,9 @@
 ---
 title: Modules
 order: 4
+topics:
+- Modules
+- Module Theory
 ---
 
 # Modules

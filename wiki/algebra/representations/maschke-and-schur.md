@@ -1,12 +1,11 @@
 ---
 title: Maschke and Schur
 order: 10
-problems:
-  topics:
-  - Representation Theory
-  - Group Rings
-  - Convolution
-  - Function Spaces
+topics:
+- Representation Theory
+- Group Rings
+- Convolution
+- Function Spaces
 ---
 
 # Maschke and Schur

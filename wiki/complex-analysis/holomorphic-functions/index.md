@@ -1,6 +1,8 @@
 ---
 title: Holomorphic functions
 order: 1
+topics:
+- Holomorphic Functions
 ---
 
 # Holomorphic functions

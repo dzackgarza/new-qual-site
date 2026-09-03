@@ -1,11 +1,10 @@
 ---
 title: Commutative algebra
 order: 40
-problems:
-  topics:
-  - Local Rings
-  - Noetherian Rings
-  - Localization
+topics:
+- Local Rings
+- Noetherian Rings
+- Localization
 ---
 
 # Commutative algebra

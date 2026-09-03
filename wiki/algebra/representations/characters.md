@@ -1,9 +1,8 @@
 ---
 title: Characters
 order: 20
-problems:
-  topics:
-  - Character Theory
+topics:
+- Character Theory
 ---
 
 # Characters

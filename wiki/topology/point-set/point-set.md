@@ -1,17 +1,16 @@
 ---
 order: 100
-problems:
-  topics:
-  - Compactness
-  - Connectedness
-  - Separation Axioms
-  - Hausdorff Spaces
-  - Normal Spaces
-  - Urysohn Lemma
-  - Metrizability
-  - Paracompactness
-  - Local Finiteness
-  - Baire Spaces
+topics:
+- Compactness
+- Connectedness
+- Separation Axioms
+- Hausdorff Spaces
+- Normal Spaces
+- Urysohn Lemma
+- Metrizability
+- Paracompactness
+- Local Finiteness
+- Baire Spaces
 ---
 
 # Point-Set

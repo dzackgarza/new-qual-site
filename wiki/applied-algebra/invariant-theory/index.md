@@ -1,10 +1,9 @@
 ---
 title: Invariant theory
 order: 5
-problems:
-  topics:
-  - Invariant Theory
-  - Group Theory
+topics:
+- Invariant Theory
+- Group Theory
 ---
 
 # Invariant theory

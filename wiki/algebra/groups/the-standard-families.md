@@ -1,10 +1,9 @@
 ---
 title: The standard families
 order: 20
-problems:
-  topics:
-  - Cyclic Groups
-  - Permutations
+topics:
+- Cyclic Groups
+- Permutations
 ---
 
 # The standard families

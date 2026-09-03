@@ -1,10 +1,9 @@
 ---
 title: Counterexamples
 order: 8
-problems:
-  topics:
-  - Counterexamples
-  - Logic and Quantifiers
+topics:
+- Counterexamples
+- Logic and Quantifiers
 ---
 
 # Counterexamples

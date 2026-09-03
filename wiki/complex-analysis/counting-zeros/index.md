@@ -1,6 +1,10 @@
 ---
 title: Counting zeros
 order: 3
+topics:
+- Zeros
+- Argument Principle
+- Rouché
 ---
 
 # Counting zeros

@@ -17,25 +17,8 @@ class Strict(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
-class PublicationQuery(Strict):
-    # A guide is authored mathematics, not a projection of the card database.
-    # Queries exist only to hand a topic family to the canonical problem browser;
-    # reference material enters the guide by an explicit `ref:` chosen by the
-    # author and is transcluded where the exposition needs it. Sampling and
-    # runtime filters belong to the browser, so the manifest stores neither a
-    # build-time limit nor a source-appearance category such as “exercise”.
-    topics: list[str] = Field(min_length=1)
-
-
 class ReferenceItem(Strict):
     ref: str
-
-
-class QueryItem(Strict):
-    query: PublicationQuery
-
-
-PublicationItem = ReferenceItem | QueryItem
 
 
 class PublicationSection(Strict):
@@ -43,7 +26,8 @@ class PublicationSection(Strict):
     title: str = Field(min_length=1)
     parent: str = Field(min_length=1)
     lede: str = Field(min_length=1)
-    items: list[PublicationItem]
+    topics: list[str] = Field(default_factory=list)
+    items: list[ReferenceItem]
 
 
 class PublicationManifest(Strict):
@@ -56,17 +40,16 @@ class PublicationManifest(Strict):
 
     @property
     def area(self) -> str:
-        """The subject every query in this guide is scoped to.
+        """The subject every section in this guide is scoped to.
 
         A study guide's id names its subject -- `GUIDE-COMPLEX-ANALYSIS` is the
         complex-analysis guide -- so the scope is already recorded and does not
-        become a field a manifest author can forget. An optional `areas` key on
-        the query would default to unscoped, and unscoped is the defect: topic
-        terms are shared between subjects, so `integrals` carries 19
+        become a field a section author can forget. Topic terms are shared
+        between subjects, so `integrals` carries 19
         real-analysis problems as well as 7 complex-analysis ones.
 
-        The value is carried directly into each problem-browser deep link. The guide
-        does not resolve the query against the catalog at build time.
+        The value is carried directly into each problem-browser deep link. The
+        guide does not resolve its page topics against the catalog at build time.
         """
         return self.id.removeprefix("GUIDE-").lower()
 

@@ -1,11 +1,10 @@
 ---
 title: Representation theory
 order: 2
-problems:
-  topics:
-  - Representation Theory
-  - Character Theory
-  - Permutations
+topics:
+- Representation Theory
+- Character Theory
+- Permutations
 ---
 
 # Representation theory

@@ -15,6 +15,13 @@ sections:
       the equivalent forms, and open and closed maps isolate the one-sided condition
       that continuity alone does not supply. A homeomorphism is a continuous bijection
       with continuous inverse.'
+    topics:
+      - Point-Set Topology
+      - Closure
+      - Continuity
+      - Limits
+      - Bases
+      - Homeomorphisms
     items:
       - ref: D-XRHTV
       - ref: D-WKURJ
@@ -30,14 +37,6 @@ sections:
       - ref: D-9KQZT
       - ref: D-BCNUH
       - ref: D-KW52R
-      - query:
-          topics:
-            - Point-Set Topology
-            - Closure
-            - Continuity
-            - Limits
-            - Bases
-            - Homeomorphisms
   - slug: constructions-of-spaces
     title: Constructions of Spaces
     parent: spaces-and-continuous-maps
@@ -50,6 +49,10 @@ sections:
       is the quotient case that builds cell complexes and surfaces later, and the orbit
       space of a group action is the same construction with the identifications supplied
       by the group.
+    topics:
+      - Subspace Topology
+      - Product Topology
+      - Quotient Spaces
     items:
       - ref: D-LB2LS
       - ref: D-C5THN
@@ -58,11 +61,6 @@ sections:
       - ref: D-KWWVL
       - ref: D-HRU62
       - ref: D-O5NN7
-      - query:
-          topics:
-            - Subspace Topology
-            - Product Topology
-            - Quotient Spaces
   - slug: separation-and-countability
     title: Separation and Countability
     parent: spaces-and-continuous-maps
@@ -75,6 +73,11 @@ sections:
       through neighborhood bases at a point and second countability through a basis
       for the whole topology; separability asks the weaker question of a countable dense
       subset, stated in terms of the closure above."
+    topics:
+      - Hausdorff Spaces
+      - Separation Axioms
+      - Countability
+      - Density
     items:
       - ref: D-ZFRV4
       - ref: D-OM7TD
@@ -87,12 +90,6 @@ sections:
       - ref: D-23NTI
       - ref: D-X6LZD
       - ref: D-3O6QH
-      - query:
-          topics:
-            - Hausdorff Spaces
-            - Separation Axioms
-            - Countability
-            - Density
   - slug: metric-spaces
     title: Metric Spaces
     parent: separation-and-countability
@@ -104,6 +101,11 @@ sections:
       and total boundedness, which bounds how many balls of a fixed radius are needed.
       Their conjunction is exactly compactness for metric spaces. The
       Lebesgue number lemma is the technical bridge between the two readings.'
+    topics:
+      - Metric Spaces
+      - Completeness
+      - Euclidean Spaces
+      - Convergence
     items:
       - ref: D-B7CYY
       - ref: D-2GCTV
@@ -114,12 +116,6 @@ sections:
       - ref: T-4RLPQ
       - ref: D-SDMMS
       - ref: T-HGDAG
-      - query:
-          topics:
-            - Metric Spaces
-            - Completeness
-            - Euclidean Spaces
-            - Convergence
   - slug: compactness
     title: Compactness
     parent: separation-and-countability
@@ -132,6 +128,10 @@ sections:
       is what compactness does inside a product or a metric space, the tube lemma being
       the projection statement that makes products of compact spaces tractable, and
       completeness with total boundedness being the metric reformulation.'
+    topics:
+      - Compactness
+      - Tube Lemma
+      - Paracompactness
     items:
       - ref: D-AOJG3
       - ref: D-EILKJ
@@ -147,11 +147,6 @@ sections:
       - ref: T-G4GO4
       - ref: T-HH3YP
       - ref: T-7DICT
-      - query:
-          topics:
-            - Compactness
-            - Tube Lemma
-            - Paracompactness
   - slug: connectedness-and-homotopy
     title: Connectedness and Homotopy
     parent: spaces-and-continuous-maps
@@ -165,6 +160,11 @@ sections:
       for spaces that is strictly weaker than homeomorphism. Retracts and deformation
       retracts are the computable case, and a contractible space is one where the identity
       is nullhomotopic, so every map into it carries no information.'
+    topics:
+      - Connectedness
+      - Homotopy
+      - Retracts
+      - Counterexamples
     items:
       - ref: D-YO6NZ
       - ref: D-FAEYE
@@ -182,12 +182,6 @@ sections:
       - ref: D-6UHU7
       - ref: D-UH3L5
       - ref: T-TQ4J3
-      - query:
-          topics:
-            - Connectedness
-            - Homotopy
-            - Retracts
-            - Counterexamples
   - slug: the-fundamental-group
     title: The Fundamental Group
     parent: connectedness-and-homotopy
@@ -201,6 +195,10 @@ sections:
       path-connected sets into an amalgamated free product, so the group of a union
       is computed from the groups of the pieces and their intersection. The wedge is
       the case where the intersection is a point.
+    topics:
+      - Fundamental Group
+      - van Kampen
+      - Groups
     items:
       - ref: D-J6XOC
       - ref: D-YD6DH
@@ -213,11 +211,6 @@ sections:
       - ref: PR-3APOT
       - ref: PR-OO3DH
       - ref: D-EUX36
-      - query:
-          topics:
-            - Fundamental Group
-            - van Kampen
-            - Groups
   - slug: covering-spaces
     title: Covering Spaces
     parent: the-fundamental-group
@@ -232,6 +225,10 @@ sections:
       realizing the normalizer quotient and Galois covers the normal case. A free properly
       discontinuous action produces such covers directly, and the subgroups of free
       groups are the payoff.
+    topics:
+      - Covering Spaces
+      - Group Actions
+      - Conjugacy
     items:
       - ref: D-ANO2D
       - ref: D-EPQ54
@@ -248,11 +245,6 @@ sections:
       - ref: D-2PNEG
       - ref: T-O44GI
       - ref: C-ILVEB
-      - query:
-          topics:
-            - Covering Spaces
-            - Group Actions
-            - Conjugacy
   - slug: cell-complexes
     title: Cell Complexes
     parent: constructions-of-spaces
@@ -265,6 +257,9 @@ sections:
       information is lost by insisting maps respect the skeleta, and the product of
       two complexes has the cells the generating function predicts, which is what makes
       the homology of a product computable.'
+    topics:
+      - Cell Complexes
+      - Category Theory
     items:
       - ref: D-ZOU5G
       - ref: D-MMDM3
@@ -283,10 +278,6 @@ sections:
       - ref: T-I2X3M
       - ref: PR-QJZDT
       - ref: PR-FG4DK
-      - query:
-          topics:
-            - Cell Complexes
-            - Category Theory
   - slug: homology
     title: Homology
     parent: cell-complexes
@@ -299,6 +290,11 @@ sections:
       sets, the homological counterpart of van Kampen. Wedges split and the Kunneth
       formula handles products, so the homology of the standard spaces follows by induction
       on dimension.
+    topics:
+      - Homology
+      - Mayer-Vietoris
+      - Homological Algebra
+      - Modules
     items:
       - ref: D-6BUWA
       - ref: D-M3Y6X
@@ -317,12 +313,6 @@ sections:
       - ref: T-2W5WN
       - ref: D-KC4BS
       - ref: T-GL7E6
-      - query:
-          topics:
-            - Homology
-            - Mayer-Vietoris
-            - Homological Algebra
-            - Modules
   - slug: degree-and-fixed-points
     title: Degree and Fixed Points
     parent: homology
@@ -334,6 +324,9 @@ sections:
       the same: assume no fixed point, use the assumption to write down a homotopy to
       the antipodal map, and contradict the degree that homotopy would force. Brouwer,
       the hairy ball theorem and Borsuk-Ulam are the three standard conclusions.'
+    topics:
+      - Degree
+      - Fixed Points
     items:
       - ref: D-XC53X
       - ref: D-ZVY6X
@@ -342,10 +335,6 @@ sections:
       - ref: T-S2OLJ
       - ref: T-VQTR6
       - ref: T-WNOWY
-      - query:
-          topics:
-            - Degree
-            - Fixed Points
   - slug: surfaces
     title: Surfaces
     parent: homology
@@ -359,6 +348,10 @@ sections:
       nonorientable one. Inclusion-exclusion for $\chi$ over a cover and its multiplicativity
       under covering maps are what make most exam problems in this section one-line
       arguments.
+    topics:
+      - Surfaces
+      - Classification
+      - Euler Characteristic
     items:
       - ref: PR-JL5JP
       - ref: T-NBARV
@@ -372,11 +365,6 @@ sections:
       - ref: C-CT2NX
       - ref: PR-QV4U5
       - ref: PR-TU4G5
-      - query:
-          topics:
-            - Surfaces
-            - Classification
-            - Euler Characteristic
   - slug: manifolds-and-duality
     title: Manifolds and Duality
     parent: homology
@@ -390,6 +378,11 @@ sections:
       duality and the complement form is Alexander duality. In the middle dimension
       the pairing becomes the intersection form, symmetric or symplectic according to
       parity, which is the invariant that separates four-manifolds.
+    topics:
+      - Manifolds
+      - Orientation
+      - Cohomology
+      - Poincaré Duality
     items:
       - ref: D-UBWVX
       - ref: D-MN6QW
@@ -414,9 +407,3 @@ sections:
       - ref: D-5KDNB
       - ref: D-6POU4
       - ref: PR-3FB24
-      - query:
-          topics:
-            - Manifolds
-            - Orientation
-            - Cohomology
-            - Poincaré Duality

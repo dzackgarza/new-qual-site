@@ -1,6 +1,10 @@
 ---
 title: Rings and ideals
 order: 3
+topics:
+- Rings
+- Ideals
+- Commutative Algebra
 ---
 
 # Rings and ideals

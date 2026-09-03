@@ -1,11 +1,10 @@
 ---
 title: Exact sequences and tensor products
 order: 30
-problems:
-  topics:
-  - Exact Sequences
-  - Tensor Products
-  - Homological Algebra
+topics:
+- Exact Sequences
+- Tensor Products
+- Homological Algebra
 ---
 
 # Exact sequences and tensor products

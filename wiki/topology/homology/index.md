@@ -1,6 +1,9 @@
 ---
 title: Homology
 order: 5
+topics:
+- Homology
+- Cohomology
 ---
 
 # Homology

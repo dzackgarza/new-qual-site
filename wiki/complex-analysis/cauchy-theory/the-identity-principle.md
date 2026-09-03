@@ -1,10 +1,9 @@
 ---
 title: The identity principle
 order: 50
-problems:
-  topics:
-  - Identity Theorem
-  - Analytic Continuation
+topics:
+- Identity Theorem
+- Analytic Continuation
 ---
 
 # The identity principle

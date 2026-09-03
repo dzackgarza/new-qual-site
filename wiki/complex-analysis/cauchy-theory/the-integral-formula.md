@@ -1,9 +1,8 @@
 ---
 title: The integral formula
 order: 20
-problems:
-  topics:
-  - Cauchy Integral Formula
+topics:
+- Cauchy Integral Formula
 
 ---
 

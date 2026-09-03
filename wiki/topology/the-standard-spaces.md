@@ -1,16 +1,15 @@
 ---
 title: The standard spaces
 order: 8
-problems:
-  topics:
-  - Cell Complexes
-  - Surfaces
-  - Projective Spaces
-  - Spheres
-  - Suspension
-  - Suspensions
-  - Simply Connected
-  - Graphs
+topics:
+- Cell Complexes
+- Surfaces
+- Projective Spaces
+- Spheres
+- Suspension
+- Suspensions
+- Simply Connected
+- Graphs
 
 ---
 

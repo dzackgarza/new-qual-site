@@ -1,10 +1,9 @@
 ---
 title: The convergence theorems
 order: 20
-problems:
-  topics:
-  - Convergence of Integrals
-  - Convergence of Functions
+topics:
+- Convergence of Integrals
+- Convergence of Functions
 ---
 
 # The convergence theorems

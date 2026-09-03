@@ -1,14 +1,13 @@
 ---
 order: 20
 title: Sets and compactness
-problems:
-  topics:
-  - Compactness
-  - Metric Spaces
-  - Completeness
-  - Euclidean Spaces
-  - Countability
-  - Closure
+topics:
+- Compactness
+- Metric Spaces
+- Completeness
+- Euclidean Spaces
+- Countability
+- Closure
 ---
 
 # Sets and compactness

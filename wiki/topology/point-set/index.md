@@ -1,6 +1,8 @@
 ---
 title: Point-set topology
 order: 1
+topics:
+- Point-Set Topology
 ---
 
 # Point-set topology

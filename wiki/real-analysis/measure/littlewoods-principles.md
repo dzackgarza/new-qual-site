@@ -1,10 +1,9 @@
 ---
 title: Littlewood's three principles
 order: 20
-problems:
-  topics:
-  - Measure Theory
-  - Convergence of Functions
+topics:
+- Measure Theory
+- Convergence of Functions
 ---
 
 # Littlewood's three principles

@@ -1,9 +1,8 @@
 ---
 order: 60
-problems:
-  topics:
-  - Riemann Integrability
-  - Integrals
+topics:
+- Riemann Integrability
+- Integrals
 ---
 
 # Riemann Integrability

@@ -24,21 +24,20 @@ sections:
       supplies the square root and with it the polar factorisation $A = UH$, and the
       Jordan form is kept for the questions that are genuinely about a nilpotent part
       -- reading a form off a rank sequence, or watching it fail to be continuous.
-    items:
-      - query:
-          topics:
-            - Linear Algebra
-            - Inner Product Spaces
-            - Norms
-            - Hermitian Matrices
-            - Positive Definite Matrices
-            - Normal Operators
-            - Singular Values
-            - Diagonalization
-            - Jordan Canonical Form
-            - Minimal and Characteristic Polynomials
-            - Linear Transformations
-            - Multilinear Algebra
+    topics:
+      - Linear Algebra
+      - Inner Product Spaces
+      - Norms
+      - Hermitian Matrices
+      - Positive Definite Matrices
+      - Normal Operators
+      - Singular Values
+      - Diagonalization
+      - Jordan Canonical Form
+      - Minimal and Characteristic Polynomials
+      - Linear Transformations
+      - Multilinear Algebra
+    items: []
   - slug: representation-theory
     title: Representation Theory
     parent: matrix-analysis
@@ -56,18 +55,17 @@ sections:
       from very little, and the questions here exploit that. Induction and
       restriction move a module between a group and a subgroup, and Frobenius
       reciprocity is the statement that they are adjoint.
-    items:
-      - query:
-          topics:
-            - Representation Theory
-            - Character Theory
-            - Group Algebras
-            - Group Theory
-            - Group Actions
-            - p-Groups
-            - Abelian Groups
-            - Classification
-            - Modules
+    topics:
+      - Representation Theory
+      - Character Theory
+      - Group Algebras
+      - Group Theory
+      - Group Actions
+      - p-Groups
+      - Abelian Groups
+      - Classification
+      - Modules
+    items: []
   - slug: symmetric-functions
     title: Symmetric Functions and the Symmetric Group
     parent: representation-theory
@@ -83,16 +81,15 @@ sections:
       the Littlewood--Richardson rule is the tableau count that gives the
       coefficients. The enumeration problems at the end -- Pólya counting, generating
       functions -- are the same orbit-counting idea used without the module theory.
-    items:
-      - query:
-          topics:
-            - Symmetric Functions
-            - Tableaux
-            - Littlewood-Richardson Rule
-            - Permutations
-            - Combinatorics
-            - Generating Functions
-            - Pólya Enumeration
+    topics:
+      - Symmetric Functions
+      - Tableaux
+      - Littlewood-Richardson Rule
+      - Permutations
+      - Combinatorics
+      - Generating Functions
+      - Pólya Enumeration
+    items: []
   - slug: grobner-bases-and-varieties
     title: Gröbner Bases and Varieties
     parent: GUIDE-APPLIED-ALGEBRA
@@ -107,14 +104,13 @@ sections:
       radical membership is decided by the same machinery. A finite variety is
       exactly a finite-dimensional quotient, and the monomials outside the initial
       ideal are the basis that makes the dimension countable.
-    items:
-      - query:
-          topics:
-            - Gröbner Bases
-            - Ideals
-            - Commutative Algebra
-            - Integral Domains
-            - Polynomial Systems
+    topics:
+      - Gröbner Bases
+      - Ideals
+      - Commutative Algebra
+      - Integral Domains
+      - Polynomial Systems
+    items: []
   - slug: invariant-theory
     title: Invariant Theory
     parent: grobner-bases-and-varieties
@@ -128,7 +124,6 @@ sections:
       alone. Consequently two isomorphic abstract subgroups of
       $\mathrm{GL}_2(\mathbb{C})$ can have different Hilbert series: the series is an
       invariant of the representation, not of the abstract group.
-    items:
-      - query:
-          topics:
-            - Invariant Theory
+    topics:
+      - Invariant Theory
+    items: []

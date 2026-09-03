@@ -1,6 +1,9 @@
 ---
 title: Degree and fixed points
 order: 6
+topics:
+- Degree
+- Fixed Points
 ---
 
 # Degree and fixed points

@@ -1,13 +1,12 @@
 ---
 title: Homology theory and computations
 order: 230
-problems:
-  topics:
-  - Cohomology
-  - Cohomology Ring
-  - Cup Product
-  - Künneth Formula
-  - Poincaré Duality
+topics:
+- Cohomology
+- Cohomology Ring
+- Cup Product
+- Künneth Formula
+- Poincaré Duality
 
 ---
 

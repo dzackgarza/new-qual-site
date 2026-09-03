@@ -1,6 +1,9 @@
 ---
 title: Cauchy theory
 order: 2
+topics:
+- Cauchy's Theorem
+- Cauchy Integral Formula
 ---
 
 # Cauchy theory

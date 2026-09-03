@@ -1,12 +1,11 @@
 ---
 title: Which technique?
 order: 0
-problems:
-  topics:
-  - Integrals
-  - u-Substitution
-  - Integration by Parts
-  - Trigonometric Substitution
+topics:
+- Integrals
+- u-Substitution
+- Integration by Parts
+- Trigonometric Substitution
 ---
 
 # Which technique?

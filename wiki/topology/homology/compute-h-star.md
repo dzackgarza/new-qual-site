@@ -1,12 +1,11 @@
 ---
 title: Compute $H_*$
 order: 0
-problems:
-  topics:
-  - Homology
-  - Mayer-Vietoris
-  - Simplicial Homology
-  - Relative Homology
+topics:
+- Homology
+- Mayer-Vietoris
+- Simplicial Homology
+- Relative Homology
 
 ---
 

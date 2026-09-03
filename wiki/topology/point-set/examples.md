@@ -1,15 +1,14 @@
 ---
 order: 1
-problems:
-  topics:
-  - Metric Spaces
-  - Euclidean Spaces
-  - Continuity
-  - Continuous Functions
-  - Homeomorphisms
-  - Function Spaces
-  - Density
-  - Topological Groups
+topics:
+- Metric Spaces
+- Euclidean Spaces
+- Continuity
+- Continuous Functions
+- Homeomorphisms
+- Function Spaces
+- Density
+- Topological Groups
 ---
 
 # Examples

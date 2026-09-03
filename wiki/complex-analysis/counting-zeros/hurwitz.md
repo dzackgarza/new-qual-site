@@ -1,9 +1,8 @@
 ---
 title: Hurwitz's theorem
 order: 30
-problems:
-  topics:
-  - Hurwitz
+topics:
+- Hurwitz
 
 ---
 

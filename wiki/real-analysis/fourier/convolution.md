@@ -1,10 +1,9 @@
 ---
 title: Convolution
 order: 0
-problems:
-  topics:
-  - Convolution
-  - Approximations to the Identity
+topics:
+- Convolution
+- Approximations to the Identity
 ---
 
 # Convolution

@@ -1,10 +1,9 @@
 ---
 title: Polynomials over a field
 order: 0
-problems:
-  topics:
-  - Polynomials
-  - Irreducibility Criteria
+topics:
+- Polynomials
+- Irreducibility Criteria
 ---
 
 # Polynomials over a field

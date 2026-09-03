@@ -1,9 +1,8 @@
 ---
 title: The residue theorem
 order: 10
-problems:
-  topics:
-  - Residue Theorem
+topics:
+- Residue Theorem
 
 ---
 

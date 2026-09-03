@@ -1,10 +1,9 @@
 ---
 title: Rational canonical form
 order: 40
-problems:
-  topics:
-  - Rational Canonical Form
-  - Structure Theorem
+topics:
+- Rational Canonical Form
+- Structure Theorem
 ---
 
 # Rational canonical form

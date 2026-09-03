@@ -1,6 +1,8 @@
 ---
 title: Functional analysis
 order: 7
+topics:
+- Functional Analysis
 ---
 
 # Functional analysis

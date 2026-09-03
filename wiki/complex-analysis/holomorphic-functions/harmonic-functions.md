@@ -1,13 +1,12 @@
 ---
 title: Harmonic functions
 order: 40
-problems:
-  topics:
-  - Harmonic Functions
-  - Subharmonic Functions
-  - Mean Value Property
-  - Poisson Kernel
-  - Dirichlet Problem
+topics:
+- Harmonic Functions
+- Subharmonic Functions
+- Mean Value Property
+- Poisson Kernel
+- Dirichlet Problem
 
 ---
 

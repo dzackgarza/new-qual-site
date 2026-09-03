@@ -1,10 +1,9 @@
 ---
 title: Theorems that give a constant
 order: 0
-problems:
-  topics:
-  - Liouville's Theorem
-  - Entire Functions
+topics:
+- Liouville's Theorem
+- Entire Functions
 
 ---
 

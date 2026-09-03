@@ -1,13 +1,12 @@
 ---
 title: Determinants and eigenvalues
 order: 10
-problems:
-  topics:
-  - Determinants
-  - Eigenvalues and Eigenvectors
-  - Trace
-  - Vector Spaces
-  - Linear Transformations
+topics:
+- Determinants
+- Eigenvalues and Eigenvectors
+- Trace
+- Vector Spaces
+- Linear Transformations
 ---
 
 # Determinants and eigenvalues

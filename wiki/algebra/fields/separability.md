@@ -1,9 +1,8 @@
 ---
 title: Separability
 order: 30
-problems:
-  topics:
-  - Separability
+topics:
+- Separability
 ---
 
 # Separability

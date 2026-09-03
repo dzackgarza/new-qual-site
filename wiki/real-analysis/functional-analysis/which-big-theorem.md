@@ -1,10 +1,9 @@
 ---
 title: Which big theorem?
 order: 0
-problems:
-  topics:
-  - Functional Analysis
-  - Banach Spaces
+topics:
+- Functional Analysis
+- Banach Spaces
 ---
 
 # Which big theorem?

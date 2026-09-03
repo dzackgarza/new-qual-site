@@ -1,9 +1,8 @@
 ---
 title: Symmetric functions
 order: 3
-problems:
-  topics:
-  - Symmetric Functions
+topics:
+- Symmetric Functions
 ---
 
 # Symmetric functions

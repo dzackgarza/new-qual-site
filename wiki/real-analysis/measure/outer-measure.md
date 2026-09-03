@@ -1,10 +1,9 @@
 ---
 title: Outer measure and the construction
 order: 10
-problems:
-  topics:
-  - Measure Theory
-  - Continuity of Measure
+topics:
+- Measure Theory
+- Continuity of Measure
 ---
 
 # Outer measure and the construction

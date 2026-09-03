@@ -1,10 +1,9 @@
 ---
 title: Banach and Hilbert spaces
 order: 10
-problems:
-  topics:
-  - Hilbert Spaces
-  - Norms
+topics:
+- Hilbert Spaces
+- Norms
 ---
 
 # Banach and Hilbert spaces

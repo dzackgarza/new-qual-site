@@ -29,7 +29,7 @@ class DiagnosticCode(Enum):
     PUBLICATION_REFERENCE_MISSING = "publication-reference-missing"
     PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
     PAGE_MISSING_ORDER = "page-missing-order"
-    PAGE_PROBLEMS_QUERY_INVALID = "page-problems-query-invalid"
+    PAGE_TOPICS_INVALID = "page-topics-invalid"
     PAGE_SWALLOWED_LINE = "page-swallowed-line"
     PAGE_DIRECTORY_MISSING_INDEX = "page-directory-missing-index"
     ASSET_UNRESOLVED = "asset-unresolved"

@@ -1,13 +1,12 @@
 ---
 title: The spaces
 order: 10
-problems:
-  topics:
-  - Lp Spaces
-  - Density
-  - Dual Spaces  - L²
-  - L∞
-  - L2 Spaces
+topics:
+- Lp Spaces
+- Density
+- Dual Spaces  - L²
+- L∞
+- L2 Spaces
 
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: The class equation
 order: 20
-problems:
-  topics:
-  - Conjugacy
-  - Centralizers and Normalizers
-  - Center of Groups
+topics:
+- Conjugacy
+- Centralizers and Normalizers
+- Center of Groups
 ---
 
 # The class equation

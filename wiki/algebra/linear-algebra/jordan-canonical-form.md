@@ -1,9 +1,8 @@
 ---
 title: Jordan canonical form
 order: 30
-problems:
-  topics:
-  - Jordan Canonical Form
+topics:
+- Jordan Canonical Form
 ---
 
 # Jordan canonical form

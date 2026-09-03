@@ -1,10 +1,9 @@
 ---
 title: Find the canonical form
 order: 0
-problems:
-  topics:
-  - Linear Algebra
-  - Matrices
+topics:
+- Linear Algebra
+- Matrices
 ---
 
 # Find the canonical form

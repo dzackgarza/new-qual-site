@@ -344,7 +344,6 @@ sections:
       are all normal, to a prime ideal that is not maximal, to a module that is torsion-free
       and not free, and to a function that is continuous at a point and differentiable
       nowhere near it. Reading them together is the fastest revision the archive supports.'
-    items:
-      - query:
-          topics:
-            - Counterexamples
+    topics:
+      - Counterexamples
+    items: []

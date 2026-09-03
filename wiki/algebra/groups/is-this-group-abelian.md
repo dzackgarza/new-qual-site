@@ -1,10 +1,9 @@
 ---
 title: Is this group abelian?
 order: 0
-problems:
-  topics:
-  - Abelian Groups
-  - Classification
+topics:
+- Abelian Groups
+- Classification
 ---
 
 # Is this group abelian?

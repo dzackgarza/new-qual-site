@@ -1,6 +1,9 @@
 ---
 title: Galois theory
 order: 7
+topics:
+- Galois Theory
+- Field Theory
 ---
 
 # Galois theory

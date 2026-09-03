@@ -1,13 +1,12 @@
 ---
 title: How many zeros in this region?
 order: 0
-problems:
-  topics:
-  - Zeros
-  - Zeros of Holomorphic Functions
-  - Zeros of Polynomials
-  - Polynomial Roots
-  - Polynomials
+topics:
+- Zeros
+- Zeros of Holomorphic Functions
+- Zeros of Polynomials
+- Polynomial Roots
+- Polynomials
 ---
 
 # How many zeros in this region?

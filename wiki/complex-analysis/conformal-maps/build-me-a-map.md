@@ -1,12 +1,11 @@
 ---
 title: Build me a map
 order: 0
-problems:
-  topics:
-  - Conformal Maps
-  - Conformal Mappings
-  - Conformal Equivalence
-  - Geometry
+topics:
+- Conformal Maps
+- Conformal Mappings
+- Conformal Equivalence
+- Geometry
 ---
 
 # Build me a map

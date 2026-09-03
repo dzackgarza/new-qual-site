@@ -399,7 +399,7 @@ card that carries `provenance:`. A problem carries no provenance; where a
 problem comes from follows from backlinks — every collection whose
 `source.problems` lists it. Collection cards live in `corpus/collections/`.
 
-## One problem-query surface
+## One problem browser
 
 `problems.html` is the only reader-facing implementation that displays a
 metadata-selected family of problem rows. It owns filtering, source-scoped
@@ -407,9 +407,14 @@ ordering, random sampling, and print/PDF. Do not add a second problem-list or
 practice-set renderer to guides, wiki pages, collection pages, or another site
 route.
 
-- A guide/wiki practice query deep-links to `problems.html` with its authored
-  area/topics prefilled. It never resolves or counts the matching cards at
-  build time.
+- A guide section or topical wiki page owns ordinary `topics:` metadata. The
+  renderer automatically adds one `problems.html` link with the page's subject
+  area and topics prefilled. Do not add `query:` items to guide manifests or a
+  `problems:` query block to wiki front matter.
+- A subject wiki landing page represents the whole area, so it automatically
+  links to `problems.html?area=<subject>` even when it has no narrower topics.
+  Resources, workshop indexes, and other non-topical pages may omit `topics:`
+  and therefore get no automatic problem link.
 - A collection page keeps source identity, provenance, completion state, and
   links to any nested source collections, but does not enumerate its problems.
   It deep-links with `collection=SRC-...`. The browser reproduces the exact

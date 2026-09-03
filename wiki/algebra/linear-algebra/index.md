@@ -1,6 +1,8 @@
 ---
 title: Linear algebra
 order: 5
+topics:
+- Linear Algebra
 ---
 
 # Linear algebra

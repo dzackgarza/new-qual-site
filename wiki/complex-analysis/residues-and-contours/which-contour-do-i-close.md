@@ -1,9 +1,8 @@
 ---
 title: Which contour do I close?
 order: 0
-problems:
-  topics:
-  - Contour Integration
+topics:
+- Contour Integration
 ---
 
 # Which contour do I close?

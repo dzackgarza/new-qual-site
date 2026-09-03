@@ -1,9 +1,8 @@
 ---
 title: Finite fields
 order: 40
-problems:
-  topics:
-  - Finite Fields
+topics:
+- Finite Fields
 ---
 
 # Finite fields

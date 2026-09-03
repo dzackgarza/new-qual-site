@@ -1,11 +1,10 @@
 ---
 title: Cyclotomic and radical extensions
 order: 20
-problems:
-  topics:
-  - Roots of Unity
-  - Cyclic Groups
-  - Solvable Groups
+topics:
+- Roots of Unity
+- Cyclic Groups
+- Solvable Groups
 ---
 
 # Cyclotomic and radical extensions

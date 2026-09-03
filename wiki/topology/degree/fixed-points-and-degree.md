@@ -1,15 +1,14 @@
 ---
 order: 240
-problems:
-  topics:
-  - Degree
-  - Fixed Points
-  - Fixed Point Theorems
-  - Fixed Point Theory
-  - Borsuk-Ulam Theorem
-  - Antipodal Map
-  - Lefschetz Fixed Point Theorem
-  - Invariance of Domain
+topics:
+- Degree
+- Fixed Points
+- Fixed Point Theorems
+- Fixed Point Theory
+- Borsuk-Ulam Theorem
+- Antipodal Map
+- Lefschetz Fixed Point Theorem
+- Invariance of Domain
 ---
 
 # Fixed Points and Degree Theory

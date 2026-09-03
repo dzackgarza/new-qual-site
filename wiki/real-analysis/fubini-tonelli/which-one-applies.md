@@ -1,10 +1,9 @@
 ---
 title: Which one applies?
 order: 0
-problems:
-  topics:
-  - Fubini-Tonelli
-  - Repeated Integration
+topics:
+- Fubini-Tonelli
+- Repeated Integration
 ---
 
 # Which one applies?

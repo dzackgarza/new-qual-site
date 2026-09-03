@@ -1,10 +1,9 @@
 ---
 title: Worked examples
 order: 30
-problems:
-  topics:
-  - Factorization
-  - Polynomials
+topics:
+- Factorization
+- Polynomials
 ---
 
 # Worked examples

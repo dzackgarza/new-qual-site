@@ -1,9 +1,8 @@
 ---
 title: Rouché's theorem
 order: 20
-problems:
-  topics:
-  - Rouché
+topics:
+- Rouché
 
 ---
 

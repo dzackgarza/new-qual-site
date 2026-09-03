@@ -1,8 +1,7 @@
 ---
 title: Real integrals by residues
 order: 40
-problems:
-  topics: [Contour Integration]
+topics: [Contour Integration]
 ---
 
 # Real integrals by residues

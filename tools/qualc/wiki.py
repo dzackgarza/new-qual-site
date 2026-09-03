@@ -53,22 +53,6 @@ def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
     return Diagnostic(DiagnosticCode.READER_WARNING, str(path), warning)
 
 
-@dataclass(frozen=True)
-class ProblemsQuery:
-    """The practice family a page names, by topic rather than copied card ids.
-
-    A wiki page could only name cards by writing each id out, so the folders
-    that list the problems on a topic are a hand-typed copy of what the cards
-    already record, and they drift as soon as a card is added or reclassified.
-    Like a study-guide query, this becomes one deep link into the centralized
-    generator. The wiki owns the authored mathematical exposition and the topic
-    family; it does not materialize a second, non-filterable problem browser at
-    the foot of the page.
-    """
-
-    topics: tuple[str, ...]
-
-
 @dataclass
 class WikiPage:
     source_path: Path
@@ -78,7 +62,7 @@ class WikiPage:
     order: int
     blocks: list[pf.Block]
     search_text: str
-    problems: ProblemsQuery | None
+    topics: tuple[str, ...]
 
 
 # Obsidian anchors a block by putting `^<id>` on the line after it. Pandoc has
@@ -200,22 +184,30 @@ def _order(metadata: dict[str, object], path: Path) -> int | Diagnostic:
     return value
 
 
-def _problems(metadata: dict[str, object], path: Path) -> ProblemsQuery | None | Diagnostic:
-    """The `problems:` block, or nothing when the page does not claim any."""
-    if "problems" not in metadata:
-        return None
-    block = metadata["problems"]
+def _topics(metadata: dict[str, object], path: Path) -> tuple[str, ...] | Diagnostic:
+    """The mathematical topics this page owns.
+
+    Topic metadata describes the page itself. The renderer may use it to offer
+    related problems, but no query/display configuration belongs in the wiki
+    source.
+    """
     invalid = Diagnostic(
-        DiagnosticCode.PAGE_PROBLEMS_QUERY_INVALID,
+        DiagnosticCode.PAGE_TOPICS_INVALID,
         str(path),
-        "problems must be a mapping with a non-empty topics list of strings",
+        "topics must be a non-empty list of strings",
     )
-    if not isinstance(block, dict) or set(block) != {"topics"}:
-        return invalid
-    topics = block["topics"]
+    if "problems" in metadata:
+        return Diagnostic(
+            DiagnosticCode.PAGE_TOPICS_INVALID,
+            str(path),
+            "problems front matter is obsolete; classify the page with topics instead",
+        )
+    if "topics" not in metadata:
+        return ()
+    topics = metadata["topics"]
     if not isinstance(topics, list) or not topics or not all(isinstance(topic, str) and topic for topic in topics):
         return invalid
-    return ProblemsQuery(topics=tuple(cast(list[str], topics)))
+    return tuple(cast(list[str], topics))
 
 
 # `[[page]]: some words` reads to Markdown as a link reference definition --
@@ -309,9 +301,9 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             if isinstance(order, Diagnostic):
                 errors.append(order)
                 continue
-            problems = _problems(metadata, path)
-            if isinstance(problems, Diagnostic):
-                errors.append(problems)
+            topics = _topics(metadata, path)
+            if isinstance(topics, Diagnostic):
+                errors.append(topics)
                 continue
             parsed.append(
                 WikiPage(
@@ -322,7 +314,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                     order=order,
                     blocks=_without_first_title(document),
                     search_text=pf.stringify(document).strip(),
-                    problems=problems,
+                    topics=topics,
                 )
             )
     if restored:

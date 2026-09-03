@@ -1,9 +1,8 @@
 ---
 order: 35
-problems:
-  topics:
-  - Differentiation
-  - Mean Value Theorem
+topics:
+- Differentiation
+- Mean Value Theorem
 ---
 
 # Differentiability

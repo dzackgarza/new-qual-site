@@ -1,10 +1,9 @@
 ---
 title: Constructing the integral
 order: 10
-problems:
-  topics:
-  - Lebesgue Integration
-  - Measure Theory
+topics:
+- Lebesgue Integration
+- Measure Theory
 ---
 
 # Constructing the integral

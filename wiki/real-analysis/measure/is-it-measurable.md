@@ -1,10 +1,9 @@
 ---
 title: Is it measurable?
 order: 0
-problems:
-  topics:
-  - Measure Theory
-  - Measurable Functions
+topics:
+- Measure Theory
+- Measurable Functions
 ---
 
 # Is it measurable?
@@ -17,8 +16,11 @@ It is inherited, and the work is naming which closure property applies.
 A function is measurable if it is built from measurable pieces by any of:
 
 - composition with a continuous function on the outside;
+
 - pointwise limits, $\liminf$, $\limsup$, $\sup_n$, $\inf_n$ of a countable family;
+
 - sums, products, quotients with nonvanishing denominator;
+
 - restriction to a measurable set, and gluing countably many such.
 
 Continuous implies Borel measurable, monotone implies Borel measurable, and a.e. equality preserves Lebesgue measurability.

@@ -1,4 +1,4 @@
-"""How an authored study-guide practice query becomes a problem-browser deep link."""
+"""How authored guide-page topics become problem-browser deep links."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import yaml
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from pydantic import ValidationError
 from qualc.diagnostics import DiagnosticCode
-from qualc.publication import PublicationManifest, QueryItem, load_publications
+from qualc.publication import PublicationManifest, load_publications
 from test_invariants import read_html
 
 PROBLEM = """---
@@ -33,7 +33,7 @@ review: draft
 
 
 def manifest(*topics: str) -> dict[str, object]:
-    """A one-section Topology guide whose only item is a practice query."""
+    """A one-section Topology guide whose page is classified by topics."""
     return {
         "schema": "qual/publication@2",
         "id": "GUIDE-TOPOLOGY",
@@ -46,13 +46,8 @@ def manifest(*topics: str) -> dict[str, object]:
                 "title": "Compactness",
                 "parent": "GUIDE-TOPOLOGY",
                 "lede": "Open covers, finite subcovers, and what compactness buys.",
-                "items": [
-                    {
-                        "query": {
-                            "topics": list(topics),
-                        }
-                    }
-                ],
+                "topics": list(topics),
+                "items": [],
             }
         ],
     }
@@ -81,16 +76,13 @@ def reference_manifest(section: str, ref: str = "PRB-CPT") -> dict[str, object]:
     }
 
 
-def test_checked_in_guide_sections_have_at_most_one_scoped_practice_target() -> None:
-    """A section has one problem-family escape hatch, not provenance buckets."""
+def test_checked_in_guide_sections_store_topics_on_the_page_not_as_query_items() -> None:
+    """Problem discovery follows section metadata; `items` contains only refs."""
     publications = Path(__file__).resolve().parents[1] / "publications"
 
     for guide in load_publications(publications):
         for section in guide.sections:
-            queries = [item.query for item in section.items if isinstance(item, QueryItem)]
-            assert len(queries) <= 1, f"{guide.id}/{section.slug} has {len(queries)} practice queries"
-            if queries:
-                assert queries[0].topics, f"{guide.id}/{section.slug} has an unscoped practice query"
+            assert all(item.ref for item in section.items)
 
 
 def test_semisimplicity_guide_resolves_its_named_terms() -> None:
@@ -103,8 +95,8 @@ def test_semisimplicity_guide_resolves_its_named_terms() -> None:
     assert "[semisimple](../../tag/D-CYAJI.html)" in section.lede
 
 
-def test_a_problem_query_is_only_a_deep_link_into_the_problem_browser(tmp_path: Path) -> None:
-    """The guide records the filter; only the central browser evaluates it."""
+def test_guide_page_topics_are_only_a_deep_link_into_the_problem_browser(tmp_path: Path) -> None:
+    """The guide classifies its page; only the central browser evaluates that classification."""
     work = fixture_repo(
         tmp_path,
         {
@@ -130,7 +122,7 @@ def test_a_problem_query_is_only_a_deep_link_into_the_problem_browser(tmp_path: 
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("div", **{"class": "panel problem-query-link"})
+    panels = page.root.find_all("div", **{"class": "panel problem-browse-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert len(links) == 1
@@ -139,7 +131,7 @@ def test_a_problem_query_is_only_a_deep_link_into_the_problem_browser(tmp_path: 
 
 
 def test_a_problem_browser_link_preserves_every_topic_in_the_authored_family(tmp_path: Path) -> None:
-    """A multi-topic guide query must not silently narrow to its first topic."""
+    """Multi-topic page metadata must not silently narrow to its first topic."""
     work = fixture_repo(
         tmp_path,
         {
@@ -173,7 +165,7 @@ def test_a_problem_browser_link_preserves_every_topic_in_the_authored_family(tmp
     assert result.returncode == 0, result.stderr
 
     page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
-    panels = page.root.find_all("div", **{"class": "panel problem-query-link"})
+    panels = page.root.find_all("div", **{"class": "panel problem-browse-link"})
     assert len(panels) == 1
     links = panels[0].find_all("a")
     assert links[0].attrs["href"] == "../../problems.html?area=topology&topic=compactness&topic=connectedness"
@@ -205,21 +197,15 @@ def test_the_problem_browser_owns_filtering_sampling_and_legacy_generate_redirec
     assert "location.replace(target.href)" in legacy
 
 
-@pytest.mark.parametrize("obsolete", [{"kind": "exercise"}, {"limit": 5}, {"review": {"mode": "any"}}])
-def test_publication_query_rejects_obsolete_execution_fields(obsolete: dict[str, object]) -> None:
-    """The manifest stores topics; browser runtime choices do not live here."""
+@pytest.mark.parametrize("obsolete", ["kind", "limit", "review", "query"])
+def test_publication_section_rejects_obsolete_query_fields(obsolete: str) -> None:
+    """The section stores topics directly; no query/runtime object remains."""
     guide = manifest("compactness")
     sections = guide["sections"]
     assert isinstance(sections, list)
     section = sections[0]
     assert isinstance(section, dict)
-    items = section["items"]
-    assert isinstance(items, list)
-    item = items[0]
-    assert isinstance(item, dict)
-    query = item["query"]
-    assert isinstance(query, dict)
-    query.update(obsolete)
+    section[obsolete] = {} if obsolete in {"review", "query"} else 5
 
     with pytest.raises(ValidationError) as exc_info:
         PublicationManifest.model_validate(guide)
@@ -259,13 +245,8 @@ def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None
     assert "qual-section" in blocks[0].attrs["class"].split()
 
 
-def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -> None:
-    """A guide section surfaces a card once, however many ways it reaches it.
-
-    The section names `PRB-CPT` as a `ref:` and also carries a topic query that
-    matches the same card. Each used to append its own Guide Appearance, so the
-    card page listed the one section twice.
-    """
+def test_a_section_topic_does_not_duplicate_its_explicit_card_appearance(tmp_path: Path) -> None:
+    """Topic metadata discovers problems but only an explicit ref is a guide appearance."""
     work = fixture_repo(
         tmp_path,
         {
@@ -290,14 +271,8 @@ def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -
                 "title": "Compactness",
                 "parent": "GUIDE-TOPOLOGY",
                 "lede": "Open covers and finite subcovers.",
-                "items": [
-                    {"ref": "PRB-CPT"},
-                    {
-                        "query": {
-                            "topics": ["compactness"],
-                        }
-                    },
-                ],
+                "topics": ["compactness"],
+                "items": [{"ref": "PRB-CPT"}],
             }
         ],
     }
@@ -312,8 +287,8 @@ def test_a_section_that_names_and_queries_a_card_lists_it_once(tmp_path: Path) -
     assert [li.text for li in groups[0].find_all("li")] == ["Compactness"]
 
 
-def test_a_query_match_is_not_a_guide_appearance(tmp_path: Path) -> None:
-    """A problem-browser query points outward; its result set is not displayed guide content."""
+def test_a_topic_match_is_not_a_guide_appearance(tmp_path: Path) -> None:
+    """Page topics point outward; matching cards are not displayed guide content."""
     work = fixture_repo(
         tmp_path,
         {

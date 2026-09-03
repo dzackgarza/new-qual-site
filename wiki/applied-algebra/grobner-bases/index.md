@@ -1,11 +1,10 @@
 ---
 title: Gröbner bases and varieties
 order: 4
-problems:
-  topics:
-  - Gröbner Bases
-  - Ideals
-  - Commutative Algebra
+topics:
+- Gröbner Bases
+- Ideals
+- Commutative Algebra
 ---
 
 # Gröbner bases and varieties

@@ -1,9 +1,8 @@
 ---
 title: Counterexamples
 order: 9
-problems:
-  topics:
-  - Counterexamples
+topics:
+- Counterexamples
 ---
 
 # Counterexamples

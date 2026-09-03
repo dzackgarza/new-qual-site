@@ -1,10 +1,9 @@
 ---
 title: Möbius transformations
 order: 10
-problems:
-  topics:
-  - Fractional Linear Transformations
-  - Mobius Transformations
+topics:
+- Fractional Linear Transformations
+- Mobius Transformations
 
 ---
 

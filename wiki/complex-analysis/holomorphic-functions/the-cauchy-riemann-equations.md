@@ -1,11 +1,10 @@
 ---
 title: The Cauchy-Riemann equations
 order: 20
-problems:
-  topics:
-  - Cauchy-Riemann
-  - Cauchy-Riemann Equations
-  - Partial Derivatives
+topics:
+- Cauchy-Riemann
+- Cauchy-Riemann Equations
+- Partial Derivatives
 ---
 
 # The Cauchy-Riemann equations

@@ -1,6 +1,9 @@
 ---
 title: Surfaces and manifolds
 order: 7
+topics:
+- Surfaces
+- Manifolds
 ---
 
 # Surfaces and manifolds

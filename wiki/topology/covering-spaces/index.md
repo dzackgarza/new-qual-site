@@ -1,6 +1,8 @@
 ---
 title: Covering spaces
 order: 3
+topics:
+- Covering Spaces
 ---
 
 # Covering spaces

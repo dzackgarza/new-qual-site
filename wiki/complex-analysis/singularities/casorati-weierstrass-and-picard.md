@@ -1,10 +1,9 @@
 ---
 title: Casorati-Weierstrass and Picard
 order: 40
-problems:
-  topics:
-  - Casorati-Weierstrass
-  - Picard
+topics:
+- Casorati-Weierstrass
+- Picard
 
 ---
 

@@ -1,10 +1,9 @@
 ---
 title: Compute this Galois group
 order: 0
-problems:
-  topics:
-  - Galois Theory
-  - Field Theory
+topics:
+- Galois Theory
+- Field Theory
 ---
 
 # Compute this Galois group

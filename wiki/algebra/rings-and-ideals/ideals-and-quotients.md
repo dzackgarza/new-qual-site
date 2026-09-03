@@ -1,13 +1,12 @@
 ---
 title: Ideals and quotients
 order: 10
-problems:
-  topics:
-  - Ideals
-  - Prime Ideals
-  - Maximal Ideals
-  - Nilpotence
-  - Algebras
+topics:
+- Ideals
+- Prime Ideals
+- Maximal Ideals
+- Nilpotence
+- Algebras
 ---
 
 # Ideals and quotients

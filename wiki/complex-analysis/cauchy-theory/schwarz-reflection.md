@@ -1,10 +1,9 @@
 ---
 title: Schwarz reflection
 order: 70
-problems:
-  topics:
-  - Schwarz Reflection
-  - Reflection Principle
+topics:
+- Schwarz Reflection
+- Reflection Principle
 ---
 
 # Schwarz reflection

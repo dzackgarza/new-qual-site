@@ -1,11 +1,10 @@
 ---
 title: Which convergence theorem?
 order: 0
-problems:
-  topics:
-  - Convergence Theorems
-  - Dominated Convergence
-  - Fatou
+topics:
+- Convergence Theorems
+- Dominated Convergence
+- Fatou
 ---
 
 # Which convergence theorem?

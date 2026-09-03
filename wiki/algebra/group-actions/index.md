@@ -1,6 +1,9 @@
 ---
 title: Group actions
 order: 2
+topics:
+- Group Actions
+- Sylow Theory
 ---
 
 # Group actions

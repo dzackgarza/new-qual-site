@@ -1,10 +1,9 @@
 ---
 title: The Galois correspondence
 order: 10
-problems:
-  topics:
-  - Isomorphism Theorems
-  - Irreducibility Criteria
+topics:
+- Isomorphism Theorems
+- Irreducibility Criteria
 ---
 
 # The Galois correspondence

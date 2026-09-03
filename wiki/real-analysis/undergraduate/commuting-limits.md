@@ -1,9 +1,8 @@
 ---
 order: 50
-problems:
-  topics:
-  - Uniform Convergence
-  - Convergence of Functions
+topics:
+- Uniform Convergence
+- Convergence of Functions
 ---
 
 # Commuting Limiting Operations

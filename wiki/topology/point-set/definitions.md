@@ -1,19 +1,18 @@
 ---
 order: 1
-problems:
-  topics:
-  - Point-Set Topology
-  - Topological Spaces
-  - Bases
-  - Closure
-  - Closed Sets
-  - Subspace Topology
-  - Product Topology
-  - Quotient Spaces
-  - Quotient Topology
-  - Order Topology
-  - Nets
-  - Countability
+topics:
+- Point-Set Topology
+- Topological Spaces
+- Bases
+- Closure
+- Closed Sets
+- Subspace Topology
+- Product Topology
+- Quotient Spaces
+- Quotient Topology
+- Order Topology
+- Nets
+- Countability
 ---
 
 # Definitions

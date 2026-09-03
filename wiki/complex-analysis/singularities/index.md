@@ -1,6 +1,8 @@
 ---
 title: Singularities
 order: 4
+topics:
+- Singularities
 ---
 
 # Singularities

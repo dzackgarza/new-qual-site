@@ -1,13 +1,12 @@
 ---
 order: 202
-problems:
-  topics:
-  - Homotopy Equivalence
-  - Homotopy
-  - Homotopy Type
-  - Higher Homotopy Groups
-  - Homotopy Groups
-  - Hurewicz Theorem
+topics:
+- Homotopy Equivalence
+- Homotopy
+- Homotopy Type
+- Higher Homotopy Groups
+- Homotopy Groups
+- Hurewicz Theorem
 
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: Operators and their norms
 order: 20
-problems:
-  topics:
-  - Bounded Operators
-  - Operator Theory
-  - Dual Spaces
+topics:
+- Bounded Operators
+- Operator Theory
+- Dual Spaces
 ---
 
 # Operators and their norms

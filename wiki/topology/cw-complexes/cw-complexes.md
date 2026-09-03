@@ -1,11 +1,10 @@
 ---
 order: 225
-problems:
-  topics:
-  - CW Complexes
-  - Cell Complexes
-  - Simplicial Complexes
-  - Euler Characteristic
+topics:
+- CW Complexes
+- Cell Complexes
+- Simplicial Complexes
+- Euler Characteristic
 ---
 
 #  CW and Simplicial Complexes

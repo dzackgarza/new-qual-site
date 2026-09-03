@@ -1,11 +1,10 @@
 ---
 title: Quotients, products, and automorphisms
 order: 30
-problems:
-  topics:
-  - Isomorphism Theorems
-  - Direct Products
-  - Semidirect Products
+topics:
+- Isomorphism Theorems
+- Direct Products
+- Semidirect Products
 ---
 
 # Quotients, products, and automorphisms

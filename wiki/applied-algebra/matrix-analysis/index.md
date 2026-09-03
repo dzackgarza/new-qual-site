@@ -1,14 +1,13 @@
 ---
 title: Matrix analysis
 order: 1
-problems:
-  topics:
-  - Hermitian Matrices
-  - Singular Values
-  - Positive Definite Matrices
-  - Normal Operators
-  - Norms
-  - Inner Product Spaces
+topics:
+- Hermitian Matrices
+- Singular Values
+- Positive Definite Matrices
+- Normal Operators
+- Norms
+- Inner Product Spaces
 ---
 
 # Matrix analysis

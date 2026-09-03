@@ -1,11 +1,10 @@
 ---
 title: The Riemann mapping theorem
 order: 50
-problems:
-  topics:
-  - Riemann Mapping Theorem
-  - Simply Connected
-  - Univalent Functions
+topics:
+- Riemann Mapping Theorem
+- Simply Connected
+- Univalent Functions
 
 ---
 

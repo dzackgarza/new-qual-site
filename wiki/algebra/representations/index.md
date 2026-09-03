@@ -1,6 +1,9 @@
 ---
 title: Representations
 order: 8
+topics:
+- Representation Theory
+- Character Theory
 ---
 
 # Representations

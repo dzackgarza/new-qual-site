@@ -15,6 +15,10 @@ sections:
       parts and returns as the decomposition of a module over a principal ideal domain;
       Fermat and Euler are the multiplicative-order statements that finite field theory
       will generalise."
+    topics:
+      - Zorn's Lemma
+      - Number Theory
+      - Chinese Remainder Theorem
     items:
       - ref: D-P6XOT
       - ref: FT-PUVIQ
@@ -29,11 +33,6 @@ sections:
       - ref: T-TTZ2Y
       - ref: FD-JI2RH
       - ref: FD-BWVRA
-      - query:
-          topics:
-            - Zorn's Lemma
-            - Number Theory
-            - Chinese Remainder Theorem
   - slug: groups-and-subgroups
     title: Groups and Subgroups
     parent: preliminaries
@@ -45,6 +44,14 @@ sections:
       of a quotient are the subgroups containing the kernel. Cyclic groups are the case
       where all of it is visible at once, and Cauchy is the first partial converse to
       Lagrange: a prime dividing the order really is realised by an element.'
+    topics:
+      - Groups
+      - Subgroups
+      - Cosets and Lagrange
+      - Cyclic Groups
+      - Normal Subgroups
+      - Homomorphisms
+      - Isomorphism Theorems
     items:
       - ref: D-IQ4OX
       - ref: PR-U5CHT
@@ -73,15 +80,6 @@ sections:
       - ref: T-6CQEB
       - ref: T-RLVA4
       - ref: PR-DJZLY
-      - query:
-          topics:
-            - Groups
-            - Subgroups
-            - Cosets and Lagrange
-            - Cyclic Groups
-            - Normal Subgroups
-            - Homomorphisms
-            - Isomorphism Theorems
   - slug: group-actions-and-counting
     title: Group Actions and Counting
     parent: groups-and-subgroups
@@ -93,6 +91,13 @@ sections:
       conjugacy class has size divisible by p, so the class equation forces $p\\mid |Z(G)|$; and
       Burnside's lemma counts orbits as the average number of fixed points, reducing
       colouring problems to finite fixed-point counts."
+    topics:
+      - Group Actions
+      - Orbit-Stabilizer
+      - Conjugacy
+      - Centralizers and Normalizers
+      - Class Equation
+      - Burnside's Lemma
     items:
       - ref: D-WYC7C
       - ref: D-3T6O2
@@ -116,14 +121,6 @@ sections:
       - ref: PR-PYYRK
       - ref: C-CM7ZS
       - ref: FF-OL75S
-      - query:
-          topics:
-            - Group Actions
-            - Orbit-Stabilizer
-            - Conjugacy
-            - Centralizers and Normalizers
-            - Class Equation
-            - Burnside's Lemma
   - slug: sylow-theory
     title: Sylow Theory
     parent: group-actions-and-counting
@@ -135,6 +132,9 @@ sections:
       exam, because those two conditions together usually leave a single possibility,
       and a unique Sylow subgroup is normal. Frattini's argument and the p-group results
       are how Sylow feeds back into the structure theory that follows.
+    topics:
+      - Sylow Theory
+      - p-Groups
     items:
       - ref: D-7TQ2M
       - ref: T-4RADG
@@ -152,10 +152,6 @@ sections:
       - ref: FD-OR3BW
       - ref: PR-IGLFV
       - ref: L-Q44MT
-      - query:
-          topics:
-            - Sylow Theory
-            - p-Groups
   - slug: permutation-groups
     title: Permutation Groups
     parent: group-actions-and-counting
@@ -166,6 +162,10 @@ sections:
       is the fact that later obstructs solvability by radicals, and the transitive subgroups
       of the small symmetric groups are the list a Galois group of a polynomial of that
       degree must come from.'
+    topics:
+      - Permutations
+      - Simple Groups
+      - Partitions
     items:
       - ref: D-6BTFJ
       - ref: D-BZ3KD
@@ -183,11 +183,6 @@ sections:
       - ref: T-EN5H4
       - ref: PR-2JG3F
       - ref: PR-434DX
-      - query:
-          topics:
-            - Permutations
-            - Simple Groups
-            - Partitions
   - slug: series-and-solvability
     title: Series, Solvability, and Nilpotence
     parent: group-actions-and-counting
@@ -199,6 +194,11 @@ sections:
       is strictly stronger and equivalent for a finite group to every Sylow subgroup
       being normal. The symmetric groups are solvable exactly up to degree four, which
       is where the classical formulas for the cubic and the quartic stop.
+    topics:
+      - Subgroup Series
+      - Solvable Groups
+      - Nilpotent Groups
+      - Commutators
     items:
       - ref: D-KM2DV
       - ref: D-FYX4I
@@ -220,12 +220,6 @@ sections:
       - ref: T-GM7EB
       - ref: T-OHEFT
       - ref: D-43MDF
-      - query:
-          topics:
-            - Subgroup Series
-            - Solvable Groups
-            - Nilpotent Groups
-            - Commutators
   - slug: products-and-classification
     title: Presentations, Products, and Classification
     parent: sylow-theory
@@ -236,6 +230,14 @@ sections:
       group. Sylow supplies the normal factor, the fundamental theorem of finite abelian
       groups supplies the abelian possibilities in both invariant-factor and elementary-divisor
       form, and a presentation is how the nonabelian answer gets written down.'
+    topics:
+      - Group Presentations
+      - Free Groups
+      - Direct Products
+      - Semidirect Products
+      - Automorphisms
+      - Abelian Groups
+      - Classification
     items:
       - ref: D-V6UJ7
       - ref: D-4R2Z5
@@ -260,15 +262,6 @@ sections:
       - ref: FF-MBUKG
       - ref: FF-JKCAM
       - ref: FF-VAKLJ
-      - query:
-          topics:
-            - Group Presentations
-            - Free Groups
-            - Direct Products
-            - Semidirect Products
-            - Automorphisms
-            - Abelian Groups
-            - Classification
   - slug: rings-and-ideals
     title: Rings and Ideals
     parent: preliminaries
@@ -278,6 +271,13 @@ sections:
       which makes maximal imply prime and shows the converse fails already in the integers
       at the zero ideal. [Preliminaries](preliminaries.html) supplies Zorn's lemma,
       which produces maximal ideals in the first place."
+    topics:
+      - Rings
+      - Ideals
+      - Prime Ideals
+      - Maximal Ideals
+      - Integral Domains
+      - Characteristic
     items:
       - ref: D-GURUB
       - ref: D-GXMDW
@@ -308,14 +308,6 @@ sections:
       - ref: PR-DDDXH
       - ref: FD-SNOTW
       - ref: T-GYVNQ
-      - query:
-          topics:
-            - Rings
-            - Ideals
-            - Prime Ideals
-            - Maximal Ideals
-            - Integral Domains
-            - Characteristic
   - slug: factorization-and-polynomials
     title: Factorization and Polynomials
     parent: rings-and-ideals
@@ -328,6 +320,13 @@ sections:
       questions become effective: Gauss's lemma moves irreducibility between the integers
       and the rationals, Eisenstein certifies it from a single prime, and reduction
       modulo a prime certifies it by finite computation."
+    topics:
+      - Factorization
+      - Principal Ideal Domains
+      - Euclidean Domains
+      - Polynomials
+      - Irreducibility Criteria
+      - Symmetric Functions
     items:
       - ref: D-AVBIP
       - ref: D-R4H6F
@@ -359,14 +358,6 @@ sections:
       - ref: FF-ED3CD
       - ref: FF-2AKVH
       - ref: FF-HAMDC
-      - query:
-          topics:
-            - Factorization
-            - Principal Ideal Domains
-            - Euclidean Domains
-            - Polynomials
-            - Irreducibility Criteria
-            - Symmetric Functions
   - slug: commutative-algebra
     title: Commutative Algebra
     parent: factorization-and-polynomials
@@ -379,6 +370,18 @@ sections:
       finitely generated algebra over a field. The Noetherian condition is what keeps
       all of this finite, and Hilbert's basis theorem is what says polynomial rings
       inherit it."
+    topics:
+      - Commutative Algebra
+      - Localization
+      - Local Rings
+      - Noetherian Rings
+      - Nilpotence
+      - Jacobson Radical
+      - Primary Decomposition
+      - Valuation Rings
+      - Integral Extensions
+      - Geometry
+      - Nakayama's Lemma
     items:
       - ref: D-OXIVT
       - ref: D-TGB4R
@@ -411,19 +414,6 @@ sections:
       - ref: FF-HJGPV
       - ref: FF-IBDAT
       - ref: D-DU4UQ
-      - query:
-          topics:
-            - Commutative Algebra
-            - Localization
-            - Local Rings
-            - Noetherian Rings
-            - Nilpotence
-            - Jacobson Radical
-            - Primary Decomposition
-            - Valuation Rings
-            - Integral Extensions
-            - Geometry
-            - Nakayama's Lemma
   - slug: modules
     title: Modules
     parent: rings-and-ideals
@@ -433,6 +423,14 @@ sections:
       Exactness is the language for comparing modules, a short exact sequence splits
       precisely when the quotient is projective, and the tensor product is the construction
       that turns bilinear data into linear data and fails to be exact on the left.'
+    topics:
+      - Modules
+      - Free Modules
+      - Projective Modules
+      - Torsion
+      - Exact Sequences
+      - Homological Algebra
+      - Tensor Products
     items:
       - ref: D-NQZUY
       - ref: PR-JBDUI
@@ -467,15 +465,6 @@ sections:
       - ref: D-4HEUB
       - ref: FD-2EUYX
       - ref: FD-BVM37
-      - query:
-          topics:
-            - Modules
-            - Free Modules
-            - Projective Modules
-            - Torsion
-            - Exact Sequences
-            - Homological Algebra
-            - Tensor Products
   - slug: structure-theorem
     title: The Structure Theorem over a PID
     parent: modules
@@ -487,6 +476,9 @@ sections:
       the polynomial ring in one variable it is the classification of linear operators,
       because a vector space with an operator is exactly a module over that ring --
       the bridge used again in [Canonical Forms](canonical-forms.html).
+    topics:
+      - Structure Theorem
+      - Smith Normal Form
     items:
       - ref: PR-UVUS6
       - ref: D-SS34F
@@ -497,10 +489,6 @@ sections:
       - ref: L-VDLNM
       - ref: L-Y5KNM
       - ref: L-W5S2W
-      - query:
-          topics:
-            - Structure Theorem
-            - Smith Normal Form
   - slug: fields-and-extensions
     title: Fields and Extensions
     parent: factorization-and-polynomials
@@ -513,6 +501,14 @@ sections:
       meaning no minimal polynomial has a repeated root, which the derivative test detects
       and which is automatic over a perfect field. Finite fields are the case where
       both hold for free and everything is determined by the order.'
+    topics:
+      - Field Extensions
+      - Fields
+      - Splitting Fields
+      - Separability
+      - Finite Fields
+      - Roots of Unity
+      - Transcendence
     items:
       - ref: FD-J3HIA
       - ref: FD-3V3ZW
@@ -564,15 +560,6 @@ sections:
       - ref: PR-JLDJ6
       - ref: FF-MUJDE
       - ref: FF-UACKH
-      - query:
-          topics:
-            - Field Extensions
-            - Fields
-            - Splitting Fields
-            - Separability
-            - Finite Fields
-            - Roots of Unity
-            - Transcendence
   - slug: galois-theory
     title: Galois Theory
     parent: fields-and-extensions
@@ -586,6 +573,8 @@ sections:
       is a transitive subgroup of the symmetric group on its roots, the discriminant
       decides whether it lands in the alternating group, and the resolvent decides the
       quartic.'
+    topics:
+      - Galois Theory
     items:
       - ref: D-5JYEI
       - ref: FD-4GFTY
@@ -610,9 +599,6 @@ sections:
       - ref: PR-PB6UE
       - ref: PR-XDWOP
       - ref: T-QX5QU
-      - query:
-          topics:
-            - Galois Theory
   - slug: linear-algebra
     title: Linear Algebra
     parent: modules
@@ -631,6 +617,23 @@ sections:
       dimensions -- Toeplitz operators, polar decomposition, and the spectral theorem
       on a Hilbert space -- because the oral exams asked them; they are collected here
       rather than dropped."
+    topics:
+      - Linear Algebra
+      - Vector Spaces
+      - Bases
+      - Matrices
+      - Matrix Groups
+      - Determinants
+      - Trace
+      - Rank and Nullity
+      - Dual Spaces
+      - Eigenvalues and Eigenvectors
+      - Diagonalization
+      - Inner Product Spaces
+      - Bilinear Forms
+      - Quadratic Forms
+      - Functional Analysis
+      - Counterexamples
     items:
       - ref: D-J5AAX
       - ref: D-J5AAX
@@ -668,24 +671,6 @@ sections:
       - ref: D-HGMOW
       - ref: D-23FX7
       - ref: FF-VKYM3
-      - query:
-          topics:
-            - Linear Algebra
-            - Vector Spaces
-            - Bases
-            - Matrices
-            - Matrix Groups
-            - Determinants
-            - Trace
-            - Rank and Nullity
-            - Dual Spaces
-            - Eigenvalues and Eigenvectors
-            - Diagonalization
-            - Inner Product Spaces
-            - Bilinear Forms
-            - Quadratic Forms
-            - Functional Analysis
-            - Counterexamples
   - slug: canonical-forms
     title: Canonical Forms
     parent: structure-theorem
@@ -700,6 +685,11 @@ sections:
       is how many there are. An operator is diagonalisable exactly when its minimal
       polynomial is a product of distinct linear factors, which is the separability
       condition of the Galois sections said about a matrix.'
+    topics:
+      - Canonical Forms
+      - Minimal and Characteristic Polynomials
+      - Jordan Canonical Form
+      - Rational Canonical Form
     items:
       - ref: D-GK5SF
       - ref: D-QFYAC
@@ -722,12 +712,6 @@ sections:
       - ref: PR-5A2W4
       - ref: PR-K6MMW
       - ref: PR-K6MMW
-      - query:
-          topics:
-            - Canonical Forms
-            - Minimal and Characteristic Polynomials
-            - Jordan Canonical Form
-            - Rational Canonical Form
   - slug: semisimplicity-and-representations
     title: Semisimplicity and Representations
     parent: modules
@@ -740,15 +724,14 @@ sections:
       rings; over an algebraically closed field, irreducibles have only scalar
       equivariant endomorphisms. Characters are class functions, and the number of
       irreducible characters equals the number of conjugacy classes.
+    topics:
+      - Semisimplicity
+      - Algebras
+      - Group Rings
+      - Representation Theory
+      - Character Theory
     items:
       - ref: T-ZOTWN
       - ref: T-PIO2B
       - ref: T-YHH3M
       - ref: D-CTAKB
-      - query:
-          topics:
-            - Semisimplicity
-            - Algebras
-            - Group Rings
-            - Representation Theory
-            - Character Theory

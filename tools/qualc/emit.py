@@ -41,8 +41,6 @@ from .pandoc_batch import (
 from .publication import (
     PublicationManifest,
     PublicationSection,
-    QueryItem,
-    ReferenceItem,
     load_publications,
 )
 from .static_site import (
@@ -954,6 +952,7 @@ def _wiki_blocks(
     page: WikiPage,
     incoming: list[WikiPage],
     cards: dict[str, sqlite3.Row],
+    areas: set[str],
 ) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
@@ -964,8 +963,12 @@ def _wiki_blocks(
     Incoming wikilinks are inverted from the resolved graph, not authored.
     """
     blocks = list(pf.Doc(*_transclude_wikilinks(page.blocks, cards)).walk(_rename).content)
-    if page.problems is not None:
-        blocks.append(_practice_link_block(slug(page.source_rel.parts[0]), page.problems.topics))
+    branch = slug(page.source_rel.parts[0]) if len(page.source_rel.parts) > 1 else ""
+    is_subject_root = page.source_rel.name == "index.md" and len(page.source_rel.parts) == 2 and branch in areas
+    if is_subject_root:
+        blocks.append(_problem_browse_link_block(branch, ()))
+    elif page.topics:
+        blocks.append(_problem_browse_link_block(branch, page.topics))
     html_block = _wiki_incoming_html(incoming)
     if html_block:
         blocks.append(pf.RawBlock(html_block, format="html"))
@@ -1738,7 +1741,7 @@ def _collection_summary(
                         url=_problem_browser_deep_link(collection=collection_id),
                     )
                 ),
-                classes=["panel", "problem-query-link"],
+                classes=["panel", "problem-browse-link"],
             )
         )
     return blocks
@@ -1863,9 +1866,9 @@ def _problem_browser_deep_link(
     topics: tuple[str, ...] | list[str] = (),
     collection: str = "",
 ) -> str:
-    """A site-root link into the one problem-query interface.
+    """A site-root link into the one problem browser.
 
-    Area/topics come from authored guide/wiki selection; collection comes from
+    Area/topics come from authored page classification; collection comes from
     a source page. Repeated topic parameters preserve the OR-family exactly.
     """
     params: list[tuple[str, str]] = []
@@ -1878,11 +1881,11 @@ def _problem_browser_deep_link(
     return f"problems.html{suffix}"
 
 
-def _practice_link_block(
+def _problem_browse_link_block(
     area: str,
     topics: tuple[str, ...] | list[str],
 ) -> pf.Block:
-    """One problem-discovery link shared by guides and wiki pages.
+    """One derived problem-discovery link shared by guides and wiki pages.
 
     This does not execute the query or compute a count. The central browser owns
     the live result set and lets the reader refine, sample, and print it there.
@@ -1900,7 +1903,7 @@ def _practice_link_block(
                 url=_problem_browser_deep_link(area=area, topics=topics),
             ),
         ),
-        classes=["panel", "problem-query-link"],
+        classes=["panel", "problem-browse-link"],
     )
 
 
@@ -1915,11 +1918,9 @@ def publication_section_page(
     ]
     counts: Counter[str] = Counter()
     for item in section.items:
-        match item:
-            case ReferenceItem(ref=card_id):
-                blocks.append(_transclude(_manifest_card(con, card_id), counts))
-            case QueryItem(query=query):
-                blocks.append(_practice_link_block(manifest.area, query.topics))
+        blocks.append(_transclude(_manifest_card(con, item.ref), counts))
+    if section.topics:
+        blocks.append(_problem_browse_link_block(manifest.area, section.topics))
     return {"title": section.title}, blocks
 
 
@@ -1951,24 +1952,14 @@ def card_guide_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    """Guide sections that explicitly reference this card.
-
-    A query is a link from the guide into the canonical problem browser. Its current
-    result set is not content displayed by the guide, so matching a query does
-    not make a card "appear" there. Only an authored `ref:` does.
-    """
+    """Guide sections that explicitly reference this card."""
     guide_appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
-            surfaced: list[str] = []
-            for item in section.items:
-                match item:
-                    case ReferenceItem(ref=card_id):
-                        _manifest_card(con, card_id)
-                        surfaced.append(card_id)
-                    case QueryItem():
-                        pass
+            surfaced = [item.ref for item in section.items]
+            for card_id in surfaced:
+                _manifest_card(con, card_id)
             for card_id in dict.fromkeys(surfaced):
                 guide_appearances[card_id].append(
                     Appearance(
@@ -2127,7 +2118,7 @@ def problem_browser_page(
     con: sqlite3.Connection,
     area_names: dict[str, str],
 ) -> Page:
-    """The one problem-query interface: browse, refine, sample, and print."""
+    """The one problem browser: browse, refine, sample, and print."""
     collection_names = {row["id"]: row["title"] for row in _rows(con, "select id, title from cards where kind='collection'")}
     appearing_source_kinds = {
         row["source_kind"]
@@ -2713,6 +2704,7 @@ Practice generation now lives in the [problem browser](problems.html).
                         page,
                         incoming_pages[page.route.as_posix()],
                         cards,
+                        set(area_names),
                     ),
                 ),
                 out / page.route.with_suffix(".qmd"),
