@@ -624,6 +624,42 @@ def _asset_source(raw_url: str, catalog: AssetCatalog) -> Path:
     raise ValueError(f"referenced asset is ambiguous: {raw_url} matches " + ", ".join(str(path) for path in matches))
 
 
+def _publish_asset(site_root: Path, source: Path, catalog: AssetCatalog) -> Path:
+    """Materialize one referenced asset under the built site's `assets/` tree."""
+    target = Path("assets") / source.relative_to(catalog.root)
+    destination = site_root / target
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if not destination.exists():
+        os.link(source, destination)
+    return target
+
+
+def _publish_metadata_assets(
+    site_root: Path,
+    meta: dict[str, object],
+    catalog: AssetCatalog,
+) -> None:
+    """Publish local resources linked from the page metadata band.
+
+    Header metadata is rendered after body-link rewriting, so its asset links
+    need the same publication step explicitly. External URLs are already
+    deployable and require no local copy.
+    """
+    source_links = meta.get("source_links")
+    if not isinstance(source_links, list):
+        return
+    for item in source_links:
+        if not isinstance(item, dict):
+            continue
+        href = item.get("href")
+        if not isinstance(href, str) or not href:
+            continue
+        parsed = urlsplit(href)
+        if parsed.scheme or parsed.netloc:
+            continue
+        _publish_asset(site_root, _asset_source(href, catalog), catalog)
+
+
 def _rewrite_body(
     site_root: Path,
     relative_path: Path,
@@ -635,11 +671,7 @@ def _rewrite_body(
 
     def asset_url(raw_url: str) -> tuple[Path, str]:
         source = _asset_source(raw_url, assets)
-        target = Path("assets") / source.relative_to(assets.root)
-        destination = site_root / target
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        if not destination.exists():
-            os.link(source, destination)
+        target = _publish_asset(site_root, source, assets)
         return target, _relative_url(relative_path, target)
 
     def replace(match: re.Match[str]) -> str:
@@ -870,6 +902,7 @@ def write_page(
 ) -> None:
     path = site_root / relative_path
     path.parent.mkdir(parents=True, exist_ok=True)
+    _publish_metadata_assets(site_root, meta, assets)
     rewritten = _rewrite_body(
         site_root,
         relative_path,

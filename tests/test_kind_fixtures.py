@@ -382,6 +382,9 @@ def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="PDF source"' in exam_html
     assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="Markdown extraction"' in exam_html
     assert ">assets/attachments/fixture-paper.pdf<" not in exam_html
+    published = work / "build" / "quarto" / "_site" / "assets" / "attachments"
+    assert (published / "fixture-paper.pdf").samefile(local_pdf)
+    assert (published / "extracted" / "fixture-paper.md").samefile(local_extraction)
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
         "https://www.math.uga.edu/past-qualifying-exams-1",

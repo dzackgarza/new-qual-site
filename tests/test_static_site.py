@@ -229,8 +229,8 @@ A compilation reprints whole exams. Those entries are collections, not problems.
 """
 
 
-def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) -> None:
-    """A card's page is under `exam/`, `source/` or `tag/`, and links agree.
+def test_every_internal_card_or_asset_link_resolves_in_the_built_site(tmp_path: Path) -> None:
+    """Published card and asset links must name files in the built site.
 
     `SRC-PACKET` lists a sibling collection among its contents, which is the
     shape the real compilations use. A link written for it as a problem points
@@ -250,15 +250,15 @@ def test_every_internal_link_resolves_to_a_page_the_build_wrote(tmp_path: Path) 
     site = work / "build" / "quarto" / "_site"
     assert (site / "source" / "SRC-PACKET.html").exists()
 
-    # Card links only. A fixture corpus has no wiki, so the navbar's wiki entry
-    # has nothing to resolve to and says nothing about how cards are routed.
     dead = []
     for page in sorted(site.rglob("*.html")):
         links = LinkCollector()
         links.feed(page.read_text())
-        for href in links.hrefs:
-            target = href.split("#")[0]
-            if not re.search(r"(?:^|/)(?:tag|exam|source)/[A-Z]", target):
+        for href in [*links.hrefs, *links.srcs]:
+            target = html.unescape(href).split("#")[0].split("?", 1)[0]
+            if not target or target.startswith(("http:", "https:", "mailto:", "data:", "//")):
+                continue
+            if not (re.search(r"(?:^|/)(?:tag|exam|source)/[A-Z]", target) or "/assets/" in f"/{target}" or target.startswith("assets/")):
                 continue
             if not (page.parent / target).resolve().exists():
                 dead.append(f"{page.relative_to(site)} -> {href}")
@@ -282,6 +282,11 @@ def test_the_not_found_page_resolves_its_links_from_the_site_root(
 
     page = (work / "build" / "quarto" / "_site" / "404.html").read_text()
     head = page.split("</head>", 1)[0]
+    assert "Page not found" in page
+    assert "The requested page could not be found." in page
+    assert "Return to the home page" in page
+    assert "This address names no page" not in page
+    assert "reads the whole corpus" not in page
     assert 'href="styles.css"' not in head
     assert 'src="app.js"' not in head
     assert head.index('createElement("base")') < head.index('root + "styles.css"')

@@ -14,7 +14,7 @@ Run it after `just build`:
 
 from __future__ import annotations
 
-import collections
+import argparse
 import pathlib
 import re
 import sys
@@ -40,12 +40,34 @@ def targets(page: pathlib.Path) -> list[pathlib.Path]:
     return out
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--links-only",
+        action="store_true",
+        help="fail only on broken internal links/assets; do not fail on orphan pages",
+    )
+    args = parser.parse_args(argv)
+
     pages = {p.resolve() for p in SITE.rglob("*.html")}
     # Nothing links the 404 page: the server serves it for a path that is not a
     # page, so it is unreachable by construction rather than by defect.
     roots = {(SITE / "404.html").resolve()}
-    broken: collections.Counter[str] = collections.Counter()
+    broken: list[tuple[str, str]] = []
+
+    # Link validity is a property of every published page, including pages that
+    # are currently unreachable from the home page. Reachability is a separate
+    # graph question below.
+    for page in sorted(pages):
+        for target in targets(page):
+            if not target.exists():
+                broken.append(
+                    (
+                        str(page.relative_to(SITE)),
+                        str(target.relative_to(SITE)) if target.is_relative_to(SITE) else str(target),
+                    )
+                )
+
     seen: set[pathlib.Path] = set()
     queue = [(SITE / "index.html").resolve()]
     while queue:
@@ -54,17 +76,16 @@ def main() -> int:
             continue
         seen.add(page)
         for target in targets(page):
-            if not target.exists():
-                broken[str(page.relative_to(SITE))] += 1
-            elif target.suffix == ".html" and target not in seen:
+            if target.exists() and target.suffix == ".html" and target not in seen:
                 queue.append(target)
     orphans = sorted(str(p.relative_to(SITE)) for p in pages - seen - roots)
     print(f"{len(pages)} pages, {len(seen & pages)} reachable from the home page")
-    for source, count in broken.most_common():
-        print(f"  {source}: {count} link(s) to a page that is not there")
-    for orphan in orphans:
-        print(f"  nothing links {orphan}")
-    return 1 if broken or orphans else 0
+    for source, target_name in broken:
+        print(f"  broken: {source} -> {target_name}")
+    if not args.links_only:
+        for orphan in orphans:
+            print(f"  nothing links {orphan}")
+    return 1 if broken or (orphans and not args.links_only) else 0
 
 
 if __name__ == "__main__":

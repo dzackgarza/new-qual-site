@@ -870,7 +870,7 @@ def _transclusion_head(card: sqlite3.Row) -> dict:
     block is unwrapped and its attribute never reaches the heading. Nested
     `title=` blocks keep theirs: those label which part or case they treat.
     """
-    href = html.escape(f"{CARD_ROUTE}{card['id']}.html", quote=True)
+    href = html.escape(f"{card['route']}/{card['id']}.html", quote=True)
     # The brackets are inside the anchor so the whole `(Tag …)` wraps as one
     # piece; outside it, a long name left the closing bracket alone on the
     # next line.
@@ -2662,14 +2662,8 @@ Practice generation now lives in the [problem browser](problems.html).
     write_page(
         site_root,
         Path("404.html"),
-        {"title": "No such page"},
-        "<p>This address names no page. It may name a card that was renamed, or a page that was never written.</p>"
-        '<p>Start again from <a href="index.html">the home page</a>, '
-        '<a href="problems.html">the problem browser</a>, '
-        '<a href="exams.html">the exams</a>, '
-        '<a href="guides.html">the guides</a>, or '
-        '<a href="wiki/index.html">the wiki</a>. '
-        "The search box in the header reads the whole corpus.</p>",
+        {"title": "Page not found"},
+        '<p>The requested page could not be found.</p><p><a href="index.html">Return to the home page</a> or use Search in the header.</p>',
         mathjax,
         link_targets,
         assets,
