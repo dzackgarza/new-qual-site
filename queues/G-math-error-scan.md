@@ -16,7 +16,7 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-01: confirmed by re-derivation and fixed on the card.
   Lines 30 and 32 now read $Z(G)$; line 28 and the $[G:Z(g)]$ factors keep the
   centralizer reading.
-- [ ] 2. T-BRWA7 — Five-lemma proof is garbled
+- [x] 2. T-BRWA7 — Five-lemma proof is garbled
   Investigation 2026-09-01: finding confirmed, and deeper than reported.
   (a) The proof body is ill-typed ($p \circ n$ with $n(x) \in B'$, an
   undefined $n'$, $p$ applied to $B'$-elements).
@@ -33,7 +33,9 @@ Disposition order follows the finding numbers.
   translate to the card's old letters: the source's $l, m, n, q$ name
   different arrows than the card's, and the notation dictionary is the
   failure mode that corrupted four drafting attempts.
-  Card left at committed state.
+  Disposition 2026-09-04: repaired with a complete typed diagram and direct
+  injectivity/surjectivity chases under the standard hypotheses: left outer
+  vertical epi, adjacent verticals isomorphisms, right outer vertical mono.
 - [ ] 3. FR-EDJWQ — Difference quotient set equal to the derivative
 - [ ] 4. E-J3QMJ — Constancy on a closed subdisk: wrong/inadequate justification
 - [ ] 5. E-BXDQY — Bounded comparison mis-written
