@@ -19,6 +19,7 @@ from qualc.pandoc_batch import PandocServer
 REPO = Path(__file__).resolve().parent.parent
 OUT = REPO / "queues" / "C-unsolved-cards.md"
 
+
 def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
     """The same rule `just sample-unsolved` draws from, over the parsed corpus.
 
