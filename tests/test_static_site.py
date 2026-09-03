@@ -453,6 +453,17 @@ def test_problem_filters_group_each_label_with_its_control(tmp_path: Path) -> No
     assert len(page.root.find_all("button", id="practice-print")) == 1
 
 
+def test_show_more_advances_to_the_newly_appended_results(tmp_path: Path) -> None:
+    """Appending rows above the button must not make a click look inert."""
+    work = fixture_repo(tmp_path)
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    app = (work / "build" / "quarto" / "_site" / "app.js").read_text()
+    assert 'moreButton.addEventListener("click", showMore);' in app
+    assert 'firstNewRow?.scrollIntoView({ block: "start", behavior: "instant" });' in app
+
+
 def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> None:
     """A subject is a wiki folder, and the branch's own title is its name.
 

@@ -171,6 +171,7 @@
       const shown = await Promise.all(page.map(dataOf));
       if (mine !== turn) return;
       const fragment = document.createDocumentFragment();
+      let firstNewRow;
       for (const data of shown) {
         const section = data.meta?.collection_section || "";
         if (section && section !== lastSection) {
@@ -182,13 +183,21 @@
           fragment.append(heading);
         }
         if (section) lastSection = section;
-        fragment.append(row(data));
+        const resultRow = row(data);
+        if (!firstNewRow) firstNewRow = resultRow;
+        fragment.append(resultRow);
       }
       resultList.append(fragment);
       drawn += page.length;
       moreButton.hidden = drawn >= held.length;
       moreButton.textContent = `Show more (${held.length - drawn} left)`;
       await typesetInto(resultList);
+      return firstNewRow;
+    };
+
+    const showMore = async () => {
+      const firstNewRow = await draw();
+      firstNewRow?.scrollIntoView({ block: "start", behavior: "instant" });
     };
 
     const matchesCurrentFacets = (data) => {
@@ -273,7 +282,7 @@
       await run();
     };
 
-    moreButton.addEventListener("click", draw);
+    moreButton.addEventListener("click", showMore);
     listingSearch.addEventListener("input", changed);
     for (const { select } of facets) select.addEventListener("change", changed);
 
