@@ -1260,7 +1260,27 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
 
 
-def problem_json(
+def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
+    facets = _page_rows(data.facets, card["id"])
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
+    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
+    areas = _page_terms(data, card["id"], "area")
+    topics = _page_terms(data, card["id"], "topic")
+    meta: dict[str, object] = {
+        "title": card["title"],
+        "subtitle": card["id"],
+        "area": ", ".join(a.replace("-", " ").title() for a in areas),
+        "review": card["review"],
+        "categories": sorted(set(topics + areas + institutions + years)),
+    }
+    if institutions:
+        meta["institutions"] = ", ".join(institutions)
+    if years:
+        meta["years"] = ", ".join(years)
+    return meta
+
+
+def asked_json(
     data: CardPageData,
     card: sqlite3.Row,
     jcache: dict,
@@ -1268,12 +1288,6 @@ def problem_json(
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    facets = _page_rows(data.facets, card["id"])
-    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
-    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
-    areas = _page_terms(data, card["id"], "area")
-    topics = _page_terms(data, card["id"], "topic")
-
     body = _statement_first(_dup(jcache[card["id"]]))
     body = _lamport_json_blocks(body)
     _rename_json(body)
@@ -1287,18 +1301,39 @@ def problem_json(
             wiki_mentions.get(card["id"], []),
         )
     )
-    meta: dict[str, object] = {
-        "title": card["title"],
-        "subtitle": card["id"],
-        "area": ", ".join(a.replace("-", " ").title() for a in areas),
-        "review": card["review"],
-        "categories": sorted(set(topics + areas + institutions + years)),
-    }
-    if institutions:
-        meta["institutions"] = ", ".join(institutions)
-    if years:
-        meta["years"] = ", ".join(years)
-    return meta, body
+    return _asked_meta(data, card), body
+
+
+def exercise_json(
+    data: CardPageData,
+    card: sqlite3.Row,
+    jcache: dict,
+    source_collections: dict[str, list[Appearance]],
+    guide_appearances: dict[str, list[Appearance]],
+    wiki_mentions: dict[str, list[WikiPage]],
+) -> tuple[dict, list]:
+    """Render a drillable exercise without changing its established body parse.
+
+    Exercises historically took the generic card path, so Lamport markers were
+    normalized before any statement wrapper existed. Keep that ordering: the
+    wrapper is navigation/generator structure, not a license to reinterpret an
+    exercise's authored blocks.
+    """
+    body = _dup(jcache[card["id"]])
+    body = _lamport_json_blocks(body)
+    body = _statement_first(body)
+    _rename_json(body)
+    body.extend(_prompts_json(card))
+    body.extend(
+        _relation_groups_json(
+            data,
+            card["id"],
+            source_collections,
+            guide_appearances,
+            wiki_mentions[card["id"]] if card["id"] in wiki_mentions else [],
+        )
+    )
+    return _asked_meta(data, card), body
 
 
 def plain_json(
@@ -2676,7 +2711,7 @@ def project(
     card_page_data = load_card_page_data(con)
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        meta, body = problem_json(
+        meta, body = asked_json(
             card_page_data,
             card,
             jcache,
@@ -2689,7 +2724,21 @@ def project(
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
+    for card in _rows(con, "select * from cards where kind='exercise'"):
+        meta, body = exercise_json(
+            card_page_data,
+            card,
+            jcache,
+            source_collections,
+            guide_appearances,
+            mentions,
+        )
+        document = SearchDocument(
+            _card_filters(card_page_data, card),
+            sort=(("listing", _listing_sort(card_page_data, card)),),
+        )
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
+    for card in _rows(con, "select * from cards where kind not in ('problem','exercise','collection')"):
         meta, body = plain_json(
             card_page_data,
             card,

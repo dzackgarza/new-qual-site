@@ -525,6 +525,9 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
     assert "UGA Algebra qualifying exam, Spring 2019, Problem 6" in appearances
     uncommented = (work / "build" / "quarto" / "_site" / "tag" / "E-CENTER.html").read_text()
     assert "Algebra homework 3, Spring 2020, problem 2" in uncommented
+    assert '<div class="card-statement">' in uncommented
+    assert "<dt>Area</dt>" in uncommented
+    assert "<dt>Status</dt>" in uncommented
 
 
 def test_textbook_source_is_not_exam_metadata_and_stays_separate_from_guide_appearances(tmp_path: Path) -> None:

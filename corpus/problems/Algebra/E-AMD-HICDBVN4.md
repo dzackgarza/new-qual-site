@@ -18,7 +18,11 @@ audit:
 ---
 
 ::: {.exercise}
-If $\{\alpha_i\}_{i=1}^n \subset F$ are algebraic over $K$, show that $K[\alpha_1, \dots, \alpha_n] = K(\alpha_1, \dots, \alpha_n)$.
+Let $F/K$ be a field extension, and let $\alpha_1,\dots,\alpha_n\in F$ be algebraic over $K$.
+Show that
+\[
+K[\alpha_1,\dots,\alpha_n]=K(\alpha_1,\dots,\alpha_n).
+\]
 :::
 
 ::: solution
