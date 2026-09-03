@@ -13,17 +13,26 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
-Show that ${z-1\over z+1}$ is purely imaginary $\iff z\in S^1$.
+::: {.exercise}
+For $z\in\CC\smts{-1}$, show that
+\[
+\frac{z-1}{z+1}\in i\RR
+\iff
+\abs z=1.
+\]
 
 > Hint: $z$ is real iff $\bar{z} = z$ and purely imaginary iff $\bar{z} = -z$.
-
 :::
 
-:::{.solution}
-
+::: {.solution}
+Write $w=(z-1)/(z+1)$.
+Then
 \[
-{z-1\over z+1} = -\qty{\bar z - 1 \over \bar z + 1} \iff (z-1)(1+z) = (1-\bar z)(1+\bar z) \iff2-2\abs{z}^2 = 0 \iff \abs{z}^2 = 1
-.\]
-
+w\in i\RR
+&\iff w=-\overline w \\
+&\iff \frac{z-1}{z+1}=\frac{1-\bar z}{1+\bar z} \\
+&\iff (z-1)(1+\bar z)=(1-\bar z)(1+z) \\
+&\iff 2\abs z^2-2=0 \\
+&\iff \abs z=1.
+\]
 :::

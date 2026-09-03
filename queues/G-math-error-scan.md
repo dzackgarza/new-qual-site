@@ -77,7 +77,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The card now states that
   $G(w)=i(1-w)/(1+w)$ maps $\DD\to\HH$, while its inverse
   $F(z)=(i-z)/(i+z)$ maps $\HH\to\DD$.
-- [ ] 12. E-ZCPKK — Cross-multiplication step is mis-written
+- [x] 12. E-ZCPKK — Cross-multiplication step is mis-written
+  Disposition 2026-09-04: confirmed and fixed. The statement now excludes the
+  pole $z=-1$, and the solution correctly conjugates the denominator before
+  cross-multiplying, giving $2|z|^2-2=0$.
 - [ ] 13. E-AIQEU — Final answer `sec`/`csc` slip; pole-location formula wrong
 - [ ] 14. E-WNTXK — Wrong function composition in the Cayley argument
 - [ ] 15. E-P7SIB — `sin(4θ)` formula missing the factor 4 and a sign
