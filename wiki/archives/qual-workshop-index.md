@@ -7,8 +7,6 @@ title: Workshop Index
 
 Week-by-week qual-prep sessions, also filed under each subject.
 
-The earlier table of contents listed a Complex “Week n misc” page that is not in this corpus.
-
 ## Complex Analysis
 
 - [[complex-analysis/workshops/index|Workshops]]

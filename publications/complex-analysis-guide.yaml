@@ -306,9 +306,7 @@ sections:
       integral by supremum times length, the second supplies the decay an oscillatory
       factor needs on a large semicircle. Indented arcs at a simple pole contribute
       a fraction of the residue proportional to the angle, and the residue at infinity
-      closes off the count when all finite poles are enclosed. Evaluation is the largest
-      single family of problems in the corpus, so the panels below are a sample of it
-      rather than a survey."
+      closes off the count when all finite poles are enclosed."
     items:
       - ref: T-VE5MW
       - ref: T-ESKLY
@@ -392,11 +390,7 @@ sections:
       equicontinuous, hence normal. That compactness is what lets an extremal argument
       converge, which is the Riemann mapping theorem. The same normality criterion,
       applied to families omitting values, strengthens Casorati-Weierstrass from dense
-      image to an image omitting at most one point. This is the thinnest section in
-      the exam record. Normal families, Montel, Picard and the Riemann mapping theorem
-      carry five problems between them, and Hurwitz and Arzela-Ascoli carry none at
-      all, so the problem panel below is short because the corpus is, not because the
-      topic is small. Read the exercise panel instead: the technique is exercised there."
+      image to an image omitting at most one point."
     items:
       - ref: D-AIQG3
       - ref: C-TODSQ
@@ -443,11 +437,7 @@ sections:
       was built for: the product for sine is the identity behind the summation formulas
       evaluated in [Residues and Contour Integration](residues.html), and Gamma and zeta are the standard examples
       of meromorphic continuation past the half-plane where their integral and series
-      converge. This section is under-filled relative to the others and should be read
-      as a pointer rather than a treatment. The corpus carries the definitions and the
-      statements but almost no worked problems, several of its Gamma and zeta cards
-      are images with no text, and the Weierstrass elliptic function has no statement
-      at all; those gaps are recorded on issue #2.'
+      converge.'
     items:
       - ref: T-2WJ4U
       - ref: T-IEJFA

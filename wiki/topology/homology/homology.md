@@ -136,11 +136,6 @@ In particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, whi
 
 [[T-2W5WN]]
 
-:::{.remark}
-Might need assumptions: finite CW complex?
-
-:::
-
 ## Relative Homology
 
 :::{.fact title="Some assorted facts"}

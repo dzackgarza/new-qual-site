@@ -17,6 +17,6 @@ UCSD Math 202. Five subjects, none of which the other papers cover in this form.
 
 - [[applied-algebra/invariant-theory/index|Invariant theory]] -- Noether, Molien, the Reynolds operator.
 
-Past exams are listed in the source archive; each collection page lists its problems in exam order.
+Past exams are on the [Sources listing](exams.html); each exam page presents its problems in exam order.
 
-[[applied-algebra/resources/index|Resources]], and every imported exam on [the Sources listing](exams.html).
+[[applied-algebra/resources/index|Resources]].

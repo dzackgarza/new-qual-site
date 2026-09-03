@@ -9,7 +9,7 @@ order: 90
 
 Material off the subject study paths: source lists and reading past the syllabus.
 
-- [[card-archives|Card Archives]], the imported exams by source.
+- [[card-archives|Card Archives]], exam sources by subject, institution, and year.
 
 - [[solution-compendia|Solution Compendia]], solution writeups not filed under a subject.
 

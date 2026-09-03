@@ -202,7 +202,7 @@ sections:
       hypothesis on the derivatives, and the Weierstrass M-test is how uniform convergence
       is usually established in practice. Arzela-Ascoli and Stone-Weierstrass close
       the section from opposite directions, one saying which families are compact and
-      the other which are dense. The counterexample cards are load-bearing here: the
+      the other which are dense. The counterexamples are load-bearing here: the
       four standard modes of convergence are pairwise incomparable, and each failure
       has a standard witness.'
     items:
@@ -479,15 +479,12 @@ sections:
   - slug: problems-from-the-joint-exams
     title: Problems from the Joint Analysis Exams
     parent: GUIDE-REAL-ANALYSIS
-    lede: "These thirty problems carry the real-analysis area label but state complex
-      analysis: entire and holomorphic functions, conformal maps, normal families, residues
-      and contour integrals, Rouche, Hurwitz, and the Schwarz lemma. They come from
-      combined analysis prelims where one paper covers both subjects, and the area label
-      followed the paper rather than the mathematics. They are collected here so that
-      no card in the area is unreachable from the guide, and so that the misfiled area
-      is visible rather than hidden; the adjudication of that label is not this guide's
-      to make. A reader preparing complex analysis should work them from the Complex
-      Analysis guide instead, where the surrounding theory lives."
+    lede: 'These thirty problems come from combined analysis prelims where one paper
+      covers both real and complex analysis, but their mathematics is complex: entire
+      and holomorphic functions, conformal maps, normal families, residues and contour
+      integrals, Rouche, Hurwitz, and the Schwarz lemma. A reader preparing complex
+      analysis should work them from the Complex Analysis guide instead, where the
+      surrounding theory lives.'
     items:
       - query:
           kind: problem

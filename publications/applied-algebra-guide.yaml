@@ -9,9 +9,8 @@ lede: >-
   integers, the symmetric functions that make that table combinatorial for the
   symmetric group, and the Gröbner machinery that makes an ideal decidable. The path
   below runs in that order, because each layer is the previous one made effective.
-  Every section is problem panels drawn from the exams: the definition and theorem
-  cards the other guides open with have not been written for this subject yet, so
-  what is offered here is the ordered reading of the problems themselves.
+  Each section closes with qualifying-exam problems from the corresponding family,
+  so the reading path stays attached to the computations it is meant to support.
 sections:
   - slug: matrix-analysis
     title: Matrix Analysis

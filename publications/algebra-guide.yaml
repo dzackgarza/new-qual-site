@@ -495,11 +495,7 @@ sections:
       first of all primes and the second of all maximal ideals, and they agree for a
       finitely generated algebra over a field. The Noetherian condition is what keeps
       all of this finite, and Hilbert's basis theorem is what says polynomial rings
-      inherit it.
-
-      This section is where the guide leans hardest on the flashcard layer: several
-      of these results appear in the corpus only as a stated fact with its geometric
-      reading and no worked problem, which is honest about what the source pages contain."
+      inherit it."
     items:
       - ref: D-OXIVT
       - ref: D-TGB4R
