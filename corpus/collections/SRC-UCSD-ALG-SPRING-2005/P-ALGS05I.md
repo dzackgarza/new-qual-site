@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS05I
 kind: problem
-title: "Galois group of x^3 + 3x^2 + 2 over Q and over F_5"
+title: 'Galois group of $x^3+3x^2+2$ over $\QQ$ and $\FF_5$'
 classification:
   areas:
   - algebra

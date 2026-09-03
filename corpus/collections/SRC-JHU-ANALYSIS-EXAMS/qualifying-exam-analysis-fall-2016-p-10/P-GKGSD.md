@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: "The square root of f(z squared) for univalent f fixing the origin"
+title: 'A univalent branch of $\sqrt{f(z^2)}$'
 classification:
   areas:
   - complex-analysis

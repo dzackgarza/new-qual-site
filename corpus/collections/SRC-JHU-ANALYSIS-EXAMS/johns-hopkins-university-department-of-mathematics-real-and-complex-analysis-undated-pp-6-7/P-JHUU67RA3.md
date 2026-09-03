@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU67RA3
 kind: problem
-title: Holder inequality, Young inequality, and Lp Banach spaces
+title: 'Holder inequality, Young inequality, and $L^p$ Banach spaces'
 classification:
   areas:
   - real-analysis

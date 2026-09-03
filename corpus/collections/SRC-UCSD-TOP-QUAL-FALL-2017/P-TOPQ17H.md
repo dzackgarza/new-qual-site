@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17H
 kind: problem
-title: "pi_3 of the one-point union of the Poincare homology sphere and S^3"
+title: '$\pi_3(P\vee S^3)$ for the Poincaré homology sphere $P$'
 classification:
   areas:
   - topology

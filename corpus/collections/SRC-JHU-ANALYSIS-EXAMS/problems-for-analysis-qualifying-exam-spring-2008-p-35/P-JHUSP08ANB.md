@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP08ANB
 kind: problem
-title: "The Lp norm tends to the L-infinity norm on [0,1], and a counterexample on R"
+title: '$\|f\|_p\to\|f\|_\infty$ on $[0,1]$, with a counterexample on $\RR$'
 classification:
   areas:
   - real-analysis

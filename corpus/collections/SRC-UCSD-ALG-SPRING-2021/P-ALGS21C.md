@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS21C
 kind: problem
-title: "Galois group of x^6 - 5 over Q(sqrt(5))"
+title: 'Galois group of $x^6-5$ over $\QQ(\sqrt5)$'
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA07ANH
 kind: problem
-title: "Convolution of compactly supported L1 functions is uniformly continuous"
+title: 'Convolution of compactly supported $L^1$ functions is uniformly continuous'
 classification:
   areas:
   - real-analysis

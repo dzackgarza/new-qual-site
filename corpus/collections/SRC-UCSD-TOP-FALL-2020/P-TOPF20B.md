@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20B
 kind: problem
-title: "Any map from a space with finite pi_1 to a torus is null-homotopic"
+title: 'Any map from a space with finite $\pi_1$ to a torus is null-homotopic'
 classification:
   areas:
   - topology

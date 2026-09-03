@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA08ANB
 kind: problem
-title: "Integral operators on Lp via Schur-type bounds"
+title: 'Integral operators on $L^p$ via Schur-type bounds'
 classification:
   areas:
   - real-analysis

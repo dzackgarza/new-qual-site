@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA07ANE
 kind: problem
-title: "Membership examples separating L1 and L2"
+title: 'Membership examples separating $L^1$ and $L^2$'
 classification:
   areas:
   - real-analysis

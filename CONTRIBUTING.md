@@ -38,6 +38,9 @@ uv sync --group dev
 
 Read the relevant cards before changing their titles, classifications, relations, or content.
 Make semantic decisions from the mathematics, not from filenames or text similarity.
+In card titles, use ordinary mathematical notation instead of spelling simple
+formulas out in words (`$L^2$`, `$\ZZ^3/N$`, `$x^8-1$`, not “L2”, “Z cubed
+mod N”, or “x to the eighth minus one”). Keep conceptual prose as prose.
 
 A canonical problem states one mathematical problem.
 An exam or textbook collection lists those problems in the order they appeared.

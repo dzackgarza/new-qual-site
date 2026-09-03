@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RGBUN
 kind: problem
-title: "The integral of log x over x^2 + 2 by contour integration"
+title: '$\int_0^\infty\frac{\log x}{x^2+2}\,dx$ by contour integration'
 classification:
   areas:
   - complex-analysis

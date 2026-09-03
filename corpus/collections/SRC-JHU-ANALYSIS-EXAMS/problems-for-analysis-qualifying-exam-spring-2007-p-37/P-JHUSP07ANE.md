@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP07ANE
 kind: problem
-title: "Membership of 1/x in Lp(0, infinity)"
+title: 'Membership of $1/x$ in $L^p(0,\infty)$'
 classification:
   areas:
   - real-analysis

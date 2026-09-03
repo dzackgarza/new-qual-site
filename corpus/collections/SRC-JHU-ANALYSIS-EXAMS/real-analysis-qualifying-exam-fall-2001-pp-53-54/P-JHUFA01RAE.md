@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA01RAE
 kind: problem
-title: Lp inclusion relationships
+title: '$L^p$ inclusion relationships'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAF24E
 kind: problem
-title: L1-bounded holomorphic functions on the disc have a locally uniform subsequence
+title: '$L^1$-bounded holomorphic functions on the disc have a locally uniform subsequence'
 classification:
   areas:
   - complex-analysis

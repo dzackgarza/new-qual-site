@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANG
 kind: problem
-title: "L2 functions with integrable L1 norm converge weakly to zero"
+title: '$L^2$ boundedness and vanishing $L^1$ norm imply weak convergence to $0$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-2
 kind: problem
-title: "SS 2.2: The integral of sin x over x"
+title: 'SS 2.2: $\int_0^\infty\frac{\sin x}{x}\,dx$'
 classification:
   areas:
   - complex-analysis

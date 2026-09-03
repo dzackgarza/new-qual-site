@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARTALG-JU06-6
 kind: problem
-title: Splitting field and Galois group of x^4-2 over Q
+title: 'Splitting field and Galois group of $x^4-2$ over $\QQ$'
 classification:
   areas:
   - algebra

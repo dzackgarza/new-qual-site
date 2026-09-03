@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS04G
 kind: problem
-title: "Galois group of the splitting field of x^5 - 3 over Q and its subgroups"
+title: 'Galois group of the splitting field of $x^5-3$ over $\QQ$ and its subgroups'
 classification:
   areas:
   - algebra

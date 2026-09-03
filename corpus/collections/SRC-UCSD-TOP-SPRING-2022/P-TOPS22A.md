@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS22A
 kind: problem
-title: "Wedge and product of RP^3 and S^1 vee S^1: pi_1, homology, cohomology rings, maps, double cover"
+title: 'Wedge and product of $\RP^3$ and $S^1\vee S^1$: $\pi_1$, homology, cohomology rings, maps, and double cover'
 classification:
   areas:
   - topology

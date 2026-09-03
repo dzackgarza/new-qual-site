@@ -613,6 +613,15 @@ problem number, or other source locator is not a title. Source locators belong t
 the collection entry that lists the problem, because one problem may occur at
 different locations in different sources.
 
+Use mathematical notation in a title when prose would merely spell out a standard
+formula or object. Write `$\ZZ^3$`, `$x^8+1$`, `$L^2$`, `$\pi_3$`,
+`$\ZZ\times\ZZ$`, or `$\frac{\cos x}{(1+x^2)^2}$`, not "Z cubed",
+"x to the eighth plus one", "L2", "pi_3", "Z x Z", or "cos x over the
+square of one plus x squared". Prose should name the mathematical phenomenon;
+notation should carry routine formulas. Do not make the opposite mistake of
+turning an ordinary conceptual title such as "Product of compact spaces" into
+unreadable symbol soup merely because symbols are available.
+
 ```yaml
 - id: P-EXAMPLE
   comment: Hungerford 4.1.7

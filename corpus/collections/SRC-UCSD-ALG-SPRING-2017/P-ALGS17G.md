@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS17G
 kind: problem
-title: "All intermediate fields of the splitting field of x^11 - 1 over Q"
+title: 'All intermediate fields of the splitting field of $x^{11}-1$ over $\QQ$'
 classification:
   areas:
   - algebra

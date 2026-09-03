@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA01RAC
 kind: problem
-title: Convergence in L4/3 implies convergence in L1
+title: '$L^{4/3}$ boundedness plus convergence in measure implies $L^1$ convergence'
 classification:
   areas:
   - real-analysis

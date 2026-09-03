@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15H
 kind: problem
-title: "A CW-complex with pi_1 = Z_2 and no higher homotopy is S^1 x S^1; surface groups have no Z_2 subgroups"
+title: 'A CW complex with $\pi_1\cong\ZZ/2$ and no higher homotopy is $S^1\times S^1$; surface groups have no $\ZZ/2$ subgroups'
 classification:
   areas:
   - topology

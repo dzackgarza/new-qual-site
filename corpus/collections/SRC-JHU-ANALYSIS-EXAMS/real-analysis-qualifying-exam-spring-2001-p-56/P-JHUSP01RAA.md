@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01RAA
 kind: problem
-title: "Mollifier convolutions converge in Lp but not in L-infinity"
+title: 'Mollifier convolutions converge in $L^p$ but not in $L^\infty$'
 classification:
   areas:
   - real-analysis

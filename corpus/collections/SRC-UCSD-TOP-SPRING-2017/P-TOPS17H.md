@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS17H
 kind: problem
-title: "Universal cover of a closed 3-manifold with finite pi_1 is homotopy equivalent to S^3"
+title: 'Universal cover of a closed $3$-manifold with finite $\pi_1$ is homotopy equivalent to $S^3$'
 classification:
   areas:
   - topology

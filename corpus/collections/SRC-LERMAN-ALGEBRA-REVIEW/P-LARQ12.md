@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ12
 kind: problem
-title: Maximal ideals and zero divisors in Z cross Z
+title: 'Maximal ideals and zero divisors in $\ZZ\times\ZZ$'
 classification:
   areas: [algebra]
   topics: [Ring Theory]

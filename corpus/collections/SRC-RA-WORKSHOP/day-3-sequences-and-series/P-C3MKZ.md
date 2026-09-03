@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C3MKZ
 kind: problem
-title: "Convergence of the series x to the n over one plus n times the n-th power of the absolute value"
+title: 'Convergence of $\sum_{n=1}^\infty \frac{x^n}{1+n|x|^n}$'
 classification:
   areas:
   - real-analysis

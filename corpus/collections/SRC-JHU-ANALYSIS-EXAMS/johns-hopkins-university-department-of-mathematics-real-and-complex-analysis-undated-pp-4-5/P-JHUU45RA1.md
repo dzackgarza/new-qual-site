@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU45RA1
 kind: problem
-title: Convergence of step-function approximations in L1
+title: 'Convergence of step-function approximations in $L^1$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS06C
 kind: problem
-title: "Degree of a map from a (2n+1)-manifold with pi_1 = Z/k to RP^{2n+1} is even"
+title: 'Degree of a map from a $(2n+1)$-manifold with $\pi_1\cong\ZZ/k$ to $\RP^{2n+1}$ is even'
 classification:
   areas:
   - topology

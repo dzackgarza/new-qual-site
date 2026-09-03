@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF21A
 kind: problem
-title: "Connected sum and wedge of RP^2 and T^2: pi_1, homology, cohomology ring, orientability, manifold property, double cover Euler characteristic"
+title: 'Connected sum and wedge of $\RP^2$ and $T^2$: $\pi_1$, homology, cohomology, orientability, and covers'
 classification:
   areas:
   - topology

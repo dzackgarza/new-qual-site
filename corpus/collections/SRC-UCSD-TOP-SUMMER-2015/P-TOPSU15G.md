@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPSU15G
 kind: problem
-title: "pi_4 of RP^3 with a 4-cell attached via the antipodal quotient"
+title: '$\pi_4$ of $\RP^3$ with a $4$-cell attached via the antipodal quotient'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-8
 kind: problem
-title: "SS 5.8: A cosine product for sin z over z"
+title: 'SS 5.8: $\prod_{k=1}^\infty\cos(z/2^k)=\sin z/z$'
 classification:
   areas:
   - complex-analysis

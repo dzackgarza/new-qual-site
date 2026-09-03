@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANH
 kind: problem
-title: "The Lp norms of an L-infinity function converge to the L-infinity norm"
+title: 'Weak $L^2$ convergence: lower semicontinuity and strong convergence from norm convergence'
 classification:
   areas:
   - real-analysis

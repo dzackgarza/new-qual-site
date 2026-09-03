@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20G
 kind: problem
-title: "pi_3 of T^2 vee S^3"
+title: '$\pi_3(T^2\vee S^3)$'
 classification:
   areas:
   - topology

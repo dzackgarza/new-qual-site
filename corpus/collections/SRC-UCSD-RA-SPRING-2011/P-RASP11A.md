@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP11A
 kind: problem
-title: "True or false: operator limits, L1 convergence, product compactness, weak L2 subsequences, differentiation of measures"
+title: 'True or false: operator limits, $L^1$ convergence, product compactness, weak $L^2$ subsequences, differentiation of measures'
 classification:
   areas:
   - real-analysis

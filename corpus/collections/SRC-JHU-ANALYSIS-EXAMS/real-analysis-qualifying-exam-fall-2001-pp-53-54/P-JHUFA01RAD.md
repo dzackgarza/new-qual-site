@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA01RAD
 kind: problem
-title: Step function approximation converges in L1
+title: 'Step function approximation converges in $L^1$'
 classification:
   areas:
   - real-analysis

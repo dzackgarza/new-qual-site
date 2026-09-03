@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FLFHFN7LEF
 kind: problem
-title: "The integral of cos x over the square of one plus x squared, by residues"
+title: '$\int_0^\infty \frac{\cos x}{(1+x^2)^2}\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF07F
 kind: problem
-title: "pi_3 of RP^4 vee S^3 via the Hurewicz theorem"
+title: '$\pi_3(\RP^4\vee S^3)$ via the Hurewicz theorem'
 classification:
   areas:
   - topology

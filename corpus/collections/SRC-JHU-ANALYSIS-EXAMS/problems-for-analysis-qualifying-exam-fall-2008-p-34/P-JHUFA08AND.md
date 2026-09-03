@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA08AND
 kind: problem
-title: "The integral of log x over (x^2+4)^2 by residues"
+title: '$\int_0^\infty\frac{\log x}{(x^2+4)^2}\,dx$ by residues'
 classification:
   areas:
   - complex-analysis

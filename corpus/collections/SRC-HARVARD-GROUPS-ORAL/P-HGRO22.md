@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO22
 kind: problem
-title: The center of a nonabelian group of order p cubed
+title: 'Center of a nonabelian group of order $p^3$'
 classification:
   areas: [algebra]
   topics: [Group Theory]

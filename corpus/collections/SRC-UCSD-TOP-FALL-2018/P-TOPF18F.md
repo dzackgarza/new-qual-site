@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF18F
 kind: problem
-title: "pi_3 of RP^4 vee S^3"
+title: '$\pi_3(\RP^4\vee S^3)$'
 classification:
   areas:
   - topology

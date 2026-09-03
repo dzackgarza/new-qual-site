@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2B4GV
 kind: problem
-title: "A basis for the submodule of Z cubed and the quotient Z cubed mod N"
+title: 'A basis for $N\subseteq\ZZ^3$ and the quotient $\ZZ^3/N$'
 classification:
   areas:
   - algebra

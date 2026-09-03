@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY12RA5
 kind: problem
-title: Weak and strong convergence of squares in L2
+title: 'Weak and strong convergence of squares in $L^2$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TCUDY
 kind: problem
-title: Weak convergence plus norm convergence implies strong convergence in L2
+title: 'Weak convergence plus norm convergence implies strong convergence in $L^2$'
 classification:
   areas:
   - real-analysis

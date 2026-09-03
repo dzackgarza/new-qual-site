@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA10RA4
 kind: problem
-title: Translation operator on L2 has no real eigenvalues
+title: 'Translation operator on $L^2$ has no real eigenvalues'
 classification:
   areas:
   - real-analysis

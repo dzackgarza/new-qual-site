@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA10RA1
 kind: problem
-title: L2 convergence with Gaussian weight
+title: '$L^2$ convergence with Gaussian weight'
 classification:
   areas:
   - real-analysis

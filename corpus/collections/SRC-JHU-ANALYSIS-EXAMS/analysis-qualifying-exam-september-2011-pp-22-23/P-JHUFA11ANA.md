@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANA
 kind: problem
-title: "The contour integral of dz over z cubed cosine on a circle through the origin"
+title: '$\int_\gamma \frac{dz}{z^3\cos z}$ for $|z-1|=2$'
 classification:
   areas:
   - complex-analysis

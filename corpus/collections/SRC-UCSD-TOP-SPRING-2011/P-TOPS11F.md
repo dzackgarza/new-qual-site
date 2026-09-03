@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS11F
 kind: problem
-title: "pi_3 of the one-point union of a 3-manifold with universal cover S^3 and S^3"
+title: '$\pi_3(P\vee S^3)$ for a spherical $3$-manifold with $|\pi_1(P)|=120$'
 classification:
   areas:
   - topology

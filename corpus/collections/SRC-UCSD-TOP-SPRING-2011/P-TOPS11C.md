@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS11C
 kind: problem
-title: "Number of covering spaces of a space with pi_1 = Z/2 x Z/2"
+title: 'Coverings of a space with $\pi_1\cong(\ZZ/2)^2$'
 classification:
   areas:
   - topology

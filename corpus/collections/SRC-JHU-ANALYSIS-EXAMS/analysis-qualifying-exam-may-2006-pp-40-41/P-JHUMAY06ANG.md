@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANG
 kind: problem
-title: "Quickies: separating L1 and L2 on R and on (0,1)"
+title: 'Separating $L^1$ and $L^2$ on $\RR$ and $(0,1)$'
 classification:
   areas:
   - real-analysis

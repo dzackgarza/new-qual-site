@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20H
 kind: problem
-title: "A CW complex with finite nontrivial pi_1 and no higher homotopy cannot be finite"
+title: 'A finite CW complex cannot have finite nontrivial $\pi_1$ and trivial higher homotopy'
 classification:
   areas:
   - topology

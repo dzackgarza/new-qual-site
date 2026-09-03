@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YP3XF
 kind: problem
-title: Multiplication operator on L2 is self-adjoint but not compact
+title: 'Multiplication operator on $L^2$ is self-adjoint but not compact'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANH
 kind: problem
-title: "L1 intersect L2 sits inside every intermediate Lp"
+title: '$L^1\cap L^2\subseteq L^p$ for $1\le p\le2$'
 classification:
   areas:
   - real-analysis

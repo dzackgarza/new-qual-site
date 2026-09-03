@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19F
 kind: problem
-title: "Mapping degree is divisible by the index of the image of pi_1"
+title: 'Mapping degree is divisible by $[\pi_1(N):f_*(\pi_1(M))]$'
 classification:
   areas:
   - topology

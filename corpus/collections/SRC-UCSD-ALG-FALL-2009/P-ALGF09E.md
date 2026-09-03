@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF09E
 kind: problem
-title: "Splitting field and Galois group of x^4 - 5 over Q"
+title: 'Splitting field and Galois group of $x^4-5$ over $\QQ$'
 classification:
   areas:
   - algebra

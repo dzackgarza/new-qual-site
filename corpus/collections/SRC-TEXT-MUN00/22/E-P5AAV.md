@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-P5AAV
 kind: problem
-title: The quotient R over Z as a familiar topological group
+title: '$\RR/\ZZ$ as a familiar topological group'
 classification:
   areas:
   - topology

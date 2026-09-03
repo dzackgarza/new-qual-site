@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU45RA2
 kind: problem
-title: Unit ball of L2 is not compact
+title: 'Unit ball of $L^2$ is not compact'
 classification:
   areas:
   - real-analysis

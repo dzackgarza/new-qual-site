@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: "Convolutions of L2 functions and convolution operators on L1"
+title: 'Convolutions of $L^2$ functions and convolution operators on $L^1$'
 classification:
   areas:
   - real-analysis

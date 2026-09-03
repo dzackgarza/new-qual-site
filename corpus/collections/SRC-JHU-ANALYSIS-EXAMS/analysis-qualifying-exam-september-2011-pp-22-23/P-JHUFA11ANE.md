@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANE
 kind: problem
-title: "An L2-bounded sequence in L2 of the line without convergent subsequences"
+title: 'An $L^2$-bounded sequence in $L^2$ of the line without convergent subsequences'
 classification:
   areas:
   - real-analysis

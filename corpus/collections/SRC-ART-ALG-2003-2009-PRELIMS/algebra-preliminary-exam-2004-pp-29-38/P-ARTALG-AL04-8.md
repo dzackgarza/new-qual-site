@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARTALG-AL04-8
 kind: problem
-title: Splitting field of x^4-5 over Q
+title: 'Splitting field of $x^4-5$ over $\QQ$'
 classification:
   areas:
   - algebra

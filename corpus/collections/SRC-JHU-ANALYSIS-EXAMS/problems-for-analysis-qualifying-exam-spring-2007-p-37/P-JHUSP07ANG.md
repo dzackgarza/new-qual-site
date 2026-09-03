@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP07ANG
 kind: problem
-title: "Weakly convergent L2 sequences with unbounded norms"
+title: 'Weakly convergent $L^2$ sequences with unbounded norms'
 classification:
   areas:
   - real-analysis

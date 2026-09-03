@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANB
 kind: problem
-title: "Translation continuity of L1 functions on the line"
+title: 'Translation continuity of $L^1$ functions on the line'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANI
 kind: problem
-title: "The Fourier transform of an L1 function is uniformly continuous and vanishes at infinity"
+title: 'The Fourier transform of an $L^1$ function is uniformly continuous and vanishes at infinity'
 classification:
   areas:
   - real-analysis

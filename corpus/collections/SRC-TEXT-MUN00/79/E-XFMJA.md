@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XFMJA
 kind: problem
-title: Coverings of the torus from subgroups of Z x Z
+title: 'Coverings of the torus from subgroups of $\ZZ\times\ZZ$'
 classification:
   areas:
   - topology

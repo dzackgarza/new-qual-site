@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23B
 kind: problem
-title: "pi_2 of a torus with a disc attached along a curve"
+title: '$\pi_2$ of a torus with a disk attached along a curve'
 classification:
   areas:
   - topology

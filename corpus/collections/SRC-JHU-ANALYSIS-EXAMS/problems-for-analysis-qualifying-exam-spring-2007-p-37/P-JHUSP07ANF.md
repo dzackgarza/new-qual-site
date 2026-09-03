@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP07ANF
 kind: problem
-title: "L4 functions with vanishing L1 norm converge weakly"
+title: '$L^4$ functions with vanishing $L^1$ norm converge weakly'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF10G
 kind: problem
-title: "pi_2 of RP^2 vee S^2 vee S^2 via the Hurewicz theorem"
+title: '$\pi_2(\RP^2\vee S^2\vee S^2)$ via the Hurewicz theorem'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-10
 kind: problem
-title: "SS 3.10: The integral of log x over x^2+a^2"
+title: 'SS 3.10: $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx$'
 classification:
   areas:
   - complex-analysis

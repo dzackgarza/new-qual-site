@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-GG6
 kind: problem
-title: The Galois group of X^5 - X - 1 over Q is S(5)
+title: 'Galois group of $X^5-X-1$ over $\QQ$ is $S_5$'
 classification:
   areas:
   - algebra

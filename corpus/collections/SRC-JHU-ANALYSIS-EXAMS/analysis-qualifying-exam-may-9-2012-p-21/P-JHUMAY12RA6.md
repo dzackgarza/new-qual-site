@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY12RA6
 kind: problem
-title: Absolutely convergent series of L1 functions converges a.e. and in L1
+title: 'Absolutely convergent series of $L^1$ functions converges a.e. and in $L^1$'
 classification:
   areas:
   - real-analysis

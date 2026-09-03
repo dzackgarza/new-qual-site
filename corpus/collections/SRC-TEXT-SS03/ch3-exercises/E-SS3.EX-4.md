@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-4
 kind: problem
-title: "SS 3.4: The integral of x sin x over x^2+a^2"
+title: 'SS 3.4: $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx$'
 classification:
   areas:
   - complex-analysis

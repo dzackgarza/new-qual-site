@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANA
 kind: problem
-title: "L2 mass of order 1/n squared forces a.e. convergence to zero"
+title: '$\|f_n\|_2^2\le n^{-2}$ forces $f_n\to0$ a.e.'
 classification:
   areas:
   - real-analysis

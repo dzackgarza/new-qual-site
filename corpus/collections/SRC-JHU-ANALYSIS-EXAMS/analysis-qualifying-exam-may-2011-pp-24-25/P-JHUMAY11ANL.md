@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANL
 kind: problem
-title: "The translation operator on L2 of the line"
+title: 'The translation operator on $L^2$ of the line'
 classification:
   areas:
   - real-analysis

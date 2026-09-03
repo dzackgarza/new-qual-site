@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS10G
 kind: problem
-title: "pi_2 of a surface of genus >= 1 is zero; surface groups are not free"
+title: '$\pi_2(\Sigma_g)=0$ for $g\ge1$; surface groups are not free'
 classification:
   areas:
   - topology

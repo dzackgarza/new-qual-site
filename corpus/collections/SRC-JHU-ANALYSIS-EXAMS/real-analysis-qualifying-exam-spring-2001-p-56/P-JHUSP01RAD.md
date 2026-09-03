@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01RAD
 kind: problem
-title: "Interpolation inequality between the L 4/3, L2, and L4 norms"
+title: 'Interpolation inequality between the $L^{4/3}$, $L^2$, and $L^4$ norms'
 classification:
   areas:
   - real-analysis

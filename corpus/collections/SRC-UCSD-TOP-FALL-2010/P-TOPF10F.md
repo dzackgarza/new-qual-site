@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF10F
 kind: problem
-title: "Rank of H_2 of the universal cover of a 4-manifold with finite pi_1"
+title: 'Rank of $H_2$ of the universal cover of a $4$-manifold with finite $\pi_1$'
 classification:
   areas:
   - topology
