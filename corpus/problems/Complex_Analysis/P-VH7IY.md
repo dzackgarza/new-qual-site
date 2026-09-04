@@ -30,11 +30,12 @@ b. Use (a) to show that the logarithm function, defined as
 .\]
 is holomorphic on the region $r> 0, -\pi < \theta < \pi$.
 
-Also show that this function is not continuous in $r>0$.
+Show also that this branch cannot be extended continuously across the negative
+real axis to all of $\CC\setminus\{0\}$.
 :::
 
 ::: {.solution}
-**Goal:** (a) Derive the polar form of the Cauchy–Riemann equations; (b) use it to show the principal logarithm $\log z = \log r + i\theta$ ($z = re^{i\theta}$, $-\pi < \theta < \pi$) is holomorphic on the slit plane, and show this function is not continuous on all of $r > 0$.
+**Goal:** (a) Derive the polar form of the Cauchy–Riemann equations; (b) use it to show the principal logarithm $\log z = \log r + i\theta$ ($z = re^{i\theta}$, $-\pi < \theta < \pi$) is holomorphic on the slit plane, and show that this branch has no continuous extension across the negative real axis.
 
 <1>1. Chain rule in polar coordinates: $u_r = u_x \cos\theta + u_y \sin\theta$ and $u_\theta = r(-u_x \sin\theta + u_y \cos\theta)$; same for $v$.
     ::: {.proof}
@@ -56,14 +57,14 @@ Also show that this function is not continuous in $r>0$.
     $u, v$ are $C^1$ there (on the slit plane, $\theta$ is a smooth single-valued function of $z$, and $\log r$ is smooth), and they satisfy the Cauchy–Riemann equations in polar form by <1>3; by the standard criterion, $\log z$ is holomorphic, with derivative $e^{-i\theta}\qty(u_r + i v_r) = \frac{e^{-i\theta}}{r} = \frac{1}{z}$.
     :::
 
-<1>5. (b): $\log z$ is not continuous on the set $\theset{r > 0}$ (all of $\CC \setminus \theset{0}$).
+<1>5. (b): The principal branch has no continuous extension to all of $\CC\setminus\{0\}$.
     ::: {.proof}
-    The principal branch cuts along the negative real axis: fix $z_0 = -r_0$ with $r_0 > 0$ and approach it from the upper half-plane, $z = r_0 e^{i\theta}$ with $\theta \to \pi^-$: $\log z \to \log r_0 + i\pi$. Approaching from the lower half-plane, $\theta \to -\pi^+$: $\log z \to \log r_0 - i\pi$. These two limits differ (by $2\pi i$), so $\log z$ has no limit as $z \to z_0$ and is discontinuous at every point of the negative real axis.
+    The principal branch is continuous on its slit-plane domain. To see that it cannot extend across the cut, fix $z_0 = -r_0$ with $r_0 > 0$ and approach it from the upper half-plane, $z = r_0 e^{i\theta}$ with $\theta \to \pi^-$: $\log z \to \log r_0 + i\pi$. Approaching from the lower half-plane, $\theta \to -\pi^+$: $\log z \to \log r_0 - i\pi$. These two limits differ by $2\pi i$, so no continuous extension can be defined at $z_0$.
     :::
 
 <1>6. Q.E.D.
     ::: {.proof}
-    <1>2 proves (a), and <1>4–<1>5 prove (b) (holomorphicity on the slit plane and discontinuity in $r > 0$).
+    <1>2 proves (a), and <1>4–<1>5 prove (b): holomorphicity on the slit plane and failure of continuous extension across its branch cut.
     :::
 
 :::
