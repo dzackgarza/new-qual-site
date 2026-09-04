@@ -20,3 +20,25 @@ Suppose that $X = A \cup B$ where $A$ and $B$ are closed subsets, and that the r
 
 Prove that $f$ is continuous.
 :::
+
+::: {.solution}
+Let $C\subseteq Y$ be closed. Since the restrictions are continuous,
+\[
+(f|_A)^{-1}(C)=A\cap f^{-1}(C)
+\]
+is closed in the subspace $A$, and
+\[
+(f|_B)^{-1}(C)=B\cap f^{-1}(C)
+\]
+is closed in the subspace $B$.
+
+Because $A$ is closed in $X$, every subset closed in $A$ is closed in $X$. Hence $A\cap f^{-1}(C)$ is closed in $X$; similarly, $B\cap f^{-1}(C)$ is closed in $X$.
+
+Using $X=A\cup B$,
+\[
+f^{-1}(C)
+=\bigl(A\cap f^{-1}(C)\bigr)
+ \cup\bigl(B\cap f^{-1}(C)\bigr).
+\]
+This is a finite union of closed subsets of $X$, hence is closed. Thus the inverse image under $f$ of every closed subset of $Y$ is closed, so $f$ is continuous.
+:::
