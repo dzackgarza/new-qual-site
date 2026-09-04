@@ -222,7 +222,12 @@ Disposition order follows the finding numbers.
   switched to $x^{1/n}$.
 - [x] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — duplicate of finding
   15; fixed there on 2026-09-04.
-- [ ] 41. E-PQ7NC, overclaimed image of the Joukowski map $z+1/z$ — 
+- [x] 41. E-PQ7NC, overclaimed image of the Joukowski map $z+1/z$ —
+  Disposition 2026-09-04: confirmed and rewritten. For $z=re^{i\theta}$
+  with $r>1$, $0<\theta<\pi$,
+  $\Im(z+z^{-1})=(r-r^{-1})\sin\theta>0$. Injectivity follows from
+  $(z_1-z_2)(1-(z_1z_2)^{-1})=0$, and surjectivity from the reciprocal roots
+  of $z^2-wz+1$. Also $J'(z)=1-z^{-2}$, not $1+r^{-2}$.
 - [ ] 42. E-RGDJ7, factor-of-2 error in $\int_{S^1} 2\sinh(z)/z^n\,dz$ for even $n$ — 
 - [ ] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ — 
 - [x] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ —

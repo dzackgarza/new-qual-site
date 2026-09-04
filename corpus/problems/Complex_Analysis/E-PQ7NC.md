@@ -13,33 +13,50 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
-Find a conformal map $\DD^c \intersect \HH \to \HH$.
+::: {.exercise}
+Find a conformal map $\DD^c\cap\HH\to\HH$, where $\DD^c=\{z:|z|>1\}$.
 :::
 
-:::{.solution}
-Claim: the map $f(z) \da z+z\inv$ works.
-Consider the images of circles $\gamma_r(t) \da rei^{t}$ where $t\in [-\pi, \pi]$.
-For $r=1$, 
+::: {.solution}
+The Joukowski map
 \[
-f(\gamma_1(t)) = e^{it} + e^{-it} = 2\cos(t)
-,\]
-which sweeps out $[-2, 2]$ twice.
-For arbitrary $r$,
+J(z)=z+{1\over z}
+\]
+works.
+Write $z=re^{i\theta}$ with $r>1$ and $0<\theta<\pi$.
+Then
 \[
-f(\gamma_r(t)) = re^{it} + r\inv e^{-it} = (r+r\inv)\cos(t) +i(r-r\inv)\sin(t)
-,\]
-which sweeps out an ellipse with horizontal radius $r+r\inv$ and vertical radius $r-r\inv$.
-For $1<r<\infty$, these sweep out all of $\CC\sm \DD$.
-Restricting $t\in [0, \pi]$, the $\gamma_r(t)$ are top halves of circles which cover all of $\HH\sm\DD$, and the images $f(\gamma_r(t))$ are top halves of ellipses which sweep out all of $\HH$.
-This includes points inside of $\DD \intersect \HH$ -- this is because for any $t\in (0, \infty)$, there is always a solution $r$ to $t=r-r\inv$:
-\[
-t = r-r\inv \implies r^2-tr-1 \implies r = {t \pm \sqrt{t^2+4}\over 2}
-.\]
-So there is an image ellipse at that vertical height.
-Since every point $z_0\in \HH$ is on an ellipse of *some* vertical height $t$, $\HH$ is in the image.
+\Im J(z)=\qty{r-r^{-1}}\sin\theta>0,
+\]
+so $J$ maps the domain into $\HH$.
 
-That this map is conformal: a computation shows $f'(z) = 1 + {1\over r^2}$, which vanishes only at $z=\pm 1$.
-Since these are not in the domain, the derivative is nonvanishing, making $f$ conformal.
+It is injective there.
+Indeed,
+\[
+J(z_1)=J(z_2)
+\iff
+(z_1-z_2)\qty{1-{1\over z_1z_2}}=0.
+\]
+Since $|z_1z_2|>1$, the second factor cannot vanish; hence $z_1=z_2$.
+
+It is also onto.
+Given $w\in\HH$, the equation $J(z)=w$ is
+\[
+z^2-wz+1=0.
+\]
+Its two roots have product $1$.
+Neither root lies on $|z|=1$, because $J(e^{i\theta})=2\cos\theta\in\RR$.
+Hence exactly one root has modulus greater than $1$.
+For that root, the identity
+\[
+\Im w=\qty{|z|-|z|^{-1}}\sin(\arg z)>0
+\]
+forces $0<\arg z<\pi$, so the root lies in $\DD^c\cap\HH$.
+
+Finally,
+\[
+J'(z)=1-{1\over z^2},
+\]
+which vanishes only at $z=\pm1$, outside the domain.
+Thus $J$ is a biholomorphic, hence conformal, map from $\DD^c\cap\HH$ onto $\HH$.
 :::
-
