@@ -33,7 +33,8 @@ Explain why there are no repetitions on your list.
 :::
 
 ::: {.solution}
-Use the standard convention that a surface is connected. Write $\Sigma_{g,b}$ for the compact orientable surface of genus $g$ with $b$ boundary components, and $N_{k,b}$ for the compact nonorientable surface of nonorientable genus $k$ with $b$ boundary components.
+Use the standard convention that a surface is connected.
+Write $\Sigma_{g,b}$ for the compact orientable surface of genus $g$ with $b$ boundary components, and $N_{k,b}$ for the compact nonorientable surface of nonorientable genus $k$ with $b$ boundary components.
 
 <1>1. The orientable surfaces with Euler characteristic $-1$ are exactly
 \[
