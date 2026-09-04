@@ -346,7 +346,13 @@ Disposition order follows the finding numbers.
   Liouville gives $f'e^f=0$ and hence $f$ is constant. The adjacent
   $|e^f|=e^{\Re z}$ typo and part (a)'s incorrect Cauchy estimate were also
   repaired while the card was open.
-- [ ] 64. P-SFDLG part 2 — discontinuity of the principal logarithm: the furnished sequence shows no dis...
+- [x] 64. P-SFDLG part 2 — discontinuity of the principal logarithm: the furnished sequence shows no dis...
+  Disposition 2026-09-04: confirmed, with a false source formulation. The
+  principal branch is holomorphic, hence continuous, on the slit plane; the
+  coherent statement is that it cannot extend continuously across the negative
+  real axis to all of $\CC^\times$. Approaching $-1$ from above and below gives
+  limiting values $i\pi$ and $-i\pi$. The polar Cauchy--Riemann derivation was
+  also rewritten to remove sign and coordinate errors in the old calculation.
 - [ ] 65. P-UQOCE — the integration-by-parts recursion for the generalization carries a spurious...
 - [ ] 66. P-WB56B — a C1 two-threshold argument for the uncountable split point, with a false con...
 

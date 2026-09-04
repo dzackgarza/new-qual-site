@@ -29,64 +29,54 @@ b. Use (a) to show that the logarithm function, defined as
 .\]
 is holomorphic on the region $r> 0, -\pi < \theta < \pi$.
 
-Also show that this function is not continuous in $r>0$.
+Show also that this branch cannot be extended continuously across the negative
+real axis to all of $\CC\setminus\{0\}$.
 
 :::
 
-:::{.solution}
-**Part 1:**
-
-Write 
+::: {.solution}
+For (a), write $x=r\cos\theta$ and $y=r\sin\theta$. Then
 \[
-x &= r\cos \theta \implies \grad_{r, \theta} x = \tv{\cos \theta, -r\sin \theta} \\
-y & =r\sin \theta \implies \grad_{r, \theta} y = \tv{\sin \theta, r\cos \theta}
-.\]
+u_r&=u_x\cos\theta+u_y\sin\theta
+=v_y\cos\theta-v_x\sin\theta
+={1\over r}v_\theta,\\
+v_r&=v_x\cos\theta+v_y\sin\theta
+=-u_y\cos\theta+u_x\sin\theta
+=-{1\over r}u_\theta,
+\]
+using the Cartesian Cauchy--Riemann equations $u_x=v_y$ and $u_y=-v_x$.
+
+For (b), take
+\[
+u(r,\theta)=\log r,
+\qquad
+v(r,\theta)=\theta.
+\]
 Then
 \[
-u_r 
-&= u_x x_r + u_y y_r \\
-&= u_x \cos \theta + u_y \sin \theta \\
-&= v_y \cos \theta - v_x \sin \theta \\
-&= r\inv \qty{v_y \cdot r\cos\theta - u_y \cdot r \sin \theta} \\
-&= r\inv \qty{v_y y_\theta + u_y x_\theta} \\
-&= r\inv v_\theta
-.\]
-Similarly
+u_r={1\over r}={1\over r}v_\theta,
+\qquad
+v_r=0=-{1\over r}u_\theta,
+\]
+so the principal branch $\Log z=\log r+i\theta$ is holomorphic on
 \[
-v_r
-&= v_x x_r + v_y y_r \\
-&= v_x \cos \theta + v_y \sin \theta \\
-&= -u_y \cos \theta + u_x \sin \theta \\
-&= -r\inv\qty{u_y \cdot r\cos\theta i u_x \cdot r\sin \theta } \\
-&= -r\inv \qty{u_x x_\theta + u_y y_\theta} \\
-&= -r\inv u_\theta
-.\]
+\CC\setminus(-\infty,0]
+=\{re^{i\theta}:r>0,\ -\pi<\theta<\pi\}.
+\]
+In particular it is continuous on that domain.
 
-**Part 2:**
-
-Define $u(r, \theta) = \log(r)$ and $v(r, \theta) = \theta$ to write $\Log(z) = u+iv$.
-Then check
+It cannot be extended continuously across the negative real axis. Indeed,
 \[
-u_r &= r\inv, \quad v_\theta = 1 \implies u_r = r\inv v_\theta \\
-v_r &= 0, \quad u_\theta = 0 \implies v_r = -r\inv u_\theta
-,\]
-provided $r>0$ so that $u_r$ is defined.
-
-That this function is not continuous: let $w_k = 1\cdot e^{i(2\pi - 1/k)}$, noting that these are two sequences converging to 1.
-If $\Log(z)$ were continuous, we would have
+z_k^+=e^{i(\pi-1/k)},
+\qquad
+z_k^-=e^{-i(\pi-1/k)}
+\]
+both tend to $-1$, while
 \[
-\lim_{k\to\infty} \Log(w_k)
-= \Log(1) 
-\da \log(1) + i\cdot 0
-= 0
-,\]
-Thus for any $\eps$ we could choose $k\gg 1$ so that 
-\[
-\abs{\log(z_k) - 0}, \abs{\log(w_k) - 0 } < \eps
-.\]
-However,
-\[
-\log(w_k) = \log(1) + i(2\pi - 1/k) = i(2\pi - 1/k) = 2\pi i - {1\over k} > \eps
-,\]
-for arbitrarily large $k$, provided we choose $\eps$ small.
+\Log z_k^+=i(\pi-1/k)\to i\pi,
+\qquad
+\Log z_k^-=-i(\pi-1/k)\to-i\pi.
+\]
+The two one-sided limits disagree, so no continuous extension to $-1$, and
+hence no continuous extension of this branch to all of $\CC^\times$, exists.
 :::
