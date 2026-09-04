@@ -115,7 +115,11 @@ Disposition order follows the finding numbers.
   contour proof: the negative axis contributes $e^{i\pi/3}I$, the only enclosed
   pole is $i$ with residue $e^{i\pi/6}/(2i)$, and the result is
   $I=\pi/\sqrt3$.
-- [ ] 20. E-AKNDW — wrong numerical value (`π/4` for `π/2`) in the main derivation of `∫ 1/(1+x²)...
+- [x] 20. E-AKNDW — wrong numerical value (`π/4` for `π/2`) in the main derivation of `∫ 1/(1+x²)...
+  Disposition 2026-09-04: confirmed and fixed. The duplicate derivations were
+  replaced by one residue proof: $\Res_{z=i}(1+z^2)^{-2}=1/(4i)$, hence
+  $2\pi i\Res=\pi/2$, and the upper-semicircle contribution is
+  $O(R^{-3})$.
 - [ ] 21. E-3B2YA — wrong value and wrong identity for the cube root of unity in the annotation
 - [ ] 22. E-3OJLH — circular Schwarz-lemma application; `F(0)=0` is false
 - [ ] 23. E-CLSFF — false claim that the remaining entire function $Q$ is constant
