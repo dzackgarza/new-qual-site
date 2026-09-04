@@ -109,7 +109,12 @@ Disposition order follows the finding numbers.
   continuity on the Carathéodory-measurable $\sigma$-algebra, where the outer
   measure restricts to a measure, and gives an explicit outer measure on
   $\NN$ showing that both continuity statements can fail on arbitrary sets.
-- [ ] 19. E-2HIKG — spurious factor of 2 and inconsistent simplification in the semicircular-cont...
+- [x] 19. E-2HIKG — spurious factor of 2 and inconsistent simplification in the semicircular-cont...
+  Disposition 2026-09-04: confirmed, with multiple additional phase errors in
+  both old contour derivations. The card now gives one coherent upper-half-plane
+  contour proof: the negative axis contributes $e^{i\pi/3}I$, the only enclosed
+  pole is $i$ with residue $e^{i\pi/6}/(2i)$, and the result is
+  $I=\pi/\sqrt3$.
 - [ ] 20. E-AKNDW — wrong numerical value (`π/4` for `π/2`) in the main derivation of `∫ 1/(1+x²)...
 - [ ] 21. E-3B2YA — wrong value and wrong identity for the cube root of unity in the annotation
 - [ ] 22. E-3OJLH — circular Schwarz-lemma application; `F(0)=0` is false
