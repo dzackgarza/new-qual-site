@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \int_{S^1} {2 \sinh(z) \over z^n}\dz
@@ -22,7 +22,7 @@ Compute
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = 2\sinh(z) = e^{z} - e^{-z}$ and apply the generalized Cauchy formula:
 \[
 f^{(n-1)}(0) 
@@ -33,10 +33,9 @@ f^{(n-1)}(0)
 &= {2\pi i\over (n-1)!} 2\cdot \qty{1 + (-1)^{n} \over 2} \\
 &=
 \begin{cases}
-{2\pi i \over (n-1)!} & n \text{ even } 
+{4\pi i \over (n-1)!} & n \text{ even } 
 \\
 0 & n \text{ odd }.
 \end{cases}
 .\]
 :::
-

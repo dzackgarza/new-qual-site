@@ -228,7 +228,10 @@ Disposition order follows the finding numbers.
   $\Im(z+z^{-1})=(r-r^{-1})\sin\theta>0$. Injectivity follows from
   $(z_1-z_2)(1-(z_1z_2)^{-1})=0$, and surjectivity from the reciprocal roots
   of $z^2-wz+1$. Also $J'(z)=1-z^{-2}$, not $1+r^{-2}$.
-- [ ] 42. E-RGDJ7, factor-of-2 error in $\int_{S^1} 2\sinh(z)/z^n\,dz$ for even $n$ — 
+- [x] 42. E-RGDJ7, factor-of-2 error in $\int_{S^1} 2\sinh(z)/z^n\,dz$ for even $n$ —
+  Disposition 2026-09-04: confirmed and fixed. For even $n$,
+  $(2\sinh)^{(n-1)}(0)=2$, so Cauchy's formula gives
+  $4\pi i/(n-1)!$, not $2\pi i/(n-1)!$; for odd $n$ the integral is $0$.
 - [ ] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ — 
 - [x] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ —
   duplicate of finding 16; fixed there on 2026-09-04.
