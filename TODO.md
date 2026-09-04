@@ -817,7 +817,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md) — audit commit: auto (mismatch (fixed): 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md) — audit commit: auto (mismatch (fixed): 7 on disk, 8 in index, provenance: 1 href(s))
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md) — audit commit: 7b483fe6d (source-corrected: 8 official problems, 8 cards; restored the closed-diagonal problem that had been removed as a phantom cross-reference)
 
 - [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md) — audit commit: auto (mismatch (fixed): 7 on disk, 8 in index, provenance: 1 href(s))
 
