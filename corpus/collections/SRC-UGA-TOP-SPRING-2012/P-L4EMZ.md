@@ -16,6 +16,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-04
   note: Replaced the invalid infinite-implies-cofinite step in part (b) with the neighborhood-of-zero argument and structured all parts.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Verified all three parts against the official UGA Spring 2012 exam; the local extraction's malformed closing bracket denotes (0,1].
 ---
 
 ::: {.problem}
