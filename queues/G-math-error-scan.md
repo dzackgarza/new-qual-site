@@ -274,7 +274,11 @@ Disposition order follows the finding numbers.
   After that correction, rotating/scaling to $\HH$ and applying the Cayley map
   gives the sharp bound $|f'(0)|\le4$, attained by
   $2(1+\lambda z)/(1-\lambda z)$.
-- [ ] 51. P-64ZUP — conformal map from $\{|z|<1,\ |z-1/2|>1/2\}$ to $\DD$
+- [x] 51. P-64ZUP — conformal map from $\{|z|<1,\ |z-1/2|>1/2\}$ to $\DD$
+  Disposition 2026-09-04: confirmed and fixed. After normalizing to the
+  vertical strip $0<\Re\zeta<1$, the correct exponential is
+  $e^{\pi i\zeta}$: its argument is $\pi\Re\zeta\in(0,\pi)$. The old
+  $e^{\pi\zeta}$ maps the strip to an annulus, not a half-plane.
 - [ ] 52. P-6VF7J — part (b), an $f$ analytic at $1$ whose series $\sum a_n$ diverges
 - [ ] 53. P-BHLSJ — Laurent expansions of $e^{1/z}$ and $\cos(1/z)$ about $0$
 - [ ] 54. P-CWXEW — wedge angle is $\pi/2$, not $\pi$

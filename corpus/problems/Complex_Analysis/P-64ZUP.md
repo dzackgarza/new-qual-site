@@ -51,9 +51,13 @@ for $z = 1/2 + (1/2)e^{i\theta}$, $w = \frac{1}{1-z} = \frac{1}{1/2 - (1/2)e^{i\
 ::: {.proof}
 $\zeta = 2w - 1$ maps $\operatorname{Re} w = 1/2$ to $\operatorname{Re} \zeta = 0$ and $\operatorname{Re} w = 1$ to $\operatorname{Re} \zeta = 1$.
 :::
-<2>2. The map $\eta = e^{\pi \zeta}$ sends the strip $\{0 < \operatorname{Re} \zeta < 1\}$ to the upper half-plane.
+<2>2. The map $\eta = e^{\pi i \zeta}$ sends the strip $\{0 < \operatorname{Re} \zeta < 1\}$ to the upper half-plane.
 ::: {.proof}
-$e^{\pi \zeta}$ maps the vertical strip of width $1$ to the upper half-plane.
+If $\zeta=x+iy$ with $0<x<1$, then
+\[
+e^{\pi i\zeta}=e^{-\pi y}e^{i\pi x},
+\]
+whose argument lies in $(0,\pi)$. Conversely every point of $\HH$ has a unique logarithm with argument in $(0,\pi)$, so this is a biholomorphism from the vertical strip onto $\HH$.
 :::
 <2>3. The map $\xi = \frac{\eta - i}{\eta + i}$ sends the upper half-plane to the unit disk.
 ::: {.proof}
@@ -61,7 +65,7 @@ the Cayley transform.
 :::
 
 <1>5. Composing, a conformal map $D \to \Delta$ is
-$$z \mapsto \frac{e^{\pi(2/(1-z) - 1)} - i}{e^{\pi(2/(1-z) - 1)} + i}.$$
+$$z \mapsto \frac{e^{\pi i(2/(1-z) - 1)} - i}{e^{\pi i(2/(1-z) - 1)} + i}.$$
 ::: {.proof}
 <1>3 and <1>4.
 :::
