@@ -62,7 +62,8 @@ exactness makes the middle map an isomorphism.
 
 <1>3. $H_3(E)\cong\ZZ$.
 ::: {.proof}
-By <1>1, $E$ is $2$-connected. The Hurewicz theorem therefore gives an isomorphism
+By <1>1, $E$ is $2$-connected.
+The Hurewicz theorem therefore gives an isomorphism
 \[
 \pi_3(E)\xrightarrow{\sim}H_3(E).
 \]
