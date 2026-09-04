@@ -173,7 +173,12 @@ Disposition order follows the finding numbers.
   the endpoint $1$: for any $\delta>0$, take $x<1$ within $\delta$ of $1$ and
   then $k$ large enough that $x^k<1/2$. The old comparison with a fixed
   $x_0<1$ did not make the two input points arbitrarily close.
-- [ ] 31. E-GPCW2 — sign of the stated value of $\int_{-1}^1 dx/((x-a)\sqrt{1-x^2})$
+- [x] 31. E-GPCW2 — sign of the stated value of $\int_{-1}^1 dx/((x-a)\sqrt{1-x^2})$
+  Disposition 2026-09-04: confirmed, with a missing hypothesis. For real
+  $|a|>1$, direct substitution $x=\cos\theta$ gives
+  $I(a)=-\operatorname{sgn}(a)\pi/\sqrt{a^2-1}$. In particular the value is
+  negative for $a>1$; the old formula had the wrong sign and did not state the
+  range of $a$.
 - [ ] 32. E-GPFKM — wrong inverse Cayley map in applying Schwarz
 - [ ] 33. E-4H3JY — "why the image is in $\mathbb H$" computes the wrong quantity and uses a map...
 - [ ] 34. E-AHBVF — expansion uses the reciprocal of the cosine argument
