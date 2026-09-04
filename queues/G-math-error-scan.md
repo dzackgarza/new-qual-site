@@ -296,7 +296,12 @@ Disposition order follows the finding numbers.
   half-plane. The corrected chain maps that slit sector to a slit right
   half-plane, then a slit disk, a right half-disk, a quadrant, and finally
   $\HH$.
-- [ ] 55. P-FY3WB — truncated exponential $\sum_{k=0}^n z^k/k!$: wrong $n=2$ argument and invalid...
+- [x] 55. P-FY3WB — truncated exponential $\sum_{k=0}^n z^k/k!$: wrong $n=2$ argument and invalid...
+  Disposition 2026-09-04: confirmed and rewritten. Rather than factor the wrong
+  quadratic or compare against $1+z$ where it vanishes on the contour, the
+  proof compares $f_n$ directly with $e^z$ on $|z|=1$. For $n\ge2$ the
+  exponential tail is at most $1/4<e^{-1}\le|e^z|$, so Rouché gives no zeros
+  in the open disk.
 - [ ] 56. P-IM6MH — inversion $1/(2z-1)$: final display labels the series as $1/(1-2z)$
 - [ ] 57. P-KPCIE — midpoint recurrence $x_n=(x_{n-1}+x_{n-2})/2$: final closed form and limit ar...
 - [ ] 58. P-MICNK — $az^n+z+1$ has a root in $|z|\le2$: Rouché threshold off by a factor of $4^n$
