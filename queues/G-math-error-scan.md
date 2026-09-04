@@ -124,7 +124,12 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The annotation now records
   $\zeta_3=-1/2+i\sqrt3/2$, with sum of the conjugate roots $-1$ and product
   $1$, which is exactly the factorization data for $z^2+z+1$.
-- [ ] 22. E-3OJLH — circular Schwarz-lemma application; `F(0)=0` is false
+- [x] 22. E-3OJLH — circular Schwarz-lemma application; `F(0)=0` is false
+  Disposition 2026-09-04: confirmed and rewritten. The proof now factors
+  $f(z)=zg(z)$ by Schwarz, applies Schwarz to the odd part
+  $h=(g(z)-g(-z))/2$, and handles the equality case using the even part and
+  the parallelogram identity. The statement also now excludes $z=0$ from the
+  rigidity hypothesis, since equality at $0$ is automatic for every $f$.
 - [ ] 23. E-CLSFF — false claim that the remaining entire function $Q$ is constant
 - [ ] 24. E-CFTRQ — two slips in the proof that $\mathrm{Aut}(\mathbb{CP}^1)$ is the set of fract...
 - [ ] 25. E-EOMTI — the semicircular-reduction solution computes the wrong auxiliary integral
