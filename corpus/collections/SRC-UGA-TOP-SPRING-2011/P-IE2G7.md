@@ -25,7 +25,8 @@ Justify your answers.
 ::: {.solution}
 <1>1. Every discrete space is totally disconnected.
 ::: {.proof}
-Let $C\subseteq X$ contain at least two points and choose $x\in C$. Since $X$ is discrete, both
+Let $C\subseteq X$ contain at least two points and choose $x\in C$.
+Since $X$ is discrete, both
 \[
 \{x\}
 \qquad\text{and}\qquad
@@ -43,7 +44,8 @@ Every open interval about a rational $q$ contains rational points other than $q$
 
 <1>3. The space $\QQ$ is totally disconnected.
 ::: {.proof}
-Let $C\subseteq\QQ$ contain distinct points $a<b$. Choose an irrational number $r$ with
+Let $C\subseteq\QQ$ contain distinct points $a<b$.
+Choose an irrational number $r$ with
 \[
 a<r<b.
 \]
