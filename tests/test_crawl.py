@@ -23,15 +23,9 @@ def test_crawl_follows_data_driven_catalog_urls(tmp_path: Path) -> None:
     write(site / "exam" / "SRC-ONE.html", "Exam")
     write(site / "404.html", "not found")
     write(site / "generate.html", "legacy redirect")
-    (site / "problems.json").write_text(
-        json.dumps({"rows": [{"url": "tag/P-ONE.html"}]})
-    )
-    (site / "sources.json").write_text(
-        json.dumps({"rows": [{"url": "exam/SRC-ONE.html"}]})
-    )
-    (site / "collection-problems.json").write_text(
-        json.dumps({"SRC-ONE": {"items": [{"url": "tag/P-ONE.html"}]}})
-    )
+    (site / "problems.json").write_text(json.dumps({"rows": [{"url": "tag/P-ONE.html"}]}))
+    (site / "sources.json").write_text(json.dumps({"rows": [{"url": "exam/SRC-ONE.html"}]}))
+    (site / "collection-problems.json").write_text(json.dumps({"SRC-ONE": {"items": [{"url": "tag/P-ONE.html"}]}}))
 
     result = crawl(site)
 
@@ -44,7 +38,7 @@ def test_crawl_follows_data_driven_catalog_urls(tmp_path: Path) -> None:
 def test_crawl_treats_pagefind_documents_as_search_reachable(tmp_path: Path) -> None:
     site = tmp_path / "_site"
     write(site / "index.html", '<dialog id="site-search"></dialog>')
-    write(site / "tag" / "T-ONE.html", '<main data-pagefind-body>Theory searchable only</main>')
+    write(site / "tag" / "T-ONE.html", "<main data-pagefind-body>Theory searchable only</main>")
 
     result = crawl(site)
 
@@ -56,9 +50,7 @@ def test_crawl_treats_pagefind_documents_as_search_reachable(tmp_path: Path) -> 
 def test_data_driven_broken_url_is_a_crawl_failure(tmp_path: Path) -> None:
     site = tmp_path / "_site"
     write(site / "index.html", '<dialog id="site-search"></dialog>')
-    (site / "problems.json").write_text(
-        json.dumps({"rows": [{"url": "tag/P-MISSING.html"}]})
-    )
+    (site / "problems.json").write_text(json.dumps({"rows": [{"url": "tag/P-MISSING.html"}]}))
 
     urls = data_urls(site)
     result = crawl(site)

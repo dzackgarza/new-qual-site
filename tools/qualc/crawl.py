@@ -77,11 +77,7 @@ def browser_targets(site: pathlib.Path = SITE) -> dict[pathlib.Path, list[pathli
         if not data_path.exists():
             continue
         rows = _json(data_path)["rows"]
-        out[(site / page_name).resolve()] = [
-            target
-            for row in rows
-            if (target := _target(row["url"], site, site)) is not None
-        ]
+        out[(site / page_name).resolve()] = [target for row in rows if (target := _target(row["url"], site, site)) is not None]
     return out
 
 
@@ -136,9 +132,7 @@ def crawl(site: pathlib.Path = SITE) -> CrawlResult:
                 )
             )
 
-    indexed = frozenset(
-        page for page in pages if "data-pagefind-body" in page.read_text(errors="replace")
-    )
+    indexed = frozenset(page for page in pages if "data-pagefind-body" in page.read_text(errors="replace"))
     dynamic = browser_targets(site)
     seen: set[pathlib.Path] = set()
     queue = [(site / "index.html").resolve()]
