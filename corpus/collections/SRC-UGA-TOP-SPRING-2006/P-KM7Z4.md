@@ -30,15 +30,18 @@ and
 \]
 Thus singletons occur when $a=b$, and $Y$ itself occurs when $a=0$ in the second family.
 
-First suppose $Z\subseteq Y$ is a retract. Let
+First suppose $Z\subseteq Y$ is a retract.
+Let
 \[
 r:Y\to Z
 \]
-be a retraction and let $i:Z\hookrightarrow Y$ be the inclusion. Then $e=i\circ r:Y\to Y$ is continuous and
+be a retraction and let $i:Z\hookrightarrow Y$ be the inclusion.
+Then $e=i\circ r:Y\to Y$ is continuous and
 \[
 Z=\{y\in Y:e(y)=y\}.
 \]
-Because $Y$ is Hausdorff, the diagonal $\Delta_Y\subseteq Y\times Y$ is closed. Hence
+Because $Y$ is Hausdorff, the diagonal $\Delta_Y\subseteq Y\times Y$ is closed.
+Hence
 \[
 Z=(e,\operatorname{id}_Y)^{-1}(\Delta_Y)
 \]
@@ -48,9 +51,12 @@ Also $Y=[0,\infty)$ is connected, and
 \[
 Z=r(Y)
 \]
-is connected as the continuous image of a connected space. A nonempty connected subset of $\RR$ is an interval. Therefore $Z$ is a nonempty interval that is closed in $Y$, so it has one of the two forms displayed above.
+is connected as the continuous image of a connected space.
+A nonempty connected subset of $\RR$ is an interval.
+Therefore $Z$ is a nonempty interval that is closed in $Y$, so it has one of the two forms displayed above.
 
-Conversely, every such interval is a retract. For $Z=[a,b]$ define
+Conversely, every such interval is a retract.
+For $Z=[a,b]$ define
 \[
 r(x)=\min\{b,\max\{a,x\}\}.
 \]
@@ -60,5 +66,6 @@ For $Z=[a,\infty)$ define
 \[
 r(x)=\max\{a,x\}.
 \]
-Again $r$ is continuous, has image in $Z$, and satisfies $r|_Z=\operatorname{id}_Z$. Hence precisely the nonempty closed intervals in $[0,\infty)$ are retracts.
+Again $r$ is continuous, has image in $Z$, and satisfies $r|_Z=\operatorname{id}_Z$.
+Hence precisely the nonempty closed intervals in $[0,\infty)$ are retracts.
 :::
