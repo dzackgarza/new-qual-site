@@ -120,7 +120,10 @@ Disposition order follows the finding numbers.
   replaced by one residue proof: $\Res_{z=i}(1+z^2)^{-2}=1/(4i)$, hence
   $2\pi i\Res=\pi/2$, and the upper-semicircle contribution is
   $O(R^{-3})$.
-- [ ] 21. E-3B2YA — wrong value and wrong identity for the cube root of unity in the annotation
+- [x] 21. E-3B2YA — wrong value and wrong identity for the cube root of unity in the annotation
+  Disposition 2026-09-04: confirmed and fixed. The annotation now records
+  $\zeta_3=-1/2+i\sqrt3/2$, with sum of the conjugate roots $-1$ and product
+  $1$, which is exactly the factorization data for $z^2+z+1$.
 - [ ] 22. E-3OJLH — circular Schwarz-lemma application; `F(0)=0` is false
 - [ ] 23. E-CLSFF — false claim that the remaining entire function $Q$ is constant
 - [ ] 24. E-CFTRQ — two slips in the proof that $\mathrm{Aut}(\mathbb{CP}^1)$ is the set of fract...
