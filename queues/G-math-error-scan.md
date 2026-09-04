@@ -317,7 +317,11 @@ Disposition order follows the finding numbers.
   $|a|<2^{-n}$, not $|a|<2^n$. In the complementary regime Vieta gives
   $|\prod z_k|=|a|^{-1}\le2^n$, forcing at least one root to have modulus at
   most $2$.
-- [ ] 59. P-N6W5L — zeros of $z^3-z+1$ in $\Re z>0$: the listed roots of $z^3+1$ are wrong
+- [x] 59. P-N6W5L — zeros of $z^3-z+1$ in $\Re z>0$: the listed roots of $z^3+1$ are wrong
+  Disposition 2026-09-04: confirmed and fixed. Rouché on a right half-disk
+  compares $z^3+1$ with $-z$; the comparison is strict both on the large arc
+  and on the imaginary axis. The roots of $z^3+1$ are
+  $e^{i\pi/3},-1,e^{5i\pi/3}$, so exactly two lie in the right half-plane.
 - [ ] 60. P-P7IWV — one root of $z^4+2z^3-2z+10$ in each quadrant: wrong imaginary part of $f(it)...
 - [ ] 61. P-R2D54 — truncated exponentials have no zeros in the unit disk: the $f_2$ factorizatio...
 - [ ] 62. P-RMZDG part 2 — bounded $f$ vanishing on a sector as $|z|\to1$: the $\eps$-bound is taken in...

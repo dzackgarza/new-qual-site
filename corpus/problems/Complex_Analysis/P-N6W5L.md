@@ -15,37 +15,46 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find the number of zeros $z$ with $\Re(z) > 0$ for the following function:
 \[
 f(z) \da z^3-z+1
 .\]
 :::
 
-:::{.solution}
-Take a contour $\gamma_1 \da \ts{it \st t\in \RR}$ and $\gamma_2\da \ts{Re^{it} \st t\in [-\pi, \pi]}$.
-
-- Big: $M(z) = z^3 + 1$
-- Small: $m(z) = -z$
-
-On $\gamma_2$, we have $\abs{z} = R$, so take $R$ large enough that the following estimate holds:
+::: {.solution}
+Let
 \[
-\abs{M(z)} = \abs{z^3 + 1} \geq \abs{ \abs{z}^3 - 1} = R^3 - 1 > R
-= \abs{m(z)} = R
-.\]
-In particular, this works for $R> 1$.
+M(z)=z^3+1,
+\qquad
+m(z)=-z,
+\]
+so that $f=M+m$. Apply Rouché on the boundary of a large right half-disk.
 
-On $\gamma_1$, note
+On the semicircular part $|z|=R$ with $R\ge2$,
+\[
+|M(z)|\ge R^3-1>R=|m(z)|.
+\]
 
-- $\abs{M(z)} = \abs{ (it)^3 + 1 } = \abs{1-it^3}$
-- $\abs{m(z)} = \abs{it}$
+On the imaginary-axis part, write $z=it$. Then
+\[
+|M(it)|^2=|1-it^3|^2=1+t^6,
+\qquad
+|m(it)|^2=t^2.
+\]
+If $t^2\le1$, then $1+t^6>t^2$; if $t^2\ge1$, then $t^6\ge t^2$, so again $1+t^6>t^2$. Thus
+\[
+|M(it)|>|m(it)|
+\]
+on the entire imaginary axis.
 
-These can be interpreted geometrically: the former is the hypotenuse of a triangle and the latter is a leg, so $\abs{M(z)} \geq \abs{m(z)}$ will hold:
-
-
-![](../../assets/Complex_Analysis/999_Quals/figures/2022-01-06_05-02-12.png)
-
-Now note that $z^3 + 1$ has roots $\omega_3, \omega_3^2, \omega_3^3=-1$ for $\omega_k \da e^{i\pi\over k}$, and the first two are in the right half-plane.
-So $2 = \size Z_M = \size Z_f$ by Rouché.
+Hence $f$ and $M$ have the same number of zeros in the right half-disk. The roots of
+\[
+M(z)=z^3+1
+\]
+are
+\[
+e^{i\pi/3},\qquad -1,\qquad e^{5i\pi/3}.
+\]
+Exactly two lie in the open right half-plane. Taking $R$ large enough to contain all zeros of $f$, we conclude that $f$ has exactly two zeros with $\Re z>0$.
 :::
-
