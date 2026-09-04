@@ -179,7 +179,10 @@ Disposition order follows the finding numbers.
   $I(a)=-\operatorname{sgn}(a)\pi/\sqrt{a^2-1}$. In particular the value is
   negative for $a>1$; the old formula had the wrong sign and did not state the
   range of $a$.
-- [ ] 32. E-GPFKM — wrong inverse Cayley map in applying Schwarz
+- [x] 32. E-GPFKM — wrong inverse Cayley map in applying Schwarz
+  Disposition 2026-09-04: confirmed and fixed. For
+  $g(z)=i(1+z)/(1-z)$, the inverse is $(w-i)/(w+i)$, so
+  $g^{-1}(2i)=1/3$ and Schwarz gives $|f(2i)|\le1/3$.
 - [ ] 33. E-4H3JY — "why the image is in $\mathbb H$" computes the wrong quantity and uses a map...
 - [ ] 34. E-AHBVF — expansion uses the reciprocal of the cosine argument
 - [ ] 35. E-AOQLK — wrong residue at infinity
