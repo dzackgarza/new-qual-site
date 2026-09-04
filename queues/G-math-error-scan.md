@@ -307,7 +307,11 @@ Disposition order follows the finding numbers.
   coefficients were already those of $(2z-1)^{-1}$; the final display had
   accidentally changed the denominator to $1-2z$ while retaining the negative
   coefficients.
-- [ ] 57. P-KPCIE — midpoint recurrence $x_n=(x_{n-1}+x_{n-2})/2$: final closed form and limit ar...
+- [x] 57. P-KPCIE — midpoint recurrence $x_n=(x_{n-1}+x_{n-2})/2$: final closed form and limit ar...
+  Disposition 2026-09-04: confirmed and rewritten. Successive differences
+  shrink by $-1/2$, giving a direct Cauchy estimate, while
+  $x_{n-1}+2x_n=a+2b$ is invariant. Therefore the limit is
+  $(a+2b)/3$, not $(a+b)/3$; the title was corrected as well.
 - [ ] 58. P-MICNK — $az^n+z+1$ has a root in $|z|\le2$: Rouché threshold off by a factor of $4^n$
 - [ ] 59. P-N6W5L — zeros of $z^3-z+1$ in $\Re z>0$: the listed roots of $z^3+1$ are wrong
 - [ ] 60. P-P7IWV — one root of $z^4+2z^3-2z+10$ in each quadrant: wrong imaginary part of $f(it)...
