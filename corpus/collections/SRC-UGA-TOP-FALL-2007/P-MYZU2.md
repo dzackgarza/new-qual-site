@@ -18,49 +18,24 @@ Let $\theset{X_\alpha \mid \alpha \in A}$ be a family of connected subspaces of 
 Show that the union of the $X_\alpha$ is connected.
 :::
 
-::: {.remark}
-Proof 2 not complete?
-:::
-
 ::: {.solution}
+Let
+\[
+Y=\bigcup_{\alpha\in A}X_\alpha.
+\]
+Suppose, toward a contradiction, that $Y$ is disconnected. Then there are disjoint nonempty sets $U,V$, open in $Y$, such that
+\[
+Y=U\disjoint V.
+\]
+Since the common point $p$ belongs to $Y$, after interchanging $U$ and $V$ if necessary we may assume $p\in U$.
 
-\envlist
+Choose $q\in V$. Since $q\in Y$, there is some $\alpha$ with $q\in X_\alpha$. Then
+\[
+p\in U\cap X_\alpha,
+\qquad
+q\in V\cap X_\alpha.
+\]
+The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in the subspace $X_\alpha$, and their union is $X_\alpha$. This is a separation of $X_\alpha$, contradicting its connectedness.
 
-::: {.proof title="Variant 1"}
-
-- Take two connected sets $X, Y$; then there exists $p\in X\intersect Y$.
-
-- Toward a contradiction: write $X\union Y = A \disjoint B$ with both $A, B \subset A\disjoint B$ open.
-
-- Since $p\in X \union Y = A\disjoint B$, WLOG $p\in A$.
-  We will show $B$ must be empty.
-
-- Claim: $A\intersect X$ is clopen in $X$.
-
-  - $A\intersect X$ is open in $X$: ?
-
-  - $A\intersect X$ is closed in $X$: ?
-
-- The only clopen sets of a connected set are empty or the entire thing, and since $p\in A$, we must have $A\intersect X = X$.
-
-- By the same argument, $A\intersect Y = Y$.
-
-- So $A\intersect \qty{X\union Y} = \qty{A\intersect X} \union \qty{A\intersect Y} = X\union Y$
-
-- Since $A\subset X\union Y$, $A\intersect \qty{X\union Y} = A$
-
-- Thus $A = X\union Y$, forcing $B = \emptyset$.
-:::
-
-::: {.proof title="Variant 2"}
-
-Let $X \definedas \union_\alpha X_\alpha$, and let $p\in \intersect X_\alpha$.
-Suppose toward a contradiction that $X = A \disjoint B$ with $A,B$ nonempty, disjoint, and relatively open as subspaces of $X$.
-Wlog, suppose $p\in A$, so let $q\in B$ be arbitrary.
-
-Then $q\in X_\alpha$ for some $\alpha$, so $q\in B \intersect X_\alpha$.
-We also have $p\in A \intersect X_\alpha$.
-
-But then these two sets disconnect $X_\alpha$, which was assumed to be connected --  a contradiction.
-:::
+Therefore $Y$ is connected.
 :::
