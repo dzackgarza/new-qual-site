@@ -90,7 +90,8 @@ F_*\pi_1(X,x_0)
 p_*\pi_1(H,e').
 \]
 Here both groups are trivial: the left one by <1>1 and the right one because $H$ is simply connected.
-Thus a lift exists. Its value at the basepoint is prescribed to be $e'$, so uniqueness of based lifts gives uniqueness.
+Thus a lift exists.
+Its value at the basepoint is prescribed to be $e'$, so uniqueness of based lifts gives uniqueness.
 :::
 
 <1>4. The lift $\mu'$ has the required compatibility with multiplication on $G$.

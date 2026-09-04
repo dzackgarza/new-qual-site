@@ -18,32 +18,34 @@ audit:
   note: Replaced the migrated proof, which swapped A, B, and Y, by a source-faithful closure argument.
 ---
 
-:::{.problem}
-Let $X$ be a topological space, and $B \subset A \subset X$. 
-Equip $A$ with the subspace topology, and write $\cl_X (B)$ or $\cl_A (B)$ for the closure of $B$ as a subset of, respectively, $X$ or $A$. 
+::: {.problem}
+Let $X$ be a topological space, and $B \subset A \subset X$.
+Equip $A$ with the subspace topology, and write $\cl_X (B)$ or $\cl_A (B)$ for the closure of $B$ as a subset of, respectively, $X$ or $A$.
 
-Determine, with proof, the general relationship between $\cl_X (B) \cap A$ and $\cl_A (B)$ 
+Determine, with proof, the general relationship between $\cl_X (B) \cap A$ and $\cl_A (B)$
 
-> I.e., are they always equal? Is one always contained in the other but not conversely? Neither?
-
+> I.e., are they always equal?
+> Is one always contained in the other but not conversely?
+> Neither?
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Definition of closure: for $A\subseteq X$, $\cl_X(A)$ is the intersection of all $B\supseteq A$ which are closed in $X$.
+
 - Definition of "relative" closure: for $A\subseteq Y \subseteq X$, $\Cl_Y(A)$ is the intersection of all $B$ such that $Y\supseteq B \supseteq A$ which are closed in $Y$.
+
 - Closed sets in a subspace: $C \subseteq Y\subseteq X$ is closed in $Y$ iff $C = F\intersect Y$ for some closed $F\subseteq X$.
 :::
 
-:::{.strategy}
+::: {.strategy}
 Use that closed subsets of $A$ are intersections of $A$ with closed subsets of $X$.
 
 ![figures/image_2021-05-20-23-58-56.png](../../assets/figures/image_2021-05-20-23-58-56.png)
-
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. The set $A\cap\cl_X(B)$ is closed in $A$ and contains $B$.
 ::: {.proof}
 The set $\cl_X(B)$ is closed in $X$, so its intersection with $A$ is closed in the subspace $A$.
