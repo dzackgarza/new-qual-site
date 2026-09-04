@@ -153,7 +153,9 @@ Disposition order follows the finding numbers.
   the Taylor radius is the distance to $\RR_{\leq0}$. The radii are $5$ at
   $4+3i$ and $3$ at $-4+3i$; the old value $4$ was not the distance to the
   cut.
-- [ ] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
+- [x] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
+  Disposition 2026-09-04: confirmed and fixed. Schwarz–Pick gives
+  $(1-(3/4)^2)/(1-(1/2)^2)=7/12<2/3$, so the requested map cannot exist.
 - [ ] 28. E-FVXIT — wrong chain-rule formula in the computation of the sharp bound on $|f'(0)|$
 - [ ] 29. E-GAGCW — wrong right-hand side in the Schwarz–Pick rearrangement
 - [ ] 30. E-GFNDF — non-equicontinuity argued at the wrong point
