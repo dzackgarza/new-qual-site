@@ -63,7 +63,9 @@ is connected as the continuous image of a connected space.
 
 <1>4. Every retract $Z\subseteq Y$ has one of the forms listed in <1>1.
 ::: {.proof}
-By <1>3, $Z$ is a nonempty connected subset of $\RR$, hence an interval. By <1>2 it is closed in the subspace $Y=[0,\infty)$. The nonempty closed intervals in $Y$ are exactly the bounded intervals $[a,b]$ with $0\le a\le b<\infty$ and the rays $[a,\infty)$ with $a\ge0$.
+By <1>3, $Z$ is a nonempty connected subset of $\RR$, hence an interval.
+By <1>2 it is closed in the subspace $Y=[0,\infty)$.
+The nonempty closed intervals in $Y$ are exactly the bounded intervals $[a,b]$ with $0\le a\le b<\infty$ and the rays $[a,\infty)$ with $a\ge0$.
 :::
 
 <1>5. Every bounded interval $[a,b]$ listed in <1>1 is a retract of $Y$.
