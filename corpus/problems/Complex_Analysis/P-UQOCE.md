@@ -19,13 +19,12 @@ audit:
 
 ::: problem
 Let $f$ be analytic in a domain $D$ and $\gamma$ be a closed, piecewise smooth curve in $D$.
-For any $z_0 \in D$ not lying on $\gamma$, show that:
-$$\oint_\gamma \frac{f'(z)}{z - z_0} \, dz = \oint_\gamma \frac{f(z)}{(z - z_0)^2} \, dz.$$
-Give a generalization of this result for higher-order derivatives and powers.
+For any $z_0 \in D$ not lying on $\gamma$, show that: $$\oint_\gamma \frac{f'(z)}{z - z_0} \, dz = \oint_\gamma \frac{f(z)}{(z - z_0)^2} \, dz.$$ Give a generalization of this result for higher-order derivatives and powers.
 :::
 
 ::: solution
-Since $z_0\notin\gamma$, the function $f(z)/(z-z_0)$ is defined on a neighborhood of the curve. The product rule gives
+Since $z_0\notin\gamma$, the function $f(z)/(z-z_0)$ is defined on a neighborhood of the curve.
+The product rule gives
 \[
 d\qty({f(z)\over z-z_0})
 =\qty({f'(z)\over z-z_0}-{f(z)\over(z-z_0)^2})\,dz.

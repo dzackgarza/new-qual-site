@@ -57,15 +57,15 @@ If $\zeta=x+iy$ with $0<x<1$, then
 \[
 e^{\pi i\zeta}=e^{-\pi y}e^{i\pi x},
 \]
-whose argument lies in $(0,\pi)$. Conversely every point of $\HH$ has a unique logarithm with argument in $(0,\pi)$, so this is a biholomorphism from the vertical strip onto $\HH$.
+whose argument lies in $(0,\pi)$.
+Conversely every point of $\HH$ has a unique logarithm with argument in $(0,\pi)$, so this is a biholomorphism from the vertical strip onto $\HH$.
 :::
 <2>3. The map $\xi = \frac{\eta - i}{\eta + i}$ sends the upper half-plane to the unit disk.
 ::: {.proof}
 the Cayley transform.
 :::
 
-<1>5. Composing, a conformal map $D \to \Delta$ is
-$$z \mapsto \frac{e^{\pi i(2/(1-z) - 1)} - i}{e^{\pi i(2/(1-z) - 1)} + i}.$$
+<1>5. Composing, a conformal map $D \to \Delta$ is $$z \mapsto \frac{e^{\pi i(2/(1-z) - 1)} - i}{e^{\pi i(2/(1-z) - 1)} + i}.$$
 ::: {.proof}
 <1>3 and <1>4.
 :::

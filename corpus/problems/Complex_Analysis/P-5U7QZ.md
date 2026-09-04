@@ -35,7 +35,8 @@ Then $r(2)=i$ and $C(i)=0$, so
 \[
 F\da C\circ r\circ f:\DD\to\DD
 \]
-satisfies $F(0)=0$. Schwarz's lemma gives $|F'(0)|\le1$.
+satisfies $F(0)=0$.
+Schwarz's lemma gives $|F'(0)|\le1$.
 
 By the chain rule,
 \[
@@ -54,7 +55,8 @@ we obtain
 |f'(0)|\le4.
 \]
 
-The bound is sharp. For $|\lambda|=1$, take
+The bound is sharp.
+For $|\lambda|=1$, take
 \[
 f(z)=2\frac{1+\lambda z}{1-\lambda z}.
 \]

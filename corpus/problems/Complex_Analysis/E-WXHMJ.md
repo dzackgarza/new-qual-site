@@ -17,15 +17,19 @@ review: draft
 
 ::: {.exercise}
 Let $f$ be an elliptic function and $P$ be its fundamental parallelogram.
-Suppose that $f$ is nonconstant. Show that $f$ has at least two poles in $P$, counted with multiplicity.
+Suppose that $f$ is nonconstant.
+Show that $f$ has at least two poles in $P$, counted with multiplicity.
 :::
 
 ::: {.solution}
 Write the period lattice as $\Lambda=\omega_1\ZZ+\omega_2\ZZ$, and translate the fundamental parallelogram if necessary so that $f$ has no poles on $\bd P$.
 
-If $f$ had no poles, periodicity would make it an entire bounded function: it is bounded on the compact closure of $P$, hence bounded on all of $\CC$ by translation through $\Lambda$. Liouville's theorem would then force $f$ to be constant. Thus $f$ has at least one pole.
+If $f$ had no poles, periodicity would make it an entire bounded function: it is bounded on the compact closure of $P$, hence bounded on all of $\CC$ by translation through $\Lambda$.
+Liouville's theorem would then force $f$ to be constant.
+Thus $f$ has at least one pole.
 
-Suppose, toward a contradiction, that $f$ has only one pole counted with multiplicity. Then it is a single simple pole $z_0\in P$, so
+Suppose, toward a contradiction, that $f$ has only one pole counted with multiplicity.
+Then it is a single simple pole $z_0\in P$, so
 \[
 \Res_{z=z_0}f\neq0.
 \]

@@ -18,9 +18,11 @@ Find a conformal map from the region bounded by $\abs{z - {i\over 2}} = {1\over 
 :::
 
 ::: {.solution}
-The two circles are internally tangent at $z=0$, not at $z=i$. The desired region is the part inside $|z-i|<1$ and outside $|z-i/2|<1/2$.
+The two circles are internally tangent at $z=0$, not at $z=i$.
+The desired region is the part inside $|z-i|<1$ and outside $|z-i/2|<1/2$.
 
-Since both boundary circles pass through $0$, inversion sends them to parallel lines. If
+Since both boundary circles pass through $0$, inversion sends them to parallel lines.
+If
 \[
 w={1\over z},
 \]
@@ -47,7 +49,8 @@ Now set
 \[
 \zeta=2\pi(w+i).
 \]
-Then $0<\Im\zeta<\pi$, so $u=e^\zeta$ maps the strip biholomorphically onto $\HH$. Finally the Cayley map
+Then $0<\Im\zeta<\pi$, so $u=e^\zeta$ maps the strip biholomorphically onto $\HH$.
+Finally the Cayley map
 \[
 C(u)={u-i\over u+i}
 \]
