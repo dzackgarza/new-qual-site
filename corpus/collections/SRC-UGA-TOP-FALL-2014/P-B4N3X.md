@@ -37,7 +37,9 @@ is closed in the subspace $B$.
 
 <1>2. The two sets in <1>1 are closed in $X$.
 ::: {.proof}
-Because $A$ is closed in $X$, every subset closed in $A$ is closed in $X$. Hence $A\cap f^{-1}(C)$ is closed in $X$. The same argument applies to $B\cap f^{-1}(C)$ because $B$ is closed in $X$.
+Because $A$ is closed in $X$, every subset closed in $A$ is closed in $X$.
+Hence $A\cap f^{-1}(C)$ is closed in $X$.
+The same argument applies to $B\cap f^{-1}(C)$ because $B$ is closed in $X$.
 :::
 
 <1>3. For every closed $C\subseteq Y$, the set $f^{-1}(C)$ is closed in $X$.
@@ -53,6 +55,7 @@ By <1>2, both sets on the right are closed in $X$, so their finite union is clos
 
 <1>4. $f$ is continuous.
 ::: {.proof}
-By <1>3, the inverse image under $f$ of every closed subset of $Y$ is closed in $X$. This is the closed-set criterion for continuity.
+By <1>3, the inverse image under $f$ of every closed subset of $Y$ is closed in $X$.
+This is the closed-set criterion for continuity.
 :::
 :::
