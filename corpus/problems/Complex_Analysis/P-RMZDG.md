@@ -39,51 +39,47 @@ Show that if the real part of an entire function is bounded, then $f$ is constan
 
 :::
 
-:::{.solution title="Part 1"}
+::: {.solution title="Part 1"}
+Fix an integer $m>k$. By Cauchy's estimate on the circle $|z|=R$,
 \[
-\abs{ f(z_0) }
-&= \abs{ {1\over 2\pi i} \oint_{\abs{z-z_0} = R } {f(z) \over (z-z_0)^{n+1} }  \dz } \\
-&\leq {1\over 2\pi } \oint_{\abs{z-z_0} = R } \abs{f(z)} R^{-(n+1)}   \dz \\
-&\leq {1\over 2\pi }\sup_{\abs{z-z_0} = R} \abs{f(z)} R^{-(n+1)} \cdot 2\pi R \\
-&= \sup_{\abs{z-z_0} = R} \abs{f(z)} R^{-n} \\
-&\leq (AR^k + B)R^{-n} \qquad \text{ if } z_0 = 0 \\
-&= AR^{k-n} + BR^{-n} \\
-&\to 0 
-,\]
-provided $k-n< 0$, so $n>k$.
-Since $f$ is entire, write
+|f^{(m)}(0)|
+\le {m!\over R^m}\max_{|z|=R}|f(z)|
+\le m!\qty(AR^{k-m}+BR^{-m}).
+\]
+Letting $R\to\infty$ gives $f^{(m)}(0)=0$. This holds for every $m>k$, so
 \[
-f(z) 
-= \sum_{n\geq 0} f^{(n)}(0) {z^n\over n!}
-= \sum_{0\leq n\leq k} f^{(n)}(0) {z^n\over n!}
-,\]
-making $f$ a polynomial of degree at most $k$.
+f(z)=\sum_{m=0}^k {f^{(m)}(0)\over m!}z^m.
+\]
 :::
 
-:::{.solution title="Part 2"}
-Write $S_\phi \da \ts{0<\Arg(z) < \phi}$ and choose $n$ large enough so that 
+::: {.solution title="Part 2"}
+Let $S=\{z\in\DD:\theta<\arg z<\phi\}$. Choose $N$ so large that the rotated sectors
 \[
-\DD \subseteq S \union \zeta_n S \union \zeta_n^2 S \union\cdots\union \zeta_{n}^{n-1}S
-,\]
-i.e. so that the rotated sectors cover the disc.
-By uniform convergence of $f$ to $0$ on $S$, choose $r<1$ small enough so that $\abs{f(z)} < \eps$ for $\abs{z} < r$ in $S$.
-Note that $\DD_r \subseteq \Union_{k=0}^{n-1} \zeta_n^k S_r$, where $S_r \da \ts{z\in S \st \abs{z} \leq r}$ is a subsector of radius $r$.
+e^{2\pi i j/N}S,
+\qquad 0\le j<N,
+\]
+cover every angular direction. Since $f$ is bounded, put
+\[
+M=\sup_{z\in\DD}|f(z)|<\infty
+\]
+and define
+\[
+g(z)=\prod_{j=0}^{N-1} f\qty(e^{2\pi i j/N}z).
+\]
 
-By the MMP, let $M$ be the maximum of $f$ on $\DD$, which is attained at some point on $S^1$.
-Then $\abs{f} < M$ on every $\zeta_n^k S_r$.
-Now define
+Fix $\varepsilon>0$. By uniform convergence to $0$ in $S$ as $|z|\to1$, there is $\rho<1$ such that
 \[
-g(z) \da f(z) \prod_{k=1}^{n-1} f(\zeta_n^k z) \da f(z) \prod_{k=1}^{n-1}f_k(z)
-.\]
-Note that $\abs{f(z)}\leq \eps$ and $\abs{f_k(z)} \leq M$, so
+|f(z)|<\varepsilon
+\qquad(z\in S,\ \rho<|z|<1).
+\]
+For every $r\in(\rho,1)$ and every $|z|=r$, at least one rotated point $e^{2\pi i j/N}z$ lies in $S$. Hence
 \[
-\abs{g(z)}\leq \eps \cdot M^{n-1} \convergesto{\eps\to 0} 0
-.\]
-since $M$ is a constant.
-So $g(z) \equiv 0$ on $\DD_r$, and by the identity principle, on $\DD$.
-Thus some factor $f_k(z)$ is identically zero. 
-But if $f(\zeta_n^k z)\equiv 0$ on $\DD$, then $f(z) \equiv 0$ on $\DD$, since every $z\in \DD$ can be written as $\zeta_n^k w$ for some $w\in \DD$.
+|g(z)|\le \varepsilon M^{N-1}
+\qquad(|z|=r).
+\]
+The maximum modulus principle gives the same bound on $|z|\le r$. Since $\varepsilon$ is arbitrary, $g\equiv0$ on $\DD$.
 
+The ring of holomorphic functions on the connected disk is an integral domain, so one factor $f(e^{2\pi i j/N}z)$ is identically zero. Rotation is a bijection of $\DD$, hence $f\equiv0$.
 :::
 
 :::{.solution title="Part 3"}
@@ -99,16 +95,14 @@ Now note that $f(w_k) = 0$ and $f$ is continuous in $\DD$.
 So $\abs{f(z)} \in [0, M] \subseteq \RR$ where $M>1$, so by the intermediate value theorem, $\abs{f(z)} = 1$ for some $z$.
 :::
 
-:::{.solution title="Part 4, using MMP"}
-Write $f=u+iv$ where by assumption $u$ is bounded.
-Both $u$ and $v$ are harmonic, so if $\abs{u} \leq M$ on $\CC$, then there is some disc where $\abs{u} = M$ for some point in the interior.
-By the MMP for harmonic functions, $u$ is constant on $\CC$.
-So $u_x, u_y = 0$, and by Cauchy-Riemann, $v_x, v_y = 0$, so $v'=0$ and $v$ is constant, making $f$ constant.
-:::
-
-:::{.solution title="Part 4, using Liouville"}
-
-Consider $g(z) \da e^{f(z)}$, then $\abs{g(z)} = e^{\Re(z)}$ is entire and bounded and thus constant by Liouville's theorem.
-So $g'(z) = 0$, but on the other hand $g'(z) = f'(z) e^{f(z)} = 0$, so $f'(z) = 0$ and $f$ must be constant since $e^f$ is nonvanishing.
-
+::: {.solution title="Part 4"}
+Suppose $|\Re f(z)|\le M$ on $\CC$ and define $g(z)=e^{f(z)}$. Then $g$ is entire and
+\[
+|g(z)|=e^{\Re f(z)}\le e^M.
+\]
+By Liouville's theorem, $g$ is constant. Since
+\[
+g'(z)=f'(z)e^{f(z)}
+\]
+and $e^{f(z)}\neq0$, we get $f'\equiv0$. Thus $f$ is constant.
 :::

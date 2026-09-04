@@ -334,8 +334,18 @@ Disposition order follows the finding numbers.
   direct Rouché comparison with $e^z$ on $|z|=1$: for $n\ge2$ the tail is at
   most $1/4<e^{-1}\le|e^z|$, so $f_n$ has the same zero count as $e^z$, namely
   zero. The card's variable typo $f_n(x)$ was also corrected to $f_n(z)$.
-- [ ] 62. P-RMZDG part 2 — bounded $f$ vanishing on a sector as $|z|\to1$: the $\eps$-bound is taken in...
-- [ ] 63. P-RMZDG part 4 (MMP version) — bounded real part: "attains $M$ in some disk" does not follow
+- [x] 62. P-RMZDG part 2 — bounded $f$ vanishing on a sector as $|z|\to1$: the $\eps$-bound is taken in...
+  Disposition 2026-09-04: confirmed and rewritten. The rotated-sector product
+  now uses the hypothesis in the correct boundary annulus. On every circle
+  $|z|=r$ sufficiently near $1$, one rotated factor is $<\varepsilon$ and the
+  others are bounded by $M$; the maximum modulus principle forces the product,
+  and hence $f$, to vanish identically.
+- [x] 63. P-RMZDG part 4 (MMP version) — bounded real part: "attains $M$ in some disk" does not follow
+  Disposition 2026-09-04: confirmed and fixed. The false attained-maximum
+  argument was removed. If $|\Re f|\le M$, then $e^f$ is bounded entire, so
+  Liouville gives $f'e^f=0$ and hence $f$ is constant. The adjacent
+  $|e^f|=e^{\Re z}$ typo and part (a)'s incorrect Cauchy estimate were also
+  repaired while the card was open.
 - [ ] 64. P-SFDLG part 2 — discontinuity of the principal logarithm: the furnished sequence shows no dis...
 - [ ] 65. P-UQOCE — the integration-by-parts recursion for the generalization carries a spurious...
 - [ ] 66. P-WB56B — a C1 two-threshold argument for the uncountable split point, with a false con...
