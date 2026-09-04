@@ -36,7 +36,9 @@ $X$ is not compact.
 :::
 
 ::: {.solution}
-For (a), suppose first that $X$ is disconnected. Then there is a separation
+<1>1. If $X$ is disconnected, there is a continuous nonconstant map $X\to\{0,1\}$.
+::: {.proof}
+Choose a separation
 \[
 X=U\disjoint V
 \]
@@ -49,24 +51,40 @@ g|_U=0,
 g|_V=1.
 \]
 Since $\{0,1\}$ is discrete, the inverse images of its open subsets are unions of $U$ and $V$, so $g$ is continuous. It is nonconstant.
+:::
 
-Conversely, suppose that a continuous nonconstant map
+<1>2. If there is a continuous nonconstant map $X\to\{0,1\}$, then $X$ is disconnected.
+::: {.proof}
+Let
 \[
 g:X\to\{0,1\}
 \]
-exists. Then $g^{-1}(0)$ and $g^{-1}(1)$ are disjoint nonempty open subsets of $X$ whose union is $X$. Thus they form a separation, so $X$ is disconnected. This proves (a).
+be continuous and nonconstant. Then $g^{-1}(0)$ and $g^{-1}(1)$ are disjoint nonempty open subsets of $X$ whose union is $X$. Thus they form a separation.
+:::
 
-For (b), suppose toward a contradiction that
+<1>3. Part (a) follows.
+::: {.proof}
+The two implications are <1>1 and <1>2.
+:::
+
+<1>4. Under the hypotheses of part (b), if
 \[
 X=A\disjoint B
 \]
-is a separation. Since $A$ and $B$ are closed subsets of the compact space $X$, both are compact. Their images $f(A)$ and $f(B)$ are compact, and therefore closed in the Hausdorff space $Y$.
+is a separation, then $f(A)\cap f(B)\neq\emptyset$.
+::: {.proof}
+The sets $A$ and $B$ are closed subsets of the compact space $X$, hence compact. Therefore $f(A)$ and $f(B)$ are compact, and since $Y$ is Hausdorff they are closed in $Y$.
 
 Surjectivity gives
 \[
 Y=f(A)\cup f(B).
 \]
-Because $Y$ is connected and $f(A),f(B)$ are closed, they cannot be disjoint: otherwise each would be the complement of the other and hence both would be nonempty open subsets separating $Y$. Choose
+If $f(A)$ and $f(B)$ were disjoint, each would be the complement of the other and hence both would be nonempty open subsets separating the connected space $Y$. Thus they intersect.
+:::
+
+<1>5. Under the hypotheses of part (b), $X$ is connected.
+::: {.proof}
+Suppose toward a contradiction that $X=A\disjoint B$ is a separation. By <1>4 choose
 \[
 y\in f(A)\cap f(B).
 \]
@@ -79,12 +97,16 @@ meets both $A$ and $B$. Moreover
 F=(F\cap A)\disjoint(F\cap B),
 \]
 and both intersections are open in the subspace $F$, because $A$ and $B$ are open in $X$. This separates $F$, contradicting the hypothesis that every fiber is connected. Hence $X$ is connected.
+:::
 
-For (c), let
+<1>6. Compactness of $X$ cannot be omitted in part (b).
+::: {.proof}
+Let
 \[
 X=(-\infty,0]\ \amalg\ (0,\infty)
 \]
 be the topological disjoint union, let $Y=\RR$, and define $f:X\to Y$ by the ordinary inclusion on each summand. The map is continuous and surjective. It is also bijective, so every fiber is a singleton and hence connected.
 
 However, the two summands are disjoint nonempty open-and-closed subsets of $X$, so $X$ is disconnected. It is noncompact, since the second summand $(0,\infty)$ is a closed subspace of $X$ and is not compact. Thus compactness in (b) cannot be omitted.
+:::
 :::
