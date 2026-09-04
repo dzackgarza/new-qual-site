@@ -197,7 +197,13 @@ Disposition order follows the finding numbers.
   $f(z)=z-z^{-1}+O(z^{-3})$, the residue at infinity is the negative of the
   $z^{-1}$ coefficient, namely $1$; equivalently it is minus the sum
   $(-1/2)+(-1/2)$ of the finite residues.
-- [ ] 36. E-GRXN4 — misjudged true/false item on products of poles
+- [x] 36. E-GRXN4 — misjudged true/false item on products of poles
+  Disposition 2026-09-04: confirmed and fixed. The product of poles of orders
+  $m,n$ is always a pole of order $m+n$: factor
+  $f=(z-a)^{-m}u$, $g=(z-a)^{-n}v$ with $u(a)v(a)\neq0$. The old example
+  $f=g=1/z$ actually demonstrated the true statement rather than refuting it.
+  The four-item solution was also normalized to remove adjacent Laurent-series
+  typos while preserving the other three dispositions.
 - [ ] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ — 
 - [ ] 38. E-MCTII, misdirected conformal map for the Schwarz bound — 
 - [ ] 39. E-NIPUY, proves uniform continuity of the wrong function — 
