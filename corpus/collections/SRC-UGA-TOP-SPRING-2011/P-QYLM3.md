@@ -67,8 +67,7 @@ There is one $0$-cell, hence the boundary $C_1\to C_0$ is zero.
 \]
 ::: {.proof}
 By <1>1 we may take the new attaching map to be constant.
-Thus the new $2$-cell contributes zero to the cellular boundary, while the original $2$-cell contributes $2$ by <1>2.
-With respect to the basis consisting of the original and new $2$-cells,
+Thus the new $2$-cell contributes zero to the cellular boundary, while the original $2$-cell contributes $2$ by <1>2. With respect to the basis consisting of the original and new $2$-cells,
 \[
 d_2(u,v)=2u.
 \]
