@@ -683,8 +683,8 @@ workflow are deliberately separate:
 - `TODO.md` §7, "Author solutions", together with issue #2 — the authored
   repeating loop. Select one unsolved card, read the problem and its source,
   independently verify any retained source solution, write a complete
-  structured proof in a `solution` section on that same problem card, and
-  commit it before selecting the next card.
+  Lamport-style structured proof in a `solution` section on that same problem
+  card, and commit it before selecting the next card.
 
 `just sample-unsolved` draws n random unsolved cards (default 5) by querying
 the catalog for problem cards with no solution section. The solution

@@ -1229,7 +1229,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Read the problem and its source.
 
-- [ ] Write a complete structured proof.
+- [ ] Write a complete Lamport-style structured proof.
 
 - [ ] Add a `solution` section to the card.
 
