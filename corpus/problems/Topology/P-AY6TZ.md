@@ -45,7 +45,8 @@ The first follows from
 \[
 T^2=S^1\times S^1
 \]
-and the product formula for fundamental groups. The second is the standard computation from the universal double cover
+and the product formula for fundamental groups.
+The second is the standard computation from the universal double cover
 \[
 S^2\to\RP^2.
 \]
@@ -53,7 +54,8 @@ S^2\to\RP^2.
 
 <1>3. No injective homomorphism $\ZZ^2\to\ZZ/2\ZZ$ exists.
 ::: {.proof}
-The image of any such homomorphism is a subgroup of the two-element group $\ZZ/2\ZZ$, hence has at most two elements. The group $\ZZ^2$ is infinite, so an injective map is impossible.
+The image of any such homomorphism is a subgroup of the two-element group $\ZZ/2\ZZ$, hence has at most two elements.
+The group $\ZZ^2$ is infinite, so an injective map is impossible.
 :::
 
 <1>4. No covering map $T^2\to\RP^2$ exists.

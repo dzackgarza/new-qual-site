@@ -78,8 +78,7 @@ Thus $b=c=a$.
 \]
 Equivalently, they are the $\{\pm1\}$-valued sequences that are eventually constant.
 ::: {.proof}
-The first description follows from <1>1 and <1>2.
-A convergent sequence taking values only in the discrete set $\{-1,1\}$ must eventually equal its limit, which is either $1$ or $-1$.
+The first description follows from <1>1 and <1>2. A convergent sequence taking values only in the discrete set $\{-1,1\}$ must eventually equal its limit, which is either $1$ or $-1$.
 :::
 
 <1>4. Let $a=(a_n)\in B$ and let $L=\lim_n a_n$.
@@ -117,8 +116,7 @@ associate the convergent sequence
 (\varepsilon_1,\ldots,\varepsilon_N,
 \varepsilon_\infty,\varepsilon_\infty,\ldots),
 \]
-which is an extreme point by <1>3.
-The same convex combination representing $(a_1,\ldots,a_N,L)$ in the cube represents $a^{(N)}$ as a convex combination of these extreme sequences.
+which is an extreme point by <1>3. The same convex combination representing $(a_1,\ldots,a_N,L)$ in the cube represents $a^{(N)}$ as a convex combination of these extreme sequences.
 :::
 
 <1>6. The unit ball is the norm-closed convex hull of its extreme points:

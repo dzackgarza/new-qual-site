@@ -23,7 +23,7 @@ audit:
 Show that any continuous map $f : \RP^2 \to S^1 \times S^1$ is necessarily null-homotopic.
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. The induced homomorphism
 \[
 f_*:\pi_1(\RP^2)\to\pi_1(T^2)

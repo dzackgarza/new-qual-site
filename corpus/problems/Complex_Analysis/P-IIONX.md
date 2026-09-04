@@ -11,6 +11,11 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Replaced first-person uncertainty and orientation heuristics by direct modulus and imaginary-part calculations.
 ---
 
 ::: {.problem}
@@ -18,26 +23,74 @@ Find a fractional linear transformation $T$ which maps $\HH$ to $\DD$, and expli
 :::
 
 ::: {.solution}
-Unclear to me how to *motivate* this formula, but choose $f(z) = {z-i\over z+i}$.
-Note that
+<1>1. The fractional linear map
+\[
+T(z)=\frac{z-i}{z+i}
+\]
+is a biholomorphism $\HH\to\DD$.
+::: {.proof}
+Let $z=x+iy$ with $y>0$.
+Then
+\[
+|T(z)|^2
+=\frac{x^2+(y-1)^2}{x^2+(y+1)^2}<1,
+\]
+so $T(\HH)\subseteq\DD$.
 
-- $f(-1) = i$
+Solving $w=T(z)$ for $z$ gives
+\[
+z=i\frac{1+w}{1-w}.
+\]
+For $|w|<1$ this inverse has positive imaginary part, so it maps $\DD$ into $\HH$.
+Thus $T$ is a biholomorphism.
+:::
 
-- $f(0) = -1$
+<1>2. For $z=x+iy\in\HH$,
+\[
+\Im T(z)=-\frac{2x}{|z+i|^2}.
+\]
+::: {.proof}
+Multiply numerator and denominator by $\overline{z+i}=x-i(y+1)$:
+\[
+T(z)
+=\frac{(x+i(y-1))(x-i(y+1))}{|z+i|^2}.
+\]
+The imaginary part of the numerator is
+\[
+x(y-1)-x(y+1)=-2x.
+\]
+:::
 
-- $f(1) = -i$,
+<1>3. The first quadrant
+\[
+Q_1=\{z:\Re z>0,\ \Im z>0\}
+\]
+is mapped into the lower half of the unit disk.
+::: {.proof}
+By <1>1, $T(Q_1)\subseteq\DD$.
+By <1>2, $\Re z>0$ implies
+\[
+\Im T(z)<0.
+\]
+Hence
+\[
+T(Q_1)\subseteq\{w\in\DD:\Im w<0\}.
+\]
+:::
 
-so $\RR$ oriented from $-\infty\to\infty$ is sent to $S^1$ oriented counterclockwise.
-Since this is conformal, it preserves handedness -- noting that $\HH$ is on the left with respect to $\RR$, it gets mapped to the left of $S^1$ with its induced orientation, i.e. the interior of $\DD$.
-How to remember: $\abs{z-i}<\abs{z+i}$ in $\HH$, since points are closer to $i$ than $-i$.
-
-The image of the first quadrant: the claim is that this is $\DD \intersect Q_{34}$.
-Note that parameterizing seems hard!
-The naive idea would be to check the image of horizontal lines $t + ci$ for $c$ fixed heights and $t\in (0, \infty)$ the parameterization.
-Instead consider handedness and where sub-regions go:
+<1>4. In fact,
+\[
+\boxed{T(Q_1)=\{w\in\DD:\Im w<0\}}.
+\]
+::: {.proof}
+Let $w\in\DD$ with $\Im w<0$, and let $z=T^{-1}(w)\in\HH$ by <1>1.
+Applying <1>2 to this $z$ gives
+\[
+\Im w=-\frac{2\Re z}{|z+i|^2}<0,
+\]
+so $\Re z>0$.
+Thus $z\in Q_1$ and $w=T(z)$.
+:::
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-31_03-15-00.png)
-
-Noting that $Q_1$ is the bigon enclosed by $0, \infty$, this maps to a bigon spanned by $-1, 1$.
-By handedness, since $Q_1$ is to the left of $\RR$, it gets mapped to the left of the image of $\RR_{>0}$, which is the lower half of the circle.
 :::
