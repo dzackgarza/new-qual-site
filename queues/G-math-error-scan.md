@@ -251,7 +251,13 @@ Disposition order follows the finding numbers.
   $\Im w=-1$ and $\Im w=-1/2$, so the lune becomes a strip; an affine
   rescaling, exponentiation, and the Cayley map then give an explicit
   biholomorphism to $\DD$.
-- [ ] 47. E-YFBH5 — Analytic self-maps of the disc, zero of order $k$ at $0$, $|f|\to 1$ at boundary
+- [x] 47. E-YFBH5 — Analytic self-maps of the disc, zero of order $k$ at $0$, $|f|\to 1$ at boundary
+  Disposition 2026-09-04: confirmed and rewritten. For
+  $g=f/z^k$, the boundary hypothesis gives $|g|\to1$. Applying the maximum
+  modulus argument to both $g$ and the nowhere-zero function $1/g$ yields
+  $|g|\le1$ and $|g|\ge1$, hence $g$ is a unimodular constant and
+  $f(z)=\lambda z^k$. The old proof neither established $|g|\le1$ nor used the
+  correct exponent in the conclusion.
 - [ ] 48. E-ZQGR5 — Radius of convergence of $\sum a^{k^2} z^k$
 - [ ] 49. P-3MIIY — $\int_0^\infty \frac{\log x}{1+x^n}\,dx$ (part vi)
 - [ ] 50. P-5U7QZ — sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
