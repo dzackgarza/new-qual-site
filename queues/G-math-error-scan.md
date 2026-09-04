@@ -130,7 +130,12 @@ Disposition order follows the finding numbers.
   $h=(g(z)-g(-z))/2$, and handles the equality case using the even part and
   the parallelogram identity. The statement also now excludes $z=0$ from the
   rigidity hypothesis, since equality at $0$ is automatic for every $f$.
-- [ ] 23. E-CLSFF — false claim that the remaining entire function $Q$ is constant
+- [x] 23. E-CLSFF — false claim that the remaining entire function $Q$ is constant
+  Disposition 2026-09-04: confirmed and fixed. After subtracting the principal
+  parts at the finite poles, the remainder is entire on $\CC$ and meromorphic
+  at $\infty$, hence polynomial. The old proof incorrectly forced this
+  polynomial part to be constant, which would exclude rational functions such
+  as $f(z)=z$.
 - [ ] 24. E-CFTRQ — two slips in the proof that $\mathrm{Aut}(\mathbb{CP}^1)$ is the set of fract...
 - [ ] 25. E-EOMTI — the semicircular-reduction solution computes the wrong auxiliary integral
 - [ ] 26. E-FS7GZ — wrong distance-to-branch-cut for the second center

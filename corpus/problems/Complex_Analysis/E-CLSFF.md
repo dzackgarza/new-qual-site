@@ -16,19 +16,33 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that the only meromorphic functions on $\CP^1$ are rational functions.
-
 :::
 
-:::{.solution}
-Any such $f$ can only have finitely many poles, so enumerate them as $\ts{z_k}_{k\leq n}$.
-Write $P_k$ for the principal part of $f$ at $z_k$, so there is a decomposition
+::: {.solution}
+Compactness of $\CP^1$ implies that $f$ has only finitely many poles.
+Let $a_1,\ldots,a_n\in\CC$ be the finite poles, and let $P_j$ be the principal part of $f$ at $a_j$.
+Then
 \[
-f(z) = \sum_{k \leq n} P_k(z) + Q(z)
-,\]
-where $Q(z)$ is now entire. 
-Note that $f(z)-Q(z)$ is evidently a rational function, and the claim is that $Q$ is constant.
-Indeed, $\CP^1$ is compact and $g$ is continuous, thus bounded, so Liouville applies.
-Thus $f(z) = \sum_{k\leq n}P_k(z) + c$ is rational.
+g(z)\da f(z)-\sum_{j=1}^nP_j(z)
+\]
+is entire on $\CC$.
+
+The function $g$ is also meromorphic at $\infty$, because both $f$ and each rational principal part $P_j$ are meromorphic on $\CP^1$.
+Hence $g(1/w)$ has at most a pole at $w=0$, so its Laurent series has only finitely many negative powers:
+\[
+g(1/w)=\sum_{k=-m}^{\infty}c_kw^k.
+\]
+Equivalently,
+\[
+g(z)=\sum_{k=1}^m c_{-k}z^k+h(z),
+\]
+where $h$ is entire and has a removable singularity at $\infty$.
+Thus $h$ extends holomorphically to the compact sphere, so it is constant.
+Therefore $g$ is a polynomial, and
+\[
+f(z)=g(z)+\sum_{j=1}^nP_j(z)
+\]
+is rational.
 :::
