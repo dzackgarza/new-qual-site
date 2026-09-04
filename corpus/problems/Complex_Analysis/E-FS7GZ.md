@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FS7GZ
 kind: problem
-title: Radius of convergence
+title: Taylor radii for the principal square root
 classification:
   areas:
   - complex-analysis
@@ -15,16 +15,24 @@ review: draft
 ---
 
 ::: {.exercise}
-Find the radius of convergences for the power series expansion of $\sqrt{z}$ about $z_0 = 4 +3i$.
+Find the radius of convergence of the Taylor series of the principal branch of $\sqrt z$ about $z_0=4+3i$.
 Repeat with $z_1=-4+3i$.
 :::
 
 ::: {.solution}
-Choose the principal branch of $\log$, so take a branch cut at $\RR_{\leq 0}$, to define $z^{1\over 2} = e^{{1\over 2}\log(z)}$.
-The radius of convergence is the distance to the nearest singularity or branch cut, so note that $f(z) = z^{1\over 2}$ is singular at $z=0$, so we compute $\abs{z_0 - 0} = \abs{4+3i} = 5$.
-The distance to the branch is also 5, so $R=5$.
+The principal square root is holomorphic on
+\[
+\CC\setminus\RR_{\leq0}.
+\]
+The Taylor radius at a point is therefore the distance from the center to the branch cut.
 
-For $z_1$, the distance to zero is $\abs{4+3i - 0} = 5$ but the distance to the branch is 4, so $R=4$.
+For $z_0=4+3i$, the closest point of $\RR_{\leq0}$ is $0$, so
+\[
+R_0=|4+3i|=5.
+\]
 
-> Note the subtle distinction: the series converges to $f$ in a disc $\abs{z-z_0}<1$, but the series itself converges in larger discs.
+For $z_1=-4+3i$, the perpendicular projection $-4$ lies on the branch cut, so
+\[
+R_1=|(-4+3i)-(-4)|=3.
+\]
 :::

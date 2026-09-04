@@ -148,7 +148,11 @@ Disposition order follows the finding numbers.
   $A=\int_0^\infty(1+x^2)^{-2}dx=\pi/4$, not the unsquared Cauchy
   integral. A single indented-semicycle proof now gives
   $2I+i\pi A=-\pi/2+i\pi^2/4$, hence $I=-\pi/4$.
-- [ ] 26. E-FS7GZ — wrong distance-to-branch-cut for the second center
+- [x] 26. E-FS7GZ — wrong distance-to-branch-cut for the second center
+  Disposition 2026-09-04: confirmed and fixed. For the principal square root,
+  the Taylor radius is the distance to $\RR_{\leq0}$. The radii are $5$ at
+  $4+3i$ and $3$ at $-4+3i$; the old value $4$ was not the distance to the
+  cut.
 - [ ] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
 - [ ] 28. E-FVXIT — wrong chain-rule formula in the computation of the sharp bound on $|f'(0)|$
 - [ ] 29. E-GAGCW — wrong right-hand side in the Schwarz–Pick rearrangement
