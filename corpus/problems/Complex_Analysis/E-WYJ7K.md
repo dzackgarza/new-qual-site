@@ -18,25 +18,45 @@ Find a conformal map from the region bounded by $\abs{z - {i\over 2}} = {1\over 
 :::
 
 ::: {.solution}
-This is a lune with a single intersection vertex at $z=i$.
-Orient the circles positively.
+The two circles are internally tangent at $z=0$, not at $z=i$. The desired region is the part inside $|z-i|<1$ and outside $|z-i/2|<1/2$.
 
-- Take $f(z) = {z+i\over z-i}$ to send
+Since both boundary circles pass through $0$, inversion sends them to parallel lines. If
+\[
+w={1\over z},
+\]
+then the circle
+\[
+|z-ia|=a
+\]
+has equation $|z|^2=2a\Im z$, hence on its image
+\[
+\Im w=-{\Im z\over |z|^2}=-{1\over 2a}.
+\]
+Therefore
+\[
+|z-i|=1\longmapsto \Im w=-{1\over2},
+\qquad
+|z-i/2|={1\over2}\longmapsto \Im w=-1.
+\]
+The lune maps to the horizontal strip
+\[
+-1<\Im w<-{1\over2}.
+\]
 
-  - $i\to \infty$
+Now set
+\[
+\zeta=2\pi(w+i).
+\]
+Then $0<\Im\zeta<\pi$, so $u=e^\zeta$ maps the strip biholomorphically onto $\HH$. Finally the Cayley map
+\[
+C(u)={u-i\over u+i}
+\]
+sends $\HH$ to $\DD$.
 
-  - $-i\to 0$
-
-  - $1\to {1+i\over 1-i} = i$
-
-  - $0\to -1$
-
-  So $\abs{z} = 1$ is sent to the imaginary axis $\ts{it}$ for $t\in (-\infty, \infty)$ oriented positively and $\abs{z- {i\over 2}} = {1\over 2}$ is sent to $\ts{-1 + it}$ also oriented positively.
-  The region then maps to $-1 < \Re(z) < 0$.
-
-- Rotate by $z\mapsto -i\pi z$ to get $0 < \Im(z) < \pi$.
-
-- Take $z\mapsto e^z$ to get $\HH$.
-
-- Take $z\mapsto {z-i\over z+i}$ to get $\DD$.
+Thus one conformal map is
+\[
+F(z)
+=\frac{\exp\!\left(2\pi\left(z^{-1}+i\right)\right)-i}
+{\exp\!\left(2\pi\left(z^{-1}+i\right)\right)+i}.
+\]
 :::

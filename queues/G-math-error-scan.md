@@ -245,7 +245,12 @@ Disposition order follows the finding numbers.
   parallelogram cancel, so the sum of all enclosed residues is always zero.
   The proof now also states why the forbidden one-pole case is a single simple
   pole: "one pole counted with multiplicity" means total pole order one.
-- [ ] 46. E-WYJ7K, wrong tangency vertex and image region for the tangent lune — 
+- [x] 46. E-WYJ7K, wrong tangency vertex and image region for the tangent lune —
+  Disposition 2026-09-04: confirmed and rewritten. The two circles are tangent
+  at $0$. Inversion $w=1/z$ sends them to the horizontal lines
+  $\Im w=-1$ and $\Im w=-1/2$, so the lune becomes a strip; an affine
+  rescaling, exponentiation, and the Cayley map then give an explicit
+  biholomorphism to $\DD$.
 - [ ] 47. E-YFBH5 — Analytic self-maps of the disc, zero of order $k$ at $0$, $|f|\to 1$ at boundary
 - [ ] 48. E-ZQGR5 — Radius of convergence of $\sum a^{k^2} z^k$
 - [ ] 49. P-3MIIY — $\int_0^\infty \frac{\log x}{1+x^n}\,dx$ (part vi)
