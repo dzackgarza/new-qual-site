@@ -57,10 +57,10 @@ Given this, there's just a clever rearrangement to obtain the stated result:
 \implies 
 \abs{ 1\over 1-\bar{f(w)}f(z) } \cdot \abs{f(z) - f(w) \over z-w} 
 &\leq \abs{1\over 1-\bar{w}z} \\
-,\]
+    ,\]
 and taking $z\to w$ on both sides yields
 \[
-\abs{1\over 1 - \abs{f(w)}^2 } \abs{f'(w)} \leq {1\over \abs{w}^2}
+{\abs{f'(w)}\over 1 - \abs{f(w)}^2 } \leq {1\over 1-\abs{w}^2}
 \implies
 \abs{f'(w)} \leq {1-\abs{f(w)}^2\over 1-\abs{w}^2 }
 .\]

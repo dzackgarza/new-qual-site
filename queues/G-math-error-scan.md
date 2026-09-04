@@ -163,7 +163,11 @@ Disposition order follows the finding numbers.
   $w\mapsto iw/2$ and the Cayley map gives
   $|F'(0)|=|f'(0)|/4\le1$, with equality for
   $f(z)=2(1+\lambda z)/(1-\lambda z)$.
-- [ ] 29. E-GAGCW — wrong right-hand side in the Schwarz–Pick rearrangement
+- [x] 29. E-GAGCW — wrong right-hand side in the Schwarz–Pick rearrangement
+  Disposition 2026-09-04: confirmed and fixed. Taking $z\to w$ in the
+  pseudohyperbolic contraction gives
+  $|f'(w)|/(1-|f(w)|^2)\le1/(1-|w|^2)$; the old intermediate
+  $1/|w|^2$ was unrelated to the preceding denominator.
 - [ ] 30. E-GFNDF — non-equicontinuity argued at the wrong point
 - [ ] 31. E-GPCW2 — sign of the stated value of $\int_{-1}^1 dx/((x-a)\sqrt{1-x^2})$
 - [ ] 32. E-GPFKM — wrong inverse Cayley map in applying Schwarz
