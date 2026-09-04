@@ -285,7 +285,11 @@ Disposition order follows the finding numbers.
   $1/(1+z)=\sum(-1)^nz^n$ has radius $1$, is analytic at $1$, and has a
   divergent coefficient sum. The previously missing part (c) is also proved
   using compactness of the closed unit disk inside the analytic domain.
-- [ ] 53. P-BHLSJ — Laurent expansions of $e^{1/z}$ and $\cos(1/z)$ about $0$
+- [x] 53. P-BHLSJ — Laurent expansions of $e^{1/z}$ and $\cos(1/z)$ about $0$
+  Disposition 2026-09-04: confirmed and rewritten. The old solution expanded
+  an unrelated rational function. The card now substitutes $1/z$ into the
+  exponential and cosine Taylor series, giving the requested Laurent series
+  on $0<|z|<\infty$.
 - [ ] 54. P-CWXEW — wedge angle is $\pi/2$, not $\pi$
 - [ ] 55. P-FY3WB — truncated exponential $\sum_{k=0}^n z^k/k!$: wrong $n=2$ argument and invalid...
 - [ ] 56. P-IM6MH — inversion $1/(2z-1)$: final display labels the series as $1/(1-2z)$

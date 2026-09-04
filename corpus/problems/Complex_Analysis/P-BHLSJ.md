@@ -19,35 +19,23 @@ Find the Laurent expansions about $z=0$ of the following functions:
 e^{1\over z} \hspace{8em} \cos \qty{1\over z}
 .\]
 
-:::{.solution}
-\envlist
+::: {.solution}
+Substitute $1/z$ into the usual Taylor series.
 
-Let $f(z) = {z+1\over z(z-1)}$.
-
-About $z=0$:
-
+For the exponential,
 \[
-f(z) 
-&= (z+1) \qty{- {1 \over z} + {1\over z-1} } \\
-&=  -(z+1) \qty{{1\over z} + \sum_{n=0}^\infty z^n } \\
-&= -(z+1)\sum_{n=-1}^\infty z^n \\
-&= {1\over z} + 2\sum_{n=0}^\infty z^n \\
-&= -{1\over z} -2 - 2z - 2z^2 - \cdots
-.\]
+e^{1/z}
+=\sum_{n=0}^\infty {1\over n!z^n}
+=1+{1\over z}+{1\over2!z^2}+{1\over3!z^3}+\cdots.
+\]
 
-About $z=1$:
-
+For the cosine,
 \[
-f(z) 
-&= \qty{(1-z) -2 \over 1-z} \qty{1 \over 1 - (1-z)} \\
-&= \qty{1 - {2\over 1-z}} \sum_{n=0}^\infty (1-z)^n \\ 
-&= \sum_{n=0}^\infty (1-z)^n - 2 \sum_{n=-1}^\infty (1-z)^n \\
-&= -{2\over 1-z} - \sum_{n=0}^\infty (1-z)^n \\
-&= {2\over z-1} + \sum_{n=0}^\infty (-1)^{n+1} (z-1)^n \\
-&= {2\over z-1} - 1 + (z-1) - (z-1)^2 + \cdots
-.\]
+\cos\qty{1\over z}
+=\sum_{n=0}^\infty {(-1)^n\over(2n)!z^{2n}}
+=1-{1\over2!z^2}+{1\over4!z^4}-{1\over6!z^6}+\cdots.
+\]
 
-
+Both Laurent series converge for every $z\neq0$, so their annulus of convergence is $0<|z|<\infty$.
 :::
-
 
