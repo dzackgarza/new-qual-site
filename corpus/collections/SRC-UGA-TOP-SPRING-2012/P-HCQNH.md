@@ -20,6 +20,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-04
   note: Restored the official problem statement verbatim; the source omits the finiteness hypothesis needed for ordinary Euler characteristic.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the second appearance against problem 8 of the official UGA Spring 2015 topology exam; that source states the same inclusion-exclusion formula and explicitly supplies a finite-dimensional-homology proviso.
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-04
@@ -31,27 +35,38 @@ Suppose that $U$ and $V$ are open subsets of a space $X$, with $X = U \cup V$.
 Find, with proof, a general formula relating the Euler characteristics of $X, U, V$, and $U \cap V$.
 :::
 
+::: problem
+Let $X$ be a topological space and let $U,V\subset X$ be open subsets with $X=U\cup V$.
+Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the relation
+\[
+\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V).
+\]
+
+(You may assume that the homologies of $U$, $V$, $U\cap V$, $X$ are finite-dimensional so that their Euler characteristics are well-defined.)
+:::
+
 ::: {.solution}
-<1>1. As stated in the official source, the problem needs the usual proviso that the ordinary Euler characteristics involved are defined.
-Assume, for example, that with rational coefficients
+<1>1. The Spring 2012 wording needs the usual proviso that the ordinary Euler characteristics involved are defined; the Spring 2015 wording supplies this proviso explicitly.
+Work with rational coefficients and assume, as intended in the latter wording, that
 \[
 H_k(X;\mathbb Q),\quad
 H_k(U;\mathbb Q),\quad
 H_k(V;\mathbb Q),\quad
 H_k(U\cap V;\mathbb Q)
 \]
-are finite-dimensional for every \(k\) and vanish for all sufficiently large \(k\). Then
+are finite-dimensional for every \(k\) and vanish for all sufficiently large \(k\), so that the ordinary Euler characteristics are finite sums.
+Then
 \[
 \boxed{
 \chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)}.
 \]
 ::: {.proof}
-Under this finite-type hypothesis,
+Under this finite-type interpretation of the stated proviso,
 \[
 \chi(Y)=\sum_{k\ge0}(-1)^k\dim_{\mathbb Q}H_k(Y;\mathbb Q)
 \]
 is a finite sum for each of the four spaces.
-Without such a hypothesis, the ordinary Euler characteristic in the source statement need not be defined, so no unrestricted numerical identity can be asserted.
+Without such a hypothesis, the ordinary Euler characteristic need not be defined, so no unrestricted numerical identity can be asserted.
 :::
 
 <1>2. The open cover \(X=U\cup V\) gives the Mayer--Vietoris long exact sequence

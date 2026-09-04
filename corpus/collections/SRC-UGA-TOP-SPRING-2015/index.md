@@ -23,6 +23,8 @@ source:
   - P-V45QY
   - P-Z74QX
   - P-72DG6
+  - id: P-HCQNH
+    comment: Spring 2015.8
   date:
     kind: academic-term
     term: spring
@@ -30,4 +32,5 @@ source:
 ---
 
 ::: remark
+Exam #8 is the same Euler-characteristic inclusion--exclusion problem as Spring 2012 #5, with an explicit finite-dimensional-homology proviso; it reuses [[P-HCQNH]].
 :::
