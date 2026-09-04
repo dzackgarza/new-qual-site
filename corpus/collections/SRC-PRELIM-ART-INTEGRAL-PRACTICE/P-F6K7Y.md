@@ -12,6 +12,11 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Corrected the final logarithmic form in item 8 and removed the unresolved question marks.
 ---
 
 ::: problem
@@ -51,7 +56,7 @@ review: draft
 
 - **Solution:** $\tan^4(x) + \tan^2(x) ~dx = \tan ^2 (x) (\tan^2(x) + 1) ~dx = \tan ^2 (x) \sec ^2 (x) ~dx = \tan ^2 (x) ~d \tan (x)$
 
-8. $\displaystyle \int \frac {2\sin^2 (x)}{\cos^3 (x)} ~dx = \color {blue} {- \ln(\tan (x) + \sec (x)) + \tan (x) \sec (x)} = \color {blue} {\ln(\sec (x) - \tan (x)) + \tan (x) \sec (x)} = \tan (x) \sec (x) - \frac {1}{2}(\ln (\sin (x)+1) - \ln (\sin (x)-1))???$
+8. $\displaystyle \int \frac {2\sin^2 (x)}{\cos^3 (x)} ~dx = \color {blue} {- \ln\left|\tan x + \sec x\right| + \tan x\sec x} = \color {blue} {\ln\left|\sec x - \tan x\right| + \tan x\sec x} = \tan x\sec x - \frac {1}{2}\left(\ln|1+\sin x| - \ln|1-\sin x|\right)$
 
 - **Solution:** $\frac {2\sin^2 (x)}{\cos^3 (x)} = 2 \tan^2 (x) \sec (x) = 2 (\sec^2 (x) - 1) \sec (x) = 2(\sec^3 (x) -\sec (x))$
 :::
