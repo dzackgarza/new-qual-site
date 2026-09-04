@@ -353,7 +353,13 @@ Disposition order follows the finding numbers.
   real axis to all of $\CC^\times$. Approaching $-1$ from above and below gives
   limiting values $i\pi$ and $-i\pi$. The polar Cauchy--Riemann derivation was
   also rewritten to remove sign and coordinate errors in the old calculation.
-- [ ] 65. P-UQOCE — the integration-by-parts recursion for the generalization carries a spurious...
+- [x] 65. P-UQOCE — the integration-by-parts recursion for the generalization carries a spurious...
+  Disposition 2026-09-04: confirmed and rewritten. Integrating
+  $d(f^{(k-1)}(z)/(z-z_0)^m)$ gives the recursion with coefficient $m$, not
+  $m/(k+1)$. Iterating gives the rising factorial
+  $m(m+1)\cdots(m+k-1)=(m+k-1)!/(m-1)!$. The proof now uses only exact
+  differentials, so it is valid for the arbitrary closed curve stated in the
+  problem without an unstated homology hypothesis.
 - [ ] 66. P-WB56B — a C1 two-threshold argument for the uncountable split point, with a false con...
 
 ## Findings (as scanned)
