@@ -26,40 +26,32 @@ Give an example of such an $f$ which is analytic at $1$ but $\sum_{n=0}^\infty a
 c.
 Prove that $f$ can not be analytic at *every* point of $S^1$.
 
-:::{.remark}
-Missing part (c)
-:::
-:::{.solution}
-:::{.concept}
+::: {.solution}
+For (a), take
+\[
+f(z)=\sum_{n=1}^\infty {z^n\over n^2}.
+\]
+Its radius of convergence is $1$, since
+\[
+\limsup_{n\to\infty}\left({1\over n^2}\right)^{1/n}=1.
+\]
+For every $|z|=1$ the series converges absolutely by comparison with
+$\sum n^{-2}$.
 
-:::
+For (b), take
+\[
+f(z)={1\over1+z}=\sum_{n=0}^\infty(-1)^nz^n.
+\]
+The Taylor series at $0$ has radius exactly $1$, because the nearest singularity is at $z=-1$. But $f$ is holomorphic in a neighborhood of $z=1$, while
+\[
+\sum_{n=0}^\infty a_n
+=\sum_{n=0}^\infty(-1)^n
+\]
+diverges.
 
-a.
-
-    - Take $\sum {z^n \over n^2}$
-    - Then \[\abs{z}\leq 1 \implies \abs{z^n\over n^2} \leq {1\over n^2}\] which is summable
-    - So the series converges for $\abs{z}\leq 1$.
-
-b.
-    - Take $\sum {z^n \over n}$; 
-    - Then $z=1$ yields the harmonic series, which diverges.
-
-    - For $z\in S^1\setminus\theset{1}$, we have $z = e^{2\pi it}$ for $0<t<2\pi$. 
-    - So fix $t$.
-
-    - Toward applying the Dirichlet test, set $a_n = 1/n, b_n = z^n$.
-
-    - Then for all $N$,
-    \[
-    \abs{\sum_{n=1}^N b_n}
-    = \abs{\sum_{n=1}^N b_n}
-    = \abs{\sum_{n=1}^N z^n}
-    = \abs{  {z-z^{N+1} \over \abs{1 - z}} } 
-    \leq {2 \over 1-z} < \infty
-    .\]
-
-    - Thus $\sum a_n b_n < \infty$ and $\sum z^n/n$ converges.
-
-    c. ?
-
+For (c), suppose instead that $f$ were analytic at every point of $S^1$ as well as on $\DD$. Then the closed unit disk $\overline\DD$ would be a compact subset of the open domain of analyticity. Hence there is $\varepsilon>0$ such that
+\[
+\{z:|z|<1+\varepsilon\}
+\]
+is still contained in that domain. The Taylor series of $f$ at $0$ would therefore have radius of convergence at least $1+\varepsilon$, contradicting the hypothesis that its radius is exactly $1$.
 :::

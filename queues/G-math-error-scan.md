@@ -279,7 +279,12 @@ Disposition order follows the finding numbers.
   vertical strip $0<\Re\zeta<1$, the correct exponential is
   $e^{\pi i\zeta}$: its argument is $\pi\Re\zeta\in(0,\pi)$. The old
   $e^{\pi\zeta}$ maps the strip to an annulus, not a half-plane.
-- [ ] 52. P-6VF7J — part (b), an $f$ analytic at $1$ whose series $\sum a_n$ diverges
+- [x] 52. P-6VF7J — part (b), an $f$ analytic at $1$ whose series $\sum a_n$ diverges
+  Disposition 2026-09-04: confirmed and fixed. The old example
+  $\sum z^n/n=-\log(1-z)$ is singular at $1$. The replacement
+  $1/(1+z)=\sum(-1)^nz^n$ has radius $1$, is analytic at $1$, and has a
+  divergent coefficient sum. The previously missing part (c) is also proved
+  using compactness of the closed unit disk inside the analytic domain.
 - [ ] 53. P-BHLSJ — Laurent expansions of $e^{1/z}$ and $\cos(1/z)$ about $0$
 - [ ] 54. P-CWXEW — wedge angle is $\pi/2$, not $\pi$
 - [ ] 55. P-FY3WB — truncated exponential $\sum_{k=0}^n z^k/k!$: wrong $n=2$ argument and invalid...
