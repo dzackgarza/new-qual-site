@@ -11,6 +11,15 @@ classification:
   - Subspace Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Checked the statement against problem 3 of the official UGA Fall 2014 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Verified the closed-set pasting argument; each restricted preimage is closed in its closed piece and hence closed in X, and the two pieces form a finite closed union.
 ---
 
 ::: {.problem}
