@@ -322,8 +322,18 @@ Disposition order follows the finding numbers.
   compares $z^3+1$ with $-z$; the comparison is strict both on the large arc
   and on the imaginary axis. The roots of $z^3+1$ are
   $e^{i\pi/3},-1,e^{5i\pi/3}$, so exactly two lie in the right half-plane.
-- [ ] 60. P-P7IWV — one root of $z^4+2z^3-2z+10$ in each quadrant: wrong imaginary part of $f(it)...
-- [ ] 61. P-R2D54 — truncated exponentials have no zeros in the unit disk: the $f_2$ factorizatio...
+- [x] 60. P-P7IWV — one root of $z^4+2z^3-2z+10$ in each quadrant: wrong imaginary part of $f(it)...
+  Disposition 2026-09-04: confirmed and rewritten. The axes are zero-free
+  because $f(x)=(x^2+x-1)^2+x^2+9>0$ and
+  $f(it)=t^4+10-2i(t^3+t)$ has positive real part. The quarter-disk argument
+  principle then gives one zero in the first quadrant; conjugation and degree
+  four give one in each remaining quadrant.
+- [x] 61. P-R2D54 — truncated exponentials have no zeros in the unit disk: the $f_2$ factorizatio...
+  Disposition 2026-09-04: confirmed and rewritten. The wrong quadratic
+  factorization and unfinished uniform-convergence sketch were replaced by the
+  direct Rouché comparison with $e^z$ on $|z|=1$: for $n\ge2$ the tail is at
+  most $1/4<e^{-1}\le|e^z|$, so $f_n$ has the same zero count as $e^z$, namely
+  zero. The card's variable typo $f_n(x)$ was also corrected to $f_n(z)$.
 - [ ] 62. P-RMZDG part 2 — bounded $f$ vanishing on a sector as $|z|\to1$: the $\eps$-bound is taken in...
 - [ ] 63. P-RMZDG part 4 (MMP version) — bounded real part: "attains $M$ in some disk" does not follow
 - [ ] 64. P-SFDLG part 2 — discontinuity of the principal logarithm: the furnished sequence shows no dis...
