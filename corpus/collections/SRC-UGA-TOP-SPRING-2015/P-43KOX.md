@@ -11,6 +11,15 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement verbatim against problem 1 of the official UGA Spring 2015 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Added the empty-product case and verified the common-point union argument for the nonempty case.
 ---
 
 ::: {.problem}
@@ -18,9 +27,14 @@ Prove that the product of two connected topological spaces is connected.
 :::
 
 ::: {.solution}
-Fix $(a,b)\in X\times Y$.
+<1>1. If $X\times Y=\emptyset$, then $X\times Y$ is connected.
+Henceforth assume $X\times Y\ne\emptyset$ and fix $(a,b)\in X\times Y$.
+::: {.proof}
+The empty space has no separation into two nonempty disjoint open subsets, so it is connected.
+Thus only the nonempty case remains.
+:::
 
-<1>1. The horizontal slice
+<1>2. The horizontal slice
 \[
 X_b=X\times\{b\}
 \]
@@ -34,22 +48,22 @@ The projection $X_b\to X$ is a homeomorphism, and the projection $Y_x\to Y$ is a
 The spaces $X$ and $Y$ are connected by hypothesis.
 :::
 
-<1>2. For every $x\in X$, the subspace
+<1>3. For every $x\in X$, the subspace
 \[
 T_x=X_b\cup Y_x
 \]
 is connected.
 ::: {.proof}
-By <1>1, both $X_b$ and $Y_x$ are connected.
+By <1>2, both $X_b$ and $Y_x$ are connected.
 They meet at the point $(x,b)$, so their union is connected.
 :::
 
-<1>3. The family $\{T_x:x\in X\}$ has a common point.
+<1>4. The family $\{T_x:x\in X\}$ has a common point.
 ::: {.proof}
 For every $x\in X$, the point $(a,b)$ lies in the horizontal slice $X_b\subseteq T_x$.
 :::
 
-<1>4. The union of the $T_x$ is all of $X\times Y$.
+<1>5. The union of the $T_x$ is all of $X\times Y$.
 ::: {.proof}
 If $(x,y)\in X\times Y$, then $(x,y)\in Y_x\subseteq T_x$.
 Hence
@@ -58,9 +72,9 @@ X\times Y=\bigcup_{x\in X}T_x.
 \]
 :::
 
-<1>5. $X\times Y$ is connected.
+<1>6. $X\times Y$ is connected.
 ::: {.proof}
-By <1>2 each $T_x$ is connected, by <1>3 they share a common point, and by <1>4 their union is $X\times Y$.
+By <1>3 each $T_x$ is connected, by <1>4 they share a common point, and by <1>5 their union is $X\times Y$.
 A union of connected subspaces with a common point is connected.
 :::
 
