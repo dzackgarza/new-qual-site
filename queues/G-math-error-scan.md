@@ -360,7 +360,13 @@ Disposition order follows the finding numbers.
   $m(m+1)\cdots(m+k-1)=(m+k-1)!/(m-1)!$. The proof now uses only exact
   differentials, so it is valid for the arbitrary closed curve stated in the
   problem without an unstated homology hypothesis.
-- [ ] 66. P-WB56B — a C1 two-threshold argument for the uncountable split point, with a false con...
+- [x] 66. P-WB56B — a C1 two-threshold argument for the uncountable split point, with a false con...
+  Disposition 2026-09-04: confirmed and rewritten. The false condensation-point
+  claim and the unstable two-threshold construction were replaced by an
+  elementary dyadic-partition proof. If every dyadic level had only one cell
+  meeting $E$ uncountably, those nested cells would shrink to one point and
+  make $E$ countable; hence some level has two uncountable cells, and any point
+  separating them gives the required uncountable left and right pieces.
 
 ## Findings (as scanned)
 
