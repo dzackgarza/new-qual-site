@@ -58,7 +58,9 @@ To prove the open-set criterion, it suffices to prove that every point of $f^{-1
 
 <1>3. The point $x$ from <1>2 is an interior point of $f^{-1}(U)$.
 ::: {.proof}
-Suppose not. Then every ball $B_{1/n}(x)$ contains a point outside $f^{-1}(U)$. Choose
+Suppose not.
+Then every ball $B_{1/n}(x)$ contains a point outside $f^{-1}(U)$.
+Choose
 \[
 x_n\in B_{1/n}(x)\setminus f^{-1}(U).
 \]
@@ -68,7 +70,8 @@ By the sequential criterion,
 \[
 f(x_n)\to f(x).
 \]
-Since $x\in f^{-1}(U)$, we have $f(x)\in U$. Because $U$ is open and $f(x_n)\to f(x)$, there is $N$ such that
+Since $x\in f^{-1}(U)$, we have $f(x)\in U$.
+Because $U$ is open and $f(x_n)\to f(x)$, there is $N$ such that
 \[
 n\ge N\implies f(x_n)\in U.
 \]
@@ -77,6 +80,7 @@ But $x_n\notin f^{-1}(U)$ for every $n$, so $f(x_n)\notin U$ for every $n$, a co
 
 <1>4. The sequential criterion implies the open-set criterion.
 ::: {.proof}
-The open set $U$ in <1>2 was arbitrary, and <1>3 shows every point of $f^{-1}(U)$ is interior. Hence $f^{-1}(U)$ is open for every open $U$, which is criterion <1>1.<2>1.
+The open set $U$ in <1>2 was arbitrary, and <1>3 shows every point of $f^{-1}(U)$ is interior.
+Hence $f^{-1}(U)$ is open for every open $U$, which is criterion <1>1.<2>1.
 :::
 :::
