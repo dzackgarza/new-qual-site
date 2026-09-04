@@ -13,8 +13,14 @@ classification:
   - Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Replaced the false commutativity claim and invalid fixed-point equivalence by normal-subgroup and fixed-field arguments.
 ---
 
+::: problem
 Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$. 
 
 Let $E = E_1 E_2 \subset K$. 
@@ -29,9 +35,10 @@ Show that $H_1 H_2$ is a subgroup of $G$.
 
 c.
 Show that 
-$$
+\[
 \Gal(K/(E_1 \cap E_2 )) = H_1 H_2
-.$$
+.\]
+:::
 
 :::{.concept}
 \envlist
@@ -42,68 +49,70 @@ $$
 :::
 
 :::{.solution}
-\envlist
-
-:::{.proof title="of a"}
-By the Galois correspondence, it suffices to show that the fixed field of $H_1 \intersect H_2$ is $E_1 E_2$.
-
-Let $\sigma \in H_1 \intersect H_2$; then $\sigma \in \Aut(K)$ fixes both $E_1$ and $E_2$.
-
-> Not sure if this works -- compositum is not literally product..?
-
-Writing $x \in E_1E_2$ as $x=e_1 e_2$, we have 
-$$
-\sigma(x) = \sigma(e_1 e_2) = \sigma(e_1) \sigma(e_2) = e_1 e_2  =x,
-$$
-
-so $\sigma$ fixes $E_1 E_2$.
-
-:::
-
-:::{.proof title="of b"}
-That $H_1 H_2 \subseteq G$ holds: if $\sigma = \tau_1 \tau_2 \in H_1 H_2$, then each $\tau_i$ is an automorphism of $K$ that fixes $E_i \supseteq \QQ$, so each $\tau_i$ fixes $\QQ$ and thus $\sigma$ fixes $\QQ$; hence $\sigma$ is an automorphism of $K$ fixing $\QQ$, i.e. $\sigma \in G$.
-
-:::{.claim}
-All elements in this subset commute.
-:::
-
-:::{.proof title="of claim"}
-\envlist
-
-- Let $\sigma = \sigma_1 \sigma_2 \in H_1 H_2$.
-
-- Note that $\sigma_1(e) = e$ for all $e\in E_1$ by definition, since $H_1$ fixes $E_1$, and $\sigma_2(e) \in E_1$ (?).
-
-- Then 
-  \[
-  \sigma_1(e) = e \quad \forall e \in E_1 \implies \sigma_1(\sigma_2(e)) = \sigma_2(e) 
-  \]
-  and substituting $e = \sigma_1(e)$ on the RHS yields
-  \[
-  \sigma_1 \sigma_2(e) = \sigma_2 \sigma_1(e)
-  ,\]
-  where a similar proof holds for $e\in E_2$ and thus for arbitrary $x\in E_1 E_2$.
-
-:::
- 
-
-
-:::
-
-:::{.proof title="of c"}
-By the Galois correspondence, the subgroup $H_1H_2 \leq G$ will correspond to an intermediate field $E$ such that $K/E/\QQ$ and $E$ is the fixed field of $H_1 H_2$.
-
-But if $\sigma \in H_1 H_2$, then $\sigma = \tau_1 \tau_2$ where $\tau_i$ is an automorphism of $K$ that fixes $E_i$, and so 
+<1>1. $H=H_1\cap H_2$.
+::: {.proof}
+An automorphism $\sigma\in G$ lies in $H$ exactly when it fixes the compositum $E_1E_2$ pointwise.
+This certainly implies that it fixes the subfields $E_1$ and $E_2$, so
 \[
-\sigma(x) = x \iff \tau_1\tau_2(x) = x
-&\iff \tau_2(x) = x 
-\\
-&~\&~ 
-\\
-\tau_1(x) = x &\iff x \in E_1 \intersect E_2
-.\].
+H\subseteq H_1\cap H_2.
+\]
 
+Conversely, if $\sigma\in H_1\cap H_2$, then $\sigma$ fixes both $E_1$ and $E_2$ pointwise.
+Every element of $E_1E_2$ is obtained from elements of $E_1\cup E_2$ by finitely many field operations, and a field automorphism respects these operations.
+Hence $\sigma$ fixes $E_1E_2$ pointwise, so $\sigma\in H$.
+:::
+
+<1>2. Each $H_i$ is normal in $G$.
+::: {.proof}
+Each $E_i$ is a splitting field over $\QQ$.
+Thus $E_i/\QQ$ is normal, and since $\operatorname{char}\QQ=0$, it is separable as well.
+Hence $E_i/\QQ$ is Galois.
+
+By the fundamental theorem of Galois theory for $K/\QQ$, this is equivalent to
+\[
+H_i=\Gal(K/E_i)\triangleleft G.
+\]
+:::
+
+<1>3. $H_1H_2$ is a subgroup of $G$.
+::: {.proof}
+Let $h_1,h_1'\in H_1$ and $h_2,h_2'\in H_2$.
+Since $H_1\triangleleft G$ by <1>2,
+\[
+h_2h_1'h_2^{-1}\in H_1.
+\]
+Therefore
+\[
+(h_1h_2)(h_1'h_2')
+=h_1(h_2h_1'h_2^{-1})(h_2h_2')\in H_1H_2.
+\]
+Similarly,
+\[
+(h_1h_2)^{-1}
+=h_2^{-1}h_1^{-1}
+=(h_2^{-1}h_1^{-1}h_2)h_2^{-1}\in H_1H_2.
+\]
+Thus $H_1H_2\le G$.
+:::
+
+<1>4. The fixed field of $H_1H_2$ is $E_1\cap E_2$.
+::: {.proof}
+Since $H_i\subseteq H_1H_2$,
+\[
+K^{H_1H_2}\subseteq K^{H_1}\cap K^{H_2}=E_1\cap E_2.
+\]
+
+Conversely, if $x\in E_1\cap E_2$, then every $h_1\in H_1$ and every $h_2\in H_2$ fixes $x$.
+Hence every product $h_1h_2$ fixes $x$, so
+\[
+E_1\cap E_2\subseteq K^{H_1H_2}.
+\]
+:::
+
+<1>5. $\Gal(K/(E_1\cap E_2))=H_1H_2$.
+::: {.proof}
+By <1>3, $H_1H_2$ is a subgroup of $G$, and by <1>4 its fixed field is $E_1\cap E_2$.
+The Galois correspondence gives the claimed identity.
 :::
 
 :::
-
