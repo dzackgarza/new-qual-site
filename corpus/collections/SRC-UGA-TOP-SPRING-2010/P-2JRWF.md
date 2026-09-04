@@ -92,8 +92,7 @@ By definition,
 L(F)=\sum_{n\ge0}(-1)^n
 \operatorname{tr}\bigl(F_*:H_n(X\vee Y;\QQ)\to H_n(X\vee Y;\QQ)\bigr).
 \]
-The degree-zero term is $1$ by <1>3, and every positive-degree trace is zero by <1>2.
-Therefore $L(F)=1$.
+The degree-zero term is $1$ by <1>3, and every positive-degree trace is zero by <1>2. Therefore $L(F)=1$.
 :::
 
 <1>5. Every map $H:X\vee Y\to X\vee Y$ homotopic to $F$ also has Lefschetz number $1$.
