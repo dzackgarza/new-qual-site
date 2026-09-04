@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K5XUM
 kind: problem
-title: $X\times Y$ is compact if and only if $X$ and $Y$ are compact
+title: For nonempty $X,Y$, $X\times Y$ is compact iff $X$ and $Y$ are compact
 classification:
   areas:
   - topology
@@ -12,10 +12,19 @@ classification:
   - Tube Lemma
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: The UGA Fall 2010 source omits the nonempty-factor hypothesis needed for the converse.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
 ---
 
 :::{.problem}
-Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
+Let $X$ and $Y$ be nonempty topological spaces.
+Show that $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 
 :::
 
@@ -27,8 +36,6 @@ Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact i
 
 
 :::{.strategy}
-What's the picture?
-
 ![figures/image_2021-05-21-01-16-52.png](../../assets/figures/image_2021-05-21-01-16-52.png)
 
 Take an open cover of the product, use that vertical fibers are compact to get a finite cover for each fiber.
@@ -39,43 +46,65 @@ Use that $X$ is compact to get a finite subcover.
 
 
 :::{.solution}
-\envlist
-
-:::{.proof}
-$\impliedby$:
-
-- By the universal property, the product $X\cross Y$ is equipped with continuous projections $\pi_X: X\cross Y\to X$ and $\pi_Y: X\cross Y\to X$.^[Using the tube lemma without proof.]
-- The continuous image of a compact space is compact, and the images are all of $X$ and $Y$ respectively:
+<1>1. If $X\times Y$ is compact, then both $X$ and $Y$ are compact.
+::: {.proof}
+The coordinate projections
 \[
-\pi_1(X\cross Y) &= X \\
-\pi_2(X\cross Y) &= Y
-.\]
-
-$\implies$:
-
-- Let $\ts{U_j} \covers X\cross Y$ be an open cover.
-- **Cover a fiber**: fix $x\in X$, the slice $x \cross Y$ is homeomorphic to $Y$ and thus compact 
-- Cover it by finitely many elements $\theset{U_j}_{j\leq m} \covers {x} \cross Y$.
-  
-  > Really, cover $Y$, and then cross with $x$ to cover $x \cross Y$.
-
-  - Set 
+\pi_X:X\times Y\to X,
+\qquad
+\pi_Y:X\times Y\to Y
+\]
+are continuous.
+Because both factors are nonempty, the projections are surjective.
+Continuous images of compact spaces are compact, so
 \[
-N_x \da \Union_{j\leq m} U_j \supseteq x \cross Y
-.\]
-  - Apply the tube lemma to $N_x$: 
-    - Produce a neighborhood $W_x$ of $x$ in $X$ where $W_x \subset N_x$ 
-    - This yields a finite cover:
-  \[
-\ts{U_j}_{j\leq m}\covers N_x \cross Y \supset W_x \cross Y \implies \ts{U_j}_{j\leq m} \covers W_x\cross Y
-  .\]
-- **Cover the base**: let $x\in X$ vary: for each $x\in X$, produce $W_x \cross Y$ as above, then $\theset{W_x}_{x\in X} \covers X$ where each tube $W_x \cross Y$ is covered by *finitely* many $U_j$.
-- Use that $X$ is compact to produce a finite subcover $\theset{W_k}_{k \leq M} \covers X$. 
-- Then $\theset{W_k\cross Y}_{k\leq M} \covers X\cross Y$, this is a finite set since each fiber was covered by finitely many opens 
-  - Finitely many $k$
-  - For each $k$, the tube $W_k \cross Y$ is covered by finitely by $U_j$
-  - And finite $\times$ finite = finite.
+X=\pi_X(X\times Y),
+\qquad
+Y=\pi_Y(X\times Y)
+\]
+are compact.
+:::
+
+<1>2. Suppose $X$ and $Y$ are compact, and let $\mathcal U$ be an open cover of $X\times Y$.
+For every $x\in X$, there is an open neighborhood $V_x$ of $x$ such that $V_x\times Y$ is covered by finitely many members of $\mathcal U$.
+::: {.proof}
+Fix $x\in X$.
+The fiber $\{x\}\times Y$ is homeomorphic to the compact space $Y$, so finitely many members
+\[
+U_{x,1},\ldots,U_{x,m_x}\in\mathcal U
+\]
+cover it.
+Set
+\[
+W_x=U_{x,1}\cup\cdots\cup U_{x,m_x}.
+\]
+Then $W_x$ is open in $X\times Y$ and contains $\{x\}\times Y$.
+By the tube lemma, there is an open neighborhood $V_x\ni x$ such that
+\[
+V_x\times Y\subseteq W_x.
+\]
+Thus the same finitely many $U_{x,j}$ cover $V_x\times Y$.
+:::
+
+<1>3. If $X$ and $Y$ are compact, then $X\times Y$ is compact.
+::: {.proof}
+The family $\{V_x:x\in X\}$ from <1>2 is an open cover of $X$.
+Compactness of $X$ gives points $x_1,\ldots,x_r$ such that
+\[
+X=V_{x_1}\cup\cdots\cup V_{x_r}.
+\]
+For each $i$, <1>2 supplies finitely many members of $\mathcal U$ covering $V_{x_i}\times Y$.
+The union of these finitely many finite subfamilies covers
+\[
+X\times Y
+=\bigcup_{i=1}^r(V_{x_i}\times Y).
+\]
+Hence $\mathcal U$ has a finite subcover.
+:::
+
+<1>4. The nonempty hypothesis is necessary for the implication in <1>1.
+::: {.proof}
+If $Y=\emptyset$, then $X\times Y=\emptyset$ is compact for every space $X$, including noncompact spaces.
 :::
 
 :::
-
