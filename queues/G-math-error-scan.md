@@ -258,7 +258,11 @@ Disposition order follows the finding numbers.
   $|g|\le1$ and $|g|\ge1$, hence $g$ is a unimodular constant and
   $f(z)=\lambda z^k$. The old proof neither established $|g|\le1$ nor used the
   correct exponent in the conclusion.
-- [ ] 48. E-ZQGR5 — Radius of convergence of $\sum a^{k^2} z^k$
+- [x] 48. E-ZQGR5 — Radius of convergence of $\sum a^{k^2} z^k$
+  Disposition 2026-09-04: confirmed and fixed. Cauchy--Hadamard gives
+  $R^{-1}=\limsup|a|^k$, hence $R=\infty,1,0$ according as
+  $|a|<1,|a|=1,|a|>1$. The old card accidentally repeated $|a|<1$ for the
+  zero-radius case.
 - [ ] 49. P-3MIIY — $\int_0^\infty \frac{\log x}{1+x^n}\,dx$ (part vi)
 - [ ] 50. P-5U7QZ — sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
 - [ ] 51. P-64ZUP — conformal map from $\{|z|<1,\ |z-1/2|>1/2\}$ to $\DD$

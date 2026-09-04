@@ -22,9 +22,36 @@ Find the radius of convergence of
 :::
 
 ::: {.solution}
-\envlist
+By Cauchy--Hadamard, for $\sum c_kz^k$,
+\[
+{1\over R}=\limsup_{k\to\infty}|c_k|^{1/k}.
+\]
 
-- $R = {1 \over \limsup \abs{a^k}^{1\over k}} = {1\over \abs{a}}$
+For $c_k=a^k$,
+\[
+{1\over R}=|a|,
+\]
+so
+\[
+R=
+\begin{cases}
+\infty,&a=0,\\
+|a|^{-1},&a\neq0.
+\end{cases}
+\]
 
-- $R = {1 \over \limsup \abs{a^{k^2}}^{1\over k}} = {1\over \limsup \abs{a}^k}$, so $R=\infty$ if $\abs{a}< 1$, $R=0$ if $\abs{a}<1$, and $R=1$ if $\abs{a} = 1$.
+For $c_k=a^{k^2}$,
+\[
+{1\over R}
+=\limsup_{k\to\infty}|a|^k.
+\]
+Hence
+\[
+R=
+\begin{cases}
+\infty,&|a|<1,\\
+1,&|a|=1,\\
+0,&|a|>1.
+\end{cases}
+\]
 :::
