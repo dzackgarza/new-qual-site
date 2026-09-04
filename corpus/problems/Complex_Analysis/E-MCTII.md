@@ -14,18 +14,28 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f$ is holomorphic and $\abs{f(z)}\leq 1$ for $\Re(z) > 0$ with $f(1) = 0$.
-Find an upper bound for $f(2)$.
-
+Find an upper bound for $\abs{f(2)}$.
 :::
 
-:::{.solution}
-Use the conformal map $g: z\mapsto -1{z+1\over z-1}$ to map $\Re(z)>0$ to $\DD$.
-Composing $F: \DD \mapsvia{g} -i\HH \mapsvia{f} \DD$ yields a map $F = f\circ g:\DD\to \DD$.
-Since $F(0) = f(g(0)) = f(1) = 0$, Schwarz applies and $\abs{F(z)} \leq \abs{z}$.
-Using the standard trick,
+::: {.solution}
+Use
 \[
-\abs{f(2)} = \abs{(f\circ \circ g\inv )(2)} = \abs{F(g\inv(2))} = \abs{F\qty{z-1\over z+1}\evalfrom_{z=2}} = \abs{F\qty{1\over 3}} \leq \abs{1\over 3}
-.\]
+\phi(z)={z-1\over z+1},
+\]
+which maps the right half-plane biholomorphically onto $\DD$ and satisfies $\phi(1)=0$.
+Set
+\[
+F=f\circ\phi^{-1}:\DD\to\DD.
+\]
+Then $F(0)=f(1)=0$, so Schwarz's lemma gives $|F(w)|\le|w|$.
+Since
+\[
+\phi(2)={1\over3},
+\]
+we obtain
+\[
+|f(2)|=|F(\phi(2))|=|F(1/3)|\le {1\over3}.
+\]
 :::

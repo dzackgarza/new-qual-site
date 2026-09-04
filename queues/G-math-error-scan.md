@@ -209,7 +209,10 @@ Disposition order follows the finding numbers.
   For $a\neq0$, solve $1/z_k^2=L+2\pi ik$, so
   $z_k=(L+2\pi ik)^{-1/2}$. For $a=0$, take $z_k=i/\sqrt{k}$; for
   $a=\infty$, take $z_k=1/\sqrt{k}$.
-- [ ] 38. E-MCTII, misdirected conformal map for the Schwarz bound — 
+- [x] 38. E-MCTII, misdirected conformal map for the Schwarz bound —
+  Disposition 2026-09-04: confirmed and fixed. The right-half-plane map is
+  $\phi(z)=(z-1)/(z+1)$ with $\phi(1)=0$. Applying Schwarz to
+  $F=f\circ\phi^{-1}$ gives $|f(2)|=|F(1/3)|\le1/3$.
 - [ ] 39. E-NIPUY, proves uniform continuity of the wrong function — 
 - [x] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — duplicate of finding
   15; fixed there on 2026-09-04.
