@@ -183,7 +183,10 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. For
   $g(z)=i(1+z)/(1-z)$, the inverse is $(w-i)/(w+i)$, so
   $g^{-1}(2i)=1/3$ and Schwarz gives $|f(2i)|\le1/3$.
-- [ ] 33. E-4H3JY — "why the image is in $\mathbb H$" computes the wrong quantity and uses a map...
+- [x] 33. E-4H3JY — "why the image is in $\mathbb H$" computes the wrong quantity and uses a map...
+  Disposition 2026-09-04: confirmed and fixed. The card now uses
+  $T(z)=i(1+z)/(1-z)$ consistently and verifies
+  $\Im T(z)=(1-|z|^2)/|1-z|^2>0$, with inverse $(w-i)/(w+i)$.
 - [ ] 34. E-AHBVF — expansion uses the reciprocal of the cosine argument
 - [ ] 35. E-AOQLK — wrong residue at infinity
 - [ ] 36. E-GRXN4 — misjudged true/false item on products of poles
