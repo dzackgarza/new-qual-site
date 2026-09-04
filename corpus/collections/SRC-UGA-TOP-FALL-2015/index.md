@@ -16,6 +16,8 @@ source:
   institution: uga
   area: topology
   problems:
+  - id: P-8TF27
+    comment: Fall 2015.1
   - P-8TF35
   - P-8TF36
   - P-8TF37
@@ -30,4 +32,5 @@ source:
 ---
 
 ::: remark
+Exam #1 repeats the compact-product theorem from Fall 2013 #1 and reuses [[P-8TF27]].
 :::
