@@ -213,7 +213,13 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The right-half-plane map is
   $\phi(z)=(z-1)/(z+1)$ with $\phi(1)=0$. Applying Schwarz to
   $F=f\circ\phi^{-1}$ gives $|f(2)|=|F(1/3)|\le1/3$.
-- [ ] 39. E-NIPUY, proves uniform continuity of the wrong function — 
+- [x] 39. E-NIPUY, proves uniform continuity of the wrong function —
+  Disposition 2026-09-04: confirmed, with a false source statement. For $n=0$
+  the function is constant. For $n\ge1$, $x^{-n}$ is undefined at $0$ and is
+  not uniformly continuous even on $(0,\infty)$: $x_k=1/k$ and
+  $y_k=1/(k+1)$ satisfy $|x_k-y_k|\to0$ but
+  $|x_k^{-n}-y_k^{-n}|=|k^n-(k+1)^n|\ge1$. The old solution silently
+  switched to $x^{1/n}$.
 - [x] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — duplicate of finding
   15; fixed there on 2026-09-04.
 - [ ] 41. E-PQ7NC, overclaimed image of the Joukowski map $z+1/z$ — 
