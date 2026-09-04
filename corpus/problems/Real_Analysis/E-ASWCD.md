@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ASWCD
 kind: problem
-title: Continuity of outer measure from above and below
+title: Continuity of outer measure on Carathéodory-measurable sets
 classification:
   areas:
   - real-analysis
@@ -18,50 +18,56 @@ audit:
 ---
 
 ::: exercise
-- Show that continuity of measure from above/below holds for outer measures.
+- Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carathéodory $\sigma$-algebra.
+  Show that the restriction of $\mu^*$ to $\mathcal M(\mu^*)$ is continuous from below, and continuous from above when the first set has finite outer measure.
+
+- Give an outer measure for which these continuity statements fail on arbitrary subsets of $X$.
 :::
 
 ::: {.solution}
-**Goal:** Show that the continuity properties of a measure hold for an outer measure $\mu^*$: continuity from below always, and continuity from above provided the first set has finite outer measure.
+By Carathéodory's theorem, $\mu\da\mu^*|_{\mathcal M(\mu^*)}$ is a measure.
+Thus the usual continuity theorems for measures apply.
+Explicitly, if $E_1\subseteq E_2\subseteq\cdots$ are Carathéodory measurable, set $F_1=E_1$ and $F_n=E_n\setminus E_{n-1}$ for $n\ge2$.
+Then the $F_n$ are pairwise disjoint and measurable, and
+\[
+\mu^*\qty{\bigcup_{n\ge1}E_n}
+=\sum_{n\ge1}\mu^*(F_n)
+=\lim_{N\to\infty}\sum_{n=1}^N\mu^*(F_n)
+=\lim_{N\to\infty}\mu^*(E_N).
+\]
 
-<1>1. Continuity from below: if $E_1 \subseteq E_2 \subseteq \cdots$, then $\mu^*\!\left(\bigcup_n E_n\right) = \lim_n \mu^*(E_n)$.
-<2>1. The limit exists since $\{\mu^*(E_n)\}$ is monotone increasing.
-::: {.proof}
-$\mu^*$ is monotone and $E_n \subseteq E_{n+1}$, so $\mu^*(E_n) \leq \mu^*(E_{n+1})$; hence $\lim_n \mu^*(E_n) = \sup_n \mu^*(E_n) \in [0, \infty]$.
-:::
-<2>2. $\mu^*\!\left(\bigcup_n E_n\right) \leq \sup_n \mu^*(E_n)$.
-::: {.proof}
-set $E_0 := \emptyset$; countable subadditivity gives $\mu^*(\bigcup_n E_n) \leq \sum_n \mu^*(E_n \setminus E_{n-1})$; but each $E_n \setminus E_{n-1} \subseteq E_n$, so $\sum_{n=1}^N \mu^*(E_n \setminus E_{n-1}) \leq \sum_{n=1}^N \big(\mu^*(E_n) - \mu^*(E_{n-1})\big) = \mu^*(E_N)$, using monotonicity and finiteness of each term (if all $\mu^*(E_n) = \infty$ there is nothing to prove).
-:::
-Taking $N \to \infty$: $\sum_n \mu^*(E_n \setminus E_{n-1}) \leq \sup_n \mu^*(E_n)$.
-<2>3. $\mu^*\!\left(\bigcup_n E_n\right) \geq \sup_n \mu^*(E_n)$.
-::: {.proof}
-$E_n \subseteq \bigcup_n E_n$ and $\mu^*$ is monotone, so $\mu^*(E_n) \leq \mu^*(\bigcup_n E_n)$ for every $n$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>2 and <2>3 sandwich the two sides.
-:::
+If $E_1\supseteq E_2\supseteq\cdots$ are measurable and $\mu^*(E_1)<\infty$, put $F_n=E_1\setminus E_n$.
+Then $F_n\uparrow E_1\setminus\bigcap_nE_n$, so continuity from below and finite additivity give
+\[
+\mu^*(E_1)-\mu^*\qty{\bigcap_nE_n}
+=\lim_{n\to\infty}\mu^*(F_n)
+=\mu^*(E_1)-\lim_{n\to\infty}\mu^*(E_n).
+\]
+Cancellation is legitimate because $\mu^*(E_1)<\infty$, yielding continuity from above.
 
-<1>2. Continuity from above: if $E_1 \supseteq E_2 \supseteq \cdots$ with $\mu^*(E_1) < \infty$, then $\mu^*\!\left(\bigcap_n E_n\right) = \lim_n \mu^*(E_n)$.
-<2>1. The sequence $\mu^*(E_n)$ is decreasing and bounded below by $\mu^*(\bigcap_n E_n)$, so it converges to some $L \geq \mu^*(\bigcap_n E_n)$.
-::: {.proof}
-monotonicity of $\mu^*$ and $E_{n+1} \subseteq E_n \supseteq \bigcap_n E_n$.
-:::
-<2>2. $L \leq \mu^*\!\left(\bigcap_n E_n\right)$.
-::: {.proof}
-apply continuity from below (<1>1) to the increasing sequence $F_n := E_1 \setminus E_n$: $\mu^*(\bigcup_n F_n) = \lim_n \mu^*(F_n)$.
-:::
-Since $\bigcup_n F_n = E_1 \setminus \bigcap_n E_n$ and $\mu^*(E_1) < \infty$, subadditivity gives $\mu^*(E_1) \leq \mu^*(E_1 \setminus \bigcap_n E_n) + \mu^*(\bigcap_n E_n)$ and likewise $\mu^*(F_n) = \mu^*(E_1) - \mu^*(E_n)$ (both sides finite).
-Hence $\mu^*(E_1) - \mu^*(\bigcap_n E_n) \leq \lim_n \big(\mu^*(E_1) - \mu^*(E_n)\big)$, i.e. $L = \lim_n \mu^*(E_n) \leq \mu^*(\bigcap_n E_n)$.
-<2>3. Q.E.D.
-::: {.proof}
-<2>1 and <2>2 together give equality.
-:::
-
-<1>3. The finiteness assumption in <1>2 is necessary.
-::: {.proof}
-e.g. $\mu^* =$ counting measure on $\mathbb{R}$ and $E_n = [n, \infty)$: each $\mu^*(E_n) = \infty$, but $\mu^*(\bigcap_n E_n) = \mu^*(\emptyset) = 0$, so the equality fails.
-:::
-Continuity from above for measures/outer measures requires $\mu^*(E_1) < \infty$.
+Neither statement is true for an arbitrary outer measure on arbitrary sets.
+On $X=\NN$, define
+\[
+\mu^*(A)=
+\begin{cases}
+0,&A=\emptyset,\\
+1,&0<|A|<\infty,\\
+2,&|A|=\infty.
+\end{cases}
+\]
+This is an outer measure: monotonicity is immediate, and countable subadditivity follows because an infinite union either contains an infinite member or has infinitely many nonempty finite members.
+For $E_n=\{1,\ldots,n\}$,
+\[
+\mu^*(E_n)=1\quad\text{for all }n,
+\qquad
+\mu^*\qty{\bigcup_nE_n}=\mu^*(\NN)=2,
+\]
+so continuity from below fails.
+For $G_n=\{n,n+1,\ldots\}$,
+\[
+\mu^*(G_n)=2\quad\text{for all }n,
+\qquad
+\mu^*\qty{\bigcap_nG_n}=0,
+\]
+so continuity from above fails even though $\mu^*(G_1)=2<\infty$.
 :::

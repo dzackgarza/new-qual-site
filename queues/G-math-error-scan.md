@@ -103,7 +103,12 @@ Disposition order follows the finding numbers.
   arbitrary subspace-open cover of the closed set $A$ to a cover of $X$ by
   adjoining $X\setminus A$, takes a finite subcover of compact $X$, and then
   restricts back to $A$.
-- [ ] 18. E-ASWCD — flawed subtraction step in the proof of continuity from below for outer measure
+- [x] 18. E-ASWCD — flawed subtraction step in the proof of continuity from below for outer measure
+  Disposition 2026-09-04: confirmed, with a deeper defect: the asserted theorem
+  is false for arbitrary outer measures. The card now states and proves
+  continuity on the Carathéodory-measurable $\sigma$-algebra, where the outer
+  measure restricts to a measure, and gives an explicit outer measure on
+  $\NN$ showing that both continuity statements can fail on arbitrary sets.
 - [ ] 19. E-2HIKG — spurious factor of 2 and inconsistent simplification in the semicircular-cont...
 - [ ] 20. E-AKNDW — wrong numerical value (`π/4` for `π/2`) in the main derivation of `∫ 1/(1+x²)...
 - [ ] 21. E-3B2YA — wrong value and wrong identity for the cube root of unity in the annotation
