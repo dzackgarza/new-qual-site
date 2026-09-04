@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FGSRH
 kind: problem
-title: Fall 2006, 7
+title: Every compact metric space is sequentially compact
 classification:
   areas:
   - topology
@@ -27,40 +27,56 @@ Prove that every compact metric space is sequentially compact.
 ::: {.solution}
 Let $(X,d)$ be compact and let $(x_n)$ be a sequence in $X$.
 
-If some value occurs infinitely often, the corresponding constant subsequence converges.
-Thus suppose every value occurs only finitely often.
-Then the set
+<1>1. We may reduce to the case in which the set of values of $(x_n)$ is infinite.
+::: {.proof}
+If some value occurs infinitely often, the corresponding constant subsequence converges. Otherwise every value occurs only finitely often, so
 \[
 A=\{x_n:n\ge1\}
 \]
-is infinite.
+is infinite, as required.
+:::
 
-We first show that every infinite subset of a compact space has a limit point.
-If $A$ had no limit point, then for each $x\in X$ there would be an open neighborhood $U_x$ such that
+<1>2. The infinite set $A$ has a limit point $p\in X$.
+::: {.proof}
+Suppose not. For each $x\in X$ there is then an open neighborhood $U_x$ such that
 \[
 U_x\cap A\subseteq\{x\}.
 \]
-The family $\{U_x:x\in X\}$ covers $X$.
-Compactness gives a finite subcover $U_{x_1},\ldots,U_{x_m}$, whence
+The family $\{U_x:x\in X\}$ covers $X$, so compactness gives a finite subcover $U_{x_1},\ldots,U_{x_m}$. Consequently
 \[
 A\subseteq\{x_1,\ldots,x_m\},
 \]
-contradicting that $A$ is infinite.
-Hence $A$ has a limit point $p\in X$.
+contrary to <1>1.
+:::
 
-For each $k\ge1$, the ball $B(p,1/k)$ contains a point of $A$ different from $p$; indeed it contains infinitely many points of $A$, since otherwise deleting those finitely many points would leave a smaller neighborhood of $p$ disjoint from $A\setminus\{p\}$.
-We may therefore choose recursively indices
+<1>3. Every neighborhood of $p$ contains infinitely many points of $A$.
+::: {.proof}
+If a neighborhood $U$ of $p$ met $A\setminus\{p\}$ in only finitely many points $a_1,\ldots,a_r$, then, because a metric space is $T_1$, the set
 \[
-n_1<n_2<\cdots
+U\setminus\{a_1,\ldots,a_r\}
 \]
-such that
+would still be a neighborhood of $p$ and would miss $A\setminus\{p\}$. This contradicts that $p$ is a limit point of $A$ by <1>2.
+:::
+
+<1>4. There are indices $n_1<n_2<\cdots$ such that
 \[
 x_{n_k}\in B(p,1/k).
 \]
-Then
+::: {.proof}
+Choose the indices recursively. After $n_1,\ldots,n_{k-1}$ have been chosen, <1>3 says that $B(p,1/k)$ contains infinitely many values from $A$. Since each value occurs only finitely often by the reduction in <1>1, some occurrence has index larger than $n_{k-1}$; choose it as $n_k$.
+:::
+
+<1>5. The subsequence $(x_{n_k})$ converges to $p$.
+::: {.proof}
+By <1>4,
 \[
 d(x_{n_k},p)<{1\over k}\to0,
 \]
-so $x_{n_k}\to p$.
-Thus every sequence in $X$ has a convergent subsequence, and $X$ is sequentially compact.
+which is precisely $x_{n_k}\to p$.
+:::
+
+<1>6. $X$ is sequentially compact.
+::: {.proof}
+The sequence $(x_n)$ was arbitrary. Either <1>1 supplied a constant convergent subsequence, or <1>5 supplied a subsequence converging to a limit point. Hence every sequence has a convergent subsequence.
+:::
 :::
