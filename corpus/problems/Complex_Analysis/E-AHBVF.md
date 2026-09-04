@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AHBVF
 kind: problem
-title: Cosine expansion in $z\inv$
+title: Taylor expansion of $z^2\cos(z/3)$
 classification:
   areas:
   - complex-analysis
@@ -13,13 +13,20 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Expand $f(z) = z^2\cos\qty{z\over 3}$ about $z=0$.
 :::
 
-:::{.solution}
+::: {.solution}
 \[
-f(z) = z^2\qty{ 1 + {1\over 2!}\qty{1\over 3z}^2 + {1\over 4!}\qty{1\over 3z}^4 } = z^2 + {1\over 2! \cdot 3^2} + {1\over 4! \cdot 3^4}z^{-2} + \cdots
-.\]
+\cos\qty{z\over3}
+=\sum_{k=0}^\infty(-1)^k{(z/3)^{2k}\over(2k)!},
+\]
+so
+\[
+z^2\cos\qty{z\over3}
+=\sum_{k=0}^\infty(-1)^k{z^{2k+2}\over 3^{2k}(2k)!}
+=z^2-{z^4\over 2!\,3^2}+{z^6\over 4!\,3^4}-\cdots.
+\]
+This is an ordinary Taylor series; there are no negative powers.
 :::
-

@@ -187,7 +187,11 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. The card now uses
   $T(z)=i(1+z)/(1-z)$ consistently and verifies
   $\Im T(z)=(1-|z|^2)/|1-z|^2>0$, with inverse $(w-i)/(w+i)$.
-- [ ] 34. E-AHBVF — expansion uses the reciprocal of the cosine argument
+- [x] 34. E-AHBVF — expansion uses the reciprocal of the cosine argument
+  Disposition 2026-09-04: confirmed and fixed. The expansion now uses
+  $\cos(z/3)=\sum(-1)^k(z/3)^{2k}/(2k)!$, so
+  $z^2\cos(z/3)=z^2-z^4/(2!3^2)+z^6/(4!3^4)-\cdots$; the old card
+  invented negative powers by replacing $z/3$ with $1/(3z)$.
 - [ ] 35. E-AOQLK — wrong residue at infinity
 - [ ] 36. E-GRXN4 — misjudged true/false item on products of poles
 - [ ] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ — 
