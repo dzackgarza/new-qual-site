@@ -290,7 +290,12 @@ Disposition order follows the finding numbers.
   an unrelated rational function. The card now substitutes $1/z$ into the
   exponential and cosine Taylor series, giving the requested Laurent series
   on $0<|z|<\infty$.
-- [ ] 54. P-CWXEW — wedge angle is $\pi/2$, not $\pi$
+- [x] 54. P-CWXEW — wedge angle is $\pi/2$, not $\pi$
+  Disposition 2026-09-04: confirmed and rewritten. The first Möbius map sends
+  the lens to the $\pi/2$ sector centered on the negative real axis, not a
+  half-plane. The corrected chain maps that slit sector to a slit right
+  half-plane, then a slit disk, a right half-disk, a quadrant, and finally
+  $\HH$.
 - [ ] 55. P-FY3WB — truncated exponential $\sum_{k=0}^n z^k/k!$: wrong $n=2$ argument and invalid...
 - [ ] 56. P-IM6MH — inversion $1/(2z-1)$: final display labels the series as $1/(1-2z)$
 - [ ] 57. P-KPCIE — midpoint recurrence $x_n=(x_{n-1}+x_{n-2})/2$: final closed form and limit ar...
