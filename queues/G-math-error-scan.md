@@ -98,7 +98,11 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. Since the zeros of
   $\sin(\pi z)$ are simple,
   $\Res_{z=k}\csc(\pi z)=1/(\pi\cos(\pi k))=(-1)^k/\pi$.
-- [ ] 17. E-P3RLK — Solution proves the converse theorem, not the stated exercise
+- [x] 17. E-P3RLK — Solution proves the converse theorem, not the stated exercise
+  Disposition 2026-09-04: confirmed and fixed. The solution now extends an
+  arbitrary subspace-open cover of the closed set $A$ to a cover of $X$ by
+  adjoining $X\setminus A$, takes a finite subcover of compact $X$, and then
+  restricts back to $A$.
 - [ ] 18. E-ASWCD — flawed subtraction step in the proof of continuity from below for outer measure
 - [ ] 19. E-2HIKG — spurious factor of 2 and inconsistent simplification in the semicircular-cont...
 - [ ] 20. E-AKNDW — wrong numerical value (`π/4` for `π/2`) in the main derivation of `∫ 1/(1+x²)...
