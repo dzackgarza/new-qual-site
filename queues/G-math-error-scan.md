@@ -263,7 +263,11 @@ Disposition order follows the finding numbers.
   $R^{-1}=\limsup|a|^k$, hence $R=\infty,1,0$ according as
   $|a|<1,|a|=1,|a|>1$. The old card accidentally repeated $|a|<1$ for the
   zero-radius case.
-- [ ] 49. P-3MIIY — $\int_0^\infty \frac{\log x}{1+x^n}\,dx$ (part vi)
+- [x] 49. P-3MIIY — $\int_0^\infty \frac{\log x}{1+x^n}\,dx$ (part vi)
+  Disposition 2026-09-04: confirmed and fixed. Differentiating
+  $\frac{\pi}{n}\csc(\pi a/n)$ at $a=1$ gives the missing factor
+  $\csc(\pi/n)$. The scratchpad-style contradictory recalculation in the
+  solution was replaced by the direct Mellin-parameter differentiation.
 - [ ] 50. P-5U7QZ — sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
 - [ ] 51. P-64ZUP — conformal map from $\{|z|<1,\ |z-1/2|>1/2\}$ to $\DD$
 - [ ] 52. P-6VF7J — part (b), an $f$ analytic at $1$ whose series $\sum a_n$ diverges
