@@ -11,6 +11,18 @@ classification:
   - Mayer-Vietoris
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Checked the statement against problem 6 of the official UGA Fall 2014 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Corrected H_1 from Z to 0; the previous Mayer-Vietoris calculation misread exactness after the map H_1(S^1) to H_1(S^2) plus H_1(S^2). Retained and justified H_2 isomorphic to Z^3.
 ---
 
 ::: problem
@@ -25,57 +37,202 @@ $$
 :::
 
 ::: solution
-**Goal:** Compute the integral homology groups $H_k(X; \mathbb{Z})$ for all $k \ge 0$ using the Mayer–Vietoris sequence.
-
-<1>1. Topology of the pieces and their intersection:
+<1>1. The two surfaces are both homeomorphic to $S^2$, and their intersection is the common equatorial circle.
 ::: {.proof}
-    <2>1. $Y = \{x^2 + y^2 + z^2 = 1\} \cong S^2$ is the standard unit 2-sphere.
-    <2>2. $Z = \{x^2 + y^2 + z^2/4 = 1\} \cong S^2$ is an ellipsoid, homeomorphic to $S^2$.
-    <2>3. Compute the intersection $A = Y \cap Z$:
-        - Subtracting the equations: $(x^2 + y^2 + z^2) - (x^2 + y^2 + z^2/4) = 1 - 1 = 0 \implies \frac{3}{4} z^2 = 0 \implies z = 0$.
-        - Substituting $z = 0$ gives $x^2 + y^2 = 1$.
-        - Thus $A = Y \cap Z = \{(x, y, 0) \in \mathbb{R}^3 \mid x^2 + y^2 = 1\} \cong S^1$ is the equatorial circle.
-    <2>4. The intersection $A$ is a deformation retract of an open neighborhood in $Y$ and in $Z$.
+The unit sphere
+\[
+Y=\{x^2+y^2+z^2=1\}
+\]
+is $S^2$.
+The linear map
+\[
+(x,y,z)\longmapsto(x,y,2z)
+\]
+maps the unit sphere homeomorphically onto
+\[
+Z=\left\{x^2+y^2+\frac{z^2}{4}=1\right\},
+\]
+so $Z\cong S^2$ as well.
 
+If a point lies in $Y\cap Z$, subtracting the two defining equations gives
+\[
+z^2-\frac{z^2}{4}=0,
+\]
+hence
+\[
+z=0.
+\]
+Substitution then gives
+\[
+x^2+y^2=1.
+\]
+Therefore
+\[
+A:=Y\cap Z
+=
+\{(x,y,0):x^2+y^2=1\}
+\cong S^1.
+\]
 :::
 
-<1>2. Mayer–Vietoris sequence setup:
+<1>2. Mayer--Vietoris applies to the decomposition
+\[
+X=Y\cup Z
+\]
+with intersection $A\cong S^1$.
 ::: {.proof}
-    <2>1. Choose open neighborhoods $U \supset Y$ and $V \supset Z$ in $X$ that deformation retract onto $Y$ and $Z$, respectively, with $U \cap V$ deformation retracting onto $A = Y \cap Z \cong S^1$.
-    <2>2. The reduced Mayer–Vietoris sequence is:
-    $$\cdots \to \tilde{H}_k(A) \xrightarrow{(i_*, j_*)} \tilde{H}_k(Y) \oplus \tilde{H}_k(Z) \to \tilde{H}_k(X) \xrightarrow{\partial} \tilde{H}_{k-1}(A) \to \cdots$$
-    <2>3. The known reduced homology groups of the pieces are:
-        - $\tilde{H}_k(A) = \tilde{H}_k(S^1) = \begin{cases} \mathbb{Z} & k = 1, \\ 0 & k \ne 1. \end{cases}$
-        - $\tilde{H}_k(Y) \oplus \tilde{H}_k(Z) = \tilde{H}_k(S^2) \oplus \tilde{H}_k(S^2) = \begin{cases} \mathbb{Z} \oplus \mathbb{Z} & k = 2, \\ 0 & k \ne 2. \end{cases}$
-
+Give the common equator $A$ its standard CW structure with one $0$-cell and one $1$-cell.
+Each of the upper and lower hemispheres of $Y$ is then a $2$-cell attached along $A$, and the same is true for the upper and lower halves of $Z$.
+Thus $X$ is a CW complex for which $Y$, $Z$, and $A=Y\cap Z$ are subcomplexes.
+The Mayer--Vietoris sequence for a union of CW subcomplexes therefore gives
+\[
+\cdots
+\longrightarrow
+\widetilde H_k(A)
+\longrightarrow
+\widetilde H_k(Y)\oplus\widetilde H_k(Z)
+\longrightarrow
+\widetilde H_k(X)
+\longrightarrow
+\widetilde H_{k-1}(A)
+\longrightarrow\cdots.
+\]
+By <1>1,
+\[
+\widetilde H_k(A)
+\cong
+\begin{cases}
+\mathbb Z,&k=1,\\
+0,&k\ne1,
+\end{cases}
+\]
+and
+\[
+\widetilde H_k(Y)\oplus\widetilde H_k(Z)
+\cong
+\begin{cases}
+\mathbb Z^2,&k=2,\\
+0,&k\ne2.
+\end{cases}
+\]
 :::
 
-<1>3. Computation of homology groups:
+<1>3. One has
+\[
+H_k(X;\mathbb Z)=0
+\qquad(k\ge3).
+\]
 ::: {.proof}
-    <2>1. Degree $k = 0$:
-        - $X$ is path-connected because $Y$ and $Z$ are path-connected and $Y \cap Z = S^1 \ne \emptyset$.
-        - Thus $H_0(X) \cong \mathbb{Z}$.
-    <2>2. Degrees $k \ge 3$:
-        - For $k \ge 3$, $\tilde{H}_k(Y) \oplus \tilde{H}_k(Z) = 0$ and $\tilde{H}_{k-1}(A) = 0$.
-        - By exactness, $0 \to \tilde{H}_k(X) \to 0$, so $H_k(X) = 0$ for all $k \ge 3$.
-    <2>3. Degrees $k = 1$ and $k = 2$:
-        - The relevant segment of the reduced Mayer–Vietoris sequence is:
-        $$0 \to \tilde{H}_2(Y) \oplus \tilde{H}_2(Z) \xrightarrow{\Phi} \tilde{H}_2(X) \xrightarrow{\partial} \tilde{H}_1(A) \xrightarrow{(i_*, j_*)} \tilde{H}_1(Y) \oplus \tilde{H}_1(Z) \to \tilde{H}_1(X) \to \tilde{H}_0(A) = 0.$$
-        - Substitute the known groups:
-        $$0 \to \mathbb{Z} \oplus \mathbb{Z} \xrightarrow{\Phi} H_2(X) \xrightarrow{\partial} \mathbb{Z} \xrightarrow{(i_*, j_*)} 0 \to H_1(X) \to 0.$$
-        - Because $\tilde{H}_1(Y) \oplus \tilde{H}_1(Z) = 0$, the map $(i_*, j_*): \mathbb{Z} \to 0$ is the zero map.
-        - Exactness at $H_1(X)$ gives an isomorphism $H_1(X) \cong \operatorname{coker}(i_*, j_*) = \mathbb{Z}$.
-        - Exactness at $\mathbb{Z}$ gives $\operatorname{Im}(\partial) = \ker(i_*, j_*) = \mathbb{Z}$, so $\partial$ is surjective.
-        - Exactness at $H_2(X)$ gives the short exact sequence:
-        $$0 \to \mathbb{Z} \oplus \mathbb{Z} \xrightarrow{\Phi} H_2(X) \xrightarrow{\partial} \mathbb{Z} \to 0.$$
-        - Since $\mathbb{Z}$ is free abelian, the sequence splits:
-        $$H_2(X) \cong (\mathbb{Z} \oplus \mathbb{Z}) \oplus \mathbb{Z} \cong \mathbb{Z}^3.$$
-
+For $k\ge3$, the relevant Mayer--Vietoris terms from <1>2 are
+\[
+0
+\longrightarrow
+\widetilde H_k(X)
+\longrightarrow
+0.
+\]
+Hence
+\[
+\widetilde H_k(X)=0
+\]
+for every $k\ge3$.
 :::
 
-<1>4. Conclusion:
+<1>4. The second homology group is
+\[
+H_2(X;\mathbb Z)\cong\mathbb Z^3.
+\]
 ::: {.proof}
-    The integral homology groups of $X$ are:
-    $$H_k(X; \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & k = 0, \\ \mathbb{Z} & k = 1, \\ \mathbb{Z}^3 & k = 2, \\ 0 & k \ge 3. \end{cases}$$
+The relevant part of the reduced Mayer--Vietoris sequence is
+\[
+0
+\longrightarrow
+\mathbb Z^2
+\longrightarrow
+\widetilde H_2(X)
+\xrightarrow{\partial}
+\mathbb Z
+\longrightarrow
+0.
+\]
+Exactness gives a short exact sequence
+\[
+0
+\longrightarrow
+\mathbb Z^2
+\longrightarrow
+\widetilde H_2(X)
+\longrightarrow
+\mathbb Z
+\longrightarrow
+0.
+\]
+Because the quotient $\mathbb Z$ is free abelian, this sequence splits.
+Therefore
+\[
+\widetilde H_2(X)
+\cong
+\mathbb Z^2\oplus\mathbb Z
+\cong
+\mathbb Z^3.
+\]
+Since degree $2$ is positive, reduced and unreduced homology agree there.
+:::
+
+<1>5. The first homology group is
+\[
+H_1(X;\mathbb Z)=0.
+\]
+::: {.proof}
+Continuing the same exact sequence from <1>4 gives
+\[
+\mathbb Z
+\longrightarrow
+0
+\longrightarrow
+\widetilde H_1(X)
+\longrightarrow
+0.
+\]
+Exactness at $\widetilde H_1(X)$ says
+\[
+\operatorname{im}\bigl(0\to\widetilde H_1(X)\bigr)
+=
+\ker\bigl(\widetilde H_1(X)\to0\bigr).
+\]
+The left-hand side is $0$, while the right-hand side is all of $\widetilde H_1(X)$.
+Hence
+\[
+\widetilde H_1(X)=0.
+\]
+This is precisely the step that the previous solution misread.
+:::
+
+<1>6. Finally,
+\[
+H_0(X;\mathbb Z)\cong\mathbb Z.
+\]
+::: {.proof}
+Both $Y$ and $Z$ are path connected, and their intersection $A\cong S^1$ is nonempty.
+Therefore their union $X$ is path connected, so
+\[
+H_0(X;\mathbb Z)\cong\mathbb Z.
+\]
+:::
+
+<1>7. Thus the integral homology groups are
+\[
+\boxed{
+H_k(X;\mathbb Z)
+\cong
+\begin{cases}
+\mathbb Z,&k=0,\\
+0,&k=1,\\
+\mathbb Z^3,&k=2,\\
+0,&k\ge3.
+\end{cases}}
+\]
+::: {.proof}
+Combine <1>3--<1>6.
 :::
 :::
