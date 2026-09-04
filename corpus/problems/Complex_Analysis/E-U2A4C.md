@@ -14,42 +14,49 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
-&\Res_{z=\infty}e^z\\
-&\Res_{z=\infty}{z-1\over z+1}
-.\]
-
+\Res_{z=\infty}e^z,
+\qquad
+\Res_{z=\infty}{z-1\over z+1}.
+\]
 :::
 
-:::{.solution}
-In parts:
+::: {.solution}
+Recall
+\[
+\Res_{z=\infty}f(z)
+=-\Res_{w=0}\frac{f(1/w)}{w^2}.
+\]
 
-- For $e^z$:
-  - Integral formula: $\Res_{z=\infty}f(z) = -{1\over 2\pi }\int_\gamma f(z)\dz$ where $\gamma$ encloses all singularities of $f$, but $e^z$ is entire, so this integral is zero and thus the residue is zero.
-  - Inversion formula: expand $z^{-2}f(1/z)$ about $z=0$ to obtain
-  \[
-  {1\over z^2}e^{1\over z} = z^{-2}\sum_{k\geq 0}z^{-k}/k! = \sum_{k\geq 0}z^{-k-2}/k! = z^{-2} + z^{-3} + {1\over 2!}z^{-4} + \bigo(z^{-5}) 
-  ,\]
-  so the residue is zero.
+For $f(z)=e^z$,
+\[
+\frac{e^{1/w}}{w^2}
+=\sum_{k=0}^\infty {w^{-k-2}\over k!}.
+\]
+There is no $w^{-1}$ term, hence
+\[
+\Res_{z=\infty}e^z=0.
+\]
 
-- For ${z+1\over z-1}$:
-  - Integral formula:
-  \[
-  \Res_{z=\infty} &= -{1\over 2\pi}\int_{\abs{z} = 2} {z-1\over z+1}\dz \\
-  &= - \Res_{z=-1} {z-1\over z+1} \\
-  &= - (-2) \\
-  &= 2
-  .\]
-  - Inversion formula:
-  \[
-  {1\over z^2}{ z\inv - 1 \over z\inv + 1} 
-  &= z^{-2}{1 - z \over 1 + z} \\
-  &= z^{-2}(z-1)\sum_{k\geq 0} (-z)^k \\
-  &= z^{-2} + 2z\inv -2 + 2z - \bigo(z^2)
-  ,\]
-  which has residue 2.
-
+For
+\[
+f(z)={z-1\over z+1},
+\]
+we have
+\[
+\frac{f(1/w)}{w^2}
+={1\over w^2}{1-w\over1+w}
+={1\over w^2}\qty{1-2w+2w^2-2w^3+\cdots}.
+\]
+Thus
+\[
+\Res_{w=0}\frac{f(1/w)}{w^2}=-2,
+\]
+so
+\[
+\Res_{z=\infty}{z-1\over z+1}=2.
+\]
+Equivalently, the only finite pole is at $z=-1$ with residue $-2$, and the sum of all residues on $\CP^1$ is zero.
 :::
-

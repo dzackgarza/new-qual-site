@@ -232,7 +232,12 @@ Disposition order follows the finding numbers.
   Disposition 2026-09-04: confirmed and fixed. For even $n$,
   $(2\sinh)^{(n-1)}(0)=2$, so Cauchy's formula gives
   $4\pi i/(n-1)!$, not $2\pi i/(n-1)!$; for odd $n$ the integral is $0$.
-- [ ] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ — 
+- [x] 43. E-U2A4C, wrong Laurent expansion in the inversion formula for $\Res_{z=\infty}\frac{z-1}{z+1}$ —
+  Disposition 2026-09-04: confirmed and fixed. The inversion formula now keeps
+  its sign straight: $w^{-2}(1-w)/(1+w)=w^{-2}-2w^{-1}+2-\cdots$, so
+  the transformed residue is $-2$ and $\Res_\infty=2$. The missing $i$ in
+  the old contour normalization and the mismatched displayed rational function
+  were removed as part of the same repair.
 - [x] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ —
   duplicate of finding 16; fixed there on 2026-09-04.
 - [ ] 45. E-WXHMJ, remark claims the residues of an elliptic function do not cancel — 
