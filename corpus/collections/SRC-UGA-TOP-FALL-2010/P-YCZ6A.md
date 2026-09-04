@@ -78,7 +78,6 @@ H_k(S^2\times S^2;\ZZ)
 \end{cases}
 \]
 ::: {.proof}
-Cellular homology is the homology of the complex in <1>2.
-Because every differential there is zero, each homology group is the corresponding cellular chain group.
+Cellular homology is the homology of the complex in <1>2. Because every differential there is zero, each homology group is the corresponding cellular chain group.
 :::
 :::
