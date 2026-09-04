@@ -168,7 +168,11 @@ Disposition order follows the finding numbers.
   pseudohyperbolic contraction gives
   $|f'(w)|/(1-|f(w)|^2)\le1/(1-|w|^2)$; the old intermediate
   $1/|w|^2$ was unrelated to the preceding denominator.
-- [ ] 30. E-GFNDF — non-equicontinuity argued at the wrong point
+- [x] 30. E-GFNDF — non-equicontinuity argued at the wrong point
+  Disposition 2026-09-04: confirmed and fixed. Non-equicontinuity is proved at
+  the endpoint $1$: for any $\delta>0$, take $x<1$ within $\delta$ of $1$ and
+  then $k$ large enough that $x^k<1/2$. The old comparison with a fixed
+  $x_0<1$ did not make the two input points arbitrarily close.
 - [ ] 31. E-GPCW2 — sign of the stated value of $\int_{-1}^1 dx/((x-a)\sqrt{1-x^2})$
 - [ ] 32. E-GPFKM — wrong inverse Cayley map in applying Schwarz
 - [ ] 33. E-4H3JY — "why the image is in $\mathbb H$" computes the wrong quantity and uses a map...
