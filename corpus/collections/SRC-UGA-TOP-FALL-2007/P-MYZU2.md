@@ -23,19 +23,23 @@ Let
 \[
 Y=\bigcup_{\alpha\in A}X_\alpha.
 \]
-Suppose, toward a contradiction, that $Y$ is disconnected. Then there are disjoint nonempty sets $U,V$, open in $Y$, such that
+Suppose, toward a contradiction, that $Y$ is disconnected.
+Then there are disjoint nonempty sets $U,V$, open in $Y$, such that
 \[
 Y=U\disjoint V.
 \]
 Since the common point $p$ belongs to $Y$, after interchanging $U$ and $V$ if necessary we may assume $p\in U$.
 
-Choose $q\in V$. Since $q\in Y$, there is some $\alpha$ with $q\in X_\alpha$. Then
+Choose $q\in V$.
+Since $q\in Y$, there is some $\alpha$ with $q\in X_\alpha$.
+Then
 \[
 p\in U\cap X_\alpha,
 \qquad
 q\in V\cap X_\alpha.
 \]
-The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in the subspace $X_\alpha$, and their union is $X_\alpha$. This is a separation of $X_\alpha$, contradicting its connectedness.
+The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in the subspace $X_\alpha$, and their union is $X_\alpha$.
+This is a separation of $X_\alpha$, contradicting its connectedness.
 
 Therefore $Y$ is connected.
 :::
