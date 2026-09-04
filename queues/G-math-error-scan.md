@@ -192,7 +192,11 @@ Disposition order follows the finding numbers.
   $\cos(z/3)=\sum(-1)^k(z/3)^{2k}/(2k)!$, so
   $z^2\cos(z/3)=z^2-z^4/(2!3^2)+z^6/(4!3^4)-\cdots$; the old card
   invented negative powers by replacing $z/3$ with $1/(3z)$.
-- [ ] 35. E-AOQLK — wrong residue at infinity
+- [x] 35. E-AOQLK — wrong residue at infinity
+  Disposition 2026-09-04: confirmed and fixed. Since
+  $f(z)=z-z^{-1}+O(z^{-3})$, the residue at infinity is the negative of the
+  $z^{-1}$ coefficient, namely $1$; equivalently it is minus the sum
+  $(-1/2)+(-1/2)$ of the finite residues.
 - [ ] 36. E-GRXN4 — misjudged true/false item on products of poles
 - [ ] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ — 
 - [ ] 38. E-MCTII, misdirected conformal map for the Schwarz bound — 

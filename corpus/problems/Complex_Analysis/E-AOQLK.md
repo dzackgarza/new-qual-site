@@ -38,10 +38,17 @@ f(z) = z - {1/2 \over z+i} - {1/2 \over z-i} = P_\infty + P_{-i} + P_{i}
 ,\]
 yielding poles at $\pm i$ with residues
 \[
-\Res_{z=\infty} f(z) &= -1 \\
+\Res_{z=\infty} f(z) &= 1 \\
 \Res_{z = i} f(z) &= -1/2 \\
 \Res_{z = -i} f(z) &= -1/2 \\
 .\]
 
-:::
+Indeed,
+\[
+f(z)=z-{1\over z}+O(z^{-3})
+\qquad(z\to\infty),
+\]
+so the coefficient of $z^{-1}$ is $-1$ and therefore
+$\Res_\infty f=-(-1)=1$. Equivalently, it is the negative of the sum of the finite residues.
 
+:::
