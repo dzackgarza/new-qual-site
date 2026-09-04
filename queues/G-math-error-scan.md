@@ -10,6 +10,8 @@ verdicts: for each one, open the card, re-derive the point independently, and
 either fix the card (one card, one commit) or record why the finding is wrong.
 Disposition order follows the finding numbers.
 
+Status: complete. All 66 candidates below have an independent disposition.
+
 ## Disposition checklist
 
 - [x] 1. E-6AOD7 — Centralizer/center confusion in the class equation

@@ -93,7 +93,7 @@ Related keyword-hit instance with “policy” text only: 2. https://github.com/
 
 - `queues/11-design-issues.md`: 25/25 defects resolved.
 
-- `queues/G-math-error-scan.md`: 66 candidate mathematical error findings; 1 dispositioned fixed, 65 open candidates.
+- `queues/G-math-error-scan.md`: 66 candidate mathematical error findings; all 66 independently dispositioned, with confirmed defects repaired.
 
 * * *
 
