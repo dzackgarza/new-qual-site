@@ -156,7 +156,13 @@ Disposition order follows the finding numbers.
 - [x] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
   Disposition 2026-09-04: confirmed and fixed. Schwarz–Pick gives
   $(1-(3/4)^2)/(1-(1/2)^2)=7/12<2/3$, so the requested map cannot exist.
-- [ ] 28. E-FVXIT — wrong chain-rule formula in the computation of the sharp bound on $|f'(0)|$
+- [x] 28. E-FVXIT — wrong chain-rule formula in the computation of the sharp bound on $|f'(0)|$
+  Disposition 2026-09-04: confirmed, with a deeper statement defect. In this
+  corpus $\HH$ is the upper half-plane, so $f(0)=2$ is impossible. The intended
+  target is the right half-plane $\HH_R$; after that correction, conjugating by
+  $w\mapsto iw/2$ and the Cayley map gives
+  $|F'(0)|=|f'(0)|/4\le1$, with equality for
+  $f(z)=2(1+\lambda z)/(1-\lambda z)$.
 - [ ] 29. E-GAGCW — wrong right-hand side in the Schwarz–Pick rearrangement
 - [ ] 30. E-GFNDF — non-equicontinuity argued at the wrong point
 - [ ] 31. E-GPCW2 — sign of the stated value of $\int_{-1}^1 dx/((x-a)\sqrt{1-x^2})$
