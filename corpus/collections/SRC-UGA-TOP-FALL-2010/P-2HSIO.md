@@ -24,9 +24,9 @@ audit:
 ::: problem
 Suppose that X has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
 Show that there is a group isomorphism
-$$
-\ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (p\inv A, \tilde a)
-.$$
+\[
+\ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (p\inv A, \tilde a).
+\]
 :::
 
 ::: {.solution}
