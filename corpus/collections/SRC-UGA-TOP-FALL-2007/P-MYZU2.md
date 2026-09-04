@@ -23,12 +23,14 @@ Let
 \[
 Y=\bigcup_{\alpha\in A}X_\alpha.
 \]
-Suppose, toward a contradiction, that $Y$ is disconnected.
-Then there are disjoint nonempty sets $U,V$, open in $Y$, such that
+
+<1>1. Any separation of $Y$ would separate one of the subspaces $X_\alpha$.
+::: {.proof}
+Suppose
 \[
 Y=U\disjoint V.
 \]
-Since the common point $p$ belongs to $Y$, after interchanging $U$ and $V$ if necessary we may assume $p\in U$.
+is a separation. Since the common point $p$ belongs to $Y$, after interchanging $U$ and $V$ if necessary assume $p\in U$.
 
 Choose $q\in V$.
 Since $q\in Y$, there is some $\alpha$ with $q\in X_\alpha$.
@@ -39,7 +41,11 @@ p\in U\cap X_\alpha,
 q\in V\cap X_\alpha.
 \]
 The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in the subspace $X_\alpha$, and their union is $X_\alpha$.
-This is a separation of $X_\alpha$, contradicting its connectedness.
+Thus they form a separation of $X_\alpha$.
+:::
 
-Therefore $Y$ is connected.
+<1>2. $Y$ is connected.
+::: {.proof}
+If $Y$ were disconnected, a separation would exist. By <1>1 it would separate some $X_\alpha$, contradicting the hypothesis that every $X_\alpha$ is connected.
+:::
 :::
