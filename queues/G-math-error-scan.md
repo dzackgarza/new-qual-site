@@ -302,7 +302,11 @@ Disposition order follows the finding numbers.
   proof compares $f_n$ directly with $e^z$ on $|z|=1$. For $n\ge2$ the
   exponential tail is at most $1/4<e^{-1}\le|e^z|$, so Rouché gives no zeros
   in the open disk.
-- [ ] 56. P-IM6MH — inversion $1/(2z-1)$: final display labels the series as $1/(1-2z)$
+- [x] 56. P-IM6MH — inversion $1/(2z-1)$: final display labels the series as $1/(1-2z)$
+  Disposition 2026-09-04: confirmed and fixed. The recursively computed
+  coefficients were already those of $(2z-1)^{-1}$; the final display had
+  accidentally changed the denominator to $1-2z$ while retaining the negative
+  coefficients.
 - [ ] 57. P-KPCIE — midpoint recurrence $x_n=(x_{n-1}+x_{n-2})/2$: final closed form and limit ar...
 - [ ] 58. P-MICNK — $az^n+z+1$ has a root in $|z|\le2$: Rouché threshold off by a factor of $4^n$
 - [ ] 59. P-N6W5L — zeros of $z^3-z+1$ in $\Re z>0$: the listed roots of $z^3+1$ are wrong

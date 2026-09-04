@@ -27,9 +27,8 @@ To compute the inverse of $A(z) \da (2z-1)$, note $a_0 = -1, a_1 = 2$, so
 
 so
 \[
-{1\over 1-2z} = -1 - 2z - 4z^2 - 8z^3 \cdots 
+{1\over 2z-1} = -1 - 2z - 4z^2 - 8z^3 - \cdots 
 = - \sum_{k\geq 0} (2z)^k
 .\]
 
 :::
-
