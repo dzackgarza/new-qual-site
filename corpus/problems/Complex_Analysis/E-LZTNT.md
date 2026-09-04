@@ -20,15 +20,28 @@ Find a sequence $z_k\to 0$ such that $f(z_k) \convergesto{k\to\infty} a$
 :::
 
 ::: {.solution}
-\envlist
+- If $a\in\CC^\times$, choose any logarithm $L\in\CC$ with $e^L=a$ and set
+  \[
+  z_k=\qty{L+2\pi i k}^{-1/2},
+  \]
+  choosing either square root for each $k$.
+  Then $z_k\to0$ and
+  \[
+  {1\over z_k^2}=L+2\pi i k,
+  \qquad
+  f(z_k)=e^{L+2\pi i k}=a.
+  \]
 
-- For $a\in \RR_{< 0}$: take $z_k\da {1\over \Log(a) + 2\pi i k - {\pi i \over 2}}$\
-  Then $f(z_k) = a$ for all $k$ but $z_k\to 0$.
+- For $a=0$, take $z_k=i/\sqrt{k}$.
+  Then $z_k\to0$ and
+  \[
+  f(z_k)=e^{-k}\to0.
+  \]
 
-- For $a=0$: take $z_k = -1/k$.
-
-- For $a=\infty$, take $z_k = 1/k$.
-
-- For anything else, take $z_k \da {1\over \Log(a) + 2\pi i n}$ if $a \in \RR_{\geq 0}$.
-  Again $f(z_k) = a$ for all $k$ but $z_k\to 0$.
+- For $a=\infty$, take $z_k=1/\sqrt{k}$.
+  Then $z_k\to0$ and
+  \[
+  f(z_k)=e^k\to\infty
+  \]
+  in $\CP^1$.
 :::

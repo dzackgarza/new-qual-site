@@ -204,7 +204,11 @@ Disposition order follows the finding numbers.
   $f=g=1/z$ actually demonstrated the true statement rather than refuting it.
   The four-item solution was also normalized to remove adjacent Laurent-series
   typos while preserving the other three dispositions.
-- [ ] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ — 
+- [x] 37. E-LZTNT, a<0 case of the sequence for $e^{1/z^2}\to a$ —
+  Disposition 2026-09-04: confirmed, with errors in all cases except $\infty$.
+  For $a\neq0$, solve $1/z_k^2=L+2\pi ik$, so
+  $z_k=(L+2\pi ik)^{-1/2}$. For $a=0$, take $z_k=i/\sqrt{k}$; for
+  $a=\infty$, take $z_k=1/\sqrt{k}$.
 - [ ] 38. E-MCTII, misdirected conformal map for the Schwarz bound — 
 - [ ] 39. E-NIPUY, proves uniform continuity of the wrong function — 
 - [x] 40. E-P7SIB, incorrect $\sin(4\theta)$ identity — duplicate of finding
