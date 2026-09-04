@@ -16,6 +16,8 @@ source:
   institution: uga
   area: topology
   problems:
+  - id: P-43KOX
+    comment: Spring 2016.1
   - P-3TQB5
   - P-6PQRO
   - P-KJBAM
@@ -30,4 +32,5 @@ source:
 ---
 
 ::: remark
+Exam #1 repeats the connected-product theorem from Spring 2015 #1 and reuses [[P-43KOX]].
 :::

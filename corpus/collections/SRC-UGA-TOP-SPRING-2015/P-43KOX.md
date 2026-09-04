@@ -20,6 +20,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-05
   note: Added the empty-product case and verified the common-point union argument for the nonempty case.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the second appearance against problem 1 of the official UGA Spring 2016 topology exam; it is the same connected-product theorem.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Rechecked the empty-product case and common-point union proof for the Spring 2016 appearance; no mathematical change was needed.
 ---
 
 ::: {.problem}
