@@ -14,42 +14,59 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
-Show that $\Aut(\CP^1) = \ts{{az+b\over cz+d} \st ad-bc\neq 0}$.
-
+::: {.exercise}
+Show that
+\[
+\Aut(\CP^1)
+=\left\{z\longmapsto {az+b\over cz+d}:a,b,c,d\in\CC,\ ad-bc\neq0\right\}.
+\]
 :::
 
-:::{.solution}
-Write $I(z) \da {1\over z}$ and note that
+::: {.solution}
+Let
 \[
-{az+b\over cz+d} = {a \over c} + {bc-ad\over c}{1\over cz+d} = (z\mapsto cz+d)\circ\qty{ z \mapsto {1\over z} }\circ\qty{{ a\over c} + {bc-ad\over c} z}
-,\]
-which is $I$ composed with affine transformations.
-Note that the last map satisfies
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\GL_2(\CC).
+\]
+The linear automorphism $A:\CC^2\to\CC^2$ descends to a holomorphic automorphism of projective space
 \[
-\dd{}{z} {bc-ad \over c} z + {a\over c} = {bc-ad\over c}
-,\]
-which is nonzero (making the map conformal) precisely when $bd-ad\neq 0$.
-
-$\supseteq$:
-All LFTs are bijective, since if $f$ is an LFT then $f = A_1 \circ I \circ A_2$ with the $A_i$ affine and invertible, and $I(z)$ is invertible on $\CP^1$, so $f\inv = A_2\inv \circ I\inv \circ A_1\inv$.
-Noting that the $A_i$ are conformal, if $I$ is conformal then by the chain rule $f'\neq 0$.
-That $I$ is conformal on $\CP^1$: away from $z=0$ and $z=\infty$, $I(z) = 1/z$ is holomorphic with derivative $I'(z) = -1/z^2 \neq 0$, so it is conformal there.
-Now use that $I\qty{1\over w} = w$ is conformal at zero, and ${1\over I(z)}$ is conformal at $\infty$.
-
-$\subseteq$:
-Suppose $f\in \Aut(\CP^1)$.
-If $f(\infty) = \infty$, then the claim is that $f$ must be affine.
-Define $F(z) \da {1\over f(1/z)}$ satisfies $F(0) = 0$, and $F$ is conformal at zero since it is a composition of $f$ and $I$.
-So $F(0) = 0$ but $F'(0) \neq 0$, making zero a pole of $F$ of order one.
-So $f$ has a pole of order 1 at $\infty$, and by injectivity, $f\inv(\infty) = \ts{\infty}$ has a single element.
-Now $G(z) \da {f(z) - f(0) \over z}$ is bounded on $\CC$ and thus constant, so $f(z) - f(0) = cz \implies f(z) = cz + f(0)$.
-
-If $f(\infty) = w < \infty$, consider $F(z) \da {1\over z-w}$.
-The map $F$ is an LFT (it has the form $\frac{az+b}{cz+d}$ with $a=0, b=1, c=1, d=-w$), and $G(z) \da {1\over f(z) - w} = (F\circ f)(z)$ is an automorphism of $\CP^1$ satisfying $G(\infty) = \infty$ (since $f(\infty) = w$ makes $f(z) - w \to 0$ as $z \to \infty$, so $G(z) \to \infty$).
-By the previous case, $G$ is affine, so 
+[z_0:z_1]\longmapsto[az_0+bz_1:cz_0+dz_1].
+\]
+On the affine chart $z=[z:1]$, this is
 \[
-G(z) = az + b \implies {1\over f(z) - w} = az + b \implies f(z) = {1\over az + b } + w = {waz + wb\over az+b }
-,\]
-which is visibly an LFT.
+z\longmapsto\frac{az+b}{cz+d}.
+\]
+Its inverse is induced by $A^{-1}$, so every fractional linear transformation with $ad-bc\neq0$ lies in $\Aut(\CP^1)$.
+
+Conversely, let $f\in\Aut(\CP^1)$.
+By the classification of meromorphic functions on $\CP^1$, write
+\[
+f(z)=\frac{p(z)}{q(z)}
+\]
+with coprime polynomials $p,q$, and put
+\[
+d=\max\{\deg p,\deg q\}.
+\]
+For every finite value $w$ except possibly the ratio of the leading coefficients when $\deg p=\deg q=d$, the equation
+\[
+f(z)=w
+\]
+is equivalent to
+\[
+p(z)-wq(z)=0,
+\]
+a polynomial equation of degree $d$.
+Hence it has $d$ solutions counted with multiplicity.
+
+Because $f$ is an automorphism, its inverse is holomorphic.
+Therefore $f$ has no critical points: in local coordinates,
+\[
+(f^{-1})'(f(z))f'(z)=1.
+\]
+Thus every point in every fiber has multiplicity one.
+Since $f$ is also injective, a generic fiber contains exactly one point.
+Consequently $d=1$.
+
+Therefore $p(z)=az+b$ and $q(z)=cz+d$ for some $a,b,c,d\in\CC$.
+The determinant $ad-bc$ is nonzero, since otherwise the two linear polynomials are proportional and $f$ is constant.
+Hence $f$ is fractional linear.
 :::

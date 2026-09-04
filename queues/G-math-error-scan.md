@@ -136,7 +136,13 @@ Disposition order follows the finding numbers.
   at $\infty$, hence polynomial. The old proof incorrectly forced this
   polynomial part to be constant, which would exclude rational functions such
   as $f(z)=z$.
-- [ ] 24. E-CFTRQ — two slips in the proof that $\mathrm{Aut}(\mathbb{CP}^1)$ is the set of fract...
+- [x] 24. E-CFTRQ — two slips in the proof that $\mathrm{Aut}(\mathbb{CP}^1)$ is the set of fract...
+  Disposition 2026-09-04: confirmed and rewritten. Instead of patching the
+  corrupted affine/inversion calculation, the card now proves both inclusions
+  projectively: $A\in\GL_2(\CC)$ induces a Möbius automorphism, and a
+  rational automorphism $p/q$ has generic fiber cardinality
+  $d=\max(\deg p,\deg q)$ counted with multiplicity; injectivity and the
+  holomorphic inverse force $d=1$.
 - [ ] 25. E-EOMTI — the semicircular-reduction solution computes the wrong auxiliary integral
 - [ ] 26. E-FS7GZ — wrong distance-to-branch-cut for the second center
 - [ ] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
