@@ -23,10 +23,11 @@ source:
   - P-BNSGA
   - P-23NY2
   - P-IBLLK
+  - id: P-23S3Z
+    comment: Fall 2016.8; repeats the Brouwer fixed-point problem from Fall 2014.8
   date:
     kind: academic-term
     term: fall
     year: 2016
 ---
-
 
