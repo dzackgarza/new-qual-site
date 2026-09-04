@@ -143,7 +143,11 @@ Disposition order follows the finding numbers.
   rational automorphism $p/q$ has generic fiber cardinality
   $d=\max(\deg p,\deg q)$ counted with multiplicity; injectivity and the
   holomorphic inverse force $d=1$.
-- [ ] 25. E-EOMTI — the semicircular-reduction solution computes the wrong auxiliary integral
+- [x] 25. E-EOMTI — the semicircular-reduction solution computes the wrong auxiliary integral
+  Disposition 2026-09-04: confirmed and rewritten. The auxiliary integral is
+  $A=\int_0^\infty(1+x^2)^{-2}dx=\pi/4$, not the unsquared Cauchy
+  integral. A single indented-semicycle proof now gives
+  $2I+i\pi A=-\pi/2+i\pi^2/4$, hence $I=-\pi/4$.
 - [ ] 26. E-FS7GZ — wrong distance-to-branch-cut for the second center
 - [ ] 27. E-FUIDU — Schwarz–Pick bound computed as $7/2$ instead of $7/12$
 - [ ] 28. E-FVXIT — wrong chain-rule formula in the computation of the sharp bound on $|f'(0)|$
