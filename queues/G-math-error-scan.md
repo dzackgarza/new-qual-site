@@ -268,7 +268,12 @@ Disposition order follows the finding numbers.
   $\frac{\pi}{n}\csc(\pi a/n)$ at $a=1$ gives the missing factor
   $\csc(\pi/n)$. The scratchpad-style contradictory recalculation in the
   solution was replaced by the direct Mellin-parameter differentiation.
-- [ ] 50. P-5U7QZ — sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
+- [x] 50. P-5U7QZ — sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
+  Disposition 2026-09-04: confirmed, with the same statement corruption as
+  E-FVXIT. Since $2\notin\HH$, the intended target is the right half-plane.
+  After that correction, rotating/scaling to $\HH$ and applying the Cayley map
+  gives the sharp bound $|f'(0)|\le4$, attained by
+  $2(1+\lambda z)/(1-\lambda z)$.
 - [ ] 51. P-64ZUP — conformal map from $\{|z|<1,\ |z-1/2|>1/2\}$ to $\DD$
 - [ ] 52. P-6VF7J — part (b), an $f$ analytic at $1$ whose series $\sum a_n$ diverges
 - [ ] 53. P-BHLSJ — Laurent expansions of $e^{1/z}$ and $\cos(1/z)$ about $0$
