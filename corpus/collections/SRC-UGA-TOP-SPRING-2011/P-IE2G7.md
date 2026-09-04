@@ -11,6 +11,13 @@ classification:
   - Point-Set Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
 ---
 
 ::: {.problem}
