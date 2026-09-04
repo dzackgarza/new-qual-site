@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-04
+  note: Replaced the reversed Alexander-duality isomorphism with the degree-two duality and UCT torsion obstruction.
 ---
 
 ::: problem
@@ -25,39 +29,59 @@ Prove that $M$ cannot be embedded as a submanifold of $S^3$.
 :::
 
 ::: {.solution}
-<1>1. Decomposition of $S^3$:
-<2>1. Suppose for contradiction that $M$ embeds as a compact 3-submanifold of $S^3$.
-Let $N = \overline{S^3 \setminus M}$ be the closure of the complement.
-Then $N$ is a compact 3-manifold with boundary $\partial N = \partial M = \Sigma$, and:
-\[
-S^3 = M \cup_\Sigma N, \qquad M \cap N = \Sigma.
-\]
+<1>1. Suppose for contradiction that $M$ embeds as a compact submanifold of $S^3$.
+::: {.proof}
+Identify $M$ with its image in $S^3$.
+Because a compact manifold has the homotopy type of a finite CW complex, its homology groups are finitely generated.
+:::
 
-<1>2. Application of Alexander Duality:
-<2>1. By Alexander Duality for the compact subset $M \subset S^3$:
+<1>2. Alexander duality implies that $H^2(M;\ZZ)$ is free abelian.
+::: {.proof}
+The embedded manifold $M$ is compact and locally contractible, so Alexander duality gives
 \[
-\widetilde{H}_1(M; \mathbb{Z}) \cong \widetilde{H}^{3 - 1 - 1}(S^3 \setminus M; \mathbb{Z}) = \widetilde{H}^1(S^3 \setminus M; \mathbb{Z}).
+\widetilde H^2(M;\ZZ)
+\cong
+\widetilde H_0(S^3\setminus M;\ZZ).
 \]
-<2>2. Since $N$ deformation retracts onto $S^3 \setminus M$ (by collar neighborhoods of the boundary $\Sigma$):
+The group $\widetilde H_0$ of any space is free abelian, since it is free on the path components modulo one diagonal copy of $\ZZ$.
+Hence $\widetilde H^2(M;\ZZ)$ is free abelian.
+In degree $2>0$, reduced and unreduced cohomology agree, so $H^2(M;\ZZ)$ is free abelian.
+:::
+
+<1>3. If $H_1(M;\ZZ)$ has nonzero torsion, then $H^2(M;\ZZ)$ has nonzero torsion.
+::: {.proof}
+The universal coefficient theorem for cohomology gives a natural short exact sequence
 \[
-H^1(S^3 \setminus M; \mathbb{Z}) \cong H^1(N; \mathbb{Z}).
+0
+\longrightarrow
+\operatorname{Ext}(H_1(M;\ZZ),\ZZ)
+\longrightarrow
+H^2(M;\ZZ)
+\longrightarrow
+\operatorname{Hom}(H_2(M;\ZZ),\ZZ)
+\longrightarrow
+0.
 \]
-Thus $H_1(M; \mathbb{Z}) \cong H^1(N; \mathbb{Z})$ (for the reduced/unreduced positive degree groups).
-
-<1>3. Torsion-free property of first cohomology via UCT:
-<2>1. By the Universal Coefficient Theorem for Cohomology:
+By <1>1, the finitely generated abelian group $H_1(M;\ZZ)$ decomposes as
 \[
-H^1(N; \mathbb{Z}) \cong \operatorname{Hom}(H_1(N; \mathbb{Z}), \mathbb{Z}) \oplus \operatorname{Ext}(H_0(N; \mathbb{Z}), \mathbb{Z}).
+H_1(M;\ZZ)\cong \ZZ^r\oplus T
 \]
-<2>2. Because $H_0(N; \mathbb{Z})$ is a free abelian group, $\operatorname{Ext}(H_0(N; \mathbb{Z}), \mathbb{Z}) = 0$.
-<2>3. For any abelian group $G$, the group $\operatorname{Hom}(G, \mathbb{Z})$ is a subgroup of a direct product of copies of $\mathbb{Z}$, hence contains no non-zero elements of finite order (it is torsion-free).
-Thus $H^1(N; \mathbb{Z}) \cong \operatorname{Hom}(H_1(N; \mathbb{Z}), \mathbb{Z})$ is torsion-free.
+with $T$ finite.
+If $T\ne0$, then
+\[
+\operatorname{Ext}(H_1(M;\ZZ),\ZZ)
+\cong
+\operatorname{Ext}(T,\ZZ)
+\cong T
+\]
+is nonzero torsion.
+The left arrow in the UCT sequence is injective, so this torsion subgroup embeds in $H^2(M;\ZZ)$.
+:::
 
-<1>4. Contradiction and conclusion:
-<2>1. By <1>2 and <1>3, $H_1(M; \mathbb{Z}) \cong H^1(N; \mathbb{Z})$ must be torsion-free.
-This contradicts the hypothesis that $H_1(M; \mathbb{Z})$ contains a torsion element.
-<2>2. Therefore $M$ cannot be embedded as a submanifold of $S^3$.
-
-<1>5. Conclusion:
-$M$ cannot embed in $S^3$. Q.E.D.
+<1>4. Therefore $M$ cannot embed in $S^3$.
+::: {.proof}
+The hypothesis says that $H_1(M;\ZZ)$ has nonzero torsion.
+By <1>3, $H^2(M;\ZZ)$ then has nonzero torsion, while <1>2 says that $H^2(M;\ZZ)$ is free abelian.
+This contradiction disproves the assumed embedding from <1>1.
+:::
 :::
