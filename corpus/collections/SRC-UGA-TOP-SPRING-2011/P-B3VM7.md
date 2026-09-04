@@ -28,7 +28,6 @@ a. State the **Lefschetz Fixed Point Theorem** for a finite simplicial complex $
 b. Use degree theory to prove this theorem in case $X = S^n$.
 :::
 
-
 ::: {.solution}
 <1>1. Let $X$ be a finite simplicial complex and $f:X\to X$ a continuous map.
 Its Lefschetz number is
@@ -140,8 +139,7 @@ L(f)
 
 <1>6. Therefore the Lefschetz fixed-point theorem holds for $S^n$.
 ::: {.proof}
-Step <1>5 proves the contrapositive:
-if $f$ has no fixed point, then $L(f)=0$.
+Step <1>5 proves the contrapositive: if $f$ has no fixed point, then $L(f)=0$.
 Hence
 \[
 L(f)\ne0
