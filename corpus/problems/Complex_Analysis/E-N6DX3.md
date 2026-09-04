@@ -64,7 +64,5 @@ review: draft
 
   - Converges everywhere on $S^1$: take $\sum z^k/k^2$.
 
-  - Part 2: ???? Todo get help
-
 - ![[_attachments/Pasted image 20210517023424.png]]
 :::
