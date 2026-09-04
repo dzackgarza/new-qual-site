@@ -240,7 +240,11 @@ Disposition order follows the finding numbers.
   were removed as part of the same repair.
 - [x] 44. E-WAYFS, wrong residue for $1/\sin(\pi z)$ at $z=k\in\mathbb Z$ —
   duplicate of finding 16; fixed there on 2026-09-04.
-- [ ] 45. E-WXHMJ, remark claims the residues of an elliptic function do not cancel — 
+- [x] 45. E-WXHMJ, remark claims the residues of an elliptic function do not cancel —
+  Disposition 2026-09-04: confirmed and fixed. Opposite edges of a fundamental
+  parallelogram cancel, so the sum of all enclosed residues is always zero.
+  The proof now also states why the forbidden one-pole case is a single simple
+  pole: "one pole counted with multiplicity" means total pole order one.
 - [ ] 46. E-WYJ7K, wrong tangency vertex and image region for the tangent lune — 
 - [ ] 47. E-YFBH5 — Analytic self-maps of the disc, zero of order $k$ at $0$, $|f|\to 1$ at boundary
 - [ ] 48. E-ZQGR5 — Radius of convergence of $\sum a^{k^2} z^k$

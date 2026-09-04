@@ -15,33 +15,36 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f$ be an elliptic function and $P$ be its fundamental parallelogram.
-Supposing that $f$ is nonconstant, show that $f$ has at least two poles in $P$ (counted with multiplicity).
-
+Suppose that $f$ is nonconstant. Show that $f$ has at least two poles in $P$, counted with multiplicity.
 :::
 
-:::{.solution}
-Write the period lattice of $f$ as $\Lambda = \omega_1\ZZ + \omega_2 \ZZ$, and without loss of generality (by translating $P$ if necessary), assume that $f$ has no poles on $\bd P$.
-Since $P$ is bounded and $f$ is periodic, if $f$ has no poles then its only singularities will be removable.
-In this case $f$, extends to a holomorphic function on $P$, and thus an entire function, making $f$ constant by Liouville.
-So $f$ has at least one pole.
-Toward a contradiction, suppose $f$ has exactly one pole $z_0\in P$, in which case $\int_{\bd P} f \neq 0$ since the residue at $z_0$ will be nonzero.
-We'll show that $\int_{\bd P} f$ is forced to be zero to derive the contradiction.
+::: {.solution}
+Write the period lattice as $\Lambda=\omega_1\ZZ+\omega_2\ZZ$, and translate the fundamental parallelogram if necessary so that $f$ has no poles on $\bd P$.
+
+If $f$ had no poles, periodicity would make it an entire bounded function: it is bounded on the compact closure of $P$, hence bounded on all of $\CC$ by translation through $\Lambda$. Liouville's theorem would then force $f$ to be constant. Thus $f$ has at least one pole.
+
+Suppose, toward a contradiction, that $f$ has only one pole counted with multiplicity. Then it is a single simple pole $z_0\in P$, so
+\[
+\Res_{z=z_0}f\neq0.
+\]
 
 Write $\bd P = \sum_{1\leq k \leq 4} \gamma_k$ where the $\gamma_k$ are the edges traversed counterclockwise.
-By periodicity, 
-
-- $I_1 \da \int_{\gamma_1} f = - \int_{\gamma_3}f$
-- $I_2 \da \int_{\gamma_2} f = - \int_{\gamma_4}f$
-
-Thus
+By periodicity, opposite edges contribute equal integrals with opposite orientations, so
 \[
-\int_{\bd P} f = \sum_{1\leq k \leq 4} \int_{\gamma_k} f = I_1 + I_2 - I_1 - I_2 = 0
-.\]
-$\contradiction$
+\int_{\bd P}f(z)\,dz=0.
+\]
+But the residue theorem gives
+\[
+0=\int_{\bd P}f(z)\,dz
+=2\pi i\Res_{z=z_0}f(z),
+\]
+contradicting the simplicity of the pole.
 
-> Note that if there are at least two poles, the residues may cancel and $\int_{\bd P} f$ may be zero or nonzero.
-This argument in fact shows that the residues *can not* cancel, i.e. $\sum_{k} \Res_{z=z_k} f(z)\neq 0$.
-
+More generally, the same boundary cancellation always shows
+\[
+\sum_{z_k\in P}\Res_{z=z_k}f(z)=0
+\]
+for every elliptic function whose fundamental parallelogram has no poles on its boundary.
 :::
