@@ -24,6 +24,7 @@ source:
   - P-4EIOH
   - P-OSS6X
   - P-LLVY2
+  - P-C3NSR
   date:
     kind: academic-term
     term: spring
