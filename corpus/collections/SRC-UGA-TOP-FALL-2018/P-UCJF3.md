@@ -15,50 +15,141 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked against problem 4 of the official UGA Fall 2018 topology exam and restored the omitted openness hypotheses on A, B, and A intersect B.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified the Lebesgue-number subdivision, transition-point paths in A intersect B, and factorization of an arbitrary based loop.
 ---
 
 ::: problem
-Prove the following portion of van Kampen's theorem. 
-If $X = A\cup B$ and $A$, $B$, and $A \cap B$ are nonempty and path connected with $\pt \in A \cap B$, then there is a surjection 
-$$
-\pi_1 (A, \pt) \ast \pi_1 (B, \pt) \to \pi_1 (X, \pt)
-.$$
+Prove the following portion of van Kampen's theorem.
+If
+\[
+X=A\cup B
+\]
+and $A$, $B$, and $A\cap B$ are open and path connected, with $*\in A\cap B$, then there is a surjection
+\[
+\pi_1(A,*)*\pi_1(B,*)\longrightarrow\pi_1(X,*).
+\]
 :::
 
-::: solution
-**Goal:** Prove that the canonical homomorphism $\Phi: \pi_1(A, \pt) \ast \pi_1(B, \pt) \to \pi_1(X, \pt)$ induced by the inclusion maps $i_A: A \hookrightarrow X$ and $i_B: B \hookrightarrow X$ is surjective, where $A, B$ are open subsets of $X = A \cup B$ (or subcomplexes) with $A, B, A \cap B$ path-connected and $\pt \in A \cap B$.
+::: {.solution}
+Let
+\[
+i_A:A\hookrightarrow X,
+\qquad
+i_B:B\hookrightarrow X
+\]
+be the inclusions.
+By the universal property of the free product, the induced homomorphisms on fundamental groups determine a homomorphism
+\[
+\Phi:\pi_1(A,*)*\pi_1(B,*)\longrightarrow\pi_1(X,*).
+\]
+We prove that $\Phi$ is surjective.
 
-<1>1. Canonical homomorphism $\Phi$:
-    The inclusions $i_A: A \hookrightarrow X$ and $i_B: B \hookrightarrow X$ induce group homomorphisms $(i_A)_*: \pi_1(A, \pt) \to \pi_1(X, \pt)$ and $(i_B)_*: \pi_1(B, \pt) \to \pi_1(X, \pt)$. By the universal property of the free product of groups, there exists a unique group homomorphism
-    $$\Phi: \pi_1(A, \pt) \ast \pi_1(B, \pt) \to \pi_1(X, \pt)$$
-    satisfying $\Phi|_{ \pi_1(A, \pt)} = (i_A)_*$ and $\Phi|_{ \pi_1(B, \pt)} = (i_B)_*$.
+<1>1. Every based loop in $X$ admits a finite subdivision whose subpaths lie alternately in $A$ or $B$.
+::: {.proof}
+Let
+\[
+\gamma:[0,1]\longrightarrow X
+\]
+be a loop based at $*$.
+Since $A$ and $B$ are open and cover $X$, the sets
+\[
+\gamma^{-1}(A),
+\qquad
+\gamma^{-1}(B)
+\]
+form an open cover of the compact metric space $[0,1]$.
+Choose a Lebesgue number $\delta>0$ for this cover and a partition
+\[
+0=t_0<t_1<\cdots<t_m=1
+\]
+whose subintervals have length less than $\delta$.
+Then for each $j$ the image
+\[
+\gamma([t_{j-1},t_j])
+\]
+is contained entirely in $A$ or entirely in $B$.
+Choose one such set and denote it by $L_j\in\{A,B\}$.
+:::
 
-<1>2. Partition of an arbitrary loop $\gamma$:
-    Let $[\gamma] \in \pi_1(X, \pt)$ be represented by a continuous loop $\gamma: [0, 1] \to X$ with $\gamma(0) = \gamma(1) = \pt$. There exists a partition $0 = t_0 < t_1 < t_2 < \cdots < t_k = 1$ of $[0, 1]$ such that each subpath $\gamma_i = \gamma|_{[t_{i-1}, t_i]}$ has image $\gamma([t_{i-1}, t_i])$ contained entirely in $A$ or entirely in $B$ for each $i \in \{1, \dots, k\}$.
-    *Proof:* The preimages $\gamma^{-1}(A)$ and $\gamma^{-1}(B)$ form an open cover of the compact metric space $[0, 1]$. By the Lebesgue Number Lemma, there exists $\delta > 0$ such that every interval in $[0, 1]$ of length less than $\delta$ is contained in $\gamma^{-1}(A)$ or in $\gamma^{-1}(B)$. Choosing $k > 1/\delta$ and subdivision points $t_i = i/k$ yields the required partition.
+<1>2. For every subdivision point $t_j$, one can choose a path
+\[
+\alpha_j:[0,1]\longrightarrow X
+\]
+from $*$ to $\gamma(t_j)$ that lies in every $L_r$ incident to that endpoint.
+::: {.proof}
+Take $\alpha_0$ and $\alpha_m$ to be the constant path at $*$.
+For $0<j<m$, there are two cases.
 
-<1>3. Connecting intermediate endpoints to the basepoint $\pt$:
-    For each subdivision point $t_i$ ($i = 0, \dots, k$), there exists a path $\alpha_i: [0, 1] \to X$ from $\pt$ to $\gamma(t_i)$ such that:
-    1. $\alpha_0 = c_{\pt}$ and $\alpha_k = c_{\pt}$ (the constant path at $\pt$).
-    2. If $\gamma(t_i) \in A \cap B$, the image of $\alpha_i$ lies entirely within $A \cap B$.
-    3. If $\gamma(t_i) \in A \setminus B$, $\alpha_i$ lies in $A$.
-    4. If $\gamma(t_i) \in B \setminus A$, $\alpha_i$ lies in $B$.
-    *Proof:* For $i=0$ and $i=k$, $\gamma(t_0) = \gamma(t_k) = \pt$, so we take $\alpha_0 = \alpha_k = c_{\pt}$. For $0 < i < k$, if $\gamma([t_{i-1}, t_i]) \subseteq A$ and $\gamma([t_i, t_{i+1}]) \subseteq B$ (or vice versa), then $\gamma(t_i) \in A \cap B$. Since $A \cap B$ is path-connected and contains $\pt$, there exists a path $\alpha_i$ in $A \cap B$ from $\pt$ to $\gamma(t_i)$. If both adjacent intervals map into $A$ (respectively $B$), $\gamma(t_i) \in A$ (respectively $B$), and path-connectedness of $A$ (respectively $B$) supplies a path $\alpha_i$ in $A$ (respectively $B$) from $\pt$ to $\gamma(t_i)$.
+If
+\[
+L_j=L_{j+1},
+\]
+then $\gamma(t_j)$ and $*$ both lie in the path-connected set $L_j$, so choose $\alpha_j$ inside $L_j$.
+If
+\[
+L_j\neq L_{j+1},
+\]
+then
+\[
+\gamma(t_j)\in L_j\cap L_{j+1}=A\cap B.
+\]
+Since $A\cap B$ is path connected and contains $*$, choose $\alpha_j$ inside $A\cap B$.
+Thus, for every $r$, both $\alpha_{r-1}$ and $\alpha_r$ lie in $L_r$.
+:::
 
-<1>4. Factorization into loops based at $\pt$:
-    In $\pi_1(X, \pt)$, we have
-    $$[\gamma] = [\sigma_1] \cdot [\sigma_2] \cdots [\sigma_k]$$
-    where $\sigma_i = \alpha_{i-1} \ast \gamma_i \ast \overline{\alpha}_i$ is a loop based at $\pt$.
-    *Proof:* Under path concatenation,
-    $$\sigma_1 \ast \sigma_2 \ast \cdots \ast \sigma_k = (\alpha_0 \ast \gamma_1 \ast \overline{\alpha}_1) \ast (\alpha_1 \ast \gamma_2 \ast \overline{\alpha}_2) \ast \cdots \ast (\alpha_{k-1} \ast \gamma_k \ast \overline{\alpha}_k).$$
-    Since $\overline{\alpha}_i \ast \alpha_i \simeq c_{\gamma(t_i)}$ and $\alpha_0 = \alpha_k = c_{\pt}$, the intermediate paths cancel up to homotopy:
-    $$\sigma_1 \ast \cdots \ast \sigma_k \simeq \alpha_0 \ast \gamma_1 \ast \gamma_2 \ast \cdots \ast \gamma_k \ast \overline{\alpha}_k \simeq \gamma_1 \ast \cdots \ast \gamma_k = \gamma.$$
-    Thus $[\gamma] = \prod_{i=1}^k [\sigma_i]$ in $\pi_1(X, \pt)$.
+<1>3. The loop $\gamma$ is homotopic rel basepoint to a product of loops each lying entirely in $A$ or entirely in $B$.
+::: {.proof}
+Let
+\[
+\gamma_j=\gamma|_{[t_{j-1},t_j]}
+\]
+with the usual reparametrization to $[0,1]$, and define the based loop
+\[
+\sigma_j
+=\alpha_{j-1}*\gamma_j*\overline{\alpha_j}.
+\]
+By <1>2, the entire loop $\sigma_j$ lies in $L_j$, hence in $A$ or in $B$.
 
-<1>5. Membership in images of factor groups:
-    For each $i \in \{1, \dots, k\}$, the loop $\sigma_i = \alpha_{i-1} \ast \gamma_i \ast \overline{\alpha}_i$ lies entirely in $A$ or entirely in $B$, so $[\sigma_i] \in \operatorname{im}((i_A)_*)$ or $[\sigma_i] \in \operatorname{im}((i_B)_*)$.
-    *Proof:* By construction, $\gamma_i$ lies in $A$ (or $B$). The boundary paths $\alpha_{i-1}$ and $\alpha_i$ were chosen in $A \cap B \subseteq A$ (or $A \cap B \subseteq B$) whenever $\gamma_i$ lies in $A$ (or $B$). Thus the concatenation $\sigma_i$ is a continuous map from $[0, 1]$ into $A$ (or $B$) with $\sigma_i(0) = \sigma_i(1) = \pt$. Therefore $[\sigma_i] = (i_A)_*([\sigma_i]_A)$ for some $[\sigma_i]_A \in \pi_1(A, \pt)$ if $\operatorname{im}(\sigma_i) \subseteq A$, or $[\sigma_i] = (i_B)_*([\sigma_i]_B)$ for some $[\sigma_i]_B \in \pi_1(B, \pt)$ if $\operatorname{im}(\sigma_i) \subseteq B$.
+In the concatenation
+\[
+\sigma_1*\cdots*\sigma_m,
+\]
+each adjacent pair
+\[
+\overline{\alpha_j}*\alpha_j
+\]
+is homotopic rel endpoints to the constant path at $\gamma(t_j)$.
+Since $\alpha_0$ and $\alpha_m$ are constant at $*$, cancellation of these backtracking paths gives
+\[
+[\gamma]
+=[\sigma_1]\cdots[\sigma_m]
+\]
+in $\pi_1(X,*)$.
+:::
 
-<1>6. Conclusion: $\Phi$ is surjective.
-    *Proof:* For any $[\gamma] \in \pi_1(X, \pt)$, each factor $[\sigma_i]$ in the product $[\gamma] = \prod_{i=1}^k [\sigma_i]$ is in $\operatorname{im}(\Phi)$ by <1>5. Since $\Phi$ is a homomorphism, the word $w = [g_1] \ast [g_2] \ast \cdots \ast [g_k] \in \pi_1(A, \pt) \ast \pi_1(B, \pt)$ (where $[g_i] = [\sigma_i]_A \in \pi_1(A, \pt)$ or $[\sigma_i]_B \in \pi_1(B, \pt)$) satisfies $\Phi(w) = \prod_{i=1}^k \Phi([g_i]) = \prod_{i=1}^k [\sigma_i] = [\gamma]$. Hence $\Phi$ is surjective. Q.E.D.
+<1>4. The homomorphism $\Phi$ is surjective.
+::: {.proof}
+By <1>3, every element $[\gamma]\in\pi_1(X,*)$ is a product of classes $[\sigma_j]$, each represented by a loop wholly in $A$ or wholly in $B$.
+Therefore every factor lies in the image of
+\[
+(i_A)_*:\pi_1(A,*)\to\pi_1(X,*)
+\]
+or of
+\[
+(i_B)_*:\pi_1(B,*)\to\pi_1(X,*).
+\]
+These two maps are precisely the restrictions of $\Phi$ to the two free factors.
+Hence $[\gamma]\in\operatorname{im}\Phi$.
+Since $[\gamma]$ was arbitrary, $\Phi$ is surjective.
+:::
 :::
