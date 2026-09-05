@@ -13,50 +13,116 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: Checked the statement against Section B, problem B1 of the January 18, 2002 topology qualifying exam.
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Repaired the covering-space basepoint: choose t0 in R above f(x0), rather
+    than using 0 unless f(x0)=1. The finite image of f_* in pi_1(S^1) = Z is
+    trivial, so the lifting criterion gives a lift to R, which contracts by a
+    straight-line homotopy.
 ---
 
 ::: {.problem}
 Show that if $X$ is a path-connected, locally path-connected topological space with finite fundamental group $\pi_1(X, x_0)$, then every continuous map $f : X \to S^1$ is **homotopic to a constant map** (nullhomotopic).
 :::
 
-::: solution
-**Goal:** Prove that every continuous map $f: X \to S^1$ lifts to the contractible universal covering space $\mathbb{R} \to S^1$ because $f_*(\pi_1(X))$ must be trivial.
+::: {.solution}
+Fix a basepoint $x_0\in X$ and let
+\[
+p:\mathbb R\longrightarrow S^1,
+\qquad
+p(t)=e^{2\pi i t},
+\]
+be the standard universal covering map.
+Choose $t_0\in\mathbb R$ such that
+\[
+p(t_0)=f(x_0).
+\]
 
-<1>1. The Universal Covering Space $p: \mathbb{R} \to S^1$:
-    *Proof:*
-    <2>1. The standard exponential map $p: \mathbb{R} \to S^1$ given by $p(t) = e^{2\pi i t}$ is the **universal covering space** of the circle $S^1$.
-    <2>2. The real line $\mathbb{R}$ is **contractible** ($\pi_1(\mathbb{R}) = 0$, $\mathbb{R} \simeq \{*\}$).
-    <2>3. The subgroup of $\pi_1(S^1, 1) \cong \mathbb{Z}$ corresponding to the covering $p$ is the trivial subgroup $p_*(\pi_1(\mathbb{R})) = \{0\}$.
+<1>1. The induced homomorphism
+\[
+f_*:\pi_1(X,x_0)
+\longrightarrow
+\pi_1(S^1,f(x_0))\cong\mathbb Z
+\]
+is trivial.
+::: {.proof}
+The group $\pi_1(X,x_0)$ is finite by hypothesis, so its homomorphic image
+\[
+f_*(\pi_1(X,x_0))
+\]
+is finite.
+But every nontrivial subgroup of $\mathbb Z$ is infinite.
+Therefore
+\[
+f_*(\pi_1(X,x_0))=\{0\}.
+\]
+:::
 
-<1>2. Triviality of the Induced Homomorphism $f_*: \pi_1(X, x_0) \to \pi_1(S^1, f(x_0))$:
-    *Proof:*
-    <2>1. The induced map on fundamental groups is a group homomorphism:
-        $$f_*: \pi_1(X, x_0) \longrightarrow \pi_1(S^1, f(x_0)) \cong \mathbb{Z}.$$
-    <2>2. By the First Isomorphism Theorem for groups:
-        $$\operatorname{im}(f_*) \cong \pi_1(X, x_0) / \ker(f_*).$$
-    <2>3. Since $\pi_1(X, x_0)$ is a finite group of order $N < \infty$, the image $\operatorname{im}(f_*) \le \mathbb{Z}$ must be a **finite subgroup of $\mathbb{Z}$**.
-    <2>4. The only finite subgroup of the infinite cyclic group $\mathbb{Z}$ is the trivial subgroup $\{0\}$.
-    <2>5. Therefore, $\operatorname{im}(f_*) = \{0\}$, which means:
-        $$f_*(\pi_1(X, x_0)) = \{0\} \subseteq p_*(\pi_1(\mathbb{R}, 0)).$$
+<1>2. The map $f$ lifts to a continuous map
+\[
+\widetilde f:X\longrightarrow\mathbb R
+\]
+with $\widetilde f(x_0)=t_0$ and $p\circ\widetilde f=f$.
+::: {.proof}
+Because $\mathbb R$ is simply connected,
+\[
+p_*\bigl(\pi_1(\mathbb R,t_0)\bigr)
+\]
+is the trivial subgroup of $\pi_1(S^1,f(x_0))$.
+By <1>1,
+\[
+f_*\bigl(\pi_1(X,x_0)\bigr)
+\subseteq
+p_*\bigl(\pi_1(\mathbb R,t_0)\bigr).
+\]
+Since $X$ is path-connected and locally path-connected, the covering-space lifting criterion applied with the chosen point $t_0\in p^{-1}(f(x_0))$ gives the required lift.
+:::
 
-<1>3. Existence of a Continuous Lift $\tilde{f}: X \to \mathbb{R}$:
-    *Proof:*
-    <2>1. Since $X$ is path-connected and locally path-connected, and $f_*(\pi_1(X, x_0)) \subseteq p_*(\pi_1(\mathbb{R})) = \{0\}$, by the **Lifting Criterion for Covering Spaces**:
-        $$\text{There exists a continuous map } \tilde{f}: X \to \mathbb{R} \text{ such that } p \circ \tilde{f} = f.$$
+<1>3. The lift $\widetilde f$ is homotopic to the constant map with value $t_0$.
+::: {.proof}
+Define
+\[
+H:X\times[0,1]\longrightarrow\mathbb R,
+\qquad
+H(x,s)=(1-s)\widetilde f(x)+s t_0.
+\]
+This is continuous, and
+\[
+H(x,0)=\widetilde f(x),
+\qquad
+H(x,1)=t_0.
+\]
+Thus $H$ is a homotopy from $\widetilde f$ to the constant map $x\mapsto t_0$.
+:::
 
-<1>4. Homotopy to a Constant Map:
-    *Proof:*
-    <2>1. Since the target space $\mathbb{R}$ is contractible, the lift $\tilde{f}: X \to \mathbb{R}$ is homotopic to the constant map $c_0(x) = \tilde{f}(x_0)$ via the straight-line homotopy:
-        $$H: X \times [0, 1] \longrightarrow \mathbb{R}, \qquad H(x, s) = (1 - s)\tilde{f}(x) + s \tilde{f}(x_0).$$
-    <2>2. Composing the homotopy $H$ with the covering projection $p: \mathbb{R} \to S^1$:
-        $$F: X \times [0, 1] \longrightarrow S^1, \qquad F(x, s) = (p \circ H)(x, s) = p\left( (1 - s)\tilde{f}(x) + s \tilde{f}(x_0) \right).$$
-    <2>3. At $s = 0$: $F(x, 0) = p(\tilde{f}(x)) = f(x)$.
-    <2>4. At $s = 1$: $F(x, 1) = p(\tilde{f}(x_0)) = f(x_0)$, which is a constant map on $X$.
-    <2>5. Since $p$ and $H$ are continuous, $F$ is a continuous homotopy from $f$ to the constant map $f(x_0)$.
-
-<1>5. Conclusion:
-    $f$ is nullhomotopic. Q.E.D.
+<1>4. The original map $f$ is homotopic to the constant map with value $f(x_0)$.
+::: {.proof}
+Compose the homotopy in <1>3 with $p$:
+\[
+F=p\circ H:X\times[0,1]\longrightarrow S^1.
+\]
+At the endpoints,
+\[
+F(x,0)
+=p(\widetilde f(x))
+=f(x)
+\]
+by <1>2, while
+\[
+F(x,1)
+=p(t_0)
+=f(x_0)
+\]
+is constant in $x$.
+Hence $f$ is nullhomotopic.
+:::
 :::
