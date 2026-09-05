@@ -16,76 +16,143 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked both questions against problem 6 of the official UGA Fall 2018 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Repaired the incorrect disconnected example, verified chi=-1 by cell counting, and checked all four connected surface types arising from arc placement and seam orientation.
 ---
 
 ::: problem
-Let $C$ be cylinder.
+Let $C$ be a cylinder.
 Let $I$ and $J$ be disjoint closed intervals contained in $\partial C$.
-
 What is the Euler characteristic of the surface $S$ obtained by identifying $I$ and $J$?
-
-Can all surface with nonempty boundary and with this Euler characteristic be obtained from this construction?
+Can all surfaces with nonempty boundary and with this Euler characteristic be obtained from this construction?
 :::
 
 ::: {.solution}
-<1>1. Computation of the Euler characteristic $\chi(S)$:
-<2>1. The cylinder $C = S^1 \times [0, 1]$ deformation retracts onto $S^1$, so:
+Assume that the identification $I\to J$ is by a homeomorphism, as usual in this construction.
+
+<1>1. The quotient surface has
 \[
-\chi(C) = \chi(S^1) = 0.
+\chi(S)=-1.
 \]
 ::: {.proof}
-homotopy invariance of Euler characteristic.
-:::
-<2>2. $I \cong [0, 1]$ and $J \cong [0, 1]$ are disjoint closed intervals on $\partial C$, each having $\chi(I) = \chi(J) = 1$.
-Their intersection is $I \cap J = \emptyset$.
-::: {.proof}
-contractibility of closed intervals.
-:::
-<2>3. The surface $S = C / (I \sim J)$ is obtained by gluing along $J \cong I$.
-Using the Mayer–Vietoris / CW inclusion-exclusion principle:
+The cylinder has
 \[
-\chi(S) = \chi(C) - \chi(J) = 0 - 1 = -1.
+\chi(C)=0.
 \]
-(Equivalently: under the identification $I \sim J$, 2 vertices merge into 2 vertices ($\Delta V = -2$) and 1 edge merges into 1 edge ($\Delta E = -1$), so $\Delta \chi = \Delta V - \Delta E = -2 - (-1) = -1$).
-::: {.proof}
-Euler characteristic of quotient cell complexes.
+Choose a finite CW decomposition of $C$ for which $I$ and $J$ are disjoint subcomplexes, and subdivide so that the chosen homeomorphism $I\to J$ is cellular.
+Passing to the quotient merges every cell of $I$ with the corresponding cell of $J$ and makes no other cell identifications.
+Thus the alternating cell count decreases by
+\[
+\chi(I)=1.
+\]
+Therefore
+\[
+\chi(S)=\chi(C)-\chi(I)=0-1=-1.
+\]
 :::
 
-<1>2. Classification of surfaces with non-empty boundary and $\chi = -1$:
-<2>1. By the classification of compact connected surfaces with boundary, the Euler characteristic is:
-- Orientable surfaces: $\chi = 2 - 2g - b = -1 \implies 2g + b = 3$.
-  Since $b \ge 1$ and $g \ge 0$, the only solutions are:
-  - $(g, b) = (0, 3)$: sphere with 3 boundary components (a pair of pants).
-  - $(g, b) = (1, 1)$: torus with 1 boundary component (punctured torus).
-- Non-orientable surfaces: $\chi = 2 - k - b = -1 \implies k + b = 3$.
-  Since $b \ge 1$ and $k \ge 1$, the only solutions are:
-  - $(k, b) = (1, 2)$: $\mathbb{RP}^2$ with 2 boundary components (Möbius strip with 1 hole).
-  - $(k, b) = (2, 1)$: Klein bottle with 1 boundary component (punctured Klein bottle).
+<1>2. Up to homeomorphism, the connected compact surfaces with nonempty boundary and Euler characteristic $-1$ are exactly
+\[
+\Sigma_{0,3},
+\qquad
+\Sigma_{1,1},
+\qquad
+N_{1,2},
+\qquad
+N_{2,1},
+\]
+where $\Sigma_{g,b}$ is orientable of genus $g$ with $b$ boundary components and $N_{k,b}$ is nonorientable of genus $k$ with $b$ boundary components.
 ::: {.proof}
-classification theorem for compact 2-manifolds with boundary.
+For an orientable connected compact surface,
+\[
+\chi(\Sigma_{g,b})=2-2g-b.
+\]
+The equation
+\[
+2-2g-b=-1,
+\qquad b\ge1,
+\]
+is equivalent to $2g+b=3$, whose solutions are
+\[
+(g,b)=(0,3),(1,1).
+\]
+For a nonorientable connected compact surface,
+\[
+\chi(N_{k,b})=2-k-b.
+\]
+The equation
+\[
+2-k-b=-1,
+\qquad k,b\ge1,
+\]
+is equivalent to $k+b=3$, whose solutions are
+\[
+(k,b)=(1,2),(2,1).
+\]
+The classification theorem for compact connected surfaces gives the stated list.
 :::
 
-<1>3. Realizability of all connected candidate surfaces:
-<2>1. The boundary of the cylinder consists of two disjoint circles: $\partial C = S_1 \sqcup S_2$.
-Depending on the placement of $I, J$ and the gluing map $\phi: I \to J$:
-- **Case 1 ($I, J \subset S_1$, same boundary component):**
-  - Gluing with the orientation that preserves orientability splits $S_1$ into two circles while $S_2$ remains intact, producing a pair of pants ($g=0, b=3$).
-  - Gluing with the opposite orientation produces a non-orientable surface with two boundary components ($k=1, b=2$).
-- **Case 2 ($I \subset S_1, J \subset S_2$, different boundary components):**
-  - Gluing with the orientation that preserves surface orientability merges $S_1$ and $S_2$ into a single boundary component, yielding a punctured torus ($g=1, b=1$).
-  - Gluing with a twist (reversing orientation) produces a punctured Klein bottle ($k=2, b=1$).
+<1>3. All four connected surfaces in <1>2 occur by identifying two boundary intervals of a cylinder.
 ::: {.proof}
-direct topological construction by gluing.
-:::
-<2>2. Because $C$ is connected, any surface $S$ obtained by this construction is necessarily connected.
-Thus all connected surfaces with non-empty boundary and $\chi = -1$ are realized, but disconnected surfaces with $\chi = -1$ (such as the disjoint union of a cylinder and a disk) cannot be obtained.
-::: {.proof}
-quotient of a connected space is connected.
+The cylinder has two boundary circles.
+There are two placement choices for the intervals and, for each placement, two inequivalent ways to glue the interval ends, corresponding to an untwisted or twisted seam.
+Tracing the boundary arcs after the identification gives the following possibilities:
+
+\[
+\begin{array}{c|c|c|c}
+\text{positions of }I,J&\text{seam}&\text{orientability}&\text{number of boundary components}\\
+\hline
+\text{same boundary circle}&\text{untwisted}&\text{orientable}&3\\
+\text{same boundary circle}&\text{twisted}&\text{nonorientable}&2\\
+\text{different boundary circles}&\text{untwisted}&\text{orientable}&1\\
+\text{different boundary circles}&\text{twisted}&\text{nonorientable}&1
+\end{array}
+\]
+
+Indeed, if the two intervals lie on the same boundary circle, cutting out their interiors leaves two boundary arcs; the untwisted identification closes these into two boundary circles, whereas the twisted identification joins them into one.
+The other boundary circle is unchanged.
+If the intervals lie on different boundary circles, the identification joins those two boundary circles into one, regardless of the twist.
+The untwisted seam preserves an orientation of the cylinder, while the twisted seam reverses it along the glued band and produces a one-sided closed curve, so the latter quotient is nonorientable.
+
+Together with <1>1 and the classification in <1>2, the four cases are therefore
+\[
+\Sigma_{0,3},
+\qquad
+N_{1,2},
+\qquad
+\Sigma_{1,1},
+\qquad
+N_{2,1},
+\]
+respectively.
+Thus every connected compact surface with nonempty boundary and Euler characteristic $-1$ occurs.
 :::
 
-<1>4. Conclusion:
-The Euler characteristic is $\chi(S) = -1$. All connected surfaces with non-empty boundary and $\chi = -1$ can be obtained from this construction. Q.E.D.
+<1>4. If the word ``surface'' is allowed to include disconnected surfaces, then not every such surface arises from the construction.
 ::: {.proof}
-<1>1 through <1>3.
+The cylinder $C$ is connected, and every quotient of a connected space is connected.
+Hence every surface obtained by identifying $I$ and $J$ is connected.
+On the other hand,
+\[
+\Sigma_{0,3}\amalg(S^1\times[0,1])
+\]
+is a disconnected compact surface with nonempty boundary and
+\[
+\chi
+=\chi(\Sigma_{0,3})+\chi(S^1\times[0,1])
+=-1+0
+=-1.
+\]
+It cannot be obtained as such a quotient.
+Therefore, under the standard convention that a surface is connected, the answer to the second question is yes; if disconnected surfaces are admitted, the answer is no.
 :::
 :::
