@@ -100,8 +100,7 @@ one has
 
 <1>3. The map $f_n$ has degree $n$ for every $n\in\ZZ$.
 ::: {.proof}
-If $n>0$, this is <1>1.
-If $n=0$, a constant map has degree $0$.
+If $n>0$, this is <1>1. If $n=0$, a constant map has degree $0$.
 If $n<0$, multiplicativity of degree under composition gives
 \[
 \deg f_n
