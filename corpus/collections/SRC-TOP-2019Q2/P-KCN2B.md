@@ -27,9 +27,9 @@ audit:
 
 :::{.problem}
 Let $X$ be a topological space and let
-$$
+\[
 \Delta = \theset{(x, y) \in X \times X \mid x = y}
-.$$
+.\]
 
 Show that $X$ is a Hausdorff space if and only if $\Delta$ is closed in $X \times X$.
 
