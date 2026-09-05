@@ -42,7 +42,8 @@ If there is, give an example; if not, give a proof.
 :::
 
 ::: {.solution}
-Yes. In fact, $X_3$ is a connected two-sheeted covering of $S^1\vee S^1$.
+Yes.
+In fact, $X_3$ is a connected two-sheeted covering of $S^1\vee S^1$.
 
 Let
 \[
@@ -60,8 +61,11 @@ as a graph with one vertex $*$ and two oriented loop-edges $a$ and $b$.
 <1>1. Regard $X_3$ as a graph with vertices $v_0,v_1$ and four edges:
 
 - the left circle, a loop $L$ based at $v_0$;
+
 - the right circle, a loop $R'$ based at $v_1$;
+
 - the upper semicircle $U$ of the middle circle, joining $v_0$ to $v_1$;
+
 - the lower semicircle $D$ of the middle circle, joining $v_1$ to $v_0$.
 
 ::: {.proof}
@@ -94,6 +98,7 @@ At each $v_i$, exactly four half-edges meet.
 Under $p$, these four half-edges map bijectively to the four arms of $W$:
 
 - the two half-edges of the outer loop at $v_i$ map to the two arms of the $a$-petal;
+
 - one incident middle-circle half-edge maps to the initial arm of the $b$-petal and the other to its terminal arm.
 
 Hence there are disjoint neighborhoods $W_0$ of $v_0$ and $W_1$ of $v_1$ such that
