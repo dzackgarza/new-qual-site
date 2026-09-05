@@ -47,7 +47,8 @@ with
 \pi\circ\widetilde f=f.
 \]
 ::: {.proof}
-The space $S^3\times S^3$ is path-connected and simply connected, since each factor is path-connected and simply connected. Hence
+The space $S^3\times S^3$ is path-connected and simply connected, since each factor is path-connected and simply connected.
+Hence
 \[
 f_*\pi_1(S^3\times S^3)=0
 \subseteq
@@ -74,7 +75,8 @@ Stereographic projection gives a homeomorphism
 \[
 S^3\setminus\{q\}\cong\RR^3.
 \]
-Thus $S^3\setminus\{q\}$ is contractible. By <1>2, $\widetilde f$ has image in this contractible subspace, so it is homotopic, through maps into $S^3\setminus\{q\}$, to a constant map.
+Thus $S^3\setminus\{q\}$ is contractible.
+By <1>2, $\widetilde f$ has image in this contractible subspace, so it is homotopic, through maps into $S^3\setminus\{q\}$, to a constant map.
 :::
 
 <1>4. Therefore $f$ is homotopic to a constant map.
@@ -83,7 +85,8 @@ Let
 \[
 \widetilde H:(S^3\times S^3)\times I\longrightarrow S^3
 \]
-be the homotopy from <1>3, with $\widetilde H(-,0)=\widetilde f$ and $\widetilde H(-,1)=q_0$ constant. Then
+be the homotopy from <1>3, with $\widetilde H(-,0)=\widetilde f$ and $\widetilde H(-,1)=q_0$ constant.
+Then
 \[
 H=\pi\circ\widetilde H
 \]
