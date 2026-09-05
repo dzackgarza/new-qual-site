@@ -17,6 +17,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-04
   note: Completed the missing null-homotopy step by lifting to the universal cover R^2 -> T^2.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 4 of the official UGA Fall 2007 topology exam; it is the same result also recorded for Spring 2013 problem 6.
 ---
 
 ::: problem
