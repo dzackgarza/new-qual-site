@@ -32,7 +32,8 @@ Show that a connected, normal topological space with more than a single point is
 :::
 
 ::: {.solution}
-<1>1. Choose distinct points $x_0,x_1\in X$. There is a continuous map
+<1>1. Choose distinct points $x_0,x_1\in X$.
+There is a continuous map
 \[
 f:X\longrightarrow[0,1]
 \]
@@ -67,8 +68,7 @@ f(X)\cap(t,\infty)
 \]
 are disjoint nonempty relatively open subsets whose union is $f(X)$: the first contains $0$, and the second contains $1$.
 This contradicts connectedness of $f(X)$.
-Hence every $t\in(0,1)$ belongs to $f(X)$, and the endpoints already belong to $f(X)$ by <1>1.
-Thus $f(X)=[0,1]$.
+Hence every $t\in(0,1)$ belongs to $f(X)$, and the endpoints already belong to $f(X)$ by <1>1. Thus $f(X)=[0,1]$.
 :::
 
 <1>3. The space $X$ is uncountable.
