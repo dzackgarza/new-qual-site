@@ -16,10 +16,18 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-04
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 1 of the official UGA Fall 2006 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Rechecked the proof from the metric and compactness definitions, including the limit-point and subsequence constructions.
 ---
 
 ::: {.problem}
-A topological space is **sequentially compact** if every infinite sequence in $X$ has a convergent subsequence.
+A topological space $X$ is **sequentially compact** if every infinite sequence in $X$ has a convergent subsequence.
 
 Prove that every compact metric space is sequentially compact.
 :::
@@ -40,7 +48,7 @@ is infinite, as required.
 <1>2. The infinite set $A$ has a limit point $p\in X$.
 ::: {.proof}
 Suppose not.
-For each $x\in X$ there is then an open neighborhood $U_x$ such that
+By the definition of limit point, for each $x\in X$ there is then an open neighborhood $U_x$ such that
 \[
 U_x\cap A\subseteq\{x\}.
 \]
@@ -54,12 +62,19 @@ contrary to <1>1.
 
 <1>3. Every neighborhood of $p$ contains infinitely many points of $A$.
 ::: {.proof}
-If a neighborhood $U$ of $p$ met $A\setminus\{p\}$ in only finitely many points $a_1,\ldots,a_r$, then, because a metric space is $T_1$, the set
+It is enough to prove this for metric balls about $p$.
+Suppose some ball $B(p,r)$ met $A\setminus\{p\}$ in only the finitely many points $a_1,\ldots,a_m$.
+If $m=0$, then $B(p,r)$ itself contradicts that $p$ is a limit point of $A$.
+If $m>0$, set
 \[
-U\setminus\{a_1,\ldots,a_r\}
+\delta=\min\left\{r,\frac12 d(p,a_1),\ldots,\frac12 d(p,a_m)\right\}>0.
 \]
-would still be a neighborhood of $p$ and would miss $A\setminus\{p\}$.
-This contradicts that $p$ is a limit point of $A$ by <1>2.
+Then
+\[
+B(p,\delta)\cap(A\setminus\{p\})=\varnothing,
+\]
+again contradicting that $p$ is a limit point of $A$.
+Hence every ball about $p$, and therefore every neighborhood of $p$, contains infinitely many points of $A$.
 :::
 
 <1>4. There are indices $n_1<n_2<\cdots$ such that
