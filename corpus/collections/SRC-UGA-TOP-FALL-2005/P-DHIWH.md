@@ -63,8 +63,7 @@ Since $U$ is open in the subspace $[0,1]$, there exists $\varepsilon>0$ such tha
 (s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U.
 \]
 
-If $s=0$, then $s\in S$ by <1>2.
-Suppose $s>0$.
+If $s=0$, then $s\in S$ by <1>2. Suppose $s>0$.
 By the defining property of the supremum, there exists $x\in S$ satisfying
 \[
 s-\varepsilon<x\le s.
