@@ -23,13 +23,12 @@ source:
   - P-8TF14
   - P-YQVRO
   - P-8TF15
-  - P-DRVWD
+  - id: P-DRVWD
+    comment: >-
+      Problem 8; this appearance asks for $\pi_1$ and $H_1$ rather than all of
+      $H_*$.
   date:
     kind: academic-term
     term: fall
     year: 2009
 ---
-
-::: remark
-Exam #8 is the mapping torus $z\mapsto z^2$, listed as the complete statement [[P-DRVWD]] (Fall 2012 #8 asks $\pi_1$ and $H_*$ of the same space; Fall 2009 asked $\pi_1$ and $H_1$).
-:::

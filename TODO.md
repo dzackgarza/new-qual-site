@@ -785,7 +785,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UGA-TOP-FALL-2011/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2011/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2012/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2012/index.md) — audit commit: auto (mismatch (fixed): 7 on disk, 8 in index, provenance: 1 href(s))
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2012/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2012/index.md) — audit commit: auto (source-corrected: 8 official problems, 8 in index; restored shared mapping-torus problem P-DRVWD after phantom-entry cleanup removed it)
 
 - [x] [`corpus/collections/SRC-UGA-TOP-FALL-2013/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2013/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 

@@ -23,10 +23,11 @@ source:
   - P-QB5KF
   - P-LWGC4
   - P-8TF26
+  - id: P-DRVWD
+    comment: Problem 8; this appearance asks for $\pi_1$ and $H_*$ but does not explicitly request attaching maps.
   date:
     kind: academic-term
     term: fall
     year: 2012
 ---
-
 
