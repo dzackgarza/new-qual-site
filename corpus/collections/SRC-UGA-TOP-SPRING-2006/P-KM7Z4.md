@@ -11,6 +11,18 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 3 of the official UGA Spring 2006 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified necessity via closedness of Hausdorff retracts and connectedness of
+    continuous images, and sufficiency via the explicit clamping retractions
+    onto [a,b] and [a,infinity).
 ---
 
 ::: {.problem}
