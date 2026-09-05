@@ -12,6 +12,15 @@ classification:
   - Point-Set Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 2 of the official UGA Spring 2019 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified the topology axioms, including the Hausdorff compact-complement argument for arbitrary unions, and the finite-subcover proof of compactness.
 ---
 
 ::: problem
