@@ -129,8 +129,7 @@ For $n\ge1$, both the target sphere and the attached cone meet in a nonempty set
 \[
 H_0(C_k)\cong\ZZ.
 \]
-The positive-degree groups are exactly those computed in <1>3 and <1>4.
-For $k=\pm1$, the notation $\ZZ/k\ZZ$ denotes the zero group, as required.
+The positive-degree groups are exactly those computed in <1>3 and <1>4. For $k=\pm1$, the notation $\ZZ/k\ZZ$ denotes the zero group, as required.
 :::
 
 <1>6. If the source convention permits $n=0$, then necessarily $k\in\{-1,0,1\}$, and
