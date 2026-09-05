@@ -93,8 +93,7 @@ Taking norms and using $\|f(x)\|=\|x\|=1$ gives
 \[
 1-t=t,
 \]
-so $t=\tfrac12$, and then $f(x)=x$, contrary to <1>2.
-At $t=0$ and $t=1$ the numerator is respectively $f(x)$ and $-x$, both nonzero.
+so $t=\tfrac12$, and then $f(x)=x$, contrary to <1>2. At $t=0$ and $t=1$ the numerator is respectively $f(x)$ and $-x$, both nonzero.
 Thus $H$ is well defined and continuous, with
 \[
 H(x,0)=f(x),
@@ -142,8 +141,7 @@ Taking norms again forces $t=\tfrac12$, and then
 \[
 f(x)=-x,
 \]
-contrary to <1>2.
-The endpoint numerators are nonzero as well.
+contrary to <1>2. The endpoint numerators are nonzero as well.
 Hence $K$ is a well-defined homotopy satisfying
 \[
 K(x,0)=f(x),
