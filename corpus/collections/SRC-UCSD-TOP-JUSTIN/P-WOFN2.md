@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: This statement is also problem 8 of the official UGA Spring 2008 topology exam; added that missing source appearance.
 ---
 
 ::: problem
@@ -53,7 +57,7 @@ Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting close
 
 - $k \ge 4$: All terms are 0, so $H_k(M) = 0$.
 ::: {.proof}
-  <2>4. Since $H_i(S^1)$ and $H_j(S^2)$ are free abelian, all Tor terms vanish and the Künneth formula reduces to the direct sum of tensor products; evaluating these for each $k$ gives the groups in <2>3.
+<2>4. Since $H_i(S^1)$ and $H_j(S^2)$ are free abelian, all Tor terms vanish and the Künneth formula reduces to the direct sum of tensor products; evaluating these for each $k$ gives the groups in <2>3.
 :::
 
 <1>3. Alternative verification via the Mayer-Vietoris sequence.
@@ -68,7 +72,7 @@ Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting close
 
 - From $0 \to \operatorname{coker}(i_*, j_*) \to H_1(M) \to 0$, we get $H_1(M) \cong \mathbb{Z}$.
 ::: {.proof}
-  <2>6. The Mayer–Vietoris sequence, together with the vanishing of $H_2(A)$ and $H_2(B)$ and the explicit form of $(i_*, j_*)$ on $H_1(T^2)$, gives the short exact sequences that determine $H_3(M)$, $H_2(M)$, and $H_1(M)$.
+<2>6. The Mayer–Vietoris sequence, together with the vanishing of $H_2(A)$ and $H_2(B)$ and the explicit form of $(i_*, j_*)$ on $H_1(T^2)$, gives the short exact sequences that determine $H_3(M)$, $H_2(M)$, and $H_1(M)$.
 :::
 
 <1>4. Conclusion.
