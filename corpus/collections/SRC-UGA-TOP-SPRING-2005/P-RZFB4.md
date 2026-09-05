@@ -36,7 +36,8 @@ audit:
 
 ::: problem
 a. Suppose $Y$ is an $n$-fold covering space of the (one-holed) torus $S^1\times S^1$.
-Up to homeomorphism, what is $Y$? Justify your answer.
+Up to homeomorphism, what is $Y$?
+Justify your answer.
 
 b. Let $X$ be the topological space obtained by deleting a disk from a torus.
 Suppose $Y$ is a $3$-fold covering space of $X$.
