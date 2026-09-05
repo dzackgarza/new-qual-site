@@ -39,7 +39,8 @@ Calculate the fundamental group and the homology groups of $X$.
 :::
 
 ::: {.solution}
-<1>1. Give $T^2$ its standard CW structure with one $0$-cell, two oriented $1$-cells $a,b$, and one $2$-cell $c$ attached along the commutator $aba^{-1}b^{-1}$. Then $X$ is obtained by adjoining two more $2$-cells $d,e$, each attached along a loop representing $a$.
+<1>1. Give $T^2$ its standard CW structure with one $0$-cell, two oriented $1$-cells $a,b$, and one $2$-cell $c$ attached along the commutator $aba^{-1}b^{-1}$.
+Then $X$ is obtained by adjoining two more $2$-cells $d,e$, each attached along a loop representing $a$.
 ::: {.proof}
 Filling a circle with a disk is precisely attachment of a $2$-cell along that circle.
 Both displayed circles are $S^1\times\{p_i\}$, so they are freely homotopic through
@@ -60,7 +61,9 @@ The standard CW presentation of the torus gives
 \[
 \pi_1(T^2)\cong\langle a,b\mid aba^{-1}b^{-1}\rangle.
 \]
-Attaching a $2$-cell along a loop adds that loop as a relator in the fundamental-group presentation. The two new cells therefore add the relation $a=1$ twice. Thus
+Attaching a $2$-cell along a loop adds that loop as a relator in the fundamental-group presentation.
+The two new cells therefore add the relation $a=1$ twice.
+Thus
 \[
 \pi_1(X)
 \cong
