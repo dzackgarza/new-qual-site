@@ -23,13 +23,10 @@ source:
   - P-4XONF
   - P-G23Y5
   - P-8TF01
-  - P-C3NSR
+  - id: P-C3NSR
+    comment: Problem 8; the Fall 2004 version omits the optional degree hint.
   date:
     kind: academic-term
     term: fall
     year: 2004
 ---
-
-::: remark
-Exam #8 lists [[P-C3NSR]] (same statement as Spring 2021 #9).
-:::

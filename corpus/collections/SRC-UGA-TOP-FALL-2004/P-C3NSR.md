@@ -16,6 +16,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-05
   note: Checked the statement against problem 9 of the official UGA Spring 2021 topology exam.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Checked the core statement against problem 8 of the official UGA Fall 2004
+    topology exam; that appearance omits the optional degree hint present in
+    Spring 2021.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-05
