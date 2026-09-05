@@ -51,7 +51,8 @@ Choose a collar
 \[
 C\times(-\varepsilon,\varepsilon)\subset X
 \]
-of the gluing circle, with $M_1$ on one side and $M_2$ on the other. Enlarge the interiors of $M_1$ and $M_2$ slightly across the collar to obtain open sets $U,V\subset X$ such that
+of the gluing circle, with $M_1$ on one side and $M_2$ on the other.
+Enlarge the interiors of $M_1$ and $M_2$ slightly across the collar to obtain open sets $U,V\subset X$ such that
 \[
 X=U\cup V,
 \qquad
@@ -87,7 +88,9 @@ is a deformation retract of $M$ and represents a generator of
 \[
 H_1(M;\ZZ)\cong\ZZ.
 \]
-The boundary of the rectangle becomes a single circle in $M$. Traversing this boundary circle once passes once along each of the two horizontal boundary edges; under the deformation retraction to the core, these two passages concatenate with the same orientation. Thus the boundary circle winds twice around the core, so its homology class is twice the core generator.
+The boundary of the rectangle becomes a single circle in $M$.
+Traversing this boundary circle once passes once along each of the two horizontal boundary edges; under the deformation retraction to the core, these two passages concatenate with the same orientation.
+Thus the boundary circle winds twice around the core, so its homology class is twice the core generator.
 :::
 
 <1>3. The relevant part of the Mayer-Vietoris sequence is
@@ -124,7 +127,8 @@ H_1(C;\ZZ)\cong\ZZ,
 \qquad
 H_0(C;\ZZ)\cong\ZZ.
 \]
-The Mayer-Vietoris map on $H_1(C)$ is the difference of the two inclusion maps. By <1>2, each inclusion has degree $2$ on first homology, so signs may be chosen to give
+The Mayer-Vietoris map on $H_1(C)$ is the difference of the two inclusion maps.
+By <1>2, each inclusion has degree $2$ on first homology, so signs may be chosen to give
 \[
 \phi(n)=(2n,-2n).
 \]
@@ -146,7 +150,8 @@ The map
 \qquad
 n\longmapsto(2n,-2n),
 \]
-is injective. Exactness at $H_1(C;\ZZ)$ therefore gives
+is injective.
+Exactness at $H_1(C;\ZZ)$ therefore gives
 \[
 H_2(X;\ZZ)=\ker\phi=0.
 \]
@@ -163,11 +168,13 @@ The map
 \qquad
 n\longmapsto(n,-n),
 \]
-is injective. Exactness therefore says that the map
+is injective.
+Exactness therefore says that the map
 \[
 \ZZ^2\longrightarrow H_1(X;\ZZ)
 \]
-is surjective with kernel $\operatorname{im}\phi$. Hence
+is surjective with kernel $\operatorname{im}\phi$.
+Hence
 \[
 H_1(X;\ZZ)
 \cong
@@ -192,6 +199,7 @@ H_n(X;\ZZ)\cong
 \end{cases}}
 \]
 ::: {.proof}
-The space $X$ is connected, so $H_0(X;\ZZ)\cong\ZZ$. The groups in degrees $1$ and $2$ were computed in <1>4 and <1>5. Since $X$ is a closed surface, it has the homotopy type of a $2$-dimensional CW complex, so its homology vanishes in degrees greater than $2$.
+The space $X$ is connected, so $H_0(X;\ZZ)\cong\ZZ$.
+The groups in degrees $1$ and $2$ were computed in <1>4 and <1>5. Since $X$ is a closed surface, it has the homotopy type of a $2$-dimensional CW complex, so its homology vanishes in degrees greater than $2$.
 :::
 :::
