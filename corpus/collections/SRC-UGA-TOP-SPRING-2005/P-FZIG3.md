@@ -11,6 +11,17 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 1 of the official UGA Spring 2005 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified the finite-subcover and distance-to-complement proof and added the
+    empty-space case needed for the statement as written.
 ---
 
 ::: problem
@@ -24,9 +35,10 @@ Prove that there exists $\delta > 0$ (a **Lebesgue number** for the covering) su
 
 <1>1. Finite subcovering and closed complements:
 ::: {.proof}
-    <2>1. Since $X$ is compact and $\mathcal{U}$ is an open cover, there exists a finite subcover $\{U_1, U_2, \dots, U_n\} \subseteq \mathcal{U}$ such that $X = \bigcup_{i=1}^n U_i$.
-    <2>2. If any $U_i = X$, then for any $\delta > 0$ and all $x \in X$, $B_\delta(x) \subseteq X = U_i$, so the claim holds with $\delta$ arbitrary.
-    <2>3. Assume henceforth that $U_i \subsetneq X$ for all $i \in \{1, \dots, n\}$, and define the closed non-empty complements $C_i = X \setminus U_i$.
+    <2>1. If $X=\varnothing$, take $\delta=1$. The required condition is then vacuous. Hence assume $X\ne\varnothing$.
+    <2>2. Since $X$ is compact and $\mathcal{U}$ is an open cover, there exists a finite subcover $\{U_1, U_2, \dots, U_n\} \subseteq \mathcal{U}$, with $n\ge1$, such that $X = \bigcup_{i=1}^n U_i$.
+    <2>3. If any $U_i = X$, then for any $\delta > 0$ and all $x \in X$, $B_\delta(x) \subseteq X = U_i$, so the claim holds with $\delta$ arbitrary.
+    <2>4. Assume henceforth that $U_i \subsetneq X$ for all $i \in \{1, \dots, n\}$, and define the closed non-empty complements $C_i = X \setminus U_i$.
 
 :::
 
@@ -83,4 +95,3 @@ Prove that there exists $\delta > 0$ (a **Lebesgue number** for the covering) su
     $\delta = \min_{x \in X} f(x) > 0$ is a Lebesgue number for the covering $\mathcal{U}$.
 :::
 :::
-
