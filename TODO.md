@@ -829,7 +829,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md) — audit commit: auto (mismatch (fixed): 7 on disk, 9 in index, provenance: 1 href(s))
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md) — audit commits: aefc07ea5, ebc6d6f34 (source-corrected: 9 official problems, 9 cards; restored the closed-diagonal and fixed-or-antipodal-point problems that had been removed as phantom cross-references)
 
 - [x] [`corpus/collections/SRC-UNL-RA-SPRING-2019/index.md`](corpus/collections/SRC-UNL-RA-SPRING-2019/index.md) — audit commit: auto (mismatch (fixed): 5 on disk, 6 in index, provenance: 1 href(s))
 
