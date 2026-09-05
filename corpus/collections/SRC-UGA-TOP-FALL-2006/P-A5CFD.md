@@ -25,6 +25,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-05
   note: Verified the Hausdorff separation argument and proved the compact-factor projection lemma directly from the product-topology and compactness definitions.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Checked the shared statement against problem 3 of the official UGA Spring
+    2005 topology exam; it is the same two-part closed-graph problem as the
+    Fall 2006 appearance.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Rechecked both parts for the Spring 2005 appearance; the existing
+    Hausdorff-separation and compact-projection proofs require no change.
 ---
 
 ::: {.problem}
