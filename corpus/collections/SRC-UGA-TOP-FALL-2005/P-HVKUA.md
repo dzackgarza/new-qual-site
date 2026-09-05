@@ -58,7 +58,8 @@ The interval $(0,1]$ is connected, and the map
 \qquad
 \phi(x)=(x,\sin(1/x)),
 \]
-is continuous. Hence its image
+is continuous.
+Hence its image
 \[
 G=\phi((0,1])
 \]
@@ -67,7 +68,8 @@ is connected.
 
 <1>2. One has $X=\overline G$.
 ::: {.proof}
-First let $y\in[-1,1]$. Choose $\alpha\in\RR$ with
+First let $y\in[-1,1]$.
+Choose $\alpha\in\RR$ with
 \[
 \sin\alpha=y.
 \]
@@ -88,18 +90,19 @@ Thus every point of $L$ belongs to $\overline G$, so
 X=G\cup L\subseteq\overline G.
 \]
 
-Conversely, because $\RR^2$ is metric, closure is detected by convergent
-sequences. Suppose
+Conversely, because $\RR^2$ is metric, closure is detected by convergent sequences.
+Suppose
 \[
 (x_m,\sin(1/x_m))\longrightarrow(a,b)
 \]
-with $0<x_m\le1$. If $a>0$, then $x_m\to a$ and continuity of
-$x\mapsto\sin(1/x)$ at $a$ gives
+with $0<x_m\le1$.
+If $a>0$, then $x_m\to a$ and continuity of $x\mapsto\sin(1/x)$ at $a$ gives
 \[
 b=\sin(1/a),
 \]
-so $(a,b)\in G$. If $a=0$, then each second coordinate lies in $[-1,1]$, hence
-$b\in[-1,1]$ and $(a,b)\in L$. Therefore
+so $(a,b)\in G$.
+If $a=0$, then each second coordinate lies in $[-1,1]$, hence $b\in[-1,1]$ and $(a,b)\in L$.
+Therefore
 \[
 \overline G\subseteq X.
 \]
@@ -108,8 +111,9 @@ Hence $X=\overline G$.
 
 <1>3. The space $X$ is connected.
 ::: {.proof}
-By <1>1, $G$ is connected. The closure of a connected subspace is connected, and
-by <1>2 that closure is $X$. Therefore $X$ is connected.
+By <1>1, $G$ is connected.
+The closure of a connected subspace is connected, and by <1>2 that closure is $X$.
+Therefore $X$ is connected.
 :::
 
 <1>4. No path in $X$ joins a point of $L$ to a point of $G$.
@@ -118,7 +122,8 @@ Suppose to the contrary that
 \[
 \gamma:[0,1]\longrightarrow X
 \]
-is a path with $\gamma(0)\in L$ and $\gamma(1)\in G$. Write
+is a path with $\gamma(0)\in L$ and $\gamma(1)\in G$.
+Write
 \[
 \gamma(t)=(u(t),v(t)).
 \]
@@ -135,8 +140,8 @@ Let
 \[
 t_0=\max\{t\in[0,1]:u(t)=0\}.
 \]
-This maximum exists because the zero set of $u$ is a nonempty closed subset of
-$[0,1]$, and $t_0<1$ because $u(1)>0$. By maximality,
+This maximum exists because the zero set of $u$ is a nonempty closed subset of $[0,1]$, and $t_0<1$ because $u(1)>0$.
+By maximality,
 \[
 u(t)>0
 \qquad
@@ -147,8 +152,8 @@ Hence, for every such $t$, the point $\gamma(t)$ lies in $G$ and therefore
 v(t)=\sin(1/u(t)).
 \]
 
-Choose any sequence $r_n\downarrow t_0$ with $r_n>t_0$. Since $u(r_n)>0$ and
-$u(t_0)=0$, the intermediate value theorem shows that
+Choose any sequence $r_n\downarrow t_0$ with $r_n>t_0$.
+Since $u(r_n)>0$ and $u(t_0)=0$, the intermediate value theorem shows that
 \[
 [0,u(r_n)]\subseteq u([t_0,r_n]).
 \]
@@ -164,7 +169,8 @@ u(s_n)=a_n,
 \qquad
 u(t_n)=b_n.
 \]
-Because $r_n\downarrow t_0$, both $s_n$ and $t_n$ tend to $t_0$. But
+Because $r_n\downarrow t_0$, both $s_n$ and $t_n$ tend to $t_0$.
+But
 \[
 v(s_n)
 =
@@ -176,15 +182,15 @@ v(t_n)
 \sin(1/b_n)
 =-1.
 \]
-Thus $v$ takes the values $1$ and $-1$ along two sequences tending to $t_0$,
-contradicting continuity of $v$ at $t_0$.
+Thus $v$ takes the values $1$ and $-1$ along two sequences tending to $t_0$, contradicting continuity of $v$ at $t_0$.
 
 Therefore no such path exists.
 :::
 
 <1>5. Hence $X$ is not path connected.
 ::: {.proof}
-Both $L$ and $G$ are nonempty. By <1>4, no point of $L$ can be joined by a path
-in $X$ to a point of $G$. Therefore $X$ is not path connected.
+Both $L$ and $G$ are nonempty.
+By <1>4, no point of $L$ can be joined by a path in $X$ to a point of $G$.
+Therefore $X$ is not path connected.
 :::
 :::
