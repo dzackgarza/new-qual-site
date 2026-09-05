@@ -70,8 +70,7 @@ X\cong S^1\cup_{\varphi}D^2,
 \]
 ::: {.proof}
 The quotient does not identify any points in the interior of the disk.
-Its only boundary identifications replace $\partial D^2$ by the orbit circle from <1>1.
-Thus the image of the disk interior is one open $2$-cell, whose attaching map to the quotient boundary circle is precisely the boundary quotient map $\varphi$.
+Its only boundary identifications replace $\partial D^2$ by the orbit circle from <1>1. Thus the image of the disk interior is one open $2$-cell, whose attaching map to the quotient boundary circle is precisely the boundary quotient map $\varphi$.
 :::
 
 <1>3. Choose open sets $U,V\subseteq X$ so that
