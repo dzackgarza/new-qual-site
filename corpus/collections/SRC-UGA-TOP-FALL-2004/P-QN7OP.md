@@ -13,6 +13,18 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked all three parts against problem 3 of the official UGA Fall 2004 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified the two-point-discrete characterization, the compact closed-image
+    argument for connected fibers, and the noncompact disjoint-union
+    counterexample.
 ---
 
 :::{.problem}
