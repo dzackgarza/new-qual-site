@@ -190,7 +190,6 @@ H_k(X;\ZZ)\cong
 \end{cases}}
 \]
 ::: {.proof}
-The groups in degrees $0,1,2$ are given by <1>4 and <1>6.
-For $k\ge3$, all neighboring Mayer--Vietoris groups from $U$, $V$, and $U\cap V$ vanish by <1>2, so $H_k(X)=0$.
+The groups in degrees $0,1,2$ are given by <1>4 and <1>6. For $k\ge3$, all neighboring Mayer--Vietoris groups from $U$, $V$, and $U\cap V$ vanish by <1>2, so $H_k(X)=0$.
 :::
 :::
