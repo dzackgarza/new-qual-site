@@ -799,7 +799,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UGA-TOP-FALL-2018/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md) — audit commit: auto (mismatch (fixed): 8 on disk, 9 in index, provenance: 1 href(s))
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md) — audit commit: 22d183624 (source-corrected: 9 official problems, 9 in index; restored shared closed-graph problem P-A5CFD after its occurrence had been dropped)
 
 - [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
