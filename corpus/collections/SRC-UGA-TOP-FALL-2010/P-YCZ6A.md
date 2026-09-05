@@ -18,6 +18,12 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified the product CW structure and its zero cellular differentials,
+    giving H_0 = H_4 = Z, H_2 = Z^2, and zero homology in all other degrees.
 ---
 
 ::: problem
