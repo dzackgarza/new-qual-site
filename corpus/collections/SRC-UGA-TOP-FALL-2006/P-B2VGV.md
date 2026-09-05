@@ -10,6 +10,18 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked both parts against problem 2 of the official UGA Fall 2006 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified the path-component argument and the comb-space counterexample directly from local path connectedness and connectedness.
 ---
 
 ::: {.problem}
@@ -18,14 +30,14 @@ review: draft
 a. Prove that if the space $X$ is connected and locally path connected then $X$ is path connected.
 
 b. Is the converse true?
-Prove or give a counterexample.
+Give a proof or a counterexample.
 :::
 
 ::: {.solution}
 <1>1. If $X$ is locally path connected, every path component of $X$ is open.
 ::: {.proof}
 Let $C$ be a path component and let $x\in C$.
-Local path connectedness gives a path-connected neighborhood $U_x$ of $x$.
+Local path connectedness gives an open path-connected neighborhood $U_x$ of $x$.
 Every point of $U_x$ can be joined to $x$ by a path in $U_x$, so every point of $U_x$ lies in the same path component as $x$.
 Hence
 \[
@@ -77,6 +89,11 @@ Indeed, a path in $X$ that avoids the base has positive second coordinate, so it
 \{0\}\cup\{1,1/2,1/3,\ldots\}.
 \]
 The image must be connected, but every connected subset of this subset of $\RR$ is a singleton.
+Indeed, if a subset contained two distinct numbers $a<b$, choose
+\[
+c\in(a,b)\setminus\bigl(\{0\}\cup\{1,1/2,1/3,\ldots\}\bigr).
+\]
+Intersection with $(-\infty,c)$ and $(c,\infty)$ would then separate that subset.
 Thus the first coordinate must be constant.
 A path from $p$ to $q_n$ would therefore have to meet the base, contrary to the choice of $U$.
 
