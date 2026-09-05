@@ -13,6 +13,18 @@ classification:
   - Convergence
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked all three criteria and the requested implication against problem 1 of the official UGA Spring 2006 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified the three standard metric-space criteria and the contradiction
+    argument: failure of openness supplies x_n outside the preimage with
+    d(x_n,x)<1/n, contradicting sequential continuity into the open target set.
 ---
 
 ::: {.problem}
