@@ -191,8 +191,7 @@ L_{gA}\cong\mathbb{R},
 \qquad
 S_{gB}\cong S^2.
 \]
-Adjacent vertex spaces meet in exactly one point, and the pattern of intersections is the tree $T$ from <1>6.
-Applying the Seifert--van Kampen theorem along finite subtrees gives trivial fundamental group for every finite connected union of vertex spaces.
+Adjacent vertex spaces meet in exactly one point, and the pattern of intersections is the tree $T$ from <1>6. Applying the Seifert--van Kampen theorem along finite subtrees gives trivial fundamental group for every finite connected union of vertex spaces.
 Every loop in this CW complex has compact image and therefore lies in such a finite connected union.
 Hence
 \[
