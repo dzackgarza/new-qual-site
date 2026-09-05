@@ -12,44 +12,97 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 3 of the official UGA Fall 2018 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified the irrational-slope separation and converted the retained sound argument to Lamport proof divs.
 ---
 
 ::: problem
 Let
-$$
-X = \left\{(x, y) \in \mathbb{R}^2 : x > 0, \, y \ge 0, \text{ and } \frac{y}{x} \in \mathbb{Q}\right\}
-$$
-equipped with the subspace topology inherited from the standard Euclidean topology on $\mathbb{R}^2$. Prove or disprove that $X$ is connected.
+\[
+X=\left\{(x,y)\in\RR^2:x>0,\ y\ge0,\ \text{and }\frac yx\in\QQ\right\}
+\]
+and equip $X$ with the subspace topology induced by the usual topology on $\RR^2$.
+Prove or disprove that $X$ is connected.
 :::
 
-::: solution
-**Goal:** Disprove that $X$ is connected by constructing an explicit separation of $X$ into two disjoint, non-empty open subsets.
+::: {.solution}
+The space $X$ is not connected.
 
-<1>1. Strategy and definition of the separating open half-spaces:
-    *Proof:*
-    <2>1. Choose a positive irrational number, such as $\alpha = \sqrt{2} \in \mathbb{R} \setminus \mathbb{Q}$.
-    <2>2. Define two open subsets of the plane $\mathbb{R}^2$:
-    $$U = \{(x, y) \in \mathbb{R}^2 : y < \sqrt{2} x\}, \qquad V = \{(x, y) \in \mathbb{R}^2 : y > \sqrt{2} x\}.$$
-    <2>3. The function $g(x, y) = y - \sqrt{2} x$ is continuous from $\mathbb{R}^2$ to $\mathbb{R}$.
-    <2>4. The sets $U = g^{-1}((-\infty, 0))$ and $V = g^{-1}((0, \infty))$ are open in $\mathbb{R}^2$.
-    <2>5. Define $A = X \cap U$ and $B = X \cap V$. By definition of the subspace topology, $A$ and $B$ are open in $X$.
+<1>1. Let
+\[
+U=\{(x,y)\in\RR^2:y<\sqrt2\,x\},
+\qquad
+V=\{(x,y)\in\RR^2:y>\sqrt2\,x\}.
+\]
+Then $U$ and $V$ are disjoint open subsets of $\RR^2$.
+::: {.proof}
+The map
+\[
+g:\RR^2\longrightarrow\RR,
+\qquad
+g(x,y)=y-\sqrt2\,x
+\]
+is continuous, and
+\[
+U=g^{-1}((-\infty,0)),
+\qquad
+V=g^{-1}((0,\infty)).
+\]
+Thus both sets are open, and their defining inequalities make them disjoint.
+:::
 
-<1>2. $A$ and $B$ are disjoint and cover $X$:
-    *Proof:*
-    <2>1. Disjointness: $U \cap V = \emptyset$, so $A \cap B = (X \cap U) \cap (X \cap V) = \emptyset$.
-    <2>2. Union: Let $(x, y) \in X$. Since $x > 0$ and $y/x \in \mathbb{Q}$, while $\sqrt{2} \notin \mathbb{Q}$, we have $\frac{y}{x} \ne \sqrt{2}$.
-    <2>3. Since $x > 0$, $\frac{y}{x} \ne \sqrt{2} \iff y \ne \sqrt{2} x$.
-    <2>4. Therefore, either $y < \sqrt{2} x$ (so $(x, y) \in U$) or $y > \sqrt{2} x$ (so $(x, y) \in V$).
-    <2>5. Thus every point of $X$ belongs to $A \cup B$, so $X = A \cup B$.
+<1>2. The subsets
+\[
+A=X\cap U,
+\qquad
+B=X\cap V
+\]
+are disjoint open subsets of $X$ whose union is $X$.
+::: {.proof}
+They are open in $X$ by the definition of the subspace topology and are disjoint by <1>1.
+Now let $(x,y)\in X$.
+Because $x>0$ and $y/x\in\QQ$, while $\sqrt2\notin\QQ$, one has
+\[
+\frac yx\neq\sqrt2.
+\]
+Hence either
+\[
+y<\sqrt2\,x
+\]
+or
+\[
+y>\sqrt2\,x.
+\]
+Thus every point of $X$ lies in $A$ or $B$, so
+\[
+X=A\cup B.
+\]
+:::
 
-<1>3. $A$ and $B$ are both non-empty:
-    *Proof:*
-    <2>1. For the point $(1, 1) \in \mathbb{R}^2$: $x = 1 > 0$, $y = 1 \ge 0$, and $y/x = 1 \in \mathbb{Q}$, so $(1, 1) \in X$.
-    <2>2. Since $1 < \sqrt{2} \cdot 1$, $(1, 1) \in U$, so $(1, 1) \in A$, proving $A \ne \emptyset$.
-    <2>3. For the point $(1, 2) \in \mathbb{R}^2$: $x = 1 > 0$, $y = 2 \ge 0$, and $y/x = 2 \in \mathbb{Q}$, so $(1, 2) \in X$.
-    <2>4. Since $2 > \sqrt{2} \cdot 1$, $(1, 2) \in V$, so $(1, 2) \in B$, proving $B \ne \emptyset$.
+<1>3. Both $A$ and $B$ are nonempty.
+::: {.proof}
+The point $(1,1)$ belongs to $X$ and satisfies
+\[
+1<\sqrt2,
+\]
+so $(1,1)\in A$.
+Likewise, $(1,2)\in X$ and
+\[
+2>\sqrt2,
+\]
+so $(1,2)\in B$.
+:::
 
-<1>4. Conclusion:
-    *Proof:*
-    The subsets $A$ and $B$ form a non-trivial separation of $X$ into disjoint, non-empty open sets in the subspace topology. Therefore $X$ is not connected (it is disconnected).
+<1>4. Therefore $X$ is disconnected.
+::: {.proof}
+By <1>2 and <1>3, $A$ and $B$ form a separation of $X$ into two disjoint nonempty open subsets.
+Hence $X$ is not connected.
+:::
 :::
