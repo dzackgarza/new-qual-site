@@ -19,6 +19,13 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified that the restricted map p^{-1}(A) -> A is a covering, that its
+    induced pi_1 map is injective, and that its image is exactly the kernel of
+    pi_1(A,a) -> pi_1(X,a) by path and homotopy lifting.
 ---
 
 ::: problem
