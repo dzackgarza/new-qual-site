@@ -60,7 +60,8 @@ Tensoring with $\QQ$ kills the $2$-torsion, so
 \[
 \widetilde H_i(\RP^2;\QQ)=0
 \]
-for every $i$. Reduced homology takes a wedge of based CW complexes to the direct sum in positive degrees, hence
+for every $i$.
+Reduced homology takes a wedge of based CW complexes to the direct sum in positive degrees, hence
 \[
 \widetilde H_i(X;\QQ)
 \cong
@@ -84,11 +85,13 @@ L(f)=\sum_{i\ge0}(-1)^i
 f_*:H_i(X;\QQ)\longrightarrow H_i(X;\QQ)
 \right).
 \]
-By <1>1, all positive-degree rational homology groups vanish. On
+By <1>1, all positive-degree rational homology groups vanish.
+On
 \[
 H_0(X;\QQ)\cong\QQ,
 \]
-the induced map is the identity because $X$ is connected. Therefore
+the induced map is the identity because $X$ is connected.
+Therefore
 \[
 L(f)=\operatorname{tr}(\operatorname{id}_{\QQ})=1.
 \]
@@ -96,10 +99,13 @@ L(f)=\operatorname{tr}(\operatorname{id}_{\QQ})=1.
 
 <1>3. Every self-map of $\RP^2\vee\RP^2$ has a fixed point.
 ::: {.proof}
-The space $X$ is a finite CW complex, hence a compact polyhedron. By the Lefschetz fixed point theorem, a self-map of $X$ with nonzero Lefschetz number has a fixed point. By <1>2,
+The space $X$ is a finite CW complex, hence a compact polyhedron.
+By the Lefschetz fixed point theorem, a self-map of $X$ with nonzero Lefschetz number has a fixed point.
+By <1>2,
 \[
 L(f)=1\ne0.
 \]
-Thus $f$ has a fixed point. The proposed statement is true.
+Thus $f$ has a fixed point.
+The proposed statement is true.
 :::
 :::
