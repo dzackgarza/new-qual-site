@@ -12,68 +12,161 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked against problem 6 of the official UGA Spring 2018 topology exam; restored the source statement without the card's added n>=1 hypothesis.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified the reduced cofiber exact sequence, including the degree-zero map and the n=0 edge case if S^0 is admitted.
 ---
 
 ::: problem
-For topological spaces $X, Y$, the **mapping cone** $C(f)$ of a continuous map $f: X \to Y$ is the quotient space
-$$
-C(f) = (X \times [0, 1]) \amalg Y / \sim,
-$$
-where $(x, 0) \sim (x', 0)$ for all $x, x' \in X$ (collapsing the cone base to an apex), and $(x, 1) \sim f(x)$ for all $x \in X$ (gluing the base along $f$).
-
-Let $\phi_k: S^n \to S^n$ ($n \ge 1$) be a continuous map of degree $k \in \mathbb{Z}$.
-Find the integral homology groups $H_i(C(\phi_k); \mathbb{Z})$ for all $i \ge 0$.
+For topological spaces $X,Y$, the mapping cone $C(f)$ of a map $f:X\to Y$ is defined to be the quotient space
+\[
+(X\times[0,1])\amalg Y/\sim,
+\]
+where $(x,0)\sim(x',0)$ for all $x,x'\in X$ and $(x,1)\sim f(x)$ for all $x\in X$.
+Let
+\[
+\phi_k:S^n\longrightarrow S^n
+\]
+be a degree-$k$ map for some integer $k$.
+Find $H_i(C(\phi_k))$ for all $i$.
 :::
 
-::: solution
-**Goal:** Compute the homology groups $H_i(C(\phi_k); \mathbb{Z})$ using the long exact sequence of the pair $(C(\phi_k), S^n)$ and cellular homology.
+::: {.solution}
+Write
+\[
+C_k=C(\phi_k).
+\]
+Unless stated otherwise, homology has coefficients in $\ZZ$.
 
-<1>1. Cellular / topological structure of the mapping cone:
+<1>1. The mapping cone is the cofiber of $\phi_k$, so its reduced homology fits into the exact sequence
+\[
+\cdots\longrightarrow
+\widetilde H_i(S^n)
+\xrightarrow{(\phi_k)_*}
+\widetilde H_i(S^n)
+\longrightarrow
+\widetilde H_i(C_k)
+\longrightarrow
+\widetilde H_{i-1}(S^n)
+\longrightarrow\cdots.
+\]
 ::: {.proof}
-    <2>1. The mapping cone $C(\phi_k)$ is homeomorphic to the space obtained by attaching an $(n+1)$-cell $D^{n+1}$ to $S^n$ along the boundary attaching map $\phi_k: \partial D^{n+1} = S^n \to S^n$:
-    $$C(\phi_k) \cong S^n \cup_{\phi_k} D^{n+1}.$$
-    <2>2. The subcomplex $Y = S^n \subset C(\phi_k)$ is a deformation retract of a neighborhood in $C(\phi_k)$, so $(C(\phi_k), S^n)$ is a good pair.
-    <2>3. The quotient space is the suspension of $S^n$:
-    $$C(\phi_k) / S^n \cong D^{n+1} / \partial D^{n+1} \cong S^{n+1}.$$
-
+The cone on $S^n$ is attached to the target $S^n$ along its base by $\phi_k$.
+Thus $C_k$ is the mapping cofiber of $\phi_k$, and the displayed sequence is the reduced homology exact sequence of a cofiber.
+Equivalently, one may identify $C_k$ with
+\[
+S^n\cup_{\phi_k}D^{n+1}
+\]
+and use cellular homology.
 :::
 
-<1>2. Long exact sequence of the pair $(C(\phi_k), S^n)$:
+<1>2. In the only potentially nonzero reduced degrees, exactness gives
+\[
+0\longrightarrow
+\widetilde H_{n+1}(C_k)
+\longrightarrow
+\ZZ
+\xrightarrow{\cdot k}
+\ZZ
+\longrightarrow
+\widetilde H_n(C_k)
+\longrightarrow0.
+\]
 ::: {.proof}
-    <2>1. The reduced homology exact sequence of the pair $(C(\phi_k), S^n)$ is:
-    $$\cdots \to \tilde{H}_{i+1}(S^n) \to \tilde{H}_{i+1}(C(\phi_k)) \to \tilde{H}_{i+1}(S^{n+1}) \xrightarrow{\partial_*} \tilde{H}_i(S^n) \to \tilde{H}_i(C(\phi_k)) \to \tilde{H}_i(S^{n+1}) \to \cdots$$
-    <2>2. The connecting homomorphism $\partial_*: \tilde{H}_{n+1}(S^{n+1}) \to \tilde{H}_n(S^n)$ is the induced map of the attaching map $\phi_k$ on top homology:
-    $$\partial_*: \mathbb{Z} \to \mathbb{Z}, \quad \partial_*(1) = \deg(\phi_k) = k.$$
-    <2>3. For degrees $i \notin \{0, n, n+1\}$:
-    $$\tilde{H}_i(S^n) = 0 \quad \text{and} \quad \tilde{H}_i(S^{n+1}) = 0 \implies \tilde{H}_i(C(\phi_k)) = 0.$$
-
+The reduced homology of $S^n$ is $\ZZ$ in degree $n$ and zero in all other degrees.
+By definition of degree,
+\[
+(\phi_k)_*:\widetilde H_n(S^n)\longrightarrow\widetilde H_n(S^n)
+\]
+is multiplication by $k$.
+Substituting these facts into <1>1 gives the displayed exact sequence, and all other reduced homology groups of $C_k$ vanish.
 :::
 
-<1>3. Computation in critical dimensions:
+<1>3. If $k\neq0$, then
+\[
+\widetilde H_{n+1}(C_k)=0,
+\qquad
+\widetilde H_n(C_k)\cong\ZZ/k\ZZ.
+\]
 ::: {.proof}
-    <2>1. Degrees $n$ and $n+1$:
-        - The relevant segment of the exact sequence is:
-        $$0 \to \tilde{H}_{n+1}(C(\phi_k)) \xrightarrow{j_*} \tilde{H}_{n+1}(S^{n+1}) \xrightarrow{\partial_*} \tilde{H}_n(S^n) \xrightarrow{i_*} \tilde{H}_n(C(\phi_k)) \to 0.$$
-        - Substituting $\tilde{H}_{n+1}(S^{n+1}) \cong \mathbb{Z}$ and $\tilde{H}_n(S^n) \cong \mathbb{Z}$ with $\partial_*(x) = k x$:
-        $$0 \to \tilde{H}_{n+1}(C(\phi_k)) \xrightarrow{j_*} \mathbb{Z} \xrightarrow{\cdot k} \mathbb{Z} \xrightarrow{i_*} \tilde{H}_n(C(\phi_k)) \to 0.$$
-    <2>2. Case $k \ne 0$:
-        - The multiplication map $\cdot k: \mathbb{Z} \to \mathbb{Z}$ is injective ($\ker(\cdot k) = 0$).
-        - Thus $\tilde{H}_{n+1}(C(\phi_k)) \cong \ker(\cdot k) = 0$.
-        - The image is $k \mathbb{Z}$, so $\tilde{H}_n(C(\phi_k)) \cong \operatorname{coker}(\cdot k) = \mathbb{Z} / k \mathbb{Z} \cong \mathbb{Z}/|k|\mathbb{Z}$.
-    <2>3. Case $k = 0$:
-        - The multiplication map $\cdot 0: \mathbb{Z} \to \mathbb{Z}$ is the zero map.
-        - Thus $\tilde{H}_{n+1}(C(\phi_0)) \cong \ker(0) = \mathbb{Z}$.
-        - Thus $\tilde{H}_n(C(\phi_0)) \cong \operatorname{coker}(0) = \mathbb{Z}$.
-    <2>4. Degree $i = 0$:
-        - Since $C(\phi_k)$ is path-connected ($n \ge 1$), $H_0(C(\phi_k)) \cong \mathbb{Z}$.
-
+Multiplication by a nonzero integer $k$ on $\ZZ$ is injective, with cokernel $\ZZ/k\ZZ$.
+Apply exactness in <1>2.
 :::
 
-<1>4. Conclusion:
+<1>4. If $k=0$, then
+\[
+\widetilde H_{n+1}(C_0)\cong\ZZ,
+\qquad
+\widetilde H_n(C_0)\cong\ZZ.
+\]
 ::: {.proof}
-    - If $k \ne 0$:
-    $$H_i(C(\phi_k); \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & i = 0, \\ \mathbb{Z}/|k|\mathbb{Z} & i = n, \\ 0 & \text{otherwise}. \end{cases}$$
-    - If $k = 0$:
-    $$H_i(C(\phi_0); \mathbb{Z}) \cong \begin{cases} \mathbb{Z} & i \in \{0, n, n+1\}, \\ 0 & \text{otherwise}. \end{cases}$$
+For $k=0$, the middle map in <1>2 is the zero homomorphism.
+Its kernel and cokernel are both $\ZZ$.
+:::
+
+<1>5. For the standard positive-dimensional interpretation $n\ge1$, the answer is
+\[
+H_i(C_k)\cong
+\begin{cases}
+\ZZ,&i=0,\\
+\ZZ/k\ZZ,&i=n\text{ and }k\neq0,\\
+\ZZ,&i=n\text{ and }k=0,\\
+\ZZ,&i=n+1\text{ and }k=0,\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+::: {.proof}
+For $n\ge1$, both the target sphere and the attached cone meet in a nonempty set, so $C_k$ is path-connected and hence
+\[
+H_0(C_k)\cong\ZZ.
+\]
+The positive-degree groups are exactly those computed in <1>3 and <1>4.
+For $k=\pm1$, the notation $\ZZ/k\ZZ$ denotes the zero group, as required.
+:::
+
+<1>6. If the source convention permits $n=0$, then necessarily $k\in\{-1,0,1\}$, and
+\[
+H_i(C_k)\cong
+\begin{cases}
+\ZZ,&i=0,
+\quad k=\pm1,\\
+\ZZ^2,&i=0,
+\quad k=0,\\
+\ZZ,&i=1,
+\quad k=0,\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+::: {.proof}
+The group
+\[
+\widetilde H_0(S^0)\cong\ZZ
+\]
+is generated by the difference of the two points.
+A map $S^0\to S^0$ either fixes the two points, swaps them, or identifies them, so its induced map on reduced $H_0$ is multiplication by $1,-1$, or $0$, respectively.
+Thus only $k=1,-1,0$ can occur.
+
+The exact sequence in <1>2 remains valid with $n=0$.
+For $k=\pm1$, both its kernel and cokernel vanish, so $C_k$ is connected with no positive reduced homology and therefore has only $H_0\cong\ZZ$.
+For $k=0$,
+\[
+\widetilde H_0(C_0)\cong\ZZ,
+\qquad
+\widetilde H_1(C_0)\cong\ZZ.
+\]
+The first equality means that $C_0$ has two path components, so
+\[
+H_0(C_0)\cong\ZZ^2,
+\]
+and the second gives $H_1(C_0)\cong\ZZ$.
 :::
 :::
