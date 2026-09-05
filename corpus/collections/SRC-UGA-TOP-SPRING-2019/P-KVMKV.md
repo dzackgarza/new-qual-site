@@ -13,6 +13,15 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 1 of the official UGA Spring 2019 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified that the infinite discrete metric space is bounded and complete while its singleton open cover has no finite subcover.
 ---
 
 ::: problem
