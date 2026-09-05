@@ -11,6 +11,18 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 3 of the official UGA Fall 2005 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Replaced the circular nested-compact-interval argument by a proof from the least-upper-bound property of the real numbers.
 ---
 
 ::: {.problem}
@@ -18,46 +30,72 @@ Prove that the unit interval $I$ is compact.
 Be sure to explicitly state any properties of $\RR$ that you use.
 :::
 
-::: {.concept}
-\envlist
-
-- Cantor's intersection theorem: for a topological space, any nested sequence of compact nonempty sets has nonempty intersection.
-
-- Bases for standard topology on $\RR$.
-
-- Definition of compactness
-:::
-
-::: {.strategy}
-What's the picture?
-Similar to covering $\ts{1\over n}\union\ts{0}$: cover $x=0$ with one set, which nets all but finitely many points.
-
-![figures/image_2021-05-20-22-46-54.png](../../assets/figures/image_2021-05-20-22-46-54.png)
-
-Proceed by contradiction.
-Binary search down into nested intervals, none of which have finite covers.
-Get a single point, a single set which eventually contains all small enough nested intervals.
-Only need finitely many more opens to cover the rest.
-:::
-
 ::: {.solution}
-\envlist
+<1>1. We use the least-upper-bound property of $\RR$.
+::: {.proof}
+The required property of the real numbers is:
 
-- Toward a contradiction, let $\theset{U_\alpha} \covers [0, 1]$ be an open cover with no finite subcover.
+> Every nonempty subset of $\RR$ that is bounded above has a least upper bound in $\RR$.
 
-- Then either $[0, {1\over 2}]$ or $[{1\over 2}, 1]$ has no finite subcover; WLOG assume it is $[0, {1\over 2}]$.
+We also use the defining property of the usual topology on $\RR$: if $U\subseteq\RR$ is open and $x\in U$, then some $\varepsilon>0$ satisfies $(x-\varepsilon,x+\varepsilon)\subseteq U$.
+:::
 
-- Then either $[0, {1\over 4}]$ or $[{1\over 4}, {1\over 2}]$ has no finite subcover
+<1>2. Let $\mathcal U$ be an arbitrary open cover of $[0,1]$, and define
+\[
+S=\{x\in[0,1]:[0,x]\text{ is covered by finitely many members of }\mathcal U\}.
+\]
+Then $S$ is nonempty and bounded above.
+::: {.proof}
+Because $\mathcal U$ covers $[0,1]$, some $U_0\in\mathcal U$ contains $0$.
+Hence the one-element family $\{U_0\}$ covers $[0,0]=\{0\}$, so $0\in S$.
+Also $S\subseteq[0,1]$, so $1$ is an upper bound for $S$.
+:::
 
-- Inductively defining $[a_n, b_n]$ this way yields a sequence of compact nested intervals (each with no finite subcover) so Cantor's Nested Interval theorem applies.
+<1>3. Let
+\[
+s=\sup S.
+\]
+Then $s\in S$.
+::: {.proof}
+Choose $U\in\mathcal U$ with $s\in U$.
+Since $U$ is open in the subspace $[0,1]$, there exists $\varepsilon>0$ such that
+\[
+(s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U.
+\]
 
-- Since $\RR$ is a complete metric space and the diameters $\diam([a_n, b_n]) \leq {1 \over 2^n} \to 0$, the intersection contains exactly one point.
+If $s=0$, then $s\in S$ by <1>2.
+Suppose $s>0$.
+By the defining property of the supremum, there exists $x\in S$ satisfying
+\[
+s-\varepsilon<x\le s.
+\]
+Choose finitely many members of $\mathcal U$ covering $[0,x]$.
+Together with $U$, they cover $[0,s]$: points at most $x$ are covered by the finite family, while points of $[x,s]$ lie in $(s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U$.
+Thus $[0,s]$ has a finite subcover, so $s\in S$.
+:::
 
-- Since $p\in [0, 1]$ and the $U_\alpha$ form an open cover, $p\in U_\alpha$ for some $\alpha$.
+<1>4. One must have $s=1$.
+::: {.proof}
+Suppose instead that $s<1$.
+Using the same $U$ and $\varepsilon$ from <1>3, choose
+\[
+y\in(s,\min\{1,s+\varepsilon\}).
+\]
+Such a $y$ exists because both $1$ and $s+\varepsilon$ are strictly larger than $s$.
 
-- Since a basis for $\tau(\RR)$ is given by open intervals, we can find an $\eps>0$ such that $(p-\eps, p+\eps) \subseteq U_\alpha$
+By <1>3, finitely many members of $\mathcal U$ cover $[0,s]$.
+Adding $U$ gives a finite cover of $[0,y]$, because
+\[
+[s,y]\subseteq(s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U.
+\]
+Hence $y\in S$, contradicting $y>s=\sup S$.
+Therefore $s=1$.
+:::
 
-- Then if ${1\over 2^N} < \eps$, for $n\geq N$ we have $$[a_n, b_n] \subseteq (p-\eps, p+\eps) \subseteq U_\alpha.$$
-
-- But then $U_\alpha \covers [a_n, b_n]$, yielding a finite subcover of $[a_n, b_n]$, a contradiction.
+<1>5. The interval $[0,1]$ is compact.
+::: {.proof}
+By <1>4, $1=s\in S$.
+By the definition of $S$, the arbitrary open cover $\mathcal U$ therefore has a finite subcover of $[0,1]$.
+This is exactly compactness of the unit interval.
+:::
 :::
