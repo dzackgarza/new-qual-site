@@ -12,6 +12,15 @@ classification:
   - Manifolds
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked both parts against problem 5 of the official UGA Spring 2019 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified descent of the integral unimodular matrix to T^2 and the mapping-torus calculation coker(I-A) plus Z, giving H_1 isomorphic to Z^2.
 ---
 
 ::: problem
