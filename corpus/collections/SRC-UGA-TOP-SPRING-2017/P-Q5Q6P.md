@@ -159,8 +159,7 @@ Under the assumption in <1>2, the contractible open cover $T^2=U\cup V$ would im
 \[
 \alpha\smile\beta=0
 \]
-for the classes in <1>4.
-But <1>4 gives
+for the classes in <1>4. But <1>4 gives
 \[
 \alpha\smile\beta\ne0.
 \]
