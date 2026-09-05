@@ -26,7 +26,8 @@ audit:
 ---
 
 ::: problem
-Find all three-fold covers of the wedge of two copies of $\RP^2$. Justify your answer.
+Find all three-fold covers of the wedge of two copies of $\RP^2$.
+Justify your answer.
 :::
 
 ::: {.solution}
@@ -64,7 +65,8 @@ satisfying
 \sigma^2=\tau^2=1.
 \]
 ::: {.proof}
-Choose labels $1,2,3$ on the fiber over the wedge point. Monodromy gives a homomorphism
+Choose labels $1,2,3$ on the fiber over the wedge point.
+Monodromy gives a homomorphism
 \[
 \rho:\pi_1(X)\longrightarrow S_3.
 \]
@@ -76,7 +78,8 @@ By <1>1, such a homomorphism is determined by
 \]
 and the relations force $\sigma^2=\tau^2=1$.
 
-Conversely, any such pair defines a permutation representation of $\pi_1(X)$ and hence a three-sheeted cover. Relabeling the fiber by $g\in S_3$ replaces the pair by
+Conversely, any such pair defines a permutation representation of $\pi_1(X)$ and hence a three-sheeted cover.
+Relabeling the fiber by $g\in S_3$ replaces the pair by
 \[
 (g\sigma g^{-1},g\tau g^{-1}),
 \]
@@ -107,7 +110,8 @@ If both entries are transpositions, either they are equal, giving the class
 \[
 ((12),(12)),
 \]
-or they are distinct. Every ordered pair of distinct transpositions is simultaneously conjugate to
+or they are distinct.
+Every ordered pair of distinct transpositions is simultaneously conjugate to
 \[
 ((12),(23)).
 \]
@@ -118,11 +122,13 @@ These cases are mutually inequivalent because simultaneous conjugacy preserves w
 ::: {.proof}
 A covering is connected exactly when the monodromy action on the fiber is transitive.
 
-For the first four pairs in <1>3, the generated subgroup fixes at least one element of $\{1,2,3\}$, so the action is not transitive. For the last pair,
+For the first four pairs in <1>3, the generated subgroup fixes at least one element of $\{1,2,3\}$, so the action is not transitive.
+For the last pair,
 \[
 \langle(12),(23)\rangle=S_3,
 \]
-which acts transitively. Hence only
+which acts transitively.
+Hence only
 \[
 ((12),(23))
 \]
@@ -131,11 +137,13 @@ gives a connected three-sheeted cover.
 
 <1>5. The five covers can be described explicitly from the restrictions over the two projective-plane factors.
 ::: {.proof}
-Write $v_1,v_2,v_3$ for the three points over the wedge point. A transposition for the $A$-generator joins the corresponding two fiber points inside a copy of the universal cover
+Write $v_1,v_2,v_3$ for the three points over the wedge point.
+A transposition for the $A$-generator joins the corresponding two fiber points inside a copy of the universal cover
 \[
 S^2\longrightarrow\RP^2,
 \]
-while a fixed fiber point contributes a copy of $A\cong\RP^2$. The same description applies to $B$.
+while a fixed fiber point contributes a copy of $A\cong\RP^2$.
+The same description applies to $B$.
 
 Thus the five cases are as follows.
 
@@ -150,7 +158,8 @@ For $((12),1)$, the analogous description holds with $A$ and $B$ interchanged.
 
 For $((12),(12))$, the orbit $\{1,2\}$ gives one copy of $S^2$ over $A$ and one copy of $S^2$ over $B$, glued to each other at the two fiber points $v_1,v_2$; the fixed point $v_3$ again gives a separate copy of $X$.
 
-Finally, for the connected class $((12),(23))$, the inverse image of $A$ consists of an $S^2$ through $v_1,v_2$ and a copy of $\RP^2$ at $v_3$, while the inverse image of $B$ consists of an $S^2$ through $v_2,v_3$ and a copy of $\RP^2$ at $v_1$. Gluing these four pieces at the indicated fiber points gives the unique connected three-sheeted cover.
+Finally, for the connected class $((12),(23))$, the inverse image of $A$ consists of an $S^2$ through $v_1,v_2$ and a copy of $\RP^2$ at $v_3$, while the inverse image of $B$ consists of an $S^2$ through $v_2,v_3$ and a copy of $\RP^2$ at $v_1$.
+Gluing these four pieces at the indicated fiber points gives the unique connected three-sheeted cover.
 :::
 
 <1>6. Therefore the complete answer is: five equivalence classes of three-sheeted covers in general, represented by the five pairs in <1>3; if “cover” is intended to mean connected cover, there is exactly one, represented by
