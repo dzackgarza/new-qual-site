@@ -66,8 +66,7 @@ B=X\cap V
 \]
 are disjoint open subsets of $X$ whose union is $X$.
 ::: {.proof}
-They are open in $X$ by the definition of the subspace topology and are disjoint by <1>1.
-Now let $(x,y)\in X$.
+They are open in $X$ by the definition of the subspace topology and are disjoint by <1>1. Now let $(x,y)\in X$.
 Because $x>0$ and $y/x\in\QQ$, while $\sqrt2\notin\QQ$, one has
 \[
 \frac yx\neq\sqrt2.
