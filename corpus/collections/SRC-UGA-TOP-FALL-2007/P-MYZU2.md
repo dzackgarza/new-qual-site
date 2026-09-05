@@ -10,6 +10,15 @@ classification:
   - Connectedness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 2 of the official UGA Fall 2007 topology exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Verified that any separation of the union restricts to a separation of a connected member containing the common point.
 ---
 
 ::: {.problem}
