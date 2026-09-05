@@ -135,7 +135,6 @@ Thus
 a_1=b_1a_1b_1^{-1},
 \]
 which is equivalent to $a_1$ and $b_1$ commuting.
-This contradicts <1>2.
-Therefore the displayed pair has the required properties.
+This contradicts <1>2. Therefore the displayed pair has the required properties.
 :::
 :::
