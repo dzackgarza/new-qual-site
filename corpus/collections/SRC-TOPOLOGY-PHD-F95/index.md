@@ -19,8 +19,10 @@ source:
   source_kind: university-exam
   problems:
   - P-TOPOLOGY-PHD-F95-01
+  - P-T08A2
   - P-TOPOLOGY-PHD-F95-03
   - P-TOPOLOGY-PHD-F95-04
+  - P-TOPOLOGY-PHD-F95-05
   - P-TOPOLOGY-PHD-F95-06
   - P-TOPOLOGY-PHD-F95-07
   - P-TOPOLOGY-PHD-F95-08
@@ -35,5 +37,5 @@ source:
 ---
 
 ::: remark
-F95phdtop.pdf; K. Lesh and G. Thompson, 23 September 1995.
+F95phdtop.pdf; K. Lesh and G. Thompson, 23 September 1995. Section I.2 is the same connected-fiber quotient problem as `P-T08A2`; Section I.5 is `P-TOPOLOGY-PHD-F95-05`. Both shared cards live under other collection directories, but they remain appearances in this source and therefore belong in this source-order list.
 :::
