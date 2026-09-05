@@ -20,6 +20,8 @@ source:
   - P-B2VGV
   - P-A5CFD
   - P-8TF07
+  - id: P-8TF06
+    comment: Problem 5; the Fall 2006 appearance uses slightly shorter wording.
   - P-M2NVE
   - P-8TF08
   - P-VPPPN
@@ -28,6 +30,3 @@ source:
     term: fall
     year: 2006
 ---
-
-::: remark
-:::

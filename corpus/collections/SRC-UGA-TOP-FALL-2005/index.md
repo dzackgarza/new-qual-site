@@ -31,7 +31,3 @@ source:
     term: fall
     year: 2005
 ---
-
-::: remark
-Exam #9 lists [[P-8TF06]] (same covering-space/Klein-bottle statement as Fall 2006 #5).
-:::
