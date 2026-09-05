@@ -46,11 +46,9 @@ If $f$ is a function from $X$ to $Y$, consider the graph
 G=\{(x,y)\in X\times Y\mid f(x)=y\}.
 \]
 
-a.
-Prove that if $f$ is continuous and $Y$ is Hausdorff, then $G$ is a closed subset of $X \times Y$.
+a. Prove that if $f$ is continuous and $Y$ is Hausdorff, then $G$ is a closed subset of $X \times Y$.
 
-b.
-Prove that if $G$ is closed and $Y$ is compact, then $f$ is continuous.
+b. Prove that if $G$ is closed and $Y$ is compact, then $f$ is continuous.
 :::
 
 ::: {.solution}
