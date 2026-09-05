@@ -11,6 +11,18 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 1 of the official UGA Spring 2021 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Rewrote and verified both implications directly from the Hausdorff condition and the product-topology basis.
 ---
 
 :::{.problem}
@@ -23,28 +35,67 @@ Show that $X$ is a Hausdorff space if and only if $\Delta$ is closed in $X \time
 
 :::
 
-:::{.solution}
-\envlist
-
-$\implies$:
-
-- Let $p\in X^2\setminus \Delta$.
-- Then $p$ is of the form $(x, y)$ where $x\neq y$ and $x,y\in X$.
-- Since $X$ is Hausdorff, pick $N_x, N_y$ in $X$ such that $N_x \intersect N_y = \emptyset$.
-- Then $N_p\definedas N_x \cross N_y$ is an open set in $X^2$ containing $p$.
-- Claim: $N_p \intersect \Delta = \emptyset$.
-  - If $q \in N_p \intersect \Delta$, then $q = (z, z)$ where $z\in X$, and $q\in N_p \implies q\in N_x \intersect N_y = \emptyset$.
-- Then $X^2\setminus \Delta = \union_p N_p$ is open.
- 
-$\impliedby$:
-
-- Let $x\neq y\in X$.
-- Consider $(x, y) \in \Delta^c \subset X^2$, which is open.
-- Thus $(x, y) \in B$ for some box in the product topology.
-- $B = U \cross V$ where $U\ni x, V\ni y$ are open in $X$, and $B \subset X^2\setminus \Delta$.
-- Claim: $U\intersect V = \emptyset$.
-  - Otherwise, $z\in U\intersect V \implies (z, z) \in B\intersect \Delta$, but $B \subset X^2\setminus \Delta \implies B \intersect \Delta = \emptyset$. 
-
-
+::: {.solution}
+<1>1. If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
+::: {.proof}
+It is enough to show that
+\[
+(X\times X)\setminus\Delta
+\]
+is open.
+Let
+\[
+(x,y)\in (X\times X)\setminus\Delta.
+\]
+Then $x\ne y$.
+Because $X$ is Hausdorff, there are disjoint open neighborhoods $U,V\subseteq X$ with
+\[
+x\in U,
+\qquad
+y\in V.
+\]
+The set $U\times V$ is an open neighborhood of $(x,y)$ in the product topology.
+Moreover,
+\[
+(U\times V)\cap\Delta=\emptyset:
+\]
+if $(z,z)\in U\times V$, then $z\in U\cap V$, contradicting $U\cap V=\emptyset$.
+Thus every point of $(X\times X)\setminus\Delta$ has an open neighborhood contained in that complement, so the complement is open and $\Delta$ is closed.
 :::
 
+<1>2. If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
+::: {.proof}
+Let $x,y\in X$ with $x\ne y$.
+Then
+\[
+(x,y)\in (X\times X)\setminus\Delta.
+\]
+Since $\Delta$ is closed, its complement is open.
+By the basis defining the product topology, there are open sets $U,V\subseteq X$ such that
+\[
+x\in U,
+\qquad
+y\in V,
+\qquad
+U\times V\subseteq (X\times X)\setminus\Delta.
+\]
+We claim that $U\cap V=\emptyset$.
+Indeed, if $z\in U\cap V$, then
+\[
+(z,z)\in U\times V,
+\]
+while $(z,z)\in\Delta$, contradicting the displayed containment.
+Hence $U$ and $V$ are disjoint open neighborhoods of $x$ and $y$.
+Therefore $X$ is Hausdorff.
+:::
+
+<1>3. Hence
+\[
+X\text{ is Hausdorff}
+\quad\Longleftrightarrow\quad
+\Delta\text{ is closed in }X\times X.
+\]
+::: {.proof}
+Combine <1>1 and <1>2.
+:::
+:::
