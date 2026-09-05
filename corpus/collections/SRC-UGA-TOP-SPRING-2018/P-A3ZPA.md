@@ -109,7 +109,6 @@ q_*:\pi_1(\Sigma_2,p)
 \cong\ZZ^2.
 \]
 Every subgroup of an abelian group is abelian.
-Thus injectivity of $q_*$ would force $\pi_1(\Sigma_2,p)$ to be abelian, contradicting <1>3.
-Hence no such covering map exists.
+Thus injectivity of $q_*$ would force $\pi_1(\Sigma_2,p)$ to be abelian, contradicting <1>3. Hence no such covering map exists.
 :::
 :::
