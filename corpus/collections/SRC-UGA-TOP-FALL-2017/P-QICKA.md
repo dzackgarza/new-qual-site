@@ -47,13 +47,15 @@ Let
 \[
 f(A)\subseteq\bigcup_{\lambda\in\Lambda}U_\lambda
 \]
-be an open cover of $f(A)$ by open subsets of $Y$. Since $f$ is continuous, the sets
+be an open cover of $f(A)$ by open subsets of $Y$.
+Since $f$ is continuous, the sets
 \[
 f^{-1}(U_\lambda),
 \qquad
 \lambda\in\Lambda,
 \]
-are open in $X$, and they cover $A$. Compactness of $A$ gives indices
+are open in $X$, and they cover $A$.
+Compactness of $A$ gives indices
 \[
 \lambda_1,\ldots,\lambda_m
 \]
@@ -80,7 +82,8 @@ A=\RR,
 \qquad
 f(x)=\frac{1}{1+x^2}.
 \]
-The set $A$ is closed in $X$, and $f$ is continuous. Its image is
+The set $A$ is closed in $X$, and $f$ is continuous.
+Its image is
 \[
 f(A)=(0,1].
 \]
@@ -88,6 +91,7 @@ Indeed, $0<f(x)\le1$ for every $x$, the value $1$ occurs at $x=0$, and every $y\
 \[
 x=\sqrt{\frac1y-1}.
 \]
-But $(0,1]$ is not closed in $\RR$, since $0$ belongs to its closure but not to the set itself. Hence a continuous map need not send closed sets to closed sets.
+But $(0,1]$ is not closed in $\RR$, since $0$ belongs to its closure but not to the set itself.
+Hence a continuous map need not send closed sets to closed sets.
 :::
 :::
