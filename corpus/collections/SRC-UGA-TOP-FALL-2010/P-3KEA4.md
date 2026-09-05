@@ -19,6 +19,14 @@ audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-04
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: >-
+    Verified the Lefschetz obstruction chi(Sigma)=0, the classification of all
+    compact connected surfaces with zero Euler characteristic, and the explicit
+    fixed-point-free isotopies on the torus, annulus, Mobius band, and Klein
+    bottle.
 ---
 
 ::: problem
