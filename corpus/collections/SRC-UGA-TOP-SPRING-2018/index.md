@@ -18,6 +18,8 @@ source:
   problems:
   - P-8TS28
   - P-VPACG
+  - id: P-SG462
+    comment: Spring 2018.3
   - P-A3ZPA
   - P-HOJTU
   - P-DFB3Y
@@ -29,4 +31,7 @@ source:
     year: 2018
 ---
 
+::: remark
+Exam #3 repeats the compact-subset-of-a-Hausdorff-space theorem already represented by [[P-SG462]], and reuses that card.
+:::
 
