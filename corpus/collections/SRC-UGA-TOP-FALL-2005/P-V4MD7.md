@@ -15,52 +15,104 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Checked the statement against problem 5 of the official UGA Fall 2005 topology exam.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-05
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-05
+  note: Replaced the pseudo-Lamport presentation by a cellular-chain computation of both requested groups.
 ---
 
 ::: problem
 Compute the integer homology groups $H_0(K_5; \mathbb{Z})$ and $H_1(K_5; \mathbb{Z})$ of the **complete graph** $K_5$ on 5 vertices.
 :::
 
-::: solution
-**Goal:** Compute $H_0(K_5)$ and $H_1(K_5)$ via cellular homology and the Euler characteristic of 1-dimensional CW complexes.
+::: {.solution}
+<1>1. Give $K_5$ its natural one-dimensional CW structure.
+::: {.proof}
+There are five vertices and one edge for each unordered pair of distinct vertices, hence
+\[
+\#E=\binom52=10.
+\]
+Thus its cellular chain complex is
+\[
+0\longrightarrow \ZZ^{10}\xrightarrow{\partial_1}\ZZ^5\longrightarrow0.
+\]
+Orient every edge arbitrarily.
+For an oriented edge from vertex $v_i$ to vertex $v_j$,
+\[
+\partial_1(e_{ij})=v_j-v_i.
+\]
+:::
 
-<1>1. CW Complex Structure of $K_5$:
-    *Proof:*
-    <2>1. The complete graph $K_5$ is a 1-dimensional CW complex (graph) with:
-        - Vertices (0-cells): $V = 5$,
-        - Edges (1-cells): $E = \binom{5}{2} = \frac{5 \cdot 4}{2} = 10$.
-    <2>2. $K_5$ is a path-connected topological space (every pair of vertices is connected by an edge).
+<1>2. The image of $\partial_1$ is the subgroup
+\[
+A=\left\{(n_1,\ldots,n_5)\in\ZZ^5:\sum_{i=1}^5n_i=0\right\}.
+\]
+::: {.proof}
+Every boundary $v_j-v_i$ has coordinate sum zero, so $\operatorname{im}\partial_1\subseteq A$.
+Conversely, fix $v_1$.
+Because $K_5$ contains the edge from $v_1$ to every $v_i$, the image contains
+\[
+v_i-v_1\qquad(2\le i\le5).
+\]
+These four elements generate $A$: if $\sum_i n_i=0$, then
+\[
+\sum_{i=1}^5n_iv_i=\sum_{i=2}^5 n_i(v_i-v_1).
+\]
+Hence $\operatorname{im}\partial_1=A\cong\ZZ^4$.
+:::
 
-<1>2. Computation of $H_0(K_5; \mathbb{Z})$:
-    *Proof:*
-    <2>1. For any non-empty path-connected topological space $X$, the 0-th homology group is isomorphic to $\mathbb{Z}$:
-        $$H_0(K_5; \mathbb{Z}) \cong \mathbb{Z}.$$
+<1>3. One has
+\[
+H_0(K_5;\ZZ)\cong\ZZ.
+\]
+::: {.proof}
+Cellular homology gives
+\[
+H_0(K_5;\ZZ)=\ZZ^5/A.
+\]
+The coordinate-sum homomorphism
+\[
+\ZZ^5\longrightarrow\ZZ,
+\qquad
+(n_1,\ldots,n_5)\longmapsto\sum_i n_i,
+\]
+is surjective and has kernel $A$.
+The first isomorphism theorem therefore gives $\ZZ^5/A\cong\ZZ$.
+:::
 
-<1>3. Computation of $H_1(K_5; \mathbb{Z})$ via Euler Characteristic:
-    *Proof:*
-    <2>1. For any finite 1-dimensional CW complex $X$:
-        - The cellular chain complex is $0 \to C_1(X) \xrightarrow{\partial_1} C_0(X) \to 0$.
-        - Higher homology groups vanish: $H_k(X) = 0$ for all $k \ge 2$.
-    <2>2. The **Euler characteristic** $\chi(X)$ can be computed in two ways:
-        - By counting cells:
-          $$\chi(K_5) = c_0 - c_1 = V - E = 5 - 10 = -5.$$
-        - By alternating sum of Betti numbers:
-          $$\chi(K_5) = \operatorname{rank} H_0(K_5) - \operatorname{rank} H_1(K_5) = 1 - \operatorname{rank} H_1(K_5).$$
-    <2>3. Setting the two expressions equal:
-        $$1 - \operatorname{rank} H_1(K_5) = -5 \implies \operatorname{rank} H_1(K_5) = 1 - (-5) = 6.$$
-    <2>4. Since 1-dimensional complexes have free abelian homology groups ($H_1 \le C_1 \cong \mathbb{Z}^{10}$ is a subgroup of a free abelian group, hence torsion-free):
-        $$H_1(K_5; \mathbb{Z}) \cong \mathbb{Z}^6.$$
-
-<1>4. Alternative Homotopy Retraction Method (Maximal Spanning Tree):
-    *Proof:*
-    <2>1. Choose any maximal spanning tree $T \subset K_5$.
-    <2>2. Any tree on 5 vertices has $V - 1 = 5 - 1 = 4$ edges and is contractible ($T \simeq \{*\}$).
-    <2>3. Collapsing $T$ to a point gives a homotopy equivalence:
-        $$K_5 \simeq K_5 / T \cong \bigvee_{i=1}^{E - (V - 1)} S^1 = \bigvee_{i=1}^{10 - 4} S^1 = \bigvee_{i=1}^6 S^1.$$
-    <2>4. The homology of a wedge sum of 6 circles is:
-        $$H_1\left( \bigvee_{i=1}^6 S^1 \right) \cong \bigoplus_{i=1}^6 H_1(S^1) \cong \mathbb{Z}^6.$$
-
-<1>5. Conclusion:
-    $$H_0(K_5; \mathbb{Z}) \cong \mathbb{Z}, \qquad H_1(K_5; \mathbb{Z}) \cong \mathbb{Z}^6, \qquad H_k(K_5; \mathbb{Z}) = 0 \text{ for } k \ge 2.$$
-    Q.E.D.
+<1>4. One has
+\[
+H_1(K_5;\ZZ)\cong\ZZ^6.
+\]
+::: {.proof}
+There are no $2$-cells, so
+\[
+H_1(K_5;\ZZ)=\ker\partial_1.
+\]
+The exact sequence
+\[
+0\longrightarrow\ker\partial_1
+\longrightarrow\ZZ^{10}
+\xrightarrow{\partial_1}A
+\longrightarrow0
+\]
+has free abelian target $A\cong\ZZ^4$, so it splits.
+Therefore
+\[
+\ZZ^{10}\cong\ker\partial_1\oplus\ZZ^4.
+\]
+Moreover, $\ker\partial_1$ is a subgroup of the free abelian group $\ZZ^{10}$ and is therefore free abelian.
+Ranks add in the displayed decomposition, so its rank is $10-4=6$.
+Hence
+\[
+H_1(K_5;\ZZ)\cong\ZZ^6.
+\]
+:::
 :::
