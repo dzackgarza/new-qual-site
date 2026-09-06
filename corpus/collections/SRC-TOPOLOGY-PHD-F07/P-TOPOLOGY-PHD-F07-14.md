@@ -210,7 +210,6 @@ Together with the assumed path-connectedness, this says that $X$ is simply conne
 
 <1>7. Thus part (ii) is correct either with path-connectedness included as a hypothesis in the converse, or under the nonstandard convention that “simply connected” means only that every loop is null-homotopic componentwise.
 ::: {.proof}
-The standard forward implication is <1>4, the literal converse fails by <1>5, and the corrected standard converse is <1>6.
-If one drops path-connectedness from the definition of simply connected, the proof in <1>6 applies within each path component without any additional global hypothesis.
+The standard forward implication is <1>4, the literal converse fails by <1>5, and the corrected standard converse is <1>6. If one drops path-connectedness from the definition of simply connected, the proof in <1>6 applies within each path component without any additional global hypothesis.
 :::
 :::
