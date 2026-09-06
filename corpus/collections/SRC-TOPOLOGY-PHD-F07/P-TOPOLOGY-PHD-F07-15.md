@@ -219,8 +219,7 @@ so
 
 <1>8. These normal forms classify compact connected surfaces without boundary.
 ::: {.proof}
-Every such surface has a paired polygon presentation by <1>5.
-The reduction in <1>6--<1>7 places it in exactly one of two families: orientable or nonorientable.
+Every such surface has a paired polygon presentation by <1>5. The reduction in <1>6--<1>7 places it in exactly one of two families: orientable or nonorientable.
 Orientability distinguishes the two families.
 Within the orientable family, the Euler characteristic determines
 \[
