@@ -12,56 +12,153 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: >-
+    Checked against UCSD Math 200A Fall 2016 Homework 5, Exercise 1. Restored
+    the source hypothesis in part (b) that rho is an automorphism of K and
+    separated the two modified actions unambiguously.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-29
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: >-
+    Conjugating the action by theta is transported by (h,k) -> (theta(h),k).
+    Precomposing the action by rho is transported in the opposite direction by
+    (h,k) -> (h,rho(k)). Both maps respect the defining semidirect-product
+    multiplication and are bijective because theta and rho are automorphisms.
 ---
 
 ::: {.problem}
-Given: $G = H \semidirect_\psi K$ $$\psi: K \rightarrow Aut(H) \\ k \mapsto \psi(k)$$ $\theta \in Aut(H)$ $\rho: K \rightarrow K$ $$\phi_\theta: Aut(H) \rightarrow Aut(H) \\ \rho \mapsto \theta \circ \rho \circ \theta^{-1}$$ $$\psi_2: K \rightarrow Aut(H) \\ k \mapsto (\phi_\theta \circ \psi)(k)$$ $$\psi_3: K \rightarrow Aut(H) \\ k \mapsto (\psi \circ \rho)(k)$$
+Let $H$ and $K$ be groups and let
+\[
+\psi:K\longrightarrow\operatorname{Aut}(H)
+\]
+be a homomorphism.
 
-Show: $H \semidirect_\psi K \cong H \semidirect_{\psi_2} K \cong H \semidirect_{\psi_3} K$
+(a) Let $\theta\in\operatorname{Aut}(H)$ and define
+\[
+\phi_\theta:\operatorname{Aut}(H)\longrightarrow\operatorname{Aut}(H),
+\qquad
+\phi_\theta(\alpha)=\theta\alpha\theta^{-1}.
+\]
+Set
+\[
+\psi_\theta=\phi_\theta\circ\psi.
+\]
+Prove that
+\[
+H\rtimes_\psi K\cong H\rtimes_{\psi_\theta}K.
+\]
+
+(b) Let $\rho\in\operatorname{Aut}(K)$ and set
+\[
+\psi_\rho=\psi\circ\rho.
+\]
+Prove that
+\[
+H\rtimes_\psi K\cong H\rtimes_{\psi_\rho}K.
+\]
 :::
 
 ::: {.solution}
-<1>1. $H \rtimes_\psi K \cong H \rtimes_{\psi_2} K$.
-<2>1. Define $\Phi: H \rtimes_\psi K \to H \rtimes_{\psi_2} K$ by $\Phi(h, k) = (\theta(h), k)$.
+Recall that the multiplication in $H\rtimes_\psi K$ is
+\[
+(h_1,k_1)(h_2,k_2)
+=\bigl(h_1\psi(k_1)(h_2),k_1k_2\bigr).
+\]
+
+<1>1. The map
+\[
+\Phi:H\rtimes_\psi K\longrightarrow H\rtimes_{\psi_\theta}K,
+\qquad
+\Phi(h,k)=(\theta(h),k),
+\]
+is a homomorphism.
 ::: {.proof}
-definition.
-:::
-<2>2. $\Phi$ is a homomorphism.
-::: {.proof}
-in $H \rtimes_\psi K$, $(h_1, k_1)(h_2, k_2) = (h_1 \psi(k_1)(h_2), k_1 k_2)$; applying $\Phi$ gives $(\theta(h_1 \psi(k_1)(h_2)), k_1 k_2) = (\theta(h_1) \theta(\psi(k_1)(h_2)), k_1 k_2) = (\theta(h_1) (\theta \circ \psi(k_1) \circ \theta^{-1})(\theta(h_2)), k_1 k_2) = (\theta(h_1) \psi_2(k_1)(\theta(h_2)), k_1 k_2)$, which is exactly the product $(\theta(h_1), k_1)(\theta(h_2), k_2)$ in $H \rtimes_{\psi_2} K$.
-:::
-<2>3. $\Phi$ is bijective.
-::: {.proof}
-$\theta$ is an automorphism of $H$, so $\Phi$ has inverse $(h, k) \mapsto (\theta^{-1}(h), k)$.
-:::
-<2>4. Hence $H \rtimes_\psi K \cong H \rtimes_{\psi_2} K$.
-::: {.proof}
-<2>2 and <2>3.
+For $(h_1,k_1),(h_2,k_2)\in H\rtimes_\psi K$,
+\[
+\begin{aligned}
+\Phi\bigl((h_1,k_1)(h_2,k_2)\bigr)
+&=\Phi\bigl(h_1\psi(k_1)(h_2),k_1k_2\bigr)\\
+&=\bigl(\theta(h_1)\,\theta(\psi(k_1)(h_2)),k_1k_2\bigr).
+\end{aligned}
+\]
+By definition of $\psi_\theta$,
+\[
+\psi_\theta(k_1)(\theta(h_2))
+=(\theta\psi(k_1)\theta^{-1})(\theta(h_2))
+=\theta(\psi(k_1)(h_2)).
+\]
+Therefore
+\[
+\Phi\bigl((h_1,k_1)(h_2,k_2)\bigr)
+=\bigl(\theta(h_1),k_1\bigr)
+ \bigl(\theta(h_2),k_2\bigr)
+=\Phi(h_1,k_1)\Phi(h_2,k_2),
+\]
+where the product on the right is taken in $H\rtimes_{\psi_\theta}K$.
 :::
 
-<1>2. $H \rtimes_\psi K \cong H \rtimes_{\psi_3} K$.
-<2>1. Define $\Psi: H \rtimes_{\psi_3} K \to H \rtimes_\psi K$ by $\Psi(h, k) = (h, \rho(k))$.
+<1>2. The map $\Phi$ is an isomorphism.
 ::: {.proof}
-definition (note the direction: $\psi_3 = \psi \circ \rho$).
-:::
-<2>2. $\Psi$ is a homomorphism.
-::: {.proof}
-in $H \rtimes_{\psi_3} K$, $(h_1, k_1)(h_2, k_2) = (h_1 \psi_3(k_1)(h_2), k_1 k_2) = (h_1 \psi(\rho(k_1))(h_2), k_1 k_2)$; applying $\Psi$ gives $(h_1 \psi(\rho(k_1))(h_2), \rho(k_1 k_2)) = (h_1 \psi(\rho(k_1))(h_2), \rho(k_1)\rho(k_2))$, which equals the product $(h_1, \rho(k_1))(h_2, \rho(k_2))$ in $H \rtimes_\psi K$.
-:::
-<2>3. $\Psi$ is bijective.
-::: {.proof}
-$\rho$ is an automorphism of $K$, so $\Psi$ has inverse $(h, k) \mapsto (h, \rho^{-1}(k))$.
-:::
-<2>4. Hence $H \rtimes_{\psi_3} K \cong H \rtimes_\psi K$, so $H \rtimes_\psi K \cong H \rtimes_{\psi_3} K$.
-::: {.proof}
-<2>2 and <2>3.
+Since $\theta$ is an automorphism of $H$, the map
+\[
+(h,k)\longmapsto(\theta^{-1}(h),k)
+\]
+is an inverse to $\Phi$.
+Thus $\Phi$ is bijective, and <1>1 shows it is a homomorphism.
+Hence
+\[
+H\rtimes_\psi K\cong H\rtimes_{\psi_\theta}K.
+\]
+This proves part (a).
 :::
 
-<1>3. Q.E.D.
+<1>3. The map
+\[
+\Psi:H\rtimes_{\psi_\rho}K\longrightarrow H\rtimes_\psi K,
+\qquad
+\Psi(h,k)=(h,\rho(k)),
+\]
+is a homomorphism.
 ::: {.proof}
-<1>1 and <1>2.
+For $(h_1,k_1),(h_2,k_2)\in H\rtimes_{\psi_\rho}K$,
+\[
+\begin{aligned}
+\Psi\bigl((h_1,k_1)(h_2,k_2)\bigr)
+&=\Psi\bigl(h_1\psi_\rho(k_1)(h_2),k_1k_2\bigr)\\
+&=\bigl(h_1\psi(\rho(k_1))(h_2),\rho(k_1k_2)\bigr)\\
+&=\bigl(h_1\psi(\rho(k_1))(h_2),\rho(k_1)\rho(k_2)\bigr).
+\end{aligned}
+\]
+The last expression is precisely
+\[
+(h_1,\rho(k_1))(h_2,\rho(k_2))
+=\Psi(h_1,k_1)\Psi(h_2,k_2)
+\]
+in $H\rtimes_\psi K$.
+:::
+
+<1>4. The map $\Psi$ is an isomorphism.
+::: {.proof}
+Since $\rho$ is an automorphism of $K$, the map
+\[
+(h,k)\longmapsto(h,\rho^{-1}(k))
+\]
+is an inverse to $\Psi$.
+Thus $\Psi$ is bijective, and <1>3 shows it is a homomorphism.
+Hence
+\[
+H\rtimes_{\psi_\rho}K\cong H\rtimes_\psi K,
+\]
+and therefore
+\[
+H\rtimes_\psi K\cong H\rtimes_{\psi_\rho}K.
+\]
+This proves part (b).
 :::
 :::
