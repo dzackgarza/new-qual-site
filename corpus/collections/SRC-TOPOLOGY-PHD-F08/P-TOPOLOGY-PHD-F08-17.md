@@ -17,6 +17,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Checked against Part Two, question 5 of the Topology Ph.D. Qualifying Exam
+    dated January 17, 2009 in assets/attachments/F08phdtop.pdf. A finite polygon
+    presentation classifies compact connected surfaces without boundary; the
+    literal phrase "surfaces without boundary" is broader if noncompact surfaces
+    are allowed.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Verified two vertex classes, five edge classes, and one face, giving chi=-2.
+    Every edge label occurs once with each orientation, so the surface is
+    orientable and has genus 2. Rewrote the polygon-classification portion with
+    distinct Lamport labels and the compactness qualification.
 ---
 
 ::: {.problem}
@@ -29,78 +46,133 @@ You do not need to give detailed proofs.
 :::
 
 ::: {.solution}
-**Part (i).**
-
 <1>1. The symbol has $10$ sides, and each of the five letters $x, y, z, w, \nu$ appears once with a positive and once with a negative exponent.
 ::: {.proof}
-read off the symbol.
+The boundary word is
+\[
+xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}.
+\]
+The five labels are $x,y,z,w,\nu$, and inspection shows that each occurs exactly twice, once with exponent $+1$ and once with exponent $-1$.
 :::
 
 <1>2. Hence the surface is orientable.
 ::: {.proof}
-a surface is orientable iff each edge appears once with each orientation.
+For a paired polygon presentation of a surface, an orientation of the polygon interior descends across a paired edge precisely when the two boundary occurrences have opposite directions.
+By <1>1, every pair occurs once positively and once negatively, so all edge gluings preserve a global orientation on the quotient.
 :::
 
-<1>3. The number of edges after identification is $E = 5$ and the number of faces is $F = 1$.
+<1>3. After the edge identifications there are exactly two vertex classes:
+\[
+\{v_0,v_3,v_6\}
+\qquad\text{and}\qquad
+\{v_1,v_2,v_4,v_5,v_7,v_8,v_9\},
+\]
+where $v_0,\ldots,v_9$ are the polygon vertices in boundary order.
 ::: {.proof}
-five pairs of identified edges, one polygon.
+Matching the directed edge pairs gives
+\[
+\begin{array}{c|c}
+\text{label}&\text{vertex identifications}\\
+\hline
+x&v_0\sim v_3,\quad v_1\sim v_2,\\
+y&v_2\sim v_7,\quad v_1\sim v_8,\\
+z&v_3\sim v_6,\quad v_4\sim v_5,\\
+w&v_4\sim v_9,\quad v_5\sim v_8,\\
+\nu&v_6\sim v_0,\quad v_7\sim v_9.
+\end{array}
+\]
+The first coordinates in the $x,z,\nu$ relations produce
+\[
+v_0\sim v_3\sim v_6.
+\]
+The remaining relations produce
+\[
+v_1\sim v_2\sim v_7\sim v_9\sim v_4\sim v_5\sim v_8.
+\]
+No displayed relation joins these two classes, so there are exactly two quotient vertices.
 :::
 
-<1>4. The number of vertices after identification is $V = 2$.
-<2>1. Label the vertices $v_0, \ldots, v_9$ in order around the polygon.
+<1>4. The quotient has
+\[
+V=2,
+\qquad
+E=5,
+\qquad
+F=1,
+\]
+and hence
+\[
+\chi=V-E+F=-2.
+\]
 ::: {.proof}
-setup.
-:::
-<2>2. The edge identifications give $v_0 \sim v_3 \sim v_6$ and $v_1 \sim v_2 \sim v_4 \sim v_5 \sim v_7 \sim v_8 \sim v_9$.
-::: {.proof}
-tracing the identifications: $x$ gives $v_0 \sim v_3$ and $v_1 \sim v_2$; $y$ gives $v_7 \sim v_2$ and $v_8 \sim v_1$; $z$ gives $v_3 \sim v_6$ and $v_4 \sim v_5$; $w$ gives $v_4 \sim v_9$ and $v_5 \sim v_8$; $\nu$ gives $v_6 \sim v_0$ and $v_7 \sim v_9$. Chaining these yields exactly two equivalence classes.
-:::
-<2>3. Hence $V = 2$.
-::: {.proof}
-<2>2.
-:::
-
-<1>5. The Euler characteristic is $\chi = V - E + F = 2 - 5 + 1 = -2$.
-::: {.proof}
-<1>3 and <1>4.
-:::
-
-<1>6. For an orientable surface of genus $g$, $\chi = 2 - 2g$, so $-2 = 2 - 2g$ gives $g = 2$.
-::: {.proof}
-solve for $g$.
+The vertex count is <1>3.
+There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
+Therefore
+\[
+\chi=2-5+1=-2.
+\]
 :::
 
-<1>7. Hence the surface is the orientable surface of genus $2$ (the connected sum of two tori), with Euler characteristic $-2$.
+<1>5. The surface is the orientable surface of genus $2$, namely
+\[
+\boxed{(S^1\times S^1)\#(S^1\times S^1)},
+\]
+and its Euler characteristic is
+\[
+\boxed{-2}.
+\]
 ::: {.proof}
-<1>5 and <1>6.
+By <1>2 the surface is orientable.
+The classification theorem for compact connected orientable surfaces gives
+\[
+\chi=2-2g.
+\]
+Using <1>4,
+\[
+-2=2-2g,
+\]
+so $g=2$.
 :::
 
-**Part (ii).**
-
-<1>1. Every closed (boundaryless) surface can be represented by a polygon with an even number of sides, whose sides are identified in pairs.
+<1>6. Every compact connected surface without boundary can be represented by a polygon with an even number of sides, with the sides identified in pairs.
 ::: {.proof}
-a surface is obtained from a $2n$-gon by identifying its $2n$ sides in $n$ pairs.
+Take a finite triangulation of the surface and cut along a suitable collection of edges so that the remaining union of triangles is a single polygonal disk.
+Every cut edge appears twice on the boundary of this disk, so the boundary sides occur in pairs and their total number is even.
+Regluing each pair reconstructs the surface.
 :::
 
-<1>2. The classification is obtained by reducing the polygonal symbol to a normal form using elementary operations (cutting and pasting).
+<1>7. Cut-and-paste moves reduce every such paired polygon to one of the two normal forms
+\[
+a_1b_1a_1^{-1}b_1^{-1}\cdots a_gb_ga_g^{-1}b_g^{-1}
+\]
+or
+\[
+a_1a_1a_2a_2\cdots a_ka_k.
+\]
 ::: {.proof}
-the standard operations (cutting along a diagonal and regluing) transform any symbol into a canonical form.
+These are the polygonal normal forms in the classification theorem for compact connected surfaces.
+The first has every paired edge appearing with opposite orientations and represents the connected sum of $g$ tori.
+The second contains orientation-reversing pairs and represents the connected sum of $k$ projective planes.
 :::
 
-<1>3. The normal forms are:
-- orientable: $a_1 b_1 a_1^{-1} b_1^{-1} \cdots a_g b_g a_g^{-1} b_g^{-1}$ (genus $g$);
-- nonorientable: $a_1 a_1 a_2 a_2 \cdots a_g a_g$ (genus $g$).
+<1>8. The normal form determines the surface: the orientable form has
+\[
+\chi=2-2g,
+\]
+and the nonorientable form has
+\[
+\chi=2-k.
+\]
 ::: {.proof}
-the classification theorem for surfaces.
-:::
-
-<1>4. The genus (and orientability) is read off from the normal form, and the Euler characteristic is $\chi = 2 - 2g$ (orientable) or $\chi = 2 - g$ (nonorientable).
-::: {.proof}
-standard formulas.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>7 (i) and <1>3–<1>4 (ii).
+For the orientable normal form, the standard one-vertex CW structure has one face and $2g$ edges, giving
+\[
+\chi=1-2g+1=2-2g.
+\]
+For the nonorientable normal form it has one face and $k$ edges, giving
+\[
+\chi=1-k+1=2-k.
+\]
+Orientability distinguishes the two families, and within each family the Euler characteristic determines the genus.
+Thus the paired polygon determines the homeomorphism type after reduction to normal form.
 :::
 :::
