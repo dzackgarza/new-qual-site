@@ -66,8 +66,7 @@ satisfying
 \bar r(q(z))=|z|.
 \]
 ::: {.proof}
-The modulus map $r$ is continuous and is constant on equivalence classes by <1>1.
-By the universal property of the quotient topology, $r$ therefore factors uniquely as
+The modulus map $r$ is continuous and is constant on equivalence classes by <1>1. By the universal property of the quotient topology, $r$ therefore factors uniquely as
 \[
 r=\bar r\circ q
 \]
@@ -76,7 +75,8 @@ with $\bar r$ continuous.
 
 <1>3. The map $\bar r$ is bijective.
 ::: {.proof}
-For surjectivity, if $t\in[0,1)$, regard $t$ as the point $t+0i\in D$. Then
+For surjectivity, if $t\in[0,1)$, regard $t$ as the point $t+0i\in D$.
+Then
 \[
 \bar r(q(t))=|t|=t.
 \]

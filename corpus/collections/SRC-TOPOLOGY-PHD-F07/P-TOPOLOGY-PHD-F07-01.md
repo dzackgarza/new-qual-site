@@ -51,7 +51,8 @@ so
 \[
 r=\epsilon-d(y,x_0)>0.
 \]
-Let $z\in B(y,r)$. By the triangle inequality,
+Let $z\in B(y,r)$.
+By the triangle inequality,
 \[
 d(z,x_0)
 \le d(z,y)+d(y,x_0)

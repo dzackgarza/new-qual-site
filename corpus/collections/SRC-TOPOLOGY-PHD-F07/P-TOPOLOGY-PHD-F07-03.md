@@ -105,7 +105,6 @@ Thus every off-diagonal point lies in $\overline\Delta$, so in particular $\Delt
 
 <1>4. Thus the source ambiguity does not affect the conclusion: the diagonal is not closed.
 ::: {.proof}
-The literal cofinite reading is <1>1; the cofinite product reading is <1>2; and the topology actually defined by the source is handled in <1>3.
-All three yield the same negative answer.
+The literal cofinite reading is <1>1; the cofinite product reading is <1>2; and the topology actually defined by the source is handled in <1>3. All three yield the same negative answer.
 :::
 :::
