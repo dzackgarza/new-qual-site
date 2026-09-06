@@ -40,12 +40,14 @@ Prove that in a locally connected space the connected components of $X$ are open
 :::
 
 ::: {.solution}
-The source definition is malformed as printed. We use the standard intended definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
+The source definition is malformed as printed.
+We use the standard intended definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
 
 <1>1. Let $C$ be a connected component of $X$ and let $x\in C$.
 There is a connected open neighborhood $U_x$ of $x$.
 ::: {.proof}
-By local connectedness, the point $x$ has a neighborhood base of connected open sets. In particular, taking the neighborhood $X$ itself gives a connected open neighborhood
+By local connectedness, the point $x$ has a neighborhood base of connected open sets.
+In particular, taking the neighborhood $X$ itself gives a connected open neighborhood
 \[
 x\in U_x\subseteq X.
 \]
