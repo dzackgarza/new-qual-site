@@ -66,8 +66,7 @@ The family
 \[
 \{U_x:x\in K\}
 \]
-is an open cover of $K$ by <1>1.
-Since $K$ is compact, there exist points
+is an open cover of $K$ by <1>1. Since $K$ is compact, there exist points
 \[
 x_1,\ldots,x_n\in K
 \]
@@ -90,8 +89,7 @@ K\subseteq U
 F\subseteq V.
 \]
 ::: {.proof}
-The set $U$ is a finite union of open sets, hence open, and contains $K$ by <1>2.
-The set $V$ is a finite intersection of open sets, hence open.
+The set $U$ is a finite union of open sets, hence open, and contains $K$ by <1>2. The set $V$ is a finite intersection of open sets, hence open.
 By <1>1, every $V_{x_i}$ contains $F$, so their intersection $V$ also contains $F$.
 :::
 
@@ -111,8 +109,7 @@ This contradicts
 \[
 U_{x_i}\cap V_{x_i}=\varnothing
 \]
-from <1>1.
-Therefore
+from <1>1. Therefore
 \[
 U\cap V=\varnothing.
 \]
