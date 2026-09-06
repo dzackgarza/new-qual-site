@@ -114,8 +114,7 @@ and
 [\mathbb Z:n\mathbb Z]=n.
 \]
 ::: {.proof}
-The image statement follows immediately from <1>2.
-The quotient
+The image statement follows immediately from <1>2. The quotient
 \[
 \mathbb Z/n\mathbb Z
 \]

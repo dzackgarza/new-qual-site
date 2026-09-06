@@ -105,8 +105,7 @@ and hence
 \chi=V-E+F=-2.
 \]
 ::: {.proof}
-The vertex count is <1>3.
-There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
+The vertex count is <1>3. There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
 Therefore
 \[
 \chi=2-5+1=-2.
