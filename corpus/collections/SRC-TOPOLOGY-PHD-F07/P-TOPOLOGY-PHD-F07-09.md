@@ -68,8 +68,7 @@ Because $A$ is closed in $X$, the intersection
 K\cap A
 \]
 is closed in the subspace $K$.
-A closed subspace of a compact space is compact, and $K$ is compact by <1>2.
-Therefore $K\cap A$ is compact.
+A closed subspace of a compact space is compact, and $K$ is compact by <1>2. Therefore $K\cap A$ is compact.
 :::
 
 <1>4. The set $K\cap A$ is a neighborhood of $a$ in the subspace $A$.
