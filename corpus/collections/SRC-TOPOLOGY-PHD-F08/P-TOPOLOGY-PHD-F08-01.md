@@ -111,8 +111,7 @@ But $z\in V$ implies
 \[
 z\in V_{y_i},
 \]
-contradicting <1>2.
-Therefore
+contradicting <1>2. Therefore
 \[
 V\cap K=\varnothing.
 \]
