@@ -16,6 +16,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-06
   note: Checked the statement against Section I, problem 5 of the 23 September 1995 topology qualifying exam.
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: Checked the repeated statement against Part One, question 6 of the Topology Ph.D. Qualifying Exam dated January 12, 2008 in assets/attachments/F07phdtop.pdf.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-06
