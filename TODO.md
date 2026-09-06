@@ -247,7 +247,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md) — audit commit: auto (verified: 12 cards, 12 in index, provenance: 1 href(s))
 
-- [x] [`corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md) — audit commit: auto (mismatch (fixed): 12 on disk, 13 in index, provenance: 1 href(s))
+- [x] [`corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md) — audit commit: 985c27a09 (corrected prior audit: official source has 13 problems; restored missing local problem 7, now 13 cards and 13 in index; provenance: 1 href(s))
 
 - [x] [`corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md`](corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md) — audit commit: auto (verified: 58 cards, 58 in index, provenance: EMPTY)
 
