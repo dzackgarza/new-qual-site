@@ -22,6 +22,7 @@ source:
   - P-8XT65
   - P-US46A
   - P-PZO5Y
+  - P-UCLA-RA-S10-07
   - P-UUYPV
   - P-PQG5I
   - P-8XT66
