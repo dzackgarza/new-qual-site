@@ -15,6 +15,23 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Checked against Part One, question 11 of the Topology Ph.D. Qualifying Exam
+    dated January 17, 2009 in assets/attachments/F08phdtop.pdf. The source's
+    phrase "connected components of each point" is malformed; the standard
+    intended definition is that each point has a neighborhood base of connected
+    open sets.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Rewrote the older outline as a structured proof under the standard intended
+    definition. A connected open neighborhood of x lies in the connected
+    component containing x by maximality, so each component is a union of open
+    neighborhoods of its points.
 ---
 
 ::: {.problem}
@@ -22,28 +39,56 @@ A topological space $X$ is said to be locally connected if the connected compone
 Prove that in a locally connected space the connected components of $X$ are open in $X$.
 :::
 
-::: remark
-The phrase “the connected components of each point form a base of neighborhoods of $X$” is retained from the source page.
+::: {.solution}
+The source definition is malformed as printed. We use the standard intended definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
+
+<1>1. Let $C$ be a connected component of $X$ and let $x\in C$.
+There is a connected open neighborhood $U_x$ of $x$.
+::: {.proof}
+By local connectedness, the point $x$ has a neighborhood base of connected open sets. In particular, taking the neighborhood $X$ itself gives a connected open neighborhood
+\[
+x\in U_x\subseteq X.
+\]
 :::
 
-::: {.solution}
-<1>1. Local connectedness and connected neighborhoods:
-<2>1. Let $C$ be a connected component of $X$, and let $x \in C$ be an arbitrary point.
-<2>2. Since $X$ is locally connected, $x$ has a connected open neighborhood $U \subseteq X$ with $x \in U$.
+<1>2. The neighborhood $U_x$ from <1>1 satisfies
+\[
+U_x\subseteq C.
+\]
+::: {.proof}
+Both $C$ and $U_x$ are connected, and they meet at $x$.
+The union of two connected subsets with nonempty intersection is connected, so
+\[
+C\cup U_x
+\]
+is connected.
+Since $C$ is a connected component, it is maximal among connected subsets of $X$.
+Because
+\[
+C\subseteq C\cup U_x,
+\]
+maximality forces
+\[
+C\cup U_x=C.
+\]
+Hence $U_x\subseteq C$.
+:::
 
-<1>2. Containment of the neighborhood in the connected component:
-<2>1. Because $U$ is connected and $x \in U \cap C$, the union $U \cup C$ is connected.
-<2>2. By definition, the connected component $C$ is a maximal connected subset of $X$.
-Therefore $U \cup C = C$, which implies $U \subseteq C$.
-
-<1>3. Openness of connected components:
-<2>1. For every point $x \in C$, there exists an open set $U_x$ such that $x \in U_x \subseteq C$.
-Thus:
+<1>3. The component $C$ is open in $X$.
+::: {.proof}
+By <1>1--<1>2, for every $x\in C$ there is an open set $U_x$ satisfying
+\[
+x\in U_x\subseteq C.
+\]
+Therefore
 \[
 C = \bigcup_{x \in C} U_x.
 \]
-Because an arbitrary union of open sets is open, $C$ is an open subset of $X$.
+An arbitrary union of open sets is open, so $C$ is open.
+:::
 
-<1>4. Conclusion:
-In any locally connected topological space, every connected component is open. Q.E.D.
+<1>4. Hence every connected component of a locally connected space is open.
+::: {.proof}
+The component $C$ in <1>1 was arbitrary, and <1>3 proves it is open.
+:::
 :::
