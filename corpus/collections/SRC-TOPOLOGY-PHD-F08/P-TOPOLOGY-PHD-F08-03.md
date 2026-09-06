@@ -55,8 +55,7 @@ This proves the stated minimality.
 \overline A\subseteq B.
 \]
 ::: {.proof}
-Since $B$ is closed and contains $A$, it belongs to the family of closed supersets occurring in the definition in <1>1.
-An intersection is contained in each set being intersected.
+Since $B$ is closed and contains $A$, it belongs to the family of closed supersets occurring in the definition in <1>1. An intersection is contained in each set being intersected.
 Therefore
 \[
 \overline A
