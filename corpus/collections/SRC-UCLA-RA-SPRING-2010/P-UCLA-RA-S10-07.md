@@ -36,7 +36,8 @@ Prove that there exists a unique element $x\in E$ such that
 :::
 
 ::: {.solution}
-If the empty set is admitted as a convex set, the printed statement requires the additional hypothesis $E\ne\varnothing$; otherwise there is no element whose norm can attain the infimum. We therefore prove the intended assertion for nonempty $E$.
+If the empty set is admitted as a convex set, the printed statement requires the additional hypothesis $E\ne\varnothing$; otherwise there is no element whose norm can attain the infimum.
+We therefore prove the intended assertion for nonempty $E$.
 
 Set
 \[

@@ -120,7 +120,7 @@ Then
 \sum_{n=1}^N|x_n-v_n^{(j)}|^2
 +
 \sum_{n>N}|x_n|^2\\
-&<\frac{\varepsilon^2}{4}+rac{\varepsilon^2}{4}
+&<\frac{\varepsilon^2}{2}
 <\varepsilon^2.
 \end{aligned}
 \]
