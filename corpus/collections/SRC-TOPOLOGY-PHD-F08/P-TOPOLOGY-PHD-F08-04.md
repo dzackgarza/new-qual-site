@@ -15,6 +15,21 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Checked against Part One, question 4 of the Topology Ph.D. Qualifying Exam
+    dated January 17, 2009 in assets/attachments/F08phdtop.pdf. As literally
+    written, A must be nonempty for the displayed infimum to define a
+    real-valued function.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    Rewrote the existing proof under the necessary nonempty hypothesis. The
+    triangle inequality gives d(x,A) <= d(x,y)+d(y,A); symmetry yields the
+    1-Lipschitz estimate and therefore continuity.
 ---
 
 ::: {.problem}
@@ -24,69 +39,79 @@ Prove that the real-valued function on $X$ defined by $x\mapsto d(x,A)$ is conti
 :::
 
 ::: {.solution}
-<1>1. Establish the 1-Lipschitz inequality:
-<2>1. Let $x, y \in X$ and let $a \in A$ be an arbitrary element.
-By the triangle inequality for the metric $d$:
+The statement is meaningful as a real-valued function when $A\ne\varnothing$, which we assume below.
+
+<1>1. For all $x,y\in X$,
 \[
-d(x, a) \le d(x, y) + d(y, a).
+d(x,A)\le d(x,y)+d(y,A).
 \]
 ::: {.proof}
-metric space axioms.
-:::
-<2>2. Since $d(x, A) = \inf_{a' \in A} d(x, a') \le d(x, a)$:
+Fix $x,y\in X$.
+For every $a\in A$, the triangle inequality gives
 \[
-d(x, A) \le d(x, y) + d(y, a).
+d(x,a)\le d(x,y)+d(y,a).
 \]
-::: {.proof}
-definition of infimum.
-:::
-<2>3. Since the left-hand side is a lower bound for $d(x, y) + d(y, a)$ for all $a \in A$, taking the infimum over $a \in A$ on the right yields:
+Since
 \[
-d(x, A) \le d(x, y) + \inf_{a \in A} d(y, a) = d(x, y) + d(y, A).
+d(x,A)=\inf_{b\in A}d(x,b)\le d(x,a),
 \]
-::: {.proof}
-infimum property.
-:::
-<2>4. Rearranging terms gives:
+we have
 \[
-d(x, A) - d(y, A) \le d(x, y).
+d(x,A)\le d(x,y)+d(y,a)
 \]
-::: {.proof}
-subtract $d(y, A)$ from both sides.
-:::
-<2>5. Symmetrically, swapping the roles of $x$ and $y$ and using symmetry $d(y, x) = d(x, y)$ gives:
+for every $a\in A$.
+Thus $d(x,A)$ is a lower bound for the nonempty set
 \[
-d(y, A) - d(x, A) \le d(x, y) \implies -(d(x, A) - d(y, A)) \le d(x, y).
+\{d(x,y)+d(y,a):a\in A\}.
 \]
-::: {.proof}
-metric symmetry.
-:::
-<2>6. Combining <2>4 and <2>5 yields:
+It is therefore at most its infimum, namely
 \[
-|d(x, A) - d(y, A)| \le d(x, y) \quad \text{for all } x, y \in X.
+d(x,y)+\inf_{a\in A}d(y,a)
+=d(x,y)+d(y,A).
 \]
-Thus $f(x) = d(x, A)$ is 1-Lipschitz continuous.
-::: {.proof}
-absolute value definition $|u| \le c \iff -c \le u \le c$.
 :::
 
-<1>2. Deduce continuity:
-<2>1. Let $\varepsilon > 0$. Choose $\delta = \varepsilon > 0$.
-::: {.proof}
-choice of $\delta$.
-:::
-<2>2. For all $x, y \in X$ with $d(x, y) < \delta$:
+<1>2. The distance-to-$A$ function is $1$-Lipschitz:
 \[
-|d(x, A) - d(y, A)| \le d(x, y) < \delta = \varepsilon.
+|d(x,A)-d(y,A)|\le d(x,y)
 \]
-Thus $x \mapsto d(x, A)$ is uniformly continuous on $X$.
+for all $x,y\in X$.
 ::: {.proof}
-<1>1.
+From <1>1,
+\[
+d(x,A)-d(y,A)\le d(x,y).
+\]
+Interchanging $x$ and $y$ and using symmetry of the metric gives
+\[
+d(y,A)-d(x,A)\le d(y,x)=d(x,y).
+\]
+Together these inequalities are equivalent to
+\[
+|d(x,A)-d(y,A)|\le d(x,y).
+\]
 :::
 
-<1>3. Conclusion:
-The distance function $x \mapsto d(x, A)$ is continuous. Q.E.D.
+<1>3. The function
+\[
+f:X\to\mathbb R,
+\qquad
+f(x)=d(x,A),
+\]
+is continuous.
 ::: {.proof}
-<1>2.
+Let $x\in X$ and let $\varepsilon>0$.
+Take
+\[
+\delta=\varepsilon.
+\]
+If $d(x,y)<\delta$, then by <1>2,
+\[
+|f(x)-f(y)|
+=|d(x,A)-d(y,A)|
+\le d(x,y)
+<\delta
+=\varepsilon.
+\]
+Thus $f$ is continuous at every $x\in X$; indeed, the same estimate shows that it is uniformly continuous.
 :::
 :::
