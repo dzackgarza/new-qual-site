@@ -100,8 +100,7 @@ Factor
 S-\lambda I
 =S(I-\lambda S^{-1}).
 \]
-Both factors are invertible: $S$ by unitarity and the second factor by <1>2.
-Thus
+Both factors are invertible: $S$ by unitarity and the second factor by <1>2. Thus
 \[
 (S-\lambda I)^{-1}
 =(I-\lambda S^{-1})^{-1}S^{-1}.
