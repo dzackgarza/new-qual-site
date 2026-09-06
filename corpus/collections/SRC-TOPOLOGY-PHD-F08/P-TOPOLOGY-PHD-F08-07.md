@@ -140,7 +140,6 @@ The slice $\{x_0\}\times Y$ is Hausdorff by <1>2, so $Y$ is Hausdorff.
 \boxed{X\times Y\text{ is Hausdorff}\iff X\text{ and }Y\text{ are Hausdorff}.}
 \]
 ::: {.proof}
-The forward implication follows from <1>3--<1>4, and the reverse implication is <1>1.
-The empty-factor exception was identified before <1>1.
+The forward implication follows from <1>3--<1>4, and the reverse implication is <1>1. The empty-factor exception was identified before <1>1.
 :::
 :::
