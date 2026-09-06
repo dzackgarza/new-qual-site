@@ -13,9 +13,24 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    The official UCSD Math 200A Fall 2016 Homework 1 assigns Dummit--Foote
+    Section 3.2 Exercises 18 and 19. Exercise 19 is the stated uniqueness
+    result, following the coprime order/index lemma of Exercise 18.
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: gpt-5.6-sol
+  date: 2026-09-06
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-06
+  note: >-
+    For an arbitrary subgroup H of order |N|, restricted the quotient map
+    G -> G/N to H. Its image order divides both |H| = |N| and [G:N], so
+    coprimality forces a trivial image; hence H lies in N and equality of
+    finite orders gives H = N.
 ---
 
 ::: {.problem}
@@ -25,37 +40,61 @@ Show: $N$ is the unique subgroup of order $|N|$
 :::
 
 ::: {.solution}
-<1>1. Setup and projection to the quotient group: <2>1. Let $H \le G$ be any subgroup of $G$ with $|H| = |N|$.
-Let $\pi: G \to G/N$ be the canonical quotient homomorphism defined by $\pi(g) = gN$.
-<2>2. The image $\pi(H) = HN/N$ is a subgroup of $G/N$.
-By the Second Isomorphism Theorem:
+Let $H\le G$ be any subgroup with $|H|=|N|$, and let
 \[
-\pi(H) = HN/N \cong H / (H \cap N).
+\pi:G\longrightarrow G/N
 \]
+be the quotient homomorphism.
 
-<1>2. Divisibility of $|\pi(H)|$: <2>1. From the isomorphism $\pi(H) \cong H / (H \cap N)$, the order of $\pi(H)$ satisfies:
+<1>1. The integer $|\pi(H)|$ divides $|N|$.
+::: {.proof}
+The restriction
 \[
-|\pi(H)| = \frac{|H|}{|H \cap N|} \implies |\pi(H)| \text{ divides } |H| = |N|.
+\pi|_H:H\longrightarrow G/N
 \]
-<2>2. Since $\pi(H) \le G/N$, by Lagrange's Theorem for the quotient group:
+has kernel $H\cap N$.
+Hence the first isomorphism theorem gives
 \[
-|\pi(H)| \text{ divides } |G/N| = [G : N].
+\pi(H)\cong H/(H\cap N).
 \]
+Therefore
+\[
+|\pi(H)|=[H:H\cap N]\mid |H|=|N|.
+\]
+:::
 
-<1>3. Coprimality and triviality of the quotient image: <2>1. The order $|\pi(H)|$ is a positive integer that simultaneously divides $|N|$ and $[G : N]$.
-Therefore:
+<1>2. The integer $|\pi(H)|$ divides $[G:N]$.
+::: {.proof}
+The image $\pi(H)$ is a subgroup of the finite group $G/N$.
+By Lagrange's theorem,
 \[
-|\pi(H)| \text{ divides } \gcd(|N|, [G : N]) = 1.
+|\pi(H)|\mid |G/N|=[G:N].
 \]
-Thus $|\pi(H)| = 1$, which means $\pi(H) = \{eN\}$ is the trivial subgroup of $G/N$.
+:::
 
-<1>4. Deduction that $H = N$: <2>1. Because $\pi(H) = \{eN\}$, for every element $h \in H$ we have $\pi(h) = hN = N$, which means $h \in N$.
-Thus:
+<1>3. The subgroup $H$ is contained in $N$.
+::: {.proof}
+By <1>1 and <1>2, $|\pi(H)|$ divides both $|N|$ and $[G:N]$.
+Since
 \[
-H \subseteq N.
+\gcd(|N|,[G:N])=1,
 \]
-<2>2. Since $H \subseteq N$ and $|H| = |N| < \infty$, we must have $H = N$.
+we have $|\pi(H)|=1$.
+Thus $\pi(H)=\{N\}$, so every $h\in H$ lies in
+\[
+\ker\pi=N.
+\]
+Hence $H\le N$.
+:::
 
-<1>5. Conclusion: $N$ is the unique subgroup of $G$ of order $|N|$.
-Q.E.D.
+<1>4. Therefore $H=N$.
+::: {.proof}
+By <1>3, $H\le N$, while by assumption
+\[
+|H|=|N|<\infty.
+\]
+A subgroup of a finite group having the same order as the whole group is the whole group.
+Hence $H=N$.
+Since $H$ was arbitrary among subgroups of order $|N|$, $N$ is the unique subgroup of $G$ of that order.
+:::
 :::
