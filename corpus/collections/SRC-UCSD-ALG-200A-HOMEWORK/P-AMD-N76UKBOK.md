@@ -147,7 +147,6 @@ If $\mathbb Q$ were finitely generated, then <1>3, applied to the subgroup
 \mathbb Q\le\mathbb Q,
 \]
 would imply that $\mathbb Q$ is cyclic.
-This contradicts <1>4.
-Hence $\mathbb Q$ is not finitely generated.
+This contradicts <1>4. Hence $\mathbb Q$ is not finitely generated.
 :::
 :::
