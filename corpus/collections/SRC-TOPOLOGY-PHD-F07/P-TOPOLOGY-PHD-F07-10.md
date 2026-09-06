@@ -62,8 +62,7 @@ We have
 A=(A\cap U)\cup(A\cap V).
 \]
 The two sets on the right are disjoint and open in $A$, because $U$ and $V$ are open in $\overline A$.
-If both were nonempty, they would separate $A$, contradicting <1>1.
-Hence one is empty.
+If both were nonempty, they would separate $A$, contradicting <1>1. Hence one is empty.
 After interchanging $U$ and $V$ if necessary, assume
 \[
 A\subseteq U.
@@ -108,7 +107,6 @@ Hence $U=\overline A$, forcing $V=\varnothing$, contrary to <1>2.
 
 <1>7. Therefore $\overline A$ is connected.
 ::: {.proof}
-The assumption that $\overline A$ admits a separation leads to the contradiction in <1>6.
-Thus no separation exists, so $\overline A$ is connected.
+The assumption that $\overline A$ admits a separation leads to the contradiction in <1>6. Thus no separation exists, so $\overline A$ is connected.
 :::
 :::
