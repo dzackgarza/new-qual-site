@@ -14,9 +14,20 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Question 1.1 of the official UCSD Algebra Qualifying Examination, Fall 2006; the statement and displayed block decomposition agree with the source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Repaired the prior dimensionally impossible identification of ker(A-lambda I)^* with ker(y^*). The proof now derives Ran(A-lambda I)=ker(y^*) from inclusion and equal dimension, then uses algebraic multiplicity one to show y^*x is nonzero.
 ---
 
-::: problem
+::: {.problem}
 Assume that $(\lambda, x)$ is an eigenpair of $A \in M_n$ such that $\operatorname{am}(\lambda) = \operatorname{gm}(\lambda) = 1$.
 Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[
@@ -24,51 +35,145 @@ Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \qua
 \]
 :::
 
-::: solution
-Let
+::: {.solution}
+Set
 \[
 N:=A-\lambda I.
 \]
-Since $\operatorname{gm}(\lambda)=1$, $\dim\ker N=1$ and therefore $\operatorname{rank}N=n-1$.
-Let $x$ be a nonzero vector with $Nx=0$.
-Also choose $y\neq0$ in the left eigenspace of $\lambda$, so $y^*N=0$.
-
-We first show $y^*x\neq0$.
-Because $\ker N$ has dimension $1$ and $N$ has rank $n-1$, we have
+Since $\operatorname{gm}(\lambda)=1$, we have
 \[
-\ker N^*=\ker y^*=\operatorname{Ran}N.
+\ker N=\operatorname{span}\{x\},
+\qquad
+\operatorname{rank}N=n-1.
 \]
-If $y^*x=0$, then $x\in\ker y^*=\operatorname{Ran}N$, so $x=Nz$ for some $z$.
-Then $Nx=0$ implies $N^2z=0$ and $z\notin\ker N$, which would force a Jordan chain of length at least $2$ for $\lambda$ and hence $\operatorname{am}(\lambda)\ge2$, a contradiction.
-So $y^*x\neq0$.
-Scale $y$ so that $y^*x=1$.
 
-Let
+<1>1. There is a left eigenvector $y\neq0$ for $\lambda$, and it satisfies $y^*x\neq0$.
+::: {.proof}
+Because
 \[
-X:=[x_2,\dots,x_n]
+\operatorname{rank}N^*=\operatorname{rank}N=n-1,
 \]
-be any matrix whose columns form a basis of $\ker y^*$ (so $\dim\ker y^*=n-1$, $x\notin\ker y^*$, and $(x\ \ X)$ is invertible).
-Take the unique block-row matrix $(y^*\ \ Y^*)$ satisfying
+the nullspace of $N^*$ is one-dimensional. Choose
 \[
-\begin{pmatrix} y^* \\ Y^* \end{pmatrix}(x\ \ X)=I.
+0\neq y\in\ker N^*.
 \]
-Then by construction $Y^*x=0$, $Y^*X=I$, and $y^*X=0$.
+Then
+\[
+y^*N=0,
+\]
+so $y$ is a left eigenvector for $\lambda$.
 
-Compute:
+For every $v$,
 \[
-\begin{pmatrix} y^* \\ Y^* \end{pmatrix}A(x\ \ X)
+y^*(Nv)=0,
+\]
+hence
+\[
+\operatorname{Ran}N\subseteq\ker y^*.
+\]
+Both spaces have dimension $n-1$, so
+\[
+\operatorname{Ran}N=\ker y^*.
+\]
+
+Suppose, toward a contradiction, that $y^*x=0$. Then
+\[
+x\in\ker y^*=\operatorname{Ran}N,
+\]
+so there exists $z$ with
+\[
+Nz=x.
+\]
+Since $x\neq0$ and $Nx=0$, the vectors $x,z$ are linearly independent and
+\[
+N^2z=0.
+\]
+Thus the generalized eigenspace
+\[
+\ker N^2
+\]
+has dimension at least $2$. The algebraic multiplicity of $\lambda$ is at least the dimension of every generalized-eigenspace stage, in particular
+\[
+\operatorname{am}(\lambda)\ge \dim\ker N^2\ge2,
+\]
+contrary to $\operatorname{am}(\lambda)=1$.
+Therefore
+\[
+y^*x\neq0.
+\]
+Rescale $y$ so that
+\[
+y^*x=1.
+\]
+:::
+
+<1>2. Choose the remaining columns $X$ so that $(x\ \ X)$ is nonsingular and its first dual row is $y^*$.
+::: {.proof}
+Since
+\[
+\dim\ker y^*=n-1
+\]
+and $x\notin\ker y^*$, choose columns $x_2,\ldots,x_n$ forming a basis of $\ker y^*$ and set
+\[
+X=(x_2\ \cdots\ x_n).
+\]
+Then
+\[
+P:=(x\ \ X)
+\]
+is nonsingular.
+Moreover,
+\[
+y^*P=(1\ \ 0\ \cdots\ 0).
+\]
+Hence the first row of $P^{-1}$ is $y^*$. Write the remaining rows as $Y^*$, so
+\[
+P^{-1}=
+\begin{pmatrix}
+y^*\\
+Y^*
+\end{pmatrix}.
+\]
+Consequently
+\[
+y^*X=0,
+\qquad
+Y^*x=0.
+\]
+:::
+
+<1>3. In this basis, $A$ has the required block-diagonal form.
+::: {.proof}
+Since $Ax=\lambda x$,
+\[
+y^*Ax=\lambda y^*x=\lambda
+\]
+and
+\[
+Y^*Ax=\lambda Y^*x=0.
+\]
+Also $y^*A=\lambda y^*$ because $y^*(A-\lambda I)=0$, hence
+\[
+y^*AX=\lambda y^*X=0.
+\]
+Therefore
+\[
+P^{-1}AP
 =
 \begin{pmatrix}
 y^*Ax & y^*AX\\
 Y^*Ax & Y^*AX
-\end{pmatrix}.
+\end{pmatrix}
+=
+\begin{pmatrix}
+\lambda & 0\\
+0 & M
+\end{pmatrix},
 \]
-Since $y^*N=0$ and $Nx=0$, we have $y^*Ax=\lambda$ and $y^*AX=\lambda y^*X=0$.
-Also $Ax=\lambda x$ and $Y^*x=0$ imply $Y^*Ax=0$.
-Set $M:=Y^*AX$.
-
-Therefore
+where
 \[
-\begin{pmatrix} y^* \\ Y^* \end{pmatrix}A(x\ \ X)=\begin{pmatrix}\lambda&0\\0&M\end{pmatrix}.
+M:=Y^*AX.
 \]
+This is exactly the required decomposition.
+:::
 :::
