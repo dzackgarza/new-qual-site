@@ -270,7 +270,6 @@ H_2(S^2)
 \boxed{H_0(S^2)\cong\mathbb Z,\qquad H_1(S^2)=0,\qquad H_2(S^2)\cong\mathbb Z.}
 \]
 ::: {.proof}
-This is the combination of <1>2, <1>4, and <1>6.
-The computation used only the simplicial chain complex of a tetrahedral triangulation and did not use the fundamental group.
+This is the combination of <1>2, <1>4, and <1>6. The computation used only the simplicial chain complex of a tetrahedral triangulation and did not use the fundamental group.
 :::
 :::
