@@ -894,6 +894,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
+- [x] Correct the missing nonzero-module hypothesis in `P-ALGF25E`. Disposition 2026-09-07: Problem 5(b) on page 6 of the official FA25 algebra exam PDF asserts existence of a submodule isomorphic to $A/P$ for an arbitrary $A$-module $M$. The zero module is a counterexample because every $A/P$ for prime $P$ is nonzero. The card now assumes $M\neq0$, explains the exception, and gives a complete maximal-annihilator proof.
+
 - [x] Correct the zero-root exception in `P-ALGF24G`. Disposition 2026-09-07: Problem 7 on page 9 of the official `FA24_200_Algebra_Qual.pdf` omits the nonzero-root hypothesis in the root-of-unity conclusion of (b) and the polynomial identity of (c). Over $\mathbb{Q}$, $f=x$ and $\alpha=0$ give counterexamples with $r=2$ in (b) and $r=-1$, $m=2$ in (c). The card now states the necessary hypothesis at those conclusions, retains the unrestricted well-definedness assertion in (b), explains both counterexamples, and proves all three parts.
 
 - [x] Repair [issue #60](https://github.com/dzackgarza/new-qual-site/issues/60). `E-SS5.PR-1` through `E-SS5.PR-4` now hold one Chapter 5 problem each.

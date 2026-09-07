@@ -15,6 +15,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Compared both parts and the hints with Problem 5 on page 6 of the official FA25 algebra exam PDF. The source omits the hypothesis M nonzero in part (b); M=0 is an immediate counterexample, so the card states the necessary hypothesis explicitly.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Re-derived the annihilator argument in both parts and checked that maximal annihilators are prime under the Noetherian hypothesis.
 ---
 
 ::: problem
@@ -29,56 +40,94 @@ Prove that if $P_1 \neq P_2$, then $N_1 \cap N_2 = \{0\}$.
 (Hint.
 Consider $\operatorname{ann}(x)$ for $x \in N_i$.)
 
-(b) Suppose $A$ is Noetherian.
+(b) Suppose $A$ is Noetherian and $M\neq0$.
 Prove that there exist a submodule $N$ of $M$ and $P \in \operatorname{Spec}(A)$ such that $N \simeq A/P$.
 (Hint.
 Consider $\Sigma := \{\operatorname{ann}(x) \mid x \in M \setminus \{0\}\}$.)
 :::
 
+::: remark
+The hypothesis $M\neq0$ in part (b) is necessary.
+If $M=0$, its only submodule is $0$, whereas $A/P\neq0$ for every prime ideal $P$ because prime ideals are proper.
+:::
+
 ::: {.solution}
-<1>1. Part (a): $N_1 \cap N_2 = \{0\}$ when $P_1 \neq P_2$:
-<2>1. Let $x \in N_1 \setminus \{0\}$. Under the isomorphism $N_1 \cong A/P_1$, $x$ corresponds to a coset $a + P_1$ with $a \notin P_1$.
-The annihilator of $x$ is:
+<1>1. Every nonzero element of a module isomorphic to $A/P$ has annihilator $P$ when $P$ is prime.
+::: {.proof}
+Let $N\cong A/P$, let $0\neq x\in N$, and let $a+P$ be the nonzero coset corresponding to $x$.
+Then $a\notin P$, and
 \[
-\operatorname{ann}(x) = \{r \in A \mid r a \in P_1\} = (P_1 : a).
+\operatorname{ann}(x)=\{r\in A:ra\in P\}.
 \]
-<2>2. Because $P_1$ is a prime ideal and $a \notin P_1$, the condition $ra \in P_1$ implies $r \in P_1$.
-Thus:
+Certainly $P\subseteq\operatorname{ann}(x)$.
+Conversely, if $ra\in P$, primality of $P$ and $a\notin P$ imply $r\in P$.
+Hence
 \[
-\operatorname{ann}(x) = P_1 \quad \text{for every } x \in N_1 \setminus \{0\}.
+\operatorname{ann}(x)=P.
 \]
-<2>3. By identical reasoning:
-\[
-\operatorname{ann}(y) = P_2 \quad \text{for every } y \in N_2 \setminus \{0\}.
-\]
-<2>4. Let $z \in N_1 \cap N_2$.
-If $z \neq 0$, then simultaneously $\operatorname{ann}(z) = P_1$ and $\operatorname{ann}(z) = P_2$, which implies $P_1 = P_2$, contradicting $P_1 \neq P_2$.
-Therefore $z = 0$, so $N_1 \cap N_2 = \{0\}$.
+:::
 
-<1>2. Part (b): Existence of $N \cong A/P$ over a Noetherian ring:
-<2>1. Assuming $M \neq 0$, consider the family of ideals:
+<1>2. If $P_1\neq P_2$, then $N_1\cap N_2=0$.
+::: {.proof}
+Suppose $0\neq z\in N_1\cap N_2$.
+Applying <1>1 inside $N_1$ and inside $N_2$ gives simultaneously
 \[
-\Sigma = \{ \operatorname{ann}(x) \mid x \in M \setminus \{0\} \}.
+\operatorname{ann}(z)=P_1
+\qquad\text{and}\qquad
+\operatorname{ann}(z)=P_2,
 \]
-Because $M \neq 0$, $\Sigma$ is non-empty.
-<2>2. Since $A$ is a Noetherian ring, the non-empty family $\Sigma$ has a maximal element with respect to inclusion.
-Let $P = \operatorname{ann}(x_0) \in \Sigma$ be a maximal element for some $x_0 \in M \setminus \{0\}$.
-<2>3. We show that $P$ is a prime ideal:
-- Since $1 \cdot x_0 = x_0 \neq 0$, $1 \notin P$, so $P \subsetneq A$.
-- Let $a, b \in A$ with $ab \in P$ and $b \notin P$.
-- Since $b \notin P = \operatorname{ann}(x_0)$, the element $y = b x_0 \in M$ is non-zero.
-- For every $r \in P$, $ry = r(bx_0) = b(rx_0) = b \cdot 0 = 0$, so $P \subseteq \operatorname{ann}(y)$.
-- Furthermore, $a y = a(b x_0) = (ab)x_0 = 0$, so $a \in \operatorname{ann}(y)$.
-- Since $y \neq 0$, $\operatorname{ann}(y) \in \Sigma$.
-- By the maximality of $P$ in $\Sigma$ and $P \subseteq \operatorname{ann}(y)$, we must have $\operatorname{ann}(y) = P$.
-- Since $a \in \operatorname{ann}(y) = P$, $a \in P$.
-Thus $P \in \operatorname{Spec}(A)$.
-<2>4. Consider the submodule $N = A x_0 \subseteq M$.
-By the First Isomorphism Theorem for modules, the surjective homomorphism $A \to A x_0$ given by $r \mapsto r x_0$ has kernel $\operatorname{ann}(x_0) = P$, giving:
-\[
-N = A x_0 \cong A / P.
-\]
+contrary to $P_1\neq P_2$.
+Thus no such $z$ exists, proving part (a).
+:::
 
-<1>3. Conclusion:
-Parts (a) and (b) are proven. Q.E.D.
+<1>3. Under the hypotheses of part (b), the annihilator of some nonzero element of $M$ is a prime ideal.
+::: {.proof}
+Because $M\neq0$, the set
+\[
+\Sigma=\{\operatorname{ann}(x):0\neq x\in M\}
+\]
+is nonempty.
+Since $A$ is Noetherian, its ideals satisfy the ascending chain condition; consequently every nonempty family of ideals has a maximal element under inclusion.
+Choose
+\[
+P=\operatorname{ann}(x_0)\in\Sigma
+\]
+maximal, with $x_0\neq0$.
+Since $1x_0\neq0$, we have $1\notin P$, so $P$ is proper.
+
+Suppose $ab\in P$ and $b\notin P$.
+Then $y=bx_0$ is nonzero.
+For every $r\in P$,
+\[
+ry=r(bx_0)=b(rx_0)=0,
+\]
+so $P\subseteq\operatorname{ann}(y)$.
+Also
+\[
+ay=(ab)x_0=0,
+\]
+so $a\in\operatorname{ann}(y)$.
+Because $y\neq0$, its annihilator belongs to $\Sigma$; maximality of $P$ forces
+\[
+\operatorname{ann}(y)=P.
+\]
+Hence $a\in P$.
+This proves that $P$ is prime.
+:::
+
+<1>4. The cyclic submodule generated by $x_0$ is isomorphic to $A/P$.
+::: {.proof}
+Consider the surjective $A$-linear map
+\[
+A\longrightarrow Ax_0,
+\qquad
+r\longmapsto rx_0.
+\]
+Its kernel is $\operatorname{ann}(x_0)=P$.
+The first isomorphism theorem therefore gives
+\[
+Ax_0\cong A/P.
+\]
+Taking $N=Ax_0\le M$ proves part (b).
+:::
 :::
