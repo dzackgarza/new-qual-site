@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF24D
 kind: problem
-title: Flat module criterion via $I \otimes_A M \simeq IM$ and relations
+title: Ideal multiplication and finite relations in flat modules
 classification:
   areas:
   - algebra
@@ -11,14 +11,26 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-6-astra-pro
+  date: 2026-09-07
+  note: Compared both parts and the hint with Problem 4 on pages 5-6 of the official FA24 algebra exam PDF; made the commutative unital ring convention and the coefficient domain explicit.
+- event: solution-written
+  by: gpt-6-astra-pro
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-6-astra-pro
+  date: 2026-09-07
+  note: Checked that the scalar relation first vanishes in I tensor M using part (a), then lifts through K tensor M; no finite-generation assumption on M or I is used in part (a).
 ---
 
 ::: problem
-Suppose $M$ is a flat $A$-module.
+Let $A$ be a commutative ring with identity, and suppose $M$ is a flat $A$-module.
 
 (a) Prove that, for every ideal $I$ of $A$, $I \otimes_A M \simeq IM$ with an isomorphism which sends $a \otimes x$ to $ax$ for every $a \in I$ and $x \in M$.
 
-(b) For $x_1, \ldots, x_n \in M$, suppose
+(b) For $a_1,\ldots,a_n\in A$ and $x_1, \ldots, x_n \in M$, suppose
 \[
 a_1 x_1 + \cdots + a_n x_n = 0.
 \]
@@ -39,6 +51,73 @@ for every $i = 1, \ldots, n$; that means
 \[
 \mathbf{k}_1 y_1 + \cdots + \mathbf{k}_m y_m = (x_1, \ldots, x_n).
 \]
-(Hint.
-Use flatness and the SES above.)
+:::
+
+::: hint
+Use flatness and the short exact sequence in part (b).
+:::
+
+::: {.solution}
+<1>1. For every ideal $I\subseteq A$, multiplication induces an isomorphism
+\[
+\mu_I:I\otimes_A M\longrightarrow IM,\qquad a\otimes x\longmapsto ax.
+\]
+::: {.proof}
+The multiplication map is $A$-balanced, so it induces an $A$-linear map on the tensor product.
+By flatness, the inclusion $\iota:I\hookrightarrow A$ induces an injection
+\[
+\iota\otimes1_M:I\otimes_A M\hookrightarrow A\otimes_A M.
+\]
+The canonical isomorphism $A\otimes_A M\simeq M$ sends $a\otimes x$ to $ax$ and has inverse $x\mapsto1\otimes x$.
+The composite of this isomorphism with $\iota\otimes1_M$ is therefore injective and has image
+\[
+IM=\left\{\sum_{j=1}^s a_jx_j:a_j\in I,\ x_j\in M,\ s\text{ finite}\right\}.
+\]
+Restricting the codomain to that image gives $\mu_I$, proving part (a).
+:::
+
+<1>2. In part (b), the element
+\[
+t=\sum_{i=1}^n e_i\otimes x_i\in A^n\otimes_A M
+\]
+belongs to $\ker(f\otimes1_M)$, where $e_1,\ldots,e_n$ is the standard basis of $A^n$.
+::: {.proof}
+We have
+\[
+(f\otimes1_M)(t)=\sum_{i=1}^n a_i\otimes x_i\in I\otimes_A M.
+\]
+Applying $\mu_I$ gives $\sum_i a_ix_i=0$ by the assumed relation.
+Injectivity of $\mu_I$ from <1>1 now implies $(f\otimes1_M)(t)=0$.
+:::
+
+<1>3. The required finite collection of vectors $\mathbf{k}_j\in K$ and elements $y_j\in M$ exists.
+::: {.proof}
+Let $j:K\hookrightarrow A^n$ be the inclusion.
+Tensoring the given short exact sequence with the flat module $M$ gives the exact sequence
+\[
+0\longrightarrow K\otimes_A M
+\xrightarrow{j\otimes1_M}A^n\otimes_A M
+\xrightarrow{f\otimes1_M}I\otimes_A M
+\longrightarrow0.
+\]
+By <1>2 and exactness, $t$ is the image of some $u\in K\otimes_A M$.
+Every element of a tensor product is a finite sum of pure tensors, so write
+\[
+u=\sum_{j=1}^m\mathbf{k}_j\otimes y_j,
+\qquad \mathbf{k}_j=(b_{1j},\ldots,b_{nj})\in K,\quad y_j\in M.
+\]
+A zero summand may be used when $u=0$.
+Under the canonical isomorphism
+\[
+A^n\otimes_A M\longrightarrow M^n,
+\qquad (b_1,\ldots,b_n)\otimes y\longmapsto(b_1y,\ldots,b_ny),
+\]
+the equality $(j\otimes1_M)(u)=t$ becomes
+\[
+\sum_{j=1}^m\mathbf{k}_j y_j=(x_1,\ldots,x_n).
+\]
+Taking the $i$th coordinate gives $\sum_{j=1}^m b_{ij}y_j=x_i$ for every $i$.
+Moreover, $\mathbf{k}_j\in K$ gives $\sum_i a_i b_{ij}=0$ for every $j$, as required by the prescribed kernel condition.
+This proves part (b).
+:::
 :::
