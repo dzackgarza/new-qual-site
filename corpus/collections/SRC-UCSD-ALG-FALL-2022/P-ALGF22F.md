@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 6 of the official UCSD Algebra Qualifying Exam, Fall 2022 source; the integral-closure hypotheses and conclusion agree with the source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Replaced placeholder justifications with the complete argument using roots of the monic product, transitivity of integrality, and closure of integral elements under elementary symmetric polynomials.
 ---
 
 ::: problem
@@ -23,43 +31,66 @@ Prove that the coefficients of $f$ and $g$ belong to $C$.
 :::
 
 ::: {.solution}
-<1>1. Let $f(x) = \prod_i (x - \alpha_i)$ and $g(x) = \prod_j (x - \beta_j)$ over an algebraic closure of the fraction field of $B$.
+Let $L=\operatorname{Frac}(B)$, and fix an algebraic closure $\overline L$.
+
+<1>1. Over $\overline L$, write
+\[
+f(x)=\prod_{i=1}^m(x-\alpha_i),
+\qquad
+g(x)=\prod_{j=1}^n(x-\beta_j).
+\]
 ::: {.proof}
-factor the monic polynomials.
+The ring $B$ is an integral domain, so it embeds in its fraction field $L$.
+Both $f$ and $g$ may therefore be viewed as monic polynomials in $L[x]$, and they split into linear factors over $\overline L$.
 :::
 
-<1>2. The roots of $fg$ are the $\alpha_i$ and $\beta_j$, and the coefficients of $fg$ are the elementary symmetric functions of these roots.
+<1>2. Every root of $fg$ in $\overline L$ is integral over $A$.
 ::: {.proof}
-Vieta's formulas.
+By hypothesis,
+\[
+fg\in C[x],
+\]
+and $fg$ is monic because $f$ and $g$ are monic.
+Thus any root $\gamma$ of $fg$ satisfies a monic polynomial with coefficients in $C$, namely $fg$ itself.
+Hence $\gamma$ is integral over $C$.
+
+By definition of the integral closure, every element of $C$ is integral over $A$.
+Thus $C/A$ is an integral extension.
+Integrality is transitive, so every element integral over $C$ is integral over $A$.
+Therefore every root of $fg$ is integral over $A$.
 :::
 
-<1>3. Since the coefficients of $fg$ lie in $C$, each root of $fg$ is integral over $C$ (hence over $A$).
+<1>3. Every $\alpha_i$ and every $\beta_j$ is integral over $A$.
 ::: {.proof}
-a root of a monic polynomial with coefficients in $C$ is integral over $C$; since $C$ is integral over $A$, it is integral over $A$.
+By <1>1, each $\alpha_i$ and each $\beta_j$ is a root of
+\[
+fg=f\,g.
+\]
+The assertion therefore follows from <1>2.
 :::
 
-<1>4. Hence each $\alpha_i$ and each $\beta_j$ is integral over $A$.
+<1>4. Every coefficient of $f$ and every coefficient of $g$ is integral over $A$.
 ::: {.proof}
-<1>2 and <1>3 (the roots of $fg$ are exactly the $\alpha_i$ and $\beta_j$).
+The elements of $\overline L$ integral over $A$ form a subring.
+By <1>3, all the roots $\alpha_i$ are integral over $A$.
+The coefficients of the monic polynomial
+\[
+f(x)=\prod_{i=1}^m(x-\alpha_i)
+\]
+are, up to sign, elementary symmetric polynomials in the $\alpha_i$.
+They are therefore sums of products of elements integral over $A$, hence are themselves integral over $A$.
+
+The same argument applied to the roots $\beta_j$ shows that every coefficient of $g$ is integral over $A$.
 :::
 
-<1>5. The coefficients of $f$ are elementary symmetric functions of the $\alpha_i$, hence are integral over $A$ (a sum of products of integral elements is integral).
+<1>5. All coefficients of $f$ and $g$ belong to $C$.
 ::: {.proof}
-the integral elements form a ring.
-:::
-
-<1>6. The coefficients of $f$ lie in $B$ (by hypothesis) and are integral over $A$, so they lie in $C$ (the integral closure of $A$ in $B$).
-::: {.proof}
-definition of $C$.
-:::
-
-<1>7. Similarly, the coefficients of $g$ lie in $C$.
-::: {.proof}
-the same argument with the $\beta_j$.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>6 and <1>7.
+By hypothesis, the coefficients of $f$ and $g$ lie in $B$.
+By <1>4, they are integral over $A$.
+But
+\[
+C=\{b\in B:b\text{ is integral over }A\}.
+\]
+Hence every coefficient of $f$ and $g$ lies in $C$, as required.
 :::
 :::
