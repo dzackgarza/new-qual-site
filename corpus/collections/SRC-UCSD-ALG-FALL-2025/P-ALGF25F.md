@@ -14,6 +14,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Compared the statement with Problem 6 on page 7 of the official FA25 algebra exam PDF.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Re-derived both directions from the Galois correspondence and verified the normal-subgroup and quotient identifications.
 ---
 
 ::: problem
@@ -27,42 +38,60 @@ Prove that an element $e \in E$ lies in $F^{\mathrm{ab}}$ if and only if the fie
 :::
 
 ::: {.solution}
-<1>1. Galois theoretic properties of $F^{\mathrm{ab}}$:
-<2>1. The derived subgroup $[G, G]$ is a normal subgroup of $G = \operatorname{Gal}(E/F)$.
-By the Fundamental Theorem of Galois Theory, the fixed field $F^{\mathrm{ab}} = E^{[G, G]}$ is a Galois extension of $F$, and its Galois group is:
+<1>1. The extension $F^{\mathrm{ab}}/F$ is Galois and abelian.
+::: {.proof}
+The commutator subgroup $[G,G]$ is characteristic in $G$, hence normal.
+By the fundamental theorem of Galois theory, its fixed field
 \[
-\operatorname{Gal}(F^{\mathrm{ab}} / F) \cong G / [G, G].
+F^{\mathrm{ab}}=E^{[G,G]}
 \]
-<2>2. The quotient $G / [G, G]$ is the abelianization of $G$, so $\operatorname{Gal}(F^{\mathrm{ab}} / F)$ is an abelian group.
+is Galois over $F$, with
+\[
+\operatorname{Gal}(F^{\mathrm{ab}}/F)\cong G/[G,G].
+\]
+The quotient $G/[G,G]$ is abelian, so $F^{\mathrm{ab}}/F$ is an abelian Galois extension.
+:::
 
-<1>2. Direction ($\Leftarrow$): If $F[e]/F$ is Galois and abelian, then $e \in F^{\mathrm{ab}}$:
-<2>1. Suppose $F[e]/F$ is a Galois extension with $\operatorname{Gal}(F[e]/F)$ abelian.
-Let $H = \operatorname{Gal}(E / F[e]) \le G$.
-Because $F[e]/F$ is Galois, $H$ is a normal subgroup of $G$, and:
+<1>2. If $F[e]/F$ is Galois with abelian Galois group, then $e\in F^{\mathrm{ab}}$.
+::: {.proof}
+Let
 \[
-G / H \cong \operatorname{Gal}(F[e]/F).
+H=\operatorname{Gal}(E/F[e]).
 \]
-<2>2. Since $G/H$ is abelian, the commutator subgroup $[G, G]$ is contained in $H$:
+Since $F[e]/F$ is Galois, the Galois correspondence gives $H\trianglelefteq G$ and
 \[
-[G, G] \subseteq H.
+G/H\cong\operatorname{Gal}(F[e]/F).
 \]
-<2>3. Applying the inclusion-reversing Galois correspondence:
+The quotient is abelian, so every commutator of elements of $G$ lies in $H$; hence
 \[
-F[e] = E^H \subseteq E^{[G, G]} = F^{\mathrm{ab}}.
+[G,G]\subseteq H.
 \]
-Thus $e \in F[e] \subseteq F^{\mathrm{ab}}$, so $e \in F^{\mathrm{ab}}$.
+Taking fixed fields reverses inclusion and gives
+\[
+F[e]=E^H\subseteq E^{[G,G]}=F^{\mathrm{ab}}.
+\]
+In particular, $e\in F^{\mathrm{ab}}$.
+:::
 
-<1>3. Direction ($\Rightarrow$): If $e \in F^{\mathrm{ab}}$, then $F[e]/F$ is Galois and abelian:
-<2>1. If $e \in F^{\mathrm{ab}}$, then $F \subseteq F[e] \subseteq F^{\mathrm{ab}}$.
-<2>2. By the Galois correspondence for the finite Galois extension $F^{\mathrm{ab}}/F$, intermediate fields correspond to subgroups of the abelian group $A = \operatorname{Gal}(F^{\mathrm{ab}}/F)$.
-Let $K = \operatorname{Gal}(F^{\mathrm{ab}} / F[e]) \le A$.
-<2>3. Because $A$ is abelian, every subgroup $K \le A$ is automatically normal in $A$.
-Therefore $F[e]/F$ is a Galois extension, and its Galois group is the quotient:
+<1>3. If $e\in F^{\mathrm{ab}}$, then $F[e]/F$ is Galois and abelian.
+::: {.proof}
+By <1>1, the extension $F^{\mathrm{ab}}/F$ is finite Galois with abelian Galois group
 \[
-\operatorname{Gal}(F[e]/F) \cong A / K.
+A=\operatorname{Gal}(F^{\mathrm{ab}}/F).
 \]
-As the quotient of an abelian group, $\operatorname{Gal}(F[e]/F)$ is abelian.
-
-<1>4. Conclusion:
-$e \in F^{\mathrm{ab}}$ if and only if $F[e]/F$ is Galois with an abelian Galois group. Q.E.D.
+The inclusions
+\[
+F\subseteq F[e]\subseteq F^{\mathrm{ab}}
+\]
+correspond to the subgroup
+\[
+K=\operatorname{Gal}(F^{\mathrm{ab}}/F[e])\le A.
+\]
+Since $A$ is abelian, $K$ is normal in $A$.
+The Galois correspondence therefore shows that $F[e]/F$ is Galois and that
+\[
+\operatorname{Gal}(F[e]/F)\cong A/K.
+\]
+This quotient is abelian, proving the converse and hence the equivalence.
+:::
 :::
