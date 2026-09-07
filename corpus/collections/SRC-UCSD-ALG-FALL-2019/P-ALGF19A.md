@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 1 of the official UCSD Algebra Qualifying Exam, Fall 2019 source; the statement agrees with the source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Verified the fixed-point congruence for the action of P on Q/P and the resulting divisibility through N_Q(P) <= N_G(P).
 ---
 
 ::: problem
@@ -40,8 +48,9 @@ Since $P$ is a $p$-group, the number of fixed points satisfies the fixed point c
 \]
 <2>3. A coset $xP \in X$ is fixed by $P$ if and only if:
 \[
-y x P = x P \quad \forall y \in P \iff x^{-1} y x \in P \quad \forall y \in P \iff x \in N_Q(P).
+y x P = x P \quad \forall y \in P \iff x^{-1} P x \subseteq P.
 \]
+Since $P$ is finite, $x^{-1}Px$ and $P$ have the same order, so the inclusion is an equality. Thus the last condition is equivalent to $x\in N_Q(P)$.
 Therefore the fixed point set is $X^P = N_Q(P) / P$.
 <2>4. The coset $eP = P$ is always fixed, so $|X^P| \ge 1$.
 Since $p \mid |X^P|$ and $|X^P| \ge 1$, we have $|X^P| = [N_Q(P) : P] \ge p$, and:
