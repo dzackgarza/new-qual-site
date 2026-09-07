@@ -31,7 +31,8 @@ Describe, up to isomorphism, all the $\mathbb{R}[x]$-module structures one might
 ::: {.solution}
 <1>1. An $\mathbb{R}[x]$-module structure on $V$ extending its given $\mathbb{R}$-vector-space structure is equivalent to a linear operator $T\in\operatorname{End}_{\mathbb{R}}(V)$.
 ::: {.proof}
-Given such a module structure, define $T(v)=x\cdot v$. Since the $\mathbb{R}$-action is fixed, $T$ is $\mathbb{R}$-linear, and then
+Given such a module structure, define $T(v)=x\cdot v$.
+Since the $\mathbb{R}$-action is fixed, $T$ is $\mathbb{R}$-linear, and then
 \[
 p(x)\cdot v=p(T)v
 \]
@@ -66,7 +67,8 @@ so
 
 <1>3. The only monic irreducibles over $\mathbb{R}$ have degree $1$ or $2$.
 ::: {.proof}
-Every real polynomial of odd degree has a real root. Thus an irreducible real polynomial has degree at most $2$.
+Every real polynomial of odd degree has a real root.
+Thus an irreducible real polynomial has degree at most $2$.
 The monic irreducibles are the linear factors $x-\lambda$ and the quadratics
 \[
 x^2+ax+b,
@@ -114,8 +116,7 @@ The degree equation in <1>2 has only the partitions
 3=1+1+1=2+1=3.
 \]
 If all irreducibles involved are linear, these give respectively <2>1, <2>2, and <2>3; in the degree-$2$ summand of <2>2 the elementary divisor must be $(x-\lambda)^2$.
-If an irreducible quadratic occurs, it contributes degree $2$, leaving exactly one linear degree-$1$ summand, which gives <2>4.
-There is no other possibility because irreducibles over $\mathbb{R}$ have degree only $1$ or $2$.
+If an irreducible quadratic occurs, it contributes degree $2$, leaving exactly one linear degree-$1$ summand, which gives <2>4. There is no other possibility because irreducibles over $\mathbb{R}$ have degree only $1$ or $2$.
 The elementary-divisor theorem also gives uniqueness of the multiset of elementary divisors, hence these families classify the module structures up to isomorphism.
 :::
 
