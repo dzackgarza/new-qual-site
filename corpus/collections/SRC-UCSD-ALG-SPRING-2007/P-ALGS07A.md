@@ -10,6 +10,18 @@ classification:
   - Group Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Compared all parts with Problem 1 on pages 1-2 of the official Spring 2007 algebra exam and with the UCSD group-theory review sheet. The source's incidental upper-unitriangular example is of neither classified type only for odd p; for p=2 it is dihedral of order 8 and falls under part (b)(ii).
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked the normal order-p-squared subgroup construction and classified all C_{p^2} semidirect C_p actions separately for odd p and p=2.
 ---
 
 ::: problem
@@ -24,5 +36,136 @@ Let $g$ be an element not in $N$.
 
 (ii) If the order of $g$ is $p$, classify the possible $G$ up to isomorphism.
 
-(Incidentally, there exist groups of neither type, such as the group of $3 \times 3$ upper triangular matrices over $\mathbb{F}_p$ with 1's on the diagonal.)
+(Incidentally, for odd $p$ there exist groups of neither type, such as the group of $3 \times 3$ upper triangular matrices over $\mathbb{F}_p$ with 1's on the diagonal. For $p=2$, the quaternion group $Q_8$ is an example of neither type.)
+:::
+
+::: remark
+The qualification “for odd $p$” in the upper-unitriangular example is necessary.
+For odd $p$, every strictly upper triangular $3\times3$ matrix $X$ satisfies $X^3=0$, and in characteristic $p$ one has $(I+X)^p=I$, so the unitriangular group has exponent $p$ and contains no cyclic subgroup of order $p^2$.
+For $p=2$, that matrix group instead has elements of order $4$ and is the dihedral group of order $8$, which occurs in part (b)(ii).
+:::
+
+::: {.solution}
+<1>1. The group $G$ has a normal subgroup of order $p^2$.
+::: {.proof}
+The class equation for a finite $p$-group shows that its center is nontrivial.
+Choose a central subgroup
+\[
+C\le Z(G),\qquad |C|=p,
+\]
+using Cauchy's theorem.
+
+The quotient $G/C$ has order $p^2$, and every group of order $p^2$ is abelian.
+Indeed, its center is nontrivial; if the center has order $p^2$ there is nothing to prove, while if it has order $p$, the quotient by the center is cyclic, which forces the group itself to be abelian.
+
+By Cauchy's theorem, $G/C$ has a subgroup $K/C$ of order $p$.
+Because $G/C$ is abelian, $K/C$ is normal in $G/C$.
+Its inverse image $K$ is therefore normal in $G$, and
+\[
+|K|=|C|\,|K/C|=p^2.
+\]
+This proves part (a).
+:::
+
+<1>2. In part (b)(i), the only possibility is $G\cong C_{p^3}$.
+::: {.proof}
+If $|g|=p^3$, then the cyclic subgroup $\langle g\rangle$ already has
+\[
+|\langle g\rangle|=p^3=|G|.
+\]
+Hence $G=\langle g\rangle$ and
+\[
+G\cong C_{p^3}.
+\]
+Conversely, the cyclic group $C_{p^3}$ has its unique subgroup of order $p^2$ as a cyclic normal subgroup, so this possibility occurs.
+:::
+
+<1>3. In part (b)(ii), $G$ is a semidirect product $C_{p^2}\rtimes C_p$.
+::: {.proof}
+Now assume $|g|=p$.
+Since $g\notin N$, the order-$p$ subgroup $\langle g\rangle$ is not contained in $N$, and therefore
+\[
+N\cap\langle g\rangle=1.
+\]
+Because $N\trianglelefteq G$, the product $N\langle g\rangle$ is a subgroup, and
+\[
+|N\langle g\rangle|
+=\frac{|N|\,|\langle g\rangle|}{|N\cap\langle g\rangle|}
+=p^3.
+\]
+Thus
+\[
+G=N\rtimes\langle g\rangle\cong C_{p^2}\rtimes C_p.
+\]
+
+Write $N=\langle n\rangle$.
+Conjugation by $g$ is determined by a unit $u\in(\mathbb Z/p^2\mathbb Z)^\times$ through
+\[
+gng^{-1}=n^u.
+\]
+Since $g^p=1$, the $p$th power of this automorphism is the identity, so
+\[
+u^p\equiv1\pmod{p^2}.
+\]
+:::
+
+<1>4. If $p$ is odd, part (b)(ii) gives exactly
+\[
+C_{p^2}\times C_p
+\quad\text{and}\quad
+C_{p^2}\rtimes C_p,
+\]
+where in the nontrivial product a generator of $C_p$ acts by $n\mapsto n^{1+p}$.
+::: {.proof}
+Assume $p$ is odd.
+Reducing $u^p\equiv1\pmod{p^2}$ modulo $p$ and using $u^p\equiv u\pmod p$ gives
+\[
+u\equiv1\pmod p.
+\]
+Hence
+\[
+u\equiv1+kp\pmod{p^2}
+\]
+for a unique $k\in\mathbb Z/p\mathbb Z$.
+
+If $k=0$, the action is trivial, so
+\[
+G\cong C_{p^2}\times C_p.
+\]
+If $k\ne0$, replace the generator $g$ of $\langle g\rangle$ by $g^a$, where
+\[
+ak\equiv1\pmod p.
+\]
+Then
+\[
+(1+kp)^a\equiv1+akp\equiv1+p\pmod{p^2},
+\]
+so every nontrivial action yields the same isomorphism type, with presentation
+\[
+\left\langle n,g\ \middle|\ n^{p^2}=g^p=1,\ gng^{-1}=n^{1+p}\right\rangle.
+\]
+The two groups are not isomorphic because the first is abelian and the second is not.
+:::
+
+<1>5. If $p=2$, part (b)(ii) gives exactly $C_4\times C_2$ and the dihedral group of order $8$.
+::: {.proof}
+For $p=2$,
+\[
+\operatorname{Aut}(C_4)\cong(\mathbb Z/4\mathbb Z)^\times=\{1,3\}.
+\]
+The trivial action gives
+\[
+C_4\times C_2.
+\]
+The unique nontrivial action is inversion,
+\[
+gng^{-1}=n^{-1},
+\]
+and the resulting presentation
+\[
+\langle n,g\mid n^4=g^2=1,\ gng^{-1}=n^{-1}\rangle
+\]
+is the dihedral group of order $8$.
+Thus these are precisely the possibilities in part (b)(ii).
+:::
 :::
