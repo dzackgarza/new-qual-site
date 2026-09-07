@@ -11,6 +11,18 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 4 of the official UCSD Algebra Qualifying Exam, Fall 2019 source; the matrix and both base-change assertions agree with the source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Verified F[a] is F[t]/(t^3-1), then used scalar extension and the two factorizations of t^3-1 according to whether the characteristic is 3.
 ---
 
 ::: problem
@@ -24,4 +36,111 @@ Suppose $\overline{F}$ is an algebraic closure of $F$.
 (a) Prove that $F[a] \otimes_F \overline{F} \simeq \overline{F} \oplus \overline{F} \oplus \overline{F}$ as $\overline{F}$-algebras if the characteristic of $F$ is not $3$.
 
 (b) Prove that $F[a] \otimes_F \overline{F} \simeq \overline{F}[x]/\langle x^3 \rangle$ as $\overline{F}$-algebras if the characteristic of $F$ is $3$.
+:::
+
+::: {.solution}
+<1>1. There is an $F$-algebra isomorphism
+\[
+F[a]\cong F[t]/(t^3-1).
+\]
+::: {.proof}
+Direct multiplication gives
+\[
+a^3=I_3.
+\]
+Hence evaluation at $a$ defines a surjective $F$-algebra homomorphism
+\[
+\varphi:F[t]/(t^3-1)\longrightarrow F[a].
+\]
+
+The matrices $I_3,a,a^2$ are linearly independent: their nonzero matrix entries occur in three pairwise disjoint sets of positions. Thus
+\[
+\dim_F F[a]\ge3.
+\]
+On the other hand $a^3=I_3$ shows that $F[a]$ is spanned by $I_3,a,a^2$, so
+\[
+\dim_F F[a]=3.
+\]
+The source $F[t]/(t^3-1)$ also has $F$-basis $1,t,t^2$. Therefore the surjective map $\varphi$ is an isomorphism.
+:::
+
+<1>2. After extending scalars to $\overline F$,
+\[
+F[a]\otimes_F\overline F
+\cong
+\overline F[t]/(t^3-1)
+\]
+as $\overline F$-algebras.
+::: {.proof}
+By <1>1 and the standard base-change identification for a polynomial quotient,
+\[
+\bigl(F[t]/(t^3-1)\bigr)\otimes_F\overline F
+\cong
+\overline F[t]/(t^3-1).
+\]
+Concretely, this sends
+\[
+(f(t)+(t^3-1))\otimes c
+\longmapsto
+c f(t)+(t^3-1),
+\]
+and is an isomorphism because both sides are free $\overline F$-modules with basis $1,t,t^2$ and the displayed map carries one basis to the other.
+:::
+
+<1>3. If $\operatorname{char}F\ne3$, then
+\[
+\overline F[t]/(t^3-1)
+\cong
+\overline F\oplus\overline F\oplus\overline F.
+\]
+::: {.proof}
+Since $\overline F$ is algebraically closed, $t^3-1$ splits completely over $\overline F$. Its derivative is
+\[
+3t^2.
+\]
+When $\operatorname{char}F\ne3$, no root of $t^3-1$ is a root of $3t^2$, because every root of $t^3-1$ is nonzero. Hence $t^3-1$ has three distinct roots $r_1,r_2,r_3\in\overline F$.
+Thus
+\[
+t^3-1=(t-r_1)(t-r_2)(t-r_3),
+\]
+with the three linear factors pairwise comaximal. The Chinese remainder theorem gives
+\[
+\overline F[t]/(t^3-1)
+\cong
+\bigoplus_{i=1}^3\overline F[t]/(t-r_i)
+\cong
+\overline F^{\oplus3}.
+\]
+Together with <1>2, this proves part (a).
+:::
+
+<1>4. If $\operatorname{char}F=3$, then
+\[
+\overline F[t]/(t^3-1)
+\cong
+\overline F[x]/(x^3).
+\]
+::: {.proof}
+In characteristic $3$,
+\[
+t^3-1=(t-1)^3.
+\]
+Therefore
+\[
+\overline F[t]/(t^3-1)
+=
+\overline F[t]/((t-1)^3).
+\]
+The change of variable
+\[
+x=t-1
+\]
+induces an $\overline F$-algebra isomorphism
+\[
+\overline F[t]/((t-1)^3)
+\cong
+\overline F[x]/(x^3).
+\]
+Combining this with <1>2 proves part (b).
+:::
 :::
