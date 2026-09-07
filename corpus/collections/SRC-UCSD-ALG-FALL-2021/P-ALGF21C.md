@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 3 of the official UCSD Algebra Qualifying Exam, Fall 2021 source; the cyclotomic-field statement and Galois-theory hint agree with the source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: "Rewrote the proof around the precise Galois-correspondence obstruction: every intermediate field of a finite abelian Galois extension is Galois, whereas Q(cuberoot 2)/Q is not normal."
 ---
 
 ::: problem
@@ -22,41 +30,94 @@ Prove that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta)$.
 *(Use the Fundamental Theorem of Galois Theory).*
 :::
 
-::: solution
-**Goal:** Prove that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta_n)$ by showing that $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is an abelian Galois extension, whereas $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ cannot embed into any abelian extension.
+::: {.solution}
+Set
+\[
+L=\mathbb Q(\zeta).
+\]
 
-<1>1. Galois Group of the Cyclotomic Extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$:
-    *Proof:*
-    <2>1. The cyclotomic extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is the splitting field of the cyclotomic polynomial $\Phi_n(x)$ over $\mathbb{Q}$.
-    <2>2. Thus $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is a **Galois extension**.
-    <2>3. Its Galois group is isomorphic to the multiplicative group of units modulo $n$:
-        $$\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times.$$
-    <2>4. Since $(\mathbb{Z}/n\mathbb{Z})^\times$ is a finite **abelian group**, $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is an **abelian Galois extension**.
+<1>1. The extension $L/\mathbb Q$ is finite abelian Galois.
+::: {.proof}
+The field $L$ is the splitting field over $\mathbb Q$ of the $n$th cyclotomic polynomial, so $L/\mathbb Q$ is finite Galois.
+Moreover,
+\[
+\operatorname{Gal}(L/\mathbb Q)
+\hookrightarrow
+(\mathbb Z/n\mathbb Z)^\times,
+\]
+indeed every automorphism is determined by
+\[
+\zeta\longmapsto\zeta^a
+\]
+for some $a$ prime to $n$.
+Hence $\operatorname{Gal}(L/\mathbb Q)$ is abelian.
+:::
 
-<1>2. Galois Subfield Property (Fundamental Theorem of Galois Theory):
-    *Proof:*
-    <2>1. By the **Fundamental Theorem of Galois Theory**, every intermediate subfield $K$ with $\mathbb{Q} \subseteq K \subseteq \mathbb{Q}(\zeta_n)$ corresponds to a subgroup $H = \operatorname{Gal}(\mathbb{Q}(\zeta_n)/K) \le \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$.
-    <2>2. Since the Galois group $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is abelian, **every subgroup $H$ is normal** ($H \trianglelefteq \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$).
-    <2>3. By Galois correspondence, $H \trianglelefteq \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ if and only if the intermediate field $K$ is a **Galois extension of $\mathbb{Q}$**.
-    <2>4. Therefore: **Every intermediate subfield $K \subseteq \mathbb{Q}(\zeta_n)$ must be Galois over $\mathbb{Q}$** (with abelian Galois group $\operatorname{Gal}(K/\mathbb{Q}) \cong \operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) / H$).
+<1>2. Every intermediate field
+\[
+\mathbb Q\subseteq E\subseteq L
+\]
+is Galois over $\mathbb Q$.
+::: {.proof}
+By the fundamental theorem of Galois theory,
+\[
+E=L^H
+\]
+for the subgroup
+\[
+H=\operatorname{Gal}(L/E)
+\le\operatorname{Gal}(L/\mathbb Q).
+\]
+By <1>1, the ambient Galois group is abelian, so every subgroup is normal.
+The Galois correspondence therefore implies that $E/\mathbb Q$ is Galois.
+:::
 
-<1>3. Non-Galois Property of the Cubic Field $\mathbb{Q}(\sqrt[3]{2})$:
-    *Proof:*
-    <2>1. Consider the field $L = \mathbb{Q}(\sqrt[3]{2})$.
-    <2>2. The minimal polynomial of $\sqrt[3]{2}$ over $\mathbb{Q}$ is $m(x) = x^3 - 2$, which is irreducible over $\mathbb{Q}$ by Eisenstein's Criterion at $p = 2$.
-    <2>3. The roots of $x^3 - 2$ in $\mathbb{C}$ are:
-        $$r_1 = \sqrt[3]{2} \in \mathbb{R}, \qquad r_2 = \sqrt[3]{2} e^{2\pi i/3} \notin \mathbb{R}, \qquad r_3 = \sqrt[3]{2} e^{4\pi i/3} \notin \mathbb{R}.$$
-    <2>4. Since $L = \mathbb{Q}(\sqrt[3]{2}) \subset \mathbb{R}$, $L$ contains the real root $r_1$, but does **not** contain the two non-real roots $r_2, r_3$.
-    <2>5. Thus $L$ is not a splitting field of the irreducible polynomial $x^3 - 2$.
-    <2>6. Therefore, $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ is **not a Galois extension**.
+<1>3. The extension
+\[
+\mathbb Q(\sqrt[3]{2})/\mathbb Q
+\]
+is not Galois.
+::: {.proof}
+The polynomial
+\[
+x^3-2
+\]
+is irreducible over $\mathbb Q$ by Eisenstein's criterion at $2$, so it is the minimal polynomial of $\sqrt[3]{2}$.
+Its three roots are
+\[
+\sqrt[3]{2},
+\qquad
+\omega\sqrt[3]{2},
+\qquad
+\omega^2\sqrt[3]{2},
+\]
+where $\omega$ is a primitive cube root of unity.
+The field $\mathbb Q(\sqrt[3]{2})$ is contained in $\mathbb R$, whereas the latter two roots are nonreal.
+Thus the minimal polynomial does not split over $\mathbb Q(\sqrt[3]{2})$, so this extension is not normal and hence is not Galois.
+:::
 
-<1>4. Obstruction / Conclusion:
-    *Proof:*
-    <2>1. If $\sqrt[3]{2} \in \mathbb{Q}(\zeta_n)$, then $\mathbb{Q}(\sqrt[3]{2})$ would be an intermediate subfield $\mathbb{Q} \subset \mathbb{Q}(\sqrt[3]{2}) \subseteq \mathbb{Q}(\zeta_n)$.
-    <2>2. By Step 2, this would force $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ to be a Galois extension.
-    <2>3. But Step 3 proved that $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ is not Galois.
-    <2>4. This contradiction shows that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta_n)$.
-
-<1>5. Conclusion:
-    $\sqrt[3]{2}$ does not lie in any cyclotomic field $\mathbb{Q}(\zeta_n)$. Q.E.D.
+<1>4. One has
+\[
+\sqrt[3]{2}\notin\mathbb Q(\zeta).
+\]
+::: {.proof}
+Suppose instead that
+\[
+\sqrt[3]{2}\in L.
+\]
+Then
+\[
+\mathbb Q
+\subseteq
+\mathbb Q(\sqrt[3]{2})
+\subseteq
+L.
+\]
+By <1>2, the intermediate extension $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ would be Galois.
+This contradicts <1>3.
+Therefore
+\[
+\sqrt[3]{2}\notin\mathbb Q(\zeta).
+\]
+:::
 :::
