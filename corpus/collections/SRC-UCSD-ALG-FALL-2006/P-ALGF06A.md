@@ -53,7 +53,8 @@ Because
 \[
 \operatorname{rank}N^*=\operatorname{rank}N=n-1,
 \]
-the nullspace of $N^*$ is one-dimensional. Choose
+the nullspace of $N^*$ is one-dimensional.
+Choose
 \[
 0\neq y\in\ker N^*.
 \]
@@ -76,7 +77,8 @@ Both spaces have dimension $n-1$, so
 \operatorname{Ran}N=\ker y^*.
 \]
 
-Suppose, toward a contradiction, that $y^*x=0$. Then
+Suppose, toward a contradiction, that $y^*x=0$.
+Then
 \[
 x\in\ker y^*=\operatorname{Ran}N,
 \]
@@ -92,7 +94,8 @@ Thus the generalized eigenspace
 \[
 \ker N^2
 \]
-has dimension at least $2$. The algebraic multiplicity of $\lambda$ is at least the dimension of every generalized-eigenspace stage, in particular
+has dimension at least $2$.
+The algebraic multiplicity of $\lambda$ is at least the dimension of every generalized-eigenspace stage, in particular
 \[
 \operatorname{am}(\lambda)\ge \dim\ker N^2\ge2,
 \]
@@ -126,7 +129,8 @@ Moreover,
 \[
 y^*P=(1\ \ 0\ \cdots\ 0).
 \]
-Hence the first row of $P^{-1}$ is $y^*$. Write the remaining rows as $Y^*$, so
+Hence the first row of $P^{-1}$ is $y^*$.
+Write the remaining rows as $Y^*$, so
 \[
 P^{-1}=
 \begin{pmatrix}
