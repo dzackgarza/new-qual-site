@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 5 of the official UCSD Algebra Qualifying Exam, Fall 2018 source; the statement agrees with the source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Verified that projective modules are direct summands of free modules, tensor products distribute over those direct sums, and the resulting ambient tensor product is free.
 ---
 
 ::: problem
