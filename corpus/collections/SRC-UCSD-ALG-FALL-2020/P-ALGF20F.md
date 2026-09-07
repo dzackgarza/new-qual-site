@@ -11,6 +11,18 @@ classification:
   - Localization
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Checked against Problem 6 of the official UCSD Algebra Qualifying Exam, Fall 2020 source; the localization hypothesis and suggested annihilator ideal agree with the source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-07
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-07
+  note: Verified that each localization forces a power of a_i into the annihilator ideal modulo N, whose radical then contains the unit ideal.
 ---
 
 ::: problem
@@ -20,4 +32,91 @@ For every $1 \leq i \leq n$, put $S_i = \{1, a_i, a_i^2, \ldots\}$.
 Let $M$ be an $A$-module with submodule $N$, and assume that for all $1 \leq i \leq n$ we have $S_i^{-1}M = S_i^{-1}N$.
 Prove that $N = M$.
 (Hint: for $x \in M$ consider $\{ a \in A \mid ax \in N \}$.)
+:::
+
+::: {.solution}
+Fix $x\in M$ and define
+\[
+I_x:=\{a\in A:ax\in N\}.
+\]
+
+<1>1. The subset $I_x$ is an ideal of $A$.
+::: {.proof}
+If $a,b\in I_x$, then
+\[
+(a-b)x=ax-bx\in N,
+\]
+so $a-b\in I_x$. If $r\in A$ and $a\in I_x$, then
+\[
+(ra)x=r(ax)\in N,
+\]
+so $ra\in I_x$. Thus $I_x\trianglelefteq A$.
+:::
+
+<1>2. For each $i$, some power of $a_i$ lies in $I_x$.
+::: {.proof}
+The equality
+\[
+S_i^{-1}M=S_i^{-1}N
+\]
+implies that the element $x/1\in S_i^{-1}M$ comes from $S_i^{-1}N$. Equivalently, its class in
+\[
+S_i^{-1}(M/N)
+\]
+is zero. By the defining zero criterion for localization, there exists
+\[
+s_i\in S_i
+\]
+such that
+\[
+s_i(x+N)=0
+\quad\text{in }M/N.
+\]
+Thus $s_i x\in N$. Since every element of $S_i$ has the form $a_i^{r_i}$ for some $r_i\ge0$, we obtain
+\[
+a_i^{r_i}\in I_x.
+\]
+Hence
+\[
+a_i\in\sqrt{I_x}
+\]
+for every $i$.
+:::
+
+<1>3. The radical of $I_x$ is the whole ring $A$.
+::: {.proof}
+By <1>2, the ideal $\sqrt{I_x}$ contains every generator $a_i$. Since
+\[
+(a_1,\ldots,a_n)=A,
+\]
+it follows that
+\[
+1\in(a_1,\ldots,a_n)\subseteq\sqrt{I_x}.
+\]
+Therefore
+\[
+\sqrt{I_x}=A.
+\]
+:::
+
+<1>4. The element $x$ lies in $N$.
+::: {.proof}
+By <1>3,
+\[
+1\in\sqrt{I_x}.
+\]
+By definition of the radical, some positive power of $1$ lies in $I_x$; hence
+\[
+1\in I_x.
+\]
+Therefore
+\[
+x=1\cdot x\in N.
+\]
+:::
+
+<1>5. Consequently $N=M$.
+::: {.proof}
+The element $x\in M$ was arbitrary, so <1>4 gives $M\subseteq N$. The reverse inclusion is part of the hypothesis that $N$ is a submodule of $M$. Hence $N=M$.
+:::
 :::
