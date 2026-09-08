@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANF
 kind: problem
-title: "be the unit circle with the usual Lebesgue measure. For each let be a nonnegativ"
+title: "Uniform convergence for an approximation to the identity on the circle"
 classification:
   areas:
   - real-analysis
@@ -11,15 +11,52 @@ classification:
   - Convolution
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 6 of the JHU Analysis Qualifying Exam, May 2009, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-6. Let $\mathbb { R } / \mathbb { Z }$ be the unit circle with the usual Lebesgue measure.
-   For each $n = 1 , 2 , 3 , . . .$ let $K _ { n } : \mathbb { R } / \mathbb { Z } \to \mathbb { R } _ { + }$ be a nonnegative integrable function such that $\begin{array} { r } { \int _ { \mathbb { R } / \mathbb { Z } } K _ { n } ( t ) d t = 1 } \end{array}$ and lim $\begin{array} { r } { { \bf \delta } _ { \cdot n \longrightarrow \infty } \int _ { \varepsilon \le | t | \le 1 / 2 } K _ { n } ( t ) d t = 0 } \end{array}$ for every $0 < \varepsilon < 1 / 2$ , where we identify R $/ \mathbb { Z }$ with $( - 1 / 2 , 1 / 2 ]$ in the usual way.
-   (Such a sequence of $K _ { n }$ are called approximations to the identity.)
-   Let $f : \mathbb { R } / \mathbb { Z } \to \mathbb { R }$ be continuous, and define the convolutions $f * K _ { n } : \mathbb { R } / \mathbb { Z } \to$ R by
+::: {.problem}
+Let $(K_n)$ be nonnegative integrable functions on $\mathbb R/\mathbb Z$ such that
+\[
+\int K_n=1
+\]
+and for every $0<\varepsilon<1/2$,
+\[
+\int_{\varepsilon\le |t|\le1/2}K_n(t)\,dt\longrightarrow0.
+\]
+For continuous $f$ on $\mathbb R/\mathbb Z$, prove that $f*K_n\to f$ uniformly.
+:::
 
-$$
-f * K _ { n } ( x ) = \int _ { \mathbb { R } / \mathbb { Z } } f ( x - t ) K _ { n } ( t ) d t .
-$$
-
-Show that $f * K _ { n }$ converges uniformly to $f$ .
+::: {.solution}
+Fix $\eta>0$. Since $f$ is continuous on the compact circle, it is uniformly continuous. Choose $0<\delta<1/2$ so that
+\[
+|f(x-t)-f(x)|<\frac{\eta}{2}
+\qquad(|t|<\delta)
+\]
+for every $x$. Then
+\[
+(f*K_n)(x)-f(x)=\int (f(x-t)-f(x))K_n(t)\,dt.
+\]
+Hence
+\[
+\begin{aligned}
+|(f*K_n)(x)-f(x)|
+&\le \int_{|t|<\delta}|f(x-t)-f(x)|K_n(t)\,dt\\
+&\quad+\int_{\delta\le|t|\le1/2}|f(x-t)-f(x)|K_n(t)\,dt\\
+&\le \frac{\eta}{2}+2\|f\|_\infty\int_{\delta\le|t|\le1/2}K_n(t)\,dt.
+\end{aligned}
+\]
+By the approximation-to-the-identity hypothesis, the final integral tends to $0$. Thus for all sufficiently large $n$, the right-hand side is $<\eta$, uniformly in $x$. Therefore
+\[
+\|f*K_n-f\|_\infty\longrightarrow0.
+\]
+:::
