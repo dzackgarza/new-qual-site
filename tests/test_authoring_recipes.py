@@ -8,6 +8,8 @@ import shutil
 import subprocess
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = ROOT / "tests" / "fixtures" / "kinds"
 
@@ -38,7 +40,7 @@ def test_live_scope_ignores_other_collections_and_tracks_new_solution(tmp_path: 
     assert [(row["id"], row["path"]) for row in rows(result.stdout)] == [("EXE-CENTER", "corpus/one exam/open card.md")]
     card = collection / "open card.md"
     source = card.read_text()
-    assert run(tmp_path, "just", "read-card", str(card)).stdout == source
+    assert run(tmp_path, "just", "read-card", str(card)).stdout.endswith(source)
     solution = (KINDS / "PRB-INDEXP.md").read_text().split("::: solution\n", 1)[1]
     card.write_text(source + "\n::: solution\n" + solution)
     assert rows(run(tmp_path, "just", "unsolved-in", str(collection)).stdout) == []
@@ -75,9 +77,57 @@ def test_card_commit_preserves_other_staged_work_and_skips_hook(tmp_path: Path) 
     run(tmp_path, "git", "add", str(other))
     index_before = run(tmp_path, "git", "diff", "--cached").stdout
     message = "docs: review one card's statement; $(literal)"
-    run(tmp_path, "just", "commit-card", str(target), message)
+    assert run(tmp_path, "just", "path-card", "EXE-CENTER").stdout.strip() == "corpus/one exam/open card.md"
+    assert "An authored remark." in run(tmp_path, "just", "diff-card", "EXE-CENTER").stdout
+    run(tmp_path, "just", "commit-card", "EXE-CENTER", message)
     assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == message
     assert run(tmp_path, "git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD").stdout.splitlines() == ["corpus/one exam/open card.md"]
     assert run(tmp_path, "git", "show", "HEAD:corpus/one exam/open card.md").stdout == target.read_text()
     assert run(tmp_path, "git", "diff", "--cached").stdout == index_before
     assert not (tmp_path / "hook-invoked").exists()
+
+
+def collection_workspace(root: Path) -> Path:
+    collection = workspace(root)
+    source = yaml.safe_load((KINDS / "SRC-NEILNOTES.md").read_text().split("---\n")[1])
+    source["source"]["sections"] = [
+        {"name": "Exam B (p. 9)", "problems": [{"id": "EXE-CENTER", "comment": "Problem 7"}, "PRB-INDEXP"]},
+        {"name": "Exam A (p. 2)", "problems": ["EXE-CENTER"]},
+    ]
+    source["provenance"] = ["assets/attachments/Exam packet.pdf", "https://example.invalid/exam"]
+    index = collection / "index.md"
+    index.write_text("---\n" + yaml.safe_dump(source, sort_keys=False) + "---\n")
+    elsewhere = root / "corpus" / "another directory"
+    elsewhere.mkdir()
+    (collection / "open card.md").rename(elsewhere / "arbitrary filename.md")
+    extraction = root / "assets" / "attachments" / "extracted" / "Exam packet.md"
+    extraction.parent.mkdir(parents=True)
+    extraction.write_text("Preserved exam extraction\n")
+    return index
+
+
+def test_collection_listing_follows_membership_order_and_live_solutions(tmp_path: Path) -> None:
+    index = collection_workspace(tmp_path)
+    listing = rows(run(tmp_path, "just", "list-cards", "SRC-NEILNOTES").stdout)
+    assert [(row["id"], row["section"], row["position"], row["comment"]) for row in listing] == [
+        ("EXE-CENTER", "Exam B (p. 9)", "1", "Problem 7"),
+        ("PRB-INDEXP", "Exam B (p. 9)", "2", ""),
+        ("EXE-CENTER", "Exam A (p. 2)", "1", ""),
+    ]
+    assert listing[0]["path"] == "corpus/another directory/arbitrary filename.md"
+    assert [row["id"] for row in rows(run(tmp_path, "just", "unsolved-in", str(index.parent), "Exam B (p. 9)").stdout)] == ["EXE-CENTER"]
+    card = tmp_path / listing[0]["path"]
+    solution = (KINDS / "PRB-INDEXP.md").read_text().split("::: solution\n", 1)[1]
+    card.write_text(card.read_text() + "\n::: solution\n" + solution)
+    assert rows(run(tmp_path, "just", "unsolved-in", "SRC-NEILNOTES").stdout) == []
+    assert not (tmp_path / "build").exists()
+
+
+def test_read_by_id_includes_all_appearances_sources_and_exact_card(tmp_path: Path) -> None:
+    collection_workspace(tmp_path)
+    card = tmp_path / "corpus" / "another directory" / "arbitrary filename.md"
+    result = run(tmp_path, "just", "read-card", "EXE-CENTER").stdout
+    assert result.endswith(card.read_text())
+    for recorded in ("SRC-NEILNOTES", "Exam B (p. 9)", "Exam A (p. 2)", "Problem 7", "assets/attachments/Exam packet.pdf", "assets/attachments/extracted/Exam packet.md", "https://example.invalid/exam"):
+        assert recorded in result
+    assert "EXE-CENTER: schema and Markdown parsing OK" in run(tmp_path, "just", "check-card", "EXE-CENTER").stdout
