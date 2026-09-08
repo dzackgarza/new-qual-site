@@ -41,7 +41,7 @@ T_n(g)=\sum_{k=1}^\infty f_n(k)g(k).
 \]
 Then $T_n$ is bounded and
 \[
-\|T_n\|=(\|f_n\|_p).
+\|T_n\|=\|f_n\|_p.
 \]
 For every fixed $g\in\ell^q$, weak convergence gives
 \[
