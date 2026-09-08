@@ -35,9 +35,7 @@ def test_live_scope_ignores_other_collections_and_tracks_new_solution(tmp_path: 
     collection = workspace(tmp_path)
     (tmp_path / "corpus" / "unrelated-invalid.md").write_text("not a card")
     result = run(tmp_path, "just", "unsolved-in", str(collection))
-    assert [(row["id"], row["path"]) for row in rows(result.stdout)] == [
-        ("EXE-CENTER", "corpus/one exam/open card.md")
-    ]
+    assert [(row["id"], row["path"]) for row in rows(result.stdout)] == [("EXE-CENTER", "corpus/one exam/open card.md")]
     card = collection / "open card.md"
     source = card.read_text()
     assert run(tmp_path, "just", "read-card", str(card)).stdout == source
@@ -79,9 +77,7 @@ def test_card_commit_preserves_other_staged_work_and_skips_hook(tmp_path: Path) 
     message = "docs: review one card's statement; $(literal)"
     run(tmp_path, "just", "commit-card", str(target), message)
     assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == message
-    assert run(tmp_path, "git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD").stdout.splitlines() == [
-        "corpus/one exam/open card.md"
-    ]
+    assert run(tmp_path, "git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD").stdout.splitlines() == ["corpus/one exam/open card.md"]
     assert run(tmp_path, "git", "show", "HEAD:corpus/one exam/open card.md").stdout == target.read_text()
     assert run(tmp_path, "git", "diff", "--cached").stdout == index_before
     assert not (tmp_path / "hook-invoked").exists()

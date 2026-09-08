@@ -38,8 +38,8 @@ Each guide follows a subject path from core definitions and theorems to exam pro
 
 ## Author
 
-Work through a collection in one session, reading, writing, reviewing, and
-committing each card separately. Run these recipes from the repository root:
+Work through a collection in one session, reading, writing, reviewing, and committing each card separately.
+Run these recipes from the repository root:
 
 | Command | Use |
 | --- | --- |
@@ -49,18 +49,14 @@ committing each card separately. Run these recipes from the repository root:
 | `just check-card PATH` | Optionally check that one card's schema and Markdown parse. |
 | `just commit-card PATH "sol(algebra): explain the result and proof"` | Commit exactly that reviewed, tracked card using the prose-only exemption; leave unrelated staged work intact. |
 
-Read the collection index and relevant source material, retain that context, and
-proceed through its authored problem order. The live directory scan reports a measurement;
-it does not decide whether a solution is correct, whether a review is complete,
-or which problem to work on. Repeat it when you need fresh candidates, not after
-every card.
+Read the collection index and relevant source material, retain that context, and proceed through its authored problem order.
+The live directory scan reports a measurement; it does not decide whether a solution is correct, whether a review is complete, or which problem to work on.
+Repeat it when you need fresh candidates, not after every card.
 
-`just sample-unsolved DIRECTORY 5` samples up to five current candidates from
-that corpus directory. Both selection recipes read authored files directly;
-they need no compiled catalog or generated queue. A directory scan is not a
-collection-membership audit: the collection index owns its source order and
-may also reference cards stored elsewhere.
+`just sample-unsolved DIRECTORY 5` samples up to five current candidates from that corpus directory.
+Both selection recipes read authored files directly; they need no compiled catalog or generated queue.
+A directory scan is not a collection-membership audit: the collection index owns its source order and may also reference cards stored elsewhere.
 
-The authoring recipes do not rebuild the site or refresh global queues. Keep
-code and renderer changes on the normal verification path. Mathematical review
-remains the author's responsibility, including when the single-card check passes.
+The authoring recipes do not rebuild the site or refresh global queues.
+Keep code and renderer changes on the normal verification path.
+Mathematical review remains the author's responsibility, including when the single-card check passes.
