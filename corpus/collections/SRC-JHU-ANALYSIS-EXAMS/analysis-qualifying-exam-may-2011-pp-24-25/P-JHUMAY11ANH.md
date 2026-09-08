@@ -10,24 +10,48 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 8 of the JHU Analysis Qualifying Exam, May 2011, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-8. a) Let $f _ { j } : \mathbb { R } ^ { n } \longrightarrow \mathbb { R }$ , for $j = 1 , 2 , \dots$ , be a sequence of $L ^ { 2 }$ functions.
-   Suppose that there is a function $f \in L ^ { 2 } ( \mathbb { R } ^ { n } )$ such that
+::: {.problem}
+Suppose $f_j\rightharpoonup f$ weakly in $L^2(\mathbb R^n)$.
 
-$$
-\int _ { \mathbb { R } ^ { n } } f _ { j } g \to \int _ { \mathbb { R } ^ { n } } f g , \quad \forall g \in L ^ { 2 } ( \mathbb { R } ^ { n } ) .
-$$
+(a) Prove
+\[
+\|f\|_2\le\liminf_j\|f_j\|_2,
+\]
+and give an example of strict inequality.
 
-Show that
+(b) If $\|f_j\|_2\to\|f\|_2$, prove $\|f_j-f\|_2\to0$.
+:::
 
-$$
-\| f \| _ { 2 } \leq \operatorname* { l i m } _ { j \to \infty } \| f _ { j } \| _ { 2 } .
-$$
+::: {.solution}
+If $f\ne0$, test weak convergence against $g=f/\|f\|_2$. Then
+\[
+\|f\|_2=\lim_j|\langle f_j,g\rangle|\le\liminf_j\|f_j\|_2.
+\]
+The case $f=0$ is immediate.
 
-Also, give an example showing that strict inequality can occur.
+Strict inequality occurs for any orthonormal sequence $(e_j)$: one has $e_j\rightharpoonup0$ by Bessel's inequality, while $\|e_j\|_2=1$.
 
-b) Suppose also that $\| f _ { j } \| _ { 2 } \to \| f \| _ { 2 }$ . Show that in this case $\| f _ { j } - f \| _ { 2 } \to 0 { \mathrm { ~ a s ~ } } j \to \infty .$
-
-Instructions: Do all eight problems.
-Each problem will be scored out of 10 points.
+For part (b), weak convergence gives
+\[
+\langle f_j,f\rangle\to\|f\|_2^2.
+\]
+Hence
+\[
+\|f_j-f\|_2^2
+=\|f_j\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_j,f\rangle\longrightarrow0.
+\]
+Thus $f_j\to f$ strongly in $L^2$.
+:::
