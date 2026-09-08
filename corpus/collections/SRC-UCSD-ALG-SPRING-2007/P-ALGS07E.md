@@ -43,9 +43,11 @@ x\longmapsto x^p,
 is surjective.
 :::
 
-<1>2. Fix $\alpha\in E$ and put $K=F(\alpha)$. Then $K/F$ is finite.
+<1>2. Fix $\alpha\in E$ and put $K=F(\alpha)$.
+Then $K/F$ is finite.
 ::: {.proof}
-The extension $E/F$ is algebraic, so $\alpha$ is algebraic over $F$. Hence
+The extension $E/F$ is algebraic, so $\alpha$ is algebraic over $F$.
+Hence
 \[
 [K:F]=[F(\alpha):F]<\infty.
 \]
@@ -59,7 +61,8 @@ Suppose
 \sum_{i=1}^n c_i e_i^p=0,
 \qquad c_i\in F.
 \]
-Since $F$ is perfect, Frobenius on $F$ is surjective. Choose $d_i\in F$ with
+Since $F$ is perfect, Frobenius on $F$ is surjective.
+Choose $d_i\in F$ with
 \[
 d_i^p=c_i.
 \]
@@ -79,12 +82,14 @@ Thus $e_1^p,\ldots,e_n^p$ is an $F$-basis of $K$.
 
 <1>4. Frobenius on $K$ is surjective.
 ::: {.proof}
-Let $y\in K$. By <1>3, write
+Let $y\in K$.
+By <1>3, write
 \[
 y=\sum_{i=1}^n c_i e_i^p,
 \qquad c_i\in F.
 \]
-Again using perfection of $F$, choose $d_i\in F$ with $d_i^p=c_i$. Then
+Again using perfection of $F$, choose $d_i\in F$ with $d_i^p=c_i$.
+Then
 \[
 y
 =\sum_{i=1}^n d_i^p e_i^p
@@ -95,10 +100,12 @@ Thus $y$ is a $p$th power of an element of $K$.
 
 <1>5. Therefore Frobenius on $E$ is surjective, so $E$ is perfect.
 ::: {.proof}
-Apply <1>4 to $y=\alpha$. There is $\beta\in K\subseteq E$ such that
+Apply <1>4 to $y=\alpha$.
+There is $\beta\in K\subseteq E$ such that
 \[
 \beta^p=\alpha.
 \]
-Since $\alpha\in E$ was arbitrary, every element of $E$ has a $p$th root in $E$. Hence Frobenius on $E$ is surjective, and $E$ is perfect.
+Since $\alpha\in E$ was arbitrary, every element of $E$ has a $p$th root in $E$.
+Hence Frobenius on $E$ is surjective, and $E$ is perfect.
 :::
 :::
