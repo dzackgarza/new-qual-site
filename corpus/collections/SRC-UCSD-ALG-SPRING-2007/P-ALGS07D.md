@@ -54,7 +54,8 @@ Define
 \qquad
 r+(I+J)\longmapsto (r+I)\otimes(1+J).
 \]
-If $r\in I+J$, write $r=i+j$ with $i\in I$ and $j\in J$. Then
+If $r\in I+J$, write $r=i+j$ with $i\in I$ and $j\in J$.
+Then
 \[
 (i+I)\otimes(1+J)=0,
 \qquad
