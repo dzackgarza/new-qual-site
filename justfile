@@ -21,6 +21,31 @@ check-card path:
         'import sys; from pathlib import Path; from qualc.model import parse_card; card = parse_card(Path(sys.argv[1])); print(f"{card.card.id}: schema and Markdown parsing OK (single card)")' \
         {{quote(path)}}
 
+# List live cards without solution sections in one corpus directory (TSV)
+unsolved-in directory:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring unsolved {{quote(directory)}}
+
+# Read the complete authored card or collection, without parsing or rebuilding
+read-card path:
+    @cat -- {{quote(path)}}
+
+# Inspect one card's changes against its last commit, including staged edits
+diff-card path:
+    @git --literal-pathspecs diff HEAD -- {{quote(path)}}
+
+# Commit one reviewed prose card without hooks; preserve other staged work
+commit-card path message:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    card_path=$(realpath --relative-to="$(git rev-parse --show-toplevel)" -- {{quote(path)}})
+    case "$card_path" in
+        corpus/*.md) ;;
+        *) echo "commit-card requires a Markdown card under corpus/" >&2; exit 1 ;;
+    esac
+    test -f "$card_path"
+    git --literal-pathspecs ls-files --error-unmatch -- "$card_path"
+    git --literal-pathspecs commit --only --no-verify -m {{quote(message)}} -- "$card_path"
+
 # Report wiki filesystem measurements as candidates to read (not a gate)
 doctor *args:
     uv run python tools/wiki_doctor.py {{ args }}
@@ -64,9 +89,9 @@ complete *args:
 backlog:
     uv run python tools/backlog.py
 
-# Print n random unsolved problem/exercise cards: no solution section
-sample-unsolved n="5": build
-    @sqlite3 -box build/catalog.sqlite "select id from cards where kind in ('problem', 'exercise') and id not in (select card_id from sections where section_kind = 'solution') order by random() limit {{ n }}"
+# Sample up to n live cards without solution sections in one corpus directory
+sample-unsolved directory n="5":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring sample {{quote(directory)}} {{quote(n)}}
 
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:

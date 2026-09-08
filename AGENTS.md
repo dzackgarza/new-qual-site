@@ -288,6 +288,13 @@ checklist in order, one item at a time. Read the source mathematics and the
 relevant existing cards before each change. Make an independent curation
 decision for that item. Verify the completed item before starting the next one.
 
+One item at a time is a sequencing rule, not a limit on work per session or
+turn. Continue through the assigned collection or queue in the same session,
+committing each completed card before advancing. Retain the source context
+and the next-card position; stop only at the assigned scope boundary, a real
+blocker, or the harness limit. A completed card does not require a handoff or
+another user prompt.
+
 Do not use scripts, loops, templates, bulk edits, or generators to produce
 authored data. Never derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
@@ -626,12 +633,31 @@ disposition, so record the reason in `TODO.md`.
 
 # Running checks
 
-For prose-only changes, including authored mathematical solutions, inspect the
-diff and review the mathematics, then use `git commit --no-verify`. Commit each
-completed card before selecting the next one. This is the authorized docs-only
-exemption from automated verification, including the Git skill's hook rule.
-Do not run builds, test suites, broad formatters, or queue regeneration for
-these commits. Adding a solution and its audit entry is authored content.
+Use the [authoring recipes](README.md#author) for the solution loop:
+
+1. Read the collection index and source. Use `just unsolved-in DIRECTORY` once
+   for live candidates in that collection directory; retain a checklist in
+   authored source order. For an audit, also review the assigned solved cards.
+2. Use `just read-card PATH` to read each complete card, then author and
+   independently review its mathematics. Keep shared source context across cards.
+3. Use `just diff-card PATH` to inspect the full change. When a parsing or
+   schema check is useful, use `just check-card PATH`; it is optional and
+   does not establish mathematical correctness or cross-card consistency.
+4. Use `just commit-card PATH "message"` for that reviewed, tracked card,
+   including its authored audit entries. This uses the authorized docs-only
+   exemption (`git commit --only --no-verify`) and preserves other staged work.
+5. Continue immediately with the next card in the same session.
+
+The recipes are the hot path. Do not add builds, broad formatting, queue
+regeneration, or normal commit gates to a prose-only card cycle. Keep code
+changes out of `commit-card`. Its path restriction identifies a corpus file;
+the author must still ensure the change is prose-only and belongs to this task.
+
+On resumption, read these instructions and reconcile the last card once against
+Git before continuing. If an earlier command is still running, await its
+returned terminal session; do not launch overlapping sleep/poll commands or
+duplicate commit attempts. A formatting-only working-tree diff does not mean
+the mathematical solution failed to commit.
 
 Code, renderer, schema, executable configuration, and mixed code/content
 changes use the normal commit and push gates. Use focused checks while
@@ -730,8 +756,10 @@ workflow are deliberately separate:
   card, and commit it before selecting the next card using the prose-only
   route in [Running checks](#running-checks).
 
-`just sample-unsolved` draws n random unsolved cards (default 5) by querying
-the catalog for problem cards with no solution section. The solution
+`just sample-unsolved DIRECTORY N` samples up to N current candidate cards
+(default 5) within that corpus directory. `just unsolved-in DIRECTORY` lists
+all current candidates there. Both report solution-section absence using the
+card parser, without building the catalog or refreshing queues. The solution
 authoring workflow is recorded in `TODO.md` under
 [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), and the
 solution-sheet routing ledgers live in
