@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -53,8 +59,7 @@ $\QQ(\alpha) \subseteq \RR$ (since $\alpha$ is real), but $\zeta_6 = \frac{1}{2}
 $K/\QQ$ is Galois (splitting field of a separable polynomial) and $[K:\QQ] = 12$ by <1>5.
 :::
 
-<1>7. $\operatorname{Gal}(K/\QQ) \cong D_6$ (the dihedral group of order $12$).
-<2>1. An automorphism is determined by $\alpha \mapsto \alpha \zeta_6^a$ and $\zeta_6 \mapsto \zeta_6^b$ with $a \in \{0,\ldots,5\}$ and $b \in \{1, 5\}$.
+<1>7. $\operatorname{Gal}(K/\QQ) \cong D_6$ (the dihedral group of order $12$). <2>1. An automorphism is determined by $\alpha \mapsto \alpha \zeta_6^a$ and $\zeta_6 \mapsto \zeta_6^b$ with $a \in \{0,\ldots,5\}$ and $b \in \{1, 5\}$.
 ::: {.proof}
 $\alpha$ must map to a root of $f$, and $\zeta_6$ to a primitive sixth root of unity.
 :::
