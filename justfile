@@ -15,6 +15,12 @@ default:
 check:
     uv run qualc check
 
+# Parse one card and validate its schema (no cross-card or mathematical review)
+check-card path:
+    @uv run python -c \
+        'import sys; from pathlib import Path; from qualc.model import parse_card; card = parse_card(Path(sys.argv[1])); print(f"{card.card.id}: schema and Markdown parsing OK (single card)")' \
+        {{quote(path)}}
+
 # Report wiki filesystem measurements as candidates to read (not a gate)
 doctor *args:
     uv run python tools/wiki_doctor.py {{ args }}
