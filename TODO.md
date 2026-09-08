@@ -1,5 +1,35 @@
 # Outstanding work
 
+## Execution DAG
+
+The active solution tasks in [Author solutions](#7-author-solutions) carry stable
+IDs and immediate **Needs** lists. A prerequisite `A` on task `B` means `A -> B`.
+`none` denotes a ready root. Each instance is keyed by its actual card ID:
+`select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`,
+and `commit:P-…`. Names in Needs refer to the same card's instance.
+
+This is a finite DAG for each selected collection's authored card population.
+Returning to selection creates an instance for a different card, not a back-edge
+from commit to the same select node. Work one card at a time in source order;
+independent subject worktrees may work on different cards. Use the existing
+collection checklist and card audit/commit evidence, not a second status ledger.
+
+The source-review prerequisite applies when incorporating a source solution;
+for an original proof it has no source-solution input to review. Source reading
+and review of the authored proof remain required in either case.
+
+The issue log and checked entries below retain their existing evidence and
+dispositions; this graph does not recertify them or reopen completed tasks.
+For an additional selected repair, use its issue or card ID, name its immediate
+Needs and acceptance beside the existing item, and link its complaint. An
+unfinished source correction needed by a proof must precede that card's proof;
+an unrelated renderer or subject issue does not block solution authorship.
+Before committing a dependency change, verify unique IDs, resolved references,
+and absence of cycles. Preserve the complete mathematical obligation.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
+arise in [COMPLAINTS.md](COMPLAINTS.md).
+
 ## Content issues and policy violations build log
 
 Built log from live GH issues and local queue logs.
@@ -1231,17 +1261,17 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] Select one unsolved card.
+- [ ] **`select`**. **Needs:** none. Select one unsolved card.
 
-- [ ] Read the problem and its source.
+- [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
 
-- [ ] Write a complete Lamport-style structured proof.
+- [ ] **`prove`**. **Needs:** `read`, `source-review`. Write a complete Lamport-style structured proof.
 
-- [ ] Add a `solution` section to the card.
+- [ ] **`attach`**. **Needs:** `prove`. Add a `solution` section to the card.
 
-- [ ] Integrate a source solution only after independent mathematical review.
+- [ ] **`source-review`**. **Needs:** `read`. Integrate a source solution only after independent mathematical review.
 
-- [ ] Commit the completed solution before selecting another card.
+- [ ] **`commit`**. **Needs:** `attach`. Review the complete authored proof and commit the completed solution before selecting another card.
 
 ## 8. Close the roadmap
 
