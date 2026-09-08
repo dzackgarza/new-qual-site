@@ -11,6 +11,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Compared with Problem 2 of Part II of the official UCSD Spring 2009 Applied Algebra qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Verified homogeneity degree and the Vandermonde Jacobian identity, including the sign convention by the n=2 case.
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
