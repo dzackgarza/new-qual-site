@@ -11,20 +11,58 @@ classification:
   - Convergence Theorems
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 7 of the JHU Analysis Qualifying Exam, May 2009, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-7. Fix $1 \leq p < \infty$ and let $\{ f _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of Lebesgue measurable functions $f _ { n } : [ 0 , 1 ] \to \mathbb { C }$ . Suppose there exists $f \in L ^ { p } ( [ 0 , 1 ] )$ such that $f _ { n }  f$ in $L ^ { p }$ , that is,
+::: {.problem}
+Let $1\le p<\infty$ and suppose $f_n\to f$ in $L^p([0,1])$.
 
-$$
-\int _ { [ 0 , 1 ] } | f _ { n } ( x ) - f ( x ) | ^ { p } d x \to 0 .
-$$
+(a) Prove that $f_n\to f$ in measure.
 
-a) Show that $f _ { n } \to f$ in measure, that is,
+(b) Prove that some subsequence converges to $f$ almost everywhere.
+:::
 
-$$
-\operatorname* { l i m } _ { n \to \infty } \mu ( \{ x \in [ 0 , 1 ] : | f _ { n } ( x ) - f ( x ) | \geq \varepsilon \} ) = 0
-$$
+::: {.solution}
+<1>1. Convergence in measure.
+::: {.proof}
+Fix $\varepsilon>0$. By Chebyshev's inequality,
+\[
+\mu\{|f_n-f|\ge\varepsilon\}
+\le \frac1{\varepsilon^p}\int_0^1|f_n-f|^p\,dx.
+\]
+The right-hand side tends to $0$ because $f_n\to f$ in $L^p$. Hence $f_n\to f$ in measure.
+:::
 
-for all $\varepsilon > 0$ . (Here $\mu = \mathrm { L e b e s g u e }$ measure.)
-
-b) Show that there is a subsequence $f _ { n _ { k } }$ such that $f _ { n _ { k } } ( x )  f ( x )$ almost everywhere.
+<1>2. An almost-everywhere convergent subsequence.
+::: {.proof}
+Choose a subsequence $(f_{n_k})$ such that
+\[
+\|f_{n_k}-f\|_p^p\le2^{-k}.
+\]
+Then
+\[
+\int_0^1\sum_{k=1}^\infty |f_{n_k}(x)-f(x)|^p\,dx
+=\sum_{k=1}^\infty\|f_{n_k}-f\|_p^p
+\le1.
+\]
+By Tonelli's theorem,
+\[
+\sum_{k=1}^\infty |f_{n_k}(x)-f(x)|^p<\infty
+\]
+for almost every $x$. Therefore its terms tend to zero, so
+\[
+f_{n_k}(x)\longrightarrow f(x)
+\]
+for almost every $x\in[0,1]$.
+:::
+:::
