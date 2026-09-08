@@ -15,36 +15,33 @@ default:
 check:
     uv run qualc check
 
-# Parse one card and validate its schema (no cross-card or mathematical review)
-check-card path:
-    @uv run python -c \
-        'import sys; from pathlib import Path; from qualc.model import parse_card; card = parse_card(Path(sys.argv[1])); print(f"{card.card.id}: schema and Markdown parsing OK (single card)")' \
-        {{quote(path)}}
+# Resolve a card ID or path to its current editable corpus path
+path-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring path {{quote(card)}}
 
-# List live cards without solution sections in one corpus directory (TSV)
-unsolved-in directory:
-    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring unsolved {{quote(directory)}}
+# Parse one card by ID or path (no cross-card or mathematical review)
+check-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check {{quote(card)}}
 
-# Read the complete authored card or collection, without parsing or rebuilding
-read-card path:
-    @cat -- {{quote(path)}}
+# List authored collection appearances in source order, optionally in one section
+list-cards collection section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring list {{quote(collection)}} {{quote(section)}}
+
+# List collection appearances without solution sections, in authored source order
+unsolved-in collection section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring unsolved {{quote(collection)}} {{quote(section)}}
+
+# Read a card by ID or path, with its recorded appearances and source resources
+read-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring read {{quote(card)}}
 
 # Inspect one card's changes against its last commit, including staged edits
-diff-card path:
-    @git --literal-pathspecs diff HEAD -- {{quote(path)}}
+diff-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
 # Commit one reviewed prose card without hooks; preserve other staged work
-commit-card path message:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    card_path=$(realpath --relative-to="$(git rev-parse --show-toplevel)" -- {{quote(path)}})
-    case "$card_path" in
-        corpus/*.md) ;;
-        *) echo "commit-card requires a Markdown card under corpus/" >&2; exit 1 ;;
-    esac
-    test -f "$card_path"
-    git --literal-pathspecs ls-files --error-unmatch -- "$card_path"
-    git --literal-pathspecs commit --only --no-verify -m {{quote(message)}} -- "$card_path"
+commit-card card message:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 
 # Report wiki filesystem measurements as candidates to read (not a gate)
 doctor *args:
@@ -89,9 +86,9 @@ complete *args:
 backlog:
     uv run python tools/backlog.py
 
-# Sample up to n live cards without solution sections in one corpus directory
-sample-unsolved directory n="5":
-    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring sample {{quote(directory)}} {{quote(n)}}
+# Sample up to n unsolved card IDs and show their appearances in source order
+sample-unsolved collection n="5" section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring sample {{quote(collection)}} {{quote(n)}} {{quote(section)}}
 
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:

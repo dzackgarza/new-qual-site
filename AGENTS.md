@@ -635,18 +635,29 @@ disposition, so record the reason in `TODO.md`.
 
 Use the [authoring recipes](README.md#author) for the solution loop:
 
-1. Read the collection index and source. Use `just unsolved-in DIRECTORY` once
-   for live candidates in that collection directory; retain a checklist in
-   authored source order. For an audit, also review the assigned solved cards.
-2. Use `just read-card PATH` to read each complete card, then author and
-   independently review its mathematics. Keep shared source context across cards.
-3. Use `just diff-card PATH` to inspect the full change. When a parsing or
-   schema check is useful, use `just check-card PATH`; it is optional and
+1. Use `just list-cards COLLECTION` for the authored checklist, or
+   `just unsolved-in COLLECTION` for live solution-section absences. Append an
+   exact section name to scope an exam inside a packet. These commands follow
+   authored membership and order, including cards stored elsewhere and nested
+   collections. For an audit, include the assigned solved cards.
+2. Use `just read-card ID` to read the complete card and its recorded collection
+   appearances, section/page locators, source links, and existing extraction
+   links. Read the relevant source material and retain shared context across
+   cards. Use `just path-card ID` when an editor needs the file path; author and
+   independently review each card's mathematics.
+3. Use `just diff-card ID` to inspect the full change. When a parsing or
+   schema check is useful, use `just check-card ID`; it is optional and
    does not establish mathematical correctness or cross-card consistency.
-4. Use `just commit-card PATH "message"` for that reviewed, tracked card,
+4. Use `just commit-card ID "message"` for that reviewed, tracked card,
    including its authored audit entries. This uses the authorized docs-only
    exemption (`git commit --only --no-verify`) and preserves other staged work.
 5. Continue immediately with the next card in the same session.
+
+Card arguments accept IDs or corpus Markdown paths. Collection arguments accept
+IDs, index paths, or directories containing `index.md`. Use the returned paths
+and source context instead of repeating filesystem searches. Listing positions
+are authored list positions; only authored comments and section names supply
+exam locators. Terminal context is not text to copy into the public card.
 
 The recipes are the hot path. Do not add builds, broad formatting, queue
 regeneration, or normal commit gates to a prose-only card cycle. Keep code
@@ -756,10 +767,13 @@ workflow are deliberately separate:
   card, and commit it before selecting the next card using the prose-only
   route in [Running checks](#running-checks).
 
-`just sample-unsolved DIRECTORY N` samples up to N current candidate cards
-(default 5) within that corpus directory. `just unsolved-in DIRECTORY` lists
-all current candidates there. Both report solution-section absence using the
-card parser, without building the catalog or refreshing queues. The solution
+`just sample-unsolved COLLECTION N` samples up to N distinct current candidate
+IDs (default 5) and lists their authored appearances in source order.
+`just unsolved-in COLLECTION` lists all current candidate appearances there;
+`just list-cards COLLECTION` includes solved cards for audit work. An exact
+section name may follow the collection (or sample count). Solution-section
+absence is measured using the card parser, without building the catalog or
+refreshing queues. The solution
 authoring workflow is recorded in `TODO.md` under
 [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), and the
 solution-sheet routing ledgers live in
