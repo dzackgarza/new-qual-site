@@ -1,3 +1,12 @@
+# Repository work documents
+
+Read [TODO.md](TODO.md) for the task DAG,
+[CONTRIBUTING.md](CONTRIBUTING.md#named-policies) for named contribution policies,
+and [COMPLAINTS.md](COMPLAINTS.md) for mathematical issues and workflow papercuts.
+Apply `QUAL-05` when a problem is encountered, including outside the selected card.
+Record the evidence before leaving that work; logging does not complete a repair.
+These documents apply in subject worktrees as well as the main checkout.
+
 <!-- agent-memory:start -->
 # Agent memory
 
