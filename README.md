@@ -52,8 +52,7 @@ Run these recipes from the repository root:
 | `just commit-card P-ALGS15F "sol(algebra): explain the result and proof"` | Commit exactly that reviewed, tracked card using the prose-only exemption; leave unrelated staged work intact. |
 
 Card recipes accept an ID or a corpus Markdown path.
-Collection recipes accept a collection ID, its index path, or its directory containing `index.md`.
-To work on one exam inside a packet, append its exact authored section name:
+Collection recipes accept a collection ID, its index path, or its directory containing `index.md`. To work on one exam inside a packet, append its exact authored section name:
 
 ```sh
 just list-cards SRC-JHU-ANALYSIS-EXAMS 'ANALYSIS QUALIFYING EXAM, SEPTEMBER 2005 (pp. 42–43)'
