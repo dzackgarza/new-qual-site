@@ -12,16 +12,25 @@ classification:
   - Density
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 5 of the TAMU Real Variables qualifying examination dated August 7, 2016, in the preserved Texas solution compilation.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Existing solution is correct; it improves on the preserved source by using uniform continuity of a compactly supported continuous approximant rather than an inapplicable appeal to Dini's theorem. Normalized the solution block so repository tooling recognizes the card as solved.
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\mathbb{R})$. Show that
 $$
 \lim_{x \to 0} \int_{\mathbb{R}} |f(y - x) - f(y)| \, dy = 0.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the continuity of translations in $L^1(\mathbb{R})$ using the density of $C_c(\mathbb{R})$ in $L^1(\mathbb{R})$ and the uniform continuity of compactly supported continuous functions.
 
 <1>1. Approximation by compactly supported continuous functions:
@@ -68,4 +77,3 @@ $$
     <2>2. Since $\varepsilon > 0$ was arbitrary, $\lim_{x \to 0} \int_{\mathbb{R}} |f(y - x) - f(y)| \, dy = 0$.
 :::
 :::
-
