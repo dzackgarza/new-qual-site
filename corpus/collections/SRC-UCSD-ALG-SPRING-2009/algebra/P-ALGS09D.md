@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Compared with Problem 4 of the official UCSD Spring 2009 algebra qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Corrected the splitting-field identification and exhibited an automorphism cycling the four roots, proving the Galois group is cyclic of order 4.
 ---
 
 ::: problem
@@ -23,53 +31,129 @@ Determine the Galois group $\operatorname{Gal}(E/\mathbb{Q})$.
 :::
 
 ::: {.solution}
-<1>1. $\alpha^2 = 2 + \sqrt{2}$, so $\alpha$ satisfies $(\alpha^2 - 2)^2 = 2$, i.e. $\alpha^4 - 4\alpha^2 + 2 = 0$.
+Let
+\[
+\alpha=\sqrt{2+\sqrt2},
+\qquad
+\beta=\sqrt{2-\sqrt2}.
+\]
+
+<1>1. The minimal polynomial of $\alpha$ over $\mathbb Q$ is
+\[
+f(x)=x^4-4x^2+2.
+\]
 ::: {.proof}
-square both sides.
+Since
+\[
+\alpha^2=2+\sqrt2,
+\]
+we have
+\[
+(\alpha^2-2)^2=2,
+\]
+so $f(\alpha)=0$.
+The polynomial $f$ is Eisenstein at $2$: every nonleading coefficient is divisible by $2$, and the constant term $2$ is not divisible by $4$.
+Hence $f$ is irreducible over $\mathbb Q$.
+Therefore $f$ is the minimal polynomial of $\alpha$ and
+\[
+[\mathbb Q(\alpha):\mathbb Q]=4.
+\]
 :::
 
-<1>2. $f(x) = x^4 - 4x^2 + 2$ is irreducible over $\QQ$.
+<1>2. The roots of $f$ are
+\[
+\pm\alpha,
+\qquad
+\pm\beta.
+\]
 ::: {.proof}
-it is Eisenstein at $p = 2$ (leading coefficient $1$, all other coefficients divisible by $2$, constant term $2$ not divisible by $4$).
+The equation $f(x)=0$ is equivalent to
+\[
+(x^2-2)^2=2,
+\]
+so
+\[
+x^2=2\pm\sqrt2.
+\]
+Taking square roots gives precisely the four displayed roots.
 :::
 
-<1>3. Hence $f$ is the minimal polynomial of $\alpha$ and $[\QQ(\alpha) : \QQ] = 4$.
+<1>3. The field $\mathbb Q(\alpha)$ already contains $\beta$.
 ::: {.proof}
-<1>1 and <1>2.
+We have
+\[
+\sqrt2=\alpha^2-2\in\mathbb Q(\alpha).
+\]
+Also
+\[
+\alpha\beta
+=\sqrt{(2+\sqrt2)(2-\sqrt2)}
+=\sqrt2,
+\]
+where the positive square root is taken because $\alpha,\beta>0$.
+Thus
+\[
+\beta=\frac{\sqrt2}{\alpha}\in\mathbb Q(\alpha).
+\]
 :::
 
-<1>4. The roots of $f$ are $\pm \sqrt{2 \pm \sqrt{2}}$.
+<1>4. The splitting field is
+\[
+E=\mathbb Q(\alpha).
+\]
 ::: {.proof}
-solving $x^2 = 2 \pm \sqrt{2}$.
+By <1>2 and <1>3, $\mathbb Q(\alpha)$ contains all four roots $\pm\alpha,\pm\beta$ of $f$.
+Hence it is the splitting field of $f$.
+Since $f$ is separable over the characteristic-zero field $\mathbb Q$, the extension $E/\mathbb Q$ is Galois.
+By <1>1,
+\[
+|\operatorname{Gal}(E/\mathbb Q)|=[E:\mathbb Q]=4.
+\]
 :::
 
-<1>5. The splitting field is $E = \QQ(\sqrt{2 + \sqrt{2}}, \sqrt{2 - \sqrt{2}})$.
+<1>5. There is an automorphism $\sigma\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
+\[
+\sigma(\alpha)=\beta,
+\]
+and it has order $4$.
 ::: {.proof}
-<1>4.
+Because $\beta$ is another root of the irreducible polynomial $f$, the assignment $\alpha\mapsto\beta$ defines a $\mathbb Q$-embedding
+\[
+\mathbb Q(\alpha)\longrightarrow E.
+\]
+Since $E=\mathbb Q(\alpha)$ is finite over $\mathbb Q$, this embedding is an automorphism; call it $\sigma$.
+
+Now
+\[
+\sqrt2=\alpha^2-2,
+\]
+so
+\[
+\sigma(\sqrt2)=\beta^2-2=(2-\sqrt2)-2=-\sqrt2.
+\]
+Using $\beta=\sqrt2/\alpha$,
+\[
+\sigma(\beta)
+=\frac{\sigma(\sqrt2)}{\sigma(\alpha)}
+=\frac{-\sqrt2}{\beta}
+=-\alpha.
+\]
+Therefore
+\[
+\alpha\xmapsto{\sigma}\beta
+\xmapsto{\sigma}-\alpha
+\xmapsto{\sigma}-\beta
+\xmapsto{\sigma}\alpha.
+\]
+Thus $\sigma$ has order $4$.
 :::
 
-<1>6. $E = \QQ(\zeta_8)$, the cyclotomic field of $8$-th roots of unity.
+<1>6. Consequently
+\[
+\operatorname{Gal}(E/\mathbb Q)\cong C_4.
+\]
 ::: {.proof}
-$\sqrt{2 + \sqrt{2}} = 2\cos(\pi/8)$ and $\sqrt{2 - \sqrt{2}} = 2\sin(\pi/8)$, so $E$ contains $\zeta_8 = \cos(\pi/4) + i\sin(\pi/4)$; conversely $\zeta_8$ generates these.
-:::
-
-<1>7. $\operatorname{Gal}(\QQ(\zeta_8)/\QQ) \cong (\ZZ/8\ZZ)^\times$.
-::: {.proof}
-standard cyclotomic Galois theory.
-:::
-
-<1>8. $(\ZZ/8\ZZ)^\times = \{1, 3, 5, 7\} \cong \ZZ/2 \times \ZZ/2$.
-::: {.proof}
-the units modulo $8$ form the Klein four-group.
-:::
-
-<1>9. Hence $\operatorname{Gal}(E/\QQ) \cong \ZZ/2 \times \ZZ/2$.
-::: {.proof}
-<1>7 and <1>8.
-:::
-
-<1>10. Q.E.D.
-::: {.proof}
-<1>9.
+By <1>4 the Galois group has order $4$, and by <1>5 it contains an element of order $4$.
+Hence the group is cyclic of order $4$.
 :::
 :::
