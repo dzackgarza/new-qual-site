@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,40 +26,39 @@ Show that if $E \subset [0, 1]$ is uncountable, then there exists some $t \in (0
 :::
 
 ::: solution
-For each $n\ge1$, partition $[0,1]$ into the $2^n$ dyadic intervals of length $2^{-n}$, taking them half-open except for the last endpoint.
-Since $E$ is uncountable and the partition is finite, at least one interval at every level meets $E$ in an uncountable set.
-
-Suppose that at every level there were exactly one such interval, say $I_n$.
-The dyadic partitions refine one another, so
+For $t\in[0,1]$, set
 \[
-I_1\supset I_2\supset I_3\supset\cdots,
-\qquad |I_n|=2^{-n}.
+L_t=E\cap[0,t),\qquad R_t=E\cap(t,1].
 \]
-Their closures therefore have a unique common point $x$.
+Suppose no $t\in(0,1)$ makes both sets uncountable.
 
-At level $n$, every dyadic interval other than $I_n$ meets $E$ countably.
-Hence
+Define
 \[
-E\setminus I_n
+a=\sup\{t\in[0,1]:L_t\text{ is countable}\}.
 \]
-is countable, being a finite union of countable sets.
-Moreover, every $y\neq x$ is outside $I_n$ for all sufficiently large $n$, so
-\[
-E\setminus\{x\}
-\subseteq \bigcup_{n=1}^\infty(E\setminus I_n).
-\]
-The right-hand side is countable.
-This would make $E$ countable, a contradiction.
+Because $L_0=\varnothing$, the set is nonempty. Since $E$ is uncountable, $a<1$ cannot fail merely because all initial segments are countable; in any case the following argument handles the endpoint possibilities.
 
-Thus at some dyadic level there are two distinct intervals $I$ and $J$ whose intersections with $E$ are uncountable.
-Order them so that $I$ lies to the left of $J$, and choose $t$ between them; if they are adjacent, take their common endpoint.
-Removing at most that endpoint from either interval does not change uncountability.
-Therefore
+For every rational $q<a$, $L_q$ is countable. Hence
+\[
+E\cap[0,a)=\bigcup_{q\in\mathbb Q,\,q<a}L_q
+\]
+is countable.
+For every rational $q>a$, maximality of $a$ implies $L_q$ is uncountable; by the assumed failure of the conclusion, $R_q$ must therefore be countable. Hence
+\[
+E\cap(a,1]=\bigcup_{q\in\mathbb Q,\,q>a}R_q
+\]
+is countable.
+Thus
+\[
+E=(E\cap[0,a))\cup(E\cap\{a\})\cup(E\cap(a,1]
+\]
+is countable, a contradiction.
+
+Therefore some $t\in(0,1)$ has both
 \[
 E\cap(-\infty,t)
 \quad\text{and}\quad
 E\cap(t,\infty)
 \]
-are both uncountable.
-Since the two intervals are distinct subintervals of $[0,1]$, such a separating $t$ lies in $(0,1)$.
+uncountable.
 :::
