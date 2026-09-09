@@ -29,6 +29,10 @@ audit:
     Replaced the older prose-outline solution with a structured proof. For the
     closed-map criterion, use F=pi(pi^{-1}(F)) by surjectivity; the open-map
     criterion is identical with open sets.
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
+
 ---
 
 ::: {.problem}
@@ -41,16 +45,35 @@ Justify your answers.
 :::
 
 ::: {.solution}
-<1>1. A map
+A surjection $q:X\to Y$ is an identification (quotient) map if
 \[
-q:X\to Y
-\]
-is an identification map, or quotient map, if it is surjective and for every subset $U\subseteq Y$,
-\[
-U\text{ is open in }Y
+U\subseteq Y\text{ is open}
 \quad\Longleftrightarrow\quad
 q^{-1}(U)\text{ is open in }X.
 \]
+Equivalently, by complements,
+\[
+F\subseteq Y\text{ is closed}
+\quad\Longleftrightarrow\quad
+q^{-1}(F)\text{ is closed in }X.
+\]
+
+Now let $\pi:X\to Y$ be surjective, continuous, and closed. If $F\subseteq Y$ is closed, then $\pi^{-1}(F)$ is closed by continuity. Conversely, if $\pi^{-1}(F)$ is closed, then
+\[
+F=\pi(\pi^{-1}(F))
+\]
+by surjectivity, and the right-hand side is closed because $\pi$ is a closed map. Hence $\pi$ satisfies the quotient criterion.
+
+The same argument works with open sets. If $\pi$ is surjective, continuous, and open, then for any $U\subseteq Y$,
+\[
+U\text{ open}\implies \pi^{-1}(U)\text{ open}
+\]
+by continuity, while
+\[
+\pi^{-1}(U)\text{ open}\implies
+U=\pi(\pi^{-1}(U))\text{ open}
+\]
+by surjectivity and openness. Thus every surjective continuous open map is also an identification map.
 ::: {.proof}
 This is the definition.
 Equivalently, by taking complements, a surjective map $q$ is an identification map exactly when
