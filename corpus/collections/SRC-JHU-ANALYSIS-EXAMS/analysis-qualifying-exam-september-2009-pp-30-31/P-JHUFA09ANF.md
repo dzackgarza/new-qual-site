@@ -5,7 +5,7 @@ kind: problem
 title: "f has a removable singularity at 0. b) What is the radius of convergence of the"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Isolated Singularities
   - Power Series
