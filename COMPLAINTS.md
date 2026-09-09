@@ -40,6 +40,22 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-CASP13E is false as printed in the official Spring 2013 UCSD source
+
+- **Object and need:** `P-CASP13E` in `SRC-UCSD-CA-SPRING-2013`; the source claims that a sequence of distinct real numbers $x_n$ is the horizontal part of a zero set $x_n+i$ of some holomorphic function on the upper half-plane if and only if $\sum_n (x_n^2+4)^{-1}<\infty$.
+- **Observed evidence:** direct inspection of page 2 of the official Spring 2013 UCSD PDF confirms the statement exactly as transcribed. Take $x_n=\sqrt n$. Then $x_n+i$ is a discrete sequence in $\mathbb C_+$, so by the Weierstrass product theorem there is an entire function, hence a function holomorphic on $\mathbb C_+$, vanishing at all $x_n+i$. But $\sum_n 1/(x_n^2+4)=\sum_n1/(n+4)$ diverges.
+- **Impact and owner:** the necessity direction is false for unrestricted holomorphic functions. A Blaschke condition would be appropriate for bounded holomorphic functions, but boundedness is absent from the official source. The source/card statement owns the repair.
+- **Uncertainty:** the source wording and counterexample are verified. The likely intended hypothesis is that $f$ is bounded, but no erratum has been located.
+- **Repair:** recover an independent erratum or corrected copy before changing the statement; otherwise retain the card as a documented source defect rather than attaching a proof.
+
+### P-CASP07C is false as printed in the official Spring 2007 UCSD source
+
+- **Object and need:** `P-CASP07C` in `SRC-UCSD-CA-SPRING-2007`; the official problem asks to prove that for every function analytic on $B(0,2)$, the series $\sum_{n=1}^\infty f^{(n)}(z)$ converges in $\mathcal O(\mathbb D)$.
+- **Observed evidence:** direct inspection of page 2 of the official Spring 2007 UCSD PDF confirms the displayed series is exactly $\sum_{n=1}^\infty f^{(n)}(z)$. Taking $f(z)=1/(3-z)$, which is analytic on $B(0,2)$, gives $f^{(n)}(0)=n!/3^{n+1}$, whose terms do not even tend to zero. Hence the series diverges at $0$.
+- **Impact and owner:** the card is mathematically false as printed and cannot receive a valid proof without recovering an intended normalization or other missing hypothesis. The source/card statement owns the repair.
+- **Uncertainty:** the source formula and counterexample are both verified; the intended corrected series is unknown.
+- **Repair:** recover an erratum or independent version of the exam before changing the displayed series; otherwise retain the card as a documented source defect.
+
 ### P-8CA12 is false as printed in the official Spring 2017 UGA source
 
 - **Object and need:** `P-8CA12` in `SRC-UGA-CA-SPRING-2017`; the source asks to prove that for every real $\alpha>1$, the equation $\sin z=e^{\alpha z^3}$ has exactly three solutions in $|z|<1$.
