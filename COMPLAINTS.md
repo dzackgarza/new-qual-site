@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-4Y4QT has an unbound parameter and an incompatible convergence range
+
+- **Object and need:** `P-4Y4QT` in `SRC-CA-ART-T34TG3`; the problem says “Let $0<a<4$” but asks to evaluate $\int_0^\infty x^{\alpha-1}/(1+x^3)\,dx$, so the parameter in the integrand is not bound by the stated hypothesis.
+- **Observed evidence:** the local Spring 2020 HW 3 collection has no provenance beyond a relation to `SRC-TEXT-SS03`. The same wording is preserved in the older complex-analysis notes. Independently, the displayed integral converges exactly for $0<\operatorname{Re}\alpha<3$: near $0$ it behaves like $x^{\alpha-1}$ and near infinity like $x^{\alpha-4}$. Thus even identifying $a=\alpha$ would make the stated upper range $a<4$ incompatible with convergence on $3\le a<4$.
+- **Impact and owner:** no source-faithful numerical/formula answer is determined by the current statement. The homework/card source record owns recovery of whether the intended denominator was $1+x^4$, the intended range was $0<a<3$, or another correction was meant.
+- **Uncertainty:** the local wording and convergence obstruction are verified; no authoritative provenance for this homework card has been identified.
+- **Repair:** recover the originating homework/source and correct the bound parameter and convergence range from that source before attaching a solution.
+
 ### P-CASP25E is false as printed in the official Spring 2025 UCSD source
 
 - **Object and need:** `P-CASP25E` in `SRC-UCSD-CA-SPRING-2025`; the source claims that a bounded sequence of holomorphic functions on $\mathbb D$ must converge locally uniformly if it converges pointwise on an arbitrary convergent sequence $z_m\to z_*\in\mathbb D$.
