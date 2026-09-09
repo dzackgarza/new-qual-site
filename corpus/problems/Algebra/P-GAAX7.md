@@ -12,23 +12,64 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Since $G$ is a $p\dash$group, it has a nontrivial center.
-Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\size Z(G) \in \theset{p, p^2}$, where $p^3$ is ruled out because this would make $G$ abelian.
+Let $G$ be a nonabelian group of order $p^3$, where $p$ is prime. Prove that
+\[
+G'=Z(G).
+\]
+:::
 
-Supposing that $\size Z(G) = p^2$,we would have $[G: Z(G)] = p$, and since $Z(G) \normal G$, we can take the quotient and $\size\left(G/Z(G)\right) = p$.
-But this means $G/Z(G)$ is cyclic, which implies that $G$ is abelian, a contradiction.
 
-So we must have $\size Z(G) = p$, and $\size\left(G/Z(G)\right) = p^2$.
+::: {.solution}
+<1>1. One has
+\[
+|Z(G)|=p.
+\]
+::: {.proof}
+Every finite $p$-group has nontrivial center, so $|Z(G)|$ is $p$, $p^2$, or $p^3$. Since $G$ is nonabelian, $|Z(G)|\ne p^3$.
 
-But any group of $p^2$ is abelian, and we can characterize $G' \definedas [G, G]$ in the following way:
+If $|Z(G)|=p^2$, then $G/Z(G)$ has order $p$ and is therefore cyclic. A group with cyclic central quotient is abelian, contradiction. Hence $|Z(G)|=p$.
+:::
 
-> $G' \leq G$ is the unique subgroup of $G$ such that if $N \normal G$ and $G/N$ is abelian, then $N \leq G'$.
+<1>2. The quotient $G/Z(G)$ is abelian.
+::: {.proof}
+By <1>1 it has order
+\[
+|G/Z(G)|=p^2,
+\]
+and every group of order $p^2$ is abelian.
+:::
 
-We can thus conclude that $G' \leq Z(G)$.
-It can not be the case that $G' = \theset{e}$, since this would make $G$ abelian.
-This forces $G' = Z(G)$ as desired.
-$\qed$
+<1>3. Therefore
+\[
+G'\le Z(G).
+\]
+::: {.proof}
+The derived subgroup $G'=[G,G]$ is the smallest normal subgroup $N$ such that $G/N$ is abelian. Since $G/Z(G)$ is abelian by <1>2, this universal property gives
+\[
+G'\le Z(G).
+\]
+:::
+
+<1>4. The subgroup $G'$ is nontrivial.
+::: {.proof}
+If $G'=1$, then $G$ itself is abelian, contrary to hypothesis.
+:::
+
+<1>5. Hence
+\[
+G'=Z(G).
+\]
+::: {.proof}
+By <1>1, the center has prime order $p$. By <1>3 and <1>4, $G'$ is a nontrivial subgroup of $Z(G)$. The only nontrivial subgroup of a group of prime order is the whole group.
+:::
 :::
