@@ -17,6 +17,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
@@ -24,30 +27,34 @@ Show that if each $f_n$ is holomorphic on an open set $\Omega \subseteq \mathbb{
 :::
 
 ::: solution
-**Goal:** Prove Weierstrass's Theorem on uniform limits of holomorphic functions using Morera's Theorem and Cauchy's Theorem.
+Let
+\[
+S_N=\sum_{n=1}^N f_n.
+\]
+Each $S_N$ is holomorphic on $\Omega$.
 
-<1>1. Continuity of the sum function $F$:
-    *Proof:*
-    <2>1. Let $S_N(z) = \sum_{n=1}^N f_n(z)$ be the $N$-th partial sum.
-    <2>2. As a finite sum of holomorphic functions, each $S_N$ is holomorphic, hence continuous on $\Omega$.
-    <2>3. Let $z_0 \in \Omega$. Choose a closed disk $\overline{D}(z_0, r) \subset \Omega$.
-    <2>4. Because $\overline{D}(z_0, r)$ is compact, $S_N \to F$ uniformly on $\overline{D}(z_0, r)$.
-    <2>5. The uniform limit of continuous functions is continuous. Therefore, $F$ is continuous on $\overline{D}(z_0, r)$, and since $z_0 \in \Omega$ was arbitrary, $F$ is continuous on all of $\Omega$.
+<1>1. The limit $F$ is continuous. For every $z_0\in\Omega$, choose $r>0$ with
+\[
+\overline{D_r(z_0)}\subset\Omega.
+\]
+The convergence $S_N\to F$ is uniform on this compact disk, so $F$ is a uniform limit of continuous functions there and is therefore continuous near $z_0$.
 
-<1>2. Application of Morera's Theorem:
-    *Proof:*
-    <2>1. Let $T \subset \Omega$ be any solid closed triangle whose interior is also contained in $\Omega$.
-    <2>2. Let $\partial T$ be the boundary path of $T$. The image of $\partial T$ is a compact subset of $\Omega$.
-    <2>3. Because each $S_N$ is holomorphic on the simply connected domain containing $T$, by Cauchy's Integral Theorem:
-        $$\oint_{\partial T} S_N(z) \, dz = 0 \quad \text{for every } N \ge 1.$$
-    <2>4. Because $S_N \to F$ uniformly on the compact path $\partial T$, we may interchange the limit and the integral:
-        $$\oint_{\partial T} F(z) \, dz = \oint_{\partial T} \lim_{N \to \infty} S_N(z) \, dz = \lim_{N \to \infty} \oint_{\partial T} S_N(z) \, dz = \lim_{N \to \infty} 0 = 0.$$
-    <2>5. **Morera's Theorem:** Since $F$ is continuous on $\Omega$ and $\oint_{\partial T} F(z) \, dz = 0$ for every closed triangle $T \subset \Omega$, $F$ is holomorphic on $\Omega$.
+<1>2. Let $T$ be any closed triangle contained in $\Omega$. Since each $S_N$ is holomorphic on a neighborhood of $T$, Cauchy's theorem gives
+\[
+\int_{\partial T}S_N(z)\,dz=0.
+\]
+The boundary $\partial T$ is compact, so $S_N\to F$ uniformly on $\partial T$. Hence
+\[
+\int_{\partial T}F(z)\,dz
+=\lim_{N\to\infty}\int_{\partial T}S_N(z)\,dz
+=0.
+\]
 
-<1>3. Derivative property (bonus/extension):
-    *Proof:*
-    <2>1. Furthermore, by Cauchy's Integral Formula for derivatives, for each $k \ge 1$, $F^{(k)}(z) = \sum_{n=1}^\infty f_n^{(k)}(z)$, and the series of derivatives converges uniformly on every compact subset of $\Omega$.
+<1>3. Morera's theorem now implies that $F$ is holomorphic on $\Omega$.
 
-<1>4. Conclusion:
-    $F = \sum_{n=1}^\infty f_n$ is holomorphic on $\Omega$. Q.E.D.
+<1>4. Moreover, once holomorphy is known, Cauchy's integral formula on nested compact disks shows that for every $k\ge1$,
+\[
+F^{(k)}=\sum_{n=1}^\infty f_n^{(k)}
+\]
+with locally uniform convergence of the derivative series.
 :::
