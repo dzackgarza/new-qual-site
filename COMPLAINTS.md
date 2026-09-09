@@ -56,14 +56,6 @@ of public mathematical remarks.
 - **Uncertainty:** The fragment is compatible with several standard arguments involving nonsolvability of $S_n$ for $n\ge5$, so reconstructing a specific source question would be speculative.
 - **Repair:** Recover the original source context before authoring a solution.
 
-### `P-3BNEC` is truncated before the mathematical question
-
-- **Object and need:** `P-3BNEC` should contain a complete field-extension question, but its body ends after `is $F$`.
-- **Observed evidence:** The current file literally stops at `6. If $F$ is over $K$, and $E$ is an intermediate extension of $F$ over $K$, is $F$`, and no exact duplicate of the lost continuation was found elsewhere in the corpus.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-3BNEC.md` has no recoverable mathematical obligation to solve.
-- **Uncertainty:** The nearby solved card `E-N626Y` concerns algebraic/normal/separable properties over intermediate fields, so that may be related, but the missing text is not recoverable with enough confidence to replace it.
-- **Repair:** Recover the original source text before authoring a solution.
-
 ### `P-27BNG` has no mathematical task after its hypothesis
 
 - **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
