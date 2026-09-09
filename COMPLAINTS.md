@@ -105,7 +105,8 @@ of public mathematical remarks.
 - **Repair:** This requires source recovery or an explicit editorial decision supplying the missing conclusion. Until then, leave the card unsolved and do not infer a theorem from the title alone.
 
 
-\n\n## Workflow and rendering papercuts
+\n\n\n### `P-B644L` incorrectly calls a sufficient normalizer condition necessary\n\n- **Object and need:** `P-B644L` asks to show $H\le N_G(K)$ implies $HK\le G$ and to give a counterexample "showing that this condition is necessary."\n- **Observed evidence:** In $S_3$, let $H=\langle(123)\rangle$ and $K=\langle(12)\rangle$. Then $|HK|=|H||K|=6$, so $HK=S_3$ is a subgroup, but $(123)$ conjugates $(12)$ to a different transposition, hence $H\not\le N_G(K)$. Thus the normalizer condition is not necessary.\n- **Impact and owner:** The title and final clause of `corpus/problems/Algebra/P-B644L.md` assert the opposite of the correct statement.\n- **Uncertainty:** None; the exact criterion is $HK\le G$ iff $HK=KH$.\n- **Repair:** Under TODO §7 / issue #2, state the normalizer hypothesis as sufficient but not necessary, prove it, and give the $S_3$ counterexample.\n
+## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
 
