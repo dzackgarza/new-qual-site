@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KDJFP
 kind: problem
-title: Existence and uniqueness of $AX=B$ by rank
+title: Existence and uniqueness of $AX=b$ by rank
 classification:
   areas:
   - algebra
@@ -12,56 +12,61 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $AX=B$ has a solution $\iff \rank(A) = \rank(C)$:
+Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Let $[A\mid b]$ be the augmented matrix.
 
-Note that we can only have $\rank C \geq \rank A$.
+1. Show that $Ax=b$ has a solution if and only if
+   \[
+   \operatorname{rank}A=\operatorname{rank}[A\mid b].
+   \]
+2. Assuming the system is consistent, show that the solution is unique if and only if
+   \[
+   \operatorname{rank}A=n.
+   \]
+:::
 
-$\implies$:
+::: {.solution}
+<1>1. The system is consistent iff $b$ lies in the column space of $A$.
+::: {.proof}
+Writing the columns of $A$ as $a_1,\ldots,a_n$, the equation
+\[
+Ax=b
+\]
+means exactly that
+\[
+b=x_1a_1+\cdots+x_na_n.
+\]
+Thus a solution exists iff $b\in\operatorname{col}(A)$. This is equivalent to adjoining $b$ as an extra column without increasing the column-space dimension, namely
+\[
+\operatorname{rank}[A\mid b]=\operatorname{rank}A.
+\]
+:::
 
-Suppose that $AX = B$ has a solution; then $\vector b$ is in the column space of $A$.
-But this says that 
-$$
-\mathrm{span}(\theset{\vector a_i}) = \mathrm{span}(\theset{\vector a_i} \union \theset{\vector b}),
-$$
-
-where $\vector a_i$ are the columns of $A$. 
-But then taking dimensions on both sides yields $\rank A = \rank C$, since the rank of the dimension of the column space.
-
-$\impliedby$:
-
-Suppose $\rank A = \rank C$; then the 
-$$
-\dim \mathrm{span}(\theset{\vector a_i}) = \dim \mathrm{span}( \theset{\vector a_i} \union \theset{\vector b} ),
-$$
-
-which says that $\vector b_i$ is in the column space of $A$, and thus $AX=B$ has a solution. 
-$\qed$
-
-2. The solution is unique $\iff \rank(A) = m$.
-
-$\implies$:
-To the contrapositive, Suppose $\rank(A) < m$.
-Then by rank-nullity, $\dim \ker A > 0$, so there is a vector $\vector v \neq 0$ such that $A\vector v = 0$.
-But noting that $\vector x = \vector 0$ is always *a* solution to $A\vector x = \vector 0$, this yields two distinct solutions.
-
-$\impliedby$:
-
-Suppose that $\rank(A) = m$. 
-Then by rank-nullity, $\dim \ker A = 0$, so $\ker A = \theset{\vector 0}$.
-Now suppose $\vector v_1, \vector v_2$ are potentially distinct solutions to $A\vector x = \vector b$.
-
-Then,
-\begin{align*}
-A \vector v_1 &= A \vector v_2 = \vector b \\
-&\implies A \vector v_1 - A \vector v_2 =  \vector b - \vector b = \vector 0 \\
-&\implies A (\vector v_1 - \vector v_2) = \vector 0 \\
-&\implies \vector v_1 - \vector v_2 \in \ker A \\
-&\implies \vector v_1 - \vector v_2 = \vector 0 \\
-&\implies \vector v_1 = \vector v_2
-,\end{align*}
-
-which shows that any solution is unique.
+<1>2. A consistent system has a unique solution iff $\ker A=0$.
+::: {.proof}
+Fix one solution $x_0$. Then every solution is of the form
+\[
+x_0+v,
+\qquad v\in\ker A,
+\]
+because
+\[
+A(x_0+v)=b
+\iff Av=0.
+\]
+Hence the solution is unique iff $\ker A=0$. By rank-nullity,
+\[
+n=\operatorname{rank}A+\dim\ker A,
+\]
+so $\ker A=0$ iff $\operatorname{rank}A=n$.
+:::
 :::
