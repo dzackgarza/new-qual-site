@@ -49,3 +49,11 @@ of public mathematical remarks.
 - **Impact and owner:** This does not change corpus mathematics, but it interrupts the repository-prescribed workflow of reading current state and selecting work through project tooling. The affected boundary is the local connector/execution environment rather than `qualc` semantics.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
+
+### `E-DKMHL` omits the finiteness hypothesis from Lagrange's theorem
+
+- **Object and need:** `E-DKMHL` is the standard consequence of Lagrange's theorem that the order of an element divides the order of a finite group.
+- **Observed evidence:** The exercise currently says `the order of any element in a group divides the order of the group`, without assuming the group is finite. The divisibility assertion in this form is a theorem about finite cardinalities; standard statements explicitly assume $G$ finite.
+- **Impact and owner:** `corpus/problems/Algebra/E-DKMHL.md` is underspecified as written and cannot be justified by the stated Cosets/Lagrange topic without adding the finite-group hypothesis.
+- **Uncertainty:** The intended result is unambiguous from the title/topics and the standard Lagrange corollary. The card appears only in `SRC-UNSORTED-ALGEBRA`, so no external source wording is available to preserve.
+- **Repair:** Change the title and exercise to say `finite group`, prove the result by applying Lagrange to $\langle g\rangle$, and remove this complaint after verification.
