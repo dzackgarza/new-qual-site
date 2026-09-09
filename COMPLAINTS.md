@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `E-XFV6F` uses inconsistent finite-field notation
+
+- **Object and need:** `E-XFV6F` should use the repository's standard $\FF_3$ notation consistently in the public problem statement.
+- **Observed evidence:** The title uses `\mathbb{F}_{3}` while the body uses `\boldsymbol{F}_{3}`.
+- **Impact and owner:** This is a notation papercut in `corpus/problems/Algebra/E-XFV6F.md`; the mathematics is unaffected.
+- **Uncertainty:** None.
+- **Repair:** Under TODO §7 / issue #2, normalize the field notation while authoring the solution.
+
 
 
 ## Workflow and rendering papercuts
