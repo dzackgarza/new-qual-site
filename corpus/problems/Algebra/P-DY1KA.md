@@ -12,19 +12,44 @@ classification:
   - Canonical Forms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-By part (1), we know that these conditions uniquely specify their Jordan forms, so we have $M\definedas JCF(T) = JCF(S)$.
+Let $S$ and $T$ be square matrices over an algebraically closed field. Suppose $S$ and $T$ have the same Jordan canonical form. Prove that $S$ and $T$ are similar.
+:::
 
-Moreover, since $M = JCF(T)$, we know there is a matrix $P$ such that $T = PMP\inv$.
 
-Similarly, we know there is a matrix $Q$ such that $S = QMQ\inv$.
+::: {.solution}
+Let $J$ denote their common Jordan canonical form.
 
-But then $P\inv TP = M$, and so
-$$
-S = QMQ\inv = Q(P\inv T P) Q\inv = (QP\inv) T (QP\inv)\inv \definedas ATA\inv
-$$
+<1>1. There are invertible matrices $P$ and $Q$ such that
+\[
+T=PJP^{-1},
+\qquad
+S=QJQ^{-1}.
+\]
+::: {.proof}
+This is exactly what it means for $J$ to be the Jordan canonical form of $T$ and of $S$.
+:::
 
-where $A = QP\inv$ is a product of invertible matrices and thus invertible.
+<1>2. Therefore $S$ is similar to $T$.
+::: {.proof}
+From the first equality,
+\[
+J=P^{-1}TP.
+\]
+Substituting into the expression for $S$ gives
+\[
+S=QP^{-1}TPQ^{-1}
+=(QP^{-1})T(QP^{-1})^{-1}.
+\]
+Since $QP^{-1}$ is invertible, this is a similarity transformation.
+:::
 :::
