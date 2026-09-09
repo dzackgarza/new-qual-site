@@ -15,6 +15,12 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -23,74 +29,53 @@ Prove that $G$ is solvable.
 :::
 
 ::: {.solution}
-<1>1. Apply Sylow’s Theorems to count Sylow subgroups: <2>1. Let $n_p$ and $n_q$ denote the number of Sylow $p$-subgroups and Sylow $q$-subgroups of $G$, respectively.
-::: {.proof}
-definition.
-:::
-<2>2. By Sylow’s Theorem:
+<1>1. Let \(n_p\) and \(n_q\) be the numbers of Sylow \(p\)- and Sylow \(q\)-subgroups of \(G\). Then
 \[
-n_p \equiv 1 \pmod p \quad \text{and} \quad n_p \mid q \implies n_p \in \{1, q\},
+n_p\mid q,\qquad n_p\equiv1\pmod p,
 \]
+and
 \[
-n_q \equiv 1 \pmod q \quad \text{and} \quad n_q \mid p^2 \implies n_q \in \{1, p, p^2\}.
+n_q\mid p^2,\qquad n_q\equiv1\pmod q.
 \]
 ::: {.proof}
-Sylow's Theorem.
+These are the divisibility and congruence conclusions of Sylow's theorems.
 :::
 
-<1>2. Show that $G$ has a normal Sylow subgroup: <2>1. **Case $p > q$:** Since $n_p \mid q$ and $n_p \equiv 1 \pmod p$, if $n_p = q$ then $q \equiv 1 \pmod p \implies q \ge p + 1 > p$, contradicting $p > q$.
-Thus $n_p = 1$, so the Sylow $p$-subgroup $P \trianglelefteq G$ is normal.
+<1>2. If \(p>q\), then the Sylow \(p\)-subgroup is normal.
 ::: {.proof}
-$n_p \in \{1, q\}$ and $q < p$.
-:::
-<2>2. **Case $p < q$:** If $n_q = 1$, then the Sylow $q$-subgroup $Q \trianglelefteq G$ is normal.
-::: {.proof}
-$n_q = 1 \implies Q \trianglelefteq G$.
-:::
-<2>3. If $n_q > 1$, then $n_q \in \{p, p^2\}$.
-Since $p < q$, $p \not\equiv 1 \pmod q$, so $n_q = p^2$.
-::: {.proof}
-$p < q \implies p \not\ge q + 1$.
-:::
-<2>4. $n_q = p^2 \implies p^2 \equiv 1 \pmod q \implies q \mid (p^2 - 1) = (p-1)(p+1)$.
-::: {.proof}
-Sylow congruence $n_q \equiv 1 \pmod q$.
-:::
-<2>5. Since $q$ is prime and $q > p > p - 1$, $q$ must divide $p + 1$, so $q \le p + 1$.
-With $p < q$, this forces $q = p + 1$, so $p = 2$ and $q = 3$.
-::: {.proof}
-the only consecutive primes are $2$ and $3$.
-:::
-<2>6. For $|G| = 2^2 \cdot 3 = 12$: if $n_3 = 4$, the four Sylow 3-subgroups contain $4 \times (3 - 1) = 8$ distinct elements of order 3.
-::: {.proof}
-distinct subgroups of prime order intersect trivially.
-:::
-<2>7. The remaining $12 - 8 = 4$ elements must comprise the unique Sylow 2-subgroup of order 4, so $n_2 = 1$ and $P \trianglelefteq G$.
-::: {.proof}
-counting elements in $G$.
-:::
-<2>8. In all cases, $G$ contains a normal Sylow subgroup $N \trianglelefteq G$ of order $p^2$ or $q$.
-::: {.proof}
-<2>1, <2>2, and <2>7.
+By <1>1, \(n_p\in\{1,q\}\). If \(n_p=q\), then \(q\equiv1\pmod p\), which is impossible because \(1<q<p\). Hence \(n_p=1\).
 :::
 
-<1>3. Prove that $G$ is solvable: <2>1. If $N \trianglelefteq G$ has order $p^2$, then $N$ is abelian (any group of order $p^2$ is abelian), hence solvable.
-The quotient $G/N$ has order $q$ (prime), hence cyclic and solvable.
+<1>3. Suppose \(p<q\). If \(n_q=1\), then the Sylow \(q\)-subgroup is normal. Otherwise \(p=2\) and \(q=3\).
 ::: {.proof}
-groups of order $p^2$ and $p$ are abelian.
-:::
-<2>2. If $N \trianglelefteq G$ has order $q$, then $N$ is cyclic of prime order, hence solvable.
-The quotient $G/N$ has order $p^2$, hence abelian and solvable.
-::: {.proof}
-<2>1. <2>3. Since $N$ and $G/N$ are both solvable, $G$ is solvable.
-:::
-::: {.proof}
-extension of a solvable group by a solvable group is solvable.
+By <1>1, \(n_q\in\{1,p,p^2\}\). Since \(p<q\), the value \(p\) cannot be congruent to \(1\pmod q\). Thus if \(n_q\ne1\), then \(n_q=p^2\). Hence
+\[
+p^2\equiv1\pmod q,
+\]
+so \(q\mid(p-1)(p+1)\). Because \(q>p\), one has \(q\nmid p-1\), hence \(q\mid p+1\). Therefore \(q\le p+1\), and since \(q>p\), one gets \(q=p+1\). The only consecutive positive integers that are both prime are \(2\) and \(3\), so \((p,q)=(2,3)\).
 :::
 
-<1>4. Conclusion: Every group of order $p^2 q$ is solvable.
+<1>4. In the exceptional case \(|G|=12\), \(G\) still has a normal Sylow subgroup.
 ::: {.proof}
-<1>2 and <1>3.
+If \(n_3=1\), the Sylow \(3\)-subgroup is normal. Otherwise \(n_3=4\). Distinct subgroups of order \(3\) intersect trivially, so the four Sylow \(3\)-subgroups contribute
+\[
+4(3-1)=8
+\]
+distinct nonidentity elements. Thus exactly four elements of \(G\) are not among those eight nonidentity elements; this four-element set includes the identity. Every Sylow \(2\)-subgroup has order \(4\) and contains no element of order \(3\), so it is contained in that four-element set and hence equals it. Therefore the Sylow \(2\)-subgroup is unique and normal.
 :::
-Q.E.D.
+
+<1>5. In every case, \(G\) has a normal Sylow subgroup \(N\) of order \(p^2\) or \(q\).
+::: {.proof}
+Use <1>2 when \(p>q\), and <1>3--<1>4 when \(p<q\).
+:::
+
+<1>6. The subgroup \(N\) and the quotient \(G/N\) are both abelian.
+::: {.proof}
+A group of prime order is cyclic, and every group of order the square of a prime is abelian. If \(|N|=p^2\), then \(|G/N|=q\); if \(|N|=q\), then \(|G/N|=p^2\).
+:::
+
+<1>7. Therefore \(G\) is solvable.
+::: {.proof}
+By <1>6, both \(N\) and \(G/N\) are solvable. An extension of a solvable group by a solvable group is solvable.
+:::
 :::

@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -49,9 +55,10 @@ Is the equation $x^5 - 16x + 2 = 0$ solvable in radicals?
 
 <1>3. Identification of the Galois group as $S_5$:
     *Proof:*
-    <2>1. A standard theorem in group theory states that for any prime $p$, any transitive subgroup of the symmetric group $S_p$ containing a transposition must be the entire symmetric group $S_p$.
-    <2>2. By <1>1 and <1>2, $G \le S_5$ is a transitive subgroup containing a transposition $\tau$.
-    <2>3. Therefore $G = \operatorname{Gal}(f/\mathbb{Q}) \cong S_5$.
+    <2>1. By <1>1 and <1>2, $G\le S_5$ is transitive and contains a transposition $\tau=(ab)$.
+    <2>2. Form a graph on the five roots whose edges are the unordered pairs $g\{a,b\}$ for $g\in G$. This graph is nonempty and $G$-invariant, and for every edge $\{u,v\}$ the transposition $(uv)=g\tau g^{-1}$ lies in $G$.
+    <2>3. The connected components form a $G$-invariant partition of the five roots. Since $G$ is transitive, all components have the same size. Their common size divides $5$; because the graph has an edge, that size is greater than $1$. Hence the graph is connected.
+    <2>4. The transpositions corresponding to the edges of any connected graph on five vertices generate the full symmetric group $S_5$. Therefore $S_5\le G$. Since already $G\le S_5$, one has $G=S_5$.
 
 <1>4. Solvability by radicals:
     *Proof:*

@@ -15,6 +15,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -68,28 +74,44 @@ $g^m = 1$, so each eigenvalue $\lambda$ satisfies $\lambda^m = 1$.
 $\lambda$ is a root of the characteristic polynomial of $g$, which has degree $n$ over $\QQ$.
 :::
 
-<1>3. If $\lambda$ is a primitive $m$-th root of unity, then $[\QQ(\lambda) : \QQ] = \varphi(m)$.
+<1>3. If $d$ is the order of an eigenvalue $\lambda$, then $\varphi(d) \le n$.
 ::: {.proof}
-the cyclotomic field $\QQ(\zeta_m)$ has degree $\varphi(m)$ over $\QQ$.
+$\lambda$ is a primitive $d$-th root of unity, so its minimal polynomial over $\QQ$ is the cyclotomic polynomial $\Phi_d$, of degree $\varphi(d)$.
+By <1>2, this degree is at most $n$.
 :::
 
-<1>4. Hence $\varphi(m) \le n$.
+<1>4. There are only finitely many possible orders of eigenvalues of torsion elements of $\mathrm{GL}_n(\QQ)$.
 ::: {.proof}
-$\lambda$ (a primitive $m$-th root of unity, since $m$ is the order of $g$) has degree $\varphi(m) \le n$ by <1>2 and <1>3.
+The Euler totient function satisfies $\varphi(d) \to \infty$ as $d \to \infty$.
+Thus
+\[
+D_n=\{d\ge 1:\varphi(d)\le n\}
+\]
+is finite.
+By <1>3, the order of every eigenvalue belongs to $D_n$.
 :::
 
-<1>5. $\varphi(m) \to \infty$ as $m \to \infty$, so there are only finitely many $m$ with $\varphi(m) \le n$.
+<1>5. The order $m$ of $g$ is the least common multiple of the orders of its eigenvalues.
 ::: {.proof}
-standard fact about the Euler totient function.
+By Part (a), $g$ is diagonalizable over $\CC$.
+If its eigenvalues are $\lambda_1,\ldots,\lambda_n$, then $g^r=1$ exactly when $\lambda_i^r=1$ for every $i$.
+Hence
+\[
+m=\operatorname{lcm}(\operatorname{ord}(\lambda_1),\ldots,\operatorname{ord}(\lambda_n)).
+\]
 :::
 
-<1>6. Hence $m$ is bounded by a constant $M$ depending only on $n$.
+<1>6. Hence $m$ is bounded by a constant depending only on $n$.
 ::: {.proof}
-<1>4 and <1>5.
+Let
+\[
+M_n=\operatorname{lcm}\{d:d\in D_n\}.
+\]
+The integer $M_n$ is finite by <1>4. By <1>5, the order of every torsion element of $\mathrm{GL}_n(\QQ)$ divides $M_n$, so it is at most $M_n$.
 :::
 
 <1>7. Q.E.D.
 ::: {.proof}
-<1>5 (a) and <1>6 (b).
+Part (a) is <1>5 above, and Part (b) follows from <1>6.
 :::
 :::

@@ -16,6 +16,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -36,19 +42,21 @@ $M$ has rank $1$ (all rows equal), so $\dim \ker M = 2$; the trace is $3$, so th
 :::
 
 <1>2. Case 1: $\operatorname{char} F \neq 3$.
-<2>1. The eigenvalues are $0, 0, 3$, all distinct from each other (since $3 \neq 0$).
+<2>1. The eigenvalues are $0$ with algebraic multiplicity $2$ and $3$ with algebraic multiplicity $1$, and $0 \neq 3$.
 ::: {.proof}
 <1>1 and $\operatorname{char} F \neq 3$.
 :::
 <2>2. $M$ is diagonalizable.
 ::: {.proof}
-$M$ is symmetric (self-adjoint), hence diagonalizable; equivalently, the eigenspace for $0$ has dimension $2$ and for $3$ has dimension $1$, summing to $3$.
+The eigenspace for $0$ is $\ker M$, which has dimension $2$.
+The eigenspace for $3$ is nonzero, and since it corresponds to a distinct eigenvalue it meets $\ker M$ trivially.
+Thus the two eigenspaces have total dimension $3$, so $M$ is diagonalizable.
 :::
 <2>3. Jordan form: $\operatorname{diag}(0, 0, 3)$.
 ::: {.proof}
 <2>2.
 :::
-<2>4. Rational form: $\operatorname{diag}(x, x(x-3))$... more precisely, the invariant factors are $x$ and $x(x-3)$, so the rational form is the block-diagonal of companion matrices of $x$ and $x(x-3)$.
+<2>4. The invariant factors are $x$ and $x(x-3)$, so the rational canonical form is $C(x) \oplus C(x(x-3))$, the block diagonal of the companion matrices of these two invariant factors.
 ::: {.proof}
 the minimal polynomial is $x(x-3)$ and the characteristic polynomial is $x^2(x-3)$, so the invariant factors are $x$ and $x(x-3)$.
 :::
