@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-3VHPO` is truncated after naming two cubic fields
+
+- **Object and need:** `P-3VHPO` should contain a complete question comparing $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$.
+- **Observed evidence:** The current body is only `Show that $\QQ(2^{1\over 3})$ and $\QQ(\zeta_3 2^{1\over 3})$`. Git history shows the same truncation in the earliest retained version; only the title was later cleaned.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-3VHPO.md` has no recoverable conclusion to prove.
+- **Uncertainty:** Several natural statements could have been intended (nonisomorphism over $\QQ$, distinct subfields of the splitting field, etc.), so guessing would not be source-faithful.
+- **Repair:** Recover the original source text before authoring a solution.
+
 ### `P-3BNEC` is truncated before the mathematical question
 
 - **Object and need:** `P-3BNEC` should contain a complete field-extension question, but its body ends after `is $F$`.
