@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -25,40 +28,25 @@ Let $X$ be a finite connected graph whose fundamental group is the free group on
 :::
 
 ::: solution
-**Goal:** Construct the universal cover of a graph as a tree of non-backtracking paths and prove that the universal cover of a 3-valent graph is the infinite 3-regular tree $T_3$.
+Choose a base vertex $x_0\in X$.
 
-<1>1. Universal Cover Construction via Path Space:
-    *Proof:*
-    <2>1. Let $X$ be a connected graph (CW 1-complex) and choose a base vertex $x_0 \in X$.
-    <2>2. The **universal cover** $\widetilde{X}$ has vertices:
-        $$V(\widetilde{X}) \coloneqq \{[\gamma] \mid \gamma \text{ is a path in } X \text{ starting at } x_0 \text{ modulo homotopy rel endpoints}\}.$$
-    <2>3. On a graph, every path homotopy class $[\gamma]$ contains a **unique non-backtracking (reduced) edge-path** $\gamma = e_1 e_2 \cdots e_k$ starting at $x_0$, where $e_{i+1} \ne \bar{e}_i$.
-    <2>4. Two vertices $[\gamma_1]$ and $[\gamma_2]$ in $\widetilde{X}$ are connected by an edge if and only if $\gamma_2$ is obtained from $\gamma_1$ by appending a single directed edge $e$ of $X$.
-    <2>5. The covering projection $p: \widetilde{X} \to X$ maps each path $[\gamma]$ to its endpoint $\gamma(1) \in X$, and maps edges of $\widetilde{X}$ to their corresponding edges in $X$.
+<1>1. Define the vertices of $\widetilde X$ to be the reduced edge-paths in $X$ starting at $x_0$, including the empty path.
+For a reduced path $\gamma$ ending at a vertex $v$ and an oriented edge $e$ issuing from $v$, join $\gamma$ by an edge to the reduced path obtained from $\gamma e$ after cancelling a terminal backtrack if one occurs.
+Map this edge homeomorphically to $e$ and map each vertex-path to its endpoint.
 
-<1>2. Proof that $\widetilde{X}$ is a Tree (Acyclic and Connected):
-    *Proof:*
-    <2>1. **Connectedness:** Every vertex $[\gamma]$ is connected to the basepoint $[c_{x_0}]$ by the unique sequence of initial subpaths of the reduced word $\gamma$.
-    <2>2. **Acyclicity (No non-trivial cycles):**
-        - Suppose there exists a simple non-trivial cycle $C = v_0 v_1 \cdots v_m v_0$ in $\widetilde{X}$.
-        - Projecting $C$ to $X$ via $p$ gives a non-backtracking closed loop $\omega = p(C)$ in $X$ based at $p(v_0)$.
-        - Lifting $\omega$ to $\widetilde{X}$ starting at $v_0$ traces the path $C$, so its terminal point is $v_0$.
-        - By the Unique Path Lifting Property, a closed loop lifts to a closed loop if and only if its homotopy class $[\omega] = e \in \pi_1(X, p(v_0))$.
-        - But on a graph, the only reduced loop homotopic to the constant loop is the empty path.
-        - This contradicts the assumption that $C$ was a non-trivial cycle.
-    <2>3. Thus $\widetilde{X}$ contains no cycles, so $\widetilde{X}$ is a **tree** ($1$-dimensional contractible CW-complex).
-    <2>4. Since every tree is contractible, $\pi_1(\widetilde{X}) = \{0\}$, so $\widetilde{X}$ is **simply connected**.
-    <2>5. Since $p: \widetilde{X} \to X$ is a covering map and $\widetilde{X}$ is simply connected and locally path-connected, $\widetilde{X}$ is the **universal cover** of $X$.
+<1>2. The resulting map $p:\widetilde X\to X$ is a covering map.
+::: proof
+At a vertex represented by $\gamma$ ending at $v$, the incident edges of $\widetilde X$ are in bijection with the oriented edge germs at $v$. Hence the star of $\gamma$ maps homeomorphically onto the star of $v$. These stars give evenly covered neighborhoods.
+:::
 
-<1>3. The 3-Valent Graph and the Infinite 3-Regular Tree $T_3$:
-    *Proof:*
-    <2>1. A covering projection $p: \widetilde{X} \to X$ is a **local homeomorphism**.
-    <2>2. In particular, for any vertex $\tilde{v} \in \widetilde{X}$, the valence (degree) of $\tilde{v}$ equals the valence of its image $p(\tilde{v}) \in X$:
-        $$\operatorname{deg}_{\widetilde{X}}(\tilde{v}) = \operatorname{deg}_X(p(\tilde{v})).$$
-    <2>3. If $X$ is a **3-valent (cubic) graph** (every vertex in $X$ has degree 3, e.g. the theta graph $\Theta$ with 2 vertices of degree 3, or the figure-8 with a midpoint):
-        $$\operatorname{deg}(\tilde{v}) = 3 \quad \text{for all } \tilde{v} \in V(\widetilde{X}).$$
-    <2>4. Since $\widetilde{X}$ is a connected, acyclic graph where every vertex has degree 3, $\widetilde{X}$ is the unique **infinite 3-regular tree $T_3$** (also known as the Cayley graph of the free group $F_2$ with modified generators or the universal covering tree of 3-valent networks).
+<1>3. The graph $\widetilde X$ is connected and has no cycles.
+::: proof
+Every vertex $\gamma=e_1\cdots e_n$ is joined to the empty path by successively deleting its terminal edges, so $\widetilde X$ is connected.
 
-<1>4. Conclusion:
-    The path-tree construction gives a simply connected acyclic graph $\widetilde{X}$, which for any 3-valent graph is the infinite 3-regular tree $T_3$. Q.E.D.
+If a nontrivial reduced closed edge-path existed in $\widetilde X$, projecting it to $X$ would give a nontrivial reduced word which, starting from some reduced path $\gamma$, returns after successive reduction to the same path $\gamma$. Cancelling the common initial word would force the projected reduced word to represent the identity in the free edge-path groupoid of a graph, hence to be empty, a contradiction.
+:::
+
+<1>4. Therefore $\widetilde X$ is a tree. In particular it is contractible and simply connected, so $p$ is the universal covering map.
+
+<1>5. If every vertex of $X$ has valence $3$, then every vertex of $\widetilde X$ also has valence $3$, because a covering preserves vertex stars. A finite connected $3$-regular graph contains a cycle, so its universal cover is infinite. Hence $\widetilde X$ is the infinite $3$-regular tree $T_3$.
 :::
