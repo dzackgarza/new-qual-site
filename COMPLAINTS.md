@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-P2JSX` uses undefined `$Q$` for the rational base field
+
+- **Object and need:** `E-P2JSX` should state its splitting-field problem over $\QQ$ using the repository's standard rational-field notation.
+- **Observed evidence:** The exercise body ends its first sentence with `over $Q$`, while the title correctly uses `$\\mathbb{Q}$`; no symbol $Q$ is defined on the card.
+- **Impact and owner:** The mathematical intent is clear, but the public problem statement has inconsistent base-field notation. The owning file is `corpus/problems/Algebra/E-P2JSX.md`.
+- **Uncertainty:** None about the intended field: the title and polynomial context identify $\QQ$.
+- **Repair:** Under TODO §7 / issue #2, replace `$Q$` by `$\\QQ$` while authoring and reviewing the complete splitting-field solution.
+
+
 
 ## Workflow and rendering papercuts
 
