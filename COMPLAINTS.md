@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-5HMI7` omits irreducibility from the quartic Galois-group theorem
-
-- **Object and need:** `P-5HMI7` concludes that a quartic with exactly two real roots has Galois group $S_4$ or $D_4$, using transitivity on the roots.
-- **Observed evidence:** Transitivity requires the quartic to be irreducible. Without that hypothesis, $f=(x^2-2)(x^2+1)\in\QQ[x]$ has exactly two real roots but splitting field $\QQ(\sqrt2,i)$ with Galois group $C_2\times C_2$, not $S_4$ or $D_4$.
-- **Impact and owner:** The statement encoded by `corpus/problems/Algebra/P-5HMI7.md` is false as written; its stored proof silently assumes irreducibility.
-- **Uncertainty:** None about the necessary repair, since the proof's transitivity step explicitly identifies the intended irreducible case.
-- **Repair:** State that $f\in\QQ[x]$ is irreducible quartic with exactly two real roots and give the transitive-subgroup argument.
-
 ### `P-3VHPO` is truncated after naming two cubic fields
 
 - **Object and need:** `P-3VHPO` should contain a complete question comparing $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$.
