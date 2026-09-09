@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Spring 2015 Problem 3 in the preserved UGA real-analysis source extraction.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the legacy proof of (2) implies (1), which had reversed the set difference in the continuity-from-above step.
 ---
 
 ::: problem
@@ -31,10 +39,89 @@ $$
 H \subseteq E \subseteq V \quad \text{and}\quad \mu(V\setminus H) = 0.
 $$
 :::
-::: {.solution}
-<1>1. (1) $\Rightarrow$ (2). Proof: for each $k \in \NN$, (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $\mu(G_k \setminus F_k) < 1/k$.
-Set $V = \cap_k G_k \in G_\delta$ and $H = \cup_k F_k \in F_\sigma$; then $H \subseteq E \subseteq V$.
-Moreover $V \setminus H \subseteq G_k \setminus F_k$ for every $k$ (since $V \subseteq G_k$ and $H \supseteq F_k$), so $\mu(V \setminus H) \le \mu(G_k \setminus F_k) < 1/k$ for all $k$, hence $\mu(V \setminus H) = 0$.
-<1>2. (2) $\Rightarrow$ (1). Proof: let $V = \cap_k V_k$ with $V_k$ open, $H = \cup_k H_k$ with $H_k$ closed, $H \subseteq E \subseteq V$, $\mu(V \setminus H) = 0$.
-Given $\eps > 0$: the sets $V \setminus \cap_{k\le m} V_k$ decrease to $V \setminus V = \emptyset$, so by continuity from above $\mu(V \setminus \cap_{k\le m}V_k) \to 0$; choose $m$ with $\mu(V \setminus G) < \eps/2$ for $G = \cap_{k \le m} V_k$ (open, $E \subseteq G$). Similarly $\cup_{k\le m}H_k \nearrow H$, so $\mu(V \setminus \cup_{k\le m}H_k) \to \mu(V \setminus H) = 0$; choose $n$ with $\mu(V \setminus F) < \eps/2$ for $F = \cup_{k\le n}H_k$ (closed, $F \subseteq E$). Then \[ \mu(G \setminus F) \le \mu(G \setminus V) + \mu(V \setminus F) < \eps/2 + \eps/2 = \eps . \] <1>3. Q.E.D.
+::: solution
+<1>1. Prove (1) implies (2).
+::: proof
+For each $k\ge1$, apply (1) with $\varepsilon=2^{-k}$ to obtain a closed set $F_k$ and an open set $G_k$ such that
+\[
+F_k\subseteq E\subseteq G_k,
+\qquad
+\mu(G_k\setminus F_k)<2^{-k}.
+\]
+Set
+\[
+H:=\bigcup_{k=1}^\infty F_k,
+\qquad
+V:=\bigcap_{k=1}^\infty G_k.
+\]
+Then $H$ is $F_\sigma$, $V$ is $G_\delta$, and
+\[
+H\subseteq E\subseteq V.
+\]
+Moreover, for every $k$,
+\[
+V\setminus H\subseteq G_k\setminus F_k,
+\]
+so
+\[
+0\le \mu(V\setminus H)\le 2^{-k}.
+\]
+Letting $k\to\infty$ gives
+\[
+\mu(V\setminus H)=0.
+\]
+:::
+
+<1>2. Prove (2) implies (1).
+::: proof
+Write
+\[
+V=\bigcap_{k=1}^\infty V_k,
+\qquad
+H=\bigcup_{k=1}^\infty H_k,
+\]
+with each $V_k$ open and each $H_k$ closed. Replacing $V_k$ by $\bigcap_{j\le k}V_j$ and $H_k$ by $\bigcup_{j\le k}H_j$, we may assume
+\[
+V_k\downarrow V,
+\qquad
+H_k\uparrow H.
+\]
+Because $\mu$ is finite, continuity from above gives
+\[
+\mu(V_k\setminus V)\to0,
+\]
+and continuity from below gives
+\[
+\mu(H\setminus H_k)\to0.
+\]
+Given $\varepsilon>0$, choose $m,n$ such that
+\[
+\mu(V_m\setminus V)<\frac\varepsilon2,
+\qquad
+\mu(H\setminus H_n)<\frac\varepsilon2.
+\]
+Put
+\[
+G:=V_m,
+\qquad
+F:=H_n.
+\]
+Then $G$ is open, $F$ is closed, and
+\[
+F\subseteq H\subseteq E\subseteq V\subseteq G.
+\]
+Since $\mu(V\setminus H)=0$,
+\[
+G\setminus F
+\subseteq
+(G\setminus V)\cup(V\setminus H)\cup(H\setminus F),
+\]
+so
+\[
+\mu(G\setminus F)
+\le \mu(G\setminus V)+\mu(V\setminus H)+\mu(H\setminus F)
+<\varepsilon.
+\]
+This is (1).
+:::
 :::
