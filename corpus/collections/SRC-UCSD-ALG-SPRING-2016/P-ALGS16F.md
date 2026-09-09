@@ -26,43 +26,43 @@ audit:
 Is the equation $x^5 - 16x + 2 = 0$ solvable in radicals?
 :::
 
-::: solution
-**Goal:** Prove that the polynomial equation $f(x) = x^5 - 16x + 2 = 0$ is not solvable by radicals over $\mathbb{Q}$ by proving its Galois group is $S_5$.
+::: {.solution}
+<1>1. The polynomial \(f(x)=x^5-16x+2\) is irreducible over \(\mathbb Q\).
+::: {.proof}
+Eisenstein's criterion at \(2\) applies: \(2\) divides every nonleading coefficient and \(4
+mid 2\). Hence \(f\) is irreducible over \(\mathbb Q\).
+:::
 
-<1>1. Irreducibility of $f(x)$ over $\mathbb{Q}$:
-    *Proof:*
-    <2>1. The polynomial $f(x) = x^5 - 16x + 2 \in \mathbb{Z}[x]$ is monic of degree 5.
-    <2>2. The prime $p = 2$ divides all non-leading coefficients ($-16$ and $2$), but $p^2 = 4$ does not divide the constant term $2$.
-    <2>3. By Eisenstein's Criterion at $p = 2$ and Gauss's Lemma, $f(x)$ is irreducible over $\mathbb{Q}$.
-    <2>4. Therefore, the Galois group $G = \operatorname{Gal}(f/\mathbb{Q})$ acts transitively on the 5 complex roots of $f(x)$.
-    <2>5. By the Orbit-Stabilizer Theorem, $5 \mid |G|$. By Cauchy's Theorem for groups, $G$ contains an element of order 5, which must be a 5-cycle in $S_5$.
+<1>2. The Galois group \(G\le S_5\) of the splitting field acts transitively on the five roots and therefore contains a \(5\)-cycle.
+::: {.proof}
+Irreducibility gives transitivity. Thus \(5\mid |G|\) by orbit-stabilizer, and Cauchy's theorem gives an element of order \(5\), necessarily a \(5\)-cycle in \(S_5\).
+:::
 
-<1>2. Number of real roots and existence of a 2-cycle:
-    *Proof:*
-    <2>1. Differentiating $f(x)$ on $\mathbb{R}$:
-    $$f'(x) = 5x^4 - 16 = 0 \implies x = \pm \sqrt[4]{16/5} = \pm \frac{2}{\sqrt[4]{5}} \approx \pm 1.3374.$$
-    <2>2. Evaluating $f(x)$ at key points:
-    $$\lim_{x \to -\infty} f(x) = -\infty < 0,$$
-    $$f(0) = 2 > 0,$$
-    $$f(1) = 1 - 16 + 2 = -13 < 0,$$
-    $$f(2) = 32 - 32 + 2 = 2 > 0.$$
-    <2>3. By the Intermediate Value Theorem, $f(x)$ has at least 3 distinct real roots: one in $(-\infty, 0)$, one in $(0, 1)$, and one in $(1, 2)$.
-    <2>4. By Rolle's Theorem, since $f'(x)$ has only 2 real roots, $f(x)$ can have at most 3 real roots.
-    <2>5. Thus $f(x)$ has exactly 3 real roots and 2 non-real complex conjugate roots, say $\alpha, \bar{\alpha} \in \mathbb{C} \setminus \mathbb{R}$.
-    <2>6. Complex conjugation $\tau: \mathbb{C} \to \mathbb{C}$ restricts to an automorphism in $G = \operatorname{Gal}(f/\mathbb{Q})$.
-    <2>7. The map $\tau$ fixes each of the 3 real roots and transposes the 2 complex conjugate roots $\alpha \leftrightarrow \bar{\alpha}$.
-    <2>8. Thus $\tau$ acts on the 5 roots as a 2-cycle (transposition).
+<1>3. The polynomial \(f\) has exactly three real roots and one nonreal conjugate pair.
+::: {.proof}
+We have
+\[
+f(-\infty)<0,\qquad f(0)=2>0,\qquad f(1)=-13<0,\qquad f(2)=2>0,
+\]
+so there are at least three distinct real roots. Since
+\[
+f'(x)=5x^4-16
+\]
+has exactly two real roots, Rolle's theorem implies that \(f\) has at most three real roots. Hence it has exactly three real roots and two nonreal roots, which are complex conjugates.
+:::
 
-<1>3. Identification of the Galois group as $S_5$:
-    *Proof:*
-    <2>1. By <1>1 and <1>2, $G\le S_5$ is transitive and contains a transposition $\tau=(ab)$.
-    <2>2. Form a graph on the five roots whose edges are the unordered pairs $g\{a,b\}$ for $g\in G$. This graph is nonempty and $G$-invariant, and for every edge $\{u,v\}$ the transposition $(uv)=g\tau g^{-1}$ lies in $G$.
-    <2>3. The connected components form a $G$-invariant partition of the five roots. Since $G$ is transitive, all components have the same size. Their common size divides $5$; because the graph has an edge, that size is greater than $1$. Hence the graph is connected.
-    <2>4. The transpositions corresponding to the edges of any connected graph on five vertices generate the full symmetric group $S_5$. Therefore $S_5\le G$. Since already $G\le S_5$, one has $G=S_5$.
+<1>4. The group \(G\) contains a transposition.
+::: {.proof}
+Complex conjugation restricts to an automorphism of the splitting field over \(\mathbb Q\). It fixes the three real roots and swaps the two nonreal conjugate roots, so its permutation on the roots is a transposition.
+:::
 
-<1>4. Solvability by radicals:
-    *Proof:*
-    <2>1. By the Galois Criterion for solvability by radicals, a polynomial $f(x) \in \mathbb{Q}[x]$ is solvable by radicals if and only if its Galois group $\operatorname{Gal}(f/\mathbb{Q})$ is a solvable group.
-    <2>2. The alternating group $A_5$ is a simple non-abelian group of order 60, so $S_5$ is not a solvable group.
-    <2>3. Therefore the equation $x^5 - 16x + 2 = 0$ is not solvable by radicals.
+<1>5. A transitive subgroup of \(S_5\) containing a transposition is \(S_5\).
+::: {.proof}
+Let \(	au=(ab)\in G\). Form the graph on the five roots with edge set \(\{g\{a,b\}:g\in G\}\). Its connected components form a \(G\)-invariant partition. Since \(G\) is transitive, all components have equal size; because \(5\) is prime and the graph has an edge, the graph is connected. For every edge \(\{u,v\}\), the conjugate \(g	au g^{-1}=(uv)\) lies in \(G\). Edge-transpositions of a connected graph generate the full symmetric group, hence \(S_5\le G\). Therefore \(G=S_5\).
+:::
+
+<1>6. The equation is not solvable by radicals.
+::: {.proof}
+A polynomial over \(\mathbb Q\) is solvable by radicals exactly when its Galois group is solvable. Since \(G=S_5\) and \(A_5	rianglelefteq S_5\) is nonabelian simple, \(S_5\) is not solvable. Therefore \(x^5-16x+2=0\) is not solvable by radicals.
+:::
 :::
