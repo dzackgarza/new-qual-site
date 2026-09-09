@@ -26,3 +26,48 @@ The dimension of $H^k$ is then $\binom{n}{k}$ with basis $\{\alpha_{i_1} \wedge 
 ::: remark
 "Question 1" refers to problem 1 of the same source sheet, which computes the cohomology ring of $T = S^1 \times S^1$ from the definition of singular cohomology.
 :::
+
+::: {.solution}
+<1>1. The integral cohomology ring of the circle is
+$$
+H^*(S^1;\mathbb Z)\cong\Lambda(\alpha),
+\qquad |\alpha|=1.
+$$
+::: {.proof}
+There is one copy of $\mathbb Z$ in degrees $0$ and $1$ and no higher cohomology, so the square of the degree-one generator is zero.
+:::
+
+<1>2. The cohomological Künneth theorem gives an isomorphism of graded rings
+$$
+H^*(X\times S^1;\mathbb Z)
+\cong H^*(X;\mathbb Z)\otimes H^*(S^1;\mathbb Z)
+$$
+whenever $H^*(X;\mathbb Z)$ is free abelian.
+::: {.proof}
+For the torus induction all relevant cohomology groups are free, so the Tor terms vanish. Compatibility of the cross product with cup products gives the tensor-product ring structure, with the Koszul sign rule.
+:::
+
+<1>3. Inductively,
+$$
+H^*(T^n;\mathbb Z)
+\cong\bigotimes_{i=1}^n\Lambda(\alpha_i)
+\cong\boxed{\Lambda^*(\alpha_1,\ldots,\alpha_n)},
+$$
+where $|\alpha_i|=1$.
+::: {.proof}
+Use $T^n=T^{n-1}\times S^1$ and apply <1>2 repeatedly. The graded tensor product of exterior algebras on degree-one generators is the exterior algebra on their union; distinct generators anticommute and each squares to zero.
+:::
+
+<1>4. Consequently
+$$
+H^k(T^n;\mathbb Z)\cong\mathbb Z^{\binom nk},
+$$
+with basis
+$$
+\alpha_{i_1}\wedge\cdots\wedge\alpha_{i_k},
+\qquad i_1<\cdots<i_k.
+$$
+::: {.proof}
+A degree-$k$ exterior monomial is determined by choosing $k$ distinct generators from the $n$ available generators.
+:::
+:::
