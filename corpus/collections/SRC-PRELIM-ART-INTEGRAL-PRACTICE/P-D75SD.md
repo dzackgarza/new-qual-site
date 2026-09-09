@@ -12,12 +12,27 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int \sin(x) \cos (\cos (x)) ~dx = \color{blue} {- \sin (\cos (x))}​$
+Evaluate
+\[
+\int \sin x\,\cos(\cos x)\,dx.
+\]
+:::
 
-- **Solution:** $u = \cos (x)​$, $du = - \sin (x)~dx ​$
-
-- **Used 2018**
+::: solution
+Let $u=\cos x$, so $du=-\sin x\,dx$. Then
+\[
+\int \sin x\,\cos(\cos x)\,dx
+=-\int\cos u\,du
+=\boxed{-\sin(\cos x)+C}.
+\]
 :::
