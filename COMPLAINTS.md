@@ -105,8 +105,7 @@ of public mathematical remarks.
 - **Repair:** This requires source recovery or an explicit editorial decision supplying the missing conclusion. Until then, leave the card unsolved and do not infer a theorem from the title alone.
 
 
-\n### `P-7YAGM` omits the hypothesis $n>2$ from the real cyclotomic degree formula\n\n- **Object and need:** `P-7YAGM` claims $[\QQ(\zeta+\zeta^{-1}):\QQ]=\varphi(n)/2$ without specifying the order $n$ of the primitive root of unity or assuming $n>2$.\n- **Observed evidence:** For $n=1$ or $2$, one has $\zeta=\zeta^{-1}\in\QQ$, so the left-hand degree is $1$ while $\varphi(n)/2=1/2$. The surviving proof also uses $\zeta\notin\QQ(\zeta+\zeta^{-1})$, which fails exactly in these cases.\n- **Impact and owner:** The owning file `corpus/problems/Algebra/P-7YAGM.md` is false as written.\n- **Uncertainty:** None; the standard theorem assumes a primitive $n$th root with $n>2$.\n- **Repair:** Under TODO §7 / issue #2, state $n>2$ explicitly and prove the corrected degree formula.\n
-## Workflow and rendering papercuts
+\n## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
 

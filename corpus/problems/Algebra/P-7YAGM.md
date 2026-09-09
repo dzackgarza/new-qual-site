@@ -12,24 +12,62 @@ classification:
   - Galois Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
-::: problem
-Note that since $\zeta(\zeta+\zeta\inv) = \zeta^2 + 1$, we have the relation $\zeta^2  - (\zeta+\zeta\inv)\zeta + 1 = 0$.
-But then
-$$
-f(x) = x^2 - (\zeta + \zeta\inv)x + 1
-$$
 
-is a polynomial in $\QQ(\zeta + \zeta\inv)$ for which $f(\zeta) = 0$.
-Thus $g = \min(\zeta, \QQ(\zeta + \zeta\inv))$ divides $f$, but since $\deg f = 2$ and $\QQ(\zeta + \zeta\inv)$ is totally real, $\zeta\not\in\QQ(\zeta + \zeta\inv)$.
-This means that $g$ can not be linear and must have degree at least 2, but the above argument shows that $g$ has degree at *most* 2, so it must be 2. Letting $m = [\QQ(\zeta + \zeta\inv): \QQ]$, we have
+::: {.problem}
+Let $n>2$ and let $\zeta$ be a primitive $n$th root of unity. Prove that
 \[
-\begin{align*}
-[\QQ(\zeta) : \QQ] &= [\QQ(\zeta): \QQ(\zeta + \zeta\inv)] [\QQ(\zeta + \zeta\inv) : \QQ] \\
-\implies \phi(n) &= 2 m
-,\end{align*}
+[\QQ(\zeta+\zeta^{-1}):\QQ]=\frac{\varphi(n)}2.
+\]
+:::
+
+::: {.solution}
+Set
+\[
+K=\QQ(\zeta),\qquad F=\QQ(\zeta+\zeta^{-1}).
 \]
 
-and so $m = \phi(n)/2$ as desired.
+<1>1. One has $[K:F]\le2$.
+::: {.proof}
+The element $\zeta$ satisfies
+\[
+T^2-(\zeta+\zeta^{-1})T+1=0
+\]
+over $F$. Since $K=F(\zeta)$, this gives $[K:F]\le2$.
+:::
+
+<1>2. Complex conjugation is a nontrivial $F$-automorphism of $K$.
+::: {.proof}
+Complex conjugation sends $\zeta$ to $\zeta^{-1}$ and fixes $\zeta+\zeta^{-1}$, so it fixes $F$ pointwise. Because $n>2$, a primitive $n$th root of unity satisfies $\zeta\ne\zeta^{-1}$; otherwise $\zeta^2=1$, contradicting its order. Hence conjugation is nontrivial on $K$.
+:::
+
+<1>3. Therefore $[K:F]=2$.
+::: {.proof}
+By <1>2, $K/F$ has a nontrivial automorphism, so $K\ne F$. Combined with <1>1, this forces $[K:F]=2$.
+:::
+
+<1>4. The cyclotomic extension has degree $[K:\QQ]=\varphi(n)$.
+::: {.proof}
+The minimal polynomial of a primitive $n$th root of unity over $\QQ$ is the cyclotomic polynomial $\Phi_n$, whose degree is $\varphi(n)$.
+:::
+
+<1>5. Hence
+\[
+[F:\QQ]=\frac{\varphi(n)}2.
+\]
+::: {.proof}
+The tower law gives
+\[
+\varphi(n)=[K:\QQ]=[K:F][F:\QQ]=2[F:\QQ].
+\]
+Dividing by $2$ gives the result.
+:::
 :::
