@@ -12,20 +12,55 @@ classification:
   - Permutations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Writing $f(x) = x^3 - 3x - 3 = \sum a_i x_i \in \QQ[x]$, we can conclude that $f$ is irreducible over $\QQ$ by Eisenstein with the prime $p=3$, since $p\divides a_0 = -3, a_1 = 3, a_2 = 0$, but $p^2 \nmid a_3 = 1$.
+Show that the Galois group over $\QQ$ of
+\[
+f(x)=x^3-3x-3
+\]
+is isomorphic to $S_3$.
+:::
 
-We can check that $f(0) < 0$ and $f(10) > 0$, so $f$ has at least one real root.
-By the 1st derivative test, we can find that $f$ is increasing on $(-\infty, -1)$ and less than zero, decreasing on $(-1, 1)$ and less than zero, and increasing on $(1, \infty)$, where it it attains its root.
-This root has multiplicity one, since $\gcd(f, f') = 1$, which means that $f$ has *exactly* one real root $r_0$, and thus a complex conjugate pair of roots $r_1, \overline r_1$ as well.
 
-This means that complex conjugation is a nontrivial element $\tau$ of the Galois group $G \leq S_3$, and thus $G$ contains a 2-cycle.
+::: {.solution}
+<1>1. The polynomial $f$ is irreducible over $\QQ$.
+::: {.proof}
+Apply Eisenstein's criterion with the prime $3$. The leading coefficient is $1$, so it is not divisible by $3$. Every lower coefficient is divisible by $3$, and the constant term $-3$ is not divisible by $9$. Hence $f$ is irreducible over $\QQ$.
+:::
 
-The Galois group must be a transitive subgroup of $S_3$, which restricts the possibilities to $S_3, A_3$.
+<1>2. The discriminant of $f$ is
+\[
+\Delta=-135.
+\]
+::: {.proof}
+For a depressed cubic
+\[
+x^3+ax+b,
+\]
+the discriminant is
+\[
+-4a^3-27b^2.
+\]
+Here $a=-3$ and $b=-3$, so
+\[
+\Delta=-4(-3)^3-27(-3)^2
+=108-243
+=-135.
+\]
+:::
 
-Since $A_3$ only contains 3-cycles, this possibility is ruled out.
-Thus the Galois group must be $S_3$.
-$\qed$
+<1>3. The Galois group is $S_3$.
+::: {.proof}
+Because $f$ is an irreducible cubic, its Galois group acts transitively on the three roots. Thus it is either $A_3$ or $S_3$.
+
+For an irreducible cubic over a field of characteristic different from $2$, the Galois group lies in $A_3$ exactly when the discriminant is a square in the base field. Here $-135$ is not a square in $\QQ$. Therefore the Galois group is not contained in $A_3$, so it must be $S_3$.
+:::
 :::
