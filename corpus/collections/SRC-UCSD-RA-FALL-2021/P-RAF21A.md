@@ -14,13 +14,20 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against the recorded UCSD Fall 2021 real-analysis exam source and remediated the existing malformed solution.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-Let $f \in C(\mathbb{R})$ and let $A \subseteq \mathbb{R}$ be a Borel set such that $f$ is differentiable at each $x \in \mathbb{R} \setminus A$ and $f'(x) = 0$ for all such $x$.
+Let $f \in C(\mathbb{R})$ and let $A \subseteq\mathbb{R}$ be a Borel set such that $f$ is differentiable at each $x \in \mathbb{R} \setminus A$ and $f'(x) = 0$ for all such $x$.
 
 (a) If $A$ is closed and countable, show that $f$ is constant.
 
@@ -28,68 +35,24 @@ Let $f \in C(\mathbb{R})$ and let $A \subseteq \mathbb{R}$ be a Borel set such t
 Prove or find a counterexample.
 :::
 
-::: {.solution}
-**(a).**
+::: solution
+<1>1. Prove part (a).
+::: proof
+Let $I$ be any connected component of $\mathbb R\setminus A$. Since $A$ is closed, $I$ is an open interval. On $I$, the function $f$ is differentiable and $f'=0$, so the mean value theorem shows that $f$ is constant on $I$.
 
-<1>1. $f$ is continuous and differentiable with $f' = 0$ on $\mathbb{R} \setminus A$, where $A$ is closed and countable.
-::: {.proof}
-hypotheses.
+Fix $u<v$. The complement $[u,v]\setminus A$ is a countable union of pairwise disjoint open intervals, and $f$ is constant on each such interval. Since $A\cap[u,v]$ is countable, the set
+\[
+f([u,v])
+\]
+is therefore countable: it is contained in the union of the countable set $f(A\cap[u,v])$ and one value for each component of $[u,v]\setminus A$.
+
+But $f([u,v])$ is connected because $f$ is continuous and $[u,v]$ is connected. A connected countable subset of $\mathbb R$ is a singleton. Hence $f(u)=f(v)$. Since $u<v$ were arbitrary, $f$ is constant on $\mathbb R$.
 :::
 
-<1>2. $\mathbb{R} \setminus A$ is open, and its connected components are open intervals.
-::: {.proof}
-$A$ is closed, so its complement is open.
-:::
+<1>2. Give a counterexample for part (b).
+::: proof
+No. Let $C$ be the middle-third Cantor set and let $F:[0,1]\to[0,1]$ be the Cantor--Lebesgue function. Extend $F$ to a continuous function on $\mathbb R$ by setting $F(x)=0$ for $x\le0$ and $F(x)=1$ for $x\ge1$.
 
-<1>3. On each connected component (interval) of $\mathbb{R} \setminus A$, $f' = 0$, so $f$ is constant on that interval.
-::: {.proof}
-<1>2 and the mean value theorem (a function with zero derivative on an interval is constant).
-:::
-
-<1>4. Since $A$ is countable and $f$ is continuous, the constant values on adjacent intervals must agree (the countable set $A$ cannot separate the values, as $f$ is continuous across the points of $A$).
-::: {.proof}
-<1>3 and continuity (the values on the two sides of any point of $A$ must be equal, since $f$ is continuous at that point).
-:::
-
-<1>5. Hence $f$ is constant on all of $\mathbb{R}$.
-::: {.proof}
-<1>4.
-:::
-
-**(b).**
-
-<1>1. No, $f$ need not be constant.
-::: {.proof}
-the answer is negative.
-:::
-
-<1>2. Counterexample: the Cantor function $f$ (the Devil's staircase).
-::: {.proof}
-choose the Cantor function.
-:::
-
-<1>3. The Cantor function is continuous, and $f'(x) = 0$ for all $x$ outside the Cantor set $C$.
-::: {.proof}
-the Cantor function is constant on each interval of the complement of $C$, so its derivative is $0$ there.
-:::
-
-<1>4. The Cantor set $C$ has Lebesgue measure $0$.
-::: {.proof}
-$m(C) = 0$.
-:::
-
-<1>5. But the Cantor function is not constant (it goes from $0$ to $1$).
-::: {.proof}
-$f(0) = 0$ and $f(1) = 1$.
-:::
-
-<1>6. Hence $f$ is a counterexample: $A = C$ has measure $0$, $f' = 0$ off $A$, but $f$ is not constant.
-::: {.proof}
-<1>3–<1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>5 (a) and <1>6 (b).
+The function is constant on every connected component of $\mathbb R\setminus C$, so it is differentiable there with derivative $0$. The Cantor set $C$ has Lebesgue measure $0$, but $F$ is not constant since $F(0)=0$ and $F(1)=1$. Thus a null exceptional set does not force constancy.
 :::
 :::
