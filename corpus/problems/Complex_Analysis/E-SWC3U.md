@@ -38,3 +38,49 @@ mapping $$F: z \mapsto \frac{w - z}{1 - \bar{w} z}$$ satisfies the following con
 > Hint: Calculate $F \circ F$.
 
 :::
+
+::: solution
+The key identity is
+\[
+|1-\overline wz|^2-|w-z|^2
+=(1-|w|^2)(1-|z|^2).
+\]
+Indeed, expanding both squared moduli gives
+\[
+1-\overline wz-w\overline z+|w|^2|z|^2
+-|w|^2+w\overline z+\overline wz-|z|^2,
+\]
+which factors as claimed.
+
+If $|z|<1$ and $|w|<1$, the right-hand side is positive, so
+\[
+|w-z|<|1-\overline wz|,
+\]
+and therefore
+\[
+\left|\frac{w-z}{1-\overline wz}\right|<1.
+\]
+If $|z|=1$ or $|w|=1$, the right-hand side is $0$, so the two moduli are
+equal and the quotient has modulus $1$ whenever it is defined.
+
+Now fix $w\in\mathbb D$ and put
+\[
+F(z)=\frac{w-z}{1-\overline wz}.
+\]
+Because $|\overline wz|<1$ for $z\in\mathbb D$, the denominator never
+vanishes there, so $F$ is holomorphic. The first part shows that
+$F(\mathbb D)\subset\mathbb D$, and directly
+\[
+F(0)=w,
+\qquad
+F(w)=0.
+\]
+It also shows $|F(z)|=1$ for $|z|=1$.
+
+Finally, a direct substitution gives
+\[
+F(F(z))=z.
+\]
+Thus $F$ is its own inverse. Consequently $F:\mathbb D\to\mathbb D$ is
+bijective, hence an automorphism of the unit disk.
+:::
