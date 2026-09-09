@@ -72,3 +72,28 @@ The same construction with the lid $B^2 \times \theset{1}$ (using $H(z, 1) = g(z
 
 Since $P$ and $Q$ are both deformation retracts of the same space $R$, they are homotopy equivalent to $R$, hence homotopy equivalent to each other.
 :::
+
+::: {.solution}
+<1>1. Let $H:S^1\times I\to X$ be a homotopy from $f$ to $g$ and form
+$$R=X\cup_H(B^2\times I),$$
+attaching the lateral boundary $S^1\times I$ by $H$.
+::: {.proof}
+This quotient is well-defined because $S^1=\partial B^2$.
+:::
+
+<1>2. The cylinder $B^2\times I$ deformation retracts, relative to its lateral boundary, onto $(S^1\times I)\cup(B^2\times\{0\})$.
+::: {.proof}
+A solid cylinder collapses onto its side together with either lid; the collapse can be chosen to fix that subspace pointwise.
+:::
+
+<1>3. Hence $R$ deformation retracts onto $X\cup_fB^2$; using the other lid it deformation retracts onto $X\cup_gB^2$.
+::: {.proof}
+Because the collapse fixes the attaching lateral boundary, it descends through the quotient. At the bottom lid $H(-,0)=f$, and at the top lid $H(-,1)=g$.
+:::
+
+<1>4. Therefore
+$$\boxed{X\cup_fB^2\simeq X\cup_gB^2.}$$
+::: {.proof}
+Both are deformation retracts of $R$.
+:::
+:::
