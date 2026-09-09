@@ -5,7 +5,7 @@ kind: problem
 title: "for all , there exists a unique holomorphic function such that and Notation: |A|"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Automorphisms
 relations: []
