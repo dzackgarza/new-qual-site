@@ -15,5 +15,20 @@ review: draft
 ---
 
 ::: problem
-If an irreducible cubic polynomial has Galois group NOT contained in A3, does it necessarily have to be all of $S_3$?
+Let $f\in F[x]$ be an irreducible separable cubic. If its Galois group is not contained in $A_3$, prove that its Galois group is $S_3$.
+:::
+
+::: {.solution}
+Let $L$ be the splitting field and
+\[
+G=\operatorname{Gal}(L/F)\le S_3
+\]
+via the action on the three roots.
+
+Because $f$ is irreducible, $G$ acts transitively on its roots. Hence $3$ divides $|G|$. The transitive subgroups of $S_3$ are therefore $A_3$ and $S_3$: indeed, a subgroup with order divisible by $3$ contains the unique subgroup $A_3$ of order $3$, and its order is either $3$ or $6$.
+
+By hypothesis $G\not\subseteq A_3$, so $G\ne A_3$. Consequently
+\[
+G=S_3.
+\]
 :::
