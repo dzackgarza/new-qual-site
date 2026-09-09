@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-2EMAW` has malformed $p$-group notation
-
-- **Object and need:** `P-2EMAW` states the standard theorem that maximal subgroups of finite $p$-groups are normal, but writes `p\dash$group`.
-- **Observed evidence:** The body literally contains `$p\dash$group`, which is malformed mathematical typography.
-- **Impact and owner:** The owning file is `corpus/problems/Algebra/P-2EMAW.md`.
-- **Uncertainty:** None about the intended notation.
-- **Repair:** Replace it by `$p$-group` and prove the theorem.
-
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
