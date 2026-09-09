@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-6XW74` omits finiteness from the conjugate-cover theorem
-
-- **Object and need:** `P-6XW74` should state Jordan's finite-group theorem: a finite group is not the union of conjugates of a proper subgroup, yielding derangements in finite transitive actions.
-- **Observed evidence:** The first bullet quantifies over an arbitrary group $G$. The finite hypothesis is essential; for example, the finitary symmetric group on a countably infinite set is the union of the conjugates of a point stabilizer, since every finitary permutation fixes some point. The second bullet already specializes to a finite set.
-- **Impact and owner:** `corpus/problems/Algebra/P-6XW74.md` is false as written in its first part.
-- **Uncertainty:** None about the finite correction.
-- **Repair:** Add finiteness to the first part and prove the theorem, then derive the derangement statement.
-
 ### `E-ZCJZC` omits finiteness and uses a false conjugate-intersection count
 
 - **Object and need:** `E-ZCJZC` states the same conjugate-cover theorem and already has a solution.
