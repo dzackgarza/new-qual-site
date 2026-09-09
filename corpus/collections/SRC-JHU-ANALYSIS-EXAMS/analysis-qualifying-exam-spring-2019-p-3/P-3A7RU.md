@@ -5,7 +5,7 @@ kind: problem
 title: Punctured unit disk and annulus are not conformally equivalent
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Conformal Mappings
 relations: []
