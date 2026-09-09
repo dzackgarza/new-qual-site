@@ -109,7 +109,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
 
-- [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection. No collection/card ingest required.
+- [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection.
+  No collection/card ingest required.
 
 - [ ] [qual18wintersol.pdf](assets/attachments/extracted/qual18wintersol.md) (61L, 10 problems) — algebra — Winter 2018
 
@@ -223,7 +224,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring78.pdf](assets/attachments/extracted/Spring78.md) (135L, 14 problems) — complex-analysis — Spring 19
 
-- [ ] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — real-analysis — Spring 19
+- [ ] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — prelim — Spring 1980 — reclassified 2026-09-09: mixed general preliminary exam (analysis, complex analysis, algebra, linear algebra, ODEs, geometry), not a Real Analysis-only source.
 
 - [ ] [Spring81.pdf](assets/attachments/extracted/Spring81.md) (167L, 17 problems) — topology — Spring 19
 
@@ -295,7 +296,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata
 
-- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — real-analysis — Spring 2007
+- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — reclassified 2026-09-09: UCLA Basic Exam mixing linear algebra, analysis, ODEs, and related prelim subjects.
 
 - [ ] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08
 
@@ -335,7 +336,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-18F.pdf](assets/attachments/extracted/basic-18F.md) (109L, 0 problems) — UCLA — FALL 2018
 
-- [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — real-analysis — SPRING 2018
+- [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — reclassified 2026-09-09: UCLA Basic Exam, a mixed prelim source rather than a Real Analysis collection.
 
 - [ ] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom
 
@@ -347,7 +348,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom
 
-- [ ] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — real-analysis — SPRING 2018
+- [x] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — disposition 2026-09-09: exact byte duplicate of `basic-18S.pdf` (SHA-256 `3ae97a051d30af40f6c497c68a1ebfad8ed56872cd471f4aa68c3b1ac8e19769`); ingest only the canonical `basic-18S.pdf` source.
 
 - [ ] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — prelim
 
@@ -393,7 +394,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29
 
-- [ ] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 0 problems) — real-analysis — Spring 2003
+- [ ] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 0 problems) — prelim — Spring 2003 — reclassified 2026-09-09: mixed Spring 2003 preliminary exam spanning algebra, analysis, complex analysis, and geometry.
 
 - [ ] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 0 problems) — applied-algebra — SPRING 2007
 
@@ -657,7 +658,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis
 
-- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — real-analysis
+- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
 
 - [ ] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra
 
