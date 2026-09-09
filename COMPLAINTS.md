@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-P5BF6` has several incorrect polynomial-ring hypotheses and formulas
+
+- **Object and need:** `E-P5BF6` should state the standard characterizations of nilpotents, units, and zero divisors in $R[x]$ for a commutative ring $R$ with identity.
+- **Observed evidence:** The unit criterion says `a_{k>1}\in N`, omitting the $x$-coefficient $a_1$; the final zero-divisor criterion allows `rf(x)=0` with no requirement $r\neq0$, making the condition vacuous; and the supplied unit computation writes `u+n=u^{-1}(1+u^{-1}n)` instead of $u(1+u^{-1}n)$. The commutative-unital hypothesis is stated only locally in one bullet although later claims also use it.
+- **Impact and owner:** Several requested or supplied statements on `corpus/problems/Algebra/E-P5BF6.md` are false or underspecified as written.
+- **Uncertainty:** None about these corrections. The final result is McCoy's theorem for one-variable polynomial rings over commutative rings.
+- **Repair:** Under TODO §7 / issue #2, make the commutative-unital hypothesis global, require every positive-degree coefficient to be nilpotent in the unit criterion, require $0\neq r\in R$ in the zero-divisor criterion, correct the unit factorization, and prove all parts.
+
+
 
 ## Workflow and rendering papercuts
 
