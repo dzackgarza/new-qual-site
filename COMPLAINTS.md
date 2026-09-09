@@ -65,3 +65,11 @@ of public mathematical remarks.
 - **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
+
+### Prose-only solution commits can be blocked by a stale same-stream hook
+
+- **Object and need:** Gemini-redo solution authoring in the dedicated `gemini-redo-20260909` worktree; prose-only card commits should use the documented `git commit --no-verify --only <card>` route and should not leave the worktree index locked.
+- **Observed evidence:** on 2026-09-09, a predecessor shell in this same worktree invoked ordinary `git commit --only corpus/problems/Algebra/E-AMD-DI5UYFIZ.md`, triggering the full pre-commit hook. More than nine minutes later the commit was still blocked in Semgrep while `.git/worktrees/gemini-redo-20260909/index.lock` remained present; attempts to make the documented prose-only commit failed with `fatal: Unable to create ... index.lock: File exists`.
+- **Impact and owner:** the long-running non-exempt hook blocks all further commits in this worktree even though the mathematical card is prose-only and already reviewed. This is workflow/tooling-owned; no corpus mathematics depends on the hook.
+- **Uncertainty:** the exact reason the Semgrep subprocess remained blocked was not diagnosed; the directly observed failure is the mismatch between the documented prose-only exemption and the predecessor command path that invoked the hook.
+- **Repair:** ensure solution-authoring helpers and handoff instructions consistently use `git commit --no-verify --only <card>` for prose-only card commits, and avoid leaving a same-worktree hook process alive across handoff.
