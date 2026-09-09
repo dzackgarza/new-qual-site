@@ -22,3 +22,7 @@ review: draft
 These are the first two conditions of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without their stem.
 That card now carries the whole exercise; merging these bullets back into it is a canonicity decision rather than a truncation repair.
 :::
+
+::: {.solution}
+This card is not a standalone exercise. It is an extracted fragment of `E-YAEMZ`, which contains the missing hypotheses and the full TFAE statement. No independent proof is appropriate here: the mathematical content is proved on `E-YAEMZ`.
+:::
