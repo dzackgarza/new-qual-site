@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -22,32 +25,49 @@ Is it true that the interior of a product is the product of the interiors? Speci
 :::
 
 ::: solution
-**Goal:** Prove $\operatorname{int}(A \times B) = \operatorname{int}(A) \times \operatorname{int}(B)$ for finite products, and discuss the infinite product case.
+<1>1. For two factors,
+\[
+\operatorname{int}_{X\times Y}(A\times B)
+=\operatorname{int}_X(A)\times\operatorname{int}_Y(B).
+\]
+<2>1. The right-hand side is open in $X\times Y$ and contained in $A\times B$, so it is contained in the left-hand side.
+<2>2. Conversely, if $(x,y)\in\operatorname{int}(A\times B)$, then some basic open set $U\times V$ satisfies
+\[
+(x,y)\in U\times V\subseteq A\times B.
+\]
+Hence $U\subseteq A$ and $V\subseteq B$, so $x\in\operatorname{int}(A)$ and $y\in\operatorname{int}(B)$.
 
-<1>1. Finite product case: $\operatorname{int}(A \times B) = \operatorname{int}(A) \times \operatorname{int}(B)$:
-    *Proof:*
-    <2>1. **Inclusion $\operatorname{int}(A) \times \operatorname{int}(B) \subseteq \operatorname{int}(A \times B)$:**
-        - $\operatorname{int}(A)$ is open in $X$ and $\operatorname{int}(B)$ is open in $Y$.
-        - By definition of the product topology, $\operatorname{int}(A) \times \operatorname{int}(B)$ is an open set in $X \times Y$.
-        - Furthermore, $\operatorname{int}(A) \times \operatorname{int}(B) \subseteq A \times B$.
-        - Since $\operatorname{int}(A \times B)$ is the largest open subset of $A \times B$, we have $\operatorname{int}(A) \times \operatorname{int}(B) \subseteq \operatorname{int}(A \times B)$.
-    <2>2. **Inclusion $\operatorname{int}(A \times B) \subseteq \operatorname{int}(A) \times \operatorname{int}(B)$:**
-        - Let $(x, y) \in \operatorname{int}(A \times B)$.
-        - By definition of the product topology, there exist open sets $U \subseteq X$ and $V \subseteq Y$ such that $(x, y) \in U \times V \subseteq A \times B$.
-        - Then $x \in U \subseteq A$, which means $x \in \operatorname{int}(A)$ since $U$ is open.
-        - Similarly, $y \in V \subseteq B$, which means $y \in \operatorname{int}(B)$ since $V$ is open.
-        - Therefore $(x, y) \in \operatorname{int}(A) \times \operatorname{int}(B)$.
-    <2>3. Combining both inclusions yields $\operatorname{int}(A \times B) = \operatorname{int}(A) \times \operatorname{int}(B)$.
+<1>2. The same argument gives the finite-product identity
+\[
+\operatorname{int}\!\left(\prod_{i=1}^n A_i\right)
+=\prod_{i=1}^n\operatorname{int}(A_i).
+\]
 
-<1>2. Infinite product case:
-    *Proof:*
-    <2>1. For an arbitrary product $\prod_{\alpha \in I} A_\alpha \subseteq \prod_{\alpha \in I} X_\alpha$:
-    <2>2. **In the box topology:** The equality $\operatorname{int}\left(\prod A_\alpha\right) = \prod \operatorname{int}(A_\alpha)$ always holds, by the same argument.
-    <2>3. **In the product (Tychonoff) topology:** The equality **fails** in general when infinitely many $A_\alpha$ are proper subsets with non-empty interior!
-        - In the product topology, any non-empty open set $U$ must have $\pi_\alpha(U) = X_\alpha$ for all but finitely many $\alpha$.
-        - If infinitely many $A_\alpha \subsetneq X_\alpha$ have $\operatorname{int}(A_\alpha) \ne \varnothing$, then $\prod \operatorname{int}(A_\alpha)$ is not open in the product topology, and in fact $\operatorname{int}\left(\prod A_\alpha\right) = \varnothing$ whenever infinitely many $A_\alpha \ne X_\alpha$.
-        - Example: In $\mathbb{R}^\mathbb{N}$ with product topology, let $A_n = [0, 1]$ for all $n \in \mathbb{N}$. Then $\operatorname{int}(A_n) = (0, 1)$, but $\operatorname{int}\left(\prod_{n=1}^\infty [0, 1]\right) = \varnothing \ne \prod_{n=1}^\infty (0, 1)$.
+<1>3. Let now $\prod_{i\in I}X_i$ have the product topology and put $A=\prod_{i\in I}A_i$.
+<2>1. If $A$ has nonempty interior, choose a basic open set
+\[
+\prod_{i\in I}U_i\subseteq A,
+\]
+where $U_i=X_i$ for all but finitely many $i$.
+<2>2. For every index with $U_i=X_i$, the inclusion $U_i\subseteq A_i$ forces $A_i=X_i$. Thus $A_i=X_i$ for all but finitely many $i$.
+<2>3. Conversely, if $A_i=X_i$ for all but finitely many $i$, then
+\[
+\operatorname{int}(A)=\prod_{i\in I}\operatorname{int}(A_i),
+\]
+because the right-hand side is then a basic open product (possibly empty), and the finite-coordinate argument from <1>1 proves maximality.
+<2>4. Therefore
+\[
+\operatorname{int}\!\left(\prod_{i\in I}A_i\right)=
+\begin{cases}
+\prod_{i\in I}\operatorname{int}(A_i),&A_i=X_i\text{ for all but finitely many }i,\\
+\varnothing,&\text{otherwise}.
+\end{cases}
+\]
 
-<1>3. Conclusion:
-    Yes, $\operatorname{int}(A \times B) = \operatorname{int}(A) \times \operatorname{int}(B)$ is true for any finite product, but fails for infinite products under the standard product topology. Q.E.D.
+<1>4. Hence the finite-product identity always holds, whereas for infinite products it can fail. For example,
+\[
+\operatorname{int}_{\mathbb R^{\mathbb N}}([0,1]^{\mathbb N})=\varnothing
+\quad\text{but}\quad
+\prod_{n\ge1}\operatorname{int}[0,1]=(0,1)^{\mathbb N}\ne\varnothing.
+\]
 :::
