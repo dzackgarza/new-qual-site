@@ -126,14 +126,6 @@ of public mathematical remarks.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
 
-### `P-FHDRZ` does not specify the base finite field
-
-- **Object and need:** `P-FHDRZ` asks for “the smallest finite field” in which a quartic with integer coefficients necessarily has four roots.
-- **Observed evidence:** A finite field has a fixed characteristic, while the card supplies only an integer polynomial and no prime $p$ or reduction modulo $p$. Local history shows the same wording from intake onward and contains no missing base-field clause.
-- **Impact and owner:** There is no uniquely determined finite field answering the literal question. If the intended problem were “over $\FF_p$,” then the smallest uniform extension splitting every quartic would be $\FF_{p^{12}}$, but choosing that interpretation would add a hypothesis not present in the source. The owning file is `corpus/problems/Algebra/P-FHDRZ.md`.
-- **Uncertainty:** The likely intended finite-field exercise is clear, but the prime/base field is not source-recoverable.
-- **Repair:** Recover the original source context and specify the base field (for example $\FF_p$) before authoring a solution.
-
 ### `P-JH3EW` does not determine a Galois group without square-class hypotheses
 
 - **Object and need:** `P-JH3EW` asks for $\mathrm{Gal}(\QQ(\sqrt{n_1},\ldots,\sqrt{n_m})/\QQ(\sqrt{n_1}+\cdots+\sqrt{n_m}))$ with no assumptions on the integers $n_i$.
