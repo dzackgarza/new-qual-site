@@ -183,3 +183,11 @@ of public mathematical remarks.
 - **Impact and owner:** Burnside's lemma cannot produce a unique answer until the colored set is specified. The owning file is `corpus/problems/Algebra/P-HEOYS.md`.
 - **Uncertainty:** Vertex- and face-coloring counts agree because both actions are the natural $S_4$ action on four objects, but edge-coloring gives a different answer; choosing among them would be speculation.
 - **Repair:** Recover source context and specify the colored set before authoring the Burnside count.
+
+### `P-HQ6DM` has inconsistent dimensions in matrix equivalence
+
+- **Object and need:** `P-HQ6DM` is meant to show that matrix similarity and matrix equivalence are equivalence relations.
+- **Observed evidence:** The second definition says `M(n×n,R)` but uses left/right changes of basis of different sizes, writes $P\in\mathrm{GL}(n,R)$ and $Q\in\mathrm{GL}(m,R)$ in the wrong order for an $m\times n$ matrix, and uses a rectangular `I_{m,n}` as though it were invertible for reflexivity. The body is also a completed proof fragment rather than a posed exercise.
+- **Impact and owner:** The similarity part is essentially correct, but the matrix-equivalence relation is malformed unless dimensions are fixed consistently. The owning file is `corpus/problems/Algebra/P-HQ6DM.md`.
+- **Uncertainty:** None about the intended standard definitions.
+- **Repair:** State similarity on $M_n(R)$ using one $P\in\mathrm{GL}_n(R)$, and equivalence on $M_{m\times n}(R)$ using $P\in\mathrm{GL}_m(R)$ and $Q\in\mathrm{GL}_n(R)$; then prove reflexivity, symmetry, and transitivity cleanly.
