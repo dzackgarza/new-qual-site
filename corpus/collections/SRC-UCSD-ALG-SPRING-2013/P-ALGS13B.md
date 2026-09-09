@@ -33,12 +33,12 @@ Prove that any projective $A$-module is flat.
 ::: {.solution}
 <1>1. Every free $A$-module is flat.
 ::: {.proof}
-Let $F=igoplus_{i\in I}A$.
+Let $F=\bigoplus_{i\in I}A$.
 For every $A$-module $M$ there is a natural isomorphism
 \[
-M\otimes_A F\cong igoplus_{i\in I}(M\otimes_A A)\cong igoplus_{i\in I}M.
+M\otimes_A F\cong \bigoplus_{i\in I}(M\otimes_A A)\cong \bigoplus_{i\in I}M.
 \]
-Thus the functor $-\otimes_A F$ is naturally isomorphic to the direct-sum functor $M\mapstoigoplus_{i\in I}M$.
+Thus the functor $-\otimes_A F$ is naturally isomorphic to the direct-sum functor $M\mapsto\bigoplus_{i\in I}M$.
 Direct sums of exact sequences of modules are exact, so $-\otimes_A F$ is exact.
 Hence $F$ is flat.
 :::

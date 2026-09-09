@@ -93,9 +93,9 @@ By <1>2, an automorphism of \(E\) is determined by its value on \(\beta\). By <1
 \[
 \operatorname{Fr}^k(\beta)=\beta
 \quad\Longleftrightarrow\quad
-2^k=1\text{ in }\mathbb F_p^	imes.
+2^k=1\text{ in }\mathbb F_p^\times.
 \]
-Thus the least positive \(k\) for which Frobenius is the identity is exactly \(\operatorname{ord}_{\mathbb F_p^	imes}(2)\).
+Thus the least positive \(k\) for which Frobenius is the identity is exactly \(\operatorname{ord}_{\mathbb F_p^\times}(2)\).
 :::
 
 <1>7. Hence

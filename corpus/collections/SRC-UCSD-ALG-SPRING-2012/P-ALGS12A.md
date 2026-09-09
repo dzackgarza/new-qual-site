@@ -78,7 +78,7 @@ Since \(C_{503}\) is cyclic of prime order,
 \[
 \operatorname{Aut}(C_{503})\cong (\mathbb Z/503\mathbb Z)^\times\cong C_{502}.
 \]
-The image of \(	heta\) has order dividing both \(|H|=4\) and \(502=2\cdot251\). Hence
+The image of \(\theta\) has order dividing both \(|H|=4\) and \(502=2\cdot251\). Hence
 \[
 |\operatorname{im}\theta|\mid \gcd(4,502)=2.
 \]
@@ -125,9 +125,9 @@ Write
 G=C_{503}\rtimes_\theta H
 \]
 as above.
-If \(	heta\) is trivial, then \(C_{503}\leq Z(G)\), so the center is nontrivial.
+If \(\theta\) is trivial, then \(C_{503}\leq Z(G)\), so the center is nontrivial.
 
-Suppose \(	heta\) is nontrivial.
+Suppose \(\theta\) is nontrivial.
 By <1>3,
 \[
 |\operatorname{im}\theta|=2,

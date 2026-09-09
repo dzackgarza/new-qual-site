@@ -65,7 +65,7 @@ Hence
 \]
 is an $E$-basis of $E\otimes_F F[x]/(f)$, while
 \[
-1,\bar x,\ldots,ar x^{d-1}
+1,\bar x,\ldots,\bar x^{d-1}
 \]
 is an $E$-basis of $E[x]/(f)$.
 The map $\Phi$ sends the first basis to the second, so it is an isomorphism.
