@@ -41,14 +41,6 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
-### `E-MSDCC` overstates cyclic-subgroup intersections and gives an asymmetric union criterion
-
-- **Object and need:** `E-MSDCC` should state correct general facts about intersections and unions of subgroups.
-- **Observed evidence:** The card asserts that cyclic subgroups $H\cong C_m$ and $K\cong C_n$ of an arbitrary group satisfy $H\cap K\cong C_{\gcd(m,n)}$. This fails for two distinct order-$2$ subgroups of $C_2\times C_2$, whose intersection is trivial. It also says $H\cup K$ is a subgroup iff $H\subset K$, omitting the equally valid case $K\subseteq H$.
-- **Impact and owner:** Two requested conclusions on `corpus/problems/Algebra/E-MSDCC.md` are false as written.
-- **Uncertainty:** The gcd equality is correct when $H$ and $K$ lie in a common cyclic group, because such a group has a unique subgroup of each divisor order. Without that ambient hypothesis, only $|H\cap K|\mid\gcd(m,n)$ is universal.
-- **Repair:** Under TODO §7 / issue #2, state the universal divisibility result together with the common-cyclic-group equality case, correct the union criterion symmetrically, and solve all requested parts.
-
 
 ## Workflow and rendering papercuts
 
