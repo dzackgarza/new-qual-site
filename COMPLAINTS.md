@@ -75,6 +75,14 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### `P-3PTP5` contains a dead Obsidian attachment embed
+
+- **Object and need:** `P-3PTP5` should render only its field/ideal exercise and solution.
+- **Observed evidence:** The problem body contains `![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 19.png]]`, an Obsidian-local attachment reference not resolved by the corpus renderer.
+- **Impact and owner:** The owning card `corpus/problems/Algebra/P-3PTP5.md` leaks a nonportable source-workspace artifact into public content.
+- **Uncertainty:** None; the image is not needed to state or prove the exercise.
+- **Repair:** Remove the dead embed while authoring the complete proof.
+
 ### Local repository connector and batched authoring query failures
 
 - **Object and need:** Algebra solution authoring needs reliable local repository access and the existing authoring-query commands so a worker can inspect the shared state and derive an unsolved worklist without touching `queues/C-unsolved-cards.md`.
