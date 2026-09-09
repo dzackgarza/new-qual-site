@@ -92,15 +92,6 @@ of public mathematical remarks.
 \n\n\n
 
 
-### `P-CEZOG` contains no posed problem
-
-- **Object and need:** `P-CEZOG` is classified as a problem card but contains only a definition of the order of a cyclic module in terms of the annihilator of a generator.
-- **Observed evidence:** The complete local history preserves the same declarative fragment from intake onward; no question, requested proof, or missing continuation survives in any revision.
-- **Impact and owner:** `corpus/problems/Algebra/P-CEZOG.md` remains parser-unsolved, but there is no source-faithful task to solve.
-- **Uncertainty:** The intended exercise is unrecoverable from local history and the unsorted collection provides no external source text.
-- **Repair:** Recover the original source/question before converting the definition fragment into a posed problem; do not invent a task from the title alone.
-
-
 ### `P-CVUQ3` reverses the semidirect-product factors
 
 - **Object and need:** `P-CVUQ3` claims $\Gal(x^{15}+2/\QQ)\cong S_2\rtimes \ZZ/15\ZZ$ with $S_2$ a Sylow $2$-subgroup.
@@ -134,14 +125,6 @@ of public mathematical remarks.
 - **Impact and owner:** This does not change corpus mathematics, but it interrupts the repository-prescribed workflow of reading current state and selecting work through project tooling. The affected boundary is the local connector/execution environment rather than `qualc` semantics.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
-
-### `P-CEZOG` is a definition fragment, not a posed problem
-
-- **Object and need:** `P-CEZOG` is classified as a problem card but contains only the definition of the order ideal of a generator in a cyclic module and the consequence $ra=0$.
-- **Observed evidence:** The body contains no imperative, question, or theorem to prove; it simply states `A has order r iff ... O_a=(r)` and `In particular, ra=0`.
-- **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
-- **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
-- **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
 
 ### `P-FHDRZ` does not specify the base finite field
 
