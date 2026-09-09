@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-2M2P2` makes the Sylow-intersection claim tautological
-
-- **Object and need:** `P-2M2P2` is intended to state the standard theorem that if $P\in\operatorname{Syl}_p(G)$ and $H\trianglelefteq G$, then $P\cap H\in\operatorname{Syl}_p(H)$.
-- **Observed evidence:** The current body instead assumes $P\in\operatorname{Syl}_p(H)$, in which case $P\le H$ and $P\cap H=P$, so the requested conclusion is immediate and does not use normality.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-2M2P2.md` has the wrong ambient group in its Sylow hypothesis.
-- **Uncertainty:** None about the standard intended theorem; the title itself also contains the same ambient-group typo.
-- **Repair:** Replace $P\in\operatorname{Syl}_p(H)$ by $P\in\operatorname{Syl}_p(G)$ in title/body and prove the intersection theorem.
-
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
