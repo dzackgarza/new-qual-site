@@ -233,3 +233,10 @@ of public mathematical remarks.
 - **Observed evidence:** Pointwise multiplication is not closed on general $L^1$ spaces, while convolution makes $L^1(G)$ a Banach algebra only after specifying a locally compact group and Haar measure.
 - **Impact and owner:** The owning file is `corpus/problems/Algebra/P-XZRST.md`; the surviving prompt has no unique answer.
 - **Repair:** Recover the intended measure/group and multiplication before authoring a solution.
+
+### `P-YLFU2` is a theorem fragment and `P-Z3NJF` does not specify rotational versus full symmetry
+
+- **Object and need:** `P-YLFU2` contains the PID structure theorem as raw problem-body prose rather than asking for a statement/proof. `P-Z3NJF` asks for symmetry groups of Platonic solids without specifying orientation-preserving versus all Euclidean symmetries.
+- **Observed evidence:** The PID theorem is recoverable exactly from its body. For the Platonic solids, rotational and full symmetry groups differ: tetrahedron $A_4$ versus $S_4$, cube $S_4$ versus $S_4\times C_2$, and icosahedron $A_5$ versus $A_5\times C_2$.
+- **Impact and owner:** Both cards can be repaired without source speculation by posing the theorem on `P-YLFU2` and reporting both standard symmetry conventions on `P-Z3NJF`.
+- **Repair:** Restore a theorem/proof prompt for `P-YLFU2`; make both rotational and full groups explicit on `P-Z3NJF`.
