@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,43 +26,28 @@ What is the Galois group of $x^7 - 1$ over the rationals?
 :::
 
 ::: {.solution}
-<1>1. The splitting field of $x^7 - 1$ over $\QQ$ is $\QQ(\zeta_7)$, where $\zeta_7$ is a primitive $7$-th root of unity.
-::: {.proof}
-the roots of $x^7 - 1$ are the $7$-th roots of unity, all powers of $\zeta_7$.
-:::
+The roots of $x^7-1$ are the seventh roots of unity, so its splitting field over $\mathbb Q$ is
+\[
+K=\mathbb Q(\zeta_7),
+\]
+where $\zeta_7$ is primitive. Since
+\[
+\Phi_7(x)=x^6+x^5+\cdots+x+1
+\]
+is irreducible over $\mathbb Q$, we have $[K:\mathbb Q]=6$.
 
-<1>2. The minimal polynomial of $\zeta_7$ over $\QQ$ is the cyclotomic polynomial $\Phi_7(x) = x^6 + x^5 + \cdots + x + 1$, of degree $6$.
-::: {.proof}
-$\Phi_7(x) = (x^7 - 1)/(x - 1)$ is irreducible over $\QQ$ (cyclotomic polynomials are irreducible).
-:::
-
-<1>3. Hence $[\QQ(\zeta_7) : \QQ] = 6$.
-::: {.proof}
-<1>2.
-:::
-
-<1>4. The extension $\QQ(\zeta_7)/\QQ$ is Galois.
-::: {.proof}
-it is the splitting field of the separable polynomial $x^7 - 1$ over $\QQ$ (characteristic $0$).
-:::
-
-<1>5. $\operatorname{Gal}(\QQ(\zeta_7)/\QQ) \cong (\ZZ/7\ZZ)^\times$.
-::: {.proof}
-an automorphism sends $\zeta_7 \mapsto \zeta_7^a$ for $a \in (\ZZ/7\ZZ)^\times$, and this assignment is an isomorphism.
-:::
-
-<1>6. $(\ZZ/7\ZZ)^\times \cong \ZZ/6\ZZ$ is cyclic of order $6$.
-::: {.proof}
-$7$ is prime, so the multiplicative group of $\FF_7$ is cyclic of order $6$.
-:::
-
-<1>7. Hence $\operatorname{Gal}(x^7 - 1 / \QQ) \cong \ZZ/6\ZZ$.
-::: {.proof}
-<1>5 and <1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
-:::
+Every $\mathbb Q$-automorphism of $K$ is determined by
+\[
+\zeta_7\longmapsto \zeta_7^a,
+\qquad a\in(\mathbb Z/7\mathbb Z)^\times,
+\]
+and every such choice gives an automorphism. Hence
+\[
+\operatorname{Gal}(K/\mathbb Q)
+\cong(\mathbb Z/7\mathbb Z)^\times.
+\]
+The latter group is cyclic of order $6$, so
+\[
+\operatorname{Gal}(x^7-1/\mathbb Q)\cong C_6.
+\]
 :::
