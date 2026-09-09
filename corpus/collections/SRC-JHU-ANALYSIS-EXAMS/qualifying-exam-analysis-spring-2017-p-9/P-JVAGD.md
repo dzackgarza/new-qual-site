@@ -28,7 +28,9 @@ Let $f:\mathbb R\to[0,\infty)$ be measurable, and let
 \[
 \varphi:[0,\infty)\to[0,\infty)
 \]
-be nondecreasing and absolutely continuous on $[0,T]$ for every finite $T$. Assume $\varphi(0)=0$. Prove that
+be nondecreasing and absolutely continuous on $[0,T]$ for every finite $T$.
+Assume $\varphi(0)=0$.
+Prove that
 \[
 \int_{\mathbb R}\varphi(f(x))\,dx
 =
