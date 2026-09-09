@@ -105,8 +105,7 @@ of public mathematical remarks.
 - **Repair:** This requires source recovery or an explicit editorial decision supplying the missing conclusion. Until then, leave the card unsolved and do not infer a theorem from the title alone.
 
 
-\n\n### `P-AIAVC` omits the coefficient field for character-theoretic classification\n\n- **Object and need:** `P-AIAVC` asks whether two finite-group representations that are pointwise conjugate are isomorphic, but does not specify the coefficient field.\n- **Observed evidence:** The repository representation index defines representations over an arbitrary field $k$, while its character-theory classification statements are specifically for finite-dimensional complex representations. The intended proof uses equality of characters plus semisimplicity, so the complex setting is material.\n- **Impact and owner:** The owning file `corpus/problems/Algebra/P-AIAVC.md` is underspecified as written.\n- **Uncertainty:** The surrounding representation-theory material strongly indicates the standard complex finite-group setting for this character argument.\n- **Repair:** Under TODO §7 / issue #2, state that the representations are finite-dimensional complex representations and prove that pointwise conjugacy gives equal characters, hence isomorphism.\n
-## Workflow and rendering papercuts
+\n\n## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
 
