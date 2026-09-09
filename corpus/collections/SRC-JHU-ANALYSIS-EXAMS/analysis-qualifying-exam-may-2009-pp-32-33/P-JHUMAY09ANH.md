@@ -15,7 +15,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
-  note: Checked against Problem 8 of the JHU Analysis Qualifying Exam, May 2009, in the preserved exam collection. The source omits the necessary nonzero hypothesis: if f=0 almost everywhere, every a_n is zero and a_{n+1}/a_n is undefined.
+  note: 'Checked against Problem 8 of the JHU Analysis Qualifying Exam, May 2009, in the preserved exam collection. The source omits the necessary nonzero hypothesis: if f=0 almost everywhere, every a_n is zero and a_{n+1}/a_n is undefined.'
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-08
