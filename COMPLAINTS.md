@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-N626Y` drops the extension-property placeholder from its prompt
+
+- **Object and need:** `E-N626Y` asks whether algebraic, normal, and separable extensions remain so after enlarging the base to an intermediate field.
+- **Observed evidence:** The exercise body literally begins `If $F$ is over $K$` and later asks whether `$F$ necessarily over $E$`, omitting the property placeholder in both clauses. The title supplies the three intended properties.
+- **Impact and owner:** The owning card `corpus/problems/Algebra/E-N626Y.md` is grammatically incomplete and does not literally state the mathematical hypotheses it asks the reader to vary.
+- **Uncertainty:** The intended exercise is unambiguous from the title and the final sentence naming `algebraic`, `normal`, and `separable`.
+- **Repair:** Under TODO §7 / issue #2, rewrite the prompt with an explicit property variable and answer all three cases.
+
+
 
 ## Workflow and rendering papercuts
 
