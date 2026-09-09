@@ -12,96 +12,95 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 2 of the UGA Fall 2014 real-analysis qualifying exam source recorded by this collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
-Let $I$ be an index set and $\alpha: I \to (0, \infty)$.
+::: problem
+Let $I$ be an index set and let $a:I\to(0,\infty)$.
 
-a.
-Show that
+(a) Show that
 \[
-\sum_{i \in I} a(i):=\sup _{\substack{ J \subset I \\ J \text { finite }}} \sum_{i \in J} a(i)<\infty \implies I \text{ is countable.}
+\sum_{i\in I}a(i)
+:=\sup_{\substack{J\subset I\\J\text{ finite}}}\sum_{i\in J}a(i)<\infty
+\quad\Longrightarrow\quad
+I\text{ is countable}.
 \]
 
-b.
-Suppose $I = \QQ$ and $\sum_{q \in \mathbb{Q}} a(q)<\infty$.
-Define
+(b) Suppose $I=\mathbb Q$ and $\sum_{q\in\mathbb Q}a(q)<\infty$. Define
 \[
-f(x):=\sum_{\substack{q \in \mathbb{Q}\\ q \leq x}} a(q).
+f(x):=\sum_{\substack{q\in\mathbb Q\\q\le x}}a(q).
 \]
-Show that $f$ is continuous at $x \iff x\not\in \QQ$.
-
-:::{.concept}
-\envlist
-
-- Can always filter sets $X$ with a function $X\to \RR$.
-- Countable union of countable sets is still countable.
-- Continuity: $\lim_{y\to x} f(y) = f(x)$ from either side.
-- Trick: pick enumerations of countable sets and reindex sums
+Show that $f$ is continuous at $x$ if and only if $x\notin\mathbb Q$.
 :::
 
-:::{.solution}
-\envlist
-
-:::{.proof title="of a"}
-\envlist
-
-- Set $S \definedas \sum_{i\in I} \alpha(i)$, we will show that $S<\infty \implies I$ is countable.
-- Write 
+::: solution
+<1>1. Prove that the index set in part (a) is countable.
+::: proof
+Put
 \[
-I = \Union_{n\geq 0} S_n, &&
-S_n \definedas \theset{i\in I \suchthat \alpha(i) \geq {1\over n}}
-.\]
-  - Note that $S_n \subseteq S$ for all $n$, so $\sum_{i\in I}\alpha(i) \geq \sum_{i\in S_n} \alpha(i)$ for all $n$.
-  - It suffices to show that $S_n$ is countable, since $I$ is a countable union of $S_n$.
-- There is an inequality
-\[  
-\infty 
-&> S \da \sum_{i\in I} \alpha(i) \\
-&\geq \sum_{i\in S_n} \alpha(i) \\
-&\geq \sum_{i\in S_n} {1\over n} \\
-&= {1\over n} \sum_{i\in S_n} 1 \\
-&= \qty{1\over n} \# S_n \\ \\
-\implies \infty &> n S \geq \# S_n
-.\]
+S:=\sum_{i\in I}a(i)<\infty
+\]
+and, for $n\ge1$, define
+\[
+I_n:=\{i\in I:a(i)\ge 1/n\}.
+\]
+If $J\subset I_n$ is finite, then
+\[
+\frac{|J|}{n}
+\le \sum_{i\in J}a(i)
+\le S.
+\]
+Thus every finite subset of $I_n$ has cardinality at most $nS$, which forces $I_n$ itself to be finite.
+
+Since every $a(i)>0$, for each $i\in I$ there is some $n$ with $a(i)\ge1/n$. Hence
+\[
+I=\bigcup_{n=1}^\infty I_n.
+\]
+This is a countable union of finite sets, so $I$ is countable.
 :::
 
-:::{.proof title="of b"}
-\envlist
-
-- We'll prove something more general: let $Q = \ts{q_k}$ be countable and $\ts{\alpha_k \da \alpha(q_k)}$ be summable, and define
+<1>2. Show that $f$ is discontinuous at every rational point.
+::: proof
+Fix $r\in\mathbb Q$. Since $a(r)>0$, for every $y<r$,
 \[
-f(x) \da \sum_{q_k\leq x} \alpha_k
-.\]
-  
-  - $f$ is always discontinuous precisely on the countable set $Q$ and continuous on $\RR\sm Q$.
-
-  - $f$ is always left-continuous, is right-continuous at $x\in\RR\sm Q$, and *not* right-continuous at $x\in Q$
-
-  - $f$ has jump discontinuities at every $q_m$, where the jump is precisely $\alpha_m$.
-
-- This follows from computing the left and right limits:
-\[
-f(x^+) &= \lim_{h\to 0} \sum_{q_k \leq x+h} \alpha_k = \sum_{q_k\leq x} \alpha_k = \sum_{q_k < x} \alpha_k + \sum_{q_k = x} \alpha_k \\
-f(x^-) &= \lim_{h\to 0} \sum_{q_k \leq x-h} \alpha_k = \sum_{q_k < x} \alpha_k
-,\]
-  where we've used that $\ts{q_k \leq x} = \ts{q_k < x} \disjoint \ts{x}$ in the first equality.
-
-- Then if $x=q_m$ for some $m$,
-\[
-f(x^+) &= f(q_m^+) = \sum_{q_k < q_m} \alpha_k + \alpha_m \\
-f(x^-) &= f(a_m^-) = \sum_{q_k< q_m} \alpha_k
-,\]
-which differ when $\alpha_m \neq 0$: the right-hand limit $f(q_m^+)$ equals $\sum_{q_k < q_m}\alpha_k + \alpha_m$, while the left-hand limit $f(q_m^-)$ equals $\sum_{q_k < q_m}\alpha_k$, so their difference is exactly $\alpha_m \neq 0$.
-
-- Taking $x\not\in Q$, we have $\ts{q_k \leq x} = \ts{q_k < x}$, since $\ts{q_k=x} = \emptyset$, so
-\[
-f(x^+) &= \sum_{q_k\leq x} \alpha_k = \sum_{q_k < x} \alpha_k \\
-f(x^-) &= \sum_{q_k< x} \alpha_k
-,\]
-  so the limits agree.
-
-- To recover the result in the problem, let $\QQ = \ts{q_k}$ be any enumeration of the rationals.
-
+f(r)-f(y)
+=\sum_{y<q\le r}a(q)
+\ge a(r).
+\]
+Therefore values approaching $r$ from the left remain at least $a(r)$ below $f(r)$. Hence $f$ is not continuous at $r$.
 :::
 
+<1>3. Show that $f$ is continuous at every irrational point.
+::: proof
+Fix $x\notin\mathbb Q$ and $\varepsilon>0$. Since the nonnegative family $(a(q))_{q\in\mathbb Q}$ is summable, there is a finite set $F\subset\mathbb Q$ such that
+\[
+\sum_{q\in\mathbb Q\setminus F}a(q)<\varepsilon.
+\]
+Because $x\notin F$ and $F$ is finite, choose $\delta>0$ such that
+\[
+(x-\delta,x+\delta)\cap F=\varnothing.
+\]
+If $|y-x|<\delta$, then the rational numbers whose terms contribute to the difference between $f(y)$ and $f(x)$ all lie in $\mathbb Q\setminus F$. Therefore
+\[
+|f(y)-f(x)|
+\le\sum_{q\in\mathbb Q\setminus F}a(q)
+<\varepsilon.
+\]
+Thus $f$ is continuous at $x$.
+
+Combining Steps 2 and 3,
+\[
+\boxed{f\text{ is continuous at }x\iff x\notin\mathbb Q.}
+\]
+:::
 :::
