@@ -116,6 +116,31 @@ of public mathematical remarks.
 - **Uncertainty:** The intended exercise is unrecoverable from local history and the unsorted collection provides no external source text.
 - **Repair:** Recover the original source/question before converting the definition fragment into a posed problem; do not invent a task from the title alone.
 
+
+### `P-CVUQ3` reverses the semidirect-product factors
+
+- **Object and need:** `P-CVUQ3` claims $\Gal(x^{15}+2/\QQ)\cong S_2\rtimes \ZZ/15\ZZ$ with $S_2$ a Sylow $2$-subgroup.
+- **Observed evidence:** The repository macro `\semidirect` is `\rtimes`, so its first factor is the normal factor. For the splitting field $L=\QQ(\alpha,\zeta_{15})$ with $\alpha^{15}=-2$, the subgroup $\Gal(L/\QQ(\zeta_{15}))\cong C_{15}$ is normal, while a complement is $\Gal(\QQ(\zeta_{15})/\QQ)\cong(\ZZ/15\ZZ)^\times\cong C_4\times C_2$, of order $8$ and hence Sylow $2$. The Sylow-$2$ complement is not the normal factor in the natural affine/Kummer presentation.
+- **Impact and owner:** The displayed semidirect product in `corpus/problems/Algebra/P-CVUQ3.md` has the factors in the wrong order.
+- **Uncertainty:** None; the degree calculation gives $|G|=15\cdot8=120$ and the cyclotomic fixed-field subgroup identifies the normal $C_{15}$ canonically.
+- **Repair:** State $\Gal(L/\QQ)\cong C_{15}\rtimes (\ZZ/15\ZZ)^\times$, equivalently $C_{15}\rtimes S_2$, and prove the splitting/complement structure.
+
+### `P-CWZF3` omits nonzero from the prime-ideal PID criterion
+
+- **Object and need:** `P-CWZF3` says $R/(p)$ is a field when $(p)$ is prime in a PID.
+- **Observed evidence:** In the PID $\ZZ$, the ideal $(0)$ is prime but $\ZZ/(0)\cong\ZZ$ is not a field. The standard theorem is that every nonzero prime ideal in a PID is maximal.
+- **Impact and owner:** `corpus/problems/Algebra/P-CWZF3.md` is false if $p=0$ is allowed.
+- **Uncertainty:** None.
+- **Repair:** Require $(p)\ne(0)$ (equivalently a nonzero prime element $p$) and prove maximality/field quotient.
+
+### `P-D7DNH` and `P-DB3EP` are solution fragments stored as problems
+
+- **Object and need:** Both cards are classified as problems but contain only attempted solution prose rather than posed tasks.
+- **Observed evidence:** `P-D7DNH` begins with application of the structure theorem and a claimed Smith form; `P-DB3EP` begins with one implication of a proof. Their titles recover the intended tasks, and the displayed matrix in `P-D7DNH` is sufficient to state its quotient computation precisely.
+- **Impact and owner:** The cards are parser-unsolved despite already containing proof-like text, and the public problem surface does not actually pose the exercise.
+- **Uncertainty:** None about the intended theorem/computation from the titles and surviving data.
+- **Repair:** Restore explicit problem statements, independently verify the Smith invariants / matrix-equation equivalence, and move the reasoning into structured solution blocks.
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
