@@ -494,7 +494,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
 
-- [ ] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders**
+- [x] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: mixed-source Measure Theory question bank, not a single qualifying-exam sitting. Its introduction states that problems are drawn from Stein--Shakarchi and Carothers as well as CUNY Graduate Center qualifying exams, with color coding distinguishing textbook-only questions from questions seen on quals; that visual provenance is not faithfully retained by the markdown extraction. The canonical PDF is already linked from `wiki/real-analysis/resources/problems.md`, so intake stops at the existing resource representation rather than creating cards with false or erased source attribution.
 
 - [x] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — real-analysis — October 2012 — exact byte duplicate of `Giant_List_of_Problems.pdf` (same SHA-256); do not create a second collection
 
