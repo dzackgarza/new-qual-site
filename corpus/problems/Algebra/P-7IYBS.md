@@ -12,31 +12,52 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Note that if $A = 0$ or $I$ then $A$ is patently diagonal, so suppose otherwise. 
-Since $A^2 = A$, we have $A^2 - A = 0$ and thus $A$ satisfies the polynomial $p(x) = x^2 - x = x(x-1)$.
-Moreover, since $A\neq 0, I$, neither $x$ nor $x-1$ alone annihilates $A$, so the minimal polynomial has degree at least $2$; since $p$ is monic of degree $2$ and annihilates $A$, it must in fact be the minimal polynomial.
+Let $A\in M_n(F)$ satisfy $A^2=A$. Prove that $A$ is diagonalizable over $F$, and determine its possible diagonal form.
+:::
 
-We can immediately deduce that the size of the largest Jordan block corresponding to $\lambda = 0$ is exactly 1, as is the size of the largest Jordan block corresponding to $\lambda = 1$. 
-But this says that *all* Jordan blocks must be size 1, so $JNF(A)$ has no off-diagonal entries and is thus diagonal.
+::: {.solution}
+<1>1. The minimal polynomial of $A$ divides
+\[
+x^2-x=x(x-1).
+\]
+::: {.proof}
+The relation $A^2=A$ is exactly
+\[
+A(A-I)=0,
+\]
+so the polynomial $x(x-1)$ annihilates $A$. Hence the minimal polynomial divides it.
+:::
 
-If $k$ is the multiplicity of $\lambda = 0$ as an eigenvalue, we have
+<1>2. The polynomial $x(x-1)$ has no repeated root over any field.
+::: {.proof}
+Its roots are $0$ and $1$, which are distinct in every field. Thus every divisor of $x(x-1)$ is squarefree.
+:::
 
-\begin{align*}
-A \sim 
-\left[\begin{array}{ccc|cccc}
-0 & 0 & 0     & 0 & 0 & 0 & 0 \\
-0 & \ddots & 0     & 0 & 0 & 0 & 0 \\
-0 & 0 & 0     & 0 & 0 & 0 & 0 \\ 
-\hline
-0 & 0 & 0     & 1 & 0 & 0 & 0 \\
-0 & 0 & 0     & 0 & 1 & 0 & 0 \\
-0 & 0 & 0     & 0 & 0 & \ddots & 0 \\
-0 & 0 & 0     & 0 & 0 & 0 & 1
-\end{array}\right]
-,\end{align*}
+<1>3. Therefore $A$ is diagonalizable.
+::: {.proof}
+A linear operator is diagonalizable over $F$ if and only if its minimal polynomial splits over $F$ as a product of distinct linear factors. By <1>1--<1>2, the minimal polynomial of $A$ has this form.
+:::
 
-which has a $k\times k$ zero block and an $(n-k)\times(n-k)$ identity block.
+<1>4. In a suitable basis,
+\[
+A\sim\operatorname{diag}(\underbrace{1,\ldots,1}_{r},\underbrace{0,\ldots,0}_{n-r})
+\]
+for some $0\le r\le n$.
+::: {.proof}
+By <1>3 the only possible eigenvalues are the roots $0$ and $1$ of the annihilating polynomial. Hence a diagonal form consists only of $0$'s and $1$'s. The number $r$ of $1$'s is
+\[
+r=\operatorname{rank}(A)=\dim\operatorname{im}(A),
+\]
+while the number of $0$'s is $n-r=\dim\ker A$.
+:::
 :::
