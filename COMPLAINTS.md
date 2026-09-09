@@ -215,8 +215,3 @@ of public mathematical remarks.
 ### Algebra P-PS4CG is false as titled
 
 `corpus/problems/Algebra/P-PS4CG.md` claims that every group of order $p^2q$ has a unique Sylow $p$-subgroup. This is false: the dihedral group of order $20=2^2\cdot5$ has five Sylow $2$-subgroups. The stored proof assumes $n_p\ne1$, then considers only $n_q=p$ and $n_q=p^2$, omitting the valid case $n_q=1$. Local history does not recover an additional hypothesis. A nearby correct theorem in the corpus is that every group of order $p^2q$ has at least one normal Sylow subgroup. Recover the original source intent before changing this card's target.
-
-### Algebra P-REKYU and P-RI3ZA: quotient/normality statement defects
-
-- `P-REKYU` says every quotient of a dihedral group is again dihedral. Under the standard convention that `D_n` has order `2n` with `n >= 2`, this is false: quotienting `D_n` by its rotation subgroup gives `C_2`. The correct statement is that every quotient is cyclic or dihedral (allowing degenerate dihedral conventions collapses this distinction).
-- `P-RI3ZA` attempts to show normality is not transitive using `Q <= Q(cuberoot 2) <= Q(cuberoot 2,zeta_3)`, but the first extension is already not normal, so the tower does not establish failure of transitivity. A valid example is `Q <= Q(sqrt 2) <= Q(fourthroot 2)`: both successive extensions are quadratic and normal, while the top extension over `Q` is not normal.
