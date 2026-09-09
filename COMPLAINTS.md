@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-2KDVB` stores a flawed quotient-module solution as the problem
-
-- **Object and need:** `P-2KDVB` should ask to construct the natural $\ZZ/(mk)$-module structure on $\ZZ/m$ and compute $\operatorname{Hom}_{\ZZ/(mk)}(\ZZ/m,\ZZ/(mk))$.
-- **Observed evidence:** The current body is solution prose, not a posed problem. In its Hom computation it defines $f_\ell([1]_m)=[\ell]_{mk}$ and justifies this by claiming $\ZZ/m$ injects into $\ZZ/(mk)$. But an $R=\ZZ/(mk)$-linear map must send $[1]_m$ to an element annihilated by $m$, namely an element of $kR$; the correct images are $[k\ell]_{mk}$.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-2KDVB.md` contains an invalid construction and is not a proper exercise statement.
-- **Uncertainty:** None about the module/Hom computation; the intended two claims are determined by the title and surviving prose.
-- **Repair:** Replace the solution fragment by a precise two-part exercise and prove the module structure and $\operatorname{Hom}_R(R/(m),R)\cong kR\cong\ZZ/m$.
-
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
