@@ -40,15 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `E-K3OJW` truncates the group order from $p^ev$ to $p$
-
-- **Object and need:** `E-K3OJW` is the standard Sylow criterion for a finite group of order $p^ev$, where $p\nmid v$ and $p>v$.
-- **Observed evidence:** The card title states `when $|G|=p^{e}v$ with $p>v$`, but the exercise body says `Let $G$ be a group of order $p$ with $v$ and $e$ positive integers`. With order merely $p$, the variables $e,v$ are disconnected from the group and the intended Sylow-count argument is lost.
-- **Impact and owner:** The selected problem statement is garbled. The owning file is `corpus/problems/Algebra/E-K3OJW.md`.
-- **Uncertainty:** The intended formula is determined by the title and by the immediately following assumptions on $e,v,p$. The card has no external-provenance collection.
-- **Repair:** Under TODO §7 / issue #2, restore $|G|=p^ev$ and prove uniqueness of the Sylow $p$-subgroup from Sylow III.
-
-
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
