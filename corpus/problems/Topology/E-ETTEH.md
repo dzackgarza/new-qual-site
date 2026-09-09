@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: exercise
@@ -27,42 +30,19 @@ Let $X$ be a locally path-connected topological space. Prove that:
 :::
 
 ::: solution
-**Goal:** Prove the foundational topological properties of locally path-connected spaces.
+<1>1. Let $U\subseteq X$ be open. If $x\in U$ and $V$ is a neighborhood of $x$ in $U$, then $V$ contains an open neighborhood $V'$ of $x$ in $X$ with $V'\subseteq U$. Since $X$ is locally path-connected, $V'$ contains a path-connected open neighborhood $W$ of $x$. Thus $U$ is locally path-connected.
 
-<1>1. Part (1): Open subsets $U \subseteq X$ are locally path-connected:
-    *Proof:*
-    <2>1. Let $U \subseteq X$ be open, and let $x \in U$.
-    <2>2. Let $V \subseteq U$ be any open neighborhood of $x$ in $U$.
-    <2>3. Since $U$ is open in $X$, $V$ is also an open neighborhood of $x$ in $X$.
-    <2>4. Because $X$ is locally path-connected, there exists a path-connected open neighborhood $W \subseteq X$ such that $x \in W \subseteq V$.
-    <2>5. Since $W \subseteq V \subseteq U$, $W$ is an open path-connected neighborhood of $x$ contained in $V$.
-    <2>6. Thus $U$ is locally path-connected.
+<1>2. Every path component $P$ of $X$ is open.
+<2>1. If $x\in P$, choose a path-connected open neighborhood $W$ of $x$.
+<2>2. Every point of $W$ can be joined to $x$ by a path, so $W\subseteq P$.
+<2>3. Hence $P$ is a union of open sets and is open.
 
-<1>2. Part (4): Path components are open in $X$:
-    *Proof:*
-    <2>1. Let $P \subseteq X$ be a path component of $X$, and let $x \in P$.
-    <2>2. Since $X$ is locally path-connected, there exists a path-connected open neighborhood $W_x$ of $x$ in $X$.
-    <2>3. Because $W_x$ is path-connected and contains $x \in P$, every point in $W_x$ can be connected by a path to $x$, and hence to every point in $P$.
-    <2>4. By maximality of the path component $P$, we must have $W_x \subseteq P$.
-    <2>5. Thus $P = \bigcup_{x \in P} W_x$ is a union of open sets, so $P$ is open in $X$.
+<1>3. Path components coincide with connected components.
+<2>1. Every path-connected set is connected, so each path component $P$ lies in a connected component $C$.
+<2>2. The path components partition $C$, and each is open in $C$ by <1>2.
+<2>3. If $C$ contained two or more path components, one path component and the union of the others would form a separation of $C$. This contradicts connectedness. Hence $C=P$.
 
-<1>3. Part (3): Path components are connected components:
-    *Proof:*
-    <2>1. In any topological space, every path-connected set is connected, so each path component $P$ is contained in some connected component $C$: $P \subseteq C$.
-    <2>2. By Step <1>2, every path component of $X$ is open.
-    <2>3. The connected component $C$ is partitioned into path components: $C = \bigcup_{\alpha} P_\alpha$.
-    <2>4. Each $P_\alpha$ is open in $X$, hence open in the subspace topology on $C$.
-    <2>5. If $C$ contained more than one path component, say $P$ and $\bigcup_{\alpha \ne 0} P_\alpha$, then $P$ and $C \setminus P$ would form a non-trivial clopen separation of $C$, contradicting that $C$ is connected.
-    <2>6. Therefore, $C = P$ consists of exactly one path component.
-    <2>7. Thus the path components of $X$ are precisely the connected components of $X$, and all connected components are open (and closed) in $X$.
+<1>4. Therefore every connected component is also a path component and is open. Components are always closed, so in a locally path-connected space every component is clopen.
 
-<1>4. Part (2): $X$ is connected $\iff X$ is path-connected:
-    *Proof:*
-    <2>1. $(\impliedby)$ In any space, path-connected implies connected.
-    <2>2. $(\implies)$ Suppose $X$ is connected.
-    <2>3. By Part (3), $X$ has only one connected component, which is a single path component.
-    <2>4. Thus $X$ is path-connected.
-
-<1>5. Conclusion:
-    In a locally path-connected space, open sets are locally path-connected, path components coincide with connected components, components are open, and connectedness is equivalent to path-connectedness. Q.E.D.
+<1>5. Finally, path-connectedness always implies connectedness. Conversely, if $X$ is connected, it has only one connected component; by <1>3 that component is a path component. Hence $X$ is path-connected.
 :::
