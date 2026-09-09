@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -26,46 +29,58 @@ Describe the isomorphism classes of subgroups of the additive group of rational 
 :::
 
 ::: solution
-**Goal:** Classify the subgroups of $(\mathbb{Q}, +)$ up to isomorphism using Baer's theory of types and characteristic sequences.
+Let $G\le\QQ$ be nonzero and fix $0\ne x\in G$. For each prime $p$, define
+\[
+h_p(x)=\sup\{m\ge0:x\in p^mG\}\in\NN\cup\{\infty\}.
+\]
+The sequence $(h_p(x))_p$ is called a characteristic of $G$.
 
-<1>1. Subgroups of $\mathbb{Q}$ (Rank 1 Torsion-Free Groups):
-    *Proof:*
-    <2>1. Every non-trivial subgroup $G \le (\mathbb{Q}, +)$ is a **rank 1 torsion-free abelian group**.
-    <2>2. Any such group is determined up to isomorphism by the divisibility of its elements by prime powers.
+<1>1. Changing the nonzero element changes its characteristic only at finitely many primes, and never changes which coordinates are infinite.
+::: proof
+If $0\ne y\in G$, then $y=(a/b)x$ for nonzero integers $a,b$. Hence for every prime $p$,
+\[
+h_p(y)=h_p(x)+v_p(b)-v_p(a)
+\]
+whenever the height is finite, with truncation at $0$ as appropriate. Only primes dividing $ab$ can change, and an infinite height remains infinite. Thus the equivalence class of the characteristic is independent of the chosen nonzero element.
+:::
 
-<1>2. Height Vectors (Characteristics):
-    *Proof:*
-    <2>1. Let $\mathbb{P} = \{p_1, p_2, p_3, \dots\} = \{2, 3, 5, 7, \dots\}$ be the enumerated set of all prime numbers.
-    <2>2. For any non-zero element $x \in G \le \mathbb{Q}$ and any prime $p$, the **$p$-height** $h_p(x)$ is the supremum of all integers $k \ge 0$ such that $x = p^k y$ for some $y \in G$:
-        $$h_p(x) \in \mathbb{N} \cup \{\infty\}.$$
-    <2>3. The **characteristic (height sequence)** of $x$ in $G$ is the infinite sequence:
-        $$\chi(x) = (h_{p_1}(x), h_{p_2}(x), h_{p_3}(x), \dots) \in (\mathbb{N} \cup \{\infty\})^\mathbb{P}.$$
+Two characteristics $(a_p)$ and $(b_p)$ are called equivalent when they agree at all but finitely many primes and
+\[
+a_p=\infty\iff b_p=\infty
+\]
+for every $p$. Their equivalence class is the type of $G$.
 
-<1>3. Baer's Equivalence of Types:
-    *Proof:*
-    <2>1. Two height sequences $(k_p)_{p \in \mathbb{P}}$ and $(m_p)_{p \in \mathbb{P}}$ are defined to be **equivalent** ($\sim$) if:
-        1. $k_p = m_p$ for all but finitely many primes $p$, and
-        2. $k_p = \infty \iff m_p = \infty$ for every prime $p$.
-    <2>2. An equivalence class of characteristics is called a **type** $\mathbf{t}(G)$.
-    <2>3. **Theorem (Baer, 1937):** Two non-trivial subgroups $G_1, G_2 \le \mathbb{Q}$ are isomorphic if and only if they have the **same type**:
-        $$G_1 \cong G_2 \iff \mathbf{t}(G_1) = \mathbf{t}(G_2).$$
+<1>2. Two nonzero subgroups of $\QQ$ are isomorphic if and only if they have the same type.
+::: proof
+This is Baer's classification of rank-one torsion-free abelian groups. In the special case of subgroups of $\QQ$, any homomorphism between two nonzero such groups is multiplication by a rational number: after choosing $0\ne x$ in the source, the image of every $y\in G$ is forced by the rational relation between $x$ and $y$. Multiplication by a rational changes only finitely many finite $p$-heights, exactly as in <1>1. Conversely, equivalent height data differ by such a finite rational rescaling, which gives an isomorphism.
+:::
 
-<1>4. Cardinality of Isomorphism Classes:
-    *Proof:*
-    <2>1. For each subset $S \subseteq \mathbb{P}$, consider the subring:
-        $$\mathbb{Z}[S^{-1}] = \left\{ \frac{a}{b} \in \mathbb{Q} \;\middle|\; \text{all prime factors of } b \text{ lie in } S \right\}.$$
-    <2>2. In $\mathbb{Z}[S^{-1}]$, the height vector of $1$ is $h_p(1) = \infty$ if $p \in S$, and $h_p(1) = 0$ if $p \notin S$.
-    <2>3. If $S_1 \ne S_2$ are distinct subsets of $\mathbb{P}$, their height vectors have infinite values at different sets of primes, so they are **not equivalent**:
-        $$\mathbb{Z}[S_1^{-1}] \not\cong \mathbb{Z}[S_2^{-1}].$$
-    <2>4. Since there are $2^{\aleph_0} = \mathfrak{c}$ (continuum) distinct subsets $S \subseteq \mathbb{P}$, there are at least **$2^{\aleph_0}$ non-isomorphic subgroups** of $\mathbb{Q}$.
-    <2>5. Since $|\mathcal{P}(\mathbb{Q})| = 2^{\aleph_0}$, the number of isomorphism classes of subgroups of $\mathbb{Q}$ is **exactly $2^{\aleph_0} = \mathfrak{c}$** (the cardinality of the continuum).
+<1>3. There are exactly $2^{\aleph_0}$ isomorphism classes.
+::: proof
+There are at most $2^{\aleph_0}$ subgroups because $\QQ$ is countable.
 
-<1>5. Are the subrings $\mathbb{Z}[S^{-1}]$ all of them?
-    *Proof:*
-    <2>1. **No**, the subrings $\mathbb{Z}[S^{-1}]$ (where heights are either $0$ or $\infty$) do NOT exhaust all subgroups of $\mathbb{Q}$.
-    <2>2. For example, the subgroup generated by $\{1/p^k \mid p \in \mathbb{P}, \; k \le n_p\}$ where $n_p < \infty$ are varying finite bounds gives height sequences with arbitrary finite heights, such as $(1, 2, 3, 4, \dots)$.
-    <2>3. The full classification requires all types in $(\mathbb{N} \cup \{\infty\})^\mathbb{P} / \sim$.
+For each set of primes $S$, let
+\[
+G_S=\ZZ[1/p:p\in S].
+\]
+For $1\in G_S$,
+\[
+h_p(1)=\begin{cases}
+\infty,&p\in S,\\
+0,&p\notin S.
+\end{cases}
+\]
+Thus $G_S\cong G_T$ implies $S=T$. Since the set of primes is countable, there are $2^{\aleph_0}$ choices of $S$. Hence the number of isomorphism classes is exactly $2^{\aleph_0}$.
+:::
 
-<1>6. Conclusion:
-    There are $2^{\aleph_0}$ isomorphism classes of subgroups of $\mathbb{Q}$, completely classified by Baer's types of height sequences. Q.E.D.
+<1>4. The groups $G_S$ do not exhaust all subgroups of $\QQ$.
+::: proof
+Choose finite numbers $e_p\ge0$, not all zero, varying over infinitely many primes, and set
+\[
+G=\left\langle p^{-j}:p\text{ prime},\ 0\le j\le e_p\right\rangle\le\QQ.
+\]
+Then $h_p(1)=e_p$. Such a type can have infinitely many positive finite coordinates, whereas every $G_S$ has only heights $0$ or $\infty$. Hence it is not of localization type.
+:::
+
+Therefore Baer's types classify all nonzero subgroups of $\QQ$, and there are exactly continuum many isomorphism classes.
 :::
