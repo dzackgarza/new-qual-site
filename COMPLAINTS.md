@@ -65,3 +65,11 @@ of public mathematical remarks.
 - **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
+
+### `unsolved_queue.py` can fail late on transient Pandoc HTTP 503
+
+- **Object and need:** the normal pre-commit `just test-commit` route for authored cards; `tools/unsolved_queue.py` should either complete or fail promptly with a retryable infrastructure diagnosis.
+- **Observed evidence:** on 2026-09-09, committing `P-JCWGD` ran the corpus-wide queue regeneration for roughly ten minutes and then failed in `tools/qualc/pandoc_batch.py` when the local Pandoc HTTP service returned `urllib.error.HTTPError: HTTP Error 503: Service Unavailable`. The card itself remained `git diff --check` clean and the failure occurred while parsing unrelated corpus files.
+- **Impact and owner:** a mathematically complete one-card commit can lose several minutes and require a full rerun because a transient parser-service failure aborts queue regeneration. This is tooling/infrastructure-owned, not card-owned.
+- **Uncertainty:** verified for this one commit attempt under heavy concurrent repository activity; the service-side cause of the 503 was not observable from the worktree.
+- **Repair:** make the Pandoc batch client retry bounded transient 503 responses or surface a fast retry path that does not require restarting the entire corpus parse.
