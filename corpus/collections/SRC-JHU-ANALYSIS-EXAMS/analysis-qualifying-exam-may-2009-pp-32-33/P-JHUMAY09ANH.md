@@ -26,7 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^\infty([0,1])$ and assume $f$ is not zero almost everywhere. Define
+Let $f\in L^\infty([0,1])$ and assume $f$ is not zero almost everywhere.
+Define
 \[
 a_n=\int_0^1|f(x)|^n\,dx.
 \]
@@ -54,7 +55,8 @@ Since $a_n>0$,
 \[
 \frac{a_{n+1}}{a_n}\le\frac{a_{n+2}}{a_{n+1}}.
 \]
-Thus the ratios are nondecreasing. Also $|f|\le M$ almost everywhere, so
+Thus the ratios are nondecreasing.
+Also $|f|\le M$ almost everywhere, so
 \[
 a_{n+1}\le M a_n,
 \]
@@ -67,11 +69,13 @@ Therefore the ratios converge to some $L\le M$.
 
 <1>2. The limit cannot be smaller than $M$.
 ::: {.proof}
-Fix $0<\varepsilon<M$. By the definition of essential supremum, the set
+Fix $0<\varepsilon<M$.
+By the definition of essential supremum, the set
 \[
 E_\varepsilon=\{x:|f(x)|>M-\varepsilon\}
 \]
-has positive measure. Hence
+has positive measure.
+Hence
 \[
 a_n\ge m(E_\varepsilon)(M-\varepsilon)^n.
 \]
@@ -88,7 +92,8 @@ Letting $n\to\infty$ yields
 \[
 M-\varepsilon\le L.
 \]
-Since $\varepsilon>0$ is arbitrary, $M\le L$. Together with $L\le M$, this gives
+Since $\varepsilon>0$ is arbitrary, $M\le L$.
+Together with $L\le M$, this gives
 \[
 L=M=\|f\|_\infty.
 \]
