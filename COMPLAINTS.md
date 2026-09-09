@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-4MDI2` mislabels the second subgroup in the join notation
+
+- **Object and need:** Part 8 of `P-4MDI2` asks to recall the join of two subgroups before proving Galois-correspondence identities.
+- **Observed evidence:** The body writes `the join of two subgroups $H \vee G$`, using $G$ as though it were the second subgroup even though $G$ conventionally denotes the ambient Galois group in this context.
+- **Impact and owner:** The notation in `corpus/problems/Algebra/P-4MDI2.md` is ambiguous but the intended operation is clear from part (b), which uses the join of $\operatorname{Aut}_A F$ and $\operatorname{Aut}_B F$.
+- **Uncertainty:** None about the repair.
+- **Repair:** Define the join for generic subgroups $H_1,H_2$ and prove both requested identities.
+
 ### `P-3VHPO` is truncated after naming two cubic fields
 
 - **Object and need:** `P-3VHPO` should contain a complete question comparing $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$.
