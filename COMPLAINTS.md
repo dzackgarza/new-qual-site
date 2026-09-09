@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-RX3N7` uses inconsistent rational-field notation
+
+- **Object and need:** `E-RX3N7` should use the repository's standard $\QQ$ notation consistently in its Galois-extension prompt.
+- **Observed evidence:** The title uses `$\\QQ$`, while the exercise body repeatedly uses `$\\boldsymbol{Q}$` and includes stray spaces before question marks.
+- **Impact and owner:** The mathematics is unambiguous, but `corpus/problems/Algebra/E-RX3N7.md` has inconsistent public notation and punctuation.
+- **Uncertainty:** None about the intended field or questions.
+- **Repair:** Under TODO §7 / issue #2, normalize the prompt to $\QQ$ while authoring and reviewing the complete solution.
+
+
 
 ## Workflow and rendering papercuts
 
