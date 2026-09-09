@@ -12,71 +12,78 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-The standard computation of $\det(xI - A) = 0$ shows that $\chi_A(x) = \det(xI - A) = (x-1)^2 (x+1)^2$, and so the eigenvalues of $A$ are $1, -1$.
-We want the minimal polynomial of $A$, which is given by $\prod(x-\lambda_i)^{\alpha_i}$ where $\alpha_i$ is the size of the **largest** Jordan block for $\lambda_i$.
-That exponent is not the geometric multiplicity $\dim E_{\lambda_i}$, which instead counts how **many** Jordan blocks $\lambda_i$ has.
-
-Another standard computation shows that 
-$$
-\lambda = 1 \implies \rank(A - 1I) = 2 \implies \dim \ker (A-1I) = 4-2 = 2
-$$
-and similarly
-$$
-\lambda = -1 \implies \rank(A + I) = 3 \implies \dim \ker(A + I) = 4 - 3 = 1.
-$$
-
-We thus have
-\begin{align*}
-p_A(x) &= (x-1) (x+1)^2\\
-\chi_A(x) &= (x-1)^2 (x+1)^2
-.\end{align*}
-
-To compute $JCF(A)$, we use the following facts:
-
-- For $\lambda = 1$,
-  - Since $(x-1)^1$ occurs in $p_A(x)$, the largest Jordan block for $\lambda = 1$ is size 1.
-  - Since $(x-1)^2$ occurs in $\chi_A(x)$, the sum of sizes of all such Jordan blocks is 2.
-  - Since $\dim E_1 = 2$, there are 2 such Jordan blocks.
-- For $\lambda = -1$,
-  - Since $(x+1)^2$ occurs in $p_A(x)$, the largest Jordan block for $\lambda = -1$ is size 2.
-  - Since $(x+1)^2$ occurs in $\chi_A(x)$, the sum of sizes of all such Jordan blocks is 2.
-  - Since $\dim E_{-1} = 1$, there is 1 such Jordan block.
+Let $A$ be a $4\times4$ matrix over a field of characteristic not equal to $2$ with
+\[
+\chi_A(x)=(x-1)^2(x+1)^2
+\]
+and minimal polynomial
+\[
+m_A(x)=(x-1)(x+1)^2.
+\]
+Determine the Jordan canonical form and rational canonical form of $A$.
+:::
 
 
-We can thus immediately write
+::: {.solution}
+<1>1. The Jordan blocks for the eigenvalue $1$ are two $1\times1$ blocks.
+::: {.proof}
+The algebraic multiplicity of $1$ is $2$. The exponent of $x-1$ in the minimal polynomial is $1$, so the largest Jordan block for $1$ has size $1$. Therefore both units of algebraic multiplicity occur as separate $1\times1$ blocks.
+:::
 
-\begin{align*}
-JCF(A) = J_{-1}^2 \oplus 2 J_{1}^1 
-=
-\left[\begin{array}{cccc}
--1 & 1 & 0 & 0 \\
-0 & -1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1 \\
-\end{array}\right]
-.\end{align*}
+<1>2. The Jordan blocks for the eigenvalue $-1$ consist of one $2\times2$ block.
+::: {.proof}
+The algebraic multiplicity of $-1$ is $2$, while the exponent of $x+1$ in the minimal polynomial is $2$. Hence there must be a block of size $2$, which exhausts the full algebraic multiplicity.
+:::
 
+<1>3. Thus
+\[
+J(A)=J_2(-1)\oplus[1]\oplus[1].
+\]
+::: {.proof}
+Combine <1>1 and <1>2.
+:::
 
-The largest invariant factor is always the minimal polynomial, so $d_2 = p_A(x) = (x-1)(x+1)^2$, and $d_1$ is then forced by $d_1 d_2 = \chi_A(x)$:
+<1>4. The invariant factors are
+\[
+d_1=x-1,
+\qquad
+d_2=(x-1)(x+1)^2.
+\]
+::: {.proof}
+The largest invariant factor is the minimal polynomial. Their product is the characteristic polynomial, so
+\[
+d_1=\frac{\chi_A}{d_2}=x-1.
+\]
+The divisibility condition $d_1\mid d_2$ holds.
+:::
 
-\begin{align*}
-d_1 &= (x-1) \\
-d_2 &= (x-1) (x+1)^2
-\end{align*}
-
-which satisfies the required divisibility $d_1 \divides d_2$.
-Expanding $d_2 = x^3 + x^2 - x - 1$, the companion block has last column $(1, 1, -1)^t$, and thus
-
-\begin{align*}
-RCF(A) &= C(d_1) \oplus C(d_2) =
-\left[\begin{array}{c|ccc}
-1 & 0 & 0 & 0 \\ \hline
-0  & 0 & 0 & 1 \\
-0  & 1 & 0 & 1 \\
-0  & 0 & 1 & -1 \\
-\end{array}\right]
-.\end{align*}
+<1>5. Therefore the rational canonical form is
+\[
+C(x-1)\oplus C((x-1)(x+1)^2).
+\]
+::: {.proof}
+Rational canonical form is the direct sum of the companion matrices of the invariant factors. Since
+\[
+(x-1)(x+1)^2=x^3+x^2-x-1,
+\]
+one standard companion-matrix convention gives
+\[
+\begin{pmatrix}
+0&0&1\\
+1&0&1\\
+0&1&-1
+\end{pmatrix}
+\]
+for the cubic factor, together with the $1\times1$ block $[1]$.
+:::
 :::
