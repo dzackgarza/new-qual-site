@@ -12,7 +12,7 @@ completion: complete
 provenance:
 - assets/attachments/analysis_jan2014.pdf
 source:
-  source_kind: exam
+  source_kind: university-exam
   area: real-analysis
   date:
     kind: year
