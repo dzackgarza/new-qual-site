@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-VPWK4` omits finiteness from the conjugacy-class divisibility statement
+
+- **Object and need:** `E-VPWK4` should state the integer divisibility theorem for conjugacy-class sizes in a finite group.
+- **Observed evidence:** The card says only `the size of a conjugacy class divides the order of a group`, with no finiteness hypothesis. Integer divisibility of cardinalities is the finite-group statement obtained from orbit-stabilizer.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/E-VPWK4.md` is underspecified as written.
+- **Uncertainty:** None about the standard intended theorem: for finite $G$, $|\operatorname{Cl}_G(x)|=[G:C_G(x)]$.
+- **Repair:** Under TODO §7 / issue #2, add the finite-group hypothesis and prove the result by conjugation orbit-stabilizer.
+
+
 
 ## Workflow and rendering papercuts
 
