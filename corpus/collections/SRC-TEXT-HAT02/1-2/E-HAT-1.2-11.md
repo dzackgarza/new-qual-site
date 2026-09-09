@@ -16,7 +16,10 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Checked against Hatcher, Algebraic Topology, Section 1.2, Exercise 11; the stored statement matches.
+  note: >-
+    Checked against Hatcher, Algebraic Topology, Section 1.2, Exercise 11.
+    Corrected the local mistranscription of the second case from a wedge of three
+    circles to the source's torus $S^1\times S^1$.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09
@@ -28,7 +31,7 @@ audit:
 
 The mapping torus $T_f$ of a map $f: X \to X$ is the quotient of $X \times I$ obtained by identifying each point $(x, 0)$ with $(f(x), 1)$.
 In the case $X = S^1 \lor S^1$ with $f$ basepoint-preserving, compute a presentation for $\pi_1(T_f)$ in terms of the induced map $f_*: \pi_1(X) \to \pi_1(X)$.
-Do the same when $X = S^1 \lor S^1 \lor S^1$.
+Do the same when $X = S^1 \times S^1$.
 [One way to do this is to regard $T_f$ as built from $X \lor S^1$ by attaching cells.]
 
 ::: {.solution}
@@ -86,36 +89,40 @@ The $1$-skeleton contributes the free group on $a,b,t$, and <1>2 gives exactly t
 Van Kampen for CW complexes yields the displayed presentation.
 :::
 
-<1>4. More generally, if
+<1>4. Now suppose
 \[
-X=S^1\vee S^1\vee S^1
+X=S^1\times S^1
 \]
-with free generators $a,b,c$, then
+with the standard generators $a,b$ of
+\[
+\pi_1(X)\cong\mathbb Z^2
+\cong\langle a,b\mid [a,b]=1\rangle.
+\]
+Then
 \[
 \boxed{
 \pi_1(T_f)
 \cong
-\left\langle a,b,c,t\ \middle|\
+\left\langle a,b,t\ \middle|\
+[a,b]=1,\
 t a t^{-1}=f_*(a),\
-t b t^{-1}=f_*(b),\
-t c t^{-1}=f_*(c)
+t b t^{-1}=f_*(b)
 \right\rangle .
 }
 \]
 ::: {.proof}
-The same CW decomposition now has four $1$-cells, namely $a,b,c,t$, and one $2$-cell for the cylinder over each of the three circle edges.
-Each cylinder supplies the corresponding conjugacy relation exactly as in <1>2.
+Use the usual CW structure on the torus with one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached along the commutator $[a,b]$.
+The mapping-torus $1$-skeleton adds the stable loop $t$.
+The original torus $2$-cell contributes the relation
+\[
+[a,b]=1,
+\]
+while the cylinders over the $a$- and $b$-edges contribute the two conjugacy relations from <1>2.
+The product of the torus $2$-cell with $I$ gives a $3$-cell and therefore introduces no additional relation in the fundamental-group presentation.
 :::
 
-<1>5. In fact, for a wedge of $r$ circles with free basis $x_1,\dots,x_r$,
-\[
-\pi_1(T_f)
-\cong
-\left\langle x_1,\dots,x_r,t\ \middle|\
-t x_i t^{-1}=f_*(x_i),\ 1\le i\le r
-\right\rangle .
-\]
+<1>5. The two requested presentations are therefore those in <1>3 and <1>4.
 ::: {.proof}
-This is the same construction with one cylinder $2$-cell for each circle of the wedge.
+These are exactly the two cases stated in the source exercise.
 :::
 :::
