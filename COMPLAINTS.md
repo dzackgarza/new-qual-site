@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-5IV34` misprints the centralizer notation
-
-- **Object and need:** `P-5IV34` asks to prove that the centralizer of a subgroup is a subgroup.
-- **Observed evidence:** The body writes `$G_G(H)$` where the standard and title-consistent notation is `$C_G(H)$`.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-5IV34.md` has a notation typo in the mathematical object being proved closed.
-- **Uncertainty:** None.
-- **Repair:** Replace `$G_G(H)$` by `$C_G(H)$` and prove the subgroup criterion.
-
 ### `P-3VHPO` is truncated after naming two cubic fields
 
 - **Object and need:** `P-3VHPO` should contain a complete question comparing $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$.
