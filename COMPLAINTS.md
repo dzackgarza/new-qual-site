@@ -206,3 +206,16 @@ of public mathematical remarks.
 - **Impact and owner:** The stated conclusion may still be true with a correct proof, but the supplied deduction is invalid and the $\varphi(n)=4$ cases require separate analysis. The owning file is `corpus/problems/Algebra/P-KSSA7.md`.
 - **Repair:** Keep the affine embedding, prove the $n=3,4,6$ dihedral cases directly, then rule out all $\varphi(n)>2$ cases by a valid group/field argument, treating $\varphi(n)=4$ ($n=5,8,10,12$) explicitly.
 
+### `P-L7SEG` has an undefined subgroup in its coset criterion and mislabels injectivity as the first isomorphism theorem
+
+- **Object and need:** `P-L7SEG` asks for image/preimage/kernel facts for a homomorphism $\phi:G_1\to G_2$, then states $xH_1=yH_1\iff \phi(x)H_2=\phi(y)H_2$ although $H_1$ is never defined.
+- **Observed evidence:** The correct pullback subgroup is $H_1=\phi^{-1}(H_2)$, and even then the reverse implication requires exactly that definition. The final bullet “first isomorphism theorem” actually states only $\phi$ injective iff $\ker\phi=1$; the first isomorphism theorem is $G_1/\ker\phi\cong\operatorname{im}\phi$.
+- **Impact and owner:** The card mixes two correct but distinct theorems and omits a required definition. The owning file is `corpus/problems/Algebra/P-L7SEG.md`.
+- **Repair:** Define $H_1=\phi^{-1}(H_2)$, prove the coset equivalence, state the kernel criterion separately, and then state/prove the actual first isomorphism theorem.
+
+### `P-LFWBF` has type errors in the bidual naturality calculation
+
+- **Object and need:** `P-LFWBF` tries to prove naturality of the evaluation map $\theta_A:A\to A^{\vee\vee}$.
+- **Observed evidence:** To compare elements of $B^{\vee\vee}$ one must evaluate them on $g\in B^\vee$, but the proof instead takes $h\in B^{\vee\vee}$ and then composes maps with incompatible domains. The intended identity is $f^{\vee\vee}\theta_A=\theta_B f$.
+- **Impact and owner:** The displayed calculation is not type-correct. The owning file is `corpus/problems/Algebra/P-LFWBF.md`.
+- **Repair:** Restate the naturality square and evaluate both sides at an arbitrary $g\in B^\vee$: both give $g(f(a))$.
