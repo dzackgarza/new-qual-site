@@ -56,18 +56,6 @@ of public mathematical remarks.
 - **Uncertainty:** The fragment is compatible with several standard arguments involving nonsolvability of $S_n$ for $n\ge5$, so reconstructing a specific source question would be speculative.
 - **Repair:** Recover the original source context before authoring a solution.
 
-### `P-27BNG` has no mathematical task after its hypothesis
-
-- **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
-- **Observed evidence:** The complete card body is only `Suppose $K/F$ is a finite, normal, Galois extension.` Git history back through intake contains exactly the same text; the original title was just that sentence, and the card appears only in `SRC-UNSORTED-ALGEBRA`. Searches of the current corpus/wiki found no matching continuation.
-- **Impact and owner:** There is no proposition to prove, so `corpus/problems/Algebra/P-27BNG.md` cannot receive a mathematically meaningful solution without fabricating missing source content.
-- **Uncertainty:** The intended follow-up is unknown. `normal` and `Galois` are also redundant under standard finite-extension terminology, but that does not identify the missing task.
-- **Repair:** This requires source recovery or an explicit editorial decision supplying the missing conclusion. Until then, leave the card unsolved and do not infer a theorem from the title alone.
-
-
-\n\n\n
-
-
 ### `P-CVUQ3` reverses the semidirect-product factors
 
 - **Object and need:** `P-CVUQ3` claims $\Gal(x^{15}+2/\QQ)\cong S_2\rtimes \ZZ/15\ZZ$ with $S_2$ a Sylow $2$-subgroup.
