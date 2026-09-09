@@ -40,6 +40,15 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `E-GNYRR` turns the Cayley-Hamilton flag proof into a diagonalizable-only argument
+
+- **Object and need:** `E-GNYRR` is meant to prove Cayley-Hamilton by an invariant flag for an upper-triangular matrix. The basis vectors need not be eigenvectors; the relevant scalars are the diagonal entries $\lambda_i$, for which $(A-\lambda_iI)\Fil_iV\subseteq\Fil_{i-1}V$.
+- **Observed evidence:** The card says `supposing $v_i$ are eigenvectors for $\lambda_i$`. An eigenbasis makes $A$ diagonalizable, so the displayed argument no longer proves Cayley-Hamilton for a general operator. The final product is also indexed ambiguously as `\prod_i(A-\lambda_{n-i}I)`.
+- **Impact and owner:** The selected proof, as posed, does not establish its claimed general conclusion. The owning file is `corpus/problems/Algebra/E-GNYRR.md`.
+- **Uncertainty:** The intended repair is strongly determined by the preceding upper-triangular flag setup and by the standard triangular proof. The card has no external-provenance collection from which to recover exact source wording.
+- **Repair:** Under TODO §7 / issue #2, replace the eigenbasis condition by an upper-triangularizing basis with diagonal entries $\lambda_i$, state the lowering relation explicitly, and complete the general proof by scalar extension to a splitting field/algebraic closure.
+
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
