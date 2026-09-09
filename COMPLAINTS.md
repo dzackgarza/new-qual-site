@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `E-ZHJGI` has malformed cyclotomic degree notation
-
-- **Object and need:** `E-ZHJGI` should state the degree $[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]$ with standard base-field notation.
-- **Observed evidence:** The body uses plain `$Q$`/`\boldsymbol{Q}` and the displayed expression places the field-separator colon inside the argument of `\boldsymbol{Q}` rather than between the two fields.
-- **Impact and owner:** The displayed degree in `corpus/problems/Algebra/E-ZHJGI.md` is syntactically malformed although the title records the intended theorem correctly.
-- **Uncertainty:** None: the title and standard maximal-real-subfield theorem determine the intended statement.
-- **Repair:** Under TODO §7 / issue #2, normalize the notation and prove the degree formula for $n>2$.
-
 
 ## Workflow and rendering papercuts
 
