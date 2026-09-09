@@ -48,6 +48,23 @@ of public mathematical remarks.
 - **Uncertainty:** the omitted clause is verified against two reproductions of the source exercise; no ambiguity remains about the intended hypothesis.
 - **Repair:** restore the infinite-case injectivity clause on `P-MMAQ-WV7QEYSPXM` before attaching a proof.
 
+
+### P-AMD-RKY5I5U7 lacks recoverable octagon gluing data
+
+- **Object and need:** `P-AMD-RKY5I5U7` in `SRC-UCSD-TOP-JUSTIN`; a source-faithful proof requires the octagon edge identifications referred to by “octagon pasting.”
+- **Observed evidence:** the authored card says only “Show that octagon pasting is homeomorphic to the $T = \mathbb{R}^2/\mathbb{Z}^2$.” `just read-card P-AMD-RKY5I5U7` records only the six retained Roberts sheets `UCSD_290_F14_sheet{3,7,8,10,11,12}.pdf`. Full-text searches of their Markdown extractions and `pdftotext` output for sheets 3, 7 and 8 found no matching octagon statement; the neighboring collection entries are unrelated torus questions, so collection position 20 does not identify a source problem on those sheets.
+- **Impact and owner:** the missing edge-pairing diagram/data prevents proving the stated quotient is a torus without guessing which octagon identification was intended. The source record/card owns the repair before solution authorship can proceed.
+- **Uncertainty:** source ambiguity is verified for the retained provenance inspected above. A different original compilation or omitted figure may contain the intended gluing; the exact source has not yet been located.
+- **Repair:** locate and attach the source containing the octagon diagram or restore the complete edge-identification data to the problem statement, then resume TODO §7 for this card.
+
+### P-HGRO11 does not specify the coefficient field
+
+- **Object and need:** `P-HGRO11` in `SRC-HARVARD-GROUPS-ORAL`; deciding whether a determinant-one matrix group is simple requires the coefficient field and whether the intended group is $SL_2(F)$ or its projective quotient.
+- **Observed evidence:** both the preserved Harvard source extraction and the local card ask only whether “the group of $2\times2$ matrices of determinant $1$” is simple, with no coefficient field. For example, if $\operatorname{char}F\ne2$, then $-I$ is a nontrivial central element of $SL_2(F)$, while simplicity statements for $PSL_2(F)$ depend on $F$.
+- **Impact and owner:** there is no source-faithful yes/no answer to the card as written. The Harvard group-orals source/card record owns recovery of the intended field or clarification that the question concerns a particular projective special linear group.
+- **Uncertainty:** verified against the retained Harvard PDF extraction; the omitted field may have been supplied orally or by surrounding course context not present in the preserved question list.
+- **Repair:** recover the intended coefficient field/group from an independent Harvard source or explicitly mark the source question as underdetermined before solution authorship resumes.
+
 ## Workflow and rendering papercuts
 
 ### Primary local repository connector can silently become unavailable
