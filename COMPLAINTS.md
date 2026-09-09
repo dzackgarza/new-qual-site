@@ -89,3 +89,19 @@ of public mathematical remarks.
 - **Impact and owner:** card-by-card validation and commit throughput is dominated by opaque filesystem stalls, encouraging accidental duplicate validator launches if process state is not inspected first. This is tooling/environment-owned, not a mathematical-card defect.
 - **Uncertainty:** no logical validator failure was associated with these waits; the exact filesystem/cache cause was not diagnosed from the repository process state alone.
 - **Repair:** profile the authoring checker’s file-access pattern and reduce repeated corpus-wide reads, or emit progress sufficient to distinguish active validation from a hung process.
+
+### Several UCSD topology cards omit hypotheses needed for their stated conclusions
+
+- **Object and need:** `P-TOPS02J`, `P-TOPS05E`, `P-TOPS17C`, and `P-UCTOP-SU11-6`; each card must state hypotheses under which the requested conclusion is actually true.
+- **Observed evidence:** `P-TOPS02J` claims a connected component of a covering space still covers all of `X`, which fails when `X` is disconnected. `P-TOPS05E` claims every compact nonorientable `3`-manifold has nonzero `H^1(-;\mathbb Z)`, but `\mathbb{RP}^2\times I` is a compact nonorientable counterexample with `H^1=0`. `P-TOPS17C` omits the base-circle contribution in the mapping-torus Wang sequence; taking `Y=*` gives `H_1(S^1)=\mathbb Z`, not `0`. `P-UCTOP-SU11-6` asserts a Whitehead-type conclusion for arbitrary spaces, whereas vanishing higher homotopy and free fundamental group only force the wedge-of-circles homotopy type under a CW/CW-type hypothesis.
+- **Impact and owner:** these cards cannot be source-faithfully marked solved as written without either changing the statements or proving a false assertion. The owning UCSD topology card/source records must be repaired first.
+- **Uncertainty:** the intended repairs are clear for the first three (`X` connected; closed/no-boundary hypothesis as appropriate; add the missing `\mathbb Z` mapping-torus summand). For `P-UCTOP-SU11-6`, the source may have implicitly assumed CW complexes; the retained card does not say so.
+- **Repair:** restore the missing connectedness/CW/closedness hypotheses or correct the mapping-torus formula on the problem cards, then attach proofs of the corrected statements.
+
+### `P-TOPS02D` topological-group covering statement lacks the data needed for a lift
+
+- **Object and need:** `P-TOPS02D(b)`; constructing a multiplication on a covering space of a topological group requires a chosen point over the identity and the lifting hypotheses needed to lift multiplication coherently.
+- **Observed evidence:** the retained statement asks, for an arbitrary covering `p:E\to X` of a topological group, for a multiplication `m:E\times E\to E` satisfying `pm=\mu(p\times p)` but does not assume connectedness of the relevant component or choose an identity lift. Standard lifting constructions of a covering-group structure require those choices/hypotheses.
+- **Impact and owner:** parts (a) and (c) are routine, but part (b) is under-specified, so the multipart card should not be marked complete by silently imposing a preferred component or identity element.
+- **Uncertainty:** the original exam may have been using the conventional connected based-cover setting implicitly; that convention is not preserved in the extracted card.
+- **Repair:** recover the source convention or amend part (b) to a connected based covering with a chosen lift of the identity, then state the resulting covering-group structure theorem precisely.
