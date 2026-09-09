@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IS9SV
 kind: problem
-title: Evaluation makes $A$ a module over $\mathrm{End}(A)$
+title: Evaluation makes $A$ a module over $\mathrm{End}_R(A)$
 classification:
   areas:
   - algebra
@@ -12,49 +12,58 @@ classification:
   - Homomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-For arbitrary $x, y \in A$, we need to check the following:
-
-a. $f\actson (x+y) = f\actson x + f \actson y$
-b. $(f+g)\actson x = f \actson x + g \actson x$
-c. $f\circ g \actson x = f \actson (g \actson x)$
-d. $\id_a \actson x = x$
-
-
-For (a):
+Let $A$ be an $R$-module. Show that evaluation
 \[
-\begin{align*}
-f \actson (x + y) &\definedas f(x + y) \\
-&= f(x) + f(y)\quad\quad\text{since $f$ is a homomorphism} \\
-&= f\actson x + f \actson y \\
-.\end{align*}
+\End_R(A)\times A\longrightarrow A,\qquad (f,a)\longmapsto f(a),
 \]
+makes $A$ into a left module over the endomorphism ring $\End_R(A)$.
+:::
 
-For (b):
-\[
-\begin{align*}
-(f+g)\actson x &= (f+g)(x) \\
-&= f(x) + g(x) \\
-&= f \actson x + g \actson x
-.\end{align*}
-\]
+::: {.solution}
+Write $f\cdot a=f(a)$.
 
-For (c):
+<1>1. The action is additive in the $A$-variable.
+::: {.proof}
+For $a,b\in A$,
 \[
-\begin{align*}
-f\circ g \actson x &= (f\circ g)(x)  \\
-&= f(g(x)) \\
-&= f \actson g(x) \\
-&= f \actson (g \actson x)
-.\end{align*}
+f\cdot(a+b)=f(a+b)=f(a)+f(b)=f\cdot a+f\cdot b,
 \]
+because $f$ is $R$-linear.
+:::
 
-For (d):
+<1>2. The action is additive in the scalar variable.
+::: {.proof}
+For $f,g\in\End_R(A)$,
 \[
-\begin{align*}
-\id_A \actson x &= \id_A(x) = x
-.\end{align*}
+(f+g)\cdot a=(f+g)(a)=f(a)+g(a)=f\cdot a+g\cdot a.
 \]
+:::
+
+<1>3. Multiplication in $\End_R(A)$ is compatible with the action.
+::: {.proof}
+The ring multiplication is composition, so
+\[
+(fg)\cdot a=(f\circ g)(a)=f(g(a))=f\cdot(g\cdot a).
+\]
+:::
+
+<1>4. The identity endomorphism acts as the identity.
+::: {.proof}
+The multiplicative identity of $\End_R(A)$ is $\id_A$, and
+\[
+\id_A\cdot a=\id_A(a)=a.
+\]
+:::
+
+Therefore $A$ is a left $\End_R(A)$-module under evaluation.
 :::
