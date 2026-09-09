@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
+
+- **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
+- **Observed evidence:** The current card and every locally recoverable historical version contain only the same sentence and no field hypothesis. Over $\RR$, nonzero eigenvalues occur in purely imaginary conjugate pairs after complexification; over a general field the formulation is different.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-2HERP.md` is not precise enough to admit a unique source-faithful solution.
+- **Uncertainty:** The intended real-matrix reading is plausible but not recoverable from local source/history.
+- **Repair:** Recover the original source context or otherwise establish the intended scalar field before authoring the solution.
+
 ### `P-27BNG` has no mathematical task after its hypothesis
 
 - **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
