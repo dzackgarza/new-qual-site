@@ -30,3 +30,52 @@ Then $f$ is constant.
 (e) Let $f$ be an analytic function defined in a simply connected bounded domain $G \subset \mathbb{C}$ with $i \in G$.
 If $f(G) \subset G$ and $f(i) = i$, then $|f'(i)| \leq 1$.
 :::
+
+::: solution
+**(a) False.** Absolute convergence of an infinite product
+$\prod(1+a_n)$ requires $\sum |a_n|<\infty$. Here
+\[
+\sum_{n=1}^\infty\left|\frac{i}{n}\right|
+=\sum_{n=1}^\infty\frac1n
+\]
+diverges, so the product is not absolutely convergent.
+
+**(b) True.** The omitted points are the integers. Since $f$ is bounded near
+each integer, every singularity there is removable. Thus $f$ extends to a
+bounded entire function on $\mathbb C$, and Liouville's theorem makes it
+constant.
+
+**(c) False.** Suppose such an $f$ existed. The condition with $k=1$ implies
+that $f$ has no zeros sufficiently near $1$, so $g=1/f$ is holomorphic in a
+punctured neighborhood of $1$ there. Moreover, for every $k\ge1$,
+\[
+\frac{g(z)}{(z-1)^k}=\frac{1}{(z-1)^k f(z)}\longrightarrow0.
+\]
+In particular $g$ is bounded and extends holomorphically across $1$ with
+$g(1)=0$. The displayed limits imply that every derivative of the extension at
+$1$ is zero. Hence its Taylor series is identically zero, so $g$ vanishes near
+$1$, impossible because $g=1/f$ there.
+
+**(d) True.** Take $f(z)=e^z$. For every positive integer $k$,
+\[
+\left|\frac{e^x}{x^k}\right|\to\infty
+\qquad (x\to+\infty),
+\]
+whereas
+\[
+\left|\frac{e^{-x}}{(-x)^k}\right|\to0
+\qquad (x\to+\infty).
+\]
+Thus no limit exists as $|z|\to\infty$.
+
+**(e) True.** Since $G$ is bounded, it is a proper simply connected domain.
+Choose a conformal map $\phi:G\to\mathbb D$ with $\phi(i)=0$. Then
+\[
+F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D
+\]
+fixes $0$. Schwarz's lemma gives $|F'(0)|\le1$. By the chain rule,
+\[
+F'(0)=\phi'(i)f'(i)(\phi^{-1})'(0)=f'(i),
+\]
+so $|f'(i)|\le1$.
+:::
