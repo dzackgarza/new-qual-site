@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-1P5M4` is a malformed quotient-module solution fragment
-
-- **Object and need:** `P-1P5M4` should pose and prove the natural $R/I$-module structure on $A/IA$ for an $R$-module $A$ and ideal $I$.
-- **Observed evidence:** The `problem` body is attempted solution prose; its displayed action is missing the module representative (`r+I \actson +IA`), and it verifies module axioms without first proving independence of the representatives $r+I$ and $a+IA$.
-- **Impact and owner:** The public card `corpus/problems/Algebra/P-1P5M4.md` is not a posed problem and omits the essential well-definedness argument.
-- **Uncertainty:** The original source wording is unavailable; the title and surviving calculations determine the standard quotient-module theorem.
-- **Repair:** Under TODO §7 / issue #2, replace the fragment by the standard statement and give a complete proof of well-definedness and the module axioms.
-
 
 ## Workflow and rendering papercuts
 
