@@ -199,3 +199,7 @@ of public mathematical remarks.
 - **Impact and owner:** The literal field notation collapses the intended example to $\QQ$. The owning file is `corpus/problems/Algebra/P-IDMYK.md`.
 - **Uncertainty:** None about the notation defect; squarefreeness of $d$ is a normalization convention rather than necessary for the residue-field theorem.
 - **Repair:** Replace the field by $K=\QQ(\sqrt d)$ and state the conclusion for nonzero prime ideals: they are maximal and have finite residue fields.
+
+### Algebra P-ITOYB: missing quotient-field hypothesis
+
+`corpus/problems/Algebra/P-ITOYB.md` begins “since $R/(p)$ is a field” but gives no hypothesis on the commutative ring $R$ or the element $p$ ensuring this. The intended scalar action on $A[p]$ is well-defined over $R/(p)$ for any ideal $(p)$ annihilating $A[p]$, but calling it a vector space requires $(p)$ maximal. The card needs the ambient ring/module hypotheses and must distinguish module from vector-space structure.
