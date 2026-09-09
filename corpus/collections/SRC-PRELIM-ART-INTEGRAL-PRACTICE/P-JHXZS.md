@@ -10,10 +10,29 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int 2018^x ~dx = \color {blue} {\frac {2018^x}{\ln (2018)}}$
+Evaluate
+\[
+\int 2018^x\,dx.
+\]
+:::
 
-- **Used 2018**
+::: solution
+Since
+\[
+\frac{d}{dx}2018^x=(\ln 2018)2018^x,
+\]
+we have
+\[
+\boxed{\int 2018^x\,dx=\frac{2018^x}{\ln 2018}+C.}
+\]
 :::
