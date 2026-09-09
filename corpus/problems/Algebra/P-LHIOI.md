@@ -12,38 +12,58 @@ classification:
   - Torsion
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Since $(r, s) = (1)$, we can find $t_1, t_2 \in R$ such that
+Let $R$ be a commutative ring, let $A=Ra$ be a cyclic $R$-module, and suppose
 \[
-\begin{align*}
-t_1r + t_2 s = 1 &\implies t_1ra + t_2 sa = 1a  &\\
-&\implies t_1(ra) + t_2 sa = a &\\
-&\implies t_2 sa = a &\text{since $ra=0$}\\
-&\implies s(t_2 a) = a &\text{since $R$ is commutative}
-,\end{align*}
+ra=0,
+\qquad
+(r,s)=R.
+\]
+Show that
+\[
+A=sA
+\qquad\text{and}\qquad
+A[s]=\{x\in A:sx=0\}=0.
+\]
+:::
+
+::: {.solution}
+Choose $u,v\in R$ with
+\[
+ur+vs=1.
+\]
+Then
+\[
+a=(ur+vs)a=u(ra)+v(sa)=vsa=s(va),
+\]
+so $a\in sA$. Since $a$ generates $A$, this gives
+\[
+A\subseteq sA.
+\]
+The reverse inclusion is automatic, hence
+\[
+A=sA.
 \]
 
-which implies that $a \in sA$ and thus $A \subseteq sA$.
-However, we always have $sA \subseteq A$ for modules, so this shows that $A = sA$.
-
-To see that $A[s] = \theset{x\in A \mid sx = 0} = 0$, let $x\in A[s]$; we will show $x=0$.
-Since $x\in A = Ra$, we have $x = r_1 a$, and in particular
-$$
-ra = 0 \implies rx = r r_1 a = r_1 (ra) = 0.
-$$
-
-So we now have $rx = 0$ and $sx=0$, and we can write
+Now let $x\in A[s]$. Since $A=Ra$, write $x=ta$. Then
 \[
-\begin{align*}
-x &= (t_1 r + t_2 s)x \\
-&= t_1 (rx) + t_2 (sx) \\
-&= t_1 0 + t_2 0 \\
-&= 0
-.\end{align*}
+rx=rta=t(ra)=0,
 \]
-
-So $x = 0$ and thus $A[s] = 0$.
-$\qed$
+and by definition $sx=0$. Therefore
+\[
+x=(ur+vs)x=u(rx)+v(sx)=0.
+\]
+Hence
+\[
+A[s]=0.
+\]
 :::
