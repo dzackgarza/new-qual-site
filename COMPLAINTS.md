@@ -65,3 +65,11 @@ of public mathematical remarks.
 - **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
+
+### `unsolved-in` can hang indefinitely after repeated scoped authoring runs
+
+- **Object and need:** the repository authoring command `just unsolved-in <collection> [section]`; scoped solution streams depend on it to derive their worklists without reading the generated shared queue.
+- **Observed evidence:** on 2026-09-09 in the isolated topology-drill worktree, `just unsolved-in SRC-TEXT-HAT02`, `just unsolved-in SRC-TEXT-HAT02 1.a`, and `just unsolved-in SRC-TEXT-HAT02 1.A` each ran for at least 30 seconds without producing a header or result, after earlier section-scoped calls had completed normally. Multiple stale read-only processes remained alive concurrently.
+- **Impact and owner:** a stream that is required to derive work from repository tooling can block at section boundaries even when no git mutation is involved. This is authoring-tool/runtime owned rather than corpus-content owned.
+- **Uncertainty:** the immediate cause may be repeated full-corpus scans, file-lock contention, or resource contention from concurrent `qualc.authoring commit` processes; the command gives no progress indication.
+- **Repair:** make `unsolved` scans bounded or incremental, emit progress before long corpus scans, and avoid leaving duplicate long-running read-only scans alive after the caller times out.
