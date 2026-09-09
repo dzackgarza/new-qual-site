@@ -482,9 +482,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis
 
-- [ ] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
+- [x] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: exact byte duplicate of `Folland_Clipped_Questions.pdf` (SHA-256 `e775d4915cbacc566da3d2731cc938692f9f57a45a2dc262cb8a5041ba95ec10`). The resource page already links the underscore-named copy, so no second collection or resource entry is warranted.
 
-- [ ] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
+- [x] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland Clipped Questions.pdf`; already linked from `wiki/real-analysis/resources/problems.md`. This is a clipped textbook-exercise resource rather than an exam sitting, so intake stops at the existing resource link rather than manufacturing a qualifying-exam collection.
 
 - [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra
 
@@ -712,15 +712,15 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra
 
-- [ ] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis
+- [x] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: exact byte duplicate of `Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf` (SHA-256 `45cc7ffaf7ba4e7a3c41884817409e2728764bcce8a651979df4bb74cdccbc97`). The migration ledger already identifies the Le-named file as the retained native source, and the Real Analysis solutions resource page links this material; no duplicate collection is needed.
 
-- [ ] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis
+- [x] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland_Solutions.pdf`. This is Le's *Measure and Integration: Problems with Solutions*, a reference/problem-solutions resource rather than an exam paper; it remains a resource source and does not require a qualifying-exam collection.
 
 - [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
 
 - [ ] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis
 
-- [ ] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders**
+- [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection. It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
 
 - [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
 
