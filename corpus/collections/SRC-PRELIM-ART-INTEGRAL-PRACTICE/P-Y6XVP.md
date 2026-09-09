@@ -11,12 +11,25 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-3. $\displaystyle \int e^{(x + e^x)} ~dx = \color{blue} {e^{e^{x}}}​$
+Evaluate
+\[
+\int e^{x+e^x}\,dx.
+\]
+:::
 
-- **Solution:** $u = e^x​$, $du = e^x ~dx​$
-
-- **Used 2018**
+::: solution
+Since $e^{x+e^x}=e^x e^{e^x}$, let $u=e^x$. Then $du=e^x\,dx$, so
+\[
+\boxed{\int e^{x+e^x}\,dx=e^{e^x}+C.}
+\]
 :::
