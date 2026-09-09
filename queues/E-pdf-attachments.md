@@ -107,7 +107,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: exact byte duplicate of `Fall_2019_SOLUTIONS.pdf`; the shared UGA Fall 2019 exam is already complete as `SRC-UGA-RA-FALL-2019`.
 
-- [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
+- [x] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: solution packet for the five-problem UGA Spring 2019 Real Analysis exam already complete as `SRC-UGA-RA-SPRING-2019`; byte-identical to `Spring 2019 with Solutions.pdf` (SHA-256 `3027e272d654a113b0cb15745bc0a4edb127fa36a6b91b9f4d772af84c0bb2e9`). As a solution writeup it is not added as collection provenance.
 
 - [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection.
   No collection/card ingest required.
