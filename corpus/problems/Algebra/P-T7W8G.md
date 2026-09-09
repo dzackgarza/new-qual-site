@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-T7W8G
 kind: problem
-title: Irreducible polynomials over a field in which every element has a $p$th root
-  are separable
+title: Irreducible polynomials over a field in which every element has a $p$th root are separable
 classification:
   areas:
   - algebra
@@ -16,53 +15,35 @@ review: draft
 ---
 
 ::: problem
-Suppose every element in $F$ admits a $p$th root in $F$, and suppose $f \in F[x]$ is an irreducible polynomial which is *not* separable, so it has a repeated root in $\overline F$.
+Let $F$ be a field of characteristic $p>0$ such that every element of $F$ has a $p$th root in $F$. Show that every irreducible polynomial in $F[x]$ is separable.
+:::
 
-Supposing that $\gcd(f, f') = g(x)$ for any polynomial $g(x)$, this would imply that $g\divides f$.
-But $f$ was assumed irreducible, so the only possibility is that in fact $g = f$.
-
-But if $\gcd(f, f') = f$, since $\deg f' < f$, we can not have $f \divides f'$ unless $f'$ is identically zero.
-
-If we thus write
+::: solution
+Let $f\in F[x]$ be irreducible. Suppose, for contradiction, that $f$ is inseparable. Since $f$ is irreducible, inseparability implies
 \[
-\begin{align*}
-f(x) &= \sum_{k=0}^n c_k x^k, \\
-f'(x) &= \sum_{k=1}^n k c_k x^{k-1} \\
-&\equiv 0
-,\end{align*}
+\gcd(f,f')=f.
+\]
+But $\deg f'<\deg f$, so this forces
+\[
+f'=0.
 \]
 
-then for each $k$ we must have $c_k = 0$ or $k = 0$ in $F$, i.e. $c_k = 0$ or $p \divides k$.
-
-Thus the only possible nonzero terms in $f$ must come from coefficients of $x^{kp}$ for each $k$ such that $1 \leq kp \leq n$, i.e.
-$$
-f(x) = c_0 + c_p x^p + c_{2p} x^{2p} + \cdots
-$$
-
-But this says we can write $f(x) \definedas g(x^p)$, where
-$$
-g(x) = c_0 + c_p x + c_{2p} x^2 + \cdots
-$$
-
-and furthermore, we can now use the assumption that $F$ is perfect to write $c_i = b_i^p$ for each $i$, yielding
-
+In characteristic $p$, the derivative vanishes exactly when every exponent occurring in $f$ is divisible by $p$. Hence
 \[
-\begin{align*}
-g(x) &= b_0^p + b_p^p x^2 + b_{2p}^p x^{2} + \cdots \\
-.\end{align*}
+f(x)=\sum_i a_i x^{pi}
 \]
-and thus
-\[
-\begin{align*}
-f(x) &= g(x^p) \\
-&= b_0^p + b_p^p x^{p} + b_{2p}^p x^{2p} + \cdots \\
-&= (b_0 + b_p x + b_{2p} x^2)^p \\
-&\definedas \left( j(x) \right)^p
-,\end{align*}
-\]
+for coefficients $a_i\in F$.
 
-from which it follows that $j \divides f$ in $F[x]$.
-But since $f$ was irreducible, this is a contradiction, and so $f$ could not have had a repeated root.
-Thus every irreducible polynomial is separable, which is what we wanted to show.
-$\qed$
+By hypothesis, each $a_i$ is a $p$th power, say
+\[
+a_i=b_i^p
+\]
+with $b_i\in F$. Therefore, using the Frobenius identity in characteristic $p$,
+\[
+f(x)=\sum_i b_i^p x^{pi}
+=\left(\sum_i b_i x^i\right)^p.
+\]
+Since $f$ is nonconstant, the polynomial inside the parentheses is nonconstant. Thus $f$ is a nontrivial $p$th power in $F[x]$, contradicting irreducibility.
+
+Hence every irreducible polynomial over $F$ is separable.
 :::
