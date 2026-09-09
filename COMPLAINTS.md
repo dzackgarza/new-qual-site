@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-7INJI` omits the coefficient ring for the group algebra
+
+- **Object and need:** `P-7INJI` asks for representations and the group algebra of the infinite cyclic group $\ZZ$.
+- **Observed evidence:** A group algebra is not determined by the group alone; one must specify coefficients. Over a field $k$, the standard identification is $k[\ZZ]\cong k[t,t^{-1}]$.
+- **Impact and owner:** `corpus/problems/Algebra/P-7INJI.md` is underspecified as written.
+- **Uncertainty:** The representation-theory context strongly suggests a field of coefficients, but no specific field is named.
+- **Repair:** State the question over an arbitrary field $k$ and describe $k[\ZZ]$ and the corresponding representations.
+
 ### `E-ZCJZC` omits finiteness and uses a false conjugate-intersection count
 
 - **Object and need:** `E-ZCJZC` states the same conjugate-cover theorem and already has a solution.
