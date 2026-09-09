@@ -17,6 +17,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Spring 2016 Problem 4 in the preserved UGA source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the translated tail set in the proof of vanishing at infinity.
 ---
 
 ::: problem
@@ -39,30 +47,66 @@ Show that
 \chi_{E \cap(E+x)}(y)=\chi_{E}(y) \chi_{E}(y-x)
 \]
 :::
-::: {.solution}
-<1>1. $f(x) = m(E \cap (E + x)) = \int \chi_E(y)\chi_E(y - x)\,dy = (\chi_E \ast \tilde\chi_E)(x)$ where $\tilde\chi_E(y) = \chi_E(-y)$.
-::: {.proof}
-the hint: $\chi_{E\cap(E+x)}(y) = \chi_E(y)\chi_E(y - x)$; integrating in $y$ gives the convolution identity ($\chi_E \ast \tilde\chi_E$: $\int\chi_E(y)\tilde\chi_E(x - y)\,dy = \int\chi_E(y)\chi_E(y - x)\,dy$).
+::: solution
+<1>1. Express the overlap as a convolution and prove integrability.
+::: proof
+Let $\widetilde\chi_E(u):=\chi_E(-u)$. The hint gives
+\[
+f(x)=\int_{\mathbb R}\chi_E(y)\chi_E(y-x)\,dy
+=(\chi_E*\widetilde\chi_E)(x).
+\]
+Since $m(E)<\infty$, both factors lie in $L^1(\mathbb R)$. Tonelli gives
+\[
+\begin{aligned}
+\int_{\mathbb R}f(x)\,dx
+&=\int_{\mathbb R}\int_{\mathbb R}
+\chi_E(y)\chi_E(y-x)\,dy\,dx\\
+&=m(E)^2<\infty.
+\end{aligned}
+\]
+Thus $f\in L^1(\mathbb R)$.
 :::
 
-<1>2. (1) $f \in L^1(\RR)$ with $\int f = m(E)^2$.
-::: {.proof}
-Tonelli: $\int_\RR f(x)\,dx = \int_\RR\int_\RR \chi_E(y)\chi_E(y-x)\,dy\,dx = \int_\RR\chi_E(y)\left(\int_\RR\chi_E(y-x)\,dx\right)dy = \int_\RR\chi_E(y)\,m(E)\,dy = m(E)^2 < \infty$ (since $m(E) < \infty$).
+<1>2. Prove uniform continuity.
+::: proof
+For $h\in\mathbb R$,
+\[
+\begin{aligned}
+|f(x+h)-f(x)|
+&\le \int_{\mathbb R}\chi_E(y)
+|\widetilde\chi_E(x+h-y)-\widetilde\chi_E(x-y)|\,dy\\
+&\le \|\tau_h\widetilde\chi_E-\widetilde\chi_E\|_1.
+\end{aligned}
+\]
+Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Hence $f$ is uniformly continuous.
 :::
 
-<1>3. (2) $f$ is uniformly continuous.
-::: {.proof}
-$f = \chi_E \ast \tilde\chi_E$ is the convolution of two $L^1$ functions ($\chi_E, \tilde\chi_E \in L^1$ since $m(E) < \infty$); convolution of $L^1$ functions is uniformly continuous: $|f(x) - f(x')| \le \int\chi_E(y)|\tilde\chi_E(x-y) - \tilde\chi_E(x'-y)|\,dy \le \|\chi_E\|_\infty\|\tau_{x-x'}\tilde\chi_E - \tilde\chi_E\|_1 \to 0$ as $|x - x'| \to 0$ (strong continuity of translation in $L^1$).
-:::
-
-<1>4. (3) $\lim_{|x| \to \infty} f(x) = 0$.
-::: {.proof}
-given $\eps > 0$, choose $R$ with $m(E \setminus [-R, R]) < \eps$ (possible since $m(E) < \infty$). For $|x| > 2R$: if $y \in E \cap (E + x)$, then $y \in E$ and $y - x \in E$; if $y \in [-R,R]$, then $|y - x| \ge |x| - |y| > R$, so $y - x \notin [-R, R]$.
-:::
-Hence $E \cap (E+x) \subseteq (E \setminus [-R,R]) \cup ((E + x) \setminus [-R,R])$, and $f(x) = m(E \cap (E+x)) \le m(E\setminus[-R,R]) + m((E+x)\setminus[-R,R]) = m(E\setminus[-R,R]) + m(E \setminus [-R,R] + x) < 2\eps$ (translation invariance).
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>2, <1>3, <1>4 establish (1), (2), (3).
+<1>3. Prove that $f(x)\to0$ as $|x|\to\infty$.
+::: proof
+Let $\varepsilon>0$. Choose $R>0$ such that
+\[
+m(E\setminus[-R,R])<\varepsilon.
+\]
+If $|x|>2R$ and $y\in E\cap(E+x)$, then $y\in E$ and $y-x\in E$. The two numbers $y$ and $y-x$ cannot both lie in $[-R,R]$, because then
+\[
+|x|=|y-(y-x)|\le2R.
+\]
+Therefore
+\[
+E\cap(E+x)
+\subseteq
+\bigl(E\setminus[-R,R]\bigr)
+\cup
+\bigl((E\setminus[-R,R])+x\bigr).
+\]
+By translation invariance,
+\[
+f(x)=m(E\cap(E+x))
+\le 2m(E\setminus[-R,R])<2\varepsilon.
+\]
+Hence
+\[
+\boxed{\lim_{|x|\to\infty}f(x)=0.}
+\]
 :::
 :::
