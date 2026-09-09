@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-6ASCF` uses an undefined scalar-ring symbol for a real matrix
+
+- **Object and need:** `P-6ASCF` studies a real $5\times5$ matrix and the map $\RR^5\to\RR^5$.
+- **Observed evidence:** The body begins `Let $M\in M_5(R)$` even though it immediately says the coefficients are real and later uses $\Bbb R^5$. The symbol $R$ is not defined as the real field.
+- **Impact and owner:** `corpus/problems/Algebra/P-6ASCF.md` has inconsistent base-field notation.
+- **Uncertainty:** None; the intended field is explicitly real elsewhere in the same statement.
+- **Repair:** Replace $M_5(R)$ by $M_5(\RR)$ and solve the spectral questions.
+
 ### `P-5KZDX` contains only a definition fragment, not a problem
 
 - **Object and need:** `P-5KZDX` is classified as a problem but should pose a complete separability/perfect-field task.
