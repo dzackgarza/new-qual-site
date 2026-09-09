@@ -40,15 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `E-JRKXU` leaks a source tag and uses imprecise splitting-field wording
-
-- **Object and need:** `E-JRKXU` should ask whether $\QQ(u)$ is the splitting field over $\QQ$ of the minimal polynomial of $u=\sqrt{3+\sqrt2}$. Public problem prose should contain the mathematics rather than an uncited source label.
-- **Observed evidence:** The card currently asks `Is $\boldsymbol{Q}(u)$ a splitting field of $u$ over $\boldsymbol{Q}$ ? (MathSE)`. An element itself does not have a splitting field without reference to a polynomial; the exact Math StackExchange source asks the same shorthand question and identifies the minimal polynomial $x^4-6x^2+7$. The trailing `(MathSE)` is source/process metadata rendered in the public problem body.
-- **Impact and owner:** The mathematical intent is recoverable, but the public statement is imprecise and leaks source metadata contrary to QUAL-08/citation policy. The owning file is `corpus/problems/Algebra/E-JRKXU.md`.
-- **Uncertainty:** The matching Math StackExchange question is verified by the distinctive radical and wording. The repository collection itself has no external provenance entry for this card.
-- **Repair:** Under TODO §7 / issue #2, state the minimal-polynomial splitting-field question precisely, remove the public `(MathSE)` tag, and solve the resulting field-membership problem.
-
-
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
