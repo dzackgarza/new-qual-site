@@ -233,3 +233,10 @@ of public mathematical remarks.
 - **Observed evidence:** Pointwise multiplication is not closed on general $L^1$ spaces, while convolution makes $L^1(G)$ a Banach algebra only after specifying a locally compact group and Haar measure.
 - **Impact and owner:** The owning file is `corpus/problems/Algebra/P-XZRST.md`; the surviving prompt has no unique answer.
 - **Repair:** Recover the intended measure/group and multiplication before authoring a solution.
+
+### `P-S5JSR` is a compound Galois exercise card with a truncated item and a false dihedral subclaim
+
+- **Object and need:** `corpus/problems/Algebra/P-S5JSR.md` contains a dozen separate Galois exercises in one card.
+- **Observed evidence:** One bullet ends at “Show that $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$” with no conclusion. The first bullet also repeats the defective claim already identified on `P-KSSA7`: from the affine-group embedding for the splitting field of $x^n-2$, it asserts the group is dihedral of order $2n$ exactly for $n=3,4,6$ using an insufficient order-bound argument. The original missing conclusion of the truncated bullet is not recoverable from this card.
+- **Impact and owner:** A complete solution cannot be authored without inventing at least one missing problem statement, and accepting the first bullet as written would preserve a known mathematical defect. The owning file is `corpus/problems/Algebra/P-S5JSR.md`.
+- **Repair:** Recover the source statement for the truncated bullet and correct the $x^n-2$ Galois-group assertion before solving the compound card.
