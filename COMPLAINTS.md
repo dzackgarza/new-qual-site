@@ -73,3 +73,11 @@ of public mathematical remarks.
 - **Impact and owner:** a stream that is required to derive work from repository tooling can block at section boundaries even when no git mutation is involved. This is authoring-tool/runtime owned rather than corpus-content owned.
 - **Uncertainty:** the immediate cause may be repeated full-corpus scans, file-lock contention, or resource contention from concurrent `qualc.authoring commit` processes; the command gives no progress indication.
 - **Repair:** make `unsolved` scans bounded or incremental, emit progress before long corpus scans, and avoid leaving duplicate long-running read-only scans alive after the caller times out.
+
+### Read-only worker spawn can fail when connector cannot identify the prime conversation
+
+- **Object and need:** Chat On Steroids `agents` coordination while a long repository validation hook is running; read-only workers should be spawnable for source analysis without mutating the worktree.
+- **Observed evidence:** on 2026-09-09, a request to spawn two read-only Hatcher-source workers failed before creating any worker with `UNIDENTIFIED_CALLER: this app could not prove which ChatGPT conversation this call came from` and instructed reconnecting the paired browser extension.
+- **Impact and owner:** parallel read-only preparation is unavailable even though ordinary repository commands through the same live connector continue to work. This is connector/agent-coordination tooling, not corpus content.
+- **Uncertainty:** verified for this spawn attempt; no claim about persistence after reconnecting the browser extension.
+- **Repair:** make prime-conversation identity available to `agents` whenever the connector is already serving that conversation, or surface a deterministic reconnect/status check before spawn.
