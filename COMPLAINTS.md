@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `E-XTWN7` uses inconsistent rational-field notation
-
-- **Object and need:** `E-XTWN7` should use the repository's standard $\QQ$ notation throughout.
-- **Observed evidence:** The title uses `\mathbb{Q}` while the body uses `\boldsymbol{Q}` repeatedly.
-- **Impact and owner:** This is a public notation papercut in `corpus/problems/Algebra/E-XTWN7.md`; the mathematics is unaffected.
-- **Uncertainty:** None.
-- **Repair:** Under TODO §7 / issue #2, normalize the base-field notation while authoring the solution.
-
 
 ## Workflow and rendering papercuts
 
