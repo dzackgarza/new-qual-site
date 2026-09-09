@@ -106,22 +106,6 @@ of public mathematical remarks.
 
 
 \n\n\n
-### `P-B6MVE` confuses ring endomorphisms with regular-module endomorphisms
-
-- **Object and need:** `P-B6MVE` is titled $\mathrm{Hom}_R(R,R)\cong R^{\mathrm{op}}$, but its body begins by taking an endomorphism of $R$ "in the category of rings" and then uses $R$-linearity $f(r)=rf(1)$.
-- **Observed evidence:** A unital ring endomorphism must satisfy $f(1)=1$, so it cannot be arbitrary right multiplication. The standard isomorphism $\operatorname{End}_R({}_RR)\cong R^{\mathrm{op}}$ concerns endomorphisms of the regular left $R$-module.
-- **Impact and owner:** The proof in `corpus/problems/Algebra/P-B6MVE.md` is category-confused and its stated surjectivity is false for ring endomorphisms.
-- **Uncertainty:** None; the title identifies the intended module-endomorphism theorem.
-- **Repair:** Under TODO §7 / issue #2, restate the problem for the regular left $R$-module and prove the anti-multiplication/composition correspondence.
-
-### `P-BF8JM` omits normality of the intermediate extension
-
-- **Object and need:** `P-BF8JM` claims $\Gal(M/L)\trianglelefteq\Gal(M/K)$ without a hypothesis that $L/K$ is Galois/normal.
-- **Observed evidence:** Under the Galois correspondence for finite Galois $M/K$, the subgroup $\Gal(M/L)$ is normal in $\Gal(M/K)$ exactly when $L/K$ is Galois. The surviving proof incorrectly asserts that an arbitrary $K$-automorphism of $M$ restricts to an automorphism of $L$.
-- **Impact and owner:** `corpus/problems/Algebra/P-BF8JM.md` is false as written.
-- **Uncertainty:** None about the standard corrected theorem.
-- **Repair:** Under TODO §7 / issue #2, assume $M/K$ finite Galois and $L/K$ Galois, then prove normality by conjugation/fixed fields.
-
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
