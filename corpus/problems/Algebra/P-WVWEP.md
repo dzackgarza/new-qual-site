@@ -31,13 +31,17 @@ The first column can be any nonzero vector of $\FF_q^2$, giving $q^2-1$ choices.
 \]
 
 <1>2. Standard representation constructions.
-The defining representation is the natural action on $\FF_q^2$; after choosing an embedding of the relevant character values into $\CC$, one obtains complex representations by the usual finite-group constructions: permutation representations from actions on finite $G$-sets, induction from subgroups, tensor products, duals, symmetric/exterior powers, and decomposition of the regular representation.
+The natural action on $\FF_q^2$ is a representation over the field $\FF_q$; it is **not** a complex representation, since a finite field of characteristic $p$ does not embed as a field in $\CC$.
 
-A particularly important permutation representation comes from the action on the projective line
+Complex representations can instead be constructed from honest $G$-sets and complex group-algebra operations. For example, the action on the projective line
 \[
-\PP^1(\FF_q),
+\PP^1(\FF_q)
 \]
-which has $q+1$ points.
+with $q+1$ points gives a permutation representation on
+\[
+\CC[\PP^1(\FF_q)].
+\]
+Other standard constructions include the regular representation, induction from the Borel subgroup or from split and nonsplit tori, tensor products and duals, and irreducible constituents of these representations. The permutation representation on $\PP^1(\FF_q)$ contains the trivial representation and the $q$-dimensional Steinberg representation.
 
 <1>3. One-dimensional complex representations.
 For $q>2$, the commutator subgroup of $\GL_2(\FF_q)$ is $\SL_2(\FF_q)$, so the abelianization is
