@@ -192,14 +192,6 @@ of public mathematical remarks.
 - **Uncertainty:** The original exercise may have supplied characteristic polynomials or additional rank/nullity data that were lost in extraction, but no such hypotheses survive in the card.
 - **Repair:** Recover the original source data. Without more information, restate the task as classifying all possible characteristic polynomials/invariant-factor lists rather than asserting a unique rational canonical form.
 
-### `P-IDMYK` writes $\QQ(d)$ where a quadratic field $\QQ(\sqrt d)$ is intended
-
-- **Object and need:** `P-IDMYK` asks about prime-ideal quotients of the ring of integers of `\QQ(d)` for an integer $d>0$.
-- **Observed evidence:** Adjoining an integer $d$ to $\QQ$ does not enlarge the field, so $\QQ(d)=\QQ$. The title/topics and the phrase “ring of integers” in this context clearly indicate a quadratic-number-field exercise, which should read $\QQ(\sqrt d)$ (typically with $d$ squarefree).
-- **Impact and owner:** The literal field notation collapses the intended example to $\QQ$. The owning file is `corpus/problems/Algebra/P-IDMYK.md`.
-- **Uncertainty:** None about the notation defect; squarefreeness of $d$ is a normalization convention rather than necessary for the residue-field theorem.
-- **Repair:** Replace the field by $K=\QQ(\sqrt d)$ and state the conclusion for nonzero prime ideals: they are maximal and have finite residue fields.
-
 ### Algebra P-ITOYB: missing quotient-field hypothesis
 
 `corpus/problems/Algebra/P-ITOYB.md` begins “since $R/(p)$ is a field” but gives no hypothesis on the commutative ring $R$ or the element $p$ ensuring this. The intended scalar action on $A[p]$ is well-defined over $R/(p)$ for any ideal $(p)$ annihilating $A[p]$, but calling it a vector space requires $(p)$ maximal. The card needs the ambient ring/module hypotheses and must distinguish module from vector-space structure.
