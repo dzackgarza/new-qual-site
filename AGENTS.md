@@ -640,6 +640,18 @@ When a generation changes the file, commit the diff in the next commit.
 The queues are candidates to read — a measurement that disappears is not a
 disposition, so record the reason in `TODO.md`.
 
+## Reconcile queues across all agent branches before claiming
+
+Solving happens on multiple `agent/*` worktree branches, so a queue file on
+one branch does not reflect solutions authored on the others. Before claiming
+cards from a queue (`queues/C-unsolved-cards.md` and its siblings), regenerate
+or reconcile the queue against the solutions present on **all** `agent/*`
+branches, not just the current one. Never claim from a queue older than your
+last branch sync; a stale queue produces duplicate solving of the same card.
+All authoring requires a live claim against the reconciled queue —
+batch-committing cards authored off-queue is prohibited. Reconcile again at
+release so the queue the next agent reads reflects the work just delivered.
+
 # Running checks
 
 Use the [authoring recipes](README.md#author) for the solution loop:
@@ -682,6 +694,15 @@ the mathematical solution failed to commit.
 Code, renderer, schema, executable configuration, and mixed code/content
 changes use the normal commit and push gates. Use focused checks while
 investigating a specific defect; let those gates run the broader checks.
+
+## A red gate is the current task
+
+The first time a commit or push gate, hook, or check goes red, stop authoring
+and diagnose it: root-cause and fix the gate, or report it as a blocker with a
+reproducer. Never continue authoring cards behind a red gate, and never
+accumulate uncommitted work around one. A gate that is red on two consecutive
+commit attempts is a defect to diagnose, not an environment condition to wait
+out.
 
 # Citation policy
 
