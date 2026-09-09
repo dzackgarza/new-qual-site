@@ -40,6 +40,15 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `E-FQBAM` omits the size hypothesis needed for the iterated-adjugate identity
+
+- **Object and need:** `E-FQBAM` asks for both $\det(A^a)=\det(A)^{n-1}$ and $(A^a)^a=\det(A)^{n-2}A$ for an $n\times n$ matrix over an arbitrary commutative unital ring; the second formula requires $n\ge2$ as written.
+- **Observed evidence:** For $n=1$, the exponent $n-2=-1$ requires inversion of $\det(A)$, which need not be a unit. Under the standard convention $\operatorname{adj}([a])=[1]$, the left side is defined for every $a$, while the displayed right side is not defined in a general ring.
+- **Impact and owner:** The selected problem cannot be proved with its current universal quantifier. The owning file is `corpus/problems/Algebra/E-FQBAM.md`.
+- **Uncertainty:** The defect is decisive for the displayed formula. The first determinant identity itself remains valid for $n=1$. No source collection with external provenance was found for this card.
+- **Repair:** Under TODO §7 / issue #2, add $n\ge2$ to the problem statement and prove both identities over arbitrary commutative unital rings.
+
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
