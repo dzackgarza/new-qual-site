@@ -12,50 +12,50 @@ classification:
   - Matrices
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Let $M$ be an $n \times n$ matrix such that $M_{ij} = 1$ for all $i, j$, and consider the possible eigenvectors of $M$.
+Let $F$ be a field such that $n\neq0$ in $F$, and let $M\in M_n(F)$ be the matrix whose entries are all $1$.
+Find its Jordan canonical form (over a splitting field, if necessary).
+:::
 
-We have 
-$$
-M [1,1, \cdots, 1]^t = [n, n, \cdots, n]^t = n[1,1,\cdots, 1]^t,
-$$
-
-which exhibits $\vector x = [1,1,\cdots, 1]$ as an eigenvector with eigenvalue $\lambda = n$.
-
-Now consider 
-$$
-\vector x_j \definedas \vector e_1 - \vector e_j = [1, 0,0, \cdots, 0,-1,0,\cdots, 0]
-$$ 
-which has a $1$ in the $1$st coordinate and a $-1$ in the $j$th coordinate.
-
+::: {.solution}
+Let
+\[
+\mathbf 1=(1,\ldots,1)^t.
+\]
 Then
+\[
+M\mathbf 1=n\mathbf 1,
+\]
+so $n$ is an eigenvalue.
 
-\begin{align*}
-M \vector x_j = 
-\left[\begin{array}{c} 
-1 + 0 + \cdots + 0 + (-1) + 0 + \cdots + 0 \\ 
-1 + 0 + \cdots + 0 + (-1) + 0 + \cdots + 0 \\ 
-\vdots 
-\end{array}\right]
-= [0,0,\cdots, 0]^t
-,\end{align*}
+For every vector $v=(v_1,\ldots,v_n)^t$ with
+\[
+v_1+\cdots+v_n=0,
+\]
+each coordinate of $Mv$ is this same sum, so $Mv=0$. Hence the hyperplane
+\[
+H=\left\{v\in F^n:\sum_i v_i=0\right\}
+\]
+is contained in the $0$-eigenspace and has dimension $n-1$.
 
+Because $n\neq0$ in $F$, the vector $\mathbf1$ does not lie in $H$. Therefore
+\[
+F^n=H\oplus F\mathbf1
+\]
+is a direct sum of eigenspaces. Thus $M$ is diagonalizable, with eigenvalue $0$ of multiplicity $n-1$ and eigenvalue $n$ of multiplicity $1$.
 
-which exhibits each $\vector x_j$ as an eigenvector with eigenvalue $\lambda = 0$.
-
-But the set $\theset{ \vector x_j \mid 2 \leq j \leq n}$ with eigenvalue $0$ contains $n-1$ distinct eigenvectors, and we have an additional 1 eigenvector with eigenvalue $1$, which yields $n$ distinct eigenvectors. 
-
-So $M$ is fact diagonalizable and given by
-$$
-JCF(M) = (n-1)J_0^{1} \oplus J_n^1 =
-\left[\begin{array}{ccccc}
-0 & 0 & 0 & \cdots & 0 \\
-0 & 0 & 0 & \cdots & 0 \\
-0 & 0 & 0 & \cdots & 0 \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \cdots & n \\
-\end{array}\right]
-$$
+Consequently
+\[
+J(M)=\operatorname{diag}(\underbrace{0,\ldots,0}_{n-1},n).
+\]
+Equivalently, since $M^2=nM$, its minimal polynomial is $x(x-n)$.
 :::
