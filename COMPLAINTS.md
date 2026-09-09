@@ -211,5 +211,3 @@ of public mathematical remarks.
 ### Algebra P-OLLG3, P-OPR5T, and P-OQCJR presentation gaps
 
 ### Algebra P-OU7QZ, P-P4KA6, and P-PDRT9 statement/source defects
-
-`corpus/problems/Algebra/P-PDRT9.md` is a worked Galois-correspondence solution fragment stored as the problem body. Its intended task—list the intermediate fields of a cyclic degree-$42$ Galois extension—is recoverable and should be restored as a posed problem with the subgroup calculation in the solution.

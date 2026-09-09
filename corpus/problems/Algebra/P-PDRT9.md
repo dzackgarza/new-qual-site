@@ -15,18 +15,27 @@ review: draft
 ---
 
 ::: problem
-Since proper subfields will correspond to intermediate extensions which will correspond to subgroups of the Galois group, this problem is reduced to counting the number of distinct subgroups of $\ZZ_{42}$.
-This is a cyclic group, so there is exactly one subgroup of order $d$ for each $d$ dividing 42. Since $42 = 2*3*7$, we have
+Let $L/K$ be a finite Galois extension with
+\[
+\operatorname{Gal}(L/K)\cong C_{42}.
+\]
+List the proper nontrivial intermediate fields and their degrees over $K$.
+:::
 
-- A subgroup of order 2, corresponding to a field extension of degree 21,
+::: {.solution}
+By the Galois correspondence, intermediate fields correspond bijectively and inclusion-reversingly to subgroups of $C_{42}$.
 
-- A subgroup of order 3, corresponding to a field extension of degree 14,
-
-- A subgroup of order 6, corresponding to a field extension of degree 7,
-
-- A subgroup of order 7, corresponding to a field extension of degree 6,
-
-- A subgroup of order 14, corresponding to a field extension of degree 3,
-
-- A subgroup of order 21, corresponding to a field extension of degree 2.
+A cyclic group has exactly one subgroup of order $d$ for every divisor $d\mid42$. The proper nontrivial subgroup orders are
+\[
+2,3,6,7,14,21.
+\]
+If a subgroup has order $d$, its fixed field $E$ satisfies
+\[
+[E:K]=[C_{42}:H]=\frac{42}{d}.
+\]
+Therefore there is exactly one intermediate field of each degree
+\[
+21,14,7,6,3,2.
+\]
+Equivalently, for every proper nontrivial divisor $e$ of $42$, there is a unique intermediate extension of degree $e$ over $K$.
 :::
