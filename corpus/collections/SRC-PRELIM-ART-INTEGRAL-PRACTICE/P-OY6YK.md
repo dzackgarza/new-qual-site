@@ -11,22 +11,51 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Replaced branch-sensitive inverse-secant notation by an arctangent primitive and restored constants/domains.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int \frac {x^2 + 2x + 1}{x\sqrt {x^2-1}}~dx = \color {blue} {2\ln(\sqrt {x^2-1}+x)+\sqrt {x^2-1}+\sec ^{-1} (x)}$
+Evaluate, on intervals where the real-valued integrands are defined,
+\[
+\int\frac{x^2+2x+1}{x\sqrt{x^2-1}}\,dx
+\]
+and
+\[
+\int\frac{x+16}{\sqrt{x^2-4x+8}}\,dx.
+\]
+:::
 
-- **Solution:** $\sec (u) = x$, $\tan (u) \sec (u) ~du = dx$
+::: solution
+For the first integral, split
+\[
+\frac{x^2+2x+1}{x\sqrt{x^2-1}}
+=\frac{x}{\sqrt{x^2-1}}+\frac2{\sqrt{x^2-1}}+\frac1{x\sqrt{x^2-1}}.
+\]
+The three primitives are respectively
+\[
+\sqrt{x^2-1},\qquad 2\ln|x+\sqrt{x^2-1}|,
+\qquad \arctan\sqrt{x^2-1}.
+\]
+Thus
+\[
+\boxed{\sqrt{x^2-1}+2\ln|x+\sqrt{x^2-1}|+\arctan\sqrt{x^2-1}+C.}
+\]
 
-- **Solution:** $\frac {x^2 + 2x + 1}{x\sqrt {x^2-1}} ~dx = (\frac {x^2}{x\sqrt {x^2-1}} + \frac {2x + 1}{x\sqrt {x^2-1}}) ~dx = \frac {2}{\tan (u)} \cdot \tan (u) \sec (u) ~du + (\frac {2}{\sqrt {x^2-1}} + \frac {1}{x\sqrt {x^2-1}}) ~dx$
-
-- **Used 2019**
-
-2. $\displaystyle \int \frac {x+16}{\sqrt {x^2-4x+8}} ~dx = \color {blue} {\sqrt {x^2-4x+8} + 18 \ln (\sqrt {x^2-4x+8} + x - 2)}$
-
-- **Solution:** $2 \tan (u) = x - 2$, $\sec ^2 (u) ~du = dx$
-
-- **Solution:** $\frac {x+16}{\sqrt {x^2-4x+8}} ~dx = \frac {2 \tan (u) + 18}{2 \sec (u)} \cdot 2 \sec ^2 (u) ~du = 2 (\tan (u) \sec (u) + 9 \sec (u)) ~du$
-
-- **Used 2019**, *Unsolved*
+For the second integral, write
+\[
+x^2-4x+8=(x-2)^2+4,
+\qquad x+16=(x-2)+18.
+\]
+Then
+\[
+\boxed{\int\frac{x+16}{\sqrt{x^2-4x+8}}\,dx
+=\sqrt{x^2-4x+8}+18\ln\!\left|x-2+\sqrt{x^2-4x+8}\right|+C.}
+\]
 :::
