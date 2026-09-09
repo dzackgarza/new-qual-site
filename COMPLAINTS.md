@@ -215,7 +215,3 @@ of public mathematical remarks.
 ### Algebra P-PS4CG is false as titled
 
 `corpus/problems/Algebra/P-PS4CG.md` claims that every group of order $p^2q$ has a unique Sylow $p$-subgroup. This is false: the dihedral group of order $20=2^2\cdot5$ has five Sylow $2$-subgroups. The stored proof assumes $n_p\ne1$, then considers only $n_q=p$ and $n_q=p^2$, omitting the valid case $n_q=1$. Local history does not recover an additional hypothesis. A nearby correct theorem in the corpus is that every group of order $p^2q$ has at least one normal Sylow subgroup. Recover the original source intent before changing this card's target.
-
-### Algebra P-PUOMT omits nontriviality of the normal subgroup
-
-`corpus/problems/Algebra/P-PUOMT.md` says every normal subgroup of a finite $p$-group intersects the center nontrivially. The trivial subgroup is a counterexample. The standard theorem requires a nontrivial normal subgroup, exactly as in the repaired parallel card `P-O5YG6`.
