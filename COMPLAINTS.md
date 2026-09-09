@@ -118,13 +118,6 @@ of public mathematical remarks.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
 
-### `P-KSSA7` uses an invalid order argument for the dihedral criterion
-
-- **Object and need:** `P-KSSA7` correctly embeds the Galois group of $x^n-2$ into $\ZZ/n\ZZ\rtimes(\ZZ/n\ZZ)^\times$, then claims it is dihedral of order $2n$ exactly when $\varphi(n)=2$ because the affine-group order bound $n\varphi(n)$ exceeds $2n$ when $\varphi(n)>2$.
-- **Observed evidence:** An upper bound exceeding $2n$ says nothing about whether the actual subgroup has order $2n$. For $n=8$, the splitting field has degree $16=2n$ because $\QQ(2^{1/8})\cap\QQ(\zeta_8)=\QQ(\sqrt2)$, yet the Galois group is not dihedral: one obtains generators with relation $srs^{-1}=r^3$ rather than $r^{-1}$ (the semidihedral group of order $16$).
-- **Impact and owner:** The stated conclusion may still be true with a correct proof, but the supplied deduction is invalid and the $\varphi(n)=4$ cases require separate analysis. The owning file is `corpus/problems/Algebra/P-KSSA7.md`.
-- **Repair:** Keep the affine embedding, prove the $n=3,4,6$ dihedral cases directly, then rule out all $\varphi(n)>2$ cases by a valid group/field argument, treating $\varphi(n)=4$ ($n=5,8,10,12$) explicitly.
-
 ### Algebra P-O5YG6, P-OC42E, and P-ODNWF hypothesis defects
 
 ### Algebra P-OLLG3, P-OPR5T, and P-OQCJR presentation gaps
