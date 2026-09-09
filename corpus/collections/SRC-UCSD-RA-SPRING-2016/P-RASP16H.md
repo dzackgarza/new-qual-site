@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 8 of the official UCSD Spring 2016 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing dominated-difference-quotient proof reviewed as correct; normalized legacy solution/proof block syntax.
 ---
 
 ::: problem
@@ -23,31 +31,31 @@ Let $f \in L^1(\mathbb{R})$ and $x f(x) \in L^1(\mathbb{R})$.
 Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi \in \mathbb{R}$.
 :::
 
-::: {.solution}
+::: solution
 **Goal.** Show $\hat f$ is differentiable everywhere when $f, xf \in L^1$.
 
 <1>1. $\hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\,dx$.
-::: {.proof}
+::: proof
 definition.
 :::
 
 <1>2. The integrand is differentiable in $\xi$ with derivative $-2\pi i x f(x) e^{-2\pi i x\xi}$.
-::: {.proof}
+::: proof
 differentiate $e^{-2\pi i x\xi}$ with respect to $\xi$.
 :::
 
 <1>3. The derivative is dominated by $2\pi |x f(x)| \in L^1$.
-::: {.proof}
+::: proof
 $|{-2\pi i x f(x) e^{-2\pi i x\xi}}| = 2\pi |x f(x)|$, and $xf \in L^1$ by hypothesis.
 :::
 
 <1>4. Hence $\hat f$ is differentiable and $\hat f'(\xi) = \int (-2\pi i x) f(x) e^{-2\pi i x\xi}\,dx = -2\pi i \widehat{xf}(\xi)$.
-::: {.proof}
+::: proof
 differentiation under the integral sign, justified by the dominated convergence theorem (the difference quotients are dominated by $2\pi |xf| \in L^1$).
 :::
 
 <1>5. Q.E.D.
-::: {.proof}
+::: proof
 <1>4 shows $\hat f$ is differentiable at every $\xi$.
 :::
 :::
