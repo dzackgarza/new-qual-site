@@ -572,7 +572,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015
 
-- [ ] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis
+- [x] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis — disposition 2026-09-09: ingested as `SRC-MATH6338-HW8`; all seven Fourier-analysis homework problems are represented by source-checked, reviewed solution cards `P-M6338H8-1` through `P-M6338H8-7`.
 
 - [ ] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis
 
