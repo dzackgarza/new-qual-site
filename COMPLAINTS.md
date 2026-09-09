@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-5KS4C` is a conclusion fragment with no recoverable hypothesis
+
+- **Object and need:** `P-5KS4C` should pose a Galois/solvability problem, but its body begins `By a theorem in class, this would force...` and contains only the contradiction step.
+- **Observed evidence:** Git history shows the same fragment in the earliest retained version; later commits changed only title/classification. No preceding hypothesis or construction of $E/K$ survives in the card.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-5KS4C.md` has no complete mathematical obligation to solve.
+- **Uncertainty:** The fragment is compatible with several standard arguments involving nonsolvability of $S_n$ for $n\ge5$, so reconstructing a specific source question would be speculative.
+- **Repair:** Recover the original source context before authoring a solution.
+
 ### `P-3VHPO` is truncated after naming two cubic fields
 
 - **Object and need:** `P-3VHPO` should contain a complete question comparing $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$.
