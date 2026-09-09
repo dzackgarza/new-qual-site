@@ -140,7 +140,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [solution.pdf](assets/attachments/extracted/solution.md) (723L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
 
-- [ ] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
+- [x] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: exact byte duplicate of `Neil_Spring_2019_Solutions.pdf`; its five exam problems are already represented in `SRC-UGA-RA-SPRING-2019`, and the solution packet is not collection provenance.
 
 - [ ] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — algebra — Spring 19
 
