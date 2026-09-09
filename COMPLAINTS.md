@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-3BNEC` is truncated before the mathematical question
+
+- **Object and need:** `P-3BNEC` should contain a complete field-extension question, but its body ends after `is $F$`.
+- **Observed evidence:** The current file literally stops at `6. If $F$ is over $K$, and $E$ is an intermediate extension of $F$ over $K$, is $F$`, and no exact duplicate of the lost continuation was found elsewhere in the corpus.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-3BNEC.md` has no recoverable mathematical obligation to solve.
+- **Uncertainty:** The nearby solved card `E-N626Y` concerns algebraic/normal/separable properties over intermediate fields, so that may be related, but the missing text is not recoverable with enough confidence to replace it.
+- **Repair:** Recover the original source text before authoring a solution.
+
 ### `P-35P7L` is false without additional hypotheses
 
 - **Object and need:** `P-35P7L` claims every group of order $12$ with a normal subgroup of order $4$ is isomorphic to $A_4$.
