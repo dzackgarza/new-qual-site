@@ -41,15 +41,6 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
-### `E-R6I7G` does not state the direct-product hypotheses and has malformed proof fragments
-
-- **Object and need:** `E-R6I7G` should state and prove the internal direct-product recognition theorem with explicit hypotheses on $H,K\le G$.
-- **Observed evidence:** The exercise only says `Prove the "recognizing direct products" theorem` without listing its conditions. The attached remark writes `orders of $H$ and $k$`, and the bare proof block has a malformed kernel line with `hk=1_G` duplicated and concludes `hk\in K\cap H` instead of identifying $h=k^{-1}\in H\cap K$.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/E-R6I7G.md` is parser-unsolved and its existing proof fragment is not a complete reliable solution.
-- **Uncertainty:** The intended theorem is unambiguous from the repository theorem cards: $G=HK$, $H\cap K=\{e\}$, and $H,K\trianglelefteq G$ imply $G\cong H\times K$; normality may be replaced by elementwise commutation.
-- **Repair:** Under TODO §7 / issue #2, state the hypotheses explicitly, replace the malformed fragment by a complete solution, and answer the relaxation question precisely.
-
-
 
 ## Workflow and rendering papercuts
 
