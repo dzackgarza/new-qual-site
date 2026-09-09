@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -31,59 +34,34 @@ audit:
     > Hint: Sylow and semidirect products.
 :::
 
-::: {.solution}
-**Goal.** Show a group of order $p^3$ has a normal subgroup of order $p^2$, and classify the cyclic cases.
+::: solution
+First, every group $G$ of order $p^3$ has a normal subgroup of order $p^2$. Since $G$ is a nontrivial finite $p$-group, $Z(G)\ne1$.
 
-<1>1. $G$ has a normal subgroup of order $p^2$.
-<2>1. $G$ is a $p$-group, so it has a nontrivial center $Z(G)$.
-::: {.proof}
-a nontrivial $p$-group has a nontrivial center.
-:::
-<2>2. $|Z(G)|$ is $p$, $p^2$, or $p^3$.
-::: {.proof}
-$Z(G)$ is a subgroup of $G$, so its order divides $p^3$.
-:::
-<2>3. If $|Z(G)| \ge p^2$, then $Z(G)$ (or a subgroup of it of order $p^2$) is a normal subgroup of order $p^2$.
-::: {.proof}
-the center is normal, and a subgroup of the center is normal.
-:::
-<2>4. If $|Z(G)| = p$, then $G/Z(G)$ has order $p^2$, hence is abelian.
-::: {.proof}
-a group of order $p^2$ is abelian.
-:::
-<2>5. $G/Z(G)$ abelian implies $G$ is abelian (since $[G,G] \subseteq Z(G)$ and $G/Z(G)$ abelian forces $[G,G] \subseteq Z(G)$, but this does not force $G$ abelian in general; however, a group of order $p^3$ with $|Z(G)| = p$ has $G/Z(G) \cong \ZZ/p \times \ZZ/p$).
-::: {.proof}
-standard.
-:::
-<2>6. In any case, $G$ has a subgroup of order $p^2$ (a subgroup of index $p$), and a subgroup of index $p$ in a $p$-group is normal.
-::: {.proof}
-a subgroup of index $p$ in a $p$-group is normal (its normalizer has index dividing $p$, and index $1$ or $p$; a subgroup of index $p$ is normal since $[G:N_G(H)] \mid p$ and $[G:N_G(H)] \equiv 1 \pmod p$ forces $[G:N_G(H)] = 1$).
-:::
+If $|Z(G)|\ge p^2$, then $Z(G)$ contains a subgroup of order $p^2$, and every subgroup of the center is normal.
 
-<1>2. Classification when $N = \langle h \rangle$ is cyclic.
-<2>1. If $|h| = p^3$, then $G = \langle h \rangle \cong \ZZ/p^3$ is cyclic.
-::: {.proof}
-$h$ has order $p^3 = |G|$, so it generates $G$.
-:::
-<2>2. If $|h| = p$, then $N = \langle h \rangle \cong \ZZ/p$, and $G/N$ has order $p^2$.
-::: {.proof}
-$|G/N| = p^3/p = p^2$.
-:::
-<2>3. $G/N$ is abelian (order $p^2$), so $G/N \cong \ZZ/p^2$ or $\ZZ/p \times \ZZ/p$.
-::: {.proof}
-classification of groups of order $p^2$.
-:::
-<2>4. $G$ is a semidirect product $N \rtimes (G/N)$ (or an extension of $N$ by $G/N$).
-::: {.proof}
-$N$ is normal, and $G$ is an extension of $N$ by $G/N$; since $N$ is cyclic of order $p$, the extension is a semidirect product (or a central extension).
-:::
-<2>5. The possibilities for $G$ (with $N = \langle h \rangle$ cyclic of order $p$) are: $\ZZ/p \times \ZZ/p^2$, $\ZZ/p \times \ZZ/p \times \ZZ/p$, and the nonabelian groups of order $p^3$ (the Heisenberg group and the semidirect product $\ZZ/p^2 \rtimes \ZZ/p$).
-::: {.proof}
-the classification of groups of order $p^3$.
-:::
+If $|Z(G)|=p$, then $G/Z(G)$ has order $p^2$ and is abelian. Choose any subgroup
+\[
+L/Z(G)\le G/Z(G)
+\]
+of order $p$. Because $G/Z(G)$ is abelian, $L/Z(G)$ is normal, hence its inverse image $L$ is normal in $G$; moreover
+\[
+|L|=p^2.
+\]
+Thus a normal subgroup of order $p^2$ always exists.
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 proves the normal subgroup; <1>2 classifies the cyclic cases.
-:::
+The remaining bullets in the problem, read literally, are incompatible with the preceding hypothesis. If the same subgroup is assumed to satisfy
+\[
+N=\langle h\rangle,\qquad |N|=p^2,
+\]
+then necessarily
+\[
+|h|=p^2.
+\]
+Therefore neither case $|h|=p^3$ nor case $|h|=p$ can occur for that $N$.
+
+If instead one merely asks what happens when **an element of $G$** has order $p^3$, then that element generates all of $G$, so
+\[
+G\cong C_{p^3}.
+\]
+The condition that $G$ merely contain an element of order $p$ gives no classification at all: every group of order $p^3$ contains such an element by Cauchy's theorem.
 :::
