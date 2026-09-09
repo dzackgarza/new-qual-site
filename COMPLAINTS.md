@@ -40,4 +40,13 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+
+### Unsorted Algebra cards imported as proof fragments rather than problem statements
+
+- **Object and need:** `SRC-UNSORTED-ALGEBRA`, including `P-0221B`, `P-0T149`, `P-1DBO7`, `P-1P5M4`, and `P-23M4O`, needs recoverable source-backed problem statements before solution authoring can be completed.
+- **Observed evidence:** these cards' `::: problem` blocks are written as proof prose (for example, “Since $E$ was shown to be a splitting field...” in `P-0221B` and a complete contradiction proof in `P-23M4O`) and the collection has no provenance identifying an original source from which the omitted prompts can be restored.
+- **Impact and owner:** Queue C treats these as unsolved problems, but writing solutions now would require inventing missing prompts and would violate source-faithful authoring. The owning boundary is unsorted-source reconciliation/intake.
+- **Uncertainty:** verified on the five listed cards; the full `SRC-UNSORTED-ALGEBRA` collection has not yet been exhaustively classified for this defect. Searched: card bodies, collection membership, repository references. Found: no independent source/provenance for these cards. Conclusion: source reconstruction is currently blocked. Confidence: high for the listed cards. Gaps: original upstream source may exist outside the retained repository.
+- **Repair:** recover and attach the original source or source ledger, restore the actual prompts verbatim, then return the cards to the normal solution queue.
+
 ## Workflow and rendering papercuts
