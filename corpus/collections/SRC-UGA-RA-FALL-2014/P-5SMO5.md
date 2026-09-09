@@ -12,9 +12,20 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the UGA Fall 2014 real-analysis qualifying exam recorded by the collection source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
-:::{.problem}
+::: problem
 Let $g\in L^\infty([0, 1])$
 Prove that
 \[
@@ -24,7 +35,7 @@ Prove that
 \]
 :::
 
-:::{.concept}
+::: concept
 \envlist
 
 - Polar decomposition: $f = \sign(f) \cdot \abs{f}$.
@@ -32,19 +43,45 @@ Prove that
 
 :::
 
-:::{.solution}
-Use that $L^\infty[0, 1] \subseteq L^1[0, 1]$, so fixing $g$, choose a sequence of compactly supported continuous functions $f_k$ converging to $\sign(g)$ in $L^1$.
-We can arrange so that $\abs{g_k} \leq 1$.
-Then
+::: solution
+<1>1. Use density of continuous functions in $L^1([0,1])$.
+::: proof
+Because $g\in L^\infty([0,1])$, it also belongs to $L^1([0,1])$. Define
 \[
-\int \abs{g}
-&= \int\sign(g)\cdot g \\
-&= \int \lim_k g_k\cdot g \\
-&\equalsbecause{\text{DCT}} \lim_k \int g_k\cdot g \\
-&=\lim_k 0 \\
-&= 0
-,\]
-where the DCT applies since defining $h_k \da g_k\cdot g$ we have $\abs{h_k} \leq g\in L^1[0, 1]$, and each integral is zero since $g_k$ is continuous (and we use the hypothesis).
+\sigma(x)=
+\begin{cases}
+\operatorname{sgn}(g(x)),&g(x)\ne0,\\
+0,&g(x)=0.
+\end{cases}
+\]
+Then $\sigma\in L^1([0,1])$. Since $C([0,1])$ is dense in $L^1([0,1])$, there are $f_k\in C([0,1])$ such that
+\[
+\|f_k-\sigma\|_1\longrightarrow0.
+\]
 :::
 
-
+<1>2. Pass the orthogonality identity to the $L^1$ limit.
+::: proof
+By the hypothesis,
+\[
+\int_0^1 f_k(x)g(x)\,dx=0
+\qquad\text{for every }k.
+\]
+Moreover,
+\[
+\left|\int_0^1 (f_k-\sigma)g\,dx\right|
+\le \|g\|_\infty\,\|f_k-\sigma\|_1
+\longrightarrow0.
+\]
+Hence
+\[
+0=\lim_{k\to\infty}\int_0^1 f_kg
+=\int_0^1 \sigma g
+=\int_0^1 |g|.
+\]
+Therefore $|g|=0$ almost everywhere, so
+\[
+\boxed{g=0\quad\text{a.e. on }[0,1].}
+\]
+:::
+:::
