@@ -30,9 +30,9 @@ Prove that any projective $A$-module is flat.
 (Hint: first prove it for free modules).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every free $A$-module is flat.
-::: proof
+::: {.proof}
 Let $F=igoplus_{i\in I}A$.
 For every $A$-module $M$ there is a natural isomorphism
 \[
@@ -44,7 +44,7 @@ Hence $F$ is flat.
 :::
 
 <1>2. A direct summand of a flat module is flat.
-::: proof
+::: {.proof}
 Suppose $N\cong P\oplus Q$ and $N$ is flat.
 Then for every $A$-module $M$,
 \[
@@ -61,7 +61,7 @@ Thus $P$ is flat.
 :::
 
 <1>3. Every projective $A$-module is flat.
-::: proof
+::: {.proof}
 Let $P$ be projective.
 There exists a free module $F$ and a module $Q$ such that
 \[
@@ -72,7 +72,7 @@ By <1>2, its direct summand $P$ is flat.
 :::
 
 <1>4. Therefore every projective module over a commutative ring is flat.
-::: proof
+::: {.proof}
 This is exactly <1>3.
 :::
 :::
