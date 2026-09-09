@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-0T149` is a malformed normal-closure solution fragment
-
-- **Object and need:** `P-0T149` should pose the standard relationship between the normal closure of a simple algebraic extension $K(u)/K$ and the splitting field of the minimal polynomial of $u$.
-- **Observed evidence:** The `problem` body is declarative proof prose and says `The normal closure $L$ of $K$`, although normal closure is defined for an extension; migration history shows no earlier question survives.
-- **Impact and owner:** The public card `corpus/problems/Algebra/P-0T149.md` is not a posed problem and its first sentence is mathematically malformed.
-- **Uncertainty:** The original wording is unavailable, but the variables $u,f,F,L$ in the surviving fragment determine the standard simple-extension theorem.
-- **Repair:** Under TODO §7 / issue #2, restate the theorem for the normal closure of $K(u)/K$ and prove that it equals the splitting field of the minimal polynomial of $u$.
-
 
 ## Workflow and rendering papercuts
 
