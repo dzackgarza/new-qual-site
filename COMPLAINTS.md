@@ -215,7 +215,3 @@ of public mathematical remarks.
 ### Algebra P-PS4CG is false as titled
 
 `corpus/problems/Algebra/P-PS4CG.md` claims that every group of order $p^2q$ has a unique Sylow $p$-subgroup. This is false: the dihedral group of order $20=2^2\cdot5$ has five Sylow $2$-subgroups. The stored proof assumes $n_p\ne1$, then considers only $n_q=p$ and $n_q=p^2$, omitting the valid case $n_q=1$. Local history does not recover an additional hypothesis. A nearby correct theorem in the corpus is that every group of order $p^2q$ has at least one normal Sylow subgroup. Recover the original source intent before changing this card's target.
-
-### Algebra P-QC76S torsion/free-module proof defects
-
-`corpus/problems/Algebra/P-QC76S.md` stores its proof as the problem body and, in the torsion argument, chooses the annihilator $m$ as an element of the module $E$ rather than the coefficient ring $R$. Its attempted proof that $\QQ$ is not a free $\ZZ$-module also assumes a basis contains at least two elements and so does not exclude rank one. The intended theorem is correct; it should be reproved using a nonzero ring scalar for torsion and divisibility of $\QQ$ against basis coordinates for nonfreeness.

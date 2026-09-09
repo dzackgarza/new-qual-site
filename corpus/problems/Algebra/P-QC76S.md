@@ -16,38 +16,48 @@ review: draft
 ---
 
 ::: problem
-Let $E$ be a free module over $R$ an integral domain.
-Then $E$ has a basis $\theset{\vector e_i} \subseteq F$, so if $x \neq 0 \in E$, we have
-$$
-x = \sum_i r_i \vector e_i
-$$
+Let $R$ be an integral domain.
 
-where each $r_i \in R$.
-Moreover, since $x\neq 0$, at least one $r_i \neq 0$, so let $r_j$ denote one of the nonzero coefficients.
+1. Prove that every free $R$-module is torsion-free.
+2. Show that $\QQ$ is torsion-free but not free as a $\ZZ$-module.
+:::
 
-Now suppose $x$ is a torsion element, so $mx = 0$ for some $m\neq 0 \in E$.
-We can then write
-$$
-mx = m\sum_i r_i \vector e_i = \sum_i mr_i \vector e_i = 0
-$$
+::: {.solution}
+<1>1. Free modules over a domain are torsion-free.
+::: {.proof}
+Let $F$ be free with basis $\{e_i\}_{i\in I}$, and let
+\[
+0\ne x=\sum_{i\in I} r_i e_i
+\]
+be a finite linear combination. Choose $j$ with $r_j\ne0$.
+If $0\ne a\in R$ satisfied $ax=0$, then
+\[
+0=ax=\sum_i ar_i e_i.
+\]
+Linear independence gives $ar_i=0$ for every $i$, in particular $ar_j=0$. Since $R$ is a domain and both $a,r_j$ are nonzero, this is impossible. Hence no nonzero element is torsion.
+:::
 
-But by linear independence, this forces $mr_i = 0$ for all $i$.
-In particular, $mr_j = 0$ where $r_j \neq 0$.
-But this exhibits either $m$ or $r_j$ as a zero divisor, and since the only zero divisor in an integral domain is zero, we must have $m=0$ or $r_j = 0$, a contradiction.
+<1>2. $\QQ$ is torsion-free but not free over $\ZZ$.
+::: {.proof}
+If $0\ne n\in\ZZ$ and $q\in\QQ$ satisfy $nq=0$, then $q=0$, so $\QQ$ is torsion-free.
 
-So $x$ can not be a torsion element.
-But since $x \in E$ was arbitrary, $E$ must be torsion-free.
-
-For an example of a torsion-free module over an integral domain that is *not* free, consider $\QQ$ as a $\ZZ\dash$module.
-Then $\QQ$ is torsion-free: if $n \cdot q = 0$ for some $n \in \ZZ$ and $q \in \QQ$, then either $n = 0$ or $q = 0$ (since $\QQ$ is a field, hence an integral domain, and $n \cdot q = 0$ in $\QQ$ with $n \neq 0$ forces $q = 0$), so no nonzero element of $\QQ$ is annihilated by a nonzero integer.
-
-But $\QQ$ is not free as $\ZZ\dash$module.
-Supposing that $\mathcal B =\theset{\vector b_1, \vector b_2, \cdots} \subset \QQ$ was a $\ZZ\dash$basis, consider $\vector b_1 = \frac {p_1} {q_1}$ and $\vector b_2 = \frac {p_2} {q_2}$.
-Then $\vector b_1, \vector b_2$ can not be linearly independent over $\ZZ$, which follows from the fact that
-$$
-q_1 p_2 \vector b_1 + q_2 p_1 \vector b_2 = p_2 p_1 - p_1 p_2 = 0, 
-$$
-
-while $q_1 p_2, ~q_2 p_1 \neq 0 \in \ZZ$.
-$\qed$
+Suppose $\QQ$ were free over $\ZZ$ with basis $\mathcal B$. Choose $0\ne b\in\mathcal B$. Since $\QQ$ is divisible, there exists $x\in\QQ$ with
+\[
+2x=b.
+\]
+Write the finite basis expansion
+\[
+x=\sum_{c\in\mathcal B} n_c c,
+\qquad n_c\in\ZZ.
+\]
+Then
+\[
+b=2x=\sum_c 2n_c c.
+\]
+Uniqueness of basis coordinates forces the coefficient of $b$ to satisfy
+\[
+1=2n_b,
+\]
+impossible in $\ZZ$. Therefore $\QQ$ is not a free $\ZZ$-module.
+:::
 :::
