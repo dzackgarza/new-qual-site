@@ -208,6 +208,4 @@ of public mathematical remarks.
 
 ### Algebra P-O5YG6, P-OC42E, and P-ODNWF hypothesis defects
 
-`corpus/problems/Algebra/P-OC42E.md` stores a long attempted proof of the four lemma as the problem body, and its injectivity diagram labels the right-hand vertical map as surjective where the injective four lemma requires it to be injective. The theorem should be restated with the standard exact-row hypotheses before proof.
-
 `corpus/problems/Algebra/P-ODNWF.md` claims that any ideal $I$ of a PID containing an irreducible $a$ must equal $(a)$. This is false for $I=R$. The intended result requires $I$ proper (equivalently, uses maximality of $(a)$ among proper ideals).
