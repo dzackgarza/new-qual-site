@@ -233,3 +233,10 @@ of public mathematical remarks.
 - **Observed evidence:** Pointwise multiplication is not closed on general $L^1$ spaces, while convolution makes $L^1(G)$ a Banach algebra only after specifying a locally compact group and Haar measure.
 - **Impact and owner:** The owning file is `corpus/problems/Algebra/P-XZRST.md`; the surviving prompt has no unique answer.
 - **Repair:** Recover the intended measure/group and multiplication before authoring a solution.
+
+### `P-YFOG7` lost its polynomial and reverses the Galois-extension notation
+
+- **Object and need:** `P-YFOG7` begins “The splitting field of this polynomial” without containing the polynomial, then writes `Gal(\QQ/L)` although the displayed tower has $\QQ\subset L$.
+- **Observed evidence:** The field itself is explicit: $L=\QQ(\sqrt[3]2,\sqrt3,\zeta_3)$. Its Galois group and intermediate fields can therefore be computed without inventing the missing polynomial.
+- **Impact and owner:** The owning file is `corpus/problems/Algebra/P-YFOG7.md`. The current body is a malformed solution fragment with image-dependent subgroup diagrams.
+- **Repair:** Restate the recoverable task directly for $L/\QQ$, use $\operatorname{Gal}(L/\QQ)$, and replace the figures by an explicit subgroup/fixed-field list.
