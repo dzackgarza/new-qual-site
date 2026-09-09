@@ -115,7 +115,7 @@ Therefore the Uniform Boundedness Principle gives a constant \(C\) such that
 
 Because \(\Omega_n\uparrow\Omega\) and \(\mathbf1_{\{|f|\le n\}}\uparrow1\),
 \[
-|f_n|^2|f_n|^2\uparrow |f|^2
+|f_n|^2\uparrow |f|^2
 \]
 pointwise. By the Monotone Convergence Theorem,
 \[
