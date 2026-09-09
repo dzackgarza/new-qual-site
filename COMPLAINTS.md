@@ -72,14 +72,6 @@ of public mathematical remarks.
 - **Uncertainty:** The nearby solved card `E-N626Y` concerns algebraic/normal/separable properties over intermediate fields, so that may be related, but the missing text is not recoverable with enough confidence to replace it.
 - **Repair:** Recover the original source text before authoring a solution.
 
-### `P-35P7L` is false without additional hypotheses
-
-- **Object and need:** `P-35P7L` claims every group of order $12$ with a normal subgroup of order $4$ is isomorphic to $A_4$.
-- **Observed evidence:** The cyclic group $C_{12}$ has its unique subgroup of order $4$, hence a normal subgroup of order $4$, but $C_{12}$ is abelian and therefore not isomorphic to $A_4$.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-35P7L.md` cannot be solved as stated.
-- **Uncertainty:** The missing intended hypothesis is not recoverable from the current card; several plausible strengthenings would make different classification statements.
-- **Repair:** Recover the source statement or identify the omitted hypothesis before authoring a solution.
-
 ### `P-27BNG` has no mathematical task after its hypothesis
 
 - **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
