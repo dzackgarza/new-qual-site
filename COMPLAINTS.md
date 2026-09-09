@@ -226,3 +226,10 @@ of public mathematical remarks.
 - **Observed evidence:** Representation-theoretic answers depend on the coefficient field and its characteristic, while the final phrase “some related groups” does not identify a group. The order formula for $\GL_2(\FF_q)$ is unambiguous, but the requested representation classification is not.
 - **Impact and owner:** The owning file is `corpus/problems/Algebra/P-WVWEP.md`; it cannot receive a unique complete solution from the surviving prompt.
 - **Repair:** Recover the intended coefficient field and identify the related quotient/subgroup before authoring the representation-theory portion.
+
+### Algebra fragment and cyclotomic-degree defects in `P-XNN6S`, `P-XQ4R6`, and `P-XT3LV`
+
+- **Object and need:** These three unsolved Algebra cards have recoverable intended statements but malformed problem bodies.
+- **Observed evidence:** `P-XNN6S` and `P-XQ4R6` contain worked solution prose rather than posed problems. `P-XT3LV` asserts $[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]=\varphi(n)/2$ without the necessary hypothesis $n>2$; for $n=1,2$, $\zeta_n$ is real and the quadratic-step argument fails.
+- **Impact and owner:** The owning files are the three corresponding cards under `corpus/problems/Algebra/`.
+- **Repair:** Restore posed statements, add $n>2$ to the cyclotomic card, and attach complete proofs.
