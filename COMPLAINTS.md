@@ -158,3 +158,11 @@ of public mathematical remarks.
 - **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
 - **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
 - **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
+
+### `P-DJFL4` does not actually rule out surjectivity
+
+- **Object and need:** `P-DJFL4` is a problem card whose body is an attempted proof that an endomorphism of $\RR^5$ with eigenvalue $0$ is neither injective nor surjective.
+- **Observed evidence:** After showing $\dim\ker L\ge1$, the stored argument states only $\dim\operatorname{im}L\le5=\dim\RR^5$ and concludes non-surjectivity. That inequality is compatible with surjectivity; rank-nullity gives the needed strict bound $\dim\operatorname{im}L=5-\dim\ker L\le4$.
+- **Impact and owner:** The theorem is correct but the public proof has a logical gap and is stored as the problem statement rather than a solution. The owning file is `corpus/problems/Algebra/P-DJFL4.md`.
+- **Uncertainty:** None.
+- **Repair:** Restore the theorem as a posed problem and use the strict rank bound $\dim\operatorname{im}L\le4$ in the solution.
