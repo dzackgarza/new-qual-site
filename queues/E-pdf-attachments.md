@@ -109,7 +109,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
 
-- [ ] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders**
+- [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection. No collection/card ingest required.
 
 - [ ] [qual18wintersol.pdf](assets/attachments/extracted/qual18wintersol.md) (61L, 10 problems) — algebra — Winter 2018
 
