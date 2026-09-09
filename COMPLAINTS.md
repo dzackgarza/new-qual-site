@@ -167,13 +167,6 @@ of public mathematical remarks.
 - **Uncertainty:** The likely intended finite-field exercise is clear, but the prime/base field is not source-recoverable.
 - **Repair:** Recover the original source context and specify the base field (for example $\FF_p$) before authoring a solution.
 
-### `P-GQZ1O`, `P-GRL4N`, and `P-HAGJY` store malformed proof fragments as problems
-
-- **Object and need:** These Algebra cards are classified as problems but their bodies are attempted solutions rather than posed statements.
-- **Observed evidence:** `P-GQZ1O` defines $T(M)$ and then says `Then T(R) is a submodule`; `P-GRL4N` begins mid-computation with characteristic/minimal-polynomial and rank data already asserted; `P-HAGJY` begins `By part 1` and its closure calculation for composition mixes scalar/additive module laws into an invalid expression rather than checking $(f\circ g)(rx+y)=r(f\circ g)(x)+(f\circ g)(y)$.
-- **Impact and owner:** The intended targets are recoverable from the titles, but the public prompts are not clean exercises and `P-HAGJY` contains an invalid proof step. The owning files are `corpus/problems/Algebra/P-GQZ1O.md`, `P-GRL4N.md`, and `P-HAGJY.md`.
-- **Uncertainty:** None about the intended mathematical statements.
-- **Repair:** Restore each theorem/computation as a posed problem and replace the fragments by complete checked solutions.
 
 ### `P-GSJ2A` omits the scalar field for the symmetric-matrix eigenvalue question
 

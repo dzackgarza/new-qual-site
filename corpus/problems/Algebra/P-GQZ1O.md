@@ -12,33 +12,53 @@ classification:
   - Integral Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Suppose $R$ is a domain, $M$ an $R\dash$module, and let
-$$
-T(M) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
-$$
-
-Then $T(R)$ is a submodule iff for all $r\in R$ and all $m,n\in T(M)$ we have $rm + n \in T(M)$.
-
-So pick annihilators $a_m, a_n \neq 0 \in R$ where $a_m m = 0$ and $a_n n = 0$.
-
-Since $a_m \neq 0$ and $a_n \neq 0$, the product $a_m a_n \neq 0$ **because $R$ is a domain**.
-
-Since $0 \in T(M)$, we can suppose $rm+n \neq 0$ (otherwise $rm+n = 0$ so $m$ is torsion by definition).
-Then
-
+Let $R$ be an integral domain and $M$ an $R$-module. Define
 \[
-\begin{align*}
-a_m a_n (rm + n) 
-&= a_m a_n r m + a_m a_n n \\
-&=r a_n (a_m m) + a_m (a_n n) \\
-&= r a_n 0 + a_m 0 \\
-&= 0
-.\end{align*}
+T(M)=\{m\in M:rm=0\text{ for some }0\ne r\in R\}.
 \]
+Prove that $T(M)$ is an $R$-submodule of $M$.
+:::
 
-where the commutativity of $r, a_n, a_m$ follows from the fact that these are all elements of $R$, which is a domain, and in particular is commutative.
-$\qed$
+
+::: {.solution}
+<1>1. One has $0\in T(M)$.
+::: {.proof}
+For any nonzero $r\in R$, $r0=0$.
+:::
+
+<1>2. If $m,n\in T(M)$ and $c\in R$, then $cm+n\in T(M)$.
+::: {.proof}
+Choose nonzero annihilators $a,b\in R$ with
+\[
+am=0,
+\qquad
+bn=0.
+\]
+Since $R$ is a domain,
+\[
+ab\ne0.
+\]
+Then
+\[
+ab(cm+n)
+=bc(am)+a(bn)
+=0.
+\]
+Thus $cm+n$ is torsion.
+:::
+
+<1>3. Therefore $T(M)\le M$.
+::: {.proof}
+Apply the submodule criterion using <1>1 and <1>2. The domain hypothesis is used exactly to ensure that the product of two nonzero annihilators is still nonzero.
+:::
 :::
