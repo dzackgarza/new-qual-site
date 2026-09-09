@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -24,36 +27,32 @@ If $I$ is an ideal in a Noetherian ring with a unit, what is the intersection of
 :::
 
 ::: solution
-**Goal:** Define a Noetherian ring and characterize $\bigcap_{n=1}^\infty I^n$ via the Krull Intersection Theorem.
+A commutative ring $R$ is Noetherian if every ideal is finitely generated; equivalently, every ascending chain of ideals stabilizes.
 
-<1>1. Definition of a Noetherian ring:
-::: {.proof}
-<2>1. A ring $R$ is **Noetherian** if it satisfies any of the following equivalent conditions:
-- (ACC) Every ascending chain of ideals $I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots$ eventually stabilizes (there exists $N$ such that $I_n = I_N$ for all $n \ge N$).
-- Every non-empty set of ideals of $R$ has a maximal element with respect to inclusion.
-- Every ideal of $R$ is finitely generated.
-:::
+Let $I\trianglelefteq R$ and set
+\[
+J=\bigcap_{n\ge1} I^n.
+\]
+Since $R$ is Noetherian, the ideal $J$ is finitely generated. By Artin--Rees applied to the inclusion $J\subseteq R$, there is $k$ such that
+\[
+I^n\cap J=I^{\,n-k}(I^k\cap J)\qquad(n\ge k).
+\]
+Because $J\subseteq I^n$ for every $n$, taking $n=k+1$ gives
+\[
+J=IJ.
+\]
+The determinant trick applied to the finitely generated module $J$ now yields some $x\in I$ such that
+\[
+(1-x)J=0.
+\]
+Thus every $a\in J$ satisfies $(1-x)a=0$ for some $x\in I$.
 
-<1>2. The Krull Intersection Theorem for general commutative Noetherian rings:
-::: {.proof}
-<2>1. Let $R$ be a commutative Noetherian ring and $I$ an ideal. Let $J = \bigcap_{n=1}^\infty I^n$.
-<2>2. By the Artin-Rees lemma, there exists an integer $k \ge 1$ such that $I(J \cap I^k) = J \cap I^{k+1}$.
-<2>3. Since $J \subseteq I^m$ for all $m$, $J \cap I^k = J$ and $J \cap I^{k+1} = J$.
-<2>4. Thus $IJ = J$.
-<2>5. By Nakayama's Lemma (or the determinantal trick) applied to the finitely generated ideal $J$, there exists an element $x \in I$ such that $(1 - x)J = 0$.
-<2>6. Hence $J = \{a \in R \mid (1 - x)a = 0 \text{ for some } x \in I\}$.
-:::
+Conversely, if $(1-x)a=0$ for some $x\in I$, then $a=xa=x^2a=\cdots=x^na$ for every $n$, so $a\in I^n$ for every $n$. Hence
+\[
+\bigcap_{n\ge1}I^n
+=
+\{a\in R:(1-x)a=0\text{ for some }x\in I\}.
+\]
 
-<1>3. Special Cases:
-::: {.proof}
-<2>1. **Domain case:** If $R$ is an integral domain and $I \ne R$ is a proper ideal, then $1 - x \ne 0$ for all $x \in I$ (since $x \in I \subsetneq R \implies x \ne 1$). Since $R$ has no zero divisors, $(1-x)a = 0 \implies a = 0$. Thus:
-$$\bigcap_{n=1}^\infty I^n = (0).$$
-<2>2. **Local ring case:** If $(R, \mathfrak{m})$ is a Noetherian local ring and $I \subseteq \mathfrak{m}$ is a proper ideal, then for every $x \in I \subseteq \mathfrak{m}$, the element $1 - x$ is a unit in $R$. Therefore $(1-x)J = 0 \implies J = 0$, so:
-$$\bigcap_{n=1}^\infty I^n = (0).$$
-:::
-
-<1>4. Conclusion:
-::: {.proof}
-In general, $\bigcap_{n=1}^\infty I^n = \{a \in R \mid (1-x)a = 0 \text{ for some } x \in I\}$. In particular, if $R$ is an integral domain or a local ring and $I$ is proper, the intersection is $(0)$.
-:::
+In particular, if $I$ is contained in the Jacobson radical (for example, if $(R,\mathfrak m)$ is local and $I\subseteq\mathfrak m$), then $1-x$ is a unit for every $x\in I$, so the intersection is $0$. If $R$ is a domain and $I\ne R$, then $1-x\ne0$ and $(1-x)a=0$ again forces $a=0$, so the intersection is also $0$.
 :::
