@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-CASP25E is false as printed in the official Spring 2025 UCSD source
+
+- **Object and need:** `P-CASP25E` in `SRC-UCSD-CA-SPRING-2025`; the source claims that a bounded sequence of holomorphic functions on $\mathbb D$ must converge locally uniformly if it converges pointwise on an arbitrary convergent sequence $z_m\to z_*\in\mathbb D$.
+- **Observed evidence:** direct inspection of Problem 5 in the official Spring 2025 UCSD PDF confirms that no distinctness hypothesis is imposed on the points $z_m$. Taking $z_m\equiv0$ and $f_n(z)=(-1)^n z$ gives a uniformly bounded sequence of holomorphic functions with $f_n(z_m)=0$ for every $m,n$, while $(f_n)$ does not converge locally uniformly on any compact set containing a nonzero point.
+- **Impact and owner:** the printed statement is false. The usual Vitali/Montel argument becomes valid if the set of testing points has an accumulation point in $\mathbb D$, for example if the $z_m$ are distinct and converge in $\mathbb D$. The source/card statement owns the repair.
+- **Uncertainty:** the source wording and counterexample are verified; no independent erratum has been located.
+- **Repair:** recover an erratum or corrected copy before adding a missing distinctness/accumulation hypothesis; otherwise retain the card as a documented source defect.
+
 ### P-CASP13E is false as printed in the official Spring 2013 UCSD source
 
 - **Object and need:** `P-CASP13E` in `SRC-UCSD-CA-SPRING-2013`; the source claims that a sequence of distinct real numbers $x_n$ is the horizontal part of a zero set $x_n+i$ of some holomorphic function on the upper half-plane if and only if $\sum_n (x_n^2+4)^{-1}<\infty$.
