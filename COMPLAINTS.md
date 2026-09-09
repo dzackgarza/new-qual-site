@@ -198,3 +198,11 @@ of public mathematical remarks.
 - **Observed evidence:** The multiquadratic extension and the stabilizer of the displayed sum depend on relations among the square classes of the $n_i$; repeated or dependent radicals can change both the top field and the fixed subgroup.
 - **Impact and owner:** There is no unique answer from the surviving statement. The owning file is `corpus/problems/Algebra/P-JH3EW.md`.
 - **Repair:** Recover the source hypotheses (typically independent square classes, often distinct squarefree positive integers) before authoring a specific Galois group.
+
+### `P-KDJFP` omits matrix dimensions and mislabels the uniqueness rank
+
+- **Object and need:** `P-KDJFP` gives a worked rank criterion for $AX=B$ but never fixes the shape of $A$ and states uniqueness as $\operatorname{rank}(A)=m$.
+- **Observed evidence:** For $A\in M_{m\times n}(F)$, consistency is $\operatorname{rank}A=\operatorname{rank}[A\mid b]$, while uniqueness of a consistent system is $\ker A=0$, equivalently $\operatorname{rank}A=n$ (the number of columns/unknowns).
+- **Impact and owner:** The surviving proof is dimensionally ambiguous. The owning file is `corpus/problems/Algebra/P-KDJFP.md`.
+- **Repair:** State $A\in M_{m\times n}(F)$ and use $n$ in the uniqueness criterion.
+
