@@ -158,3 +158,11 @@ of public mathematical remarks.
 - **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
 - **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
 - **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
+
+### `P-CVUQ3` reverses the normal factor in its semidirect product
+
+- **Object and need:** `P-CVUQ3` asks for the Galois group of the splitting field of $x^{15}+2$ over $\QQ$ as `S_2 \semidirect \ZZ/15\ZZ`, where $S_2$ is a Sylow $2$-subgroup.
+- **Observed evidence:** With $L=\QQ(\alpha,\zeta_{15})$, $\alpha^{15}=-2$, the subgroup $\operatorname{Gal}(L/\QQ(\zeta_{15}))\cong C_{15}$ is normal. The complementary subgroup fixing $\alpha$ is $\operatorname{Gal}(\QQ(\zeta_{15})/\QQ)\cong(\ZZ/15\ZZ)^\times$, of order $8$, hence a Sylow $2$-subgroup. The repository's semidirect-product convention places the normal factor on the left, as in `C_p\rtimes C_q` and `\ZZ/n\ZZ\rtimes(\ZZ/n\ZZ)^\times` elsewhere in Algebra.
+- **Impact and owner:** The stored product orientation is incompatible with the actual Galois extension structure and with repository notation. The owning file is `corpus/problems/Algebra/P-CVUQ3.md`.
+- **Uncertainty:** None: $[\QQ(\alpha):\QQ]=15$ by Eisenstein, $[\QQ(\zeta_{15}):\QQ]=8$, so their intersection is $\QQ$ and the splitting field has degree $120$.
+- **Repair:** State and prove $\operatorname{Gal}(L/\QQ)\cong C_{15}\rtimes(\ZZ/15\ZZ)^\times\cong C_{15}\rtimes(C_4\times C_2)$, identifying the right factor as a Sylow $2$-subgroup and writing the conjugation action explicitly.
