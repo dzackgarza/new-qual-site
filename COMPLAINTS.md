@@ -48,6 +48,14 @@ of public mathematical remarks.
 - **Uncertainty:** the falsity of the printed statement and the DOCX grouping are verified. A plausible intended equation is $\sin z=e^\alpha z^3$, for which a three-root Rouché argument is natural, but no source evidence currently establishes that correction.
 - **Repair:** locate an independent copy or erratum for the Spring 2017 exam and replace the statement only when the intended formula is source-supported; otherwise retain the card as a documented source defect.
 
+### P-8CA06 omits the hypothesis $f(0)=0$ in the official Fall 2017 UGA source
+
+- **Object and need:** `P-8CA06` in `SRC-UGA-CA-FALL-2017`; the problem asks for a positive integer $m$ with $f(0)=\cdots=f^{(m-1)}(0)=0$ and then Schwarz-type bounds of order $m$.
+- **Observed evidence:** direct inspection of UGA's official `Complex Analysis [Fall 2017].docx` confirms the source assumes only that $f:\mathbb E\to\mathbb E$ is analytic and is not identically zero in some neighborhood of the origin. It does not assume $f(0)=0$. The constant function $f\equiv1/2$ satisfies the printed hypotheses but contradicts part (a), since no positive $m$ can have $f(0)=0$.
+- **Impact and owner:** both parts rely on $0$ being a zero of positive order; as printed the problem is false. The source/card statement owns the repair.
+- **Uncertainty:** the omission is verified against the official DOCX and the counterexample is decisive. The natural correction is to add $f(0)=0$, but no independent erratum has yet been located.
+- **Repair:** add the missing hypothesis only if supported by an independent source or explicit erratum; otherwise retain the card as a documented source defect rather than attaching a proof to the false statement.
+
 ### P-X7WUF is not present in the cited Fall 2016 UGA source and its residue formula omits a factorial
 
 - **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; the local collection provenance should identify the actual source of each card, and the residue formula for a pole of order $m$ must include the standard normalization.
