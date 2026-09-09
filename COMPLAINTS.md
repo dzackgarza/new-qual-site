@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-1DBO7` falsely claims every finite extension is a splitting field
+
+- **Object and need:** `P-1DBO7` should state that every finite extension $E/F$ is algebraic and is contained in a finite splitting field (equivalently, has a finite normal closure), not that $E$ itself is always a splitting field.
+- **Observed evidence:** The imported `problem` body is solution prose asserting that for generators $\alpha_i$, the polynomial $\prod_i(x-\alpha_i)$ makes $E$ a splitting field. That product need not lie in $F[x]$. Concretely, $\QQ(\sqrt[3]{2})/\QQ$ is finite but not normal, hence cannot be a splitting field over $\QQ$.
+- **Impact and owner:** The title and body of `corpus/problems/Algebra/P-1DBO7.md` are false as written.
+- **Uncertainty:** The original source question is unavailable, but the standard finite-normal-closure theorem is the minimal correction of the surviving argument.
+- **Repair:** Under TODO §7 / issue #2, change the conclusion to containment in a finite splitting field and prove it using the generators' minimal polynomials.
+
 
 ## Workflow and rendering papercuts
 
