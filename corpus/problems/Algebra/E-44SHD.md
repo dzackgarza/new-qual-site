@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
+  note: Checked against the UCR qualifying-algebra linear algebra problem list.
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -28,36 +32,28 @@ audit:
 ::: {.solution}
 <1>1. Define
 \[
-p(t)=\det(A+tB)\in \boldsymbol{k}[t].
+p(\lambda)=\det(A+\lambda B)\in k[\lambda].
 \]
-Then \(p(t)\) is a polynomial in \(t\).
+Then \(p\) is not the zero polynomial.
 ::: {.proof}
-Each entry of \(A+tB\) is affine-linear in \(t\), and the determinant is a polynomial expression in the matrix entries.
-Hence \(\det(A+tB)\) is a polynomial in \(t\).
-:::
-
-<1>2. The polynomial \(p(t)\) is nonzero.
-::: {.proof}
-Evaluating at \(t=0\) gives
+Because \(B\) is invertible,
 \[
-p(0)=\det(A)\neq0
+A+\lambda B=B(B^{-1}A+\lambda I),
 \]
-because \(A\) is invertible.
-Thus \(p\) cannot be the zero polynomial.
-:::
-
-<1>3. There are only finitely many \(\lambda\in\boldsymbol{k}\) such that \(p(\lambda)=0\).
-::: {.proof}
-A nonzero polynomial over a field has at most its degree many roots.
-Therefore the root set of \(p\) in \(\boldsymbol{k}\) is finite.
-:::
-
-<1>4. For every \(\lambda\in\boldsymbol{k}\) outside that finite root set, the matrix \(A+\lambda B\) is invertible.
-::: {.proof}
-For such \(\lambda\), one has
+so
 \[
-\det(A+\lambda B)=p(\lambda)\neq0.
+p(\lambda)=\det(B)\det(B^{-1}A+\lambda I).
 \]
-A square matrix over a field is invertible if and only if its determinant is nonzero.
+If \(A,B\in M_n(k)\), then the second factor is monic of degree \(n\) in \(\lambda\). Since \(\det(B)\neq0\), \(p\) has degree \(n\) and is therefore nonzero.
+:::
+
+<1>2. The matrix \(A+\lambda B\) is singular for only finitely many \(\lambda\in k\).
+::: {.proof}
+A square matrix over a field is singular exactly when its determinant is zero. By <1>1, \(p\) is a nonzero polynomial of degree \(n\), so it has at most \(n\) roots in \(k\). Thus only finitely many \(\lambda\) satisfy \(\det(A+\lambda B)=0\).
+:::
+
+<1>3. Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
+::: {.proof}
+This is the complement of the finite exceptional set from <1>2.
 :::
 :::

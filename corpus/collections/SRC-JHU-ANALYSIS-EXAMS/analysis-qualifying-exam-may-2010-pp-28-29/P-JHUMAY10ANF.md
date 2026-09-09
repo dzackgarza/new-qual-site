@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANF
 kind: problem
-title: 'if are fixed then there is a constant A such that $$ \| f * \varphi \| _ { L ^ {'
+title: 'Convolution with a compactly supported kernel maps $L^p$ to $L^q$ exactly in the expected direction'
 classification:
   areas:
   - real-analysis
@@ -11,40 +11,109 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 6 of the JHU Analysis Qualifying Exam, May 2010, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-6. Let $\varphi : \mathbb { R }  \mathbb { R }$ be a continuous function with compact support.
+::: {.problem}
+Let $\varphi:\mathbb R\to\mathbb R$ be continuous with compact support.
 
-a) Prove that if $1 \leq p \leq q \leq \infty$ are fixed then there is a constant A such that
+(a) If $1\le p\le q\le\infty$, prove that there is a constant $A$ such that
+\[
+\|f*\varphi\|_q\le A\|f\|_p
+\qquad(f\in L^p).
+\]
 
-$$
-\| f * \varphi \| _ { L ^ { q } } \leq A \| f \| _ { L ^ { p } } , \quad { \mathrm { f o r ~ a l l } } \quad f \in L ^ { p } .
-$$
+(b) Show by example that no such general estimate can hold when $p>q$.
+:::
 
-If you use Young’s (convolution) inequality, you should prove it.
+::: {.solution}
+<1>1. Endpoint bounds.
+::: {.proof}
+For $1\le p<\infty$, Minkowski's integral inequality gives
+\[
+\begin{aligned}
+\|f*\varphi\|_p
+&=\left\|\int_{\mathbb R}\varphi(y)f(\cdot-y)\,dy\right\|_p\\
+&\le\int_{\mathbb R}|\varphi(y)|\,\|f(\cdot-y)\|_p\,dy\\
+&=\|\varphi\|_1\|f\|_p.
+\end{aligned}
+\]
+Also, by Hölder's inequality, if $p'$ is conjugate to $p$,
+\[
+|(f*\varphi)(x)|\le\|f\|_p\,\|\varphi(x-\cdot)\|_{p'}=\|f\|_p\|\varphi\|_{p'},
+\]
+so
+\[
+\|f*\varphi\|_\infty\le\|\varphi\|_{p'}\|f\|_p.
+\]
+For $p=\infty$, necessarily $q=\infty$, and directly
+\[
+\|f*\varphi\|_\infty\le\|\varphi\|_1\|f\|_\infty.
+\]
+:::
 
-b) Show by example that such a general inequality cannot hold for $p > q$
+<1>2. Interpolate the output norm for $p\le q\le\infty$.
+::: {.proof}
+Assume $1\le p<\infty$ and let $h=f*\varphi$. If $p\le q<\infty$, then
+\[
+\|h\|_q^q
+=\int |h|^{q-p}|h|^p
+\le\|h\|_\infty^{q-p}\|h\|_p^p.
+\]
+Hence
+\[
+\|h\|_q\le\|h\|_\infty^{1-p/q}\|h\|_p^{p/q}.
+\]
+Using <1>1,
+\[
+\|f*\varphi\|_q
+\le\|\varphi\|_{p'}^{1-p/q}\|\varphi\|_1^{p/q}\|f\|_p.
+\]
+The case $q=\infty$ is already contained in <1>1. This proves part (a).
+:::
 
-## 7. Suppose that
+<1>3. Failure when $p>q$.
+::: {.proof}
+Choose a nonzero compactly supported continuous kernel $\varphi$. Let
+\[
+\psi(x)=\overline{\varphi(-x)},
+\]
+so $\psi\in C_c$ and
+\[
+(\psi*\varphi)(0)=\int_{\mathbb R}|\varphi(y)|^2\,dy>0.
+\]
+Thus $h:=\psi*\varphi$ is not identically zero.
 
-$$
-f : [ 0 , 1 ] \times [ 0 , 1 ] \to \mathbb { R }
-$$
-
-is continuous and has the property that for each x the map $t \to f ( x , t )$ is differentiable and that $\begin{array} { r } { \left| \frac { \partial f } { \partial t } ( x , t ) \right| \le g ( x ) } \end{array}$ for some measurable function statisfying $\textstyle \int _ { 0 } ^ { 1 } g ( x ) d x < \infty$ Carefully prove that $\textstyle F ( t ) = \int _ { 0 } ^ { 1 } f ( x , t )$ dx satisfies
-
-$$
-F ^ { \prime } ( t ) = \int _ { 0 } ^ { 1 } { \frac { \partial f } { \partial t } } ( x , t ) d x .
-$$
-
-## 8. Let E be a measurable subset of the line.
-
-a) Let $\chi _ { E } : \mathbb { R } \to \mathbb { R }$ be the characteristic function of $E ~ ( \mathrm { i . e . } ~ \chi _ { E } ( x ) = 1$ when $x \in E$ and $\chi _ { E } ( x ) = 0$ when $x \notin E )$ . If E has finite Lebesgue measure, show that the function $f : \mathbb { R } \to \mathbb { R }$ defined by
-
-$$
-f ( x ) = \int _ { \mathbb { R } } \chi _ { E } ( y ) \chi _ { E } ( y - x ) d y
-$$
-
-is continuous.
-
-b) Suppose instead that E has positive Lebesgue measure $0 < | E | \le \infty$ . Using a), show that the set $E - E = \{ x - y : x , y \in E \}$ contains an open interval $( - \varepsilon , \varepsilon )$ for some $\varepsilon > 0$
+Choose $L>0$ so large that the translates $\psi(\cdot-kL)$ have pairwise disjoint supports, and likewise the translates $h(\cdot-kL)$ have pairwise disjoint supports. Define
+\[
+f_N=\sum_{k=1}^N\psi(\cdot-kL).
+\]
+Then
+\[
+\|f_N\|_p=N^{1/p}\|\psi\|_p,
+\]
+while
+\[
+f_N*\varphi=\sum_{k=1}^N h(\cdot-kL)
+\]
+and therefore
+\[
+\|f_N*\varphi\|_q=N^{1/q}\|h\|_q.
+\]
+If an estimate $\|f*\varphi\|_q\le A\|f\|_p$ held with $p>q$, then
+\[
+N^{1/q-1/p}\le A\frac{\|\psi\|_p}{\|h\|_q}
+\]
+for every $N$, impossible because $1/q-1/p>0$. Hence no such general estimate can hold for $p>q$.
+:::
+:::

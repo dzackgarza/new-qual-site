@@ -12,64 +12,57 @@ classification:
   - Classification
 relations: []
 review: draft
+audit:
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
 
-:::{.solution}
-\envlist
-
-- Write $\size G = p^2 q$
-- Cases: first assume $p>q$, then do $q<p$.
-- In any case, we have
+::: {.solution}
+<1>1. Let \(n_p\) and \(n_q\) denote the numbers of Sylow \(p\)- and Sylow \(q\)-subgroups of \(G\). Then
 \[
-n_p \divides q &\implies n_p \in \ts{ 1,q } \\ \\
-n_q \divides p^2 &\implies n_q \in \ts{ 1, p, p^2} 
-.\]
-
-- If $n_p=1$ or $n_q=1$, we're done, so suppose otherwise.
-
-- **Case 1:** $:p>q$.
-  - Using that $[n_p]_p \equiv 1$, consider reducing elements in $\ts{1, q} \mod p$.
-  - Since $q<p$, we just have $q\mod p = q$, and as long as $q\neq 1$ we have $q\not\equiv 1\mod p$.
-    But since $n_p\neq 1$ and $n_p\neq q$, this is a contradiction. $\contradiction$
-
-- **Case 2:** $p< q$:
-  - Using that $[n_q]_q \equiv 1$, consider reducing $\ts{1, p, p^2}\mod q$.
-  - Since now $p<q$, we have $p\mod q = p$ itself, so $p\mod q \neq 1$ and we can rule it out.
-  - The remaining possibility is $n_q = p^2$.
-  - Supposing that $n_p \neq 1$, we have $n_p=q$, so we can count 
-  \[
-  \text{Elements from Sylow } q: n_q( \size S_q - 1) &= p^2(q-1) + 1
-  ,\]
-  where we've used that distinct Sylow $q$s can only intersect at the identity, and although Sylow $p$s *can* intersect trivially, they can also intersect in a subgroup of size $p$.
-  - Suppose all Sylow $p$s intersect trivially, we get at least
-  \[
-  \text{Elements from Sylow } p: n_p( \size S_p - 1) &= q(p^2-1) 
-  .\]
-  Then we get a count of how many elements the Sylow $p$s and $q$s contribute:
-  \[
-  q(p^2-1) + p^2(q-1) + 1
-  = p^2q - q + p^2q - p^2 + 1 
-  = p^2q + (p^2-1)(q-1)
-  > p^2q = \size G
-  ,\]
-  provided $(p^2-1)(q-1) \neq 0$, which is fine for $p\geq 2$ since this is at least $(2^2-1)(3-2) = 3$ (since $p<q$ and $q=3$ is the next smallest prime). $\contradiction$
-
-  - Otherwise, we get two Sylow $p$s intersecting nontrivially, which must be in a subgroup of order at least $p$ since the intersection is a subgroup of both.
-  In this case, just considering these two subgroups, we get
-  \[
-  \text{Elements from Sylow } p: n_p( \size S_p - 1) &> p^2 + p^2 - p = 2p^2-p -1
-  .\]
-  Then a count:
-  \[
-  p^2(q-1) + (2p^2-p - 1) + 1
-  &= p^2 q- p^2 + 2p^2 -p \\
-  &= p^2 q + p^2 -p \\
-  &= p^2q + p(p-1) \\
-  &> p^2q = \size G
-  ,\]
-  a contradiction since this inequality is strict provided $p\geq 2$. $\contradiction$
-
+n_p\mid q,\qquad n_p\equiv1\pmod p,
+\]
+and
+\[
+n_q\mid p^2,\qquad n_q\equiv1\pmod q.
+\]
+::: {.proof}
+These are exactly the Sylow congruence and divisibility conditions for a group of order \(p^2q\).
 :::
 
+<1>2. If \(p>q\), then the Sylow \(p\)-subgroup is unique and hence normal.
+::: {.proof}
+Since \(n_p\mid q\), one has \(n_p\in\{1,q\}\). But \(q<p\), so \(q\not\equiv1\pmod p\). Thus the Sylow congruence \(n_p\equiv1\pmod p\) forces \(n_p=1\).
+:::
+
+<1>3. Suppose \(p<q\). If \(n_q=1\), then the Sylow \(q\)-subgroup is normal, so assume \(n_q>1\). Then \(n_q=p^2\).
+::: {.proof}
+Because \(n_q\mid p^2\), the possibilities are \(1,p,p^2\). Since \(p<q\), the value \(p\) is not congruent to \(1\pmod q\). Hence if \(n_q\neq1\), the only remaining possibility is \(n_q=p^2\).
+:::
+
+<1>4. In the case \(n_q=p^2\), the union of all Sylow \(q\)-subgroups contains exactly
+\[
+1+p^2(q-1)
+\]
+elements.
+::: {.proof}
+Two distinct subgroups of order \(q\) intersect only in the identity, because their intersection has order dividing the prime \(q\). Each Sylow \(q\)-subgroup therefore contributes \(q-1\) new nonidentity elements, and there are \(p^2\) such subgroups.
+:::
+
+<1>5. The Sylow \(p\)-subgroup is then unique and hence normal.
+::: {.proof}
+By <1>4, the number of elements of \(G\) lying outside the union of the Sylow \(q\)-subgroups is
+\[
+p^2q-\bigl(1+p^2(q-1)\bigr)=p^2-1.
+\]
+Let \(P\) be any Sylow \(p\)-subgroup. Every nonidentity element of \(P\) lies outside every Sylow \(q\)-subgroup, since its order is divisible by \(p\), not \(q\). Thus the \(p^2-1\) nonidentity elements of \(P\) exhaust the entire complement of the Sylow-\(q\) union. Hence every Sylow \(p\)-subgroup has exactly the same nonidentity elements, so there is only one Sylow \(p\)-subgroup. Therefore \(P\trianglelefteq G\).
+:::
+
+<1>6. In all cases, \(G\) has a nontrivial normal subgroup.
+::: {.proof}
+If \(p>q\), use <1>2. If \(p<q\), either \(n_q=1\) or <1>5 applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
+:::
+:::

@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
+  note: Checked against the UCR qualifying-algebra linear algebra problem list.
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -26,55 +30,44 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. For the monic polynomial
+<1>1. For a monic quadratic
 \[
-f(x)=x^2-x+2=x^2+a_1x+a_0
+f(x)=x^2+a_1x+a_0,
 \]
-with \(a_1=-1\) and \(a_0=2\), its companion matrix is
+we use the companion-matrix convention
 \[
-M=\begin{pmatrix}0&-a_0\\1&-a_1\end{pmatrix}
- =\begin{pmatrix}0&-2\\1&1\end{pmatrix}.
+C_f=\begin{pmatrix}0&-a_0\\1&-a_1\end{pmatrix}.
+\]
+Hence for \(f(x)=x^2-x+2\),
+\[
+M=\begin{pmatrix}0&-2\\1&1\end{pmatrix}.
 \]
 ::: {.proof}
-This is the standard companion matrix attached to a monic quadratic \(x^2+a_1x+a_0\).
+Here \(a_1=-1\) and \(a_0=2\), so substituting into the standard companion form gives the displayed matrix.
 :::
 
-<1>2. The matrix \(M\) is annihilated by \(f\):
-\[
-M^2-M+2I_2=0.
-\]
+<1>2. The characteristic polynomial of \(M\) is \(f\).
 ::: {.proof}
-A direct multiplication gives
+We compute
 \[
-M^2=
-\begin{pmatrix}-2&-2\\1&-1\end{pmatrix}.
+\det(xI-M)
+=\det\begin{pmatrix}x&2\\-1&x-1\end{pmatrix}
+=x(x-1)+2
+=x^2-x+2=f(x).
 \]
-Hence
-\[
-M^2-M+2I_2
-=
-\begin{pmatrix}-2&-2\\1&-1\end{pmatrix}
--
-\begin{pmatrix}0&-2\\1&1\end{pmatrix}
-+
-\begin{pmatrix}2&0\\0&2\end{pmatrix}
-=0.
-\]
-Thus the minimal polynomial \(m_M(x)\) divides \(f(x)\).
 :::
 
-<1>3. The minimal polynomial of \(M\) cannot have degree \(0\) or \(1\).
+<1>3. The minimal polynomial of \(M\) has degree \(2\).
 ::: {.proof}
-A nonzero constant polynomial cannot annihilate a matrix.
-If a monic linear polynomial \(x-\lambda\) annihilated \(M\), then \(M=\lambda I_2\), but
+The vector \(e_1=(1,0)^T\) satisfies
 \[
-M=\begin{pmatrix}0&-2\\1&1\end{pmatrix}
+Me_1=e_2.
 \]
-is not scalar.
+Thus \(e_1,Me_1\) are linearly independent, so no nonzero polynomial of degree at most \(1\) can annihilate \(M\). Hence the minimal polynomial has degree at least \(2\). Since \(M\) is \(2\times2\), Cayley-Hamilton implies that its minimal polynomial has degree at most \(2\).
 :::
 
-<1>4. Therefore \(m_M(x)=f(x)=x^2-x+2\).
+<1>4. Therefore the minimal polynomial of \(M\) is \(f(x)=x^2-x+2\).
 ::: {.proof}
-By <1>2, \(m_M\mid f\), so \(\deg m_M\le2\). By <1>3, \(\deg m_M\ge2\). Both \(m_M\) and \(f\) are monic of degree \(2\), and divisibility then forces equality.
+By <1>2, \(f(M)=0\). By <1>3, the monic minimal polynomial has degree \(2\), and it divides the characteristic polynomial \(f\), also monic of degree \(2\). Therefore they are equal.
 :::
 :::

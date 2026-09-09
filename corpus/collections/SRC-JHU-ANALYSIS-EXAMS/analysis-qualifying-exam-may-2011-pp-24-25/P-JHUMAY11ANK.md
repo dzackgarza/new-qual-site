@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANK
 kind: problem
-title: ", where is a nonnegative measurable function on . Suppose that there are measura"
+title: "Schur's test with weights"
 classification:
   areas:
   - real-analysis
@@ -10,24 +10,57 @@ classification:
   - Operator Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 3 of the JHU Analysis Qualifying Exam, May 2011, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-3. Let $\begin{array} { r } { T f ( x ) = \int _ { \mathbb { R } ^ { n } } K ( x , y ) f ( y ) d y } \end{array}$ , where $K ( x , y )$ is a nonnegative measurable function on $\mathbb { R } ^ { n } \times \mathbb { R } ^ { n }$ . Suppose that there are measurable functions $p ( x ) > 0$ and $q ( x ) > 0$ o n $\mathbb { R } ^ { n }$ and real numbers $\alpha , \beta > 0$ for which
+::: {.problem}
+Let
+\[
+Tf(x)=\int_{\mathbb R^n}K(x,y)f(y)\,dy,
+\]
+where $K\ge0$ is measurable. Suppose there are measurable functions $p,q>0$ and constants $\alpha,\beta>0$ such that
+\[
+\int K(x,y)q(y)\,dy\le\alpha p(x)
+\]
+for almost every $x$, and
+\[
+\int p(x)K(x,y)\,dx\le\beta q(y)
+\]
+for almost every $y$. Prove
+\[
+\|Tf\|_2\le\sqrt{\alpha\beta}\,\|f\|_2.
+\]
+:::
 
-$$
-\int K ( x , y ) q ( y ) d y \leq \alpha p ( x ) ,
-$$
-
-for almost all x and
-
-$$
-\int p ( x ) K ( x , y ) d x \leq \beta q ( y )
-$$
-
-for almost all y. Show that for $f \in L ^ { 2 } ( \mathbb { R } ^ { n } )$ we have
-
-$$
-\| T f \| _ { L ^ { 2 } } \leq \sqrt { \alpha \beta } \| f \| _ { L ^ { 2 } } .
-$$
-
-(This is called Schur’s test.)
+::: {.solution}
+For almost every $x$, weighted Cauchy--Schwarz gives
+\[
+\begin{aligned}
+|Tf(x)|^2
+&=\left|\int K(x,y)^{1/2}q(y)^{1/2}\,K(x,y)^{1/2}q(y)^{-1/2}f(y)\,dy\right|^2\\
+&\le\left(\int K(x,y)q(y)\,dy\right)
+\left(\int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\right)\\
+&\le\alpha p(x)\int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
+\end{aligned}
+\]
+Integrating in $x$ and applying Tonelli,
+\[
+\begin{aligned}
+\|Tf\|_2^2
+&\le\alpha\int\int p(x)K(x,y)\frac{|f(y)|^2}{q(y)}\,dy\,dx\\
+&=\alpha\int\frac{|f(y)|^2}{q(y)}\left(\int p(x)K(x,y)\,dx\right)dy\\
+&\le\alpha\beta\int|f(y)|^2\,dy.
+\end{aligned}
+\]
+Taking square roots gives the claimed estimate.
+:::
