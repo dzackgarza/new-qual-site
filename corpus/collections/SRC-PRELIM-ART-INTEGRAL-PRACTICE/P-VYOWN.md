@@ -11,18 +11,55 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int \frac {x + \sin(x)}{1 + \cos(x)}~dx = \color {blue} {\frac {x \sin (x)}{1 + \cos (x)}} = \color {blue} {x \tan \frac {x}{2}}$
+Evaluate
+\[
+\int\frac{x+\sin x}{1+\cos x}\,dx
+\]
+and
+\[
+\int\frac{x e^x}{(e^x+1)^2}\,dx.
+\]
+:::
 
-- **Solution:** $u = x$, $v = \frac {\sin (x)}{1 + \cos (x)}$, $du = dx$, $dv = \frac {\cos (x) + \cos ^2 (x) + \sin ^2 (x)}{(1 + \cos (x))^2} = \frac {1}{1 + \cos (x)} ~dx$
+::: solution
+Since
+\[
+\frac{\sin x}{1+\cos x}=\tan\frac x2,
+\qquad
+\frac1{1+\cos x}=\frac12\sec^2\frac x2,
+\]
+the first integrand is the derivative of $x\tan(x/2)$. Hence
+\[
+\boxed{\int\frac{x+\sin x}{1+\cos x}\,dx=x\tan\frac x2+C.}
+\]
 
-- **Solution:** $\int \frac {x + \sin(x)}{1 + \cos(x)}~dx = \int \frac {x}{1 + \cos(x)} ~dx + \int \frac {\sin (x)}{1 + \cos(x)} ~dx = x \cdot \frac {\sin (x)}{1 + \cos (x)} - \int \frac {\sin (x)}{1 + \cos(x)} ~dx  + \int \frac {\sin (x)}{1 + \cos(x)} ~dx$
-
-2. $\displaystyle \int \frac {xe^x}{(e^x + 1)^2}~dx = \color {blue} {- \frac {x}{e^x+1} + x  - \ln(e^x+1)} = \color {blue} {\frac {xe^x}{e^x+1} - \ln(e^x  + 1)}$
-
-- **Solution:** $u = x$, $v = - \frac {1}{e^x + 1}$, $du = dx$, $dv = \frac {e^x}{(e^x + 1)^2} ~dx$
-
-- **Solution:** $- \frac {x}{e^x + 1} - \int - \frac {1}{e^x + 1} ~dx = - \frac {x}{e^x + 1} + \int (1 - \frac {e^x}{e^x + 1}) ~dx$
+For the second, integrate by parts using
+\[
+\frac{e^x}{(e^x+1)^2}
+=-\frac{d}{dx}\frac1{e^x+1}.
+\]
+Then
+\[
+\int\frac{x e^x}{(e^x+1)^2}\,dx
+=-\frac{x}{e^x+1}+\int\frac{dx}{e^x+1}.
+\]
+Since
+\[
+\int\frac{dx}{e^x+1}=x-\ln(e^x+1)+C,
+\]
+we obtain
+\[
+\boxed{\int\frac{x e^x}{(e^x+1)^2}\,dx
+=\frac{x e^x}{e^x+1}-\ln(e^x+1)+C.}
+\]
 :::
