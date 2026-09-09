@@ -11,14 +11,25 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-14. $\displaystyle \int \frac {x^2}{1+x^6} ~dx = \color{blue} {\frac {1}{3} \tan ^{-1} (x^3)}$
+Evaluate
+\[
+\int\frac{x^2}{1+x^6}\,dx.
+\]
+:::
 
-- **Solution:** $u =x^3$, $du = 3 x^2 ~dx$
-
-- **Solution:** $\frac {1}{3} \cdot \frac {3 x^2 ~dx}{1+x^6} = \frac {1}{3} \frac {du}{1 + u^2}$
-
-- **Used 2018**
+::: solution
+Let $u=x^3$, so $du=3x^2\,dx$. Therefore
+\[
+\boxed{\int\frac{x^2}{1+x^6}\,dx=\frac13\arctan(x^3)+C.}
+\]
 :::
