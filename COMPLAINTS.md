@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-22OXL` says $S_n$ has only one normal subgroup
+
+- **Object and need:** `P-22OXL` should state that for $n\ge5$, $A_n$ is the unique **proper nontrivial** normal subgroup of $S_n$.
+- **Observed evidence:** The title has the correct qualifier, but the body says `S_{n\geq 5} has one normal subgroup: A_n`, omitting the always-normal subgroups $\{e\}$ and $S_n$.
+- **Impact and owner:** The public problem statement in `corpus/problems/Algebra/P-22OXL.md` is false literally.
+- **Uncertainty:** None; the title records the intended theorem.
+- **Repair:** Under TODO §7 / issue #2, align the body with the title and prove uniqueness from simplicity of $A_n$.
+
 
 ## Workflow and rendering papercuts
 
