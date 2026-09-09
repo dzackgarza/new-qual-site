@@ -97,3 +97,4 @@ of public mathematical remarks.
 
 - 2026-09-09 Gemini-redo: `P-BGJF6` uniqueness redo extended later roots using only minimal polynomials over the original base field, which does not enforce compatibility with the already embedded intermediate field. The proof now transports the minimal polynomial over the current intermediate field and extends the current embedding one root at a time.
 - 2026-09-09 Gemini-redo: `P-C4RYM` redo invoked Burnside orbit-counting with undeclared `G` and `X` and omitted the finite-group/finite-set hypotheses needed for the counting formula. The solution now states those hypotheses explicitly before the double count.
+- 2026-09-09 Gemini-redo: `P-DB72D` labeled a single mixed list as “elementary divisor form” even though the problem explicitly asks for both elementary-divisor and invariant-factor forms. The redo now supplies both classifications separately and matches each of the six isomorphism classes across the two forms.
