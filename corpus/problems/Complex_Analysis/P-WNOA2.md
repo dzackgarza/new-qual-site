@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,33 +26,23 @@ Show that for each integer $n\geq 0$ there exists an $A_n \geq 0$ such that $|f^
 :::
 
 ::: solution
-**Goal:** Prove that for each $n \ge 0$, $|f^{(n)}(x)| \le A_n (1 + |x|)^\nu$ for all $x \in \mathbb{R}$.
-
-<1>1. Choice of circle for Cauchy estimates:
-    *Proof:*
-    <2>1. For any $x \in \mathbb{R}$, consider the closed disk $\overline{D}(x, R)$ centered at $x \in S$ of radius $R = 1/2$.
-    <2>2. Since $-1 < y < 1$ on $S$, the disk $\overline{D}(x, 1/2) = \{z \in \mathbb{C} \mid |z - x| \le 1/2\}$ is entirely contained in the strip $S$.
-    <2>3. In particular, for every $\zeta \in \partial D(x, 1/2)$, we have $|\operatorname{Im}(\zeta)| \le 1/2 < 1$.
-
-<1>2. Bound on $|f(\zeta)|$ on the circle $\partial D(x, 1/2)$:
-    *Proof:*
-    <2>1. For $\zeta \in \partial D(x, 1/2)$, we have $|\zeta - x| = 1/2$, so by the triangle inequality:
-        $$|\zeta| \le |x| + |\zeta - x| = |x| + \frac{1}{2}.$$
-    <2>2. Therefore:
-        $$1 + |\zeta| \le 1 + |x| + \frac{1}{2} = \frac{3}{2} + |x| \le \frac{3}{2}(1 + |x|).$$
-    <2>3. Since $\nu \ge 0$, $(1 + |\zeta|)^\nu \le (3/2)^\nu (1 + |x|)^\nu$.
-    <2>4. Hence on $\partial D(x, 1/2)$:
-        $$|f(\zeta)| \le A (1 + |\zeta|)^\nu \le A \left(\frac{3}{2}\right)^\nu (1 + |x|)^\nu.$$
-
-<1>3. Application of Cauchy's estimates:
-    *Proof:*
-    <2>1. By Cauchy's Integral Formula derivative estimates on $D(x, R)$ with $R = 1/2$:
-        $$|f^{(n)}(x)| \le \frac{n!}{R^n} \max_{\zeta \in \partial D(x, R)} |f(\zeta)| = n! \, 2^n \max_{|\zeta - x| = 1/2} |f(\zeta)|.$$
-    <2>2. Substituting the bound from step <1>2:
-        $$|f^{(n)}(x)| \le n! \, 2^n \cdot A \left(\frac{3}{2}\right)^\nu (1 + |x|)^\nu.$$
-    <2>3. Setting $A_n = A \cdot n! \, 2^n \left(\frac{3}{2}\right)^\nu$, we have:
-        $$|f^{(n)}(x)| \le A_n (1 + |x|)^\nu \quad \text{for all } x \in \mathbb{R}.$$
-
-<1>4. Conclusion:
-    For each $n \ge 0$, the constant $A_n = A n! 2^n (3/2)^\nu$ satisfies the required bound. Q.E.D.
+Fix $n\ge0$. For each real $x$, the closed disk $\overline{D(x,1/2)}$ lies in the strip $S$. If $|\zeta-x|=1/2$, then
+$$
+1+|\zeta|\le 1+|x|+\frac12
+\le \frac32(1+|x|).
+$$
+Therefore
+$$
+|f(\zeta)|
+\le A\left(\frac32\right)^\nu(1+|x|)^\nu.
+$$
+Cauchy's estimate on the circle $|\zeta-x|=1/2$ gives
+$$
+|f^{(n)}(x)|
+\le n!2^n A\left(\frac32\right)^\nu(1+|x|)^\nu.
+$$
+Thus one may take
+$$
+A_n=A\,n!\,2^n\left(\frac32\right)^\nu.
+$$
 :::
