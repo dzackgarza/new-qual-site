@@ -191,7 +191,3 @@ of public mathematical remarks.
 - **Impact and owner:** The claimed uniqueness of the second rational canonical form is false from the supplied data. The owning file is `corpus/problems/Algebra/P-HXTMK.md`.
 - **Uncertainty:** The original exercise may have supplied characteristic polynomials or additional rank/nullity data that were lost in extraction, but no such hypotheses survive in the card.
 - **Repair:** Recover the original source data. Without more information, restate the task as classifying all possible characteristic polynomials/invariant-factor lists rather than asserting a unique rational canonical form.
-
-### Algebra P-ITOYB: missing quotient-field hypothesis
-
-`corpus/problems/Algebra/P-ITOYB.md` begins “since $R/(p)$ is a field” but gives no hypothesis on the commutative ring $R$ or the element $p$ ensuring this. The intended scalar action on $A[p]$ is well-defined over $R/(p)$ for any ideal $(p)$ annihilating $A[p]$, but calling it a vector space requires $(p)$ maximal. The card needs the ambient ring/module hypotheses and must distinguish module from vector-space structure.
