@@ -14,7 +14,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-08
-  note: Checked against Problem 5 of the official UCSD Fall 2007 real-analysis qualifying exam. The solution uses the unitary Fourier normalization used elsewhere in the UCSD real-analysis corpus.
+  note: Checked against Problem 5 of the official UCSD Fall 2007 real-analysis qualifying exam. The exam permits Folland's Fourier-transform convention, with exponent -2\pi i x\xi; the solution uses that normalization.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-08
@@ -57,10 +57,10 @@ Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f
 
 <1>2. Compute its Fourier transform.
 ::: proof
-Use the UCSD unitary convention
+Use Folland's convention, as authorized by the exam instructions:
 \[
 \widehat\varphi(\xi)
-=\frac1{\sqrt{2\pi}}\int_{\mathbb R}e^{-ix\xi}\varphi(x)\,dx,
+=\int_{\mathbb R}e^{-2\pi i x\xi}\varphi(x)\,dx.
 \]
 with Fourier transform of tempered distributions defined by
 \[
@@ -75,22 +75,25 @@ Then for $\varphi\in\mathcal S(\mathbb R)$,
 &=\int_{\mathbb R}e^{iax}\widehat\varphi(x)\,dx.
 \end{aligned}
 \]
-By Fourier inversion,
+Since
 \[
-\varphi(a)
-=\frac1{\sqrt{2\pi}}
-\int_{\mathbb R}e^{iax}\widehat\varphi(x)\,dx.
+e^{iax}=e^{2\pi i(a/(2\pi))x},
+\]
+Fourier inversion gives
+\[
+\varphi\!\left(\frac{a}{2\pi}\right)
+=\int_{\mathbb R}e^{iax}\widehat\varphi(x)\,dx.
 \]
 Hence
 \[
 \langle\widehat{T_a},\varphi\rangle
-=\sqrt{2\pi}\,\varphi(a)
-=\langle\sqrt{2\pi}\,\delta_a,\varphi\rangle.
+=\varphi\!\left(\frac{a}{2\pi}\right)
+=\left\langle\delta_{a/(2\pi)},\varphi\right\rangle.
 \]
 Therefore
 \[
 \boxed{
-\widehat{e^{iax}}=\sqrt{2\pi}\,\delta_a.}
+\widehat{e^{iax}}=\delta_{a/(2\pi)}.}
 \]
 :::
 :::
