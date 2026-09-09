@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
+
 ---
 
 ::: {.exercise}
@@ -23,37 +27,48 @@ Show that every group of order $pqr$ with $p<q<r$ primes contains a normal Sylow
 :::
 
 ::: solution
-**Goal:** Prove that $G$ of order $pqr$ ($p < q < r$ primes) has a normal Sylow subgroup.
+Let $n_r$ be the number of Sylow $r$-subgroups. By Sylow,
+\[
+n_r\equiv1\pmod r,
+\qquad
+n_r\mid pq.
+\]
+Since $p,q<r$, if $n_r\ne1$ then necessarily
+\[
+n_r=pq.
+\]
+Distinct Sylow $r$-subgroups intersect trivially, so they contribute
+\[
+pq(r-1)
+\]
+nonidentity elements.
 
-<1>1. Sylow $r$-subgroup analysis:
-    *Proof:*
-    <2>1. By the Sylow theorems, $n_r \equiv 1 \pmod r$ and $n_r \mid pq$.
-    <2>2. The divisors of $pq$ are $1, p, q, pq$.
-    <2>3. If $n_r = 1$, then $G$ has a normal Sylow $r$-subgroup. Done.
+Now let $n_q$ be the number of Sylow $q$-subgroups. Again,
+\[
+n_q\equiv1\pmod q,
+\qquad
+n_q\mid pr.
+\]
+If $n_q\ne1$, then $n_q\ge q+1$. Since the divisors of $pr$ are $1,p,r,pr$ and $p<q$, this forces
+\[
+n_q\in\{r,pr\},
+\]
+so in particular $n_q\ge r$. Distinct Sylow $q$-subgroups also intersect trivially, hence they contribute at least
+\[
+r(q-1)
+\]
+nonidentity elements.
 
-<1>2. Suppose $n_r > 1$:
-    *Proof:*
-    <2>1. Since $n_r \equiv 1 \pmod r$ and $n_r \in \{p, q, pq\}$, and $r > q > p$, we need $n_r \ge r + 1 > q$, so $n_r = pq$.
-    <2>2. Each Sylow $r$-subgroup has order $r$ (prime, hence cyclic), and distinct Sylow $r$-subgroups intersect trivially.
-    <2>3. The $pq$ Sylow $r$-subgroups contribute $pq(r - 1)$ elements of order $r$.
+If both $n_r>1$ and $n_q>1$, the sets of nonidentity elements counted above are disjoint, because an element cannot simultaneously have order $r$ and order $q$. Thus $G$ would contain at least
+\[
+pq(r-1)+r(q-1)+1
+\]
+elements. But
+\[
+pq(r-1)+r(q-1)+1-pqr
+=r(q-1)-pq+1>0,
+\]
+because $q-1\ge p$ and $r>q$. This is impossible.
 
-<1>3. Sylow $q$-subgroup analysis under $n_r = pq$:
-    *Proof:*
-    <2>1. $n_q \equiv 1 \pmod q$ and $n_q \mid pr$.
-    <2>2. If $n_q = 1$, done.
-    <2>3. Since $q > p$, $p \not\equiv 1 \pmod q$. Thus $n_q \in \{r, pr\}$.
-    <2>4. If $n_q = r$, we need $r \equiv 1 \pmod q$. If $n_q = pr$, we need $pr \equiv 1 \pmod q$.
-
-<1>4. Element counting argument:
-    *Proof:*
-    <2>1. The $pq$ Sylow $r$-subgroups contribute $pq(r-1)$ non-identity elements.
-    <2>2. If $n_q > 1$, the Sylow $q$-subgroups contribute at least $r(q-1)$ non-identity elements (the minimum case $n_q = r$).
-    <2>3. Total non-identity elements from Sylow $r$- and $q$-subgroups: at least $pq(r-1) + r(q-1)$.
-    <2>4. The remaining elements (excluding identity): $pqr - 1 - pq(r-1) - r(q-1) = pq - 1 - r(q-1) = pq - 1 - rq + r$.
-    <2>5. For $p < q < r$: $pq - rq + r - 1 = q(p - r) + (r - 1) < 0$ since $p < r$ implies $q(p-r) < -q$ while $r - 1 < q(r - p)$.
-    <2>6. This means fewer than $p$ non-identity elements remain, but the Sylow $p$-subgroup requires $p - 1$ such elements.
-    <2>7. Thus $n_p = 1$ (the Sylow $p$-subgroup is normal), or the count forces $n_q = 1$ or $n_r = 1$.
-
-<1>5. Conclusion:
-    In all cases, at least one Sylow subgroup is normal, so $G$ has a proper non-trivial normal subgroup and is never simple. Q.E.D.
+Therefore either $n_r=1$ or $n_q=1$. Hence $G$ has a normal Sylow subgroup and is not simple.
 :::
