@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the official UCSD Spring 2013 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing Uniform Boundedness proof reviewed as correct; normalized legacy solution/proof block syntax.
 ---
 
 ::: problem
@@ -25,7 +33,7 @@ Define $A(x) = \lim_{n \to \infty} A_n(x)$.
 Prove that $A \in L(X, Y)$.
 :::
 
-::: {.solution}
+::: solution
 <1>1. Linearity of the limit operator $A$:
 <2>1. For any $x_1, x_2 \in X$ and scalars $\alpha, \beta \in \mathbb{C}$ (or $\mathbb{R}$):
 \[
@@ -37,7 +45,7 @@ A(\alpha x_1 + \beta x_2) &= \lim_{n \to \infty} A_n(\alpha x_1 + \beta x_2) \\
 \end{aligned}
 \]
 Thus $A: X \to Y$ is linear.
-::: {.proof}
+::: proof
 linearity of each $A_n$ and linearity of limits in $Y$.
 :::
 
@@ -47,14 +55,14 @@ Every convergent sequence in a normed space is bounded:
 \[
 \sup_{n \ge 1} \|A_n(x)\|_Y < \infty \quad \text{for each } x \in X.
 \]
-::: {.proof}
+::: proof
 convergent sequences in metric spaces are bounded.
 :::
 <2>2. Since $X$ is a Banach space and $Y$ is a normed space, by the Uniform Boundedness Principle (Banach–Steinhaus Theorem), pointwise boundedness implies uniform boundedness in operator norm:
 \[
 M := \sup_{n \ge 1} \|A_n\|_{L(X, Y)} < \infty.
 \]
-::: {.proof}
+::: proof
 Uniform Boundedness Principle.
 :::
 
@@ -63,18 +71,18 @@ Uniform Boundedness Principle.
 \[
 \|A(x)\|_Y = \left\| \lim_{n \to \infty} A_n(x) \right\|_Y = \lim_{n \to \infty} \|A_n(x)\|_Y \le \limsup_{n \to \infty} \|A_n\|_{L(X, Y)} \|x\|_X \le M \|x\|_X.
 \]
-::: {.proof}
+::: proof
 continuity of norm and definition of operator norm.
 :::
 <2>2. Thus $\|A\|_{L(X, Y)} = \sup_{\|x\|_X \le 1} \|A(x)\|_Y \le M < \infty$.
 Hence $A$ is a bounded (continuous) linear operator.
-::: {.proof}
+::: proof
 characterization of continuous linear operators.
 :::
 
 <1>4. Conclusion:
 $A \in L(X, Y)$. Q.E.D.
-::: {.proof}
+::: proof
 <1>1 and <1>3.
 :::
 :::
