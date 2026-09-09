@@ -33,7 +33,8 @@ f*I=f
 :::
 
 ::: {.solution}
-Suppose, for contradiction, that such an $I$ exists. Taking Fourier transforms and using
+Suppose, for contradiction, that such an $I$ exists.
+Taking Fourier transforms and using
 \[
 \widehat{f*I}=\widehat f\,\widehat I,
 \]
@@ -44,7 +45,8 @@ we obtain
 \]
 and every $\xi\in\mathbb R^n$.
 
-Choose one fixed Gaussian $f(x)=e^{-\pi|x|^2}$. It belongs to $L^1(\mathbb R^n)$ and its Fourier transform is another Gaussian, in particular
+Choose one fixed Gaussian $f(x)=e^{-\pi|x|^2}$.
+It belongs to $L^1(\mathbb R^n)$ and its Fourier transform is another Gaussian, in particular
 \[
 \widehat f(\xi)\ne0
 \qquad\text{for every }\xi.
@@ -59,5 +61,6 @@ But $I\in L^1(\mathbb R^n)$, so the Riemann--Lebesgue lemma implies
 \widehat I(\xi)\longrightarrow0
 \qquad(|\xi|\to\infty),
 \]
-contradicting $\widehat I\equiv1$. Hence no such convolution identity element exists in $L^1(\mathbb R^n)$.
+contradicting $\widehat I\equiv1$.
+Hence no such convolution identity element exists in $L^1(\mathbb R^n)$.
 :::
