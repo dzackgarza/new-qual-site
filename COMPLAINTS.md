@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-23M4O` stores a flawed proof as its problem statement
+
+- **Object and need:** `P-23M4O` should pose the claim that the ideal $(2,x)$ of $R=\ZZ[x]$, viewed as an $R$-module, is not a direct sum of cyclic submodules.
+- **Observed evidence:** The entire `problem` body is proof prose. It assumes without justification a finite decomposition $M_1\oplus\cdots\oplus M_n$, writes direct-sum intersections as `\emptyset` rather than $\{0\}$, and does not state that the chosen cyclic summands are nonzero before using $\alpha_1\alpha_2\ne0$.
+- **Impact and owner:** The owning card `corpus/problems/Algebra/P-23M4O.md` is not a posed problem and its proof is incomplete as written.
+- **Uncertainty:** None about the intended theorem; the title and proof fragment agree.
+- **Repair:** Under TODO §7 / issue #2, pose the theorem explicitly and prove it for arbitrary (possibly infinite) direct sums using that $\ZZ[x]$ is a domain and $(2,x)$ is not principal.
+
 
 ## Workflow and rendering papercuts
 
