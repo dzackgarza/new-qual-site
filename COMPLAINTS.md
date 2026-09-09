@@ -209,3 +209,11 @@ of public mathematical remarks.
 ### Algebra P-O5YG6, P-OC42E, and P-ODNWF hypothesis defects
 
 ### Algebra P-OLLG3, P-OPR5T, and P-OQCJR presentation gaps
+
+### Algebra P-OU7QZ, P-P4KA6, and P-PDRT9 statement/source defects
+
+`corpus/problems/Algebra/P-OU7QZ.md` asks about an irreducible quintic with exactly two non-real roots but does not specify a real coefficient field. The standard conclusion $G=S_5$ uses complex conjugation as a transposition, so the intended setting must be a subfield of $\RR$ (in particular $\QQ$).
+
+`corpus/problems/Algebra/P-P4KA6.md` assumes $H\cap K=\varnothing$ for subgroups, which is impossible because both contain the identity. The intended internal direct-product hypothesis is $H\cap K=\{e\}$.
+
+`corpus/problems/Algebra/P-PDRT9.md` is a worked Galois-correspondence solution fragment stored as the problem body. Its intended task—list the intermediate fields of a cyclic degree-$42$ Galois extension—is recoverable and should be restored as a posed problem with the subgroup calculation in the solution.
