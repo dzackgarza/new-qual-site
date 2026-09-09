@@ -31,3 +31,33 @@ For $H_3 = \frac{\ker\del_2}{\im\del_3}$, since $\im\del_3 = 0$, we can just loo
 This is an element (and the only one) that goes to zero under $\del_2$, it generates $\ker\del_2$.
 So there is one generator, and $H_3 =\ZZ$.
 :::
+
+::: {.solution}
+<1>1. The listed triangulation has $V=6$, $E=12$, and $F=8$, and its underlying space is $S^2$.
+::: {.proof}
+The eight listed triangles form the indicated triangulated sphere; each edge lies in exactly two triangles.
+:::
+
+<1>2. Since the complex is connected, $H_0\cong\mathbb Z$.
+::: {.proof}
+Zeroth simplicial homology of a connected complex is $\mathbb Z$.
+:::
+
+<1>3. The oriented sum of all eight triangular faces, with coherent orientations, is a $2$-cycle generating $H_2\cong\mathbb Z$.
+::: {.proof}
+Every edge occurs twice with opposite induced orientations, so the boundary cancels. For a connected triangulated closed orientable surface this fundamental cycle generates top homology.
+:::
+
+<1>4. Euler characteristic gives
+$$2=V-E+F=\operatorname{rank}H_0-\operatorname{rank}H_1+\operatorname{rank}H_2,$$
+so $H_1=0$.
+::: {.proof}
+The chain groups are free, and $H_0,H_2$ each have rank $1$. Since the underlying sphere has no torsion in $H_1$ (equivalently, compute the boundary matrix), its rank-zero first homology vanishes.
+:::
+
+<1>5. Thus
+$$\boxed{H_k(S^2;\mathbb Z)\cong\begin{cases}\mathbb Z,&k=0,2,\\0,&\text{otherwise.}\end{cases}}$$
+::: {.proof}
+There are no simplices above dimension $2$.
+:::
+:::
