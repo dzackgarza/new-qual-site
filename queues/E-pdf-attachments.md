@@ -28,7 +28,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — topology — July 2016
 
-- [ ] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — Winter 2014
+- [x] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — real-analysis — Winter 2014 — disposition 2026-09-09: ingested as `SRC-DUKE-BASIC-ANALYSIS-WINTER-2014`; all twelve problems are represented in source order by solved, source-checked cards `P-DUKEBA14-1` through `P-DUKEBA14-12`.
 
 - [x] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra Disposition 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists, complete, and its eight cards match the extracted paper in source order.
   The vendored paper added to provenance beside the department URL. One card was in doubt and is now settled by reading the mathematics rather than the file.
