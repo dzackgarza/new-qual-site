@@ -227,9 +227,9 @@ of public mathematical remarks.
 - **Impact and owner:** The owning file is `corpus/problems/Algebra/P-WVWEP.md`; it cannot receive a unique complete solution from the surviving prompt.
 - **Repair:** Recover the intended coefficient field and identify the related quotient/subgroup before authoring the representation-theory portion.
 
-### `P-XWYKO` is a solution fragment, and `P-XZRST` omits the underlying $L^1$ structure
+### `P-XZRST` omits the underlying structure needed for an $L^1$ multiplication
 
-- **Object and need:** `P-XWYKO` contains a completed Jordan-form argument instead of a posed problem. `P-XZRST` asks whether “$L^1$” has a natural multiplication without specifying the measure space or group.
-- **Observed evidence:** The hypotheses for `P-XWYKO` are recoverable from its own prose: a $6$-dimensional space with $T^6=0$ and $T^5\ne0$. For `P-XZRST`, pointwise multiplication is not closed on general $L^1$ spaces, while convolution makes $L^1(G)$ a Banach algebra only when a locally compact group and Haar measure are specified.
-- **Impact and owner:** `P-XWYKO` can be repaired directly. `P-XZRST` has no unique answer from the surviving prompt and must remain unresolved pending source context.
-- **Repair:** Restore the explicit nilpotent-operator statement on `P-XWYKO`; recover the intended measure/group and multiplication for `P-XZRST` before authoring a solution.
+- **Object and need:** `P-XZRST` asks whether “$L^1$” has a natural multiplication without specifying the measure space or group.
+- **Observed evidence:** Pointwise multiplication is not closed on general $L^1$ spaces, while convolution makes $L^1(G)$ a Banach algebra only after specifying a locally compact group and Haar measure.
+- **Impact and owner:** The owning file is `corpus/problems/Algebra/P-XZRST.md`; the surviving prompt has no unique answer.
+- **Repair:** Recover the intended measure/group and multiplication before authoring a solution.
