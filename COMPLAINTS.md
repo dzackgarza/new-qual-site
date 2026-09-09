@@ -107,6 +107,31 @@ of public mathematical remarks.
 
 \n\n\n
 
+
+### `P-CEZOG` contains no posed problem
+
+- **Object and need:** `P-CEZOG` is classified as a problem card but contains only a definition of the order of a cyclic module in terms of the annihilator of a generator.
+- **Observed evidence:** The complete local history preserves the same declarative fragment from intake onward; no question, requested proof, or missing continuation survives in any revision.
+- **Impact and owner:** `corpus/problems/Algebra/P-CEZOG.md` remains parser-unsolved, but there is no source-faithful task to solve.
+- **Uncertainty:** The intended exercise is unrecoverable from local history and the unsorted collection provides no external source text.
+- **Repair:** Recover the original source/question before converting the definition fragment into a posed problem; do not invent a task from the title alone.
+
+### `P-CKJ7C` omits the coefficient field for the $S_3$ representation classification
+
+- **Object and need:** `P-CKJ7C` asks for “the representations of $S_3$” and their restriction to $S_2$ without specifying the coefficient field.
+- **Observed evidence:** Over $\CC$, the standard character-theoretic answer is the trivial, sign, and two-dimensional standard irreducibles, with all finite-dimensional representations their direct sums. In modular characteristic the representation theory differs materially.
+- **Impact and owner:** `corpus/problems/Algebra/P-CKJ7C.md` is underspecified as written.
+- **Uncertainty:** The card is tagged Character Theory and neighboring corpus material uses complex representations for this classification, strongly identifying the intended setting.
+- **Repair:** Under TODO §7 / issue #2, state finite-dimensional complex representations explicitly and give the irreducibles and their restrictions to the standard $S_2\le S_3$.
+
+### `P-C2K6O` has malformed symmetric-group and cycle notation
+
+- **Object and need:** `P-C2K6O` should state the generation theorem for $S_p$ by a $p$-cycle and a transposition.
+- **Observed evidence:** The body writes plain `Sp` and `$p\dash$cycle` rather than the repository's mathematical notation.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-C2K6O.md` has a public notation papercut.
+- **Uncertainty:** None.
+- **Repair:** Normalize the notation while authoring the proof.
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
