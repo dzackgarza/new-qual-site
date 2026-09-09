@@ -49,3 +49,11 @@ of public mathematical remarks.
 - **Impact and owner:** This does not change corpus mathematics, but it interrupts the repository-prescribed workflow of reading current state and selecting work through project tooling. The affected boundary is the local connector/execution environment rather than `qualc` semantics.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
+
+### `E-AMD-TM3LMADH` has malformed `$p$`-group notation
+
+- **Object and need:** `E-AMD-TM3LMADH` should state the standard theorem for a finite `$p$`-group: every nontrivial normal subgroup meets the center nontrivially.
+- **Observed evidence:** The authored exercise currently reads `finite $p\\dash$group`, placing `\\dash` inside math and the closing `$` before `group`; this is malformed notation rather than `$p$-group`.
+- **Impact and owner:** The public problem statement is typographically corrupted. The owning card is `corpus/problems/Algebra/E-AMD-TM3LMADH.md`; its mathematics is otherwise the standard conjugation-action result.
+- **Uncertainty:** Verified directly from the current card. `SRC-UNSORTED-ALGEBRA` is its only collection appearance and supplies no external provenance from which to recover an alternative source spelling.
+- **Repair:** Under TODO §7 / issue #2, replace the malformed phrase by `$p$-group`, then solve and review the corrected statement on the same card.
