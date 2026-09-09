@@ -88,14 +88,6 @@ of public mathematical remarks.
 - **Uncertainty:** The missing intended hypothesis is not recoverable from the current card; several plausible strengthenings would make different classification statements.
 - **Repair:** Recover the source statement or identify the omitted hypothesis before authoring a solution.
 
-### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
-
-- **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
-- **Observed evidence:** The current card and every locally recoverable historical version contain only the same sentence and no field hypothesis. Over $\RR$, nonzero eigenvalues occur in purely imaginary conjugate pairs after complexification; over a general field the formulation is different.
-- **Impact and owner:** The owning file `corpus/problems/Algebra/P-2HERP.md` is not precise enough to admit a unique source-faithful solution.
-- **Uncertainty:** The intended real-matrix reading is plausible but not recoverable from local source/history.
-- **Repair:** Recover the original source context or otherwise establish the intended scalar field before authoring the solution.
-
 ### `P-27BNG` has no mathematical task after its hypothesis
 
 - **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
@@ -166,15 +158,6 @@ of public mathematical remarks.
 - **Impact and owner:** There is no uniquely determined finite field answering the literal question. If the intended problem were “over $\FF_p$,” then the smallest uniform extension splitting every quartic would be $\FF_{p^{12}}$, but choosing that interpretation would add a hypothesis not present in the source. The owning file is `corpus/problems/Algebra/P-FHDRZ.md`.
 - **Uncertainty:** The likely intended finite-field exercise is clear, but the prime/base field is not source-recoverable.
 - **Repair:** Recover the original source context and specify the base field (for example $\FF_p$) before authoring a solution.
-
-
-### `P-GSJ2A` omits the scalar field for the symmetric-matrix eigenvalue question
-
-- **Object and need:** `P-GSJ2A` asks only “What are the eigenvalues of a symmetric matrix?”
-- **Observed evidence:** For a real symmetric matrix, all eigenvalues are real and the matrix is orthogonally diagonalizable. For a complex matrix satisfying only $A^t=A$, eigenvalues need not be real; the corresponding spectral theorem uses Hermitian matrices instead.
-- **Impact and owner:** The answer depends materially on the missing field/adjoint convention. The owning file is `corpus/problems/Algebra/P-GSJ2A.md`.
-- **Uncertainty:** The surrounding topics suggest the standard real spectral theorem, but the surviving card contains no explicit field.
-- **Repair:** Recover source context or state explicitly that $A$ is real symmetric before authoring the spectral-theorem answer.
 
 ### `P-HEOYS` does not specify what parts of the tetrahedron are colored
 
