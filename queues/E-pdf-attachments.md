@@ -77,7 +77,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — applied-algebra — October 23
 
-- [ ] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019
+- [x] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: UGA Fall 2019 Real Analysis; all five problems are already represented in `SRC-UGA-RA-FALL-2019`. This file is byte-identical to `Neil_Fall_2019_Solutions.pdf` (SHA-256 `a3d7d30454ada0b3a1071f234bd5b6a27b22e16cf615769b876fa8894eb2ebbc`), so no duplicate collection or provenance entry is needed.
 
 - [ ] [Fall78.pdf](assets/attachments/extracted/Fall78.md) (103L, 9 problems) — applied-algebra — Fall 19
 
@@ -105,7 +105,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [more_calculus_from_test2.pdf](assets/attachments/extracted/more_calculus_from_test2.md) (172L, 20 problems) — algebra
 
-- [ ] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019
+- [x] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: exact byte duplicate of `Fall_2019_SOLUTIONS.pdf`; the shared UGA Fall 2019 exam is already complete as `SRC-UGA-RA-FALL-2019`.
 
 - [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
 
