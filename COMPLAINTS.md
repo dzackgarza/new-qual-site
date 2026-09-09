@@ -175,3 +175,11 @@ of public mathematical remarks.
 - **Impact and owner:** The answer depends materially on the missing field/adjoint convention. The owning file is `corpus/problems/Algebra/P-GSJ2A.md`.
 - **Uncertainty:** The surrounding topics suggest the standard real spectral theorem, but the surviving card contains no explicit field.
 - **Repair:** Recover source context or state explicitly that $A$ is real symmetric before authoring the spectral-theorem answer.
+
+### `P-HEOYS` does not specify what parts of the tetrahedron are colored
+
+- **Object and need:** `P-HEOYS` asks for colorings of a tetrahedron with $C$ colors up to symmetry.
+- **Observed evidence:** The card never says whether colors are assigned to vertices, faces, edges, or another set. These actions have different orbit counts. Git history shows the same wording from intake onward, so the missing object is not recoverable locally.
+- **Impact and owner:** Burnside's lemma cannot produce a unique answer until the colored set is specified. The owning file is `corpus/problems/Algebra/P-HEOYS.md`.
+- **Uncertainty:** Vertex- and face-coloring counts agree because both actions are the natural $S_4$ action on four objects, but edge-coloring gives a different answer; choosing among them would be speculation.
+- **Repair:** Recover source context and specify the colored set before authoring the Burnside count.
