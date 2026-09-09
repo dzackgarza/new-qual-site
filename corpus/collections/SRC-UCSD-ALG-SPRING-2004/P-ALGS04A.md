@@ -38,7 +38,9 @@ Fix \(P\in\operatorname{Syl}_p(G)\).
 
 <1>1. The number \(n_p\) divides \(|G|\).
 ::: {.proof}
-The group \(G\) acts on \(\operatorname{Syl}_p(G)\) by conjugation. By the second Sylow theorem, all Sylow \(p\)-subgroups are conjugate, so this action is transitive. The stabilizer of \(P\) is its normalizer \(N_G(P)\). Hence orbit-stabilizer gives
+The group \(G\) acts on \(\operatorname{Syl}_p(G)\) by conjugation.
+By the second Sylow theorem, all Sylow \(p\)-subgroups are conjugate, so this action is transitive.
+The stabilizer of \(P\) is its normalizer \(N_G(P)\). Hence orbit-stabilizer gives
 \[
 n_p=[G:N_G(P)],
 \]
@@ -47,7 +49,9 @@ which divides \(|G|\).
 
 <1>2. Under the conjugation action of \(P\) on \(\operatorname{Syl}_p(G)\), the only fixed point is \(P\) itself.
 ::: {.proof}
-Certainly \(P\) fixes itself. Suppose \(Q\in\operatorname{Syl}_p(G)\) is fixed by every element of \(P\). Then \(P\le N_G(Q)\), so \(P\) normalizes \(Q\). Therefore \(PQ\) is a subgroup of \(G\). Since both \(P\) and \(Q\) are \(p\)-groups, \(PQ\) is a \(p\)-group. But \(Q\) is Sylow, so no larger \(p\)-subgroup can contain it; hence
+Certainly \(P\) fixes itself.
+Suppose \(Q\in\operatorname{Syl}_p(G)\) is fixed by every element of \(P\). Then \(P\le N_G(Q)\), so \(P\) normalizes \(Q\). Therefore \(PQ\) is a subgroup of \(G\). Since both \(P\) and \(Q\) are \(p\)-groups, \(PQ\) is a \(p\)-group.
+But \(Q\) is Sylow, so no larger \(p\)-subgroup can contain it; hence
 \[
 PQ=Q.
 \]

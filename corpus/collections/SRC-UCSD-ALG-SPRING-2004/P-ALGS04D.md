@@ -49,7 +49,8 @@ Thus
 \mathbf Q^{m+1}.
 \]
 ::: {.proof}
-The ideals \((X-i)\) are pairwise comaximal by <1>1, so their intersection equals their product and the CRT applies. Evaluation at \(i\) identifies
+The ideals \((X-i)\) are pairwise comaximal by <1>1, so their intersection equals their product and the CRT applies.
+Evaluation at \(i\) identifies
 \[
 \mathbf Q[X]/(X-i)\cong\mathbf Q.
 \]
@@ -65,7 +66,9 @@ Under the isomorphism in <1>2, the tuple
 \[
 (n_0,\dots,n_m)\in\mathbf Q^{m+1}
 \]
-has a preimage in the quotient. Choose any polynomial representative \(F\) of that residue class. Its image in the \(i\)-th factor is \(n_i\), which means \(F(i)=n_i\).
+has a preimage in the quotient.
+Choose any polynomial representative \(F\) of that residue class.
+Its image in the \(i\)-th factor is \(n_i\), which means \(F(i)=n_i\).
 :::
 
 <1>4. There is a representative \(f(X)\) of the same residue class with \(\deg f\le m\).

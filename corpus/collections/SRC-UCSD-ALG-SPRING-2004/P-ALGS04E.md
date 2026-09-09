@@ -36,7 +36,8 @@ A maximal ideal is proper by definition, so no maximal ideal can contain the uni
 \[
 \mathcal P=\{J\triangleleft A: I\subseteq J\subsetneq A\},
 \]
-ordered by inclusion. Then \(\mathcal P\) is nonempty.
+ordered by inclusion.
+Then \(\mathcal P\) is nonempty.
 ::: {.proof}
 The ideal \(I\) itself belongs to \(\mathcal P\).
 :::
