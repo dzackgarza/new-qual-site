@@ -15,6 +15,19 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $R$ is a principal ideal domain and $I \trianglelefteq R$ is an ideal.
-If $a\in I$ is an irreducible element, show that $I = Ra$.
+Let $R$ be a PID, let $I\subsetneq R$ be a proper ideal, and suppose $a\in I$ is irreducible. Prove that
+\[
+I=(a).
+\]
+:::
+
+::: {.solution}
+Since $R$ is a PID, write $I=(d)$. Because $a\in I$, there exists $r\in R$ with
+\[
+a=dr.
+\]
+As $a$ is irreducible, either $d$ is a unit or $r$ is a unit. The first possibility would give $I=(d)=R$, contradicting that $I$ is proper. Hence $r$ is a unit, so $d$ and $a$ are associates. Therefore
+\[
+I=(d)=(a).
+\]
 :::

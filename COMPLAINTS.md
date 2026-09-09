@@ -207,5 +207,3 @@ of public mathematical remarks.
 - **Repair:** Keep the affine embedding, prove the $n=3,4,6$ dihedral cases directly, then rule out all $\varphi(n)>2$ cases by a valid group/field argument, treating $\varphi(n)=4$ ($n=5,8,10,12$) explicitly.
 
 ### Algebra P-O5YG6, P-OC42E, and P-ODNWF hypothesis defects
-
-`corpus/problems/Algebra/P-ODNWF.md` claims that any ideal $I$ of a PID containing an irreducible $a$ must equal $(a)$. This is false for $I=R$. The intended result requires $I$ proper (equivalently, uses maximality of $(a)$ among proper ideals).
