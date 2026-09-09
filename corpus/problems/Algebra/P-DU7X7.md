@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -22,28 +25,30 @@ What's Hilbert's theorem 90?
 :::
 
 ::: {.solution}
-<1>1. Let $L/K$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(L/K)$.
-::: {.proof}
-setup.
-:::
+Hilbert's Theorem 90 is the statement
+\[
+H^1(G,L^\times)=0
+\]
+for a finite Galois extension $L/K$ with Galois group $G$.
 
-<1>2. **Hilbert's Theorem 90 (multiplicative form).** If $L/K$ is cyclic with generator $\sigma$, then every element $a \in L$ with norm $N_{L/K}(a) = 1$ is of the form $a = b/\sigma(b)$ for some $b \in L^\times$.
-::: {.proof}
-statement of the theorem.
-:::
+In the cyclic case, say $G=\langle\sigma\rangle$ of order $n$, this is equivalent to the familiar norm-one formulation:
+\[
+N_{L/K}(a)=1
+\quad\Longleftrightarrow\quad
+\exists\,b\in L^\times\text{ such that }
+ a=\frac{b}{\sigma(b)}.
+\]
+Indeed, for a cyclic group the $1$-cocycle condition is determined by the value at $\sigma$, and the condition that this value define a cocycle is exactly that its norm be $1$; coboundaries have the form $b/\sigma(b)$ (up to the opposite convention).
 
-<1>3. Equivalently, the first Galois cohomology group $H^1(G, L^\times)$ is trivial.
-::: {.proof}
-the theorem asserts that the kernel of the norm map equals the image of $1 - \sigma$, which is exactly $H^1(G, L^\times) = 0$.
-:::
-
-<1>4. **Additive form.** $H^1(G, L) = 0$, i.e. if $\operatorname{tr}_{L/K}(a) = 0$ then $a = b - \sigma(b)$ for some $b \in L$.
-::: {.proof}
-the additive analogue (also called Hilbert 90).
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>2 and <1>4.
-:::
+There is also an additive analogue:
+\[
+H^1(G,L)=0.
+\]
+For a cyclic extension this says
+\[
+\operatorname{Tr}_{L/K}(a)=0
+\quad\Longleftrightarrow\quad
+ a=b-\sigma(b)
+\]
+for some $b\in L$ (again up to the sign convention for $1-\sigma$).
 :::
