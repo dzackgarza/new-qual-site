@@ -41,15 +41,6 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
-### `E-UVTOY` has malformed automorphism-group notation
-
-- **Object and need:** `E-UVTOY` should state the root-preservation fact for $K$-automorphisms of $F$ using standard notation.
-- **Observed evidence:** The exercise writes `$\\mathbf{A u t}_{K} F$`, with spaces inside `Aut` and a bold-text construction rather than `\\operatorname{Aut}_K(F)`.
-- **Impact and owner:** The mathematical statement is correct, but the public notation in `corpus/problems/Algebra/E-UVTOY.md` is malformed.
-- **Uncertainty:** None about the intended group.
-- **Repair:** Under TODO §7 / issue #2, normalize the notation to $\\operatorname{Aut}_K(F)$ while authoring the complete proof.
-
-
 
 ## Workflow and rendering papercuts
 
