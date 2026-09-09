@@ -159,14 +159,6 @@ of public mathematical remarks.
 - **Uncertainty:** The likely intended finite-field exercise is clear, but the prime/base field is not source-recoverable.
 - **Repair:** Recover the original source context and specify the base field (for example $\FF_p$) before authoring a solution.
 
-### `P-HEOYS` does not specify what parts of the tetrahedron are colored
-
-- **Object and need:** `P-HEOYS` asks for colorings of a tetrahedron with $C$ colors up to symmetry.
-- **Observed evidence:** The card never says whether colors are assigned to vertices, faces, edges, or another set. These actions have different orbit counts. Git history shows the same wording from intake onward, so the missing object is not recoverable locally.
-- **Impact and owner:** Burnside's lemma cannot produce a unique answer until the colored set is specified. The owning file is `corpus/problems/Algebra/P-HEOYS.md`.
-- **Uncertainty:** Vertex- and face-coloring counts agree because both actions are the natural $S_4$ action on four objects, but edge-coloring gives a different answer; choosing among them would be speculation.
-- **Repair:** Recover source context and specify the colored set before authoring the Burnside count.
-
 ### `P-HXTMK` incorrectly treats a minimal polynomial as determining a unique rational canonical form
 
 - **Object and need:** `P-HXTMK` attempts to determine rational canonical forms from specified minimal polynomials and ambient dimensions.
