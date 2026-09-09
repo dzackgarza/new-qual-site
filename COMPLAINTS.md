@@ -41,6 +41,15 @@ of public mathematical remarks.
 ## Mathematical issues and source questions
 
 
+### `E-NUJ7W` gives the wrong minimal polynomial for a general nilpotent matrix
+
+- **Object and need:** `E-NUJ7W` should use the correct structure of a nonzero nilpotent matrix when proving it is not diagonalizable.
+- **Observed evidence:** The card states `$\\min_A(x)=x^n$`. For a nilpotent $n\\times n$ matrix the minimal polynomial is $x^r$, where $r$ is the nilpotency index and may be strictly smaller than $n$; for example $\\operatorname{diag}(J_2(0),0)\\in M_3$ has minimal polynomial $x^2$.
+- **Impact and owner:** One of the supplied facts on `corpus/problems/Algebra/E-NUJ7W.md` is false, although the requested conclusion is correct.
+- **Uncertainty:** None. The minimal-polynomial exponent is exactly the least positive $r$ with $A^r=0$.
+- **Repair:** Under TODO §7 / issue #2, replace the false minimal-polynomial claim by $m_A(x)=x^r$ for the nilpotency index $r$, and prove the non-diagonalizability conclusion.
+
+
 
 ## Workflow and rendering papercuts
 
