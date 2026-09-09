@@ -40,6 +40,22 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-8CA12 is false as printed in the official Spring 2017 UGA source
+
+- **Object and need:** `P-8CA12` in `SRC-UGA-CA-SPRING-2017`; the source asks to prove that for every real $\alpha>1$, the equation $\sin z=e^{\alpha z^3}$ has exactly three solutions in $|z|<1$.
+- **Observed evidence:** direct inspection of the official Spring 2017 UGA DOCX confirms the OMML exponent is $\alpha z^3$. Let $F(z)=\sin z-e^{\alpha z^3}$. Since $\alpha$ is real, $F(\bar z)=\overline{F(z)}$, so nonreal zeros occur in conjugate pairs with the same multiplicity. There are no real zeros in $(-1,1)$: for $-1<x<0$, $\sin x<0<e^{\alpha x^3}$; for $0\le x<1$, $\sin x<1\le e^{\alpha x^3}$. Hence the number of zeros in the unit disk, counted with multiplicity, must be even and cannot equal three.
+- **Impact and owner:** the card is mathematically false as printed, so no valid solution can be attached without first recovering the intended equation or root count. The source/card statement owns the repair.
+- **Uncertainty:** the falsity of the printed statement and the DOCX grouping are verified. A plausible intended equation is $\sin z=e^\alpha z^3$, for which a three-root Rouché argument is natural, but no source evidence currently establishes that correction.
+- **Repair:** locate an independent copy or erratum for the Spring 2017 exam and replace the statement only when the intended formula is source-supported; otherwise retain the card as a documented source defect.
+
+### P-X7WUF is not present in the cited Fall 2016 UGA source and its residue formula omits a factorial
+
+- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; the local collection provenance should identify the actual source of each card, and the residue formula for a pole of order $m$ must include the standard normalization.
+- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document. Independently, `P-X7WUF(a)` omits the factor $1/(m-1)!$ from the pole-of-order-$m$ residue formula. For example, for $F(z)=z^{-3}+z^{-1}$ and $m=3$, the contour integral divided by $2\pi i$ equals the residue $1$, whereas the stated right-hand side is $\frac{d^2}{dz^2}(1+z^2)|_{z=0}=2$.
+- **Impact and owner:** the card cannot be source-verified against its owning collection, and part (a) is mathematically false for $m>2$ without the factorial. The collection/card provenance and statement own the repair.
+- **Uncertainty:** the mismatch with the cited DOCX is verified; the actual source of `P-X7WUF` has not yet been identified.
+- **Repair:** recover the true source for `P-X7WUF`, move or re-provenance the card accordingly, and restore the factor $1/(m-1)!$ before attaching a solution.
+
 ### P-MMAQ-WV7QEYSPXM omits the infinite-cyclic injectivity hypothesis
 
 - **Object and need:** `P-MMAQ-WV7QEYSPXM`, Dummit--Foote §5.5 Exercise 6; the local statement must retain every hypothesis needed for the semidirect-product isomorphism.
