@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-2WRPV` gives the wrong cokernel and derives Smith form from Jordan form
+
+- **Object and need:** `P-2WRPV` asks for the cokernel of the displayed map $\ZZ^4\to\ZZ^3$ and currently claims $\ZZ/12\ZZ$.
+- **Observed evidence:** The four $3\times3$ minors of the displayed matrix are $-12,-27,23,10$, whose gcd is $1$. Hence the third determinantal divisor is $1$, so all Smith invariant factors are $1$ and the map is surjective. The current body instead invokes eigenvalues/Jordan form over a field to assert an SNF, which is not a valid implication over $\ZZ$.
+- **Impact and owner:** The title and conclusion of `corpus/problems/Algebra/P-2WRPV.md` are mathematically false; the stored solution method is invalid.
+- **Uncertainty:** None; the determinantal-divisor computation is decisive for the displayed matrix.
+- **Repair:** Retitle/restate the card as a cokernel computation and prove by Smith determinantal divisors that the cokernel is zero.
+
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
