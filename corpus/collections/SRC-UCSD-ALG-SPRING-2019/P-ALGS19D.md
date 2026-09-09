@@ -10,6 +10,16 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -19,4 +29,49 @@ Suppose $A$ is a unital commutative ring, and $\langle a_1, \ldots, a_m \rangle 
 
 (b) Let $S_i := \{1, a_i, a_i^2, \ldots\}$ for any $1 \leq i \leq m$.
 Prove that $$\theta: A \to S_1^{-1}A \times \cdots \times S_m^{-1}A, \quad \theta(x) := \left(\frac{x}{1}, \ldots, \frac{x}{1}\right)$$ is injective.
+:::
+
+
+::: {.solution}
+<1>1. For any positive integers \(k_1,\dots,k_m\), one has
+\[
+\langle a_1^{k_1},\dots,a_m^{k_m}\rangle=A.
+\]
+::: {.proof}
+Suppose the ideal \(J=\langle a_1^{k_1},\dots,a_m^{k_m}\rangle\) were proper. Then \(J\) is contained in some maximal ideal \(\mathfrak m\). Since every maximal ideal is prime and \(a_i^{k_i}\in\mathfrak m\), one has \(a_i\in\mathfrak m\) for every \(i\). Hence
+\[
+A=\langle a_1,\dots,a_m\rangle\subseteq\mathfrak m,
+\]
+a contradiction. Thus \(J=A\).
+:::
+
+<1>2. Suppose \(x\in\ker\theta\). Then for every \(i\) there exists \(r_i\ge 0\) such that
+\[
+a_i^{r_i}x=0.
+\]
+::: {.proof}
+The equality \(x/1=0\) in \(S_i^{-1}A\) means, by the defining equivalence relation for localization, that some element of \(S_i\) annihilates \(x\). Every element of \(S_i\) is a power of \(a_i\).
+:::
+
+<1>3. One may choose positive integers \(k_i\) with \(a_i^{k_i}x=0\) for every \(i\).
+::: {.proof}
+If the exponent \(r_i\) from <1>2 is positive, take \(k_i=r_i\). If \(r_i=0\), then \(x=0\), in which case any positive \(k_i\) works.
+:::
+
+<1>4. There exist \(b_1,\dots,b_m\in A\) such that
+\[
+1=\sum_{i=1}^m b_i a_i^{k_i}.
+\]
+::: {.proof}
+By <1>1, the powers \(a_i^{k_i}\) generate the unit ideal.
+:::
+
+<1>5. Therefore \(x=0\), so \(\theta\) is injective.
+::: {.proof}
+Multiplying the identity in <1>4 by \(x\) and using <1>3 gives
+\[
+x=\sum_{i=1}^m b_i a_i^{k_i}x=0.
+\]
+Thus \(\ker\theta=0\).
+:::
 :::
