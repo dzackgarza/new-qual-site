@@ -48,6 +48,8 @@ of public mathematical remarks.
 - **Uncertainty:** None about these defects.
 - **Repair:** Add the finite-group hypothesis and replace the proof by a valid counting inequality or Burnside/orbit-counting argument.
 
+## Workflow and rendering papercuts
+
 ### Local repository connector and batched authoring query failures
 
 - **Object and need:** Algebra solution authoring needs reliable local repository access and the existing authoring-query commands so a worker can inspect the shared state and derive an unsolved worklist without touching `queues/C-unsolved-cards.md`.
