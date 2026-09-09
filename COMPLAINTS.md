@@ -210,6 +210,4 @@ of public mathematical remarks.
 
 ### Algebra P-OLLG3, P-OPR5T, and P-OQCJR presentation gaps
 
-`corpus/problems/Algebra/P-OPR5T.md` writes the inverse in the Cayley transform as `(S-I)-1` rather than $(S-I)^{-1}$; the title is also truncated. The real/complex skew-symmetric/skew-Hermitian statement itself is recoverable.
-
 `corpus/problems/Algebra/P-OQCJR.md` states the nullspace criterion using an undefined $m$. For $A\in M_{r\times n}(F)$, the correct comparison is $\operatorname{rank}(A)<n$, the dimension of the domain.
