@@ -65,3 +65,27 @@ of public mathematical remarks.
 - **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
+
+### Topology fragment cards lost their antecedent statements
+
+- **Object and need:** standalone topology cards `P-GAA3C` and `P-OTXNQ`; each card must contain enough of the source statement to determine what assertion is being tested.
+- **Observed evidence:** `P-GAA3C` contains only “Does the converse hold?” and `P-OTXNQ` only “Does this hold when $A$ is instead an open subset?”. Git history at `4f968eae3` explicitly titled them “statement incomplete”; the later source-audit commit `b851ac6ef` changed their titles but did not restore the missing antecedent statements.
+- **Impact and owner:** neither card has a source-faithful mathematical question, so attaching a solution would require guessing the missing proposition. The owning topology source extraction/card records need repair.
+- **Uncertainty:** repository history was searched through the current card paths; no earlier complete statement was recovered there. The original workshop/source document may still contain the antecedents.
+- **Repair:** recover the immediately preceding source text for each fragment and rewrite each card as a self-contained question before solution authorship.
+
+### Topology cards with missing figures cannot be source-faithfully solved
+
+- **Object and need:** diagram-dependent topology cards, including Justin polygon/cube/gluing cards and standalone cards such as `P-IXL2P`, `P-O2J6S`, and `P-ALVYE`; the retained card must preserve the edge labels, orientations, or covering graph needed to determine the answer.
+- **Observed evidence:** these cards refer to image paths or phrases such as “as shown” / “attaches inside the torus”; several referenced assets are absent from the current repository, and filename/history searches in this stream did not recover the required geometry for the affected Justin cards.
+- **Impact and owner:** subgroup generators, attaching maps, surface types, or homology can change with the missing diagram, so guessing a standard picture would create false source provenance. Source/asset retention owns the repair.
+- **Uncertainty:** some standalone asset paths still exist and may be recoverable individually; the complaint concerns cards for which the mathematical data are not present in the text and have not yet been source-recovered.
+- **Repair:** restore the source images (or transcribe their labeled combinatorial data into the card) before treating those cards as solvable.
+
+### `just check-card` can block for long periods in kernel page I/O
+
+- **Object and need:** repeated card validation through the repository-authoritative `just check-card` command; validation should either complete or expose actionable progress/failure.
+- **Observed evidence:** throughout the topology stream on 2026-09-09, multiple `qualc.authoring check` processes remained runnable only after long waits in kernel page-I/O wait paths such as `folio_wait_bit_common`, often taking around a minute for a single card while eventually succeeding unchanged.
+- **Impact and owner:** card-by-card validation and commit throughput is dominated by opaque filesystem stalls, encouraging accidental duplicate validator launches if process state is not inspected first. This is tooling/environment-owned, not a mathematical-card defect.
+- **Uncertainty:** no logical validator failure was associated with these waits; the exact filesystem/cache cause was not diagnosed from the repository process state alone.
+- **Repair:** profile the authoring checker’s file-access pattern and reduce repeated corpus-wide reads, or emit progress sufficient to distinguish active validation from a hung process.
