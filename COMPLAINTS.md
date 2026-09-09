@@ -126,13 +126,6 @@ of public mathematical remarks.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
 
-### `P-JH3EW` does not determine a Galois group without square-class hypotheses
-
-- **Object and need:** `P-JH3EW` asks for $\mathrm{Gal}(\QQ(\sqrt{n_1},\ldots,\sqrt{n_m})/\QQ(\sqrt{n_1}+\cdots+\sqrt{n_m}))$ with no assumptions on the integers $n_i$.
-- **Observed evidence:** The multiquadratic extension and the stabilizer of the displayed sum depend on relations among the square classes of the $n_i$; repeated or dependent radicals can change both the top field and the fixed subgroup.
-- **Impact and owner:** There is no unique answer from the surviving statement. The owning file is `corpus/problems/Algebra/P-JH3EW.md`.
-- **Repair:** Recover the source hypotheses (typically independent square classes, often distinct squarefree positive integers) before authoring a specific Galois group.
-
 ### `P-KSSA7` uses an invalid order argument for the dihedral criterion
 
 - **Object and need:** `P-KSSA7` correctly embeds the Galois group of $x^n-2$ into $\ZZ/n\ZZ\rtimes(\ZZ/n\ZZ)^\times$, then claims it is dihedral of order $2n$ exactly when $\varphi(n)=2$ because the affine-group order bound $n\varphi(n)$ exceeds $2n$ when $\varphi(n)>2$.
