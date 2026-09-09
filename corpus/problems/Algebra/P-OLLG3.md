@@ -14,16 +14,30 @@ review: draft
 ---
 
 ::: problem
-Noting that applying a row operation to $A$ is the same as taking the product $E A$ for some elementary matrix $E$, we can write $A_1 = \left( \prod_{i=1}^\ell E_i \right) A$ and $B_1 = \left( \prod_{i=1}^\ell E_i \right) B$,
+Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Show that applying the same sequence of elementary row operations to $A$ and $b$ does not change the solution set of
+\[
+Ax=b.
+\]
+:::
 
-thus
+::: {.solution}
+Let
+\[
+E=E_k\cdots E_1
+\]
+be a product of elementary matrices, and set
+\[
+A'=EA,\qquad b'=Eb.
+\]
+Every elementary matrix is invertible, hence so is $E$.
 
-\begin{align*}
-A \vector x &= \vector b \\
-\implies E_\ell A \vector x &= E_\ell \vector b \\
-\implies E_{\ell-1} E_\ell A \vector x &= E_{\ell-1} E_\ell \vector b \\
-&\vdots \\
-\implies E_1 E_2 \cdots E_\ell A \vector x &= E_1 E_2 \cdots E_\ell A \vector b \\
-\implies A_1 \vector x &= B_1
-\end{align*}
+For any $x\in F^n$,
+\[
+Ax=b
+\iff EAx=Eb
+\iff A'x=b'.
+\]
+The reverse implication uses multiplication by $E^{-1}$.
+
+Thus $Ax=b$ and $A'x=b'$ have exactly the same solutions.
 :::
