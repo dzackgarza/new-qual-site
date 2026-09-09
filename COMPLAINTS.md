@@ -209,5 +209,3 @@ of public mathematical remarks.
 ### Algebra P-O5YG6, P-OC42E, and P-ODNWF hypothesis defects
 
 ### Algebra P-OLLG3, P-OPR5T, and P-OQCJR presentation gaps
-
-`corpus/problems/Algebra/P-OQCJR.md` states the nullspace criterion using an undefined $m$. For $A\in M_{r\times n}(F)$, the correct comparison is $\operatorname{rank}(A)<n$, the dimension of the domain.

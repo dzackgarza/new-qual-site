@@ -15,12 +15,26 @@ review: draft
 ---
 
 ::: problem
-We want to show that $A\vector x = \vector 0$ has a nontrivial solution $\iff \rank(A) < m$.
+Let $A\in M_{m\times n}(F)$. Prove that the homogeneous system
+\[
+Ax=0
+\]
+has a nonzero solution if and only if
+\[
+\operatorname{rank}(A)<n.
+\]
+:::
 
-$\implies$: Suppose $A\vector v = \vector 0$ for some $\vector v \neq 0$.
-Then $\dim \ker A \geq 1$, and by rank nullity we must have $m = \dim \ker A + \rank(A)$.
-Since $\dim \ker A \ge 1$, this gives $\rank(A) = m - \dim \ker A \le m - 1$.
-
-$\impliedby$: Suppose $\rank(A) < m$.
-Then again by rank nullity, this forces $\dim \ker A \geq 1$, so $A$ has a nontrivial kernel and thus there is a nontrivial solution to $A\vector x = 0$.
+::: {.solution}
+By rank-nullity for the linear map $A:F^n\to F^m$,
+\[
+n=\dim\ker A+\operatorname{rank}(A).
+\]
+Hence
+\[
+\ker A\ne0
+\iff \dim\ker A>0
+\iff \operatorname{rank}(A)<n.
+\]
+A nonzero vector in $\ker A$ is exactly a nontrivial solution of $Ax=0$.
 :::
