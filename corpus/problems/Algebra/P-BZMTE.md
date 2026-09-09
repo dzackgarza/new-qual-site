@@ -11,22 +11,37 @@ classification:
   - Roots of Unity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
-::: problem
-To see that $\phi(n)$ is even for all $n>2$, we can take a prime factorization of $n$ and write
-$$
-\phi(n) = \phi\left( \prod_{i=1}^m p_i^{k_i}\right) = \prod_{i=1}^m \phi(p_i^{k_i}) = \prod_{i=1}^m p_i^{k_i - 1}(p_i - 1)
-$$
 
-where each $k_i \geq 1$.
-Now split on whether $n$ has an odd prime factor.
+::: {.problem}
+Prove that $\varphi(n)$ is even for every integer $n>2$.
+:::
 
-- If some $p_i$ is odd, then $p_i - 1$ is even, and one even factor makes the whole product even.
+::: {.solution}
+Write
+\[
+n=\prod_{i=1}^r p_i^{a_i}.
+\]
+Then
+\[
+\varphi(n)=\prod_{i=1}^r p_i^{a_i-1}(p_i-1).
+\]
 
-- Otherwise $n = 2^k$, and $n>2$ forces $k\geq 2$.
-  Then $\phi(n) = 2^{k-1}$ with $k-1\geq 1$, which is even.
+If some prime factor $p_i$ is odd, then $p_i-1$ is even, so the product is even.
 
-Either way $\phi(n)$ is even.
-The case split is necessary because $2-1 = 1$ is odd, so the factor $p_i - 1$ supplies no evenness when $p_i = 2$.
+Otherwise the only prime divisor of $n$ is $2$, so $n=2^a$. Since $n>2$, one has $a\ge2$, and
+\[
+\varphi(n)=\varphi(2^a)=2^{a-1},
+\]
+which is even.
+
+Thus $\varphi(n)$ is even for every $n>2$.
 :::
