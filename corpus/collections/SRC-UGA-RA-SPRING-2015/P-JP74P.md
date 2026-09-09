@@ -14,9 +14,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against the recorded UGA Spring 2015 real-analysis exam source.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -27,26 +34,73 @@ Let $f: \RR \to \CC$ be continuous with period 1. Prove that
 
 > Hint: show this first for the functions $f(t) = e^{2\pi i k t}$ for $k\in \ZZ$.
 :::
-::: {.solution}
-<1>1. It suffices to prove the claim for $f(t) = e^{2\pi i k t}$, $k \in \ZZ$, and then extend by linearity and density.
-::: {.proof}
-the exponentials are dense in $C(\RR/\ZZ)$ (Weierstrass/Fejér: trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions); linearity handles finite linear combinations; an $\eps/3$ argument passes the limit.
+
+::: solution
+<1>1. Prove the limit for the exponential basis functions.
+::: proof
+For $k\in\mathbb Z$, let
+\[
+e_k(t)=e^{2\pi i kt}.
+\]
+If $k=0$, then
+\[
+\frac1N\sum_{n=1}^Ne_k(n\alpha)=1=\int_0^1e_k(t)\,dt.
+\]
+If $k\ne0$, put
+\[
+z=e^{2\pi i k\alpha}.
+\]
+Because $\alpha$ is irrational, $k\alpha\notin\mathbb Z$, so $z\ne1$. The geometric-series formula gives
+\[
+\sum_{n=1}^Nz^n=z\frac{1-z^N}{1-z}.
+\]
+Hence
+\[
+\left|\frac1N\sum_{n=1}^Ne^{2\pi i kn\alpha}\right|
+\le \frac{2}{N|1-e^{2\pi i k\alpha}|}
+\longrightarrow0.
+\]
+Also
+\[
+\int_0^1e^{2\pi i kt}\,dt=0.
+\]
+Thus the desired limit holds for every exponential $e_k$, and therefore for every trigonometric polynomial by linearity.
 :::
 
-<1>2. For $f(t) = e^{2\pi i k t}$ with $k = 0$: $\frac{1}{N}\sum_{n=1}^N 1 = 1 = \int_0^1 1\,dt$.
-::: {.proof}
-direct.
+<1>2. Pass from trigonometric polynomials to continuous periodic functions.
+::: proof
+Trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions. Fix $\varepsilon>0$ and choose a trigonometric polynomial $P$ with
+\[
+\|f-P\|_\infty<\varepsilon.
+\]
+Then for every $N$,
+\[
+\left|\frac1N\sum_{n=1}^N(f-P)(n\alpha)\right|
+\le\varepsilon,
+\]
+and
+\[
+\left|\int_0^1(f-P)(t)\,dt\right|
+\le\varepsilon.
+\]
+By Step 1,
+\[
+\frac1N\sum_{n=1}^NP(n\alpha)
+\longrightarrow\int_0^1P(t)\,dt.
+\]
+Therefore
+\[
+\limsup_{N\to\infty}
+\left|
+\frac1N\sum_{n=1}^Nf(n\alpha)-\int_0^1f(t)\,dt
+\right|
+\le2\varepsilon.
+\]
+Since $\varepsilon$ is arbitrary,
+\[
+\boxed{
+\frac1N\sum_{n=1}^Nf(n\alpha)
+\longrightarrow\int_0^1f(t)\,dt.}
+\]
 :::
-
-<1>3. For $f(t) = e^{2\pi i k t}$ with $k \neq 0$: $\frac{1}{N}\sum_{n=1}^N e^{2\pi i k n \alpha} \to 0 = \int_0^1 e^{2\pi i k t}\,dt$.
-::: {.proof}
-the sum is a geometric series: $\sum_{n=1}^N e^{2\pi i k n\alpha} = e^{2\pi i k\alpha}\frac{e^{2\pi i k N\alpha} - 1}{e^{2\pi i k\alpha} - 1}$, whose modulus is $\le \frac{2}{|e^{2\pi i k\alpha} - 1|}$, independent of $N$; dividing by $N$ and letting $N \to \infty$ gives $0$.
-:::
-The denominator is nonzero because $\alpha \in \RR\setminus\QQ$ and $k \neq 0$ imply $k\alpha \notin \ZZ$, so $e^{2\pi i k\alpha} \neq 1$.
-
-<1>4. Q.E.D. for trigonometric polynomials and then all of $C(\RR/\ZZ)$ by density.
-::: {.proof}
-<1>2 and <1>3 give the limit for each exponential; finite linear combinations follow by linearity of the averages and the integral; uniform approximation of continuous $f$ by trigonometric polynomials (Fejér's theorem) plus the $\eps/3$ trick gives the full claim.
-:::
-(This is Weyl's equidistribution criterion for the Kronecker sequence $n\alpha$.)
 :::
