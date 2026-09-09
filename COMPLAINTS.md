@@ -206,8 +206,6 @@ of public mathematical remarks.
 - **Impact and owner:** The stated conclusion may still be true with a correct proof, but the supplied deduction is invalid and the $\varphi(n)=4$ cases require separate analysis. The owning file is `corpus/problems/Algebra/P-KSSA7.md`.
 - **Repair:** Keep the affine embedding, prove the $n=3,4,6$ dihedral cases directly, then rule out all $\varphi(n)>2$ cases by a valid group/field argument, treating $\varphi(n)=4$ ($n=5,8,10,12$) explicitly.
 
-### Algebra P-NQRYU and P-NYUXU statement/proof defects
-
-`corpus/problems/Algebra/P-NQRYU.md` correctly targets $Z(M_n(R))=Z(R)I_n$, but its final argument assumes an arbitrary scalar matrix $sI_n$ is already central in order to prove that the common diagonal entry $r$ commutes with arbitrary $s\in R$. That is circular. The correct proof compares $rI_n$ with a matrix such as $sE_{11}$ (or $sE_{ij}$) to force $rs=sr$.
+### Algebra P-NYUXU conflates a union with the orbit of a subgroup
 
 `corpus/problems/Algebra/P-NYUXU.md` defines $S(H)=\bigcup_{g\in G}gHg^{-1}$ and then identifies $|S(H)|$ with the number of conjugate subgroups. These are different objects: the union is a subset of $G$, whereas the set of conjugates is the orbit $\{gHg^{-1}:g\in G\}$. The intended orbit-stabilizer statement should be phrased using the latter set.
