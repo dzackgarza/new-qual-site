@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-27BNG` has no mathematical task after its hypothesis
+
+- **Object and need:** `P-27BNG` must contain a posed mathematical question or conclusion after the hypothesis on a finite Galois extension $K/F$.
+- **Observed evidence:** The complete card body is only `Suppose $K/F$ is a finite, normal, Galois extension.` Git history back through intake contains exactly the same text; the original title was just that sentence, and the card appears only in `SRC-UNSORTED-ALGEBRA`. Searches of the current corpus/wiki found no matching continuation.
+- **Impact and owner:** There is no proposition to prove, so `corpus/problems/Algebra/P-27BNG.md` cannot receive a mathematically meaningful solution without fabricating missing source content.
+- **Uncertainty:** The intended follow-up is unknown. `normal` and `Galois` are also redundant under standard finite-extension terminology, but that does not identify the missing task.
+- **Repair:** This requires source recovery or an explicit editorial decision supplying the missing conclusion. Until then, leave the card unsolved and do not infer a theorem from the title alone.
+
 
 ## Workflow and rendering papercuts
 
