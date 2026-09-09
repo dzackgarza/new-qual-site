@@ -40,6 +40,15 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `E-GEVBZ` omits the linear-map setup for rank-nullity
+
+- **Object and need:** `E-GEVBZ` asks only `Prove the rank-nullity theorem using JCF`, but a mathematical statement must specify a linear map $T:V\to W$ with finite-dimensional domain and the identity $\dim V=\dim\ker T+\dim\operatorname{im}T$.
+- **Observed evidence:** The current card contains no vector spaces, field, map, or dimension hypothesis. Jordan canonical form itself applies to endomorphisms, so the intended proof method does not determine these missing data.
+- **Impact and owner:** The selected card is not a complete posed mathematical statement. The owning file is `corpus/problems/Algebra/E-GEVBZ.md`.
+- **Uncertainty:** The standard rank-nullity theorem is unambiguous. The exact historical source wording is unavailable because the card appears only in `SRC-UNSORTED-ALGEBRA`, which has no external provenance.
+- **Repair:** Under TODO §7 / issue #2, state the standard finite-dimensional rank-nullity theorem explicitly and give a JCF-based proof without weakening its generality.
+
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
