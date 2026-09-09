@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-5KZDX` contains only a definition fragment, not a problem
+
+- **Object and need:** `P-5KZDX` is classified as a problem but should pose a complete separability/perfect-field task.
+- **Observed evidence:** The body only defines a perfect field and then says `since $F$ is a finite field, $p$ must be a prime`, without introducing $p$ or asking anything. Git history shows the same fragment in the earliest retained version.
+- **Impact and owner:** `corpus/problems/Algebra/P-5KZDX.md` has no recoverable mathematical obligation to solve.
+- **Uncertainty:** The intended task may have been to prove finite fields are perfect, but that conclusion is not present in the source fragment.
+- **Repair:** Recover the original source context before authoring a solution.
+
 ### `P-5KS4C` is a conclusion fragment with no recoverable hypothesis
 
 - **Object and need:** `P-5KS4C` should pose a Galois/solvability problem, but its body begins `By a theorem in class, this would force...` and contains only the contradiction step.
