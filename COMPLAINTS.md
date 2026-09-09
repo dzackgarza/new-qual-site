@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-2UD52` reverses the relevant divisibility in its hint
-
-- **Object and need:** `P-2UD52` studies groups of order $pq$ with primes $q<p$; the nontrivial semidirect-product case is controlled by $q\mid(p-1)$.
-- **Observed evidence:** The hint says to consider whether `$p$ does or does not divide $q-1$`. Since $q-1<p$, one always has $p\nmid(q-1)$, so this cannot distinguish cases. The second requested bullet correctly uses $q\nmid(p-1)$.
-- **Impact and owner:** The hint in `corpus/problems/Algebra/P-2UD52.md` points to an impossible condition and obscures the actual Sylow/automorphism criterion.
-- **Uncertainty:** None; the body itself contains the intended divisibility.
-- **Repair:** Replace the hint by the $q\mid(p-1)$ dichotomy and prove the normality/cyclicity claims.
-
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
