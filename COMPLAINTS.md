@@ -158,3 +158,11 @@ of public mathematical remarks.
 - **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
 - **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
 - **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
+
+### `P-D7DNH` and `P-DB3EP` store proof fragments as problem statements
+
+- **Object and need:** Both cards are classified as problems but their bodies are attempted solutions rather than posed exercises.
+- **Observed evidence:** `P-D7DNH` begins with the structure-theorem computation and already states the Smith form and conclusion. `P-DB3EP` begins with implication directions of a proof and contains transcription/indexing errors: `a_{im}` appears without an $x_m$ factor, row lengths alternate between $m$ and $n$, and `A=[a_1,\dots,a_m]^t` conflates the number of rows with the number of unknowns.
+- **Impact and owner:** The mathematical targets are recoverable from the titles, but the public cards do not currently present clean problems. The owning files are `corpus/problems/Algebra/P-D7DNH.md` and `corpus/problems/Algebra/P-DB3EP.md`.
+- **Uncertainty:** None about the intended targets: compute the displayed quotient by Smith normal form, and prove equivalence between a matrix equation and its coordinate linear system.
+- **Repair:** Replace each proof fragment by a precise posed statement and a complete checked solution, keeping the verified Smith invariants in `P-D7DNH` and consistent $m\times n$ indexing in `P-DB3EP`.
