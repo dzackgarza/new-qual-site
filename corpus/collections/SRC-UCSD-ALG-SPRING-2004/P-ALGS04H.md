@@ -59,7 +59,8 @@ The equality \(A^3-I=0\) implies \(m_A\mid X^3-1\). By <1>2, \(X^3-1\) is square
 I_2,\qquad 2I_2,\qquad 4I_2.
 \]
 ::: {.proof}
-By <1>3, \(A\) is diagonalizable. A diagonalizable \(2\times2\) matrix with a single eigenvalue \(a\) is similar to \(\operatorname{diag}(a,a)=aI_2\), which is already its rational canonical form.
+By <1>3, \(A\) is diagonalizable.
+A diagonalizable \(2\times2\) matrix with a single eigenvalue \(a\) is similar to \(\operatorname{diag}(a,a)=aI_2\), which is already its rational canonical form.
 :::
 
 <1>5. If \(A\) has two distinct eigenvalues \(a,b\in\{1,2,4\}\), then its characteristic and minimal polynomials are both
@@ -68,7 +69,8 @@ By <1>3, \(A\) is diagonalizable. A diagonalizable \(2\times2\) matrix with a si
 \]
 Its rational canonical form is the single companion block \(C((X-a)(X-b))\).
 ::: {.proof}
-A \(2\times2\) matrix with two distinct eigenvalues has characteristic polynomial \((X-a)(X-b)\). Both eigenvalues occur in the minimal polynomial, so the minimal polynomial is the same degree-\(2\) polynomial. Thus there is one invariant factor, equal to the characteristic polynomial, and rational canonical form is its companion matrix.
+A \(2\times2\) matrix with two distinct eigenvalues has characteristic polynomial \((X-a)(X-b)\). Both eigenvalues occur in the minimal polynomial, so the minimal polynomial is the same degree-\(2\) polynomial.
+Thus there is one invariant factor, equal to the characteristic polynomial, and rational canonical form is its companion matrix.
 :::
 
 <1>6. With the companion convention
@@ -113,4 +115,3 @@ Substitution into the displayed companion-matrix convention gives the three matr
 By <1>3, the multiset of two eigenvalues is a size-\(2\) multiset drawn from \(\{1,2,4\}\). There are exactly three repeated-eigenvalue cases, handled in <1>4, and three unordered distinct-eigenvalue cases, handled in <1>5--<1>6.
 :::
 :::
-
