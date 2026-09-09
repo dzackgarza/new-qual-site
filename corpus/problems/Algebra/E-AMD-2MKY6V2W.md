@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
@@ -24,19 +27,28 @@ The converse?
 :::
 
 ::: {.solution}
-Neither property implies the other in general.
+Neither implication holds.
 
-**(1) Does diagonalizable imply invertible? NO.**
-- **Counterexample:** The zero matrix $A = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$ (or any projection matrix like $\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$) is already diagonal (hence diagonalizable), but has $\det(A) = 0$, so it is not invertible.
-- A diagonalizable matrix is invertible if and only if all of its eigenvalues are non-zero.
+<1>1. A diagonalizable matrix need not be invertible.
+::: {.proof}
+For example,
+\[
+A=\begin{pmatrix}1&0\\0&0\end{pmatrix}
+\]
+is diagonal, hence diagonalizable, but \(\det A=0\). More generally, a diagonalizable matrix is invertible exactly when none of its eigenvalues is zero.
+:::
 
-**(2) Does invertible imply diagonalizable? NO.**
-- **Counterexample:** Consider the non-zero shear / unipotent Jordan block:
-  $$
-  B = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}.
-  $$
-  - **Invertibility:** $\det(B) = 1 \cdot 1 - 1 \cdot 0 = 1 \neq 0$, so $B$ is invertible (with $B^{-1} = \begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}$).
-  - **Non-diagonalizability:** The characteristic polynomial is $\operatorname{char}_B(\lambda) = (\lambda - 1)^2$, so the only eigenvalue is $\lambda = 1$ with algebraic multiplicity 2.
-    The eigenspace is $\ker(B - I) = \ker \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = \operatorname{span}\left\{ \begin{pmatrix} 1 \\ 0 \end{pmatrix} \right\}$, which has geometric multiplicity 1.
-    Since the geometric multiplicity ($1$) is strictly less than the algebraic multiplicity ($2$), $B$ is not diagonalizable.
+<1>2. An invertible matrix need not be diagonalizable.
+::: {.proof}
+Take
+\[
+B=\begin{pmatrix}1&1\\0&1\end{pmatrix}.
+\]
+Then \(\det B=1\), so \(B\) is invertible. Its characteristic polynomial is \((t-1)^2\), while
+\[
+\ker(B-I)=\ker\begin{pmatrix}0&1\\0&0\end{pmatrix}
+=\operatorname{span}\!\left\{\binom10\right\}
+\]
+has dimension \(1\). Thus the geometric multiplicity of the only eigenvalue is smaller than its algebraic multiplicity, so \(B\) is not diagonalizable.
+:::
 :::
