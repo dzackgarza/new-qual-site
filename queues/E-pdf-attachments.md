@@ -490,7 +490,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom
 
-- [ ] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012
+- [x] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012 — disposition 2026-09-09: canonical copy of the byte-identical pair with `PrincetonQuestions.pdf` (SHA-256 `9ef5c3fee6a62b2eb412ef4af6f0b40619821f25e0e0144702a2ba7b0f39d0c7`). This is a topic-organized Real Analysis question/reference bank rather than an exam sitting, and it is already linked from `wiki/real-analysis/resources/problems.md`; intake stops at that existing resource representation rather than manufacturing a qualifying-exam collection.
 
 - [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
 
