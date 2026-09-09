@@ -15,50 +15,31 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
 - Show that every $p\dash$group is nilpotent.
 :::
 
-::: {.solution}
-<1>1. Let $G$ be a finite $p$-group, $|G| = p^n$.
-::: {.proof}
-setup.
-:::
+::: solution
+Let $G$ be a finite $p$-group. Every nontrivial finite $p$-group has nontrivial center: by the class equation,
+\[
+|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
+\]
+and every summand in the sum is divisible by $p$, hence $p\mid |Z(G)|$.
 
-<1>2. $G$ has a nontrivial center $Z(G) \neq 1$.
-::: {.proof}
-the class equation: $|G| = |Z(G)| + \sum [G : C_G(g_i)]$, and each $[G : C_G(g_i)]$ is divisible by $p$, so $p \mid |Z(G)|$.
-:::
-
-<1>3. Define the upper central series $1 = Z_0 \le Z_1 \le Z_2 \le \cdots$ by $Z_{i+1}/Z_i = Z(G/Z_i)$.
-::: {.proof}
-definition of the upper central series.
-:::
-
-<1>4. Each $Z_{i+1}/Z_i$ is nontrivial as long as $Z_i \neq G$.
-::: {.proof}
-$G/Z_i$ is a $p$-group (or trivial), so it has a nontrivial center unless it is trivial.
-:::
-
-<1>5. Hence the upper central series reaches $G$ in finitely many steps: $Z_n = G$.
-::: {.proof}
-each step strictly increases the order (by a factor of at least $p$), and $|G| = p^n$ is finite, so after at most $n$ steps we reach $G$.
-:::
-
-<1>6. A group whose upper central series reaches the whole group is nilpotent.
-::: {.proof}
-definition of nilpotency.
-:::
-
-<1>7. Hence $G$ is nilpotent.
-::: {.proof}
-<1>5 and <1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
-:::
+Now form the upper central series
+\[
+1=Z_0(G)\le Z_1(G)\le Z_2(G)\le\cdots,
+\qquad Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G)).
+\]
+If $Z_i(G)
+e G$, then $G/Z_i(G)$ is a nontrivial finite $p$-group, so its center is nontrivial. Hence
+\[
+Z_i(G)<Z_{i+1}(G).
+\]
+Each strict inclusion multiplies the order by at least $p$, so after finitely many steps the series reaches $G$. Therefore $G$ is nilpotent.
 :::
