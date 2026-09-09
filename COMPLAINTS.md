@@ -191,3 +191,17 @@ of public mathematical remarks.
 - **Impact and owner:** The claimed uniqueness of the second rational canonical form is false from the supplied data. The owning file is `corpus/problems/Algebra/P-HXTMK.md`.
 - **Uncertainty:** The original exercise may have supplied characteristic polynomials or additional rank/nullity data that were lost in extraction, but no such hypotheses survive in the card.
 - **Repair:** Recover the original source data. Without more information, restate the task as classifying all possible characteristic polynomials/invariant-factor lists rather than asserting a unique rational canonical form.
+
+### `P-J77EG` omits the characteristic needed for its all-ones Jordan form
+
+- **Object and need:** `P-J77EG` claims the $n\times n$ all-ones matrix is diagonalizable with eigenvalues $0$ and $n$ but does not specify the scalar field.
+- **Observed evidence:** The matrix satisfies $M^2=nM$. If the characteristic divides $n$, then $M^2=0$ while $M\ne0$, so it is not diagonalizable. The body also accidentally calls the final eigenvalue $1$ after correctly computing it as $n$.
+- **Impact and owner:** The claimed Jordan form is valid only when $n\ne0$ in the field (for example over $\CC$). The owning file is `corpus/problems/Algebra/P-J77EG.md`.
+- **Repair:** State the scalar-field hypothesis explicitly and correct the eigenvalue typo before authoring the solution.
+
+### `P-JH3EW` does not determine a Galois group without square-class hypotheses
+
+- **Object and need:** `P-JH3EW` asks for $\mathrm{Gal}(\QQ(\sqrt{n_1},\ldots,\sqrt{n_m})/\QQ(\sqrt{n_1}+\cdots+\sqrt{n_m}))$ with no assumptions on the integers $n_i$.
+- **Observed evidence:** The multiquadratic extension and the stabilizer of the displayed sum depend on relations among the square classes of the $n_i$; repeated or dependent radicals can change both the top field and the fixed subgroup.
+- **Impact and owner:** There is no unique answer from the surviving statement. The owning file is `corpus/problems/Algebra/P-JH3EW.md`.
+- **Repair:** Recover the source hypotheses (typically independent square classes, often distinct squarefree positive integers) before authoring a specific Galois group.
