@@ -14,10 +14,33 @@ review: draft
 ---
 
 ::: problem
-- Prove the *fundamental theorem of cosets*: for $xH, yH\in G/H$,
-$$
-xH = yH \iff x\inv y\in H \iff y\inv x \in H
-$$
+Let $H\le G$. Prove that
+\[
+xH=yH\iff x^{-1}y\in H\iff y^{-1}x\in H.
+\]
+:::
 
-> Use that $xH = yH\iff x\sim y$ is an equivalence relation (reflexive/symmetric/transitive)
+::: solution
+Suppose first that $xH=yH$. Since $y\in yH=xH$, there is some $h\in H$ with
+\[
+y=xh.
+\]
+Hence
+\[
+x^{-1}y=h\in H.
+\]
+Conversely, if $x^{-1}y=h\in H$, then $y=xh$, and therefore
+\[
+yH=xhH=xH.
+\]
+Thus
+\[
+xH=yH\iff x^{-1}y\in H.
+\]
+
+Finally,
+\[
+x^{-1}y\in H\iff (x^{-1}y)^{-1}=y^{-1}x\in H,
+\]
+because subgroups are closed under inverses. Hence all three conditions are equivalent.
 :::
