@@ -158,3 +158,11 @@ of public mathematical remarks.
 - **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
 - **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
 - **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
+
+### `P-FHDRZ` does not specify the base finite field
+
+- **Object and need:** `P-FHDRZ` asks for “the smallest finite field” in which a quartic with integer coefficients necessarily has four roots.
+- **Observed evidence:** A finite field has a fixed characteristic, while the card supplies only an integer polynomial and no prime $p$ or reduction modulo $p$. Local history shows the same wording from intake onward and contains no missing base-field clause.
+- **Impact and owner:** There is no uniquely determined finite field answering the literal question. If the intended problem were “over $\FF_p$,” then the smallest uniform extension splitting every quartic would be $\FF_{p^{12}}$, but choosing that interpretation would add a hypothesis not present in the source. The owning file is `corpus/problems/Algebra/P-FHDRZ.md`.
+- **Uncertainty:** The likely intended finite-field exercise is clear, but the prime/base field is not source-recoverable.
+- **Repair:** Recover the original source context and specify the base field (for example $\FF_p$) before authoring a solution.
