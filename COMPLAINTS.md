@@ -150,3 +150,11 @@ of public mathematical remarks.
 - **Impact and owner:** This does not change corpus mathematics, but it interrupts the repository-prescribed workflow of reading current state and selecting work through project tooling. The affected boundary is the local connector/execution environment rather than `qualc` semantics.
 - **Uncertainty:** The connector failure is verified from the returned error. The safety block is verified for that specific batched shell command only; the exact classifier trigger is unknown. The long `unsolved-in` latency may be normal Pandoc startup/parsing cost rather than a repository defect.
 - **Repair:** No existing TODO task owns the external connector/runtime. A resolving result would be stable local terminal availability, predictable execution of read-only project commands, and foreground authoring queries that either complete or expose a supported continuation mechanism instead of losing their result after the yield limit.
+
+### `P-CEZOG` is a definition fragment, not a posed problem
+
+- **Object and need:** `P-CEZOG` is classified as a problem card but contains only the definition of the order ideal of a generator in a cyclic module and the consequence $ra=0$.
+- **Observed evidence:** The body contains no imperative, question, or theorem to prove; it simply states `A has order r iff ... O_a=(r)` and `In particular, ra=0`.
+- **Impact and owner:** There is no mathematically determined solution to attach without inventing a task. The owning file is `corpus/problems/Algebra/P-CEZOG.md`.
+- **Uncertainty:** The intended source exercise is not recoverable from the surviving card text alone.
+- **Repair:** Recover the original source prompt or reclassify the fragment as theory/definition material; do not fabricate a problem statement from the surviving definition.
