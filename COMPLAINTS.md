@@ -40,6 +40,15 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `E-LJ7PF` omits the complex-field hypothesis for the normal-matrix spectral theorem
+
+- **Object and need:** `E-LJ7PF` should state the spectral theorem for complex normal matrices: if $A\in M_n(\CC)$ satisfies $AA^*=A^*A$, then $A$ is unitarily diagonalizable.
+- **Observed evidence:** The card says only `Show that normal matrices are diagonalizable.` Over $\RR$ this is false: the rotation matrix $\begin{psmallmatrix}0&-1\\1&0\end{psmallmatrix}$ is orthogonal, hence normal, but has no real eigenvalues and is not diagonalizable over $\RR$.
+- **Impact and owner:** The selected statement is false over a natural interpretation of its scalar field. The owning file is `corpus/problems/Algebra/E-LJ7PF.md`.
+- **Uncertainty:** The topic `Inner Product Spaces` and standard terminology strongly indicate the complex spectral theorem; no external-provenance source is attached to this card.
+- **Repair:** Under TODO §7 / issue #2, state the result for $M_n(\CC)$ and prove the stronger unitary diagonalization conclusion.
+
+
 ## Workflow and rendering papercuts
 
 ### Local repository connector and batched authoring query failures
