@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-35P7L` is false without additional hypotheses
+
+- **Object and need:** `P-35P7L` claims every group of order $12$ with a normal subgroup of order $4$ is isomorphic to $A_4$.
+- **Observed evidence:** The cyclic group $C_{12}$ has its unique subgroup of order $4$, hence a normal subgroup of order $4$, but $C_{12}$ is abelian and therefore not isomorphic to $A_4$.
+- **Impact and owner:** The owning file `corpus/problems/Algebra/P-35P7L.md` cannot be solved as stated.
+- **Uncertainty:** The missing intended hypothesis is not recoverable from the current card; several plausible strengthenings would make different classification statements.
+- **Repair:** Recover the source statement or identify the omitted hypothesis before authoring a solution.
+
 ### `P-2HERP` omits the scalar field for skew-symmetric eigenvalues
 
 - **Object and need:** `P-2HERP` asks what can be said about eigenvalues of a skew-symmetric matrix, but the answer depends on the scalar field and on whether eigenvalues are taken in the base field or an algebraic closure.
