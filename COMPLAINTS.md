@@ -183,3 +183,11 @@ of public mathematical remarks.
 - **Impact and owner:** Burnside's lemma cannot produce a unique answer until the colored set is specified. The owning file is `corpus/problems/Algebra/P-HEOYS.md`.
 - **Uncertainty:** Vertex- and face-coloring counts agree because both actions are the natural $S_4$ action on four objects, but edge-coloring gives a different answer; choosing among them would be speculation.
 - **Repair:** Recover source context and specify the colored set before authoring the Burnside count.
+
+### `P-HXTMK` incorrectly treats a minimal polynomial as determining a unique rational canonical form
+
+- **Object and need:** `P-HXTMK` attempts to determine rational canonical forms from specified minimal polynomials and ambient dimensions.
+- **Observed evidence:** In the second case it assumes $m_A=(x^2+1)^2(x^3+1)$ and $\deg\chi_A=10$, then claims this forces $\chi_A=(x^2+1)^2(x^3+1)^2$. It does not. Over $\QQ$, $x^3+1=(x+1)(x^2-x+1)$, and the additional degree $3$ in the characteristic polynomial can be distributed among these irreducible factors in more than one way while keeping the same minimal polynomial. The body is also a worked solution fragment rather than a posed problem.
+- **Impact and owner:** The claimed uniqueness of the second rational canonical form is false from the supplied data. The owning file is `corpus/problems/Algebra/P-HXTMK.md`.
+- **Uncertainty:** The original exercise may have supplied characteristic polynomials or additional rank/nullity data that were lost in extraction, but no such hypotheses survive in the card.
+- **Repair:** Recover the original source data. Without more information, restate the task as classifying all possible characteristic polynomials/invariant-factor lists rather than asserting a unique rational canonical form.
