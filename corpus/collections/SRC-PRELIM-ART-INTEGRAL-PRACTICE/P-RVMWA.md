@@ -11,52 +11,74 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int \sin ^2 (x) ~dx = \color {blue} {\frac {1}{2} (x - \sin (x) \cos (x))}$
+Evaluate the antiderivatives
+\[
+\int\sin^2x\,dx,\quad \int\cos^2x\,dx,\quad
+\int\sin^3x\,dx,\quad \int\cos^3x\,dx,
+\]
+\[
+\int(1+\sin x)^3\,dx,\quad
+\int(1+\cos x)^3\,dx,
+\]
+\[
+\int\sin^4x\,dx,\quad \int\cos^4x\,dx,
+\quad \int(\cos^4x-\sin^4x)\,dx,
+\]
+and
+\[
+\int \frac{\sin^3\sqrt x}{2\sqrt x}\,dx.
+\]
+:::
 
-- **Solution:** $\sin ^2 (x) = \frac {1 - \cos (2x)}{2}$
-
-2. $\displaystyle \int \cos ^2 (x) ~dx = \color {blue} {\frac {1}{2} (x + \sin (x) \cos (x))}$
-
-- **Solution:** $\cos ^2 (x) = \frac {1 + \cos (2x)}{2}$
-
-3. $\displaystyle \int \sin ^3 (x) ~dx = \color {blue} {\frac {1}{3} \cos ^3 (x) - \cos (x)} = \color {blue} {\frac {1}{12} \cos (3x) - \frac {3}{4} \cos (x)}$
-
-- **Solution:** $\sin ^3 (x) ~dx = (1 - \cos ^2 (x)) \sin (x) ~dx = (\cos ^2 (x) - 1) ~d\cos(x)$
-
-- **Another Solution:** $\sin ^3 (x) = \frac {1}{4} (3 \sin (x) - \sin (3x))$
-
-  1. $\displaystyle\int \frac {\sin ^3 {\sqrt {x}}}{2\sqrt {x}} ~dx  = \color {blue} {\frac {1}{3} \cos ^3 (\sqrt {x}) - \cos (\sqrt {x})} = \color {blue} {\frac {1}{12} \cos (3\sqrt {x}) - \frac {3}{4} \cos (\sqrt {x})}$
-
-  - **Solution:** $\frac {\sin ^3 {\sqrt {x}}}{2\sqrt {x}} ~dx = \sin^3{\sqrt {x}} ~d\sqrt {x}​$
-
-4. $\displaystyle \int \cos ^3 (x) ~dx = \color {blue} {\sin (x) - \frac {1}{3} \sin ^3 (x)} = \color {blue} {\frac {1}{12} \sin (3x) + \frac {3}{4} \sin (x)}$
-
-- **Solution:** $\cos ^3 (x) ~dx = (1 - \sin ^2 (x)) \cos (x) ~dx = (1 - \sin ^2 (x)) ~d\sin(x)$
-
-- **Another Solution:** $\cos ^3 (x) = \frac {1}{4} (3 \cos (x) + \cos (3x))$
-
-5. $\displaystyle \int (\sin(x)+1)^3 ~dx = \color {blue} {\frac {5}{2}x+\frac {1}{3}\cos ^3(x)-4\cos (x)-\frac {3}{4}\sin (2x)}$
-
-- **Solution:** $(\sin(x)+1)^3 = \sin ^3 (x) + 3 \sin ^2 (x) + 3 \sin (x) + 1$
-
-6. $\displaystyle \int (\cos(x)+1)^3 ~dx = \color {blue} {\frac {5}{2}x-\frac {1}{3}\sin ^3(x)+4\sin (x)+\frac {3}{4}\sin (2x)}$
-
-- **Solution:** $(\cos(x)+1)^3 = \cos ^3 (x) + 3 \cos ^2 (x) + 3 \cos (x) + 1$
-
-7. $\displaystyle \int \sin ^4 (x) ~dx = \color {blue} {\frac {3}{8} x - \frac {3}{8} \sin (x) \cos (x) - \frac {1}{4} \sin ^3 (x) \cos (x)}​$
-
-- **Solution:** $\frac {4 - 1}{4} \int \sin ^{4 - 2} (x) ~dx - \frac {1}{4} \cos (x) \sin ^{4 - 1} (x) = \frac {3}{4} (\frac {1}{2} (x - \sin (x) \cos (x))) - \frac {1}{4} \cos (x) \sin ^3 (x)$
-
-8. $\displaystyle \int \cos ^4 (x) ~dx = \color {blue} {\frac {3}{8} x + \frac {3}{8} \sin (x) \cos (x) + \frac {1}{4} \sin (x)\cos ^3 (x)}​$
-
-- **Solution:** $\frac {4 - 1}{4} \int \cos ^{4 - 2} (x) ~dx + \frac {1}{4} \sin (x) \cos ^{4 - 1} (x) = \frac {3}{4} (\frac {1}{2} (x + \sin (x) \cos (x))) + \frac {1}{4} \sin (x) \cos ^3 (x)$
-
-9. $\displaystyle \int \cos^4(x) - \sin^4(x) dx = \color {blue} {\frac {1}{2}\sin{2x}}$
-
-- **Solution:** $\cos ^4 (x) - \sin ^4 (x) = (\cos ^2 (x) - \sin ^2 (x)) (\cos ^2 (x) + \sin ^2 (x)) = \cos ^2 (x) - \sin ^2 (x) = \cos (2x)$
-
-- **Used 2019**
+::: solution
+Using the power-reduction identities and elementary substitutions,
+\[
+\boxed{\int\sin^2x\,dx=\frac12(x-\sin x\cos x)+C,}
+\]
+\[
+\boxed{\int\cos^2x\,dx=\frac12(x+\sin x\cos x)+C,}
+\]
+\[
+\boxed{\int\sin^3x\,dx=\frac13\cos^3x-\cos x+C,}
+\]
+\[
+\boxed{\int\cos^3x\,dx=\sin x-\frac13\sin^3x+C.}
+\]
+With $u=\sqrt x$, the nested-radical variant is
+\[
+\boxed{\int \frac{\sin^3\sqrt x}{2\sqrt x}\,dx
+=\frac13\cos^3\sqrt x-\cos\sqrt x+C.}
+\]
+Expanding the cubes gives
+\[
+\boxed{\int(1+\sin x)^3dx
+=\frac52x+\frac13\cos^3x-4\cos x-\frac34\sin2x+C,}
+\]
+\[
+\boxed{\int(1+\cos x)^3dx
+=\frac52x-\frac13\sin^3x+4\sin x+\frac34\sin2x+C.}
+\]
+Reduction formulas yield
+\[
+\boxed{\int\sin^4x\,dx
+=\frac38x-\frac38\sin x\cos x-\frac14\sin^3x\cos x+C,}
+\]
+\[
+\boxed{\int\cos^4x\,dx
+=\frac38x+\frac38\sin x\cos x+\frac14\sin x\cos^3x+C.}
+\]
+Finally $\cos^4x-\sin^4x=\cos2x$, so
+\[
+\boxed{\int(\cos^4x-\sin^4x)dx=\frac12\sin2x+C.}
+\]
 :::
