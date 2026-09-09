@@ -13,6 +13,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 6 of the UGA Fall 2014 real-analysis qualifying exam recorded by the collection source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -24,50 +34,98 @@ Let $1 \leq p,q \leq \infty$ be conjugate exponents, and show that
 f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d x\right|
 \]
 :::
-::: {.solution}
-**Setup.** $1 \le p, q \le \infty$ are conjugate: $1/p + 1/q = 1$ (with the usual convention for $p = 1, \infty$). All functions are on $\RR^n$ with Lebesgue measure.
-
-<1>1. For every $g$ with $\|g\|_q = 1$: $\left|\int f g\right| \le \|f\|_p$.
-::: {.proof}
-Hölder's inequality gives $\left|\int fg\right| \le \|f\|_p\|g\|_q = \|f\|_p$.
-:::
-<2>1. Hence $\|f\|_p \ge \sup_{\|g\|_q = 1}\left|\int fg\right|$.
-::: {.proof}
-<1>1 holds for all admissible $g$.
-:::
-
-<1>2. Case $1 < p < \infty$: define $g(x) = \dfrac{\mathrm{sgn}(f(x))\,|f(x)|^{p-1}}{\|f\|_p^{p/q}}$ (and $g = 0$ where $f = 0$). <2>1. $\|g\|_q^q = \dfrac{\int |f|^{q(p-1)}}{\|f\|_p^{pq/q}} = \dfrac{\int |f|^p}{\|f\|_p^{p}} = 1$, since $q(p-1) = p$.
-::: {.proof}
-$1/p + 1/q = 1$ implies $q(p-1) = p$; the numerator is $\|f\|_p^p$ by definition.
-:::
-<2>2. $\left|\int f g\right| = \dfrac{\int |f|^p}{\|f\|_p^{p/q}} = \|f\|_p^{p - p/q} = \|f\|_p$.
-::: {.proof}
-$f\,\mathrm{sgn}(f)\,|f|^{p-1} = |f|^p$; and $p - p/q = p(1 - 1/q) = p \cdot (1/p) = 1$.
-:::
-<2>3. Q.E.D. for $1 < p < \infty$.
-::: {.proof}
-<2>1 and <2>2 exhibit an admissible $g$ attaining $\|f\|_p$, so the sup equals $\|f\|_p$ by <1>1.
+::: solution
+<1>1. Hölder gives the upper bound.
+::: proof
+For every $g\in L^q(\mathbb R^n)$ with $\|g\|_q=1$, Hölder's inequality gives
+\[
+\left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|
+\le \|f\|_p\|g\|_q
+=\|f\|_p.
+\]
+Hence
+\[
+\sup_{\|g\|_q=1}\left|\int fg\right|\le\|f\|_p.
+\]
 :::
 
-<1>3. Case $p = 1$ (so $q = \infty$): take $g = \mathrm{sgn}(f)$.
-::: {.proof}
-$\|g\|_\infty = 1$ and $\int fg = \int |f| = \|f\|_1$; combined with <1>1 the sup equals $\|f\|_1$.
+<1>2. Prove equality when $1<p<\infty$.
+::: proof
+If $f=0$, the result is immediate. Otherwise define
+\[
+g(x)=\frac{\overline{f(x)}|f(x)|^{p-2}}{\|f\|_p^{p-1}},
+\]
+with $g=0$ where $f=0$. Since $q=p/(p-1)$,
+\[
+\|g\|_q^q
+=\frac{\int |f|^{(p-1)q}}{\|f\|_p^{(p-1)q}}
+=\frac{\int |f|^p}{\|f\|_p^p}=1.
+\]
+Moreover,
+\[
+\int fg
+=\frac{\int |f|^p}{\|f\|_p^{p-1}}
+=\|f\|_p.
+\]
+Thus the supremum is at least $\|f\|_p$, and Step 1 gives equality.
 :::
 
-<1>4. Case $p = \infty$ (so $q = 1$). <2>1. For $0 < \eps < \|f\|_\infty$, the set $\{x : |f(x)| \ge \|f\|_\infty - \eps\}$ has positive measure and contains a measurable subset $E$ with $0 < m(E) < \infty$ (intersect with a large ball).
-::: {.proof}
-definition of the essential supremum; $\RR^n$ is $\sigma$-finite.
-:::
-<2>2. Define $g = \dfrac{\mathrm{sgn}(f)\,\chi_E}{m(E)}$; then $\|g\|_1 = 1$ and $\left|\int f g\right| = \dfrac{1}{m(E)}\int_E |f| \ge \|f\|_\infty - \eps$.
-::: {.proof}
-normalization by $m(E)$; the bound uses <2>1. <2>3. Q.E.D. for $p = \infty$.
-:::
-::: {.proof}
-<2>2 gives $\sup_{\|g\|_1 = 1}\left|\int fg\right| \ge \|f\|_\infty - \eps$ for every $\eps > 0$; with <1>1 the sup equals $\|f\|_\infty$.
+<1>3. Prove equality when $p=1$ and $q=\infty$.
+::: proof
+If $f=0$, there is nothing to prove. Define the phase
+\[
+\theta(x)=
+\begin{cases}
+\overline{f(x)}/|f(x)|,&f(x)\ne0,\\
+0,&f(x)=0.
+\end{cases}
+\]
+Then $\|\theta\|_\infty=1$ and
+\[
+\int f\theta=\int |f|=\|f\|_1.
+\]
+Hence the supremum equals $\|f\|_1$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>2, <1>3, and <1>4 cover all conjugate pairs $1 \le p \le \infty$.
+<1>4. Prove equality when $p=\infty$ and $q=1$.
+::: proof
+Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
+\[
+A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
+\]
+has positive measure. Since Lebesgue measure on $\mathbb R^n$ is sigma-finite, there is a measurable set
+\[
+E\subseteq A_\varepsilon,
+\qquad
+0<m(E)<\infty.
+\]
+Define
+\[
+g(x)=\frac{\theta(x)\mathbf1_E(x)}{m(E)},
+\qquad
+\theta(x)=
+\begin{cases}
+\overline{f(x)}/|f(x)|,&f(x)\ne0,\\
+0,&f(x)=0.
+\end{cases}
+\]
+Then $\|g\|_1=1$ and
+\[
+\left|\int fg\right|
+=\frac1{m(E)}\int_E|f(x)|\,dx
+\ge M-\varepsilon.
+\]
+Letting $\varepsilon\downarrow0$ shows that the supremum is at least $M$. Step 1 gives the reverse inequality, hence equality.
+:::
+
+<1>5. Conclude.
+::: proof
+All conjugate pairs $1\le p,q\le\infty$ have been covered, so
+\[
+\boxed{
+\|f\|_p
+=\sup_{\|g\|_q=1}
+\left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|.}
+\]
 :::
 :::
