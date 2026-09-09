@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `P-0221B` is an imported solution fragment rather than a posed problem
+
+- **Object and need:** `P-0221B` should pose the theorem that the splitting field of a separable polynomial is Galois.
+- **Observed evidence:** The entire `problem` body begins `Since $E$ was shown...` and ends `So $E$ is a Galois extension`; migration history shows this solution fragment was present from intake and no earlier question survives.
+- **Impact and owner:** The card is measured as unsolved because it has no `solution` section, but its public problem body is itself answer prose. The owning file is `corpus/problems/Algebra/P-0221B.md`.
+- **Uncertainty:** The original source wording is unavailable; the title and surviving fragment determine the narrow standard theorem but not its historical phrasing.
+- **Repair:** Under TODO §7 / issue #2, replace the fragment by the standard theorem statement and attach an independently reviewed proof.
+
 
 ## Workflow and rendering papercuts
 
