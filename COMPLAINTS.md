@@ -40,14 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `P-6HPKO` contains a mangled center-quotient hint
-
-- **Object and need:** `P-6HPKO` asks for the standard theorem $G/Z(G)$ cyclic implies $G$ abelian.
-- **Observed evidence:** The hint contains `yz = (gZ)^n = g^nz` and runs several equations together without valid notation; the intended step is $yZ=g^nZ$, hence $y=g^nz_2$ for some $z_2\in Z(G)$.
-- **Impact and owner:** The theorem in `corpus/problems/Algebra/P-6HPKO.md` is correct, but its supplied hint is malformed.
-- **Uncertainty:** None.
-- **Repair:** Replace the malformed hint by a complete proof.
-
 ### `P-5KZDX` contains only a definition fragment, not a problem
 
 - **Object and need:** `P-5KZDX` is classified as a problem but should pose a complete separability/perfect-field task.
