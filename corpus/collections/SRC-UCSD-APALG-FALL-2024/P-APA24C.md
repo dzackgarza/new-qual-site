@@ -151,3 +151,68 @@ The subspace $S$ from <1>3 has exactly this dimension, so
 by <1>4.
 :::
 :::
+
+::: {.solution}
+Let \(K=\ker B^H\). Since \(\operatorname{rank}B=2\), rank-nullity gives
+\[
+\dim K=n-2.
+\]
+Moreover, for every \(x\in K\),
+\[
+BB^Hx=0,
+\]
+so
+\[
+Cx=Ax.
+\]
+
+<1>1. Recall the Courant--Fischer characterization
+\[
+\lambda_k(A)=\max_{\substack{L\subseteq\mathbb C^n\\ \dim L=k}}\ \min_{0\ne x\in L}\frac{x^HAx}{x^Hx}
+\]
+for Hermitian \(A\).
+::: {.proof}
+This is the standard max--min form of the Courant--Fischer theorem for eigenvalues ordered decreasingly.
+:::
+
+<1>2. Fix \(1\le k\le n-2\), and let \(L\subseteq\mathbb C^n\) be any subspace with \(\dim L=k+2\). Then
+\[
+\dim(L\cap K)\ge k.
+\]
+::: {.proof}
+By the dimension formula,
+\[
+\dim(L\cap K)\ge \dim L+\dim K-n=(k+2)+(n-2)-n=k.
+\]
+Choose a \(k\)-dimensional subspace \(M\subseteq L\cap K\).
+:::
+
+<1>3. For the subspace \(M\) from <1>2,
+\[
+\min_{0\ne x\in L}\frac{x^HCx}{x^Hx}
+\le
+\min_{0\ne x\in M}\frac{x^HCx}{x^Hx}
+=
+\min_{0\ne x\in M}\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+::: {.proof}
+The first inequality holds because \(M\subseteq L\). The equality holds because \(M\subseteq K=\ker B^H\), so \(C=A\) on \(M\). The final inequality is the Courant--Fischer characterization from <1>1, since \(M\) is one particular \(k\)-dimensional subspace.
+:::
+
+<1>4. Therefore
+\[
+\lambda_{k+2}(C)\le \lambda_k(A)
+\qquad(1\le k\le n-2).
+\]
+::: {.proof}
+Apply the Courant--Fischer formula to \(C\):
+\[
+\lambda_{k+2}(C)
+=
+\max_{\substack{L\subseteq\mathbb C^n\\ \dim L=k+2}}
+\min_{0\ne x\in L}\frac{x^HCx}{x^Hx}.
+\]
+By <1>3, the inner minimum is at most \(\lambda_k(A)\) for every admissible \(L\). Taking the maximum over all such \(L\) preserves that upper bound, giving the required inequality.
+:::
+:::
