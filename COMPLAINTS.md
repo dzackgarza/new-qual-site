@@ -46,20 +46,6 @@ of public mathematical remarks.
 - **Impact:** repository checks, temporary authoring output, edits, and commits may fail nondeterministically even when the worktree itself is healthy.
 - **Repair:** free byte capacity on the repository host. This stream removed only its own `/tmp/ca-unsorted-*.tsv` scratch files and did not delete shared caches or other workers' data.
 
-### E-N6DX3 contains unresolved image-only and omnibus prompts
-
-- **Object and need:** `E-N6DX3` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
-- **Observed evidence:** the card mixes many definition/theory questions with several unresolved Obsidian image embeds such as `_attachments/Pasted image ...`, followed only by terse hints. Those image-only subproblems are not stated in text.
-- **Impact and owner:** there is no complete mathematical statement to solve. Providing answers only to the visible bullets would falsely mark the omnibus card complete while silently omitting the missing image problems.
-- **Repair:** restore or transcribe each missing image problem, preferably splitting the omnibus into atomic cards, before solution authoring.
-
-### E-W3QMS contains open-ended external-resource placeholders
-
-- **Object and need:** `E-W3QMS` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
-- **Observed evidence:** alongside the precise task "show that $f'=0$ implies $f$ is constant using integrals and primitives," the card also says "Do any example from here" and "Anything from the homeworks," with external links and unresolved image embeds.
-- **Impact and owner:** those open-ended placeholders do not define finite mathematical tasks, so a solution to the one precise bullet would not constitute a solution to the whole card.
-- **Repair:** replace the external placeholders with explicit problem statements or split the precise derivative-zero exercise into its own card.
-
 ### P-4Y4QT has an unbound parameter and an incompatible convergence range
 
 - **Object and need:** `P-4Y4QT` in `SRC-CA-ART-T34TG3`; the problem says “Let $0<a<4$” but asks to evaluate $\int_0^\infty x^{\alpha-1}/(1+x^3)\,dx$, so the parameter in the integrand is not bound by the stated hypothesis.
