@@ -16,7 +16,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 17 and its figure. The figure has A as the central separating circle and B as the nonseparating circle on the right handle.
+  note: 'Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 17 and its figure. The figure has A as the central separating circle and B as the nonseparating circle on the right handle.'
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09

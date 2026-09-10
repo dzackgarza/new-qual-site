@@ -15,7 +15,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 6; the stored statement matches.
+  note: 'Checked against Hatcher, Algebraic Topology, Section 2.1, Exercise 6; the stored statement matches.'
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09
