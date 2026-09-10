@@ -30,11 +30,32 @@ audit:
 
 > Hint: use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.
 
-![[_attachments/Pasted image 20210527172954.png]]
+- Let $|\alpha|<r<|\beta|$, and let $\gamma$ be the positively oriented circle
+  centered at $0$ of radius $r$. Show that
+  \[
+  \int_\gamma \frac{dz}{(z-\alpha)(z-\beta)}
+  =\frac{2\pi i}{\alpha-\beta}.
+  \]
 
-![[_attachments/Pasted image 20210527173005.png]]
+- Assume $f$ is continuous on
+  \[
+  \{x+iy:x\ge x_0,\ 0\le y\le b\}
+  \]
+  and that $f(x+iy)\to A$ as $x\to+\infty$ uniformly with respect to
+  $y\in[0,b]$. If
+  \[
+  \gamma_x=\{x+it:0\le t\le b\},
+  \]
+  show that
+  \[
+  \lim_{x\to+\infty}\int_{\gamma_x}f(z)\,dz=iAb.
+  \]
 
-![[_attachments/Pasted image 20210527173030.png]]
+- If $f$ is analytic on a region $D$, show that
+  \[
+  g(z)=\overline{f(\bar z)}
+  \]
+  is analytic on the reflected region $\bar D=\{z:\bar z\in D\}$.
 :::
 
 ::: {.solution}
@@ -90,4 +111,46 @@ $f^{(n)} \equiv 0$ implies $f$ is a polynomial of degree $< n$.
 ::: {.proof}
 <1>5.
 :::
+
+**Part 3.** Since $|\alpha|<r<|\beta|$, the integrand has exactly one pole
+inside $\gamma$, namely the simple pole at $\alpha$. Its residue is
+\[
+\operatorname{Res}_{z=\alpha}
+\frac1{(z-\alpha)(z-\beta)}
+=\frac1{\alpha-\beta}.
+\]
+Therefore the residue theorem gives
+\[
+\boxed{\int_\gamma\frac{dz}{(z-\alpha)(z-\beta)}
+=\frac{2\pi i}{\alpha-\beta}}.
+\]
+
+**Part 4.** Parametrize $\gamma_x$ by $z=x+it$, $0\le t\le b$. Then
+\[
+\int_{\gamma_x}f(z)\,dz=i\int_0^b f(x+it)\,dt.
+\]
+Hence
+\[
+\left|\int_{\gamma_x}f(z)\,dz-iAb\right|
+\le b\sup_{0\le t\le b}|f(x+it)-A|.
+\]
+The right-hand side tends to $0$ by the assumed uniform convergence, so
+\[
+\boxed{\lim_{x\to\infty}\int_{\gamma_x}f(z)\,dz=iAb}.
+\]
+
+**Part 5.** Let $z\in\bar D$. For small $h\ne0$ with $z+h\in\bar D$,
+\[
+\frac{g(z+h)-g(z)}h
+=\frac{\overline{f(\bar z+\bar h)-f(\bar z)}}h
+=\overline{
+\frac{f(\bar z+\bar h)-f(\bar z)}{\bar h}
+}.
+\]
+As $h\to0$, also $\bar h\to0$, so the last expression tends to
+$\overline{f'(\bar z)}$. Thus $g$ is complex differentiable at every point
+of $\bar D$, with
+\[
+\boxed{g'(z)=\overline{f'(\bar z)}}.
+\]
 :::
