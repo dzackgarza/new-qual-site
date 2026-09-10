@@ -84,6 +84,8 @@ of public mathematical remarks.
 
 ### A narrow patch also removed an unrelated trailing blank line
 
+- **Fall 2010 complex-pair reconciliation:** each of the four native patches removing May 2011 M–P membership also stripped the unrelated final blank line of `index.md`. The complete diffs exposed it, and that line was restored before `a5a88e5de`, `a03115797`, `34a0da3fc`, and `17d6c1e50`. No content was lost, but the helper still changed bytes outside its selected hunks.
+
 - **Object and need:** patches to the JHU collection's source membership should leave unrelated bytes unchanged.
 - **Observed evidence:** twice in this continuation a native `apply_patch` changing only the collection's middle section also removed the last blank line of `index.md`. Both complete diffs showed the extra end-of-file deletion, which was restored before commits `a1d6f19ef` and `5ff8e48f5`.
 - **Impact and owner:** this is patch-helper output normalization rather than an authored content decision. No mathematical content was lost; the full-file diff was needed to detect the incidental change.
@@ -133,6 +135,10 @@ of public mathematical remarks.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
 
+- **Further May 2011/May 2010 overlap:** the exact-context patch for `P-JHUMAY11AND` was also rejected after a complete external proof appeared; that proof and the earlier C proof were read and preserved in `935ee8149` and `36cbff308`. On `P-JHUMAY10ANC`, a subsequent exact-context patch met the same condition; the complete retained Bergman proof was independently read, parsed and committed as `f5dbb1a83`. No duplicate proof or audit mapping was appended. These repeat the same unresolved ownership overlap.
+
+- **May 2011 continuation, 2026-09-10:** the live source-order query selected `P-JHUMAY11ANC`, and a native read showed the original unsolved card. Before this stream's exact-context patch, another writer supplied a complete iteration/Cauchy-estimate proof; the patch was rejected without changes. The retained proof was read in full and preserved. `agents.status` again returned `WORKER_IDENTITY_LOST`, so it supplied no addressable owner. New commits through `ee9348949` also showed that earlier cards had advanced beyond this conversation's previous checkpoint; those committed solutions were not overwritten. This is renewed overlap within the assigned collection, not a reason to create branches or worktrees.
+
 - **Emory continuation, 2026-09-10:** the resumed read-only worklist returned `P-EMAG4` without a solution, but a fresh read found another writer's complete proof and Git marked the path modified. That proof was read and preserved. Later, a full-context patch for `P-EMAF1` was rejected without changes after another writer supplied the complete correction and proof; both it and the newly authored `P-EMAF2` were read in full and preserved. The native `agents.status` request again returned `WORKER_IDENTITY_LOST`, so this tool supplied no addressable owner for resolving the overlap. The direct-to-main policy is now recorded in `7757a6177`; that documentation change does not establish disjoint card ownership.
 
 - **Emory source-order overlap, 2026-09-10:** this stream's new query found `P-EMAG7` and `P-EMAG9` already completed by another writer, and `P-EMAL3` acquired that writer's source-check entry before this stream selected it. The three complete proofs were subsequently read and preserved in `e6b24d9f4`, `d9e0fd6aa`, and `b72dd5479`; no second proof or duplicate audit block was appended. These are additional same-interval edits, not a conclusion that the overall assignment is disjoint.
@@ -158,6 +164,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **Single-card transport screening:** the guarded request to move the already reviewed `P-JHUMAY11ANN` content to its existing, unsolved Fall 2010 counterpart was blocked before execution with the safety-status message. This request included an intended one-card write, not merely a read. Native `apply_patch` with an explicit move and ID change succeeded; subsequent full-file review and parsing verified the result before `a03115797`. The rejected request did not modify either file, and no repository gate failed.
 
 - **Fall 2015 JHU polling, 2026-09-10:** the empty-input poll of session `72126`, running the `P-O3LYK` single-card parser and diff review, was blocked with the safety-status message. The identical retry returned exit zero, successful parsing and the complete diff; `2256b9bd0` committed the reviewed proof. This concerns result retrieval, not a failed repository check; the screening cause remains unspecified.
 
@@ -276,6 +284,8 @@ of public mathematical remarks.
 - **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
 
 ### Direct-to-`main` streams can globally block unrelated card commits with Git sequencer state
+
+- **May 2010 contour commit race:** `qualc.authoring commit` for the reviewed `P-JHUMAY10ANB` returned `Cherry-pick currently in progress` and no pending card change. Immediate Git inspection showed `04cd387e6` had already committed the same reviewed text, a clean card path, and no remaining `CHERRY_PICK_HEAD`. The result was a concurrent successful commit, not lost authorship or a mathematical-check failure. No sequencer state was aborted or altered.
 
 - **JHU prose-commit contention, 2026-09-10:** reviewed commits for `P-7QJS2` and `P-8XT49` failed with exit 128 because `.git/index.lock` existed. Immediate process inspections found unrelated normal commits for `P-PJA4A` (PID 975127) and `P-RXKJR` (PID 1122290), with running pre-commit hooks after approximately one and two minutes respectively. A two-minute wait for the first repair expired while subsequent UGA card commits acquired the index; a later wait allowed `7a07b8064` to commit the unchanged reviewed proof. The JHU edits remained on disk throughout. No lock was deleted and no process was interrupted; these are shared-index failures, not failed mathematical or parsing checks.
 
