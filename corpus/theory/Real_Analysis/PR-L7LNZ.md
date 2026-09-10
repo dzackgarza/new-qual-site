@@ -14,5 +14,25 @@ review: draft
 ---
 
 ::: {.proposition}
-If $f_n \to f$ uniformly, then $\int f_n = \int f$.
+Let $(X,\mathcal M,\mu)$ be a finite measure space. If $f_n,f\in L^1(X,\mu)$ and $f_n\to f$ uniformly (equivalently, $\|f_n-f\|_\infty\to0$), then
+\[
+\int_X f_n\,d\mu\longrightarrow\int_X f\,d\mu.
+\]
+More precisely,
+\[
+\left|\int_X(f_n-f)\,d\mu\right|
+\le \mu(X)\|f_n-f\|_\infty.
+\]
+:::
+
+::: {.proof}
+Since $\mu(X)<\infty$,
+\[
+\begin{aligned}
+\left|\int_X(f_n-f)\,d\mu\right|
+&\le \int_X|f_n-f|\,d\mu\\
+&\le \mu(X)\|f_n-f\|_\infty.
+\end{aligned}
+\]
+The right-hand side tends to $0$, proving the claimed convergence of the integrals.
 :::
