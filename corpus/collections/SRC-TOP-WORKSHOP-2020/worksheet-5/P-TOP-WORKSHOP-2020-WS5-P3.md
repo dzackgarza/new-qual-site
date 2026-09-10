@@ -11,6 +11,13 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: {.problem}
@@ -20,4 +27,33 @@ review: draft
 
 (b) Determine whether the natural map $p\colon\mathbb R^2\to X$ is a covering map.
 Justify your answer.
+:::
+
+::: {.solution}
+(a) Define
+\[
+r:\mathbb R^2\to[0,\infty),
+\qquad
+r(x,y)=\sqrt{x^2+y^2}.
+\]
+The fibers of \(r\) are exactly the equivalence classes. Therefore \(r\) factors uniquely through a bijection
+\[
+\bar r:X=\mathbb R^2/{\sim}\ \longrightarrow[0,\infty)
+\]
+with \(r=\bar r\circ p\). Since \(p\) is a quotient map and \(r\) is continuous, \(\bar r\) is continuous. Its inverse is
+\[
+[0,\infty)\to X,
+\qquad
+t\mapsto p(t,0),
+\]
+which is continuous as the composite of the continuous inclusion \(t\mapsto(t,0)\) with \(p\). Thus
+\[
+X\cong[0,\infty).
+\]
+
+(b) The quotient map \(p\) is not a covering map. For every \(r>0\), the fiber over the class of radius \(r\) is the circle
+\[
+p^{-1}([r])=\{(x,y):x^2+y^2=r^2\}.
+\]
+Fibers of a covering map are discrete subspaces of the total space, but this circle is not discrete. Hence \(p\) cannot be a covering map.
 :::

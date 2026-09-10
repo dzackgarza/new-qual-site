@@ -10,6 +10,16 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
@@ -34,4 +44,45 @@ $$
 [Hint: Compute $(\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})$ and apply (b).]
 
 (d) Verify that $d$ is a metric.
+:::
+
+::: {.solution}
+(a) By the definition of dot product,
+\[
+\mathbf x\cdot(\mathbf y+\mathbf z)
+=\sum_i x_i(y_i+z_i)
+=\sum_i x_iy_i+\sum_i x_iz_i
+=\mathbf x\cdot\mathbf y+\mathbf x\cdot\mathbf z.
+\]
+
+(b) If either vector is zero the inequality is immediate. Otherwise put
+\[
+u=\frac{\mathbf x}{\|\mathbf x\|},\qquad v=\frac{\mathbf y}{\|\mathbf y\|}.
+\]
+Since $\|u\pm v\|^2\ge0$,
+\[
+0\le 2\pm2(u\cdot v),
+\]
+so $-1\le u\cdot v\le1$. Multiplying by $\|\mathbf x\|\|\mathbf y\|$ gives
+\[
+|\mathbf x\cdot\mathbf y|\le\|\mathbf x\|\,\|\mathbf y\|.
+\]
+
+(c) Using part (b),
+\[
+\begin{aligned}
+\|\mathbf x+\mathbf y\|^2
+&=\|\mathbf x\|^2+2\mathbf x\cdot\mathbf y+\|\mathbf y\|^2\\
+&\le \|\mathbf x\|^2+2\|\mathbf x\|\|\mathbf y\|+\|\mathbf y\|^2\\
+&=(\|\mathbf x\|+\|\mathbf y\|)^2.
+\end{aligned}
+\]
+Taking nonnegative square roots yields the triangle inequality for the norm.
+
+(d) Define $d(\mathbf x,\mathbf y)=\|\mathbf x-\mathbf y\|$. It is nonnegative and symmetric, and $d(\mathbf x,\mathbf y)=0$ iff every coordinate difference is zero, i.e. $\mathbf x=\mathbf y$. Finally
+\[
+d(\mathbf x,\mathbf z)=\|(\mathbf x-\mathbf y)+(\mathbf y-\mathbf z)\|
+\le d(\mathbf x,\mathbf y)+d(\mathbf y,\mathbf z)
+\]
+by part (c). Thus $d$ is a metric.
 :::
