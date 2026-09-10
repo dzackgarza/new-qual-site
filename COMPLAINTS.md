@@ -112,14 +112,6 @@ of public mathematical remarks.
 - **Uncertainty:** the mismatch is verified locally; the card appears only in the unsorted compilation and no originating source has been identified.
 - **Repair:** recover the source and determine whether the intended object was the series $\sum \sin(n)/n$ before authoring a solution.
 
-### E-N5RKI omits hypotheses needed for its boundary maximum-principle claim
-
-- **Object and need:** `E-N5RKI`; the card asks to show that if $|f|=0$ on $\partial\Omega$, then either $f$ is constant or $f$ has a zero in $\Omega$.
-- **Observed evidence:** the card does not state that $f$ is holomorphic on $\Omega$, continuous up to $\partial\Omega$, or that $\Omega$ is bounded. Without those data the boundary condition is not a usable maximum-principle hypothesis. The title suggests a holomorphic maximum-modulus argument, but those hypotheses are absent from the problem body.
-- **Impact and owner:** the problem is incomplete as a mathematical proposition; the missing analytic/domain assumptions cannot be inferred safely from its current text.
-- **Uncertainty:** the omission is verified in the local card; no independent provenance is attached through the unsorted collection.
-- **Repair:** recover the originating statement and restore its holomorphicity, boundary-continuity, and domain hypotheses before attaching a proof.
-
 ### P-6YHN7 is false as written in the unsorted complex-analysis compilation
 
 - **Object and need:** `P-6YHN7`; the card assumes holomorphic maps $f,g:\mathbb D\to\Omega$ with $f$ injective and $f(0)=g(0)$ and asks to prove $g(r\mathbb D)\subseteq f(r\mathbb D)$ for every $0<r<1$.
