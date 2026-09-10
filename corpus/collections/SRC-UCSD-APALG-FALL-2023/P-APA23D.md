@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
+  note: Verified the Rayleigh, induced-norm, and spectral-norm computations.
 ---
 
 ::: problem
@@ -31,7 +35,7 @@ Prove that for all $1 \le p \le \infty$, the induced operator $p$-norm of $D$ is
 $$A_1 = a a^H \quad \text{and} \quad A_2 = \begin{pmatrix} 0 & a^H \\ a & 0 \end{pmatrix}.$$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Rayleigh quotient inequalities for Hermitian matrices, compute induced $p$-norms of diagonal matrices, and evaluate the spectral 2-norm of rank-one and symmetric block companion matrices.
 
 <1>1. Part (a): Rayleigh Quotient Bounds for Hermitian Matrices:
