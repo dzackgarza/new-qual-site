@@ -42,6 +42,8 @@ of public mathematical remarks.
 
 ### The 2003–2009 algebra packet has mixed subject metadata
 
+- **Same defect in the later packet:** June 2015 Groups 3, Rings 2, and Fields 2–3 in `algebra_2010-2015_prelims.md` verify `P-PCSZ2`, `P-HHX6V`, `P-U64DA`, and `P-VFB5V` as algebra, although each had sole area `prelim`. Commits `565de6d8f`, `761157381`, `ac07d741f`, and `dc8660316` repair those four classifications individually with complete proofs. The first also makes the source's identity-bijection qualification explicit in the title; the second replaces an unrelated Free Modules topic with Principal Ideal Domains. These four confirmed cases are resolved; they do not establish a disposition of unread classification candidates.
+
 - **Additional source-checked repair:** page 5, Rings and modules 3, confirms `P-TB7BG` as algebra. Commit `8ed9d41e6` corrects that classification and replaces its invalid nilpotency argument with a complete invariant-complement proof. The two explicit algebraic counterexamples remain in the card's mathematical remark; its proof defect is resolved. Other classification candidates in this entry remain subject to individual source review.
 
 - **Further verified repairs:** Summer 2007 Rings 1 and 3 confirm the algebra classifications of `P-PDAPQ` and `P-ZSFKA`, corrected in `fdfd7e73b` and `019c900b6`. The latter also resolves the signed-norm ambiguity by stating the absolute norm and proving Euclidean division, with the source convention explained on the card.
@@ -78,6 +80,10 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### The configured PDF extraction command is missing and service requests failed
+
+- **July 2003 lattice recovery:** `P-ARTALG-JU03-6` replaced its essential diagram with the undefined phrase “a specific diamond shape.” Native inspection of PDF page 45 shows exactly four incomparable middle vertices, plus top and bottom. Commit `6b1b83169` restores that complete order relation and proves all five decisions, including realization over the specified base field. For this inspection, `UV_NO_SYNC=1 uv run python` lacked `pypdfium2`; `/usr/bin/python3` already had it and rendered the retained source successfully without installing packages or running OCR. PDF page 44 contains problem 5, not the required diagram.
+
 ### Single-card validation accepts duplicate YAML mapping keys
 
 - **Object and need:** `qualc.authoring check` must reject ambiguous duplicate mapping keys in card front matter, rather than reporting that the card parses correctly.
@@ -87,6 +93,8 @@ of public mathematical remarks.
 - **Repair:** reject duplicate mapping keys in card front matter. The particular card was reconciled in `f5f68b2db` after reading both correct proofs; the shorter support-and-transitivity argument was retained, with both original versions preserved in history. That content repair does not repair the parser.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
+
+- **July 2003 reproduction, 2026-09-10:** `P-ARTALG-JU03-6` acquired a complete source-checked proof while this stream was rendering its missing diagram; it was read and retained. An exact-context patch for `P-ARTALG-JU03-9` was then rejected because another writer had inserted a source-check entry after the initial read. No part of that patch applied. Another `agents.status` request returned `WORKER_IDENTITY_LOST`, so no addressable owner could be reached through that tool. These are further same-range collisions, not conflicts with the disjoint UCSD or UGA edits elsewhere in the checkout.
 
 - **Further reproduction, 2026-09-10:** a live source-order query returned `P-ARTALG-JU06-6` without a solution; the subsequent native read found a newly authored 157-line card, and Git reported that path as modified. This stream had not edited it and left the other writer's proof untouched. Later exact-context patches for `P-ARTALG-JU06-9` and `P-ARTALG-JU06-12` likewise failed after another writer added complete proofs between the read and patch; those proofs were independently checked and preserved, with no overwrite. A further native `agents.status` request returned `WORKER_IDENTITY_LOST`. The overlap therefore persists in the July 2006 section. `AGENTS.md` still says streams use separate worktrees (lines 648–650), as does `CONTRIBUTING.md` (lines 41–45), despite the current explicit direct-to-main assignment; align that guidance with the actual workflow when repairing ownership coordination.
 
@@ -99,6 +107,10 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **Completion-query reproduction, 2026-09-10:** a read-only `Corpus`/`parse_cards` measurement of the two algebra packets was rejected before execution after the June 2015 proofs were committed. Separate calls to the existing `just unsolved-in` recipe remain the source-order measurement route; the rejected request supplies no evidence of a parser or corpus failure.
+
+- **Commit-poll reproduction, 2026-09-10:** an empty-input `write_stdin` poll of the `P-ARTALG-AL04-9` commit session was rejected with the same safety-status message. A separate read-only Git check confirmed commit `c672be69b` and a clean card path. The rejection therefore obstructed reading the result; it did not mean the commit failed or repository access was unavailable.
 
 - **Additional reproduction, 2026-09-10:** a batched read-only request for Git status/history, TODO text, and authoring-command discovery was rejected with the same safety-status message. Separate native file reads and a smaller Git-status command succeeded. No requested mutation or repository check was involved.
 
