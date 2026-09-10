@@ -18,7 +18,7 @@ the existing named advisory defect patterns.
 | `QUAL-06` | Match verification to the artifact | Read mathematical proofs for correctness; a parser cannot certify them. For renderer or styling changes, render and inspect the actual affected pages. Use existing just recipes and the prose-only commit exemption where applicable. |
 | `QUAL-07` | Preserve concurrent authorship | Reread target files before editing, preserve others' changes and staged files, and commit only the intended paths. Keep complaint and TODO edits confined to the selected entry. |
 | `QUAL-08` | Keep process off public cards | Store issue capture here and in COMPLAINTS/TODO, not in rendered remarks. Mathematical errata may explain a false statement and its corrected hypotheses on the card. |
-| `QUAL-09` | Retire the worktree you created | Share one read-only environment across worktrees; never create a per-worktree `.venv`. Remove and prune your worktree once its unit is integrated, and treat a stale `git worktree list` entry as a debt. Before retiring a worktree you did not create, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
+| `QUAL-09` | One checkout, one branch | Work directly on `main` in the single clone. Do not create worktrees or branches: streams author disjoint cards, so there is nothing to isolate. A commit that sweeps in a sibling's edit is a wrong message, not lost work — `git commit --amend`, or commit an explicit pathspec. Before retiring a worktree left over from the old rule, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
 
 ## Requirements
 
@@ -38,23 +38,17 @@ cd new-qual-site
 uv sync --group dev
 ```
 
-## Worktrees
+## Working in the clone
 
-Parallel streams get separate worktrees under `.worktrees/`, and all of them
-share the environment the clone above created. Run `uv sync` only in the main
-checkout; in a worktree, point at that environment read-only:
+Every stream works directly on `main` in this one checkout, using the environment
+`uv sync --group dev` created above. Do not create worktrees and do not create
+branches: streams author disjoint cards, so there is nothing for a branch to
+isolate. If a commit sweeps in a sibling's concurrent edit, that is a wrong commit
+message rather than lost work — `git commit --amend`, or commit the paths you meant
+with an explicit pathspec as `QUAL-07` already requires.
 
-```sh
-main=$(git worktree list --porcelain | head -1 | cut -d' ' -f2)
-export UV_PROJECT_ENVIRONMENT="$main/.venv"
-export UV_NO_SYNC=1
-export PYTHONPATH="$PWD/tools"
-```
-
-Do not create a `.venv` in a worktree. Retire the worktree when its unit is
-integrated, with `git worktree remove` followed by `git worktree prune`. Before
-retiring one you did not create, apply the three readings in `QUAL-09`.
-[AGENTS.md](AGENTS.md#worktrees) explains what each reading establishes.
+Worktrees left over from the previous rule are retired under `QUAL-09`; see
+[AGENTS.md](AGENTS.md#one-checkout-one-branch) for what each reading establishes.
 
 ## Repository structure
 

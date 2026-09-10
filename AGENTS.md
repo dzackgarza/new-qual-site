@@ -5,7 +5,7 @@ Read [TODO.md](TODO.md) for the task DAG,
 and [COMPLAINTS.md](COMPLAINTS.md) for mathematical issues and workflow papercuts.
 Apply `QUAL-05` when a problem is encountered, including outside the selected card.
 Record the evidence before leaving that work; logging does not complete a repair.
-These documents apply in subject worktrees as well as the main checkout.
+These documents apply to every stream working in the clone.
 
 <!-- agent-memory:start -->
 # Agent memory
@@ -635,70 +635,58 @@ disposition, so record the reason in `TODO.md`.
 
 ## Reconcile queues across all agent branches before claiming
 
-Solving happens on multiple `agent/*` worktree branches, so a queue file on
-one branch does not reflect solutions authored on the others. Before claiming
-cards from a queue (`queues/C-unsolved-cards.md` and its siblings), regenerate
-or reconcile the queue against the solutions present on **all** `agent/*`
-branches, not just the current one. Never claim from a queue older than your
-last branch sync; a stale queue produces duplicate solving of the same card.
+Every stream solves on `main`, so a queue is stale the moment a sibling commits.
+Before claiming cards from a queue (`queues/C-unsolved-cards.md` and its siblings),
+regenerate it against the working tree as it stands now. Never claim from a queue
+you read before your last pull; a stale queue produces duplicate solving of the
+same card.
 All authoring requires a live claim against the reconciled queue —
 batch-committing cards authored off-queue is prohibited. Reconcile again at
 release so the queue the next agent reads reflects the work just delivered.
 
-# Worktrees
+# One checkout, one branch
 
-Streams work in separate worktrees under `.worktrees/`. A worktree is a second
-checkout of authored content. It is not a second copy of the environment, and
-nothing `uv` can rebuild may exist once per worktree: one virtualenv and one
-package cache serve every stream, referenced read-only.
+**Streams work directly on `main` in the single clone. Do not create worktrees and
+do not create branches.**
 
-The shared environment is the main checkout's `.venv`, created there once with
-`uv sync --group dev`. A worktree points at it and never writes to it:
+This repository is authored content. A stream writes solutions, hints and wiki prose
+into card files it selected off a queue, and two streams never hold the same card —
+so there is nothing for a branch to isolate and nothing for a merge to resolve. The
+isolation apparatus was not protecting the work; it was protecting against a fear.
 
-```bash
-main=$(git worktree list --porcelain | head -1 | cut -d' ' -f2)
-export UV_PROJECT_ENVIRONMENT="$main/.venv"
-export UV_NO_SYNC=1
-export PYTHONPATH="$PWD/tools"
-```
-
-`UV_NO_SYNC` is what makes the reference read-only. Without it `uv run` resyncs
-the environment it is pointed at and reinstalls `qualc` against whichever
-worktree ran last, so two streams silently fight over one editable install.
-`PYTHONPATH` is what keeps it correct: it puts the worktree's own `tools/qualc`
-ahead of the shared environment's editable install of the main checkout's, so a
-stream runs the compiler it is editing rather than another stream's. Leave
-`UV_CACHE_DIR` at its default — one cache outside the repository, which every
-worktree hardlinks from. Never set a per-worktree cache and never pass
-`--link-mode=copy`.
-
-Do not create a `.venv` inside a worktree. Do not run `uv sync`, `uv add`, or
-`uv pip` from one: a dependency change belongs to the main checkout, where every
-stream picks it up at once. Thirty-eight per-worktree copies filled the volume on
-2026-09-10, and a full volume presents as killed processes and dying exec
-sessions rather than as a disk error, so it reads as worker misbehaviour for
-hours before anyone runs `df`.
-
-## Retire the worktree you created
-
-The agent that creates a worktree retires it once that unit is integrated:
+The fear is `git commit -a` sweeping in a sibling stream's concurrent edit. That is
+not a conflict and not lost work: the other stream's change is already on disk and
+already correct, and the only thing wrong is the message describing it. Fix the
+message:
 
 ```bash
-git worktree remove .worktrees/<name>
-git worktree prune
+git commit --amend        # your commit swept in a sibling's card
 ```
 
-A stale entry in `git worktree list` is a retirement debt. It is owed by the
-agent that opened it, it survives that agent's session, and recording it is not
-paying it. Retire the worktree in the same work that integrates its unit; a
-worktree left behind is a checkout of the whole corpus that no one will
-recognise as theirs later.
+Or commit the paths you meant in the first place, which `QUAL-07` already requires:
 
-## Establishing that a worktree you did not create is safe to retire
+```bash
+git commit -- corpus/problems/Algebra/P-XXXXX.md
+```
 
-Being unrecognised is not evidence that a worktree is debris. Another stream's
-work is live until three readings say otherwise, and all three must be taken
-immediately before the removal, never carried over from an earlier survey:
+Neither costs anything. A worktree per stream costs a second checkout of the whole
+corpus — 353 MB of tracked assets each — to carry a handful of edited markdown files.
+Twenty-seven of them filled the volume on 2026-09-10 while holding forty-four changed
+files between them, and a full volume presents as killed processes and dying exec
+sessions rather than as a disk error, so it reads as worker misbehaviour for hours
+before anyone runs `df`.
+
+There is one environment, the main checkout's `.venv`, created with
+`uv sync --group dev` and used directly. No `UV_PROJECT_ENVIRONMENT`, no
+`UV_NO_SYNC`, no `PYTHONPATH` override — those existed solely to stop worktrees
+fighting over one editable install, and with one checkout there is nothing to point
+anywhere.
+
+## Worktrees that already exist
+
+Some remain from before this rule. They are not debris and must not be removed on
+sight: another stream's authoring is live until three readings say otherwise, taken
+immediately before the removal and never carried over from an earlier survey.
 
 ```bash
 git -C PATH --no-optional-locks status --short                     # 1. clean
@@ -706,25 +694,24 @@ git merge-base --is-ancestor "$(git -C PATH rev-parse HEAD)" HEAD  # 2. reachabl
 pgrep -a -f PATH                                                   # 3. no process
 ```
 
-Reading 1 fails on any output at all — staged or unstaged, tracked or untracked.
-An uncommitted card is somebody's unbanked authoring, and a `.orig` file beside
-it is the evidence of a merge they are still resolving.
+Reading 1 fails on any output at all — staged or unstaged, tracked or untracked. An
+uncommitted card is somebody's unbanked authoring, and a `.orig` file beside it is the
+evidence of a merge they are still resolving. Reading 2 asks whether every commit on
+that worktree's branch is already in `main`; run it from the main checkout, whose
+`HEAD` is the reference. Reading 3 discards the checking shell's own PID, and
+`pgrep -f` matches on substring, so a probe for `sp19` also matches `sp19-audit2` —
+read the command lines it prints rather than counting them.
 
-Reading 2 asks whether every commit on that worktree's branch is already in
-`main`; run it from the main checkout, whose `HEAD` is the reference. A non-zero
-exit means the worktree holds commits that exist nowhere else, whatever the age
-of its branch name.
+When all three pass:
 
-Reading 3 discards the checking shell's own PID. `pgrep -f` matches on
-substring, so a probe for `sp19` also matches `sp19-audit2`: read the command
-lines it prints rather than counting them.
+```bash
+git worktree remove .worktrees/<name>
+git worktree prune
+```
 
-Fail any one of the three and leave that worktree alone; report it with its three
-readings so the stream that owns it can retire it. The readings expire the moment
-you take them — the fleet creates and retires worktrees while you read — so
-re-take them for each worktree at the point of removal rather than acting on a
-list. Worktrees outside the repository are outside this rule; report them and do
-not remove them.
+When any one fails, leave it in place and report it. Re-take all three for each
+worktree at the point of removal rather than acting on a list. Worktrees outside the
+repository are outside this rule; report them and do not remove them.
 
 # Running checks
 
