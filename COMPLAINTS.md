@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### E-YEIQ5 is false on a general region
+
+- **Object and need:** `E-YEIQ5` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card claims that a holomorphic function on an arbitrary region must be constant if it maps one simple closed curve in the region into the real axis.
+- **Observed evidence:** take the annulus $\Omega=\{1/2<|z|<2\}$, the unit circle $\gamma\subset\Omega$, and $f(z)=z+z^{-1}$. Then $f$ is nonconstant and holomorphic on $\Omega$, while for $z=e^{it}$ one has $f(z)=2\cos t\in\mathbb R$. The usual harmonic-maximum-principle proof would require the bounded component of $\mathbb C\setminus\gamma$ to lie in the domain, which need not hold for a general region.
+- **Impact and owner:** the card is false as written and cannot receive a valid proof without an additional hypothesis, such as requiring the interior of $\gamma$ to be contained in $\Omega$ (or imposing a suitable simply connected-domain hypothesis). The unsorted source/card statement owns the repair.
+- **Uncertainty:** the counterexample is decisive. `SRC-UNSORTED-COMPLEX-ANALYSIS` has no independent provenance identifying the intended original statement.
+- **Repair:** recover the originating source or an independent version and add only the source-supported missing hypothesis; otherwise retain the card as a documented source defect.
+
 ### P-4Y4QT has an unbound parameter and an incompatible convergence range
 
 - **Object and need:** `P-4Y4QT` in `SRC-CA-ART-T34TG3`; the problem says “Let $0<a<4$” but asks to evaluate $\int_0^\infty x^{\alpha-1}/(1+x^3)\,dx$, so the parameter in the integrand is not bound by the stated hypothesis.
