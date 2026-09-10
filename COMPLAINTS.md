@@ -40,6 +40,30 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### E-QVMUV has inconsistent Laurent-coefficient notation and an incorrect integral index
+
+- **Object and need:** `E-QVMUV`; the card is intended to state the Cauchy integral formula for Laurent coefficients and the annulus of convergence.
+- **Observed evidence:** the opening display reads `f(z) \sum_{k\in\ZZ} c_k(z-z_0)^k` with the equality sign missing; the asserted formula labels the coefficient $c_k$ but divides by $(z-z_0)^{n+1}$; the convergence radii are then written in terms of coefficients $a_{\pm n}$ rather than the $c_k$ introduced above. These are mutually inconsistent variable names in the mathematical statement, not merely presentation differences.
+- **Impact and owner:** the card does not currently state a single well-defined coefficient formula. The intended standard formula is plausibly $c_k=(2\pi i)^{-1}\int_\gamma f(z)(z-z_0)^{-k-1}\,dz$, with radii expressed using the same coefficients, but the unsorted card has no independent source establishing which local symbols were intended.
+- **Uncertainty:** the local inconsistencies are verified; `SRC-UNSORTED-COMPLEX-ANALYSIS` supplies no independent provenance for the card.
+- **Repair:** recover the originating source or notes and normalize all coefficient/index variables from that source before attaching a proof.
+
+### E-XIT36 omits the series sign in its summation-by-parts task
+
+- **Object and need:** `E-XIT36`; the card says “Use summation by parts to show that $\sin(n)/n$ converges.”
+- **Observed evidence:** $\sin(n)/n$ is a sequence, whose convergence to $0$ is immediate and does not use summation by parts. The natural summation-by-parts problem is convergence of the series $\sum_{n\ge1}\sin(n)/n$, but the summation sign is absent from the card.
+- **Impact and owner:** as written, the requested method does not match the mathematical assertion. Adding a summation sign would materially change the statement and therefore needs source support.
+- **Uncertainty:** the mismatch is verified locally; the card appears only in the unsorted compilation and no originating source has been identified.
+- **Repair:** recover the source and determine whether the intended object was the series $\sum \sin(n)/n$ before authoring a solution.
+
+### E-N5RKI omits hypotheses needed for its boundary maximum-principle claim
+
+- **Object and need:** `E-N5RKI`; the card asks to show that if $|f|=0$ on $\partial\Omega$, then either $f$ is constant or $f$ has a zero in $\Omega$.
+- **Observed evidence:** the card does not state that $f$ is holomorphic on $\Omega$, continuous up to $\partial\Omega$, or that $\Omega$ is bounded. Without those data the boundary condition is not a usable maximum-principle hypothesis. The title suggests a holomorphic maximum-modulus argument, but those hypotheses are absent from the problem body.
+- **Impact and owner:** the problem is incomplete as a mathematical proposition; the missing analytic/domain assumptions cannot be inferred safely from its current text.
+- **Uncertainty:** the omission is verified in the local card; no independent provenance is attached through the unsorted collection.
+- **Repair:** recover the originating statement and restore its holomorphicity, boundary-continuity, and domain hypotheses before attaching a proof.
+
 ### E-C5QHZ and E-ISFYB omit the common domain needed for the mean-value argument
 
 - **Object and need:** `E-C5QHZ` and `E-ISFYB`; both ask to deduce equicontinuity from a uniform derivative bound, but neither specifies the common domain or hypotheses ensuring that line segments between nearby points stay in that domain.
@@ -112,11 +136,11 @@ of public mathematical remarks.
 - **Uncertainty:** the omission is verified against the official DOCX and the counterexample is decisive. The natural correction is to add $f(0)=0$, but no independent erratum has yet been located.
 - **Repair:** add the missing hypothesis only if supported by an independent source or explicit erratum; otherwise retain the card as a documented source defect rather than attaching a proof to the false statement.
 
-### P-X7WUF is not present in the cited Fall 2016 UGA source and its residue formula omits a factorial
+### P-X7WUF and E-YZUOC contain a residue formula missing the factorial normalization
 
-- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; the local collection provenance should identify the actual source of each card, and the residue formula for a pole of order $m$ must include the standard normalization.
+- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016` and the parallel unsorted card `E-YZUOC`; the residue formula for a pole of order $m$ must include the standard normalization, and the UGA collection provenance should identify the actual source of `P-X7WUF`.
 - **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document. Independently, `P-X7WUF(a)` omits the factor $1/(m-1)!$ from the pole-of-order-$m$ residue formula. For example, for $F(z)=z^{-3}+z^{-1}$ and $m=3$, the contour integral divided by $2\pi i$ equals the residue $1$, whereas the stated right-hand side is $\frac{d^2}{dz^2}(1+z^2)|_{z=0}=2$.
-- **Impact and owner:** the card cannot be source-verified against its owning collection, and part (a) is mathematically false for $m>2$ without the factorial. The collection/card provenance and statement own the repair.
+- **Impact and owner:** both cards' part (a) is mathematically false for $m>2$ without the factor $1/(m-1)!$, and `P-X7WUF` additionally cannot be source-verified against its owning collection. The collection/card provenance and statements own the repair.
 - **Uncertainty:** the mismatch with the cited DOCX is verified; the actual source of `P-X7WUF` has not yet been identified.
 - **Repair:** recover the true source for `P-X7WUF`, move or re-provenance the card accordingly, and restore the factor $1/(m-1)!$ before attaching a solution.
 
