@@ -115,3 +115,11 @@ of public mathematical remarks.
   compute merges out of tree, advance `main` by compare-and-swap ref update, sync only
   merge-changed paths, and skip any branch whose changed paths intersect the checkout's dirty
   set — and require a single consolidation owner at a time so two runs cannot race.
+
+### `apply_patch` is unavailable in the repository shell
+
+- **Object and need:** single-card authored edits in the local repository shell; a patch utility should support narrow, reviewable edits without rewriting unrelated content.
+- **Observed evidence:** on 2026-09-10, invoking `apply_patch` from `/home/dzack/gitclones/new-qual-site` failed with `zsh:1: command not found: apply_patch` before changing `P-SP3SP`.
+- **Impact and owner:** repository authoring must fall back to whole-file writes or lower-level text tools, increasing the chance of incidental edits. This is environment/tooling-owned, not corpus-owned.
+- **Uncertainty:** only this shell environment was tested; `apply_patch` may exist in other harnesses.
+- **Repair:** provide the patch helper consistently in repository shells, or document the supported narrow-edit command for this environment.
