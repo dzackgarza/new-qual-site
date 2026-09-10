@@ -21,6 +21,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Consolidation adjudication compared both independently authored merge-parent versions. Their Tonelli proofs are mathematically identical up to line wrapping, so the retained proof is unchanged. The doubled apostrophe in the single-quoted YAML title is the YAML escape for the source-correct varphi-prime notation.
 ---
 
 ::: {.problem}
