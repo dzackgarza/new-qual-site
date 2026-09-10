@@ -22,6 +22,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Consolidation adjudication compared both independently authored merge-parent versions. They use the same Gaussian/Fourier-transform/Riemann--Lebesgue argument and differ only in line wrapping, so the retained proof is mathematically unchanged.
 ---
 
 ::: {.problem}
