@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T7IKN
 kind: problem
-title: "Closed convex subsets of a Hilbert space have unique nearest points"
+title: Nonempty closed convex sets in a Hilbert space have unique minimum-norm points
 classification:
   areas:
   - real-analysis
@@ -22,9 +22,23 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "The retained September 2019 Real Analysis 4 statement omits nonemptiness, although the existing proof assumes it; the empty set is a counterexample to the unqualified statement."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Retained the complete parallelogram-identity proof, reconciled its hypothesis with the statement and title, and justified existence of the minimizing sequence."
 ---
 
-4. Prove that every closed convex subset of a Hilbert space has a unique element of minimal norm.
+::: problem
+Prove that every nonempty closed convex subset of a Hilbert space has a unique element of minimal norm.
+:::
+
+::: remark
+Nonemptiness is necessary: the empty set is closed and convex but has no element of minimal norm.
+:::
 
 ::: solution
 <1>1. Choose a minimizing sequence.
@@ -33,7 +47,9 @@ Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
 \[
 d:=\inf_{x\in C}\|x\|.
 \]
-Choose $x_n\in C$ with
+Nonemptiness gives $0\leq d<\infty$. By the defining
+property of the infimum, choose $x_n\in C$ with
+$d\leq\|x_n\|<d+1/n$. Then
 \[
 \|x_n\|^2\longrightarrow d^2.
 \]
