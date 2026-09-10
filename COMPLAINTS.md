@@ -58,8 +58,9 @@ of public mathematical remarks.
 
 - **Object and need:** `P-XKYOG` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
 - **Observed evidence:** the card begins mid-sentence with "equations take the form," then asks to use the polar Cauchy--Riemann equations to show that the principal logarithm is holomorphic on $r>0$, $-\pi<\theta<\pi$, and also to show that this same logarithm is "not continuous in $r>0$." On the stated slit plane the principal logarithm is holomorphic and therefore continuous.
-- **Impact and owner:** the surviving text is both truncated and mathematically contradictory.
-- **Repair:** recover the omitted preceding part and the intended final continuity/noncontinuity domain from the source before authoring a proof.
+- **Source verification:** `assets/attachments/extracted/Questions_from_Tie.md` and the parallel UGA Fall 2015 card `P-AMD-YDNWHPDM` restore the omitted part (a), but both preserve the same final phrase "not continuous in $r>0$." Thus the truncation is local, while the contradictory continuity clause is source-level rather than an extraction artifact.
+- **Impact and owner:** the omitted polar Cauchy--Riemann setup is recoverable, but the final source claim still requires correction before the full exercise can receive a source-faithful proof.
+- **Repair:** correct the source-level final clause to the intended nonextendability statement (for example, nonexistence of a continuous extension to $\CC^\times$) before authoring the complete proof.
 
 ### P-V4OZH omits the value range for b and has a denominator typo
 
@@ -73,9 +74,9 @@ of public mathematical remarks.
 
 - **Object and need:** `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS` should state a complete mathematical problem before solution authorship.
 - **Observed evidence:** the card asks for the standard roots-of-unity sine sum, but its final displayed term is written `\cdots \frac{2(n-1)\pi}{n}=0` with the `\sin` missing.
-- **Impact and owner:** the intended mathematics is recognizable, but inserting the missing sine would alter source-authored problem text without independent provenance. The unsorted compilation/card statement owns the repair.
-- **Uncertainty:** the local defect is explicit and verified. No independent source is attached to the card in the unsorted collection, so the intended exact wording has not been source-verified.
-- **Repair:** recover the originating source and restore the missing symbol before attaching a solution.
+- **Source verification:** the originating `assets/attachments/8155-starter-problems.pdf` has the same omission in problem 6; `pdftotext -layout` confirms that the final sine term itself is absent in the PDF, not merely in OCR extraction.
+- **Impact and owner:** this is a source-level typo. The intended identity is evident, but source fidelity requires an explicit correction rather than silently inserting the missing `\sin`.
+- **Repair:** correct problem 6 in the source-derived card to insert the final `\sin` and then attach the roots-of-unity proof.
 
 ### P-HZ3G4 has the wrong half-plane of convergence
 
@@ -86,8 +87,8 @@ of public mathematical remarks.
   \]
   which does not tend to zero because $e^y/2>1$. Thus the series fails even pointwise on part of the stated region.
 - **Impact and owner:** the card cannot receive the requested proof as written. The correct pointwise and compact-uniform region for the displayed series is the strip $|\Im z|<\log 2$; any source-faithful repair must determine whether a missing lower bound on $\Im z$ was intended.
-- **Uncertainty:** the counterexample is decisive. The card appears only in `SRC-UNSORTED-COMPLEX-ANALYSIS`, with no independent source currently identified.
-- **Repair:** recover the originating source and restore the intended convergence domain before attaching a solution.
+- **Source verification:** `assets/attachments/extracted/Azoff Problems by Topic.md` problem 10 reproduces the same half-plane $\{\Im z<\ln2\}$. The bad domain is therefore present in the source material rather than introduced by the standalone-card extraction.
+- **Repair:** correct the source-level convergence domain, most naturally to the strip $|\Im z|<\log2$ (or state compact-uniform convergence there), before attaching a proof.
 
 ### P-DFHS3 mixes the integration variable with an unexplained parameter
 
@@ -102,8 +103,8 @@ of public mathematical remarks.
 - **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
 - **Observed evidence:** the second expression is not an equation and therefore does not specify a level curve. Part (b)(i) discusses the level curves of both real and imaginary parts, but part (ii) provides the level value only for the real part.
 - **Impact and owner:** the requested pair of curves is underdetermined. The likely intended second curve is $\operatorname{Im}f=0$, but inserting that value would alter the problem statement without source support.
-- **Uncertainty:** the local omission is verified; the card appears in the unsorted complex-analysis compilation without independent provenance.
-- **Repair:** recover the source and restore the omitted imaginary-part level before attaching a solution.
+- **Source verification:** `assets/attachments/extracted/Questions_from_Tie.md`, Fall 2016 problem 2(b)(ii), contains the same incomplete phrase `Re(f)=0` and `Im(f)`; the missing imaginary level is therefore a source-level omission.
+- **Repair:** correct the source-level statement by specifying the intended imaginary-part level before attaching a solution.
 
 ### E-QVMUV has inconsistent Laurent-coefficient notation and an incorrect integral index
 
