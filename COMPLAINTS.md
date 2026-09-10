@@ -40,6 +40,30 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-DFHS3 mixes the integration variable with an unexplained parameter
+
+- **Object and need:** `P-DFHS3`; the card asks to calculate $\int_0^\infty ((1+z)^2(z+9x^2))^{-1}\,dx$.
+- **Observed evidence:** the integration variable is $x$, but the first two factors use an unexplained symbol $z$. No hypothesis specifies $z$, its branch, or a range ensuring convergence and avoiding poles. The title reproduces the same mixed-variable expression.
+- **Impact and owner:** the integral is not a single numerical problem as written. Replacing $z$ by $x$ or treating $z$ as a parameter would lead to different mathematics and cannot be chosen without source evidence.
+- **Uncertainty:** the malformed local statement is verified; the unsorted collection supplies no independent provenance.
+- **Repair:** recover the originating source and restore the intended variable/parameter before attaching a solution.
+
+### P-DKYVD uses different pole variables in its hypothesis and integrand
+
+- **Object and need:** `P-DKYVD`; the hypothesis assumes $|a|<r<|b|$, but the integrand is $((z-\alpha)(z-\beta))^{-1}$ and the claimed value is $2\pi i/(\alpha-\beta)$.
+- **Observed evidence:** no relation between $(a,b)$ and $(\alpha,\beta)$ is stated. Thus the hypothesis does not determine which of the actual poles $\alpha,\beta$ lies inside the circle $|z|=r$.
+- **Impact and owner:** the Laurent-series/residue conclusion requires a source-supported identification such as $a=\alpha$, $b=\beta$ (or the reverse). Without it the statement is underdetermined.
+- **Uncertainty:** the variable mismatch is verified locally; no independent provenance is attached through the unsorted collection.
+- **Repair:** recover the source and restore consistent pole notation before authoring the proof.
+
+### P-DEJGY(b)(ii) omits the second level-set value
+
+- **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
+- **Observed evidence:** the second expression is not an equation and therefore does not specify a level curve. Part (b)(i) discusses the level curves of both real and imaginary parts, but part (ii) provides the level value only for the real part.
+- **Impact and owner:** the requested pair of curves is underdetermined. The likely intended second curve is $\operatorname{Im}f=0$, but inserting that value would alter the problem statement without source support.
+- **Uncertainty:** the local omission is verified; the card appears in the unsorted complex-analysis compilation without independent provenance.
+- **Repair:** recover the source and restore the omitted imaginary-part level before attaching a solution.
+
 ### E-QVMUV has inconsistent Laurent-coefficient notation and an incorrect integral index
 
 - **Object and need:** `E-QVMUV`; the card is intended to state the Cauchy integral formula for Laurent coefficients and the annulus of convergence.
