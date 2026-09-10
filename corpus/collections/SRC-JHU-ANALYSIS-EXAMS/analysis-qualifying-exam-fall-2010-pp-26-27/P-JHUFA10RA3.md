@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually verified Fall 2010 problem 3 on PDF page 26 and read both complete Schur-test cards. P-JHUMAY11ANK duplicates this single source item and was merged here rather than retained as a false May 2011 appearance."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Retained the common weighted Cauchy–Schwarz proof and supplied the preceding Tonelli argument establishing absolute convergence of Tf almost everywhere."
 ---
 
 ::: {.problem}
@@ -42,7 +50,43 @@ $$\|Tf\|_{L^2} \leq \sqrt{\alpha \beta} \|f\|_{L^2}.$$
 :::
 
 ::: {.solution}
-Let $f\in L^2(\mathbb R^n)$. Since $K\ge0$, for almost every $x$ we may apply Cauchy--Schwarz in the $y$ variable after inserting the weights $q(y)$:
+Let $f\in L^2(\mathbb R^n)$.
+
+<1>1. The integral defining $Tf$ converges absolutely almost everywhere.
+::: proof
+Set
+$$
+B(x)=\int_{\mathbb R^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
+$$
+This is a nonnegative measurable function, possibly
+initially infinite. Tonelli and the second kernel inequality
+give [@Fol13]
+$$
+\begin{aligned}
+\int_{\mathbb R^n}p(x)B(x)\,dx
+&=\int_{\mathbb R^n}\frac{|f(y)|^2}{q(y)}
+\left(\int_{\mathbb R^n}p(x)K(x,y)\,dx\right)dy\\
+&\leq\beta\int_{\mathbb R^n}|f(y)|^2\,dy<\infty.
+\end{aligned}
+$$
+Since $p(x)>0$, this implies $B(x)<\infty$ almost
+everywhere. The first kernel inequality also gives
+$A(x):=\int K(x,y)q(y)\,dy\leq\alpha p(x)<\infty$
+for almost every $x$. For points where both bounds hold,
+Cauchy–Schwarz applied to
+$K^{1/2}q^{1/2}$ and $K^{1/2}|f|q^{-1/2}$ yields
+$$
+\int K(x,y)|f(y)|\,dy\leq A(x)^{1/2}B(x)^{1/2}<\infty
+$$
+[@Fol13]. Thus $Tf$ is defined almost everywhere, and
+the usual parameter-integral measurability follows by
+Tonelli applied to positive and negative real and imaginary
+parts. Set $Tf=0$ on the exceptional null set.
+:::
+
+<1>2. The same weighted inequality gives the claimed norm bound.
+::: proof
+For almost every $x$, Cauchy–Schwarz in the $y$ variable gives
 \[
 \begin{aligned}
 |Tf(x)|^2
@@ -55,7 +99,7 @@ Let $f\in L^2(\mathbb R^n)$. Since $K\ge0$, for almost every $x$ we may apply Ca
 \int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
 \end{aligned}
 \]
-Integrating in $x$ and using Tonelli's theorem gives
+Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
 \[
 \begin{aligned}
 \|Tf\|_2^2
@@ -73,4 +117,5 @@ Taking square roots yields
 \[
 \|Tf\|_{L^2}\le \sqrt{\alpha\beta}\,\|f\|_{L^2}.
 \]
+:::
 :::
