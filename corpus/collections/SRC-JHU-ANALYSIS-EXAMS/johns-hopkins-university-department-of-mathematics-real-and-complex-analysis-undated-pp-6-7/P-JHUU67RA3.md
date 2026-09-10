@@ -29,6 +29,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-10
   note: Replaced part (3) by a proof for arbitrary smooth h using the explicit interval convolution formula and a discontinuous L1 target.
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Retained the restored unrestricted smooth-kernel statement, formulated the identity in L1 modulo null sets, and corrected the continuity estimate to keep both kernel arguments inside the stated compact interval."
 ---
 
 ::: {.problem}
@@ -47,7 +51,7 @@ Let $I=[0,1]$ and write
 3. Prove that there is no smooth function $h\in C^\infty(\mathbb R)$ such that
 \[
 (f*h)(x):=\int_0^1 f(y)h(x-y)\,dy=f(x)
-\qquad\text{for every }f\in L^1([0,1])\text{ and every }x\in[0,1].
+\qquad\text{for every }f\in L^1([0,1])\text{ and almost every }x\in[0,1].
 \]
 
 4. Prove Hölder's inequality: if $1/p+1/q=1$, then
@@ -118,26 +122,30 @@ For $p=\infty$, if $(f_n)$ is Cauchy in essential-supremum norm, choose represen
 
 <1>3. There is no smooth convolution identity on $L^1([0,1])$.
 ::: {.proof}
-Suppose $h\in C^\infty(\mathbb R)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. For $x,x'\in[0,1]$,
+Suppose $h\in C^\infty(\mathbb R)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. The displayed convolution is finite for every $x\in[0,1]$, since $h$ is bounded on $[-1,1]$, and is unchanged by replacing $f$ on a null set. Define
+$$
+\omega_h(\delta)=\sup\{|h(s)-h(t)|:s,t\in[-1,1],\ |s-t|\leq\delta\}.
+$$
+Uniform continuity on this compact interval gives $\omega_h(\delta)\to0$ as $\delta\to0$. For $x,x'\in[0,1]$,
 \[
 \begin{aligned}
 |(f*h)(x')-(f*h)(x)|
 &\le \int_0^1 |f(y)|\,|h(x'-y)-h(x-y)|\,dy\\
-&\le \|f\|_1\sup_{t\in[-1,1]}|h(t+x'-x)-h(t)|.
+&\le \|f\|_1\omega_h(|x'-x|).
 \end{aligned}
 \]
-For $x,x'\in[0,1]$, all arguments of $h$ occurring above lie in the compact interval $[-1,1]$. Since $h$ is continuous, it is uniformly continuous there. Hence the right-hand side tends to $0$ as $x'\to x$, so $f*h$ is continuous on $[0,1]$.
+Here $x-y$ and $x'-y$ both lie in $[-1,1]$ for $0\leq y\leq1$. The bound therefore proves that $f*h$ is continuous on $[0,1]$.
 
 Now take
 \[
 f=\mathbf1_{[0,1/2]}.
 \]
-This belongs to $L^1([0,1])$ but is discontinuous at $1/2$. The assumed identity would give
+This belongs to $L^1([0,1])$. The assumed identity would give
 \[
 f(x)=(f*h)(x)
-\qquad(x\in[0,1]),
+\qquad\text{for almost every }x\in[0,1],
 \]
-while the right-hand side is continuous. This is impossible. Therefore no smooth $h$ can act as the identity convolution kernel on all of $L^1([0,1])$.
+while the right-hand side is continuous. Any continuous function equal to this indicator almost everywhere must equal one throughout $(0,1/2)$ and zero throughout $(1/2,1)$: a different value would persist on an interval of positive measure. These two values contradict continuity at $1/2$. Hence no smooth $h$ can act as the identity convolution kernel on all of $L^1([0,1])$, even with equality required only almost everywhere.
 :::
 
 <1>4. Hölder's inequality.
