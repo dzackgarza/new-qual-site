@@ -112,8 +112,27 @@ _unsolved-if-staged:
         git add queues/C-unsolved-cards.md
     fi
 
+# Fail if any worktree exists (QUAL-09: one checkout, one branch)
+#
+# Documentation alone did not hold. The rule was written down and the fleet rebuilt
+# 27 worktrees anyway, each copying the 353MB tracked assets/ tree, filling the volume
+# on 2026-09-10 while holding a megabyte of authored prose between them. This is the
+# enforcement: a stream that opens a worktree finds out at its very next commit,
+# instead of the volume finding out first.
+[private]
+_no-worktrees:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    extra=$(git worktree list --porcelain | grep -c '^worktree ' || true)
+    if [ "$extra" -gt 1 ]; then
+        echo "QUAL-09: $((extra - 1)) worktree(s) exist. Streams work directly on main in this clone." >&2
+        git worktree list | tail -n +2 >&2
+        echo "Land the work on main, then: git worktree remove <path> && git worktree prune" >&2
+        exit 1
+    fi
+
 # Run immediate commit-tier quality checks
-test-commit: _unsolved-if-staged
+test-commit: _no-worktrees _unsolved-if-staged
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
