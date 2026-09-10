@@ -12,26 +12,68 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: problem
-1. $\displaystyle \int \cos (x+\frac {\pi}{4}) \cos(x- \frac {\pi}{4}) ~dx = \color {blue} {\frac {1}{4} \sin(2x)}$
+Compute the following indefinite integrals:
 
-- **Solution:** $\cos (x+\frac {\pi}{4}) \cos (x- \frac {\pi}{4}) = \frac {1}{2} (\cos ((x + \frac {\pi}{4}) + (x - \frac {\pi}{4})) + \cos ((x + \frac {\pi}{4}) - (x - \frac {\pi}{4}))) =  \frac {1}{2} \cos (2x)$
+1. \(\displaystyle \int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx\).
+2. \(\displaystyle \int \sin(4x)\cos(3x)\,dx\).
+3. \(\displaystyle \int 4\cos x\cos(2x)\sin(3x)\,dx\).
+:::
 
-2. $\displaystyle \int \sin(4x)\cos(3x)~dx = \color {blue} {- \frac {1}{14} \cos(7x) - \frac {1}{2} \cos(x)}$
+::: solution
+<1>1. Use product-to-sum.
+::: proof
+\[
+\cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)
+=\frac12\left(\cos(2x)+\cos\frac\pi2\right)
+=\frac12\cos(2x).
+\]
+Hence
+\[
+\boxed{\int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx
+=\frac14\sin(2x)+C.}
+\]
+:::
 
-- **Solution:** $\sin (4x) \cos (3x) = \frac {1}{2} (\sin (4x + 3x) + \sin (4x - 3x)) = \frac {1}{2} (\sin (7x) + \sin (x))$
+<1>2. Use product-to-sum again.
+::: proof
+\[
+\sin(4x)\cos(3x)=\frac12\bigl(\sin(7x)+\sin x\bigr).
+\]
+Therefore
+\[
+\boxed{\int \sin(4x)\cos(3x)\,dx
+=-\frac1{14}\cos(7x)-\frac12\cos x+C.}
+\]
+:::
 
-- **Used 2018**, *Unsolved*
-
-3. $\displaystyle \int 4\cos (x) \cos (2x) \sin (3x) ~dx = \color {blue} {- \frac {1}{6} \cos (6x) - \frac {1}{4} \cos (4x) - \frac {1}{2} \cos (2x)}$
-
-- **Solution:** $2 \cos (x) \cos (2x) = \cos (x + 2x) + \cos (x - 2x) = \cos (3x) + \cos (x)$
-
-- **Solution:** $2 \cos (3x) \sin (3x) = \sin (6x)$
-
-- **Solution:** $2 \cos (x) \sin (3x) = \sin (x + 3x) - \sin (x - 3x) = \sin (4x).+ \sin (2x)$
-
-- **Used 2018**
+<1>3. Reduce the triple product.
+::: proof
+Since
+\[
+2\cos x\cos(2x)=\cos(3x)+\cos x,
+\]
+we have
+\[
+\begin{aligned}
+4\cos x\cos(2x)\sin(3x)
+&=2\sin(3x)\bigl(\cos(3x)+\cos x\bigr)\\
+&=\sin(6x)+\sin(4x)+\sin(2x).
+\end{aligned}
+\]
+Thus
+\[
+\boxed{\int4\cos x\cos(2x)\sin(3x)\,dx
+=-\frac16\cos(6x)-\frac14\cos(4x)-\frac12\cos(2x)+C.}
+\]
+:::
 :::
