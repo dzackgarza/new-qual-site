@@ -61,9 +61,13 @@ $H_4(X) \cong \widetilde H_3(M) = \ZZ$ (homology sphere).
 <1>1–<1>6.
 :::
 
-<1>8. $X$ is a simply connected CW complex, so it is homotopy equivalent to $S^4$.
+<1>8. $X$ is homotopy equivalent to $S^4$.
 ::: {.proof}
-by the Hurewicz theorem, $\pi_4(X) \cong H_4(X) = \ZZ$; a generator $S^4 \to X$ induces an isomorphism on all homology groups, hence (Whitehead's theorem) is a homotopy equivalence.
+The suspension of the closed $3$-manifold $M$ has CW type, and <1>1 shows it is simply connected. The degree-$2$ Hurewicz theorem gives $\pi_2(X)\cong H_2(X)=0$. Thus $X$ is $2$-connected, so Hurewicz in degree $3$ gives $\pi_3(X)\cong H_3(X)=0$. Hence $X$ is $3$-connected, and Hurewicz now gives an isomorphism
+$$
+\pi_4(X)\xrightarrow{\cong}H_4(X)\cong\ZZ.
+$$
+Choose $f:S^4\to X$ representing a class mapping to a generator of $H_4(X)$. Then $f_*$ is an isomorphism on $H_4$; it is also an isomorphism on $H_0$, and all homology groups in degrees $1,2,3$ and above $4$ vanish on both spaces. Thus $f$ is a homology equivalence between simply connected CW complexes. The homological Whitehead theorem therefore implies that $f$ is a homotopy equivalence.
 :::
 
 <1>9. Q.E.D.

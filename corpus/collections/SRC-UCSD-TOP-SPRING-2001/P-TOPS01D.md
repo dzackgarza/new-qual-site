@@ -39,23 +39,18 @@ Hurewicz theorem (the first nonzero homotopy group is isomorphic to the first no
 the wedge is the coproduct, so two maps out of $S^2$ give a map out of the wedge.
 :::
 
-<1>4. $f$ induces an isomorphism on $H_2$, and is the zero map on $H_0$, $H_1$, and $H_{\ge 3}$.
+<1>4. $f$ induces an isomorphism on every homology group.
 ::: {.proof}
-$H_2(S^2 \vee S^2) = \ZZ^2$ and $f$ sends the two generators to the basis $f_1, f_2$; $H_1 = 0$ on both sides (both simply connected), and $H_{\ge 3} = 0$ on both sides.
+On $H_2$, the two sphere generators map to the chosen basis of $H_2(X)\cong\ZZ^2$, so $f_*$ is an isomorphism. Both spaces are path connected, hence $f_*:H_0(S^2\vee S^2)\to H_0(X)$ is the canonical isomorphism $\ZZ\to\ZZ$. Both $H_1$ groups vanish because the spaces are simply connected, and all homology groups in degrees at least $3$ vanish by hypothesis and by the homology of $S^2\vee S^2$.
 :::
 
-<1>5. Hence $f$ induces an isomorphism on all homology groups.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. Both $X$ and $S^2 \vee S^2$ are simply connected CW complexes, so by Whitehead's theorem $f$ is a homotopy equivalence.
+<1>5. Both $X$ and $S^2 \vee S^2$ are simply connected CW complexes, so by Whitehead's theorem $f$ is a homotopy equivalence.
 ::: {.proof}
 a map between simply connected CW complexes inducing an isomorphism on all homology groups is a homotopy equivalence.
 :::
 
-<1>7. Q.E.D.
+<1>6. Q.E.D.
 ::: {.proof}
-<1>6.
+<1>5.
 :::
 :::

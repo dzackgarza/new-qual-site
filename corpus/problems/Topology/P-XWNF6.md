@@ -47,3 +47,23 @@ Now we have all we need - let $X = S^2 - \theset{p_1, p_2}$ and $Y = S^3 - \thes
 Then by the previous problems, $X \homotopic S^1$ and $Y \homotopic S^2$, so if $S^2 \cong S^3$ then $X \homotopic Y$ and $S^1 \homotopic S^2$.
 But $\pi_1(S^1) = \ZZ$ and $\pi_1(S^2) = 0$, so $S^1 \not\simeq S^2$, a contradiction.
 :::
+
+::: {.solution}
+<1>1. For $n\ge1$,
+$$\boxed{\pi_1\left(\bigvee_{i=1}^nS^1\right)\cong F_n.}$$
+::: {.proof}
+Apply van Kampen inductively: adjoining one circle at the common basepoint takes the free product with $\pi_1(S^1)=\mathbb Z$.
+:::
+
+<1>2. If $F_n\cong F_m$, then $n=m$.
+::: {.proof}
+Abelianization gives $\mathbb Z^n\cong\mathbb Z^m$, forcing equal ranks.
+:::
+
+<1>3. In particular $S^2$ and $S^3$ are not homeomorphic.
+::: {.proof}
+Removing two points from a sphere preserves homeomorphism type under any hypothetical homeomorphism. But
+$$S^2\setminus\{p,q\}\simeq S^1,\qquad S^3\setminus\{p',q'\}\simeq S^2.$$
+Their fundamental groups are $\mathbb Z$ and $0$, so the punctured spaces are not homotopy equivalent, hence cannot be homeomorphic.
+:::
+:::

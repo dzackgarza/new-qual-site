@@ -38,3 +38,7 @@ Relevant covers:
 
 5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then: ![1512966232873](../../assets/Topology/650_UCSD_Qual_Questions/Quals/assets/1512966232873.png)
 :::
+
+::: {.solution}
+This card is a list of subgroup generators paired with five missing covering diagrams, not a complete standalone question. The subgroup words are meaningful, but the requested correspondence with “Relevant covers” depends on the absent images. Any assignment of those subgroups to numbered covers without the diagrams would invent source data.
+:::

@@ -80,13 +80,17 @@ $e^{2\pi i \sin t}$ winds once counterclockwise.
 ::: {.proof}
 the argument decreases from $2\pi$ to $0$.
 :::
-<2>3. The same pattern repeats on $[\pi, 2\pi]$, so $f \circ \alpha \simeq \alpha \cdot \bar\alpha \cdot \alpha \cdot \bar\alpha$.
+<2>3. On $[\pi,3\pi/2]$, $\sin t$ decreases from $0$ to $-1$, so the image again winds once clockwise; on $[3\pi/2,2\pi]$, $\sin t$ increases from $-1$ to $0$, so the image winds once counterclockwise. Thus the four quadrants contribute winding numbers $+1,-1,-1,+1$.
 ::: {.proof}
-the four quadrants give $\alpha, \bar\alpha, \alpha, \bar\alpha$ in order.
+The argument $2\pi\sin t$ changes respectively by $+2\pi,-2\pi,-2\pi,+2\pi$ on the four quarter-intervals.
 :::
-<2>4. $\alpha \cdot \bar\alpha \cdot \alpha \cdot \bar\alpha$ is null-homotopic.
+<2>4. Hence the total winding number is
+$$
+1-1-1+1=0,
+$$
+so $f\circ\alpha$ is null-homotopic.
 ::: {.proof}
-$\alpha \cdot \bar\alpha \simeq \text{const}$, so the whole product is null-homotopic.
+Homotopy classes of loops in $S^1$ are classified by winding number.
 :::
 <2>5. Hence $f_*([\alpha]) = 0$, so $f_*(a) = 0$ for all $a$.
 ::: {.proof}

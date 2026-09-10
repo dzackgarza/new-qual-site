@@ -50,7 +50,15 @@ $(-x,-y,z) = (x,y,z)$ iff $x = y = 0$.
 :::
 <2>2. The quotient $S^2/\ZZ_2$ is homeomorphic to $S^2$.
 ::: {.proof}
-the action is a rotation by $\pi$ about the $z$-axis; the quotient of $S^2$ by this rotation is again $S^2$ (the map $(x,y,z) \mapsto (x^2 - y^2, 2xy, z)$ realizes the quotient).
+Write a point of $S^2$ as $(re^{i\theta},z)\in\CC\times\RR$ with $r^2+z^2=1$. The action sends $(re^{i\theta},z)$ to $(re^{i(\theta+\pi)},z)$. Define
+$$
+Q(re^{i\theta},z)=(re^{2i\theta},z).
+$$
+At the poles $r=0$ this is independent of $\theta$, and the formula is continuous there because the horizontal coordinate has norm $r$. It is constant exactly on the two-point orbits of the rotation away from the poles and fixes each pole. Hence it factors through a continuous bijection
+$$
+\overline Q:S^2/\ZZ_2\longrightarrow S^2.
+$$
+The domain is compact and the target Hausdorff, so $\overline Q$ is a homeomorphism.
 :::
 <2>3. Therefore $\pi_1(S^2/\ZZ_2) = \pi_1(S^2) = 0$.
 ::: {.proof}

@@ -23,3 +23,26 @@ But $\norm{x} = 0$ iff $x =0$, which would imply $tf(x) +(1-t)g(x) = 0$ and so $
 Taking norms and observing that since $f,g \in S^n \implies \norm{f} = \norm{g} = 1$, this forces $t = 1-t$ and thus $t=1/2$.
 But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we assumed was not the case.
 :::
+
+::: {.solution}
+<1>1. Let $P(v)=v/\|v\|$ for $v\ne0$ and define
+$$H(x,t)=P(tf(x)+(1-t)g(x)).$$
+::: {.proof}
+We need only verify that the vector being normalized is never zero.
+:::
+
+<1>2. If $tf(x)+(1-t)g(x)=0$, taking norms gives $t=1-t$, hence $t=1/2$.
+::: {.proof}
+Both $f(x)$ and $g(x)$ have norm $1$, so $t\|f(x)\|=(1-t)\|g(x)\|$.
+:::
+
+<1>3. At $t=1/2$, the equality would imply $f(x)=-g(x)$, contrary to hypothesis.
+::: {.proof}
+Multiply the zero equation by $2$.
+:::
+
+<1>4. Therefore $H$ is well-defined and continuous, with $H(x,0)=g(x)$ and $H(x,1)=f(x)$. Thus $f\simeq g$.
+::: {.proof}
+At the endpoints normalization does nothing because $f(x),g(x)\in S^n$.
+:::
+:::

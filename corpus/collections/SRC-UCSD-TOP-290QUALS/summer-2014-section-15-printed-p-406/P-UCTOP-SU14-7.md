@@ -19,43 +19,51 @@ audit:
 Suppose $f : M \to N$ is a map between two closed connected oriented $n$-manifolds which induces an isomorphism $H_*(M) \cong H_*(N)$ (that is, it is a map of degree $\pm 1$). Prove that the induced map $\pi_1(M) \to \pi_1(N)$ must be surjective.
 
 ::: {.solution}
-**Goal.** For a degree $\pm 1$ map $f: M \to N$ between closed connected oriented $n$-manifolds, show $f_*: \pi_1(M) \to \pi_1(N)$ is surjective.
+**Goal.** Let $f:M\to N$ have degree $\pm1$, where $M,N$ are closed connected oriented $n$-manifolds. Prove that $f_*:\pi_1(M)\to\pi_1(N)$ is surjective.
 
-<1>1. $f$ induces an isomorphism $H_1(M;\ZZ) \to H_1(N;\ZZ)$.
-<2>1. $f$ induces an isomorphism on all homology groups (degree $\pm 1$).
+<1>1. Let
+$$H=f_*(\pi_1(M))\le \pi_1(N),$$
+and let $p:\widehat N\to N$ be the connected covering corresponding to $H$.
 ::: {.proof}
-by hypothesis, $f_*: H_*(M) \to H_*(N)$ is an isomorphism.
-:::
-<2>2. In particular $f_*: H_1(M;\ZZ) \to H_1(N;\ZZ)$ is an isomorphism.
-::: {.proof}
-the degree-$1$ case of <1>1.1.
+Closed manifolds are locally path connected and semilocally simply connected, so the subgroup-covering correspondence applies after choosing compatible basepoints.
 :::
 
-<1>2. $H_1(X;\ZZ) \cong \pi_1(X)^{\mathrm{ab}}$ for any path-connected space $X$.
+<1>2. The map $f$ lifts to a map $\widehat f:M\to\widehat N$ satisfying $f=p\circ\widehat f$.
 ::: {.proof}
-the Hurewicz theorem identifies $H_1$ with the abelianization of $\pi_1$.
+The covering-space lifting criterion applies because
+$$f_*(\pi_1(M))=H=p_*(\pi_1(\widehat N)).$$
 :::
 
-<1>3. Hence $f_*: \pi_1(M)^{\mathrm{ab}} \to \pi_1(N)^{\mathrm{ab}}$ is an isomorphism.
+<1>3. The covering $p$ cannot have infinitely many sheets.
 ::: {.proof}
-<1>1.2 and <1>2.
+If it had infinitely many sheets, then $\widehat N$ would be a connected noncompact $n$-manifold: an infinite-sheeted cover of the compact manifold $N$ cannot itself be compact. A connected noncompact $n$-manifold has $H_n(\widehat N;\mathbb Z)=0$. Hence
+$$
+\widehat f_*[M]=0,
+$$
+so
+$$
+f_*[M]=p_*\widehat f_*[M]=0,
+$$
+which says $\deg f=0$, contradicting $\deg f=\pm1$.
 :::
 
-<1>4. $f_*: \pi_1(M) \to \pi_1(N)$ is surjective.
-<2>1. Suppose $f_*(\pi_1(M))$ is a proper subgroup of $\pi_1(N)$.
+<1>4. Let $d=[\pi_1(N):H]$ be the finite number of sheets of $p$. Then
+$$\deg f=d\,\deg\widehat f.$$
 ::: {.proof}
-assume for contradiction.
-:::
-<2>2. Then the induced map on abelianizations $f_*^{\mathrm{ab}}: \pi_1(M)^{\mathrm{ab}} \to \pi_1(N)^{\mathrm{ab}}$ is not surjective.
-::: {.proof}
-if $H \le G$ is a proper subgroup, then $H^{\mathrm{ab}} \to G^{\mathrm{ab}}$ is not surjective (the abelianization of a proper subgroup maps to a proper subgroup of the abelianization — more precisely, if $f_*(\pi_1(M))$ is proper, its image in $\pi_1(N)^{\mathrm{ab}}$ is a proper subgroup, since a subgroup whose abelianization surjects onto $G^{\mathrm{ab}}$ must be all of $G$). <2>3. This contradicts <1>3 (which says $f_*^{\mathrm{ab}}$ is an isomorphism, hence surjective).
-:::
-::: {.proof}
-contradiction.
+The orientation of $N$ lifts to $\widehat N$, and a connected $d$-sheeted covering of oriented closed manifolds has degree $d$. Since $f=p\circ\widehat f$, multiplicativity of degree gives
+$$
+\deg f=(\deg p)(\deg\widehat f)=d\,\deg\widehat f.
+$$
 :::
 
-<1>5. Q.E.D.
+<1>5. Since $|\deg f|=1$, one has $d=1$.
 ::: {.proof}
-<1>4 shows $f_*$ is surjective.
+The integer $d\ge1$ divides $\deg f=\pm1$ by <1>4, hence $d=1$.
+:::
+
+<1>6. Therefore $H=\pi_1(N)$, so
+$$\boxed{f_*:\pi_1(M)\twoheadrightarrow\pi_1(N).}$$
+::: {.proof}
+A subgroup has index $1$ exactly when it is the whole group. By definition $H=f_*(\pi_1(M))$.
 :::
 :::

@@ -47,3 +47,7 @@ With all of this information, we finally have
 
 And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
 :::
+
+::: {.solution}
+This card is a solution fragment rather than a posed problem: it contains an in-progress Mayer--Vietoris calculation of $H_*(\mathbb{RP}^2)$ and no question to answer. The canonical computation belongs with the full problem from which this prose was split; treating the fragment as a new exercise would duplicate and distort the source.
+:::
