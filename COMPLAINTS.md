@@ -64,6 +64,13 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### Repository-wide card validation is blocked by an unrelated unregistered Duke institution
+
+- **Object and need:** repository-wide `just check`; the complex-analysis stream needs a clean global schema/registry validation after its card repairs.
+- **Observed evidence:** on 2026-09-10, `just check` completed with exactly one reported error: `corpus/collections/SRC-DUKE-BASIC-ANALYSIS-WINTER-2014/index.md` has `institution: duke`, but `duke` is not registered. `git diff main...HEAD --` for that file is empty, so this stream did not introduce the failure.
+- **Impact:** the global validator exits nonzero even though it reports no complex-analysis error, preventing a green repository-wide validation result for this branch.
+- **Repair:** the owning real-analysis/source-metadata stream should either register the Duke institution or use the repository's canonical existing institution key, then rerun `just check`.
+
 ### Primary local repository connector can silently become unavailable
 
 - **Object and need:** local-repository work through the Chat On Steroids connector; repository reads and terminal commands should remain available while a scoped authoring stream is active.
