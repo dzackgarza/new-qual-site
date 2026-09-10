@@ -68,14 +68,6 @@ of public mathematical remarks.
 - **Impact and owner:** the omitted polar Cauchy--Riemann setup is recoverable, but the final source claim still requires correction before the full exercise can receive a source-faithful proof.
 - **Repair:** correct the source-level final clause to the intended nonextendability statement (for example, nonexistence of a continuous extension to $\CC^\times$) before authoring the complete proof.
 
-### P-V4OZH omits the value range for b and has a denominator typo
-
-- **Object and need:** `P-V4OZH` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card defines a product intended to be a finite Blaschke product and asks to prove that $f(z)=b$ has exactly $n$ solutions in the unit disk.
-- **Observed evidence:** the first factor is written with denominator $1-\bar a_q z$ rather than $1-\bar a_1 z$, so the displayed definition contains an undefined index $q$. More importantly, no condition on $b$ is stated. For example, if all $a_k=0$, then $f(z)=z^n$; for $|b|>1$ the equation $z^n=b$ has no solution in $\mathbb D$, contradicting the claimed conclusion.
-- **Impact and owner:** the intended theorem is valid for a finite Blaschke product and $|b|<1$, counting multiplicity, but neither the correct first denominator nor the hypothesis on $b$ is present in the local statement.
-- **Uncertainty:** both defects are explicit in the card. The unsorted collection provides no independent provenance from which to restore the intended wording.
-- **Repair:** recover the originating source and restore the first denominator and the required hypothesis on $b$ before attaching a proof.
-
 ### P-QGCXS has an unresolved statement transcription defect
 
 - **Object and need:** `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS` should state a complete mathematical problem before solution authorship.
