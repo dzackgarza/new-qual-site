@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually verified Fall 2010 problem 1 on PDF page 26, after the May 2011 paper ends on page 25. The complete P-JHUMAY11ANI transcription states this same problem; its erroneous May 2011 appearance and duplicate card were merged into this correctly attributed card."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Read both complete proofs. The retained proof contains their common stronger weighted Fatou conclusion and additionally proves the required almost-everywhere subsequence by Tonelli."
 ---
 
 ::: {.problem}
@@ -55,7 +63,7 @@ and apply Tonelli to
 \[
 \sum_{k=1}^\infty |f_{j_k}-f|^2.
 \]
-Its integral is finite, so the series is finite almost everywhere; hence its terms tend to zero almost everywhere.
+Its integral is finite, so the series is finite almost everywhere; hence its terms tend to zero almost everywhere [@Fol13].
 :::
 
 <1>2. Apply Fatou's lemma with the Gaussian weight.
@@ -66,7 +74,7 @@ e^{100|x|^2}|f_{j_k}(x)|^2
 \longrightarrow
 e^{100|x|^2}|f(x)|^2.
 \]
-These functions are nonnegative, so Fatou's lemma gives
+These functions are nonnegative, so Fatou's lemma gives [@Fol13]
 \[
 \int_{\mathbb R^n} e^{100|x|^2}|f(x)|^2\,dx
 \le
