@@ -46,7 +46,7 @@ $A_n\triangleleft S_n$ and has index two. Let
 $$
 \tau=(12),\qquad H=\langle\tau\rangle=\{1,\tau\}.
 $$
-Then $|H|=2$. Since $	au$ is odd while every element of $A_n$ is even,
+Then $|H|=2$. Since the transposition $(12)$ is odd while every element of $A_n$ is even,
 $$
 A_n\cap H=\{1\}.
 $$
