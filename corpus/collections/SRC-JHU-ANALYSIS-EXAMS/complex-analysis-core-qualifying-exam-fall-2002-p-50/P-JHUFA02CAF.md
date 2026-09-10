@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAF
 kind: problem
-title: "A holomorphic function on an annulus need not extend, but extends meromorphically"
+title: Failure of holomorphic and meromorphic extension from an annulus
 classification:
   areas:
   - complex-analysis
@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Used 1/z for failure of holomorphic extension and e^(1/z) for failure of meromorphic extension, with identity-theorem arguments ruling out alternative extensions."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Verified both counterexamples and corrected the title, which asserted meromorphic extendibility despite the second part's counterexample."
 ---
 
 1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < | z | < 3 \}$ , then f extends holomorphically to the disc $\{ z : | z | < 3 \}$
@@ -42,7 +46,7 @@ f(z)=\frac1z
 $$
 is holomorphic on the annulus $1<|z|<3$. Suppose it had a holomorphic extension
 $F$ to the disk $|z|<3$. On the annulus one would have $zF(z)=1$. Since both
-sides are holomorphic on the whole disk, the identity theorem would imply
+sides are holomorphic on the whole disk, the identity theorem [@SS03] would imply
 $$
 zF(z)=1
 $$
@@ -59,7 +63,7 @@ $$
 is holomorphic on $1<|z|<3$. Suppose there were a meromorphic function $F$ on
 $|z|<3$ agreeing with $f$ on that annulus. On the punctured disk
 $0<|z|<3$, both $F$ and $e^{1/z}$ are meromorphic, and they agree on the
-nonempty open subset $1<|z|<3$. The identity theorem for meromorphic functions
+nonempty open subset $1<|z|<3$. The identity theorem for meromorphic functions [@SS03]
 therefore gives
 $$
 F(z)=e^{1/z}\qquad(0<|z|<3).
