@@ -9,78 +9,148 @@ classification:
   topics:
   - Hilbert Spaces
   - L²
-relations: []
+relations:
+- kind: related-to
+  target: P-XKFPD
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Replaced incomplete legacy partial solutions with a complete proof of all three parts, cross-checked against the equivalent reviewed card P-XKFPD.
 ---
 
-\label{hilbert_space_exam_question}
+::: problem
+Let $(u_n)_{n=1}^\infty$ be an orthonormal sequence in a Hilbert space $H$.
 
-Let $\theset{u_n}_{n=1}^\infty$ be an orthonormal sequence in a Hilbert space $H$.
-
-a. Let $x\in H$ and verify that 
+(a) For $x\in H$, prove that for every $N$,
 \[
-\left\|x-\sum_{n=1}^{N}\left\langle x, u_{n}\right\rangle u_{n}\right\|_H^{2} =
-\|x\|_H^{2}-\sum_{n=1}^{N}\left|\left\langle x, u_{n}\right\rangle\right|^{2}
-.\]
-for any $N\in \NN$ and deduce that
-\[
-\sum_{n=1}^{\infty}\left|\left\langle x, u_{n}\right\rangle\right|^{2} \leq\|x\|_H^{2}
-.\]
-
-b. Let $\theset{a_n}_{n\in \NN} \in \ell^2(\NN)$ and prove that there exists an $x\in H$ such that $a_n = \inner{x}{u_n}$ for all $n\in \NN$, and moreover $x$ may be chosen such that 
-\[
-\norm{x}_H = \qty{ \sum_{n\in \NN} \abs{a_n}^2}^{1\over 2}
-.\]
-
-c. Prove that if $\theset{u_n}$ is *complete*, Bessel's inequality becomes an equality.
-
-:::{.solution title="part b"}
-\envlist
-
-- Take $\theset{a_n} \in \ell^2$, then note that $\sum \abs{a_n}^2 < \infty \implies$ the tails vanish.
-
-- Define $x \definedas \displaystyle\lim_{N\to\infty} S_N$ where $S_N = \sum_{k=1}^N a_k u_k$
-
-- $\theset{S_N}$ is Cauchy and $H$ is complete, so $x\in H$.
-
-- By construction, 
-\[
-\inner{x}{u_n} = \inner{\sum_k a_k u_k}{u_n} = \sum_k a_k \inner{u_k}{u_n} = a_n 
+\left\|x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n\right\|_H^2
+=
+\|x\|_H^2-
+\sum_{n=1}^{N}|\langle x,u_n\rangle|^2,
 \]
-since the $u_k$ are all orthogonal.
-
-- By Pythagoras since the $u_k$ are normal,
+and deduce Bessel's inequality
 \[
-\norm{x}^2 = \norm{\sum_k a_k u_k}^2 = \sum_k \norm{a_k u_k}^2 = \sum_k \abs{a_k}^2
-.\]
+\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le \|x\|_H^2.
+\]
 
+(b) If $(a_n)\in\ell^2(\mathbb N)$, prove that there is $x\in H$ such that
+\[
+\langle x,u_n\rangle=a_n
+\quad\text{for every }n,
+\]
+and $x$ may be chosen so that
+\[
+\|x\|_H=\left(\sum_{n=1}^{\infty}|a_n|^2\right)^{1/2}.
+\]
+
+(c) Prove that if $(u_n)$ is complete, then Bessel's inequality is an equality.
 :::
 
-:::{.solution title="part c"}
-Let $x$ and $u_n$ be arbitrary. 
-
+::: solution
+<1>1. Prove the finite orthogonal-projection identity and Bessel's inequality.
+::: proof
+Set
 \[
-\inner{x - \sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n}
-&=
-\inner{x}{u_n}
-\inner{\sum_{k=1}^\infty \inner{x}{u_k}u_k }{u_n} \\
-&=
-\inner{x}{u_n}
-\sum_{k=1}^\infty  \inner{\inner{x}{u_k}u_k }{u_n} \\
-&=
-\inner{x}{u_n}
-\sum_{k=1}^\infty  \inner{x}{u_k} \inner{u_k }{u_n} \\
-&= \inner{x}{u_n} - \inner{x}{u_n} = 0 \\
-\implies 
-x - \sum_{k=1}^\infty \inner{x}{u_k}u_k &= 0 \quad\text{by completeness}
-.\]
-
-So 
+s_N:=\sum_{n=1}^N\langle x,u_n\rangle u_n.
+\]
+For each $1\le k\le N$,
 \[
-x = \sum_{k=1}^\infty \inner{x}{u_k} u_k
-\implies
-\norm{x}^2 = \sum_{k=1}^\infty \abs{\inner{x}{u_k}}^2. \qed
-.\]
+\langle x-s_N,u_k\rangle
+=
+\langle x,u_k\rangle-
+\sum_{n=1}^N\langle x,u_n\rangle\langle u_n,u_k\rangle
+=0.
+\]
+Thus $x-s_N$ is orthogonal to $s_N$. By Pythagoras,
+\[
+\|x\|^2
+=
+\|x-s_N\|^2+\|s_N\|^2.
+\]
+Since the $u_n$ are orthonormal,
+\[
+\|s_N\|^2
+=
+\sum_{n=1}^N|\langle x,u_n\rangle|^2.
+\]
+Therefore
+\[
+\left\|x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n\right\|^2
+=
+\|x\|^2-
+\sum_{n=1}^{N}|\langle x,u_n\rangle|^2.
+\]
+The left side is nonnegative, so
+\[
+\sum_{n=1}^{N}|\langle x,u_n\rangle|^2\le\|x\|^2
+\]
+for every $N$. Letting $N\to\infty$ gives
+\[
+\boxed{
+\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\|x\|^2.}
+\]
+:::
 
+<1>2. Reconstruct a vector from square-summable coefficients.
+::: proof
+Let $(a_n)\in\ell^2$ and define
+\[
+S_N:=\sum_{n=1}^N a_nu_n.
+\]
+For $M>N$, orthonormality gives
+\[
+\|S_M-S_N\|^2
+=
+\sum_{n=N+1}^M|a_n|^2.
+\]
+Since $(a_n)\in\ell^2$, the right side tends to $0$ as $M,N\to\infty$. Hence $(S_N)$ is Cauchy. Completeness of $H$ gives some $x\in H$ with
+\[
+S_N\to x.
+\]
+For each fixed $k$, continuity of the inner product yields
+\[
+\langle x,u_k\rangle
+=
+\lim_{N\to\infty}\langle S_N,u_k\rangle
+=a_k.
+\]
+Also
+\[
+\|x\|^2
+=
+\lim_{N\to\infty}\|S_N\|^2
+=
+\sum_{n=1}^{\infty}|a_n|^2.
+\]
+Thus $x$ has the required coefficients and norm.
+:::
 
+<1>3. Prove Parseval's identity when the orthonormal sequence is complete.
+::: proof
+Fix $x\in H$. By Bessel's inequality, the coefficient sequence
+\[
+a_n:=\langle x,u_n\rangle
+\]
+belongs to $\ell^2$. By Step 2, the series
+\[
+s:=\sum_{n=1}^{\infty}a_nu_n
+\]
+converges in $H$. For every $k$,
+\[
+\langle x-s,u_k\rangle
+=
+a_k-a_k=0.
+\]
+Thus $x-s$ is orthogonal to every $u_k$. Completeness of the orthonormal sequence means that the only vector orthogonal to every $u_k$ is $0$, so $x=s$. Therefore Step 2 gives
+\[
+\boxed{
+\|x\|^2=
+\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2.}
+\]
+:::
 :::
