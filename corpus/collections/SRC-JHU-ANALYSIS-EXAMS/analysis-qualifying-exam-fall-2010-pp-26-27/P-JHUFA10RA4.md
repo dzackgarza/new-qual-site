@@ -35,7 +35,7 @@ Show that if $f \in L^2$ satisfies $Uf = \lambda f$, for some $\lambda \in \math
 Suppose
 \[
 Uf=\lambda f,
-\qquad	ext{that is,}\qquad
+\qquad\text{that is,}\qquad
 f(x-1)=\lambda f(x)
 \quad\text{a.e.}
 \]

@@ -40,13 +40,13 @@ The identity
 \[
 i:(X,d)\to(X,\bar d)
 \]
-is uniformly continuous because \(ar d\le d\): given \(arepsilon>0\), take \(\delta=arepsilon\).
+is uniformly continuous because \(\bar d\le d\): given \(\varepsilon>0\), take \(\delta=\varepsilon\).
 
-For the inverse identity, given \(arepsilon>0\), choose
+For the inverse identity, given \(\varepsilon>0\), choose
 \[
 \delta=\tfrac12\min\{\varepsilon,1\}.
 \]
-If \(ar d(x,y)<\delta<1\), then necessarily \(d(x,y)<1\), so \(ar d(x,y)=d(x,y)<\delta\learepsilon\). Thus the inverse identity is uniformly continuous. Hence \(d\) and \(ar d\) are metrically equivalent.
+If \(\bar d(x,y)<\delta<1\), then necessarily \(d(x,y)<1\), so \(\bar d(x,y)=d(x,y)<\delta\le\varepsilon\). Thus the inverse identity is uniformly continuous. Hence \(d\) and \(\bar d\) are metrically equivalent.
 
 (b) Suppose \(d\) and \(d'\) are metrically equivalent. A uniformly continuous map sends Cauchy sequences to Cauchy sequences. Since both identity maps
 \[

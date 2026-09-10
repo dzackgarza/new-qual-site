@@ -19,7 +19,7 @@ Show that $[0, 1]^\omega$ is not locally compact in the uniform topology.
 :::
 
 ::: {.solution}
-Let \(X=[0,1]^\omega\) with the uniform topology. Suppose \(X\) were locally compact at some point \(x\). Then there would be a neighborhood \(V\) of \(x\) with compact closure. Choose \(arepsilon>0\) such that
+Let \(X=[0,1]^\omega\) with the uniform topology. Suppose \(X\) were locally compact at some point \(x\). Then there would be a neighborhood \(V\) of \(x\) with compact closure. Choose \(\varepsilon>0\) such that
 \[
 B(x,\varepsilon)\subset V.
 \]

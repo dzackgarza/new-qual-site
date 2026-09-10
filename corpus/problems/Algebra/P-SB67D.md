@@ -42,11 +42,11 @@ t^p-1=(t-1)\Phi_p(t),
 \]
 we have $(t^p-1)\subseteq(\Phi_p(t))$. Therefore evaluation factors through
 \[
-ar{\operatorname{ev}}_{\zeta_p}:\ZZ[t]/(t^p-1)\longrightarrow\ZZ[\zeta_p].
+\bar{\operatorname{ev}}_{\zeta_p}:\ZZ[t]/(t^p-1)\longrightarrow\ZZ[\zeta_p].
 \]
 Its kernel is
 \[
-rac{(\Phi_p(t))}{(t^p-1)},
+\frac{(\Phi_p(t))}{(t^p-1)},
 \]
 which is nonzero: the class of $\Phi_p(t)$ is not zero modulo $(t^p-1)$ because $\deg\Phi_p=p-1<p$.
 

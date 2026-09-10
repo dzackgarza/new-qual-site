@@ -32,7 +32,7 @@ of \(X\) by open sets with compact closures. Put
 \[
 K_n=\overline{U_1}\cup\cdots\cup\overline{U_n}.
 \]
-Then each \(K_n\) is compact and \(K_n\subset K_{n+1}\), while \(igcup_nK_n=X\). If \(K\subset X\) is compact, the open cover \(\{U_n\}\) of \(K\) has a finite subcover, hence \(K\subset K_N\) for some \(N\). Therefore the neighborhoods
+Then each \(K_n\) is compact and \(K_n\subset K_{n+1}\), while \(\bigcup_nK_n=X\). If \(K\subset X\) is compact, the open cover \(\{U_n\}\) of \(K\) has a finite subcover, hence \(K\subset K_N\) for some \(N\). Therefore the neighborhoods
 \[
 Y\setminus K_n
 \]

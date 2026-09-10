@@ -74,10 +74,10 @@ and combine it with $\sigma_i$.
 Because the two domains are disjoint and the two images are disjoint, the result is a permutation of $V$ extending $\sigma_i$.
 :::
 
-<1>4. Form a graph $Z$ with vertex set $V$ by retaining every edge of $Y$ and, for every $v\in V\setminus D_i$, adding one oriented $a_i$-edge from $v$ to $ar\sigma_i(v)$.
+<1>4. Form a graph $Z$ with vertex set $V$ by retaining every edge of $Y$ and, for every $v\in V\setminus D_i$, adding one oriented $a_i$-edge from $v$ to $\bar\sigma_i(v)$.
 Then $Y\subseteq Z$ and $Z$ has exactly the same vertices as $Y$.
 ::: {.proof}
-For $v\in D_i$, the edge prescribed by $ar\sigma_i$ is precisely the existing edge of $Y$, since $ar\sigma_i$ extends $\sigma_i$.
+For $v\in D_i$, the edge prescribed by $\bar\sigma_i$ is precisely the existing edge of $Y$, since $\bar\sigma_i$ extends $\sigma_i$.
 For the missing initial vertices we add exactly the missing edges.
 No new vertices are introduced.
 :::
@@ -88,8 +88,8 @@ Z\longrightarrow X
 \]
 is a finite-sheeted covering map.
 ::: {.proof}
-For each vertex $v\in V$ and each $i$, there is exactly one outgoing $a_i$-edge, namely the edge from $v$ to $ar\sigma_i(v)$.
-Since $ar\sigma_i$ is a permutation, there is also exactly one incoming $a_i$-edge at $v$.
+For each vertex $v\in V$ and each $i$, there is exactly one outgoing $a_i$-edge, namely the edge from $v$ to $\bar\sigma_i(v)$.
+Since $\bar\sigma_i$ is a permutation, there is also exactly one incoming $a_i$-edge at $v$.
 This is precisely the local covering condition at the unique vertex of the rose.
 On edge interiors the map is a homeomorphism to the corresponding open edge of $X$.
 Hence $Z\to X$ is a covering.

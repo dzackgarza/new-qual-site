@@ -38,9 +38,9 @@ G=C_4\oplus C_2,
 \]
 and write elements additively. Define
 \[
-H=\langle(2,0)angle,
+H=\langle(2,0)\rangle,
 \qquad
-K=\langle(0,1)angle.
+K=\langle(0,1)\rangle.
 \]
 Then $H\cong K\cong C_2$.
 ::: {.proof}
@@ -51,7 +51,7 @@ Both displayed generators have order $2$. Since $G$ is abelian, both subgroups a
 ::: {.proof}
 Quotienting the $C_4$ factor by its subgroup of order $2$ gives $C_2$, while the second factor survives unchanged:
 \[
-G/H\cong (C_4/\langle2angle)\oplus C_2\cong C_2\oplus C_2.
+G/H\cong (C_4/\langle2\rangle)\oplus C_2\cong C_2\oplus C_2.
 \]
 :::
 

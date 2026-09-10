@@ -69,6 +69,6 @@ Therefore
 Thus
 \[
 I(\xi)=\frac{2e^{\pi\xi}}{1+e^{2\pi\xi}}
-=rac1{\cosh(\pi\xi)}.
+=\frac1{\cosh(\pi\xi)}.
 \]
 :::

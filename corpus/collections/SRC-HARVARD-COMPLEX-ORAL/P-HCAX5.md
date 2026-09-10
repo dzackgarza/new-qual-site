@@ -54,7 +54,7 @@ together with the Bernoulli expansion for $t/(e^t-1)$ applied after the standard
 To locate the singularities, write $z=x+iy$. If $\cos z=0$, then
 \[
 e^{iz}+e^{-iz}=0,
-\qquad	ext{so}\qquad
+\qquad\text{so}\qquad
 e^{2iz}=-1.
 \]
 Taking absolute values gives $e^{-2y}=1$, hence $y=0$. Therefore

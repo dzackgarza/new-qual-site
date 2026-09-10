@@ -59,7 +59,7 @@ Conversely, if $|\Im z|>\log2$, then one of the two exponentials in $\sin(nz)$ d
 \]
 For example, at $z=-iy$ with $y>\log2$,
 \[
-\frac{|\sin(nz)|}{2^n}=rac{\sinh(ny)}{2^n}\sim\frac12\left(\frac{e^y}{2}\right)^n.
+\frac{|\sin(nz)|}{2^n}=\frac{\sinh(ny)}{2^n}\sim\frac12\left(\frac{e^y}{2}\right)^n.
 \]
 Thus the pointwise convergence region is exactly
 \[

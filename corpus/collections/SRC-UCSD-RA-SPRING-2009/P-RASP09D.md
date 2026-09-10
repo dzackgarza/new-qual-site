@@ -91,7 +91,7 @@ Thus the symmetrized integrand is absolutely integrable near $0$; away from $0$ 
 By Step 2 and dominated convergence,
 \[
 \lim_{\varepsilon\downarrow0}I_\varepsilon(\varphi)
-=rac12\int_{\mathbb R^2}
+=\frac12\int_{\mathbb R^2}
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
 \]
 Therefore the principal value exists for every test function $\varphi$.

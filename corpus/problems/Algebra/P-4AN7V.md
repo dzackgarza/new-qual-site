@@ -61,9 +61,9 @@ A finite direct product of fields is reduced: if $(x_i)^m=0$, then each $x_i^m=0
 
 <1>3. Therefore
 \[
-\ZZ/n\ZZ	ext{ is a direct product of fields}
+\ZZ/n\ZZ\text{ is a direct product of fields}
 \quad\Longleftrightarrow\quad
-n	ext{ is squarefree}.
+n\text{ is squarefree}.
 \]
 ::: {.proof}
 Combine <1>1 and <1>2.

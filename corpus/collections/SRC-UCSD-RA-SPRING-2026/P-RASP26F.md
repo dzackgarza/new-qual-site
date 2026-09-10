@@ -123,7 +123,7 @@ has compact closure and therefore admits a finite $\varepsilon/2$-net in $L^2$.
 
 For each $k$, choose a point of that finite net within $\varepsilon/2$ of $P_RQ_Rf_k$. Then the same point is within
 \[
-\frac\varepsilon2+rac\varepsilon2=\varepsilon
+\frac\varepsilon2+\frac\varepsilon2=\varepsilon
 \]
 of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\mathbb R^n)$.
 :::

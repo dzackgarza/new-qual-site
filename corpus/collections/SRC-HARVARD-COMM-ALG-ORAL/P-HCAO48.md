@@ -83,8 +83,7 @@ v_{\mathfrak p}((a,b))
 =\min\{v_{\mathfrak p}((a)),v_{\mathfrak p}((b))\}.
 \]
 If \(\mathfrak p\mid(a)\), then by <1>2 this minimum is
-\(v_{\mathfrak p}(I)\). If \(\mathfrak p
-mid(a)\), then
+\(v_{\mathfrak p}(I)\). If \(\mathfrak p\nmid(a)\), then
 \(v_{\mathfrak p}((a))=0\); because \(a\in I\), <1>1 then forces
 \(v_{\mathfrak p}(I)=0\), so the minimum is again \(v_{\mathfrak p}(I)\).
 Thus \((a,b)\) and \(I\) have the same valuation at every nonzero prime ideal.

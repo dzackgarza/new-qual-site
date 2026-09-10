@@ -52,14 +52,14 @@ so
 The parallelogram identity gives
 \[
 \left\|\frac{x_n-x_m}{2}\right\|^2
-=\frac12\|x_n\|^2+rac12\|x_m\|^2
+=\frac12\|x_n\|^2+\frac12\|x_m\|^2
 -\left\|\frac{x_n+x_m}{2}\right\|^2.
 \]
 Therefore
 \[
 \frac14\|x_n-x_m\|^2
 \le
-\frac12\|x_n\|^2+rac12\|x_m\|^2-d^2.
+\frac12\|x_n\|^2+\frac12\|x_m\|^2-d^2.
 \]
 The right-hand side tends to $0$ as $m,n\to\infty$. Hence $(x_n)$ is Cauchy.
 :::

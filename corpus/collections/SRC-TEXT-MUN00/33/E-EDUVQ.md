@@ -24,7 +24,7 @@ The box topology is Hausdorff. To prove complete regularity, let \(A\subset\math
 \[
 U=\prod_{\alpha\in J}(x_\alpha-\varepsilon_\alpha,x_\alpha+\varepsilon_\alpha)
 \]
-of \(x\) disjoint from \(A\), with each \(arepsilon_\alpha>0\). The coordinatewise affine homeomorphism
+of \(x\) disjoint from \(A\), with each \(\varepsilon_\alpha>0\). The coordinatewise affine homeomorphism
 \[
 h(y)_\alpha=\frac{y_\alpha-x_\alpha}{\varepsilon_\alpha}
 \]

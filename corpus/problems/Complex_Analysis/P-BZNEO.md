@@ -25,7 +25,7 @@ Find the principal part of $P/Q$ at $z=a$ in terms of $P$ and $Q$ if $a$ is (1) 
 If $a$ is a simple zero of $Q$, write $Q(z)=(z-a)q(z)$ with
 $q(a)=Q'(a)\ne0$. Then
 \[
-\frac{P(z)}{Q(z)}=rac{P(z)/q(z)}{z-a},
+\frac{P(z)}{Q(z)}=\frac{P(z)/q(z)}{z-a},
 \]
 so the principal part is
 \[

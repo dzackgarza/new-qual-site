@@ -38,7 +38,7 @@ Show by means of an example that $X$ need not be complete.
 \[
 d(x_n,x_N)<\varepsilon/2\qquad(n\ge N).
 \]
-Then the tail of the sequence lies in \(B(x_N,\varepsilon)\), whose closure is compact by hypothesis. Hence the tail has a convergent subsequence \(x_{n_k}\to x\). Since the original sequence is Cauchy, a standard \(arepsilon/2\) argument shows the whole sequence converges to the same \(x\): given \(\eta>0\), choose \(N_1\) so \(d(x_m,x_n)<\eta/2\) for \(m,n\ge N_1\), then choose \(k\) with \(n_k\ge N_1\) and \(d(x_{n_k},x)<\eta/2\). For \(n\ge N_1\),
+Then the tail of the sequence lies in \(B(x_N,\varepsilon)\), whose closure is compact by hypothesis. Hence the tail has a convergent subsequence \(x_{n_k}\to x\). Since the original sequence is Cauchy, a standard \(\varepsilon/2\) argument shows the whole sequence converges to the same \(x\): given \(\eta>0\), choose \(N_1\) so \(d(x_m,x_n)<\eta/2\) for \(m,n\ge N_1\), then choose \(k\) with \(n_k\ge N_1\) and \(d(x_{n_k},x)<\eta/2\). For \(n\ge N_1\),
 \[
 d(x_n,x)<\eta.
 \]

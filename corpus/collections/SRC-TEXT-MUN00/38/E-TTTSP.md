@@ -36,7 +36,7 @@ audit:
 ::: {.solution}
 Write \(S_\Omega=[0,\Omega)\), where \(\Omega\) is the first uncountable ordinal.
 
-(a) We first show that for every \(arepsilon>0\) there is \(\alpha<\Omega\) such that
+(a) We first show that for every \(\varepsilon>0\) there is \(\alpha<\Omega\) such that
 \[
 |f(\beta)-f(\gamma)|<\varepsilon
 \qquad(\beta,\gamma>\alpha).

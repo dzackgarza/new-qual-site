@@ -28,7 +28,7 @@ E_{n,q}
 \]
 Each $E_{n,q}$ is closed in $\mathbb R$, and by hypothesis
 \[
-\mathbb R=igcup_{n\ge0}\bigcup_{q\in\mathbb Q}E_{n,q}.
+\mathbb R=\bigcup_{n\ge0}\bigcup_{q\in\mathbb Q}E_{n,q}.
 \]
 This is a countable union of closed sets. By the Baire category theorem, some
 $E_{n,q}$ has nonempty interior. Hence for some open interval $I\subset\mathbb R$,

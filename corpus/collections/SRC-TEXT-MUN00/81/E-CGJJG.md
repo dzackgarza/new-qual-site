@@ -26,7 +26,7 @@ Write the torus as \(T=\mathbb R^2/\mathbb Z^2\), with coordinates \([x,y]\).
 \[
 \tau[x,y]=[x+1/2,y].
 \]
-Then \(	au^2=1\) and \(	au\) has no fixed points. The quotient identifies the first coordinate modulo \(1/2\), so
+Then \(\tau^2=1\) and \(\tau\) has no fixed points. The quotient identifies the first coordinate modulo \(1/2\), so
 \[
 T/\langle\tau\rangle\cong (\mathbb R/(\tfrac12\mathbb Z))\times(\mathbb R/\mathbb Z)\cong T.
 \]

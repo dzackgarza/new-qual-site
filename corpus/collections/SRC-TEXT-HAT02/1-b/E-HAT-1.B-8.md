@@ -21,7 +21,7 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Used the standard maximal-tree presentation of a graph of groups: finitely many vertex generators and stable letters generate, while finite vertex presentations and finitely generated edge groups give finitely many relations.
+  note: 'Used the standard maximal-tree presentation of a graph of groups: finitely many vertex generators and stable letters generate, while finite vertex presentations and finitely generated edge groups give finitely many relations.'
 ---
 
 Show that a finite graph product of finitely generated groups is finitely generated, and similarly for finitely presented groups.

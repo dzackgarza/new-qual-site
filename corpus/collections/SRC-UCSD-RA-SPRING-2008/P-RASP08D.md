@@ -47,7 +47,7 @@ For $x\in\ell^\infty$,
 \[
 \begin{aligned}
 f_n(\tau x)-f_n(x)
-&=\frac{x(2)+\cdots+x(n+1)}n-rac{x(1)+\cdots+x(n)}n\\
+&=\frac{x(2)+\cdots+x(n+1)}n-\frac{x(1)+\cdots+x(n)}n\\
 &=\frac{x(n+1)-x(1)}n.
 \end{aligned}
 \]

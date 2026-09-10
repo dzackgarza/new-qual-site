@@ -23,7 +23,7 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Computed part (a) from the long exact sequence and part (b) from the source figure: collapsing A gives a wedge of two tori, while collapsing B gives a torus with two points identified.
+  note: 'Computed part (a) from the long exact sequence and part (b) from the source figure: collapsing A gives a wedge of two tori, while collapsing B gives a torus with two points identified.'
 ---
 
 (a) Compute the homology groups $H_n(X, A)$ when $X$ is $S^2$ or $S^1 \times S^1$ and $A$ is a finite set of points in $X$.

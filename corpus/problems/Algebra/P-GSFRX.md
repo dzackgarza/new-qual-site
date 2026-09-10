@@ -27,7 +27,7 @@ Find the characteristic polynomial $\chi_L(x)$ and the minimal polynomial $\mu_L
 :::
 
 ::: solution
-Because $L$ has real entries, nonreal eigenvalues occur in complex-conjugate pairs. Thus from the given eigenvalues $0$, $1+i$, and $1+2i$, we also obtain $1-i$ and $1-2i$. These are five distinct complex eigenvalues of a $5	imes5$ matrix, so each has algebraic multiplicity $1$.
+Because $L$ has real entries, nonreal eigenvalues occur in complex-conjugate pairs. Thus from the given eigenvalues $0$, $1+i$, and $1+2i$, we also obtain $1-i$ and $1-2i$. These are five distinct complex eigenvalues of a $5\times5$ matrix, so each has algebraic multiplicity $1$.
 
 Hence
 \[

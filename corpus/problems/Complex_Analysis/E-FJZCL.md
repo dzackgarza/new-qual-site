@@ -43,7 +43,7 @@ we have the uniform-in-$N$ bound
 Summation by parts gives
 \[
 \sum_{k=1}^N\frac{z^k}{k}
-=rac{A_N}{N}
+=\frac{A_N}{N}
 +\sum_{k=1}^{N-1}A_k\left(\frac1k-\frac1{k+1}\right).
 \]
 The first term tends to $0$, while

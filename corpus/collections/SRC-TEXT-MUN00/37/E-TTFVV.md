@@ -42,7 +42,7 @@ Taking complements,
 \[
 \bigcap_{n=1}^\infty\overline{A_n}=\varnothing,
 \]
-so certainly \(igcap_{n=1}^\infty A_n=\varnothing\), contradicting the countable intersection property. Hence the intersection of all closures is nonempty.
+so certainly \(\bigcap_{n=1}^\infty A_n=\varnothing\), contradicting the countable intersection property. Hence the intersection of all closures is nonempty.
 
 Conversely, assume the stated closure-intersection property, and let
 \[
