@@ -68,26 +68,6 @@ of public mathematical remarks.
 - **Impact and owner:** the omitted polar Cauchy--Riemann setup is recoverable, but the final source claim still requires correction before the full exercise can receive a source-faithful proof.
 - **Repair:** correct the source-level final clause to the intended nonextendability statement (for example, nonexistence of a continuous extension to $\CC^\times$) before authoring the complete proof.
 
-### P-QGCXS has an unresolved statement transcription defect
-
-- **Object and need:** `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS` should state a complete mathematical problem before solution authorship.
-- **Observed evidence:** the card asks for the standard roots-of-unity sine sum, but its final displayed term is written `\cdots \frac{2(n-1)\pi}{n}=0` with the `\sin` missing.
-- **Source verification:** the originating `assets/attachments/8155-starter-problems.pdf` has the same omission in problem 6; `pdftotext -layout` confirms that the final sine term itself is absent in the PDF, not merely in OCR extraction.
-- **Impact and owner:** this is a source-level typo. The intended identity is evident, but source fidelity requires an explicit correction rather than silently inserting the missing `\sin`.
-- **Repair:** correct problem 6 in the source-derived card to insert the final `\sin` and then attach the roots-of-unity proof.
-
-### P-HZ3G4 has the wrong half-plane of convergence
-
-- **Object and need:** `P-HZ3G4` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card asks to prove uniform convergence of $\sum_{n\ge1}\sin(nz)/2^n$ on the full half-plane $\{\Im z<\log 2\}$.
-- **Observed evidence:** take $z=-iy$ with $y>\log 2$. Then $\sin(nz)=-i\sinh(ny)$, so
-  \[
-  \left|\frac{\sin(nz)}{2^n}\right|=\frac{\sinh(ny)}{2^n}\sim \frac12\left(\frac{e^y}{2}\right)^n,
-  \]
-  which does not tend to zero because $e^y/2>1$. Thus the series fails even pointwise on part of the stated region.
-- **Impact and owner:** the card cannot receive the requested proof as written. The correct pointwise and compact-uniform region for the displayed series is the strip $|\Im z|<\log 2$; any source-faithful repair must determine whether a missing lower bound on $\Im z$ was intended.
-- **Source verification:** `assets/attachments/extracted/Azoff Problems by Topic.md` problem 10 reproduces the same half-plane $\{\Im z<\ln2\}$. The bad domain is therefore present in the source material rather than introduced by the standalone-card extraction.
-- **Repair:** correct the source-level convergence domain, most naturally to the strip $|\Im z|<\log2$ (or state compact-uniform convergence there), before attaching a proof.
-
 ### P-DEJGY(b)(ii) omits the second level-set value
 
 - **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
@@ -103,14 +83,6 @@ of public mathematical remarks.
 - **Impact and owner:** the card does not currently state a single well-defined coefficient formula. The intended standard formula is plausibly $c_k=(2\pi i)^{-1}\int_\gamma f(z)(z-z_0)^{-k-1}\,dz$, with radii expressed using the same coefficients, but the unsorted card has no independent source establishing which local symbols were intended.
 - **Uncertainty:** the local inconsistencies are verified; `SRC-UNSORTED-COMPLEX-ANALYSIS` supplies no independent provenance for the card.
 - **Repair:** recover the originating source or notes and normalize all coefficient/index variables from that source before attaching a proof.
-
-### P-6YHN7 is false as written in the unsorted complex-analysis compilation
-
-- **Object and need:** `P-6YHN7`; the card assumes holomorphic maps $f,g:\mathbb D\to\Omega$ with $f$ injective and $f(0)=g(0)$ and asks to prove $g(r\mathbb D)\subseteq f(r\mathbb D)$ for every $0<r<1$.
-- **Observed evidence:** take $\Omega=\mathbb D$, $f(z)=z/2$, and $g(z)=z$. Then $f$ is injective, $f(0)=g(0)=0$, but $g(r\mathbb D)=r\mathbb D$ while $f(r\mathbb D)=(r/2)\mathbb D$, so the claimed inclusion fails for every $r>0$.
-- **Impact and owner:** the statement cannot receive a valid Schwarz-lemma proof as written. A natural valid comparison would require $f$ to be a biholomorphism from $\mathbb D$ onto $\Omega$, so that $f^{-1}\circ g$ is a disk self-map fixing $0$, but that surjectivity hypothesis is absent.
-- **Uncertainty:** the card appears only in `SRC-UNSORTED-COMPLEX-ANALYSIS`; no independent source or erratum has been identified.
-- **Repair:** recover the originating source and restore the intended hypothesis before attaching a solution.
 
 ### P-4Y4QT has an unbound parameter and an incompatible convergence range
 
@@ -160,13 +132,13 @@ of public mathematical remarks.
 - **Uncertainty:** the omission is verified against the official DOCX and the counterexample is decisive. The natural correction is to add $f(0)=0$, but no independent erratum has yet been located.
 - **Repair:** add the missing hypothesis only if supported by an independent source or explicit erratum; otherwise retain the card as a documented source defect rather than attaching a proof to the false statement.
 
-### P-X7WUF and E-YZUOC contain a residue formula missing the factorial normalization
+### P-X7WUF has an unresolved provenance and residue-normalization defect
 
-- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016` and the parallel unsorted card `E-YZUOC`; the residue formula for a pole of order $m$ must include the standard normalization, and the UGA collection provenance should identify the actual source of `P-X7WUF`.
-- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document. Independently, `P-X7WUF(a)` omits the factor $1/(m-1)!$ from the pole-of-order-$m$ residue formula. For example, for $F(z)=z^{-3}+z^{-1}$ and $m=3$, the contour integral divided by $2\pi i$ equals the residue $1$, whereas the stated right-hand side is $\frac{d^2}{dz^2}(1+z^2)|_{z=0}=2$.
-- **Impact and owner:** both cards' part (a) is mathematically false for $m>2$ without the factor $1/(m-1)!$, and `P-X7WUF` additionally cannot be source-verified against its owning collection. The collection/card provenance and statements own the repair.
+- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; its residue formula for a pole of order $m$ omits the standard factor $1/(m-1)!$, and its owning collection does not identify its actual source.
+- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document. Independently, for $F(z)=z^{-3}+z^{-1}$ and $m=3$, the contour integral divided by $2\pi i$ equals the residue $1$, whereas the formula printed on `P-X7WUF(a)` gives $\frac{d^2}{dz^2}(1+z^2)|_{z=0}=2$.
+- **Impact and owner:** `P-X7WUF(a)` is false for $m>2$, and the card cannot presently be source-verified against its owning collection. The collection/card provenance and statement own the repair. The parallel unsorted card `E-YZUOC` has now been mathematically resolved by an explicit erratum and proof on that card.
 - **Uncertainty:** the mismatch with the cited DOCX is verified; the actual source of `P-X7WUF` has not yet been identified.
-- **Repair:** recover the true source for `P-X7WUF`, move or re-provenance the card accordingly, and restore the factor $1/(m-1)!$ before attaching a solution.
+- **Repair:** recover the true source for `P-X7WUF`, move or re-provenance the card accordingly, and restore the factor $1/(m-1)!$ before attaching its solution.
 
 ### P-MMAQ-WV7QEYSPXM omits the infinite-cyclic injectivity hypothesis
 
