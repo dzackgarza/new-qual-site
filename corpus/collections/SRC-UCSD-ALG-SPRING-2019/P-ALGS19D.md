@@ -13,13 +13,13 @@ review: draft
 audit:
 - event: source-checked
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 - event: solution-reviewed
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -33,32 +33,45 @@ Prove that $$\theta: A \to S_1^{-1}A \times \cdots \times S_m^{-1}A, \quad \thet
 
 
 ::: {.solution}
-<1>1. For positive integers \(k_1,\dots,k_m\), let \[J=\langle a_1^{k_1},\dots,a_m^{k_m}\rangle.\]
-Then \(\sqrt J=A\).
+<1>1. For any positive integers \(k_1,\dots,k_m\), one has
+\[
+\langle a_1^{k_1},\dots,a_m^{k_m}\rangle=A.
+\]
 ::: {.proof}
-For each \(i\), the element \(a_i^{k_i}\) lies in \(J\), hence \(a_i\in\sqrt J\). Therefore \[\langle a_1,\dots,a_m\rangle\subseteq\sqrt J.\]
-The left side is \(A\) by hypothesis, so \(\sqrt J=A\).
+Suppose the ideal \(J=\langle a_1^{k_1},\dots,a_m^{k_m}\rangle\) were proper. Then \(J\) is contained in some maximal ideal \(\mathfrak m\). Since every maximal ideal is prime and \(a_i^{k_i}\in\mathfrak m\), one has \(a_i\in\mathfrak m\) for every \(i\). Hence
+\[
+A=\langle a_1,\dots,a_m\rangle\subseteq\mathfrak m,
+\]
+a contradiction. Thus \(J=A\).
 :::
 
-<1>2. Consequently \(J=A\).
+<1>2. Suppose \(x\in\ker\theta\). Then for every \(i\) there exists \(r_i\ge 0\) such that
+\[
+a_i^{r_i}x=0.
+\]
 ::: {.proof}
-Since \(1\in\sqrt J\), some power \(1^r=1\) lies in \(J\). Thus \(J=A\). This proves part (a).
+The equality \(x/1=0\) in \(S_i^{-1}A\) means, by the defining equivalence relation for localization, that some element of \(S_i\) annihilates \(x\). Every element of \(S_i\) is a power of \(a_i\).
 :::
 
-<1>3. Suppose \(x\in A\) satisfies \(\theta(x)=0\). For each \(i\), there is an integer \(k_i\ge 0\) such that \[a_i^{k_i}x=0.\]
+<1>3. One may choose positive integers \(k_i\) with \(a_i^{k_i}x=0\) for every \(i\).
 ::: {.proof}
-The \(i\)-th component of \(\theta(x)\) is \(x/1\in S_i^{-1}A\). The equality \(x/1=0\) in a localization means that some element of \(S_i\), hence some power \(a_i^{k_i}\), annihilates \(x\).
+If the exponent \(r_i\) from <1>2 is positive, take \(k_i=r_i\). If \(r_i=0\), then \(x=0\), in which case any positive \(k_i\) works.
 :::
 
-<1>4. We may choose all \(k_i\) positive, and then part (a) gives elements \(c_i\in A\) such that \[1=\sum_{i=1}^m c_i a_i^{k_i}.\]
+<1>4. There exist \(b_1,\dots,b_m\in A\) such that
+\[
+1=\sum_{i=1}^m b_i a_i^{k_i}.
+\]
 ::: {.proof}
-If a witness exponent is \(0\), replace it by \(1\): from \(x=0\) one also has \(a_i x=0\). Thus all exponents may be taken positive. By part (a), the powers \(a_i^{k_i}\) generate the unit ideal.
+By <1>1, the powers \(a_i^{k_i}\) generate the unit ideal.
 :::
 
 <1>5. Therefore \(x=0\), so \(\theta\) is injective.
 ::: {.proof}
-Multiply the identity in <1>4 by \(x\):
-\[x=\sum_{i=1}^m c_i a_i^{k_i}x=0\]
-by <1>3. Hence the kernel of \(\theta\) is zero.
+Multiplying the identity in <1>4 by \(x\) and using <1>3 gives
+\[
+x=\sum_{i=1}^m b_i a_i^{k_i}x=0.
+\]
+Thus \(\ker\theta=0\).
 :::
 :::

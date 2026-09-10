@@ -13,13 +13,13 @@ review: draft
 audit:
 - event: source-checked
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 - event: solution-reviewed
   by: OpenAI
-  date: 2026-09-08
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -36,44 +36,61 @@ Hint: $P$ is a Sylow $p$-subgroup of $P\Phi(G)$; use Frattini's argument.
 :::
 
 ::: {.solution}
-<1>1. Put \(\Phi=\Phi(G)\). The subgroup \(P\Phi/\Phi\) is a Sylow \(p\)-subgroup of \(G/\Phi\).
+<1>1. The Frattini subgroup \(\Phi(G)\) is characteristic in \(G\), hence normal.
 ::: {.proof}
-Because \(\Phi\trianglelefteq G\), the image of a Sylow \(p\)-subgroup under the quotient map is a Sylow \(p\)-subgroup of the quotient.
-Equivalently, \(P\Phi/\Phi\cong P/(P\cap\Phi)\) has the full \(p\)-part of \(|G/\Phi|\).
+Every automorphism of \(G\) permutes the maximal subgroups of \(G\), so it preserves their intersection.
 :::
 
-<1>2. The subgroup \(P\Phi\) is normal in \(G\).
+<1>2. If \(P\) is a Sylow \(p\)-subgroup of \(G\), then \(P\cap\Phi(G)\) is a Sylow \(p\)-subgroup of \(\Phi(G)\).
 ::: {.proof}
-The finite group \(G/\Phi\) is nilpotent, so each of its Sylow subgroups is normal.
-By <1>1, \(P\Phi/\Phi\trianglelefteq G/\Phi\). Taking its inverse image under \(G\to G/\Phi\) gives \(P\Phi\trianglelefteq G\).
+For any normal subgroup \(N\trianglelefteq G\) and Sylow \(p\)-subgroup \(P\) of \(G\), the subgroup \(P\cap N\) is Sylow in \(N\). Apply this with \(N=\Phi(G)\).
 :::
 
-<1>3. The subgroup \(P\) is a Sylow \(p\)-subgroup of \(P\Phi\).
-::: {.proof}
-Since \(P\le P\Phi\le G\) and \(P\) is Sylow in \(G\), no \(p\)-subgroup of \(P\Phi\) can have larger order.
-:::
-
-<1>4. Frattini's argument gives
+<1>3. The subgroup
 \[
-G=(P\Phi)N_G(P)=\Phi N_G(P).
+P\Phi(G)/\Phi(G)
+\]
+is a Sylow \(p\)-subgroup of \(G/\Phi(G)\).
+::: {.proof}
+By the second isomorphism theorem,
+\[
+P\Phi(G)/\Phi(G)\cong P/(P\cap\Phi(G)).
+\]
+By <1>2, its order is exactly the \(p\)-part of \(|G/\Phi(G)|\).
+:::
+
+<1>4. Since \(G/\Phi(G)\) is nilpotent, \(P\Phi(G)/\Phi(G)\trianglelefteq G/\Phi(G)\). Therefore
+\[
+P\Phi(G)\trianglelefteq G.
 \]
 ::: {.proof}
-By <1>2, \(P\Phi\trianglelefteq G\), and by <1>3, \(P\) is a Sylow \(p\)-subgroup of \(P\Phi\). Frattini's argument therefore gives \(G=(P\Phi)N_G(P)\). Since \(P\le N_G(P)\), this product equals \(\Phi N_G(P)\).
+In a finite nilpotent group every Sylow subgroup is normal. The correspondence theorem then lifts normality from the quotient.
 :::
 
-<1>5. One has \(N_G(P)=G\), hence \(P\trianglelefteq G\).
+<1>5. Put \(N=P\Phi(G)\). Then \(N\trianglelefteq G\), and \(P\) is a Sylow \(p\)-subgroup of \(N\).
 ::: {.proof}
-Suppose \(N_G(P)<G\). Since \(G\) is finite, choose a maximal subgroup \(M\) with \(N_G(P)\le M<G\). By definition of the Frattini subgroup, \(\Phi\le M\). Hence <1>4 gives
+Normality is <1>4. Since \(N\le G\) contains the Sylow \(p\)-subgroup \(P\) of \(G\), no larger \(p\)-subgroup can occur in \(N\).
+:::
+
+<1>6. Frattini's argument gives
 \[
-G=\Phi N_G(P)\le M,
+G=N_G(P)N=N_G(P)\Phi(G).
 \]
-a contradiction.
-Therefore \(N_G(P)=G\), which is exactly \(P\trianglelefteq G\).
+::: {.proof}
+Because \(N\trianglelefteq G\) and \(P\) is a Sylow \(p\)-subgroup of \(N\), Frattini's argument gives \(G=N_G(P)N\). Since \(P\le N_G(P)\) and \(N=P\Phi(G)\), this becomes \(G=N_G(P)\Phi(G)\).
 :::
 
-<1>6. The group \(G\) is nilpotent.
+<1>7. One must have \(N_G(P)=G\). Hence \(P\trianglelefteq G\).
 ::: {.proof}
-The argument in <1>1--<1>5 applies to every prime \(p\mid |G|\), so every Sylow subgroup of \(G\) is normal.
-A finite group is nilpotent exactly when all of its Sylow subgroups are normal.
+If \(N_G(P)<G\), choose a maximal subgroup \(M\) containing \(N_G(P)\). By definition \(\Phi(G)\subseteq M\). Then <1>6 gives
+\[
+G=N_G(P)\Phi(G)\subseteq M,
+\]
+a contradiction. Thus \(N_G(P)=G\), which is equivalent to \(P\trianglelefteq G\).
+:::
+
+<1>8. Therefore every Sylow subgroup of \(G\) is normal, so \(G\) is nilpotent.
+::: {.proof}
+The argument in <1>2--<1>7 applies to every prime divisor \(p\) of \(|G|\). A finite group is nilpotent if and only if all of its Sylow subgroups are normal.
 :::
 :::
