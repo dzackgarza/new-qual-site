@@ -13,6 +13,15 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 2 of the UGA Fall 2021 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Replaced malformed substitutions and corrected the false claim that mere unboundedness on a positive-measure set forces divergence of an integral.
 ---
 
 :::{.problem}
@@ -37,50 +46,99 @@ Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost ever
 
 :::
 
-:::{.solution title="Part a"}
-Let $y\in F^c$ which is open, then one can find an epsilon ball about $y$ avoiding $F$.
-We can take $\eps \da \delta_F(y)$ to define $A \da B_{\eps}(y)$, and we still have $A \subseteq F^c$ and $F \subseteq A^c$.
-Note that $\abs{x-y}^2 = (x-y)^2$ since this is always positive, then
+::: solution
+<1>1. Prove the bound in part (a).
+::: proof
+Fix $y\notin F$ and put
 \[
-\int_F \abs{x-y}^{-2} \dx 
-&\leq \int_{A^c} \abs{x-y}^{-2} \dx \\
-&= \int_{-\infty}^{-\eps} \qty{x-y}^{-2} \dx + \int_{\eps}^{\infty} \qty{x-y}^{-2}\dx \\
-&= \int_{-\infty}^{-\eps} u^{-2} \dx + \int_{\eps}^{\infty} u^{-2} \dx \\
-&= -u\inv \evalfrom_{u=-\eps}^{u=-\infty}- u\inv\evalfrom_{u=\infty}^{u=\eps} \\
-&= {2\over \eps} \\
-&\da {2\over \delta_F(y)}
-.\]
-:::
-
-:::{.solution title="Part b"}
-Estimate:
+d:=\delta_F(y)>0.
+\]
+By definition of distance,
 \[
-\int_F I(x) \dx 
-&\da \int_F \int_\RR {\delta_F(y) \over (x-y)^2 } \dy \dx \\
-&= \int_\RR \delta_F(y) \int_F {1\over (x-y)^2} \dx \dy \\
-&= \int_F \delta_F(y) \int_F {1\over (x-y)^2} \dx \dy + \int_{F^c} \delta_F(y) \int_F {1\over (x-y)^2} \dx \dy \\
-&= 0 + \int_{F^c} \delta_F(y) \int_F {1\over (x-y)^2} \dx \dy \\
-&\leq
-\int_{F^c} 2 \dy \\
-&= 2\mu(F^c) \\
-&<\infty
-,\]
-where we've used that $y\in F\implies \delta_F(y) = 0$ and applied the bound from the first part.
-We've also implicitly used Fubini-Tonelli to change the order of integration, justified by positivity of the integrand and the finite iterated integral.
-This forces $I(x) < \infty$ for almost every $x\in F$, since if $I(x)$ is unbounded on any positive measure set then this integral would diverge.
-
-If $x\not\in F$, then since $F$ is closed, $F^c$ is open, so there is $r > 0$ with $B_r(x) \subseteq F^c$; in fact $\delta_F(x) = d(x, F) > 0$, and we take $r = \delta_F(x)/2$.
-For $y \in B_r(x)$, the distance from $y$ to $F$ is at least $\delta_F(x) - |x - y| \ge \delta_F(x) - r = r$ (by the triangle inequality, $d(y, F) \ge d(x, F) - |x - y|$).
+F\subseteq(-\infty,y-d]\cup[y+d,\infty).
+\]
+Hence, after the substitution $u=x-y$,
+\[
+\begin{aligned}
+\int_F\frac{dx}{|x-y|^2}
+&\le \int_{|x-y|\ge d}\frac{dx}{|x-y|^2}\\
+&=\int_{|u|\ge d}\frac{du}{u^2}\\
+&=2\int_d^\infty u^{-2}\,du\\
+&=\frac2d.
+\end{aligned}
+\]
 Therefore
 \[
-I(x) = \int_\RR \frac{\delta_F(y)}{|x-y|^2}\,dy
-\ge \int_{B_r(x)} \frac{\delta_F(y)}{|x-y|^2}\,dy
-\ge \int_{B_r(x)} \frac{r}{|x-y|^2}\,dy
-= r \cdot 2\int_0^r \frac{1}{t^2}\,dt = \infty,
+\boxed{
+\int_F|x-y|^{-2}\,dx\le\frac{2}{\delta_F(y)}.}
 \]
-since $\int_0^r t^{-2}\,dt = \infty$ (the singularity at $t = 0$ is non-integrable).
-Hence $I(x) = \infty$ for every $x \notin F$.
-
 :::
 
+<1>2. Show that $I(x)=\infty$ for every $x\notin F$.
+::: proof
+Fix $x\notin F$ and set
+\[
+d:=\delta_F(x)>0,
+\qquad r:=d/2.
+\]
+The distance function is $1$-Lipschitz, so if $|y-x|<r$, then
+\[
+\delta_F(y)\ge \delta_F(x)-|x-y|>d-r=r.
+\]
+Therefore
+\[
+\begin{aligned}
+I(x)
+&\ge \int_{|y-x|<r}\frac{\delta_F(y)}{|x-y|^2}\,dy\\
+&\ge r\int_{|y-x|<r}\frac{dy}{|x-y|^2}\\
+&=\infty,
+\end{aligned}
+\]
+because $t^{-2}$ is not locally integrable at $0$. Thus
+\[
+\boxed{I(x)=\infty\quad(x\notin F).}
+\]
+:::
+
+<1>3. Show that $I$ is integrable over $F$.
+::: proof
+The integrand is nonnegative, so Tonelli's theorem gives
+\[
+\begin{aligned}
+\int_F I(x)\,dx
+&=\int_F\int_{\mathbb R}
+\frac{\delta_F(y)}{|x-y|^2}\,dy\,dx\\
+&=\int_{\mathbb R}\delta_F(y)
+\left(\int_F\frac{dx}{|x-y|^2}\right)dy.
+\end{aligned}
+\]
+For $y\in F$, the factor $\delta_F(y)$ is $0$. For $y\notin F$, Step 1 gives
+\[
+\delta_F(y)
+\int_F\frac{dx}{|x-y|^2}
+\le2.
+\]
+Hence
+\[
+\int_F I(x)\,dx
+\le2m(\mathbb R\setminus F)<\infty.
+\]
+:::
+
+<1>4. Deduce finiteness almost everywhere on $F$.
+::: proof
+The function $I$ is nonnegative. If the set
+\[
+E:=\{x\in F:I(x)=\infty\}
+\]
+had positive measure, then
+\[
+\int_F I(x)\,dx=\infty,
+\]
+contradicting Step 3. Therefore $m(E)=0$, and
+\[
+\boxed{I(x)<\infty\text{ for almost every }x\in F.}
+\]
+:::
+:::
 
