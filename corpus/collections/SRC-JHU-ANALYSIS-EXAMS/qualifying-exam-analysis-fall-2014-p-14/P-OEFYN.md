@@ -22,6 +22,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "PDF page 14, Fall 2014 problem 3, explicitly requires the operator norm of L_n minus L to tend to zero; restored the dropped convergence arrow."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Retained the finite-net and orthogonal-projection construction, its uniform norm estimate, and the converse total-boundedness proof."
 ---
 
 3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator.
@@ -29,7 +37,7 @@ audit:
 
 (a) The image $L ( \mathbf { B } )$ of the unit ball in X has compact closure in $Y .$
 
-(b) There is a sequence of bounded linear operators $\{ L _ { n } : X \to Y \}$ such that the image of $L _ { n } ( X )$ is finite dimensional and such that $| | L _ { n } - L | |  0$ . (Here, || · || is the operator norm.)
+(b) There is a sequence of bounded linear operators $L_n:X\to Y$ with finite-dimensional range such that $\|L_n-L\|\to0$, where $\|\cdot\|$ is the operator norm.
 
 ::: solution
 <1>1. Assume (a) and approximate $L(B)$ by a finite-dimensional subspace.
