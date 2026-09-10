@@ -14,6 +14,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
+  note: Verified the image-chain stabilization argument.
 ---
 
 ::: problem
@@ -24,7 +28,7 @@ $$\operatorname{rank}(A^k) \le \operatorname{rank}(A^{k+1})$$
 (and in fact, $\operatorname{rank}(A^k) = \operatorname{rank}(A^{k+1}) = \operatorname{rank}(A^2)$) for all integers $k \ge 3$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the descending chain of images $\operatorname{im}(A) \supseteq \operatorname{im}(A^2) \supseteq \operatorname{im}(A^3) \supseteq \cdots$ stabilizes once $\operatorname{rank}(A^2) = \operatorname{rank}(A^3)$.
 
 <1>1. Monotonicity of Ranks of Matrix Powers:
