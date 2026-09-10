@@ -2012,3 +2012,73 @@ These decide nothing about what the text should be.
 - Routes are slugged from the source path, so a filename with spaces or underscores reads differently from its URL. Lowercase kebab-case makes the two agree.
 
 - One `# H1` per page, equal to `title`. Six pages named `Preface` and a second H1 on `Topology/index.md` are section 10 items.
+
+## 12. Close out the branch consolidation
+
+Every branch in `git branch` is merged into `main` as of `123e9b229`; `git rev-list
+--count main..<branch>` is 0 for all 44. Nothing is left to merge. What remains is
+judgement work the merge could not do, and worktrees that could not be retired.
+
+The merges were made with `git merge-tree` + `git commit-tree` + a compare-and-swap
+`git update-ref`, never porcelain `git merge`, because `main`'s index carries staged
+entries belonging to live authoring sessions. A porcelain merge in the shared checkout
+commits whichever entries happen to be staged and, on conflict, `git merge --abort`
+resets the working tree under whoever is writing in it. That is what cost the 962 lines
+recovered in `81373e972`. Consolidation in this repository must not use porcelain merge
+while sessions are live.
+
+- [x] 1.R1 — quote the three `audit.note` scalars whose unquoted colon made `just check`
+  red on `main`. Fixed in `857df44653`; `just unsolved` now runs clean and the corpus
+  parses at 9087 cards, 0 errors.
+
+- [x] Recompute `queues/C-unsolved-cards.md` after the merges. `123e9b229` takes it from
+  3588 to 1081 unsolved. The queue was pinned to `main`'s version through every merge
+  rather than hand-resolved, exactly as its header requires.
+
+- [x] Repair the eaten-escape corruption class across the merged corpus. `857df44653`
+  restores 30 files where a LaTeX escape had been read as a C escape and left a literal
+  control byte: `\bar` `\bigcup` `\bigcap` as `BS`, `\frac` as `FF`, `\varepsilon` as
+  `VT`, `\rangle` as `CR`, `\tau` `\text` `\times` as `TAB`, and one `\nmid` as a bare
+  newline. Every occurrence had a correctly-escaped sibling in the same file, so none
+  was ambiguous. The detector is worth re-running after any future bulk merge.
+
+- [ ] 1.R2 / 1.R3 — adjudicate the cards where two people independently authored a proof
+  of the same card. The merge had to pick one and picked mechanically: solution present,
+  then uncorrupted, then more audit events, then more proof steps, then more content.
+  That is a completeness heuristic, not a mathematical judgement, and it decided 52 cards.
+  Regenerate the exact list with the merge commits, which record both parents:
+
+  ```
+  for c in $(git log --merges --format='%H %s' main | grep -F 'merge: consolidate' | cut -d' ' -f1); do
+    b=$(git merge-base $c^1 $c^2)
+    comm -12 <(git diff --name-only $b $c^1 | sort) <(git diff --name-only $b $c^2 | sort)
+  done | sort -u
+  ```
+
+  Four of the 52 are the ones to read first, because the merge produced a text that
+  matches neither authored version: `P-22OXL`, `P-7INJI`, `P-REKYU`, `P-RILUB`.
+
+  Six more need a second look because two branches both claimed the Spring 2019 algebra
+  sitting and the later merge silently reversed the earlier one: `P-ALGS19B` through
+  `P-ALGS19G`. `7c2634cee` kept `main`'s B, C and E; `fb38069ad` then took the branch's
+  B through G. Only the second decision survives.
+
+  The twenty recovered cards in `81373e972` that have a competing version in `main` are
+  the same kind of question and belong in the same pass.
+
+- [ ] Retire the remaining worktrees. All 25 are fully merged, so the only thing holding
+  each one open is its own uncommitted work. `git worktree remove` preserves the branch;
+  nine were retired this way, freeing 3.7G. For each of the rest, commit the modified
+  cards onto its branch, merge that branch, then remove the worktree:
+
+  ```
+  for p in .worktrees/*; do
+    printf '%-34s ahead=%-4s dirty=%s\n' "${p#.worktrees/}" \
+      "$(git rev-list --count main..$(git -C $p symbolic-ref --short HEAD))" \
+      "$(git -C $p status --porcelain | wc -l)"
+  done
+  ```
+
+  Nothing there is disposable: the dirty entries are authored card bodies, not build
+  residue. At roughly 420M each this is the repository's largest recoverable cost, and
+  the disk has hit 100% once already.
