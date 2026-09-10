@@ -88,6 +88,8 @@ of public mathematical remarks.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
 
+- **Further reproduction, 2026-09-10:** a live source-order query returned `P-ARTALG-JU06-6` without a solution; the subsequent native read found a newly authored 157-line card, and Git reported that path as modified. This stream had not edited it and left the other writer's proof untouched. Later exact-context patches for `P-ARTALG-JU06-9` and `P-ARTALG-JU06-12` likewise failed after another writer added complete proofs between the read and patch; those proofs were independently checked and preserved, with no overwrite. A further native `agents.status` request returned `WORKER_IDENTITY_LOST`. The overlap therefore persists in the July 2006 section. `AGENTS.md` still says streams use separate worktrees (lines 648–650), as does `CONTRIBUTING.md` (lines 41–45), despite the current explicit direct-to-main assignment; align that guidance with the actual workflow when repairing ownership coordination.
+
 - **Additional reproduction:** the next card `P-T4WCS` received two independently correct proofs and duplicate audit keys in `cc3b2e722`; `f5f68b2db` reconciles them after full comparison. A further pair of native `agents.status` attempts both returned `WORKER_IDENTITY_LOST`, so this stream could not obtain an addressable owner for coordination either.
 
 - **Object and need:** direct-to-main authorship for the assigned interval `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI`; each card must have one active writer so a completed proof can be reviewed and committed without overwriting another author's work.
