@@ -22,10 +22,14 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Factored the even part through z squared, applied Schwarz's lemma, and used circle orthogonality of Taylor coefficients to show that equality at a nonzero point forces all coefficients except the quadratic one to vanish."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Independently checked the two printed omissions on PDF page 52, restored the local disk definition and justified the infinite-series orthogonality limit in the retained equality-case proof."
 ---
 
 ::: problem
-Let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
+Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
 $$
 |f(z)+f(-z)|\le 2|z|^2
 $$
@@ -78,7 +82,7 @@ Thus $G:\Delta\to\Delta$ is a holomorphic self-map fixing zero.
 
 <1>2. Schwarz's lemma gives the required inequality.
 ::: proof
-Schwarz's lemma applied to $G$ gives
+Schwarz's lemma [@SS03] applied to $G$ gives
 $$
 |G(w)|\le|w|\qquad(w\in\Delta).
 $$
@@ -95,7 +99,7 @@ Suppose equality holds at $z_0\ne0$. Then
 $$
 |G(z_0^2)|=|z_0^2|,
 $$
-and $z_0^2\ne0$. The equality case of Schwarz's lemma gives
+and $z_0^2\ne0$. The equality case of Schwarz's lemma [@SS03] gives
 $$
 G(w)=\lambda w
 $$
@@ -116,7 +120,11 @@ In particular $|a_2|=1$.
 
 <1>4. A disk map with a Taylor coefficient of modulus one at degree two has no other coefficients.
 ::: proof
-For $0<r<1$, orthogonality of the exponentials on the circle gives
+For $0<r<1$, the Taylor partial sums converge uniformly
+to $f$ on $|z|=r$ [@SS03]. Their squared moduli also
+converge uniformly there. Integrating the finite sums,
+using orthogonality of the exponentials and then passing
+to the limit therefore gives
 $$
 \frac1{2\pi}\int_0^{2\pi}|f(re^{it})|^2\,dt
 =\sum_{n=1}^\infty |a_n|^2r^{2n}.
