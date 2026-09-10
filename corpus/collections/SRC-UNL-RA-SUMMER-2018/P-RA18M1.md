@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 1 of the preserved UNL May 31, 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Repaired the estimate in part (i), which incorrectly replaced floor(n/2) by n/2 for odd n.
 ---
 
 :::{.problem}
@@ -30,8 +38,8 @@ $$(i)\quad x_n=\frac{2n\cdot n!}{n^n};\qquad
 <1>1. (i) $x_n \to 0$.
     <2>1. Split the product: $\frac{n!}{n^n} = \prod_{j=1}^{n}\frac{j}{n} \le \left(\frac12\right)^{\lfloor n/2\rfloor}$.
         Proof: for $j \le n/2$, $j/n \le 1/2$; there are at least $\lfloor n/2 \rfloor$ such factors, and the remaining factors are $\le 1$.
-    <2>2. $0 \le x_n = 2n \cdot \frac{n!}{n^n} \le 2n \left(\frac12\right)^{n/2} \to 0$.
-        Proof: <2>1 and the squeeze theorem (exponential decay $2^{-n/2}$ beats the linear factor $2n$).
+    <2>2. $0 \le x_n = 2n \cdot \frac{n!}{n^n} \le 2n \left(\frac12\right)^{\lfloor n/2\rfloor} \to 0$.
+        Proof: <2>1 and the squeeze theorem. Since $\lfloor n/2\rfloor\ge (n-1)/2$, the right-hand side is at most $2\sqrt2\,n\,2^{-n/2}$, which tends to $0$.
     <2>3. Q.E.D.
         Proof: <2>2 shows $x_n \to 0$.
 
