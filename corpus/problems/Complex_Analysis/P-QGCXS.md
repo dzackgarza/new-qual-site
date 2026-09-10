@@ -28,3 +28,24 @@ z_{1}+z_{2}+\cdots+z_{n}=-c_{1} \\
 z_{1} z_{2} \cdots z_{n}=(-1)^{n} c_{n} \text { (not used) }
 $$
 :::
+
+::: solution
+The final summand in the displayed sine identity is missing its $\sin$ in the
+source. With that typographical correction, both identities follow at once
+from the $n$-th roots of unity.
+
+Let $\omega=e^{2\pi i/n}$. Since
+\[
+1+\omega+\omega^2+\cdots+\omega^{n-1}=0,
+\]
+we have
+\[
+\sum_{k=1}^{n-1}\omega^k=-1.
+\]
+Taking real and imaginary parts gives
+\[
+\boxed{\sum_{k=1}^{n-1}\cos\frac{2\pi k}{n}=-1},
+\qquad
+\boxed{\sum_{k=1}^{n-1}\sin\frac{2\pi k}{n}=0}.
+\]
+:::
