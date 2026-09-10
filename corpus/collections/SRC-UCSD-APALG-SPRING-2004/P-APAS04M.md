@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
+  note: Verified the invariant-ring presentation and added the missing algebraic-independence/freeness justification.
 ---
 
 ::: problem
@@ -34,7 +38,7 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
 (c) Show that $\mathbb{C}[x,y]^G$ is Cohen–Macaulay by explicitly finding the generators and separators for $\mathbb{C}[x,y]^G$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Analyze the ring of invariants of the order-4 rotation.
 
 <1>1. Generate the action and part (a):
@@ -76,14 +80,19 @@ Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degr
         $$pq=r^4,$$
         so
         $$\mathbb C[x,y]^G\cong \mathbb C[p,q,r]/(pq-r^4).$$
-    <2>4. Set $s=p+q$ and $t=p$. Over $S=\mathbb C[r,s]$, we have
-        $$t^2-st+r^4=0.$$
-    <2>5. So every invariant has a unique decomposition
-        $$a(r,s)+t\,b(r,s),\qquad a,b\in\mathbb C[r,s],$$
-        and hence
-        $$\mathbb C[x,y]^G=\mathbb C[r,s]\oplus t\,\mathbb C[r,s].$$
-    <2>6. Therefore $\mathbb C[x,y]^G$ is Cohen–Macaulay, with homogeneous system of parameters
-        $r$ (degree $2$), $s$ (degree $4$), and separators $\{1,t\}$.
+    <2>4. Set $s=p+q$ and $t=p$. The elements $r=uv$ and $s=u^4+v^4$ are algebraically independent: their Jacobian determinant with respect to $u,v$ is
+        $$\det\begin{pmatrix}v&u\\4u^3&4v^3\end{pmatrix}=4(v^4-u^4),$$
+        which is not the zero polynomial. Since the ground field has characteristic $0$, any algebraic relation between $r$ and $s$ would force the Jacobian to have rank $<2$ identically. Thus $S=\mathbb C[r,s]$ is a polynomial ring in two variables.
+    <2>5. In the presentation $\mathbb C[p,q,r]/(pq-r^4)$, write $q=s-t$ and $p=t$. Then
+        $$t^2-st+r^4=0,$$
+        so
+        $$\mathbb C[x,y]^G\cong S[t]/(t^2-st+r^4).$$
+        Because the defining polynomial is monic of degree $2$ in $t$, Euclidean division in $S[t]$ gives a unique representative
+        $$a(r,s)+t\,b(r,s),\qquad a,b\in S.$$
+        Hence
+        $$\mathbb C[x,y]^G=S\oplus tS$$
+        as an $S$-module.
+    <2>6. Therefore $\mathbb C[x,y]^G$ is a free module over the polynomial subring $S=\mathbb C[r,s]$, hence Cohen–Macaulay, with homogeneous system of parameters $r$ (degree $2$), $s$ (degree $4$), and secondary invariants (the requested separators) $\{1,t\}$.
 
 :::
 <1>4. Conclusion: All requested properties hold, and the stated Hilbert series is proved. Q.E.D.
