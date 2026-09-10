@@ -211,7 +211,6 @@ source:
     - P-JHUMAY11ANF
     - P-JHUMAY11ANG
     - P-JHUMAY11ANH
-    - P-JHUMAY11ANO
     - P-JHUMAY11ANP
   - name: Analysis Qualifying Exam, Fall 2010 (pp. 26–27)
     problems:
