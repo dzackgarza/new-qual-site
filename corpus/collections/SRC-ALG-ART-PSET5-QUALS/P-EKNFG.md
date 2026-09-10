@@ -13,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -29,61 +32,73 @@ Prove that $K/F$ is normal if and only if $\operatorname{Gal}(E/K)$ is a normal 
 
 
 ::: {.solution}
-Let
+<1>1. Put
 \[
 G=\operatorname{Gal}(E/F),\qquad H=\operatorname{Gal}(E/K).
 \]
-
-<1>1. For every \(\sigma\in G\),
+Then for every \(\sigma\in G\),
 \[
 \sigma H\sigma^{-1}=\operatorname{Gal}(E/\sigma(K)).
 \]
 ::: {.proof}
-An element \(\tau\in G\) lies in \(\sigma H\sigma^{-1}\) exactly when \(\sigma^{-1}\tau\sigma\) fixes every element of \(K\). Equivalently, for every \(a\in K\),
-\[
-\tau(\sigma(a))=\sigma(a).
-\]
-Thus \(\tau\) fixes \(\sigma(K)\) pointwise, which is precisely the condition \(\tau\in\operatorname{Gal}(E/\sigma(K))\).
+An element \(\tau\in G\) lies in \(\sigma H\sigma^{-1}\) exactly when
+\(\sigma^{-1}\tau\sigma\) fixes \(K\) pointwise. This is equivalent to \(\tau\) fixing
+\(\sigma(K)\) pointwise, which is precisely
+\(\tau\in\operatorname{Gal}(E/\sigma(K))\).
 :::
 
-<1>2. The subgroup \(H\) is normal in \(G\) if and only if \(\sigma(K)=K\) for every \(\sigma\in G\).
+<1>2. Suppose first that \(K/F\) is normal. Then \(H\trianglelefteq G\).
 ::: {.proof}
-By <1>1,
+Fix \(\sigma\in G\). The restriction \(\sigma|_K:K\to E\) is an \(F\)-embedding.
+Because \(K/F\) is finite and normal, every \(F\)-embedding of \(K\) into an algebraic
+closure has image \(K\). Hence \(\sigma(K)=K\). By <1>1,
 \[
-\sigma H\sigma^{-1}=H
+\sigma H\sigma^{-1}
+=\operatorname{Gal}(E/\sigma(K))
+=\operatorname{Gal}(E/K)
+=H.
 \]
-if and only if
-\[
-\operatorname{Gal}(E/\sigma(K))=\operatorname{Gal}(E/K).
-\]
-The Galois correspondence for the finite Galois extension \(E/F\) is injective on intermediate fields, so this equality of subgroups is equivalent to \(\sigma(K)=K\).
+Since this holds for every \(\sigma\in G\), the subgroup \(H\) is normal in \(G\).
 :::
 
-<1>3. If \(K/F\) is normal, then \(H\trianglelefteq G\).
+<1>3. Conversely, suppose \(H\trianglelefteq G\). Then \(\sigma(K)=K\) for every
+\(\sigma\in G\).
 ::: {.proof}
-For \(\sigma\in G\), the restriction \(\sigma|_K:K\to E\) is an \(F\)-embedding. Since \(K/F\) is normal, every \(F\)-embedding of \(K\) into an algebraic closure has image \(K\). Hence \(\sigma(K)=K\). By <1>2, \(H\) is normal in \(G\).
+By the fundamental theorem of Galois theory, \(K=E^H\). For \(\sigma\in G\), one has
+\[
+\sigma(K)=\sigma(E^H)=E^{\sigma H\sigma^{-1}}.
+\]
+Since \(H\trianglelefteq G\), \(\sigma H\sigma^{-1}=H\), and therefore
+\[
+\sigma(K)=E^H=K.
+\]
 :::
 
-<1>4. If \(H\trianglelefteq G\), then \(K/F\) is normal.
+<1>4. Under the hypothesis of <1>3, the extension \(K/F\) is normal.
 ::: {.proof}
-By <1>2, \(\sigma(K)=K\) for every \(\sigma\in G\). Since \(E/F\) is finite Galois, \(K/F\) is finite and separable.
-
-Let \(\iota:K\hookrightarrow\overline F\) be any \(F\)-embedding. Because \(E/F\) is finite separable, \(\iota\) extends to an \(F\)-embedding
+Let \(\iota:K\hookrightarrow\overline F\) be any \(F\)-embedding into an algebraic closure.
+Because \(E/K\) is algebraic, the embedding-extension theorem extends \(\iota\) to an
+\(F\)-embedding
 \[
 \widetilde\iota:E\hookrightarrow\overline F.
 \]
-Since \(E/F\) is normal, \(\widetilde\iota(E)=E\), so \(\widetilde\iota\in G\). Therefore
+The extension \(E/F\) is finite Galois, hence normal, so every \(F\)-embedding of \(E\)
+into \(\overline F\) has image \(E\). Thus \(\widetilde\iota\) is an element of
+\(G=\operatorname{Gal}(E/F)\). By <1>3,
 \[
 \iota(K)=\widetilde\iota(K)=K.
 \]
-Thus every \(F\)-embedding of \(K\) into an algebraic closure has image \(K\), and since \(K/F\) is separable, \(K/F\) is normal.
+Therefore every \(F\)-embedding of \(K\) into \(\overline F\) preserves \(K\), which is
+the normality criterion for the finite extension \(K/F\).
 :::
 
-<1>5. Therefore
+<1>5. Hence
 \[
-K/F\text{ is normal}\iff \operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F).
+K/F\text{ is normal}
+\quad\Longleftrightarrow\quad
+\operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F).
 \]
 ::: {.proof}
-Combine <1>3 and <1>4.
+Combine <1>2 and <1>4.
 :::
 :::
