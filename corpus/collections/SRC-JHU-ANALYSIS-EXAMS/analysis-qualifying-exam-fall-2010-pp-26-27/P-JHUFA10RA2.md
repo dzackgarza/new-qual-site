@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA10RA2
 kind: problem
-title: Convolution of characteristic functions is continuous
+title: Characteristic-function convolution and one-sided differentiation averages
 classification:
   areas:
   - real-analysis
@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually compared Fall 2010 problem 2 on PDF page 26 with both complete transcriptions. P-JHUMAY11ANJ repeats the same two parts and does not occur in the May 2011 paper; merged that duplicate into this source-correct card."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Read both full proofs and retained their common translation estimate and one-sided-average argument. Verified pointwise existence of the convolution and the reduction to symmetric Lebesgue differentiation."
 ---
 
 ::: {.problem}
@@ -48,7 +56,9 @@ Because $m(E),m(F)<\infty$, both characteristic functions lie in $L^2(\mathbb R)
 \qquad
 \|\chi_F\|_2=m(F)^{1/2}.
 \]
-Let
+Cauchy–Schwarz shows that the convolution integral exists
+at every $x$, with absolute value at most
+$m(E)^{1/2}m(F)^{1/2}$ [@Fol13]. Let
 \[
 h(x)=(\chi_E*\chi_F)(x).
 \]
@@ -76,7 +86,7 @@ where $(\tau_t\phi)(u)=\phi(u+t)$. Therefore
 \le
 \|\chi_E\|_2\,\|\tau_t\chi_F-\chi_F\|_2.
 \]
-Translations are continuous in $L^2(\mathbb R)$, so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
+Translations are continuous in $L^2(\mathbb R)$ [@Fol13], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
 :::
 
 <1>2. Rewrite the second convolution as a one-sided average.
@@ -100,7 +110,14 @@ n(\chi_E*\chi_{[0,1/n]})(x)
 
 <1>3. Apply the Lebesgue differentiation theorem.
 ::: {.proof}
-Since $\chi_E\in L^1_{\mathrm{loc}}(\mathbb R)$, the one-sided Lebesgue differentiation theorem gives, for almost every $x$,
+Since $\chi_E\in L^1_{\mathrm{loc}}(\mathbb R)$, almost every
+$x$ is a Lebesgue point [@Fol13]. At such a point,
+$$
+\left|\frac1r\int_{x-r}^{x}\chi_E(y)\,dy-\chi_E(x)\right|
+\leq 2\frac1{2r}\int_{x-r}^{x+r}|\chi_E(y)-\chi_E(x)|\,dy
+\longrightarrow0.
+$$
+Thus the one-sided averages satisfy, for almost every $x$,
 \[
 \lim_{r\downarrow0}\frac1r\int_{x-r}^{x}\chi_E(y)\,dy
 =\chi_E(x).
