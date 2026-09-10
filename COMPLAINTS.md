@@ -42,6 +42,10 @@ of public mathematical remarks.
 
 ### The 2003–2009 algebra packet has mixed subject metadata
 
+- **Summer 2014 source-checked repairs:** problems 1, 3, 4, and 6 in the retained 2010–2015 packet confirm `P-TNZTM`, `P-WC2SP`, `P-JHQKZ`, and `P-ZR3OT` as algebra, although each card had sole area `prelim`. Commits `22cb7e0f9`, `a4a9b4527`, `fd3e6433d`, and `2d22e4b57` correct those classifications and supply all requested proofs or counterexamples. The tensor-product card also moves the source's inline hint to a separate hint section and retains the noncommutative-ring hypothesis throughout the proof. These are dispositions of the inspected cards, not of other cards sharing the label.
+
+- **July 2013 source-checked repairs:** visual inspection of PDF pages 6–8 confirms `P-XVV4O`, `P-IXED6`, `P-RP7WR`, and `P-ZG74L` as algebra, although each had sole area `prelim`. Commits `0150fd7f8`, `2a286da3a`, `3ec7685f5`, and `63d2c16c7` correct those classifications and supply complete solutions. The congruence card formerly referred to an unspecified earlier problem for the definition of ideal join; `2a286da3a` incorporates the definition from Rings 1 on the same source page, preserving the hypotheses and making the statement self-contained.
+
 - **Same defect in the later packet:** June 2015 Groups 3, Rings 2, and Fields 2–3 in `algebra_2010-2015_prelims.md` verify `P-PCSZ2`, `P-HHX6V`, `P-U64DA`, and `P-VFB5V` as algebra, although each had sole area `prelim`. Commits `565de6d8f`, `761157381`, `ac07d741f`, and `dc8660316` repair those four classifications individually with complete proofs. The first also makes the source's identity-bijection qualification explicit in the title; the second replaces an unrelated Free Modules topic with Principal Ideal Domains. These four confirmed cases are resolved; they do not establish a disposition of unread classification candidates.
 
 - **Additional source-checked repair:** page 5, Rings and modules 3, confirms `P-TB7BG` as algebra. Commit `8ed9d41e6` corrects that classification and replaces its invalid nilpotency argument with a complete invariant-complement proof. The two explicit algebraic counterexamples remain in the card's mathematical remark; its proof defect is resolved. Other classification candidates in this entry remain subject to individual source review.
@@ -82,6 +86,8 @@ of public mathematical remarks.
 
 ### The configured PDF extraction command is missing and service requests failed
 
+- **July 2013 symbol recovery:** the retained extraction drops the divisibility symbol in Groups 1(b). Visual inspection of PDF page 6 confirms `p` does not divide `q-1`, exactly as stated on `P-W13PQ`. The web reader returned an internal error for the public raw PDF and a non-retryable rejection for the CDN URL, so neither yielded a PDF that its screenshot tool could inspect. Rendering the retained PDF with the installed system PDFium and inspecting the resulting page image succeeded without OCR or a new text extraction. The card's hypothesis needed no correction.
+
 - **July 2003 lattice recovery:** `P-ARTALG-JU03-6` replaced its essential diagram with the undefined phrase “a specific diamond shape.” Native inspection of PDF page 45 shows exactly four incomparable middle vertices, plus top and bottom. Commit `6b1b83169` restores that complete order relation and proves all five decisions, including realization over the specified base field. For this inspection, `UV_NO_SYNC=1 uv run python` lacked `pypdfium2`; `/usr/bin/python3` already had it and rendered the retained source successfully without installing packages or running OCR. PDF page 44 contains problem 5, not the required diagram.
 
 - **Object and need:** source verification for `P-ARTALG-AL04-3` exposed an unavailable configured PDF extraction command and subsequent remote-service failures. The installed source-reading workflow should be usable without guessing numeric hypotheses from extracted text.
@@ -98,6 +104,8 @@ of public mathematical remarks.
 
 ### Single-card validation accepts duplicate YAML mapping keys
 
+- **July 2013 reproduction:** `just check-card` reported schema and Markdown parsing OK for `P-W13IN` while the immediately following diff contained two top-level `audit` keys and two complete coset-action proofs. Both versions were read and found mathematically correct. A subsequent external edit removed the duplicate; `f2c54e941` contains the retained single proof and audit list. This resolves the card collision, not the parser's missing duplicate-key diagnostic.
+
 - **Object and need:** `qualc.authoring check` must reject ambiguous duplicate mapping keys in card front matter, rather than reporting that the card parses correctly.
 - **Observed evidence:** on 2026-09-10, `just check-card P-T4WCS` reported schema and Markdown parsing OK while the card had two top-level `audit` keys and two independently authored solution sections. Commit `cc3b2e722` preserves that exact duplicate-key example.
 - **Impact and owner:** a syntactically accepted card can contain conflicting audit histories without a diagnostic. This entry concerns the card parser; the separate same-range ownership collision is recorded below.
@@ -105,6 +113,8 @@ of public mathematical remarks.
 - **Repair:** reject duplicate mapping keys in card front matter. The particular card was reconciled in `f5f68b2db` after reading both correct proofs; the shorter support-and-transitivity argument was retained, with both original versions preserved in history. That content repair does not repair the parser.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
+
+- **July 2013 reproduction:** while this stream authored `P-W13IN`, a second writer independently appended the same coset-action proof and an additional top-level `audit` key. A fresh read later showed only this stream's visually source-checked proof; the other writer had removed its duplicate before the attempted commit. Both versions were independently reviewed. Later full-context source-check patches for `P-W5LVB` and `P-NGXAE` were rejected without changes after another writer had supplied complete proofs. Those proofs were read in full, checked against the source and the required exhaustive classifications, and preserved in commits `3d093c891` and `1d405a5b6`. Native `agents.status` again returned `WORKER_IDENTITY_LOST`, so the tool still supplied no addressable owner for coordination.
 
 - **July 2003 reproduction, 2026-09-10:** `P-ARTALG-JU03-5` and `P-ARTALG-JU03-8` were each read without solutions and acquired another writer's complete solution before this stream's exact-context patch. Both patches were rejected without changes. The resulting proofs were read in full and preserved; this stream instead completed the still-unwritten lattice and solvability cards. The overlapping ownership therefore persists beyond the July 2006 section.
 
@@ -121,6 +131,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **July 2013 check and inventory requests:** the combined `P-XVV4O` single-card check, whitespace check, and diff read was rejected before execution with the safety-status message. Separate `just check-card` and `just diff-card` requests succeeded, followed by a successful whitespace check and commit `0150fd7f8`. A later combined Git-status/complaint-diff request and read-only `Corpus`/`parse_cards` inventory request was also rejected before execution; the separate complaint diff and native `just unsolved-in` invocation were usable. These rejections do not establish failed repository checks.
 
 - **Completion-query reproduction, 2026-09-10:** a read-only `Corpus`/`parse_cards` measurement of the two algebra packets was rejected before execution after the June 2015 proofs were committed. Separate calls to the existing `just unsolved-in` recipe remain the source-order measurement route; the rejected request supplies no evidence of a parser or corpus failure.
 
@@ -219,6 +231,8 @@ of public mathematical remarks.
 - **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
 
 ### Direct-to-`main` streams can globally block unrelated card commits with Git sequencer state
+
+- **July 2013 reproduction:** the `just commit-card` attempt for `P-W13IN` returned exit 1 with `Cherry-pick currently in progress` and no pending change to that card. Immediate inspection found `f2c54e941` already committed on `main`, a clean card path, and no remaining `CHERRY_PICK_HEAD`. Thus this attempt raced with another stream's successful commit, rather than exposing a failed mathematical or schema check. No sequencer state was aborted or otherwise modified by this stream.
 
 - **Object and need:** concurrent file-disjoint solution streams committing directly to `main`; one stream's commit operation should not prevent another stream from banking an unrelated card.
 - **Observed evidence:** on 2026-09-10, `just commit-card P-S04DG` and later `just commit-card P-S05X3` each failed because the shared checkout was temporarily in `Cherry-pick currently in progress`, even though the concurrently edited card was in a disjoint collection. In both cases the intended prelim card later appeared as a clean committed path after the foreign sequencer operation completed.
