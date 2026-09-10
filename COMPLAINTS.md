@@ -80,14 +80,6 @@ of public mathematical remarks.
 - **Uncertainty:** the omitted clause is verified against two reproductions of the source exercise; no ambiguity remains about the intended hypothesis.
 - **Repair:** restore the infinite-case injectivity clause on `P-MMAQ-WV7QEYSPXM` before attaching a proof.
 
-### P-HGRO11 does not specify the coefficient field
-
-- **Object and need:** `P-HGRO11` in `SRC-HARVARD-GROUPS-ORAL`; deciding whether a determinant-one matrix group is simple requires the coefficient field and whether the intended group is $SL_2(F)$ or its projective quotient.
-- **Observed evidence:** both the preserved Harvard source extraction and the local card ask only whether “the group of $2\times2$ matrices of determinant $1$” is simple, with no coefficient field. For example, if $\operatorname{char}F\ne2$, then $-I$ is a nontrivial central element of $SL_2(F)$, while simplicity statements for $PSL_2(F)$ depend on $F$.
-- **Impact and owner:** there is no source-faithful yes/no answer to the card as written. The Harvard group-orals source/card record owns recovery of the intended field or clarification that the question concerns a particular projective special linear group.
-- **Uncertainty:** verified against the retained Harvard PDF extraction; the omitted field may have been supplied orally or by surrounding course context not present in the preserved question list.
-- **Repair:** recover the intended coefficient field/group from an independent Harvard source or explicitly mark the source question as underdetermined before solution authorship resumes.
-
 ## Workflow and rendering papercuts
 
 ### The configured PDF extraction command is missing and service requests failed
@@ -148,7 +140,7 @@ of public mathematical remarks.
 
 ### A read-only connector command was rejected before execution
 
-- **Double-dual and unit-group card polling, 2026-09-10:** empty-input polls of sessions `96018` and `84268`, containing the single-card parser and diff reviews for `P-EMAL3` and `P-HCAO2`, were blocked before retrieval with the safety-status message. In each case the identical retry returned exit zero and the complete diff. Both parser and whitespace checks succeeded; these are reproduced connector-screening failures, not failed repository checks.
+- **Double-dual, unit-group, and Frobenius card polling, 2026-09-10:** empty-input polls of sessions `96018`, `84268`, and `13500`, containing the single-card parser and diff reviews for `P-EMAL3`, `P-HCAO2`, and `P-HGRO44`, were blocked before retrieval with the safety-status message. In each case the identical retry returned exit zero and the complete diff. All parser and whitespace checks succeeded; these are reproduced connector-screening failures, not failed repository checks.
 
 - **Emory review and commit requests, 2026-09-10:** a combined request for `P-MMAQ-YRTGM662ZN` single-card parsing, whitespace checking, and a Git diff was rejected before execution with the safety-status message. Separate parser and Git requests succeeded and returned the complete reviewed proof, committed in `91576982f`. Later, a combined commit/status/read request for `P-EMAF3` was rejected before execution; the separate commit request succeeded in `642b5b992`. These were connector-screening failures, not failed repository checks or missing files.
 
