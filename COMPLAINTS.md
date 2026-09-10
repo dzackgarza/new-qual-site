@@ -40,6 +40,24 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-LLNJ7 needs uniform convergence in the vertical parameter
+
+- **Object and need:** `P-LLNJ7` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card assumes only that $f(x+iy)\to A$ as $x\to\infty$ for each fixed $y\in[0,b]$, with the same limit $A$, and concludes convergence of the integrals over the vertical segments $\gamma_x$.
+- **Observed evidence:** take $b=1$, $x_0=1$, $A=0$, and choose a continuous nonnegative function $\phi$ supported in $[-1,1]$ with $\int\phi=c>0$. Define
+  \[
+  f(x+iy)=x^2\phi\bigl(x^2(y-1/x)\bigr),\qquad x\ge1,\ 0\le y\le1.
+  \]
+  This is continuous. For every fixed $y>0$, the argument $x^2y-x\to+\infty$, while for $y=0$ it equals $-x$; hence $f(x+iy)\to0$ for every fixed $y$. But for all sufficiently large $x$,
+  \[
+  \int_{\gamma_x}f(z)\,dz
+  =i\int_0^1x^2\phi(x^2(y-1/x))\,dy
+  =i\int_{-x}^{x^2-x}\phi(u)\,du
+  =ic\ne0.
+  \]
+- **Impact and owner:** the claimed conclusion is false under pointwise convergence alone. Uniform convergence in $y$ (or another valid domination/equicontinuity hypothesis) would justify passing the limit through the finite-interval integral.
+- **Uncertainty:** the counterexample is decisive. The card appears only in the unsorted complex-analysis compilation and has no independent provenance presently identified.
+- **Repair:** recover the originating source and restore the intended uniformity or domination hypothesis before attaching a proof.
+
 ### P-HZ3G4 has the wrong half-plane of convergence
 
 - **Object and need:** `P-HZ3G4` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card asks to prove uniform convergence of $\sum_{n\ge1}\sin(nz)/2^n$ on the full half-plane $\{\Im z<\log 2\}$.
