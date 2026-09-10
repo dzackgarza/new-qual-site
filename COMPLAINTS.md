@@ -44,10 +44,12 @@ of public mathematical remarks.
 
 - **Additional source-checked repair:** page 5, Rings and modules 3, confirms `P-TB7BG` as algebra. Commit `8ed9d41e6` corrects that classification and replaces its invalid nilpotency argument with a complete invariant-complement proof. The two explicit algebraic counterexamples remain in the card's mathematical remark; its proof defect is resolved. Other classification candidates in this entry remain subject to individual source review.
 
+- **Further verified repairs:** Summer 2007 Rings 1 and 3 confirm the algebra classifications of `P-PDAPQ` and `P-ZSFKA`, corrected in `fdfd7e73b` and `019c900b6`. The latter also resolves the signed-norm ambiguity by stating the absolute norm and proving Euclidean division, with the source convention explained on the card.
+
 - **Object and need:** `SRC-ART-ALG-2003-2009-PRELIMS`; cards should be filed by the mathematical subject of the source rather than by the generic word “prelim.”
 - **Observed evidence:** the original Summer 2009 Algebra Qualifying Exam, page 2, Rings 3–4, confirms algebra content for `P-CSEAZ` and `P-JH3BD`, but both cards had sole area `prelim`. Their source-backed solution edits correct those two areas. A subsequent `rg -l '^  - prelim$' corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS` returned 11 other cards, including `P-3DS32`, `P-GW4KD`, `P-PDAPQ`, and `P-ZSFKA`.
 - **Impact and owner:** subject-based browsing can file algebra questions under prelim. This collection owns source-backed classification repairs.
-- **Uncertainty:** the first two misclassifications were checked against the scan. The 11 remaining paths are review candidates, not individually verified defects; the literal metadata search was restricted to this collection.
+- **Uncertainty:** the original literal search was restricted to this collection and returned 11 review candidates. `P-TB7BG`, `P-PDAPQ`, and `P-ZSFKA` have since been individually source-checked and repaired; the other candidates are not individually verified defects in this entry.
 - **Repair:** read each remaining candidate with its source and correct confirmed subject mismatches, preserving any genuinely intended prelim classification rather than applying a bulk substitution.
 
 ### P-4IKKY is internally inconsistent as transcribed
@@ -76,7 +78,17 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### Single-card validation accepts duplicate YAML mapping keys
+
+- **Object and need:** `qualc.authoring check` must reject ambiguous duplicate mapping keys in card front matter, rather than reporting that the card parses correctly.
+- **Observed evidence:** on 2026-09-10, `just check-card P-T4WCS` reported schema and Markdown parsing OK while the card had two top-level `audit` keys and two independently authored solution sections. Commit `cc3b2e722` preserves that exact duplicate-key example.
+- **Impact and owner:** a syntactically accepted card can contain conflicting audit histories without a diagnostic. This entry concerns the card parser; the separate same-range ownership collision is recorded below.
+- **Uncertainty:** this establishes a missed duplicate-key diagnostic in the single-card command, not the behavior of every loader or the full build. Multiple deliberately authored solutions are not themselves an error.
+- **Repair:** reject duplicate mapping keys in card front matter. The particular card was reconciled in `f5f68b2db` after reading both correct proofs; the shorter support-and-transitivity argument was retained, with both original versions preserved in history. That content repair does not repair the parser.
+
 ### Supposedly disjoint collection streams collided on consecutive cards
+
+- **Additional reproduction:** the next card `P-T4WCS` received two independently correct proofs and duplicate audit keys in `cc3b2e722`; `f5f68b2db` reconciles them after full comparison. A further pair of native `agents.status` attempts both returned `WORKER_IDENTITY_LOST`, so this stream could not obtain an addressable owner for coordination either.
 
 - **Object and need:** direct-to-main authorship for the assigned interval `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI`; each card must have one active writer so a completed proof can be reviewed and committed without overwriting another author's work.
 - **Observed evidence:** on 2026-09-10, `P-I5GAL` was read as an unsolved card with no audit entries. Before the prepared patch was applied, another writer added an audit and a complete proof. The patch failed its exact-context check and changed nothing. A subsequent read showed the new proof, and Git then recorded it in `7a51eaba1`. The immediately following source-order card, `P-RK2VH`, also acquired an external edit while this stream had not touched it. This establishes actual overlap inside `SRC-ART-ALG-2003-2009-PRELIMS`, not merely unrelated changes elsewhere in the shared checkout; attribution of the two external edits to the same conversation was not established.
@@ -85,6 +97,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **Additional reproduction, 2026-09-10:** a batched read-only request for Git status/history, TODO text, and authoring-command discovery was rejected with the same safety-status message. Separate native file reads and a smaller Git-status command succeeded. No requested mutation or repository check was involved.
 
 - **Object and need:** source-ordered authoring in the `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI` range; reading a selected card, finding its retained source, and inspecting a Git diff should work without mutation.
 - **Observed evidence:** on 2026-09-10 a combined `just read-card P-CSEAZ`, `find assets/attachments ...`, and `git diff -- COMPLAINTS.md` invocation was blocked with “we couldn't determine the safety status of the request.” Running the same read-only operations in separate calls succeeded. Later, two empty-input polls of the running `just read-card P-JH3BD` session received the same rejection; the native connector read succeeded for the card. The first image-view request for the rendered June 2008 Rings page was also rejected, while an identical retry displayed it successfully.
@@ -167,6 +181,8 @@ of public mathematical remarks.
 - **Repair:** preserve the source wording, but retain the orientation caveat in the mathematical solution unless the original PDF is visually checked and an orientation mark is confirmed.
 
 ### `just unsolved-in` can hang indefinitely while scanning the corpus
+
+- **Additional measurement, 2026-09-10:** `UV_NO_SYNC=1 just unsolved-in SRC-ALG-ART-HEACCB` produced no output for at least 46 seconds, then completed successfully with zero unsolved appearances. This run used `qualc.authoring`, not `tools/unsolved_queue.py`; it confirms a long delay, not an indefinite hang or a diagnosed deadlock.
 
 - **Object and need:** `just unsolved-in <collection>` during source-ordered solution authoring; it should return the unsolved appearances for one collection promptly without regenerating `queues/C-unsolved-cards.md`.
 - **Observed evidence:** on 2026-09-10, `just unsolved-in SRC-UGA-PRELIM-SPRING-2004` remained running for more than two minutes in `tools/unsolved_queue.py` without producing output; the invocation was terminated before any authored edit.
