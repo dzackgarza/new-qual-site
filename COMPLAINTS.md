@@ -90,14 +90,6 @@ of public mathematical remarks.
 - **Source verification:** `assets/attachments/extracted/Azoff Problems by Topic.md` problem 10 reproduces the same half-plane $\{\Im z<\ln2\}$. The bad domain is therefore present in the source material rather than introduced by the standalone-card extraction.
 - **Repair:** correct the source-level convergence domain, most naturally to the strip $|\Im z|<\log2$ (or state compact-uniform convergence there), before attaching a proof.
 
-### P-DFHS3 mixes the integration variable with an unexplained parameter
-
-- **Object and need:** `P-DFHS3`; the card asks to calculate $\int_0^\infty ((1+z)^2(z+9x^2))^{-1}\,dx$.
-- **Observed evidence:** the integration variable is $x$, but the first two factors use an unexplained symbol $z$. No hypothesis specifies $z$, its branch, or a range ensuring convergence and avoiding poles. The title reproduces the same mixed-variable expression.
-- **Impact and owner:** the integral is not a single numerical problem as written. Replacing $z$ by $x$ or treating $z$ as a parameter would lead to different mathematics and cannot be chosen without source evidence.
-- **Uncertainty:** the malformed local statement is verified; the unsorted collection supplies no independent provenance.
-- **Repair:** recover the originating source and restore the intended variable/parameter before attaching a solution.
-
 ### P-DEJGY(b)(ii) omits the second level-set value
 
 - **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
