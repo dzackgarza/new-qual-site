@@ -21,6 +21,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Restored the source's unrestricted smooth-kernel convolution obstruction on [0,1]; the prior authored version had narrowed h to compact support and changed the ambient domain to the line.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Replaced part (3) by a proof for arbitrary smooth h using the explicit interval convolution formula and a discontinuous L1 target.
 ---
 
 ::: {.problem}
@@ -36,10 +44,10 @@ Let $I=[0,1]$ and write
 
 2. Prove that $L^p(I)$, meaning measurable finite-$p$-norm functions modulo equality almost everywhere, is Banach for $1\le p\le\infty$.
 
-3. In the standard convolution setting on $\mathbb R$, prove that there is no $h\in C_c^\infty(\mathbb R)$ such that
+3. Prove that there is no smooth function $h\in C^\infty(\mathbb R)$ such that
 \[
-f*h=f
-\qquad\text{for every }f\in L^1(\mathbb R).
+(f*h)(x):=\int_0^1 f(y)h(x-y)\,dy=f(x)
+\qquad\text{for every }f\in L^1([0,1])\text{ and every }x\in[0,1].
 \]
 
 4. Prove Hölder's inequality: if $1/p+1/q=1$, then
@@ -108,16 +116,28 @@ Since the original sequence is Cauchy, it follows that $f_n\to f$ in $L^p$.
 For $p=\infty$, if $(f_n)$ is Cauchy in essential-supremum norm, choose representatives after discarding the countable union of null exceptional sets in the Cauchy estimates. Off that null set, $(f_n(x))$ is uniformly Cauchy, hence converges uniformly to a bounded measurable $f$, and $\|f_n-f\|_\infty\to0$. Thus $L^\infty(I)$ is complete as well.
 :::
 
-<1>3. There is no smooth convolution identity in $L^1(\mathbb R)$.
+<1>3. There is no smooth convolution identity on $L^1([0,1])$.
 ::: {.proof}
-Suppose $h\in C_c^\infty(\mathbb R)$ satisfied $f*h=f$ for every $f\in L^1(\mathbb R)$. For every $f\in L^1$, the function $f*h$ is continuous: indeed,
+Suppose $h\in C^\infty(\mathbb R)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. For $x,x'\in[0,1]$,
 \[
-|(f*h)(x+t)-(f*h)(x)|
-\le \|f\|_1\sup_y|h(y+t)-h(y)|,
+\begin{aligned}
+|(f*h)(x')-(f*h)(x)|
+&\le \int_0^1 |f(y)|\,|h(x'-y)-h(x-y)|\,dy\\
+&\le \|f\|_1\sup_{t\in[-1,1]}|h(t+x'-x)-h(t)|.
+\end{aligned}
 \]
-and the right-hand side tends to $0$ as $t\to0$ by uniform continuity of $h$.
+For $x,x'\in[0,1]$, all arguments of $h$ occurring above lie in the compact interval $[-1,1]$. Since $h$ is continuous, it is uniformly continuous there. Hence the right-hand side tends to $0$ as $x'\to x$, so $f*h$ is continuous on $[0,1]$.
 
-Take $f=\mathbf1_{[0,1]}$. Then $f*h$ would be continuous and equal to $f$ almost everywhere. No continuous function can agree almost everywhere with $\mathbf1_{[0,1]}$: continuity forces the values $1$ on $(0,1)$ and $0$ just outside $[0,1]$, contradicting continuity at an endpoint. Hence no such $h$ exists.
+Now take
+\[
+f=\mathbf1_{[0,1/2]}.
+\]
+This belongs to $L^1([0,1])$ but is discontinuous at $1/2$. The assumed identity would give
+\[
+f(x)=(f*h)(x)
+\qquad(x\in[0,1]),
+\]
+while the right-hand side is continuous. This is impossible. Therefore no smooth $h$ can act as the identity convolution kernel on all of $L^1([0,1])$.
 :::
 
 <1>4. Hölder's inequality.
