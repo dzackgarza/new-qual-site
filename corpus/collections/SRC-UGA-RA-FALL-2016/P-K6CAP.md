@@ -12,6 +12,14 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 6 of the official UGA August 2016 real-analysis qualifying exam; replaced the legacy tail estimate by a rigorous compact-support approximation argument.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 Let $f, g \in L^2(\RR)$. Show that
@@ -25,46 +33,35 @@ Let $f, g \in L^2(\RR)$. Show that
 - Small tails in $L^p$.
 :::
 
-:::{.solution}
-\envlist
+::: solution
 
-- Use the fact that $L^p$ has small tails: if $h\in L^2(\RR)$, then for any $\eps > 0$, 
-\[  
-\forall \eps,\, \exists N\in \NN \qst \int_{\abs{x} \geq {N}} \abs{h(x)}^2 \,dx < \eps
-.\]
+Let
+\[
+I_n:=\int_{\mathbb R} f(x)g(x+n)\,dx.
+\]
+Fix $\varepsilon>0$. Choose $h\in L^2(\mathbb R)$ with compact support such that
+\[
+\|g-h\|_2<\frac{\varepsilon}{2(1+\|f\|_2)}.
+\]
+Then, by Cauchy--Schwarz and translation invariance,
+\[
+\left|\int f(x)(g-h)(x+n)\,dx\right|
+\le \|f\|_2\|g-h\|_2<\frac\varepsilon2.
+\]
 
-- So choose $N$ large enough so that
-\[  
-\int_{\norm{x} \geq N}\abs{g(x)}^2 < \eps \\
-\int_{\norm{x} \geq N}\abs{f(x)}^2 < \eps \\
-.\]
-
-- Then write
-\[  
-\int_{\RR^d} f(x) g(x+n) \,dx = \int_{\norm{x} \leq N} f(x)g(x+n)\,dx + \int_{\norm{x} \geq N} f(x) g(x+n)\,dx
-.\]
-
-- Bounding the second term: apply Cauchy-Schwarz
-\[  
-\int_{\norm{x} \geq N} f(x) g(x+n)\,dx
-\leq 
-\qty{ \int_{\norm{x} \geq N} \abs{f(x)}^2}^{1\over 2} \cdot 
-\qty{ \int_{\norm{x} \geq N} \abs{g(x)}^2}^{1\over 2}
-\leq \eps^{1\over 2} \cdot \norm{g}_2
-.\]
-
-- Bounding the first term: also Cauchy-Schwarz, after variable changes
-\[  
-\int_{\norm{x} \leq N} f(x) g(x+n)\,dx 
-&= \int_{-N}^N f(x) g(x+n)\,dx \\
-&= \int_{-N+n}^{N+n} f(x-n) g(x)\,dx \\
-&\leq \int_{-N+n}^{\infty} f(x-n) g(x)\,dx \\
-&\leq \qty{\int_{-N+n}^{\infty} \abs{f(x-n)}^2}^{1\over 2}\cdot \qty{\int_{-N+n}^{\infty} \abs{g(x)}^2}^{1\over 2} \\
-&\leq \norm{f}_2 \cdot \eps^{1\over 2}
-.\]
-
-- Then as long as $n\geq 2N$, we have
-\[  
-\int \abs{f(x) g(x+n)} \leq \qty{\norm{f}_2 + \norm{g}_2} \cdot \eps^{1\over 2} 
-.\]
+Choose $R>0$ so that $h=0$ a.e. outside $[-R,R]$. Then
+\[
+\int f(x)h(x+n)\,dx
+=\int_{-n-R}^{-n+R}f(x)h(x+n)\,dx,
+\]
+so
+\[
+\left|\int f(x)h(x+n)\,dx\right|
+\le \|h\|_2
+\left(\int_{-n-R}^{-n+R}|f(x)|^2\,dx\right)^{1/2}.
+\]
+Since $f\in L^2(\mathbb R)$, its $L^2$ tails tend to zero, and therefore the last expression tends to $0$ as $n\to\infty$. For all sufficiently large $n$ it is below $\varepsilon/2$. Hence $|I_n|<\varepsilon$ eventually, proving
+\[
+\boxed{\lim_{n\to\infty}\int_{\mathbb R}f(x)g(x+n)\,dx=0.}
+\]
 :::
