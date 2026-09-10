@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-O4HLIPMOVO
 kind: problem
-title: $K\subseteq L$ for finite fields iff $\#K=p^r$ and $\#L=p^s$ for the same prime
-  $p$ with $r\leq s$
+title: Finite-field embeddings and divisibility of extension degrees
 classification:
   areas:
   - algebra
@@ -16,15 +15,39 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually verified the incorrect inequality r<=s in Fields 1 on PDF page 1; the existing solution instead proves divisibility."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Retained the valid divisibility proof, corrected its statement and conclusion to existence of an embedding, supplied the four-versus-eight counterexample and references, and checked the fixed-field construction."
 ---
 
 ::: problem
 Let $K$ and $L$ be finite fields.
-Show that $K$ is contained in $L$ if and only if $\# K = p^r$ and $\# L = p^s$ for the same prime $p$, and $r \leq s$.
+Show that $K$ is isomorphic to a subfield of $L$ if and only if
+$\#K=p^r$ and $\#L=p^s$ for the same prime $p$, with $r\mid s$.
+Here $r,s$ are positive integers.
+:::
+
+::: remark
+The inequality $r\leq s$ does not suffice. For example,
+$\mathbb F_4$ cannot embed in $\mathbb F_8$, because the
+tower law would require $2$ to divide $3$. Cardinalities
+determine existence of an embedding, not literal inclusion
+of arbitrary presentations of the fields. If both fields
+are realized inside one algebraic closure of $\mathbb F_p$,
+the criterion also characterizes literal subfield containment.
 :::
 
 ::: {.solution}
-<1>1. Forward direction ($K \subseteq L \implies \operatorname{char} K = \operatorname{char} L = p$ and $r \mid s$):
+Every finite field has prime characteristic and cardinality
+a positive power of that prime [@DF04]. When an embedding
+$K\hookrightarrow L$ is given, identify $K$ with its image.
+
+<1>1. Forward direction ($K\hookrightarrow L\implies \operatorname{char} K = \operatorname{char} L = p$ and $r \mid s$):
 <2>1. If $K$ is a subfield of $L$, then $L$ is a finite-dimensional vector space over $K$.
 Let $d = [L : K] \ge 1$ denote the degree of the extension.
 ::: {.proof}
@@ -54,7 +77,9 @@ polynomial divisibility of $x^k - 1$ by $x - 1$.
 <2>2. The multiplicative group $L^\times$ is a cyclic group of order $p^s - 1$.
 Since $(p^r - 1) \mid (p^s - 1)$, $L^\times$ contains a unique cyclic subgroup $H$ of order $p^r - 1$.
 ::: {.proof}
-subgroup classification of finite cyclic groups.
+The multiplicative group of a finite field is cyclic,
+and a cyclic group has exactly one subgroup for each
+divisor of its order [@DF04].
 :::
 <2>3. The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \mathbb{F}_p[x]$ in $L$.
 Since the map $\phi(x) = x^{p^r}$ is an automorphism of $L$ (the $r$-th power of the Frobenius automorphism), the fixed set:
@@ -63,17 +88,25 @@ K' = \operatorname{Fix}(\phi) = \{\alpha \in L \mid \alpha^{p^r} = \alpha\}
 \]
 is a subfield of $L$.
 ::: {.proof}
-fixed field of a field automorphism is a subfield.
+The Frobenius map is an automorphism of a finite field,
+and the fixed elements of any field automorphism form
+a subfield [@DF04].
 :::
 <2>4. The subfield $K'$ has cardinality $\# K' = p^r = \# K$.
 Since any two finite fields with $p^r$ elements are isomorphic, $K \cong K' \subseteq L$, so $K$ is isomorphic to a subfield of $L$.
 ::: {.proof}
-uniqueness up to isomorphism of finite fields of order $p^r$.
+Finite fields of the same cardinality are isomorphic [@DF04].
 :::
 
 <1>3. Conclusion:
-$K \subseteq L$ if and only if $\# K = p^r$ and $\# L = p^s$ for the same prime $p$ with $r \mid s$ (which in particular implies $r \le s$). Q.E.D.
+$K$ embeds in $L$ if and only if $\#K=p^r$ and $\#L=p^s$
+for the same prime $p$ with $r\mid s$.
 ::: {.proof}
-<1>1 and <1>2.
+This follows from <1>1 and <1>2. Inside a common algebraic
+closure, any subfield with $p^r$ elements is exactly the
+root set of $T^{p^r}-T$: all its elements are roots by
+Lagrange's theorem and the polynomial has at most $p^r$
+roots. Thus $K$ equals the constructed $K'$ in that
+setting, proving the final assertion of the remark.
 :::
 :::
