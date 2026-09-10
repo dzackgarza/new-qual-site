@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA10CA5
 kind: problem
-title: Contour integral of meromorphic function
+title: Residues on a twice-traversed limaçon
 classification:
   areas:
   - complex-analysis
@@ -22,6 +22,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Replaced the incorrect loop-location claims by exact quadratic root counts; the index at one half is four, and its missing residue changes the answer."
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Compared both complete copies of Fall 2010 problem 5. The corrected quadratic-root proof contains the mathematics of P-JHUMAY11ANM; removed that duplicate and its unsupported May 2011 membership after checking the actual May 2011 and Fall 2010 pages."
 ---
 
 Let $\gamma$ be the closed curve in the complex plane that is given in polar coordinates by $r = 2 + 3\cos\theta$, $0 \leq \theta \leq 4\pi$, oriented in the direction of increasing $\theta$.
