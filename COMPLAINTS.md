@@ -40,6 +40,18 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-HZ3G4 has the wrong half-plane of convergence
+
+- **Object and need:** `P-HZ3G4` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card asks to prove uniform convergence of $\sum_{n\ge1}\sin(nz)/2^n$ on the full half-plane $\{\Im z<\log 2\}$.
+- **Observed evidence:** take $z=-iy$ with $y>\log 2$. Then $\sin(nz)=-i\sinh(ny)$, so
+  \[
+  \left|\frac{\sin(nz)}{2^n}\right|=\frac{\sinh(ny)}{2^n}\sim \frac12\left(\frac{e^y}{2}\right)^n,
+  \]
+  which does not tend to zero because $e^y/2>1$. Thus the series fails even pointwise on part of the stated region.
+- **Impact and owner:** the card cannot receive the requested proof as written. The correct pointwise and compact-uniform region for the displayed series is the strip $|\Im z|<\log 2$; any source-faithful repair must determine whether a missing lower bound on $\Im z$ was intended.
+- **Uncertainty:** the counterexample is decisive. The card appears only in `SRC-UNSORTED-COMPLEX-ANALYSIS`, with no independent source currently identified.
+- **Repair:** recover the originating source and restore the intended convergence domain before attaching a solution.
+
 ### P-DFHS3 mixes the integration variable with an unexplained parameter
 
 - **Object and need:** `P-DFHS3`; the card asks to calculate $\int_0^\infty ((1+z)^2(z+9x^2))^{-1}\,dx$.
