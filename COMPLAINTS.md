@@ -40,13 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### E-FPZDC is missing the referenced gamma-function setup
-
-- **Object and need:** `E-FPZDC` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card asks to prove holomorphy of the gamma function and Euler's reflection formula.
-- **Observed evidence:** the statement refers to "the integral formula above" and "the formula in the previous question," but neither referenced item is present in the card. The only surviving formula is a hint for $\Gamma(1-s)$.
-- **Impact and owner:** the exercise is not self-contained as a standalone card. A mathematically standard reconstruction is possible, and distinct cards in this corpus already state it explicitly, but silently importing omitted preceding material would change this card's source content.
-- **Repair:** recover the source context or copy the missing hypotheses/formulas into the card with an explicit provenance note before attaching a solution.
-
 ### E-N6DX3 contains unresolved image-only and omnibus prompts
 
 - **Object and need:** `E-N6DX3` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
