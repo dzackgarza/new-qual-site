@@ -82,6 +82,13 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### A narrow patch also removed an unrelated trailing blank line
+
+- **Object and need:** patches to the JHU collection's source membership should leave unrelated bytes unchanged.
+- **Observed evidence:** twice in this continuation a native `apply_patch` changing only the collection's middle section also removed the last blank line of `index.md`. Both complete diffs showed the extra end-of-file deletion, which was restored before commits `a1d6f19ef` and `5ff8e48f5`.
+- **Impact and owner:** this is patch-helper output normalization rather than an authored content decision. No mathematical content was lost; the full-file diff was needed to detect the incidental change.
+- **Uncertainty and repair:** the helper's implementation was not inspected. Preserve trailing bytes outside the selected hunks; the two repository diffs have been corrected, but the helper behavior remains unmodified.
+
 ### Continuation tool responses were not available for verification
 
 - **JHU verification recovered, 2026-09-10:** fresh native file reads and Git status returned the complete pending `P-JHUU67CA1` proof. Its source and whole diff were reread, single-card parsing and whitespace checks returned success, and `10a845da3` committed the unchanged proof on `main`. Later source-order authoring also returned complete command results. This establishes recovery of the JHU checkpoint, not the cause of the earlier missing responses or a permanent repair of result delivery.
@@ -151,6 +158,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **Fall 2015 JHU polling, 2026-09-10:** the empty-input poll of session `72126`, running the `P-O3LYK` single-card parser and diff review, was blocked with the safety-status message. The identical retry returned exit zero, successful parsing and the complete diff; `2256b9bd0` committed the reviewed proof. This concerns result retrieval, not a failed repository check; the screening cause remains unspecified.
 
 - **JHU final measurement, 2026-09-10:** a read-only request that invoked `qualc.authoring unsolved`, captured its TSV output, and counted rows was rejected before execution with the safety-status message. The separate `just unsolved-in SRC-JHU-ANALYSIS-EXAMS` request returned exit zero and the full ordered list, beginning with `P-O3LYK`. This is another request-screening failure, not a corpus-parser failure; its cause was not supplied.
 
