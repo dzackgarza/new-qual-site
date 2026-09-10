@@ -22,7 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Proved rationality from finitely many principal parts and polynomial growth at infinity, then glued the reciprocal-reflection across the unit circle by Morera and applied the sphere result."
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually read PDF page 48 and both complete cards. P-JHUSP03CAE repeats exactly problem 1(a); its finite-principal-parts proof is retained here with the complete two-part source item."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Gave the explicit polynomial and principal parts, proved a nonvanishing collar at the unit circle, and replaced implicit curved-boundary gluing by a local fractional coordinate and a uniform translated-boundary estimate."
 ---
+
+Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
 
 (a) Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity.
 Show that $f$ must be a rational function.
@@ -33,28 +43,40 @@ Show that $f$ must be a rational function.
 ::: solution
 <1>1. A meromorphic function on the sphere is rational; in particular, part (a) holds.
 ::: proof
-Assume first the hypothesis of part (a): $f$ is meromorphic on $\mathbb C$ and
-has a pole at infinity. Then there is $R>0$ such that $f$ is holomorphic for
-$|z|>R$. Hence every finite pole lies in the compact disk $|z|\le R$.
-Poles are isolated, so there can be only finitely many of them, say
-$a_1,\dots,a_m$.
+Suppose $f$ is meromorphic on $\mathbb C$ and has either
+a pole or a removable singularity at infinity. Then it
+has no finite pole for $|z|>R$, for some $R>0$. Its
+finite poles form a locally finite set: the local
+meromorphic factorization at any point gives a neighborhood
+with at most one pole. Compactness of $|z|\leq R$ therefore
+makes the list of poles finite, say $a_1,\ldots,a_m$.
 
-For each $a_j$, let $P_j(1/(z-a_j))$ be the principal part of the Laurent
-series of $f$ at $a_j$, and set
+Let the principal part at $a_j$ be
 $$
-g(z)=f(z)-\sum_{j=1}^m P_j\!\left(\frac1{z-a_j}\right).
+S_j(z)=\sum_{\ell=1}^{d_j}\frac{c_{j,\ell}}{(z-a_j)^\ell}.
 $$
-All finite principal parts have been removed, so $g$ is entire. Each subtracted
-term tends to zero at infinity. Since $f$ has a pole at infinity, $g$ has at
-worst a pole at infinity as well. Thus there are constants $C,N$ with
-$|g(z)|\le C(1+|z|^N)$ for large $|z|$. Cauchy's coefficient estimates then
-force every Taylor coefficient of $g$ above degree $N$ to vanish. Hence $g$ is
-a polynomial. Therefore $f$ is a polynomial plus finitely many principal-part
-rational functions, and is rational.
-
-The same proof also covers the case where infinity is removable: then $g$ is
-bounded near infinity, so Liouville's theorem makes it constant. Thus every
-function meromorphic on the Riemann sphere is rational.
+The Laurent expansion at infinity has the form
+$$
+f(z)=P_\infty(z)+b_0+O(1/z),\qquad
+P_\infty(z)=\sum_{k=1}^{N}b_k z^k,
+$$
+where $N=0$ and $P_\infty=0$ are permitted in the removable
+case [@SS03]. Subtracting all these principal parts gives
+$$
+G=f-P_\infty-\sum_{j=1}^m S_j.
+$$
+Every finite singularity of $G$ is removable. After their
+removal $G$ is entire, and $G(z)\to b_0$ at infinity
+because each $S_j(z)\to0$. It is bounded outside a disk
+by that limit and on the remaining compact disk by
+continuity. Liouville's theorem gives $G\equiv b_0$ [@SS03].
+Thus
+$$
+f(z)=b_0+P_\infty(z)+\sum_{j=1}^{m}\sum_{\ell=1}^{d_j}
+\frac{c_{j,\ell}}{(z-a_j)^\ell},
+$$
+which is rational. This proves (a), and also the removable
+case at infinity that will be needed in (b).
 :::
 
 <1>2. The boundary condition in part (b) produces a meromorphic function on the sphere.
@@ -67,9 +89,16 @@ The function
 $$
 f^*(w)=\overline{f(\overline w)}
 $$
-is holomorphic on the unit disk, so on $|z|>1$ the expression is
-$F(z)=1/f^*(1/z)$ and is meromorphic there. Its poles correspond exactly to
-zeros of $f^*$ in the disk.
+is holomorphic on the unit disk: conjugating the Taylor
+coefficients of $f$ gives its Taylor series. Thus on
+$|z|>1$, the expression $F(z)=1/f^*(1/z)$ is meromorphic.
+The boundary modulus excludes $f\equiv0$.
+
+Uniform continuity of $f$ on $\overline\Delta$ gives
+$0<\eta<1/2$ such that $|f(z)|>1/2$ whenever
+$1-\eta<|z|\leq1$: compare $f(z)$ to the unit-modulus
+value $f(z/|z|)$. The reflected expression consequently
+has no pole for $1<|z|<1/(1-\eta)$.
 
 On $|z|=1$, one has $1/\overline z=z$, and the boundary hypothesis gives
 $$
@@ -78,14 +107,45 @@ $$
 Hence the inside definition $F=f$ and the outside reciprocal-reflection have
 the same continuous boundary values on the unit circle.
 
-It remains to justify holomorphic gluing at boundary points. On a sufficiently
-small triangle crossing the unit circle but avoiding the finitely many outside
-poles, split the triangle along the circle. Cauchy's theorem applies on each
-side, and the integrals over the common circular arcs cancel because the two
-continuous traces agree. Approximating the split pieces by curves a positive
-distance from the circle and passing to the limit gives zero integral around
-the original triangle. Morera's theorem therefore makes $F$ holomorphic across
-the circle. Thus $F$ is meromorphic on $\mathbb C$.
+Here is an explicit local gluing argument. Fix $p$ on
+the unit circle and use the fractional coordinate
+$$
+w=i\frac{1-z/p}{1+z/p},\qquad z=p\frac{i-w}{i+w}.
+$$
+These inverse holomorphic maps take $p$ to zero and the
+unit circle locally to the real axis. Indeed,
+$$
+1-\left|\frac{i-w}{i+w}\right|^2
+=\frac{4\operatorname{Im}w}{|i+w|^2},
+$$
+so the upper and lower sides correspond to the inside
+and outside of the circle. Choose $\varepsilon>0$ so
+the inverse maps $|w|<\varepsilon$ into the pole-free
+collar just established. The pullback
+$K(w)=F(p(i-w)/(i+w))$ is continuous there and holomorphic
+off the real axis.
+
+For any closed triangle contained in $|w|<\varepsilon$,
+cut it along the real axis into at most two polygons.
+Translate its upper piece by $i\delta$ and its lower
+piece by $-i\delta$. For sufficiently small $\delta>0$
+both translated polygons remain in the disk and lie
+in the respective open half-planes, so their boundary
+integrals of $K$ are zero by Cauchy's theorem [@SS03].
+For either piece $P$,
+$$
+\left|\int_{\partial P}(K(w\pm i\delta)-K(w))\,dw\right|
+\leq\operatorname{length}(\partial P)
+\sup_{w\in\partial P}|K(w\pm i\delta)-K(w)|\longrightarrow0.
+$$
+The limit follows from uniform continuity on a compact
+neighborhood of the triangle. Degenerate pieces have
+zero integral by cancellation. Passing to the limit and
+adding the two integrals cancels the shared real segment,
+so the original triangle integral is zero. Morera's
+theorem proves that $K$, and hence $F$ near $p$, is
+holomorphic [@SS03]. As $p$ was arbitrary, $F$ is
+meromorphic on the whole plane.
 
 At infinity, write $f(w)=w^k h(w)$ near zero, where $k\ge0$ and $h(0)\ne0$.
 Then for large $z$,
