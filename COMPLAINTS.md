@@ -278,3 +278,11 @@ of public mathematical remarks.
 - **Impact and owner:** the old title did not identify the mathematical content of the card. The problem card owns the title repair.
 - **Uncertainty:** none; the retained exam extraction contains the complete statement.
 - **Repair:** retitled the card to `Generators of $\mathbb F_{p^6}$ inside $\mathbb F_{p^n}$` while preserving the source statement verbatim.
+
+### `P-IH6FO` had a truncated source-stem title
+
+- **Object and need:** `P-IH6FO` in `SRC-UW-ALG-2006`; the title should name the classification problem rather than stop mid-sentence.
+- **Observed evidence:** the card title was `There are five nonisomorphic groups of order 8. For`, while the retained UW 2006 exam asks for the least $n$ admitting an injection of each group of order $8$ into $S_n$.
+- **Impact and owner:** the old title did not identify the mathematical task. The problem card owns the title repair.
+- **Uncertainty:** none; the retained source extraction contains the complete statement.
+- **Repair:** retitled the card to `Minimal faithful permutation degrees of the groups of order $8$` without changing the source-authored problem statement.
