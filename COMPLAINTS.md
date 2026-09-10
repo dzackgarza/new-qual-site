@@ -105,6 +105,8 @@ of public mathematical remarks.
 
 ### The configured PDF extraction command is missing and service requests failed
 
+- **Fall 2007 and September 2005 page inspection:** `mutool draw` rendered PDF pages 36 and 43 successfully and again reported missing ICC support. Native image views showed the full monochrome pages legibly, including the polynomial signs, annular domain wording and the explicit right-half-plane inequalities. This was rendering only, not text extraction or OCR; color-profile fidelity was not tested.
+
 - **Image-view boundary, 2026-09-10:** native `view_image` rejected `/tmp/newqual-july2013-fields-proof.png` because `/tmp` is outside the connector's approved roots, although terminal rendering there succeeded. Moving that rendered page to the ignored repository path `.tmp-july2013-fields-proof.png` allowed inspection of PDF page 8. Keep inspection images inside an approved root; this was an image-path restriction, not a rendering or source-file failure.
 
 - **July 2013 symbol recovery:** the retained extraction drops the divisibility symbol in Groups 1(b). Visual inspection of PDF page 6 confirms `p` does not divide `q-1`, exactly as stated on `P-W13PQ`. The web reader returned an internal error for the public raw PDF and a non-retryable rejection for the CDN URL, so neither yielded a PDF that its screenshot tool could inspect. Rendering the retained PDF with the installed system PDFium and inspecting the resulting page image succeeded without OCR or a new text extraction. The card's hypothesis needed no correction.
@@ -134,6 +136,8 @@ of public mathematical remarks.
 - **Repair:** reject duplicate mapping keys in card front matter. The particular card was reconciled in `f5f68b2db` after reading both correct proofs; the shorter support-and-transitivity argument was retained, with both original versions preserved in history. That content repair does not repair the parser.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
+
+- **September/May 2006 continuation:** the `P-JHUFA06ANA` commit request raced with `57c12967d`, which had already banked exactly the reviewed proof. Fresh reads found complete external proofs on C and D, retained in `c13693447` and `0152ecf9a`. On `P-JHUMAY06ANA`, the first post-edit diff contained two audit keys and two equivalent proofs despite a successful parser result; a subsequent read found the other writer had removed its redundant version, leaving this stream's proof committed in `56ef5c96d`. That single-proof card was reread and reparsed. Exact-context patches for May B, D, E and F were rejected after external proofs appeared; the complete retained proofs were reviewed, and only B's source-punctuation repair was added in `47bb8a4d4`. A fresh `agents.status` again returned `WORKER_IDENTITY_LOST`. No sequencer or index lock was removed; the content is banked, but same-collection ownership and the duplicate-key diagnostic remain unresolved.
 
 - **May 2009 continuation:** `P-JHUMAY09ANA` acquired another writer's complete coefficient classification after the checkpoint read. The fresh repository worklist skipped it and selected B, but that card also acquired a complete proof before this stream's exact-context patch; the patch failed without mutation. Both retained proofs were read in full and preserved in `4eab4ff9e` and `ce62536c3`. The still-unsolved Fourier-integral card D was then completed in `b0470ce1d`. This is further same-collection overlap, not evidence of disjoint authorship.
 
@@ -166,6 +170,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **September/May 2006 review, 2026-09-10:** an empty-input poll of session `46836`, containing the `P-JHUFA06ANA` single-card parse and diff review, was rejected with the safety-status message. The identical retry returned exit zero and the complete successful review output. A later guarded request to validate and conditionally commit the reconciled `P-JHUMAY06ANA` was also blocked before execution; separate Git reads confirmed `56ef5c96d`, and a subsequent standalone check passed on the single-proof card. The latter request included a conditional write, not only a read. Neither rejection was a failed repository check, and no specific screening cause was supplied.
 
 - **Final JHU verification and cleanup:** a combined request to compare the twelve reviewed source cards with their commits and remove only this continuation's temporary Git-index selections and TSV measurements was rejected before execution with the safety-status message. Separate Git verification and cleanup calls succeeded. The JHU subtree has no pending edits, and only the four explicitly named temporary paths were removed; retained PDF page images were untouched. This reproduces request screening, not a failed repository check.
 
