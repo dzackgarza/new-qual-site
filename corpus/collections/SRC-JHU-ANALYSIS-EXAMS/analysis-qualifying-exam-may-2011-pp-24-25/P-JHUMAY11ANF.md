@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANF
 kind: problem
-title: "(continuous functions on the circle S1)."
+title: Absolutely summable Fourier coefficients give a continuous representative
 classification:
   areas:
   - real-analysis
@@ -11,6 +11,13 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 6 of the May 2011 JHU analysis qualifying exam in the preserved compiled source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
