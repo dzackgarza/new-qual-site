@@ -30,7 +30,6 @@ Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \qua
 \]
 :::
 
-
 ::: {.solution}
 <1>1. Let $V=\mathbb C^n$ and write the characteristic polynomial as
 \[

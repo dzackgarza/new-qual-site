@@ -22,67 +22,19 @@ audit:
 ---
 
 ::: problem
-Let $n\ge5$. Show that $A_n$ is the unique proper nontrivial normal subgroup of $S_n$.
-:::
-
-
-::: {.solution}
-Let $N\trianglelefteq S_n$ be proper and nontrivial.
-
-<1>1. The intersection $N\cap A_n$ is a normal subgroup of $A_n$.
-::: {.proof}
-Both $N$ and $A_n$ are normal in $S_n$. Hence $N\cap A_n$ is normal in $S_n$, and therefore in the subgroup $A_n$.
-:::
-
-<1>2. Since $A_n$ is simple for $n\ge5$, either
-\[
-N\cap A_n=\{e\}
-\qquad\text{or}\qquad
-N\cap A_n=A_n.
-\]
-::: {.proof}
-For $n\ge5$, the alternating group $A_n$ is nonabelian simple, so its only normal subgroups are $\{e\}$ and $A_n$. Apply this to <1>1.
-:::
-
-<1>3. If $N\cap A_n=A_n$, then $N=A_n$.
-::: {.proof}
-The equality says $A_n\subseteq N$. Since $[S_n:A_n]=2$, there is no subgroup strictly between $A_n$ and $S_n$. Thus $N=A_n$ or $N=S_n$. Because $N$ is proper, $N=A_n$.
-:::
-
-<1>4. The case $N\cap A_n=\{e\}$ is impossible.
-::: {.proof}
-Restrict the sign homomorphism
-\[
-\operatorname{sgn}:S_n\to\{\pm1\}
-\]
-to $N$. Its kernel is
-\[
-N\cap\ker(\operatorname{sgn})=N\cap A_n=\{e\},
-\]
-so $N$ embeds in a group of order $2$. Since $N$ is nontrivial, $|N|=2$.
-
-A normal subgroup of order $2$ is central: if $N=\{e,z\}$, conjugation by any element of $S_n$ must preserve the unique nonidentity element $z$, so $gz=zg$ for every $g\in S_n$. Thus $z\in Z(S_n)$.
-
-But $Z(S_n)=\{e\}$ for $n\ge3$. Indeed, if a nonidentity permutation $z$ sends $i$ to $j\ne i$, choose $k$ distinct from $i,j$. Then the transposition $(i\ k)$ does not commute with $z$. This contradiction rules out $N\cap A_n=\{e\}$.
-:::
-
-<1>5. Therefore $A_n$ is the unique proper nontrivial normal subgroup of $S_n$.
-::: {.proof}
-By <1>2, only the two cases in <1>3 and <1>4 can occur. The second is impossible, and the first forces $N=A_n$.
-:::
+- Show that $S_{n\geq 5}$ has one normal subgroup: $A_n$.
 :::
 
 ::: {.solution}
-The literal statement has the trivial exceptions $\{1\}$ and $S_n$; the intended claim
-is that $A_n$ is the unique proper nontrivial normal subgroup of $S_n$ for $n\ge 5$.
+The literal statement has the trivial exceptions $\{1\}$ and $S_n$; the intended claim is that $A_n$ is the unique proper nontrivial normal subgroup of $S_n$ for $n\ge 5$.
 
 <1>1. For $n\ge 5$, $A_n$ is simple.
 ::: {.proof}
-We use the standard simplicity theorem for alternating groups: $A_n$ is simple for every
-$n\ge 5$.
+We use the standard simplicity theorem for alternating groups: $A_n$ is simple for every $n\ge 5$.
 :::
 
-<1>2. Let $N\trianglelefteq S_n$. Then $N\cap A_n\trianglelefteq A_n$, so
+<1>2. Let $N\trianglelefteq S_n$.
+Then $N\cap A_n\trianglelefteq A_n$, so
 \[
 N\cap A_n\in\{1,A_n\}.
 \]
@@ -93,8 +45,8 @@ Apply <1>1.
 
 <1>3. If $N\cap A_n=A_n$, then either $N=A_n$ or $N=S_n$.
 ::: {.proof}
-In this case $A_n\le N\le S_n$. Since $[S_n:A_n]=2$, there are no intermediate subgroups
-other than the endpoints.
+In this case $A_n\le N\le S_n$.
+Since $[S_n:A_n]=2$, there are no intermediate subgroups other than the endpoints.
 :::
 
 <1>4. If $N\cap A_n=1$, then $N=1$.
@@ -103,11 +55,12 @@ The composite
 \[
 N\hookrightarrow S_n\twoheadrightarrow S_n/A_n\cong C_2
 \]
-has kernel $N\cap A_n=1$, so $N$ embeds in $C_2$. Thus $|N|\le 2$. If $|N|=2$, write
-$N=\{1,\tau\}$. Normality forces $g\tau g^{-1}=\tau$ for every $g\in S_n$, so
-$\tau\in Z(S_n)$. But $Z(S_n)=1$ for $n\ge 3$: if a nonidentity permutation $\sigma$
-moves $i$ to $j\ne i$, choose $k\notin\{i,j\}$; then the transposition $(j\ k)$ does not
-commute with $\sigma$. Hence $|N|\ne2$, so $N=1$.
+has kernel $N\cap A_n=1$, so $N$ embeds in $C_2$.
+Thus $|N|\le 2$.
+If $|N|=2$, write $N=\{1,\tau\}$.
+Normality forces $g\tau g^{-1}=\tau$ for every $g\in S_n$, so $\tau\in Z(S_n)$.
+But $Z(S_n)=1$ for $n\ge 3$: if a nonidentity permutation $\sigma$ moves $i$ to $j\ne i$, choose $k\notin\{i,j\}$; then the transposition $(j\ k)$ does not commute with $\sigma$.
+Hence $|N|\ne2$, so $N=1$.
 :::
 
 <1>5. Therefore the normal subgroups of $S_n$ are exactly

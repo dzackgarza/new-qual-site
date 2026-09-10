@@ -87,26 +87,33 @@ a cyclic group of order $15$ has a generator of order $15$.
 
 **Part (c).**
 
-<1>1. Let $P$ be a Sylow $3$-subgroup of $G$. Then
+<1>1. Let $P$ be a Sylow $3$-subgroup of $G$.
+Then
 \[
 |N_G(P)|=\frac{|G|}{n_3}=\frac{240}{n_3}.
 \]
 ::: {.proof}
-The conjugation action of $G$ on its Sylow $3$-subgroups is transitive, and the stabilizer of $P$ is $N_G(P)$. Orbit--stabilizer therefore gives $n_3=[G:N_G(P)]$.
+The conjugation action of $G$ on its Sylow $3$-subgroups is transitive, and the stabilizer of $P$ is $N_G(P)$.
+Orbit--stabilizer therefore gives $n_3=[G:N_G(P)]$.
 :::
 
 <1>2. Under the hypothesis that $G$ has no subgroup of order $15$, one has $5\nmid |N_G(P)|$.
 ::: {.proof}
-The subgroup $P$ is normal in $N_G(P)$ by definition of the normalizer. If $5\mid |N_G(P)|$, Cauchy's theorem gives a subgroup $Q\le N_G(P)$ of order $5$. Since $P\trianglelefteq N_G(P)$, the product $PQ$ is a subgroup of $N_G(P)$, and
+The subgroup $P$ is normal in $N_G(P)$ by definition of the normalizer.
+If $5\mid |N_G(P)|$, Cauchy's theorem gives a subgroup $Q\le N_G(P)$ of order $5$.
+Since $P\trianglelefteq N_G(P)$, the product $PQ$ is a subgroup of $N_G(P)$, and
 \[
 |PQ|=\frac{|P||Q|}{|P\cap Q|}=3\cdot5=15,
 \]
-because $P\cap Q=1$. This contradicts the hypothesis.
+because $P\cap Q=1$.
+This contradicts the hypothesis.
 :::
 
 <1>3. Therefore $n_3$ is either $10$ or $40$.
 ::: {.proof}
-Part (a) gives $n_3\in\{1,4,10,16,40\}$. By <1>1, the corresponding normalizer orders are respectively $240,60,24,15,6$. The first, second, and fourth are divisible by $5$, contradicting <1>2. Thus only $n_3=10$ or $40$ remain.
+Part (a) gives $n_3\in\{1,4,10,16,40\}$.
+By <1>1, the corresponding normalizer orders are respectively $240,60,24,15,6$.
+The first, second, and fourth are divisible by $5$, contradicting <1>2. Thus only $n_3=10$ or $40$ remain.
 :::
 
 <1>4. Q.E.D.

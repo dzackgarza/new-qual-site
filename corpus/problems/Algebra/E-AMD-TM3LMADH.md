@@ -25,7 +25,6 @@ audit:
 Show that in a finite $p\dash$group, every nontrivial normal subgroup intersects the center nontrivially.
 :::
 
-
 ::: {.solution}
 Let \(G\) be a finite \(p\)-group and let \(1\neq N\trianglelefteq G\).
 
@@ -57,7 +56,9 @@ Since \(G\) is a finite \(p\)-group, every subgroup index is a power of \(p\). I
 |N|\equiv |N\cap Z(G)|\pmod p.
 \]
 ::: {.proof}
-Partition \(N\) into its \(G\)-orbits. By <1>2, the fixed points contribute \(|N\cap Z(G)|\) singleton orbits. By <1>3, every remaining orbit has size divisible by \(p\). Summing the orbit sizes gives the congruence.
+Partition \(N\) into its \(G\)-orbits.
+By <1>2, the fixed points contribute \(|N\cap Z(G)|\) singleton orbits.
+By <1>3, every remaining orbit has size divisible by \(p\). Summing the orbit sizes gives the congruence.
 :::
 
 <1>5. The integer \(|N\cap Z(G)|\) is divisible by \(p\).
@@ -67,6 +68,8 @@ Because \(N\) is a nontrivial subgroup of the finite \(p\)-group \(G\), its orde
 
 <1>6. Hence \(N\cap Z(G)\neq1\).
 ::: {.proof}
-The subgroup \(N\cap Z(G)\) contains the identity, so its cardinality is positive. By <1>5 it is divisible by the prime \(p\), hence it has at least \(p>1\) elements. Therefore it contains a nonidentity element.
+The subgroup \(N\cap Z(G)\) contains the identity, so its cardinality is positive.
+By <1>5 it is divisible by the prime \(p\), hence it has at least \(p>1\) elements.
+Therefore it contains a nonidentity element.
 :::
 :::

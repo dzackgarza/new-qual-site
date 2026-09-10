@@ -88,8 +88,7 @@ Every Sylow $q$-subgroup has the same property and therefore equals $Q$.
 
 <1>7. Consequently no group of order $pq^k$ is simple.
 ::: {.proof}
-If $n_p=1$, use <1>3.
-If $n_p=q^k$, then <1>6 gives a unique Sylow $q$-subgroup, which is normal and proper.
+If $n_p=1$, use <1>3. If $n_p=q^k$, then <1>6 gives a unique Sylow $q$-subgroup, which is normal and proper.
 :::
 
 <1>8. Now let $|G|=pq$ with $p\ne q$.

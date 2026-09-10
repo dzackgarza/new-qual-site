@@ -13,10 +13,6 @@ classification:
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: OpenAI
-  date: 2026-09-09
-  note: Checked against the UCR qualifying-algebra linear algebra problem list.
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -30,30 +26,43 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Define
+<1>1. Suppose \(A,B\in M_n(k)\) are invertible.
+For \(\lambda\in k\),
 \[
-p(\lambda)=\det(A+\lambda B)\in k[\lambda].
+A+\lambda B=B\bigl(B^{-1}A+\lambda I_n\bigr).
 \]
-Then \(p\) is not the zero polynomial.
 ::: {.proof}
-Because \(B\) is invertible,
-\[
-A+\lambda B=B(B^{-1}A+\lambda I),
-\]
-so
-\[
-p(\lambda)=\det(B)\det(B^{-1}A+\lambda I).
-\]
-If \(A,B\in M_n(k)\), then the second factor is monic of degree \(n\) in \(\lambda\). Since \(\det(B)\neq0\), \(p\) has degree \(n\) and is therefore nonzero.
+Expanding the right-hand side gives \(BB^{-1}A+\lambda BI_n=A+\lambda B\).
 :::
 
-<1>2. The matrix \(A+\lambda B\) is singular for only finitely many \(\lambda\in k\).
+<1>2. Hence
+\[
+\det(A+\lambda B)=\det(B)\,p(\lambda),
+\qquad
+p(t):=\det(B^{-1}A+tI_n)\in k[t].
+\]
 ::: {.proof}
-A square matrix over a field is singular exactly when its determinant is zero. By <1>1, \(p\) is a nonzero polynomial of degree \(n\), so it has at most \(n\) roots in \(k\). Thus only finitely many \(\lambda\) satisfy \(\det(A+\lambda B)=0\).
+Apply multiplicativity of the determinant to <1>1.
 :::
 
-<1>3. Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
+<1>3. The polynomial \(p(t)\) is nonzero and has degree \(n\).
 ::: {.proof}
-This is the complement of the finite exceptional set from <1>2.
+In the determinant expansion of \(B^{-1}A+tI_n\), the product of the \(t\)-terms on the diagonal contributes \(t^n\), and no other term has degree \(n\). Thus \(p(t)\) is monic of degree \(n\).
+:::
+
+<1>4. Therefore \(A+\lambda B\) is singular for at most \(n\) values of \(\lambda\in k\).
+::: {.proof}
+Because \(B\) is invertible, \(\det(B)\neq0\). Thus
+\[
+\det(A+\lambda B)=0
+\quad\Longleftrightarrow\quad
+p(\lambda)=0.
+\]
+A nonzero polynomial of degree \(n\) over a field has at most \(n\) roots.
+:::
+
+<1>5. Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
+::: {.proof}
+A square matrix over a field is invertible exactly when its determinant is nonzero, so the conclusion follows from <1>4.
 :::
 :::

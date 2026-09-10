@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-JVAGD
 kind: problem
-title: 'Layer-cake formula with an absolutely continuous weight: $\int_{\RR}\varphi\circ f\,dx=\int_0^\infty m(\{f>t\})\varphi''(t)\,dt$'
+title: >-
+  Layer-cake formula with an absolutely continuous weight: $\int_{\RR}\varphi\circ f\,dx=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$
 classification:
   areas:
   - real-analysis
@@ -21,10 +22,6 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
-- event: solution-reviewed
-  by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Consolidation adjudication compared both independently authored merge-parent versions. Their Tonelli proofs are mathematically identical up to line wrapping, so the retained proof is unchanged. The doubled apostrophe in the single-quoted YAML title is the YAML escape for the source-correct varphi-prime notation.
 ---
 
 ::: {.problem}
@@ -32,9 +29,7 @@ Let $f:\mathbb R\to[0,\infty)$ be measurable, and let
 \[
 \varphi:[0,\infty)\to[0,\infty)
 \]
-be nondecreasing and absolutely continuous on $[0,T]$ for every finite $T$.
-Assume $\varphi(0)=0$.
-Prove that
+be nondecreasing and absolutely continuous on $[0,T]$ for every finite $T$. Assume $\varphi(0)=0$. Prove that
 \[
 \int_{\mathbb R}\varphi(f(x))\,dx
 =

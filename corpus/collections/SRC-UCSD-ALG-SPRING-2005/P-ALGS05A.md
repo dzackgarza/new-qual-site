@@ -23,7 +23,8 @@ audit:
 ---
 
 ::: problem
-Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that $T(X) = \frac{1}{2}(X - X^T)$.
+Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that
+$T(X) = \frac{1}{2}(X - X^T)$.
 
 (a) Prove that $T$ is a linear transformation.
 
@@ -39,48 +40,48 @@ For \(X,Y\in M_n(\mathbb R)\) and \(a,b\in\mathbb R\),
 \[
 T(aX+bY)
 =\frac12\bigl(aX+bY-(aX+bY)^T\bigr)
-=aT(X)+bT(Y),
+=aT(X)+bT(Y).
 \]
-because transpose is linear.
 :::
 
-<1>2. The null space of \(T\) is the subspace of symmetric matrices.
-::: {.proof}
-One has
+<1>2. The null space of \(T\) is the space of symmetric matrices:
 \[
-T(X)=0
-\iff X-X^T=0
-\iff X=X^T.
+\ker T=\{X\in M_n(\mathbb R):X^T=X\}.
 \]
-Thus \(\ker T=\operatorname{Sym}_n(\mathbb R)\).
-:::
-
-<1>3. The nullity of \(T\) is \(n(n+1)/2\).
 ::: {.proof}
-A symmetric \(n\times n\) matrix is determined freely by its \(n\) diagonal entries and its \(n(n-1)/2\) entries strictly above the diagonal.
-Hence
+One has \(T(X)=0\) iff \(X-X^T=0\), equivalently \(X=X^T\).
+:::
+
+<1>3. Therefore
 \[
-\dim \ker T=n+\frac{n(n-1)}2=\frac{n(n+1)}2.
+\dim\ker T=\frac{n(n+1)}2.
+\]
+::: {.proof}
+A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and its
+\(\binom n2\) entries above the diagonal. Thus
+\[
+\dim\ker T=n+\binom n2=\frac{n(n+1)}2.
 \]
 :::
 
-<1>4. For the standard matrix units \(E_{ij}\),
+<1>4. For \(M_3(\mathbb R)\), order the standard basis as
+\[
+\mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
+\]
+Then
 \[
 T(E_{ii})=0,
 \qquad
 T(E_{ij})=\frac12(E_{ij}-E_{ji})\quad(i\ne j).
 \]
 ::: {.proof}
-Since \(E_{ij}^T=E_{ji}\), this follows directly from the definition of \(T\).
+Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \(T\).
 :::
 
-<1>5. With the ordered standard basis
+<1>5. Hence the matrix of \(T\) with respect to \(\mathcal B\) is
 \[
-(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33})
-\]
-of \(M_3(\mathbb R)\), the matrix of \(T\) is
-\[
-[T]=\frac12
+[T]_{\mathcal B}=
+\frac12
 \begin{pmatrix}
 0&0&0&0&0&0&0&0&0\\
 0&1&0&-1&0&0&0&0&0\\
@@ -94,7 +95,7 @@ of \(M_3(\mathbb R)\), the matrix of \(T\) is
 \end{pmatrix}.
 \]
 ::: {.proof}
-The \(j\)-th column is the coordinate vector of the image of the \(j\)-th basis element.
-Applying <1>4 to the nine matrix units gives exactly the displayed columns.
+The \(j\)-th column is the coordinate vector of \(T\) applied to the \(j\)-th basis
+element. Using <1>4 gives the displayed columns immediately.
 :::
 :::
