@@ -150,3 +150,7 @@ Homeomorphisms: ignore ligatures!!
 
 8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$ Can remove **one** point to separate into **four** components.
 :::
+
+::: {.solution}
+This card is an answer/reference list classifying drawn letters by homotopy type; it does not contain the alphabet glyphs or a posed question. The classifications depend on the chosen font/drawing (for example whether a lowercase letter has one or two components), so there is no font-independent theorem represented by the fragment. The missing drawings are essential source data.
+:::
