@@ -8,6 +8,18 @@ classification:
   topics: [Module Theory]
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Compared the field case, prescribed image of a cyclic generator, and the suggested Z/n to Z counterexample with Lerman practice problem 15."
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-10
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Checked well-definedness in the one-dimensional field case and used torsion versus torsion-free behavior for the integer counterexample."
 ---
 
 ::: problem
@@ -17,4 +29,48 @@ Let $N$ be another $R$-module, and let $0\neq v\in N$.
 1. If $R$ is a field, prove that there is an $R$-module homomorphism $\varphi:M\to N$ with $\varphi(x)=v$.
 
 2. Give an example over $R=\mathbb Z$ for which no such homomorphism exists.
+:::
+
+::: solution
+<1>1. Over a field, the generator may be sent to any prescribed element.
+::: proof
+Assume $R$ is a field. Since $M=Rx$ and $x\ne0$, define
+$$
+\varphi(rx)=rv
+\qquad(r\in R).
+$$
+This is well-defined. Indeed, if $rx=sx$, then
+$$
+(r-s)x=0.
+$$
+If $r-s\ne0$, it is invertible in the field $R$, so multiplying by $(r-s)^{-1}$ would give $x=0$, a contradiction. Hence $r=s$.
+
+For $r,s,a\in R$,
+$$
+\varphi(rx+sx)=(r+s)v=rv+sv
+$$
+and
+$$
+\varphi(a(rx))=\varphi((ar)x)=arv=a\varphi(rx).
+$$
+Thus $\varphi$ is $R$-linear, and $\varphi(x)=v$.
+:::
+
+<1>2. The statement fails over $\mathbb Z$.
+::: proof
+Take
+$$
+M=\mathbb Z/n\mathbb Z,
+\qquad N=\mathbb Z,
+\qquad x=1+n\mathbb Z,
+\qquad v=1,
+$$
+for any integer $n\ge2$. The element $x$ is nonzero and generates $M$, while $v\ne0$.
+
+If a $\mathbb Z$-module homomorphism $\varphi:M\to N$ satisfied $\varphi(x)=1$, then
+$$
+0=\varphi(nx)=n\varphi(x)=n,
+$$
+which is impossible in $\mathbb Z$. Hence no such homomorphism exists.
+:::
 :::
