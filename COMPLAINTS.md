@@ -131,3 +131,11 @@ of public mathematical remarks.
 - **Impact and owner:** the source question has two possible numerical answers unless the usual positive-orientation convention is understood implicitly. The card solution now states both values and performs both requested computations for the positive orientation.
 - **Uncertainty:** the original PDF may have conveyed an arrow graphically that the Markdown extraction lost; this was not established from the textual extraction.
 - **Repair:** preserve the source wording, but retain the orientation caveat in the mathematical solution unless the original PDF is visually checked and an orientation mark is confirmed.
+
+### `just unsolved-in` can hang indefinitely while scanning the corpus
+
+- **Object and need:** `just unsolved-in <collection>` during source-ordered solution authoring; it should return the unsolved appearances for one collection promptly without regenerating `queues/C-unsolved-cards.md`.
+- **Observed evidence:** on 2026-09-10, `just unsolved-in SRC-UGA-PRELIM-SPRING-2004` remained running for more than two minutes in `tools/unsolved_queue.py` without producing output; the invocation was terminated before any authored edit.
+- **Impact and owner:** collection-by-collection solution work stalls on the repository's designated selection command. This is tooling-owned rather than mathematical-content-owned.
+- **Uncertainty:** the host is under concurrent fleet load, so the delay may be performance-sensitive rather than a deterministic deadlock.
+- **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
