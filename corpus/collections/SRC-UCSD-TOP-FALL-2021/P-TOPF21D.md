@@ -57,7 +57,11 @@ $24 = 2 + b_2$.
 :::
 <2>3. $H_2(K)$ is free abelian of rank $22$.
 ::: {.proof}
-$H_2$ of a simply connected closed $4$-manifold is free (by the universal coefficient theorem and $H_1 = 0$, there is no torsion in $H_2$).
+Poincaré duality gives $H^3(K;\ZZ)\cong H_1(K;\ZZ)=0$. The universal coefficient theorem for cohomology contains the exact sequence
+$$
+0\longrightarrow \operatorname{Ext}(H_2(K),\ZZ)\longrightarrow H^3(K;\ZZ)\longrightarrow \operatorname{Hom}(H_3(K),\ZZ)\longrightarrow 0.
+$$
+Hence $\operatorname{Ext}(H_2(K),\ZZ)=0$. Since $K$ is a compact manifold, $H_2(K;\ZZ)$ is finitely generated; for a finitely generated abelian group, vanishing of $\operatorname{Ext}(-,\ZZ)$ is equivalent to having no torsion. Therefore $H_2(K)$ is free abelian. Its rank is $22$ by <2>2.
 :::
 
 <1>6. Q.E.D.
