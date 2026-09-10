@@ -22,6 +22,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the strict Rouche comparisons on both circles, including the constant one half, and excluded boundary zeros."
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "PDF page 40 prints a normal question mark after the unit disk; restored that punctuation and independently retained the two complete Rouche comparisons."
 ---
 
 2. How many zeros does the polynomial
@@ -30,7 +34,8 @@ $$
 z ^ { 7 } - 4 z ^ { 3 } + z - { \textstyle { \frac { 1 } { 2 } } }
 $$
 
-have in the unit disk $\{ | z | < 1 \} \stackrel { . } { : }$ How many zeros does it have in the disk $\{ | z | < 2 \}$ of radius 2? Justify your answers.
+have in the unit disk $\{|z|<1\}$? How many zeros does it
+have in the disk $\{|z|<2\}$ of radius two? Justify your answers.
 
 ::: solution
 Write $p(z)=z^7-4z^3+z-1/2$. The requested zero counts,
