@@ -46,14 +46,6 @@ of public mathematical remarks.
 - **Impact:** repository checks, temporary authoring output, edits, and commits may fail nondeterministically even when the worktree itself is healthy.
 - **Repair:** free byte capacity on the repository host. This stream removed only its own `/tmp/ca-unsorted-*.tsv` scratch files and did not delete shared caches or other workers' data.
 
-### P-X7WUF has unresolved provenance
-
-- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; the mathematical defect has been resolved on the card by an explicit erratum and proof, but its owning collection still does not identify its actual source.
-- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document.
-- **Impact and owner:** the card is now mathematically complete, but its provenance is incorrect or incomplete. The collection/source record owns that repair.
-- **Uncertainty:** the mismatch with the cited DOCX is verified; the actual source of `P-X7WUF` has not yet been identified.
-- **Repair:** recover the true source for `P-X7WUF` and move or re-provenance the card accordingly.
-
 ### P-MMAQ-WV7QEYSPXM omits the infinite-cyclic injectivity hypothesis
 
 - **Object and need:** `P-MMAQ-WV7QEYSPXM`, Dummit--Foote §5.5 Exercise 6; the local statement must retain every hypothesis needed for the semidirect-product isomorphism.
