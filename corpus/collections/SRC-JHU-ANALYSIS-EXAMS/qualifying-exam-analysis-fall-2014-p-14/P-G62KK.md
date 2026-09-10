@@ -21,24 +21,49 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "PDF page 15 identifies this as Spring 2014 problem 1, not Fall 2014 problem 7. Restored the convergence arrows and compared the unrestricted measurable set and closed good-set conclusion."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Excluded the original exceptional null set before the tail-supremum argument and supplied closed-set approximation valid also for infinite-measure E; did not modify the original sequence or its limit."
 ---
 
-1. Prove the following statement without using Ergoroff’s Theorem: Suppose $\{ f _ { k } \} _ { k = 1 } ^ { \infty }$ is a sequence of measurable functions defined on a measurable set $E ,$ $f _ { k }  f$ a.e. on E and there exists $g \in L ^ { 1 } ( E )$ such that $| f _ { k } | \le g$ for all k. Given $\epsilon > 0$ , there exists a closed set $A _ { \epsilon }$ such that $m ( E \backslash A _ { \epsilon } ) < \epsilon$ and $f _ { k }  f$ uniformly on $A _ { \epsilon }$
+::: problem
+Prove the following without using Egoroff's theorem. Let
+$(f_k)$ be measurable functions on a Lebesgue-measurable set
+$E\subset\mathbb R^d$, with $f_k\to f$ almost everywhere
+on $E$. Suppose $g\in L^1(E)$ and $|f_k|\leq g$ for every
+$k$. For each $\varepsilon>0$, prove that there is a closed
+set $A_\varepsilon\subseteq E$ with
+$m(E\setminus A_\varepsilon)<\varepsilon$ such that
+$f_k\to f$ uniformly on $A_\varepsilon$.
+:::
 
 ::: solution
 <1>1. Control the tail suprema in $L^1$.
 ::: proof
-After modifying $f$ on the null set where convergence fails, we may assume $f_k(x)\to f(x)$ for every $x\in E$. Since $|f_k|\le g$, passage to the pointwise limit gives $|f|\le g$.
+Choose a measurable null set $Z\subset E$ outside which
+the given convergence holds and $g$ is finite. On
+$E_0=E\setminus Z$, passage to the limit gives $|f|\leq g$.
+We leave every value of the original functions unchanged.
 
 For $N\ge1$, define
 \[
-h_N(x):=\sup_{k\ge N}|f_k(x)-f(x)|.
+h_N(x):=\begin{cases}
+\sup_{k\ge N}|f_k(x)-f(x)|,&x\in E_0,\\
+0,&x\in Z.
+\end{cases}
 \]
 Then each $h_N$ is measurable,
 \[
 0\le h_{N+1}\le h_N\le 2g,
 \]
-and $h_N(x)\downarrow0$ for every $x\in E$. Since $g\in L^1(E)$, dominated convergence gives
+The displayed domination holds almost everywhere, and
+$h_N\downarrow0$ everywhere by its definition on $Z$.
+Since $g\in L^1(E)$, dominated convergence gives [@Fol13]
 \[
 \int_E h_N\,dm\longrightarrow0.
 \]
@@ -62,7 +87,7 @@ m(B_j)
 \]
 Hence, with
 \[
-B:=\bigcup_{j=1}^\infty B_j,
+B:=Z\cup\bigcup_{j=1}^\infty B_j,
 \]
 we have
 \[
@@ -77,14 +102,20 @@ Thus $f_k\to f$ uniformly on $E\setminus B$.
 
 <1>3. Replace the measurable good set by a closed good set.
 ::: proof
-By inner regularity of Lebesgue measure, there exists a closed set
-\[
-A_\varepsilon\subset E\setminus B
-\]
-such that
-\[
-m\bigl((E\setminus B)\setminus A_\varepsilon\bigr)<\frac\varepsilon2.
-\]
+Put $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
+For each positive integer $j$, the measurable set
+$H_j=H\cap[-j,j]^d$ has finite measure. Outer regularity
+gives an open $O_j\supset H_j$ with
+$m(O_j\setminus H_j)<\varepsilon/2^{j+1}$ [@Fol13].
+Then $O=\bigcup_jO_j$ is open and contains $H$, and
+$$
+m(O\setminus H)\leq\sum_{j=1}^\infty m(O_j\setminus H_j)
+<\varepsilon/2.
+$$
+Consequently $A_\varepsilon=\mathbb R^d\setminus O$ is
+closed, lies in $F$, and satisfies
+$m(F\setminus A_\varepsilon)<\varepsilon/2$.
+This construction does not assume $m(E)<\infty$.
 Therefore
 \[
 m(E\setminus A_\varepsilon)
