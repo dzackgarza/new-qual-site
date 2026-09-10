@@ -40,6 +40,34 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### E-FPZDC is missing the referenced gamma-function setup
+
+- **Object and need:** `E-FPZDC` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card asks to prove holomorphy of the gamma function and Euler's reflection formula.
+- **Observed evidence:** the statement refers to "the integral formula above" and "the formula in the previous question," but neither referenced item is present in the card. The only surviving formula is a hint for $\Gamma(1-s)$.
+- **Impact and owner:** the exercise is not self-contained as a standalone card. A mathematically standard reconstruction is possible, and distinct cards in this corpus already state it explicitly, but silently importing omitted preceding material would change this card's source content.
+- **Repair:** recover the source context or copy the missing hypotheses/formulas into the card with an explicit provenance note before attaching a solution.
+
+### E-N6DX3 contains unresolved image-only and omnibus prompts
+
+- **Object and need:** `E-N6DX3` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
+- **Observed evidence:** the card mixes many definition/theory questions with several unresolved Obsidian image embeds such as `_attachments/Pasted image ...`, followed only by terse hints. Those image-only subproblems are not stated in text.
+- **Impact and owner:** there is no complete mathematical statement to solve. Providing answers only to the visible bullets would falsely mark the omnibus card complete while silently omitting the missing image problems.
+- **Repair:** restore or transcribe each missing image problem, preferably splitting the omnibus into atomic cards, before solution authoring.
+
+### E-W3QMS contains open-ended external-resource placeholders
+
+- **Object and need:** `E-W3QMS` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
+- **Observed evidence:** alongside the precise task "show that $f'=0$ implies $f$ is constant using integrals and primitives," the card also says "Do any example from here" and "Anything from the homeworks," with external links and unresolved image embeds.
+- **Impact and owner:** those open-ended placeholders do not define finite mathematical tasks, so a solution to the one precise bullet would not constitute a solution to the whole card.
+- **Repair:** replace the external placeholders with explicit problem statements or split the precise derivative-zero exercise into its own card.
+
+### P-XKYOG is truncated and contradicts the principal-logarithm claim
+
+- **Object and need:** `P-XKYOG` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
+- **Observed evidence:** the card begins mid-sentence with "equations take the form," then asks to use the polar Cauchy--Riemann equations to show that the principal logarithm is holomorphic on $r>0$, $-\pi<\theta<\pi$, and also to show that this same logarithm is "not continuous in $r>0$." On the stated slit plane the principal logarithm is holomorphic and therefore continuous.
+- **Impact and owner:** the surviving text is both truncated and mathematically contradictory.
+- **Repair:** recover the omitted preceding part and the intended final continuity/noncontinuity domain from the source before authoring a proof.
+
 ### P-V4OZH omits the value range for b and has a denominator typo
 
 - **Object and need:** `P-V4OZH` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card defines a product intended to be a finite Blaschke product and asks to prove that $f(z)=b$ has exactly $n$ solutions in the unit disk.
