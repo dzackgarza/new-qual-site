@@ -270,3 +270,11 @@ of public mathematical remarks.
 - **Impact and owner:** the wrong endpoint changes the curve and therefore the line integral. The problem card owns the source-faithful correction.
 - **Uncertainty:** none in the retained textual extraction; it explicitly names `(0,2)`.
 - **Repair:** corrected the endpoint and title on `P-OK5P3` and solved the resulting positively oriented quarter-disk integral.
+
+### `P-MMAQ-F2ZJO265HN` had a truncated non-mathematical title
+
+- **Object and need:** `P-MMAQ-F2ZJO265HN` in `SRC-UW-ALG-2005`; the card title should name the finite-field counting problem rather than repeat an incomplete source stem.
+- **Observed evidence:** the title was `For each prime number $p$ and each positive integer $n$, how many`, while the retained 2005 UW exam asks for the number of $\alpha\in\mathbb F_{p^n}$ with $\mathbb F_p(\alpha)=\mathbb F_{p^6}$.
+- **Impact and owner:** the old title did not identify the mathematical content of the card. The problem card owns the title repair.
+- **Uncertainty:** none; the retained exam extraction contains the complete statement.
+- **Repair:** retitled the card to `Generators of $\mathbb F_{p^6}$ inside $\mathbb F_{p^n}$` while preserving the source statement verbatim.
