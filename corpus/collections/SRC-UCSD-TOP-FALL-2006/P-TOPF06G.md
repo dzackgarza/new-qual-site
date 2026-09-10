@@ -62,7 +62,11 @@ define the second Betti number.
 
 <1>8. $H_2(M) \cong \ZZ^{k-2}$.
 ::: {.proof}
-$H_2(M)$ is free abelian (its torsion would pair nontrivially with $H_1$ under Poincaré duality, but $H_1 = 0$), so $H_2(M) \cong \ZZ^{b_2} = \ZZ^{k-2}$ by <1>7.
+By Poincaré duality, $H^3(M;\ZZ)\cong H_1(M;\ZZ)=0$. The universal coefficient theorem gives an injection
+$$
+\operatorname{Ext}(H_2(M;\ZZ),\ZZ)\hookrightarrow H^3(M;\ZZ),
+$$
+so $\operatorname{Ext}(H_2(M),\ZZ)=0$. Since $M$ is compact, $H_2(M)$ is finitely generated; a finitely generated abelian group has vanishing $\operatorname{Ext}(-,\ZZ)$ exactly when it is torsion-free, hence free. Its rank is $b_2=k-2$ by <1>7.
 :::
 
 <1>9. Q.E.D.
