@@ -15,9 +15,17 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually compared May 2006 problem 11 on PDF page 41 and restored the ordinary limsup notation."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Handled zero vectors in the norm-attainment argument, checked conjugation against the chosen inner-product convention and verified the hypotheses for uniform boundedness."
 ---
 
-11. Suppose that $f _ { n }$ is a sequence of functions in $L ^ { 2 } ( [ 0 , 1 ] )$ that converges weakly to a function $f \in L ^ { 2 } ( [ 0 , 1 ] )$ . Either prove that lim $\begin{array} { r } { \operatorname* { s u p } _ { n \to \infty } \vert \vert f _ { n } \vert \vert _ { L ^ { 2 } ( [ 0 , 1 ] ) } < \infty } \end{array}$ or give a counter-example.
+Suppose $f_n\in L^2([0,1])$ converges weakly to $f\in L^2([0,1])$. Prove that $\limsup_{n\to\infty}\|f_n\|_2<\infty$, or give a counterexample.
 
 ::: {.solution}
 <1>1. Functional representation and operator norm:
@@ -34,7 +42,11 @@ definition of functional.
 \|\phi_n\|_{H^*} = \sup_{\|g\|_{L^2} \le 1} |\langle g, f_n \rangle| = \|f_n\|_{L^2}.
 \]
 ::: {.proof}
-Riesz Representation Theorem / Cauchy–Schwarz equality condition with $g = f_n / \|f_n\|_{L^2}$.
+Cauchy–Schwarz gives $|\phi_n(g)|\leq\|g\|_2\|f_n\|_2$.
+If $f_n\ne0$, the unit vector $g=f_n/\|f_n\|_2$
+attains this bound. If $f_n=0$, then $\phi_n=0$ and
+both norms are zero. Thus the norm identity holds for
+every $n$ without division by a zero norm [@Fol13].
 :::
 
 <1>2. Pointwise boundedness from weak convergence:
@@ -43,7 +55,11 @@ Riesz Representation Theorem / Cauchy–Schwarz equality condition with $g = f_n
 \lim_{n \to \infty} \phi_n(g) = \lim_{n \to \infty} \langle g, f_n \rangle = \langle g, f \rangle.
 \]
 ::: {.proof}
-definition of weak convergence in a Hilbert space.
+For fixed $g$, the map $h\mapsto\langle h,g\rangle$
+is bounded and linear. Weak convergence gives
+$\langle f_n,g\rangle\to\langle f,g\rangle$.
+Taking complex conjugates gives the displayed convergence
+for $\phi_n(g)=\langle g,f_n\rangle$.
 :::
 <2>2. Because every convergent sequence in $\mathbb{C}$ is bounded, for each fixed $g \in H$:
 \[
@@ -59,7 +75,10 @@ convergence implies boundedness in metric spaces.
 \sup_{n \ge 1} \|\phi_n\|_{H^*} < \infty.
 \]
 ::: {.proof}
-Uniform Boundedness Principle on Banach spaces.
+The domain $H$ is complete, each $\phi_n$ is bounded
+and linear by <1>1, and <1>2 establishes pointwise
+boundedness. These are exactly the hypotheses of the
+uniform boundedness principle [@Fol13].
 :::
 <2>2. Substituting $\|\phi_n\|_{H^*} = \|f_n\|_{L^2}$ from <1>1:
 \[
