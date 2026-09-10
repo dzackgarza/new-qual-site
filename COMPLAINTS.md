@@ -139,3 +139,11 @@ of public mathematical remarks.
 - **Impact and owner:** collection-by-collection solution work stalls on the repository's designated selection command. This is tooling-owned rather than mathematical-content-owned.
 - **Uncertainty:** the host is under concurrent fleet load, so the delay may be performance-sensitive rather than a deterministic deadlock.
 - **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
+
+### Direct-to-`main` streams can globally block unrelated card commits with Git sequencer state
+
+- **Object and need:** concurrent file-disjoint solution streams committing directly to `main`; one stream's commit operation should not prevent another stream from banking an unrelated card.
+- **Observed evidence:** on 2026-09-10, `just commit-card P-S04DG` and later `just commit-card P-S05X3` each failed because the shared checkout was temporarily in `Cherry-pick currently in progress`, even though the concurrently edited card was in a disjoint collection. In both cases the intended prelim card later appeared as a clean committed path after the foreign sequencer operation completed.
+- **Impact and owner:** Git sequencer state is checkout-global, so file-disjointness does not make direct-to-main porcelain operations independent; unrelated card commits can fail or be delayed despite no content-path collision.
+- **Uncertainty:** the other stream's exact wrapper was not identified; the observed state was standard Git cherry-pick sequencer state in the shared checkout.
+- **Repair:** use a commit path that constructs commits without checkout-global sequencer state, or serialize operations that invoke cherry-pick/rebase while preserving file-disjoint authorship on `main`.
