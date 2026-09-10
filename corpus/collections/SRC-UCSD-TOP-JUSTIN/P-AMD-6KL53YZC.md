@@ -15,16 +15,24 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: >-
+    Checked against UCSD_290_F14_sheet7.pdf, problem 3. The source asks to
+    deduce existence of a degree-d self-map of S^n for every integer d; the
+    previous card incorrectly replaced this by the stronger statement
+    pi_n(S^n)=Z.
 ---
 
 ::: {.problem}
-For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
+For a self-map $f:S^n\to S^n$, show that $\deg(\Sigma f)=\deg(f)$.
 
-1. Conclude $\pi_n(S^n) = \ZZ$
+Conclude that for every $n\ge1$ and every integer $d\in\ZZ$, there exists a self-map $S^n\to S^n$ of degree $d$.
 :::
 
 ::: {.solution}
-**Goal:** Let $f \colon S^n \to S^n$ be a continuous map ($n \ge 1$), and let $\Sigma f \colon \Sigma S^n \cong S^{n+1} \to \Sigma S^n \cong S^{n+1}$ be its suspension. Prove that $\deg(\Sigma f) = \deg(f)$, and conclude that $\pi_n(S^n) \cong \mathbb{Z}$.
+**Goal:** Let $f \colon S^n \to S^n$ be continuous with $n\ge1$. Prove $\deg(\Sigma f)=\deg(f)$ and deduce that every integer occurs as the degree of a self-map of every sphere $S^n$, $n\ge1$.
 
 <1>1. Definition of degree and suspension isomorphism in homology.
   <2>1. For any continuous map $g \colon S^k \to S^k$ ($k \ge 1$), the degree $\deg(g) \in \mathbb{Z}$ is defined by the induced map on top homology: $g_*(\alpha) = (\deg g) \cdot \alpha$ for any generator $\alpha \in \widetilde{H}_k(S^k) \cong \mathbb{Z}$.
@@ -56,19 +64,33 @@ For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$
   <2>7. The naturality square of <2>2 commutes, so $\partial((\Sigma f)_*(\beta)) = f_*(\partial(\beta))$; combining this with <2>4–<2>5 gives $(\Sigma f)_*(\beta) = (\deg f)\beta$, and comparing with the definition of degree yields $\deg(\Sigma f) = \deg(f)$.
 :::
 
-<1>3. Conclude that $\pi_n(S^n) \cong \mathbb{Z}$ for all $n \ge 1$.
-  <2>1. Base case $n = 1$: $\pi_1(S^1) \cong \mathbb{Z}$ via the degree map / winding number (fundamental group of the circle).
-  <2>2. The degree map $\deg \colon \pi_n(S^n) \to \mathbb{Z}$ sending $[g] \mapsto \deg(g)$ is a well-defined group homomorphism for all $n \ge 1$.
-  <2>3. $\deg$ is surjective: The map $z \mapsto z^d$ on $S^1$ has degree $d$. Taking $n-1$ successive suspensions $\Sigma^{n-1}(z \mapsto z^d)$ yields a map $S^n \to S^n$ of degree $d$ by <1>2.
-  <2>4. $\deg$ is injective: By the Hopf degree theorem, two continuous maps $f, g \colon S^n \to S^n$ are homotopic if and only if $\deg(f) = \deg(g)$. (Equivalently, by the Hurewicz theorem, since $S^n$ is $(n-1)$-connected for $n \ge 2$, the Hurewicz homomorphism $h \colon \pi_n(S^n) \to H_n(S^n) \cong \mathbb{Z}$ given by $[f] \mapsto f_*([S^n]) = (\deg f)[S^n]$ is an isomorphism).
-  <2>5. Therefore, $\pi_n(S^n) \cong \mathbb{Z}$.
+<1>3. For every $n\ge1$ and $d\in\mathbb Z$, construct a self-map of $S^n$ of degree $d$.
+<2>1. On $S^1\subset\mathbb C$, the map
+$$
+g_d(z)=z^d
+$$
+has degree $d$ for $d\ge0$; for $d<0$ the same formula means $z^d=\overline z^{\,|d|}$ on $S^1$ and again has degree $d$. For $d=0$, it is the constant map $1$.
 ::: {.proof}
-  <2>6. The degree map is a surjective homomorphism by <2>2–<2>3, and it is injective by the Hopf degree theorem (equivalently the Hurewicz theorem) in <2>4, so it is an isomorphism $\pi_n(S^n) \cong \mathbb{Z}$.
+Writing $z=e^{i\theta}$ gives $g_d(e^{i\theta})=e^{id\theta}$. Thus the induced map on $H_1(S^1)\cong\mathbb Z$ is multiplication by $d$.
+:::
+<2>2. For $n>1$, define
+$$
+f_{n,d}=\Sigma^{\,n-1}g_d:S^n\cong\Sigma^{\,n-1}S^1\longrightarrow\Sigma^{\,n-1}S^1\cong S^n.
+$$
+::: {.proof}
+Repeatedly use the canonical homeomorphisms $\Sigma S^k\cong S^{k+1}$.
+:::
+<2>3. Then $\deg(f_{n,d})=d$.
+::: {.proof}
+Apply <1>2 successively to the $n-1$ suspensions:
+$$
+\deg(\Sigma^{\,n-1}g_d)=\deg(g_d)=d.
+$$
 :::
 
 <1>4. Q.E.D.
 ::: {.proof}
-  <2>1. Steps <1>1–<1>3 complete the proof.
+  <2>1. <1>2 proves suspension preserves degree, and <1>3 constructs a self-map of every prescribed degree.
 :::
 :::
 
