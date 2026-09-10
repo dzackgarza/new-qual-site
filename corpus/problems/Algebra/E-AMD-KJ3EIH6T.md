@@ -16,48 +16,58 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Re-derived the semidirect-product classification and made the dihedral order convention explicit.
 ---
 
 ::: {.exercise}
-Classify all groups of order 28.
+Classify all groups of order $28$.
 :::
 
-::: solution
-**Goal:** Classify all groups of order $28 = 2^2 \cdot 7$ up to isomorphism.
+::: {.solution}
+Let $|G|=28=4\cdot7$. Sylow gives
+\[
+n_7\equiv1\pmod7,\qquad n_7\mid4,
+\]
+so $n_7=1$. Thus the Sylow $7$-subgroup $P\cong C_7$ is normal. If $Q$ is a Sylow $2$-subgroup, then $|Q|=4$, $P\cap Q=1$, and $PQ=G$. Hence
+\[
+G\cong C_7\rtimes Q,
+\]
+where $Q\cong C_4$ or $C_2^2$, and the action lands in
+\[
+\operatorname{Aut}(C_7)\cong C_6.
+\]
 
-<1>1. Sylow analysis:
-    *Proof:*
-    <2>1. **Sylow 7-subgroups:** $n_7 \equiv 1 \pmod 7$ and $n_7 \mid 4$. Thus $n_7 \in \{1\}$, so there is a unique normal Sylow 7-subgroup $P \cong \mathbb{Z}_7$ ($P \trianglelefteq G$).
-    <2>2. **Sylow 2-subgroups:** $n_2 \equiv 1 \pmod 2$ and $n_2 \mid 7$. Thus $n_2 \in \{1, 7\}$.
-    <2>3. Let $Q$ be a Sylow 2-subgroup of order $4$. Then $Q \cong \mathbb{Z}_4$ or $Q \cong \mathbb{Z}_2 \times \mathbb{Z}_2$.
+<1>1. If $Q\cong C_4$, there are two possibilities.
+::: {.proof}
+The image of $C_4\to C_6$ has order dividing $2$. The trivial action gives
+\[
+C_7\times C_4\cong C_{28}.
+\]
+The unique nontrivial action sends a generator of $C_4$ to inversion on $C_7$, giving one nonabelian semidirect product
+\[
+C_7\rtimes C_4.
+\]
+:::
 
-<1>2. Semidirect product decomposition:
-    *Proof:*
-    <2>1. Since $|P| = 7$ and $|Q| = 4$ are coprime, $P \cap Q = \{e\}$ and $|PQ| = 28 = |G|$.
-    <2>2. Because $P \trianglelefteq G$, $G \cong P \rtimes_\theta Q$ for some homomorphism $\theta: Q \to \operatorname{Aut}(P)$.
-    <2>3. $\operatorname{Aut}(\mathbb{Z}_7) \cong (\mathbb{Z}/7\mathbb{Z})^\times \cong \mathbb{Z}_6$.
+<1>2. If $Q\cong C_2^2$, there are two possibilities.
+::: {.proof}
+Any image lies in the unique subgroup $C_2\le C_6$. The trivial action gives
+\[
+C_7\times C_2^2\cong C_{14}\times C_2.
+\]
+Every nonzero homomorphism $C_2^2\to C_2$ is equivalent under $\operatorname{Aut}(C_2^2)$, so there is one nontrivial semidirect product. It is
+\[
+(C_7\rtimes C_2)\times C_2\cong D_7\times C_2.
+\]
+With the convention that $D_m$ has order $2m$, this group is also isomorphic to $D_{14}$.
+:::
 
-<1>3. Case $Q \cong \mathbb{Z}_4$:
-    *Proof:*
-    <2>1. A homomorphism $\theta: \mathbb{Z}_4 \to \mathbb{Z}_6$ has image order dividing $\gcd(4, 6) = 2$.
-    <2>2. **Trivial action ($|\operatorname{im} \theta| = 1$):** $G \cong \mathbb{Z}_7 \times \mathbb{Z}_4 \cong \mathbb{Z}_{28}$.
-    <2>3. **Non-trivial action ($|\operatorname{im} \theta| = 2$):** The unique element of order $2$ in $\mathbb{Z}_6$ is $3$, corresponding to inversion $x \mapsto x^{-1}$ in $\mathbb{Z}_7$. The generator of $\mathbb{Z}_4$ maps to this element; thus $\theta(1) = x \mapsto x^6 = x^{-1}$. This gives a non-abelian group $\mathbb{Z}_7 \rtimes \mathbb{Z}_4$.
-
-<1>4. Case $Q \cong \mathbb{Z}_2 \times \mathbb{Z}_2$:
-    *Proof:*
-    <2>1. A homomorphism $\theta: \mathbb{Z}_2 \times \mathbb{Z}_2 \to \mathbb{Z}_6$ has image in the unique subgroup $\{0, 3\} \cong \mathbb{Z}_2$ of $\mathbb{Z}_6$.
-    <2>2. **Trivial action:** $G \cong \mathbb{Z}_7 \times \mathbb{Z}_2 \times \mathbb{Z}_2 \cong \mathbb{Z}_{14} \times \mathbb{Z}_2$.
-    <2>3. **Non-trivial action:** At least one generator of $\mathbb{Z}_2 \times \mathbb{Z}_2$ acts by inversion on $\mathbb{Z}_7$.
-        Any two non-trivial homomorphisms $\theta, \theta': \mathbb{Z}_2^2 \to \mathbb{Z}_2$ differ by an automorphism of $\mathbb{Z}_2^2$, so they yield isomorphic semidirect products.
-    <2>4. This gives the dihedral group $D_7 \times \mathbb{Z}_2 \cong D_{14}$.
-
-<1>5. Complete classification:
-    The four groups of order 28 are:
-    1. $\mathbb{Z}_{28}$ (abelian, cyclic).
-    2. $\mathbb{Z}_{14} \times \mathbb{Z}_2$ (abelian, non-cyclic).
-    3. $\mathbb{Z}_7 \rtimes \mathbb{Z}_4$ (non-abelian, $Q \cong \mathbb{Z}_4$ acts by inversion).
-    4. $D_{14} \cong D_7 \times \mathbb{Z}_2$ (non-abelian, $Q \cong \mathbb{Z}_2^2$).
-
-<1>6. Conclusion:
-    There are exactly four groups of order 28, up to isomorphism. Q.E.D.
+Thus there are exactly four isomorphism types:
+\[
+C_{28},\qquad C_{14}\times C_2,\qquad C_7\rtimes C_4,\qquad D_7\times C_2\cong D_{14}.
+\]
+The two abelian groups are distinguished by cyclicity, and the two nonabelian groups by the isomorphism type of their Sylow $2$-subgroups ($C_4$ versus $C_2^2$).
 :::

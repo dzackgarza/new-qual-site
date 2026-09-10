@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,44 +26,27 @@ State Baer's Criterion and the characterization of injective modules over PIDs (
 :::
 
 ::: solution
-**Goal:** Define injective modules, characterize them via exact contravariant Hom functors, state Baer's Criterion, and detail the equivalence with divisible modules over PIDs.
+A left $R$-module $Q$ is **injective** if every homomorphism into $Q$ defined on a submodule extends across the containing module: whenever $A\hookrightarrow B$ is injective and $f:A\to Q$ is $R$-linear, there exists $g:B\to Q$ with $g|_A=f$. Equivalently, the contravariant functor
+\[
+\operatorname{Hom}_R(-,Q)
+\]
+is exact.
 
-<1>1. Categorical and Lifting Definition:
-    *Proof:*
-    <2>1. Let $R$ be a ring (with 1). A left $R$-module $Q$ is **injective** if for every injective $R$-module homomorphism $i: A \hookrightarrow B$ and every homomorphism $f: A \to Q$, there exists a homomorphism $g: B \to Q$ extending $f$ (i.e. $g \circ i = f$):
-        $$\begin{array}{ccc}
-        0 \longrightarrow A & \xrightarrow{i} & B \\
-        \phantom{0 \longrightarrow} \Big\downarrow \scriptstyle f & \swarrow \scriptstyle g & \\
-        Q & &
-        \end{array}$$
-    <2>2. **Equivalent Functorial Definition:** $Q$ is injective if and only if the contravariant functor $\operatorname{Hom}_R(-, Q)$ is **exact** (sends short exact sequences to short exact sequences).
+**Baer's criterion.** A left $R$-module $Q$ is injective if and only if every $R$-linear map
+\[
+f:I\to Q
+\]
+from a left ideal $I\subseteq R$ extends to an $R$-linear map $R\to Q$.
 
-<1>2. Baer's Criterion:
-    *Proof:*
-    <2>1. **Theorem (Baer, 1940):** An $R$-module $Q$ is injective if and only if for every left ideal $I \subseteq R$, any $R$-module homomorphism $f: I \to Q$ can be extended to an $R$-module homomorphism $g: R \to Q$:
-        $$\begin{array}{ccc}
-        0 \longrightarrow I & \hookrightarrow & R \\
-        \phantom{0 \longrightarrow} \Big\downarrow \scriptstyle f & \swarrow \scriptstyle g & \\
-        Q & &
-        \end{array}$$
-    <2>2. *Proof Idea:* Zorn's Lemma applied to the poset of partial extensions of homomorphisms from submodules of $B$ into $Q$.
+Now let $R$ be a commutative PID. An $R$-module $Q$ is **divisible** if, for every $0\ne r\in R$ and $q\in Q$, there exists $y\in Q$ with
+\[
+ry=q.
+\]
+Over a PID,
+\[
+Q\text{ is injective}\iff Q\text{ is divisible}.
+\]
+Indeed, every ideal is $(r)$. A homomorphism $f:(r)\to Q$ is determined by $q=f(r)$. Extending $f$ to $R$ is equivalent to finding $y=g(1)$ with $ry=q$, exactly the divisibility condition.
 
-<1>3. Injective Modules over Principal Ideal Domains (Divisibility):
-    *Proof:*
-    <2>1. An $R$-module $M$ over an integral domain $R$ is **divisible** if for every $r \in R \setminus \{0\}$ and every $m \in M$, there exists $y \in M$ such that $r y = m$ (i.e. the multiplication map $r \cdot: M \to M$ is surjective).
-    <2>2. **Theorem:** Let $R$ be a PID (e.g. $R = \mathbb{Z}$ or $R = k[x]$). An $R$-module $Q$ is injective if and only if $Q$ is **divisible**.
-    <2>3. *Proof via Baer's Criterion:*
-        - In a PID, every ideal is principal: $I = (r) = Rr$.
-        - A homomorphism $f: (r) \to Q$ is completely determined by $f(r) = q \in Q$.
-        - An extension $g: R \to Q$ is determined by $g(1) = y \in Q$ such that $r y = g(r) = f(r) = q$.
-        - Such an element $y$ exists for all $q \in Q$ and $r \ne 0 \iff Q$ is divisible.
-
-<1>4. Examples:
-    *Proof:*
-    <2>1. Over $R = \mathbb{Z}$ (Abelian groups), the injective modules are the divisible abelian groups:
-        $$\mathbb{Q}, \quad \mathbb{Q}/\mathbb{Z}, \quad \mathbb{Z}(p^\infty) \text{ (Prüfer } p\text{-group)}.$$
-    <2>2. The field of fractions $K = \operatorname{Frac}(R)$ of any integral domain is an injective $R$-module.
-
-<1>5. Conclusion:
-    An injective module admits lifting of homomorphisms, is characterized by Baer's criterion on ideals $I \subseteq R$, and is equivalent to divisibility over PIDs. Q.E.D.
+Thus over $\mathbb Z$ the injective modules are precisely the divisible abelian groups; examples include $\mathbb Q$, $\mathbb Q/\mathbb Z$, and the Prüfer $p$-groups. More generally, if $R$ is a PID, its fraction field $\operatorname{Frac}(R)$ is divisible and therefore injective as an $R$-module.
 :::

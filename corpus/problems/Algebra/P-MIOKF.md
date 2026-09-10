@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -24,33 +27,35 @@ How?
 :::
 
 ::: solution
-**Goal:** Prove that $\mathbb{C}$ has proper subfields isomorphic to $\mathbb{C}$, and construct an explicit example using transcendence bases.
+Yes.
 
-<1>1. Answer: **Yes**, it can happen.
-An isomorphism $\phi: \mathbb{C} \to K$ onto a subfield $K \subsetneq \mathbb{C}$ is equivalent to a non-surjective field endomorphism (embedding) of $\mathbb{C}$ into itself.
+Choose a transcendence basis $B$ of $\mathbb C/\mathbb Q$. Then
+\[
+|B|=\operatorname{trdeg}_{\mathbb Q}\mathbb C=2^{\aleph_0}.
+\]
+Pick $t\in B$ and put
+\[
+B_0=B\setminus\{t\}.
+\]
+Since $B$ is infinite,
+\[
+|B_0|=|B|.
+\]
+Let $K$ be the algebraic closure of $\mathbb Q(B_0)$ inside $\mathbb C$, i.e. the set of elements of $\mathbb C$ algebraic over $\mathbb Q(B_0)$.
 
-<1>2. Steinitz's Theorem on Algebraically Closed Fields: *Proof:* <2>1. By Steinitz's classification of algebraically closed fields, an algebraically closed field of characteristic 0 is completely determined up to isomorphism by its **transcendence degree** over $\mathbb{Q}$.
-<2>2. The cardinality of $\mathbb{C}$ is $|\mathbb{C}| = 2^{\aleph_0} = \mathfrak{c}$ (the continuum).
-<2>3. Because any field extension of transcendence degree $\kappa$ has cardinality $\max(\aleph_0, \kappa)$, the transcendence degree of $\mathbb{C}$ over $\mathbb{Q}$ is: $$\operatorname{tr.deg}(\mathbb{C}/\mathbb{Q}) = 2^{\aleph_0} = \mathfrak{c}.$$
+The field $K$ is proper because $t$ is transcendental over $\mathbb Q(B_0)$, so $t\notin K$. On the other hand, $K$ is algebraically closed of characteristic $0$ and
+\[
+\operatorname{trdeg}_{\mathbb Q}K=|B_0|=|B|=\operatorname{trdeg}_{\mathbb Q}\mathbb C.
+\]
+By the classification of algebraically closed fields by characteristic and transcendence degree,
+\[
+K\cong\mathbb C.
+\]
+Thus $\mathbb C$ has a proper subfield isomorphic to itself.
 
-<1>3. Explicit Construction of a Proper Subfield Isomorphic to $\mathbb{C}$: *Proof:* <2>1. By Zorn's Lemma (Axiom of Choice), choose a transcendence basis $B$ for $\mathbb{C}$ over $\mathbb{Q}$.
-<2>2. The cardinality of $B$ is $|B| = \mathfrak{c}$.
-<2>3. Since $B$ is an infinite set, we can choose a proper subset $B_0 \subsetneq B$ such that $|B_0| = |B| = \mathfrak{c}$ (for example, pick a single element $t \in B$ and let $B_0 = B \setminus \{t\}$). <2>4. Let $K = \overline{\mathbb{Q}(B_0)}$ be the algebraic closure of the purely transcendental extension $\mathbb{Q}(B_0)$ inside $\mathbb{C}$.
-<2>5. **$K$ is a proper subfield of $\mathbb{C}$ ($K \ne \mathbb{C}$):** - The element $t \in B \setminus B_0$ is algebraically independent over $\mathbb{Q}(B_0)$.
-
-- Therefore, $t$ is not algebraic over $\mathbb{Q}(B_0)$, which means $t \notin K$.
-
-- Thus $K \subsetneq \mathbb{C}$.
-  <2>6. **$K \cong \mathbb{C}$:** - $K$ is an algebraically closed field of characteristic 0. - The transcendence degree of $K$ over $\mathbb{Q}$ is $\operatorname{tr.deg}(K/\mathbb{Q}) = |B_0| = \mathfrak{c} = \operatorname{tr.deg}(\mathbb{C}/\mathbb{Q})$.
-
-- By Steinitz's Theorem, any two algebraically closed fields of the same characteristic and same infinite transcendence degree are isomorphic.
-
-- Therefore, $K \cong \mathbb{C}$.
-
-<1>4. Endomorphism perspective: *Proof:* <2>1. Choose any bijection $f: B \to B_0 \subsetneq B$.
-<2>2. $f$ extends uniquely to a field isomorphism $\tilde{f}: \mathbb{Q}(B) \to \mathbb{Q}(B_0)$.
-<2>3. By the extension theorem for algebraically closed fields, $\tilde{f}$ extends to an isomorphism of their algebraic closures: $$\Phi: \overline{\mathbb{Q}(B)} = \mathbb{C} \xrightarrow{\cong} \overline{\mathbb{Q}(B_0)} = K \subsetneq \mathbb{C}.$$ <2>4. $\Phi$ is an injective, non-surjective field endomorphism of $\mathbb{C}$.
-
-<1>5. Conclusion: Yes; the algebraic closure $\overline{\mathbb{Q}(B \setminus \{t\})}$ of a transcendence basis minus one element has transcendence degree $\mathfrak{c}$, so it is a proper subfield isomorphic to $\mathbb{C}$.
-Q.E.D.
+Equivalently, a bijection $B\to B_0$ extends to an isomorphism
+\[
+\mathbb C\xrightarrow{\sim}K\subsetneq\mathbb C,
+\]
+giving an injective but non-surjective field endomorphism of $\mathbb C$.
 :::

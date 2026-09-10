@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -24,38 +27,24 @@ What happens when the field is not algebraically closed?
 :::
 
 ::: {.solution}
-<1>1. Over an algebraically closed field $F$, every matrix is similar to its Jordan canonical form: a block-diagonal matrix of Jordan blocks $J_m(\lambda)$ (an $m \times m$ matrix with $\lambda$ on the diagonal, $1$'s on the superdiagonal, and $0$'s elsewhere).
-::: {.proof}
-the Jordan canonical form theorem.
-:::
+Over an algebraically closed field, every matrix is similar to a direct sum of Jordan blocks
+\[
+J_m(\lambda).
+\]
+For each eigenvalue $\lambda$, the numbers and sizes of the blocks are determined by the generalized eigenspaces, equivalently by the nullities of the powers
+\[
+(A-\lambda I)^k.
+\]
 
-<1>2. The Jordan form is determined by the generalized eigenspaces and the sizes of the Jordan blocks, which are determined by the ranks of $(A - \lambda I)^k$.
-::: {.proof}
-the structure of the Jordan form.
-:::
+Over a field $F$ that is not algebraically closed, the characteristic polynomial may not split, so a Jordan form over $F$ need not exist. For example, the real rotation
+\[
+\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+\]
+has no real eigenvalues and hence no Jordan form over $\mathbb R$.
 
-<1>3. When $F$ is not algebraically closed, the Jordan form may not exist over $F$ (the eigenvalues may not lie in $F$).
-::: {.proof}
-the Jordan form requires the characteristic polynomial to split into linear factors over $F$.
-:::
-
-<1>4. Over a non-algebraically-closed field, the appropriate canonical form is the rational canonical form.
-::: {.proof}
-the rational canonical form exists over any field.
-:::
-
-<1>5. The rational canonical form is a block-diagonal matrix of companion matrices of the invariant factors $d_1 \mid d_2 \mid \cdots \mid d_k$ (monic polynomials over $F$).
-::: {.proof}
-the rational canonical form theorem.
-:::
-
-<1>6. The rational canonical form generalizes the Jordan form: over an algebraically closed field, the companion matrix of $(x - \lambda)^m$ is similar to the Jordan block $J_m(\lambda)$.
-::: {.proof}
-the companion matrix of $(x-\lambda)^m$ has a single eigenvalue $\lambda$ and a single Jordan block of size $m$.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>1–<1>6.
-:::
+The canonical substitute valid over every field is the rational canonical form. Viewing $F^n$ as an $F[x]$-module via $x\cdot v=Av$, the structure theorem over the PID $F[x]$ gives invariant factors
+\[
+d_1\mid d_2\mid\cdots\mid d_r,
+\]
+and the rational canonical form is the block diagonal matrix of their companion matrices. When all invariant factors split into powers of linear factors, this data refines to the usual Jordan form.
 :::

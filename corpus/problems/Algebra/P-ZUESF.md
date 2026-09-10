@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -24,71 +27,17 @@ Prove that $n_p = 1$, and consequently every Sylow $p$-subgroup is normal in $G$
 :::
 
 ::: {.solution}
-<1>1. Sylow's Third Theorem Congruence:
-<2>1. By Sylow’s Third Theorem, the number $n_p$ of Sylow $p$-subgroups of $G$ satisfies:
+By Sylow's theorem,
 \[
-n_p \equiv 1 \pmod p.
+n_p\equiv1\pmod p.
 \]
-::: {.proof}
-Sylow's Third Theorem.
-:::
-<2>2. Thus $n_p = 1 + k p$ for some non-negative integer $k \in \{0, 1, 2, \dots\}$.
-::: {.proof}
-definition of modular congruence for positive integers.
-:::
-
-<1>2. Upper Bound from Divisibility:
-<2>1. We are given that $n_p$ divides $q$, where $q$ is a positive integer strictly less than $p$ ($1 \le q < p$).
-::: {.proof}
-hypothesis.
-:::
-<2>2. Since $n_p \ge 1$ divides $q$, we have $n_p \le q$.
-::: {.proof}
-a positive divisor of a positive integer is less than or equal to the integer.
-:::
-<2>3. Combining this with $q < p$ yields:
+The hypothesis $n_p\mid q$ with $0<q<p$ gives
 \[
-1 \le n_p < p.
+1\le n_p\le q<p.
 \]
-::: {.proof}
-transitivity of order relation.
-:::
-
-<1>3. Deduce that $n_p = 1$:
-<2>1. If $k \ge 1$, then:
+The only positive integer less than $p$ that is congruent to $1$ modulo $p$ is $1$. Hence
 \[
-n_p = 1 + k p \ge 1 + p > p,
+\boxed{n_p=1}.
 \]
-which contradicts $n_p < p$ from <1>2.
-::: {.proof}
-$k \ge 1 \implies 1 + kp > p$.
-:::
-<2>2. Therefore $k = 0$.
-::: {.proof}
-$k \in \mathbb{Z}_{\ge 0}$ and $k \not\ge 1$.
-:::
-<2>3. Substituting $k = 0$ yields:
-\[
-n_p = 1 + 0 \cdot p = 1.
-\]
-::: {.proof}
-<2>2.
-:::
-
-<1>4. Consequence (Normality):
-<2>1. Since $n_p = 1$, the group $G$ possesses a unique Sylow $p$-subgroup $P$.
-::: {.proof}
-$n_p = 1$.
-:::
-<2>2. By Sylow’s Second Theorem, all Sylow $p$-subgroups of $G$ are conjugate to $P$.
-Since $P$ is unique, $g P g^{-1} = P$ for all $g \in G$, so $P \trianglelefteq G$ is normal.
-::: {.proof}
-invariance under all inner automorphisms.
-:::
-
-<1>5. Conclusion:
-$n_p \mid q < p \implies n_p = 1$, and the unique Sylow $p$-subgroup is normal in $G$. Q.E.D.
-::: {.proof}
-<1>1 through <1>4.
-:::
+Therefore the Sylow $p$-subgroup is unique, and hence normal in $G$.
 :::
