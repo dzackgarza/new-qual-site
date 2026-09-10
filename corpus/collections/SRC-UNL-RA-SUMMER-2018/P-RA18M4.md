@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 4 of the preserved UNL May 31, 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Replaced the invalid nonclosedness example, whose limit M|x| belongs to S on [0,1], by a sequence converging to an interior cusp at x=1/2.
 ---
 
 :::{.problem}
@@ -45,7 +53,21 @@ Determine whether the set $S$ is compact in $(C_b([0,1]),\rho_\infty)$.
 
 <1>2. (b) $S$ is NOT compact.
     <2>1. $S$ is not closed in $C_b[0,1]$.
-        Proof: define $f_n(x) = M\sqrt{x^2 + 1/n^2} - M/n$. Each $f_n$ is differentiable on $(0,1)$ with $f_n'(x) = \frac{Mx}{\sqrt{x^2 + 1/n^2}}$, so $|f_n'| \le M$; and $f_n(0) = M/n - M/n = 0$, so $f_n \in S$. But $f_n \to M|x|$ uniformly on $[0,1]$ (since $\sqrt{x^2 + 1/n^2} \to |x|$ uniformly and $M/n \to 0$), and $M|x|$ is not differentiable at $0$, so $M|x| \notin S$. A sequence in $S$ converges to a point outside $S$: $S$ is not closed.
+        Proof: define
+        \[
+        f_n(x)=M\left(\sqrt{(x-\tfrac12)^2+n^{-2}}-\sqrt{\tfrac14+n^{-2}}\right).
+        \]
+        Then $f_n(0)=0$, and on $(0,1)$
+        \[
+        f_n'(x)=M\frac{x-\tfrac12}{\sqrt{(x-\tfrac12)^2+n^{-2}}},
+        \]
+        so $|f_n'(x)|\le M$. Hence $f_n\in S$.
+
+        Since $|\sqrt{t^2+n^{-2}}-|t||\le n^{-1}$ uniformly in $t$, we have uniform convergence
+        \[
+        f_n(x)\longrightarrow f(x):=M\left(|x-\tfrac12|-\tfrac12\right)
+        \]
+        on $[0,1]$. The limit satisfies $f(0)=0$ but is not differentiable at the interior point $x=1/2$. Thus $f\notin S$, so $S$ is not closed.
     <2>2. Compact subsets of metric spaces are closed.
         Proof: A compact subset of a Hausdorff space is closed; every metric space is Hausdorff.
     <2>3. Q.E.D.
