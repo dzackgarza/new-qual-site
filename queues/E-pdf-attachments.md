@@ -346,7 +346,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019
 
-- [ ] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom
+- [x] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom — disposition 2026-09-10: expository Real Analysis course notes rather than an exam sitting; already linked from `wiki/real-analysis/resources/books-notes.md`, so no duplicate collection or problem-card intake is warranted.
 
 - [x] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — disposition 2026-09-09: exact byte duplicate of `basic-18S.pdf` (SHA-256 `3ae97a051d30af40f6c497c68a1ebfad8ed56872cd471f4aa68c3b1ac8e19769`); ingest only the canonical `basic-18S.pdf` source.
 
