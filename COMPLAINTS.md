@@ -42,6 +42,8 @@ of public mathematical remarks.
 
 ### The 2003–2009 algebra packet has mixed subject metadata
 
+- **June 2012 through June 2010 verified repairs:** the algebra source confirms `P-RE2VW`, `P-5JBRJ`, `P-LU2L3`, `P-3DGMZ`, `P-HU56P`, and `P-VUTDR`, each formerly filed solely under `prelim`. Commits `78a17ba87`, `9c8c210c5`, `afb50fe86`, `15264463f`, `484d9a8e0`, and `487db24fb` correct those classifications individually with complete solutions. PDF pages 11–14 were visually inspected; the five assertions on `P-5JBRJ` were also compared with the retained extraction before authorship. These dispositions do not cover unread classification candidates.
+
 - **July 2013 classification repairs:** `P-W5LVB` and `P-NGXAE` had sole area `prelim`, contrary to July 2013 Rings 2 in the retained extraction and Fields 1 on visually inspected PDF page 8. Commits `3d093c891` and `1d405a5b6` correct these areas to algebra and supply the complete classifications, including all ten module classes and every subgroup needed for the quartic subfield counts. These two verified defects are resolved; unread classification candidates are not covered by this disposition.
 
 - **Summer 2014 source-checked repairs:** problems 1, 3, 4, and 6 in the retained 2010–2015 packet confirm `P-TNZTM`, `P-WC2SP`, `P-JHQKZ`, and `P-ZR3OT` as algebra, although each card had sole area `prelim`. Commits `22cb7e0f9`, `a4a9b4527`, `fd3e6433d`, and `2d22e4b57` correct those classifications and supply all requested proofs or counterexamples. The tensor-product card also moves the source's inline hint to a separate hint section and retains the noncommutative-ring hypothesis throughout the proof. These are dispositions of the inspected cards, not of other cards sharing the label.
@@ -118,6 +120,8 @@ of public mathematical remarks.
 
 ### Supposedly disjoint collection streams collided on consecutive cards
 
+- **June 2012 continuation, 2026-09-10:** `P-X5M5Q` acquired another writer's complete cubic correction and proof after this stream's initial read; the full-context patch was rejected without changing it, and the retained proof was read in full. On the next card, `P-F2Y4F`, the first post-edit diff showed an externally appended fragment beginning `he same cubic factor-degree argument` and two surplus closing fences after this stream's complete solution. A fresh read confirmed the fragment; an exact-context patch removed only those four extraneous lines, and `8eef0a5d1` records the clean proof. Later full-context patches for `P-P1PID` and `P-T3ZMZ` were likewise rejected after another writer supplied complete proofs; those proofs were read and preserved in `1fb679c5b` and `de4eb627c`. The new source-check entry on `P-2TVO4` was left to its active writer, and its subsequently completed proof was reviewed in full and preserved in `a40569998`. A fresh `agents.status` again returned `WORKER_IDENTITY_LOST`, so no addressable owner was supplied for coordination. Single-card parsing had reported success despite the stray trailing fragment; mathematical and diff review, rather than that parser result, detected it.
+
 - **July 2013 reproduction:** while this stream authored `P-W13IN`, a second writer independently appended the same coset-action proof and an additional top-level `audit` key. A fresh read later showed only this stream's visually source-checked proof; the other writer had removed its duplicate before the attempted commit. Both versions were independently reviewed. Later full-context source-check patches for `P-W5LVB` and `P-NGXAE` were rejected without changes after another writer had supplied complete proofs. Those proofs were read in full, checked against the source and the required exhaustive classifications, and preserved in commits `3d093c891` and `1d405a5b6`. Native `agents.status` again returned `WORKER_IDENTITY_LOST`, so the tool still supplied no addressable owner for coordination.
 
 - **July 2003 reproduction, 2026-09-10:** `P-ARTALG-JU03-5` and `P-ARTALG-JU03-8` were each read without solutions and acquired another writer's complete solution before this stream's exact-context patch. Both patches were rejected without changes. The resulting proofs were read in full and preserved; this stream instead completed the still-unwritten lattice and solvability cards. The overlapping ownership therefore persists beyond the July 2006 section.
@@ -135,6 +139,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **June 2010 commit polling, 2026-09-10:** an empty-input poll of the `P-3DGMZ` commit session `3501` was blocked by request screening with the safety-status message. The identical immediate retry returned exit zero and commit `15264463f`. This obstructed retrieval of an already-running command's result; it was not a failed repository check or commit.
 
 - **Range-continuation reproduction, 2026-09-10:** the read-only ordered scan of `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI` using `Corpus` and `parse_cards` was rejected before execution. An empty-input poll of session `56826` was also rejected; the identical later poll succeeded and returned the five `just unsolved-in` results. These observations concern request screening, not failed repository commands.
 
@@ -161,6 +167,8 @@ of public mathematical remarks.
 - **Repair:** restore the documented Zotero/Better BibTeX export service, then add and export new references through that service.
 
 ### Primary local repository connector can silently become unavailable
+
+- **Transient native-read failure, 2026-09-10:** a native read of `P-HU56P` and `P-2TVO4` returned HTTP 502 with `Upstream or external service errors`. An identical immediate retry returned both complete cards successfully. This establishes an intermittent read failure, not missing source files or a repaired upstream service; its cause was not exposed by the error.
 
 - **Object and need:** local-repository work through the Chat On Steroids connector; repository reads and terminal commands should remain available while a scoped authoring stream is active.
 - **Observed evidence:** on 2026-09-09, the first attempt to read `AGENTS.md`, `CONTRIBUTING.md`, git status, and git history failed before executing with `Tunnel-client has not been seen for 300 seconds. Ensure tunnel-client is running and connected.` The secondary local connector was available and executed the same commands successfully.
