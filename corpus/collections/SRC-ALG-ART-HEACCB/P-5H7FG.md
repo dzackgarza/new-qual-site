@@ -13,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -23,41 +26,48 @@ audit:
 
 ::: problem
 Exhibit the rational and Jordan canonical forms for the following matrix $A\in M_4(\CC)$:
-  \[
-  A=\left(\begin{array}{cccc}
-  2 & 0 & 0 & 0 \\
-  1 & 1 & 0 & 0 \\
-  -2 & -2 & 0 & 1 \\
-  -2 & 0 & -1 & -2
-  \end{array}\right)
-  .\]
+\[
+A=\left(\begin{array}{cccc}
+2 & 0 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+-2 & -2 & 0 & 1 \\
+-2 & 0 & -1 & -2
+\end{array}\right).
+\]
 :::
-
 
 ::: {.solution}
 <1>1. The characteristic polynomial is
 \[
-\chi_A(x)=(x-2)(x-1)(x+1)^2.
+\chi_A(x)=(x-2)(x-1)(x+1)^2
+=x^4-x^3-3x^2+x+2.
 \]
 ::: {.proof}
-A direct determinant computation gives
-\[
-\det(xI-A)=(x-2)(x-1)(x+1)^2.
-\]
-Thus the eigenvalues are \(2,1,-1\), with algebraic multiplicities \(1,1,2\), respectively.
+A direct determinant computation of $xI-A$ gives the displayed factorization.
 :::
 
-<1>2. The eigenspace for \(-1\) has dimension \(1\).
-::: {.proof}
-Solving \((A+I)v=0\) gives a one-dimensional kernel. Hence the geometric multiplicity of the eigenvalue \(-1\) is \(1\).
-:::
-
-<1>3. The Jordan canonical form is
+<1>2. The eigenspaces for $2$ and $1$ are one-dimensional, as expected for simple eigenvalues. For the eigenvalue $-1$ one has
 \[
-J_2(-1)\oplus [1]\oplus[2].
+\dim\ker(A+I)=1.
 \]
 ::: {.proof}
-The eigenvalues \(1\) and \(2\) are simple, so each contributes a \(1\times1\) Jordan block. The eigenvalue \(-1\) has algebraic multiplicity \(2\) but geometric multiplicity \(1\), so it contributes exactly one Jordan block of size \(2\).
+The eigenvalues $2$ and $1$ have algebraic multiplicity $1$. Direct row reduction of $A+I$ gives rank $3$, hence nullity $1$.
+:::
+
+<1>3. Therefore the Jordan canonical form is
+\[
+J=J_2(-1)\oplus[1]\oplus[2]
+=
+\begin{pmatrix}
+-1&1&0&0\\
+0&-1&0&0\\
+0&0&1&0\\
+0&0&0&2
+\end{pmatrix},
+\]
+up to permutation of the Jordan blocks.
+::: {.proof}
+The eigenvalue $-1$ has algebraic multiplicity $2$ but geometric multiplicity $1$, so it contributes one Jordan block of size $2$. The simple eigenvalues contribute one $1\times1$ block each.
 :::
 
 <1>4. The minimal polynomial is
@@ -65,28 +75,12 @@ The eigenvalues \(1\) and \(2\) are simple, so each contributes a \(1\times1\) J
 m_A(x)=(x+1)^2(x-1)(x-2)=\chi_A(x).
 \]
 ::: {.proof}
-The largest Jordan block for \(-1\) has size \(2\), so \((x+1)^2\) divides the minimal polynomial. The simple eigenvalues \(1\) and \(2\) force the factors \(x-1\) and \(x-2\). Their product already has degree \(4\), equal to the characteristic polynomial, so the two polynomials coincide.
+The size-$2$ Jordan block at $-1$ forces the exponent $2$ of $x+1$, while the eigenvalues $1$ and $2$ force the factors $x-1$ and $x-2$. Thus the minimal polynomial has degree $4$ and equals the characteristic polynomial.
 :::
 
-<1>5. Therefore the rational canonical form consists of a single companion block for
+<1>5. Hence $A$ has a single invariant factor, namely $m_A(x)$, so its rational canonical form is the companion matrix
 \[
-m_A(x)=x^4-x^3-3x^2+x+2.
-\]
-With the convention that the companion matrix of
-\[
-x^4+a_3x^3+a_2x^2+a_1x+a_0
-\]
-is
-\[
-\begin{pmatrix}
-0&0&0&-a_0\\
-1&0&0&-a_1\\
-0&1&0&-a_2\\
-0&0&1&-a_3
-\end{pmatrix},
-\]
-the rational canonical form is
-\[
+C(m_A)=
 \begin{pmatrix}
 0&0&0&-2\\
 1&0&0&-1\\
@@ -95,6 +89,10 @@ the rational canonical form is
 \end{pmatrix}.
 \]
 ::: {.proof}
-Since \(m_A=\chi_A\), the \(\mathbb C[x]\)-module defined by \(A\) has a single invariant factor. Rational canonical form is therefore one companion matrix for that invariant factor.
+The invariant factors multiply to the characteristic polynomial and the largest invariant factor is the minimal polynomial. Since these two polynomials are equal, there can be only one nonconstant invariant factor. For
+\[
+m_A(x)=x^4-x^3-3x^2+x+2,
+\]
+the displayed matrix is its standard companion matrix.
 :::
 :::

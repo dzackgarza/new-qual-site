@@ -36,62 +36,65 @@ Prove the following.
 :::
 
 ::: {.solution}
-<1>1. The action of $G$ on the $r$ left cosets of $H$ gives a homomorphism
+<1>1. Let $G$ act by left multiplication on the set $G/H$ of $r$ left cosets. This gives a homomorphism
 \[
 \rho:G\longrightarrow S_r.
 \]
+If $G$ is simple, then $\rho$ is injective.
 ::: {.proof}
-For $g\in G$ and a left coset $xH$, define
-\[
-g\cdot(xH)=(gx)H.
-\]
-This is a well-defined permutation action on the set $G/H$, which has $r$ elements.
+The kernel of the coset action is a normal subgroup of $G$ contained in the stabilizer of the coset $H$, namely $H$.
+Since $H<G$, the kernel is not all of $G$.
+If $G$ is simple, the kernel must therefore be trivial.
 :::
 
-<1>2. If $G$ is simple, then $\rho$ is injective.
+<1>2. If $G$ is simple, then $G$ is finite and $|G|\mid r!$.
 ::: {.proof}
-The kernel of the coset action is
+By <1>1, $G$ embeds in the finite group $S_r$.
+Hence $G$ is finite, and Lagrange's theorem gives
 \[
-\ker\rho=\bigcap_{g\in G}gHg^{-1},
+|G|\mid |S_r|=r!.
 \]
-so $\ker\rho\trianglelefteq G$ and $\ker\rho\le H$. Since $[G:H]=r\ge2$, the subgroup $H$ is proper, hence $\ker\rho\ne G$. Simplicity forces $\ker\rho=1$.
 :::
 
-<1>3. If $G$ is simple, then $G$ is finite and $|G|\mid r!$.
+<1>3. For $r\in\{2,3,4\}$, the symmetric group $S_r$ is solvable.
 ::: {.proof}
-By <1>2, $G$ embeds in the finite group $S_r$. Therefore $G$ is finite, and Lagrange's theorem gives
+For $S_2$ this is immediate.
+For $S_3$ use the normal series
 \[
-|G|\mid|S_r|=r!.
+1\triangleleft A_3\triangleleft S_3,
 \]
-This proves part (a).
+whose factors are cyclic.
+For $S_4$ use
+\[
+1\triangleleft V_4\triangleleft A_4\triangleleft S_4,
+\]
+where $V_4$ is the Klein four subgroup; all successive quotients are abelian.
 :::
 
 <1>4. If $r\in\{2,3,4\}$, then $G$ cannot be simple.
 ::: {.proof}
-Suppose $G$ were simple. Since $H$ is nontrivial and proper, $G$ cannot be cyclic of prime order; hence a simple $G$ here would be nonabelian. By <1>2, $G$ embeds in $S_r$.
-
-For $r\le4$, the group $S_r$ is solvable: $S_2$ and $S_3$ are solvable, and
-\[
-1\trianglelefteq V_4\trianglelefteq A_4\trianglelefteq S_4
-\]
-has abelian successive quotients. Every subgroup of a solvable group is solvable, whereas a nonabelian simple group is not solvable. This contradiction proves part (b).
+Suppose $G$ were simple. By <1>1, $G$ is isomorphic to a subgroup of $S_r$, hence is solvable by <1>3 because subgroups of solvable groups are solvable.
+A nontrivial simple solvable group must be abelian: otherwise its derived subgroup is a nontrivial proper normal subgroup at the last nontrivial stage of the derived series.
+A finite simple abelian group has prime order and therefore has no nontrivial proper subgroup.
+But $H$ is nontrivial and proper since $[G:H]=r\ge2$, a contradiction.
 :::
 
-<1>5. For every $r\ge5$, the alternating group $A_r$ is simple and contains a nontrivial subgroup of index $r$.
-::: {.proof}
-We use the standard theorem that $A_r$ is simple for every $r\ge5$. Let
+<1>5. Let $r\ge5$ and take $G=A_r$ acting naturally on $\{1,\dots,r\}$. Let
 \[
-H=\{\sigma\in A_r:\sigma(r)=r\}
+H=\operatorname{Stab}_{A_r}(1).
 \]
-be the stabilizer of the point $r$. Restriction to $\{1,\dots,r-1\}$ identifies $H$ with $A_{r-1}$, so $H$ is nontrivial for $r\ge5$. The natural action of $A_r$ on $\{1,\dots,r\}$ is transitive, hence orbit-stabilizer gives
+Then $H$ is nontrivial and $[G:H]=r$.
+::: {.proof}
+The natural action of $A_r$ is transitive for $r\ge3$.
+Hence orbit-stabilizer gives
 \[
 [A_r:H]=r.
 \]
-Thus $G=A_r$ supplies the required example for every $r\ge5$.
+Moreover $H\cong A_{r-1}$, which is nontrivial for $r\ge5$.
 :::
 
-<1>6. Therefore all three assertions hold.
+<1>6. The group $A_r$ is simple for every $r\ge5$, so <1>5 gives the required example for every such $r$.
 ::: {.proof}
-Parts (a), (b), and (c) are <1>3, <1>4, and <1>5, respectively.
+We use the standard theorem that the alternating group $A_r$ is simple for $r\ge5$.
 :::
 :::

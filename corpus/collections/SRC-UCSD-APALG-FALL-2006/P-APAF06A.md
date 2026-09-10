@@ -23,90 +23,86 @@ audit:
 ---
 
 ::: problem
-Assume that $(\lambda, x)$ is an eigenpair of $A \in M_n$ such that
-$am(\lambda) = gm(\lambda) = 1$. Prove that there exists a nonsingular matrix
-$(x \quad X)$ with inverse $(y \quad Y)^*$ such that
+Assume that $(\lambda, x)$ is an eigenpair of $A \in M_n$ such that $am(\lambda) = gm(\lambda) = 1$.
+Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[
 \begin{pmatrix} y^* \\ Y^* \end{pmatrix} A (x \quad X) = \begin{pmatrix} \lambda & 0 \\ 0 & M \end{pmatrix}.
 \]
 :::
 
+
 ::: {.solution}
-<1>1. Let \(y\neq 0\) be a left eigenvector for \(\lambda\), so
+<1>1. Let $V=\mathbb C^n$ and write the characteristic polynomial as
 \[
-y^*A=\lambda y^*.
+\chi_A(t)=(t-\lambda)q(t).
 \]
-Then one may choose \(y\) so that \(y^*x=1\).
+Since the algebraic multiplicity of $\lambda$ is one, $q(\lambda)\neq0$, so $t-\lambda$ and $q(t)$ are relatively prime.
 ::: {.proof}
-Since \(\lambda\) has algebraic multiplicity one for \(A\), it also has algebraic
-multiplicity one for \(A^*\), so a nonzero left eigenvector \(y\) exists. We claim that
-\(y^*x\neq 0\). If \(y^*x=0\), then
-\(x\in(\ker(A^*-\overline\lambda I))^\perp=\operatorname{im}(A-\lambda I)\). Thus there
-is \(z\) with
-\[
-(A-\lambda I)z=x\neq 0,
-\qquad
-(A-\lambda I)x=0.
-\]
-Hence \(z,x\) form a Jordan chain of length at least two for \(\lambda\), contradicting
-\(am(\lambda)=1\). Therefore \(y^*x\neq0\), and rescaling \(y\) gives \(y^*x=1\).
+Algebraic multiplicity one means exactly that $t-\lambda$ occurs to the first power in $\chi_A$ and does not divide $q$.
 :::
 
-<1>2. The hyperplane \(W:=\ker y^*\) is \(A\)-invariant and is complementary to
-\(\operatorname{span}\{x\}\).
-::: {.proof}
-If \(w\in W\), then
+<1>2. One has an $A$-invariant direct-sum decomposition
 \[
-y^*Aw=\lambda y^*w=0,
-\]
-so \(Aw\in W\). Also \(y^*x=1\), so \(x\notin W\). Since \(W\) has codimension one,
-\[
-\mathbb C^n=\operatorname{span}\{x\}\oplus W.
-\]
-:::
-
-<1>3. Choose a matrix \(X\in M_{n,n-1}\) whose columns form a basis of \(W\). Then
-\((x\ \ X)\) is nonsingular, and its inverse has the form
-\[
-(x\ \ X)^{-1}=\begin{pmatrix}y^*\\Y^*\end{pmatrix}
-\]
-for some \(Y\in M_{n,n-1}\).
-::: {.proof}
-By <1>2 the columns \(x\) together with a basis of \(W\) form a basis of
-\(\mathbb C^n\), so \((x\ \ X)\) is nonsingular. Because \(y^*x=1\) and \(y^*X=0\), the
-first row of its inverse is exactly \(y^*\); denote the remaining rows by \(Y^*\).
-:::
-
-<1>4. There is a matrix \(M\in M_{n-1}\) such that
-\[
-AX=XM.
+V=\ker(A-\lambda I)\oplus\ker q(A).
 \]
 ::: {.proof}
-By <1>2, \(W=\operatorname{im}X\) is \(A\)-invariant. Hence each column of \(AX\) is a
-linear combination of the columns of \(X\), and these coefficients form a unique matrix
-\(M\).
+Choose polynomials $u,v$ with
+\[
+u(t)(t-\lambda)+v(t)q(t)=1.
+\]
+For $z\in V$,
+\[
+z=u(A)(A-\lambda I)z+v(A)q(A)z.
+\]
+By Cayley--Hamilton,
+\[
+(A-\lambda I)q(A)=\chi_A(A)=0.
+\]
+Hence $u(A)(A-\lambda I)z\in\ker q(A)$ and $v(A)q(A)z\in\ker(A-\lambda I)$, so the two kernels span $V$.
+If $z$ lies in both kernels, the Bézout identity gives $z=0$, so the sum is direct.
+Both kernels are $A$-invariant because they are kernels of polynomials in $A$.
 :::
 
-<1>5. Therefore
+<1>3. Since the geometric multiplicity of $\lambda$ is one,
 \[
-A(x\ \ X)=(x\ \ X)
+\ker(A-\lambda I)=\mathbb Cx.
+\]
+Choose a matrix $X$ whose columns form a basis of $\ker q(A)$.
+Then
+\[
+S=(x\quad X)
+\]
+is nonsingular.
+::: {.proof}
+The eigenspace for $\lambda$ is one-dimensional and contains the nonzero eigenvector $x$, so it is exactly $\mathbb Cx$.
+By <1>2, adjoining a basis of the complementary summand $\ker q(A)$ to $x$ gives a basis of $V$.
+:::
+
+<1>4. Relative to the basis given by the columns of $S$, the matrix of $A$ is block diagonal:
+\[
+S^{-1}AS=
 \begin{pmatrix}
 \lambda&0\\
 0&M
-\end{pmatrix},
+\end{pmatrix}
 \]
-and hence
-\[
-\begin{pmatrix}y^*\\Y^*\end{pmatrix}
-A(x\ \ X)=
-\begin{pmatrix}
-\lambda&0\\
-0&M
-\end{pmatrix}.
-\]
+for some $(n-1)\times(n-1)$ matrix $M$.
 ::: {.proof}
-The first column identity is \(Ax=\lambda x\), and the remaining columns are <1>4.
-Multiplying on the left by \((x\ \ X)^{-1}=\begin{pmatrix}y^*\\Y^*\end{pmatrix}\) gives
-the required block form.
+The first summand $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$, while the complementary summand $\ker q(A)$ is also $A$-invariant by <1>2. Therefore there are no off-diagonal blocks, and the restriction of $A$ to $\mathbb Cx$ is multiplication by $\lambda$.
+:::
+
+<1>5. Write the inverse of $S$ in block-row form as
+\[
+S^{-1}=\begin{pmatrix}y^*\\Y^*\end{pmatrix}.
+\]
+Then
+\[
+\begin{pmatrix}y^*\\Y^*\end{pmatrix}A(x\quad X)
+=
+\begin{pmatrix}\lambda&0\\0&M\end{pmatrix},
+\]
+which is the required form.
+::: {.proof}
+This is exactly the identity in <1>4 after naming the first row of $S^{-1}$ by $y^*$ and the remaining rows by $Y^*$.
 :::
 :::

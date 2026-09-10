@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-Q6PDD
 kind: problem
-title: Eigenvalues of a Hermitian matrix are real, and $A=PDP^{-1}$ with orthogonal
-  columns
+title: Eigenvalues of a Hermitian matrix are real, and $A=PDP^{-1}$ with orthogonal columns
 classification:
   areas:
   - algebra
@@ -14,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -26,52 +28,52 @@ audit:
 Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PDP\inv$ where $P$ is an invertible matrix with orthogonal columns.
 :::
 
-
 ::: {.solution}
-<1>1. Every eigenvalue of \(A\) is real.
+<1>1. Every eigenvalue of a Hermitian matrix is real.
 ::: {.proof}
-Let \(Av=\lambda v\) with \(v\neq0\). Since \(A\) is Hermitian,
+Let $Av=\lambda v$ with $v\ne0$. Since $A=A^*$,
 \[
-\langle Av,v\rangle=\langle v,Av\rangle.
+\lambda\langle v,v\rangle
+=\langle Av,v\rangle
+=\langle v,Av\rangle
+=\overline\lambda\langle v,v\rangle.
 \]
-The left side is \(\lambda\langle v,v\rangle\), while the right side is \(\overline{\lambda}\langle v,v\rangle\). Since \(\langle v,v\rangle>0\), one gets \(\lambda=\overline{\lambda}\), so \(\lambda\in\mathbb R\).
+Because $\langle v,v\rangle>0$, one has $\lambda=\overline\lambda$, so $\lambda\in\mathbb R$.
 :::
 
-<1>2. If \(v\) and \(w\) are eigenvectors for distinct eigenvalues \(\lambda\neq\mu\), then \(v\perp w\).
+<1>2. If $v$ is an eigenvector with eigenvalue $\lambda$, then $v^\perp$ is $A$-invariant.
 ::: {.proof}
-By Hermitian symmetry,
+For $w\in v^\perp$,
 \[
-\lambda\langle v,w\rangle
-=\langle Av,w\rangle
-=\langle v,Aw\rangle
-=\mu\langle v,w\rangle,
+\langle Aw,v\rangle
+=\langle w,A^*v\rangle
+=\langle w,Av\rangle
+=\lambda\langle w,v\rangle
+=0.
 \]
-where \(\lambda,\mu\in\mathbb R\) by <1>1. Thus \((\lambda-\mu)\langle v,w\rangle=0\), and \(\langle v,w\rangle=0\).
+Hence $Aw\in v^\perp$.
 :::
 
-<1>3. The space \(\mathbb C^n\) has an orthogonal basis of eigenvectors of \(A\).
+<1>3. Every Hermitian matrix admits an orthonormal basis of eigenvectors.
 ::: {.proof}
-Proceed by induction on \(n\). The case \(n=1\) is immediate. Since the characteristic polynomial splits over \(\mathbb C\), choose an eigenvector \(v\neq0\) with eigenvalue \(\lambda\). Let
-\[
-W=v^\perp.
-\]
-For \(w\in W\),
-\[
-\langle Aw,v\rangle=\langle w,Av\rangle
-=\lambda\langle w,v\rangle=0,
-\]
-so \(Aw\in W\). Hence \(W\) is \(A\)-invariant, and the restriction \(A|_W\) is again Hermitian. By induction, \(W\) has an orthogonal basis of eigenvectors of \(A|_W\). Adjoining \(v\) gives an orthogonal eigenbasis of \(\mathbb C^n\).
+We argue by induction on the dimension. The result is trivial in dimension $1$. Over $\mathbb C$, the characteristic polynomial has a root, so $A$ has an eigenvector $v$; normalize it to have norm $1$. By <1>1 its eigenvalue is real. By <1>2, the orthogonal complement $v^\perp$ is $A$-invariant, and the restriction of $A$ to $v^\perp$ is again Hermitian. By induction, $v^\perp$ has an orthonormal basis of eigenvectors. Together with $v$, this gives an orthonormal eigenbasis of the whole space.
 :::
 
-<1>4. If \(P\) is the matrix whose columns are the orthogonal eigenbasis from <1>3, and \(D\) is the diagonal matrix of the corresponding eigenvalues, then
+<1>4. Let $v_1,\dots,v_n$ be such an orthonormal eigenbasis with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb R$. Put
+\[
+P=[v_1\ \cdots\ v_n],
+\qquad
+D=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
+\]
+Then $P$ is invertible with orthogonal columns and
 \[
 A=PDP^{-1}.
 \]
 ::: {.proof}
-The eigenvector equations for the columns of \(P\) are exactly
+The columns form a basis, so $P$ is invertible; in fact $P$ is unitary because the columns are orthonormal. The eigenvector equations $Av_i=\lambda_i v_i$ combine to
 \[
-AP=PD.
+AP=PD,
 \]
-Since the columns form a basis, \(P\) is invertible, and right-multiplication by \(P^{-1}\) gives \(A=PDP^{-1}\). If the eigenvectors are normalized, \(P\) is unitary and \(P^{-1}=P^*\).
+which is equivalent to $A=PDP^{-1}$.
 :::
 :::

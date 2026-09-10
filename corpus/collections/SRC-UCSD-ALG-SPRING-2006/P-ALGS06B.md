@@ -14,7 +14,6 @@ audit:
 - event: source-checked
   by: OpenAI
   date: 2026-09-09
-  note: Compared with Question 1.2 of the official Spring 2006 UCSD algebra exam. The source omits the full-column-rank hypothesis needed for uniqueness of U; A=0 is an immediate counterexample. The card states the necessary hypothesis explicitly.
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -24,89 +23,56 @@ audit:
 ---
 
 ::: problem
-Given $A \in M_{m,n}(\mathbb C)$ with $m \geq n$ and $\operatorname{rank}A=n$, prove that there exists a unique $U \in M_{m,n}(\mathbb C)$ with orthonormal columns, and a unique Hermitian positive semidefinite $H \in M_n(\mathbb C)$ such that $A = UH$.
+Given $A \in M_{m,n}$ with $m \geq n$, prove that there exists a unique $U \in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$.
 (State in detail any auxiliary results used without proof.)
 :::
 
-::: remark
-The full-column-rank hypothesis is necessary for uniqueness of $U$. For example, if $A=0$, then $H=0$ but every $m\times n$ matrix with orthonormal columns satisfies $A=UH$.
-:::
-
 ::: {.solution}
-<1>1. The matrix $A^*A$ is Hermitian positive definite.
+<1>1. The uniqueness assertion for $U$ is false as printed. If $A=0$, then $H=0$, while every $m\times n$ matrix with orthonormal columns satisfies $A=UH$.
 ::: {.proof}
-It is Hermitian because $(A^*A)^*=A^*A$. For $0\ne x\in\mathbb C^n$,
-\[
-x^*A^*Ax=\|Ax\|^2>0,
-\]
-because $\operatorname{rank}A=n$ implies $\ker A=0$.
+Since $m\ge n$, such matrices exist and are not unique.
 :::
 
-<1>2. Let
-\[
-H=(A^*A)^{1/2}
-\]
-be the unique Hermitian positive definite square root of $A^*A$.
+<1>2. The correct statement is that $H=(A^*A)^{1/2}$ is uniquely determined, there exists an isometry $U:\mathbb C^n\to\mathbb C^m$ with $A=UH$, and $U$ is unique exactly when $A$ has full column rank.
 ::: {.proof}
-We use the spectral theorem: every Hermitian matrix $B$ is unitarily diagonalizable, $B=V\operatorname{diag}(\lambda_1,\dots,\lambda_n)V^*$ with real eigenvalues. If $B$ is positive definite, then every $\lambda_i>0$, and
-\[
-B^{1/2}=V\operatorname{diag}(\sqrt{\lambda_1},\dots,\sqrt{\lambda_n})V^*
-\]
-is Hermitian positive definite and is the unique Hermitian positive semidefinite matrix whose square is $B$.
-Applying this to $B=A^*A$ defines $H$. Since $H$ is positive definite, it is invertible.
+We use the standard fact that a Hermitian positive semidefinite matrix has a unique Hermitian positive semidefinite square root.
 :::
 
-<1>3. Define
-\[
-U=AH^{-1}.
-\]
-Then $U$ has orthonormal columns.
+<1>3. Put $H=(A^*A)^{1/2}$ and $K=\ker H$. Then $K=\ker A$ and $\operatorname{im}H=K^\perp$.
 ::: {.proof}
-Using $H^*=H$ and $H^2=A^*A$,
+For every $x$,
 \[
-U^*U
-=(H^{-1})^*A^*AH^{-1}
-=H^{-1}H^2H^{-1}
-=I_n.
+\|Ax\|^2=\langle A^*Ax,x\rangle=\langle H^2x,x\rangle=\|Hx\|^2,
 \]
-The identity $U^*U=I_n$ is exactly the condition that the columns of $U$ are orthonormal.
+so $Ax=0$ iff $Hx=0$. Since $H$ is Hermitian, $\operatorname{im}H=(\ker H)^\perp$.
 :::
 
-<1>4. The matrices $U$ and $H$ satisfy $A=UH$.
+<1>4. Define $U_0:K^\perp\to\mathbb C^m$ by $U_0(Hx)=Ax$. This is well-defined and isometric.
 ::: {.proof}
-By definition,
-\[
-UH=AH^{-1}H=A.
-\]
+If $Hx=Hy$, then $x-y\in K=\ker A$, so $Ax=Ay$. Also $\|U_0(Hx)\|=\|Ax\|=\|Hx\|$.
 :::
 
-<1>5. The positive semidefinite factor $H$ is unique.
+<1>5. Extend $U_0$ to an isometry $U:\mathbb C^n\to\mathbb C^m$. Then $U$ has orthonormal columns and $A=UH$.
 ::: {.proof}
-Suppose
-\[
-A=VK
-\]
-with $V^*V=I_n$ and $K$ Hermitian positive semidefinite. Then
-\[
-A^*A=K V^*V K=K^2.
-\]
-Thus $K$ is a Hermitian positive semidefinite square root of $A^*A$. By the uniqueness stated in <1>2,
-\[
-K=(A^*A)^{1/2}=H.
-\]
+Extend an orthonormal basis of $K^\perp$ to one of $\mathbb C^n$, and extend its $U_0$-image to an orthonormal $n$-frame in $\mathbb C^m$; this is possible because $m\ge n$. Then $UH x=U_0(Hx)=Ax$.
 :::
 
-<1>6. The orthonormal-column factor $U$ is unique.
+<1>6. The factor $H$ is unique.
 ::: {.proof}
-By <1>5, any factorization has the same factor $H$. Since $H$ is invertible by <1>2,
+If $A=U_1H_1$ with $U_1^*U_1=I$ and $H_1\ge0$, then
 \[
-U=AH^{-1}.
+A^*A=H_1U_1^*U_1H_1=H_1^2.
 \]
-Thus no other $U$ is possible.
+Hence $H_1$ is the positive semidefinite square root of $A^*A$, so $H_1=H$.
 :::
 
-<1>7. Therefore the corrected full-column-rank polar decomposition exists and is unique.
+<1>7. If $A$ has full column rank, then $H$ is invertible and $U=AH^{-1}$, so $U$ is unique.
 ::: {.proof}
-Existence is <1>2--<1>4 and uniqueness is <1>5--<1>6.
+Full column rank is equivalent to $\ker H=0$ by <1>3.
+:::
+
+<1>8. If $A$ is rank-deficient, then $U$ is not unique.
+::: {.proof}
+Now $K\ne0$. The map $U$ is fixed on $K^\perp$ but may be changed on $K$ by choosing a different orthonormal extension; since $H$ vanishes on $K$, all such extensions still satisfy $UH=A$.
 :::
 :::

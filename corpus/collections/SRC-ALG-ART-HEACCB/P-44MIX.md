@@ -13,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -29,80 +32,109 @@ M=\frac{k[x]}{(x-1)^{3}} \oplus \frac{k[x]}{\left(x^{2}+1\right)^{2}} \oplus \fr
 Describe the elementary divisors and invariant factors of $M$.
 :::
 
-
 ::: {.solution}
-Put \(q=x^2+1\). The answer depends on the field \(k\), because \(q\) need not be irreducible and in characteristics \(2,3,5\) some of the displayed factors coincide.
-
-<1>1. Assume first that \(\operatorname{char}k\notin\{2,3,5\}\). Factor \(q=\pi_1\cdots\pi_r\) into distinct monic irreducibles in \(k[x]\), where \(r=1\) or \(2\). The elementary divisors are
+<1>1. The answer depends on the field $k$.
+Set
 \[
-(x-1)^3,\quad x-1,\quad x+2,
+p=x-1,\qquad q=x+2,\qquad c=x^2+1.
 \]
-and, for each \(j=1,\dots,r\),
-\[
-\pi_j^2,\quad \pi_j^2,\quad \pi_j^4.
-\]
+The exceptional characteristics are $2,3,5$.
 ::: {.proof}
-In these characteristics, \(x-1\), \(x+2\), and \(q\) are pairwise coprime, and \(q\) is squarefree. Apply the Chinese remainder theorem separately to each cyclic summand. The two summands containing \(x-1\) contribute \((x-1)^3\) and \(x-1\); the last summand contributes \(x+2\); and the three summands containing \(q\) contribute exponents \(2,4,2\) for every irreducible factor of \(q\).
+One has $p=q$ exactly in characteristic $3$.
+Also $p\mid c$ exactly when $c(1)=2=0$, i.e. in characteristic $2$, and $q\mid c$ exactly when $c(-2)=5=0$, i.e. in characteristic $5$.
+Thus outside characteristics $2,3,5$, the polynomials $p,q,c$ are pairwise coprime, although $c$ itself may split into two irreducible linear factors.
 :::
 
-<1>2. Under the same characteristic assumption, the invariant factors are
+<1>2. Suppose first that $\operatorname{char}k\notin\{2,3,5\}$.
+Let
 \[
-q^2,\qquad (x-1)q^2,\qquad (x-1)^3(x+2)q^4.
+c=\prod_{r\in\mathcal R}r
+\]
+be the factorization of $c$ into distinct monic irreducibles in $k[x]$.
+Then the elementary divisors are
+\[
+p^3,\ p,\ q,
+\qquad
+r^2,r^2,r^4\quad(r\in\mathcal R).
 \]
 ::: {.proof}
-For each irreducible prime, arrange the exponents in nondecreasing order and pad on the left with zeros. For \(x-1\) the exponents are \(0,1,3\); for each irreducible factor of \(q\) they are \(2,2,4\); and for \(x+2\) they are \(0,0,1\). Multiplying the corresponding prime powers columnwise gives the three displayed invariant factors, each dividing the next.
+The four cyclic summands contribute respectively
+\[
+p^3,\qquad c^2,\qquad pc^4,\qquad qc^2.
+\]
+Since $p,q$, and the irreducible factors $r$ of $c$ are pairwise coprime, the Chinese remainder theorem splits each cyclic summand into its prime-power parts, giving exactly the displayed list.
 :::
 
-<1>3. If \(\operatorname{char}k=3\), then \(x+2=x-1\). The elementary divisors are
+<1>3. In the same generic case, the invariant factors are
 \[
-(x-1)^3,\quad x-1,\quad x-1,
+d_1=c^2,\qquad d_2=pc^2,\qquad d_3=p^3qc^4.
 \]
-together with, for each irreducible factor \(\pi\) of \(q\),
+::: {.proof}
+For the prime $p$, the nonzero elementary-divisor exponents are $1,3$, so after padding to three slots they are $0,1,3$.
+For $q$ they are $0,0,1$.
+For every irreducible factor $r$ of $c$, they are $2,2,4$.
+Multiplying the prime powers slotwise gives the displayed invariant factors, and clearly $d_1\mid d_2\mid d_3$.
+:::
+
+<1>4. Suppose $\operatorname{char}k=3$. Then $p=q$, and the elementary divisors are
 \[
-\pi^2,\quad\pi^2,\quad\pi^4.
+p^3,p,p,
+\qquad
+r^2,r^2,r^4\quad(r\mid c\text{ irreducible}).
 \]
 The invariant factors are
 \[
-(x-1)q^2,\qquad (x-1)q^2,\qquad (x-1)^3q^4.
+pc^2,\qquad pc^2,\qquad p^3c^4.
 \]
 ::: {.proof}
-Here \(q(1)=2\neq0\), so \(q\) remains coprime to \(x-1\). The \(x-1\)-primary exponents are \(1,1,3\), while the \(q\)-primary exponents are \(2,2,4\). Aligning them gives the stated invariant factors.
+In characteristic $3$, $c(1)=2\ne0$, so $p$ is coprime to $c$.
+The $p$-exponents are $1,1,3$, while each irreducible factor of $c$ has exponents $2,2,4$.
+Aligning these exponent lists gives the stated invariant factors.
 :::
 
-<1>4. If \(\operatorname{char}k=5\), write \(q=(x+2)(x-2)\). The elementary divisors are
+<1>5. Suppose $\operatorname{char}k=5$. Put $r=x-2$. Then
 \[
-(x-1)^3,\quad x-1,\quad (x+2)^2,\quad (x+2)^3,\quad (x+2)^4,\quad (x-2)^2,\quad (x-2)^2,\quad (x-2)^4,
-\]
-and the invariant factors are
-\[
-q^2,\qquad (x-1)(x+2)q^2,\qquad (x-1)^3q^4.
-\]
-::: {.proof}
-The exponent multisets for the primes \(x-1\), \(x+2\), and \(x-2\) are respectively
-\[
-\{1,3\},\qquad\{2,3,4\},\qquad\{2,2,4\}.
-\]
-Pad the first list with a zero, sort all three lists increasingly, and multiply the aligned prime powers.
-:::
-
-<1>5. If \(\operatorname{char}k=2\), then
-\[
-q=(x+1)^2,\qquad x-1=x+1,\qquad x+2=x.
+c=(x+2)(x-2)=qr.
 \]
 The elementary divisors are
 \[
-(x+1)^3,\quad (x+1)^4,\quad (x+1)^4,\quad (x+1)^9,\quad x,
+p^3,p,\qquad q^2,q^3,q^4,\qquad r^2,r^2,r^4,
 \]
 and the invariant factors are
 \[
-(x+1)^3,\qquad (x+1)^4,\qquad (x+1)^4,\qquad x(x+1)^9.
+c^2,\qquad pqc^2,\qquad p^3c^4.
 \]
 ::: {.proof}
-The four cyclic summands have \((x+1)\)-primary exponents \(3,4,9,4\), while only the last summand has an additional coprime factor \(x\). Sorting the \((x+1)\)-exponents gives \(3,4,4,9\), and the lone \(x\)-factor is placed in the last invariant factor.
+The four original summands contribute
+\[
+p^3,\qquad q^2r^2,\qquad pq^4r^4,\qquad q^3r^2.
+\]
+Thus the exponent lists are $p:(1,3)$, $q:(2,3,4)$, and $r:(2,2,4)$. Padding and multiplying slotwise yields the displayed invariant factors.
 :::
 
-<1>6. These cases exhaust all fields \(k\).
+<1>6. Suppose $\operatorname{char}k=2$. Then
+\[
+c=x^2+1=(x+1)^2=p^2,
+\qquad q=x.
+\]
+The elementary divisors are
+\[
+p^3,p^4,p^4,p^9,q,
+\]
+and the invariant factors are
+\[
+p^3,\qquad p^4,\qquad p^4,\qquad p^9q.
+\]
 ::: {.proof}
-The only possible collisions among the displayed factors occur when \(2=0\), \(3=0\), or \(5=0\): \(q\) is inseparable only in characteristic \(2\), \(x-1=x+2\) only in characteristic \(3\), and \(x+2\mid q\) only in characteristic \(5\).
+The four summands become
+\[
+R/(p^3),\qquad R/(p^4),\qquad R/(p^9),\qquad R/(qp^4).
+\]
+Since $p$ and $q$ are coprime, the last summand splits into $R/(q)\oplus R/(p^4)$. Hence the $p$-exponents are $3,4,4,9$ and the single $q$-exponent is $1$. Padding the $q$-list with three zeros gives the stated invariant factors.
+:::
+
+<1>7. These cases exhaust all fields $k$.
+::: {.proof}
+By <1>1, the only possible collisions among $p$, $q$, and the factors of $c$ occur in characteristics $2,3,5$. Outside those characteristics, <1>2--<1>3 apply regardless of whether $c$ is irreducible or splits.
 :::
 :::

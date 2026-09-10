@@ -18,7 +18,6 @@ audit:
 - event: source-checked
   by: OpenAI
   date: 2026-09-09
-  note: Checked against the repository review-sheet source assets/attachments/ringsandmodules.pdf, Fall 2009 problem 4 block.
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -48,75 +47,100 @@ M=\mathbb Z,
 \qquad
 N=\mathbb Z\oplus\mathbb Z/2\mathbb Z.
 \]
-Then \(M\not\cong N\) as \(\mathbb Z\)-modules, but
+Then $M\not\cong N$ as $\mathbb Z$-modules, but
 \[
-\mathbb Q\otimes_{\mathbb Z}M\cong\mathbb Q\otimes_{\mathbb Z}N.
+\mathbb Q\otimes_{\mathbb Z}M
+\cong
+\mathbb Q
+\cong
+\mathbb Q\otimes_{\mathbb Z}N.
 \]
 ::: {.proof}
-The module \(N\) has nonzero \(2\)-torsion whereas \(M\) is torsion-free, so they are not isomorphic. Since \(\mathbb Q\) is a localization of \(\mathbb Z\), tensoring with \(\mathbb Q\) kills finite torsion; explicitly,
+The module $N$ has nonzero torsion while $M$ is torsionfree, so they are not isomorphic.
+Also
 \[
-\mathbb Q\otimes_{\mathbb Z}\mathbb Z/2\mathbb Z=0.
+\mathbb Q\otimes_{\mathbb Z}(\mathbb Z/2\mathbb Z)=0,
 \]
-Hence
+because $2$ is invertible in $\mathbb Q$. Hence
 \[
 \mathbb Q\otimes_{\mathbb Z}N
 \cong
 \mathbb Q\oplus0
-\cong
-\mathbb Q
-\cong
-\mathbb Q\otimes_{\mathbb Z}M.
+\cong\mathbb Q.
 \]
 :::
 
-<1>2. Write the elementary-divisor decomposition of the finitely generated \(\mathbb R[x]\)-module \(M\) as
+<1>2. Write the elementary-divisor decomposition of the finitely generated $\mathbb R[x]$-module $M$ as
 \[
 M\cong \mathbb R[x]^r
 \oplus
-\bigoplus_j \mathbb R[x]/(p_j(x)^{e_j}),
+\bigoplus_{i=1}^s \mathbb R[x]/(p_i(x)^{e_i}),
 \]
-where each \(p_j\) is monic irreducible over \(\mathbb R\). Then
+where each $p_i$ is monic irreducible in $\mathbb R[x]$ and $e_i\ge1$.
+::: {.proof}
+The ring $\mathbb R[x]$ is a PID, so this is the elementary-divisor form of the structure theorem for finitely generated modules over a PID.
+:::
+
+<1>3. Extension of scalars gives
 \[
 \mathbb C[x]\otimes_{\mathbb R[x]}M
 \cong
 \mathbb C[x]^r
 \oplus
-\bigoplus_j \mathbb C[x]/(p_j(x)^{e_j}).
+\bigoplus_{i=1}^s \mathbb C[x]/(p_i(x)^{e_i}).
 \]
 ::: {.proof}
-Scalar extension commutes with finite direct sums, and for every \(f\in\mathbb R[x]\),
+Tensor product commutes with finite direct sums, and
 \[
-\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]/(f)
-\cong
-\mathbb C[x]/(f).
+\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]\cong\mathbb C[x].
 \]
-This gives the displayed decomposition before factoring the \(p_j\)'s further over \(\mathbb C\).
+For every ideal $(a)\subseteq\mathbb R[x]$, right exactness applied to
+\[
+\mathbb R[x]\xrightarrow{\cdot a}\mathbb R[x]\to\mathbb R[x]/(a)\to0
+\]
+gives
+\[
+\mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]/(a)
+\cong
+\mathbb C[x]/(a)\mathbb C[x].
+\]
+Apply this with $a=p_i^{e_i}$.
 :::
 
-<1>3. More explicitly, real linear elementary divisors remain unchanged, while each irreducible real quadratic splits into a conjugate pair of complex linear elementary divisors.
+<1>4. If $p_i(x)=x-a$ with $a\in\mathbb R$, then the corresponding summand remains
+\[
+\mathbb C[x]/((x-a)^{e_i}).
+\]
 ::: {.proof}
-Every monic irreducible polynomial over \(\mathbb R\) is either \(x-a\) with \(a\in\mathbb R\), or
+A real linear irreducible remains linear over $\mathbb C$.
+:::
+
+<1>5. If $p_i$ is an irreducible quadratic over $\mathbb R$, write
 \[
-q_z(x)=(x-z)(x-\bar z)
+p_i(x)=(x-z_i)(x-\overline z_i),
+\qquad z_i\in\mathbb C\setminus\mathbb R.
 \]
-for a nonreal \(z\in\mathbb C\). Thus
+Then
 \[
-\mathbb C[x]/((x-a)^e)
-\]
-remains a single elementary-divisor block. For a quadratic block,
-\[
-\mathbb C[x]/(q_z(x)^e)
-=
-\mathbb C[x]/((x-z)^e(x-\bar z)^e).
-\]
-The two ideals \(((x-z)^e)\) and \(((x-\bar z)^e)\) are comaximal, so the Chinese remainder theorem gives
-\[
-\mathbb C[x]/(q_z^e)
+\mathbb C[x]/(p_i^{e_i})
 \cong
-\mathbb C[x]/((x-z)^e)
+\mathbb C[x]/((x-z_i)^{e_i})
 \oplus
-\mathbb C[x]/((x-\bar z)^e).
+\mathbb C[x]/((x-\overline z_i)^{e_i}).
 \]
-Therefore complexification preserves the free rank and replaces each real quadratic elementary-divisor block by the two corresponding conjugate complex linear blocks.
+::: {.proof}
+The two linear factors are distinct, so their powers are coprime. The Chinese remainder theorem gives
+\[
+\mathbb C[x]/\big((x-z_i)^{e_i}(x-\overline z_i)^{e_i}\big)
+\cong
+\mathbb C[x]/((x-z_i)^{e_i})
+\oplus
+\mathbb C[x]/((x-\overline z_i)^{e_i}).
+\]
+:::
+
+<1>6. Thus scalar extension preserves the free rank, preserves each real-linear primary summand, and splits every real-quadratic primary summand into the two conjugate complex primary summands described in <1>5.
+::: {.proof}
+Combine <1>3, <1>4, and <1>5. Every monic irreducible polynomial over $\mathbb R$ has degree $1$ or $2$.
 :::
 :::

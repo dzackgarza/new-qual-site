@@ -10,14 +10,13 @@ relations: []
 review: draft
 audit:
 - event: source-checked
-  by: gpt-5.6-sol
+  by: OpenAI
   date: 2026-09-09
-  note: Checked against the preserved Harvard Fields and Galois Theory oral-question extraction.
 - event: solution-written
-  by: gpt-5.6-sol
+  by: OpenAI
   date: 2026-09-09
 - event: solution-reviewed
-  by: gpt-5.6-sol
+  by: OpenAI
   date: 2026-09-09
 ---
 
@@ -26,20 +25,17 @@ Define an algebraically closed field.
 Define what it means for a polynomial to split over a field.
 :::
 
-::: solution
-A field $F$ is **algebraically closed** if every nonconstant polynomial
-\[
-f(x)\in F[x]
-\]
-has a root in $F$. Equivalently, every nonconstant polynomial in $F[x]$ factors
-completely into linear factors over $F$.
+::: {.solution}
+<1>1. A field $F$ is **algebraically closed** if every nonconstant polynomial in $F[x]$ has a root in $F$.
+::: {.proof}
+Equivalently, every nonconstant polynomial in $F[x]$ splits completely into linear factors over $F$. Indeed, once a root $a\in F$ is found, the factor theorem writes $f(x)=(x-a)g(x)$ with $g\in F[x]$, and induction on the degree gives a complete linear factorization. The converse is immediate.
+:::
 
-A polynomial $f(x)\in F[x]$ of degree $n$ **splits over $F$** if there exist
-$a\in F$ and elements $\alpha_1,\ldots,\alpha_n\in F$ such that
+<1>2. A nonzero polynomial $f(x)\in F[x]$ of degree $n$ **splits over $F$** if there exist $c\in F^\times$ and $a_1,\ldots,a_n\in F$ such that
 \[
-f(x)=a\prod_{i=1}^n (x-\alpha_i),
+f(x)=c\prod_{i=1}^n (x-a_i).
 \]
-with roots repeated according to multiplicity. Thus splitting means that all
-roots of the polynomial lie in the field in which the factorization is being
-considered.
+::: {.proof}
+Thus all roots of $f$ lie in $F$, with the list $a_1,\ldots,a_n$ recording multiplicities. Equivalently, every irreducible factor of $f$ over $F$ has degree $1$.
+:::
 :::

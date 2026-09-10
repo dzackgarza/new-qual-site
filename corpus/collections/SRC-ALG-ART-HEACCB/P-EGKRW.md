@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-EGKRW
 kind: problem
-title: The ideal $(2,x)$ in $\mathbb{Z}[x]$ is not a direct sum of nontrivial cyclic
-  modules
+title: The ideal $(2,x)$ in $\mathbb{Z}[x]$ is not a direct sum of nontrivial cyclic modules
 classification:
   areas:
   - algebra
@@ -14,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
 - event: solution-written
   by: OpenAI
   date: 2026-09-09
@@ -26,36 +28,52 @@ audit:
 Let $I = (2, x)$ be an ideal in $R = \ZZ[x]$, and show that $I$ is not a direct sum of nontrivial cyclic $R\dash$modules.
 :::
 
-
 ::: {.solution}
-<1>1. The \(R\)-module \(I=(2,x)\) is torsion-free of rank \(1\).
+<1>1. The ideal $I$ is torsionfree and has rank $1$ as an $R$-module.
 ::: {.proof}
-Because \(R=\mathbb Z[x]\) is a domain and \(I\subseteq R\), the module \(I\) is torsion-free. Let \(K=\operatorname{Frac}(R)\). Since \(2\in I\) is nonzero,
+The ring $R=\mathbb Z[x]$ is an integral domain and $I\subseteq R$, so $I$ is torsionfree. Let $K=\operatorname{Frac}(R)$. Since $I$ contains the nonzero element $2$, one has
 \[
-K\otimes_R I\neq0.
+K\otimes_R I\cong K,
 \]
-But \(I\subseteq R\) gives an inclusion
+so
 \[
-K\otimes_R I\subseteq K\otimes_R R\cong K,
+\operatorname{rank}_R I=\dim_K(K\otimes_RI)=1.
 \]
-so \(K\otimes_R I\) is a one-dimensional \(K\)-vector space. Hence \(\operatorname{rank}_R I=1\).
 :::
 
-<1>2. Every nonzero cyclic submodule of \(I\) has rank \(1\).
+<1>2. Every nonzero cyclic submodule of a torsionfree $R$-module is isomorphic to $R$.
 ::: {.proof}
-If \(0\neq y\in I\), then the cyclic module \(Ry\) is isomorphic to \(R\): the map \(R\to Ry\), \(r\mapsto ry\), is injective because \(R\) is a domain and \(y\neq0\). Therefore \(\operatorname{rank}_R(Ry)=1\).
+If $C=Rv$ is nonzero and torsionfree, the map
+\[
+R\to C,\qquad r\mapsto rv
+\]
+is surjective. Its kernel is $\operatorname{Ann}(v)$. Torsionfreeness and $v\ne0$ imply $\operatorname{Ann}(v)=0$, so $C\cong R$.
 :::
 
-<1>3. The ideal \(I\) cannot be a direct sum of two or more nonzero cyclic \(R\)-modules.
+<1>3. If $I$ were a direct sum of nontrivial cyclic modules, then in fact $I$ would be cyclic.
 ::: {.proof}
-If
+Suppose
 \[
-I\cong C_1\oplus\cdots\oplus C_m
+I\cong C_1\oplus\cdots\oplus C_t
 \]
-with \(m\ge2\) and every \(C_i\) nonzero cyclic, then by <1>2 each \(C_i\) has rank \(1\). Rank is additive on direct sums, so
+with each $C_i$ nonzero and cyclic. Since each $C_i$ is a submodule of the torsionfree module $I$, it is torsionfree, hence $C_i\cong R$ by <1>2. Therefore
 \[
-\operatorname{rank}_R I=m\ge2,
+\operatorname{rank}_R I=t.
 \]
-contradicting <1>1.
+By <1>1 this rank is $1$, so $t=1$ and $I$ is cyclic.
+:::
+
+<1>4. The ideal $I=(2,x)$ is not principal.
+::: {.proof}
+If $I=(f)$, then $f$ divides both $2$ and $x$ in the UFD $\mathbb Z[x]$. Any common divisor of $2$ and $x$ is a unit, so $(f)=R$. But $I$ is proper because
+\[
+R/I\cong\mathbb F_2\ne0.
+\]
+This is a contradiction.
+:::
+
+<1>5. Hence $I$ is not a direct sum of nontrivial cyclic $R$-modules.
+::: {.proof}
+By <1>3 such a decomposition would make $I$ cyclic, contradicting <1>4.
 :::
 :::
