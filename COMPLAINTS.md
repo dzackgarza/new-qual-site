@@ -65,3 +65,45 @@ of public mathematical remarks.
 - **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
+
+### Commit history carries Claude session-provenance trailers
+
+- **Object and need:** this repository's public git history; commit messages should carry no
+  agent-session provenance URLs or trailers, per the same policy the fleet's other
+  repositories state explicitly.
+- **Observed evidence:** on 2026-09-10, `git log --all --grep='Claude-Session'` returns 172
+  commits carrying a `Claude-Session: https://…` trailer, the earliest dated 2026-08-27.
+  171 of them are reachable from `origin/main`, i.e. already published; exactly one is local
+  and unpushed.
+- **Impact and owner:** published history exposes session URLs indefinitely, and every future
+  agent-authored commit will keep adding them until the commit path stops emitting the
+  trailer. Two separable pieces of work: (a) stop new trailers at their source — whatever
+  composes commit messages for agent sessions in this repo — and (b) decide the disposition of
+  the 171 published commits, which can only be cleaned by rewriting published history and
+  force-pushing, a repository-owner decision.
+- **Uncertainty:** the emitting component was not identified from the repository side; the
+  count is exact as of 2026-09-10.
+- **Repair:** land (a) first so the count stops growing, then record an explicit decision on
+  (b) rather than leaving published history in an unreviewed state.
+
+### Concurrent branch consolidation reset a live worker's tree and lost authored work
+
+- **Object and need:** branch consolidation in a shared checkout that live authoring sessions
+  are working in; merging must never disturb another session's index or working tree.
+- **Observed evidence:** on 2026-09-10 two consolidation runs executed concurrently. One used
+  porcelain `git merge` with `git merge --abort` on conflict in the shared checkout; its abort
+  reset the tree under a live worker, and commit `81373e972` records the recovery — "restore
+  21 authored solutions lost from the shared worktree — 962 lines … existed only in the
+  worktree and in no commit when the tree was reset under a live worker during branch
+  consolidation." The concurrent run using `git merge-tree` + `git commit-tree` +
+  compare-and-swap `git update-ref`, never touching the shared index, completed 20 merges
+  across 44 branches with no such loss.
+- **Impact and owner:** any future consolidation in this repository can repeat the loss. The
+  work is only recoverable while it still exists in a worktree; nothing in the repository
+  prevents the reset.
+- **Uncertainty:** whether other authored files were lost and not noticed was not established;
+  only the 21 files named in the rescue commit are confirmed.
+- **Repair:** make the safe method the repository's documented consolidation procedure —
+  compute merges out of tree, advance `main` by compare-and-swap ref update, sync only
+  merge-changed paths, and skip any branch whose changed paths intersect the checkout's dirty
+  set — and require a single consolidation owner at a time so two runs cannot race.
