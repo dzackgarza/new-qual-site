@@ -40,6 +40,16 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### The 2003–2009 algebra packet has mixed subject metadata
+
+- **Additional source-checked repair:** page 5, Rings and modules 3, confirms `P-TB7BG` as algebra. Commit `8ed9d41e6` corrects that classification and replaces its invalid nilpotency argument with a complete invariant-complement proof. The two explicit algebraic counterexamples remain in the card's mathematical remark; its proof defect is resolved. Other classification candidates in this entry remain subject to individual source review.
+
+- **Object and need:** `SRC-ART-ALG-2003-2009-PRELIMS`; cards should be filed by the mathematical subject of the source rather than by the generic word “prelim.”
+- **Observed evidence:** the original Summer 2009 Algebra Qualifying Exam, page 2, Rings 3–4, confirms algebra content for `P-CSEAZ` and `P-JH3BD`, but both cards had sole area `prelim`. Their source-backed solution edits correct those two areas. A subsequent `rg -l '^  - prelim$' corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS` returned 11 other cards, including `P-3DS32`, `P-GW4KD`, `P-PDAPQ`, and `P-ZSFKA`.
+- **Impact and owner:** subject-based browsing can file algebra questions under prelim. This collection owns source-backed classification repairs.
+- **Uncertainty:** the first two misclassifications were checked against the scan. The 11 remaining paths are review candidates, not individually verified defects; the literal metadata search was restricted to this collection.
+- **Repair:** read each remaining candidate with its source and correct confirmed subject mismatches, preserving any genuinely intended prelim classification rather than applying a bulk substitution.
+
 ### P-4IKKY is internally inconsistent as transcribed
 
 - **Object and need:** `P-4IKKY` in `SRC-UGA-ALG-FALL-2012`; the card should state a nonvacuous structure theorem for an infinite-dimensional vector space equipped with a linear operator.
@@ -65,6 +75,30 @@ of public mathematical remarks.
 - **Repair:** recover the intended coefficient field/group from an independent Harvard source or explicitly mark the source question as underdetermined before solution authorship resumes.
 
 ## Workflow and rendering papercuts
+
+### Supposedly disjoint collection streams collided on consecutive cards
+
+- **Object and need:** direct-to-main authorship for the assigned interval `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI`; each card must have one active writer so a completed proof can be reviewed and committed without overwriting another author's work.
+- **Observed evidence:** on 2026-09-10, `P-I5GAL` was read as an unsolved card with no audit entries. Before the prepared patch was applied, another writer added an audit and a complete proof. The patch failed its exact-context check and changed nothing. A subsequent read showed the new proof, and Git then recorded it in `7a51eaba1`. The immediately following source-order card, `P-RK2VH`, also acquired an external edit while this stream had not touched it. This establishes actual overlap inside `SRC-ART-ALG-2003-2009-PRELIMS`, not merely unrelated changes elsewhere in the shared checkout; attribution of the two external edits to the same conversation was not established.
+- **Impact and owner:** the stated file-disjointness assumption does not hold for this interval. Advancing both writers through the same ordered worklist risks repeated collisions and lost or duplicated proofs; the live card edits were preserved.
+- **Uncertainty:** the other writer's identity and upstream assignment were not established. Two native worker-status requests returned `WORKER_IDENTITY_LOST`. A recording search for `P-I5GAL` returned only unattributed session buckets, so it supplied no addressable conversation owner.
+- **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
+
+### A read-only connector command was rejected before execution
+
+- **Object and need:** source-ordered authoring in the `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI` range; reading a selected card, finding its retained source, and inspecting a Git diff should work without mutation.
+- **Observed evidence:** on 2026-09-10 a combined `just read-card P-CSEAZ`, `find assets/attachments ...`, and `git diff -- COMPLAINTS.md` invocation was blocked with “we couldn't determine the safety status of the request.” Running the same read-only operations in separate calls succeeded. Later, two empty-input polls of the running `just read-card P-JH3BD` session received the same rejection; the native connector read succeeded for the card. The first image-view request for the rendered June 2008 Rings page was also rejected, while an identical retry displayed it successfully.
+- **Impact and owner:** connector request screening interrupted source reading before any command ran. This is connector-owned, not a corpus validation failure.
+- **Uncertainty:** the rejections did not identify an offending operation. Both a compound read-only command and empty-input session polling were affected; no causal distinction was supplied.
+- **Repair:** expose the specific rejected operation and permit harmless read-only execution and polling. Alternate read calls restored source access but do not repair the screening defect.
+
+### The required Zotero bibliography service is not listening
+
+- **Object and need:** adding an external mathematical reference during `P-CSEAZ` solution authorship; `vocabularies/references.bib` is generated and `tools/sync_bibliography.py` requires the local Zotero/Better BibTeX service rather than hand-authored entries.
+- **Observed evidence:** on 2026-09-10 `curl --max-time 5 http://127.0.0.1:23119/api/users/0/items?q=SmallGrp\&format=json\&limit=5` failed immediately with connection refused. Inspection of `tools/sync_bibliography.py` confirmed that its export endpoint uses the same host and port. Integration discovery returned no available Zotero connector.
+- **Impact and owner:** new bibliography entries cannot be imported through the documented path while the desktop service is unavailable. Existing citations and independently proved mathematics remain usable; the generated bibliography was left unchanged.
+- **Uncertainty:** this establishes local endpoint unavailability at the time of the request, not loss of the Zotero library or the absence of the work from that library.
+- **Repair:** restore the documented Zotero/Better BibTeX export service, then add and export new references through that service.
 
 ### Primary local repository connector can silently become unavailable
 
