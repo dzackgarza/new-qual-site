@@ -82,6 +82,18 @@ of public mathematical remarks.
 
 ## Workflow and rendering papercuts
 
+### Continuation tool responses were not available for verification
+
+- **JHU verification recovered, 2026-09-10:** fresh native file reads and Git status returned the complete pending `P-JHUU67CA1` proof. Its source and whole diff were reread, single-card parsing and whitespace checks returned success, and `10a845da3` committed the unchanged proof on `main`. Later source-order authoring also returned complete command results. This establishes recovery of the JHU checkpoint, not the cause of the earlier missing responses or a permanent repair of result delivery.
+
+- **JHU resumption, 2026-09-10:** fresh connector reads of `P-JHUU67CA1`, Git branch/history/status, and a recording search returned only `Skipped ... messages` to this authoring context. Separate local shell and Python output probes were likewise unavailable. This does not establish a connector outage or command failure. The prior attempt left a completed-card check pending for `P-JHUU67CA1`; inspect its actual current contents and Git state before repeating a patch or commit. No new mathematical edit or commit was issued during these diagnostic attempts.
+
+- **Object and need:** verify the Emory continuation's file edits and commits from actual repository reads.
+- **Observed evidence:** this continuation received only "Skipped ... messages" in place of later tool results, including narrow Git-history and status requests. The unavailable responses do not establish whether the underlying commands executed successfully or failed.
+- **Impact and owner:** the authoring stream cannot verify its final repository state or safely infer which attempted changes need to be repeated. This is a tool-response delivery problem, not evidence of a mathematical or repository-check failure.
+- **Uncertainty:** command execution and persistence of the attempted writes remain unverified until actual results are available.
+- **Repair:** restore tool-result delivery, then inspect Git history and the Emory card paths before reapplying any attempted edits or commits.
+
 ### The configured PDF extraction command is missing and service requests failed
 
 - **Image-view boundary, 2026-09-10:** native `view_image` rejected `/tmp/newqual-july2013-fields-proof.png` because `/tmp` is outside the connector's approved roots, although terminal rendering there succeeded. Moving that rendered page to the ignored repository path `.tmp-july2013-fields-proof.png` allowed inspection of PDF page 8. Keep inspection images inside an approved root; this was an image-path restriction, not a rendering or source-file failure.
@@ -139,6 +151,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **JHU continuation, 2026-09-10:** combined read-only requests for the live `SRC-JHU-ANALYSIS-EXAMS` unsolved list and `P-RGBUN` source context, and later for `P-8XT21` parsing and diff review, were rejected with the safety-status message before execution. Separate repository-tool and Git invocations returned the requested results. These were connector-screening interruptions, not failed corpus checks; no specific reason for rejection was supplied. Separately, this author's full-context patch for `P-7QJS2` failed because the copied old conclusion inserted an extra word absent from the file; a fresh read confirmed the file was unchanged, and corrected narrow hunks succeeded. That context error was not a concurrent edit.
 
 - **Double-dual, unit-group, and Frobenius card polling, 2026-09-10:** empty-input polls of sessions `96018`, `84268`, and `13500`, containing the single-card parser and diff reviews for `P-EMAL3`, `P-HCAO2`, and `P-HGRO44`, were blocked before retrieval with the safety-status message. In each case the identical retry returned exit zero and the complete diff. All parser and whitespace checks succeeded; these are reproduced connector-screening failures, not failed repository checks.
 
@@ -251,6 +265,8 @@ of public mathematical remarks.
 - **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
 
 ### Direct-to-`main` streams can globally block unrelated card commits with Git sequencer state
+
+- **JHU prose-commit contention, 2026-09-10:** reviewed commits for `P-7QJS2` and `P-8XT49` failed with exit 128 because `.git/index.lock` existed. Immediate process inspections found unrelated normal commits for `P-PJA4A` (PID 975127) and `P-RXKJR` (PID 1122290), with running pre-commit hooks after approximately one and two minutes respectively. A two-minute wait for the first repair expired while subsequent UGA card commits acquired the index; a later wait allowed `7a07b8064` to commit the unchanged reviewed proof. The JHU edits remained on disk throughout. No lock was deleted and no process was interrupted; these are shared-index failures, not failed mathematical or parsing checks.
 
 - **Emory shared-index contention, 2026-09-10:** reviewed commits for `P-MMAQ-FSI2OIIHX5` and `P-MMAQ-VE5GUZV5YG` each failed with exit 128 because `.git/index.lock` existed. Fresh process reads found separate active `git commit --only queues/E-pdf-attachments.md` operations, PIDs 3366438 and 3420023, with running pre-commit hooks; the second was observed after three minutes thirty seconds. No lock was removed and no process was stopped. Waiting for the active operations to finish allowed the unchanged card proofs to commit in `6b5f8b61e` and `5ab44372e`, preserving the staged `queues/01-corpus-defects.md`. These were shared-index failures, not failed mathematical or card checks. Subsequent card commits used the documented prose-only route.
 
