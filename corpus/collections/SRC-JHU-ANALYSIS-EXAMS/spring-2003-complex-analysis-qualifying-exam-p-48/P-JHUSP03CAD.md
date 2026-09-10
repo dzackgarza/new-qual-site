@@ -22,7 +22,17 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Stated Rouche with its contour hypotheses, derived the convex-segment estimate by integrating phi', and obtained strict contraction for the nonlinear tail on each segment in the open disk."
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually compared all three parts and the unit-disk convention on PDF page 48; restored Delta's local definition."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Justified normal convergence of both power series and gave the common contraction constant r<1 on each segment, including the case where every nonlinear coefficient is zero."
 ---
+
+Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
 
 (a) State Rouche's Theorem.
 
@@ -47,7 +57,7 @@ Show that $f(z)$ is a 1-1 holomorphic function on $\Delta$.
 ::: solution
 <1>1. Part (a): Rouché's theorem.
 ::: proof
-Let $C$ be a positively oriented simple closed contour and suppose $F,G$ are
+Let $C$ be a positively oriented, piecewise smooth simple closed contour and suppose $F,G$ are
 holomorphic on an open set containing $C$ and its interior. If
 $$
 |G(z)|<|F(z)|\qquad(z\in C),
@@ -60,7 +70,7 @@ $F+tG$ also have no zero on $C$, since $|tG|<|F|$. Therefore the integer
 $$
 \frac1{2\pi i}\int_C\frac{F'(z)+tG'(z)}{F(z)+tG(z)}\,dz
 $$
-is constant in $t$ by continuity and the argument principle. Its values at
+is constant in $t$ by continuity and the argument principle [@SS03]. Its values at
 $t=0$ and $t=1$ are the zero counts of $F$ and $F+G$.
 :::
 
@@ -91,12 +101,15 @@ Write
 $$
 h(z)=f(z)-z=\sum_{n=2}^\infty a_nz^n.
 $$
-The coefficient hypothesis implies uniform convergence of the differentiated
-series on every closed disk of radius $r<1$, since
+On every closed disk of radius $r<1$, the coefficient
+hypothesis gives convergent majorants for both series:
 $$
+\sum_{n=2}^\infty |a_n|r^n\leq\sum_{n=2}^\infty n|a_n|<\infty,
+\qquad
 \sum_{n=2}^\infty n|a_n|r^{n-1}\le\sum_{n=2}^\infty n|a_n|<\infty.
 $$
-Thus
+Thus the series defines a holomorphic function on $\Delta$
+and can be differentiated term by term [@SS03], giving
 $$
 h'(z)=\sum_{n=2}^\infty n a_nz^{n-1}.
 $$
@@ -105,18 +118,16 @@ and openness of the disk give
 $$
 r:=\max_{\xi\in L}|\xi|<1.
 $$
-If every $a_n=0$, then $f(z)=z$ and injectivity is immediate. Otherwise,
-for every $\xi\in L$,
+For every $\xi\in L$, since $n-1\geq1$,
 $$
 |h'(\xi)|
 \le\sum_{n=2}^\infty n|a_n|r^{n-1}
-<\sum_{n=2}^\infty n|a_n|
-\le1,
+\leq r\sum_{n=2}^\infty n|a_n|
+\leq r<1.
 $$
-because $r^{n-1}<1$ for every $n\ge2$ and at least one coefficient is nonzero.
 Applying part (b) to $h$ on the convex disk gives
 $$
-|h(z)-h(w)|<|z-w|.
+|h(z)-h(w)|\leq r|z-w|<|z-w|.
 $$
 Therefore
 $$
