@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-6YHN7 is false as written in the unsorted complex-analysis compilation
+
+- **Object and need:** `P-6YHN7`; the card assumes holomorphic maps $f,g:\mathbb D\to\Omega$ with $f$ injective and $f(0)=g(0)$ and asks to prove $g(r\mathbb D)\subseteq f(r\mathbb D)$ for every $0<r<1$.
+- **Observed evidence:** take $\Omega=\mathbb D$, $f(z)=z/2$, and $g(z)=z$. Then $f$ is injective, $f(0)=g(0)=0$, but $g(r\mathbb D)=r\mathbb D$ while $f(r\mathbb D)=(r/2)\mathbb D$, so the claimed inclusion fails for every $r>0$.
+- **Impact and owner:** the statement cannot receive a valid Schwarz-lemma proof as written. A natural valid comparison would require $f$ to be a biholomorphism from $\mathbb D$ onto $\Omega$, so that $f^{-1}\circ g$ is a disk self-map fixing $0$, but that surjectivity hypothesis is absent.
+- **Uncertainty:** the card appears only in `SRC-UNSORTED-COMPLEX-ANALYSIS`; no independent source or erratum has been identified.
+- **Repair:** recover the originating source and restore the intended hypothesis before attaching a solution.
+
 ### E-YEIQ5 is false on a general region
 
 - **Object and need:** `E-YEIQ5` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card claims that a holomorphic function on an arbitrary region must be constant if it maps one simple closed curve in the region into the real axis.
