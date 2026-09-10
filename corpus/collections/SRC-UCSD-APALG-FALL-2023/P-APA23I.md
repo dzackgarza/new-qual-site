@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
+  note: Verified the exterior-power trace and characteristic-polynomial coefficient formulas.
 ---
 
 ::: problem
@@ -25,7 +29,7 @@ Let $H$ be an $n$-dimensional Hilbert space and $A \colon H \to H$ a normal line
 (b) Express the coefficients of the characteristic polynomial of $A$ in terms of traces of exterior powers of $A$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Derive the formula for $\operatorname{tr}(A^{\wedge d})$ in terms of the eigenvalues of a normal operator $A$, and express the characteristic polynomial coefficients via traces of exterior powers.
 
 <1>1. Part (a): Spectral decomposition and basis of the exterior power $\bigwedge^d H$.
