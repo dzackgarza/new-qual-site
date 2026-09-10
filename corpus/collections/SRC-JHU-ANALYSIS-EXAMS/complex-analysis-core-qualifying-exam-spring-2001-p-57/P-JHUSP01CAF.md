@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Handled derivative zeros that are polynomial roots directly; for any other critical point outside the convex hull, used the closest-point inequality to put all logarithmic-derivative summands in one strict half-plane, contradicting P'/P=0."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually verified the omitted nonconstancy on PDF page 57, supplied the concrete constant-polynomial counterexample, and justified nonempty compactness of the root hull used in the closest-point argument."
 ---
 
 ::: problem
@@ -32,13 +36,22 @@ in the convex hull of the zeros of $P$.
 
 
 ::: remark
-The nonconstant hypothesis is necessary to state the theorem: for a constant
-polynomial, $P'$ is the zero polynomial and the asserted containment of its
-zeros is not a meaningful Gauss--Lucas statement.
+The nonconstant hypothesis is necessary. For $P=1$, the
+derivative is identically zero and vanishes at every
+complex point, whereas $P$ has no roots and their convex
+hull is empty. Thus the containment fails in that case.
 :::
 
 ::: solution
-Let $K$ be the convex hull of the zeros of $P$.
+Let $n=\deg P\geq1$. The fundamental theorem of algebra
+gives roots $\zeta_1,\ldots,\zeta_n$, repeated with their
+multiplicities [@SS03]. Their convex hull is
+$$
+K=\left\{\sum_{j=1}^n t_j\zeta_j:t_j\geq0,\ \sum_{j=1}^n t_j=1\right\}.
+$$
+It is nonempty and compact: it is the continuous image
+of the nonempty closed, bounded simplex of the coefficient
+vectors $(t_1,\ldots,t_n)$ in $\mathbb R^n$.
 
 <1>1. A critical point that is itself a zero of $P$ already lies in $K$.
 ::: proof
