@@ -12,6 +12,12 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-10
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
 ---
 
 ::: problem
@@ -19,28 +25,49 @@ Determine the Galois group of $x^8-1$ over $\mathbb Q$.
 :::
 
 ::: {.solution}
-<1>1. Roots of $x^8-1$ are $8$th roots of unity $\zeta_8^k$, $k=0..7$.
+Let $\zeta_8=e^{2\pi i/8}$ be a primitive eighth root of unity.
+
+<1>1. The splitting field of $x^8-1$ over $\mathbb Q$ is $K=\mathbb Q(\zeta_8)$.
 ::: {.proof}
-$x^8=1$.
+The roots of $x^8-1$ are exactly $1,\zeta_8,\ldots,\zeta_8^7$, so adjoining $\zeta_8$ adjoins every root. Conversely, every splitting field contains a primitive eighth root, hence contains $\mathbb Q(\zeta_8)$.
 :::
 
-<1>2. Splitting field is $\Q(\zeta_8)=\Q(i,\sqrt2)$.
+<1>2. One has
+\[
+K=\mathbb Q(i,\sqrt2)
+\quad\text{and}\quad
+[K:\mathbb Q]=\varphi(8)=4.
+\]
 ::: {.proof}
-$\zeta_8=(1+i)/\sqrt2$.
+Since $\zeta_8^2=i$ and $\zeta_8+\zeta_8^{-1}=\sqrt2$, one has $\mathbb Q(i,\sqrt2)\subseteq K$. Conversely,
+\[
+\zeta_8=\frac{1+i}{\sqrt2}\in\mathbb Q(i,\sqrt2),
+\]
+so equality holds. The degree is also the degree of the cyclotomic polynomial
+\[
+\Phi_8(x)=x^4+1,
+\]
+namely $\varphi(8)=4$.
 :::
 
-<1>3. $[\Q(\zeta_8):\Q]=\varphi(8)=4$.
+<1>3. Every $\mathbb Q$-automorphism of $K$ is uniquely determined by
+\[
+\zeta_8\longmapsto \zeta_8^a,
+\qquad a\in(\mathbb Z/8\mathbb Z)^\times,
+\]
+and every such choice occurs.
 ::: {.proof}
-$m=8$ even >2.
+The conjugates of the primitive eighth root $\zeta_8$ over $\mathbb Q$ are exactly the primitive eighth roots $\zeta_8^a$ with $\gcd(a,8)=1$. Since $K=\mathbb Q(\zeta_8)$, an automorphism is determined by the image of $\zeta_8$, and the standard cyclotomic automorphisms realize all four choices.
 :::
 
-<1>4. $\Gal(\Q(\zeta_8)/\Q)\cong(\Z/8)^\times=\{1,3,5,7\}\cong C_2\times C_2$.
+<1>4. Hence
+\[
+\operatorname{Gal}(K/\mathbb Q)
+\cong(\mathbb Z/8\mathbb Z)^\times
+=\{1,3,5,7\}
+\cong C_2\times C_2.
+\]
 ::: {.proof}
-cyclotomic.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+Composition corresponds to multiplication of exponents modulo $8$. Each of $3,5,7$ has square $1$ modulo $8$, so every nonidentity element of $(\mathbb Z/8\mathbb Z)^\times$ has order $2$. A group of order $4$ with three nonidentity involutions is the Klein four group $C_2\times C_2$.
 :::
 :::
