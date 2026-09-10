@@ -46,61 +46,13 @@ of public mathematical remarks.
 - **Impact:** repository checks, temporary authoring output, edits, and commits may fail nondeterministically even when the worktree itself is healthy.
 - **Repair:** free byte capacity on the repository host. This stream removed only its own `/tmp/ca-unsorted-*.tsv` scratch files and did not delete shared caches or other workers' data.
 
-### P-4Y4QT has an unbound parameter and an incompatible convergence range
+### P-X7WUF has unresolved provenance
 
-- **Object and need:** `P-4Y4QT` in `SRC-CA-ART-T34TG3`; the problem says “Let $0<a<4$” but asks to evaluate $\int_0^\infty x^{\alpha-1}/(1+x^3)\,dx$, so the parameter in the integrand is not bound by the stated hypothesis.
-- **Observed evidence:** the local Spring 2020 HW 3 collection has no provenance beyond a relation to `SRC-TEXT-SS03`. The same wording is preserved in the older complex-analysis notes. Independently, the displayed integral converges exactly for $0<\operatorname{Re}\alpha<3$: near $0$ it behaves like $x^{\alpha-1}$ and near infinity like $x^{\alpha-4}$. Thus even identifying $a=\alpha$ would make the stated upper range $a<4$ incompatible with convergence on $3\le a<4$.
-- **Impact and owner:** no source-faithful numerical/formula answer is determined by the current statement. The homework/card source record owns recovery of whether the intended denominator was $1+x^4$, the intended range was $0<a<3$, or another correction was meant.
-- **Uncertainty:** the local wording and convergence obstruction are verified; no authoritative provenance for this homework card has been identified.
-- **Repair:** recover the originating homework/source and correct the bound parameter and convergence range from that source before attaching a solution.
-
-### P-CASP25E is false as printed in the official Spring 2025 UCSD source
-
-- **Object and need:** `P-CASP25E` in `SRC-UCSD-CA-SPRING-2025`; the source claims that a bounded sequence of holomorphic functions on $\mathbb D$ must converge locally uniformly if it converges pointwise on an arbitrary convergent sequence $z_m\to z_*\in\mathbb D$.
-- **Observed evidence:** direct inspection of Problem 5 in the official Spring 2025 UCSD PDF confirms that no distinctness hypothesis is imposed on the points $z_m$. Taking $z_m\equiv0$ and $f_n(z)=(-1)^n z$ gives a uniformly bounded sequence of holomorphic functions with $f_n(z_m)=0$ for every $m,n$, while $(f_n)$ does not converge locally uniformly on any compact set containing a nonzero point.
-- **Impact and owner:** the printed statement is false. The usual Vitali/Montel argument becomes valid if the set of testing points has an accumulation point in $\mathbb D$, for example if the $z_m$ are distinct and converge in $\mathbb D$. The source/card statement owns the repair.
-- **Uncertainty:** the source wording and counterexample are verified; no independent erratum has been located.
-- **Repair:** recover an erratum or corrected copy before adding a missing distinctness/accumulation hypothesis; otherwise retain the card as a documented source defect.
-
-### P-CASP13E is false as printed in the official Spring 2013 UCSD source
-
-- **Object and need:** `P-CASP13E` in `SRC-UCSD-CA-SPRING-2013`; the source claims that a sequence of distinct real numbers $x_n$ is the horizontal part of a zero set $x_n+i$ of some holomorphic function on the upper half-plane if and only if $\sum_n (x_n^2+4)^{-1}<\infty$.
-- **Observed evidence:** direct inspection of page 2 of the official Spring 2013 UCSD PDF confirms the statement exactly as transcribed. Take $x_n=\sqrt n$. Then $x_n+i$ is a discrete sequence in $\mathbb C_+$, so by the Weierstrass product theorem there is an entire function, hence a function holomorphic on $\mathbb C_+$, vanishing at all $x_n+i$. But $\sum_n 1/(x_n^2+4)=\sum_n1/(n+4)$ diverges.
-- **Impact and owner:** the necessity direction is false for unrestricted holomorphic functions. A Blaschke condition would be appropriate for bounded holomorphic functions, but boundedness is absent from the official source. The source/card statement owns the repair.
-- **Uncertainty:** the source wording and counterexample are verified. The likely intended hypothesis is that $f$ is bounded, but no erratum has been located.
-- **Repair:** recover an independent erratum or corrected copy before changing the statement; otherwise retain the card as a documented source defect rather than attaching a proof.
-
-### P-CASP07C is false as printed in the official Spring 2007 UCSD source
-
-- **Object and need:** `P-CASP07C` in `SRC-UCSD-CA-SPRING-2007`; the official problem asks to prove that for every function analytic on $B(0,2)$, the series $\sum_{n=1}^\infty f^{(n)}(z)$ converges in $\mathcal O(\mathbb D)$.
-- **Observed evidence:** direct inspection of page 2 of the official Spring 2007 UCSD PDF confirms the displayed series is exactly $\sum_{n=1}^\infty f^{(n)}(z)$. Taking $f(z)=1/(3-z)$, which is analytic on $B(0,2)$, gives $f^{(n)}(0)=n!/3^{n+1}$, whose terms do not even tend to zero. Hence the series diverges at $0$.
-- **Impact and owner:** the card is mathematically false as printed and cannot receive a valid proof without recovering an intended normalization or other missing hypothesis. The source/card statement owns the repair.
-- **Uncertainty:** the source formula and counterexample are both verified; the intended corrected series is unknown.
-- **Repair:** recover an erratum or independent version of the exam before changing the displayed series; otherwise retain the card as a documented source defect.
-
-### P-8CA12 is false as printed in the official Spring 2017 UGA source
-
-- **Object and need:** `P-8CA12` in `SRC-UGA-CA-SPRING-2017`; the source asks to prove that for every real $\alpha>1$, the equation $\sin z=e^{\alpha z^3}$ has exactly three solutions in $|z|<1$.
-- **Observed evidence:** direct inspection of the official Spring 2017 UGA DOCX confirms the OMML exponent is $\alpha z^3$. Let $F(z)=\sin z-e^{\alpha z^3}$. Since $\alpha$ is real, $F(\bar z)=\overline{F(z)}$, so nonreal zeros occur in conjugate pairs with the same multiplicity. There are no real zeros in $(-1,1)$: for $-1<x<0$, $\sin x<0<e^{\alpha x^3}$; for $0\le x<1$, $\sin x<1\le e^{\alpha x^3}$. Hence the number of zeros in the unit disk, counted with multiplicity, must be even and cannot equal three.
-- **Impact and owner:** the card is mathematically false as printed, so no valid solution can be attached without first recovering the intended equation or root count. The source/card statement owns the repair.
-- **Uncertainty:** the falsity of the printed statement and the DOCX grouping are verified. A plausible intended equation is $\sin z=e^\alpha z^3$, for which a three-root Rouché argument is natural, but no source evidence currently establishes that correction.
-- **Repair:** locate an independent copy or erratum for the Spring 2017 exam and replace the statement only when the intended formula is source-supported; otherwise retain the card as a documented source defect.
-
-### P-8CA06 omits the hypothesis $f(0)=0$ in the official Fall 2017 UGA source
-
-- **Object and need:** `P-8CA06` in `SRC-UGA-CA-FALL-2017`; the problem asks for a positive integer $m$ with $f(0)=\cdots=f^{(m-1)}(0)=0$ and then Schwarz-type bounds of order $m$.
-- **Observed evidence:** direct inspection of UGA's official `Complex Analysis [Fall 2017].docx` confirms the source assumes only that $f:\mathbb E\to\mathbb E$ is analytic and is not identically zero in some neighborhood of the origin. It does not assume $f(0)=0$. The constant function $f\equiv1/2$ satisfies the printed hypotheses but contradicts part (a), since no positive $m$ can have $f(0)=0$.
-- **Impact and owner:** both parts rely on $0$ being a zero of positive order; as printed the problem is false. The source/card statement owns the repair.
-- **Uncertainty:** the omission is verified against the official DOCX and the counterexample is decisive. The natural correction is to add $f(0)=0$, but no independent erratum has yet been located.
-- **Repair:** add the missing hypothesis only if supported by an independent source or explicit erratum; otherwise retain the card as a documented source defect rather than attaching a proof to the false statement.
-
-### P-X7WUF has an unresolved provenance and residue-normalization defect
-
-- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; its residue formula for a pole of order $m$ omits the standard factor $1/(m-1)!$, and its owning collection does not identify its actual source.
-- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document. Independently, for $F(z)=z^{-3}+z^{-1}$ and $m=3$, the contour integral divided by $2\pi i$ equals the residue $1$, whereas the formula printed on `P-X7WUF(a)` gives $\frac{d^2}{dz^2}(1+z^2)|_{z=0}=2$.
-- **Impact and owner:** `P-X7WUF(a)` is false for $m>2$, and the card cannot presently be source-verified against its owning collection. The collection/card provenance and statement own the repair. The parallel unsorted card `E-YZUOC` has now been mathematically resolved by an explicit erratum and proof on that card.
+- **Object and need:** `P-X7WUF` in `SRC-UGA-CA-FALL-2016`; the mathematical defect has been resolved on the card by an explicit erratum and proof, but its owning collection still does not identify its actual source.
+- **Observed evidence:** the collection cites UGA's official `Complex Analysis [Fall 2016].docx`. Direct inspection of that DOCX on 2026-09-09 shows its problem list ending with the disk-automorphism/two-fixed-points problem corresponding to `P-8CA16`; no pole-of-order-$m$ residue problem or integral of $e^\tau/(\tau^2+\pi^2)^2$ occurs in the document.
+- **Impact and owner:** the card is now mathematically complete, but its provenance is incorrect or incomplete. The collection/source record owns that repair.
 - **Uncertainty:** the mismatch with the cited DOCX is verified; the actual source of `P-X7WUF` has not yet been identified.
-- **Repair:** recover the true source for `P-X7WUF`, move or re-provenance the card accordingly, and restore the factor $1/(m-1)!$ before attaching its solution.
+- **Repair:** recover the true source for `P-X7WUF` and move or re-provenance the card accordingly.
 
 ### P-MMAQ-WV7QEYSPXM omits the infinite-cyclic injectivity hypothesis
 
