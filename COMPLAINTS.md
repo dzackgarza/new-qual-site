@@ -60,30 +60,6 @@ of public mathematical remarks.
 - **Impact and owner:** those open-ended placeholders do not define finite mathematical tasks, so a solution to the one precise bullet would not constitute a solution to the whole card.
 - **Repair:** replace the external placeholders with explicit problem statements or split the precise derivative-zero exercise into its own card.
 
-### P-XKYOG is truncated and contradicts the principal-logarithm claim
-
-- **Object and need:** `P-XKYOG` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
-- **Observed evidence:** the card begins mid-sentence with "equations take the form," then asks to use the polar Cauchy--Riemann equations to show that the principal logarithm is holomorphic on $r>0$, $-\pi<\theta<\pi$, and also to show that this same logarithm is "not continuous in $r>0$." On the stated slit plane the principal logarithm is holomorphic and therefore continuous.
-- **Source verification:** `assets/attachments/extracted/Questions_from_Tie.md` and the parallel UGA Fall 2015 card `P-AMD-YDNWHPDM` restore the omitted part (a), but both preserve the same final phrase "not continuous in $r>0$." Thus the truncation is local, while the contradictory continuity clause is source-level rather than an extraction artifact.
-- **Impact and owner:** the omitted polar Cauchy--Riemann setup is recoverable, but the final source claim still requires correction before the full exercise can receive a source-faithful proof.
-- **Repair:** correct the source-level final clause to the intended nonextendability statement (for example, nonexistence of a continuous extension to $\CC^\times$) before authoring the complete proof.
-
-### P-DEJGY(b)(ii) omits the second level-set value
-
-- **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
-- **Observed evidence:** the second expression is not an equation and therefore does not specify a level curve. Part (b)(i) discusses the level curves of both real and imaginary parts, but part (ii) provides the level value only for the real part.
-- **Impact and owner:** the requested pair of curves is underdetermined. The likely intended second curve is $\operatorname{Im}f=0$, but inserting that value would alter the problem statement without source support.
-- **Source verification:** `assets/attachments/extracted/Questions_from_Tie.md`, Fall 2016 problem 2(b)(ii), contains the same incomplete phrase `Re(f)=0` and `Im(f)`; the missing imaginary level is therefore a source-level omission.
-- **Repair:** correct the source-level statement by specifying the intended imaginary-part level before attaching a solution.
-
-### E-QVMUV has inconsistent Laurent-coefficient notation and an incorrect integral index
-
-- **Object and need:** `E-QVMUV`; the card is intended to state the Cauchy integral formula for Laurent coefficients and the annulus of convergence.
-- **Observed evidence:** the opening display reads `f(z) \sum_{k\in\ZZ} c_k(z-z_0)^k` with the equality sign missing; the asserted formula labels the coefficient $c_k$ but divides by $(z-z_0)^{n+1}$; the convergence radii are then written in terms of coefficients $a_{\pm n}$ rather than the $c_k$ introduced above. These are mutually inconsistent variable names in the mathematical statement, not merely presentation differences.
-- **Impact and owner:** the card does not currently state a single well-defined coefficient formula. The intended standard formula is plausibly $c_k=(2\pi i)^{-1}\int_\gamma f(z)(z-z_0)^{-k-1}\,dz$, with radii expressed using the same coefficients, but the unsorted card has no independent source establishing which local symbols were intended.
-- **Uncertainty:** the local inconsistencies are verified; `SRC-UNSORTED-COMPLEX-ANALYSIS` supplies no independent provenance for the card.
-- **Repair:** recover the originating source or notes and normalize all coefficient/index variables from that source before attaching a proof.
-
 ### P-4Y4QT has an unbound parameter and an incompatible convergence range
 
 - **Object and need:** `P-4Y4QT` in `SRC-CA-ART-T34TG3`; the problem says “Let $0<a<4$” but asks to evaluate $\int_0^\infty x^{\alpha-1}/(1+x^3)\,dx$, so the parameter in the integrand is not bound by the stated hypothesis.
