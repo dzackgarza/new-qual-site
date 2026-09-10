@@ -76,13 +76,13 @@ of public mathematical remarks.
 - **Uncertainty:** both defects are explicit in the card. The unsorted collection provides no independent provenance from which to restore the intended wording.
 - **Repair:** recover the originating source and restore the first denominator and the required hypothesis on $b$ before attaching a proof.
 
-### P-QC7BY and P-QGCXS have unresolved statement transcription defects
+### P-QGCXS has an unresolved statement transcription defect
 
-- **Object and need:** `P-QC7BY` and `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; both cards should state complete mathematical problems before solution authorship.
-- **Observed evidence:** `P-QC7BY` introduces real-valued functions `u, b` but immediately defines `f=u+iv`, leaving `v` undefined. `P-QGCXS` asks for the standard roots-of-unity sine sum, but its final displayed term is written `\cdots \frac{2(n-1)\pi}{n}=0` with the `\sin` missing.
-- **Impact and owner:** the intended mathematics is recognizable, but correcting `b` to `v` or inserting the missing sine would alter source-authored problem text without independent provenance. The unsorted compilation/card statements own the repair.
-- **Uncertainty:** the local defects are explicit and verified. No independent source is attached to either card in the unsorted collection, so the intended exact wording has not been source-verified.
-- **Repair:** recover the originating sources and restore the missing/incorrect symbols before attaching solutions.
+- **Object and need:** `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS` should state a complete mathematical problem before solution authorship.
+- **Observed evidence:** the card asks for the standard roots-of-unity sine sum, but its final displayed term is written `\cdots \frac{2(n-1)\pi}{n}=0` with the `\sin` missing.
+- **Impact and owner:** the intended mathematics is recognizable, but inserting the missing sine would alter source-authored problem text without independent provenance. The unsorted compilation/card statement owns the repair.
+- **Uncertainty:** the local defect is explicit and verified. No independent source is attached to the card in the unsorted collection, so the intended exact wording has not been source-verified.
+- **Repair:** recover the originating source and restore the missing symbol before attaching a solution.
 
 ### P-LLNJ7 needs uniform convergence in the vertical parameter
 
