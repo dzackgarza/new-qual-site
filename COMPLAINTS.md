@@ -147,3 +147,12 @@ of public mathematical remarks.
 - **Impact and owner:** Git sequencer state is checkout-global, so file-disjointness does not make direct-to-main porcelain operations independent; unrelated card commits can fail or be delayed despite no content-path collision.
 - **Uncertainty:** the other stream's exact wrapper was not identified; the observed state was standard Git cherry-pick sequencer state in the shared checkout.
 - **Repair:** use a commit path that constructs commits without checkout-global sequencer state, or serialize operations that invoke cherry-pick/rebase while preserving file-disjoint authorship on `main`.
+
+
+### `P-OK5P3` has the wrong arc endpoint and resulting title
+
+- **Object and need:** `P-OK5P3` in `SRC-UGA-PRELIM-SPRING-2007`; the card must reproduce the exam path before a line integral can be solved.
+- **Observed evidence:** the preserved Spring 2007 exam extraction says the counterclockwise circle arc runs from `(2,0)` to `(0,2)`. The card instead said `(0,-2)`, and its title consequently described a three-quarter-circle path rather than the source's first-quadrant quarter-circle path.
+- **Impact and owner:** the wrong endpoint changes the curve and therefore the line integral. The problem card owns the source-faithful correction.
+- **Uncertainty:** none in the retained textual extraction; it explicitly names `(0,2)`.
+- **Repair:** corrected the endpoint and title on `P-OK5P3` and solved the resulting positively oriented quarter-disk integral.
