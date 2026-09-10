@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 2 of the preserved UNL May 31, 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Verified the convergence and Abel/Leibniz arguments; corrected the term-count wording in the final approximation.
 ---
 
 ::: {.problem}
@@ -50,7 +58,7 @@ At $x = 1$: $\arctan 1 = \frac{\pi}{4}$.
 Proof: alternating-series remainder bound.
 <2>2. To get $\pi$ to three decimals (error $< 0.0005$, i.e. $\pi/4$ to error $< 0.000125$), need $\frac{1}{2N+3} < 1.25\times10^{-4}$, i.e. $2N + 3 > 8000$, $N \ge 4000$.
 Proof: solve the bound of <2>1: error in $\pi$ is $4/(2N+3) < 0.0005 \Leftrightarrow 2N + 3 > 8000$.
-<2>3. Compute: summing $N = 4000$ terms gives $\pi \approx 3.141\ldots$; e.g. the partial sums oscillate around $\pi/4 \approx 0.785398$, and $\pi \approx 3.14159$.
+<2>3. Compute: the partial sum through $n=4000$ (that is, $4001$ terms) gives $\pi \approx 3.141\ldots$; e.g. the partial sums oscillate around $\pi/4 \approx 0.785398$, and $\pi \approx 3.14159$.
 Proof: the alternating-series bound of <2>1 guarantees three-decimal accuracy: $|\pi - 4S_N| \le 4/(2N+3) < 0.0005$.
 (This is the Leibniz formula for $\pi$; it converges slowly — $\sim 4000$ terms — but the bound is rigorous.)
 <2>4. Q.E.D. Proof: <2>1–<2>3 give the approximation procedure with all details.
