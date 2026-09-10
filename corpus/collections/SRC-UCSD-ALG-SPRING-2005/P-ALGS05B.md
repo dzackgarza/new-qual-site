@@ -27,73 +27,65 @@ Prove that a triangular matrix is normal if and only if it is diagonal.
 :::
 
 ::: {.solution}
-<1>1. Every diagonal matrix is normal.
+<1>1. It suffices to treat the case in which \(A=(a_{ij})\) is upper triangular; the
+lower triangular case follows by applying the argument to \(A^*\).
 ::: {.proof}
-If $D$ is diagonal, then $D^*$ is diagonal and
-\[
-DD^*=D^*D,
-\]
-entry by entry.
+The adjoint of a lower triangular matrix is upper triangular, and \(A\) is normal
+exactly when \(A^*\) is normal.
 :::
 
-<1>2. Let $A=(a_{ij})\in M_n(\mathbb C)$ be upper triangular and normal. Then
-\[
-a_{1j}=0\qquad(j>1).
-\]
+<1>2. If \(A\) is upper triangular and normal, then \(a_{1j}=0\) for every \(j>1\).
 ::: {.proof}
-For every vector $v$, normality gives
+Normality gives \(AA^*=A^*A\). Comparing the \((1,1)\)-entries,
 \[
-\|Av\|^2=\langle A^*Av,v\rangle
-=\langle AA^*v,v\rangle
-=\|A^*v\|^2.
+(AA^*)_{11}=\sum_{j=1}^n |a_{1j}|^2,
+\qquad
+(A^*A)_{11}=\sum_{j=1}^n |a_{j1}|^2.
 \]
-Take $v=e_1$. Since $A$ is upper triangular,
+Because \(A\) is upper triangular, \(a_{j1}=0\) for every \(j>1\). Hence
 \[
-Ae_1=a_{11}e_1,
+\sum_{j=1}^n |a_{1j}|^2=|a_{11}|^2,
 \]
-whereas
+so
 \[
-A^*e_1=\overline{a_{11}}e_1+\overline{a_{12}}e_2+\cdots+\overline{a_{1n}}e_n.
+\sum_{j=2}^n |a_{1j}|^2=0.
 \]
-Hence
-\[
-|a_{11}|^2
-=\|Ae_1\|^2
-=\|A^*e_1\|^2
-=|a_{11}|^2+\sum_{j=2}^n|a_{1j}|^2.
-\]
-Thus every $a_{1j}$ with $j>1$ is zero.
+Therefore \(a_{1j}=0\) for all \(j>1\).
 :::
 
-<1>3. With the first row off the diagonal zero, $A$ has block form
+<1>3. Thus \(A\) has block form
 \[
 A=\begin{pmatrix}a_{11}&0\\0&B\end{pmatrix},
 \]
-where $B$ is upper triangular and normal.
+where \(B\) is upper triangular and normal.
 ::: {.proof}
-Upper triangularity already gives $a_{i1}=0$ for $i>1$, and <1>2 gives $a_{1j}=0$ for $j>1$. Therefore $A$ is block diagonal as displayed. From
+Upper triangularity already gives \(a_{j1}=0\) for \(j>1\), and <1>2 gives \(a_{1j}=0\)
+for \(j>1\), so the displayed block form holds. Then
 \[
-AA^*=A^*A
+AA^*=\begin{pmatrix}|a_{11}|^2&0\\0&BB^*\end{pmatrix},
+\qquad
+A^*A=\begin{pmatrix}|a_{11}|^2&0\\0&B^*B\end{pmatrix}.
 \]
-and block multiplication, the lower-right blocks satisfy
-\[
-BB^*=B^*B,
-\]
-so $B$ is normal.
+Since \(AA^*=A^*A\), one has \(BB^*=B^*B\), so \(B\) is normal.
 :::
 
-<1>4. Every upper-triangular normal matrix is diagonal.
+<1>4. By induction on the matrix size, every upper triangular normal matrix is diagonal.
 ::: {.proof}
-Induct on $n$. The assertion is immediate for $n=1$. For $n>1$, <1>3 gives a normal upper-triangular $(n-1)\times(n-1)$ block $B$. By induction $B$ is diagonal, hence so is $A$.
+The assertion is immediate for \(1\times1\) matrices. For \(n>1\), <1>3 reduces the
+problem to the \((n-1)\times(n-1)\) upper triangular normal matrix \(B\), which is
+diagonal by the induction hypothesis. Hence \(A\) is diagonal.
 :::
 
-<1>5. Every lower-triangular normal matrix is diagonal as well.
+<1>5. Conversely, every diagonal matrix is normal.
 ::: {.proof}
-If $A$ is lower triangular and normal, then $A^*$ is upper triangular and normal. By <1>4, $A^*$ is diagonal, hence $A$ is diagonal.
+If \(A=\operatorname{diag}(\lambda_1,\dots,\lambda_n)\), then
+\[
+AA^*=A^*A=\operatorname{diag}(|\lambda_1|^2,\dots,|\lambda_n|^2).
+\]
 :::
 
 <1>6. Therefore a triangular matrix is normal if and only if it is diagonal.
 ::: {.proof}
-Combine <1>1, <1>4, and <1>5.
+Combine <1>1--<1>5.
 :::
 :::
