@@ -40,6 +40,12 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### Repository writes can fail because the root filesystem is full
+
+- **Observed evidence:** during the final complex-analysis residual scan on 2026-09-10, a shell write failed with `no space left on device`. `df -h` reports `/dev/vda2` at 100% usage with `0` bytes available, while inode usage is only 29%.
+- **Impact:** repository checks, temporary authoring output, edits, and commits may fail nondeterministically even when the worktree itself is healthy.
+- **Repair:** free byte capacity on the repository host. This stream removed only its own `/tmp/ca-unsorted-*.tsv` scratch files and did not delete shared caches or other workers' data.
+
 ### E-N6DX3 contains unresolved image-only and omnibus prompts
 
 - **Object and need:** `E-N6DX3` in `SRC-UNSORTED-COMPLEX-ANALYSIS`.
