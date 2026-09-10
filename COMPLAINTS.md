@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-QC7BY and P-QGCXS have unresolved statement transcription defects
+
+- **Object and need:** `P-QC7BY` and `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; both cards should state complete mathematical problems before solution authorship.
+- **Observed evidence:** `P-QC7BY` introduces real-valued functions `u, b` but immediately defines `f=u+iv`, leaving `v` undefined. `P-QGCXS` asks for the standard roots-of-unity sine sum, but its final displayed term is written `\cdots \frac{2(n-1)\pi}{n}=0` with the `\sin` missing.
+- **Impact and owner:** the intended mathematics is recognizable, but correcting `b` to `v` or inserting the missing sine would alter source-authored problem text without independent provenance. The unsorted compilation/card statements own the repair.
+- **Uncertainty:** the local defects are explicit and verified. No independent source is attached to either card in the unsorted collection, so the intended exact wording has not been source-verified.
+- **Repair:** recover the originating sources and restore the missing/incorrect symbols before attaching solutions.
+
 ### P-LLNJ7 needs uniform convergence in the vertical parameter
 
 - **Object and need:** `P-LLNJ7` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card assumes only that $f(x+iy)\to A$ as $x\to\infty$ for each fixed $y\in[0,b]$, with the same limit $A$, and concludes convergence of the integrals over the vertical segments $\gamma_x$.
