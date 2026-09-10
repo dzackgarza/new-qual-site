@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### P-V4OZH omits the value range for b and has a denominator typo
+
+- **Object and need:** `P-V4OZH` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; the card defines a product intended to be a finite Blaschke product and asks to prove that $f(z)=b$ has exactly $n$ solutions in the unit disk.
+- **Observed evidence:** the first factor is written with denominator $1-\bar a_q z$ rather than $1-\bar a_1 z$, so the displayed definition contains an undefined index $q$. More importantly, no condition on $b$ is stated. For example, if all $a_k=0$, then $f(z)=z^n$; for $|b|>1$ the equation $z^n=b$ has no solution in $\mathbb D$, contradicting the claimed conclusion.
+- **Impact and owner:** the intended theorem is valid for a finite Blaschke product and $|b|<1$, counting multiplicity, but neither the correct first denominator nor the hypothesis on $b$ is present in the local statement.
+- **Uncertainty:** both defects are explicit in the card. The unsorted collection provides no independent provenance from which to restore the intended wording.
+- **Repair:** recover the originating source and restore the first denominator and the required hypothesis on $b$ before attaching a proof.
+
 ### P-QC7BY and P-QGCXS have unresolved statement transcription defects
 
 - **Object and need:** `P-QC7BY` and `P-QGCXS` in `SRC-UNSORTED-COMPLEX-ANALYSIS`; both cards should state complete mathematical problems before solution authorship.
