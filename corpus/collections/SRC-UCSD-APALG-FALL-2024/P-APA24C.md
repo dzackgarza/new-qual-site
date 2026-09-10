@@ -151,3 +151,95 @@ The subspace $S$ from <1>3 has exactly this dimension, so
 by <1>4.
 :::
 :::
+
+::: {.solution}
+Let
+\[
+R_A(x)=\frac{x^HAx}{x^Hx},\qquad R_C(x)=\frac{x^HCx}{x^Hx}
+\]
+for nonzero $x\in\mathbb C^n$.
+
+<1>1. Since $\operatorname{rank}B=2$,
+\[
+\dim\ker B^H=n-2.
+\]
+Moreover, for every $x\in\ker B^H$,
+\[
+Cx=Ax.
+\]
+::: {.proof}
+Rank-nullity for $B^H:\mathbb C^n\to\mathbb C^m$ gives
+\[
+\dim\ker B^H=n-\operatorname{rank}B^H=n-2.
+\]
+If $x\in\ker B^H$, then $B^Hx=0$, hence
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+:::
+
+<1>2. For each $1\le k\le n-2$, there exists a subspace $U\subseteq\mathbb C^n$ of dimension $n-k+1$ such that
+\[
+R_A(x)\le \lambda_k(A)
+\]
+for every nonzero $x\in U$.
+::: {.proof}
+By the Courant--Fischer min-max theorem,
+\[
+\lambda_k(A)
+=\min_{\dim U=n-k+1}\ \max_{0\ne x\in U}R_A(x).
+\]
+Hence a minimizing subspace $U$ of dimension $n-k+1$ exists, and on that subspace
+\[
+R_A(x)\le \lambda_k(A)
+\]
+for all nonzero $x\in U$.
+:::
+
+<1>3. The intersection
+\[
+W:=U\cap\ker B^H
+\]
+has dimension at least $n-k-1$.
+::: {.proof}
+Using
+\[
+\dim(U\cap K)\ge \dim U+\dim K-n,
+\]
+with $K=\ker B^H$, we obtain
+\[
+\dim W
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+:::
+
+<1>4. For every nonzero $x\in W$,
+\[
+R_C(x)=R_A(x)\le \lambda_k(A).
+\]
+::: {.proof}
+Since $W\subseteq\ker B^H$, <1>1 gives $Cx=Ax$, hence $R_C(x)=R_A(x)$. Since also $W\subseteq U$, <1>2 gives $R_A(x)\le\lambda_k(A)$.
+:::
+
+<1>5. Therefore
+\[
+\lambda_{k+2}(C)\le \lambda_k(A)
+\qquad(1\le k\le n-2).
+\]
+::: {.proof}
+The Courant--Fischer formula for $C$ gives
+\[
+\lambda_{k+2}(C)
+=\min_{\dim L=n-k-1}\ \max_{0\ne x\in L}R_C(x).
+\]
+By <1>3, choose an $(n-k-1)$-dimensional subspace $L\subseteq W$. Then by <1>4,
+\[
+\max_{0\ne x\in L}R_C(x)\le\lambda_k(A).
+\]
+Taking the minimum over all such $L$ yields
+\[
+\lambda_{k+2}(C)\le\lambda_k(A).
+\]
+:::
+:::
