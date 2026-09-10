@@ -42,6 +42,8 @@ of public mathematical remarks.
 
 ### The 2003–2009 algebra packet has mixed subject metadata
 
+- **July 2013 classification repairs:** `P-W5LVB` and `P-NGXAE` had sole area `prelim`, contrary to July 2013 Rings 2 in the retained extraction and Fields 1 on visually inspected PDF page 8. Commits `3d093c891` and `1d405a5b6` correct these areas to algebra and supply the complete classifications, including all ten module classes and every subgroup needed for the quartic subfield counts. These two verified defects are resolved; unread classification candidates are not covered by this disposition.
+
 - **Summer 2014 source-checked repairs:** problems 1, 3, 4, and 6 in the retained 2010–2015 packet confirm `P-TNZTM`, `P-WC2SP`, `P-JHQKZ`, and `P-ZR3OT` as algebra, although each card had sole area `prelim`. Commits `22cb7e0f9`, `a4a9b4527`, `fd3e6433d`, and `2d22e4b57` correct those classifications and supply all requested proofs or counterexamples. The tensor-product card also moves the source's inline hint to a separate hint section and retains the noncommutative-ring hypothesis throughout the proof. These are dispositions of the inspected cards, not of other cards sharing the label.
 
 - **July 2013 source-checked repairs:** visual inspection of PDF pages 6–8 confirms `P-XVV4O`, `P-IXED6`, `P-RP7WR`, and `P-ZG74L` as algebra, although each had sole area `prelim`. Commits `0150fd7f8`, `2a286da3a`, `3ec7685f5`, and `63d2c16c7` correct those classifications and supply complete solutions. The congruence card formerly referred to an unspecified earlier problem for the definition of ideal join; `2a286da3a` incorporates the definition from Rings 1 on the same source page, preserving the hypotheses and making the statement self-contained.
@@ -85,6 +87,8 @@ of public mathematical remarks.
 ## Workflow and rendering papercuts
 
 ### The configured PDF extraction command is missing and service requests failed
+
+- **Image-view boundary, 2026-09-10:** native `view_image` rejected `/tmp/newqual-july2013-fields-proof.png` because `/tmp` is outside the connector's approved roots, although terminal rendering there succeeded. Moving that rendered page to the ignored repository path `.tmp-july2013-fields-proof.png` allowed inspection of PDF page 8. Keep inspection images inside an approved root; this was an image-path restriction, not a rendering or source-file failure.
 
 - **July 2013 symbol recovery:** the retained extraction drops the divisibility symbol in Groups 1(b). Visual inspection of PDF page 6 confirms `p` does not divide `q-1`, exactly as stated on `P-W13PQ`. The web reader returned an internal error for the public raw PDF and a non-retryable rejection for the CDN URL, so neither yielded a PDF that its screenshot tool could inspect. Rendering the retained PDF with the installed system PDFium and inspecting the resulting page image succeeded without OCR or a new text extraction. The card's hypothesis needed no correction.
 
@@ -131,6 +135,8 @@ of public mathematical remarks.
 - **Repair:** restore one active writer for this interval and working conversation identity for worker coordination, while retaining the already committed proofs and the current writer's uncommitted card. Do not resolve the collision by overwriting the live card or moving this stream outside its assigned range.
 
 ### A read-only connector command was rejected before execution
+
+- **Range-continuation reproduction, 2026-09-10:** the read-only ordered scan of `SRC-ALG-ART-HEACCB` through `SRC-TEXT-SMI` using `Corpus` and `parse_cards` was rejected before execution. An empty-input poll of session `56826` was also rejected; the identical later poll succeeded and returned the five `just unsolved-in` results. These observations concern request screening, not failed repository commands.
 
 - **July 2013 check and inventory requests:** the combined `P-XVV4O` single-card check, whitespace check, and diff read was rejected before execution with the safety-status message. Separate `just check-card` and `just diff-card` requests succeeded, followed by a successful whitespace check and commit `0150fd7f8`. A later combined Git-status/complaint-diff request and read-only `Corpus`/`parse_cards` inventory request was also rejected before execution; the separate complaint diff and native `just unsolved-in` invocation were usable. These rejections do not establish failed repository checks.
 
@@ -231,6 +237,8 @@ of public mathematical remarks.
 - **Repair:** make `unsolved-in` use the already-built catalog or otherwise bound the collection-scoped scan so one source lookup does not require an unbounded whole-corpus pass.
 
 ### Direct-to-`main` streams can globally block unrelated card commits with Git sequencer state
+
+- **Index-lock contention, 2026-09-10:** the prose-only `just commit-card` for `P-NGXAE` failed with exit 128 because `.git/index.lock` already existed. The next Git read showed another card committed and the lock absent; no lock was deleted. Concurrent commits contend for the shared index even without sequencer state, so inspect the current state and retry after the active operation finishes rather than removing a live lock.
 
 - **July 2013 reproduction:** the `just commit-card` attempt for `P-W13IN` returned exit 1 with `Cherry-pick currently in progress` and no pending change to that card. Immediate inspection found `f2c54e941` already committed on `main`, a clean card path, and no remaining `CHERRY_PICK_HEAD`. Thus this attempt raced with another stream's successful commit, rather than exposing a failed mathematical or schema check. No sequencer state was aborted or otherwise modified by this stream.
 
