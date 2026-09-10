@@ -15,11 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $X$ is a path-connected CW-complex with $\pi_1(X) \cong \mathbb{Z}^2$ and $\pi_{\geq 2}(X) = 0$.
 Show that $X$ is homotopy-equivalent to $S^1 \times S^1$.
 Use this to show that the fundamental group of a closed orientable surface $\Sigma_g$ of genus $g \geq 2$ cannot contain a subgroup isomorphic to $\mathbb{Z}^2$.
-:::::: {.solution}
+:::
+
+::: {.solution}
 <1>1. Choose loops in $X$ representing a basis of $\pi_1(X)\cong\mathbb Z^2$. Since their commutator is null-homotopic, these loops extend across the standard $2$-cell of the torus to a map
 $$f:T^2\to X$$
 which induces an isomorphism on $\pi_1$.
