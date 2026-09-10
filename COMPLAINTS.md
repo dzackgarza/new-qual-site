@@ -1,59 +1,69 @@
 # Mathematical issues and papercuts
 
-Record issues encountered during source reading, solving, review, authoring or
-site use under [QUAL-05](CONTRIBUTING.md#named-policies). Include findings outside
-the selected card. This file owns observations; [TODO.md](TODO.md) owns selected
-repair tasks and dependencies. Keep existing GitHub issue links rather than
-copying their live status. The [review policy index](REVIEW_POLICY.md) supplies
-named candidate patterns, not proof that a candidate is a defect.
+Record issues encountered during source reading, solving, review, authoring or site use under [QUAL-05](CONTRIBUTING.md#named-policies).
+Include findings outside the selected card.
+This file owns observations; [TODO.md](TODO.md) owns selected repair tasks and dependencies.
+Keep existing GitHub issue links rather than copying their live status.
+The [review policy index](REVIEW_POLICY.md) supplies named candidate patterns, not proof that a candidate is a defect.
 
 ## Recording an issue
 
 Add a descriptive heading in the appropriate section below, with:
 
-- **Object and need:** card/collection ID or affected workflow; the exact
-  mathematical statement and hypotheses, or user action and expected behavior.
-- **Observed evidence:** source page and passage, counterexample or proof gap,
-  or actual action and result with the relevant path/revision.
-- **Impact and owner:** affected parts or consumers, existing partial result,
-  and the mathematical or tool boundary that must change.
-- **Uncertainty:** distinguish a verified error from a source ambiguity or
-  review candidate. State inspected scope and remaining questions. For absence
-  claims supply Searched, Found, Conclusion, Confidence and Gaps.
-- **Repair:** link the existing TODO task or issue when available and state
-  the result that would resolve the observation.
+- **Object and need:** card/collection ID or affected workflow; the exact mathematical statement and hypotheses, or user action and expected behavior.
+
+- **Observed evidence:** source page and passage, counterexample or proof gap, or actual action and result with the relevant path/revision.
+
+- **Impact and owner:** affected parts or consumers, existing partial result, and the mathematical or tool boundary that must change.
+
+- **Uncertainty:** distinguish a verified error from a source ambiguity or review candidate.
+  State inspected scope and remaining questions.
+  For absence claims supply Searched, Found, Conclusion, Confidence and Gaps.
+
+- **Repair:** link the existing TODO task or issue when available and state the result that would resolve the observation.
 
 A missing hypothesis with a concrete counterexample is a mathematical issue.
-An unreadable source is an unresolved source question. An unsolved problem is
-ordinary authoring work, not by itself a defect. A command that prevents reading
-the intended card is a papercut even when it has a simple workaround.
+An unreadable source is an unresolved source question.
+An unsolved problem is ordinary authoring work, not by itself a defect.
+A command that prevents reading the intended card is a papercut even when it has a simple workaround.
 
-Extend an existing entry when the same cause affects another card. Preserve
-concurrent entries. If the selected proof requires a repair, link that dependency
-and resolve it before relying on the statement; recording it does not make the
-proof valid. Continue independent assigned mathematics.
+Extend an existing entry when the same cause affects another card.
+Preserve concurrent entries.
+If the selected proof requires a repair, link that dependency and resolve it before relying on the statement; recording it does not make the proof valid.
+Continue independent assigned mathematics.
 
-After verifying the full repair, remove the resolved entry with evidence in the
-fixing commit; retain any unresolved portion. Put durable mathematical errata
-on the owning card and durable policy in CONTRIBUTING. Keep process notes out
-of public mathematical remarks.
+After verifying the full repair, remove the resolved entry with evidence in the fixing commit; retain any unresolved portion.
+Put durable mathematical errata on the owning card and durable policy in CONTRIBUTING. Keep process notes out of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
 ### P-MMAQ-WV7QEYSPXM omits the infinite-cyclic injectivity hypothesis
 
 - **Object and need:** `P-MMAQ-WV7QEYSPXM`, Dummit--Foote §5.5 Exercise 6; the local statement must retain every hypothesis needed for the semidirect-product isomorphism.
-- **Observed evidence:** the local card states the result for an arbitrary cyclic group $K$. Dummit--Foote's exercise adds: if $K$ is infinite, assume both $\varphi_1$ and $\varphi_2$ are injective. The same wording is independently reproduced in University of Utah Math 6320 Exercise 4 (DF-5.5.6-7).
-- **Impact and owner:** without injectivity in the infinite case, conjugate finite cyclic images can be generated by different powers while the corresponding power map $K\to K$ is not an automorphism, so the requested construction is not justified. The problem card owns the repair.
+
+- **Observed evidence:** the local card states the result for an arbitrary cyclic group $K$.
+  Dummit--Foote's exercise adds: if $K$ is infinite, assume both $\varphi_1$ and $\varphi_2$ are injective.
+  The same wording is independently reproduced in University of Utah Math 6320 Exercise 4 (DF-5.5.6-7).
+
+- **Impact and owner:** without injectivity in the infinite case, conjugate finite cyclic images can be generated by different powers while the corresponding power map $K\to K$ is not an automorphism, so the requested construction is not justified.
+  The problem card owns the repair.
+
 - **Uncertainty:** the omitted clause is verified against two reproductions of the source exercise; no ambiguity remains about the intended hypothesis.
+
 - **Repair:** restore the infinite-case injectivity clause on `P-MMAQ-WV7QEYSPXM` before attaching a proof.
 
 ### P-HGRO11 does not specify the coefficient field
 
 - **Object and need:** `P-HGRO11` in `SRC-HARVARD-GROUPS-ORAL`; deciding whether a determinant-one matrix group is simple requires the coefficient field and whether the intended group is $SL_2(F)$ or its projective quotient.
-- **Observed evidence:** both the preserved Harvard source extraction and the local card ask only whether “the group of $2\times2$ matrices of determinant $1$” is simple, with no coefficient field. For example, if $\operatorname{char}F\ne2$, then $-I$ is a nontrivial central element of $SL_2(F)$, while simplicity statements for $PSL_2(F)$ depend on $F$.
-- **Impact and owner:** there is no source-faithful yes/no answer to the card as written. The Harvard group-orals source/card record owns recovery of the intended field or clarification that the question concerns a particular projective special linear group.
+
+- **Observed evidence:** both the preserved Harvard source extraction and the local card ask only whether “the group of $2\times2$ matrices of determinant $1$” is simple, with no coefficient field.
+  For example, if $\operatorname{char}F\ne2$, then $-I$ is a nontrivial central element of $SL_2(F)$, while simplicity statements for $PSL_2(F)$ depend on $F$.
+
+- **Impact and owner:** there is no source-faithful yes/no answer to the card as written.
+  The Harvard group-orals source/card record owns recovery of the intended field or clarification that the question concerns a particular projective special linear group.
+
 - **Uncertainty:** verified against the retained Harvard PDF extraction; the omitted field may have been supplied orally or by surrounding course context not present in the preserved question list.
+
 - **Repair:** recover the intended coefficient field/group from an independent Harvard source or explicitly mark the source question as underdetermined before solution authorship resumes.
 
 ## Workflow and rendering papercuts
@@ -61,23 +71,59 @@ of public mathematical remarks.
 ### Primary local repository connector can silently become unavailable
 
 - **Object and need:** local-repository work through the Chat On Steroids connector; repository reads and terminal commands should remain available while a scoped authoring stream is active.
+
 - **Observed evidence:** on 2026-09-09, the first attempt to read `AGENTS.md`, `CONTRIBUTING.md`, git status, and git history failed before executing with `Tunnel-client has not been seen for 300 seconds. Ensure tunnel-client is running and connected.` The secondary local connector was available and executed the same commands successfully.
-- **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading. This is tooling/infrastructure-owned rather than corpus-owned.
+
+- **Impact and owner:** repository work is blocked when no secondary connector is available; with a secondary connector, the failure still adds avoidable recovery work and makes the primary connection state misleading.
+  This is tooling/infrastructure-owned rather than corpus-owned.
+
 - **Uncertainty:** verified for one primary-connector call in this session; the duration and root cause of the disconnect were not observable from the repository side.
+
 - **Repair:** make connector liveness visible before invocation or transparently fail over to an available local connector, so repository reads do not fail solely because one tunnel has aged out.
 
 ### `unsolved-in` can hang indefinitely after repeated scoped authoring runs
 
 - **Object and need:** the repository authoring command `just unsolved-in <collection> [section]`; scoped solution streams depend on it to derive their worklists without reading the generated shared queue.
-- **Observed evidence:** on 2026-09-09 in the isolated topology-drill worktree, `just unsolved-in SRC-TEXT-HAT02`, `just unsolved-in SRC-TEXT-HAT02 1.a`, and `just unsolved-in SRC-TEXT-HAT02 1.A` each ran for at least 30 seconds without producing a header or result, after earlier section-scoped calls had completed normally. Multiple stale read-only processes remained alive concurrently.
-- **Impact and owner:** a stream that is required to derive work from repository tooling can block at section boundaries even when no git mutation is involved. This is authoring-tool/runtime owned rather than corpus-content owned.
+
+- **Observed evidence:** on 2026-09-09 in the isolated topology-drill worktree, `just unsolved-in SRC-TEXT-HAT02`, `just unsolved-in SRC-TEXT-HAT02 1.a`, and `just unsolved-in SRC-TEXT-HAT02 1.A` each ran for at least 30 seconds without producing a header or result, after earlier section-scoped calls had completed normally.
+  Multiple stale read-only processes remained alive concurrently.
+
+- **Impact and owner:** a stream that is required to derive work from repository tooling can block at section boundaries even when no git mutation is involved.
+  This is authoring-tool/runtime owned rather than corpus-content owned.
+
 - **Uncertainty:** the immediate cause may be repeated full-corpus scans, file-lock contention, or resource contention from concurrent `qualc.authoring commit` processes; the command gives no progress indication.
+
 - **Repair:** make `unsolved` scans bounded or incremental, emit progress before long corpus scans, and avoid leaving duplicate long-running read-only scans alive after the caller times out.
 
 ### Read-only worker spawn can fail when connector cannot identify the prime conversation
 
 - **Object and need:** Chat On Steroids `agents` coordination while a long repository validation hook is running; read-only workers should be spawnable for source analysis without mutating the worktree.
+
 - **Observed evidence:** on 2026-09-09, a request to spawn two read-only Hatcher-source workers failed before creating any worker with `UNIDENTIFIED_CALLER: this app could not prove which ChatGPT conversation this call came from` and instructed reconnecting the paired browser extension.
-- **Impact and owner:** parallel read-only preparation is unavailable even though ordinary repository commands through the same live connector continue to work. This is connector/agent-coordination tooling, not corpus content.
+
+- **Impact and owner:** parallel read-only preparation is unavailable even though ordinary repository commands through the same live connector continue to work.
+  This is connector/agent-coordination tooling, not corpus content.
+
 - **Uncertainty:** verified for this spawn attempt; no claim about persistence after reconnecting the browser extension.
+
 - **Repair:** make prime-conversation identity available to `agents` whenever the connector is already serving that conversation, or surface a deterministic reconnect/status check before spawn.
+
+## Missing TOP-WORKSHOP provenance PDF
+
+`SRC-TOP-WORKSHOP/index.md` lists `assets/attachments/Day_4_-_Counterexample_Problems.pdf` as provenance, but the file is absent from both the active worktree and the main checkout.
+This prevents direct source verification of ambiguous workshop wording such as `P-TOP-WORKSHOP-D4-W3`.
+
+## Commit gate can fail when shared uv cache fills the filesystem
+
+- **Observed:** while committing a documentation-only `COMPLAINTS.md` update in the topology-drill worktree, the normal `just test-commit` hook failed in structured-text formatting because `uv` could not create a temporary cache file under `/home/dzack/.cache/uv/simple-v21/pypi/`: `No space left on device (os error 28)`.
+
+- **Impact:** unrelated card/document commits become impossible even though the repository changes themselves are valid; this is shared environment/cache pressure rather than a corpus failure.
+
+- **Repair:** keep the shared package cache bounded or automatically evict stale cache entries before commit-gate tooling attempts writes.
+  The immediate local remediation is to clear disposable package-manager cache data only.
+
+## Commit gate can fail when shared uv cache fills the filesystem
+
+- **Observed:** while committing a documentation-only `COMPLAINTS.md` update in the topology-drill worktree, the normal `just test-commit` hook failed in structured-text formatting because `uv` could not create a temporary cache file under `/home/dzack/.cache/uv/simple-v21/pypi/`: `No space left on device (os error 28)`.
+- **Impact:** unrelated card/document commits become impossible even though the repository changes themselves are valid; this is shared environment/cache pressure rather than a corpus failure.
+- **Repair:** keep the shared package cache bounded or automatically evict stale cache entries before commit-gate tooling attempts writes. The immediate local remediation is to clear disposable `uv` cache data only.
