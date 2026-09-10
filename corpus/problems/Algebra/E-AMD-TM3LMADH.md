@@ -15,49 +15,58 @@ review: draft
 audit:
 - event: solution-written
   by: OpenAI
-  date: 2026-09-09
+  date: 2026-09-10
 - event: solution-reviewed
   by: OpenAI
-  date: 2026-09-09
+  date: 2026-09-10
 ---
 
 ::: {.exercise}
-Show that in a finite $p$-group, every nontrivial normal subgroup intersects the center nontrivially.
+Show that in a finite $p\dash$group, every nontrivial normal subgroup intersects the center nontrivially.
 :::
 
 
 ::: {.solution}
-Let $G$ be a finite $p$-group and let $1\neq N\trianglelefteq G$.
+Let \(G\) be a finite \(p\)-group and let \(1\neq N\trianglelefteq G\).
 
-<1>1. Conjugation by $G$ defines an action of $G$ on $N$.
+<1>1. The group \(G\) acts on the finite set \(N\) by conjugation.
 ::: {.proof}
-Because $N$ is normal, $gng^{-1}\in N$ for every $g\in G$ and $n\in N$. Hence $g\cdot n:=gng^{-1}$ defines a $G$-action on $N$.
+For \(g\in G\) and \(x\in N\), define \(g\cdot x=gxg^{-1}\). Because \(N\trianglelefteq G\), one has \(gxg^{-1}\in N\), so this is a well-defined action on \(N\).
 :::
 
-<1>2. Every non-singleton orbit has cardinality divisible by $p$.
+<1>2. The fixed-point set for this action is exactly \(N\cap Z(G)\).
 ::: {.proof}
-For $n\in N$, orbit-stabilizer gives $|G\cdot n|=[G:C_G(n)]$. Since $G$ is a $p$-group, each orbit size is a power of $p$; hence every orbit of size greater than $1$ has size divisible by $p$.
-:::
-
-<1>3. The fixed points are exactly $N\cap Z(G)$.
-::: {.proof}
-An element $n\in N$ is fixed by every $g\in G$ exactly when $gng^{-1}=n$ for every $g$, equivalently when $n\in Z(G)$. Thus $N^G=N\cap Z(G)$.
-:::
-
-<1>4. The cardinality of $N\cap Z(G)$ is divisible by $p$.
-::: {.proof}
-Partition $N$ into conjugation orbits. By <1>2 and <1>3,
+An element \(x\in N\) is fixed by every \(g\in G\) precisely when
 \[
-|N|=|N\cap Z(G)|+\sum_i |\mathcal O_i|,
+gxg^{-1}=x\qquad\text{for all }g\in G,
 \]
-where every $\mathcal O_i$ is a non-singleton orbit and therefore has size divisible by $p$. Since $N$ is a nontrivial subgroup of a finite $p$-group, $p\mid |N|$. Hence
-\[
-|N\cap Z(G)|\equiv |N|\equiv0\pmod p.
-\]
+which is equivalent to \(x\in Z(G)\). Since already \(x\in N\), the fixed points are exactly \(N\cap Z(G)\).
 :::
 
-<1>5. Therefore $N\cap Z(G)$ is nontrivial.
+<1>3. Every non-fixed orbit has cardinality divisible by \(p\).
 ::: {.proof}
-The identity lies in $N\cap Z(G)$. By <1>4 its cardinality is divisible by $p$, so it cannot have cardinality $1$. Hence $N\cap Z(G)\neq\{1\}$.
+For \(x\in N\), orbit-stabilizer gives
+\[
+|G\cdot x|=[G:C_G(x)].
+\]
+Since \(G\) is a finite \(p\)-group, every subgroup index is a power of \(p\). If \(x\) is not fixed, then \(C_G(x)\neq G\), so \([G:C_G(x)]\) is a positive power of \(p\), hence divisible by \(p\).
+:::
+
+<1>4. Therefore
+\[
+|N|\equiv |N\cap Z(G)|\pmod p.
+\]
+::: {.proof}
+Partition \(N\) into its \(G\)-orbits. By <1>2, the fixed points contribute \(|N\cap Z(G)|\) singleton orbits. By <1>3, every remaining orbit has size divisible by \(p\). Summing the orbit sizes gives the congruence.
+:::
+
+<1>5. The integer \(|N\cap Z(G)|\) is divisible by \(p\).
+::: {.proof}
+Because \(N\) is a nontrivial subgroup of the finite \(p\)-group \(G\), its order is \(p^a\) for some \(a\ge1\); hence \(p\mid |N|\). Apply <1>4.
+:::
+
+<1>6. Hence \(N\cap Z(G)\neq1\).
+::: {.proof}
+The subgroup \(N\cap Z(G)\) contains the identity, so its cardinality is positive. By <1>5 it is divisible by the prime \(p\), hence it has at least \(p>1\) elements. Therefore it contains a nonidentity element.
 :::
 :::
