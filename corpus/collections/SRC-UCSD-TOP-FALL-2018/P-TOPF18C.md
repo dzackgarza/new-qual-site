@@ -62,7 +62,7 @@ The tensor contribution $H_3(Y)\otimes H_1(\mathbb{RP}^2)$ is $\mathbb Z/2$ in d
 $$
 \operatorname{Tor}(\mathbb Z/6,\mathbb Z/2)\cong\mathbb Z/2
 $$
-contributes in degree $5$. The remaining nonzero tensor terms are the obvious $H_0$, $H_1$, and $H_3$ groups.
+contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z$ in degree $0$, $H_0(Y)\otimes H_1(\mathbb{RP}^2)\cong\mathbb Z/2$ in degree $1$, and $H_3(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z/6$ in degree $3$.
 :::
 
 <1>4. If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
