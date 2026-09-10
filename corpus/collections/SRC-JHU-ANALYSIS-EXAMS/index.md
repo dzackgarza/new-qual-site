@@ -111,34 +111,56 @@ source:
     - P-8XT39
   - name: Qualifying Exam - Analysis - Fall 2014 (p. 14)
     problems:
-    - P-8XT04
-    - P-MFYGZ
-    - P-OEFYN
-    - P-8XT05
+    - id: P-8XT04
+      comment: Problem 1
+    - id: P-MFYGZ
+      comment: Problem 2
+    - id: P-OEFYN
+      comment: Problem 3
+    - id: P-8XT05
+      comment: Problem 4
     - id: P-JHUFA14CA5
       comment: Problem 5
-    - P-8XT06
-    - P-8XT07
-    - P-G62KK
+    - id: P-8XT06
+      comment: Problem 6
+    - id: P-8XT07
+      comment: Problem 7
   - name: QUALIFYING EXAM - ANALYSIS - SPRING 2014 (p. 15)
     problems:
-    - P-8XT27
-    - P-4NYI7
-    - P-8XT28
-    - P-MSHRB
-    - P-8XT29
-    - P-8XT30
-    - P-8XT31
-    - P-8XT32
+    - id: P-G62KK
+      comment: Problem 1 (tail-supremum proof)
+    - id: P-8XT02
+      comment: Problem 1 (tail-set proof of the same source question)
+    - id: P-PGDPX
+      comment: Problem 2
+    - id: P-8XT03
+      comment: Problem 3
+    - id: P-YP3XF
+      comment: Problem 4
+    - id: P-Y3MQA
+      comment: Problem 5
+    - id: P-OZXQA
+      comment: Problem 6
+    - id: P-2AO23
+      comment: Problem 7
+    - id: P-8XT32
+      comment: Problem 8
   - name: QUALIFYING EXAM - ANALYSIS - FALL 2013 (p. 16)
     problems:
-    - P-8XT02
-    - P-PGDPX
-    - P-8XT03
-    - P-YP3XF
-    - P-Y3MQA
-    - P-OZXQA
-    - P-2AO23
+    - id: P-8XT27
+      comment: Problem 1
+    - id: P-4NYI7
+      comment: Problem 2
+    - id: P-8XT28
+      comment: Problem 3
+    - id: P-MSHRB
+      comment: Problem 4
+    - id: P-8XT29
+      comment: Problem 5
+    - id: P-8XT30
+      comment: Problem 6
+    - id: P-8XT31
+      comment: Problem 7
   - name: Qualifying Exam - Analysis, May, 2013 (pp. 17–18)
     problems:
     - P-8XT22
