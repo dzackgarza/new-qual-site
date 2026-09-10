@@ -104,14 +104,6 @@ of public mathematical remarks.
 - **Uncertainty:** the local inconsistencies are verified; `SRC-UNSORTED-COMPLEX-ANALYSIS` supplies no independent provenance for the card.
 - **Repair:** recover the originating source or notes and normalize all coefficient/index variables from that source before attaching a proof.
 
-### E-XIT36 omits the series sign in its summation-by-parts task
-
-- **Object and need:** `E-XIT36`; the card says “Use summation by parts to show that $\sin(n)/n$ converges.”
-- **Observed evidence:** $\sin(n)/n$ is a sequence, whose convergence to $0$ is immediate and does not use summation by parts. The natural summation-by-parts problem is convergence of the series $\sum_{n\ge1}\sin(n)/n$, but the summation sign is absent from the card.
-- **Impact and owner:** as written, the requested method does not match the mathematical assertion. Adding a summation sign would materially change the statement and therefore needs source support.
-- **Uncertainty:** the mismatch is verified locally; the card appears only in the unsorted compilation and no originating source has been identified.
-- **Repair:** recover the source and determine whether the intended object was the series $\sum \sin(n)/n$ before authoring a solution.
-
 ### P-6YHN7 is false as written in the unsorted complex-analysis compilation
 
 - **Object and need:** `P-6YHN7`; the card assumes holomorphic maps $f,g:\mathbb D\to\Omega$ with $f$ injective and $f(0)=g(0)$ and asks to prove $g(r\mathbb D)\subseteq f(r\mathbb D)$ for every $0<r<1$.
