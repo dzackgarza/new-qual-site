@@ -22,6 +22,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually compared the full-sequence almost-everywhere assertion with May 2006 problem 12 on PDF page 41."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Made the countable-threshold exceptional sets explicit in both Borel-Cantelli applications and gave exact constants for the between-squares oscillation bound."
 ---
 
 ::: {.problem}
@@ -52,7 +60,11 @@ Hence, for every $\varepsilon>0$, Chebyshev gives
 \sum_{k=1}^\infty m\{|S_{k^2}|>\varepsilon\}
 \le \frac1{\varepsilon^2}\sum_{k=1}^\infty\|S_{k^2}\|_2^2<\infty.
 \]
-By Borel--Cantelli, $S_{k^2}(x)\to0$ for almost every $x$.
+Apply Borel–Cantelli for each of the countably many
+thresholds $\varepsilon=1/j$, $j\geq1$ [@Fol13]. Outside
+the union of their null exceptional sets, each threshold
+is exceeded only finitely often. Therefore
+$S_{k^2}(x)\to0$ for almost every $x$.
 :::
 
 <1>2. The oscillation between consecutive squares tends to $0$ almost everywhere.
@@ -66,13 +78,14 @@ S_n-S_m
 with the two sums orthogonal. Therefore
 \[
 \|S_n-S_m\|_2^2
-=m\left(\frac1n-\frac1m\right)^2+\frac{n-m}{n^2}.
+=m\left(\frac1n-\frac1m\right)^2+\frac{n-m}{n^2}
+=\frac{n-m}{nm}.
 \]
-Since $n-m\le2k+1$, $m=k^2$, and $n\ge k^2$, there is an absolute constant $C$ such that
+Since $n-m\leq2k+1\leq3k$, $m=k^2$, and $n\geq k^2$, it follows that
 \[
-\|S_n-S_{k^2}\|_2^2\le\frac{C}{k^3}
+\|S_n-S_{k^2}\|_2^2\leq\frac{3}{k^3}
 \]
-for all sufficiently large $k$ and all $k^2<n\le(k+1)^2$.
+for every $k\geq1$ and $k^2<n\leq(k+1)^2$.
 
 For $\varepsilon>0$, a union bound and Chebyshev give
 \[
@@ -80,10 +93,13 @@ For $\varepsilon>0$, a union bound and Chebyshev give
 m\left\{\max_{k^2<n\le(k+1)^2}|S_n-S_{k^2}|>\varepsilon\right\}
 &\le\sum_{n=k^2+1}^{(k+1)^2}m\{|S_n-S_{k^2}|>\varepsilon\}\\
 &\le\frac1{\varepsilon^2}\sum_{n=k^2+1}^{(k+1)^2}\|S_n-S_{k^2}\|_2^2\\
-&\le\frac{C'}{\varepsilon^2k^2},
+&\le\frac{9}{\varepsilon^2k^2},
 \end{aligned}
 \]
-because the block contains $2k+1$ indices. The right-hand side is summable in $k$. Another application of Borel--Cantelli yields
+because the block contains $2k+1\leq3k$ indices. The
+right-hand side is summable in $k$. Applying Borel–Cantelli
+for each $\varepsilon=1/j$, $j\geq1$, and taking the
+countable union of the resulting null exceptional sets gives
 \[
 \max_{k^2<n\le(k+1)^2}|S_n(x)-S_{k^2}(x)|\longrightarrow0
 \]
