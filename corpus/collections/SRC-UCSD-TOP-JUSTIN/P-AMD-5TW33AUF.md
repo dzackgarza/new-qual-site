@@ -57,7 +57,7 @@ Determine the topological degree $\deg(p)$.
 <2>2. At each preimage $\zeta_k$, $f_n'(\zeta_k) = n \zeta_k^{n-1} \neq 0$. Since $f_n$ is complex holomorphic, its Jacobian determinant as a real map $\mathbb{R}^2 \to \mathbb{R}^2$ is $|f_n'(z)|^2 > 0$, so each local degree is $\deg_{\zeta_k}(f_n) = +1$.
 <2>3. By the regular value formula, the degree equals the sum of local degrees over the preimage of any regular value: $\deg(f_n) = \sum_{k=0}^{n-1} (+1) = n$.
 
-<2>4. Method 2 (Suspension / Winding number): On the equator $S^1 \subset \mathbb{C}$, $f_n(e^{i\theta}) = e^{in\theta}$ winds $n$ times, so $\deg(f_n|_{S^1}) = n$. Viewing $\widehat{\mathbb{C}} \cong \Sigma S^1$, the suspension isomorphism $\widetilde{H}_{k+1}(\Sigma X) \cong \widetilde{H}_k(X)$ is natural, hence $\deg(\Sigma g) = \deg(g) = n$.
+<2>4. Equivalently, one may first homotope $f_n$ through maps fixing $0$ and $\infty$ to a latitude-preserving model whose restriction to each nonpolar latitude circle is $e^{i\theta}\mapsto e^{in\theta}$. That latitude-preserving model is the suspension of the degree-$n$ circle map, so naturality of the suspension isomorphism again gives degree $n$. The local-degree computation in <2>1--<2>3 already proves the result without this additional homotopy.
 :::
 
 <1>5. Conclusion.
