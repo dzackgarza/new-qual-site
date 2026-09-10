@@ -122,14 +122,6 @@ of public mathematical remarks.
 - **Uncertainty:** the malformed local statement is verified; the unsorted collection supplies no independent provenance.
 - **Repair:** recover the originating source and restore the intended variable/parameter before attaching a solution.
 
-### P-DKYVD uses different pole variables in its hypothesis and integrand
-
-- **Object and need:** `P-DKYVD`; the hypothesis assumes $|a|<r<|b|$, but the integrand is $((z-\alpha)(z-\beta))^{-1}$ and the claimed value is $2\pi i/(\alpha-\beta)$.
-- **Observed evidence:** no relation between $(a,b)$ and $(\alpha,\beta)$ is stated. Thus the hypothesis does not determine which of the actual poles $\alpha,\beta$ lies inside the circle $|z|=r$.
-- **Impact and owner:** the Laurent-series/residue conclusion requires a source-supported identification such as $a=\alpha$, $b=\beta$ (or the reverse). Without it the statement is underdetermined.
-- **Uncertainty:** the variable mismatch is verified locally; no independent provenance is attached through the unsorted collection.
-- **Repair:** recover the source and restore consistent pole notation before authoring the proof.
-
 ### P-DEJGY(b)(ii) omits the second level-set value
 
 - **Object and need:** `P-DEJGY`; part (b)(ii) asks for the angles of intersection between the level curves `Re(f)=0` and `Im(f)` for $f(z)=z^2$.
