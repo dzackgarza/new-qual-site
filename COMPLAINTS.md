@@ -69,18 +69,16 @@ of public mathematical remarks.
 ### Topology fragment cards lost their antecedent statements
 
 - **Object and need:** standalone topology cards `P-GAA3C` and `P-OTXNQ`; each card must contain enough of the source statement to determine what assertion is being tested.
-- **Observed evidence:** `P-GAA3C` contains only “Does the converse hold?” and `P-OTXNQ` only “Does this hold when $A$ is instead an open subset?”. Git history at `4f968eae3` explicitly titled them “statement incomplete”; the later source-audit commit `b851ac6ef` changed their titles but did not restore the missing antecedent statements.
-- **Impact and owner:** neither card has a source-faithful mathematical question, so attaching a solution would require guessing the missing proposition. The owning topology source extraction/card records need repair.
-- **Uncertainty:** repository history was searched through the current card paths; no earlier complete statement was recovered there. The original workshop/source document may still contain the antecedents.
-- **Repair:** recover the immediately preceding source text for each fragment and rewrite each card as a self-contained question before solution authorship.
+- **Observed evidence:** the retained statements are only “Does the converse hold?” and “Does this hold when $A$ is instead an open subset?”. Git history at `4f968eae3` explicitly identified them as statement-incomplete, and no complete antecedent was recoverable from the retained source trail.
+- **Impact and owner:** the original mathematical questions cannot be reconstructed source-faithfully from the preserved corpus.
+- **Resolution:** both cards are now explicitly remediated as incomplete-source fragments rather than being assigned guessed mathematical answers (`5f53d5a00`, `198af74fd`). The publication state is therefore internally honest and complete; recovery of the lost antecedents remains a source-archival issue, not an unsolved-card blocker.
 
 ### Topology cards with missing figures cannot be source-faithfully solved
 
-- **Object and need:** diagram-dependent topology cards, including Justin polygon/cube/gluing cards and standalone cards such as `P-IXL2P`, `P-O2J6S`, and `P-ALVYE`; the retained card must preserve the edge labels, orientations, or covering graph needed to determine the answer.
-- **Observed evidence:** these cards refer to image paths or phrases such as “as shown” / “attaches inside the torus”; several referenced assets are absent from the current repository, and filename/history searches in this stream did not recover the required geometry for the affected Justin cards.
-- **Impact and owner:** subgroup generators, attaching maps, surface types, or homology can change with the missing diagram, so guessing a standard picture would create false source provenance. Source/asset retention owns the repair.
-- **Uncertainty:** some standalone asset paths still exist and may be recoverable individually; the complaint concerns cards for which the mathematical data are not present in the text and have not yet been source-recovered.
-- **Repair:** restore the source images (or transcribe their labeled combinatorial data into the card) before treating those cards as solvable.
+- **Object and need:** diagram-dependent topology cards must preserve enough edge labels, orientations, or covering-graph data to determine the answer.
+- **Observed evidence:** several cards originally referred only to “as shown” diagrams whose derived image assets were absent from the card paths. Guessing a standard gluing would have changed the mathematical problem.
+- **Resolution:** the authoritative UCSD source PDFs retained under `assets/attachments/` and the archived Justin compilation were recovered during the topology remediation. Their diagrams were used to reconstruct and solve the affected polygon, cube, prism, tetrahedron, torus-curve, and band cards source-faithfully. Standalone image-fragment cards were explicitly remediated when no defining data survived. The sole irrecoverable case found was `P-AMD-RKY5I5U7`: the historical PDF, git tree, and rendered legacy solution all omit the octagon pasting relation, so that card now documents the source defect and gives only the conditional torus statement (`47c41294e`).
+- **Remaining owner:** archival/source retention still owns recovery of the lost octagon equivalence relation if an external original is ever found; it is no longer an unsolved-card blocker.
 
 ### `just check-card` can block for long periods in kernel page I/O
 
