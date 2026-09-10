@@ -80,6 +80,14 @@ of public mathematical remarks.
 - **Resolution:** the authoritative UCSD source PDFs retained under `assets/attachments/` and the archived Justin compilation were recovered during the topology remediation. Their diagrams were used to reconstruct and solve the affected polygon, cube, prism, tetrahedron, torus-curve, and band cards source-faithfully. Standalone image-fragment cards were explicitly remediated when no defining data survived. The sole irrecoverable case found was `P-AMD-RKY5I5U7`: the historical PDF, git tree, and rendered legacy solution all omit the octagon pasting relation, so that card now documents the source defect and gives only the conditional torus statement (`47c41294e`).
 - **Remaining owner:** archival/source retention still owns recovery of the lost octagon equivalence relation if an external original is ever found; it is no longer an unsolved-card blocker.
 
+### Parallel audit worker launch can fail with `UNIDENTIFIED_CALLER`
+
+- **Object and need:** read-only parallel quality review through the Chat On Steroids worker launcher; the prime conversation should be able to spawn workers after normal connector activity has already been established.
+- **Observed evidence:** on 2026-09-10, two consecutive `agents spawn` calls from the active topology repository conversation failed before creating any worker with `UNIDENTIFIED_CALLER`, stating that the app could not prove which ChatGPT conversation originated the call. Ordinary repository commands through the same connector continued to work.
+- **Impact and owner:** the failure prevented parallel mathematical review and forced the audit back onto repository-native queues and serial inspection. This is connector/agent-routing infrastructure, not a corpus defect.
+- **Uncertainty:** verified twice consecutively in this conversation; no worker was created, and no repository state was changed by either attempt.
+- **Repair:** preserve the prime-conversation identity across connector calls or expose a deterministic reconnect/claim action before `agents spawn`.
+
 ### `just check-card` can block for long periods in kernel page I/O
 
 - **Object and need:** repeated card validation through the repository-authoritative `just check-card` command; validation should either complete or expose actionable progress/failure.
@@ -88,18 +96,14 @@ of public mathematical remarks.
 - **Uncertainty:** no logical validator failure was associated with these waits; the exact filesystem/cache cause was not diagnosed from the repository process state alone.
 - **Repair:** profile the authoring checker’s file-access pattern and reduce repeated corpus-wide reads, or emit progress sufficient to distinguish active validation from a hung process.
 
-### Several UCSD topology cards omit hypotheses needed for their stated conclusions
+### Several UCSD topology cards omitted hypotheses needed for their stated conclusions
 
-- **Object and need:** `P-TOPS02J`, `P-TOPS05E`, `P-TOPS17C`, and `P-UCTOP-SU11-6`; each card must state hypotheses under which the requested conclusion is actually true.
-- **Observed evidence:** `P-TOPS02J` claims a connected component of a covering space still covers all of `X`, which fails when `X` is disconnected. `P-TOPS05E` claims every compact nonorientable `3`-manifold has nonzero `H^1(-;\mathbb Z)`, but `\mathbb{RP}^2\times I` is a compact nonorientable counterexample with `H^1=0`. `P-TOPS17C` omits the base-circle contribution in the mapping-torus Wang sequence; taking `Y=*` gives `H_1(S^1)=\mathbb Z`, not `0`. `P-UCTOP-SU11-6` asserts a Whitehead-type conclusion for arbitrary spaces, whereas vanishing higher homotopy and free fundamental group only force the wedge-of-circles homotopy type under a CW/CW-type hypothesis.
-- **Impact and owner:** these cards cannot be source-faithfully marked solved as written without either changing the statements or proving a false assertion. The owning UCSD topology card/source records must be repaired first.
-- **Uncertainty:** the intended repairs are clear for the first three (`X` connected; closed/no-boundary hypothesis as appropriate; add the missing `\mathbb Z` mapping-torus summand). For `P-UCTOP-SU11-6`, the source may have implicitly assumed CW complexes; the retained card does not say so.
-- **Repair:** restore the missing connectedness/CW/closedness hypotheses or correct the mapping-torus formula on the problem cards, then attach proofs of the corrected statements.
+- **Object and need:** `P-TOPS02J`, `P-TOPS05E`, `P-TOPS17C`, and `P-UCTOP-SU11-6`; each card must distinguish the false printed statement from the corrected theorem rather than silently adding hypotheses.
+- **Observed evidence:** `P-TOPS02J` fails for disconnected bases; `P-TOPS05E` fails for compact manifolds with boundary, e.g. `\mathbb{RP}^2\times I`; `P-TOPS17C` omits the base-circle term in the mapping-torus Wang sequence; `P-UCTOP-SU11-6` needs CW/CW-type hypotheses for the Whitehead conclusion.
+- **Resolution:** each card now records the defect explicitly, gives a counterexample or corrected statement, and proves the valid theorem (`4a037f592`, `0352526ad`, `a36155e5e`, `bb9f89c42`). These are no longer unsolved-card blockers; any remaining issue is source provenance about what the original examiner intended.
 
-### `P-TOPS02D` topological-group covering statement lacks the data needed for a lift
+### `P-TOPS02D` topological-group covering statement lacked the data needed for a lift
 
-- **Object and need:** `P-TOPS02D(b)`; constructing a multiplication on a covering space of a topological group requires a chosen point over the identity and the lifting hypotheses needed to lift multiplication coherently.
-- **Observed evidence:** the retained statement asks, for an arbitrary covering `p:E\to X` of a topological group, for a multiplication `m:E\times E\to E` satisfying `pm=\mu(p\times p)` but does not assume connectedness of the relevant component or choose an identity lift. Standard lifting constructions of a covering-group structure require those choices/hypotheses.
-- **Impact and owner:** parts (a) and (c) are routine, but part (b) is under-specified, so the multipart card should not be marked complete by silently imposing a preferred component or identity element.
-- **Uncertainty:** the original exam may have been using the conventional connected based-cover setting implicitly; that convention is not preserved in the extracted card.
-- **Repair:** recover the source convention or amend part (b) to a connected based covering with a chosen lift of the identity, then state the resulting covering-group structure theorem precisely.
+- **Object and need:** `P-TOPS02D(b)` asks for a multiplication on an arbitrary covering of a topological group without the connected based-cover hypotheses needed for a covering-group lift.
+- **Observed evidence:** the retained statement has no chosen point over the identity and no connectedness hypothesis on the relevant covering component.
+- **Resolution:** the card now proves the valid parts, gives a concrete counterexample to the unrestricted claim, and states the corrected connected based-cover theorem instead of silently imposing missing data (`c3f9b86de`). This is no longer an unsolved-card blocker.
