@@ -107,3 +107,11 @@ of public mathematical remarks.
 - **Object and need:** `P-TOPS02D(b)` asks for a multiplication on an arbitrary covering of a topological group without the connected based-cover hypotheses needed for a covering-group lift.
 - **Observed evidence:** the retained statement has no chosen point over the identity and no connectedness hypothesis on the relevant covering component.
 - **Resolution:** the card now proves the valid parts, gives a concrete counterexample to the unrestricted claim, and states the corrected connected based-cover theorem instead of silently imposing missing data (`c3f9b86de`). This is no longer an unsolved-card blocker.
+
+### The advertised `just vale` prose-lint recipe has no available `vale` executable
+
+- **Object and need:** repository prose-quality auditing through the documented `just vale` recipe; the recipe should be runnable in the supported authoring environment when reviewing solution prose for handwaving and weak reasoning.
+- **Observed evidence:** on 2026-09-10, a scoped topology invocation using the recipe's underlying command failed immediately with `xargs: vale: No such file or directory`. `just --show vale` confirms the recipe delegates directly to `vale --config .vale.ini ...`, so there is no repository-managed fallback or bootstrap in the recipe itself.
+- **Impact and owner:** the intended prose lint could not be run on the topology scope; the audit had to fall back to targeted text scans and direct proof review. This is tooling/environment-owned rather than a card defect.
+- **Uncertainty:** verified in the active topology worktree; no attempt was made to install additional software because repository authoring should not mutate the host toolchain implicitly.
+- **Repair:** either provision `vale` in the supported development environment or make the recipe bootstrap/pin the required executable in the same way other repository tooling is invoked through `uv` or an equivalent managed runner.
