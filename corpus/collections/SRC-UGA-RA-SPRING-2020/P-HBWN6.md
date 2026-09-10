@@ -12,6 +12,15 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 3 of the UGA Spring 2020 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Reordered the argument so measurability and Tonelli are established before any iterated-integral computation.
 ---
 
 Let $f, g\in L^1(\RR)$. 
@@ -39,95 +48,67 @@ Use Tonelli.
 - See Folland's Real Analysis II, p. 68 for a discussion of using Fubini *and* Tonelli.
 :::
 
-:::{.solution}
-- If these norms can be computed via iterated integrals, we have
+::: solution
+<1>1. Prove that $H$ is measurable.
+::: proof
+The maps
 \[
-\norm{f\ast g}_1 
-&\da \int_\RR \abs{(f\ast g)(x)} \dx \\
-&\da \int_\RR \abs{\int_\RR H(x, y) \dy} \dx \\
-&\da \int_\RR \abs{\int_\RR f(y)g(x-y) \dy} \dx \\
-&\leq \int_\RR \int_\RR \abs{f(y) g(x-y)} \dx \dy \\
-&\da \int_\RR \int_\RR \abs{H(x ,y)}\dx \dy \\
-&\da \int_{\RR^2} \abs{H} \dmu_{\RR^2} \\
-&\da \norm{H}_{L^1(\RR^2)}
-.\]
-  So it suffices to show $\norm{H}_1 < \infty$.
-
-- A preliminary computation, the validity of which we will show afterward:
+(x,y)\mapsto y
+\qquad\text{and}\qquad
+(x,y)\mapsto x-y
+\]
+are continuous. Since $f$ and $g$ are measurable, the functions
 \[
-\norm{H}_1
-&\da \norm{H}_{L^1(\RR^2)} \\
-&= \int _\RR \qty{ \int_\RR \abs{f(y)g(x-y)}  \, dy } \, dx && \text{Tonelli} \\ 
-&= \int _\RR \qty{ \int_\RR \abs{f(y)g(x-y)}  \, dx} \, dy && \text{Tonelli} \\
-&= \int _\RR \qty{ \int_\RR \abs{f(y)g(t)}  \, dt} \, dy && \text{setting } t=x-y, \,dt = - dx \\
-&= \int _\RR \qty{ \int_\RR \abs{f(y)}\cdot \abs{g(t)}  \, dt}\, dy \\
-&= \int _\RR \abs{f(y)} \cdot \qty{ \int_\RR \abs{g(t)}  \, dt}\, dy \\
-&\definedas \int _\RR \abs{f(y)} \cdot \norm{g}_1 \,dy \\
-&= \norm{g}_1 \int _\RR \abs{f(y)} \,dy &&\text{the norm is a constant} \\
-&\definedas \norm{g}_1 \norm{f}_1  \\
-&< \infty && \text{by assumption}
-.\]
-
-- We've used Tonelli twice: to equate the integral to the iterated integral, and to switch the order of integration, so it remains to show the hypothesis of Tonelli are fulfilled.
-
-
-:::{.claim}
-$H$ is measurable on $\RR^2$:
+(x,y)\mapsto f(y)
+\qquad\text{and}\qquad
+(x,y)\mapsto g(x-y)
+\]
+are measurable. Their product
+\[
+H(x,y)=f(y)g(x-y)
+\]
+is therefore measurable on $\mathbb R^2$.
 :::
 
-
-:::{.proof}
-\envlist
-
-- It suffices to show $\tilde f(x, y) \definedas f(y)$ and $\tilde g(x, y) \definedas g(x-y)$ are both measurable on $\RR^2$. 
-  - Then use that products of measurable functions are measurable.
-  
--  $f \in L^1$ by assumption, and $L^1$ functions are measurable by definition.
-- The function $(x, y) \mapsto g(x-y)$ is measurable on $\RR^2$:
-  - $g$ is measurable on $\RR$ by assumption, so the cylinder function $G(x, y) \da g(x)$ on $\RR^2$ is measurable (result from course).
-  - Define a linear transformation 
-  \[
-  T \da 
-  \begin{bmatrix}
-  1 & -1 
-  \\
-  0 & 1
-  \end{bmatrix}
-  \in \GL_2(\RR)
-  && \implies \,\,\,
-  T
-  \begin{bmatrix}
-   x 
-  \\
-   y 
-  \end{bmatrix}
-  =
-  \begin{bmatrix}
-  x-y   
-  \\
-  y  
-  \end{bmatrix}
-  ,\]
-  and linear functions are measurable.
-  - Write
-  \[
-  \tilde g(x-y) \da G(x-y, y) \da (G\circ T)(x, y)
-  ,\]
-  and compositions of measurable functions are measurable.
-
+<1>2. Prove that $H\in L^1(\mathbb R^2)$.
+::: proof
+Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
+\[
+\begin{aligned}
+\int_{\mathbb R^2}|H(x,y)|\,dx\,dy
+&=\int_{\mathbb R}|f(y)|
+  \left(\int_{\mathbb R}|g(x-y)|\,dx\right)dy\\
+&=\int_{\mathbb R}|f(y)|\,\|g\|_1\,dy\\
+&=\|f\|_1\|g\|_1<\infty.
+\end{aligned}
+\]
+Hence $H\in L^1(\mathbb R^2)$.
 :::
 
-
-
-- Apply **Tonelli** to $\abs{H}$
-  - $H$ measurable implies $\abs{H}$ is measurable.
-  - $\abs{H}$ is non-negative.
-  - So the iterated integrals are equal in the extended sense
-  - The calculation shows the iterated integral is finite, so $\int \abs{H}$ is finite and $H$ is thus integrable on $\RR^2$.
-
-> Note: Fubini is not needed, since we're not calculating the actual integral, just showing $H$ is integrable.
-
-
+<1>3. Deduce the $L^1$ convolution bound.
+::: proof
+By Fubini's theorem, for almost every $x$ the slice $y\mapsto H(x,y)$ is integrable, so
+\[
+(f*g)(x)=\int_{\mathbb R}H(x,y)\,dy
+\]
+is defined for almost every $x$. Moreover,
+\[
+|(f*g)(x)|
+\le \int_{\mathbb R}|H(x,y)|\,dy.
+\]
+Integrating in $x$ and using Tonelli,
+\[
+\begin{aligned}
+\|f*g\|_1
+&\le \int_{\mathbb R}\int_{\mathbb R}|H(x,y)|\,dy\,dx\\
+&=\|f\|_1\|g\|_1.
+\end{aligned}
+\]
+Thus
+\[
+\boxed{f*g\in L^1(\mathbb R),\qquad
+\|f*g\|_1\le\|f\|_1\|g\|_1.}
+\]
 :::
-
+:::
 
