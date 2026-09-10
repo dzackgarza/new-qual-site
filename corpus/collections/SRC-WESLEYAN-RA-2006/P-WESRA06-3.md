@@ -5,7 +5,7 @@ kind: problem
 title: Limsup sets, Borel--Cantelli, counting functions, and decimal digits
 classification:
   areas: [real-analysis]
-  topics: [Measure Theory, Probability]
+  topics: [Measure Theory]
 relations: []
 review: draft
 audit:
