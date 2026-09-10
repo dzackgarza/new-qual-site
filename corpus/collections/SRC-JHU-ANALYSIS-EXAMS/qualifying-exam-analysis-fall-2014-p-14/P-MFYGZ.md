@@ -22,6 +22,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Compared the uncentered maximal function and dimension-dependent weak bound with Fall 2014 problem 2 on PDF page 14."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Supplied measurability of the superlevel set and corrected the strict sum estimate in the empty-family case, preserving the covering argument and its constant."
 ---
 
 2. Let $f \in L ^ { 1 } ( \mathbb { R } ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
@@ -45,6 +53,13 @@ Fix $\alpha>0$ and write
 \[
 E_\alpha:=\{x\in\mathbb R^d:M_f(x)>\alpha\}.
 \]
+Take the balls in the definition to be open. Then
+$E_\alpha$ is the union of all balls on which the average
+of $|f|$ exceeds $\alpha$: every point of such a ball has
+maximal function greater than $\alpha$, and the converse
+follows from the definition of supremum. Thus $E_\alpha$
+is open, in particular measurable. If it is empty, the
+required inequality is immediate; otherwise proceed below.
 For every $x\in E_\alpha$, by definition of $M_f(x)$ there is a ball $B_x$ containing $x$ such that
 \[
 \frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
@@ -81,7 +96,7 @@ For each selected ball,
 Since the $B_j$ are pairwise disjoint,
 \[
 \alpha\sum_j m(B_j)
-<\sum_j\int_{B_j}|f|
+\le\sum_j\int_{B_j}|f|
 \le\int_{\mathbb R^d}|f|
 =\|f\|_1.
 \]
