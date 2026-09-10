@@ -26,3 +26,31 @@ Show that the following limit exists:
 
 Use this to show that $f(z)$ must be constant.
 :::
+
+::: solution
+Let $|f(z)|\le M$ on $\mathbb C$. For $R>2\max\{|a|,|b|\}$,
+\[
+\left|
+\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz
+\right|
+\le
+2\pi R\frac{M}{(R-|a|)(R-|b|)}.
+\]
+The right-hand side tends to $0$ as $R\to\infty$, so the requested limit
+exists and equals $0$.
+
+For such $R$, the residue theorem gives
+\[
+\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz
+=2\pi i\left(
+\frac{f(a)}{a-b}+\frac{f(b)}{b-a}
+\right)
+=2\pi i\frac{f(a)-f(b)}{a-b}.
+\]
+The left-hand side tends to $0$, while the right-hand side is independent of
+$R$. Hence
+\[
+f(a)=f(b).
+\]
+Because $a\ne b$ were arbitrary, $f$ is constant.
+:::

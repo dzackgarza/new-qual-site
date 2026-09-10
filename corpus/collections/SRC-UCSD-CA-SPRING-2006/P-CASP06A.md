@@ -21,3 +21,48 @@ Show that
 
 (b) $\hat{K} \subset \hat{K}_c$.
 :::
+
+::: solution
+Because $K\subset\widehat K$, one direction in (a) is immediate:
+\[
+d(\widehat K,\mathbb C\setminus\Omega)
+\le d(K,\mathbb C\setminus\Omega).
+\]
+For the reverse inequality, fix $a\in\mathbb C\setminus\Omega$. The function
+\[
+f_a(z)=\frac1{z-a}
+\]
+is holomorphic on $\Omega$. Hence for every $z\in\widehat K$,
+\[
+\frac1{|z-a|}
+\le \sup_{w\in K}\frac1{|w-a|}
+=\frac1{d(a,K)}.
+\]
+Thus $|z-a|\ge d(a,K)$. Taking the infimum first over
+$z\in\widehat K$ and then over $a\notin\Omega$ gives
+\[
+d(\widehat K,\mathbb C\setminus\Omega)
+\ge d(K,\mathbb C\setminus\Omega),
+\]
+proving (a).
+
+For (b), suppose $z_0\notin\widehat K_c$. By planar convex separation there
+are $\theta\in\mathbb R$ and $c\in\mathbb R$ such that
+\[
+\operatorname{Re}(e^{-i\theta}z_0)>c
+\ge \sup_{w\in K}\operatorname{Re}(e^{-i\theta}w).
+\]
+For $n\ge1$ set
+\[
+F_n(z)=\exp(ne^{-i\theta}z).
+\]
+Then
+\[
+|F_n(z_0)|
+>\sup_{w\in K}|F_n(w)|.
+\]
+Since $F_n\in\mathcal O(\Omega)$, this shows $z_0\notin\widehat K$. Therefore
+\[
+\widehat K\subset\widehat K_c.
+\]
+:::
