@@ -292,3 +292,11 @@ of public mathematical remarks.
 - **Impact and owner:** the old title did not identify the mathematical task. The problem card owns the title repair.
 - **Uncertainty:** none; the retained source extraction contains the complete statement.
 - **Repair:** retitled the card to `Minimal faithful permutation degrees of the groups of order $8$` without changing the source-authored problem statement.
+
+### `P-PLFQZ` reversed the representation-dimension bound
+
+- **Object and need:** `P-PLFQZ` in `SRC-UW-ALG-2008`; the card must reproduce the source theorem before solution authorship.
+- **Observed evidence:** the retained UW 2008 exam says every irreducible $\mathbb CG$-module has dimension **at most** $\sqrt{|G|}$, while the card title and statement said **at least**. The latter is false for every nontrivial finite group because the trivial representation is irreducible of dimension $1$.
+- **Impact and owner:** the reversed inequality changes the theorem into a false statement. The problem card owns the source-faithful correction.
+- **Uncertainty:** none; the retained source extraction explicitly says `at most`.
+- **Repair:** corrected the title and statement to `at most`, recorded a source check, and supplied the regular-representation proof plus the sharp $S_3$ example.
