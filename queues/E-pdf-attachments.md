@@ -358,7 +358,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Algebra_Solutions.pdf](assets/attachments/extracted/Algebra_Solutions.md) (9243L, 16 problems) — UNL — alg-geom
 
-- [ ] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011
+- [x] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011 — disposition 2026-09-10: Chernov's solved Real Analysis problem collection, not a single exam sitting; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing an exam collection.
 
 - [ ] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011
 
@@ -380,9 +380,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 7 problems) — applied-algebra — Fall 19
 
-- [ ] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017
+- [x] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017 — disposition 2026-09-10: Xin Ma's derivative solution notes for TAMU Real Analysis qualifying exams, not an original exam source; already linked from `wiki/real-analysis/resources/solutions.md`, so no duplicate collection is warranted.
 
-- [ ] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017
+- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017 — disposition 2026-09-10: Jacob S. Townson's derivative solutions to University of Louisville analysis quals, not an original exam paper; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
 
 - [ ] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 12 problems) — complex-analysis
 
@@ -442,7 +442,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013
 
-- [ ] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom
+- [x] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom — disposition 2026-09-10: MAT 320 practice midterm/review sheet with solutions rather than a qualifying-exam sitting; already linked from `wiki/prelim/resources/references.md`, so no qual collection is appropriate.
 
 - [ ] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020
 
@@ -550,7 +550,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20
+- [x] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: Jonathan Mostovoy's partial solutions to Folland, a reference/solutions resource rather than an exam; already linked from `wiki/real-analysis/resources/solutions.md`. This PDF is byte-identical to `Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`), so no duplicate collection is needed.
 
 - [ ] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016
 
@@ -576,7 +576,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis
 
-- [ ] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20
+- [x] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: exact byte duplicate of `Folland_Real_Analysis_Solns.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`); already linked as a Real Analysis solutions resource, so do not create a second representation.
 
 - [ ] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013
 
