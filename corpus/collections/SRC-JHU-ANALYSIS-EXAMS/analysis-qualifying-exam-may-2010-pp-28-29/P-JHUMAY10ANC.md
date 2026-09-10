@@ -40,7 +40,7 @@ $$
 b) Show that H is a closed subspace of $L ^ { 2 } ( D )$ and hence is a Hilbert space.
 
 ::: solution
-Write $dA=dx\,dy$. We identify a holomorphic function
+Write $dA=dx\,dy$. We identify each function in $\mathcal H$
 with its almost-everywhere class in $L^2(D)$. This is
 injective: a continuous function nonzero at a point is
 bounded away from zero on a small disk of positive area,
