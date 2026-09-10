@@ -123,3 +123,11 @@ of public mathematical remarks.
 - **Impact and owner:** repository authoring must fall back to whole-file writes or lower-level text tools, increasing the chance of incidental edits. This is environment/tooling-owned, not corpus-owned.
 - **Uncertainty:** only this shell environment was tested; `apply_patch` may exist in other harnesses.
 - **Repair:** provide the patch helper consistently in repository shells, or document the supported narrow-edit command for this environment.
+
+### `P-MFVEZ` omits the orientation of the square boundary
+
+- **Object and need:** `P-MFVEZ` in `SRC-UGA-PRELIM-SPRING-2003`; a line integral around a closed curve requires an orientation, and Green's theorem uses the positive orientation convention.
+- **Observed evidence:** both `assets/attachments/extracted/grad_prelim_Spring03.md` and the authored card say only that $C$ is the boundary of the unit square in the first quadrant. They do not state clockwise or counterclockwise orientation. Direct computation gives $1/2$ counterclockwise and $-1/2$ clockwise.
+- **Impact and owner:** the source question has two possible numerical answers unless the usual positive-orientation convention is understood implicitly. The card solution now states both values and performs both requested computations for the positive orientation.
+- **Uncertainty:** the original PDF may have conveyed an arrow graphically that the Markdown extraction lost; this was not established from the textual extraction.
+- **Repair:** preserve the source wording, but retain the orientation caveat in the mathematical solution unless the original PDF is visually checked and an orientation mark is confirmed.
