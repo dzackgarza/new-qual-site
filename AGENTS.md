@@ -645,6 +645,87 @@ All authoring requires a live claim against the reconciled queue —
 batch-committing cards authored off-queue is prohibited. Reconcile again at
 release so the queue the next agent reads reflects the work just delivered.
 
+# Worktrees
+
+Streams work in separate worktrees under `.worktrees/`. A worktree is a second
+checkout of authored content. It is not a second copy of the environment, and
+nothing `uv` can rebuild may exist once per worktree: one virtualenv and one
+package cache serve every stream, referenced read-only.
+
+The shared environment is the main checkout's `.venv`, created there once with
+`uv sync --group dev`. A worktree points at it and never writes to it:
+
+```bash
+main=$(git worktree list --porcelain | head -1 | cut -d' ' -f2)
+export UV_PROJECT_ENVIRONMENT="$main/.venv"
+export UV_NO_SYNC=1
+export PYTHONPATH="$PWD/tools"
+```
+
+`UV_NO_SYNC` is what makes the reference read-only. Without it `uv run` resyncs
+the environment it is pointed at and reinstalls `qualc` against whichever
+worktree ran last, so two streams silently fight over one editable install.
+`PYTHONPATH` is what keeps it correct: it puts the worktree's own `tools/qualc`
+ahead of the shared environment's editable install of the main checkout's, so a
+stream runs the compiler it is editing rather than another stream's. Leave
+`UV_CACHE_DIR` at its default — one cache outside the repository, which every
+worktree hardlinks from. Never set a per-worktree cache and never pass
+`--link-mode=copy`.
+
+Do not create a `.venv` inside a worktree. Do not run `uv sync`, `uv add`, or
+`uv pip` from one: a dependency change belongs to the main checkout, where every
+stream picks it up at once. Thirty-eight per-worktree copies filled the volume on
+2026-09-10, and a full volume presents as killed processes and dying exec
+sessions rather than as a disk error, so it reads as worker misbehaviour for
+hours before anyone runs `df`.
+
+## Retire the worktree you created
+
+The agent that creates a worktree retires it once that unit is integrated:
+
+```bash
+git worktree remove .worktrees/<name>
+git worktree prune
+```
+
+A stale entry in `git worktree list` is a retirement debt. It is owed by the
+agent that opened it, it survives that agent's session, and recording it is not
+paying it. Retire the worktree in the same work that integrates its unit; a
+worktree left behind is a checkout of the whole corpus that no one will
+recognise as theirs later.
+
+## Establishing that a worktree you did not create is safe to retire
+
+Being unrecognised is not evidence that a worktree is debris. Another stream's
+work is live until three readings say otherwise, and all three must be taken
+immediately before the removal, never carried over from an earlier survey:
+
+```bash
+git -C PATH --no-optional-locks status --short                     # 1. clean
+git merge-base --is-ancestor "$(git -C PATH rev-parse HEAD)" HEAD  # 2. reachable
+pgrep -a -f PATH                                                   # 3. no process
+```
+
+Reading 1 fails on any output at all — staged or unstaged, tracked or untracked.
+An uncommitted card is somebody's unbanked authoring, and a `.orig` file beside
+it is the evidence of a merge they are still resolving.
+
+Reading 2 asks whether every commit on that worktree's branch is already in
+`main`; run it from the main checkout, whose `HEAD` is the reference. A non-zero
+exit means the worktree holds commits that exist nowhere else, whatever the age
+of its branch name.
+
+Reading 3 discards the checking shell's own PID. `pgrep -f` matches on
+substring, so a probe for `sp19` also matches `sp19-audit2`: read the command
+lines it prints rather than counting them.
+
+Fail any one of the three and leave that worktree alone; report it with its three
+readings so the stream that owns it can retire it. The readings expire the moment
+you take them — the fleet creates and retires worktrees while you read — so
+re-take them for each worktree at the point of removal rather than acting on a
+list. Worktrees outside the repository are outside this rule; report them and do
+not remove them.
+
 # Running checks
 
 For prose-only changes, including authored mathematical solutions, inspect the
