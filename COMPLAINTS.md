@@ -152,6 +152,8 @@ of public mathematical remarks.
 
 ### A read-only connector command was rejected before execution
 
+- **JHU final measurement, 2026-09-10:** a read-only request that invoked `qualc.authoring unsolved`, captured its TSV output, and counted rows was rejected before execution with the safety-status message. The separate `just unsolved-in SRC-JHU-ANALYSIS-EXAMS` request returned exit zero and the full ordered list, beginning with `P-O3LYK`. This is another request-screening failure, not a corpus-parser failure; its cause was not supplied.
+
 - **JHU continuation, 2026-09-10:** combined read-only requests for the live `SRC-JHU-ANALYSIS-EXAMS` unsolved list and `P-RGBUN` source context, and later for `P-8XT21` parsing and diff review, were rejected with the safety-status message before execution. Separate repository-tool and Git invocations returned the requested results. These were connector-screening interruptions, not failed corpus checks; no specific reason for rejection was supplied. Separately, this author's full-context patch for `P-7QJS2` failed because the copied old conclusion inserted an extra word absent from the file; a fresh read confirmed the file was unchanged, and corrected narrow hunks succeeded. That context error was not a concurrent edit.
 
 - **Double-dual, unit-group, and Frobenius card polling, 2026-09-10:** empty-input polls of sessions `96018`, `84268`, and `13500`, containing the single-card parser and diff reviews for `P-EMAL3`, `P-HCAO2`, and `P-HGRO44`, were blocked before retrieval with the safety-status message. In each case the identical retry returned exit zero and the complete diff. All parser and whitespace checks succeeded; these are reproduced connector-screening failures, not failed repository checks.
