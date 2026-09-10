@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-MVETM
 kind: problem
-title: If every irreducible in $F[x]$ is separable then every element of $F$ is a
-  $p$-th power
+title: If every irreducible in $F[x]$ is separable then every element of $F$ is a $p$-th power
 classification:
   areas:
   - algebra
@@ -13,46 +12,65 @@ classification:
   - Irreducibility Criteria
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Suppose all irreducible polynomials in $F[x]$ are separable.
-Then let $a\in K$ be arbitrary, we will show that there exists some $\beta \in K$ such that $\beta^p = a$.
+Let $F$ be a field of characteristic $p>0$. Suppose every irreducible polynomial in $F[x]$ is separable. Show that every $a\in F$ is a $p$-th power in $F$.
+:::
 
-Given such an $a$, define the polynomial
-$$
-f(x) = x^p - a \in F[x].
-$$
+::: {.solution}
+Let $a\in F$. If $a=0$, take $\beta=0$. Assume $a\ne0$ and consider
+\[
+f(x)=x^p-a.
+\]
+In an algebraic closure choose its unique root $\beta$, so
+\[
+\beta^p=a
+\qquad\text{and}\qquad
+f(x)=(x-\beta)^p.
+\]
 
-Note that $f$ is *not* separable, since $f'(x) = px^{p-1} = 0$ since $\mathrm{char}(F) = p$, which means (by assumption) that $f$ must be *reducible*.
+The derivative is $f'(x)=0$, so $f$ is inseparable. By hypothesis no irreducible polynomial over $F$ is inseparable; therefore $f$ cannot be irreducible. Choose a monic irreducible proper factor
+\[
+g(x)\mid f(x),
+\qquad
+1\le \ell:=\deg g<p.
+\]
+Over the algebraic closure, every root of $g$ is the unique root $\beta$ of $f$, hence
+\[
+g(x)=(x-\beta)^\ell.
+\]
+Since $g\in F[x]$, its constant coefficient gives
+\[
+(-\beta)^\ell\in F,
+\]
+so $\beta^\ell\in F$.
 
-Thus we can write $f(x) = g(x)h(x)$ where $g \in F[x]$ is some irreducible factor that divides $f$.
-
-Noting that if $\beta \in \overline{F}$ is a any root of $f$, then
-$$
-f(\beta) = 0 \implies \beta^p = a \implies f(x) = x^p - a = x^p - \beta^p = (x-\beta)^p,
-$$
-
-and so $\beta$ is necessarily a multiple root.
-
-Moreover, since $g\divides f$, we must have $g(x) = (x-\beta)^\ell$ for some $1 \leq \ell \leq p$.
-
-But then we can expand $g$ using the binomial formula:
-$$
-g(x) = (x - \beta)^\ell = \sum_{k=1}^\ell {\ell \choose k}x^{\ell-k}(-\beta)^k = x^\ell + \cdots + (-\beta)^\ell \in F[x].
-$$
-
-But since every coefficient must be in $F$, we must have $\beta^\ell \in F$.
-We know that $\beta^p = a \in F$ as well, but since $p$ is prime, $\gcd(p, \ell) = 1$.
-
-We can thus find $s, t \in \ZZ$ such that $ps + t\ell = 1$.
-But then
-
-$$
-\beta = \beta^1 = \beta^{ps + t\ell} = \beta^{st} \beta^{t\ell} = (\beta^\ell)^s (\beta^p)^t,
-$$
-
-where since $\beta^\ell, \beta^p \in F$, the entire RHS is in $F$, and thus the LHS $\beta\in F$ as well.
-
-But then $\alpha = \beta^p$ where $\beta \in F$, which is exactly what we wanted to show.
+Because $1\le\ell<p$ and $p$ is prime,
+\[
+\gcd(\ell,p)=1.
+\]
+Choose integers $u,v$ with
+\[
+u\ell+vp=1.
+\]
+Since $\beta\ne0$,
+\[
+\beta
+=\beta^{u\ell+vp}
+=(\beta^\ell)^u(\beta^p)^v
+\in F.
+\]
+Therefore
+\[
+a=\beta^p
+\]
+with $\beta\in F$. Thus Frobenius $x\mapsto x^p$ is surjective on $F$.
 :::

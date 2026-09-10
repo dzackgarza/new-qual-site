@@ -16,48 +16,49 @@ review: draft
 ---
 
 ::: problem
-We prove a slightly stronger statement, namely:
+Prove that $\ZZ$ is initial in the category of unital rings and unital ring homomorphisms. Deduce that every abelian group has a unique $\ZZ$-module structure.
+:::
 
-**Theorem:**
-$\ZZ$ is initial in the category of unital rings and ring homomorphisms.
-
-This means that if we are given any such ring $R$, there is exactly one map $\ZZ \to R$.
-
-Then, given an abelian group $A$, we can take $R = \hom_{\text{Ab}}(A, A)$, the hom set of abelian group endomorphisms, which is itself a unital ring.
-This will imply that there is a unique map $\ZZ \to \hom_{\text{Ab}}(A, A)$, and since all such maps induce $\ZZ\dash$module structures on $A$, the result will follow.
-
-*Proof:*
-Let $R$ be arbitrary and $1_R$ be its multiplicative identity.
-We first show that there exists a ring homomorphism $\ZZ \to R$, namely
-\begin{align*}
-\phi: \ZZ &\to R \\
-n &\mapsto \sum_{i=1}^n 1_R
-.\end{align*}
-
-Note that $\phi(1) = 1_R$ and $\phi(-1) = -1_R$. We verify that $\phi$ is a ring homomorphism: for $m, n \in \ZZ$,
+::: {.solution}
+<1>1. $\ZZ$ is initial among unital rings.
+::: {.proof}
+Let $R$ be a unital ring. Define
 \[
-\phi(m+n) = \sum_{i=1}^{m+n} 1_R = \sum_{i=1}^m 1_R + \sum_{i=1}^n 1_R = \phi(m) + \phi(n),
+\phi:\ZZ\to R,
+\qquad
+\phi(n)=n\cdot1_R,
 \]
-and
+where for $n>0$ this is a sum of $n$ copies of $1_R$, for $n<0$ it is the negative of $(-n)\cdot1_R$, and $\phi(0)=0$.
+
+Then
 \[
-\phi(mn) = \sum_{i=1}^{mn} 1_R = \left(\sum_{i=1}^m 1_R\right)\left(\sum_{i=1}^n 1_R\right) = \phi(m)\phi(n),
+\phi(m+n)=\phi(m)+\phi(n),\qquad
+\phi(mn)=\phi(m)\phi(n),\qquad
+\phi(1)=1_R,
 \]
-(the second equality is the distributive law applied to the product of the two sums), and $\phi(1) = 1_R$ by definition. Hence $\phi$ is a ring homomorphism.
+so $\phi$ is a unital ring homomorphism.
 
-Now toward a contradiction, suppose there were another such ring homomorphism $\psi: \ZZ \to R$.
-From the definition of a ring homomorphism, $\psi$ must satisfy,
+If $\psi:\ZZ\to R$ is any unital ring homomorphism, then $\psi(1)=1_R$, hence additivity forces
+\[
+\psi(n)=n\cdot1_R=\phi(n)
+\]
+for every $n\in\ZZ$. Thus $\phi$ is unique.
+:::
 
-\begin{align*}
-\psi(1) &= 1_R \\
-\psi(-1) &= -1_R
-,\end{align*}
-
-and by $\ZZ\dash$linearity, we must have 
-$$
-\psi(n) = \psi(\sum_{i=1}^n 1) = \sum_{i=1}^n \psi(1) = \sum_{i=1}^n 1_R = \phi(n),
-$$
-
-and so $\psi(x) = \phi(x)$ for every $x\in \ZZ$.
-But this precisely means that $\psi = \phi$ as ring homomorphisms.
-$\qed$
+<1>2. Every abelian group has a unique $\ZZ$-module structure.
+::: {.proof}
+For an abelian group $A$, the endomorphism ring $\End_{\mathbf{Ab}}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
+\[
+\ZZ\to\End_{\mathbf{Ab}}(A).
+\]
+By <1>1 there is exactly one such homomorphism. Explicitly,
+\[
+n\cdot a=
+\begin{cases}
+a+\cdots+a,&n>0,\\
+0,&n=0,\\
+-((-n)\cdot a),&n<0.
+\end{cases}
+\]
+:::
 :::

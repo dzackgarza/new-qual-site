@@ -12,16 +12,50 @@ classification:
   - Subgroups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-- Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
+Let $H$ be a finite $p$-group and let $G\le H$. Suppose the composite
+\[
+G\hookrightarrow H\twoheadrightarrow H/[H,H]
+\]
+is surjective. Prove that $G=H$.
+:::
 
-  Prove that $G= H$ by induction on $\size H$ in the following way:
+::: {.solution}
+Surjectivity is equivalent to
+\[
+H=G[H,H].
+\]
+Suppose for contradiction that $G<H$. Since $H$ is finite, $G$ is contained in a maximal subgroup $M<H$.
 
-  - Letting $N\normal H$ be any nontrivial normal subgroup of $H$, use the inductive hypothesis to show that $H = GN$.
+<1>1. Every maximal subgroup of a finite $p$-group has index $p$ and is normal.
+::: {.proof}
+The quotient action of $H$ on the left cosets $H/M$ shows that the index is a power of $p$. Maximality forces the quotient to have no nontrivial proper subgroup, hence
+\[
+[H:M]=p.
+\]
+A subgroup of index $p$ in a finite $p$-group is normal.
+:::
 
-  - Let $Z = Z(H)$ be the center of $H$.
-    Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
-    Set $N \da G \intersect Z$ and apply (1) to conclude.
+<1>2. We have $[H,H]\subseteq M$.
+::: {.proof}
+Because $H/M$ has order $p$, it is cyclic and therefore abelian. The derived subgroup is contained in the kernel of every homomorphism to an abelian group, so
+\[
+[H,H]\subseteq M.
+\]
+:::
+
+Now $G\subseteq M$ and $[H,H]\subseteq M$, so
+\[
+G[H,H]\subseteq M<H,
+\]
+contradicting the surjectivity identity $G[H,H]=H$. Therefore $G=H$.
 :::

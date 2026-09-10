@@ -16,9 +16,42 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $V$ is a 6-dimensional vector space and that $T$ is a linear transformation on $V$ such that $T^6 = 0$ and $T^5\neq 0$.
+Suppose $V$ is $6$-dimensional and $T\in\End(V)$ satisfies
+\[
+T^6=0,
+\qquad
+T^5\ne0.
+\]
 
-1. Find a matrix for $T$ in Jordan Canonical form.
+1. Determine the Jordan canonical form of $T$.
+2. Show that any two such operators are similar.
+:::
 
-2. Show that if $S, T$ are linear transformations on a 6-dimensional vector space $V$ which both satisfy $T^6=S^6=0$ and $T^5,S^5\neq 0$, then there exists a linear transformation $A$ from $V$ to itself such that $ATA^{-1} = S$.
+::: {.solution}
+Because $T$ is nilpotent, every Jordan block has eigenvalue $0$. The condition $T^6=0$ says every block has size at most $6$, while $T^5\ne0$ says at least one block has size at least $6$. Hence there is a block of size exactly $6$.
+
+Since $V$ itself has dimension $6$, that block is the whole Jordan form:
+\[
+J(T)=J_6(0).
+\]
+
+If $S$ is another operator satisfying the same hypotheses, then also
+\[
+J(S)=J_6(0).
+\]
+Thus there exist invertible $P,Q$ with
+\[
+T=PJ_6(0)P^{-1},
+\qquad
+S=QJ_6(0)Q^{-1}.
+\]
+Taking
+\[
+A=QP^{-1}
+\]
+gives
+\[
+ATA^{-1}=S.
+\]
+Hence all such operators are similar.
 :::

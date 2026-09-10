@@ -13,37 +13,51 @@ classification:
   - Rank and Nullity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-$\impliedby$: Suppose that $A\vector x = \vector b$ has a solution $\vector x$.
+Let $A=(a_{ij})\in F^{m\times n}$, let $\mathbf x=(x_1,\dots,x_n)^t\in F^n$, and let $\mathbf b=(b_1,\dots,b_m)^t\in F^m$.
+Prove that the matrix equation
+\[
+A\mathbf x=\mathbf b
+\]
+is equivalent to the system of linear equations
+\[
+a_{i1}x_1+\cdots+a_{in}x_n=b_i,
+\qquad i=1,\dots,m.
+\]
+:::
 
-Write $A = [\vector a_1, \vector a_2, \cdots \vector a_m]^t$ in block form with each $\vector a_i$ a row of $A$.
-By definition, a solution to this equation is a $\vector x = (x_i)$ such that for each $i$, we have $\inner{\vector a_i}{\vector x} = b_i$ (by carrying out the matrix multiplication).
 
-But 
+::: {.solution}
+Let $\mathbf a_i=(a_{i1},\dots,a_{in})$ be the $i$th row of $A$.
 
-\begin{align*}
-\inner{\vector a_i}{\vector x} &= b_i \\
-\implies \sum_{j=1}^m a_{ij} x_j &= b_i
-,\end{align*}
+<1>1. The $i$th coordinate of $A\mathbf x$ is
+\[
+\sum_{j=1}^n a_{ij}x_j.
+\]
+::: {.proof}
+This is the definition of matrix-vector multiplication: the $i$th coordinate is the dot product of the $i$th row of $A$ with the column vector $\mathbf x$.
+:::
 
-which says that the collection $x_1, \cdots, x_n$ solves the equation
-$$
-a_{i1} x_1 + a_{i2} x_2 + \cdots a_{im} = b_i
-$$
+<1>2. If $A\mathbf x=\mathbf b$, then $x_1,\dots,x_n$ satisfy the displayed system.
+::: {.proof}
+Equality of the two vectors implies equality of their $i$th coordinates for every $i$. By <1>1,
+\[
+\sum_{j=1}^n a_{ij}x_j=b_i
+\]
+for each $i=1,\dots,m$.
+:::
 
-for every $i$, which is exactly the statement that the $x_i$ simultaneously solve the given system.
-
-$\implies$:
-Suppose that the given system has a simultaneous solutions $x_1, x_2, \cdots, x_n$, and consider the matrix equation $A\vector x = \vector b$.
-
-Letting $\vector x = [x_1, x_2, \cdots, x_n]$, we can rewrite
-$$
-b_i = a_{i1}x_1 + a_{i2} x_2 + \cdots + a_{im} x_m = \inner{\vector a_i}{\vector x},
-$$
-
-where $\vector a_i = [a_{i1}, a_{i2}, \cdots, a_{im}]$.
-
-But then $\vector a_i$ is the $i$th row of $A$, and $A\vector x = \vector b$ has a solution iff there is a $\vector x$ such that $\inner{\vector a_i}{\vector x} = b_i$ for all $i$, which is exactly what we've constructed.
+<1>3. Conversely, if $x_1,\dots,x_n$ satisfy the displayed system, then $A\mathbf x=\mathbf b$.
+::: {.proof}
+By assumption, for every $i$ the $i$th coordinate of $A\mathbf x$ equals $b_i$. Hence the vectors $A\mathbf x$ and $\mathbf b$ have equal coordinates, so they are equal.
+:::
 :::

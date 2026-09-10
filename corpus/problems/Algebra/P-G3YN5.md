@@ -12,6 +12,13 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 :::{.problem}
@@ -29,3 +36,59 @@ review: draft
         \end{aligned}$$
 :::
 
+
+
+::: {.solution}
+<1>1. Structure theorem over a PID.
+::: {.proof}
+If $R$ is a PID and $M$ is finitely generated, then
+\[
+M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_t),
+\qquad
+0\ne d_1\mid d_2\mid\cdots\mid d_t,
+\]
+with the free rank and invariant factors unique up to associates.
+:::
+
+<1>2. For the given module, use the relation matrix
+\[
+A=
+\begin{pmatrix}
+3&3&12&6\\
+0&0&6&0\\
+-3&-3&6&0
+\end{pmatrix}
+\]
+with respect to the ordered generators $(w,x,y,z)$.
+::: {.proof}
+Its rows are exactly the coefficient vectors of the three displayed relations.
+:::
+
+<1>3. The Smith normal form of $A$ is
+\[
+\operatorname{diag}(3,6,6,0).
+\]
+::: {.proof}
+The determinantal divisors are
+\[
+\Delta_1=3,
+\qquad
+\Delta_2=18,
+\qquad
+\Delta_3=108.
+\]
+Thus the nonzero invariant factors are
+\[
+3,\quad 18/3=6,\quad108/18=6.
+\]
+The matrix has rank $3$, so one free summand remains.
+:::
+
+<1>4. Hence
+\[
+M\cong\ZZ\oplus\ZZ/3\ZZ\oplus\ZZ/6\ZZ\oplus\ZZ/6\ZZ.
+\]
+::: {.proof}
+Passing to Smith normal form preserves the cokernel, and the cokernel of $\operatorname{diag}(3,6,6,0)$ is exactly the displayed direct sum.
+:::
+:::

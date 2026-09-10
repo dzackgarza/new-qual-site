@@ -12,55 +12,49 @@ classification:
   - Conjugacy
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Let $\tau \definedas (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
-We would like to show that $S = S_p$, and since $S \subseteq S_p$ is clear, we just need to show that $S_p \subseteq S$.
-
-We first note that because $p$ is prime, $\sigma^k$ is a $p\dash$cycle for every $1\leq k \leq p$, and $\generators{\sigma} = \generators{\sigma^k}$ for any such $k$.
-
-Then note that $t_1=s_i$ for some $i$ and $t_2=s_j$ for some $j$, so we can take $k=j-i$ to get a cycle $\sigma^k$ that sends $t_1$ to $t_2$.
-So without loss of generality, we can replace $\sigma$ with
-$$
-\sigma = (t_1, t_2, \cdots )
-$$
-
-But now, we can relabel all of the elements of $S_p$ simultaneously (i.e. replace $\generators{\sigma, \tau}$ with another subgroup in the same conjugacy class) in such a way that $t_1$ becomes 1 and $t_2$ becomes 2. We can then assume wlog that
-$$
-\tau = (1,2),\quad \sigma=(1,2,\cdots,p)
-$$
-
-We can then get all adjacent transpositions: noting that
+Let $p$ be prime, let $\sigma\in S_p$ be a $p$-cycle, and let $\tau\in S_p$ be any transposition. Show that
 \[
-\begin{align*}
-\sigma\inv \tau \sigma &= (2, 3) \\
-\sigma^{-2} \tau \sigma^2 &= (3, 4) \\
-&\cdots \\
-\sigma^{-k} \tau \sigma^k &= (k+1 \mod p,~~k+2\mod p) \quad \forall 1\leq k \leq p
-,\end{align*}
+\langle\sigma,\tau\rangle=S_p.
+\]
+:::
+
+::: {.solution}
+Label the $p$ points by the additive group $\ZZ/p\ZZ$ so that
+\[
+\sigma(x)=x+1.
+\]
+Write
+\[
+\tau=(a,b),
+\qquad d=b-a\ne0\pmod p.
 \]
 
-where we use the fact that for any $\gamma\in S_p$, we have $\gamma\tau\gamma = (\gamma(1),~\gamma(2))$.
-
-But this also gives us all transpositions of the form $(1, j)$ for each $2\leq j \leq p$:
+For every $k\in\ZZ/p\ZZ$,
 \[
-\begin{align*}
-(2, 3)\inv(1, 2)(2, 3) &= (1, 3) \\
-(3, 4)\inv (1, 3) (3, 4) &= (1, 4) \\
-&\cdots \\
-(j-1, j)\inv (1, j-1) (j-1, j) &= (1,j) \quad \forall 1\leq j \leq p
-.\end{align*}
+\sigma^k\tau\sigma^{-k}=(a+k,b+k).
 \]
+Thus the subgroup $H=\langle\sigma,\tau\rangle$ contains the transposition joining $x$ to $x+d$ for every $x\in\ZZ/p\ZZ$.
 
-Thus we have $J \definedas \generators{\{(1, j) \mid 2\leq j \leq p\}} \subseteq S$.
+Consider the graph with vertex set $\ZZ/p\ZZ$ and edges
+\[
+\{x,x+d\}.
+\]
+Because $p$ is prime and $d\ne0$, the element $d$ generates the additive group $\ZZ/p\ZZ$. Hence this graph is connected (indeed it is a $p$-cycle).
 
-But now if $\gamma = (g_1, g_2, \cdots, g_k) \in S_p$ is an arbitrary cycle, we can write
-$$
-\gamma = (g_1, g_2, \cdots, g_k) = (1, g_1)( 1, g_2), \cdots (1, g_k),
-$$
+The transpositions corresponding to the edges of any connected graph on $p$ vertices generate the full symmetric group: a spanning tree suffices, since transpositions along the unique path from a fixed root to a vertex generate the star transpositions, and star transpositions generate $S_p$.
 
-so $\gamma \in J$.
-Then writing any arbitrary permutation as a product of disjoint cycles, we find that $S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired.
-$\qed$
+Therefore the conjugates of $\tau$ already generate $S_p$, and hence
+\[
+\langle\sigma,\tau\rangle=S_p.
+\]
 :::

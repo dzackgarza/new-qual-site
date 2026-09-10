@@ -15,25 +15,49 @@ review: draft
 ---
 
 ::: problem
-Note that if either $p=1$ or $q=1$, $G$ is a $p\dash$group, which is a nontrivial center that is always normal.
-So assume $p\neq 1$ and $q\neq 1$.
+Let $p,q$ be primes and let $|G|=p^2q$. Show that $G$ has a nontrivial proper normal subgroup.
+:::
 
-We want to show that $G$ has a non-trivial normal subgroup.
-Noting that $\size G = p^2 q$, we will proceed by showing that either $n_p$ or $n_q$ must be 1.
+::: solution
+If $p=q$, then $G$ is a finite $p$-group. Its center is nontrivial, so $G$ has a nontrivial normal subgroup. Thus assume $p\ne q$.
 
-We immediately note that
+If $p>q$, Sylow's theorem gives
 \[
-\begin{align*}
-n_p \equiv 1 \mod p &\quad& n_q \equiv 1 \mod q \\
-n_p \divides q &\quad& n_q \divides p^2
-,\end{align*}
+n_p\mid q,
+\qquad
+n_p\equiv1\pmod p.
 \]
+Since $q<p$, the only possibility is
+\[
+n_p=1.
+\]
+Hence the Sylow $p$-subgroup is normal.
 
-which forces
-$$
-n_p \in \theset{1, q}, \quad n_1 \in \theset{1, p, p^2}.
-$$
+Now suppose $p<q$. Sylow gives
+\[
+n_q\mid p^2,
+\qquad
+n_q\equiv1\pmod q.
+\]
+Thus $n_q\in\{1,p,p^2\}$. The value $p$ is impossible because $p<q$. If $n_q=p^2$, then
+\[
+q\mid p^2-1=(p-1)(p+1).
+\]
+Since $q>p$, this forces $q\mid p+1$, hence
+\[
+q=p+1.
+\]
+The only consecutive primes are then
+\[
+p=2,\qquad q=3.
+\]
+So except for groups of order $12$, one has $n_q=1$ and hence a normal Sylow $q$-subgroup.
 
-If either $n_p =1$ or $n_q = 1$, we are done, so suppose $n_p \neq 1$ and $n_1 \neq 1$.
-This forces $n_p = q$, and we proceed by cases:
+It remains to treat $|G|=12$. If $n_3=1$, the Sylow $3$-subgroup is normal. Otherwise $n_3=4$, and the four Sylow $3$-subgroups contain
+\[
+4(3-1)=8
+\]
+distinct nonidentity elements. Hence exactly four elements remain, including the identity. Any Sylow $2$-subgroup has order $4$ and cannot contain an element of order $3$, so it must consist exactly of these four remaining elements. Thus the Sylow $2$-subgroup is unique and normal.
+
+Therefore every group of order $p^2q$ has a nontrivial proper normal subgroup.
 :::

@@ -12,55 +12,55 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-We want to show that if $A, B$ are $R\dash$modules then $X = (\hom_{R\dash\text{mod}}(A, B), +)$ is an abelian group.
-Let $f, g, h \in X$, we then need to show the following:
-
-a. Closure: $f + g \in X$
-b. Associativity: $f + (g + h) = (f + g) + h$
-c. Identity: the zero map $\vector 0 \in X$
-d. Inverses: $-f \in X$
-e. Commutativity: $f + g = g + f$
-
-The group operation is pointwise addition, so the identity is the zero map and the inverse of $f$ is $-f$, not $\id$ and $f\inv$.
-
-Closure: 
-This follows from the definition, because $(f + g) \actson x \definedas f(x) + g(x)$ pointwise, which is well-defined homomorphism $A \to B$.
-
-Associativity:
-We have 
+Let $A,B$ be $R$-modules. Show that
 \[
-\begin{align*}
-f + (g + h) \actson x &\definedas f(x) + (g + h)(x) \\
-&\definedas f(x) + (g(x) + h(x)) \\
-&= (f(x) + g(x)) + h(x) \\
-&= (f+g) + h \actson x
-.\end{align*}
+\Hom_R(A,B)
+\]
+is an abelian group under pointwise addition
+\[
+(f+g)(a)=f(a)+g(a).
+\]
+:::
+
+::: {.solution}
+If $f,g\in\Hom_R(A,B)$, then $f+g$ is $R$-linear because
+\[
+(f+g)(a+a')=f(a)+f(a')+g(a)+g(a')
+=(f+g)(a)+(f+g)(a')
+\]
+and
+\[
+(f+g)(ra)=rf(a)+rg(a)=r(f+g)(a).
+\]
+Thus pointwise addition is closed.
+
+Associativity and commutativity follow pointwise from the abelian-group law on $B$:
+\[
+(f+(g+h))(a)=f(a)+g(a)+h(a)=((f+g)+h)(a),
+\]
+\[
+(f+g)(a)=f(a)+g(a)=g(a)+f(a)=(g+f)(a).
 \]
 
-Identity: 
-We can define $\vector 0: A \to B$ by $\vector 0(x) = 0 \in B$. 
-Then 
-$$(f + \vector 0)\actson x = f(x) + 0 = f(x) = 0 + f(x) = (\vector 0 + f) \actson x.$$
-
-Inverses:
-Given $f\in X$, we can define $-f: A \to B$ by $(-f)(x) \definedas -\left( f(x) \right)$, which is again a module morphism.
-Then
+The zero map is the identity element, and the inverse of $f$ is the map
 \[
-\begin{align*}
-(f + (-f)) \actson x &= f(x) + (-f)(x) = f(x) - f(x) = 0 = \vector 0 \actson x \\
-((-f) + f) \actson x &= (-f)(x) + f(x) = -f(x) + f(x) = 0 = \vector 0 \actson x
-.\end{align*}
+(-f)(a)=-f(a),
 \]
+which is again $R$-linear.
 
-Commutativity:
-Since $B$ is a module, by definition $(B, +)$ is an abelian group. Thus
-
+Therefore
 \[
-\begin{align*}
-(f + g) \actson x &= f(x) + g(x) = g(x) + f(x) = (g+f)\actson x
-.\end{align*}
+(\Hom_R(A,B),+)
 \]
+is an abelian group.
 :::

@@ -16,31 +16,52 @@ review: draft
 ---
 
 ::: problem
-Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$.
-
-Noting that
-$$
-\zeta(\zeta + \zeta\inv) = \zeta^2 + 1,
-$$
-
-if we let
-$$
-f(x) = x^2 - (\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x], 
-$$
-then $f(\zeta) = 0$.
-
-Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \definedas [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
-The fact that $\zeta$ is a root of $f$ shows that $d \leq 2$, so $d = 2$.
-We also know that $[\QQ(\zeta) : \QQ] = \phi(n)$.
-
-We thus have
+Let $n>2$ and let $\zeta_n$ be a primitive $n$th root of unity. Prove
 \[
-\begin{align*}
-[\QQ(\zeta) : \QQ] &= [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)] [\QQ(\zeta + \zeta\inv) : \QQ]
-\quad\implies\quad  \phi(n) = 2 x 
-,\end{align*}
+[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]
+=\frac{\varphi(n)}2.
+\]
+:::
+
+::: solution
+Set
+\[
+K=\QQ(\zeta_n+\zeta_n^{-1}).
+\]
+The element $\zeta_n$ satisfies
+\[
+x^2-(\zeta_n+\zeta_n^{-1})x+1=0,
+\]
+so
+\[
+[\QQ(\zeta_n):K]\le2.
 \]
 
-and so $x = \frac{\phi(n)}{2}$ as desired.
-$\qed$
+Because $n>2$, the primitive root $\zeta_n$ is nonreal. On the other hand,
+\[
+\zeta_n+\zeta_n^{-1}=2\cos(2\pi/n)\in\RR,
+\]
+so
+\[
+K\subseteq\RR.
+\]
+Therefore $\zeta_n\notin K$, and the extension is proper. Hence
+\[
+[\QQ(\zeta_n):K]=2.
+\]
+
+The cyclotomic degree is
+\[
+[\QQ(\zeta_n):\QQ]=\varphi(n).
+\]
+By the tower law,
+\[
+\varphi(n)
+=[\QQ(\zeta_n):K][K:\QQ]
+=2[K:\QQ].
+\]
+Therefore
+\[
+[K:\QQ]=\frac{\varphi(n)}2.
+\]
 :::
