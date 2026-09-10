@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### E-C5QHZ and E-ISFYB omit the common domain needed for the mean-value argument
+
+- **Object and need:** `E-C5QHZ` and `E-ISFYB`; both ask to deduce equicontinuity from a uniform derivative bound, but neither specifies the common domain or hypotheses ensuring that line segments between nearby points stay in that domain.
+- **Observed evidence:** both supplied hints invoke the mean value theorem. A uniform derivative bound implies a Lipschitz estimate on an interval, or more generally on a convex domain, but the statements as written have no domain at all. On a disconnected nonconvex domain, bounded derivatives on components do not control jumps between nearby components.
+- **Impact and owner:** the current text is not a complete mathematical proposition. A valid version needs at least a common interval/convex-domain hypothesis (or another geometric condition giving the required path-length control).
+- **Uncertainty:** the card appears only in `SRC-UNSORTED-COMPLEX-ANALYSIS`; no independent source has been identified from which to recover the intended domain.
+- **Repair:** recover the originating source and restore the missing domain hypothesis before attaching a solution.
+
 ### P-6YHN7 is false as written in the unsorted complex-analysis compilation
 
 - **Object and need:** `P-6YHN7`; the card assumes holomorphic maps $f,g:\mathbb D\to\Omega$ with $f$ injective and $f(0)=g(0)$ and asks to prove $g(r\mathbb D)\subseteq f(r\mathbb D)$ for every $0<r<1$.
