@@ -158,3 +158,82 @@ The subspace $S$ from <1>3 has exactly this dimension, so
 by <1>4.
 :::
 :::
+
+::: {.solution}
+Fix $1\le k\le n-2$.
+Let $u_1,\ldots,u_n$ be an orthonormal eigenbasis of the Hermitian matrix $A$, ordered so that
+\[
+Au_j=\lambda_j(A)u_j,
+\qquad
+\lambda_1(A)\ge\cdots\ge\lambda_n(A).
+\]
+Set
+\[
+E_k:=\operatorname{span}\{u_k,u_{k+1},\ldots,u_n\}.
+\]
+Then
+\[
+\dim E_k=n-k+1,
+\]
+and every nonzero $x\in E_k$ satisfies
+\[
+\frac{x^HAx}{x^Hx}\le \lambda_k(A).
+\]
+
+Since $B$ has rank $2$, so does $B^H$, and therefore
+\[
+\dim\ker B^H=n-2.
+\]
+Hence
+\[
+\dim(E_k\cap\ker B^H)
+\ge \dim E_k+\dim\ker B^H-n
+=(n-k+1)+(n-2)-n
+=n-k-1.
+\]
+Choose a subspace
+\[
+L\subseteq E_k\cap\ker B^H
+\]
+with
+\[
+\dim L=n-k-1.
+\]
+For every $x\in L$, one has $B^Hx=0$, and thus
+\[
+BB^Hx=0.
+\]
+Therefore on $L$,
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+Consequently, for every nonzero $x\in L$,
+\[
+\frac{x^HCx}{x^Hx}
+=
+\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+
+Now apply the Courant--Fischer min--max formula for the $(k+2)$-nd largest eigenvalue of the Hermitian matrix $C$:
+\[
+\lambda_{k+2}(C)
+=
+\min_{\substack{M\subseteq\mathbb C^n\\\dim M=n-k-1}}
+\max_{0\ne x\in M}
+\frac{x^HCx}{x^Hx}.
+\]
+Using the particular subspace $L$ constructed above gives
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in L}
+\frac{x^HCx}{x^Hx}
+\le
+\lambda_k(A).
+\]
+Thus, for every $1\le k\le n-2$,
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
+\]
+:::
