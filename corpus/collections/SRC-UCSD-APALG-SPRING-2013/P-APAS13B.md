@@ -93,4 +93,3 @@ Applying this first to \(C=S\) and then to \(C=T\) gives
 \lambda_n(T)\le\operatorname{Im}(\lambda)\le\lambda_1(T).
 \]
 :::
-
