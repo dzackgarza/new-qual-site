@@ -12,6 +12,8 @@
   name: Dummit and Foote, Abstract Algebra
 - id: folland
   name: Folland, Real Analysis
+- id: hartshorne
+  name: Hartshorne, Algebraic Geometry
 - id: hatcher
   name: Hatcher, Algebraic Topology
 - id: hoffman-kunze
