@@ -40,13 +40,6 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
-### `SRC-TEXT-HK71` omits source Exercises 10.2.11--10.2.17
-
-- **Object and evidence:** the authored Section 10.2 index stops at `E-HK-102-10`, but the source continues through at least Exercise 17. This became operationally visible at `E-HK-103-6`, whose printed instruction is to prove the analogue of Exercise 11 in Section 10.2, and `E-HK-103-8`, which similarly refers to Exercise 17. The source text confirms those cross-references and supplies the omitted statements.
-- **Impact:** the local collection makes legitimate textbook cross-references look impossible and prevents source-local traversal of the referenced exercises. The selected 10.3 cards can be made self-contained by restating the referenced theorem, but the Section 10.2 corpus remains incomplete.
-- **Uncertainty:** none about the omission; the source Section 10.2 contains Exercises 11--17 while the authored collection contains only 1--10.
-- **Repair:** add the missing Section 10.2 cards from the source in source order, preserving stable IDs and provenance; until then, expand dependent cards such as `E-HK-103-6` and `E-HK-103-8` so their mathematical obligations are explicit.
-
 ### The authoring CLI name for collection-scoped unsolved traversal is easy to misremember
 
 - **Object and evidence:** during the `SRC-TEXT-HK71` continuation, invoking `python -m qualc.authoring unsolved-in SRC-TEXT-HK71` failed because the supported subcommand is `unsolved`, not `unsolved-in`. The built-in `--help` output immediately resolved the issue.
