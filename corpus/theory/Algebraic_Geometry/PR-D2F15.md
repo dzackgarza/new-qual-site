@@ -20,8 +20,7 @@ prompts:
 ---
 
 ::: {.proposition}
-$U_\sigma$ is smooth exactly when the minimal generators of $\sigma$ are part of a $\ZZ$-basis of $N$; such a cone is called **smooth**.
-$X_\Sigma$ is smooth exactly when every cone of $\Sigma$ is.
+$U_\sigma$ is smooth exactly when the minimal generators of $\sigma$ are part of a $\ZZ$-basis of $N$; such a cone is called **smooth**. $X_\Sigma$ is smooth exactly when every cone of $\Sigma$ is.
 It is $\QQ$-factorial exactly when every cone is simplicial.
 :::
 

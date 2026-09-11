@@ -83,22 +83,34 @@ Conversion is an uplift, not a substitution:
 
 - `\mathscr{O}_X` becomes `\OO_X`; `\mathbb{P}^n` becomes `\PP^n`. Both targets already exist.
 
-- `\operatorname{Spec}`, `\operatorname{Proj}`, `\Pic`, `\Div`, `\Frac`, `\QCoh`, `\Coh` do **not** exist in `vocabularies/macros.json` and must be added before the first card is written, not invented per-card.
-
 - `\left(...\right)` is removed rather than translated; the site's other subjects do not use it and it renders badly at small sizes.
 
-Adding the AG macros to the shared vocabulary is the first task, because every card written before it exists will have to be rewritten.
+`vocabularies/macros.json` is **generated** by `tools/sync_macros.py` from `/home/dzack/Dropbox/pandoc/custom/preamble.tex`, narrowed to the macros the corpus and wiki actually use.
+It is never hand-edited: writing a card that uses a macro the preamble defines, then running `just macros`, is the whole procedure.
+
+The preamble already supplies `\Spec`, `\Proj`, `\Pic`, `\Div`, `\Cl`, `\OO`, `\PP`, `\AA`, `\da`, `\ts`, `\st`, `\sm`, `\union`, `\intersect`, `\ro`, `\res`, `\dual`, `\gens`, `\mfm`, `\mfp`, `\injects`, `\tensor`, `\abs`, `\Frac`, `\Hom`.
+
+It does **not** supply several the 2022 vault uses freely, and these must be written out in full:
+`\mcI` and friends (use `\mathcal{I}`), `\fiberprod` (`\times_Y`), `\inp` (`\langle -,- \rangle`), `\GG` (`\mathbb{G}_m`), `\Jac`, `\codim`, `\CaCl` (`\operatorname{...}`).
+Nothing reports an undefined macro: `just check` passes and the page ships with the macro unexpanded.
+See [issue #87](https://github.com/dzackgarza/new-qual-site/issues/87).
 
 ## Order of work
 
-1. Extend `vocabularies/macros.json` with the algebraic-geometry vocabulary.
+1. **Done.** `index.md` for the tree, and the nine topic `index.md` pages, from the study guides.
 
-2. `index.md` for the tree, and the topic `index.md` pages, from the study guides.
-   This fixes the skeleton before any card is written into it.
+2. **Done.** The question bank into problem cards under `SRC-HARVARD-QUAL-SAMPLE-AG`, examiner attribution preserved.
+   Sixty-two bullets of the MGSA compilation became forty cards; the collection is `completion: complete`.
 
-3. The question bank into problem cards, examiner attribution preserved.
-   This is pure transcription of irreplaceable material and can proceed immediately.
+3. **Done.** Topic pages and statement cards, in tree order, each written against the questions it answers.
+   Statement cards live in `corpus/theory/Algebraic_Geometry`.
 
-4. Topic cards, in tree order, each one written against the questions it is supposed to answer — varieties first, toric last.
+4. Solutions on the problem cards, one at a time, per the repository's solution workflow.
+   Two are known to need a construction rather than a statement: the torsion Picard group, and the twisted cubic as a scheme-theoretic intersection.
 
-5. Worked problems, attached to the topic cards as they are written, so that each problem lands next to the method it illustrates.
+5. Worked problems from the vault — 42 Hartshorne, 11 extra including Gathmann — as corpus problems with their original provenance, attached to the topic page each illustrates.
+
+6. Figures and attachments from the vault re-homed under `assets/`, kept only where a page references them.
+
+Authored data is written one card at a time, read and verified before the next.
+`AGENTS.md` forbids scripts, loops and templates for this, and the rule is load-bearing: the cards are curation decisions, not records.
