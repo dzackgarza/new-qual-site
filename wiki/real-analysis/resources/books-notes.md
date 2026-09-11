@@ -15,7 +15,7 @@ order: 15
   > Does not have $L^p$ spaces.
   > A good source for this and convexity is **Lieb-Loss: Analysis, Chapter 2**.
 
-- [@Ste03]
+- [@SS03a]
 
   > This book is very elementary but more than sufficient chapters 2 and 3 are Fourier series, chapter 5 is Fourier transform.
 

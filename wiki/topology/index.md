@@ -66,13 +66,13 @@ Revised May 2006.
 
 ### Algebraic Topology
 
-- Classification of surfaces [@Mas97, chap. 1]
+- Classification of surfaces [@Mas19, chap. 1]
 
-- Fundamental group [@Mas97, chap. 2]; [@Hat02, sec. 1.1]
+- Fundamental group [@Mas19, chap. 2]; [@Hat02, sec. 1.1]
 
-- van Kampen’s theorem [@Mas97, chaps. 3-4]; [@Hat02, sec. 1.2]
+- van Kampen’s theorem [@Mas19, chaps. 3-4]; [@Hat02, sec. 1.2]
 
-- Classification of covering spaces [@Mas97, chap. 5]; [@Hat02, sec. 1.3]
+- Classification of covering spaces [@Mas19, chap. 5]; [@Hat02, sec. 1.3]
 
 ### Homology
 
@@ -88,7 +88,7 @@ Revised May 2006.
 
 - [@Mun00]
 
-- [@Mas97]
+- [@Mas19]
 
 - [@Hat02]
 
