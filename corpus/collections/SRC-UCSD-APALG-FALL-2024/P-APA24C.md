@@ -468,3 +468,116 @@ The subspace $F$ from <1>5 has exactly this dimension, so
 This proves the required inequality for every $1\le k\le n-2$.
 :::
 :::
+
+::: {.solution}
+Fix $1\le k\le n-2$.
+
+<1>1. Let $E\subseteq\mathbb C^n$ be the direct sum of the eigenspaces of $A$ corresponding to the eigenvalues
+\[
+\lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
+\]
+Then
+\[
+\dim E=n-k+1,
+\]
+and every nonzero $x\in E$ satisfies
+\[
+\frac{x^HAx}{x^Hx}\le \lambda_k(A).
+\]
+::: {.proof}
+Because $A$ is Hermitian, it has an orthonormal eigenbasis. The subspace $E$ is spanned by eigenvectors for the $n-k+1$ smallest eigenvalues. If
+\[
+x=\sum_{j=k}^n c_j u_j,
+\]
+where $Au_j=\lambda_j(A)u_j$, then
+\[
+\frac{x^HAx}{x^Hx}
+=
+\frac{\sum_{j=k}^n |c_j|^2\lambda_j(A)}{\sum_{j=k}^n|c_j|^2}
+\le \lambda_k(A).
+\]
+:::
+
+<1>2. Since $\operatorname{rank}B=2$,
+\[
+\dim\ker B^H=n-2.
+\]
+Hence
+\[
+\dim(E\cap\ker B^H)\ge n-k-1.
+\]
+::: {.proof}
+Rank-nullity gives
+\[
+\dim\ker B^H=n-\operatorname{rank}B^H=n-2.
+\]
+For two subspaces $U,W\subseteq\mathbb C^n$,
+\[
+\dim(U\cap W)\ge \dim U+\dim W-n.
+\]
+Applying this with $U=E$ and $W=\ker B^H$ gives
+\[
+\dim(E\cap\ker B^H)
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+:::
+
+<1>3. Choose a subspace
+\[
+S\subseteq E\cap\ker B^H
+\]
+with
+\[
+\dim S=n-k-1.
+\]
+For every nonzero $x\in S$,
+\[
+\frac{x^HCx}{x^Hx}\le \lambda_k(A).
+\]
+::: {.proof}
+Since $x\in\ker B^H$,
+\[
+BB^Hx=0.
+\]
+Thus, using $C=A+BB^H$,
+\[
+x^HCx=x^HAx.
+\]
+Since $x\in E$, <1>1 gives
+\[
+\frac{x^HCx}{x^Hx}
+=
+\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+:::
+
+<1>4. Therefore
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
+\]
+::: {.proof}
+By the Courant--Fischer min--max theorem,
+\[
+\lambda_{k+2}(C)
+=
+\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-(k+2)+1}}
+\ \max_{0\ne x\in L}
+\frac{x^HCx}{x^Hx}.
+\]
+The required dimension is
+\[
+n-(k+2)+1=n-k-1.
+\]
+Using the particular subspace $S$ constructed in <1>3,
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in S}
+\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+This proves the stated interlacing inequality for every $1\le k\le n-2$.
+:::
+:::
