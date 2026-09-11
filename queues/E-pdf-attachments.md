@@ -392,7 +392,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — UNL — alg-geom
 
-- [ ] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29
+- [x] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: exact byte duplicate of `Texas_Solns.pdf` (SHA-256 `77623034b4c2c3903dffc0fe2e816a9e5d10fe94018cb1dbf6d40e183f6c899c`). Kari Eifler's TAMU Real Analysis qualifying-exam solutions are already represented as a solutions resource; the canonical resource link points to `Texas_Solns.pdf`, so no duplicate collection or resource entry is needed.
 
 - [ ] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 0 problems) — prelim — Spring 2003 — reclassified 2026-09-09: mixed Spring 2003 preliminary exam spanning algebra, analysis, complex analysis, and geometry.
 
@@ -426,7 +426,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19
 
-- [ ] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29
+- [x] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: canonical retained copy of Kari Eifler's *Solutions to Texas A&M's Real Analysis Qual Courses*. It is already linked from `wiki/real-analysis/resources/solutions.md`; this derivative solutions packet is not an original exam sitting, so intake stops at the existing resource representation rather than creating a duplicate qualifying-exam collection.
 
 - [ ] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders**
 
