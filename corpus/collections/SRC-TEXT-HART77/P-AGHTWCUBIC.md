@@ -22,7 +22,9 @@ review: draft
 Let $Y \subseteq \AA^3$ be the set $Y = \ts{ (t, t^2, t^3) \st t \in k }$.
 
 - Show that $Y$ is an affine variety of dimension $1$.
+
 - Find generators for the ideal $I(Y)$.
+
 - Show that $A(Y)$ is isomorphic to a polynomial ring in one variable over $k$.
 
 We say $Y$ is given by the **parametric representation** $x = t,\ y = t^2,\ z = t^3$.
@@ -36,8 +38,7 @@ A(Y) = k[x,y,z]/\gens{y - x^2,\ z - x^3} \cong k[t, t^2, t^3] \cong k[t] ,
 since $t^2$ and $t^3$ are already polynomials in $t$.
 This settles the third part, and with $\dim Y = \krulldim A(Y)$ and $\krulldim k[t] = 1$ it settles the first.
 
-**That $Y$ is a variety.**
-It suffices that $Y$ is an irreducible closed subset of $\AA^3$.
+**That $Y$ is a variety.** It suffices that $Y$ is an irreducible closed subset of $\AA^3$.
 It is closed because $Y = V(y - x^2,\ z - x^3)$.
 It is irreducible exactly when $I(Y)$ is prime, and $I(Y) = \gens{y-x^2,\ z-x^3}$ is prime because the quotient $k[t]$ is a domain.
 
