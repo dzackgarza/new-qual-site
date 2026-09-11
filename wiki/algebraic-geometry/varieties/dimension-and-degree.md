@@ -15,6 +15,12 @@ Two numbers attached to a variety, and one polynomial that carries both.
 
 Dimension has three descriptions and they are used for different things: the chain definition answers "what is the dimension", the Krull statement makes commutative algebra available, and the transcendence degree is what one actually computes with.
 
+[[PR-VARHT]]
+
+## Degree, before the Hilbert polynomial
+
+[[D-VARDEG]]
+
 ## The Hilbert polynomial
 
 [[D-L6ERW]]

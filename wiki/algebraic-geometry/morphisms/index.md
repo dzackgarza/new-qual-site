@@ -19,3 +19,9 @@ Going up and going down belong here too, as statements about the geometry of the
 - [[algebraic-geometry/morphisms/separated-and-proper|Separated and proper]], the diagonal, the valuative criteria, and the counterexamples for each dropped hypothesis.
 
 - [[algebraic-geometry/morphisms/finite-and-flat|Finite and flat]], going up as a statement about closed images, and what flatness keeps constant.
+
+- [[algebraic-geometry/morphisms/classes-of-morphism|Classes of morphism]], the immersions, the affine and finite and projective chain, and what survives base change.
+
+- [[algebraic-geometry/morphisms/smooth-unramified-etale|Smooth, unramified, and étale]], the jacobian criterion, and where characteristic $p$ breaks each statement.
+
+- [[algebraic-geometry/morphisms/fibres-and-images|Fibres and images]], the fibre dimension theorem, Zariski's main theorem, and Stein factorisation.

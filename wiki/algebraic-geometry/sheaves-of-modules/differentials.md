@@ -35,7 +35,17 @@ The second becomes short exact on the left when $Z$ is smooth, and taking determ
 \]
 which is the computation behind every genus formula in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 
+[[D-MODCONORM]]
+
 ## The canonical sheaf
 
 For $X$ smooth of dimension $n$, $\omega_X = \det \Omega_{X/k} = \bigwedge^n \Omega_{X/k}$.
 On $\PP^n$ it is $\OO(-n-1)$, which is the single computation the rest of the subject leans on: it gives $H^0(\PP^1, \Omega^1) = H^0(\PP^1, \OO(-2)) = 0$, it makes projective space Fano, and through adjunction it produces the genus of a plane curve.
+
+## Projective space
+
+The canonical sheaf of $\PP^n$ is not computed by hand; it is read off a determinant.
+
+[[T-MODEULER]]
+
+Asked for $\Omega_{\PP^n}$, write the Euler sequence, take top exterior powers, and the answer is $\OO(-n-1)$ in one line.

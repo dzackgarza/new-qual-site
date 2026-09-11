@@ -19,6 +19,8 @@ The example makes the gap a number.
 
 [[FE-Y12XB]]
 
+[[FE-DNTT6]]
+
 ## What to say when asked where it fails
 
 Lifting a global section of $\mch$ is possible over each member of some open cover, by the definition of surjectivity.

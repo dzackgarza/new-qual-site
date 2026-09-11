@@ -33,6 +33,8 @@ A definition card carries the probe that follows the definition; a theorem card 
 
 - [[algebraic-geometry/toric/index|Toric varieties]], where fans make every question above computable.
 
+- [[algebraic-geometry/resources|Resources]], which text to reach for at which stage, and where the problems and worked solutions are.
+
 ## Reading it in order
 
 Varieties come first and schemes second, in the order the subject was invented and in the order it can be understood: the scheme definitions answer questions that only make sense once the classical picture is in place.

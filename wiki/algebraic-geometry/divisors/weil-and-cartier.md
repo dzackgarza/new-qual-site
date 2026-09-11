@@ -30,3 +30,9 @@ For an open subset $U = X \sm Z$ of a smooth variety, the comparison is the exci
 \ZZ^{\ts{\text{components of } Z \text{ of codimension } 1}} \to \Cl(X) \to \Cl(U) \to 0 ,
 \]
 which computes $\Cl(\AA^n) = 0$ from $\Cl(\PP^n) = \ZZ$ and gives the class group of any hypersurface complement immediately.
+
+[[FE-DIVPN]]
+
+[[FE-DIVP1E]]
+
+Between them these settle most of what gets asked: a class group on a projective space or an open subset of one, and a $\Pic^0$ on a curve.

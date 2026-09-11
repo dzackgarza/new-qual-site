@@ -1,0 +1,44 @@
+---
+schema: qual/card@1
+id: D-VARREG
+kind: definition
+title: The sheaf of regular functions on a variety
+classification:
+  areas:
+  - algebraic-geometry
+  topics:
+  - Regular Functions
+  - Function Field
+  - Local Rings
+relations:
+- kind: uses
+  target: PR-7OT2Z
+- kind: related-to
+  target: D-VKR54
+review: draft
+prompts:
+- What is $\OO_X$ for an affine variety?
+- What is $k[V]$, what is $A(V)$, and what is $k(V)$?
+- What are the sections of $\OO_X$ over a distinguished open set?
+---
+
+::: {.definition title="Regular functions"}
+Let $X$ be a variety and $U \subseteq X$ open.
+A function $\phi: U \to k$ is **regular** if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
+These form a sheaf $\OO_X$.
+The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the **function field** $k(X)$.
+:::
+
+::: {.proposition title="What the sections are, affinely"}
+For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $D(f) \da X \sm V(f)$,
+\[
+\OO_X(D(f)) = A(X)\invert{f}, \qquad \OO_X(X) = A(X), \qquad \OO_{X,p} = A(X)_{\mfm_p}, \qquad k(X) = \operatorname{Frac} A(X) .
+\]
+:::
+
+::: {.remark}
+The condition is *locally* a quotient, not globally one, and the gap between those two is the whole content: on $\PP^n$ every function is locally a ratio of forms of equal degree and there are no nonconstant global ones, and the standard affine example is $X = V(xw - yz) \subseteq \AA^4$, where $x/y = z/w$ is regular on a union of two opens but is not a single quotient on it.
+
+The definition is stated so that it transports verbatim to $\Spec A$ — replace $k$ by $\coprod_{\mfp} A_\mfp$ and "polynomial" by "element of $A$" — which is the point of stating it this way rather than as "restrictions of polynomials".
+An examiner asking for $\OO_X$ on a variety is usually setting up that comparison.
+:::

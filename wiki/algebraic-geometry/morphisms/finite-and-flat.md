@@ -18,6 +18,8 @@ Going down is the half that preserves dimension, and it holds under flatness or 
 
 ## Why flatness is the right hypothesis
 
+[[D-MORFLAT]]
+
 A flat morphism is one whose fibres vary without jumping, and the precise statements are the ones to quote:
 
 - for a flat projective morphism, the Hilbert polynomial of the fibres is locally constant on the base;
@@ -27,3 +29,10 @@ A flat morphism is one whose fibres vary without jumping, and the precise statem
 - a nonconstant morphism between smooth curves is automatically flat, because a torsion-free module over a discrete valuation ring is free.
 
 The third is why flatness is invisible in the curve questions on the exam and essential to the theorems behind them: Riemann--Hurwitz counts a constant degree because the map is flat, and the count is what makes the formula an equality rather than an inequality.
+
+## Where flatness fails
+
+[[FE-MORNOTFLAT]]
+
+The two failures are different and the distinction gets asked for: the blowup jumps in fibre *dimension*, the normalisation jumps in fibre *length*.
+Equidimensional fibres are therefore necessary and not sufficient, and the invariant flatness really fixes is the Hilbert polynomial.

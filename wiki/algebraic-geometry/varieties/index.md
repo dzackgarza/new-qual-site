@@ -23,3 +23,9 @@ Dimension, degree, and the Hilbert polynomial live here: what the leading term o
 - [[algebraic-geometry/varieties/dimension-and-degree|Dimension and degree]], and the Hilbert polynomial that carries both.
 
 - [[algebraic-geometry/varieties/smooth-and-singular|Smooth and singular]], the two criteria for nonsingularity, and how normality sits between them.
+
+- [[algebraic-geometry/varieties/regular-functions|Regular functions]], the sheaf that survives when the ring of global functions does not.
+
+- [[algebraic-geometry/varieties/blowups|Blowups]], the exceptional curve, and the two formulas everything else follows from.
+
+- [[algebraic-geometry/varieties/canonical-class|Varieties by canonical class]], Fano and Calabi--Yau, and the adjunction computation that produces every example.

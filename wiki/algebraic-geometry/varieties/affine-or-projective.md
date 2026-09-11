@@ -35,6 +35,13 @@ In the other direction the affine examples are produced by inverting something.
 
 [[PR-WZGOQ]]
 
+## Is it complete?
+
+[[D-VARCOMP]]
+
+Projective implies complete and not conversely, so the three classes nest: projective inside complete inside separated of finite type.
+Deciding completeness by hand is rarer than deciding projectivity, and when it is asked the answer is usually that the variety is projective, hence complete.
+
 ## The two answers together
 
 $\PP^1 \times \PP^1$ is projective by Segre and not affine by the function count.

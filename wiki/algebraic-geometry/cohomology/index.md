@@ -16,4 +16,10 @@ Expect to prove the affineness criterion and then to be asked what happens witho
 
 - [[algebraic-geometry/cohomology/computing-cohomology|Computing cohomology]], Čech against derived functors, the cohomology of the twists, and the two meanings of $H^1$.
 
-- [[algebraic-geometry/cohomology/vanishing-and-duality|Vanishing and duality]], Serre's criterion with its load-bearing hypotheses, and Riemann--Roch.
+- [[algebraic-geometry/cohomology/vanishing-and-duality|Vanishing and duality]], Serre's criterion with its load-bearing hypotheses, Serre duality in any dimension, and Riemann--Roch for curves and surfaces.
+
+- [[algebraic-geometry/cohomology/derived-functors-and-vanishing|Derived functors and vanishing]], where the theory comes from, flasque resolutions, and the two vanishing theorems that bound every computation.
+
+- [[algebraic-geometry/cohomology/projective-schemes|Cohomology of projective schemes]], finiteness, Serre vanishing for large twists, and the Euler characteristic as the invariant that does not jump.
+
+- [[algebraic-geometry/cohomology/families|Cohomology in families]], higher direct images, formal functions, and when cohomology commutes with base change.

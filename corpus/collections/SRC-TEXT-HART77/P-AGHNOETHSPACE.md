@@ -20,8 +20,11 @@ review: draft
 (a) Show that the following are equivalent for a topological space $X$:
 
 - $X$ is Noetherian;
+
 - every nonempty family of closed subsets has a minimal element;
+
 - $X$ satisfies the ascending chain condition on open subsets;
+
 - every nonempty family of open subsets has a maximal element.
 
 (b) A Noetherian topological space is quasicompact.
