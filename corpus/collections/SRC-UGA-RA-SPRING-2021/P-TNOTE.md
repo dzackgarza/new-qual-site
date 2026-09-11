@@ -12,6 +12,15 @@ classification:
   - Borel-Cantelli
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 1 of the official UGA January 2021 Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Replaced the legacy pointwise-convergence argument, which incorrectly fixed one N uniformly over all epsilon, by the exact eventual-membership characterization for indicator functions.
 ---
 
 :::{.problem}
@@ -27,77 +36,33 @@ b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ \( \iff \)
 :::
 
 :::{.solution}
-**Part a**:
-
-$\implies$:
-
-- Suppose $\chi_{E_n}\to 1$ uniformly, we want to produce an $N$ such that $n\geq N \implies x\in E_n$ for all $x\in X$.
-- Take $\eps \da 1/2$. 
-  By uniform convergence, for $N$ large enough,
-  \[
-& \forall n\geq N \quad \abs{\chi_{E_n}(x) - 1} < 1/2 && \forall x\in X\\
-&\iff
-\forall n\geq N \quad \chi_{E_n}(x) = 1 && \forall x\in X \\
-&\iff 
-\forall n\geq N \quad x\in E_n && \forall x\in X
-&\iff 
-\forall n\geq N \quad E_n = X
-,\]
-where we've used that $E_n \subseteq X$ by definition and this shows $X \subseteq E_n$.
-So this $N$ suffices.
-
-$\impliedby$:
-
-- Let $\eps > 0$ be arbitrary.
-- Choose $N$ such that $n\geq N \implies X = E_n$.
-  Then
+<1>1. Uniform convergence is equivalent to eventual equality $E_n=X$.
+::: {.proof}
+If $\chi_{E_n}\to1$ uniformly, take $\varepsilon=1/2$. For all sufficiently large $n$ and every $x\in X$,
 \[
-&\forall n\geq N \quad x\in E_n && \forall x\in X \\
-&\forall n\geq N \quad \chi_{E_n}(x) = 1 && \forall x\in X \\
-&\forall n\geq N \quad \abs{\chi_{E_n}(x) - 1} = 0 < \eps && \forall x\in X 
-,\]
-so $\chi_{E_n} \to 1$ uniformly.
+|\chi_{E_n}(x)-1|<\frac12.
+\]
+Since $\chi_{E_n}(x)$ is either $0$ or $1$, this forces $\chi_{E_n}(x)=1$ for every $x$, hence $E_n=X$.
 
-**Part b**:
-
-- Define
-\[
-S &\da \ts{x\in X \st \chi_{E_k}(x) \to 1}\\
-&\da \ts{x\in X \st \forall \eps,\, \exists N\, \text{ s.t. } \abs{\chi_{E_k}(x) - 1 } < \eps ,\forall k\geq N}\\
-L &\da \Intersect_{n\geq 0} \Union_{k\geq n} \qty{X\sm E_k}
-,\]
-so $S$ is the set where $f_n\to f$ and $X\sm S$ is the exceptional set where $f_n\not\to f$ doesn't converge pointwise.
-
-- **Claim**: $L = X\sm S$, so if $x\in S \iff x\in X\sm L$.
-- Proof of claim:
-Suppose there exists an $N$ such that the first line below is true.
-Then for a fixed $x$, there are equivalent statements:
-\[
-&\qquad x \in S \\
-&\iff \exists N \text{ s.t. } \forall \eps>0,\quad \abs{\chi_{E_k}(x) - 1 } < \eps && \forall k\geq N \\ 
-&\iff 
-\exists N \text{ s.t. } 
-\abs{\chi_{E_k}(x) - 1 } = 0 && \forall k\geq N \\ 
-&\iff 
-\exists N \text{ s.t. } 
-\chi_{E_k}(x) = 1 && \forall k\geq N \\
-&\iff 
-\exists N \text{ s.t. } 
-x\in E_k && \forall k\geq N \\
-&\iff 
-\exists N \text{ s.t. } 
-x\not\in X\sm E_k &&\forall k\geq N \\
-&\iff 
-\exists N \text{ s.t. } 
-x\not\in \Union_{k\geq N} X\sm E_k  \\
-&{\color{blue} \iff} 
-x\not\in \Intersect_{n\geq 0}\Union_{k\geq n} X\sm E_k \\
-&\iff x\not\in L \\
-&\iff x\in X\sm L
-.\]
-
-- Proving the iff:
-  $f_n\to f$ almost everywhere $\iff \mu(X\sm S) = 0 \iff \mu(L) = 0$.
-
+Conversely, if $E_n=X$ for every $n\ge N$, then $\chi_{E_n}\equiv1$ for $n\ge N$, so the convergence is uniform.
 :::
 
+<1>2. Identify the exceptional set for pointwise convergence.
+::: {.proof}
+For a fixed $x\in X$, because the values are only $0$ and $1$,
+\[
+\chi_{E_n}(x)\to1
+\iff
+x\in E_n\text{ for all sufficiently large }n.
+\]
+Thus convergence fails exactly when $x\notin E_n$ for infinitely many $n$. The set of such points is
+\[
+\limsup_{n\to\infty}(X\setminus E_n)
+=\bigcap_{N=1}^\infty\bigcup_{k\ge N}(X\setminus E_k).
+\]
+Therefore $\chi_{E_n}(x)\to1$ for almost every $x$ if and only if
+\[
+\mu\left(\bigcap_{N=1}^\infty\bigcup_{k\ge N}(X\setminus E_k)\right)=0.
+\]
+:::
+:::
