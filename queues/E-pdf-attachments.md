@@ -370,7 +370,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 8 problems) — Berkeley — complex-analysis
+- [x] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 18 problems) — Berkeley — prelim — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-2018`; the Fall 2018 two-part Graduate Preliminary Examination contains 18 problems across calculus, real analysis, complex analysis, linear algebra, and abstract algebra, represented in paper order by `P-BKF18-1A` through `P-BKF18-9B`.
 
 - [ ] [Fall77.pdf](assets/attachments/extracted/Fall77.md) (132L, 10 problems) — algebra — Fall 19
 
