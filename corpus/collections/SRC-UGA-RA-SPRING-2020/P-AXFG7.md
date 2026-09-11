@@ -11,6 +11,15 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 2 of the official UGA Spring 2020 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed both finite- and infinite-outer-measure cases for the Borel hull and the Caratheodory-measurable-set decomposition; the proof correctly handles the infinite case by bounded pieces.
 ---
 
 Let $m_*$ denote the Lebesgue outer measure on \( \RR \).
