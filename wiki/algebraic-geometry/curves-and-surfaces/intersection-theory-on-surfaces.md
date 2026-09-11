@@ -1,6 +1,6 @@
 ---
 title: Intersection theory on surfaces
-order: 6
+order: 8
 topics:
 - Intersection Theory
 - Adjunction

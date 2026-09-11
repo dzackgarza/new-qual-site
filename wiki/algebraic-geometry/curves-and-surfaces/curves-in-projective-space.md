@@ -1,6 +1,6 @@
 ---
 title: Curves in projective space
-order: 5
+order: 7
 topics:
 - Space Curves
 - Projection

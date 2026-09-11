@@ -25,6 +25,7 @@ prompts:
 A variety $M_g$ is a **coarse moduli space** for curves of genus $g$ when:
 
 1. the closed points of $M_g$ are in bijection with isomorphism classes of smooth projective curves of genus $g$, and
+
 2. every flat family $\mathcal{X} \to T$ whose fibres are such curves induces a morphism $h\colon T \to M_g$ with $h(t)$ the class of the fibre $\mathcal{X}_t$.
 :::
 

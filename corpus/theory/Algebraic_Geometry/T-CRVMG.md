@@ -43,14 +43,12 @@ The hypothesis $g \geq 2$ is doing work in that line, which is why $\mathcal{M}_
 
 Two dimension counts confirm the formula and are the ones an examiner asks to see run.
 
-**Genus $2$, via the hyperelliptic locus.**
-A hyperelliptic curve of genus $g$ is a double cover of $\PP^1$ branched at $2g+2$ points, and the curve determines that branch set, so the moduli are the configurations of $2g+2$ unordered points of $\PP^1$ modulo $\PGL_2$.
+**Genus $2$, via the hyperelliptic locus.** A hyperelliptic curve of genus $g$ is a double cover of $\PP^1$ branched at $2g+2$ points, and the curve determines that branch set, so the moduli are the configurations of $2g+2$ unordered points of $\PP^1$ modulo $\PGL_2$.
 Normalizing three of them to $0, 1, \infty$ uses up the $3$-dimensional group and leaves $2g+2-3 = 2g-1$ parameters, so the hyperelliptic locus is irreducible of dimension $2g-1$.
 Every curve of genus $2$ is hyperelliptic, so at $g=2$ that locus is all of $\mathcal{M}_2$ and $\dim \mathcal{M}_2 = 2(2)-1 = 3$, which agrees with $3g-3 = 3$.
 This is also the last genus where the two numbers agree: $2g-1 < 3g-3$ exactly when $g > 2$, so for $g \geq 3$ the hyperelliptic curves are a proper closed subvariety and the general curve is not hyperelliptic.
 
-**Genus $3$, via plane quartics.**
-A non-hyperelliptic curve of genus $3$ is canonically embedded as a smooth plane quartic, and every smooth plane quartic arises this way.
+**Genus $3$, via plane quartics.** A non-hyperelliptic curve of genus $3$ is canonically embedded as a smooth plane quartic, and every smooth plane quartic arises this way.
 Quartic forms in three variables have $\binom{4+2}{2} = 15$ coefficients, so they are parameterized by $\PP^{14}$, with the smooth ones an open $U$.
 Two quartics give isomorphic curves exactly when they differ by $\PGL_3$, which has dimension $8$, and the stabilizers are finite because $\Aut C$ is finite for $g \geq 2$; so the orbits are $8$-dimensional and the image of $U$ in $\mathcal{M}_3$ has dimension $14 - 8 = 6 = 3g-3$.
 

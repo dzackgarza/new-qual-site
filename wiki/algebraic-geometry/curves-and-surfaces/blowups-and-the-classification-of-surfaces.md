@@ -1,6 +1,6 @@
 ---
 title: Blowups and the classification of surfaces
-order: 7
+order: 9
 topics:
 - Blowups
 - Minimal Models

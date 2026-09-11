@@ -38,8 +38,7 @@ The two disjoint sections are the ones cut out by the two summands, and they hav
 \[
 D_2^2 = -a, \qquad D_4^2 = +a ,
 \]
-so $D_2$ is the **negative section**.
-Its normal bundle is
+so $D_2$ is the **negative section**. Its normal bundle is
 \[
 N_{D_2 / \FF_a} \cong \OO_{D_2}(D_2) \cong \OO_{\PP^1}(-a) ,
 \]

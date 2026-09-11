@@ -36,8 +36,7 @@ Then $F$ becomes a $k$-morphism
 \[
 F' : X_p \to X ,
 \]
-the **$k$-linear Frobenius**.
-For $X$ a curve over perfect $k$ it is finite of degree $p$, and on function fields it is the inclusion
+the **$k$-linear Frobenius**. For $X$ a curve over perfect $k$ it is finite of degree $p$, and on function fields it is the inclusion
 \[
 k(X) \subseteq k(X)^{1/p} .
 \]

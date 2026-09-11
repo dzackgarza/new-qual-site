@@ -40,7 +40,8 @@ So $2g-2 = ad$, and the hypothesis $g \geq 2$ forces $a \geq 1$.
 Now $\OO_{\PP^n}(a)$ is very ample for $a \geq 1$, so the linear system it cuts on $C$ separates points and tangent vectors.
 That cut system is a subsystem of the complete system $\abs{\OO_C(a)} = \abs{K_C}$, and a linear system containing a very ample subsystem is itself very ample.
 Hence $K_C$ is very ample, so the canonical map is an embedding, so $C$ is not hyperelliptic.
-(Complete intersections are projectively normal, so in fact the cut system is *all* of $\abs{K_C}$: the canonical embedding of $C$ is the composite of $C \subseteq \PP^n$ with the $a$-uple embedding. The weaker subsystem statement is already enough for the conclusion.)
+(Complete intersections are projectively normal, so in fact the cut system is *all* of $\abs{K_C}$: the canonical embedding of $C$ is the composite of $C \subseteq \PP^n$ with the $a$-uple embedding.
+The weaker subsystem statement is already enough for the conclusion.)
 
 The contrapositive is what the exercise asks for: a hyperelliptic curve embeds in projective space in many ways, but never as a complete intersection in any $\PP^n$.
 Two checks against curves one can name.
