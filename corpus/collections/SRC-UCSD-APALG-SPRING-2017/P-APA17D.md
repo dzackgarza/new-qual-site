@@ -76,4 +76,3 @@ Therefore the complete character table is
 \end{array}.
 \]
 :::
-
