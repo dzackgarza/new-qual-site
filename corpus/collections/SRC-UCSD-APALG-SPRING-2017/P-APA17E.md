@@ -97,4 +97,3 @@ Hence
 M_3(\mathbb C)\times M_4(\mathbb C)\times\mathbb C\times\mathbb C.
 \]
 :::
-
