@@ -25,10 +25,16 @@ ok
 
 ok
 
-## orphans (2)
+## orphans (8)
 
+- D-9DIKB
+- D-BIVAU
 - D-VZNMF
 - FD-4GI2R
+- FE-ISIPR
+- PR-7OT2Z
+- PR-TNVSI
+- T-JRTS2
 
 ## empty-provenance (5)
 
