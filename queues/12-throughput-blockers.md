@@ -127,7 +127,7 @@ Queue C: a stream that fixes 12.1 stops several streams from re-solving solved c
   always-zero generator. Repeat this independent comparison whenever Queue C changes
   sharply; any future disagreement suspends Queue C's authority until explained.
 
-- [ ] 12.4 `_unsolved-if-staged` makes a pathspec commit impossible while any corpus file is staged.
+- [x] 12.4 `_unsolved-if-staged` makes a pathspec commit impossible while any corpus file is staged.
 
   Every stream shares this checkout and therefore shares one index, so `AGENTS.md`'s
   own rule is to commit by explicit pathspec and never carry another stream's staged work.
@@ -155,6 +155,28 @@ Queue C: a stream that fixes 12.1 stops several streams from re-solving solved c
   corpus. Regenerating outside the index — or staging the queue in `post-commit` rather than
   `pre-commit` — would both satisfy this; do not solve it by dropping the pathspec rule,
   which exists to stop streams committing each other's work.
+
+  **Closed 2026-09-11: the failure was caused one layer above this recipe.** Git already
+  gives ``pre-commit`` a temporary ``GIT_INDEX_FILE`` for ``git commit --only <pathspec>``.
+  In that context ``git diff --cached`` sees exactly the would-be commit, and ``git add``
+  safely updates that temporary index. The installed ``ai-review-ci`` global hook was
+  unsetting ``GIT_INDEX_FILE`` before calling ``just test-commit``; that discarded Git's
+  pathspec snapshot, made this recipe read the shared index instead, and made its ``git add``
+  contend with the shared ``index.lock``. Upstream commit ``38ac36c`` preserves
+  ``GIT_INDEX_FILE`` in both pre-commit hook variants while continuing to clear the
+  repository-location variables required by the linked-worktree fix.
+
+  The upstream regression ``test_pre_commit_preserves_pathspec_temporary_index`` proves both
+  required branches with real Git commits: a queue-only pathspec commit succeeds while an
+  unrelated corpus path remains staged, and a subsequent corpus pathspec commit regenerates
+  and stages the queue into the same commit without including that unrelated corpus path.
+  ``tests/test_hooks.py`` passes 26/26 after the change. The installed hook is a symlink to
+  that upstream file, so the fix is live here. As an end-to-end check in this shared
+  checkout, ``af1aefbf2`` committed only ``queues/12-throughput-blockers.md`` while
+  ``corpus/collections/SRC-WESLEYAN-RA-SUMMER-2008/index.md`` remained staged; the hook
+  correctly printed ``queues/C-unsolved-cards.md: no staged corpus change`` and completed
+  normally. The pathspec rule and ``_unsolved-if-staged`` queue-in-the-corpus-commit behavior
+  are both preserved.
 
 ## Why these are ahead of Queue C
 
