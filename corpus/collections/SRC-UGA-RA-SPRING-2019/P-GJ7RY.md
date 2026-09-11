@@ -12,74 +12,84 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against the UGA Spring 2019 real-analysis qualifying exam recorded by SRC-UGA-RA-SPRING-2019.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-Let $C([0, 1])$ denote the space of all continuous real-valued functions on $[0, 1]$.
-  
-a. Prove that $C([0, 1])$ is complete under the uniform norm $\norm{f}_u := \displaystyle\sup_{x\in [0,1]} |f (x)|$.
 
-b. Prove that $C([0, 1])$ is not complete under the $L^1\dash$norm $\norm{f}_1 = \displaystyle\int_0^1 |f (x)| ~dx$.
+::: problem
+Let $C([0,1])$ be the space of continuous real-valued functions on $[0,1]$.
 
-:::{.solution}
-\envlist
+1. Prove that $C([0,1])$ is complete under the uniform norm
+\[
+\|f\|_\infty:=\sup_{x\in[0,1]}|f(x)|.
+\]
 
-:::{.proof title="of a"}
-\envlist
-
-- Let $\theset{f_n}$ be  a Cauchy sequence in $C(I, \norm{\wait}_\infty)$, so $\lim_n\lim_m \norm{f_m - f_n}_\infty = 0$, we will show it converges to some $f$ in this space.
-- For each fixed $x_0 \in [0, 1]$, the sequence of real numbers $\theset{f_n(x_0)}$ is Cauchy in $\RR$ since
-$$
-x_0\in I \implies \abs{f_m(x_0) - f_n(x_0)} \leq \sup_{x\in I} \abs{f_m(x) - f_n(x)} \definedas \norm{f_m - f_n}_\infty \converges{m>n\to\infty}\to 0,
-$$
-- Since $\RR$ is complete, this sequence converges and we can define $f(x) \definedas \lim_{k\to \infty} f_n(x)$.
-- Thus $f_n\to f$ pointwise by construction
-- Claim: $\norm{f - f_n} \converges{n\to\infty}\to 0$, so $f_n$ converges to $f$ in $C([0, 1], \norm{\wait}_\infty)$.
-
-  - Proof:
-    - Fix $\eps > 0$; we will show there exists an $N$ such that $n\geq N \implies \norm{f_n - f} < \eps$
-    - Fix an $x_0 \in I$. Since $f_n \to f$ pointwise, choose $N_1$ large enough so that $$n\geq N_1 \implies \abs{f_n(x_0) - f(x_0)} < \eps/2.$$
-    - Since $\norm{f_n - f_m}_\infty \to 0$, choose and $N_2$ large enough so that $$n, m \geq N_2 \implies \norm{f_n - f_m}_\infty < \eps/2.$$
-    - Then for $n, m \geq \max(N_1, N_2)$, we have
-  \[
-        \abs{f_n(x_0) - f(x_0)} 
-  &=    \abs{f_n(x_0) - f(x_0) + f_m(x_0) - f_m(x_0)} \\
-  &=    \abs{f_n(x_0) - f_m(x_0) + f_m(x_0) - f(x_0)} \\
-  &\leq \abs{f_n(x_0) - f_m(x_0)} + \abs{f_m(x_0) - f(x_0)} \\
-  &<  \abs{f_n(x_0) - f_m(x_0)} + {\eps \over 2} \\
-  &\leq  \sup_{x\in I} \abs{f_n(x) - f_m(x)} + {\eps \over 2} \\
-  &<  \norm{f_n - f_m}_\infty + {\eps \over 2} \\
-  &\leq  {\eps \over 2} + {\eps \over 2} \\ 
-  \implies \abs{f_n(x_0) - f(x_0)} &< \eps\\
-  \implies \sup_{x\in I} \abs{f_n(x_0) - f(x_0)} &\leq \sup_{x\in I} \eps \quad\text{by order limit laws} \\
-  \implies \norm{f_n - f} &\leq \eps\\
-  .\]
-
-- $f$ is the uniform limit of continuous functions and thus continuous, so $f\in C([0, 1])$.
-
+2. Prove that $C([0,1])$ is not complete under the $L^1$ norm
+\[
+\|f\|_1:=\int_0^1|f(x)|\,dx.
+\]
 :::
 
-:::{.proof title="of b"}
-\envlist
-
-- It suffices to produce a Cauchy sequence that does not converge to a continuous function. 
-
-- Take the following sequence of functions:
-  - $f_1$ increases linearly from 0 to 1 on $[0, 1/2]$ and is 1 on $[1/2, 1]$
-  - $f_2$ is 0 on $[0, 1/4]$ increases linearly from 0 to 1 on $[1/4, 1/2]$ and is 1 on $[1/2, 1]$
-  - $f_3$ is 0 on $[0, 3/8]$ increases linearly from 0 to 1 on $[3/8, 1/2]$ and is 1 on $[1/2, 1]$
-  - $f_3$ is 0 on $[0, (1/2 - 3/8)/2]$ increases linearly from 0 to 1 on $[(1/2 - 3/8)/2, 1/2]$ and is 1 on $[1/2, 1]$
-
-  > Idea: take sequence starting points for the triangles: $0, 0 + {1\over 4}, 0 + {1 \over 4} + {1\over 8}, \cdots$ which converges to $1/2$ since $\sum_{k=1}^\infty{1\over 2^k} = -{1\over 2} + \sum_{k=0}^\infty  {1\over 2^k}$.
-
-- Then each $f_n$ is integrable: each $f_n$ is a piecewise-linear function on $[0,1]$ (constant on two subintervals and linear on a third), hence continuous except possibly at finitely many points, so it is Riemann integrable and in particular Lebesgue integrable; its graph is contained in the unit square $[0,1]^2$.
-- $\theset{f_n}$ is Cauchy: geometrically subtracting areas yields a single triangle whose area tends to 0.
-- But $f_n$ converges to $\chi_{[{1\over 2}, 1]}$ which is discontinuous.
-
-:::{.remark}
-show that $\int_0^1 \abs{f_n(x) - f_m(x)} \,dx \to 0$ rigorously, show that no $g\in L^1([0, 1])$ can converge to this indicator function.
+::: solution
+<1>1. Completeness in the uniform norm.
+::: proof
+Let $(f_n)$ be Cauchy in $\|\cdot\|_\infty$. For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy, so define
+\[
+f(x):=\lim_{n\to\infty}f_n(x).
+\]
+Given $\varepsilon>0$, choose $N$ such that
+\[
+\|f_n-f_m\|_\infty<\varepsilon
+\qquad(n,m\ge N).
+\]
+Fix $n\ge N$ and let $m\to\infty$. Then
+\[
+|f_n(x)-f(x)|\le\varepsilon
+\]
+for every $x$, hence
+\[
+\|f_n-f\|_\infty\le\varepsilon.
+\]
+Thus $f_n\to f$ uniformly. A uniform limit of continuous functions is continuous, so $f\in C([0,1])$ and the space is complete.
 :::
 
-:::
+<1>2. Failure of completeness in the $L^1$ norm.
+::: proof
+Let
+\[
+g=\mathbf1_{[1/2,1]}.
+\]
+For $n\ge2$, define $f_n\in C([0,1])$ by
+\[
+f_n(x)=
+\begin{cases}
+0,&x\le \frac12-\frac1n,\\
+\frac n2\left(x-\frac12+\frac1n\right),&\frac12-\frac1n<x<\frac12+\frac1n,\\
+1,&x\ge \frac12+\frac1n.
+\end{cases}
+\]
+Then $0\le f_n\le1$ and $f_n=g$ outside an interval of length $2/n$. Therefore
+\[
+\|f_n-g\|_1\le\frac2n\to0.
+\]
+Hence $(f_n)$ is Cauchy in the $L^1$ norm.
 
-:::
+If $C([0,1])$ were complete in that norm, there would exist $h\in C([0,1])$ with
+\[
+\|f_n-h\|_1\to0.
+\]
+But limits in $L^1$ are unique up to almost-everywhere equality, so $h=g$ almost everywhere. A continuous function equal almost everywhere to $g$ must be $0$ on $[0,1/2)$ and $1$ on $(1/2,1]$, contradicting continuity at $1/2$. Thus no such $h$ exists.
 
+Therefore $C([0,1])$ is not complete under $\|\cdot\|_1$.
+:::
+:::
