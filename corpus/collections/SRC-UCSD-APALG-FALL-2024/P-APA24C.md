@@ -392,3 +392,96 @@ Applying Courant--Fischer to the particular admissible subspace $L_0$ yields
 This is the desired two-step interlacing inequality.
 :::
 :::
+
+::: {.solution}
+Let
+\[
+K=\ker B^H.
+\]
+Since \(\operatorname{rank} B=2\), we have \(\operatorname{rank} B^H=2\), hence
+\[
+\dim K=n-2.
+\]
+Moreover, for every \(x\in K\),
+\[
+x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
+\]
+
+<1>1. For every \(1\le k\le n-2\),
+\[
+\lambda_{k+2}(C)
+=\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
+\ \max_{0\ne x\in L}\frac{x^HCx}{x^Hx}.
+\]
+::: {.proof}
+This is the Courant--Fischer min--max theorem applied to the \((k+2)\)-nd largest eigenvalue of the Hermitian matrix \(C\).
+:::
+
+<1>2. Let \(E\) be the span of eigenvectors of \(A\) corresponding to
+\[
+\lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
+\]
+Then
+\[
+\dim E=n-k+1
+\]
+and, for every nonzero \(x\in E\),
+\[
+\frac{x^HAx}{x^Hx}\le \lambda_k(A).
+\]
+::: {.proof}
+Choose an orthonormal eigenbasis \(u_1,\ldots,u_n\) of \(A\) with
+\[
+Au_j=\lambda_j(A)u_j.
+\]
+Then
+\[
+E=\operatorname{span}\{u_k,\ldots,u_n\}.
+\]
+For \(x=\sum_{j=k}^n c_ju_j\neq0\),
+\[
+\frac{x^HAx}{x^Hx}
+=\frac{\sum_{j=k}^n |c_j|^2\lambda_j(A)}{\sum_{j=k}^n |c_j|^2}
+\le \lambda_k(A).
+\]
+:::
+
+<1>3. The subspace
+\[
+L:=E\cap K
+\]
+has dimension at least \(n-k-1\).
+::: {.proof}
+Using \(\dim(E\cap K)\ge \dim E+\dim K-n\),
+\[
+\dim(E\cap K)
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+Thus \(L\) contains a subspace \(L_0\) of dimension exactly \(n-k-1\).
+:::
+
+<1>4. For every nonzero \(x\in L_0\),
+\[
+\frac{x^HCx}{x^Hx}
+=\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+::: {.proof}
+Because \(L_0\subseteq K=\ker B^H\), we have \(x^HCx=x^HAx\). Because \(L_0\subseteq E\), <1>2 gives the inequality.
+:::
+
+<1>5. Therefore
+\[
+\lambda_{k+2}(C)\le \lambda_k(A)
+\qquad(1\le k\le n-2).
+\]
+::: {.proof}
+By <1>1, \(\lambda_{k+2}(C)\) is the minimum, over all subspaces of dimension \(n-k-1\), of the maximal Rayleigh quotient of \(C\) on that subspace. Choosing the particular subspace \(L_0\) from <1>3 and using <1>4 gives
+\[
+\lambda_{k+2}(C)
+\le \max_{0\ne x\in L_0}\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+:::
+:::
