@@ -44,5 +44,6 @@ The valuation is the whole content of "how do you get a Weil divisor from $f \in
 On a smooth curve every local ring is such, so Weil and Cartier agree and $\Cl = \Pic$.
 
 The gap is exactly non-factoriality, and the standard witness is the quadric cone $V(xy - z^2)$: the ruling line $V(x,z)$ is a Weil divisor that is not Cartier, and $\Cl = \ZZ/2$ while $\Pic = 0$.
-A Weil divisor is a subvariety; a Cartier divisor is a local equation. Where the local ring is not factorial, a subvariety need not have one.
+A Weil divisor is a subvariety; a Cartier divisor is a local equation.
+Where the local ring is not factorial, a subvariety need not have one.
 :::
