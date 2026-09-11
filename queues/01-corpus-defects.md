@@ -163,10 +163,13 @@ checkout`, index rebuild, or stale-lock recovery drops all of it with no error a
 entry, because content that was never committed has nothing to recover from. This repository
 has already lost 962 lines of authored solutions once this way.
 
-- [ ] Recover the working-tree copies (`git checkout-index -a`, or `git restore --worktree
+- [x] Recover the working-tree copies (`git checkout-index -a`, or `git restore --worktree
       --source=:` per path), read what is there, and commit the cards that are complete.
       If a card was staged and deleted because it was wrong, say so in the commit that
-      removes it rather than leaving it unreachable in the index.
+      removes it rather than leaving it unreachable in the index. Closed 2026-09-11 by
+      `6663fa5db`: all 33 paths are now committed in `HEAD` (21 GRE Chapter 6, 9 linear-
+      algebra review, 3 separation/countability review), and no cached change remains in
+      those three collection roots.
 
 ## 1.R5 — P-HM21B18-PF6-01 carries a stray heading above its solution div
 
