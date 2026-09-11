@@ -376,7 +376,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Fall81.pdf](assets/attachments/extracted/Fall81.md) (193L, 20 problems) — Berkeley — prelim — Fall 1981 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1981`; all 20 problems are represented in source order by `P-BKF81-1` through `P-BKF81-20`.
 
-- [ ] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 8 problems) — algebra — Fall 19
+- [x] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 20 problems) — Berkeley — prelim — Fall 1982 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1982`; all 20 problems are represented in source order by `P-BKF82-1` through `P-BKF82-20`.
 
 - [ ] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 7 problems) — applied-algebra — Fall 19
 
