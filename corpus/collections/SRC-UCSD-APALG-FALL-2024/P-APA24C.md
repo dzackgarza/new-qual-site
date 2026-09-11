@@ -246,3 +246,102 @@ Applying Courant--Fischer to \(C\) at index \(k+2\),
 Thus the claimed inequality holds for every \(1\le k\le n-2\).
 :::
 :::
+
+::: {.solution}
+Let
+\[
+K:=\ker(B^H)\subseteq\mathbb C^n.
+\]
+Since \(\operatorname{rank}B=2\), also \(\operatorname{rank}B^H=2\), so
+\[
+\dim K=n-2.
+\]
+Moreover, for every \(x\in K\),
+\[
+x^H Cx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
+\]
+
+<1>1. Fix \(1\le k\le n-2\). By the Courant--Fischer min--max theorem,
+\[
+\lambda_k(A)
+=
+\min_{\substack{S\subseteq\mathbb C^n\\ \dim S=n-k+1}}
+\ \max_{0\ne x\in S}\frac{x^HAx}{x^Hx}.
+\]
+Choose a subspace \(S\) of dimension \(n-k+1\) for which
+\[
+\max_{0\ne x\in S}\frac{x^HAx}{x^Hx}=\lambda_k(A).
+\]
+::: {.proof}
+Because \(A\) is Hermitian, there is an orthonormal eigenbasis \(u_1,\dots,u_n\) with eigenvalues
+\[
+\lambda_1(A)\ge\cdots\ge\lambda_n(A).
+\]
+Taking
+\[
+S=\operatorname{span}\{u_k,u_{k+1},\ldots,u_n\}
+\]
+gives \(\dim S=n-k+1\), and every Rayleigh quotient on \(S\) is at most \(\lambda_k(A)\), with equality at \(u_k\).
+:::
+
+<1>2. The intersection
+\[
+T:=S\cap K
+\]
+has dimension at least \(n-k-1\).
+::: {.proof}
+For subspaces of an \(n\)-dimensional vector space,
+\[
+\dim(S\cap K)\ge \dim S+\dim K-n.
+\]
+Hence
+\[
+\dim T
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+:::
+
+<1>3. There exists a subspace \(T_0\subseteq T\) with
+\[
+\dim T_0=n-(k+2)+1=n-k-1.
+\]
+For every nonzero \(x\in T_0\),
+\[
+\frac{x^HCx}{x^Hx}
+=
+\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+::: {.proof}
+Choose any \((n-k-1)\)-dimensional subspace \(T_0\subseteq T\), possible by <1>2.
+Because \(T_0\subseteq K\), the quadratic forms of \(A\) and \(C\) agree on \(T_0\). Because \(T_0\subseteq S\), the choice of \(S\) in <1>1 gives
+\[
+\frac{x^HAx}{x^Hx}\le \lambda_k(A)
+\]
+for all nonzero \(x\in T_0\).
+:::
+
+<1>4. Therefore
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}
+\qquad(1\le k\le n-2).
+\]
+::: {.proof}
+Apply Courant--Fischer to \(C\):
+\[
+\lambda_{k+2}(C)
+=
+\min_{\substack{W\subseteq\mathbb C^n\\ \dim W=n-k-1}}
+\ \max_{0\ne x\in W}\frac{x^HCx}{x^Hx}.
+\]
+Using the particular subspace \(T_0\) from <1>3,
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in T_0}\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+This is the desired rank-two interlacing inequality.
+:::
+:::
