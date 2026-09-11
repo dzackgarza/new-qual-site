@@ -12,6 +12,10 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 4 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX. The source assumes only xf in L1; that hypothesis is insufficient to define F(0), so the card correctly retains the repaired assumption f, xf in L1.
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
