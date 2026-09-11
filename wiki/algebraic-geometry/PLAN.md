@@ -94,11 +94,11 @@ Read the preamble instead, `\input`s expanded, the way `sync_macros.py` reads it
 
 Everything the algebraic geometry material needs is already central: `\Spec`, `\Proj`, `\Pic`, `\Div`, `\Cl`, `\CaCl`, `\Jac`, `\codim`, `\krulldim`, `\trdeg`, `\Der`, `\length`, `\Ext`, `\inp`, `\GG`, `\fiberproduct`, the `\mc` family, and the usual `\OO`, `\PP`, `\AA`, `\da`, `\ts`, `\st`, `\sm`, `\union`, `\intersect`, `\ro`, `\dual`, `\gens`, `\mfm`, `\mfp`, `\injects`, `\tensor`, `\abs`, `\Frac`, `\Hom`.
 
-Two paradigm changes the vault predates, and both are renames, not rewrites:
+One paradigm change the vault predates: script letters are **lowercase**, so the vault's `\mcI`, `\mcF` become `\mci`, `\mcf`, matching `\mca`–`\mcz`.
 
-- script letters are **lowercase**: the vault's `\mcI`, `\mcF` become `\mci`, `\mcf`, matching `\mca`–`\mcz`;
-
-- the fibre product takes its base as an argument: `\fiberprod{Y}` becomes `\fiberproduct{Y}`.
+The vault's `\fiberprod{Y}` needs no change at all.
+It is defined centrally as a one-argument alias of `\fiberproduct`, and one argument is all either can take: the macro is the operator $\times_Y$, and the two factors are written around it.
+The site spells it `\fiberprod`, following the vault's forty occurrences.
 
 `\CaCl` was the one name genuinely absent, and it was added to `latexmacs.tex` beside `\Cl` rather than spelled out per-card, because the vocabulary is the place a name is defined once.
 

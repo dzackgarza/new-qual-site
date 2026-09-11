@@ -23,7 +23,7 @@ prompts:
 ::: {.definition title="Separated"}
 A morphism $f : X \to Y$ is **separated** if the diagonal
 \[
-\Delta_{X/Y} : X \to X \fiberproduct{Y} X
+\Delta_{X/Y} : X \to X \fiberprod{Y} X
 \]
 is a closed immersion.
 It is **quasi-separated** if $\Delta_{X/Y}$ is quasicompact, equivalently if the intersection of any two affine opens of $X$ is quasicompact.

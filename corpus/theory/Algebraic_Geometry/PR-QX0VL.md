@@ -26,7 +26,7 @@ Then $g = h$.
 
 ::: {.remark}
 This is the good property to name, and the proof shows why both hypotheses are there.
-The pair $(g,h)$ gives $Z \to X \fiberproduct{Y} X$, and the locus where $g$ and $h$ agree is the preimage of the diagonal.
+The pair $(g,h)$ gives $Z \to X \fiberprod{Y} X$, and the locus where $g$ and $h$ agree is the preimage of the diagonal.
 Separatedness makes that preimage **closed**; it contains the dense $U$, so it is all of $Z$ topologically.
 Reducedness upgrades the topological statement to an equality of morphisms, because a closed subscheme of a reduced scheme with the whole space as support is the whole scheme.
 
