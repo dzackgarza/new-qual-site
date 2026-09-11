@@ -10,6 +10,15 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-11
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: >-
+    Repaired transcription defects in the fundamental-domain condition, congruence notation, and the quotient by {±I}.
 ---
 
 ::: exercise
@@ -22,7 +31,7 @@ $$
 This group acts on the upper half-plane by the fractional linear transformation $g ( \tau ) = ( a \tau + b ) / ( c \tau + d )$ . Together with this action comes the so-called fundamental domain ${ \mathcal { F } } _ { 1 }$ in the complex plane defined by
 
 $$
-\mathcal {F} _ {1} = \{\tau \in \mathbb {C}: | \tau | \geq 1, | \operatorname{Re} (\tau) | \leq 1 / 2 \text {   and   } | \operatorname{Im} (\tau) | \geq 0 \}.
+\mathcal {F} _ {1} = \{\tau \in \mathbb {C}: | \tau | \geq 1, | \operatorname{Re} (\tau) | \leq 1 / 2 \text {   and   } \operatorname{Im} (\tau) > 0 \}.
 $$
 
 It is illustrated in Figure 3.
@@ -40,8 +49,116 @@ Let g be the subgroup of $\operatorname { S L _ { 2 } } ( \mathbb { Z } )$ gener
 
 (a) Show that for every $\tau \in$ H there exists $g \in { \mathfrak { g } }$ such that $g ( \tau ) \in \mathcal { F } _ { 1 }$
 
-(b) We say that two points τ and $\tau ^ { \prime }$ are congruent if there exists $g \in \mathrm { S L } _ { 2 } ( \mathbb { Z } )$ such that $g ( \tau ) = w$ . Prove that if $\tau , w \in \mathcal { F } _ { 1 }$ are congruent, then either $\operatorname { R e } ( \tau ) =$ $\pm 1 / 2$ and $\tau ^ { \prime } = \tau \mp 1$ or $| \tau | = 1$ and $\tau ^ { \prime } = - 1 / \tau$ . [Hint: Say $\tau ^ { \prime } = g ( \tau )$ . Why can one assume that Im $( \tau ^ { \prime } ) \geq \operatorname { I m } ( \tau )$ , and therefore $| c \tau + d | \le 1 ?$ Now consider separately the possibilities $c = - 1$ $c = 0$ , or $c = 1 .$ ]
+(b) We say that two points $\tau$ and $\tau ^ { \prime }$ are congruent if there exists $g \in \operatorname{SL}_2(\mathbb Z)$ such that $g(\tau)=\tau^\prime$. Prove that if $\tau,\tau^\prime \in \mathcal F_1$ are distinct and congruent, then either $\operatorname{Re}(\tau)=\pm1/2$ and $\tau^\prime=\tau\mp1$, or $|\tau|=1$ and $\tau^\prime=-1/\tau$. [Hint: Say $\tau ^ { \prime } = g ( \tau )$ . Why can one assume that Im $( \tau ^ { \prime } ) \geq \operatorname { I m } ( \tau )$ , and therefore $| c \tau + d | \le 1 ?$ Now consider separately the possibilities $c = - 1$ $c = 0$ , or $c = 1 .$ ]
 
 (c) Prove that S and $T _ { 1 }$ generate the modular group in the sense that every fractional linear transformation corresponding to $g \in \mathrm { S L } _ { 2 } ( \mathbb { Z } )$ is a composition of finitely many $S \mathrm { { s } }$ and $T _ { \mathrm { 1 } } \mathrm { ^ { , } s }$ , and their inverses.
-Strictly speaking, the matrices associated to $S$ and $T _ { 1 }$ generate the projective special linear group $\mathrm { P S L _ { 2 } ( Z ) }$ , which equals $\operatorname { S L _ { 2 } } ( \mathbb { Z } )$ modulo I. [Hint: Observe that 2i is in the interior of $\mathcal { F } _ { 1 }$ . Now map $g ( 2 i )$ back into $\mathcal { F } _ { 1 }$ by using part (a). Use part (b) to conclude.]
+Strictly speaking, the matrices associated to $S$ and $T _ { 1 }$ generate the projective special linear group $\mathrm { P S L _ { 2 } ( Z ) }$ , which equals $\operatorname{SL}_2(\mathbb Z)$ modulo $\{\pm I\}$. [Hint: Observe that 2i is in the interior of $\mathcal { F } _ { 1 }$ . Now map $g ( 2 i )$ back into $\mathcal { F } _ { 1 }$ by using part (a). Use part (b) to conclude.]
+:::
+
+::: solution
+Let \(\Gamma=\langle S,T_1\rangle\), where
+\[
+S(\tau)=-\frac1\tau,
+\qquad
+T_1(\tau)=\tau+1.
+\]
+For
+\[
+g=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb Z),
+\]
+a direct calculation gives
+\[
+\Im(g\tau)=\frac{\Im\tau}{|c\tau+d|^2}.
+\tag{1}
+\]
+
+For part (a), start with \(z=\tau\in\mathbb H\). Translate by an integral power of \(T_1\) so that
+\[
+|\Re z|\le\frac12.
+\]
+If \(|z|\ge1\), then \(z\in\mathcal F_1\). If \(|z|<1\), apply \(S\). Since
+\[
+\Im(Sz)=\frac{\Im z}{|z|^2}>\Im z,
+\]
+this strictly increases the imaginary part; then translate again into the strip \(|\Re z|\le1/2\), and repeat.
+
+The process must terminate. Indeed every intermediate point has the form
+\[
+z=\gamma\tau,
+\qquad \gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma,
+\]
+and its imaginary part never decreases. Thus by (1), for every stage after the first,
+\[
+|c\tau+d|^2\le1.
+\]
+There are only finitely many integer pairs \((c,d)\) satisfying this inequality: if \(\tau=x+iy\), then \(|c|y\le1\), so only finitely many \(c\) occur, and then \(|cx+d|\le1\) leaves only finitely many \(d\). Since every application of \(S\) strictly increases the imaginary part, infinitely many such steps are impossible. Hence the algorithm stops at a point of \(\mathcal F_1\).
+
+For part (b), suppose \(\tau,\tau'\in\mathcal F_1\) and \(\tau'=g\tau\). Since congruence is symmetric, interchange \(\tau\) and \(\tau'\) if necessary so that
+\[
+\Im\tau'\ge\Im\tau.
+\]
+Equation (1) then gives
+\[
+|c\tau+d|\le1.
+\tag{2}
+\]
+Write \(\tau=x+iy\). From \(|x|\le1/2\) and \(|\tau|\ge1\),
+\[
+y\ge\frac{\sqrt3}{2}.
+\]
+Thus (2) implies \(|c|\le1\).
+
+If \(c=0\), the determinant condition gives \(a=d=\pm1\), so
+\[
+\tau'=\tau+n
+\]
+for some \(n\in\mathbb Z\). Since both real parts lie in \([-1/2,1/2]\), either \(n=0\), giving \(\tau'=\tau\), or the points lie on the vertical boundary and
+\[
+\Re\tau=\frac12,\quad \tau'=\tau-1,
+\]
+or
+\[
+\Re\tau=-\frac12,\quad \tau'=\tau+1.
+\]
+
+Now suppose \(|c|=1\). Then (2) says \(|\tau+k|\le1\) for some integer \(k\). Because \(|\tau|\ge1\) and \(|\Re\tau|\le1/2\), this is possible only on the circular boundary; hence \(|\tau|=1\). The only nontrivial identification of that boundary inside the fundamental domain is
+\[
+\tau'=-\frac1\tau=S(\tau),
+\]
+with the corner cases already included in the vertical-boundary identifications. Thus distinct congruent points of \(\mathcal F_1\) occur exactly as stated.
+
+For part (c), let \(G\in\operatorname{SL}_2(\mathbb Z)\). By part (a), there is \(h\in\Gamma\) such that
+\[
+hG(2i)\in\mathcal F_1.
+\]
+But \(2i\) is an interior point of \(\mathcal F_1\), and \(hG(2i)\) is congruent to \(2i\). Part (b) therefore forces
+\[
+hG(2i)=2i.
+\]
+If
+\[
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb Z)
+\]
+fixes \(2i\), then
+\[
+\frac{2ia+b}{2ic+d}=2i.
+\]
+Comparing real and imaginary parts gives
+\[
+b=-4c,
+\qquad a=d.
+\]
+The determinant condition becomes
+\[
+a^2+4c^2=1,
+\]
+so \(c=0\), \(a=d=\pm1\), and \(b=0\). Hence \(A=\pm I\). Therefore
+\[
+hG=\pm I,
+\]
+so in \(\operatorname{PSL}_2(\mathbb Z)\),
+\[
+G=h^{-1}\in\Gamma.
+\]
+Thus \(S\) and \(T_1\) generate \(\operatorname{PSL}_2(\mathbb Z)=\operatorname{SL}_2(\mathbb Z)/\{\pm I\}\), equivalently every associated fractional linear transformation is a finite composition of \(S,T_1\), and their inverses.
 :::
