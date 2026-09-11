@@ -1124,6 +1124,8 @@ source:
       comment: Hoffman and Kunze 10.2.16
     - id: E-HK-102-17
       comment: Hoffman and Kunze 10.2.17
+    - id: E-HK-102-18
+      comment: Hoffman and Kunze 10.2.18
   - name: '10.3'
     problems:
     - id: E-HK-103-1
