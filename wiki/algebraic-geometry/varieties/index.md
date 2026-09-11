@@ -17,3 +17,5 @@ Questions here are concrete — is $\PP^1\times\PP^1$ projective, is the complem
 Dimension, degree, and the Hilbert polynomial live here: what the leading term of $P_X(r)$ means, what its constant term means.
 
 - [[algebraic-geometry/varieties/the-dictionary|The dictionary]], radical ideals against closed sets, and what the classical picture cannot see.
+
+- [[algebraic-geometry/varieties/affine-or-projective|Affine or projective]], the test that decides which category a presented variety is in.
