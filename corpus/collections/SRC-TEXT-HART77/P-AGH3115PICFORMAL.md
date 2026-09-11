@@ -16,11 +16,15 @@ review: draft
 ---
 
 ::: problem
-Let $Y$ be a hypersurface in $X = \PP_k^N$ with $N \geq 4$. Let $\hat{X}$ be the formal completion of $X$ along $Y$ (II, §9). Prove that the natural map
+Let $Y$ be a hypersurface in $X = \PP_k^N$ with $N \geq 4$.
+Let $\hat{X}$ be the formal completion of $X$ along $Y$ (II, §9). Prove that the natural map
 \[
 \Pic \hat{X} \to \Pic Y
 \]
 is an isomorphism.
 
-Hint: use (II, Ex. 9.6), and then study the maps $\Pic X_{n+1} \to \Pic X_n$ for each $n$ using (Ex. 4.6) and (Ex. 5.5).
+Hint: use (II, Ex.
+9.6), and then study the maps $\Pic X_{n+1} \to \Pic X_n$ for each $n$ using (Ex.
+4.6) and (Ex.
+5.5).
 :::

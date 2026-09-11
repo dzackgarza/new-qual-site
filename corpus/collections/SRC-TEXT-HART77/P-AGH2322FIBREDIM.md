@@ -34,8 +34,7 @@ Then the subsets $C_h$ are constructible, and $C_e$ contains an open dense subse
 :::
 
 ::: remark
-For (b), let $Y' = \cl\qty{\ts{y}}$ and use (a) together with II.3.20(b).
-For (c), first reduce to the case where $X = \Spec A$ and $Y = \Spec B$ are affine, so that $A$ is a finitely generated $B$-algebra.
+For (b), let $Y' = \cl\qty{\ts{y}}$ and use (a) together with II.3.20(b). For (c), first reduce to the case where $X = \Spec A$ and $Y = \Spec B$ are affine, so that $A$ is a finitely generated $B$-algebra.
 Take $t_1, \ldots, t_e \in A$ forming a transcendence base of $K(X)$ over $K(Y)$, and let $X_1 = \Spec B[t_1, \ldots, t_e]$, which is affine $e$-space over $Y$; the morphism $X \to X_1$ is generically finite, so II.3.7 applies.
 For (d), use (b), then (c), then induction on $\krulldim X$.
 See Cartan and Chevalley, exposé 8.

@@ -15,13 +15,16 @@ review: draft
 ---
 
 ::: problem
-Let $k$ be a field, let $X=\PP_k^r$, and let $Y$ be a closed subscheme of dimension $q \geq 1$, which is a complete intersection (II, Ex. 8.4). Then:
+Let $k$ be a field, let $X=\PP_k^r$, and let $Y$ be a closed subscheme of dimension $q \geq 1$, which is a complete intersection (II, Ex.
+8.4). Then:
 
 a. for all $n \in \ZZ$, the natural map
 \[
 H^0(X, \mco_X(n)) \to H^0(Y, \mco_Y(n))
 \]
-is surjective. This gives a generalization and another proof of (II, Ex. 8.4c), where we assumed $Y$ was normal.
+is surjective.
+This gives a generalization and another proof of (II, Ex.
+8.4c), where we assumed $Y$ was normal.
 
 b. $Y$ is connected;
 

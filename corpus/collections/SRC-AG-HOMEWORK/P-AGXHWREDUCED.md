@@ -20,10 +20,10 @@ Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every
 a. Show that $X$ is reduced iff for every $p\in X$, the local ring $\OO_{X, p}$ has no nilpotents.
 
 b. Let $\OO_X^{\red}$ be the sheafification of $U \mapsto \OO_X(U)^{\red}$.
-   Show that $X_{\red}\da (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
+Show that $X_{\red}\da (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
 
 c. Let $X \xrightarrow{f} Y\in \Sch$ with $X$ reduced.
-   Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ is the composition
+Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ is the composition
 
 \begin{tikzcd}
 	X && Y \\
@@ -41,10 +41,15 @@ Strategy for part a: zero in every stalk implies zero by the sheaf axiom.
 Strategy for part b:
 
 - Cover by affines.
+
 - $\sqrt{0_{R}} \leq \mfp$ for every $\mfp\in \Spec R$.
+
 - $R_{\red}\da R/\sqrt{0_{R}}$ is a quotient, and localization commutes with quotients.
+
 - Maps $R\to S$ with $S$ reduced factor through $R_{\red}$.
+
 - Sheafification has the same stalks, and an isomorphism on stalks is an isomorphism of sheaves.
+
 - Pushforwards of reduced sheaves are reduced.
 :::
 

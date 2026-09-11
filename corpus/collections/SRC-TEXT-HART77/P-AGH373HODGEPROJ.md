@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $X = \PP_k^n$. Show that
+Let $X = \PP_k^n$.
+Show that
 \[
 H^q(X, \Omega_X^p) =
 \begin{cases}

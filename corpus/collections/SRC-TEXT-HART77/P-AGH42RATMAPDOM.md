@@ -15,5 +15,7 @@ review: draft
 ---
 
 ::: problem
-Let $\varphi$ be a rational map from a variety $X$ to a variety $Y$. Show that there is a largest open set on which $\varphi$ is represented by a morphism. One says that the rational map is defined at the points of that open set.
+Let $\varphi$ be a rational map from a variety $X$ to a variety $Y$.
+Show that there is a largest open set on which $\varphi$ is represented by a morphism.
+One says that the rational map is defined at the points of that open set.
 :::

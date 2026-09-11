@@ -41,8 +41,7 @@ That is exactly the universal property of $\inverselim G(B_i)$.
 The colimit statement is the same argument run the other way.
 
 The payoff is the exactness of the tensor-hom pair, with no diagram chase.
-Kernels are limits and cokernels are colimits, so for the adjunction with $\wait\tensor_A N$ on the left and $\Hom_A(N,\wait)$ on the right:
-given $0 \to M' \to M \to M''$, one has $M' \cong \ker(M \to M'')$, so
+Kernels are limits and cokernels are colimits, so for the adjunction with $\wait\tensor_A N$ on the left and $\Hom_A(N,\wait)$ on the right: given $0 \to M' \to M \to M''$, one has $M' \cong \ker(M \to M'')$, so
 \[
 \Hom(N,M') \cong \Hom(N, \ker(M \to M'')) \cong \ker\qty( \Hom(N,M) \to \Hom(N,M'') ) ,
 \]

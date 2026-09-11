@@ -27,7 +27,9 @@ prompts:
 Let $D$ be a divisor on a smooth projective curve $X$ of genus $g$ over $k = \bar{k}$.
 
 - $D$ is ample if and only if $\deg D > 0$.
+
 - $\deg D \geq 2g$ implies $\abs{D}$ is base-point free.
+
 - $\deg D \geq 2g+1$ implies $D$ is very ample.
 :::
 

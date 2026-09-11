@@ -21,8 +21,8 @@ Then $X$ is a scheme over $\CC$, and $\sigma$ is a **semilinear** automorphism: 
 Since $\sigma^2 = \id$, we call $\sigma$ an **involution**.
 
 a. Let $X$ be a separated scheme of finite type over $\CC$, let $\sigma$ be a semilinear involution on $X$, and assume that for any two points $x_1, x_2 \in X$ there is an open affine subset containing both of them.
-   This last condition holds for example if $X$ is quasi-projective.
-   Show that there is a unique separated scheme $X_0$ of finite type over $\RR$ with $\fiberprod{X_0}{\RR}{\CC} \cong X$, such that this isomorphism identifies the given involution of $X$ with the one described above.
+This last condition holds for example if $X$ is quasi-projective.
+Show that there is a unique separated scheme $X_0$ of finite type over $\RR$ with $\fiberprod{X_0}{\RR}{\CC} \cong X$, such that this isomorphism identifies the given involution of $X$ with the one described above.
 
 For the following statements, $X_0$ denotes a separated scheme of finite type over $\RR$, and $X, \sigma$ the corresponding scheme with involution over $\CC$.
 

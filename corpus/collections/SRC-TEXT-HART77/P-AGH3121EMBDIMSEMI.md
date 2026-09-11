@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $Y$ be a scheme of finite type over an algebraically closed field $k$. Show that the function
+Let $Y$ be a scheme of finite type over an algebraically closed field $k$.
+Show that the function
 \[
 \varphi(y) = \dim_k (\mfm_y / \mfm_y^2)
 \]

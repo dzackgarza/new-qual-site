@@ -25,7 +25,10 @@ For example, when $n = 1$ and $d = 2$ we have $N = 2$, and the image of the $2$-
 
 1. Let $\theta: k[y_0,\ldots,y_N] \to k[x_0,\ldots,x_n]$ be the homomorphism sending $y_i \mapsto M_i$, and let $\mfa = \ker \theta$.
    Show that $\mfa$ is a homogeneous prime ideal, so that $Z(\mfa)$ is a projective variety in $\PP^N$.
+
 2. Show that the image of $\rho_d$ is exactly $Z(\mfa)$.
+
 3. Show that $\rho_d$ is a homeomorphism of $\PP^n$ onto the projective variety $Z(\mfa)$.
+
 4. Show that the twisted cubic curve in $\PP^3$ is the $3$-uple embedding of $\PP^1$ in $\PP^3$, for a suitable choice of coordinates.
 :::

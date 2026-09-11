@@ -18,12 +18,12 @@ review: draft
 
 ::: problem
 1. Show that $\dim \PP^n = n$.
+
 2. If $Y \subseteq \PP^n$ is a quasi-projective variety, show that $\dim Y = \dim \bar{Y}$.
 :::
 
 ::: solution
-**Part 1.**
-By the previous exercise, $\dim S(\PP^n) = \dim \PP^n + 1$, and
+**Part 1.** By the previous exercise, $\dim S(\PP^n) = \dim \PP^n + 1$, and
 \[
 \dim S(\PP^n) = \trdeg_k k[x_0,\ldots,x_n] = n+1 ,
 \]
@@ -32,8 +32,7 @@ so $\dim \PP^n = n$.
 Alternatively, take the standard open cover $\ts{U_i} \covers \PP^n$.
 Each chart satisfies $\dim U_i = \dim U_0 = \dim \AA^n = n$, using the identification $\tv{x_0 : \cdots : x_n} \mapsto \qty{x_1/x_0, \ldots, x_n/x_0}$, and $\dim \PP^n = \sup_i \dim U_i = n$.
 
-**Part 2.**
-Pass to the affine cone.
+**Part 2.** Pass to the affine cone.
 Since $\dim C(Y) = \dim Y + 1$, it suffices to prove $\dim C(Y) = \dim \overline{C(Y)}$, and $C(Y)$ is quasi-affine, so this is the affine statement.
 
 That affine statement goes as follows.

@@ -41,5 +41,6 @@ Surjectivity and injectivity both fall out of this uniqueness.
 The chord-and-tangent construction is then a translation of the same statement: $p + q + r \sim 3p_0$ exactly when $p, q, r$ are cut out by a line, since $\abs{3p_0}$ is the hyperplane system.
 So the geometric group law is not an extra structure, it is the linear equivalence written in coordinates.
 
-Two facts worth having: a morphism of elliptic curves carrying base point to base point is automatically a group homomorphism, and $\operatorname{End}(E, p_0)$ is a ring containing $\ZZ$. When it is strictly larger, $E$ has complex multiplication, which over $\CC$ means $\tau$ generates an imaginary quadratic field.
+Two facts worth having: a morphism of elliptic curves carrying base point to base point is automatically a group homomorphism, and $\operatorname{End}(E, p_0)$ is a ring containing $\ZZ$.
+When it is strictly larger, $E$ has complex multiplication, which over $\CC$ means $\tau$ generates an imaginary quadratic field.
 :::

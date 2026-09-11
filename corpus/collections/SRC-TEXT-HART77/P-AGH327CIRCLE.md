@@ -19,5 +19,6 @@ Let $S^1$ be the circle (with its usual topology), and let $\ZZ$ be the constant
 
 a. Show that $H^1(S^1, \ZZ) \cong \ZZ$, using our definition of cohomology.
 
-b. Now let $\mcr$ be the sheaf of germs of continuous real-valued functions on $S^1$. Show that $H^1(S^1, \mcr)=0$.
+b. Now let $\mcr$ be the sheaf of germs of continuous real-valued functions on $S^1$.
+Show that $H^1(S^1, \mcr)=0$.
 :::

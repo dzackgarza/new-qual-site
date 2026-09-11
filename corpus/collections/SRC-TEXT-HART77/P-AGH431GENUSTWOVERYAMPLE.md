@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-If $X$ is a curve of genus 2, show that a divisor $D$ is very ample $\iff \deg D \geq 5$. This strengthens (3.3.4).
+If $X$ is a curve of genus 2, show that a divisor $D$ is very ample $\iff \deg D \geq 5$.
+This strengthens (3.3.4).
 :::

@@ -29,6 +29,7 @@ The assignment $T \mapsto X(T) \da \Hom_S(T, X)$ is the **functor of points** of
 
 ::: {.proposition}
 - Morphisms $\Spec L \to X$, for $L$ a field, correspond to pairs: a point $x \in X$ and a field embedding $\kappa(x) \injects L$.
+
 - Morphisms $\Spec k[\eps]/\eps^2 \to X$ for $X$ over $k$ correspond to pairs: a $k$-rational point $x$, and a tangent vector in $(\mfm_x/\mfm_x^2)\dual$.
 :::
 

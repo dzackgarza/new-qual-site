@@ -22,8 +22,7 @@ b. Give an example of a surjective morphism of sheaves $\varphi: \mcf \to \mcg$ 
 :::
 
 ::: solution
-**Part a.**
-($\Rightarrow$) Suppose $\phi$ is surjective, so $\phi_P$ is surjective for every $P$.
+**Part a.** ($\Rightarrow$) Suppose $\phi$ is surjective, so $\phi_P$ is surjective for every $P$.
 Fix an open $U$ and a section $s \in \mcg(U)$.
 For each $P \in U$ the germ $s_P \in \mcg_P$ lifts to some $t_P \in \mcf_P$ with $\phi_P(t_P) = s_P$.
 As in the stalk arguments of the previous exercise, this identity of germs is already an identity of sections over a small enough neighbourhood: there is an open $U_P \ni P$ with $U_P \subseteq U$ and a section $t \in \mcf(U_P)$ with $\phi(U_P)(t) = \ro{s}{U_P}$.
@@ -34,8 +33,7 @@ The condition gives a cover $\ts{U_i}$ of $U$ and lifts $t_i \in \mcf(U_i)$ with
 Choose an index $i$ with $P \in U_i$; then the germ of $t_i$ at $P$ maps to $s_P$.
 So $\phi_P$ is surjective for all $P$, and hence $\phi$ is surjective.
 
-**Part b.**
-Take the exponential sequence of sheaves on $\CC$:
+**Part b.** Take the exponential sequence of sheaves on $\CC$:
 \[
 0 \to \ul{\ZZ} \injects (\OO_\CC, +) \surjectsvia{\exp} (\OO_\CC\units, \cdot) \to 0.
 \]

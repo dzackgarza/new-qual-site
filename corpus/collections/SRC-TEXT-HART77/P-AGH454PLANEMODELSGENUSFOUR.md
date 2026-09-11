@@ -20,5 +20,6 @@ Another way of distinguishing curves of genus $g$ is to ask, what is the least d
 
 a. if $X$ has two $g_3^1$'s, it can be represented as a plane quintic with two nodes, and conversely;
 
-b. if $X$ has one $g_3^1$, then it can be represented as a plane quintic with a tacnode (I, Ex. 5.14d), but the least degree of a plane representation with only nodes is 6.
+b. if $X$ has one $g_3^1$, then it can be represented as a plane quintic with a tacnode (I, Ex.
+5.14d), but the least degree of a plane representation with only nodes is 6.
 :::

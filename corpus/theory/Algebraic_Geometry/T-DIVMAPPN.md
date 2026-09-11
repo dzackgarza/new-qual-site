@@ -35,6 +35,7 @@ is a morphism with $\varphi^* \OO_{\PP^n}(1) \cong \mcl$, and every morphism to 
 $\varphi_{\abs{V}}$ is a closed immersion exactly when the system separates points and separates tangent vectors:
 
 - for all $p \neq q$ there is $D \in \abs{V}$ with $p \in \supp D$ and $q \notin \supp D$;
+
 - for all $p$ and all $0 \neq t \in T_p X$ there is $D \in \abs{V}$ with $p \in \supp D$ and $t \notin T_p(\supp D)$.
 :::
 

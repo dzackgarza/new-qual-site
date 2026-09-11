@@ -24,8 +24,8 @@ Now assume $k$ is an algebraically closed field, and $X$ is a connected, normal 
 Show that for some $d > 0$ the $d\dash$uple embedding of $X$ is projectively normal, as follows.
 
 a. Let $S$ be the homogeneous coordinate ring of $X$, and let $S' = \bigoplus_{n \geq 0} \Gamma(X, \OO_X(n))$.
-   Show that $S$ is a domain, and that $S'$ is its integral closure.
-   *Hint:* first show $X$ is integral; then regard $S'$ as the global sections of the sheaf of rings $\mcs = \bigoplus_{n \geq 0} \OO_X(n)$ on $X$, and show that $\mcs$ is a sheaf of integrally closed domains.
+Show that $S$ is a domain, and that $S'$ is its integral closure.
+*Hint:* first show $X$ is integral; then regard $S'$ as the global sections of the sheaf of rings $\mcs = \bigoplus_{n \geq 0} \OO_X(n)$ on $X$, and show that $\mcs$ is a sheaf of integrally closed domains.
 
 b. Show that $S_d = S'_d$ for all sufficiently large $d$.
 

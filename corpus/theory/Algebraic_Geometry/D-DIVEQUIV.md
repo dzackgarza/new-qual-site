@@ -26,7 +26,9 @@ prompts:
 Let $X$ be a smooth projective variety, with intersection pairing $D \cdot C = \deg \restrictionof{\OO_X(D)}{C}$ for $C$ an irreducible curve.
 
 - $D_1 \sim D_2$ (linear) when $D_1 - D_2 = \div(f)$;
+
 - $D_1 \sim_{\mathrm{alg}} D_2$ (algebraic) when the two sit in one connected family of divisors on $X$;
+
 - $D_1 \equiv D_2$ (numerical) when $(D_1 - D_2) \cdot C = 0$ for every curve $C \subseteq X$.
 :::
 

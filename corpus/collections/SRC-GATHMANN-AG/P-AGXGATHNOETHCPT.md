@@ -18,7 +18,7 @@ review: draft
 Prove the following:
 
 a. Every noetherian topological space is compact.
-  In particular, every open subset of an affine variety is compact in the Zariski topology.
+In particular, every open subset of an affine variety is compact in the Zariski topology.
 
 b. A complex affine variety of dimension at least 1 is never compact in the classical topology.
 :::

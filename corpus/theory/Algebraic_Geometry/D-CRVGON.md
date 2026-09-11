@@ -26,8 +26,7 @@ The **gonality** of $C$ is the least $d$ for which $C$ carries a $g^1_d$, equiva
 :::
 
 ::: {.proposition}
-Gonality $1$ means $C \cong \PP^1$, gonality $2$ means $C$ is hyperelliptic, and gonality $3$ means $C$ is **trigonal**.
-Every curve of genus $g$ carries a $g^1_d$ as soon as $d \geq \tfrac{1}{2}g + 1$, and for $d$ below that bound there exist curves of genus $g$ with no $g^1_d$.
+Gonality $1$ means $C \cong \PP^1$, gonality $2$ means $C$ is hyperelliptic, and gonality $3$ means $C$ is **trigonal**. Every curve of genus $g$ carries a $g^1_d$ as soon as $d \geq \tfrac{1}{2}g + 1$, and for $d$ below that bound there exist curves of genus $g$ with no $g^1_d$.
 :::
 
 ::: {.remark}

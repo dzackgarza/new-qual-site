@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $f: X \to Y$ be a morphism of finite type of noetherian schemes. Show that
+Let $f: X \to Y$ be a morphism of finite type of noetherian schemes.
+Show that
 \[
 \ts{ x \in X \st f \text{ is flat at } x }
 \]

@@ -21,5 +21,6 @@ a. If $\deg \mfb \geqslant e+2$, then there is a section $D \sim C_0+\mfb f$ suc
 
 b. The linear system $\left|C_0+\mfb f\right|$ is very ample if and only if $\deg \mfb \geqslant e+3$.
 
-Note. The case $e=-1$ will require special attention.
+Note.
+The case $e=-1$ will require special attention.
 :::

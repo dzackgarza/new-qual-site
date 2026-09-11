@@ -16,7 +16,9 @@ review: draft
 ---
 
 ::: problem
-Let $Y$ be an integral scheme of finite type over an algebraically closed field $k$. Let $f: X \to Y$ be a flat projective morphism whose fibres are all integral schemes. Let $\mcl, \mcm$ be invertible sheaves on $X$, and assume for each $y \in Y$ that $\mcl_y \cong \mcm_y$ on the fibre $X_y$.
+Let $Y$ be an integral scheme of finite type over an algebraically closed field $k$.
+Let $f: X \to Y$ be a flat projective morphism whose fibres are all integral schemes.
+Let $\mcl, \mcm$ be invertible sheaves on $X$, and assume for each $y \in Y$ that $\mcl_y \cong \mcm_y$ on the fibre $X_y$.
 
 Show that there is an invertible sheaf $\mcn$ on $Y$ such that $\mcl \cong \mcm \tensor f^* \mcn$.
 

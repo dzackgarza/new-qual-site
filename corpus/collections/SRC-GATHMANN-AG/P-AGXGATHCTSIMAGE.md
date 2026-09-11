@@ -23,8 +23,7 @@ b. Show that if $X$ is irreducible then $f(X)$ is irreducible.
 :::
 
 ::: solution
-**Part a**:
-Toward a contradiction, if $f(X) = Y_1 {\textstyle\coprod} Y_2$ with $Y_1, Y_2$ nonempty and open in $Y$, then
+**Part a**: Toward a contradiction, if $f(X) = Y_1 {\textstyle\coprod} Y_2$ with $Y_1, Y_2$ nonempty and open in $Y$, then
 \[
 f^{-1}(f(X)) \subseteq X
 \]
@@ -36,8 +35,7 @@ on the other.
 If $f$ is continuous, the preimages $f^{-1}(Y_i)$ are open (and nonempty), so $X$ contains a disconnected subset.
 However, every subset of a connected set must be connected, contradicting the connectedness of $X$.
 
-**Part b**:
-Suppose $f(X) = Y_1 \union Y_2$ with $Y_i$ proper closed subsets of $Y$.
+**Part b**: Suppose $f(X) = Y_1 \union Y_2$ with $Y_i$ proper closed subsets of $Y$.
 Then $f^{-1}(Y_1) \union f^{-1}(Y_2) = (f^{-1} \circ f)(X) \subseteq X$ are closed in $X$, since $f$ is continuous.
 Since $X$ is irreducible, without loss of generality (by relabeling) this forces $X_1 = \emptyset$.
 But then $f(X_1) = \emptyset$, forcing $f(X) = Y_2$.

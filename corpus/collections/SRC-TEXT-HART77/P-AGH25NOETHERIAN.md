@@ -16,6 +16,7 @@ review: draft
 
 ::: problem
 1. Show that $\PP^n$ is a noetherian topological space.
+
 2. Show that every algebraic set in $\PP^n$ can be written uniquely as a finite union of irreducible algebraic sets, no one containing another.
    These are called its **irreducible components**.
 :::

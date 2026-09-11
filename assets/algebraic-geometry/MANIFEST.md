@@ -1,12 +1,11 @@
 # Algebraic geometry figures
 
-Figures copied from the 2022 Fall Orals vault
-(`Class_Notes/2022/Fall/Orals/attachments/`). The vault copies are unchanged.
+Figures copied from the 2022 Fall Orals vault (`Class_Notes/2022/Fall/Orals/attachments/`). The vault copies are unchanged.
 
 Paths below are relative to the repository root.
 
 | Path | Depicts | Topic | Original vault filename | Referencing vault note |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `assets/algebraic-geometry/varieties/affine-cone-over-curve-in-p2.png` | Affine cone `C(Y)` in `A^3` over a curve `Y` in `P^2`, vertex at the origin (Hartshorne Figure 1) | varieties | `2022-09-17_22-10-43.png` | `Hartshorne_Problems/1_Hartshorne/1_2x Projective Varieties.md` (Ex. 2.10) |
 | `assets/algebraic-geometry/varieties/quadric-surface-in-p3-two-rulings.png` | Quadric surface `xy - zw = 0` in `P^3` with the two families of lines `L_0`, `M_0` (Hartshorne Figure 2) | varieties | `2022-09-17_22-24-16.png` | `Hartshorne_Problems/1_Hartshorne/1_2x Projective Varieties.md` (Ex. 2.15) |
 | `assets/algebraic-geometry/sheaves/sheafification-espace-etale.png` | Hand-drawn sheafification: sections `s` over `U` and `t` over `V` as functions into the disjoint union of stalks, agreeing at a point `q` | sheaves | `Pasted image 20221205143016.png` | `0_Study Guides/022 Sheaves.md` |
@@ -37,24 +36,10 @@ Paths below are relative to the repository root.
 
 ## Not copied
 
-- **Screenshots of typeset notes and textbook pages** (AGENTS.md, *Screenshots of
-  notes*): the whole `2022-01-09_*` batch (16 crops of theorem statements on
-  Zariski's main theorem, Noether normalisation, Stein factorisation, Hironaka,
-  Castelnuovo, Riemann-Roch, adjunction, Castelnuovo-Enriques), plus
-  `Pasted image 20220315152915.png`, `20220315153140`, `20220315153154`,
-  `20220921202350`, `20220921204101`, `20220921204126`, `20220921204305`,
-  `20220921204448`, `20220921204544`, `20221123200223`, `20221123205220`,
-  `20221123232902`, `20221124003320`, `20221128124229`, `20221129104521`,
-  `20221204223854`, `20221207141027`, `20221207150823`, `20221208004152`,
-  `20221208013026`, `20221208013053`, `20221208015307`, `20221208015606`,
-  `20221208020507`. These are text, not figures; the statements belong on cards.
-- **Qualifying-exam syllabi**: `Pasted image 20220517141232`, `20220517142058`,
-  `20220517142240`, `20220517142250`, `20220517142303`, `20220517142338`,
-  `20220517142403`, `20220517142548`, `20220517142612`, `20221012002702`,
-  `20221012003451`. Screenshots of Harvard, Berkeley and UGA syllabus documents.
-- **Duplicates**: `Pasted image 20221126191913.png` (byte-identical to
-  `20221126191918`), `20221129104508` (identical to `20221129103949`),
-  `20221130174054` (identical to `20221130174100`),
-  `20221208015324` (the same Cox figure as `20221129103949`, with surrounding
-  text), `20221207204617` (the same drawing as `20221206180456`).
+- **Screenshots of typeset notes and textbook pages** (AGENTS.md, *Screenshots of notes*): the whole `2022-01-09_*` batch (16 crops of theorem statements on Zariski's main theorem, Noether normalisation, Stein factorisation, Hironaka, Castelnuovo, Riemann-Roch, adjunction, Castelnuovo-Enriques), plus `Pasted image 20220315152915.png`, `20220315153140`, `20220315153154`, `20220921202350`, `20220921204101`, `20220921204126`, `20220921204305`, `20220921204448`, `20220921204544`, `20221123200223`, `20221123205220`, `20221123232902`, `20221124003320`, `20221128124229`, `20221129104521`, `20221204223854`, `20221207141027`, `20221207150823`, `20221208004152`, `20221208013026`, `20221208013053`, `20221208015307`, `20221208015606`, `20221208020507`. These are text, not figures; the statements belong on cards.
+
+- **Qualifying-exam syllabi**: `Pasted image 20220517141232`, `20220517142058`, `20220517142240`, `20220517142250`, `20220517142303`, `20220517142338`, `20220517142403`, `20220517142548`, `20220517142612`, `20221012002702`, `20221012003451`. Screenshots of Harvard, Berkeley and UGA syllabus documents.
+
+- **Duplicates**: `Pasted image 20221126191913.png` (byte-identical to `20221126191918`), `20221129104508` (identical to `20221129103949`), `20221130174054` (identical to `20221130174100`), `20221208015324` (the same Cox figure as `20221129103949`, with surrounding text), `20221207204617` (the same drawing as `20221206180456`).
+
 - `figures/` and `tikzcd/` in the vault contain no image files.

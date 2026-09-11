@@ -20,5 +20,6 @@ The following statement holds: if $X$ is a nonsingular curve and $Y$ is a projec
 Show by example that this result is false if either
 
 1. $\dim X \geq 2$, or
+
 2. $Y$ is not projective.
 :::

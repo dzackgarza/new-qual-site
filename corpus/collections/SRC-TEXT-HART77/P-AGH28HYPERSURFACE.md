@@ -22,13 +22,11 @@ In this case $Y$ is called a **hypersurface** in $\PP^n$.
 :::
 
 ::: solution
-**($\implies$).**
-The affine cone has $\dim C(Y) = \dim Y + 1 = (n-1) + 1 = n$ inside $\AA^{n+1}$, so $C(Y)$ has codimension one there.
+**($\implies$).** The affine cone has $\dim C(Y) = \dim Y + 1 = (n-1) + 1 = n$ inside $\AA^{n+1}$, so $C(Y)$ has codimension one there.
 Hence $C(Y) = Z(f)$ for some irreducible $f \in k[x_0,\ldots,x_n]$.
 Letting $F$ be the homogenization of $f$, the affine cone correspondence gives $Y = Z(F)$.
 
-**($\impliedby$).**
-Let $Y = Z(F)$ for an irreducible homogeneous $F$ of positive degree.
+**($\impliedby$).** Let $Y = Z(F)$ for an irreducible homogeneous $F$ of positive degree.
 Then $\gens{F}$ is a minimal prime of height $1$, and the height-quotient formula gives
 \[
 \height \gens{F} + \dim S/\gens{F} = \dim S

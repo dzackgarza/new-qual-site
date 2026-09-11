@@ -19,5 +19,6 @@ Let $f \in k[x,y,z]$ be a homogeneous polynomial, let $Y = Z(f) \subseteq \PP^2$
 $$
 \frac{\partial f}{\partial x}(P), \qquad \frac{\partial f}{\partial y}(P), \qquad \frac{\partial f}{\partial z}(P)
 $$
-is nonzero. Show that $f$ is irreducible, and hence that $Y$ is a nonsingular variety.
+is nonzero.
+Show that $f$ is irreducible, and hence that $Y$ is a nonsingular variety.
 :::

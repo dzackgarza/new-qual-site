@@ -16,5 +16,6 @@ review: draft
 
 ::: problem
 1. Find the degree of the $d\da$uple embedding of $\PP^n$ in $\PP^N$.
+
 2. Find the degree of the Segre embedding of $\PP^r \times \PP^s$ in $\PP^N$.
 :::

@@ -20,7 +20,7 @@ We call the ring $\Gamma(\hat X, \OO_{\hat X})$ the ring of **formal-regular** f
 In this exercise we show that if $Y$ is a connected, nonsingular, positive dimensional subvariety of $X = \PP^n_k$ over an algebraically closed field $k$, then $\Gamma(\hat X, \OO_{\hat X}) = k$.
 
 a. Let $\mci$ be the ideal sheaf of $Y$.
-   Show that there is an inclusion of sheaves on $Y$, $\mci/\mci^2 \injects \OO_Y(-1)^{n+1}$.
+Show that there is an inclusion of sheaves on $Y$, $\mci/\mci^2 \injects \OO_Y(-1)^{n+1}$.
 
 b. Show that for any $r \geq 1$, $\Gamma(Y, \mci^r/\mci^{r+1}) = 0$.
 
@@ -28,8 +28,8 @@ c. Use the exact sequences
 \[
 0 \to \mci^r/\mci^{r+1} \to \OO_X/\mci^{r+1} \to \OO_X/\mci^r \to 0
 \]
-   and induction on $r$ to show that $\Gamma(Y, \OO_X/\mci^r) = k$ for all $r \geq 1$.
+and induction on $r$ to show that $\Gamma(Y, \OO_X/\mci^r) = k$ for all $r \geq 1$.
 
 d. Conclude that $\Gamma(\hat X, \OO_{\hat X}) = k$.
-   Actually the same result holds without the hypothesis that $Y$ is nonsingular, but the proof is more difficult.
+Actually the same result holds without the hypothesis that $Y$ is nonsingular, but the proof is more difficult.
 :::

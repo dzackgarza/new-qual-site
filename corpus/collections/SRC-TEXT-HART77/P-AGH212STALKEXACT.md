@@ -27,8 +27,7 @@ of sheaves and morphisms is exact if and only if for each $P \in X$ the correspo
 :::
 
 ::: solution
-**Part a.**
-The clean argument is formal: taking the stalk at $P$ is a filtered colimit over the neighbourhoods of $P$, a kernel is a finite limit, and filtered colimits commute with finite limits.
+**Part a.** The clean argument is formal: taking the stalk at $P$ is a filtered colimit over the neighbourhoods of $P$, a kernel is a finite limit, and filtered colimits commute with finite limits.
 This gives $(\ker \phi)_P = \ker(\phi_P)$ at once.
 For the image, write $\im \phi \da \ker(\mcg \to \coker \phi)$, so the image is again a kernel, and the same commutation applies.
 
@@ -46,9 +45,7 @@ Taking germs at $P$ exhibits $s_P = \qty{\ro{s}{V}}_P$ as an element of $(\ker \
 
 The diagram chase for images is the same argument run in the other direction.
 
-**Part b.**
-*Injectivity.*
-($\Rightarrow$) If $\phi$ is injective then $\ker \phi = 0$ as a sheaf, so by part (a) we get $\ker(\phi_P) = (\ker \phi)_P = 0$ for every $P$, and $\phi_P$ is injective.
+**Part b.** *Injectivity.* ($\Rightarrow$) If $\phi$ is injective then $\ker \phi = 0$ as a sheaf, so by part (a) we get $\ker(\phi_P) = (\ker \phi)_P = 0$ for every $P$, and $\phi_P$ is injective.
 
 ($\Leftarrow$) Suppose $\ker(\phi_P) = 0$ for all $P$, and set $K \da \ker \phi$, a sheaf.
 By part (a), $K_P = 0$ for all $P$.
@@ -58,8 +55,7 @@ Hence $K = 0$ and $\phi$ is injective.
 
 *Surjectivity.* The same argument applied to $\coker \phi$, whose stalks are the cokernels of the $\phi_P$ by part (a), shows $\coker \phi = 0$ if and only if every $\phi_P$ is surjective.
 
-**Part c.**
-Exactness of the sequence of sheaves means $\ker \phi^i = \im \phi^{i-1}$ as subsheaves of $\mcf^i$.
+**Part c.** Exactness of the sequence of sheaves means $\ker \phi^i = \im \phi^{i-1}$ as subsheaves of $\mcf^i$.
 
 ($\Rightarrow$) If $\ker \phi^i = \im \phi^{i-1}$ then these sheaves have the same stalks, so by part (a)
 \[

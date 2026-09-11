@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be a projective scheme over a field $k$, and let $\mcf$ be a coherent sheaf on $X$. We define the Euler characteristic of $\mcf$ by
+Let $X$ be a projective scheme over a field $k$, and let $\mcf$ be a coherent sheaf on $X$.
+We define the Euler characteristic of $\mcf$ by
 \[
 \chi(\mcf)=\sum_i (-1)^i \dim_k H^i(X, \mcf).
 \]

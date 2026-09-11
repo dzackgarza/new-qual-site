@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be an affine variety with $\dim X = d$. Show that if $p$ is a smooth point then $\dim \T_pX = d$, and otherwise $\dim \T_p X > d$.
+Let $X$ be an affine variety with $\dim X = d$.
+Show that if $p$ is a smooth point then $\dim \T_pX = d$, and otherwise $\dim \T_p X > d$.
 :::

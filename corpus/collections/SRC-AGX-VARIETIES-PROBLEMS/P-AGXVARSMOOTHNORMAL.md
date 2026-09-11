@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Does smoothness imply normality? Conversely?
+Does smoothness imply normality?
+Conversely?
 :::

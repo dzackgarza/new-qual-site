@@ -46,7 +46,9 @@ Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the who
 The same $X_P$ arises three ways, and an examiner may ask for any of them.
 
 1. The normal fan, as above.
+
 2. Cones over the proper faces of the polar dual $P^\circ$ — the normal fan of $P$ is the fan of cones over faces of $P^\circ$.
+
 3. A direct gluing: $X_P = \Union_{m \in P \intersect M} \Spec k[\sigma_{\hat m}\dual \intersect M]$ with $\sigma_{\hat m} = \Cone(P \intersect M - m)$, the cone of directions out of the vertex $m$.
 
 Only the first two are worth memorising; the third is what the first two are secretly doing.

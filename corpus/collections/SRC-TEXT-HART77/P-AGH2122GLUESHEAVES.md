@@ -22,6 +22,7 @@ Let $X$ be a topological space, let $\mathfrak{U} = \ts{U_i}$ be an open cover o
 such that
 
 1. for each $i$, $\phi_{ii} = \id$, and
+
 2. for each $i, j, k$, $\phi_{ik} = \phi_{jk} \circ \phi_{ij}$ on $U_i \intersect U_j \intersect U_k$.
 
 Show that there exists a unique sheaf $\mcf$ on $X$, together with isomorphisms $\psi_i: \ro{\mcf}{U_i} \to \mcf_i$, such that for each $i, j$ one has $\psi_j = \phi_{ij} \circ \psi_i$ on $U_i \intersect U_j$.

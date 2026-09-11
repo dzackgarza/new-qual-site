@@ -24,7 +24,7 @@ Prove this in the following steps.
 a. Reduce to the case $X$ irreducible.
 
 b. Show that $X$ can be covered by finitely many open subsets $U_i$, $i = 1, \ldots, n$, each of which is quasi-projective over $S$.
-   Let $U_i \injects P_i$ be an open immersion of $U_i$ into a scheme $P_i$ which is projective over $S$.
+Let $U_i \injects P_i$ be an open immersion of $U_i$ into a scheme $P_i$ which is projective over $S$.
 
 c. Let $U = \bigcap_i U_i$, and consider the map
 \[

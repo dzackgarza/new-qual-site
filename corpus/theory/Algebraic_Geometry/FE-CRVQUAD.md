@@ -39,6 +39,5 @@ A curve of even degree $d = 2a$ is the complete intersection of $Q$ with a surfa
 This is the single most useful family of examples in the subject, because it produces a curve of every genus on demand: type $(g+1, 2)$ gives degree $g+3$ and genus $g$, which is how one proves curves of every genus exist.
 
 It also explains the two-family phenomena in $\PP^3$.
-The twisted cubic is type $(1,2)$; the elliptic quartic is type $(2,2)$; the canonical genus-$4$ sextic is type $(3,3)$, and the two rulings restrict to its two $g^1_3$'s.
-Whether a given curve lies on a quadric is a cohomological question about $h^0(\mci_C(2))$, and it is exactly the invariant that separates the two families of curves with $\deg = 9$ and $g = 10$.
+The twisted cubic is type $(1,2)$; the elliptic quartic is type $(2,2)$; the canonical genus-$4$ sextic is type $(3,3)$, and the two rulings restrict to its two $g^1_3$'s. Whether a given curve lies on a quadric is a cohomological question about $h^0(\mci_C(2))$, and it is exactly the invariant that separates the two families of curves with $\deg = 9$ and $g = 10$.
 :::

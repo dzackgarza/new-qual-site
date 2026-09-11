@@ -16,10 +16,10 @@ review: draft
 
 ::: problem
 a. Let $X$ be a scheme over a scheme $Y$, and let $\mcl, \mcm$ be two very ample invertible sheaves on $X$.
-   Show that $\mcl \tensor \mcm$ is also very ample.
-   *Hint:* use a Segre embedding.
+Show that $\mcl \tensor \mcm$ is also very ample.
+*Hint:* use a Segre embedding.
 
 b. Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms of schemes.
-   Let $\mcl$ be a very ample invertible sheaf on $X$ relative to $Y$, and let $\mcm$ be a very ample invertible sheaf on $Y$ relative to $Z$.
-   Show that $\mcl \tensor f^* \mcm$ is a very ample invertible sheaf on $X$ relative to $Z$.
+Let $\mcl$ be a very ample invertible sheaf on $X$ relative to $Y$, and let $\mcm$ be a very ample invertible sheaf on $Y$ relative to $Z$.
+Show that $\mcl \tensor f^* \mcm$ is a very ample invertible sheaf on $X$ relative to $Z$.
 :::

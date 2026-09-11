@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Write $\mu_n = \ts{(x, y)\mapsto (\zeta_n x, \zeta_n y)}$ and define $X = \mspec \OO_{\AA^2}^{\mu_n}$ to be the spectrum of the subalgebra of $\mu_n$ invariants, equivalently $X = \AA^2/\mu_n$. Show that $X$ is a normal affine variety with a unique singular point.
+Write $\mu_n = \ts{(x, y)\mapsto (\zeta_n x, \zeta_n y)}$ and define $X = \mspec \OO_{\AA^2}^{\mu_n}$ to be the spectrum of the subalgebra of $\mu_n$ invariants, equivalently $X = \AA^2/\mu_n$.
+Show that $X$ is a normal affine variety with a unique singular point.
 :::

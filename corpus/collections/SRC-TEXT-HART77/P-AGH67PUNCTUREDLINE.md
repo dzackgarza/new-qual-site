@@ -15,9 +15,11 @@ review: draft
 ---
 
 ::: problem
-Let $P_1, \ldots, P_r, Q_1, \ldots, Q_s$ be distinct points of $\AA^1$. If
+Let $P_1, \ldots, P_r, Q_1, \ldots, Q_s$ be distinct points of $\AA^1$.
+If
 $$
 \AA^1 \sm \ts{P_1, \ldots, P_r} \cong \AA^1 \sm \ts{Q_1, \ldots, Q_s},
 $$
-show that $r = s$. Is the converse true?
+show that $r = s$.
+Is the converse true?
 :::

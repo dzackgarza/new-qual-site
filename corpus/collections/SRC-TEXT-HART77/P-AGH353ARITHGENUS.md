@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be a projective scheme of dimension $r$ over a field $k$. We define the arithmetic genus $p_a$ of $X$ by
+Let $X$ be a projective scheme of dimension $r$ over a field $k$.
+We define the arithmetic genus $p_a$ of $X$ by
 \[
 p_a(X)=(-1)^r(\chi(\mco_X)-1).
 \]
@@ -31,7 +32,9 @@ p_a(X)=\dim_k H^1(X, \mco_X).
 \]
 Hint: Use (I, 3.4).
 
-b. If $X$ is a closed subvariety of $\PP_k^r$, show that this $p_a(X)$ coincides with the one defined in (I, Ex. 7.2), which apparently depended on the projective embedding.
+b. If $X$ is a closed subvariety of $\PP_k^r$, show that this $p_a(X)$ coincides with the one defined in (I, Ex.
+7.2), which apparently depended on the projective embedding.
 
-c. If $X$ is a nonsingular projective curve over an algebraically closed field $k$, show that $p_a(X)$ is in fact a birational invariant. Conclude that a nonsingular plane curve of degree $d \geq 3$ is not rational.
+c. If $X$ is a nonsingular projective curve over an algebraically closed field $k$, show that $p_a(X)$ is in fact a birational invariant.
+Conclude that a nonsingular plane curve of degree $d \geq 3$ is not rational.
 :::

@@ -18,9 +18,14 @@ review: draft
 Let $f:X\to Y$ with $X, Y$ projective varieties over $k= \CC$.
 
 - Show that $f$ is proper and closed.
+
 - Show that $f(X)$ is a projective subvariety.
+
 - Show that if $f$ is dominant or birational, then $f$ is surjective and any regular function on $X$ is constant.
+
 - Show that if $U \subseteq X$ is open and nonempty, then $\ff \OO_U = \CC(X)$.
+
 - Show that $f$ is birational iff $f^*: \OO_Y\to \OO_X$ is an isomorphism.
+
 - Show that $X\cross Y$ is projective, using the Segre embedding.
 :::

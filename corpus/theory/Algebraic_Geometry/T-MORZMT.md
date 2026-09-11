@@ -30,8 +30,7 @@ with the first an open immersion and the second finite.
 :::
 
 ::: {.theorem title="Zariski's form"}
-Let $f : X \to Y$ be a birational projective morphism of Noetherian integral schemes with $Y$ **normal**.
-Then $f_* \OO_X = \OO_Y$ and every fibre of $f$ is connected.
+Let $f : X \to Y$ be a birational projective morphism of Noetherian integral schemes with $Y$ **normal**. Then $f_* \OO_X = \OO_Y$ and every fibre of $f$ is connected.
 In particular a birational projective morphism to a normal $Y$ that is quasi-finite is an isomorphism.
 :::
 

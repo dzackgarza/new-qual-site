@@ -29,8 +29,7 @@ Conclude also that $\dim Y = \dim Y_i$ whenever $Y_i \da \phi_i(Y \intersect U_i
 Cover $Y$ by the affine charts $Y_i$.
 Then $\dim Y = \sup_i \dim Y_i$, and since there are only finitely many charts the supremum is attained; after relabelling, assume it is attained at $Y_0$.
 
-**The chart ring is the degree-zero part of a localization.**
-Define maps between $A(Y_0)$ and the degree-zero piece $\qty{S(Y)_{x_0}}_0$ by
+**The chart ring is the degree-zero part of a localization.** Define maps between $A(Y_0)$ and the degree-zero piece $\qty{S(Y)_{x_0}}_0$ by
 \[
 \alpha(f) \da f\qty{1, \frac{x_1}{x_0}, \ldots, \frac{x_n}{x_0}},
 \qquad
@@ -43,22 +42,19 @@ These are mutually inverse ring maps: on the one hand
 and on the other hand $\beta(\alpha(f)) = f$ by the same computation read backwards.
 Hence $A(Y_0) \cong \qty{S(Y)_{x_0}}_0$.
 
-**Identifying the localization.**
-We have $S(Y) \cong A(Y_0)[x_0]$ and $S(Y)_{x_0} \cong S(Y)[x_0\inv]$, so
+**Identifying the localization.** We have $S(Y) \cong A(Y_0)[x_0]$ and $S(Y)_{x_0} \cong S(Y)[x_0\inv]$, so
 \[
 S(Y)_{x_0} \cong A(Y_0)[x_0, x_0\inv] .
 \]
 
-**Counting transcendence degree.**
-Adjoining $x_0\inv$ adds nothing transcendental, since $x_0$ and $x_0\inv$ satisfy the relation $uv - 1 = 0$.
+**Counting transcendence degree.** Adjoining $x_0\inv$ adds nothing transcendental, since $x_0$ and $x_0\inv$ satisfy the relation $uv - 1 = 0$.
 So the transcendence degree of $A(Y_0)[x_0, x_0\inv]$ over $A(Y_0)$ equals that of $A(Y_0)[x_0]$ over $A(Y_0)$, namely $1$, and therefore
 \[
 \trdeg_k A(Y_0)[x_0, x_0\inv] = \trdeg_k A(Y_0) + 1 .
 \]
 Using the isomorphism above, $\trdeg_k S(Y)_{x_0} = \trdeg_k A(Y_0) + 1$.
 
-**Conclusion.**
-Since $\dim Y_0 = \trdeg_k A(Y_0)$ and $\dim S(Y)_{x_0} = \trdeg_k S(Y)_{x_0}$, this reads
+**Conclusion.** Since $\dim Y_0 = \trdeg_k A(Y_0)$ and $\dim S(Y)_{x_0} = \trdeg_k S(Y)_{x_0}$, this reads
 \[
 \dim S(Y)_{x_0} = \dim Y_0 + 1 = \dim Y + 1 .
 \]

@@ -15,13 +15,14 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be a curve, and let $P \in X$ be a point. Then there exists a nonconstant rational function $f \in K(X)$, which is regular everywhere except at $P$.
+Let $X$ be a curve, and let $P \in X$ be a point.
+Then there exists a nonconstant rational function $f \in K(X)$, which is regular everywhere except at $P$.
 :::
 
 ::: solution
-Such a function is a section $f\in \globsec{X; \mcl(nD) }$ for some large enough $n$ measuring the order of the pole at $P$, where $D = [P]$ is the divisor of $P$. So it suffices to show that $h^0(\mcl(nD)) > 0$ for some $n$. RR says
-$$\chi(\mcl(nD)) = \deg D + 1 - g \implies h^0(\mcl(nD)) - h^1(\mcl(nD)) = n + 1-g.$$
-Claim: if $n$ is large, $h^1(\mcl(nD)) = 0$ and thus $h^0(\mcl(nD)) = n+1 -g$, and since $g$ is fixed and $n$ can vary, $h^0(\mcl(nD)) > 0$ for some $n$.
+Such a function is a section $f\in \globsec{X; \mcl(nD) }$ for some large enough $n$ measuring the order of the pole at $P$, where $D = [P]$ is the divisor of $P$.
+So it suffices to show that $h^0(\mcl(nD)) > 0$ for some $n$.
+RR says $$\chi(\mcl(nD)) = \deg D + 1 - g \implies h^0(\mcl(nD)) - h^1(\mcl(nD)) = n + 1-g.$$ Claim: if $n$ is large, $h^1(\mcl(nD)) = 0$ and thus $h^0(\mcl(nD)) = n+1 -g$, and since $g$ is fixed and $n$ can vary, $h^0(\mcl(nD)) > 0$ for some $n$.
 
 Why this claim is true: by Serre duality,
 $$

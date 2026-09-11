@@ -27,8 +27,7 @@ is a homomorphism of abelian groups, that is, $F(f+g) = F(f) + F(g)$ for all $f,
 :::
 
 ::: {.remark}
-Additivity is the minimum hypothesis under which $F$ carries a complex to a complex: it is what gives
-$F(\delta^{i+1}) \circ F(\delta^i) = F(\delta^{i+1}\circ \delta^i) = F(0) = 0$.
+Additivity is the minimum hypothesis under which $F$ carries a complex to a complex: it is what gives $F(\delta^{i+1}) \circ F(\delta^i) = F(\delta^{i+1}\circ \delta^i) = F(0) = 0$.
 Without it there is nothing to take cohomology of, so every statement about derived functors, $\delta$-functors, and the FHHF theorem silently assumes it.
 An additive functor also automatically preserves finite biproducts.
 :::

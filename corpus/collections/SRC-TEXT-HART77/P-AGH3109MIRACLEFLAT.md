@@ -15,7 +15,9 @@ review: draft
 ---
 
 ::: problem
-Let $f: X \to Y$ be a morphism of varieties over $k$. Assume that $Y$ is regular, that $X$ is Cohen-Macaulay, and that every fibre of $f$ has dimension equal to $\dim X - \dim Y$. Show that $f$ is flat.
+Let $f: X \to Y$ be a morphism of varieties over $k$.
+Assume that $Y$ is regular, that $X$ is Cohen-Macaulay, and that every fibre of $f$ has dimension equal to $\dim X - \dim Y$.
+Show that $f$ is flat.
 
 Hint: imitate the proof of (10.4), using (II, 8.21A).
 :::

@@ -18,5 +18,6 @@ review: draft
 ::: problem
 If $D$ is any divisor of degree $\geq 3$ on the elliptic curve $X$, and if we embed $X$ in $\PP^n$ by the complete linear system $\abs{D}$, show that the image of $X$ in $\PP^n$ is projectively normal.
 
-Note. It is true more generally that if $D$ is a divisor of degree $\geq 2g+1$ on a curve of genus $g$, then the embedding of $X$ by $\abs{D}$ is projectively normal (Mumford, p. 55).
+Note.
+It is true more generally that if $D$ is a divisor of degree $\geq 2g+1$ on a curve of genus $g$, then the embedding of $X$ by $\abs{D}$ is projectively normal (Mumford, p. 55).
 :::

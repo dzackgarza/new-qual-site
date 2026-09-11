@@ -15,7 +15,9 @@ review: draft
 ---
 
 ::: problem
-Let $X=\Spec A$ be an affine noetherian scheme. Let $M, N$ be $A$-modules, with $M$ finitely generated. Then
+Let $X=\Spec A$ be an affine noetherian scheme.
+Let $M, N$ be $A$-modules, with $M$ finitely generated.
+Then
 \[
 \Ext_X^i(\tilde{M}, \tilde{N}) \cong \Ext_A^i(M, N)
 \]

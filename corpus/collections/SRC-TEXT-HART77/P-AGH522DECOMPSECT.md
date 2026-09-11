@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be the ruled surface $\PP(\mathcal{E})$ over a curve $C$. Show that $\mathcal{E}$ is decomposable if and only if there exist two sections $C^{\prime}, C^{\prime \prime}$ of $X$ such that $C^{\prime} \cap C^{\prime \prime}=\varnothing$.
+Let $X$ be the ruled surface $\PP(\mathcal{E})$ over a curve $C$.
+Show that $\mathcal{E}$ is decomposable if and only if there exist two sections $C^{\prime}, C^{\prime \prime}$ of $X$ such that $C^{\prime} \cap C^{\prime \prime}=\varnothing$.
 :::

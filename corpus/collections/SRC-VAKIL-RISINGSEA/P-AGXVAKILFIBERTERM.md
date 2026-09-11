@@ -20,9 +20,13 @@ Show that the fiber product over the terminal object is the cartesian product.
 
 ::: solution
 - Recall the definition: $T$ is terminal iff every object $X$ admits a unique morphism $X\to T$.
+
 - Strategy: use both universal properties to produce an isomorphism.
+
 - Let ${\operatorname{pr}}_X, {\operatorname{pr}}_Y$ be the cartesian product projections, and ${\operatorname{pr}}_X^T, {\operatorname{pr}}_Y^T$ the fiber product projections.
+
 - Let $T_X, T_Y$ be the maps $X\to T$ and $Y\to T$.
+
 - Since $X\cross Y$ is an object of this category, it admits one unique map to $T$:
 
 \begin{tikzcd}
@@ -31,8 +35,11 @@ Show that the fiber product over the terminal object is the cartesian product.
 \end{tikzcd}
 
 - But $T_Y \circ {\operatorname{pr}}_Y: X\cross Y \to T$ is another such map, so it must equal $T_{X\cross Y}$.
+
 - Similarly $T_X \circ {\operatorname{pr}}_X$ equals $T_{X\cross Y}$.
+
 - Thus $T_Y \circ {\operatorname{pr}}_Y = T_X \circ {\operatorname{pr}}_X$, which is part of the universal property for $\fiberprod{X}{T}{Y}$.
+
 - By the universal property of $X\cross Y$, for every $W$ admitting maps to $X$ and $Y$ we get a unique $h_0$:
 
 \begin{tikzcd}

@@ -15,9 +15,13 @@ review: draft
 ---
 
 ::: problem
-Let $X=\PP_k^1$ be the projective line over an algebraically closed field $k$. Show that the exact sequence
+Let $X=\PP_k^1$ be the projective line over an algebraically closed field $k$.
+Show that the exact sequence
 \[
 0 \to \mco \to \mck \to \mck/\mco \to 0
 \]
-of (II, Ex. 1.21d) is a flasque resolution of $\mco$. Conclude from (II, Ex. 1.21e) that $H^i(X, \mco)=0$ for all $i>0$.
+of (II, Ex.
+1.21d) is a flasque resolution of $\mco$.
+Conclude from (II, Ex.
+1.21e) that $H^i(X, \mco)=0$ for all $i>0$.
 :::

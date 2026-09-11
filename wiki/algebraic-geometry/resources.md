@@ -9,12 +9,10 @@ topics:
 
 ## The one book the exam is drawn from
 
-The exercises an oral examiner reaches for are [@Har10a]'s, and the chapter and section numbers they quote are that book's.
-The text itself is famously hard to learn from: the definitions arrive in their final generality with no worked motivation, and a reader who has not already seen the object being defined has nothing to hold onto.
+The exercises an oral examiner reaches for are [@Har10a]'s, and the chapter and section numbers they quote are that book's. The text itself is famously hard to learn from: the definitions arrive in their final generality with no worked motivation, and a reader who has not already seen the object being defined has nothing to hold onto.
 The standard use of it is therefore to read someone else first and come back here for the problems.
 
-Read II.1--II.8, III.1--III.5 with III.9, and IV.1--IV.3, plus the statement of Serre duality in III.6.
-Chapter I is the classical theory in a compressed form and is better learned elsewhere.
+Read II.1--II.8, III.1--III.5 with III.9, and IV.1--IV.3, plus the statement of Serre duality in III.6. Chapter I is the classical theory in a compressed form and is better learned elsewhere.
 Chapters IV and V are where the machinery is finally spent, and an examiner who has read your file knows it, so reaching them matters more than completing the exercises in order.
 
 ## The first pass
@@ -24,8 +22,7 @@ Every construction arrives with the example that motivated it, the proofs are co
 A student who has taken the course and needs the subject back in a fortnight should read these and nothing else.
 
 [@Vak25] is the book to open when a definition in [@Har10a] refuses to make sense.
-It says out loud what the terse version assumes: why the sheaf axiom is stated for covers rather than pairs, why $\Proj$ needs a graded ring, what the affine communication lemma buys and how it removes most of the "check this on an affine cover" drudgery from Chapter II.
-It is long enough that reading it cover to cover is a year's project, so use it by section, against whatever is currently opaque.
+It says out loud what the terse version assumes: why the sheaf axiom is stated for covers rather than pairs, why $\Proj$ needs a graded ring, what the affine communication lemma buys and how it removes most of the "check this on an affine cover" drudgery from Chapter II. It is long enough that reading it cover to cover is a year's project, so use it by section, against whatever is currently opaque.
 
 [@Mil08a] is the short alternative, and it is the right choice when the exam is a week away and the gap is classical: dimension, tangent spaces, smoothness, and the finiteness theorems, without the scheme apparatus.
 

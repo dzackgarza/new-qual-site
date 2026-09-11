@@ -16,7 +16,7 @@ review: draft
 
 ::: problem
 a. Let $f: X \to Y$ be a morphism of schemes.
-   Show that $\mcl \mapsto f^* \mcl$ induces a homomorphism of Picard groups $f^*: \Pic Y \to \Pic X$.
+Show that $\mcl \mapsto f^* \mcl$ induces a homomorphism of Picard groups $f^*: \Pic Y \to \Pic X$.
 
 b. If $f$ is a finite morphism of nonsingular curves, show that this homomorphism corresponds to the homomorphism $f^*: \Cl Y \to \Cl X$ defined in the text.
 

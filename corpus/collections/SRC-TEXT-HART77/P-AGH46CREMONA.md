@@ -22,6 +22,8 @@ $$
 when no two of $a_0, a_1, a_2$ are $0$.
 
 1. Show that $\varphi$ is birational, and is its own inverse.
+
 2. Find open sets $U, V \subseteq \PP^2$ such that $\varphi: U \to V$ is an isomorphism.
+
 3. Find the open sets where $\varphi$ and $\varphi^{-1}$ are defined, and describe the corresponding morphisms.
 :::

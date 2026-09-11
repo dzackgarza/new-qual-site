@@ -21,6 +21,8 @@ Use the Segre embedding to identify $\PP^n \times \PP^m$ with its image, and hen
 Now let $X \subseteq \PP^n$ and $Y \subseteq \PP^m$ be quasi-projective varieties, and consider $X \times Y \subseteq \PP^n \times \PP^m$.
 
 1. Show that $X \times Y$ is a quasi-projective variety.
+
 2. If $X$ and $Y$ are both projective, show that $X \times Y$ is projective.
+
 3. Show that $X \times Y$ is a product in the category of varieties.
 :::

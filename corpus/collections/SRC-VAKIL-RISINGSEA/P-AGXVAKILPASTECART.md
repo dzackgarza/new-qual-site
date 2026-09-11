@@ -34,9 +34,13 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 \end{tikzcd}
 
 - Applying the bottom square:
+
   - We need maps $R\to X$ and $R\to Y$.
+
   - We are given a map $R\to Y$ by assumption.
+
   - We build a map $R\to X$ as $(V\to X) \circ (R\to V)$.
+
   - We then get a map $R\to W$:
 
 \begin{tikzcd}
@@ -46,9 +50,13 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 \end{tikzcd}
 
 - Applying the top square:
+
   - We have a map $R\to V$ by assumption.
+
   - We have a map $R\to W$ from the previous step.
+
   - We have maps $V\to X$ and $W\to X$ from the top square.
+
   - We thus obtain
 
 \begin{tikzcd}
