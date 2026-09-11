@@ -24,3 +24,58 @@ a^8 = e,\quad b^2 = e,\quad b a b^{-1} = a^5.
 
 (b) How many irreducible complex representations does $G$ have and what are their dimensions?
 :::
+
+
+::: solution
+Let $\rho\colon G\to\mathbb C^\times$ be a one-dimensional representation. Write
+\[
+\alpha=\rho(a),\qquad \beta=\rho(b).
+\]
+The defining relations give
+\[
+\alpha^8=1,\qquad \beta^2=1,
+\]
+and, because scalars commute,
+\[
+\alpha=\rho(bab^{-1})=\rho(a^5)=\alpha^5.
+\]
+Hence $\alpha^4=1$. Conversely, every choice
+\[
+\alpha\in\{1,-1,i,-i\},\qquad \beta\in\{1,-1\}
+\]
+satisfies the defining relations and therefore determines a one-dimensional representation. Thus there are exactly
+\[
+\boxed{8}
+\]
+one-dimensional irreducible representations, explicitly
+\[
+\rho_{\alpha,\beta}(a)=\alpha,\qquad \rho_{\alpha,\beta}(b)=\beta
+\]
+for the eight choices above.
+
+Equivalently, the commutator relation is
+\[
+[b,a]=bab^{-1}a^{-1}=a^4,
+\]
+so the abelianization has presentation
+\[
+G^{\mathrm{ab}}\cong\langle \bar a,\bar b\mid \bar a^4=\bar b^2=1,\ [\bar a,\bar b]=1\rangle
+\cong C_4\times C_2,
+\]
+which again has eight complex characters.
+
+For part (b), let the irreducible degrees be $d_1,\ldots,d_r$. For a finite group,
+\[
+\sum_{j=1}^r d_j^2=|G|=16.
+\]
+The eight linear characters already contribute $8$. Every remaining irreducible has degree at least $2$, so the remaining contribution $8$ must be written as a sum of squares of integers at least $2$. The only possibility is
+\[
+8=2^2+2^2.
+\]
+Therefore $G$ has exactly ten irreducible complex representations: eight of degree $1$ and two of degree $2$.
+
+Hence the multiset of irreducible dimensions is
+\[
+\boxed{1,1,1,1,1,1,1,1,2,2.}
+\]
+:::
