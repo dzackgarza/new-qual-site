@@ -56,11 +56,7 @@ source:
     kind: unknown
 ---
 
-The Harvard Mathematics Graduate Student Association's compilation of questions
-from past qualifying exams, algebraic geometry section.
+The Harvard Mathematics Graduate Student Association's compilation of questions from past qualifying exams, algebraic geometry section.
 
-The compilation warns that its own format misleads: the exams are conversations
-with give and take, not questions fired one after another, so no entry is as
-short as it looks. Where a professor's name survived in the MGSA files the
-compilation records it; for the rest the attribution was lost before the list
-was assembled, and no date is recorded for any of them.
+The compilation warns that its own format misleads: the exams are conversations with give and take, not questions fired one after another, so no entry is as short as it looks.
+Where a professor's name survived in the MGSA files the compilation records it; for the rest the attribution was lost before the list was assembled, and no date is recorded for any of them.

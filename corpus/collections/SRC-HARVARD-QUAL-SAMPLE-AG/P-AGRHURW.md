@@ -15,8 +15,7 @@ review: draft
 ---
 
 ::: problem
-Given a nonconstant map between curves over $k$, is there an associated map on
-differentials?
+Given a nonconstant map between curves over $k$, is there an associated map on differentials?
 Is there a resulting exact sequence, and is it short exact?
 
 Prove the weak form of Riemann--Hurwitz.

@@ -20,6 +20,5 @@ Is $X$ the set-theoretic intersection of two surfaces in $\PP^3$?
 
 Is it the scheme-theoretic intersection of two surfaces?
 
-More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a
-set-theoretic or scheme-theoretic intersection of two surfaces?
+More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a set-theoretic or scheme-theoretic intersection of two surfaces?
 :::

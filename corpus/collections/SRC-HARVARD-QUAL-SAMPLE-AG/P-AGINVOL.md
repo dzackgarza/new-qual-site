@@ -17,8 +17,7 @@ review: draft
 ::: problem
 What are the involutions of an elliptic curve over $\CC$?
 
-What are the fixed points of such an involution, and what quotient does it
-produce?
+What are the fixed points of such an involution, and what quotient does it produce?
 
 How would you show that quotient is $\CP^1$?
 :::

@@ -15,8 +15,7 @@ review: draft
 ---
 
 ::: problem
-Prove that if $X$ is a Noetherian scheme with $H^1(X, \mathcal{I}) = 0$ for every
-coherent sheaf of ideals $\mathcal{I}$, then $X$ is affine.
+Prove that if $X$ is a Noetherian scheme with $H^1(X, \mathcal{I}) = 0$ for every coherent sheaf of ideals $\mathcal{I}$, then $X$ is affine.
 
 Can the Noetherian hypothesis be weakened?
 Give an example showing the statement fails without quasicompactness.
