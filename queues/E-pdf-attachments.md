@@ -396,7 +396,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 18 problems) — Berkeley — prelim — Spring 2003 — disposition 2026-09-11: mixed two-part preliminary exam ingested as `SRC-BERKELEY-PRELIM-SPRING-2003`; all 18 problem statements are represented in source order by `P-BKS03-1A` through `P-BKS03-9B`.
 
-- [ ] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 0 problems) — applied-algebra — SPRING 2007
+- [x] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 18 problems) — Berkeley — prelim solutions — Spring 2007 — disposition 2026-09-11: derivative solution edition of the separately vendored original exam `s07.pdf`; already linked from `wiki/prelim/problems/berkeley-prelims.md`, so retain it as a solutions resource and perform card intake from the original exam entry instead.
 
 - [ ] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders**
 
