@@ -345,3 +345,126 @@ Using the particular subspace \(T_0\) from <1>3,
 This is the desired rank-two interlacing inequality.
 :::
 :::
+
+::: {.solution}
+Let
+\[
+R_M(x)=\frac{x^H Mx}{x^Hx}
+\]
+denote the Rayleigh quotient of a Hermitian matrix $M$ on a nonzero vector $x$.
+
+<1>1. On the subspace
+\[
+K:=\ker B^H,
+\]
+we have $C=A$.
+::: {.proof}
+If $x\in K$, then $B^Hx=0$, hence
+\[
+BB^Hx=B(B^Hx)=0.
+\]
+Therefore
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+So $R_C(x)=R_A(x)$ for every nonzero $x\in K$.
+:::
+
+<1>2. Since $\operatorname{rank}B=2$, the subspace $K=\ker B^H$ has codimension $2$ in $\mathbb C^n$.
+::: {.proof}
+Because $\operatorname{rank}(B^H)=\operatorname{rank}(B)=2$, rank--nullity gives
+\[
+\dim K=n-2.
+\]
+:::
+
+<1>3. Fix $1\le k\le n-2$, and let $E_k$ be the span of eigenvectors of $A$ corresponding to
+\[
+\lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
+\]
+Then
+\[
+\dim E_k=n-k+1
+\]
+and
+\[
+R_A(x)\le \lambda_k(A)
+\]
+for every nonzero $x\in E_k$.
+::: {.proof}
+Choose an orthonormal eigenbasis $u_1,\ldots,u_n$ of $A$ with
+\[
+Au_j=\lambda_j(A)u_j.
+\]
+Then
+\[
+E_k=\operatorname{span}\{u_k,\ldots,u_n\}.
+\]
+For
+\[
+x=\sum_{j=k}^n c_j u_j\ne0,
+\]
+we have
+\[
+R_A(x)
+=\frac{\sum_{j=k}^n \lambda_j(A)|c_j|^2}{\sum_{j=k}^n|c_j|^2}
+\le \lambda_k(A),
+\]
+because every $\lambda_j(A)\le\lambda_k(A)$ for $j\ge k$.
+:::
+
+<1>4. The intersection $E_k\cap K$ has dimension at least
+\[
+n-k-1.
+\]
+::: {.proof}
+For subspaces $U,W\subseteq\mathbb C^n$,
+\[
+\dim(U\cap W)\ge \dim U+\dim W-n.
+\]
+Using <1>2 and <1>3,
+\[
+\dim(E_k\cap K)
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+:::
+
+<1>5. Choose an $(n-k-1)$-dimensional subspace
+\[
+F\subseteq E_k\cap K.
+\]
+Then
+\[
+R_C(x)\le\lambda_k(A)
+\]
+for every nonzero $x\in F$.
+::: {.proof}
+Because $F\subseteq K$, <1>1 gives $R_C(x)=R_A(x)$ for $x\in F$. Because $F\subseteq E_k$, <1>3 gives $R_A(x)\le\lambda_k(A)$.
+:::
+
+<1>6. Therefore
+\[
+\lambda_{k+2}(C)\le\lambda_k(A).
+\]
+::: {.proof}
+Use the Courant--Fischer min--max formula in the form
+\[
+\lambda_j(C)
+=
+\min_{\substack{S\subseteq\mathbb C^n\\ \dim S=n-j+1}}
+\ \max_{0\ne x\in S}R_C(x).
+\]
+For $j=k+2$, the required dimension is
+\[
+n-(k+2)+1=n-k-1.
+\]
+The subspace $F$ from <1>5 has exactly this dimension, so
+\[
+\lambda_{k+2}(C)
+\le \max_{0\ne x\in F}R_C(x)
+\le \lambda_k(A).
+\]
+This proves the required inequality for every $1\le k\le n-2$.
+:::
+:::
