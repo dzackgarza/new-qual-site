@@ -64,6 +64,13 @@ of public mathematical remarks.
 - **Impact:** minor verification friction only; no corpus content depended on the failed command.
 - **Repair:** use the repository's available exact-arithmetic stack (here system Sage) for such checks rather than assuming SymPy is installed.
 
+### Stale Git sequencer metadata can block unrelated card commits
+
+- **Object and evidence:** while committing `E-HK-102-9` on 2026-09-11, the prose-only card commit path reported that a cherry-pick was in progress. Inspection showed no `CHERRY_PICK_HEAD` and no active cherry-pick process, while `.git/sequencer/head` and `.git/sequencer/abort-safety` both pointed to `94c14cf30`, a September 9 revision, and `.git/sequencer/todo` still listed eight UCSD Spring 2019 picks. Current `HEAD` had advanced to `8864bf13d`, thousands of commits later.
+- **Impact:** Git refused an otherwise unrelated explicit-path card commit until the stale repository-wide sequencing state was cleared, which can wedge any direct-main authoring stream sharing the clone.
+- **Uncertainty:** none about this instance being stale: the sequencing metadata was two days old, `CHERRY_PICK_HEAD` was absent, no sequencing process existed, and later commits had already advanced `HEAD` far beyond the recorded sequencer head.
+- **Repair:** after those checks, `git cherry-pick --quit` removed only the stale sequencer metadata and preserved the working tree; subsequent card commits succeeded. The remaining papercut is that the authoring commit path reports the generic cherry-pick state without distinguishing this stale-metadata case from an active sequence.
+
 
 ### `parse_cards` cannot be used from a stdin Python script under the forkserver start method
 
