@@ -384,7 +384,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017 — disposition 2026-09-10: Jacob S. Townson's derivative solutions to University of Louisville analysis quals, not an original exam paper; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
 
-- [ ] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 12 problems) — complex-analysis
+- [x] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 18 problems) — Berkeley — prelim — Spring 2021 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-SPRING-2021`, with all 18 problem statements represented in source order by `P-BKS21-1A` through `P-BKS21-9B`.
 
 - [ ] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 12 problems) — Berkeley — applied-algebra
 
