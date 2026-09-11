@@ -386,7 +386,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 18 problems) — Berkeley — prelim — Spring 2021 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-SPRING-2021`, with all 18 problem statements represented in source order by `P-BKS21-1A` through `P-BKS21-9B`.
 
-- [ ] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 12 problems) — Berkeley — applied-algebra
+- [x] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 18 problems) — Berkeley — prelim — Fall 2020 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-FALL-2020`, with all 18 problem statements represented in source order by `P-BKF20-1A` through `P-BKF20-9B`.
 
 - [ ] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — UNL — diff-geom — January 2007
 
