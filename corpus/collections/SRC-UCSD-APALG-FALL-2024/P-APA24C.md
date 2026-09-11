@@ -151,3 +151,112 @@ The subspace $S$ from <1>3 has exactly this dimension, so
 by <1>4.
 :::
 :::
+
+::: {.solution}
+Let
+\[
+K:=\ker(B^H)\subseteq \mathbb C^n.
+\]
+Since \(\operatorname{rank}B=2\), also \(\operatorname{rank}B^H=2\), so
+\[
+\dim K=n-2.
+\]
+For every \(x\in K\),
+\[
+BB^Hx=0,
+\]
+and hence
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+Thus the Rayleigh quotients of \(A\) and \(C\) agree on \(K\).
+
+<1>1. Fix \(1\le k\le n-2\), and let \(u_1,\ldots,u_n\) be an orthonormal eigenbasis for \(A\), ordered so that
+\[
+Au_i=\lambda_i(A)u_i,
+\qquad
+\lambda_1(A)\ge\cdots\ge\lambda_n(A).
+\]
+Set
+\[
+E_k:=\operatorname{span}\{u_k,u_{k+1},\ldots,u_n\}.
+\]
+Then
+\[
+\dim E_k=n-k+1,
+\]
+and every nonzero \(x\in E_k\) satisfies
+\[
+\frac{x^HAx}{x^Hx}\le \lambda_k(A).
+\]
+::: {.proof}
+Write
+\[
+x=\sum_{i=k}^n c_i u_i.
+\]
+Then
+\[
+\frac{x^HAx}{x^Hx}
+=
+\frac{\sum_{i=k}^n \lambda_i(A)|c_i|^2}
+     {\sum_{i=k}^n |c_i|^2}
+\le \lambda_k(A),
+\]
+since \(\lambda_i(A)\le\lambda_k(A)\) for every \(i\ge k\).
+:::
+
+<1>2. The intersection \(E_k\cap K\) has dimension at least \(n-k-1\).
+::: {.proof}
+For subspaces \(E_k,K\subseteq\mathbb C^n\),
+\[
+\dim(E_k\cap K)
+\ge \dim E_k+\dim K-n.
+\]
+Therefore
+\[
+\dim(E_k\cap K)
+\ge (n-k+1)+(n-2)-n
+= n-k-1.
+\]
+:::
+
+<1>3. Choose a subspace
+\[
+S\subseteq E_k\cap K
+\]
+of dimension \(n-k-1\). Then every nonzero \(x\in S\) satisfies
+\[
+\frac{x^HCx}{x^Hx}\le \lambda_k(A).
+\]
+::: {.proof}
+Because \(S\subseteq K\), we have \(Cx=Ax\) for \(x\in S\). Because \(S\subseteq E_k\), <1>1 gives
+\[
+\frac{x^HCx}{x^Hx}
+=
+\frac{x^HAx}{x^Hx}
+\le \lambda_k(A).
+\]
+:::
+
+<1>4. By the Courant--Fischer min--max theorem,
+\[
+\lambda_{k+2}(C)
+=
+\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
+\ \max_{0\ne x\in L}
+\frac{x^HCx}{x^Hx}.
+\]
+Using the particular subspace \(S\) from <1>3 gives
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in S}
+\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+Hence, for every \(1\le k\le n-2\),
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
+\]
+:::
+:::
