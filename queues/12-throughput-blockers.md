@@ -69,7 +69,7 @@ Queue C: a stream that fixes 12.1 stops several streams from re-solving solved c
   If some of the 729 turn out to be genuinely unsolved under a correct reading, say how
   many and why, rather than adjusting the count.
 
-- [ ] 12.2 Decide what measures the non-problem cards, or record that nothing does.
+- [x] 12.2 Decide what measures the non-problem cards, or record that nothing does.
 
   Queue C covers `kind: problem` and nothing else, by construction. The corpus holds 1,364
   cards of other kinds — 548 definition, 298 proposition, 295 theorem, 144 fact, 28
@@ -88,7 +88,20 @@ Queue C: a stream that fixes 12.1 stops several streams from re-solving solved c
   completion obligation, with the reasoning. Either outcome ends the ambiguity; the
   present state is that nobody can say how much of the corpus is left.
 
-- [ ] 12.3 Queue C has reached zero; confirm that is completion and not a broken measurement.
+  **Closed 2026-09-11: non-problem statement cards have no blanket completion
+  obligation, so there is intentionally no generated ``unsolved statement cards`` queue.**
+  ``AGENTS.md`` requires these cards to be judged one at a time: a canonical external
+  oracle can be the complete and correct resolution of a definition or theorem, while a
+  local card is retained when it contributes qual-specific synthesis such as a slogan,
+  specialization, proof sketch, example, counterexample, warning, or computation. Card
+  kind therefore cannot determine whether a local proof is missing, and the repository's
+  semantic-authorship rule explicitly forbids replacing that editorial judgment with a
+  heuristic. The 1,342 non-problem cards without a solution/proof/answer section are a
+  descriptive count, not a backlog. Their remaining work is whatever per-card editorial
+  review is identified by the ordinary issue/TODO/review surfaces; there is no corpus-wide
+  ``completion`` predicate for them analogous to Queue C's problem/solution predicate.
+
+- [x] 12.3 Queue C has reached zero; confirm that is completion and not a broken measurement.
 
   This queue is the repository's only statement of how much authoring remains, and it has
   just gone empty. An always-zero generator and a genuinely finished corpus are
@@ -102,6 +115,17 @@ Queue C: a stream that fixes 12.1 stops several streams from re-solving solved c
   Acceptance: the zero is corroborated by a measurement independent of
   `tools/unsolved_queue.py`, and the result recorded here. If the two ever disagree, the
   disagreement is the finding and Queue C stops being authoritative until it is explained.
+
+  **Closed 2026-09-11: the zero is independently corroborated.** A direct filesystem
+  recount over ``corpus/**/*.md`` read each card's YAML front matter without importing
+  ``qualc`` and recognized authored solution fences directly from the Markdown, accepting
+  both bare and attribute forms and fence lengths of three or more colons. It found 7,383
+  current ``kind: problem`` cards and **zero** without a solution fence; Queue C independently
+  reports ``Problems: 0``. The 7,375 figure above was the earlier snapshot recorded when
+  Queue C first hit zero; the corpus has since gained eight problem cards, all already
+  solved. Thus the current zero is a genuine completion measurement rather than an
+  always-zero generator. Repeat this independent comparison whenever Queue C changes
+  sharply; any future disagreement suspends Queue C's authority until explained.
 
 - [ ] 12.4 `_unsolved-if-staged` makes a pathspec commit impossible while any corpus file is staged.
 
