@@ -11,6 +11,15 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 5 of the official UGA Spring 2020 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed the Bernoulli domination, pointwise limit, dominated convergence step, and Gaussian integral evaluation; the proof is correct.
 ---
 
 ::: problem
@@ -76,4 +85,3 @@ $$
     $\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \frac{\sqrt{\pi}}{2}$.
 :::
 :::
-
