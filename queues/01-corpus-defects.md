@@ -60,11 +60,18 @@ Commit after each.
 
   Acceptance: every named branch is merged into `main`; its substantive proof conflicts have been adjudicated above, and no branch was deleted.
 
-- [ ] 1.R3 Settle the twenty recovered cards that now have a competing version.
+- [x] 1.R3 Settle the twenty recovered cards that now have a competing version.
 
   93 cards of uncommitted authoring were wiped from the shared worktree during consolidation and pinned at `rescue/worktree-snapshot-20260910T063944`. The 21 cards `main` had no version of were restored in `81373e972`. Twenty more hold a version in the snapshot *and* a different version in `main`; recover each with `git diff HEAD rescue/worktree-snapshot-20260910T063944 -- <path>`, compare the two proofs, and keep the correct one.
 
   Acceptance: each of the twenty resolved against the snapshot, and the rescue tag kept until they are.
+
+  Closed 2026-09-11: all twenty adjudications are reflected in `HEAD`. The six “keep main”
+  cards remain on the retained proofs. Ten “take snapshot” cards are byte-identical to the
+  rescue snapshot; the remaining four (`P-D6N7M`, `P-I3DSE`, `P-PMDP4`, `P-ZWJ7K`) have the
+  same adjudicated snapshot mathematics plus later source-check metadata, with `P-PMDP4` also
+  retaining its corrected title/display normalization. The rescue ref
+  `rescue/worktree-snapshot-20260910T063944` remains present.
 
   Adjudication record against `rescue/worktree-snapshot-20260910T063944`:
 
