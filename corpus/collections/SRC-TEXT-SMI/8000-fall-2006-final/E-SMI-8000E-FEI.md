@@ -220,7 +220,9 @@ $$
 $$
 
 The group $S_5$ is not solvable because it contains the nonabelian simple
-normal subgroup $A_5$ and
+normal subgroup $A_5$. Indeed, the commutator subgroup of the nonabelian
+simple group $A_5$ is a nontrivial normal subgroup, hence equals $A_5$
+itself, so the derived series of $A_5$ never reaches the identity. Also
 $$
 S_5/A_5\cong C_2.
 $$
