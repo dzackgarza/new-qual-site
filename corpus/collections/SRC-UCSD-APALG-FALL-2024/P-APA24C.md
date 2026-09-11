@@ -586,3 +586,98 @@ Since this holds for every $(n-k+1)$-dimensional subspace $L$, taking the minimu
 This is exactly the desired interlacing inequality.
 :::
 :::
+
+::: {.solution}
+Let
+\[
+R_M(x)=\frac{x^H Mx}{x^Hx}
+\]
+denote the Rayleigh quotient of a Hermitian matrix $M$.
+
+<1>1. The subspace $K:=\ker B^H$ has codimension $2$, and on $K$ the quadratic forms of $A$ and $C$ agree.
+::: {.proof}
+Because $B$ has rank $2$, so does $B^H$, hence by rank-nullity
+\[
+\dim K=n-2.
+\]
+If $x\in K$, then $B^Hx=0$, so
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+In particular,
+\[
+R_C(x)=R_A(x)
+\]
+for every nonzero $x\in K$.
+:::
+
+<1>2. Fix $1\le k\le n-2$, and let $E\subseteq\mathbb C^n$ be the span of eigenvectors of $C$ corresponding to the eigenvalues
+\[
+\lambda_1(C),\ldots,\lambda_{k+2}(C).
+\]
+Then $\dim E=k+2$, and every nonzero $x\in E$ satisfies
+\[
+R_C(x)\ge \lambda_{k+2}(C).
+\]
+::: {.proof}
+Since $C$ is Hermitian, choose an orthonormal eigenbasis $u_1,\ldots,u_n$ with
+\[
+Cu_i=\lambda_i(C)u_i.
+\]
+If
+\[
+x=\sum_{i=1}^{k+2}a_i u_i\ne0,
+\]
+then
+\[
+R_C(x)
+=\frac{\sum_{i=1}^{k+2}|a_i|^2\lambda_i(C)}{\sum_{i=1}^{k+2}|a_i|^2}
+\ge \lambda_{k+2}(C).
+\]
+:::
+
+<1>3. The intersection $E\cap K$ has dimension at least $k$.
+::: {.proof}
+Using
+\[
+\dim(E\cap K)\ge \dim E+\dim K-n,
+\]
+we obtain
+\[
+\dim(E\cap K)
+\ge (k+2)+(n-2)-n=k.
+\]
+:::
+
+<1>4. Therefore
+\[
+\lambda_{k+2}(C)\le \lambda_k(A).
+\]
+::: {.proof}
+Let $F$ be any $k$-dimensional subspace of $E\cap K$.
+For every nonzero $x\in F$, <1>1 and <1>2 give
+\[
+R_A(x)=R_C(x)\ge \lambda_{k+2}(C).
+\]
+Hence
+\[
+\min_{0\ne x\in F}R_A(x)
+\ge \lambda_{k+2}(C).
+\]
+By the Courant--Fischer max--min principle,
+\[
+\lambda_k(A)
+=\max_{\dim L=k}\ \min_{0\ne x\in L}R_A(x).
+\]
+Since $F$ is one admissible $k$-dimensional subspace,
+\[
+\lambda_k(A)
+\ge \min_{0\ne x\in F}R_A(x)
+\ge \lambda_{k+2}(C).
+\]
+Thus, for every $1\le k\le n-2$,
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
+\]
+:::
+:::
