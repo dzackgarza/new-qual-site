@@ -62,7 +62,6 @@ The Milnor number collects both, by $\mu_p = 2\delta_p - r_p + 1$: the node and 
 :::
 
 ::: {.remark title="Why nodes are the ones that appear"}
-A general projection to $\PP^2$ produces nodes and nothing worse, which is the content of [[T-CRVEMBP3]].
-Cusps and tacnodes need a coincidence — the centre of projection on a tangent line, or on a line meeting the curve in two tangentially-related points — and those are codimension-one conditions on the centre, so a general centre avoids them.
+A general projection to $\PP^2$ produces nodes and nothing worse, which is the content of [[T-CRVEMBP3]]. Cusps and tacnodes need a coincidence — the centre of projection on a tangent line, or on a line meeting the curve in two tangentially-related points — and those are codimension-one conditions on the centre, so a general centre avoids them.
 The practical consequence is that a curve presented as a plane model with a cusp or a tacnode was not obtained by a general projection, and the fact is usually the point of the question.
 :::

@@ -13,6 +13,23 @@ Toric geometry earns a place on a revision list for one reason: it is the corner
 
 [[D-Q7Q2N]]
 
+## The convex geometry underneath
+
+The dual cone is the hinge of the whole construction, so the three facts that make it behave are worth stating before anything is computed with it.
+
+[[PR-FULSEP]]
+
+[[PR-FULFACET]]
+
+[[PR-FULFACEDUAL]]
+
+Together these say that a cone can be handed to you by generators or by inequalities, that either presentation recovers the other through the dual, and that the face posets on the two sides are the same poset read upside down.
+Everything later in the chapter uses one of the three without saying so: the dual cone computation uses the first two, the orbit-cone correspondence uses the third.
+
+## How the affine charts glue
+
+[[PR-FULLOC]]
+
 [[PR-O8V3I]]
 
 [[PR-D2F15]]

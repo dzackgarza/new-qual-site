@@ -5,6 +5,7 @@ topics:
 - Special Divisors
 - Hyperelliptic Curves
 - Linear Systems
+- Complete Intersections
 ---
 
 # Special divisors and the canonical map
@@ -38,3 +39,9 @@ The hyperelliptic case is the exception in the statement of almost every theorem
 
 An examiner asking about genus $2$, $3$ or $4$ wants the model, not a general theorem.
 Genus $3$ is the plane quartic, genus $4$ is the intersection of a quadric and a cubic in $\PP^3$, and genus $2$ has no canonical embedding at all because every such curve is hyperelliptic.
+
+## What the canonical class rules out
+
+[[PR-CRVHYPCI]]
+
+Genus $4$ is the case to hold next to this one: the canonical curve there *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ is what makes both statements the same computation.

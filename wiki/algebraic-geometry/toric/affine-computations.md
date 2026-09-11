@@ -24,6 +24,12 @@ The relations always assemble into the minors of a matrix, because a two-dimensi
 
 [[PR-TORSMAFF]]
 
+[[PR-FULCOTAN]]
+
+The two cards answer the same question from opposite ends.
+One assumes a lattice basis and computes the variety; the other computes the tangent space first and shows a lattice basis was forced.
+The second is the one to give when the question asks *why*, because the embedding dimension at the fixed point is a number that can be counted off the picture.
+
 The determinant of the ray generators decides everything in dimension two.
 It is $1$ exactly when the cone is smooth, and in general it is the order of the local class group, so it is the first number to compute about a cone and the last one that is needed.
 
@@ -41,6 +47,11 @@ Saturation is the test, and the recipe above is the repair, so a variety present
 ![The quadric cone $V(y^2 - xz)$, the affine toric variety of the cone on $(0,1)$, $(2,-1)$](/assets/algebraic-geometry/toric/quadric-cone-surface-plot.png)
 
 This single family answers three separate questions on a syllabus — a normal variety that is not smooth, a Weil divisor that is not Cartier, a class group with torsion — and it answers them with a determinant.
+
+[[FE-FULQUOT]]
+
+Two presentations of one variety, and they answer different questions.
+The minors give the equations and the embedding; the quotient gives the singularity a name, its local class group, and the reason it is only an orbifold point.
 
 ## Resolving it
 

@@ -25,3 +25,5 @@ Going up and going down belong here too, as statements about the geometry of the
 - [[algebraic-geometry/morphisms/smooth-unramified-etale|Smooth, unramified, and étale]], the jacobian criterion, and where characteristic $p$ breaks each statement.
 
 - [[algebraic-geometry/morphisms/fibres-and-images|Fibres and images]], the fibre dimension theorem, Zariski's main theorem, and Stein factorisation.
+
+- [[algebraic-geometry/morphisms/inseparable-morphisms-and-luroth|Inseparable morphisms and Lüroth]], the Frobenius twist, what a purely inseparable morphism of curves can be, and the rationality statement that depends on it.
