@@ -167,3 +167,16 @@ has already lost 962 lines of authored solutions once this way.
       --source=:` per path), read what is there, and commit the cards that are complete.
       If a card was staged and deleted because it was wrong, say so in the commit that
       removes it rather than leaving it unreachable in the index.
+
+## 1.R5 — P-HM21B18-PF6-01 carries a stray heading above its solution div
+
+`corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6/P-HM21B18-PF6-01.md` has a
+`## Solution` markdown heading at line 78, immediately above the `::: solution` div. No other
+card in the corpus has one: every other PF6 card, and the corpus generally, marks the solution
+with the fenced div alone. The heading was introduced when the card was re-solved on the false
+premise that the range was unsolved, so the card may also now carry solution prose that
+duplicates or contradicts what the div already held.
+
+- [ ] Read the card, remove the stray `## Solution` heading, and reconcile the solution body
+      against what was there before the 2026-09-11 re-solve (`git log -p` on that path). Keep
+      whichever proof is correct and complete; do not keep both.
