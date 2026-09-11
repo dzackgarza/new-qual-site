@@ -24,19 +24,19 @@ prompts:
 On a Noetherian integral separated scheme regular in codimension one, a **Weil divisor** is a finite formal $\ZZ$-combination of codimension-one integral closed subschemes.
 For $f \in K(X)^*$,
 \[
-\div(f) = \sum_{\operatorname{codim} Y = 1} v_Y(f) \cdot Y ,
+\div(f) = \sum_{\codim Y = 1} v_Y(f) \cdot Y ,
 \]
 where $v_Y$ is the valuation of the discrete valuation ring $\OO_{X,\eta_Y}$.
 The quotient by these **principal** divisors is the class group $\Cl(X)$.
 :::
 
 ::: {.definition title="Cartier"}
-A **Cartier divisor** is a global section of $\mathcal{K}^*/\OO_X^*$: a collection of nonzero rational functions $f_i$ on an open cover whose ratios $f_i/f_j$ are units on overlaps.
+A **Cartier divisor** is a global section of $\mck^*/\OO_X^*$: a collection of nonzero rational functions $f_i$ on an open cover whose ratios $f_i/f_j$ are units on overlaps.
 Modulo global rational functions this is $\Pic(X)$.
 :::
 
 ::: {.proposition}
-There is an injection $\operatorname{CaCl}(X) \injects \Cl(X)$, an isomorphism when $X$ is locally factorial — in particular when $X$ is regular.
+There is an injection $\CaCl(X) \injects \Cl(X)$, an isomorphism when $X$ is locally factorial — in particular when $X$ is regular.
 :::
 
 ::: {.remark}

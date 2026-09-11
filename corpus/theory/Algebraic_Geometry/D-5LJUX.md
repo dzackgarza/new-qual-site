@@ -30,7 +30,7 @@ of irreducible closed subsets.
 ::: {.proposition}
 For an affine variety $X$ over $k = \bar{k}$,
 \[
-\dim X = \operatorname{krulldim} k[X] = \operatorname{trdeg}_k k(X) .
+\dim X = \krulldim k[X] = \trdeg_k k(X) .
 \]
 :::
 

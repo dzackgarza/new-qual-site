@@ -88,9 +88,21 @@ Conversion is an uplift, not a substitution:
 `vocabularies/macros.json` is **generated** by `tools/sync_macros.py` from `/home/dzack/Dropbox/pandoc/custom/preamble.tex`, narrowed to the macros the corpus and wiki actually use.
 It is never hand-edited: writing a card that uses a macro the preamble defines, then running `just macros`, is the whole procedure.
 
-The preamble already supplies `\Spec`, `\Proj`, `\Pic`, `\Div`, `\Cl`, `\OO`, `\PP`, `\AA`, `\da`, `\ts`, `\st`, `\sm`, `\union`, `\intersect`, `\ro`, `\res`, `\dual`, `\gens`, `\mfm`, `\mfp`, `\injects`, `\tensor`, `\abs`, `\Frac`, `\Hom`.
+The preamble tree defines **1318** macros, so the vocabulary is far larger than the generated `macros.json` shows: that file holds only the macros the corpus and wiki have used so far.
+Reading `macros.json` to decide whether a macro exists gives the wrong answer.
+Read the preamble instead, `\input`s expanded, the way `sync_macros.py` reads it.
 
-It does **not** supply several the 2022 vault uses freely, and these must be written out in full: `\mcI` and friends (use `\mathcal{I}`), `\fiberprod` (`\times_Y`), `\inp` (`\langle -,- \rangle`), `\GG` (`\mathbb{G}_m`), `\Jac`, `\codim`, `\CaCl` (`\operatorname{...}`). Nothing reports an undefined macro: `just check` passes and the page ships with the macro unexpanded.
+Everything the algebraic geometry material needs is already central: `\Spec`, `\Proj`, `\Pic`, `\Div`, `\Cl`, `\CaCl`, `\Jac`, `\codim`, `\krulldim`, `\trdeg`, `\Der`, `\length`, `\Ext`, `\inp`, `\GG`, `\fiberproduct`, the `\mc` family, and the usual `\OO`, `\PP`, `\AA`, `\da`, `\ts`, `\st`, `\sm`, `\union`, `\intersect`, `\ro`, `\dual`, `\gens`, `\mfm`, `\mfp`, `\injects`, `\tensor`, `\abs`, `\Frac`, `\Hom`.
+
+Two paradigm changes the vault predates, and both are renames, not rewrites:
+
+- script letters are **lowercase**: the vault's `\mcI`, `\mcF` become `\mci`, `\mcf`, matching `\mca`–`\mcz`;
+
+- the fibre product takes its base as an argument: `\fiberprod{Y}` becomes `\fiberproduct{Y}`.
+
+`\CaCl` was the one name genuinely absent, and it was added to `latexmacs.tex` beside `\Cl` rather than spelled out per-card, because the vocabulary is the place a name is defined once.
+
+The remaining hazard is that nothing reports an undefined macro: `just check` passes and the page ships with the macro unexpanded, as red source.
 See [issue #87](https://github.com/dzackgarza/new-qual-site/issues/87).
 
 ## Order of work

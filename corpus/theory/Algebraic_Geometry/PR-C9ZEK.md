@@ -21,22 +21,22 @@ prompts:
 ---
 
 ::: {.proposition}
-A sequence of sheaves $\mathcal{F} \to \mathcal{G} \to \mathcal{H}$ is exact exactly when
+A sequence of sheaves $\mcf \to \mcg \to \mch$ is exact exactly when
 \[
-\mathcal{F}_p \to \mathcal{G}_p \to \mathcal{H}_p
+\mcf_p \to \mcg_p \to \mch_p
 \]
 is exact for every $p \in X$.
-For $0 \to \mathcal{F} \to \mathcal{G} \to \mathcal{H} \to 0$ exact, the sequence of global sections
+For $0 \to \mcf \to \mcg \to \mch \to 0$ exact, the sequence of global sections
 \[
-0 \to \mathcal{F}(X) \to \mathcal{G}(X) \to \mathcal{H}(X)
+0 \to \mcf(X) \to \mcg(X) \to \mch(X)
 \]
 is exact, but the last map need not be surjective.
 :::
 
 ::: {.remark}
-Surjectivity of $\mathcal{G} \to \mathcal{H}$ means every germ lifts, which is a statement about some neighbourhood of each point.
-A global section of $\mathcal{H}$ therefore lifts over each member of some cover, and the lifts need not agree on overlaps.
-The obstruction to correcting them is a Čech $1$-cocycle, and it is $H^1(X, \mathcal{F})$ that measures whether it can be corrected.
+Surjectivity of $\mcg \to \mch$ means every germ lifts, which is a statement about some neighbourhood of each point.
+A global section of $\mch$ therefore lifts over each member of some cover, and the lifts need not agree on overlaps.
+The obstruction to correcting them is a Čech $1$-cocycle, and it is $H^1(X, \mcf)$ that measures whether it can be corrected.
 
 This is the whole motivation for sheaf cohomology, and the correct answer to "where exactly does that fail" is: at the overlaps, and the failure is measured by $H^1$ of the kernel.
 :::

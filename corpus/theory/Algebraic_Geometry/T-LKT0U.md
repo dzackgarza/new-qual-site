@@ -28,7 +28,7 @@ Then
 \[
 2g_X - 2 = n(2g_Y - 2) + \deg R ,
 \]
-where $R = \sum_{p} \operatorname{length}(\Omega_{X/Y})_p$ is the ramification divisor.
+where $R = \sum_{p} \length(\Omega_{X/Y})_p$ is the ramification divisor.
 When every ramification is tame, $\deg R = \sum_p (e_p - 1)$.
 :::
 

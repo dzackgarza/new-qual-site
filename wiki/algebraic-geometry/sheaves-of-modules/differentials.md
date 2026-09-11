@@ -22,16 +22,16 @@ The relative sequence, for $X \to Y \to S$:
 \[
 f^*\Omega_{Y/S} \to \Omega_{X/S} \to \Omega_{X/Y} \to 0 .
 \]
-The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mathcal{I}$:
+The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mci$:
 \[
-\mathcal{I}/\mathcal{I}^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0 .
+\mci/\mci^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0 .
 \]
 
 Neither is exact on the left in general, and that is where the content is.
 The first becomes short exact on the left for a smooth morphism, and its failure for a nonconstant map of curves is what Riemann--Hurwitz measures: the cokernel of $f^*\Omega_Y \to \Omega_X$ is the ramification divisor.
 The second becomes short exact on the left when $Z$ is smooth, and taking determinants then gives adjunction,
 \[
-\omega_Z = \left( \omega_X \tensor \det(\mathcal{I}/\mathcal{I}^2)\dual \right)\ro{}{Z} ,
+\omega_Z = \left( \omega_X \tensor \det(\mci/\mci^2)\dual \right)\ro{}{Z} ,
 \]
 which is the computation behind every genus formula in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 

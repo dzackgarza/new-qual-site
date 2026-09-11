@@ -22,11 +22,11 @@ prompts:
 ---
 
 ::: {.proposition}
-$\Pic(X) \cong H^1(X, \OO_X^*)$, and for $\OO_X$-modules $\mathcal{F}, \mathcal{G}$ the extensions
+$\Pic(X) \cong H^1(X, \OO_X^*)$, and for $\OO_X$-modules $\mcf, \mcg$ the extensions
 \[
-0 \to \mathcal{F} \to \mathcal{E} \to \mathcal{G} \to 0
+0 \to \mcf \to \mce \to \mcg \to 0
 \]
-up to equivalence are classified by $\operatorname{Ext}^1(\mathcal{G},\mathcal{F})$, which is $H^1(X, \mathcal{F} \tensor \mathcal{G}\dual)$ when $\mathcal{G}$ is locally free.
+up to equivalence are classified by $\Ext^1(\mcg,\mcf)$, which is $H^1(X, \mcf \tensor \mcg\dual)$ when $\mcg$ is locally free.
 :::
 
 ::: {.remark}

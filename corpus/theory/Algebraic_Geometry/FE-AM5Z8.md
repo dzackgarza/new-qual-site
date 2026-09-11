@@ -31,7 +31,7 @@ Boundedness is not a local condition: every function is locally bounded, so the 
 
 ::: {.remark}
 The presheaf cokernel is where this matters in practice.
-Given $\varphi : \mathcal{F} \to \mathcal{G}$ of sheaves, $U \mapsto \mathcal{G}(U)/\varphi(\mathcal{F}(U))$ is a presheaf that is usually not a sheaf, and the sheaf cokernel is its sheafification.
+Given $\varphi : \mcf \to \mcg$ of sheaves, $U \mapsto \mcg(U)/\varphi(\mcf(U))$ is a presheaf that is usually not a sheaf, and the sheaf cokernel is its sheafification.
 Kernels need no correction: $U \mapsto \ker \varphi_U$ is already a sheaf.
 That asymmetry is the reason cokernels, images, and exactness of sheaves are stalk-local notions and not section-wise ones.
 :::

@@ -28,9 +28,9 @@ The following are equivalent:
 
 - $X$ is affine;
 
-- $H^p(X, \mathcal{F}) = 0$ for all quasicoherent $\mathcal{F}$ and all $p > 0$;
+- $H^p(X, \mcf) = 0$ for all quasicoherent $\mcf$ and all $p > 0$;
 
-- $H^1(X, \mathcal{I}) = 0$ for every coherent sheaf of ideals $\mathcal{I}$.
+- $H^1(X, \mci) = 0$ for every coherent sheaf of ideals $\mci$.
 :::
 
 ::: {.remark title="How the proof goes"}
@@ -40,15 +40,15 @@ Back up: it is enough to produce $f_1,\ldots,f_r \in A = \OO_X(X)$ generating th
 For a closed point $p$, let $U$ be an affine neighbourhood and $Z = X \sm U$.
 The ideal sequence
 \[
-0 \to \mathcal{I}_{Z \union \ts{p}} \to \mathcal{I}_Z \to k(p) \to 0
+0 \to \mci_{Z \union \ts{p}} \to \mci_Z \to k(p) \to 0
 \]
-has $H^1$ of the left term zero by hypothesis, so some $f \in \mathcal{I}_Z(X)$ is nonzero at $p$.
+has $H^1$ of the left term zero by hypothesis, so some $f \in \mci_Z(X)$ is nonzero at $p$.
 Then $X_f = U_f$ is affine and contains $p$.
 Quasicompactness extracts a finite subcover, and those $f$ generate the unit ideal because they have no common zero.
 :::
 
 ::: {.remark title="The two follow-ups"}
-*Weakening Noetherian.* The criterion holds for quasicompact quasi-separated schemes, with $\mathcal{I}$ ranging over quasicoherent ideals rather than coherent ones.
+*Weakening Noetherian.* The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideals rather than coherent ones.
 Noetherian is used only to have coherent ideals available and to extract finite subcovers, and both can be arranged directly.
 
 *Dropping quasicompactness.* The conclusion fails.
