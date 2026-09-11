@@ -732,7 +732,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders**
 
-- [ ] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders**
+- [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
 - [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
 
