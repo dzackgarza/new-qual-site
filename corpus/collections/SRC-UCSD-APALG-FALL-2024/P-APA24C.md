@@ -88,74 +88,43 @@ Because $\operatorname{rank}B^H=\operatorname{rank}B=2$, rank-nullity gives
 If $x\in K$, then $B^Hx=0$, so $BB^Hx=B(0)=0$.
 :::
 
-<1>3. The intersection $E\cap K$ contains a subspace $S$ of dimension $n-k-1$.
-::: {.proof}
-For subspaces of an $n$-dimensional vector space,
+<1>3. The desired inequality follows from the codimension form of the Courant--Fischer theorem:
 \[
-\dim(E\cap K)\ge \dim E+\dim K-n.
-\]
-Using <1>1 and <1>2,
-\[
-\dim(E\cap K)
-\ge(n-k+1)+(n-2)-n
-=n-k-1.
-\]
-Choose any $(n-k-1)$-dimensional subspace $S\subseteq E\cap K$.
-:::
-
-<1>4. Every nonzero $x\in S$ satisfies
-\[
-\frac{x^HCx}{x^Hx}\le\lambda_k(A).
+\lambda_j(M)=\min_{\operatorname{codim}S=j-1}\ \max_{0\ne x\in S}R_M(x).
 \]
 ::: {.proof}
-Since $S\subseteq K$, <1>2 gives $BB^Hx=0$. Hence
+Choose a subspace $S_A$ of codimension $k-1$ such that
 \[
-Cx=(A+BB^H)x=Ax.
+\max_{0\ne x\in S_A}R_A(x)=\lambda_k(A).
 \]
-Since also $S\subseteq E$, <1>1 gives
+Set
 \[
-\frac{x^HCx}{x^Hx}
-=\frac{x^HAx}{x^Hx}
-\le\lambda_k(A).
+S_0=S_A\cap K.
 \]
-:::
-
-<1>5. For a Hermitian matrix $C$,
+Since $K$ has codimension $2$,
 \[
-\lambda_j(C)
-=\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-j+1}}
-\ \max_{0\ne x\in L}\frac{x^HCx}{x^Hx}.
+\operatorname{codim}S_0\le (k-1)+2=k+1.
 \]
-::: {.proof}
-This is the Courant--Fischer min--max formula. For completeness, let $v_1,\ldots,v_n$ be an orthonormal eigenbasis of $C$ with eigenvalues decreasing.
-The subspace
+Hence $\dim S_0\ge n-k-1$. Choose a subspace
 \[
-L_0=\operatorname{span}\{v_j,\ldots,v_n\}
+S\subseteq S_0
 \]
-has dimension $n-j+1$, and every Rayleigh quotient on $L_0$ is at most $\lambda_j(C)$, so the minimum is at most $\lambda_j(C)$.
-Conversely, any subspace $L$ of dimension $n-j+1$ meets
+of dimension exactly $n-k-1$, equivalently of codimension exactly $k+1$.
+For every nonzero $x\in S$, we have $x\in K$ and $x\in S_A$, so
 \[
-\operatorname{span}\{v_1,\ldots,v_j\}
+R_C(x)=R_A(x)\le \lambda_k(A).
 \]
-nontrivially, since the dimensions sum to $n+1$. Any nonzero vector in that intersection has Rayleigh quotient at least $\lambda_j(C)$. Hence the maximum over $L$ is at least $\lambda_j(C)$. Combining the two inequalities proves the formula.
-:::
-
-<1>6. Therefore, for every $1\le k\le n-2$,
-\[
-\boxed{\lambda_{k+2}(C)\le\lambda_k(A).}
-\]
-::: {.proof}
-Apply <1>5 with $j=k+2$. Then the competing subspaces have dimension
-\[
-n-(k+2)+1=n-k-1.
-\]
-The subspace $S$ from <1>3 has exactly this dimension, so
+Applying Courant--Fischer to $C$ gives
 \[
 \lambda_{k+2}(C)
-\le \max_{0\ne x\in S}\frac{x^HCx}{x^Hx}
-\le\lambda_k(A)
+\le \max_{0\ne x\in S}R_C(x)
+\le \lambda_k(A).
 \]
-by <1>4.
+Therefore
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}
+\qquad(1\le k\le n-2).
+\]
 :::
 :::
 
