@@ -9,6 +9,10 @@ classification:
   topics: ['Fourier Transform', 'Poisson Summation']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 ::: exercise
@@ -29,4 +33,54 @@ In the converse direction, let f be any power series $\textstyle f ( z ) = \sum 
 $$
 | f (z) | \leq A _ {\epsilon} e ^ {2 \pi (M + \epsilon) | z |}.
 $$
+:::
+
+::: solution
+Assume $\operatorname{supp}\widehat f\subset[-M,M]$. Fourier inversion gives, for real $x$ and hence by analytic continuation for complex $z$,
+\[
+f(z)=\int_{-M}^{M}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi.
+\]
+Because the interval is compact, differentiation under the integral sign is justified to every order. Thus
+\[
+f^{(n)}(0)=(2\pi i)^n\int_{-M}^{M}\widehat f(\xi)\xi^n\,d\xi.
+\]
+Since $a_n=f^{(n)}(0)/n!$,
+\[
+a_n=\frac{(2\pi i)^n}{n!}
+\int_{-M}^{M}\widehat f(\xi)\xi^n\,d\xi.
+\]
+Hence
+\[
+n!|a_n|
+\le (2\pi M)^n\|\widehat f\|_{L^1([-M,M])},
+\]
+and therefore
+\[
+\limsup_{n\to\infty}(n!|a_n|)^{1/n}\le2\pi M.
+\]
+
+Conversely, suppose
+\[
+L:=\limsup_{n\to\infty}(n!|a_n|)^{1/n}\le2\pi M.
+\]
+Fix $\varepsilon>0$ and put
+\[
+R=2\pi(M+\varepsilon).
+\]
+Since $R>L$, there is $N$ such that for $n\ge N$,
+\[
+n!|a_n|\le R^n.
+\]
+After enlarging a constant $C_\varepsilon$ to absorb the finitely many indices $n<N$, we have for every $n\ge0$
+\[
+|a_n|\le C_\varepsilon\frac{R^n}{n!}.
+\]
+Thus the power series converges absolutely for every $z\in\mathbb C$ and
+\[
+|f(z)|
+\le C_\varepsilon\sum_{n=0}^{\infty}\frac{(R|z|)^n}{n!}
+=C_\varepsilon e^{R|z|}
+=C_\varepsilon e^{2\pi(M+\varepsilon)|z|}.
+\]
+So $f$ is entire and has the stated exponential-type bound.
 :::
