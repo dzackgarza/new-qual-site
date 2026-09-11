@@ -388,7 +388,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 18 problems) — Berkeley — prelim — Fall 2020 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-FALL-2020`, with all 18 problem statements represented in source order by `P-BKF20-1A` through `P-BKF20-9B`.
 
-- [ ] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — UNL — diff-geom — January 2007
+- [x] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — University of Arizona — geometry/topology — disposition 2026-09-11: John Kerl's derivative solution compendium for old University of Arizona geometry/topology qualifying exams, not an original exam source; already linked from `wiki/topology/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing a collection.
 
 - [ ] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — UNL — alg-geom
 
