@@ -13,3 +13,7 @@ Genus in its several senses, Riemann--Hurwitz, embeddings, and the classificatio
 
 More oral questions land here than anywhere else, because a curve is small enough to compute with and rich enough to test everything above it.
 Genus is the pivot: arithmetic against geometric, how they differ for a singular curve, whether either depends on the embedding, and how Riemann--Hurwitz computes one from a map.
+
+- [[algebraic-geometry/curves-and-surfaces/genus|Genus]], the three senses, the three ways to compute one, and the curves of genus zero.
+
+- [[algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians|Embeddings and Jacobians]], when the canonical system embeds, and what $\Pic^0$ is as a variety.
