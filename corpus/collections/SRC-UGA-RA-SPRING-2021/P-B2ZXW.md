@@ -12,6 +12,15 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 4 of the official UGA January 2021 Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Replaced the legacy tail proof, which contained false equalities, reversed inequality labels, and sign inconsistencies, by a compact-support approximation argument.
 ---
 
 Let $f, g$ be Lebesgue integrable on $\RR$ and let $g_n(x) \da g(x- n)$.
@@ -44,137 +53,47 @@ a-\eps \leq b \leq a+\eps \implies b=a
 :::
 
 :::{.solution}
-\envlist
-
-- Fix $\eps$.
-- Using small tails for $f, g \in L^1$, choose $R_1, R_2 \gg 0$ so that
+<1>1. Approximate by compactly supported truncations.
+::: {.proof}
+Fix $\varepsilon>0$. Choose $R>0$ such that, for
 \[
-\int_{B_{R_1}(0)^c} \abs{f} &< \eps \\
-\int_{B_{R_2}(0)^c} \abs{g} &< \eps
-.\]
-
-  - Note that this implies
-  \[
-  \int_{-R_1}^{R_1} \abs{f} &= \norm{f}_1 - 2\eps \\
-  \int_{-R_2}^{R_2} \abs{g_N} &= \norm{g_N} - 2\eps 
-  .\]
-
-  - Also note that by translation invariance of the Lebesgue integral, $\norm{g}_1 = \norm{g_N}_1$.
-
-
-- Now use $N$ to make the densities almost disjoint: choose $N\gg 1$ so that $N-R_2 > R_1$:
-
-![Shifting density](../../assets/figures/densities.png)
-
-- Consider the change of variables $x\mapsto x-N$:
+f_R=f\mathbf1_{[-R,R]},\qquad g_R=g\mathbf1_{[-R,R]},
+\]
+we have
 \[
-\int_{-R_2}^{R_2} \abs{g(x)}\dx 
-= \int_{N-R_2} ^{N+R_2} \abs{g(x-N)} \dx
-\da \int_{N-R_2} ^{N+R_2} \abs{g_N(x)} \dx
-.\]
-  - Use this to conclude that
-  \[
-  \int_{N-R_2}^{N+R_2} \abs{g_N} = \norm{g_N} - 2\eps
-  .\]
-
-- Now split the integral in the problem statement at $R_1$:
-
+\|f-f_R\|_1<\varepsilon,
+\qquad
+\|g-g_R\|_1<\varepsilon.
+\]
+If $n>2R$, then $f_R$ and $(g_R)_n(x):=g_R(x-n)$ have disjoint supports, so
 \[
-\norm{f + g_N}_1 
-= \int_\RR \abs{f+g_N} 
-= \int_{-\infty}^{R_1} \abs{f+ g_N} + \int_{R_1}^{\infty} \abs{f+ g_N}
-\da I_1 + I_2
-.\]
-
-- **Idea**: from the picture, 
-
-  - On $I_1$, $f$ is big and $g_N$ is small
-  - On $I_2$, $f$ is small and $g_N$ is big
-
-- Casework: estimate $I_1, I_2$ separately, bounding from above and below.
-
-- $I_1$ upper bound:
-  \[
-  I_1 
-  &\da \int_{-\infty}^{R_1} \abs{f + g_N} \\
-  &\leq \int_{-\infty}^{R_1} \abs{f} + \abs{g_N} \\
-  &= \int_{-\infty}^{R_1} \abs{f} + \int_{-\infty}^{R_1} \abs{g_N} \\
-  &\leq \int_{-\infty}^{R_1} \abs{f} + \int_{-\infty}^{\color{green} N - R_2} \abs{g_N} && R_1 < N-R_2 \\
-  &= \norm{f}_1 - \int_{R_1}^{\infty} \abs{f} + \int_{-\infty}^{N - R_2} \abs{g_N} \\
-  &\leq \norm{f}_1 - \int_{R_1}^{\infty} \abs{f} + \eps \\
-  &\leq \norm{f}_1 + \eps
-  .\]
-  
-  - In the last step we've used that we're subtracting off a positive number, so forgetting it only makes things larger.
-  
-  - We've also used monotonicity of the Lebesgue integral: if $A\leq B$, then $(c, A) \subseteq (c, B)$ and $\int_{c}^A \abs f \leq \int_c^B \abs{f}$ since $\abs f$ is positive.
-
-- $I_1$ lower bound:
-\[
-I_1 
-&\da \int_{-\infty}^{R_1} \abs{f + g_N} \\
-&\geq \int_{-\infty}^{R_1} \abs{f} - \abs{g_N} \\
-&= \int_{-\infty}^{R_1} \abs{f} - \int_{-\infty}^{R_1} \abs{g_N} \\
-&\geq \int_{-\infty}^{R_1} \abs{f} - \int_{-\infty}^{\color{green} N-R_2} \abs{g_N} && R_1 < N-R_2 \\
-&= \norm{f}_1 - \int_{R_1}^{ \infty } \abs f - \int_{- \infty }^{N-R_2} \abs {g_N} \\
-&\geq \norm{f}_1 - \eps - \eps \\
-&= \norm{f}_1 - 2\eps
-.\]
-
-  - Now we've used that the integral with $g_N$ comes in with a negative sign, so extending the range of integration only makes things *smaller*.
-  We've also used the $\eps$ bound on both $f$ and $g_N$ here, and both are tail estimates.
-
-- Taken together we conclude
-\[
-\norm{f}_1 - 2\eps
-\leq I_1
-\leq \norm{f}_1 && \eps\to 0 \implies  I_1 = \norm{f}_1
-.\]
-
-
-- $I_2$ lower bound:
-\[
-I_2 
-&\da \int_{R_1}^{\infty} \abs{f + g_N} \\
-&\leq \int_{R_1}^{\infty} \abs{f} + \int_{R_1}^{\infty} {g_N} \\
-&\leq \int_{R_1}^{\infty} \abs{f} + \norm{g_N}_1 - \int_{-\infty}^{R_1} \abs{g_N} \\
-&\leq \eps + \norm{g_N}_1 - \int_{-\infty}^{R_1} \abs{g_N} \\
-&\leq \eps + \norm{g_N}_1 \\
-&= \eps + \norm{g}_1 
-.\]
-
-  - Here we've again thrown away negative terms, only increasing the bound, and used the tail estimate on $f$.
-
-- $I_2$ upper bound:
-
-\[
-I_2 
-&\da \int_{R_1}^{\infty} \abs{f + g_N} \\
-&= \int_{R_1}^{\infty} \abs{g_N + f} \\
-&\geq \int_{R_1}^{\infty} \abs{g_N} - \int_{R_1}^{\infty} \abs{f} \\
-&=  \norm{g_N} - \int_{-\infty}^{R_1} \abs{g_N} - \int_{R_1}^{\infty} \abs{f} \\
-&\geq  \norm{g_N} - 2\eps
-.\]
-
-  - Here we've swapped the order under the absolute value, and used the tail estimates on both $g$ and $f$.
-
-- Taken together:
-\[
-\norm{g}_1 - \eps \leq I_2 \leq \norm{g}_1 + 2\eps 
-.\]
-
-- Note that we have two inequalities:
-\[
-\norm{f}_1 - 2\eps &\leq \int_{-\infty}^{R_1} \abs{f -g_N} \leq \norm{f}_1 + \eps \\
-\norm{g}_1 - 2\eps &\leq \int^{\infty}_{R_1} \abs{f -g_N} \leq \norm{g}_1 + \eps 
-.\]
-
-- Add these to obtain
-\[
-\norm{f}_1 + \norm{g}_1 - 4\eps \leq I_1 + I_2 \da \norm{f - g_N}_1 \leq \norm{f} + \norm{g}_1 + 2\eps
-.\]
-
-- Check that as $N\to \infty$ as $\eps\to 0$ to yield the result.
-
+\|f_R+(g_R)_n\|_1=\|f_R\|_1+\|g_R\|_1.
+\]
 :::
 
+<1>2. Compare with the original functions.
+::: {.proof}
+Translation invariance gives
+\[
+\|g_n-(g_R)_n\|_1=\|g-g_R\|_1<\varepsilon.
+\]
+Hence
+\[
+\left|\|f+g_n\|_1-\|f_R+(g_R)_n\|_1\right|<2\varepsilon.
+\]
+Also
+\[
+0\le\|f\|_1-\|f_R\|_1<\varepsilon,
+\qquad
+0\le\|g\|_1-\|g_R\|_1<\varepsilon.
+\]
+Thus, for $n>2R$,
+\[
+\left|\|f+g_n\|_1-(\|f\|_1+\|g\|_1)\right|<4\varepsilon.
+\]
+Letting $\varepsilon\downarrow0$ proves
+\[
+\boxed{\lim_{n\to\infty}\|f+g(\cdot-n)\|_1=\|f\|_1+\|g\|_1.}
+\]
+:::
+:::
