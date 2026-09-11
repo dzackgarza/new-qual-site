@@ -96,9 +96,14 @@ Everything the algebraic geometry material needs is already central: `\Spec`, `\
 
 One paradigm change the vault predates: script letters are **lowercase**, so the vault's `\mcI`, `\mcF` become `\mci`, `\mcf`, matching `\mca`–`\mcz`.
 
-The vault's `\fiberprod{Y}` needs no change at all.
-It is defined centrally as a one-argument alias of `\fiberproduct`, and one argument is all either can take: the macro is the operator $\times_Y$, and the two factors are written around it.
-The site spells it `\fiberprod`, following the vault's forty occurrences.
+The fibre product was reshaped.
+`\fiberprod` had been a one-argument glyph — the decorated $\times$, with the factors written outside it — which names the symbol rather than the object.
+It is now
+\[
+\text{\texttt{\textbackslash fiberprod\{X\}\{S\}\{Y\}}} \quad = \quad X \times_S Y ,
+\]
+taking all three schemes it depends on.
+`\fiberproduct` keeps the glyph for the cases that need it: an $n$-fold chain, which has no two factors to name, and `\fiberpower`, which superscripts the operator.
 
 `\CaCl` was the one name genuinely absent, and it was added to `latexmacs.tex` beside `\Cl` rather than spelled out per-card, because the vocabulary is the place a name is defined once.
 
