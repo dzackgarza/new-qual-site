@@ -90,9 +90,7 @@ It is never hand-edited: writing a card that uses a macro the preamble defines, 
 
 The preamble already supplies `\Spec`, `\Proj`, `\Pic`, `\Div`, `\Cl`, `\OO`, `\PP`, `\AA`, `\da`, `\ts`, `\st`, `\sm`, `\union`, `\intersect`, `\ro`, `\res`, `\dual`, `\gens`, `\mfm`, `\mfp`, `\injects`, `\tensor`, `\abs`, `\Frac`, `\Hom`.
 
-It does **not** supply several the 2022 vault uses freely, and these must be written out in full:
-`\mcI` and friends (use `\mathcal{I}`), `\fiberprod` (`\times_Y`), `\inp` (`\langle -,- \rangle`), `\GG` (`\mathbb{G}_m`), `\Jac`, `\codim`, `\CaCl` (`\operatorname{...}`).
-Nothing reports an undefined macro: `just check` passes and the page ships with the macro unexpanded.
+It does **not** supply several the 2022 vault uses freely, and these must be written out in full: `\mcI` and friends (use `\mathcal{I}`), `\fiberprod` (`\times_Y`), `\inp` (`\langle -,- \rangle`), `\GG` (`\mathbb{G}_m`), `\Jac`, `\codim`, `\CaCl` (`\operatorname{...}`). Nothing reports an undefined macro: `just check` passes and the page ships with the macro unexpanded.
 See [issue #87](https://github.com/dzackgarza/new-qual-site/issues/87).
 
 ## Order of work
