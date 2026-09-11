@@ -180,6 +180,9 @@ with the fenced div alone. The heading was introduced when the card was re-solve
 premise that the range was unsolved, so the card may also now carry solution prose that
 duplicates or contradicts what the div already held.
 
-- [ ] Read the card, remove the stray `## Solution` heading, and reconcile the solution body
+- [x] Read the card, remove the stray `## Solution` heading, and reconcile the solution body
       against what was there before the 2026-09-11 re-solve (`git log -p` on that path). Keep
-      whichever proof is correct and complete; do not keep both.
+      whichever proof is correct and complete; do not keep both. Closed 2026-09-11: comparison
+      of `14892b8e1` with `aca92dc21` shows there was always one solution div; the latter
+      only added Lamport substep labels, a goal sentence, and the stray Markdown heading.
+      The structured proof is retained and the heading removed.
