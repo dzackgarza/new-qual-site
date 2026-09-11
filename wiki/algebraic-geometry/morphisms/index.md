@@ -15,3 +15,7 @@ Separatedness is the most examined property in this topic, and not for its defin
 Have the counterexamples ready for when reducedness or separatedness is dropped.
 
 Going up and going down belong here too, as statements about the geometry of the induced map on spectra rather than as facts about rings.
+
+- [[algebraic-geometry/morphisms/separated-and-proper|Separated and proper]], the diagonal, the valuative criteria, and the counterexamples for each dropped hypothesis.
+
+- [[algebraic-geometry/morphisms/finite-and-flat|Finite and flat]], going up as a statement about closed images, and what flatness keeps constant.
