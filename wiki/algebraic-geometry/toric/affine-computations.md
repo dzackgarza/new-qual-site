@@ -27,6 +27,13 @@ The relations always assemble into the minors of a matrix, because a two-dimensi
 The determinant of the ray generators decides everything in dimension two.
 It is $1$ exactly when the cone is smooth, and in general it is the order of the local class group, so it is the first number to compute about a cone and the last one that is needed.
 
+## The normality caveat, and how to repair it
+
+[[D-FULSAT]]
+
+A semigroup handed to you need not be the semigroup of a cone.
+Saturation is the test, and the recipe above is the repair, so a variety presented by generators rather than by a cone should be normalised before the dictionary is applied to it.
+
 ## The standard singular cone
 
 [[FE-TORCD]]

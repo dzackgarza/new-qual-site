@@ -31,3 +31,10 @@ The section lifts globally exactly when that cocycle is a coboundary, so the obs
 \]
 is the bookkeeping for it.
 Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream of this paragraph.
+
+## Support
+
+[[D-UDIVH]]
+
+The trap is that the two supports read identically and behave differently: a fixed section dies on an open set, a whole stalk need not.
+Extension by zero is the construction that lives in the gap, and coherence on a Noetherian scheme is the hypothesis that closes it.

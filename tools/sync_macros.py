@@ -80,7 +80,11 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # amsmath's own internals: MathJax already provides both, so its versions
 # stand. `\fps` is written with stmaryrd's `\llbracket` and `\rrbracket`, which
 # are U+27E6 and U+27E7. `\envlist` is vertical glue with no mathematics in it.
+# `\colim` is `\mathpalette` over `\colim@`, `\rightarrowfill@` and
+# `\nmlimits@`, all amsmath internals; `\operatorname*` is the same operator
+# with the same limit placement, minus the arrow drawn under the name.
 UNRENDERABLE = {
+    "colim": "\\operatorname*{colim}",
     "notdivides": "\\mathrel{\\nmid}",
     "contradiction": "\\mathord{\\unicode{x21AF}}",
     "one": "{\\unicode{x1D7D9}}",

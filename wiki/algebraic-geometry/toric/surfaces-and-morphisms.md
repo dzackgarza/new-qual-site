@@ -27,6 +27,8 @@ Properness is a limit condition, one-parameter subgroups are lattice points, and
 The three families are not independent.
 $\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_1 \PP^2$, and every surface with five or more rays is obtained from one of these by inserting rays.
 
+[[PR-FULKSQ]]
+
 ## Blowups
 
 [[FE-TORBLOW]]

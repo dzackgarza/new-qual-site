@@ -16,6 +16,8 @@ Passing between the two is the second half of the dictionary, and it converts ev
 
 [[D-TORMOMENT]]
 
+[[D-FULSIMPLE]]
+
 ## Divisors from the rays
 
 [[T-TORDIV]]
@@ -42,6 +44,12 @@ Beyond that, the cone over the rational normal curve shows how badly they can di
 A useful order of operations when asked whether a divisor is ample.
 Write $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inp{m}{u_\rho} \geq -a_\rho$, and check whether its vertices are in bijection with the maximal cones.
 If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
+
+[[D-FULNORMPOLY]]
+
+[[FE-FULAVA]]
+
+Very ampleness is the one clause on that list that is not visible on the fan alone, and the example shows what it costs to ignore it: a strictly convex support function, an ample divisor, and a map that is two-to-one instead of an embedding.
 
 ## Fano and Calabi-Yau
 

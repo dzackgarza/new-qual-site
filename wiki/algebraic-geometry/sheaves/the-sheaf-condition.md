@@ -28,3 +28,18 @@ Naming which axiom breaks is the whole of the answer.
 Sheafification changes no stalk.
 That single sentence settles most follow-ups, because it forces every construction whose definition is stalk-local — kernels, images, exactness — to be insensitive to whether one sheafified.
 The constructions that are not stalk-local, cokernels first among them, are exactly the ones that need it.
+
+## Sheafification as a space over $X$
+
+The compatible-families formula is correct and tells nobody why it is the right formula.
+The espace étalé does: a sheaf is a space over $X$ whose projection is a local homeomorphism, and the sections of $\mcf^+$ are its continuous sections.
+
+[[D-VJFAP]]
+
+Read the two standard facts off the construction rather than proving them again.
+Stalks are unchanged because the space was built out of stalks alone, and $\mcf \to \mcf^+$ is an isomorphism exactly when $\mcf$ already had every section the space carries.
+
+[[PR-IP6ZG]]
+
+Colimits are the one place the sheafification refuses to disappear on a general space.
+Quasicompactness is what removes it, so the Noetherian hypothesis is doing real work and should be quoted, not omitted.

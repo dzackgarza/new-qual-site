@@ -21,3 +21,5 @@ It is the fastest source of examples and counterexamples when an examiner asks f
 - [[algebraic-geometry/toric/polytopes-and-divisors|Polytopes and divisors]], the normal fan, $\Cl$ and $\Pic$ from the rays, the polytope $P_D$ and its lattice points as sections, ampleness, and the reflexive polytopes behind the toric Fanos.
 
 - [[algebraic-geometry/toric/surfaces-and-morphisms|Toric surfaces and toric morphisms]], the completeness criterion, the classification of smooth complete toric surfaces, intersection numbers, blowups as star subdivisions, and weighted projective space.
+
+- [[algebraic-geometry/toric/criteria|Criteria and numerical invariants]], one table of the fan conditions for smooth, complete, projective and Fano, the Betti numbers from the cone counts, and the degree as a normalised volume.

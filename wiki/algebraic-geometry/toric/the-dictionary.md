@@ -17,6 +17,13 @@ Toric geometry earns a place on a revision list for one reason: it is the corner
 
 [[PR-D2F15]]
 
+## Orbit closures are toric too
+
+[[D-FULSTAR]]
+
+The orbit-cone correspondence lists the orbits; the star fan identifies each closure as a toric variety in its own right.
+That is what makes induction on dimension available: a statement about $X_\Sigma$ can be tested on the boundary divisors $D_\rho = X_{\Star(\rho)}$, which are toric varieties one dimension down.
+
 ## What to reach for, and when
 
 | Asked for | Fan that supplies it |
