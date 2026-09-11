@@ -40,6 +40,25 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `parse_cards` cannot be used from a stdin Python script under the forkserver start method
+
+- **Object and evidence:** the final read-only measurement over the assigned collection range imported `qualc.model.parse_cards` from `.venv/bin/python - <<'PY' ...`. Its process pool used the forkserver start method, whose child process tried to reopen the main module at `/home/dzack/gitclones/new-qual-site/<stdin>` and failed with `FileNotFoundError`, followed by `ConnectionResetError` in the parent.
+- **Impact:** direct one-process measurement code cannot call `parse_cards` when the driver is supplied on standard input, even though the same code is otherwise valid. No corpus content was changed by the failed measurement.
+- **Repair:** run the measurement from a temporary real `.py` file with an `if __name__ == '__main__'` guard. The retry completed and reported 44 assigned collections, 2,791 unique cards, and zero unsolved cards or appearances.
+
+### `SRC-TEXT-HK71` omits source Exercises 10.2.11--10.2.17
+
+- **Object and evidence:** the authored Section 10.2 index stops at `E-HK-102-10`, but the source continues through at least Exercise 17. This became operationally visible at `E-HK-103-6`, whose printed instruction is to prove the analogue of Exercise 11 in Section 10.2, and `E-HK-103-8`, which similarly refers to Exercise 17. The source text confirms those cross-references and supplies the omitted statements.
+- **Impact:** the local collection makes legitimate textbook cross-references look impossible and prevents source-local traversal of the referenced exercises. The selected 10.3 cards can be made self-contained by restating the referenced theorem, but the Section 10.2 corpus remains incomplete.
+- **Uncertainty:** none about the omission; the source Section 10.2 contains Exercises 11--17 while the authored collection contains only 1--10.
+- **Repair:** add the missing Section 10.2 cards from the source in source order, preserving stable IDs and provenance; until then, expand dependent cards such as `E-HK-103-6` and `E-HK-103-8` so their mathematical obligations are explicit.
+
+### Stale Git sequencer metadata can block unrelated prose commits
+
+- **Object and evidence:** while committing `E-HK-102-9` on 2026-09-11, `qualc.authoring commit` refused because Git reported a cherry-pick in progress. There was no `CHERRY_PICK_HEAD` and no active `git cherry-pick`/`git revert` process; `.git/sequencer/` instead contained a September 9 todo beginning from `94c14cf30` while `HEAD` had advanced to `8864bf13d`.
+- **Impact:** the stale sequencer state blocked otherwise valid explicit-path card commits even though no sequencing operation was active.
+- **Repair:** after verifying the stale head, absent `CHERRY_PICK_HEAD`, and absence of an active sequencing process, `git cherry-pick --quit` cleared only the sequencer metadata and left the working tree unchanged. A repository-side cleanup or authoring-tool diagnostic could make this failure mode easier to distinguish from a live cherry-pick.
+
 ### UCSD Spring 2011 Algebra solutions were stored with literal newline escapes
 
 - **Object and need:** `P-ALGS11E`, `P-ALGS11F`, `P-ALGS11G`, and `P-ALGS11H`; authored solution blocks must be valid Markdown fences so repository tooling recognizes them as solved cards.
