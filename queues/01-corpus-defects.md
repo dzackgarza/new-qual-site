@@ -7,7 +7,7 @@ Commit after each.
 
 ## Open items
 
-- [x] 1.R1 Repair the three `SRC-TEXT-HAT02` cards whose `audit.note` breaks YAML parsing.
+- [ ] 1.R1 Repair the three `SRC-TEXT-HAT02` cards whose `audit.note` breaks YAML parsing.
 
   `just check` is red on `main` because three cards carry an unquoted colon inside
   `audit.note`, so the front matter fails to parse. Every stream in this repository is
@@ -19,7 +19,7 @@ Commit after each.
 
   Acceptance: `just check` green on `main` with no card content altered beyond quoting.
 
-- [x] 1.R2 Settle the cards that exist in two independently authored versions.
+- [ ] 1.R2 Settle the cards that exist in two independently authored versions.
 
   Branch consolidation merged ~1,618 commits into `main` and stopped on 14 branches
   holding 61 commits that cannot merge: each conflict is two different proofs of the
@@ -39,50 +39,8 @@ Commit after each.
   `queues/C-unsolved-cards.md` is generated, and `COMPLAINTS.md` conflicts are
   append-versus-append.
 
-  Adjudication record (2026-09-10): the named branch tips are all ancestors of `main`.
-  The refs `agent/algebra-audit-cont2` and `agent/algebra-audit-cont3` are now named
-  `agent/algebra-audit-cont2-20260909` and `agent/algebra-audit-cont3-20260909`; the
-  queue text says fourteen branches but enumerates thirteen. Reconstructed conflict paths
-  from the consolidation merges and compared both parent proofs card-by-card.
-
-  - UCSD Spring 2019: retain the current versions of `P-ALGS19B`--`P-ALGS19G`.
-    The competing proofs of B, C, and E are mathematically equivalent; D is identical
-    between the two authored branches; F is equivalent to the pre-existing proof; and G
-    improves on the pre-existing version by removing a malformed Lamport reference while
-    giving the same Frobenius-orbit argument.
-  - `P-2B4GV`: retain the explicit-basis proof. The alternative determinant/index proof
-    is correct, but the retained identities directly exhibit all three standard basis
-    vectors in the subgroup.
-  - `P-44MIX`, `P-45V3F`, `P-5H7FG`, `P-EGKRW`, `P-Q6PDD`, and `P-UW7CE`: retain the
-    current proofs. The alternatives are correct, but the retained versions make the
-    exceptional-characteristic, invariant-factor, rank, spectral-theorem, or direct-sum
-    arguments more explicit.
-  - `P-5SED7`: retain the current proof because it also handles the case where the PID is
-    a field, omitted by the competing `R/(p)` classification. `P-HFGO8` was not a proof
-    conflict: the other merge parent had no solution.
-  - UCSD 2005/2006 and RINGS-MODULES: retain the current versions. `P-ALGS06B` is the
-    decisive case: it correctly observes that uniqueness of the polar isometry is false
-    for rank-deficient matrices, while the competing proof silently assumes full column
-    rank. `P-ALGS06E` gives the fuller total-quotient-ring localization argument; the
-    competing proofs of `P-ALGS06A`, `P-ALGS06F`, `P-ALGS06G`, and the review-module
-    card are mathematically equivalent. `P-APAF06A`'s retained primary-decomposition
-    proof is correct.
-  - Canonical Algebra cards: retain the current versions of `E-2JG2B`, `E-44SHD`,
-    `E-75GIT`, `E-77EY7`, `E-N626Y`, `P-1DBO7`, and `P-2FQMB`. The first four pairs
-    are equivalent correct proofs. `P-1DBO7` is the version matching the repaired claim
-    that a finite extension is contained in a finite splitting field, not itself
-    necessarily a splitting field. `P-2FQMB` gives a direct non-semisimplicity proof.
-  - Small merges: retain the current `P-EKNFG`, `P-25QBA`, `P-ALGS05A`, `P-ALGS05B`,
-    `E-AMD-TLP6GSQI`, `E-AMD-TM3LMADH`, and `E-F2PUE`; each competing proof is correct.
-    Retain the current `P-ALGF07A` specifically because the competing branch stops after
-    parts (a)--(b), while the current card also proves part (c).
-  - The additional conflicts in merge `0e3b4ee9c` (`P-RI3ZA`, `P-RI6SK`) are not
-    competing proofs: the second parent had no solution, so the retained authored proofs
-    are the only ones to adjudicate. Generated `queues/C-unsolved-cards.md` conflicts
-    were ignored, and `COMPLAINTS.md` conflicts are append-versus-append as specified.
-
-  Acceptance: every named branch is merged into `main`; its substantive proof conflicts
-  have been adjudicated above, and no branch was deleted.
+  Acceptance: every branch either merged or its unique commits explicitly superseded
+  with the reason recorded. No branch deleted until then.
 
 - [ ] 1.R3 Settle the twenty recovered cards that now have a competing version.
 
