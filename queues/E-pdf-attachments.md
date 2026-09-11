@@ -390,7 +390,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — University of Arizona — geometry/topology — disposition 2026-09-11: John Kerl's derivative solution compendium for old University of Arizona geometry/topology qualifying exams, not an original exam source; already linked from `wiki/topology/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing a collection.
 
-- [ ] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — UNL — alg-geom
+- [x] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — Fall 2013 qualifying-exam solutions — disposition 2026-09-11: derivative solution compendium covering Qualifying Exams I, II, and III rather than an original exam paper; already linked from `wiki/archives/solution-compendia.md`, so retain it as a solutions resource and do not manufacture duplicate collections.
 
 - [x] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: exact byte duplicate of `Texas_Solns.pdf` (SHA-256 `77623034b4c2c3903dffc0fe2e816a9e5d10fe94018cb1dbf6d40e183f6c899c`). Kari Eifler's TAMU Real Analysis qualifying-exam solutions are already represented as a solutions resource; the canonical resource link points to `Texas_Solns.pdf`, so no duplicate collection or resource entry is needed.
 
