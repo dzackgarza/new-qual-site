@@ -41,5 +41,4 @@ $\PP^1 \times \PP^1$ is projective by Segre and not affine by the function count
 The complement of a hypersurface in $\PP^2$ is affine, and it is not projective, because it is a proper open subset of an irreducible projective surface.
 Neither answer needs cohomology.
 
-Serre's cohomological criterion — $X$ Noetherian is affine exactly when $H^1(X, \mcF) = 0$ for every quasicoherent $\mcF$ — is the version that generalises, and it is in [[algebraic-geometry/cohomology/index|cohomology]].
-It is worth knowing which of the two an examiner is asking for: a request to *decide* a case wants the function count, and a request to *prove a criterion* wants Serre.
+Serre's cohomological criterion — $X$ Noetherian is affine exactly when $H^1(X, \mathcal{F}) = 0$ for every quasicoherent $\mathcal{F}$ — is the version that generalises, and it is in [[algebraic-geometry/cohomology/index|cohomology]]. It is worth knowing which of the two an examiner is asking for: a request to *decide* a case wants the function count, and a request to *prove a criterion* wants Serre.

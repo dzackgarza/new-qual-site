@@ -19,3 +19,5 @@ Dimension, degree, and the Hilbert polynomial live here: what the leading term o
 - [[algebraic-geometry/varieties/the-dictionary|The dictionary]], radical ideals against closed sets, and what the classical picture cannot see.
 
 - [[algebraic-geometry/varieties/affine-or-projective|Affine or projective]], the test that decides which category a presented variety is in.
+
+- [[algebraic-geometry/varieties/dimension-and-degree|Dimension and degree]], and the Hilbert polynomial that carries both.
