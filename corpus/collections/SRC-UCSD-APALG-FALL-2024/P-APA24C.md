@@ -237,3 +237,102 @@ Thus, for every $1\le k\le n-2$,
 \boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
 \]
 :::
+
+::: {.solution}
+Let
+\[
+R_M(x)=\frac{x^H Mx}{x^Hx}
+\]
+be the Rayleigh quotient of a Hermitian matrix $M$.
+
+<1>1. The subspace
+\[
+K:=\ker B^H
+\]
+has codimension at most $2$, and $C$ agrees with $A$ on $K$ in the sense that
+\[
+x^HCx=x^HAx\qquad(x\in K).
+\]
+::: {.proof}
+Since $\operatorname{rank}B=2$, also $\operatorname{rank}B^H=2$, so
+\[
+\dim K=n-2.
+\]
+If $x\in K$, then $B^Hx=0$, hence
+\[
+x^HBB^Hx=\|B^Hx\|^2=0.
+\]
+Therefore
+\[
+x^HCx=x^H(A+BB^H)x=x^HAx.
+\]
+:::
+
+<1>2. For every subspace $S\subseteq\mathbb C^n$ of dimension $k+2$,
+\[
+\dim(S\cap K)\ge k.
+\]
+::: {.proof}
+Using the dimension inequality,
+\[
+\dim(S\cap K)
+\ge \dim S+\dim K-n
+=(k+2)+(n-2)-n=k.
+\]
+:::
+
+<1>3. By the Courant--Fischer min--max principle,
+\[
+\lambda_{k+2}(C)
+=\min_{\dim S=k+2}\ \max_{0\ne x\in S}R_C(x).
+\]
+For each such $S$, choose a $k$-dimensional subspace $T\subseteq S\cap K$. Then
+\[
+\max_{0\ne x\in S}R_C(x)
+\ge \max_{0\ne x\in T}R_C(x)
+=\max_{0\ne x\in T}R_A(x)
+\ge \lambda_k(A).
+\]
+This inequality is in the wrong direction for the desired conclusion, so instead use the dual Courant--Fischer formula
+\[
+\lambda_{k+2}(C)
+=\max_{\dim L=k+2}\ \min_{0\ne x\in L}R_C(x),
+\]
+which still does not directly compare with $A$. We therefore use the equivalent codimension form below.
+:::
+
+<1>4. The desired inequality follows from the codimension form of Courant--Fischer:
+\[
+\lambda_j(M)=\min_{\operatorname{codim}S=j-1}\ \max_{0\ne x\in S}R_M(x).
+\]
+::: {.proof}
+Fix a subspace $S_A$ of codimension $k-1$ for which
+\[
+\max_{0\ne x\in S_A}R_A(x)=\lambda_k(A).
+\]
+Set
+\[
+S:=S_A\cap K.
+\]
+Since $K$ has codimension $2$,
+\[
+\operatorname{codim}S\le (k-1)+2=k+1.
+\]
+Enlarge $S$ if necessary to a subspace $\widetilde S$ of codimension exactly $k+1$ contained in $S_A$ and containing $S$; equivalently, choose any codimension-$k+1$ subspace of $S_A$ contained in $K$.
+For every nonzero $x\in\widetilde S\subseteq K$,
+\[
+R_C(x)=R_A(x)\le \lambda_k(A).
+\]
+Therefore, by Courant--Fischer,
+\[
+\lambda_{k+2}(C)
+\le \max_{0\ne x\in\widetilde S}R_C(x)
+\le \lambda_k(A).
+\]
+Hence
+\[
+\boxed{\lambda_{k+2}(C)\le \lambda_k(A)}
+\qquad(1\le k\le n-2).
+\]
+:::
+:::
