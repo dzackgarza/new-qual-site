@@ -45,8 +45,11 @@ That is, $\Jac(X)$ represents $\Pic^0(X/{-})$.
 Moreover:
 
 - On $k$-points, $\Jac(X)(k) = \Pic^0(X)$.
+
 - $\Jac(X)$ is a group scheme over $k$: the identity is the class of $\OO_X$, inversion is $\mcl \mapsto \mcl^{-1}$, and addition is $p_1^*\mcl \tensor p_2^*\mcl$.
+
 - $\T_0 \Jac(X) \iso H^1(X; \OO_X)$, so $\Jac(X)$ is smooth of dimension $g$.
+
 - $\Jac(X)$ is proper over $k$, hence an abelian variety.
 
 For $X = E$ elliptic, $E \iso \Jac(E)$.
