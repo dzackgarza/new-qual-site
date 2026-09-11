@@ -485,3 +485,104 @@ By <1>1, \(\lambda_{k+2}(C)\) is the minimum, over all subspaces of dimension \(
 \]
 :::
 :::
+
+::: {.solution}
+Let
+\[
+R_M(x)=\frac{x^HMx}{x^Hx}
+\]
+be the Rayleigh quotient of a Hermitian matrix $M$.
+
+<1>1. Since $\operatorname{rank}B=2$, the subspace
+\[
+K:=\ker B^H\subseteq\mathbb C^n
+\]
+has codimension $2$.
+Moreover, for every $x\in K$,
+\[
+R_C(x)=R_A(x).
+\]
+::: {.proof}
+By rank-nullity applied to $B^H$, whose rank is also $2$,
+\[
+\dim K=n-2.
+\]
+If $x\in K$, then $B^Hx=0$, and therefore
+\[
+x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
+\]
+Dividing by $x^Hx$ gives the equality of Rayleigh quotients.
+:::
+
+<1>2. For a Hermitian matrix $M$ with eigenvalues
+\[
+\lambda_1(M)\ge\cdots\ge\lambda_n(M),
+\]
+the Courant--Fischer min--max formula is
+\[
+\lambda_j(M)
+=
+\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-j+1}}
+\ \max_{0\ne x\in L} R_M(x).
+\]
+:::
+
+<1>3. Fix $1\le k\le n-2$ and let $L\subseteq\mathbb C^n$ be any subspace of dimension
+\[
+\dim L=n-k+1.
+\]
+Then
+\[
+\dim(L\cap K)\ge n-k-1.
+\]
+::: {.proof}
+Using
+\[
+\dim(L\cap K)\ge \dim L+\dim K-n,
+\]
+we obtain
+\[
+\dim(L\cap K)
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+:::
+
+<1>4. We have
+\[
+\lambda_{k+2}(C)\le\lambda_k(A).
+\]
+::: {.proof}
+Let $L$ be an arbitrary $(n-k+1)$-dimensional subspace. By <1>3, choose a subspace
+\[
+L'\subseteq L\cap K
+\]
+of dimension exactly $n-k-1$. Then <1>1 gives
+\[
+\max_{0\ne x\in L'}R_C(x)
+=
+\max_{0\ne x\in L'}R_A(x)
+\le
+\max_{0\ne x\in L}R_A(x).
+\]
+By Courant--Fischer applied to $C$ at index $k+2$,
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in L'}R_C(x).
+\]
+Hence
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in L}R_A(x).
+\]
+Since this holds for every $(n-k+1)$-dimensional subspace $L$, taking the minimum over all such $L$ and applying Courant--Fischer to $A$ at index $k$ gives
+\[
+\lambda_{k+2}(C)
+\le
+\lambda_k(A).
+\]
+This is exactly the desired interlacing inequality.
+:::
+:::
