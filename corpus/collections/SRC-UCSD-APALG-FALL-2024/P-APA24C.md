@@ -305,3 +305,90 @@ Hence
 \]
 :::
 :::
+
+::: {.solution}
+Let
+\[
+R_M(x)=\frac{x^HMx}{x^Hx}
+\]
+denote the Rayleigh quotient of a Hermitian matrix $M$.
+
+<1>1. The kernel of $B^H$ has codimension $2$.
+::: {.proof}
+Since $\operatorname{rank}B=2$, also $\operatorname{rank}B^H=2$. Hence by rank-nullity,
+\[
+\dim\ker B^H=n-2.
+\]
+:::
+
+<1>2. On $\ker B^H$, the quadratic forms of $A$ and $C$ agree.
+::: {.proof}
+If $x\in\ker B^H$, then
+\[
+BB^Hx=0,
+\]
+so
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+Therefore
+\[
+R_C(x)=R_A(x)
+\]
+for every nonzero $x\in\ker B^H$.
+:::
+
+<1>3. For every $1\le k\le n-2$,
+\[
+\lambda_{k+2}(C)\le \lambda_k(A).
+\]
+::: {.proof}
+By the Courant--Fischer min-max principle,
+\[
+\lambda_{k+2}(C)
+=
+\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
+\max_{0\ne x\in L}R_C(x).
+\]
+Let $E_k\subseteq\mathbb C^n$ be the span of eigenvectors of $A$ corresponding to
+\[
+\lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
+\]
+Then
+\[
+\dim E_k=n-k+1,
+\]
+and every nonzero $x\in E_k$ satisfies
+\[
+R_A(x)\le \lambda_k(A).
+\]
+Now set
+\[
+L=E_k\cap\ker B^H.
+\]
+Using <1>1,
+\[
+\dim L
+\ge \dim E_k+\dim\ker B^H-n
+=(n-k+1)+(n-2)-n
+=n-k-1.
+\]
+Choose an $(n-k-1)$-dimensional subspace $L_0\subseteq L$.
+For every nonzero $x\in L_0$, <1>2 gives
+\[
+R_C(x)=R_A(x)\le \lambda_k(A).
+\]
+Hence
+\[
+\max_{0\ne x\in L_0}R_C(x)\le \lambda_k(A).
+\]
+Applying Courant--Fischer to the particular admissible subspace $L_0$ yields
+\[
+\lambda_{k+2}(C)
+\le
+\max_{0\ne x\in L_0}R_C(x)
+\le \lambda_k(A).
+\]
+This is the desired two-step interlacing inequality.
+:::
+:::
