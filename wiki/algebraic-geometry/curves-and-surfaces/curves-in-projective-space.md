@@ -22,6 +22,11 @@ None of the sufficient conditions is necessary, and the canonical divisor on a p
 Every curve fits in $\PP^3$, and the argument is a dimension count: secants sweep a threefold, tangents a surface, so a general centre of projection misses both until the ambient space runs out of room.
 Projecting once more into the plane costs injectivity, and nodes are the cheapest way to pay.
 
+[[D-CRVPLSING]]
+
+Being able to name what is worse than a node is what makes the previous sentence a claim rather than a slogan.
+The examiner's question is usually why a given plane model cannot have come from a general projection, and the answer is that its singularity is a codimension-one coincidence.
+
 ## Curves on a quadric
 
 [[FE-CRVQUAD]]
