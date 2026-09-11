@@ -21,3 +21,5 @@ Dimension, degree, and the Hilbert polynomial live here: what the leading term o
 - [[algebraic-geometry/varieties/affine-or-projective|Affine or projective]], the test that decides which category a presented variety is in.
 
 - [[algebraic-geometry/varieties/dimension-and-degree|Dimension and degree]], and the Hilbert polynomial that carries both.
+
+- [[algebraic-geometry/varieties/smooth-and-singular|Smooth and singular]], the two criteria for nonsingularity, and how normality sits between them.

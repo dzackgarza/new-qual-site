@@ -35,6 +35,7 @@ Write $\dim X = d$.
 Then $\deg P_X = d$, and
 
 - the leading coefficient is $\deg(X)/d!$, which *defines* the degree of $X$;
+
 - the constant term is $\chi(\OO_X) = 1 - p_a(X)$, which defines the arithmetic genus.
 
 Both readings are sensitive to the embedding, because $S(X)$ is: $P_X$ is an invariant of $X \subseteq \PP^n$ together with $\OO_X(1)$, not of $X$ alone.
