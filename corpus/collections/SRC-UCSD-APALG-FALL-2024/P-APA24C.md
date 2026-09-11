@@ -158,3 +158,91 @@ The subspace $S$ from <1>3 has exactly this dimension, so
 by <1>4.
 :::
 :::
+
+::: {.solution}
+<1>1. Let
+\[
+K:=\ker B^H.
+\]
+Then \(\dim K=n-2\), and for every \(x\in K\),
+\[
+Cx=Ax.
+\]
+::: {.proof}
+Since \(\operatorname{rank}B=2\), we also have \(\operatorname{rank}B^H=2\). By rank-nullity,
+\[
+\dim K=n-2.
+\]
+If \(x\in K\), then \(B^Hx=0\), so
+\[
+Cx=(A+BB^H)x=Ax.
+\]
+:::
+
+<1>2. For every Hermitian matrix \(H\) and every \(1\le j\le n\), the Courant--Fischer formula gives
+\[
+\lambda_j(H)
+=\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-j+1}}
+\ \max_{0\ne x\in L}
+\frac{x^HHx}{x^Hx}.
+\]
+::: {.proof}
+This is the standard min--max characterization of the ordered eigenvalues of a Hermitian matrix.
+:::
+
+<1>3. Fix \(1\le k\le n-2\). There exists a subspace \(L\subseteq\mathbb C^n\) of dimension \(n-k+1\) such that
+\[
+\max_{0\ne x\in L}\frac{x^HAx}{x^Hx}=\lambda_k(A).
+\]
+::: {.proof}
+Take \(L\) to be the span of orthonormal eigenvectors of \(A\) corresponding to
+\[
+\lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
+\]
+Then \(\dim L=n-k+1\), and the Rayleigh quotient of \(A\) on \(L\) is at most \(\lambda_k(A)\), with equality on an eigenvector for \(\lambda_k(A)\).
+:::
+
+<1>4. The intersection \(L\cap K\) has dimension at least \(n-k-1\).
+::: {.proof}
+Using \(\dim(U\cap W)\ge \dim U+\dim W-n\),
+\[
+\dim(L\cap K)
+\ge (n-k+1)+(n-2)-n
+=n-k-1.
+\]
+Since \(k\le n-2\), this number is nonnegative.
+:::
+
+<1>5. Therefore
+\[
+\lambda_{k+2}(C)\le \lambda_k(A).
+\]
+::: {.proof}
+Choose a subspace \(M\subseteq L\cap K\) with
+\[
+\dim M=n-k-1=n-(k+2)+1.
+\]
+For every nonzero \(x\in M\subseteq K\), <1>1 gives
+\[
+\frac{x^HCx}{x^Hx}
+=\frac{x^HAx}{x^Hx}.
+\]
+Because \(M\subseteq L\), <1>3 yields
+\[
+\max_{0\ne x\in M}\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+Applying Courant--Fischer to \(C\) at index \(k+2\),
+\[
+\lambda_{k+2}(C)
+=\min_{\substack{N\subseteq\mathbb C^n\\ \dim N=n-k-1}}
+\max_{0\ne x\in N}
+\frac{x^HCx}{x^Hx}
+\le
+\max_{0\ne x\in M}
+\frac{x^HCx}{x^Hx}
+\le \lambda_k(A).
+\]
+Thus the claimed inequality holds for every \(1\le k\le n-2\).
+:::
+:::
