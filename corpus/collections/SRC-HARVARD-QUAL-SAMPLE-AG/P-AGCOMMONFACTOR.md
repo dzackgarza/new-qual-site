@@ -15,6 +15,5 @@ review: draft
 ---
 
 ::: problem
-If $f(x,y)$ and $g(x,y)$ are two polynomials such that the curves they define have
-infinitely many points in common, is it true that they have a common factor?
+If $f(x,y)$ and $g(x,y)$ are two polynomials such that the curves they define have infinitely many points in common, is it true that they have a common factor?
 :::

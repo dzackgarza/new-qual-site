@@ -17,6 +17,5 @@ review: draft
 ::: problem
 Describe Weil divisors and Cartier divisors on curves.
 
-How do you get a Weil divisor from an element $f \in K^*$, in the canonical
-isomorphism?
+How do you get a Weil divisor from an element $f \in K^*$, in the canonical isomorphism?
 :::

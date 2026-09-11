@@ -15,6 +15,5 @@ review: draft
 ---
 
 ::: problem
-What can you say about the dimension of the image of a map from $\PP^n$ to
-$\PP^m$?
+What can you say about the dimension of the image of a map from $\PP^n$ to $\PP^m$?
 :::
