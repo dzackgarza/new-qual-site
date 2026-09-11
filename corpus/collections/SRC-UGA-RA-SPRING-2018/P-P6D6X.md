@@ -13,66 +13,79 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against the UGA Spring 2018 real-analysis qualifying exam recorded by SRC-UGA-RA-SPRING-2018.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
+
+::: problem
 Suppose that
 
-- $f_n, f \in L^1$,
-- $f_n \to f$ almost everywhere, and
-- $\int\left|f_{n}\right| \rightarrow \int|f|$.
+- $f_n,f\in L^1$,
+- $f_n\to f$ almost everywhere, and
+- $\int |f_n|\to\int |f|$.
 
-Show that $\int f_{n} \rightarrow \int f$.
-
-:::{.solution}
-:::{.concept}
-- $\int \abs{f_n - f} \to \iff \int f_n = \int f$.
-- Fatou:
-\[
-\int \liminf f_n \leq \liminf \int f_n \\
-\int \limsup f_n \geq \limsup \int f_n
-.\]
+Show that $\int f_n\to\int f$.
 :::
 
-- Since $\int \abs{f_n} \converges{n\to\infty}\to \int \abs{f}$, define
+::: solution
+Define
 \[
-h_n &= \abs{f_n - f} &\converges{n\to\infty}\to 0 ~a.e.\\
-g_n &= \abs{f_n} + \abs{f} &\converges{n\to\infty}\to 2\abs {f} ~a.e.
+g_n:=|f_n|+|f|-|f_n-f|.
 \]
-
-  - Note that $g_n - h_n \converges{n\to\infty}\to 2\abs{f} - 0 = 2\abs{f}$.
-
-- Then
+By the triangle inequality,
 \[
-\int 2 \abs {f} 
-&= \int \liminf_n (g_n - h_n) \\
-&= \int \liminf_n(g_n) + \int \liminf_n(-h_n) \\
-&= \int \liminf_n(g_n) - \int \limsup_n(h_n) \\
-&= \int 2 \abs{f} - \int \limsup_n(h_n) \\
-&\leq \int 2\abs{f} - \limsup_n \int h_n \quad\text{by Fatou}
-,\]
-
-- Since $f\in L^1$, $\int 2\abs{f}  = 2\norm{f}_1 < \infty$ and it makes sense to subtract it from both sides, thus
+g_n\ge0.
+\]
+Since $f_n\to f$ almost everywhere,
 \[
-0 &\leq - \limsup_n \int h_n \\
-&\definedas - \limsup_n \int \abs{f_n - f}
-.\]
-  which forces $\limsup_n \int \abs{f_n -f}  = 0$, since
-    
-    - The integral of a nonnegative function is nonnegative, so $\int \abs{f_n - f} \geq 0$.
-    - So $\qty{ -\int \abs{f_n - f} } \leq 0$.
-    - But the above inequality shows $\qty{ -\int \abs{f_n - f} } \geq 0$ as well.
-- Since $\liminf_n \int h_n \leq \limsup_n \int h_n = 0$, $\lim_n \int h_n$ exists and is equal to zero.
-
-- But then 
+g_n\longrightarrow 2|f|
+\qquad\text{almost everywhere}.
+\]
+Fatou's lemma therefore gives
 \[
-\abs{\int f_n - \int f}
-&= \abs{\int f_n -f}
-\leq \int \abs{f_n - f}
-,\]
-  and taking $\lim_{n\to\infty}$ on both sides yields
-  \[
-  \lim_{n\to\infty} \abs{\int f_n - \int f} \leq \lim_{n\to\infty} \int \abs{f_n - f} = 0
-  ,\]
-  so $\lim_{n\to\infty} \int f_n = \int f$.
+2\int |f|
+\le \liminf_{n\to\infty}\int g_n.
+\]
+But
+\[
+\int g_n
+=\int|f_n|+\int|f|-\int|f_n-f|.
+\]
+Using the hypothesis
+\[
+\int|f_n|\to\int|f|,
+\]
+we obtain
+\[
+2\int|f|
+\le
+2\int|f|-\limsup_{n\to\infty}\int|f_n-f|.
+\]
+Hence
+\[
+\limsup_{n\to\infty}\int|f_n-f|\le0.
+\]
+Since these integrals are nonnegative,
+\[
+\int|f_n-f|\longrightarrow0.
+\]
+Thus $f_n\to f$ in $L^1$. Finally,
+\[
+\left|\int f_n-\int f\right|
+\le \int|f_n-f|\longrightarrow0,
+\]
+so
+\[
+\boxed{\int f_n\longrightarrow\int f.}
+\]
 :::
-
