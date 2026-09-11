@@ -16,7 +16,8 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
-  note: Repaired the published erratum: "first two derivatives" should read "first three derivatives".
+  note: >-
+    Repaired the published erratum: "first two derivatives" should read "first three derivatives".
 ---
 
 ::: exercise
