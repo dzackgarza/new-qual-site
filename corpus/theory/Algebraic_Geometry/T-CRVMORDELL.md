@@ -49,15 +49,30 @@ That the list stops there is Fermat's last theorem for $n=3$, so this example is
 \[
 E(\QQ) = \gens{P} \iso \ZZ, \qquad P = (0,0) \text{ in affine coordinates} .
 \]
-Repeatedly adding $P$ to itself by the chord-and-tangent rule produces infinitely many distinct rational points with rapidly growing numerators and denominators, which is the concrete face of "infinite order".
+That $P$ has infinite order is visible after a few doublings, and the denominators are the thing to watch:
+\[
+2P = (1, 0), \quad
+3P = (-1,-1), \quad
+4P = (2,-3), \quad
+5P = \qty{ \tfrac{1}{4}, -\tfrac{5}{8} }, \quad
+6P = (6, 14), \quad
+7P = \qty{ -\tfrac{5}{9}, \tfrac{8}{27} } .
+\]
+The denominators appear as $d^2$ and $d^3$ in the two coordinates, which is exactly the shape a height function measures.
 :::
 
 ::: {.remark}
 Two things make this statement land, and both are about which structure survives restriction to $\QQ$.
 
 The subgroup claim is not automatic and is the reason the definition insists that $p_0$ be rational.
-Addition is defined by "three collinear points sum to zero", and a line through two rational points of a rational cubic meets it in a third point whose coordinates are rational, because the cubic in one variable already has two rational roots.
-Clearing denominators then turns the group law into a Diophantine operation: rational solutions compose to give rational solutions.
+Addition is defined by "three collinear points sum to zero", and a line through two rational points of a rational cubic meets it in a third point whose coordinates are rational, because substituting the line into the cubic gives a cubic in one variable with rational coefficients and two rational roots, so the third root is rational too.
+Inversion is reflection, also rational.
+If $p_0$ were irrational the identity would leave the set and nothing would be a subgroup; this is why the base point is part of the data and not an afterthought.
+
+That subgroup is where the geometry turns into arithmetic.
+Writing a rational point in lowest terms and clearing denominators converts $E(\QQ)$ into the integral solutions of a homogeneous cubic in three variables, so the chord-and-tangent construction becomes an operation that manufactures new integer solutions from old ones --- the classical secant method, predating any of this language.
+Reading it the other way, a Diophantine question about a cubic acquires a group acting on its own solution set, and Mordell's theorem says that group is small enough to describe: finitely many generators account for every solution there is.
+This exchange is the entire reason elliptic curves sit in number theory rather than only in geometry.
 
 Finite generation is the part with content, and the shape of the proof is worth knowing even when the proof is not.
 It is a descent: the weak Mordell theorem gives $E(\QQ)/2E(\QQ)$ finite, and a height function measuring the arithmetic size of a point turns that finiteness into generation by a bounded set.

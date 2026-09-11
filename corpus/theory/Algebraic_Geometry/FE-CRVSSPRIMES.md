@@ -33,9 +33,21 @@ B \da \ts{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse 
 \]
 The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
 
-- **With CM** by an order in $K$: for $p$ of good reduction, $p \in B$ exactly when $p$ is ramified or inert in $K$.
-  Since exactly half the primes split, $B$ has density $\tfrac{1}{2}$.
-- **Without CM**: $B$ has density $0$, but is still infinite, and the expected growth is $\abs{\ts{p \in B \st p \leq x}} \sim \tfrac{\sqrt x}{\log x}$.
+- **With CM** by an order in $K$: for $p$ of good reduction, $p \in B$ exactly when $p$ does not split in $K$, that is when $p$ is inert or ramified.
+  Half the primes split, so $B$ has density $\tfrac{1}{2}$.
+  This is Deuring's theorem.
+
+- **Without CM**: $B$ has density $0$, and $B$ is nevertheless infinite.
+  Both of these are theorems, the second Elkies'.
+  A finer count is not known: the expected asymptotic $\abs{\ts{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture and is open.
+:::
+
+::: {.remark title="What is proved and what is not"}
+State the three claims separately, because they have different status and an examiner may push on exactly that.
+Deuring's criterion is a clean equivalence and gives the density $\tfrac12$ immediately from Chebotarev, or from Dirichlet in the cases where the splitting condition is a congruence.
+Density zero in the non-CM case follows from the distribution of Frobenius traces.
+Infinitude in the non-CM case is much harder and was open for a long time; it is a theorem only for elliptic curves over $\QQ$.
+The $\sqrt x/\log x$ growth is a conjecture and should be labelled as one.
 :::
 
 ::: {.example title="$y^2 = x^3 - x$, worked out"}

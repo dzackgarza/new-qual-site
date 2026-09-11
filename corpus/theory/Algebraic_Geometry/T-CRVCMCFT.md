@@ -28,10 +28,12 @@ Let $E/\CC$ have complex multiplication by the order $R$ of discriminant $D$ in 
 Then:
 
 - $j(E)$ is an algebraic integer;
+
 - $[K(j(E)) : K] = h(R)$, and $K(j(E))/K$ is abelian, with
   \[
   \Gal\big( K(j(E)) / K \big) \iso \Pic(R) ;
   \]
+
 - $j(E) \in \ZZ$ if and only if $h(R) = 1$.
 
 There are exactly thirteen orders with $h(R) = 1$, so exactly thirteen values of $j$ arise this way, namely those of discriminant

@@ -27,6 +27,10 @@ The construction chains together the tools from the rest of the chapter: $\abs{2
 The word *coarse* carries weight.
 Points of $\AA^1$ are isomorphism classes, but there are nontrivial families with all fibres isomorphic, so no fine moduli space exists — the automorphisms $\pm 1$ present on every elliptic curve are what obstruct it.
 
+The automorphism count is the follow-up, and the trap is stopping at $2$, $4$, $6$.
+Those are the counts away from characteristics $2$ and $3$.
+In characteristic $3$ the conditions $j = 0$ and $j = 1728$ describe one curve, which has $12$ automorphisms; in characteristic $2$ the same curve has $24$, and in both cases the group is noncommutative rather than cyclic.
+
 Over $\CC$ the same classification is available a second time, through lattices and elliptic functions; that half is [[algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c|its own page]].
 
 ## Characteristic $p$

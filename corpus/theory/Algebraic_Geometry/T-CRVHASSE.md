@@ -71,6 +71,7 @@ Expanding $\big(x(x-1)(x-\lambda)\big)^m$ and collecting gives $(-1)^m h_p(\lamb
 Two sanity checks worth carrying:
 
 - $p = 3$: $m = 1$, $h_3(\lambda) = 1 + \lambda$, so $\lambda = -1$, and there $\lambda^2 - \lambda + 1 = 3 = 0$, giving $j = 0$ --- the one supersingular curve in characteristic $3$.
+
 - $p = 5$: $m = 2$, $h_5(\lambda) = \lambda^2 + 4\lambda + 1$, whose roots lie in $\FF_{25}$ and satisfy $\lambda^2 - \lambda + 1 = -5\lambda = 0$, again giving $j = 0$.
 
 The count follows because $h_p$ has degree $m = \tfrac{p-1}{2}$ and the map $\lambda \mapsto j$ is generically six-to-one, so the supersingular $j$-values number about $p/12$; the exact count is $\left\lfloor p/12 \right\rfloor$ adjusted by $0, 1, 1, 2$ according to $p \equiv 1, 5, 7, 11 \bmod 12$, which the stated bound covers.
