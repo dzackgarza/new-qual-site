@@ -378,7 +378,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 20 problems) — Berkeley — prelim — Fall 1982 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1982`; all 20 problems are represented in source order by `P-BKF82-1` through `P-BKF82-20`.
 
-- [ ] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 7 problems) — applied-algebra — Fall 19
+- [x] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 18 problems) — Berkeley — prelim — Fall 1994 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1994`; all 18 problems are represented in source order by `P-BKF94-1` through `P-BKF94-18`.
 
 - [x] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017 — disposition 2026-09-10: Xin Ma's derivative solution notes for TAMU Real Analysis qualifying exams, not an original exam source; already linked from `wiki/real-analysis/resources/solutions.md`, so no duplicate collection is warranted.
 
