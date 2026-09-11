@@ -40,6 +40,32 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### `SRC-TEXT-HK71` omits source Exercises 10.2.11--10.2.17
+
+- **Object and evidence:** the authored Section 10.2 index stops at `E-HK-102-10`, but the source continues through at least Exercise 17. This became operationally visible at `E-HK-103-6`, whose printed instruction is to prove the analogue of Exercise 11 in Section 10.2, and `E-HK-103-8`, which similarly refers to Exercise 17. The source text confirms those cross-references and supplies the omitted statements.
+- **Impact:** the local collection makes legitimate textbook cross-references look impossible and prevents source-local traversal of the referenced exercises. The selected 10.3 cards can be made self-contained by restating the referenced theorem, but the Section 10.2 corpus remains incomplete.
+- **Uncertainty:** none about the omission; the source Section 10.2 contains Exercises 11--17 while the authored collection contains only 1--10.
+- **Repair:** add the missing Section 10.2 cards from the source in source order, preserving stable IDs and provenance; until then, expand dependent cards such as `E-HK-103-6` and `E-HK-103-8` so their mathematical obligations are explicit.
+
+### The authoring CLI name for collection-scoped unsolved traversal is easy to misremember
+
+- **Object and evidence:** during the `SRC-TEXT-HK71` continuation, invoking `python -m qualc.authoring unsolved-in SRC-TEXT-HK71` failed because the supported subcommand is `unsolved`, not `unsolved-in`. The built-in `--help` output immediately resolved the issue.
+- **Impact:** this is minor command-discovery friction only; no corpus content was changed by the failed invocation.
+- **Repair:** use `python -m qualc.authoring unsolved <collection>` for subsequent collection-scoped traversal. No tooling change is required unless an alias is desired.
+
+### Stale Git sequencer metadata can block unrelated prose commits
+
+- **Object and evidence:** while committing `E-HK-102-9` on 2026-09-11, `qualc.authoring commit` refused because Git reported a cherry-pick in progress. There was no `CHERRY_PICK_HEAD` and no active `git cherry-pick`/`git revert` process; `.git/sequencer/` instead contained a September 9 todo beginning from `94c14cf30` while `HEAD` had advanced to `8864bf13d`.
+- **Impact:** the stale sequencer state blocked otherwise valid explicit-path card commits even though no sequencing operation was active.
+- **Repair:** after verifying the stale head, absent `CHERRY_PICK_HEAD`, and absence of an active sequencing process, `git cherry-pick --quit` cleared only the sequencer metadata and left the working tree unchanged. A repository-side cleanup or authoring-tool diagnostic could make this failure mode easier to distinguish from a live cherry-pick.
+
+### The repository virtual environment does not include SymPy
+
+- **Object and evidence:** while checking the explicit rational form for `E-HK-72-9`, a read-only `python` calculation using `sympy` failed with `ModuleNotFoundError: No module named 'sympy'`. The system Sage installation was available and supplied the needed exact matrix checks.
+- **Impact:** minor verification friction only; no corpus content depended on the failed command.
+- **Repair:** use the repository's available exact-arithmetic stack (here system Sage) for such checks rather than assuming SymPy is installed.
+
+
 ### `parse_cards` cannot be used from a stdin Python script under the forkserver start method
 
 - **Object and evidence:** the final read-only measurement over the assigned collection range imported `qualc.model.parse_cards` from `.venv/bin/python - <<'PY' ...`. Its process pool used the forkserver start method, whose child process tried to reopen the main module at `/home/dzack/gitclones/new-qual-site/<stdin>` and failed with `FileNotFoundError`, followed by `ConnectionResetError` in the parent.
