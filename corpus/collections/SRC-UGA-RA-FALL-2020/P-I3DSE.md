@@ -13,6 +13,10 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 3 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX.
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
