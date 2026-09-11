@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### UCSD Spring 2011 Algebra solutions were stored with literal newline escapes
+
+- **Object and need:** `P-ALGS11E`, `P-ALGS11F`, `P-ALGS11G`, and `P-ALGS11H`; authored solution blocks must be valid Markdown fences so repository tooling recognizes them as solved cards.
+- **Observed evidence:** each card already contained a complete reviewed solution introduced by commit `79efcea62` or the same authoring pass, but the solution tail was serialized with literal `\n` text instead of line breaks, beginning with text such as `\n\n::: {.solution}\n`. Consequently `just unsolved-in SRC-UCSD-ALG-SPRING-2011` reported the cards as unsolved even though the proof text was present.
+- **Impact and owner:** the malformed serialization made existing solutions invisible to the card parser and generated false unsolved-queue entries. This was content serialization in the four owning cards, not missing mathematics.
+- **Uncertainty:** the four Spring 2011 cards named above were inspected and repaired; no broader claim is made here about other cards.
+- **Repair:** commits `bdd20392f`, `fecdef52e`, `4806cdb36`, `77204966e`, and `842c029cd` restored real line breaks and valid solution fences while preserving the proof content; all four cards now pass `just check-card` and the Spring 2011 collection reports no unsolved cards.
+
 ### The 2003–2009 algebra packet has mixed subject metadata
 
 - **Further source-checked algebra classifications:** `P-CZFJJ`, `P-2TVO4`, `P-ZY76X`, and `P-OW6CS` had sole area `prelim`, contrary to their algebra source on visually inspected PDF pages 10, 12, 15, and 11, respectively. Commits `93e35bbb3`, `a40569998`, `020ae2741`, and `4c0c7b804` correct those areas individually with complete solutions. Page 10 also confirms degree three in the second quotient polynomial, where the retained extraction says degree eight; the already-correct polynomial on `P-CZFJJ` was preserved. These dispositions cover only the inspected cards.
