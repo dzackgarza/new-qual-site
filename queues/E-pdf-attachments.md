@@ -394,7 +394,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: exact byte duplicate of `Texas_Solns.pdf` (SHA-256 `77623034b4c2c3903dffc0fe2e816a9e5d10fe94018cb1dbf6d40e183f6c899c`). Kari Eifler's TAMU Real Analysis qualifying-exam solutions are already represented as a solutions resource; the canonical resource link points to `Texas_Solns.pdf`, so no duplicate collection or resource entry is needed.
 
-- [ ] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 0 problems) — prelim — Spring 2003 — reclassified 2026-09-09: mixed Spring 2003 preliminary exam spanning algebra, analysis, complex analysis, and geometry.
+- [x] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 18 problems) — Berkeley — prelim — Spring 2003 — disposition 2026-09-11: mixed two-part preliminary exam ingested as `SRC-BERKELEY-PRELIM-SPRING-2003`; all 18 problem statements are represented in source order by `P-BKS03-1A` through `P-BKS03-9B`.
 
 - [ ] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 0 problems) — applied-algebra — SPRING 2007
 
