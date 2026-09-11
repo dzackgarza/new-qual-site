@@ -59,6 +59,12 @@ of public mathematical remarks.
 - **Impact:** the stale sequencer state blocked otherwise valid explicit-path card commits even though no sequencing operation was active.
 - **Repair:** after verifying the stale head, absent `CHERRY_PICK_HEAD`, and absence of an active sequencing process, `git cherry-pick --quit` cleared only the sequencer metadata and left the working tree unchanged. A repository-side cleanup or authoring-tool diagnostic could make this failure mode easier to distinguish from a live cherry-pick.
 
+### Direct `.venv` authoring commands can see an unsupported host Pandoc
+
+- **Object and evidence:** during the final read-only sweep of the assigned range, `.venv/bin/python -m qualc.authoring unsolved <collection>` failed inside `qualc.pandoc_batch` because the process found host Pandoc 3.1.3 while the repository requires Pandoc 3.10 or newer. The same authoring command succeeds through the repository's normal login-shell `uv run` route.
+- **Impact:** invoking the repository interpreter directly is insufficient for authoring commands that depend on the repository's Pandoc toolchain; a seemingly valid local environment therefore fails before reading any card content. No corpus file was changed by the failed sweep.
+- **Repair:** use the repository's documented `just`/`uv run` authoring entry points for Pandoc-dependent commands, or make the supported Pandoc executable available inside direct `.venv` invocations if that route is meant to be supported.
+
 ### The repository virtual environment does not include SymPy
 
 - **Object and evidence:** while checking the explicit rational form for `E-HK-72-9`, a read-only `python` calculation using `sympy` failed with `ModuleNotFoundError: No module named 'sympy'`. The system Sage installation was available and supplied the needed exact matrix checks.
