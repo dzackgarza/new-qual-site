@@ -750,7 +750,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology
 
-- [ ] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders** — disposition 2026-09-11: Harvard Math 21b Spring 2018 Practice Final 6 (May 8, 2018), ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6` with 14 source-order problem cards `P-HM21B18-PF6-01` through `P-HM21B18-PF6-14`. The inventory `0 problems` count was a false negative caused by the extraction layout; the PDF score table and headings explicitly contain Problems 1–14. Image-dependent prompts are preserved from source pages. The source-provided Problem 8 solution is not imported because it gives incorrect eigenvalues for its displayed matrix; the issue is recorded in `COMPLAINTS.md`.
 
 - [x] [fields.pdf](assets/attachments/extracted/fields.md) (177L, 8 selected qual problems) — algebra — Fall 2007 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-FIELDS`; review-sheet provenance retained and matching exam problems reuse canonical cards.
 
