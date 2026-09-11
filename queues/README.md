@@ -34,7 +34,7 @@ Two kinds of queue files:
 | ~~`09-author-solutions.md`~~ | — | — | — | Removed: redundant with Queue C |
 | `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
 | `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
-| `12-throughput-blockers.md` | 2 | 0 | #2 surface | **Take before Queue C.** Queue C reports 729 of its 829 cards as unsolved when they already carry authored solutions; and 1,342 non-problem cards sit outside every queue. |
+| `12-throughput-blockers.md` | 3 | 1 | #2 surface | 12.1 closed — Queue C reached zero and an independent recount agrees (7,375 problem cards, none unsolved). Open: what measures the 1,364 non-problem cards, and corroborating the zero whenever the count moves sharply. |
 
 ## How to use
 
