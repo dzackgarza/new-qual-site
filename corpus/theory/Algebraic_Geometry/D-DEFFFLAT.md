@@ -36,5 +36,5 @@ An $A$-algebra $B$ is faithfully flat if it is so as an $A$-module.
 Equivalently, $N$ is flat and $M \tensor_A N = 0$ forces $M = 0$; for an algebra $A \to B$ this is flatness plus surjectivity of $\Spec B \to \Spec A$.
 
 $\QQ$ is flat over $\ZZ$ but not faithfully flat, since it kills every torsion module --- localisation is the standard source of flat-but-not-faithfully-flat maps, because it discards the primes it inverts.
-The reason to care is descent: over a faithfully flat extension, exactness, and with more work many other properties, may be checked after base change and then pulled back down.
+Over a faithfully flat extension, exactness, and with more work many other properties, may be checked after base change and then pulled back down.
 :::
