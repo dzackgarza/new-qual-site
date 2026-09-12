@@ -545,6 +545,80 @@ name the content. Add a verified section reference when it helps locate the
 material. Describe the example's mathematical role instead of promising that
 it settles an unnamed issue.
 
+### `RESOURCE-17`: Describe organization without prescribing reading methods
+
+**Bad:** “Only dip into individual entries; reading the chapters consecutively
+is a mistake.”
+
+**Good:** “Entries are grouped by [documented subject headings].”
+
+Readers choose a method according to their purpose and background. An annotation
+cannot infer that sequential reading is inappropriate for them. Instructions
+to browse or use an index also explain ordinary reading operations without
+helping locate any material. Describe the actual organization or link the
+relevant sections. Delete instructions that add neither content nor navigation.
+
+### `RESOURCE-18`: Keep literature claims within the evidence
+
+**Bad:** “No other source supplies these intermediate steps.”
+
+**Good:** “Section [location] works through [named computation], including
+[specific intermediate step].”
+
+Knowing what one source contains does not establish what every other source
+lacks. An unsuccessful search is evidence about that search, not proof of
+absence from the literature. Describe the source's observable contents. Claims
+of uniqueness or completeness require an explicitly bounded comparison and
+evidence covering it. For a solution set, “complete” requires checking its
+coverage against an identified course assignment or problem list.
+
+### `RESOURCE-19`: Make criticism specific and attributable
+
+**Bad:** “Student-authored notes in this area are generally unreliable.”
+
+**Good:** “In [identified version], the argument for [named result] omits
+[necessary hypothesis]; [counterexample or cited correction] shows why it is
+needed.”
+
+An unnamed judgement about quality gives readers no claim to check and authors
+no identifiable criticism to answer. It can damage reputations, including those
+of graduate students, while borrowing authority from the site's academic
+setting. Authorship or career stage supplies no evidence of correctness.
+Record a criticism only when a specific, verified defect matters to using the
+resource. Identify its location and mathematical consequence. Otherwise omit
+the judgement; replacing disparagement with unsupported praise does not fix it.
+
+### `RESOURCE-20`: Distinguish access failures from properties of the work
+
+**Bad:** “The abandoned notes have disappeared from the web.”
+
+**Good:** Link an available copy under its author and title. Record a failed
+address in an internal maintenance task when recovery work is needed.
+
+A failed request establishes an access failure at a particular address and
+time. It does not establish that the work is unavailable everywhere, abandoned,
+or mathematically defective. Do not couple an access problem with a quality
+judgement. Find a working source or archive location. An unnamed report of
+unavailable materials gives the reader neither a resource nor a route to one.
+Retain bibliographic information without a web link when it identifies a work
+that readers can locate through a library or another concrete access route.
+
+### `RESOURCE-21`: Build the resource directory before adding commentary
+
+**Bad:** “There are many competing treatments, but few merit serious attention.”
+
+**Good:** List identified works with author, title, citation, and access link;
+group them under useful subject headings and annotate their documented scope.
+
+A resource section serves retrieval and navigation. Readers need materials
+they can identify, reach, and distinguish by content. General commentary about
+the literature cannot substitute for those entries. Unsupported assessments
+place the writer above other authors while withholding the evidence readers
+would need to assess the claim. Supply the directory, topic links, section
+locations, or source relations that make navigation useful. Use a hierarchy
+when it helps readers locate material; do not add an introductory verdict on
+the field in place of the resources themselves.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
