@@ -16,43 +16,68 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against entry 6 of the UGA Fall 2015 real-analysis qualifying exam recorded by the collection.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
 Let $f: [0, 1] \to \RR$ be continuous.
 Show that
 \[
-\sup \left\{\|f g\|_{1} \suchthat g \in L^{1}[0,1],~~ \|g\|_{1} \leq 1\right\}=\|f\|_{\infty}
+\sup \left\{\|f g\|_{1} \suchthat g \in L^{1}[0,1],~~ \|g\|_{1} \leq 1\right\}=\|f\|_{\infty}.
 \]
 :::
-::: {.solution}
-<1>1. For every $g \in L^1[0,1]$ with $\|g\|_1 \le 1$: $\|fg\|_1 \le \|f\|_\infty$.
-::: {.proof}
-$|f(x)g(x)| \le \|f\|_\infty |g(x)|$ a.e., so $\|fg\|_1 \le \|f\|_\infty \|g\|_1 \le \|f\|_\infty$.
+
+::: solution
+<1>1. Prove the upper bound.
+::: proof
+For every $g\in L^1([0,1])$ with $\|g\|_1\le1$,
+\[
+\|fg\|_1
+=\int_0^1|f(x)g(x)|\,dx
+\le \|f\|_\infty\|g\|_1
+\le \|f\|_\infty.
+\]
+Hence
+\[
+\sup_{\|g\|_1\le1}\|fg\|_1\le\|f\|_\infty.
+\]
 :::
 
-<1>2. Hence $\sup_{\|g\|_1 \le 1}\|fg\|_1 \le \|f\|_\infty$.
-::: {.proof}
-<1>1 holds for every admissible $g$.
-:::
-
-<1>3. $f$ attains its maximum modulus: there is $x_0 \in [0,1]$ with $|f(x_0)| = \|f\|_\infty$.
-::: {.proof}
-$f$ is continuous on the compact interval $[0,1]$.
-:::
-
-<1>4. Given $\eps > 0$, there is an interval $I \subseteq [0,1]$ of positive length on which $|f(x)| \ge \|f\|_\infty - \eps$.
-::: {.proof}
-continuity at $x_0$ (<1>3): choose $\delta$ with $|x - x_0| < \delta \Rightarrow |f(x) - f(x_0)| < \eps$, and let $I$ be a small interval around $x_0$ (intersected with $[0,1]$); then $|f(x)| \ge |f(x_0)| - \eps = \|f\|_\infty - \eps$.
-:::
-
-<1>5. $\sup_{\|g\|_1 \le 1}\|fg\|_1 \ge \|f\|_\infty$.
-::: {.proof}
-take $g = \chi_I / m(I)$; then $\|g\|_1 = 1$ and $\|fg\|_1 = \dfrac{1}{m(I)}\int_I |f| \ge \|f\|_\infty - \eps$; letting $\eps \to 0$ gives the claim.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>2 and <1>5 sandwich the sup between $\|f\|_\infty - \eps$ (all $\eps$) and $\|f\|_\infty$, so it equals $\|f\|_\infty$.
+<1>2. Prove the reverse inequality.
+::: proof
+Since $f$ is continuous on the compact interval $[0,1]$, there is $x_0\in[0,1]$ such that
+\[
+|f(x_0)|=\|f\|_\infty.
+\]
+Fix $\varepsilon>0$. By continuity, there is a measurable interval $I\subset[0,1]$ of positive length containing $x_0$ such that
+\[
+|f(x)|\ge \|f\|_\infty-\varepsilon
+\qquad(x\in I).
+\]
+Set
+\[
+g=\frac{\mathbf1_I}{m(I)}.
+\]
+Then $\|g\|_1=1$ and
+\[
+\|fg\|_1
+=\frac1{m(I)}\int_I|f(x)|\,dx
+\ge \|f\|_\infty-\varepsilon.
+\]
+Therefore
+\[
+\sup_{\|g\|_1\le1}\|fg\|_1\ge \|f\|_\infty-\varepsilon.
+\]
+Letting $\varepsilon\downarrow0$ gives the reverse inequality. Thus
+\[
+\boxed{
+\sup_{\|g\|_1\le1}\|fg\|_1=\|f\|_\infty.}
+\]
 :::
 :::

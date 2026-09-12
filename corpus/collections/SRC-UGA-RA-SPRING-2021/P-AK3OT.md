@@ -18,6 +18,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 5 of the official UGA January 2021 Analysis qualifying examination DOCX. The legacy card mistranscribed discrete Fourier coefficients as a continuous Fourier transform; the source uses integer frequencies k.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Corrected the statement and proof to use Fourier series coefficients and Parseval on L2([0,1]); adjacent dyadic frequency blocks may share one endpoint coefficient, which is handled by Cauchy-Schwarz.
 ---
 
 :::{.problem}
@@ -25,10 +33,11 @@ Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that
 
 - \( \norm{f_n}_2 \leq n^{-51 \over 100} \)  for all \( n\in \NN \),
 
-- $\hat{f}_n$ is supported in the interval $[2^n, 2^{n+1}]$, so
+- the Fourier coefficients $\hat f_n(k)$ are supported in the integer frequencies in $[2^n,2^{n+1}]$, where
 \[
-\hat{f}_n(\xi) \da \int_0^1 f_n(x) e^{2\pi i \xi \cdot x} \dx = 0 && \text{for } \xi \not\in [2^n, 2^{n+1}]
-.\]
+\hat f_n(k)\da\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
+\qquad\text{for }k\in\ZZ\setminus[2^n,2^{n+1}].
+\]
 
 Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1]) \).
 
@@ -44,24 +53,38 @@ Although this mentions Plancherel, probably what is needed is Parseval's identit
 
 :::
 ::: {.solution}
-<1>1. Extend each $f_n$ by zero outside $[0,1]$ and let $\hat f_n(\xi) = \int_0^1 f_n(x) e^{2\pi i \xi x}\,dx$ for $\xi \in \RR$. By Plancherel's identity (with this normalization), $\|f_n\|_{L^2([0,1])} = \|\hat f_n\|_{L^2(\RR)}$ and $\langle f_n, f_m\rangle = \langle \hat f_n, \hat f_m\rangle$ for all $n, m$.
+<1>1. Use Parseval for the Fourier series coefficients:
+\[
+\langle f,g\rangle_{L^2([0,1])}
+=\sum_{k\in\ZZ}\hat f(k)\overline{\hat g(k)},
+\qquad
+\|f\|_2^2=\sum_{k\in\ZZ}|\hat f(k)|^2.
+\]
     ::: {.proof}
-    Plancherel on $L^2(\RR)$, applied to the zero-extension; the polarization identity recovers the inner product.
+    Parseval's identity for the orthonormal Fourier basis of $L^2([0,1])$.
     :::
 
-<1>2. The supports of $\hat f_n$ and $\hat f_m$ are disjoint for $|n - m| \ge 2$; for $|n - m| = 1$ they meet only at the common endpoint $\xi = 2^{n+1}$.
+<1>2. The coefficient supports of $f_n$ and $f_m$ are disjoint for $|n-m|\ge2$; for adjacent indices they can meet only at the single integer frequency $2^{n+1}$.
     ::: {.proof}
-    the intervals $[2^n, 2^{n+1}]$ and $[2^m, 2^{m+1}]$ are disjoint for $|n - m| \ge 2$, and adjacent intervals share exactly the endpoint.
+    The dyadic intervals $[2^n,2^{n+1}]$ and $[2^m,2^{m+1}]$ have exactly this intersection pattern.
     :::
 
-<1>3. For $|n - m| \ge 2$: $\langle \hat f_n, \hat f_m\rangle = 0$; for adjacent indices, $|\langle \hat f_n, \hat f_{n+1}\rangle| \le \|\hat f_n\|_2\|\hat f_{n+1}\|_2$.
+<1>3. Thus $\langle f_n,f_m\rangle=0$ for $|n-m|\ge2$, while
+\[
+|\langle f_n,f_{n+1}\rangle|\le\|f_n\|_2\|f_{n+1}\|_2.
+\]
     ::: {.proof}
-    disjoint supports give a vanishing inner product by <1>2; the adjacent bound is Cauchy–Schwarz.
+    Apply Parseval from <1>1 and the support information from <1>2; the adjacent estimate is Cauchy--Schwarz.
     :::
 
-<1>4. For $N < M$: $\left\|\sum_{n=N}^{M} f_n\right\|_2^2 = \sum_{n=N}^{M}\|\hat f_n\|_2^2 + 2\sum_{n=N}^{M-1}\mathrm{Re}\langle \hat f_n, \hat f_{n+1}\rangle \le \sum_{n=N}^{M}\|f_n\|_2^2 + 2\sum_{n=N}^{M-1}\|f_n\|_2\|f_{n+1}\|_2$.
+<1>4. For $N<M$,
+\[
+\left\|\sum_{n=N}^{M}f_n\right\|_2^2
+\le\sum_{n=N}^{M}\|f_n\|_2^2
++2\sum_{n=N}^{M-1}\|f_n\|_2\|f_{n+1}\|_2.
+\]
     ::: {.proof}
-    expand the squared norm via Plancherel (<1>1); cross terms between non-adjacent indices vanish by <1>3, and the adjacent cross terms are bounded by <1>3.
+    Expand the squared norm; cross terms between non-adjacent indices vanish by <1>3, and the adjacent terms are bounded by <1>3.
     :::
 
 <1>5. The tails of both sums tend to $0$ as $N \to \infty$.

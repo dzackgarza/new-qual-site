@@ -28,7 +28,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — topology — July 2016
 
-- [ ] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — Winter 2014
+- [x] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — real-analysis — Winter 2014 — disposition 2026-09-09: ingested as `SRC-DUKE-BASIC-ANALYSIS-WINTER-2014`; all twelve problems are represented in source order by solved, source-checked cards `P-DUKEBA14-1` through `P-DUKEBA14-12`.
 
 - [x] [Applied-Algebra-FA17.pdf](assets/attachments/extracted/Applied-Algebra-FA17.md) (71L, 8 problems) — applied-algebra Disposition 2026-09-01: the collection SRC-UCSD-APALG-FALL-2017 already exists, complete, and its eight cards match the extracted paper in source order.
   The vendored paper added to provenance beside the department URL. One card was in doubt and is now settled by reading the mathematics rather than the file.
@@ -77,7 +77,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — applied-algebra — October 23
 
-- [ ] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019
+- [x] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: UGA Fall 2019 Real Analysis; all five problems are already represented in `SRC-UGA-RA-FALL-2019`. This file is byte-identical to `Neil_Fall_2019_Solutions.pdf` (SHA-256 `a3d7d30454ada0b3a1071f234bd5b6a27b22e16cf615769b876fa8894eb2ebbc`), so no duplicate collection or provenance entry is needed.
 
 - [ ] [Fall78.pdf](assets/attachments/extracted/Fall78.md) (103L, 9 problems) — applied-algebra — Fall 19
 
@@ -105,11 +105,12 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [more_calculus_from_test2.pdf](assets/attachments/extracted/more_calculus_from_test2.md) (172L, 20 problems) — algebra
 
-- [ ] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019
+- [x] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: exact byte duplicate of `Fall_2019_SOLUTIONS.pdf`; the shared UGA Fall 2019 exam is already complete as `SRC-UGA-RA-FALL-2019`.
 
-- [ ] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
+- [x] [Neil_Spring_2019_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2019_Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: solution packet for the five-problem UGA Spring 2019 Real Analysis exam already complete as `SRC-UGA-RA-SPRING-2019`; byte-identical to `Spring 2019 with Solutions.pdf` (SHA-256 `3027e272d654a113b0cb15745bc0a4edb127fa36a6b91b9f4d772af84c0bb2e9`). As a solution writeup it is not added as collection provenance.
 
-- [ ] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders**
+- [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection.
+  No collection/card ingest required.
 
 - [ ] [qual18wintersol.pdf](assets/attachments/extracted/qual18wintersol.md) (61L, 10 problems) — algebra — Winter 2018
 
@@ -139,7 +140,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [solution.pdf](assets/attachments/extracted/solution.md) (723L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
 
-- [ ] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — applied-algebra — Spring 2019
+- [x] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: exact byte duplicate of `Neil_Spring_2019_Solutions.pdf`; its five exam problems are already represented in `SRC-UGA-RA-SPRING-2019`, and the solution packet is not collection provenance.
 
 - [ ] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — algebra — Spring 19
 
@@ -223,7 +224,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring78.pdf](assets/attachments/extracted/Spring78.md) (135L, 14 problems) — complex-analysis — Spring 19
 
-- [ ] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — real-analysis — Spring 19
+- [ ] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — prelim — Spring 1980 — reclassified 2026-09-09: mixed general preliminary exam (analysis, complex analysis, algebra, linear algebra, ODEs, geometry), not a Real Analysis-only source.
 
 - [ ] [Spring81.pdf](assets/attachments/extracted/Spring81.md) (167L, 17 problems) — topology — Spring 19
 
@@ -295,7 +296,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata
 
-- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — real-analysis — Spring 2007
+- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — reclassified 2026-09-09: UCLA Basic Exam mixing linear algebra, analysis, ODEs, and related prelim subjects.
 
 - [ ] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08
 
@@ -335,7 +336,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-18F.pdf](assets/attachments/extracted/basic-18F.md) (109L, 0 problems) — UCLA — FALL 2018
 
-- [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — real-analysis — SPRING 2018
+- [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — reclassified 2026-09-09: UCLA Basic Exam, a mixed prelim source rather than a Real Analysis collection.
 
 - [ ] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom
 
@@ -345,9 +346,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019
 
-- [ ] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom
+- [x] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom — disposition 2026-09-10: expository Real Analysis course notes rather than an exam sitting; already linked from `wiki/real-analysis/resources/books-notes.md`, so no duplicate collection or problem-card intake is warranted.
 
-- [ ] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — real-analysis — SPRING 2018
+- [x] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — disposition 2026-09-09: exact byte duplicate of `basic-18S.pdf` (SHA-256 `3ae97a051d30af40f6c497c68a1ebfad8ed56872cd471f4aa68c3b1ac8e19769`); ingest only the canonical `basic-18S.pdf` source.
 
 - [ ] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — prelim
 
@@ -357,7 +358,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Algebra_Solutions.pdf](assets/attachments/extracted/Algebra_Solutions.md) (9243L, 16 problems) — UNL — alg-geom
 
-- [ ] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011
+- [x] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011 — disposition 2026-09-10: Chernov's solved Real Analysis problem collection, not a single exam sitting; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing an exam collection.
 
 - [ ] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011
 
@@ -369,39 +370,39 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 8 problems) — Berkeley — complex-analysis
+- [x] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 18 problems) — Berkeley — prelim — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-2018`; the Fall 2018 two-part Graduate Preliminary Examination contains 18 problems across calculus, real analysis, complex analysis, linear algebra, and abstract algebra, represented in paper order by `P-BKF18-1A` through `P-BKF18-9B`.
 
-- [ ] [Fall77.pdf](assets/attachments/extracted/Fall77.md) (132L, 10 problems) — algebra — Fall 19
+- [x] [Fall77.pdf](assets/attachments/extracted/Fall77.md) (132L, 20 problems) — Berkeley — prelim — Fall 1977 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1977`; all 20 problems are represented in source order by `P-BKF77-1` through `P-BKF77-20`.
 
-- [ ] [Fall81.pdf](assets/attachments/extracted/Fall81.md) (193L, 15 problems) — complex-analysis — Fall 19
+- [x] [Fall81.pdf](assets/attachments/extracted/Fall81.md) (193L, 20 problems) — Berkeley — prelim — Fall 1981 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1981`; all 20 problems are represented in source order by `P-BKF81-1` through `P-BKF81-20`.
 
-- [ ] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 8 problems) — algebra — Fall 19
+- [x] [Fall82.pdf](assets/attachments/extracted/Fall82.md) (126L, 20 problems) — Berkeley — prelim — Fall 1982 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1982`; all 20 problems are represented in source order by `P-BKF82-1` through `P-BKF82-20`.
 
-- [ ] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 7 problems) — applied-algebra — Fall 19
+- [x] [Fall94.pdf](assets/attachments/extracted/Fall94.md) (121L, 18 problems) — Berkeley — prelim — Fall 1994 — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-1994`; all 18 problems are represented in source order by `P-BKF94-1` through `P-BKF94-18`.
 
-- [ ] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017
+- [x] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017 — disposition 2026-09-10: Xin Ma's derivative solution notes for TAMU Real Analysis qualifying exams, not an original exam source; already linked from `wiki/real-analysis/resources/solutions.md`, so no duplicate collection is warranted.
 
-- [ ] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017
+- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017 — disposition 2026-09-10: Jacob S. Townson's derivative solutions to University of Louisville analysis quals, not an original exam paper; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
 
-- [ ] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 12 problems) — complex-analysis
+- [x] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 18 problems) — Berkeley — prelim — Spring 2021 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-SPRING-2021`, with all 18 problem statements represented in source order by `P-BKS21-1A` through `P-BKS21-9B`.
 
-- [ ] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 12 problems) — Berkeley — applied-algebra
+- [x] [prelimsolutions.pdf](assets/attachments/extracted/prelimsolutions.md) (355L, 18 problems) — Berkeley — prelim — Fall 2020 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-FALL-2020`, with all 18 problem statements represented in source order by `P-BKF20-1A` through `P-BKF20-9B`.
 
-- [ ] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — UNL — diff-geom — January 2007
+- [x] [prolrevqual.pdf](assets/attachments/extracted/prolrevqual.md) (4289L, 0 problems) — University of Arizona — geometry/topology — disposition 2026-09-11: John Kerl's derivative solution compendium for old University of Arizona geometry/topology qualifying exams, not an original exam source; already linked from `wiki/topology/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing a collection.
 
-- [ ] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — UNL — alg-geom
+- [x] [qf13sol.pdf](assets/attachments/extracted/qf13sol.md) (1073L, 20 problems) — Fall 2013 qualifying-exam solutions — disposition 2026-09-11: derivative solution compendium covering Qualifying Exams I, II, and III rather than an original exam paper; already linked from `wiki/archives/solution-compendia.md`, so retain it as a solutions resource and do not manufacture duplicate collections.
 
-- [ ] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29
+- [x] [Real_solutions.pdf](assets/attachments/extracted/Real_solutions.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: exact byte duplicate of `Texas_Solns.pdf` (SHA-256 `77623034b4c2c3903dffc0fe2e816a9e5d10fe94018cb1dbf6d40e183f6c899c`). Kari Eifler's TAMU Real Analysis qualifying-exam solutions are already represented as a solutions resource; the canonical resource link points to `Texas_Solns.pdf`, so no duplicate collection or resource entry is needed.
 
-- [ ] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 0 problems) — real-analysis — Spring 2003
+- [x] [s03.pdf](assets/attachments/extracted/s03.md) (99L, 18 problems) — Berkeley — prelim — Spring 2003 — disposition 2026-09-11: mixed two-part preliminary exam ingested as `SRC-BERKELEY-PRELIM-SPRING-2003`; all 18 problem statements are represented in source order by `P-BKS03-1A` through `P-BKS03-9B`.
 
-- [ ] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 0 problems) — applied-algebra — SPRING 2007
+- [x] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 18 problems) — Berkeley — prelim solutions — Spring 2007 — disposition 2026-09-11: derivative solution edition of the separately vendored original exam `s07.pdf`; already linked from `wiki/prelim/problems/berkeley-prelims.md`, so retain it as a solutions resource and perform card intake from the original exam entry instead.
 
 - [ ] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders**
 
 - [ ] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010
 
-- [ ] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 11 problems) — Berkeley — complex-analysis
+- [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; all 18 problems `1A`–`9B` are represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The prior count of eleven came from lost extraction headings.
 
 - [ ] [Sp14_Exam.pdf](assets/attachments/extracted/Sp14_Exam.md) (255L, 8 problems) — Berkeley — applied-algebra
 
@@ -425,7 +426,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19
 
-- [ ] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29
+- [x] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: canonical retained copy of Kari Eifler's *Solutions to Texas A&M's Real Analysis Qual Courses*. It is already linked from `wiki/real-analysis/resources/solutions.md`; this derivative solutions packet is not an original exam sitting, so intake stops at the existing resource representation rather than creating a duplicate qualifying-exam collection.
 
 - [ ] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders**
 
@@ -441,7 +442,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013
 
-- [ ] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom
+- [x] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom — disposition 2026-09-10: MAT 320 practice midterm/review sheet with solutions rather than a qualifying-exam sitting; already linked from `wiki/prelim/resources/references.md`, so no qual collection is appropriate.
 
 - [ ] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020
 
@@ -481,19 +482,19 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis
 
-- [ ] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
+- [x] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: exact byte duplicate of `Folland_Clipped_Questions.pdf` (SHA-256 `e775d4915cbacc566da3d2731cc938692f9f57a45a2dc262cb8a5041ba95ec10`). The resource page already links the underscore-named copy, so no second collection or resource entry is warranted.
 
-- [ ] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders**
+- [x] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland Clipped Questions.pdf`; already linked from `wiki/real-analysis/resources/problems.md`. This is a clipped textbook-exercise resource rather than an exam sitting, so intake stops at the existing resource link rather than manufacturing a qualifying-exam collection.
 
 - [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra
 
 - [ ] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom
 
-- [ ] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012
+- [x] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012 — disposition 2026-09-09: canonical copy of the byte-identical pair with `PrincetonQuestions.pdf` (SHA-256 `9ef5c3fee6a62b2eb412ef4af6f0b40619821f25e0e0144702a2ba7b0f39d0c7`). This is a topic-organized Real Analysis question/reference bank rather than an exam sitting, and it is already linked from `wiki/real-analysis/resources/problems.md`; intake stops at that existing resource representation rather than manufacturing a qualifying-exam collection.
 
 - [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
 
-- [ ] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders**
+- [x] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: mixed-source Measure Theory question bank, not a single qualifying-exam sitting. Its introduction states that problems are drawn from Stein--Shakarchi and Carothers as well as CUNY Graduate Center qualifying exams, with color coding distinguishing textbook-only questions from questions seen on quals; that visual provenance is not faithfully retained by the markdown extraction. The canonical PDF is already linked from `wiki/real-analysis/resources/problems.md`, so intake stops at the existing resource representation rather than creating cards with false or erased source attribution.
 
 - [x] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — real-analysis — October 2012 — exact byte duplicate of `Giant_List_of_Problems.pdf` (same SHA-256); do not create a second collection
 
@@ -549,7 +550,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20
+- [x] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: Jonathan Mostovoy's partial solutions to Folland, a reference/solutions resource rather than an exam; already linked from `wiki/real-analysis/resources/solutions.md`. This PDF is byte-identical to `Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`), so no duplicate collection is needed.
 
 - [ ] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016
 
@@ -569,43 +570,43 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom
 
-- [ ] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015
+- [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source. Intake stops at reference enrichment; no problem cards are manufactured.
 
-- [ ] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis
+- [x] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis — disposition 2026-09-09: ingested as `SRC-MATH6338-HW8`; all seven Fourier-analysis homework problems are represented by source-checked, reviewed solution cards `P-M6338H8-1` through `P-M6338H8-7`.
 
-- [ ] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis
+- [x] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis — disposition 2026-09-12: practice-solution notes already retained at `wiki/real-analysis/resources/solutions.md`; this is solution/reference material rather than primary problem provenance, so intake stops at the existing resource representation instead of creating duplicate cards.
 
-- [ ] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20
+- [x] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: exact byte duplicate of `Folland_Real_Analysis_Solns.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`); already linked as a Real Analysis solutions resource, so do not create a second representation.
 
-- [ ] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013
+- [x] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013 — disposition 2026-09-12: S. Hermiller's UNL Math 871 Fall 2013 problem-set packet ingested as `SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS`. Direct source reading finds 69 assigned problem references across PS1–PS11, not zero; 23 source-local cards plus canonical Munkres/Hatcher cards give 70 card appearances because PS3.1 and PS7.3 split across reusable and local subproblems. The packet names `PS9.1` as due but contains no statement or locator, so no missing mathematics is invented.
 
-- [ ] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009
+- [x] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009 — disposition 2026-09-12: D. Zack Garza's 2020 compilation of selected complex-analysis questions spanning multiple exam terms is maintainer-authored enrichment, not external collection provenance. It remains a resource at `wiki/complex-analysis/resources/problems.md`; no duplicate collection is manufactured, and it is removed from the Fall 2016 UGA exam provenance in favor of that collection's official DOCX.
 
 - [ ] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis
 
-- [ ] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 6 problems) — applied-algebra
+- [x] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 18 problems) — Berkeley — prelim — Spring 2009 — disposition 2026-09-12: full UC Berkeley Spring 2009 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2009` with all 18 source-order problems `P-BKS09-1A` through `P-BKS09-9B`. The old count of six came from merged extraction headings.
 
-- [ ] [s11solutions.pdf](assets/attachments/extracted/s11solutions.md) (196L, 0 problems) — topology
+- [x] [s11solutions.pdf](assets/attachments/extracted/s11solutions.md) (196L, 18 problems) — Berkeley — prelim — Spring 2011 — disposition 2026-09-12: full UC Berkeley Spring 2011 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2011` with all 18 source-order problems `P-BKS11-1A` through `P-BKS11-9B`. The prior zero count came from OCR/extraction heading loss.
 
-- [ ] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 0 problems) — complex-analysis
+- [x] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 18 problems) — Berkeley — prelim — Spring 2012 — disposition 2026-09-12: full UC Berkeley Spring 2012 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2012` with all 18 source-order problems `P-BKS12-1A` through `P-BKS12-9B`. The prior zero count came from OCR/extraction heading loss.
 
-- [ ] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017
+- [x] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: canonical retained copy of René L. Schilling’s *Measures, Integrals & Martingales* (2nd ed.) solution manual; exact byte duplicate of `solutions-mims-2ed.pdf`. This is textbook solution/reference material already linked from `wiki/real-analysis/resources/solutions.md`, so intake stops at the existing reference representation rather than manufacturing qualifying-exam cards.
 
-- [ ] [Series_Problems_.pdf](assets/attachments/extracted/Series_Problems_.md) (566L, 22 problems) — UNL — applied-algebra
+- [x] [Series_Problems_.pdf](assets/attachments/extracted/Series_Problems_.md) (566L, 12 problems) — real-analysis — disposition 2026-09-12: source inspection identifies an unattributed “Solutions to Assignment-2” packet on sequences and series. Ingested as `SRC-SEQUENCES-SERIES-ASSIGNMENT-2` with the twelve top-level cards `P-SERIES-A2-01` through `P-SERIES-A2-12`; the prior count of 22 came from multipart subquestions. No institution or assignment date is printed in the source, so neither is invented.
 
-- [ ] [solhwg.pdf](assets/attachments/extracted/solhwg.md) (177L, 12 problems) — applied-algebra
+- [x] [solhwg.pdf](assets/attachments/extracted/solhwg.md) (177L, 12 problems) — applied-algebra — disposition 2026-09-12: Math 114 Galois-theory homework solution packet dated April 4, 2006, ingested as `SRC-MATH114-GALOIS-HOMEWORK-2006`. Problem sets 8 and 9 contribute six source-order problems each, represented as `P-M114-8-01` through `P-M114-8-06` and `P-M114-9-01` through `P-M114-9-06`; source-supplied worked solutions remain external provenance rather than duplicate local solution sections.
 
-- [ ] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017
+- [x] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: René L. Schilling, *Measures, Integrals & Martingales* (2nd ed.) solution manual, corrected July 2019; byte-identical to `Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf` (SHA-256 `703be127b8cc7dbdf0903d1addb98941f183393e61c60423b356119b06f65081`). It is already retained on the real-analysis solutions resource page, so no duplicate card collection is manufactured.
 
-- [ ] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra
+- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection. The prior count of three came from lost extraction headings.
 
-- [ ] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet. Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
 
-- [ ] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis
+- [x] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis — disposition 2026-09-12: identified from the PDF itself as the University of California, Berkeley Spring 2017 preliminary examination solution packet, not a UNL complex-analysis source. Ingested as `SRC-BERKELEY-PRELIM-SPRING-2017` with all 18 problems `P-BKS17-1A` through `P-BKS17-9B` in exam order; the inventory count of eight was incomplete. This entry records the solution PDF as provenance; source-provided worked solutions were not copied into local `.solution` sections during intake.
 
-- [ ] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders**
+- [x] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders** — disposition 2026-09-12: J. Tate’s Harvard Algebra 250(a) Fall 1985 homework compilation ingested as `SRC-HARVARD-TATE-ALGEBRA-250A-1985`. Direct PDF inspection finds 36 authored problems across five dated sheets, the two-part `X^7-7X+3` challenge, and nine prime-ideal exercises; the Newton-formula/discriminant pages are expository reference material and were not manufactured into cards. The 36 source-order cards are grouped by those seven source sections as `P-TATE85-*`; the inventory count of zero was a false negative.
 
-- [ ] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders**
+- [x] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: Christian Parkinson’s 2020 Week 5 Abstract Algebra & Complex Analysis GRE-prep packet, ingested as `SRC-PRELIM-PRACTICE-WEEK5-2020` with all 35 numbered prompts in source order as `P-PRACT20-W5-01` through `P-PRACT20-W5-35`. The inventory count of four was a false negative. The PDF remains provenance for its worked solutions; they were not copied into local `.solution` sections because the packet contains demonstrably incorrect supplied answers (for example Problem 4 calls $x\mapsto -x$ a homomorphism $U_4\to U_4$, and Problem 28 drops the minus sign in the contour integral).
 
 ## Solution writeups (33)
 
@@ -657,7 +658,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis
 
-- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — real-analysis
+- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
 
 - [ ] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra
 
@@ -711,15 +712,15 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra
 
-- [ ] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis
+- [x] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: exact byte duplicate of `Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf` (SHA-256 `45cc7ffaf7ba4e7a3c41884817409e2728764bcce8a651979df4bb74cdccbc97`). The migration ledger already identifies the Le-named file as the retained native source, and the Real Analysis solutions resource page links this material; no duplicate collection is needed.
 
-- [ ] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis
+- [x] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland_Solutions.pdf`. This is Le's *Measure and Integration: Problems with Solutions*, a reference/problem-solutions resource rather than an exam paper; it remains a resource source and does not require a qualifying-exam collection.
 
 - [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
 
 - [ ] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis
 
-- [ ] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders**
+- [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection. It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
 
 - [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
 
@@ -729,9 +730,10 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Review sheets (14)
 
-- [ ] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders**
+- [x] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: Alessandra Pantano’s 2011 algebra review packet ingested as `SRC-ALGEBRA-REVIEW-PANTANO-2011`. The inventory count of eight is a false negative: the source explicitly groups 6 questions from test 3, 6 from test 2, and 7 from test 1, for 19 total.
+  They are represented in source order as `P-ALGPAN11-01` through `P-ALGPAN11-19`; source crops are retained for all questions, including prompts/choices lost by OCR.
 
-- [ ] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders**
+- [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
 - [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
 
@@ -749,7 +751,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology
 
-- [ ] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders** — disposition 2026-09-11: Harvard Math 21b Spring 2018 Practice Final 6 (May 8, 2018), ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6` with 14 source-order problem cards `P-HM21B18-PF6-01` through `P-HM21B18-PF6-14`. The inventory `0 problems` count was a false negative caused by the extraction layout; the PDF score table and headings explicitly contain Problems 1–14. Image-dependent prompts are preserved from source pages. The source-provided Problem 8 solution is not imported because it gives incorrect eigenvalues for its displayed matrix; the issue is recorded in `COMPLAINTS.md`.
 
 - [x] [fields.pdf](assets/attachments/extracted/fields.md) (177L, 8 selected qual problems) — algebra — Fall 2007 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-FIELDS`; review-sheet provenance retained and matching exam problems reuse canonical cards.
 

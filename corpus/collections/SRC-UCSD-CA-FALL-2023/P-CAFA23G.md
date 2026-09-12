@@ -22,3 +22,34 @@ Then the set of polynomials is dense in the space $H(G)$ of analytic functions o
 (b) Let $u_1, u_2$ be harmonic functions on $\mathbb{D}$.
 Then $u := \max\{u_1, u_2\}$ is also harmonic on $\mathbb{D}$.
 :::
+
+::: solution
+(a) **True.** By Runge's theorem, polynomials are dense in $H(G)$ exactly
+when the complement of $G$ in the Riemann sphere is connected. Here
+\[
+G=\{|z|<2\}\cap\{|z-1|>1\}.
+\]
+Its complement is the union of
+\[
+\{|z|\ge2\}\cup\{\infty\}
+\]
+and
+\[
+\{|z-1|\le1\}.
+\]
+These two closed sets meet at $z=2$, so the complement is connected. Hence
+polynomials are dense in $H(G)$.
+
+(b) **False.** Take
+\[
+u_1(x+iy)=x,
+\qquad
+u_2(x+iy)=-x.
+\]
+Both are harmonic, but
+\[
+\max\{u_1,u_2\}=|x|
+\]
+is not even differentiable on the imaginary axis and therefore is not
+harmonic.
+:::

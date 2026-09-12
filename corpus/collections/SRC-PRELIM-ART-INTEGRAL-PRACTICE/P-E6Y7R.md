@@ -12,28 +12,54 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the sign of the x cos(2x) term.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int x\sin^{-1}(\frac {1}{x}) ~dx = \color {blue} {\frac {1}{2} (x^2 \csc ^{-1} (x) + \sqrt {x^2 - 1})} = \color {blue} {\frac {1}{2} (x^2 \sin ^{-1} (\frac {1}{x}) + \sqrt {x^2 - 1})}$
+Evaluate
+\[
+\int x\arcsin\!\left(\frac1x\right)\,dx
+\quad (x>1),
+\]
+\[
+\int x\arctan x\,dx,
+\qquad
+\int_0^1x\arctan x\,dx,
+\]
+and
+\[
+\int x\sin(2x)\,dx.
+\]
+:::
 
-- **Solution:** $x \sin ^{-1} (\frac {1}{x}) = x \csc ^{-1} (x)$
+::: solution
+For the first integral, integration by parts with $u=\arcsin(1/x)$ and $dv=x\,dx$ gives
+\[
+\boxed{\int x\arcsin\!\left(\frac1x\right)\,dx
+=\frac12\left(x^2\arcsin\!\left(\frac1x\right)+\sqrt{x^2-1}\right)+C.}
+\]
 
-3. $\displaystyle \int x\tan ^{-1} (x) ~dx = \color {blue} {\frac {1}{2} (x^2 \tan^{-1}(x) - x +\tan^{-1}(x))}$
+For the second,
+\[
+\boxed{\int x\arctan x\,dx
+=\frac12\left((x^2+1)\arctan x-x\right)+C.}
+\]
+Therefore
+\[
+\boxed{\int_0^1x\arctan x\,dx=\frac\pi4-\frac12.}
+\]
 
-- **Solution:** $u = \tan ^{-1} (x)$, $v = \frac {1}{2} x^2$, $du = \frac {1}{x^2 + 1} ~dx$, $dv = x ~dx$
-
-- **Solution:** $\frac {1}{2} x^2 \tan ^{-1} (x) - \int \frac {1}{x^2 + 1} \cdot \frac {1}{2} x^2 ~dx = \frac {1}{2} x^2 \tan ^{-1} (x) - \frac {1}{2} \int (1 - \frac {1}{x^2 + 1}) ~dx$
-
-  1. $\displaystyle \int_{0}^{1} x \tan ^{-1} (x) ~dx = \color {blue} {\frac {\pi}{4}-\frac {1}{2}}$
-
-  - **Solution:** $\frac {1}{2} ((x^2 +1) \tan^{-1}(x) - x) |_{0}^{1} = (\tan ^{-1} (1) - \frac {1}{2}) - (0 - 0)​$
-
-4. $\displaystyle \int x \sin(2x) ~dx = \color {blue} {\frac {1}{2} x \cos (2x) + \frac {1}{4} \sin (2x)}$
-
-- **Solution:** $u = x$, $v = - \frac {1}{2} \cos (2x)$, $du = dx$, $dv = \sin (2x) ~dx$
-
-- **Solution:** $- \frac {1}{2} x \cos (2x) - \int \sin (2x) ~dx$
-
-- **Used 2018**
+Finally, integration by parts with $u=x$ and $dv=\sin(2x)dx$ gives
+\[
+\boxed{\int x\sin(2x)\,dx
+=-\frac12x\cos(2x)+\frac14\sin(2x)+C.}
+\]
+The stored positive sign in front of $x\cos(2x)$ was incorrect.
 :::

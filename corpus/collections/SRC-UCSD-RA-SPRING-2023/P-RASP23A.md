@@ -11,9 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 1 of the official UCSD Spring 2023 real-analysis qualifying exam. The prior solution incorrectly treated “linear functional” in part (a) as automatically continuous.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -28,80 +35,69 @@ If false, disprove it.
 Then $m(E) = 0$.
 :::
 
-::: {.solution}
-**(a) True.**
+::: solution
+<1>1. Part (a) is false.
+::: proof
+Let
+\[
+X=c_{00}
+\]
+be the vector space of finitely supported real sequences, equipped with the $\ell^2$ norm. Define
+\[
+F(x)=\sum_{k=1}^{\infty}k x_k,
+\]
+where the sum is finite because $x\in c_{00}$. Then $F$ is a linear functional on the normed space $X$.
 
-<1>1. $f^{-1}(0) = \ker f$ is the preimage of the closed set $\{0\}$ under the continuous map $f$.
-::: {.proof}
-a linear functional on a normed space is continuous iff it is bounded; but even without boundedness, we use a different argument.
+For $n\ge2$, set
+\[
+x^{(n)}=e_1-\frac1n e_n.
+\]
+Then
+\[
+F(x^{(n)})=1-1=0,
+\]
+so $x^{(n)}\in\ker F$. But
+\[
+\|x^{(n)}-e_1\|_2=\frac1n\longrightarrow0,
+\]
+while
+\[
+F(e_1)=1\ne0.
+\]
+Thus $e_1$ lies in the closure of $\ker F$ but not in $\ker F$, so $F^{-1}(0)$ need not be closed.
 :::
 
-<1>2. More directly: if $f$ is continuous, then $f^{-1}(0)$ is closed (preimage of a closed set).
-::: {.proof}
-continuity.
+<1>2. Part (b) is true.
+::: proof
+Weak convergence gives
+\[
+\langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
+\]
+Hence
+\[
+\begin{aligned}
+\|x_n-x\|^2
+&=\|x_n\|^2-2\operatorname{Re}\langle x_n,x\rangle+\|x\|^2\\
+&\longrightarrow \|x\|^2-2\|x\|^2+\|x\|^2=0.
+\end{aligned}
+\]
+Therefore $x_n\to x$ strongly.
 :::
 
-<1>3. If $f$ is not continuous (unbounded), then $\ker f$ is dense in $X$ but not closed; however, the statement "if $f$ is a linear functional" without continuity is ambiguous. For a *continuous* linear functional, $f^{-1}(0)$ is closed.
-::: {.proof}
-the statement is true for continuous (bounded) linear functionals, which is the standard interpretation.
-:::
-
-<1>4. Hence (a) is **true** (for bounded linear functionals).
-::: {.proof}
-<1>2.
-:::
-
-**(b) True.**
-
-<1>1. $\|x_n - x\|^2 = \|x_n\|^2 - 2\operatorname{Re}\langle x_n, x \rangle + \|x\|^2$.
-::: {.proof}
-expand the norm.
-:::
-
-<1>2. Since $x_n \to x$ weakly, $\langle x_n, x \rangle \to \langle x, x \rangle = \|x\|^2$.
-::: {.proof}
-weak convergence.
-:::
-
-<1>3. Hence $\|x_n - x\|^2 \to \|x\|^2 - 2\|x\|^2 + \|x\|^2 = 0$.
-::: {.proof}
-<1>1, <1>2, and $\|x_n\| \to \|x\|$.
-:::
-
-<1>4. Therefore $x_n \to x$ strongly.
-::: {.proof}
-<1>3.
-:::
-
-**(c) True.**
-
-<1>1. Suppose $m(E) > 0$.
-::: {.proof}
-assume for contradiction.
-:::
-
-<1>2. By the Lebesgue density theorem, for a.e. $x \in E$, $\lim_{r \to 0} \frac{m(E \cap (x - r, x + r))}{2r} = 1$.
-::: {.proof}
-Lebesgue density theorem.
-:::
-
-<1>3. Hence there is a point $x \in E$ and an interval $I$ (centered at $x$) with $\frac{m(E \cap I)}{m(I)} > \alpha$.
-::: {.proof}
-<1>2 (the density tends to $1 > \alpha$).
-:::
-
-<1>4. This contradicts the hypothesis $m(E \cap I) \le \alpha m(I)$ for all intervals $I$.
-::: {.proof}
-<1>3.
-:::
-
-<1>5. Hence $m(E) = 0$.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 (a), <1>4 (b), <1>5 (c).
+<1>3. Part (c) is true.
+::: proof
+Suppose $m(E)>0$. By the Lebesgue density theorem, almost every $x\in E$ is a density point of $E$. Choose such an $x$. Then
+\[
+\frac{m(E\cap(x-r,x+r))}{2r}\longrightarrow1
+\qquad(r\downarrow0).
+\]
+Since $\alpha<1$, for sufficiently small $r>0$ we obtain
+\[
+m(E\cap(x-r,x+r))>\alpha\,2r,
+\]
+contradicting the assumed bound for every open interval. Hence
+\[
+\boxed{m(E)=0.}
+\]
 :::
 :::

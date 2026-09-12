@@ -1,0 +1,38 @@
+---
+schema: qual/card@1
+id: SRC-GRE-MATH-CH4-REVIEW
+kind: collection
+title: Cracking the GRE Mathematics Subject Test — Chapter 4 review questions
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+provenance:
+- assets/attachments/chapter-4.pdf
+source:
+  source_kind: compilation
+  area: real-analysis
+  sections:
+  - name: Chapter 4 review questions
+    problems:
+    - P-GRECH4-01
+    - P-GRECH4-02
+    - P-GRECH4-03
+    - P-GRECH4-04
+    - P-GRECH4-05
+    - P-GRECH4-06
+    - P-GRECH4-07
+    - P-GRECH4-08
+    - P-GRECH4-09
+    - P-GRECH4-10
+    - P-GRECH4-11
+    - P-GRECH4-12
+    - P-GRECH4-13
+    - P-GRECH4-14
+    - P-GRECH4-15
+    - P-GRECH4-16
+  date:
+    kind: unknown
+---

@@ -94,6 +94,8 @@ source:
     - P-ARTALG-AL04-8
     - P-ARTALG-AL04-9
     - P-ARTALG-AL04-10
+    - id: P-ARTALG-AL04-11
+      comment: Fields 4 (PDF p. 38)
   - name: Algebra Preliminary Examination, July 28, 2003 (pp. 39–48)
     problems:
     - P-ARTALG-JU03-1

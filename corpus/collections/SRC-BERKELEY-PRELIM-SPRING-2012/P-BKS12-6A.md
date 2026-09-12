@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: P-BKS12-6A
+kind: problem
+title: Berkeley Spring 2012 prelim problem 6A
+classification:
+  areas:
+  - prelim
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+A positive integer m is called a pseudoprime to the base 2 if m divides $2 ^ { m - 1 } - 1$ . Show $2 ^ { p } - 1$ is a pseudoprime to the base 2 if $p$ is prime.
+:::

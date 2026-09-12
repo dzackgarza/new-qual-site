@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,22 +26,38 @@ Determine the number of abelian groups of order $200$ up to isomorphism, and lis
 :::
 
 ::: solution
-**Goal:** Apply the Fundamental Theorem of Finite Abelian Groups to classify all abelian groups of order $200 = 2^3 \cdot 5^2$.
+Since
+\[
+200=2^3 5^2,
+\]
+a finite abelian group of order $200$ is the product of an abelian group of order $2^3$ and one of order $5^2$. The partitions of $3$ are $3$, $2+1$, and $1+1+1$; the partitions of $2$ are $2$ and $1+1$. Hence there are
+\[
+p(3)p(2)=3\cdot2=6
+\]
+isomorphism classes.
 
-<1>1. Prime Factorization of $200$: *Proof:* <2>1. Factoring $200$ into prime powers: $$200 = 8 \times 25 = 2^3 \times 5^2.$$
+Their elementary-divisor forms are
+\[
+\begin{aligned}
+&\mathbb Z_8\times\mathbb Z_{25},\\
+&\mathbb Z_8\times\mathbb Z_5\times\mathbb Z_5,\\
+&\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_{25},\\
+&\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_5\times\mathbb Z_5,\\
+&\mathbb Z_2^3\times\mathbb Z_{25},\\
+&\mathbb Z_2^3\times\mathbb Z_5^2.
+\end{aligned}
+\]
 
-<1>2. Fundamental Theorem of Finite Abelian Groups: *Proof:* <2>1. Any finite abelian group $G$ decomposes as a direct product of its Sylow $p$-subgroups: $$G \cong G_2 \times G_5$$ where $|G_2| = 2^3 = 8$ and $|G_5| = 5^2 = 25$.
-<2>2. The number of non-isomorphic abelian groups of order $p^k$ equals the **integer partition function** $p(k)$.
-<2>3. Therefore, the total number of non-isomorphic abelian groups of order $200$ is: $$N = p(3) \times p(2).$$
-
-<1>3. Partition Calculations: *Proof:* <2>1. **Partitions of $3$ ($p(3) = 3$):** - $3 \implies \mathbb{Z}_8$ - $2 + 1 \implies \mathbb{Z}_4 \times \mathbb{Z}_2$ - $1 + 1 + 1 \implies \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2$ <2>2. **Partitions of $2$ ($p(2) = 2$):** - $2 \implies \mathbb{Z}_{25}$ - $1 + 1 \implies \mathbb{Z}_5 \times \mathbb{Z}_5$ <2>3. Total number of isomorphism classes: $$N = 3 \times 2 = 6.$$
-
-<1>4. Explicit List of the 6 Isomorphism Classes: *Proof:* <2>1. **Elementary Divisor Form:** 1. $\mathbb{Z}_8 \times \mathbb{Z}_{25} \cong \mathbb{Z}_{200}$ (Cyclic group).
-2. $\mathbb{Z}_8 \times \mathbb{Z}_5 \times \mathbb{Z}_5 \cong \mathbb{Z}_5 \times \mathbb{Z}_{40}$.
-3. $\mathbb{Z}_4 \times \mathbb{Z}_2 \times \mathbb{Z}_{25} \cong \mathbb{Z}_2 \times \mathbb{Z}_{100}$.
-4. $\mathbb{Z}_4 \times \mathbb{Z}_2 \times \mathbb{Z}_5 \times \mathbb{Z}_5 \cong \mathbb{Z}_{10} \times \mathbb{Z}_{20}$.
-5. $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_{25} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_{50}$.
-6. $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_5 \times \mathbb{Z}_5 \cong \mathbb{Z}_2 \times \mathbb{Z}_{10} \times \mathbb{Z}_{10}$.
-
-<1>5. Conclusion: There are exactly $6$ abelian groups of order $200$ up to isomorphism ($p(3) \times p(2) = 3 \times 2 = 6$). Q.E.D.
+Combining relatively prime primary factors gives the corresponding invariant-factor forms
+\[
+\begin{aligned}
+&\mathbb Z_{200},\\
+&\mathbb Z_5\times\mathbb Z_{40},\\
+&\mathbb Z_2\times\mathbb Z_{100},\\
+&\mathbb Z_{10}\times\mathbb Z_{20},\\
+&\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_{50},\\
+&\mathbb Z_2\times\mathbb Z_{10}\times\mathbb Z_{10}.
+\end{aligned}
+\]
+In each invariant-factor decomposition, each factor divides the next.
 :::

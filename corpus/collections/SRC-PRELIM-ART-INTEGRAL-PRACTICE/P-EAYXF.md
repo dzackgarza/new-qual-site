@@ -11,14 +11,25 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-6. $\displaystyle \int \frac {e^x}{e^x + 1} ~dx = \color{blue} {\ln (e^x + 1)}​$
+Evaluate
+\[
+\int \frac{e^x}{e^x+1}\,dx.
+\]
+:::
 
-- **Solution:** $u = e^x + 1​$, $du = e^x ~dx ​$
-
-- **Used 2018**
-
-- **Used 2019**
+::: solution
+Let $u=e^x+1$, so $du=e^x\,dx$. Then
+\[
+\boxed{\int \frac{e^x}{e^x+1}\,dx=\ln(e^x+1)+C.}
+\]
 :::

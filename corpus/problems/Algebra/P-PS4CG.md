@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PS4CG
 kind: problem
-title: A group of order $p^2 q$ has a unique Sylow $p$-subgroup
+title: A group of order $p^2q$ has a normal Sylow subgroup
 classification:
   areas:
   - algebra
@@ -15,31 +15,44 @@ review: draft
 ---
 
 ::: problem
-Since $n_p \neq 1$ by assumption, we must have $n_p = q$.
-Now consider sub-cases for $n_q$:
+Let $G$ be a group of order $p^2q$, where $p$ and $q$ are primes. Show that $G$ has a normal Sylow subgroup.
+:::
 
-- $n_q = p$: Sylow gives $n_q \equiv 1 \mod q$, so $p \equiv 1 \mod q$.
-  With $1 \leq p < q$ this reads $p = 1$, which is impossible for a prime.
+::: {.solution}
+If $p=q$, then $G$ itself is the unique Sylow $p$-subgroup, so assume $p\ne q$.
 
-- $n_q = p^2$: count the elements of order exactly $q$.
+<1>1. If $p>q$, the Sylow $p$-subgroup is normal.
+::: {.proof}
+Sylow gives
+\[
+n_p\mid q,
+\qquad
+n_p\equiv1\pmod p.
+\]
+Thus $n_p\in\{1,q\}$. Since $q<p$, the value $q$ cannot be congruent to $1$ modulo $p$, so $n_p=1$.
+:::
 
-  A Sylow $q\dash$subgroup has prime order $q$, so two distinct ones intersect in a subgroup of order dividing $q$ and properly contained in each; the only such subgroup is $\{e\}$, so the intersection is $\{e\}$.
-  The $n_q = p^2$ of them therefore contribute
-  \[
-  \abs{ \union_{S_q \in \mathrm{Syl}(q, G)} S_q\setminus\theset{e} } = n_q(q-1) = p^2(q-1)
-  \]
-  distinct elements of order $q$.
-  That leaves
-  \[
-  \abs{G} - p^2(q-1) = p^2 q - p^2 q + p^2 = p^2
-  \]
-  elements of $G$ whose order is not $q$.
+<1>2. Suppose $p<q$. Then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
+::: {.proof}
+Sylow gives
+\[
+n_q\mid p^2,
+\qquad
+n_q\equiv1\pmod q.
+\]
+Hence $n_q\in\{1,p,p^2\}$. Since $1<p<q$, the value $p$ is impossible. If $n_q=p^2$, then
+\[
+q\mid p^2-1=(p-1)(p+1).
+\]
+Because $q>p$, this forces $q\mid p+1$, hence $q=p+1$. The only consecutive primes are $2$ and $3$.
+:::
 
-  Now every Sylow $p\dash$subgroup has order $p^2$ and consists of elements of $p\dash$power order, so it is contained in that set of exactly $p^2$ elements.
-  A subgroup of order $p^2$ inside a set of size $p^2$ is the whole set, so there is only one Sylow $p\dash$subgroup and $n_p = 1$.
-  This contradicts $n_p = q > 1$.
-  $\qed$
+<1>3. In the exceptional order-$12$ case, a Sylow subgroup is still normal.
+::: {.proof}
+If the Sylow $3$-subgroup is unique, we are done. Otherwise $n_3=4$. The four order-$3$ subgroups intersect only in the identity, so they contribute $4(3-1)=8$ nonidentity elements. Exactly three nonidentity elements remain.
 
-> The same union bound cannot be applied to the Sylow $p\dash$subgroups.
-> They have order $p^2$, which is not prime, so two distinct ones may meet in a subgroup of order $p$ and the count $n_p(p^2-1)$ would overcount.
+Every Sylow $2$-subgroup has order $4$, and its three nonidentity elements cannot lie in an order-$3$ subgroup. Hence every Sylow $2$-subgroup consists of the identity together with exactly those same three remaining elements. Therefore the Sylow $2$-subgroup is unique and normal.
+:::
+
+Thus every group of order $p^2q$ has a normal Sylow subgroup.
 :::

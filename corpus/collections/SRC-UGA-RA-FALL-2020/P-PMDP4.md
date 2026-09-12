@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PMDP4
 kind: problem
-title: $F(y)=\int f(x)\cos(yx)\,dx$ is $C^1$ when $xf\in L^1(\RR)$
+title: $F(y)=\int f(x)\cos(yx)\,dx$ is $C^1$ when $f,xf\in L^1(\RR)$
 classification:
   areas:
   - real-analysis
@@ -11,70 +11,61 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 4 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX. The source assumes only xf in L1; that hypothesis is insufficient to define F(0), so the card correctly retains the repaired assumption f, xf in L1.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: "The stated hypothesis xf in L1 alone is insufficient: f(x)=x^{-1}1_(0,1) has xf in L1 but F(0) is undefined. The card is corrected to assume f and xf are in L1."
 ---
 
 :::{.problem}
-Prove that if $xf(x) \in L^1(\RR)$, then
-\[  
-F(y) \da \int f(x) \cos(yx)\,  dx
+Prove that if $f,\,xf(x) \in L^1(\RR)$, then
+\[
+F(y) \da \int f(x)\cos(yx)\,dx
 \]
 defines a $C^1$ function.
 :::
 
-:::{.solution}
-
-- Fix $y_0$, we'll show $F'$ exists and is continuous at $y_0$.
-- Fix a sequence $y_n\decreasesto y_0$ and define
+::: solution
+For $y\in\mathbb R$ define
 \[
-h_n(x) \da 
-{ h(x, y_n) - h(x, y_0) \over y_n - y_0} && h(x, y) \da f(x) \cos(yx)
-.\]
+F(y)=\int_{\mathbb R}f(x)\cos(yx)\,dx.
+\]
+This is well defined because $f\in L^1$.
 
-- We can then write 
+Fix $y\in\mathbb R$. For $h\ne0$,
 \[
-\dd{h}{y}(x, y_0) 
-= \lim_{n\to \infty} h_n(x)
-.\]
-- Apply the MVT:
+\frac{F(y+h)-F(y)}{h}
+=\int_{\mathbb R}f(x)
+\frac{\cos((y+h)x)-\cos(yx)}{h}\,dx.
+\]
+For each $x$, the integrand tends to
 \[
-h_n(x) \da { h(x, y_n) - h(x, y_0) \over y_n - y_0}
-&= \dd{h}{y}(x, \tilde y) && \text{ for some } \tilde y \in [y_0, y_n]
-.\]
-
-- Use this to get a bound for DCT:
+-xf(x)\sin(yx).
+\]
+By the mean value theorem,
 \[
-\abs{h_n(x)}
-&\da \abs{ h(x, y_n) - h(x, y_0) \over y_n - y_0} \\
-&= \abs{ \dd{h}{y}(x, \tilde y) } \\
-&\leq \sup_{y\in [y_0, y_n]} \abs{ \dd{h}{y}(x, y) } \\
-&\leq \sup_{y\in [y_0, y_n]} \abs{ xf(x) \sin(yx) } \\
-&\leq \abs{ xf(x) }
-,\]
-  and by assumption $xf(x) \in L^1$.
-
-- So this justifies commuting an integral and a limit:
+\left|\frac{\cos((y+h)x)-\cos(yx)}{h}\right|\le |x|,
+\]
+so the absolute value of the integrand is bounded by $|xf(x)|\in L^1$. Dominated convergence therefore gives
 \[
-F'(y_0) 
-&\da \lim_{y_n\to y_0} { F(y_n) - F(y_0) \over y_n - y_0} \\
-&= \lim_{n\to 0} \int {h_n(x)  } \dx \\
-&\equalsbecause{\text{DCT}} \int \lim_{n\to\infty} h_n(x) \dx \\
-&\da \int \dd{h}{y}(x, y_0) \dx \\
-&\da - \int xf(x) \sin(yx) \dx 
-,\]
-and since this limit exists and is finite, $F$ is differentiable at $y_0$.
+F'(y)=-\int_{\mathbb R}xf(x)\sin(yx)\,dx.
+\]
 
-- That $F$ is continuous:
+Now let $y_j\to y$. Then
 \[
-\lim_{y_n \to y_0} F'(y_n)
-&= \lim_{y_n \to y_0} \int \dd{h}{y}(x, y_n) \dx \\
-&\equalsbecause{\text{DCT}} \int \lim_{y_n \to y_0} \dd{h}{y}(x, y_n) \dx \\
-&= - \int \lim_{y_n \to y_0} xf(x) \sin(y_n x) \dx \\
-&= - \int xf(x) \sin(y_0x) \dx 
-,\]
-where we've used that $y\mapsto \sin(yx)$ is continuous (for each fixed $x$, the map $y \mapsto \sin(yx)$ is a composition of the continuous functions $y \mapsto yx$ and $\sin$, hence continuous).
-
-
-
-
+-xf(x)\sin(y_jx)\to -xf(x)\sin(yx)
+\]
+pointwise and is dominated by $|xf(x)|$. Another application of dominated convergence yields
+\[
+F'(y_j)\to F'(y).
+\]
+Thus $F'$ is continuous and
+\[
+\boxed{F\in C^1(\mathbb R).}
+\]
 :::
-

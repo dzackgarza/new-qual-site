@@ -17,3 +17,56 @@ review: draft
 
 (b) Compute the eigenvalues and eigenvectors of the adjacency operator of the graph in part (a).
 :::
+
+::: solution
+Identify
+\[
+B(n)\cong (\mathbb Z/2\mathbb Z)^n
+\]
+by sending $\tau_i$ to the $i$th standard basis vector $e_i$.
+
+(a) The Cayley graph $\Gamma=\operatorname{Cay}(B(n),\{\tau_1,\ldots,\tau_n\})$ has vertex set $B(n)$, and two vertices $g,h$ are adjacent exactly when
+\[
+h=g\tau_i
+\]
+for some $i$. Under the identification with $(\mathbb Z/2\mathbb Z)^n$, two vertices are adjacent exactly when they differ in one coordinate. Thus $\Gamma$ is the $n$-dimensional hypercube.
+
+Its adjacency operator on the space $\mathbb C[B(n)]$ of functions on the vertex set is
+\[
+(Af)(g)=\sum_{i=1}^n f(g\tau_i).
+\]
+
+(b) For each subset $S\subseteq\{1,\ldots,n\}$, let
+\[
+\chi_S\!\left(\tau_1^{\varepsilon_1}\cdots\tau_n^{\varepsilon_n}\right)
+=(-1)^{\sum_{i\in S}\varepsilon_i}.
+\]
+These are precisely the $2^n$ distinct linear characters of $B(n)$, and hence they form an orthogonal basis of $\mathbb C[B(n)]$.
+
+For such a character,
+\[
+\begin{aligned}
+(A\chi_S)(g)
+&=\sum_{i=1}^n \chi_S(g\tau_i)\\
+&=\chi_S(g)\sum_{i=1}^n\chi_S(\tau_i).
+\end{aligned}
+\]
+Now $\chi_S(\tau_i)=-1$ for $i\in S$ and $1$ otherwise, so
+\[
+\sum_{i=1}^n\chi_S(\tau_i)
+=(n-|S|)-|S|=n-2|S|.
+\]
+Therefore
+\[
+\boxed{A\chi_S=(n-2|S|)\chi_S}.
+\]
+Thus an eigenbasis is $\{\chi_S:S\subseteq\{1,\ldots,n\}\}$, and the eigenvalues are
+\[
+\boxed{n,n-2,n-4,\ldots,-n}.
+\]
+The eigenvalue $n-2k$ has multiplicity
+\[
+\boxed{\binom nk},
+\]
+because exactly $\binom nk$ subsets $S$ have cardinality $k$.
+:::

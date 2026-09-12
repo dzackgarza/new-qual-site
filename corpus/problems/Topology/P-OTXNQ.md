@@ -16,3 +16,7 @@ review: draft
 ::: problem
 Does this hold when $A$ is instead an open subset?
 :::
+
+::: {.solution}
+The statement is incomplete as a standalone problem: “this” has no antecedent in this card. Git history confirms that it was extracted from surrounding compactness prose. The missing preceding assertion is required before the open-subset variant has a determinate truth value.
+:::

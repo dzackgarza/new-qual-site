@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: P-PRACT20-W5-06
+kind: problem
+title: "Week 5: Abstract Algebra & Complex Analysis, problem 6"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Up to isomorphism, how many abelian groups G have order 16 and satisfy$x + x + x + x = 0$for all$x \in G ?$
+:::

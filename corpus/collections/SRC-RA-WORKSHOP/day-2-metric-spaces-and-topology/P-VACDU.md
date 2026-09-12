@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VACDU
 kind: problem
-title: (b) Show by example that the union of infinitely
+title: Infinite unions of compact sets and attainment of distance to a compact set
 classification:
   areas:
   - real-analysis
@@ -13,6 +13,13 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 7 (June 2003, #1b,c) in the preserved Day 2 Metric Spaces and Topology source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -36,7 +43,7 @@ $y_0\in K$ such that $d(x_0,K)=d(x_0,y_0)$.
     :::
 <1>3. (c) The distance to $K$ is attained.
     ::: {.proof}
-    $K$ is compact and $d(x_0, \cdot)$ is continuous (<1>2), so $d(x_0,\cdot)$ attains its minimum on $K$: there is $y_0 \in K$ with $d(x_0, y_0) = \min_{y \in K} d(x_0, y) = d(x_0, K)$, where the last equality is the definition of $d(x_0, K)$ as an infimum (attained by <1>2).
+    $K$ is compact and $d(x_0, \cdot)$ is continuous (<1>2), so $d(x_0,\cdot)$ attains its minimum on $K$: there is $y_0 \in K$ with $d(x_0, y_0) = \min_{y \in K} d(x_0, y) = d(x_0, K)$, where the last equality is the definition of $d(x_0,K)$ as an infimum, attained by compactness.
     :::
 <1>4. Q.E.D.
 :::

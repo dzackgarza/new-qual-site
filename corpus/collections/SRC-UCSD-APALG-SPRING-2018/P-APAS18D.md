@@ -26,3 +26,24 @@ R_{D_8}(v)=\frac{1}{|G|}\sum_{g\in D_8}g\cdot v.
 \]
 What is the rank of $R_{D_8}$?
 :::
+
+::: solution
+Label the vertices of the regular octagon by the elements of \(\mathbb Z/8\mathbb Z\). An unordered pair of distinct vertices is determined up to the dihedral action by its cyclic distance
+\[
+d=\min(|i-j|,8-|i-j|).
+\]
+Edges have \(d=1\), so the diagonals have \(d=2,3,4\). The dihedral group preserves \(d\), and it acts transitively on the diagonals of each fixed distance. Therefore \(X\) has exactly three \(D_8\)-orbits.
+
+For a permutation representation \(\mathbb C[X]\), the invariant subspace consists exactly of functions on \(X\) that are constant on each orbit. Hence
+\[
+\dim V^{D_8}=3.
+\]
+The Reynolds operator is the projection of \(V\) onto \(V^{D_8}\): it fixes every invariant vector, and its image is invariant because for \(h\in D_8\),
+\[
+hR_{D_8}(v)=\frac1{|D_8|}\sum_{g\in D_8}hg\cdot v=R_{D_8}(v).
+\]
+Thus
+\[
+\operatorname{rank}R_{D_8}=\dim V^{D_8}=3.
+\]
+:::

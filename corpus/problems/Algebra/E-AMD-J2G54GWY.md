@@ -15,39 +15,33 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Replaced the verbose proof by the simple-solvable-factor argument.
 ---
 
 ::: {.exercise}
 Show that if $G$ is finite and solvable, then every composition factor of $G$ has prime order.
 :::
 
-::: solution
-**Goal:** Prove that every composition factor of a finite solvable group $G$ is a cyclic group of prime order $\mathbb{Z}_p$.
+::: {.solution}
+Let $S$ be a composition factor of the finite solvable group $G$.
 
-<1>1. Solvability of composition factors:
-    *Proof:*
-    <2>1. Let $\{e\} = G_0 \trianglelefteq G_1 \trianglelefteq \dots \trianglelefteq G_n = G$ be a composition series of $G$.
-    <2>2. By definition of a composition series, each factor $S_i = G_{i+1} / G_i$ is a non-trivial simple group.
-    <2>3. Because subgroups and quotient groups of solvable groups are solvable, each $G_{i+1}$ is solvable, and therefore each quotient factor $S_i = G_{i+1} / G_i$ is a solvable group.
+<1>1. The group $S$ is simple and solvable.
+::: {.proof}
+A composition factor is simple by definition. Subgroups and quotients of solvable groups are solvable, so every composition factor of $G$ is solvable.
+:::
 
-<1>2. Simple solvable groups are abelian:
-    *Proof:*
-    <2>1. Let $S$ be a finite group that is both simple and solvable.
-    <2>2. The derived subgroup $[S, S]$ is a characteristic (and hence normal) subgroup of $S$.
-    <2>3. Because $S$ is solvable, $[S, S] \neq S$ (the derived series must terminate at $\{e\}$).
-    <2>4. Since $S$ is simple and $[S, S] \trianglelefteq S$, the only possibilities for $[S, S]$ are $\{e\}$ and $S$.
-    <2>5. Since $[S, S] \neq S$, we must have $[S, S] = \{e\}$.
-    <2>6. Thus $S$ is abelian.
+<1>2. A nontrivial simple solvable group is abelian.
+::: {.proof}
+The derived subgroup $[S,S]$ is characteristic, hence normal, in $S$. Simplicity gives $[S,S]=1$ or $S$. Solvability excludes $[S,S]=S$, so $[S,S]=1$ and $S$ is abelian.
+:::
 
-<1>3. Simple abelian groups have prime order:
-    *Proof:*
-    <2>1. In an abelian group $S$, every subgroup is normal.
-    <2>2. Since $S$ is simple, $S$ has no proper non-trivial subgroups.
-    <2>3. Let $p$ be a prime dividing $|S|$. By Cauchy's Theorem, $S$ contains an element $x$ of order $p$.
-    <2>4. The cyclic subgroup $\langle x \rangle \le S$ has order $p$.
-    <2>5. Because $S$ has no proper non-trivial subgroups, we must have $\langle x \rangle = S$.
-    <2>6. Therefore $|S| = p$ is prime, and $S \cong \mathbb{Z}_p$.
+<1>3. A finite simple abelian group has prime order.
+::: {.proof}
+Choose a prime $p\mid |S|$. By Cauchy's theorem there is $x\in S$ of order $p$. Since $S$ is abelian, $\langle x\rangle$ is normal; simplicity forces $\langle x\rangle=S$. Hence $|S|=p$.
+:::
 
-<1>4. Conclusion:
-    Every composition factor of $G$ is simple and solvable, hence isomorphic to $\mathbb{Z}_p$ for some prime $p$. Q.E.D.
+Thus every composition factor is cyclic of prime order.
 :::

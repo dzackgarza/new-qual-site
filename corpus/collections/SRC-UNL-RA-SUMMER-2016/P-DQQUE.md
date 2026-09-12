@@ -15,65 +15,79 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked directly against Problem 2 of the preserved UNL May 2016 qualifying-exam source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Replaced the false claim that every tail supremum belongs to E; a constant sequence is a counterexample to that step.
 ---
 
-Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and $E$ given by: $$E:= \bigg\{s \in \mathbb{R}\, \colon \, \text{ the set } \{k \in \mathbb{N}\, \colon \, a_k \geq s\} \text{ has at most finitely many elements}\bigg\}.$$ Prove that $\limsup_{k \to \infty} a_k = \inf E$.
-
-::: {.proof}
-*Proof.* Let $e \in E$.
-As there are only finitely many $a_k \geq s$, there exists some $N \in \mathbb{N}$ such that $a_k < e$ for all $k \geq N$.
-Define $T_k := \{a_k : k \geq n\}$.
-Since $a_k < e$ for all $k \geq N$, every element of $T_N$ is strictly less than $e$, so $e$ is an upper bound for $T_N$.
-So, $$e \geq \sup T_N \geq \limsup a_k.$$ Thus, $\limsup a_k$ is a lower bound for $E$, meaning $\inf E \geq \limsup a_n$.\
-Conversely, suppose $k \in \mathbb{N}$.
-$$T_k = \{a_n : n \geq k \}.$$ So, $\sup T_k \geq a_n$ for all $a_n \in T_k$.
-Then, $\{a_k : a_k \geq \sup T_k\}$ must be finite, so $\{k \in \mathbb{N} : a_k \geq \sup T_k\}$ is finite.
-So, $\sup T_k \in E$ for all $k \in \mathbb{N}$.
-Since $\inf E$ is a lower bound for $E$, $\inf E \leq \sup T_k$ for all $k \in \mathbb{N}$.
-Thus, $$\inf E \leq \lim (\sup T_k) = \limsup a_k.$$ We have both inequalities, therefore $\limsup a_k = \inf E$.
-◻
+::: {.problem}
+Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and set
+\[
+E:=\left\{s\in\mathbb R:\{k\in\mathbb N:a_k\ge s\}\text{ is finite}\right\}.
+\]
+Prove that
+\[
+\limsup_{k\to\infty}a_k=\inf E.
+\]
 :::
+
 ::: {.solution}
-<1>1. Notation: $E = \{s \in \RR : \text{only finitely many } k \text{ have } a_k \ge s\}$; $(a_k)$ is bounded.
+Let
+\[
+L:=\limsup_{k\to\infty}a_k
+ =\lim_{N\to\infty}\sup_{k\ge N}a_k.
+\]
+Since $(a_k)$ is bounded above, $E\ne\varnothing$: every number larger than $\sup_k a_k$ lies in $E$.
+
+<1>1. $L\le \inf E$.
 ::: {.proof}
-given.
+Fix $s\in E$. By definition of $E$, there is $N$ such that
+\[
+a_k<s\qquad(k\ge N).
+\]
+Therefore
+\[
+\sup_{k\ge N}a_k\le s.
+\]
+Since the tail suprema decrease to $L$,
+\[
+L\le \sup_{k\ge N}a_k\le s.
+\]
+Thus $L$ is a lower bound for $E$, and hence $L\le\inf E$.
 :::
 
-<1>2. For every $s \in E$: $s \ge \limsup_{k \to \infty} a_k$.
-<2>1. Since only finitely many $a_k \ge s$, there is $N$ with $a_k < s$ for all $k \ge N$.
+<1>2. $\inf E\le L$.
 ::: {.proof}
-definition of $E$.
-:::
-<2>2. $\sup_{k \ge N} a_k \le s$.
-::: {.proof}
-<2>1 says $s$ is an upper bound for $\{a_k : k \ge N\}$.
-:::
-<2>3. $\limsup a_k = \inf_N \sup_{k \ge N} a_k \le \sup_{k \ge N} a_k \le s$.
-::: {.proof}
-<2>2 and the definition of $\limsup$ as the decreasing limit of the tails.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-$s \in E$ arbitrary.
-:::
-
-<1>3. Hence $\limsup a_k \le \inf E$.
-::: {.proof}
-<1>2 shows $\limsup a_k$ is a lower bound for $E$.
-:::
-
-<1>4. For every $k$: $\sup_{j \ge k} a_j \in E$.
-::: {.proof}
-the set $\{j : a_j \ge \sup_{j \ge k} a_j\}$ is contained in $\{1, \ldots, k-1\}$ (every $j \ge k$ has $a_j \le \sup_{j \ge k} a_j$), hence finite.
+Let $\varepsilon>0$. Since
+\[
+\sup_{k\ge N}a_k\downarrow L,
+\]
+there is $N$ such that
+\[
+\sup_{k\ge N}a_k<L+\varepsilon.
+\]
+Hence
+\[
+a_k<L+\varepsilon\qquad(k\ge N),
+\]
+so only the finitely many indices $k<N$ can satisfy $a_k\ge L+\varepsilon$. Therefore
+\[
+L+\varepsilon\in E.
+\]
+It follows that
+\[
+\inf E\le L+\varepsilon.
+\]
+Letting $\varepsilon\downarrow0$ gives $\inf E\le L$.
 :::
 
-<1>5. $\inf E \le \sup_{j \ge k} a_j$ for every $k$; letting $k \to \infty$ gives $\inf E \le \limsup a_k$.
-::: {.proof}
-<1>4 and the definition of $\inf$; the tails $\sup_{j \ge k} a_j$ decrease to $\limsup a_k$.
-:::
-
-<1>6. Q.E.D.: $\limsup a_k = \inf E$.
-::: {.proof}
-<1>3 and <1>5 give both inequalities.
-:::
+Combining the two inequalities,
+\[
+\boxed{\limsup_{k\to\infty}a_k=\inf E}.
+\]
 :::

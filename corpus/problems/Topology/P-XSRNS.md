@@ -27,15 +27,21 @@ audit:
 the pushout of two $S^2$'s along their equators (identified by the identity map).
 :::
 
-<1>2. Apply Mayer–Vietoris with $X = A \cup B$, where $A$ and $B$ are the two hemispheres... more precisely, $A$ and $B$ are the two $S^2$'s, with $A \cap B = S^1$ (the equator).
+<1>2. Give the equator and both spheres compatible CW structures, so that the common equator $S^1$ is a subcomplex of each sphere. Let $A$ and $B$ denote the two sphere subcomplexes of $X$. Then $A\cap B=S^1$ and $A\cup B=X$.
 ::: {.proof}
-setup for Mayer–Vietoris.
+Take the usual CW structure on $S^2$ obtained from an equatorial $S^1$ by attaching one $2$-cell along each side. After identifying the two equators, the images of the two spheres and their common equator are CW subcomplexes of the pushout.
 :::
 
-<1>3. The Mayer–Vietoris sequence is
+<1>3. The cellular chain complexes fit into a short exact sequence
+$$
+0\longrightarrow C_*(S^1)\xrightarrow{(i_*,-j_*)}C_*(S^2)\oplus C_*(S^2)\longrightarrow C_*(X)\longrightarrow0,
+$$
+and hence give the Mayer–Vietoris long exact sequence
 $$\cdots \to H_n(S^1) \to H_n(S^2) \oplus H_n(S^2) \to H_n(X) \to H_{n-1}(S^1) \to \cdots.$$
 ::: {.proof}
-Mayer–Vietoris with $A = B = S^2$ and $A \cap B = S^1$.
+For CW subcomplexes $A,B$ with $X=A\cup B$, the cellular chain groups satisfy
+$$0\to C_*(A\cap B)\to C_*(A)\oplus C_*(B)\to C_*(X)\to0,$$
+because each cell of $X$ lies in $A$ or $B$, and a cell occurring in both lies in $A\cap B$. The associated long exact sequence in homology is the cellular Mayer–Vietoris sequence displayed above.
 :::
 
 <1>4. $H_0(X) = \ZZ$.

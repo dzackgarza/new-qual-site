@@ -16,40 +16,42 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
 What are the characteristic and minimal polynomial of the Frobenius automorphism?
 :::
 
-::: {.solution}
-<1>1. Let $F = \FF_{p^n}$ and let $\operatorname{Frob}: F \to F$, $x \mapsto x^p$, be the Frobenius automorphism, viewed as an $\FF_p$-linear operator on the $n$-dimensional $\FF_p$-vector space $F$.
-::: {.proof}
-setup.
-:::
+::: solution
+Let $F=\mathbb F_{p^n}$ and let
+\[
+\Phi:F\to F,\qquad \Phi(x)=x^p,
+\]
+viewed as an $\mathbb F_p$-linear map.
 
-<1>2. $\operatorname{Frob}^n = \id_F$.
-::: {.proof}
-for $x \in \FF_{p^n}$, $x^{p^n} = x$ (the multiplicative group has order $p^n - 1$, and $0$ is fixed).
-:::
+By the normal basis theorem for the finite Galois extension $F/\mathbb F_p$, there exists $\alpha\in F$ such that
+\[
+\alpha,\Phi(\alpha),\ldots,\Phi^{n-1}(\alpha)
+\]
+is an $\mathbb F_p$-basis of $F$. Since $\Phi^n=\mathrm{id}$, the matrix of $\Phi$ in this basis is the permutation matrix of the $n$-cycle
+\[
+\alpha\mapsto\Phi(\alpha)\mapsto\cdots\mapsto\Phi^{n-1}(\alpha)\mapsto\alpha.
+\]
+Hence its characteristic polynomial is
+\[
+\chi_\Phi(X)=X^n-1.
+\]
 
-<1>3. $\operatorname{Frob}^k \neq \id_F$ for $0 < k < n$.
-::: {.proof}
-if $x^{p^k} = x$ for all $x \in F$, then every element of $F$ is a root of $X^{p^k} - X$, which has at most $p^k$ roots, contradicting $|F| = p^n > p^k$.
-:::
-
-<1>4. Hence the minimal polynomial of $\operatorname{Frob}$ is $X^n - 1$.
-::: {.proof}
-$\operatorname{Frob}$ satisfies $X^n - 1$ (<1>2) and no lower-degree polynomial (since $\operatorname{Frob}^0, \ldots, \operatorname{Frob}^{n-1}$ are linearly independent over $\FF_p$ by <1>3 and the fact that $\operatorname{Gal}(\FF_{p^n}/\FF_p)$ has order $n$).
-:::
-
-<1>5. The characteristic polynomial of $\operatorname{Frob}$ is $X^n - 1$.
-::: {.proof}
-the minimal polynomial has degree $n = \dim_{\FF_p} F$, so it equals the characteristic polynomial.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 and <1>5.
-:::
+The vector $\alpha$ is cyclic for $\Phi$: the vectors
+\[
+\alpha,\Phi(\alpha),\ldots,\Phi^{n-1}(\alpha)
+\]
+are linearly independent. Therefore no nonzero polynomial of degree $<n$ annihilates $\Phi$. Since $\Phi^n-I=0$, the minimal polynomial has degree $n$ and divides $X^n-1$, so
+\[
+m_\Phi(X)=X^n-1.
+\]
+Thus both the characteristic and minimal polynomials of Frobenius are $X^n-1$.
 :::

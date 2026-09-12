@@ -38,3 +38,39 @@ $F(w) = 0$.
 
 ### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
 :::
+
+::: solution
+For (a), compute
+\[
+|1-\bar wz|^2-|w-z|^2
+=(1-|w|^2)(1-|z|^2).
+\]
+Hence if $|w|<1$ and $|z|<1$, the right-hand side is positive and therefore
+\[
+\left|\frac{w-z}{1-\bar wz}\right|<1.
+\]
+If either $|w|=1$ or $|z|=1$, the right-hand side is zero, giving equality of
+the two moduli and hence
+\[
+\left|\frac{w-z}{1-\bar wz}\right|=1.
+\]
+
+Now fix $w\in\mathbb D$ and write
+\[
+F(z)=\frac{w-z}{1-\bar wz}.
+\]
+The denominator does not vanish on $\mathbb D$, so $F$ is holomorphic there.
+Part (a) gives $F(\mathbb D)\subseteq\mathbb D$. Direct substitution gives
+\[
+F(0)=w,\qquad F(w)=0,
+\]
+and part (a) also gives $|F(z)|=1$ for $|z|=1$.
+
+Finally,
+\[
+F(F(z))=z.
+\]
+Indeed, substituting the formula for $F(z)$ and simplifying gives the identity.
+Thus $F$ is its own inverse, so it is bijective from $\mathbb D$ onto itself.
+Therefore $F\in\operatorname{Aut}(\mathbb D)$.
+:::

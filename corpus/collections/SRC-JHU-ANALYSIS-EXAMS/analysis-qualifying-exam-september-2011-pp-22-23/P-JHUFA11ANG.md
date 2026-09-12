@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANG
 kind: problem
-title: ", be the distribution function of a given , where Does tend to a limit as Give a"
+title: Small-level decay of the distribution function of an $L^p$ function
 classification:
   areas:
   - real-analysis
@@ -15,35 +15,68 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 7 of the September 2011 JHU analysis qualifying exam in the preserved compiled source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
-7. Let $\omega ( \alpha ) = | \{ x : | f ( x ) | > \alpha \} | , \alpha > 0$ , be the distribution function of a given $f \in$ $L ^ { p } ( \mathbb { R } ^ { n } )$ , where $p > 0$ Does $\alpha ^ { p } \omega ( \alpha )$ tend to a limit as $\alpha  0 + ?$ Give a proof or counterexample.
+::: problem
+Let
+\[
+\omega(\alpha)=m\{x\in\mathbb R^n:|f(x)|>\alpha\},\qquad \alpha>0,
+\]
+be the distribution function of $f\in L^p(\mathbb R^n)$, where $p>0$.
+Does $\alpha^p\omega(\alpha)$ tend to a limit as $\alpha\to0^+$? Give a proof or counterexample.
+:::
 
 ::: solution
-**Goal:** Determine the limit of $\alpha^p\omega(\alpha)$ as $\alpha\to0^+$.
+Yes. The limit exists and equals $0$.
 
-<1>1. Use layer-cake:
-    *Proof:*  
-    For nonnegative $|f|^p$,
-    \[
-    \int_{\mathbb R^n}|f|^p\,dx
-    =p\int_0^\infty \alpha^{p-1}\omega(\alpha)\,d\alpha<\infty
-    \]
-    and $\omega(\alpha)$ is decreasing in $\alpha$.
+<1>1. Use the layer-cake identity.
+::: proof
+For the nonnegative function $|f|^p$,
+\[
+\|f\|_p^p
+=p\int_0^\infty \alpha^{p-1}\omega(\alpha)\,d\alpha<\infty.
+\]
+Thus
+\[
+\int_0^a \alpha^{p-1}\omega(\alpha)\,d\alpha\longrightarrow0
+\qquad(a\downarrow0).
+\]
+:::
 
-<1>2. Show the limit is zero:
-    *Proof:*  
-    Suppose contrary that $\limsup_{\alpha\to0^+}\alpha^p\omega(\alpha)=\ell>0$.
-    Choose $\alpha_k\downarrow0$ with $\omega(\alpha_k)\ge \ell\alpha_k^{-p}/2$ and
-    $\alpha_{k+1}<\alpha_k/2$.
-    Then on $(\alpha_{k+1},\alpha_k)$,
-    $\omega(t)\ge \omega(\alpha_k)\ge \ell\alpha_k^{-p}/2$.
-    Hence
-    \[
-    \int_0^\infty t^{p-1}\omega(t)\,dt
-    \ge
-    \sum_{k\ge1}\int_{\alpha_{k+1}}^{\alpha_k} t^{p-1}\frac{\ell}{2}\alpha_k^{-p}\,dt
-    \ge \frac{\ell}{2p}(1-2^{-p})\sum_{k\ge1}1= \infty,
-    \]
-    contradicting finite $L^p$ norm. So $\lim_{\alpha\to0^+}\alpha^p\omega(\alpha)=0$.
+<1>2. Bound $\alpha^p\omega(\alpha)$ by a shrinking tail of that integral.
+::: proof
+The distribution function $\omega$ is decreasing. Hence for $t\in[\alpha/2,\alpha]$,
+\[
+\omega(t)\ge\omega(\alpha).
+\]
+Therefore
+\[
+\begin{aligned}
+\int_{\alpha/2}^{\alpha}t^{p-1}\omega(t)\,dt
+&\ge \omega(\alpha)\int_{\alpha/2}^{\alpha}t^{p-1}\,dt\\
+&=\frac{1-2^{-p}}p\,\alpha^p\omega(\alpha).
+\end{aligned}
+\]
+Consequently
+\[
+0\le \alpha^p\omega(\alpha)
+\le \frac{p}{1-2^{-p}}
+\int_0^\alpha t^{p-1}\omega(t)\,dt
+\longrightarrow0.
+\]
+Thus
+\[
+\boxed{\lim_{\alpha\to0^+}\alpha^p\omega(\alpha)=0.}
+\]
+:::
 :::

@@ -19,3 +19,52 @@ Show that every character $\chi$ of $B(n)$ takes values in $\{-1, 1\}$.
 
 (b) Explicitly describe the dual group of $B(n)$.
 :::
+
+::: solution
+There is a terminology issue in part (a). If ``character'' means the character of an arbitrary finite-dimensional representation, then the statement is false: for example, two copies of the trivial representation have character value $2$ at the identity. The statement is correct for **linear characters**, which is also the interpretation suggested by part (b), since the dual group consists of one-dimensional characters.
+
+The generators $\tau_1,\ldots,\tau_n$ are pairwise disjoint transpositions, so they commute and each has order $2$. Hence
+\[
+B(n)=\langle\tau_1\rangle\times\cdots\times\langle\tau_n\rangle
+\cong (\mathbb Z/2\mathbb Z)^n.
+\]
+Every element is uniquely
+\[
+\tau_1^{\varepsilon_1}\cdots\tau_n^{\varepsilon_n},
+\qquad \varepsilon_i\in\{0,1\}.
+\]
+
+Let $\chi:B(n)\to\mathbb C^\times$ be a linear character. Since $\tau_i^2=1$,
+\[
+\chi(\tau_i)^2=1,
+\]
+so $\chi(\tau_i)\in\{\pm1\}$. Therefore for every $g=\prod_i\tau_i^{\varepsilon_i}$,
+\[
+\chi(g)=\prod_i\chi(\tau_i)^{\varepsilon_i}\in\{\pm1\}.
+\]
+This proves the intended assertion in (a).
+
+For (b), for each subset $S\subseteq\{1,\ldots,n\}$ define
+\[
+\chi_S(\tau_i)=
+\begin{cases}
+-1,&i\in S,\\
+1,&i\notin S.
+\end{cases}
+\]
+Equivalently,
+\[
+\chi_S\!\left(\tau_1^{\varepsilon_1}\cdots\tau_n^{\varepsilon_n}\right)
+=(-1)^{\sum_{i\in S}\varepsilon_i}.
+\]
+Every linear character is obtained uniquely this way because its values on the generators determine it. Thus
+\[
+\widehat{B(n)}=\{\chi_S:S\subseteq\{1,\ldots,n\}\}
+\cong (\mathbb Z/2\mathbb Z)^n.
+\]
+Under multiplication of characters,
+\[
+\chi_S\chi_T=\chi_{S\triangle T},
+\]
+so the isomorphism with $(\mathbb Z/2\mathbb Z)^n$ is explicit.
+:::

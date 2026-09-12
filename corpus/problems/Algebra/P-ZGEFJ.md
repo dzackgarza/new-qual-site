@@ -14,33 +14,56 @@ review: draft
 ---
 
 ::: problem
-Here $I$ is a left ideal of $R$, $S$ is a nonempty subset of the $R\dash$module $A$, and
+Let $R$ be a ring, let $I\le R$ be a left ideal, let $A$ be a left $R$-module, and let $S\subseteq A$ be nonempty. Define
 \[
-IS \definedas \theset{ \sum_{i=1}^n r_i a_i \suchthat n\geq 1,\ r_i \in I,\ a_i \in S }
-.\]
+IS=\left\{\sum_{i=1}^n r_i a_i:n\ge1,\ r_i\in I,\ a_i\in S\right\}.
+\]
+Show that $IS$ is a submodule of $A$.
+:::
 
-$A$ carries no internal multiplication, so being a submodule is closure under addition and under the action of $R$, not closure under multiplication by elements of $A$.
-So we show
-$$
-x, y \in IS,~ r\in R \implies x + y \in IS \text{ and } rx \in IS.
-$$
-
-Closure under addition: concatenating the two sums
-$$
-x = \sum_{i=1}^n r_i a_i, \qquad y = \sum_{j=1}^m r_j' a_j'
-$$
-exhibits $x+y$ as another finite sum of the same shape, with all coefficients in $I$ and all module elements in $S$.
-
-For the action of $R$, let $r\in R$. Then
+::: solution
+Since $S$ is nonempty, choose $a\in S$. Then
 \[
-\begin{align*}
-rx &= r\left( \sum_{i=1}^n r_i a_i \right) \\
-&= \sum_{i=1}^n (r r_i) a_i
-,\end{align*}
+0=0\cdot a\in IS,
+\]
+so $IS$ is nonempty.
+
+Let
+\[
+x=\sum_{i=1}^n r_i a_i,
+\qquad
+y=\sum_{j=1}^m s_j b_j
+\]
+be elements of $IS$. Concatenating the two sums gives
+\[
+x+y
+=\sum_{i=1}^n r_i a_i+
+\sum_{j=1}^m s_j b_j\in IS.
 \]
 
-and $r r_i \in I$ for each $i$, because $I$ is a *left* ideal and is therefore closed under left multiplication by $R$.
-This exhibits $rx$ as an element of $IS$.
+If
+\[
+x=\sum_i r_i a_i,
+\]
+then, because $I$ is an additive subgroup,
+\[
+-x=\sum_i (-r_i)a_i\in IS.
+\]
+Hence $IS$ is an additive subgroup of $A$.
 
-Finally $IS \neq \emptyset$ since $S\neq\emptyset$, so $IS$ is a submodule of $A$.
+Finally, for $r\in R$,
+\[
+rx
+=r\sum_i r_i a_i
+=\sum_i (rr_i)a_i.
+\]
+Since $I$ is a left ideal,
+\[
+rr_i\in I.
+\]
+Therefore
+\[
+rx\in IS.
+\]
+Thus $IS$ is closed under the $R$-action and is a submodule of $A$.
 :::

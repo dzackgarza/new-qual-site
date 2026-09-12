@@ -127,6 +127,7 @@ source:
     - E-SS5.EX-4
     - E-SS5.EX-5
     - E-SS5.EX-6
+    - E-SS5.EX-7
     - E-SS5.EX-8
     - E-SS5.EX-9
   - name: Ch5 Problems

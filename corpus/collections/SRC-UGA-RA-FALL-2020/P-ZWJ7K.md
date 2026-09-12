@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 2 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Reviewed the pre-existing lower-semicontinuity proof; normalized the solution block and made explicit that the arbitrary supremum may be extended-real valued.
 ---
 
 ::: problem
@@ -31,30 +39,42 @@ Prove that if $\mathcal{F}$ is any family of lower semi-continuous functions, th
 $$
 g(x) = \sup\{ f(x) \mid f\in \mathcal{F}\}
 $$
-is Borel measurable.
+(viewed as an extended-real-valued function if the supremum is $+\infty$) is Borel measurable.
 
 > Note that $\mathcal{F}$ need not be a countable family.
 :::
-::: {.solution}
-<1>1. ($\Leftarrow$) If $\{f > a\}$ is open for all $a$, then $f(x) \le \liminf_{y\to x} f(y)$ for all $x$.
-::: {.proof}
-fix $x$ and $a < f(x)$.
+::: solution
+<1>1. Open strict superlevel sets imply lower semicontinuity.
+::: proof
+Assume $\{f>a\}$ is open for every $a\in\mathbb R$. Fix $x$ and $a<f(x)$. Since $x\in\{f>a\}$, every sequence $y_n\to x$ is eventually in $\{f>a\}$, so
+\[
+\liminf_{n\to\infty}f(y_n)\ge a.
+\]
+Letting $a\uparrow f(x)$ gives
+\[
+f(x)\le\liminf_{y\to x}f(y).
+\]
 :::
-Then $x \in \{f > a\}$, which is open, so any sequence $y_n \to x$ lies in $\{f > a\}$ eventually, i.e. $f(y_n) > a$ for all large $n$; hence $\liminf_{y\to x}f(y) \ge a$.
-Since $a < f(x)$ is arbitrary, $\liminf_{y\to x}f(y) \ge f(x)$.
-<1>2. ($\Rightarrow$) If $f(x) \le \liminf_{y\to x}f(y)$ for all $x$, then $\{f > a\}$ is open for all $a$.
-::: {.proof}
-suppose $\{f > a\}$ is not open for some $a$; then some $x \in \{f > a\}$ is not an interior point, so there is a sequence $y_n \to x$ with $f(y_n) \le a$ for all $n$ (points outside the set approaching $x$). Then $\liminf_{y\to x} f(y) \le a < f(x)$, contradicting the hypothesis.
+
+<1>2. Lower semicontinuity implies open strict superlevel sets.
+::: proof
+Assume $f(x)\le\liminf_{y\to x}f(y)$ at every $x$. If $\{f>a\}$ were not open, there would be $x\in\{f>a\}$ and a sequence $y_n\to x$ with $f(y_n)\le a$. Then
+\[
+\liminf_{n\to\infty}f(y_n)\le a<f(x),
+\]
+a contradiction. Thus $\{f>a\}$ is open.
 :::
-<1>3. (Part b) $g = \sup_{f\in\mathcal F} f$ satisfies $\{g > a\} = \cup_{f\in\mathcal F}\{f > a\}$.
-::: {.proof}
-$g(x) > a$ iff $f(x) > a$ for some $f \in \mathcal F$, which is exactly $x \in \cup_{f\in\mathcal F}\{f > a\}$.
+
+<1>3. Take an arbitrary supremum.
+::: proof
+Let
+\[
+g(x)=\sup_{f\in\mathcal F}f(x),
+\]
+possibly with value $+\infty$. For every real $a$,
+\[
+\{g>a\}=\bigcup_{f\in\mathcal F}\{f>a\}.
+\]
+Every set on the right is open because each $f$ is lower semicontinuous, and arbitrary unions of open sets are open. Hence $g$ is lower semicontinuous as an extended-real-valued function. In particular all strict superlevel sets $\{g>a\}$ are Borel, so $g$ is Borel measurable.
 :::
-<1>4. $g$ is lower semi-continuous, hence Borel measurable.
-::: {.proof}
-each $\{f > a\}$ is open (<1>1, <1>2, since each $f$ is l.s.c.), so by <1>3, $\{g > a\}$ is an arbitrary union of open sets, hence open.
-:::
-Thus $g$ satisfies the l.s.c. condition, so $g$ is l.s.c.; in particular each $\{g > a\}$ is open, so $g$ is Borel measurable.
-(No countability of $\mathcal F$ is needed: arbitrary unions of open sets are open.)
-<1>5. Q.E.D.
 :::

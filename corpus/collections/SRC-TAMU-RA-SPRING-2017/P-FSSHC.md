@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-04
-  note: The TAMU source specifies convergent sequences of real numbers; its retained solution explicitly left the closed-convex-hull part unresolved.
+  note: The TAMU source specifies convergent sequences of real numbers; the legacy/source solution omitted the closed-convex-hull argument, which the current card supplies in Steps 4--6.
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-04

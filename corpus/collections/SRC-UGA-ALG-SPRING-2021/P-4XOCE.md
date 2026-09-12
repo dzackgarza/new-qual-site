@@ -69,3 +69,13 @@ p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
 - $\union C_{i_j} = H$, so $H \subseteq Z(G)$.
 
 :::
+
+::: solution
+Because $|H|=p$ is prime, $H\cong C_p$. Conjugation by $G$ on $H$ gives a homomorphism
+\[
+\varphi:G\longrightarrow \operatorname{Aut}(H)\cong C_{p-1}.
+\]
+Hence $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$. Every prime divisor of $|\operatorname{im}\varphi|$ therefore divides $|G|$, so by minimality of $p$ it is at least $p$; but it also divides $p-1$. Thus $|\operatorname{im}\varphi|=1$.
+
+Therefore conjugation by every $g\in G$ acts trivially on $H$. Equivalently, $ghg^{-1}=h$ for all $g\in G$ and $h\in H$, so $H\subseteq Z(G)$.
+:::

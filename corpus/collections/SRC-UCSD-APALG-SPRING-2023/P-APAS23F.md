@@ -23,3 +23,26 @@ R(v) := \frac{1}{|D_4|} \sum_{g \in D_4} g \cdot v
 for all $v \in \mathbb{C}[X]$.
 What is the rank of the linear operator $R$?
 :::
+
+::: solution
+The Reynolds operator is the averaging idempotent onto the invariant subspace:
+\[
+\operatorname{im}R=\mathbb C[X]^{D_4}.
+\]
+For a permutation representation, the invariant functions are exactly those that are constant on each orbit. Hence
+\[
+\operatorname{rank}R=\dim \mathbb C[X]^{D_4}
+\]
+is the number of $D_4$-orbits on $X$.
+
+For the $3\times3$ board there are exactly three orbits under the square symmetries:
+
+- the center square;
+- the four corner squares;
+- the four edge-midpoint squares.
+
+Therefore
+\[
+\boxed{\operatorname{rank}R=3.}
+\]
+:::

@@ -1110,6 +1110,22 @@ source:
       comment: Hoffman and Kunze 10.2.9
     - id: E-HK-102-10
       comment: Hoffman and Kunze 10.2.10
+    - id: E-HK-102-11
+      comment: Hoffman and Kunze 10.2.11
+    - id: E-HK-102-12
+      comment: Hoffman and Kunze 10.2.12
+    - id: E-HK-102-13
+      comment: Hoffman and Kunze 10.2.13
+    - id: E-HK-102-14
+      comment: Hoffman and Kunze 10.2.14
+    - id: E-HK-102-15
+      comment: Hoffman and Kunze 10.2.15
+    - id: E-HK-102-16
+      comment: Hoffman and Kunze 10.2.16
+    - id: E-HK-102-17
+      comment: Hoffman and Kunze 10.2.17
+    - id: E-HK-102-18
+      comment: Hoffman and Kunze 10.2.18
   - name: '10.3'
     problems:
     - id: E-HK-103-1

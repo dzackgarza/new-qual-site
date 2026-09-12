@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: openai-gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -28,41 +31,13 @@ Why is $k[x]$ a PID? If two matrices are conjugate over the algebraic closure of
 :::
 
 ::: {.solution}
-**Goal.** Explain how to test conjugacy of matrices, the theorem used, and answer the algebraic-closure question.
+For $A\in M_n(k)$, make $k^n$ a $k[x]$-module by $x\cdot v=Av$. Then $A$ and $B$ are similar over $k$ iff the corresponding $k[x]$-modules are isomorphic. Since $k[x]$ is Euclidean (degree is a Euclidean function), it is a PID, and the structure theorem for finitely generated modules over a PID gives the invariant factors. Equivalently, these give the rational canonical form, which is a complete similarity invariant.
 
-<1>1. Two matrices $A, B \in M_n(k)$ are conjugate iff they have the same rational canonical form.
-::: {.proof}
-the rational canonical form is a complete invariant of conjugacy (similarity) over $k$.
-:::
+Thus one tests similarity by comparing the invariant factors (or rational canonical forms) of $A$ and $B$.
 
-<1>2. The theorem is the structure theorem for finitely generated modules over a PID. <2>1. $k[x]$ is a PID.
-::: {.proof}
-$k[x]$ is a Euclidean domain (polynomial division), and every Euclidean domain is a PID. <2>2. $M_n(k)$-conjugacy of $A$ and $B$ is equivalent to $k[x]$-module isomorphism of $k^n$ with $x$ acting as $A$ and as $B$.
-:::
-::: {.proof}
-a matrix $A$ makes $k^n$ into a $k[x]$-module via $x \cdot v = Av$; two matrices are conjugate iff the corresponding modules are isomorphic.
-:::
-<2>3. The structure theorem decomposes a finitely generated $k[x]$-module into invariant factors, which determine the rational canonical form.
-::: {.proof}
-the invariant factors are the elementary divisors, giving the rational canonical form.
-:::
-
-<1>3. Conjugacy over $\bar k$ implies conjugacy over $k$.
-<2>1. The rational canonical form of a matrix is computed from the invariant factors of $xI - A$ in $k[x]$.
-::: {.proof}
-the invariant factors are the diagonal entries of the Smith normal form of $xI - A$ over $k[x]$.
-:::
-<2>2. These invariant factors are polynomials in $k[x]$, and computing them over $\bar k[x]$ gives the same polynomials.
-::: {.proof}
-the Smith normal form of $xI - A$ is the same whether computed over $k[x]$ or $\bar k[x]$ (the invariant factors are monic polynomials in $k[x]$, and the computation is field-independent).
-:::
-<2>3. Hence if $A$ and $B$ are conjugate over $\bar k$, they have the same rational canonical form, so they are conjugate over $k$.
-::: {.proof}
-conjugacy over $\bar k$ forces the same invariant factors, hence the same rational canonical form, hence conjugacy over $k$.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>1 and <1>2 explain the test; <1>3 answers the algebraic-closure question (yes).
-:::
+Moreover, if $A,B\in M_n(k)$ become similar over an extension field $K/k$—in particular over $\bar k$—then they were already similar over $k$. One clean proof uses ranks: for every $f\in k[x]$ and every $r\ge1$, similarity over $K$ gives
+\[
+\operatorname{rank}_K f(A)^r=\operatorname{rank}_K f(B)^r.
+\]
+A matrix with entries in $k$ has the same rank after scalar extension, so the corresponding ranks over $k$ are equal. Applying this to powers of each irreducible factor recovers the elementary divisors, hence the invariant factors, of $A$ and $B$. Therefore their rational canonical forms over $k$ coincide.
 :::

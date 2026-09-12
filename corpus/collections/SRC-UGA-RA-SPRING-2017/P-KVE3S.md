@@ -12,54 +12,58 @@ classification:
   - Completeness
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against the UGA Spring 2017 real-analysis qualifying exam recorded by SRC-UGA-RA-SPRING-2017.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-Show that the space $C^1([a, b])$ is a Banach space when equipped with the norm
+
+::: problem
+Show that the space $C^1([a,b])$ is a Banach space when equipped with the norm
 \[
-\|f\|:=\sup _{x \in[a, b]}|f(x)|+\sup _{x \in[a, b]}\left|f^{\prime}(x)\right|.
+\|f\|:=\sup_{x\in[a,b]}|f(x)|+\sup_{x\in[a,b]}|f'(x)|.
 \]
-
-:::{.concept}
-- See 
-[this Math.StackExchange proof that the space is Banach](https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space/)
 :::
 
-:::{.solution}
-\envlist
+::: solution
+Let $(f_n)$ be Cauchy in this norm. Then both $(f_n)$ and $(f_n')$ are Cauchy in the uniform norm on $[a,b]$. Since $C([a,b])$ is complete, there exist continuous functions $f,g$ such that
+\[
+f_n\to f,
+\qquad
+f_n'\to g
+\]
+uniformly on $[a,b]$.
 
-- Denote this norm $\norm{\wait}_u$
-
-- Let $f_n$ be a Cauchy sequence in this space, so $\norm{f_n}_u < \infty$ for every $n$ and $\norm{f_j - f_k}_u \converges{j, k\to\infty}\to 0$.
-
-and define a candidate limit: for each $x\in I$, set \[f(x) \definedas \lim_{n\to\infty} f_n(x).\]
-
-- Note that 
-\[ 
-\norm{f_n}_\infty &\leq \norm{f_n}_u < \infty \\
-\norm{f_n'}_\infty &\leq \norm{f_n}_u < \infty
-.\]
-
-  - Thus both $f_n, f_n'$ are Cauchy sequences in $C^0([a, b], \norm{\wait}_\infty)$, which is a Banach space, so they converge.
-
-- So 
-  - $f_n \to f$ uniformly (by uniqueness of limits), 
-  - $f_n' \to g$ uniformly for some $g$, and
-  - $f, g\in C^0([a, b])$.
-
-- Claim: $g = f'$
-  - For any fixed $a\in I$, we have
-  \[
-  f_n(x) - f_n(a) \quad &\converges{u}\to f(x) - f(a) \\
-  \int_a^x f'_n  \quad &\converges{u}\to \int_a^x  g
-  .\]
-  - By the FTC, the left-hand sides are equal.
-  - By uniqueness of limits so are the right-hand sides, so $f' = g$.
-
-- Claim: the limit $f$ is an element in this space.
-  - Since $f, f'\in C^0([a, b])$, they are bounded, and so $\norm{f}_u < \infty$. 
-
-- Claim: $\norm{f_n - f}_u \converges{n\to\infty}\to 0$
-
-- Thus the Cauchy sequence $\theset{f_n}$ converges to a function $f$ in the $u\dash$norm where $f$ is an element of this space, making it complete.
+Fix $x\in[a,b]$. By the Fundamental Theorem of Calculus,
+\[
+f_n(x)-f_n(a)=\int_a^x f_n'(t)\,dt.
+\]
+Passing to the limit, using uniform convergence on both sides, gives
+\[
+f(x)-f(a)=\int_a^x g(t)\,dt.
+\]
+Because $g$ is continuous, the Fundamental Theorem of Calculus implies
+\[
+f\in C^1([a,b])
+\qquad\text{and}\qquad
+f'=g.
+\]
+Therefore
+\[
+\|f_n-f\|
+=\|f_n-f\|_\infty+\|f_n'-f'\|_\infty
+\longrightarrow0.
+\]
+Thus every Cauchy sequence converges in the given norm, so
+\[
+\boxed{C^1([a,b])\text{ is Banach}.}
+\]
 :::
-

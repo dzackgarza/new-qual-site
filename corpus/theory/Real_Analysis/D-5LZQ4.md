@@ -12,9 +12,11 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
+::: {.definition}
+For $f\in L^1(\mathbb R^n)$, its Fourier transform is
 \[
-\hat f(\xi) = \int f(x) ~e^{2\pi i x \cdot \xi} ~dx
-.\]
-
+\widehat f(\xi)
+:=\int_{\mathbb R^n} f(x)e^{-2\pi i x\cdot\xi}\,dx,
+\qquad \xi\in\mathbb R^n.
+\]
 :::

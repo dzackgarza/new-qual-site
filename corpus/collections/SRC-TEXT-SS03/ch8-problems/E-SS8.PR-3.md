@@ -10,6 +10,10 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 ::: exercise
@@ -65,4 +69,92 @@ d (0, s) = \frac{1}{2} \log \frac{1 + s}{1 - s}.
 $$
 
 (e) Find a formula for the hyperbolic distance between any two points in the unit disc.
+:::
+
+::: solution
+The Schwarz--Pick lemma says
+\[
+\frac{|f'(z)|}{1-|f(z)|^2}\le \frac1{1-|z|^2}.
+\tag{1}
+\]
+Hence for every smooth curve $\gamma$ in $\mathbb D$,
+\[
+\frac{|(f\circ\gamma)'(t)|}{1-|f(\gamma(t))|^2}
+\le
+\frac{|\gamma'(t)|}{1-|\gamma(t)|^2}.
+\]
+Integrating and taking the infimum over all curves joining $z_1$ to $z_2$ gives
+\[
+d(f(z_1),f(z_2))\le d(z_1,z_2).
+\]
+This proves (a).
+
+If $\varphi$ is an automorphism, apply (a) to $\varphi$ and then to $\varphi^{-1}$ to obtain both inequalities, hence
+\[
+d(\varphi(z_1),\varphi(z_2))=d(z_1,z_2).
+\tag{2}
+\]
+
+For (c), first use
+\[
+\phi_{z_1}(z)=\frac{z-z_1}{1-\overline{z_1}z},
+\]
+which sends $z_1$ to $0$. If $\phi_{z_1}(z_2)=re^{i\theta}$, compose with the rotation $e^{-i\theta}z$. The resulting automorphism sends $z_1$ to $0$ and $z_2$ to $r\in[0,1)$.
+
+For (d), let $\gamma(t)=r(t)e^{i\theta(t)}$ join $0$ to $s$. Then
+\[
+|\gamma'(t)|\ge |r'(t)|,
+\]
+so
+\[
+\int_0^1\frac{|\gamma'(t)|}{1-|\gamma(t)|^2}\,dt
+\ge
+\int_0^1\frac{|r'(t)|}{1-r(t)^2}\,dt
+\ge
+\left|\int_0^1\frac{r'(t)}{1-r(t)^2}\,dt\right|.
+\]
+Since $r(0)=0$ and $r(1)=s$, the last term is
+\[
+\int_0^s\frac{dr}{1-r^2}
+=\frac12\log\frac{1+s}{1-s}.
+\]
+Equality is attained by the radial segment $\gamma(t)=ts$. Hence
+\[
+d(0,s)=\frac12\log\frac{1+s}{1-s}.
+\tag{3}
+\]
+
+For arbitrary $z,w$, by (2) and (c),
+\[
+d(z,w)=d\left(0,\left|\frac{z-w}{1-\overline w z}\right|\right).
+\]
+Therefore, writing
+\[
+\delta(z,w)=\left|\frac{z-w}{1-\overline w z}\right|,
+\]
+we obtain
+\[
+\boxed{d(z,w)=\frac12\log\frac{1+\delta(z,w)}{1-\delta(z,w)}}.
+\tag{4}
+\]
+This proves (e).
+
+It remains to prove the converse in (b). Let $T:\mathbb D\to\mathbb D$ preserve hyperbolic distance. Formula (4) shows that it also preserves $\delta$. Choose a disk automorphism $A$ with $A(T(0))=0$ and set $S=A\circ T$. Then $S$ preserves $\delta$ and fixes $0$. Since
+\[
+\delta(0,z)=|z|,
+\]
+we have $|S(z)|=|z|$.
+
+For $z,w$ with $|z|=r$, $|w|=s$, write $c=\cos(\arg z-\arg w)$. Then
+\[
+\delta(z,w)^2=\frac{r^2+s^2-2rsc}{1+r^2s^2-2rsc}.
+\tag{5}
+\]
+For fixed $r,s<1$, the right side determines $c$ uniquely. Because $S$ preserves $r,s$ and $\delta$, it preserves $c$, hence preserves the Euclidean inner product and therefore Euclidean distance. Thus $S$ is a Euclidean isometry of the disk fixing $0$. Such a map is the restriction of an orthogonal linear map of $\mathbb R^2$, hence has one of the forms
+\[
+S(z)=e^{i\theta}z
+\qquad\text{or}\qquad
+S(z)=e^{i\theta}\overline z.
+\]
+Consequently $T=A^{-1}\circ S$ is either a disk automorphism or the conjugate of one. Equivalently, either $T$ or $\overline T$ is an automorphism of $\mathbb D$.
 :::

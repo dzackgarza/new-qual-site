@@ -1,3 +1,12 @@
+# Repository work documents
+
+Read [TODO.md](TODO.md) for the task DAG,
+[CONTRIBUTING.md](CONTRIBUTING.md#named-policies) for named contribution policies,
+and [COMPLAINTS.md](COMPLAINTS.md) for mathematical issues and workflow papercuts.
+Apply `QUAL-05` when a problem is encountered, including outside the selected card.
+Record the evidence before leaving that work; logging does not complete a repair.
+These documents apply to every stream working in the clone.
+
 <!-- agent-memory:start -->
 # Agent memory
 
@@ -292,6 +301,69 @@ Do not use scripts, loops, templates, bulk edits, or generators to produce
 authored data. Never derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
 reading and mathematical judgment.
+
+## A disposition is not a unit of work
+
+Deciding that a source is reference-only, ticking a queue entry, closing a defect record,
+normalising whitespace across a collection: none of this is authored content, and none of it is
+a unit of work. The unit of work in this repository is a card, a solution, a source properly
+carded. A session whose output is dispositions has produced a tidier queue and no mathematics.
+
+This matters here more than elsewhere because the queue is long and dispositioning is easy. It
+is always possible to spend a session deciding about sources rather than carding them, and the
+queue counts will move the whole time. On 2026-09-12 a worker described folding a queue
+disposition into a commit as its next unit of work, and separately produced commits titled
+"bank" that moved the dirty count by one file.
+
+So: fold the queue disposition into the commit carrying the cards it describes, never commit it
+alone, and never let a turn end with dispositions as its only product. If a source genuinely
+needs no cards, say so in the commit that finishes the source before it, and move to one that
+does.
+
+## Your queues are a product, and a wrong one costs cards
+
+The files under `queues/` and the output of `just unsolved` are what say which source is next
+and which card is still unsolved. They are instruments, not notes: a queue whose counts are
+wrong sends the next worker to the wrong source, and an unsolved-card list that cannot tell a
+solved card from an unsolved one means nobody can see what the corpus still owes.
+
+They are also routinely wrong in a specific way — OCR-derived problem counts. A queue entry
+saying a PDF holds four problems when it holds fourteen is not a small error; it decides how
+many cards get authored. Count from the source document, never from the inventory, and when
+they disagree, correct the queue in the commit that cards the source.
+
+Treat a queue defect as work, not as noise to steer around. If the regeneration is wrong, fix
+the regenerator; if an entry is unreadable, resolve it rather than skipping past it; if the
+list disagrees with the corpus, find out which is lying before authoring against either.
+
+## Review your own session for drift
+
+Before starting a new source, look back at the one you just finished and ask what it produced:
+
+- **Cards and solutions, or dispositions and normalisations?** The former is the product. A
+  session whose output is decisions about sources has left the corpus the same size.
+- **Did the corpus counts move?** If `just unsolved` and the queue counts are unchanged while
+  commits landed, the commits were not authoring.
+- **Is something making every source cost more than it should?** An extraction step you redo by
+  hand each time, a check that reformats files you did not touch, a count you have learned not
+  to trust. That is an obstruction, and working around it silently is how it survives to cost
+  the next worker the same.
+
+Fix the obstruction where it lives, with its regression, and note it in the queue.
+
+## Repair the tooling that wastes your turns
+
+When the same friction appears twice, stop and fix it at its owner rather than working around
+it. The formatter that reflowed seventy-six sibling cards on every pathspec commit was not a
+quirk to route around — it made `git status` unreadable, which is the condition under which
+authored work goes missing unnoticed, and this repository has already lost 962 authored lines
+that way. It was a four-line defect in a shared formatter that had been costing every commit
+for days.
+
+The same applies to an OCR count that is routinely wrong, an extraction path that silently
+truncates, a check that cannot distinguish a solved card from an unsolved one. Fix it where it
+lives, commit the fix with its regression, and note it in the queue. A workaround you carry in
+your head is a defect the next worker meets fresh.
 
 ## Public audience and remarks
 
@@ -628,14 +700,107 @@ When a generation changes the file, commit the diff in the next commit.
 The queues are candidates to read — a measurement that disappears is not a
 disposition, so record the reason in `TODO.md`.
 
+## Reconcile queues across all agent branches before claiming
+
+Every stream solves on `main`, so a queue is stale the moment a sibling commits.
+Before claiming cards from a queue (`queues/C-unsolved-cards.md` and its siblings),
+regenerate it against the working tree as it stands now. Never claim from a queue
+you read before your last pull; a stale queue produces duplicate solving of the
+same card.
+All authoring requires a live claim against the reconciled queue —
+batch-committing cards authored off-queue is prohibited. Reconcile again at
+release so the queue the next agent reads reflects the work just delivered.
+
+# One checkout, one branch
+
+**Streams work directly on `main` in the single clone. Do not create worktrees and
+do not create branches.**
+
+This repository is authored content. A stream writes solutions, hints and wiki prose
+into card files it selected off a queue, and two streams never hold the same card —
+so there is nothing for a branch to isolate and nothing for a merge to resolve. The
+isolation apparatus was not protecting the work; it was protecting against a fear.
+
+The fear is `git commit -a` sweeping in a sibling stream's concurrent edit. That is
+not a conflict and not lost work: the other stream's change is already on disk and
+already correct, and the only thing wrong is the message describing it. Fix the
+message:
+
+```bash
+git commit --amend        # your commit swept in a sibling's card
+```
+
+Or commit the paths you meant in the first place, which `QUAL-07` already requires:
+
+```bash
+git commit -- corpus/problems/Algebra/P-XXXXX.md
+```
+
+Neither costs anything. A worktree per stream costs a second checkout of the whole
+corpus — 353 MB of tracked assets each — to carry a handful of edited markdown files.
+Twenty-seven of them filled the volume on 2026-09-10 while holding forty-four changed
+files between them, and a full volume presents as killed processes and dying exec
+sessions rather than as a disk error, so it reads as worker misbehaviour for hours
+before anyone runs `df`.
+
+There is one environment, the main checkout's `.venv`, created with
+`uv sync --group dev` and used directly. No `UV_PROJECT_ENVIRONMENT`, no
+`UV_NO_SYNC`, no `PYTHONPATH` override — those existed solely to stop worktrees
+fighting over one editable install, and with one checkout there is nothing to point
+anywhere.
+
+## Worktrees that already exist
+
+Some remain from before this rule. They are not debris and must not be removed on
+sight: another stream's authoring is live until three readings say otherwise, taken
+immediately before the removal and never carried over from an earlier survey.
+
+```bash
+git -C PATH --no-optional-locks status --short                     # 1. clean
+git merge-base --is-ancestor "$(git -C PATH rev-parse HEAD)" HEAD  # 2. reachable
+pgrep -a -f PATH                                                   # 3. no process
+```
+
+Reading 1 fails on any output at all — staged or unstaged, tracked or untracked. An
+uncommitted card is somebody's unbanked authoring, and a `.orig` file beside it is the
+evidence of a merge they are still resolving. Reading 2 asks whether every commit on
+that worktree's branch is already in `main`; run it from the main checkout, whose
+`HEAD` is the reference. Reading 3 discards the checking shell's own PID, and
+`pgrep -f` matches on substring, so a probe for `sp19` also matches `sp19-audit2` —
+read the command lines it prints rather than counting them.
+
+When all three pass:
+
+```bash
+git worktree remove .worktrees/<name>
+git worktree prune
+```
+
+When any one fails, leave it in place and report it. Re-take all three for each
+worktree at the point of removal rather than acting on a list. Worktrees outside the
+repository are outside this rule; report them and do not remove them.
+
 # Running checks
 
-Most checks already run for you: the commit gate runs the immediate
-checks, and the push gate runs the full suite and refreshes `BACKLOG.md`
-first. Run `qualc check`, `pytest`, or any measurement tool by hand only
-sparingly — for instance while iterating on one known defect. Otherwise
-take work from the queues, do the semantic work on the cards, and commit
-as normal; the gates prove consistency.
+For prose-only changes, including authored mathematical solutions, inspect the
+diff and review the mathematics, then use `git commit --no-verify`. Commit each
+completed card before selecting the next one. This is the authorized docs-only
+exemption from automated verification, including the Git skill's hook rule.
+Do not run builds, test suites, broad formatters, or queue regeneration for
+these commits. Adding a solution and its audit entry is authored content.
+
+Code, renderer, schema, executable configuration, and mixed code/content
+changes use the normal commit and push gates. Use focused checks while
+investigating a specific defect; let those gates run the broader checks.
+
+## A red gate is the current task
+
+The first time a commit or push gate, hook, or check goes red, stop authoring
+and diagnose it: root-cause and fix the gate, or report it as a blocker with a
+reproducer. Never continue authoring cards behind a red gate, and never
+accumulate uncommitted work around one. A gate that is red on two consecutive
+commit attempts is a defect to diagnose, not an environment condition to wait
+out.
 
 # Citation policy
 
@@ -719,14 +884,16 @@ workflow are deliberately separate:
 
 - `queues/C-unsolved-cards.md` — the measurement. It lists every problem card
   with no `solution` section.
-  Regenerated by `just unsolved` and by the commit gate whenever a commit
-  touches the corpus. A card leaves the list only by gaining a solution; the
-  boxes are a measurement, not a ledger.
+  Regenerated by `just unsolved` and by non-bypassed corpus commit gates.
+  Prose-only commits leave this measurement at its last refresh; read the
+  candidate card before selecting it. A card leaves the list only by gaining
+  a solution; the boxes are a measurement, not a ledger.
 - `TODO.md` §7, "Author solutions", together with issue #2 — the authored
   repeating loop. Select one unsolved card, read the problem and its source,
   independently verify any retained source solution, write a complete
   Lamport-style structured proof in a `solution` section on that same problem
-  card, and commit it before selecting the next card.
+  card, and commit it before selecting the next card using the prose-only
+  route in [Running checks](#running-checks).
 
 `just sample-unsolved` draws n random unsolved cards (default 5) by querying
 the catalog for problem cards with no solution section. The solution

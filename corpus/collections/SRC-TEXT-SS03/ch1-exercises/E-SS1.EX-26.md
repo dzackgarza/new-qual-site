@@ -9,6 +9,10 @@ classification:
   topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: exercise
@@ -64,4 +68,24 @@ The theory developed up to that point already has a number of noteworthy consequ
 
 <sub>•</sub> The property at the base of “analytic continuation,” namely that a holomorphic function is determined by its restriction to any open subset of its domain of definition.
 This is a consequence of the fact that holomorphic functions have power series expansions.
+:::
+
+::: solution
+Let $F$ and $G$ be primitives of $f$ on the region $\Omega$, and set $H=F-G$. Then
+\[
+H'(z)=F'(z)-G'(z)=f(z)-f(z)=0
+\]
+for every $z\in\Omega$.
+
+Fix $z_0\in\Omega$. Since $\Omega$ is open, some disc $D(z_0,r)$ lies in $\Omega$. For any $z\in D(z_0,r)$, the segment
+\[
+\gamma(t)=z_0+t(z-z_0),\qquad 0\le t\le1,
+\]
+lies in the disc. The function $t\mapsto H(\gamma(t))$ has derivative
+\[
+H'(\gamma(t))(z-z_0)=0,
+\]
+so it is constant. Thus $H(z)=H(z_0)$ throughout $D(z_0,r)$. Hence $H$ is locally constant on $\Omega$.
+
+A locally constant function on a connected set is constant: for any value $c$, the level set $H^{-1}(c)$ is both open and closed. Since a region is connected, the nonempty level set containing $z_0$ must be all of $\Omega$. Therefore $F-G$ is constant on $\Omega$.
 :::

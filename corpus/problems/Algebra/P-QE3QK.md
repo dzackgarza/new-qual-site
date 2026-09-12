@@ -15,11 +15,19 @@ review: draft
 ---
 
 ::: problem
-By definition, $G$ is simple iff its only normal subgroups are $1$ and $G$, so we will show that if $\abs G = 148$ then it contains a proper nontrivial normal subgroup.
+Prove that no group of order $148$ is simple.
+:::
 
-Noting that $148 = p^2 q$ where $p=2, q = 37$, Sylow gives $n_{37} \divides 4$ and $n_{37} \equiv 1 \mod 37$.
-The divisors of $4$ are $1, 2, 4$, and neither $2$ nor $4$ is congruent to $1$ modulo $37$, so $n_{37} = 1$.
-So $G$ has a normal Sylow $37\dash$subgroup, which is proper and nontrivial, and we are done.
-
-The Sylow $2\dash$subgroup does not settle this on its own: $n_2 \divides 37$ and $n_2$ is odd, and both $1$ and $37$ satisfy that.
+::: {.solution}
+Let $|G|=148=2^2\cdot37$. If $n_{37}$ denotes the number of Sylow $37$-subgroups, Sylow's theorem gives
+\[
+n_{37}\equiv1\pmod{37},
+\qquad
+n_{37}\mid4.
+\]
+Among the divisors $1,2,4$ of $4$, only $1$ is congruent to $1$ modulo $37$. Hence
+\[
+n_{37}=1.
+\]
+Therefore the Sylow $37$-subgroup is unique and hence normal. It is nontrivial and proper, so $G$ is not simple.
 :::

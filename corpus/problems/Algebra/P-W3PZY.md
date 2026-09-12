@@ -16,34 +16,41 @@ review: draft
 ---
 
 ::: problem
-Let $f(x) \in F[x]$ be irreducible, then since $p(x) \definedas \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
-
-If $p(x) = 1$, then $f$ is separable, so every root is distinct and $f$ itself is of the form $f(x^{p^e})$ where each $e=0$.
-
-Otherwise, $p(x) = f(x)$, which forces $f'(x) = 0$ in $K[x]$.
-If we write
+Let $F$ be a field of characteristic $p>0$ and let $f\in F[x]$ be irreducible. Show that there are a unique integer $e\ge0$ and an irreducible separable polynomial $g\in F[x]$ such that
 \[
-\begin{align*}
-f(x) &= \sum_{k=0}^n a_k a^k \\
-f'(x) &= \sum_{k=1}^n k a_k a^{k-1} \\
-,\end{align*}
+f(x)=g(x^{p^e}),
 \]
-then $f'(x) \equiv 0$ forces either $a_k = 0$, or $k = 0$ in $F$ (so $p \divides k$).
+and that every root of $f$ in an algebraic closure has multiplicity $p^e$.
+:::
 
-We can thus rewrite $f$ by leaving out all terms where $a_k = 0$ to obtain
-$$
-f(x) = a_p x^p + a_{2p} x^{2p} + \cdots
-$$
-and we thus define
-$$
-g(x) \definedas a_p x + a_{2p}x^{2} + \cdots 
-$$
+::: solution
+Choose $e\ge0$ maximal such that every exponent occurring in $f$ is divisible by $p^e$. Then there is a unique polynomial $g\in F[x]$ with
+\[
+f(x)=g(x^{p^e}).
+\]
 
-and we recover $f(x) = g(x^p)$.
-Moreover, $g$ is irreducible; otherwise if $h(x) \divides g(x)$ then $h(x^p) \divides g(x^p) = f$, where $f$ was assumed irreducible.
-If $g$ is separable we are done; otherwise $g$ fulfills the same hypotheses of that applied to $f$, so we can inductively continue this process to write $g(x) = g_1(x^p)$, and thus $f(x) = g(x^p) = g_1(x^{p^2})$, and so on.
+The polynomial $g$ is irreducible. Indeed, if $g=uv$ with nonconstant $u,v\in F[x]$, then
+\[
+f(x)=u(x^{p^e})v(x^{p^e})
+\]
+would be a nontrivial factorization of $f$.
 
-To see that every root of $f$ has multiplicity $p^e$, note that if $f(\alpha) = 0$ then $g(\alpha^{p^e}) = 0$.
-But $g$ is separable, so $(x - \alpha^{p^e}) \divides g(x)$ in $K[x]$ and thus $(x^{p^e} - \alpha^{p^e}) \divides g(x^{p^e}) = f$ in $\overline{K}[x]$ where $\overline K$ is an algebraic closure of $K$.
-But then $x^{p^e} - \alpha^{p^e} = (x-\alpha)^{p^e} \divides f(x)$, which precisely says that $\alpha$ is a root of multiplicity $p^e$.
+By maximality of $e$, not every exponent occurring in $g$ is divisible by $p$. Hence $g'\ne0$. Since $g$ is irreducible, $\gcd(g,g')=1$, so $g$ is separable.
+
+Now work in an algebraic closure $\overline F$. Since $g$ is separable,
+\[
+g(y)=a\prod_{i=1}^r(y-\beta_i)
+\]
+with distinct $\beta_i$. For each $i$, choose $\alpha_i\in\overline F$ with $\alpha_i^{p^e}=\beta_i$. In characteristic $p$,
+\[
+x^{p^e}-\beta_i=x^{p^e}-\alpha_i^{p^e}=(x-\alpha_i)^{p^e}.
+\]
+Therefore
+\[
+f(x)=g(x^{p^e})
+=a\prod_{i=1}^r(x-\alpha_i)^{p^e}.
+\]
+Thus every root of $f$ has multiplicity exactly $p^e$.
+
+Uniqueness of $e$ follows from maximality of the common $p$-power dividing all occurring exponents; then $g$ is forced coefficient-by-coefficient.
 :::

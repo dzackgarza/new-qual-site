@@ -16,6 +16,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -25,38 +31,43 @@ Show that $H$ is a **free group**.
 :::
 
 ::: solution
-**Goal:** Prove that the subgroup $H \le G = F(a, b)$ is free, either by applying the Nielsen–Schreier Theorem or by constructing an explicit covering space/free basis.
+<1>1. Since $G=F(a,b)$ is a free group and $H\le G$, the Nielsen--Schreier theorem already implies that $H$ is free.
 
-<1>1. Method 1: The Nielsen–Schreier Subgroup Theorem:
-    *Proof:*
-    <2>1. $G = \langle a, b \rangle$ is a free group on two generators.
-    <2>2. $H$ is a subgroup of $G$ ($H \le G$).
-    <2>3. By the **Nielsen–Schreier Theorem** (topologically: the fundamental group of any covering space of a 1-dimensional CW complex / graph $S^1 \vee S^1$ is the fundamental group of a graph, hence free):
-        $$\text{Every subgroup of a free group is free}.$$
-    <2>4. Since $H \le G$ is a subgroup of the free group $G$, the Nielsen–Schreier theorem (<2>3) applies directly to $H$, so $H$ is a **free group**.
+<1>2. In fact the displayed generators form a free basis. Define
+$$
+\varphi:F(a,b)\longrightarrow\mathbb Z,
+\qquad
+\varphi(a)=\varphi(b)=1.
+$$
+Then
+$$
+\varphi(x_i)=i-1+(1-i)=0,
+$$
+so $H\le K:=\ker\varphi$.
 
-<1>2. Method 2: Geometric Realization via Covering Spaces and Tree of Generators:
-    *Proof:*
-    <2>1. Let $X = S^1_a \vee S^1_b$ be the bouquet of two circles, so $\pi_1(X, x_0) \cong F(a, b) = G$.
-    <2>2. Let $p: \widetilde{X} \to X$ be the covering space of $X$ corresponding to the subgroup $H \le \pi_1(X)$.
-    <2>3. Since $X$ is a 1-dimensional graph (CW 1-complex), every covering space $\widetilde{X}$ is also a 1-dimensional graph.
-    <2>4. The fundamental group of any connected 1-dimensional graph is a **free group** on the set of edges outside a maximal spanning tree:
-        $$\pi_1(\widetilde{X}) \cong F(S) \quad \text{for some index set } S.$$
-    <2>5. Since $H \cong \pi_1(\widetilde{X})$, $H$ is free.
+<1>3. Apply the Reidemeister--Schreier procedure to $K$ using the Schreier transversal
+$$
+T=\{a^i:i\in\mathbb Z\}
+$$
+for the cosets of $K$ in $G$.
+<2>1. The Schreier generators coming from the letter $a$ are trivial, because
+$$
+a^i a\,\overline{a^ia}^{-1}=a^{i+1}a^{-(i+1)}=1.
+$$
+<2>2. The generators coming from the letter $b$ are
+$$
+y_i=a^i b a^{-(i+1)}.
+$$
+The Reidemeister--Schreier theorem says that the nontrivial $y_i$ freely generate $K$.
+<2>3. But
+$$
+y_i^{-1}=a^{i+1}b^{-1}a^{-i}=x_{i+1}.
+$$
+Hence $\{x_i:i\in\mathbb Z\}$ is also a free basis of $K$.
 
-<1>3. Method 3: Direct Reduced Word Analysis (Freeness of the Generating Set $\{x_i\}$):
-    *Proof:*
-    <2>1. Each generator $x_i = a^i b^{-1} a^{1-i}$ and its inverse $x_i^{-1} = a^{i-1} b a^{-i}$ contains exactly one instance of $b^{\pm 1}$.
-    <2>2. In any non-trivial reduced word $w = x_{i_1}^{\epsilon_1} x_{i_2}^{\epsilon_2} \cdots x_{i_k}^{\epsilon_k}$ with $(i_j, \epsilon_j) \ne (i_{j+1}, -\epsilon_{j+1})$:
-        - The power of $a$ between $b^{\pm 1}$ from $x_{i_j}^{\epsilon_j}$ and $b^{\pm 1}$ from $x_{i_{j+1}}^{\epsilon_{j+1}}$ is:
-          - If $+1, +1$: $a^{1-i_j} a^{i_{j+1}} = a^{1 - i_j + i_{j+1}}$.
-          - If $+1, -1$: $a^{1-i_j} a^{i_{j+1}-1} = a^{-i_j + i_{j+1}} \ne 1$ since $i_j \ne i_{j+1}$.
-          - If $-1, +1$: $a^{-i_j} a^{i_{j+1}} = a^{-i_j + i_{j+1}} \ne 1$ since $i_j \ne i_{j+1}$.
-          - If $-1, -1$: $a^{-i_j} a^{i_{j+1}-1} = a^{-1 - i_j + i_{j+1}}$.
-    <2>3. In all cases, no cancellation can reach across adjacent $b^{\pm 1}$ occurrences to eliminate both.
-    <2>4. Thus the resulting word in $G = F(a, b)$ contains $k$ non-canceling occurrences of $b^{\pm 1}$, hence $w \ne e$.
-    <2>5. Therefore, $\{x_i\}_{i \in \mathbb{Z}}$ is a **free generating set** of infinite rank for $H$, so $H \cong F_\infty$.
-
-<1>4. Conclusion:
-    $H$ is a subgroup of a free group, hence free by Nielsen-Schreier; moreover, $\{x_i\}_{i \in \mathbb{Z}}$ freely generates $H \cong F_\infty$. Q.E.D.
+<1>4. Therefore $H=K$ and
+$$
+H\cong F(\{x_i\}_{i\in\mathbb Z}),
+$$
+so in particular $H$ is free.
 :::

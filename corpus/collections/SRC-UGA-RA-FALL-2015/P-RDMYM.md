@@ -12,6 +12,15 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 5 of the UGA Fall 2015 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Replaced an incorrect linear map in the measurability argument and removed a circular use of Fubini-Tonelli.
 ---
 
 :::{.problem}
@@ -27,29 +36,89 @@ Let $f, g \in L^1(\RR)$ be Borel measurable.
 \]
 :::
 
-:::{.solution .foldopen}
-\envlist
-
-- $F \in \mcb(\RR^2)$:
-  - Write a function $\tilde f(x, y) \da f(x)$
-  - Write a linear transformation $T = \matt 1 0 0 {-1} \in \GL_2$, so $T\tv{x, y} = \tv{x-y, 0}$
-  - Write $f(x-y) \da (\tilde f \circ T)(x, y)$, which is a composition of measurable functions and thus measurable.
-  - A product of measurable functions is measurable.
-
-
-- $f\convolve g \in L^1(\RR)$: estimate
+::: solution
+<1>1. Prove measurability on $\mathbb R^2$.
+::: proof
+The maps
 \[
-\int \abs{ f\convolve g} d\mu 
-&= \int_\RR \int_\RR \abs{f(x-y)g(y)}\dx \dy \\
-&= \int_\RR \int_\RR \abs{f(x-y)}\abs{g(y)}\dx \dy \\
-&= \int_\RR \abs{g(y)} \int_\RR \abs{f(x-y)}\dx \dy \\
-&= \norm{g}_1 \norm{f}_1
-,\]
-where we've used translation invariance of the $L^1$ norm and Fubini-Tonelli justified by the finite result.
-
-- $F_x(y) \da f(x-y)g(y)$ is integrable with respect to $y$ for almost every $x$:
-  - This follows from Fubini-Tonelli, which says that if $F(x, y)$ is integrable, the slices $F^x(y)$ are integrable for almost every $x$.
-  Here take $F(x, y) \da f(x-y)g(y)$.
-
+S:\mathbb R^2\to\mathbb R,
+\qquad S(x,y)=x-y,
+\]
+and
+\[
+\pi_2:\mathbb R^2\to\mathbb R,
+\qquad \pi_2(x,y)=y,
+\]
+are continuous. Since $f$ and $g$ are Borel measurable, so are
+\[
+(x,y)\mapsto f(x-y)=f\circ S(x,y)
+\]
+and
+\[
+(x,y)\mapsto g(y)=g\circ\pi_2(x,y).
+\]
+Their product
+\[
+F(x,y)=f(x-y)g(y)
+\]
+is therefore Borel measurable on $\mathbb R^2$.
 :::
 
+<1>2. Show that the absolute-value kernel is integrable on $\mathbb R^2$.
+::: proof
+The function
+\[
+(x,y)\mapsto |f(x-y)|\,|g(y)|
+\]
+is nonnegative and measurable. Tonelli's theorem therefore applies without any prior integrability assumption and gives
+\[
+\begin{aligned}
+\int_{\mathbb R^2}|f(x-y)|\,|g(y)|\,dx\,dy
+&=\int_{\mathbb R}|g(y)|
+   \left(\int_{\mathbb R}|f(x-y)|\,dx\right)dy\\
+&=\int_{\mathbb R}|g(y)|\,\|f\|_1\,dy\\
+&=\|f\|_1\|g\|_1<\infty,
+\end{aligned}
+\]
+where translation invariance of Lebesgue measure gives
+\[
+\int_{\mathbb R}|f(x-y)|\,dx=\|f\|_1.
+\]
+Thus $F\in L^1(\mathbb R^2)$.
+:::
+
+<1>3. Obtain almost-everywhere existence of the convolution slices.
+::: proof
+Since $|F|\in L^1(\mathbb R^2)$, Fubini's theorem implies that for almost every $x\in\mathbb R$,
+\[
+\int_{\mathbb R}|f(x-y)g(y)|\,dy<\infty.
+\]
+Hence for almost every $x$ the convolution integral
+\[
+(f*g)(x)=\int_{\mathbb R}f(x-y)g(y)\,dy
+\]
+is absolutely convergent.
+:::
+
+<1>4. Prove Young's $L^1$ inequality.
+::: proof
+For every $x$ for which the convolution integral exists,
+\[
+|(f*g)(x)|
+\le \int_{\mathbb R}|f(x-y)|\,|g(y)|\,dy.
+\]
+Integrating in $x$ and using Tonelli together with Step 2,
+\[
+\begin{aligned}
+\|f*g\|_1
+&\le \int_{\mathbb R}\int_{\mathbb R}
+|f(x-y)|\,|g(y)|\,dy\,dx\\
+&=\|f\|_1\|g\|_1.
+\end{aligned}
+\]
+Therefore $f*g\in L^1(\mathbb R)$ and
+\[
+\boxed{\|f*g\|_1\le \|f\|_1\|g\|_1.}
+\]
+:::
+:::

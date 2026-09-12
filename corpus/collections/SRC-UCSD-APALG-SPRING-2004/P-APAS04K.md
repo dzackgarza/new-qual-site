@@ -29,3 +29,131 @@ Find the Gröbner basis for $I$ relative to lexicographic order where $y>x$.
 
 (d) Find a vector space basis for $\mathbb{C}[x,y]/I$.
 :::
+
+::: {.solution}
+Put
+\[
+f_1=x^2+2y^2-2,
+\qquad
+f_2=x^2-xy+y^2-1.
+\]
+We use lexicographic order with $y>x$.
+
+<1>1. A Gröbner basis for $I=(f_1,f_2)$ is
+\[
+\boxed{
+G=\left\{
+ y^2+\frac12x^2-1,
+\ xy-\frac12x^2,
+\ x^3-\frac43x
+\right\}.}
+\]
+::: {.proof}
+Set
+\[
+g_1=y^2+\frac12x^2-1=\frac12f_1.
+\]
+Also
+\[
+f_2-g_1=\frac12x^2-xy,
+\]
+so
+\[
+g_2=xy-\frac12x^2\in I.
+\]
+From these relations one obtains
+\[
+g_3=x^3-\frac43x\in I;
+\]
+for example,
+\[
+4xg_1-4yg_2+3xg_2=3x^3-4x=3g_3.
+\]
+Conversely $f_1=2g_1$ and
+\[
+f_2=g_1-g_2,
+\]
+so $(g_1,g_2,g_3)=I$.
+
+Their leading monomials for lex order $y>x$ are
+\[
+\operatorname{LM}(g_1)=y^2,
+\qquad
+\operatorname{LM}(g_2)=xy,
+\qquad
+\operatorname{LM}(g_3)=x^3.
+\]
+We verify Buchberger's criterion. First,
+\[
+S(g_1,g_2)=xg_1-yg_2
+=\frac12x^3-x+\frac12x^2y.
+\]
+Using $g_2$ gives $x^2y\equiv\frac12x^3$, so
+\[
+S(g_1,g_2)\equiv\frac34x^3-x\equiv0
+\]
+modulo $g_3$. Next, since $y^2$ and $x^3$ are relatively prime, $S(g_1,g_3)$ reduces to $0$ by Buchberger's product criterion. Finally,
+\[
+S(g_2,g_3)=x^2g_2-yg_3
+=-\frac12x^4+\frac43xy.
+\]
+Reducing first by $g_2$ and then by $g_3$ gives
+\[
+-\frac12x^4+\frac23x^2
+\equiv
+-\frac12\left(\frac43x^2\right)+\frac23x^2=0.
+\]
+Hence $G$ is a Gröbner basis.
+:::
+
+<1>2. A Gröbner basis for the elimination ideal $I\cap\mathbb C[x]$ is
+\[
+\boxed{\left\{x^3-\frac43x\right\}.}
+\]
+::: {.proof}
+For lex order $y>x$, the elimination theorem says that the elements of a Gröbner basis involving only $x$ form a Gröbner basis for $I\cap\mathbb C[x]$. In the basis from <1>1, the only such polynomial is $g_3$.
+:::
+
+<1>3. The solution set in $\mathbb C^2$ is
+\[
+\boxed{
+(0,1),\ (0,-1),\
+\left(\frac2{\sqrt3},\frac1{\sqrt3}\right),\
+\left(-\frac2{\sqrt3},-\frac1{\sqrt3}\right).}
+\]
+::: {.proof}
+Every solution satisfies
+\[
+x^3-\frac43x=x\left(x^2-\frac43\right)=0.
+\]
+If $x=0$, then $g_1=0$ gives $y^2=1$, hence $y=\pm1$.
+
+If $x\ne0$, then $g_2=0$ gives
+\[
+y=\frac x2.
+\]
+The equation $g_3=0$ gives $x^2=4/3$, so
+\[
+x=\pm\frac2{\sqrt3},
+\qquad
+y=\pm\frac1{\sqrt3}
+\]
+with matching signs. Each listed point satisfies $g_1,g_2,g_3$, hence the original equations.
+:::
+
+<1>4. A vector-space basis of $\mathbb C[x,y]/I$ is
+\[
+\boxed{\{1,x,x^2,y\}.}
+\]
+::: {.proof}
+For a Gröbner basis, the residue classes of the standard monomials, namely those not divisible by any leading monomial, form a basis of the quotient. Here the forbidden leading monomials are
+\[
+y^2,\qquad xy,\qquad x^3.
+\]
+The monomials not divisible by any of these are exactly
+\[
+1,\ x,\ x^2,\ y.
+\]
+Therefore their residue classes form a basis.
+:::
+:::

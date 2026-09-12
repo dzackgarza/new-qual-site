@@ -26,3 +26,54 @@ Prove that $|g'(z_1)| \leq |f'(z_1)|$.
 
 (iii) When does equality occur in (ii)?
 :::
+
+::: solution
+Choose Riemann maps
+\[
+\phi_j:R_j\to\mathbb D
+\]
+with
+\[
+\phi_j(z_j)=0,
+\qquad j=1,2.
+\]
+
+(i) Then
+\[
+f=\phi_2^{-1}\circ\phi_1
+\]
+is a biholomorphism $R_1\to R_2$ and satisfies $f(z_1)=z_2$.
+
+(ii) Given $g:R_1\to R_2$ with $g(z_1)=z_2$, define
+\[
+G=\phi_2\circ g\circ\phi_1^{-1}:\mathbb D\to\mathbb D.
+\]
+Then $G(0)=0$, so Schwarz's lemma gives $|G'(0)|\le1$. By the chain rule,
+\[
+|G'(0)|
+=\frac{|\phi_2'(z_2)|\,|g'(z_1)|}{|\phi_1'(z_1)|}.
+\]
+For the map $f$ above,
+\[
+|f'(z_1)|
+=\frac{|\phi_1'(z_1)|}{|\phi_2'(z_2)|}.
+\]
+Therefore
+\[
+\boxed{|g'(z_1)|\le|f'(z_1)|.}
+\]
+
+(iii) Equality occurs exactly in the equality case of Schwarz's lemma, namely
+when
+\[
+G(z)=e^{i\theta}z
+\]
+for some real $\theta$. Equivalently,
+\[
+\boxed{
+g=\phi_2^{-1}\circ(e^{i\theta}\operatorname{id})\circ\phi_1.
+}
+\]
+Thus equality holds exactly for biholomorphisms $R_1\to R_2$ carrying $z_1$
+to $z_2$.
+:::

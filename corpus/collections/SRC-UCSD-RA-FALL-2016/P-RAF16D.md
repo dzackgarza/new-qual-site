@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the official UCSD Fall 2016 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing Radon-Nikodym proof reviewed as correct; normalized legacy solution/proof block syntax.
 ---
 
 ::: problem
@@ -25,34 +33,34 @@ $$
 (Note that $g$ is, but $f$ may not be, measurable with respect to $\mathcal{M}_0$.)
 :::
 
-::: {.solution}
+::: solution
 <1>1. Define a signed measure $\lambda$ on $\mathcal M_0$ by $\lambda(E) = \int_E f\, d\mu$ for $E \in \mathcal M_0$.
-::: {.proof}
+::: proof
 definition.
 :::
 
 <1>2. $\lambda$ is a finite signed measure on $\mathcal M_0$.
-::: {.proof}
+::: proof
 $f \in L^1(\mu)$ and $\mu(X) = 1$, so $|\lambda(E)| \le \int |f|\, d\mu < \infty$; countable additivity follows from the dominated convergence theorem.
 :::
 
 <1>3. $\lambda$ is absolutely continuous with respect to $\nu$.
-::: {.proof}
+::: proof
 if $\nu(E) = \mu(E) = 0$ for $E \in \mathcal M_0$, then $\lambda(E) = \int_E f\, d\mu = 0$ (the integral over a null set is $0$).
 :::
 
 <1>4. By the Radon–Nikodym theorem, there is a unique $g \in L^1(\mathcal M_0, \nu)$ with $\lambda(E) = \int_E g\, d\nu$ for all $E \in \mathcal M_0$.
-::: {.proof}
+::: proof
 Radon–Nikodym theorem applied to <1>2 and <1>3.
 :::
 
 <1>5. Hence $\int_E f\, d\mu = \int_E g\, d\nu$ for all $E \in \mathcal M_0$.
-::: {.proof}
+::: proof
 <1>1 and <1>4.
 :::
 
 <1>6. Q.E.D.
-::: {.proof}
+::: proof
 <1>5.
 :::
 :::

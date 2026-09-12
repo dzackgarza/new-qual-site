@@ -12,6 +12,15 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 1 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: "Reviewed and repaired the legacy proof: the original slice inequality had a sign/index error; the half-tail argument gives the result directly."
 ---
 
 :::{.problem}
@@ -22,32 +31,19 @@ $$
 
 :::
 
-:::{.solution}
-> See [this Math.StackExchange thread](https://math.stackexchange.com/questions/4603/if-a-n-subset0-infty-is-non-increasing-and-sum-a-n-infty-then-lim) for many solutions.
-> Note that the "obvious" thing here is fiddly: there are bounds on the slices
+::: solution
+
+Since $\sum_{n=1}^\infty x_n$ converges, its tails tend to zero. For $n\ge2$, put $m=\lfloor n/2\rfloor$. Because $(x_n)$ is decreasing and positive,
 \[
-(N-M \pm 1) x_N \leq  \sum_{M\leq k \leq N} a_k \leq (N-M\pm 1) x_M
-,\]
-but arranging it so that the constants match the indices in $(N-M \pm 1)x_N \approx Nx_N$ requires something clever.
-
-Fix $\eps>0$, we'll find $n\gg 1$ so that $nx_n < \eps$.
-Find $n, m$ with $n>m$ large enough so that
+\sum_{k=m+1}^{n}x_k\ge (n-m)x_n.
+\]
+Also $n-m\ge n/2$, so
 \[
-\eps > \sum_{m+1\leq k \leq n} x_k \geq \sum_{m+1\leq k \leq n}x_n = (m-n)x_n
-.\]
-Then rearrange:
+0\le nx_n\le 2\sum_{k=m+1}^{n}x_k
+\le 2\sum_{k=m+1}^{\infty}x_k.
+\]
+As $n\to\infty$, also $m\to\infty$, and the last tail tends to $0$. Hence
 \[
-\eps > (m-n)x_n \implies nx_n < \eps + mx_n
-.\]
-Now choose $n$ large enough so that $x_n < \eps$, which holds since $\sum x_n < \infty$, to obtain
-\[
-nx_n < \eps + m\eps = \eps(1+m) \to 0
-.\]
-
-
-
-
-
-
-
+\boxed{\lim_{n\to\infty}nx_n=0.}
+\]
 :::

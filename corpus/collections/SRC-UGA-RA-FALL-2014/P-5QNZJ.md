@@ -14,6 +14,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 5 of the UGA Fall 2014 real-analysis qualifying exam recorded by the collection source.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
@@ -32,42 +42,74 @@ f\in L^1(\RR^n), \quad g\in L^\infty(\RR^n) \quad
 \]
 :::
 
-::: {.solution}
-<1>1. For $f \in C_c^0(\RR^n)$: $\lim_{t\to 0}\int_{\RR^n}|f(x + t) - f(x)|\,dx = 0$.
-    <2>1. $f$ is uniformly continuous.
-        ::: {.proof}
-        $f$ is continuous with compact support.
-        :::
-    <2>2. $\int_{\RR^n}|f(x+t) - f(x)|\,dx \le \mu(\supp f + B(0,1))\cdot \omega_f(|t|)$ for $|t| \le 1$, where $\omega_f$ is the modulus of continuity.
-        ::: {.proof}
-        the integrand vanishes outside $\supp f + B(0,1)$, a bounded set; on it, $|f(x+t) - f(x)| \le \omega_f(|t|)$ by <2>1.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        $\omega_f(|t|) \to 0$ as $t \to 0$ by <2>1.
-        :::
+::: solution
+<1>1. Prove translation continuity for $f\in C_c(\mathbb R^n)$.
+::: proof
+Let $K=\operatorname{supp}f$. For $|t|\le1$, the function
+\[
+x\longmapsto f(x+t)-f(x)
+\]
+vanishes outside the bounded set $K+B(0,1)$. Since $f$ is uniformly continuous, its modulus of continuity
+\[
+\omega_f(r):=\sup_{|x-y|\le r}|f(x)-f(y)|
+\]
+satisfies $\omega_f(r)\to0$ as $r\downarrow0$. Hence, for $|t|\le1$,
+\[
+\int_{\mathbb R^n}|f(x+t)-f(x)|\,dx
+\le m(K+B(0,1))\,\omega_f(|t|)\longrightarrow0.
+\]
+:::
 
-<1>2. The result extends to $f \in L^1(\RR^n)$.
-    <2>1. Given $\eps > 0$, choose $g \in C_c^0$ with $\|f - g\|_1 < \eps/3$.
-        ::: {.proof}
-        continuous compactly supported functions are dense in $L^1$.
-        :::
-    <2>2. For small $t$: $\|\tau_t f - f\|_1 \le \|\tau_t f - \tau_t g\|_1 + \|\tau_t g - g\|_1 + \|g - f\|_1 < \eps$.
-        ::: {.proof}
-        $\|\tau_t f - \tau_t g\|_1 = \|f - g\|_1$ (translation invariance), $\|\tau_t g - g\|_1 < \eps/3$ for small $t$ by <1>1, and $\|g - f\|_1 < \eps/3$ by <2>1.
-        :::
+<1>2. Extend translation continuity to every $f\in L^1(\mathbb R^n)$.
+::: proof
+Write $\tau_t f(x)=f(x+t)$. Fix $\varepsilon>0$. Choose $\varphi\in C_c(\mathbb R^n)$ with
+\[
+\|f-\varphi\|_1<\frac\varepsilon3.
+\]
+Translation invariance of Lebesgue measure gives
+\[
+\|\tau_t(f-\varphi)\|_1=\|f-\varphi\|_1.
+\]
+Therefore
+\[
+\|\tau_t f-f\|_1
+\le 2\|f-\varphi\|_1+\|\tau_t\varphi-\varphi\|_1.
+\]
+By Step 1, the last term is below $\varepsilon/3$ for all sufficiently small $t$. Thus
+\[
+\boxed{\|\tau_t f-f\|_1\to0\quad(t\to0).}
+\]
+:::
 
-<1>3. For $f \in L^1$, $g \in L^\infty$: $f \ast g$ is bounded and uniformly continuous.
-    <2>1. $|f \ast g(x)| \le \|g\|_\infty\|f\|_1$ for all $x$.
-        ::: {.proof}
-        $|f\ast g(x)| \le \int|f(x-y)||g(y)|\,dy \le \|g\|_\infty\|f\|_1$.
-        :::
-    <2>2. $|f \ast g(x + t) - f \ast g(x)| \le \|g\|_\infty\int|f(u + t) - f(u)|\,du \to 0$ as $t \to 0$, uniformly in $x$.
-        ::: {.proof}
-        substitute $u = x - y$ and use <1>2.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2.
-        :::
+<1>3. Prove boundedness of $f*g$ for $f\in L^1$ and $g\in L^\infty$.
+::: proof
+Using
+\[
+(f*g)(x)=\int_{\mathbb R^n} f(x-y)g(y)\,dy,
+\]
+we obtain for every $x$,
+\[
+|(f*g)(x)|
+\le \|g\|_\infty\int_{\mathbb R^n}|f(x-y)|\,dy
+=\|f\|_1\|g\|_\infty.
+\]
+Hence $f*g$ is bounded.
+:::
+
+<1>4. Prove uniform continuity of $f*g$.
+::: proof
+For $t\in\mathbb R^n$,
+\[
+\begin{aligned}
+|(f*g)(x+t)-(f*g)(x)|
+&\le \int |f(x+t-y)-f(x-y)|\,|g(y)|\,dy\\
+&\le \|g\|_\infty\int |f(u+t)-f(u)|\,du\\
+&=\|g\|_\infty\,\|\tau_t f-f\|_1.
+\end{aligned}
+\]
+The right-hand side is independent of $x$ and tends to $0$ as $t\to0$ by Step 2. Therefore
+\[
+\boxed{f*g\text{ is bounded and uniformly continuous}.}
+\]
+:::
 :::

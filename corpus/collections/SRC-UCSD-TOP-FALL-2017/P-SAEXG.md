@@ -70,25 +70,47 @@ What are the total spaces?
 <2>6. Since $\phi_2(b) = -1$, the 2-fold cover of $\mathbb{RP}^2$ is $S^2$; since $\phi_2(a) = 1$, the circle lifts to two disjoint circles, one attached at each of the two antipodal basepoints.
 :::
 
-<1>5. Identify the total space $\widetilde{X}_3$ for $\phi_3$ ($\phi_3(a) = -1, \phi_3(b) = -1$). <2>1. Both $a$ and $b$ act non-trivially (swap the sheets).
-<2>2. The basepoint lifts to 2 points $x_1, x_2$.
-<2>3. The circle $S^1$ lifts to a single arc/segment connecting $x_1$ and $x_2$ in both directions, forming a single circle $\widetilde{S}^1$ containing $x_1$ and $x_2$.
-<2>4. The $\mathbb{RP}^2$ lifts to the connected 2-fold cover $S^2$, with basepoints $x_1$ and $x_2$ on $S^2$ (antipodal points).
-<2>5. The total space is formed by taking $S^2$ and connecting two distinct points $x_1, x_2 \in S^2$ by an arc (or equivalently attaching a 1-handle / joining $S^2$ with a circle at two points): $$\widetilde{X}_3 \cong S^2 \cup_{\{x_1, x_2\}} [0, 1] \simeq S^2 \vee S^1.$$
+<1>5. Identify the total space $\widetilde X_3$ for $\phi_3(a)=\phi_3(b)=-1$.
+<2>1. The preimage of the $\mathbb{RP}^2$ summand is its connected double cover $S^2$, and the two points over the wedge point are antipodal points $x_1,x_2\in S^2$.
 ::: {.proof}
-<2>6. Collapsing the connecting arc in $S^2 \cup [0, 1]$ yields a homotopy equivalence $\widetilde{X}_3 \simeq S^2 \vee S^1$ (the wedge of $S^2$ and $S^1$).
+The restriction of the monodromy to $\pi_1(\mathbb{RP}^2)=\langle b\rangle$ is nontrivial, so the restricted cover is the universal double cover $S^2\to\mathbb{RP}^2$.
+:::
+<2>2. The preimage of the $S^1$ summand is its connected double cover, hence a circle $C\cong S^1$ containing the two fiber points $x_1,x_2$.
+::: {.proof}
+The monodromy of $a$ swaps the two sheets, so the restricted $2$-fold cover of $S^1$ is connected. Its fiber over the wedge point consists of the two points where $C$ meets the lifted $S^2$.
+:::
+<2>3. Thus the total space is
+$$
+\widetilde X_3\cong S^2\cup_{\{x_1,x_2\}} C,
+$$
+where the two selected points of $C$ are identified with the two antipodal points of $S^2$.
+::: {.proof}
+The original wedge is obtained by identifying the basepoints of the two summands, so its covering is obtained by gluing the restricted covers along the two points lying over that basepoint.
+:::
+<2>4. This space has homotopy type
+$$\boxed{\widetilde X_3\simeq S^2\vee S^1\vee S^1}.$$
+::: {.proof}
+The two points $x_1,x_2$ divide $C$ into two arcs $\alpha,\beta$, each joining $x_1$ to $x_2$. Choose an embedded arc $\gamma\subset S^2$ joining $x_1$ to $x_2$. Collapsing the contractible tree $\gamma$ to a point converts each of $\alpha$ and $\beta$ into a loop and leaves the sphere homotopy equivalent to $S^2$. Thus the quotient is $S^2\vee S^1\vee S^1$, and collapsing a contractible subcomplex is a homotopy equivalence here.
 :::
 
-<1>6. Conclusion.
-<2>1. There are exactly 3 path-connected 2-fold covering spaces of $S^1 \vee \mathbb{RP}^2$.
-<2>2. Their total spaces are:
-
-1. $S^1$ with two copies of $\mathbb{RP}^2$ attached (homotopy equivalent to $S^1 \vee \mathbb{RP}^2 \vee \mathbb{RP}^2$),
-
-2. $S^2$ with two copies of $S^1$ attached (homotopy equivalent to $S^2 \vee S^1 \vee S^1$),
-
-3. $S^2$ with an arc connecting two points (homotopy equivalent to $S^2 \vee S^1$).
+<1>6. Therefore there are exactly three connected double covers, with total spaces
+$$
+\boxed{
+\begin{aligned}
+\widetilde X_1&\cong S^1\text{ with two copies of }\mathbb{RP}^2\text{ attached at the two fiber points},\\
+\widetilde X_2&\cong S^2\text{ with one circle attached at each of the two fiber points},\\
+\widetilde X_3&\cong S^2\cup_{\{x_1,x_2\}}S^1.
+\end{aligned}}
+$$
+Their homotopy types are respectively
+$$
+S^1\vee\mathbb{RP}^2\vee\mathbb{RP}^2,
+\qquad
+S^2\vee S^1\vee S^1,
+\qquad
+S^2\vee S^1\vee S^1.
+$$
 ::: {.proof}
-<2>3. <1>1–<1>5 enumerate the three covers and identify their total spaces.
+The three nonzero homomorphisms $G\to\ZZ/2$ in <1>2 give all index-$2$ subgroups, and <1>3--<1>5 identify their corresponding total spaces.
 :::
 :::

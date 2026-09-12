@@ -24,48 +24,56 @@ Find a representation of $f_*$ as a matrix, and find its determinant.
 :::
 
 ::: {.solution}
-<1>1. Let $T = \mathbb{R}^2/\mathbb{Z}^2$ be the torus, with $x_0$ the image of $0$.
+<1>1. Identify $T$ with $\RR^2/\ZZ^2$, with $x_0$ the image of $0$.
 ::: {.proof}
-setup.
+This is the standard linear model of the torus.
 :::
 
-<1>2. Define $f : T \to T$ by $f(x, y) = (y, -x - y)$ (mod $\mathbb{Z}^2$), i.e. the linear map with matrix $A = \begin{pmatrix} 0 & 1 \\ -1 & -1 \end{pmatrix}$.
+<1>2. Let
+$$
+B=\begin{pmatrix}0&-1\\1&1\end{pmatrix}\in SL_2(\ZZ)
+$$
+and define
+$$
+f([x,y])=[-y,x+y].
+$$
 ::: {.proof}
-definition.
+Because $B\ZZ^2=\ZZ^2$, the integral linear automorphism $B:\RR^2\to\RR^2$ descends to a homeomorphism of $\RR^2/\ZZ^2$.
 :::
 
-<1>3. $A$ has integer entries, so it descends to a well-defined homeomorphism of $T = \mathbb{R}^2/\mathbb{Z}^2$.
+<1>3. The map $f$ fixes $x_0$.
 ::: {.proof}
-an integer matrix maps $\mathbb{Z}^2$ into itself, so it induces a map on the quotient.
+$B(0,0)=(0,0)$.
 :::
 
-<1>4. $f$ fixes $x_0$ (the image of $0$).
+<1>4. One has
+$$
+B^2=\begin{pmatrix}-1&-1\\1&0\end{pmatrix},
+\qquad
+B^3=-I,
+\qquad
+B^6=I.
+$$
 ::: {.proof}
-$A(0,0) = (0,0)$.
+These identities follow by direct matrix multiplication.
 :::
 
-<1>5. $A^2 = \begin{pmatrix} -1 & -1 \\ 1 & 0 \end{pmatrix}$ and $A^3 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -I$, so $A^6 = I$.
+<1>5. No positive power $B^j$ with $1\le j<6$ is the identity, so $f$ has order exactly $6$.
 ::: {.proof}
-direct computation; $A^3 = -I$ implies $A^6 = I$.
+The matrices $B$ and $B^2$ displayed above are not $I$, while $B^3=-I\ne I$. Then $B^4=-B\ne I$ and $B^5=-B^2\ne I$. Together with $B^6=I$, this proves that the order is $6$.
 :::
 
-<1>6. Hence $f$ has order $6$.
+<1>6. In the standard basis of $H_1(T;\ZZ)\cong\ZZ^2$, the induced map is represented by
+$$
+\boxed{f_*=B=\begin{pmatrix}0&-1\\1&1\end{pmatrix}}.
+$$
 ::: {.proof}
-<1>5 ($A^6 = I$ and no smaller positive power is $I$, since $A^3 = -I \neq I$ and $A, A^2 \neq I$).
+The standard generators of $H_1(T;\ZZ)$ are the images of the coordinate vectors in $\ZZ^2$, and the induced map on these generators is exactly the lattice automorphism $B$.
 :::
 
-<1>7. $f_* : H_1(T) \cong \ZZ^2 \to H_1(T) \cong \ZZ^2$ is represented by the matrix $A = \begin{pmatrix} 0 & 1 \\ -1 & -1 \end{pmatrix}$.
+<1>7. Its determinant is
+$$\boxed{\det f_*=1}.$$
 ::: {.proof}
-the induced map on $H_1(T) = \pi_1(T) = \ZZ^2$ is exactly the linear map $A$.
-:::
-
-<1>8. $\det A = 0 \cdot (-1) - 1 \cdot (-1) = 1$.
-::: {.proof}
-compute the determinant.
-:::
-
-<1>9. Q.E.D.
-::: {.proof}
-<1>6, <1>7, <1>8.
+$\det B=0\cdot1-(-1)\cdot1=1$.
 :::
 :::

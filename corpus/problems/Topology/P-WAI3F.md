@@ -28,3 +28,26 @@ We also have $H(z, 1) = P(-z) = -z$, the antipodal map.
 
 This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
 :::
+
+::: {.solution}
+<1>1. Write $n=2m-1$ and identify $S^n$ with the unit sphere in $\mathbb C^m$.
+::: {.proof}
+$n$ odd means $n+1=2m$.
+:::
+
+<1>2. Define
+$$H(z,t)=e^{\pi i t}z.$$
+::: {.proof}
+Multiplication by a complex number of modulus $1$ preserves the unit sphere, so $H:S^n\times I\to S^n$ is continuous.
+:::
+
+<1>3. Then $H(z,0)=z$ and $H(z,1)=-z$.
+::: {.proof}
+$e^0=1$ and $e^{\pi i}=-1$.
+:::
+
+<1>4. Hence the antipodal map on $S^n$ is homotopic to the identity for odd $n$.
+::: {.proof}
+The homotopy is <1>2.
+:::
+:::

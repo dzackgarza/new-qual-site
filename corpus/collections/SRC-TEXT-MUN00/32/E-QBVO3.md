@@ -17,3 +17,11 @@ review: draft
 
 Is every topological group normal?
 :::
+
+::: {.solution}
+No. Let \(J\) be uncountable. The product group
+\[
+G=\mathbb R^J
+\]
+with coordinatewise addition and the product topology is a topological group. By the Stone theorem proved in the first exercise of this section, \(\mathbb R^J\) is not normal. Therefore not every topological group is normal.
+:::

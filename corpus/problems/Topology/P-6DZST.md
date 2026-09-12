@@ -24,3 +24,22 @@ review: draft
    But since $\RR$ is contractible, the last one is homotopic to $S^1 \cross \theset {0} \cong S^1$.
    **Alternatively**: use the lemma, then $k=2$ and so $S^2 - \theset{p_1, p_2} \homotopic \bigvee_{i=1}^{1}S^1 = S^1$.
 :::
+
+::: {.solution}
+<1>1. Removing one point from $S^2$ gives $\mathbb R^2$ by stereographic projection; the second removed point becomes one point of $\mathbb R^2$.
+::: {.proof}
+Choose one of the two deleted points as the projection point.
+:::
+
+<1>2. The punctured plane $\mathbb R^2\setminus\{0\}$ strongly deformation retracts onto the unit circle by
+$$H(x,t)=\bigl((1-t)+t/\|x\|\bigr)x.$$
+::: {.proof}
+For $x\ne0$ the scalar is positive, so the homotopy stays in the punctured plane; at $t=1$ it is radial projection and it fixes the unit circle.
+:::
+
+<1>3. Therefore
+$$\boxed{S^2\setminus\{p,q\}\simeq S^1.}$$
+::: {.proof}
+Combine <1>1--<1>2.
+:::
+:::

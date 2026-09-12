@@ -12,6 +12,14 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the official UGA August 2016 real-analysis qualifying exam; repaired the legacy proof, whose final summability step was invalid.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 Let $(X, \mathcal M, \mu)$ be a measure space and suppose $\theset{E_n} \subset \mathcal M$ satisfies
@@ -26,33 +34,33 @@ G \definedas \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } 
 
 Show that $G \in \mathcal M$ and $\mu(G) = 0$.
 
-:::{.solution}
-\envlist
+::: solution
 
-- Claim: $G\in \mcm$.
-  - Claim:
-  \[  
-  G = \qty{ \Intersect_{N=1}^\infty \Union_{n=N}^\infty E_n}^c = \Union_{N=1}^\infty \Intersect_{n=N}^\infty E_n^c
-  .\]
+Set
+\[
+F_N:=\bigcap_{n=N}^\infty E_n^c.
+\]
+A point belongs to only finitely many $E_n$ exactly when it belongs to $E_n^c$ for all sufficiently large $n$, so
+\[
+G=\bigcup_{N=1}^\infty F_N.
+\]
+Thus $G\in\mathcal M$.
 
-    - This follows because $x$ is in the RHS $\iff$ $x\in E_n^c$ for all but finitely many $n$ $\iff$ $x\in E_n$ for at most finitely many $n$.
-
-  - But $\mcm$ is a $\sigma\dash$algebra, and this shows $G$ is obtained by countable unions/intersections/complements of measurable sets, so $G\in \mcm$. 
-
-- Claim: $\mu(G) = 0$.
-
-  - We have
-  \[  
-  \mu(G)
-  &= \mu\qty{\Union_{N=1}^\infty \Intersect_{n=N}^\infty E_n^c} \\
-  &\leq \sum_{N=1}^\infty \mu \qty{\Intersect_{n=N}^\infty E_n^c}  \\
-  &\leq \sum_{N=1}^\infty \mu(E_M^c) \\ 
-  &\definedas \sum_{N=1}^\infty \mu(X\setminus E_N) \\
-  &\converges{N\to\infty}\to 0
-  .\]
-
-:::{.remark}
-Last step seems wrong!
+Fix $N$. For every $m\ge N$,
+\[
+F_N\subseteq E_m^c,
+\]
+and hence
+\[
+0\le \mu(F_N)\le \mu(E_m^c)=\mu(X\setminus E_m).
+\]
+Letting $m\to\infty$ gives $\mu(F_N)=0$. Therefore
+\[
+\mu(G)\le \sum_{N=1}^\infty\mu(F_N)=0.
+\]
+Hence
+\[
+\boxed{G\in\mathcal M\quad\text{and}\quad \mu(G)=0.}
+\]
+No summability hypothesis on the numbers $\mu(X\setminus E_n)$ is needed.
 :::
-:::
-

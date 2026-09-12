@@ -12,6 +12,14 @@ classification:
   - Fixed Points
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 1 of the official UGA Fall 2021 real-analysis qualifying exam; repaired the legacy fixed-point calculation, whose positive root was off by a factor of 2, and supplied a genuine uniform contraction constant.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 :::{.problem}
@@ -23,20 +31,38 @@ Prove that the sequence $\left\{x_{n}\right\}$ converges, and find its limit.
 :::
 
 
-:::{.solution}
-If a limit $L$ exists, we have $x_n\to L$ for all $n$, so
+::: solution
+Define
 \[
-L = {1+L\over 2+L} \implies L^2 + L - 1 = 0 \implies L = -{1\over 2}\qty{-1 \pm \sqrt 5}
-.\]
-Noting that $\sqrt{5} > 1$, the condition $x_1>0$ and a small induction noting that if $x_n>0$ then ${1+x_n \over 2+x_n}>0$, the only solution can be $L = -1 + \sqrt 5$.
-To see that this does converge, write $f(z) = 1 - (2+z)\inv$ so that $x_{n+1} = f(x_n)$.
-The claim is that $f$ is a contracting map on a metric space, which implies it has a unique fixed point $z_0$ by the Banach fixed point theorem, and if $f(z_0) = z_0$ then $z_0 = L$.
-This follows from the mean value theorem, since
+T(x)=\frac{1+x}{2+x}=1-\frac1{2+x},\qquad x\ge0.
+\]
+Since $x_1>0$, induction gives $x_n>0$ for every $n$. Moreover $T$ maps $[0,\infty)$ into $[1/2,1)$.
+
+For $x\ge0$,
 \[
-\abs{f(z) - f(w)} = \abs{f'(\xi)}\abs{z-w} < \abs{z-w} && \text{for some } \xi \in (z, w)
-.\]
-Since $f'(z) = (2+z)^{-2}$ satisfies $0 < f'(z) < 1$ for all $z$, we have
+T'(x)=\frac1{(2+x)^2}\le\frac14.
+\]
+Hence by the mean value theorem,
 \[
-\abs{f(z) - f(w)} \leq \abs{z-w}
-.\]
+|T(x)-T(y)|\le\frac14|x-y|
+\qquad(x,y\ge0).
+\]
+Thus $T$ is a contraction of the complete metric space $[0,\infty)$ into itself. By the Banach fixed-point theorem, the iterates $x_{n+1}=T(x_n)$ converge to the unique fixed point $L\ge0$.
+
+The fixed-point equation is
+\[
+L=\frac{1+L}{2+L},
+\]
+so
+\[
+L^2+L-1=0.
+\]
+Therefore
+\[
+L=\frac{-1\pm\sqrt5}{2}.
+\]
+Only the positive root lies in $[0,\infty)$, hence
+\[
+\boxed{\lim_{n\to\infty}x_n=\frac{\sqrt5-1}{2}.}
+\]
 :::

@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -30,28 +33,35 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Group action: an action of a group $G$ on a set $X$ is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
-::: {.proof}
-definition.
-:::
+Let $G$ be a group acting on a set $X$.
 
-<1>2. Orbit: the orbit of $x \in X$ is $\operatorname{Orb}(x) = \{g \cdot x : g \in G\}$.
-::: {.proof}
-definition.
-:::
+A **group action** is a map
+\[
+G\times X\to X,\qquad (g,x)\mapsto g\cdot x,
+\]
+such that
+\[
+e\cdot x=x,
+\qquad
+(gh)\cdot x=g\cdot(h\cdot x).
+\]
 
-<1>3. Stabilizer: the stabilizer of $x \in X$ is $\operatorname{Stab}(x) = \{g \in G : g \cdot x = x\}$.
-::: {.proof}
-definition.
-:::
+The **orbit** of $x\in X$ is
+\[
+Gx=\{g\cdot x:g\in G\}.
+\]
 
-<1>4. Fixed points: the fixed points of an element $g \in G$ are $\operatorname{Fix}(g) = \{x \in X : g \cdot x = x\}$; the fixed points of the action are $\{x \in X : g \cdot x = x \text{ for all } g \in G\}$.
-::: {.proof}
-definition.
-:::
+The **stabilizer** of $x$ is
+\[
+G_x=\{g\in G:g\cdot x=x\}.
+\]
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1–<1>4.
-:::
+For $g\in G$, its fixed-point set is
+\[
+X^g=\{x\in X:g\cdot x=x\}.
+\]
+The fixed points of the whole action are
+\[
+X^G=\{x\in X:g\cdot x=x\text{ for every }g\in G\}.
+\]
 :::

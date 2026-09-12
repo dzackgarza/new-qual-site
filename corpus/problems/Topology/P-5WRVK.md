@@ -17,6 +17,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -27,47 +30,62 @@ Let $M = ([0, 1] \times [0, 1]) / \sim$ be the standard **Möbius strip**, where
 :::
 
 ::: solution
-**Goal:** Construct an explicit deformation retraction of the Möbius strip onto its core circle, compute $\pi_1(M)$, and show the boundary traverses the core circle twice.
+Let $q:[0,1]\times[0,1]\to M$ be the quotient map.
 
-<1>1. Parameterization and Deformation Retraction:
-    *Proof:*
-    <2>1. Represent $M$ as the quotient of the square $I \times I = [0, 1] \times [0, 1]$ under the equivalence relation $(0, y) \sim (1, 1 - y)$ for all $y \in [0, 1]$.
-    <2>2. Define a straight-line homotopy $H: (I \times I) \times [0, 1] \to I \times I$ by:
-        $$H(x, y, s) = (x, (1 - s) y + s \cdot \tfrac{1}{2}).$$
-    <2>3. We check compatibility with the quotient boundary identifications:
-        - At $x = 0$: $H(0, y, s) = (0, (1 - s) y + \frac{s}{2})$.
-        - At $x = 1$: $H(1, 1 - y, s) = (1, (1 - s)(1 - y) + \frac{s}{2}) = (1, 1 - [(1 - s) y + \frac{s}{2}])$.
-        - Since $(0, Y) \sim (1, 1 - Y)$ with $Y = (1 - s) y + \frac{s}{2}$, the homotopy preserves the equivalence relation for all $s \in [0, 1]$.
-    <2>4. Thus $H$ descends to a continuous map $\bar{H}: M \times [0, 1] \to M$ such that:
-        - $\bar{H}(m, 0) = m$ for all $m \in M$ ($\bar{H}_0 = \operatorname{id}_M$).
-        - $\bar{H}(m, 1) \in C = \{[(x, 1/2)] \mid x \in I\}$ for all $m \in M$.
-        - $\bar{H}(c, s) = c$ for all $c \in C$ and all $s \in [0, 1]$.
-    <2>5. Therefore, $\bar{H}$ is a **strong deformation retraction** of $M$ onto the central circle $C$.
+<1>1. Define
+\[
+H_s(q(x,y))=q\!\left(x,(1-s)y+s/2\right).
+\]
+This is well-defined because
+\[
+(0,y)\sim(1,1-y)
+\]
+implies
+\[
+\left(0,(1-s)y+s/2\right)
+\sim
+\left(1,1-((1-s)y+s/2)\right)
+=
+\left(1,(1-s)(1-y)+s/2\right).
+\]
+Thus $H$ descends to $M$, fixes the core
+\[
+C=\{q(x,1/2):0\le x\le1\},
+\]
+and at $s=1$ maps all of $M$ onto $C$. Hence $C$ is a strong deformation retract of $M$.
 
-<1>2. Fundamental Group $\pi_1(M)$:
-    *Proof:*
-    <2>1. A deformation retraction is a **homotopy equivalence**, so $M \simeq C \cong S^1$.
-    <2>2. The fundamental group of the circle is $\pi_1(S^1) \cong \mathbb{Z}$.
-    <2>3. Thus:
-        $$\pi_1(M, x_0) \cong \pi_1(S^1) \cong \mathbb{Z}.$$
-    <2>4. The generator $\alpha \in \pi_1(M, x_0)$ is the core loop $\alpha(t) = [(t, 1/2)]$ for $t \in [0, 1]$, running from $(0, 1/2)$ to $(1, 1/2) \sim (0, 1/2)$.
+<1>2. Since $C\cong S^1$,
+\[
+\pi_1(M)\cong\pi_1(C)\cong\mathbb Z.
+\]
+With basepoint $q(0,1/2)$, let
+\[
+\alpha(t)=q(t,1/2),\qquad 0\le t\le1.
+\]
+Then $[\alpha]$ is a generator.
 
-<1>3. The Boundary Curve $\partial M$ and Winding Number 2:
-    *Proof:*
-    <2>1. The boundary of $I \times I$ consists of top $y = 1$ and bottom $y = 0$.
-    <2>2. Under the Möbius identification:
-        - Path 1 along the bottom: $\gamma_1(t) = (t, 0)$ from $(0, 0)$ to $(1, 0)$.
-        - At $x = 1$, $(1, 0) \sim (0, 1)$, connecting directly to the top left corner.
-        - Path 2 along the top: $\gamma_2(t) = (1 - t, 1)$ from $(0, 1)$ to $(1, 1) \sim (0, 0)$.
-    <2>3. Concatenating $\gamma = \gamma_1 * \gamma_2$ forms a single closed loop parameterizing the boundary $\partial M \cong S^1$.
-    <2>4. Applying the retraction homotopy $\bar{H}$:
-        - $\gamma_1(t) = (t, 0)$ retracts to $\alpha(t) = (t, 1/2)$, which is homotopic to $\alpha$.
-        - $\gamma_2(t) = (1 - t, 1)$ retracts to $(1 - t, 1/2)$, which traversed forward in quotient direction $(0, 1) \to (1, 1) \sim (0, 0)$ is also homotopic to $\alpha$.
-    <2>5. Thus the loop $\gamma = \partial M$ is homotopic in $M$ to $\alpha * \alpha = \alpha^2$:
-        $$[\partial M] = 2 \in \pi_1(M) \cong \mathbb{Z}.$$
-    <2>6. The induced homomorphism on fundamental groups is multiplication by 2:
-        $$\iota_*: \pi_1(\partial M) \cong \mathbb{Z} \longrightarrow \pi_1(M) \cong \mathbb{Z}, \qquad 1 \longmapsto 2.$$
+<1>3. The boundary of $M$ is one circle. A positively chosen parametrization can be written as the concatenation of
+\[
+\gamma_0(t)=q(t,0),\qquad
+\gamma_1(t)=q(t,1),
+\]
+where the endpoint of $\gamma_0$ satisfies
+\[
+q(1,0)=q(0,1),
+\]
+and the endpoint of $\gamma_1$ satisfies
+\[
+q(1,1)=q(0,0).
+\]
+Thus $\gamma_0*\gamma_1$ traverses the whole boundary once.
 
-<1>4. Conclusion:
-    $M$ deformation retracts onto its core circle $S^1$, so $\pi_1(M) \cong \mathbb{Z}$, and the boundary loop winds twice around the core ($[\partial M] = 2$). Q.E.D.
+<1>4. Under the deformation retraction to $C$, both $\gamma_0$ and $\gamma_1$ become the core loop $\alpha$ with the same orientation. Therefore
+\[
+[\partial M]=[\alpha]^2\in\pi_1(M).
+\]
+Equivalently, after identifying both fundamental groups with $\mathbb Z$ using these orientations,
+\[
+\iota_*:\pi_1(\partial M)\longrightarrow\pi_1(M)
+\]
+is multiplication by $2$.
 :::

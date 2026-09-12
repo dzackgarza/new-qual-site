@@ -11,6 +11,14 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 2 of the official UGA August 2017 real-analysis qualifying exam; repaired the false claim that sqrt is Lipschitz at 0 and the false compact-plus-null representation of arbitrary measurable sets.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 Let $f(x) = x^2$ and $E \subset [0, \infty) \definedas \RR^+$.
@@ -28,64 +36,83 @@ E &\mapsto f(E)
 \]
   is a bijection from the class of Lebesgue measurable sets of $[0, \infty)$ to itself.
 
-:::{.solution}
-\envlist
+::: solution
+<1>1. Show that null sets are preserved by $x\mapsto x^2$.
+::: proof
+For every $M>0$, the map
+\[
+f(x)=x^2
+\]
+is Lipschitz on $[0,M]$, since $|f'(x)|=2x\le2M$ there. Hence if $A\subset[0,M]$ has outer measure zero, then $f(A)$ has outer measure zero.
 
-a.
-
-    It suffices to consider the bounded case, i.e. $E \subseteq B_M(0)$ for some $M$.
-    Then write $E_n = B_n(0) \Intersect E$ and apply the theorem to $E_n$, and by subadditivity, $m^*(E) = m^*(\Union_n E_n) \leq \sum_n m^*(E_n) = 0$.
-
-    **Lemma:** 
-    $f(x) = x^2, f\inv(x) = \sqrt{x}$ are Lipschitz on any compact subset of $[0, \infty)$.
-
-    *Proof:*
-    Let $g = f$ or $f\inv$. 
-    Then $g\in C^1([0, M])$ for any $M$, so $g$ is differentiable and $g'$ is continuous.
-    Since $g'$ is continuous on a compact interval, it is bounded, so $\abs{g'(x)} \leq L$ for all $x$.
-    Applying the MVT,
-    \[
-    \abs{f(x) - f(y)} = f'(c) \abs{x-y} \leq L \abs{x-y}
-    .\]
-
-    **Lemma:** 
-    If $g$ is Lipschitz on $\RR^n$, then $m(E) = 0 \implies m(g(E)) = 0$.
-
-    *Proof:*
-    If $g$ is Lipschitz, then 
-    $$
-    g(B_r(x)) \subseteq B_{Lr}(x)
-    ,$$ 
-    which is a dilated ball/cube, and so 
-    $$
-    m^*(B_{Lr}(x)) \leq L^n \cdot m^*(B_{r}(x))
-    .$$
-
-    Now choose $\theset{Q_j} \rightrightarrows E$; then $\theset{g(Q_j)} \rightrightarrows g(E)$.
-
-    By the above observation,
-    \[
-    \abs{g(Q_j)} \leq L^n \abs{Q_j}
-    ,\]
-
-    and so 
-    \[
-    m^*(g(E)) \leq \sum_j \abs{g(Q_j)} \leq \sum_j L^n \abs{Q_j} = L^n \sum_j \abs{Q_j} \to 0 
-    .\]
-
-    Now just take $g(x) = x^2$ for one direction, and $g(x) = f\inv(x) = \sqrt{x}$ for the other.
-
-b.
-
-    > Lemma: $E$ is measurable iff $E = K \disjoint N$ for some $K$ compact, $N$ null.
-
-    Write $E = K \disjoint N$ where $K$ is compact and $N$ is null.
-
-    Then $\phi\inv(E) = \phi\inv(K \disjoint N) = \phi\inv(K) \disjoint \phi\inv(N)$.
-
-    Since $\phi\inv(N)$ is null by part (a) and $\phi\inv(K)$ is the preimage of a compact set under a continuous map and thus compact, $\phi\inv(E) = K' \disjoint N'$ where $K'$ is compact and $N'$ is null, so $\phi\inv(E)$ is measurable.
-
-    So $\phi$ is a measurable function, and thus yields a well-defined map $\mathcal L(\RR) \to \mathcal L(\RR)$ since it preserves measurable sets.
-    Restricting to $[0, \infty)$, $f$ is bijection, and thus so is $\phi$.
+Now let $E\subset[0,\infty)$ with $m^*(E)=0$ and put
+\[
+E_k=E\cap[k,k+1].
+\]
+Then each $E_k$ is null and $f(E_k)$ is null, so
+\[
+f(E)=\bigcup_{k=0}^\infty f(E_k)
+\]
+is null. Thus
+\[
+m^*(E)=0\Longrightarrow m^*(f(E))=0.
+\]
 :::
 
+<1>2. Show that null sets are preserved by the inverse map $y\mapsto\sqrt y$.
+::: proof
+Fix $M>0$. The function
+\[
+g(y)=\sqrt y
+\]
+is absolutely continuous on $[0,M]$, because
+\[
+g(y)=\int_0^y \frac{dt}{2\sqrt t}
+\]
+and $(2\sqrt t)^{-1}\in L^1(0,M)$. Every absolutely continuous function has Luzin's property $(N)$, so it maps Lebesgue-null sets to null sets.
+
+If $A\subset[0,\infty)$ is null, decompose
+\[
+A=\bigcup_{k=0}^\infty A_k,
+\qquad A_k=A\cap[k,k+1].
+\]
+Each $A_k$ is null and bounded, hence $g(A_k)$ is null. Therefore
+\[
+g(A)=\bigcup_{k=0}^\infty g(A_k)
+\]
+is null.
+
+Applying this to $A=f(E)$ gives
+\[
+m^*(f(E))=0\Longrightarrow m^*(E)=m^*(g(f(E)))=0.
+\]
+Thus
+\[
+\boxed{m^*(E)=0\iff m^*(f(E))=0.}
+\]
+:::
+
+<1>3. Show that $f$ sends Lebesgue measurable sets to Lebesgue measurable sets.
+::: proof
+On $[0,\infty)$, $f(x)=x^2$ is a homeomorphism with inverse $g(y)=\sqrt y$. Hence $f$ and $g$ send Borel sets to Borel sets.
+
+Let $E$ be Lebesgue measurable. There is a Borel set $B$ such that
+\[
+m(E\triangle B)=0.
+\]
+Since $f$ is injective,
+\[
+f(E)\triangle f(B)=f(E\triangle B).
+\]
+By part 1, $f(E\triangle B)$ is null, while $f(B)$ is Borel. Therefore $f(E)$ is Lebesgue measurable.
+:::
+
+<1>4. Conclude bijectivity on the Lebesgue sigma-algebra.
+::: proof
+The same argument applied to the inverse homeomorphism $g(y)=\sqrt y$ shows that $g$ also sends Lebesgue measurable sets to Lebesgue measurable sets. Since $f$ and $g$ are inverse bijections of $[0,\infty)$,
+\[
+E\longmapsto f(E)
+\]
+is a bijection from the Lebesgue measurable subsets of $[0,\infty)$ onto themselves.
+:::
+:::

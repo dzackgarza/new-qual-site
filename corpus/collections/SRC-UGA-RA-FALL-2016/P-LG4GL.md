@@ -12,6 +12,14 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 5 of the official UGA August 2016 real-analysis qualifying exam; normalized the weighted finite-measure Lp-to-Linfinity argument.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies the equality
@@ -20,53 +28,51 @@ Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies 
 = \norm{\phi}_\infty.
 \]
 
-:::{.solution}
-\envlist
-:::{.concept}
-\envlist
-- ?
-:::
+::: solution
 
-Let $L$ be the LHS and $R$ be the RHS.
+Put
+\[
+M:=\|\phi\|_\infty,
+\qquad
+A_n:=\left(\int_{\mathbb R}\frac{|\phi(x)|^n}{1+x^2}\,dx\right)^{1/n}.
+\]
+If $M=0$, then $\phi=0$ a.e. and $A_n=0$ for every $n$. Assume $M>0$.
 
-Claim: $L\leq R$.
-  - Since $\abs \phi \leq \norm{\phi}_\infty$ a.e., we can write 
-  \[  
-  L^{1\over n} 
-  &\definedas \int_\RR { \abs{\phi(x)}^n \over 1+ x^2} \\
-  &\leq \int_\RR { \norm{\phi}_\infty^n \over 1+ x^2}  \\
-  &= \norm{\phi}_\infty^n \int_\RR {1\over 1 + x^2} \\
-  &= \norm{\phi}_\infty^n \arctan(x)\evalfrom_{-\infty}^{\infty}  \\
-  &= \norm{\phi}_\infty^n \qty{{\pi \over 2} - {-\pi \over 2} }  \\
-  &= \pi \norm{\phi}_\infty^n \\ \\
-  \implies L^{1\over n} &\leq \sqrt[n]{\pi \norm{\phi}_\infty^n} \\ 
-  \implies L &\leq \pi^{1\over n} \norm{\phi}_\infty \\
-  &\converges{n\to \infty }\to \norm{\phi}_\infty
-  ,\]
-  where we've used the fact that $c^{1\over n} \converges{n\to\infty}\to 1$ for any constant $c$.:::{.remark}
-Actually true? Need conditions?
-:::
-  
-Claim: $R\leq L$.
+Since $|\phi|\le M$ a.e.,
+\[
+A_n^n\le M^n\int_{\mathbb R}\frac{dx}{1+x^2}=\pi M^n,
+\]
+so
+\[
+\limsup_{n\to\infty}A_n\le M.
+\]
 
-- We will show that $R\leq L + \eps$ for every $\eps>0$.
-- Set 
-\[  
-S_\eps \definedas \theset{x\in \RR^n\suchthat \abs{\phi(x)} \geq \norm{\phi}_\infty - \eps}
-.\]
-- Then we have
-\[  
-\int_\RR {\abs{\phi(x)}^n \over 1 +x^2}\,dx
-&\geq \int_{S_\eps} {\abs{\phi(x)}^n \over 1 +x^2}\,dx \quad S_\eps \subset \RR \\
-&\geq \int_{S_\eps} { \qty{\norm{\phi}_\infty - \eps}^n \over 1 +x^2}\,dx  \qquad\text{by definition of }S_\eps \\
-&= \qty{\norm{\phi}_\infty - \eps}^n \int_{S_\eps} { 1 \over 1 +x^2}\,dx \\
-&= \qty{\norm{\phi}_\infty - \eps}^n C_\eps \qquad\text{where $C_\eps$ is some constant} \\ \\
-\implies 
-\qty{ \int_\RR {\abs{\phi(x)}^n \over 1 +x^2}\,dx }^{1\over n} 
-&\geq \qty{\norm{\phi}_\infty - \eps} C_\eps^{1 \over n} \\
-&\converges{n\to\infty}\to
-\qty{\norm{\phi}_\infty - \eps} \cdot 1 \\
-&\converges{\eps\to 0}\to \norm{\phi}_\infty
-,\]
-  where we've again used the fact that $c^{1\over n} \to 1$ for any constant.
+Now fix $0<\varepsilon<M$ and let
+\[
+E_\varepsilon:=\{x:|\phi(x)|>M-\varepsilon\}.
+\]
+By the definition of essential supremum, $m(E_\varepsilon)>0$. Since $(1+x^2)^{-1}>0$ everywhere,
+\[
+c_\varepsilon:=\int_{E_\varepsilon}\frac{dx}{1+x^2}>0.
+\]
+Therefore
+\[
+A_n^n\ge (M-\varepsilon)^n c_\varepsilon,
+\]
+and hence
+\[
+A_n\ge (M-\varepsilon)c_\varepsilon^{1/n}.
+\]
+Letting $n\to\infty$ gives
+\[
+\liminf_{n\to\infty}A_n\ge M-\varepsilon.
+\]
+Since $\varepsilon>0$ is arbitrary,
+\[
+\liminf_{n\to\infty}A_n\ge M.
+\]
+Together with the upper bound,
+\[
+\boxed{\lim_{n\to\infty}A_n=\|\phi\|_\infty.}
+\]
 :::

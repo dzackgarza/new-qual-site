@@ -11,9 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 3 in both preserved Arango Emory qualifying-problem compilations. The prior solution incorrectly folded convergence in measure into the statement of the Dominated Convergence Theorem; the standard a.e.-convergence statement is restored and the convergence-in-measure result is proved separately by subsequences.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: problem
@@ -32,9 +39,9 @@ audit:
 **Goal:** (1) State the Dominated Convergence Theorem; (2) use it to prove that if $f_n \to f$ in measure on a measurable set $E$ and $|f_n| \leq g$ with $g$ integrable on $E$, then $\int_E |f_n - f| \to 0$.
 
 <1>1. Statement of the Dominated Convergence Theorem.
-    <2>1. Let $\{f_n\}$ be measurable on a Lebesgue measurable set $E$, converging a.e. (or in measure) to $f$, with $|f_n| \leq g$ a.e. for all $n$, where $g \geq 0$ is integrable on $E$. Then $f$ is integrable and $\lim_n \int_E f_n = \int_E f$.
+    <2>1. Let $\{f_n\}$ be measurable on a Lebesgue measurable set $E$, converging almost everywhere to $f$, with $|f_n| \leq g$ a.e. for all $n$, where $g \geq 0$ is integrable on $E$. Then $f$ is integrable, $|f_n-f|\to0$ in $L^1(E)$, and in particular $\int_E f_n\to\int_E f$.
         ::: {.proof}
-        this is the statement of the theorem, as requested in part (1). (Equivalently, the conclusion is $\int_E |f_n - f| \to 0$.)
+        This is the standard Dominated Convergence Theorem, as requested in part (1). Convergence in measure is not part of its usual hypothesis; part (2) derives the corresponding conclusion from DCT by a subsequence argument.
         :::
 
 <1>2. Proof of part (2): convergence in measure plus domination forces $\int_E |f_n - f| \to 0$.

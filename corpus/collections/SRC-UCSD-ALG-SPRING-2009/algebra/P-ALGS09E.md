@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Compared with Problem 5 of the official UCSD Spring 2009 algebra qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Verified both directions using extension of F-embeddings in a finite Galois extension and the fixed-field identity E^(gHg^-1)=g(E^H).
 ---
 
 ::: problem

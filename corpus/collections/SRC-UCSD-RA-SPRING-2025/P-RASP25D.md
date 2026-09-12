@@ -11,9 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the official UCSD Spring 2025 real-analysis qualifying exam.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-30
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -33,105 +40,85 @@ Hint: try piecewise constant functions.
 (3) There is no $u \in C$ such that $\|u\| = d(0, C) = 1$.
 :::
 
-::: {.solution}
-**(1).**
 
-<1>1. $C$ is nonempty: e.g. $u(x) = 2$ satisfies $u \ge 0$ and $\int_0^1 x \cdot 2\,dx = 1 \ge 1$.
-::: {.proof}
-$\int_0^1 2x\,dx = 1$.
+::: solution
+<1>1. Prove that $C$ is nonempty, closed, and convex.
+::: proof
+The constant function $u\equiv2$ lies in $C$ because
+\[
+\int_0^1 2x\,dx=1.
+\]
+
+Convexity is immediate: if $u,v\in C$ and $0\le t\le1$, then $tu+(1-t)v\ge0$ a.e. and
+\[
+\int_0^1 x\bigl(tu+(1-t)v\bigr)\,dx
+=t\int_0^1xu\,dx+(1-t)\int_0^1xv\,dx\ge1.
+\]
+
+For closedness, suppose $u_n\in C$ and $u_n\to u$ in $L^1$. Since $u_n\ge0$ a.e., the negative part $u^-:=\max(-u,0)$ satisfies
+\[
+u^-(x)\le |u(x)-u_n(x)|
+\]
+for a.e. $x$. Hence
+\[
+\|u^-\|_1\le\|u-u_n\|_1\to0,
+\]
+so $u\ge0$ a.e. Also $x\in L^\infty([0,1])$, so
+\[
+\left|\int_0^1x(u_n-u)\,dx\right|\le\|u_n-u\|_1\to0.
+\]
+Thus
+\[
+\int_0^1xu\,dx=\lim_n\int_0^1xu_n\,dx\ge1,
+\]
+and $u\in C$. Therefore $C$ is closed.
 :::
 
-<1>2. $C$ is convex.
-::: {.proof}
-if $u, v \in C$ and $0 \le t \le 1$, then $tu + (1-t)v \ge 0$ a.e. and $\int_0^1 x(tu + (1-t)v)\,dx = t\int xu + (1-t)\int xv \ge t + (1-t) = 1$.
+<1>2. Compute the distance from $0$ to $C$.
+::: proof
+If $u\in C$, then $u\ge0$ a.e. and $0\le x\le1$, so
+\[
+\|u\|_1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
+\]
+Hence $d(0,C)\ge1$.
+
+For $0<\varepsilon<1$, define
+\[
+v_\varepsilon(x)=\frac{1}{\varepsilon(1-\varepsilon/2)}\mathbf1_{[1-\varepsilon,1]}(x).
+\]
+Then
+\[
+\int_0^1xv_\varepsilon(x)\,dx
+=\frac{1}{\varepsilon(1-\varepsilon/2)}\int_{1-\varepsilon}^1x\,dx=1,
+\]
+so $v_\varepsilon\in C$. Moreover,
+\[
+\|v_\varepsilon\|_1=\frac{1}{1-\varepsilon/2}\longrightarrow1.
+\]
+Thus $d(0,C)\le1$, and therefore
+\[
+\boxed{d(0,C)=1.}
+\]
 :::
 
-<1>3. $C$ is closed.
-::: {.proof}
-the map $u \mapsto \int_0^1 x u(x)\,dx$ is continuous on $L^1$ (it is a bounded linear functional, since $|x| \le 1$), so the set $\{u : \int xu \ge 1\}$ is closed; and the set $\{u : u \ge 0 \text{ a.e.}\}$ is closed in $L^1$ (a limit of nonnegative functions is nonnegative a.e., passing to a subsequence). The intersection of closed sets is closed.
-:::
-
-**(2).**
-
-<1>1. For any $u \in C$, $\|u\| = \int_0^1 |u| = \int_0^1 u \ge \int_0^1 x u(x)\,dx \ge 1$.
-::: {.proof}
-$u \ge 0$ so $|u| = u$, and $x \le 1$ on $[0,1]$ so $u \ge xu$.
-:::
-
-<1>2. Hence $d(0, C) \ge 1$.
-::: {.proof}
-<1>1.
-:::
-
-<1>3. For $\varepsilon > 0$, define $u_\varepsilon(x) = \frac{1}{\varepsilon}\chi_{[1-\varepsilon, 1]}(x)$.
-::: {.proof}
-a piecewise constant function concentrated near $x = 1$.
-:::
-
-<1>4. $\int_0^1 x u_\varepsilon(x)\,dx = \frac{1}{\varepsilon}\int_{1-\varepsilon}^1 x\,dx = \frac{1}{\varepsilon}\cdot\frac{1 - (1-\varepsilon)^2}{2} = 1 - \frac{\varepsilon}{2}$.
-::: {.proof}
-compute the integral.
-:::
-
-<1>5. Define $v_\varepsilon(x) = \frac{u_\varepsilon(x)}{1 - \varepsilon/2} = \frac{1}{\varepsilon(1 - \varepsilon/2)}\chi_{[1-\varepsilon,1]}(x)$; then $\int_0^1 x v_\varepsilon = 1$, so $v_\varepsilon \in C$.
-::: {.proof}
-<1>4, scaled so the constraint is exactly $1$.
-:::
-
-<1>6. $\|v_\varepsilon\| = \int_0^1 v_\varepsilon = \frac{1}{\varepsilon(1-\varepsilon/2)} \cdot \varepsilon = \frac{1}{1-\varepsilon/2} \to 1$ as $\varepsilon \to 0$.
-::: {.proof}
-compute the $L^1$ norm.
-:::
-
-<1>7. Hence $d(0, C) \le 1$.
-::: {.proof}
-<1>6 (the infimum is at most $\lim_{\varepsilon \to 0} \|v_\varepsilon\| = 1$).
-:::
-
-<1>8. Therefore $d(0, C) = 1$.
-::: {.proof}
-<1>2 and <1>7.
-:::
-
-**(3).**
-
-<1>1. Suppose $u \in C$ with $\|u\| = 1$.
-::: {.proof}
-assume a minimizer exists.
-:::
-
-<1>2. Then $\int_0^1 u = 1$ and $\int_0^1 x u \ge 1$, so $\int_0^1 (1 - x) u(x)\,dx = \int_0^1 u - \int_0^1 xu \le 0$.
-::: {.proof}
-<1>1 and the constraint.
-:::
-
-<1>3. But $1 - x \ge 0$ and $u \ge 0$ a.e., so $\int_0^1 (1-x)u(x)\,dx \ge 0$.
-::: {.proof}
-nonnegativity of the integrand.
-:::
-
-<1>4. Hence $\int_0^1 (1-x)u(x)\,dx = 0$, so $(1-x)u(x) = 0$ a.e., i.e. $u = 0$ a.e. on $[0,1)$.
-::: {.proof}
-<1>2 and <1>3 (a nonnegative integrable function with zero integral is zero a.e.).
-:::
-
-<1>5. Then $\int_0^1 x u(x)\,dx = 0$ (since $u = 0$ a.e. on $[0,1)$ and the point $x = 1$ has measure zero).
-::: {.proof}
-<1>4.
-:::
-
-<1>6. This contradicts the constraint $\int_0^1 x u \ge 1$.
-::: {.proof}
-<1>5.
-:::
-
-<1>7. Hence no $u \in C$ attains $\|u\| = 1$.
-::: {.proof}
-<1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>3 (1), <1>8 (2), <1>7 (3).
+<1>3. Show that the distance is not attained.
+::: proof
+Suppose $u\in C$ and $\|u\|_1=1$. Since $u\ge0$ a.e.,
+\[
+1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
+\]
+Hence equality holds throughout, so
+\[
+\int_0^1(1-x)u(x)\,dx=0.
+\]
+The integrand is nonnegative. Therefore
+\[
+(1-x)u(x)=0
+\]
+a.e., which implies $u=0$ a.e. on $[0,1)$. Since the point $1$ has measure zero, $u=0$ in $L^1$, contradicting
+\[
+\int_0^1xu\,dx\ge1.
+\]
+Thus no element of $C$ attains the distance $1$ from the origin.
 :::
 :::

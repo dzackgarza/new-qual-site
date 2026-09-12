@@ -15,9 +15,39 @@ review: draft
 ---
 
 ::: problem
-Let $\phi: A \to A$ be a module endomorphism on a simple module $A$.
-Then $\im \phi \definedas \phi(A)$ is a submodule of $A$.
-Since $A$ is simple, we have either $\im \phi = 0$, in which case $\phi$ is the zero map, or $\im \phi = A$, so $\phi$ is surjective.
-In this case, we can also consider $\ker \phi$, which is a submodule of $A$.
-Since $A$ is simple, we can again only have $\ker \phi = A$, which can not happen if $\phi$ is not the zero map, or $\ker \phi = 0$, in which case $\phi$ is both a surjective and an injective map and thus an isomorphism of modules.
+Let $A$ be a simple module and let
+\[
+\phi:A\to A
+\]
+be a module endomorphism. Prove that either $\phi=0$ or $\phi$ is an isomorphism.
+:::
+
+::: solution
+Both
+\[
+\ker\phi
+\quad\text{and}\quad
+\operatorname{im}\phi
+\]
+are submodules of $A$.
+
+Since $A$ is simple, its only submodules are $0$ and $A$.
+
+If $\operatorname{im}\phi=0$, then $\phi=0$.
+
+Otherwise
+\[
+\operatorname{im}\phi=A,
+\]
+so $\phi$ is surjective. In this case $\phi\ne0$, hence
+\[
+\ker\phi\ne A.
+\]
+Simplicity therefore forces
+\[
+\ker\phi=0.
+\]
+Thus $\phi$ is injective and surjective, hence an isomorphism.
+
+This is Schur's lemma in module form.
 :::

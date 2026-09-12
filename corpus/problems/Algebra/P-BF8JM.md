@@ -12,39 +12,58 @@ classification:
   - Field Extensions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
-::: problem
-This is true.
-By the Galois correspondence, it suffices to show that $H \definedas \Gal(M/L)$ is a normal subgroup of $G \definedas \Gal(M/ K)$.
-To that end, let $\phi \in G$, so $\phi: M \to M$ is a lift of $\id_K$.
-Then $H \normal G$ iff $\phi H \phi\inv = H$.
-Letting $\sigma \in H$, we need to show that
-$$
-(\phi\inv \circ \sigma \circ \phi)(L) = L,
-$$
-i.e. that this composition is some automorphism of $M$ that fixes $L$.
 
-Consider how this acts on elements of $L$.
-If $\ell \in L$, then $\ell = \sum k_i \ell_i$ since $L$ is a finite-degree extension, thus algebraic, thus spanned by some basis $\ell_i \in L$ as a vector space over $K$.
-
-In particular, since $\phi$ is some $M\dash$automorphism, it restricts to an $L\dash$automorphism, which must send each $\ell_i$ to some conjugate $\ell_i'$.
-Similarly, $\phi\inv(\ell_i') = \ell_i$.
-
-We thus have
+::: {.problem}
+Let $M/K$ be a finite Galois extension and let $K\subseteq L\subseteq M$ be an intermediate field such that $L/K$ is Galois. Prove that
 \[
-\begin{align*}
-(\phi\inv \sigma \phi)(a) &=
-(\phi\inv \sigma \phi)(\sum k_i \ell_i) \\
-&= (\phi\inv \sigma)(\sum k_i \phi(\ell_i)) \\
-&= (\phi\inv \sigma)(\sum k_i \ell_i') \\
-&= (\phi\inv)(\sum k_i \sigma(\ell_i')) \\
-&= (\phi\inv)(\sum k_i \ell_i') \quad\text{since $\sigma$ fixes $L$}\\
-&= \sum k_i \phi\inv(\ell_i') \\
-&= \sum k_i \ell_i \\
-,\end{align*}
+\Gal(M/L)\trianglelefteq \Gal(M/K).
+\]
+:::
+
+::: {.solution}
+Set
+\[
+G=\Gal(M/K),
+\qquad
+H=\Gal(M/L).
 \]
 
-and so this composite fixes $L$ as desired.
-This $H \normal G$, which is what we wanted to show.
+<1>1. Every $\phi\in G$ preserves $L$ setwise.
+::: {.proof}
+Because $L/K$ is Galois, it is normal. Therefore every $K$-embedding of $L$ into an algebraic closure has image $L$. The restriction $\phi|_L$ is such a $K$-embedding, so
+\[
+\phi(L)=L.
+\]
+:::
+
+<1>2. For every $\phi\in G$ and $\sigma\in H$, the conjugate $\phi\sigma\phi^{-1}$ fixes $L$ pointwise.
+::: {.proof}
+Let $\ell\in L$. By <1>1, $\phi^{-1}(\ell)\in L$. Since $\sigma\in H$, it fixes every element of $L$, hence
+\[
+\sigma(\phi^{-1}(\ell))=\phi^{-1}(\ell).
+\]
+Applying $\phi$ gives
+\[
+(\phi\sigma\phi^{-1})(\ell)=\ell.
+\]
+Thus $\phi\sigma\phi^{-1}\in H$.
+:::
+
+<1>3. Therefore $H\trianglelefteq G$.
+::: {.proof}
+By <1>2,
+\[
+\phi H\phi^{-1}\subseteq H
+\]
+for every $\phi\in G$. Applying the same inclusion to $\phi^{-1}$ gives the reverse containment, hence equality.
+:::
 :::

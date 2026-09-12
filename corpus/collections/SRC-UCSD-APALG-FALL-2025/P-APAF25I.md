@@ -26,7 +26,7 @@ Suppose that the variety of $I$ is $V(I)=\{(1,0),(0,1)\}\subseteq k^2$.
 (b) Do we necessarily have $\dim_k(k[x,y]/I)<100$?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove finite-dimensionality of $k[x,y]/I$ for a two-point variety in (a), and construct an ideal with $\dim_k(k[x,y]/I) \ge 100$ in (b).
 
 <1>1. Part (a): Finite-dimensionality of $k[x,y]/I$.

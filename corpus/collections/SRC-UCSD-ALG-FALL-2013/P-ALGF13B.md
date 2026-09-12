@@ -31,8 +31,7 @@ Prove that if $D[x]$ is a PID, then $D$ is a field.
 :::
 
 ::: {.solution}
-Let \(0
-eq a\in D\). We prove that \(a\) is a unit.
+Let \(0\neq a\in D\). We prove that \(a\) is a unit.
 
 <1>1. The ideal \((a,x)\subseteq D[x]\) is principal.
 ::: {.proof}
@@ -45,8 +44,7 @@ Thus \(f\mid a\) and \(f\mid x\) in \(D[x]\).
 
 <1>2. The generator \(f\) is a unit of \(D[x]\).
 ::: {.proof}
-Because \(f\mid a\) and \(a
-eq0\) is constant, degree additivity in the domain \(D[x]\) gives
+Because \(f\mid a\) and \(a\neq0\) is constant, degree additivity in the domain \(D[x]\) gives
 \[
 \deg f=0.
 \]

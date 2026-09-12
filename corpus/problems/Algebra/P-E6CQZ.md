@@ -16,59 +16,65 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
-Consider $\SL_2(R)$ acting on $\RR^2$ by matrix multiplication.
+Consider $\SL_2(\RR)$ acting on $\RR^2$ by matrix multiplication.
 What is the stabiliser of a point?
 Does it depend which point?
 Do you know what sort of subgroup this is?
-What if $\SL_2(R)$ acts by Möbius transformations instead?
+What if $\SL_2(\RR)$ acts by Möbius transformations instead?
 :::
 
 ::: {.solution}
-<1>1. For the linear action on $\mathbb{R}^2$, the stabilizer of $0$ is all of $\SL_2(\mathbb{R})$.
-::: {.proof}
-every matrix fixes the origin.
-:::
+For the linear action of $\operatorname{SL}_2(\mathbb R)$ on $\mathbb R^2$, the stabilizer of $0$ is the whole group.
 
-<1>2. For a nonzero point $v \neq 0$, the stabilizer is $\{A \in \SL_2(\mathbb{R}) : Av = v\}$, the matrices with $v$ as an eigenvector of eigenvalue $1$.
-::: {.proof}
-definition of stabilizer.
-:::
+If $v\ne0$, choose $g\in\operatorname{SL}_2(\mathbb R)$ with $g e_1=v$. Then
+\[
+\operatorname{Stab}(v)=g\,\operatorname{Stab}(e_1)\,g^{-1},
+\]
+and
+\[
+\operatorname{Stab}(e_1)
+=
+\left\{
+\begin{pmatrix}1&t\\0&1\end{pmatrix}:t\in\mathbb R
+\right\}.
+\]
+Thus all nonzero-point stabilizers are conjugate unipotent subgroups isomorphic to $(\mathbb R,+)$, while the stabilizer of $0$ is all of $\operatorname{SL}_2(\mathbb R)$.
 
-<1>3. The stabilizer of a nonzero point is conjugate to the subgroup $\left\{\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} : t \in \mathbb{R}\right\}$ (the unipotent upper-triangular matrices).
-::: {.proof}
-by a change of basis sending $v$ to $(1, 0)$, the stabilizer becomes the matrices fixing $(1,0)$, which are exactly $\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$.
-:::
+For the Möbius action
+\[
+z\longmapsto \frac{az+b}{cz+d},
+\qquad
+\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb R),
+\]
+there are two natural spaces to distinguish.
 
-<1>4. Hence the stabilizer depends on the point: it is $\SL_2(\mathbb{R})$ at $0$ and a unipotent subgroup (isomorphic to $(\mathbb{R}, +)$) at any nonzero point.
-::: {.proof}
-<1>1 and <1>3.
-:::
+On the upper half-plane $\mathbb H$, the action is transitive and
+\[
+\operatorname{Stab}(i)
+=
+\left\{
+\begin{pmatrix}
+\cos\theta&\sin\theta\\
+-\sin\theta&\cos\theta
+\end{pmatrix}:\theta\in\mathbb R
+\right\}
+\cong \operatorname{SO}(2).
+\]
+Hence every stabilizer of a point of $\mathbb H$ is conjugate to $\operatorname{SO}(2)$.
 
-<1>5. For the Möbius action on the upper half-plane $\mathbb{H}$ (or $\mathbb{R} \cup \{\infty\}$), $\SL_2(\mathbb{R})$ acts by $z \mapsto \frac{az + b}{cz + d}$.
-::: {.proof}
-the Möbius action.
-:::
-
-<1>6. The stabilizer of $i \in \mathbb{H}$ is $\operatorname{SO}(2)$ (the rotation matrices $\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$).
-::: {.proof}
-the matrices fixing $i$ are those with $\frac{ai + b}{ci + d} = i$, which are exactly the rotations.
-:::
-
-<1>7. The stabilizer of any point of $\mathbb{H}$ is conjugate to $\operatorname{SO}(2)$ (the action is transitive).
-::: {.proof}
-<1>6 and transitivity of the Möbius action on $\mathbb{H}$.
-:::
-
-<1>8. Hence for the Möbius action, the stabilizer is always a compact subgroup isomorphic to $\operatorname{SO}(2) \cong S^1$ (independent of the point, up to conjugacy).
-::: {.proof}
-<1>7.
-:::
-
-<1>9. Q.E.D.
-::: {.proof}
-<1>4 and <1>8.
-:::
+On the boundary $\mathbb P^1(\mathbb R)=\mathbb R\cup\{\infty\}$, the action is also transitive, but the stabilizers are different. For example,
+\[
+\operatorname{Stab}(\infty)
+=
+\left\{
+\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a\in\mathbb R^\times,\ b\in\mathbb R
+\right\},
+\]
+a Borel subgroup; every boundary-point stabilizer is conjugate to it.
 :::

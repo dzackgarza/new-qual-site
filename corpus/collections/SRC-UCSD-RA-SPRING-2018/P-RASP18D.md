@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 4 of the official UCSD Spring 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing integration-by-parts and density proof reviewed as correct; normalized the legacy solution block.
 ---
 
 ::: problem
@@ -30,7 +38,7 @@ $$
 $$
 :::
 
-::: {.solution}
+::: solution
 <1>1. Part 1: Bound for $f \in C_c^1(\mathbb{R})$ via integration by parts:
 <2>1. Since $f \in C_c^1(\mathbb{R})$, $f$ and $f'$ have compact support contained in some interval $[-R, R]$.
 Using integration by parts with $u = f(x)$ and $dv = \varphi'(\lambda x)\,dx$ (so $v = \frac{1}{\lambda} \varphi(\lambda x)$):

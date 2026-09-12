@@ -12,6 +12,15 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 2 of the official UGA August 2019 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed the parametric-integral differentiation argument; it proves the stronger bound 1/(n+1), hence the required 1/n estimate.
 ---
 
 ::: problem
@@ -69,4 +78,3 @@ $$
     For all $x \ne 0$ and $n \ge 1$, $\left| \frac{d^n}{dx^n} \left(\frac{\sin x}{x}\right) \right| \le \frac{1}{n+1} \le \frac{1}{n}$.
 :::
 :::
-

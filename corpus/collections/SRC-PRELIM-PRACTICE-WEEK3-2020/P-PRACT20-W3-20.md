@@ -1,0 +1,26 @@
+---
+schema: qual/card@1
+id: P-PRACT20-W3-20
+kind: problem
+title: "Week 3: Calculus II (Part 2) & Calculus III, problem 20"
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Minimize the function $f ( x , y , z ) = x + 4 z$ on the curve $x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 2$
+:::
+
+::: {.solution}
+The minimum must satisfy
+
+$$
+1 = 2 \lambda x , ~ 0 = 2 \lambda y , ~ 4 = 2 \lambda z .
+$$
+
+Plugging these into the constrant gives $\scriptstyle { \frac { 1 } { 4 \lambda ^ { 2 } } } + { \frac { 4 } { \lambda ^ { 2 } } } = 2 \sec \lambda ^ { 2 } = 1 7 / 8$ . Since f is increasing in both x and z, we take the negative roots and find that f is minimized along the curve at $( - \sqrt { 2 / 1 7 } , 0 , - \sqrt { 3 2 / 1 7 } )$
+:::

@@ -20,3 +20,27 @@ Define the analytic continuations explicitly and explain briefly why these satis
 
 (b) Explain why the Monodromy Theorem does not apply for your example in (a) to conclude that $[g_1]_b = [f_1]_b$.
 :::
+
+::: solution
+Take the germ at $1$ of a logarithm, with $h(1)=0$. Continue it along the two
+paths
+\[
+\gamma(t)=e^{i\pi t},\qquad \sigma(t)=e^{-i\pi t},\qquad 0\le t\le1,
+\]
+from $1$ to $-1$ (after translating the endpoint notation of the problem, use
+the same construction around the puncture and terminate at the prescribed
+point $b$). On small disks along either path choose the logarithm whose values
+agree on overlaps. Along the upper path the terminal value is $i\pi$, while
+along the lower path it is $-i\pi$; hence the terminal germs differ by
+$2\pi i$.
+
+Equivalently, for paths from $1$ to the stated endpoint $b=0$, use the germ of
+$\log(z-c)$ about $1$ for any puncture $c\ne0,1$ and choose two paths from
+$1$ to $0$ whose concatenation winds once around $c$. The same overlap
+construction gives terminal germs differing by $2\pi i$.
+
+The Monodromy Theorem does not apply because the two paths are not homotopic
+with fixed endpoints in the domain of continuation: their concatenation has
+nonzero winding number about the omitted point. Thus the relevant continuation
+domain is not simply connected.
+:::

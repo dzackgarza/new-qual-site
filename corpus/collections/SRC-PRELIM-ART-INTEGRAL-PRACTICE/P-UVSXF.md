@@ -11,14 +11,35 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the exponent in the stored substitution work.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-11. $\displaystyle \int x\sqrt {x+1}~dx =  \color {blue} {\frac {2}{5} (x + 1)^{\frac {5}{2}} - \frac {2}{3} (x + 1)^{\frac {3}{2}}}$
+Evaluate
+\[
+\int x\sqrt{x+1}\,dx.
+\]
+:::
 
-- **Solution:** $u = x + 1$, $du = dx$
-
-- **Solution:** $x\sqrt {x + 1} ~dx = (u - 1) \sqrt {u} ~du = u^{\frac {3}{2}} - u^{- \frac {1}{2}} ~du$
-
-- **Used 2019**
+::: solution
+Let $u=x+1$, so $x=u-1$ and $du=dx$. Then
+\[
+(u-1)u^{1/2}=u^{3/2}-u^{1/2},
+\]
+so
+\[
+\int x\sqrt{x+1}\,dx
+=\frac25u^{5/2}-\frac23u^{3/2}+C.
+\]
+Therefore
+\[
+\boxed{\int x\sqrt{x+1}\,dx=\frac25(x+1)^{5/2}-\frac23(x+1)^{3/2}+C.}
+\]
 :::

@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,67 +26,59 @@ $$G \coloneqq \{z \in \mathbb{C} \mid |z-1| < \sqrt{2}, \, |z+1| < \sqrt{2}\} \s
 :::
 
 ::: solution
-The two boundary circles meet at $\pm i$ with interior angle $\pi/2$.
-Set
-\[
-T_1(z)=\frac{z-i}{z+i}.
-\]
-This sends $i$ to $0$, $-i$ to $\infty$, and therefore sends the two boundary circles to two lines through the origin. Since $T_1(0)=-1$ lies in the image of the lens, the unslit lens maps to the sector
-\[
-\frac{3\pi}{4}<\arg w<\frac{5\pi}{4},
-\]
-whose angle is $\pi/2$. Moreover
-\[
-T_1(it)=\frac{t-1}{t+1}\in[-1,0)
-\qquad(0\le t<1),
-\]
-so the slit maps to the radial segment $[-1,0)$.
+The two circles $|z-1|=\sqrt2$ and $|z+1|=\sqrt2$ meet orthogonally at $\pm i$. Set
+$$
+T(z)=\frac{z-i}{z+i}.
+$$
+Then $T(i)=0$, $T(-i)=\infty$, so the two circular boundary arcs become rays. Since $T(0)=-1$, the unslit lens maps to the sector
+$$
+\frac{3\pi}{4}<\arg w<\frac{5\pi}{4}.
+$$
+Moreover, for $0\le t<1$,
+$$
+T(it)=\frac{t-1}{t+1}\in[-1,0),
+$$
+so the slit maps to that radial segment.
 
-Rotate by $T_2(w)=-w$. Then
-\[
-T_2T_1(G)
-=\left\{\zeta:-\frac\pi4<\arg\zeta<\frac\pi4\right\}\setminus(0,1].
-\]
-Squaring is injective on this sector and gives
-\[
-u=\zeta^2\in\HH_R\setminus(0,1],
-\qquad
-\HH_R=\{u:\Re u>0\}.
-\]
+<1>1. Rotate by $-1$:
+$$
+\zeta=-T(z).
+$$
+Then
+$$
+-\frac\pi4<\arg\zeta<\frac\pi4,
+\qquad \zeta\notin(0,1].
+$$
+Squaring maps this slit sector biholomorphically onto
+$$
+\{u:\Re u>0\}\setminus(0,1].
+$$
 
-Next use the right-half-plane Cayley map
-\[
-v=\frac{u-1}{u+1}.
-\]
-It sends $\HH_R$ to $\DD$ and the removed interval $(0,1]$ to $(-1,0]$. Thus
-\[
-v\in\DD\setminus(-1,0].
-\]
-The principal square root
-\[
-s=\sqrt v
-\]
-maps this slit disk biholomorphically onto the right half-disk
-\[
-\{s:|s|<1,\ \Re s>0\}.
-\]
+<1>2. The Cayley transform
+$$
+v=\frac{u-1}{u+1}
+$$
+maps the right half-plane to $\mathbb D$ and $(0,1]$ to $(-1,0]$. Thus
+$$
+v\in\mathbb D\setminus(-1,0].
+$$
+The principal square root maps this slit disk biholomorphically onto the right half-disk
+$$
+H_+=\{s:|s|<1,\ \Re s>0\}.
+$$
 
-Finally,
-\[
+<1>3. Finally,
+$$
 q=\frac{s-i}{s+i}
-\]
-sends the right half-disk to the third quadrant, and $q\mapsto q^2$ sends that quadrant biholomorphically onto $\HH$.
+$$
+maps the imaginary diameter of $H_+$ to the negative real axis and the semicircular boundary to the negative imaginary axis; hence it maps $H_+$ biholomorphically onto the third quadrant. Squaring then maps that quadrant biholomorphically onto the upper half-plane.
 
-Consequently an explicit conformal map $G\to\HH$ is the composition
-\[
-z
-\mapsvia{T_1}\frac{z-i}{z+i}
-\mapsvia{-}\zeta
-\mapsvia{(\cdot)^2}u
-\mapsvia{(u-1)/(u+1)}v
-\mapsvia{\sqrt{\phantom v}}s
-\mapsvia{(s-i)/(s+i)}q
-\mapsvia{(\cdot)^2}q^2,
-\]
-where the square root is the principal branch on $\DD\setminus(-1,0]$.
+Therefore the composition
+$$
+z\mapsto T(z)\mapsto -T(z)\mapsto(-T(z))^2
+\mapsto \frac{(-T(z))^2-1}{(-T(z))^2+1}
+\mapsto \sqrt{\frac{(-T(z))^2-1}{(-T(z))^2+1}}
+\mapsto q\mapsto q^2
+$$
+with the principal square root is a bijective conformal map $G\to\mathbb H$.
 :::

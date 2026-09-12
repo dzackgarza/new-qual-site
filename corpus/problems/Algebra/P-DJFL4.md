@@ -12,13 +12,35 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Since 0 is an eigenvalue, there exists an eigenvector $\vector v$ such that $L\vector v = 0 \vector v = 0$.
-But then $\vector v \in \ker(L)$, so $\dim\ker(L) \geq 1$.
-Since $\ker(L) \neq 0$, $L$ can not be injective.
+Let $L:\RR^5\to\RR^5$ be linear. Show that if $0$ is an eigenvalue of $L$, then $L$ is neither injective nor surjective.
+:::
 
-By the rank-nullity theorem, we must also have $5 = \dim\ker(L) + \dim \im (L)$.
-But then $\dim \im (L) \leq 5 = \dim \RR^5$, so $L$ can not be surjective either.
+::: {.solution}
+<1>1. The map $L$ is not injective.
+::: {.proof}
+Since $0$ is an eigenvalue, there is a nonzero vector $v$ such that $L(v)=0$. Thus $0\ne v\in\ker L$.
+:::
+
+<1>2. The map $L$ is not surjective.
+::: {.proof}
+By rank-nullity,
+\[
+5=\dim\ker L+\dim\operatorname{im}L.
+\]
+Since $\dim\ker L\ge1$,
+\[
+\dim\operatorname{im}L\le4<5=\dim\RR^5.
+\]
+Hence $\operatorname{im}L\ne\RR^5$.
+:::
 :::

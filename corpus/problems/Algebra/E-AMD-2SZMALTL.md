@@ -15,54 +15,43 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
-Show that every finite $p\dash$group is nilpotent.
+Show that every finite $p$-group is nilpotent.
 :::
 
 ::: {.solution}
-Let $G$ be a finite $p$-group of order $|G| = p^n$ where $n \geq 1$.
-We proceed by induction on $n$.
+Let \(G\) be a finite \(p\)-group. We prove by induction on \(|G|\) that its upper central series reaches \(G\).
 
-1. **Lemma (Non-triviality of the center of a finite $p$-group):** Consider the class equation for $G$:
-   $$
-   |G| = |Z(G)| + \sum_{i=1}^k [G : C_G(x_i)],
-   $$
-   where $x_1, \ldots, x_k$ are representatives of the conjugacy classes of size strictly greater than 1.
+<1>1. Every nontrivial finite \(p\)-group has nontrivial center.
+::: {.proof}
+The class equation is
+\[
+|G|=|Z(G)|+\sum_i [G:C_G(x_i)],
+\]
+where the sum runs over representatives of noncentral conjugacy classes. Each index in the sum is a nontrivial power of \(p\), hence divisible by \(p\). Since \(|G|\) is divisible by \(p\), so is \(|Z(G)|\). Thus \(|Z(G)|\ge p\).
+:::
 
-   - For each $i$, $[G : C_G(x_i)] > 1$ divides $|G| = p^n$, so $p$ divides $[G : C_G(x_i)]$.
+<1>2. The quotient \(G/Z(G)\) is a strictly smaller finite \(p\)-group.
+::: {.proof}
+By <1>1, \(|Z(G)|\ge p\), so
+\[
+|G/Z(G)|=|G|/|Z(G)|<|G|.
+\]
+:::
 
-   - Since $p$ divides $|G|$ and $p$ divides every term in the sum $\sum_{i=1}^k [G : C_G(x_i)]$, it follows that $p$ must divide $|Z(G)|$.
+<1>3. The upper central series of \(G\) reaches \(G\).
+::: {.proof}
+Induct on \(|G|\). The trivial group is nilpotent. For nontrivial \(G\), the quotient \(G/Z(G)\) is nilpotent by induction. If its upper central series reaches \(G/Z(G)\) in \(c\) steps, then by the definition
+\[
+Z_{i+1}(G)/Z(G)=Z_i(G/Z(G))
+\]
+for the corresponding shifted series, so \(Z_{c+1}(G)=G\). Hence \(G\) is nilpotent.
+:::
 
-   - Since $e \in Z(G)$, $|Z(G)| \geq 1$.
-     Because $p \mid |Z(G)|$, we have:
-     $$
-     |Z(G)| \geq p > 1.
-     $$
-   Thus the center $Z(G)$ is non-trivial.
-
-2. **Induction Step using the Upper Central Series:** Define the upper central series $\{Z_i(G)\}$ of $G$ inductively by:
-   $$
-   Z_0(G) = 1, \qquad Z_1(G) = Z(G), \qquad Z_{i+1}(G) / Z_i(G) = Z(G / Z_i(G)).
-   $$
-
-   - **Base Case:** For $|G| = p^1$, $G \cong \ZZ_p$ is abelian, so $Z_1(G) = Z(G) = G$, and $G$ is nilpotent of class 1.
-
-   - **Inductive Step:** Assume that all $p$-groups of order $p^k$ (with $k < n$) are nilpotent.
-     Since $|Z(G)| \geq p$, the quotient group $\bar{G} = G / Z(G)$ is a $p$-group of strictly smaller order:
-     $$
-     |\bar{G}| = \frac{|G|}{|Z(G)|} \leq p^{n-1}.
-     $$
-     By the induction hypothesis, $\bar{G} = G / Z_1(G)$ is nilpotent.
-     Therefore, the upper central series of $\bar{G}$ reaches $\bar{G}$ in finitely many steps, say $c$ steps:
-     $$
-     Z_c(G / Z_1(G)) = G / Z_1(G).
-     $$
-     By the correspondence theorem for the upper central series, this implies:
-     $$
-     Z_{c+1}(G) = G.
-     $$
-
-Hence, the upper central series of $G$ terminates at $G$ in at most $n$ steps ($Z_n(G) = G$). Therefore, every finite $p$-group is nilpotent.
+Therefore every finite \(p\)-group is nilpotent.
 :::

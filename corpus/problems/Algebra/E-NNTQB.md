@@ -15,35 +15,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Reduced Lagrange index formula to the coset partition.
 ---
 
 ::: {.exercise}
-Show that if $G$ is finite then $\abs{G}/\abs{H} = [G: H]$.
+Show that if $G$ is finite and $H\le G$, then
+\[
+[G:H]=\frac{|G|}{|H|}.
+\]
 :::
 
 ::: {.solution}
-<1>1. The left cosets of $H$ in $G$ partition $G$ into $[G : H]$ disjoint sets.
-::: {.proof}
-the cosets $gH$ are the equivalence classes of the relation $g_1 \sim g_2 \iff g_1^{-1}g_2 \in H$.
-:::
-
-<1>2. Each coset $gH$ has exactly $|H|$ elements.
-::: {.proof}
-the map $H \to gH$, $h \mapsto gh$, is a bijection.
-:::
-
-<1>3. Hence $|G| = [G : H] \cdot |H|$.
-::: {.proof}
-<1>1 and <1>2 (the total number of elements is the number of cosets times the size of each coset).
-:::
-
-<1>4. Therefore $|G|/|H| = [G : H]$.
-::: {.proof}
-<1>3, dividing by $|H|$.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
-:::
+The left cosets of $H$ partition $G$. For each $g\in G$, multiplication by $g$ gives a bijection
+\[
+H\longrightarrow gH,\qquad h\mapsto gh,
+\]
+so every coset has $|H|$ elements. Since there are $[G:H]$ cosets,
+\[
+|G|=[G:H]\,|H|.
+\]
+Therefore
+\[
+[G:H]=\frac{|G|}{|H|}.
+\]
 :::

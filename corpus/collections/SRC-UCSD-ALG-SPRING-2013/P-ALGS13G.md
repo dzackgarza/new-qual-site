@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -23,38 +29,48 @@ Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
 :::
 
 ::: {.solution}
-<1>1. Let $E/F$ be finite separable and let $N$ be its normal closure; then $N/F$ is finite Galois with $G=\Gal(N/F)$.
+<1>1. Let $E/F$ be a finite separable extension, let $N$ be its normal closure over $F$, and set $G=\operatorname{Gal}(N/F)$.
 ::: {.proof}
-normal closure of separable extension is Galois.
+Because $E/F$ is finite separable, its normal closure $N/F$ is finite Galois.
 :::
 
-<1>2. For any $H\le G$, $[N^H\!:\!F]=[G\!:\!H]$.
+<1>2. The hypothesis implies that $p\mid |G|$.
 ::: {.proof}
-Galois correspondence.
+Take the finite extension $N/F$.
+Since $N\ne F$ unless the claim is trivial, the hypothesis gives $p\mid [N:F]=|G|$.
 :::
 
-<1>3. By hypothesis every $N^H/F$ with $H<G$ has degree divisible by $p$, so every proper $H<G$ has $[G\!:\!H]$ divisible by $p$.
+<1>3. Let $P$ be a Sylow $p$-subgroup of $G$.
+Then $P=G$.
 ::: {.proof}
-<1>2.
+Suppose $P<G$.
+By the Galois correspondence, the fixed field $N^P$ is a proper finite extension of $F$ and
+\[
+[N^P:F]=[G:P].
+\]
+The hypothesis therefore gives $p\mid [G:P]$.
+But $P$ is a Sylow $p$-subgroup, so $[G:P]$ is relatively prime to $p$.
+This contradiction shows $P=G$.
 :::
 
-<1>4. Hence every maximal subgroup of $G$ has index $p$.
+<1>4. Hence $G$ is a $p$-group.
 ::: {.proof}
-maximal subgroups have prime index; by <1>3 the prime is $p$.
+By <1>3, $G=P$, and $P$ has order a power of $p$.
 :::
 
-<1>5. A finite group whose maximal subgroups all have index $p$ is a $p$-group.
+<1>5. Let $H=\operatorname{Gal}(N/E)$.
+Then
+\[
+[E:F]=[G:H],
+\]
+so $[E:F]$ is a power of $p$.
 ::: {.proof}
-induction on $|G|$ (if $G$ not $p$-group, a Sylow $q$-subgroup for $q\neq p$ lies in a maximal subgroup of index $q$).
+The Galois correspondence gives $[E:F]=[G:H]$.
+Since $G$ is a finite $p$-group, every subgroup index is a power of $p$.
 :::
 
-<1>6. So $|G|$ is a power of $p$, hence $[E\!:\!F]=[G\!:\!H]$ is a power of $p$.
+<1>6. Therefore every finite separable extension of $F$ has degree a power of $p$.
 ::: {.proof}
-<1>5 and <1>2 with $H=\Gal(N/E)$.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+This is exactly <1>5.
 :::
 :::

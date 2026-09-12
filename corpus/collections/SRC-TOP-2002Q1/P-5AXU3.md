@@ -28,6 +28,10 @@ audit:
     than using 0 unless f(x0)=1. The finite image of f_* in pi_1(S^1) = Z is
     trivial, so the lifting criterion gives a lift to R, which contracts by a
     straight-line homotopy.
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
+
 ---
 
 ::: {.problem}
@@ -35,25 +39,42 @@ Show that if $X$ is a path-connected, locally path-connected topological space w
 :::
 
 ::: {.solution}
-Fix a basepoint $x_0\in X$ and let
+Let
 \[
-p:\mathbb R\longrightarrow S^1,
-\qquad
-p(t)=e^{2\pi i t},
+p:\mathbb R\to S^1,
+\qquad p(t)=e^{2\pi it},
 \]
-be the standard universal covering map.
-Choose $t_0\in\mathbb R$ such that
+be the universal covering map. Choose $t_0\in\mathbb R$ with $p(t_0)=f(x_0)$.
+
+The induced homomorphism
+\[
+f_*:\pi_1(X,x_0)\to\pi_1(S^1,f(x_0))\cong\mathbb Z
+\]
+has finite image because $\pi_1(X,x_0)$ is finite. The only finite subgroup of $\mathbb Z$ is $0$, so $f_*=0$.
+
+Since
+\[
+f_*(\pi_1(X,x_0))=0=p_*(\pi_1(\mathbb R,t_0)),
+\]
+the covering-space lifting criterion gives a lift
+\[
+\widetilde f:X\to\mathbb R,
+\qquad
+p\circ\widetilde f=f,
+\qquad
+\widetilde f(x_0)=t_0.
+\]
+Here the path-connectedness and local path-connectedness hypotheses on $X$ are exactly those required by the standard lifting criterion.
+
+Because $\mathbb R$ is convex,
+\[
+H(x,s)=(1-s)\widetilde f(x)+st_0
+\]
+defines a homotopy from $\widetilde f$ to the constant map $t_0$. Composing with $p$ gives a homotopy from $f$ to the constant map with value
 \[
 p(t_0)=f(x_0).
 \]
-
-<1>1. The induced homomorphism
-\[
-f_*:\pi_1(X,x_0)
-\longrightarrow
-\pi_1(S^1,f(x_0))\cong\mathbb Z
-\]
-is trivial.
+Therefore every map $f:X\to S^1$ is nullhomotopic.
 ::: {.proof}
 The group $\pi_1(X,x_0)$ is finite by hypothesis, so its homomorphic image
 \[
