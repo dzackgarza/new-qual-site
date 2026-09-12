@@ -33,7 +33,7 @@ m(V\sm H) = 0
 :::
 
 ::: {.solution}
-**Honesty note:** as printed, condition (2) does not mention $E$ at all, which makes it vacuous. The intended equivalence — the standard one — is: (1) holds iff there exist $V \in G_\delta$ and $H \in F_\sigma$ with $H \subseteq E \subseteq V$ and $m(V \setminus H) = 0$. The proof below is for that statement.
+Condition (2) needs the containment $H \subseteq E \subseteq V$ to be equivalent to (1). With that containment, the equivalence is: (1) holds iff there exist $V \in G_\delta$ and $H \in F_\sigma$ with $H \subseteq E \subseteq V$ and $m(V \setminus H) = 0$.
 
 <1>1. (1) $\implies$ (2): for each $k$, hypothesis (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $m(G_k \setminus F_k) < 1/k$.
     ::: {.proof}

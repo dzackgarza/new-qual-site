@@ -21,9 +21,6 @@ audit:
 Let the power series series $\sum_{n=0}^\infty a_nx^n$ and $\sum_{n=0}^\infty b_nx^n$ have radii of convergence $R_1$ and $R_2$, respectively.
 :::
 ::: {.solution}
-**Honesty note:** the card as written is a fragment — it states the setup (two power series with radii $R_1, R_2$) without a question.
-The standard companion questions are covered by the sibling cards P-E4WZN (radius of $\sum (a_n+b_n)x^n$) and P-FYGQ6 (radius of $\sum a_nb_nx^n$). This solution records the defining facts used there.
-
 <1>1. Cauchy–Hadamard formula: the radius of convergence of $\sum a_n x^n$ is $R = 1/\limsup_{n \to \infty} |a_n|^{1/n}$ (with $1/0 = \infty$, $1/\infty = 0$).
 ::: {.proof}
 the root test: $\limsup |a_n x^n|^{1/n} = |x| \limsup |a_n|^{1/n}$; the series converges absolutely when this is $< 1$, i.e. $|x| < R$, and diverges when $|x| > R$.
