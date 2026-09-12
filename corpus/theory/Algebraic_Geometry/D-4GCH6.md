@@ -34,7 +34,7 @@ $\Omega_{X/Y}$ is quasicoherent, and coherent when $f$ is of finite type.
 Quasicoherence is immediate from the construction and is the reason the construction is done that way: $\Omega_{B/A}$ is a $B$-module, its formation commutes with localization, $\Omega_{B_f/A} = (\Omega_{B/A})_f$, so the local pieces glue and the result is $\tilde{M}$ on each affine.
 The diagonal description is the one that makes it obviously functorial and obviously quasicoherent at once, being a pullback of an ideal sheaf.
 
-The two exact sequences are what the sheaf is for, and an examiner asking for the definition is usually heading for one of them:
+The sheaf of differentials has two associated exact sequences:
 \[
 f^*\Omega_{Y/S} \to \Omega_{X/S} \to \Omega_{X/Y} \to 0
 \]
