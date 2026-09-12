@@ -31,7 +31,9 @@ In dimension $1$ the two agree: a Noetherian local domain of dimension $1$ is no
 :::
 
 ::: {.theorem title="Normalization"}
-Let $X \subseteq \PP^{n}$ be a projective variety. Then there exists a unique normal projective variety $X_{\mathrm{norm}}$ and a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$ such that any morphism $f \colon X \to Y$ with $Y$ normal factors uniquely as $f \circ \nu = \bar{f}$ for a morphism $\bar{f} \colon X_{\mathrm{norm}} \to Y$. The same holds for affine varieties with $X \to \AA^{d}$ replaced by the affine normalization.
+Let $X \subseteq \PP^{n}$ be a projective variety.
+Then there exists a unique normal projective variety $X_{\mathrm{norm}}$ and a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$ such that any morphism $f \colon X \to Y$ with $Y$ normal factors uniquely as $f \circ \nu = \bar{f}$ for a morphism $\bar{f} \colon X_{\mathrm{norm}} \to Y$.
+The same holds for affine varieties with $X \to \AA^{d}$ replaced by the affine normalization.
 :::
 
 ::: {.remark}

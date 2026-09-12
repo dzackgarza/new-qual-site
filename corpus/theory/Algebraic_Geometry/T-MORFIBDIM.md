@@ -20,11 +20,13 @@ prompts:
 ---
 
 ::: {.theorem title="Noether normalization (affine)"}
-Let $X \subseteq \AA^{n}$ be an affine variety of dimension $d$. Then there exists a finite morphism $X \to \AA^{d}$ which is the restriction to $X$ of a linear map $\AA^{n} \to \AA^{d}$.
+Let $X \subseteq \AA^{n}$ be an affine variety of dimension $d$.
+Then there exists a finite morphism $X \to \AA^{d}$ which is the restriction to $X$ of a linear map $\AA^{n} \to \AA^{d}$.
 :::
 
 ::: {.theorem title="Noether normalization (projective)"}
-Let $X \subseteq \PP^{n}$ be a projective variety of dimension $d$. Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{k} \subseteq \PP^{n}$ disjoint from $X$, where $k + d = n - 1$.
+Let $X \subseteq \PP^{n}$ be a projective variety of dimension $d$.
+Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{k} \subseteq \PP^{n}$ disjoint from $X$, where $k + d = n - 1$.
 :::
 
 ::: {.theorem title="Fibre dimension"}
