@@ -93,7 +93,7 @@ so
 = {2\pi^2\over a^2}e^{i\pi\over a}
 .\]
 
-After some truly arduous arithmetic, this assembles to:
+Combining the residue and contour contributions gives:
 \[
 {2\pi^2\over a^2}e^{i\pi\over a}
 &= (1-\zeta_a) I - {2\pi^2\over a^2}i\zeta_a \csc\qty{\pi\over a} \\ \\
