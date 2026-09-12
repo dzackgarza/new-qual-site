@@ -3340,14 +3340,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-13.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-14.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-15.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-16.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-17.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-18.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-19.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-16.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-17.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-18.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-19.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-2.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-20.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-21.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-22.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-20.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-21.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-22.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-3.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-4.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-5.md
@@ -3759,14 +3759,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-6.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-7.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-8.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-1EVA.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-9X41.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-CG7N.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-D0GP.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-IF5V.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-PNK2.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-RTYK.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-YECG.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-1EVA.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-9X41.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-CG7N.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-D0GP.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-IF5V.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-PNK2.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-RTYK.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-YECG.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-0YG3.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-4WCP.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-6WTC.md

@@ -187,7 +187,7 @@ Van Kampen therefore quotients $\pi_1(\Sigma X)$ by the normal closure of the im
 <1>9. The homomorphism $\rho$ induces a surjection
 \[
 \boxed{
-\overline\rho:\pi_1(C)	woheadrightarrow
+\overline\rho:\pi_1(C)\twoheadrightarrow
 \frac{\prod_{n=1}^{\infty}\mathbb Z}
 {\bigoplus_{n=1}^{\infty}\mathbb Z}.
 }
