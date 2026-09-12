@@ -757,7 +757,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
 
-- [ ] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders**
+- [x] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH5-REVIEW`.
+  The retained Chapter 5 review source contains 20 numbered linear-algebra questions, all represented in source order by `P-GRECH5-01` through `P-GRECH5-20`; the inventory count of five was incomplete.
+  Earlier OCR repair and mathematical verification are recorded in `queues/E-corrections.md`, including repaired numbering, notation, and recoverable answer choices.
+  Surviving source gaps remain documented for Questions 8, 11, 12, 14, 17, and 20, where choices, coordinates, or scan glyphs could not be recovered reliably.
+  The existing collection already carries the vendored PDF as provenance, so no duplicate collection or problem cards were created.
 
 - [x] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH6-REVIEW`.
   The retained Chapter 6 review source contains 20 numbered group/ring/number-theory questions, all represented in source order by `P-GRECH6-01` through `P-GRECH6-20`; the inventory count of nine was incomplete.
