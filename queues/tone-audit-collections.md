@@ -3777,14 +3777,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-Q2T5.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-UBFI.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-VFKB.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-1.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-2.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-3.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-4.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-5.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-6.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-7.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-8.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-1.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-2.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-3.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-4.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-5.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-6.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-7.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-8.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-0H3A.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-2OUI.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-3SH7.md
@@ -4415,9 +4415,9 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-OLLMN.md
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-PBT3I.md
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-W5DZ6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-XT94O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-Z93SH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-ZB4N9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-XT94O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-Z93SH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-ZB4N9.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/18/E-20CHL.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/18/E-2CPNC.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/18/E-A0UGQ.md
