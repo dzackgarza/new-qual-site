@@ -30,7 +30,7 @@ How do you generalize (a) and (b)?
 :::{.solution title="1"}
 \envlist
 
-Slick proof: use that no curve $\gamma \subseteq \CC$ is open in $\CC$.
+Open mapping proof: use that no curve $\gamma \subseteq \CC$ is open in $\CC$.
 
 If $\abs{f} = c = r^2$ for some $r$, then the image of $f$ is contained in the curve $\bd \DD_r(0)$.
 Since $f$ is holomorphic on the source domain $\Omega$, $f$ is an open map, so if $f$ is nonconstant the $f(\Omega)$ is open.
@@ -75,7 +75,7 @@ Then $u_x = u_y = 0$, and CR yields $v_y = u_x = 0$ and $v_y = -u_x = 0$, so $v$
 :::
 
 :::{.solution title="3"}
-Slick proof: apply the open mapping theorem again, since $\Arg(f) = \theta_0$ implies that $\im(f) \subseteq \gamma$ for the curve $\gamma \da \ts{t e^{i\theta_0}\st t\in \RR}$ which has no open subsets.
+Open mapping proof: apply the open mapping theorem again, since $\Arg(f) = \theta_0$ implies that $\im(f) \subseteq \gamma$ for the curve $\gamma \da \ts{t e^{i\theta_0}\st t\in \RR}$ which has no open subsets.
 
 Note that this implies that any $\RR\dash$valued holomorphic function is constant.
 :::
