@@ -440,7 +440,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Group_Theory_(No_Solns).pdf](assets/attachments/extracted/Group_Theory_(No_Solns).md) (87L, 20 problems) — algebra
 
-- [ ] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013
+- [x] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013 — disposition 2026-09-12: UNL Math 871 Fall 2013 exam-review sheets listing vocabulary, theorem statements, study tasks, and references to textbook/problem-set exercises rather than presenting a standalone authored problem collection. Already retained at `wiki/topology/resources/books-notes.md`; reference-only intake stops there, with no duplicate cards manufactured.
 
 - [x] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom — disposition 2026-09-10: MAT 320 practice midterm/review sheet with solutions rather than a qualifying-exam sitting; already linked from `wiki/prelim/resources/references.md`, so no qual collection is appropriate.
 
