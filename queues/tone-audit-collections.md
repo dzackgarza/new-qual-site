@@ -1629,14 +1629,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-HARVARD-TATE-ALGEBRA-250A-1985/P-TATE85-X7-01.md
 - [ ] corpus/collections/SRC-HARVARD-TATE-ALGEBRA-250A-1985/P-TATE85-X7-02.md
 - [ ] corpus/collections/SRC-HARVARD-TATE-ALGEBRA-250A-1985/index.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA5.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA6.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA7.md
@@ -3313,18 +3313,18 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGHTHREECOMP.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGHTWCUBIC.md
 - [ ] corpus/collections/SRC-TEXT-HART77/index.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-1.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-10.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-11.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-12.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-13.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-14.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-1.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-10.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-11.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-12.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-13.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-14.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-15.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-16.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-17.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-18.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-19.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-2.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-16.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-17.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-18.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-19.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-2.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-20.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-3.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-4.md
@@ -4368,17 +4368,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-7.md
 - [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-8.md
 - [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-10.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-11.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-10.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-11.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-9.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/13/E-1QFIO.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/13/E-ALTNF.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/13/E-C7KV4.md
