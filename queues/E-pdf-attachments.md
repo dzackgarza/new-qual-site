@@ -570,17 +570,17 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom
 
-- [ ] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015
+- [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source. Intake stops at reference enrichment; no problem cards are manufactured.
 
 - [x] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis — disposition 2026-09-09: ingested as `SRC-MATH6338-HW8`; all seven Fourier-analysis homework problems are represented by source-checked, reviewed solution cards `P-M6338H8-1` through `P-M6338H8-7`.
 
-- [ ] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis
+- [x] [midpracsol.pdf](assets/attachments/extracted/midpracsol.md) (87L, 14 problems) — complex-analysis — disposition 2026-09-12: practice-solution notes already retained at `wiki/real-analysis/resources/solutions.md`; this is solution/reference material rather than primary problem provenance, so intake stops at the existing resource representation instead of creating duplicate cards.
 
 - [x] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: exact byte duplicate of `Folland_Real_Analysis_Solns.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`); already linked as a Real Analysis solutions resource, so do not create a second representation.
 
-- [ ] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013
+- [x] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013 — disposition 2026-09-12: S. Hermiller's UNL Math 871 Fall 2013 problem-set packet ingested as `SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS`. Direct source reading finds 69 assigned problem references across PS1–PS11, not zero; 23 source-local cards plus canonical Munkres/Hatcher cards give 70 card appearances because PS3.1 and PS7.3 split across reusable and local subproblems. The packet names `PS9.1` as due but contains no statement or locator, so no missing mathematics is invented.
 
-- [ ] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009
+- [x] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009 — disposition 2026-09-12: D. Zack Garza's 2020 compilation of selected complex-analysis questions spanning multiple exam terms is maintainer-authored enrichment, not external collection provenance. It remains a resource at `wiki/complex-analysis/resources/problems.md`; no duplicate collection is manufactured, and it is removed from the Fall 2016 UGA exam provenance in favor of that collection's official DOCX.
 
 - [ ] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis
 
