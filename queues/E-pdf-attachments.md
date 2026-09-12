@@ -481,21 +481,21 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata
 
-- [ ] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology
+- [x] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology — disposition 2026-09-12: reference-only Joshua Ruiter *Theorems: Real Analysis* notes (March 2018). The inventory problem count is a false positive from numbered theorem statements; repository intake notes classify this as reference notes, not a collection candidate. Added to `vocabularies/references.bib` as `Ruiter18AnalysisTheorems` and to the real-analysis books/notes resource page; no problem cards manufactured.
 
-- [ ] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis
+- [x] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: already reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, whose provenance includes both `F15_Exam.pdf` and this solution packet. The paired exam confirms the complete 18-problem sequence 1A–9A and 1B–9B, exactly matching the collection cards.
 
 - [x] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: exact byte duplicate of `Folland_Clipped_Questions.pdf` (SHA-256 `e775d4915cbacc566da3d2731cc938692f9f57a45a2dc262cb8a5041ba95ec10`). The resource page already links the underscore-named copy, so no second collection or resource entry is warranted.
 
 - [x] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland Clipped Questions.pdf`; already linked from `wiki/real-analysis/resources/problems.md`. This is a clipped textbook-exercise resource rather than an exam sitting, so intake stops at the existing resource link rather than manufacturing a qualifying-exam collection.
 
-- [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra
+- [x] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra — disposition 2026-09-12: already ingested completely as `SRC-NORI-GALOIS-THEORY-PROBLEMS`. A direct recount finds 42 numbered source problems across Sections 2–7 and exactly the same 42 collection entries, with no missing or extra IDs.
 
-- [ ] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom
+- [x] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom — disposition 2026-09-12: identified as Laurentiu Maxim’s *Problems in Algebraic Topology* and already ingested completely as `SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY`. The source contains 52 numbered problems across six sections, and `just list-cards` reports exactly 52 source-checked collection entries.
 
 - [x] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012 — disposition 2026-09-09: canonical copy of the byte-identical pair with `PrincetonQuestions.pdf` (SHA-256 `9ef5c3fee6a62b2eb412ef4af6f0b40619821f25e0e0144702a2ba7b0f39d0c7`). This is a topic-organized Real Analysis question/reference bank rather than an exam sitting, and it is already linked from `wiki/real-analysis/resources/problems.md`; intake stops at that existing resource representation rather than manufacturing a qualifying-exam collection.
 
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
+- [x] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: already ingested completely as `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS`. A direct source-label recount finds 52 distinct assignments (`6.A.1` through `12.B.3`, including PP.1–PP.5), exactly matching the 52 source-order collection entries.
 
 - [x] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: mixed-source Measure Theory question bank, not a single qualifying-exam sitting.
   Its introduction states that problems are drawn from Stein--Shakarchi and Carothers as well as CUNY Graduate Center qualifying exams, with color coding distinguishing textbook-only questions from questions seen on quals; that visual provenance is not faithfully retained by the markdown extraction.
@@ -532,7 +532,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016`, which contains 39 source-order examples-sheet problems; the inventory count of 33 was incomplete.
 
-- [x] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra — disposition 2026-09-12: reference-only Chapter 6 solution outlines for Gallian’s *Contemporary Abstract Algebra*, covering selected isomorphism and automorphism exercises. Retained as worked-reference enrichment on the group-theory resource page and now indexed in `wiki/archives/solution-compendia.md`; no collection or duplicate problem cards manufactured.
+- [x] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra — disposition 2026-09-12: reference-only Chapter 6 solution outlines for Gallian’s *Contemporary Abstract Algebra*, covering selected isomorphism and automorphism exercises.
+  Retained as worked-reference enrichment on the group-theory resource page and now indexed in `wiki/archives/solution-compendia.md`; no collection or duplicate problem cards manufactured.
 
 - [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary.
   Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
@@ -733,7 +734,8 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on the Riemann mapping theorem (Spring 2020), not an exercise source.
   Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20RMT`; no problem cards manufactured.
 
-- [x] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology — disposition 2026-09-12: already ingested as `SRC-UNL-QUAL-850-871-JANUARY-2006`; its five Section A questions are local cards `P-UNL850871-06A1` through `P-UNL850871-06A5`, and the five Section B topology questions reuse canonical cards from the separately retained January 2006 UNL topology paper. All ten source questions are represented in source order.
+- [x] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology — disposition 2026-09-12: already ingested as `SRC-UNL-QUAL-850-871-JANUARY-2006`; its five Section A questions are local cards `P-UNL850871-06A1` through `P-UNL850871-06A5`, and the five Section B topology questions reuse canonical cards from the separately retained January 2006 UNL topology paper.
+  All ten source questions are represented in source order.
 
 - [x] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES`, containing ten selected finite-abelian-group exercises represented by this packet.
 

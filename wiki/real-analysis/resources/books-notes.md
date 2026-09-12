@@ -4,6 +4,8 @@ order: 15
 
 # Real Analysis Books and Notes
 
+- [Joshua Ruiter, *Theorems: Real Analysis* (March 2018)](attachments/Collection_of_Analysis_Theorems.pdf) — compact theorem/proof reference covering topology, Lebesgue measure, measurable functions, integration, and later real-analysis topics.
+
 ## Textbooks
 
 - Rudin: Real and complex analysis
