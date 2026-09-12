@@ -34,11 +34,10 @@ Then $p$ is a smooth point exactly when $\rank J_X(p) = r$.
 :::
 
 ::: {.remark}
-The two criteria are the two answers to "give two criteria for nonsingularity": the extrinsic rank condition, which is a computation, and the intrinsic condition that $\OO_{X,p}$ be a regular local ring, which is the one that survives to schemes and to non-closed points.
+The extrinsic rank condition is a computation. The intrinsic condition that $\OO_{X,p}$ be a regular local ring extends to schemes and to non-closed points.
 
-The rank condition is stated for a *complete intersection* presentation, and that hypothesis is not decorative.
+The rank condition is stated for a *complete intersection* presentation.
 If $X$ is cut out by more equations than its codimension, the rank of $J_X$ drops everywhere and the criterion reports singularities that are not there.
 The two criteria are equivalent over a perfect field and part company over an imperfect one: the Jacobian condition is smoothness, which is geometric and survives base change to $\bar{k}$, while regularity of $\OO_{X,p}$ does not.
 Over $k = \FF_p(t)$ the closed subscheme $V(x^p - t) \subseteq \AA^1$ is the spectrum of a field, hence regular, but it is not smooth: after base change to $k(t^{1/p})$ it becomes $V((x - t^{1/p})^p)$, which is not even reduced.
-This is what the question about curves over perfect fields is about.
 :::
