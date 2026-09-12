@@ -35,7 +35,7 @@ definition.
 standard GCD in the polynomial ring.
 :::
 
-<1>3. $x^5 \notin R$ (it has an $x$-term... actually $x^5$ has no $x$-term, so $x^5 \in R$; the issue is different).
+<1>3. $x^5\in R$, since it has no $x$-term.
 ::: {.proof}
 $x^5$ has no $x$-term, so $x^5 \in R$.
 :::

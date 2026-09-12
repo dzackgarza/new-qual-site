@@ -173,16 +173,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-9.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-1.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-2.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-3.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-4.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-5.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-6.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-7.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-8.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-9.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-1.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-2.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-3.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-3.md — Changed: remove an inline drafting reversal (STANCE-10). Mathematical issue remains in steps 4–5: x^4 does not divide x^5 in R, and x^5 does not divide x^6 in R; the claimed common divisors require correction.
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-4.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-5.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-6.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-7.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-8.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-9.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-1.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-2.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-3.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-4.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-5.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-6.md
