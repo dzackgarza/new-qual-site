@@ -31,11 +31,11 @@ On $\Spec A$, the functor $M \mapsto \tilde{M}$ is an exact equivalence from $A$
 
 ::: {.remark}
 Quasicoherence is the condition that a sheaf of modules is *determined by algebra*, locally: it is the analogue for modules of "scheme" for spaces.
-The equivalence is what makes it useful, and the exactness is what makes cohomology of quasicoherent sheaves on an affine vanish.
+Quasicoherent sheaves on an affine scheme have vanishing higher cohomology.
 
 The practical test is local and needs no module in hand: $\mcf$ is quasicoherent exactly when every point has an affine neighbourhood on which $\mcf$ has a presentation
 \[
 \OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
 \]
-This is the form to use when the question is whether some naturally-occurring sheaf is quasicoherent, because a presentation can usually be written down where a module cannot.
+On such an affine neighbourhood $\Spec A$, the cokernel of the corresponding map $A^{(I)}\to A^{(J)}$ gives a module whose associated sheaf is $\mcf$.
 :::
