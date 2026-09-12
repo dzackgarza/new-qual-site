@@ -7,7 +7,7 @@ order: 11
 
 Books, problem lists, and solutions for the real-analysis qual.
 
-- [[real-analysis/resources/preface|Preface]], the reading plan.
+- [[real-analysis/resources/preface|Folland exercise references]].
 
 - [[real-analysis/resources/topics|Real Analysis Topics]], the topic checklist.
 
@@ -17,6 +17,6 @@ Books, problem lists, and solutions for the real-analysis qual.
 
 - [[real-analysis/resources/solutions|Solutions]], the solution index.
 
-- [[real-analysis/resources/extra-questions|Extra Questions]], a workshop TeX dump: UNL Math 825/826 papers mixed with the UNL packet's January, June and May tags, not a UGA quals exam.
+- [[real-analysis/resources/extra-questions|Extra Questions]], problems from the UNL workshop packet.
 
 - Browse the [Sources listing](exams.html) by subject, institution, and year; each exam page links its source material.

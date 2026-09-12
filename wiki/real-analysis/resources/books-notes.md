@@ -6,18 +6,15 @@ order: 15
 
 ## Textbooks
 
-- Rudin: Real and complex analysis
+- Rudin: *Real and Complex Analysis*.
 
-  > Good general reference but the following books have more useful techniques
+- [@SS05].
 
-- [@SS05]
-
-  > Does not have $L^p$ spaces.
-  > A good source for this and convexity is **Lieb-Loss: Analysis, Chapter 2**.
+- Lieb and Loss: *Analysis*.
 
 - [@SS03a]
 
-  > This book is very elementary but more than sufficient chapters 2 and 3 are Fourier series, chapter 5 is Fourier transform.
+  Chapters 2–3 concern Fourier series; Chapter 5 concerns the Fourier transform.
 
 - Evans: Partial Differential Equations.
   Chapter 5.
@@ -38,8 +35,7 @@ order: 15
 
 - [[cambride_analysis_ii.pdf|Cambridge analysis notes]]
 
-UGA Math 8100 as posted by Lyall.
-These are that course's sheets, not a live syllabus.
+UGA Math 8100 sheets posted by Lyall:
 
 - Fall 2021: [HW1](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW1.pdf), [HW2](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW2.pdf), [HW3](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW3.pdf), [HW4](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW4.pdf), [HW5](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW5.pdf), [HW6](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW6.pdf), [HW7](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW7.pdf), [HW8](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW8.pdf), [Exam 1](http://alpha.math.uga.edu/~lyall/8100Fall2021/Exam1.pdf)
 

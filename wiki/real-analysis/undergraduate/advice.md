@@ -2,107 +2,101 @@
 order: 5
 ---
 
-# Advice and Essentials 
+# Estimates and approximation
 
-- General advice: try swapping the orders of limits, sums, integrals, etc.
-- Good set / bad set: for measure theory or integrals, try to break a set up into "good" and "bad" subsets, and put bounds on each piece separately.
+- Monotone convergence, dominated convergence, and Fubini–Tonelli give hypotheses for interchanging limits, sums, and integrals.
+- Splitting a measurable set into a region with a uniform bound and a region of small measure gives separate estimates for the integral on each region.
 - Limits:
-  - Take the $\limsup$ or $\liminf$, which always exist, and aim for an inequality like
+  - The extended-real $\limsup$ and $\liminf$ determine convergence through bounds such as
   \[  
   c \leq \liminf a_n \leq \limsup a_n \leq c
   .\]
-  - $\lim f_n = \limsup f_n = \liminf f_n$ iff the limit exists, so to show some $g$ is a limit, show
+  - Pointwise convergence to $g$ follows from
   \[  
-\limsup f_n \leq g \leq \liminf f_n \qquad (\implies g = \lim f) 
+\limsup f_n \leq g \leq \liminf f_n \qquad (\implies g = \lim_n f_n)
   .\]
-  - A  limit does *not* exist if $\liminf a_n > \limsup a_n$.
+  - A sequence has no extended-real limit if $\liminf a_n < \limsup a_n$.
 
 - Sequences and Series
-  - If $f_n$ has a global maximum (computed using $f_n'$ and the first derivative test) $M_n \to 0$, then $f_n \to 0$ uniformly.
+  - If $M_n=\sup_x|f_n(x)|\to0$, then $f_n\to0$ uniformly. For differentiable functions on a compact interval, extrema occur at endpoints or critical points.
   - For a fixed $x$, if $f = \sum f_n$ converges *uniformly* on some $B_r(x)$ and each $f_n$ is continuous at $x$, then $f$ is also continuous at $x$ .
 
 - Equalities
-  - Split into upper and lower bounds:
+  - Equality is equivalent to matching upper and lower bounds:
   \[  
   a=b \iff a\leq b \text{ and }  a\geq b
   .\]
-  - Use an epsilon of room:
+  - For real $a,b$,
   \[  
-  \qty{ \forall \epsilon, \,\,a < b + \eps} \implies a\leq b 
+  \qty{ \forall \epsilon>0, \,\,a < b + \eps} \implies a\leq b
   .\]
-  - Showing something is zero:
+  - In a normed space,
   \[  
-  \qty{ \forall \epsilon, \,\, \norm{a} < \eps} \implies a = 0
+  \qty{ \forall \epsilon>0, \,\, \norm{a} < \eps} \implies a = 0
   .\]
 
 - Continuity / differentiability: 
-  - Show it holds on $[-M, M]$ for all $M$ to get it to hold on $\RR$.
-  - In higher dimensions: intersect with a ball $B_R(\vector 0)\subset \RR^n$ about zero.
+  - Continuity or differentiability on every interval $(-M,M)$ implies the same property on $\RR$.
+  - In $\RR^n$, the balls $B_R(0)$ give the corresponding exhaustion.
 
-- Simplifications:
-  - To show something for a measurable set, show it for bounded/compact/elementary sets and use approximations in measure.
-  - To show something for an arbitrary function, try various dense classes of functions: 
-    continuous, bounded, compactly supported, simple, indicator functions, etc and use approximations in norm.
-  - Replace $\eps\to 0$ with an arbitrary countable sequence ($x_n \to 0$)
-    - Note: this is not always helpful, since you now have to predicate over all such sequences.
+- Approximation:
+  - Regularity of Lebesgue measure gives approximation of finite-measure sets by compact sets and finite unions of boxes, with error measured by symmetric difference.
+  - Simple functions are dense in $L^p$ for $1\leq p<\infty$. For Lebesgue measure on $\RR^n$, continuous compactly supported functions are also dense in these spaces.
+  - A limit as $t\to0$ is equivalent to convergence along every sequence of nonzero arguments $t_n\to0$.
 
 - Integrals
-  - Calculus techniques: Taylor series, IVT, MVT, etc.
-  - Break up $\RR^n = \theset{\abs{x} \leq 1} \coprod \theset{\abs{x} > 1}$.
+  - Taylor's theorem gives local estimates for integrands near a singularity or a zero.
+  - The decomposition $\RR^n = \theset{\abs{x} \leq 1} \coprod \theset{\abs{x} > 1}$ separates local integrability from integrability at infinity.
 
-    - Or break the integration region into disjoint annuli: 
+    - For nonnegative or integrable $f$, disjoint dyadic annuli give
     \[
-    \int_\RR f = \sum_{k\geq 0}\int_{2^k}^{2^{k+1}} d
+    \int_{|x|>1} f(x)\,dx = \sum_{k\geq 0}\int_{2^k<|x|\leq2^{k+1}} f(x)\,dx
     .\]
 
-  - For pairs of functions $f, g$: break up into $\theset{f>g} \disjoint \theset{f=g} \disjoint \theset{f< g}$.
-  - Tail estimates!
-  - Most of what works for integrals will work for sums.
+  - For real-valued measurable $f,g$, the sets $\{f>g\}$, $\{f=g\}$, and $\{f<g\}$ separate the signs of $f-g$.
+  - If $f\in L^1(\RR^n)$, then $\int_{|x|>R}|f|\to0$ as $R\to\infty$.
+  - Integration against counting measure gives the corresponding statements for sums.
 
 - Measure theory:
 
-  - Always consider bounded sets, and if $E$ is unbounded write $E = \Union_{n\geq 0} \qty{ B_{n}(0) \intersect E}$ and use countable subadditivity or continuity of measure.
+  - The bounded exhaustion $E\cap B_n(0)\nearrow E$ gives $\mu(E)=\lim_n\mu(E\cap B_n(0))$ for measurable $E\subseteq\RR^n$.
 
-  - $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
+  - Every Lebesgue measurable set in $\RR^n$ differs from an $F_\sigma$ set by a null set. Properties invariant under null modifications therefore extend from Borel sets to Lebesgue measurable sets.
 
-  - $s = \inf\theset{x\in X} \implies$ for every $\varepsilon$ there is an $x\in X$ such that $x \leq s + \varepsilon$ or $x\in [s, s+\eps]$.
+  - If $X\subseteq\RR$ is nonempty and bounded below, then $s=\inf X$ satisfies: for every $\varepsilon>0$, some $x\in X$ lies in $[s,s+\varepsilon)$.
 
-- Useful facts about continuous compactly supported ($C_c^0(\RR)$) functions:
+- Continuous compactly supported ($C_c^0(\RR)$) functions are:
   - Uniformly continuous
-  - Bounded almost everywhere
+  - Bounded
 
-- Pass to a subsequence!
+- Convergence in measure implies almost-everywhere convergence along a subsequence.
 
-- Add and subtract a thing. 
-  Eg, $\norm{T_nx_n - Tx} = \norm{T_nx_n - Tx_n + Tx_n - Tx}$.
+- Adding and subtracting $Tx_n$ separates operator convergence from vector convergence:
+  $\norm{T_nx_n-Tx}\leq\norm{(T_n-T)x_n}+\norm{T(x_n-x)}$.
 
-- $(a_k) \in \ell^2(\ZZ)$ is much weaker than $(a_k) \in \ell^1(\ZZ)$.
+- $\ell^1(\ZZ)\subsetneq\ell^2(\ZZ)$; for example, $(1/(1+|k|))_{k\in\ZZ}$ belongs to $\ell^2$ but not $\ell^1$.
 - Littlewood's principles:
   - Measurable sets are almost finite unions of intervals,
   - Measurable functions are almost continuous,
   - Pointwise convergent sequences of measurable functions are almost uniformly convergent.
 
-- $L^p$ spaces shrink as $p\nearrow \infty$ (by Holder).
-
 - Nesting of $L^p$ spaces: let $p< q$
   - For $\mu(X) = \infty$: no general containments.
   - For $\mu(X) < \infty: p < p+1 < \cdots \implies L^p \supseteq L^{p+1} \supseteq \cdots$.
-    Why? Holder.
+    This follows from Hölder's inequality.
   - For $X=\ZZ: L^p \subseteq L^{p+1} \subseteq \cdots$
 - Failing to be in $L^p$: singularities away from infinity, or long tails.
 
-- Every Borel is $F_\sigma$ up to a null set.
+- The Weierstrass $M$-test gives uniform convergence of $\sum f_n$ when $|f_n|\leq M_n$ and $\sum M_n<\infty$.
 
-- Proving uniform convergence: use the $M\dash$test.
+- An absolutely continuous function on $[a,b]$ has bounded variation and satisfies $f(x)-f(a)=\int_a^x f'(t)\,dt$. Bounded variation alone does not imply this identity.
 
-- A problem using absolute continuity will often be used to imply bounded variation (which allow using FTC)
+- Hölder's inequality gives $\|fg\|_1\leq\|f\|_p\|g\|_q$ for conjugate exponents.
 
-- If two functions are in conjugate $L^p$ spaces, try Holder.
-
-- $\mu(X) = \norm{\id}_{L^1(X)} = \int_X 1 \dmu$
+- $\mu(X) = \norm{1}_{L^1(X)} = \int_X 1 \dmu$, with value $+\infty$ allowed.
 
 
-## The Absolute Essentials
+## Continuity and measure approximation
 
 [[PR-IGVTV]]
 
@@ -119,7 +113,7 @@ order: 5
 
   - The first and last $\eps/3$ come from uniform convergence of $F_N\to F$.
   - The middle $\eps/3$ comes from continuity of each $F_N$.
-- So just need to choose $N$ large enough and $\delta$ small enough to make all 3 $\varepsilon$ bounds hold.
+- Uniform convergence fixes $N$ independently of $x,y$; continuity of $F_N$ at $x$ then supplies $\delta$.
 
 :::
 
@@ -133,8 +127,7 @@ order: 5
 
 :::{.proof title="of Borel characterization"}
 For every $\frac 1 n$ there exists a closed set $K_{n} \subset E$ such that $m(E\setminus K_{n}) \leq \frac 1 n$.
-Take $K = \union K_{n}$, wlog $K_{n} \nearrow K$ so $m(K) = \lim m(K_{n}) = m(E)$.
-Take $N\da E\setminus K$, then $m(N) = 0$.
+Set $K=\bigcup_nK_n$. Then $K$ is $F_\sigma$ and $m(E\setminus K)\leq1/n$ for every $n$, so $E\setminus K$ is null.
 
 :::
 
@@ -143,38 +136,27 @@ Take $N\da E\setminus K$, then $m(N) = 0$.
 :::{.proof title="that measurable sets can be approximated"}
 \envlist
 
-- (1): Take $\theset{Q_{i}} \covers E$ and set $O = \union Q_{i}$.
+- (1): Outer regularity gives an open set $O\supseteq E$ with $m(O\setminus E)<\eps$.
 - (2): Since $E^c$ is measurable, produce $O\supset E^c$ with $m(O\setminus E^c) < \eps$.
   - Set $F = O^c$, so $F$ is closed.
   - Then $F\subset E$ by taking complements of $O\supset E^c$
   - $E\setminus F = O\setminus E^c$ and taking measures yields $m(E\setminus F) < \eps$
 - (3): Pick $F\subset E$ with $m(E\setminus F) < \eps/2$.
-  - Set $K_{n} = F\intersect \DD_{n}$, a ball of radius $n$ about $0$.
+  - Set $K_n=F\cap\overline{B_n(0)}$, which is compact.
   - Then $E\setminus K_{n} \searrow E\setminus F$
   - Since $m(E) < \infty$, there is an $N$ such that $n\geq N \implies m(E\setminus K_{n}) < \eps$.
 
 :::
 
-## Quintessential Qual Problems
+## Subgraphs and measurable slices
 
 [[E-OMK54]]
 [[PR-6NDTF]]
 
-:::{.proof title="of measurable slices"}
-\envlist
+:::{.proof title="Subgraph characterization of measurability"}
+Let $f:\RR^n\to[0,\infty]$ and $A=\{(x,y):0\leq y\leq f(x)\}$.
+If $f$ is Lebesgue measurable, the functions $F(x,y)=f(x)$ and $G(x,y)=y$ are Lebesgue measurable. Thus $A=\{G\leq F\}\cap\{G\geq0\}$ is measurable.
 
-$\implies$:
-
-- Let $f$ be measurable on $\RR^n$.
-- Then the cylinders $F(x, y) = f(x)$ and $G(x, y) = f(y)$ are both measurable on $\RR^{n+1}$.
-- Write $\mathcal{A} = \theset{G \leq F} \intersect \theset{G \geq 0}$; both are measurable.
-
-$\impliedby$:
-
-- Let $A$ be measurable in $\RR^{n+1}$.
-- Define $A_x = \theset{y\in \RR \mid (x, y) \in \mathcal{A}}$, then $m(A_x) = f(x)$.
-- By the corollary, $A_x$ is measurable set, $x \mapsto A_x$ is a measurable function, and $m(A) = \int f(x) ~dx$.
-- Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
+Conversely, suppose $A$ is Lebesgue measurable. Each vertical section $A_x$ is an interval of length $f(x)$. The measurable-slices theorem gives a measurable function equal to $m(A_x)=f(x)$ for almost every $x$. Completeness of Lebesgue measure then implies that $f$ is measurable. Tonelli's theorem gives $m(A)=\int_{\RR^n}f(x)\,dx$.
 
 :::
-

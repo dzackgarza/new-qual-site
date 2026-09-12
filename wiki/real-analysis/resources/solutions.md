@@ -26,13 +26,11 @@ order: 20
 
 - [Richman's qual page (Michigan)](http://www-personal.umich.edu/~hrichman/quals.html)
 
-## Misc
-
-Huge bank of undergrad/grad questions:
+## Further solutions
 
 - [Berkeley undergrad pset solutions](https://math.berkeley.edu/~vvdatar/m104su18/Assignments/Solutions_A6.pdf)
 
-  - Lots of uniform convergence.
+  - Uniform convergence.
 
 - [Real-analysis practice solutions](attachments/midpracsol.pdf)
 

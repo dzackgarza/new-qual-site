@@ -5,9 +5,9 @@ order: 20
 
 # Real Analysis
 
-## What the exam asks
+## Questions and methods
 
-| The question | Where it is decided |
+| Question | Related material |
 | --- | --- |
 | Compute the limit of these integrals | [[real-analysis/integration/which-convergence-theorem\|Which convergence theorem?]] |
 | Swap these two integrals | [[real-analysis/fubini-tonelli/which-one-applies\|Which one applies?]] |
@@ -16,9 +16,7 @@ order: 20
 | Is this operator bounded, or this family uniformly so | [[real-analysis/functional-analysis/which-big-theorem\|Which big theorem?]] |
 | Is this statement true | [[real-analysis/counterexamples\|Counterexamples]] |
 
-The last row is not a joke: roughly half the paper is true-or-false, and the work is producing the witness.
-
-## The chapters, in dependency order
+## Chapters
 
 1. [[real-analysis/undergraduate/index|Undergraduate analysis]] -- sequences, continuity, differentiability, compactness.
 
@@ -26,17 +24,17 @@ The last row is not a joke: roughly half the paper is true-or-false, and the wor
 
 3. [[real-analysis/integration/index|Integration]] -- the convergence theorems and $L^1$.
 
-4. [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]] -- its own chapter, because the exam treats it as one.
+4. [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]] -- product measures and iterated integrals.
 
 5. [[real-analysis/lp-spaces/index|$L^p$ spaces]] -- the inequalities, duality, density.
 
 6. [[real-analysis/fourier/index|Fourier]] -- convolution, the transform, approximate identities.
 
-7. [[real-analysis/functional-analysis/index|Functional analysis]] -- Banach, Hilbert, the big four.
+7. [[real-analysis/functional-analysis/index|Functional analysis]] -- Banach and Hilbert spaces, operators, and duality.
 
 Across the chapters:
 
-- [[real-analysis/review|Review sheet]] -- every statement, on one page.
+- [[real-analysis/review|Review sheet]] -- collected statements.
 
 - [[real-analysis/counterexamples|Counterexamples]] -- filed by the statement each refutes.
 
@@ -48,7 +46,7 @@ Also here: [[real-analysis/appendices/index|appendices]], [[real-analysis/resour
 
 Thanks to Peter Woolfitt for supplying many solutions and checking many proofs in problem sessions.
 
-## The syllabus
+## Topics and references
 
 ### Undergraduate Analysis
 
@@ -154,6 +152,6 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Trigonometric series:
 
-  - Trigonometric polynomials are dense in $( C([0, 1]), \norm{\wait}_\infty)$
+  - Trigonometric polynomials are uniformly dense in the continuous functions on $[0,1]$ with matching endpoint values.
 
   - Trigonometric polynomials are dense in $( L^2([0, 1]), \norm{\wait}_2 )$

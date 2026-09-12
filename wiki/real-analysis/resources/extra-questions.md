@@ -2,7 +2,7 @@
 order: 710
 ---
 
-> Source: a TeX file used while studying for quals; not original to this corpus. This is a workshop dump, not a UGA Quals exam. The opening May 2016 Qual block is Day 1 of `SRC-RA-WORKSHOP`, which is the collection `SRC-UNL-RA-SUMMER-2016`. Later headings are the UNL packet's own tags (January / June / May), including the Day 2 item tagged May 2019 #1. The June tags are citations printed on Days 2–8 of that packet; they are not UGA qualifying exams. UGA's posted archive is Fall and Spring only.
+Problems from the [[SRC-RA-WORKSHOP|UNL real-analysis workshop packet]], grouped by topic and source locator.
 
 # May 2016 Qual
 
@@ -218,11 +218,3 @@ order: 710
 ## January 2019 Qualifying Exam {#january-2019-qualifying-exam .unnumbered}
 
 [[P-BKCZH]]
-
-This document is a collection of solutions to various problems written
-up by the participants of the May 2020 Analysis Qualifying Exam
-Workshop. This is in no way meant to be an official source for solutions
-to old exam problems, but is simply meant to be a repository of
-solutions to problems worked on during the workshop. You may use this to
-help you study for the analysis qualifying exam, but before you read the
-solutions to any problems, you should attempt the problem on your own.

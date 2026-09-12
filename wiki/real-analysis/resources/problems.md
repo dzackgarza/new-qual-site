@@ -14,7 +14,7 @@ Exercises from [@Fol13]:
 
   - Exercises 15, 17, 18, 19, 22(a), 24, 28
 
-  - Exercises 26, 30 - (also check out 31)
+  - Exercises 26, 30, 31
 
 - Chapter 2:
 
@@ -22,7 +22,7 @@ Exercises from [@Fol13]:
 
   - Exercises 10, 12, 13, 14, 16, 19
 
-  - Exercises 24, 25, 28(a,b), 33, 34, 35, 38, 41 - (note that 24 shows that upper sums are not needed in the definition of integrals, and the extra hypotheses also show that they are not desired either)
+  - Exercises 24, 25, 28(a,b), 33, 34, 35, 38, 41
 
   - Exercises 40, 44, 47, 49, 50, 51, 52, 54, 56, 58, 59
 
@@ -61,4 +61,4 @@ Exercises from [@Fol13]:
 ## Qual Workshop Materials
 
 [[SRC-RA-WORKSHOP]] is the UNL real-analysis workshop packet.
-Its collection page preserves the day structure and links the source PDFs; Days 1, 9, and 10 route to their corresponding qualifying-exam collections.
+The collection lists the worksheets by day and links the source PDFs; Days 1, 9, and 10 contain qualifying-exam papers.
