@@ -38,5 +38,5 @@ A **natural isomorphism** $F \to G$ is a natural transformation such that $F(X) 
 Natural transformations are the correct notion of morphism of functors, and they are the arrows in the functor category $\mcd^{\mcc}$; natural isomorphism is exactly isomorphism there, which is why the inverse maps $G(X) \to F(X)$ automatically assemble into a natural transformation again.
 
 Naturality is what turns an accident into a statement.
-A finite-dimensional vector space is isomorphic to its dual but not naturally so, while the map to its double dual is natural; the same distinction is what makes the Yoneda lemma, representability of $h_X$, and every adjunction on this exam say something.
+A finite-dimensional vector space is isomorphic to its dual but not naturally so, while the map to its double dual is natural. Naturality is also part of the Yoneda lemma, representability of $h_X$, and adjunctions.
 :::
