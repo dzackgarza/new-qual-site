@@ -310,6 +310,21 @@ course handout and tells readers how to allocate their time. State the local
 mathematical dependencies. Put a deliberately ordered curriculum in a guide or
 publication, where sequence is the artifact's purpose.
 
+### `PROVENANCE-01`: Do not claim a unique source without document evidence
+
+**Bad:** “The one book the exam is drawn from.”
+
+**Good:** “Recommended books” for a curated reading list, or “Source documents”
+for documents verified against the collection.
+
+A singular source claim says that one book explains the exam's questions. That
+claim requires evidence for every question and excludes other books, notes,
+problem sheets, and examiner choices. A prominent heading gives the claim more
+authority than an ordinary sentence, so an unsupported heading can misstate
+provenance before the reader examines any source. Keep study recommendations,
+exam provenance, and authored synthesis under separate headings, and name the
+documents that support each claim.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
