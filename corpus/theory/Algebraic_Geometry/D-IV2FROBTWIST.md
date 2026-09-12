@@ -44,7 +44,7 @@ k(X) \subseteq k(X)^{1/p} .
 
 ::: {.remark title="What the twist is for"}
 The absolute $F$ is not a morphism over $k$: $F^\sharp$ sends $\lambda \in k$ to $\lambda^p$, so the triangle over $\Spec k$ does not commute, and instead $F$ sits in a square with the Frobenius of $\Spec k$ itself.
-Over $k = \FF_p$ nothing happens and the distinction is invisible, which is why it is easy to miss and easy to be asked about.
+Over $k = \FF_p$ the Frobenius of the base field is the identity, so the distinction disappears.
 Twisting the structure map is the minimal repair: absorb the $p$-th power action of $k$ into the source, and what was a square becomes a triangle.
 
 The degree is $p$ and not something else because $k(X)$ has a $p$-basis of one element: it has transcendence degree $1$ over the perfect field $k$, so $k(X)^{1/p}$ is generated over $k(X)$ by the $p$-th root of a separating variable.
@@ -54,9 +54,8 @@ Twisting applies the Frobenius of $k$ to the coefficients of the defining equati
 It fails in general: for an elliptic curve the twist changes $j$ by a $p$-th power, so $E_p \cong E$ over $k$ exactly when $j(E) \in \FF_p$, and a curve with $j$ transcendental over $\FF_p$ is the counterexample.
 :::
 
-::: {.remark title="Against the other Frobenius card"}
-[[FE-MORFROB]] is a different statement about the same map and the two are routinely confused.
-That card is about the *absolute* Frobenius of $\PP^n$ as a counterexample: finite, flat, bijective, and nowhere smooth, because $d(t^p) = 0$.
-This card is about making Frobenius a morphism over $k$ at all, and about the degree-$p$ field extension it induces, which is what [[PR-IV2INSEP]] runs on.
+::: {.remark title="Absolute and relative Frobenius"}
+The *absolute* Frobenius of $\PP^n$ in [[FE-MORFROB]] is finite, flat, bijective, and nowhere smooth, because $d(t^p) = 0$.
+The twist makes Frobenius a morphism over $k$. Its degree-$p$ field extension is used in [[PR-IV2INSEP]].
 The shared computation $d(t^p) = 0$ is why both stories exist: it is simultaneously the failure of smoothness and the inseparability of the field extension.
 :::
