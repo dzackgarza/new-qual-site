@@ -767,7 +767,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom
 
-- [ ] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra
+- [x] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra — disposition 2026-09-12: reconciled with existing `SRC-ALGEBRA-TEST-REVIEW-1`. All seven open-ended questions and four true/sometimes/false questions are already represented in source order by `P-ALGREV1-01` through `P-ALGREV1-11`; every card is source-checked, solved, and reviewed. The collection is now marked complete; the surrounding review-topic bullets remain reference material rather than separate problem cards.
 
 - [x] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology — disposition 2026-09-12: reconciled with existing `SRC-TOPOLOGY-SEPARATION-COUNTABILITY-REVIEW`. The PDF is a one-page definitions/review sheet whose only explicit proof tasks are the regularity and normality closure-neighborhood criteria; those are already represented in source order by `P-SEPDEF-01` and `P-SEPDEF-02`. Both cards are now source-checked and the collection is marked complete; the definitions/examples remain reference material rather than being manufactured into additional problem cards.
 
