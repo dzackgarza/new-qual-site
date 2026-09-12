@@ -225,7 +225,7 @@ Since
 \[
 (\ZZ/15\ZZ)^\times\cong C_4\times C_2,
 \]
-this unit group is a Sylow $2$-subgroup $S_2$, and in the repository's semidirect-product convention
+this unit group is a Sylow $2$-subgroup $S_2$, and
 \[
 \boxed{\Gal(L/\QQ)\cong C_{15}\rtimes S_2}.
 \]
