@@ -9,6 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
 - assets/attachments/Gompf Contact Topology.pdf
 source:

@@ -557,23 +557,23 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: Jonathan Mostovoy's partial solutions to Folland, a reference/solutions resource rather than an exam; already linked from `wiki/real-analysis/resources/solutions.md`. This PDF is byte-identical to `Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`), so no duplicate collection is needed.
 
-- [ ] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016
+- [x] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016 — disposition 2026-09-12: exact byte duplicate of `Galois_Group_Practice.pdf` (SHA-256 `a4a5d76264a18227769ce63520fc05459f05a7a7f606b18e625596ccc942864f`); no duplicate collection needed.
 
-- [ ] [Galois_Group_Practice.pdf](assets/attachments/extracted/Galois_Group_Practice.md) (147L, 10 problems) — algebra — Summer 2016
+- [x] [Galois_Group_Practice.pdf](assets/attachments/extracted/Galois_Group_Practice.md) (147L, 10 problems) — algebra — Summer 2016 — disposition 2026-09-12: reconciled with `SRC-MATH113-SUMMER-2016-HW7`, containing all ten source-order Galois-theory problems.
 
-- [ ] [Gompf Contact Topology.pdf](assets/attachments/extracted/Gompf Contact Topology.md) (1994L, 34 problems) — Harvard — diff-geom — Fall 2017
+- [x] [Gompf Contact Topology.pdf](assets/attachments/extracted/Gompf Contact Topology.md) (1994L, 34 problems) — Harvard — diff-geom — Fall 2017 — disposition 2026-09-12: reconciled with complete `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017`. Direct source reading finds nine unique explicit `Exercise x.y` statements, exactly matching the nine collection cards; the inventory count of 34 came from numbered expository prose rather than authored exercises.
 
-- [ ] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom
+- [x] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom — disposition 2026-09-12: Alexander Fauck, *Handle Attaching in Symplectic Topology — A Second Glance* (August 2, 2016), is research/reference literature giving a corrected proof of invariance of symplectic homology under subcritical handle attachment, not an exercise source. Added to `vocabularies/references.bib` as `Fauck16HandleAttaching`; no cards manufactured.
 
-- [ ] [hmwk3x.pdf](assets/attachments/extracted/hmwk3x.md) (117L, 0 problems) — applied-algebra
+- [x] [hmwk3x.pdf](assets/attachments/extracted/hmwk3x.md) (117L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-MATH655-HW3-2003`, which contains the five source-order homework problems represented by this packet.
 
-- [ ] [HW1.pdf](assets/attachments/extracted/HW1.md) (89L, 0 problems) — diff-geom
+- [x] [HW1.pdf](assets/attachments/extracted/HW1.md) (89L, 0 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW1`; direct source intake contains six exercises, all represented in source order.
 
-- [ ] [HW2.pdf](assets/attachments/extracted/HW2.md) (41L, 0 problems) — diff-geom
+- [x] [HW2.pdf](assets/attachments/extracted/HW2.md) (41L, 0 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW2`; direct source intake contains seven exercises, all represented in source order.
 
-- [ ] [HW3.pdf](assets/attachments/extracted/HW3.md) (49L, 5 problems) — diff-geom
+- [x] [HW3.pdf](assets/attachments/extracted/HW3.md) (49L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW3`; the collection contains all six source-order problems, correcting the inventory count of five.
 
-- [ ] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom
+- [x] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW4`; all five source-order problems are represented. The retained file is dated November 4, 2018 and internally repeats the heading “Homework 3”, a source quirk already recorded by the collection.
 
 - [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source.
   Intake stops at reference enrichment; no problem cards are manufactured.
@@ -590,7 +590,7 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009 — disposition 2026-09-12: D. Zack Garza's 2020 compilation of selected complex-analysis questions spanning multiple exam terms is maintainer-authored enrichment, not external collection provenance.
   It remains a resource at `wiki/complex-analysis/resources/problems.md`; no duplicate collection is manufactured, and it is removed from the Fall 2016 UGA exam provenance in favor of that collection's official DOCX.
 
-- [ ] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis
+- [x] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2005`, containing all 18 Part A/B prelim problems; this solution packet is retained as provenance.
 
 - [x] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 18 problems) — Berkeley — prelim — Spring 2009 — disposition 2026-09-12: full UC Berkeley Spring 2009 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2009` with all 18 source-order problems `P-BKS09-1A` through `P-BKS09-9B`. The old count of six came from merged extraction headings.
 
