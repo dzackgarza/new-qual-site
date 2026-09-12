@@ -25,11 +25,10 @@ $f : X \to Y$ is **étale** if it is flat and unramified, equivalently flat, loc
 :::
 
 ::: {.remark}
-Étale is the algebraic replacement for a local homeomorphism, and every clause is one half of that: unramified gives local injectivity and flatness gives local surjectivity, in the sense that nothing collapses and nothing is missing.
-An étale morphism is open, and a finite étale morphism is the correct notion of a covering space, which is what makes the étale fundamental group possible.
+An étale morphism is open. Finite étale morphisms form the category of covers used to define the étale fundamental group.
 
-Étale does not imply local isomorphism in the Zariski topology, and this is the standard follow-up: $\GG_m \to \GG_m$, $t \mapsto t^2$, over a field of characteristic not $2$ is finite étale of degree $2$ and is not an isomorphism over any nonempty Zariski open.
-It becomes trivial only after an étale base change, which is the whole reason for introducing the étale topology.
+Étale does not imply local isomorphism in the Zariski topology: $\GG_m \to \GG_m$, $t \mapsto t^2$, over a field of characteristic not $2$ is finite étale of degree $2$ and is not an isomorphism over any nonempty Zariski open.
+Pulling this cover back along itself gives a disjoint union of two copies of the base.
 
-A bijective étale morphism onto a connected target is an isomorphism, but only when it is also separated and the target is connected and one is over a field, so the safe statement is: a finite étale morphism of degree $1$ is an isomorphism.
+A finite étale morphism of degree $1$ is an isomorphism. Bijectivity on underlying points does not suffice: $\Spec L\to\Spec k$ is bijective and finite étale for a nontrivial finite separable field extension $L/k$.
 :::
