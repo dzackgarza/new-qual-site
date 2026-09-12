@@ -32,6 +32,18 @@ with the first an open immersion and the second finite.
 ::: {.theorem title="Zariski's form"}
 Let $f : X \to Y$ be a birational projective morphism of Noetherian integral schemes with $Y$ **normal**. Then $f_* \OO_X = \OO_Y$ and every fibre of $f$ is connected.
 In particular a birational projective morphism to a normal $Y$ that is quasi-finite is an isomorphism.
+Equivalently, $\dim f^{-1}(y) > 0$ unless $f^{-1}(y)$ is a singleton.
+:::
+
+::: {.theorem title="Purity of the exceptional locus"}
+Let $f : X \to Y$ be as above, with $X$ and $Y$ normal projective varieties over $\CC$ $($the statement holds for Noetherian integral schemes with $Y$ normal$)$.
+The exceptional locus
+\[
+E = E(f) := \bigcup_{\dim f^{-1}(y) > 0} f^{-1}(y)
+\]
+is Zariski-closed in $X$.
+If $y_{0} \in f(E)$ is a smooth point of $Y$, then $E$ has codimension $1$ in $X$ near the points of the fibre $f^{-1}(y_{0})$.
+In particular if $Y$ is smooth then $E$ is a projective hypersurface (pure of codimension $1$).
 :::
 
 ::: {.remark}

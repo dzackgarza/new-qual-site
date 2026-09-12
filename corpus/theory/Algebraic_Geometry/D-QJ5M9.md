@@ -30,6 +30,12 @@ A regular local ring is normal, and the converse fails in dimension $\geq 2$.
 In dimension $1$ the two agree: a Noetherian local domain of dimension $1$ is normal exactly when it is a discrete valuation ring, that is, regular.
 :::
 
+::: {.theorem title="Normalization"}
+Let $X \subseteq \PP^{n}$ be a projective variety.
+Then there exists a unique normal projective variety $X_{\mathrm{norm}}$ and a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$ such that any morphism $f \colon X \to Y$ with $Y$ normal factors uniquely as $f \circ \nu = \bar{f}$ for a morphism $\bar{f} \colon X_{\mathrm{norm}} \to Y$.
+The same holds for affine varieties with $X \to \AA^{d}$ replaced by the affine normalization.
+:::
+
 ::: {.remark}
 This is the whole answer to how the two notions relate, and the dimension-$1$ case is the one with a consequence: the normalization of a curve is normal, hence regular, hence smooth over a perfect field, so **normalization resolves singularities in dimension one**. That is why resolution is not an issue for curves and is a theorem for surfaces.
 
