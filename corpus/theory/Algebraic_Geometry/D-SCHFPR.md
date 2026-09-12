@@ -37,9 +37,7 @@ The general case is obtained by covering $X$, $Y$, $S$ by affines, building the 
 :::
 
 ::: {.remark}
-Every computation an examiner can ask for is the tensor product, so state that formula first and treat the general construction as the gluing argument it is.
-
-The point that catches people is that the underlying set is *not* the fibre product of sets.
-$\fiberprod{\Spec \CC}{\Spec \RR}{\Spec \CC} \cong \Spec (\CC \tensor_\RR \CC) \cong \Spec (\CC \times \CC)$ is two points over a one-point set product, and $\fiberprod{\Spec \FF_p}{\Spec \FF_p}{\Spec \FF_p}$ under Frobenius stays one point but gains nilpotents.
-The correct slogan is that the fibre product represents a functor, and the functor is the thing you compute with.
+The underlying set need not be the fibre product of sets.
+$\fiberprod{\Spec \CC}{\Spec \RR}{\Spec \CC} \cong \Spec (\CC \tensor_\RR \CC) \cong \Spec (\CC \times \CC)$ has two points, whereas the set-theoretic fibre product has one.
+Nilpotents can also appear: for $k=\FF_p(t)$ and $L=k(u)$ with $u^p=t$, $L\tensor_k L\cong L[\eps]/(\eps^p)$.
 :::
