@@ -444,7 +444,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom — disposition 2026-09-10: MAT 320 practice midterm/review sheet with solutions rather than a qualifying-exam sitting; already linked from `wiki/prelim/resources/references.md`, so no qual collection is appropriate.
 
-- [ ] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020
+- [x] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020 — disposition 2026-09-12: UGA MATH 8150 Spring 2020 Midterm ingested as `SRC-UGA-MATH8150-SPRING-2020-MIDTERM` with all six source-order problems. Problems 1, 2, and 6 reuse canonical corpus cards; Problems 3–5 are source-local cards `P-UGA8150S20-MID-03` through `P-UGA8150S20-MID-05`. The resource-page label was corrected from Spring 2021 to Spring 2020.
 
 ## Practice exams (2)
 
