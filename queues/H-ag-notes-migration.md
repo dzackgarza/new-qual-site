@@ -3,18 +3,19 @@
 Substantive migration is incomplete.
 The open rows identify omitted statements, prompts, proof steps, examples, diagrams and source errors needing correction.
 
-This queue owns the remaining migration work.
-[Source file inventory](ag-notes-source-files.tsv) records every file in the deployed tree, including aliases, detached images, reference PDFs and renderer files.
-It records bytes, paths and SHA-256 only; it makes no mathematical dispositions.
+This queue owns the remaining migration work from the deployed site and its later native vault.
+The [deployed inventory](ag-notes-source-files.tsv) and [later-vault inventory](ag-notes-later-files.tsv) record physical source files, including aliases, detached images, reference PDFs and application files.
+These inventories record bytes, paths and SHA-256 only; the content comparisons below determine each disposition.
 
 ## Source and comparison boundary
 
-- Source: `/var/www/ag_notes/` on `zack@159.223.102.204`, copied on 2026-09-12. Paths in the queue are relative to that root unless stated otherwise.
-  Preserve this source while any content or source-repair row remains open.
+- Sources: `/var/www/ag_notes/` and `/var/www/Notes/Class_Notes/2022/Fall/Orals/` on `zack@159.223.102.204`, copied on 2026-09-12. The deployed sections use the first root; the later-vault sections use the second.
+  Preserve both sources while their content or source-repair rows remain open.
 
 - Target: authored `corpus/` and `wiki/` in this repository.
   The comparison used their actual bodies, not collection completion fields or previous migration reports.
-  Target reference revision: `a82fbded3bb880564fd041eff5b93f37fdfd0248`. The comparison concerns source transfer, not unrelated assertions added to target cards.
+  Target reference revisions: `a82fbded3bb880564fd041eff5b93f37fdfd0248` for the deployed comparison and `5b4c8d13d` for the later-vault comparison.
+  The comparison concerns source transfer, not unrelated assertions added to target cards.
 
 - HTML comparison includes displayed mathematics, footnotes, hints, worked solutions stored in HTML `title` attributes, and both case-sensitive Definitions revisions.
   Image comparison includes local PNGs, detached figures and the externally hosted Mathpix crops.
@@ -24,8 +25,8 @@ It records bytes, paths and SHA-256 only; it makes no mathematical dispositions.
   It is not a proof that no equivalent theorem exists anywhere.
   A general theorem can preserve an asserted consequence, but an unrelated example or an unsolved exercise does not preserve a source proof.
 
-- The later Markdown vault `/var/www/Notes/Class_Notes/2022/Fall/Orals/` is a distinct source revision.
-  Its later additions are listed separately below; the deployed-site comparison does not certify that vault.
+- The later Markdown vault has been compared separately, including written answers, native TeX/TikZ, later reading chapters, bonus questions and attached mathematics.
+  Shared source content retains its earlier comparison; a later deletion does not discharge an earlier source obligation.
 
 ## Statuses
 
@@ -59,6 +60,11 @@ The image and diagram sections identify the same page's supporting source materi
 | [Worked problems and Hartshorne I–II](ag-notes/exercises.md) | Gathmann, Vakil, homework, native TeX, and chapter I–II exercises. |
 | [Images and Hartshorne V](ag-notes/images-and-surfaces.md) | Image-only theorems, syllabi, reference PDFs, and chapter V exercises/figures. |
 | [Navigation, private records and infrastructure](ag-notes/infrastructure.md) | Generated pages, personal tracking, application state, and source build files. |
+| [Later Definitions and study guides](ag-notes/later-guides.md) | Native written answers, restored formulas, new guide pages and Looijenga material. |
+| [Later reading notes](ag-notes/later-reading.md) | Later Hartshorne and Fulton notes, calculations and figures. |
+| [Later exercises](ag-notes/later-exercises.md) | Hartshorne I–II and V, new solutions, bonus questions, recommendations and extra problems. |
+| [Later Hartshorne III–IV](ag-notes/later-hartshorne.md) | Native exercise statements, hints and incomplete solution arguments. |
+| [Later images and application files](ag-notes/later-images.md) | Image-only statements, diagrams, retained but unused assets, private files and source-repair entries. |
 
 ## Source recovery and retained source files
 
@@ -69,7 +75,7 @@ The image and diagram sections identify the same page's supporting source materi
 | `500_Extra Problems/Gathmann Exercises/figures/image_2020-09-01-10-43-00.png` | source-repair | Readable detached hand drawing of a plane X2 and a line X1 meeting the vertical axis at (0,0,1). No caption or embedding reference was located in the deployed HTML. Recover its original context before attaching it to a problem. Do not infer that it depicts the three coordinate axes. |
 | `500_Extra Problems/Gathmann Exercises/problems.pdf` | partial | The full PDF contains the same dated problem sets and arguments as `problems.tex`; no PDF-only mathematical unit was found. Remaining mathematical work is named in the worked-source section. The PDF, editable TeX and extraction are preserved at commit `7eafedfc04579791477d2463cd35548ad398c9c9`, under `assets/attachments/intermediate/ag-notes-native/` and `assets/attachments/intermediate/ag-notes-gathmann.md`. Use the TeX for formulas: the extraction drops the Lagrange product exclusion, changes an index inequality, loses `dim` in 2.33 and loses words and arrows in Proposition 5.0.1. |
 | `.nojekyll` | reference-only | Empty deployment-control file. No mathematical payload. |
-| Later vault `/var/www/Notes/Class_Notes/2022/Fall/Orals/` | unreviewed | Separate, later source revision, with November/December additions absent from the deployed tree. It needs its own direct comparison before retirement. Former source pointers remain recoverable from Git history at `a82fbded3bb880564fd041eff5b93f37fdfd0248`; historical paths are `wiki/algebraic-geometry/PLAN.md`, `assets/algebraic-geometry/MANIFEST.md`, and `artifacts/algebraic-geometry/semantic-transcription-audit-ledger.md`. Their dispositions are not evidence. This queue adopts none of their completion claims. |
+| Later vault `/var/www/Notes/Class_Notes/2022/Fall/Orals/` | partial | The later sections above replace the whole-vault review entry with individual source comparisons. Missing work includes Looijenga's guide, bonus prompts, proof details, Chow-group formulas and unused mathematical figures. Readable copied errors remain partial; missing image data and the broken preamble link remain source-repair. |
 
 ## File aliases and retention evidence
 

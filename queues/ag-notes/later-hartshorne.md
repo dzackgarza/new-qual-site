@@ -1,0 +1,27 @@
+# Later-vault Hartshorne problems, chapters III–IV
+
+All native files below were read completely, including footnotes and solution callouts.
+The problem statements, subparts and mathematical footnotes agree with the deployed sources already compared to the listed card sequences.
+Native source paths therefore add revision coverage to those comparisons; they do not close the deployed omissions.
+Target paths lie under `corpus/collections/SRC-TEXT-HART77/`.
+
+| Native source | Status | Target and remaining obligation |
+| --- | --- | --- |
+| `Hartshorne_Problems/3_Hartshorne/301x.md` | reference-only | Chapter heading and statement that this section has no exercises. |
+| `Hartshorne_Problems/3_Hartshorne/302x.md` | partial | III.2.1–7, P-AGH321CONSTSHEAFAFFLINE through P-AGH327CIRCLE. Native local-cohomology and injective-limit hints add no mathematical difference. Restore III.2.1(b) star. Source heading prefix V is a numbering typo. |
+| `Hartshorne_Problems/3_Hartshorne/303x.md` | partial | III.3.1–8, P-AGH331REDAFFINE through P-AGH338NONNOETHFAIL. Same full statements and hints. Restore III.3.6(b) star; source V numbering should be III. |
+| `Hartshorne_Problems/3_Hartshorne/304x.md` | partial | III.4.1–11, P-AGH341AFFINEMORPH through P-AGH3411LERAYACYCLIC. Same full statements, refinement-complex proof hint and other hints. Restore III.4.8(d), III.4.10 stars; source V numbering should be III. |
+| `Hartshorne_Problems/3_Hartshorne/305x.md` | partial | III.5.1–10, P-AGH351EULERCHAR through P-AGH3510TWISTEXACT. Native footnote `hint_generalized_3.5.10` on III.5.9 contains the same omitted extension to every smooth projective characteristic-zero surface, intersection-number obstruction, and positive-characteristic projectivity contrast. Preserve it in P-AGH359NONPROJ. |
+| `Hartshorne_Problems/3_Hartshorne/306x.md` | migrated | III.6.1–10, P-AGH361EXTONE through P-AGH3610FINITEFLATDUAL. Ext extension equivalence, injective/projective arguments, finite resolutions, K-groups and finite-flat duality hints agree with the deployed mathematical comparison. |
+| `Hartshorne_Problems/3_Hartshorne/307x.md` | partial | III.7.1–4, P-AGH371KODAIRAVAN through P-AGH374COHOMCLASS. Same trace/cohomology-class construction and hints; restore III.7.4 star. |
+| `Hartshorne_Problems/3_Hartshorne/308x.md` | migrated | III.8.1–4, P-AGH381DEGENLERAY through P-AGH384PROJBUNDLE. Same projection formula, projective-bundle cohomology and ruled-surface invariants. |
+| `Hartshorne_Problems/3_Hartshorne/309x.md` | partial | III.9.1–11, P-AGH391FLATOPEN through P-AGH3911GENUSBOUND. Same flatness examples, very-flat family definition, deformation constructions and genus hint. Restore III.9.8 and III.9.10(c) stars. |
+| `Hartshorne_Problems/3_Hartshorne/310x.md` | partial | III.10.1–9, P-AGH3101SMOOTHVSREG through P-AGH3109MIRACLEFLAT. Same mathematical statements. Native III.10.6 explicitly embeds `Hartshorne_Problems/3_Hartshorne/figures/2022-10-23_00-23-42.png`, the already viewed nodal double-cover diagram; P-AGH3106NODALCOVER lacks it. |
+| `Hartshorne_Problems/3_Hartshorne/311x.md` | partial | III.11.1–8, P-AGH3111PUNCTAFFINE through P-AGH3118VANISHNBHD. Same completion, algebraization and Lefschetz footnotes. Restore III.11.5 star. |
+| `Hartshorne_Problems/3_Hartshorne/312x.md` | partial | III.12.1–6, P-AGH3121EMBDIMSEMI through P-AGH3126PICPRODUCT. Same semicontinuity examples and Picard assertions/hints. Restore III.12.6 star. |
+| `Hartshorne_Problems/4_Hartshorne/4_1x.md` | partial | IV.1.1–10, P-AGH411REGULAROUTSIDEP through P-AGH4110PICOFARITHGENUSONE. Native solution callouts for IV.1.1 and IV.1.2 are present verbatim in their target solutions. They remain incomplete arguments: IV.1.1 needs `h^0>1` for a nonconstant function, and the Euler-characteristic formula must use `deg(nD)`. IV.1.2 must ensure a pole at every specified point, not merely a nonnegative section dimension: avoid the finite union of proper subspaces `H^0(nD-P_i)` after the Riemann–Roch dimension comparison. IV.1.10 must name Pic0. Restore IV.1.9 star. |
+| `Hartshorne_Problems/4_Hartshorne/4_2x.md` | migrated | IV.2.1–7, P-AGH421PNSIMPLYCONNECTED through P-AGH427ETALEDEGREETWO. All native branch-configuration, dual-curve, characteristic-p Hurwitz exception, determinant and trace-splitting content agrees with the deployed comparison. |
+| `Hartshorne_Problems/4_Hartshorne/4_3x.md` | migrated | IV.3.1–12, P-AGH431GENUSTWOVERYAMPLE through P-AGH4312NODALCURVESEXIST. Same full exercise and hint content; native II prefix is a numbering typo. |
+| `Hartshorne_Problems/4_Hartshorne/4_4x.md` | partial | IV.4.1–22, P-AGH441GRADEDRINGWEIERSTRASS through P-AGH4422FAMILYOVERAFFINELINE. Same dual-isogeny hint, explicit answers and characteristic-p assertions. Native footnote `rmk.4.4.8` still gives the omitted surface-group presentation in generators and commutator relation; preserve it in P-AGH448ALGEBRAICFUNDAMENTALGROUP. Restore IV.4.22 star. Native II prefix is a numbering typo. |
+| `Hartshorne_Problems/4_Hartshorne/4_5x.md` | migrated | IV.5.1–7, P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION through P-AGH457AUTOMORPHISMSGENUSTHREE. Same genus-four/five moduli and plane models, Enriques–Petri footnote and explicit dimension-count hint. |
+| `Hartshorne_Problems/4_Hartshorne/4_6x.md` | migrated | IV.6.1–9, P-AGH461RATIONALQUARTICONUNIQUEQUADRIC through P-AGH469NONSINGULARSURFACECONTAININGACURVE. Same complete-intersection, multisecant, nonspecial divisor and Bertini-on-blowup content. |

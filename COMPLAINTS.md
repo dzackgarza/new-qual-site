@@ -364,6 +364,7 @@ of public mathematical remarks.
 - **Impact and owner:** Git sequencer state is checkout-global, so file-disjointness does not make direct-to-main porcelain operations independent; unrelated card commits can fail or be delayed despite no content-path collision.
 - **Uncertainty:** the other stream's exact wrapper was not identified; the observed state was standard Git cherry-pick sequencer state in the shared checkout.
 - **Repair:** use a commit path that constructs commits without checkout-global sequencer state, or serialize operations that invoke cherry-pick/rebase while preserving file-disjoint authorship on `main`.
+- **Direct commit reproduction, 2026-09-12:** a documentation commit returned `cannot lock ref 'HEAD'` after its hook completed because a concurrent commit advanced HEAD from `16a21bd189c431d9071104967cf9ac82eb5621f6` to `67c62fdc2931e672ba7d34fc3e0a9c9098c68d6c`. The queue edits remained staged. File-disjoint writes do not serialize reference updates.
 
 
 ### `P-OK5P3` has the wrong arc endpoint and resulting title
@@ -418,9 +419,11 @@ of public mathematical remarks.
 
 **Assessment:** incomplete. The [ag-notes migration queue](queues/H-ag-notes-migration.md) owns the direct source-to-target comparison and remaining work. It identifies missing questions, proofs, hypotheses, examples and diagrams, with separate source-repair, reference and private-material dispositions.
 
-**Source boundary:** the deployed `/var/www/ag_notes/` tree was compared with authored corpus and wiki content. The later `/var/www/Notes/Class_Notes/2022/Fall/Orals/` vault remains a separate, unreviewed revision. The queue records the source inventory and target revision.
+**Source boundary:** both the deployed `/var/www/ag_notes/` tree and the later `/var/www/Notes/Class_Notes/2022/Fall/Orals/` vault were compared with authored corpus and wiki content. The queue records both physical inventories, target revisions, and individual source dispositions. Later written answers, bonus problems, Looijenga notes and image-only mathematics add obligations beyond the deployed site.
 
 **Owner and expected repair:** algebraic-geometry corpus curation. Complete the named mathematical items and resolve damaged source fragments before retiring their source. The queue records work; it does not perform the migration.
+
+**Additional target defect encountered:** `D-SCHFPR` says that the fibre product of `Spec F_p` with itself over `Spec F_p` under Frobenius gains nilpotents. Frobenius on F_p is the identity, so the tensor product is F_p and is reduced. Correct the example in that card; this assertion is not part of the retained source universal-property diagram.
 
 ### Sheaf operations page overstates pullback and the scope of exceptional functors
 
