@@ -16,7 +16,7 @@ review: draft
 
 :::{.proposition}
 Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
-There's a good reference here: 
+A reference for these automorphism groups:
 
 [Brian Sloan's senior project on automorphism groups (Whitman College)](https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf)
 
@@ -75,7 +75,7 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
 \size \GL_n(\FF_p) = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1})
 .\]
 
-- $\Aut(C_m^n)$ for $m$ not prime: no clue!
+- $\Aut(C_m^n)$ for $m$ not prime:
   For $n=2$, this seems to be a wreath product $\Aut(C_m) \wr C_2$.
 
 
