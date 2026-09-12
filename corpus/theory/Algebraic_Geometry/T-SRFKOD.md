@@ -40,15 +40,17 @@ Let $Y$ be a normal projective surface. There exists a unique minimal resolution
 :::
 
 ::: {.theorem title="Enriques classification"}
-A minimal smooth projective surface falls into exactly one of:
+A minimal smooth projective surface $X$ falls into exactly one of:
 
-- $\kappa = -\infty$: rational and ruled surfaces;
+- $\kappa(X) = -\infty$ iff $|12K_X| = \varnothing$ iff $X$ is $\PP^2$ or a minimal ruled surface;
 
-- $\kappa = 0$: K3, Enriques, abelian, and bielliptic surfaces;
+- $\kappa(X) = 0$ iff $|12K_X| = \{0\}$ iff $X$ is K3, Enriques, abelian, or bielliptic;
 
-- $\kappa = 1$: properly elliptic surfaces, those with an elliptic fibration;
+- $\kappa(X) = 1$ iff $X$ is a properly elliptic surface;
 
-- $\kappa = 2$: surfaces of general type.
+- $\kappa(X) = 2$ iff $X$ is of general type.
+
+In particular $\kappa = -\infty$ are the rational and ruled surfaces, $\kappa = 0$ are the four classes above, $\kappa = 1$ are elliptic, and $\kappa = 2$ are general type.
 :::
 
 ::: {.remark}
