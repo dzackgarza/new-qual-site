@@ -53,6 +53,5 @@ Moreover, $f_* \mcf$ is not a locally constant sheaf on $Y$: any locally constan
 
 ::: {.remark}
 The exam pitfall this addresses is the false deduction that a morphism of sheaves is an isomorphism if and only if stalks are abstractly isomorphic.
-A map $f \colon \mcf \to \mcg$ is an isomorphism if and only if the induced stalk maps $f_x \colon \mcf_x \to \mcg_x$ are isomorphisms *for a specified morphism*.
-Without an ambient morphism between the sheaves, abstract isomorphism of stalks at all points does not imply isomorphism of the sheaves.
+A map $f \colon \mcf \to \mcg$ is an isomorphism if and only if the induced stalk maps $f_x \colon \mcf_x \to \mcg_x$ are isomorphisms *for a specified morphism*. Without an ambient morphism between the sheaves, abstract isomorphism of stalks at all points does not imply isomorphism of the sheaves.
 :::
