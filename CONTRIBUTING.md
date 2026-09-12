@@ -572,21 +572,20 @@ of uniqueness or completeness require an explicitly bounded comparison and
 evidence covering it. For a solution set, “complete” requires checking its
 coverage against an identified course assignment or problem list.
 
-### `RESOURCE-19`: Make criticism specific and attributable
+### `RESOURCE-19`: Keep reputational judgements out of resource descriptions
 
 **Bad:** “Student-authored notes in this area are generally unreliable.”
 
-**Good:** “In [identified version], the argument for [named result] omits
-[necessary hypothesis]; [counterexample or cited correction] shows why it is
-needed.”
+**Good:** “[Author], [title]: solutions to [identified exercises], [link].”
 
-An unnamed judgement about quality gives readers no claim to check and authors
-no identifiable criticism to answer. It can damage reputations, including those
-of graduate students, while borrowing authority from the site's academic
-setting. Authorship or career stage supplies no evidence of correctness.
-Record a criticism only when a specific, verified defect matters to using the
-resource. Identify its location and mathematical consequence. Otherwise omit
-the judgement; replacing disparagement with unsupported praise does not fix it.
+A resource directory identifies materials and supports navigation. Passing
+judgement on authors or casting doubt on their work is outside that editorial
+role. Supplying evidence does not make disparaging framing appropriate for a
+study guide. Such framing can damage reputations, including those of graduate
+students, while borrowing authority from the site's academic setting. Describe
+contents and locations. A necessary mathematical correction belongs in a precise
+erratum identifying the statement, version, and correction; do not turn it into
+a verdict on a source or its author.
 
 ### `RESOURCE-20`: Distinguish access failures from properties of the work
 
@@ -618,6 +617,50 @@ would need to assess the claim. Supply the directory, topic links, section
 locations, or source relations that make navigation useful. Use a hierarchy
 when it helps readers locate material; do not add an introductory verdict on
 the field in place of the resources themselves.
+
+### `RESOURCE-22`: Read collective claims together with named resource lists
+
+**Bad:** A paragraph dismisses a class of notes as poor scholarship, followed
+elsewhere on the page by a list of authors of those notes.
+
+**Good:** Introduce the list with its subject and scope, then give each work's
+author, title, coverage, and link.
+
+A collective judgement acquires identifiable targets through the surrounding
+document. Separating the judgement from the names does not remove its
+reputational effect. Readers can apply it to every listed author, even when the
+writer never connects a particular name to the claim. Read introductions,
+headings, annotations, and lists together. Remove the disparaging framing;
+anonymizing the list or adding evidence does not repair its editorial purpose.
+
+### `RESOURCE-23`: Do not prescribe permitted uses of worked solutions
+
+**Bad:** “Read these worked examples only after solving the problems yourself.”
+
+**Good:** “Worked solutions to [identified problems], with [documented topic]
+computations in §[location].”
+
+A resources page does not know whether the reader is checking a calculation,
+studying a proof, comparing methods, or reviewing a topic. Restricting solutions
+to answer checking assumes a single legitimate learning method and overrides
+the reader's judgement. Describe what the solutions contain and which problems
+they address. Leave the choice of use to the reader.
+
+### `RESOURCE-24`: Do not frame learning from sources as harmful preparation
+
+**Bad:** “Studying finished arguments undermines independent mathematical
+thinking.”
+
+**Good:** Omit the claim. Annotate the resource with its mathematical contents
+and links to the corresponding problems.
+
+This rhetoric invents a conflict between studying arguments and learning to
+construct them. It dismisses a use of mathematical literature and presents an
+unsupported theory of learning as an instruction. Invoking an oral exam does
+not establish that causal claim or authorize judging the reader's preparation.
+Keep source descriptions about the material. An exam's documented format can
+be stated on its exam information page without using it to disparage resources
+or police study methods.
 
 ## Precision policies
 
