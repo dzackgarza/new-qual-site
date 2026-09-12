@@ -402,7 +402,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010
 
-- [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 11 problems) — Berkeley — complex-analysis — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; direct source inspection finds all 18 problems `1A`–`9B`, represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The inventory count of eleven reflects lost extraction headings, not missing source problems.
+- [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; all 18 problems `1A`–`9B` are represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The prior count of eleven came from lost extraction headings.
 
 - [ ] [Sp14_Exam.pdf](assets/attachments/extracted/Sp14_Exam.md) (255L, 8 problems) — Berkeley — applied-algebra
 
@@ -584,11 +584,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis
 
-- [ ] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 6 problems) — applied-algebra
+- [x] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 18 problems) — Berkeley — prelim — Spring 2009 — disposition 2026-09-12: full UC Berkeley Spring 2009 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2009` with all 18 source-order problems `P-BKS09-1A` through `P-BKS09-9B`. The old count of six came from merged extraction headings.
 
-- [ ] [s11solutions.pdf](assets/attachments/extracted/s11solutions.md) (196L, 0 problems) — topology
+- [x] [s11solutions.pdf](assets/attachments/extracted/s11solutions.md) (196L, 18 problems) — Berkeley — prelim — Spring 2011 — disposition 2026-09-12: full UC Berkeley Spring 2011 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2011` with all 18 source-order problems `P-BKS11-1A` through `P-BKS11-9B`. The prior zero count came from OCR/extraction heading loss.
 
-- [ ] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 0 problems) — complex-analysis
+- [x] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 18 problems) — Berkeley — prelim — Spring 2012 — disposition 2026-09-12: full UC Berkeley Spring 2012 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2012` with all 18 source-order problems `P-BKS12-1A` through `P-BKS12-9B`. The prior zero count came from OCR/extraction heading loss.
 
 - [x] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: canonical retained copy of René L. Schilling’s *Measures, Integrals & Martingales* (2nd ed.) solution manual; exact byte duplicate of `solutions-mims-2ed.pdf`. This is textbook solution/reference material already linked from `wiki/real-analysis/resources/solutions.md`, so intake stops at the existing reference representation rather than manufacturing qualifying-exam cards.
 
@@ -598,7 +598,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: René L. Schilling, *Measures, Integrals & Martingales* (2nd ed.) solution manual, corrected July 2019; byte-identical to `Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf` (SHA-256 `703be127b8cc7dbdf0903d1addb98941f183393e61c60423b356119b06f65081`). It is already retained on the real-analysis solutions resource page, so no duplicate card collection is manufactured.
 
-- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection.
+- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection. The prior count of three came from lost extraction headings.
 
 - [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet. Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
 
