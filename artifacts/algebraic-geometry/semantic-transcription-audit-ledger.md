@@ -55,7 +55,7 @@ These two are not theorem text. They are figures preserved byte-identical.
 
 | # | Source file | Referencing vault note | Subject | Target | Status | Notes |
 |---|-------------|------------------------|---------|--------|--------|-------|
-| 19 | `Pasted image 20220315152915.png` | `022 Sheaves.md:99` | Six-functor formalism names | `wiki/sheaves-of-modules/operations` + `D-VJFAP` | CANDIDATE | File exists. Visual compare pending. |
+| 19 | `Pasted image 20220315152915.png` | `022 Sheaves.md:99` | Six-functor formalism names | `wiki/sheaves-of-modules/operations` + `D-VJFAP` | REPAIRED | Image read 2026-09-12: four functors f_* pushforward, f^{-1} pullback, f_! extension by zero (lower shriek, open/closed immersion), f^! exceptional (upper shriek). Added four-functor list with shriek notation to wiki/sheaves-of-modules/operations. |
 | 20 | `Pasted image 20220315153140.png` | `022 Sheaves.md` | Pushforward of locally constant sheaf not locally constant — setup | `FE-SHFISOSTALKS` | REPAIRED | Image read, card created with stalk and global sections. |
 | 21 | `Pasted image 20220315153154.png` | `022 Sheaves.md` | Same example continued — stalks and global sections | `FE-SHFISOSTALKS` | REPAIRED | Same card, completes argument. |
 | 22 | `Pasted image 20220921202350.png` | `Hartshorne_Problems/1_Hartshorne/1_1x.md` | Hartshorne Ex I.1 figure | `corpus/collections/SRC-TEXT-HART77` I.1 + preserved figure | CANDIDATE | Collection lists I.1 problems. |
