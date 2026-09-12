@@ -56,7 +56,6 @@ the winding numbers are the images of $[\gamma]$ under the two projections $\pi_
 :::
 
 ::: {.remark}
-This solution named $\pi_1(S^1\cross S^1)$ the free group $F_2$ and then asserted $F_2 \cong \ZZ\cross\ZZ$.
-Both are wrong, and the second is what the first forces: $F_2$ is nonabelian, $\ZZ\cross\ZZ$ is abelian, so they are not isomorphic.
-The torus has $\pi_1 = \gens{a,b \suchthat aba\inv b\inv} \cong \ZZ\cross\ZZ$, the free *abelian* group on two generators — Hatcher records the torus as a $K(\ZZ\cross\ZZ, 1)$ in §2.2. The winding-number argument the rest of the card gives is the abelian one and is unaffected.
+$F_2$ is nonabelian, whereas $\ZZ\cross\ZZ$ is abelian, so they are not isomorphic.
+The torus has $\pi_1 = \gens{a,b \suchthat aba\inv b\inv} \cong \ZZ\cross\ZZ$, the free *abelian* group on two generators — Hatcher records the torus as a $K(\ZZ\cross\ZZ, 1)$ in §2.2.
 :::
