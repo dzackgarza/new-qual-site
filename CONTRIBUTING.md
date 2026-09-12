@@ -422,6 +422,60 @@ not bibliography. It can denigrate a source without identifying a difference
 in mathematical coverage. Compare named topics, results, notation, sections,
 or prerequisites, and omit status claims about books or readers.
 
+### `RESOURCE-08`: Describe exposition without moral endorsements
+
+**Bad:** “An unusually truthful introduction to the subject.”
+
+**Good:** “The introduction discusses [named construction] through [named
+examples].”
+
+Calling an account honest, truthful, or candid gives it a moral endorsement
+without identifying its mathematical contents. It also suggests that other
+authors conceal or distort the subject. Describe the construction, explanation,
+or examples that support the annotation. An actual error or omission requires
+a specific statement and location, not a judgement about an author's integrity.
+
+### `RESOURCE-09`: Replace vague explanatory promises with named content
+
+**Bad:** “Explains what the theory is really about.”
+
+**Good:** “Discusses generic points and nonreduced schemes.”
+
+An explanatory promise with no named object, question, or result gives the
+reader no way to identify the resource's scope. If a topic list follows, the
+promise merely delays that information. State the topics directly. When the
+annotation describes motivation, name the mathematical question or construction
+being motivated. Use the example above only when the source covers those topics.
+
+### `RESOURCE-10`: Describe scope without prescribing the reader's time
+
+**Bad:** “Set aside a weekend for this chapter.”
+
+**Good:** “The chapter covers [named topics].”
+
+A resources page cannot assign a reader's schedule or decide how much attention
+a text deserves. Such advice assumes priorities, background, and a purpose for
+reading that the page does not know. State the scope and relevant locations so
+readers can decide how the material fits their work. A verified page range
+describes the document; it does not establish a reading duration.
+
+### `RESOURCE-11`: Remove implied benchmarks for comprehension
+
+**Bad:** “A prepared student can master this section in an afternoon.”
+
+**Good:** Omit the performance claim. If prerequisites matter, name them:
+“The section assumes familiarity with tensor products.”
+
+A predicted completion time becomes an implicit standard of ability. Readers
+who take longer can reasonably hear it as a judgement that they are slow or
+inadequately prepared. It can also dismiss sustained study of the same material
+in a course. Reading pace varies with purpose, depth, exercises, and prior
+knowledge; elapsed time does not measure mathematical understanding. Remove
+both numerical targets and substitutes such as “quickly”, “effortlessly”, or
+“in one sitting” when they prescribe expected performance. Naming prerequisites
+communicates mathematical dependencies without ranking readers. Verify those
+prerequisites against the source.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
