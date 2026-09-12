@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega\subset\mathbb C$ be connected and open, and let $f_n,f:\Omega\to\mathbb C$ be holomorphic. Suppose $f_n\to f$ uniformly on compact subsets of $\Omega$. Prove that if $f_n(z)\ne0$ for every $z\in\Omega$ and every $n$, then either $f\equiv0$ or $f(z)\ne0$ for every $z\in\Omega$.
+Let $\Omega\subset\mathbb C$ be connected and open, and let $f_n,f:\Omega\to\mathbb C$ be holomorphic.
+Suppose $f_n\to f$ uniformly on compact subsets of $\Omega$.
+Prove that if $f_n(z)\ne0$ for every $z\in\Omega$ and every $n$, then either $f\equiv0$ or $f(z)\ne0$ for every $z\in\Omega$.
 :::

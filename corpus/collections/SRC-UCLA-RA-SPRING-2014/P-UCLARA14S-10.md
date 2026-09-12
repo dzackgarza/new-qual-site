@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha\in[0,1]\setminus\mathbb Q$ and let $(a_n)\in\ell^1(\mathbb N)$ with $a_n\ne0$ for all $n$. Show that
+Let $\alpha\in[0,1]\setminus\mathbb Q$ and let $(a_n)\in\ell^1(\mathbb N)$ with $a_n\ne0$ for all $n$.
+Show that
 \[
 f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
 \]

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$ and $\beta\in(0,1)$. Prove that
+Let $f\in L^1(\mathbb R)$ and $\beta\in(0,1)$.
+Prove that
 \[
 \int_{\mathbb R}\frac{|f(x)|}{|x-a|^\beta}\,dx<\infty
 \]
