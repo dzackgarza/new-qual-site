@@ -32,6 +32,6 @@ Naturality means that for $f: A' \to A$ in $\mca$ the square formed by $\tau_{AB
 
 ::: {.remark}
 Adjoints are unique up to natural isomorphism when they exist, so "the" left adjoint is a well-posed phrase.
-The practical content of an adjunction is almost never the bijection itself but the exactness consequence: right adjoints preserve limits and left adjoints preserve colimits, so a functor's position in an adjoint pair already determines whether it is left or right exact.
+Right adjoints preserve limits and left adjoints preserve colimits, so a functor's position in an adjoint pair determines whether it is left or right exact.
 That is why $\wait \tensor_A N$ is right exact and $\Hom_A(N,\wait)$ left exact, with no computation.
 :::
