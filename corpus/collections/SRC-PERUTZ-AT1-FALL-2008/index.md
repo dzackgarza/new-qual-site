@@ -34,6 +34,11 @@ source:
     - P-PERUTZ08-3.3
     - P-PERUTZ08-3.4
     - P-PERUTZ08-3.5
+  - name: 4. Van Kampen in practice
+    problems:
+    - P-PERUTZ08-4.1
+    - P-PERUTZ08-4.2
+    - P-PERUTZ08-4.3
   date:
     kind: academic-term
     term: fall
