@@ -27,11 +27,11 @@ $f : X \to Y$ is **finite** if $Y$ has an affine cover by $\Spec B_i$ with $f^{-
 :::
 
 ::: {.remark}
-The one-line distinction is the one the examiner wants: finitely generated as a module is strictly stronger than finitely generated as an algebra.
+Finitely generated as a module is strictly stronger than finitely generated as an algebra.
 $k[x]$ has one algebra generator over $k$ and infinite rank as a $k$-module, so $\AA^1_k \to \Spec k$ is of finite type and not finite.
-Hence finite implies finite type and never conversely.
+Hence finite implies finite type, but the converse fails.
 
-Finite morphisms are affine, proper, closed, surjective onto their image, and have finite fibres, and the fibres have a length that a flat hypothesis makes constant.
-They are the branched covers of the subject: a nonconstant morphism of smooth projective curves is finite, which is why every statement about such a map is a statement about a finite extension of function fields.
-Closedness is the going up theorem read on spectra, which is the standard follow-up.
+Finite morphisms are affine, proper, closed, and have finite fibres. For a finite locally free morphism, the dimension of each fibre algebra over its residue field is locally constant.
+A nonconstant morphism of smooth projective integral curves is finite and induces a finite extension of function fields.
+Closedness follows from the going up theorem on affine opens.
 :::
