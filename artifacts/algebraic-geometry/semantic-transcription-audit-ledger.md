@@ -64,7 +64,7 @@ These two are not theorem text. They are figures preserved byte-identical.
 | 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | VERIFIED | Image read 2026-09-12: dimension computation dim Y = dim k[t]=1. Matches P-AGHTWCUBIC; no gap. |
 | 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure | same | VERIFIED | Image read 2026-09-12: projective closure of twisted cubic. Card P-AGH29PROJCLOSURE and P-AGHTWCUBIC cover closure; no gap. |
 | 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus | same | VERIFIED | Image read 2026-09-12: singular locus (smoothness check). P-AGHTWCUBIC shows Y smooth; other I.1 cards cover singular cases; no gap. |
-| 28 | `Pasted image 20221123200223.png` | `030 Schemes.md` | Definition of scheme / gluing data | `wiki/schemes/what-is-a-scheme` | CANDIDATE |  |
+| 28 | `Pasted image 20221123200223.png` | `030 Schemes.md` | Definition of scheme / gluing data | `wiki/schemes/what-is-a-scheme` | VERIFIED | Image read 2026-09-12: scheme definition via locally ringed space, affine Spec, gluing. Matches wiki/schemes/what-is-a-scheme (points=primes, structure sheaf, morphisms local). No gap. |
 | 29 | `Pasted image 20221123205220.png` | `030 Schemes.md` | Relative schemes / morphisms | `wiki/schemes/what-is-a-scheme` | CANDIDATE |  |
 | 30 | `Pasted image 20221123232902.png` | `030 Schemes.md` | Fibre products, universal property | `wiki/schemes/fibre-products-and-base-change` | CANDIDATE |  |
 | 31 | `Pasted image 20221124003320.png` | `032 Morphisms.md` | Proper and separated criteria (valuative) | `wiki/morphisms/separated-and-proper` | CANDIDATE |  |
