@@ -118,6 +118,14 @@ text, documentation, and public project descriptions. Resource annotations are
 one place the failure can appear. They do not define its scope. The
 `RESOURCE-*` rules below give particular applications of these general rules.
 
+The observed excerpts in this section come from
+[`wiki/algebraic-geometry/resources.md`](wiki/algebraic-geometry/resources.md)
+at revision `03571db3e`. They quote repository prose, not private discussion.
+The heading and citation key identify each passage in that revision even after
+the live page is corrected. Proposed replacements are labelled as such; they
+are not evidence of source coverage. Verify bibliographic claims before using
+a replacement in public copy.
+
 ### `STANCE-01`: Recognize the assumption of superiority
 
 The prohibited stance appoints the writer to judge other people's competence,
@@ -126,8 +134,8 @@ as people to manage, authors as people to certify, and faculty as people whose
 intentions the writer can announce. Its defining feature is the relationship
 it establishes, not an individual adjective or an impolite sentence.
 
-**Bad:** “A competent researcher will recognize which approaches deserve
-attention.”
+**Observed — “The first pass”, `[@Gat21]`:** “A student who has taken the course
+and needs the subject back in a fortnight should read these and nothing else.”
 
 **Replacement:** Describe the approaches, their hypotheses, and the results
 they establish. Let the reader assess relevance to their question.
@@ -145,8 +153,11 @@ together. A sequence of apparently small judgements can establish sustained
 professional contempt: the writer knows better, the reader is deficient,
 other authors are inadequate, and institutions confirm the writer's priorities.
 
-**Bad pattern:** An introduction diagnoses poor preparation; later sections
-rank authors, prescribe study speed, and predict how faculty expose mistakes.
+**Observed sequence:** “with real proofs” and “never properly learned” in
+“Before the schemes”; “an examiner will find it” in “The commutative algebra
+underneath”; “a source that hands you one trains the wrong thing” in “Problems
+and solutions”. The page moves from judging texts and education to predicting
+exposure by faculty and prohibiting a way of learning.
 
 **Replacement:** Rebuild the document around its actual subject and reader
 task. Supply the definitions, arguments, examples, source locations, or
@@ -172,11 +183,12 @@ that a complaint, institutional response, or reputational consequence has
 already occurred. Do not invent those events, but do not minimize the conduct
 as a possible misunderstanding or a matter of taste.
 
-**Bad response to a finding:** “The phrasing may sound slightly overconfident.”
-
-**Replacement:** Identify the imposed hierarchy and its targets: for example,
-“The passage treats readers as incapable of choosing how to study.” Then
-replace that stance in the artifact.
+**Observed — “Problems and solutions”:** “Circulating solution manuals for
+[@Har10a] are of very uneven quality and several are no longer reachable.”
+The page subsequently lists named authors under “Solution collections for
+Hartshorne”. That arrangement supplies identifiable targets for the collective
+disparagement. The defect is the public verdict itself, not just an absent
+error citation. Preserve useful entries and remove the verdict.
 
 ### `STANCE-04`: Diagnose the generated pattern without excuses about intent
 
@@ -186,10 +198,10 @@ learned distribution. Intent is not an acceptance criterion for public copy.
 Neither fluency nor an apparently helpful tone makes the resulting relationship
 appropriate.
 
-**Bad diagnosis:** “The author means well, so this only needs softer wording.”
-
-**Replacement:** Describe what the text repeatedly does to its audience and
-subjects, then change that behaviour throughout the document.
+**Observed — “The first pass”, `[@Mil08a]`:** “it is the right choice when the
+exam is a week away and the gap is classical”. The apparent helpfulness of
+deadline advice does not change its presumption: the writer chooses for a
+reader whose situation it invented. Describe the text's coverage instead.
 
 Extensive, consistent prose supports a diagnosis of a generation pattern; do
 not treat each passage as an unrelated accident. This does not require
@@ -200,13 +212,17 @@ finding about the writing.
 
 ### `STANCE-05`: Preserve the reader's competence and autonomy
 
-**Bad:** “If this argument is unfamiliar, your foundations need repair.”
+**Observed — “Before the schemes”, `[@Sha13]`:** “it is the book to use if the
+classical theory was never properly learned rather than merely forgotten.”
 
-**Good:** “The argument uses the spectral theorem.”
+**Replacement:** Identify the topics and sections without classifying the
+reader's education as deficient.
 
-**Bad:** “You should finish this material before considering other methods.”
+**Observed — “The commutative algebra underneath”, `[@Eis95]`:** “Consult it by
+index; it is not a book to read through.”
 
-**Good:** “The construction uses [named prerequisite].”
+**Replacement:** Link the relevant sections. Delete the reading restriction
+and the instruction to perform an ordinary lookup.
 
 Name mathematical dependencies without diagnosing education or ability.
 Readers differ in purpose, interests, prior knowledge, and depth of study.
@@ -217,13 +233,16 @@ withholding explanations or assuming identical knowledge.
 
 Task instructions remain legitimate when they describe how to perform the
 requested operation: “Select a topic to filter the list” communicates interface
-behaviour. “A serious student will use these filters first” judges the person.
+behaviour. It differs from the observed commands about how readers must study.
 
 ### `STANCE-06`: Describe scholarship without certifying scholars
 
-**Bad:** “This account finally supplies trustworthy mathematics.”
+**Observed — “Before the schemes”, `[@Sha13]` and `[@Mum94]`:** “with real
+proofs” and “the shortest honest account”. “The first pass”, `[@Gat21]`, adds
+“the proofs are complete”.
 
-**Good:** “The proof uses induction on dimension.”
+**Replacement:** Remove these endorsements. Describe a specific expository
+feature or proof method when verified and useful.
 
 Praise can disparage through contrast. Advertising an account as honest, real,
 adequate, or complete can imply that other scholars fail ordinary mathematical
@@ -237,10 +256,12 @@ helps preserve professional respect; it is not permission to add empty praise.
 
 ### `STANCE-07`: Correct mathematics without turning correction into status
 
-**Bad:** “The author's careless treatment cannot be relied upon.”
+**Observed:** The collective manual judgement in `STANCE-03` identifies no
+mathematical statement to correct. It cannot serve as an erratum.
 
-**Good:** “The statement needs the hypothesis that the space is Hausdorff;
-[counterexample] shows the failure without it.”
+**Correction format, when an actual error has been established:** Identify the
+statement, its version and location, the necessary correction, and the argument
+or counterexample establishing it. Do not invent an erratum to justify a verdict.
 
 State a verified error and its correction when the reader needs them. Do not
 convert a defect in a statement into a judgement of its author or an entire
@@ -250,7 +271,9 @@ Keep the object of criticism precise and mathematical.
 
 ### `STANCE-08`: Do not borrow authority from institutions or imagined evaluators
 
-**Bad:** “The committee will expect you to know which proof really matters.”
+**Observed — “The one book the exam is drawn from”:** “an examiner who has read
+your file knows it, so reaching them matters more than completing the exercises
+in order.”
 
 **Good:** “The department's published syllabus lists [topic], [source link].”
 
@@ -262,9 +285,11 @@ turn them into private intentions or general institutional expectations.
 
 ### `STANCE-09`: Remove judgements of the reader's interests and effort
 
-**Bad:** “This trick rescues the reader from pointless calculations.”
+**Observed — “The first pass”, `[@Vak25]`:** “how it removes most of the
+\"check this on an affine cover\" drudgery from Chapter II.”
 
-**Good:** “This identity reduces the calculation to [specified expression].”
+**Replacement:** State which affine-local verification the lemma reduces and
+under which hypotheses. Delete the judgement about experiencing that work.
 
 An author's dislike of a proof or calculation is not a property of the
 mathematics. Readers may value the work being dismissed. Likewise, a promised
@@ -274,7 +299,8 @@ feel about the material or how quickly they should understand it.
 
 ### `STANCE-10`: Keep internal ownership claims out of reader-facing copy
 
-**Bad:** “Our repository now preserves the following documents.”
+**Observed — “Archived reference documents”:** “These reference documents and
+solution collections are preserved in the repository:”
 
 **Good:** “Lecture notes”, followed by identified works and access links.
 
@@ -353,12 +379,51 @@ inadequate subject, supervisor above dependent reader, insider above outsider.
 Changing the topic does not change the defect. A theorem introduction, help
 message, tutorial, or project overview can enact the same hierarchy.
 
+#### Observed evidence for the catalogue
+
+These are excerpts from the repository revision identified above. The
+interpretations name the mechanism in the actual wording; they are not invented
+examples of how an openly hostile author might write. The fluency and apparent
+helpfulness of the original passages are part of what contributors must learn
+to recognize.
+
+| Observed excerpt and location | Trait and mechanism | Concrete correction |
+| --- | --- | --- |
+| “should read these and nothing else” — “The first pass”, `[@Gat21]` | Paternalism and conceit: an exclusive prescription assumes the writer can decide for students. | Describe coverage and provide section links; remove the restriction. |
+| “Consult it by index” — “The commutative algebra underneath”, `[@Eis95]` | Condescension: ordinary lookup is explained as unsolicited instruction. | Supply the actual locations that the instruction leaves readers to find. |
+| “never properly learned rather than merely forgotten” — “Before the schemes”, `[@Sha13]` | Gatekeeping: the writer classifies readers by the adequacy of their education. | Describe the source without an imagined educational diagnosis. |
+| “It is worth two evenings” — “Before the schemes”, `[@Mum94]` | Imposed performance benchmark: a casual time prescription makes longer study appear excessive or inadequate. | Identify the relevant material without a duration. |
+| “drudgery from Chapter II” — “The first pass”, `[@Vak25]` | Contempt for intellectual interests: the reader is expected to share the writer's dislike of the proofs. | State the lemma's specific mathematical use. |
+| “the shortest honest account” — “Before the schemes”, `[@Mum94]` | Certification of scholars: praise claims moral standing for one treatment and implies a contrast with others. | Describe contents without the moral endorsement or ranking. |
+| “the proofs are complete” — “The first pass”, `[@Gat21]` | Certification of scholars: an ordinary obligation becomes the writer's quality distinction. | Name the exposition's actual feature, if useful; otherwise delete the clause. |
+| “of very uneven quality” — “Problems and solutions”, followed by named solution authors | Public disparagement: the surrounding list makes a collective verdict attach to identifiable colleagues. | Retain the bibliographic entries and remove the verdict. |
+| “a source that hands you one trains the wrong thing” — “Problems and solutions” | Paternalism and contempt: studying a solution is belittled as dependence and declared harmful. | State which problems have solutions and where they are. |
+| “an examiner who has read your file knows it” — “The one book the exam is drawn from” | Assumed institutional authority: the writer invents faculty knowledge and uses it to enforce priorities. | Remove the claim about the examiner; describe chapter contents. |
+| “and an examiner will find it” — “The commutative algebra underneath” | Adversarial supervision: a supposed knowledge gap becomes a deficiency awaiting exposure. | State an actual algebraic dependency without staging an interrogation. |
+| “no argument in the literature is written at that level of detail” — “Problems and solutions”, `[@PA12]` | Intellectual grandstanding and unwarranted certainty: the writer claims exhaustive command of the literature while diminishing it. | Identify the worked computation and its location in this source. |
+| “Orals in this subject begin with a variety far more often than with a scheme” — “Before the schemes” | Unwarranted institutional certainty: an unbounded frequency claim presents the writer as an authority on exam practice. | Report bounded observations from identified exam records if available. |
+| “still the fastest route from a fan to an answer” — “By topic”, `[@Ful93]` | Dismissive familiarity and ranking: a casual slogan asserts an established winner without naming the operation or comparison. | Identify the construction or computation and its source location. |
+| “the reason the toric chapter here is worth its space” — “By topic”, `[@Ful93]` | Self-centering and conceit: the writer adjudicates the worth of the site's chapter instead of supplying its mathematics. | State the specific relation to the linked chapter. |
+| “preserved in the repository” — “Archived reference documents” | Internal process foregrounding: storage activity occupies the place of reader-relevant description. This alone does not prove contempt; in context it also fails to provide the promised reference work. | Present the existing typed resource list directly. |
+
+### Evidence requirements for these policies
+
+Use actual authored passages to teach an observed failure. Identify the file,
+revision, and local heading or other locator. Keep the generalization separate
+from the quotation and explain how the wording supports it. Label proposed
+replacements as proposals. An invented caricature can make the failure seem
+easier to recognize than it was and conceal the ordinary-looking prose in
+which it actually occurred. Do not replace the observed record with one.
+
 ### `STANCE-14`: Do not reduce professional disrespect to a lesser defect
 
 An error can have factual, stylistic, and social dimensions at once. Correcting
 the factual one does not discharge the others. In particular, a sound citation
 cannot authorize a writer to humiliate readers or pass judgement on colleagues.
 Review the relationship being imposed even when a sentence can be made true.
+
+The following are analytical categories of minimization, not quotations from
+the resource page or a transcript. Apply them to the observed cases above.
 
 | Minimizing diagnosis | What it misses | Required correction |
 | --- | --- | --- |
@@ -402,15 +467,15 @@ sustained contempt to a minor stylistic concern.
 
 ### `STANCE-16`: Verify a changed relationship, not cosmetic compliance
 
-**Cosmetic revision:** “Perhaps experienced students would benefit from using
-this only to verify their own work.”
+**Observed — “Problems and solutions”:** “Use them to check an answer you have
+already produced, never to read a solution for the first time”.
 
 **Substantive revision:** “The worked solution applies [method] to [problem],
 [location].”
 
-The first sentence hedges the same supervision and competence distinction.
-The second supplies information without assigning the reader a place in a
-hierarchy. The replacement must also be true and useful in its context.
+Adding a hedge to that command would retain its supervision. The proposed
+replacement supplies information without assigning the reader a place in a
+hierarchy. It must also be true and useful in its context.
 
 After revision, identify what concrete content the reader receives and which
 decisions remain theirs. Check that removing the superior posture did not
