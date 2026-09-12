@@ -31,7 +31,6 @@ The same definition applies to left derived functors and to contravariant $F$.
 ::: {.remark}
 Injective objects are $F$-acyclic for every $F$, and dually projectives are acyclic for left derived functors, but acyclicity is strictly weaker --- and that weakness is the point, because an $F$-acyclic resolution computes $R^iF$ just as well as an injective one does.
 
-Every concrete cohomology computation on this exam runs on that fact.
 Flasque sheaves are $\Gamma$-acyclic, so a flasque resolution computes $H^i(X;\mcf)$.
 Free and projective modules are acyclic for $\wait \tensor_A N$, so a free resolution computes $\Tor$.
 Quasicoherent sheaves on an affine scheme are $\Gamma$-acyclic, which is Serre's theorem and the reason Čech cohomology on an affine cover gives the right answer.
