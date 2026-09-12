@@ -23,7 +23,7 @@ f(z) \da {z+1 \over z(z-1)}
 :::
 
 :::{.solution}
-Note: once you see that everything is in terms of powers of $(z-z_0)$, you're essentially done.
+The Laurent expansion about $z_0$ uses integer powers of $(z-z_0)$.
 For $z=0$:
 \[
 {z+1 \over z(z-1)}
