@@ -54,7 +54,7 @@ thus
 .\]
 
 By the ML estimate, the semicircular piece vanishes.
-Miraculously, since $\lim_{x\to 0}{ x\log(x) \over x^n+c} = 0$ for any $c>0$ and $n\geq 1$, the inner indented pieces goes to zero.
+Since $\lim_{x\to 0}{ x\log(x) \over x^n+c} = 0$ for any $c>0$ and $n\geq 1$, the inner indented pieces goes to zero.
 Parameterize by $z= \eps e^{it}$
 \[
 \int_{C_\eps} f(z)\log(z)\dz
@@ -63,7 +63,7 @@ Parameterize by $z= \eps e^{it}$
 &\approx \int_\eps^{2\pi - \eps} {\eps \log(\eps) + c_1 \over \eps^2 + c_2}\dt \\
 &\convergesto{\eps\to 0} 0
 ,\]
-where I've been *extremely* sloppy and left out many negligible $e^{it}$ terms.
+where the displayed approximations omit factors $e^{it}$ of modulus one.
 By the residue theorem,
 \[
 2\pi i \sum_{z_k\in \CC} \Res_{z=z_k} f(z)\log(z) = \int_\Gamma f(z)\log(z)\dz = -2\pi i\int_\RR f(z)\dz
