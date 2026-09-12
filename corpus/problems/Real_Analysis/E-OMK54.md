@@ -40,8 +40,6 @@ audit:
 :::
 
 ::: {.solution}
-**Note:** the card mixes concrete theorems with study advice ("apply Fubini to literally anything", "apply Cauchy–Schwarz to anything"); the solution covers the concrete statements.
-
 <1>1. Translation and dilation invariance of the Lebesgue integral: $\int \tau_h f = \int f$ where $\tau_h f(x) = f(x + h)$, and $\int f_\delta = \int f$ where $f_\delta(x) = \delta^{-n}f(x/\delta)$.
 <2>1. Both hold for indicators: $m(E + h) = m(E)$ and $m(\delta E) = \delta^n m(E)$.
 ::: {.proof}

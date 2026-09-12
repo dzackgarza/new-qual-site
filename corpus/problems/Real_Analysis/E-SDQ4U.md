@@ -27,7 +27,7 @@ L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
 :::
 
 ::: {.solution}
-**Honesty note:** the second line of the display has the inclusions backwards as written: $\ell^2(\ZZ) \not\subset \ell^1(\ZZ)$ (e.g. $a_n = 1/n$ is in $\ell^2$ but not $\ell^1$). The true inclusions for counting measure on $\ZZ$ are $\ell^1 \subset \ell^2 \subset \ell^\infty$. The solution proves the correct statements.
+For counting measure on $\ZZ$, $\ell^2(\ZZ) \not\subset \ell^1(\ZZ)$ (e.g. $a_n = 1/n$ is in $\ell^2$ but not $\ell^1$). The inclusions are $\ell^1 \subset \ell^2 \subset \ell^\infty$.
 
 <1>1. For $m(X) < \infty$: $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
     <2>1. $L^2 \subseteq L^1$: $\|f\|_1 \le m(X)^{1/2}\|f\|_2$ for $f \in L^2$.
