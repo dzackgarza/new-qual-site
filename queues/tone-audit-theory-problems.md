@@ -2175,7 +2175,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebraic_Geometry/D-SCHSUB.md` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | Full file read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFINT.md` | `52652940c0fe8032b4428e481b5edac1bbe12666` | `eeeb8b210580e9f6e25f190cda20f7dc8c35f47b` | Full file read; removed importance rating, kept normal-bundle payload (PROSE-01) |
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFNS.md` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | Read; retained |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | `fd24fcc3436b90af06d34512013eba7252e6316e` | Read; retained |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-T2J3Q.md` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORMOMENT.md` | `dae6b0a7cfc74d631022e12957ffcc234f4a7838` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORPOLY.md` | `6d7b1c4250bf03ca191e1ed718e319ad1ef02db1` | — | Pending |
