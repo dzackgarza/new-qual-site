@@ -10,7 +10,7 @@ topics:
 
 # Undergraduate analysis
 
-The layer the qual assumes, and the third of the paper that tests it directly.
+The undergraduate layer the qual assumes.
 
 - [[real-analysis/undergraduate/definitions|Definitions]] and [[real-analysis/undergraduate/notation|notation]].
 

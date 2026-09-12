@@ -105,15 +105,14 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/resources/problems.md`
 - [x] `wiki/real-analysis/resources/solutions.md`
 - [x] `wiki/real-analysis/resources/topics.md` — Markdown read; linked source screenshots are outside this reading.
-- [ ] `wiki/real-analysis/review.md`
-- [x] `wiki/real-analysis/undergraduate/advice.md`
-- [ ] `wiki/real-analysis/undergraduate/commuting-limits.md`
-- [ ] `wiki/real-analysis/undergraduate/continuity.md`
-- [ ] `wiki/real-analysis/undergraduate/definitions.md`
-- [ ] `wiki/real-analysis/undergraduate/differentiability.md`
-- [ ] `wiki/real-analysis/undergraduate/index.md`
-- [ ] `wiki/real-analysis/undergraduate/notation.md`
-- [ ] `wiki/real-analysis/undergraduate/riemann-integrability.md`
+- [x] `wiki/real-analysis/review.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/commuting-limits.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/continuity.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/definitions.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/differentiability.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/index.md` — removed "the third of the paper" composition claim
+- [x] `wiki/real-analysis/undergraduate/notation.md` — no stance revision
+- [x] `wiki/real-analysis/undergraduate/riemann-integrability.md` — no stance revision
 - [ ] `wiki/real-analysis/undergraduate/sequences-and-series.md`
 - [ ] `wiki/real-analysis/undergraduate/sets-and-compactness.md`
 - [ ] `wiki/real-analysis/undergraduate/theorem-list.md`
