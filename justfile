@@ -155,15 +155,20 @@ _no-bare-disposition:
     [ -z "$staged" ] && exit 0
     outside=$(printf '%s\n' "$staged" | grep -v '^queues/' || true)
     [ -n "$outside" ] && exit 0
-    lines=$(git diff --cached --numstat | awk '{a+=$1; d+=$2} END {print a+d+0}')
-    if [ "$lines" -le 4 ]; then
-        echo "Refusing a queue-only commit of $lines changed line(s)." >&2
-        echo "" >&2
-        echo "AGENTS.md, 'A disposition is not a unit of work': fold the disposition into the" >&2
-        echo "commit carrying the cards it describes. If this is a real queue filing rather than" >&2
-        echo "a tick, it will be larger than four lines and this check will pass." >&2
-        exit 1
-    fi
+    # Size is the wrong test: a six-line reconciliation note committed alone is still a
+    # disposition committed alone. What distinguishes a real queue filing is who writes it —
+    # the steward files work into queues with the maintainer noreply address, while a worker
+    # commits under the account address and should never be committing queue state by itself.
+    author=$(git config user.email)
+    case "$author" in
+        *users.noreply.github.com) exit 0 ;;
+    esac
+    echo "Refusing a queue-only commit." >&2
+    echo "" >&2
+    echo "AGENTS.md, 'A disposition is not a unit of work': a disposition, reconciliation note" >&2
+    echo "or queue tick rides in the commit carrying the cards it describes. Stage the card work" >&2
+    echo "alongside it, or leave the queue edit uncommitted until the cards it describes land." >&2
+    exit 1
 
 # Run immediate commit-tier quality checks
 test-commit: _no-worktrees _unsolved-if-staged _no-bare-disposition
