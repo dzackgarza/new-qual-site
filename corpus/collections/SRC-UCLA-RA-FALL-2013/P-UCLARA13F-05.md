@@ -21,5 +21,6 @@ Let $(f_n)$ be holomorphic functions on $\mathbb D$ satisfying
 \[
 \int_{\mathbb D}|f_n(z)|\,d\lambda(z)\le1
 \]
-for every $n$. Show that some subsequence converges uniformly on every compact subset of $\mathbb D$.
+for every $n$.
+Show that some subsequence converges uniformly on every compact subset of $\mathbb D$.
 :::

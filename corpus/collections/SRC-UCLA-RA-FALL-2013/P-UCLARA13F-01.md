@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U,V\subset\mathbb C$ be open and connected, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset V$. Suppose $f:U\to V$ is proper: $f^{-1}(K)$ is compact in $U$ whenever $K\subset V$ is compact. Show that $f$ is surjective.
+Let $U,V\subset\mathbb C$ be open and connected, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset V$.
+Suppose $f:U\to V$ is proper: $f^{-1}(K)$ is compact in $U$ whenever $K\subset V$ is compact.
+Show that $f$ is surjective.
 :::

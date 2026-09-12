@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a Banach space, $Y$ a normed linear space, and $B:X\times Y\to\mathbb R$ bilinear. Suppose that for each $x\in X$ there is $C_x\ge0$ with
+Let $X$ be a Banach space, $Y$ a normed linear space, and $B:X\times Y\to\mathbb R$ bilinear.
+Suppose that for each $x\in X$ there is $C_x\ge0$ with
 \[
 |B(x,y)|\le C_x\|y\|\qquad(y\in Y),
 \]

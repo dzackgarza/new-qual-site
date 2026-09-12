@@ -21,5 +21,6 @@ Does there exist a holomorphic function $f:\mathbb D\to\mathbb C$ such that
 \[
 |f(z_n)|\longrightarrow\infty
 \]
-for every sequence $(z_n)\subset\mathbb D$ with $|z_n|\to1$? Justify your answer.
+for every sequence $(z_n)\subset\mathbb D$ with $|z_n|\to1$?
+Justify your answer.
 :::

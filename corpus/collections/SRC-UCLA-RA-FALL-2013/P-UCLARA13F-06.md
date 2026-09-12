@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb C$ be bounded and open with $0\in U$, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset U$ and $f(0)=0$. Show that
+Let $U\subset\mathbb C$ be bounded and open with $0\in U$, and let $f:U\to\mathbb C$ be holomorphic with $f(U)\subset U$ and $f(0)=0$.
+Show that
 \[
 |f'(0)|\le1.
 \]

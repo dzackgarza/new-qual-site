@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $S$ be a subspace of $C([0,1])$. Write
+Let $S$ be a subspace of $C([0,1])$.
+Write
 \[
 \|f\|_\infty=\sup_{x\in[0,1]}|f(x)|,
 \qquad
@@ -27,5 +28,6 @@ Suppose there is $K\ge0$ such that
 \[
 \|f\|_\infty\le K\|f\|_2
 \]
-for every $f\in S$. Show that $S$ is finite-dimensional.
+for every $f\in S$.
+Show that $S$ is finite-dimensional.
 :::
