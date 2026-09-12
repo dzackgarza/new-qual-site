@@ -2177,7 +2177,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFNS.md` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | Read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | `fd24fcc3436b90af06d34512013eba7252e6316e` | Read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-T2J3Q.md` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | Read; retained |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-TORMOMENT.md` | `dae6b0a7cfc74d631022e12957ffcc234f4a7838` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-TORMOMENT.md` | `dae6b0a7cfc74d631022e12957ffcc234f4a7838` | `d8560e19d8c66619a429023a2265f137386f9b78` | Removed study directive and revision-list reference; kept construction-illustrative payload (STANCE, PROSE-02) |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORPOLY.md` | `6d7b1c4250bf03ca191e1ed718e319ad1ef02db1` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORQD.md` | `1d3c815feb924966ecfa9239ae90cbf5d79db178` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORREFL.md` | `0657302b0fd11ccf9565ba67b5fd8ae7c13de104` | — | Pending |
