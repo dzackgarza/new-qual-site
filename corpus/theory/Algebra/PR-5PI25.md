@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Useful fact: if $G \leq S_n$ for $n$ prime contains a 2-cycle and a $p\dash$cycle, then $G\cong S_n$.
+If $G \leq S_n$ for $n$ prime contains a 2-cycle and a $p\dash$cycle, then $G\cong S_n$.
 Note that for $n$ not prime, a transposition and an $n\dash$cycle isn't enough, since one needs the specific $n\dash$cycle $(1,2,\cdots,n)$ in general.
 
 If $n>2$ and $G$ contains a 3-cycle and an $n\dash$cycle, then $G = A_n$ or $S_n$.
