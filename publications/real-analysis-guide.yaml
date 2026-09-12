@@ -2,17 +2,17 @@ schema: qual/publication@2
 id: GUIDE-REAL-ANALYSIS
 kind: study-guide
 title: Real Analysis
-lede: 'The qualifying exam syllabus in real analysis: metric topology, sequences, continuity, differentiation, Riemann-Stieltjes integration, Lebesgue measure, convergence theorems, $L^p$ spaces and duality, and Fourier analysis.'
+lede: 'Real analysis: metric spaces, differentiation, integration, measure theory, functional
+  analysis, and Fourier analysis.'
 sections:
   - slug: sequences-and-series-of-numbers
     title: Sequences and Series of Numbers
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'The limit superior and inferior always exist in the extended reals, so an
-      argument can record asymptotic upper and lower bounds before ordinary convergence
-      is known. For series, convergence forces the
-      terms to zero and the tails to vanish, the comparison, root, ratio, and condensation
-      tests all decide convergence by bounding one tail against another, and the $p$-test
-      fixes the scale against which those comparisons are made.'
+    lede: 'The limit superior and inferior always exist in the extended reals, so an argument
+      can record asymptotic upper and lower bounds before ordinary convergence is known. For
+      series, convergence forces the terms to zero and the tails to vanish, the comparison,
+      root, ratio, and condensation tests all decide convergence by bounding one tail against
+      another, and the $p$-test fixes the scale against which those comparisons are made.'
     topics:
       - Sequences of Numbers
       - Series of Numbers
@@ -32,13 +32,11 @@ sections:
   - slug: metric-spaces
     title: Metric Spaces, Compactness and Completeness
     parent: sequences-and-series-of-numbers
-    lede: 'In metric spaces, compactness by open covers, sequential compactness,
-      and completeness plus total boundedness are equivalent, so an exam problem may
-      supply any one of the three formulations. Heine-Borel says which
-      subsets of $\mathbb R^n$ qualify, and the counterexamples say why the theorem
-      needs $\mathbb R^n$: closed and bounded is not enough in $\mathbb Q$ or in $C([0,1])$.
-      Completeness is the hypothesis in Baire''s theorem: in a complete metric space,
-      every countable intersection of open dense sets is dense.'
+    lede: 'For metric spaces, compactness is equivalent to sequential compactness and to completeness
+      together with total boundedness. The Heine–Borel theorem identifies compact subsets
+      of $\mathbb R^n$ as the closed bounded subsets. Closed bounded subsets of $\mathbb Q$
+      or of $C([0,1])$ with the uniform norm need not be compact. Baire''s theorem states
+      that a countable intersection of open dense subsets of a complete metric space is dense.'
     topics:
       - Metric Spaces
       - Compactness
@@ -60,13 +58,11 @@ sections:
   - slug: continuity
     title: Continuity
     parent: metric-spaces
-    lede: 'Start from the four equivalent readings of continuity, because each later
-      argument picks the one it needs: the sequential form for limits, the preimage
-      form for topological arguments, and the epsilon-delta form for estimates. Compactness
-      is what upgrades continuity into the two facts the rest of the path depends on:
-      attained extrema and uniform continuity. The distinction between continuity and
-      uniform continuity is where the exam problems live, so the section carries the
-      standard witnesses that the two differ on a non-compact domain.'
+    lede: 'For maps between metric spaces, continuity can be expressed through sequences,
+      inverse images of open sets, or epsilon-delta estimates. A continuous real-valued function
+      on a compact space attains its extrema; a continuous map from a compact metric space
+      to a metric space is uniformly continuous. On noncompact domains, continuity need not
+      imply uniform continuity.'
     topics:
       - Continuity
       - Uniform Continuity
@@ -82,14 +78,14 @@ sections:
   - slug: differentiation
     title: Differentiation
     parent: continuity
-    lede: Differentiation is where attained extrema become a computational tool. Fermat
-      turns an interior extremum into a vanishing derivative, the Mean Value Theorem
-      turns that into control of the function across an interval, and Taylor's theorem
-      makes the control quantitative by naming the remainder. Almost every exam problem
-      in this section is the Mean Value Theorem applied once and then estimated. Bounded
-      variation appears here because it is the class on which a derivative can still
-      be integrated back, a point used in [Riemann-Stieltjes Integration](riemann-stieltjes-integration.html)
-      and [Sequences and Series of Functions](sequences-and-series-of-functions.html).
+    lede: At an interior local extremum, a differentiable real-valued function has
+      derivative zero. The Mean Value Theorem relates a difference quotient to a
+      derivative at an intermediate point. Taylor's theorem expresses a function as a
+      polynomial plus a remainder. Functions of bounded variation have derivatives
+      almost everywhere, but recovering the function by integrating its derivative
+      requires absolute continuity. The related integration results appear in
+      [Riemann-Stieltjes Integration](riemann-stieltjes-integration.html) and [Sequences
+      and Series of Functions](sequences-and-series-of-functions.html).
     topics:
       - Differentiation
       - Mean Value Theorem
@@ -105,13 +101,12 @@ sections:
   - slug: riemann-stieltjes-integration
     title: Riemann-Stieltjes Integration
     parent: differentiation
-    lede: The Stieltjes integral is stated against a general integrator, so the criterion
-      for integrability is a statement about upper and lower sums rather than about
-      the integrand alone. Integration by parts and the reduction to a Riemann integral
-      are the two tools that make it computable; the fundamental theorem and the integral
-      mean value theorem then connect it back to the derivative. Lebesgue's criterion
-      closes the section by naming exactly which bounded functions are Riemann integrable,
-      which is the sentence the measure-theoretic half of the guide is built to prove.
+    lede: Riemann–Stieltjes upper and lower sums depend on both the integrand and the
+      integrator. Integration by parts and, for a continuously differentiable
+      integrator, reduction to a Riemann integral give methods of evaluation. The
+      fundamental theorem of calculus relates integration and differentiation.
+      Lebesgue's criterion characterizes Riemann integrability of a bounded function on
+      a compact interval by the measure of its discontinuity set.
     topics:
       - Riemann Integrability
     items:
@@ -124,16 +119,13 @@ sections:
   - slug: sequences-and-series-of-functions
     title: Sequences and Series of Functions
     parent: riemann-stieltjes-integration
-    lede: 'Every property established so far is a property of one function, and the
-      question here is which of them a limit inherits. Separating pointwise from uniform
-      convergence is what makes that question answerable. Uniform convergence preserves
-      continuity and commutes with the integral, differentiability needs the stronger
-      hypothesis on the derivatives, and the Weierstrass M-test is how uniform convergence
-      is usually established in practice. Arzela-Ascoli and Stone-Weierstrass close
-      the section from opposite directions, one saying which families are compact and
-      the other which are dense. The counterexamples are load-bearing here: the
-      four standard modes of convergence are pairwise incomparable, and each failure
-      has a standard witness.'
+    lede: 'Uniform limits of continuous functions are continuous. On a compact interval, uniform
+      convergence permits passage of a limit through a Riemann integral. Passing a limit through
+      differentiation requires additional hypotheses on derivatives. The Weierstrass M-test
+      gives a sufficient condition for uniform convergence of a series. Arzelà–Ascoli characterizes
+      compact families of continuous functions, and Stone–Weierstrass gives conditions for
+      a subalgebra to be uniformly dense. Examples distinguish pointwise, uniform, almost-everywhere,
+      and norm convergence under their respective hypotheses.'
     topics:
       - Uniform Convergence
       - Convergence of Functions
@@ -163,16 +155,14 @@ sections:
   - slug: measure-and-measurable-functions
     title: Measure and Measurable Functions
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'Outer measure is defined for every set and is only countably subadditive; the
-      Caratheodory condition selects the subfamily on which it is additive, and that
-      family is the one closed under the countable operations every later argument performs.
-      Measurability of a set is then equivalent to approximation by an open, closed,
-      or compact set, which is the form actually used in proofs. A measurable function
-      is one whose sublevel sets are measurable, a condition preserved by sups, infs,
-      and pointwise limits -- exactly the failure the Riemann theory had. Egorov and
-      Lusin bound how far measurable behaviour is from uniform and continuous behaviour,
-      and Borel-Cantelli converts a convergent sum of measures into an almost-everywhere
-      statement.'
+    lede: 'The Carathéodory condition defines a sigma-algebra on which an outer measure restricts
+      to a measure. For Lebesgue measure, approximation by open and closed sets gives criteria
+      for measurability. Measurable real-valued functions can be characterized by measurable
+      sublevel sets, and pointwise limits of measurable functions are measurable. Egorov''s
+      theorem gives almost-uniform convergence on finite-measure spaces; Lusin''s theorem
+      gives continuous restrictions outside sets of small measure under regularity hypotheses.
+      The first Borel–Cantelli lemma turns a summable sequence of event measures into an almost-everywhere
+      finiteness statement.'
     topics:
       - Measure Theory
       - Borel-Cantelli
@@ -194,15 +184,12 @@ sections:
   - slug: the-lebesgue-integral
     title: The Lebesgue Integral
     parent: measure-and-measurable-functions
-    lede: "The integral is defined by supremum over simple functions below the integrand,
-      so monotone convergence is nearly a restatement of the definition, and Fatou and
-      dominated convergence follow from it. These three are the section's whole content:
-      essentially every exam problem asking for a limit of integrals is an application
-      of one of them, and the counterexamples show what happens when the dominating
-      hypothesis is dropped. Fubini and Tonelli exchange the order of a double integral
-      under integrability and non-negativity respectively, and the distinction between
-      those hypotheses is itself examined. Chebyshev's inequality and the vanishing
-      of small tails are the two estimates that make the rest quantitative."
+    lede: "The integral of a nonnegative measurable function is the supremum of the integrals
+      of simple functions below it. Monotone convergence, Fatou's lemma, and dominated convergence
+      give conditions for passing limits through integrals or comparing their values. Tonelli's
+      theorem applies to nonnegative functions; Fubini's theorem applies to integrable functions,
+      with the hypotheses on the measure spaces stated in each theorem. Chebyshev's inequality
+      bounds level-set measures in terms of integrals."
     topics:
       - Integrals
       - Convergence of Integrals
@@ -224,15 +211,13 @@ sections:
   - slug: lp-spaces
     title: Lp Spaces and Convolution
     parent: the-lebesgue-integral
-    lede: 'Holder and Minkowski make $\|\cdot\|_p$ a norm and the Riesz-Fischer theorem
-      makes $L^p$ complete. Which
-      $L^p$ contains which depends on whether the measure is finite, and the $p$-test
-      decides the model cases. The essential supremum is the right endpoint at $p=\infty$,
-      and the limit of $\|f\|_p$ recovers it. Convolution is the multiplication these
-      spaces carry: Young''s inequality says which exponents it lands in, and an approximate
-      identity is a family of convolvers converging to the identity that $L^1$ itself
-      does not contain. Continuity of translation in $L^p$ is the lemma underneath most
-      of these proofs.'
+    lede: 'For $1\leq p\leq\infty$, Minkowski''s inequality gives the triangle inequality
+      and the Riesz–Fischer theorem gives completeness of $L^p$. Hölder''s inequality controls
+      products. On a finite-measure space, $L^q$ embeds in $L^p$ for $p\leq q$, and for bounded
+      $f$ on a nonzero finite-measure space, $\|f\|_p$ tends to $\|f\|_\infty$ as $p\to\infty$.
+      For Lebesgue measure on Euclidean space, Young''s inequality controls convolution and
+      translations are continuous in $L^p$ for $p<\infty$. Approximate identities converge
+      in these spaces.'
     topics:
       - Lp Spaces
       - L¹
@@ -257,16 +242,13 @@ sections:
   - slug: hilbert-spaces-and-duality
     title: Hilbert Spaces and Duality
     parent: lp-spaces
-    lede: '$L^2$ is the one $L^p$ whose norm comes from an inner product, and that single
-      fact supplies orthogonal projection, Bessel''s inequality, and the identification
-      of the space with $\ell^2$ through any complete orthonormal set. Riesz representation
-      makes the dual of a Hilbert space the space itself, and for $L^p$ with $p$ finite
-      it makes the dual $L^q$; this identification fails at $p=\infty$.
-      The four standard theorems of Banach space theory -- Hahn-Banach, uniform boundedness,
-      open mapping, closed graph -- are collected here because the exam problems that
-      use them state their hypotheses in $L^p$ or $\ell^p$ terms. Weak convergence appears
-      last: the unit ball is not norm-compact in infinite dimensions, and weak convergence
-      is what replaces the missing subsequence.'
+    lede: 'The $L^2$ inner product gives orthogonal projections, Bessel''s inequality, and
+      expansion in an orthonormal basis. Riesz representation identifies continuous linear
+      functionals on a Hilbert space. On a sigma-finite measure space, the dual of $L^p$ for
+      $1\leq p<\infty$ is represented by $L^q$, where $1/p+1/q=1$; the dual of $L^\infty$
+      need not be represented by $L^1$. Hahn–Banach, uniform boundedness, the open mapping
+      theorem, and the closed graph theorem apply to Banach spaces. In an infinite-dimensional
+      Hilbert space the closed unit ball is weakly compact but not norm-compact.'
     topics:
       - Hilbert Spaces
       - Inner Product Spaces
@@ -296,14 +278,13 @@ sections:
   - slug: fourier-analysis
     title: Fourier Analysis
     parent: hilbert-spaces-and-duality
-    lede: 'The Fourier transform combines [The Lebesgue Integral](the-lebesgue-integral.html),
-      [Lp Spaces and Convolution](lp-spaces.html), and [Hilbert Spaces and Duality](hilbert-spaces-and-duality.html):
-      it is defined by an integral, bounded on $L^1$, an isometry on $L^2$ by Plancherel,
-      and it turns convolution into multiplication. Riemann-Lebesgue is the statement
-      that the transform of an $L^1$ function has small tails, which is what forbids
-      an identity for convolution. The inversion formula is stated where it holds, and
-      the standard exercises ask for the transform of a Gaussian, which is its own eigenfunction,
-      and for the failure cases where $\hat f$ leaves $L^1$.'
+    lede: 'The Fourier transform combines [Lebesgue integration](the-lebesgue-integral.html),
+      [convolution](lp-spaces.html), and [Hilbert-space methods](hilbert-spaces-and-duality.html).
+      It is bounded from $L^1$ to bounded continuous functions, and Riemann–Lebesgue states
+      that these transforms vanish at infinity. With the corresponding normalization, Plancherel
+      extends the transform to an isometry on $L^2$. Fourier inversion requires its stated
+      integrability hypotheses. Examples include Gaussians and functions whose transforms
+      are not integrable.'
     topics:
       - Fourier Analysis
     items:
@@ -316,12 +297,9 @@ sections:
   - slug: problems-from-the-joint-exams
     title: Problems from the Joint Analysis Exams
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'These thirty problems come from combined analysis prelims where one paper
-      covers both real and complex analysis, but their mathematics is complex: entire
-      and holomorphic functions, conformal maps, normal families, residues and contour
-      integrals, Rouche, Hurwitz, and the Schwarz lemma. A reader preparing complex
-      analysis should work them from the Complex Analysis guide instead, where the
-      surrounding theory lives.'
+    lede: 'These problems come from combined real and complex analysis prelims. The [Complex
+      Analysis guide](../GUIDE-COMPLEX-ANALYSIS.html) contains the corresponding theory of
+      holomorphic functions, conformal maps, and contour integration.'
     topics:
       - Holomorphic Functions
       - Entire Functions

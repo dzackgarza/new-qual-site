@@ -1743,7 +1743,7 @@ def _collection_listing(
 
     blocks: list[pf.Block] = []
     if completion == "incomplete":
-        blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
+        blocks.append(pf.Para(pf.Str("Partial contents of the source document.")))
     problem_count = sum(row["kind"] == "problem" for row in listed)
     blocks.append(
         pf.Para(
@@ -2036,16 +2036,15 @@ def index_page(
         f"{scale['solved']:,} carry a written solution.\n\n"
     )
     links = (
-        "## Where to start\n\n"
+        "## Browse\n\n"
         "[Problems](problems.html)\n"
         ": Every problem, with live topic/source filters plus random sampling and print/PDF.\n\n"
         "[Exams](exams.html)\n"
-        ": Each sitting as it was sat, problem by problem.\n\n"
+        ": Exam papers and their problems in source order.\n\n"
         "[Guides](guides.html)\n"
-        ": One ordered path per subject, built from the same problems. Read front to back:\n"
-        "  a section assumes only the sections above it.\n\n"
+        ": Mathematical statements and problems grouped by subject.\n\n"
         "[Wiki](wiki/index.html)\n"
-        ": Written notes filed by subject. Look one topic up rather than read a path.\n"
+        ": Exposition and references organized by topic.\n"
     )
     output = _successful_outputs(
         pandoc.read_markdown(
@@ -2271,9 +2270,7 @@ GUIDES_LEDE = (
 
 
 ACROSS_SUBJECTS_LEDE = (
-    "Not a subject. These read the same problems the subject guides do, in a different order, "
-    "so a subject appears in both and neither is a copy of the other. "
-    "The wiki files each of these pages under the subject it belongs to."
+    "Workshop and preliminary-exam problems spanning several subjects."
 )
 
 
@@ -2639,11 +2636,11 @@ def project(
 title: Practice problems
 ---
 
-Practice generation now lives in the [problem browser](problems.html).
+[Problem browser](problems.html): filters, random samples, and printable problem sets.
 """
     (out / "generate.qmd").write_text(generate_qmd)
     generate_html = (
-        '<p>Practice generation now lives in the <a href="problems.html">problem browser</a>.</p>'
+        '<p><a href="problems.html">Problem browser</a>: filters, random samples, and printable problem sets.</p>'
         '<script>(function(){const target=new URL("problems.html",document.baseURI);'
         "const source=new URLSearchParams(location.search);for(const [key,value] of source)target.searchParams.append(key,value);"
         'if(!target.searchParams.has("sample"))target.searchParams.set("sample","8");location.replace(target.href);})();</script>'
