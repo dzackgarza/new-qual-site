@@ -119,9 +119,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/workshops/index.md` — no stance revision
 - [x] `wiki/real-analysis/workshops/real-week-1-preliminaries.md` — no stance revision
 - [x] `wiki/real-analysis/workshops/real-week-2-measure-theory.md` — revised: "Lemmas that sometimes show up on quals" → "Lemmas worth knowing"; "Some things that qual questions are commonly based on" → "Some frequently used facts"
-- [ ] `wiki/topology/appendices/appendix.md`
-- [ ] `wiki/topology/appendices/at-course-notes.md`
-- [ ] `wiki/topology/appendices/index.md`
+- [x] `wiki/topology/appendices/appendix.md` — no stance revision
+- [x] `wiki/topology/appendices/at-course-notes.md` — no stance revision
+- [x] `wiki/topology/appendices/index.md` — no stance revision
 - [ ] `wiki/topology/counterexamples.md`
 - [ ] `wiki/topology/covering-spaces/covering-spaces.md`
 - [ ] `wiki/topology/covering-spaces/index.md`
