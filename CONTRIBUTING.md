@@ -295,6 +295,21 @@ guide should provide the statement at the point where the reader needs it, or
 link a named canonical statement. Telling the reader to repair the order hides
 an authoring defect and transfers the work to the reader.
 
+### `WIKI-01`: Do not put a linear study plan inside a non-linear wiki
+
+**Bad:** “Read the pages from foundations to applications. If you are short on
+time, start with the exam topics and work backward through the links.”
+
+**Good:** “This page defines schemes and links to the pages on morphisms,
+cohomology, and curves. The cohomology page uses the definition of a scheme.”
+
+A wiki supports lookup through linked topic pages. A linear study plan repeats
+the navigation, makes the same links carry a second meaning, and adds prose that
+becomes false when pages are split or reorganized. It also treats a wiki as a
+course handout and tells readers how to allocate their time. State the local
+mathematical dependencies. Put a deliberately ordered curriculum in a guide or
+publication, where sequence is the artifact's purpose.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
