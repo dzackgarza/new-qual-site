@@ -818,6 +818,97 @@ a description of exposition with a verdict on adequacy, honesty, or scholarly
 standing. Omit the modifier when the named content already supplies the useful
 information.
 
+### `RESOURCE-36`: Describe mathematical work without imposing preferences
+
+**Bad:** “The proposition spares readers the tiresome local calculations.”
+
+**Good:** “The proposition reduces [specified verification] to [specified
+affine-local conditions].”
+
+Calling proofs tedious, unrewarding, or a chore presents a personal dislike as
+a property of the mathematics. Readers may enjoy those arguments or learn from
+working through them. The judgement implicitly dismisses that interest and
+makes avoiding the work seem preferable without explaining the mathematical
+reduction. State what a result proves or what verification it reduces. Keep
+preferences about the experience of doing mathematics out of resource copy.
+
+### `RESOURCE-37`: Bound exam-frequency statements to recorded observations
+
+**Bad:** “Examiners generally start with the classical material.”
+
+**Good:** Report a table of observed opening-question topics, counts, and the
+identified exam records, institutions, and dates from which they were obtained.
+
+A claim about exam frequency can be useful when the repository's records
+support it. It cannot come from the annotator's assumed knowledge of faculty
+practice. Identify the observed population, denominator, counting unit, and
+source records. Distinguish recorded opening questions from questions appearing
+elsewhere in an exam; total topic counts cannot establish how exams begin.
+Disclose incomplete records and avoid extrapolating a local sample to other
+examiners or institutions. Classify questions by reading their mathematics.
+Evidence about frequency does not by itself prescribe a student's priorities.
+
+### `RESOURCE-38`: Prefer ordinary descriptions to editorial labels
+
+**Bad:** “An illustration-driven presentation with the ideal pedagogical mix.”
+
+**Good:** “Has many examples.”
+
+An ordinary feature rarely needs a coined label, a verdict on its instructional
+balance, or an imagined exam scenario. Those additions increase the reading
+cost without identifying more content. Use familiar words for the observed
+feature. If a specific example matters, name it and its location instead of
+adding praise. Do not replace bloated prose with a compressed label that still
+sounds promotional or requires interpretation.
+
+### `RESOURCE-39`: Organize topic lists around a useful relation
+
+**Bad:** “Geometry, a worked intersection, derived functors, and an illuminating
+picture.”
+
+**Good:** Group source links under a named topic, with section locations and a
+brief description of each section's contribution.
+
+A list of mathematical terms is not a synthesis merely because the terms are
+technical. Mixing whole subjects, individual constructions, examples, and vague
+visual descriptions leaves the reader to reconstruct their relation. Choose
+the scope and grouping for a navigational purpose. Use a broad subject label
+for broad coverage, or identify precise sections for particular topics. A list
+earns its length through useful selection, organization, and locations, not
+through the appearance of mathematical density.
+
+### `RESOURCE-40`: Supply resource navigation as the substantive deliverable
+
+**Bad:** An essay ranks books and sketches their personalities while leaving
+readers to find their contents and relevant sections.
+
+**Good:** A topic index connects identified exam topics to sources, chapters,
+sections, exercises, and recorded questions, with working links.
+
+The resource section should reduce bibliographic work that students would
+otherwise repeat. Collect and organize available tables of contents, locate
+specific topics, and connect relevant source passages and problems. Preserve
+source identities and locators so readers can inspect the relations. Build a
+navigable hierarchy where it helps retrieval. Make each mapping through reading
+the source material; a plausible topic list is not a substitute for curation.
+The result should let readers spend their attention on mathematics rather than
+reconstructing the bibliography.
+
+### `RESOURCE-41`: Do not confuse neutral wording with completed curation
+
+**Bad:** Replace a book-ranking paragraph with “Several sources discuss this
+subject” and leave the resource entries unlocated and unorganized.
+
+**Good:** Provide the identified works, their access links, and the section
+references needed for the page's topics.
+
+Removing conceited commentary repairs the tone but does not supply missing
+reference work. A resource page remains incomplete when readers must perform
+the searches and cross-referencing it exists to provide. Judge the result by
+whether a reader can locate the relevant material. Concise prose supports that
+function; it cannot replace the source reading and organization needed to
+deliver it.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
