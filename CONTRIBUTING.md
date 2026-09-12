@@ -1,5 +1,21 @@
 # Contributing
 
+## Contributing to this document
+
+Contributing to CONTRIBUTING.md requires the same substantive work it demands of other writing:
+
+- **Start from observed defects.** Quote actual repository passages with stable source locations. Invented caricatures conceal how ordinary and plausible the defective prose looked.
+- **Extract the general mechanism.** A resource page can expose a framing failure that applies throughout the site. The policy belongs at that general level; the page supplies evidence.
+- **Cover the whole correction interval.** “Such patterns” includes everything discussed since the previous update, not merely the last objection.
+- **Explain the relationship the prose imposes.** Identify who is being judged, supervised, or spoken for, and what authority the writer assumes.
+- **Teach recognition and severity.** Explain how repeated, superficially helpful sentences establish sustained condescension or professional contempt. Explicitly address the temptation to minimize this as verbosity, missing citations, or isolated mistakes.
+- **Make replacements demonstrate the actual correction.** Softer commands, first-person suggestions, and “Suggested reading” can preserve the same hierarchy. Replace prescription with useful knowledge and its supporting reasons.
+- **Revise earlier policies when their model proves wrong.** Appending a stronger rule while leaving contradictory guidance authoritative preserves the defect.
+- **Maintain one source of truth.** Integrate related rules coherently in CONTRIBUTING.md rather than accumulating overlapping catalogues or parallel policy documents.
+- **Separate evidence from proposals.** Observed quotations establish the finding; proposed replacements must not invent mathematical coverage, historical events, or source facts.
+
+The document must make the difficult recognition reproducible for a future contributor. Recording agreement, adding prohibitions, or producing more policy text does not establish that it does.
+
 Contributions can improve mathematical content, source records, study guides, or the website.
 
 ## Named policies
