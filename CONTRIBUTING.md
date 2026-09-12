@@ -491,10 +491,10 @@ the sentences have become.
 III.1--III.5 with III.9, and IV.1--IV.3, plus the statement of Serre duality
 in III.6.”
 
-**Proposed replacement:** “Relevant sections: II.1–II.8, III.1–III.5, III.9,
-IV.1–IV.3, and the statement of Serre duality in III.6.” Explain the subject
-or documented syllabus to which these sections are relevant and verify the
-selection. Better still, organize the references by the topics they cover.
+**Proposed replacement:** Describe what the named sections contain, connect
+their topics, and identify relevant recorded questions with source locations.
+A bare list labelled “Relevant sections” does not supply the rationale for
+the selection. Verify each content claim and relation against its source.
 
 The section locations are information; the imperative adds an assignment.
 Writing a reference page does not establish a supervisory relationship.
@@ -535,7 +535,7 @@ the writer lacks. That is a substantive epistemic boundary, not merely a
 politeness convention. Do not quietly convert a description into a decision,
 or a local judgement into a general policy for readers.
 
-### `STANCE-20`: Calibrate informal judgement without manufacturing certainty
+### `STANCE-20`: Express epistemic limits in the information presented
 
 **Observed — “The first pass”, `[@Gat21]`:** “should read these and nothing
 else”. The exclusion leaves no room for circumstances the writer has not
@@ -545,34 +545,106 @@ examined.
 When advice is actually requested, state its purpose, supporting reasons, and
 conditions under which another choice may be preferable.
 
-Informal judgements can be informed and still uncertain. Expressions such as
-“may help with” or “I would suggest” can communicate that a recommendation is
-defeasible. They must correspond to a real limit in the claim, not decorate an
-unchanged command. Do not invent numerical probabilities or imply that all
-mathematicians follow one conversational practice. The governing distinction
-is between established mathematics and contingent judgement about its use.
-Neither blanket certainty nor indiscriminate hedging expresses that distinction.
+Express uncertainty through the scope and evidence of the claim: which records
+were examined, which topics they contain, and which inference remains tentative.
+Changing a command into a first-person suggestion does not supply the missing
+work or establish a relationship with the reader. Do not invent numerical
+probabilities or imply that all mathematicians follow one conversational
+practice. Neither blanket certainty nor indiscriminate hedging communicates
+the actual limits of knowledge.
 
-### `STANCE-21`: Make peer advice conditional and preserve decision ownership
+### `STANCE-21`: Replace advice with the reasons and material it displaced
 
 **Observed — “The commutative algebra underneath”, `[@AM18]`:** “Work its
 exercises rather than reading it.”
 
-**Proposed replacement:** For the reference page, identify relevant exercises
-and sections. In a requested discussion of practice methods, a recommendation
-could identify particular exercises and explain which technique they exercise.
+**Proposed replacement:** Identify the exercises, the techniques they develop,
+and their relations to the surrounding exposition. Supply section locations.
 
-A recommendation contributes the writer's judgement while leaving the decision
-with the person who knows their own circumstances. Strength of preference
-does not confer supervisory authority. Explain the reasons for advice instead
-of making obedience the expected response. Merely changing “read” to “you
-should read” or adding “perhaps” preserves the original presumption when the
-reader has not requested guidance of that kind.
+A recommendation can retain the same hierarchy as a command: the author still
+sets the reader's course. In this wiki, the corrective form presents the
+knowledge behind a proposed choice rather than making the choice. Readers can
+use that knowledge for purposes the author has not anticipated. Conditional
+phrasing and politeness do not substitute for mathematical or bibliographic
+synthesis. Advice explicitly requested in a personal exchange has a different
+context; do not import that relationship into an independently read page.
 
 Imperatives are appropriate for posed problems, proof constructions, specified
 procedures, and assignments within an actual instructional relationship.
 “Let R be a ring” does not regulate someone's study choices. Apply this policy
 to the social and epistemic role of a directive, not its grammatical form alone.
+
+### `STANCE-22`: Do not invent a conversational relationship with the reader
+
+**Observed — “The first pass”, `[@Vak25]`:** “so use it by section, against
+whatever is currently opaque.”
+
+**Proposed replacement:** Present the sections' contents and the mathematical
+questions they address, without inventing a difficulty currently experienced
+by the reader.
+
+Published exposition need not simulate a teacher talking to a student or a
+colleague giving personal advice. Its audience has not entered such an
+exchange. First-person recommendations can manufacture that exchange just as
+imperatives can manufacture an assignment. Present the author's insights and
+supporting work directly. This is a rule about the assumed relationship, not
+a blanket ban on first-person conventions in mathematical proofs or explicit
+accounts of an author's methods.
+
+### `STANCE-23`: Explain selections through substantive synthesis
+
+**Observed:** The section list quoted in `STANCE-17` provides locations but
+does not explain the mathematical basis of its selection.
+
+**Proposed replacement structure:** Topic; source section and contents;
+connections to other topics; identified exam appearances where relevant.
+Use prose or a table according to the material. This is a structure to fill
+through source reading, not a template for inventing coverage or exam records.
+
+Adding a heading such as “Suggested reading” merely relabels a prescribed list.
+The useful contribution is the work supporting it: reconciling contents across
+sources, identifying dependencies, locating examples, and explaining observed
+patterns. A selection should expose those reasons so readers can assess and
+use it independently. Teaching experience can inform this work; it does not
+replace it or turn the page into a course assignment.
+
+### `STANCE-24`: Present the landscape without deciding the reader's route
+
+**Observed — “By topic”, `[@KM98]`:** “the relevant part for an exam is
+Chapters 1 and 2.”
+
+**Proposed replacement:** Describe the chapters' mathematical scope and cite
+actual connections to identified exam material. Include uncommon appearances
+when they provide useful information about that scope.
+
+Common topics, rare topics, and unusual recorded questions can all help a
+reader understand the available material. State the population behind frequency
+claims. Absence from inspected records does not establish universal absence;
+an unusual appearance does not make a topic mandatory preparation. Never turn
+an illustrative or hypothetical exam anecdote into a historical assertion.
+Give enough evidence to support independent allocation of attention without
+allocating it for the reader.
+
+### `STANCE-25`: Publish accrued insight rather than perform authority
+
+**Observed — “Before the schemes”:** “which is exactly the balance wanted
+when the question is \"give me an example of\".”
+
+**Proposed replacement:** Identify the examples and what they illustrate.
+If only their abundance is relevant and supported, “has many examples” suffices.
+
+The wiki's value comes from mathematical work, reading, comparisons of actual
+arguments, resolved difficulties, and carefully organized references. Present
+what that work established. Readers may use some of it, combine it with other
+knowledge, or pursue different goals. A page does not need to decide what they
+want in order to be useful.
+
+Pedagogical reflection belongs when it yields transferable content: a missing
+hypothesis, a revealing example, an alternative proof, or a connection between
+topics. Present that insight without diagnosing the reader, narrating project
+effort, or claiming the right to prescribe a programme. Humility here is a
+structural property of the exposition: it offers its knowledge without assuming
+ownership of the reader's decisions.
 
 ## Prose policies
 
