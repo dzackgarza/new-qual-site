@@ -44,6 +44,6 @@ The Abel--Jacobi map is surjective, so $\Jac(X)$ is exactly the group of degree-
 The significance is the sentence the two theorems combine to: the Jacobian is a projective variety whose points are the degree-zero line bundles on $X$, so a discrete-looking classification problem becomes a geometric object of dimension $g$.
 
 Fixing a base point $p_0$ gives $X \to \Jac(X)$, $p \mapsto [p - p_0]$, which is an embedding for $g \geq 1$.
-In genus $1$ it is an isomorphism, and that is the answer to the follow-up: an elliptic curve is its own Jacobian, and the group law on $E$ is the statement that $[p] + [q] = [r] + [0]$ exactly when $p + q = r$ under that law.
+In genus $1$ it is an isomorphism: an elliptic curve is its own Jacobian, and the group law on $E$ is the statement that $[p] + [q] = [r] + [0]$ exactly when $p + q = r$ under that law.
 Everything special about elliptic curves is this coincidence of $X$ with $\Jac X$.
 :::

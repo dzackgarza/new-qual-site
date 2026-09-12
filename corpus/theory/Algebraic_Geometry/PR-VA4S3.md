@@ -38,7 +38,7 @@ For $m = n = 1$ there is one minor, and the image is the quadric surface
 z_{00} z_{11} - z_{01} z_{10} = 0
 \]
 in $\PP^3$.
-The two rulings of that quadric are the images of $\ts{p} \times \PP^1$ and $\PP^1 \times \ts{q}$, and they are what makes it the standard example of a surface whose Picard group is $\ZZ^2$ rather than $\ZZ$.
+The two rulings of that quadric are the images of $\ts{p} \times \PP^1$ and $\PP^1 \times \ts{q}$, and they make it a surface whose Picard group is $\ZZ^2$ rather than $\ZZ$.
 
 The minors say the matrix $(z_{ij})$ has rank one, which is the coordinate-free statement: the Segre image is the locus of rank-one tensors in $\PP(V \tensor W)$.
 :::

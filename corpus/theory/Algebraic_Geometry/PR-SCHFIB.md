@@ -34,9 +34,9 @@ For $\Spec \ZZ[i] \to \Spec \ZZ$ the fibre over $(p)$ is $\Spec \FF_p[x]/(x^2+1)
 :::
 
 ::: {.remark}
-The fibre is the reason the fibre product is worth constructing, so lead with it.
-The set-theoretic preimage loses the two things that make fibres behave: the multiplicity at a branch point, and the residue field extension at a point that splits only after base change.
+The fibre product is constructed so that the fibre carries the scheme structure over $\kappa(y)$.
+The set-theoretic preimage loses both of these: it sees neither the multiplicity at a branch point nor the residue field extension at a point that splits only after base change.
 Both are visible in the examples, and in each the fibre has $k$-dimension $2$ for every base point — this is the constancy that a naive count of preimages fails to see.
 
-The follow-up is flatness: a morphism is flat exactly when the fibres vary in the way these examples suggest, and "flat is the right notion of a continuously varying family" is the sentence being fished for.
+Flatness is the condition under which fibres vary continuously: a morphism is flat exactly when the fibres vary in the way these examples suggest.
 :::

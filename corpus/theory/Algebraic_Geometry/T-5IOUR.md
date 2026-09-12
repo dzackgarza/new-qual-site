@@ -47,11 +47,11 @@ Then $X_f = U_f$ is affine and contains $p$.
 Quasicompactness extracts a finite subcover, and those $f$ generate the unit ideal because they have no common zero.
 :::
 
-::: {.remark title="The two follow-ups"}
-*Weakening Noetherian.* The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideals rather than coherent ones.
+::: {.remark title="Weakening the hypotheses"}
+The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideals rather than coherent ones.
 Noetherian is used only to have coherent ideals available and to extract finite subcovers, and both can be arranged directly.
 
-*Dropping quasicompactness.* The conclusion fails.
+*Without quasicompactness.* The conclusion fails.
 An infinite disjoint union of affine schemes has vanishing higher cohomology for every quasicoherent sheaf, being a disjoint union of affines, but it is not affine: its ring of global sections is an infinite product, and the comparison map is not an isomorphism.
 The finite subcover in the proof is where quasicompactness enters, and without it the $f_i$ need not be finite in number.
 :::

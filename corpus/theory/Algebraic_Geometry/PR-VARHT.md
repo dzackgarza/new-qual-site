@@ -34,7 +34,7 @@ Hence a closed irreducible $Y \subseteq \AA^n$ has $\codim Y = 1$ exactly when $
 :::
 
 ::: {.remark}
-The Hauptidealsatz is the statement that one equation cuts exactly one dimension, and the codimension-one corollary is the geometric form an examiner will ask for: divisors are hypersurfaces because height-one primes are principal in $k[x_1,\ldots,x_n]$, which is a UFD.
+The Hauptidealsatz is the statement that one equation cuts exactly one dimension, and the codimension-one corollary is its geometric form: divisors are hypersurfaces because height-one primes are principal in $k[x_1,\ldots,x_n]$, which is a UFD.
 
 The additivity formula fails without finite generation over a field, and the failure of "height two implies two generators" is the standard warning: the twisted cubic in $\AA^3$ has codimension two and its ideal needs three generators, so codimension does not bound the number of equations.
 :::

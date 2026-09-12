@@ -29,10 +29,10 @@ By the proposition this *is* the failure of separatedness, not merely an illustr
 ::: {.example title="Separated but not reduced"}
 Take $Z = \Spec k[\varepsilon]/(\varepsilon^2)$ and $X = \AA^1 = \Spec k[x]$, with $g$ and $h$ given by $x \mapsto 0$ and $x \mapsto \varepsilon$.
 Both are morphisms to a separated $X$, and they agree on the unique point of $Z$ — indeed on every reduced subscheme of $Z$ — but $g \neq h$.
-The dense open here is not proper, and it need not be: the point is that on a nonreduced base, agreeing topologically is not agreeing.
+The dense open here is not proper, and it need not be: on a nonreduced base, agreeing topologically is not agreeing.
 :::
 
 ::: {.remark}
-The two examples separate the two hypotheses, which is what the follow-up asks for.
+The two examples separate the two hypotheses.
 The doubled line is also the standard example of a scheme that is not a variety in the classical sense while being perfectly good as a scheme, and it is where "why is separatedness in the definition of a variety" gets its answer.
 :::

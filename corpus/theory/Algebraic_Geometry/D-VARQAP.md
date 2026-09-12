@@ -36,5 +36,5 @@ is an isomorphism of varieties, and $\PP^n = \union_{i=0}^n U_i$.
 ::: {.remark}
 The charts are what make every local question on a projective variety an affine question, and they are the reason dehomogenising and homogenising is a computation rather than a construction: $Y \subseteq \PP^n$ meets $U_i$ in the affine variety cut out by $\restrictionof{f}{x_i = 1}$ for $f \in I(Y)$, and the projective closure of an affine $Z$ is cut out by the homogenisations of *all* of $I(Z)$.
 
-The usual trap is homogenising a generating set rather than the whole ideal: for the twisted cubic the homogenisations of $y - x^2, z - x^3$ do not generate $I(Y)$, and the projective closure acquires a line at infinity that is not on the curve.
+Homogenising a generating set is not the same as homogenising the whole ideal: for the twisted cubic the homogenisations of $y - x^2, z - x^3$ do not generate $I(Y)$, and the projective closure acquires a line at infinity that is not on the curve.
 :::

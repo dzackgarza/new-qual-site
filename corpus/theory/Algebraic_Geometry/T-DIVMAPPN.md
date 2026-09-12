@@ -44,6 +44,6 @@ Base-point freeness is exactly what makes the formula define a point of $\PP^n$ 
 The two separation conditions are then injectivity and injectivity on tangent spaces, which is what a closed immersion is.
 
 The choice of $V$ matters, not just $\mcl$: taking the complete system gives the largest target, and a proper subspace gives a linear projection of that image.
-The standard examples to have ready are $\abs{\OO_{\PP^1}(d)}$, which embeds $\PP^1$ as the rational normal curve in $\PP^d$, and $\abs{\OO_{\PP^n}(2)}$, which gives the Veronese.
+The standard examples are $\abs{\OO_{\PP^1}(d)}$, which embeds $\PP^1$ as the rational normal curve in $\PP^d$, and $\abs{\OO_{\PP^n}(2)}$, which gives the Veronese.
 On a curve the two separation conditions become the numerical statement about $\ell(D - p - q)$.
 :::
