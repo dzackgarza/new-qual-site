@@ -40,7 +40,7 @@ There is an augmentation homomorphism
 \]
 whose kernel is the augmentation ideal.
 
-Most importantly, left $R[G]$-modules are exactly $R$-modules equipped with an $R$-linear action of $G$. In particular, if $k$ is a field, linear representations
+Left $R[G]$-modules are exactly $R$-modules equipped with an $R$-linear action of $G$. In particular, if $k$ is a field, linear representations
 \[
 \rho:G\to GL(V)
 \]
