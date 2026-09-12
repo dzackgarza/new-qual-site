@@ -35,7 +35,7 @@ For $X$ of finite type over a Noetherian ring $A$: $\mcl$ is ample if and only i
 Very ampleness is a statement about one sheaf and an embedding; ampleness is a statement about all coherent sheaves and is stable under taking powers.
 The theorem says they differ only by that instability, which is why ampleness is the notion that behaves well in families and very ampleness is the notion you verify.
 
-The immediate consequence to have ready is that a proper $X$ over $Y$ carrying a very ample sheaf is projective: the immersion $\iota$ has closed image by properness, so it is a closed immersion.
-Conversely a projective $X$ has $\iota^*\OO(1)$ very ample by definition, so over a Noetherian base "projective" is "proper plus a very ample sheaf", which is the form the question is usually asked in.
+A proper $X$ over $Y$ carrying a very ample sheaf is projective: the immersion $\iota$ has closed image by properness, so it is a closed immersion.
+Conversely a projective $X$ has $\iota^*\OO(1)$ very ample by definition, so over a Noetherian base "projective" is "proper plus a very ample sheaf".
 Ampleness is also where the numerical criteria live: on a curve $\mcl$ is ample exactly when $\deg \mcl > 0$.
 :::
