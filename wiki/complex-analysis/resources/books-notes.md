@@ -37,7 +37,7 @@ order: 0
 
 - [[attachments/8.3 Riemann Mapping Theorem (1).pdf|Jingzhi Tie, UGA Math 8150 notes on the Riemann mapping theorem (Spring 2020)]]
 
-- [[attachments/8.2.3 Normal family.pdf|UGA notes on normal families]]
+- [[attachments/8.2.3 Normal family.pdf|Jingzhi Tie, UGA Math 8150 notes on normal families and Montel’s theorem (Spring 2020)]]
 
 - [[attachments/8.1.2 Further Examples (1).pdf|UGA complex-analysis examples]]
 
