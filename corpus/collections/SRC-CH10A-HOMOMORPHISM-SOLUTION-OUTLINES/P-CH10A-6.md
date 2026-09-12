@@ -12,7 +12,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let G be the group of all polynomials with real coefficients under addition. For each f in G let R f denote the antiderivative of f that passes through the point (0, 0). Show that the mapping $f \mapsto \textstyle \int f$ from G to G is a homomorphism. What is the kernel of this mapping? Is this mapping a homomorphism if $\textstyle \int f$ denotes the antiderivative of f that passes through (0, 1)?
+Let G be the group of all polynomials with real coefficients under addition.
+For each f in G let R f denote the antiderivative of f that passes through the point (0, 0). Show that the mapping $f \mapsto \textstyle \int f$ from G to G is a homomorphism.
+What is the kernel of this mapping?
+Is this mapping a homomorphism if $\textstyle \int f$ denotes the antiderivative of f that passes through (0, 1)?
 :::
 
 ::: {.solution}

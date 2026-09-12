@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Show that $G \oplus H$ is Abelian if and only if G and H are Abelian. State the general case.
+Show that $G \oplus H$ is Abelian if and only if G and H are Abelian.
+State the general case.
 :::
 
 ::: {.solution}
