@@ -18,5 +18,5 @@ review: draft
 :::
 
 ::: {.solution}
-The statement is incomplete as a standalone problem: the attaching map $f:S^1\to T$ is not specified beyond the phrase “attaches inside the torus.” Different choices give non-homotopy-equivalent spaces. For example, attaching along a null-homotopic loop gives $T^2\vee S^2$, while attaching along a primitive essential loop kills one generator of $\pi_1(T^2)$ and yields a different homotopy type. The missing attaching curve is therefore essential source data and no unique homology computation is determined by this card.
+The homotopy class of the attaching map $f:S^1\to T$ is not specified by the phrase “attaches inside the torus.” Different choices give non-homotopy-equivalent spaces. For example, attaching along a null-homotopic loop gives $T^2\vee S^2$, while attaching along a primitive essential loop kills one generator of $\pi_1(T^2)$ and yields a different homotopy type. Thus the homology depends on the attaching curve.
 :::
