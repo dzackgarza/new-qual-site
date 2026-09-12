@@ -39,9 +39,8 @@ and $X_\Sigma$ is obtained by gluing the $U_\sigma$ along the $U_{\sigma \inters
 :::
 
 ::: {.remark}
-Gordan's lemma is what makes this work: $S_\sigma$ is a finitely generated semigroup, so $k[S_\sigma]$ is a finitely generated algebra and $U_\sigma$ is an honest affine variety.
+By Gordan's lemma, $S_\sigma$ is a finitely generated semigroup, so $k[S_\sigma]$ is a finitely generated algebra and $U_\sigma$ is an affine variety.
 
-The construction is a dictionary in which every question becomes finite combinatorics.
 The cone $\ts{0}$ gives the torus itself, the cone spanned by a basis gives $\AA^n$, and the fan of $\PP^n$ has rays $e_1,\ldots,e_n$ and $-\sum e_i$.
-The cone spanned by $(0,1)$ and $(d,-1)$ gives the cone over the rational normal curve of degree $d$, which is the standard source of an example with prescribed bad behaviour.
+For $d\geq1$, the cone spanned by $(0,1)$ and $(d,-1)$ gives the affine cone over the rational normal curve of degree $d$.
 :::
