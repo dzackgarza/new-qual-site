@@ -717,7 +717,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [8.2.3 Normal family.pdf](assets/attachments/extracted/8.2.3 Normal family.md) (159L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
 
-- [ ] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+- [x] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on the Riemann mapping theorem (Spring 2020), not an exercise source. Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20RMT`; no problem cards manufactured.
 
 - [ ] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology
 
