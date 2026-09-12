@@ -24,7 +24,7 @@ order: 0
 
 [Perutz, Algebraic Topology I, Fall 2008](attachments/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf)
 
-[Math 872 course contents, Spring 2014](attachments/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.pdf)
+[Math 872 Algebraic Topology course contents and theorem/topic outline, Spring 2014](attachments/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.pdf)
 
 [Math 871 exam review sheets, Fall 2013](attachments/MATH871-Exam-Review-Sheets.pdf)
 
