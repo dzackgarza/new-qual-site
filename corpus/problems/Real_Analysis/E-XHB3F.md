@@ -32,7 +32,7 @@ audit:
 :::
 
 ::: {.solution}
-**Honesty note:** the first bullet is true as stated only for non-negative measurable $f$ (or for $|f|$): for signed $f \in L^1$, $\int f = 0$ does not imply $f = 0$ a.e. (e.g. $f = \chi_{[0,1]} - \chi_{[1,2]}$). The solution proves the correct statement and records the counterexample.
+The equivalence $f=0$ a.e. $\iff \int f=0$ holds for non-negative measurable $f$ (or for $|f|$). For signed $f \in L^1$, $\int f = 0$ does not imply $f = 0$ a.e. (e.g. $f = \chi_{[0,1]} - \chi_{[1,2]}$).
 
 <1>1. For non-negative measurable $f$: $f = 0$ a.e. $\iff$ $\int f = 0$.
 <2>1. If $f = 0$ a.e., then $\int f = 0$.
