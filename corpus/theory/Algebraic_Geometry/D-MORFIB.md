@@ -27,10 +27,10 @@ X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
 :::
 
 ::: {.remark}
-The definition is a base change and not a preimage, and that is the point: $f^{-1}(y)$ is only a set, while $X_y$ is a scheme over a field, so it has a dimension, a length, a genus, and a cohomology.
-Taking $\kappa(y)$ rather than $\OO_{Y,y}$ is what makes it a scheme over a field; taking $\OO_{Y,y}$ instead gives the local picture of the family near $y$, which is the other useful base change.
+The fibre $X_y$ is a scheme over $\kappa(y)$. Its scheme structure supports invariants such as dimension and, under the relevant finiteness hypotheses, length, genus, and cohomology.
+Base change to $\Spec\OO_{Y,y}$ instead retains the part of the family over the generalisations of $y$.
 
-The underlying space of $X_y$ is homeomorphic to $f^{-1}(y)$, so nothing is lost and the scheme structure is gained.
-That structure is where the exam questions live: the fibres of $\Spec \ZZ[i] \to \Spec \ZZ$ are two points, one point, or a fat point according as $p$ splits, is inert, or ramifies, and the length of the fibre is $2$ in every case.
-That constancy is flatness, and it is the model for every statement that a numerical invariant is constant in a flat family.
+The underlying space of $X_y$ is homeomorphic to $f^{-1}(y)$.
+The fibres of $\Spec \ZZ[i] \to \Spec \ZZ$ over closed points are two points, one point, or a nonreduced point according as $p$ splits, is inert, or ramifies. In each case the coordinate algebra has dimension $2$ over $\FF_p$.
+This morphism is finite flat of rank $2$, since $\ZZ[i]$ is free of rank $2$ over $\ZZ$.
 :::
