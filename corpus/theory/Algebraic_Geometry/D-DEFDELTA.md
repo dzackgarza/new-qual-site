@@ -40,6 +40,5 @@ An additive functor $F: \mca \to \mcb$ is **effaceable** if for each object $A$ 
 A $\delta$-functor is **universal** if it maps uniquely to every other $\delta$-functor agreeing with it in degree $0$.
 Grothendieck's criterion is that a $\delta$-functor whose $T^i$ are effaceable for $i>0$ is universal, and derived functors are effaceable because every $A$ embeds in an injective, which kills the higher $R^iF$.
 
-This is an identification tool, not abstraction for its own sake.
 It is how one proves that Čech cohomology on a nice space, or $\Ext$ computed in either variable, agrees with the derived functor definition: check both theories are $\delta$-functors, check they agree in degree $0$, check effaceability.
 :::
