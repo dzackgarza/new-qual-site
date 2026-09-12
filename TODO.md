@@ -11,7 +11,8 @@ and `commit:P-…`. Names in Needs refer to the same card's instance.
 This is a finite DAG for each selected collection's authored card population.
 Returning to selection creates an instance for a different card, not a back-edge
 from commit to the same select node. Work one card at a time in source order;
-independent subject worktrees may work on different cards. Use the existing
+independent subject streams may work on different cards in the one checkout, on
+`main`, under [`QUAL-09`](CONTRIBUTING.md#named-policies). Use the existing
 collection checklist and card audit/commit evidence, not a second status ledger.
 
 The source-review prerequisite applies when incorporating a source solution;
@@ -29,6 +30,38 @@ and absence of cycles. Preserve the complete mathematical obligation.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 arise in [COMPLAINTS.md](COMPLAINTS.md).
+
+### Terminal nodes
+
+Three repository-level nodes sit after every card, queue and publication obligation above.
+They are not card instances; they run once the corpus work they follow is closed.
+
+- **`refactor-audit`**. **Needs:** every queue closed. Audit the tooling and site sources —
+  `tools/`, `site/`, the generators and checkers, not the authored cards — for messy,
+  disorganized or duplicated code, and carry out the refactorings that consolidate sources of
+  truth and restore proper encapsulation. The card format and the published site need not
+  change and should not change incidentally. **This node explodes:** every refactor the audit
+  identifies becomes its own node here with its own Needs, each terminating back into this
+  node; recurse when one contains several. A refactoring that is not a node is one nobody will
+  do. **Acceptance:** the audit is complete and every finding exists as a node — a scheduling
+  node, not a work node, markable skippable once the plan is fully exploded.
+
+- **`type-paydown`**. **Needs:** `refactor-audit`. Pay down type errors in the tooling where
+  reasonable and no further. Every typing decision must improve the legibility of the code, the
+  ability to understand what it does, and the ability to reason statically about whether it is
+  correct — that is the standard, not the error count. Golfing the code into oblivion is the
+  failure mode. Where a contortion that exists only to silence a checker is genuinely
+  warranted, it must be judged as significantly serving that goal, with the argument recorded
+  explicitly in the commit message.
+
+- **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than
+  closing. Continually audit for unnecessary bloat, bad style and non-idiomatic constructions,
+  LOC reduction opportunities, and anything hand-rolled that a dependency already provides —
+  pandoc, the markdown toolchain, any Python library, anything at all. Append every finding to
+  `COMPLAINTS.md` as it is found. Findings accumulate; they need not be fixed in the same pass,
+  and the audit is never declared finished.
+
+
 
 ## Content issues and policy violations build log
 
@@ -2065,6 +2098,13 @@ while sessions are live.
 
   The twenty recovered cards in `81373e972` that have a competing version in `main` are
   the same kind of question and belong in the same pass.
+
+  Real Analysis subset adjudicated 2026-09-11: `P-JHUFA11ANH` has mathematically
+  identical parent proofs, differing only in paragraph formatting, so the retained
+  version requires no change. `P-JVAGD` likewise has identical parent proofs; current
+  `main` is strictly preferable because it also corrects the card title from the
+  erroneous `\varphi''` to the source-correct `\varphi'`. No Real Analysis collision
+  card remains to adjudicate under this item.
 
 - [ ] Retire the remaining worktrees. All 25 are fully merged, so the only thing holding
   each one open is its own uncommitted work. `git worktree remove` preserves the branch;
