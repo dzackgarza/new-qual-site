@@ -128,51 +128,51 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-04.md
 - [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-05.md
 - [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/index.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-01.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-02.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-03.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-04.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-05.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-06.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-07.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-08.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-09.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-10.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-11.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-12.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-13.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-14.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-15.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-16.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-17.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-18.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-19.md
-- [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/index.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-01.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-02.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-03.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-04.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-05.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-06.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-07.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-08.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-09.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-10.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-11.md
-- [ ] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/index.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-1.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-10.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-11.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-2.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-3.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-4.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-5.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-6.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-7.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-8.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-9.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-1.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-2.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-01.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-02.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-03.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-04.md — Source discrepancy: title concerns primes; attached scan asks about automorphisms of the rationals.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-05.md — Source discrepancy: title concerns generated subgroups; scan concerns prime multiples in an integer subgroup.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-06.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-07.md — Source discrepancy: text gives ab+a+b; scan gives a+b+2ab.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-08.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-09.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-10.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-11.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-12.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-13.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-14.md — Source discrepancy: title concerns Euclidean division; scan concerns binary operations.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-15.md — Source discrepancy: text concerns zero divisors; scan concerns Euclidean division.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-16.md — Source discrepancy: text concerns roots-of-unity endomorphisms; scan concerns zero divisors.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-17.md — Source discrepancy: text concerns abelian groups of order 16; scan concerns roots-of-unity endomorphisms.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-18.md — Source discrepancy: text concerns pentagram symmetries; scan concerns abelian groups of order 16.
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-19.md
+- [x] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/index.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-01.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-02.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-03.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-04.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-05.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-06.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-07.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-08.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-09.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-10.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/P-ALGREV1-11.md
+- [x] corpus/collections/SRC-ALGEBRA-TEST-REVIEW-1/index.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-1.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-10.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-11.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-2.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-3.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-4.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-5.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-6.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-7.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-8.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-exam-2004-pp-29-38/P-ARTALG-AL04-9.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-1.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-2.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-3.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-4.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-july-28-2003-pp-39-48/P-ARTALG-JU03-5.md
