@@ -40,6 +40,20 @@ K_{\tilde{X}} = \pi^* K_X + E , \qquad K_{\tilde{X}}^2 = K_X^2 - 1 ,
 and $\chi(\OO)$, $p_g$ and $q$ are unchanged.
 :::
 
+::: {.theorem title="Hironaka resolution (characteristic zero)"}
+Let $k = \CC$.
+
+(a) For every projective variety $Y$ there exist a smooth projective variety $Y'$ and a birational morphism $\varphi \colon Y' \to Y$ such that $\varphi$ is an isomorphism over $\reg Y$.
+
+(b) For every smooth projective variety $X$ and projective subvariety $Y \subset X$ there exist a smooth projective variety $W$ and a birational morphism $\varphi \colon W \to X$ such that $\varphi^{-1}(Y)$ is a divisor with simple normal crossings in $W$.
+
+(c) If $Y \subset X$ as in (b) is a hypersurface, there is a unique irreducible component $Y'$ of $\varphi^{-1}(Y)$ dominating $Y$, and $\varphi\vert_{Y'} \colon Y' \to Y$ is a desingularization as in (a); it is called an embedded desingularization of $Y$.
+
+(d) In (a) and (b) the morphism $\varphi$ can be chosen as a composition of blowups with smooth centres.
+
+In particular every projective variety admits a desingularization by a sequence of blowups with smooth centres, and every subvariety can be made SNC after such a sequence.
+:::
+
 ::: {.definition title="Strict transform"}
 For $C \subseteq X$ passing through $p$ with multiplicity $m$, the **strict transform** $\tilde{C}$ is the closure of $\pi^{-1}(C \setminus p)$, and
 \[

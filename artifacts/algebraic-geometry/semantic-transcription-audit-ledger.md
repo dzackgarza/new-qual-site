@@ -33,14 +33,14 @@ Method: For each crop, OCR was run to count images. For PRESERVED and DUPLICATE,
 | 6 | `2022-01-09_12-58-27.png` | Hironaka resolution via smooth W | `FE-SRFBLOW` + `T-SRFZMT` | REPAIRED | Image read 2026-09-12: Thm 15.4 Hironaka — birational map X⇢Y of smooth projective varieties fits into W smooth with birational g:W→X, f:W→Y. Added Elimination of indeterminacy theorem to T-SRFZMT. |
 | 7 | `2022-01-09_12-59-50.png` | Castelnuovo (-1)-curve criterion | `T-SRFCAST` | VERIFIED | Image read 2026-09-12: Thm 18.3 Castelnuovo — E⊂X smooth projective surface contractible to smooth Y iff E≅P^1 and E^2=-1. Matches T-SRFCAST (if (-1) then contraction; converse from FE-SRFBLOW E^2=-1). No gap. |
 | 8 | `2022-01-09_13-01-09.png` | Decomposition of birational maps into blowups and blowdowns | `T-SRFZMT` | VERIFIED | Image read 2026-09-12: Thm 18.7 (a) birational morphism of smooth projective surfaces decomposes into blowdowns of (-1)-curves, (b) birational map into blowups then blowdowns via W diagram (4). Matches T-SRFZMT factorization (now also with Hironaka W). No gap. |
-| 9 | `2022-01-09_13-03-01.png` | Hironaka desingularization, SNC, blowups with smooth centres | `FE-SRFBLOW` | CANDIDATE | Card exists. |
-| 10 | `2022-01-09_13-03-12.png` | Zariski desingularization of surfaces | `T-SRFKOD` + `FE-SRFBLOW` | CANDIDATE | Card exists. |
-| 11 | `2022-01-09_13-03-27.png` | Minimal resolution of normal surface singularities | `T-SRFKOD` | CANDIDATE | Card exists. |
-| 12 | `2022-01-09_13-06-25.png` | Riemann-Roch for curves | `T-COHRRS` | CANDIDATE | Card exists. |
-| 13 | `2022-01-09_13-07-04.png` | Adjunction K_D = (K_X+D) vert_D, genus formula | `T-SRFADJ` | CANDIDATE | Card exists. Uses vert_D to avoid pipe. |
-| 14 | `2022-01-09_13-07-48.png` | Genus formula with singularities | `D-CRVPLSING` | CANDIDATE | Card exists. |
-| 15 | `2022-01-09_13-08-23.png` | Holomorphic Euler characteristic, GRR analogues | `T-SRFRR` | CANDIDATE | Card exists. |
-| 16 | `2022-01-09_13-20-16.png` | Castelnuovo-Enriques classification by Kodaira dimension | `T-SRFKOD` | CANDIDATE | Card exists. |
+| 9 | `2022-01-09_13-03-01.png` | Hironaka desingularization, SNC, blowups with smooth centres | `FE-SRFBLOW` | REPAIRED | Image read 2026-09-12: Thm 19.1 (a) desingularization Y'→Y iso over reg Y, (b) SNC divisor W→X for Y⊂X, (c) embedded resolution unique component for hypersurface, (d) blowups with smooth centres. Added Hironaka resolution theorem (a)–(d) to FE-SRFBLOW. |
+| 10 | `2022-01-09_13-03-12.png` | Zariski desingularization of surfaces | `T-SRFKOD` + `FE-SRFBLOW` | REPAIRED | Image read 2026-09-12: Thm 19.2 Zariski — any projective surface desingularized via alternating normalizations and blowups of maximal ideals, projective. Added Zariski desingularization theorem to T-SRFKOD. |
+| 11 | `2022-01-09_13-03-27.png` | Minimal resolution of normal surface singularities | `T-SRFKOD` | REPAIRED | Image read 2026-09-12: Thm 19.3 normal projective Y has unique minimal resolution X→Y smooth, iso over reg Y, universal via blowups over exceptional locus. Added minimal resolution theorem to T-SRFKOD. |
+| 12 | `2022-01-09_13-06-25.png` | Riemann-Roch for curves | `T-COHRRS` | REPAIRED | Image read 2026-09-12: Thm 20.5 RR for curves h^0(D)-h^0(K-D)=d-g+1. Added Riemann-Roch for curves theorem to T-COHRRS (previously only surface). |
+| 13 | `2022-01-09_13-07-04.png` | Adjunction K_D = (K_X+D) vert_D, genus formula | `T-SRFADJ` | VERIFIED | Image read 2026-09-12: Thm 20.8 adjunction K_D=(K_X+D)|_D for smooth prime divisor, and (K_X+C)·C=2g(C)-2 for curve in surface. Matches T-SRFADJ (ω_C=(ω_X⊗O(C))|_C, 2g-2=C·(C+K)). No gap. |
+| 14 | `2022-01-09_13-07-48.png` | Genus formula with singularities | `D-CRVPLSING` | VERIFIED | Image read 2026-09-12: genus formula g=(d-1)(d-2)/2 - Σ mi(mi-1)/2 for plane curve with singularities. Matches D-CRVPLSING p_a-g=Σδ_p, g=binom(d-1,2)-Σδ_p, ordinary multiplicity r gives δ=binom(r,2). No gap. |
+| 15 | `2022-01-09_13-08-23.png` | Holomorphic Euler characteristic, GRR analogues | `T-SRFRR` | VERIFIED | Image read 2026-09-12: Rem 20.15 — RR rewritten as χ(O_X(D))-χ(O_X)=½D·(D-K_X) with χ(F)=Σ(-1)^ih^i(F) holomorphic Euler characteristic, HRR/GRR analogues in all dimensions. Matches T-SRFRR RR formula and D-COHEULER χ definition. No gap. |
+| 16 | `2022-01-09_13-20-16.png` | Castelnuovo-Enriques classification by Kodaira dimension | `T-SRFKOD` | REPAIRED | Image read 2026-09-12: Thm 25.2 Enriques — minimal smooth projective X has κ=-∞ iff |12K|=∅ iff P2 or minimal ruled, κ=0 iff |12K|={0} iff K3/Enriques/abelian/hyperelliptic, κ=1 elliptic, κ=2 general type. Added 12K plurigenus criterion to T-SRFKOD. |
 
 ## Phase 1 addendum — Plane and surface singularity figures (2 files)
 
@@ -55,30 +55,30 @@ These two are not theorem text. They are figures preserved byte-identical.
 
 | # | Source file | Referencing vault note | Subject | Target | Status | Notes |
 |---|-------------|------------------------|---------|--------|--------|-------|
-| 19 | `Pasted image 20220315152915.png` | `022 Sheaves.md:99` | Six-functor formalism names | `wiki/sheaves-of-modules/operations` + `D-VJFAP` | CANDIDATE | File exists. Visual compare pending. |
+| 19 | `Pasted image 20220315152915.png` | `022 Sheaves.md:99` | Six-functor formalism names | `wiki/sheaves-of-modules/operations` + `D-VJFAP` | REPAIRED | Image read 2026-09-12: four functors f_* pushforward, f^{-1} pullback, f_! extension by zero (lower shriek, open/closed immersion), f^! exceptional (upper shriek). Added four-functor list with shriek notation to wiki/sheaves-of-modules/operations. |
 | 20 | `Pasted image 20220315153140.png` | `022 Sheaves.md` | Pushforward of locally constant sheaf not locally constant — setup | `FE-SHFISOSTALKS` | REPAIRED | Image read, card created with stalk and global sections. |
 | 21 | `Pasted image 20220315153154.png` | `022 Sheaves.md` | Same example continued — stalks and global sections | `FE-SHFISOSTALKS` | REPAIRED | Same card, completes argument. |
-| 22 | `Pasted image 20220921202350.png` | `Hartshorne_Problems/1_Hartshorne/1_1x.md` | Hartshorne Ex I.1 figure | `corpus/collections/SRC-TEXT-HART77` I.1 + preserved figure | CANDIDATE | Collection lists I.1 problems. |
-| 23 | `Pasted image 20220921204101.png` | same I.1x | Hartshorne I.1 solution text | `SRC-TEXT-HART77` | CANDIDATE | Collection exists. |
-| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring | same | CANDIDATE |  |
-| 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | CANDIDATE |  |
-| 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure | same | CANDIDATE |  |
-| 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus | same | CANDIDATE |  |
-| 28 | `Pasted image 20221123200223.png` | `030 Schemes.md` | Definition of scheme / gluing data | `wiki/schemes/what-is-a-scheme` | CANDIDATE |  |
-| 29 | `Pasted image 20221123205220.png` | `030 Schemes.md` | Relative schemes / morphisms | `wiki/schemes/what-is-a-scheme` | CANDIDATE |  |
-| 30 | `Pasted image 20221123232902.png` | `030 Schemes.md` | Fibre products, universal property | `wiki/schemes/fibre-products-and-base-change` | CANDIDATE |  |
-| 31 | `Pasted image 20221124003320.png` | `032 Morphisms.md` | Proper and separated criteria (valuative) | `wiki/morphisms/separated-and-proper` | CANDIDATE |  |
-| 32 | `Pasted image 20221128124229.png` | `031 O_X Modules.md` | Twisting sheaf O(1) | `wiki/sheaves-of-modules/line-bundles` | CANDIDATE |  |
-| 33 | `Pasted image 20221129104521.png` | `060 Toric Varieties.md` | Toric fan / coordinate ring | `wiki/toric/index` | CANDIDATE |  |
-| 34 | `Pasted image 20221204223854.png` | `020 Varieties Definitions.md` | Morphisms of varieties / local rings | `wiki/varieties` | CANDIDATE |  |
-| 35 | `Pasted image 20221207141027.png` | `050 Cohomology of Schemes.md` | Derived functor cohomology + enough injectives | `D-COHDER` | CANDIDATE |  |
-| 36 | `Pasted image 20221207150823.png` | `050 Cohomology.md:106` | Cech cohomology diagram (circle) | `wiki/cohomology/computing-cohomology` | CANDIDATE |  |
-| 37 | `Pasted image 20221208004152.png` | `060 Toric Varieties.md` | Toric orbit-cone correspondence | `wiki/toric/surfaces-and-morphisms` | CANDIDATE |  |
-| 38 | `Pasted image 20221208013026.png` | `060 Toric` | Continued fraction / toric resolution | `FE-TORMINRES` | CANDIDATE |  |
-| 39 | `Pasted image 20221208013053.png` | `060 Toric` | Hirzebruch-Jung continued fractions | `FE-TORMINRES` | CANDIDATE |  |
-| 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group | `T-TORDIV` | CANDIDATE |  |
-| 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group | `T-TORDIV` | CANDIDATE |  |
-| 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X | `FE-TORDUAL` | CANDIDATE |  |
+| 22 | `Pasted image 20220921202350.png` | `Hartshorne_Problems/1_Hartshorne/1_1x.md` | Hartshorne Ex I.1 figure | `corpus/collections/SRC-TEXT-HART77` I.1 + preserved figure | VERIFIED | Image read 2026-09-12: Hartshorne I.1 figure (twisted cubic). Collection SRC-TEXT-HART77 lists I.1.1-I.1.12 with cards; no gap. |
+| 23 | `Pasted image 20220921204101.png` | same I.1x | Hartshorne I.1 solution text | `SRC-TEXT-HART77` | VERIFIED | Image read 2026-09-12: Hartshorne I.1 solution text (coordinate ring k[t] etc.). Card P-AGHTWCUBIC contains full solution; no gap. |
+| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring | same | VERIFIED | Image read 2026-09-12: affine coordinate ring k[x,y,z]/(y-x^2,z-x^3) ≅ k[t]. Matches P-AGHTWCUBIC solution; no gap. |
+| 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | VERIFIED | Image read 2026-09-12: dimension computation dim Y = dim k[t]=1. Matches P-AGHTWCUBIC; no gap. |
+| 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure | same | VERIFIED | Image read 2026-09-12: projective closure of twisted cubic. Card P-AGH29PROJCLOSURE and P-AGHTWCUBIC cover closure; no gap. |
+| 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus | same | VERIFIED | Image read 2026-09-12: singular locus (smoothness check). P-AGHTWCUBIC shows Y smooth; other I.1 cards cover singular cases; no gap. |
+| 28 | `Pasted image 20221123200223.png` | `030 Schemes.md` | Definition of scheme / gluing data | `wiki/schemes/what-is-a-scheme` | VERIFIED | Image read 2026-09-12: scheme definition via locally ringed space, affine Spec, gluing. Matches wiki/schemes/what-is-a-scheme (points=primes, structure sheaf, morphisms local). No gap. |
+| 29 | `Pasted image 20221123205220.png` | `030 Schemes.md` | Relative schemes / morphisms | `wiki/schemes/what-is-a-scheme` | VERIFIED | Image read 2026-09-12: relative schemes, morphisms of schemes (relative over base). Matches wiki/schemes/what-is-a-scheme and fibre-products base-change; no gap. |
+| 30 | `Pasted image 20221123232902.png` | `030 Schemes.md` | Fibre products, universal property | `wiki/schemes/fibre-products-and-base-change` | VERIFIED | Image read 2026-09-12: fibre products universal property, affine case A⊗B, fibres. Matches wiki/schemes/fibre-products-and-base-change; no gap. |
+| 31 | `Pasted image 20221124003320.png` | `032 Morphisms.md` | Proper and separated criteria (valuative) | `wiki/morphisms/separated-and-proper` | VERIFIED | Image read 2026-09-12: valuative criteria for proper/separated (lifting Spec K → X over DVR). Matches wiki/morphisms/separated-and-proper; no gap. |
+| 32 | `Pasted image 20221128124229.png` | `031 O_X Modules.md` | Twisting sheaf O(1) | `wiki/sheaves-of-modules/line-bundles` | VERIFIED | Image read 2026-09-12: twisting sheaf O(1) on Proj, O_X(U)-module structure. Matches wiki/sheaves-of-modules/line-bundles and D-MODPIC/Pic(P^n)=Z; no gap. |
+| 33 | `Pasted image 20221129104521.png` | `060 Toric Varieties.md` | Toric fan / coordinate ring | `wiki/toric/index` | VERIFIED | Image read 2026-09-12: toric fan coordinate ring, polytope X_P. Matches wiki/toric/index and the-dictionary; no gap. |
+| 34 | `Pasted image 20221204223854.png` | `020 Varieties Definitions.md` | Morphisms of varieties / local rings | `wiki/varieties` | VERIFIED | Image read 2026-09-12: morphisms of varieties via local rings, local properties. Matches wiki/varieties/the-dictionary and D-VAR etc.; no gap. |
+| 35 | `Pasted image 20221207141027.png` | `050 Cohomology of Schemes.md` | Derived functor cohomology + enough injectives | `D-COHDER` | VERIFIED | Image read 2026-09-12: derived functor cohomology H^i=R^i Gamma, enough injectives via product of skyscrapers. Matches D-COHDER; no gap. |
+| 36 | `Pasted image 20221207150823.png` | `050 Cohomology.md:106` | Cech cohomology diagram (circle) | `wiki/cohomology/computing-cohomology` | VERIFIED | Image read 2026-09-12: Cech cohomology of S^1 with two semicircles U,V, U∩V two intervals, d(a,b)=(b-a,b-a), H^0=Z H^1=Z. Matches wiki/cohomology/computing-cohomology Cech principle; no gap. |
+| 37 | `Pasted image 20221208004152.png` | `060 Toric Varieties.md` | Toric orbit-cone correspondence | `wiki/toric/surfaces-and-morphisms` | VERIFIED | Image read 2026-09-12: toric orbit-cone with P^2 orbits listed by vanishing coords. Matches wiki/toric/the-dictionary orbit-cone and surfaces-and-morphisms; no gap. |
+| 38 | `Pasted image 20221208013026.png` | `060 Toric` | Continued fraction / toric resolution | `FE-TORMINRES` | VERIFIED | Image read 2026-09-12: exercise cone <2e1-e2, -e1+2e2> Cartier condition a1=a2 mod3 etc. Matches FE-TORMINRES continued-fraction resolution and Cartier criterion; no gap. |
+| 39 | `Pasted image 20221208013053.png` | `060 Toric` | Hirzebruch-Jung continued fractions | `FE-TORMINRES` | VERIFIED | Image read 2026-09-12: cone <2e1-e2, e2> cone over conic, D1,D2 not Cartier but 2D1,2D2 are. Matches FE-TORMINRES toric singularity Cartier example and HJ; no gap. |
+| 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group | `T-TORDIV` | VERIFIED | Image read 2026-09-12: fan for P2, anticanonical polytope P={m | <m,ui> >=-1}, Conv etc. Matches T-TORDIV class group exact sequence and wiki polytopes-and-divisors; no gap. |
+| 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group | `T-TORDIV` | VERIFIED | Image read 2026-09-12: Hirzebruch surface F_r wall relations u1-u2-u3+u4 etc., D1-D4 intersections. Matches T-TORDIV exact sequences and Pic rank; no gap. |
+| 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X | `FE-TORDUAL` | VERIFIED | Image read 2026-09-12: Hirzebruch F_r anticanonical, b_i and self-intersections D_i. Matches FE-TORDUAL dual cone and T-TORDIV K=-sum D_rho; no gap. |
 
 ## Phase 2 extra — Vault figures preserved byte-identical (27 files)
 
