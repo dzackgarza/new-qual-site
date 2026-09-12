@@ -29,7 +29,7 @@ A lattice polytope $P \subseteq M_\RR$ is **normal** if
 equivalently $k \cdot (P \intersect M) = (kP) \intersect M$ for all $k \geq 1$, equivalently $(P \intersect M) \times \ts{1}$ generates the semigroup $C(P) \intersect (M \times \ZZ)$, where $C(P) \da \Cone(P \times \ts{1})$.
 :::
 
-::: {.proposition title="Two facts to carry"}
+::: {.proposition title="Normality and dilation"}
 1. Normal implies very ample.
 
 2. If $P$ is full-dimensional with $\dim P \geq 2$, then $kP$ is normal for every $k \geq \dim P - 1$.
