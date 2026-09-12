@@ -93,11 +93,11 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/lp-spaces/index.md` — no stance revision
 - [x] `wiki/real-analysis/lp-spaces/the-spaces.md` — no stance revision
 - [x] `wiki/real-analysis/lp-spaces/which-inequality.md` — replaced "often what a problem is really asking about" with sharpness phrasing
-- [ ] `wiki/real-analysis/measure/index.md`
-- [ ] `wiki/real-analysis/measure/is-it-measurable.md`
-- [ ] `wiki/real-analysis/measure/littlewood-principles-notes.md`
-- [ ] `wiki/real-analysis/measure/littlewoods-principles.md`
-- [ ] `wiki/real-analysis/measure/outer-measure.md`
+- [x] `wiki/real-analysis/measure/index.md` — no stance revision
+- [x] `wiki/real-analysis/measure/is-it-measurable.md` — no stance revision
+- [x] `wiki/real-analysis/measure/littlewood-principles-notes.md` — no stance revision; doubled `assets/assets/` image paths render broken (figures under `assets/figures/`)
+- [x] `wiki/real-analysis/measure/littlewoods-principles.md` — no stance revision
+- [x] `wiki/real-analysis/measure/outer-measure.md` — no stance revision
 - [x] `wiki/real-analysis/resources/books-notes.md`
 - [x] `wiki/real-analysis/resources/extra-questions.md`
 - [x] `wiki/real-analysis/resources/index.md`
