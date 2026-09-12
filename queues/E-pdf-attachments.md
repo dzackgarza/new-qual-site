@@ -448,7 +448,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Practice exams (2)
 
-- [ ] [calculus_practice_test3.pdf](assets/attachments/extracted/calculus_practice_test3.md) (151L, 9 problems) — no metadata **OCR: image placeholders**
+- [x] [calculus_practice_test3.pdf](assets/attachments/extracted/calculus_practice_test3.md) (151L, 9 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: undergraduate calculus multiple-choice practice material, already retained at `wiki/prelim/resources/problems.md`. The prior Queue-E audit (`queues/E-batch-03.md`) explicitly classifies it as “not a collection candidate,” and `queues/E-corrections.md` records numerous scanner gaps/unreadable stems. Reference-only intake therefore stops at the existing resource representation; no qualifying-exam collection or cards are manufactured.
 
 - [ ] [multivariable_calculus.pdf](assets/attachments/extracted/multivariable_calculus.md) (127L, 6 problems) — no metadata **OCR: image placeholders**
 
