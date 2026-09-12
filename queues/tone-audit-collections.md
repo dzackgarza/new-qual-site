@@ -323,27 +323,27 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1977/P-BKF77-8.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1977/P-BKF77-9.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1977/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-1.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-10.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-11.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-12.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-13.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-14.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-15.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-16.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-17.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-18.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-19.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-2.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-20.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-3.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-4.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-5.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-6.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-7.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-8.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-9.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-1.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-10.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-11.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-12.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-13.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-14.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-15.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-16.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-17.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-18.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-19.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-2.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-20.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-3.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-4.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-5.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-6.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-7.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-8.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/P-BKF81-9.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1981/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/P-BKF82-1.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/P-BKF82-10.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/P-BKF82-11.md
@@ -365,25 +365,25 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/P-BKF82-8.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/P-BKF82-9.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1982/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-1.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-10.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-11.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-12.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-13.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-14.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-15.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-16.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-17.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-18.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-2.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-3.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-4.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-5.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-6.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-7.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-8.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-9.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-1.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-10.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-11.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-12.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-13.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-14.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-15.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-16.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-17.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-18.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-2.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-3.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-4.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-5.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-6.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-7.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-8.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/P-BKF94-9.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-1994/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2003/P-BKF03-1A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2003/P-BKF03-1B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2003/P-BKF03-2A.md
@@ -479,25 +479,25 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2009/P-BKF09-9A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2009/P-BKF09-9B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2009/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-1A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-1B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-2A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-2B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-3A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-3B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-4A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-4B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-5A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-5B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-6A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-6B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-7A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-7B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-8A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-8B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-9A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-9B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-1A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-1B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-2A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-2B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-3A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-3B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-4A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-4B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-5A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-5B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-6A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-6B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-7A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-7B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-8A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-8B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-9A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/P-BKF10-9B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2010/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2011/P-BKF11-1A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2011/P-BKF11-1B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2011/P-BKF11-2A.md
@@ -593,25 +593,25 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2015/P-BKF15-9A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2015/P-BKF15-9B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2015/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-1A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-1B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-2A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-2B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-3A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-3B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-4A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-4B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-5A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-5B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-6A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-6B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-7A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-7B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-8A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-8B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-9A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-9B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-1A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-1B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-2A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-2B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-3A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-3B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-4A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-4B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-5A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-5B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-6A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-6B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-7A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-7B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-8A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-8B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-9A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/P-BKF16-9B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2016/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2018/P-BKF18-1A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2018/P-BKF18-1B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-FALL-2018/P-BKF18-2A.md
@@ -707,25 +707,25 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2005/P-BKS05-9A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2005/P-BKS05-9B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2005/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-1A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-1B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-2A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-2B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-3A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-3B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-4A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-4B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-5A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-5B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-6A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-6B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-7A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-7B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-8A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-8B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-9A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-9B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-1A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-1B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-2A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-2B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-3A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-3B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-4A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-4B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-5A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-5B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-6A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-6B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-7A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-7B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-8A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-8B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-9A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/P-BKS06-9B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2006/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2007/P-BKS07-1A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2007/P-BKS07-1B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2007/P-BKS07-2A.md
@@ -821,25 +821,25 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2013/P-BKS13-9A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2013/P-BKS13-9B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2013/index.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-1A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-1B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-2A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-2B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-3A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-3B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-4A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-4B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-5A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-5B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-6A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-6B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-7A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-7B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-8A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-8B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-9A.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-9B.md
-- [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/index.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-1A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-1B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-2A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-2B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-3A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-3B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-4A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-4B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-5A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-5B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-6A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-6B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-7A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-7B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-8A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-8B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-9A.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/P-BKS16-9B.md
+- [x] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2016/index.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2017/P-BKS17-1A.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2017/P-BKS17-1B.md
 - [ ] corpus/collections/SRC-BERKELEY-PRELIM-SPRING-2017/P-BKS17-2A.md
@@ -910,46 +910,46 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-CA-ART-T34TG3/P-YZ4WV.md
 - [ ] corpus/collections/SRC-CA-ART-T34TG3/P-ZO5JW.md
 - [ ] corpus/collections/SRC-CA-ART-T34TG3/index.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-01.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-02.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-03.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-04.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-05.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-06.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-07.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-08.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-09.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-10.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-11.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-01.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-02.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-03.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-04.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-05.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-06.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-07.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-08.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-09.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-10.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-11.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-12.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-13.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-14.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-01.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-02.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-03.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-04.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-05.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-06.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-07.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-08.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-09.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-10.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-11.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-12.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-13.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-14.md
-- [ ] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/index.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-01.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-02.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-03.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-04.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-05.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-06.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-07.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-08.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-09.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-10.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S1-11.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-01.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-02.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-03.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-04.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-05.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-06.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-07.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-08.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-09.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-10.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-11.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-12.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-13.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S2-14.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-01.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-02.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-03.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-04.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-05.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-06.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-07.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-08.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-09.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-10.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-11.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-12.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-13.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/P-CM16-S3-14.md
+- [x] corpus/collections/SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016/index.md
 - [ ] corpus/collections/SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH10-13.md
 - [ ] corpus/collections/SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH10-15.md
 - [ ] corpus/collections/SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH10-20.md
@@ -977,17 +977,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH10A-6.md
 - [ ] corpus/collections/SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH10A-7.md
 - [ ] corpus/collections/SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES/index.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-10.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-12.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-15.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-16.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-2.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-21.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-26.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-34.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-4.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-5.md
-- [ ] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/index.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-10.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-12.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-15.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-16.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-2.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-21.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-26.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-34.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-4.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/P-CH11-5.md
+- [x] corpus/collections/SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES/index.md
 - [ ] corpus/collections/SRC-CH12-RING-SOLUTION-OUTLINES/P-CH12-12.md
 - [ ] corpus/collections/SRC-CH12-RING-SOLUTION-OUTLINES/P-CH12-17.md
 - [ ] corpus/collections/SRC-CH12-RING-SOLUTION-OUTLINES/P-CH12-19.md
@@ -1037,20 +1037,20 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-CH14-IDEAL-SOLUTION-OUTLINES/P-CH14-6.md
 - [ ] corpus/collections/SRC-CH14-IDEAL-SOLUTION-OUTLINES/P-CH14-8.md
 - [ ] corpus/collections/SRC-CH14-IDEAL-SOLUTION-OUTLINES/index.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-11.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-12.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-15.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-16.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-17.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-20.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-21.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-30.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-37.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-39.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-45.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-50.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-66.md
-- [ ] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/index.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-11.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-12.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-15.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-16.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-17.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-20.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-21.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-30.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-37.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-39.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-45.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-50.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/P-CH15-66.md
+- [x] corpus/collections/SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES/index.md
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/P-CH16-1.md
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/P-CH16-10.md
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/P-CH16-11.md
@@ -1066,19 +1066,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/P-CH16-56.md
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/P-CH16-6.md
 - [ ] corpus/collections/SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES/index.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-12.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-15.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-19.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-2.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-20.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-21.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-23.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-24.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-26.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-31.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-8.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-9.md
-- [ ] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/index.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-12.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-15.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-19.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-2.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-20.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-21.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-23.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-24.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-26.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-31.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-8.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/P-CH17-9.md
+- [x] corpus/collections/SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES/index.md
 - [ ] corpus/collections/SRC-CH20-FIELD-SOLUTION-OUTLINES/P-CH20-1.md
 - [ ] corpus/collections/SRC-CH20-FIELD-SOLUTION-OUTLINES/P-CH20-20.md
 - [ ] corpus/collections/SRC-CH20-FIELD-SOLUTION-OUTLINES/P-CH20-21.md
@@ -1249,32 +1249,32 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-GATHMANN-AG/P-AGXGATHVICLOSURE.md
 - [ ] corpus/collections/SRC-GATHMANN-AG/P-AGXNSSNONCLOSED.md
 - [ ] corpus/collections/SRC-GATHMANN-AG/index.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-01.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-02.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-03.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-04.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-05.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-06.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-07.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-08.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-09.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-10.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-11.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-12.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-13.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-14.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-15.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-16.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-17.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-18.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-19.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-20.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-21.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-22.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-23.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-24.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-25.md
-- [ ] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/index.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-01.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-02.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-03.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-04.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-05.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-06.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-07.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-08.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-09.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-10.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-11.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-12.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-13.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-14.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-15.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-16.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-17.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-18.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-19.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-20.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-21.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-22.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-23.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-24.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/P-GRECH1-25.md
+- [x] corpus/collections/SRC-GRE-MATH-CH1-REVIEW/index.md
 - [ ] corpus/collections/SRC-GRE-MATH-CH3-REVIEW/P-GRECH3-01.md
 - [ ] corpus/collections/SRC-GRE-MATH-CH3-REVIEW/P-GRECH3-02.md
 - [ ] corpus/collections/SRC-GRE-MATH-CH3-REVIEW/P-GRECH3-03.md
@@ -1490,52 +1490,52 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-HARVARD-FIELDS-ORAL/P-HFGO8.md
 - [ ] corpus/collections/SRC-HARVARD-FIELDS-ORAL/P-HFGO9.md
 - [ ] corpus/collections/SRC-HARVARD-FIELDS-ORAL/index.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO1.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO10.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO11.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO12.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO13.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO14.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO15.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO16.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO17.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO18.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO19.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO2.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO20.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO21.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO22.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO23.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO24.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO25.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO26.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO27.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO28.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO29.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO3.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO30.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO31.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO32.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO33.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO34.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO35.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO36.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO37.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO38.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO39.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO4.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO40.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO41.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO42.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO43.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO44.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO45.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO5.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO6.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO7.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO8.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO9.md
-- [ ] corpus/collections/SRC-HARVARD-GROUPS-ORAL/index.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO1.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO10.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO11.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO12.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO13.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO14.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO15.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO16.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO17.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO18.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO19.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO2.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO20.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO21.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO22.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO23.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO24.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO25.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO26.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO27.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO28.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO29.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO3.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO30.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO31.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO32.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO33.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO34.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO35.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO36.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO37.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO38.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO39.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO4.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO40.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO41.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO42.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO43.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO44.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO45.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO5.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO6.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO7.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO8.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/P-HGRO9.md
+- [x] corpus/collections/SRC-HARVARD-GROUPS-ORAL/index.md
 - [ ] corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6/P-HM21B18-PF6-01.md
 - [ ] corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6/P-HM21B18-PF6-02.md
 - [ ] corpus/collections/SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6/P-HM21B18-PF6-03.md
@@ -2067,23 +2067,23 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/P-KSRING17-140.md
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/P-KSRING17-141.md
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/index.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ1.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ10.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ11.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ12.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ13.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ14.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ15.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ16.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ2.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ3.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ4.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ5.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ6.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ7.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ8.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ9.md
-- [ ] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/index.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ1.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ10.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ11.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ12.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ13.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ14.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ15.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ16.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ2.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ3.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ4.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ5.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ6.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ7.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ8.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/P-LARQ9.md
+- [x] corpus/collections/SRC-LERMAN-ALGEBRA-REVIEW/index.md
 - [ ] corpus/collections/SRC-LINEAR-ALGEBRA-TEST2-REVIEW/P-LATEST2-10.md
 - [ ] corpus/collections/SRC-LINEAR-ALGEBRA-TEST2-REVIEW/P-LATEST2-15.md
 - [ ] corpus/collections/SRC-LINEAR-ALGEBRA-TEST2-REVIEW/P-LATEST2-32.md
@@ -2117,14 +2117,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-MATH114-GALOIS-HOMEWORK-2006/P-M114-9-05.md
 - [ ] corpus/collections/SRC-MATH114-GALOIS-HOMEWORK-2006/P-M114-9-06.md
 - [ ] corpus/collections/SRC-MATH114-GALOIS-HOMEWORK-2006/index.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-1.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-2.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-3.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-4.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-5.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-6.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-7.md
-- [ ] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/index.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-1.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-2.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-3.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-4.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-5.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-6.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/P-M504F03-7.md
+- [x] corpus/collections/SRC-MATH504-FINAL-AUTUMN-2003/index.md
 - [ ] corpus/collections/SRC-MATH6338-HW8/P-M6338H8-1.md
 - [ ] corpus/collections/SRC-MATH6338-HW8/P-M6338H8-2.md
 - [ ] corpus/collections/SRC-MATH6338-HW8/P-M6338H8-3.md
@@ -2151,16 +2151,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-1/P-M81A1-E2.md
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-1/P-M81A1-E3.md
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-1/index.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-1.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-2.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-3.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-4.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-5.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-6.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E1.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E2.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E3.md
-- [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/index.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-1.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-2.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-3.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-4.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-5.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-6.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E1.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E2.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/P-M81A2-E3.md
+- [x] corpus/collections/SRC-MATH8100-ASSIGNMENT-2/index.md
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-3/P-M81A3-1.md
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-3/P-M81A3-2.md
 - [ ] corpus/collections/SRC-MATH8100-ASSIGNMENT-3/P-M81A3-3.md
@@ -2434,9 +2434,9 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-POINT-SET-TOPOLOGY-MIDTERM/P-PSTM-05.md
 - [ ] corpus/collections/SRC-POINT-SET-TOPOLOGY-MIDTERM/P-PSTM-06.md
 - [ ] corpus/collections/SRC-POINT-SET-TOPOLOGY-MIDTERM/index.md
-- [ ] corpus/collections/SRC-PRELIM-ART-A2355I/P-HUKW5.md
-- [ ] corpus/collections/SRC-PRELIM-ART-A2355I/P-VAWOC.md
-- [ ] corpus/collections/SRC-PRELIM-ART-A2355I/index.md
+- [x] corpus/collections/SRC-PRELIM-ART-A2355I/P-HUKW5.md
+- [x] corpus/collections/SRC-PRELIM-ART-A2355I/P-VAWOC.md
+- [x] corpus/collections/SRC-PRELIM-ART-A2355I/index.md
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-2ALGH.md
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-3MDGM.md
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-45Y6B.md
@@ -2499,35 +2499,35 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-Y6XVP.md
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/P-YFZRX.md
 - [ ] corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-01.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-02.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-03.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-04.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-05.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-06.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-07.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-08.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-09.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-10.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-11.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-12.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-13.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-14.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-15.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-16.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-17.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-18.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-19.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-20.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-21.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-22.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-23.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-24.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-25.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-26.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-27.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-28.md
-- [ ] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/index.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-01.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-02.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-03.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-04.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-05.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-06.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-07.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-08.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-09.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-10.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-11.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-12.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-13.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-14.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-15.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-16.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-17.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-18.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-19.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-20.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-21.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-22.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-23.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-24.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-25.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-26.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-27.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/P-PRECALC1-28.md
+- [x] corpus/collections/SRC-PRELIM-CALCULUS-I-WEEK1/index.md
 - [ ] corpus/collections/SRC-PRELIM-CALCULUS-II-WEEK2/P-PRECALC2-01.md
 - [ ] corpus/collections/SRC-PRELIM-CALCULUS-II-WEEK2/P-PRECALC2-02.md
 - [ ] corpus/collections/SRC-PRELIM-CALCULUS-II-WEEK2/P-PRECALC2-03.md
@@ -2781,13 +2781,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-SEQUENCES-SERIES-ASSIGNMENT-2/P-SERIES-A2-11.md
 - [ ] corpus/collections/SRC-SEQUENCES-SERIES-ASSIGNMENT-2/P-SERIES-A2-12.md
 - [ ] corpus/collections/SRC-SEQUENCES-SERIES-ASSIGNMENT-2/index.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-01.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-02.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-03.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-04.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-05.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-06.md
-- [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/index.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-01.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-02.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-03.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-04.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-05.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/P-SHON-HW11-06.md
+- [x] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW11/index.md
 - [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW4/P-SHON-HW4-01.md
 - [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW4/P-SHON-HW4-02.md
 - [ ] corpus/collections/SRC-SHONKWILER-ALGEBRA-HW4/P-SHON-HW4-03.md
@@ -2825,17 +2825,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TAMU-RA-FALL-2015/P-C53SG.md
 - [ ] corpus/collections/SRC-TAMU-RA-FALL-2015/P-NIC7C.md
 - [ ] corpus/collections/SRC-TAMU-RA-FALL-2015/index.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-4QQGN.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-7VK5X.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT89.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT90.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT91.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT92.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-FC62S.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-HWAMG.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-JMOGT.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/P-MSIER.md
-- [ ] corpus/collections/SRC-TAMU-RA-FALL-2016/index.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-4QQGN.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-7VK5X.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT89.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT90.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT91.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-8XT92.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-FC62S.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-HWAMG.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-JMOGT.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/P-MSIER.md
+- [x] corpus/collections/SRC-TAMU-RA-FALL-2016/index.md
 - [ ] corpus/collections/SRC-TAMU-RA-SPRING-2015/P-8XT93.md
 - [ ] corpus/collections/SRC-TAMU-RA-SPRING-2015/P-8XT94.md
 - [ ] corpus/collections/SRC-TAMU-RA-SPRING-2015/P-8XT95.md
@@ -4470,479 +4470,479 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/21/E-XFXGM.md
 - [x] corpus/collections/SRC-TEXT-MUN00/21/E-YTG4V.md
 - [x] corpus/collections/SRC-TEXT-MUN00/21/E-ZPC0X.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-0S3OA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-1KV5G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-3SU0X.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-BBGSH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-JZMX6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-KIN90.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-LEE5L.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-MH2FB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-P5AAV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-PFQIX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-Q5WSL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-RWKRJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/22/E-U8UBU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-0B5CJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-4T2MK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-5CS9C.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-BZW5J.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-F01YX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-LEN3V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-LY1GZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-O13MH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-O5T9Y.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-W6ZTU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-XW377.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/23/E-Z13JH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-2X3VM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-52DW7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-9L771.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-IP1R7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-LIN4R.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-MJQTF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-OR2SV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-PQHZN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-PSR75.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-U00IE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-YERPP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/24/E-ZY1RB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-1T44B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-8K7RQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-G74LH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-MD9QR.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-O3E41.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-PEXB6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-QJXDP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-RZTZT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-T7M5R.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/25/E-Y0QAW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-069N4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-0NSGA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-2BCY2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-2V2VL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-5GHY2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-BDL60.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-O0HKU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-Q8TYL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-R65PW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-T58V0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-XNYTJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-YZWG5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/26/E-ZXEH5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-1QGID.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-JX67Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-LRAPM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-RZLC7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-URH71.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/27/E-XIHWT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-01BSA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-70TGS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-CJA01.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-E9PMX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-ENNUD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-QOXG5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/28/E-UX2C4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-0K3QV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-1VSTU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-2BNJ6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-3KMYL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-4PQ1O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-4S8XS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-5NREC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-73JHB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-B3UKB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-CHQXB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-DYY0W.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-ESQ3V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-GO24I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-GYVM8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-H6CCW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-NYYRX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-Q1M47.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-S57IX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-TAVBI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-TRFP3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-WX8FM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-XVP93.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/29/E-YBJTZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-0GRG4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-18MBF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-432BL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-4TG52.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-52GF4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-5FLKZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-8HR3A.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-8VZD4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-99H07.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-9TQ6L.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-JPU5E.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-JW56I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-KZPIX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-MC21D.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-N5AYS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-NWR5K.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-QWNYJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-V98N5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/30/E-W7FNF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-71YOD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-7ML5F.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-AHENA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-DWC4M.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-E5ZWY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-TTX65.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-WVNJ2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-X4TVL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/31/E-Y4MFU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-BAZND.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-DUQHF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-GP176.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-L4NKO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-L4UAO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-LEJYZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-NEFI2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-QBVO3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-RIGIX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/32/E-TZ1IN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-0MY4M.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-1P97G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-24TY3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-7GVUH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-EDUVQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-F46JG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-G5JJ7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-OHHSA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-QJLUO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-TBLM7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/33/E-YT6Q8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-013M4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-FGRFM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-KK77N.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-LESK3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-MQTBP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-MUH7R.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-QGR6H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-RX228.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/34/E-TFUF2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-3JLUV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-9RR0I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-DM2U0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-H5NO6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-HYC1G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-OI7VN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-QSI4Y.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-Z964O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/35/E-ZYJGG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-1CMTE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-29WP0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-4KGM4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-57O2M.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-5VWPC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-873VF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-CJGFE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-DX7N2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-POA5M.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-PWXIV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-V76F1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/36/E-X1QM4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/37/E-8T3QS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/37/E-9OT3C.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/37/E-CTM3H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/37/E-KIH81.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/37/E-TTFVV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-4WQEM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-7NRBE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-9O8YW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-F68KP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-L2EHD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-LS2QW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-QVH6Y.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-QZUV0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-TTTSP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/38/E-UB4PP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-6O8B6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-9IGGV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-A38F6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-BNX60.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-L77XX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/39/E-PDDBF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-10.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-11.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/40/E-18P82.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/40/E-G27Q3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/40/E-HE912.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/40/E-IY4BS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/40/E-Y5K11.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-76OHA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-94C75.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-GZX7B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-KVFCT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-LRJKU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-MTDPP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-QIADW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-QNT4A.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-R1V61.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/41/E-S4J3T.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/42/E-I61EM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/42/E-LZX97.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-2TY2B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-4P6A6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-8QHNV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-9TP29.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-AY5GK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-M23QZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-MPI86.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-O0XAB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-PCAYG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/43/E-S7K3V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/44/E-ER6ZN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/44/E-SADP0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/44/E-WVVWW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/44/E-YQUO1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-3C4WF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-4289E.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-5QSZ7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-ARGEV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-D6DOE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-I41R1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-OD5RT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/45/E-T8UBC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-0GM3H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-0HGNK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-2AWO8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-CEDW5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-CQHYY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-KNC0V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-KS2BT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-MPUGI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-Q4E68.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-R4S34.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/46/E-WHB87.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/47/E-CT4NT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/47/E-PKDH7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/47/E-UGSM8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/47/E-VPZUZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/47/E-Y3MSR.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-0SFDE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-1FRQL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-66SIM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-85UIY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-8KGS1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-AKPMH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-BTZ9P.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-CFNT7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-CKXKK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-F8UOA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-IG6PF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-NO7PH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/48/E-VBWDH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/49/E-23ASH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/49/E-YSJOS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-1SW9Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-26ELV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-6E1DR.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-D1NXY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-ETKNU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-ISSIW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-KWBI9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-LI4O5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-LOA25.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-MI1BO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-ML7VU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-MVB8P.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-OYPV7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-PROOB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-PYCIE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-U9VN1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-V4TJA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-V4WKE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-VXB5V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/50/E-XU2MN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/51/E-5T90S.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/51/E-69NKI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/51/E-C0ZWV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-699Z7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-758HY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-DDGMS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-HYPCI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-N7AOD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-PLICQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/52/E-WOS95.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-2I601.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-9V3P6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-LP0GM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-PBG3W.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-PTY7A.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/53/E-YGD3Z.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-2Z1TM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-5U4U0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-9H9P9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-A9WFT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-KADOC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-ORVG4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-UWGCC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/54/E-XIQ94.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/55/E-2STPW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/55/E-994NL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/55/E-B3WXJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/55/E-SKM03.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/56/E-IXKVS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/56/E-N69G9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/57/E-0A010.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/57/E-ID1F7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/57/E-WRMSX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/57/E-YR05O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-0LZE7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-2M0XQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-6RQWT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-97HXB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-CVDAJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-FV0KE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-LKUPH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-LVTFA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-R3LKO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/58/E-UU8CC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/59/E-1QY2X.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/59/E-6C2JI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/59/E-E79BA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/59/E-WUZ10.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/60/E-5CC0M.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/60/E-C22V5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/60/E-KS2QC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/60/E-UMMOE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/60/E-V5CQ0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/61/E-5WDER.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/61/E-LP6WS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-5VNUL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-81J56.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-AGJM5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-APRPU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-MAH4O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/62/E-OSQTJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/63/E-4E1C9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/63/E-HQSSE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/63/E-XJMHL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/64/E-41BN2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/66/E-3FN03.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/66/E-LHQJE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-3CFLD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-H238X.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-JSSPA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-SRFW8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-T179H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/67/E-UVWDX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/68/E-175IG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/68/E-8NCA4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/68/E-OWZBO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/68/E-UZY87.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/69/E-2P51H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/69/E-66MV0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/69/E-9IP2I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/69/E-FS62I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/70/E-0EZ4U.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/70/E-1DM8W.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/70/E-XUJ8N.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/71/E-5DDIL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/71/E-9LY2B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/71/E-HQ8N3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/71/E-IQT74.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/71/E-KKI5A.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/72/E-2B91X.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/72/E-5Y4F7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/72/E-FFNIM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/73/E-A7HJX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/73/E-J8QUX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/73/E-VYYH3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/73/E-W5KED.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-160XR.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-2NLYP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-8EX2G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-B74TA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-F8ETH.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-HC37E.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/74/E-J500G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/75/E-04W6Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/75/E-4349Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/75/E-II4JY.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/75/E-MYMF4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/76/E-BUVJI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/76/E-TUPHD.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/77/E-A3WS1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/77/E-ECKDI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/77/E-L0BW8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/77/E-X04YN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/78/E-3BSN7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/78/E-J5IB5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/78/E-RKSXA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/78/E-SANDE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/78/E-YI3QM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-CCLL5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-CEDQ9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-J7FPE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-KZUFG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-UYQU1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-VFXN4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/79/E-XFMJA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/80/E-LV54B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-4RF8O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-4WKOG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-79XXG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-CGJJG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-QXEP8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/81/E-W9088.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-74C1G.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-8Q9TN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-I9R8B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-QVJ8J.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-SF828.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-VLQ5H.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/82/E-YZ8XN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/83/E-NKQPS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/83/E-OQRAL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/84/E-44O6O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/84/E-MW9PV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/84/E-S0QDW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/85/E-8IBEP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/85/E-AL52O.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/85/E-CLZ18.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/index.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-0S3OA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-1KV5G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-3SU0X.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-BBGSH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-JZMX6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-KIN90.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-LEE5L.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-MH2FB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-P5AAV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-PFQIX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-Q5WSL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-RWKRJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/22/E-U8UBU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-0B5CJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-4T2MK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-5CS9C.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-BZW5J.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-F01YX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-LEN3V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-LY1GZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-O13MH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-O5T9Y.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-W6ZTU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-XW377.md
+- [x] corpus/collections/SRC-TEXT-MUN00/23/E-Z13JH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-2X3VM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-52DW7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-9L771.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-IP1R7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-LIN4R.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-MJQTF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-OR2SV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-PQHZN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-PSR75.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-U00IE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-YERPP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/24/E-ZY1RB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-1T44B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-8K7RQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-G74LH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-MD9QR.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-O3E41.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-PEXB6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-QJXDP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-RZTZT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-T7M5R.md
+- [x] corpus/collections/SRC-TEXT-MUN00/25/E-Y0QAW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-069N4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-0NSGA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-2BCY2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-2V2VL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-5GHY2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-BDL60.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-O0HKU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-Q8TYL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-R65PW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-T58V0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-XNYTJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-YZWG5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/26/E-ZXEH5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-1QGID.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-JX67Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-LRAPM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-RZLC7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-URH71.md
+- [x] corpus/collections/SRC-TEXT-MUN00/27/E-XIHWT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-01BSA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-70TGS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-CJA01.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-E9PMX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-ENNUD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-QOXG5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/28/E-UX2C4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-0K3QV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-1VSTU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-2BNJ6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-3KMYL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-4PQ1O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-4S8XS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-5NREC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-73JHB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-B3UKB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-CHQXB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-DYY0W.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-ESQ3V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-GO24I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-GYVM8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-H6CCW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-NYYRX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-Q1M47.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-S57IX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-TAVBI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-TRFP3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-WX8FM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-XVP93.md
+- [x] corpus/collections/SRC-TEXT-MUN00/29/E-YBJTZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-0GRG4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-18MBF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-432BL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-4TG52.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-52GF4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-5FLKZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-8HR3A.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-8VZD4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-99H07.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-9TQ6L.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-JPU5E.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-JW56I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-KZPIX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-MC21D.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-N5AYS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-NWR5K.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-QWNYJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-V98N5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/30/E-W7FNF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-71YOD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-7ML5F.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-AHENA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-DWC4M.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-E5ZWY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-TTX65.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-WVNJ2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-X4TVL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/31/E-Y4MFU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-BAZND.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-DUQHF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-GP176.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-L4NKO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-L4UAO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-LEJYZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-NEFI2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-QBVO3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-RIGIX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/32/E-TZ1IN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-0MY4M.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-1P97G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-24TY3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-7GVUH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-EDUVQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-F46JG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-G5JJ7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-OHHSA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-QJLUO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-TBLM7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/33/E-YT6Q8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-013M4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-FGRFM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-KK77N.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-LESK3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-MQTBP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-MUH7R.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-QGR6H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-RX228.md
+- [x] corpus/collections/SRC-TEXT-MUN00/34/E-TFUF2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-3JLUV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-9RR0I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-DM2U0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-H5NO6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-HYC1G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-OI7VN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-QSI4Y.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-Z964O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/35/E-ZYJGG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-1CMTE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-29WP0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-4KGM4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-57O2M.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-5VWPC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-873VF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-CJGFE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-DX7N2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-POA5M.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-PWXIV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-V76F1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/36/E-X1QM4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/37/E-8T3QS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/37/E-9OT3C.md
+- [x] corpus/collections/SRC-TEXT-MUN00/37/E-CTM3H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/37/E-KIH81.md
+- [x] corpus/collections/SRC-TEXT-MUN00/37/E-TTFVV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-4WQEM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-7NRBE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-9O8YW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-F68KP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-L2EHD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-LS2QW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-QVH6Y.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-QZUV0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-TTTSP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/38/E-UB4PP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-6O8B6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-9IGGV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-A38F6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-BNX60.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-L77XX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/39/E-PDDBF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-10.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-11.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/40/E-18P82.md
+- [x] corpus/collections/SRC-TEXT-MUN00/40/E-G27Q3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/40/E-HE912.md
+- [x] corpus/collections/SRC-TEXT-MUN00/40/E-IY4BS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/40/E-Y5K11.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-76OHA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-94C75.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-GZX7B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-KVFCT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-LRJKU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-MTDPP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-QIADW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-QNT4A.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-R1V61.md
+- [x] corpus/collections/SRC-TEXT-MUN00/41/E-S4J3T.md
+- [x] corpus/collections/SRC-TEXT-MUN00/42/E-I61EM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/42/E-LZX97.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-2TY2B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-4P6A6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-8QHNV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-9TP29.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-AY5GK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-M23QZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-MPI86.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-O0XAB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-PCAYG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/43/E-S7K3V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/44/E-ER6ZN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/44/E-SADP0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/44/E-WVVWW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/44/E-YQUO1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-3C4WF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-4289E.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-5QSZ7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-ARGEV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-D6DOE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-I41R1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-OD5RT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/45/E-T8UBC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-0GM3H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-0HGNK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-2AWO8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-CEDW5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-CQHYY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-KNC0V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-KS2BT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-MPUGI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-Q4E68.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-R4S34.md
+- [x] corpus/collections/SRC-TEXT-MUN00/46/E-WHB87.md
+- [x] corpus/collections/SRC-TEXT-MUN00/47/E-CT4NT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/47/E-PKDH7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/47/E-UGSM8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/47/E-VPZUZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/47/E-Y3MSR.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-0SFDE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-1FRQL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-66SIM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-85UIY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-8KGS1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-AKPMH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-BTZ9P.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-CFNT7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-CKXKK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-F8UOA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-IG6PF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-NO7PH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/48/E-VBWDH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/49/E-23ASH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/49/E-YSJOS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/5/E-MUN-5-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-1SW9Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-26ELV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-6E1DR.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-D1NXY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-ETKNU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-ISSIW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-KWBI9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-LI4O5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-LOA25.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-MI1BO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-ML7VU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-MVB8P.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-OYPV7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-PROOB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-PYCIE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-U9VN1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-V4TJA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-V4WKE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-VXB5V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/50/E-XU2MN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/51/E-5T90S.md
+- [x] corpus/collections/SRC-TEXT-MUN00/51/E-69NKI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/51/E-C0ZWV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-699Z7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-758HY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-DDGMS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-HYPCI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-N7AOD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-PLICQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/52/E-WOS95.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-2I601.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-9V3P6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-LP0GM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-PBG3W.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-PTY7A.md
+- [x] corpus/collections/SRC-TEXT-MUN00/53/E-YGD3Z.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-2Z1TM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-5U4U0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-9H9P9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-A9WFT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-KADOC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-ORVG4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-UWGCC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/54/E-XIQ94.md
+- [x] corpus/collections/SRC-TEXT-MUN00/55/E-2STPW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/55/E-994NL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/55/E-B3WXJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/55/E-SKM03.md
+- [x] corpus/collections/SRC-TEXT-MUN00/56/E-IXKVS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/56/E-N69G9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/57/E-0A010.md
+- [x] corpus/collections/SRC-TEXT-MUN00/57/E-ID1F7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/57/E-WRMSX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/57/E-YR05O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-0LZE7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-2M0XQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-6RQWT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-97HXB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-CVDAJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-FV0KE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-LKUPH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-LVTFA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-R3LKO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/58/E-UU8CC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/59/E-1QY2X.md
+- [x] corpus/collections/SRC-TEXT-MUN00/59/E-6C2JI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/59/E-E79BA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/59/E-WUZ10.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/60/E-5CC0M.md
+- [x] corpus/collections/SRC-TEXT-MUN00/60/E-C22V5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/60/E-KS2QC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/60/E-UMMOE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/60/E-V5CQ0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/61/E-5WDER.md
+- [x] corpus/collections/SRC-TEXT-MUN00/61/E-LP6WS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-5VNUL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-81J56.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-AGJM5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-APRPU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-MAH4O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/62/E-OSQTJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/63/E-4E1C9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/63/E-HQSSE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/63/E-XJMHL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/64/E-41BN2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/66/E-3FN03.md
+- [x] corpus/collections/SRC-TEXT-MUN00/66/E-LHQJE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-3CFLD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-H238X.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-JSSPA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-SRFW8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-T179H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/67/E-UVWDX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/68/E-175IG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/68/E-8NCA4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/68/E-OWZBO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/68/E-UZY87.md
+- [x] corpus/collections/SRC-TEXT-MUN00/69/E-2P51H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/69/E-66MV0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/69/E-9IP2I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/69/E-FS62I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/7/E-MUN-7-9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/70/E-0EZ4U.md
+- [x] corpus/collections/SRC-TEXT-MUN00/70/E-1DM8W.md
+- [x] corpus/collections/SRC-TEXT-MUN00/70/E-XUJ8N.md
+- [x] corpus/collections/SRC-TEXT-MUN00/71/E-5DDIL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/71/E-9LY2B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/71/E-HQ8N3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/71/E-IQT74.md
+- [x] corpus/collections/SRC-TEXT-MUN00/71/E-KKI5A.md
+- [x] corpus/collections/SRC-TEXT-MUN00/72/E-2B91X.md
+- [x] corpus/collections/SRC-TEXT-MUN00/72/E-5Y4F7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/72/E-FFNIM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/73/E-A7HJX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/73/E-J8QUX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/73/E-VYYH3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/73/E-W5KED.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-160XR.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-2NLYP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-8EX2G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-B74TA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-F8ETH.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-HC37E.md
+- [x] corpus/collections/SRC-TEXT-MUN00/74/E-J500G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/75/E-04W6Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/75/E-4349Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/75/E-II4JY.md
+- [x] corpus/collections/SRC-TEXT-MUN00/75/E-MYMF4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/76/E-BUVJI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/76/E-TUPHD.md
+- [x] corpus/collections/SRC-TEXT-MUN00/77/E-A3WS1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/77/E-ECKDI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/77/E-L0BW8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/77/E-X04YN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/78/E-3BSN7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/78/E-J5IB5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/78/E-RKSXA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/78/E-SANDE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/78/E-YI3QM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-CCLL5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-CEDQ9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-J7FPE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-KZUFG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-UYQU1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-VFXN4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/79/E-XFMJA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/80/E-LV54B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-4RF8O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-4WKOG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-79XXG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-CGJJG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-QXEP8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/81/E-W9088.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-74C1G.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-8Q9TN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-I9R8B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-QVJ8J.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-SF828.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-VLQ5H.md
+- [x] corpus/collections/SRC-TEXT-MUN00/82/E-YZ8XN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/83/E-NKQPS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/83/E-OQRAL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/84/E-44O6O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/84/E-MW9PV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/84/E-S0QDW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/85/E-8IBEP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/85/E-AL52O.md
+- [x] corpus/collections/SRC-TEXT-MUN00/85/E-CLZ18.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/index.md
 - [ ] corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEA.md
 - [ ] corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEB.md
 - [ ] corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEC.md
@@ -5208,15 +5208,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TOP-2002Q1/P-LYMLT.md
 - [ ] corpus/collections/SRC-TOP-2002Q1/P-QRCUN.md
 - [ ] corpus/collections/SRC-TOP-2002Q1/index.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T08A2.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11A1.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11A3.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11A4.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11B1.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11B2.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11B3.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/P-T11B4.md
-- [ ] corpus/collections/SRC-TOP-2011Q2/index.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T08A2.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11A1.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11A3.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11A4.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11B1.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11B2.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11B3.md
+- [x] corpus/collections/SRC-TOP-2011Q2/P-T11B4.md
+- [x] corpus/collections/SRC-TOP-2011Q2/index.md
 - [ ] corpus/collections/SRC-TOP-2012Q1/P-T12A1.md
 - [ ] corpus/collections/SRC-TOP-2012Q1/P-T12A2.md
 - [ ] corpus/collections/SRC-TOP-2012Q1/P-T12A3.md
@@ -5262,15 +5262,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TOP-2017Q2/P-T17Q2-7.md
 - [ ] corpus/collections/SRC-TOP-2017Q2/P-T17Q2-8.md
 - [ ] corpus/collections/SRC-TOP-2017Q2/index.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18A1.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18A2.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18A3.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18A4.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18B1.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18B2.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18B3.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/P-T18B4.md
-- [ ] corpus/collections/SRC-TOP-2018Q2/index.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18A1.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18A2.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18A3.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18A4.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18B1.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18B2.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18B3.md
+- [x] corpus/collections/SRC-TOP-2018Q2/P-T18B4.md
+- [x] corpus/collections/SRC-TOP-2018Q2/index.md
 - [ ] corpus/collections/SRC-TOP-2019Q1/P-T06Q1-4.md
 - [ ] corpus/collections/SRC-TOP-2019Q1/P-T09B2.md
 - [ ] corpus/collections/SRC-TOP-2019Q1/P-T19Q1-2.md
@@ -5326,15 +5326,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TOP-UNL-2006Q2/P-T06Q2-8.md
 - [ ] corpus/collections/SRC-TOP-UNL-2006Q2/P-T06Q2-9.md
 - [ ] corpus/collections/SRC-TOP-UNL-2006Q2/index.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A1.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A2.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A3.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A4.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B1.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B2.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B3.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B4.md
-- [ ] corpus/collections/SRC-TOP-UNL-2007Q2/index.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A1.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A2.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A3.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07A4.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B1.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B2.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B3.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/P-T07B4.md
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/index.md
 - [ ] corpus/collections/SRC-TOP-UNL-2008Q2/P-T08A1.md
 - [ ] corpus/collections/SRC-TOP-UNL-2008Q2/P-T08A3.md
 - [ ] corpus/collections/SRC-TOP-UNL-2008Q2/P-T08A4.md
@@ -5553,19 +5553,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCLA-BASIC-FALL-2012/P-UCLAB12-11.md
 - [ ] corpus/collections/SRC-UCLA-BASIC-FALL-2012/P-UCLAB12-12.md
 - [ ] corpus/collections/SRC-UCLA-BASIC-FALL-2012/index.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT51.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT52.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT53.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT54.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT55.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT56.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT57.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-JNFJW.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-Q75IH.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-QSYKP.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-RC7YY.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/P-ULPU3.md
-- [ ] corpus/collections/SRC-UCLA-RA-FALL-2009/index.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT51.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT52.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT53.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT54.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT55.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT56.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-8XT57.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-JNFJW.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-Q75IH.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-QSYKP.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-RC7YY.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/P-ULPU3.md
+- [x] corpus/collections/SRC-UCLA-RA-FALL-2009/index.md
 - [ ] corpus/collections/SRC-UCLA-RA-FALL-2010/P-625QO.md
 - [ ] corpus/collections/SRC-UCLA-RA-FALL-2010/P-8XT68.md
 - [ ] corpus/collections/SRC-UCLA-RA-FALL-2010/P-8XT69.md
@@ -5662,15 +5662,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-ZDBW6EWI.md
 - [ ] corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-ZTLK4VHF.md
 - [ ] corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06H.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06A.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06B.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06C.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06D.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06E.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06F.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06G.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/P-ALGF06H.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2007/P-ALGF07A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2007/P-ALGF07B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2007/P-ALGF07C.md
@@ -5696,16 +5696,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2009/P-ALGF09G.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2009/P-ALGF09H.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10H.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10I.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10A.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10B.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10C.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10D.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10E.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10F.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10G.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10H.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/P-ALGF10I.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/P-ALGF11A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/P-ALGF11B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/P-ALGF11C.md
@@ -5715,14 +5715,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/P-ALGF11G.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/P-ALGF11H.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13A.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13B.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13C.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13D.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13E.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13F.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13G.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2014/P-ALGF14A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2014/P-ALGF14B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2014/P-ALGF14C.md
@@ -5780,15 +5780,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2022/P-ALGF22E.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2022/P-ALGF22F.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23H.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23A.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23B.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23C.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23D.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23E.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23F.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23G.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/P-ALGF23H.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/P-ALGF24A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/P-ALGF24B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/P-ALGF24C.md
@@ -5797,18 +5797,18 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/P-ALGF24F.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/P-ALGF24G.md
 - [ ] corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25A.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25B.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25C.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25D.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25E.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25F.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/P-ALGF25G.md
+- [x] corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-REVIEW-FIELDS/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-REVIEW-GROUPS/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-REVIEW-RINGS-MODULES/P-UCSD-ALG-REVIEW-RM-08.md
-- [ ] corpus/collections/SRC-UCSD-ALG-REVIEW-RINGS-MODULES/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-REVIEW-RINGS-MODULES/P-UCSD-ALG-REVIEW-RM-08.md
+- [x] corpus/collections/SRC-UCSD-ALG-REVIEW-RINGS-MODULES/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2004/P-ALGS04A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2004/P-ALGS04B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2004/P-ALGS04C.md
@@ -5972,23 +5972,23 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2021/P-ALGS21F.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2021/P-ALGS21G.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23A.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23B.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23C.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23D.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23E.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23F.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23G.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23H.md
-- [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22A.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22B.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22C.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22D.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22E.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22F.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/P-ALGS22G.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23A.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23B.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23C.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23D.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23E.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23F.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23G.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/P-ALGS23H.md
+- [x] corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2024/P-ALGS24A.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2024/P-ALGS24B.md
 - [ ] corpus/collections/SRC-UCSD-ALG-SPRING-2024/P-ALGS24C.md
@@ -6108,17 +6108,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-APALG-FALL-2024/P-APA24J.md
 - [ ] corpus/collections/SRC-UCSD-APALG-FALL-2024/P-APAS24H.md
 - [ ] corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25A.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25B.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25C.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25D.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25E.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25F.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25G.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25H.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25I.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25J.md
-- [ ] corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25A.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25B.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25C.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25D.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25E.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25F.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25G.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25H.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25I.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/P-APAF25J.md
+- [x] corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2004/P-APAS04B.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2004/P-APAS04D.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2004/P-APAS04E.md
@@ -6165,16 +6165,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2008/P-APASP08L.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2008/P-APASP08M.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11A.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11B.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11C.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11D.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11E.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11F.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11G.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11H.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11I.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11A.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11B.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11C.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11D.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11E.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11F.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11G.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11H.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/P-APAS11I.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2013/P-APAS13A.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2013/P-APAS13B.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2013/P-APAS13C.md
@@ -6206,15 +6206,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17G.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17H.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18A.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18B.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18C.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18D.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18E.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18F.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18G.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18H.md
-- [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18A.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18B.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18C.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18D.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18E.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18F.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18G.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18H.md
+- [x] corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2019/P-APAS19E.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2019/P-APAS19F.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2019/P-APAS19G.md
@@ -6281,13 +6281,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26I.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26J.md
 - [ ] corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05A.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05B.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05C.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05D.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05E.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05F.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2005/index.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05A.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05B.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05C.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05D.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05E.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/P-CAF05F.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2005/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2006/P-CAF06A.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2006/P-CAF06B.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2006/P-CAF06C.md
@@ -6353,23 +6353,23 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2016/P-CAFA16G.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2016/P-CAFA16H.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2016/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17A.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17B.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17C.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17D.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17E.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17F.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17G.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17H.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2017/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19A.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19B.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19C.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19D.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19E.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19F.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19G.md
-- [ ] corpus/collections/SRC-UCSD-CA-FALL-2019/index.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17A.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17B.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17C.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17D.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17E.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17F.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17G.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17H.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2017/index.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19A.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19B.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19C.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19D.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19E.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19F.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19G.md
+- [x] corpus/collections/SRC-UCSD-CA-FALL-2019/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20A.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20B.md
 - [ ] corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20C.md
@@ -6424,13 +6424,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2004/P-CASP04E.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2004/P-CASP04F.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05A.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05B.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05C.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05D.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05E.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05F.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05A.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05B.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05C.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05D.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05E.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/P-CASP05F.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2006/P-CASP06A.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2006/P-CASP06B.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2006/P-CASP06C.md
@@ -6466,12 +6466,12 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11D.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11E.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12A.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12B.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12C.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12D.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12E.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12A.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12B.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12C.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12D.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12E.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2013/P-CASP13A.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2013/P-CASP13B.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2013/P-CASP13C.md
@@ -6502,14 +6502,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2018/P-CASP18E.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2018/P-CASP18F.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19A.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19B.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19C.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19D.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19E.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19F.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19G.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19A.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19B.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19C.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19D.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19E.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19F.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19G.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2020/P-CASP20A.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2020/P-CASP20B.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2020/P-CASP20C.md
@@ -6533,13 +6533,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2022/P-CASP22E.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2022/P-CASP22F.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23A.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23B.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23C.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23D.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23E.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23F.md
-- [ ] corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23A.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23B.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23C.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23D.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23E.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23F.md
+- [x] corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2024/P-CAS24A.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2024/P-CAS24B.md
 - [ ] corpus/collections/SRC-UCSD-CA-SPRING-2024/P-CAS24C.md
@@ -6646,14 +6646,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2020/P-RAF20F.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2020/P-RASP16G.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2020/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21A.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21B.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21C.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21D.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21E.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21F.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21G.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2021/index.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21A.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21B.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21C.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21D.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21E.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21F.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/P-RAF21G.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2021/index.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2022/P-RAF22A.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2022/P-RAF22B.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2022/P-RAF22C.md
@@ -6670,13 +6670,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2023/P-RAF23F.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2023/P-RAF23G.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2023/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24A.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24B.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24C.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24D.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24E.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24F.md
-- [ ] corpus/collections/SRC-UCSD-RA-FALL-2024/index.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24A.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24B.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24C.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24D.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24E.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/P-RAF24F.md
+- [x] corpus/collections/SRC-UCSD-RA-FALL-2024/index.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25A.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25B.md
 - [ ] corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25C.md
@@ -6714,11 +6714,11 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08F.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08G.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09A.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09B.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09C.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09D.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09A.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09B.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09C.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09D.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2011/P-RASP11A.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2011/P-RASP11B.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2011/P-RASP11C.md
@@ -6742,23 +6742,23 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15G.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15H.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16A.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16B.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16C.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16D.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16E.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16F.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16H.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17A.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17B.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17C.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17D.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17E.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17F.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17G.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17H.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16A.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16B.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16C.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16D.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16E.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16F.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16H.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17A.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17B.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17C.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17D.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17E.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17F.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17G.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17H.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18A.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18B.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18C.md
@@ -6814,13 +6814,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2025/P-RASP25E.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2025/P-RASP25F.md
 - [ ] corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26A.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26B.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26C.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26D.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26E.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26F.md
-- [ ] corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26A.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26B.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26C.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26D.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26E.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26F.md
+- [x] corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-290QUALS/fall-2011-section-12-printed-p-403/P-UCTOP-FA11-1.md
 - [ ] corpus/collections/SRC-UCSD-TOP-290QUALS/fall-2011-section-12-printed-p-403/P-UCTOP-FA11-2.md
 - [ ] corpus/collections/SRC-UCSD-TOP-290QUALS/fall-2011-section-12-printed-p-403/P-UCTOP-FA11-3.md
@@ -6945,12 +6945,12 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2007/P-TOPF07G.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2007/P-TOPF07H.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08A.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08B.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08C.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08D.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08E.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09A.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09B.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09C.md
@@ -6960,15 +6960,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09G.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09H.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10F.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10G.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10H.md
-- [ ] corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10A.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10B.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10C.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10D.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10E.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10F.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10G.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10H.md
+- [x] corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2017/P-6P7O7.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2017/P-DDUA3.md
 - [ ] corpus/collections/SRC-UCSD-TOP-FALL-2017/P-IWMWM.md
@@ -7133,15 +7133,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-JUSTIN/P-UCTOP290-S3-6.md
 - [ ] corpus/collections/SRC-UCSD-TOP-JUSTIN/P-WOFN2.md
 - [ ] corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17F.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17G.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17H.md
-- [ ] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17A.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17B.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17C.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17D.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17E.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17F.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17G.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17H.md
+- [x] corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2000/P-TOPS00A.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2000/P-TOPS00B.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2000/P-TOPS00C.md
@@ -7174,17 +7174,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2004/P-TOPS04E.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2004/P-TOPS04F.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05F.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05G.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05H.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05I.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05J.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05A.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05B.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05C.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05D.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05E.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05F.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05G.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05H.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05I.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/P-TOPS05J.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06A.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06B.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06C.md
@@ -7200,14 +7200,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07G.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07H.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08F.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08G.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08A.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08B.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08C.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08D.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08E.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08F.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08G.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2010/P-TOPS10A.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2010/P-TOPS10B.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2010/P-TOPS10C.md
@@ -7264,15 +7264,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2022/P-TOPS22C.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2022/P-TOPS22D.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23A.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23B.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23C.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23D.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23E.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23F.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23G.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23H.md
-- [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23A.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23B.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23C.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23D.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23E.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23F.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23G.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23H.md
+- [x] corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2024/P-TOPS24A.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2024/P-TOPS24B.md
 - [ ] corpus/collections/SRC-UCSD-TOP-SPRING-2024/P-TOPS24C.md
@@ -7342,14 +7342,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2015/P-TX3CN.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2015/P-XFXYS.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2015/index.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-6NMU2.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-BDX6L.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-DURCM.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-FYEG2.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-MX2HR.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-OKCT6.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/P-QMGAA.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2016/index.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-6NMU2.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-BDX6L.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-DURCM.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-FYEG2.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-MX2HR.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-OKCT6.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/P-QMGAA.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2016/index.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2017/P-DXHST.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2017/P-IKJXT.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2017/P-NQAQK.md
@@ -7384,22 +7384,22 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2020/P-VHLIU.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2020/P-XPGT3.md
 - [ ] corpus/collections/SRC-UGA-ALG-FALL-2020/index.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-GFO6Q.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-GSKRZ.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-LT6QB.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-PSRIH.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-QCF34.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/P-R5QUP.md
-- [ ] corpus/collections/SRC-UGA-ALG-FALL-2021/index.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-A4AIM.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-EPDRU.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-GCNAR.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-GVWWY.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-PJA4A.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-T5EUB.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-UB666.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-ZLNVG.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-GFO6Q.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-GSKRZ.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-LT6QB.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-PSRIH.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-QCF34.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/P-R5QUP.md
+- [x] corpus/collections/SRC-UGA-ALG-FALL-2021/index.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-A4AIM.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-EPDRU.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-GCNAR.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-GVWWY.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-PJA4A.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-T5EUB.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-UB666.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/P-ZLNVG.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2013/P-2LX4F.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2013/P-3Q2XT.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2013/P-67U4W.md
@@ -7453,15 +7453,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2018/P-WL7TG.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2018/P-ZDYAF.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-AIXPZ.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-IZ2VD.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-L37J7.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-M6W74.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-MD2U3.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-NNNLA.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-RWPK4.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-UKZE6.md
-- [ ] corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-AIXPZ.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-IZ2VD.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-L37J7.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-M6W74.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-MD2U3.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-NNNLA.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-RWPK4.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/P-UKZE6.md
+- [x] corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2020/P-3YCHE.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2020/P-HAEQ7.md
 - [ ] corpus/collections/SRC-UGA-ALG-SPRING-2020/P-HBWYH.md
@@ -7568,14 +7568,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA40.md
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2009/P-MMAQ-FLFHFN7LEF.md
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2009/index.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-8CB01.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-8CB02.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-JW4A4.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md
-- [ ] corpus/collections/SRC-UGA-CA-FALL-2011/index.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-8CB01.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-8CB02.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-JW4A4.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md
+- [x] corpus/collections/SRC-UGA-CA-FALL-2011/index.md
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2015/P-4ZZYV.md
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2015/P-8CB03.md
 - [ ] corpus/collections/SRC-UGA-CA-FALL-2015/P-8CB04.md
@@ -7651,14 +7651,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2014/P-TKF72.md
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2014/P-WASE4.md
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2014/index.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-8CA27.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-FBOFF.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-KNIPC.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-R424U.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/P-UGCNF.md
-- [ ] corpus/collections/SRC-UGA-CA-SPRING-2015/index.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-8CA27.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-FBOFF.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-KNIPC.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-R424U.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/P-UGCNF.md
+- [x] corpus/collections/SRC-UGA-CA-SPRING-2015/index.md
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2017/P-8CA08.md
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2017/P-8CA09.md
 - [ ] corpus/collections/SRC-UGA-CA-SPRING-2017/P-8CA10.md
@@ -7723,19 +7723,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-MATH8150-SPRING-2021-HW3/P-UGA8150S21-HW3-10.md
 - [ ] corpus/collections/SRC-UGA-MATH8150-SPRING-2021-HW3/P-UGA8150S21-HW3-11.md
 - [ ] corpus/collections/SRC-UGA-MATH8150-SPRING-2021-HW3/index.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-01.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-02.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-03.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-04.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-05.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-06.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/index.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-01.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-02.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-03.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-04.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-05.md
-- [ ] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/index.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-01.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-02.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-03.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-04.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-05.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/P-UGA8210F18-HW3-06.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW3/index.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-01.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-02.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-03.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-04.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/P-UGA8210F18-HW4-05.md
+- [x] corpus/collections/SRC-UGA-MATH8210-FALL-2018-HW4/index.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-A12ND.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-C2GOF.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-FBY23.md
@@ -7774,16 +7774,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-SD42B.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-YVA5W.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-CJUIR.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06DN.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06DT.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06EV.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PD.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PG.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-TWH7U.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-V4VXC.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-CJUIR.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06DN.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06DT.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06EV.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PD.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PG.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-TWH7U.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-V4VXC.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-2WRUJ.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-4PCPV.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-5YTY5.md
@@ -7840,15 +7840,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2016/P-RPSK2.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2016/P-VPCLD.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-2QLBW.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-BZIXT.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-CWELY.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-F7Y7R.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-IMYQU.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-LF4NL.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-SK4KT.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-ZR2WC.md
-- [ ] corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-2QLBW.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-BZIXT.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-CWELY.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-F7Y7R.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-IMYQU.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-LF4NL.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-SK4KT.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-ZR2WC.md
+- [x] corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-GB7EM.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-MFVEZ.md
 - [ ] corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3A3.md
@@ -7946,12 +7946,12 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-RA-FALL-2021/P-XRNHW.md
 - [ ] corpus/collections/SRC-UGA-RA-FALL-2021/P-Y34JB.md
 - [ ] corpus/collections/SRC-UGA-RA-FALL-2021/index.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA38.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA39.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA40.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA41.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA42.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2005/index.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA38.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA39.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA40.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA41.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA42.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2005/index.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA01.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA02.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA03.md
@@ -7959,13 +7959,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA05.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA06.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2006/index.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA07.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA08.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA09.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA10.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA11.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA12.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2007/index.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA07.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA08.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA09.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA10.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA11.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA12.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2007/index.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA13.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA14.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA15.md
@@ -8041,13 +8041,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2020/P-VYRJF.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2020/P-XL7MP.md
 - [ ] corpus/collections/SRC-UGA-RA-SPRING-2020/index.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-6QWZI.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-AK3OT.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-B2ZXW.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-KPNWG.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-TNOTE.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/P-YZ2WZ.md
-- [ ] corpus/collections/SRC-UGA-RA-SPRING-2021/index.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-6QWZI.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-AK3OT.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-B2ZXW.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-KPNWG.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-TNOTE.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/P-YZ2WZ.md
+- [x] corpus/collections/SRC-UGA-RA-SPRING-2021/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/P-4XONF.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/P-8TF01.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/P-C3NSR.md
@@ -8057,16 +8057,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/P-N2FQ7.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/P-QN7OP.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2004/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF02.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF03.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF04.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF05.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF06.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-ASHJM.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-DHIWH.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-HVKUA.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/P-V4MD7.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2005/index.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF02.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF03.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF04.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF05.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-8TF06.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-ASHJM.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-DHIWH.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-HVKUA.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/P-V4MD7.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2005/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/P-8TF07.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/P-8TF08.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/P-A5CFD.md
@@ -8075,15 +8075,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/P-M2NVE.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/P-VPPPN.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2006/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF09.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF10.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF11.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-FD3UV.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-JIFL3.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-MYZU2.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-OSZPJ.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/P-SG462.md
-- [ ] corpus/collections/SRC-UGA-TOP-FALL-2007/index.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF09.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF10.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-8TF11.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-FD3UV.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-JIFL3.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-MYZU2.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-OSZPJ.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/P-SG462.md
+- [x] corpus/collections/SRC-UGA-TOP-FALL-2007/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2009/P-8TF12.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2009/P-8TF13.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2009/P-8TF14.md
@@ -8173,15 +8173,15 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2018/P-UCJF3.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2018/P-XMOZA.md
 - [ ] corpus/collections/SRC-UGA-TOP-FALL-2018/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-2HMGE.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS01.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS02.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS03.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-E247B.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-FZIG3.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-LLCQX.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-RZFB4.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-2HMGE.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS01.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS02.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS03.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-E247B.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-FZIG3.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-LLCQX.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/P-RZFB4.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2006/P-26UEL.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2006/P-3H47Q.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2006/P-6XN3Z.md
@@ -8202,20 +8202,20 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2007/P-C62HS.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2007/P-QMESO.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-BPDEA.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-JH5RI.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-PMBN2.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-QDTPB.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-YVYGB.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS09.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS10.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-AT75W.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-HBECH.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-L3BUX.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-MCG5C.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-ZPH3J.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-BPDEA.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-JH5RI.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-PMBN2.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-QDTPB.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/P-YVYGB.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS09.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS10.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-AT75W.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-HBECH.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-L3BUX.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-MCG5C.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/P-ZPH3J.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2010/P-2JRWF.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS11.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS12.md
@@ -8276,16 +8276,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2016/P-KBHAC.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2016/P-KJBAM.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-6LBCE.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-7XSR6.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-8TS26.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-8TS27.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-CIAF4.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-CJOZV.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-OCUZ4.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-Q5Q6P.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-XPUMM.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-6LBCE.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-7XSR6.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-8TS26.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-8TS27.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-CIAF4.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-CJOZV.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-OCUZ4.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-Q5Q6P.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/P-XPUMM.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2018/P-8TS28.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2018/P-A3ZPA.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2018/P-DFB3Y.md
@@ -8303,14 +8303,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2019/P-R7EFJ.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2019/P-X6IHG.md
 - [ ] corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-2CN7G.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-4EIOH.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-A33VH.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-GFHMD.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-LLVY2.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-OSS6X.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-P6A3Q.md
-- [ ] corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-2CN7G.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-4EIOH.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-A33VH.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-GFHMD.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-LLVY2.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-OSS6X.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/P-P6A3Q.md
+- [x] corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md
 - [ ] corpus/collections/SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS/P-UNL871F13-HAT0-02.md
 - [ ] corpus/collections/SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS/P-UNL871F13-HAT0-03.md
 - [ ] corpus/collections/SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS/P-UNL871F13-MUN3.4.md
@@ -8480,11 +8480,11 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UW-ALG-2011/P-MMAQ-RQA4XXNOF3.md
 - [ ] corpus/collections/SRC-UW-ALG-2011/P-S52PP.md
 - [ ] corpus/collections/SRC-UW-ALG-2011/index.md
-- [ ] corpus/collections/SRC-UW-ALG-2012/P-4RQ6K.md
-- [ ] corpus/collections/SRC-UW-ALG-2012/P-5EHW6.md
-- [ ] corpus/collections/SRC-UW-ALG-2012/P-MMAQ-2ERSIB6V43.md
-- [ ] corpus/collections/SRC-UW-ALG-2012/P-MMAQ-6DSHSTLKLP.md
-- [ ] corpus/collections/SRC-UW-ALG-2012/index.md
+- [x] corpus/collections/SRC-UW-ALG-2012/P-4RQ6K.md
+- [x] corpus/collections/SRC-UW-ALG-2012/P-5EHW6.md
+- [x] corpus/collections/SRC-UW-ALG-2012/P-MMAQ-2ERSIB6V43.md
+- [x] corpus/collections/SRC-UW-ALG-2012/P-MMAQ-6DSHSTLKLP.md
+- [x] corpus/collections/SRC-UW-ALG-2012/index.md
 - [ ] corpus/collections/SRC-UW-ALG-2013/P-QYKXK.md
 - [ ] corpus/collections/SRC-UW-ALG-2013/P-TKNYL.md
 - [ ] corpus/collections/SRC-UW-ALG-2013/P-UIHJF.md
@@ -8506,19 +8506,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-UW-ALG-2015/P-SJ47O.md
 - [ ] corpus/collections/SRC-UW-ALG-2015/P-ZCQLF.md
 - [ ] corpus/collections/SRC-UW-ALG-2015/index.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-4NMAR4LSEK.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-AWWA4FOL2L.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-DNT3HIFV7M.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-G2X5HB5VJS.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-QQLLL.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/P-VIFYJ.md
-- [ ] corpus/collections/SRC-UW-ALG-2016/index.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/P-5RAUN.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-CBHJDNZVJP.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-FBNP7JLLPX.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-MLE74H7M42.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-P35KHOGFWR.md
-- [ ] corpus/collections/SRC-UW-ALG-2017/index.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-4NMAR4LSEK.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-AWWA4FOL2L.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-DNT3HIFV7M.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-MMAQ-G2X5HB5VJS.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-QQLLL.md
+- [x] corpus/collections/SRC-UW-ALG-2016/P-VIFYJ.md
+- [x] corpus/collections/SRC-UW-ALG-2016/index.md
+- [x] corpus/collections/SRC-UW-ALG-2017/P-5RAUN.md
+- [x] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-CBHJDNZVJP.md
+- [x] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-FBNP7JLLPX.md
+- [x] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-MLE74H7M42.md
+- [x] corpus/collections/SRC-UW-ALG-2017/P-MMAQ-P35KHOGFWR.md
+- [x] corpus/collections/SRC-UW-ALG-2017/index.md
 - [ ] corpus/collections/SRC-UW-ALG-2018/P-6P6KI.md
 - [ ] corpus/collections/SRC-UW-ALG-2018/P-CASNS.md
 - [ ] corpus/collections/SRC-UW-ALG-2018/P-CC3DW.md
