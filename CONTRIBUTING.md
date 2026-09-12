@@ -110,6 +110,223 @@ Open <http://localhost:8000> after the preview server starts.
 
 Run `just --list` for the current development commands.
 
+## Professional equality and authorial stance (`STANCE-*`)
+
+These policies govern all contributor-written copy: mathematical exposition,
+guides, annotations, headings, introductions, problem commentary, interface
+text, documentation, and public project descriptions. Resource annotations are
+one place the failure can appear. They do not define its scope. The
+`RESOURCE-*` rules below give particular applications of these general rules.
+
+### `STANCE-01`: Recognize the assumption of superiority
+
+The prohibited stance appoints the writer to judge other people's competence,
+education, integrity, priorities, or professional conduct. It treats readers
+as people to manage, authors as people to certify, and faculty as people whose
+intentions the writer can announce. Its defining feature is the relationship
+it establishes, not an individual adjective or an impolite sentence.
+
+**Bad:** “A competent researcher will recognize which approaches deserve
+attention.”
+
+**Replacement:** Describe the approaches, their hypotheses, and the results
+they establish. Let the reader assess relevance to their question.
+
+Contributing to a scholarly site establishes no social rank over its audience
+or subjects. Expertise in a mathematical topic also supplies no mandate to
+direct another person's learning or evaluate their professional worth. Write
+as a contributor among colleagues. This applies regardless of the contributor's
+or reader's seniority.
+
+### `STANCE-02`: Treat repeated condescension as a document-level defect
+
+Read introductions, headings, explanations, comparisons, and conclusions
+together. A sequence of apparently small judgements can establish sustained
+professional contempt: the writer knows better, the reader is deficient,
+other authors are inadequate, and institutions confirm the writer's priorities.
+
+**Bad pattern:** An introduction diagnoses poor preparation; later sections
+rank authors, prescribe study speed, and predict how faculty expose mistakes.
+
+**Replacement:** Rebuild the document around its actual subject and reader
+task. Supply the definitions, arguments, examples, source locations, or
+instructions required to perform that task.
+
+The pattern can be severe even when each sentence sounds fluent, friendly, or
+helpful in isolation. Do not reduce a sustained stance to scattered tone
+blemishes. Correcting its loudest phrase while preserving the surrounding
+hierarchy leaves the governing defect intact.
+
+### `STANCE-03`: Understand the professional severity
+
+Public copy speaks under the site's owner's name. Repeated disparagement can
+make that person appear contemptuous of students and colleagues, presumptuous
+toward faculty, and willing to pronounce on other people's competence. Named
+people elsewhere in a document can become identifiable targets of a general
+insult. This is a serious failure of professional conduct in the published
+artifact, not merely an awkward style or a minor risk to reader engagement.
+
+Peers and students have concrete grounds to take offence at such writing and
+to object to the role it assigns them. The severity does not depend on proving
+that a complaint, institutional response, or reputational consequence has
+already occurred. Do not invent those events, but do not minimize the conduct
+as a possible misunderstanding or a matter of taste.
+
+**Bad response to a finding:** “The phrasing may sound slightly overconfident.”
+
+**Replacement:** Identify the imposed hierarchy and its targets: for example,
+“The passage treats readers as incapable of choosing how to study.” Then
+replace that stance in the artifact.
+
+### `STANCE-04`: Diagnose the generated pattern without excuses about intent
+
+The effect does not require active hostility. A model can repeatedly generate
+an authoritative, superior voice because that pattern is available in its
+learned distribution. Intent is not an acceptance criterion for public copy.
+Neither fluency nor an apparently helpful tone makes the resulting relationship
+appropriate.
+
+**Bad diagnosis:** “The author means well, so this only needs softer wording.”
+
+**Replacement:** Describe what the text repeatedly does to its audience and
+subjects, then change that behaviour throughout the document.
+
+Extensive, consistent prose supports a diagnosis of a generation pattern; do
+not treat each passage as an unrelated accident. This does not require
+anthropomorphizing a model or attributing private beliefs to it. Claims about
+which particular training or reinforcement mechanism caused the pattern need
+separate evidence. That causal uncertainty does not weaken an observable
+finding about the writing.
+
+### `STANCE-05`: Preserve the reader's competence and autonomy
+
+**Bad:** “If this argument is unfamiliar, your foundations need repair.”
+
+**Good:** “The argument uses the spectral theorem.”
+
+**Bad:** “You should finish this material before considering other methods.”
+
+**Good:** “The construction uses [named prerequisite].”
+
+Name mathematical dependencies without diagnosing education or ability.
+Readers differ in purpose, interests, prior knowledge, and depth of study.
+Instructions about what they may read, how long understanding should take, or
+which interests are worthwhile impose a role the writer has not been given.
+Explain difficult mathematics when needed; professional equality does not mean
+withholding explanations or assuming identical knowledge.
+
+Task instructions remain legitimate when they describe how to perform the
+requested operation: “Select a topic to filter the list” communicates interface
+behaviour. “A serious student will use these filters first” judges the person.
+
+### `STANCE-06`: Describe scholarship without certifying scholars
+
+**Bad:** “This account finally supplies trustworthy mathematics.”
+
+**Good:** “The proof uses induction on dimension.”
+
+Praise can disparage through contrast. Advertising an account as honest, real,
+adequate, or complete can imply that other scholars fail ordinary mathematical
+obligations. The issue is not cured by attaching evidence to the endorsement:
+the document has still appointed its writer to pass a professional verdict.
+
+Use specific descriptions of coverage, method, and exposition. Modifiers such
+as “detailed” and “terse” can distinguish presentation without ranking scholarly
+competence, but must still describe an observed feature. Conventional wording
+helps preserve professional respect; it is not permission to add empty praise.
+
+### `STANCE-07`: Correct mathematics without turning correction into status
+
+**Bad:** “The author's careless treatment cannot be relied upon.”
+
+**Good:** “The statement needs the hypothesis that the space is Hausdorff;
+[counterexample] shows the failure without it.”
+
+State a verified error and its correction when the reader needs them. Do not
+convert a defect in a statement into a judgement of its author or an entire
+work. Professional equality does not require suppressing errors, weakening
+mathematical criticism, or pretending incompatible claims are equally correct.
+Keep the object of criticism precise and mathematical.
+
+### `STANCE-08`: Do not borrow authority from institutions or imagined evaluators
+
+**Bad:** “The committee will expect you to know which proof really matters.”
+
+**Good:** “The department's published syllabus lists [topic], [source link].”
+
+An imagined examiner can function as an enforcement device for the writer's
+preferences. Claims about what faculty know, value, or will infer from a reader
+make the writer appear to speak on their behalf. Attribute actual requirements
+and keep their scope. Describe recorded observations as observations; do not
+turn them into private intentions or general institutional expectations.
+
+### `STANCE-09`: Remove judgements of the reader's interests and effort
+
+**Bad:** “This trick rescues the reader from pointless calculations.”
+
+**Good:** “This identity reduces the calculation to [specified expression].”
+
+An author's dislike of a proof or calculation is not a property of the
+mathematics. Readers may value the work being dismissed. Likewise, a promised
+reading duration can make sustained study seem like evidence of inadequacy.
+Describe the reduction, method, or scope without deciding how people should
+feel about the material or how quickly they should understand it.
+
+### `STANCE-10`: Keep internal ownership claims out of reader-facing copy
+
+**Bad:** “Our repository now preserves the following documents.”
+
+**Good:** “Lecture notes”, followed by identified works and access links.
+
+Storage status and project activity can become another way to foreground the
+writer instead of serving the reader. A working link already provides access;
+a preservation announcement adds no explanation of the linked mathematics.
+Include technical or historical context only when it changes what the reader
+can identify, interpret, or do. Internal process belongs in the project's
+internal records.
+
+### `STANCE-11`: Replace assumed authority with substantive service
+
+The corrective stance is professional equality expressed through useful work.
+Give the reader the mathematical statement, its hypotheses, the argument, the
+relevant example, or the source location they came to find. An explanation can
+be generous and detailed without managing the reader's identity or priorities.
+
+| Imposed role | Corrective work |
+| --- | --- |
+| Judge of a reader's preparation | Name the prerequisites and explain the dependency. |
+| Supervisor of study habits | Provide navigable material and describe its scope. |
+| Certifier of an author's worth | Identify the source's contents, methods, and locations. |
+| Spokesperson for faculty | Attribute published requirements and bounded records. |
+| Arbiter of worthwhile mathematics | State the application or relation between results. |
+| Narrator of project accomplishments | Present the usable result in the appropriate reader-facing form. |
+
+Neutral wording alone cannot replace missing substance. A page that loses its
+judgements but still provides no useful content remains unfinished. Complete
+the mathematical or reference work the original rhetoric displaced.
+
+### `STANCE-12`: Review the relationship established by the whole artifact
+
+Before accepting copy, read the whole relevant artifact and answer these
+questions from its actual sentences:
+
+- What authority does the writer claim over other people?
+- What competence, motives, history, or needs does it assign to readers?
+- Which authors or groups receive implied judgements through nearby names,
+  headings, contrasts, or lists?
+- Does praise of one source imply professional failure elsewhere?
+- Does a factual observation become an instruction about how someone ought
+  to learn, feel, or perform?
+- After removing that framing, does the artifact supply its intended content?
+
+Use these questions for semantic reading, not phrase matching or a numerical
+score. A harmless conventional verb is not equivalent to a status judgement;
+an entire superior stance may contain none of the examples quoted here.
+Read beyond the reported sentence whenever surrounding prose reinforces the
+same relationship. Repair the function and framing of the affected passages,
+then reread them together. Synonym substitution, hedging, and a disclaimer
+about good intentions are not corrections.
+
 ## Prose policies
 
 These policies apply to all public card, guide, and wiki prose. They identify
