@@ -108,7 +108,17 @@ _unsolved-if-staged:
     if git diff --cached --quiet -- corpus; then
         echo "queues/C-unsolved-cards.md: no staged corpus change"
     else
-        uv run python tools/unsolved_queue.py
+        if [[ -n "${GIT_INDEX_FILE:-}" ]]; then
+            snapshot="$(mktemp -d "${TMPDIR:-/tmp}/new-qual-unsolved-index.XXXXXX")"
+            trap 'rm -rf -- "$snapshot"' EXIT
+            mkdir -p "$snapshot/queues"
+            git ls-files -z -- corpus vocabularies wiki \
+                | git checkout-index -z --stdin --prefix="$snapshot/"
+            uv run python tools/unsolved_queue.py --root "$snapshot"
+            cp "$snapshot/queues/C-unsolved-cards.md" queues/C-unsolved-cards.md
+        else
+            uv run python tools/unsolved_queue.py
+        fi
         git add queues/C-unsolved-cards.md
     fi
 
@@ -131,8 +141,32 @@ _no-worktrees:
         exit 1
     fi
 
+# Reject a commit whose only content is a queue tick
+#
+# AGENTS.md, "A disposition is not a unit of work": a queue disposition rides in the commit
+# carrying the cards it describes. A one-line tick committed alone spends a full gate run to
+# move a marker and reports progress the corpus did not make. Real queue filings are large and
+# pass; this only catches the bare tick.
+[private]
+_no-bare-disposition:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    staged=$(git diff --cached --name-only)
+    [ -z "$staged" ] && exit 0
+    outside=$(printf '%s\n' "$staged" | grep -v '^queues/' || true)
+    [ -n "$outside" ] && exit 0
+    lines=$(git diff --cached --numstat | awk '{a+=$1; d+=$2} END {print a+d+0}')
+    if [ "$lines" -le 4 ]; then
+        echo "Refusing a queue-only commit of $lines changed line(s)." >&2
+        echo "" >&2
+        echo "AGENTS.md, 'A disposition is not a unit of work': fold the disposition into the" >&2
+        echo "commit carrying the cards it describes. If this is a real queue filing rather than" >&2
+        echo "a tick, it will be larger than four lines and this check will pass." >&2
+        exit 1
+    fi
+
 # Run immediate commit-tier quality checks
-test-commit: _no-worktrees _unsolved-if-staged
+test-commit: _no-worktrees _unsolved-if-staged _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
