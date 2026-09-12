@@ -629,61 +629,61 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Solution writeups (33)
 
-- [ ] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues**
+- [x] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues** — disposition 2026-09-12: reference-only archival algebraic-geometry solution notes. The 24-page PDF has no identifying author/date metadata and its embedded text layer is control-character/encoding garbage, so no reliable problem extraction is possible without inventing content. Retained on the solution-compendia resource page and added to `vocabularies/references.bib` as `AGSolutionsArchive`; no cards manufactured.
 
-- [ ] [Algebra_Final_Solns 1.pdf](assets/attachments/extracted/Algebra_Final_Solns 1.md) (116L, 14 problems) — algebra
+- [x] [Algebra_Final_Solns 1.pdf](assets/attachments/extracted/Algebra_Final_Solns 1.md) (116L, 14 problems) — algebra — disposition 2026-09-12: exact byte duplicate of `Algebra_Final_Solns.pdf` (SHA-256 `75d9773517a214758c59c3b4c5e274ff27f6e2b17b1415fc1a0f962e4fb60aa2`); no duplicate collection needed.
 
-- [ ] [Algebra_Final_Solns.pdf](assets/attachments/extracted/Algebra_Final_Solns.md) (116L, 14 problems) — algebra
+- [x] [Algebra_Final_Solns.pdf](assets/attachments/extracted/Algebra_Final_Solns.md) (116L, 14 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-MATH504-FINAL-AUTUMN-2003`, which retains this solution packet as provenance for the seven source-order final-exam problems.
 
 - [ ] [basic-12F.pdf](assets/attachments/extracted/basic-12F.md) (53L, 0 problems) — UCLA
 
-- [ ] [Ch10PtASltns.pdf](assets/attachments/extracted/Ch10PtASltns.md) (51L, 0 problems) — algebra
+- [x] [Ch10PtASltns.pdf](assets/attachments/extracted/Ch10PtASltns.md) (51L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES`, containing the seven selected Chapter 10 Part A exercises represented by this solution-outline packet.
 
-- [ ] [Ch10Sltns.pdf](assets/attachments/extracted/Ch10Sltns.md) (105L, 4 problems) — alg-geom
+- [x] [Ch10Sltns.pdf](assets/attachments/extracted/Ch10Sltns.md) (105L, 4 problems) — alg-geom — disposition 2026-09-12: reconciled with `SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES`, containing eighteen selected Chapter 10 exercises represented by this packet.
 
-- [ ] [Ch12Sltns.pdf](assets/attachments/extracted/Ch12Sltns.md) (69L, 3 problems) — algebra
+- [x] [Ch12Sltns.pdf](assets/attachments/extracted/Ch12Sltns.md) (69L, 3 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH12-RING-SOLUTION-OUTLINES`, containing seventeen selected Chapter 12 ring-theory exercises.
 
-- [ ] [Ch14Sltns.pdf](assets/attachments/extracted/Ch14Sltns.md) (99L, 0 problems) — applied-algebra
+- [x] [Ch14Sltns.pdf](assets/attachments/extracted/Ch14Sltns.md) (99L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CH14-IDEAL-SOLUTION-OUTLINES`, containing fifteen selected Chapter 14 ideal-theory exercises.
 
-- [ ] [Ch15Sltns.pdf](assets/attachments/extracted/Ch15Sltns.md) (73L, 0 problems) — algebra
+- [x] [Ch15Sltns.pdf](assets/attachments/extracted/Ch15Sltns.md) (73L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES`, containing thirteen selected Chapter 15 exercises.
 
-- [ ] [Ch16Sltns.pdf](assets/attachments/extracted/Ch16Sltns.md) (61L, 0 problems) — applied-algebra
+- [x] [Ch16Sltns.pdf](assets/attachments/extracted/Ch16Sltns.md) (61L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES`, containing fourteen selected Chapter 16 exercises.
 
-- [ ] [Ch17Sltns.pdf](assets/attachments/extracted/Ch17Sltns.md) (61L, 0 problems) — algebra
+- [x] [Ch17Sltns.pdf](assets/attachments/extracted/Ch17Sltns.md) (61L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES`, containing twelve selected Chapter 17 exercises.
 
-- [ ] [Ch8Sltns.pdf](assets/attachments/extracted/Ch8Sltns.md) (127L, 1 problems) — algebra
+- [x] [Ch8Sltns.pdf](assets/attachments/extracted/Ch8Sltns.md) (127L, 1 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES`, containing twenty-five selected Chapter 8 exercises.
 
-- [ ] [ExerciseSet8f06a.pdf](assets/attachments/extracted/ExerciseSet8f06a.md) (173L, 6 problems) — algebra
+- [x] [ExerciseSet8f06a.pdf](assets/attachments/extracted/ExerciseSet8f06a.md) (173L, 6 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-MATH7200-EXERCISE-SET-8-FALL-2006`, which contains all six source-order exercises.
 
-- [ ] [f03.pdf](assets/attachments/extracted/f03.md) (103L, 0 problems) — complex-analysis
+- [x] [f03.pdf](assets/attachments/extracted/f03.md) (103L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2003`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [f09solutions.pdf](assets/attachments/extracted/f09solutions.md) (300L, 0 problems) — UNL — complex-analysis
+- [x] [f09solutions.pdf](assets/attachments/extracted/f09solutions.md) (300L, 0 problems) — UNL — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2009`, containing all 18 Part A/B prelim problems; the vendored solution packet is retained as provenance.
 
-- [ ] [F12_Exam.pdf](assets/attachments/extracted/F12_Exam.md) (238L, 8 problems) — Berkeley — complex-analysis
+- [x] [F12_Exam.pdf](assets/attachments/extracted/F12_Exam.md) (238L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2012`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F13_Exam.pdf](assets/attachments/extracted/F13_Exam.md) (268L, 15 problems) — Berkeley — complex-analysis
+- [x] [F13_Exam.pdf](assets/attachments/extracted/F13_Exam.md) (268L, 15 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2013`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F15_Exam.pdf](assets/attachments/extracted/F15_Exam.md) (317L, 8 problems) — Berkeley — complex-analysis
+- [x] [F15_Exam.pdf](assets/attachments/extracted/F15_Exam.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F16_Exam.pdf](assets/attachments/extracted/F16_Exam.md) (337L, 8 problems) — Berkeley — complex-analysis
+- [x] [F16_Exam.pdf](assets/attachments/extracted/F16_Exam.md) (337L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2016`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [Fall_2014_Exam.pdf](assets/attachments/extracted/Fall_2014_Exam.md) (321L, 8 problems) — Berkeley — complex-analysis
+- [x] [Fall_2014_Exam.pdf](assets/attachments/extracted/Fall_2014_Exam.md) (321L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2014`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [fall-2018-prelim_solutions.pdf](assets/attachments/extracted/fall-2018-prelim_solutions.md) (289L, 0 problems) — complex-analysis
+- [x] [fall-2018-prelim_solutions.pdf](assets/attachments/extracted/fall-2018-prelim_solutions.md) (289L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2018`, containing all 18 Part A/B prelim problems; the vendored solution packet is retained as provenance.
 
-- [ ] [final2011-solns.pdf](assets/attachments/extracted/final2011-solns.md) (122L, 5 problems) — algebra
+- [x] [final2011-solns.pdf](assets/attachments/extracted/final2011-solns.md) (122L, 5 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-ALGEBRA-FINAL-2011-SOLUTIONS`, containing all five source-order problems.
 
-- [ ] [Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf](assets/attachments/extracted/Point_Set_Topology_Midterm_with_Solns_-_Unknown.md) (55L, 6 problems) — topology
+- [x] [Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf](assets/attachments/extracted/Point_Set_Topology_Midterm_with_Solns_-_Unknown.md) (55L, 6 problems) — topology — disposition 2026-09-12: reconciled with complete `SRC-POINT-SET-TOPOLOGY-MIDTERM`, containing all six source-order problems.
 
-- [ ] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis
+- [x] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2006`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
+- [x] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra. — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2007`, containing all 18 mixed-subject Part A/B prelim problems in source order.
 
-- [ ] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra
+- [x] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-ALGEBRA-COMP-FALL-2003`, containing all five source-order sample comprehensive-exam problems.
 
-- [ ] [Sp16_Exam.pdf](assets/attachments/extracted/Sp16_Exam.md) (335L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp16_Exam.pdf](assets/attachments/extracted/Sp16_Exam.md) (335L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2016`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [Sp16_Solutions.pdf](assets/attachments/extracted/Sp16_Solutions.md) (415L, 0 problems) — applied-algebra
+- [x] [Sp16_Solutions.pdf](assets/attachments/extracted/Sp16_Solutions.md) (415L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2016`; the solution packet is retained as provenance for the same 18 source-order problems.
 
 - [x] [Week1_solns.pdf](assets/attachments/extracted/Week1_solns.md) (257L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-PRELIM-CALCULUS-I-WEEK1`; direct numbering in the source runs 1--28 and the collection contains exactly 28 source-order cards.
 
