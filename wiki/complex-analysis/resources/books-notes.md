@@ -39,7 +39,7 @@ order: 0
 
 - [[attachments/8.2.3 Normal family.pdf|Jingzhi Tie, UGA Math 8150 notes on normal families and Montel’s theorem (Spring 2020)]]
 
-- [[attachments/8.1.2 Further Examples (1).pdf|UGA complex-analysis examples]]
+- [[attachments/8.1.2 Further Examples (1).pdf|Jingzhi Tie, UGA Math 8150 conformal-mapping examples (Spring 2020)]]
 
 ## Summaries
 
