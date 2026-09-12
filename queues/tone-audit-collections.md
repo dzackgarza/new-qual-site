@@ -1665,12 +1665,12 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANI.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANK.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANL.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANF.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANG.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2010-pp-28-29/P-JHUMAY10ANA.md
@@ -2870,39 +2870,39 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md
 - [ ] corpus/collections/SRC-TEXT-DF04/5-5/P-MMAQ-WV7QEYSPXM.md
 - [ ] corpus/collections/SRC-TEXT-DF04/index.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH210CONE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2110DIRLIM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2111NOETHDIRLIM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2112INVLIM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2113ESPETALE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2114SUPPORT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2115SHEAFHOM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2116FLASQUE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2117SKYSCRAPER.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2118ADJOINT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2119EXTZERO.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH211CONSTSHEAF.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH211LINEAR.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2120SUPPSUBSHEAF.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2121VARSHEAVES.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2122GLUESHEAVES.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH212DUPLE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH212STALKEXACT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH213SURJLOCAL.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH213VERONESE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH214IMSUBSHEAF.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH214SEGRE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH215ISOINJSURJ.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH215QUADRIC.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH216INTERSECT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH216QUOTSEQ.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH217COIMCOKER.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH217COMPLETEINT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH218GAMMALEFTEX.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH219DIRSUM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH21HOMNSS.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2210SPECRX.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2211SPECFPX.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH210CONE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2110DIRLIM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2111NOETHDIRLIM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2112INVLIM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2113ESPETALE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2114SUPPORT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2115SHEAFHOM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2116FLASQUE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2117SKYSCRAPER.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2118ADJOINT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2119EXTZERO.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH211CONSTSHEAF.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH211LINEAR.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2120SUPPSUBSHEAF.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2121VARSHEAVES.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2122GLUESHEAVES.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH212DUPLE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH212STALKEXACT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH213SURJLOCAL.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH213VERONESE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH214IMSUBSHEAF.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH214SEGRE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH215ISOINJSURJ.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH215QUADRIC.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH216INTERSECT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH216QUOTSEQ.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH217COIMCOKER.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH217COMPLETEINT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH218GAMMALEFTEX.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH219DIRSUM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH21HOMNSS.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2210SPECRX.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2211SPECFPX.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2212GLUESCHEMES.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2213QUASICOMPACT.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2214PROJMOR.md
