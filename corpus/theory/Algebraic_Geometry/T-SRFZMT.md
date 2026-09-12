@@ -24,6 +24,17 @@ Let $f \colon X \to Y$ be a birational projective morphism of Noetherian integra
 Then every fibre $f^{-1}(y)$ is connected.
 :::
 
+::: {.theorem title="Elimination of indeterminacy (Hironaka)"}
+Let $X$ and $Y$ be smooth projective varieties and $F \colon X \dashrightarrow Y$ a birational map. Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
+\[
+\begin{tikzcd}
+& W \arrow[dl, "g"'] \arrow[dr, "f"] & \\
+X \arrow[rr, dashed, "F"] & & Y
+\end{tikzcd}
+\]
+where $W$, $f$ and $g$ are as in Theorem 15.4. In particular every birational map is dominated by a common smooth blowup.
+:::
+
 ::: {.theorem title="Factorization"}
 Let $f \colon X' \to X$ be a birational morphism of smooth projective surfaces and let $p$ be a fundamental point of $f^{-1}$.
 Then $f$ factors through the blowup of $X$ at $p$.
