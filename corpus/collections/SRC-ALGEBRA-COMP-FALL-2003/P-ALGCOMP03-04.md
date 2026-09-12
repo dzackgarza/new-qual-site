@@ -12,7 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Let $\alpha$ be the positive real fourth root of $2$ and let $i=\sqrt{-1}$. Find all intermediate fields in the extension $\mathbb Q(\alpha,i)/\mathbb Q$.
+(a) Let $\alpha$ be the positive real fourth root of $2$ and let $i=\sqrt{-1}$.
+Find all intermediate fields in the extension $\mathbb Q(\alpha,i)/\mathbb Q$.
 
-(b) Let $K$ be a finite field with $p^n$ elements. Show that every element of $K$ has a unique $p$th root in $K$.
+(b) Let $K$ be a finite field with $p^n$ elements.
+Show that every element of $K$ has a unique $p$th root in $K$.
 :::
