@@ -81,7 +81,7 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [x] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md` — replaced exam-frequency and examiner-intent claims and study directives with the derived-functor definition, flasque acyclicity, complementary hypotheses, and the long-exact-sequence computation.
 - [x] `wiki/algebraic-geometry/cohomology/families.md` — replaced study directives, frequency claims, and imperative problem framing with the degenerate Leray case, stability hierarchy, and base-change failure example.
 - [x] `wiki/algebraic-geometry/cohomology/index.md` — replaced the expectation of being asked to prove the affineness criterion with the criterion statement and its quasicompactness hypothesis.
-- [ ] `wiki/algebraic-geometry/cohomology/projective-schemes.md`
+- [x] `wiki/algebraic-geometry/cohomology/projective-schemes.md` — replaced exam-frequency and examiner-probe framing with the cohomology bounds and the sheaf-dependent vanishing threshold; dropped an importance judgment.
 - [ ] `wiki/algebraic-geometry/cohomology/vanishing-and-duality.md`
 - [ ] `wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md`
 - [ ] `wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md`
