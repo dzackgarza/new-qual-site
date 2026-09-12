@@ -29,11 +29,5 @@ Every fan admits a refinement into smooth cones, obtained by repeatedly subdivid
 :::
 
 ::: {.remark}
-Resolution of singularities is a hard theorem in general and a subdivision algorithm here, which is why toric varieties are worth working through before an exam: they turn every hard statement in the subject into a finite computation with lattice points.
-
-Two cones to recognise on sight.
-The cone on $(0,1)$ and $(1,0)$ is smooth and gives $\AA^2$.
-The cone on $(0,1)$ and $(d,-1)$ is not, and gives the cone over the rational normal curve of degree $d$ — for $d = 2$, the quadric cone $V(xy - z^2)$, whose singularity is resolved by inserting the ray $(1,0)$, which is the blowup.
-
-The same dictionary supplies examples on demand for questions asked elsewhere: a normal variety that is not smooth, a Weil divisor that is not Cartier, a class group with torsion.
+Resolution of singularities is a hard theorem in general; here it is a subdivision algorithm: repeatedly inserting lattice points refines every fan into smooth cones, and the induced morphism is a proper birational resolution. The dictionary turns each hard statement into a finite computation with lattice points, and supplies examples on demand for questions asked elsewhere: a normal variety that is not smooth, a Weil divisor that is not Cartier, a class group with torsion.
 :::

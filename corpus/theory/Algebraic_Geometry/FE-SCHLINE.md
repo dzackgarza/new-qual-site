@@ -25,7 +25,7 @@ The result $X$ is a scheme with two points $0_1, 0_2$ whose every neighbourhood 
 :::
 
 ::: {.remark}
-$X$ is the standard answer to "give a non-separated scheme", and the follow-up is always why the Hausdorff condition was replaced by the diagonal.
+$X$ is a standard example of a non-separated scheme.
 The Zariski topology is never Hausdorff, so the topological condition is useless; the workable replacement asks that
 \[
 \Delta: X \to \fiberprod{X}{S}{X}

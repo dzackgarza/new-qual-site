@@ -26,7 +26,7 @@ Since $d(t^p) = 0$, the map $F^* \Omega_{\PP^n/k} \to \Omega_{\PP^n/k}$ is zero,
 :::
 
 ::: {.remark}
-This is the standard example, and it is standard because it defeats every cheap criterion at once.
+This example is standard because it defeats every cheap criterion at once.
 $F$ is finite flat of degree $p^n$ and bijective on points, so no condition on fibres as sets or on flatness detects the failure; only the differentials do.
 It is the sharpest illustration that smoothness is not a topological or even a flat-family condition.
 

@@ -32,7 +32,6 @@ Every projective variety is complete; over $\CC$, completeness is compactness in
 
 ::: {.remark}
 The standard non-example is $\AA^1$, and the witness must be a base change, not a closed-map check on $\AA^1$ itself: the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \ts{0}$, which is not closed.
-Producing this on demand is the usual follow-up to the definition.
 
 The converse of "projective implies complete" is false: Nagata and Hironaka produced complete non-projective varieties, all of dimension at least three, since a complete curve or normal complete surface is projective.
 The function-count consequence $\OO_X(X) = k$ is the same argument that appears for projective varieties, run one level up.

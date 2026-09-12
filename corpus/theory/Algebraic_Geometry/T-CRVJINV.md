@@ -68,7 +68,7 @@ In characteristic $3$ take $y^2 = x^3 - x$.
 Substituting $x \mapsto u^2 x + r$, $y \mapsto u^3 y$ and using that cubing is additive, the equation is preserved exactly when $u^4 = 1$ and $r^3 = r$, that is $u \in \mu_4$ and $r \in \FF_3$: twelve automorphisms.
 In characteristic $2$ take $y^2 + y = x^3$; the same computation with $x \mapsto u^2x+r$, $y \mapsto u^3y + u^2 s x + t$ forces $u^3 = 1$, $r = s^2$, $s^4 = s$ and $t^2 + t = s^6$, giving $3 \cdot 4 \cdot 2 = 24$.
 
-Two consequences worth carrying.
+Two consequences.
 The automorphism group is noncommutative in these two characteristics --- order $12$ as $\FF_3 \rtimes \mu_4$, order $24$ as $\SL_2(\FF_3)$ --- whereas it is cyclic everywhere else.
 And the unique curve involved is supersingular, which is why characteristics $2$ and $3$ are excluded from so many statements in this chapter: the Legendre model itself requires $\operatorname{ch} k \neq 2$.
 :::

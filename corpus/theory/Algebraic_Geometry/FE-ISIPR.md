@@ -28,6 +28,5 @@ Over an infinite field choose $z$ distinct from every $p_i$ and $q_j$; then $(z,
 :::
 
 ::: {.remark}
-The product topology is strictly coarser: it sees only finite unions of horizontal and vertical lines, and no curve that is not one.
-This is why the product in the category of varieties is not the topological product, and it is worth having ready, because the same point returns for schemes as the statement that $\Spec$ does not take products to products.
+The product topology is strictly coarser: it sees only finite unions of horizontal and vertical lines, and no curve that is not one. The same phenomenon recurs for schemes: $\Spec$ does not take products to products, so the product in the category of varieties is not the topological product.
 :::

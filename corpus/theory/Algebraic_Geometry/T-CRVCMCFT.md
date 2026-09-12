@@ -43,7 +43,7 @@ D \in \ts{ -3,\ -4,\ -7,\ -8,\ -11,\ -12,\ -16,\ -19,\ -27,\ -28,\ -43,\ -67,\ -
 :::
 
 ::: {.remark title="Thirteen orders, nine fields"}
-The two counts are different questions and confusing them is the standard error.
+The two counts answer different questions, and they are easy to confuse: nine is the count of imaginary quadratic fields of class number one, thirteen is the count of imaginary quadratic orders of class number one.
 
 **Nine** is the number of imaginary quadratic *fields* of class number one: $d_K \in \ts{-3,-4,-7,-8,-11,-19,-43,-67,-163}$.
 That is the Baker--Heegner--Stark theorem, and it is a statement about maximal orders only.
@@ -58,7 +58,7 @@ D = -12 \ (f=2 \text{ in } \QQ(\sqrt{-3})), \quad
 \]
 Endomorphism rings of elliptic curves range over all orders, not just maximal ones, so thirteen is the count that answers the question about $j$.
 The $\tau = 2i$ curve is exactly the $D = -16$ entry, and its $j$-invariant is the rational integer $66^3 = 287496$.
-Other entries worth recognising: $D = -4$ gives $j = 1728$, $D = -3$ gives $j = 0$, and $D = -163$ gives $j = -640320^3$, which is why $e^{\pi\sqrt{163}}$ is so close to an integer.
+Other entries to recognise: $D = -4$ gives $j = 1728$, $D = -3$ gives $j = 0$, and $D = -163$ gives $j = -640320^3$, which makes $e^{\pi\sqrt{163}}$ close to an integer.
 :::
 
 ::: {.remark}

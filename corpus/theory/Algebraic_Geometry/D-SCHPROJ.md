@@ -25,7 +25,7 @@ Its structure sheaf sends $U$ to the functions $s: U \to \coprod_{\mfp \in U} S_
 :::
 
 ::: {.remark}
-Every clause answers a question the examiner will ask.
+Three restrictions shape the definition, each with a mathematical reason.
 
 *Homogeneous* primes only, because the closed sets should be cut out by homogeneous equations: a non-homogeneous polynomial does not have a well-defined vanishing locus on lines through the origin.
 

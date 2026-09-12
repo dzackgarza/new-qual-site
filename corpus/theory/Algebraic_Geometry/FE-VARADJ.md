@@ -30,7 +30,7 @@ So $D$ is Fano for $d < n+1$, Calabi--Yau for $d = n+1$, and of general type for
 :::
 
 ::: {.remark}
-This computation supplies examples in either class on request, and it is worth having because a single adjunction line covers both.
+This computation supplies examples in either class on request, and a single adjunction line covers both.
 The quadric surface in $\PP^3$ is $d = 2 < 4$, hence del Pezzo, and indeed $\PP^1 \times \PP^1$; the quartic surface in $\PP^3$ is $d = 4 = n+1$, the K3 surface; the quintic threefold in $\PP^4$ is the Calabi--Yau of mirror symmetry.
 For $n = 2$ the same computation is the plane-curve genus formula $g = \binom{d-1}{2}$, with $d \leq 2$ rational, $d = 3$ elliptic, $d \geq 4$ general type.
 

@@ -43,7 +43,7 @@ Consequently, for each $p$ there are at most $\left\lfloor p/12 \right\rfloor + 
 :::
 
 ::: {.remark title="Where the criterion comes from"}
-Every step is forced, which is why this is a reasonable thing to be asked to reconstruct.
+The derivation is forced by the Čech description of the relevant cohomology group.
 
 The ideal sheaf of a plane cubic is $\OO_{\PP^2}(-3)$, so
 \[

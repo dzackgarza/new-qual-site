@@ -30,8 +30,9 @@ In general $X$ is smooth at $p$ of dimension $n - \rank J(p)$ when the two agree
 :::
 
 ::: {.remark}
-This is the only computational tool in the topic, and the exam use is always the same: write the equations, differentiate, and solve $J = 0$ together with the equations themselves.
-The last clause is the one people drop: a point of $V(J)$ is singular only if it also lies on $X$.
+The criterion is the standard computational tool in the topic: write the equations, differentiate, and solve $J = 0$ together with the equations themselves.
+
+A point of $V(J)$ is singular only if it also lies on $X$.
 
 The hypothesis $k = \kbar$ is load-bearing and its failure is the same characteristic-$p$ inseparability seen elsewhere.
 So is the pure-dimension hypothesis: for $X = V(xy, xz) \subseteq \AA^3$, a plane meeting a line, the jacobian rank is wrong along the whole line because the codimension is not constant.

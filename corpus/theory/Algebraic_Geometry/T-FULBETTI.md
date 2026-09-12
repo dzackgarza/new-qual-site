@@ -56,5 +56,5 @@ That is the Euler characteristic statement, and tracking the individual ranks gi
 For $\PP^2$: $\size \Sigma(2) = 3$, $\size \Sigma(1) = 3$, $\size \Sigma(0) = 1$, giving $\beta_0 = 1$, $\beta_2 = 1$, $\beta_4 = 1$ and $\chi = 3$.
 For $\FF_a$: $\size \Sigma(2) = 4$, $\size \Sigma(1) = 4$, giving $\beta_2 = 2 = \rank \Pic(\FF_a)$ and $\chi = 4$.
 
-The formula is worth carrying because it turns a cohomology question into counting cones, and it makes the vanishing of odd cohomology a structural fact rather than a computation: the torus orbits give a cell decomposition with only even-dimensional cells.
+The formula turns a cohomology question into counting cones, and the vanishing of odd cohomology is a structural fact rather than a computation: the torus orbits give a cell decomposition with only even-dimensional cells.
 :::

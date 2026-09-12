@@ -38,7 +38,7 @@ Intersecting with $E$:
 :::
 
 ::: {.remark}
-The other route is the one to give if the examiner wants a picture: take two lines in $\PP^2$ meeting transversally away from $p$, so $\pi^* L_1 . \pi^* L_2 = L_1 . L_2 = 1$; move them to meet at $p$, so $\pi^* L_i' = \tilde{L}_i' + E$ and the proper transforms now miss each other; expanding gives $1 = 0 + 1 + 1 + E^2$.
+A second computation of $E^2$ uses two lines in $\PP^2$ meeting transversally away from $p$: $\pi^* L_1 . \pi^* L_2 = L_1 . L_2 = 1$; move them to meet at $p$, so $\pi^* L_i' = \tilde{L}_i' + E$ and the proper transforms now miss each other; expanding gives $1 = 0 + 1 + 1 + E^2$.
 Both arguments run on the same two facts, $\pi^*A.E = 0$ and $\pi^*C = \tilde{C} + E$.
 
 The consequence is Castelnuovo's criterion — a smooth rational curve with $E^2 = -1$ on a surface is the exceptional curve of a blowup and can be contracted — which is what makes minimal models of surfaces possible.

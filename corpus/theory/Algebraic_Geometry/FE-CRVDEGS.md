@@ -47,7 +47,7 @@ The useful way to organise this is by the speciality of $\OO_C(1)$.
 Nonspecial hyperplane sections are the generic, well-understood case and are governed entirely by the degree bound $d \geq g+3$.
 The special ones are rare, start at degree $6$, and are where the named curves sit.
 
-That two curves with the same $(d,g)$ can be genuinely different is worth having an example for: degree $9$ and genus $10$ admits both the complete intersection of two cubics and the type-$(3,6)$ curve on a quadric.
+Two curves with the same $(d,g)$ can be genuinely different: degree $9$ and genus $10$ admits both the complete intersection of two cubics and the type-$(3,6)$ curve on a quadric.
 They are distinguished by $h^0(\mci_C(2))$, which is $0$ for the first and $1$ for the second, and semicontinuity shows neither degenerates to the other.
 Whether $\dim M^d_g$ is even known in general is a fair thing to admit: it is not.
 :::
