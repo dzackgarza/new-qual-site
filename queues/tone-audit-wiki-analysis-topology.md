@@ -132,9 +132,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/fundamental-group/compute-pi-1.md` — revised: dropped "most spaces on an exam are a familiar space..." exam-composition claim
 - [x] `wiki/topology/fundamental-group/index.md` — no stance revision
 - [x] `wiki/topology/fundamental-group/theorems.md` — no stance revision
-- [ ] `wiki/topology/homology/compute-h-star.md`
-- [ ] `wiki/topology/homology/exercises.md`
-- [ ] `wiki/topology/homology/homological-algebra.md`
+- [x] `wiki/topology/homology/compute-h-star.md` — no stance revision
+- [x] `wiki/topology/homology/exercises.md` — no stance revision
+- [x] `wiki/topology/homology/homological-algebra.md` — no stance revision
 - [ ] `wiki/topology/homology/homology.md`
 - [ ] `wiki/topology/homology/index.md`
 - [ ] `wiki/topology/index.md`
