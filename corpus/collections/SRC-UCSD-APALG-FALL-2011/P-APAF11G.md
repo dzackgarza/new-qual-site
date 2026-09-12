@@ -11,6 +11,13 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-10
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
 ---
 
 ::: problem
@@ -28,4 +35,140 @@ Find the Gröbner basis for $I$ relative to lexicographic order where $x>y$.
 (c) Find all solutions to these equations that lie in $\mathbb{C}^2$.
 
 (d) Find a vector space basis for $\mathbb{C}[x,y]/I$.
+:::
+
+::: {.solution}
+Let
+\[
+f_1=x^2+y+2,
+\qquad
+f_2=2xy-y^2+2y.
+\]
+We use lexicographic order with $x>y$.
+
+<1>1. The ideal $I=(f_1,f_2)$ has Gröbner basis
+\[
+G=\left\{
+ g_1=x^2+y+2,
+\quad
+ g_2=xy-\frac12y^2+y,
+\quad
+ g_3=y^3+12y
+\right\}.
+\]
+::: {.proof}
+First $g_1=f_1$ and $g_2=f_2/2$, so $g_1,g_2\in I$.
+The $S$-polynomial of $g_1$ and $g_2$ is
+\[
+S(g_1,g_2)=yg_1-xg_2.
+\]
+Reducing first by $g_2$ using
+\[
+xy\equiv \frac12y^2-y,
+\qquad
+xy^2\equiv \frac12y^3-y^2,
+\]
+one obtains
+\[
+S(g_1,g_2)\equiv \frac14y^3+3y
+=\frac14(y^3+12y).
+\]
+Hence $g_3\in I$.
+
+The leading monomials are
+\[
+\operatorname{LM}(g_1)=x^2,\qquad
+\operatorname{LM}(g_2)=xy,\qquad
+\operatorname{LM}(g_3)=y^3.
+\]
+It remains, by Buchberger's criterion, to check the three $S$-pairs reduce to zero.
+The first does by the calculation above. For the other two,
+\[
+S(g_1,g_3)=y^3g_1-x^2g_3
+=y^4+2y^3-12x^2y.
+\]
+Using $x^2\equiv-y-2$ modulo $g_1$ gives
+\[
+S(g_1,g_3)\equiv y^4+2y^3+12y^2+24y,
+\]
+and then $y^3\equiv-12y$ modulo $g_3$ makes this zero.
+Likewise,
+\[
+S(g_2,g_3)=y^2g_2-xg_3
+=-\frac12y^4+y^3-12xy.
+\]
+Reducing $y^4$ and $y^3$ by $g_3$ and $xy$ by $g_2$ gives
+\[
+6y^2-12y-12\left(\frac12y^2-y\right)=0.
+\]
+Thus every $S$-pair reduces to zero, so $G$ is a Gröbner basis. This proves part (a).
+:::
+
+<1>2. A Gröbner basis for the elimination ideal $I\cap\mathbb C[y]$ is
+\[
+\boxed{\{y^3+12y\}}.
+\]
+::: {.proof}
+For lex order $x>y$, the elimination theorem says that if $G$ is a Gröbner basis of $I$, then
+\[
+G\cap\mathbb C[y]
+\]
+is a Gröbner basis of $I\cap\mathbb C[y]$. From <1>1,
+\[
+G\cap\mathbb C[y]=\{g_3\}.
+\]
+This proves part (b).
+:::
+
+<1>3. The possible $y$-coordinates of solutions are
+\[
+y=0,\qquad y=2\sqrt3\,i,\qquad y=-2\sqrt3\,i.
+\]
+::: {.proof}
+Every common zero of $I$ must vanish on the elimination polynomial
+\[
+g_3=y^3+12y=y(y^2+12).
+\]
+Its roots over $\mathbb C$ are exactly the three displayed values.
+:::
+
+<1>4. The complete solution set in $\mathbb C^2$ is
+\[
+\boxed{
+(i\sqrt2,0),\ (-i\sqrt2,0),\ (-1+i\sqrt3,2i\sqrt3),\ (-1-i\sqrt3,-2i\sqrt3).
+}
+\]
+::: {.proof}
+If $y=0$, then $g_1=0$ gives
+\[
+x^2+2=0,
+\]
+so $x=\pm i\sqrt2$.
+
+If $y\ne0$, then $g_2=0$ implies
+\[
+x=\frac y2-1.
+\]
+For $y=\pm2i\sqrt3$, this gives
+\[
+x=-1\pm i\sqrt3.
+\]
+Conversely, substituting these four pairs into $g_1,g_2,g_3$ gives zero, so they are all the common zeros. This proves part (c).
+:::
+
+<1>5. A vector-space basis of $\mathbb C[x,y]/I$ is
+\[
+\boxed{\{1,x,y,y^2\}}.
+\]
+::: {.proof}
+For a Gröbner basis, the residue classes of monomials not divisible by any leading monomial form a basis of the quotient. By <1>1 the initial ideal is
+\[
+\operatorname{in}(I)=(x^2,xy,y^3).
+\]
+The monomials not divisible by $x^2$, $xy$, or $y^3$ are exactly
+\[
+1,\ x,\ y,\ y^2.
+\]
+Therefore their residue classes form a $\mathbb C$-basis of $\mathbb C[x,y]/I$. This proves part (d).
+:::
 :::

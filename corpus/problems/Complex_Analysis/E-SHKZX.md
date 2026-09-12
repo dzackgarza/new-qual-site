@@ -25,32 +25,43 @@ that $\lim_{n \rightarrow \infty} f(z_n) = w$.
 
 Explain the similarity and difference between the above assertion and the Weierstrass-Casorati theorem.
 
-> DZG: I think it's also necessary to state that $z_n \to a$.
-
 :::
 
 :::{.solution}
+We prove the stronger conclusion that the sequence can be chosen with
+$z_n\to a$.
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2022-01-05_05-27-45.png)
-
-As in the proof of Casorati-Weierstrass, fix $w$ and suppose toward a contradiction that no sequence sequence exists.
-Then there is some $\eps, R$ such that 
+Fix $w\in\CC$. Suppose this stronger conclusion fails. Then there are
+$\varepsilon>0$ and $\delta>0$ such that
 \[
-f(\DD_\eps(a)) \subseteq \DD_R(w)^c
-,\]
-for otherwise one could construct the desired sequence.
-In particular, $\abs{f(z) - w} > R$ for $\abs{z-a} < \eps$, so define
-\[
-G(z) \da {1\over f(z) - w} \implies \abs{G(z)} \leq R\inv < \infty \qquad \text{in }\DD_\eps(a)
-.\]
-Since $G$ is bounded in this disc, any singularities here must be removable.
-Since the $a_k$ are poles of $f$, they are zeros of $G$ -- this is because if $\abs{f(z)}\to\infty$ as $z\to a_k$ then $\abs{G(z)}\to 0$.
-So $G(a_k) = 0$ for all $k$ and $G$ extends holomorphically over the removable singularity $a$, and by continuity must satisfies $G(a) = 0$.
-But now $G$ is zero on a set with a limit point, hence $G\equiv 0$ by the identity principle.
-This is a contradiction since if $G\equiv 0$ on an open set, $f$ has poles on an open set, contradicting that $f$ is holomorphic on $\Omega$.
+|f(z)-w|\ge\varepsilon
+\]
+whenever $0<|z-a|<\delta$ and $z$ is not one of the poles of $f$.
+Indeed, otherwise for every $n$ one could choose $z_n$ with
+$0<|z_n-a|<1/n$ and $|f(z_n)-w|<1/n$.
 
-The difference to Casorati-Weierstrass: the singularity at $a$ is not essential, since in particular it is not isolated. 
-The conclusion is nearly the same though: this says that every $w\in \CC$ is a limit point for $f(\Omega)$, so $w$ is in the closure of $f(\Omega)$, making the image dense in $\CC$.
+On the punctured disk, away from the poles, define
+\[
+G(z)={1\over f(z)-w}.
+\]
+Then $|G(z)|\le\varepsilon^{-1}$. At each pole $a_k$ of $f$ lying in this
+disk, $G(z)\to0$ as $z\to a_k$, so $a_k$ is a removable singularity of $G$
+and the extension satisfies $G(a_k)=0$. After filling in all such points,
+$G$ is holomorphic and bounded on $0<|z-a|<\delta$. Hence $a$ is also a
+removable singularity of $G$.
+
+Because $a_k\to a$ and $G(a_k)=0$, continuity of the extension gives
+$G(a)=0$. Thus the zeros $a_k$ of the extended holomorphic function $G$
+accumulate at the interior point $a$. The identity theorem gives $G\equiv0$
+on the disk. This is impossible, since at every ordinary point where $f$ is
+finite one has $G=1/(f-w)\ne0$.
+
+Therefore for every $w\in\CC$ there exists a sequence $z_n\to a$ with
+$f(z_n)\to w$.
+
+This resembles Casorati--Weierstrass because every finite complex value is a
+limit value arbitrarily near $a$. The difference is that Casorati--Weierstrass
+concerns an isolated essential singularity, whereas here $a$ is not an isolated
+singularity at all: poles of $f$ accumulate at $a$.
 
 :::
-

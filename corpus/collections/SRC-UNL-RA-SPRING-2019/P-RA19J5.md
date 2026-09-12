@@ -15,6 +15,13 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked directly against Problem 5 in the preserved UNL January 2019 qualifying-exam PDF/extraction. The source has alpha(2)=3 but right limit 4, so alpha has a jump of size 1 at 2.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 :::{.problem}
@@ -28,22 +35,75 @@ $$\int_0^4 f(x)\,d\alpha.$$
 :::
 
 :::: {.solution}
-**Goal:** Use the Riemann condition to show $f(x) = e^{2x} \in \mathcal R_\alpha[0,4]$ with the piecewise-linear $\alpha$, and compute $\int_0^4 f\,d\alpha$.
+The key point is that the integrator is not continuous at $2$:
+\[
+\alpha(2)=3,
+\qquad
+\alpha(2+)=4.
+\]
+Thus there is a jump of size $1$ immediately to the right of $2$.
 
-<1>1. $\alpha(x) = x+1$ on $[0,2]$ and $\alpha(x) = 3x - 2$ on $(2,4]$: continuous, and $\alpha' = 1$ on $(0,2)$, $\alpha' = 3$ on $(2,4)$.
-    Proof: differentiate each piece; $\alpha$ is continuous at $2$: $2 + 1 = 3 = 3\cdot2 - 2$.
+<1>1. Verify the Riemann--Stieltjes condition.
+::: {.proof}
+The function $\alpha$ is increasing on $[0,4]$. Let $P$ be a partition containing $2$. On intervals not adjacent to $2$, the increment of $\alpha$ is either $\Delta x$ or $3\Delta x$. On the interval $[2,x_i]$ immediately to the right of $2$,
+\[
+\alpha(x_i)-\alpha(2)=1+3(x_i-2).
+\]
+Hence
+\[
+U(P,f,\alpha)-L(P,f,\alpha)
+\le 3\sum_i (M_i-m_i)\Delta x_i +(M_*-m_*),
+\]
+where $M_*-m_*$ is the oscillation of $f$ on the interval immediately to the right of $2$.
 
-<1>2. $\int_0^4 f\,d\alpha = \int_0^4 f(x)\alpha'(x)\,dx$ (the reduction theorem for $C^1$ integrators).
-    Proof: since $f$ is continuous (hence Riemann integrable) and $\alpha$ is $C^1$ except at the corner $x = 2$, the standard reduction $\int f\,d\alpha = \int f\alpha'$ holds on each interval of smoothness; the corner is a single point and contributes nothing (both $f$ and $\alpha$ are continuous at $2$). More precisely apply the theorem on $[0,2]$ and $[2,4]$ separately and add (additivity of RS integrals).
-
-<1>3. $\int_0^4 e^{2x}\,d\alpha = \int_0^2 e^{2x}\cdot 1\,dx + \int_2^4 e^{2x}\cdot 3\,dx = \left[\frac{e^{2x}}{2}\right]_0^2 + 3\left[\frac{e^{2x}}{2}\right]_2^4 = \frac{e^4 - 1}{2} + \frac{3(e^8 - e^4)}{2} = \frac{3e^8 + 2e^4 - 1}{2}$.
-    Proof: <1>2 and elementary integration.
-
-<1>4. Riemann condition verification (the problem asks to "use the Riemann condition"):
-    <2>1. The Riemann condition for RS integrability: for every $\varepsilon > 0$ there is a partition $P$ with $U(P, f, \alpha) - L(P, f, \alpha) < \varepsilon$.
-    <2>2. $U - L \le \sum_i (M_i - m_i)\Delta\alpha_i$; on each of $[0,2]$ and $[2,4]$ where $\alpha'$ is constant, $\Delta\alpha_i = \alpha'\Delta x_i$, so $U - L = \sum(M_i - m_i)\alpha'\Delta x_i \le \max(1, 3)\sum(M_i - m_i)\Delta x_i$ — and $\sum(M_i - m_i)\Delta x_i \to 0$ by (ordinary) Riemann integrability of $f$ (continuous on a compact interval). Taking $\alpha' \le 3$ and $f$ continuous: $U - L \le 3\sum(M_i - m_i)\Delta x_i \to 0$.
-        Proof: since $f$ is continuous on $[0,4]$, it is uniformly continuous, so with a fine enough partition each $(M_i - m_i)$ is small and $\sum(M_i-m_i)\Delta x_i < \varepsilon/3$; hence $U - L < \varepsilon$: the Riemann condition holds.
-    <2>3. Q.E.D.
-        Proof: <2>2 verifies the Riemann condition, so $f \in \mathcal R_\alpha[0,4]$; <1>3 computes the value.
-
+Since $f(x)=e^{2x}$ is uniformly continuous on $[0,4]$, both terms can be made arbitrarily small by taking the mesh of $P$ sufficiently small. Therefore the Riemann condition holds and
+\[
+f\in\mathcal R_\alpha[0,4].
+\]
 :::
+
+<1>2. Separate the jump from the absolutely continuous pieces.
+::: {.proof}
+Define
+\[
+\beta(x)=
+\begin{cases}
+x+1,&0\le x\le2,\\
+3x-3,&2<x\le4,
+\end{cases}
+\qquad
+H(x)=\mathbf1_{(2,4]}(x).
+\]
+Then $\beta$ is continuous, piecewise $C^1$, with
+\[
+\beta'(x)=1\quad(0<x<2),
+\qquad
+\beta'(x)=3\quad(2<x<4),
+\]
+and
+\[
+\alpha=\beta+H.
+\]
+The Riemann--Stieltjes integral against $H$ is the jump contribution
+\[
+\int_0^4 f\,dH=f(2).
+\]
+Therefore
+\[
+\int_0^4 f\,d\alpha
+=\int_0^2 f(x)\,dx+f(2)+3\int_2^4 f(x)\,dx.
+\]
+:::
+
+<1>3. Compute the value.
+::: {.proof}
+With $f(x)=e^{2x}$,
+\[
+\begin{aligned}
+\int_0^4 e^{2x}\,d\alpha
+&=\frac{e^4-1}{2}+e^4+\frac{3(e^8-e^4)}2\\
+&=\boxed{\frac{3e^8-1}{2}}.
+\end{aligned}
+\]
+:::
+::::

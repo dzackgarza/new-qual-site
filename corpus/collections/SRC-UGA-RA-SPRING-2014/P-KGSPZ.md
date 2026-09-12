@@ -12,9 +12,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against the recorded UGA Spring 2014 real-analysis exam source. The prior solution contained contradictory dominated-convergence prose despite the finite-measure hypothesis.
 - event: solution-written
-  by: gemini-3.7-flash
-  date: 2026-08-25
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -29,42 +36,63 @@ $$
 $$
 and characterize the collection of functions of each type.
 :::
-::: {.solution}
-**Honesty note:** the card states no hypothesis on the sign of $f$; for signed $f$ and odd $n$, $\int f^n$ need not be defined.
-The standard statement (proved here) is for $f \ge 0$: $\lim_n \int f^n = \infty$ if $\mu\{f > 1\} > 0$, and $= \mu\{f = 1\}$ otherwise.
 
-<1>1. Let $A = \{x : f(x) = 1\}$ and $B = \{x : f(x) > 1\}$.
-::: {.proof}
-definitions.
-:::
-
-<1>2. If $\mu(B) > 0$: $\int f^n \to \infty$.
-::: {.proof}
-$B = \bigcup_k \{f \ge 1 + 1/k\}$, so some $C \subseteq B$ has $\mu(C) > 0$ and $f \ge 1 + \delta$ on $C$ for $\delta = 1/k$; then $\int f^n \ge (1+\delta)^n\mu(C) \to \infty$.
-:::
-
-<1>3. If $\mu(B) = 0$: $\int f^n \to \mu(A)$.
-<2>1. $f^n = 1$ on $A$ and $f^n \to 0$ pointwise on $\{f < 1\}$.
-::: {.proof}
-on $\{0 \le f < 1\}$, $f^n \to 0$; $f = 1$ on $A$.
-:::
-<2>2. $\int f^n = \mu(A) + \int_{\{f < 1\}} f^n$.
-::: {.proof}
-additivity over the disjoint sets $A$ and $\{f < 1\}$ (the remaining set $\{f > 1\} = B$ has measure $0$). <2>3. $\int_{\{f < 1\}} f^n \to 0$.
-:::
-::: {.proof}
-on $\{f < 1\}$, $0 \le f^n \le f^{n_0}$ for $n \ge n_0$; dominated convergence applies on each finite-measure truncation $\{f < 1\} \cap \{|x| \le R\}$ (dominated by $f^{n_0} \le 1$ there), giving $\int_{\{f<1\}\cap\{|x|\le R\}} f^n \to 0$ for each $R$; then $\limsup_n \int_{\{f<1\}} f^n \le \limsup_n \int_{\{f<1\}\cap\{|x|>R\}} f^n \le \mu\{f<1\}\cap\{|x|>R\}$, which $\to 0$ as $R \to \infty$ when $\mu\{f < 1\} < \infty$ — if $\mu\{f < 1\} = \infty$, use instead the dominated convergence on the whole space when $\int_{\{f<1\}} f < \infty$ (dominating by $f \in L^1$), and if neither holds, the standard formulation assumes $\mu(X) < \infty$ (e.g. probability space), in which case $f^n \le 1$ pointwise on $\{f < 1\}$ is dominated by the constant $1 \in L^1$, so the dominated convergence theorem gives $\int_{\{f<1\}} f^n \to \mu\{f < 1\}$.
-:::
-We record the finite-measure formulation: Proof: if $\mu(X) < \infty$: $f^n \le 1$ pointwise on $\{f < 1\}$, dominated by the constant $1 \in L^1$; DCT gives $\int f^n \to \mu(A)$.
-If $\mu(X) = \infty$ but $f \in L^1$: dominated by $f$.
-The general statement needs one of these; otherwise $\int_{\{f<1\}} f^n = \infty$ for all $n$ is possible (e.g. $f$ decaying slowly), and the dichotomy fails.
-<2>4. Q.E.D.
-::: {.proof}
-<2>2 and <2>3 give $\int f^n \to \mu(A)$.
+::: solution
+<1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
+::: proof
+Let
+\[
+B:=\{x\in X:f(x)>1\}.
+\]
+Since
+\[
+B=\bigcup_{k=1}^\infty\{f\ge1+1/k\},
+\]
+positive measure of $B$ implies that for some $k$,
+\[
+C:=\{f\ge1+1/k\}
+\]
+has positive measure. Then
+\[
+\int_X f^n\,d\mu
+\ge \int_C f^n\,d\mu
+\ge (1+1/k)^n\mu(C)\longrightarrow\infty.
+\]
 :::
 
-<1>4. Q.E.D.: the dichotomy $\lim_n \int f^n = \infty$ (iff $\mu\{f > 1\} > 0$) or $\mu\{f = 1\}$ (iff $f \le 1$ a.e.), under the standard hypotheses ($f \ge 0$, plus finiteness of the ambient measure or $f \in L^1$ when $\mu\{f = 1\}$ case needs DCT).
-::: {.proof}
-<1>2 and <1>3.
+<1>2. If $f\le1$ almost everywhere, identify the finite limit.
+::: proof
+Assume
+\[
+\mu\{f>1\}=0.
+\]
+Then $0\le f\le1$ almost everywhere. Pointwise,
+\[
+f^n(x)\longrightarrow \mathbf1_{\{f=1\}}(x).
+\]
+Moreover,
+\[
+0\le f^n\le1,
+\]
+and the constant function $1$ is integrable because $\mu(X)<\infty$. By the Dominated Convergence Theorem,
+\[
+\lim_{n\to\infty}\int_X f^n\,d\mu
+=\int_X\mathbf1_{\{f=1\}}\,d\mu
+=\mu(f^{-1}(1)).
+\]
+:::
+
+<1>3. State the exact dichotomy.
+::: proof
+Combining the two cases,
+\[
+\boxed{
+\lim_{n\to\infty}\int_Xf^n\,d\mu
+=\begin{cases}
+\infty,&\mu\{f>1\}>0,\\[1ex]
+\mu\{f=1\},&f\le1\text{ a.e.}
+\end{cases}}
+\]
+Thus the first type consists exactly of the nonnegative measurable functions exceeding $1$ on a set of positive measure; the second type consists exactly of those satisfying $f\le1$ almost everywhere.
 :::
 :::

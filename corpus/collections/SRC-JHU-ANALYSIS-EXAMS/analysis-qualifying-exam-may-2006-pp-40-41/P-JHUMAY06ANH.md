@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-10
+  note: "Visually compared May 2006 problem 8 on PDF page 41; the interval is arbitrary and need not have finite measure."
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-10
+  note: "Preserved the valid pointwise splitting proof and repaired the second proof's Holder exponents so the two resulting integrals are genuinely the L1 and squared L2 norms."
 ---
 
 ::: {.problem}
@@ -53,7 +61,9 @@ for $t > 1$ and $p \le 2$, $t^p \le t^2$.
 $\int_I |f|^p\,dx < \infty$.
 :::
 
-<1>2. Lyapounov / Riesz–Thorin interpolation inequality: <2>1. Choose $\theta = \frac{2(p-1)}{p} \in (0, 1)$, so that $1 - \theta = \frac{2-p}{p}$ and $\frac{1}{p} = \frac{1-\theta}{1} + \frac{\theta}{2}$.
+<1>2. Hölder interpolation inequality.
+
+<2>1. For $1<p<2$, choose $\theta = \frac{2(p-1)}{p} \in (0, 1)$, so that $1 - \theta = \frac{2-p}{p}$ and $\frac{1}{p} = \frac{1-\theta}{1} + \frac{\theta}{2}$.
 ::: {.proof}
 arithmetic.
 :::
@@ -61,12 +71,22 @@ arithmetic.
 ::: {.proof}
 exponent addition $(1-\theta)p + \theta p = p$.
 :::
-<2>3. Apply Hölder’s inequality with conjugate exponents $r = \frac{1}{1-\theta} = \frac{p}{2-p} > 1$ and $s = \frac{1}{\theta} = \frac{p}{2(p-1)} > 1$:
+<2>3. Apply Hölder's inequality with $r=1/(2-p)>1$ and $s=1/(p-1)>1$:
 \[
-\int_I |f|^p\,dx \le \left(\int_I |f|^{(2-p) \cdot \frac{p}{2-p}}\,dx\right)^{\frac{2-p}{p}} \left(\int_I |f|^{2(p-1) \cdot \frac{p}{2(p-1)}}\,dx\right)^{\frac{2(p-1)}{p}} = \|f\|_{L^1(I)}^{2-p} \|f\|_{L^2(I)}^{2(p-1)}.
+\begin{aligned}
+\int_I |f|^p\,dx
+&\leq\left(\int_I |f|^{(2-p)r}\,dx\right)^{1/r}
+\left(\int_I |f|^{2(p-1)s}\,dx\right)^{1/s}\\
+&=\left(\int_I |f|\,dx\right)^{2-p}
+\left(\int_I |f|^2\,dx\right)^{p-1}
+=\|f\|_{L^1(I)}^{2-p}\|f\|_{L^2(I)}^{2(p-1)}.
+\end{aligned}
 \]
 ::: {.proof}
-Hölder's inequality.
+The exponents are conjugate because $1/r+1/s=(2-p)+(p-1)=1$.
+Moreover $(2-p)r=1$ and $2(p-1)s=2$, so the two factors
+belong to $L^r$ and $L^s$ by the hypotheses. Hölder's
+inequality therefore gives the displayed estimate [@Fol13].
 :::
 <2>4. Taking the $p$-th root yields the $L^p$ interpolation inequality:
 \[

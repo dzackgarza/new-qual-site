@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HXTMK
 kind: problem
-title: Rational canonical forms for $m_A=(x-1)(x^2+1)^2$ and $m_A=(x^2+1)^2(x^3+1)$
+title: Rational canonical forms from specified minimal polynomials in dimensions $6$ and $10$
 classification:
   areas:
   - algebra
@@ -15,93 +15,122 @@ review: draft
 ---
 
 ::: problem
-In both cases, we will need the characteristic polynomials $\chi_A(x)$, since $RCF(A)$ will depend on the invariant factors of $A$.
-We will also use the fact that over the algebraic closure $\overline \QQ$, the minimal and characteristic polnyomials must have the same roots.
+1. Let $A\in M_6(\QQ)$ have minimal polynomial
+\[
+m_A=(x-1)(x^2+1)^2.
+\]
+Determine all possible rational canonical forms of $A$.
 
-Suppose $m_A(x) = (x-1)(x^2+1)^2$, which is a degree 5 polynomial.
-Since $\deg \chi_A$ must be 6 and $m_A$ must divide $\chi_A$ in $\QQ[x]$, with the two sharing their irreducible factors, the only possibility in this case is that
-$$
-\chi_A(x) = (x-1)^2 (x^2+1)^2.
-$$
+2. Let $B\in M_{10}(\QQ)$ have minimal polynomial
+\[
+m_B=(x^2+1)^2(x^3+1).
+\]
+Determine all possible rational canonical forms of $B$.
+:::
 
-To determine the possible invariant factors $\theset{d_i}$, we can just note that $\prod d_i = \chi_A(x)$ and $d_n = m_A(x)$.
-With these constraints, the only possibility is
-
-\begin{align*}
-d_1 &= (x-1) \\
-d_2 &= (x-1)(x^2+1)^2.
-,\end{align*}
-
-from which we can immediately obtain the elementary divisors:
-
-\begin{align*}
-(x-1), (x-1), (x^2+1)^2
-.\end{align*}
-
-Then noting that 
-$$
-d_2 =  (x-1)(x^2+1)^2 = x^5 - x^4 + 2x^3 - 2x^2 + x - 1,
-$$
-
-the companion block $C(d_2)$ has last column $(1, -1, 2, -2, 1)^t$, and there is thus only one possible Rational Canonical form:
-
-\begin{align*}
-RCF(A) &= 
-\left[\begin{array}{c|ccccc}
-1 & 0 & 0 & 0 & 0 & 0\\
-\hline
-0 & 0 & 0 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 0 & -1 \\
-0 & 0 & 1 & 0 & 0 & 2 \\
-0 & 0 & 0 & 1 & 0 & -2 \\
-0 & 0 & 0 & 0 & 1 & 1 \\
-\end{array}\right]
-.\end{align*}
-
-The constraints $m_A(x) = (x^2+1)^2(x^3+1)$ with $\deg m_A(x) = 7$ and $\deg \chi_A(x) = 10$ forces
-$$
-\chi_A(x) = (x^2+1)^2 (x^3+1)^2.
-$$
-
-Furthermore, the invariant factors are similarly constrained, and so the only possibility is
-
-\begin{align*}
-d_1 &= (x^3 + 1) \\
-d_2 &= (x^2+1)^2 (x^3+1)
-\end{align*}
-
-with $\deg d_1 = 3$ and $\deg d_2 = 7$, summing to $\deg \chi_A = 10$.
-Over $\QQ$ the factor $x^3+1 = (x+1)(x^2-x+1)$ splits further, so the elementary divisors, which must be powers of irreducibles, are
-
-\begin{align*}
-(x+1),\, (x+1),\, (x^2-x+1),\, (x^2-x+1),\, (x^2+1)^2
-.\end{align*}
-
-Noting that
-$$
-d_1 = x^3 + 1, \qquad d_2 = (x^2+1)^2 (x^3+1) = x^7 + 2x^5 + x^4 + x^3 + 2x^2 + 1,
-$$
-
-the two companion blocks are $3\times 3$ and $7\times 7$, with last columns $(-1, 0, 0)^t$ and $(-1, 0, -2, -1, -1, -2, 0)^t$ respectively, so
-
-\begin{align*}
-RCF(A) &= C(d_1) \oplus C(d_2), \\ \\
-C(d_1) &=
-\left[\begin{array}{ccc}
-0 & 0 & -1 \\
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-\end{array}\right],
+::: {.solution}
+Recall that the invariant factors
+\[
+d_1\mid d_2\mid\cdots\mid d_t
+\]
+satisfy
+\[
+\chi_A=\prod_i d_i,
 \qquad
-C(d_2) =
-\left[\begin{array}{ccccccc}
-0 & 0 & 0 & 0 & 0 & 0 & -1 \\
-1 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 & 0 & 0 & -2 \\
-0 & 0 & 1 & 0 & 0 & 0 & -1 \\
-0 & 0 & 0 & 1 & 0 & 0 & -1 \\
-0 & 0 & 0 & 0 & 1 & 0 & -2 \\
-0 & 0 & 0 & 0 & 0 & 1 & 0 \\
-\end{array}\right]
-.\end{align*}
+m_A=d_t.
+\]
+Equivalently, one may list the elementary divisors and align the powers of each irreducible factor from the right.
+
+<1>1. The $6\times6$ case is unique.
+Write
+\[
+a=x-1,
+\qquad
+b=x^2+1.
+\]
+The minimal polynomial $ab^2$ already contributes degree
+\[
+1+4=5.
+\]
+Since the characteristic polynomial has degree $6$ and has the same irreducible factors as the minimal polynomial, the only possible additional elementary divisor has degree $1$, namely another copy of $a$.
+Thus the elementary divisors are
+\[
+a,\ a,\ b^2.
+\]
+The invariant factors are therefore
+\[
+d_1=a,
+\qquad
+d_2=ab^2.
+\]
+Hence there is exactly one rational canonical form:
+\[
+\boxed{C(x-1)\oplus C\bigl((x-1)(x^2+1)^2\bigr)}.
+\]
+
+<1>2. The $10\times10$ case has three possibilities.
+Factor
+\[
+x^3+1=(x+1)(x^2-x+1).
+\]
+Put
+\[
+b=x^2+1,
+\qquad c=x+1,
+\qquad d=x^2-x+1.
+\]
+Then
+\[
+m_B=b^2cd
+\]
+has degree $4+1+2=7$. We must add elementary divisors of total degree $3$, without introducing any new irreducible factor or increasing an exponent beyond those in the minimal polynomial.
+The only possibilities are:
+
+<2>1. Add $c$ and $d$.
+The elementary divisors are
+\[
+b^2,\ c,\ c,\ d,\ d.
+\]
+Hence
+\[
+d_1=cd=x^3+1,
+\qquad
+d_2=b^2cd=m_B,
+\]
+and
+\[
+\boxed{C(x^3+1)\oplus C(m_B)}.
+\]
+
+<2>2. Add $c$ and $b$.
+The elementary divisors are
+\[
+b,\ b^2,\ c,\ c,\ d.
+\]
+Hence
+\[
+d_1=bc=(x^2+1)(x+1),
+\qquad
+d_2=b^2cd=m_B,
+\]
+and
+\[
+\boxed{C\bigl((x^2+1)(x+1)\bigr)\oplus C(m_B)}.
+\]
+
+<2>3. Add three further copies of $c$.
+The elementary divisors are
+\[
+b^2,\ c,\ c,\ c,\ c,\ d.
+\]
+The invariant factors are
+\[
+d_1=c,\qquad d_2=c,\qquad d_3=c,\qquad d_4=b^2cd=m_B.
+\]
+Thus
+\[
+\boxed{C(x+1)\oplus C(x+1)\oplus C(x+1)\oplus C(m_B)}.
+\]
+
+These three exhaust the degree-$3$ ways to augment the elementary divisors while preserving the given minimal polynomial.
 :::

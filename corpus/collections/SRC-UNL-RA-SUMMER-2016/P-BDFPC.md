@@ -16,88 +16,117 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked directly against Problem 6 of the preserved UNL May 2016 qualifying-exam source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: "Corrected the Stieltjes partition argument: because alpha(0)=-1 and alpha(x)=1 for x>0, the nonzero increment is on the interval beginning at 0."
 ---
 
-1. Suppose $f \colon [-1,1] \to \mathbb{R}$ is a bounded function that is continuous at $0$.
-   Let $\alpha(x) = -1$ for $x \in [-1,0]$ and $\alpha(x)=1$ for $x \in (0,1]$.
-   Prove that $f \in \mathcal{R}(\alpha)[-1,1]$, i.e., $f$ is Riemann integrable with respect to $\alpha$ on $[-1,1]$, and $\int_{-1}^1 f d\alpha = 2f(0)$.
+::: {.problem}
+1. Suppose $f:[-1,1]\to\mathbb R$ is bounded and continuous at $0$. Let
+\[
+\alpha(x)=
+\begin{cases}
+-1,&x\in[-1,0],\\
+1,&x\in(0,1].
+\end{cases}
+\]
+Prove that $f\in\mathcal R(\alpha)[-1,1]$ and
+\[
+\int_{-1}^1 f\,d\alpha=2f(0).
+\]
 
-Let $g \colon [0,1] \to \mathbb{R}$ be a continuous function such that $\int_0^1 g(x)x^{3k+2} dx = 0$ for all $k = 0, 1, 2, \ldots$.
-Prove that $g(x) =0$ for all $x \in [0,1]$.
-
-::: {.proof}
-*Proof.* Let $\epsilon>0$.
-Choose $\delta >0$ so that if $|x|<\delta$, then $|f(x)-f(0)|<\epsilon$.
-Let $P$ be a partition of $[-1,1]$ with $0 \in P$ and $\operatorname{mesh}(P)<\delta$.
-Then $|U(f,P,\alpha)-L(f,P,\alpha)|=|\sum_{i=1}^n(M_i-m_i)\Delta \alpha_i|=(|\sup_{x \in [0,x_k]}f(x)-\inf_{x \in [0,x_k]}f(x)|)2<4\epsilon$.
-Thus $f$ is integrable with respect to $\alpha$.
-Additionally, we have $L(f,P,\alpha)\leq 2f(0)\leq U(f,P,\alpha)$ for all partitions $P$ of the form described above, and so $\int_{-1}^1 f d\alpha = 2f(0)$.
-◻
+2. Let $g:[0,1]\to\mathbb R$ be continuous and suppose
+\[
+\int_0^1 g(x)x^{3k+2}\,dx=0
+\qquad(k=0,1,2,\ldots).
+\]
+Prove that $g\equiv0$.
 :::
 
-::: {.proof}
-*Proof.* Since $g(x)$ is continuous, so is $g(x^{1/3})$.
-Thus by the Weierstrauss Approximation Theorem, we can find a sequence of polynomials $(p_n(x))\to g(x^{1/3})$ uniformly.
-Since this holds for all values $x\in [0,1]$, we have that $(p_n(x^3))$ converges to $g(x)$ uniformly.
-Then we have $(x^2p_n(x^3))$ converges to $x^2g(x)$ uniformly.
-Note that by assumption, $\int_0^1 g(x)x^2p_n(x^3)dx=0$, and so $0 = \lim_{n \to \infty}\int_0^1 g(x)x^2p_n(x^3)dx=\int_0^1 \lim_{n \to \infty}g(x)x^2p_n(x^3)dx=\int_0^1x^2g^2(x)dx$.
-Since $x^2g^2(x)$ is non-negative, and its integral is zero, we conclude that $x^2g^2(x)=0$ for all $x$.
-Therefore, we have $g(x)=0$.
-◻
-:::
 ::: {.solution}
-**Part 1.** For the step function $\alpha(x) = -1$ on $[-1,0]$ and $\alpha(x) = 1$ on $(0,1]$: $f \in \mathcal R(\alpha)[-1,1]$ and $\int_{-1}^1 f\,d\alpha = 2f(0)$.
+<1>1. Prove the Riemann--Stieltjes assertion.
+::: {.proof}
+The integrator $\alpha$ is nondecreasing and has a single jump of size $2$ immediately to the right of $0$.
 
-<1>1. For any partition $P = \{-1 = x_0 < x_1 < \cdots < x_n = 1\}$ with $0 \in P$, $\Delta \alpha_i = \alpha(x_i) - \alpha(x_{i-1})$ is nonzero only for the subinterval containing $0$, where it equals $2$.
-::: {.proof}
-$\alpha$ is constant ($-1$, resp.
-:::
-$1$) on both sides of $0$; the only jump is at $0$, of size $1 - (-1) = 2$.
+Fix $\varepsilon>0$. By continuity of $f$ at $0$, choose $r\in(0,1)$ such that
+\[
+|f(x)-f(0)|<\frac{\varepsilon}{4}
+\qquad(0\le x\le r).
+\]
+Take any partition containing the points
+\[
+-1<0<r<1.
+\]
+All increments of $\alpha$ are zero except the one on the subinterval $[0,r]$, where
+\[
+\alpha(r)-\alpha(0)=1-(-1)=2.
+\]
+Consequently, if $M$ and $m$ are the supremum and infimum of $f$ on $[0,r]$, then
+\[
+U(f,P,\alpha)-L(f,P,\alpha)=2(M-m).
+\]
+Since $|f(x)-f(0)|<\varepsilon/4$ on $[0,r]$,
+\[
+M-m<\frac{\varepsilon}{2},
+\]
+and hence
+\[
+U(f,P,\alpha)-L(f,P,\alpha)<\varepsilon.
+\]
+Thus $f\in\mathcal R(\alpha)[-1,1]$.
 
-<1>2. If $x_k = 0$, then $U(f, P, \alpha) - L(f, P, \alpha) = 2\,(M_k - m_k)$, where $M_k, m_k$ are the sup and inf of $f$ on $[x_{k-1}, x_k]$.
-::: {.proof}
-by <1>1 the sums reduce to the single term $k$; $\Delta\alpha_k = 2$.
-:::
-
-<1>3. Given $\eps > 0$, choose $\delta > 0$ with $|x| < \delta \Rightarrow |f(x) - f(0)| < \eps$ (continuity at $0$), and let $P$ be any partition with $0 \in P$ and $\mathrm{mesh}(P) < \delta$.
-Then $U(f,P,\alpha) - L(f,P,\alpha) \le 4\eps$.
-::: {.proof}
-the subinterval containing $0$ lies inside $(-\delta, \delta)$, so $M_k - m_k \le 2\eps$; then <1>2 gives $U - L \le 4\eps$.
-:::
-
-<1>4. $f \in \mathcal R(\alpha)[-1,1]$.
-::: {.proof}
-<1>3 shows the Riemann–Stieltjes sums converge as $\mathrm{mesh}(P) \to 0$.
-:::
-
-<1>5. $\int_{-1}^1 f\,d\alpha = 2f(0)$.
-::: {.proof}
-with $0 \in P$, $L(f,P,\alpha) = 2\,m_k \le 2f(0) \le 2\,M_k = U(f,P,\alpha)$ (since $f(0) \in [m_k, M_k]$), and $U - L \to 0$; the common limit is $2f(0)$.
-:::
-
-**Part 2.** If $g \in C([0,1])$ and $\int_0^1 g(x)\,x^{3k+2}\,dx = 0$ for all $k \ge 0$, then $g \equiv 0$.
-
-<1>6. $\int_0^1 g(x)\,x^2 p(x^3)\,dx = 0$ for every polynomial $p$.
-::: {.proof}
-$x^2 p(x^3)$ is a finite linear combination of powers $x^{3k+2}$, each of which integrates to $0$ against $g$.
-:::
-
-<1>7. $\int_0^1 g(x)\,x^2 h(x^3)\,dx = 0$ for every $h \in C([0,1])$.
-<2>1. Polynomials $p_n$ converge to $h(x^{1/3})$ uniformly on $[0,1]$ (Weierstrass), so $p_n(x^3) \to h(x)$ uniformly.
-::: {.proof}
-$x \mapsto h(x^{1/3})$ is continuous (composition of continuous maps); Weierstrass applies on the compact interval $[0,1]$.
-:::
-<2>2. $x^2 g(x)\,p_n(x^3) \to x^2 g(x)\,h(x)$ uniformly.
-::: {.proof}
-$|x^2 g(x)| \le \|g\|_\infty$ is bounded, and <2>1 gives uniform convergence of the polynomial factor.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-$\int x^2 g\,p_n(x^3) = 0$ for all $n$ by <1>6; uniform convergence (<2>2) passes the limit under the integral.
+Moreover,
+\[
+2m\le \int_{-1}^1f\,d\alpha\le2M,
+\]
+and both $m$ and $M$ can be made arbitrarily close to $f(0)$ by shrinking $r$. Therefore
+\[
+\boxed{\int_{-1}^1f\,d\alpha=2f(0)}.
+\]
 :::
 
-<1>8. $g \equiv 0$.
+<1>2. Extend the moment identities from monomials to polynomials in $x^3$.
 ::: {.proof}
-<1>7 with $h = g$ gives $\int_0^1 x^2 g(x)^2\,dx = 0$; the integrand $x^2 g(x)^2 \ge 0$ is continuous, hence identically $0$, so $g = 0$ on $(0,1]$ and by continuity at $0$ as well.
+For every polynomial $p$,
+\[
+x^2p(x^3)
+\]
+is a finite linear combination of the functions $x^{3k+2}$. Hence the hypothesis gives
+\[
+\int_0^1 g(x)x^2p(x^3)\,dx=0.
+\]
+:::
+
+<1>3. Approximate $g$ by polynomials in $x^3$.
+::: {.proof}
+Define
+\[
+h(t):=g(t^{1/3}),\qquad t\in[0,1].
+\]
+Then $h$ is continuous. By the Weierstrass approximation theorem there are polynomials $p_n$ such that
+\[
+p_n\to h
+\]
+uniformly on $[0,1]$. Substituting $t=x^3$ gives
+\[
+p_n(x^3)\to g(x)
+\]
+uniformly on $[0,1]$.
+
+Since $x^2g(x)$ is bounded, we may pass to the limit in the identities from Step 2:
+\[
+0
+=\lim_{n\to\infty}\int_0^1 g(x)x^2p_n(x^3)\,dx
+=\int_0^1x^2g(x)^2\,dx.
+\]
+The integrand is continuous and nonnegative, so it vanishes identically. Thus $g(x)=0$ for every $x\in(0,1]$, and continuity gives $g(0)=0$. Hence
+\[
+\boxed{g\equiv0}.
+\]
 :::
 :::

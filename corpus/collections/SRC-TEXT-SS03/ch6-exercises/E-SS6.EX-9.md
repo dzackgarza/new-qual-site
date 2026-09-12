@@ -9,6 +9,10 @@ classification:
   topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 ::: exercise
@@ -37,4 +41,42 @@ $$
 $$
 
 [Hint: To prove the integral identity, expand $( 1 - z t ) ^ { - \alpha }$ as a power series.]
+:::
+
+::: solution
+Recall
+\[
+F(\alpha,\beta,\gamma;z)
+=\sum_{n=0}^\infty
+\frac{(\alpha)_n(\beta)_n}{(\gamma)_n\,n!}z^n.
+\]
+For $|z|<1$,
+\[
+(1-zt)^{-\alpha}
+=\sum_{n=0}^\infty\frac{(\alpha)_n}{n!}(zt)^n,
+\]
+uniformly for $0\le t\le1$ on compact subsets of the unit disc. Hence termwise integration gives
+\[
+\int_0^1 t^{\beta-1}(1-t)^{\gamma-\beta-1}(1-zt)^{-\alpha}\,dt
+=\sum_{n=0}^\infty\frac{(\alpha)_n z^n}{n!}
+B(\beta+n,\gamma-\beta).
+\]
+Using the beta-gamma identity,
+\[
+B(\beta+n,\gamma-\beta)
+=\frac{\Gamma(\beta+n)\Gamma(\gamma-\beta)}{\Gamma(\gamma+n)}
+=\frac{\Gamma(\beta)\Gamma(\gamma-\beta)}{\Gamma(\gamma)}
+\frac{(\beta)_n}{(\gamma)_n}.
+\]
+Multiplying by the prefactor yields exactly the hypergeometric series, proving the integral formula.
+
+Now let
+\[
+\Omega=\mathbb C\setminus[1,\infty).
+\]
+For $z\in\Omega$ and $0\le t\le1$, the number $1-zt$ never lies on the nonpositive real axis, so the principal branch of $(1-zt)^{-\alpha}$ is holomorphic in $z$. On every compact $K\subset\Omega$ it is uniformly bounded for $0\le t\le1$. Since
+\[
+t^{\beta-1}(1-t)^{\gamma-\beta-1}
+\]
+is integrable, differentiation under the integral is valid locally uniformly on $\Omega$. Thus the integral defines a holomorphic function on $\Omega$ agreeing with the original power series on $|z|<1$. It is therefore the desired analytic continuation to the slit plane.
 :::

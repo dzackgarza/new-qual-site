@@ -42,7 +42,7 @@ order: 710
 
 [[P-PUYFS]]
 
-## 5?
+## Day 2, Problem 10
 [[P-HOUMA]]
 
 ## Sequences and Series
@@ -197,21 +197,21 @@ order: 710
 
 [[P-DFDX4]]
 
-## ?
+## Day 8, Problem 1(a)
 
 [[P-E4WZN]]
 
-## ?
+## Day 8, Problem 1(b)
 [[P-FYGQ6]]
 
-## ?
+## Day 8, Problem 2
 [[P-4E6U3]]
 
 ##  (January 2006 4a) 
 
 [[P-XVHFQ]]
 
-##  ?
+## Day 8, Problem 4
 
 [[P-XCE4G]]
 

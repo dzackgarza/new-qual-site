@@ -11,9 +11,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 3 of the official UCSD Fall 2011 real-analysis qualifying exam.
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -27,48 +34,77 @@ Suppose in addition that there exists $f$ with $f_n \to f$ $\mu$-a.e. Show that 
 (b) Give a simple example to show that if one drops the finite measure assumption but keeps all the other hypotheses above, the conclusion can fail.
 :::
 
-::: {.solution}
-<1>1. Part (a): $L^1$ convergence under uniform integrability on finite measure spaces:
-<2>1. First we establish $f \in L^1(d\mu)$ and uniform integrability of $|f_n - f|$:
-- Since $\mu(X) < \infty$, partition $X$ into a finite number of sets $E_1, \dots, E_k$ each of measure $< \delta_1$ (where $\delta_1$ corresponds to $\epsilon = 1$).
-  Then $\sup_n \int_X |f_n| \, d\mu \le \sum_{j=1}^k \sup_n \int_{E_j} |f_n| \, d\mu \le k < \infty$.
-- By Fatou's Lemma, $\int_X |f| \, d\mu \le \liminf_{n\to\infty} \int_X |f_n| \, d\mu \le k < \infty$, so $f \in L^1(d\mu)$.
-- For any $E \in \mathcal{M}$ with $\mu(E) < \delta$:
+::: solution
+<1>1. The limit inherits the small-set integral bound.
+::: proof
+Fix $\varepsilon>0$. By hypothesis there is $\delta>0$ such that
 \[
-\int_E |f| \, d\mu \le \liminf_{n \to \infty} \int_E |f_n| \, d\mu \le \epsilon.
+\mu(E)<\delta
+\quad\Longrightarrow\quad
+\sup_n\int_E|f_n|\,d\mu<\varepsilon.
 \]
-Thus $\sup_n \int_E |f_n - f| \, d\mu \le \sup_n \int_E |f_n| \, d\mu + \int_E |f| \, d\mu < 2\epsilon$.
-<2>2. Let $\varepsilon > 0$ be given. Choose $\delta > 0$ such that $\mu(E) < \delta \implies \sup_n \int_E |f_n - f| \, d\mu < \varepsilon$.
-Because $\mu(X) < \infty$ and $f_n \to f$ a.e., by Egorov's Theorem there exists a measurable set $E \in \mathcal{M}$ such that $\mu(E) < \delta$ and $f_n \to f$ uniformly on $X \setminus E$.
-<2>3. Decompose the $L^1$ norm of $f_n - f$:
+For such an $E$, Fatou's lemma and $f_n\to f$ almost everywhere give
 \[
-\int_X |f_n - f| \, d\mu = \int_{X \setminus E} |f_n - f| \, d\mu + \int_E |f_n - f| \, d\mu.
+\int_E|f|\,d\mu
+\le \liminf_{n\to\infty}\int_E|f_n|\,d\mu
+\le\varepsilon.
 \]
-<2>4. Estimate each term:
-- On $X \setminus E$, $f_n \to f$ uniformly, so $\lim_{n \to \infty} \int_{X \setminus E} |f_n - f| \, d\mu \le \lim_{n \to \infty} \|f_n - f\|_{L^\infty(X \setminus E)} \mu(X) = 0$.
-- On $E$, since $\mu(E) < \delta$, $\int_E |f_n - f| \, d\mu < \varepsilon$ for all $n$.
-<2>5. Taking the limit superior:
+Consequently
 \[
-\limsup_{n \to \infty} \int_X |f_n - f| \, d\mu \le 0 + \varepsilon = \varepsilon.
+\int_E|f_n-f|\,d\mu
+\le\int_E|f_n|\,d\mu+\int_E|f|\,d\mu
+<2\varepsilon
 \]
-Since $\varepsilon > 0$ was arbitrary, $\lim_{n \to \infty} \|f_n - f\|_{L^1(d\mu)} = 0$.
+for every $n$.
+:::
 
-<1>2. Part (b): Counterexample when $\mu(X) = \infty$:
-<2>1. Let $X = \mathbb{R}$ equipped with the standard Lebesgue measure $m$, so $m(\mathbb{R}) = \infty$.
-Define $f_n(x) = \mathbf{1}_{[n, n+1]}(x)$ for $n \ge 1$.
-<2>2. For any $\varepsilon > 0$, choose $\delta = \varepsilon$.
-For every measurable set $E \subseteq \mathbb{R}$ with $m(E) < \delta$:
+<1>2. Use Egorov's theorem away from a small exceptional set.
+::: proof
+Let $\eta>0$. Apply Step 1 with $\varepsilon=\eta/4$ and obtain the corresponding $\delta>0$. Since $\mu(X)<\infty$ and $f_n\to f$ almost everywhere, Egorov's theorem gives a measurable set $E\subseteq X$ such that
 \[
-\sup_{n} \int_E |f_n| \, dm = \sup_n m(E \cap [n, n+1]) \le m(E) < \varepsilon.
+\mu(E)<\delta
 \]
-Thus $(f_n)$ satisfies the uniform integrability hypothesis.
-<2>3. For every $x \in \mathbb{R}$, $f_n(x) = 0$ for all $n > x$, so $f_n \to 0$ pointwise everywhere as $n \to \infty$.
-However:
-\[
-\|f_n - 0\|_{L^1(\mathbb{R})} = \int_\mathbb{R} \mathbf{1}_{[n, n+1]}(x) \, dx = 1 \quad \text{for all } n \ge 1.
-\]
-Thus $f_n \not\to 0$ in $L^1(\mathbb{R})$.
+and $f_n\to f$ uniformly on $X\setminus E$.
 
-<1>3. Conclusion:
-$f_n \to f$ in $L^1$ on finite measure spaces, and $f_n = \mathbf{1}_{[n, n+1]}$ provides a counterexample on infinite measure spaces. Q.E.D.
+For all sufficiently large $n$,
+\[
+\sup_{X\setminus E}|f_n-f|<\frac{\eta}{2\mu(X)}
+\]
+when $\mu(X)>0$; the case $\mu(X)=0$ is trivial. Hence
+\[
+\int_{X\setminus E}|f_n-f|\,d\mu<\frac\eta2.
+\]
+By Step 1,
+\[
+\int_E|f_n-f|\,d\mu<\frac\eta2.
+\]
+Therefore
+\[
+\|f_n-f\|_1<\eta
+\]
+for all sufficiently large $n$. Thus
+\[
+\boxed{f_n\to f\text{ in }L^1(d\mu).}
+\]
+In particular, $f\in L^1(d\mu)$.
+:::
+
+<1>3. Give a counterexample on an infinite-measure space.
+::: proof
+Take $X=\mathbb R$ with Lebesgue measure and
+\[
+f_n=\mathbf1_{[n,n+1]}.
+\]
+For every $\varepsilon>0$, choose $\delta=\varepsilon$. If $m(E)<\delta$, then
+\[
+\sup_n\int_E|f_n|\,dm
+=\sup_n m(E\cap[n,n+1])
+\le m(E)<\varepsilon.
+\]
+Thus the stated uniform small-set condition holds. Also $f_n(x)\to0$ for every $x\in\mathbb R$. Nevertheless
+\[
+\|f_n\|_1=1
+\]
+for every $n$, so $f_n$ does not converge to $0$ in $L^1$. Hence finiteness of $\mu(X)$ cannot be dropped.
+:::
 :::

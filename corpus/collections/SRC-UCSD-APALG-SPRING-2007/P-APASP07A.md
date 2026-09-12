@@ -10,6 +10,10 @@ classification:
   - Representation Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-10
 ---
 
 ::: problem
@@ -23,4 +27,120 @@ Determine for which $V$ all elements of $H$ act via multiples of the identity ma
 Show directly that in this case the induced representation is reducible.
 
 (c) Determine all irreducible representations of $G$.
+:::
+
+::: solution
+Let
+\[
+\omega=e^{2\pi i/3}.
+\]
+Since $H\cong C_3\times C_3$ is finite abelian, every irreducible complex representation of $H$ is one-dimensional. Thus the irreducibles are
+\[
+\chi_{r,s}:H\longrightarrow \mathbb C^\times,
+\qquad
+\chi_{r,s}(a)=\omega^r,
+\qquad
+\chi_{r,s}(b)=\omega^s,
+\]
+for $(r,s)\in(\mathbb Z/3)^2$. These nine characters are pairwise distinct and exhaust the irreducible representations of $H$.
+
+Now fix $V=\mathbb C v$ affording $\chi_{r,s}$, and let
+\[
+W=\operatorname{Ind}_H^G V
+=\mathbb C[G]\otimes_{\mathbb C[H]}V.
+\]
+Because $G/H$ has representatives $1,c,c^2$, a basis is
+\[
+e_0=1\otimes v,
+\qquad
+e_1=c\otimes v,
+\qquad
+e_2=c^2\otimes v.
+\]
+Write $\varphi(h)=chc^{-1}$. The defining relation gives
+\[
+\varphi(a)=ab,
+\qquad
+\varphi(b)=b,
+\]
+and therefore
+\[
+\varphi^{-1}(a)=ab^{-1},
+\qquad
+\varphi^{-2}(a)=ab.
+\]
+For $h\in H$,
+\[
+h(c^j\otimes v)
+=c^j\otimes(c^{-j}hc^j)v,
+\]
+so in the basis $(e_0,e_1,e_2)$ we obtain
+\[
+\rho_W(a)
+=
+\begin{pmatrix}
+\omega^r&0&0\\
+0&\omega^{r-s}&0\\
+0&0&\omega^{r+s}
+\end{pmatrix},
+\qquad
+\rho_W(b)=\omega^s I_3,
+\]
+and
+\[
+\rho_W(c)
+=
+\begin{pmatrix}
+0&0&1\\
+1&0&0\\
+0&1&0
+\end{pmatrix}.
+\]
+
+Every element of $H$ acts by a scalar on $W$ if and only if $a$ does, since $b$ already acts by the scalar $\omega^s$. The three diagonal entries of $\rho_W(a)$ are equal exactly when
+\[
+r=r-s=r+s\pmod 3,
+\]
+i.e. exactly when $s=0$.
+
+If $s=0$, then both $a$ and $b$ act by scalars and $c$ has order $3$. Over $\mathbb C$, the operator $\rho_W(c)$ is diagonalizable with eigenvalues $1,\omega,\omega^2$. Each of its one-dimensional eigenspaces is stable under $a$ and $b$ as well, hence is a $G$-submodule. Thus $W$ is reducible in precisely these scalar-on-$H$ cases.
+
+We now classify the irreducible representations of $G$.
+
+First, there are nine one-dimensional representations. Indeed, in any one-dimensional representation the relation
+\[
+cac^{-1}=ab
+\]
+forces $b$ to act trivially. Conversely, for arbitrary $r,t\in\mathbb Z/3$,
+\[
+\psi_{r,t}(a)=\omega^r,
+\qquad
+\psi_{r,t}(b)=1,
+\qquad
+\psi_{r,t}(c)=\omega^t
+\]
+defines a one-dimensional representation. These nine are pairwise nonisomorphic.
+
+Next, for $s=1,2$, let
+\[
+W_s=\operatorname{Ind}_H^G\chi_{0,s}.
+\]
+In $W_s$, the matrix of $a$ is
+\[
+\operatorname{diag}(1,\omega^{-s},\omega^s),
+\]
+whose three eigenvalues are distinct. If $0\ne U\subseteq W_s$ is $G$-stable, then it is stable under $a$. Since $a$ has three distinct eigenvalues, the spectral projections onto its eigenspaces are polynomials in $a$, so $U$ is spanned by some subset of $e_0,e_1,e_2$. But $c$ cyclically permutes these three basis vectors. Hence a nonzero $c$-stable such subspace must contain all three. Therefore $U=W_s$, and $W_s$ is irreducible.
+
+The two representations $W_1$ and $W_2$ are not isomorphic, because the central element $b$ acts on them by the different scalars $\omega$ and $\omega^2$.
+
+Thus we have found nine irreducibles of dimension $1$ and two irreducibles of dimension $3$. Their squared dimensions sum to
+\[
+9\cdot1^2+2\cdot3^2=27=|G|.
+\]
+For a finite group, the sum of the squares of the dimensions of the pairwise inequivalent irreducible complex representations equals the group order. Hence there can be no further irreducibles.
+
+Therefore the complete list consists of
+\[
+\boxed{9\text{ one-dimensional representations and }2\text{ three-dimensional representations}.}
+\]
 :::

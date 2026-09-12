@@ -12,34 +12,81 @@ classification:
   - Smith Normal Form
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-**Definition:** We say $A \sim B$ in $M_n(R)$ $\iff$ there exists an invertible $P$ such that $B=PAP\inv$.
+Prove that each of the following is an equivalence relation.
 
-- Reflexive, $A\sim A$:
+1. **Similarity** on $M_n(R)$: $A\sim B$ if there exists $P\in\operatorname{GL}_n(R)$ such that
+\[
+B=PAP^{-1}.
+\]
 
-  Take $P = I_n$ the identity matrix.
+2. **Matrix equivalence** on $M_{m\times n}(R)$: $A\approx B$ if there exist
+\[
+P\in\operatorname{GL}_m(R),
+\qquad
+Q\in\operatorname{GL}_n(R)
+\]
+such that
+\[
+B=PAQ.
+\]
+:::
 
-- Symmetric, $A\sim B \implies B \sim A$:
 
-  $B = PAP\inv \implies BP = PA \implies P\inv B P = A$, so we can take $Q = P\inv$ to yield $A = Q B Q\inv$.
+::: {.solution}
+<1>1. Similarity is reflexive, symmetric, and transitive.
+::: {.proof}
+Reflexivity: $A=I_nAI_n^{-1}$.
 
-- Transitive, $A\sim B \& B\sim C \implies A \sim C$:
+Symmetry: if $B=PAP^{-1}$, then
+\[
+A=P^{-1}BP.
+\]
 
-  If $B = PAP\inv, C = QBQ\inv$, then $C = Q(PAP\inv)Q\inv = (QP) A (QP)\inv$, so take $L = QP$ to yield $C = LAL\inv$.
+Transitivity: if
+\[
+B=PAP^{-1},
+\qquad
+C=QBQ^{-1},
+\]
+then
+\[
+C=(QP)A(QP)^{-1}.
+\]
+Thus similarity is an equivalence relation.
+:::
 
-**Definition:** We say $A \sim B$ in $M(n\times n, R)$ $\iff$ $B = PAQ$ with $P \in \GL(n, R), Q \in \GL(m, R)$.
+<1>2. Matrix equivalence is reflexive, symmetric, and transitive.
+::: {.proof}
+Reflexivity: for $A\in M_{m\times n}(R)$,
+\[
+A=I_m A I_n.
+\]
 
-- Reflexive, $A\sim A$:
+Symmetry: if $B=PAQ$ with $P\in\operatorname{GL}_m(R)$ and $Q\in\operatorname{GL}_n(R)$, then
+\[
+A=P^{-1}BQ^{-1}.
+\]
 
-  Take $P = I_{m, n}$ the matrix with $1$s on the diagonal and zeros elsewhere, and $Q = P^t$.
-
-- Symmetric, $A\sim B \implies B \sim A$:
-
-  $B = PAQ \implies BQ\inv = PA \implies P\inv B Q\inv = A$, so we can take $S = P\inv, T = Q\inv$ to yield $A = Q B T$.
-
-- Transitive, $A\sim B \& B\sim C \implies A \sim C$:
-
-  If $B = PAQ, C = RBS$, then $C = R(PAQ)S = (RP) A (QS)$, so take $L = RP, M  = QS$ to yield $C = LAM$.
+Transitivity: if
+\[
+B=PAQ,
+\qquad
+C=RBS
+\]
+with $R\in\operatorname{GL}_m(R)$ and $S\in\operatorname{GL}_n(R)$, then
+\[
+C=(RP)A(QS),
+\]
+and $RP$, $QS$ are invertible. Thus matrix equivalence is an equivalence relation.
+:::
 :::

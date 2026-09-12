@@ -2,6 +2,24 @@
 
 Contributions can improve mathematical content, source records, study guides, or the website.
 
+## Named policies
+
+Use these stable identifiers in contributions and review. [AGENTS.md](AGENTS.md)
+retains the detailed authoring rules; [REVIEW_POLICY.md](REVIEW_POLICY.md) retains
+the existing named advisory defect patterns.
+
+| ID | Name | Required action |
+| --- | --- | --- |
+| `QUAL-01` | Source-faithful mathematics | Read the complete card and relevant source before changing a statement, title, classification, relation, or proof. Preserve hypotheses and every requested part. |
+| `QUAL-02` | Semantic authorship | Decide mathematical meaning by reading. Measurements and matching names identify candidates; they do not decide equivalence, correctness, or deletion. |
+| `QUAL-03` | One card, one proof owner | Author and review one card at a time. Solutions and hints belong in their problem card; commit the reviewed card before continuing. |
+| `QUAL-04` | Dependency-directed work | Use [the TODO DAG](TODO.md#execution-dag). Give each concrete task a stable ID, immediate prerequisites and an observable result. Preserve the scope of unfinished work and reject cycles or unresolved prerequisite IDs. |
+| `QUAL-05` | Capture issues when encountered | Record mathematical errors, source ambiguities, and actual papercuts in [COMPLAINTS.md](COMPLAINTS.md), including independent discoveries. Supply evidence, affected card or owner, expected result, uncertainty, and a repair link. Extend an existing entry for the same issue. Logging is not repair. |
+| `QUAL-06` | Match verification to the artifact | Read mathematical proofs for correctness; a parser cannot certify them. For renderer or styling changes, render and inspect the actual affected pages. Use existing just recipes and the prose-only commit exemption where applicable. |
+| `QUAL-07` | Preserve concurrent authorship | Reread target files before editing, preserve others' changes and staged files, and commit only the intended paths. Keep complaint and TODO edits confined to the selected entry. |
+| `QUAL-08` | Keep process off public cards | Store issue capture here and in COMPLAINTS/TODO, not in rendered remarks. Mathematical errata may explain a false statement and its corrected hypotheses on the card. |
+| `QUAL-09` | One checkout, one branch | Work directly on `main` in the single clone. Do not create worktrees or branches: streams author disjoint cards, so there is nothing to isolate. A commit that sweeps in a sibling's edit is a wrong message, not lost work — `git commit --amend`, or commit an explicit pathspec. Before retiring a worktree left over from the old rule, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
+
 ## Requirements
 
 - Python 3.14
@@ -19,6 +37,18 @@ git clone https://github.com/dzackgarza/new-qual-site.git
 cd new-qual-site
 uv sync --group dev
 ```
+
+## Working in the clone
+
+Every stream works directly on `main` in this one checkout, using the environment
+`uv sync --group dev` created above. Do not create worktrees and do not create
+branches: streams author disjoint cards, so there is nothing for a branch to
+isolate. If a commit sweeps in a sibling's concurrent edit, that is a wrong commit
+message rather than lost work — `git commit --amend`, or commit the paths you meant
+with an explicit pathspec as `QUAL-07` already requires.
+
+Worktrees left over from the previous rule are retired under `QUAL-09`; see
+[AGENTS.md](AGENTS.md#one-checkout-one-branch) for what each reading establishes.
 
 ## Repository structure
 

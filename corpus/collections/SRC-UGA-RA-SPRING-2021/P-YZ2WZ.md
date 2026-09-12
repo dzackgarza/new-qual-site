@@ -15,6 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 6 of the official UGA January 2021 Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed the measurable-zero-set construction and Tonelli partial-integral argument; the proof correctly realizes E as a positive superlevel set of a measurable section-measure function.
 ---
 
 :::{.warnings}

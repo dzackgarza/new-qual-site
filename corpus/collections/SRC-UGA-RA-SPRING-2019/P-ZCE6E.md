@@ -13,128 +13,106 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against the UGA Spring 2019 real-analysis qualifying exam recorded by SRC-UGA-RA-SPRING-2019.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-Let $f$ be a non-negative function on $\RR^n$ and $\mathcal A = \{(x, t) ∈ \RR^n \times \RR : 0 ≤ t ≤ f (x)\}$.
 
-Prove the validity of the following two statements:
-
-a. $f$ is a Lebesgue measurable function on $\RR^n \iff  \mathcal A$ is a Lebesgue measurable subset of $\RR^{n+1}$
-
-b. If $f$ is a Lebesgue measurable function on $\RR^n$, then
+::: problem
+Let $f:\mathbb R^n\to[0,\infty]$ and define
 \[
-m(\mathcal{A})=\int _{\RR^{n}} f(x) d x=\int_{0}^{\infty} m\left(\left\{x \in \RR^{n}: f(x) \geq t\right\}\right) dt
+\mathcal A:=\{(x,t)\in\mathbb R^n\times\mathbb R:0\le t\le f(x)\}.
 \]
 
-:::{.concept}
-\envlist
-- See Stein and Shakarchi p.82 corollary 3.3.
-- Tonelli
-- Important trick! $\ts{(x, t) \st 0\leq t \leq f(x)} = \ts{ f(x) \geq t} \intersect \ts{ t\geq 0 }$
-:::
+1. Prove that $f$ is Lebesgue measurable if and only if $\mathcal A$ is Lebesgue measurable in $\mathbb R^{n+1}$.
 
-:::{.solution}
-\envlist
-
-
-:::{.proof title="a, $\implies$"}
-$\implies$:
-
-- Suppose $f:\RR^n\to \RR$ is a measurable function.
-- Rewrite $A$:
+2. If $f$ is measurable, prove
 \[
-A 
-&= \ts{ (x, t) \in \RR^d \cross \RR \st 0\leq t \leq f(x) } \\
-&= \ts{ (x, t) \in \RR^d \cross \RR \st 0 \leq t < \infty } 
-\intersect \ts{ (x, t) \in \RR^d\cross \RR \st t\leq f(x) } \\
-&= \qty{ \RR^d \cross [0, \infty) } 
-\intersect \ts{ (x, t) \in \RR^d\cross \RR \st f(x) -t \geq 0  } \\
-&\da \qty{ \RR^d \cross [0, \infty) } \intersect H\inv\qty{[0, \infty)}
-,\]
-where we define
-\[
-H: \RR^d \cross \RR &\to \RR \\
-(x, t) &\mapsto f(x) - t
-.\]
-  - Note: $H$ is measurable because it is the difference of two measurable functions, as shown below.
-
-- If we can show both sets are measurable, we're done, since $\sigma\dash$algebras are closed under countable intersections.
-- The first set is measurable since it is a Borel set in $\RR^{d+1}$.
-- For the same reason, it suffices to show $H$ is a measurable function.
-- Define cylinder functions
-\[
-F: \RR^d \cross \RR &\to \RR \\
-(x, t) &\mapsto f(x)
+m_{n+1}(\mathcal A)
+=\int_{\mathbb R^n}f(x)\,dx
+=\int_0^\infty m_n(\{x:f(x)\ge t\})\,dt.
 \]
-and
+:::
+
+::: solution
+<1>1. If $f$ is measurable, then $\mathcal A$ is measurable.
+::: proof
+Define
 \[
-G: \RR^d \cross \RR &\to \RR \\
-(x, t) &\mapsto t
+H(x,t):=f(x)-t.
 \]
-  - $F$ is a cylinder of $f$, and since $f$ is measurable by assumption, $F$ is measurable.
-  - $G$ is a cylinder on the identity for $\RR$, which is measurable, so $G$ is measurable.
-
-
-- Define 
+The map $(x,t)\mapsto f(x)$ is measurable, as is $(x,t)\mapsto t$, so $H$ is measurable. Therefore
 \[
-H: \RR^d &\to \RR \\
-(x, t) &\mapsto F(x, t) - G(x, t) \da f(x) - t
-,\]
-  which are linear combinations of measurable functions and thus measurable.
-
-
+\mathcal A
+=(\mathbb R^n\times[0,\infty))\cap H^{-1}([0,\infty])
+\]
+is Lebesgue measurable.
 :::
 
-:::{.proof title="a, $\impliedby$"}
-$\impliedby$:
-
-- Suppose $\mca$ is a measurable set.
-- A corollary of Tonelli applied to $\chi_X$: if $E$ is measurable, then for a.e. $t$ the following slice is measurable:
+<1>2. If $\mathcal A$ is measurable, then $f$ is measurable.
+::: proof
+For every fixed $x\in\mathbb R^n$, the vertical section is
 \[
-\mca_t \da \ts{ x \in \RR^d \st (x,t) \in \mca  }
-&= \ts{x\in \RR^d \st f(x) \geq t \geq 0} \\
-&= f\inv\qty{[t, \infty)}
-.\]
-  - But maybe this isn't enough, because we need $f\inv\qty{[\alpha, \infty)}$ for *all* $\alpha$
-- But the other slice is also measurable for a.e. $x$:
+\mathcal A_x
+:=\{t:(x,t)\in\mathcal A\}
+=[0,f(x)].
+\]
+Hence
 \[
-\mca_x 
-&\da \ts{ t\in \RR \st (x, t) \in \mca } \\
-&= \ts{ t\in \RR \st 0 \leq t \leq f(x) } \\
-&= \ts{ t\in \RR \st t\in [0, f(x)]  } \\
-&= [0, f(x)]
-.\]
-
-- Moreover the function $x\mapsto m(\mca_x)$ is a measurable function of $x$
-- Now note $m(\mca_x) = f(x) - 0 = f(x)$, so $f$ must be measurable.
-
+f(x)=m_1(\mathcal A_x)
+=\int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt.
+\]
+Since $\mathbf1_{\mathcal A}$ is a nonnegative measurable function on $\mathbb R^{n+1}$, Tonelli's theorem implies that the function
+\[
+x\longmapsto \int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt
+\]
+is measurable. Thus $f$ is measurable.
 :::
 
-:::{.proof title="of b"}
-\envlist
-- Writing down what the slices are
+<1>3. Compute the measure of the subgraph.
+::: proof
+Assume $f$ is measurable. By Step 1, $\mathcal A$ is measurable, so Tonelli gives
 \[
-\mathcal{A} &= \theset{(x, t) \in \RR^n\cross \RR \suchthat 0 \leq t \leq f(x)} 
-\\
-\mathcal{A}_t &= \theset{x
-\in \RR^n \suchthat t\leq f(x) }
-.\]
-
-- Then
-\[
-\int_{\RR^n} f(x) ~dx 
-&= \int_{\RR^n} \int_0^{f(x)} 1 ~dt~dx \\
-&= \int_{\RR^n} \int_{0}^\infty \chi_\mathcal{A} ~dt~dx \\
-&\overset{F.T.}= \int_{0}^\infty \int_{\RR^n} \chi_\mathcal{A} ~dx~dt\\
-&= \int_0^\infty m(\mathcal{A}_t) ~dt
-,\]
-  where we just use that $\int \int \chi_\mathcal{A} = m(\mathcal{A})$
-
-- By Tonelli, all of these integrals are equal. 
-  - This is justified because $f$ was assumed measurable on $\RR^n$, thus by (a) $\mathcal{A}$ is a measurable set and thus $\chi_A$ is a measurable function on $\RR^n\cross \RR$.
-
-
+\begin{aligned}
+m_{n+1}(\mathcal A)
+&=\int_{\mathbb R^{n+1}}\mathbf1_{\mathcal A}(x,t)\,d(x,t)\\
+&=\int_{\mathbb R^n}\left(\int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt\right)dx\\
+&=\int_{\mathbb R^n}f(x)\,dx.
+\end{aligned}
+\]
 :::
 
+<1>4. Derive the layer-cake formula.
+::: proof
+For $t\ge0$, the horizontal section is
+\[
+\mathcal A^t
+:=\{x:(x,t)\in\mathcal A\}
+=\{x:f(x)\ge t\}.
+\]
+A second application of Tonelli gives
+\[
+\begin{aligned}
+m_{n+1}(\mathcal A)
+&=\int_0^\infty\left(\int_{\mathbb R^n}\mathbf1_{\mathcal A}(x,t)\,dx\right)dt\\
+&=\int_0^\infty m_n(\{x:f(x)\ge t\})\,dt.
+\end{aligned}
+\]
+Combining with Step 3 yields
+\[
+\boxed{
+m_{n+1}(\mathcal A)
+=\int_{\mathbb R^n}f(x)\,dx
+=\int_0^\infty m_n(\{f\ge t\})\,dt.}
+\]
 :::
-
+:::

@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
@@ -33,41 +36,60 @@ The equivalence above repairs it; the neighbouring exercises suggest the intende
 :::
 
 ::: solution
-**Goal:** Prove the equivalence of compactness, limit point compactness, and sequential compactness for any metrizable space $(X, d)$.
+Fix a metric $d$ inducing the topology of $X$.
 
-<1>1. Compact $\implies$ Limit point compact: *Proof:* <2>1. Let $X$ be compact, and let $A \subseteq X$ be an infinite subset.
-<2>2. Suppose for contradiction that $A$ has no limit point in $X$.
-<2>3. Then for every $x \in X$, there exists an open neighborhood $U_x$ such that $U_x \cap A \subseteq \{x\}$.
-<2>4. The family $\{U_x\}_{x \in X}$ is an open cover of $X$.
-Since $X$ is compact, there exists a finite subcover $\{U_{x_1}, \dots, U_{x_k}\}$.
-<2>5. Then $A = A \cap \bigcup_{i=1}^k U_{x_i} = \bigcup_{i=1}^k (A \cap U_{x_i}) \subseteq \{x_1, \dots, x_k\}$.
-<2>6. This implies $|A| \le k$, contradicting the assumption that $A$ is infinite.
-Hence $A$ has a limit point.
+<1>1. Compactness implies limit-point compactness.
+::: proof
+Let $A\subseteq X$ be infinite. If $A$ had no limit point, then for each $x\in X$ there would be an open neighborhood $U_x$ with
+$$
+U_x\cap A\subseteq\{x\}.
+$$
+A finite subcover $U_{x_1},\dots,U_{x_r}$ would then give
+$$
+A\subseteq\{x_1,\dots,x_r\},
+$$
+a contradiction.
+:::
 
-<1>2. Limit point compact $\implies$ Sequentially compact: *Proof:* <2>1. Let $(x_n)_{n=1}^\infty$ be a sequence in $X$.
-<2>2. Case 1 (finite range): If $R = \{x_n : n \in \mathbb{Z}_+\}$ is finite, by the Pigeonhole Principle there exists a point $x \in R$ and a subsequence $(x_{n_k})$ with $x_{n_k} = x$ for all $k$, which converges to $x$.
-<2>3. Case 2 (infinite range): If $R$ is infinite, limit point compactness implies $R$ has a limit point $x \in X$.
-<2>4. In a metric space, every open ball $B(x, \varepsilon)$ contains infinitely many points of $R$.
-<2>5. We inductively construct a subsequence: choose $n_1$ such that $x_{n_1} \in B(x, 1) \setminus \{x\}$.
-Having chosen $n_1 < \dots < n_{k-1}$, choose $n_k > n_{k-1}$ such that $x_{n_k} \in B(x, 1/k)$.
-<2>6. Then $d(x_{n_k}, x) < 1/k \to 0$, so $(x_{n_k}) \to x$, proving sequential compactness.
+<1>2. Limit-point compactness implies sequential compactness.
+::: proof
+Let $(x_n)$ be a sequence. If its range is finite, one value occurs infinitely often and gives a constant subsequence. If its range is infinite, let $x$ be a limit point of the range.
 
-<1>3. Sequentially compact $\implies$ Compact: *Proof:* <2>1. **Lebesgue Number Lemma:** Every open cover $\mathcal{U}$ of a sequentially compact metric space has a Lebesgue number $\delta > 0$.
-- If not, for each $n \in \mathbb{Z}_+$ there exists a set $C_n \subset X$ with $\operatorname{diam}(C_n) < 1/n$ not contained in any $U \in \mathcal{U}$.
-- Pick $y_n \in C_n$.
-By sequential compactness, a subsequence $(y_{n_k})$ converges to some $y_0 \in X$.
-- Since $\mathcal{U}$ covers $X$, $y_0 \in U_0$ for some $U_0 \in \mathcal{U}$.
-Choose $\varepsilon > 0$ such that $B(y_0, \varepsilon) \subseteq U_0$.
-- For large $k$, $d(y_{n_k}, y_0) < \varepsilon/2$ and $\operatorname{diam}(C_{n_k}) < \varepsilon/2$, which implies $C_{n_k} \subseteq B(y_0, \varepsilon) \subseteq U_0$, contradiction.
-<2>2. **Total Boundedness:** $X$ is totally bounded.
-- If for some $\varepsilon > 0$, $X$ cannot be covered by finitely many $\varepsilon$-balls, inductively pick $z_1 \in X$ and $z_{n+1} \notin \bigcup_{i=1}^n B(z_i, \varepsilon)$.
-- Then $d(z_i, z_j) \ge \varepsilon$ for all $i \neq j$, so $(z_n)$ can have no convergent subsequence, contradicting sequential compactness.
-<2>3. **Finite subcover extraction:** Let $\mathcal{U}$ be an open cover of $X$.
-- Let $\delta > 0$ be a Lebesgue number for $\mathcal{U}$.
-- By total boundedness, cover $X$ by finitely many balls $B(p_1, \delta/2), \dots, B(p_m, \delta/2)$.
-- Since $\operatorname{diam}(B(p_j, \delta/2)) \le \delta$, each ball is contained in some $U_j \in \mathcal{U}$.
-- Then $\{U_1, \dots, U_m\}$ is a finite subcover of $\mathcal{U}$, proving $X$ is compact.
+Every ball about $x$ contains infinitely many terms of the sequence: otherwise a smaller ball would meet the range in only finitely many points, contradicting that $x$ is a limit point. Inductively choose
+$$
+n_1<n_2<\cdots,
+\qquad d(x_{n_k},x)<1/k.
+$$
+Then $x_{n_k}\to x$.
+:::
 
-<1>4. Conclusion: The three compactness notions are fully equivalent for metrizable spaces.
-Q.E.D.
+<1>3. Sequential compactness implies total boundedness.
+::: proof
+If some $\varepsilon>0$ admitted no finite cover by $\varepsilon$-balls, choose inductively $x_{n+1}$ outside
+$$
+\bigcup_{j=1}^n B(x_j,\varepsilon).
+$$
+Then $d(x_i,x_j)\ge\varepsilon$ for $i\ne j$, so the sequence has no convergent subsequence, a contradiction.
+:::
+
+<1>4. Sequential compactness implies the Lebesgue-number property: every open cover $\mathcal U$ has some $\delta>0$ such that every ball $B(x,\delta)$ lies in a member of $\mathcal U$.
+::: proof
+If not, for each $n$ choose $x_n$ such that $B(x_n,1/n)$ is contained in no member of $\mathcal U$. Pass to a subsequence $x_{n_k}\to x$. Choose $U\in\mathcal U$ and $r>0$ with $B(x,r)\subseteq U$. For large $k$,
+$$
+d(x_{n_k},x)<r/2,
+\qquad 1/n_k<r/2,
+$$
+so $B(x_{n_k},1/n_k)\subseteq B(x,r)\subseteq U$, a contradiction.
+:::
+
+<1>5. Sequential compactness implies compactness.
+::: proof
+Let $\mathcal U$ be an open cover and choose a Lebesgue number $\delta>0$. By total boundedness, finitely many balls
+$$
+B(x_1,\delta),\dots,B(x_m,\delta)
+$$
+cover $X$. Each such ball lies in some member of $\mathcal U$, so those finitely many members form a finite subcover.
+:::
+
+<1>6. Hence compactness, limit-point compactness, and sequential compactness are equivalent for metrizable spaces.
 :::

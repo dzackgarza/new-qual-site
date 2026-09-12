@@ -16,6 +16,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 5 of the preserved UNL May 31, 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Verified the compactness argument in part (a) and the uniform Holder modulus in part (b).
 ---
 
 ::: {.problem}

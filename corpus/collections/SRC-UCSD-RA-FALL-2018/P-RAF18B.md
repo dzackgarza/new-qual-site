@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 2 of the official UCSD Fall 2018 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing Bessel/weak-to-strong proof reviewed as correct; normalized legacy solution/proof block syntax.
 ---
 
 ::: problem
@@ -28,53 +36,53 @@ Let $H$ be a Hilbert space and $\{\xi_n\}_n$ be a sequence of vectors in $H$ suc
 Recall: $\xi_n$ converges weakly to $\xi$ iff $\langle \xi_n, \eta \rangle \to \langle \xi, \eta \rangle$ for every $\eta \in H$.
 :::
 
-::: {.solution}
+::: solution
 **Part 1.**
 
 <1>1. For any $\eta \in H$, $\sum_{n} |\langle \xi_n, \eta \rangle|^2 \le \|\eta\|^2 < \infty$.
-::: {.proof}
+::: proof
 Bessel's inequality for the orthonormal set $\{\xi_n\}$.
 :::
 
 <1>2. Hence $\langle \xi_n, \eta \rangle \to 0$ for every $\eta \in H$.
-::: {.proof}
+::: proof
 the terms of a convergent series tend to $0$.
 :::
 
 <1>3. Therefore $\xi_n \rightharpoonup 0$ weakly.
-::: {.proof}
+::: proof
 <1>2 and the definition of weak convergence.
 :::
 
 **Part 2.**
 
 <1>1. $\|\xi_n - \xi\|^2 = \|\xi_n\|^2 - 2\operatorname{Re}\langle \xi_n, \xi \rangle + \|\xi\|^2$.
-::: {.proof}
+::: proof
 expand the norm squared.
 :::
 
 <1>2. $\|\xi_n\|^2 = 1$ and $\|\xi\|^2 = 1$.
-::: {.proof}
+::: proof
 hypothesis.
 :::
 
 <1>3. $\langle \xi_n, \xi \rangle \to \langle \xi, \xi \rangle = \|\xi\|^2 = 1$.
-::: {.proof}
+::: proof
 weak convergence applied to $\eta = \xi$.
 :::
 
 <1>4. Hence $\|\xi_n - \xi\|^2 = 1 - 2\operatorname{Re}\langle \xi_n, \xi \rangle + 1 \to 1 - 2 + 1 = 0$.
-::: {.proof}
+::: proof
 <1>1–<1>3.
 :::
 
 <1>5. Therefore $\|\xi_n - \xi\| \to 0$.
-::: {.proof}
+::: proof
 <1>4.
 :::
 
 <1>6. Q.E.D.
-::: {.proof}
+::: proof
 <1>3 (part 1) and <1>5 (part 2).
 :::
 :::

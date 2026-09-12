@@ -12,18 +12,40 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the second mislabeled inverse-trigonometric integral and made the branch domain explicit.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int x\sec ^{-1} (x) ~dx = \color {blue} {\frac {1}{2} (x^2 \sec ^{-1} (x) - \sqrt {x^2 - 1})}​$
+For $x>1$, evaluate
+\[
+\int x\,\sec^{-1}(x)\,dx
+\qquad\text{and}\qquad
+\int x\,\csc^{-1}(x)\,dx.
+\]
+:::
 
-- **Solution:** $u = \sec ^{-1} (x)$, $v = \frac {1}{2} x^2$, $du = \frac {1}{x \sqrt {x^2-1}} ~dx$, $dv = x ~dx$
-
-- **Solution:** $\frac {1}{2} x^2 \sec ^{-1} (x) - \int \frac {1}{x \sqrt {x^2-1}} \cdot \frac {1}{2} x^2 ~dx​$
-
-2. $\displaystyle \int x\sec ^{-1} (x) ~dx = \color {blue} {\frac {1}{2} (x^2 \csc ^{-1} (x) + \sqrt {x^2 - 1})}​$
-
-- **Solution:** $u = \csc ^{-1} (x)​$, $v = \frac {1}{2} x^2​$, $du = - \frac {1}{x \sqrt {x^2-1}} ~dx​$, $dv = x ~dx​$
-
-- **Solution:** $\frac {1}{2} x^2 \csc ^{-1} (x) - \int - \frac {1}{x \sqrt {x^2-1}} \cdot \frac {1}{2} x^2 ~dx​$
+::: solution
+For $x>1$,
+\[
+\frac{d}{dx}\sec^{-1}x=\frac1{x\sqrt{x^2-1}},
+\qquad
+\frac{d}{dx}\csc^{-1}x=-\frac1{x\sqrt{x^2-1}}.
+\]
+Integration by parts gives
+\[
+\boxed{\int x\sec^{-1}x\,dx
+=\frac12\left(x^2\sec^{-1}x-\sqrt{x^2-1}\right)+C,}
+\]
+and
+\[
+\boxed{\int x\csc^{-1}x\,dx
+=\frac12\left(x^2\csc^{-1}x+\sqrt{x^2-1}\right)+C.}
+\]
 :::

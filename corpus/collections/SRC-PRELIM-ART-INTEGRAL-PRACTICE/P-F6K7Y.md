@@ -13,6 +13,9 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-04
@@ -20,43 +23,59 @@ audit:
 ---
 
 ::: problem
-1. $\displaystyle \int \sec^3(x) ~dx = \color {blue} {\frac {1}{2} (\ln (\sec (x) + \tan (x)) + \tan (x) \sec (x))} = \color {blue} {\frac {1}{2} (\ln(\frac {\cos(\frac {x}{2}) +\sin(\frac {x}{2})}{\cos(\frac {x}{2}) -\sin(\frac {x}{2})}) + \tan (x) \sec (x))}$
+Evaluate
+\[
+\int\sec^3x\,dx,\quad \int\sec^4x\,dx,\quad
+\int\tan^2x\,dx,\quad \int\tan^3x\,dx,
+\]
+\[
+\int\tan^4x\,dx,\quad
+\int\sec^3x\tan^3x\,dx,
+\quad
+\int(\tan^4x+\tan^2x)\,dx,
+\]
+and
+\[
+\int\frac{2\sin^2x}{\cos^3x}\,dx.
+\]
+:::
 
-- **Solution:** $\frac {3 - 2}{3 - 1} \int \sec ^{3 - 2} (x) ~dx + \frac {1}{3 - 1} \tan (x) \sec ^{3 - 2} (x) = \frac {1}{2}  \int \sec (x) ~dx + \frac {1}{2} \tan (x) \sec (x)$
-
-2. $\displaystyle \int \sec^4(x) ~dx = \color {blue} {\frac {2}{3} \tan (x) + \frac {1}{3} \tan (x) \sec ^2 (x)} = \color {blue} {\frac {1}{3} \tan ^3 (x) + \tan (x)}$
-
-- **Solution:** $\frac {4 - 2}{4 - 1} \int \sec ^{4 - 2} (x) ~dx + \frac {1}{4 - 1} \tan (x) \sec ^{4 - 2} (x) = \frac {2}{3} \int \sec ^2 (x) ~dx + \frac {1}{3} \tan (x) \sec ^2 (x)$
-
-  1. $\displaystyle \int \frac {1}{\cos^4(x)} ~dx = \color {blue} {\frac {2}{3} \tan (x) + \frac {1}{3} \tan (x) \sec ^2 (x)} = \color {blue} {\frac {1}{3} \tan ^3 (x) + \tan (x)}$
-
-  - **Solution:** $\frac {1}{\cos^4(x)} = \sec ^4 (x)$
-
-3. $\displaystyle \int \tan ^2 (x) ~dx = \color {blue} {\tan (x) - x}$
-
-- **Solution:** $\tan ^2 (x) = \sec ^2 (x) - 1$
-
-4. $\displaystyle \int \tan ^3 (x) ~dx = \color {blue} {\frac {1}{2} \tan ^2 (x) + \ln (\cos (x))} = \color {blue} {\frac {1}{2} \sec^2 (x) - \ln (\sec (x))}$
-
-- **Solution:** $\tan ^3 (x) = (\sec ^2 (x) - 1) \tan (x)$
-
-- **Another Solution:** $u = \sec (x)$, $du = \sec (x) \tan (x) ~dx$
-
-- **Another Solution:** $\tan ^3 (x) ~dx = (\sec ^2 (x) - 1) \tan (x) ~dx = \frac {u^2 - 1}{u} ~du = (u - \frac {1}{u}) ~du$
-
-5. $\displaystyle \int \tan ^4 (x) ~dx = \color {blue} {\frac {1}{3} \tan ^3 (x) - \tan (x) + x}$
-
-- **Solution:** $\tan ^4 (x) = (\sec ^2 (x) - 1) \tan ^2 (x) = \sec ^2 (x) \tan ^2 (x) - (\sec ^2 (x) - 1)$
-
-6. $\displaystyle \int \sec^3(x)\tan^3(x) ~dx = \color {blue} {-\frac {1}{3} \sec ^3(x) + \frac {1}{5} \sec ^5(x)}$
-
-- **Solution:** $\sec^3(x)\tan^3(x) ~dx =  \sec ^2 (x) (\sec ^2 (x) - 1) \sec (x) \tan (x) ~dx = \sec ^4 (x) - \sec ^2 (x)) ~d \sec (x)$
-
-7. $\displaystyle \int \tan^4(x) + \tan^2(x) ~dx = \color {blue} {\frac {1}{3} \tan^3(x)}$
-
-- **Solution:** $\tan^4(x) + \tan^2(x) ~dx = \tan ^2 (x) (\tan^2(x) + 1) ~dx = \tan ^2 (x) \sec ^2 (x) ~dx = \tan ^2 (x) ~d \tan (x)$
-
-8. $\displaystyle \int \frac {2\sin^2 (x)}{\cos^3 (x)} ~dx = \color {blue} {- \ln\left|\tan x + \sec x\right| + \tan x\sec x} = \color {blue} {\ln\left|\sec x - \tan x\right| + \tan x\sec x} = \tan x\sec x - \frac {1}{2}\left(\ln|1+\sin x| - \ln|1-\sin x|\right)$
-
-- **Solution:** $\frac {2\sin^2 (x)}{\cos^3 (x)} = 2 \tan^2 (x) \sec (x) = 2 (\sec^2 (x) - 1) \sec (x) = 2(\sec^3 (x) -\sec (x))$
+::: solution
+Standard reduction and $u$-substitutions give
+\[
+\boxed{\int\sec^3x\,dx
+=\frac12\bigl(\sec x\tan x+\ln|\sec x+\tan x|\bigr)+C,}
+\]
+\[
+\boxed{\int\sec^4x\,dx=\tan x+\frac13\tan^3x+C,}
+\]
+\[
+\boxed{\int\tan^2x\,dx=\tan x-x+C,}
+\]
+\[
+\boxed{\int\tan^3x\,dx=\frac12\tan^2x+\ln|\cos x|+C,}
+\]
+\[
+\boxed{\int\tan^4x\,dx=\frac13\tan^3x-\tan x+x+C.}
+\]
+For the mixed powers, use $u=\sec x$ in the first and $u=\tan x$ in the second:
+\[
+\boxed{\int\sec^3x\tan^3x\,dx=\frac15\sec^5x-\frac13\sec^3x+C,}
+\]
+\[
+\boxed{\int(\tan^4x+\tan^2x)dx=\frac13\tan^3x+C.}
+\]
+Finally,
+\[
+\frac{2\sin^2x}{\cos^3x}=2(\sec^3x-\sec x),
+\]
+so
+\[
+\boxed{\int\frac{2\sin^2x}{\cos^3x}dx
+=\sec x\tan x-\ln|\sec x+\tan x|+C.}
+\]
+Using $(\sec x-\tan x)(\sec x+\tan x)=1$, this is equivalently
+\[
+\sec x\tan x+\ln|\sec x-\tan x|+C.
+\]
 :::

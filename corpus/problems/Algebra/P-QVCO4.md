@@ -15,24 +15,41 @@ review: draft
 ---
 
 ::: problem
-Identifying
-$$
-R \cross F = F[x] \oplus F \cong F[x] \oplus \frac{F[x]}{(f)}
-$$
-where $f$ is any degree 1 polynomial in $F[x]$, by the structure theorem we can pick a matrix $A \in M_2(F[x])$ with invariant factors $d_1 = 0, d_2 = f$.
-Then by the same argument given in part 1, we would have
-$$
-(F[x])^2/\im A \cong \frac{ F[x] }{(d_1)} \oplus \frac{F[x]}{(d_2)} = F[x] \oplus \frac{F[x]}{(f)}
-$$
-
-So we can choose $n=2$, and say $f(x) = x+1$, and then just pick a matrix that is already in Smith normal form:
+Construct a $2\times2$ matrix $A$ over $F[x]$ whose cokernel is
 \[
-\begin{align*}
-A = 
-\left[ \begin{array}{cc}
-x+1 & 0 \\
-0 & 0
-\end{array}\right].
-\end{align*}
+F[x]\oplus F.
+\]
+:::
+
+::: {.solution}
+Choose any linear polynomial $f(x)\in F[x]$, for example
+\[
+f(x)=x+1.
+\]
+Since
+\[
+F[x]/(x+1)\cong F,
+\]
+we want a Smith normal form with one nonzero invariant factor $x+1$ and one zero diagonal entry.
+
+Take
+\[
+A=
+\begin{pmatrix}
+x+1&0\\
+0&0
+\end{pmatrix}.
+\]
+Then
+\[
+\operatorname{coker}(A)
+\cong
+F[x]/(x+1)\oplus F[x]/(0)
+\cong
+F\oplus F[x].
+\]
+Thus, after reordering the summands,
+\[
+\operatorname{coker}(A)\cong F[x]\oplus F.
 \]
 :::

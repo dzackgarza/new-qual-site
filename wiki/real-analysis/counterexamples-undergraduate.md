@@ -115,11 +115,11 @@ Note that $D_f \in F_\sigma$!
 | Function                                                                   | Bounded?             | $D_f$       | $D'_f$    | $\mathcal{R}$?              | $\mathcal{L}$? |
 | -------------------------------------------------------------------------- | -------------------- | ----------- | --------- | --------------------------- | -------------- |
 | Dirichlet $\chi_\QQ(x)$                                                    | ✅, $\abs{f} \leq 1$ | $\RR$       | $\RR$     | ❌                          | ✅, $\int f=0$ |
-| Dirichlet 2 $x\chi_\QQ(x)$                                                 | ❌                   | $\RR\smz$   | $\RR$     | ❌, $U(f) > 1/4 > 0 = L(f)$ | ?              |
-| Dirichlet 3 $x^2\chi_\QQ(x)$                                               | ❌                   | $\RR\smz$   | $\RR\smz$ | ❌                          | ?              |
-| Dirichlet 4 $f(x) = x\qty{ \chi_\QQ(x) - \chi_{\QQ^c}(x)}$                 | ❌                   | $\RR\smz$   | $\RR$     | ❌                          | ?              |
+| Dirichlet 2 $x\chi_\QQ(x)$                                                 | ❌                   | $\RR\smz$   | $\RR$     | ❌, $U(f) > 1/4 > 0 = L(f)$ | ✅, $f=0$ a.e., so $\int_\RR |f|=0$ |
+| Dirichlet 3 $x^2\chi_\QQ(x)$                                               | ❌                   | $\RR\smz$   | $\RR\smz$ | ❌                          | ✅, $f=0$ a.e., so $\int_\RR |f|=0$ |
+| Dirichlet 4 $f(x) = x\qty{ \chi_\QQ(x) - \chi_{\QQ^c}(x)}$                 | ❌                   | $\RR\smz$   | $\RR$     | ❌                          | ❌, $|f(x)|=|x|$ a.e. |
 | Thomae $(x={p\over q} \mapsto {1\over q})\chi_{\QQ}(x)$                    | ✅                   | $\QQ$       | $\RR$     | ✅, $\int f = 0$[^1]        | ✅             |
-| Weierstrass $f(x)=\sum_{n=0}^{\infty} a^{n} \cos \left(b^{n} \pi x\right)$ | ?                    | $\emptyset$ | $\RR$     | ?                           | ?              |
+| Weierstrass $f(x)=\sum_{n=0}^{\infty} a^{n} \cos \left(b^{n} \pi x\right)$ | ✅, $|f|\le (1-a)^{-1}$ | $\emptyset$ | $\RR$[^2] | ✅ on every compact interval | ❌ on $\RR$ (nonzero and $2$-periodic) |
 
 :::{.remark}
 Full definition of the Weierstrass function:
@@ -127,7 +127,7 @@ Full definition of the Weierstrass function:
 \[
 f(x)=\sum_{n=0}^{\infty} a^{n} \cos \left(b^{n} \pi x\right)
 &&
-a \in (0, 1), b \in \ZZ_{\geq 0}, ab > 1 + {3\pi \over 2}
+a \in (0, 1),\quad b\in\ZZ_{>0}\text{ odd},\quad ab > 1 + {3\pi \over 2}
 .\]
 
 Note that this series converges uniformly since it's bounded above by $\sum \abs{a^n}$, which is geometric.
@@ -173,3 +173,4 @@ So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$.
 :::
 
 [^1]: Riemann integrable by the Lebesgue criterion.
+[^2]: This is Weierstrass's classical nowhere-differentiable example for $0<a<1$, positive odd integer $b$, and $ab>1+3\pi/2$; see the [Encyclopedia of Mathematics entry on non-differentiable functions](https://encyclopediaofmath.org/wiki/Non-differentiable_function).

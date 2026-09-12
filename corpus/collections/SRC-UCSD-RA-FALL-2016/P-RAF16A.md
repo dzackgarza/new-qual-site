@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 1 of the official UCSD Fall 2016 real-analysis qualifying exam.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Existing partition-generated sigma-algebra proof reviewed as correct; normalized the legacy solution block.
 ---
 
 ::: problem
@@ -23,7 +31,7 @@ Let $\mathcal{A}$ be the smallest $\sigma$-algebra of subsets of $X$ that contai
 Prove that $\mathcal{A}$ consists exactly of $\varnothing$, $X$, and all finite or countably infinite unions of $A_j$ ($j \geq 1$).
 :::
 
-::: {.solution}
+::: solution
 <1>1. Definition of the candidate family $\mathcal{F}$:
 <2>1. Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
 \[

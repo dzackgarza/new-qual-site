@@ -12,6 +12,15 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 3 of the official UGA Fall 2020 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Reviewed and normalized the Cauchy--Schwarz/dyadic proof, replacing the legacy big-O notation by the required explicit harmonic lower bound.
 ---
 
 :::{.problem}
@@ -46,36 +55,52 @@ for all $t\in [1, \infty)$, then
 
 :::
 
-:::{.solution}
-**Part 1**:
-By Holder with $p=q=2$ on $L_1[a, b]$,
-\[
-(b-a)^2 = \norm{\id}_1^2 = \norm{f^{1\over 2}f^{- {1\over 2} } }_1^2 \leq \norm{f^{1\over 2}}_2^2 \cdot \norm{f^{-{1\over 2}}}_2^2 = \int_a^b f(x)\dx \cdot \int_a^b {1\over f(x)}\dx
-.\]
+::: solution
 
-**Part 2**:
-It suffices to show 
+<1>1. Prove the product-of-averages inequality.
+::: proof
+If either $\int_a^b f=\infty$ or $\int_a^b 1/f=\infty$, the asserted inequality is automatic in the extended sense. Otherwise $f>0$ almost everywhere on $[a,b]$. By Cauchy--Schwarz,
 \[
-\int_{2^k}^{2^{k+1}}{1\over f} > c_k \text{ where } \sum_{k\geq 0} c_k = \infty
-.\]
-Manipulate the given inequality a bit:
+(b-a)^2
+=\left(\int_a^b f^{1/2}f^{-1/2}\,dx\right)^2
+\le \left(\int_a^b f\,dx\right)
+   \left(\int_a^b\frac{dx}{f(x)}\right).
+\]
+Dividing by $(b-a)^2$ gives
 \[
-\int_a^b f \leq \int_1^b f \leq b^2 \log(b) \implies 
-\qty{\int_a^b f}\inv \geq {1\over b^2\log(b)}\\
-\implies 
-.\]
-Rewrite the bound in part 1:
-\[
-\int_a^b {1\over f} \geq \qty{\int_a^b f}\inv (b-a)^2 \geq {(b-a)^2 \over b^2 \log(b) }
-.\]
-Now set $a=2^k, b=2^{k+1}$:
-\[
-\int_{2^k}^{2^{k+1}} {1\over f(x)} \dx
-\geq
-{(2^{k+1} - 2^k )^2 \over 2^{2(k+1)} (k+1)\log(2) }
-= {2^{2k} \over 2^{2k} \cdot 4(k+1)\log(2)}
-= \bigo(1/k)
-,\]
-and $\sum 1/k = \infty$.
+1\le
+\left(\frac1{b-a}\int_a^b f\right)
+\left(\frac1{b-a}\int_a^b\frac1f\right).
+\]
 :::
 
+<1>2. Apply the inequality on dyadic intervals.
+::: proof
+Take
+\[
+a=2^k,\qquad b=2^{k+1},\qquad k\ge0.
+\]
+The hypothesis gives
+\[
+\int_{2^k}^{2^{k+1}}f(x)\,dx
+\le \int_1^{2^{k+1}}f(x)\,dx
+\le 2^{2(k+1)}(k+1)\log2.
+\]
+By Step 1,
+\[
+\int_{2^k}^{2^{k+1}}\frac{dx}{f(x)}
+\ge
+\frac{(2^{k+1}-2^k)^2}{\int_{2^k}^{2^{k+1}}f}
+\ge \frac{1}{4(k+1)\log2}.
+\]
+Therefore
+\[
+\int_1^\infty\frac{dx}{f(x)}
+=\sum_{k=0}^\infty
+\int_{2^k}^{2^{k+1}}\frac{dx}{f(x)}
+\ge \frac1{4\log2}\sum_{k=0}^\infty\frac1{k+1}
+=\infty.
+\]
+:::
+:::
+:::

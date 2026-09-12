@@ -17,6 +17,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Spring 2015 Problem 6 in the preserved UGA real-analysis source extraction.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Corrected the sign in the translation identity used for uniform continuity.
 ---
 
 ::: problem
@@ -29,40 +37,57 @@ Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 \frac{d}{d x}(f * g)=f *\left(\frac{d}{d x} g\right)
 \]
 :::
-::: {.solution}
-<1>1. (Part 1) $f \ast g$ is well-defined and bounded.
-    ::: {.proof}
-    $g$ bounded, $|g| \le M$ a.e., and $f \in L^1$; by Tonelli/Fubini the convolution $(f\ast g)(x) = \int f(y)g(x-y)\,dy$ converges absolutely for every $x$ with
-    :::
-    \[
-    |(f\ast g)(x)| \le \int |f(y)||g(x-y)|\,dy \le M \norm{f}_1 < \infty .
-    \]
-<1>2. $f \ast g$ is uniformly continuous.
-    ::: {.proof}
-    for $h \in \RR$,
-    :::
-    \[
-    (f\ast g)(x+h) - (f\ast g)(x) = \int f(y)\big(g(x+h-y) - g(x-y)\big)\,dy = \int \big(f(y-h) - f(y)\big)g(x-y)\,dy ,
-    \]
-    so
-    \[
-    |(f\ast g)(x+h) - (f\ast g)(x)| \le M \int |f(y-h) - f(y)|\,dy = M \norm{\tau_h f - f}_1 ,
-    \]
-    and $\norm{\tau_h f - f}_1 \to 0$ as $h \to 0$ (strong continuity of translation in $L^1$). The bound is independent of $x$, so $f\ast g$ is uniformly continuous.
-<1>3. (Part 2) $f \ast g$ is differentiable with derivative $f \ast g'$.
-    ::: {.proof}
-    fix $x$. For $h \ne 0$,
-    :::
-    \[
-    \frac{(f\ast g)(x+h) - (f\ast g)(x)}{h} = \int f(y)\,\frac{g(x+h-y) - g(x-y)}{h}\,dy .
-    \]
-    As $h \to 0$: the difference quotient of $g$ converges pointwise to $g'(x-y)$ (since $g \in C^1$), and is bounded in absolute value by $\norm{g'}_\infty$ (mean value theorem). Since $|f| \in L^1$, the dominated convergence theorem gives
-    \[
-    \lim_{h\to 0}\frac{(f\ast g)(x+h) - (f\ast g)(x)}{h} = \int f(y)g'(x-y)\,dy = (f\ast g')(x) .
-    \]
-<1>4. $f \ast g'$ is continuous, so $f\ast g \in C^1(\RR)$.
-    ::: {.proof}
-    $g'$ is bounded (by hypothesis) and measurable, so by <1>2 applied to $(f, g')$, $f\ast g'$ is continuous; by <1>3 it is the derivative of $f\ast g$ everywhere.
-    :::
-<1>5. Q.E.D.
+::: solution
+<1>1. The convolution is well defined and bounded.
+::: proof
+Let $M:=\|g\|_\infty$. For every $x\in\mathbb R$,
+\[
+\int_{\mathbb R}|f(y)g(x-y)|\,dy
+\le M\|f\|_1<\infty.
+\]
+Thus $(f*g)(x)$ is absolutely convergent and
+\[
+\|f*g\|_\infty\le M\|f\|_1.
+\]
+:::
+
+<1>2. The convolution is uniformly continuous.
+::: proof
+For $h\in\mathbb R$, a change of variables gives
+\[
+(f*g)(x+h)
+=\int_{\mathbb R} f(y+h)g(x-y)\,dy.
+\]
+Hence
+\[
+(f*g)(x+h)-(f*g)(x)
+=\int_{\mathbb R}\bigl(f(y+h)-f(y)\bigr)g(x-y)\,dy,
+\]
+and therefore
+\[
+|(f*g)(x+h)-(f*g)(x)|
+\le M\|\tau_{-h}f-f\|_1.
+\]
+Translations are strongly continuous on $L^1(\mathbb R)$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Thus $f*g$ is uniformly continuous.
+:::
+
+<1>3. Differentiate when $g\in C^1$ and $g'$ is bounded.
+::: proof
+For $h\ne0$,
+\[
+\frac{(f*g)(x+h)-(f*g)(x)}h
+=\int_{\mathbb R}f(y)
+\frac{g(x+h-y)-g(x-y)}h\,dy.
+\]
+For each fixed $y$, the difference quotient converges to $g'(x-y)$. By the mean value theorem it is bounded in absolute value by $\|g'\|_\infty$. Since $f\in L^1$, dominated convergence yields
+\[
+\frac d{dx}(f*g)(x)
+=\int_{\mathbb R}f(y)g'(x-y)\,dy
+=(f*g')(x).
+\]
+Finally, $g'$ is bounded and measurable, so Step 2 applied to $(f,g')$ shows that $f*g'$ is uniformly continuous. Hence $f*g\in C^1(\mathbb R)$ and
+\[
+\boxed{(f*g)'=f*g'.}
+\]
+:::
 :::

@@ -25,8 +25,61 @@ Calculate the mod $2$ cohomology ring of $X(2k+2, k)$.
 :::
 
 ::: {.solution}
-<1>1. $H^*(\RP^n; \ZZ/2) = \ZZ/2[x]/(x^{n+1})$ with $|x| = 1$.
+Write $N=2k+2$, let $q:\RP^N\to X(N,k)=\RP^N/\RP^k$, and use coefficients $\mathbf F_2$ throughout.
+
+<1>1. The mod-$2$ cohomology of $\RP^N$ is
+$$
+H^*(\RP^N;\mathbf F_2)=\mathbf F_2[x]/(x^{N+1}),\qquad |x|=1.
+$$
 ::: {.proof}
+This is the standard cellular computation of the cohomology ring of real projective space.
+:::
+
+<1>2. For every $i>0$, the quotient identifies
+$$
+\widetilde H^i(X(N,k);\mathbf F_2)\cong H^i(\RP^N,\RP^k;\mathbf F_2),
+$$
+and under $q^*$ its image in $H^i(\RP^N;\mathbf F_2)$ is the kernel of restriction to $\RP^k$.
+::: {.proof}
+For a CW pair $(Y,A)$, reduced cohomology of $Y/A$ is naturally relative cohomology $H^*(Y,A)$. In the long exact sequence of $(\RP^N,\RP^k)$, the map to absolute cohomology has image equal to the kernel of restriction to $\RP^k$.
+:::
+
+<1>3. Hence $q^*$ is injective, is an isomorphism in degree $0$, and in positive degrees has image
+$$
+(x^{k+1})=\operatorname{span}_{\mathbf F_2}\{x^{k+1},x^{k+2},\dots,x^N\}.
+$$
+Thus, as a unital graded ring,
+$$
+H^*(X(N,k);\mathbf F_2)\cong \mathbf F_2\cdot1\ \oplus\ (x^{k+1})
+$$
+with multiplication inherited from $\mathbf F_2[x]/(x^{N+1})$ on the positive-degree ideal.
+::: {.proof}
+The restriction $H^i(\RP^N)\to H^i(\RP^k)$ sends $x^i$ to $x^i$. It is an isomorphism for $0\le i\le k$ and the target vanishes for $i>k$. The relative long exact sequence therefore gives no positive-degree classes below $k+1$ and one class $x^i$ in each degree $k+1\le i\le N$. Since $X(N,k)$ is connected, $H^0(X(N,k))=\mathbf F_2$, and $q^*$ sends its unit to the unit.
+:::
+
+<1>4. For $N=2k+2$, the only nonzero product of two positive-degree classes is
+$$
+(x^{k+1})^2=x^{2k+2}.
+$$
+::: {.proof}
+A product $x^i x^j=x^{i+j}$ with $i,j\ge k+1$ can be nonzero only if $i+j\le2k+2$. This forces $i=j=k+1$.
+:::
+
+<1>5. Equivalently, if $a$ denotes the class of degree $k+1$ and $y_i$ the class of degree $i$ for $k+2\le i\le2k+1$, then
+$$
+\boxed{
+H^*(X(2k+2,k);\mathbf F_2)
+\cong
+\mathbf F_2[a,y_{k+2},\ldots,y_{2k+1}]
+/\bigl(a^3,\ a y_i,\ y_i y_j\bigr),
+}
+$$
+where $|a|=k+1$, $|y_i|=i$, and $a^2$ is the nonzero top class in degree $2k+2$.
+::: {.proof}
+The presentation has basis $1,a,y_{k+2},\dots,y_{2k+1},a^2$, exactly one basis class in degrees $0,k+1,k+2,\dots,2k+2$, and <1>4 gives precisely the stated multiplication relations.
+:::
+:::
+ {.proof}
 standard computation of the mod $2$ cohomology ring of real projective space.
 :::
 

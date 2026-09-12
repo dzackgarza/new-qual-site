@@ -10,14 +10,92 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that $T(X) = \frac{1}{2}(X - X^T)$.
+Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that
+$T(X) = \frac{1}{2}(X - X^T)$.
 
 (a) Prove that $T$ is a linear transformation.
 
 (b) Determine the null space of $T$ and find its dimension.
 
 (c) Derive the matrix representation of $T$ in terms of the standard basis for $M_3$.
+:::
+
+::: {.solution}
+<1>1. The map \(T\) is linear.
+::: {.proof}
+For \(X,Y\in M_n(\mathbb R)\) and \(a,b\in\mathbb R\),
+\[
+T(aX+bY)
+=\frac12\bigl(aX+bY-(aX+bY)^T\bigr)
+=aT(X)+bT(Y).
+\]
+:::
+
+<1>2. The null space of \(T\) is the space of symmetric matrices:
+\[
+\ker T=\{X\in M_n(\mathbb R):X^T=X\}.
+\]
+::: {.proof}
+One has \(T(X)=0\) iff \(X-X^T=0\), equivalently \(X=X^T\).
+:::
+
+<1>3. Therefore
+\[
+\dim\ker T=\frac{n(n+1)}2.
+\]
+::: {.proof}
+A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and its
+\(\binom n2\) entries above the diagonal. Thus
+\[
+\dim\ker T=n+\binom n2=\frac{n(n+1)}2.
+\]
+:::
+
+<1>4. For \(M_3(\mathbb R)\), order the standard basis as
+\[
+\mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
+\]
+Then
+\[
+T(E_{ii})=0,
+\qquad
+T(E_{ij})=\frac12(E_{ij}-E_{ji})\quad(i\ne j).
+\]
+::: {.proof}
+Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \(T\).
+:::
+
+<1>5. Hence the matrix of \(T\) with respect to \(\mathcal B\) is
+\[
+[T]_{\mathcal B}=
+\frac12
+\begin{pmatrix}
+0&0&0&0&0&0&0&0&0\\
+0&1&0&-1&0&0&0&0&0\\
+0&0&1&0&0&0&-1&0&0\\
+0&-1&0&1&0&0&0&0&0\\
+0&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&1&0&-1&0\\
+0&0&-1&0&0&0&1&0&0\\
+0&0&0&0&0&-1&0&1&0\\
+0&0&0&0&0&0&0&0&0
+\end{pmatrix}.
+\]
+::: {.proof}
+The \(j\)-th column is the coordinate vector of \(T\) applied to the \(j\)-th basis
+element. Using <1>4 gives the displayed columns immediately.
+:::
 :::

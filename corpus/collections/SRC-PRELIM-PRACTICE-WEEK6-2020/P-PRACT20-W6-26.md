@@ -1,0 +1,28 @@
+---
+schema: qual/card@1
+id: P-PRACT20-W6-26
+kind: problem
+title: "Week 6: Miscellaneous Topics, problem 26"
+classification:
+  areas:
+  - prelim
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Let A, B be subsets of some set X. Define $S _ { 0 } = \{ A , B \}$ . For $i \geq 0$ , inductively define $S _ { i + 1 }$ to contain all sets of the form $C \cup D , C \cap D$ , and $X \backslash C$ where $C , D \in S _ { i }$ . What is the largest possible number of distinct sets contained in $\cup _ { i = 0 } ^ { \infty } S _ { i } ?$
+:::
+
+::: {.solution}
+This is another problem where half the battle is parsing the notation.
+It is easiest to understand by drawing and labeling a Venn diagram as in Figure 3 below.
+The idea is that any set that can be built out of a sequence of unions, intersections and complements of the two sets A, B can be written as of at most four disjoint pieces:
+
+$$
+X _ { 1 } = A \setminus B , \quad X _ { 2 } = B \setminus A , \quad X _ { 3 } = A \cap B , \quad X _ { 4 } = X \setminus ( A \cup B ) .
+$$
+
+Thus the total number of sets in the final collection $\cup _ { i = 0 } ^ { \infty } S _ { i }$ is the number of distinct combinations of $X _ { 1 } , X _ { 2 } , X _ { 3 } , X _ { 4 }$ . Since there are four sets and for each set, one can decide to include or exclude the set, there are $2 ^ { 4 } = 1 6$ different combinations so this is the maximum number of distinct sets in $\cup _ { i = 0 } ^ { \infty } S _ { i }$ (there could be less: if $A \subset B$ and $B \setminus A$ then there are only 8 sets; if $A = B$ , then there are only 4).
+:::

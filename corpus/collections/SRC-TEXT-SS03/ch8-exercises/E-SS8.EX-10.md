@@ -9,6 +9,10 @@ classification:
   topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 ::: exercise
@@ -25,4 +29,24 @@ Prove that
 $$
 | F (z) | \leq \left| \frac {z - i}{z + i} \right| \quad \text {   for   all   } z \in \mathbb {H}.
 $$
+:::
+
+::: solution
+Let
+\[
+\phi(z)=\frac{z-i}{z+i}.
+\]
+This maps the upper half-plane biholomorphically onto the unit disc and satisfies $\phi(i)=0$. Define
+\[
+g(w)=F(\phi^{-1}(w)),\qquad w\in\mathbb D.
+\]
+Then $g$ is holomorphic on $\mathbb D$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
+\[
+|g(w)|\le|w|.
+\]
+Taking $w=\phi(z)$ gives
+\[
+|F(z)|\le\left|\frac{z-i}{z+i}\right|,
+\qquad z\in\mathbb H.
+\]
 :::

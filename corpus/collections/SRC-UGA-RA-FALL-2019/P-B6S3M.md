@@ -11,6 +11,15 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 3 of the official UGA August 2019 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed the limsup measurability argument and both Borel-Cantelli proofs, including the stated finite-block complement-independence hypothesis.
 ---
 
 ::: problem
@@ -79,4 +88,3 @@ for all positive integers $k < K$, then $\mu(B) = 1$.
     $B$ is measurable, $\mu(B) = 0$ when $\sum \mu(B_n) < \infty$, and $\mu(B) = 1$ when $\sum \mu(B_n) = \infty$ under the independence condition.
 :::
 :::
-

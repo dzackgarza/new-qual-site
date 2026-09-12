@@ -20,3 +20,7 @@ review: draft
 This is the third condition of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without its stem.
 That card now carries the whole exercise; merging this bullet back into it is a canonicity decision rather than a truncation repair.
 :::
+
+::: {.solution}
+This card is not a standalone exercise. It is the third bullet of the TFAE problem `E-YAEMZ`, extracted without its hypotheses. The full equivalence, including sequential compactness, is proved on `E-YAEMZ`.
+:::

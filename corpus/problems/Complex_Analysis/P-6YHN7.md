@@ -25,3 +25,30 @@ Show that
 
 > The first part of this problem asks for a statement of the Schwarz lemma.
 :::
+
+::: solution
+The statement is false as written. Take $\Omega=\DD$,
+\[
+f(z)=\frac z2,
+\qquad
+ g(z)=z.
+\]
+Then $f$ is injective and $f(0)=g(0)=0$, but for every $0<r<1$,
+\[
+g(\{|z|<r\})=\{|w|<r\}\not\subseteq\{|w|<r/2\}
+=f(\{|z|<r\}).
+\]
+
+The natural Schwarz-lemma version is true if $f$ is a biholomorphism
+$\DD\to\Omega$. Then
+\[
+h=f^{-1}\circ g:\DD\to\DD
+\]
+is holomorphic and fixes $0$. By Schwarz's lemma, $|h(z)|\le |z|$, hence
+$h(\{|z|<r\})\subseteq\{|z|<r\}$ for every $0<r<1$. Applying $f$ gives
+\[
+g(\{|z|<r\})
+=f(h(\{|z|<r\}))
+\subseteq f(\{|z|<r\}).
+\]
+:::

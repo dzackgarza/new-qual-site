@@ -10,12 +10,50 @@ classification:
   - Convergence Theorems
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 3 of the JHU Analysis Qualifying Exam, September 2009, in the preserved exam collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-3. Let I be the unit interval [0, 1], and for $n = 1 , 2 , 3 , . . .$ . and $0 \leq j \leq 2 ^ { n } - 1$ let
+::: {.problem}
+For $n\ge1$ and $0\le j\le2^n-1$, let
+\[
+I_{n,j}=[j2^{-n},(j+1)2^{-n}].
+\]
+For $f\in L^1([0,1])$, define
+\[
+E_nf(x)=\sum_{j=0}^{2^n-1}\left(2^n\int_{I_{n,j}}f(t)\,dt\right)\chi_{I_{n,j}}(x).
+\]
+Prove that $E_nf(x)\to f(x)$ for almost every $x\in[0,1]$.
+:::
 
-$$
-I _ { n , j } = [ j 2 ^ { - n } , ( j + 1 ) 2 ^ { - n } ] .
-$$
+::: {.solution}
+The dyadic endpoints form a countable set, hence a null set. Fix $x\in(0,1)$ that is not a dyadic endpoint. For each $n$ there is then a unique dyadic interval $I_n(x)$ of length $2^{-n}$ containing $x$, and
+\[
+E_nf(x)=\frac1{|I_n(x)|}\int_{I_n(x)}f(t)\,dt.
+\]
+Moreover,
+\[
+x\in I_n(x),
+\qquad
+|I_n(x)|=2^{-n}\longrightarrow0.
+\]
 
-For $f \ \in \ L ^ { 1 } ( I , d x )$ define $\begin{array} { r } { E _ { n } f ( x ) \ = \ \sum _ { j = 0 } ^ { 2 ^ { n } - 1 } ( 2 ^ { n } \int _ { I _ { n , j } } f d t ) \chi _ { I _ { n , j } } ( x ) } \end{array}$ , where $\chi _ { I _ { n , j } }$ is the characteristic function of $I _ { n , j }$ . Prove that if $f \in L ^ { 1 } ( \bar { I } , d x )$ then $\lim _ { n \to \infty } E _ { n } f ( x ) = f ( x )$ almost everywhere in I.
+By the Lebesgue differentiation theorem, for almost every $x\in[0,1]$,
+\[
+\frac1{|I|}\int_I f(t)\,dt\longrightarrow f(x)
+\]
+whenever intervals $I$ contain $x$ and their lengths tend to $0$. Applying this to the dyadic intervals $I_n(x)$ gives
+\[
+E_nf(x)\longrightarrow f(x)
+\]
+for almost every non-dyadic $x$. Since the dyadic endpoints themselves form a null set, the conclusion holds almost everywhere on $[0,1]$.
+:::

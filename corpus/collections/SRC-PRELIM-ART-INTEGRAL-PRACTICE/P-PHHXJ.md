@@ -12,24 +12,56 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-1. $\displaystyle \int \sqrt {1 -x^2} ~dx = \frac {1}{2} (\sin ^{-1} (x) + \frac {1}{2} \sin (2 \sin ^{-1} (x))) = \color {blue} {\frac {1}{2} (\sin ^{-1} (x) + x \sqrt {1 - x^2})}$
+Evaluate
+\[
+\int\sqrt{1-x^2}\,dx,
+\qquad
+\int_{-4}^{4}\sqrt{16-x^2}\,dx,
+\]
+and
+\[
+\int_{-1}^{1}(1+x)\sqrt{1-x^2}\,dx.
+\]
+:::
 
-- **Solution:** $\sin (u) = x​$, $\cos (u) ~du = dx​$
+::: solution
+For the antiderivative, set $x=\sin u$. Then $dx=\cos u\,du$ and
+\[
+\sqrt{1-x^2}=\cos u
+\]
+on the principal substitution interval, so
+\[
+\int\sqrt{1-x^2}\,dx
+=\int\cos^2u\,du
+=\frac12\left(u+\sin u\cos u\right)+C.
+\]
+Thus
+\[
+\boxed{\int\sqrt{1-x^2}\,dx=\frac12\left(\arcsin x+x\sqrt{1-x^2}\right)+C.}
+\]
 
-- **Solution:** $\sqrt {1 -x^2} ~dx = \sqrt {1 - (\sin (u))^2} \cos (u) ~du = \cos ^2 (u) ~du = \frac {1}{2} (1 + \cos (u)) ~du​$
-
-  1. $\displaystyle \int_{-4}^{4} \sqrt {16 - x^2} ~dx = \color {blue} {8\pi}$
-
-  - **Solution:** the area of semi-circle
-
-  - **Used 2019**
-
-  2. $\displaystyle \int_{-1}^{1} (1+x)\sqrt {1-x^2} ~dx = \color {blue} {\frac {1}{2} \pi}$
-
-  - **Solution:** $\int_{-1}^{1} (1+x)\sqrt {1-x^2} ~dx = \int_{-1}^{1} \sqrt {1-x^2} ~dx + \int_{-1}^{1} \sqrt {1-x^2} x ~dx = \frac {1}{2} \pi + \frac {2}{3} (1-x^2)^{\frac {3}{2}} |_{-1}^{1}$
-
-  - **Used 2019**
+The graph of $y=\sqrt{16-x^2}$ is the upper semicircle of radius $4$, so
+\[
+\boxed{\int_{-4}^{4}\sqrt{16-x^2}\,dx=8\pi.}
+\]
+Finally,
+\[
+\int_{-1}^{1}(1+x)\sqrt{1-x^2}\,dx
+=\int_{-1}^{1}\sqrt{1-x^2}\,dx
++\int_{-1}^{1}x\sqrt{1-x^2}\,dx.
+\]
+The second integrand is odd, hence its integral is $0$, while the first integral is the area of a semicircle of radius $1$. Therefore
+\[
+\boxed{\int_{-1}^{1}(1+x)\sqrt{1-x^2}\,dx=\frac\pi2.}
+\]
 :::

@@ -15,47 +15,81 @@ review: draft
 ---
 
 ::: problem
-The splitting field of this polynomial is $\QQ(\sqrt[3]2, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a primitive third root of unity.
-
-To get the degree of this extension, we extend fields in the indicated order.
-Since $\QQ(\sqrt[3] 2, \sqrt 3)$ is totally real, the minimal polynomial of $\zeta$ over it still has degree $\phi(3) = 2$.
-A quick check also shows that $\sqrt 3$ is not contained in $\QQ(\sqrt[3] 2)$, yielding another degree 2 extension, and finally a degree 3 extension.
-
-Thus we have an extension of degree 12, and since we've constructed a Galois extension $L$ (a separable splitting field), if we define $G \definedas \Gal(\QQ/L)$, we have $\abs G = 12$.
-Since we know that the splitting field of $\QQ(\sqrt[3] 2)/ \QQ$ has Galois group $D_3$, we must have $D_3 \leq G$.
-This reduces the possibilities just $D_3 \cross \ZZ_2 \cong D_6$.
-
-We have the following subgroup diagram (Figure 1).
-
-![Subgroup Diagram](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-10%3A23.png)\
-
-where we can simplify things by only considering conjugacy classes of subgroups, since these will correspond to conjugate field extensions (Figure 2).
-
-![Subgroups up to Conjugacy](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-11%3A25.png)\
-
-We can explicitly identify the relevant automorphisms:
+Let
 \[
-\begin{align*}
-\sigma: \sqrt[3] 2 \mapsto \zeta_3 \sqrt[3] 2 \\
-\tau: \zeta_3 \mapsto \zeta_3^2 \\
-\gamma: \sqrt 3 \mapsto -\sqrt 3
-.\end{align*}
+L=\QQ(\sqrt[3]2,\sqrt3,\zeta_3),
 \]
-We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2 = \gamma^2 = (\sigma\tau)^2 = [\sigma, \gamma] = [\tau, \gamma] = e}$, and obtain the following lattice:
+where $\zeta_3$ is a primitive cube root of unity. Compute $\operatorname{Gal}(L/\QQ)$ and describe the intermediate fields, at least up to conjugacy.
+:::
 
-\begin{tikzcd}
-                                            &  & {<\sigma, \tau, \gamma>}                       &                                                         &                                      &  &                                                 \\
-                                            &  &                                                &                                                         &                                      &  &                                                 \\
-<\tau> \times <\gamma> \arrow[rruu, dashed] &  & {<\sigma, \tau>} \arrow[uu]                    &                                                         & {<\sigma, \tau\gamma>} \arrow[lluu]  &  & <\sigma> \times <\gamma> \arrow[lllluu]         \\
-                                            &  &                                                &                                                         &                                      &  &                                                 \\
-<\tau> \arrow[uu] \arrow[rruu, dashed]      &  & <\tau\gamma> \arrow[rruu, dashed] \arrow[lluu] &                                                         & <\gamma> \arrow[rruu] \arrow[lllluu] &  & <\sigma> \arrow[uu] \arrow[lluu] \arrow[lllluu] \\
-                                            &  &                                                &                                                         &                                      &  &                                                 \\
-                                            &  &                                                & <e> \arrow[llluu] \arrow[luu] \arrow[ruu] \arrow[rrruu] &                                      &  &                                                
-\end{tikzcd}
+::: solution
+Set
+\[
+a=\sqrt[3]2,
+\qquad
+b=\sqrt3,
+\qquad
+\omega=\zeta_3.
+\]
+The splitting field of $x^3-2$ is $\QQ(a,\omega)$ and has degree $6$ over $\QQ$. The element $b$ does not lie in this field: the only quadratic subfield of the $S_3$-extension $\QQ(a,\omega)/\QQ$ is $\QQ(\sqrt{-3})$, whereas $\QQ(\sqrt3)$ is different. Hence
+\[
+[L:\QQ]=12.
+\]
 
-which, up to conjugacy, fix the following intermediate field extensions (Figure 3).
+Define automorphisms
+\[
+\sigma:a\mapsto\omega a,\quad \omega\mapsto\omega,\quad b\mapsto b,
+\]
+\[
+\tau:a\mapsto a,\quad \omega\mapsto\omega^2,\quad b\mapsto b,
+\]
+and
+\[
+\gamma:a\mapsto a,\quad \omega\mapsto\omega,\quad b\mapsto-b.
+\]
+Then
+\[
+\sigma^3=\tau^2=\gamma^2=1,
+\qquad
+\tau\sigma\tau=\sigma^{-1},
+\]
+and $\gamma$ commutes with both $\sigma$ and $\tau$. Therefore
+\[
+\operatorname{Gal}(L/\QQ)
+\cong S_3\times C_2,
+\]
+which is also the dihedral group of order $12$ (often denoted $D_6$).
 
-![Intermediate Field Extensions up to Conjugacy](../../assets/Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-12%3A12.png)\
+The subgroup/fixed-field correspondence gives the intermediate fields. Representatives of the conjugacy classes of proper nontrivial subgroups are:
 
-$\qed$
+\[
+\begin{array}{c|c}
+H & L^H\\ \hline
+\langle\sigma\rangle & \QQ(\omega,b)\\
+\langle\tau\rangle & \QQ(a,b)\\
+\langle\gamma\rangle & \QQ(a,\omega)\\
+\langle\tau\gamma\rangle & \QQ(a,i)\\
+\langle\tau,\gamma\rangle & \QQ(a)\\
+\langle\sigma,\tau\rangle & \QQ(b)\\
+\langle\sigma,\gamma\rangle & \QQ(\omega)\\
+\langle\sigma,\tau\gamma\rangle & \QQ(i)
+\end{array}
+\]
+
+Here
+\[
+i=\frac{\omega-\omega^2}{b},
+\]
+which is fixed by $\tau\gamma$.
+
+The conjugates of $\langle\tau\rangle$, $\langle\tau\gamma\rangle$, and $\langle\tau,\gamma\rangle$ give the remaining conjugate intermediate fields:
+\[
+\QQ(\omega^j a,b),
+\qquad
+\QQ(\omega^j a,i),
+\qquad
+\QQ(\omega^j a)
+\quad(j=0,1,2).
+\]
+Together with $\QQ$ and $L$, these account for the full subgroup lattice under the Galois correspondence.
 :::

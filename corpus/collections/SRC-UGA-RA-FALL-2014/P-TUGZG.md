@@ -12,43 +12,58 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 1 of the UGA Fall 2014 real-analysis qualifying exam source recorded by this collection.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
-Let $\theset{f_n}$ be a sequence of continuous functions such that $\sum f_n$ converges uniformly.
-
-Prove that $\sum f_n$ is also continuous.
-
-
-:::{.concept}
-\envlist
-
-- The uniform limit theorem.
-- $\eps/3$ trick.
+::: problem
+Let $(f_n)$ be a sequence of continuous functions such that $\sum_{n=1}^\infty f_n$ converges uniformly.
+Prove that $\sum_{n=1}^\infty f_n$ is continuous.
 :::
 
-:::{.solution}
-\envlist
+::: solution
+<1>1. Apply the uniform-limit theorem to the partial sums.
+::: proof
+Let
+\[
+F_N(x):=\sum_{n=1}^N f_n(x),
+\qquad
+F(x):=\sum_{n=1}^\infty f_n(x).
+\]
+Each $F_N$ is continuous because it is a finite sum of continuous functions, and the hypothesis says that $F_N\to F$ uniformly.
 
-:::{.claim}
-If $F_N\to F$ uniformly with each $F_N$ continuous, then $F$ is continuous.
+Fix $x_0$ and $\varepsilon>0$. Choose $N$ so large that
+\[
+\sup_x|F(x)-F_N(x)|<\frac{\varepsilon}{3}.
+\]
+By continuity of $F_N$ at $x_0$, there is $\delta>0$ such that
+\[
+|x-x_0|<\delta
+\quad\Longrightarrow\quad
+|F_N(x)-F_N(x_0)|<\frac{\varepsilon}{3}.
+\]
+Hence, whenever $|x-x_0|<\delta$,
+\[
+\begin{aligned}
+|F(x)-F(x_0)|
+&\le |F(x)-F_N(x)|
+ +|F_N(x)-F_N(x_0)|
+ +|F_N(x_0)-F(x_0)|\\
+&<\varepsilon.
+\end{aligned}
+\]
+Thus $F$ is continuous at $x_0$. Since $x_0$ was arbitrary,
+\[
+\boxed{\sum_{n=1}^\infty f_n\text{ is continuous}.}
+\]
 :::
-
-:::{.proof title="of claim"}
-\envlist
-
-- Follows from an $\varepsilon/3$ argument: 
-  \[  
-  \abs{F(x) - F(y} \leq 
-  \abs{F(x) - F_N(x)} + \abs{F_N(x) - F_N(y)} + \abs{F_N(y) - F(y)} 
-  \leq \eps \to 0
-  .\]
-
-  - The first and last $\eps/3$ come from uniform convergence of $F_N\to F$.
-  - The middle $\eps/3$ comes from continuity of each $F_N$.
-
-:::
-
-- Now setting $F_N\definedas \sum_{n=1}^N f_n$ yields a finite sum of continuous functions, which is continuous.
-- Each $F_N$ is continuous and $F_N\to F$ uniformly, so $F$ is continuous.
-
 :::

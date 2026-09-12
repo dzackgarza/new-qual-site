@@ -12,9 +12,17 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against Problem 2 of the official UGA August 2016 real-analysis qualifying exam. The source assumes only measurability and equality of the displayed integrals; with extended-valued integrals this is false. The card is corrected to the natural L1 formulation.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
-Let $f, g: [a, b] \to \RR$ be measurable with
+Let $f,g\in L^1([a,b])$ be real-valued with
 $$
 \int_{a}^{b} f(x) ~d x=\int_{a}^{b} g(x) ~d x.
 $$
@@ -39,30 +47,46 @@ The non-obvious move: split $A$ itself up to get a strict inequality.
 
 :::
 
-:::{.solution}
-\envlist
+::: solution
+Let
+\[
+h=f-g.
+\]
+Then $h\in L^1([a,b])$ and
+\[
+\int_a^b h\,dx=0.
+\]
+If $h=0$ almost everywhere, then $f=g$ almost everywhere and alternative (1) holds.
 
-- Write $X\da [a, b]$,
-- Suppose it is *not* the case that $f=g$ almost everywhere; then letting $A\definedas \theset{x\in X \suchthat f(x) \neq g(x)}$, we have $m(A) > 0$.
-- Write 
-  \[
-  A = A_1 \disjoint A_2 \da \ts{f > g} \disjoint \ts{f < g}
-  .\]
-- Both $A_i$ are measurable:
-  - Since $f,g$ are measurable functions, so is $h\da f-g$.
-  - We can write
-  \[
-  A_1 &\da \ts{ x\in X \st h > 0 } = h\inv((0, \infty)) \\
-  A_2 &\da \ts{ x\in X \st h < 0 } = h\inv((-\infty, 0))
-  ,\]
-  and pullbacks of Borel sets by measurable functions are measurable.
+Assume instead that $h\ne0$ on a set of positive measure. Write
+\[
+E_+=\{h>0\},
+\qquad
+E_-=\{h<0\}.
+\]
+If $m(E_+)=0$, then $h\le0$ almost everywhere and $h<0$ on a set of positive measure. Consequently
+\[
+\int_a^b h\,dx<0,
+\]
+contradicting $\int h=0$. Thus $m(E_+)>0$.
 
-
-
-- Then on $E$, we have $f(x)>g(x)$ pointwise. 
-  This is preserved by monotonicity of the integral, thus
-  \[  
-  f(x) > g(x) \text{ on } E \implies \int_{E} f(x)\,dx > \int_{E} g(x)\, dx 
-  .\] 
+Because $h>0$ on $E_+$,
+\[
+E_+=\bigcup_{k=1}^\infty\{h\ge 1/k\}.
+\]
+Hence some $k$ satisfies
+\[
+m(\{h\ge1/k\})>0.
+\]
+It follows that
+\[
+\int_{E_+}h\,dx
+\ge \frac1k\,m(\{h\ge1/k\})>0.
+\]
+Taking $E=E_+$ gives
+\[
+\int_E f\,dx-\int_E g\,dx
+=\int_E h\,dx>0.
+\]
+Therefore alternative (2) holds.
 :::
-

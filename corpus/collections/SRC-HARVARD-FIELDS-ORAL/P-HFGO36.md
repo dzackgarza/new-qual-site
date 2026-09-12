@@ -12,6 +12,12 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-10
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
 ---
 
 ::: problem

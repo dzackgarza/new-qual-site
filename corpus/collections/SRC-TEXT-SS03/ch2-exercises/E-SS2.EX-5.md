@@ -9,6 +9,10 @@ classification:
   topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: exercise
@@ -27,4 +31,37 @@ $$
 $$
 
 For appropriate $F$ and G, one can then use the Cauchy-Riemann equations.]
+:::
+
+::: solution
+Write
+\[
+f=u+iv,
+\qquad dz=dx+i\,dy.
+\]
+Then
+\[
+f(z)\,dz=(u\,dx-v\,dy)+i(v\,dx+u\,dy).
+\]
+Because $f$ is continuously complex differentiable, $u$ and $v$ are $C^1$ and satisfy the Cauchy--Riemann equations
+\[
+u_x=v_y,
+\qquad
+u_y=-v_x.
+\]
+
+Apply Green's theorem to the real part:
+\[
+\int_T u\,dx-v\,dy
+=\iint_{\operatorname{int}T}(-v_x-u_y)\,dx\,dy=0.
+\]
+Apply it again to the imaginary part:
+\[
+\int_T v\,dx+u\,dy
+=\iint_{\operatorname{int}T}(u_x-v_y)\,dx\,dy=0.
+\]
+Hence both real and imaginary parts vanish, and therefore
+\[
+\boxed{\displaystyle \int_T f(z)\,dz=0}.
+\]
 :::

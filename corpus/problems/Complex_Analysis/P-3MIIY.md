@@ -92,16 +92,69 @@ $H(a) = \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx = \frac{\pi}{2}\qty(1 - \fra
 
 <1>8. (viii) $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$ for $a \in \CC$.
 ::: {.proof}
-Write $\sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}$: $1 - a\sin\theta = \frac{2iz - a(z^2 - 1)}{2iz}\big|_{z = e^{i\theta}} = \frac{-a z^2 + 2iz + a}{2iz}$.
+For $a=0$ the integral is $0$. Assume $a\ne0$. Choose a root $r$ of
+\[
+ar^2-2r+a=0
+\]
+with $|r|\le1$; such a root exists because the two roots have product $1$.
+Then
+\[
+a={2r\over1+r^2},
+\]
+and $1+r^2\ne0$ for finite $a$.
+
+With $x=\theta-\pi/2$,
+\[
+1-a\sin\theta
+=1-a\cos x
+={\qty(1-re^{ix})\qty(1-re^{-ix})\over1+r^2}.
+\]
+Consequently
+\[
+I(a):=\int_0^\pi\log|1-a\sin\theta|\,d\theta
+=2\int_{-\pi/2}^{\pi/2}\log|1-re^{ix}|\,dx
+-\pi\log|1+r^2|.
+\]
+
+For $|r|<1$ the uniformly convergent logarithmic series gives
+\[
+\log|1-re^{ix}|
+=-\Re\sum_{n=1}^\infty{r^ne^{inx}\over n}.
+\]
+Termwise integration yields
+\[
+\begin{aligned}
+\int_{-\pi/2}^{\pi/2}\log|1-re^{ix}|\,dx
+&=-2\Re\sum_{n=1}^\infty
+{r^n\sin(n\pi/2)\over n^2}\\
+&=-2\Re\left(
+{\Li_2(ir)-\Li_2(-ir)\over2i}
+\right),
+\end{aligned}
+\]
+where
+\[
+\Li_2(z)=\sum_{n=1}^\infty {z^n\over n^2},
+\qquad |z|\le1.
+\]
+For $|r|=1$ the same formula follows by radial passage to the limit. The only
+possible singularities of the logarithm on the integration interval are
+logarithmic and hence integrable, while the dilogarithm series is absolutely
+convergent on the closed unit disk.
+
+Thus
+\[
+\boxed{
+I(a)
+=-4\Re\left(
+{\Li_2(ir)-\Li_2(-ir)\over2i}
+\right)
+-\pi\log|1+r^2|,
+}
+\]
+where $r$ is either root of $ar^2-2r+a=0$ with $|r|\le1$.
+For $a=0$, take $r=0$; the same formula gives $I(0)=0$.
 :::
-The numerator factors as $-a(z - \alpha)(z - \beta)$ where $\alpha\beta = -1$?
-From $a z^2 - 2i z - a = 0$: roots $z = \frac{2i \pm \sqrt{-4 + 4a^2}}{2a} = \frac{i \pm \sqrt{a^2 - 1}}{a}$.
-The standard computation: $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta = \int_0^\pi \log\abs{1 - a\cos\theta}\,d\theta$ (shift) $= 2\pi \log\qty(\frac{1 + \sqrt{1 - a^2}}{2})$ for $|a| \le 1$, and $\pi \log\frac{|a|}{2} + \pi\log\qty(1 + \sqrt{1 - 1/a^2})$... To keep this rigorous and uniform in $a \in \CC$: use Jensen's formula: $\int_0^{2\pi} \log\abs{1 - \frac{a}{2}(e^{i\theta} - e^{-i\theta})/i}\,d\theta$: with $z = e^{i\theta}$, $\int_0^{2\pi} \log\abs{g(e^{i\theta})}\,d\theta$ for $g(z) = 1 + \frac{a}{2i}(z - z^{-1}) = \frac{az^2 + 2iz - a}{2iz}$.
-The zeros of the numerator inside the unit disk contribute $-2\pi\log\abs{\text{leading coeff}}$... by Jensen, $\int_0^{2\pi}\log\abs{g(e^{i\theta})}\,d\theta = 2\pi\log\abs{g(0)} + 2\pi \sum_{|z_k| < 1} \log\abs{z_k}^{-1}$... Rather than belabor: the intended answer for $a \in \CC$ with $\abs{a} \le 1$ is $2\pi\log\qty(\frac{1 + \sqrt{1-a^2}}{2})$, and for general $a$ it extends analytically.
-Since the problem allows any $a \in \CC$, give the result for $|a| \le 1$ (where $\sqrt{1-a^2}$ is the principal branch): $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta = \pi\log\qty(\frac{1 + \sqrt{1 - a^2}}{2})$ — wait, factor: $\int_0^\pi$ vs $\int_0^{2\pi}$: by evenness about $\pi/2$?
-$\sin\theta$ on $[0, \pi]$ — shift by $\pi/2$: $\int_0^\pi \log\abs{1 - a\cos\theta}\,d\theta$; then by symmetry this is half of $\int_0^{2\pi}\log\abs{1 - a\cos\theta}\,d\theta$.
-Jensen on $1 - \frac a2(z + z^{-1}) = \frac{-a z^2 + 2z - a}{2z}$... standard result: $\int_0^{2\pi} \log\abs{1 - a\cos\theta}\,d\theta = 2\pi\log\frac{1 + \sqrt{1 - a^2}}{2}$ for $|a| \le 1$.
-Hence $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta = \pi \log\qty(\frac{1 + \sqrt{1-a^2}}{2})$ for $\abs{a} \le 1$; for $\abs{a} > 1$ the value is $\pi\log\frac{\abs a}{2}$ shifted appropriately (the zeros move outside/inside; give the analytic continuation).
 
 <1>9. Q.E.D.
 ::: {.proof}

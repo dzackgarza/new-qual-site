@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAD
 kind: problem
-title: "for each , there is a unique such that $$"
+title: Unique nearest-point projection onto a closed convex subset of a Hilbert space
 classification:
   areas:
   - real-analysis
@@ -13,6 +13,13 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 4 of the Fall 2002 JHU real-analysis qualifying exam in the preserved compiled source.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29

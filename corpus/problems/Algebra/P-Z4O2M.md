@@ -17,6 +17,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -29,47 +32,28 @@ Let $R$ and $S$ be commutative rings with multiplicative identity.
 :::
 
 ::: {.solution}
-**Part 1.**
+Let $R$ be a field and let
+\[
+\phi:R\to S
+\]
+be a nonzero ring homomorphism. Its kernel is an ideal of $R$, so
+\[
+\ker\phi=(0)\quad\text{or}\quad R.
+\]
+The second possibility would make $\phi$ the zero map. Hence
+\[
+\ker\phi=(0),
+\]
+so $\phi$ is injective. This argument does not require a convention that ring homomorphisms preserve $1$.
 
-<1>1. $\ker \phi$ is an ideal of $R$.
-::: {.proof}
-the kernel of a ring homomorphism is always an ideal.
-:::
-
-<1>2. Since $R$ is a field, its only ideals are $(0)$ and $R$.
-::: {.proof}
-a field has no nontrivial ideals.
-:::
-
-<1>3. $\ker \phi \neq R$.
-::: {.proof}
-$\phi$ is nonzero, so $\phi(1) = 1 \neq 0$ (a nonzero homomorphism of unital rings sends $1$ to $1$), hence $1 \notin \ker \phi$.
-:::
-
-<1>4. Hence $\ker \phi = (0)$, so $\phi$ is injective.
-::: {.proof}
-<1>2 and <1>3.
-:::
-
-**Part 2.**
-
-<1>1. No, the statement fails if $R$ is only assumed to be a domain.
-::: {.proof}
-exhibit a counterexample.
-:::
-
-<1>2. Counterexample: $R = \ZZ$ (a domain) and $S = \ZZ/2\ZZ$, with $\phi: \ZZ \to \ZZ/2\ZZ$ the reduction mod $2$.
-::: {.proof}
-$\phi$ is a nonzero ring homomorphism.
-:::
-
-<1>3. $\phi$ is not injective.
-::: {.proof}
-$\phi(2) = 0$ but $2 \neq 0$, so $\ker \phi = 2\ZZ \neq 0$.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>4 (part 1) and <1>2–<1>3 (part 2).
-:::
+The statement fails for integral domains. For example,
+\[
+\mathbb Z\to\mathbb Z/2\mathbb Z,
+\qquad n\mapsto n\bmod2,
+\]
+is a nonzero ring homomorphism, but
+\[
+\ker\phi=2\mathbb Z\ne0.
+\]
+Thus a nonzero homomorphism from a domain need not be injective.
 :::

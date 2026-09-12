@@ -28,7 +28,7 @@ What is $H_1(X; \mathbb{Z})$?
 ::: {.solution}
 <1>1. $H_1(X_n) = \ZZ$ for each $n$.
 ::: {.proof}
-$X_n$ is homotopy equivalent to $S^1$ (each cylinder $S^1 \times I$ deformation retracts onto $S^1$, and the gluing maps are homotopy equivalences on $S^1$), so $H_1(X_n) = H_1(S^1) = \ZZ$.
+The union of $C_k$ with the bottom circle of $C_{k+1}$ is the mapping cylinder of the degree-$k$ attaching map $S^1\to S^1$. A mapping cylinder deformation retracts onto its target, regardless of whether the attaching map is a homotopy equivalence. Iterating these retractions collapses the finite telescope $X_n$ onto the terminal circle in $C_n$. Hence $X_n\simeq S^1$ and $H_1(X_n)\cong\ZZ$.
 :::
 
 <1>2. The inclusion $X_n \hookrightarrow X_{n+1}$ induces on $H_1$ the map $\ZZ \to \ZZ$ given by multiplication by $n$.

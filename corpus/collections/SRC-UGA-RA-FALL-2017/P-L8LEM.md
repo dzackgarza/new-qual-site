@@ -12,6 +12,17 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against Problem 6 of the UGA Fall 2017 real-analysis qualifying exam recorded by SRC-UGA-RA-FALL-2017.
+- event: solution-written
+  by: prior-author
+  date: 2026-08-25
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -22,7 +33,7 @@ $$
 Prove that this norm is complete.
 :::
 
-::: {.solution}
+::: solution
 The maximum exists for each $f\in C_{\mathbb{R}}(X)$ because $X$ is compact and $x\mapsto |f(x)|$ is continuous, so the expression is a genuine norm.
 
 Let $\{f_n\}$ be Cauchy in this norm.

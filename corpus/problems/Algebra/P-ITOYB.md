@@ -11,40 +11,66 @@ classification:
   - Torsion
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Similarly, since $R/(p)$ is a field, it suffices to show that $R/(p)\actson A[p]$ defines a module.
-
-$r\cdot(x + y) = rx + ry$:
+Let $R$ be a commutative ring, let $A$ be an $R$-module, and let $p\in R$.
+Define
 \[
-\begin{align*}
-r + (p) \actson (a + a') &\definedas r(a + a') \\
-&= ra + ra' \\
-&= r\actson a + r\actson a'
-.\end{align*}
+A[p]=\{a\in A:pa=0\}.
 \]
-$(r + s)\cdot x = rx + sx$:
+Show that $A[p]$ is naturally an $R/(p)$-module.
+:::
+
+::: {.solution}
+Define
 \[
-\begin{align*}
-r + s + (p) \actson a &= (r+s)a \\
-&= ra + sa \\
-&= r\actson a + s\actson a
-.\end{align*}
+(r+(p))\cdot a:=ra,
+\qquad r\in R,\ a\in A[p].
 \]
 
-$rs\cdot x = r\cdot (s\cdot x)$:
+<1>1. The action is well defined with respect to the residue class of $r$.
+::: {.proof}
+If $r-r'\in(p)$, write $r-r'=sp$. Then for $a\in A[p]$,
 \[
-\begin{align*}
-rs + (p) \actson a &= rsa \\
-&= r \actson sa \\
-&= r \actson s \actson a
-.\end{align*}
+ra-r'a=(r-r')a=spa=s(pa)=0.
 \]
-$1\cdot x = x$:
+Hence $ra=r'a$.
+:::
+
+<1>2. The action preserves $A[p]$.
+::: {.proof}
+If $a\in A[p]$, then
 \[
-\begin{align*}
-1_R + (p) \actson a &= 1a = a
-.\end{align*}
+p(ra)=r(pa)=0
 \]
+by commutativity of $R$. Thus $ra\in A[p]$.
+:::
+
+<1>3. The module axioms descend from the $R$-module structure on $A$.
+::: {.proof}
+For $r,s\in R$ and $a,b\in A[p]$,
+\[
+(r+(p))\cdot(a+b)=ra+rb,
+\]
+\[
+((r+s)+(p))\cdot a=ra+sa,
+\]
+\[
+((rs)+(p))\cdot a=(r+(p))\cdot((s+(p))\cdot a),
+\]
+and
+\[
+(1+(p))\cdot a=a.
+\]
+:::
+
+Therefore $A[p]$ is naturally an $R/(p)$-module. If $(p)$ is maximal, then $R/(p)$ is a field and $A[p]$ is consequently a vector space over that field.
 :::

@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
+  note: Verified the inverse-character and conjugacy argument.
 ---
 
 ::: problem
@@ -23,7 +27,7 @@ Let $g\in G$ be a group element such that $g$ is conjugate to $g^{-1}$.
 Prove that $\chi(g)$ is a real number.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\chi(g) \in \mathbb{R}$ for the character $\chi$ of a finite-dimensional complex representation $\rho: G \to \operatorname{GL}(V)$ of a finite group $G$, given that $g$ is conjugate to $g^{-1}$ in $G$.
 
 <1>1. Characters satisfy $\chi(g^{-1}) = \overline{\chi(g)}$ for all $g \in G$:

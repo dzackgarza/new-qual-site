@@ -12,33 +12,57 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against the UGA Spring 2017 real-analysis qualifying exam recorded by SRC-UGA-RA-SPRING-2017.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-08
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
 ---
 
-Let $f(x, y)$ on $[-1, 1]^2$ be defined by 
-$$
-f(x, y) = \begin{cases}
-\frac{x y}{\left(x^{2}+y^{2}\right)^{2}} & (x, y) \neq (0, 0) \\
-0 & (x, y) = (0, 0)
-\end{cases}
-$$
-Determine if $f$ is integrable.
 
-:::{.concept}
-\envlist
-- Just Calculus.
-- $1/r$ is not integrable on $(0, 1)$.
+::: problem
+Let $f$ on $[-1,1]^2$ be defined by
+\[
+f(x,y)=
+\begin{cases}
+\dfrac{xy}{(x^2+y^2)^2},&(x,y)\ne(0,0),\\
+0,&(x,y)=(0,0).
+\end{cases}
+\]
+Determine whether $f$ is Lebesgue integrable.
 :::
 
-:::{.solution}
-Switching to polar coordinates and integrating over the quarter of the unit disc $D \intersect Q_1 \subseteq I^2$ in quadrant 1, we have
+::: solution
+The function is measurable. To test Lebesgue integrability, consider its absolute value on the sector
 \[
-\int_{I^2} f \, dA
-&\geq \int_D f \, dA \\
-&= \int_0^{\pi/2} \int_0^1 \frac{r^2 \cos(\theta)\sin(\theta)}{r^4} ~r~\dr\dtheta  \\
-&= \int_0^{\pi/2} \int_0^1 \frac{\cos(\theta)\sin(\theta)}{r} \dr\dtheta  \\
-&= \qty{ \int_0^1 {1\over r } \dr} \qty{ \int_0^{\pi/2} \cos(\theta)\sin(\theta) \dtheta }  \\
-&= \qty{ \int_0^1 {1\over r } \dr} \qty{ \int_0^{1} u \du }  && u=\sin(\theta)\\
-&= {1\over 2}\qty{ \int_0^1 {1\over r } \dr} \\
-&\too \infty
-.\]
+S:=\{(r\cos\theta,r\sin\theta):0<r<1,\ \pi/6\le\theta\le\pi/3\}.
+\]
+This sector lies inside $[-1,1]^2$. In polar coordinates,
+\[
+|f(r\cos\theta,r\sin\theta)|
+=\frac{|\cos\theta\sin\theta|}{r^2}.
+\]
+On $[\pi/6,\pi/3]$, the factor $|\cos\theta\sin\theta|$ is bounded below by a positive constant. Therefore
+\[
+\begin{aligned}
+\int_{[-1,1]^2}|f(x,y)|\,dx\,dy
+&\ge \int_S|f|\\
+&=\int_{\pi/6}^{\pi/3}\int_0^1
+\frac{\cos\theta\sin\theta}{r^2}\,r\,dr\,d\theta\\
+&=\left(\int_{\pi/6}^{\pi/3}\cos\theta\sin\theta\,d\theta\right)
+\left(\int_0^1\frac{dr}{r}\right)\\
+&=\infty.
+\end{aligned}
+\]
+Hence
+\[
+\boxed{f\notin L^1([-1,1]^2).}
+\]
+So $f$ is not Lebesgue integrable.
 :::

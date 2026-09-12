@@ -16,53 +16,55 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Re-derived the Sylow and semidirect-product classification concisely.
 ---
 
 ::: {.exercise}
 Analyze groups of order $pq$ with $q<p$ prime.
 
 - Show that $G$ is never simple.
-
-- Show that if $q$ does not divide $p-1$, then $G$ is cyclic.
-
-- Classify $G$ when $q \mid (p-1)$.
+- Show that if $q\nmid p-1$, then $G$ is cyclic.
+- Classify $G$ when $q\mid p-1$.
 :::
 
-::: solution
-**Goal:** Classify all groups $G$ of order $pq$ where $p, q$ are primes with $q < p$.
+::: {.solution}
+Let $|G|=pq$ with primes $q<p$.
 
-<1>1. $G$ is never simple ($P \trianglelefteq G$):
-    *Proof:*
-    <2>1. By the Sylow theorems, the number $n_p$ of Sylow $p$-subgroups satisfies:
-        $$n_p \equiv 1 \pmod p \quad \text{and} \quad n_p \mid q.$$
-    <2>2. The only divisors of $q$ are $1$ and $q$.
-    <2>3. Since $q < p$, $q \not\equiv 1 \pmod p$ (because $q - 1 < p - 1 < p$).
-    <2>4. Thus $n_p = 1$, which means the unique Sylow $p$-subgroup $P \in \operatorname{Syl}_p(G)$ is normal ($P \trianglelefteq G$).
-    <2>5. Because $1 < |P| = p < pq$, $P$ is a proper non-trivial normal subgroup, so $G$ is never simple.
+<1>1. The Sylow $p$-subgroup is normal.
+::: {.proof}
+Its number $n_p$ satisfies
+\[
+n_p\mid q,\qquad n_p\equiv1\pmod p.
+\]
+Since $q<p$, the possibility $n_p=q$ is impossible, hence $n_p=1$. Thus the Sylow $p$-subgroup $P\cong C_p$ is normal, so $G$ is not simple.
+:::
 
-<1>2. Semidirect product decomposition:
-    *Proof:*
-    <2>1. Let $Q \in \operatorname{Syl}_q(G)$ be a Sylow $q$-subgroup, so $P \cong \mathbb{Z}_p$ and $Q \cong \mathbb{Z}_q$.
-    <2>2. Since $\gcd(p, q) = 1$, Lagrange's Theorem implies $P \cap Q = \{e\}$.
-    <2>3. Because $|PQ| = pq = |G|$ and $P \trianglelefteq G$, $G$ is an internal semidirect product:
-        $$G \cong P \rtimes_\theta Q \cong \mathbb{Z}_p \rtimes_\theta \mathbb{Z}_q,$$
-        where $\theta: \mathbb{Z}_q \to \operatorname{Aut}(\mathbb{Z}_p)$ is the conjugation homomorphism.
+<1>2. Every such group is a semidirect product $C_p\rtimes C_q$.
+::: {.proof}
+Let $Q$ be a Sylow $q$-subgroup. Then $P\cap Q=1$ and $|PQ|=pq$, so $G=PQ$. Since $P\trianglelefteq G$,
+\[
+G\cong P\rtimes Q\cong C_p\rtimes_\theta C_q,
+\]
+where $\theta:C_q\to\operatorname{Aut}(C_p)\cong C_{p-1}$.
+:::
 
-<1>3. If $q \nmid (p - 1)$, then $G$ is cyclic:
-    *Proof:*
-    <2>1. The automorphism group is $\operatorname{Aut}(\mathbb{Z}_p) \cong (\mathbb{Z}/p\mathbb{Z})^\times \cong \mathbb{Z}_{p-1}$, which has order $p - 1$.
-    <2>2. The image of any homomorphism $\theta: \mathbb{Z}_q \to \mathbb{Z}_{p-1}$ has order dividing both $|\mathbb{Z}_q| = q$ and $|\mathbb{Z}_{p-1}| = p - 1$.
-    <2>3. Since $q$ is prime and $q \nmid (p - 1)$, $\gcd(q, p - 1) = 1$.
-    <2>4. Thus the only homomorphism $\theta$ is the trivial homomorphism $\theta(x) = \operatorname{id}$.
-    <2>5. Therefore $G \cong \mathbb{Z}_p \times \mathbb{Z}_q \cong \mathbb{Z}_{pq}$, which is cyclic.
+<1>3. If $q\nmid p-1$, then $G\cong C_{pq}$.
+::: {.proof}
+The image of $\theta$ has order dividing both $q$ and $p-1$. If $q\nmid p-1$, the image is trivial. Hence
+\[
+G\cong C_p\times C_q\cong C_{pq}.
+\]
+:::
 
-<1>4. Classification when $q \mid (p - 1)$:
-    *Proof:*
-    <2>1. If $q \mid (p - 1)$, the cyclic group $\operatorname{Aut}(\mathbb{Z}_p) \cong \mathbb{Z}_{p-1}$ contains a unique subgroup of order $q$.
-    <2>2. There are $q$ homomorphisms $\theta: \mathbb{Z}_q \to \operatorname{Aut}(\mathbb{Z}_p)$, consisting of $1$ trivial homomorphism and $q - 1$ non-trivial homomorphisms.
-    <2>3. The $q - 1$ non-trivial homomorphisms share the same image and differ only by an automorphism of the domain $\mathbb{Z}_q$, so they all yield isomorphic semidirect products.
-    <2>4. Thus there are exactly $2$ isomorphism classes: the cyclic group $\mathbb{Z}_{pq}$ and a unique non-abelian group $\mathbb{Z}_p \rtimes \mathbb{Z}_q$.
-
-<1>5. Conclusion:
-    $G$ is never simple; $G \cong \mathbb{Z}_{pq}$ whenever $q \nmid (p-1)$; and $G$ is either $\mathbb{Z}_{pq}$ or $\mathbb{Z}_p \rtimes \mathbb{Z}_q$ when $q \mid (p-1)$. Q.E.D.
+<1>4. If $q\mid p-1$, there are exactly two isomorphism types.
+::: {.proof}
+Because $C_{p-1}$ is cyclic, it has a unique subgroup of order $q$. Thus there is the trivial action, giving $C_{pq}$, and a nontrivial action with image that unique subgroup. Any two nontrivial homomorphisms $C_q\to C_{p-1}$ differ by an automorphism of $C_q$, hence yield isomorphic semidirect products. Therefore the two groups are
+\[
+C_{pq},\qquad C_p\rtimes C_q
+\]
+with the latter the unique nonabelian isomorphism type.
+:::
 :::

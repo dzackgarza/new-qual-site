@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,37 +26,17 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let $G = S_3$ act on the set $\{1, 2, 3\}$ by the natural permutation action.
-::: {.proof}
-choose a concrete group action.
-:::
-
-<1>2. The stabilizer of $1$ is $G_1 = \{e, (23)\}$.
-::: {.proof}
-the permutations fixing $1$ are the identity and the transposition $(23)$.
-:::
-
-<1>3. $G_1$ is not normal in $S_3$.
-<2>1. Conjugate $(23)$ by $(12)$: $(12)(23)(12)^{-1} = (13)$.
-::: {.proof}
-direct computation of the conjugate.
-:::
-<2>2. $(13) \notin G_1$.
-::: {.proof}
-$(13)$ does not fix $1$.
-:::
-<2>3. Hence $G_1$ is not closed under conjugation, so it is not normal.
-::: {.proof}
-<2>1 and <2>2.
-:::
-
-<1>4. Therefore the stabilizer of an element need not be a normal subgroup.
-::: {.proof}
-<1>3 gives a counterexample.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
-:::
+Let $S_3$ act naturally on $\{1,2,3\}$. The stabilizer of $1$ is
+\[
+G_1=\{e,(23)\}.
+\]
+But
+\[
+(12)(23)(12)^{-1}=(13)\notin G_1.
+\]
+Hence $G_1$ is not invariant under conjugation, so
+\[
+G_1\not\trianglelefteq S_3.
+\]
+Thus stabilizers need not be normal subgroups.
 :::

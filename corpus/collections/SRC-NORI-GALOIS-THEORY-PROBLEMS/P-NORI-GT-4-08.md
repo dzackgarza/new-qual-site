@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: P-NORI-GT-4-08
+kind: problem
+title: Nori Galois theory problem 4.8
+classification:
+  areas: [algebra]
+  topics: []
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against problem 4.8 of the retained Nori Galois Theory Problems PDF.
+---
+
+::: {.problem}
+Let $q = p ^ { k }$ where p is a prime.
+Let E be a finite field extension of $\mathbb { F } _ { q }$ of degree n. Prove that E is a Galois extension of $\mathbb { F } _ { q }$ . Define $\sigma ( x ) = x ^ { q }$ for all $x \in E$ . Prove that $\sigma$ belongs to $\operatorname { G a l } ( E / \mathbb { F } _ { q } )$ , and in fact generates this group.
+:::

@@ -12,6 +12,12 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-10
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-10
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
@@ -35,7 +41,9 @@ every element of $V \otimes W$ is a finite sum of pure tensors $v \otimes w$, an
 
 <1>3. The set $\{v_i \otimes w_j\}$ is linearly independent.
 ::: {.proof}
-for each pair $(i, j)$, define the bilinear map $\varphi_{ij} : V \times W \to \mathbb{C}$ by $\varphi_{ij}(v, w) = v_i^*(v) w_j^*(w)$ (where $v_i^*, w_j^*$ are the dual basis functionals). By the universal property, $\varphi_{ij}$ induces a linear map $\tilde\varphi_{ij} : V \otimes W \to \mathbb{C}$ with $\tilde\varphi_{ij}(v_p \otimes w_q) = \delta_{ip}\delta_{jq}$. If $\sum_{i,j} c_{ij}(v_i \otimes w_j) = 0$, applying $\tilde\varphi_{ij}$ gives $c_{ij} = 0$ for each $(i,j)$.
+for each pair $(i, j)$, define the bilinear map $\varphi_{ij} : V \times W \to \mathbb{C}$ by $\varphi_{ij}(v, w) = v_i^*(v) w_j^*(w)$ (where $v_i^*, w_j^*$ are the dual basis functionals).
+By the universal property, $\varphi_{ij}$ induces a linear map $\tilde\varphi_{ij} : V \otimes W \to \mathbb{C}$ with $\tilde\varphi_{ij}(v_p \otimes w_q) = \delta_{ip}\delta_{jq}$.
+If $\sum_{i,j} c_{ij}(v_i \otimes w_j) = 0$, applying $\tilde\varphi_{ij}$ gives $c_{ij} = 0$ for each $(i,j)$.
 :::
 
 <1>4. Hence $\{v_i \otimes w_j\}$ is a basis of $V \otimes W$.

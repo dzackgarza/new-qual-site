@@ -11,20 +11,40 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-8. $\displaystyle \int \frac {1}{\sqrt {x^2 + 25}} ~dx = \ln (\frac {x}{5} + \sec (\tan ^ {-1} (\frac {x}{5}))) = \color {blue} {\ln(x + \sqrt {x^2+25})}$
+Evaluate
+\[
+\int\frac{dx}{\sqrt{x^2+25}}
+\qquad\text{and}\qquad
+\int\frac{dx}{(1+x^2)^{3/2}}.
+\]
+:::
 
-- **Solution:** $\tan (u) = \frac {1}{5} x$, $\sec ^2 (u) ~du = \frac {1}{5} ~dx$
+::: solution
+For the first integral, the standard hyperbolic/trigonometric substitution gives
+\[
+\boxed{\int\frac{dx}{\sqrt{x^2+25}}
+=\ln\!\left(x+\sqrt{x^2+25}\right)+C.}
+\]
+The logarithm's argument is positive for every real $x$.
 
-- **Solution:** $\frac {1}{\sec (u)} \cdot \sec ^2 (u) ~du = \sec (u) ~du$
-
-- **Used 2018**, *Unsolved*
-
-9. $\displaystyle \int \frac {1}{(1+x^2)^{\frac {3}{2}}} ~dx = \sin (\tan ^{-1} (x)) = \color {blue} {\frac {x}{\sqrt {1+x^2}}}$
-
-- **Solution:** $\tan (u) = x$, $\sec ^2 (u) ~du = dx$
-
-- **Solution:** $\frac {1}{(1+x^2)^{\frac {3}{2}}} ~dx = \frac {1}{\sec ^3 (u)} \cdot \sec ^2 (u) ~du = \cos (u) ~du$
+For the second,
+\[
+\frac{d}{dx}\left(\frac{x}{\sqrt{1+x^2}}\right)
+=\frac1{(1+x^2)^{3/2}},
+\]
+so
+\[
+\boxed{\int\frac{dx}{(1+x^2)^{3/2}}
+=\frac{x}{\sqrt{1+x^2}}+C.}
+\]
 :::

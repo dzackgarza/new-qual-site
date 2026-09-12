@@ -151,46 +151,35 @@ $\qed$
 :::
 
 ::: {.solution}
-**Goal.** Show a self-adjoint operator has real eigenvalues and is unitarily diagonalizable.
+Let $A$ be self-adjoint on a finite-dimensional complex inner-product space.
 
-<1>1. Every eigenvalue of $A$ is real.
-<2>1. Let $A\vector v = \lambda \vector v$ with $\vector v \neq 0$.
-::: {.proof}
-take an eigenpair.
-:::
-<2>2. $\inner{A\vector v}{\vector v} = \lambda \norm{\vector v}^2$.
-::: {.proof}
-$\inner{A\vector v}{\vector v} = \inner{\lambda \vector v}{\vector v} = \lambda \inner{\vector v}{\vector v}$.
-:::
-<2>3. $\inner{A\vector v}{\vector v} = \overline{\lambda} \norm{\vector v}^2$.
-::: {.proof}
-$\inner{A\vector v}{\vector v} = \inner{\vector v}{A^*\vector v} = \inner{\vector v}{A\vector v} = \inner{\vector v}{\lambda \vector v} = \overline{\lambda}\inner{\vector v}{\vector v}$.
-:::
-<2>4. Hence $\lambda = \overline{\lambda}$, so $\lambda \in \RR$.
-::: {.proof}
-equate <2>2 and <2>3 and divide by $\norm{\vector v}^2 \neq 0$.
-:::
+If $Av=\lambda v$ with $v\ne0$, then
+\[
+\lambda\langle v,v\rangle
+=\langle Av,v\rangle
+=\langle v,Av\rangle
+=\overline\lambda\langle v,v\rangle.
+\]
+Hence $\lambda=\overline\lambda$, so every eigenvalue is real.
 
-<1>2. $A$ is unitarily diagonalizable.
-<2>1. By Schur's theorem, $A = UTU\inv$ with $U$ unitary and $T$ upper triangular.
-::: {.proof}
-Schur's theorem.
-:::
-<2>2. $T^* = T$.
-::: {.proof}
-$T = U\inv A U = U^* A U$, so $T^* = (U^* A U)^* = U^* A^* U = U^* A U = T$.
-:::
-<2>3. $T$ is diagonal.
-::: {.proof}
-$T$ is upper triangular and $T^* = T$ forces $T_{ij} = 0$ for $i \neq j$.
-:::
-<2>4. Hence $A$ is unitarily similar to a diagonal matrix.
-::: {.proof}
-<2>1 and <2>3.
-:::
+For diagonalization, Schur's theorem gives a unitary $U$ such that
+\[
+T=U^*AU
+\]
+is upper triangular. Since $A^*=A$,
+\[
+T^*=U^*A^*U=U^*AU=T.
+\]
+An upper-triangular self-adjoint matrix is diagonal: upper triangularity gives $T_{ij}=0$ for $i>j$, and $T=T^*$ then gives $T_{ij}=0$ also for $i<j$. Thus $T$ is diagonal and
+\[
+A=UTU^*
+\]
+is unitarily diagonalizable.
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 and <1>2.
-:::
+For completeness, Schur's theorem itself follows by induction on dimension. Choose an eigenvector $v$ of $A^*$; then $v^\perp$ is $A$-invariant because
+\[
+\langle v,Aw\rangle=\langle A^*v,w\rangle=0
+\qquad(w\in v^\perp).
+\]
+Apply induction to $A|_{v^\perp}$ and place $v$ last in the resulting orthonormal basis.
 :::

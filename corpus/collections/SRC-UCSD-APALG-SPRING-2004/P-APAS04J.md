@@ -23,3 +23,80 @@ Here if $n\ge 0$, then we can define $n\cdot 1$ by induction as $0\cdot 1=0$, $1
 
 (c) Prove that either $C$ is isomorphic to $\mathbb{Z}$ or $C$ is isomorphic to $\mathbb{Z}_p$ for some prime $p$.
 :::
+
+::: {.solution}
+<1>1. One has
+\[
+C=\{n\cdot1:n\in\mathbb Z\},
+\]
+and this is a subring of $R$.
+::: {.proof}
+The set
+\[
+D:=\{n\cdot1:n\in\mathbb Z\}
+\]
+contains $0$ and $1$, and is closed under addition and additive inverses because
+\[
+(m\cdot1)+(n\cdot1)=(m+n)\cdot1,
+\qquad
+-(n\cdot1)=(-n)\cdot1.
+\]
+Thus $D$ is an additive subgroup of $R$ containing $1$. By minimality of $C$, we have $C\subseteq D$. Conversely, every additive subgroup containing $1$ contains every integer multiple $n\cdot1$, so $D\subseteq C$. Hence $C=D$.
+
+Moreover
+\[
+(m\cdot1)(n\cdot1)=(mn)\cdot1,
+\]
+so $C$ is closed under multiplication and is therefore a subring of $R$.
+:::
+
+<1>2. The map
+\[
+\phi:\mathbb Z\to C,
+\qquad
+\phi(n)=n\cdot1,
+\]
+is a surjective ring homomorphism.
+::: {.proof}
+For $m,n\in\mathbb Z$,
+\[
+\phi(m+n)=(m+n)\cdot1=m\cdot1+n\cdot1=\phi(m)+\phi(n),
+\]
+and
+\[
+\phi(mn)=(mn)\cdot1=(m\cdot1)(n\cdot1)=\phi(m)\phi(n).
+\]
+Also $\phi(1)=1$. By <1>1, every element of $C$ is $n\cdot1$ for some $n\in\mathbb Z$, so $\phi$ is surjective.
+:::
+
+<1>3. Either
+\[
+C\cong\mathbb Z
+\]
+or
+\[
+C\cong\mathbb Z/p\mathbb Z
+\]
+for some prime $p$.
+::: {.proof}
+Because $C$ is a subring of the integral domain $R$, it is itself an integral domain. Hence the kernel of the surjective homomorphism $\phi:\mathbb Z\to C$ is a prime ideal of $\mathbb Z$.
+
+Every ideal of $\mathbb Z$ is of the form $d\mathbb Z$ for a unique $d\ge0$. If $d>0$ and $d\mathbb Z$ is prime, then $d$ must be prime: if $d=ab$ with $1<a,d$ and $1<b<d$, then
+\[
+ab\in d\mathbb Z
+\]
+but neither $a$ nor $b$ lies in $d\mathbb Z$, contradicting primality. Thus
+\[
+\ker\phi=0
+\quad\text{or}\quad
+\ker\phi=p\mathbb Z
+\]
+for a prime $p$.
+
+By the first isomorphism theorem for rings,
+\[
+C\cong\mathbb Z/\ker\phi.
+\]
+Therefore either $C\cong\mathbb Z$, or $C\cong\mathbb Z/p\mathbb Z=\mathbb Z_p$ for some prime $p$.
+:::
+:::

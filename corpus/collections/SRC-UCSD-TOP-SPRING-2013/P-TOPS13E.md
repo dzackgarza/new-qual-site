@@ -46,7 +46,15 @@ definition.
 
 <1>4. $h$ is nullhomotopic.
 ::: {.proof}
-$\eta$ is nullhomotopic in $\RR^3 \setminus \{0\}$ (the loop $\eta$ bounds a disk in the $xy$-plane not passing through $0$... more precisely, $\eta$ is homotopic to a constant via the homotopy that shrinks the circle to a point in the plane $z=0$ avoiding the origin), so $h = g \circ \eta$ is nullhomotopic.
+The loop $\eta$ contracts to the north pole inside $\RR^3\setminus\{0\}$ via
+$$
+H(s,t)=(1-t)\eta(s)+t(0,0,1).
+$$
+Indeed
+$$
+\|H(s,t)\|^2=(1-t)^2+t^2>0
+$$
+for every $t\in[0,1]$, so this homotopy never meets the origin. Therefore $\eta$ is nullhomotopic, and so is $h=g\circ\eta$.
 :::
 
 <1>5. Hence $h$ has degree $0$.
@@ -59,9 +67,21 @@ a nullhomotopic map $S^1 \to S^1$ has degree $0$.
 ::: {.proof}
 $\eta(s + 1/2) = -\eta(s)$ and $g(-x) = -g(x)$.
 :::
-<2>2. A map $h: S^1 \to S^1$ with $h(s + 1/2) = -h(s)$ has odd degree.
+<2>2. A map $h:S^1\to S^1$ with $h(s+1/2)=-h(s)$ has odd degree.
 ::: {.proof}
-such a map factors through the antipodal map of $S^1$; the induced map on $\pi_1(S^1) = \ZZ$ sends the generator to an odd multiple of itself (the antipodal map has degree $1$ on $S^1$... more precisely, $h$ is equivariant for the antipodal $\ZZ/2$-action, so it descends to a map $\RP^1 \to \RP^1$ of degree $1$, forcing $h$ to have odd degree).
+Write $S^1=\RR/\ZZ$ and choose a lift $\widetilde h:\RR\to\RR$ of $h$. There is an integer $d=\deg h$ such that
+$$
+\widetilde h(s+1)=\widetilde h(s)+d.
+$$
+The equivariance relation implies
+$$
+\widetilde h(s+1/2)-\widetilde h(s)-1/2\in\ZZ.
+$$
+The left side is continuous in $s$ and integer-valued, hence is a constant integer $k$. Applying this relation twice gives
+$$
+\widetilde h(s+1)=\widetilde h(s)+1+2k.
+$$
+Thus $d=1+2k$ is odd.
 :::
 
 <1>7. Contradiction.

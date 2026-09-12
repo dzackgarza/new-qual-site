@@ -12,16 +12,31 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-4. $\displaystyle \int \frac {x}{\sqrt {4-x^4}} ~dx = \color {blue} {\frac {1}{2} \sin ^{-1} (\frac {x^2}{2})}$
+Evaluate, on an interval where the integrand is real,
+\[
+\int\frac{x}{\sqrt{4-x^4}}\,dx.
+\]
+:::
 
-- **Solution:** $2 \sin (u) = x^2$, $\cos (u) ~du = x ~dx$
-
-- **Solution:** $\frac {1}{\sqrt {4-x^4}} \cdot x ~dx = \frac {1}{2 \cos (u)} \cdot \cos (u) ~du \frac {1}{2} ~du$
-
-- **Another Solution:** $u = \frac {1}{2} x^2$, $du = x ~dx$
-
-- **Another Solution:** $\frac {1}{\sqrt {4-x^4}} \cdot x ~dx = \frac {1}{2 \sqrt {1-u^2}} ~du$
+::: solution
+Let $u=x^2/2$, so $du=x\,dx$ and
+\[
+\sqrt{4-x^4}=2\sqrt{1-u^2}.
+\]
+Therefore
+\[
+\int\frac{x}{\sqrt{4-x^4}}\,dx
+=\frac12\int\frac{du}{\sqrt{1-u^2}}
+=\boxed{\frac12\arcsin\!\left(\frac{x^2}{2}\right)+C.}
+\]
 :::

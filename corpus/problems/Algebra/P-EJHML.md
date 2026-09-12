@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -22,21 +25,29 @@ audit:
 :::
 
 ::: solution
-**Goal:** Prove that $\mathbb{F}_{p^n}$ has a unique subfield of order $p^d$ for each $d \mid n$, and no others.
+Let $F=\mathbb F_{p^n}$. The Frobenius automorphism
+\[
+\varphi(x)=x^p
+\]
+generates
+\[
+\operatorname{Gal}(F/\mathbb F_p)\cong C_n.
+\]
+If $d\mid n$, then $\langle\varphi^d\rangle$ has order $n/d$, so its fixed field has degree $d$ over $\mathbb F_p$ and therefore has $p^d$ elements. Explicitly, that fixed field is
+\[
+F_d=\{x\in F:x^{p^d}=x\}.
+\]
+Thus a subfield of order $p^d$ exists for every $d\mid n$.
 
-<1>1. Existence via fixed field of Frobenius power: *Proof:* <2>1. The Frobenius endomorphism $\varphi: x \mapsto x^p$ generates $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$.
-<2>2. For $d \mid n$, the subgroup $\langle \varphi^d \rangle$ has order $n/d$ and index $d$.
-<2>3. By the Galois correspondence, the fixed field $\mathbb{F}_{p^n}^{\langle \varphi^d \rangle} = \{x \in \mathbb{F}_{p^n} \mid x^{p^d} = x\}$ is a subfield of degree $d$ over $\mathbb{F}_p$.
-<2>4. This fixed field has order $p^d$ and is the splitting field of $x^{p^d} - x$ inside $\mathbb{F}_{p^n}$.
+It is unique. If $K\subseteq F$ has $p^d$ elements, then every $x\in K$ satisfies $x^{p^d}=x$, so
+\[
+K\subseteq F_d.
+\]
+Both fields have $p^d$ elements, hence $K=F_d$.
 
-<1>2. Uniqueness: *Proof:* <2>1. Any subfield $K \le \mathbb{F}_{p^n}$ of order $p^d$ is a copy of $\mathbb{F}_{p^d}$, and its elements are exactly the roots of $x^{p^d} - x$ in $\mathbb{F}_{p^n}$.
-<2>2. The polynomial $x^{p^d} - x$ has at most $p^d$ roots in any field, and the $p^d$ elements of $K$ are all roots.
-<2>3. Thus $K = \{x \in \mathbb{F}_{p^n} \mid x^{p^d} = x\}$ is uniquely determined.
-
-<1>3. Necessity of $d \mid n$: *Proof:* <2>1. If $K \le \mathbb{F}_{p^n}$ is a subfield of order $p^d$, then $\mathbb{F}_{p^n}$ is a vector space over $K$.
-<2>2. Thus $p^n = (p^d)^{[\mathbb{F}_{p^n} : K]}$, which forces $d \mid n$.
-<2>3. Conversely, for $d \mid n$, $x^{p^d} - x$ divides $x^{p^n} - x$ (since $d \mid n \implies (p^d - 1) \mid (p^n - 1)$), so all roots of $x^{p^d} - x$ lie in $\mathbb{F}_{p^n}$.
-
-<1>4. Conclusion: The subfields of $\mathbb{F}_{p^n}$ are exactly $\{\mathbb{F}_{p^d} \mid d \divides n\}$, one for each divisor of $n$.
-Q.E.D.
+Conversely, if $K\subseteq\mathbb F_{p^n}$ has $p^d$ elements, then
+\[
+p^n=|K|^{[F:K]}=p^{d[F:K]},
+\]
+so $d\mid n$. Therefore the subfields of $\mathbb F_{p^n}$ are exactly the unique fields $\mathbb F_{p^d}$ for divisors $d$ of $n$.
 :::

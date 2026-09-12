@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: P-BKF15-2A
+kind: problem
+title: Berkeley Fall 2015 prelim problem 2A
+classification:
+  areas:
+  - prelim
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Show that there is a real-valued function on the real plane that is not continuous, but is continuous when restricted to any straight line.
+:::

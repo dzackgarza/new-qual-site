@@ -11,16 +11,29 @@ classification:
   - u-Substitution
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
-9. $\displaystyle \int \frac {4x^3 + 2x}{x^4 + 1} ~dx = \color{blue} {\ln (x^4 + 1) + \tan ^{-1} (x^2)}$
+Evaluate
+\[
+\int\frac{4x^3+2x}{x^4+1}\,dx.
+\]
+:::
 
-- **Solution:** $u_1 = x^4 + 1$, $du_1 = 4 x^3 ~dx$
-
-- **Solution:** $u_2 = x^2$, $du_2 = 2x ~dx$
-
-- **Solution:** $\frac {4x^3 + 2x}{x^4 + 1} ~dx = \frac {1}{u_1} ~du_1 + \frac {1}{u_2^2 + 1} ~du_2$
-
-- **Used 2019**
+::: solution
+Split the integral:
+\[
+\int\frac{4x^3}{x^4+1}\,dx+\int\frac{2x}{x^4+1}\,dx.
+\]
+The first is $\ln(x^4+1)$. In the second, put $u=x^2$, so $du=2x\,dx$ and the denominator is $u^2+1$. Thus
+\[
+\boxed{\int\frac{4x^3+2x}{x^4+1}\,dx=\ln(x^4+1)+\arctan(x^2)+C.}
+\]
 :::

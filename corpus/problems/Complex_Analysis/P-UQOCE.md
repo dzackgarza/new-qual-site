@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,37 +26,39 @@ For any $z_0 \in D$ not lying on $\gamma$, show that: $$\oint_\gamma \frac{f'(z)
 :::
 
 ::: solution
-Since $z_0\notin\gamma$, the function $f(z)/(z-z_0)$ is defined on a neighborhood of the curve.
-The product rule gives
+Since $z_0\notin\gamma$, the function
 \[
-d\qty({f(z)\over z-z_0})
-=\qty({f'(z)\over z-z_0}-{f(z)\over(z-z_0)^2})\,dz.
+F(z)=\frac{f(z)}{z-z_0}
 \]
-The integral of an exact differential around a closed curve is zero, hence
+is holomorphic on a neighborhood of the curve. Hence
 \[
-\oint_\gamma {f'(z)\over z-z_0}\,dz
-=\oint_\gamma {f(z)\over(z-z_0)^2}\,dz.
+F'(z)=\frac{f'(z)}{z-z_0}-\frac{f(z)}{(z-z_0)^2},
+\]
+and the integral of $F'$ around the closed curve is zero. Therefore
+\[
+\oint_\gamma\frac{f'(z)}{z-z_0}\,dz
+=
+\oint_\gamma\frac{f(z)}{(z-z_0)^2}\,dz.
 \]
 
-More generally, for integers $k\ge1$ and $m\ge1$,
+More generally, for integers $k,m\ge1$,
 \[
-d\qty({f^{(k-1)}(z)\over(z-z_0)^m})
-=\qty(
-{f^{(k)}(z)\over(z-z_0)^m}
--m{f^{(k-1)}(z)\over(z-z_0)^{m+1}}
-)\,dz.
+\left(\frac{f^{(k-1)}(z)}{(z-z_0)^m}\right)'
+=
+\frac{f^{(k)}(z)}{(z-z_0)^m}
+-m\frac{f^{(k-1)}(z)}{(z-z_0)^{m+1}}.
 \]
-Integrating around $\gamma$ therefore gives the recursion
+Thus
 \[
-\oint_\gamma {f^{(k)}(z)\over(z-z_0)^m}\,dz
-=m\oint_\gamma {f^{(k-1)}(z)\over(z-z_0)^{m+1}}\,dz.
+\oint_\gamma\frac{f^{(k)}(z)}{(z-z_0)^m}\,dz
+=m\oint_\gamma\frac{f^{(k-1)}(z)}{(z-z_0)^{m+1}}\,dz.
 \]
-Iterating $k$ times yields
+Iterating gives
 \[
 \boxed{
-\oint_\gamma {f^{(k)}(z)\over(z-z_0)^m}\,dz
-=\frac{(m+k-1)!}{(m-1)!}
-\oint_\gamma {f(z)\over(z-z_0)^{m+k}}\,dz
-}.
+\oint_\gamma\frac{f^{(k)}(z)}{(z-z_0)^m}\,dz
+=
+\frac{(m+k-1)!}{(m-1)!}
+\oint_\gamma\frac{f(z)}{(z-z_0)^{m+k}}\,dz }.
 \]
 :::

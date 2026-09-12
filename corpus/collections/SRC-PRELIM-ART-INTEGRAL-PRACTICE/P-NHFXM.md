@@ -11,38 +11,97 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 ::: problem
-1. $\displaystyle \int \frac {1}{\sin (x) + \cos (x)} ~dx = \color {blue}{\frac {1}{\sqrt {2}} (\ln (\tan (\frac {x}{2}) - 1 + \sqrt {2}) - \ln (\tan (\frac {x}{2}) - 1 - \sqrt {2}))} = \color {blue} {- \frac {1}{\sqrt {2}} \ln (\csc (x + \frac {\pi}{4}) - \cot (x + \frac {\pi}{4}))}$
+Compute, on each interval where the integrand is defined,
+\[
+\int\frac{dx}{\sin x+\cos x},
+\qquad
+\int\frac{\sin x}{1+\sin x}\,dx,
+\qquad
+\int\frac{\sin x}{1-\sin x}\,dx.
+\]
+Also deduce antiderivatives of \(1/(1+\sin x)\) and \(\tan x/(\tan x+\sec x)\).
+:::
 
-- **Solution:** $\frac {1}{\sin (x) + \cos (x)} ~dx = \frac {1}{\frac {2u}{1 + u^2} + \frac {1 - u^2}{1 + u^2}} \cdot  \frac {2}{1 + u^2} ~du = \frac {1 + u^2}{2u + 1 - u^2} \cdot  \frac {2}{1 + u^2} ~du = \frac {1}{\sqrt {2}} (\frac {1}{u + \sqrt {2} - 1} - \frac {1}{u - \sqrt {2} - 1}) ~du​$
+::: solution
+<1>1. Integrate \(1/(\sin x+\cos x)\).
+::: proof
+Since
+\[
+\sin x+\cos x=\sqrt2\sin\left(x+\frac\pi4\right),
+\]
+we obtain
+\[
+\int\frac{dx}{\sin x+\cos x}
+=\frac1{\sqrt2}\int \csc\left(x+\frac\pi4\right)\,dx.
+\]
+Using \(\int\csc u\,du=\log|\tan(u/2)|+C\),
+\[
+\boxed{
+\int\frac{dx}{\sin x+\cos x}
+=\frac1{\sqrt2}\log\left|\tan\left(\frac x2+\frac\pi8\right)\right|+C.}
+\]
+Equivalently this is
+\[
+-\frac1{\sqrt2}\log\left|\csc\left(x+\frac\pi4\right)+\cot\left(x+\frac\pi4\right)\right|+C.
+\]
+:::
 
-- **Another Solution:** $\frac {1}{\sin (x) + \cos (x)} ~dx = \frac {1}{\sqrt {2} \sin (x + \frac {\pi}{4})} ~dx = \frac {1}{\sqrt {2}} \csc (x + \frac {\pi}{4}) ~dx$
+<1>2. Integrate \(\sin x/(1+\sin x)\).
+::: proof
+Write
+\[
+\frac{\sin x}{1+\sin x}=1-\frac1{1+\sin x}.
+\]
+Rationalizing,
+\[
+\frac1{1+\sin x}
+=\frac{1-\sin x}{\cos^2x}
+=\sec^2x-\sec x\tan x.
+\]
+Hence
+\[
+\int\frac{dx}{1+\sin x}=\tan x-\sec x+C,
+\]
+and therefore
+\[
+\boxed{
+\int\frac{\sin x}{1+\sin x}\,dx
+=x+\sec x-\tan x+C.}
+\]
+Since
+\[
+\frac{\tan x}{\tan x+\sec x}=\frac{\sin x}{1+\sin x},
+\]
+the same antiderivative applies to that quotient.
+:::
 
-- $\ln (\csc (x + \frac {\pi}{4}) - \cot (x + \frac {\pi}{4}))​$
-
-- $= \frac {1 - \cos (x + \frac {\pi}{4})}{\sin (x + \frac {\pi}{4})} = \frac {1 - \frac {1}{\sqrt {2}} (- \sin (x) + \cos (x))}{\frac {1}{\sqrt {2}} (\sin (x) + \cos (x))} = \frac {1 + \frac {1}{\sqrt {2}} (\frac {2 \tan (\frac {x}{2})}{1 + \tan ^2 (\frac {x}{2})} - \frac {1 - \tan ^2 (\frac {x}{2})}{1 + \tan ^2 (\frac {x}{2})})}{\frac {1}{\sqrt {2}} (\frac {2 \tan (\frac {x}{2})}{1 + \tan ^2 (\frac {x}{2})} + \frac {1 - \tan ^2 (\frac {x}{2})}{1 + \tan ^2 (\frac {x}{2})})}$
-
-- $= \frac {1 + \tan ^2 (\frac {x}{2}) + \frac {1}{\sqrt {2}} (2 \tan (\frac {x}{2}) - 1 + \tan ^2 (\frac {x}{2}))}{\frac {1}{\sqrt {2}} (2 \tan (\frac {x}{2}) + 1 - \tan ^2 (\frac {x}{2}))} = \frac {(\frac {1}{\sqrt {2}} + 1) \tan ^2 (\frac {x}{2}) + \sqrt {2} \tan (\frac {x}{2}) + (- \frac {1}{\sqrt {2}} + 1)}{- \frac {1}{\sqrt {2}} ((\tan (\frac {x}{2}) - 1)^2 - 2)} = - \frac {(\sqrt {2} + 1) (\tan (\frac {x}{2}) -1 + \sqrt {2})^2}{(\tan (\frac {x}{2}) - 1 + \sqrt {2})(\tan (\frac {x}{2}) - 1 - \sqrt {2})}​$
-
-- $= - (\sqrt {2} + 1) \frac {\tan (\frac {x}{2}) - 1 + \sqrt {2}}{\tan (\frac {x}{2}) - 1 - \sqrt {2}}​$
-
-2. $\displaystyle \int \frac {\sin(x)}{1 + \sin(x)} ~dx = 2(\tan ^{-1} (\tan (\frac {x}{2})) + \frac {1}{\tan (\frac {x}{2}) + 1}) = \color {blue} {x + \frac {2}{\tan (\frac {x}{2}) + 1}}= \color {blue} {x + \frac {2\sin(\frac {x}{2})}{\sin(\frac {x}{2}) + \cos(\frac {x}{2})}} = \color {blue} {x + \sec (x) - \tan (x)}$
-
-- **Solution:** $\frac {\sin(x)}{1 + \sin(x)} ~dx = \frac {\frac {2u}{1 + u^2}}{1 + \frac {2u}{1 + u^2}} \cdot \frac {2}{1 + u^2} ~du = \frac {2u}{1 + u^2 + 2u} \cdot \frac {2}{1 + u^2} ~du = 2(\frac {1}{1 + u^2} - \frac {1}{(u + 1)^2}) ~du​$
-
-  1. $\displaystyle \int \frac {1}{1+\sin (x)} ~dx = \color {blue} {- \frac {2}{\tan (\frac {x}{2}) + 1}}$
-
-  - **Solution:** $\frac {1}{1 + \sin(x)} = 1 - \frac {\sin(x)}{1 + \sin(x)}$
-
-  2. $\displaystyle \int \frac {\tan(x)}{\tan(x) + \sec(x)} ~dx =\color {blue} {x + \frac {2}{\tan (\frac {x}{2}) + 1}}​$
-
-  - **Solution:** $\frac {\tan(x)}{\tan(x) + \sec(x)} = \frac {\sin (x)}{1 + \sin (x)}$
-
-  - **Used 2019**, *Unsolved*
-
-3. $\displaystyle \int \frac {\sin (x)}{1-\sin(x)} ~dx = 2(- \frac {1}{\tan (\frac {x}{2}) - 1} - \tan ^{-1} (\tan (\frac {x}{2}))) = \color {blue} {- \frac {2}{\tan (\frac {x}{2}) - 1} - x} = \color {blue} {- \frac {2\sin(\frac {x}{2})}{\cos(\frac {x}{2}) -\sin(\frac {x}{2})} - x}$
-
-- **Solution:** $\frac {\sin(x)}{1 - \sin(x)} ~dx = \frac {\frac {2u}{1 + u^2}}{1 - \frac {2u}{1 + u^2}} \cdot \frac {2}{1 + u^2} ~du = \frac {2u}{1 + u^2 - 2u} \cdot \frac {2}{1 + u^2} ~du = 2(\frac {1}{(u - 1)^2} - \frac {1}{1 + u^2}) ~du$
+<1>3. Integrate \(\sin x/(1-\sin x)\).
+::: proof
+Now
+\[
+\frac{\sin x}{1-\sin x}=-1+\frac1{1-\sin x},
+\]
+and
+\[
+\frac1{1-\sin x}
+=\frac{1+\sin x}{\cos^2x}
+=\sec^2x+\sec x\tan x.
+\]
+Thus
+\[
+\boxed{
+\int\frac{\sin x}{1-\sin x}\,dx
+=-x+\tan x+\sec x+C.}
+\]
+:::
 :::

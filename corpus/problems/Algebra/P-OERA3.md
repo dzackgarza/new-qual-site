@@ -17,6 +17,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: solution-written
+  by: openai-gpt-5.6-sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -24,38 +27,15 @@ Discuss sufficient conditions on a polynomial of degree 5 to have Galois group $
 :::
 
 ::: {.solution}
-<1>1. Let $f \in \QQ[x]$ be an irreducible polynomial of degree $5$.
-::: {.proof}
-setup.
-:::
+Let $f\in\mathbb Q[x]$ be irreducible of degree $5$, and let $G$ be its Galois group acting on the five roots. Irreducibility makes this action transitive.
 
-<1>2. The Galois group $G = \operatorname{Gal}(f)$ is a transitive subgroup of $S_5$ (it acts transitively on the $5$ roots).
-::: {.proof}
-$f$ is irreducible, so $G$ acts transitively on the roots.
-:::
+If $f$ has exactly three real roots and one nonreal conjugate pair, complex conjugation fixes the three real roots and swaps the two nonreal roots. Thus $G$ contains a transposition.
 
-<1>3. If $f$ has exactly two non-real roots (and three real roots), then complex conjugation acts as a transposition on the roots, so $G$ contains a transposition.
-::: {.proof}
-complex conjugation fixes the three real roots and swaps the two non-real roots.
-:::
+A transitive subgroup $G\le S_5$ containing a transposition equals $S_5$: if $\tau=(a\ b)\in G$, then all conjugates $g\tau g^{-1}=(g(a)\ g(b))$ lie in $G$. Form the graph on the five roots whose edges are these conjugate transpositions. The graph is $G$-invariant and contains an edge; transitivity forces it to be connected. Transpositions along the edges of a connected graph generate the full symmetric group, so $S_5\le G$.
 
-<1>4. If $f$ has a root $\alpha$ such that $[\QQ(\alpha) : \QQ] = 5$ (automatic by irreducibility) and $G$ contains a transposition, then $G = S_5$.
-::: {.proof}
-a transitive subgroup of $S_5$ containing a transposition is all of $S_5$ (a standard fact: a transitive subgroup of $S_p$ for prime $p$ containing a transposition is $S_p$).
-:::
-
-<1>5. Hence a sufficient condition: $f$ is irreducible of degree $5$ and has exactly two non-real roots.
-::: {.proof}
-<1>2–<1>4.
-:::
-
-<1>6. Another sufficient condition: $f$ is irreducible of degree $5$ and $G$ contains both a transposition and a $5$-cycle (equivalently, $f$ has exactly two non-real roots, which gives the transposition, and irreducibility gives the $5$-cycle).
-::: {.proof}
-<1>4 (the $5$-cycle comes from transitivity, and the transposition from the two non-real roots).
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>5 and <1>6.
-:::
+Hence a sufficient condition is:
+\[
+\boxed{f\text{ irreducible of degree }5\text{ and having exactly three real roots}.}
+\]
+Equivalently, it is enough that the transitive Galois group contain a transposition. Irreducibility also implies $5\mid |G|$, hence by Cauchy's theorem $G$ contains an element of order $5$, necessarily a $5$-cycle.
 :::

@@ -12,43 +12,60 @@ classification:
   - Homomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-By part 1, $(\hom_{R\dash\text{mod}}(A, A), +)$ is an abelian group, We just need to check that $(\hom_R(A, A), \circ)$ is a monoid, i.e.:
-
-- Associativity: $f \circ (g\circ h) = (f\circ g) \circ h$
-
-- Identity: $\id \circ f = f$
-
-- Closure: $f\circ g \in \hom_{R\dash\text{mod}}(A, A)$
-
-Associativity: We have
+Let $A$ be an $R$-module. Prove that
 \[
-\begin{align*}
-f\circ (g\circ h) \actson x &\definedas (f \circ (g \circ h))(x) \\
-&= f((g\circ h)(x)) \\
-&= f(g(h(x))) \\
-&= (f\circ g)(h(x)) \\
-&= ((f\circ g) \circ h)(x)\\
-&\definedas (f \circ g) \circ h \actson x
-.\end{align*}
+\operatorname{End}_R(A)=\operatorname{Hom}_R(A,A)
 \]
+is a ring under pointwise addition and composition.
+:::
 
-Identity: Take $\id_A: A \to A$ given by $\id_A(x) = x$, then
-\[
-\begin{align*}
-f\circ \id_A \actson x = f(\id_A(x)) = f(x) = \id_A(f(x)) = \id_A \circ f \actson x
-.\end{align*}
-\]
 
-Closure: If $f: A\to A$ and $g: A\to A$ are homomorphisms, then $f\circ g: A \to A$ as a set map, and is an $R\dash$module homomorphism because
+::: {.solution}
+<1>1. Under pointwise addition, $\operatorname{End}_R(A)$ is an abelian group.
+::: {.proof}
+For $f,g\in\operatorname{End}_R(A)$ define
 \[
-\begin{align*}
-f\circ g \actson (r+s)(x+y) &= f(g((r+s)(x+y)))\\
-&= f((r+s)(g(x) + g(y))) \\
-&= (r+s)(f(g(x)) + f(g(y))) \\
-&= (f \actson (r+s)(x+y)) \circ (g \actson (r+s)(x+y))
-.\end{align*}
+(f+g)(a)=f(a)+g(a).
 \]
+The zero map is the additive identity and $(-f)(a)=-f(a)$ is the additive inverse. Associativity and commutativity follow pointwise from the abelian-group structure on $A$.
+:::
+
+<1>2. Composition is closed and associative, with identity $\operatorname{id}_A$.
+::: {.proof}
+If $f,g$ are $R$-linear, then for $r\in R$ and $x,y\in A$,
+\[
+(f\circ g)(rx+y)
+=f(rg(x)+g(y))
+=r f(g(x))+f(g(y)),
+\]
+so $f\circ g$ is $R$-linear. Associativity is associativity of function composition, and $\operatorname{id}_A$ is a two-sided identity.
+:::
+
+<1>3. Composition distributes over addition on both sides.
+::: {.proof}
+For $f,g,h\in\operatorname{End}_R(A)$ and $x\in A$,
+\[
+(f\circ(g+h))(x)
+=f(g(x)+h(x))
+=(f\circ g)(x)+(f\circ h)(x),
+\]
+using linearity of $f$. Also
+\[
+((f+g)\circ h)(x)
+=f(h(x))+g(h(x))
+=(f\circ h)(x)+(g\circ h)(x).
+\]
+:::
+
+Thus $\operatorname{End}_R(A)$ is a ring, generally noncommutative, with multiplicative identity $\operatorname{id}_A$.
 :::

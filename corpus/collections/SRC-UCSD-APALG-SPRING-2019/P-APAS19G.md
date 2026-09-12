@@ -26,3 +26,18 @@ X'(g):=X(g)\qquad\text{for all }g\in G.
 Is it possible for $X'$ to be irreducible (as a complex matrix representation)?
 Justify your answer.
 :::
+
+::: solution
+For (a), let \(G=C_4=\langle g:g^4=1
+angle\) and let \(V=\mathbb R^2\) with
+\[
+X(g)=J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
+\]
+As a real representation this is irreducible, because a nonzero proper invariant subspace would be a real eigenline for \(J\), but \(J\) has characteristic polynomial \(t^2+1\) and hence no real eigenvalue. The endomorphism \(T=J\) commutes with the image of \(G\), but \(T\) is not a real scalar multiple of the identity.
+
+For (b), suppose \(T\) is a non-scalar real endomorphism commuting with \(X(G)\). Regard both \(X(g)\) and \(T\) as complex matrices. Then \(T\) still commutes with every \(X'(g)\). If \(X'\) were irreducible over \(\mathbb C\), Schur's lemma would imply
+\[
+T=cI
+\]
+for some \(c\in\mathbb C\). Since \(T\) has real entries, this would force \(c\in\mathbb R\), contradicting that \(T\) is not a scalar transformation. Therefore \(X'\) cannot be irreducible.
+:::

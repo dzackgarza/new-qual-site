@@ -15,6 +15,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -22,38 +25,30 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Consider the map $\phi: H \times K \to HK$ given by $\phi(h, k) = hk$.
-::: {.proof}
-definition.
-:::
-
-<1>2. $\phi$ is surjective.
-::: {.proof}
-every element of $HK$ is of the form $hk$ with $h \in H$, $k \in K$.
-:::
-
-<1>3. The fibers of $\phi$ all have size $|H \cap K|$.
-<2>1. $\phi(h_1, k_1) = \phi(h_2, k_2)$ iff $h_1 k_1 = h_2 k_2$ iff $h_2^{-1} h_1 = k_2 k_1^{-1} \in H \cap K$.
-::: {.proof}
-rearrange the equation.
-:::
-<2>2. Hence the fiber over $hk$ is $\{(hx, x^{-1}k) : x \in H \cap K\}$, which has $|H \cap K|$ elements.
-::: {.proof}
-<2>1.
-:::
-
-<1>4. Therefore $|H \times K| = |HK| \cdot |H \cap K|$, i.e. $|H||K| = |HK| \cdot |H \cap K|$.
-::: {.proof}
-<1>2 and <1>3 (counting the domain by fibers).
-:::
-
-<1>5. Hence $|HK| = |H||K|/|H \cap K|$.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
-:::
+Consider the surjection
+\[
+\phi:H\times K\longrightarrow HK,
+\qquad
+\phi(h,k)=hk.
+\]
+Fix $hk\in HK$. If $x\in H\cap K$, then
+\[
+\phi(hx,x^{-1}k)=hk.
+\]
+Conversely, if $h_1k_1=hk$, then
+\[
+h^{-1}h_1=kk_1^{-1}\in H\cap K.
+\]
+Writing this element as $x$ gives
+\[
+(h_1,k_1)=(hx,x^{-1}k).
+\]
+Hence every fiber of $\phi$ has exactly $|H\cap K|$ elements. Counting $H\times K$ by fibers yields
+\[
+|H||K|=|HK|\,|H\cap K|,
+\]
+so
+\[
+|HK|=\frac{|H||K|}{|H\cap K|}.
+\]
 :::

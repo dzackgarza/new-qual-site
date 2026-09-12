@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2WRPV
 kind: problem
-title: Cokernel of a map $\ZZ^4\to\ZZ^3$ is $\ZZ/12\ZZ$
+title: Cokernel of a map $\ZZ^4\to\ZZ^3$
 classification:
   areas:
   - algebra
@@ -12,86 +12,89 @@ classification:
   - Modules
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-Let $\phi: \ZZ^4 \to \ZZ^3$ be a linear map which in the standard basis $\mathcal B$ is represented by
+Let $\phi:\ZZ^4\to\ZZ^3$ be represented in the standard bases by
+\[
+A=
+\begin{pmatrix}
+1&2&0&3\\
+0&-3&3&1\\
+-1&1&1&5
+\end{pmatrix}.
+\]
+Compute $\operatorname{coker}(\phi)=\ZZ^3/\operatorname{im}(A)$ using Smith normal form.
+:::
 
-\begin{align*}
-T &\definedas [\phi]_{\mathcal B} = 
-[f_1^t, f_2^t, f_3^t, f_4^t] = 
-\left[\begin{array}{cccc}
-1  & 2  & 0 & 3 \\
-0  & -3 & 3 & 1 \\
--1 & 1  & 1 & 5
-\end{array}\right]
-.\end{align*}
+::: {.solution}
+<1>1. The first determinantal divisor is $\Delta_1=1$.
+::: {.proof}
+The gcd of all entries of $A$ is $1$, since $A$ contains the entry $1$.
+:::
 
-Then $\im T = \spanof_\ZZ\theset{f_1 ,f_2, f_3, f_4} \definedas N$ by construction.
+<1>2. The second determinantal divisor is $\Delta_2=1$.
+::: {.proof}
+Among the $2\times2$ minors is
+\[
+\det
+\begin{pmatrix}
+1&3\\
+0&1
+\end{pmatrix}=1,
+\]
+using rows $1,2$ and columns $1,4$. Hence the gcd of all $2\times2$ minors is $1$.
+:::
 
-We can then compute the echelon form
+<1>3. The third determinantal divisor is $\Delta_3=1$.
+::: {.proof}
+The four $3\times3$ minors obtained by deleting one column are
+\[
+-12,\qquad -27,\qquad 23,\qquad 10.
+\]
+Their gcd is $1$; for instance
+\[
+\gcd(12,27,23,10)=1.
+\]
+Therefore $\Delta_3=1$.
+:::
 
-\begin{align*}
-\left(\begin{array}{cccc}
-1 & 1 & 1 & 5 \\
-0 & 3 & 1 & 8 \\
-0 & 0 & 4 & 9
-\end{array}\right)
-,\end{align*}
+<1>4. The Smith invariant factors are
+\[
+d_1=1,\qquad d_2=1,\qquad d_3=1.
+\]
+::: {.proof}
+For a full-rank integer matrix, the Smith invariant factors satisfy
+\[
+d_1=\Delta_1,\qquad
+ d_1d_2=\Delta_2,\qquad
+ d_1d_2d_3=\Delta_3.
+\]
+Using <1>1--<1>3 gives $d_1=d_2=d_3=1$.
+:::
 
-which has pivots in columns $1,2,$ and $3$, and thus
-
-$$
-N = \spanof_\ZZ\theset{f_1, f_2, f_3}
-$$
-
-Without loss of generality, we can consider the image of the reduced matrix
-
-\begin{align*}
-A' =
-\left(\begin{array}{ccc}
--1 & 2 & 0 \\
-0 & -3 & 3 \\
-1 & 1 & 1
-\end{array}\right)
-,\end{align*}
-
-since $N = \im A = \im A'$.
-
-When computing the characteristic polynomial, we find that $\chi_{A'}(x) = (x+3)(x+2)(x-2)$, which means that $A'$ has distinct eigenvalues.
-We can thus immediately write
-
-\begin{align*}
-JCF(A) = 
-\left[\begin{array}{c|c|c}
-2 & 0 & 0 \\
-\hline
-0 & -2 & 0 \\
-\hline
-0 & 0 & -3
-\end{array}\right]
-.\end{align*}
-
-From this, we can obtain the Smith normal form,
-
-\begin{align*}
-SNF(A') = 
-\left[\begin{array}{ccc}
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 12 \\
-\end{array}\right]
-,\end{align*}
-
-which allows us to read off
-
-\begin{align*}
-\im A' \cong \ZZ \oplus \ZZ \oplus 12\ZZ 
-,\end{align*}
-
-and thus
-
-\begin{align*}
-\ZZ^3/N \cong \frac{\ZZ \oplus \ZZ \oplus \ZZ}{\ZZ \oplus \ZZ \oplus 12\ZZ} \cong \ZZ/12\ZZ.
-.\end{align*}
+<1>5. Hence $\phi$ is surjective and
+\[
+\operatorname{coker}(\phi)=0.
+\]
+::: {.proof}
+The Smith normal form is
+\[
+\operatorname{diag}(1,1,1)
+\]
+as a $3\times4$ matrix, with one additional zero column. Therefore
+\[
+\ZZ^3/\operatorname{im}(A)
+\cong
+\ZZ/1\ZZ\oplus\ZZ/1\ZZ\oplus\ZZ/1\ZZ
+=0.
+\]
+:::
 :::

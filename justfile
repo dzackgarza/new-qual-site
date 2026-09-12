@@ -15,6 +15,34 @@ default:
 check:
     uv run qualc check
 
+# Resolve a card ID or path to its current editable corpus path
+path-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring path {{quote(card)}}
+
+# Parse one card by ID or path (no cross-card or mathematical review)
+check-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring check {{quote(card)}}
+
+# List authored collection appearances in source order, optionally in one section
+list-cards collection section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring list {{quote(collection)}} {{quote(section)}}
+
+# List collection appearances without solution sections, in authored source order
+unsolved-in collection section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring unsolved {{quote(collection)}} {{quote(section)}}
+
+# Read a card by ID or path, with its recorded appearances and source resources
+read-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring read {{quote(card)}}
+
+# Inspect one card's changes against its last commit, including staged edits
+diff-card card:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
+
+# Commit one reviewed prose card without hooks; preserve other staged work
+commit-card card message:
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
+
 # Report wiki filesystem measurements as candidates to read (not a gate)
 doctor *args:
     uv run python tools/wiki_doctor.py {{ args }}
@@ -58,9 +86,9 @@ complete *args:
 backlog:
     uv run python tools/backlog.py
 
-# Print n random unsolved problem/exercise cards: no solution section
-sample-unsolved n="5": build
-    @sqlite3 -box build/catalog.sqlite "select id from cards where kind in ('problem', 'exercise') and id not in (select card_id from sections where section_kind = 'solution') order by random() limit {{ n }}"
+# Sample up to n unsolved card IDs and show their appearances in source order
+sample-unsolved collection n="5" section="":
+    @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring sample {{quote(collection)}} {{quote(n)}} {{quote(section)}}
 
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:
@@ -84,8 +112,27 @@ _unsolved-if-staged:
         git add queues/C-unsolved-cards.md
     fi
 
+# Fail if any worktree exists (QUAL-09: one checkout, one branch)
+#
+# Documentation alone did not hold. The rule was written down and the fleet rebuilt
+# 27 worktrees anyway, each copying the 353MB tracked assets/ tree, filling the volume
+# on 2026-09-10 while holding a megabyte of authored prose between them. This is the
+# enforcement: a stream that opens a worktree finds out at its very next commit,
+# instead of the volume finding out first.
+[private]
+_no-worktrees:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    extra=$(git worktree list --porcelain | grep -c '^worktree ' || true)
+    if [ "$extra" -gt 1 ]; then
+        echo "QUAL-09: $((extra - 1)) worktree(s) exist. Streams work directly on main in this clone." >&2
+        git worktree list | tail -n +2 >&2
+        echo "Land the work on main, then: git worktree remove <path> && git worktree prune" >&2
+        exit 1
+    fi
+
 # Run immediate commit-tier quality checks
-test-commit: _unsolved-if-staged
+test-commit: _no-worktrees _unsolved-if-staged
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)

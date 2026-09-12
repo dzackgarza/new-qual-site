@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,37 +26,39 @@ Explain geometrically how you diagonalize a real quadratic form $q(x) = x^t A x$
 :::
 
 ::: solution
-**Goal:** Provide the geometric explanation of diagonalizing a quadratic form via the Principal Axis Theorem (rotating to the axes of ellipsoid level surfaces) and Gram–Schmidt / Lagrange orthogonalization.
+Write the real quadratic form as
+\[
+q(x)=x^TAx
+\]
+with $A=A^T$. By the real spectral theorem, there is an orthogonal matrix
+\[
+Q=[v_1\ \cdots\ v_n]
+\]
+whose columns are orthonormal eigenvectors of $A$, with
+\[
+Q^TAQ=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
+\]
+With the orthogonal change of coordinates $x=Qy$,
+\[
+q(x)=\lambda_1y_1^2+\cdots+\lambda_ny_n^2.
+\]
+Thus diagonalization is geometrically a rotation/reflection of coordinates to the mutually orthogonal principal directions of the form; the cross terms disappear in those coordinates.
 
-<1>1. Quadratic Forms as Quadric Level Surfaces:
-    *Proof:*
-    <2>1. A real quadratic form on $\mathbb{R}^n$ is defined by $q(x) = x^t A x = \sum_{i, j=1}^n A_{ij} x_i x_j$, where $A = A^t \in M_n(\mathbb{R})$ is a symmetric matrix.
-    <2>2. **Geometric View:** The level set $\{x \in \mathbb{R}^n \mid q(x) = 1\}$ defines a quadric hypersurface in $\mathbb{R}^n$ (e.g. an ellipsoid, hyperboloid, or cylinder).
-    <2>3. In the standard coordinate basis, the presence of cross terms $x_i x_j$ ($i \ne j$) means the principal symmetry axes of the ellipsoid/hyperboloid are tilted relative to the standard coordinate axes.
+One way to find the principal directions is variational. On the Euclidean unit sphere, the extrema of the Rayleigh quotient
+\[
+x\mapsto x^TAx
+\]
+occur at eigenvectors: the Lagrange-multiplier equation is
+\[
+Ax=\lambda x.
+\]
+After choosing one unit eigenvector, its Euclidean orthogonal complement is $A$-invariant, so the procedure can be repeated there. This is the geometric content behind the principal-axis theorem.
 
-<1>2. Diagonalization via Principal Axis Theorem (Orthogonal Rotation):
-    *Proof:*
-    <2>1. **Finding the Extrema on the Unit Sphere (Rayleigh Quotient):**
-        - Consider the optimization problem of maximizing $q(x)$ on the unit sphere $S^{n-1} = \{x \in \mathbb{R}^n \mid \|x\| = 1\}$.
-        - By compactness of $S^{n-1}$, the continuous function $q(x)$ attains its global maximum at some unit vector $v_1$.
-        - Using Lagrange multipliers $\nabla (x^t A x - \lambda (x^t x - 1)) = 0 \implies 2 A x - 2\lambda x = 0 \implies A v_1 = \lambda_1 v_1$.
-        - Geometrically, $v_1$ points along the longest principal semi-axis of the quadric, and $\lambda_1 = q(v_1)$ is the reciprocal square of its length ($1/a_1^2$).
-    <2>2. **Successive Orthogonal Complements:**
-        - Next, maximize $q(x)$ subject to $\|x\| = 1$ and $x \perp v_1$ (on the equator).
-        - This yields a second orthogonal axis $v_2 \perp v_1$ with eigenvalue $\lambda_2$.
-        - Repeating this process $n$ times yields an **orthonormal basis of eigenvectors** $\{v_1, v_2, \dots, v_n\}$.
-    <2>3. **Change of Coordinates (Rotation Matrix $P \in \operatorname{SO}(n)$):**
-        - Let $P = [v_1 \mid v_2 \mid \cdots \mid v_n]$ be the orthogonal matrix ($P^t P = I_n$).
-        - Setting $x = P y$, the new coordinates $y = (y_1, \dots, y_n)$ align precisely with the principal axes of the quadric:
-            $$q(x) = (P y)^t A (P y) = y^t (P^t A P) y = y^t \operatorname{diag}(\lambda_1, \dots, \lambda_n) y = \sum_{i=1}^n \lambda_i y_i^2.$$
-        - In the $y$-coordinates, all cross terms vanish, and the quadric equation becomes $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2 = 1$.
+For a positive-definite form, the level set $q=1$ is an ellipsoid; if $\lambda_i>0$, the principal semiaxis in the $v_i$ direction has length $1/\sqrt{\lambda_i}$. For an indefinite form, positive and negative eigenvalues give the different families of hyperbolic directions, while zero eigenvalues give flat/cylindrical directions. Thus the signs and nullity, not a universal “longest axis,” encode the geometry.
 
-<1>3. Geometric Non-Orthogonal Diagonalization (Completing the Square / Sylvester's Law):
-    *Proof:*
-    <2>1. **Conjugate Directions (Gram–Schmidt with respect to $A$):**
-        - Geometrically, choosing vectors $w_1, \dots, w_n$ that are $q$-orthogonal (conjugate with respect to the bilinear form, $w_i^t A w_j = 0$ for $i \ne j$) corresponds to finding conjugate diameters of the quadric.
-        - Scaling the axes $z_i = \sqrt{|\lambda_i|} y_i$ transforms the ellipsoid into a standard unit sphere $\sum z_i^2 = 1$, exhibiting the signature $(p, q, r)$ (Sylvester's Law of Inertia).
-
-<1>4. Conclusion:
-    Diagonalization geometrically corresponds to rotating the coordinate system to align with the mutually perpendicular symmetry axes (principal axes) of the quadric level surface $q(x) = 1$. Q.E.D.
+A nonorthogonal diagonalization can also be obtained by completing squares, equivalently by Gram--Schmidt orthogonalization for the symmetric bilinear form associated to $q$ (when the required pivots are nonzero). Sylvester's law of inertia states that after an invertible linear change of coordinates the form has the normal form
+\[
+y_1^2+\cdots+y_p^2-y_{p+1}^2-\cdots-y_{p+q}^2,
+\]
+with the numbers of positive, negative, and zero directions invariant.
 :::

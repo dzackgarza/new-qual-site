@@ -14,6 +14,14 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Checked against entry 5 of the JHU Real Analysis Qualifying Exam on p. 51 of the preserved packet.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-08
+  note: Verified the upper and lower bounds and the essential-supremum argument.
 ---
 
 ::: problem

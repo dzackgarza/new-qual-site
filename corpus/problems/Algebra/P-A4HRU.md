@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: Gemini 3.7 Flash
   date: 2026-08-30
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -28,48 +31,42 @@ $$\phi_p: A \longrightarrow A, \qquad x \longmapsto p x.$$
 :::
 
 ::: solution
-**Goal:** Define and analyze the multiplication-by-$p$ endomorphism $\phi_p$, its image $pA$, kernel $A[p]$, and quotient $A/pA$.
+Assume \(p\in Z(R)\). Then for \(r\in R\) and \(x\in A\),
+\[
+\phi_p(rx)=p(rx)=(pr)x=(rp)x=r(px)=r\phi_p(x),
+\]
+so \(\phi_p:x\mapsto px\) is \(R\)-linear. Its image and kernel are
+\[
+pA=\{px:x\in A\},\qquad
+A[p]=\{x\in A:px=0\}.
+\]
+Hence
+\[
+0\longrightarrow A[p]\longrightarrow A\xrightarrow{\,p\,}A
+\longrightarrow A/pA\longrightarrow0
+\]
+is exact, and the first isomorphism theorem gives \(A/A[p]\cong pA\).
 
-<1>1. Homomorphism Verification:
-    *Proof:*
-    <2>1. Let $p \in Z(R)$ (or $R$ commutative). For all $x, y \in A$ and $r \in R$:
-        $$\phi_p(x + y) = p(x + y) = p x + p y = \phi_p(x) + \phi_p(y),$$
-        $$\phi_p(r x) = p(r x) = (p r) x = (r p) x = r(p x) = r \phi_p(x).$$
-    <2>2. Thus $\phi_p \in \operatorname{End}_R(A)$ is an $R$-module endomorphism.
+For abelian groups and prime integer \(p\):
 
-<1>2. Submodule Definitions:
-    *Proof:*
-    <2>1. The **image** of $\phi_p$ is the $p$-multiple submodule:
-        $$p A \coloneqq \operatorname{im}(\phi_p) = \{p x \mid x \in A\}.$$
-    <2>2. The **kernel** of $\phi_p$ is the $p$-torsion (or $p$-annihilator) submodule:
-        $$A[p] \coloneqq \ker(\phi_p) = \{a \in A \mid p a = 0\} = \operatorname{Ann}_A(p).$$
-    <2>3. By the First Isomorphism Theorem for modules:
-        $$A / A[p] \cong p A.$$
+- If \(A=\mathbb Z\), then
+  \[
+  pA=p\mathbb Z,\qquad A/pA\cong\mathbb Z/p\mathbb Z,\qquad A[p]=0.
+  \]
 
-<1>3. Concrete Computations for Abelian Groups ($R = \mathbb{Z}$, $p$ a prime):
-    *Proof:*
-    <2>1. **Case 1: $A = \mathbb{Z}$ (Free Abelian Group):**
-        - $\phi_p(x) = p x$ is injective since $\mathbb{Z}$ has no torsion.
-        - $A[p] = \ker(\phi_p) = \{0\}$.
-        - $p A = p \mathbb{Z}$.
-        - Quotient $A / p A = \mathbb{Z} / p \mathbb{Z} \cong \mathbb{F}_p$ (a 1-dimensional $\mathbb{F}_p$-vector space).
-    <2>2. **Case 2: $A = \mathbb{Z}/n\mathbb{Z}$ (Finite Cyclic Group):**
-        - Let $d = \gcd(p, n)$.
-        - $p A = p(\mathbb{Z}/n\mathbb{Z}) \cong \mathbb{Z}/\frac{n}{d}\mathbb{Z}$ of order $n/d$.
-        - $A / p A \cong \mathbb{Z}/d\mathbb{Z}$.
-        - $A[p] = \{x \in \mathbb{Z}/n\mathbb{Z} \mid p x \equiv 0 \pmod n\} = \langle n/d \rangle \cong \mathbb{Z}/d\mathbb{Z}$.
-        - In particular, if $p \mid n$, then $A[p] \cong \mathbb{Z}_p$ and $A/pA \cong \mathbb{Z}_p$; if $p \nmid n$, then $A[p] = 0$ and $p A = A$.
-    <2>3. **Case 3: $A = \mathbb{Q}/\mathbb{Z}$ (Divisible Torsion Group):**
-        - Since $\mathbb{Q}$ is divisible, for every $x \in \mathbb{Q}/\mathbb{Z}$, $x = p(x/p)$, so $\phi_p$ is **surjective**:
-          $$p(\mathbb{Q}/\mathbb{Z}) = \mathbb{Q}/\mathbb{Z} \implies A / p A = 0.$$
-        - The $p$-torsion is:
-          $$A[p] = \left\{ \frac{a}{b} + \mathbb{Z} \;\middle|\; p \frac{a}{b} \in \mathbb{Z} \right\} = \left\{ 0, \frac{1}{p}, \frac{2}{p}, \dots, \frac{p-1}{p} \right\} + \mathbb{Z} \cong \mathbb{Z}_p.$$
+- If \(A=\mathbb Z/n\mathbb Z\) and \(d=\gcd(p,n)\), then
+  \[
+  |pA|=n/d,\qquad A/pA\cong\mathbb Z/d\mathbb Z,
+  \qquad A[p]=\langle n/d\rangle\cong\mathbb Z/d\mathbb Z.
+  \]
+  Since \(p\) is prime, \(d\in\{1,p\}\).
 
-<1>4. Exact Sequence Structure:
-    *Proof:*
-    <2>1. For every module $A$, there is a canonical 4-term exact sequence:
-        $$0 \longrightarrow A[p] \longrightarrow A \xrightarrow{\cdot p} A \longrightarrow A/pA \longrightarrow 0.$$
-
-<1>5. Conclusion:
-    Multiplication by $p$ yields the $p$-torsion submodule $A[p]$ as kernel and $pA$ as image, relating $A/pA \cong pA$ when $A$ is torsion-free. Q.E.D.
+- If \(A=\mathbb Q/\mathbb Z\), multiplication by \(p\) is surjective, so
+  \[
+  pA=A,\qquad A/pA=0,
+  \]
+  while
+  \[
+  A[p]=\left\{\frac{k}{p}+\mathbb Z:0\le k<p\right\}\cong\mathbb Z/p\mathbb Z.
+  \]
 :::

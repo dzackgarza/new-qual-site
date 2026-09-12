@@ -13,6 +13,15 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked against Problem 5 of the official UGA August 2019 Real Analysis qualifying examination DOCX.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Reviewed the translation-continuity and averaging-operator arguments; clarified the uniform-continuity justification for compactly supported continuous functions.
 ---
 
 ::: problem
@@ -37,7 +46,8 @@ $$
     <2>1. Since $f$ has compact support, there exists $M > 0$ such that $\operatorname{supp}(f) \subseteq [-M, M]$.
     <2>2. For any $|y| \le 1$, if $x \notin [-M - 1, M + 1]$, then both $x \notin [-M, M]$ and $x - y \notin [-M, M]$, so $f(x - y) - f(x) = 0 - 0 = 0$.
     <2>3. Thus $\operatorname{supp}(\tau_y f - f) \subseteq [-M - 1, M + 1]$ for all $|y| \le 1$.
-    <2>4. Since $f \in C_c(\mathbb{R})$, $f$ is uniformly continuous on $\mathbb{R}$ by the Heine-Cantor Theorem.
+    <2>4. Since $f \in C_c(\mathbb{R})$, $f$ is uniformly continuous on $\mathbb{R}$.
+    Indeed, if $\operatorname{supp}(f)\subset[-M,M]$, apply Heine--Cantor on the compact interval $[-M-1,M+1]$; outside that interval, sufficiently nearby points both lie outside the support and $f$ vanishes.
     <2>5. Let $\varepsilon > 0$. By uniform continuity, there exists $\delta \in (0, 1)$ such that $|y| < \delta$ implies
     $$|f(x - y) - f(x)| < \frac{\varepsilon}{2(M + 1)} \quad \text{for all } x \in \mathbb{R}.$$
     <2>6. For any $|y| < \delta$:

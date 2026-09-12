@@ -35,13 +35,50 @@ Prove that $\widetilde{H}_n(X \cup CA) \cong H_n(X, A)$ for all $n \ge 0$.
 :::
 
 <1>2. Apply excision to relate $H_n(X \cup CA, CA)$ to $H_n(X, A)$.
-<2>1. Let $v = [A \times \{0\}] \in CA$ be the cone vertex, and let $U = [A \times [0, 1/2)) \subset CA$ be the open cone neighborhood of $v$.
-<2>2. The closure $\overline{U} = [A \times [0, 1/2]]$ is contained in the interior of $CA$ in $X \cup CA$ (relative to the collar structure).
-<2>3. By the excision theorem for singular homology, excise $U$: $$H_n((X \cup CA) \setminus U, CA \setminus U) \xrightarrow[\cong]{\text{exc}} H_n(X \cup CA, CA).$$ <2>4. Note that $(X \cup CA) \setminus U = X \cup [A \times [1/2, 1])$ and $CA \setminus U = [A \times [1/2, 1])$.
-<2>5. The interval $[1/2, 1]$ deformation retracts onto $\{1\}$, which yields a deformation retraction of the pair $(X \cup [A \times [1/2, 1]), [A \times [1/2, 1]))$ onto $(X, A)$.
-<2>6. Therefore, the inclusion of pairs $(X, A) \hookrightarrow ((X \cup CA) \setminus U, CA \setminus U)$ induces an isomorphism on homology: $$H_n(X, A) \xrightarrow{\cong} H_n((X \cup CA) \setminus U, CA \setminus U).$$ <2>7. Composing with the excision isomorphism gives: $$H_n(X, A) \xrightarrow{\cong} H_n(X \cup CA, CA).$$
+<2>1. Let $q:A\times[0,1]\to CA$ be the cone quotient, with $q(A\times\{0\})$ the cone vertex and $q(a,1)$ identified with $a\in A\subseteq X$. Set
+$$
+U=q\bigl(A\times[0,1/2)\bigr)\subseteq CA\subseteq X\cup_A CA.
+$$
+<2>2. The set $U$ is open in $X\cup_A CA$, and its closure is contained in
+$$
+q\bigl(A\times[0,1/2]\bigr),
+$$
+which lies in the interior of $CA$ inside $X\cup_A CA$ because it is disjoint from the attaching locus $q(A\times\{1\})=A$.
 ::: {.proof}
-<2>8. Excision (<2>3) identifies $H_n(X \cup CA, CA)$ with $H_n((X \cup CA) \setminus U, CA \setminus U)$, and the deformation retraction (<2>5) identifies the latter with $H_n(X, A)$; composing these isomorphisms gives the result.
+The preimage $A\times[0,1/2)$ is open in $A\times[0,1]$ and is saturated for the cone quotient, hence its image is open in $CA$; since it is disjoint from the attaching locus, it is also open in the adjunction space. Likewise $q(A\times(1/2,1])$ is open, so the closure of $U$ is contained in $q(A\times[0,1/2])$. Every point with cone coordinate at most $1/2$ has a neighborhood contained in the cone part and away from the attaching locus.
+:::
+<2>3. Excision therefore gives an isomorphism
+$$
+H_n\bigl((X\cup_A CA)\setminus U,\,CA\setminus U\bigr)
+\xrightarrow{\cong}
+H_n(X\cup_A CA,CA).
+$$
+::: {.proof}
+The closure of the excised open set $U$ is contained in the interior of the subspace $CA$, exactly the hypothesis of the excision theorem for the pair $(X\cup_A CA,CA)$.
+:::
+<2>4. The complementary pair is
+$$
+\bigl((X\cup_A CA)\setminus U,\,CA\setminus U\bigr)
+=
+\Bigl(X\cup_A q\bigl(A\times[1/2,1]\bigr),\,q\bigl(A\times[1/2,1]\bigr)\Bigr).
+$$
+<2>5. This pair deformation retracts onto $(X,A)$ by moving the cone coordinate linearly from $t\in[1/2,1]$ to $1$ while fixing $X$ pointwise.
+::: {.proof}
+For $s\in[0,1]$, send $q(a,t)$ to
+$$
+q\bigl(a,(1-s)t+s\bigr)
+$$
+and fix every point of $X$. At $t=1$ this agrees with the attaching identification $q(a,1)=a$, so the homotopy is well-defined on the adjunction space. It preserves the cone-collar subspace and at $s=1$ sends that subspace onto $A$ while fixing $(X,A)$ pointwise.
+:::
+<2>6. Hence
+$$
+H_n(X,A)\xrightarrow{\cong}
+H_n\bigl((X\cup_A CA)\setminus U,\,CA\setminus U\bigr)
+\xrightarrow{\cong}
+H_n(X\cup_A CA,CA).
+$$
+::: {.proof}
+The first isomorphism is induced by the deformation retraction in <2>5 and the second by excision in <2>3.
 :::
 
 <1>3. Combine isomorphisms.

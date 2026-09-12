@@ -16,6 +16,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
@@ -23,80 +26,18 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Let $V$ be a finite-dimensional vector space over a field $F$, and let $T: V \to V$ be a linear operator.
-Suppose $T$ is nilpotent, i.e., $T^k = 0$ for some positive integer $k \ge 1$.
-Prove that $T$ is diagonalizable if and only if $T = 0$.
+If $T$ is nilpotent and $Tv=\lambda v$ with $v\ne0$, then for some $k$,
+\[
+0=T^kv=\lambda^k v,
+\]
+so $\lambda=0$. Thus a nilpotent operator has only the eigenvalue $0$.
 
-<1>1. Preliminaries on eigenvalues and diagonalizability: <2>1. If $\lambda \in F$ is an eigenvalue of $T$ with non-zero eigenvector $v \in V$, then for every $m \ge 1$, $T^m(v) = \lambda^m v$.
-::: {.proof}
-By mathematical induction: base case $T(v) = \lambda v$ holds by definition of eigenvector.
-:::
-If $T^m(v) = \lambda^m v$, then $T^{m+1}(v) = T(T^m(v)) = T(\lambda^m v) = \lambda^m T(v) = \lambda^{m+1} v$.
-<2>2. If $T$ is nilpotent with $T^k = 0$, then the only eigenvalue of $T$ is $0$.
-::: {.proof}
-Let $\lambda$ be an eigenvalue of $T$ with non-zero eigenvector $v \neq 0$.
-:::
-By <1>1.<2>1, $0 = T^k(v) = \lambda^k v$.
-Since $v \neq 0$, this requires $\lambda^k = 0$ in the field $F$, hence $\lambda = 0$.
-<2>3. $T$ is diagonalizable if and only if there exists an ordered basis $\mathcal{B} = \{v_1, \dots, v_n\}$ of $V$ consisting entirely of eigenvectors of $T$.
-::: {.proof}
-Standard definition/characterization of diagonalizable linear operators on finite-dimensional vector spaces.
-:::
-
-<1>2. Direction 1 ($\implies$): If $T$ is nilpotent and diagonalizable, then $T = 0$.
-<2>1. Assume $T$ is nilpotent and diagonalizable.
-::: {.proof}
-Hypothesis.
-:::
-<2>2. There exists a basis $\mathcal{B} = \{v_1, \dots, v_n\}$ of $V$ such that each $v_i$ is an eigenvector of $T$.
-::: {.proof}
-By <1>1.<2>3 and diagonalizability of $T$.
-:::
-<2>3. For each $i \in \{1, \dots, n\}$, the corresponding eigenvalue $\lambda_i = 0$.
-::: {.proof}
-By <1>1.<2>2, every eigenvalue of a nilpotent operator is $0$.
-:::
-<2>4. For each $i \in \{1, \dots, n\}$, $T(v_i) = 0 \cdot v_i = 0$.
-::: {.proof}
-Since $\lambda_i = 0$ and $T(v_i) = \lambda_i v_i$.
-:::
-<2>5. For any arbitrary $v \in V$, $T(v) = 0$.
-::: {.proof}
-Since $\mathcal{B}$ is a basis, write $v = \sum_{i=1}^n c_i v_i$ for scalars $c_i \in F$.
-:::
-By linearity of $T$, $T(v) = \sum_{i=1}^n c_i T(v_i) = \sum_{i=1}^n c_i (0) = 0$.
-<2>6. Therefore, $T = 0$ (the zero operator).
-::: {.proof}
-Since $T(v) = 0$ for all $v \in V$.
-:::
-<2>7. Q.E.D.
-::: {.proof}
-Follows from <2>1 through <2>6.
-:::
-
-<1>3. Direction 2 ($\impliedby$): If $T = 0$, then $T$ is nilpotent and diagonalizable.
-<2>1. The zero operator $T = 0$ satisfies $T^1 = 0$, so $T$ is nilpotent.
-::: {.proof}
-Definition of nilpotent operator with $k = 1$.
-:::
-<2>2. The matrix representing $T = 0$ with respect to any basis $\mathcal{B}$ of $V$ is the zero matrix $0_{n \times n}$.
-::: {.proof}
-For every basis vector $v_i$, $T(v_i) = 0 = \sum_{j=1}^n 0 \cdot v_j$.
-:::
-<2>3. The zero matrix $0_{n \times n}$ is a diagonal matrix.
-::: {.proof}
-All off-diagonal entries are 0. <2>4. Therefore, $T = 0$ is diagonalizable.
-:::
-::: {.proof}
-A linear operator whose representation with respect to some basis is a diagonal matrix is diagonalizable.
-:::
-<2>5. Q.E.D.
-::: {.proof}
-Follows from <2>1 through <2>4.
-:::
-
-<1>4. Conclusion: A nilpotent operator $T$ is diagonalizable if and only if $T = 0$.
-::: {.proof}
-By <1>2 and <1>3.
-:::
+If $T$ is also diagonalizable, it has a basis of eigenvectors, and every basis vector has eigenvalue $0$. Therefore $T$ vanishes on a basis and hence
+\[
+T=0.
+\]
+Conversely, the zero operator is nilpotent and its matrix in every basis is diagonal. Hence
+\[
+\boxed{T\text{ nilpotent and diagonalizable}\iff T=0}.
+\]
 :::

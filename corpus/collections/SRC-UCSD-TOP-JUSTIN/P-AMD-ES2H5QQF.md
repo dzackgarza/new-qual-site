@@ -36,8 +36,11 @@ Compute the following directly from chain complexes and check using UCT:
 
 <1>1. Cellular chain complex and integral homology of $\mathbb{RP}^n$.
   <2>1. Standard CW structure of $\mathbb{RP}^n$: One cell $e^k$ in each dimension $0 \le k \le n$, so $C_k(\mathbb{RP}^n; \mathbb{Z}) \cong \mathbb{Z}$ for $0 \le k \le n$.
-  <2>2. The cellular boundary map $d_k \colon C_k(\mathbb{RP}^n; \mathbb{Z}) \to C_{k-1}(\mathbb{RP}^n; \mathbb{Z})$ is given by the degree of the attaching map $S^{k-1} \xrightarrow{2:1} \mathbb{RP}^{k-1}$, which is $1 + (-1)^k$:
+  <2>2. The cellular boundary map $d_k \colon C_k(\mathbb{RP}^n; \mathbb{Z}) \to C_{k-1}(\mathbb{RP}^n; \mathbb{Z})$ is multiplication by $1+(-1)^k$:
   $$d_k = \begin{cases} 0 & k \text{ odd}, \\ 2 & k \text{ even } (k \ge 2). \end{cases}$$
+::: {.proof}
+In the standard CW structure, the characteristic map of the $k$-cell is the quotient $D^k\to\mathbb{RP}^k$. To compute the incidence number with the unique $(k-1)$-cell, collapse the $(k-2)$-skeleton and compare the two hemispherical lifts of the attaching map to $S^{k-1}$. Their local degrees are $1$ and $(-1)^k$, so the cellular boundary coefficient is $1+(-1)^k$.
+:::
   <2>3. The integral homology $H_k(\mathbb{RP}^n; \mathbb{Z})$ is:
   - $H_0 \cong \mathbb{Z}$,
   - $H_k \cong \mathbb{Z}/2\mathbb{Z}$ for odd $k$ with $0 < k < n$,

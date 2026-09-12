@@ -16,65 +16,45 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: problem
 State and prove the Jordan-Holder theorem for finite groups.
 :::
 
-::: {.solution}
-<1>1. Statement: any two composition series of a finite group $G$ have the same length, and the same composition factors (up to isomorphism and permutation).
-::: {.proof}
-statement of the Jordan–Hölder theorem.
-:::
+::: solution
+**Jordan--Hölder theorem.** If
+\[
+1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_m=G
+\]
+and
+\[
+1=H_0\triangleleft H_1\triangleleft\cdots\triangleleft H_n=G
+\]
+are composition series of a finite group $G$, then $m=n$ and, after reordering, the factors $G_i/G_{i-1}$ are isomorphic to the factors $H_j/H_{j-1}$.
 
-<1>2. Proof by induction on $|G|$.
-::: {.proof}
-setup.
-:::
+We prove this by induction on $|G|$. The result is trivial for $G=1$. Let
+\[
+M=G_{m-1},\qquad N=H_{n-1}.
+\]
+These are maximal proper normal subgroups of $G$.
 
-<1>3. Let $1 = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_m = G$ and $1 = H_0 \trianglelefteq H_1 \trianglelefteq \cdots \trianglelefteq H_n = G$ be two composition series.
-::: {.proof}
-take two composition series.
-:::
+If $M=N$, apply induction to the two composition series of $M$ obtained by deleting the final term $G$; adjoining the common simple factor $G/M$ proves the result.
 
-<1>4. If $G_1 = H_1$, then by induction the series $G_1 \trianglelefteq \cdots \trianglelefteq G$ and $H_1 \trianglelefteq \cdots \trianglelefteq H$ have the same factors, so the full series do too.
-::: {.proof}
-induction hypothesis applied to $G_1 = H_1$.
-:::
+Assume $M\ne N$. Since $MN$ is a normal subgroup properly containing $M$, maximality gives $MN=G$; similarly $M\cap N$ is proper in both $M$ and $N$. The second isomorphism theorem gives
+\[
+G/M\cong N/(M\cap N),\qquad
+G/N\cong M/(M\cap N).
+\]
+Choose a composition series of $M\cap N$. Extending it to $M$ and to $N$ using the two displayed simple quotients gives composition series of $M$ and $N$. By induction, the original composition series of $M$ has the same factors as this refined series of $M$, and likewise for $N$.
 
-<1>5. If $G_1 \neq H_1$, then $G_1 H_1 = G$ (since $G_1$ and $H_1$ are distinct maximal normal subgroups, their product is $G$).
-::: {.proof}
-$G_1 H_1$ is a normal subgroup of $G$ containing $G_1$ properly, so by maximality of $G_1$ it is $G$.
-:::
-
-<1>6. By the second isomorphism theorem, $G/G_1 \cong H_1/(G_1 \cap H_1)$ and $G/H_1 \cong G_1/(G_1 \cap H_1)$.
-::: {.proof}
-second isomorphism theorem.
-:::
-
-<1>7. Let $1 = K_0 \trianglelefteq \cdots \trianglelefteq K_r = G_1 \cap H_1$ be a composition series of $G_1 \cap H_1$.
-::: {.proof}
-$G_1 \cap H_1$ has a composition series.
-:::
-
-<1>8. Then $G$ has composition series with factors: (factors of $G_1 \cap H_1$), $G_1/(G_1 \cap H_1)$, $G/G_1$, and also (factors of $G_1 \cap H_1$), $H_1/(G_1 \cap H_1)$, $G/H_1$.
-::: {.proof}
-refine the series through $G_1 \cap H_1$.
-:::
-
-<1>9. By <1>6, the multiset $\{G_1/(G_1 \cap H_1), G/G_1\}$ equals $\{H_1/(G_1 \cap H_1), G/H_1\}$.
-::: {.proof}
-<1>6.
-:::
-
-<1>10. Hence the two composition series have the same factors (up to isomorphism and permutation).
-::: {.proof}
-<1>8 and <1>9.
-:::
-
-<1>11. Q.E.D.
-::: {.proof}
-<1>10.
-:::
+Consequently the factors below $M\cap N$ agree, while the two remaining factors are exchanged by
+\[
+G/M\cong N/(M\cap N),\qquad
+G/N\cong M/(M\cap N).
+\]
+Thus the two composition series of $G$ have the same multiset of composition factors, and hence the same length.
 :::

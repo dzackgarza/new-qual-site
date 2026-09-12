@@ -16,6 +16,13 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-11
+  note: Checked directly against Problem 1 in the preserved UNL January 2019 qualifying-exam PDF/extraction.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-11
 ---
 
 ::: {.problem}

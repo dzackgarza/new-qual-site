@@ -17,6 +17,9 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
 ---
 
 ::: {.exercise}
@@ -26,33 +29,21 @@ Show that $H \operatorname{char} K \operatorname{char} G \implies H \operatornam
 :::
 
 ::: {.solution}
-Recall the definition of a characteristic subgroup:
-A subgroup $S \leq M$ is **characteristic in $M$** (denoted $S \operatorname{char} M$) if for every automorphism $\psi \in \Aut(M)$, we have $\psi(S) = S$.
-
-We are given:
-1. $H \operatorname{char} K$, where $K \leq G$.
-2. $K \operatorname{char} G$.
-
-Let $\phi \in \Aut(G)$ be an arbitrary automorphism of $G$.
-- Since $K \operatorname{char} G$, the automorphism $\phi$ maps $K$ onto itself:
-  $$
-  \phi(K) = K.
-  $$
-- Therefore, the restriction of $\phi$ to $K$, denoted $\restrictionof{\phi}{K} : K \to K$, is an automorphism of the group $K$:
-  $$
-  \restrictionof{\phi}{K} \in \Aut(K).
-  $$
-- Since $H \operatorname{char} K$, every automorphism of $K$ maps $H$ onto itself.
-  In particular, for the automorphism $\restrictionof{\phi}{K} \in \Aut(K)$:
-  $$
-  \phi(H) = (\restrictionof{\phi}{K})(H) = H.
-  $$
-
-Since $\phi(H) = H$ for all $\phi \in \Aut(G)$, it follows by definition that:
-$$
-H \operatorname{char} G.
-$$
-Thus, the property of being a characteristic subgroup is **transitive**.
-
-*(Note: In contrast, normality is not transitive in general: $H \normal K \normal G \centernot\implies H \normal G$. However, if $H \operatorname{char} K \normal G$, then $H \normal G$.)*
+Let \(\phi\in\Aut(G)\). Since \(K\operatorname{char}G\),
+\[
+\phi(K)=K,
+\]
+so the restriction
+\[
+\phi|_K:K\longrightarrow K
+\]
+is an automorphism of \(K\). Since \(H\operatorname{char}K\), every automorphism of \(K\) preserves \(H\); hence
+\[
+\phi(H)=(\phi|_K)(H)=H.
+\]
+As this holds for every \(\phi\in\Aut(G)\), we have
+\[
+H\operatorname{char}G.
+\]
+Thus characteristicity is transitive.
 :::

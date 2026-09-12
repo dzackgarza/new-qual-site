@@ -12,28 +12,42 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
 ::: problem
-We want to show that if $(p) \normal R$ is a prime ideal then $R/(p)$ is a field, so we'll proceed by letting $x + (p) \in R/(p)$ be arbitrary where $x\not \in (p)$ and producing a multiplicative inverse.
+Let $R$ be a PID and let $(p)$ be a prime ideal of $R$. Prove that $R/(p)$ is a field.
+:::
 
-Since $R$ is a principal ideal domain, prime ideals are maximal, so $(p)$ is maximal.
-Then $x\in R \setminus (p)$, so define
-$$
-I \definedas \theset{p + rx \suchthat p\in (p), r\in R} \normal R,
-$$
 
-which is an ideal in $R$.
+::: {.solution}
+Let $(p)$ be a prime ideal in the PID $R$. Since every nonzero prime ideal in a PID is maximal, $(p)$ is maximal.
 
-In particular, since $x\not\in (p)$, we have a strict containment $(p) < I$, but since $(p)$ was maximal this forces $I = R$.
+<1>1. Let $x+(p)\ne (p)$ in $R/(p)$, so $x\notin(p)$.
+::: {.proof}
+Because $(p)$ is maximal and $(p)\subsetneq (p,x)$, one has
+\[
+(p,x)=R.
+\]
+Hence there exist $a,b\in R$ such that
+\[
+ap+bx=1.
+\]
+Reducing modulo $(p)$ gives
+\[
+(b+(p))(x+(p))=1+(p).
+\]
+Thus every nonzero class in $R/(p)$ has a multiplicative inverse.
+:::
 
-Then $1 \in I$, so there exists some $p, r$ such that $p + rx = 1$, i.e. $rx - 1 \in (p)$.
-
-But then
-
-$$
-r + (p) \cdot x + (p) = rx + (p) = 1 + (p),
-$$
-
-which says that $(x + (p))\inv = r + (p)$ in $R/(p)$.
+<1>2. Therefore $R/(p)$ is a field.
+::: {.proof}
+A commutative ring with identity is a field exactly when every nonzero element is invertible. This holds by <1>1.
+:::
 :::

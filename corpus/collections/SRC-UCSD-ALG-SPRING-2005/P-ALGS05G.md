@@ -10,9 +10,58 @@ classification:
   - Field Theory
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-09
+  note: Checked against Question 7 of the official UCSD Algebra Qualifying Examination, Spring 2005; the statement agrees with the source.
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
+  note: Ported the independently reviewed Spring 2017 proof of the identical statement; it exhibits elements of arbitrarily large degree over each prime field.
 ---
 
 ::: problem
 Let $F$ be a prime field (the rationals or a field with $p$ elements).
 Prove that the algebraic closure of $F$ is infinite-dimensional over $F$.
+:::
+
+::: {.solution}
+<1>1. Let $\overline{F}$ be the algebraic closure of $F$.
+::: {.proof}
+setup.
+:::
+
+<1>2. For each positive integer $n$, there is an irreducible polynomial of degree $n$ over $F$.
+::: {.proof}
+for $F = \mathbb{Q}$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
+:::
+
+<1>3. Hence for each $n$, there is an element $\alpha_n \in \overline{F}$ with $[F(\alpha_n) : F] = n$.
+::: {.proof}
+<1>2 (a root of an irreducible degree-$n$ polynomial).
+:::
+
+<1>4. If $\overline{F}$ were finite-dimensional over $F$, say $[\overline{F} : F] = N < \infty$, then every element of $\overline{F}$ would have degree $\le N$ over $F$.
+::: {.proof}
+the degree of any element is at most the degree of the field extension.
+:::
+
+<1>5. But <1>3 gives elements of arbitrarily large degree, contradicting <1>4.
+::: {.proof}
+<1>3 and <1>4.
+:::
+
+<1>6. Hence $\overline{F}$ is infinite-dimensional over $F$.
+::: {.proof}
+<1>5.
+:::
+
+<1>7. Q.E.D.
+::: {.proof}
+<1>6.
+:::
 :::

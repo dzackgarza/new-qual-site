@@ -15,6 +15,12 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -28,8 +34,7 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. Part (a): Splitting field and degree $[E : \mathbb{Q}]$:
-<2>1. The roots of $x^p - 2$ in $\mathbb{C}$ are:
+<1>1. Part (a): Splitting field and degree $[E : \mathbb{Q}]$: <2>1. The roots of $x^p - 2$ in $\mathbb{C}$ are:
 \[
 \alpha_k = \sqrt[p]{2} \, \zeta_p^k \quad \text{for } k \in \{0, 1, \ldots, p-1\},
 \]
@@ -39,21 +44,24 @@ where $\sqrt[p]{2} \in \mathbb{R}_{>0}$ is the real $p$-th root and $\zeta_p = e
 E = \mathbb{Q}(\alpha_0, \ldots, \alpha_{p-1}) = \mathbb{Q}\left(\sqrt[p]{2}, \zeta_p \sqrt[p]{2}, \ldots, \zeta_p^{p-1}\sqrt[p]{2}\right) = \mathbb{Q}\left(\zeta_p, \sqrt[p]{2}\right).
 \]
 <2>3. Consider the intermediate fields:
+
 - $x^p - 2 \in \mathbb{Q}[x]$ is irreducible by Eisenstein's criterion with prime 2, so $[\mathbb{Q}(\sqrt[p]{2}) : \mathbb{Q}] = p$.
+
 - The cyclotomic polynomial $\Phi_p(x) = \sum_{j=0}^{p-1} x^j \in \mathbb{Q}[x]$ is irreducible over $\mathbb{Q}$, so $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$.
-<2>4. By the Tower Law for field extensions, $[E : \mathbb{Q}]$ is divisible by $[\mathbb{Q}(\sqrt[p]{2}) : \mathbb{Q}] = p$ and by $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$.
-Since $\gcd(p, p - 1) = 1$, $[E : \mathbb{Q}]$ is divisible by $p(p - 1)$.
-Furthermore, $[E : \mathbb{Q}] = [\mathbb{Q}(\zeta_p)(\sqrt[p]{2}) : \mathbb{Q}(\zeta_p)] \cdot [\mathbb{Q}(\zeta_p) : \mathbb{Q}] \le p(p - 1)$.
-Therefore:
+  <2>4. By the Tower Law for field extensions, $[E : \mathbb{Q}]$ is divisible by $[\mathbb{Q}(\sqrt[p]{2}) : \mathbb{Q}] = p$ and by $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$.
+  Since $\gcd(p, p - 1) = 1$, $[E : \mathbb{Q}]$ is divisible by $p(p - 1)$.
+  Furthermore, $[E : \mathbb{Q}] = [\mathbb{Q}(\zeta_p)(\sqrt[p]{2}) : \mathbb{Q}(\zeta_p)] \cdot [\mathbb{Q}(\zeta_p) : \mathbb{Q}] \le p(p - 1)$.
+  Therefore:
 \[
 [E : \mathbb{Q}] = p(p - 1).
 \]
 
-<1>2. Part (b): Image set of the Galois group action:
-<2>1. Any $\mathbb{Q}$-automorphism $\sigma \in \operatorname{Gal}(E/\mathbb{Q})$ must map a root of a polynomial to another root of the same polynomial:
+<1>2. Part (b): Image set of the Galois group action: <2>1. Any $\mathbb{Q}$-automorphism $\sigma \in \operatorname{Gal}(E/\mathbb{Q})$ must map a root of a polynomial to another root of the same polynomial:
+
 - $\sigma(\zeta_p) \in \{ \zeta_p^a \mid 1 \le a \le p - 1 \}$,
+
 - $\sigma(\sqrt[p]{2}) \in \{ \zeta_p^b \sqrt[p]{2} \mid 0 \le b \le p - 1 \}$.
-<2>2. The number of candidate pairs $(a, b) \in (\mathbb{Z}/p\mathbb{Z})^\times \times (\mathbb{Z}/p\mathbb{Z})$ is:
+  <2>2. The number of candidate pairs $(a, b) \in (\mathbb{Z}/p\mathbb{Z})^\times \times (\mathbb{Z}/p\mathbb{Z})$ is:
 \[
 (p - 1) \cdot p = p(p - 1).
 \]
@@ -64,6 +72,6 @@ Because an automorphism $\sigma \in \operatorname{Gal}(E/\mathbb{Q})$ is uniquel
 \left\{ \left(\sigma(\zeta_p), \sigma\left(\sqrt[p]{2}\right)\right) \;\middle|\; \sigma \in \operatorname{Gal}(E/\mathbb{Q}) \right\} = \left\{ \left(\zeta_p^a, \, \zeta_p^b \sqrt[p]{2}\right) \;\middle|\; 1 \le a \le p - 1, \; 0 \le b \le p - 1 \right\}.
 \]
 
-<1>3. Conclusion:
-$E = \mathbb{Q}(\zeta_p, \sqrt[p]{2})$ with $[E : \mathbb{Q}] = p(p - 1)$, and the image pairs under $\operatorname{Gal}(E/\mathbb{Q})$ are $\{ (\zeta_p^a, \zeta_p^b \sqrt[p]{2}) \mid 1 \le a \le p-1, 0 \le b \le p-1 \}$. Q.E.D.
+<1>3. Conclusion: $E = \mathbb{Q}(\zeta_p, \sqrt[p]{2})$ with $[E : \mathbb{Q}] = p(p - 1)$, and the image pairs under $\operatorname{Gal}(E/\mathbb{Q})$ are $\{ (\zeta_p^a, \zeta_p^b \sqrt[p]{2}) \mid 1 \le a \le p-1, 0 \le b \le p-1 \}$.
+Q.E.D.
 :::

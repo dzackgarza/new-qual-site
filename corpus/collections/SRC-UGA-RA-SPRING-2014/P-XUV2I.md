@@ -12,32 +12,81 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-09
+  note: Checked against the recorded UGA Spring 2014 real-analysis exam source. The prior card lacked a canonical problem block and incorrectly typed the partial-sum functionals as maps into ell^1.
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-09
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-09
 ---
 
-Let $\theset{a_n}$ be a sequence of real numbers such that
+::: problem
+Let $(a_n)$ be a sequence of nonnegative real numbers such that for every nonnegative sequence $(b_n)\in\ell^2(\mathbb N)$,
 \[
-\theset{b_n} \in \ell^2(\NN) \implies \sum a_n b_n < \infty.
+\sum_{n=1}^\infty a_n b_n<\infty.
 \]
-Show that $\sum a_n^2 < \infty$.
+Show that
+\[
+\sum_{n=1}^\infty a_n^2<\infty.
+\]
+:::
 
-> Note: Assume $a_n, b_n$ are all non-negative.
+::: solution
+<1>1. Define the partial-sum functionals.
+::: proof
+For each $N\ge1$, define
+\[
+T_N:\ell^2(\mathbb N)\to\mathbb R,
+\qquad
+T_N(b)=\sum_{n=1}^N a_n b_n.
+\]
+Each $T_N$ is a bounded linear functional, represented by the finite vector
+\[
+(a_1,\dots,a_N,0,0,\dots)\in\ell^2.
+\]
+Hence
+\[
+\|T_N\|=\left(\sum_{n=1}^N a_n^2\right)^{1/2}.
+\]
+:::
 
-:::{.solution}
-\envlist
-- Define a sequence of operators 
-\[  
-T_N: \ell^2 &\to \ell^1\\
-\theset{b_n} &\mapsto \sum_{n=1}^N a_n b_n
-.\]
-- By assumption, these are well defined: the image is $\ell^1$ since $\abs{T_N(\theset{b_n})} < \infty$ for all $N$ and all $\theset{b_n} \in \ell^2$.
-- So each $T_N \in \qty{\ell^2}\dual$ is a linear functional on $\ell^2$.
-- For each $x\in \ell^2$, we have $\norm{T_N(x)}_{\RR} = \sum_{n=1}^N a_n b_n < \infty$ by assumption, so each $T_N$ is pointwise bounded.
-- By the Uniform Boundedness Principle, $\sup_N \norm{T_N}_{\text{op}} < \infty$.
-- Define $T = \lim_{N \to\infty } T_N$, then $\norm{T}_{\text{op}} < \infty$.
-- By the Riesz Representation theorem,
-\[  
-\sqrt{\sum a_n^2} \definedas \norm{\theset{a_n}}_{\ell^2} = \norm{T}_{\qty{\ell^2}\dual} = \norm{T}_{\text{op}} < \infty
-.\]
+<1>2. Prove pointwise boundedness.
+::: proof
+Fix $b\in\ell^2(\mathbb N)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
+\[
+\sum_{n=1}^\infty a_n|b_n|<\infty.
+\]
+Therefore
+\[
+|T_N(b)|
+\le \sum_{n=1}^N a_n|b_n|
+\le \sum_{n=1}^\infty a_n|b_n|,
+\]
+so
+\[
+\sup_N|T_N(b)|<\infty
+\]
+for every $b\in\ell^2$.
+:::
 
-- So $\sum a_n^2 < \infty$.
+<1>3. Apply the Uniform Boundedness Principle.
+::: proof
+Since $\ell^2$ is Banach and the family $(T_N)$ is pointwise bounded, the Uniform Boundedness Principle gives
+\[
+\sup_N\|T_N\|<\infty.
+\]
+Using Step 1,
+\[
+\sup_N\sum_{n=1}^N a_n^2<\infty.
+\]
+The partial sums are increasing, so they converge to a finite limit. Hence
+\[
+\boxed{\sum_{n=1}^\infty a_n^2<\infty.}
+\]
+:::
 :::

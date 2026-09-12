@@ -43,3 +43,21 @@ Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map 
 But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map.
 By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
 :::
+
+::: {.solution}
+<1>1. If $\operatorname{id}_X$ is homotopic to a constant map $c_{x_0}$, then $X$ is contractible.
+::: {.proof}
+Let $p:X\to\{x_0\}$ be the unique map and $i:\{x_0\}\hookrightarrow X$. Then $p i=\operatorname{id}_{\{x_0\}}$ and $ip=c_{x_0}\simeq\operatorname{id}_X$, so $p$ and $i$ are homotopy inverses.
+:::
+
+<1>2. Conversely, if $X$ is contractible, then $\operatorname{id}_X$ is null-homotopic.
+::: {.proof}
+A homotopy equivalence $X\simeq\{*\}$ supplies maps $p:X\to\{*\}$ and $i:\{*\}\to X$ with $ip\simeq\operatorname{id}_X$. But $ip$ is constant.
+:::
+
+<1>3. Therefore
+$$\boxed{X\text{ is contractible}\iff\operatorname{id}_X\text{ is null-homotopic}.}$$
+::: {.proof}
+Combine <1>1--<1>2.
+:::
+:::

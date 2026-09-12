@@ -12,9 +12,16 @@ classification:
 relations: []
 review: draft
 audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-10
+  note: Checked against Problem 6 of the JHU Fall 2012 analysis qualifying exam. The source first restricts the problem to functions on [0,1] but part (c) then prints an integral from -infinity to +infinity; the card corrects that inconsistent bound to [0,1], matching the stated domain and the intended moving-spike example.
 - event: solution-written
-  by: muse-spark-1.2
-  date: 2026-08-30
+  by: gpt-5.6-sol
+  date: 2026-09-10
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-10
 ---
 
 6. For this problem, consider just Lebesgue measurable functions $f : [ 0 , 1 ] \to \mathbb { R }$ . together with the Lebesgue measure.
@@ -23,7 +30,7 @@ audit:
 
 (b) State and prove the Dominated Convergence Theorem.
 
-(c) Give an example where $f _ { n } ( x )  0 { \mathrm { ~ a . e . } }$ , but $\textstyle \int _ { - \infty } ^ { + \infty } f _ { n } ( x ) d x \to 1$
+(c) Give an example where $f_n(x) \to 0$ a.e. on $[0,1]$, but $\int_0^1 f_n(x)\,dx \to 1$.
 
 ::: {.solution}
 <1>1. Part (a): Statement of Fatou’s Lemma: <2>1. **Fatou's Lemma:** Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $\{f_n\}_{n=1}^\infty$ be a sequence of non-negative measurable functions $f_n: X \to [0, \infty]$.

@@ -45,7 +45,7 @@ homotopy equivalence preserves homology.
 <1>3. $H_4(M;\ZZ) = \ZZ$ forces $M$ to be closed and orientable.
 <2>1. If $M$ has nonempty boundary, then $H_4(M;\ZZ) = 0$.
 ::: {.proof}
-a compact $4$-manifold with boundary deformation-retracts onto a $3$-complex, so $H_4 = 0$.
+for a connected compact $4$-manifold with nonempty boundary, absolute top homology vanishes. For example, in the orientable case the relative fundamental class $[M,\partial M]\in H_4(M,\partial M;\mathbb Z)$ has nonzero boundary $[\partial M]$, so exactness of the pair sequence forces $H_4(M;\mathbb Z)=0$; in the nonorientable case absolute top homology is already zero.
 :::
 <2>2. Hence $M$ is closed.
 ::: {.proof}
@@ -53,7 +53,7 @@ $H_4(M) = \ZZ \neq 0$ forces no boundary.
 :::
 <2>3. $H_4(M;\ZZ) = \ZZ$ forces $M$ orientable.
 ::: {.proof}
-a closed nonorientable $4$-manifold has $H_4(M;\ZZ) = 0$ (top homology is $\ZZ$ iff orientable, $\ZZ/2$ iff nonorientable, and $\ZZ/2$ tensored... actually $H_4 = \ZZ$ iff orientable).
+for a connected closed manifold, integral top homology is $\ZZ$ exactly in the orientable case and is $0$ in the nonorientable case.
 :::
 
 <1>4. Contradiction via Poincaré duality.

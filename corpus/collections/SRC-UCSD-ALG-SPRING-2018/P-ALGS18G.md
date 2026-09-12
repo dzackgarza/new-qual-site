@@ -14,6 +14,12 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: OpenAI
+  date: 2026-09-08
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-08
 ---
 
 ::: problem
@@ -46,7 +52,12 @@ orbit–stabilizer theorem applied to the transitive action on $p+1$ roots.
 :::
 <2>2. A point stabilizer $H$ (order $p$) acts freely on the other $p$ roots.
 ::: {.proof}
-if $h \in H$ fixed a second root, then $h$ would fix two roots; but $h$ has order dividing $p$ (prime), and a nontrivial element fixing two roots would have to be the identity (since the action is faithful and a nontrivial $p$-cycle in $S_{p+1}$ fixes exactly one point).
+Let $1\neq h\in H$.
+Since $|H|=p$, the permutation induced by $h$ has order $p$.
+On a set of $p+1$ points, a nonidentity permutation of order $p$ has exactly one $p$-cycle and one fixed point.
+Because $h\in H$, that fixed point is the chosen root.
+Hence $h$ fixes no second root.
+Thus $H$ acts freely on the other $p$ roots.
 :::
 <2>3. Hence $G$ is a Frobenius group with complement $H$ (order $p$) and kernel $N$ (order $p+1$), and $N$ is normal.
 ::: {.proof}
@@ -77,7 +88,9 @@ the fixed field of the stabilizer of $\alpha$ is $\QQ(\alpha)$; its order is $|G
 
 <1>4. $E/\QQ(\alpha)$ is Galois.
 ::: {.proof}
-$E/\QQ$ is Galois (a splitting field), and every intermediate extension of a Galois extension is Galois.
+The subgroup fixing $\QQ(\alpha)$ is $H$.
+For a finite Galois extension $E/\QQ$, the extension $E/E^H$ is Galois with Galois group $H$ for every subgroup $H\le G$.
+Since $E^H=\QQ(\alpha)$, the extension $E/\QQ(\alpha)$ is Galois.
 :::
 
 <1>5. Q.E.D. (part (a)).

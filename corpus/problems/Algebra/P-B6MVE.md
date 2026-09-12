@@ -12,54 +12,73 @@ classification:
   - Homomorphisms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: OpenAI
+  date: 2026-09-09
+- event: solution-reviewed
+  by: OpenAI
+  date: 2026-09-09
 ---
 
-::: problem
-Let $f: R \to R$ be an endomorphism of $R$ in the category of rings.
-We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_R)$, i.e.
+
+::: {.problem}
+Let $R$ be a unital ring, viewed as a left $R$-module over itself. Prove that
 \[
-\begin{align*}
-f: R &\to R \\
-r &\mapsto r \cdot x_f
-\end{align*}
+\operatorname{End}_R({}_RR)\cong R^{\mathrm{op}}
+\]
+as rings.
+:::
+
+::: {.solution}
+Define
+\[
+\Phi:\operatorname{End}_R({}_RR)\longrightarrow R^{\mathrm{op}},
+\qquad
+\Phi(f)=f(1).
 \]
 
-and so we can attempt to define
+<1>1. Every left $R$-linear endomorphism is right multiplication by $f(1)$.
+::: {.proof}
+For $r\in R$,
 \[
-\begin{align*}
-\phi_1: \hom_R(R, R) &\to R \\
-f &\mapsto x_f \definedas f(1_R)
-\end{align*}
+f(r)=f(r\cdot1)=r f(1)
 \]
-
-We can check that
-$$
-(g\circ f(r)) = g(f(r)) = g(r\cdot x_f) = r \cdot x_f \cdot x_g,
-$$
-
-which shows that in fact
-$$
-\phi(g \circ f) = x_f \cdot x_g,
-$$
-which reverses the multiplication.
-So the correct codomain is $R^{op}$, and we amend the definition:
+by left $R$-linearity. Thus $f$ is uniquely determined by $f(1)$ and has the form
 \[
-\begin{align*}
-\phi_2: \hom_R(R, R) &\to R^{op} \\
-f &\mapsto x_f \definedas f(1_R)
-\end{align*}
+r\longmapsto r x
 \]
+for $x=f(1)$.
+:::
 
-By construction, **$\phi_s$ is a ring homomorphism**. If $R$ is commutative, then $x_f \cdot x_g = x_g \cdot x_f$, which makes $\phi_1$ a ring homomorphism as well.
-It remains to check that it is an isomorphism/
+<1>2. The map $\Phi$ is bijective.
+::: {.proof}
+Injectivity follows from <1>1. For surjectivity, given $x\in R$, the map
+\[
+\rho_x:R\to R,\qquad r\mapsto rx
+\]
+is left $R$-linear and satisfies $\Phi(\rho_x)=x$.
+:::
 
-**$\phi_1$ is in injective**: We can check that $\ker \phi_1 = 0$ as a ring.
-To that end, suppose $\phi_1(f) = x_f = 0$.
-Then $f(r) = r \cdot 0 = 0$, so $f$ can only be the zero map.
+<1>3. The map $\Phi$ respects addition and multiplication into the opposite ring.
+::: {.proof}
+Addition is immediate. For composition,
+\[
+(g\circ f)(1)=g(f(1))=g(x_f)=x_f x_g.
+\]
+Thus
+\[
+\Phi(g\circ f)=x_f x_g.
+\]
+But multiplication in $R^{\mathrm{op}}$ is reversed, so
+\[
+\Phi(g)\cdot_{R^{\mathrm{op}}}\Phi(f)=x_g\cdot_{R^{\mathrm{op}}}x_f=x_f x_g.
+\]
+Hence $\Phi(g\circ f)=\Phi(g)\cdot_{R^{\mathrm{op}}}\Phi(f)$, as required.
+:::
 
-**$\phi_1$ is surjective**: Let $x\in R$ be arbitrary, then we can define $f: R \to R$ by $f(1_R) = x$, so $f(r) = r\cdot x$.
-This is an endomorphism of $R$, and thus an element of $\hom_R(R, R)$.
-
-By the first isomorphism theorem for rings, we thus have $\hom_R(R, R) \cong R$.
-$\qed$
+Therefore
+\[
+\operatorname{End}_R({}_RR)\cong R^{\mathrm{op}}.
+\]
 :::
