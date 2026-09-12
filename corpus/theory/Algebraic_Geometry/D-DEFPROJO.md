@@ -32,5 +32,5 @@ In $\mods{A}$ these are the **projective modules**, and free modules are project
 A module is projective iff it is a direct summand of a free module, so over a local ring or a PID projective and free coincide, while over $\ZZ/6$ the summand $\ZZ/2$ is projective and not free.
 $\mods{A}$ always has enough projectives, since every module is a quotient of a free one; this is why $\Tor$ and left derived functors are available for modules.
 
-The asymmetry worth remembering: $\mods{\OO_X}$ generally does **not** have enough projectives, which is precisely why sheaf cohomology is built from injectives rather than from the more computable projective side.
+The category $\mods{\OO_X}$ generally does **not** have enough projectives, whereas it has enough injectives to define sheaf cohomology.
 :::
