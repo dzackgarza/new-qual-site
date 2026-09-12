@@ -28,7 +28,7 @@ A flat morphism is one whose fibres vary without jumping, and the precise statem
 
 - a nonconstant morphism between smooth curves is automatically flat, because a torsion-free module over a discrete valuation ring is free.
 
-The third is why flatness is invisible in the curve questions on the exam and essential to the theorems behind them: Riemann--Hurwitz counts a constant degree because the map is flat, and the count is what makes the formula an equality rather than an inequality.
+The third is why flatness is invisible in the curve questions and essential to the theorems behind them: Riemann--Hurwitz counts a constant degree because the map is flat, and the count is what makes the formula an equality rather than an inequality.
 
 ## Where flatness fails
 

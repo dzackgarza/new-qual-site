@@ -9,13 +9,13 @@ topics:
 
 # Positivity
 
-Ampleness is the property that makes a variety projective and makes cohomology vanish, and the exam question is usually to state the definitions cleanly and then decide a case.
+Ampleness is the property that makes a variety projective and makes cohomology vanish; deciding a case is the typical question on this page.
 
 [[D-DIVAMPLE]]
 
 [[T-DIVSERRE]]
 
-Keep the two definitions of ample separate when answering.
+The two definitions of ample are worth keeping separate when answering.
 The geometric one says some power embeds; the cohomological one says twisting enough by it kills higher cohomology of any coherent sheaf.
 They agree on a proper scheme, and the second is the one every proof actually uses.
 

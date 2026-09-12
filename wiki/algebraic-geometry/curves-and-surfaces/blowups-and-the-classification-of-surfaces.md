@@ -14,8 +14,8 @@ So the invariants that matter are the ones a blowup does not change.
 
 [[FE-SRFBLOW]]
 
-The table of formulas is what gets asked for, and $E^2 = -1$ is the fact the rest follows from.
-Note which invariants move and which do not: $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$ and $q$ are untouched.
+The formulas in the table follow from $E^2 = -1$.
+The invariants split by how a blowup changes them: $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$ and $q$ are untouched.
 
 The strict transform formulas are the tool for resolving plane curve singularities, since blowing up an ordinary $m$-fold point removes $\binom{m}{2}$ from the arithmetic genus — exactly the delta invariant.
 
@@ -35,7 +35,7 @@ Zariski's theorem is the connectedness statement; the factorization of birationa
 [[D-SRFRULED]]
 
 Rational and ruled surfaces are the $\kappa = -\infty$ case.
-The rationality criterion is worth stating exactly, because $p_g = q = 0$ is not enough — the Enriques surfaces satisfy it and are not rational, and $P_2$ is what separates them.
+The rationality criterion needs its full hypothesis: $p_g = q = 0$ is not enough, since the Enriques surfaces satisfy it and are not rational; $P_2$ is what separates them.
 
 [[FE-SRFCUBIC]]
 

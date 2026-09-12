@@ -9,7 +9,7 @@ topics:
 
 # Varieties by canonical class
 
-The names Fano, Calabi--Yau and general type are three signs of one divisor, and the exam question is almost always "give an example", never "prove the classification".
+The names Fano, Calabi--Yau and general type are three signs of one divisor, and the typical question is "give an example".
 
 [[D-VARFANO]]
 

@@ -10,9 +10,7 @@ topics:
 # Curves and surfaces
 
 Genus in its several senses, Riemann--Hurwitz, embeddings, the classification of curves of small genus, and the intersection theory that does the same work one dimension up.
-
-More oral questions land here than anywhere else, because a curve is small enough to compute with and rich enough to test everything above it.
-Genus is the pivot: arithmetic against geometric, how they differ for a singular curve, whether either depends on the embedding, and how Riemann--Hurwitz computes one from a map.
+The pivot for curves is genus: arithmetic against geometric, how they differ for a singular curve, whether either depends on the embedding, and how Riemann--Hurwitz computes one from a map.
 For surfaces the pivot is the intersection pairing, and adjunction is the bridge between the two halves.
 
 - [[algebraic-geometry/curves-and-surfaces/genus|Genus]], the three senses, the three ways to compute one, and the curves of genus zero.

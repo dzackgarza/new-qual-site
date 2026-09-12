@@ -14,7 +14,7 @@ This is the payoff of the previous page and the entry to cohomology.
 
 [[PR-C9ZEK]]
 
-The gap between "surjective" and "surjective on sections" is the single most examined point in this topic, because it is where a student who has only memorised definitions gives the wrong answer.
+The gap between "surjective" and "surjective on sections" is the single most examined point in this topic.
 The example makes the gap a number.
 
 [[FE-Y12XB]]

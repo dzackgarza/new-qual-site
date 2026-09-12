@@ -15,7 +15,7 @@ Affine schemes are all the local information there is, so every scheme that is n
 
 [[D-SCHGLUE]]
 
-The construction is not deep and the examiner knows it, so the value is in what you glue.
+The construction is not deep.
 Two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ give either $\PP^1$ or a pathology, according to which isomorphism you use on the overlap.
 
 [[FE-SCHLINE]]

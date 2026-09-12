@@ -9,8 +9,8 @@ topics:
 
 # Fibres and images
 
-Three theorems that say what a morphism can do to dimension and to connectedness.
-They are the ones quoted rather than proved, so the value is in knowing which hypothesis each one needs and which direction each inequality runs.
+Three theorems state what a morphism can do to dimension and to connectedness.
+They are the ones quoted rather than proved, so the useful content is which hypothesis each one needs and which direction each inequality runs.
 
 ## Dimension
 

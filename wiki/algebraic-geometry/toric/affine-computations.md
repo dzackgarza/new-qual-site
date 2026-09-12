@@ -10,7 +10,6 @@ topics:
 # Affine toric computations
 
 Everything affine in this subject is one procedure: dualise the cone, list the lattice points of the dual, read the relations among them.
-The procedure is short enough to do at a board, which is why an examiner asks for it.
 
 [[FE-TORDUAL]]
 

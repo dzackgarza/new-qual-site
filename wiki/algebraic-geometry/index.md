@@ -7,11 +7,7 @@ topics:
 
 # Algebraic geometry
 
-An algebraic geometry qual is usually oral, and an oral exam is a conversation with a follow-up.
-You are asked to define a scheme, and the question that matters is the next one: can the Noetherian hypothesis be weakened, is the sequence still exact, give me an example where it fails.
-
-The cards here are built for that.
-A definition card carries the probe that follows the definition; a theorem card carries the computation the theorem is wanted for; an example card is a stock of objects to reach for when an examiner asks for one.
+The cards here cover schemes, sheaves, morphisms, cohomology, curves and surfaces, and toric varieties. A definition card states the definition and the reason for each clause; a theorem card states the theorem and the computation it supports; an example card is a stock of objects to reach for.
 
 ## The topics
 
@@ -40,4 +36,4 @@ A definition card carries the probe that follows the definition; a theorem card 
 Varieties come first and schemes second, in the order the subject was invented and in the order it can be understood: the scheme definitions answer questions that only make sense once the classical picture is in place.
 Cohomology and curves come last because they are where the machinery is spent.
 
-If you are revising against a deadline rather than learning the subject, the useful order is the opposite: start from [[algebraic-geometry/curves-and-surfaces/index|curves]], which is where most oral questions land, and follow the links backwards when a definition is missing.
+The cards on [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]] are the ones most often reached for first, and the links there lead back to the definitions a question needs.

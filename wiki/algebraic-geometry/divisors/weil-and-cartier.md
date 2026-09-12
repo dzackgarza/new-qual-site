@@ -15,7 +15,7 @@ The standard exchange in this topic has three moves: describe both kinds of divi
 
 A Weil divisor is a subvariety of codimension one; a Cartier divisor is a local equation.
 Where the local rings are unique factorization domains a subvariety has a local equation and the two agree, and where they are not, it need not.
-On a smooth curve the question does not arise, which is why the bank asks for both notions *on curves* and then for the passage from $f \in K^*$ to a divisor: the valuation at each point is the only content.
+On a smooth curve the question does not arise, which is why the standard questions ask for both notions *on curves* and then for the passage from $f \in K^*$ to a divisor: the valuation at each point is the only content.
 
 [[PR-Y5S7V]]
 

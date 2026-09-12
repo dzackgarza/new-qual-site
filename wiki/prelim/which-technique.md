@@ -10,8 +10,7 @@ topics:
 
 # Which technique?
 
-The prelim is a computation paper.
-Almost every integral is one of six forms, and recognizing the form is the whole exam.
+The prelim is a computation paper, and most integrals fall into one of six forms.
 
 ## Integrals, by the shape of the integrand
 
@@ -25,11 +24,11 @@ Almost every integral is one of six forms, and recognizing the form is the whole
 | even powers only | the half-angle identities |
 | $R(\sin, \cos)$ with no better structure | the Weierstrass substitution $t = \tan(x/2)$ |
 
-Two habits that shorten most problems:
+Two habits shorten most problems:
 
 - **Check for symmetry first.** An odd integrand over a symmetric interval integrates to zero, and an even one halves the work.
 
-- **Check whether the answer is a standard form.** $\int \frac{\dx}{a^2+x^2}$, $\int\frac{\dx}{\sqrt{a^2-x^2}}$ and $\int \sec x \dx$ appear constantly and are worth knowing rather than deriving.
+- **Check whether the answer is a standard form.** $\int \frac{\dx}{a^2+x^2}$, $\int\frac{\dx}{\sqrt{a^2-x^2}}$ and $\int \sec x \dx$ appear constantly.
 
 ## Repeated integration by parts
 

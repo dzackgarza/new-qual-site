@@ -9,7 +9,7 @@ topics:
 
 # Genus
 
-More oral questions land on this page than on any other in the tree, and most of them are the same question asked from different sides: which genus, computed how, and does it change.
+The questions that land on this page are which genus, computed how, and whether it changes under a map.
 
 [[D-G1AEH]]
 
@@ -21,7 +21,7 @@ Stating that contrast is the answer to the embedding follow-up, and the twisted 
 
 ## Computing one
 
-Three routes, and an examiner will accept whichever fits the presentation:
+Three routes give the genus of a plane curve:
 
 - **plane curve of degree $d$**: $p_a = \binom{d-1}{2}$, then subtract $\delta_p$ at each singularity;
 

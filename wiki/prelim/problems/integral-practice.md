@@ -8,7 +8,7 @@ Here is a [youtube video](https://www.youtube.com/watch?v=dgm4-3-Iv3s) that pote
 
 Note: some of these were incorrect, and the solutions need to all be checked in detail.
 
-Techniques to cover, in order of difficulty:
+Techniques, grouped by the operation involved:
 
 - Elementary antiderivatives
 

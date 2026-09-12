@@ -9,7 +9,7 @@ topics:
 
 # Fibre products and base change
 
-The fibre product is the one construction that carries the weight of the theory: intersections, fibres, field extensions and products are all the same operation with different labels.
+The fibre product is the one construction that appears under several names: intersections, fibres, field extensions and products are all the same operation with different labels.
 
 [[D-SCHFPR]]
 
@@ -29,7 +29,7 @@ A morphism is a family of schemes parametrised by the target, and the scheme-the
 
 Base change is the single operation behind three different questions, and naming which one is in play is most of an answer.
 "Geometrically integral" is base change to every field extension; "the fibre over $y$" is base change to $\Spec \kappa(y)$; "spread out over a smaller base" is base change along a map of bases.
-The list of adjectives stable under base change is long and the exceptions are few, so the examiner will ask for an exception rather than the list.
+The list of adjectives stable under base change is long and the exceptions are few.
 
 ## The functor of points
 

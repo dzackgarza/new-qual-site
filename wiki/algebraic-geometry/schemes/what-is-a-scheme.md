@@ -9,7 +9,8 @@ topics:
 
 # What is a scheme
 
-The question is asked in order to ask the next one, so the answer should arrive with its motivation attached and stop.
+A scheme is a locally ringed space that is locally isomorphic to the spectrum of a commutative ring.
+The definition is asked in order to ask the next question, so the answer should arrive with its motivation attached and stop.
 
 [[D-VKR54]]
 
@@ -29,5 +30,5 @@ Each clause pays for one property, and saying which is a better answer than reci
 [[T-SK599]]
 
 The adjunction gives the test one can run by hand, and it is the right first answer.
-The cohomological criterion is the one that generalises, and the examiner's follow-up — can the Noetherian hypothesis be weakened — is about that version, not this one.
+The cohomological criterion is the one that generalises, and the follow-up — can the Noetherian hypothesis be weakened — is about that version, not this one.
 It is proved in [[algebraic-geometry/cohomology/index|cohomology]].

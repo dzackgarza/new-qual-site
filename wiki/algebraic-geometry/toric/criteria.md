@@ -24,7 +24,7 @@ Upwards, each row says what to draw: full support for completeness, a polytope f
 
 [[T-FULDEG]]
 
-Between them these two cover most of what an examiner can ask about a projective toric variety without leaving the combinatorics.
+Between them these two cover most of what can be asked about a projective toric variety without leaving the combinatorics.
 Cohomology is a count of cones, sections are a count of lattice points, and the degree is a volume.
 
 ## Properties that hold automatically

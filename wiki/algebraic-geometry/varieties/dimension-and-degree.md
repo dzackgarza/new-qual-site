@@ -25,7 +25,7 @@ Dimension has three descriptions and they are used for different things: the cha
 
 [[D-L6ERW]]
 
-The coefficients are where the examiner goes.
+The coefficients are where the detail lies.
 Asking what the leading term means is asking for the degree; asking what the constant term means is asking for the arithmetic genus, which is the first place $\chi(\OO_X)$ appears and the reason $p_a$ is defined the way it is.
 
 [[PR-JR7TS]]

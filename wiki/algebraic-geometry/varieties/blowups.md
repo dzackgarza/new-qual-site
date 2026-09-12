@@ -10,7 +10,7 @@ topics:
 # Blowups
 
 The one birational modification that is asked about by name.
-Everything an examiner wants follows from two formulas, and both are worth being able to derive rather than quote.
+Everything useful follows from two formulas, and both are worth being able to derive rather than quote.
 
 [[D-VARBLOW]]
 

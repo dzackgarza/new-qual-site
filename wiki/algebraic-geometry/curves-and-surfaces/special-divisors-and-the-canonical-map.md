@@ -21,13 +21,13 @@ Below that threshold Riemann--Roch gives only an inequality, and the divisors th
 [[T-CRVCLIFF]]
 
 Clifford supplies the missing upper bound, and its equality cases name the only curves with unusually large special systems.
-That is the pattern to expect: a bound whose extremal case is hyperelliptic.
+The extremal case is hyperelliptic.
 
 ## Counting maps to $\PP^1$
 
 [[D-CRVGON]]
 
-The $g^r_d$ notation is how the question gets asked, so it is worth translating on sight: a $g^1_2$ is a degree-two map to $\PP^1$, a $g^1_3$ makes the curve trigonal, and the canonical system on a non-hyperelliptic curve is a $g^{g-1}_{2g-2}$.
+The $g^r_d$ notation is how a question of this shape gets asked: a $g^1_2$ is a degree-two map to $\PP^1$, a $g^1_3$ makes the curve trigonal, and the canonical system on a non-hyperelliptic curve is a $g^{g-1}_{2g-2}$.
 
 [[D-CRVHYP]]
 
@@ -37,7 +37,6 @@ The hyperelliptic case is the exception in the statement of almost every theorem
 
 [[FE-CRVLOWG]]
 
-An examiner asking about genus $2$, $3$ or $4$ wants the model, not a general theorem.
 Genus $3$ is the plane quartic, genus $4$ is the intersection of a quadric and a cubic in $\PP^3$, and genus $2$ has no canonical embedding at all because every such curve is hyperelliptic.
 
 ## What the canonical class rules out

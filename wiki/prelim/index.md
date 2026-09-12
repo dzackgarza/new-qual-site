@@ -6,7 +6,7 @@ order: 0
 # Prelims
 
 Undergraduate analysis, calculus and algebra that the later quals treat as known.
-Unlike the other subjects this paper is mostly computational, so the recognition page carries more of the weight.
+This paper is mostly computational.
 
 ## What the exam asks
 

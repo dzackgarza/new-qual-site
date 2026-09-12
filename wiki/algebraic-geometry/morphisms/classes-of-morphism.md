@@ -9,14 +9,14 @@ topics:
 
 # Classes of morphism
 
-The syllabus asks for definitions, and the definitions are cheap.
-What is examined is the ordering between them and the example separating each adjacent pair, so learn the chain and the counterexamples together.
+The definitions on this page are short, and the useful content is the ordering between them and the example separating each adjacent pair.
+State the chain and the counterexamples together.
 
 ## Immersions
 
 [[D-MORIMM]]
 
-Immersions are where the scheme structure first does work that the topology cannot, and the question that tests this is "why is a homeomorphism onto a closed subset not a closed immersion".
+Immersions are where the scheme structure first does work that the topology cannot: a homeomorphism onto a closed subset need not be a closed immersion, because the scheme structure on the subset carries nilpotents that the topology cannot see.
 
 ## Affine, finite, and finite type
 

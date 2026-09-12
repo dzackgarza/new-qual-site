@@ -16,7 +16,7 @@ Genus $1$ is the only genus where the classification is finished, and the reason
 The group law is not extra structure laid on top of the curve.
 It is linear equivalence, transported along a Riemann--Roch bijection, and the chord-and-tangent construction is that equivalence written in the coordinates of the plane cubic model.
 
-Asked whether an elliptic curve is a group scheme, the answer is yes and the proof is that addition and inversion are morphisms, which is what makes $[n]$ a finite morphism with computable kernel.
+An elliptic curve is a group scheme: addition and inversion are morphisms, which is what makes $[n]$ a finite morphism with computable kernel.
 
 ## Classification
 
@@ -27,8 +27,8 @@ The construction chains together the tools from the rest of the chapter: $\abs{2
 The word *coarse* carries weight.
 Points of $\AA^1$ are isomorphism classes, but there are nontrivial families with all fibres isomorphic, so no fine moduli space exists — the automorphisms $\pm 1$ present on every elliptic curve are what obstruct it.
 
-The automorphism count is the follow-up, and the trap is stopping at $2$, $4$, $6$.
-Those are the counts away from characteristics $2$ and $3$.
+The automorphism count varies with the characteristic.
+Away from characteristics $2$ and $3$ the counts are $2$, $4$, and $6$.
 In characteristic $3$ the conditions $j = 0$ and $j = 1728$ describe one curve, which has $12$ automorphisms; in characteristic $2$ the same curve has $24$, and in both cases the group is noncommutative rather than cyclic.
 
 Over $\CC$ the same classification is available a second time, through lattices and elliptic functions; that half is [[algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c|its own page]].
@@ -38,7 +38,7 @@ Over $\CC$ the same classification is available a second time, through lattices 
 [[D-CRVHASSE]]
 
 The invariant is the vanishing of a single scalar, and it is exactly what decides which of the two possible $p$-torsion group schemes $E[p]$ is.
-Answering "how many $p$-torsion points" with $p^2$ is the error the question is built around: the scheme always has order $p^2$, but an ordinary curve has $p$ points and a supersingular one has none.
+The scheme always has order $p^2$, but an ordinary curve has $p$ points and a supersingular one has none.
 
 [[T-CRVHASSE]]
 
@@ -55,5 +55,5 @@ For $y^2 = x^3 - x$ the computation is short enough to do on the board, and it l
 
 [[T-CRVMORDELL]]
 
-The subgroup claim is the part that needs the base point to be rational; finite generation is the part with content, and it is a descent plus a height.
+The subgroup claim needs the base point to be rational; finite generation is the part with content, and it is a descent plus a height.
 Torsion is classified and the rank is not, which is where to stop.

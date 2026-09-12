@@ -30,7 +30,7 @@ The two agree only when $e_p$ is invertible in $k$, and the follow-up is always 
 
 [[PR-IV2DEGREVEN]]
 
-The parity statement costs one line and is the cheapest check available on a branching count, which is why it is asked for immediately after a genus computation.
+The parity statement costs one line and is the cheapest check available on a branching count.
 
 ## Étale covers
 

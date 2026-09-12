@@ -9,7 +9,7 @@ topics:
 
 # The fan dictionary
 
-Toric geometry earns a place on a revision list for one reason: it is the corner of the subject where every question above becomes a finite computation with lattice points, so it is the fastest source of an example when an examiner asks for one.
+Toric geometry earns a place on a revision list for one reason: it is the corner of the subject where every question above becomes a finite computation with lattice points, so it is a fast source of an example.
 
 [[D-Q7Q2N]]
 
@@ -53,5 +53,5 @@ That is what makes induction on dimension available: a statement about $X_\Sigma
 
 Every entry is checked by a computation on a two-dimensional picture, which is why the answers arrive faster from here than from anywhere else in the tree.
 
-The cost is that the dictionary only covers toric varieties, and an examiner who wants a general argument will not accept a fan.
+The cost is that the dictionary only covers toric varieties, and a general argument will not accept a fan.
 Use it to *find* the example, then state the example in the language the question was asked in.

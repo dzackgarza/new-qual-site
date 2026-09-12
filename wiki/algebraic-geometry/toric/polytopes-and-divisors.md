@@ -41,7 +41,7 @@ Beyond that, the cone over the rational normal curve shows how badly they can di
 
 [[PR-TORPOS]]
 
-A useful order of operations when asked whether a divisor is ample.
+A useful order of operations when asked whether a divisor is ample:
 Write $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inp{m}{u_\rho} \geq -a_\rho$, and check whether its vertices are in bijection with the maximal cones.
 If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
 
