@@ -3355,39 +3355,39 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-7.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-8.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-9.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-1.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-10.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-11.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-12.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-13.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-14.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-15.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-16.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-17.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-18.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-19.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-2.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-20.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-21.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-22.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-23.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-24.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-25.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-26.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-27.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-28.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-29.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-3.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-30.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-31.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-32.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-33.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-4.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-5.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-6.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-7.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-8.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-9.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-1.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-10.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-11.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-12.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-13.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-14.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-15.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-16.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-17.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-18.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-19.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-2.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-20.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-21.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-22.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-23.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-24.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-25.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-26.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-27.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-28.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-29.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-3.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-30.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-31.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-32.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-33.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-4.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-5.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-6.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-7.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-8.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-9.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-a/E-HAT-1.A-1.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-a/E-HAT-1.A-10.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-a/E-HAT-1.A-11.md
@@ -3785,18 +3785,18 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-6.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-7.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-8.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-0H3A.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-2OUI.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-3SH7.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-7GHO.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-CTRQ.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-EZDH.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-HN2G.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-J2K6.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-OAOP.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-PPAO.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-SHA8.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-XY48.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-0H3A.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-2OUI.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-3SH7.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-7GHO.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-CTRQ.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-EZDH.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-HN2G.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-J2K6.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-OAOP.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-PPAO.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-SHA8.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-XY48.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-1.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-10.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-11.md
@@ -4418,19 +4418,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-XT94O.md
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-Z93SH.md
 - [x] corpus/collections/SRC-TEXT-MUN00/17/E-ZB4N9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-20CHL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-2CPNC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-A0UGQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-BB4BN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-F972S.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-FNMUB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-G4SRA.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-K9POS.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-MGLSK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-OTJ9S.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-PLSGP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-Q7W4S.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/18/E-ZHWI8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-20CHL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-2CPNC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-A0UGQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-BB4BN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-F972S.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-FNMUB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-G4SRA.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-K9POS.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-MGLSK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-OTJ9S.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-PLSGP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-Q7W4S.md
+- [x] corpus/collections/SRC-TEXT-MUN00/18/E-ZHWI8.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-8GBZO.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-AH7RC.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-AWEWJ.md
