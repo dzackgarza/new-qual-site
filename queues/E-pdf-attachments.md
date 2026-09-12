@@ -711,7 +711,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014
 
-- [ ] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008
+- [x] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008 — disposition 2026-09-12: reconciled to complete `SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008`. Direct source typography contains 89 explicit exercises, not the inventory count of 58. A duplicate partial Chapters 1–4 intake was collapsed into the canonical collection by retaining its richer source-checked transcriptions for those 17 exercises; the canonical collection now contains all 89 exercises in source order.
 
 ## Textbook/theorem notes (16)
 
@@ -722,21 +722,21 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology
 
-- [ ] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra
+- [x] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES`, containing ten selected finite-abelian-group exercises represented by this packet.
 
-- [ ] [Ch13Sltns.pdf](assets/attachments/extracted/Ch13Sltns.md) (73L, 0 problems) — applied-algebra
+- [x] [Ch13Sltns.pdf](assets/attachments/extracted/Ch13Sltns.md) (73L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-CH13-RING-SOLUTION-OUTLINES`, containing the fourteen selected ring-theory exercises represented by this solution-outline packet.
 
-- [ ] [Ch20Sltns.pdf](assets/attachments/extracted/Ch20Sltns.md) (41L, 0 problems) — algebra
+- [x] [Ch20Sltns.pdf](assets/attachments/extracted/Ch20Sltns.md) (41L, 0 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH20-FIELD-SOLUTION-OUTLINES`, containing the nine selected field-theory exercises represented by this solution-outline packet.
 
-- [ ] [Ch7Sltns.pdf](assets/attachments/extracted/Ch7Sltns.md) (133L, 0 problems) — algebra **OCR: image placeholders**
+- [x] [Ch7Sltns.pdf](assets/attachments/extracted/Ch7Sltns.md) (133L, 0 problems) — algebra **OCR: image placeholders** — disposition 2026-09-12: reconciled with complete `SRC-CH7-GROUP-SOLUTION-OUTLINES`, which preserves 21 selected source exercises/solution outlines in source order.
 
-- [ ] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra
+- [x] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-FALL-2004`; the vendored solution packet is provenance for the 18 source-order Part A/B cards `P-BKF04-1A` through `P-BKF04-9B`.
 
 - [x] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: exact byte duplicate of `Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf` (SHA-256 `45cc7ffaf7ba4e7a3c41884817409e2728764bcce8a651979df4bb74cdccbc97`). The migration ledger already identifies the Le-named file as the retained native source, and the Real Analysis solutions resource page links this material; no duplicate collection is needed.
 
 - [x] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland_Solutions.pdf`. This is Le's *Measure and Integration: Problems with Solutions*, a reference/problem-solutions resource rather than an exam paper; it remains a resource source and does not require a qualifying-exam collection.
 
-- [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
+- [x] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009 — disposition 2026-09-12: already ingested as `SRC-BERKELEY-MATH185-FALL-2009-PSET7`; all four numbered problems are represented in source order as `P-BK185F09-7-01` through `P-BK185F09-7-04` with the vendored solution packet retained as provenance.
 
 - [x] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis — disposition 2026-09-12: exact byte duplicate of `Spring2018_SOLUTIONS.pdf` (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`); the five handwritten solutions match the five problems already represented in `SRC-UGA-RA-SPRING-2018`, so the packet is retained as enrichment rather than duplicate provenance or cards.
 
@@ -756,7 +756,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
-- [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
+- [x] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders** — disposition 2026-09-12: already ingested as `SRC-GRE-MATH-CH4-REVIEW`, with all sixteen numbered Chapter 4 review questions represented in source order by `P-GRECH4-01` through `P-GRECH4-16`. The collection records the scan-loss in Question 2 and the missing slope-field figures in Question 4 rather than guessing unrecoverable source text.
 
 - [x] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH5-REVIEW`.
 

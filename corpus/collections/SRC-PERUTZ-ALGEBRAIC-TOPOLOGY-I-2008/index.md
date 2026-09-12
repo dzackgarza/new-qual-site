@@ -8,6 +8,7 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
 - assets/attachments/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf
 source:

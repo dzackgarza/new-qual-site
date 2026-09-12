@@ -2,18 +2,24 @@
 schema: qual/card@1
 id: E-PER08-1.6
 kind: problem
-title: Perutz Algebraic Topology I Exercise 1.6
+title: Free-loop homotopy and basepoint-independent fundamental groups
 classification:
   areas: [topology]
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against Exercise 1.6 of the vendored Perutz Fall 2008 Algebraic Topology I notes.
 ---
 
 ::: {.problem}
-(a) If f0 and f1 are loops (I, ∂I) → (X, x), we say they are homotopic through loops if they are joined by a homotopy ft with ft(0) equal to
-ft(1) but not necessarily to x. Show that f0 is homotopic to f1 through loops
-iff [f0] is conjugate to [f1] in π1(X, x).
-(b) Show that a homotopy equivalence between path connected space induces an
-isomorphism on π1, regardless of the choices of basepoints.
+Let $f_0,f_1:(I,\partial I)\to(X,x)$ be loops.
+
+1. Say that $f_0$ and $f_1$ are homotopic through loops if they are joined by a homotopy $f_t$ with $f_t(0)=f_t(1)$, but not necessarily equal to $x$.
+   Show that $f_0$ is homotopic to $f_1$ through loops if and only if $[f_0]$ is conjugate to $[f_1]$ in $\pi_1(X,x)$.
+
+2. Show that a homotopy equivalence between path-connected spaces induces an isomorphism on fundamental groups, regardless of the choices of basepoints.
 :::

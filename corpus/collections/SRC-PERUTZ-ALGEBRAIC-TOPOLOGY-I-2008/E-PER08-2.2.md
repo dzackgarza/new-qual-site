@@ -2,16 +2,24 @@
 schema: qual/card@1
 id: E-PER08-2.2
 kind: problem
-title: Perutz Algebraic Topology I Exercise 2.2
+title: Polar decomposition and the topology of SL_2(C)
 classification:
   areas: [topology]
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against Exercise 2.2 of the vendored Perutz Fall 2008 Algebraic Topology I notes.
 ---
 
 ::: {.problem}
-The polar decomposition.
-It is known that every matrix A ∈ SL2(C) can be written uniquely as a product UP with U ∈ SU(2) and P positive-definite hermitian.
-Assuming this, deduce a homeomorphism S3 ×(0, ∞)×C → SL2(C). (We will soon see that this implies π1SL2(C) = {1}.)
+Assume that every matrix $A\in\operatorname{SL}_2(\mathbb C)$ can be written uniquely as a product $UP$, with $U\in\operatorname{SU}(2)$ and $P$ positive-definite Hermitian.
+
+Deduce a homeomorphism
+\[
+S^3\times(0,\infty)\times\mathbb C\longrightarrow \operatorname{SL}_2(\mathbb C).
+\]
 :::

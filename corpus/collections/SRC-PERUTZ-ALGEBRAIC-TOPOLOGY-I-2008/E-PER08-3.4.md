@@ -2,46 +2,58 @@
 schema: qual/card@1
 id: E-PER08-3.4
 kind: problem
-title: Perutz Algebraic Topology I Exercise 3.4
+title: PSL_2(Z) as the free product C_2*C_3
 classification:
   areas: [topology]
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against Exercise 3.4 of the vendored Perutz Fall 2008 Algebraic Topology I notes.
 ---
 
 ::: {.problem}
-In this exercise we show that the modular group, PSL 2(Z) =SL2(Z)/{±I},
-is the free product (Z/2)∗ (Z/3). Deﬁne three elements of SL2(Z),
-S =
-[ 0 1
-−1 0
-]
-, T =
-[ 1 −1
-0 1
-]
-, U =ST =
-[ 0 1
-−1 1
-]
-.
-(a) Verify that S2 =U3 =−I.
-(b) Show that, for any A∈ SL2(Z), there is an n∈ Z such that the matrix[
-a b
-c d
-]
-=ATn has c = 0 or|d|≤| c|/2.
-(c) Explain how to ﬁnd an integer l≥ 0 and a sequence of integers n1,...,n l
-such that either ATn1STn2S...ST l or ATn1STn2S...ST lS has 0 as its
-lower-left entry.
-(d) Show that S and T generate SL2(Z).
-(e)* Deﬁne θ :⟨a,b | a2,b 3⟩ = ( Z/2)∗ (Z/3) → PSL 2(Z) to be the unique
-homomorphism such that θ(a) = ±S and θ(b) = ±U. Remind yourself
-how PSL 2(R) acts on the upper half-plane H⊂ C by M¨ obius maps. Take
-1⁄= w∈ (Z/2)∗ (Z/3). Prove that the M¨ obius map µw corresponding to
-θ(w)∈PSL 2(R) has the property that µw(D)∩D =∅, where
-D ={z∈ H : 0< Rez <1/2,|z− 1|> 1}.
-[Hint: consider A :={z∈ H : Re z > 0} and B :={z∈ H :|z− 1| >
-max(1,|z|)}.] Deduce that θ is an isomorphism.
+Let
+\[
+S=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+T=\begin{pmatrix}1&-1\\0&1\end{pmatrix},\qquad
+U=ST=\begin{pmatrix}0&1\\-1&1\end{pmatrix}
+\]
+in $\operatorname{SL}_2(\mathbb Z)$.
+
+1. Verify that $S^2=U^3=-I$.
+
+2. Show that, for every $A\in\operatorname{SL}_2(\mathbb Z)$, there is $n\in\mathbb Z$ such that if
+   \[
+   AT^n=\begin{pmatrix}a&b\\c&d\end{pmatrix},
+   \]
+   then either $c=0$ or $|d|\le |c|/2$.
+
+3. Explain how to find $\ell\ge0$ and integers $n_1,\dots,n_\ell$ such that either
+   \[
+   AT^{n_1}ST^{n_2}S\cdots ST^{n_\ell}
+   \]
+   or the same product followed by $S$ has lower-left entry zero.
+
+4. Show that $S$ and $T$ generate $\operatorname{SL}_2(\mathbb Z)$.
+
+5. Define
+   \[
+   \theta:(\mathbb Z/2)*(\mathbb Z/3)=\langle a,b\mid a^2,b^3\rangle\to\operatorname{PSL}_2(\mathbb Z)
+   \]
+   by $\theta(a)=\pm S$ and $\theta(b)=\pm U$.
+   Using the Möbius action on the upper half-plane $\mathbb H$, prove that for every nontrivial word $w$ the map $\mu_w$ corresponding to $\theta(w)$ satisfies $\mu_w(D)\cap D=\varnothing$, where
+   \[
+   D=\{z\in\mathbb H:0<\operatorname{Re}z<1/2,\ |z-1|>1\}.
+   \]
+   Deduce that $\theta$ is an isomorphism.
+
+For the last part, the source suggests considering
+\[
+A=\{z\in\mathbb H:\operatorname{Re}z>0\},\qquad
+B=\{z\in\mathbb H:|z-1|>\max(1,|z|)\}.
+\]
 :::
