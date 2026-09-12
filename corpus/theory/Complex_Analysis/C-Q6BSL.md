@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-Q6BSL
 kind: corollary
-title: Better derivative formula that sometimes works for simple poles
+title: Residue formula at a simple zero of the denominator
 classification:
   areas:
   - complex-analysis
