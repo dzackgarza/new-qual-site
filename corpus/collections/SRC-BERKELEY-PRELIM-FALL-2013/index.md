@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/F13_Exam.pdf
+- assets/attachments/F13_Solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley
