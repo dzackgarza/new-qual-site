@@ -3751,14 +3751,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TEXT-HAT02/4-l/E-HAT-4.L-4.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/4-l/E-HAT-4.L-5.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/index.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-1.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-2.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-3.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-4.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-5.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-6.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-7.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-8.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-1.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-2.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-3.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-4.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-5.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-6.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-7.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-2/E-HK-12-8.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-1EVA.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-9X41.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-CG7N.md
