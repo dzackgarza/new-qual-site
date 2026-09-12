@@ -4358,16 +4358,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TEXT-HUN74/vii-4/P-IR6HQ.md
 - [ ] corpus/collections/SRC-TEXT-HUN74/vii-5/P-Q5ICU.md
 - [ ] corpus/collections/SRC-TEXT-HUN74/vii-5/P-QVPRB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-10.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-10.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/1/E-MUN-1-9.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-1.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-10.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-11.md
