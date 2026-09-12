@@ -86,8 +86,8 @@ Fourier evaluations \(f\mapsto\widehat f(\xi)\), so containment in a maximal ide
 a common zero \(\xi\).
 :::
 
-<1>5. The zero set \(Z(M)\) is therefore an important spectral invariant, but it should
-not be presented as a complete classification of closed ideals of \(L^1(\mathbb R)\).
+<1>5. The zero set \(Z(M)\) is a spectral invariant, but it does not
+classify closed ideals of \(L^1(\mathbb R)\).
 ::: {.proof}
 Complete recovery of closed ideals from their hulls is the spectral-synthesis problem.
 For non-discrete locally compact abelian groups, spectral synthesis fails in general, so
