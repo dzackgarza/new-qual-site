@@ -28,9 +28,9 @@ of irreducible closed subsets.
 :::
 
 ::: {.proposition}
-For an affine variety $X$ over $k = \bar{k}$,
+For $X = \Spec A$, where $A$ is a finite-type integral algebra over any field $k$,
 \[
-\dim X = \krulldim k[X] = \trdeg_k k(X) .
+\dim X = \krulldim A = \trdeg_k \Frac(A) .
 \]
 :::
 
@@ -38,5 +38,5 @@ For an affine variety $X$ over $k = \bar{k}$,
 The dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
 
 The equality with Krull dimension relates the topological definition to dimension theory of rings.
-The identification with transcendence degree is where algebraic closure is used, and it fails without it.
+Noether normalisation gives the equality with transcendence degree over an arbitrary field.
 :::
