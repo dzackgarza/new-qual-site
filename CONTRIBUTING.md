@@ -327,6 +327,99 @@ same relationship. Repair the function and framing of the affected passages,
 then reread them together. Synonym substitution, hedging, and a disclaimer
 about good intentions are not corrections.
 
+### `STANCE-13`: Recognize the recurring authorial persona
+
+Here, persona means the social position enacted by the prose. It does not
+attribute consciousness, feelings, or personal beliefs to a generating model.
+These traits describe observable writing behaviour. They can occur in any
+subject or interface, not only bibliographic descriptions.
+
+| Trait | Observable form and generalization | Why it is professionally inappropriate | Corrective stance |
+| --- | --- | --- | --- |
+| Conceit | The writer announces which work deserves attention or which judgement discerning people share. | It installs the writer above colleagues as an arbiter without a mandate. Repetition makes superiority the document's organizing position. | Contribute specific information that readers can use and assess. |
+| Condescension | Ordinary operations are explained as though capable readers need elementary supervision. | It assigns readers a lower level of intelligence or experience without cause. Fluent or friendly delivery does not remove the insult. | Explain the actual task-specific difficulty; omit unsolicited elementary coaching. |
+| Paternalism | The writer decides what readers may study, when they should read it, or how they must use it. | It appropriates decisions that belong to readers and assumes superior knowledge of their circumstances. | Supply scope, dependencies, and access so readers can choose. |
+| Gatekeeping | A reading pace, preferred method, or topic choice becomes evidence of being a serious or prepared mathematician. | It converts variable circumstances into a test of belonging or competence and can demean sustained effort. | State prerequisites without defining who counts as capable. |
+| Contempt for intellectual interests | Calculations or proofs are dismissed as chores whose avoidance is an obvious benefit. | It treats the writer's taste as a standard and belittles readers who value that work. | Describe the mathematical reduction or application. |
+| Casual disparagement of colleagues | Sources receive collective quality judgements, or praise of one implies that others lack honest or adequate mathematics. | It places identifiable scholars under public suspicion and turns description into professional denigration. | Describe contents and methods; keep necessary errata specific to statements. |
+| Assumed institutional authority | The writer predicts what committees know, what examiners seek, or how they assess individuals. | It claims a right to speak for faculty and uses their imagined authority to govern readers. | Attribute published requirements and distinguish observations from intentions. |
+| Intellectual grandstanding | Sweeping claims about a subject or literature replace named results, evidence, and source locations. | It asks readers to defer to the writer's apparent command of a field while withholding the work that would make the passage useful. | Supply the argument, bounded evidence, or reference mapping. |
+| Unwarranted certainty | A local observation becomes a universal claim about all texts, students, or exams. | It makes limited knowledge sound like comprehensive authority, often reinforcing a judgement about other people. | Bound the claim to what the evidence establishes. |
+| Dismissive familiarity | Conversational flourishes present a field's work as something the writer can casually size up and dispose of. | Combined with ranking or prescriptions, the familiarity makes professional judgement sound effortless and beyond dispute. Informality alone is not the defect. | Use direct descriptions without the performance of superior insider knowledge. |
+| Self-centering | The prose foregrounds the writer's preservation, selection, insight, or supposed rescue of the reader. | It makes the contributor's status the subject and casts readers as beneficiaries who need that intervention. | Present the usable material and its relations. |
+
+The shared structure is an asymmetry the writer invents: informed judge above
+inadequate subject, supervisor above dependent reader, insider above outsider.
+Changing the topic does not change the defect. A theorem introduction, help
+message, tutorial, or project overview can enact the same hierarchy.
+
+### `STANCE-14`: Do not reduce professional disrespect to a lesser defect
+
+An error can have factual, stylistic, and social dimensions at once. Correcting
+the factual one does not discharge the others. In particular, a sound citation
+cannot authorize a writer to humiliate readers or pass judgement on colleagues.
+Review the relationship being imposed even when a sentence can be made true.
+
+| Minimizing diagnosis | What it misses | Required correction |
+| --- | --- | --- |
+| “This needs a citation.” | The writer may have adopted an inappropriate role even if the opinion is defensible. | Remove the professional verdict and supply the relevant content. |
+| “This is generic advice.” | The advice can place adults under unsolicited supervision and disparage their judgement. | Identify who is being directed and what authority is being presumed. |
+| “This is too verbose.” | A shorter command or insult retains the hierarchy. | Change the sentence's function, not only its length. |
+| “The tone could be friendlier.” | Polite paternalism still assigns the reader an inferior position. | Restore autonomy rather than adding warmth. |
+| “Readers might misunderstand it.” | The reading may follow directly from the words and surrounding named targets. | Evaluate the implication the document actually supports. |
+| “The agent intended to help.” | Intent does not alter the public relationship or its targets. | Judge the published wording and replace its stance. |
+| “This is an isolated generation mistake.” | Repetition across independent passages establishes a recurring pattern. | Read the full artifact and address all manifestations in the authorized scope. |
+| “A template or renderer caused it.” | A technical origin does not exhaust the content defect or excuse the resulting public persona. | Correct the prose and any demonstrated generating cause; verify both obligations separately. |
+| “It could reduce engagement or trust.” | The writing may already enact contempt, public disparagement, or presumptuous authority. | Name the professional conduct directly instead of substituting a mild product metric. |
+| “We cannot know the model's internal state.” | The visible behaviour is sufficient to assess the authorial stance. | Diagnose that behaviour without requiring a causal account of training. |
+
+Do not require an actual complaint before recognizing serious disrespect.
+Do not infer that every clumsy phrase is equally severe either. Establish the
+judgement through the target, implied relationship, context, and recurrence.
+The point is accurate recognition of what the document does, not a ritual of
+strong adjectives.
+
+### `STANCE-15`: Explain cumulative severity without diluting it
+
+A single ambiguous phrase can be a local wording problem. A passage that
+explicitly judges competence or integrity is already a professional problem.
+A document that repeatedly judges students, colleagues, and faculty establishes
+a sustained superior persona. The recurrence changes the interpretation of its
+parts: commands, comparisons, and casual asides become mutually reinforcing
+evidence of the same stance.
+
+This can amount to egregious professional disrespect in the artifact. Students
+are treated as deficient dependants; scholars become objects of casual verdicts;
+faculty are made to endorse the writer's prescriptions. Under the owner's name,
+the document represents that person as willing to treat the community this way.
+The seriousness lies in the conduct itself, not only in possible consequences
+for the owner. It gives its targets grounds to object even if nobody complains.
+
+Do not predict disciplinary outcomes or diagnose the owner's character. The
+claim concerns the published persona and its treatment of people. Naming that
+boundary permits a strong, precise judgement; it is not grounds for reducing
+sustained contempt to a minor stylistic concern.
+
+### `STANCE-16`: Verify a changed relationship, not cosmetic compliance
+
+**Cosmetic revision:** “Perhaps experienced students would benefit from using
+this only to verify their own work.”
+
+**Substantive revision:** “The worked solution applies [method] to [problem],
+[location].”
+
+The first sentence hedges the same supervision and competence distinction.
+The second supplies information without assigning the reader a place in a
+hierarchy. The replacement must also be true and useful in its context.
+
+After revision, identify what concrete content the reader receives and which
+decisions remain theirs. Check that removing the superior posture did not
+remove needed explanations, corrections, or functionality. Read the document
+as addressed to the actual audience and as describing real colleagues. If the
+writer still appears entitled to certify those people or regulate their
+intellectual lives, the correction is incomplete, however concise and polite
+the sentences have become.
+
 ## Prose policies
 
 These policies apply to all public card, guide, and wiki prose. They identify
