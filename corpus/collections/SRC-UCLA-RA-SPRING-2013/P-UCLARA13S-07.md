@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and suppose $\log|f|$ is absolutely integrable with respect to planar Lebesgue measure. Show that $f$ is constant.
+Let $f:\mathbb C\to\mathbb C$ be entire and suppose $\log|f|$ is absolutely integrable with respect to planar Lebesgue measure.
+Show that $f$ is constant.
 :::

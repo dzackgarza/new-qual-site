@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be a nonconstant entire function. Without using either Picard theorem, show that there exist complex numbers $z$ of arbitrarily large modulus for which $f(z)$ is a positive real number.
+Let $f:\mathbb C\to\mathbb C$ be a nonconstant entire function.
+Without using either Picard theorem, show that there exist complex numbers $z$ of arbitrarily large modulus for which $f(z)$ is a positive real number.
 :::

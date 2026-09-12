@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb H$ be the upper half-plane and let $f:\mathbb H\to\mathbb H$ be holomorphic. Assume
+Let $\mathbb H$ be the upper half-plane and let $f:\mathbb H\to\mathbb H$ be holomorphic.
+Assume
 \[
 \lim_{y\to\infty} y f(iy)=i,
 \qquad

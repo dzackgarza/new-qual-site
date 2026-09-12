@@ -27,7 +27,8 @@ By a theorem of Bourgain, there is an absolute constant $C$ such that
 \[
 \|Mf\|_{L^3(\mathbb R^2)}\le C\|f\|_{L^3(\mathbb R^2)}
 \]
-for all $f\in C_c(\mathbb R^2)$. Use this to show that if $K\subset\mathbb R^2$ is compact, then
+for all $f\in C_c(\mathbb R^2)$.
+Use this to show that if $K\subset\mathbb R^2$ is compact, then
 \[
 A_r\chi_K(x,y)\longrightarrow 1\qquad(r\to0)
 \]

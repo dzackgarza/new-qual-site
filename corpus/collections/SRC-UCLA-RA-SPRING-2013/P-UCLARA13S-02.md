@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Consider the Hilbert space $\ell^2(\mathbb Z)$. Show that the Borel $\sigma$-algebra associated to the norm topology agrees with the Borel $\sigma$-algebra associated to the weak topology.
+Consider the Hilbert space $\ell^2(\mathbb Z)$.
+Show that the Borel $\sigma$-algebra associated to the norm topology agrees with the Borel $\sigma$-algebra associated to the weak topology.
 :::
