@@ -76,9 +76,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/fourier/convolution.md` — no stance revision
 - [x] `wiki/real-analysis/fourier/index.md` — no stance revision
 - [x] `wiki/real-analysis/fourier/the-transform.md` — removed unsupported claim about what the exam uses
-- [ ] `wiki/real-analysis/fubini-tonelli/index.md`
-- [ ] `wiki/real-analysis/fubini-tonelli/statements.md`
-- [ ] `wiki/real-analysis/fubini-tonelli/which-one-applies.md`
+- [x] `wiki/real-analysis/fubini-tonelli/index.md` — no stance revision
+- [x] `wiki/real-analysis/fubini-tonelli/statements.md` — no stance revision
+- [x] `wiki/real-analysis/fubini-tonelli/which-one-applies.md` — no stance revision
 - [ ] `wiki/real-analysis/functional-analysis/banach-and-hilbert.md`
 - [ ] `wiki/real-analysis/functional-analysis/index.md`
 - [ ] `wiki/real-analysis/functional-analysis/operators.md`
