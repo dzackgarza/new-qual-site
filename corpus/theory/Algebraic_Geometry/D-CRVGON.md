@@ -30,7 +30,7 @@ Gonality $1$ means $C \cong \PP^1$, gonality $2$ means $C$ is hyperelliptic, and
 :::
 
 ::: {.remark}
-The notation is what an examiner uses to ask the question compactly, so it is worth being fluent: a $g^1_2$ is a degree-two map to $\PP^1$, a $g^2_d$ is a map to $\PP^2$ of degree $d$, and the canonical system on a non-hyperelliptic curve of genus $g$ is a $g^{g-1}_{2g-2}$.
+A $g^1_2$ is a degree-two map to $\PP^1$, a $g^2_d$ is a map to $\PP^2$ of degree $d$, and the canonical system on a non-hyperelliptic curve of genus $g$ is a $g^{g-1}_{2g-2}$.
 
 Gonality is the first invariant after the genus that stratifies $\mathcal{M}_g$.
 The bound $d \geq \tfrac{1}{2}g+1$ says gonality is at most $\lfloor \tfrac{g+3}{2} \rfloor$, and the general curve attains it.
