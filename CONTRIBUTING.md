@@ -245,6 +245,56 @@ information in this guide or in the repository work queues.
 Readers need mathematical reasons for mathematical claims. Internal workflow,
 review status, and implementation reasons belong in contributor documentation.
 
+### `PROSE-12`: Do not prescribe a reading order without a mathematical dependency
+
+**Bad:** “Read the subjects in this order. The later subjects use the machinery
+introduced earlier.”
+
+**Good:** “The definition of a scheme uses a locally ringed space. Cohomology
+then assigns groups to sheaves on a scheme.”
+
+A reading order is useful only when it names a dependency, prerequisite, or
+explicit exam strategy. Historical chronology and an author’s claim about what
+can be understood do not establish either one. State the mathematical relation
+that requires the order, or let the navigation express an editorial choice.
+
+### `PROSE-13`: Do not divide readers by imagined motive
+
+**Bad:** “Readers who are learning the subject should read forward; readers
+under time pressure should start with the exam topics and work backward.”
+
+**Good:** “The curve pages collect the genus, Riemann--Roch, and
+Riemann--Hurwitz results used in the problem bank.”
+
+Reader categories based on urgency, ability, or purpose are patronizing when the
+page has no evidence for them. They also replace content with study advice.
+Describe what each page contains and state any actual dependency or exam
+connection.
+
+### `PROSE-14`: Support exam-priority claims or remove them
+
+**Bad:** “Most oral questions use this topic.”
+
+**Good:** “The oral-exam problems in this collection ask for the genus formula
+and applications of Riemann--Roch.”
+
+Claims about what examiners usually ask are empirical claims. An unsupported
+frequency claim rates one part of the guide and pressures the reader to accept
+the author’s priorities. Name the collection and its observed questions, or
+omit the ranking.
+
+### `PROSE-15`: Do not make missing exposition the reader’s repair task
+
+**Bad:** “Follow the links backward when a definition is missing.”
+
+**Good:** “A scheme is defined before the pages that use schemes. The
+definition is linked at each first use.”
+
+Navigation cannot replace a missing definition or an unproved dependency. A
+guide should provide the statement at the point where the reader needs it, or
+link a named canonical statement. Telling the reader to repair the order hides
+an authoring defect and transfers the work to the reader.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
