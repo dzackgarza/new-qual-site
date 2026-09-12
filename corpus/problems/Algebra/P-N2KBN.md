@@ -35,7 +35,7 @@ For $A\in M_n(k)$, make $k^n$ a $k[x]$-module by $x\cdot v=Av$. Then $A$ and $B$
 
 Thus one tests similarity by comparing the invariant factors (or rational canonical forms) of $A$ and $B$.
 
-Moreover, if $A,B\in M_n(k)$ become similar over an extension field $K/k$—in particular over $\bar k$—then they were already similar over $k$. One clean proof uses ranks: for every $f\in k[x]$ and every $r\ge1$, similarity over $K$ gives
+Moreover, if $A,B\in M_n(k)$ become similar over an extension field $K/k$—in particular over $\bar k$—then they were already similar over $k$. A proof uses ranks: for every $f\in k[x]$ and every $r\ge1$, similarity over $K$ gives
 \[
 \operatorname{rank}_K f(A)^r=\operatorname{rank}_K f(B)^r.
 \]
