@@ -685,31 +685,31 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Sp16_Solutions.pdf](assets/attachments/extracted/Sp16_Solutions.md) (415L, 0 problems) — applied-algebra
 
-- [ ] [Week1_solns.pdf](assets/attachments/extracted/Week1_solns.md) (257L, 0 problems) — complex-analysis
+- [x] [Week1_solns.pdf](assets/attachments/extracted/Week1_solns.md) (257L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-PRELIM-CALCULUS-I-WEEK1`; direct numbering in the source runs 1--28 and the collection contains exactly 28 source-order cards.
 
-- [ ] [Week2_solns.pdf](assets/attachments/extracted/Week2_solns.md) (440L, 0 problems) — applied-algebra
+- [x] [Week2_solns.pdf](assets/attachments/extracted/Week2_solns.md) (440L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-PRELIM-CALCULUS-II-WEEK2`; direct numbering in the source runs 1--23 and the collection contains exactly 23 source-order cards.
 
-- [ ] [Week3_solns.pdf](assets/attachments/extracted/Week3_solns.md) (362L, 0 problems) — complex-analysis **OCR: image placeholders**
+- [x] [Week3_solns.pdf](assets/attachments/extracted/Week3_solns.md) (362L, 0 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK3-2020`; direct numbering in the source runs 1--28 and the collection contains exactly 28 source-order cards.
 
-- [ ] [Week4_solns.pdf](assets/attachments/extracted/Week4_solns.md) (474L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [Week4_solns.pdf](assets/attachments/extracted/Week4_solns.md) (474L, 0 problems) — UNL — applied-algebra **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK4-2020`; direct numbering in the source runs 1--26 and the collection contains exactly 26 source-order cards.
 
-- [ ] [Week6_solns.pdf](assets/attachments/extracted/Week6_solns.md) (501L, 0 problems) — UNL — topology **OCR: image placeholders**
+- [x] [Week6_solns.pdf](assets/attachments/extracted/Week6_solns.md) (501L, 0 problems) — UNL — topology **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK6-2020`; direct numbering in the source runs 1--27 and the collection contains exactly 27 source-order cards.
 
 ## Solution manuals (3)
 
-- [ ] [chapter-1.pdf](assets/attachments/extracted/chapter-1.md) (87L, 16 problems) — no metadata
+- [x] [chapter-1.pdf](assets/attachments/extracted/chapter-1.md) (87L, 16 problems) — no metadata — disposition 2026-09-12: reconciled with complete `SRC-GRE-MATH-CH1-REVIEW`, which represents all 25 numbered Chapter 1 review questions in source order.
 
-- [ ] [s03solution.pdf](assets/attachments/extracted/s03solution.md) (231L, 0 problems) — complex-analysis
+- [x] [s03solution.pdf](assets/attachments/extracted/s03solution.md) (231L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2003`; the vendored solution packet is provenance for all 18 Part A/B problems in source order.
 
-- [ ] [s06solution.pdf](assets/attachments/extracted/s06solution.md) (409L, 0 problems) — applied-algebra
+- [x] [s06solution.pdf](assets/attachments/extracted/s06solution.md) (409L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2006`; the vendored solution packet is provenance for all 18 Part A/B problems in source order.
 
 ## Lecture notes (4)
 
-- [ ] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis
+- [x] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis — disposition 2026-09-12: reference-only Todd Kemp Math 140A Exam 2 key-facts review (lim sup/inf, complex numbers, series, metric spaces), not a problem source. Retained on the prelim reference page and added to `vocabularies/references.bib` as `Kemp16Math140AExam2Review`; no cards manufactured.
 
-- [ ] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+- [x] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only Jingzhi Tie UGA Math 8150 Spring 2020 lecture deck of worked conformal-mapping examples, not an exercise source despite the inventory count. Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20ConformalExamples`; no cards manufactured.
 
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014
+- [x] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: reference-only Spring 2014 UNL Math 872 Algebraic Topology course contents/theorem outline, not a problem source. Retained on the topology resource page and added to `vocabularies/references.bib` as `Hermiller14Math872`; no cards manufactured.
 
 - [x] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008 — disposition 2026-09-12: reconciled to complete `SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008`. Direct source typography contains 89 explicit exercises, not the inventory count of 58. A duplicate partial Chapters 1–4 intake was collapsed into the canonical collection by retaining its richer source-checked transcriptions for those 17 exercises; the canonical collection now contains all 89 exercises in source order.
 
