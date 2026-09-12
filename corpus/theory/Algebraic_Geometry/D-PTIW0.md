@@ -36,9 +36,8 @@ for all $p$.
 :::
 
 ::: {.remark}
-Derived functor cohomology is what the theory is defined by and Čech cohomology is what one computes with, so the agreement theorem is the bridge every computation crosses.
-Its hypotheses are the ones that make the cover good enough: affines have no higher cohomology for quasicoherent sheaves, and separatedness makes the intersections affine too.
+Under the theorem's hypotheses, the Čech complex computes derived-functor cohomology: affines have no higher cohomology for quasicoherent sheaves, and separatedness makes the intersections affine too.
 
-The practical consequence is a bound that is often the fastest route to a vanishing statement: a scheme covered by $n+1$ affines has $H^p = 0$ for $p > n$ and all quasicoherent $\mcf$.
+Consequently, a Noetherian separated scheme covered by $n+1$ affines has $H^p(X,\mcf) = 0$ for $p > n$ and every quasicoherent $\mcf$.
 On $\PP^n$ with the standard $n+1$ charts this gives vanishing above degree $n$ before any computation is done.
 :::
