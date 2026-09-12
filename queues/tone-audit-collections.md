@@ -112,22 +112,22 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B2P3P.md
 - [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B6E7Q.md
 - [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-DLFQC.md — Changed: state the product-ring identity instead of prescribing what every proof should mention (STANCE-11).
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-EHBDD.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-J2D5B.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-PBVSZ.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/index.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-01.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-02.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-03.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-04.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-05.md
-- [ ] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/index.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-01.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-02.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-03.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-04.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-05.md
-- [ ] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/index.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-EHBDD.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-J2D5B.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-PBVSZ.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/index.md — Changed: replace missing-institution commentary with the mathematical subjects (STANCE-10).
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-01.md
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-02.md
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-03.md
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-04.md
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/P-ALGCOMP03-05.md
+- [x] corpus/collections/SRC-ALGEBRA-COMP-FALL-2003/index.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-01.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-02.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-03.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-04.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/P-ALGFINAL11-05.md
+- [x] corpus/collections/SRC-ALGEBRA-FINAL-2011-SOLUTIONS/index.md
 - [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-01.md
 - [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-02.md
 - [ ] corpus/collections/SRC-ALGEBRA-REVIEW-PANTANO-2011/P-ALGPAN11-03.md
