@@ -25,5 +25,5 @@ c. Now show that if $V, W$ are any two varieties over $k$, then the natural map
 \Hom_{\mathsf{Var}_k}(V, W) \to \Hom_{\Sch_k}\qty{t(V), t(W)}
 \]
 is bijective.
-Injectivity is easy; the hard part is surjectivity.
+Injectivity follows because a morphism of varieties over $k$ is determined by its action on closed points; surjectivity requires the residue-field preservation established in parts (a) and (b).
 :::

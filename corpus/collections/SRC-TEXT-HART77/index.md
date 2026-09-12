@@ -983,5 +983,4 @@ source:
       comment: V.6.2
 ---
 
-The exercises are the course, and an algebraic geometry qual is in large part a conversation about them.
-Solutions here are the author's own, written while reading for the exam.
+The exercises are the contents of the textbook, listed by section with their statements and solutions.

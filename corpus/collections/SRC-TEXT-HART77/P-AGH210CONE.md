@@ -35,7 +35,8 @@ The projective closure $\overline{C(Y)}$ in $\PP^{n+1}$ is called the **projecti
 ::: solution
 **Part 1.** The set $C(Y)$ is algebraic because it is of the form $C(Y) = V(I(Y))$.
 That the ideal is again $I(Y)$: a polynomial $f$ vanishing on $C(Y)$ vanishes at every $\vector{a} \neq \vector{0}$ of the cone, and reading $\vector{a}$ as homogeneous coordinates on $\PP^n$ shows $f$ vanishes on $Y$.
-Conversely, if $f \in I(Y)$ is homogeneous then $f(\lambda \vector{a}) = \lambda^{\deg f} f(\vector{a}) = 0$, so $f$ vanishes on $C(Y) \sm \ts{\vector{0}}$, and any homogeneous polynomial of positive degree vanishes at $\vector{0}$ as well.
+Conversely, if $f \in I(Y)$ is homogeneous then $f(\lambda \vector{a}) = \lambda^{\deg f} f(\vector{a}) = 0$, so $f$ vanishes on $C(Y) \sm \ts{\vector{0}}$.
+Every homogeneous polynomial of positive degree also vanishes at $\vector{0}$, so $f \in I(C(Y))$.
 
 **Part 2.** An algebraic set is irreducible exactly when its ideal is prime, and by part 1 the two ideals coincide: $I(Y) = I(C(Y))$.
 

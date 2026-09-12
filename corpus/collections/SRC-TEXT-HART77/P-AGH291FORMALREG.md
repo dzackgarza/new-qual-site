@@ -31,5 +31,5 @@ c. Use the exact sequences
 and induction on $r$ to show that $\Gamma(Y, \OO_X/\mci^r) = k$ for all $r \geq 1$.
 
 d. Conclude that $\Gamma(\hat X, \OO_{\hat X}) = k$.
-Actually the same result holds without the hypothesis that $Y$ is nonsingular, but the proof is more difficult.
+The same conclusion holds without the hypothesis that $Y$ is nonsingular; the argument above uses nonsingularity in part (a).
 :::
