@@ -31,9 +31,9 @@ An **immersion** is a morphism making $X$ isomorphic to an open subscheme of a c
 :::
 
 ::: {.remark}
-The surjectivity clause is the whole definition, and the examiner asks about it by asking why a homeomorphism onto a closed set is not enough.
-The answer is $\Spec k \to \Spec k[\varepsilon]/(\varepsilon^2)$ versus $\Spec k[\varepsilon]/(\varepsilon^2) \to \Spec k[\varepsilon]/(\varepsilon^2)$: the underlying spaces are the same one point, and only the sheaf map distinguishes the reduced point from the fat one.
+The underlying closed subset does not determine a closed subscheme.
+The closed immersions $\Spec k \to \Spec k[\varepsilon]/(\varepsilon^2)$ and $\Spec k[\varepsilon]/(\varepsilon^2) \to \Spec k[\varepsilon]/(\varepsilon^2)$ have the same one-point image, but their sheaf maps distinguish the reduced point from the nonreduced one.
 Surjectivity of $f^\sharp$ is what makes closed subschemes of $\Spec A$ correspond to ideals of $A$ rather than to closed subsets, so that $V(x)$ and $V(x^2)$ are different subschemes of $\AA^1$.
 
-Locally closed is the honest general notion, and it is why "immersion" is not just the two extremes glued: $\ts{xy = 0} \sm \ts{0}$ sits in $\AA^2$ as neither an open nor a closed subscheme.
+An immersion need be neither open nor closed: $\ts{xy = 0} \sm \ts{0}$ is a locally closed subscheme of $\AA^2$ that is neither open nor closed.
 :::
