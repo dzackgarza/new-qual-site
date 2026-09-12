@@ -42,7 +42,7 @@ Both readings are sensitive to the embedding, because $S(X)$ is: $P_X$ is an inv
 This is the precise sense in which degree depends on the embedding while the genus of a smooth curve does not.
 :::
 
-::: {.remark title="The example to have ready"}
+::: {.remark title="Projective space and the twisted cubic"}
 $P_{\PP^n}(r) = \binom{r+n}{n}$, of degree $n$ and leading coefficient $1/n!$, so $\deg \PP^n = 1$ and $p_a(\PP^n) = 0$.
 
 On $\PP^1$ the connection to line bundles is visible: $h^0(\PP^1, \OO(m)) = m+1$, and taking $m = 3r$ recovers the Hilbert polynomial of the twisted cubic, $P(r) = 3r+1$ — degree $3$, arithmetic genus $0$.
