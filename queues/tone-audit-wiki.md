@@ -78,7 +78,7 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [x] `wiki/algebra/workshops/algebra-week-n-rep-theory.md` — no stance revision.
 - [x] `wiki/algebra/workshops/index.md` — no stance revision.
 - [x] `wiki/algebraic-geometry/cohomology/computing-cohomology.md` — replaced memorization directive and examiner-intent claim with the cohomology shape and the two answers' content.
-- [ ] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md`
+- [x] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md` — replaced exam-frequency and examiner-intent claims and study directives with the derived-functor definition, flasque acyclicity, complementary hypotheses, and the long-exact-sequence computation.
 - [ ] `wiki/algebraic-geometry/cohomology/families.md`
 - [ ] `wiki/algebraic-geometry/cohomology/index.md`
 - [ ] `wiki/algebraic-geometry/cohomology/projective-schemes.md`
