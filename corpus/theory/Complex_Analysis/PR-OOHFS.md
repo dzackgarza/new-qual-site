@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-OOHFS
 kind: proposition
-title: Half-plane to Disc (Cayley Transform, very important)
+title: Half-plane to Disc (Cayley Transform)
 classification:
   areas:
   - complex-analysis
