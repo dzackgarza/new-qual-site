@@ -1637,14 +1637,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2007-p-36/P-JHUFA07ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA7.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA8.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA7.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10CA8.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA4.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-4KTFN.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-8XT01.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-I753O.md
@@ -3344,17 +3344,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-17.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-18.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-19.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-2.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-2.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-20.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-21.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-22.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-3.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-4.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-5.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-6.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-7.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-8.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-9.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-3.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-4.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-5.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-6.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-7.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-8.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-9.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-1.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-10.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-3/E-HAT-1.3-11.md
