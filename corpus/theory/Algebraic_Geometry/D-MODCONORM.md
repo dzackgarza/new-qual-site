@@ -50,5 +50,4 @@ Local freeness of it is a smoothness statement and is what makes the determinant
 
 The divisor form is the working tool.
 For a degree-$d$ plane curve $C \subseteq \PP^2$, $\omega_{\PP^2} = \OO(-3)$ and $\OO(C) = \OO(d)$, so $\omega_C = \OO_C(d-3)$, which has degree $d(d-3)$ and gives $g = \binom{d-1}{2}$ by $\deg \omega_C = 2g-2$.
-That derivation is the standard follow-up to any question about differentials, and the examiner is usually waiting for it.
 :::
