@@ -1712,14 +1712,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANB.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANC.md
@@ -4458,8 +4458,8 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/20/E-XDJRZ.md
 - [x] corpus/collections/SRC-TEXT-MUN00/20/E-XFF7Q.md
 - [x] corpus/collections/SRC-TEXT-MUN00/20/E-ZEESK.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-1841E.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-9V5EM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-1841E.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-9V5EM.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-AFAON.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-BTI7W.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-DE8TQ.md
