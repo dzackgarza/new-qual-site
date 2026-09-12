@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ and $Y$ be topological spaces, and give $X\times Y$ the product topology. Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corresponding Borel $\sigma$-algebras.
+Let $X$ and $Y$ be topological spaces, and give $X\times Y$ the product topology.
+Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corresponding Borel $\sigma$-algebras.
 
 (a) If $f:X\to Y$ is continuous, prove that $E\in\mathcal B(Y)$ implies $f^{-1}(E)\in\mathcal B(X)$.
 

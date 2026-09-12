@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $P(z)$ be a polynomial. Show that there exist an integer $n$ and a polynomial $Q(z)$ such that
+Let $P(z)$ be a polynomial.
+Show that there exist an integer $n$ and a polynomial $Q(z)$ such that
 \[
 P(z)Q(z)=z^n|P(z)|^2
 \]

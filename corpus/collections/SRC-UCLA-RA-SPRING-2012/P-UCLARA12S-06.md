@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f\in L^2(\mathbb R)$ and $\widehat f(\xi)>0$ for almost every $\xi$. Show that the set of finite linear combinations of translates of $f$ is dense in $L^2(\mathbb R)$.
+Suppose $f\in L^2(\mathbb R)$ and $\widehat f(\xi)>0$ for almost every $\xi$.
+Show that the set of finite linear combinations of translates of $f$ is dense in $L^2(\mathbb R)$.
 :::

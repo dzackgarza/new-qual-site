@@ -17,9 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1([0,1])$. For $n\in\mathbb N$, define
+Let $f\in L^1([0,1])$.
+For $n\in\mathbb N$, define
 \[
 f_n(x)=n\int_{k/n}^{(k+1)/n}f(y)\,dy
 \]
-whenever $x\in[k/n,(k+1)/n)$ and $0\le k\le n-1$. Prove that $f_n\to f$ in $L^1([0,1])$.
+whenever $x\in[k/n,(k+1)/n)$ and $0\le k\le n-1$.
+Prove that $f_n\to f$ in $L^1([0,1])$.
 :::

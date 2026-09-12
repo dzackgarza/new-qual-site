@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence in $L^3([0,1])$. Determine whether each statement is true or false:
+Let $(f_n)$ be a sequence in $L^3([0,1])$.
+Determine whether each statement is true or false:
 
 (a) If $f_n\to f$ almost everywhere, then some subsequence converges to $f$ in $L^3$.
 
