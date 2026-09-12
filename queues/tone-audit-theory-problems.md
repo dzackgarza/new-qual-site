@@ -692,33 +692,33 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-SWIZT.md` | `5333b18bbaeef3c7ef05c3171369c309a41ebc1f` | `5333b18bbaeef3c7ef05c3171369c309a41ebc1f` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-SXM4Q.md` | `43d2b330a4a83e15584772feec8bd10493ddbbbb` | `43d2b330a4a83e15584772feec8bd10493ddbbbb` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-SZUXB.md` | `7ca53ab527299fef9a5b495d40fb27be743b8cff` | `7ca53ab527299fef9a5b495d40fb27be743b8cff` | Read; retained |
-| [ ] | `corpus/problems/Algebra/P-T3YQ4.md` | `daf0ad10d9bbe1494bacf47e1bedd729b4c7449b` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-T6YA3.md` | `ecac5c1e0af93135bb603a71ba4542c6bf7ba0bb` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-T7W8G.md` | `468e1524b50ac171373799daacda326090ff587b` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TA426.md` | `4cbedb0cc967fc8b0c98031fa1cdfcdd60448855` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TBIU4.md` | `09c058d4cb266436355f9f14dd3ccf2f8ba3c5b4` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TCB4X.md` | `675a9f680e6811ae581e90e0f16bab6d220d226f` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TFKBW.md` | `2bb54d90e7fb81f57d75a20c81ae1bf8e0d58107` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TG5VQ.md` | `31c673df03d64e90dcfd3d7e190999287be8cc44` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TGGYQ.md` | `9a077a2956a0e0b7faa5dcfb48b3d28ec5d53b80` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TKCUS.md` | `e44d7331f6a9a83ee1d1fb08f437a7ce22e75a31` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TLBS5.md` | `bc9a3b7efc73a5a2ebb1ba2b30e385bff6a8484c` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TLOJE.md` | `8bcfa965622397bd53e59d42415aefb56524cfb5` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TLYR4.md` | `83e9482d37946bc5aac7adf9504b73d1b15ff42c` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TN4UF.md` | `db14d0b6a37a28035cca8235b14d583d4bf213e0` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TNPRX.md` | `311f27f6c41c87ee97e27897d74cf27309efeeee` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TO35W.md` | `8702924289ffc25ea32e0615f6b5a56aae48dfa9` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TO7DK.md` | `18ff4a6ea32a8ad62416d37fb5362d726045594b` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TOAFL.md` | `b08c91847b840c142d4ba79331d16d9538fae20a` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TQGAM.md` | `0714856d7613ec7adf0df26c717e855cf0359897` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TRZ3O.md` | `ed413b0266e30d8a6e8b04be53d8c1925a73ee1d` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TS2IM.md` | `6c00776807996e4a57b65c07852ff272a03bed26` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TTUVH.md` | `7f4c5988e08e9dbba318bfb46cd72ae4790d3c52` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-TVSSR.md` | `bf2cc73721f1dfe4efb836cdf8c7256e6e6e2881` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-U547U.md` | `9961a2d824de8e46e54d977079fe7e44ad9b673c` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-UE7LL.md` | `04f1f36bfe7f319d26b8f886c84ebf1be0350f06` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-UECFO.md` | `a0285987eaa595f04dfda1f409864d1e71de5ac1` | — | Pending |
-| [ ] | `corpus/problems/Algebra/P-UFCQH.md` | `7e6e890681534367725b6d6a835025b5bf0f9bbe` | — | Pending |
+| [x] | `corpus/problems/Algebra/P-T3YQ4.md` | `daf0ad10d9bbe1494bacf47e1bedd729b4c7449b` | `daf0ad10d9bbe1494bacf47e1bedd729b4c7449b` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-T6YA3.md` | `ecac5c1e0af93135bb603a71ba4542c6bf7ba0bb` | `ecac5c1e0af93135bb603a71ba4542c6bf7ba0bb` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-T7W8G.md` | `468e1524b50ac171373799daacda326090ff587b` | `468e1524b50ac171373799daacda326090ff587b` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TA426.md` | `4cbedb0cc967fc8b0c98031fa1cdfcdd60448855` | `4cbedb0cc967fc8b0c98031fa1cdfcdd60448855` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TBIU4.md` | `09c058d4cb266436355f9f14dd3ccf2f8ba3c5b4` | `09c058d4cb266436355f9f14dd3ccf2f8ba3c5b4` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TCB4X.md` | `675a9f680e6811ae581e90e0f16bab6d220d226f` | `675a9f680e6811ae581e90e0f16bab6d220d226f` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TFKBW.md` | `2bb54d90e7fb81f57d75a20c81ae1bf8e0d58107` | `2bb54d90e7fb81f57d75a20c81ae1bf8e0d58107` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TG5VQ.md` | `31c673df03d64e90dcfd3d7e190999287be8cc44` | `31c673df03d64e90dcfd3d7e190999287be8cc44` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TGGYQ.md` | `9a077a2956a0e0b7faa5dcfb48b3d28ec5d53b80` | `9a077a2956a0e0b7faa5dcfb48b3d28ec5d53b80` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TKCUS.md` | `e44d7331f6a9a83ee1d1fb08f437a7ce22e75a31` | `e44d7331f6a9a83ee1d1fb08f437a7ce22e75a31` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TLBS5.md` | `bc9a3b7efc73a5a2ebb1ba2b30e385bff6a8484c` | `bc9a3b7efc73a5a2ebb1ba2b30e385bff6a8484c` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TLOJE.md` | `8bcfa965622397bd53e59d42415aefb56524cfb5` | `8bcfa965622397bd53e59d42415aefb56524cfb5` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TLYR4.md` | `83e9482d37946bc5aac7adf9504b73d1b15ff42c` | `83e9482d37946bc5aac7adf9504b73d1b15ff42c` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TN4UF.md` | `db14d0b6a37a28035cca8235b14d583d4bf213e0` | `db14d0b6a37a28035cca8235b14d583d4bf213e0` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TNPRX.md` | `311f27f6c41c87ee97e27897d74cf27309efeeee` | `311f27f6c41c87ee97e27897d74cf27309efeeee` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TO35W.md` | `8702924289ffc25ea32e0615f6b5a56aae48dfa9` | `8702924289ffc25ea32e0615f6b5a56aae48dfa9` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TO7DK.md` | `18ff4a6ea32a8ad62416d37fb5362d726045594b` | `18ff4a6ea32a8ad62416d37fb5362d726045594b` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TOAFL.md` | `b08c91847b840c142d4ba79331d16d9538fae20a` | `b08c91847b840c142d4ba79331d16d9538fae20a` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TQGAM.md` | `0714856d7613ec7adf0df26c717e855cf0359897` | `0714856d7613ec7adf0df26c717e855cf0359897` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TRZ3O.md` | `ed413b0266e30d8a6e8b04be53d8c1925a73ee1d` | `ed413b0266e30d8a6e8b04be53d8c1925a73ee1d` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TS2IM.md` | `6c00776807996e4a57b65c07852ff272a03bed26` | `6c00776807996e4a57b65c07852ff272a03bed26` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TTUVH.md` | `7f4c5988e08e9dbba318bfb46cd72ae4790d3c52` | `7f4c5988e08e9dbba318bfb46cd72ae4790d3c52` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-TVSSR.md` | `bf2cc73721f1dfe4efb836cdf8c7256e6e6e2881` | `bf2cc73721f1dfe4efb836cdf8c7256e6e6e2881` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-U547U.md` | `9961a2d824de8e46e54d977079fe7e44ad9b673c` | `9961a2d824de8e46e54d977079fe7e44ad9b673c` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-UE7LL.md` | `04f1f36bfe7f319d26b8f886c84ebf1be0350f06` | `04f1f36bfe7f319d26b8f886c84ebf1be0350f06` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-UECFO.md` | `a0285987eaa595f04dfda1f409864d1e71de5ac1` | `a0285987eaa595f04dfda1f409864d1e71de5ac1` | Read; retained |
+| [x] | `corpus/problems/Algebra/P-UFCQH.md` | `7e6e890681534367725b6d6a835025b5bf0f9bbe` | `7e6e890681534367725b6d6a835025b5bf0f9bbe` | Read; retained |
 | [ ] | `corpus/problems/Algebra/P-UFD6Y.md` | `4d77d851be33e083c5e35e1c50482762aa73723d` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-UHLVN.md` | `4749f732285a7c4825061628bef3887c84edeb43` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-UIXFV.md` | `c38a2ce907f2b12fbaf04e8f01b760473d5204e5` | — | Pending |
@@ -2153,26 +2153,26 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebraic_Geometry/D-MORFIB.md` | `3538bcd200637623dff07d0058a5a7fa64942cfb` | `c49abc63ee5691c5171a59fe71a0942e9aca87cc` | Full file read; amended |
 | [x] | `corpus/theory/Algebraic_Geometry/D-MORFIN.md` | `4fb59466c2f10213edb977be80fdb4725304a5a7` | `1c1d3fa72abb8c32c1e84d807e874c6fe3f9e26f` | Full file read; amended |
 | [x] | `corpus/theory/Algebraic_Geometry/D-MORFLAT.md` | `7b97cbf0f3ad686f8b289315511702e1f150ae1b` | `7b97cbf0f3ad686f8b289315511702e1f150ae1b` | Full file read; retained |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORFT.md` | `ea6341847e2511915e02b36362273487cbe94a1f` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORIMM.md` | `cec67655f9fca8662f7e740bfaaf8e7d2250dce0` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORPROJ.md` | `f838e3b5c06f1e1ae48784e13537137d34d87d44` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORQF.md` | `432170f155e99c214ef8a823e7e9163981ececbd` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORSM.md` | `4064773bd7ad654038bc996a57240ffca19c8a97` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-MORUNR.md` | `7f0bdb1b0f54b93ae93aaf64eba540a6a46fa58e` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-PTIW0.md` | `01aa595b5929ee8d284a3f07b91c3fb467562199` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-Q7Q2N.md` | `19cecff1dd20a129a4cbbb5fcfb1c445cd9b661c` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-QJ5M9.md` | `051e126d6d5430cc8975dc1899cd295d94464fd4` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-QNTZY.md` | `7c9a62b6fd7d79ddf1e0bacd5d00c5eaa3735d73` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-RCCFY.md` | `5321c1de581c0064325ed6b72b1d06fc3b70bdda` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHBC.md` | `b0b09c891caf70a77153b87e4a7ea6c32e916b2a` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHDIM.md` | `c66e3f620b762d3b72005e7eec98aac9ae1f86fd` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHFPR.md` | `33b4463fb9907d8ddfeaf6f0972047fefecb4fed` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHGLUE.md` | `c3c0f9263bea2078edc905357d63a7a71b9ce678` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHIMG.md` | `859870c362bb59c49fa2d1bfd9b94119deaed731` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHPROJ.md` | `a9283a0d7062c951a33e3e6eb717ee4c6a8bf668` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHPTS.md` | `b1ade0284f0f49c63f9d0efeef43b7841d96fb17` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHRED.md` | `2b2cebf9a444d31d98fed9ed9dc8f6fd6e6aa57d` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SCHSUB.md` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORFT.md` | `ea6341847e2511915e02b36362273487cbe94a1f` | `544b1ee7f14514d9c4b02b6b722bfe2629b697a9` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORIMM.md` | `cec67655f9fca8662f7e740bfaaf8e7d2250dce0` | `ae66d9d0026bfefe4fd4b98eb351b8b4098e62a9` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORPROJ.md` | `f838e3b5c06f1e1ae48784e13537137d34d87d44` | `813360edd4fda7d01adc66b98afdfbefaffaee7e` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORQF.md` | `432170f155e99c214ef8a823e7e9163981ececbd` | `1004c9ee6858d5ba3955e046e26a16bb882516ae` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORSM.md` | `4064773bd7ad654038bc996a57240ffca19c8a97` | `91ddaabdbab9e3404e426681a1d0ab7aa8db962f` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-MORUNR.md` | `7f0bdb1b0f54b93ae93aaf64eba540a6a46fa58e` | `77a538637576c57ab356cc512d86b8661175355a` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-PTIW0.md` | `01aa595b5929ee8d284a3f07b91c3fb467562199` | `e18dc27a888c7be6fa63041e38a8142cb6787d66` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-Q7Q2N.md` | `19cecff1dd20a129a4cbbb5fcfb1c445cd9b661c` | `446d3616a6b49eae3891cbaa18d6057a4c578b81` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-QJ5M9.md` | `051e126d6d5430cc8975dc1899cd295d94464fd4` | `330f93c9bd7e83e59a6bd1b03e7bd84a1d65f562` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-QNTZY.md` | `7c9a62b6fd7d79ddf1e0bacd5d00c5eaa3735d73` | `fd74de25ebcc2cb10f5be6da599b86313484bf26` | Full file read; amended |
+| [x] | `corpus/theory/Algebraic_Geometry/D-RCCFY.md` | `5321c1de581c0064325ed6b72b1d06fc3b70bdda` | `5321c1de581c0064325ed6b72b1d06fc3b70bdda` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHBC.md` | `b0b09c891caf70a77153b87e4a7ea6c32e916b2a` | `b0b09c891caf70a77153b87e4a7ea6c32e916b2a` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHDIM.md` | `c66e3f620b762d3b72005e7eec98aac9ae1f86fd` | `c66e3f620b762d3b72005e7eec98aac9ae1f86fd` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHFPR.md` | `33b4463fb9907d8ddfeaf6f0972047fefecb4fed` | `33b4463fb9907d8ddfeaf6f0972047fefecb4fed` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHGLUE.md` | `c3c0f9263bea2078edc905357d63a7a71b9ce678` | `c3c0f9263bea2078edc905357d63a7a71b9ce678` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHIMG.md` | `859870c362bb59c49fa2d1bfd9b94119deaed731` | `859870c362bb59c49fa2d1bfd9b94119deaed731` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHPROJ.md` | `a9283a0d7062c951a33e3e6eb717ee4c6a8bf668` | `a9283a0d7062c951a33e3e6eb717ee4c6a8bf668` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHPTS.md` | `b1ade0284f0f49c63f9d0efeef43b7841d96fb17` | `b1ade0284f0f49c63f9d0efeef43b7841d96fb17` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHRED.md` | `2b2cebf9a444d31d98fed9ed9dc8f6fd6e6aa57d` | `2b2cebf9a444d31d98fed9ed9dc8f6fd6e6aa57d` | Full file read; retained |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SCHSUB.md` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | Full file read; retained |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-SRFINT.md` | `52652940c0fe8032b4428e481b5edac1bbe12666` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-SRFNS.md` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | — | Pending |
@@ -2463,25 +2463,25 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/PR-D3CDJ.md` | `794b76793c62f51ba75bdc2ca2ebd2ff4702ae70` | `794b76793c62f51ba75bdc2ca2ebd2ff4702ae70` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-EMFAN.md` | `4a708ce9406c9177884075941b2e9ca31422a47f` | `4a708ce9406c9177884075941b2e9ca31422a47f` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-EWOP5.md` | `feaa6c8b3dc040a428fb805e7c405a91007a2764` | `feaa6c8b3dc040a428fb805e7c405a91007a2764` | Read; retained |
-| [ ] | `corpus/theory/Complex_Analysis/PR-FBQ6F.md` | `f43d45d528087412633beb98cca556e08e5200bd` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-FL6T7.md` | `2fb3b8307d567c651fac7af2e7486f162a976952` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-FRVPJ.md` | `f1b784b68a49d00b51daebbececeacebc82931db` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-IK6LA.md` | `13f2525bedd7fc9538441b806354f9646a3e7145` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-ITZIT.md` | `9a95e8f7df43986d1f8c97a3beda20f93273f2a3` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-JKE6C.md` | `f5bcabdd6cda0c489e018cbdd142fd30f0c5310f` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-K4KTF.md` | `310cc31052ca8d3c1c799ce351b819c8097950be` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-K57J6.md` | `f43dd8a35f1fdf69337972392ea3955b5c2c71d2` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-KKU6N.md` | `99be74b79045cb8457854b6daa7e1f0972e31b94` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-L4Y5F.md` | `0766d6878016483e9bd198547fcb818cb7961ab3` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-L5UH3.md` | `b7de86bf4109554cf6d59df9519d7a3911279ab4` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-MWUJS.md` | `2737661f56cc3850cc800ce30ae7bf2a72a4b882` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-NITIQ.md` | `70a5e35af99bc7ad124feb37b5bd308c967ed45d` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-NLV6Q.md` | `981561fb34a2585e04289bb160473284381d69f1` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-NQ64T.md` | `3d385b8ba0bfc05f9f2f1665c3163d7f7977d382` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-NZZ2C.md` | `31ba7a682806ad3e76c7b8a2e68ae1d17ec33e71` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-OOHFS.md` | `720f823ce250eac15be45376d341ab5263359f8b` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-OOHUL.md` | `3f4ce702bb257ed674be11c8fe0c00d4bbd5637f` | — | Pending |
-| [ ] | `corpus/theory/Complex_Analysis/PR-OTMIR.md` | `d80d315595d015ad1ce642b815125b6ac7653a7d` | — | Pending |
+| [x] | `corpus/theory/Complex_Analysis/PR-FBQ6F.md` | `f43d45d528087412633beb98cca556e08e5200bd` | `f43d45d528087412633beb98cca556e08e5200bd` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-FL6T7.md` | `2fb3b8307d567c651fac7af2e7486f162a976952` | `2fb3b8307d567c651fac7af2e7486f162a976952` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-FRVPJ.md` | `f1b784b68a49d00b51daebbececeacebc82931db` | `f1b784b68a49d00b51daebbececeacebc82931db` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-IK6LA.md` | `13f2525bedd7fc9538441b806354f9646a3e7145` | `13f2525bedd7fc9538441b806354f9646a3e7145` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-ITZIT.md` | `9a95e8f7df43986d1f8c97a3beda20f93273f2a3` | `9a95e8f7df43986d1f8c97a3beda20f93273f2a3` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-JKE6C.md` | `f5bcabdd6cda0c489e018cbdd142fd30f0c5310f` | `f5bcabdd6cda0c489e018cbdd142fd30f0c5310f` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-K4KTF.md` | `310cc31052ca8d3c1c799ce351b819c8097950be` | `310cc31052ca8d3c1c799ce351b819c8097950be` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-K57J6.md` | `f43dd8a35f1fdf69337972392ea3955b5c2c71d2` | `f43dd8a35f1fdf69337972392ea3955b5c2c71d2` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-KKU6N.md` | `99be74b79045cb8457854b6daa7e1f0972e31b94` | `99be74b79045cb8457854b6daa7e1f0972e31b94` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-L4Y5F.md` | `0766d6878016483e9bd198547fcb818cb7961ab3` | `0766d6878016483e9bd198547fcb818cb7961ab3` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-L5UH3.md` | `b7de86bf4109554cf6d59df9519d7a3911279ab4` | `b7de86bf4109554cf6d59df9519d7a3911279ab4` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-MWUJS.md` | `2737661f56cc3850cc800ce30ae7bf2a72a4b882` | `2737661f56cc3850cc800ce30ae7bf2a72a4b882` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-NITIQ.md` | `70a5e35af99bc7ad124feb37b5bd308c967ed45d` | `70a5e35af99bc7ad124feb37b5bd308c967ed45d` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-NLV6Q.md` | `981561fb34a2585e04289bb160473284381d69f1` | `981561fb34a2585e04289bb160473284381d69f1` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-NQ64T.md` | `3d385b8ba0bfc05f9f2f1665c3163d7f7977d382` | `3d385b8ba0bfc05f9f2f1665c3163d7f7977d382` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-NZZ2C.md` | `31ba7a682806ad3e76c7b8a2e68ae1d17ec33e71` | `31ba7a682806ad3e76c7b8a2e68ae1d17ec33e71` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-OOHFS.md` | `720f823ce250eac15be45376d341ab5263359f8b` | `2f8757847eb599191726da5a74ba451d25c7c5d9` | Read in full; removed unsupported importance claim from the Cayley transform title. |
+| [x] | `corpus/theory/Complex_Analysis/PR-OOHUL.md` | `3f4ce702bb257ed674be11c8fe0c00d4bbd5637f` | `3f4ce702bb257ed674be11c8fe0c00d4bbd5637f` | Read; retained |
+| [x] | `corpus/theory/Complex_Analysis/PR-OTMIR.md` | `d80d315595d015ad1ce642b815125b6ac7653a7d` | `d80d315595d015ad1ce642b815125b6ac7653a7d` | Read; retained |
 | [ ] | `corpus/theory/Complex_Analysis/PR-PDYJC.md` | `112f45d612b594773fadd54f4311d66914bbb55d` | — | Pending |
 | [ ] | `corpus/theory/Complex_Analysis/PR-PELLF.md` | `2ee9fa950cb0ab5ddadf1fb7b40f19a1ff1bc00b` | — | Pending |
 | [ ] | `corpus/theory/Complex_Analysis/PR-PW4Z6.md` | `932c241944f3006a86f8155e2587e9148c98bea6` | — | Pending |
@@ -2881,7 +2881,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Real_Analysis/T-FO27T.md` | `2ff0461ceacf6ba60d14a7cea487a385d67d5b7e` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/T-G543T.md` | `d20957ab60473127ae569221deb4e98479e51331` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/T-HHFGB.md` | `48ac7d674bfca4b052bd6b2a74370cd5a6dfa771` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/T-IIKSW.md` | `4ff383dabfd6c9cdd165f7b5419e3b1475bab420` | — | Pending |
+| [x] | `corpus/theory/Real_Analysis/T-IIKSW.md` | `4ff383dabfd6c9cdd165f7b5419e3b1475bab420` | `3e46203a7ac51d7095d72d72fbdb05be304d22db` | Read in full; specified Lebesgue measurable E subset R^n and required finite measure for compact inner approximation in (3). |
 | [ ] | `corpus/theory/Real_Analysis/T-IJQQG.md` | `6f8b4725ad116c947a9cf5e637d669a1cd0d217e` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/T-J3AN3.md` | `eeb139e2a72988bef266af66b62d9e101e0412a2` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/T-KQTPR.md` | `a84d5cd785c7c6eeb4ad50100b9c3511c6894753` | — | Pending |
@@ -2959,28 +2959,28 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Topology/D-5RWYR.md` | `bc41e1bf0f998a4a72bd70d618e7e6d656b29e21` | `bc41e1bf0f998a4a72bd70d618e7e6d656b29e21` | Read; retained |
 | [x] | `corpus/theory/Topology/D-5S7PK.md` | `46111d802b1aa1d5da429a821c8f8a8e8f51ad49` | `46111d802b1aa1d5da429a821c8f8a8e8f51ad49` | Read; retained |
 | [x] | `corpus/theory/Topology/D-5VCMJ.md` | `81898176c08d15b8dd048eb81a3bbd5c19753cd4` | `81898176c08d15b8dd048eb81a3bbd5c19753cd4` | Read; retained |
-| [ ] | `corpus/theory/Topology/D-6B77N.md` | `e42a8a32a378b05ffc388cd2f768449f9abf7eca` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6BK54.md` | `0fc50b5a8a62c4d04968475b81336a74926595ce` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6BUWA.md` | `88c642f0e421ec2bfd733d15a487636585c58a0d` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6CI7D.md` | `dd8f4157ce840726bd564aacd3c1801c6a4f89d0` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6FMP3.md` | `67fe70934104c75d3286d339ae171cd1ef460ffa` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6FSWY.md` | `5541dc1986fd0793d51f0a3b26b23f401c35326d` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6JJJU.md` | `790e1811d1f57b16d0fefd60175fbeb85acb30c8` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6POU4.md` | `ddda6e3f4ec9b995dcc9d60d35192c294b5f5467` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-6UHU7.md` | `ea0888b3aca7dcd5bc4d107d7dbc3ecaa56dcd17` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-7ALR2.md` | `bc5b6d0ad8f217d99762bbc8c0038bb8cf69ad2e` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-7JSLO.md` | `4a6c6acf7447df5bda4061653b632f9c433b5248` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-7UFN3.md` | `70615b8078aaa9a6669ea21dedcd50b2831646c2` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-9KQZT.md` | `75bf70263ebdb22da69df045bc13f0d6bd1c3f3e` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-A3PUW.md` | `57c496d99111014da48a9c24047b606ad63088bf` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-AEAAD.md` | `f96a0e3e99412228519f065600da8b3fb92d35e6` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-ANO2D.md` | `121e21712a931a03e29aa4166f6d1c029206627f` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-AOJG3.md` | `6299d2e01ba8229a8281baab7cdd67c342cf992e` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-ASXW6.md` | `7c3d06c35a2f105ea3bd921585c32b7611673c9d` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-B2JER.md` | `611a11bb775d84922e1640ca1a085e77f0b55021` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-B7CYY.md` | `54aa6cbcda2baacc1314bd0fa6b6709d19e5361d` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-BCNUH.md` | `f4d2eb28e26b151441717b2dd894f60baaebd084` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-BNCTG.md` | `35c76ad04dcbd1ac22e245a0ee2a60554ce03704` | — | Pending |
+| [x] | `corpus/theory/Topology/D-6B77N.md` | `e42a8a32a378b05ffc388cd2f768449f9abf7eca` | `e42a8a32a378b05ffc388cd2f768449f9abf7eca` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6BK54.md` | `0fc50b5a8a62c4d04968475b81336a74926595ce` | `0fc50b5a8a62c4d04968475b81336a74926595ce` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6BUWA.md` | `88c642f0e421ec2bfd733d15a487636585c58a0d` | `88c642f0e421ec2bfd733d15a487636585c58a0d` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6CI7D.md` | `dd8f4157ce840726bd564aacd3c1801c6a4f89d0` | `dd8f4157ce840726bd564aacd3c1801c6a4f89d0` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6FMP3.md` | `67fe70934104c75d3286d339ae171cd1ef460ffa` | `67fe70934104c75d3286d339ae171cd1ef460ffa` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6FSWY.md` | `5541dc1986fd0793d51f0a3b26b23f401c35326d` | `5541dc1986fd0793d51f0a3b26b23f401c35326d` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6JJJU.md` | `790e1811d1f57b16d0fefd60175fbeb85acb30c8` | `790e1811d1f57b16d0fefd60175fbeb85acb30c8` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6POU4.md` | `ddda6e3f4ec9b995dcc9d60d35192c294b5f5467` | `ddda6e3f4ec9b995dcc9d60d35192c294b5f5467` | Read; retained |
+| [x] | `corpus/theory/Topology/D-6UHU7.md` | `ea0888b3aca7dcd5bc4d107d7dbc3ecaa56dcd17` | `ea0888b3aca7dcd5bc4d107d7dbc3ecaa56dcd17` | Read; retained |
+| [x] | `corpus/theory/Topology/D-7ALR2.md` | `bc5b6d0ad8f217d99762bbc8c0038bb8cf69ad2e` | `bc5b6d0ad8f217d99762bbc8c0038bb8cf69ad2e` | Read; retained |
+| [x] | `corpus/theory/Topology/D-7JSLO.md` | `4a6c6acf7447df5bda4061653b632f9c433b5248` | `4a6c6acf7447df5bda4061653b632f9c433b5248` | Read; retained |
+| [x] | `corpus/theory/Topology/D-7UFN3.md` | `70615b8078aaa9a6669ea21dedcd50b2831646c2` | `70615b8078aaa9a6669ea21dedcd50b2831646c2` | Read; retained |
+| [x] | `corpus/theory/Topology/D-9KQZT.md` | `75bf70263ebdb22da69df045bc13f0d6bd1c3f3e` | `75bf70263ebdb22da69df045bc13f0d6bd1c3f3e` | Read; retained |
+| [x] | `corpus/theory/Topology/D-A3PUW.md` | `57c496d99111014da48a9c24047b606ad63088bf` | `57c496d99111014da48a9c24047b606ad63088bf` | Read; retained |
+| [x] | `corpus/theory/Topology/D-AEAAD.md` | `f96a0e3e99412228519f065600da8b3fb92d35e6` | `f96a0e3e99412228519f065600da8b3fb92d35e6` | Read; retained |
+| [x] | `corpus/theory/Topology/D-ANO2D.md` | `121e21712a931a03e29aa4166f6d1c029206627f` | `121e21712a931a03e29aa4166f6d1c029206627f` | Read; retained |
+| [x] | `corpus/theory/Topology/D-AOJG3.md` | `6299d2e01ba8229a8281baab7cdd67c342cf992e` | `6299d2e01ba8229a8281baab7cdd67c342cf992e` | Read; retained |
+| [x] | `corpus/theory/Topology/D-ASXW6.md` | `7c3d06c35a2f105ea3bd921585c32b7611673c9d` | `7c3d06c35a2f105ea3bd921585c32b7611673c9d` | Read; retained |
+| [x] | `corpus/theory/Topology/D-B2JER.md` | `611a11bb775d84922e1640ca1a085e77f0b55021` | `611a11bb775d84922e1640ca1a085e77f0b55021` | Read; retained |
+| [x] | `corpus/theory/Topology/D-B7CYY.md` | `54aa6cbcda2baacc1314bd0fa6b6709d19e5361d` | `54aa6cbcda2baacc1314bd0fa6b6709d19e5361d` | Read; retained |
+| [x] | `corpus/theory/Topology/D-BCNUH.md` | `f4d2eb28e26b151441717b2dd894f60baaebd084` | `f4d2eb28e26b151441717b2dd894f60baaebd084` | Read; retained |
+| [x] | `corpus/theory/Topology/D-BNCTG.md` | `35c76ad04dcbd1ac22e245a0ee2a60554ce03704` | `35c76ad04dcbd1ac22e245a0ee2a60554ce03704` | Read; retained |
 | [ ] | `corpus/theory/Topology/D-BUAYX.md` | `0b24c274ac5b0153ebd74e4963469e646d7e01a2` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-BX3WD.md` | `c1c5908ae0e873729430541d06ea4a26dccfd7fa` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-BYIZA.md` | `7649fc0466a6796e9b9baba7affb71b3109fce7b` | — | Pending |
