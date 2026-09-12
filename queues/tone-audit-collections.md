@@ -24,65 +24,65 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCGENUSZEROCONIC.md
 - [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCPRODRATIONAL.md
 - [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/index.md — Changed: describe solution methods instead of storage history and unattributed exam identity (STANCE-08, STANCE-10).
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAFFINECONES.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAUTPN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCANONICALPN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOHOMPN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOMPLETEGLOBAL.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOORDDOMAIN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCURVECOFIN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCURVEPROPERISO.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARDENSEOPEN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARDUALNUMBERS.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXBLOWDOWN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCLELLIPTIC.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCLQUADCONE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCUSP.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXGLNAFFINE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXHYPERBOLA.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXNODE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXNOTPRODTOP.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXPICPN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXPUNCTPLANE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXQUOTSING.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXREDUCIBLE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXSEGREQUADRIC.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXSIXLINES.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXWEIERSTRASS.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFIBERDIM.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINCLOSED.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINITELINE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINNONSURJ.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARHYPCOMPL.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARIDEALRADMAX.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARIRRDECOMP.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARKRULLHAUPT.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARLINETOPUNCT.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALCURVE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALPROJCURVE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALR1.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPOLYNOETH.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPRODCOORD.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJCLOSURE.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJCOMPACT.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJIRR.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJIRRPRIME.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJMORPHISMS.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJPROPER.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJSINGCODIM.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARQUASIFINDIM.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARREGFORMAN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSINGCLOSED.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHCUBIC.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHMFLD.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHNORMAL.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSPECKXCOFIN.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSUBVARA2.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSURFACESING.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARTANGENTDIM.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARNOTSEP.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARTANGENT.md
-- [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/index.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAFFINECONES.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAUTPN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCANONICALPN.md — Mathematical issue retained for source review: the statement gives O(n-1); the canonical bundle of projective n-space is O(-n-1).
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOHOMPN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOMPLETEGLOBAL.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCOORDDOMAIN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCURVECOFIN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCURVEPROPERISO.md — Mathematical issue retained for source review: a degree-two map from the projective line to itself is proper but not an isomorphism.
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARDENSEOPEN.md — Mathematical issue retained for source review: density requires a nonempty open in an irreducible space; the empty open is a counterexample as written.
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARDUALNUMBERS.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXBLOWDOWN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCLELLIPTIC.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCLQUADCONE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXCUSP.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXGLNAFFINE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXHYPERBOLA.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXNODE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXNOTPRODTOP.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXPICPN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXPUNCTPLANE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXQUOTSING.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXREDUCIBLE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXSEGREQUADRIC.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXSIXLINES.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVAREXWEIERSTRASS.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFIBERDIM.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINCLOSED.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINITELINE.md — Mathematical issue retained for source review: constant morphisms have positive-dimensional fibers and are not finite.
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARFINNONSURJ.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARHYPCOMPL.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARIDEALRADMAX.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARIRRDECOMP.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARKRULLHAUPT.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARLINETOPUNCT.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALCURVE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALPROJCURVE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARNORMALR1.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPOLYNOETH.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPRODCOORD.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJCLOSURE.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJCOMPACT.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJIRR.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJIRRPRIME.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJMORPHISMS.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJPROPER.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARPROJSINGCODIM.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARQUASIFINDIM.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARREGFORMAN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSINGCLOSED.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHCUBIC.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHMFLD.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSMOOTHNORMAL.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSPECKXCOFIN.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSUBVARA2.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARSURFACESING.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARTANGENTDIM.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARNOTSEP.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARTANGENT.md
+- [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/index.md — Changed: replace assembly and solution-status narration with mathematical scope (STANCE-10).
 - [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-2B4GV.md
 - [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-44MIX.md
 - [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-45V3F.md
