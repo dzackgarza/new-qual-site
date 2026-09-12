@@ -45,6 +45,4 @@ but
 \]
 for every $k$.
 Hence no uniform-continuity modulus can exist.
-
-The old solution instead proved an estimate for $x^{1/n}$, which is a different function.
 :::
