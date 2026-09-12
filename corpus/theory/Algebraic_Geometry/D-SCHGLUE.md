@@ -26,13 +26,12 @@ Then there is a scheme $X$ with an open cover by copies of the $X_i$ inducing th
 
 ::: {.example title="Projective space by charts"}
 Take $n+1$ copies of $\AA^n\slice k = \Spec k[x_0/x_i, \dots, x_n/x_i]$ and glue $U_{ij} = D(x_j/x_i)$ to $U_{ji} = D(x_i/x_j)$ by inverting the ratio.
-The result is $\PP^n\slice k$, and its global sections are $k$, so it is not affine.
+The result is $\PP^n\slice k$, and its global sections are $k$, so it is not affine for $n\geq1$.
 :::
 
 ::: {.remark}
-Gluing is the only construction that makes new schemes out of old, and the examiner asks for it to see whether you can produce a non-affine scheme by hand.
-The cocycle condition is exactly what a sheaf needs on triple overlaps; skipping it is the standard error.
+The cocycle condition makes the identifications consistent on triple overlaps.
 
-The same data with a *different* gluing produces the pathology, so volunteer both: glue two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity and you get the line with a doubled origin, glue by $t \mapsto t\inv$ and you get $\PP^1$.
-The difference is that the second gluing identifies the two extra points and the first does not.
+Gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin. Gluing by $t \mapsto t\inv$ gives $\PP^1$.
+The two origins remain distinct in both constructions; the doubled-origin line is nonseparated, whereas $\PP^1$ is separated.
 :::
