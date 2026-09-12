@@ -1,0 +1,324 @@
+# Wiki authorial stance review
+
+Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-stance-).
+
+## Coverage
+
+- [x] `wiki/algebra/counterexamples.md` — revised framing and unsupported frequency claims. Mathematical issue: the quotient-embedding assertion for arbitrary abelian groups is false; for example, the quotient of the additive group Q by Z is torsion, whereas Q is torsion-free. Requires mathematical correction outside this stance edit.
+- [x] `wiki/algebra/fields/extensions.md` — replaced method ranking and imagined problem-solving sequence with degree statements. Existing minimal-polynomial matrix recipe needs mathematical review: its displayed vector symbols disagree, and the four proposed powers need not form an invertible matrix.
+- [x] `wiki/algebra/fields/finite-fields.md` — replaced reader coaching and problem-frequency claim with the common divisibility condition.
+- [x] `wiki/algebra/fields/index.md` — named the cyclic groups in place of a sweeping description.
+- [x] `wiki/algebra/fields/polynomials.md` — replaced preparation advice with factorization and root-counting content.
+- [x] `wiki/algebra/fields/review-sheet-1.md` — no stance revision; linked image contents are outside the Markdown reading.
+- [x] `wiki/algebra/fields/separability.md` — replaced examiner intent and reader-error diagnosis with perfect-field and splitting-field statements.
+- [x] `wiki/algebra/fields/splitting-and-normal.md` — replaced coaching and problem framing with the normal-closure relation.
+- [x] `wiki/algebra/galois-theory/compute-this-galois-group.md` — replaced study directives and universal computational promises. Mathematical defects retained for correction: a 4-cycle excludes A4, so the quartic conclusion A4 is false; a double transposition does not distinguish C4 from V4; V4 is a transitive subgroup of A4; the tower formula reverses [K:F]; cyclotomic field equality omits a=b and the symmetric case. The sextic cycle criterion and displayed finite-field factorizations also require independent verification.
+- [x] `wiki/algebra/galois-theory/cyclotomic-and-radical-extensions.md` — replaced memorization/exam framing with the quintic criterion. Mathematical review needed: the cyclotomic equality criterion omits equality and symmetry; the stated criterion for the full semidirect product does not establish linear disjointness.
+- [x] `wiki/algebra/galois-theory/index.md` — no stance revision.
+- [x] `wiki/algebra/galois-theory/the-correspondence.md` — replaced difficulty judgements and dismissive summary with criteria. Mathematical defects: [F:K] must be [K:F]; the shifting argument needs the polynomial-ring automorphism rather than discriminant invariance; reduction criterion needs content and degree hypotheses.
+- [x] `wiki/algebra/galois-theory/worked-examples.md` — replaced completeness claims and dismissive framing with the page's actual criteria. Mathematical scope needs explicit irreducibility/base-field hypotheses in the quadratic, cubic, and quartic statements; a split quadratic has trivial splitting-field group.
+- [x] `wiki/algebra/group-actions/index.md` — replaced prescribed order with the linked mathematical objective.
+- [x] `wiki/algebra/group-actions/orbit-stabilizer.md` — replaced a universal claim with the class-equation derivation. Mathematical defects: Lagrange proof indexes N+1 cosets but counts N; orbit-stabilizer proof uses gh^-1 in place of g^-1h; a nontrivial left regular action has no fixed points; conjugation is transitive only for the trivial group.
+- [x] `wiki/algebra/group-actions/show-g-is-not-simple.md` — replaced prescribed study sequence, frequency claims, and expected-outcome rhetoric with subgroup criteria. Mathematical defects: a nontrivial centre alone need not be proper; n_p=p is impossible; the intersection-normalizer claim lacks hypotheses ensuring the intersection is normal in both Sylow subgroups; failed criteria do not establish simplicity.
+- [x] `wiki/algebra/group-actions/sylow.md` — replaced prescribed approach with the linked application. Mathematical scope issue: the classification bullet assumes a group assembled from two Sylow subgroups without restricting its order or specifying a complement.
+- [x] `wiki/algebra/group-actions/the-class-equation.md` — replaced claims about exam scope and universal usage with finite-group applications.
+- [x] `wiki/algebra/groups/basics.md` — replaced exam generalizations, method ranking, and supervision with subgroup relations.
+- [x] `wiki/algebra/groups/characteristic-subgroups.md` — no stance revision; proof instructions concern the construction.
+- [x] `wiki/algebra/groups/groups-of-small-order.md` — rebuilt the framing around classification methods, preserving the table and examples while removing study supervision.
+- [x] `wiki/algebra/groups/index.md` — no stance revision.
+- [x] `wiki/algebra/groups/is-this-group-abelian.md` — replaced implied exam intent and effort ranking with classification criteria. Mathematical scope issue: a normal Sylow subgroup alone does not supply the displayed semidirect-product conclusion without a complement theorem or hypotheses.
+- [x] `wiki/algebra/groups/notation.md` — no stance revision. Mathematical defects: powerset Hom has reversed arguments; commutator omits h^-1; subgroup centralizer uses unbound x and C_H instead of C_G; a conjugacy class need not be a subgroup.
+- [x] `wiki/algebra/groups/quotients-and-products.md` — replaced exam-frequency claims and speed prescriptions with isomorphism and invariant statements.
+- [x] `wiki/algebra/groups/series-and-solvability.md` — replaced exam intent and method ranking with invariants and the quantified normalizer criterion. The unexplained adjoint-map slogan needs a defined map or mathematical replacement.
+- [x] `wiki/algebra/groups/the-standard-families.md` — replaced competence demands, difficulty judgements, and mandatory associations with structural descriptions.
+- [x] `wiki/algebra/index.md` — replaced unbounded exam and completeness claims with navigation by mathematical task.
+- [x] `wiki/algebra/linear-algebra/determinants-and-eigenvalues.md` — replaced reader supervision with the rank classification.
+- [x] `wiki/algebra/linear-algebra/find-the-canonical-form.md` — replaced imagined exam context with classification data; specified spectral and splitting-field hypotheses.
+- [x] `wiki/algebra/linear-algebra/index.md` — replaced a universal characterization with the specific invariant relation.
+- [x] `wiki/algebra/linear-algebra/jordan-canonical-form.md` — replaced a dismissive summary with the eigenspace criterion and corrected polynomial/operator confusion in annihilator membership. Proof defects remain: indecomposability does not rule out a proper invariant subspace, so the cyclic-vector step needs an invariant-complement argument; the final direct-sum argument proves a statement about W^i while claiming it for V^i and needs their equality established.
+- [x] `wiki/algebra/linear-algebra/matrix-counterexamples.md` — corrected the repeated zero matrix to the intended nilpotent Jordan block and replaced an aside with the minimal-polynomial distinction.
+- [x] `wiki/algebra/linear-algebra/minimal-and-characteristic-polynomials.md` — replaced universal exam framing and speed claims with invariant-factor descriptions; supplied the Cayley–Hamilton premise.
+- [x] `wiki/algebra/linear-algebra/rational-canonical-form.md` — replaced examiner-intent claim with the splitting condition; corrected cyclic-basis indexing and specified its generator.
+- [x] `wiki/algebra/linear-algebra/smith-normal-form.md` — replaced speed/effort ranking with the distinction between operations and minors; added rank, d0, and unit qualifications.
+- [x] `wiki/algebra/linear-algebra/the-spectral-theorem.md` — replaced memorization and immediacy framing with polynomial criteria; restored distinct-root, splitting-field, and real-symmetry hypotheses.
+- [x] `wiki/algebra/linear-algebra/undergrad-review.md` — removed redundant elementary supervision after the compatibility hypothesis; corrected determinant sum.
+- [x] `wiki/algebra/modules/classify-this-module.md` — replaced universal impossibility claims and reader diagnosis with the PID theorem's scope; corrected the blanket quotient-ring classification and finite-generation qualification.
+- [x] `wiki/algebra/modules/exact-sequences.md` — replaced exam-frequency claim with splitting criteria.
+- [x] `wiki/algebra/modules/free-and-projective.md` — replaced reader instruction with the role of the PID hypothesis.
+- [x] `wiki/algebra/modules/index.md` — replaced dismissive ring ranking and permitted-question framing with mathematical scope.
+- [x] `wiki/algebra/modules/over-a-pid.md` — replaced memorization and competence framing with the decomposition argument; specified PID and nonzero-scalar hypotheses.
+- [x] `wiki/algebra/representations/characters.md` — replaced totalizing technique claims and exam coaching with multiplicities; specified finite complex representations and the augmentation-character criterion.
+- [x] `wiki/algebra/representations/index.md` — no stance revision.
+- [x] `wiki/algebra/representations/maschke-and-schur.md` — kept the hypothesis counterexample and bounded the character-degree claim.
+- [x] `wiki/algebra/resources/books-notes.md` — removed an unexplained chapter exclusion and organized labels by subject. Bibliographic defect: “Lie groups and algebras, Chapters 7–10” lacks an identified work; retained pending source identification.
+- [x] `wiki/algebra/resources/external.md` — no stance revision.
+- [x] `wiki/algebra/resources/fields.md` — replaced internal provenance vocabulary with access information.
+- [x] `wiki/algebra/resources/groups.md` — replaced internal card/provenance vocabulary with access information.
+- [x] `wiki/algebra/resources/index.md` — replaced corpus-status description with source navigation.
+- [x] `wiki/algebra/resources/modules.md` — no stance revision.
+- [x] `wiki/algebra/resources/problems.md` — replaced internal intake status with the available papers and problems.
+- [x] `wiki/algebra/resources/representations.md` — no stance revision.
+- [x] `wiki/algebra/resources/rings-and-ideals.md` — replaced internal provenance and card-status descriptions with resource contents.
+- [x] `wiki/algebra/resources/solutions-algebra.md` — replaced internal placement description with resource contents.
+- [x] `wiki/algebra/resources/syllabus.md` — replaced authoring history, elementary lookup coaching, and unsupported testing-frequency claim. Retained explicitly attributed departmental guidance.
+- [x] `wiki/algebra/review.md` — replaced completeness and examiner-authority claims with the collection's scope.
+- [x] `wiki/algebra/rings-and-ideals/commutative-algebra.md` — replaced exam scope, study prescriptions, and dismissal of proof steps with constructions and posets.
+- [x] `wiki/algebra/rings-and-ideals/domains-and-factorization.md` — replaced reader coaching and claimed problem intent with distinctions among ring properties; corrected necessity versus sufficiency for prime/irreducible coincidence.
+- [x] `wiki/algebra/rings-and-ideals/ideals-and-quotients.md` — replaced exam and performance expectations with quotient correspondences; added the nonzero-ring hypothesis.
+- [x] `wiki/algebra/rings-and-ideals/index.md` — replaced assumed exam scope with the named rings.
+- [x] `wiki/algebra/rings-and-ideals/number-theory.md` — no stance revision.
+- [x] `wiki/algebra/rings-and-ideals/polynomial-rings.md` — replaced directive framing and universal slogan with the construction and counterexample.
+- [x] `wiki/algebra/rings-and-ideals/solutions.md` — no stance revision.
+- [x] `wiki/algebra/rings-and-ideals/which-kind-of-ring.md` — replaced memorization demands, exam generalizations, and adversarial prompt framing with ring inclusions and quotient criteria; corrected connected-grading hypotheses and pairing index.
+- [x] `wiki/algebra/workshops/algebra-week-1-groups-warmup.md` — retained workshop exercises; corrected the nonempty-subset hypothesis and coset-set notation.
+- [x] `wiki/algebra/workshops/algebra-week-2-finite-group-theory.md` — removed unsupported exam-frequency claims; corrected the action on subgroups to conjugation.
+- [x] `wiki/algebra/workshops/algebra-week-3-sylow-theory.md` — no stance revision.
+- [ ] `wiki/algebra/workshops/algebra-week-4-rings.md`
+- [ ] `wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md`
+- [ ] `wiki/algebra/workshops/algebra-week-n-rep-theory.md`
+- [x] `wiki/algebra/workshops/index.md` — no stance revision.
+- [ ] `wiki/algebraic-geometry/cohomology/computing-cohomology.md`
+- [ ] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md`
+- [ ] `wiki/algebraic-geometry/cohomology/families.md`
+- [ ] `wiki/algebraic-geometry/cohomology/index.md`
+- [ ] `wiki/algebraic-geometry/cohomology/projective-schemes.md`
+- [ ] `wiki/algebraic-geometry/cohomology/vanishing-and-duality.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/genus.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/index.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/moduli-of-curves.md`
+- [ ] `wiki/algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map.md`
+- [ ] `wiki/algebraic-geometry/divisors/index.md`
+- [ ] `wiki/algebraic-geometry/divisors/line-bundles-and-linear-systems.md`
+- [ ] `wiki/algebraic-geometry/divisors/positivity.md`
+- [ ] `wiki/algebraic-geometry/divisors/weil-and-cartier.md`
+- [ ] `wiki/algebraic-geometry/index.md`
+- [ ] `wiki/algebraic-geometry/morphisms/classes-of-morphism.md`
+- [ ] `wiki/algebraic-geometry/morphisms/fibres-and-images.md`
+- [ ] `wiki/algebraic-geometry/morphisms/finite-and-flat.md`
+- [ ] `wiki/algebraic-geometry/morphisms/index.md`
+- [ ] `wiki/algebraic-geometry/morphisms/inseparable-morphisms-and-luroth.md`
+- [ ] `wiki/algebraic-geometry/morphisms/separated-and-proper.md`
+- [ ] `wiki/algebraic-geometry/morphisms/smooth-unramified-etale.md`
+- [ ] `wiki/algebraic-geometry/resources.md`
+- [ ] `wiki/algebraic-geometry/schemes/fibre-products-and-base-change.md`
+- [ ] `wiki/algebraic-geometry/schemes/index.md`
+- [ ] `wiki/algebraic-geometry/schemes/proj-and-gluing.md`
+- [ ] `wiki/algebraic-geometry/schemes/properties-from-the-ring.md`
+- [ ] `wiki/algebraic-geometry/schemes/subschemes-and-points.md`
+- [ ] `wiki/algebraic-geometry/schemes/what-is-a-scheme.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/differentials.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/index.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/line-bundles.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/operations.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md`
+- [ ] `wiki/algebraic-geometry/sheaves-of-modules/quasicoherence.md`
+- [ ] `wiki/algebraic-geometry/sheaves/index.md`
+- [ ] `wiki/algebraic-geometry/sheaves/stalks-and-exactness.md`
+- [ ] `wiki/algebraic-geometry/sheaves/the-sheaf-condition.md`
+- [ ] `wiki/algebraic-geometry/toric/affine-computations.md`
+- [ ] `wiki/algebraic-geometry/toric/criteria.md`
+- [ ] `wiki/algebraic-geometry/toric/index.md`
+- [ ] `wiki/algebraic-geometry/toric/polytopes-and-divisors.md`
+- [ ] `wiki/algebraic-geometry/toric/surfaces-and-morphisms.md`
+- [ ] `wiki/algebraic-geometry/toric/the-dictionary.md`
+- [ ] `wiki/algebraic-geometry/varieties/affine-or-projective.md`
+- [ ] `wiki/algebraic-geometry/varieties/blowups.md`
+- [ ] `wiki/algebraic-geometry/varieties/canonical-class.md`
+- [ ] `wiki/algebraic-geometry/varieties/dimension-and-degree.md`
+- [ ] `wiki/algebraic-geometry/varieties/index.md`
+- [ ] `wiki/algebraic-geometry/varieties/regular-functions.md`
+- [ ] `wiki/algebraic-geometry/varieties/smooth-and-singular.md`
+- [ ] `wiki/algebraic-geometry/varieties/the-dictionary.md`
+- [ ] `wiki/applied-algebra/grobner-bases/index.md`
+- [ ] `wiki/applied-algebra/index.md`
+- [ ] `wiki/applied-algebra/invariant-theory/index.md`
+- [ ] `wiki/applied-algebra/matrix-analysis/index.md`
+- [ ] `wiki/applied-algebra/representation-theory/index.md`
+- [ ] `wiki/applied-algebra/resources/index.md`
+- [ ] `wiki/applied-algebra/symmetric-functions/index.md`
+- [ ] `wiki/archives/card-archives.md`
+- [ ] `wiki/archives/further-studying.md`
+- [ ] `wiki/archives/graduate-topics.md`
+- [ ] `wiki/archives/index.md`
+- [ ] `wiki/archives/qual-workshop-index.md`
+- [ ] `wiki/archives/solution-compendia.md`
+- [ ] `wiki/archives/topics.md`
+- [ ] `wiki/complex-analysis/appendices/appendix-fta-proofs.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/appendices/appendix-unsorted.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/appendices/gauss-lucas-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/appendices/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/appendices/pdes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/appendices/special-functions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/analytic-nt.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/calculus-preliminaries.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/complex-arithmetic.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/precalculus.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/series-reference.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/basics/tips-techs.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/cauchy-estimates-and-liouville.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/cauchys-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/morera-and-converses.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/schwarz-reflection.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/the-identity-principle.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/the-integral-formula.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/cauchy-theory/theorems-that-give-a-constant.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/blaschke-factors-and-automorphisms.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/build-me-a-map.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/mobius-transformations.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/normal-families-and-montel.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/the-riemann-mapping-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/conformal-maps/the-schwarz-lemma.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counterexamples.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counting-zeros/how-many-zeros-in-this-region.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counting-zeros/hurwitz.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counting-zeros/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counting-zeros/rouches-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/counting-zeros/the-argument-principle.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/complex-arithmetic-and-log.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/harmonic-functions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/is-it-holomorphic.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/power-series.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/holomorphic-functions/the-cauchy-riemann-equations.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/arc-estimates.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/computing-residues.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/real-integrals-by-residues.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/the-residue-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/residues-and-contours/which-contour-do-i-close.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/resources/books-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/resources/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/resources/problems.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/resources/solutions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/resources/study-schedule-and-topics.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/review.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/casorati-weierstrass-and-picard.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/classifying-a-singularity.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/laurent-series.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/meromorphic-functions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/singularities/removable-poles-essential.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/standard-integrals.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/workshops/complex-week-1-preliminaries.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/workshops/complex-week-2-cauchy.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/complex-analysis/workshops/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/index.md`
+- [ ] `wiki/prelim/counterexamples.md`
+- [ ] `wiki/prelim/index.md`
+- [ ] `wiki/prelim/problems/berkeley-prelims.md`
+- [ ] `wiki/prelim/problems/index.md`
+- [ ] `wiki/prelim/problems/integral-practice.md`
+- [ ] `wiki/prelim/problems/ucla-prelims.md`
+- [ ] `wiki/prelim/resources/index.md`
+- [ ] `wiki/prelim/resources/problems.md`
+- [ ] `wiki/prelim/resources/references.md`
+- [ ] `wiki/prelim/resources/solutions.md`
+- [ ] `wiki/prelim/resources/topics.md`
+- [ ] `wiki/prelim/useful-tricks.md`
+- [ ] `wiki/prelim/which-technique.md`
+- [ ] `wiki/prelim/worked-exams/all.md`
+- [ ] `wiki/prelim/worked-exams/fall-2014.md`
+- [ ] `wiki/prelim/worked-exams/fall-2015.md`
+- [ ] `wiki/prelim/worked-exams/fall-2016.md`
+- [ ] `wiki/prelim/worked-exams/fall-2017.md`
+- [ ] `wiki/prelim/worked-exams/index.md`
+- [ ] `wiki/real-analysis/appendices/appendix-inequalities.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/appendices/functional-analysis.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/appendices/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/appendices/undergrad-appendix.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/counterexamples-undergraduate.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/counterexamples.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fourier/convolution.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fourier/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fourier/the-transform.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fubini-tonelli/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fubini-tonelli/statements.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/fubini-tonelli/which-one-applies.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/functional-analysis/banach-and-hilbert.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/functional-analysis/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/functional-analysis/operators.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/functional-analysis/which-big-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/inequalities.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/integration/construction.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/integration/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/integration/l1.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/integration/the-convergence-theorems.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/integration/which-convergence-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/lp-spaces/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/lp-spaces/the-spaces.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/lp-spaces/which-inequality.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/measure/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/measure/is-it-measurable.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/measure/littlewood-principles-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/measure/littlewoods-principles.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/measure/outer-measure.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/books-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/extra-questions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/preface.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/problems.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/solutions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/resources/topics.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/review.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/advice.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/commuting-limits.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/continuity.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/definitions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/differentiability.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/notation.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/riemann-integrability.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/sequences-and-series.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/sets-and-compactness.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/undergraduate/theorem-list.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/workshops/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/workshops/real-week-1-preliminaries.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/real-analysis/workshops/real-week-2-measure-theory.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/appendices/appendix.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/appendices/at-course-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/appendices/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/counterexamples.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/covering-spaces/covering-spaces.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/covering-spaces/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/cw-complexes/cw-complexes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/cw-complexes/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/degree/fixed-points-and-degree.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/degree/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/fundamental-group/compute-pi-1.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/fundamental-group/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/fundamental-group/theorems.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/homology/compute-h-star.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/homology/exercises.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/homology/homological-algebra.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/homology/homology.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/homology/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/point-set/definitions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/point-set/examples.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/point-set/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/point-set/notation-and-background.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/point-set/point-set.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/resources/books-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/resources/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/resources/problems.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/resources/solutions.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/resources/topics.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/review.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/surfaces/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/surfaces/surfaces-and-manifolds.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/the-standard-spaces-notes.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/the-standard-spaces.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/workshops/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
+- [ ] `wiki/topology/workshops/topology-week-1-preliminaries.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
