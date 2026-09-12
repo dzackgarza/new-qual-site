@@ -35,8 +35,8 @@ For an affine variety $X$ over $k = \bar{k}$,
 :::
 
 ::: {.remark}
-Three descriptions, and a computation usually wants the third: the dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
+The dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
 
-The chain definition is the one to quote when asked for the definition, and the Krull statement is the bridge that makes dimension theory of rings available.
+The equality with Krull dimension relates the topological definition to dimension theory of rings.
 The identification with transcendence degree is where algebraic closure is used, and it fails without it.
 :::
