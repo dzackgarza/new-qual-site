@@ -729,6 +729,37 @@ appears to lecture faculty or judge colleagues. Authorship assistance supplies
 no mandate to invent a public persona. Keep claims within the page's purpose
 and attribute institutional statements to their actual source.
 
+### `RESOURCE-30`: Replace animated metaphors with the actual relation
+
+**Bad:** “The definitions march into the chapter with examples at their side.”
+
+**Good:** “The chapter introduces the definitions through examples.”
+
+Giving mathematical objects entrances, companions, homes, or ambitions adds a
+literary scene without specifying their mathematical or expository relation.
+The resulting tone can resemble promotional copy rather than a reference work.
+Use the verb that names the relation: a section contains examples, an author
+introduces a construction, a proof uses a lemma, and a theorem implies a
+conclusion. Grammatical agency alone is not a defect. These conventional verbs
+are precise; replacing them with passive constructions is not required.
+Established mathematical terminology and a metaphor that explains an actual
+mathematical relation require separate judgement, not a blanket word ban.
+
+### `RESOURCE-31`: Distinguish expository examples from historical motivation
+
+**Bad:** “Each definition comes paired with the problem that originally
+inspired it.”
+
+**Good:** “The text introduces [named definition] through [named example].”
+
+A source's choice of example does not establish the historical origin of a
+definition. A definite phrase such as “the original problem” also presumes a
+unique, identifiable origin. Describe how the text presents the material.
+Attribute a historical motivation only when a source establishes that history.
+Claims about every definition or construction require coverage of that whole
+class; use a specific example when that is the evidence available. Do not
+inflate an observed expository feature into a universal promise about the book.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
