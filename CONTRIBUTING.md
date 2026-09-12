@@ -342,6 +342,20 @@ inventory into a course plan. Record availability, scope, citation, and access;
 put a deliberate sequence or recommendation in an authored study guide with
 explicit criteria.
 
+### `RESOURCE-02`: Remove obvious instructions for using a resource
+
+**Bad:** “Use its topic index to locate the relevant sections.”
+
+**Good:** Omit the instruction, or name the sections directly when that relation
+is useful: “See §§2.1, 3.4, and 4.2 for sheaf axioms, graded rings, and affine
+cover arguments.”
+
+An index exists to locate sections. Telling a graduate reader to use it adds no
+resource or mathematical information, assumes an inability to perform an
+ordinary lookup, and leaves “relevant” undefined. Resource prose should identify
+contents, scope, provenance, and precise relations. It should not describe the
+obvious operation of reading the resource.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
