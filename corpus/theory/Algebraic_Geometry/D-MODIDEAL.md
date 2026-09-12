@@ -41,5 +41,5 @@ This is the sheaf-level version of the correspondence between ideals of $A$ and 
 
 The exact sequence is the workhorse.
 Twisting it by $\OO(d)$ and taking cohomology is how one computes $h^0$ of a hypersurface or a curve in $\PP^n$ from the ambient space, since $\mci_Z = \OO_{\PP^n}(-d)$ when $Z$ is a degree-$d$ hypersurface.
-Restricting it to $Z$ produces the conormal sheaf $\mci_Z/\mci_Z^2$, which is where the sequence meets [[algebraic-geometry/sheaves-of-modules/differentials|differentials]].
+Restricting it to $Z$ produces the conormal sheaf $\mci_Z/\mci_Z^2$, which is where the sequence meets [differentials](wiki/algebraic-geometry/sheaves-of-modules/differentials.html).
 :::

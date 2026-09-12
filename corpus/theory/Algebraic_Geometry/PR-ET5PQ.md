@@ -33,7 +33,7 @@ up to equivalence are classified by $\Ext^1(\mcg,\mcf)$, which is $H^1(X, \mcf \
 The isomorphism is the Čech description read backwards: a line bundle is trivial on some cover, the transition functions $g_{ij} \in \OO^*(U_i \intersect U_j)$ satisfy the cocycle condition, and changing the trivialisations changes them by a coboundary.
 So $H^1$ of the units is the group of line bundles, with tensor product as the group law.
 
-This is the same phenomenon as the failure of right exactness on sections in [[algebraic-geometry/sheaves/stalks-and-exactness|stalks and exactness]], and it is worth saying so: in both cases $H^1$ measures the failure of local data to be global, once as sections that do not glue and once as trivialisations that do not agree.
+This is the same phenomenon as the failure of right exactness on sections in [stalks and exactness](wiki/algebraic-geometry/sheaves/stalks-and-exactness.html), and it is worth saying so: in both cases $H^1$ measures the failure of local data to be global, once as sections that do not glue and once as trivialisations that do not agree.
 
 On a complex manifold the exponential sequence makes it explicit,
 \[

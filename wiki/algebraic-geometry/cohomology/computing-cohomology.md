@@ -16,7 +16,7 @@ Derived functors define the theory; Čech computes it; one calculation on projec
 [[T-IJW1K]]
 
 Memorising the three lines is worth it, but the shape is what to hold: $H^0$ is the polynomials, $H^n$ is dual to the polynomials with a shift by $-n-1$, and everything between vanishes.
-The shift is the canonical sheaf $\OO(-n-1)$ of [[algebraic-geometry/sheaves-of-modules/differentials|differentials]], and the duality between the two ends is Serre duality in the case it is proved first.
+The shift is the canonical sheaf $\OO(-n-1)$ of [[../sheaves-of-modules/differentials|differentials]], and the duality between the two ends is Serre duality in the case it is proved first.
 
 ## What $H^1$ means
 

@@ -70,15 +70,27 @@ ok
 - SRC-UNSORTED-REAL-ANALYSIS
 - SRC-UNSORTED-TOPOLOGY
 
-## dead-provenance-hrefs (27)
+## dead-provenance-hrefs (40)
 
 - SRC-GATHMANN-AG: https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019-c1.pdf -> 404
+- SRC-TEXT-HK71: https://archive.org/details/linearalgebra0000hoff -> 502
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw1.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw2.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw3.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw4.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw5.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw6.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-FALL-2011: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA11_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-FALL-2013: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA13_Algebra.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-FALL-2023: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/algebra_qual_f_23.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2004: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP04_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2005: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP05_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2006: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP06_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2018: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/Algebra-Qual-SP18.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2020: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/Algebra-Qual-SP20.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2024: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP24%20math%20200%20exam.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-ALG-SPRING-2026: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP26_200_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
+- SRC-UCSD-APALG-FALL-2004: https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/FA04_202_Applied_Algebra_Qual.pdf -> error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)
 - SRC-UGA-CA-FALL-2017: https://www.math.uga.edu/sites/default/files/ComplexAnaQual2017.pdf -> 404
 - SRC-UGA-CA-FALL-2018: https://www.math.uga.edu/sites/default/files/inline-files/Complex%20Fall%202018pdf.pdf -> 404
 - SRC-UGA-CA-FALL-2019: https://www.math.uga.edu/sites/default/files/ComplexQual_Fall2019.pdf -> 404
@@ -86,6 +98,7 @@ ok
 - SRC-UGA-CA-FALL-2021: https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf -> 404
 - SRC-UGA-CA-SPRING-2017: https://www.math.uga.edu/sites/default/files/ComplexAnalysis_Spring2017.pdf -> 404
 - SRC-UGA-CA-SPRING-2018: https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring18.pdf -> 404
+- SRC-UGA-CA-SPRING-2019: https://web.archive.org/web/20220426161540/https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf -> 503
 - SRC-UGA-CA-SPRING-2020: https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring2020.pdf -> 404
 - SRC-UGA-RA-FALL-2016: https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2016.pdf -> 404
 - SRC-UGA-RA-FALL-2017: https://www.math.uga.edu/sites/default/files/RealAnaQual2017.pdf -> 404

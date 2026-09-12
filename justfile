@@ -89,7 +89,7 @@ test-commit: _unsolved-if-staged
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: backlog
+test-push: backlog crawl
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

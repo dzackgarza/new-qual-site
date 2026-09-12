@@ -37,5 +37,5 @@ of dimension $\binom{n+d}{n}$ for $d \geq 0$ and zero for $d < 0$.
 The sign convention is the thing to get right, and the tautological description fixes it: $\OO(-1)$ has *no* nonzero global sections, since a global section would choose a nonzero vector in each line continuously and algebraically, and $\OO(1)$ has the linear forms.
 
 Every coherent sheaf on $\PP^n$ is a quotient of a finite sum of twists $\OO(-d_i)$, which is Serre's theorem and the reason the twists are enough for all of projective geometry: the twists are to $\Proj$ what free modules are to $\Spec$.
-On a curve, $\deg$ replaces $n$ and this is the start of the divisor theory of [[algebraic-geometry/divisors/index|divisors]].
+On a curve, $\deg$ replaces $n$ and this is the start of the divisor theory of [divisors](wiki/algebraic-geometry/divisors/index.html).
 :::
