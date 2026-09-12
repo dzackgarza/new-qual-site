@@ -742,7 +742,7 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection.
   It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
 
-- [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
+- [x] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra — disposition 2026-09-12: companion solutions for the UC Berkeley Spring 2004 Preliminary Examination, ingested together with the exam as `SRC-BERKELEY-PRELIM-SPRING-2004`. The source has 18 exam problems (Part A 1–9 and Part B 1–9), all represented in paper order with the retained solution packet source-checked and reviewed.
 
 - [x] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra — disposition 2026-09-12: St Andrews MT5824 Topics in Groups Problem Sheet VII on nilpotent groups, ingested as `SRC-STANDREWS-MT5824-PSET7-2010`. The retained packet contains six numbered problems, not the inventory count of five; all six are represented in source order by `P-MT5824-7-01` through `P-MT5824-7-06`, with the packet solutions source-checked and reviewed.
 
