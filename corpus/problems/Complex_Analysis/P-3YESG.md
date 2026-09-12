@@ -52,7 +52,7 @@ Show that $f$ must be constant.
 
 <1>4. Setup for (3): $F = f \circ T^{-1}$ is holomorphic on $\HH$, continuous on $\bar\HH$, and real on $\RR$; extend by reflection to an entire function.
     ::: {.proof}
-    $T^{-1}$ maps $\HH$ onto $\DD$ and $\RR$ onto $S^1 \setminus \{1\}$; since $f$ is real on $S^1$, $F$ is real on $\RR$ (minus possibly one point, removable). By the reflection principle (<1>1), $F$ extends holomorphically to all of $\CC$ via $F(\bar w) = \overline{F(w)}$, and the extension is bounded on the compact... rather: $f$ is bounded on the compact $\bar\DD$ (continuous), so $F$ is bounded on $\bar\HH$; the reflected extension is bounded on the lower half-plane too, hence $F$ is a bounded entire function. By Liouville, $F$ is constant.
+    $T^{-1}$ maps $\HH$ onto $\DD$ and $\RR$ onto $S^1 \setminus \{1\}$; since $f$ is real on $S^1$, $F$ is real on $\RR$ (minus possibly one point, removable). By the reflection principle (<1>1), $F$ extends holomorphically to all of $\CC$ via $F(\bar w) = \overline{F(w)}$. The function $f$ is bounded on the compact $\bar\DD$ (continuous), so $F$ is bounded on $\bar\HH$; the reflected extension is bounded on the lower half-plane too, hence $F$ is a bounded entire function. By Liouville, $F$ is constant.
     :::
 
 <1>5. Q.E.D.
