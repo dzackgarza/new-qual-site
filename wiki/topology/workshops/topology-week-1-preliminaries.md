@@ -5,8 +5,7 @@ title: "Topology Qual Prep Week 1: Point-Set"
 
 # Topology Qual Prep Week 1: Point-Set
 
-This page covers the point-set topology you need before algebraic topology.
-The topics below are the standard qual material — definitions, key theorems, and the counterexamples that show where intuition breaks.
+This page covers the point-set topology needed before algebraic topology. The topics below are the standard qual material: definitions, key theorems, and the counterexamples that show where intuition breaks.
 
 ## Topics
 

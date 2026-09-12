@@ -15,8 +15,7 @@ topics:
 
 # The standard spaces
 
-The table the exam is written from.
-Nearly every problem is one of these spaces, a wedge or product of them, or one of them with something removed, so knowing the rows saves the computation entirely.
+The table below records the fundamental group and homology of the standard spaces, together with the operations that produce new spaces from them.
 
 | $X$ | $\pi_1$ | $H_*$ | Notes |
 | --- | --- | --- | --- |

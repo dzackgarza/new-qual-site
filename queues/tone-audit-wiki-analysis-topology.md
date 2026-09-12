@@ -138,20 +138,20 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/homology/homology.md` — no stance revision
 - [x] `wiki/topology/homology/index.md` — no stance revision
 - [x] `wiki/topology/index.md` — revised: dropped exam-composition framing, retitled section, trimmed "most spaces on the paper" claim
-- [ ] `wiki/topology/point-set/definitions.md`
-- [ ] `wiki/topology/point-set/examples.md`
-- [ ] `wiki/topology/point-set/index.md`
-- [ ] `wiki/topology/point-set/notation-and-background.md`
-- [ ] `wiki/topology/point-set/point-set.md`
-- [ ] `wiki/topology/resources/books-notes.md`
-- [ ] `wiki/topology/resources/index.md`
-- [ ] `wiki/topology/resources/problems.md`
-- [ ] `wiki/topology/resources/solutions.md`
-- [ ] `wiki/topology/resources/topics.md`
-- [ ] `wiki/topology/review.md`
-- [ ] `wiki/topology/surfaces/index.md`
-- [ ] `wiki/topology/surfaces/surfaces-and-manifolds.md`
-- [ ] `wiki/topology/the-standard-spaces-notes.md`
-- [ ] `wiki/topology/the-standard-spaces.md`
-- [ ] `wiki/topology/workshops/index.md`
-- [ ] `wiki/topology/workshops/topology-week-1-preliminaries.md`
+- [x] `wiki/topology/point-set/definitions.md` — no stance revision; definitions, remarks, examples, and counterexamples are all mathematical content
+- [x] `wiki/topology/point-set/examples.md` — no stance revision; examples are mathematical content (note: doubled `assets/assets/` image path renders broken)
+- [x] `wiki/topology/point-set/index.md` — no stance revision; navigation list with no reader prescriptions
+- [x] `wiki/topology/point-set/notation-and-background.md` — revised remark heading "How to use this fact" → "Application to induced maps on the fundamental group"; removed "especially useful" coaching cue
+- [x] `wiki/topology/point-set/point-set.md` — no stance revision; proofs, remarks, and topic lists are mathematical content
+- [x] `wiki/topology/resources/books-notes.md` — no stance revision; bare bibliographic list with no quality judgements
+- [x] `wiki/topology/resources/index.md` — no stance revision; navigation list
+- [x] `wiki/topology/resources/problems.md` — no stance revision; problem-bank links and collection references
+- [x] `wiki/topology/resources/solutions.md` — no stance revision; solution links, no permitted-use instructions
+- [x] `wiki/topology/resources/topics.md` — no stance revision; topic checklist with scheduling notes (retained as authored workshop schedule)
+- [x] `wiki/topology/review.md` — revised: removed "and it answers more exam questions than the theorems above" exam-comparison claim
+- [x] `wiki/topology/surfaces/index.md` — no stance revision; summary with no reader prescriptions
+- [x] `wiki/topology/surfaces/surfaces-and-manifolds.md` — no stance revision; proofs, classification, and tables are mathematical content (note: doubled `assets/assets/` image path renders broken)
+- [x] `wiki/topology/the-standard-spaces-notes.md` — no stance revision; example definitions and tables (note: commented-out tikzpicture block and doubled `assets/assets/` image path)
+- [x] `wiki/topology/the-standard-spaces.md` — revised: removed "the table the exam is written from" and "knowing the rows saves the computation entirely" exam-script and competence-prescription claims
+- [x] `wiki/topology/workshops/index.md` — no stance revision; navigation list
+- [x] `wiki/topology/workshops/topology-week-1-preliminaries.md` — revised: removed "you need before" reader-need framing; "standard qual material" retained as scope description

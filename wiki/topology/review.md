@@ -53,7 +53,7 @@ Proved in [[topology/homology/index|Homology]].
 
 ## The standard computations
 
-The table is [[topology/the-standard-spaces|The standard spaces]], and it answers more exam questions than the theorems above.
+The table is [[topology/the-standard-spaces|The standard spaces]].
 
 ## What to check before using each one
 
