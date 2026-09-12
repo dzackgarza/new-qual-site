@@ -36,13 +36,15 @@ $$
 e ^ { i t ^ { 2 } } f ( t ) = \int _ { 0 } ^ { t } e ^ { i x ^ { 2 } + 2 i x } d x
 $$
 
-(The hypothesis $f ( 0 ) = 0$ implies that there is no constant of integration.) Substituting −t for t and subtracting, we get
+(The hypothesis $f ( 0 ) = 0$ implies that there is no constant of integration.)
+Substituting −t for t and subtracting, we get
 
 $$
 \begin{array} { l } { { \displaystyle e ^ { i t ^ { 2 } } ( f ( t ) - f ( - t ) ) = \int _ { - t } ^ { t } e ^ { i x ^ { 2 } + 2 i x } d x } \ ~ } \\ { { \displaystyle ~ = e ^ { - i } \int _ { - t } ^ { t } e ^ { i ( x + 1 ) ^ { 2 } } d x } \ ~ } \\ { { \displaystyle ~ = e ^ { - i } \int _ { - t + 1 } ^ { t + 1 } e ^ { i z ^ { 2 } } d z } . } \end{array}
 $$
 
-Since $e ^ { i z ^ { 2 } }$ is an even function, the limit as $t \to + \infty$ equals $2 e ^ { - i } I$ , where $\begin{array} { r } { I : = \operatorname* { l i m } _ { R \to + \infty } \int _ { 0 } ^ { R } e ^ { i z ^ { 2 } } d z } \end{array}$ (assuming for now that the latter limit exists). Apply Cauchy’s Theorem to the triangular contour from 0 to R to $R + R i$ and back to 0. The vertical part contributes
+Since $e ^ { i z ^ { 2 } }$ is an even function, the limit as $t \to + \infty$ equals $2 e ^ { - i } I$ , where $\begin{array} { r } { I : = \operatorname* { l i m } _ { R \to + \infty } \int _ { 0 } ^ { R } e ^ { i z ^ { 2 } } d z } \end{array}$ (assuming for now that the latter limit exists).
+Apply Cauchy’s Theorem to the triangular contour from 0 to R to $R + R i$ and back to 0. The vertical part contributes
 
 $$
 \int _ { R } ^ { R + R i } e ^ { i z ^ { 2 } } d z = \int _ { 2 } ^ { R } e ^ { i ( R + t i ) ^ { 2 } } i d t ,

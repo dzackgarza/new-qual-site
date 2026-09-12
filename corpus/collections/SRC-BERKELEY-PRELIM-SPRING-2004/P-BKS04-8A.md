@@ -44,13 +44,18 @@ $$
 
 so interchanging adjacent arguments changes the sign of the value of $f .$ .
 
-Suppose $v _ { 1 } , \ldots , v _ { n } \in V$ are such that $v _ { i } = v _ { j }$ for some $i < j$ Then we can interchange arguments repeatedly to move $v _ { j }$ to the $i + 1$ position, possibly changing the sign of the value of $f ( v _ { 1 } , \ldots , v _ { n } )$ as we go along. Since at the end the result is zero, we must have had $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ originally. Thus $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ whenever $v _ { i } = v _ { j }$ for some $i \neq j$
+Suppose $v _ { 1 } , \ldots , v _ { n } \in V$ are such that $v _ { i } = v _ { j }$ for some $i < j$ Then we can interchange arguments repeatedly to move $v _ { j }$ to the $i + 1$ position, possibly changing the sign of the value of $f ( v _ { 1 } , \ldots , v _ { n } )$ as we go along.
+Since at the end the result is zero, we must have had $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ originally.
+Thus $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ whenever $v _ { i } = v _ { j }$ for some $i \neq j$
 
-We now solve the problem. If the conclusion fails, we have dim $V < n$ and there exist $v _ { 1 } , \ldots , v _ { n } \in V$ with $f ( v _ { 1 } , \ldots , v _ { n } ) \neq 0$ Since dim $V \ < \ n$ , the vectors $v _ { 1 } , \ldots , v _ { n }$ must be linearly dependent. Thus for some i, we can write $\begin{array} { r } { v _ { i } = \sum _ { j \neq i } c _ { j } v _ { j } } \end{array}$ for some constants $c _ { j } \in k$ for $j \neq i$ . By linearity of $f$ in the i-th argument,
+We now solve the problem.
+If the conclusion fails, we have dim $V < n$ and there exist $v _ { 1 } , \ldots , v _ { n } \in V$ with $f ( v _ { 1 } , \ldots , v _ { n } ) \neq 0$ Since dim $V \ < \ n$ , the vectors $v _ { 1 } , \ldots , v _ { n }$ must be linearly dependent.
+Thus for some i, we can write $\begin{array} { r } { v _ { i } = \sum _ { j \neq i } c _ { j } v _ { j } } \end{array}$ for some constants $c _ { j } \in k$ for $j \neq i$ . By linearity of $f$ in the i-th argument,
 
 $$
 \begin{array} { l } { f ( v _ { 1 } , \dots , v _ { n } ) = \displaystyle \sum _ { j \neq i } c _ { j } f ( v _ { 1 } , \dots , v _ { i - 1 } , v _ { j } , v _ { i + 1 } , \dots , v _ { n } ) } \\ { = \displaystyle \sum _ { j \neq i } c _ { j } \cdot 0 } \end{array}
 $$
 
-by the previous paragraph, since in each term some $v _ { j }$ appears twice as an argument. Thus $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ , a contradiction.
+by the previous paragraph, since in each term some $v _ { j }$ appears twice as an argument.
+Thus $f ( v _ { 1 } , \ldots , v _ { n } ) = 0$ , a contradiction.
 :::

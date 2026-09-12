@@ -26,7 +26,8 @@ Evaluate $\int _ { 0 } ^ { \infty } { \frac { \sin { x } } { x } } d x .$
 ::: {.solution}
 For $R > 1$ , let $\gamma _ { 1 }$ be the straight line path from $1 / R$ to $R _ { : }$ , let $\gamma _ { 2 }$ be the straight line path from R to $R + R i$ , let $\gamma _ { 3 }$ be the straight line path from $R + R i { \mathrm { ~ t o ~ } } { - R + R i }$ , let $\gamma _ { 4 }$ be the straight line path from $- R + R i$ to $- R ,$ , let $\gamma _ { 5 }$ be the straight line path from $- R$ to
 
-$- 1 / R$ , and let $\gamma _ { 6 }$ be the upper semicircle from $- 1 / R$ to $1 / R$ given by the parameterization $\gamma _ { 6 } ( t ) = e ^ { i t }$ for t running from $\pi$ to 0. Let $\gamma$ be the closed loop formed by concatenating these six paths. Cauchy’s Theorem implies that $\begin{array} { r } { \int _ { \gamma } \frac { e ^ { i z } } { z } d z = 0 } \end{array}$
+$- 1 / R$ , and let $\gamma _ { 6 }$ be the upper semicircle from $- 1 / R$ to $1 / R$ given by the parameterization $\gamma _ { 6 } ( t ) = e ^ { i t }$ for t running from $\pi$ to 0. Let $\gamma$ be the closed loop formed by concatenating these six paths.
+Cauchy’s Theorem implies that $\begin{array} { r } { \int _ { \gamma } \frac { e ^ { i z } } { z } d z = 0 } \end{array}$
 
 We have
 

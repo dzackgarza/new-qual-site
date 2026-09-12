@@ -20,7 +20,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $a _ { 1 } , \ldots , a _ { n }$ be positive real numbers. Let $\Delta$ be the set of points $\mathbf { x } \in \mathbb { R } ^ { n }$ satisfying the conditions
+Let $a _ { 1 } , \ldots , a _ { n }$ be positive real numbers.
+Let $\Delta$ be the set of points $\mathbf { x } \in \mathbb { R } ^ { n }$ satisfying the conditions
 
 $$
 \sum _ { i = 1 } ^ { n } a _ { i } x _ { i } = 1 , \quad x _ { i } > 0 { \mathrm { ~ f o r ~ a l l ~ } } i .
@@ -30,7 +31,9 @@ Prove that the function $\scriptstyle \log ( \prod _ { i = 1 } ^ { n } x _ { i }
 :::
 
 ::: {.solution}
-The given function is continuous and approaches −∞ at every point on the boundary of $\Delta$ (since each $x _ { i }$ is bounded above, and at least one of them approaches zero at every point on the boundary). Hence a maximum exists. By Lagrange multipliers, at a maximum we must have d log $\begin{array} { r } { ( \prod _ { i = 1 } ^ { n } x _ { i } ) \ : = \ : \lambda d \sum _ { i = 1 } ^ { n } a _ { i } x _ { i } } \end{array}$ for some $\lambda ,$ or $\textstyle \sum _ { i } d x _ { i } / x _ { i } =$ $\lambda \sum _ { i } a _ { i } d x _ { i }$ . Hence $( x _ { 1 } , \ldots , x _ { n } ) = ( 1 / \lambda ) ( 1 / a _ { 1 } , \ldots , 1 / a _ { n } )$ . Combining this with the equation $\textstyle \sum _ { i } a _ { i } x _ { i } = 1$ shows that $\lambda = n$ and $( x _ { 1 } , \ldots , x _ { n } ) = ( 1 / n ) ( 1 / a _ { 1 } , \ldots , 1 / a _ { n } )$ . This locates the maximum and proves that it is unique.
+The given function is continuous and approaches −∞ at every point on the boundary of $\Delta$ (since each $x _ { i }$ is bounded above, and at least one of them approaches zero at every point on the boundary).
+Hence a maximum exists.
+By Lagrange multipliers, at a maximum we must have d log $\begin{array} { r } { ( \prod _ { i = 1 } ^ { n } x _ { i } ) \ : = \ : \lambda d \sum _ { i = 1 } ^ { n } a _ { i } x _ { i } } \end{array}$ for some $\lambda ,$ or $\textstyle \sum _ { i } d x _ { i } / x _ { i } =$ $\lambda \sum _ { i } a _ { i } d x _ { i }$ . Hence $( x _ { 1 } , \ldots , x _ { n } ) = ( 1 / \lambda ) ( 1 / a _ { 1 } , \ldots , 1 / a _ { n } )$ . Combining this with the equation $\textstyle \sum _ { i } a _ { i } x _ { i } = 1$ shows that $\lambda = n$ and $( x _ { 1 } , \ldots , x _ { n } ) = ( 1 / n ) ( 1 / a _ { 1 } , \ldots , 1 / a _ { n } )$ . This locates the maximum and proves that it is unique.
 
 Alternative solution: The arithmetic-mean–geometric-mean inequality gives
 

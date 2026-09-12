@@ -20,7 +20,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \colon  { \mathbb { R } } ^ { n } \to  { \mathbb { R } } ^ { n }$ be a differentiable function, and let L be a nonnegative real number. Prove that the following are equivalent:
+Let $f \colon  { \mathbb { R } } ^ { n } \to  { \mathbb { R } } ^ { n }$ be a differentiable function, and let L be a nonnegative real number.
+Prove that the following are equivalent:
 
 (i) For every $x , y \in \mathbb { R } ^ { n }$
 

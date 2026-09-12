@@ -20,7 +20,8 @@ audit:
 ---
 
 ::: {.problem}
-Let F be a field (of arbitrary characteristic). Suppose g is a nonnegative integer, and polynomials $a ( x ) , b ( x ) \in F [ x ]$ satisfy deg $a ( x ) \leq g$ and deg $b ( x ) = 2 g + 1$ . Prove that the polynomial $y ^ { 2 } + a ( x ) y + b ( x )$ is irreducible over $F ( x )$
+Let F be a field (of arbitrary characteristic).
+Suppose g is a nonnegative integer, and polynomials $a ( x ) , b ( x ) \in F [ x ]$ satisfy deg $a ( x ) \leq g$ and deg $b ( x ) = 2 g + 1$ . Prove that the polynomial $y ^ { 2 } + a ( x ) y + b ( x )$ is irreducible over $F ( x )$
 :::
 
 ::: {.solution}

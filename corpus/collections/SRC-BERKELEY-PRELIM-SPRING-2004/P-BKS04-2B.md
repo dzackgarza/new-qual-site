@@ -26,7 +26,8 @@ Find the maximum possible value of $\vert f ^ { \prime } ( 1 ) \vert$ given that
 ::: {.solution}
 We will use a fractional linear transformation to change the problem to one where the derivative is evaluated at the center of a disk.
 
-The function $z \mapsto { \frac { 2 } { z } } \left( { \frac { z - 1 } { { \bar { z } } - 1 } } \right)$ on $| z | = 2$ has absolute value 1, and it extends to a fractional linear transformation $\begin{array} { r } { g ( z ) = 2 \left( \frac { z - 1 } { 4 - z } \right) } \end{array}$ Since it also maps $z = 1$ to the interior of the unit disk, it must map the region $| z | \le 2$ bijectively onto the unit disk. We calculate $| g ^ { \prime } ( 1 ) | = 2 / 3$
+The function $z \mapsto { \frac { 2 } { z } } \left( { \frac { z - 1 } { { \bar { z } } - 1 } } \right)$ on $| z | = 2$ has absolute value 1, and it extends to a fractional linear transformation $\begin{array} { r } { g ( z ) = 2 \left( \frac { z - 1 } { 4 - z } \right) } \end{array}$ Since it also maps $z = 1$ to the interior of the unit disk, it must map the region $| z | \le 2$ bijectively onto the unit disk.
+We calculate $| g ^ { \prime } ( 1 ) | = 2 / 3$
 
 Now, for any other f mapping the circle $| z | = 2$ into $| z | \leq 1$ , the composition $h : = f \circ g ^ { - 1 }$ is holomorphic on a neighborhood of $| z | \le 1$ , and maps $| z | = 1$ into $| z | \leq 1$ . Taking absolute values in
 

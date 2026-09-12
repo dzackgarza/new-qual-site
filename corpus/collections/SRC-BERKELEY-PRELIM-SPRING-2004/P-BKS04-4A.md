@@ -24,9 +24,13 @@ For which positive integers n is it true that every invertible $2 \times 2$ matr
 :::
 
 ::: {.solution}
-The answer is the odd positive integers. If n is even, then $\binom { - 1 } { 0 } \binom { 0 } { 1 }$ cannot be the n-th power of another $2 \times 2$ matrix with real entries, because its determinant is not an n-th power of a real number.
+The answer is the odd positive integers.
+If n is even, then $\binom { - 1 } { 0 } \binom { 0 } { 1 }$ cannot be the n-th power of another $2 \times 2$ matrix with real entries, because its determinant is not an n-th power of a real number.
 
-Now assume n is odd. Thus every real number is an n-th power of a real number. The question of whether A is an n-th power is not affected by conjugation. Thus if A has distinct real eigenvalues, then without loss of generality we may assume that A is diagonal, in which we take the n-th roots of the diagonal entries to find another diagonal matrix B with $B ^ { n } = A$
+Now assume n is odd.
+Thus every real number is an n-th power of a real number.
+The question of whether A is an n-th power is not affected by conjugation.
+Thus if A has distinct real eigenvalues, then without loss of generality we may assume that A is diagonal, in which we take the n-th roots of the diagonal entries to find another diagonal matrix B with $B ^ { n } = A$
 
 If A has equal real eigenvalues, then by conjugation, we may assume
 
