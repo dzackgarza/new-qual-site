@@ -38,8 +38,8 @@ For $D$ effective the subscheme it cuts out has ideal sheaf $\mci_D \cong \OO_X(
 :::
 
 ::: {.remark}
-This is the sheaf that converts divisor questions into cohomology questions, and the defining inequality is the thing to say out loud: a section of $\OO(D)$ is a rational function whose poles are no worse than $D$ allows.
+A section of $\OO(D)$ is a rational function whose poles are no worse than $D$ allows.
 Effective divisors linearly equivalent to $D$ are therefore the same data as nonzero global sections of $\OO(D)$ up to scaling, which is why $\abs{D} = \PP H^0(X, \OO(D))$.
 
-The last exact sequence is the workhorse: twisting it by $\OO(nH)$ and taking cohomology computes the Hilbert polynomial of a hypersurface, and on a curve it is where $\deg$ and $\chi$ get compared.
+Twisting the exact sequence by $\OO(nH)$ and taking cohomology computes the Hilbert polynomial of a hypersurface, and on a curve it compares $\deg$ and $\chi$.
 :::
