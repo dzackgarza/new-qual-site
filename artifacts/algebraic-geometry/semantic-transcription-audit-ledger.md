@@ -60,7 +60,7 @@ These two are not theorem text. They are figures preserved byte-identical.
 | 21 | `Pasted image 20220315153154.png` | `022 Sheaves.md` | Same example continued — stalks and global sections | `FE-SHFISOSTALKS` | REPAIRED | Same card, completes argument. |
 | 22 | `Pasted image 20220921202350.png` | `Hartshorne_Problems/1_Hartshorne/1_1x.md` | Hartshorne Ex I.1 figure | `corpus/collections/SRC-TEXT-HART77` I.1 + preserved figure | VERIFIED | Image read 2026-09-12: Hartshorne I.1 figure (twisted cubic). Collection SRC-TEXT-HART77 lists I.1.1-I.1.12 with cards; no gap. |
 | 23 | `Pasted image 20220921204101.png` | same I.1x | Hartshorne I.1 solution text | `SRC-TEXT-HART77` | VERIFIED | Image read 2026-09-12: Hartshorne I.1 solution text (coordinate ring k[t] etc.). Card P-AGHTWCUBIC contains full solution; no gap. |
-| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring | same | CANDIDATE |  |
+| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring | same | VERIFIED | Image read 2026-09-12: affine coordinate ring k[x,y,z]/(y-x^2,z-x^3) ≅ k[t]. Matches P-AGHTWCUBIC solution; no gap. |
 | 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | CANDIDATE |  |
 | 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure | same | CANDIDATE |  |
 | 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus | same | CANDIDATE |  |
