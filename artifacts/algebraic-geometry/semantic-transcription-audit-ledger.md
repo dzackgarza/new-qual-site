@@ -37,7 +37,7 @@ Method: For each crop, OCR was run to count images. For PRESERVED and DUPLICATE,
 | 10 | `2022-01-09_13-03-12.png` | Zariski desingularization of surfaces | `T-SRFKOD` + `FE-SRFBLOW` | REPAIRED | Image read 2026-09-12: Thm 19.2 Zariski — any projective surface desingularized via alternating normalizations and blowups of maximal ideals, projective. Added Zariski desingularization theorem to T-SRFKOD. |
 | 11 | `2022-01-09_13-03-27.png` | Minimal resolution of normal surface singularities | `T-SRFKOD` | REPAIRED | Image read 2026-09-12: Thm 19.3 normal projective Y has unique minimal resolution X→Y smooth, iso over reg Y, universal via blowups over exceptional locus. Added minimal resolution theorem to T-SRFKOD. |
 | 12 | `2022-01-09_13-06-25.png` | Riemann-Roch for curves | `T-COHRRS` | REPAIRED | Image read 2026-09-12: Thm 20.5 RR for curves h^0(D)-h^0(K-D)=d-g+1. Added Riemann-Roch for curves theorem to T-COHRRS (previously only surface). |
-| 13 | `2022-01-09_13-07-04.png` | Adjunction K_D = (K_X+D) vert_D, genus formula | `T-SRFADJ` | CANDIDATE | Card exists. Uses vert_D to avoid pipe. |
+| 13 | `2022-01-09_13-07-04.png` | Adjunction K_D = (K_X+D) vert_D, genus formula | `T-SRFADJ` | VERIFIED | Image read 2026-09-12: Thm 20.8 adjunction K_D=(K_X+D)|_D for smooth prime divisor, and (K_X+C)·C=2g(C)-2 for curve in surface. Matches T-SRFADJ (ω_C=(ω_X⊗O(C))|_C, 2g-2=C·(C+K)). No gap. |
 | 14 | `2022-01-09_13-07-48.png` | Genus formula with singularities | `D-CRVPLSING` | CANDIDATE | Card exists. |
 | 15 | `2022-01-09_13-08-23.png` | Holomorphic Euler characteristic, GRR analogues | `T-SRFRR` | CANDIDATE | Card exists. |
 | 16 | `2022-01-09_13-20-16.png` | Castelnuovo-Enriques classification by Kodaira dimension | `T-SRFKOD` | CANDIDATE | Card exists. |
