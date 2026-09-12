@@ -763,9 +763,10 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra
 
-- [ ] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra
+- [x] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra — disposition 2026-09-12: reference-only broad mathematics/GRE compendium (41 pages, created October 27, 2018) covering formulas, definitions, theorem summaries, and worked examples across algebra, geometry, analysis, probability, topology, and related subjects. The scanner's four “problems” are incidental examples rather than an authored exercise set, and no UNL affiliation is evidenced in the document. It is now retained explicitly on `wiki/prelim/resources/references.md`; no problem cards are manufactured.
 
-- [x] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom — disposition 2026-09-12: reference-only Math 871 course table of contents covering topology definitions, constructions, invariants, and theorem statements rather than an authored exercise source. It is retained and now explicitly annotated on `wiki/topology/resources/books-notes.md`; intake stops at reference enrichment and no problem cards are manufactured.
+- [x] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom — disposition 2026-09-12: reference-only Math 871 course table of contents covering topology definitions, constructions, invariants, and theorem statements rather than an authored exercise source.
+  It is retained and now explicitly annotated on `wiki/topology/resources/books-notes.md`; intake stops at reference enrichment and no problem cards are manufactured.
 
 - [x] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra — disposition 2026-09-12: reconciled with existing `SRC-ALGEBRA-TEST-REVIEW-1`. All seven open-ended questions and four true/sometimes/false questions are already represented in source order by `P-ALGREV1-01` through `P-ALGREV1-11`; every card is source-checked, solved, and reviewed.
   The collection is now marked complete; the surrounding review-topic bullets remain reference material rather than separate problem cards.
