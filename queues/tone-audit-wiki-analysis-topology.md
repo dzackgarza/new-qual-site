@@ -70,9 +70,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/appendices/appendix-inequalities.md` — revised section heading, removed stray `title: Basics` body line
 - [x] `wiki/real-analysis/appendices/functional-analysis.md` — no stance revision
 - [x] `wiki/real-analysis/appendices/index.md` — no stance revision
-- [ ] `wiki/real-analysis/appendices/undergrad-appendix.md`
-- [ ] `wiki/real-analysis/counterexamples-undergraduate.md`
-- [ ] `wiki/real-analysis/counterexamples.md`
+- [x] `wiki/real-analysis/appendices/undergrad-appendix.md` — no stance revision; doubled `assets/assets/` image paths render broken (figures live under `assets/figures/`)
+- [x] `wiki/real-analysis/counterexamples-undergraduate.md` — no stance revision
+- [x] `wiki/real-analysis/counterexamples.md` — revised opening framing, removed exam-composition claim
 - [ ] `wiki/real-analysis/fourier/convolution.md`
 - [ ] `wiki/real-analysis/fourier/index.md`
 - [ ] `wiki/real-analysis/fourier/the-transform.md`

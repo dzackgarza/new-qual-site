@@ -7,7 +7,7 @@ topics:
 
 # Counterexamples
 
-The largest of the cross-cutting pages, because half the paper is "is this true", and the answer is usually no with a named witness.
+A compendium of the standard counterexamples, grouped by the course thread they belong to.
 
 ## Convergence and integration
 
