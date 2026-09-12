@@ -193,21 +193,21 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-2.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-3.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-4.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-5.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-6.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-7.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-8.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-9.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-3DS32.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-C8XMR.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-F5ZKB.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-GW4KD.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-H3PWT.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-J9BHP.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-M8QNL.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-N6YDQ.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-PDAPQ.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-RK2VH.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-5.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-6.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-7.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-8.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-9.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-3DS32.md — Tone retained. Mathematical discrepancy: part (b) lists isomorphic decompositions of one module and omits other multiplicities, including four copies of R[x]/(x-1).
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-C8XMR.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-F5ZKB.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-GW4KD.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-H3PWT.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-J9BHP.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-M8QNL.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-N6YDQ.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-PDAPQ.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-RK2VH.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-T4WCS.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-U2KLF.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21/P-ZSFKA.md
