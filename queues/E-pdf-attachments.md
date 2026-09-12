@@ -438,7 +438,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Midterm exams (4)
 
-- [ ] [Group_Theory_(No_Solns).pdf](assets/attachments/extracted/Group_Theory_(No_Solns).md) (87L, 20 problems) — algebra
+- [x] [Group_Theory_(No_Solns).pdf](assets/attachments/extracted/Group_Theory_(No_Solns).md) (87L, 20 problems) — algebra — disposition 2026-09-12: ingested as complete `SRC-MA553-MIDTERM-I-SAMPLE-PROBLEMS`; all 20 source problems are represented in order, with Problem 13 reusing canonical `P-ALGFINAL11-01` and the remaining 19 represented by `P-MA553-MID1-*` cards.
 
 - [x] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013 — disposition 2026-09-12: UNL Math 871 Fall 2013 exam-review sheets listing vocabulary, theorem statements, study tasks, and references to textbook/problem-set exercises rather than presenting a standalone authored problem collection.
   Already retained at `wiki/topology/resources/books-notes.md`; reference-only intake stops there, with no duplicate cards manufactured.
