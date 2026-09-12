@@ -28,7 +28,7 @@ order: 0
 
 [Math 871 exam review sheets, Fall 2013](attachments/MATH871-Exam-Review-Sheets.pdf)
 
-[Math 871 course contents](attachments/Math_871_-_Table_of_Contents.pdf)
+[Math 871 course contents and theorem/topic outline](attachments/Math_871_-_Table_of_Contents.pdf)
 
 [Separation and countability definitions](attachments/Separation_defintions.pdf)
 
