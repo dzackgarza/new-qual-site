@@ -26,7 +26,7 @@ Method: For each crop, OCR was run to count images. For PRESERVED and DUPLICATE,
 | # | Source file | Mathematical payload (OCR corrected) | Target | Status | Evidence |
 |---|-------------|--------------------------------------|--------|--------|----------|
 | 1 | `2022-01-09_12-22-51.png` | Zariski main theorem: birational morphism of normal projective varieties has connected fibres; purity | `T-MORZMT` + `T-SRFZMT` | REPAIRED | Image read 2026-09-12: Thm 8.6 (a) connected fibres + dim>0 unless singleton, (b) purity E closed, codim 1 near smooth y0, hypersurface if Y smooth. Added Purity theorem to T-MORZMT (exceptional locus closed, codim 1). Verified against card visually. |
-| 2 | `2022-01-09_12-23-25.png` | Definition finite type + Hilbert basis + Stein in plan | `T-MORSTEIN` | CANDIDATE | Card exists. Visual compare pending. |
+| 2 | `2022-01-09_12-23-25.png` | Definition finite type + Hilbert basis + Stein in plan | `T-MORSTEIN` | VERIFIED | Image read 2026-09-12: Def 1.5 module of finite type (∃ b1..bk generating as A-module) and 1.6 Hilbert Basis (ideal in O(A^n) is f.g.). Module finite type appears in D-MORFIN/D-MORFT distinction (finite = f.g. module vs finite type = f.g. algebra); Hilbert Basis covered by T-YYLPH, P-QELLQ, P-AGXVARPOLYNOETH. Foundational definitions already transcribed; no gap. |
 | 3 | `2022-01-09_12-23-55.png` | Prop Noether normalization (affine finite map to A^d) | `T-MORFIBDIM` | CANDIDATE | Card exists. |
 | 4 | `2022-01-09_12-24-40.png` | Projective Noether normalization + normalization universal property | `T-MORZMT` | CANDIDATE | Card exists. |
 | 5 | `2022-01-09_12-28-49.png` | Stein factorization (projective) | `T-MORSTEIN` | CANDIDATE | Card exists. |
