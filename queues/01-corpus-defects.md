@@ -193,3 +193,32 @@ duplicates or contradicts what the div already held.
       of `14892b8e1` with `aca92dc21` shows there was always one solution div; the latter
       only added Lamport substep labels, a goal sentence, and the stray Markdown heading.
       The structured proof is retained and the heading removed.
+
+## 1.R6 — 76 cards sit permanently dirty from formatter reflow
+
+Of the 98 modified paths in the working tree on 2026-09-12, 76 differ from `HEAD` only in
+line breaks: with newlines collapsed to spaces the text is byte-identical. They are markdown
+reflow, not authoring. The remaining 22 carry real content, almost all of them the in-progress
+`SRC-BERKELEY-PRELIM-SPRING-2003` ingest.
+
+The effect is that `git status` stops being readable. A steward or a worker looking at a tree
+of 98 dirty paths cannot tell the at-risk authoring from the churn without diffing each file,
+and this repository has already lost 962 authored lines inside exactly that kind of noise.
+
+- [x] Find what reflows these files outside a commit — a `just` recipe that formats the whole
+      corpus rather than the staged set is the likely cause — and either make it run only on
+      what is being committed, or commit the whole-corpus reflow once as a formatting-only
+      change so the tree starts clean. Do not hand-edit the 76 back.
+
+  **Resolved 2026-09-12.** The central `ai-review-ci` recipe `_format-structured-text`
+  intended to select only staged files, but it unset Git's pathspec-commit
+  `GIT_INDEX_FILE` *before* `git diff --cached --name-only`. During `git commit --only`
+  it therefore read the shared index and flowmark-reformatted every sibling-staged
+  Markdown file. `ai-review-ci` issue #416 records the reproducer; upstream commit
+  `4ba9db0` now captures the staged file list from the inherited temporary commit index
+  before clearing repository-location Git variables for git-sourced formatter fetches.
+  The regression `test_structured_text_formatting_respects_temporary_commit_index` is
+  green, as are the 26 hook tests. Recounting the live shared tree after concurrent
+  authoring had advanced left 55 files still differing from `HEAD` only by line breaks;
+  those exact byte-equivalent reflow-only paths were restored to `HEAD`. Files that had
+  since acquired substantive edits were left untouched.
