@@ -44,7 +44,7 @@ Choosing $R = {\pi \over 2} + n\pi$ for $n$ large enough, there are exactly $2n+
 Now using that $z\sin(z) - a$ has exactly $2n+2$ *real* roots (??), this must be all of them.
 
 
-> Unsure how to find any roots of this thing, real or not!
+> The count of real roots remains unproved in this argument.
 
 :::
 
