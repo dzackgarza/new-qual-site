@@ -40,10 +40,9 @@ $f^*$ preserves quasicoherence always, and coherence when $f$ is a morphism of N
 :::
 
 ::: {.remark}
-The two halves behave differently and the difference is the exam question.
-$f^*$ is right exact and easy: on affines it is $\wait \tensor_A B$, so it is the algebraic base change and inherits every good property of a tensor product.
-$f_*$ is only left exact, and its failure to be exact is the definition of higher direct images $R^i f_*$; its failure to preserve coherence is visible already in $f: \AA^1_k \to \Spec k$, where $f_*\OO_{\AA^1}$ has global sections $k[t]$, not finite over $k$.
-Properness is what repairs this: for $f$ proper and $\mcf$ coherent, every $R^i f_*\mcf$ is coherent.
+$f^*$ is right exact: on quasicoherent sheaves over affines it corresponds to $\wait \tensor_A B$.
+$f_*$ is left exact, and its right derived functors are the higher direct images $R^i f_*$. Its failure to preserve coherence is visible already in $f: \AA^1_k \to \Spec k$, where $f_*\OO_{\AA^1}$ has global sections $k[t]$, not finite over $k$.
+For $f$ proper between Noetherian schemes and $\mcf$ coherent, every $R^i f_*\mcf$ is coherent.
 
-On line bundles $f^*$ is a group homomorphism $\Pic(Y) \to \Pic(X)$, which is how $\OO(1)$ is transported to any scheme with a map to projective space, and hence how very ampleness is defined at all.
+On line bundles $f^*$ is a group homomorphism $\Pic(Y) \to \Pic(X)$. A very ample line bundle is obtained by pulling back $\OO(1)$ along an immersion into projective space.
 :::
