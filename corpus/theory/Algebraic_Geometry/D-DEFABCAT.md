@@ -38,7 +38,7 @@ An abelian category is a category $\mca$ such that
 Axioms (i)--(iii) are the additive axioms; (iv)--(vi) are what make homological algebra possible.
 Axiom (v) is the first isomorphism theorem in categorical form, and it is exactly what fails in the additive categories that are not abelian: filtered vector spaces and topological abelian groups both have kernels and cokernels, but a map there can be both mono and epi without being an isomorphism.
 
-The examples that matter for this exam are $\Ab$, $\mods{A}$ for a ring $A$, and $\mods{\OO_X}$ on a ringed space.
+Examples include $\Ab$, $\mods{A}$ for a ring $A$, and $\mods{\OO_X}$ on a ringed space.
 Sheaves of abelian groups on a space form an abelian category, but the cokernel there is the *sheafified* presheaf cokernel.
 That single sheafification is why global sections is only left exact, and hence why sheaf cohomology exists at all.
 :::
