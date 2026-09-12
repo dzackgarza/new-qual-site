@@ -4447,17 +4447,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-4.md
 - [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-5.md
 - [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-1XT8N.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-37RI3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-39RRX.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-4FZVU.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-FB9OZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-KY2W7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-UDRRC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-X3SLC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-XDJRZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-XFF7Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/20/E-ZEESK.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-1XT8N.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-37RI3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-39RRX.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-4FZVU.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-FB9OZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-KY2W7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-UDRRC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-X3SLC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-XDJRZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-XFF7Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/20/E-ZEESK.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-1841E.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-9V5EM.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/21/E-AFAON.md
