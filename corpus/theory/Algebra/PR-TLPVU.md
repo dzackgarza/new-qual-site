@@ -30,6 +30,4 @@ Given any presentation of a group as a product of cyclic groups $G = \prod \ZZ_i
 
 - For **invariant factors**, iterate a process of taking the largest of each prime power (i.e. the bottom row) at each step, deleting that row, and continuing in the same fashion.
 
-> Note: this sounds much more complicated than it actually is.
-> Try it!
 :::
