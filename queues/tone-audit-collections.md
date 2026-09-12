@@ -83,21 +83,21 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARNOTSEP.md
 - [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARZARTANGENT.md
 - [x] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/index.md — Changed: replace assembly and solution-status narration with mathematical scope (STANCE-10).
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-2B4GV.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-44MIX.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-45V3F.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-5H7FG.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-5SED7.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-CDHB5.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-EGKRW.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-OX3MY.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-Q6PDD.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/P-UW7CE.md
-- [ ] corpus/collections/SRC-ALG-ART-HEACCB/index.md
-- [ ] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-EKNFG.md
-- [ ] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-K8Z3W.md
-- [ ] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-LCEHH.md
-- [ ] corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-2B4GV.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-44MIX.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-45V3F.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-5H7FG.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-5SED7.md — Changed: state the additional hypothesis without attributing intent to the source (STANCE-07, STANCE-19).
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-CDHB5.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-EGKRW.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-OX3MY.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-Q6PDD.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/P-UW7CE.md
+- [x] corpus/collections/SRC-ALG-ART-HEACCB/index.md
+- [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-EKNFG.md
+- [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-K8Z3W.md
+- [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-LCEHH.md
+- [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md
 - [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-2CP2Q.md
 - [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-4IKVH.md
 - [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-567ZZ.md
