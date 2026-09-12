@@ -25,7 +25,7 @@ Method: For each crop, OCR was run to count images. For PRESERVED and DUPLICATE,
 
 | # | Source file | Mathematical payload (OCR corrected) | Target | Status | Evidence |
 |---|-------------|--------------------------------------|--------|--------|----------|
-| 1 | `2022-01-09_12-22-51.png` | Zariski main theorem: birational morphism of normal projective varieties has connected fibres; purity | `T-MORZMT` + `T-SRFZMT` | CANDIDATE | Card files exist. Image not yet visually compared. |
+| 1 | `2022-01-09_12-22-51.png` | Zariski main theorem: birational morphism of normal projective varieties has connected fibres; purity | `T-MORZMT` + `T-SRFZMT` | REPAIRED | Image read 2026-09-12: Thm 8.6 (a) connected fibres + dim>0 unless singleton, (b) purity E closed, codim 1 near smooth y0, hypersurface if Y smooth. Added Purity theorem to T-MORZMT (exceptional locus closed, codim 1). Verified against card visually. |
 | 2 | `2022-01-09_12-23-25.png` | Definition finite type + Hilbert basis + Stein in plan | `T-MORSTEIN` | CANDIDATE | Card exists. Visual compare pending. |
 | 3 | `2022-01-09_12-23-55.png` | Prop Noether normalization (affine finite map to A^d) | `T-MORFIBDIM` | CANDIDATE | Card exists. |
 | 4 | `2022-01-09_12-24-40.png` | Projective Noether normalization + normalization universal property | `T-MORZMT` | CANDIDATE | Card exists. |
