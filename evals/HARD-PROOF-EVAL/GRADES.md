@@ -3,16 +3,12 @@
 Rubric: `RUBRIC.md` (100 points: (a)5 + (b)5 + (c)20 + (d)15 + (e)20 + (f)15 + (g)10 + overall10). Graded blind to model name per file, one row at a time.
 
 Problem ID: `E-SS3.PR-1` (Koebe–Bieberbach radius theorem, `HARD-PROOF-EVAL.md` verbatim).
-Run: `20260912T071746Z` (UTC) — 22 live free OpenRouter models, 16 success, 6 fail (BYOK/harness gate).
+Run: `20260912T071746Z` (UTC) — 18 live free OpenRouter models (BYOK excluded), 14 success, 2 fail (harness gate). 4 BYOK models (`gemma-4-26b-a4b-it:free`, `gemma-4-31b-it:free`, `lyria-3-clip-preview`, `lyria-3-pro-preview`) are not free (require `is_byok:true`, Google AI Studio key) and were not tested, per correction.
 
 | Model | Provider | Datetimestamp (UTC) | Problem ID | Score /100 | Notes |
 | --- | --- | --- | --- | --- | --- |
 | `cohere/north-mini-code:free` | `cohere` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Hit max_tokens, no final solution (content null, only COT planning, truncated); no proof for (a)–(g) |
 | `dots-studio/dots-3-note-preview:free` | `dots-studio` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT planning truncated |
-| `google/gemma-4-26b-a4b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid` (Google AI Studio); no solution |
-| `google/gemma-4-31b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
-| `google/lyria-3-clip-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
-| `google/lyria-3-pro-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
 | `inclusionai/ling-3.0-flash-fin:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
 | `inclusionai/ling-3.0-flash-sante:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
 | `inclusionai/ling-3.0-flash-vl:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
@@ -30,4 +26,5 @@ Run: `20260912T071746Z` (UTC) — 22 live free OpenRouter models, 16 success, 6 
 | `thinkingmachines/inkling-small:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 403 harness-only `is only available on agentic harnesses`; no solution (raw probe) |
 | `thinkingmachines/inkling:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 403 harness-only; no solution |
 
-*All 22 graded, one row per commit loop completed. Two models (laguna s/xs) produced full attempted proofs; 14 produced no final solution (truncated COT or BYOK/harness gate); 6 failed at provider.*
+*All 18 free (non-BYOK) graded, one row per commit loop completed.
+Two models (laguna s/xs) produced full attempted proofs; 14 produced no final solution (truncated COT); 2 failed at provider (harness 403). 4 BYOK models excluded as not free.*
