@@ -12,9 +12,5 @@ review: draft
 ---
 
 ::: {.problem}
-Show that the series                    ∞
-                                        X (−1)k
-                                         k=1
-                                               k + |x|
-converges pointwise to a Lipschitz function f (x). Is the convergence uniform on R?
+Show that the series                    ∞ X (−1)k k=1 k + |x| converges pointwise to a Lipschitz function f (x). Is the convergence uniform on R?
 :::

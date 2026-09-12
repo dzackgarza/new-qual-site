@@ -12,9 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the Galois group of the normal closure of the field
-                                          √     √
-                                   K = Q( 3 + 5)
+Compute the Galois group of the normal closure of the field √     √ K = Q( 3 + 5)
 
 over Q.
 :::

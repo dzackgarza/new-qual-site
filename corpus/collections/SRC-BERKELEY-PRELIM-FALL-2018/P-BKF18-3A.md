@@ -25,3 +25,12 @@ Let $X$ be a metric space.
 
 (c) Prove that for every open set $U$, $\neg U=\neg\neg\neg U$.
 :::
+
+::: {.solution}
+(a) Take $\neg U$ ¬U to be the union of all open sets disjoint from U , which is open as the union of any collection of open sets is open.
+
+(b) Take X to be the real line and U to be the nonzero reals.
+Then ¬U is empty so $\neg \neg U$ is the real line.
+
+(c) We have $A \subseteq \neg \neg A$ and applying this to $A = \neg U$ we get $\neg U \subseteq \neg \neg \neg U$ . On the other hand, if $A \subseteq B$ then $\neg B \subseteq \neg A$ , and applying this to $A = U , B = \neg \neg U$ we get $\neg \neg \neg U \subseteq \neg U$
+:::

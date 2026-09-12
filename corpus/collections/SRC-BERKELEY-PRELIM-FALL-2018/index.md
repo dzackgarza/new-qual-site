@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/fall-2018-prelim.pdf
+- assets/attachments/fall-2018-prelim_solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley

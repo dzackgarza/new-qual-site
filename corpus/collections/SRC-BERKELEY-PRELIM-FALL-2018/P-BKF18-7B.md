@@ -24,3 +24,7 @@ For a real symmetric positive definite matrix $A$ and $v\in\mathbb R^n$, show th
 \]
 You may assume that $\int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi$.
 :::
+
+::: {.solution}
+Complete the square, orthogonally diagonalize A, change variables, and integrate.
+:::

@@ -12,9 +12,5 @@ review: draft
 ---
 
 ::: {.problem}
-Prove or disprove: there exists an  > 0 and a real matrix A such that
-                                                      
-                                     100    −1      0
-                                   A =                   .
-                                            0 −1 − 
+Prove or disprove: there exists an  > 0 and a real matrix A such that              100    −1      0 A =                   . 0 −1 − 
 :::

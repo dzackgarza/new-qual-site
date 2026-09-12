@@ -12,11 +12,5 @@ review: draft
 ---
 
 ::: {.problem}
-Compute
-                                          6z 5 + 1
-                                     Z
-                                          6
-                                                   dz,
-                                       C z +z +1
-where C is the circle centered at the origin with radius 2, oriented counterclockwise.
+Compute 6z 5 + 1 Z 6 dz, C z +z +1 where C is the circle centered at the origin with radius 2, oriented counterclockwise.
 :::

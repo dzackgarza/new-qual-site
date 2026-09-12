@@ -23,3 +23,6 @@
 
 - id: harvard
   name: Harvard University
+
+- id: berkeley
+  name: University of California, Berkeley

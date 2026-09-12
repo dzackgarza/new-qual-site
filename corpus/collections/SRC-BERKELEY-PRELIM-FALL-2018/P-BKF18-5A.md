@@ -23,3 +23,23 @@ Describe a conformal map from
 \]
 onto the open unit disk.
 :::
+
+::: {.solution}
+Compose
+
+$$
+f _ { 1 } : z \to 1 / z
+$$
+
+$$
+f _ { 2 } : z \to 8 \pi ( z + i / 2 ) / 3
+$$
+
+$$
+f _ { 3 } : z \to e x p ( z )
+$$
+
+$$
+f _ { 4 } : z \to ( z - i ) / ( z + i )
+$$
+:::

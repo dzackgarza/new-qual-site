@@ -22,3 +22,7 @@ Show that
 \int_0^1 x^{-x}\,dx=\sum_{n=1}^{\infty}n^{-n}.
 \]
 :::
+
+::: {.solution}
+Write $x ^ { - x } = \mathrm { e } ^ { - x \log x }$ , Taylor expand the exponential, and integrate term by term.
+:::

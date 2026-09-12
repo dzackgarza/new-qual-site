@@ -13,6 +13,11 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
+  date: 2026-09-12
+  note: "The source-supplied Fall 2018 solution has an incorrect factor: two integrations by parts give one-half times the Dirichlet integral, not one-sixth. The erroneous companion answer is therefore not imported."
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
   date: 2026-09-11
 ---
 

@@ -19,3 +19,7 @@ audit:
 ::: problem
 Suppose entire functions $f,g$ satisfy constant-coefficient linear differential equations of orders $n$ and $m$, respectively. Show that $F=fg$ satisfies a nontrivial constant-coefficient linear differential equation of order at most $mn$.
 :::
+
+::: {.solution}
+By induction on k, the function $F ^ { ( k ) }$ is a linear combination of the mn functions $f ^ { ( i ) } g ^ { ( j ) }$ for $0 \leq i < n , 0 \leq j < m$ , with constant coefficients. Therefore the $m n + 1$ functions $F ^ { ( 0 ) } , \ldots , F ^ { ( m n ) }$ are linearly dependent over C.
+:::
