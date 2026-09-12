@@ -29,7 +29,6 @@ Injective implies flasque, flasque implies $\globsec{X;\wait}\dash$acyclic, and 
 :::
 
 ::: {.remark}
-The chain to remember is *injective $\Rightarrow$ flasque $\Rightarrow$ acyclic*, and only the middle class is ever exhibited by hand.
 Examples: the Godement sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections; any constant sheaf on an irreducible space; and $\tilde{I}$ on $\Spec A$ for $I$ an injective $A\dash$module, which is the input to affine vanishing.
 
 The proof of acyclicity is induction on the sequence $0 \to \mcf \to \mci \to \mcg \to 0$ with $\mci$ injective: flasqueness of $\mcf$ forces $\mcg$ flasque and the global sections exact, so $H^1(\mcf) = 0$ and the higher groups shift down.
