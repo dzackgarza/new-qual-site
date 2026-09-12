@@ -122,9 +122,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/appendices/appendix.md` — no stance revision
 - [x] `wiki/topology/appendices/at-course-notes.md` — no stance revision
 - [x] `wiki/topology/appendices/index.md` — no stance revision
-- [ ] `wiki/topology/counterexamples.md`
-- [ ] `wiki/topology/covering-spaces/covering-spaces.md`
-- [ ] `wiki/topology/covering-spaces/index.md`
+- [x] `wiki/topology/counterexamples.md` — no stance revision
+- [x] `wiki/topology/covering-spaces/covering-spaces.md` — no stance revision; six doubled `assets/assets/` image paths render broken
+- [x] `wiki/topology/covering-spaces/index.md` — no stance revision
 - [ ] `wiki/topology/cw-complexes/cw-complexes.md`
 - [ ] `wiki/topology/cw-complexes/index.md`
 - [ ] `wiki/topology/degree/fixed-points-and-degree.md`
