@@ -503,57 +503,57 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — real-analysis — October 2012 — exact byte duplicate of `Giant_List_of_Problems.pdf` (same SHA-256); do not create a second collection
 
-- [ ] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — algebra — August 29
+- [x] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — algebra — August 29 — disposition 2026-09-12: reconciled with `SRC-KENT-STATE-RING-THEORY-QUAL-2017`, which contains all 141 source-order ring-theory qualifying-exam problems.
 
 ## Homework assignments (53)
 
-- [ ] [603_11.pdf](assets/attachments/extracted/603_11.md) (217L, 0 problems) — UNL — applied-algebra
+- [x] [603_11.pdf](assets/attachments/extracted/603_11.md) (217L, 0 problems) — UNL — applied-algebra — disposition 2026-09-12: exact byte duplicate of `Algebra_HW_11_Solns.pdf` (SHA-256 `a1a7fe73b51ba280adb4cd185a7f0234dbbb3bf7da7e8675a9a68281b13ac6b9`); no duplicate collection needed.
 
-- [ ] [8150-hw1.pdf](assets/attachments/extracted/8150-hw1.md) (81L, 10 problems) — UGA — complex-analysis
+- [x] [8150-hw1.pdf](assets/attachments/extracted/8150-hw1.md) (81L, 10 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW1`, containing all ten source-order complex-analysis homework problems.
 
-- [ ] [8150-hw2.pdf](assets/attachments/extracted/8150-hw2.md) (77L, 12 problems) — UGA — complex-analysis
+- [x] [8150-hw2.pdf](assets/attachments/extracted/8150-hw2.md) (77L, 12 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW2`, containing all twelve source-order complex-analysis homework problems.
 
-- [ ] [8150-hw3.pdf](assets/attachments/extracted/8150-hw3.md) (83L, 11 problems) — UGA — complex-analysis
+- [x] [8150-hw3.pdf](assets/attachments/extracted/8150-hw3.md) (83L, 11 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW3`, containing all eleven source-order complex-analysis homework problems.
 
-- [ ] [871-872June_2004_852-871.pdf](assets/attachments/extracted/871-872June_2004_852-871.md) (51L, 0 problems) — topology
+- [x] [871-872June_2004_852-871.pdf](assets/attachments/extracted/871-872June_2004_852-871.md) (51L, 0 problems) — topology — disposition 2026-09-12: reconciled with `SRC-UNL-QUAL-JUNE-2004-970-852`; direct intake contains ten source-order qualifying-exam problems, correcting the inventory zero.
 
-- [ ] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018
+- [x] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018 — disposition 2026-09-12: reference-only Adam Saltz UGA Math 8210 Topology of Manifolds Fall 2018 syllabus; it describes course objectives, texts, and homework policy but contains no authored exercises. Added to `vocabularies/references.bib` as `Saltz18Math8210Syllabus`; no cards manufactured.
 
-- [ ] [AG Exam Problems.pdf](assets/attachments/extracted/AG Exam Problems.md) (67L, 6 problems) — UNL — alg-geom — August 2015
+- [x] [AG Exam Problems.pdf](assets/attachments/extracted/AG Exam Problems.md) (67L, 6 problems) — UNL — alg-geom — August 2015 — disposition 2026-09-12: reconciled with `SRC-AG-EXAM-PROBLEMS-2015`, containing all six source-order algebraic-geometry exam problems.
 
-- [ ] [Algebra_HW_11_Solns.pdf](assets/attachments/extracted/Algebra_HW_11_Solns.md) (217L, 0 problems) — UNL — applied-algebra
+- [x] [Algebra_HW_11_Solns.pdf](assets/attachments/extracted/Algebra_HW_11_Solns.md) (217L, 0 problems) — UNL — applied-algebra — disposition 2026-09-12: reconciled with `SRC-SHONKWILER-ALGEBRA-HW11`, containing all six source-order homework problems represented by this solution packet.
 
-- [ ] [Algebra_HW_4_Solns.pdf](assets/attachments/extracted/Algebra_HW_4_Solns.md) (351L, 0 problems) — algebra
+- [x] [Algebra_HW_4_Solns.pdf](assets/attachments/extracted/Algebra_HW_4_Solns.md) (351L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-SHONKWILER-ALGEBRA-HW4`, containing all seven source-order homework problems represented by this solution packet.
 
-- [ ] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — algebra
+- [x] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — algebra — disposition 2026-09-12: reference-only Kari Eifler algebra qualifying-exam definitions/theorems notes dated August 9, 2017. Added to `vocabularies/references.bib` as `Eifler17AlgebraQualNotes`; numbered definitions and propositions are not manufactured into problem cards.
 
-- [ ] [analysis_notes_eamonqg.pdf](assets/attachments/extracted/analysis_notes_eamonqg.md) (1041L, 0 problems) — applied-algebra
+- [x] [analysis_notes_eamonqg.pdf](assets/attachments/extracted/analysis_notes_eamonqg.md) (1041L, 0 problems) — applied-algebra — disposition 2026-09-12: reference-only Eamon Quinlan analysis review notes dated April 24, 2018. Added to `vocabularies/references.bib` as `Quinlan18AnalysisNotes`; no authored problem collection is present.
 
-- [ ] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra
+- [x] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016`, which contains 39 source-order examples-sheet problems; the inventory count of 33 was incomplete.
 
 - [ ] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra
 
-- [ ] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology
+- [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary. Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
 
-- [ ] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis
+- [x] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis — disposition 2026-09-12: reference-only Robert Varley *Study Guide for Complex Analysis Exam* topic/reference outline. Added to `vocabularies/references.bib` as `Varley14ComplexPrelimReview`; no problem cards manufactured.
 
-- [ ] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom
+- [x] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom — disposition 2026-09-12: reference-only Christopher Eur complex-analysis review notes following Stein--Shakarchi and Ahlfors, with selected textbook exercise solutions. Added to `vocabularies/references.bib` as `Eur15ComplexAnalysisNotes`; no duplicate textbook-exercise cards manufactured.
 
-- [ ] [f03solution.pdf](assets/attachments/extracted/f03solution.md) (407L, 0 problems) — complex-analysis
+- [x] [f03solution.pdf](assets/attachments/extracted/f03solution.md) (407L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2003`; the solution packet is retained as provenance for all 18 Part A/B problems.
 
-- [ ] [f06solution.pdf](assets/attachments/extracted/f06solution.md) (342L, 0 problems) — applied-algebra
+- [x] [f06solution.pdf](assets/attachments/extracted/f06solution.md) (342L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2006`; the solution packet is retained as provenance for all 18 Part A/B problems.
 
-- [ ] [f08solutions.pdf](assets/attachments/extracted/f08solutions.md) (191L, 0 problems) — complex-analysis
+- [x] [f08solutions.pdf](assets/attachments/extracted/f08solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2008`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [f10solutions.pdf](assets/attachments/extracted/f10solutions.md) (282L, 0 problems) — UNL — complex-analysis
+- [x] [f10solutions.pdf](assets/attachments/extracted/f10solutions.md) (282L, 0 problems) — UNL — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2010`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [f11solutions.pdf](assets/attachments/extracted/f11solutions.md) (206L, 2 problems) — complex-analysis
+- [x] [f11solutions.pdf](assets/attachments/extracted/f11solutions.md) (206L, 2 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2011`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [F12_Solutions.pdf](assets/attachments/extracted/F12_Solutions.md) (244L, 0 problems) — applied-algebra
+- [x] [F12_Solutions.pdf](assets/attachments/extracted/F12_Solutions.md) (244L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2012`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
-- [ ] [F13_Solutions.pdf](assets/attachments/extracted/F13_Solutions.md) (384L, 15 problems) — Berkeley — complex-analysis
+- [x] [F13_Solutions.pdf](assets/attachments/extracted/F13_Solutions.md) (384L, 15 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2013`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
-- [ ] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra
+- [x] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2016`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
 - [x] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: Jonathan Mostovoy's partial solutions to Folland, a reference/solutions resource rather than an exam; already linked from `wiki/real-analysis/resources/solutions.md`. This PDF is byte-identical to `Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`), so no duplicate collection is needed.
 
