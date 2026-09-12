@@ -31,6 +31,10 @@ set to $-\infty$ when every plurigenus vanishes.
 It is a birational invariant, so for surfaces it is computed on a minimal model.
 :::
 
+::: {.theorem title="Zariski desingularization of surfaces"}
+Every projective surface $Y$ admits a desingularization by a finite sequence that alternates normalizations and blowups of maximal ideals. The resulting smooth surface is projective.
+:::
+
 ::: {.theorem title="Enriques classification"}
 A minimal smooth projective surface falls into exactly one of:
 
