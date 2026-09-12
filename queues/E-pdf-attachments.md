@@ -600,7 +600,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra
 
-- [ ] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet. Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
 
 - [x] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis — disposition 2026-09-12: identified from the PDF itself as the University of California, Berkeley Spring 2017 preliminary examination solution packet, not a UNL complex-analysis source. Ingested as `SRC-BERKELEY-PRELIM-SPRING-2017` with all 18 problems `P-BKS17-1A` through `P-BKS17-9B` in exam order; the inventory count of eight was incomplete. This entry records the solution PDF as provenance; source-provided worked solutions were not copied into local `.solution` sections during intake.
 
