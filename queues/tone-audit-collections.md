@@ -1653,14 +1653,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-RBVY6.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-YBT6I.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-YPGAW.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUFA05ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUFA05ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANG.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANI.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANK.md
@@ -4387,16 +4387,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/13/E-QR3SP.md
 - [x] corpus/collections/SRC-TEXT-MUN00/13/E-V7QV9.md
 - [x] corpus/collections/SRC-TEXT-MUN00/13/E-Y5YAL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-AZ6JL.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-CH8HI.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-GD2KF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-K89XO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-L9XR0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-M50FF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-QMZO5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-TLB44.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-U919Z.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/16/E-Y75ZB.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-AZ6JL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-CH8HI.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-GD2KF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-K89XO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-L9XR0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-M50FF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-QMZO5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-TLB44.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-U919Z.md
+- [x] corpus/collections/SRC-TEXT-MUN00/16/E-Y75ZB.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-0BN1L.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-11WM7.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-6A0RO.md
