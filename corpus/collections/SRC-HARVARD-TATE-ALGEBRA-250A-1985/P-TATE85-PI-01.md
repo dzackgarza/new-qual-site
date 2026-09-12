@@ -1,0 +1,22 @@
+---
+schema: qual/card@1
+id: P-TATE85-PI-01
+kind: problem
+title: "Tate Algebra 250(a), Examples of prime ideals, problem 1"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+(1) Let A be a u.f.d. (unique factorization domain, e.g.,$A = \mathbb { Z } [ x _ { 1 } , \dots , x _ { n } ]$or$A =$$K [ x _ { 1 } , \ldots , x _ { n } ]$, K a field) and let π be a prime element in A. Show :
+
+(a) The principal ideal$\pi A$is a prime ideal.
+
+(b) Every nonzero prime ideal contains one of the form$\pi A$
+
+(c) The ideals of the form$\pi A$are the minimal elements in the set of nonzero prime ideals, ordered by inclusion, and they are the only nonzero principal prime ideals.
+:::
