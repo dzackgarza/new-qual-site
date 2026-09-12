@@ -32,11 +32,13 @@ It is a birational invariant, so for surfaces it is computed on a minimal model.
 :::
 
 ::: {.theorem title="Zariski desingularization of surfaces"}
-Every projective surface $Y$ admits a desingularization by a finite sequence that alternates normalizations and blowups of maximal ideals. The resulting smooth surface is projective.
+Every projective surface $Y$ admits a desingularization by a finite sequence that alternates normalizations and blowups of maximal ideals.
+The resulting smooth surface is projective.
 :::
 
 ::: {.theorem title="Minimal resolution of normal surface singularities"}
-Let $Y$ be a normal projective surface. There exists a unique minimal resolution $\varphi \colon X \to Y$ such that $X$ is smooth projective, $\varphi$ is an isomorphism over $\reg Y$, and every other desingularization $\varphi' \colon X' \to Y$ with the same two properties factors as $\varphi' = \varphi \circ \sigma$ where $\sigma \colon X' \to X$ is a composition of blowups of points over the exceptional locus of $\varphi$.
+Let $Y$ be a normal projective surface.
+There exists a unique minimal resolution $\varphi \colon X \to Y$ such that $X$ is smooth projective, $\varphi$ is an isomorphism over $\reg Y$, and every other desingularization $\varphi' \colon X' \to Y$ with the same two properties factors as $\varphi' = \varphi \circ \sigma$ where $\sigma \colon X' \to X$ is a composition of blowups of points over the exceptional locus of $\varphi$.
 :::
 
 ::: {.theorem title="Enriques classification"}

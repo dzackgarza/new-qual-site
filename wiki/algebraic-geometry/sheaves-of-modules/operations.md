@@ -35,7 +35,8 @@ For $f \colon X \to Y$ continuous:
 
 - $f^! \colon \Sh(Y) \to \Sh(X)$, the exceptional inverse image, read as ``$f$ upper shriek''.
 
-These are the four among the six operations; the remaining two are $\otimes$ and $\sHom$. For $\OO_X$-modules the same symbols are written $f^*$ for the module pullback.
+These are the four among the six operations; the remaining two are $\otimes$ and $\sHom$.
+For $\OO_X$-modules the same symbols are written $f^*$ for the module pullback.
 
 ## Ideal sheaves
 
