@@ -27,4 +27,4 @@ source:
     year: 2018
 ---
 
-
+Vendored solution enrichment: `assets/attachments/Spring2018_SOLUTIONS.pdf` and `assets/attachments/Neil_Spring_2018_Solutions.pdf` are byte-identical handwritten solution packets (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`) for the five problems in this exam. They are retained as solution/reference material rather than collection provenance.
