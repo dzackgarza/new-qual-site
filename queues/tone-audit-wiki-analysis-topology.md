@@ -84,12 +84,12 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/functional-analysis/operators.md` — no stance revision
 - [x] `wiki/real-analysis/functional-analysis/which-big-theorem.md` — no stance revision
 - [x] `wiki/real-analysis/index.md`
-- [ ] `wiki/real-analysis/inequalities.md`
-- [ ] `wiki/real-analysis/integration/construction.md`
-- [ ] `wiki/real-analysis/integration/index.md`
-- [ ] `wiki/real-analysis/integration/l1.md`
-- [ ] `wiki/real-analysis/integration/the-convergence-theorems.md`
-- [ ] `wiki/real-analysis/integration/which-convergence-theorem.md`
+- [x] `wiki/real-analysis/inequalities.md` — removed "the exam expects" framing
+- [x] `wiki/real-analysis/integration/construction.md` — no stance revision
+- [x] `wiki/real-analysis/integration/index.md` — no stance revision
+- [x] `wiki/real-analysis/integration/l1.md` — no stance revision
+- [x] `wiki/real-analysis/integration/the-convergence-theorems.md` — dropped "on an exam" framing
+- [x] `wiki/real-analysis/integration/which-convergence-theorem.md` — removed exam-composition and examiner-intent claims
 - [ ] `wiki/real-analysis/lp-spaces/index.md`
 - [ ] `wiki/real-analysis/lp-spaces/the-spaces.md`
 - [ ] `wiki/real-analysis/lp-spaces/which-inequality.md`

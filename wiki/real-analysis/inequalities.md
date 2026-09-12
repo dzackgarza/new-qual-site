@@ -8,7 +8,7 @@ topics:
 
 # Inequalities
 
-The ones the exam expects without derivation, filed by what they bound.
+The standard inequalities, filed by what they bound and used without re-derivation.
 
 ## Between integrals
 

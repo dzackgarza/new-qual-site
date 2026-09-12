@@ -9,8 +9,8 @@ topics:
 
 # Which convergence theorem?
 
-"Compute $\lim_n \int f_n$" is the most common instruction on the paper, and the whole question is which theorem licenses moving the limit inside.
-There are four, they cost different amounts, and a problem is usually testing whether you noticed which hypothesis is missing.
+A standard instruction is to compute $\lim_n \int f_n$; the whole question is which theorem licenses moving the limit inside.
+There are four, they cost different amounts, and the decisive move is noticing which hypothesis is missing.
 
 ## The four, and what each costs
 
@@ -66,4 +66,4 @@ The same question is asked about other pairs of limits, and the answers are on [
 
 - $\int\int$ in either order: [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
-Every one of them is the same theorem wearing a different hat, which is worth noticing because a problem will state whichever form is least convenient.
+Every one of them is the same theorem wearing a different hat.

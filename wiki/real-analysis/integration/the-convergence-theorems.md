@@ -24,7 +24,7 @@ This is why partial sums of nonnegative series are its most common application.
 
 Dominated convergence trades monotonicity for an integrable majorant.
 If $f_n\to f$ almost everywhere and $|f_n|\le g\in L^1$, then $f\in L^1$ and the integrals converge; applying the theorem to $|f_n-f|$ also gives $L^1$ convergence.
-On an exam, the substantive step is almost always producing the single function $g$.
+In practice, the substantive step is almost always producing the single function $g$.
 
 [[T-IJQQG]]
 
