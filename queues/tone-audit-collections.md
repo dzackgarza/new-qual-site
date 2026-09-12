@@ -1704,14 +1704,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANB.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANC.md
@@ -2903,72 +2903,72 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HART77/P-AGH21HOMNSS.md
 - [x] corpus/collections/SRC-TEXT-HART77/P-AGH2210SPECRX.md
 - [x] corpus/collections/SRC-TEXT-HART77/P-AGH2211SPECFPX.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2212GLUESCHEMES.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2213QUASICOMPACT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2214PROJMOR.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2215VARTOSCH.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2216XFAFFINE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2217AFFINECRIT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2218RINGMAPSPEC.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2219DISCONNIDEM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH221DISTOPEN.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH222OPENSUBSCHEME.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH223REDUCED.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH224HOMSPEC.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH225SPECZ.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH226ZERORING.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH227SPECFIELD.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH228DUALNUM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH229GENERICPT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH22IRRELEVANT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2310FIBRES.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2311CLOSEDSUB.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2312PROJCLOSED.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2313FTPROPS.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2314CLOSEDDENSE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2315GEOMIRRED.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2316NOETHINDUCT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2317ZARISKISPACE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2318CONSTRUCTIBLE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2319CHEVALLEY.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH231LOCFINTYPE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2320DIMENSION.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2321DVRLINE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2322FIBREDIM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2323VARPRODUCT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH232QCMOR.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH233FINTYPE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH234FINITEMOR.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH235QUASIFINITE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH236FUNCTIONFIELD.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH237GENFINITE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH238NORMALIZATION.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH239PRODUCTSPACE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH23ZIPROPS.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2410CHOW.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2411DVRCRIT.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2412VALEX.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH241FINPROPER.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH242AGREEDENSE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH243AFFINTER.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH244PROPIMAGE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH245VALCENTER.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH246PROPAFFFIN.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH247REALFORMS.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH248PROPSTAB.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH249PROJCOMP.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH24CORRESPONDENCE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2510SATIDEAL.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2511CARTPROD.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2512VERYAMPLE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2513VERONESE.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2514PROJNORM.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2515EXTCOH.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2516TENSOROPS.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2517AFFMOR.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH2518VECBUN.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH251DUALSHEAF.md
-- [ ] corpus/collections/SRC-TEXT-HART77/P-AGH252DVRMOD.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2212GLUESCHEMES.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2213QUASICOMPACT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2214PROJMOR.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2215VARTOSCH.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2216XFAFFINE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2217AFFINECRIT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2218RINGMAPSPEC.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2219DISCONNIDEM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH221DISTOPEN.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH222OPENSUBSCHEME.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH223REDUCED.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH224HOMSPEC.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH225SPECZ.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH226ZERORING.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH227SPECFIELD.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH228DUALNUM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH229GENERICPT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH22IRRELEVANT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2310FIBRES.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2311CLOSEDSUB.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2312PROJCLOSED.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2313FTPROPS.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2314CLOSEDDENSE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2315GEOMIRRED.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2316NOETHINDUCT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2317ZARISKISPACE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2318CONSTRUCTIBLE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2319CHEVALLEY.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH231LOCFINTYPE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2320DIMENSION.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2321DVRLINE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2322FIBREDIM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2323VARPRODUCT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH232QCMOR.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH233FINTYPE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH234FINITEMOR.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH235QUASIFINITE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH236FUNCTIONFIELD.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH237GENFINITE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH238NORMALIZATION.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH239PRODUCTSPACE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH23ZIPROPS.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2410CHOW.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2411DVRCRIT.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2412VALEX.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH241FINPROPER.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH242AGREEDENSE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH243AFFINTER.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH244PROPIMAGE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH245VALCENTER.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH246PROPAFFFIN.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH247REALFORMS.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH248PROPSTAB.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH249PROJCOMP.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH24CORRESPONDENCE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2510SATIDEAL.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2511CARTPROD.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2512VERYAMPLE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2513VERONESE.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2514PROJNORM.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2515EXTCOH.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2516TENSOROPS.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2517AFFMOR.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH2518VECBUN.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH251DUALSHEAF.md
+- [x] corpus/collections/SRC-TEXT-HART77/P-AGH252DVRMOD.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH253TILDEADJ.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH254COKERCHAR.md
 - [ ] corpus/collections/SRC-TEXT-HART77/P-AGH255PUSHCOH.md
