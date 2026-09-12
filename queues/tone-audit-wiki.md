@@ -73,9 +73,9 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [x] `wiki/algebra/workshops/algebra-week-1-groups-warmup.md` — retained workshop exercises; corrected the nonempty-subset hypothesis and coset-set notation.
 - [x] `wiki/algebra/workshops/algebra-week-2-finite-group-theory.md` — removed unsupported exam-frequency claims; corrected the action on subgroups to conjugation.
 - [x] `wiki/algebra/workshops/algebra-week-3-sylow-theory.md` — no stance revision.
-- [ ] `wiki/algebra/workshops/algebra-week-4-rings.md`
-- [ ] `wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md`
-- [ ] `wiki/algebra/workshops/algebra-week-n-rep-theory.md`
+- [x] `wiki/algebra/workshops/algebra-week-4-rings.md` — no stance revision.
+- [x] `wiki/algebra/workshops/algebra-week-n-1-linear-algebra.md` — no stance revision.
+- [x] `wiki/algebra/workshops/algebra-week-n-rep-theory.md` — no stance revision.
 - [x] `wiki/algebra/workshops/index.md` — no stance revision.
 - [ ] `wiki/algebraic-geometry/cohomology/computing-cohomology.md`
 - [ ] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md`
