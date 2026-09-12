@@ -98,19 +98,19 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-K8Z3W.md
 - [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/P-LCEHH.md
 - [x] corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-2CP2Q.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-4IKVH.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-567ZZ.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-6NTDS.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-JG7FM.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-KUA4E.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-QXISW.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-UMQHV.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-XQ3YN.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/P-Z75FW.md
-- [ ] corpus/collections/SRC-ALG-ART-QHGA3N/index.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-B2P3P.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-B6E7Q.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-2CP2Q.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-4IKVH.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-567ZZ.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-6NTDS.md — Changed: replace study requirements and problem endorsement with proof dependencies (STANCE-05, STANCE-11).
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-JG7FM.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-KUA4E.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-QXISW.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-UMQHV.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-XQ3YN.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/P-Z75FW.md
+- [x] corpus/collections/SRC-ALG-ART-QHGA3N/index.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B2P3P.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B6E7Q.md
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-DLFQC.md
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-EHBDD.md
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-J2D5B.md

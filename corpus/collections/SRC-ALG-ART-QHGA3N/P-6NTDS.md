@@ -17,13 +17,12 @@ review: draft
 Let $G$ be a nonabelian group of order $p^3$ for $p$ prime.
 Show that $Z(G) = [G, G]$.
 
-> Note: this is a good problem, it tests several common theorems at once.
 > Proof due to Paco Adajar.
 
 ::: {.concept}
 \envlist
 
-Important notations and definitions:
+Notation and definitions:
 
 - The **center** of $G$, denoted by $Z(G)$, is the subset of elements of $G$ which commute with all elements of $G$.
   That is, if $x \in Z(G)$, then for all $g \in G$, $gx = xg$: $$Z(G) = \{ x \in G : gx = xg \, \text{for all } g \in G \}.$$
@@ -37,7 +36,7 @@ Important notations and definitions:
 
   Moreover, $G$ is abelian if and only if $[G,G]$ is trivial.
 
-Theorems to remember and know how to prove:
+Theorems used in the proof:
 
 - **$G/Z(G)$ Theorem**: If $G/Z(G)$ is cyclic, then $G$ is abelian, i.e., $G/Z(G)$ is in fact trivial.
 
