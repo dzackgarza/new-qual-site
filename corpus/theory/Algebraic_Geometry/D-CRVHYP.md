@@ -37,9 +37,9 @@ Equivalently $\abs{K} = (g-1)\, g^1_2$.
 :::
 
 ::: {.remark}
-Hyperelliptic is the exception clause in almost every theorem about curves, and the reason is always this one picture: the canonical map is two-to-one onto a rational normal curve instead of an embedding.
+For a hyperelliptic curve, the canonical map is two-to-one onto a rational normal curve instead of an embedding.
 
-Base-point freeness of $\abs{K}$ is a Riemann--Roch computation worth being able to run: $\ell(K) = g$, and $\ell(K-p) = g-1$ because $\ell(p) = 1$ for a non-rational curve, so the dimension drops by exactly one at every point.
+Base-point freeness of $\abs{K}$ follows from Riemann--Roch: $\ell(K) = g$, and $\ell(K-p) = g-1$ because $\ell(p) = 1$ for a non-rational curve, so the dimension drops by exactly one at every point.
 Very ampleness needs the drop by two at every pair $p, q$, and $\ell(K - p - q) = \ell(K) - 2$ fails exactly when $\ell(p+q) = 2$ — a pencil of degree two, which is the definition.
 
 Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright.
