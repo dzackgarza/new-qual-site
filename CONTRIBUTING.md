@@ -476,6 +476,75 @@ both numerical targets and substitutes such as “quickly”, “effortlessly”
 communicates mathematical dependencies without ranking readers. Verify those
 prerequisites against the source.
 
+### `RESOURCE-12`: State mathematical dependencies without diagnosing readers
+
+**Bad:** “Confusion in geometry usually comes from weak algebra.”
+
+**Good:** “For an affine scheme, the stalk at a prime ideal is the localization
+of its coordinate ring at that prime.”
+
+A broad diagnosis names neither the missing result nor the dependency that
+would explain it. Frequency words such as “usually” add an empirical claim
+without evidence. The sentence can also blame the reader's preparation for a
+difficulty whose cause is unknown. State the particular objects, results, and
+dependencies relevant to the page. Delete a general slogan when no such
+connection is needed.
+
+### `RESOURCE-13`: Name the mathematical outcome
+
+**Bad:** “Turns combinatorial data into solutions.”
+
+**Good:** “Constructs a toric variety from a fan.”
+
+Words such as “answer”, “solution”, and “result” require an identified question
+or operation. Without one, they conceal the resource's scope behind a promise
+of usefulness. Name what is constructed, computed, proved, or classified, with
+the relevant input and hypotheses. Use the replacement above only for a source
+that covers that construction.
+
+### `RESOURCE-14`: Remove unsupported rankings and implied consensus
+
+**Bad:** “Remains the quickest reference for computations.”
+
+**Good:** “Contains computations of [named invariant] in §[location].”
+
+Superlatives require a comparison class and evidence. Claims about speed also
+depend on the reader and the particular task. Words such as “still” and
+“remains” can imply that a ranking has an established history without supplying
+one. A resource inventory gains no mathematical information from this contest.
+Describe the operation and its location; retain comparisons only when they
+identify a verified difference relevant to the reader's question.
+
+### `RESOURCE-15`: Describe distinctions without adversarial exam framing
+
+**Bad:** “Explains the distinctions well enough to withstand an examiner's
+challenge.”
+
+**Good:** “Gives the implications among [named properties] and counterexamples
+to their converses.”
+
+Exam preparation does not make every mathematical description a claim about
+performance under interrogation. Survival language makes the examiner an
+adversary and replaces the actual distinction with an imagined test of the
+reader. Qualifiers such as “well enough” also imply a threshold of adequacy
+without stating it, and can disparage other treatments. Name the definitions,
+implications, hypotheses, or counterexamples themselves.
+
+### `RESOURCE-16`: Use direct bibliographic descriptions
+
+**Bad:** “This volume is the home of the examples that settle the issue.”
+
+**Good:** “Section [location] gives a [property A] example that is not
+[property B].”
+
+Conversational location metaphors make a book the supposed home of a subject
+without identifying the relevant passage. Phrases such as “is where” and
+“examples live” can also suggest exclusive ownership of material treated in
+many sources. Use direct verbs such as “defines”, “treats”, or “contains”, and
+name the content. Add a verified section reference when it helps locate the
+material. Describe the example's mathematical role instead of promising that
+it settles an unnamed issue.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
