@@ -3,11 +3,9 @@ title: Common Inequalities
 order: 23
 ---
 
-title: Basics
-
 # Common Inequalities
 
-## The GOATs
+## Primary inequalities
 
 [[PR-X5D4Z]]
 

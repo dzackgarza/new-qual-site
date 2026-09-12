@@ -67,9 +67,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [ ] `wiki/complex-analysis/workshops/complex-week-1-preliminaries.md`
 - [ ] `wiki/complex-analysis/workshops/complex-week-2-cauchy.md`
 - [ ] `wiki/complex-analysis/workshops/index.md`
-- [ ] `wiki/real-analysis/appendices/appendix-inequalities.md`
-- [ ] `wiki/real-analysis/appendices/functional-analysis.md`
-- [ ] `wiki/real-analysis/appendices/index.md`
+- [x] `wiki/real-analysis/appendices/appendix-inequalities.md` — revised section heading, removed stray `title: Basics` body line
+- [x] `wiki/real-analysis/appendices/functional-analysis.md` — no stance revision
+- [x] `wiki/real-analysis/appendices/index.md` — no stance revision
 - [ ] `wiki/real-analysis/appendices/undergrad-appendix.md`
 - [ ] `wiki/real-analysis/counterexamples-undergraduate.md`
 - [ ] `wiki/real-analysis/counterexamples.md`
