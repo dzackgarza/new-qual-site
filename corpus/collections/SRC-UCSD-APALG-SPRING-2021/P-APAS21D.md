@@ -28,3 +28,76 @@ Find the complementary projection.
 (ii) Find the unique orthogonal projector $A$ that projects vectors onto $Y$.
 Find the complementary projection associated with $A$.
 :::
+
+::: solution
+(a) Since $\operatorname{rank}C=m$, the $m\times m$ matrix $CC^H$ is positive definite and hence invertible.
+Set
+\[
+P=C^H(CC^H)^{-1}C.
+\]
+Then
+\[
+P^H=P
+\]
+and
+\[
+P^2=C^H(CC^H)^{-1}CC^H(CC^H)^{-1}C=P,
+\]
+so $P$ is an orthogonal projector.
+Its range is contained in $\operatorname{range}(C^H)$, while for every $C^Hu$,
+\[
+P(C^Hu)=C^H(CC^H)^{-1}CC^Hu=C^Hu.
+\]
+Therefore
+\[
+\operatorname{range}P=\operatorname{range}(C^H).
+\]
+Thus the orthogonal projection onto $\operatorname{range}(C^H)$ is
+\[
+\boxed{P=C^H(CC^H)^{-1}C}.
+\]
+
+Because
+\[
+\ker C=(\operatorname{range}C^H)^\perp,
+\]
+the complementary orthogonal projector is
+\[
+\boxed{Q=I-C^H(CC^H)^{-1}C}.
+\]
+Indeed $Q^H=Q$, $Q^2=Q$, and $CQ=0$, so $\operatorname{range}Q\subseteq\ker C$; conversely, if $Cx=0$, then $Qx=x$.
+
+(b)(i) Choose any $z\in\mathbb C^n$ satisfying
+\[
+z^Hy=1.
+\]
+Then
+\[
+A=yz^H
+\]
+satisfies
+\[
+A^2=yz^Hyz^H=y(z^Hy)z^H=yz^H=A,
+\]
+and $\operatorname{range}A=\mathbb Cy=Y$.
+Thus $A$ is a projection onto $Y$, generally oblique.
+Its complementary projection is
+\[
+\boxed{I-A=I-yz^H}.
+\]
+
+(ii) The orthogonal projector onto $Y$ is obtained by taking
+\[
+z=\frac{y}{y^Hy}.
+\]
+Hence
+\[
+\boxed{A=\frac{yy^H}{y^Hy}}.
+\]
+This matrix is Hermitian and idempotent, so it is the orthogonal projector onto $Y$.
+The complementary orthogonal projector is
+\[
+\boxed{I-\frac{yy^H}{y^Hy}},
+\]
+which projects onto $Y^\perp$.
+:::
