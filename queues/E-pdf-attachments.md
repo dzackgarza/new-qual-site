@@ -755,7 +755,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
-- [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
+- [x] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH4-REVIEW`.
+  The retained Chapter 4 review source contains 16 numbered differential-equation questions, all represented in source order by `P-GRECH4-01` through `P-GRECH4-16`; the inventory count of five was incomplete.
+  Earlier OCR repair and answer checks are recorded in `queues/E-corrections.md`, including restored numbering and three mathematically forced scan repairs.
+  Surviving source gaps remain documented: Question 2 has an unrecoverable stem span, Question 4's five slope-field figures are absent from the extraction, and several distractor glyphs in Questions 3, 8, 9, 10, 12, and 14 remain uncertain.
+  The collection now records this intake reconciliation explicitly; no duplicate problem cards were created.
 
 - [x] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH5-REVIEW`.
   The retained Chapter 5 review source contains 20 numbered linear-algebra questions, all represented in source order by `P-GRECH5-01` through `P-GRECH5-20`; the inventory count of five was incomplete.
