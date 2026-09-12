@@ -36,8 +36,8 @@ The codimension of $V(\mfp)$ is the height of $\mfp$.
 
 ::: {.remark}
 Dimension is topological, so it cannot see nilpotents: $\dim X = \dim X^\red$, and $\Spec k[\eps]/\eps^2$ has dimension $0$ despite a two-dimensional ring of functions.
-That is the standard trap, and the honest correction is that length, not dimension, measures the extra structure.
+The local Artinian ring $k[\eps]/(\eps^2)$ has length $2$; its reduction $k$ has length $1$.
 
-Dimension is not local in the naive sense, and it is not additive: $\dim \Spec \ZZ = 1$, $\dim \ZZ[x] = 2$, and $\dim A[x] = \dim A + 1$ holds for Noetherian $A$ but fails in general.
-For an integral scheme of finite type over a field, $\dim X = \trdeg_k k(X)$, and codimension and dimension add up — $\codim_X Z + \dim Z = \dim X$ — which is the case that matches intuition and the case where that identity is safe to use.
+For example, $\dim \Spec \ZZ = 1$ and $\dim \ZZ[x] = 2$. The equality $\dim A[x] = \dim A + 1$ holds for Noetherian $A$ but fails in general.
+For an integral scheme $X$ of finite type over a field, $\dim X = \trdeg_k k(X)$, and $\codim_X Z + \dim Z = \dim X$ for every irreducible closed subset $Z$.
 :::
