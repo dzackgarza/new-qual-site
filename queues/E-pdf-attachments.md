@@ -402,7 +402,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010
 
-- [ ] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 11 problems) — Berkeley — complex-analysis
+- [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 11 problems) — Berkeley — complex-analysis — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; direct source inspection finds all 18 problems `1A`–`9B`, represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The inventory count of eleven reflects lost extraction headings, not missing source problems.
 
 - [ ] [Sp14_Exam.pdf](assets/attachments/extracted/Sp14_Exam.md) (255L, 8 problems) — Berkeley — applied-algebra
 
@@ -598,7 +598,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017
 
-- [ ] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra
+- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection.
 
 - [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet. Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
 
