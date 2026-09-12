@@ -17,5 +17,6 @@ Show that $f$ has an analytic continuation to
 \[
 \{s\in\mathbb C:\operatorname{Re}s>0,\ s\ne1\}
 \]
-with a simple pole at $s=1$. Compute the residue at $s=1$.
+with a simple pole at $s=1$.
+Compute the residue at $s=1$.
 :::

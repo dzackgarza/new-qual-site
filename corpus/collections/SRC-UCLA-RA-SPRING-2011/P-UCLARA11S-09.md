@@ -17,5 +17,6 @@ Regarding $[0,1]$ as a subset of $\mathbb C$, suppose
 \[
 f:\mathbb C\setminus E\to\mathbb C
 \]
-is holomorphic and uniformly bounded. Show that $f$ is constant.
+is holomorphic and uniformly bounded.
+Show that $f$ is constant.
 :::

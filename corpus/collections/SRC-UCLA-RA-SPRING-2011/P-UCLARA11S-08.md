@@ -16,9 +16,11 @@ review: draft
 (c) Prove or refute, with a counterexample, each statement:
 
 - The pointwise supremum of a bounded family of subharmonic functions is subharmonic.
+
 - The pointwise infimum of a family of subharmonic functions is subharmonic.
 
-(d) Let $A(z)$ be a $2\times2$ matrix-valued holomorphic function, meaning that its entries are holomorphic. Show that
+(d) Let $A(z)$ be a $2\times2$ matrix-valued holomorphic function, meaning that its entries are holomorphic.
+Show that
 \[
 z\longmapsto \log\|A(z)\|
 \]
