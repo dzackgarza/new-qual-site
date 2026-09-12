@@ -606,7 +606,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders**
 
-- [ ] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders**
+- [x] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: Christian Parkinson’s 2020 Week 5 Abstract Algebra & Complex Analysis GRE-prep packet, ingested as `SRC-PRELIM-PRACTICE-WEEK5-2020` with all 35 numbered prompts in source order as `P-PRACT20-W5-01` through `P-PRACT20-W5-35`. The inventory count of four was a false negative. The PDF remains provenance for its worked solutions; they were not copied into local `.solution` sections because the packet contains demonstrably incorrect supplied answers (for example Problem 4 calls $x\mapsto -x$ a homomorphism $U_4\to U_4$, and Problem 28 drops the minus sign in the contour integral).
 
 ## Solution writeups (33)
 
