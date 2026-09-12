@@ -370,6 +370,21 @@ to use the book adds opinion and instructions while omitting bibliographic
 information. Replace each evaluative claim with a comparison that a reader can
 check, or delete it.
 
+### `RESOURCE-04`: Do not judge the reader’s competence or education
+
+**Bad:** “A rigorous book for readers who failed to learn the subject
+correctly.”
+
+**Good:** “`[Shaf13]` presents a systematic treatment of the subject with
+proofs.”
+
+Resource prose must describe the work, not classify readers as deficient,
+unprepared, forgetful, or properly educated. Claims such as “real proofs” also
+disparage other sources without identifying a mathematical difference. This
+language turns a bibliography into a judgment about the reader and makes a
+recommendation depend on an invented personal history. State the coverage,
+level, proof style, and relation to another source when those facts are known.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
