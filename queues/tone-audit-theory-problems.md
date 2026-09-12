@@ -736,7 +736,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-V3DIZ.md` | `f9d354213e25c9d462740285a6d1ccb1c0215e88` | `f9d354213e25c9d462740285a6d1ccb1c0215e88` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-V45EL.md` | `83410c413e2c1bfb4438af88b498a6b6ff9ae226` | `83410c413e2c1bfb4438af88b498a6b6ff9ae226` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-V4DTK.md` | `84143a7874d865748950049ad3ab845aad0043df` | `84143a7874d865748950049ad3ab845aad0043df` | Read; retained |
-| [ ] | `corpus/problems/Algebra/P-V7BGS.md` | `1d217f419f8300a608bc561bf6d08e898afc991c` | — | Pending |
+| [x] | `corpus/problems/Algebra/P-V7BGS.md` | `1d217f419f8300a608bc561bf6d08e898afc991c` | `1d217f419f8300a608bc561bf6d08e898afc991c` | Read; retained |
 | [ ] | `corpus/problems/Algebra/P-VAK32.md` | `ba8c6cb85d9b024d66ae601c6f2024400f4c0e67` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-VBLYF.md` | `d43880678ef4b0d18a90daba07b42a0bb5f1b9f3` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-VDX32.md` | `0cade10e7be385c3a0cb801e3af800e3bd6f39ce` | — | Pending |
@@ -2174,7 +2174,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebraic_Geometry/D-SCHRED.md` | `2b2cebf9a444d31d98fed9ed9dc8f6fd6e6aa57d` | `2b2cebf9a444d31d98fed9ed9dc8f6fd6e6aa57d` | Full file read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-SCHSUB.md` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | `cfe0c3425a901347203de0c9a12f745343d03dcb` | Full file read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFINT.md` | `52652940c0fe8032b4428e481b5edac1bbe12666` | `eeeb8b210580e9f6e25f190cda20f7dc8c35f47b` | Full file read; removed importance rating, kept normal-bundle payload (PROSE-01) |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-SRFNS.md` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-SRFNS.md` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | `74649d4bdc6c9be94393ccc5ffc552214384f58d` | Read; retained |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-T2J3Q.md` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-TORMOMENT.md` | `dae6b0a7cfc74d631022e12957ffcc234f4a7838` | — | Pending |
