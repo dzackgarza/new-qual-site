@@ -37,8 +37,7 @@ This shows $V(I(S)) \subseteq \overline S$.
 
 Hence, $\overline S = X \iff V(I(S)) = X \iff I(S) = I(X) = (0)$.
 
-**(b)** There are several proofs.
-All should note somewhere that $F[X\times Y] = F[X]\otimes F[Y]$ by definition of product.
+**(b)** The coordinate ring of the product is $F[X\times Y] = F[X]\otimes F[Y]$.
 
 Say $\theta \in F[X\times Y]$ is zero on $S\times T$.
 RTP $\theta=0$.

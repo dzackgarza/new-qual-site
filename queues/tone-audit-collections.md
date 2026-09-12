@@ -111,7 +111,7 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ALG-ART-QHGA3N/index.md
 - [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B2P3P.md
 - [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-B6E7Q.md
-- [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-DLFQC.md
+- [x] corpus/collections/SRC-ALG-ART-SEPT2019/P-DLFQC.md — Changed: state the product-ring identity instead of prescribing what every proof should mention (STANCE-11).
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-EHBDD.md
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-J2D5B.md
 - [ ] corpus/collections/SRC-ALG-ART-SEPT2019/P-PBVSZ.md
