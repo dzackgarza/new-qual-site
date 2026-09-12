@@ -30,5 +30,4 @@ review: draft
 
 - ${\left\lvert {f'(0)} \right\rvert} = 1$ or $f(z) = z$ for some $z\neq 0$ implies ${\left\lvert {c} \right\rvert} = 1$.
 
-- The actual source:
 :::
