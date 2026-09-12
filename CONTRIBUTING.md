@@ -760,6 +760,64 @@ Claims about every definition or construction require coverage of that whole
 class; use a specific example when that is the evidence available. Do not
 inflate an observed expository feature into a universal promise about the book.
 
+### `RESOURCE-32`: Write as a contributor among peers
+
+**Bad:** “We explain which authors deserve trust and how capable students study.”
+
+**Good:** “The references below cover [topics], with links to [sections].”
+
+Authorship of a study guide grants no authority over scholars' competence,
+readers' learning, or faculty members' judgement. Mathematical expertise does
+not supply knowledge of their individual circumstances or a mandate to rank
+them. This boundary applies at every career stage. Write as a participant
+contributing mathematics and references to a community. Describe sources and
+mathematical relations without appointing the writer an evaluator of the
+people who produce or use them.
+
+### `RESOURCE-33`: Correct the assumed hierarchy, not just the adjective
+
+**Bad:** “Only well-prepared readers will recognize the superior treatment.”
+
+**Good:** “The treatment uses [method] to establish [result].”
+
+Disrespect can result from the writer's assumed position without deliberate
+hostility. Certifying authors, diagnosing students, directing readers, and
+speaking for examiners all place the writer above the people described.
+Polite wording, softer adjectives, or additional evidence leave that hierarchy
+intact. Revise the function of the sentence: communicate mathematical content,
+source coverage, or navigation. Assess the relationship the prose establishes
+with readers and scholars, rather than guessing the writer's intentions.
+
+### `RESOURCE-34`: Do not advertise proofs as certificates of author competence
+
+**Bad:** “Unlike other accounts, this text supplies fully adequate proofs.”
+
+**Good:** “The proof of [result] includes the calculation of [quantity].”
+
+Presenting completeness or correctness as a resource's distinction makes an
+ordinary mathematical obligation into an endorsement. It implicitly questions
+whether other authors meet that obligation and appoints the annotator to
+certify their work. The defect is this evaluative role, not merely missing
+evidence or an inaccurate adjective. Describe the proof's method or the amount
+of explanation where useful. Keep necessary corrections at the level of the
+particular mathematical statement, as in `RESOURCE-19`.
+
+### `RESOURCE-35`: Use expository modifiers with professional restraint
+
+**Bad:** “The only satisfactory account of the argument.”
+
+**Good:** “The text gives a detailed calculation of [quantity].”
+
+Modifiers such as “short”, “long”, “detailed”, and “terse” can describe the
+presentation without passing judgement on an author's mathematical competence.
+This vocabulary permits useful distinctions while maintaining professional
+respect. Choose the modifier for a specific, observed feature; it is not a
+stock compliment or a ranking. A terse proof can establish its conclusion,
+and additional detail does not by itself establish correctness. Do not replace
+a description of exposition with a verdict on adequacy, honesty, or scholarly
+standing. Omit the modifier when the named content already supplies the useful
+information.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
