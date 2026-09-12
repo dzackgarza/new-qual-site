@@ -1681,11 +1681,11 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2010-pp-28-29/P-JHUMAY10ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2010-pp-28-29/P-JHUMAY10ANI.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2010-pp-28-29/P-JHUMAY10ANJ.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANE.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANF.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANG.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANH.md
@@ -4434,13 +4434,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-8GBZO.md
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-AH7RC.md
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-AWEWJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-DMMQW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-DPKX4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-JCJOW.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-NBS6F.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-PKY0P.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-R3NOE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-UAMGV.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-DMMQW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-DPKX4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-JCJOW.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-NBS6F.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-PKY0P.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-R3NOE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-UAMGV.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-1.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-2.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-3.md
