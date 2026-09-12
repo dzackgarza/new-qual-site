@@ -38,7 +38,7 @@ Huge bank of undergrad/grad questions:
 
 - [Ma, A Note for the Real Analysis Qualifying Exam in TAMU](attachments/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf)
 
-- [Notes on convergent sequences and subsequences](attachments/Chapter3-notes1.pdf)
+- [Notes on convergent sequences and subsequences](attachments/Chapter3-notes1.pdf) — 2015 metric-space reference notes on convergence, subsequences, and the closedness of the set of subsequential limits.
 
 - [Fourier-analysis homework 8 with solutions](attachments/math6338_hw8.pdf)
 

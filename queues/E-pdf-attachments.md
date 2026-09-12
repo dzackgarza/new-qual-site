@@ -475,15 +475,17 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Problem sets (14)
 
-- [ ] [basic-06S.pdf](assets/attachments/extracted/basic-06S.md) (71L, 0 problems) — no metadata
+- [x] [basic-06S.pdf](assets/attachments/extracted/basic-06S.md) (71L, 0 problems) — no metadata — disposition 2026-09-12: UCLA Basic Examination Spring 2006, already ingested completely as `SRC-UCLA-BASIC-SPRING-2006`; all ten source problems are represented in order by `P-UCLAB06S-01` through `P-UCLAB06S-10`.
 
-- [ ] [basic-16F.pdf](assets/attachments/extracted/basic-16F.md) (100L, 0 problems) — no metadata
+- [x] [basic-16F.pdf](assets/attachments/extracted/basic-16F.md) (100L, 0 problems) — no metadata — disposition 2026-09-12: UCLA Basic Examination Fall 2016, already ingested completely as `SRC-UCLA-BASIC-FALL-2016`; all twelve source problems are represented in order by `P-UCLAB16F-01` through `P-UCLAB16F-12`.
 
-- [ ] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata
+- [x] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata — disposition 2026-09-12: reference-only 2015 notes on convergent sequences, subsequences, and subsequential limits in metric spaces. Repository intake notes classify this as reference notes rather than a collection candidate; the existing real-analysis resource link has been annotated and no problem cards manufactured.
 
-- [x] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology — disposition 2026-09-12: reference-only Joshua Ruiter *Theorems: Real Analysis* notes (March 2018). The inventory problem count is a false positive from numbered theorem statements; repository intake notes classify this as reference notes, not a collection candidate. Added to `vocabularies/references.bib` as `Ruiter18AnalysisTheorems` and to the real-analysis books/notes resource page; no problem cards manufactured.
+- [x] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology — disposition 2026-09-12: reference-only Joshua Ruiter *Theorems: Real Analysis* notes (March 2018). The inventory problem count is a false positive from numbered theorem statements; repository intake notes classify this as reference notes, not a collection candidate.
+  Added to `vocabularies/references.bib` as `Ruiter18AnalysisTheorems` and to the real-analysis books/notes resource page; no problem cards manufactured.
 
-- [x] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: already reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, whose provenance includes both `F15_Exam.pdf` and this solution packet. The paired exam confirms the complete 18-problem sequence 1A–9A and 1B–9B, exactly matching the collection cards.
+- [x] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: already reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, whose provenance includes both `F15_Exam.pdf` and this solution packet.
+  The paired exam confirms the complete 18-problem sequence 1A–9A and 1B–9B, exactly matching the collection cards.
 
 - [x] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: exact byte duplicate of `Folland_Clipped_Questions.pdf` (SHA-256 `e775d4915cbacc566da3d2731cc938692f9f57a45a2dc262cb8a5041ba95ec10`). The resource page already links the underscore-named copy, so no second collection or resource entry is warranted.
 
