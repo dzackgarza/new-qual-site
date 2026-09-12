@@ -152,5 +152,5 @@ Homeomorphisms: ignore ligatures!!
 :::
 
 ::: {.solution}
-This card is an answer/reference list classifying drawn letters by homotopy type; it does not contain the alphabet glyphs or a posed question. The classifications depend on the chosen font/drawing (for example whether a lowercase letter has one or two components), so there is no font-independent theorem represented by the fragment. The missing drawings are essential source data.
+The classifications depend on the chosen font or drawing; for example, a lowercase letter can have one or two components.
 :::
