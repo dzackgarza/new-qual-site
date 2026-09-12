@@ -15,7 +15,7 @@ review: draft
 ---
 
 :::{.proposition}
-A trick for finding characteristic polynomials:^[Useful computational trick.]
+The characteristic polynomial is given by traces of exterior powers:
 \[
 \chi_A(t) &= \sum_{k=0}^n (-1)^k \trace\qty{\Extpower^k A} t^{n-k} \\
 &= t^n - \trace\qty{A} t^{n-1} + \trace\qty{\Extpower^2 A}t^{n-2} - \cdots \pm \trace\qty{\Extpower^{n-1} A} t \mp \det(A)
@@ -28,7 +28,7 @@ using that
 \trace\qty{\Extpower^n A} = \det(A)
 .\]
 
-Moreover, the intermediate traces are easy to compute by hand:
+The intermediate traces are sums of principal minors:
 \[
 \trace\qty{\Extpower^\ell A} = \sum \det\qty{M^{\ell}}
 ,\]
