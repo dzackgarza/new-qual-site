@@ -4379,14 +4379,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-7.md
 - [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-8.md
 - [x] corpus/collections/SRC-TEXT-MUN00/10/E-MUN-10-9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-1QFIO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-ALTNF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-C7KV4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-KTHV8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-NKQY9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-QR3SP.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-V7QV9.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/13/E-Y5YAL.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-1QFIO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-ALTNF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-C7KV4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-KTHV8.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-NKQY9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-QR3SP.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-V7QV9.md
+- [x] corpus/collections/SRC-TEXT-MUN00/13/E-Y5YAL.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/16/E-AZ6JL.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/16/E-CH8HI.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/16/E-GD2KF.md
