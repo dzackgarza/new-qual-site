@@ -36,7 +36,7 @@ audit:
 \forall U \in \mathcal{T} \setminus \{\emptyset\}, \qquad U \cap D \neq \emptyset.
 \]
 
-<1>3. Essential properties and examples:
+<1>3. Properties and examples:
 <2>1. Every second-countable space is separable (choosing one point from each element of a countable basis).
 <2>2. For metric spaces, separability is equivalent to being second-countable and equivalent to being Lindelöf.
 <2>3. The Euclidean space $\mathbb{R}^n$ with the standard topology is separable, with countable dense subset $\mathbb{Q}^n$.
