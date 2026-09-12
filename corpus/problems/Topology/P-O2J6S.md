@@ -40,5 +40,5 @@ Relevant covers:
 :::
 
 ::: {.solution}
-This card is a list of subgroup generators paired with five missing covering diagrams, not a complete standalone question. The subgroup words are meaningful, but the requested correspondence with “Relevant covers” depends on the absent images. Any assignment of those subgroups to numbered covers without the diagrams would invent source data.
+The correspondence between the listed subgroups and the numbered covers depends on the covering diagrams and their edge labels.
 :::
