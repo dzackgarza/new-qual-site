@@ -1645,7 +1645,7 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA2.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA3.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2010-pp-26-27/P-JHUFA10RA4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-4KTFN.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-4KTFN.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-8XT01.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-I753O.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-fall-2012-pp-19-20/P-PGDJ2.md
@@ -1661,10 +1661,10 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANE.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANI.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANK.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANL.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANI.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANK.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2006-pp-40-41/P-JHUMAY06ANL.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANB.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2009-pp-32-33/P-JHUMAY09ANC.md
@@ -3767,16 +3767,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-PNK2.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-RTYK.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-3/E-HK-YECG.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-0YG3.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-4WCP.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-6WTC.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-A9AS.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-AUZQ.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-FJCP.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-OY2K.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-Q2T5.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-UBFI.md
-- [ ] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-VFKB.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-0YG3.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-4WCP.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-6WTC.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-A9AS.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-AUZQ.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-FJCP.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-OY2K.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-Q2T5.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-UBFI.md
+- [x] corpus/collections/SRC-TEXT-HK71/1-4/E-HK-VFKB.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-1.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-2.md
 - [ ] corpus/collections/SRC-TEXT-HK71/1-5/E-HK-15-3.md
@@ -4397,24 +4397,24 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/16/E-TLB44.md
 - [x] corpus/collections/SRC-TEXT-MUN00/16/E-U919Z.md
 - [x] corpus/collections/SRC-TEXT-MUN00/16/E-Y75ZB.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-0BN1L.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-11WM7.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-6A0RO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-7I6BT.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-9MCHZ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-BI0O0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-BRPKJ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-CFH1Q.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-E3JL6.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-G5BOG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-IIK8L.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-JUMC3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-K8RRE.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-M552Z.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-OK0GG.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-OLLMN.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-PBT3I.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/17/E-W5DZ6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-0BN1L.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-11WM7.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-6A0RO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-7I6BT.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-9MCHZ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-BI0O0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-BRPKJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-CFH1Q.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-E3JL6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-G5BOG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-IIK8L.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-JUMC3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-K8RRE.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-M552Z.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-OK0GG.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-OLLMN.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-PBT3I.md
+- [x] corpus/collections/SRC-TEXT-MUN00/17/E-W5DZ6.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-XT94O.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-Z93SH.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/17/E-ZB4N9.md
@@ -5024,32 +5024,32 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [ ] corpus/collections/SRC-TEXT-SMI/8000e-sylow/E-SMI-8000E-SY8.md
 - [ ] corpus/collections/SRC-TEXT-SMI/8000e-sylow/E-SMI-8000E-SY9.md
 - [ ] corpus/collections/SRC-TEXT-SMI/index.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-1.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-10.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-11.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-12.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-13.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-14.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-15.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-16.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-17.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-18.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-19.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-2.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-20.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-21.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-22.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-23.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-24.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-25.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-26.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-3.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-4.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-5.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-6.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-7.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-8.md
-- [ ] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-9.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-1.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-10.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-11.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-12.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-13.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-14.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-15.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-16.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-17.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-18.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-19.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-2.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-20.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-21.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-22.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-23.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-24.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-25.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-26.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-3.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-4.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-5.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-6.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-7.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-8.md
+- [x] corpus/collections/SRC-TEXT-SS03/ch1-exercises/E-SS1.EX-9.md
 - [ ] corpus/collections/SRC-TEXT-SS03/ch10-exercises/E-SS10.EX-1.md
 - [ ] corpus/collections/SRC-TEXT-SS03/ch10-exercises/E-SS10.EX-10.md
 - [ ] corpus/collections/SRC-TEXT-SS03/ch10-exercises/E-SS10.EX-11.md
