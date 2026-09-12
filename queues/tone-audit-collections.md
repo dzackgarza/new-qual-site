@@ -1720,14 +1720,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2009-pp-30-31/P-JHUFA09ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANB.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANC.md
@@ -4460,16 +4460,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/20/E-ZEESK.md
 - [x] corpus/collections/SRC-TEXT-MUN00/21/E-1841E.md
 - [x] corpus/collections/SRC-TEXT-MUN00/21/E-9V5EM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-AFAON.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-BTI7W.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-DE8TQ.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-KD56B.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-KNLQ0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-OW8A0.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-WWROF.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-XFXGM.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-YTG4V.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/21/E-ZPC0X.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-AFAON.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-BTI7W.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-DE8TQ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-KD56B.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-KNLQ0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-OW8A0.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-WWROF.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-XFXGM.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-YTG4V.md
+- [x] corpus/collections/SRC-TEXT-MUN00/21/E-ZPC0X.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/22/E-0S3OA.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/22/E-1KV5G.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/22/E-3SU0X.md
