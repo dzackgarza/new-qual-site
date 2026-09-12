@@ -744,7 +744,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
 
-- [ ] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra
+- [x] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra — disposition 2026-09-12: St Andrews MT5824 Topics in Groups Problem Sheet VII on nilpotent groups, ingested as `SRC-STANDREWS-MT5824-PSET7-2010`. The retained packet contains six numbered problems, not the inventory count of five; all six are represented in source order by `P-MT5824-7-01` through `P-MT5824-7-06`, with the packet solutions source-checked and reviewed.
 
 - [ ] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis
 
