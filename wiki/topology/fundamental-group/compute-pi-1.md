@@ -18,7 +18,7 @@ Four methods, and the space tells you which.
 ## 1. Is it contractible, or does it deformation retract?
 
 If $X$ deformation retracts onto $A$ then $\pi_1(X) \cong \pi_1(A)$, and this is the cheapest method by a wide margin.
-Look for it first, because most spaces on an exam are a familiar space with something contractible glued on or removed:
+Look for it first, because a familiar space with something contractible glued on or removed collapses to something you know:
 
 - $\RR^n \sm \ts{0}$ retracts onto $S^{n-1}$;
 - a punctured torus retracts onto a wedge of two circles;

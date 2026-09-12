@@ -129,9 +129,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/cw-complexes/index.md` — no stance revision
 - [x] `wiki/topology/degree/fixed-points-and-degree.md` — no stance revision
 - [x] `wiki/topology/degree/index.md` — no stance revision
-- [ ] `wiki/topology/fundamental-group/compute-pi-1.md`
-- [ ] `wiki/topology/fundamental-group/index.md`
-- [ ] `wiki/topology/fundamental-group/theorems.md`
+- [x] `wiki/topology/fundamental-group/compute-pi-1.md` — revised: dropped "most spaces on an exam are a familiar space..." exam-composition claim
+- [x] `wiki/topology/fundamental-group/index.md` — no stance revision
+- [x] `wiki/topology/fundamental-group/theorems.md` — no stance revision
 - [ ] `wiki/topology/homology/compute-h-star.md`
 - [ ] `wiki/topology/homology/exercises.md`
 - [ ] `wiki/topology/homology/homological-algebra.md`
