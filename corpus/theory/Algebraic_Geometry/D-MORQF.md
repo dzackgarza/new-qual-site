@@ -25,7 +25,6 @@ It is **quasi-finite** if it is in addition quasicompact, equivalently of finite
 :::
 
 ::: {.remark}
-Quasi-finite is what "finite fibres" actually buys, and the whole point is that it is weaker than finite.
-Finite is a condition on the ring map; quasi-finite is a condition on the fibres alone, and it cannot see whether the source is missing points.
-The hyperbola supplies the gap.
+Among finite-type morphisms, finite fibres characterise quasi-finiteness, which is weaker than finiteness.
+For example, the projection $V(xy-1)\to\AA^1_k$ onto the $x$-coordinate has finite fibres but is not finite: its image $D(x)$ is not closed.
 :::
