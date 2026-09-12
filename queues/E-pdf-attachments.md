@@ -759,7 +759,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders**
 
-- [ ] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra
+- [x] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH6-REVIEW`.
+  The retained Chapter 6 review source contains 20 numbered group/ring/number-theory questions, all represented in source order by `P-GRECH6-01` through `P-GRECH6-20`; the inventory count of nine was incomplete.
+  Earlier two-pass OCR repair is recorded in `queues/E-corrections.md`; it restored the legible stems/choices and verified the recoverable answers before the collection was created.
+  Questions 17, 18, and 20 retain documented scan gaps: garbled ring notation in 17, unrecoverable moduli in 18, and a lost stem in 20.
+  The existing collection already carries the vendored PDF as provenance, so no duplicate collection or problem cards were created.
 
 - [x] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-LINEAR-ALGEBRA-TEST2-REVIEW`. The preserved extraction contains eight numbered multiple-choice linear-algebra questions (10, 48, 15, 38, 35, 32, 52, 53), all already represented in source order by the collection; the inventory count of three was incomplete. The PDF has no usable text layer, so source checks are explicitly against the retained PDF extraction. All eight cards are source-checked and the collection is marked complete.
 
