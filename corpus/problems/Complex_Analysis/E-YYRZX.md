@@ -75,7 +75,5 @@ Computing this residue:
 &= \pi
 .\]
 
-> DZG: This is much easier than trying to find the Laurent expansion about $z=i\pi$ -- trust me!
-
 :::
 
