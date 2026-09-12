@@ -78,7 +78,7 @@ These two are not theorem text. They are figures preserved byte-identical.
 | 39 | `Pasted image 20221208013053.png` | `060 Toric` | Hirzebruch-Jung continued fractions | `FE-TORMINRES` | VERIFIED | Image read 2026-09-12: cone <2e1-e2, e2> cone over conic, D1,D2 not Cartier but 2D1,2D2 are. Matches FE-TORMINRES toric singularity Cartier example and HJ; no gap. |
 | 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group | `T-TORDIV` | VERIFIED | Image read 2026-09-12: fan for P2, anticanonical polytope P={m | <m,ui> >=-1}, Conv etc. Matches T-TORDIV class group exact sequence and wiki polytopes-and-divisors; no gap. |
 | 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group | `T-TORDIV` | VERIFIED | Image read 2026-09-12: Hirzebruch surface F_r wall relations u1-u2-u3+u4 etc., D1-D4 intersections. Matches T-TORDIV exact sequences and Pic rank; no gap. |
-| 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X | `FE-TORDUAL` | CANDIDATE |  |
+| 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X | `FE-TORDUAL` | VERIFIED | Image read 2026-09-12: Hirzebruch F_r anticanonical, b_i and self-intersections D_i. Matches FE-TORDUAL dual cone and T-TORDIV K=-sum D_rho; no gap. |
 
 ## Phase 2 extra — Vault figures preserved byte-identical (27 files)
 
