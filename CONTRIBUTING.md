@@ -314,8 +314,8 @@ publication, where sequence is the artifact's purpose.
 
 **Bad:** “The one book the exam is drawn from.”
 
-**Good:** “Recommended books” for a curated reading list, or “Source documents”
-for documents verified against the collection.
+**Good:** “Books cited in this section” for bibliographic relations, or “Source
+documents” for documents verified against the collection.
 
 A singular source claim says that one book explains the exam's questions. That
 claim requires evidence for every question and excludes other books, notes,
@@ -323,7 +323,24 @@ problem sheets, and examiner choices. A prominent heading gives the claim more
 authority than an ordinary sentence, so an unsupported heading can misstate
 provenance before the reader examines any source. Keep study recommendations,
 exam provenance, and authored synthesis under separate headings, and name the
-documents that support each claim.
+documents that support each claim. Use a recommendation only in an explicitly
+authored study guide with stated selection criteria.
+
+### `RESOURCE-01`: Do not turn a resource inventory into study advice
+
+**Bad:** “Recommended reading” or “Start here if you are revising under time
+pressure.”
+
+**Good:** “Books”, “Exam papers”, “Problem sets”, and “Notes”, with a factual
+description of what each resource contains.
+
+A resources page exists to expose materials and their relations. Its audience
+already knows that qualifying-exam preparation requires study and can choose
+what to read. Advice about priority, urgency, or reading order invents the
+reader's motive, gives the author an unsupported authority, and changes an
+inventory into a course plan. Record availability, scope, citation, and access;
+put a deliberate sequence or recommendation in an authored study guide with
+explicit criteria.
 
 ## Precision policies
 
