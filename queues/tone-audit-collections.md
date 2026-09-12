@@ -4431,9 +4431,9 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/18/E-PLSGP.md
 - [x] corpus/collections/SRC-TEXT-MUN00/18/E-Q7W4S.md
 - [x] corpus/collections/SRC-TEXT-MUN00/18/E-ZHWI8.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-8GBZO.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-AH7RC.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/19/E-AWEWJ.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-8GBZO.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-AH7RC.md
+- [x] corpus/collections/SRC-TEXT-MUN00/19/E-AWEWJ.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-DMMQW.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-DPKX4.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/19/E-JCJOW.md
