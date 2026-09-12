@@ -64,7 +64,7 @@ Note that
 \tau^{\Box}(X) \geq \tau^{\prod}(X)
 ,\]
 i.e. the box topology is **finer** and has more open sets, making convergence harder in the box topology.
-The product topology is preferred since continuous maps $f: Y\to \prod X_i$ *into* the product can be given by continuous component maps $f_i: Y\to X_i$.
+A map $f: Y\to \prod X_i$ into the product topology is continuous if and only if each component map $f_i: Y\to X_i$ is continuous.
 :::
 
 :::
