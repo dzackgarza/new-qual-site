@@ -183,16 +183,16 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-1.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-2.md
 - [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-3.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-4.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-5.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-6.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-1.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-10.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-11.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-12.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-2.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-3.md
-- [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-4.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-4.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-5.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-preliminary-examination-summer-2005-pp-27-28/P-ARTALG-SU05-6.md — Changed: remove a drafting instruction (STANCE-10). Mathematical issue retained: minimal polynomial is the least common multiple, not the product, of elementary divisors.
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-1.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-10.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-11.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-12.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-2.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-3.md
+- [x] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-4.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-5.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-6.md
 - [ ] corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-of-july-12-2006-pp-23-26/P-ARTALG-JU06-7.md

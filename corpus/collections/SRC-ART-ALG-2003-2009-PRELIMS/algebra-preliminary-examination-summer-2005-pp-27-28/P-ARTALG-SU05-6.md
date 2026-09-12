@@ -22,9 +22,6 @@ For each, determine its elementary divisors, minimal polynomial and characterist
 
 ::: {.solution}
 <1>1. We need three $3 \times 3$ matrices over $\QQ$ with $-2$ as the only rational eigenvalue, pairwise non-similar.
-::: {.proof}
-restate the goal.
-:::
 
 <1>2. Take
 $$A_1 = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
