@@ -18,5 +18,5 @@ Does the converse hold?
 :::
 
 ::: {.solution}
-The statement is incomplete as a standalone problem: “the converse” has no antecedent in this card. Git history confirms that this card was extracted from surrounding point-set-topology prose. Without the missing preceding assertion there is no mathematically determined converse to prove or refute.
+The preceding assertion is needed to determine which converse is being asked about.
 :::

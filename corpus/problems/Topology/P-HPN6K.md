@@ -31,10 +31,7 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. The first five displayed subsets have no governing instruction in the original migrated source, so that portion of the card is incomplete.
-::: {.proof}
-The initial migrated version consists of the five bare subsets followed immediately by two independent questions; no request such as “find the closures” or “decide compactness” precedes the list.
-:::
+<1>1. No operation or property to determine is specified for the first five displayed subsets.
 
 <1>2. For every $n\ge2$, $\mathbb R^n$ is not homeomorphic to $\mathbb R$.
 ::: {.proof}

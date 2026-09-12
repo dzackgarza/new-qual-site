@@ -18,5 +18,5 @@ review: draft
 :::
 
 ::: {.solution}
-This card is an image-dependent answer fragment rather than a complete posed problem: it says that a displayed cover is the Cayley graph of $\mathbb Z^2$, but the referenced image is not part of the card statement and there is no question to answer. Without the missing covering diagram/base graph, no unique covering-space computation is determined.
+The displayed graph is identified as the Cayley graph of $\mathbb Z^2$. A covering-space computation also requires the base graph and covering map.
 :::
