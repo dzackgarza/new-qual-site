@@ -34,6 +34,26 @@ Paths below are relative to the repository root.
 | `assets/algebraic-geometry/toric/divisor-class-picard-exact-sequences.png` | The two compatible exact sequences `0 -> M -> Div_T X -> Pic(X) -> 0` and `0 -> M -> ⊕ Z·D_i -> A_{n-1}(X) -> 0` | toric | `Pasted image 20221208004842.png` | `0_Study Guides/060 Toric Varieties.md` |
 | `assets/algebraic-geometry/toric/minimal-resolution-by-convex-hull-of-cone.png` | A singular cone with the lattice points of the convex hull of `σ ∩ N` marked as the rays of the minimal resolution | toric | `Pasted image 20221208012620.png` | `0_Study Guides/060 Toric Varieties.md` |
 
+## Reference Documents and Solution Manuals
+
+Preserved in `assets/algebraic-geometry/resources/`:
+
+| Path | Description | Original vault filename | Referencing vault note |
+| --- | --- | --- | --- |
+| `assets/algebraic-geometry/resources/Andrew Egbert.pdf` | Andrew Egbert, Hartshorne complete solutions (Chapters 1–5, 2013) | `Andrew Egbert.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Bryden R Cais.pdf` | Bryden R. Cais, Hartshorne solutions (Chapters 2–4, 2004) | `Bryden R Cais.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Chris Lomont.pdf` | Chris Lomont, Hartshorne solutions (Chapters 2–4, 1999) | `Chris Lomont.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/ismail saglam and Chris.pdf` | Ismail Saglam and Chris, Hartshorne solutions (Chapters 2–3, 2008–2009) | `ismail saglam and Chris.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Jinhyun Park.pdf` | Jinhyun Park, Hartshorne solutions (Chapters 1–5) | `Jinhyun Park.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Joe Cutrone and Nick Marshburn.pdf` | Joe Cutrone and Nick Marshburn, Hartshorne solutions (Chapters 1–4) | `Joe Cutrone and Nick Marshburn.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Richard Borcherds.pdf` | Richard Borcherds, Berkeley Math 256A Hartshorne solutions (Chapters 1 & 4, 1994) | `Richard Borcherds.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Steven V Sam.pdf` | Steven V. Sam, Hartshorne solutions (Chapters 1–4, 2008) | `Steven V Sam.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/W Stein.pdf` | William Stein, Hartshorne solutions (Chapters 2–3) | `W Stein.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+| `assets/algebraic-geometry/resources/Kawamata Intro MMP.pdf` | Yujiro Kawamata, Introduction to the minimal model problem | `Kawamata Intro MMP.pdf` | `0_Study Guides/001 Resources References (AG).md` |
+| `assets/algebraic-geometry/resources/Algebraic Geometry All Tripos.pdf` | Cambridge Tripos Part III Algebraic Geometry Collection | `Algebraic Geometry All Tripos.pdf` | `0_Study Guides/001 Resources References (AG).md` |
+| `assets/algebraic-geometry/resources/iag.pdf` | University of Washington Spring 2016 Algebraic Geometry course notes | `iag.pdf` | `0_Study Guides/001 Resources References (AG).md` |
+| `assets/algebraic-geometry/resources/2013SP_algebra.pdf` | Spring 2013 Algebra Qualifying Examination | `2013SP_algebra.pdf` | `0_Study Guides/002 Resources Problems and Solutions.md` |
+
 ## Not copied
 
 - **Screenshots of typeset notes and textbook pages** (AGENTS.md, *Screenshots of notes*): the whole `2022-01-09_*` batch (16 crops of theorem statements on Zariski's main theorem, Noether normalisation, Stein factorisation, Hironaka, Castelnuovo, Riemann-Roch, adjunction, Castelnuovo-Enriques), plus `Pasted image 20220315152915.png`, `20220315153140`, `20220315153154`, `20220921202350`, `20220921204101`, `20220921204126`, `20220921204305`, `20220921204448`, `20220921204544`, `20221123200223`, `20221123205220`, `20221123232902`, `20221124003320`, `20221128124229`, `20221129104521`, `20221204223854`, `20221207141027`, `20221207150823`, `20221208004152`, `20221208013026`, `20221208013053`, `20221208015307`, `20221208015606`, `20221208020507`. These are text, not figures; the statements belong on cards.

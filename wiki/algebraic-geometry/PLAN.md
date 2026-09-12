@@ -69,7 +69,10 @@ This is the highest-value material in the vault and the only part of it that can
 
 **Study guides (15 files).** These map onto topic `index.md` pages, which is close to what they already are.
 
-**Not carried over:** the exam-logistics files, `progress.md`, `Tasks.md`, `IW-Queues`, `900_Changelog.md`. They are the record of one person's revision schedule in 2022.
+**Approved do-not-migrate files:**
+- **Exam logistics and personal tracking:** `000 AG Oral Exam Plan.md`, `Tasks.md`, `progress.md`, `progress.bak`, `progress_update.sh`, `900_Changelog.md`, `IW-Queues/queue.md`, `index.md`, `index.yaml`, `templates/`, and `.obsidian/`.
+- **Title-only reading note stubs (31 files):** `Reading Notes/1_Hartshorne/` (`1_3.md` through `1_7.md`), `Reading Notes/2_Hartshorne/` (`2_2.md` through `2_9.md`), `Reading Notes/3_Hartshorne/` (`301.md` through `312.md`), and `Reading Notes/5_Hartshorne/` (`5_1.md` through `5_6.md`). The mathematical exercises for these sections were ported via `Hartshorne_Problems/` into `SRC-TEXT-HART77`.
+- **Navigation and obsolete stubs:** `0_Study Guides/0000 AG (Subject MOC).md` (replaced by `wiki/algebraic-geometry/index.md`), `0_Study Guides/0000 Syllabus.md`, `attachments/Pasted image 20220314125429.png.md`, and `preamble.sty` (superseded by `vocabularies/macros.json`).
 
 **Figures and attachments.** Most are worth keeping — the pictures of blowups, fans, and curve degenerations are the parts hardest to rewrite.
 They move into `assets/` under the topic that uses them, and a figure is kept only if a card references it.
