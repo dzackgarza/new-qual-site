@@ -1697,13 +1697,13 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA6.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA7.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA8.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANH.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANB.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2006-pp-38-39/P-JHUFA06ANC.md
@@ -3811,24 +3811,24 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-7.md
 - [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-8.md
 - [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-9.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-1.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-10.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-11.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-12.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-13.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-14.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-15.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-16.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-17.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-18.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-2.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-3.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-4.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-5.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-6.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-7.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-8.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-9.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-1.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-10.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-11.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-12.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-13.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-14.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-15.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-16.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-17.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-18.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-2.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-3.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-4.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-5.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-6.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-7.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-8.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-9.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-1.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-10.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-11.md
