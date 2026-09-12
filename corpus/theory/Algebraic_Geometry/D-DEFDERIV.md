@@ -44,6 +44,5 @@ For contravariant $F$ one modifies these, or regards $F$ as a covariant functor 
 $R^0F \cong F$ by left exactness, and $R^iF = 0$ for all $i>0$ exactly when $F$ is exact, so the derived functors measure the failure of exactness.
 Independence of the resolution is the homotopy statement: any two injective resolutions are homotopy equivalent, and homotopic maps agree on cohomology.
 
-One never computes with injectives.
 The working fact is that any $F$-acyclic resolution computes $R^iF$, which is why flasque resolutions compute sheaf cohomology and free resolutions compute $\Tor$.
 :::
