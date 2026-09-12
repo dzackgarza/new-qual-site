@@ -13,6 +13,8 @@ title: Solution Compendia
 
 [[attachments/Algebra_Solutions.pdf|Kleshchev algebra student solution manual, Chapters 1–5]]
 
+[[attachments/Ch6Sltns.pdf|Gallian Contemporary Abstract Algebra, Chapter 6 selected solution outlines]]
+
 [[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]]
 
 [[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]]

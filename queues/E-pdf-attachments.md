@@ -532,7 +532,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016`, which contains 39 source-order examples-sheet problems; the inventory count of 33 was incomplete.
 
-- [ ] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra
+- [x] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra — disposition 2026-09-12: reference-only Chapter 6 solution outlines for Gallian’s *Contemporary Abstract Algebra*, covering selected isomorphism and automorphism exercises. Retained as worked-reference enrichment on the group-theory resource page and now indexed in `wiki/archives/solution-compendia.md`; no collection or duplicate problem cards manufactured.
 
 - [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary.
   Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
@@ -643,7 +643,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Algebra_Final_Solns.pdf](assets/attachments/extracted/Algebra_Final_Solns.md) (116L, 14 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-MATH504-FINAL-AUTUMN-2003`, which retains this solution packet as provenance for the seven source-order final-exam problems.
 
-- [ ] [basic-12F.pdf](assets/attachments/extracted/basic-12F.md) (53L, 0 problems) — UCLA
+- [x] [basic-12F.pdf](assets/attachments/extracted/basic-12F.md) (53L, 0 problems) — UCLA — disposition 2026-09-12: already ingested as `SRC-UCLA-BASIC-FALL-2012`; all twelve source problems are represented in order by `P-UCLAB12-01` through `P-UCLAB12-12`, with the vendored PDF recorded as collection provenance.
 
 - [x] [Ch10PtASltns.pdf](assets/attachments/extracted/Ch10PtASltns.md) (51L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES`, containing the seven selected Chapter 10 Part A exercises represented by this solution-outline packet.
 
@@ -733,7 +733,7 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on the Riemann mapping theorem (Spring 2020), not an exercise source.
   Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20RMT`; no problem cards manufactured.
 
-- [ ] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology
+- [x] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology — disposition 2026-09-12: already ingested as `SRC-UNL-QUAL-850-871-JANUARY-2006`; its five Section A questions are local cards `P-UNL850871-06A1` through `P-UNL850871-06A5`, and the five Section B topology questions reuse canonical cards from the separately retained January 2006 UNL topology paper. All ten source questions are represented in source order.
 
 - [x] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES`, containing ten selected finite-abelian-group exercises represented by this packet.
 
