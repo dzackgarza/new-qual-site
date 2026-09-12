@@ -485,6 +485,95 @@ writer still appears entitled to certify those people or regulate their
 intellectual lives, the correction is incomplete, however concise and polite
 the sentences have become.
 
+### `STANCE-17`: Present reference information without assigning work
+
+**Observed — “The one book the exam is drawn from”:** “Read II.1--II.8,
+III.1--III.5 with III.9, and IV.1--IV.3, plus the statement of Serre duality
+in III.6.”
+
+**Proposed replacement:** “Relevant sections: II.1–II.8, III.1–III.5, III.9,
+IV.1–IV.3, and the statement of Serre duality in III.6.” Explain the subject
+or documented syllabus to which these sections are relevant and verify the
+selection. Better still, organize the references by the topics they cover.
+
+The section locations are information; the imperative adds an assignment.
+Writing a reference page does not establish a supervisory relationship.
+A colleague can communicate the same useful selection without claiming the
+right to determine another person's work. Removing the imperative also does
+not establish the selection's relevance: that needs its own stated basis.
+
+### `STANCE-18`: Separate knowledge of a subject from knowledge of a decision
+
+**Observed — “The first pass”, `[@Mil08a]`:** “it is the right choice when the
+exam is a week away and the gap is classical”.
+
+**Proposed replacement:** Describe the source's verified classical topics and
+their locations. A deadline alone does not establish a reading choice.
+
+A directive about study assumes knowledge of the reader's background, purpose,
+constraints, alternatives, and the relative benefit of different activities.
+Knowing a book's mathematics establishes none of those personal premises.
+Confidence in a theorem must not transfer automatically to confidence in a
+reader's best decision. Professional self-assessment distinguishes what the
+writer knows from what the decision would require them to know. Otherwise the
+prescription hides missing premises beneath subject expertise.
+
+### `STANCE-19`: Keep evidence, judgement, and prescription distinct
+
+**Observed — “Before the schemes”:** “Orals in this subject begin with a
+variety far more often than with a scheme”. In the same page, “reaching them
+matters more than completing the exercises in order” turns supposed exam
+knowledge into a ranking of study activities.
+
+**Proposed replacement:** Supply identified exam observations and topic
+references. Keep their population and limits explicit, as in `RESOURCE-37`.
+
+Even a verified frequency does not determine what an individual should study.
+A decision also depends on goals, prior knowledge, and costs. Presenting
+information without attaching a command lets readers combine it with facts
+the writer lacks. That is a substantive epistemic boundary, not merely a
+politeness convention. Do not quietly convert a description into a decision,
+or a local judgement into a general policy for readers.
+
+### `STANCE-20`: Calibrate informal judgement without manufacturing certainty
+
+**Observed — “The first pass”, `[@Gat21]`:** “should read these and nothing
+else”. The exclusion leaves no room for circumstances the writer has not
+examined.
+
+**Proposed replacement:** On a reference page, provide coverage and locations.
+When advice is actually requested, state its purpose, supporting reasons, and
+conditions under which another choice may be preferable.
+
+Informal judgements can be informed and still uncertain. Expressions such as
+“may help with” or “I would suggest” can communicate that a recommendation is
+defeasible. They must correspond to a real limit in the claim, not decorate an
+unchanged command. Do not invent numerical probabilities or imply that all
+mathematicians follow one conversational practice. The governing distinction
+is between established mathematics and contingent judgement about its use.
+Neither blanket certainty nor indiscriminate hedging expresses that distinction.
+
+### `STANCE-21`: Make peer advice conditional and preserve decision ownership
+
+**Observed — “The commutative algebra underneath”, `[@AM18]`:** “Work its
+exercises rather than reading it.”
+
+**Proposed replacement:** For the reference page, identify relevant exercises
+and sections. In a requested discussion of practice methods, a recommendation
+could identify particular exercises and explain which technique they exercise.
+
+A recommendation contributes the writer's judgement while leaving the decision
+with the person who knows their own circumstances. Strength of preference
+does not confer supervisory authority. Explain the reasons for advice instead
+of making obedience the expected response. Merely changing “read” to “you
+should read” or adding “perhaps” preserves the original presumption when the
+reader has not requested guidance of that kind.
+
+Imperatives are appropriate for posed problems, proof constructions, specified
+procedures, and assignments within an actual instructional relationship.
+“Let R be a ring” does not regulate someone's study choices. Apply this policy
+to the social and epistemic role of a directive, not its grammatical form alone.
+
 ## Prose policies
 
 These policies apply to all public card, guide, and wiki prose. They identify
