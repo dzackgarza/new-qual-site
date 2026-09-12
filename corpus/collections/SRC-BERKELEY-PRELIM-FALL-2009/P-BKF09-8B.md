@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let n be a positive integer, $C _ { n }$the cyclic group of order$n ,$and$S _ { n }$the symmetric group on n points. For each of the groups$$\begin{array} { l l l l } { A = \mathbf { R } ^ { * } } & { B = \mathbf { C } ^ { * } } & { C = C _ { 2 } \times C _ { 3 } } & { D = S _ { 4 } } & { E = S L _ { 2 } ( \mathbf { R } ) } \end{array}$$prove or disprove that$C _ { 6 }$ is isomorphic to a subgroup of it.
+Let n be a positive integer, $C _ { n }$the cyclic group of order$n ,$and$S _ { n }$the symmetric group on n points.
+For each of the groups$$\begin{array} { l l l l } { A = \mathbf { R } ^ { * } } & { B = \mathbf { C } ^ { * } } & { C = C _ { 2 } \times C _ { 3 } } & { D = S _ { 4 } } & { E = S L _ { 2 } ( \mathbf { R } ) } \end{array}$$prove or disprove that$C _ { 6 }$ is isomorphic to a subgroup of it.
 :::
 
 ::: {.solution}

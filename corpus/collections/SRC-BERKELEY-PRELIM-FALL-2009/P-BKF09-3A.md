@@ -18,5 +18,6 @@ $$\int _ { | z | = 2 } { \frac { 1 } { \cos z } } d z ,$$where the integral is t
 :::
 
 ::: {.solution}
-The integral must be invariant under changing $z \ { \mathrm { t o } } \ - z .$, as this fixes the contour, but this change of variable also changes the sign of the integrand, so the integral is zero. It is also possible to do this question by adding up the residues at$\pm \pi / 2$
+The integral must be invariant under changing $z \ { \mathrm { t o } } \ - z .$, as this fixes the contour, but this change of variable also changes the sign of the integrand, so the integral is zero.
+It is also possible to do this question by adding up the residues at$\pm \pi / 2$
 :::

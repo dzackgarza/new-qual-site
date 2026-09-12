@@ -31,7 +31,8 @@ $$
 ( q + q ^ { - 1 } ) ^ { n } = \sum _ { k = 0 } ^ { n } { \binom { n } { k } } q ^ { 2 k - n } = q ^ { n } + q ^ { - n } + \sum _ { \tiny { n < j < n \atop n - j \mathrm { ~ e v e n } } } { \binom { n } { ( n - j ) / 2 } } ( q ^ { j } + q ^ { - j } ) + \left\{ { \binom { n } { 0 / 2 } } \quad { \mathrm { i f ~ } } n { \mathrm { ~ i s ~ e v e n } } , \atop 0  \right\} .
 $$
 
-We can assume we have found $T _ { j }$ for $j < n$ by induction. Then
+We can assume we have found $T _ { j }$ for $j < n$ by induction.
+Then
 
 $$
 T _ { n } ( x ) = x ^ { n } - \sum _ { \stackrel { 0 < j < n } { n - j \mathrm { ~ e v e n } } } { \binom { n } { ( n - j ) / 2 } } ( T _ { j } ( x ) ) - { \left\{ \begin{array} { l l } { { \binom { n } { n / 2 } } } & { { \mathrm { i f ~ } } n { \mathrm { ~ i s ~ e v e n , } } } \\ { { 0 } } & { { \mathrm { o t h e r w i s e } } } \end{array} \right. }

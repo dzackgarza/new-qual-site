@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let R be a (possibly non-commutative) ring with identity, and let u be an element of R with a right inverse. Prove that the following conditions on u are equivalent:
+Let R be a (possibly non-commutative) ring with identity, and let u be an element of R with a right inverse.
+Prove that the following conditions on u are equivalent:
 
 1. u has more than one right inverse;
 

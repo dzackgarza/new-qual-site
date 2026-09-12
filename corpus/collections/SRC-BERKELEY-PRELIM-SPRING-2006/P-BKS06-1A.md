@@ -25,9 +25,11 @@ $$
 \mathbb { Z } ^ { 4 } \mapsto \mathbb { Z } , ( x , y , z , w ) \mapsto 2 x + 3 y + 5 z + 7 w
 $$
 
-has kernel G, and is onto because 2 and 3 are relatively prime. Hence $\mathbb { Z } ^ { 4 } / G$ is isomorphic to the image $\mathbb { Z } ,$ which is a free abelian group of rank 1.
+has kernel G, and is onto because 2 and 3 are relatively prime.
+Hence $\mathbb { Z } ^ { 4 } / G$ is isomorphic to the image $\mathbb { Z } ,$ which is a free abelian group of rank 1.
 
-(a) There is a sequence of elementary column operations over $\mathbb { Z }$ (not involving divisions) that transforms the 1 × 4-matrix $( 2 ~ \mathrm { ~ 3 ~ ~ 5 ~ ~ 7 ~ } )$ into $\left( \begin{array} { c c c c } { { 0 } } & { { 0 } } & { { 0 } } & { { 1 } } \end{array} \right)$ . For instance, subtract 3 times the first column from the fourth to get $\left( 2 \ \ \textrm { 3 } \ 5 \ \textrm { 1 } \right)$ , and then subtract appropriate multiples of the fourth from each of the first three columns to make them zero. The same sequence of operations applied to the $4 \times 4$ identity matrix eventually yields a matrix
+(a) There is a sequence of elementary column operations over $\mathbb { Z }$ (not involving divisions) that transforms the 1 × 4-matrix $( 2 ~ \mathrm { ~ 3 ~ ~ 5 ~ ~ 7 ~ } )$ into $\left( \begin{array} { c c c c } { { 0 } } & { { 0 } } & { { 0 } } & { { 1 } } \end{array} \right)$ . For instance, subtract 3 times the first column from the fourth to get $\left( 2 \ \ \textrm { 3 } \ 5 \ \textrm { 1 } \right)$ , and then subtract appropriate multiples of the fourth from each of the first three columns to make them zero.
+The same sequence of operations applied to the $4 \times 4$ identity matrix eventually yields a matrix
 
 $$
 U = \left( \begin{array} { l l l l } { { 7 } } & { { 9 } } & { { 1 5 } } & { { - 3 } } \\ { { 0 } } & { { 1 } } & { { 0 } } & { { 0 } } \\ { { 0 } } & { { 0 } } & { { 1 } } & { { 0 } } \\ { { - 2 } } & { { - 3 } } & { { - 5 } } & { { 1 } } \end{array} \right)
@@ -41,7 +43,8 @@ $$
 
 Because of the way U was constructed, it has an inverse $U ^ { - 1 }$ with integer entries.
 
-The first three columns of U are in G, and we claim that they span $G$ as an abelian group. Suppose $\mathbf { v } \in G$ . Then
+The first three columns of U are in G, and we claim that they span $G$ as an abelian group.
+Suppose $\mathbf { v } \in G$ . Then
 
 $$
 \begin{array} { r }  0 = \left( 2 \begin{array} { l l l } { 3 } & { 5 } & { 7 \right) \mathbf { v } = \left( 0 } & { 0 } & { 0 } & { 1 \right) U ^ { - 1 } \mathbf { v } , } \end{array} \end{array}

@@ -29,7 +29,8 @@ has a unique solution $x(\varepsilon)$.
 :::
 
 ::: {.solution}
-Since L is real and symmetric, $\mathbb { R } ^ { n }$ has an orthonormal basis of eigenvectors $e _ { 1 } , \ldots , e _ { n }$ of L. Let $\lambda _ { 1 } , \ldots , \lambda _ { n }$ be the associated eigenvalues. Without loss of generality, $\lambda _ { 1 } = 0$ and $\lambda _ { i } \neq 0$ for $i > 1$ Write $\textstyle v = \sum _ { i = 1 } ^ { n } v _ { i } e _ { i }$ and $x = \sum x _ { i } e _ { i }$ with $v _ { i } , x _ { i } \in \mathbb { R }$ The equation $L x + \epsilon x = v$ is equivalent to $\lambda _ { i } x _ { i } + \epsilon x _ { i } = v _ { i }$ for each i, which has the unique solution $x _ { i } = v _ { i } / ( \lambda _ { i } + \epsilon )$ , provided that $\begin{array} { r } { 0 < \epsilon < \operatorname* { m i n } _ { i \neq 1 } | \lambda _ { i } | } \end{array}$ . Now
+Since L is real and symmetric, $\mathbb { R } ^ { n }$ has an orthonormal basis of eigenvectors $e _ { 1 } , \ldots , e _ { n }$ of L. Let $\lambda _ { 1 } , \ldots , \lambda _ { n }$ be the associated eigenvalues.
+Without loss of generality, $\lambda _ { 1 } = 0$ and $\lambda _ { i } \neq 0$ for $i > 1$ Write $\textstyle v = \sum _ { i = 1 } ^ { n } v _ { i } e _ { i }$ and $x = \sum x _ { i } e _ { i }$ with $v _ { i } , x _ { i } \in \mathbb { R }$ The equation $L x + \epsilon x = v$ is equivalent to $\lambda _ { i } x _ { i } + \epsilon x _ { i } = v _ { i }$ for each i, which has the unique solution $x _ { i } = v _ { i } / ( \lambda _ { i } + \epsilon )$ , provided that $\begin{array} { r } { 0 < \epsilon < \operatorname* { m i n } _ { i \neq 1 } | \lambda _ { i } | } \end{array}$ . Now
 
 $$
 \epsilon x = \sum \epsilon x _ { i } e _ { i } = \sum \frac { \epsilon } { \lambda _ { i } + \epsilon } v _ { i } e _ { i } .

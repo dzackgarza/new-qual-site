@@ -21,7 +21,8 @@ Let $f$ be entire and suppose
 \[
 \operatorname{Re}f(z)\ge-2
 \]
-for all $z\in\mathbb C$. Show that $f$ is constant.
+for all $z\in\mathbb C$.
+Show that $f$ is constant.
 :::
 
 ::: {.solution}

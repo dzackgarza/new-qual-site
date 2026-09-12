@@ -25,7 +25,9 @@ Show that $x_n\to x$.
 :::
 
 ::: {.solution}
-First show that $\{ x _ { n } \}$ is bounded. We know that the sequence $\{ 2 x _ { n + 1 } - x _ { n } \}$ is bounded. Then we can choose M large so that $| x _ { 1 } | \le M$ and $| 2 x _ { n + 1 } - x _ { n } | \leq M$ for all n. We prove by induction that $| x _ { n } | \leq M$ for all n. Indeed, suppose that $| x _ { n } | \leq M$ . Then
+First show that $\{ x _ { n } \}$ is bounded.
+We know that the sequence $\{ 2 x _ { n + 1 } - x _ { n } \}$ is bounded.
+Then we can choose M large so that $| x _ { 1 } | \le M$ and $| 2 x _ { n + 1 } - x _ { n } | \leq M$ for all n. We prove by induction that $| x _ { n } | \leq M$ for all n. Indeed, suppose that $| x _ { n } | \leq M$ . Then
 
 $$
 | x _ { n + 1 } | = | \frac { x _ { n } + ( 2 x _ { n + 1 } - x _ { n } ) } { 2 } | \leq \frac { 1 } { 2 } ( | x _ { n } | + | 2 x _ { n + 1 } - x _ { n } | ) \leq M
@@ -39,7 +41,8 @@ $$
 x _ { n + 1 } = { \frac { x _ { n } + ( 2 x _ { n + 1 } - x _ { n } ) } { 2 } }
 $$
 
-and take lim sup. We get
+and take lim sup.
+We get
 
 $$
 \operatorname* { l i m } \operatorname* { s u p } x _ { n } \leq { \frac { \operatorname* { l i m } \operatorname* { s u p } x _ { n } + x } { 2 } }

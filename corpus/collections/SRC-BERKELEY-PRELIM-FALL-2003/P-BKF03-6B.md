@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f ( z )$ be a meromorphic function on the complex plane. Suppose that for every polynomial $p ( z ) \in \mathbb { C } [ z ]$ and every closed contour Γ avoiding the poles of $f ,$ we have
+Let $f ( z )$ be a meromorphic function on the complex plane.
+Suppose that for every polynomial $p ( z ) \in \mathbb { C } [ z ]$ and every closed contour Γ avoiding the poles of $f ,$ we have
 
 $$
 \int _ { \Gamma } p ( z ) ^ { 2 } f ( z ) d z = 0 .

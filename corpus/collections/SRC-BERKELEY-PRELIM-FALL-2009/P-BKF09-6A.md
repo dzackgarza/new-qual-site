@@ -16,5 +16,6 @@ For $n \geq 1$, prove that$a _ { n } + \frac { 1 } { a _ { n - 1 } + \displaysty
 :::
 
 ::: {.solution}
-Using the cofactor expansion with respect to the last row, we find that $\Delta _ { n } =$ $a _ { n } \Delta _ { n - 1 } + \Delta _ { n - 2 }$. Dividing by$\Delta _ { n - 1 }$, we get:$$\Delta _ { n } / \Delta _ { n - 1 } = a _ { n } + \frac { 1 } { \Delta _ { n - 1 } / \Delta _ { n - 2 } } .$$The required result follows by induction on n since it obviously holds for$n = 1$
+Using the cofactor expansion with respect to the last row, we find that $\Delta _ { n } =$ $a _ { n } \Delta _ { n - 1 } + \Delta _ { n - 2 }$.
+Dividing by$\Delta _ { n - 1 }$, we get:$$\Delta _ { n } / \Delta _ { n - 1 } = a _ { n } + \frac { 1 } { \Delta _ { n - 1 } / \Delta _ { n - 2 } } .$$The required result follows by induction on n since it obviously holds for$n = 1$
 :::

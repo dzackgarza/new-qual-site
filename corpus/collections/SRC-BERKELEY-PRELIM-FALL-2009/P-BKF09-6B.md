@@ -18,5 +18,6 @@ is a convex polygon.
 :::
 
 ::: {.solution}
-According to the orthogonal diagonalization theorem, a normal operator has an Hermitian orthonormal basis of eigenvectors. In such a basis, $\langle A z , z \rangle = \sum \lambda _ { i } | z _ { i } | ^ { 2 }$, where$\lambda _ { i }$are the eigenvalues of A, while$\langle z , z \rangle = 1$becomes$\sum | z _ { i } | ^ { 2 } = 1$This shows that$\Lambda _ { A }$coincides with the convex hull of the finite set$\lambda _ { 1 } , \ldots , \lambda _ { n }$ of eigenvalues of A.
+According to the orthogonal diagonalization theorem, a normal operator has an Hermitian orthonormal basis of eigenvectors.
+In such a basis, $\langle A z , z \rangle = \sum \lambda _ { i } | z _ { i } | ^ { 2 }$, where$\lambda _ { i }$are the eigenvalues of A, while$\langle z , z \rangle = 1$becomes$\sum | z _ { i } | ^ { 2 } = 1$This shows that$\Lambda _ { A }$coincides with the convex hull of the finite set$\lambda _ { 1 } , \ldots , \lambda _ { n }$ of eigenvalues of A.
 :::

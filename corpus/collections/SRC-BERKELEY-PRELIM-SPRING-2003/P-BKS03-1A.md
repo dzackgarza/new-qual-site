@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: problem
-Let $k$ be a field and $A\in M_n(k)$. Prove that the following are equivalent:
+Let $k$ be a field and $A\in M_n(k)$.
+Prove that the following are equivalent:
 
 (a) $A$ is a scalar multiple of the identity.
 

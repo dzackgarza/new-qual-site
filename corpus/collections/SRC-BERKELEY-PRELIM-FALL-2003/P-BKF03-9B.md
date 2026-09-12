@@ -22,5 +22,6 @@ $$
 \begin{array} { r } { \mathrm { ~ i n ~ } x ^ { 2 } + y ^ { 2 } < 1 } \\ { \mathrm { ~ o n ~ } x ^ { 2 } + y ^ { 2 } = 1 . } \end{array}
 $$
 
-Here $\Delta$ is the Laplacian $\partial ^ { 2 } / \partial x ^ { 2 } + \partial ^ { 2 } / \partial y ^ { 2 }$ , and $u _ { n }$ denotes the directional derivative of u in the direction of the outward unit normal (pointing away from the origin). Prove that if u is not identically zero in $x ^ { 2 } + y ^ { 2 } < 1$ , then $\lambda > 0$
+Here $\Delta$ is the Laplacian $\partial ^ { 2 } / \partial x ^ { 2 } + \partial ^ { 2 } / \partial y ^ { 2 }$ , and $u _ { n }$ denotes the directional derivative of u in the direction of the outward unit normal (pointing away from the origin).
+Prove that if u is not identically zero in $x ^ { 2 } + y ^ { 2 } < 1$ , then $\lambda > 0$
 :::

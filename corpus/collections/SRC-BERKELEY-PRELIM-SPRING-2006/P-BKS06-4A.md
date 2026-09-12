@@ -15,13 +15,15 @@ Let $D = \{ z \in \mathbb { C } : | z | < 1 \}$ . Find all holomorphic functions
 :::
 
 ::: {.solution}
-We show that the only such functions are the real constant functions. Let
+We show that the only such functions are the real constant functions.
+Let
 
 $$
 f ( z ) = \sum a _ { n } z ^ { n }
 $$
 
-be the Taylor series for $f$ around 0. We first prove by contradiction that $a _ { k }$ are real. Suppose that k is the smallest index so that Im $. a _ { k } \neq 0$ . Then we must have
+be the Taylor series for $f$ around 0. We first prove by contradiction that $a _ { k }$ are real.
+Suppose that k is the smallest index so that Im $. a _ { k } \neq 0$ . Then we must have
 
 $$
 \mathrm { I m } a _ { k } = \operatorname* { l i m } _ { x \to 0 , x \in \mathbb { R } } x ^ { - k } \mathrm { I m } f ( x )
@@ -39,7 +41,8 @@ $$
 \operatorname { I m } a _ { k } = \operatorname* { l i m } _ { n \to \infty } n ^ { k } \mathrm { I m } f ( { \frac { 1 } { n } } ) = 0 ,
 $$
 
-which is a contradiction. As a consequence, $f ( { \frac { 1 } { n } } )$ must be real.
+which is a contradiction.
+As a consequence, $f ( { \frac { 1 } { n } } )$ must be real.
 
 By bounding $f ^ { \prime \prime } ( z )$ on a closed disk, we may write
 
@@ -53,5 +56,6 @@ $$
 \operatorname { R e } f ^ { \prime } ( { \frac { 1 } { n } } ) = O ( e ^ { - n } )
 $$
 
-Arguing as above, the Taylor series at 0 for $f ^ { \prime } ( z )$ has purely imaginary coefficients. We conclude that all ${ a } _ { k } { } ^ {  ' } \mathrm { s }$ must vanish with the exception of $a _ { 0 }$
+Arguing as above, the Taylor series at 0 for $f ^ { \prime } ( z )$ has purely imaginary coefficients.
+We conclude that all ${ a } _ { k } { } ^ {  ' } \mathrm { s }$ must vanish with the exception of $a _ { 0 }$
 :::

@@ -21,7 +21,8 @@ has no solution.
 :::
 
 ::: {.solution}
-First suppose that the characteristic equation $x ^ { 2 } - c x + 1 6 = 0$ has a repeated root. This happens when $c = \pm 8$ . If $c = 8$ , the repeated root is 4, and the general solution to the differential equation without boundary conditions has the form
+First suppose that the characteristic equation $x ^ { 2 } - c x + 1 6 = 0$ has a repeated root.
+This happens when $c = \pm 8$ . If $c = 8$ , the repeated root is 4, and the general solution to the differential equation without boundary conditions has the form
 
 $$
 f ( t ) = ( a t + b ) e ^ { 4 t } .
@@ -33,9 +34,11 @@ $$
 \begin{array} { r } { b = 1 } \\ { ( a + b ) e ^ { 4 } = 1 , } \end{array}
 $$
 
-and this system has a solution. Similarly, there is a solution in the case $c = - 8$
+and this system has a solution.
+Similarly, there is a solution in the case $c = - 8$
 
-From now on, we suppose that the complex roots $\alpha , \beta$ of $x ^ { 2 } - c x + 1 6 = 0$ are distinct. Then the general solution is
+From now on, we suppose that the complex roots $\alpha , \beta$ of $x ^ { 2 } - c x + 1 6 = 0$ are distinct.
+Then the general solution is
 
 $$
 f ( t ) = a e ^ { \alpha t } + b e ^ { \beta t } ,

@@ -35,7 +35,8 @@ $$
 \int _ { R } ^ { - R } \frac { e ^ { i t ( x + \pi i ) } } { e ^ { ( x + \pi i ) } + e ^ { - ( x + \pi i ) } } d x = \int _ { R } ^ { - R } \frac { e ^ { - \pi t } e ^ { i t x } } { - e ^ { x } - e ^ { - x } } d x = e ^ { - \pi t } \int _ { - R } ^ { R } \frac { e ^ { i t x } } { e ^ { x } + e ^ { - x } } d x .
 $$
 
-Let I denote the integral we have to find. Then
+Let I denote the integral we have to find.
+Then
 
 $$
 \operatorname* { l i m } _ { R  \infty } \oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = ( 1 + e ^ { - \pi t } ) I .

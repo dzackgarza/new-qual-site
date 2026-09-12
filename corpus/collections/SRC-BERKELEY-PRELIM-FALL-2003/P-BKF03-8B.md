@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-The set of $5 \times 5$ complex matrices A satisfying $A ^ { 3 } = A ^ { 2 }$ is a union of conjugacy classes. How many conjugacy classes?
+The set of $5 \times 5$ complex matrices A satisfying $A ^ { 3 } = A ^ { 2 }$ is a union of conjugacy classes.
+How many conjugacy classes?
 :::

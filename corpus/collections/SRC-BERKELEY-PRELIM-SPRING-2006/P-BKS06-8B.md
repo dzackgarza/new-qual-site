@@ -11,7 +11,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\langle ~ , ~ \rangle$ be the standard Hermitian inner product on Cn. Let A be an $n \times n$ matrix with complex entries. Suppose $\langle x , A x \rangle$ is real for all $x \in \mathbb { C } ^ { n }$ . Prove that A is Hermitian.
+Let $\langle ~ , ~ \rangle$ be the standard Hermitian inner product on Cn.
+Let A be an $n \times n$ matrix with complex entries.
+Suppose $\langle x , A x \rangle$ is real for all $x \in \mathbb { C } ^ { n }$ . Prove that A is Hermitian.
 :::
 
 ::: {.solution}
@@ -21,5 +23,7 @@ $$
 x ^ { H } B x = 0\tag{∗}
 $$
 
-for all $x \in \mathbb { C } ^ { n }$ and $B ^ { H } = A ^ { H } - A = - B$ , so B is skew-Hermitian (hence normal). Let x be an eigenvector of B with the eigenvalue λ, so $B x = \lambda x$ Then $\overset { \vartriangle } { \boldsymbol { 0 } } = \boldsymbol { x } ^ { H } \boldsymbol { B } \boldsymbol { x }$ (by (∗)) $= \lambda x ^ { H } x = { \bar { \lambda } } \| x \| ^ { 2 }$ This gives $\lambda = 0$ Thus all eigenvalues of B are zero. Being normal, B is diagonalizable, so $B = 0$ . By definition of B, we get $A = A ^ { H }$ . Thus A is Hermitian.
+for all $x \in \mathbb { C } ^ { n }$ and $B ^ { H } = A ^ { H } - A = - B$ , so B is skew-Hermitian (hence normal).
+Let x be an eigenvector of B with the eigenvalue λ, so $B x = \lambda x$ Then $\overset { \vartriangle } { \boldsymbol { 0 } } = \boldsymbol { x } ^ { H } \boldsymbol { B } \boldsymbol { x }$ (by (∗)) $= \lambda x ^ { H } x = { \bar { \lambda } } \| x \| ^ { 2 }$ This gives $\lambda = 0$ Thus all eigenvalues of B are zero.
+Being normal, B is diagonalizable, so $B = 0$ . By definition of B, we get $A = A ^ { H }$ . Thus A is Hermitian.
 :::

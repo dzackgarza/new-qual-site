@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f _ { n }$ is a sequence of non-negative continuous functions on the unit interval. Find counterexamples to three of the following four inequalities:
+Suppose that $f _ { n }$ is a sequence of non-negative continuous functions on the unit interval.
+Find counterexamples to three of the following four inequalities:
 
 $$
 \operatorname* { l i m } _ { n } \operatorname* { s u p } \int _ { 0 } ^ { 1 } f _ { n } ( x ) d x \leq \int _ { 0 } ^ { 1 } \operatorname* { l i m } _ { n } \operatorname* { s u p } f _ { n } ( x ) d x

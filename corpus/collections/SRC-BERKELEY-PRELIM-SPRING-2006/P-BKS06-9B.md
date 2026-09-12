@@ -27,7 +27,8 @@ $$
 f ( x ) : = { \frac { 1 } { 2 } } \sin ( \ln ( x + 1 ) ) .
 $$
 
-This sequence is bounded. It also does not converge, since the spacing between values of ln n tends to zero, which means that the values of (ln n) mod (2π) are dense in [0, 2π].
+This sequence is bounded.
+It also does not converge, since the spacing between values of ln n tends to zero, which means that the values of (ln n) mod (2π) are dense in [0, 2π].
 
 By Taylor’s theorem with remainder (centered at n),
 
@@ -43,7 +44,8 @@ $$
 | 2 f ( n ) - f ( n - 1 ) - f ( n + 1 ) | = { \frac { 1 } { 2 } } | f ^ { \prime \prime } ( \xi _ { + } ) + f _ { \cdot } ^ { \prime \prime } ( \xi _ { - } ) | = | f ^ { \prime \prime } ( \xi ) | \quad { \mathrm { f o r ~ s o m e ~ } } \xi \in ( \xi _ { - } , \xi ^ { + } ) \subseteq ( n - 1 , n + 1 )
 $$
 
-by the intermediate value theorem. We compute
+by the intermediate value theorem.
+We compute
 
 $$
 f ^ { \prime } ( x ) = { \frac { 1 } { 2 ( x + 1 ) } } \cos ( \ln ( x + 1 ) )

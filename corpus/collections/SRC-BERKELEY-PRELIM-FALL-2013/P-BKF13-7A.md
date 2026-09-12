@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let A and B be $n \times n$ complex matrices. Prove or disprove each of the following statements:
+Let A and B be $n \times n$ complex matrices.
+Prove or disprove each of the following statements:
 
 1. If A and B are diagonalizable, so is $A + B .$
 

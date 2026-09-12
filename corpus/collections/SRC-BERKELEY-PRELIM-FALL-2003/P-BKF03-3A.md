@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-Let A be a $2 \times 2$ matrix with complex entries. Prove that the series $I + A + A ^ { 2 } + . . .$ converges if and only if every eigenvalue of A has absolute value less than 1.
+Let A be a $2 \times 2$ matrix with complex entries.
+Prove that the series $I + A + A ^ { 2 } + . . .$ converges if and only if every eigenvalue of A has absolute value less than 1.
 :::

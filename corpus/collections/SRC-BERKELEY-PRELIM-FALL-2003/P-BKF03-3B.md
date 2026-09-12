@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-Let A and B be $n \times n$ complex unitary matrices. Prove that $| \operatorname* { d e t } ( A + B ) | \leq 2 ^ { n }$
+Let A and B be $n \times n$ complex unitary matrices.
+Prove that $| \operatorname* { d e t } ( A + B ) | \leq 2 ^ { n }$
 :::

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: problem
-Let $f$ be analytic on the unit disk with $|f(z)|\le1$. If $f$ has two distinct fixed points in the disk, prove that $f(z)=z$ identically.
+Let $f$ be analytic on the unit disk with $|f(z)|\le1$.
+If $f$ has two distinct fixed points in the disk, prove that $f(z)=z$ identically.
 :::
 
 ::: {.solution}

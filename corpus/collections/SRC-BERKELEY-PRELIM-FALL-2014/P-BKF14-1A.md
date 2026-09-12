@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-Let a(n) be the number of ways that Harry Potter can buy a new broomstick valued at n knuts using bronze knuts, silver sickles worth 29 knuts, and gold galleons worth 17 sickles. Find $\textstyle \sum _ { n } a ( n ) z ^ { n }$ and lim $_ { \cdot n \to \infty } a ( n ) / n ^ { 2 }$
+Let a(n) be the number of ways that Harry Potter can buy a new broomstick valued at n knuts using bronze knuts, silver sickles worth 29 knuts, and gold galleons worth 17 sickles.
+Find $\textstyle \sum _ { n } a ( n ) z ^ { n }$ and lim $_ { \cdot n \to \infty } a ( n ) / n ^ { 2 }$
 :::
