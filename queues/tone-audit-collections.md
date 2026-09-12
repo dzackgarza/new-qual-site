@@ -1689,14 +1689,14 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-2011-pp-24-25/P-JHUMAY11ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA7.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA8.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12CA4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA7.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-may-9-2012-p-21/P-JHUMAY12RA8.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANA.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05ANC.md
 - [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2005-pp-42-43/P-JHUFA05AND.md
