@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DFBUX
 kind: problem
-title: An interesting subgroup of $(\QQ,+)$
+title: Dyadic rationals form a proper noncyclic subgroup of $(\QQ,+)$
 classification:
   areas:
   - algebra
@@ -26,7 +26,7 @@ Give an interesting example of a subgroup of the additive group of the rationals
 
 
 ::: {.solution}
-A useful example is the subgroup of dyadic rationals
+The subgroup of dyadic rationals is
 \[
 \ZZ[1/2]=\left\{\frac{m}{2^n}:m\in\ZZ,\ n\ge0\right\}\subseteq(\QQ,+).
 \]
