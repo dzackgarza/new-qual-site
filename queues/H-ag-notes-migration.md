@@ -1,16 +1,31 @@
 # ag-notes migration queue
 
-Substantive migration is incomplete. The open rows identify omitted statements, prompts, proof steps, examples, diagrams and source errors needing correction.
+Substantive migration is incomplete.
+The open rows identify omitted statements, prompts, proof steps, examples, diagrams and source errors needing correction.
 
-This queue owns the remaining migration work. [Source file inventory](ag-notes-source-files.tsv) records every file in the deployed tree, including aliases, detached images, reference PDFs and renderer files. It records bytes, paths and SHA-256 only; it makes no mathematical dispositions.
+This queue owns the remaining migration work.
+[Source file inventory](ag-notes-source-files.tsv) records every file in the deployed tree, including aliases, detached images, reference PDFs and renderer files.
+It records bytes, paths and SHA-256 only; it makes no mathematical dispositions.
 
 ## Source and comparison boundary
 
-- Source: `/var/www/ag_notes/` on `zack@159.223.102.204`, copied on 2026-09-12. Paths in the queue are relative to that root unless stated otherwise. Preserve this source while any content or source-repair row remains open.
-- Target: authored `corpus/` and `wiki/` in this repository. The comparison used their actual bodies, not collection completion fields or previous migration reports. Target reference revision: `a82fbded3bb880564fd041eff5b93f37fdfd0248`. The comparison concerns source transfer, not unrelated assertions added to target cards.
-- HTML comparison includes displayed mathematics, footnotes, hints, worked solutions stored in HTML `title` attributes, and both case-sensitive Definitions revisions. Image comparison includes local PNGs, detached figures and the externally hosted Mathpix crops. Linked quiver data can preserve a diagram whose SVG file is absent.
-- A search-based omission means no counterpart was found in the named targets and the corpus/wiki searches. It is not a proof that no equivalent theorem exists anywhere. A general theorem can preserve an asserted consequence, but an unrelated example or an unsolved exercise does not preserve a source proof.
-- The later Markdown vault `/var/www/Notes/Class_Notes/2022/Fall/Orals/` is a distinct source revision. Its later additions are listed separately below; the deployed-site comparison does not certify that vault.
+- Source: `/var/www/ag_notes/` on `zack@159.223.102.204`, copied on 2026-09-12. Paths in the queue are relative to that root unless stated otherwise.
+  Preserve this source while any content or source-repair row remains open.
+
+- Target: authored `corpus/` and `wiki/` in this repository.
+  The comparison used their actual bodies, not collection completion fields or previous migration reports.
+  Target reference revision: `a82fbded3bb880564fd041eff5b93f37fdfd0248`. The comparison concerns source transfer, not unrelated assertions added to target cards.
+
+- HTML comparison includes displayed mathematics, footnotes, hints, worked solutions stored in HTML `title` attributes, and both case-sensitive Definitions revisions.
+  Image comparison includes local PNGs, detached figures and the externally hosted Mathpix crops.
+  Linked quiver data can preserve a diagram whose SVG file is absent.
+
+- A search-based omission means no counterpart was found in the named targets and the corpus/wiki searches.
+  It is not a proof that no equivalent theorem exists anywhere.
+  A general theorem can preserve an asserted consequence, but an unrelated example or an unsolved exercise does not preserve a source proof.
+
+- The later Markdown vault `/var/www/Notes/Class_Notes/2022/Fall/Orals/` is a distinct source revision.
+  Its later additions are listed separately below; the deployed-site comparison does not certify that vault.
 
 ## Statuses
 
@@ -26,9 +41,14 @@ This queue owns the remaining migration work. [Source file inventory](ag-notes-s
 
 ## Order of work
 
-Work through the source sections below in order, one named item at a time. Within a partial page, its explicit remaining statements and proof steps are the checklist. Source-repair entries can proceed independently when recovery does not depend on another item. Move a row to migrated only with the actual source-to-target correspondence, including hypotheses, subparts, arguments and mathematical diagrams. Keep unfinished source arguments visibly unfinished until corrected; copying them is not a finished solution.
+Work through the source sections below in order, one named item at a time.
+Within a partial page, its explicit remaining statements and proof steps are the checklist.
+Source-repair entries can proceed independently when recovery does not depend on another item.
+Move a row to migrated only with the actual source-to-target correspondence, including hypotheses, subparts, arguments and mathematical diagrams.
+Keep unfinished source arguments visibly unfinished until corrected; copying them is not a finished solution.
 
-Mixed pages have separate content dispositions: private planning does not hide a mathematical question, and a reference list does not hide an exercise. The image and diagram sections identify the same page's supporting source material, not additional copies of the mathematical work.
+Mixed pages have separate content dispositions: private planning does not hide a mathematical question, and a reference list does not hide an exercise.
+The image and diagram sections identify the same page's supporting source material, not additional copies of the mathematical work.
 
 ## Source sections
 
@@ -53,13 +73,25 @@ Mixed pages have separate content dispositions: private planning does not hide a
 
 ## File aliases and retention evidence
 
-The source-file TSV is the complete physical inventory of the deployed snapshot. Equal SHA-256 values identify byte-identical files only. Read the content rows for mathematical equivalence and remaining work.
+The source-file TSV is the complete physical inventory of the deployed snapshot.
+Equal SHA-256 values identify byte-identical files only.
+Read the content rows for mathematical equivalence and remaining work.
 
 - The January theorem crops occur under `attachments/`, `0_Study Guides/attachments/` and `0_Study Guides/figures/`. Their content dispositions apply to each byte-identical alias.
-- The March/May crops and reference PDFs occur under both attachment directories. The October syllabus crops occur under root `attachments/`.
-- The September theorem crops also occur directly at the source root. The content rows name their attachment aliases.
-- The original cone and quadric-ruling figures survive byte-identically as `assets/algebraic-geometry/varieties/affine-cone-over-curve-in-p2.png` and `quadric-surface-in-p3-two-rulings.png`. The plane/surface singularity figures survive as `assets/algebraic-geometry/curves-and-surfaces/plane-curve-singularities-node-cusp-tacnode.png` and `surface-singularities-conical-double-line-pinch.png`. Their missing use in the exercise cards remains in the Hartshorne rows.
-- The resources PDFs are preserved byte-for-byte. The full document, rather than a preview image or a migration label, is the retained reference.
-- [External Definitions images](ag-notes-external-images.tsv) gives the exact URLs and downloaded file hashes in source order. These readable diagrams and text fragments have mathematical dispositions in the Definitions section.
 
-Source counts, previous task tags, title similarity and the existence of a target card do not close a row. A source page can be retired only after its actual content has the stated target or an explicit reference/private disposition.
+- The March/May crops and reference PDFs occur under both attachment directories.
+  The October syllabus crops occur under root `attachments/`.
+
+- The September theorem crops also occur directly at the source root.
+  The content rows name their attachment aliases.
+
+- The original cone and quadric-ruling figures survive byte-identically as `assets/algebraic-geometry/varieties/affine-cone-over-curve-in-p2.png` and `quadric-surface-in-p3-two-rulings.png`. The plane/surface singularity figures survive as `assets/algebraic-geometry/curves-and-surfaces/plane-curve-singularities-node-cusp-tacnode.png` and `surface-singularities-conical-double-line-pinch.png`. Their missing use in the exercise cards remains in the Hartshorne rows.
+
+- The resources PDFs are preserved byte-for-byte.
+  The full document, rather than a preview image or a migration label, is the retained reference.
+
+- [External Definitions images](ag-notes-external-images.tsv) gives the exact URLs and downloaded file hashes in source order.
+  These readable diagrams and text fragments have mathematical dispositions in the Definitions section.
+
+Source counts, previous task tags, title similarity and the existence of a target card do not close a row.
+A source page can be retired only after its actual content has the stated target or an explicit reference/private disposition.

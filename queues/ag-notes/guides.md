@@ -1,6 +1,10 @@
 # Study guides and Definitions
 
-Source paths are relative to the deployed ag-notes root. Target paths are relative to new-qual-site. Source text was read through Pandoc and raw HTML; local-image findings are in [Images and Hartshorne V](images-and-surfaces.md). A `partial` row does not certify unlisted target material. Mathematical errors require correction within `partial`; unavailable or unreadable source belongs in `source-repair`.
+Source paths are relative to the deployed ag-notes root.
+Target paths are relative to new-qual-site.
+Source text was read through Pandoc and raw HTML; local-image findings are in [Images and Hartshorne V](images-and-surfaces.md).
+A `partial` row does not certify unlisted target material.
+Mathematical errors require correction within `partial`; unavailable or unreadable source belongs in `source-repair`.
 
 | Source page / section | Status | Target and precise remaining work |
 | --- | --- | --- |
@@ -26,7 +30,13 @@ Source paths are relative to the deployed ag-notes root. Target paths are relati
 
 ## Definitions.html and definitions.html
 
-Both deployed pages contain a long definition list followed by results and proof sketches. They are different revisions; lowercase retains labels that uppercase moved into HTML title attributes. The text diff consists principally of labels, spelling and mathematical formatting repairs, including the rational-normal-curve parametrization. Their shared mathematical payload is audited together below. The external Mathpix diagram content is listed below. A standard definition is not the whole unit when its source paragraph includes a computation or proof. Bare theory-card filenames below mean `corpus/theory/Algebraic_Geometry/<filename>`.
+Both deployed pages contain a long definition list followed by results and proof sketches.
+They are different revisions; lowercase retains labels that uppercase moved into HTML title attributes.
+The text diff consists principally of labels, spelling and mathematical formatting repairs, including the rational-normal-curve parametrization.
+Their shared mathematical payload is audited together below.
+The external Mathpix diagram content is listed below.
+A standard definition is not the whole unit when its source paragraph includes a computation or proof.
+Bare theory-card filenames below mean `corpus/theory/Algebraic_Geometry/<filename>`.
 
 | Source locator (both revisions) | Status | Target and precise remaining work |
 | --- | --- | --- |
@@ -64,21 +74,35 @@ Both deployed pages contain a long definition list followed by results and proof
 
 ### Definitions image comparison
 
-Exact external crop URLs, in source DOM order, are recorded in [external-image inventory](../ag-notes-external-images.tsv). Each crop was retrieved and visually read. All are readable. The image content supplies the following additional source mathematics:
+Exact external crop URLs, in source DOM order, are recorded in [external-image inventory](../ag-notes-external-images.tsv).
+Each crop was retrieved and visually read.
+All are readable.
+The image content supplies the following additional source mathematics:
 
-- Adjoint naturality, sheaf restriction naturality, covariant/contravariant naturality, restriction composition, projective lifting, Spec triangle, module-action compatibility and tensor universal property: the corresponding `D-DEFADJ`, `D-DEFNATTR`, `D-DEFPROJO`, `D-MODOX`, `D-DEFTENS` text retains the constructions. General ringed-space definitions remain partial as recorded above.
+- Adjoint naturality, sheaf restriction naturality, covariant/contravariant naturality, restriction composition, projective lifting, Spec triangle, module-action compatibility and tensor universal property: the corresponding `D-DEFADJ`, `D-DEFNATTR`, `D-DEFPROJO`, `D-MODOX`, `D-DEFTENS` text retains the constructions.
+  General ringed-space definitions remain partial as recorded above.
+
 - The three-row Čech induction diagram belongs to the omitted multidegree calculation in `T-IJW1K.md`.
+
 - Cokernel and cohomology comparison diagrams belong to `T-DEFFHHF.md`; its proof text retains the exact-functor commutation argument.
+
 - Filtered-colimit comparison, adjacent-degree short exact sequences and snake diagram belong to the cohomology proof omissions above.
+
 - Composite morphism and graph-as-pullback diagrams belong to the omitted property-P proof.
+
 - The full rational-functions/Cartier/Weil/class-group/Picard diagram belongs to the omitted complete comparison in `PR-DIVLB.md`.
+
 - Adjoint-limit naturality and the following adjunction sentence belong to `T-DEFRAPL.md`; the target retains the universal-property proof.
+
 - Smoothness lead-in adds no result beyond the accompanying proof text; valuative uniqueness/at-most-one diagrams are represented by the square and lift conditions in `D-8XX95.md`.
+
 - The factorization through the reduced scheme belongs to `D-SCHRED.md`; preserve its full universal property, separately from the incorrect normalization property noted above.
 
 ### Omitted resource references
 
-The source's Texts, Notes and Advanced topics sections carry these references. The resource page and bibliography retain other editions/links for the principal books; those alternate URLs are not migration gaps. The following distinct references are absent from those targets:
+The source's Texts, Notes and Advanced topics sections carry these references.
+The resource page and bibliography retain other editions/links for the principal books; those alternate URLs are not migration gaps.
+The following distinct references are absent from those targets:
 
 | Reference | Source URL |
 | --- | --- |
@@ -107,7 +131,9 @@ The source's Texts, Notes and Advanced topics sections carry these references. T
 | Derived-categories summer school | `https://www.msri.org/summer_schools/821` |
 | MMP seminar | `https://web.math.princeton.edu/~jmoraga/Learning-Seminar-MMP` |
 
-The McKernan lecture references are also absent. The exact URL families are below; every integer in each specified interval appears in the source. Completion checkmarks are private and are not part of these reference dispositions.
+The McKernan lecture references are also absent.
+The exact URL families are below; every integer in each specified interval appears in the source.
+Completion checkmarks are private and are not part of these reference dispositions.
 
 | URL | Source lecture indices |
 | --- | --- |
@@ -118,7 +144,14 @@ The McKernan lecture references are also absent. The exact URL families are belo
 ### Evidence boundary
 
 - Searched: all named deployed guide text; complete uppercase Definitions text in bounded slices; lowercase revision diff; raw HTML for long title-attribute payloads; full Harvard and AGX varieties target bodies; linked theory bodies identified above; broad `corpus` and `wiki` text searches for missing named constructions.
+
 - Found: substantial direct migration, omitted prompts and proof arguments, and source formulas whose defects remain in targets.
-- Conclusion: the named pages are not fully migrated. The rows distinguish preserved text, omitted definitions/questions/proof arguments, and mathematical errors requiring correction.
+
+- Conclusion: the named pages are not fully migrated.
+  The rows distinguish preserved text, omitted definitions/questions/proof arguments, and mathematical errors requiring correction.
+
 - Confidence: high for directly compared omissions; medium for search-based missing-target inferences.
-- Image integration: the Mathpix diagrams are readable and their contents are incorporated above. [Images and Hartshorne V](images-and-surfaces.md) records the local syllabus/problem image dispositions. No source page marked partial can be retired on the basis of this audit.
+
+- Image integration: the Mathpix diagrams are readable and their contents are incorporated above.
+  [Images and Hartshorne V](images-and-surfaces.md) records the local syllabus/problem image dispositions.
+  No source page marked partial can be retired on the basis of this audit.

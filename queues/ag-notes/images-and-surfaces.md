@@ -2,7 +2,9 @@
 
 ## Hartshorne V
 
-Targets in this section are under `corpus/collections/SRC-TEXT-HART77/`. Exercise numbers refer to the source page, not a count inferred from the collection index. The source statements, subparts, hints and footnotes were compared with the target bodies. The source pages have no hidden solution text in `title` attributes.
+Targets in this section are under `corpus/collections/SRC-TEXT-HART77/`. Exercise numbers refer to the source page, not a count inferred from the collection index.
+The source statements, subparts, hints and footnotes were compared with the target bodies.
+The source pages have no hidden solution text in `title` attributes.
 
 | Source | Status | Target and remaining work |
 | --- | --- | --- |
@@ -20,7 +22,8 @@ Targets in this section are under `corpus/collections/SRC-TEXT-HART77/`. Exercis
 
 ## Study-guide image content
 
-Image names below are relative to `attachments/`. The source-path inventory records their byte-identical aliases. These rows concern the mathematics read in the images, not the presence of an image file in the target.
+Image names below are relative to `attachments/`. The source-path inventory records their byte-identical aliases.
+These rows concern the mathematics read in the images, not the presence of an image file in the target.
 
 | Source image | Status | Target and remaining work |
 | --- | --- | --- |
@@ -51,7 +54,9 @@ Image names below are relative to `attachments/`. The source-path inventory reco
 
 ## Syllabi and reference attachments
 
-The syllabus crops were read as topic lists, not as unwritten theorem proofs. A named topic does not create an obligation to invent a chapter during migration. Preserve their reading-list role separately from the private study plans that embed them.
+The syllabus crops were read as topic lists, not as unwritten theorem proofs.
+A named topic does not create an obligation to invent a chapter during migration.
+Preserve their reading-list role separately from the private study plans that embed them.
 
 | Source, relative to `attachments/` | Status | Disposition |
 | --- | --- | --- |

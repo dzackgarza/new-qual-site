@@ -428,3 +428,8 @@ of public mathematical remarks.
 - **Evidence:** the page says module pullback is right exact and “preserves everything”, then presents extension by zero and exceptional inverse image as functors on sheaves of sets for a general continuous map.
 - **Mathematical defect:** tensor pullback need not preserve kernels. For the map from the closed point to `Spec Z`, tensoring multiplication by a prime with its residue field destroys injectivity. Extension by zero for module or abelian sheaves cannot be transferred unchanged to arbitrary sheaves of sets, which lack a distinguished zero section. The exceptional-functor assertions require an appropriate category and hypotheses.
 - **Expected repair:** state the actual exactness properties and give the categories and hypotheses for each operation. This is an independent exposition defect encountered during the source comparison; repair remains open here.
+
+### Flowmark refuses to format the complaints document
+
+- **Observed:** the commit hook at `78ef136f4` reports `reformatting would change what pandoc reads (block 49: BulletList content differs)` for `COMPLAINTS.md` and leaves the file unchanged.
+- **Owner:** the structured-text formatter. Reproduce against this revision and preserve the parsed list content when correcting the formatter. The refusal leaves this document unformatted; it does not establish a defect in the mathematical corpus.

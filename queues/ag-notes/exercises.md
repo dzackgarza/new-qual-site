@@ -1,9 +1,10 @@
 # Worked problems and Hartshorne I–II
 
-Source paths below are relative to the deployed ag-notes root. Target card IDs resolve beneath `corpus/collections/`. A retained error or unfinished argument remains partial when the row identifies mathematical repair.
+Source paths below are relative to the deployed ag-notes root.
+Target card IDs resolve beneath `corpus/collections/`. A retained error or unfinished argument remains partial when the row identifies mathematical repair.
 
 | Source page | Status | Comparison and remaining work |
-|---|---|---|
+| --- | --- | --- |
 | `500_Extra Problems/Gathmann Exercises/2020-08-30.html` | partial | All statements, interpolation hint and worked arguments are in `SRC-GATHMANN-AG`: `P-AGXGATHFINITEPTS`, `P-AGXGATHRADICAL`, `P-AGXGATHTHREEAXES`, `P-AGXGATHRELNSS`, `P-AGXNSSNONCLOSED`. Mathematical repair remains: the interpolation proof omits the coordinate choice and gives an invalid reverse inclusion; the radical conclusion swaps x and y; the axes proof identifies a union of planes as an axis. These defects already occur in the source. |
 | `500_Extra Problems/Gathmann Exercises/2020-09-15.html` | partial | Statements and worked arguments are in `P-AGXGATHIRRCOMPS`, `P-AGXGATHVICLOSURE`, `P-AGXGATHCOVERIRR`, `P-AGXGATHCTSIMAGE`, `P-AGXGATHIDEALQUOT`, `P-AGXGATHPRODIRR`. The ideal-quotient source has no argument beyond a question mark. The source's false assertions about subsets of connected spaces, disjointness of irreducible components, and fibre containment survive and require mathematical repair. |
 | `500_Extra Problems/Gathmann Exercises/2020-09-18.html` | partial | Statements and existing arguments are in `P-AGXGATHRANKONE`, `P-AGXGATHDIMCOVER`, `P-AGXGATHNOETHCPT`, `P-AGXGATHQUADCONE`, `P-AGXEXTENDPUNCT`. The rank-one proof is unfinished in both places. The dimension and extension statements need an open-set hypothesis; the erroneous dimension argument survives. |
@@ -23,10 +24,11 @@ Source paths below are relative to the deployed ag-notes root. Target card IDs r
 
 ## AG HW2 figures
 
-The HTML stores these as `tikzcd/<filename>` relative references. Each is followed by an editable `https://q.uiver.app/?q=...` link in the source HTML.
+The HTML stores these as `tikzcd/<filename>` relative references.
+Each is followed by an editable `https://q.uiver.app/?q=...` link in the source HTML.
 
 | Source locator | SVG filename | Target state |
-|---|---|---|
+| --- | --- | --- |
 | Global sections, initial naturality data | `48ff274935cacf55d4f5221f48e3393907d8cb0e.svg` | Figure absent; prose only. |
 | Global sections, exactness on stalks | `63658d276fec2b07985c4c8e29a9cfdfd72adc45.svg` | Figure absent; prose only. |
 | Global sections, image-kernel diagram chase | `4e19f8ed8851e48a1d8ca0e60bef0b90b0fa7df3.svg` | Figure absent; prose only. |
@@ -34,14 +36,17 @@ The HTML stores these as `tikzcd/<filename>` relative references. Each is follow
 | Support, skyscraper pushforward | `50f83acd8b5c63871c6f50f4c3e9e4a58846863e.svg` | Figure absent; construction described in prose. |
 | Reduction, universal factorization | `4580277378aeac25df7e8aa375057cbd5b434e8d.svg` | Target contains editable TikZ factorization. |
 
-All six SVG payloads are absent from the deployed snapshot (its only SVG is `favicon.svg`). The AG HW2 figure recovery unit is **source-repair**. Recover the missing diagrams from the complete `q.uiver.app` URLs in `500_Extra Problems/Hartshorne Exercises/AG HW2.html` at lines 1047, 1099, 1199 and 1299, immediately after the corresponding `src` refs above. The exponential and reduction diagrams have equivalent editable mathematical content in the target; their missing source SVG bytes do not imply a missing mathematical construction.
+All six SVG payloads are absent from the deployed snapshot (its only SVG is `favicon.svg`). The AG HW2 figure recovery unit is **source-repair**. Recover the missing diagrams from the complete `q.uiver.app` URLs in `500_Extra Problems/Hartshorne Exercises/AG HW2.html` at lines 1047, 1099, 1199 and 1299, immediately after the corresponding `src` refs above.
+The exponential and reduction diagrams have equivalent editable mathematical content in the target; their missing source SVG bytes do not imply a missing mathematical construction.
 
 ## Hartshorne I–II
 
-All targets in this table are beneath `corpus/collections/SRC-TEXT-HART77/`. Each section's ordered target card addresses are given by its `index.md` membership. The membership was used to locate cards, then each corresponding statement and source hint/solution was read. Existing added target solutions do not supply evidence for preserving omitted source hints.
+All targets in this table are beneath `corpus/collections/SRC-TEXT-HART77/`. Each section's ordered target card addresses are given by its `index.md` membership.
+The membership was used to locate cards, then each corresponding statement and source hint/solution was read.
+Existing added target solutions do not supply evidence for preserving omitted source hints.
 
 | Source page and explicit variants | Status | Comparison and remaining work |
-|---|---|---|
+| --- | --- | --- |
 | `Hartshorne/1_Hartshorne/1_1x.html`; earlier `1_Hartshorne/1_1.html` | partial | I.1.1–12 statements and the conic, twisted-cubic, and component-decomposition arguments survive. The earlier variant's incorrect union calculation in I.1.3 is corrected in `P-AGHTHREECOMP`. The later page's HTML title attributes contain real solutions; these were read. I.1.4's alternative hyperbola/projection argument is absent from `P-AGHPRODTOP`; it incorrectly treats projections of closed sets as closed and needs an explicit mathematical disposition. The diagonal argument survives. I.1.11's link to the complete-intersection definition in I.2.17 is omitted. |
 | `Hartshorne/1_Hartshorne/1_2x.html`; earlier `1_Hartshorne/1_2.html` | partial | I.2.1–17 statements survive except I.2.16(b): `P-AGH216INTERSECT` replaces the source's malformed projective-conic equation `xy-zw` in projective 2-space with an affine parabola. Resolve the source statement against Hartshorne instead of silently substituting a different example. Cone and ruled-quadric figures in I.2.10 and I.2.15 are absent from `P-AGH210CONE` and `P-AGH215QUADRIC`; exact source refs are `attachments/2022-09-17_22-10-43.png` and `attachments/2022-09-17_22-24-16.png`. The earlier variant lacks these figures. |
 | `Hartshorne/1_Hartshorne/1_3x.html`; earlier `1_Hartshorne/1_3.html` | partial | I.3.1–21 statements survive. I.3.7's hint uses I.3.5 and I.3.1(e), but `P-AGH37HYPMEETS` retains only the former relation; restore the latter ingredient. I.3.12's reduction hint omits the reference to 3.2(c). The I.3.15 universal-property diagram is expressed by the target's full universal-property statement. Source SVG `tikzcd/6ac85ba25f32bb0148e3bd94cc8a10e85f2e22dd.svg` is absent; its quiver URL is at source line 1478. The earlier variant has the same mathematics, with spelling/reference differences. |
@@ -64,12 +69,13 @@ All targets in this table are beneath `corpus/collections/SRC-TEXT-HART77/`. Eac
 
 I.7.6 also omits the source hint's use of theorem I.7.7 before treating curves.
 
-The I.2/I.5 PNGs survive in the target assets, but their use and image-identification questions are absent from the named exercise cards. Each absent SVG listed above has a surviving complete quiver URL in the named HTML; the mathematical content of those Hartshorne diagrams is restated in the named target, so recovering those SVG bytes is not required to recover a missing mathematical claim.
+The I.2/I.5 PNGs survive in the target assets, but their use and image-identification questions are absent from the named exercise cards.
+Each absent SVG listed above has a surviving complete quiver URL in the named HTML; the mathematical content of those Hartshorne diagrams is restated in the named target, so recovering those SVG bytes is not required to recover a missing mathematical claim.
 
 ## Native authored companions
 
 | Source | Status | Comparison and remaining work |
-|---|---|---|
+| --- | --- | --- |
 | `500_Extra Problems/Gathmann Exercises/problems.tex` | partial | Native compilation of the five dated problem sets, including their unfinished solutions, local-ring/stalk definitions and morphism-coordinate-ring proposition. Those mathematical bodies match the dated HTML and the named Gathmann target cards. Editable source is preserved at `7eafedfc04579791477d2463cd35548ad398c9c9:assets/attachments/intermediate/ag-notes-native/problems.tex`; remaining mathematical work is specified in the dated rows above. The neighbouring `problems.pdf` has a separate document-comparison entry in the main queue. |
 | `500_Extra Problems/Rising Sea Exercises/Algebraic_Geometry.tex` | partial | Native compilation of 1.3H,K,L,P,Q with their unfinished arguments and editable TikZ diagrams. Mathematical content survives in the named Vakil target cards, including the source's mistakes. The target corrects the source's reversed functor direction in the statement of K. Editable TeX and TikZ are preserved at `7eafedfc04579791477d2463cd35548ad398c9c9:assets/attachments/intermediate/ag-notes-native/Algebraic_Geometry.tex`; unfinished or incorrect arguments remain work in the dated rows above. |
 | `500_Extra Problems/Rising Sea Exercises/Makefile` | reference-only | Build recipe assembles the two dated sections and invokes the old LaTeX preview. It adds no mathematical content. The retained exercise collection is the useful reading destination; native TeX preservation is listed above. |
@@ -78,4 +84,5 @@ The I.2/I.5 PNGs survive in the target assets, but their use and image-identific
 
 The useful image-presheaf observation survives in `corpus/theory/Algebraic_Geometry/D-A7LCT.md`. The right-adjoint/left-adjoint limit statements and Hom exactness survive in `T-DEFRAPL.md`. Filtered-colimit exactness and its use for stalks survive in `P-AGH212STALKEXACT.md`. These do not require duplicate cards.
 
-The remaining tail is a **source-repair** unit: the unqualified claim about finite limits in “most categories”, the wrongly typed Hom functor into C, the false right-adjoints/colimits sentence, and the sheafification/exactness recollection need correction and explicit disposition. The repeated equations `x^2-y^q=1`, `x^p-y^2=1` have no question, hypotheses or explanation in this source; retain them as an unresolved source fragment, not an invented exercise.
+The remaining tail is a **source-repair** unit: the unqualified claim about finite limits in “most categories”, the wrongly typed Hom functor into C, the false right-adjoints/colimits sentence, and the sheafification/exactness recollection need correction and explicit disposition.
+The repeated equations `x^2-y^q=1`, `x^p-y^2=1` have no question, hypotheses or explanation in this source; retain them as an unresolved source fragment, not an invented exercise.

@@ -1,13 +1,14 @@
 # AG reading-source migration comparison
 
-Source: deployed ag-notes snapshot `/var/www/ag_notes/`. Targets are current `corpus/` and `wiki/`. Theory IDs name files under `corpus/theory/Algebraic_Geometry/` unless indicated otherwise; Hartshorne problem IDs name files under `corpus/collections/SRC-TEXT-HART77/`. Statements, hypotheses, examples, hints, footnotes and diagrams were compared directly. Status records transfer, not correctness certification.
+Source: deployed ag-notes snapshot `/var/www/ag_notes/`. Targets are current `corpus/` and `wiki/`. Theory IDs name files under `corpus/theory/Algebraic_Geometry/` unless indicated otherwise; Hartshorne problem IDs name files under `corpus/collections/SRC-TEXT-HART77/`. Statements, hypotheses, examples, hints, footnotes and diagrams were compared directly.
+Status records transfer, not correctness certification.
 
 ## Reading notes
 
 The first three rows occur under both `0_Study Guides/Notes/` and `0_Study Guides/Reading Notes/`.
 
 | Relative source | Status | Retained content and exact remainder |
-|---|---|---|
+| --- | --- | --- |
 | `1_Hartshorne/1_1x.html` | partial | Main topology/ideal dictionary, dimensions, coordinate rings and localization: `D-BIVAU`, `T-JRTS2`, `PR-7OT2Z`, `D-9DIKB`, `PR-TNVSI`, `D-5LJUX`, `PR-VARHT`, `D-VARREG`. Missing from these targets: opening vanishing-set union/product and intersection/sum formulas, ideal-of-union formula, regular-function intersection in the function field; cofinite-topology PID/factorization hint; irreducibility exercise without Nullstellensatz; explicit maximal-ideal generators `(x_i-a_i)`; realization of every finitely generated domain as a coordinate ring; quasi-affine dimension/closure equality. `D-5LJUX` narrows the general-field transcendence-degree assertion to algebraically closed fields. `PR-VARHT` narrows the Noetherian-domain UFD criterion to normal domains and adds a false affine twisted-cubic three-generator claim. Correct these target changes and the source's inclusion/transcendence-base typos. |
 | `1_Hartshorne/1_2x.html` | partial | `D-CP2MH`, `D-DEFGRRNG`, `D-VARQAP` retain projective varieties, graded rings, homogeneous ideals and charts; `P-AGH23ZIPROPS` retains projective ideal/vanishing operations. Outstanding: homogeneous-ideal closure under sum/product/intersection/radical, primality tested on homogeneous elements, and the stars-and-bars degree-three monomial correspondence. `P-AGH212DUPLE` retains the binomial monomial count but not that argument. Both `2022-10-08_18-48-17.png` and `2022-10-08_19-05-22.png` are readable variants of this correspondence; the latter occurs in both Notes and Reading Notes figure directories. Preserve one complete semantic rendition and correct the source variable-count mismatch. |
 | `2_Hartshorne/2_1x.html` | partial | Main definitions: `D-RCCFY`, `D-0QSI0`, `T-3VX80`, `D-A7LCT`, `D-VJFAP`, `PR-IP6ZG`, `D-UDIVH`, `D-MODPULL`. Exact constructions: `P-AGH2110DIRLIM`–`P-AGH2113ESPETALE`, `P-AGH2114SUPPORT`, `P-AGH2115SHEAFHOM`, `P-AGH2116FLASQUE`, `P-AGH2117SKYSCRAPER`, `P-AGH2119EXTZERO`, `P-AGH2121VARSHEAVES`, `P-AGH2122GLUESHEAVES`. These retain limits, support, sheaf Hom, skyscraper and extension-by-zero sections/stalks, ideal sheaves and cocycle gluing. `D-VARREG` retains the regular-function sheaf/local ring; `P-AGH211CONSTSHEAF` retains locally constant functions; `P-AGH212STALKEXACT` retains stalk exactness. Outstanding: explicit inverse-image presheaf `U -> colim_{V containing f(U)} G(V)`, restriction-stalk equality, constant-sheaf sections `A^(pi_0 U)` when components are open, and regular-function sheaf locality hint. The q.uiver payload for `4f01b3b5bc83e9e5680025fcbbaf58722f3d113b` is the eta/restriction square and is retained in `D-DEFNATTR`; it needs no recovery. `FE-SHFISOSTALKS` adds the false claim that double-cover pushforward on S1 is not locally constant; correct that target error. |
@@ -21,10 +22,12 @@ The first three rows occur under both `0_Study Guides/Notes/` and `0_Study Guide
 
 ## McKernan AG 1
 
-`0_Study Guides/Notes/Mckernan AG 1.html` is **partial**. The complete lecture sequence was read. The table identifies transferred mathematics and the source-specific remainder. Source prompts are not replaced by a different example with the same topic.
+`0_Study Guides/Notes/Mckernan AG 1.html` is **partial**. The complete lecture sequence was read.
+The table identifies transferred mathematics and the source-specific remainder.
+Source prompts are not replaced by a different example with the same topic.
 
 | Source locator | Retained target content | Remaining content |
-|---|---|---|
+| --- | --- | --- |
 | Lecture 1 | `D-BIVAU`, `PR-7OT2Z`, `T-JRTS2`, `D-9DIKB`, `PR-TNVSI`. | Topology-axiom proof, radical-is-an-ideal exercise, Noetherian induction, quadrics cutting out at most 2n general-position points, specified nodal/cuspidal irreducibility exercises; I.1 formula gaps above. |
 | Lecture 2 | `D-DEFINTEG`, `D-DEFINTCL`, `T-JRTS2`; `P-HCAO33` parts 2–5 retain finite-module integrality, adjoining integral elements, integral closure as ring and the subring-field consequence. | Polynomial localization k[x,1/f] never a field; finitely-generated-field-algebra/Zariski-lemma assertion beyond Nullstellensatz forms. Correct R/F base confusion in source criterion. |
 | Lecture 3 | `D-DEFFFF` retains full subcategories and equivalence criterion; `PR-SCHFOP` supplies only the scheme-specific Yoneda statement. | General locally-small definition, Yoneda embedding/full faithfulness, representing-object uniqueness; parabola/nodal parametrizations; Jacobian-conjecture prompt. Correct source twisted-cubic A2 to A1. |
@@ -45,10 +48,12 @@ The first three rows occur under both `0_Study Guides/Notes/` and `0_Study Guide
 
 ## Fulton figures
 
-All source filenames below are relative to `Fulton/figures/`. Every image was viewed; the text-bearing images were also viewed at full resolution. All are readable. A figure's content may be represented by authored equations, but a different example does not preserve its specific computation.
+All source filenames below are relative to `Fulton/figures/`. Every image was viewed; the text-bearing images were also viewed at full resolution.
+All are readable.
+A figure's content may be represented by authored equations, but a different example does not preserve its specific computation.
 
 | Source image | Status | Mathematical comparison |
-|---|---|---|
+| --- | --- | --- |
 | `2022-10-18_15-33-37.png` | partial | Cone and dual lattice diagram for the quadric cone in `Fulton/0 Notes.html`, Examples. `FE-TORCD` gives the same degree-two semigroup algebra; preserve the paired cone/lattice picture alongside the computation. |
 | `2022-10-18_15-33-47.png` | migrated | Quadric cone surface drawing, semantically retained by `wiki/algebraic-geometry/toric/affine-computations.md` and its quadric-cone surface plot. |
 | `2022-10-18_15-36-53.png` | partial | Projective-line fan and ring/space gluing diagram `C[x^-1] -> C[x,x^-1] <- C[x]`, with the reversed open embeddings. The toric dictionary gives the general construction; retain this explicit diagram in the projective-line example. |
@@ -65,7 +70,10 @@ All source filenames below are relative to `Fulton/figures/`. Every image was vi
 
 ## Navigation and empty headings
 
-These HTML pages have only chapter/section headings, backlinks or generated child-page lists. Raw HTML checks found no additional mathematical title payloads or images. Root `1_Hartshorne.html`, `2_Hartshorne.html`, `Fulton.html` are navigation; `2_Hartshorne/2_1.html` is heading-only. Root I exercise-page aliases are listed in the worked-source comparison.
+These HTML pages have only chapter/section headings, backlinks or generated child-page lists.
+Raw HTML checks found no additional mathematical title payloads or images.
+Root `1_Hartshorne.html`, `2_Hartshorne.html`, `Fulton.html` are navigation; `2_Hartshorne/2_1.html` is heading-only.
+Root I exercise-page aliases are listed in the worked-source comparison.
 
 The following relative paths occur under **both** `0_Study Guides/Notes/` and `0_Study Guides/Reading Notes/`:
 
@@ -80,10 +88,12 @@ The following relative paths occur under **both** `0_Study Guides/Notes/` and `0
 
 ## Hartshorne III and IV exercise pages
 
-All target IDs below are files under `corpus/collections/SRC-TEXT-HART77/`. The collection index supplies the individual source exercise locators. Each statement, subpart, displayed formula, mathematical footnote and hint was read against its target. Source task tags and backlinks are navigation.
+All target IDs below are files under `corpus/collections/SRC-TEXT-HART77/`. The collection index supplies the individual source exercise locators.
+Each statement, subpart, displayed formula, mathematical footnote and hint was read against its target.
+Source task tags and backlinks are navigation.
 
 | Exact deployed source | Status | Target and disposition |
-|---|---|---|
+| --- | --- | --- |
 | `Hartshorne/3_Hartshorne/301x.html` | reference-only | Commentary introducing exercises only; no posed mathematics. |
 | `Hartshorne/3_Hartshorne/302x.html` | partial | III.2.1–7, `P-AGH321CONSTSHEAFAFFLINE` through `P-AGH327CIRCLE`: mathematical content present. Restore the source difficulty star on III.2.1(b). |
 | `Hartshorne/3_Hartshorne/303x.html` | partial | III.3.1–8, `P-AGH331REDAFFINE` through `P-AGH338NONNOETHFAIL`: mathematical content and hints present. Restore III.3.6(b) difficulty star in `P-AGH336QCOHINJECTIVES`. |
@@ -103,7 +113,11 @@ All target IDs below are files under `corpus/collections/SRC-TEXT-HART77/`. The 
 | `Hartshorne/4_Hartshorne/4_5x.html` | migrated | IV.5.1–7, `P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION` through `P-AGH457AUTOMORPHISMSGENUSTHREE`: all source subparts, dimension-count hints and mathematical footnotes retained, including Enriques–Petri and general trivial automorphism-group assertion. |
 | `Hartshorne/4_Hartshorne/4_6x.html` | migrated | IV.6.1–9, `P-AGH461RATIONALQUARTICONUNIQUEQUADRIC` through `P-AGH469NONSINGULARSURFACECONTAININGACURVE`: all mathematical content and hints retained, including the Bertini-on-blowup construction. |
 
-The heading-only pages `Hartshorne/3_Hartshorne/301.html`, `302.html`, `303.html`, `304.html`, `305.html`, `306.html`, `307.html`, `308.html`, `309.html`, `310.html`, `311.html`, `312.html` (all relative to `Hartshorne/3_Hartshorne/`) are reference-only. Likewise `Hartshorne/4_Hartshorne/4_3.html`, `4_4.html`, `4_5.html`, `4_6.html` (all relative to `Hartshorne/4_Hartshorne/`) are heading-only reference pages. These have no hidden mathematical title payloads or mathematical image elements. Chapter III–IV exercise comparisons have no unread residue. Their partial rows identify content or source-annotation gaps, not unfinished source reads.
+The heading-only pages `Hartshorne/3_Hartshorne/301.html`, `302.html`, `303.html`, `304.html`, `305.html`, `306.html`, `307.html`, `308.html`, `309.html`, `310.html`, `311.html`, `312.html` (all relative to `Hartshorne/3_Hartshorne/`) are reference-only.
+Likewise `Hartshorne/4_Hartshorne/4_3.html`, `4_4.html`, `4_5.html`, `4_6.html` (all relative to `Hartshorne/4_Hartshorne/`) are heading-only reference pages.
+These have no hidden mathematical title payloads or mathematical image elements.
+Chapter III–IV exercise comparisons have no unread residue.
+Their partial rows identify content or source-annotation gaps, not unfinished source reads.
 
 ## Curve reading notes
 
