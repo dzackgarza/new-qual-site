@@ -125,10 +125,10 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/counterexamples.md` — no stance revision
 - [x] `wiki/topology/covering-spaces/covering-spaces.md` — no stance revision; six doubled `assets/assets/` image paths render broken
 - [x] `wiki/topology/covering-spaces/index.md` — no stance revision
-- [ ] `wiki/topology/cw-complexes/cw-complexes.md`
-- [ ] `wiki/topology/cw-complexes/index.md`
-- [ ] `wiki/topology/degree/fixed-points-and-degree.md`
-- [ ] `wiki/topology/degree/index.md`
+- [x] `wiki/topology/cw-complexes/cw-complexes.md` — no stance revision; four doubled `assets/assets/` image paths render broken
+- [x] `wiki/topology/cw-complexes/index.md` — no stance revision
+- [x] `wiki/topology/degree/fixed-points-and-degree.md` — no stance revision
+- [x] `wiki/topology/degree/index.md` — no stance revision
 - [ ] `wiki/topology/fundamental-group/compute-pi-1.md`
 - [ ] `wiki/topology/fundamental-group/index.md`
 - [ ] `wiki/topology/fundamental-group/theorems.md`
