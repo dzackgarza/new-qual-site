@@ -367,23 +367,60 @@ arguments in more detail than `[Hart10]`.”
 A resource note should identify the work, its subject, and its relation to other
 sources. Narrative about confusion, praise, reader effort, book length, or how
 to use the book adds opinion and instructions while omitting bibliographic
-information. Replace each evaluative claim with a comparison that a reader can
-check, or delete it.
+information. Vague praise and claims that one text is better, clearer, or more
+rigorous are not evidence. Replace each evaluative claim with a comparison that
+names a checkable difference, or delete it.
 
 ### `RESOURCE-04`: Do not judge the reader’s competence or education
 
 **Bad:** “A rigorous book for readers who failed to learn the subject
 correctly.”
 
-**Good:** “`[Shaf13]` presents a systematic treatment of the subject with
-proofs.”
+**Good:** “`[Shaf13]` covers [documented topics] in [cited sections].”
 
 Resource prose must describe the work, not classify readers as deficient,
 unprepared, forgetful, or properly educated. Claims such as “real proofs” also
 disparage other sources without identifying a mathematical difference. This
 language turns a bibliography into a judgment about the reader and makes a
-recommendation depend on an invented personal history. State the coverage,
-level, proof style, and relation to another source when those facts are known.
+recommendation depend on an invented personal history. State documented
+coverage and source relations. Do not use a reader diagnosis as a reason to
+choose a book.
+
+### `RESOURCE-05`: Replace quality judgements with evidence
+
+**Bad:** “The clearest and most rigorous introduction to the subject.”
+
+**Good:** “The text defines [term], proves [theorem], and treats [topic] in
+§§[locations].”
+
+Words such as “clear”, “rigorous”, “complete”, “systematic”, and “accessible”
+assert a quality without stating its measure. They make a resource annotation
+sound authoritative while giving the reader no fact to check. Record contents,
+theorems, sections, prerequisites, or a documented source relation instead.
+
+### `RESOURCE-06`: Do not present ordinary textbook features as distinctions
+
+**Bad:** “A book with proofs and a systematic treatment.”
+
+**Good:** “The text proves [named theorem] after introducing [named hypotheses]
+in §§[locations].”
+
+Definitions, theorems, proofs, and an organized presentation are ordinary
+features of a mathematics textbook. Mentioning them without a named scope or
+location supplies no information and can imply that another text lacks them.
+Describe the mathematical material that distinguishes the resource.
+
+### `RESOURCE-07`: Keep comparisons professional and checkable
+
+**Bad:** “This is the serious book; the other text leaves the real theory out.”
+
+**Good:** “`[Shaf13]` treats [topic] in §§[locations]; `[Hart10]` treats
+[different topic or section] in §§[locations].”
+
+A comparison that ranks texts or assigns motives to their authors is opinion,
+not bibliography. It can denigrate a source without identifying a difference
+in mathematical coverage. Compare named topics, results, notation, sections,
+or prerequisites, and omit status claims about books or readers.
 
 ## Precision policies
 
