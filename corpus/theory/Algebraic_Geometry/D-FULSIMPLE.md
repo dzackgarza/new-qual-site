@@ -43,7 +43,7 @@ The two are polar duals, which is the general picture — $P$ is simple exactly 
 :::
 
 ::: {.remark}
-The direction of the correspondence is the thing to get right, and the normal fan is what fixes it.
+The normal fan determines the direction of the correspondence.
 Vertices of $P$ give the maximal cones of $\Sigma_P$, and a maximal cone is spanned by the facet normals at its vertex.
 So "each vertex meets exactly $d$ facets" is literally "each maximal cone has exactly $d$ rays", which is simpliciality of the fan.
 The facets of $P$ contribute only the rays, and their internal shape is irrelevant.
