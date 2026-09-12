@@ -732,7 +732,7 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-UWYTU.md` | `714604e94e1813d428e46b2e633e2a006707df11` | `714604e94e1813d428e46b2e633e2a006707df11` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-UWZPY.md` | `95c10208c3718f1a5b06cdccff32f1a8461de07a` | `95c10208c3718f1a5b06cdccff32f1a8461de07a` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-UZDCX.md` | `776f506dc77559bf7f60d0c323b1e35f955a9f18` | `776f506dc77559bf7f60d0c323b1e35f955a9f18` | Read; retained |
-| [ ] | `corpus/problems/Algebra/P-V23K4.md` | `a25cad04724c2f3a792d2975b11a38ec66192e8d` | — | Pending |
+| [x] | `corpus/problems/Algebra/P-V23K4.md` | `a25cad04724c2f3a792d2975b11a38ec66192e8d` | `a25cad04724c2f3a792d2975b11a38ec66192e8d` | Read; retained |
 | [ ] | `corpus/problems/Algebra/P-V3DIZ.md` | `f9d354213e25c9d462740285a6d1ccb1c0215e88` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-V45EL.md` | `83410c413e2c1bfb4438af88b498a6b6ff9ae226` | — | Pending |
 | [ ] | `corpus/problems/Algebra/P-V4DTK.md` | `84143a7874d865748950049ad3ab845aad0043df` | — | Pending |
