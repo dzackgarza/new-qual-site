@@ -11,7 +11,5 @@ review: draft
 ---
 
 ::: {.problem}
-Show that, in general, Hn(X) = ⊕
-Y ∈π0(X) Hn(Y ), where π0(X) is the
-set of path-components of X. Thus H0(X) ∼= Zπ0(X).
+Show that, in general, Hn(X) = ⊕ Y ∈π0(X) Hn(Y ), where π0(X) is the set of path-components of X. Thus H0(X) ∼= Zπ0(X).
 :::

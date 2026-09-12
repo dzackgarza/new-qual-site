@@ -11,9 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-The following are covering maps:
-(1) The quotient map R → R/Z.
-(2) The map S1 → S1, eit ↦ eint.
+The following are covering maps: (1) The quotient map R → R/Z. (2) The map S1 → S1, eit ↦ eint.
 (3) The product of covering maps (e.g. Rn → (R/Z)n = Rn/Zn).
 (4) The quotient map Sn → RP n.
 :::

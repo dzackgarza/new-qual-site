@@ -11,6 +11,6 @@ review: draft
 ---
 
 ::: {.problem}
-(From May’s book.) Identify all index 2 subgroups of the free group F2.
-Show that they are all free groups and identify generators for them.
+(From May’s book.)
+Identify all index 2 subgroups of the free group F2. Show that they are all free groups and identify generators for them.
 :::

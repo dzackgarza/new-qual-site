@@ -12,7 +12,5 @@ review: draft
 
 ::: {.problem}
 Do this exercise if you know the basic facts about smooth manifolds.
-Suppose Y and X are smooth n-manifolds, and p: Y → X a smooth, proper map
-whose derivative Dp: TxY → Tp(x)X is an isomorphism for all x ∈ Y . Then p is a
-(finite-sheeted) covering map.
+Suppose Y and X are smooth n-manifolds, and p: Y → X a smooth, proper map whose derivative Dp: TxY → Tp(x)X is an isomorphism for all x ∈ Y . Then p is a (finite-sheeted) covering map.
 :::

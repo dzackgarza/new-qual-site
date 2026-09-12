@@ -11,8 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-The polar decomposition. It is known that every matrix A ∈ SL2(C)
-can be written uniquely as a product UP with U ∈ SU(2) and P positive-definite
-hermitian. Assuming this, deduce a homeomorphism S3 ×(0, ∞)×C → SL2(C). (We
-will soon see that this implies π1SL2(C) = {1}.)
+The polar decomposition.
+It is known that every matrix A ∈ SL2(C) can be written uniquely as a product UP with U ∈ SU(2) and P positive-definite hermitian.
+Assuming this, deduce a homeomorphism S3 ×(0, ∞)×C → SL2(C). (We will soon see that this implies π1SL2(C) = {1}.)
 :::

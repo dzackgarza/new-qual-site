@@ -11,6 +11,6 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that the universal property determines P up to isomorphism. In
-what sense is the isomorphism unique?
+Prove that the universal property determines P up to isomorphism.
+In what sense is the isomorphism unique?
 :::

@@ -11,6 +11,6 @@ review: draft
 ---
 
 ::: {.problem}
-Think of S2 as a tetrahedron, i.e., a ∆-complex with four 2-simplices, six
-1-simplices and four 0-simplices. Show that for this structure
+Think of S2 as a tetrahedron, i.e., a ∆-complex with four 2-simplices, six 1-simplices and four 0-simplices.
+Show that for this structure
 :::
