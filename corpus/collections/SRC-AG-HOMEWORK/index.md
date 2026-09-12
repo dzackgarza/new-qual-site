@@ -36,4 +36,3 @@ source:
 ---
 
 A homework sheet on the opening sections of Hartshorne chapter II: sheaves, their stalks and supports, and the first properties of affine schemes.
-Statements are Hartshorne's; the solutions, strategy notes and counterexamples are the author's own, and several stop at a strategy rather than a finished argument.
