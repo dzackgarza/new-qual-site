@@ -70,7 +70,7 @@ Riemann--Hurwitz confirms it: $-2 = p_0 \cdot (-2) + \deg R$ forces $\deg R = 2p
 
 ::: {.remark title="Why this is the notion Riemann--Hurwitz needs"}
 [[T-LKT0U]] is stated with $\deg R = \sum_p \length (\Omega_{X/Y})_p$ and only becomes $\sum_p (e_p - 1)$ under tameness, and the word "tame" in that statement is defined here.
-The formula with $e_p - 1$ is the one everyone memorises, so the examiner's question is whether one knows it is the special case, and whether one can say which way the inequality runs: wild ramification makes $\deg R$ *larger*, hence makes $g(X)$ larger than the naive count.
+Wild ramification makes $\deg R$ larger than $\sum_p(e_p-1)$, hence makes $g(X)$ larger than the value given by the tame formula.
 The example above is the cleanest evidence, since a degree-$p_0$ self-map of $\PP^1$ with one branch point is impossible under the tame formula.
 
 The unramified condition $e_p = 1$ for all $p$ is the same one appearing in [[D-MORUNR]], and for curves it upgrades to étale for free, since a nonconstant morphism of smooth curves is automatically flat.
