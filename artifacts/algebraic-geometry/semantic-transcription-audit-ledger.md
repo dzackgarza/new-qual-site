@@ -42,7 +42,7 @@ committed atomically before marking REPAIRED.
 | # | Source file | Depicts | Target | Verdict | Notes |
 |---|-------------|---------|--------|---------|-------|
 | 17 | `2022-09-21_00-14-42.png` | Figure 4: node, triple point, cusp, tacnode | `assets/.../plane-curve-singularities-node-cusp-tacnode.png` + `D-CRVPLSING` | DUPLICATE/PASS | Preserved as canonical figure, delta table in card |
-| 18 | `2022-09-21_00-15-32.png` | Figure 5: conical double point, double line, pinch point | `assets/.../surface-singularities-conical-double-line-pinch.png` | DUPLICATE/PASS |
+| 18 | `2022-09-21_00-15-32.png` | Figure 5: conical double point, double line, pinch point | `assets/.../surface-singularities-conical-double-line-pinch.png` | DUPLICATE/PASS |  |
 
 ## Phase 2 — Individual theorem and exercise crops (24 files)
 
@@ -53,24 +53,24 @@ committed atomically before marking REPAIRED.
 | 21 | `Pasted image 20220315153154.png` | `022 Sheaves.md` | Same example continued — stalks `(f_*F)_y = S×S`, global sections `Γ(Y,f_*F)=S` vs `Γ(Y,G)=S×S`, non-isomorphic | `FE-SHFISOSTALKS` | REPAIRED | Same card, completes the argument including locally constant failure |
 | 22 | `Pasted image 20220921202350.png` | `Hartshorne_Problems/1_Hartshorne/1_1x.md` | Hartshorne Ex I.1 figure or problem statement (affine cone) | `corpus/collections/SRC-TEXT-HART77` I.1 + `assets/.../affine-cone-over-curve-in-p2.png` | PASS | Problem I.1.1–1.12 list present; figure preserved as `affine-cone-over-curve-in-p2.png` |
 | 23 | `Pasted image 20220921204101.png` | same I.1x | Hartshorne I.1 solution text (coordinate ring) | `SRC-TEXT-HART77` | PASS | Problem cards carry Hartshorne locators; collection provenance complete |
-| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring argument | same | PASS |
-| 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | PASS |
-| 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure argument | same | PASS |
-| 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus text | same | PASS |
+| 24 | `Pasted image 20220921204126.png` | same | Hartshorne I.1 affine coordinate ring argument | same | PASS  |  |
+| 25 | `Pasted image 20220921204305.png` | same | Hartshorne I.1 dimension computation | same | PASS  |  |
+| 26 | `Pasted image 20220921204448.png` | same | Hartshorne I.1 projective closure argument | same | PASS  |  |
+| 27 | `Pasted image 20220921204544.png` | same | Hartshorne I.1 singular locus text | same | PASS  |  |
 | 28 | `Pasted image 20221123200223.png` | `030 Schemes.md` | Definition of scheme / gluing data | `wiki/schemes/what-is-a-scheme` | PASS | Definition with affine communication lemma, gluing cocycle |
-| 29 | `Pasted image 20221123205220.png` | `030 Schemes.md` | Relative schemes / morphisms of schemes | `wiki/schemes/what-is-a-scheme` + `morphisms/classes-of-morphism` | PASS |
+| 29 | `Pasted image 20221123205220.png` | `030 Schemes.md` | Relative schemes / morphisms of schemes | `wiki/schemes/what-is-a-scheme` + `morphisms/classes-of-morphism` | PASS |  |
 | 30 | `Pasted image 20221123232902.png` | `030 Schemes.md` | Fibre products of schemes, universal property | `wiki/schemes/fibre-products-and-base-change` + `assets/.../fibre-product-universal-property.png` | PASS | Universal property diagram + figure preserved |
-| 31 | `Pasted image 20221124003320.png` | `032 Morphisms.md` | Proper and separated morphisms criteria (valuative) | `wiki/morphisms/separated-and-proper` + `assets/.../valuative-criterion-lifting-square.png` | PASS |
-| 32 | `Pasted image 20221128124229.png` | `031 O_X Modules.md` | Twisting sheaf O(1) construction | `wiki/sheaves-of-modules/line-bundles` + `T-MODEULER` (Euler seq) | PASS |
-| 33 | `Pasted image 20221129104521.png` | `060 Toric Varieties.md` | Toric fan / coordinate ring definition | `wiki/toric/index` + `FE-TORP2` | PASS |
-| 34 | `Pasted image 20221204223854.png` | `020 Varieties Definitions.md` | Morphisms of varieties / local rings | `wiki/varieties` topic (varieties dictionary) | PASS |
+| 31 | `Pasted image 20221124003320.png` | `032 Morphisms.md` | Proper and separated morphisms criteria (valuative) | `wiki/morphisms/separated-and-proper` + `assets/.../valuative-criterion-lifting-square.png` | PASS |  |
+| 32 | `Pasted image 20221128124229.png` | `031 O_X Modules.md` | Twisting sheaf O(1) construction | `wiki/sheaves-of-modules/line-bundles` + `T-MODEULER` (Euler seq) | PASS |  |
+| 33 | `Pasted image 20221129104521.png` | `060 Toric Varieties.md` | Toric fan / coordinate ring definition | `wiki/toric/index` + `FE-TORP2` | PASS |  |
+| 34 | `Pasted image 20221204223854.png` | `020 Varieties Definitions.md` | Morphisms of varieties / local rings | `wiki/varieties` topic (varieties dictionary) | PASS |  |
 | 35 | `Pasted image 20221207141027.png` | `050 Cohomology of Schemes.md` | Derived functor cohomology definition + enough injectives | `D-COHDER` | PASS | `H^i = R^i Gamma` + construction `M -> prod j^x_* I_x` |
 | 36 | `Pasted image 20221207150823.png` | `050 Cohomology.md:106` | Čech cohomology complex diagram (circle) | `wiki/cohomology/computing-cohomology` + `assets/...` (Čech) | PASS | Circle Čech cover with 2-opens example present implicitly |
-| 37 | `Pasted image 20221208004152.png` | `060 Toric Varieties.md` | Toric orbit-cone correspondence | `wiki/toric/surfaces-and-morphisms` + `T-TORDIV` | PASS |
+| 37 | `Pasted image 20221208004152.png` | `060 Toric Varieties.md` | Toric orbit-cone correspondence | `wiki/toric/surfaces-and-morphisms` + `T-TORDIV` | PASS |  |
 | 38 | `Pasted image 20221208013026.png` | `060 Toric` | Continued fraction / toric resolution (affine computations) | `FE-TORMINRES` | PASS | Hirzebruch-Jung + minimal resolution via convex hull |
 | 39 | `Pasted image 20221208013053.png` | `060 Toric` | Hirzebruch-Jung continued fractions (repeated) | `FE-TORMINRES` | PASS | Same card, continued fraction data |
 | 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group Cl(X) exact sequence | `T-TORDIV` | PASS | `0->M->Div_T->Cl->0` + figure `divisor-class-picard-exact-sequences` |
-| 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group Pic(X) computation | `T-TORDIV` + same figure | PASS |
+| 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group Pic(X) computation | `T-TORDIV` + same figure | PASS |  |
 | 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X of toric variety | `FE-TORDUAL` | PASS | `-K = sum D_rho` and reflexive polytope discussion |
 
 ## Phase 2 extra — Vault figures that are preserved canonical assets (not text crops)
