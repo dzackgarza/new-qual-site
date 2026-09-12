@@ -116,9 +116,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/undergraduate/sequences-and-series.md` — no stance revision
 - [x] `wiki/real-analysis/undergraduate/sets-and-compactness.md` — no stance revision; doubled `assets/assets/` image path renders broken (``../../../../assets/assets/figures/2019-12-19-16-49-56.png``)
 - [x] `wiki/real-analysis/undergraduate/theorem-list.md` — no stance revision; three doubled `assets/assets/` image paths render broken (Egorov, Lusin proofs)
-- [ ] `wiki/real-analysis/workshops/index.md`
-- [ ] `wiki/real-analysis/workshops/real-week-1-preliminaries.md`
-- [ ] `wiki/real-analysis/workshops/real-week-2-measure-theory.md`
+- [x] `wiki/real-analysis/workshops/index.md` — no stance revision
+- [x] `wiki/real-analysis/workshops/real-week-1-preliminaries.md` — no stance revision
+- [x] `wiki/real-analysis/workshops/real-week-2-measure-theory.md` — revised: "Lemmas that sometimes show up on quals" → "Lemmas worth knowing"; "Some things that qual questions are commonly based on" → "Some frequently used facts"
 - [ ] `wiki/topology/appendices/appendix.md`
 - [ ] `wiki/topology/appendices/at-course-notes.md`
 - [ ] `wiki/topology/appendices/index.md`

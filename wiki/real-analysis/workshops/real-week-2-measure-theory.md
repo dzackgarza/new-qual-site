@@ -113,7 +113,7 @@ $$
 
 ![](_attachments/Pasted image 20210528184004.png)
 
-- Lemmas that sometimes show up on quals:
+- Lemmas worth knowing:
 
 ![](_attachments/Pasted image 20210528185216.png)
 
@@ -143,7 +143,7 @@ A more precise statement appears in [@Fol13]:
 
 ![](_attachments/Pasted image 20210528185433.png)
 
-Some things that qual questions are commonly based on:
+Some frequently used facts:
 
 ![](_attachments/Pasted image 20210528190107.png)
 
