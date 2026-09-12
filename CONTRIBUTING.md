@@ -662,6 +662,73 @@ Keep source descriptions about the material. An exam's documented format can
 be stated on its exam information page without using it to disparage resources
 or police study methods.
 
+### `RESOURCE-25`: Keep editorial authority within the page's purpose
+
+**Bad:** “The discerning mathematician knows which treatments deserve study.”
+
+**Good:** “The following sources cover [named topics].”
+
+A study wiki serves mathematical exposition, reference, and navigation. Its
+author does not thereby acquire authority to rank scholars, define competent
+study habits, or speak for academic institutions. This is a question of
+editorial role as well as evidence: even a defensible opinion can be misplaced
+in a resource description. State mathematical content and source relations.
+Remove language that positions the writer as an arbiter of readers' ability,
+other authors' standing, or faculty expectations.
+
+### `RESOURCE-26`: Do not invent faculty intentions or evaluation practices
+
+**Bad:** “The committee will notice whether you have mastered these examples.”
+
+**Good:** “The published syllabus lists [topic], [link to syllabus].”
+
+Claims about what examiners know, infer from an application, or value in a
+candidate presume access to their private reasoning. They also make the site
+appear to speak on faculty members' behalf. State documented exam requirements
+with attribution on the relevant exam page. A syllabus establishes its listed
+scope; it does not establish an examiner's motives, attention, or judgement of
+an individual candidate.
+
+### `RESOURCE-27`: Replace competitive study priorities with dependencies
+
+**Bad:** “Finishing the final chapter counts for more than working the earlier
+problems.”
+
+**Good:** “The proof of [result] uses [named earlier result].”
+
+A ranking of study activities assumes the reader's goals, prior knowledge, and
+assessment criteria. Invoking an examiner gives that prescription borrowed
+authority without making it a mathematical dependency. Describe the specific
+results used by later material. Do not turn chapter order or topic coverage
+into a judgement about which study choices deserve credit.
+
+### `RESOURCE-28`: Name applications without dismissing earlier material
+
+**Bad:** “Only in the last part does the theory earn its keep.”
+
+**Good:** “Chapter [location] applies [named theorem] to [named problem].”
+
+A story in which earlier chapters merely accumulate machinery and later ones
+justify it makes a sweeping value judgement about the subject. It supplies no
+specific application and can dismiss independent reasons to study the earlier
+material. Name the theorem, application, and location when that relation helps
+the reader; omit the verdict on where the mathematics becomes worthwhile.
+
+### `RESOURCE-29`: Treat public prose as speech attributed to the site owner
+
+**Bad:** “We know what departments really expect from their candidates.”
+
+**Good:** Attribute a documented requirement to the named department and link
+its published description. Otherwise omit the assertion of institutional insight.
+
+Readers attribute unqualified public statements to the site's owner. Agent-written
+copy can therefore assign that person opinions, institutional authority, or
+claims of insider knowledge they never expressed. This can misrepresent the
+owner's professional relationships, especially when an early-career researcher
+appears to lecture faculty or judge colleagues. Authorship assistance supplies
+no mandate to invent a public persona. Keep claims within the page's purpose
+and attribute institutional statements to their actual source.
+
 ## Precision policies
 
 These policies prevent prose from taking the place of a typed mathematical
