@@ -320,6 +320,37 @@ alone, and never let a turn end with dispositions as its only product. If a sour
 needs no cards, say so in the commit that finishes the source before it, and move to one that
 does.
 
+## Your queues are a product, and a wrong one costs cards
+
+The files under `queues/` and the output of `just unsolved` are what say which source is next
+and which card is still unsolved. They are instruments, not notes: a queue whose counts are
+wrong sends the next worker to the wrong source, and an unsolved-card list that cannot tell a
+solved card from an unsolved one means nobody can see what the corpus still owes.
+
+They are also routinely wrong in a specific way — OCR-derived problem counts. A queue entry
+saying a PDF holds four problems when it holds fourteen is not a small error; it decides how
+many cards get authored. Count from the source document, never from the inventory, and when
+they disagree, correct the queue in the commit that cards the source.
+
+Treat a queue defect as work, not as noise to steer around. If the regeneration is wrong, fix
+the regenerator; if an entry is unreadable, resolve it rather than skipping past it; if the
+list disagrees with the corpus, find out which is lying before authoring against either.
+
+## Review your own session for drift
+
+Before starting a new source, look back at the one you just finished and ask what it produced:
+
+- **Cards and solutions, or dispositions and normalisations?** The former is the product. A
+  session whose output is decisions about sources has left the corpus the same size.
+- **Did the corpus counts move?** If `just unsolved` and the queue counts are unchanged while
+  commits landed, the commits were not authoring.
+- **Is something making every source cost more than it should?** An extraction step you redo by
+  hand each time, a check that reformats files you did not touch, a count you have learned not
+  to trust. That is an obstruction, and working around it silently is how it survives to cost
+  the next worker the same.
+
+Fix the obstruction where it lives, with its regression, and note it in the queue.
+
 ## Repair the tooling that wastes your turns
 
 When the same friction appears twice, stop and fix it at its owner rather than working around
