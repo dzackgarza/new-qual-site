@@ -23,6 +23,17 @@ source:
     - P-PERUTZ08-1.5
     - P-PERUTZ08-1.6
     - P-PERUTZ08-1.7
+  - name: 2. The fundamental group of the circle
+    problems:
+    - P-PERUTZ08-2.1
+    - P-PERUTZ08-2.2
+  - name: 3. Van Kampen in theory
+    problems:
+    - P-PERUTZ08-3.1
+    - P-PERUTZ08-3.2
+    - P-PERUTZ08-3.3
+    - P-PERUTZ08-3.4
+    - P-PERUTZ08-3.5
   date:
     kind: academic-term
     term: fall

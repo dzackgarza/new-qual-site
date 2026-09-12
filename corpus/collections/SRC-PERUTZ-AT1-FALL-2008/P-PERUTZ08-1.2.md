@@ -16,10 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a nonempty space. Show that the following conditions are equivalent:
+Let $X$ be a nonempty space.
+Show that the following conditions are equivalent:
 
 1. $X$ is homotopy equivalent to a one-point space.
+
 2. For every $x\in X$, the inclusion $\{x\}\hookrightarrow X$ is a homotopy equivalence.
+
 3. For some $x\in X$, the inclusion $\{x\}\hookrightarrow X$ is a homotopy equivalence.
+
 4. For some $x\in X$, the constant map $c_x:X\to X$ is homotopic to $\operatorname{id}_X$.
 :::
