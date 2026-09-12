@@ -76,7 +76,7 @@ These two are not theorem text. They are figures preserved byte-identical.
 | 37 | `Pasted image 20221208004152.png` | `060 Toric Varieties.md` | Toric orbit-cone correspondence | `wiki/toric/surfaces-and-morphisms` | VERIFIED | Image read 2026-09-12: toric orbit-cone with P^2 orbits listed by vanishing coords. Matches wiki/toric/the-dictionary orbit-cone and surfaces-and-morphisms; no gap. |
 | 38 | `Pasted image 20221208013026.png` | `060 Toric` | Continued fraction / toric resolution | `FE-TORMINRES` | VERIFIED | Image read 2026-09-12: exercise cone <2e1-e2, -e1+2e2> Cartier condition a1=a2 mod3 etc. Matches FE-TORMINRES continued-fraction resolution and Cartier criterion; no gap. |
 | 39 | `Pasted image 20221208013053.png` | `060 Toric` | Hirzebruch-Jung continued fractions | `FE-TORMINRES` | VERIFIED | Image read 2026-09-12: cone <2e1-e2, e2> cone over conic, D1,D2 not Cartier but 2D1,2D2 are. Matches FE-TORMINRES toric singularity Cartier example and HJ; no gap. |
-| 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group | `T-TORDIV` | CANDIDATE |  |
+| 40 | `Pasted image 20221208015307.png` | `060 Toric` | Toric divisor class group | `T-TORDIV` | VERIFIED | Image read 2026-09-12: fan for P2, anticanonical polytope P={m | <m,ui> >=-1}, Conv etc. Matches T-TORDIV class group exact sequence and wiki polytopes-and-divisors; no gap. |
 | 41 | `Pasted image 20221208015606.png` | `060 Toric` | Toric Picard group | `T-TORDIV` | CANDIDATE |  |
 | 42 | `Pasted image 20221208020507.png` | `060 Toric` | Anticanonical divisor -K_X | `FE-TORDUAL` | CANDIDATE |  |
 
