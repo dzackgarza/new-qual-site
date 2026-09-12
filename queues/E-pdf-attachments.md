@@ -590,13 +590,13 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 0 problems) — complex-analysis
 
-- [ ] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017
+- [x] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: canonical retained copy of René L. Schilling’s *Measures, Integrals & Martingales* (2nd ed.) solution manual; exact byte duplicate of `solutions-mims-2ed.pdf`. This is textbook solution/reference material already linked from `wiki/real-analysis/resources/solutions.md`, so intake stops at the existing reference representation rather than manufacturing qualifying-exam cards.
 
 - [ ] [Series_Problems_.pdf](assets/attachments/extracted/Series_Problems_.md) (566L, 22 problems) — UNL — applied-algebra
 
-- [ ] [solhwg.pdf](assets/attachments/extracted/solhwg.md) (177L, 12 problems) — applied-algebra
+- [x] [solhwg.pdf](assets/attachments/extracted/solhwg.md) (177L, 12 problems) — applied-algebra — disposition 2026-09-12: Math 114 Galois-theory homework solution packet dated April 4, 2006, ingested as `SRC-MATH114-GALOIS-HOMEWORK-2006`. Problem sets 8 and 9 contribute six source-order problems each, represented as `P-M114-8-01` through `P-M114-8-06` and `P-M114-9-01` through `P-M114-9-06`; source-supplied worked solutions remain external provenance rather than duplicate local solution sections.
 
-- [ ] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017
+- [x] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: René L. Schilling, *Measures, Integrals & Martingales* (2nd ed.) solution manual, corrected July 2019; byte-identical to `Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf` (SHA-256 `703be127b8cc7dbdf0903d1addb98941f183393e61c60423b356119b06f65081`). It is already retained on the real-analysis solutions resource page, so no duplicate card collection is manufactured.
 
 - [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 3 problems) — applied-algebra — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection.
 
