@@ -16,11 +16,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:A\to B$ be a surjective function. Define a relation on $A$ by
+Let $f:A\to B$ be a surjective function.
+Define a relation on $A$ by
 \[
 a_0\sim a_1\quad\Longleftrightarrow\quad f(a_0)=f(a_1).
 \]
 
 1. Show that $\sim$ is an equivalence relation.
-2. Let $A^*$ be the set of equivalence classes. Show that there is a bijective correspondence between $A^*$ and $B$.
+
+2. Let $A^*$ be the set of equivalence classes.
+   Show that there is a bijective correspondence between $A^*$ and $B$.
 :::

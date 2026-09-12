@@ -17,5 +17,6 @@ For a set $X$, define
 \]
 
 1. Show that $\mathcal B$ is a basis for a topology on $X$.
+
 2. Identify the topology $\mathcal T(\mathcal B)$ for every set $X$, and prove your answer.
 :::

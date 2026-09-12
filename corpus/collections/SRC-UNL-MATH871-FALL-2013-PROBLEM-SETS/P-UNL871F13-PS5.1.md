@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f:X\to Y$ and $g:Y\to Z$ be homeomorphisms. Prove that the inverse map
+Let $f:X\to Y$ and $g:Y\to Z$ be homeomorphisms.
+Prove that the inverse map
 \[
 f^{-1}:Y\to X
 \]

@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X=Y=\mathbb R$. Give $X$ the included-point topology with included point $0$, and give $Y$ the finite-complement topology. Determine whether $(X,\mathcal T_{ip})$ and $(Y,\mathcal T_{fc})$ are homeomorphic, and prove your answer.
+Let $X=Y=\mathbb R$.
+Give $X$ the included-point topology with included point $0$, and give $Y$ the finite-complement topology.
+Determine whether $(X,\mathcal T_{ip})$ and $(Y,\mathcal T_{fc})$ are homeomorphic, and prove your answer.
 :::

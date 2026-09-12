@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be a metrizable space, let $p\in X$, and let $C\subseteq X$ be closed with $p\notin C$. Prove that there are disjoint open sets $U,V\subseteq X$ such that
+Let $X$ be a metrizable space, let $p\in X$, and let $C\subseteq X$ be closed with $p\notin C$.
+Prove that there are disjoint open sets $U,V\subseteq X$ such that
 \[
 p\in U,\qquad C\subseteq V.
 \]

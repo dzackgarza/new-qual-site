@@ -15,7 +15,8 @@ Let $\{X_\alpha\}_{\alpha\in I}$ be topological spaces and give
 \[
 \prod_{\alpha\in I}X_\alpha
 \]
-the product topology. For every $\beta\in I$, prove that the coordinate projection
+the product topology.
+For every $\beta\in I$, prove that the coordinate projection
 \[
 \pi_\beta:\prod_{\alpha\in I}X_\alpha\longrightarrow X_\beta
 \]
