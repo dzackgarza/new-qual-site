@@ -16,11 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a continuous strictly increasing function with $f(0)=0$ and inverse $f^{-1}$. Show that
+Let $f$ be a continuous strictly increasing function with $f(0)=0$ and inverse $f^{-1}$.
+Show that
 \[
 \int_0^a f(x)\,dx+\int_0^b f^{-1}(x)\,dx\ge ab
 \]
-for all positive real numbers $a,b$. Use this to prove Young's inequality: if $p,q>0$ satisfy $1/p+1/q=1$, then for all $a,b>0$,
+for all positive real numbers $a,b$.
+Use this to prove Young's inequality: if $p,q>0$ satisfy $1/p+1/q=1$, then for all $a,b>0$,
 \[
 \frac{a^p}{p}+\frac{b^q}{q}\ge ab.
 \]

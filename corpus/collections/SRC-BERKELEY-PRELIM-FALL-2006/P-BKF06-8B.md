@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ Hermitian matrix and $B$ an $n\times n$ positive-definite complex matrix. Prove that there is an invertible complex $n\times n$ matrix $S$ such that
+Let $A$ be an $n\times n$ Hermitian matrix and $B$ an $n\times n$ positive-definite complex matrix.
+Prove that there is an invertible complex $n\times n$ matrix $S$ such that
 \[
 S^*AS
 \]

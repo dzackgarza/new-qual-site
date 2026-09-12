@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-The number of nonsingular matrices is the number of bases which is $( p ^ { n } - 1 ) ( p ^ { n } - p ) . . . ( p ^ { n } -$ $p ^ { n - 1 } )$ (product of number of ways to choose first, second, ...n’th basis vectors). So $r =$ $0 + 1 + \ldots ( n - 1 ) = ( n - 1 ) n / 2$ and $s = ( p ^ { n } - 1 ) ( p ^ { n - 1 } - 1 ) . . . ( p - 1 )$ is congruent to $( - 1 ) ^ { n }$ (mod $p )$
+The number of nonsingular matrices is the number of bases which is $( p ^ { n } - 1 ) ( p ^ { n } - p ) . . . ( p ^ { n } -$ $p ^ { n - 1 } )$ (product of number of ways to choose first, second, ...n’th basis vectors).
+So $r =$ $0 + 1 + \ldots ( n - 1 ) = ( n - 1 ) n / 2$ and $s = ( p ^ { n } - 1 ) ( p ^ { n - 1 } - 1 ) . . . ( p - 1 )$ is congruent to $( - 1 ) ^ { n }$ (mod $p )$
 
 For each of the following statements, either prove it or give a counterexample:
 

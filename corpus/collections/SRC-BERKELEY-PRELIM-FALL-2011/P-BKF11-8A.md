@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ real matrix such that every off-diagonal entry is positive and the sum of the entries in each row is negative. Show that $\det A\ne0$.
+Let $A$ be an $n\times n$ real matrix such that every off-diagonal entry is positive and the sum of the entries in each row is negative.
+Show that $\det A\ne0$.
 :::

@@ -24,5 +24,6 @@ satisfies
 \[
 x^2\frac{d^2J_1}{dx^2}+x\frac{dJ_1}{dx}+(x^2-1)J_1=0
 \]
-and has derivative $1$ at $0$. Find the coefficients $a_n$.
+and has derivative $1$ at $0$.
+Find the coefficients $a_n$.
 :::

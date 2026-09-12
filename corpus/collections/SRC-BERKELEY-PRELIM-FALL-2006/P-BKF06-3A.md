@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be a connected open subset of $\mathbb C$ containing $-2$ and $0$. Suppose $f:U\to\mathbb C$ is holomorphic and its Taylor expansion at $0$ is
+Let $U$ be a connected open subset of $\mathbb C$ containing $-2$ and $0$.
+Suppose $f:U\to\mathbb C$ is holomorphic and its Taylor expansion at $0$ is
 \[
 \sum_{n\ge0}\binom{2n}{n}z^n.
 \]

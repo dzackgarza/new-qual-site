@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subseteq\mathbb C$ be a simply connected region, and let $f:U\to\mathbb C$ be analytic and never zero. Show that there is an analytic function $g:U\to\mathbb C$ such that $f=e^g$.
+Let $U\subseteq\mathbb C$ be a simply connected region, and let $f:U\to\mathbb C$ be analytic and never zero.
+Show that there is an analytic function $g:U\to\mathbb C$ such that $f=e^g$.
 :::

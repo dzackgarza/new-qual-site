@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $F$ be a field and $p$ a prime. For $n\ge1$, show that the number, up to isomorphism, of abelian groups of order $p^n$ equals the number, up to similarity, of $n\times n$ matrices $A$ over $F$ satisfying $A^n=0$.
+Let $F$ be a field and $p$ a prime.
+For $n\ge1$, show that the number, up to isomorphism, of abelian groups of order $p^n$ equals the number, up to similarity, of $n\times n$ matrices $A$ over $F$ satisfying $A^n=0$.
 :::

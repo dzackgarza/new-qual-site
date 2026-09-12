@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a nonzero vector space over an infinite field. Show that $V$ is not the union of finitely many cosets
+Let $V$ be a nonzero vector space over an infinite field.
+Show that $V$ is not the union of finitely many cosets
 \[
 a_1+V_1,\ldots,a_n+V_n
 \]

@@ -19,8 +19,11 @@ audit:
 Let $f:[0,\infty)\to\mathbb R$ satisfy:
 
 - $f$ is continuous;
+
 - $f(0)=0$;
+
 - $f$ is differentiable on $(0,\infty)$; and
+
 - $f'$ is increasing on $(0,\infty)$.
 
 Define $g:(0,\infty)\to\mathbb R$ by

@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathcal { R }  \mathcal { R }$ be an increasing function from the reals to the reals. Show that there is an x such that f is continuous at x.
+Let $f : \mathcal { R }  \mathcal { R }$ be an increasing function from the reals to the reals.
+Show that there is an x such that f is continuous at x.
 :::

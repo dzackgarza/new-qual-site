@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $n\ge2$ be an integer such that $2^n+n^2$ is prime. Show that
+Let $n\ge2$ be an integer such that $2^n+n^2$ is prime.
+Show that
 \[
 n\equiv3\pmod6.
 \]

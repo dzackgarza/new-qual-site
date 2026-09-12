@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let D be a subset of R, and let $f \colon D \to \mathbb { R }$ be a function. The graph of f is the subset
+Let D be a subset of R, and let $f \colon D \to \mathbb { R }$ be a function.
+The graph of f is the subset
 
 $$
 G : = \left\{ ( x , y ) : x \in D , \ y = f ( x ) \right\}

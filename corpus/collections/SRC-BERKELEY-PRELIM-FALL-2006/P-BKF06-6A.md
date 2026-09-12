@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be prime. Prove that
+Let $p$ be prime.
+Prove that
 \[
 f(x)=x^p-x+1
 \]

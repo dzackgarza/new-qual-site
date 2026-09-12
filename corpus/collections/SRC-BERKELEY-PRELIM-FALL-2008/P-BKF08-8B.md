@@ -16,7 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-We have a fair $N$-sided die. One side is black and all the others are white. Let $n(N)$ be the smallest number of throws for which the probability of getting at least one black result is greater than $1/2$. Compute
+We have a fair $N$-sided die.
+One side is black and all the others are white.
+Let $n(N)$ be the smallest number of throws for which the probability of getting at least one black result is greater than $1/2$.
+Compute
 \[
 \lim_{N\to\infty}\frac{n(N)}N.
 \]

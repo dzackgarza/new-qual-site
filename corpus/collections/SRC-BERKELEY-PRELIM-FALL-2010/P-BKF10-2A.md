@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $R$ be a finite ring. Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x\in R$ satisfies $x^m=x^n$.
+Let $R$ be a finite ring.
+Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x\in R$ satisfies $x^m=x^n$.
 :::

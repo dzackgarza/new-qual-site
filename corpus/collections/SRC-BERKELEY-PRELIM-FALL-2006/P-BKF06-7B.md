@@ -16,5 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X,Y$ be metric spaces and let $f_1,f_2,\ldots:X\to Y$ be continuous. Suppose $f_n$ converges uniformly to $f$. Show that $f$ is continuous.
+Let $X,Y$ be metric spaces and let $f_1,f_2,\ldots:X\to Y$ be continuous.
+Suppose $f_n$ converges uniformly to $f$.
+Show that $f$ is continuous.
 :::

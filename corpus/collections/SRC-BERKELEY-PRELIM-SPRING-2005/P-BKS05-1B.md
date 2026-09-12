@@ -12,5 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let G be a finite group. Suppose ab = ba holds whenever $a , b \in G$ have prime power order. Prove that G is abelian.
+Let G be a finite group.
+Suppose ab = ba holds whenever $a , b \in G$ have prime power order.
+Prove that G is abelian.
 :::

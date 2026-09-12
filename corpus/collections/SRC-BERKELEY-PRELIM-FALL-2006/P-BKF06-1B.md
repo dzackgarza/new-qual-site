@@ -16,9 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire. Assume
+Let $f:\mathbb C\to\mathbb C$ be entire.
+Assume
 \[
 |f(z^2)|\le2|f(z)|
 \]
-for all $z\in\mathbb C$. Show that $f$ is constant.
+for all $z\in\mathbb C$.
+Show that $f$ is constant.
 :::

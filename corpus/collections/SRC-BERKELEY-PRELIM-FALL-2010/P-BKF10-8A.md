@@ -20,5 +20,6 @@ Suppose
 \[
 f(x_1,\ldots,x_n)=\sum_{j,k}a_{jk}x_jx_k
 \]
-for real numbers $a_{jk}$. If $f$ is nonnegative for all real arguments, show that $f$ can be written as a finite sum of squares of linear forms in $x_1,\ldots,x_n$.
+for real numbers $a_{jk}$.
+If $f$ is nonnegative for all real arguments, show that $f$ can be written as a finite sum of squares of linear forms in $x_1,\ldots,x_n$.
 :::

@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f$ is a positive continuous function on $[a,b]$. Prove that there are polynomials $p_n$, for $n=0,1,2,\ldots$, such that $p_n$ is monic of degree $n$ and
+Suppose that $f$ is a positive continuous function on $[a,b]$.
+Prove that there are polynomials $p_n$, for $n=0,1,2,\ldots$, such that $p_n$ is monic of degree $n$ and
 \[
 \int_a^b p_m(x)p_n(x)f(x)\,dx=0
 \]

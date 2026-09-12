@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a nonabelian group of order $21$. Find the largest positive integer $n$ such that whenever $G$ acts on a set $S$ of size $n$, some element of $S$ is fixed by every element of $G$.
+Let $G$ be a nonabelian group of order $21$.
+Find the largest positive integer $n$ such that whenever $G$ acts on a set $S$ of size $n$, some element of $S$ is fixed by every element of $G$.
 :::

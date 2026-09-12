@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that every group is isomorphic to a group of permutations. Prove that every finite group is isomorphic to a group of even permutations of a finite set.
+Prove that every group is isomorphic to a group of permutations.
+Prove that every finite group is isomorphic to a group of even permutations of a finite set.
 :::

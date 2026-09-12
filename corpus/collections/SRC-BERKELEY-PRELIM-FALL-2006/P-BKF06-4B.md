@@ -16,5 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x)\in\mathbb Q[x]$ be irreducible. Suppose there is a field extension $F/\mathbb Q$ containing a root $a$ of $f(x)$ such that $F$ contains no cube root of $a$. Show that $f(x^3)$ is irreducible over $\mathbb Q$.
+Let $f(x)\in\mathbb Q[x]$ be irreducible.
+Suppose there is a field extension $F/\mathbb Q$ containing a root $a$ of $f(x)$ such that $F$ contains no cube root of $a$.
+Show that $f(x^3)$ is irreducible over $\mathbb Q$.
 :::

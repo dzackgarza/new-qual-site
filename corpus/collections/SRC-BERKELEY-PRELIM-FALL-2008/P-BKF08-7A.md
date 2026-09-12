@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $H_i$ is a normal subgroup of a group $G$ for $1\le i\le k$, and $H_i\cap H_j=\{1\}$ whenever $i\ne j$. Prove that $G$ contains a subgroup isomorphic to
+Suppose $H_i$ is a normal subgroup of a group $G$ for $1\le i\le k$, and $H_i\cap H_j=\{1\}$ whenever $i\ne j$.
+Prove that $G$ contains a subgroup isomorphic to
 \[
 H_1\times H_2\times\cdots\times H_k
 \]

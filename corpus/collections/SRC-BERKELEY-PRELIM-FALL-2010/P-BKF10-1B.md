@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R^2\to\mathbb R$ be continuous and suppose the inverse image of every bounded set is bounded. Show that $f$ achieves either a minimum value or a maximum value.
+Let $f:\mathbb R^2\to\mathbb R$ be continuous and suppose the inverse image of every bounded set is bounded.
+Show that $f$ achieves either a minimum value or a maximum value.
 :::

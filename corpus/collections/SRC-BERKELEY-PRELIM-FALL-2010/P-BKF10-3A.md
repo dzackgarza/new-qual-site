@@ -16,9 +16,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f$ is bounded and analytic on a deleted neighborhood $0<|z|<\varepsilon$ of the origin. Let
+Suppose that $f$ is bounded and analytic on a deleted neighborhood $0<|z|<\varepsilon$ of the origin.
+Let
 \[
 f(z)=\sum_{j=-\infty}^{\infty}c_jz^j
 \]
-be the Laurent expansion of $f$. Show that if $j<0$, then $c_j=0$.
+be the Laurent expansion of $f$.
+Show that if $j<0$, then $c_j=0$.
 :::

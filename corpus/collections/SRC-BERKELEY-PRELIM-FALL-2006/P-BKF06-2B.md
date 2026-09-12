@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $C^0[0,1]$ be the real vector space of continuous functions $[0,1]\to\mathbb R$. Show that the functions
+Let $C^0[0,1]$ be the real vector space of continuous functions $[0,1]\to\mathbb R$.
+Show that the functions
 \[
 1,x,x^2,\ldots
 \]

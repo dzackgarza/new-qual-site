@@ -20,5 +20,6 @@ Let
 \[
 \cdots\subset X_2\subset X_1
 \]
-be a nested sequence of closed, nonempty, connected subsets of a compact metric space $X$. Prove that $\bigcap_{i=1}^{\infty}X_i$ is nonempty and connected.
+be a nested sequence of closed, nonempty, connected subsets of a compact metric space $X$.
+Prove that $\bigcap_{i=1}^{\infty}X_i$ is nonempty and connected.
 :::

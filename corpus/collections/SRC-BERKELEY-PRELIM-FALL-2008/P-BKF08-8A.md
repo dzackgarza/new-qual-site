@@ -20,7 +20,8 @@ Let $u(x,t)$ be an infinitely differentiable real function satisfying the diffus
 \[
 u_t=u_{xx},\qquad -\infty<x<\infty,\ t>0.
 \]
-Assume $u$ and all its partial derivatives of all orders are rapidly decreasing in $x$: in every strip $0<t<a$ they are bounded by a constant times $x^{-n}$ for every $n>0$. Also assume
+Assume $u$ and all its partial derivatives of all orders are rapidly decreasing in $x$: in every strip $0<t<a$ they are bounded by a constant times $x^{-n}$ for every $n>0$.
+Also assume
 \[
 \int_{-\infty}^{\infty}u(x,1)\,dx=1.
 \]

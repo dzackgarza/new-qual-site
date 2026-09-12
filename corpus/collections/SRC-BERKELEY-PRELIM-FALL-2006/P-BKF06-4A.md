@@ -16,5 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R$ be a finite commutative ring without zero divisors and containing at least one element other than $0$. As usual, rings are associative with $1$. Prove that $R$ is a field.
+Let $R$ be a finite commutative ring without zero divisors and containing at least one element other than $0$.
+As usual, rings are associative with $1$.
+Prove that $R$ is a field.
 :::

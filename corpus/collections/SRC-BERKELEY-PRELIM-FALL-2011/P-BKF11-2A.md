@@ -16,5 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x)$ be an irreducible polynomial over $\mathbb Q$. Let $a\in\mathbb C$ be a nonzero root such that $a^2$ is also a root. Prove that for some $n$, the polynomial $f(x)$ divides $x^n-1$.
+Let $f(x)$ be an irreducible polynomial over $\mathbb Q$.
+Let $a\in\mathbb C$ be a nonzero root such that $a^2$ is also a root.
+Prove that for some $n$, the polynomial $f(x)$ divides $x^n-1$.
 :::

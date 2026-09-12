@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $M _ { 2 } ( \mathbb { C } )$ be the set of $2 \times 2$ matrices over the complex numbers. Given $A \in M _ { 2 } ( \mathbb { C } )$ , define $C ( A ) = \{ B \in M _ { 2 } ( \mathbb { C } ) : A B = B A \}$
+Let $M _ { 2 } ( \mathbb { C } )$ be the set of $2 \times 2$ matrices over the complex numbers.
+Given $A \in M _ { 2 } ( \mathbb { C } )$ , define $C ( A ) = \{ B \in M _ { 2 } ( \mathbb { C } ) : A B = B A \}$
 
 (a) Prove that $C ( A )$ is a linear subspace of $M _ { 2 } ( \mathbb { C } )$ , for every A.
 

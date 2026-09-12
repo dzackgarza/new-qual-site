@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $k$ be a field whose additive group is finitely generated. Prove that $k$ is finite.
+Let $k$ be a field whose additive group is finitely generated.
+Prove that $k$ is finite.
 :::

@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-1. Let G be a non-abelian finite group. Show that $G / Z ( G )$ is not cyclic, where $Z ( G )$ is the center of G.
+1. Let G be a non-abelian finite group.
+   Show that $G / Z ( G )$ is not cyclic, where $Z ( G )$ is the center of G.
 
 2. If $| G | = p ^ { n }$ , with p prime and $n > 0$ , show that $Z ( G )$ is not trivial.
 

@@ -20,5 +20,6 @@ $$
 
 Prove that $( a _ { n } ) _ { 1 } ^ { \infty }$ is a Cauchy sequence.
 
-(b) Is the converse true? Give a proof or a counterexample.
+(b) Is the converse true?
+Give a proof or a counterexample.
 :::

@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group. Show that if $G$ has trivial center, then its automorphism group $\operatorname{Aut}(G)$ has trivial center.
+Let $G$ be a group.
+Show that if $G$ has trivial center, then its automorphism group $\operatorname{Aut}(G)$ has trivial center.
 :::
