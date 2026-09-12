@@ -30,7 +30,7 @@ Its uses are not only bounding a product:
 
 - **Duality.** The pairing $\inner fg = \int fg$ is bounded exactly by Hölder, which is what makes $(L^p)^* = L^q$.
 
-Equality in Hölder holds when $\abs f^p$ and $\abs g^q$ are proportional, and that case is often what a problem is really asking about.
+Equality in Hölder holds when $\abs f^p$ and $\abs g^q$ are proportional, and that is the sharp form of the inequality.
 
 ## Chebyshev converts norms into measures
 

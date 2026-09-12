@@ -90,9 +90,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/real-analysis/integration/l1.md` — no stance revision
 - [x] `wiki/real-analysis/integration/the-convergence-theorems.md` — dropped "on an exam" framing
 - [x] `wiki/real-analysis/integration/which-convergence-theorem.md` — removed exam-composition and examiner-intent claims
-- [ ] `wiki/real-analysis/lp-spaces/index.md`
-- [ ] `wiki/real-analysis/lp-spaces/the-spaces.md`
-- [ ] `wiki/real-analysis/lp-spaces/which-inequality.md`
+- [x] `wiki/real-analysis/lp-spaces/index.md` — no stance revision
+- [x] `wiki/real-analysis/lp-spaces/the-spaces.md` — no stance revision
+- [x] `wiki/real-analysis/lp-spaces/which-inequality.md` — replaced "often what a problem is really asking about" with sharpness phrasing
 - [ ] `wiki/real-analysis/measure/index.md`
 - [ ] `wiki/real-analysis/measure/is-it-measurable.md`
 - [ ] `wiki/real-analysis/measure/littlewood-principles-notes.md`
