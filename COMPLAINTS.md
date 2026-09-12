@@ -40,6 +40,14 @@ of public mathematical remarks.
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 6 Problem 8 has an incorrect supplied eigensolution
+
+- **Object and need:** `assets/attachments/solution6.pdf`, Harvard Math 21b Spring 2018 Practice Final 6, Problem 8; source intake must not turn an incorrect source-provided solution into an authored corpus solution.
+- **Observed evidence:** the PDF asks for the eigenvalues and an orthonormal eigenbasis of $A=\begin{pmatrix}3&1&1\\1&3&1\\1&1&3\end{pmatrix}$, but its printed solution says $A-I_3$ has a two-dimensional kernel and gives eigenvalues $1$ and $3$. Direct calculation gives $A=2I+J$, hence eigenvalue $5$ on $\operatorname{span}(1,1,1)$ and eigenvalue $2$ on its orthogonal complement.
+- **Impact and owner:** the source statement is sound, but the supplied answer is mathematically wrong. Queue-E intake owns preserving the problem statement while declining to import that answer as a local solution; later solution authorship should use the correct spectrum $\{5,2,2\}$.
+- **Uncertainty:** none; both the displayed matrix and the erroneous answer were checked in the vendored PDF text, not inferred from the OCR inventory.
+- **Repair:** ingested Problem 8 as unsolved card `P-HM21B18-PF6-08` and did not copy the source solution.
+
 ### The authoring CLI name for collection-scoped unsolved traversal is easy to misremember
 
 - **Object and evidence:** during the `SRC-TEXT-HK71` continuation, invoking `python -m qualc.authoring unsolved-in SRC-TEXT-HK71` failed because the supported subcommand is `unsolved`, not `unsolved-in`. The built-in `--help` output immediately resolved the issue.

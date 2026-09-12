@@ -730,7 +730,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Review sheets (14)
 
-- [ ] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders**
+- [x] [ALGEBRA_REVIEW1.pdf](assets/attachments/extracted/ALGEBRA_REVIEW1.md) (144L, 8 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: Alessandra Pantano’s 2011 algebra review packet ingested as `SRC-ALGEBRA-REVIEW-PANTANO-2011`. The inventory count of eight is a false negative: the source explicitly groups 6 questions from test 3, 6 from test 2, and 7 from test 1, for 19 total.
+  They are represented in source order as `P-ALGPAN11-01` through `P-ALGPAN11-19`; source crops are retained for all questions, including prompts/choices lost by OCR.
 
 - [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
