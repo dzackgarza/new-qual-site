@@ -16,9 +16,6 @@ review: draft
 
 Suppose that $f: \CC\to\CC$ is continuous everywhere and analytic on $\CC\setminus \RR$ and prove that $f$ is entire.
 
-::: {.remark}
-Something missing?
-:::
 ::: {.solution}
 ::: {.concept}
 :::
