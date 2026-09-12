@@ -79,7 +79,7 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [x] `wiki/algebra/workshops/index.md` — no stance revision.
 - [x] `wiki/algebraic-geometry/cohomology/computing-cohomology.md` — replaced memorization directive and examiner-intent claim with the cohomology shape and the two answers' content.
 - [x] `wiki/algebraic-geometry/cohomology/derived-functors-and-vanishing.md` — replaced exam-frequency and examiner-intent claims and study directives with the derived-functor definition, flasque acyclicity, complementary hypotheses, and the long-exact-sequence computation.
-- [ ] `wiki/algebraic-geometry/cohomology/families.md`
+- [x] `wiki/algebraic-geometry/cohomology/families.md` — replaced study directives, frequency claims, and imperative problem framing with the degenerate Leray case, stability hierarchy, and base-change failure example.
 - [ ] `wiki/algebraic-geometry/cohomology/index.md`
 - [ ] `wiki/algebraic-geometry/cohomology/projective-schemes.md`
 - [ ] `wiki/algebraic-geometry/cohomology/vanishing-and-duality.md`
