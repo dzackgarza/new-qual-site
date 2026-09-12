@@ -32,22 +32,22 @@ committed atomically before marking REPAIRED.
 | 10 | `2022-01-09_13-03-12.png` | Theorem 19.2 Zariski desingularization of surfaces via alternating normalizations + maximal ideal blowups | `T-SRFKOD` + `FE-SRFBLOW` | PASS | Surface desingularization referenced in Kodaira classification minimal model discussion |
 | 11 | `2022-01-09_13-03-27.png` | Theorem 19.3 minimal resolution of normal projective surface singularities (unique minimal) | `T-SRFKOD` | PASS | Minimal model via Castelnuovo contraction until no (-1)-curves |
 | 12 | `2022-01-09_13-06-25.png` | Theorem 20.5 Riemann-Roch for curves: `h^0(D)-h^0(K-D)=d-g+1` | `T-COHRRS` (surface) + `curves-and-surfaces/genus` | PASS | Surface RR is curve RR with `deg` replaced by `1/2 D·(D-K)`; curve case cited in surface remarks |
-| 13 | `2022-01-09_13-07-04.png` | Theorem 20.8 adjunction: `K_D = (K_X+D)|_D`, genus formula `(K_X+C)·C = 2g-2` | `T-SRFADJ` | PASS | Exact formula with degree-genus specialization `g=1/2(d-1)(d-2)` |
+| 13 | `2022-01-09_13-07-04.png` | Theorem 20.8 adjunction: `K_D = (K_X+D)\vert_D`, genus formula `(K_X+C)·C = 2g-2` | `T-SRFADJ` | PASS | Exact formula with degree-genus specialization `g=1/2(d-1)(d-2)` |
 | 14 | `2022-01-09_13-07-48.png` | Genus formula corollary for plane curves with singularities: `g=1/2(d-1)(d-2)-sum m_i(m_i-1)/2` | `D-CRVPLSING` + `T-SRFADJ` remark | PASS | Delta invariant and genus drop `p_a - g = sum delta_p` with node/cusp/tacnode table |
 | 15 | `2022-01-09_13-08-23.png` | Remark 20.15 holomorphic Euler characteristic `chi(O_X(D)) = 1/2 D·(D-K)` + Hirzebruch-RR, GRR analogues | `T-SRFRR` (Noether) + `D-COHEULER` | PASS | `chi(O_X(D)) = chi(O_X)+1/2 D·(D-K)` and Noether formula `chi=1/12(K^2+c2)` |
 | 16 | `2022-01-09_13-20-16.png` | Theorem 25.2 Castelnuovo-Enriques classification by Kodaira dimension: `kappa=-∞,0,1,2` | `T-SRFKOD` | PASS | Four rows with `(p_g,q)` separation for kappa=0; ruled/rational, K3/Enriques/abelian/bielliptic, elliptic, general type |
 
 ## Phase 1 addendum — Plane and surface singularity figures (2 files, not theorem crops but preserved figures)
 
-| # | Source file | Depicts | Target | Verdict |
-|---|-------------|---------|--------|---------|
+| # | Source file | Depicts | Target | Verdict | Notes |
+|---|-------------|---------|--------|---------|-------|
 | 17 | `2022-09-21_00-14-42.png` | Figure 4: node, triple point, cusp, tacnode | `assets/.../plane-curve-singularities-node-cusp-tacnode.png` + `D-CRVPLSING` | DUPLICATE/PASS | Preserved as canonical figure, delta table in card |
 | 18 | `2022-09-21_00-15-32.png` | Figure 5: conical double point, double line, pinch point | `assets/.../surface-singularities-conical-double-line-pinch.png` | DUPLICATE/PASS |
 
 ## Phase 2 — Individual theorem and exercise crops (24 files)
 
-| # | Source file | Referencing vault note | Subject | Target | Verdict |
-|---|-------------|------------------------|---------|--------|---------|
+| # | Source file | Referencing vault note | Subject | Target | Verdict | Notes |
+|---|-------------|------------------------|---------|--------|---------|-------|
 | 19 | `Pasted image 20220315152915.png` | `022 Sheaves.md:99` | Six-functor formalism names (f_*, f^*, f_!, f^!, tensor, Hom) | `wiki/sheaves-of-modules/operations` + `D-VJFAP` | PASS | Six functors listed in sheaf operations |
 | 20 | `Pasted image 20220315153140.png` | `022 Sheaves.md` | Pushforward of locally constant sheaf need not be locally constant — example setup with covering `S^1 -> S^1, z->z^2` | `FE-SHFISOSTALKS` | REPAIRED | Previously missing; created `FE-SHFISOSTALKS.md` with full stalk computation and global sections `S != S⊕S` |
 | 21 | `Pasted image 20220315153154.png` | `022 Sheaves.md` | Same example continued — stalks `(f_*F)_y = S×S`, global sections `Γ(Y,f_*F)=S` vs `Γ(Y,G)=S×S`, non-isomorphic | `FE-SHFISOSTALKS` | REPAIRED | Same card, completes the argument including locally constant failure |
