@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-The question provides some insight into Cauchy’s theorem. Solve the problem without using the Cauchy theorem.
+The question provides some insight into Cauchy’s theorem.
+Solve the problem without using the Cauchy theorem.
 
 1. Evaluate the integral $\int _ { \gamma } z ^ { n } d z$ for all integers n. Here γ is any circle centered at the origin with the positive (counterclockwise) orientation.
 :::

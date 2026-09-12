@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Compute the following integrals. (i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
+Compute the following integrals.
+(i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
 :::

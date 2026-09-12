@@ -19,7 +19,8 @@ audit:
 ::: {.problem}
 Show that if $| a | < r < | b |$ , then $\int _ { \gamma } { \frac { d z } { ( z - a ) ( z - b ) } } d z = { \frac { 2 \pi i } { a - b } }$ . Here $\gamma$ denotes the circle centered at the origin, of radius r, with the positive orientation.
 
-2. (1) Assume the infinite series $\sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $| z | < R$ and let $f ( z )$ be the limit. Show that for $r < R$
+2. (1) Assume the infinite series $\sum _ { n = 0 } ^ { \infty } c _ { n } z ^ { n }$ converges in $| z | < R$ and let $f ( z )$ be the limit.
+   Show that for $r < R$
 
 $$
 \frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } | f ( r e ^ { i \theta } ) | ^ { 2 } d \theta = \sum _ { n = 0 } ^ { \infty } | c _ { n } | ^ { 2 } r ^ { 2 n } .

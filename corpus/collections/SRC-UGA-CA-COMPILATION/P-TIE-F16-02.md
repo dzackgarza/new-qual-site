@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f ( z ) = u ( x , y ) + i v ( x , y )$ be analytic in a domain $D \subset \mathbb { C }$ . Let $z _ { 0 } = ( x _ { 0 } , y _ { 0 } )$ be a point in D which is in the intersection of the curves $u ( x , y ) = c _ { 1 }$ and $v ( x , y ) = c _ { 2 }$ , where $c _ { 1 }$ and $c _ { 2 }$ are constants. Suppose that $f ^ { \prime } ( z _ { 0 } ) \neq 0$ . Prove that the lines tangent to these curves at z0 are perpendicular.
+(a) $f ( z ) = u ( x , y ) + i v ( x , y )$ be analytic in a domain $D \subset \mathbb { C }$ . Let $z _ { 0 } = ( x _ { 0 } , y _ { 0 } )$ be a point in D which is in the intersection of the curves $u ( x , y ) = c _ { 1 }$ and $v ( x , y ) = c _ { 2 }$ , where $c _ { 1 }$ and $c _ { 2 }$ are constants.
+Suppose that $f ^ { \prime } ( z _ { 0 } ) \neq 0$ . Prove that the lines tangent to these curves at z0 are perpendicular.
 
 (b) Let $f ( z ) = z ^ { 2 }$ be defined in $\mathbb { C } .$
 
