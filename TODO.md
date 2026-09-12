@@ -2,66 +2,47 @@
 
 ## Execution DAG
 
-The active solution tasks in [Author solutions](#7-author-solutions) carry stable
-IDs and immediate **Needs** lists. A prerequisite `A` on task `B` means `A -> B`.
-`none` denotes a ready root. Each instance is keyed by its actual card ID:
-`select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`,
-and `commit:P-…`. Names in Needs refer to the same card's instance.
+The active solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists.
+A prerequisite `A` on task `B` means `A -> B`. `none` denotes a ready root.
+Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
-Returning to selection creates an instance for a different card, not a back-edge
-from commit to the same select node. Work one card at a time in source order;
-independent subject streams may work on different cards in the one checkout, on
-`main`, under [`QUAL-09`](CONTRIBUTING.md#named-policies). Use the existing
-collection checklist and card audit/commit evidence, not a second status ledger.
+Returning to selection creates an instance for a different card, not a back-edge from commit to the same select node.
+Work one card at a time in source order; independent subject streams may work on different cards in the one checkout, on `main`, under [`QUAL-09`](CONTRIBUTING.md#named-policies).
+Use the existing collection checklist and card audit/commit evidence, not a second status ledger.
 
-The source-review prerequisite applies when incorporating a source solution;
-for an original proof it has no source-solution input to review. Source reading
-and review of the authored proof remain required in either case.
+The source-review prerequisite applies when incorporating a source solution; for an original proof it has no source-solution input to review.
+Source reading and review of the authored proof remain required in either case.
 
-The issue log and checked entries below retain their existing evidence and
-dispositions; this graph does not recertify them or reopen completed tasks.
-For an additional selected repair, use its issue or card ID, name its immediate
-Needs and acceptance beside the existing item, and link its complaint. An
-unfinished source correction needed by a proof must precede that card's proof;
-an unrelated renderer or subject issue does not block solution authorship.
-Before committing a dependency change, verify unique IDs, resolved references,
-and absence of cycles. Preserve the complete mathematical obligation.
+The issue log and checked entries below retain their existing evidence and dispositions; this graph does not recertify them or reopen completed tasks.
+For an additional selected repair, use its issue or card ID, name its immediate Needs and acceptance beside the existing item, and link its complaint.
+An unfinished source correction needed by a proof must precede that card's proof; an unrelated renderer or subject issue does not block solution authorship.
+Before committing a dependency change, verify unique IDs, resolved references, and absence of cycles.
+Preserve the complete mathematical obligation.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
-arise in [COMPLAINTS.md](COMPLAINTS.md).
+Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they arise in [COMPLAINTS.md](COMPLAINTS.md).
 
 ### Terminal nodes
 
 Three repository-level nodes sit after every card, queue and publication obligation above.
 They are not card instances; they run once the corpus work they follow is closed.
 
-- **`refactor-audit`**. **Needs:** every queue closed. Audit the tooling and site sources —
-  `tools/`, `site/`, the generators and checkers, not the authored cards — for messy,
-  disorganized or duplicated code, and carry out the refactorings that consolidate sources of
-  truth and restore proper encapsulation. The card format and the published site need not
-  change and should not change incidentally. **This node explodes:** every refactor the audit
-  identifies becomes its own node here with its own Needs, each terminating back into this
-  node; recurse when one contains several. A refactoring that is not a node is one nobody will
-  do. **Acceptance:** the audit is complete and every finding exists as a node — a scheduling
-  node, not a work node, markable skippable once the plan is fully exploded.
+- **`refactor-audit`**. **Needs:** every queue closed.
+  Audit the tooling and site sources — `tools/`, `site/`, the generators and checkers, not the authored cards — for messy, disorganized or duplicated code, and carry out the refactorings that consolidate sources of truth and restore proper encapsulation.
+  The card format and the published site need not change and should not change incidentally.
+  **This node explodes:** every refactor the audit identifies becomes its own node here with its own Needs, each terminating back into this node; recurse when one contains several.
+  A refactoring that is not a node is one nobody will do.
+  **Acceptance:** the audit is complete and every finding exists as a node — a scheduling node, not a work node, markable skippable once the plan is fully exploded.
 
-- **`type-paydown`**. **Needs:** `refactor-audit`. Pay down type errors in the tooling where
-  reasonable and no further. Every typing decision must improve the legibility of the code, the
-  ability to understand what it does, and the ability to reason statically about whether it is
-  correct — that is the standard, not the error count. Golfing the code into oblivion is the
-  failure mode. Where a contortion that exists only to silence a checker is genuinely
-  warranted, it must be judged as significantly serving that goal, with the argument recorded
-  explicitly in the commit message.
+- **`type-paydown`**. **Needs:** `refactor-audit`. Pay down type errors in the tooling where reasonable and no further.
+  Every typing decision must improve the legibility of the code, the ability to understand what it does, and the ability to reason statically about whether it is correct — that is the standard, not the error count.
+  Golfing the code into oblivion is the failure mode.
+  Where a contortion that exists only to silence a checker is genuinely warranted, it must be judged as significantly serving that goal, with the argument recorded explicitly in the commit message.
 
-- **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than
-  closing. Continually audit for unnecessary bloat, bad style and non-idiomatic constructions,
-  LOC reduction opportunities, and anything hand-rolled that a dependency already provides —
-  pandoc, the markdown toolchain, any Python library, anything at all. Append every finding to
-  `COMPLAINTS.md` as it is found. Findings accumulate; they need not be fixed in the same pass,
-  and the audit is never declared finished.
-
-
+- **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than closing.
+  Continually audit for unnecessary bloat, bad style and non-idiomatic constructions, LOC reduction opportunities, and anything hand-rolled that a dependency already provides — pandoc, the markdown toolchain, any Python library, anything at all.
+  Append every finding to `COMPLAINTS.md` as it is found.
+  Findings accumulate; they need not be fixed in the same pass, and the audit is never declared finished.
 
 ## Content issues and policy violations build log
 
@@ -957,9 +938,13 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
-- [x] Correct the missing nontrivial-subgroup hypothesis in `P-ALGS08C`. Disposition 2026-09-07: Problem 3 on page 2 of the official Spring 2008 UCSD algebra exam, also reproduced on the group-theory review sheet, says an arbitrary normal subgroup $N$ of a finite $p$-group intersects the center nontrivially. The choice $N=\{1\}$ is a counterexample. The card now assumes $N\neq1$, records the exception, and proves the intended statement by the conjugation class equation.
+- [x] Correct the missing nontrivial-subgroup hypothesis in `P-ALGS08C`. Disposition 2026-09-07: Problem 3 on page 2 of the official Spring 2008 UCSD algebra exam, also reproduced on the group-theory review sheet, says an arbitrary normal subgroup $N$ of a finite $p$-group intersects the center nontrivially.
+  The choice $N=\{1\}$ is a counterexample.
+  The card now assumes $N\neq1$, records the exception, and proves the intended statement by the conjugation class equation.
 
-- [x] Correct the missing nonzero-module hypothesis in `P-ALGF25E`. Disposition 2026-09-07: Problem 5(b) on page 6 of the official FA25 algebra exam PDF asserts existence of a submodule isomorphic to $A/P$ for an arbitrary $A$-module $M$. The zero module is a counterexample because every $A/P$ for prime $P$ is nonzero. The card now assumes $M\neq0$, explains the exception, and gives a complete maximal-annihilator proof.
+- [x] Correct the missing nonzero-module hypothesis in `P-ALGF25E`. Disposition 2026-09-07: Problem 5(b) on page 6 of the official FA25 algebra exam PDF asserts existence of a submodule isomorphic to $A/P$ for an arbitrary $A$-module $M$.
+  The zero module is a counterexample because every $A/P$ for prime $P$ is nonzero.
+  The card now assumes $M\neq0$, explains the exception, and gives a complete maximal-annihilator proof.
 
 - [x] Correct the zero-root exception in `P-ALGF24G`. Disposition 2026-09-07: Problem 7 on page 9 of the official `FA24_200_Algebra_Qual.pdf` omits the nonzero-root hypothesis in the root-of-unity conclusion of (b) and the polynomial identity of (c). Over $\mathbb{Q}$, $f=x$ and $\alpha=0$ give counterexamples with $r=2$ in (b) and $r=-1$, $m=2$ in (c). The card now states the necessary hypothesis at those conclusions, retains the unrestricted well-definedness assertion in (b), explains both counterexamples, and proves all three parts.
 
@@ -1294,7 +1279,8 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** none. Select one unsolved card.
+- [ ] **`select`**. **Needs:** none.
+  Select one unsolved card.
 
 - [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
 
@@ -2048,36 +2034,26 @@ These decide nothing about what the text should be.
 
 ## 12. Close out the branch consolidation
 
-Every branch in `git branch` is merged into `main` as of `123e9b229`; `git rev-list
---count main..<branch>` is 0 for all 44. Nothing is left to merge. What remains is
-judgement work the merge could not do, and worktrees that could not be retired.
+Every branch in `git branch` is merged into `main` as of `123e9b229`; `git rev-list --count main..<branch>` is 0 for all 44. Nothing is left to merge.
+What remains is judgement work the merge could not do, and worktrees that could not be retired.
 
-The merges were made with `git merge-tree` + `git commit-tree` + a compare-and-swap
-`git update-ref`, never porcelain `git merge`, because `main`'s index carries staged
-entries belonging to live authoring sessions. A porcelain merge in the shared checkout
-commits whichever entries happen to be staged and, on conflict, `git merge --abort`
-resets the working tree under whoever is writing in it. That is what cost the 962 lines
-recovered in `81373e972`. Consolidation in this repository must not use porcelain merge
-while sessions are live.
+The merges were made with `git merge-tree` + `git commit-tree` + a compare-and-swap `git update-ref`, never porcelain `git merge`, because `main`'s index carries staged entries belonging to live authoring sessions.
+A porcelain merge in the shared checkout commits whichever entries happen to be staged and, on conflict, `git merge --abort` resets the working tree under whoever is writing in it.
+That is what cost the 962 lines recovered in `81373e972`. Consolidation in this repository must not use porcelain merge while sessions are live.
 
-- [x] 1.R1 — quote the three `audit.note` scalars whose unquoted colon made `just check`
-  red on `main`. Fixed in `857df44653`; `just unsolved` now runs clean and the corpus
-  parses at 9087 cards, 0 errors.
+- [x] 1.R1 — quote the three `audit.note` scalars whose unquoted colon made `just check` red on `main`. Fixed in `857df44653`; `just unsolved` now runs clean and the corpus parses at 9087 cards, 0 errors.
 
-- [x] Recompute `queues/C-unsolved-cards.md` after the merges. `123e9b229` takes it from
-  3588 to 1081 unsolved. The queue was pinned to `main`'s version through every merge
-  rather than hand-resolved, exactly as its header requires.
+- [x] Recompute `queues/C-unsolved-cards.md` after the merges.
+  `123e9b229` takes it from 3588 to 1081 unsolved.
+  The queue was pinned to `main`'s version through every merge rather than hand-resolved, exactly as its header requires.
 
-- [x] Repair the eaten-escape corruption class across the merged corpus. `857df44653`
-  restores 30 files where a LaTeX escape had been read as a C escape and left a literal
-  control byte: `\bar` `\bigcup` `\bigcap` as `BS`, `\frac` as `FF`, `\varepsilon` as
-  `VT`, `\rangle` as `CR`, `\tau` `\text` `\times` as `TAB`, and one `\nmid` as a bare
-  newline. Every occurrence had a correctly-escaped sibling in the same file, so none
-  was ambiguous. The detector is worth re-running after any future bulk merge.
+- [x] Repair the eaten-escape corruption class across the merged corpus.
+  `857df44653` restores 30 files where a LaTeX escape had been read as a C escape and left a literal control byte: `\bar` `\bigcup` `\bigcap` as `BS`, `\frac` as `FF`, `\varepsilon` as `VT`, `\rangle` as `CR`, `\tau` `\text` `\times` as `TAB`, and one `\nmid` as a bare newline.
+  Every occurrence had a correctly-escaped sibling in the same file, so none was ambiguous.
+  The detector is worth re-running after any future bulk merge.
 
-- [ ] 1.R2 / 1.R3 — adjudicate the cards where two people independently authored a proof
-  of the same card. The merge had to pick one and picked mechanically: solution present,
-  then uncorrupted, then more audit events, then more proof steps, then more content.
+- [ ] 1.R2 / 1.R3 — adjudicate the cards where two people independently authored a proof of the same card.
+  The merge had to pick one and picked mechanically: solution present, then uncorrupted, then more audit events, then more proof steps, then more content.
   That is a completeness heuristic, not a mathematical judgement, and it decided 52 cards.
   Regenerate the exact list with the merge commits, which record both parents:
 
@@ -2088,28 +2064,18 @@ while sessions are live.
   done | sort -u
   ```
 
-  Four of the 52 are the ones to read first, because the merge produced a text that
-  matches neither authored version: `P-22OXL`, `P-7INJI`, `P-REKYU`, `P-RILUB`.
+  Four of the 52 are the ones to read first, because the merge produced a text that matches neither authored version: `P-22OXL`, `P-7INJI`, `P-REKYU`, `P-RILUB`.
 
-  Six more need a second look because two branches both claimed the Spring 2019 algebra
-  sitting and the later merge silently reversed the earlier one: `P-ALGS19B` through
-  `P-ALGS19G`. `7c2634cee` kept `main`'s B, C and E; `fb38069ad` then took the branch's
-  B through G. Only the second decision survives.
+  Six more need a second look because two branches both claimed the Spring 2019 algebra sitting and the later merge silently reversed the earlier one: `P-ALGS19B` through `P-ALGS19G`. `7c2634cee` kept `main`'s B, C and E; `fb38069ad` then took the branch's B through G. Only the second decision survives.
 
-  The twenty recovered cards in `81373e972` that have a competing version in `main` are
-  the same kind of question and belong in the same pass.
+  The twenty recovered cards in `81373e972` that have a competing version in `main` are the same kind of question and belong in the same pass.
 
-  Real Analysis subset adjudicated 2026-09-11: `P-JHUFA11ANH` has mathematically
-  identical parent proofs, differing only in paragraph formatting, so the retained
-  version requires no change. `P-JVAGD` likewise has identical parent proofs; current
-  `main` is strictly preferable because it also corrects the card title from the
-  erroneous `\varphi''` to the source-correct `\varphi'`. No Real Analysis collision
-  card remains to adjudicate under this item.
+  Real Analysis subset adjudicated 2026-09-11: `P-JHUFA11ANH` has mathematically identical parent proofs, differing only in paragraph formatting, so the retained version requires no change.
+  `P-JVAGD` likewise has identical parent proofs; current `main` is strictly preferable because it also corrects the card title from the erroneous `\varphi''` to the source-correct `\varphi'`. No Real Analysis collision card remains to adjudicate under this item.
 
-- [ ] Retire the remaining worktrees. All 25 are fully merged, so the only thing holding
-  each one open is its own uncommitted work. `git worktree remove` preserves the branch;
-  nine were retired this way, freeing 3.7G. For each of the rest, commit the modified
-  cards onto its branch, merge that branch, then remove the worktree:
+- [ ] Retire the remaining worktrees.
+  All 25 are fully merged, so the only thing holding each one open is its own uncommitted work.
+  `git worktree remove` preserves the branch; nine were retired this way, freeing 3.7G. For each of the rest, commit the modified cards onto its branch, merge that branch, then remove the worktree:
 
   ```
   for p in .worktrees/*; do
@@ -2119,6 +2085,5 @@ while sessions are live.
   done
   ```
 
-  Nothing there is disposable: the dirty entries are authored card bodies, not build
-  residue. At roughly 420M each this is the repository's largest recoverable cost, and
-  the disk has hit 100% once already.
+  Nothing there is disposable: the dirty entries are authored card bodies, not build residue.
+  At roughly 420M each this is the repository's largest recoverable cost, and the disk has hit 100% once already.

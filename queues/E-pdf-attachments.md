@@ -517,7 +517,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [871-872June_2004_852-871.pdf](assets/attachments/extracted/871-872June_2004_852-871.md) (51L, 0 problems) — topology — disposition 2026-09-12: reconciled with `SRC-UNL-QUAL-JUNE-2004-970-852`; direct intake contains ten source-order qualifying-exam problems, correcting the inventory zero.
 
-- [x] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018 — disposition 2026-09-12: reference-only Adam Saltz UGA Math 8210 Topology of Manifolds Fall 2018 syllabus; it describes course objectives, texts, and homework policy but contains no authored exercises. Added to `vocabularies/references.bib` as `Saltz18Math8210Syllabus`; no cards manufactured.
+- [x] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018 — disposition 2026-09-12: reference-only Adam Saltz UGA Math 8210 Topology of Manifolds Fall 2018 syllabus; it describes course objectives, texts, and homework policy but contains no authored exercises.
+  Added to `vocabularies/references.bib` as `Saltz18Math8210Syllabus`; no cards manufactured.
 
 - [x] [AG Exam Problems.pdf](assets/attachments/extracted/AG Exam Problems.md) (67L, 6 problems) — UNL — alg-geom — August 2015 — disposition 2026-09-12: reconciled with `SRC-AG-EXAM-PROBLEMS-2015`, containing all six source-order algebraic-geometry exam problems.
 
@@ -533,11 +534,14 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra
 
-- [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary. Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
+- [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary.
+  Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
 
-- [x] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis — disposition 2026-09-12: reference-only Robert Varley *Study Guide for Complex Analysis Exam* topic/reference outline. Added to `vocabularies/references.bib` as `Varley14ComplexPrelimReview`; no problem cards manufactured.
+- [x] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis — disposition 2026-09-12: reference-only Robert Varley *Study Guide for Complex Analysis Exam* topic/reference outline.
+  Added to `vocabularies/references.bib` as `Varley14ComplexPrelimReview`; no problem cards manufactured.
 
-- [x] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom — disposition 2026-09-12: reference-only Christopher Eur complex-analysis review notes following Stein--Shakarchi and Ahlfors, with selected textbook exercise solutions. Added to `vocabularies/references.bib` as `Eur15ComplexAnalysisNotes`; no duplicate textbook-exercise cards manufactured.
+- [x] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom — disposition 2026-09-12: reference-only Christopher Eur complex-analysis review notes following Stein--Shakarchi and Ahlfors, with selected textbook exercise solutions.
+  Added to `vocabularies/references.bib` as `Eur15ComplexAnalysisNotes`; no duplicate textbook-exercise cards manufactured.
 
 - [x] [f03solution.pdf](assets/attachments/extracted/f03solution.md) (407L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2003`; the solution packet is retained as provenance for all 18 Part A/B problems.
 
@@ -563,7 +567,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Gompf Contact Topology.pdf](assets/attachments/extracted/Gompf Contact Topology.md) (1994L, 34 problems) — Harvard — diff-geom — Fall 2017 — disposition 2026-09-12: reconciled with complete `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017`. Direct source reading finds nine unique explicit `Exercise x.y` statements, exactly matching the nine collection cards; the inventory count of 34 came from numbered expository prose rather than authored exercises.
 
-- [x] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom — disposition 2026-09-12: Alexander Fauck, *Handle Attaching in Symplectic Topology — A Second Glance* (August 2, 2016), is research/reference literature giving a corrected proof of invariance of symplectic homology under subcritical handle attachment, not an exercise source. Added to `vocabularies/references.bib` as `Fauck16HandleAttaching`; no cards manufactured.
+- [x] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom — disposition 2026-09-12: Alexander Fauck, *Handle Attaching in Symplectic Topology — A Second Glance* (August 2, 2016), is research/reference literature giving a corrected proof of invariance of symplectic homology under subcritical handle attachment, not an exercise source.
+  Added to `vocabularies/references.bib` as `Fauck16HandleAttaching`; no cards manufactured.
 
 - [x] [hmwk3x.pdf](assets/attachments/extracted/hmwk3x.md) (117L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-MATH655-HW3-2003`, which contains the five source-order homework problems represented by this packet.
 
@@ -573,7 +578,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [HW3.pdf](assets/attachments/extracted/HW3.md) (49L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW3`; the collection contains all six source-order problems, correcting the inventory count of five.
 
-- [x] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW4`; all five source-order problems are represented. The retained file is dated November 4, 2018 and internally repeats the heading “Homework 3”, a source quirk already recorded by the collection.
+- [x] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW4`; all five source-order problems are represented.
+  The retained file is dated November 4, 2018 and internally repeats the heading “Homework 3”, a source quirk already recorded by the collection.
 
 - [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source.
   Intake stops at reference enrichment; no problem cards are manufactured.
@@ -629,7 +635,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Solution writeups (33)
 
-- [x] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues** — disposition 2026-09-12: reference-only archival algebraic-geometry solution notes. The 24-page PDF has no identifying author/date metadata and its embedded text layer is control-character/encoding garbage, so no reliable problem extraction is possible without inventing content. Retained on the solution-compendia resource page and added to `vocabularies/references.bib` as `AGSolutionsArchive`; no cards manufactured.
+- [x] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues** — disposition 2026-09-12: reference-only archival algebraic-geometry solution notes.
+  The 24-page PDF has no identifying author/date metadata and its embedded text layer is control-character/encoding garbage, so no reliable problem extraction is possible without inventing content.
+  Retained on the solution-compendia resource page and added to `vocabularies/references.bib` as `AGSolutionsArchive`; no cards manufactured.
 
 - [x] [Algebra_Final_Solns 1.pdf](assets/attachments/extracted/Algebra_Final_Solns 1.md) (116L, 14 problems) — algebra — disposition 2026-09-12: exact byte duplicate of `Algebra_Final_Solns.pdf` (SHA-256 `75d9773517a214758c59c3b4c5e274ff27f6e2b17b1415fc1a0f962e4fb60aa2`); no duplicate collection needed.
 
@@ -677,7 +685,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2006`, containing all 18 Part A/B prelim problems in source order.
 
-- [x] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra. — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2007`, containing all 18 mixed-subject Part A/B prelim problems in source order.
+- [x] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
+  — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2007`, containing all 18 mixed-subject Part A/B prelim problems in source order.
 
 - [x] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-ALGEBRA-COMP-FALL-2003`, containing all five source-order sample comprehensive-exam problems.
 
@@ -705,17 +714,21 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Lecture notes (4)
 
-- [x] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis — disposition 2026-09-12: reference-only Todd Kemp Math 140A Exam 2 key-facts review (lim sup/inf, complex numbers, series, metric spaces), not a problem source. Retained on the prelim reference page and added to `vocabularies/references.bib` as `Kemp16Math140AExam2Review`; no cards manufactured.
+- [x] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis — disposition 2026-09-12: reference-only Todd Kemp Math 140A Exam 2 key-facts review (lim sup/inf, complex numbers, series, metric spaces), not a problem source.
+  Retained on the prelim reference page and added to `vocabularies/references.bib` as `Kemp16Math140AExam2Review`; no cards manufactured.
 
-- [x] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only Jingzhi Tie UGA Math 8150 Spring 2020 lecture deck of worked conformal-mapping examples, not an exercise source despite the inventory count. Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20ConformalExamples`; no cards manufactured.
+- [x] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only Jingzhi Tie UGA Math 8150 Spring 2020 lecture deck of worked conformal-mapping examples, not an exercise source despite the inventory count.
+  Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20ConformalExamples`; no cards manufactured.
 
-- [x] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: reference-only Spring 2014 UNL Math 872 Algebraic Topology course contents/theorem outline, not a problem source. Retained on the topology resource page and added to `vocabularies/references.bib` as `Hermiller14Math872`; no cards manufactured.
+- [x] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: reference-only Spring 2014 UNL Math 872 Algebraic Topology course contents/theorem outline, not a problem source.
+  Retained on the topology resource page and added to `vocabularies/references.bib` as `Hermiller14Math872`; no cards manufactured.
 
 - [x] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008 — disposition 2026-09-12: reconciled to complete `SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008`. Direct source typography contains 89 explicit exercises, not the inventory count of 58. A duplicate partial Chapters 1–4 intake was collapsed into the canonical collection by retaining its richer source-checked transcriptions for those 17 exercises; the canonical collection now contains all 89 exercises in source order.
 
 ## Textbook/theorem notes (16)
 
-- [x] [8.2.3 Normal family.pdf](assets/attachments/extracted/8.2.3 Normal family.md) (159L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on normal families, Montel’s theorem, Arzelà–Ascoli, and Hurwitz (Spring 2020), not an exercise source. Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20Montel`; no problem cards manufactured.
+- [x] [8.2.3 Normal family.pdf](assets/attachments/extracted/8.2.3 Normal family.md) (159L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on normal families, Montel’s theorem, Arzelà–Ascoli, and Hurwitz (Spring 2020), not an exercise source.
+  Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20Montel`; no problem cards manufactured.
 
 - [x] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on the Riemann mapping theorem (Spring 2020), not an exercise source.
   Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20RMT`; no problem cards manufactured.

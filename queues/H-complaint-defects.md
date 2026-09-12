@@ -1,28 +1,21 @@
 # Queue H: Mathematical defects recorded in COMPLAINTS.md
 
-**Read this before taking an item.** These entries are the headings of `COMPLAINTS.md`,
-promoted here so they can be selected. They have **not** been checked for whether they are
-still outstanding — a sample of five found four whose own text describes the repair having
-been made. Assume nothing in this list is open until you have looked.
+**Read this before taking an item.** These entries are the headings of `COMPLAINTS.md`, promoted here so they can be selected.
+They have **not** been checked for whether they are still outstanding — a sample of five found four whose own text describes the repair having been made.
+Assume nothing in this list is open until you have looked.
 
-The underlying defect is that `COMPLAINTS.md` carries no status field, so a resolved complaint
-and an open one are indistinguishable without reading the whole entry and then the card. That
-is the first item below, and it comes before any individual repair: until it is fixed this
-queue cannot be trusted and neither can the complaints file.
+The underlying defect is that `COMPLAINTS.md` carries no status field, so a resolved complaint and an open one are indistinguishable without reading the whole entry and then the card.
+That is the first item below, and it comes before any individual repair: until it is fixed this queue cannot be trusted and neither can the complaints file.
 
-For every other item, the first action is to read the full entry in `COMPLAINTS.md` and then
-the card itself. If the defect is already repaired, close the item by recording the resolution
-in the complaint entry under the new status convention — that is a real unit of work, because
-it converts an unreadable file into a readable one. If it is still open, repair it against the
-source in a commit that also updates the entry.
+For every other item, the first action is to read the full entry in `COMPLAINTS.md` and then the card itself.
+If the defect is already repaired, close the item by recording the resolution in the complaint entry under the new status convention — that is a real unit of work, because it converts an unreadable file into a readable one.
+If it is still open, repair it against the source in a commit that also updates the entry.
 
 ## Open items
 
-- [ ] **H.0 — give `COMPLAINTS.md` a status convention.** Every entry gains an explicit
-      status and, where resolved, the commit that resolved it. Decide the convention, apply it
-      to all existing entries by reading each one, and record it in `CONTRIBUTING.md` so new
-      complaints carry it from the start. Nothing else in this queue is trustworthy until this
-      is done.
+- [ ] **H.0 — give `COMPLAINTS.md` a status convention.** Every entry gains an explicit status and, where resolved, the commit that resolved it.
+  Decide the convention, apply it to all existing entries by reading each one, and record it in `CONTRIBUTING.md` so new complaints carry it from the start.
+  Nothing else in this queue is trustworthy until this is done.
 
 ## Count
 

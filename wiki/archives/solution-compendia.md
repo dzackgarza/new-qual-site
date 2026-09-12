@@ -36,3 +36,7 @@ title: Solution Compendia
 * * *
 
 [Vermont algebra qual solutions, September 2008](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf)
+
+## Algebraic geometry solution notes
+
+- [[attachments/AG Solutions (1).pdf|Algebraic geometry solution notes (source PDF; text encoding is not extractable)]]

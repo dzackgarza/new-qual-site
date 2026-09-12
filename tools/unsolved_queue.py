@@ -10,14 +10,14 @@ hand-edited. Issue #2 is what empties it.
 
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
-from qualc.cli import load
-from qualc.model import ParsedCard
+from qualc import index
+from qualc.model import ParsedCard, discover, parse_cards_with
 from qualc.pandoc_batch import PandocServer
 
 REPO = Path(__file__).resolve().parent.parent
-OUT = REPO / "queues" / "C-unsolved-cards.md"
 
 
 def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
@@ -51,17 +51,37 @@ def render(cards: list[ParsedCard]) -> str:
     return "\n".join(lines)
 
 
-def main() -> None:
+def load_cards(root: Path) -> list[ParsedCard]:
+    """Parse and validate exactly the inputs that determine Queue C.
+
+    Wiki prose, assets, publications, and rendered-site links do not affect whether a
+    problem card has a solution section.  Keeping them out of this measurement also
+    lets the commit hook evaluate a temporary-index snapshot without materializing the
+    full repository.
+    """
     with PandocServer() as pandoc:
-        parsed, _wiki_pages, errors = load(REPO, pandoc)
+        parsed, errors = parse_cards_with(pandoc, discover(root / "corpus"))
+    if not errors:
+        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"))
     if errors:
         raise SystemExit(f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}")
-    rendered = render(unsolved(parsed))
-    if OUT.exists() and OUT.read_text() == rendered:
-        print(f"{OUT.relative_to(REPO)}: up to date")
+    return parsed
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, default=REPO)
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    out = root / "queues" / "C-unsolved-cards.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    rendered = render(unsolved(load_cards(root)))
+    if out.exists() and out.read_text() == rendered:
+        print(f"{out.relative_to(root)}: up to date")
         return
-    OUT.write_text(rendered)
-    print(f"{OUT.relative_to(REPO)}: rewritten")
+    out.write_text(rendered)
+    print(f"{out.relative_to(root)}: rewritten")
 
 
 if __name__ == "__main__":
