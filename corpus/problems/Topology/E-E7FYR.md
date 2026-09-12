@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-E7FYR
 kind: problem
-title: Compactness and limit points, the first two conditions of a TFAE list
+title: Compactness and limit-point compactness
 classification:
   areas:
   - topology
@@ -19,10 +19,9 @@ review: draft
 - Every infinite subset $A\subseteq X$ has a limit point in $X$.
 
 ::: {.remark}
-These are the first two conditions of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without their stem.
-That card now carries the whole exercise; merging these bullets back into it is a canonicity decision rather than a truncation repair.
+The conditions are equivalent when $X$ is second countable and Hausdorff, or metrizable; see [E-YAEMZ](E-YAEMZ.md).
 :::
 
 ::: {.solution}
-This card is not a standalone exercise. It is an extracted fragment of `E-YAEMZ`, which contains the missing hypotheses and the full TFAE statement. No independent proof is appropriate here: the mathematical content is proved on `E-YAEMZ`.
+The proof is given in [E-YAEMZ](E-YAEMZ.md), together with the equivalence to sequential compactness.
 :::
