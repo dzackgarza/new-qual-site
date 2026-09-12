@@ -44,3 +44,5 @@ source:
 ::: remark
 UC Berkeley Preliminary Exam, Fall 2004. Problems are listed in paper order: Part A 1A–9A, then Part B 1B–9B. The companion solution packet is retained as provenance and transcribed into the cards' solution divs.
 :::
+
+Intake reconciliation: the retained Fall 2004 solution packet contains solutions for all eighteen exam problems (Part A 1A–9A, then Part B 1B–9B), and every source problem is represented above in paper order.
