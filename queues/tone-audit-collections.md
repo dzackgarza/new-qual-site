@@ -4441,12 +4441,12 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-PKY0P.md
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-R3NOE.md
 - [x] corpus/collections/SRC-TEXT-MUN00/19/E-UAMGV.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-1.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-2.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-3.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-4.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-5.md
-- [ ] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-6.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-1.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-2.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-3.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-4.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-5.md
+- [x] corpus/collections/SRC-TEXT-MUN00/2/E-MUN-2-6.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/20/E-1XT8N.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/20/E-37RI3.md
 - [ ] corpus/collections/SRC-TEXT-MUN00/20/E-39RRX.md
