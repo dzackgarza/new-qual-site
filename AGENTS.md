@@ -302,6 +302,38 @@ authored data. Never derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
 reading and mathematical judgment.
 
+## A disposition is not a unit of work
+
+Deciding that a source is reference-only, ticking a queue entry, closing a defect record,
+normalising whitespace across a collection: none of this is authored content, and none of it is
+a unit of work. The unit of work in this repository is a card, a solution, a source properly
+carded. A session whose output is dispositions has produced a tidier queue and no mathematics.
+
+This matters here more than elsewhere because the queue is long and dispositioning is easy. It
+is always possible to spend a session deciding about sources rather than carding them, and the
+queue counts will move the whole time. On 2026-09-12 a worker described folding a queue
+disposition into a commit as its next unit of work, and separately produced commits titled
+"bank" that moved the dirty count by one file.
+
+So: fold the queue disposition into the commit carrying the cards it describes, never commit it
+alone, and never let a turn end with dispositions as its only product. If a source genuinely
+needs no cards, say so in the commit that finishes the source before it, and move to one that
+does.
+
+## Repair the tooling that wastes your turns
+
+When the same friction appears twice, stop and fix it at its owner rather than working around
+it. The formatter that reflowed seventy-six sibling cards on every pathspec commit was not a
+quirk to route around — it made `git status` unreadable, which is the condition under which
+authored work goes missing unnoticed, and this repository has already lost 962 authored lines
+that way. It was a four-line defect in a shared formatter that had been costing every commit
+for days.
+
+The same applies to an OCR count that is routinely wrong, an extraction path that silently
+truncates, a check that cannot distinguish a solved card from an unsolved one. Fix it where it
+lives, commit the fix with its regression, and note it in the queue. A workaround you carry in
+your head is a defect the next worker meets fresh.
+
 ## Public audience and remarks
 
 The audience for this project is graduate students reviewing for a qualifying
