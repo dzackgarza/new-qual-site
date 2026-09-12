@@ -9,6 +9,11 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against the retained one-page Separation and countability definitions PDF; this is the second of its two explicit “Useful facts that you should prove.”
 ---
 
 ::: {.problem}
