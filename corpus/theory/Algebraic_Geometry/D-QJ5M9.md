@@ -31,13 +31,13 @@ In dimension $1$ the two agree: a Noetherian local domain of dimension $1$ is no
 :::
 
 ::: {.theorem title="Normalization"}
-Let $X \subseteq \PP^{n}$ be a projective variety.
-Then there exists a unique normal projective variety $X_{\mathrm{norm}}$ and a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$ such that any morphism $f \colon X \to Y$ with $Y$ normal factors uniquely as $f \circ \nu = \bar{f}$ for a morphism $\bar{f} \colon X_{\mathrm{norm}} \to Y$.
-The same holds for affine varieties with $X \to \AA^{d}$ replaced by the affine normalization.
+Let $X \subseteq \PP^{n}$ be an integral projective variety.
+There is a normal projective variety $X_{\mathrm{norm}}$ with a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$, unique up to unique isomorphism over $X$. Every dominant morphism $f:Y\to X$ from a normal integral variety factors uniquely through $\nu$.
+For an affine integral variety $X=\Spec A$, its normalization is $\Spec\overline A$, where $\overline A$ is the integral closure of $A$ in $\Frac(A)$.
 :::
 
 ::: {.remark}
-This is the whole answer to how the two notions relate, and the dimension-$1$ case is the one with a consequence: the normalization of a curve is normal, hence regular, hence smooth over a perfect field, so **normalization resolves singularities in dimension one**. That is why resolution is not an issue for curves and is a theorem for surfaces.
+The normalization of an integral curve is regular, hence smooth over a perfect field. Thus normalization resolves singularities of curves over perfect fields.
 
 The standard normal-but-singular example is the quadric cone $V(xy - z^2) \subseteq \AA^3$, singular at the origin and normal, being regular in codimension one and Cohen--Macaulay — Serre's criterion $R_1 + S_2$.
 The standard non-normal example is the cuspidal cubic $k[t^2,t^3] \subseteq k[t]$, whose normalization is $k[t]$.
