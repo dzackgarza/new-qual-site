@@ -154,3 +154,238 @@ are compatible on overlaps.”
 mathematical referents. Page order changes when text is split, transcluded, or
 rendered in another context. Name the object, map, hypothesis, or claim that
 the reader must use; if no such relation exists, remove the signpost.
+
+### `PROSE-04`: Do the mathematics instead of describing the document
+
+**Bad:** “This page gives the framework for understanding schemes.”
+
+**Good:** “A scheme is a locally ringed space that is locally isomorphic to
+`Spec(A)` for a commutative ring `A`.”
+
+Self narration describes the page instead of supplying its subject. A reader
+can see the page and needs the definition, result, or example that the sentence
+claims to introduce.
+
+### `PROSE-05`: Remove negative framing that rejects no real alternative
+
+**Bad:** “A scheme is not merely a topological space with extra information.”
+
+**Good:** “A scheme consists of a topological space and a sheaf of rings whose
+stalks are local rings.”
+
+“Not merely”, “rather than”, and “never” often invent a mistaken view for the
+reader to reject. State the positive structure. Keep a contrast only when the
+contrast is a mathematical counterexample or distinction with a named object.
+
+### `PROSE-06`: Do not certify the text inside the text
+
+**Bad:** “The definitions below are complete and arranged in dependency order.”
+
+**Good:** Put the definitions in the required order and let the links and
+headings show that order.
+
+A sentence cannot make the page complete, canonical, minimal, or self contained.
+Those properties belong to the artifact and its checks. The sentence spends
+space asserting a property that the reader must verify from the page.
+
+### `PROSE-07`: Do not tell the reader how to read
+
+**Bad:** “Keep this distinction in mind when reading the proof.”
+
+**Good:** “The morphism is an isomorphism only when it is bijective on the
+underlying spaces and induces isomorphisms on all stalks.”
+
+Theory of mind replaces a mathematical claim with instructions about attention,
+memory, or interpretation. State the distinction where the reader uses it.
+
+### `PROSE-08`: Remove puffery and cadence padding
+
+**Bad:** “This powerful and elegant theorem is a crucial bridge between the two
+deep theories. Moreover, it is worth noting that it is broadly useful.”
+
+**Good:** “If $X$ is projective over a field, every regular function
+$X\to\mathbb A^1$ is constant.”
+
+Adjectives such as “powerful”, “deep”, “crucial”, and “elegant” rate the subject
+without stating it. Formulaic transitions and lists of three create rhythm
+without adding evidence. Delete them or replace them with the result or its
+application.
+
+### `PROSE-09`: State the theorem before its notational consequence
+
+**Bad:** “Coherence is what lets us write a tensor product without
+parentheses.”
+
+**Good:** “The coherence theorem identifies all composites of associators with
+the unique canonical isomorphism between any two parenthesizations. We therefore
+write the tensor product without parentheses.”
+
+The notation is justified by a precise theorem. Naming only the notational
+payoff hides the object, map, and equality that the theorem controls.
+
+### `PROSE-10`: Separate construction from verification
+
+**Bad:** “Take the product as the tensor operation and use the unique maps from
+the universal property, which gives a monoidal category.”
+
+**Good:** “Define $A\otimes B=A\times B$ and take the terminal object as the
+unit. The universal properties of products supply the associator and unitors;
+their coherence follows from uniqueness.”
+
+A construction answers what is chosen. A verification answers why it has the
+required properties. Combining both in one sentence hides that logical order.
+
+### `PROSE-11`: Keep project process out of mathematical exposition
+
+**Bad:** “This theorem is included because the audit requires it.”
+
+**Good:** State the theorem and its hypotheses. Record audit or authoring
+information in this guide or in the repository work queues.
+
+Readers need mathematical reasons for mathematical claims. Internal workflow,
+review status, and implementation reasons belong in contributor documentation.
+
+## Precision policies
+
+These policies prevent prose from taking the place of a typed mathematical
+statement. The general reason is the same in each case: a reader must be able
+to identify the objects, maps, hypotheses, and conclusion without guessing.
+
+### `PRECISION-01`: Replace mood words with definitions
+
+**Bad:** “A scheme is a geometrically complete space.”
+
+**Good:** “A scheme is a locally ringed space locally isomorphic to the spectrum
+of a commutative ring.”
+
+Vibe adjectives sound technical while leaving the defining conditions unknown.
+Use the standard term and state its definition.
+
+### `PRECISION-02`: Replace vague qualifiers with exact scope
+
+**Bad:** “This holds essentially for finite type schemes.”
+
+**Good:** “This holds for schemes locally of finite type over a field.”
+
+Words such as “essentially”, “basically”, “morally”, and “in some sense” hide
+the hypothesis or weaken a claim without saying how. State the exact scope, or
+name a genuine approximation such as “up to isomorphism”.
+
+### `PRECISION-03`: Name operations instead of using empty collective nouns
+
+**Bad:** “The construction carries the required structure.”
+
+**Good:** “The pullback sheaf has restriction maps satisfying the sheaf axiom.”
+
+“Data”, “structure”, “property”, “framework”, “package”, and “setting” are
+acceptable only when they have a fixed mathematical referent. Otherwise they
+hide the operations or axioms the reader must check.
+
+### `PRECISION-04`: State universal constructions as universal constructions
+
+**Bad:** “Define $E\to X$ by pulling back $U\to B$ along $X\to B$.”
+
+**Good:** “Let $E$ be the pullback in the Cartesian square
+$E\to U$, $E\to X$, $U\to B$, $X\to B$.”
+
+“Obtained by pulling back” is an instruction without the square, maps, or
+universal property. Give the diagram or state the property that characterizes
+the object.
+
+### `PRECISION-05`: Bind symbols before using them
+
+**Bad:** “The map $f$ is surjective, where $X$ is the source.”
+
+**Good:** “For schemes $X$ and $Y$, let $f\colon X\to Y$ be a morphism. Assume
+$f$ is surjective.”
+
+An unbound symbol forces the reader to recover its type and scope from later
+prose. Introduce every object, map, index, and codomain before its first use.
+
+### `PRECISION-06`: Give every map its domain and codomain
+
+**Bad:** “Consider the natural map $f$.”
+
+**Good:** “Consider the natural morphism $f\colon X\to Y$ induced by the ring
+map $A\to B$.”
+
+A map without its source, target, and construction cannot be checked or composed.
+The type is part of the mathematical statement.
+
+### `PRECISION-07`: Use standard terms and notation
+
+**Bad:** “The value space of $M$” when the object is an $R$-module $W$.
+
+**Good:** “Let $b\colon M\otimes_R M\to W$ be a $W$-valued bilinear form.”
+
+Invented terms and elegant variations make readers guess whether a new object
+was introduced. Use the standard name, or define the new term before using it.
+
+## Structure policies
+
+These policies protect the logical skeleton of the book. A section or example
+must carry a mathematical unit that a reader can identify and reuse.
+
+### `STRUCTURE-01`: Give each definition one defining occurrence
+
+**Bad:** Define “scheme” in a lede, restate it in a remark, and use both
+versions as if they had equal authority.
+
+**Good:** Give one fenced definition, then link to it and state consequences
+where they are used.
+
+Multiple defining occurrences drift apart and make it unclear which hypotheses
+govern later claims. One defining occurrence gives the term a stable referent.
+
+### `STRUCTURE-02`: Put a primary mathematical unit in every section
+
+**Bad:** A section contains only “This is useful for the next chapter” and a
+list of links.
+
+**Good:** Give the section a definition, theorem, example, counterexample, or
+worked calculation, then use remarks and links to support it.
+
+Without a primary unit, a section is navigation or process prose disguised as
+exposition. Secondary remarks cannot carry the chapter's logical skeleton.
+
+### `STRUCTURE-03`: Keep examples subordinate to the definition they illustrate
+
+**Bad:** “Affine space is an important example of a scheme.”
+
+**Good:** “For a ring $A$, the locally ringed space $\operatorname{Spec}(A)$ is
+an affine scheme. When $A=k[x_1,\ldots,x_n]$, it is affine $n$-space over
+$k$.”
+
+An example should instantiate the defining data. Calling something an example
+without showing the instance gives the reader no mathematical test.
+
+### `STRUCTURE-04`: State propositions as propositions
+
+**Bad:** “The following is the key fact about proper morphisms.”
+
+**Good:** “A proper morphism of schemes is universally closed, separated, and
+of finite type.”
+
+Labels such as “key fact” and “important result” announce status instead of
+stating a claim. Name the hypotheses and conclusion so the reader can apply it.
+
+### `STRUCTURE-05`: Use references for mathematical referents
+
+**Bad:** “As discussed above, this map is an isomorphism.”
+
+**Good:** “By the normalization theorem, the induced map is an
+isomorphism.”
+
+Position and memory are unstable references. Link the named theorem, card, or
+page when the reader must use it.
+
+### `STRUCTURE-06`: Use parentheticals only for genuine qualifications
+
+**Bad:** “The map is finite (and this is important, as we will see below).”
+
+**Good:** “The map is finite (equivalently, the target coordinate ring is a
+finite module over the source coordinate ring).”
+
+Parentheticals should restrict or identify the claim. If they only announce
+future explanation, motivation, or emphasis, move the mathematical content into
+the main sentence or delete the parenthetical.
