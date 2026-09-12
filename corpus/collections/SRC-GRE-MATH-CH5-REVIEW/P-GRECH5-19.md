@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-The eigenvalues of $A=\begin{pmatrix}2&b\\3&-1\end{pmatrix}$ are $-4$ and $b-1$. Find $b$.
+The eigenvalues of $A=\begin{pmatrix}2&b\\3&-1\end{pmatrix}$ are $-4$ and $b-1$.
+Find $b$.
 
 (A) $2$  (B) $3$  (C) $4$  (D) $5$  (E) $6$
 :::

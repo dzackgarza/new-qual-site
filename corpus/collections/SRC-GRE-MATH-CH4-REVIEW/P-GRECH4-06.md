@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $g:\mathbb R\to\mathbb R$ be differentiable and integrable. The integral curve of
+Let $g:\mathbb R\to\mathbb R$ be differentiable and integrable.
+The integral curve of
 \[
 [y+g(x)]\,dx+[x-g(y)]\,dy=0
 \]

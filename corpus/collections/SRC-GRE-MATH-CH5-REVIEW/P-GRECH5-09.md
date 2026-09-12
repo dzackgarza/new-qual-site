@@ -12,9 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-For what value of $x$ is
-\[\begin{pmatrix}7&6&0&1\\5&4&x&0\\8&7&0&1\\0&0&1&1\end{pmatrix}\]
-noninvertible?
+For what value of $x$ is \[\begin{pmatrix}7&6&0&1\\5&4&x&0\\8&7&0&1\\0&0&1&1\end{pmatrix}\] noninvertible?
 
 (A) $-1$  (B) $0$  (C) $1$  (D) $3$  (E) $9$
 :::

@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A,B,C$ be real $2\times2$ matrices, and let $0$ denote the zero matrix. Which statements are true?
+Let $A,B,C$ be real $2\times2$ matrices, and let $0$ denote the zero matrix.
+Which statements are true?
 
 I. $A^2=0\Rightarrow A=0$.
 II. $AB=AC\Rightarrow B=C$.

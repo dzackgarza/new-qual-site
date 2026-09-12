@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Choose nonzero $\mathbf v=(a,b,c)^\top\in\mathbb R^3$ and define $T(\mathbf x)=\mathbf v\times\mathbf x$. Which displayed matrix $A$ satisfies $T(\mathbf x)=A\mathbf x$ for every $\mathbf x$?
+Choose nonzero $\mathbf v=(a,b,c)^\top\in\mathbb R^3$ and define $T(\mathbf x)=\mathbf v\times\mathbf x$.
+Which displayed matrix $A$ satisfies $T(\mathbf x)=A\mathbf x$ for every $\mathbf x$?
 
 (A) $\begin{pmatrix}0&-c&b\\c&0&-a\\-b&a&0\end{pmatrix}$
 
