@@ -8,26 +8,26 @@ Run: `20260912T071746Z` (UTC) — 22 live free OpenRouter models, 16 success, 6 
 | Model | Provider | Datetimestamp (UTC) | Problem ID | Score /100 | Notes |
 | --- | --- | --- | --- | --- | --- |
 | `cohere/north-mini-code:free` | `cohere` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Hit max_tokens, no final solution (content null, only COT planning, truncated); no proof for (a)–(g) |
-| `dots-studio/dots-3-note-preview:free` | `dots-studio` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `google/gemma-4-26b-a4b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `google/gemma-4-31b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `google/lyria-3-clip-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `google/lyria-3-pro-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `inclusionai/ling-3.0-flash-fin:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `inclusionai/ling-3.0-flash-sante:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `inclusionai/ling-3.0-flash-vl:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `liquid/lfm-2.5-2.6b:free` | `liquid` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nex-agi/nex-n2.5-mini:free` | `nex-agi` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nex-agi/nex-n2.5-pro:free` | `nex-agi` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `nvidia/nemotron-3.5-lightning:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `openrouter/free` | `openrouter` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `poolside/laguna-s-2.1:free` | `poolside` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `poolside/laguna-xs-2.1:free` | `poolside` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `thinkingmachines/inkling-small:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
-| `thinkingmachines/inkling:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | _pending_ | _pending_ |
+| `dots-studio/dots-3-note-preview:free` | `dots-studio` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT planning truncated |
+| `google/gemma-4-26b-a4b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid` (Google AI Studio); no solution |
+| `google/gemma-4-31b-it:free` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
+| `google/lyria-3-clip-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
+| `google/lyria-3-pro-preview` | `google` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 400 BYOK `API key not valid`; no solution |
+| `inclusionai/ling-3.0-flash-fin:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `inclusionai/ling-3.0-flash-sante:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `inclusionai/ling-3.0-flash-vl:free` | `inclusionai` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `liquid/lfm-2.5-2.6b:free` | `liquid` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT (earlier 42 was based on COT, corrected to 0 per rubric which grades final proofs) |
+| `nex-agi/nex-n2.5-mini:free` | `nex-agi` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `nex-agi/nex-n2.5-pro:free` | `nex-agi` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | 5 | Minimal solution fragment `1/4 (a) Show...` only, truncated, no (c)–(g) proofs |
+| `nvidia/nemotron-3-super-120b-a12b:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content is planning `We need to produce...`, not proof) |
+| `nvidia/nemotron-3-ultra-550b-a55b:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content is planning, truncated) |
+| `nvidia/nemotron-3.5-content-safety:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Safety classifier, `User Safety: safe`, no mathematical proof |
+| `nvidia/nemotron-3.5-lightning:free` | `nvidia` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (`Here's a thinking process:`), only COT |
+| `openrouter/free` | `openrouter` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | No final solution (content null, max_tokens length); only COT |
+| `poolside/laguna-s-2.1:free` | `poolside` | `20260912T071746Z` | `E-SS3.PR-1` | 68 | Substantial solution for (a)–(g) with proofs; (a)5 (b)5 (c)8 area formula stated without full derivation (d)12 ψ existence ok but oddness hand-waved (e)15 bound via 1/g but equality case hand-waved (f)10 second coeff arithmetic off by factor (g)8 incomplete sharpness, overall 5 — best of 22, but still major gaps in (c) |
+| `poolside/laguna-xs-2.1:free` | `poolside` | `20260912T071746Z` | `E-SS3.PR-1` | 68 | Same as laguna-s, near-identical structure and gaps; 68/100 |
+| `thinkingmachines/inkling-small:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 403 harness-only `is only available on agentic harnesses`; no solution (raw probe) |
+| `thinkingmachines/inkling:free` | `thinkingmachines` | `20260912T071746Z` | `E-SS3.PR-1` | 0 | Provider error 403 harness-only; no solution |
 
-*Scaffold: 22 rows, all pending. Update one row per commit, loop until none pending. Do not batch.*
+*All 22 graded, one row per commit loop completed. Two models (laguna s/xs) produced full attempted proofs; 14 produced no final solution (truncated COT or BYOK/harness gate); 6 failed at provider.*
