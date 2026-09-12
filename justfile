@@ -153,7 +153,10 @@ _no-bare-disposition:
     set -euo pipefail
     staged=$(git diff --cached --name-only)
     [ -z "$staged" ] && exit 0
-    outside=$(printf '%s\n' "$staged" | grep -v '^queues/' || true)
+    # A collection index marked `completion: complete` with no card touched is the same
+    # species as a queue tick — a marker moved, nothing authored. Treat queue files and
+    # bare index.md the same way; an index change riding with card work is fine and passes.
+    outside=$(printf '%s\n' "$staged" | grep -vE '^queues/|(^|/)index\.md$' || true)
     [ -n "$outside" ] && exit 0
     # Size is the wrong test: a six-line reconciliation note committed alone is still a
     # disposition committed alone. What distinguishes a real queue filing is who writes it —
@@ -163,9 +166,9 @@ _no-bare-disposition:
     case "$author" in
         *users.noreply.github.com) exit 0 ;;
     esac
-    echo "Refusing a queue-only commit." >&2
+    echo "Refusing a commit that changes only queue files and collection indexes." >&2
     echo "" >&2
-    echo "AGENTS.md, 'A disposition is not a unit of work': a disposition, reconciliation note" >&2
+    echo "AGENTS.md, 'A disposition is not a unit of work': a disposition, a reconciliation note" >&2
     echo "or queue tick rides in the commit carrying the cards it describes. Stage the card work" >&2
     echo "alongside it, or leave the queue edit uncommitted until the cards it describes land." >&2
     exit 1
