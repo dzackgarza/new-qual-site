@@ -36,10 +36,9 @@ For $S$ generated in degree $1$ over a Noetherian ring $S_0$, every quasicoheren
 :::
 
 ::: {.remark}
-The direction that matters is that $\tilde{\wait\,}$ is essentially surjective, not that it is an equivalence — and it is not one.
+The functor $\tilde{\wait\,}$ is essentially surjective but is not an equivalence.
 Two graded modules agreeing in all large degrees give the same sheaf, so the functor kills modules supported at the irrelevant ideal $S_+$, and $\QCoh(\Proj S)$ is the quotient of graded modules by that torsion.
 $\Gamma_*$ is the chosen splitting: it picks the saturated module in each class.
 
-This is the projective analogue of $M \leftrightarrow \tilde M$ on $\Spec A$, with the degree-zero part of the localization playing the role of the localization, and the loss of injectivity is exactly the price of the irrelevant ideal.
-A qual question here usually wants the failure named, with the example $S/S_+$, whose sheaf is zero.
+This is the projective analogue of $M \leftrightarrow \tilde M$ on $\Spec A$, using the degree-zero part of the localization. For example, $S/S_+$ has zero associated sheaf.
 :::
