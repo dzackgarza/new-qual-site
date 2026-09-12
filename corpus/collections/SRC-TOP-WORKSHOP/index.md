@@ -39,6 +39,12 @@ provenance:
 - assets/attachments/Day_7_-_Fundamental_Groups.pdf
 - assets/attachments/Day_8_-_Covering_Spaces.pdf
 - assets/attachments/Day_9_-_Homology.pdf
+- assets/attachments/day_1_compactness.pdf
+- assets/attachments/day_2_connected_path_connnected.pdf
+- assets/attachments/day_4_homotopy_retractions.pdf
+- assets/attachments/day_5_fundamental_group.pdf
+- assets/attachments/day_6_covering_spaces.pdf
+- assets/attachments/day_7_homology.pdf
 source:
   source_kind: compilation
   date:
@@ -115,6 +121,89 @@ source:
     - P-TOP-WORKSHOP-D9-05
     - P-TOP-WORKSHOP-D9-06
     - P-TOP-WORKSHOP-D9-07
+  - name: Revised packet — Compactness
+    problems:
+    - P-TOP-WORKSHOP-D1-W1
+    - P-TOP-WORKSHOP-D1-W2
+    - P-T11A1
+    - P-AISD5
+    - P-T05A2
+    - P-T06Q1-4
+    - P-T08A4
+    - P-T09A4
+    - P-T10A2
+    - P-T11A4
+    - P-TOP-WORKSHOP-D1-02
+    - P-TOP-WORKSHOP-D1-07
+  - name: Revised packet — Connectedness and path connectedness
+    problems:
+    - P-TOP-WORKSHOP-D2-W1
+    - P-TOP-WORKSHOP-D2-W2
+    - P-EZ2B2
+    - P-4WCFE
+    - P-T20B1
+    - P-T05A3
+    - P-T06Q1-5
+    - P-T07A2
+    - P-TOP-WORKSHOP-D2-02
+    - P-T08A1
+    - P-T10A4
+    - P-T15A2
+  - name: Revised packet — Homotopy and retractions
+    problems:
+    - P-TOP-WORKSHOP-HR-W1
+    - P-TOP-WORKSHOP-HR-W2
+    - P-5AXU3
+    - P-LYMLT
+    - P-T14A2
+    - P-T15A4
+    - P-TOP-WORKSHOP-HR-05
+    - P-TOP-WORKSHOP-D4-04B
+    - P-T08A3
+    - P-T09A3
+  - name: Revised packet — Fundamental group
+    problems:
+    - P-TOP-WORKSHOP-D7-GW1
+    - P-TOP-WORKSHOP-D7-GW2
+    - P-TOP-WORKSHOP-D7-GW3
+    - P-FRRZE
+    - P-T05B1
+    - P-T07B3
+    - P-T08B1
+    - P-T10B1
+    - P-TOP-WORKSHOP-D7-G06
+    - P-T11B1
+    - P-T10B3
+    - P-TOP-WORKSHOP-D7-G05
+  - name: Revised packet — Covering spaces
+    problems:
+    - P-TOP-WORKSHOP-D8-CW1
+    - P-TOP-WORKSHOP-D8-CW2
+    - P-6EVID
+    - P-T05B2
+    - P-T06Q1-7
+    - P-T07B2
+    - P-T08B2
+    - P-T09B2
+    - P-T09B3
+    - P-T10B3
+    - P-T14B2
+    - P-T15B1
+    - P-T15B2
+  - name: Revised packet — Homology
+    problems:
+    - P-TOP-WORKSHOP-D9-HW1
+    - P-T06Q1-9
+    - P-T05B3
+    - P-T06Q1-8
+    - P-T07B4
+    - P-T08B3
+    - P-T08B4
+    - P-T09B4
+    - P-T10B4
+    - P-T14B4
+    - P-T15B3
+    - P-T15B4
   area: topology
 ---
 
