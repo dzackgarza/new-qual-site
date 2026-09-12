@@ -34,7 +34,7 @@ via $\sigma\mapsto(a,b)$, where
 \]
 For $n=3,4,6$, show that this embedding is an isomorphism onto the dihedral group of order $2n$.
 
-> The commonly attempted further deduction $[K:\mathbb Q]=n\varphi(n)$ for all $n$ is false in general; the intersection $\mathbb Q(2^{1/n})\cap\mathbb Q(\zeta_n)$ can be nontrivial.
+> The formula $[K:\mathbb Q]=n\varphi(n)$ is false in general; the intersection $\mathbb Q(2^{1/n})\cap\mathbb Q(\zeta_n)$ can be nontrivial.
 :::
 
 ::: {.solution}
@@ -95,6 +95,6 @@ For example, when $n=8$,
 \qquad
 \sqrt2=\zeta_8+\zeta_8^{-1}\in\mathbb Q(\zeta_8).
 \]
-Thus the two subfields have nontrivial intersection, so their degrees do not multiply. This invalidates the original unrestricted degree argument.
+Thus the two subfields have nontrivial intersection, so their degrees do not multiply.
 :::
 :::
