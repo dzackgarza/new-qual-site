@@ -31,10 +31,9 @@ Equivalently, $\Omega_{X/Y} = 0$; equivalently, $\Delta_{X/Y}$ is an open immers
 :::
 
 ::: {.remark}
-The three formulations are three different tools and it is worth being able to move between them.
-The first says the fibres are reduced and the maximal ideal is not squashed; the second is the computable one; the third is why unramified morphisms behave like local isomorphisms of topological spaces, since an open diagonal is the formal version of "locally injective".
+The local-ring formulation gives reduced, zero-dimensional fibres with finite separable residue fields. The differential formulation permits computation from a presentation, while the diagonal formulation is stable under base change.
 
-For a dominant map of smooth curves $f : X \to Y$ the local picture is $f^\sharp(\mfm_{f(p)}) \OO_{X,p} = \mfm_p^{e_p}$, and $f$ is unramified exactly when every ramification index $e_p$ equals $1$.
-$t \mapsto t^n$ on $\AA^1$ is ramified at the origin, and in characteristic $p$ dividing $n$ it is ramified in the worse, inseparable way that the separability clause is there to exclude.
-This is the same $e_p$ that appears in Riemann--Hurwitz, so the definition is not a formality: it is the condition that makes the genus formula have no correction term.
+For a nonconstant map of smooth integral curves over an algebraically closed field, the local picture at a closed point is $f^\sharp(\mfm_{f(p)}) \OO_{X,p} = \mfm_p^{e_p}$, and $f$ is unramified exactly when every ramification index $e_p$ equals $1$.
+For $n>1$, $t \mapsto t^n$ on $\AA^1$ is ramified at the origin. In characteristic $p$ dividing $n$, its differential vanishes everywhere and the induced function-field extension is inseparable.
+For a finite separable map of smooth projective curves, unramifiedness makes the ramification term in Riemann--Hurwitz vanish.
 :::
