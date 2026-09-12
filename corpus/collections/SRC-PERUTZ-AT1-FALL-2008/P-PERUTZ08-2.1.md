@@ -21,6 +21,7 @@ Show that every matrix $A\in \operatorname{SL}_2(\mathbb R)$ can be written uniq
 Use this to construct:
 
 1. a deformation retraction of $\operatorname{SL}_2(\mathbb R)$, topologized as a subspace of $\mathbb R^4$, onto $\operatorname{SO}(2)$; and
+
 2. a homeomorphism
    \[
    S^1\times(0,\infty)\times\mathbb R\longrightarrow \operatorname{SL}_2(\mathbb R).

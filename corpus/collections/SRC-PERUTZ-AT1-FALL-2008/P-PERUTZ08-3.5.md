@@ -32,5 +32,6 @@ such that $\Gamma$ maps every rectangle
 \[
 [t_i,t_{i+1}]\times[s_j,s_{j+1}]
 \]
-entirely into $U$ or entirely into $V$. Moreover, show that the sequence $(s_j)$ can be chosen to refine prescribed subdivisions of $\gamma_0$ and $\gamma_1$.
+entirely into $U$ or entirely into $V$.
+Moreover, show that the sequence $(s_j)$ can be chosen to refine prescribed subdivisions of $\gamma_0$ and $\gamma_1$.
 :::
