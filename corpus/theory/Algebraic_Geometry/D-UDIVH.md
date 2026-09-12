@@ -48,8 +48,8 @@ Vanishing of a *fixed* section is an open condition: one section propagates outw
 Vanishing of the whole stalk is not, because different points may be killed by unrelated sections with no common neighborhood.
 
 Extension by zero is exactly the construction that exploits the gap.
-For $j$ an open immersion, $j_!$ produces a sheaf supported on $U$ — not on $\cl_X(U)$ — which is why $j_!$ is the functor to reach for when a computation must not spread to the boundary.
-By contrast, for $i$ a closed immersion $i_*$ has closed support, and that is the case where support behaves as intuition predicts.
+For $j$ an open immersion, $j_!$ produces a sheaf supported on $U$ — not on $\cl_X(U)$ — so $j_!$ is the extension-by-zero whose support is exactly $U$.
+By contrast, for $i$ a closed immersion $i_*$ produces a sheaf with closed support.
 
-The hypothesis that restores closedness is coherence: a coherent sheaf on a Noetherian scheme has closed support, cut out by the annihilator ideal, and this is what licenses speaking of "the subscheme where $\mcf$ lives".
+The hypothesis that restores closedness is coherence: a coherent sheaf on a Noetherian scheme has closed support, cut out by the annihilator ideal, and this is what lets one speak of "the subscheme where $\mcf$ lives".
 :::

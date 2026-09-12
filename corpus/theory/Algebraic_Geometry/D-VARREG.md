@@ -39,6 +39,6 @@ For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $
 ::: {.remark}
 The condition is *locally* a quotient, not globally one, and the gap between those two is the whole content: on $\PP^n$ every function is locally a ratio of forms of equal degree and there are no nonconstant global ones, and the standard affine example is $X = V(xw - yz) \subseteq \AA^4$, where $x/y = z/w$ is regular on a union of two opens but is not a single quotient on it.
 
-The definition is stated so that it transports verbatim to $\Spec A$ — replace $k$ by $\coprod_{\mfp} A_\mfp$ and "polynomial" by "element of $A$" — which is the point of stating it this way rather than as "restrictions of polynomials".
+The definition is stated so that it transports verbatim to $\Spec A$: replace $k$ by $\coprod_{\mfp} A_\mfp$ and "polynomial" by "element of $A$". This is the formulation that generalises to schemes, rather than the "restrictions of polynomials" phrasing that only applies over an affine variety in the classical setting.
 An examiner asking for $\OO_X$ on a variety is usually setting up that comparison.
 :::

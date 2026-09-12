@@ -38,7 +38,7 @@ This number is finite, independent of the general hyperplanes chosen, and equals
 Two definitions and one question: why is the count the same for every general choice.
 The answer is that cutting by a general hyperplane drops dimension by one and leaves the leading coefficient of the Hilbert polynomial alone, so the count is forced to be the Hilbert-theoretic number, which does not see the choice at all.
 
-*General* is doing work — the hyperplanes must miss the singular locus and meet $X$ transversally — and dropping it is the standard error: a line tangent to a conic meets it in one point, not two, and the count is restored only by multiplicity.
+*General* is doing work — the hyperplanes must miss the singular locus and meet $X$ transversally. For example, a line tangent to a conic meets it in one point, not two, and the count is restored only by multiplicity.
 That repair is Bézout, and it is the reason intersection numbers are defined with multiplicities from the start.
-The word an examiner wants next is *degree is not intrinsic*: the twisted cubic and a line are the same abstract curve with degrees $3$ and $1$.
+The degree is not intrinsic to the abstract variety: the twisted cubic and a line are the same abstract curve with degrees $3$ and $1$.
 :::

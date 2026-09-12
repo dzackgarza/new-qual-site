@@ -36,6 +36,6 @@ A **del Pezzo surface** is a Fano variety of dimension two.
 The sign of $K_X$ is the organising invariant of birational classification, and for curves the three cases are exactly $g = 0$, $g = 1$, $g \geq 2$.
 A Fano variety is automatically projective, since $-K_X$ is an ample divisor to embed by, so "complete" in the definition costs nothing.
 
-The two conventions for Calabi--Yau are not equivalent and the difference is asked about: abelian varieties have $K_X = 0$ but do not satisfy the vanishing, so they are Calabi--Yau in the first sense and not the second.
+The two conventions for Calabi--Yau are not equivalent and differ in their vanishing conditions: abelian varieties have $K_X = 0$ but do not satisfy the vanishing, so they are Calabi--Yau in the first sense and not the second.
 The del Pezzo surfaces are $\PP^1 \times \PP^1$ and $\PP^2$ blown up at $r \leq 8$ general points, with $K^2 = 9 - r$; the cubic surface is the case $r = 6$, and the $27$ lines on it are what that classification is usually asked for.
 :::

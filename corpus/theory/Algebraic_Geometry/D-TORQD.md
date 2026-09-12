@@ -40,7 +40,7 @@ The two constructions invert each other.
 Starting from a polytope $P$ with facet presentation $\inp{m}{u_F} \geq -a_F$, the divisor $D_P = \sum_F a_F D_F$ on $X_P$ satisfies $P_{D_P} = P$.
 Starting from a divisor, $P_D$ is the polytope whose normal fan is refined by $\Sigma$.
 
-The case worth carrying is the anticanonical one.
+The anticanonical case is the one that inverts the polytope-to-divisor construction.
 Since $K_X = -\sum_\rho D_\rho$, the anticanonical divisor has $a_\rho = 1$ for every $\rho$ and
 \[
 P_{-K_X} = \ts{ m \in M_\RR \st \inp{m}{u_\rho} \geq -1 } ,

@@ -61,5 +61,4 @@ The third line misses the point and keeps $L^2 = 1$.
 Four rays with a $-1$ among the self-intersections identifies the surface as $\FF_1$.
 
 The sum rule holds: $\sum a_i = 1 + 0 + 0 - 1 = 0 = 3 \cdot 4 - 12$.
-Blowing up adds one ray, so it raises $\rank \Pic$ by one and $\chi$ by one, both visible on the picture.
 :::

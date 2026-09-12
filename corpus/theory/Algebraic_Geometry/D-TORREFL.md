@@ -49,5 +49,5 @@ Exactly five of them are smooth, giving the toric del Pezzo surfaces:
 \PP^2, \quad \PP^1 \times \PP^1, \quad \Bl_1 \PP^2, \quad \Bl_2 \PP^2, \quad \Bl_3 \PP^2 ,
 \]
 the last three obtained by blowing up the torus-fixed points of $\PP^2$ one at a time.
-The list stops at three because a fourth blowup destroys ampleness of $-K$: the fan acquires two adjacent rays whose walls no longer crease.
+The list stops at three: a fourth blowup of $\PP^2$ at a torus-fixed point makes $-K$ non-ample. It remains big and nef but fails to be ample, so the surface is no longer a del Pezzo.
 :::

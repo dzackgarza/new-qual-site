@@ -35,5 +35,4 @@ For the **node** $k[x,y]/(y^2 - x^2(x+1))$, the same computation gives $\GG_m$.
 The slogan is that normalization replaces the singular point by its preimage, and what is lost is the identification data: at a node two branches are glued, and the gluing is a choice of ratio of the two values, hence $\GG_m$; at a cusp the branches coincide to first order, and what is glued is a value together with a derivative, hence $\GG_a$.
 
 For the projective versions the same answers appear as $\Pic^0$: the nodal cubic has $\Pic^0 = \GG_m$ and the cuspidal cubic has $\Pic^0 = \GG_a$, which is the degeneration of the group law on an elliptic curve as the discriminant goes to zero.
-Being able to say which singularity gives which group is the point of the question.
 :::

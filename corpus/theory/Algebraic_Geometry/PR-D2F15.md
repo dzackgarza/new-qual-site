@@ -29,7 +29,7 @@ Every fan admits a refinement into smooth cones, obtained by repeatedly subdivid
 :::
 
 ::: {.remark}
-Resolution of singularities is a hard theorem in general and a subdivision algorithm here, which is the reason toric varieties are worth an afternoon before an exam: they turn every hard statement in the subject into a finite computation with lattice points.
+Resolution of singularities is a hard theorem in general and a subdivision algorithm here, which is why toric varieties are worth working through before an exam: they turn every hard statement in the subject into a finite computation with lattice points.
 
 Two cones to recognise on sight.
 The cone on $(0,1)$ and $(1,0)$ is smooth and gives $\AA^2$.

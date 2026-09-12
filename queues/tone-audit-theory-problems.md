@@ -2178,28 +2178,28 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebraic_Geometry/D-SRFRULED.md` | `fd24fcc3436b90af06d34512013eba7252e6316e` | `fd24fcc3436b90af06d34512013eba7252e6316e` | Read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-T2J3Q.md` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | `fe10741b8d8d281ac5f3894b30fbaeb323e21b31` | Read; retained |
 | [x] | `corpus/theory/Algebraic_Geometry/D-TORMOMENT.md` | `dae6b0a7cfc74d631022e12957ffcc234f4a7838` | `d8560e19d8c66619a429023a2265f137386f9b78` | Removed study directive and revision-list reference; kept construction-illustrative payload (STANCE, PROSE-02) |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-TORPOLY.md` | `6d7b1c4250bf03ca191e1ed718e319ad1ef02db1` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-TORQD.md` | `1d3c815feb924966ecfa9239ae90cbf5d79db178` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-TORREFL.md` | `0657302b0fd11ccf9565ba67b5fd8ae7c13de104` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-UDIVH.md` | `06f91fca8e0041c658e1b6815691aa97853aba76` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VARBLOW.md` | `41d4f4f8022b1a350644064463deddbfebec7e3e` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VARCOMP.md` | `ae4536f59b380b84fdda2ab1a5c1a45b77b3bed8` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VARDEG.md` | `8aa4faba93d750a489550fcbceeacd12c986fd3c` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VARFANO.md` | `3505b0989e3d76b9362a4b0b28b33b69f4242e12` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-TORPOLY.md` | `6d7b1c4250bf03ca191e1ed718e319ad1ef02db1` | — | Removed examiner directive and "worth memorising" ranking; kept three descriptions, the third now stated by its content. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-TORQD.md` | `1d3c815feb924966ecfa9239ae90cbf5d79db178` | — | Removed "case worth carrying" ranking; kept the anticanonical computation. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-TORREFL.md` | `0657302b0fd11ccf9565ba67b5fd8ae7c13de104` | — | Replaced the fan-based explanation of why the list stops at three with the ampleness condition. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-UDIVH.md` | `06f91fca8e0041c658e1b6815691aa97853aba76` | — | Replaced "functor to reach for" / "intuition predicts" / "licenses speaking of" with direct descriptions of j_! and i_* and the coherence statement. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VARBLOW.md` | `41d4f4f8022b1a350644064463deddbfebec7e3e` | — | Replaced "description to give first" with the moduli description. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VARCOMP.md` | `ae4536f59b380b84fdda2ab1a5c1a45b77b3bed8` | — | Removed "knowing that is the point of having a separate word". |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VARDEG.md` | `8aa4faba93d750a489550fcbceeacd12c986fd3c` | — | Replaced "the word an examiner wants next" with the non-intrinsicality statement. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VARFANO.md` | `3505b0989e3d76b9362a4b0b28b33b69f4242e12` | — | Replaced "the difference is asked about" with the vanishing-condition statement. |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-VARQAP.md` | `26e941f1c8df806b715a97304069297f0f8b6352` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VARREG.md` | `de2ec1b190012797e35c2961ffb8cdcf4f10f403` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/D-VJFAP.md` | `bc9d4909061f147574117ec8563203e439632ba2` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VARREG.md` | `de2ec1b190012797e35c2961ffb8cdcf4f10f403` | — | Replaced "the point of stating it this way" with the scheme-generalisation statement. |
+| [x] | `corpus/theory/Algebraic_Geometry/D-VJFAP.md` | `bc9d4909061f147574117ec8563203e439632ba2` | — | Replaced "not a repair but a change of viewpoint" with the change-of-viewpoint statement. |
 | [ ] | `corpus/theory/Algebraic_Geometry/D-VKR54.md` | `a8238a0343d4a53b7a414b97773f165bac7668d3` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-ADOKK.md` | `fafd001e58b3c699236aa0d72b29247fabde44cb` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-ADOKK.md` | `fafd001e58b3c699236aa0d72b29247fabde44cb` | — | Removed "the point of the question". |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-AM5Z8.md` | `332ff4c10b0b6bd139590464aeb7ae9a0ad5d698` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-CRVDEGS.md` | `aca7eb235dcd2d32f850e4e768e0ad3498d5ec0f` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-CRVLOWG.md` | `eabd4baa6a34828366936f7dcf367f381af91725` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-CRVQUAD.md` | `44a977840a5536a6ffc06644e2b20bc1ee29d7e2` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-CRVLOWG.md` | `eabd4baa6a34828366936f7dcf367f381af91725` | — | Removed "the cases an examiner actually asks for". |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-CRVQUAD.md` | `44a977840a5536a6ffc06644e2b20bc1ee29d7e2` | — | Replaced "single most useful family of examples" with the curve-of-every-genus statement. |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-CRVSSPRIMES.md` | `f659bd8fb96aa9d583fd431037a0ea30c2f3be31` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-DIVP1E.md` | `33f9843e0d04ec6e1c8fa4cc147f21a18c929564` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-DIVPN.md` | `4512d081f7def715a6db7ed7dd6fbd1e4f9b9840` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-DNTT6.md` | `94ee5828243fc60cb0294e79c13efb2a75545298` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-FULAVA.md` | `138527f4a7328cc3970bd19d5d6c9edb8608302a` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-FULAVA.md` | `138527f4a7328cc3970bd19d5d6c9edb8608302a` | — | Replaced "Three things make this the example to remember" with the three features stated directly. |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-FULHIRZBUN.md` | `1c3c8044db1c9ab30aeff0360d12fb753476375b` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-FULQUOT.md` | `197100912897c64f7b0562c740f1dd27441a91eb` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-H8DY5.md` | `b96417c22460d2fa2e5497c3a7848fae63fbe207` | — | Pending |
@@ -2213,14 +2213,14 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-SHFISOSTALKS.md` | `3d5cd8c49032b4840985f44c7412730bfc624267` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-SRFBLOW.md` | `43cc8b2281b6111bfbc61f59c10feffa4970da1e` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-SRFCUBIC.md` | `b987f2a02de5fdcedd4b0bd5741e502e38a92386` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-TORBLOW.md` | `7ebdbc81569fa8a73db9dc883f0bb2af6e20f682` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-TORBLOW.md` | `7ebdbc81569fa8a73db9dc883f0bb2af6e20f682` | — | Removed "both visible on the picture". |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORCD.md` | `4c399322ca26d6b53a38db02080e083c3e4a5aa0` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORDUAL.md` | `a1f4fcb9c3f2a1a5da086ea00384af1a5744f495` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORHIRZ.md` | `2eb5e50362a12fc8a948af3ece99c30524ae9d30` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORMINRES.md` | `166bcd40a951f6c53c9a83617f1e28323f191c7e` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORP2.md` | `6055eeaf34d0b03930169896e787835f7ea8cb40` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-TORWPS.md` | `f8386cfe3f19a27a517950f3d15a06c851826291` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/FE-VARADJ.md` | `425124179c195cac31c3dd59d8d49967f7ae5747` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/FE-VARADJ.md` | `425124179c195cac31c3dd59d8d49967f7ae5747` | — | Replaced "answers every request" with the on-request statement. |
 | [ ] | `corpus/theory/Algebraic_Geometry/FE-Y12XB.md` | `fed3ef6d8c6e146d582ac31728fcb7106fcb68b0` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-6TCSJ.md` | `b3aa1ec8575f1ddef1e7e1946e5cfcfcc1f42941` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-7OT2Z.md` | `fa07acbe47c278227a18789f0aee3306d2aaf671` | — | Pending |
@@ -2230,13 +2230,13 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-CRVDEGBD.md` | `6d1e07474266f240e20d154838eecb3a9289d807` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-CRVGRP.md` | `47b0987365d8cca5e130ddc9e39fc05158f2ed93` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-CRVHYPCI.md` | `7e02b44d09621c0b549281f0467481a292fe6194` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/PR-D2F15.md` | `e6ce6441f9829f691f5e221c745f7c0bbb55b865` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/PR-D2F15.md` | `e6ce6441f9829f691f5e221c745f7c0bbb55b865` | — | Replaced "worth an afternoon before an exam" with the reason toric varieties are worth working through. |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-DIVAMPCURVE.md` | `132a6ef8b1120c90332b8d42e714292a3d0bdad3` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-DIVLB.md` | `540c0ac5acbe9b9f949f39742ed2c86d2a2bf5a2` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-EFW6B.md` | `fd001b5c1d8a493fe3b3daa92b5d328bf7beb80f` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-ET5PQ.md` | `0b9d63869842d9a45458faf33b79b4523793e28b` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-FULCM.md` | `bd80975a1cef23ec85f81ff92f181278d6513f04` | — | Pending |
-| [ ] | `corpus/theory/Algebraic_Geometry/PR-FULCOTAN.md` | `77430ac37025568e4fda854d283e0bd38c4c7415` | — | Pending |
+| [x] | `corpus/theory/Algebraic_Geometry/PR-FULCOTAN.md` | `77430ac37025568e4fda854d283e0bd38c4c7415` | — | Replaced "easy and explains nothing" with "straightforward and explains nothing". |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-FULCRIT.md` | `f4275def9f25b78540e936145ef74adf2365ab0e` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-FULFACEDUAL.md` | `0c57ac54e63849198a7f141b1839a731fe402da3` | — | Pending |
 | [ ] | `corpus/theory/Algebraic_Geometry/PR-FULFACET.md` | `afe392a0dfc93128b169013f36042c4898f84849` | — | Pending |

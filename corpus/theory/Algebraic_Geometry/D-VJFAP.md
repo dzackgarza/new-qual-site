@@ -52,7 +52,7 @@ This is the content of the word *étalé*, and it is the same condition that lat
 ::: {.remark title="What this buys"}
 The construction in [[T-3VX80]] defines $\mcf^+(U)$ as the compatible families of germs, which is correct but reads as a formula.
 The espace étalé says what that formula is: a sheaf on $X$ *is* a space over $X$ whose projection is a local homeomorphism, and its sections in the topological sense are its sections in the sheaf sense.
-Sheafification is then not a repair but a change of viewpoint — pass from $\mcf$ to the space it already determines, and read off all the sections the space has.
+Sheafification is a change of viewpoint: pass from $\mcf$ to the space it already determines, and read off all the sections the space has.
 
 Two consequences fall out with no further work.
 Stalks are unchanged, because $\Et(\mcf)$ was built from the stalks and nothing else, so $(\mcf^+)_p = \mcf_p$.
