@@ -11,8 +11,8 @@ topics:
 
 Čech cohomology as the thing you can actually compute with, Serre duality, and Riemann--Roch.
 
-$H^1$ is where the geometry is: its vanishing characterises affineness for Noetherian schemes, and its non-vanishing classifies line bundles and extensions.
-Expect to prove the affineness criterion and then to be asked what happens without the hypotheses.
+$H^1$ carries much of the geometry: its vanishing characterises affineness for Noetherian schemes, and its non-vanishing classifies line bundles and extensions.
+The affineness criterion is [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's]]: a Noetherian scheme $X$ is affine exactly when $H^p(X,\mcf) = 0$ for every quasicoherent sheaf $\mcf$ and $p > 0$, and quasicompactness is the hypothesis without which it fails.
 
 - [[algebraic-geometry/cohomology/computing-cohomology|Computing cohomology]], Čech against derived functors, the cohomology of the twists, and the two meanings of $H^1$.
 
