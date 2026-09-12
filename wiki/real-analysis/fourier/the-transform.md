@@ -24,7 +24,7 @@ Fourier inversion is the recovery theorem, but its hypotheses must still be chec
 [[PR-DY2B3]]
 
 ::: {.remark title="The dictionary"}
-The transform turns each operation into an easier one, and the exam uses the table rather than the definition:
+The transform turns each operation into an easier one:
 
 | On $f$ | On $\hat f$ |
 | --- | --- |
