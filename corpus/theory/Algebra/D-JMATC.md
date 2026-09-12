@@ -63,5 +63,5 @@ A collection of field extensions $\mathcal{S}$ is **distinguished** iff
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMSwyLCJrIl0sWzIsMSwiSyJdLFswLDEsIkwiXSxbMSwwLCJMSyJdLFswLDEsIiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIiIsMix7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6ImJvdHRvbSJ9fX1dLFsyLDMsIiIsMCx7ImNvbG91ciI6WzAsNjAsNjBdLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDMsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMywiXFx0aGVyZWZvcmUiLDAseyJjb2xvdXIiOlswLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbMCw2MCw2MCwxXV1d)
 
-> One is supposed to think of $LK/L$ as a "lift" of $K/k$.
+> The extension $LK/L$ is a "lift" of $K/k$.
 :::
