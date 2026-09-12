@@ -1,14 +1,20 @@
 # Eval: thinkingmachines/inkling-small:free
 
 - Run timestamp (UTC): 20260912T071746Z
+
 - Model timestamp (UTC): 20260912T073434Z
+
 - Model: `thinkingmachines/inkling-small:free`
+
 - Provider: `thinkingmachines`
+
 - Success: False
+
 - Problem source: `HARD-PROOF-EVAL.md` verbatim (Koebe-Bieberbach)
+
 - Prompt length: 8778 chars
 
----
+* * *
 
 ## Error
 

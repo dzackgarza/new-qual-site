@@ -1,14 +1,20 @@
 # Eval: google/gemma-4-31b-it:free
 
 - Run timestamp (UTC): 20260912T071746Z
+
 - Model timestamp (UTC): 20260912T072128Z
+
 - Model: `google/gemma-4-31b-it:free`
+
 - Provider: `google`
+
 - Success: False
+
 - Problem source: `HARD-PROOF-EVAL.md` verbatim (Koebe-Bieberbach)
+
 - Prompt length: 8778 chars
 
----
+* * *
 
 ## Error
 

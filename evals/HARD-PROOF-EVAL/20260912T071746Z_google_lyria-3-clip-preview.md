@@ -1,14 +1,20 @@
 # Eval: google/lyria-3-clip-preview
 
 - Run timestamp (UTC): 20260912T071746Z
+
 - Model timestamp (UTC): 20260912T071845Z
+
 - Model: `google/lyria-3-clip-preview`
+
 - Provider: `google`
+
 - Success: False
+
 - Problem source: `HARD-PROOF-EVAL.md` verbatim (Koebe-Bieberbach)
+
 - Prompt length: 8891 chars
 
----
+* * *
 
 ## Error
 
