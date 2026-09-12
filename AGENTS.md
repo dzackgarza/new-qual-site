@@ -302,6 +302,22 @@ authored data. Never derive a title, create a card, fill a field, or change
 mathematical content automatically. Each result must come from intelligent
 reading and mathematical judgment.
 
+## Do not end a turn without the next source started
+
+A turn that ends with the work banked and nothing in flight still stops this repository until
+somebody notices and pushes it. On 2026-09-12 that happened nine times, costing between eleven
+and fifty-five minutes each — more total time than every blocked commit, stale lock and failed
+hook that day combined.
+
+Ending a turn is a decision to stop, so make it deliberately. When a source is carded and
+committed, take the next one from the queue in the same turn: open it, read it, begin. If work
+genuinely must pause — a run you are waiting on, a decision you cannot make — say what you are
+waiting for and what you will do when it returns, so the next turn begins with an instruction
+rather than a question.
+
+Queue E is ordered and its bottom entry is always available. Selecting the next source is your
+work, not the steward's.
+
 ## A disposition is not a unit of work
 
 Deciding that a source is reference-only, ticking a queue entry, closing a defect record,
