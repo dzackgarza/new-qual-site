@@ -31,11 +31,9 @@ Let $\varphi : \mcf \to \mcg$ be a morphism of sheaves.
 :::
 
 ::: {.remark}
-Which of the three needs correcting, and why, is the content.
 The kernel is defined by a condition that is local — a section is in the kernel exactly when it is in the kernel near every point — so it satisfies both axioms already.
 The image and cokernel are defined by an existential — a section is in the image when *some* preimage exists — and existence is not local: preimages may exist near every point without gluing.
 
-The two failures are different, and it is worth saying which is which.
 The image presheaf typically fails **gluing**, so sheafification adds sections.
 The cokernel presheaf typically fails **identity**, so sheafification also kills sections that are locally zero.
 :::
