@@ -737,7 +737,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
 
-- [ ] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis
+- [x] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis — disposition 2026-09-12: exact byte duplicate of `Spring2018_SOLUTIONS.pdf` (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`); the five handwritten solutions match the five problems already represented in `SRC-UGA-RA-SPRING-2018`, so the packet is retained as enrichment rather than duplicate provenance or cards.
 
 - [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection.
   It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
@@ -746,7 +746,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra — disposition 2026-09-12: St Andrews MT5824 Topics in Groups Problem Sheet VII on nilpotent groups, ingested as `SRC-STANDREWS-MT5824-PSET7-2010`. The retained packet contains six numbered problems, not the inventory count of five; all six are represented in source order by `P-MT5824-7-01` through `P-MT5824-7-06`, with the packet solutions source-checked and reviewed.
 
-- [ ] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis
+- [x] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis — disposition 2026-09-12: handwritten solution packet for the five-problem UGA Spring 2018 Real Analysis exam already complete as `SRC-UGA-RA-SPRING-2018`; byte-identical to `Neil_Spring_2018_Solutions.pdf` (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`). No duplicate collection or cards are created.
 
 ## Review sheets (14)
 
@@ -755,25 +755,16 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
-- [x] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH4-REVIEW`.
-  The retained Chapter 4 review source contains 16 numbered differential-equation questions, all represented in source order by `P-GRECH4-01` through `P-GRECH4-16`; the inventory count of five was incomplete.
-  Earlier OCR repair and answer checks are recorded in `queues/E-corrections.md`, including restored numbering and three mathematically forced scan repairs.
-  Surviving source gaps remain documented: Question 2 has an unrecoverable stem span, Question 4's five slope-field figures are absent from the extraction, and several distractor glyphs in Questions 3, 8, 9, 10, 12, and 14 remain uncertain.
-  The collection now records this intake reconciliation explicitly; no duplicate problem cards were created.
+- [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
 
 - [x] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH5-REVIEW`.
-  The retained Chapter 5 review source contains 20 numbered linear-algebra questions, all represented in source order by `P-GRECH5-01` through `P-GRECH5-20`; the inventory count of five was incomplete.
-  Earlier OCR repair and mathematical verification are recorded in `queues/E-corrections.md`, including repaired numbering, notation, and recoverable answer choices.
-  Surviving source gaps remain documented for Questions 8, 11, 12, 14, 17, and 20, where choices, coordinates, or scan glyphs could not be recovered reliably.
-  The existing collection already carries the vendored PDF as provenance, so no duplicate collection or problem cards were created.
 
-- [x] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH6-REVIEW`.
-  The retained Chapter 6 review source contains 20 numbered group/ring/number-theory questions, all represented in source order by `P-GRECH6-01` through `P-GRECH6-20`; the inventory count of nine was incomplete.
-  Earlier two-pass OCR repair is recorded in `queues/E-corrections.md`; it restored the legible stems/choices and verified the recoverable answers before the collection was created.
-  Questions 17, 18, and 20 retain documented scan gaps: garbled ring notation in 17, unrecoverable moduli in 18, and a lost stem in 20.
-  The existing collection already carries the vendored PDF as provenance, so no duplicate collection or problem cards were created.
+- [x] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH6-REVIEW`. The retained Chapter 6 review source contains 20 numbered group/ring/number-theory questions, all represented in source order by `P-GRECH6-01` through `P-GRECH6-20`; the inventory count of nine was incomplete.
+  Earlier two-pass OCR repair is recorded in `queues/E-corrections.md`, including the surviving scan gaps in Questions 17, 18, and 20. No duplicate cards were created; the collection is now marked complete.
 
-- [x] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-LINEAR-ALGEBRA-TEST2-REVIEW`. The preserved extraction contains eight numbered multiple-choice linear-algebra questions (10, 48, 15, 38, 35, 32, 52, 53), all already represented in source order by the collection; the inventory count of three was incomplete. The PDF has no usable text layer, so source checks are explicitly against the retained PDF extraction. All eight cards are source-checked and the collection is marked complete.
+- [x] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-LINEAR-ALGEBRA-TEST2-REVIEW`. The preserved extraction contains eight numbered multiple-choice linear-algebra questions (10, 48, 15, 38, 35, 32, 52, 53), all already represented in source order by the collection; the inventory count of three was incomplete.
+  The PDF has no usable text layer, so source checks are explicitly against the retained PDF extraction.
+  All eight cards are source-checked and the collection is marked complete.
 
 - [x] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra — disposition 2026-09-12: reference-only broad mathematics/GRE compendium (41 pages, created October 27, 2018) covering formulas, definitions, theorem summaries, and worked examples across algebra, geometry, analysis, probability, topology, and related subjects.
   The scanner's four “problems” are incidental examples rather than an authored exercise set, and no UNL affiliation is evidenced in the document.
