@@ -761,9 +761,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra
 
-- [ ] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra
+- [x] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-LINEAR-ALGEBRA-TEST2-REVIEW`. The preserved extraction contains eight numbered multiple-choice linear-algebra questions (10, 48, 15, 38, 35, 32, 52, 53), all already represented in source order by the collection; the inventory count of three was incomplete. The PDF has no usable text layer, so source checks are explicitly against the retained PDF extraction. All eight cards are source-checked and the collection is marked complete.
 
-- [x] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra — disposition 2026-09-12: reference-only broad mathematics/GRE compendium (41 pages, created October 27, 2018) covering formulas, definitions, theorem summaries, and worked examples across algebra, geometry, analysis, probability, topology, and related subjects. The scanner's four “problems” are incidental examples rather than an authored exercise set, and no UNL affiliation is evidenced in the document. It is now retained explicitly on `wiki/prelim/resources/references.md`; no problem cards are manufactured.
+- [x] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra — disposition 2026-09-12: reference-only broad mathematics/GRE compendium (41 pages, created October 27, 2018) covering formulas, definitions, theorem summaries, and worked examples across algebra, geometry, analysis, probability, topology, and related subjects.
+  The scanner's four “problems” are incidental examples rather than an authored exercise set, and no UNL affiliation is evidenced in the document.
+  It is now retained explicitly on `wiki/prelim/resources/references.md`; no problem cards are manufactured.
 
 - [x] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom — disposition 2026-09-12: reference-only Math 871 course table of contents covering topology definitions, constructions, invariants, and theorem statements rather than an authored exercise source.
   It is retained and now explicitly annotated on `wiki/topology/resources/books-notes.md`; intake stops at reference enrichment and no problem cards are manufactured.

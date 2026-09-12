@@ -9,6 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
 - assets/attachments/linear_algebra_from_test2.pdf
 source:
