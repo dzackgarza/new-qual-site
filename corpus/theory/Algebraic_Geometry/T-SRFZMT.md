@@ -25,7 +25,8 @@ Then every fibre $f^{-1}(y)$ is connected.
 :::
 
 ::: {.theorem title="Elimination of indeterminacy (Hironaka)"}
-Let $X$ and $Y$ be smooth projective varieties and $F \colon X \dashrightarrow Y$ a birational map. Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
+Let $X$ and $Y$ be smooth projective varieties and $F \colon X \dashrightarrow Y$ a birational map.
+Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
 \[
 \begin{tikzcd}
 & W \arrow[dl, "g"'] \arrow[dr, "f"] & \\
