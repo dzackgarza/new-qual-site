@@ -83,4 +83,4 @@ source:
 
 Exercises from Andreas Gathmann's *Algebraic Geometry* lecture notes, worked as a five-sheet problem-set sequence.
 The sheets run from affine varieties and the Nullstellensatz through the Zariski topology and dimension, sheaves and stalks, and morphisms of affine varieties and of projective space.
-Solutions are present for roughly half of the exercises; the rest carry the statement alone.
+Solutions are present for some of the exercises; others carry the statement alone.
