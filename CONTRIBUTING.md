@@ -323,7 +323,7 @@ problem sheets, and examiner choices. A prominent heading gives the claim more
 authority than an ordinary sentence, so an unsupported heading can misstate
 provenance before the reader examines any source. Keep study recommendations,
 exam provenance, and authored synthesis under separate headings, and name the
-documents that support each claim. Use a recommendation only in an explicitly
+documents that support each claim. A recommendation belongs only in an explicitly
 authored study guide with stated selection criteria.
 
 ### `RESOURCE-01`: Do not turn a resource inventory into study advice
@@ -355,6 +355,20 @@ resource or mathematical information, assumes an inability to perform an
 ordinary lookup, and leaves “relevant” undefined. Resource prose should identify
 contents, scope, provenance, and precise relations. It should not describe the
 obvious operation of reading the resource.
+
+### `RESOURCE-03`: Replace blustering resource notes with dense factual annotation
+
+**Bad:** “This volume finally makes the subject clear and saves the reader from
+tedious checking.”
+
+**Good:** “`[Vaki25]` treats sheaf axioms, graded rings, and affine-cover
+arguments in more detail than `[Hart10]`.”
+
+A resource note should identify the work, its subject, and its relation to other
+sources. Narrative about confusion, praise, reader effort, book length, or how
+to use the book adds opinion and instructions while omitting bibliographic
+information. Replace each evaluative claim with a comparison that a reader can
+check, or delete it.
 
 ## Precision policies
 
