@@ -3325,17 +3325,17 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-18.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-19.md
 - [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-2.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-20.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-3.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-4.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-5.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-6.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-7.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-8.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-9.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-1.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-10.md
-- [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-11.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-20.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-3.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-4.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-5.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-6.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-7.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-8.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-9.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-1.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-10.md
+- [x] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-11.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-12.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-13.md
 - [ ] corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-14.md
