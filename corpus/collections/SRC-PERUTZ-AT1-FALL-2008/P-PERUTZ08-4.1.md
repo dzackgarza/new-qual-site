@@ -16,13 +16,18 @@ audit:
 ---
 
 ::: {.problem}
-An $n$-dimensional manifold is a Hausdorff space covered by open sets homeomorphic to $\mathbb R^n$. Let $X_1$ and $X_2$ be connected $n$-manifolds. Form their connected sum by choosing embeddings $i_j:D^n\to X_j$, putting $D'=\tfrac12D^n$, and identifying $i_1(x)$ with $i_2(x)$ for $x\in\partial D'=S^{n-1}$ after removing the two copies of $\operatorname{int}D'$.
+An $n$-dimensional manifold is a Hausdorff space covered by open sets homeomorphic to $\mathbb R^n$.
+Let $X_1$ and $X_2$ be connected $n$-manifolds.
+Form their connected sum by choosing embeddings $i_j:D^n\to X_j$, putting $D'=\tfrac12D^n$, and identifying $i_1(x)$ with $i_2(x)$ for $x\in\partial D'=S^{n-1}$ after removing the two copies of $\operatorname{int}D'$.
 
 1. Prove that if $n>2$, then
    \[
    \pi_1(X_1\#X_2)\cong \pi_1(X_1)*\pi_1(X_2).
    \]
-2. Let $X$ be an iterated connected sum of $r$ copies of $S^1\times S^{n-1}$, with $n\ge3$. Compute $\pi_1(X)$.
+
+2. Let $X$ be an iterated connected sum of $r$ copies of $S^1\times S^{n-1}$, with $n\ge3$.
+   Compute $\pi_1(X)$.
+
 3. Given a finitely presented group
    \[
    G=\langle g_1,\dots,g_k\mid r_1,\dots,r_\ell\rangle,
