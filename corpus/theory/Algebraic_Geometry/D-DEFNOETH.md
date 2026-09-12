@@ -31,5 +31,5 @@ The Hilbert basis theorem is what makes the condition usable: $A$ Noetherian imp
 Quotients and localisations of Noetherian rings are Noetherian; subrings need not be, and infinitely generated polynomial rings such as $k[x_1, x_2, \ldots]$ are not.
 
 Over a Noetherian ring, finitely generated modules are Noetherian, submodules of finitely generated modules are finitely generated, and coherent and finitely generated agree for quasicoherent sheaves.
-This is the hypothesis quietly supporting almost every finiteness statement on the exam: Krull dimension being finite on local rings, primary decomposition, and the finiteness of cohomology for coherent sheaves on a projective scheme.
+The Noetherian hypothesis occurs in finiteness results for the Krull dimension of local rings, primary decomposition, and cohomology of coherent sheaves on a projective scheme.
 :::
