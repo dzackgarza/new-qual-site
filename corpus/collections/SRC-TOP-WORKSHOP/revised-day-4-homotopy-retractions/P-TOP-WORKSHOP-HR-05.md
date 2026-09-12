@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:S^1\vee S^1\to T$ be a continuous map, where $T$ is the torus. Show that there is no continuous map
+Let $f:S^1\vee S^1\to T$ be a continuous map, where $T$ is the torus.
+Show that there is no continuous map
 \[
 g:T\to S^1\vee S^1
 \]

@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\subseteq X$ and let $r:X\to A$ be a retraction. Prove that
+Let $A\subseteq X$ and let $r:X\to A$ be a retraction.
+Prove that
 \[
 r_*:\pi_1(X)\to\pi_1(A)
 \]

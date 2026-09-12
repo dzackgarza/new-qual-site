@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $B\subseteq Y$ and let $p:Y\to B$ be a deformation retraction. Prove that
+Let $B\subseteq Y$ and let $p:Y\to B$ be a deformation retraction.
+Prove that
 \[
 p_*:\pi_1(Y)\to\pi_1(B)
 \]
