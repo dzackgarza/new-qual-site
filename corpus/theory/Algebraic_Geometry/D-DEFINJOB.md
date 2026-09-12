@@ -40,5 +40,5 @@ Over $\ZZ$ the injective objects are the divisible groups, so $\QQ$ and $\QQ/\ZZ
 
 Enough injectives is what makes right derived functors exist.
 $\mods{A}$ has enough injectives for every ring $A$, and so does $\mods{\OO_X}$ on any ringed space --- this last is Hartshorne III.2.2, and it is what licenses defining sheaf cohomology as $R^i\Gamma$.
-The injectives it produces are enormous and useless for computation; flasque or otherwise acyclic resolutions are what one actually computes with.
+Flasque and other acyclic resolutions also compute the derived functors of global sections.
 :::
