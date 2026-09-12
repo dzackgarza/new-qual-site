@@ -3797,20 +3797,20 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-PPAO.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-SHA8.md
 - [x] corpus/collections/SRC-TEXT-HK71/1-6/E-HK-XY48.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-1.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-10.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-11.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-12.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-13.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-14.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-2.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-3.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-4.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-5.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-6.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-7.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-8.md
-- [ ] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-9.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-1.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-10.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-11.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-12.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-13.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-14.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-2.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-3.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-4.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-5.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-6.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-7.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-8.md
+- [x] corpus/collections/SRC-TEXT-HK71/10-1/E-HK-101-9.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-1.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-10.md
 - [ ] corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-11.md
