@@ -37,7 +37,6 @@ If $\deg D > 2g-2$ then $D$ is nonspecial, and then Riemann--Roch reads
 Speciality is the only thing standing between Riemann--Roch and an actual formula for $\ell(D)$.
 The correction term $\ell(K-D)$ is unknown in general; once $\deg D$ exceeds $\deg K = 2g-2$ the divisor $K-D$ has negative degree, has no sections, and the correction disappears.
 
-So the standard move in any oral computation is: check $\deg D$ against $2g-2$, and if it clears, write down $\ell(D)$ immediately.
-If it does not clear, Riemann--Roch gives only an inequality $\ell(D) \geq \deg D + 1 - g$, and the special case is where the geometry lives — $K$ itself is special, and so is every divisor cut out by the $g^1_2$ on a hyperelliptic curve.
+For $\deg D \leq 2g-2$, Riemann--Roch gives an inequality $\ell(D) \geq \deg D + 1 - g$. Examples of special divisors include $K$ itself and every divisor cut out by the $g^1_2$ on a hyperelliptic curve.
 Clifford's theorem is the bound that replaces Riemann--Roch in exactly this range.
 :::
