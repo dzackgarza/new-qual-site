@@ -22,4 +22,4 @@ source:
     kind: unknown
 ---
 
-A short set of oral-exam questions on curves and rationality kept alongside the author's algebraic geometry notes, each recorded together with its solution.
+Problems on curves and rationality, with solutions using birational maps, Riemann--Hurwitz, and Riemann--Roch.

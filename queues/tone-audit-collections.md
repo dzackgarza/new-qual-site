@@ -20,10 +20,10 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-AG-HOMEWORK/P-AGXHWSPECZTERM.md
 - [x] corpus/collections/SRC-AG-HOMEWORK/P-AGXHWSUPPORT.md
 - [x] corpus/collections/SRC-AG-HOMEWORK/index.md — Changed: removed internal authorship and completion commentary (STANCE-10).
-- [ ] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCGENUSONERAM.md
-- [ ] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCGENUSZEROCONIC.md
-- [ ] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCPRODRATIONAL.md
-- [ ] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/index.md
+- [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCGENUSONERAM.md
+- [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCGENUSZEROCONIC.md
+- [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCPRODRATIONAL.md
+- [x] corpus/collections/SRC-AGX-MISC-AG-PROBLEMS/index.md — Changed: describe solution methods instead of storage history and unattributed exam identity (STANCE-08, STANCE-10).
 - [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAFFINECONES.md
 - [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARAUTPN.md
 - [ ] corpus/collections/SRC-AGX-VARIETIES-PROBLEMS/P-AGXVARCANONICALPN.md
