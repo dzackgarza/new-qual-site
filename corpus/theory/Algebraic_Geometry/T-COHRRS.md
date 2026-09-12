@@ -21,7 +21,17 @@ prompts:
 - How do you show a divisor on a surface is effective?
 ---
 
-::: {.theorem}
+::: {.theorem title="Riemann--Roch for curves"}
+Let $C$ be a smooth projective curve of genus $g$ and $D$ a divisor of degree $d$ on $C$.
+Then
+\[
+h^0\qty{\OO_C(D)} - h^0\qty{\OO_C(K_C - D)} = d - g + 1 ,
+\]
+equivalently $\chi\qty{\OO_C(D)} = d - g + 1$.
+In particular $h^0(D) - h^0(K_C - D) = \deg D - g + 1$.
+:::
+
+::: {.theorem title="Riemann--Roch for surfaces"}
 Let $X$ be a smooth projective surface with canonical divisor $K$, and $D$ any divisor.
 Then
 \[
