@@ -5,9 +5,7 @@ order: 40
 
 # Topology
 
-## What the exam asks
-
-The paper is a third point-set and two thirds algebraic, and each half asks a small number of questions.
+## The question shapes
 
 | The question | Where it is decided |
 | --- | --- |
@@ -16,7 +14,7 @@ The paper is a third point-set and two thirds algebraic, and each half asks a sm
 | What is this space, and what are its invariants | [[topology/the-standard-spaces\|The standard spaces]] |
 | Is this true for all spaces | [[topology/counterexamples\|Counterexamples]] |
 
-The standard-spaces table answers more problems outright than any computation, since most spaces on the paper are one of its rows, or a wedge, product, or puncture of one.
+The standard-spaces table is the fastest answer for a standard space, or a wedge, product, or puncture of one.
 
 ## The chapters, in dependency order
 

@@ -135,9 +135,9 @@ Source-authored mathematical tasks retain their instructions. A checked path is 
 - [x] `wiki/topology/homology/compute-h-star.md` — no stance revision
 - [x] `wiki/topology/homology/exercises.md` — no stance revision
 - [x] `wiki/topology/homology/homological-algebra.md` — no stance revision
-- [ ] `wiki/topology/homology/homology.md`
-- [ ] `wiki/topology/homology/index.md`
-- [ ] `wiki/topology/index.md`
+- [x] `wiki/topology/homology/homology.md` — no stance revision
+- [x] `wiki/topology/homology/index.md` — no stance revision
+- [x] `wiki/topology/index.md` — revised: dropped exam-composition framing, retitled section, trimmed "most spaces on the paper" claim
 - [ ] `wiki/topology/point-set/definitions.md`
 - [ ] `wiki/topology/point-set/examples.md`
 - [ ] `wiki/topology/point-set/index.md`
