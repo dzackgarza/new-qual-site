@@ -72,6 +72,13 @@ In card titles, use ordinary mathematical notation instead of spelling simple
 formulas out in words (`$L^2$`, `$\ZZ^3/N$`, `$x^8-1$`, not “L2”, “Z cubed
 mod N”, or “x to the eighth minus one”). Keep conceptual prose as prose.
 
+Public prose must state mathematical content. Do not address an imagined student
+or exam prompt, announce that a theorem or question “matters”, or point to “the
+next question” without naming the mathematical relation. Replace those phrases
+with the definition, hypothesis, result, consequence, or technique they were
+standing in for. See the [prose policies](#prose-policies) for bad and good
+replacements.
+
 A canonical problem states one mathematical problem.
 An exam or textbook collection lists those problems in the order they appeared.
 Appearances on a problem page are generated from that list.
@@ -102,3 +109,48 @@ just preview
 Open <http://localhost:8000> after the preview server starts.
 
 Run `just --list` for the current development commands.
+
+## Prose policies
+
+These policies apply to all public card, guide, and wiki prose. They identify
+patterns that spend the reader's attention on an imagined teaching situation
+instead of supplying mathematical content. Such prose also depends on page
+order, assignment context, or an unstated reader mistake. A textbook reader
+needs statements that can be read, cited, and used without reconstructing that
+hidden situation.
+
+### `PROSE-01`: State the mathematical payload instead of its importance
+
+**Bad:** “The question that matters is whether the construction is local.”
+
+**Good:** “A scheme is a locally ringed space that is locally isomorphic to
+`Spec(A)` for a commutative ring `A`. The definition is local on affine
+neighborhoods.”
+
+“Matters”, “important”, “useful”, and “central” do not identify a result,
+hypothesis, consequence, or technique. Delete the judgement or replace it with
+the fact that gives it value.
+
+### `PROSE-02`: Address the mathematics, not an imagined assignment
+
+**Bad:** “You are asked to define a scheme.”
+
+**Good:** “A scheme is a locally ringed space whose points have affine
+neighborhoods.”
+
+An assignment prompt belongs in a problem statement when the assignment itself
+is the mathematical object. In exposition, the reader needs the definition or
+the result. The prompt supplies no mathematical claim and forces the reader to
+adopt an invented exam frame.
+
+### `PROSE-03`: Name the relation instead of pointing by position
+
+**Bad:** “The question that matters is the next one.”
+
+**Good:** “After defining the affine charts, check whether the transition maps
+are compatible on overlaps.”
+
+“Next”, “above”, and “below” are properties of document layout. They are not
+mathematical referents. Page order changes when text is split, transcluded, or
+rendered in another context. Name the object, map, hypothesis, or claim that
+the reader must use; if no such relation exists, remove the signpost.
