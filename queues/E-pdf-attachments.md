@@ -364,7 +364,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — complex-analysis
 
-- [ ] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005
+- [x] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005 — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Fall 2005, solution packet; already canonical as `SRC-BERKELEY-PRELIM-FALL-2005`, whose provenance is this PDF and whose 18 cards represent Problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
 - [x] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007 — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Fall 2007, solution packet; already canonical as `SRC-BERKELEY-PRELIM-FALL-2007`, whose provenance is this PDF and whose 18 cards represent Problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
