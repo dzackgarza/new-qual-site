@@ -62,9 +62,9 @@ site: build
 crawl: build
     uv run python tools/crawl.py
 
-# Serve the compiled site the way GitHub Pages serves it, 404.html included
-preview port="8000": build
-    uv run python tools/preview.py {{ port }}
+# Build the current working tree and publish it to the one canonical local preview URL
+preview: build
+    @uv run python tools/preview.py
 
 # Prove the architectural invariants hold
 test:

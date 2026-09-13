@@ -99,6 +99,10 @@ Preview the website:
 just preview
 ```
 
-Open <http://localhost:8000> after the preview server starts.
+Open <http://new-qual-site-preview.localhost/>. This is the canonical local
+preview URL for this repository. `just preview` always rebuilds the **current
+working tree**, including uncommitted edits, and republishes that render there.
+Do not start a second preview on an ad-hoc localhost port: doing so makes it too
+easy to inspect a stale or different build.
 
 Run `just --list` for the current development commands.
