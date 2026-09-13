@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(January 2009) Let $I\subseteq R$ be an ideal of $R$, and suppose that $xy-yx\in I$ for every $x,y\in R$. Prove that the quotient ring $R/I$ is commutative.
+(January 2009) Let $I\subseteq R$ be an ideal of $R$, and suppose that $xy-yx\in I$ for every $x,y\in R$.
+Prove that the quotient ring $R/I$ is commutative.
 :::
 
 ::: {.solution}

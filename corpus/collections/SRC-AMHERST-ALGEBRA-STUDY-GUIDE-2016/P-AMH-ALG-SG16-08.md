@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-(March 2013) Let $G$ be a group, let $N\subseteq G$ be a normal subgroup, and suppose that $[G:N]=42$, where $[G:N]$ denotes the index of $N$ in $G$. Prove that $x^{42}\in N$ for every $x\in G$. (Suggestion: Consider the quotient group $G/N$.)
+(March 2013) Let $G$ be a group, let $N\subseteq G$ be a normal subgroup, and suppose that $[G:N]=42$, where $[G:N]$ denotes the index of $N$ in $G$.
+Prove that $x^{42}\in N$ for every $x\in G$.
+(Suggestion: Consider the quotient group $G/N$.)
 :::
 
 ::: {.solution}

@@ -22,7 +22,8 @@ Define
 \[
 H_1=\{x\in G_1\mid \varphi(x)\in H_2\}.
 \]
-It is a fact, which you may assume, that $H_1$ is a subgroup of $G_1$. Prove that for any $x,y\in G_1$, $H_1x=H_1y$ if and only if $H_2\varphi(x)=H_2\varphi(y)$.
+It is a fact, which you may assume, that $H_1$ is a subgroup of $G_1$.
+Prove that for any $x,y\in G_1$, $H_1x=H_1y$ if and only if $H_2\varphi(x)=H_2\varphi(y)$.
 :::
 
 ::: {.solution}

@@ -18,7 +18,8 @@ audit:
 
 ::: {.problem}
 (January 2012) Let $G$ and $H$ be groups.
-Recall that a homomorphism $\varphi:G\to H$ is said to be trivial if $\varphi(g)=e_H$ for all $g\in G$. If $|G|=144$ and $|H|=25$, prove that any homomorphism $\varphi:G\to H$ is trivial.
+Recall that a homomorphism $\varphi:G\to H$ is said to be trivial if $\varphi(g)=e_H$ for all $g\in G$.
+If $|G|=144$ and $|H|=25$, prove that any homomorphism $\varphi:G\to H$ is trivial.
 :::
 
 ::: {.solution}

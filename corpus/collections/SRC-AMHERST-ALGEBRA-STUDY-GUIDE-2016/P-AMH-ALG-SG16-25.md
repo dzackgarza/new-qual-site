@@ -17,8 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-(February 2013) Suppose that $R$ is commutative and has a multiplicative identity $1$. Let $I\subseteq J\subseteq R$ be ideals, and suppose that the quotient ring $R/I$ is a field.
-If $I\subsetneq J$, prove that $1\in J$. [In fact, it is a Theorem from Math 350 that $J=R$ in this case, but you are only being asked to prove that $1\in J$. In particular, however, you may not quote the $J=R$ theorem.]
+(February 2013) Suppose that $R$ is commutative and has a multiplicative identity $1$.
+Let $I\subseteq J\subseteq R$ be ideals, and suppose that the quotient ring $R/I$ is a field.
+If $I\subsetneq J$, prove that $1\in J$.
+[In fact, it is a Theorem from Math 350 that $J=R$ in this case, but you are only being asked to prove that $1\in J$. In particular, however, you may not quote the $J=R$ theorem.]
 :::
 
 ::: {.solution}

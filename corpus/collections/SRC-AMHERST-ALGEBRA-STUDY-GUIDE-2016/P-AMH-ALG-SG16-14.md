@@ -18,7 +18,8 @@ audit:
 
 ::: {.problem}
 (February 2008) Recall that $S_n$ denotes the group of permutations on $n$ symbols.
-(a) Find an element of $S_{10}$ of order $21$. (b) Prove that no element of $S_{10}$ has order $11$.
+(a) Find an element of $S_{10}$ of order $21$.
+(b) Prove that no element of $S_{10}$ has order $11$.
 :::
 
 ::: {.solution}

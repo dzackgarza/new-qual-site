@@ -17,7 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-(January 2010) Let $\sigma$ be the permutation $(4\ 2\ 1)(6\ 1\ 3\ 2)$ in $S_6$. (a) Write $\sigma$ as a product of disjoint cycles in $S_6$. (b) Compute the order of $\sigma$. (c) Is $\sigma$ an even or an odd permutation?
+(January 2010) Let $\sigma$ be the permutation $(4\ 2\ 1)(6\ 1\ 3\ 2)$ in $S_6$.
+(a) Write $\sigma$ as a product of disjoint cycles in $S_6$.
+(b) Compute the order of $\sigma$.
+(c) Is $\sigma$ an even or an odd permutation?
 :::
 
 ::: {.solution}

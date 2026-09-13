@@ -25,7 +25,8 @@ audit:
 \end{pmatrix},
 \]
 where the images of $8$ and $9$ have been lost.
-Determine the images of $8$ and $9$ under $\sigma$. What is the order of $\sigma$?
+Determine the images of $8$ and $9$ under $\sigma$.
+What is the order of $\sigma$?
 :::
 
 ::: {.solution}

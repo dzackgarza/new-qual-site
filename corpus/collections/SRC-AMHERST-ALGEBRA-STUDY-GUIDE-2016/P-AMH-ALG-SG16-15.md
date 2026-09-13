@@ -21,7 +21,8 @@ audit:
 Let $\varphi:S_n\to G$ be a homomorphism, where $G$ is a group of odd order.
 (I.e., $G$ is a finite group with an odd number of elements.)
 (a) Prove that every transposition (i.e., $2$-cycle) $\tau\in S_n$ is in $\ker\varphi$.
-That is, prove that $\varphi(\tau)=e$. (b) Prove that $\varphi$ is the trivial homomorphism; i.e., prove that for all $\sigma\in S_n$, we have $\varphi(\sigma)=e$.
+That is, prove that $\varphi(\tau)=e$.
+(b) Prove that $\varphi$ is the trivial homomorphism; i.e., prove that for all $\sigma\in S_n$, we have $\varphi(\sigma)=e$.
 :::
 
 ::: {.solution}

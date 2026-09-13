@@ -17,11 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-(March 2009) Let $F$ be a field, let $R=F[x]$ be the ring of polynomials in one variable with coefficients in $F$, and let $f(x)\in R$ be a polynomial of degree $2009$. Let
+(March 2009) Let $F$ be a field, let $R=F[x]$ be the ring of polynomials in one variable with coefficients in $F$, and let $f(x)\in R$ be a polynomial of degree $2009$.
+Let
 \[
 I=\{g(x)f(x)\mid g\in R\}
 \]
-be the set of all polynomials which are multiples of $f(x)$. It is a fact, which you may assume, that $I$ is an ideal of $R$. (a) For any $g,h\in R$, prove that $I+g=I+h$ if and only if $g-h$ is divisible by $f$. (b) Prove that for any $g\in R$, there is a unique polynomial $h\in R$ with $\deg h<2009$ such that $I+g=I+h$.
+be the set of all polynomials which are multiples of $f(x)$.
+It is a fact, which you may assume, that $I$ is an ideal of $R$.
+(a) For any $g,h\in R$, prove that $I+g=I+h$ if and only if $g-h$ is divisible by $f$.
+(b) Prove that for any $g\in R$, there is a unique polynomial $h\in R$ with $\deg h<2009$ such that $I+g=I+h$.
 :::
 
 ::: {.solution}

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(March 2005) Let $F$ be a field and let $J\subseteq F$ be an ideal of $F$. Prove that either $J=\{0\}$ or $J=F$.
+(March 2005) Let $F$ be a field and let $J\subseteq F$ be an ideal of $F$.
+Prove that either $J=\{0\}$ or $J=F$.
 :::
 
 ::: {.solution}

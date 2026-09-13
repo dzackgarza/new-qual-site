@@ -22,7 +22,8 @@ Let $I\subseteq R$ be an ideal of $R$, and set
 \[
 J=\{x\in I\mid \varphi(x)=0_S\},
 \]
-where $0_S$ denotes the zero element of $S$. Prove that $J$ is an ideal of $R$.
+where $0_S$ denotes the zero element of $S$.
+Prove that $J$ is an ideal of $R$.
 :::
 
 ::: {.solution}
