@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Showthat H+supportsthestandardcontactstructure ξonS3usingtheHopfﬁbration. Showalso thatH− supports a diﬀerent homotopy class of contact structure, which must therefore be overtwisted because #T (S3) = 1. A fact we won’t prove is that, givenBi supporting ξi on Mi fori = 0, 1, thenB0#B1 supports ξ1#ξ1 on M0#M1. An immediate corollary, using
+Show that $H_+$ supports the standard contact structure $\xi$ on $S^3$ using the Hopf fibration. Show also that $H_-$ supports a different homotopy class of contact structure, which must therefore be overtwisted because $\#\mathcal T(S^3)=1$.
 :::

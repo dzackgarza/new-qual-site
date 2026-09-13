@@ -17,6 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-LetF be the graph off : R2→ R deﬁned by: f(x,y ) = { 0 y≤ 0 bxy y ≥ 0 Where we take the contact structuredz +xdy.
-Show that the singularity at0 is half-elliptic if−1 < b <0 and half hyperbolic ifb <−1 orb >0. Show also thatξ twists right relative toF ifb <−1 and left relative toF if b> −1. 26
+Let $F$ be the graph of $f:\mathbb R^2\to\mathbb R$ defined by
+\[
+f(x,y)=\begin{cases}
+0,&y\le0,\\
+bxy,&y\ge0.
+\end{cases}
+\]
+Take the contact structure $dz+x\,dy$. Show that the singularity at $0$ is half-elliptic if $-1<b<0$ and half-hyperbolic if $b<-1$ or $b>0$. Show also that $\xi$ twists right relative to $F$ if $b<-1$ and left relative to $F$ if $b>-1$.
 :::

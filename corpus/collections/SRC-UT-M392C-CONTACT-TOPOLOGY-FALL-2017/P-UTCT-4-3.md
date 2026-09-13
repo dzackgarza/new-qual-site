@@ -17,7 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Verifythatthisisapositivecontactformbyshowingthat d(r2)∧α∧dαisapositivevolumeform on C2, and thereforeα∧dα is a positive volume form onS3. Do this by showing that: α =x1dy1−y1dx1 +x2dy2−y2dx2 andcomputing α∧dα.
-Canyoushowthatthisformrestrictedto S3−{∗} iscontactomorphicto (R3,dz +xdy)?
-32
+Verify that this is a positive contact form by showing that
+\[
+d(r^2)\wedge\alpha\wedge d\alpha
+\]
+is a positive volume form on $\mathbb C^2$, and therefore $\alpha\wedge d\alpha$ is a positive volume form on $S^3$. Do this by showing that
+\[
+\alpha=x_1\,dy_1-y_1\,dx_1+x_2\,dy_2-y_2\,dx_2
+\]
+and computing $\alpha\wedge d\alpha$.
+
+Can you show that this form restricted to $S^3\setminus\{*\}$ is contactomorphic to $(\mathbb R^3,dz+x\,dy)$?
 :::

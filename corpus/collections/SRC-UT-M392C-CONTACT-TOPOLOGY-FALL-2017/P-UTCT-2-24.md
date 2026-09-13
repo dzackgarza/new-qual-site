@@ -17,7 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-LetM = R3 and letα =dz +adx +bdy for (a,b )∈ R2−{ 0}. Determinesign(ξ)and divωv forF on thex-y plane.
-Check that the characteristic foliation is given byxbya = c. Draw a picture and observe how these vary witha andb.
-How issign(divωF) visible?
+Let $M=\mathbb R^3$ and let
+\[
+\alpha=dz+a\,dx+b\,dy,
+\qquad (a,b)\in\mathbb R^2\setminus\{0\}.
+\]
+Determine $\operatorname{sign}(\xi)$ and $\operatorname{div}_\omega v$ for $F$ on the $x$-$y$ plane.
+
+The source next asks to check that the characteristic foliation is given by an equation printed between “$xb$” and “$ya=c$”. The operator/sign between those terms is not recoverable from the retained text extraction, so that equation is left unrecovered rather than guessed.
+
+Draw a picture and observe how these vary with $a$ and $b$. How is $\operatorname{sign}(\operatorname{div}_\omega F)$ visible?
 :::

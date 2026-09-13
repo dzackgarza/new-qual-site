@@ -17,10 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Show that not doing the ﬁx onv above retrieves the Poincaré Hopf theorem as in the boundary- lesscase.
-Thatis,for F compact,connected,showthat χ(F ) =e(TF,v )whereoneachcomponentof ∂F,either v is parallel to∂F orv is perpendicular to∂F. Understanding [M3,S 2]→H1(M) Onceagainlet M bethreedimensionalmanifold,connectedandclosed.
-Denotethemap Γ : [M3,S 2]→H1(M) to be the composition of correspondences shown at the beginning of Section 1.3. We know that this is a sur- jection, so a natural question is: givenx∈ H1(M), what isΓ−1(x)? In other terms, given two framed links of thesamehomologyclass, whatistheambiguityinchoosingframedcobordismsbetweenthem?
-Luckilyforus, cobordant is the same as homologous in this setting3, so we just need to focus on the framing ofx.
-3This isn’t obvious, but we won’t prove it here.
-7
+Show that not doing the fix on $v$ above retrieves the Poincaré--Hopf theorem as in the boundaryless case. That is, for $F$ compact and connected, show that
+\[
+\chi(F)=e(TF,v),
+\]
+where on each component of $\partial F$, either $v$ is parallel to $\partial F$ or $v$ is perpendicular to $\partial F$.
 :::

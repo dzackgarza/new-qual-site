@@ -17,8 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Analyze the Lens spaceL(p,q ) in the same way.
-(Hint:H1(L(p,q )) = Z/pZ). 1.3.1 Relative Euler classes LetM becompactandorientedofdimension n,butmaybenotclosed.
-Wecandothesamederivationasbeforeto deﬁnetheEulerclassofa kbundleξ→M. Inthiscase,theEulerclasswillbearelativehomologyclassbecause the intersection of a submanifold with the zero section can have boundary.
-That is,e(ξ)∈ Hn−k(M,∂M )∼= Hk(M).2 Deﬁnition 1.24.Supposee(ξ|∂M ) = 0; then there exists a nowhere zero sectionv :∂M→ξ. Now, we look for extensionsw ofv to all ofM transverse to the zero section onM. Therelative Euler classe(ξ,v )∈ Hn−k(M)∼= Hk(M,∂M ) is [w−1(0)]. 2This isomorphism is by Poincaré-Lefschetz duality 6
+Analyze the lens space $L(p,q)$ in the same way. (Hint: $H_1(L(p,q))=\mathbb Z/p\mathbb Z$.)
 :::

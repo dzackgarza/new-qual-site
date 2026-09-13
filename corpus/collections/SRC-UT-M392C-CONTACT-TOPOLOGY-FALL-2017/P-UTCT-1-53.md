@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Letϕ : R3→ R3beϕ(x,y,z ) = (x,y,z +xy/2). Showthatϕ∗α′ =α,where α′isfromtheexample above andα is the standard contact structure.
-This is an example of a contactomorphism.
-12
+Let $\phi:\mathbb R^3\to\mathbb R^3$ be
+\[
+\phi(x,y,z)=(x,y,z+xy/2).
+\]
+Show that $\phi^*\alpha'=\alpha$, where $\alpha'$ is from the example above and $\alpha$ is the standard contact structure. This is an example of a contactomorphism.
 :::
