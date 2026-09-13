@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: complete
+completion: incomplete
 provenance:
 - assets/attachments/McMullen_-_Advanced_Complex_Analysis.pdf
 source:
@@ -32,6 +32,7 @@ source:
     - E-HM213A17-07
     - E-HM213A17-08
     - E-HM213A17-09
+  - name: Section 1.8 exercises
+    problems:
+    - E-HM213A17-10
 ---
-
-
