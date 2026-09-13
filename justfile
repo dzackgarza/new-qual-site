@@ -98,6 +98,15 @@ macros:
 unsolved:
     uv run python tools/unsolved_queue.py
 
+# Report problem cards whose statements still contain Unicode mathematics outside LaTeX
+extraction-detector:
+    uv run python tools/extraction_detector.py
+
+# Reject staged cards that introduce or increase raw extraction mathematics
+[private]
+_extraction-detector-staged:
+    uv run python tools/extraction_detector.py --staged-gate
+
 # Rewrite the queue when the commit touches the corpus, and stage the result so
 # the refresh lands in that commit rather than trailing it. The corpus is the
 # only input that can change the queue, and parsing it costs ~25s, so a commit
@@ -174,7 +183,7 @@ _no-bare-disposition:
     exit 1
 
 # Run immediate commit-tier quality checks
-test-commit: _no-worktrees _unsolved-if-staged _no-bare-disposition
+test-commit: _no-worktrees _unsolved-if-staged _extraction-detector-staged _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
