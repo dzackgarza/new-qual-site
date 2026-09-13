@@ -17,10 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-(January 2012) Let G be a group, and let H,K ⊆ G be normal subgroups of G. Prove that H∩K is a normal subgroup of G. You may assume without proof that H∩K is a subgroup.
+(January 2012) Let $G$ be a group, and let $H,K\subseteq G$ be normal subgroups of $G$. Prove that $H\cap K$ is a normal subgroup of $G$. You may assume without proof that $H\cap K$ is a subgroup.
 :::
 
 ::: {.solution}
-Proof. Givena∈H∩K,g∈G, we know thatgag−1∈H andgag−1∈K sinceH andK are normal.
-Thus,gag−1∈H∩K, so H∩K is normal in G as desired. QED
+Proof.
+Givena∈H∩K,g∈G, we know thatgag−1∈H andgag−1∈K sinceH andK are normal.
+Thus,gag−1∈H∩K, so H∩K is normal in G as desired.
+QED
 :::

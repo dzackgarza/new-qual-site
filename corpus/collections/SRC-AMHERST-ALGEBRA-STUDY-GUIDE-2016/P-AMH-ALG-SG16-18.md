@@ -17,7 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-(January 2012) Let R = {[a b 0 c ]⏐⏐⏐a,b,c ∈ R } . You may assume that R is a ring under the operations of matrix addition and matrix multiplication. Prove that the set I = {[ a b 0 0 ]⏐⏐⏐a,b∈ R } is an ideal of R.
+(January 2012) Let
+\[
+R=\left\{\begin{pmatrix}a&b\\0&c\end{pmatrix}:a,b,c\in\mathbb{R}\right\}.
+\]
+You may assume that $R$ is a ring under the operations of matrix addition and matrix multiplication. Prove that the set
+\[
+I=\left\{\begin{pmatrix}a&b\\0&0\end{pmatrix}:a,b\in\mathbb{R}\right\}
+\]
+is an ideal of $R$.
 :::
 
 ::: {.solution}

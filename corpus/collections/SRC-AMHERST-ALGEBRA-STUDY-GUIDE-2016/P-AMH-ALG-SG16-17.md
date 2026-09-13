@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(February 1982) Prove that if an ideal I of the ring Z contains two relatively prime integers, then I = Z.
+(February 1982) Prove that if an ideal $I$ of the ring $\mathbb{Z}$ contains two relatively prime integers, then $I=\mathbb{Z}$.
 :::
 
 ::: {.solution}
-Proof. By hypothesis, there exist a,b∈I with gcd(a,b ) = 1. Thus, there are integers m,n∈ Z such
-thatma +nb = 1. But ma,nb∈I by the sticky property, so 1 = ma +nb∈I sinceI is closed under
-+. For any x∈ Z, then, we have x =x· 1∈I by the sticky property. So I = Z QED
+Proof.
+By hypothesis, there exist a,b∈I with gcd(a,b ) = 1. Thus, there are integers m,n∈ Z such thatma +nb = 1. But ma,nb∈I by the sticky property, so 1 = ma +nb∈I sinceI is closed under +. For any x∈ Z, then, we have x =x· 1∈I by the sticky property.
+So I = Z QED
 :::

@@ -17,12 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(January 2009) Let I⊆ R be an ideal of R, and suppose that xy−yx∈ I for every x,y ∈ R. Prove that the quotient ring R/I is commutative.
+(January 2009) Let $I\subseteq R$ be an ideal of $R$, and suppose that $xy-yx\in I$ for every $x,y\in R$. Prove that the quotient ring $R/I$ is commutative.
 :::
 
 ::: {.solution}
-Proof. GivenI +a,I +b∈R/I, our assumption on I implies that ab−ba∈I. By the coset relation,
-we obtain I +ab =I +ba. Then
-(I +a)(I +b) =I +ab =I +ba = (I +b)(I +a),
-so R/I is commutative, as desired QED
+Proof.
+GivenI +a,I +b∈R/I, our assumption on I implies that ab−ba∈I. By the coset relation, we obtain I +ab =I +ba.
+Then (I +a)(I +b) =I +ab =I +ba = (I +b)(I +a), so R/I is commutative, as desired QED
 :::

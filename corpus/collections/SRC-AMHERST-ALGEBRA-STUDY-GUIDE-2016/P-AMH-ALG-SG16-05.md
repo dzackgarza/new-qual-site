@@ -17,10 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(January 2011) Suppose that H⊆G is a subgroup with the property that for every x,y∈G, we havexyx−1y−1∈H. Prove that H is a normal subgroup of G.
+(January 2011) Suppose that $H\subseteq G$ is a subgroup with the property that for every $x,y\in G$, we have $xyx^{-1}y^{-1}\in H$. Prove that $H$ is a normal subgroup of $G$.
 :::
 
 ::: {.solution}
-Proof. Assume g∈G and h∈H. By the given property of H, we have ghg−1h−1∈H. Since H is
-closed under multiplication, ghg−1 =ghg−1(h−1h) = (ghg−1h−1)h∈H as desired. QED
+Proof.
+Assume g∈G and h∈H. By the given property of H, we have ghg−1h−1∈H. Since H is closed under multiplication, ghg−1 =ghg−1(h−1h) = (ghg−1h−1)h∈H as desired.
+QED
 :::
