@@ -17,7 +17,16 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let f be a continuous complex-valued function on the closed unit disk D such that f is holomorphic on the open disk D = {z ∈ C : |z| < 1} and f (0) 6= 0. (a) Show that if 0 < r < 1 and if inf |z|=r |f (z)| > 0, then Z 2π log |f (reiθ )| dθ ≥ log |f (0)|. 2π 0
+Let $f$ be a continuous complex-valued function on the closed unit disk $\overline D$ such that $f$ is holomorphic on the open disk $D=\{z\in\mathbb C:|z|<1\}$ and $f(0)\ne0$.
 
-(b) Show that θ ∈ [0, 2π] : f (eiθ ) = 0       = 0, where |E| denotes the Lebesgue measure of E ⊂ [0, 2π].
+(a) Show that if $0<r<1$ and $\inf_{|z|=r}|f(z)|>0$, then
+\[
+\frac1{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta\ge\log|f(0)|.
+\]
+
+(b) Show that
+\[
+\bigl|\{\theta\in[0,2\pi]:f(e^{i\theta})=0\}\bigr|=0,
+\]
+where $|E|$ denotes the Lebesgue measure of $E\subset[0,2\pi]$.
 :::

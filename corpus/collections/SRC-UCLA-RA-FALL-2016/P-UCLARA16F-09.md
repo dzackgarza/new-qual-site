@@ -17,10 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let µ be a positive Borel measure on [0, 1] with µ([0, 1]) = 1. (a) Show that the function f defined as Z f (z) =      eizt dµ(t) [0,1]
+Let $\mu$ be a positive Borel measure on $[0,1]$ with $\mu([0,1])=1$.
 
-for z ∈ C is holomorphic on C. (b) Suppose that there exists n ∈ N such that lim sup |f (z)|/|z|n < ∞.
-|z|→∞
+(a) Show that the function
+\[
+f(z)=\int_{[0,1]}e^{izt}\,d\mu(t)
+\]
+is holomorphic on $\mathbb C$.
 
-Show that then µ is equal to the Dirac measure δ0 at 0.
+(b) Suppose that there exists $n\in\mathbb N$ such that
+\[
+\limsup_{|z|\to\infty}\frac{|f(z)|}{|z|^n}<\infty.
+\]
+Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 :::

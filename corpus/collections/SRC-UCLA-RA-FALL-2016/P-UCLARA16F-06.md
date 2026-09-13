@@ -17,28 +17,21 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Consider the Banach space `1 consisting of all sequences u = {xi } in
-R (i.e., xi ∈ R for i ∈ N) with
-                                          ∞
-                                          X
-                                kuk1 =             |xi | < ∞
-                                          i=1
+Consider the Banach space $\ell^1$ consisting of all sequences $u=\{x_i\}$ in $\mathbb R$ with
+\[
+\lVert u\rVert_1=\sum_{i=1}^{\infty}|x_i|<\infty,
+\]
+and the Banach space $\ell^\infty$ consisting of all sequences $v=\{y_i\}$ in $\mathbb R$ with
+\[
+\lVert v\rVert_\infty=\sup_{i\in\mathbb N}|y_i|<\infty.
+\]
+There is a well-defined dual pairing between $\ell^1$ and $\ell^\infty$ given by
+\[
+\langle u,v\rangle=\sum_{i=1}^{\infty}x_i y_i.
+\]
+With this dual pairing, $\ell^\infty=(\ell^1)^*$ is the dual space of $\ell^1$.
 
-and the Banach space `∞ consisting of all sequences v = {yi } in R with
-                                kvk∞ = sup |yi | < ∞.
-                                             i∈N
+(a) Show that there exists no sequence $\{u_n\}$ in $\ell^1$ such that (i) $\lVert u_n\rVert_1\ge1$ for all $n\in\mathbb N$ and (ii) $\langle u_n,v\rangle\to0$ for each $v\in\ell^\infty$.
 
-There is a well-defined dual paring between `1 and `∞ given by
-                                           ∞
-                                           X
-                                  hu, vi =   xi yi
-                                               i=1
-
-for u = {xi } ∈ `1 and v = {yi } ∈ `∞ . With this dual pairing, `∞ = (`1 )∗ is the
-dual space of `1 .
-  (a) Show that there exists no sequence {un } in `1 such that (i) kun k1 ≥ 1 for all
-n ∈ N and (ii) hun , vi → 0 for each v ∈ `∞ .
-
-  (b) Show that every weakly convergent sequence {un } in `1 converges in the
-norm topology of `1 .
+(b) Show that every weakly convergent sequence $\{u_n\}$ in $\ell^1$ converges in the norm topology of $\ell^1$.
 :::

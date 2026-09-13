@@ -17,8 +17,16 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. If X is a compact metric space, we denote by P(X) be the set of positive Borel measures µ on X with µ(X) = 1. (a) Let ϕ : X → [0, ∞] be a lower-semicontinuous function on a compact metric space X. Show that if µ and µn for n ∈ N are in P(X) and µn → µ with respect to the weak-star topology on P(X), then Z                Z φ dµ ≤ lim inf φ dµn . n→∞
+If $X$ is a compact metric space, denote by $P(X)$ the set of positive Borel measures $\mu$ on $X$ with $\mu(X)=1$.
 
-(b) Let K ⊂ Rd be a compact set.
-For µ ∈ P(K), we define Z Z E(µ) =                dµ(x)dµ(y). K K   |x − y| Here |z| denotes the Euclidean norm of z ∈ Rd . Show that the function E : P(K) → [0, ∞] attains its minimum on P(K) (which could possibly be ∞).
+(a) Let $\phi:X\to[0,\infty]$ be a lower-semicontinuous function on a compact metric space $X$. Show that if $\mu$ and $\mu_n$, for $n\in\mathbb N$, are in $P(X)$ and $\mu_n\to\mu$ with respect to the weak-star topology on $P(X)$, then
+\[
+\int \phi\,d\mu\le \liminf_{n\to\infty}\int \phi\,d\mu_n.
+\]
+
+(b) Let $K\subset\mathbb R^d$ be compact. For $\mu\in P(K)$ define
+\[
+E(\mu)=\int_K\int_K\frac{1}{|x-y|}\,d\mu(x)\,d\mu(y).
+\]
+Here $|z|$ denotes the Euclidean norm of $z\in\mathbb R^d$. Show that $E:P(K)\to[0,\infty]$ attains its minimum on $P(K)$ (which could possibly be $\infty$).
 :::

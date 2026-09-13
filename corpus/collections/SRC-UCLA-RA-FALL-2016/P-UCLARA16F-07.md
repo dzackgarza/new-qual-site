@@ -17,7 +17,21 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let H be space of holomorphic functions f on the unit disc D = {z ∈ C : |z| < 1} such that     Z
-|f (z)|2 dA(z) < ∞.
-D Here integration is with respect to Lebesgue measure A on D. The vector space H is a Hilbert space if equipped with the inner product Z hf, gi =    f (z)g(z)dA(z) D for f, g ∈ H. Fix z0 ∈ D and define Lz0 (f ) = f (z0 ) for f ∈ H. (a) Show that Lz0 : H → C is a bounded linear functional on H. (b) Find an explicit function gz0 ∈ H such that Lz0 (f ) = f (z0 ) = hf, gz0 i for all f ∈ H.
+Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\mathbb C:|z|<1\}$ such that
+\[
+\int_D |f(z)|^2\,dA(z)<\infty.
+\]
+Here integration is with respect to Lebesgue measure $A$ on $D$. The vector space $H$ is a Hilbert space if equipped with the inner product
+\[
+\langle f,g\rangle=\int_D f(z)\overline{g(z)}\,dA(z)
+\]
+for $f,g\in H$. Fix $z_0\in D$ and define $L_{z_0}(f)=f(z_0)$ for $f\in H$.
+
+(a) Show that $L_{z_0}:H\to\mathbb C$ is a bounded linear functional on $H$.
+
+(b) Find an explicit function $g_{z_0}\in H$ such that
+\[
+L_{z_0}(f)=f(z_0)=\langle f,g_{z_0}\rangle
+\]
+for all $f\in H$.
 :::

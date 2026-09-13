@@ -17,6 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let µ be a finite positive Borel measure on R that is singular to Lebesgue measure.
-Show that µ([x − r, x + r]) lim                   = +∞ r→0+       2r for µ-almost every x ∈ R.
+Let $\mu$ be a finite positive Borel measure on $\mathbb R$ that is singular to Lebesgue measure. Show that
+\[
+\lim_{r\to0^+}\frac{\mu([x-r,x+r])}{2r}=+\infty
+\]
+for $\mu$-almost every $x\in\mathbb R$.
 :::

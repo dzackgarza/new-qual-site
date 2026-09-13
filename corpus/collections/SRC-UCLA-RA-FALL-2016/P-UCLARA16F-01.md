@@ -17,8 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. We consider the space L1 (µ) of integrable functions on a measure space (X, M, µ). For g ∈ L1 (µ) let Z kgk1 = |g(x)| dµ
+We consider the space $L^1(\mu)$ of integrable functions on a measure space $(X,\mathcal M,\mu)$. For $g\in L^1(\mu)$ let
+\[
+\lVert g\rVert_1=\int |g(x)|\,d\mu
+\]
+be the corresponding $L^1$-norm. Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ such that
 
-be the corresponding L1 -norm.
-Suppose that f and fn for n ∈ N are functions in L1 (µ) such that (i) fn (x) → f (x) for µ-almost every x ∈ X and (ii) kfn k1 → kf k1 . Show that then ||fn − f ||1 → 0.
+(i) $f_n(x)\to f(x)$ for $\mu$-almost every $x\in X$, and
+
+(ii) $\lVert f_n\rVert_1\to\lVert f\rVert_1$.
+
+Show that $\lVert f_n-f\rVert_1\to0$.
 :::
