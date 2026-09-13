@@ -506,6 +506,28 @@ If you need intermediate files during extraction, stage them in the repo
 too — for example `assets/attachments/intermediate/`. Delete them when
 the final extraction is committed.
 
+### Extraction output is an input, not a card
+
+What comes out of an extractor is a transcription source. It becomes a card when its
+mathematics has been written as LaTeX and reads as the source reads — not when it has been
+pasted between `::: {.problem}` fences. A statement carrying unicode mathematics outside any
+`$`-delimiter has not been transcribed: `∂u ∂x (0, 0)` is a lost derivative, a bare `Z` where
+an integral belongs is a lost integral, and a nested radical flattened to `v u s r Z 9u √ q t`
+is a lost problem. The card looks finished, `just unsolved` offers it, and a worker writes a
+proof of something nobody asked.
+
+Never run a whitespace or line normalizer over unconverted extraction output. The column
+layout in a raw extraction is the last surviving record of the fraction bar, the integral
+bound, and the superscript; joining the lines is not a cleanup, it is the step that makes the
+card unrecoverable without going back to the PDF. On 2026-09-13 a normalization pass did
+exactly this to three freshly ingested collections, one commit after ingesting them.
+
+Two consequences for a turn. An ingest that needs a follow-up normalization commit did not
+land cards, it landed extraction residue — fix the pipeline rather than paying it by hand on
+every source. And where the source cannot settle what a statement said, mark the card as
+unrecovered and say so; an invented plausible problem is the one outcome worse than a gap,
+because nothing downstream can tell it from the real thing.
+
 ## What a tool may do
 
 A tool may render and transport: build the site, sync an external file into the
