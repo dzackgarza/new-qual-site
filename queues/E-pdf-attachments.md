@@ -408,9 +408,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Sp14_Solutions.pdf](assets/attachments/extracted/Sp14_Solutions.md) (337L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [Sp15_Exam.pdf](assets/attachments/extracted/Sp15_Exam.md) (329L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp15_Exam.pdf](assets/attachments/extracted/Sp15_Exam.md) (329L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-13: identified from the retained PDF as the UC Berkeley Graduate Preliminary Examination, Spring 2015, and ingested as `SRC-BERKELEY-PRELIM-SPRING-2015`. The source contains 18 problems, Part A 1A–9A followed by Part B 1B–9B; fifteen are source-local cards and Problems 4A, 4B, and 5B reuse canonical cards `P-BKF20-5A`, `P-3A7RU`, and `P-BKS09-3A`. The inventory count of 8 was incomplete.
 
-- [ ] [Sp15_Solutions.pdf](assets/attachments/extracted/Sp15_Solutions.md) (435L, 8 problems) — Berkeley — alg-geom
+- [x] [Sp15_Solutions.pdf](assets/attachments/extracted/Sp15_Solutions.md) (435L, 8 problems) — Berkeley — alg-geom — disposition 2026-09-13: companion solution packet for the complete `SRC-BERKELEY-PRELIM-SPRING-2015` collection. It states and solves the same 18 Part A/B problems as the exam PDF and is retained as provenance beside that paper; no duplicate solution collection or problem cards are created.
 
 - [x] [Spring_2019_prelim.pdf](assets/attachments/extracted/Spring_2019_prelim.md) (313L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: reconciled to `SRC-BERKELEY-PRELIM-SPRING-2019`, which contains all 18 source-order Part A/B problems and records this exam PDF as provenance.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-3A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 3A
+title: Polynomial growth forces a meromorphic function to be rational
 classification:
   areas:
   - prelim
