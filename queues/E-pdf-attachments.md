@@ -262,7 +262,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer79.pdf](assets/attachments/extracted/Summer79.md) (137L, 8 problems) — algebra — Summer 19
 
-- [ ] [Summer81.pdf](assets/attachments/extracted/Summer81.md) (131L, 14 problems) — topology — Summer 19
+- [x] [Summer81.pdf](assets/attachments/extracted/Summer81.md) (131L, 14 problems) — Berkeley — prelim — Summer 1981 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1981`. Nineteen source-local cards represent Problems 1–14 and 16–20; Problem 15 is the exact statement later repeated as Summer 1982 Problem 19 and reuses canonical card `P-PRELIM82S-19`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `14 problems` and `topology` labels were stale heuristic metadata.
 
 - [x] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — Berkeley — prelim — Summer 1982 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1982`, with Problems 1–20 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `9 problems` and `complex-analysis` labels were stale heuristic metadata.
 
