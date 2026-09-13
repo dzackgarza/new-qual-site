@@ -412,13 +412,13 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Sp15_Solutions.pdf](assets/attachments/extracted/Sp15_Solutions.md) (435L, 8 problems) — Berkeley — alg-geom
 
-- [ ] [Spring_2019_prelim.pdf](assets/attachments/extracted/Spring_2019_prelim.md) (313L, 8 problems) — Berkeley — applied-algebra
+- [x] [Spring_2019_prelim.pdf](assets/attachments/extracted/Spring_2019_prelim.md) (313L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: reconciled to `SRC-BERKELEY-PRELIM-SPRING-2019`, which contains all 18 source-order Part A/B problems and records this exam PDF as provenance.
 
-- [ ] [Spring_2019_prelim_solutions.pdf](assets/attachments/extracted/Spring_2019_prelim_solutions.md) (385L, 8 problems) — Berkeley — applied-algebra
+- [x] [Spring_2019_prelim_solutions.pdf](assets/attachments/extracted/Spring_2019_prelim_solutions.md) (385L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the same complete `SRC-BERKELEY-PRELIM-SPRING-2019` collection; retained there as provenance beside the exam PDF, with no duplicate cards created.
 
 - [x] [Spring88.pdf](assets/attachments/extracted/Spring88.md) (83L, 2 problems) — UNL — algebra — Spring 19 — disposition 2026-09-13: identified from the PDF as the UC Berkeley Spring 1988 Preliminary Exam and ingested as `SRC-BERKELEY-PRELIM-SPRING-1988`, with all twenty Problems 1–20 represented in source order by `P-BKS88-1` through `P-BKS88-20`. The inventory metadata/count were stale: the source is Berkeley prelim material and contains 20 numbered problems, not 2.
 
-- [ ] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19
+- [x] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19 — disposition 2026-09-13: already complete as `SRC-BERKELEY-PRELIM-SPRING-1994`; the collection records the vendored PDF as provenance and contains all 18 source-order problems, each source-checked against the Berkeley Spring 1994 exam. The inventory count of 7 problems is a stale extraction heuristic; the source has Problems 1–18.
 
 - [x] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012 — disposition 2026-09-13: identified from the PDF itself as the Amherst College Department of Mathematics and Statistics **Study Guide for Algebra**, September 2016. The inventory metadata and `11 problems` count were stale: the guide contains 31 numbered old-exam examples with worked proofs. Ingested as `SRC-AMHERST-ALGEBRA-STUDY-GUIDE-2016`, with source-order cards `P-AMH-ALG-SG16-01` through `P-AMH-ALG-SG16-31` grouped by the guide's group/permutation/ring/polynomial sections.
 
