@@ -17,9 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Suppose f : C → C is a holomorphic function such that the function
-z 7→ g(z) = f (z)f (1/z) is bounded on C \ {0}.
-  (a) Show that if f (0) 6= 0, then f is constant.
-   (b) Show that if f (0) = 0, then there exist n ∈ N and a ∈ C such that f (z) = az n
-for all z ∈ C.
+Problem 11. Suppose f : C → C is a holomorphic function such that the function z 7→ g(z) = f (z)f (1/z) is bounded on C \ {0}. (a) Show that if f (0) 6= 0, then f is constant.
+(b) Show that if f (0) = 0, then there exist n ∈ N and a ∈ C such that f (z) = az n for all z ∈ C.
 :::

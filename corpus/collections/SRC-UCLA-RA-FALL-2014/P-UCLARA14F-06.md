@@ -17,6 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let X be a Banach space and let X˚ be its dual space. Suppose X˚ is separable; show
-that X is separable (you should assume the Axiom of Choice).
+Problem 6. Let X be a Banach space and let X˚ be its dual space.
+Suppose X˚ is separable; show that X is separable (you should assume the Axiom of Choice).
 :::

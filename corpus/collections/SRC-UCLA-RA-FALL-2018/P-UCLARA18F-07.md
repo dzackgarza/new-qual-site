@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let f (z) be an analytic function on the entire complexR       plane C such
-that the function U (z) = log |f (z)| is Lebesgue area integrable: C |U (z)|dxdy < ∞.
-Prove f is constant.
+Problem 7. Let f (z) be an analytic function on the entire complexR       plane C such that the function U (z) = log |f (z)| is Lebesgue area integrable: C |U (z)|dxdy < ∞. Prove f is constant.
 :::

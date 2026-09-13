@@ -17,14 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let {µn } denote a sequence of Borel probability measures on R. For
-n ∈ N and x ∈ R we define
-                                                
-                           Fn (x) := µn (−∞, x] .
-Suppose the sequence {Fn } converges uniformly on R. Show that then for every
-bounded continuous function f : R → R the numbers
-                                 Z
-                                   f (x) dµn (x)
-                                    R
-converge as n → ∞.
+Problem 3. Let {µn } denote a sequence of Borel probability measures on R. For n ∈ N and x ∈ R we define
+
+```
+                       Fn (x) := µn (−∞, x] .
+```
+Suppose the sequence {Fn } converges uniformly on R. Show that then for every bounded continuous function f : R → R the numbers Z f (x) dµn (x) R converge as n → ∞.
 :::

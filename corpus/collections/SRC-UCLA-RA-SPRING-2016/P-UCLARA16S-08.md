@@ -17,7 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let C+ = {z ∈ C; Im z > 0} and let fn : C+ → C+ be a sequence of
-holomorphic functions. Show that unless |fn | → ∞ uniformly on compact subsets of
-C+ , there exists a subsequence converging uniformly on compact subsets of C+ .
+Problem 8. Let C+ = {z ∈ C; Im z > 0} and let fn : C+ → C+ be a sequence of holomorphic functions.
+Show that unless |fn | → ∞ uniformly on compact subsets of C+ , there exists a subsequence converging uniformly on compact subsets of C+ .
 :::

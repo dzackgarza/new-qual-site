@@ -17,8 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Assume that fpzq is an entire function that is 2π-periodic in the sense that fpz` 2πq“ fpzq,
-and
-|fpx`iyq| ď Ceα|y|
-for some Cą 0, where 0 ăαă 1. Prove that f is constant.
+Problem 8. Assume that fpzq is an entire function that is 2π-periodic in the sense that fpz` 2πq“ fpzq, and |fpx`iyq| ď Ceα|y| for some Cą 0, where 0 ăαă 1. Prove that f is constant.
 :::

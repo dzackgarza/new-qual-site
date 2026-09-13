@@ -17,15 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let {fn } be a sequence of real-valued Lebesgue measurable functions
-on R, and let f be another such function. Assume that
-  (i) fn → f , Lebesgue almost everywhere,
-       R
-  (ii) R |x||fn (x)|dx ≤ 100, for all n, and
-  (iii) R |fn (x)|2 dx ≤ 100, for all n.
-        R
+Problem 1. Let {fn } be a sequence of real-valued Lebesgue measurable functions on R, and let f be another such function.
+Assume that (i) fn → f , Lebesgue almost everywhere, R (ii) R |x||fn (x)|dx ≤ 100, for all n, and (iii) R |fn (x)|2 dx ≤ 100, for all n. R
 
-   Prove that fn ∈ L1 for all n, that f ∈ L1 , and that ||fn − f ||L1 → 0. Also show
-that neither assumption (ii) nor assumption (iii) can be omitted while making these
-deductions.
+Prove that fn ∈ L1 for all n, that f ∈ L1 , and that ||fn − f ||L1 → 0. Also show that neither assumption (ii) nor assumption (iii) can be omitted while making these deductions.
 :::

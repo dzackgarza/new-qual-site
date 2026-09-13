@@ -17,6 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Construct an f P L1pRq so that fpx`yq does not converge almost everywhere to fpxq as
-yÑ 0. Prove that your f has this property.
+Problem 2. Construct an f P L1pRq so that fpx`yq does not converge almost everywhere to fpxq as yÑ 0. Prove that your f has this property.
 :::

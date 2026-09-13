@@ -17,9 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let f (z) be a one-to-one continuous mapping from the closed annulus
-                                          {1 ≤ |z| ≤ R}
-onto the closed annulus
-                                  {1 ≤ |z| ≤ S}
-such that f is analytic on the open annulus {1 < |z| < R}. Prove S = R.
+Problem 7. Let f (z) be a one-to-one continuous mapping from the closed annulus {1 ≤ |z| ≤ R} onto the closed annulus {1 ≤ |z| ≤ S} such that f is analytic on the open annulus {1 < |z| < R}. Prove S = R.
 :::

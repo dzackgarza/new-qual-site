@@ -17,9 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Determine                      Z ∞
-                                                   xa−1
-                                                        dx,
-                                               0   x+z
-for 0 < a < 1 and Re z > 0. Justify all manipulations.
+Problem 7. Determine                      Z ∞ xa−1 dx, 0   x+z for 0 < a < 1 and Re z > 0. Justify all manipulations.
 :::

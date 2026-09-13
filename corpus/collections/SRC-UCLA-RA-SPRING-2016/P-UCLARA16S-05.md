@@ -19,10 +19,12 @@ audit:
 ::: {.problem}
 Problem 5. For f ∈ C0∞ (R2 ) define u(x, t) by
 
-                                  sin(t |ξ|)
-                        Z
-              u(x, t) =     eix·ξ            f (ξ) dξ,          x ∈ R2 ,   t > 0.
-                         R2          |ξ|
+```
+                              sin(t |ξ|)
+                    Z
+          u(x, t) =     eix·ξ            f (ξ) dξ,          x ∈ R2 ,   t > 0.
+                     R2          |ξ|
+```
 
 Show that limt→∞ || u(·, t) ||L2 = ∞ for a set of f that is dense in L2 (R2 ).
 :::

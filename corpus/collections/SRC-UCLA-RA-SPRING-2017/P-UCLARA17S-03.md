@@ -17,9 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let C([0, 1]) denote the Banach space of continuous functions on the
-interval [0, 1] endowed with the sup-norm. Let F be a σ-algebra on C([0, 1]) so that
-for all x ∈ [0, 1], the map defined via
-                                   Lx (f ) = f (x)
-is F-measurable. Show that F contains all open sets.
+Problem 3. Let C([0, 1]) denote the Banach space of continuous functions on the interval [0, 1] endowed with the sup-norm.
+Let F be a σ-algebra on C([0, 1]) so that for all x ∈ [0, 1], the map defined via Lx (f ) = f (x) is F-measurable.
+Show that F contains all open sets.
 :::

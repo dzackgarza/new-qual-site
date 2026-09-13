@@ -17,9 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let K ⊂ R be a compact set of positive measure and let f ∈ L∞ (R).
-Show that the function                 Z
-                           F (x) =        f (x + t) dt
-                                   |K| K
+Problem 1. Let K ⊂ R be a compact set of positive measure and let f ∈ L∞ (R). Show that the function                 Z F (x) =        f (x + t) dt
+|K| K
 is uniformly continuous on R. Here |K| denotes the Lebesgue measure of K.
 :::

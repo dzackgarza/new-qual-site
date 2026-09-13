@@ -17,10 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose f ∈ L1 (R) satisfies
-                               f (x + h) − f (x)
-                           Z
-                   lim sup                       dx = 0.
-                     h→0    R           h
-Show that f = 0 almost everywhere.
+Problem 1. Suppose f ∈ L1 (R) satisfies f (x + h) − f (x) Z lim sup                       dx = 0. h→0    R           h Show that f = 0 almost everywhere.
 :::

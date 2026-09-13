@@ -17,14 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Letpfjq be a sequence of entire functions such that, writing z“x`iy, we have
-ĳ
-C
+Problem 9. Letpfjq be a sequence of entire functions such that, writing z“x`iy, we have ĳ C
 |fjpzq|2e´|z|2
-dxdy ď C, j “ 1, 2,...
-for some constant Cą 0. Show that there exists a subsequence pfjkq and an entire function f such that we
-have ĳ
-C
+dxdy ď C, j “ 1, 2,... for some constant Cą 0. Show that there exists a subsequence pfjkq and an entire function f such that we have ĳ C
 |fjkpzq´ fpzq|2e´2|z|2
 dxdy Ñ 0, k Ñ8.
 :::

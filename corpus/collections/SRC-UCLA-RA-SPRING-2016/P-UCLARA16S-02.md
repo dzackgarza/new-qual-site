@@ -17,12 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let f ∈ L1 (R). Show that the series
-                                       ∞
-                                      X    1      √
-                                          √ f (x − n)
-                                      n=1
-                                            n
+Problem 2. Let f ∈ L1 (R). Show that the series ∞ X    1      √ √ f (x − n) n=1 n
 
 converges absolutely for almost all x ∈ R.
 :::

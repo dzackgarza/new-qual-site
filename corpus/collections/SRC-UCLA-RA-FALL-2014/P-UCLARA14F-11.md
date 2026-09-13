@@ -17,12 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let Ω Ď C be open, bounded, and simply connected. Let u be harmonic in Ω and as-
-sume that uě 0. Show the following: for each compact set K Ď Ω, there exists a constant CK ą 0 such
-that
-sup
-xPK
-upxq ď CK inf
-xPK
-upxq.
+Problem 11. Let Ω Ď C be open, bounded, and simply connected.
+Let u be harmonic in Ω and as- sume that uě 0. Show the following: for each compact set K Ď Ω, there exists a constant CK ą 0 such that sup xPK upxq ď CK inf xPK upxq.
 :::

@@ -17,16 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let µ be a positive Borel measure on [0, 1] with µ([0, 1]) = 1.
-  (a) Show that the function f defined as
-                                     Z
-                             f (z) =      eizt dµ(t)
-                                         [0,1]
+Problem 9. Let µ be a positive Borel measure on [0, 1] with µ([0, 1]) = 1. (a) Show that the function f defined as Z f (z) =      eizt dµ(t) [0,1]
 
-for z ∈ C is holomorphic on C.
-  (b) Suppose that there exists n ∈ N such that
-                              lim sup |f (z)|/|z|n < ∞.
-                               |z|→∞
+for z ∈ C is holomorphic on C. (b) Suppose that there exists n ∈ N such that lim sup |f (z)|/|z|n < ∞.
+|z|→∞
 
 Show that then µ is equal to the Dirac measure δ0 at 0.
 :::

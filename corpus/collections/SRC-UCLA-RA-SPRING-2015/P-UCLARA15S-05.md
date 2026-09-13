@@ -17,15 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let u ∈ L2 (R) and let us set
-                            Z
-                  U (x, ξ) = e−(x+iξ−y) /2 u(y) dy,               x, ξ ∈ R.
+Problem 5. Let u ∈ L2 (R) and let us set Z U (x, ξ) = e−(x+iξ−y) /2 u(y) dy,               x, ξ ∈ R.
 
-Show that U (x, ξ) is well defined on R2 and that there exists a constant C > 0 such
-that for all u ∈ L2 (R), we have
-                       ZZ                         Z
-                                     2 −ξ 2
-                           |U (x, ξ)| e dx dξ = C |u(y)|2 dy.
+Show that U (x, ξ) is well defined on R2 and that there exists a constant C > 0 such that for all u ∈ L2 (R), we have ZZ                         Z 2 −ξ 2
+|U (x, ξ)| e dx dξ = C |u(y)|2 dy.
 
 Determine C explicitly.
 :::

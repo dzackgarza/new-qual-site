@@ -17,14 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let f P LppRq, 1 ă p ă 8, and let a P R be such that a ą 1´ 1{p. Show that the
-series
-8ÿ
-n“1
-żn`n´a
-n
-|fpx`yq|dy
-2This follows by “continuity from below” for general measures.
+Problem 2. Let f P LppRq, 1 ă p ă 8, and let a P R be such that a ą 1´ 1{p. Show that the series 8ÿ n“1 żn`n´a n |fpx`yq|dy 2This follows by “continuity from below” for general measures.
 84
 
 converges for almost all xP R.

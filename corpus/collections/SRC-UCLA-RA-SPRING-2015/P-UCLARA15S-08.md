@@ -19,10 +19,12 @@ audit:
 ::: {.problem}
 Problem 8. Let f : C → C be holomorphic and suppose
 
-        sup |f (x)|2 + |f (ix)|2 < ∞ and |f (z)| ≤ e|z|
-            
-                                                                   for all z ∈ C.
-          x∈R
+```
+    sup |f (x)|2 + |f (ix)|2 < ∞ and |f (z)| ≤ e|z|
+        
+                                                               for all z ∈ C.
+      x∈R
+```
 
 Deduce that f (z) is constant.
 :::

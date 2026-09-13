@@ -17,15 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider a map F : C × C → C with the following properties:
-     (i) For each fixed z ∈ C the map w 7→ F (z, w) is injective.
-    (ii) For each fixed w ∈ C the map z 7→ F (z, w) is holomorphic.
-   (iii) F (0, w) = w for w ∈ C.
-Show that then
-                               F (z, w) = a(z)w + b(z)
-for z, w ∈ C, where a and b are entire functions with a(0) = 1, b(0) = 0, and
-a(z) 6= 0 for z ∈ C.
-                     F (z, w) − F (z, 0)
-    Hint: Consider                       .
-                     F (z, 1) − F (z, 0)
+Problem 9. Consider a map F : C × C → C with the following properties: (i) For each fixed z ∈ C the map w 7→ F (z, w) is injective.
+(ii) For each fixed w ∈ C the map z 7→ F (z, w) is holomorphic.
+(iii) F (0, w) = w for w ∈ C. Show that then F (z, w) = a(z)w + b(z) for z, w ∈ C, where a and b are entire functions with a(0) = 1, b(0) = 0, and a(z) 6= 0 for z ∈ C. F (z, w) − F (z, 0) Hint: Consider                       . F (z, 1) − F (z, 0)
 :::

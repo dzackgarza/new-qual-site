@@ -17,20 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. If X is a compact metric space, we denote by P(X) be the set of
-positive Borel measures µ on X with µ(X) = 1.
-   (a) Let ϕ : X → [0, ∞] be a lower-semicontinuous function on a compact metric
-space X. Show that if µ and µn for n ∈ N are in P(X) and µn → µ with respect
-to the weak-star topology on P(X), then
-                            Z                Z
-                               φ dµ ≤ lim inf φ dµn .
-                                        n→∞
+Problem 3. If X is a compact metric space, we denote by P(X) be the set of positive Borel measures µ on X with µ(X) = 1. (a) Let ϕ : X → [0, ∞] be a lower-semicontinuous function on a compact metric space X. Show that if µ and µn for n ∈ N are in P(X) and µn → µ with respect to the weak-star topology on P(X), then Z                Z φ dµ ≤ lim inf φ dµn . n→∞
 
-  (b) Let K ⊂ Rd be a compact set. For µ ∈ P(K), we define
-                             Z Z
-                      E(µ) =                dµ(x)dµ(y).
-                              K K   |x − y|
-Here |z| denotes the Euclidean norm of z ∈ Rd .
-  Show that the function E : P(K) → [0, ∞] attains its minimum on P(K) (which
-could possibly be ∞).
+(b) Let K ⊂ Rd be a compact set.
+For µ ∈ P(K), we define Z Z E(µ) =                dµ(x)dµ(y). K K   |x − y| Here |z| denotes the Euclidean norm of z ∈ Rd . Show that the function E : P(K) → [0, ∞] attains its minimum on P(K) (which could possibly be ∞).
 :::

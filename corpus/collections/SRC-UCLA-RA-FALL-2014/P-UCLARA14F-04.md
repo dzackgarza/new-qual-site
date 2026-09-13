@@ -17,13 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. GivenfPL2pr0,πsq, we say that fP G if f admits a representation of the form
-fpxq “
-8ÿ
-n“0
-cn cospnxq with
-8ÿ
-n“0
-p1`n2q|cn|2 ă 8.
-Show that if fP G and gP G then fg P G.
+Problem 4. GivenfPL2pr0,πsq, we say that fP G if f admits a representation of the form fpxq “ 8ÿ n“0 cn cospnxq with 8ÿ n“0 p1`n2q|cn|2 ă 8. Show that if fP G and gP G then fg P G.
 :::

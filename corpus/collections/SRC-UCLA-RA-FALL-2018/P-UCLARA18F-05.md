@@ -17,19 +17,18 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let {fn } be a sequence of continuous real-valued functions on [0, 1] and
-suppose fn (x) converges to another real valued function f (x) at every x ∈ [0, 1].
-   (a) Prove that for every ε > 0 there is a dense subset D ⊂ [0, 1] such that if
-x ∈ D then there are an open interval I 3 x and a positive integer Nx such that
-for all n > Nx
+Problem 5. Let {fn } be a sequence of continuous real-valued functions on [0, 1] and suppose fn (x) converges to another real valued function f (x) at every x ∈ [0, 1]. (a) Prove that for every ε > 0 there is a dense subset D ⊂ [0, 1] such that if x ∈ D then there are an open interval I 3 x and a positive integer Nx such that for all n > Nx
 
-                                 sup |fn (y) − f (y)| ≤ .
-                                 y∈I
+```
+                             sup |fn (y) − f (y)| ≤ .
+                             y∈I
+```
 
 Hint: Consider the closed sets
 
-               FN, = {y ∈ [0, 1] : |fn (y) − fm (y)| ≤ , ∀n, m > N }.
+```
+           FN, = {y ∈ [0, 1] : |fn (y) − fm (y)| ≤ , ∀n, m > N }.
+```
 
-   (b) Prove that f cannot be the characteristic function χQ∩[0,1] where Q is the
-rational numbers.
+(b) Prove that f cannot be the characteristic function χQ∩[0,1] where Q is the rational numbers.
 :::

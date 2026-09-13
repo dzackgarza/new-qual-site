@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let D = {z ∈ C : |z| < 1} and C+ = {z ∈ C : Im z > 0}. Suppose
-fn : D → C+ is a sequence of holomorphic functions and fn (0) → 0 as n → ∞. Show
-that fn (z) → 0 uniformly on compact subsets of D.
+Problem 7. Let D = {z ∈ C : |z| < 1} and C+ = {z ∈ C : Im z > 0}. Suppose fn : D → C+ is a sequence of holomorphic functions and fn (0) → 0 as n → ∞. Show that fn (z) → 0 uniformly on compact subsets of D.
 :::

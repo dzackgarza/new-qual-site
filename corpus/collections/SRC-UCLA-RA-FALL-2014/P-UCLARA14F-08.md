@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let f : CÑ C be an entire function. Show that
+Problem 8. Let f : CÑ C be an entire function.
+Show that
 |fpzq| ď Cea|z|
 for some constants C and a if and only if we have
 |fpnqp0q| ď Mn`1

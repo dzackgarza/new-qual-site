@@ -17,10 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let 1 ≤ p < ∞ and let U (z) be a harmonic function on the complex
-plane C such that
-                       ZZ
-                            |U (x + iy)|p dxdy < ∞.
-                             R×R
-Prove U (z) = 0 for all z = x + iy ∈ C.
+Problem 11. Let 1 ≤ p < ∞ and let U (z) be a harmonic function on the complex plane C such that ZZ
+|U (x + iy)|p dxdy < ∞.
+R×R Prove U (z) = 0 for all z = x + iy ∈ C.
 :::

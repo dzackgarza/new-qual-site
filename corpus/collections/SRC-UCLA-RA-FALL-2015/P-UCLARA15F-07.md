@@ -17,6 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Assume that fpzq is analytic in D and continuous on D. If fpzq “fp1{zq when |z| “ 1,
-prove that fpzq is constant.
+Problem 7. Assume that fpzq is analytic in D and continuous on D. If fpzq “fp1{zq when |z| “ 1, prove that fpzq is constant.
 :::

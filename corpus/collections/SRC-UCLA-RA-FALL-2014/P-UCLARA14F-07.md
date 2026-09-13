@@ -17,8 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Find an explicit conformal mapping from the upper half plane slit along the vertical seg-
-ment
-tzP C : Impzqą 0uzp0, 0`ihs, h ą 0
-to the unit disk.
+Problem 7. Find an explicit conformal mapping from the upper half plane slit along the vertical seg- ment tzP C : Impzqą 0uzp0, 0`ihs, h ą 0 to the unit disk.
 :::

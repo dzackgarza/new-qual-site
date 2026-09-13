@@ -17,10 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Show that
-A :“ tfPL3pRq :
-ż
-R
+Problem 1. Show that A :“ tfPL3pRq : ż R
 |fpxq|2dxă8u
 is a Borel subset of L3pRq.
 :::

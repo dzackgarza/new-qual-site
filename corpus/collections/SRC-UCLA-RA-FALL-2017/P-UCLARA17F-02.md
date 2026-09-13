@@ -17,7 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let {fn } denote a bounded sequence in L2 ([0, 1]). Suppose the se-
-quence {fn } also converges almost everywhere. Show that then {fn } converges in
-the weak topology on L2 ([0, 1]).
+Problem 2. Let {fn } denote a bounded sequence in L2 ([0, 1]). Suppose the se- quence {fn } also converges almost everywhere.
+Show that then {fn } converges in the weak topology on L2 ([0, 1]).
 :::

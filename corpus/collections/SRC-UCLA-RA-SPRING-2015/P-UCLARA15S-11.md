@@ -17,9 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let Ω = {z ∈ C : 0 < |z| < 1}. Prove that for every bounded harmonic
-function u : Ω → R there is a harmonic function v : Ω → R obeying
-                             ∂u   ∂v                ∂u    ∂v
-                                =            and       =−
-                             ∂x   ∂y                ∂y    ∂x
+Problem 11. Let Ω = {z ∈ C : 0 < |z| < 1}. Prove that for every bounded harmonic function u : Ω → R there is a harmonic function v : Ω → R obeying ∂u   ∂v                ∂u    ∂v =            and       =− ∂x   ∂y                ∂y    ∂x
 :::

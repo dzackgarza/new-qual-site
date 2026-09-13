@@ -17,13 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let f ∈ L1loc (R) be real valued and assume that for each integer n > 0,
-we have                                  
-                               f x+         ≥ f (x),
-                                        n
-for almost all x ∈ R. Show that for each real number a ≥ 0 we have
+Problem 3. Let f ∈ L1loc (R) be real valued and assume that for each integer n > 0, we have\
+f x+         ≥ f (x), n for almost all x ∈ R. Show that for each real number a ≥ 0 we have
 
-                                       f (x + a) ≥ f (x),
+```
+                                   f (x + a) ≥ f (x),
+```
 
 for almost all x ∈ R.
 :::

@@ -17,14 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. We consider the space L1 (µ) of integrable functions on a measure
-space (X, M, µ). For g ∈ L1 (µ) let
-                                     Z
-                               kgk1 = |g(x)| dµ
+Problem 1. We consider the space L1 (µ) of integrable functions on a measure space (X, M, µ). For g ∈ L1 (µ) let Z kgk1 = |g(x)| dµ
 
-be the corresponding L1 -norm. Suppose that f and fn for n ∈ N are functions in
-L1 (µ) such that
-  (i) fn (x) → f (x) for µ-almost every x ∈ X and
-  (ii) kfn k1 → kf k1 .
-  Show that then ||fn − f ||1 → 0.
+be the corresponding L1 -norm.
+Suppose that f and fn for n ∈ N are functions in L1 (µ) such that (i) fn (x) → f (x) for µ-almost every x ∈ X and (ii) kfn k1 → kf k1 . Show that then ||fn − f ||1 → 0.
 :::

@@ -17,9 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let f : D → C be an injective and holomorphic function with f (0) =
-0 and f 0 (0) = 1. Show that then
-                                 inf{|w| : w ∈
-                                             / f (D)} ≤ 1
-with equality if and only if f (z) = z for all z ∈ D.
+Problem 11. Let f : D → C be an injective and holomorphic function with f (0) = 0 and f 0 (0) = 1. Show that then inf{|w| : w ∈ / f (D)} ≤ 1 with equality if and only if f (z) = z for all z ∈ D.
 :::

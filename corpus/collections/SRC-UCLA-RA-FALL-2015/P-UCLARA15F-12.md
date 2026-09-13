@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Find a function upx,yq harmonic in the region between the circles |z|“ 2 and |z´ 1|“ 1
-which equals 1 on the outer circle and 0 on the inner circle (except at the point where the circles are tangent
-to each other).
+Problem 12. Find a function upx,yq harmonic in the region between the circles |z|“ 2 and |z´ 1|“ 1 which equals 1 on the outer circle and 0 on the inner circle (except at the point where the circles are tangent to each other).
 :::

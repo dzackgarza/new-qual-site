@@ -17,8 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let L1 = L1 ([0, 1]) be the space of integrable and L2 = L2 ([0, 1]) be
-the space of square-integrable functions on [0, 1]. Then L2 ⊂ L1 . Show that L2 is a
-meager subset of L1 , i.e., L2 can be written as a countable union of sets in L1 that
-are closed and have empty interior in L1 .
+Problem 4. Let L1 = L1 ([0, 1]) be the space of integrable and L2 = L2 ([0, 1]) be the space of square-integrable functions on [0, 1]. Then L2 ⊂ L1 . Show that L2 is a meager subset of L1 , i.e., L2 can be written as a countable union of sets in L1 that are closed and have empty interior in L1 .
 :::

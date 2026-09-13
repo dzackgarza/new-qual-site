@@ -17,11 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let f (z) be bounded and holomorphic on the unit disc D = {|z| < 1}.
-Prove that for any w ∈ D we have
-                                   Z
-                                 1      f (z)
-                         f (w) =               dA(z),
-                                 π D (1 − zw)2
-where dA(z) means integration with respect to Lebesgue measure.
+Problem 12. Let f (z) be bounded and holomorphic on the unit disc D = {|z| < 1}. Prove that for any w ∈ D we have Z 1      f (z) f (w) =               dA(z), π D (1 − zw)2 where dA(z) means integration with respect to Lebesgue measure.
 :::

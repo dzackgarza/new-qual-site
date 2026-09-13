@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let Ω = {z ∈ C : |z| > 1 and Re z > −2}. Suppose u : Ω → R is
-bounded, continuous, and harmonic on Ω and also that u(z) = 1 when |z| = 1 and
-that u(z) = 0 when Re(z) = −2. Determine u(2).
+Problem 9. Let Ω = {z ∈ C : |z| > 1 and Re z > −2}. Suppose u : Ω → R is bounded, continuous, and harmonic on Ω and also that u(z) = 1 when |z| = 1 and that u(z) = 0 when Re(z) = −2. Determine u(2).
 :::

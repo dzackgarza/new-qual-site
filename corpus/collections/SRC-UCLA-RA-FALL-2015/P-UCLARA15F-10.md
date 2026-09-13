@@ -17,11 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Use the Residue Theorem to prove that
-ż8
-0
-ecosx sinpsinxqdx
-x “ π
-2pe´ 1q
-Use a large semicircle as part of the contour.
+Problem 10. Use the Residue Theorem to prove that ż8 0 ecosx sinpsinxqdx x “ π 2pe´ 1q Use a large semicircle as part of the contour.
 :::

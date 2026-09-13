@@ -17,12 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let φ : r0, 1s Ñ r0, 1s be continuous and let dµ be a Borel probability measure on r0, 1s.
-Suppose µpφ´1pEqq“ 0 for every Borel set EĎr 0, 1s withµpEq“ 0. Show that there is a Borel measurable
-function w :r0, 1sÑr 0,8q so that
-ż
-f˝φpxqdµpxq “
-ż
-fpyqwpyqdµpyq
-for all continuous f :r0, 1sÑ R.
+Problem 5. Let φ : r0, 1s Ñ r0, 1s be continuous and let dµ be a Borel probability measure on r0, 1s. Suppose µpφ´1pEqq“ 0 for every Borel set EĎr 0, 1s withµpEq“ 0. Show that there is a Borel measurable function w :r0, 1sÑr 0,8q so that ż f˝φpxqdµpxq “ ż fpyqwpyqdµpyq for all continuous f :r0, 1sÑ R.
 :::

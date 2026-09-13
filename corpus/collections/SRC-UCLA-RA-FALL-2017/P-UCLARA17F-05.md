@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Suppose f : R → R is a bounded and measurable function satisfying
-f (x + 1) = f (x) and f (2x) = f (x) for almost every x ∈ R. Show that then there
-exists a constant c ∈ R such that f (x) = c for almost every x ∈ R.
+Problem 5. Suppose f : R → R is a bounded and measurable function satisfying f (x + 1) = f (x) and f (2x) = f (x) for almost every x ∈ R. Show that then there exists a constant c ∈ R such that f (x) = c for almost every x ∈ R.
 :::

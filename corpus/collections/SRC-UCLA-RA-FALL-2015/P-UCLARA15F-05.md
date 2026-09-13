@@ -17,7 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. A function f P Cpr0, 1sq is called H¨ older continuous of order δ ą 0 if there is a constant
-C such that|fpxq´ fpyq|ď C|x´y|δ for all x,y Pr 0, 1s. Show that the H¨ older continuous functions form a
-meager set in Cpr0, 1sq.
+Problem 5. A function f P Cpr0, 1sq is called H¨ older continuous of order δ ą 0 if there is a constant C such that|fpxq´ fpyq|ď C|x´y|δ for all x,y Pr 0, 1s. Show that the H¨ older continuous functions form a meager set in Cpr0, 1sq.
 :::

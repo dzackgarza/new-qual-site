@@ -17,9 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Prove that there exists a meromorphic function f on C with the
-following three properties:
-      (i) f (z) = 0 if and only if z ∈ Z,
-     (ii) f (z) = ∞ if and only if z − 31 ∈ Z,
-    (iii) |f (x + iy)| ≤ 1 for all x ∈ R and all y ∈ R with |y| ≥ 1.
+Problem 7. Prove that there exists a meromorphic function f on C with the following three properties: (i) f (z) = 0 if and only if z ∈ Z, (ii) f (z) = ∞ if and only if z − 31 ∈ Z, (iii) |f (x + iy)| ≤ 1 for all x ∈ R and all y ∈ R with |y| ≥ 1.
 :::

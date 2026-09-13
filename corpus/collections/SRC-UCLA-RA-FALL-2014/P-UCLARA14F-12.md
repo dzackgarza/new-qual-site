@@ -17,6 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let Ω “ tz P C : |z| ą 1u. Suppose u : Ω Ñ R is bounded and continuous on Ω and
-subharmonic on Ω. Prove the following: if upzqď 0 for all |z|“ 1 then upzqď 0 for all zP Ω.
+Problem 12. Let Ω “ tz P C : |z| ą 1u. Suppose u : Ω Ñ R is bounded and continuous on Ω and subharmonic on Ω. Prove the following: if upzqď 0 for all |z|“ 1 then upzqď 0 for all zP Ω.
 :::

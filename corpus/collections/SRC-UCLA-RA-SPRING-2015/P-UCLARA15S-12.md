@@ -19,7 +19,9 @@ audit:
 ::: {.problem}
 Problem 12. Find all entire functions f : C → C that obey
 
-                                   f 0 (z)2 + f (z)2 = 1.
+```
+                               f 0 (z)2 + f (z)2 = 1.
+```
 
 Prove that your list is exhaustive.
 :::

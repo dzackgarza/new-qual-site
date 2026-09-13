@@ -17,7 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let Ω Ď C be open and connected. Suppose pfnq is a sequence of injective holomorphic
-functions deﬁned on Ω such that fnÑ f locally uniformly in Ω. Show that if f is not constant, then f is
-also injective in Ω.
+Problem 9. Let Ω Ď C be open and connected.
+Suppose pfnq is a sequence of injective holomorphic functions deﬁned on Ω such that fnÑ f locally uniformly in Ω. Show that if f is not constant, then f is also injective in Ω.
 :::

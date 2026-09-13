@@ -17,13 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let f be a continuous complex-valued function on the closed unit disk
-D such that f is holomorphic on the open disk D = {z ∈ C : |z| < 1} and f (0) 6= 0.
-  (a) Show that if 0 < r < 1 and if inf |z|=r |f (z)| > 0, then
-                          Z 2π
-                               log |f (reiθ )| dθ ≥ log |f (0)|.
-                       2π 0
-                  
-  (b) Show that θ ∈ [0, 2π] : f (eiθ ) = 0       = 0, where |E| denotes the Lebesgue
-measure of E ⊂ [0, 2π].
+Problem 8. Let f be a continuous complex-valued function on the closed unit disk D such that f is holomorphic on the open disk D = {z ∈ C : |z| < 1} and f (0) 6= 0. (a) Show that if 0 < r < 1 and if inf |z|=r |f (z)| > 0, then Z 2π log |f (reiθ )| dθ ≥ log |f (0)|. 2π 0
+
+(b) Show that θ ∈ [0, 2π] : f (eiθ ) = 0       = 0, where |E| denotes the Lebesgue measure of E ⊂ [0, 2π].
 :::

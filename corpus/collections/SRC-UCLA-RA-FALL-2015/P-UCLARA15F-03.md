@@ -17,15 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let fPL1
-locpRdq be such that for some 0 ăpă 1, we have
-⏐⏐⏐⏐
-ż
-fpxqgpxqdx
-⏐⏐⏐⏐ ď
-ˆż
+Problem 3. Let fPL1 locpRdq be such that for some 0 ăpă 1, we have ⏐⏐⏐⏐ ż fpxqgpxqdx ⏐⏐⏐⏐ ď ˆż
 |gpxq|p
-˙1{p
-,
-for all gPC0pRdq (continuous functions with compact support). Show that fpxq“ 0 a.e.
+˙1{p , for all gPC0pRdq (continuous functions with compact support).
+Show that fpxq“ 0 a.e.
 :::

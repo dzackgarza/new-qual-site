@@ -17,6 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let pfnq be a bounded sequence in L2pRq and suppose that fn Ñ 0 Lebesgue almost ev-
-erywhere. Show that fnÑ 0 in the weak topology on L2pRq.
+Problem 3. Let pfnq be a bounded sequence in L2pRq and suppose that fn Ñ 0 Lebesgue almost ev- erywhere.
+Show that fnÑ 0 in the weak topology on L2pRq.
 :::

@@ -17,17 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. (a) Fix 1 < p < ∞. Show that
-                                       Z r Z ρ
-         f 7→ [M f ](x, y) = sup               f (x + h, y + `) dh d`
-                            r>0,ρ>0 4rρ −r −ρ
+Problem 4. (a) Fix 1 < p < ∞. Show that Z r Z ρ f 7→ [M f ](x, y) = sup               f (x + h, y + `) dh d` r>0,ρ>0 4rρ −r −ρ
 
-is bounded on Lp (R2 ).
-(b) Show that
-                                       Z r Z r2
-                              1
-                  Ar f (x, y) = 3                    f (x + h, y + `) dh d`
-                               4r        −r   −r 2
+is bounded on Lp (R2 ). (b) Show that Z r Z r2 1 Ar f (x, y) = 3                    f (x + h, y + `) dh d` 4r        −r   −r 2
 
 converges to f a.e. in the plane as r → 0.
 :::

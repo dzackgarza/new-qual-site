@@ -17,14 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let D be the space of Ranalytic functions f (z) on the unit disc D =
-{z : |z| < 1} such that f (0) = 0 and D |f 0 (z)|2 dxdy < ∞.
-   (a) Prove D is complete in the norm
-                                      Z                 1/2
-                             ||f || =    |f 0 (z)|2 dxdy      .
-                                        D
+Problem 8. Let D be the space of Ranalytic functions f (z) on the unit disc D = {z : |z| < 1} such that f (0) = 0 and D |f 0 (z)|2 dxdy < ∞. (a) Prove D is complete in the norm Z                 1/2
+||f || =    |f 0 (z)|2 dxdy      .
+D
 
-        P a necessary and sufficient condition on the coefficients an for the function
-   (b) Give
-f (z) = n≥1 an z n to belong to D.
+```
+    P a necessary and sufficient condition on the coefficients an for the function
+```
+(b) Give f (z) = n≥1 an z n to belong to D.
 :::

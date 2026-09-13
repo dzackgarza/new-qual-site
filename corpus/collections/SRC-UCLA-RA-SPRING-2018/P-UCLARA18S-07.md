@@ -17,6 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let F : C × C → C be (jointly) continuous and holomorphic in each
-variable separately. Show that z 7→ F (z, z) is holomorphic.
+Problem 7. Let F : C × C → C be (jointly) continuous and holomorphic in each variable separately.
+Show that z 7→ F (z, z) is holomorphic.
 :::

@@ -17,11 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Show that a harmonic function u : D → R is uniformly continuous if
-and only if it admits the representation
-                             Z 2π  iθ
-                           1           e + z  iθ
-                  u(z) =          Re iθ       f (e ) dθ, z ∈ D,
-                          2π 0         e −z
-with f : ∂D → R continuous.
+Problem 8. Show that a harmonic function u : D → R is uniformly continuous if and only if it admits the representation Z 2π  iθ 1           e + z  iθ u(z) =          Re iθ       f (e ) dθ, z ∈ D, 2π 0         e −z with f : ∂D → R continuous.
 :::

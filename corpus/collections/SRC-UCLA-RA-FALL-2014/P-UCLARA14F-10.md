@@ -20,17 +20,10 @@ audit:
 Problem 10. Let us introduce a vector space B as follows.
 B “
 
-&
-%u : CÑ C :u is holomorphic and
-ĳ
-C
+& %u : CÑ C :u is holomorphic and ĳ C
 |upx`iyq|2e´px2`y2qdxdy ă8
-,
-.
--.
-Show that B becomes a complete vector space when equipped with the norm
+, . -. Show that B becomes a complete vector space when equipped with the norm
 ||u||2 “
-ĳ
-C
+ĳ C
 |upx`iyq|2e´px2`y2qdxdy.
 :::

@@ -17,12 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let a1 , a2 , ...., an be n ≥ 1 points in the disc D = {|z| < 1} (possibly
-with repetitions), so that the function
-                                                n
-                                                Y z − aj
-                                       B(z) =
-                                                j=1
-                                                      1 − aj z
-has n zeros in D. Prove that the derivative B 0 (z) has n − 1 zeros in D.
+Problem 8. Let a1 , a2 , ...., an be n ≥ 1 points in the disc D = {|z| < 1} (possibly with repetitions), so that the function n Y z − aj B(z) = j=1 1 − aj z has n zeros in D. Prove that the derivative B 0 (z) has n − 1 zeros in D.
 :::

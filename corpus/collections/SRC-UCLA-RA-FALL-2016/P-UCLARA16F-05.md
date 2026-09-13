@@ -17,13 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let X = C([0, 1]) be the Banach space of real-valued continuous
-functions on [0, 1] equipped with the norm
-                                 kf k = max |f (x)|.
-                                          x∈[0,1]
+Problem 5. Let X = C([0, 1]) be the Banach space of real-valued continuous functions on [0, 1] equipped with the norm kf k = max |f (x)|. x∈[0,1]
 
-Let A be the Borel σ-algebra on X.
-  Show that A is the smallest σ-algebra on X that contains all sets of the form
-                           S(t, B) = {f ∈ X : f (t) ∈ B},
-where t ∈ [0, 1] and B ⊂ R is a Borel set in R.
+Let A be the Borel σ-algebra on X. Show that A is the smallest σ-algebra on X that contains all sets of the form S(t, B) = {f ∈ X : f (t) ∈ B}, where t ∈ [0, 1] and B ⊂ R is a Borel set in R.
 :::

@@ -17,10 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let f ∈ L1 (R). Show that
-                               n2
-                               X  Z (k+1)/n                Z
-                       lim                    f (x) dx =         |f (x)| dx.
-                      n→∞              k/n
-                               k=−n2
+Problem 1. Let f ∈ L1 (R). Show that n2 X  Z (k+1)/n                Z lim                    f (x) dx =         |f (x)| dx.
+n→∞              k/n k=−n2
 :::

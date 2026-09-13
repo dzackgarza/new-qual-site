@@ -19,6 +19,8 @@ audit:
 ::: {.problem}
 Problem 11. Assume that f (z) is holomorphic on |z| < 2. Show that
 
-                                       max f (z) −       ≥ 1.
-                                       |z|=1           z
+```
+                                   max f (z) −       ≥ 1.
+                                   |z|=1           z
+```
 :::

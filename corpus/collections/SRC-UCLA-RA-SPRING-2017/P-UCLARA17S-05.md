@@ -17,10 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let dµ be a finite complex Borel measure on [0, 1] such that
-                          Z 1
-                 µ̂(n) =      e2πinx dµ(x) → 0 as n → ∞.
-Let dν be a finite complex Borel measure on [0, 1] that is absolutely continuous
-with respect to dµ. Show that
-                              ν̂(n) → 0     as n → ∞.
+Problem 5. Let dµ be a finite complex Borel measure on [0, 1] such that Z 1 µ̂(n) =      e2πinx dµ(x) → 0 as n → ∞. Let dν be a finite complex Borel measure on [0, 1] that is absolutely continuous with respect to dµ.
+Show that ν̂(n) → 0     as n → ∞.
 :::

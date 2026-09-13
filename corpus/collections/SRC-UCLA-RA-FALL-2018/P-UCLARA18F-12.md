@@ -17,9 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. If α ∈ C satisfies 0 < |α| < 1 and if n ∈ N = {1, 2, 3, ...} show that
-the equation
+Problem 12. If α ∈ C satisfies 0 < |α| < 1 and if n ∈ N = {1, 2, 3, ...} show that the equation
 
-                                  ez (z − 1)n = α
+```
+                              ez (z − 1)n = α
+```
 has exactly n simple roots in the half plane {z : Re z > 0}.
 :::

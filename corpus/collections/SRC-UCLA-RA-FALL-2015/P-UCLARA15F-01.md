@@ -17,10 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Letgn be a sequence of measurable functions on Rd, such that|gnpxq|ď 1 for allx, and assume
-that gnÑ 0 almost everywhere. Let fPL1pRdq. Show that the sequence
-f˚gnpxq“
-ż
-fpx´yqgnpyqÑ 0
-uniformly on each compact subset of Rd, as nÑ8.
+Problem 1. Letgn be a sequence of measurable functions on Rd, such that|gnpxq|ď 1 for allx, and assume that gnÑ 0 almost everywhere.
+Let fPL1pRdq. Show that the sequence f˚gnpxq“ ż fpx´yqgnpyqÑ 0 uniformly on each compact subset of Rd, as nÑ8.
 :::

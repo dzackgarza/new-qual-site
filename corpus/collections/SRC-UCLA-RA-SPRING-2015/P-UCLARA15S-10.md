@@ -17,10 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Determine
-                                 Z ∞
-                                                   dy
-                                 −∞    (1 + y 2 )(1 + [x − y]2 )
+Problem 10. Determine Z ∞ dy −∞    (1 + y 2 )(1 + [x − y]2 )
 
 for all x ∈ R. Justify all manipulations.
 :::

@@ -17,11 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let f ∈ L2loc (Rn ), g ∈ L3loc (Rn ). Assume that for all real r ≥ 1, we have
-               Z                               Z
-                         |f (x)| dx ≤ r ,  a
-                                                      |g(x)|3 dx ≤ rb .
-                    r≤|x|≤2r                      r≤|x|≤2r
+Problem 2. Let f ∈ L2loc (Rn ), g ∈ L3loc (Rn ). Assume that for all real r ≥ 1, we have Z                               Z
+|f (x)| dx ≤ r ,  a
+|g(x)|3 dx ≤ rb .
+r≤|x|≤2r                      r≤|x|≤2r
 
 Here a, b ∈ R are such that 3a + 2b + n < 0. Show that f g ∈ L1 (Rn ).
 :::

@@ -17,16 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let D be the closed unit disc in the complex plane, let {pn } be distinct
-points in the open disc D and let rn > 0 be such that the discs Dn = {z : |z − pn | ≤
-rn } satisfy
-    (i) Dn ⊂ D;
-  (ii) Dn ∩ Dm = ∅ if n 6= m;
-and
-        P
-  (iii)   rn < ∞.
-               S
-Prove X = D \ n Dn has positive area.
-Hint: For −1 < x < 1 consider #{n : Dn ∩ {Rez = x} =
-                                                   6 ∅}.
+Problem 6. Let D be the closed unit disc in the complex plane, let {pn } be distinct points in the open disc D and let rn > 0 be such that the discs Dn = {z : |z − pn | ≤ rn } satisfy (i) Dn ⊂ D; (ii) Dn ∩ Dm = ∅ if n 6= m; and P (iii)   rn < ∞. S Prove X = D \ n Dn has positive area.
+Hint: For −1 < x < 1 consider #{n : Dn ∩ {Rez = x} = 6 ∅}.
 :::

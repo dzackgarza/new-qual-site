@@ -18,11 +18,6 @@ audit:
 
 ::: {.problem}
 Problem 6. Let f ∈ L2 (C). For z ∈ C we define
-                                           |f (w)|
-                           Z
-                   g(z) =                          dA(w),
-                            {w∈C:|w−z|≤1} |w  − z|
-where dA denotes integration with respect to Lebesgue measure on C ∼
-                                                                   = R2 . Show
-that then |g(z)| < ∞ for almost every z ∈ C and that g ∈ L (C).
+|f (w)|
+Z g(z) =                          dA(w), {w∈C:|w−z|≤1} |w  − z| where dA denotes integration with respect to Lebesgue measure on C ∼ = R2 . Show that then |g(z)| < ∞ for almost every z ∈ C and that g ∈ L (C).
 :::

@@ -17,11 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let Ω “ tpx,yq P R2 : x ą 0,y ą 0u and let u be subharmonic in Ω, continuous in Ω,
-such that
-upx,yq ď |x`iy|,
-for large px,yqP Ω. Assume that
-upx, 0q ď ax, u p0,yq ď by, x,y ě 0,
-for some a,b ą 0. Show that
-upx,yq ď ax`by, px,yqP Ω.
+Problem 11. Let Ω “ tpx,yq P R2 : x ą 0,y ą 0u and let u be subharmonic in Ω, continuous in Ω, such that upx,yq ď |x`iy|, for large px,yqP Ω. Assume that upx, 0q ď ax, u p0,yq ď by, x,y ě 0, for some a,b ą 0. Show that upx,yq ď ax`by, px,yqP Ω.
 :::

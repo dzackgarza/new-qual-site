@@ -17,11 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4a. Let H be a separable inﬁnite-dimensional Hilbert space and assume that penq is an or-
-thonormal system in H. Let pfnq be another orthonormal system which is complete, i.e. the closure of the
-span ofpfnq is all of H. Show that if ř8
-n“1||fn´en||2ă 1 then the orthonormal systempenq is also complete.
+Problem 4a. Let H be a separable inﬁnite-dimensional Hilbert space and assume that penq is an or- thonormal system in H. Let pfnq be another orthonormal system which is complete, i.e. the closure of the span ofpfnq is all of H. Show that if ř8 n“1||fn´en||2ă 1 then the orthonormal systempenq is also complete.
 
-Problem 4b. Assume we only have ř8
-n“1||fn´en||2ă8 . Prove that it is still true that penq is complete.
+Problem 4b. Assume we only have ř8 n“1||fn´en||2ă8 . Prove that it is still true that penq is complete.
 :::
