@@ -190,7 +190,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall89.pdf](assets/attachments/extracted/Fall89.md) (78L, 0 problems) — applied-algebra — Fall 19
 
-- [ ] [Fall91.pdf](assets/attachments/extracted/Fall91.md) (107L, 7 problems) — algebra — Fall 19
+- [x] [Fall91.pdf](assets/attachments/extracted/Fall91.md) (107L, 7 problems) — Berkeley — prelim — Fall 1991 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1991`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `7 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Fall92.pdf](assets/attachments/extracted/Fall92.md) (111L, 5 problems) — Berkeley — prelim — Fall 1992 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1992`, with all 18 source positions represented in order. Seventeen source-local cards were added and Problem 16 reuses the exact Spring 1980 card `P-BKS80-16`. Problem 6 preserves an explicit extraction gap in the metric-comparison hypothesis rather than guessing the missing relation. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `5 problems` and `algebra` labels were stale heuristic metadata.
 
