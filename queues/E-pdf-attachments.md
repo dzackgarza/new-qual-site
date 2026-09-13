@@ -166,7 +166,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Topology_Prelim_Answers_-_Unknown.pdf](assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md) (3064L, 0 problems) — diff-geom
 
-- [ ] [UCSD_Topology_Qual_Problems_2020-05-29.pdf](assets/attachments/extracted/UCSD_Topology_Qual_Problems_2020-05-29.md) (320L, 120 problems) — applied-algebra **OCR: image placeholders**
+- [x] [UCSD_Topology_Qual_Problems_2020-05-29.pdf](assets/attachments/extracted/UCSD_Topology_Qual_Problems_2020-05-29.md) (320L, 120 problems) — UCSD — topology — compilation — disposition 2026-09-13: reconciled as the byte-identical retained compiled source for `SRC-UCSD-TOP-JUSTIN`, which contains all 92 canonical problem positions. Added this PDF directly to collection provenance and corrected the extraction ledger: the four Van Kampen entries that are image/placeholders in the compilation were restored from Roberts’ official `UCSD_290_F14_sheet3.pdf`, already owned by the collection. No duplicate problem cards were created.
 
 - [x] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — Mike Usher — Math 8210 Differential Geometry — Fall 2011 — reference/course notes — disposition 2026-09-13: treated as semester-long smooth-manifold lecture notes rather than a standalone problem source. The embedded exercises are subordinate to the exposition. Added a substantive annotated local-resource entry to `wiki/topology/resources/books-notes.md` covering tangent/vector-field formalisms, partitions of unity, bundles, differential forms, submanifolds and tubular neighborhoods, flows, Lie derivatives, Cartan's formula, and Moser's method; no exercise cards were manufactured.
 
