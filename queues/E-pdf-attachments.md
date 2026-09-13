@@ -308,7 +308,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-10F.pdf](assets/attachments/extracted/basic-10F.md) (105L, 12 problems) — UCLA — calculus — Fall 2010
 
-- [ ] [basic-10S.pdf](assets/attachments/extracted/basic-10S.md) (65L, 0 problems) — UCLA — applied-algebra — SPRING 2010
+- [x] [basic-10S.pdf](assets/attachments/extracted/basic-10S.md) (65L, 0 problems) — UCLA — applied-algebra — SPRING 2010 — disposition 2026-09-13: identified from the PDF as the UCLA Basic Examination, Spring 2010, and ingested as `SRC-UCLA-BASIC-SPRING-2010`; all 12 numbered problems are represented in source order by `P-UCLAB10S-01` through `P-UCLAB10S-12`. The inventory count of 0 was a false negative.
 
 - [x] [basic-11F.pdf](assets/attachments/extracted/basic-11F.md) (93L, 2 problems) — UCLA — Fall 2011 — disposition 2026-09-13: identified from the PDF as the UCLA Basic Examination, Fall 2011, and ingested as `SRC-UCLA-BASIC-FALL-2011`; all 12 numbered problems are represented in source order by `P-UCLAB11F-01` through `P-UCLAB11F-12`. The inventory count of 2 was a stale extraction heuristic.
 
