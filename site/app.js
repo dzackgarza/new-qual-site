@@ -19,6 +19,43 @@
     await window.MathJax?.typesetPromise?.([node]);
   };
 
+  const randomProblem = document.querySelector("#random-problem");
+  if (randomProblem) {
+    const topic = document.querySelector("#random-problem-topic");
+    const submit = randomProblem.querySelector('button[type="submit"]');
+    const status = document.querySelector("#random-problem-status");
+    let problemData;
+
+    randomProblem.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!randomProblem.reportValidity()) return;
+
+      const selected = topic.selectedOptions[0];
+      const areaName = selected.dataset.areaName;
+      submit.disabled = true;
+      status.textContent = "";
+      try {
+        if (!problemData) {
+          const response = await fetch(new URL(randomProblem.dataset.problemsUrl, siteRoot));
+          if (!response.ok) throw new Error(`problem catalog returned ${response.status}`);
+          problemData = await response.json();
+        }
+        const candidates = problemData.rows.filter((row) => row.areas.includes(areaName));
+        if (candidates.length === 0) {
+          status.textContent = "No problems are filed under this topic.";
+          submit.disabled = false;
+          return;
+        }
+        const problem = candidates[Math.floor(Math.random() * candidates.length)];
+        window.location.assign(new URL(problem.url, siteRoot).href);
+      } catch (error) {
+        console.error(error);
+        status.textContent = "Could not load the problem catalog.";
+        submit.disabled = false;
+      }
+    });
+  }
+
   const dialog = document.querySelector("#site-search");
   if (dialog) {
     const openButton = document.querySelector("#search-open");

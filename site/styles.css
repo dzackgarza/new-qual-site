@@ -1412,6 +1412,23 @@ div.panel > ul {
   }
 }
 
-.front-page-sampler {
+.random-problem-widget {
   margin: 1.5rem 0;
+}
+
+.random-problem-widget select {
+  display: block;
+  min-width: 13rem;
+  margin-top: 0.25rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.random-problem-status {
+  align-self: center;
+  color: var(--muted);
+  font-size: var(--label);
 }

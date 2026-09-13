@@ -2012,18 +2012,26 @@ def card_guide_appearances(
     return guide_appearances
 
 
-def _front_page_sampler() -> pf.RawBlock:
-    """A front-page entry point into the one problem browser's random sampler.
-
-    The browser owns filtering and sampling (AGENTS.md), so the front page does
-    not duplicate that machinery: this form only carries a count into
-    `problems.html?sample=N`, which the browser's own `renderSample` reads.
-    """
+def _front_page_random_problem(
+    area_names: dict[str, str],
+) -> pf.RawBlock:
+    """Choose one top-level subject and jump to one random problem in it."""
+    choices = sorted(
+        area_names.items(),
+        key=lambda item: item[1].casefold(),
+    )
+    options = "".join(
+        f'<option value="{html.escape(area, quote=True)}" data-area-name="{html.escape(title, quote=True)}">{html.escape(title)}</option>' for area, title in choices
+    )
     return pf.RawBlock(
-        '<form class="practice-actions front-page-sampler" action="problems.html" method="get">'
-        '<label for="front-sample-count">Random sample'
-        '<input id="front-sample-count" name="sample" type="number" min="1" max="100" value="8"></label>'
-        '<button type="submit">Draw a sample</button>'
+        '<form id="random-problem" class="practice-actions random-problem-widget" data-problems-url="problems.json">'
+        '<label for="random-problem-topic">Topic'
+        '<select id="random-problem-topic" required>'
+        '<option value="" selected disabled>Choose a topic</option>'
+        f"{options}"
+        "</select></label>"
+        '<button type="submit">Random problem</button>'
+        '<span id="random-problem-status" class="random-problem-status" role="status" aria-live="polite"></span>'
         "</form>",
         format="html",
     )
@@ -2032,6 +2040,7 @@ def _front_page_sampler() -> pf.RawBlock:
 def index_page(
     pandoc: PandocServer,
     con: sqlite3.Connection,
+    area_names: dict[str, str],
 ) -> Page:
     # Every number is counted off the catalog. A figure written into the copy
     # is true on the day it is written and silently false afterwards.
@@ -2071,7 +2080,7 @@ def index_page(
         "index-page read",
     )
     blocks = list(from_ast(output[0]).content)
-    blocks.append(_front_page_sampler())
+    blocks.append(_front_page_random_problem(area_names))
     return {"title": "Qual Corpus"}, blocks
 
 
@@ -2745,7 +2754,7 @@ title: Practice problems
             StandardPage(Listing()),
         ),
     )
-    pages.append((index_page(pandoc, con), out / "index.qmd", StandardPage(Listing())))
+    pages.append((index_page(pandoc, con, area_names), out / "index.qmd", StandardPage(Listing())))
     write_pages(
         pandoc,
         pages,
