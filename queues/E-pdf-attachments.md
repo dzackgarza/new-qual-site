@@ -198,7 +198,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall96.pdf](assets/attachments/extracted/Fall96.md) (123L, 4 problems) — complex-analysis — Fall 19
 
-- [ ] [Fall98.pdf](assets/attachments/extracted/Fall98.md) (69L, 6 problems) — applied-algebra — Fall 19
+- [x] [Fall98.pdf](assets/attachments/extracted/Fall98.md) (69L, 6 problems) — Berkeley — prelim — Fall 1998 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1998`, with all 18 numbered problems represented in source order. Seventeen source-local cards were added and Problem 17 reuses the exact canonical card `P-BJDIE` for the order of `GL_n(F_q)`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `6 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Fall99.pdf](assets/attachments/extracted/Fall99.md) (64L, 0 problems) — Berkeley — prelim — Fall 1999 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1999`, with all 18 numbered problems represented in source order. Sixteen source-local cards were added; Problem 10 reuses `P-BKF07-7B` and Problem 11 reuses `E-AMD-HO6G56UF`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `applied-algebra` labels were stale heuristic metadata.
 
