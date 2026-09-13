@@ -2012,6 +2012,23 @@ def card_guide_appearances(
     return guide_appearances
 
 
+def _front_page_sampler() -> pf.RawBlock:
+    """A front-page entry point into the one problem browser's random sampler.
+
+    The browser owns filtering and sampling (AGENTS.md), so the front page does
+    not duplicate that machinery: this form only carries a count into
+    `problems.html?sample=N`, which the browser's own `renderSample` reads.
+    """
+    return pf.RawBlock(
+        '<form class="practice-actions front-page-sampler" action="problems.html" method="get">'
+        '<label for="front-sample-count">Random sample'
+        '<input id="front-sample-count" name="sample" type="number" min="1" max="100" value="8"></label>'
+        '<button type="submit">Draw a sample</button>'
+        "</form>",
+        format="html",
+    )
+
+
 def index_page(
     pandoc: PandocServer,
     con: sqlite3.Connection,
@@ -2053,7 +2070,9 @@ def index_page(
         ),
         "index-page read",
     )
-    return {"title": "Qual Corpus"}, list(from_ast(output[0]).content)
+    blocks = list(from_ast(output[0]).content)
+    blocks.append(_front_page_sampler())
+    return {"title": "Qual Corpus"}, blocks
 
 
 # Separates multi-valued facet terms in HTML data attributes. Topics are free

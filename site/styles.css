@@ -1411,3 +1411,7 @@ div.panel > ul {
     break-after: avoid;
   }
 }
+
+.front-page-sampler {
+  margin: 1.5rem 0;
+}

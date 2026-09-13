@@ -371,3 +371,23 @@ def test_a_guide_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
         ("Guides", "../guides.html"),
         ("Topology", "GUIDE-TOPOLOGY.html"),
     ]
+
+
+def test_the_front_page_links_into_the_one_random_sampler(tmp_path: Path) -> None:
+    """The home page offers a sampler without duplicating the browser's."""
+    work = fixture_repo(tmp_path)
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    home = read_html(site / "index.html")
+    forms = home.root.find_all("form", **{"class": "practice-actions front-page-sampler"})
+    assert len(forms) == 1
+    form = forms[0]
+    assert form.attrs["action"] == "problems.html"
+    assert form.attrs["method"] == "get"
+    counts = form.find_all("input", id="front-sample-count")
+    assert len(counts) == 1
+    assert counts[0].attrs["name"] == "sample"
+    # The front page hands off to the browser; it does not rebuild the widget.
+    assert home.root.find_all("section", id="practice-sheet") == []
