@@ -36,9 +36,9 @@ Let $f:\mathbb R^n\to\mathbb R$ be a function whose partial derivatives of order
    \]
    is positive definite at $x=a$.
 
-2. Assume the Hessian matrix is positive definite at every $x\in\mathbb R^n$. Prove that $f$ has at most one critical point.
+2. Assume the Hessian matrix is positive definite at every $x\in\mathbb R^n$.
+   Prove that $f$ has at most one critical point.
 :::
-
 
 ::: {.solution}
 Let $H_f(x)$ denote the Hessian matrix of $f$ at $x$.
@@ -50,7 +50,8 @@ Because $H_f(a)$ is positive definite, there is a constant $c>0$ such that
 v^T H_f(a)v\ge 2c\|v\|^2
 \qquad\text{for all }v\in\mathbb R^n.
 \]
-The Hessian depends continuously on $x$. Hence, after shrinking to a neighborhood $U$ of $a$, we may arrange that
+The Hessian depends continuously on $x$.
+Hence, after shrinking to a neighborhood $U$ of $a$, we may arrange that
 \[
 v^T H_f(x)v\ge c\|v\|^2
 \qquad\text{for all }x\in U,\ v\in\mathbb R^n.
@@ -79,12 +80,14 @@ f(a+h)-f(a)
 &=\frac c2\|h\|^2.
 \end{aligned}
 \]
-For $h\ne0$ this is strictly positive. Thus $a$ is a strict local minimum.
+For $h\ne0$ this is strictly positive.
+Thus $a$ is a strict local minimum.
 :::
 
 <1>2. If the Hessian is positive definite everywhere, there is at most one critical point.
 ::: {.proof}
-Suppose, toward a contradiction, that $a\ne b$ are both critical points. Put
+Suppose, toward a contradiction, that $a\ne b$ are both critical points.
+Put
 \[
 v=b-a\ne0
 \]
@@ -108,6 +111,7 @@ g'(0)=\nabla f(a)\cdot v=0,
 \qquad
 g'(1)=\nabla f(b)\cdot v=0,
 \]
-contradicting strict increase. Hence $f$ has at most one critical point.
+contradicting strict increase.
+Hence $f$ has at most one critical point.
 :::
 :::

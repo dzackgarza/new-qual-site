@@ -30,9 +30,9 @@ $$
 \frac{dx}{dt}=-x+y,\qquad \frac{dy}{dt}=\log(20+x)-y.
 $$
 
-Let $x(t)$ and $y(t)$ be a solution defined for all $t\ge0$ with $x(0)>0$ and $y(0)>0$. Prove that $x(t)$ and $y(t)$ are bounded.
+Let $x(t)$ and $y(t)$ be a solution defined for all $t\ge0$ with $x(0)>0$ and $y(0)>0$.
+Prove that $x(t)$ and $y(t)$ are bounded.
 :::
-
 
 ::: {.solution}
 Set
@@ -60,9 +60,11 @@ and
 \[
 y(t)=e^{-t}\left(y(0)+\int_0^t e^s\log(20+x(s))\,ds\right).
 \]
-If $x(s)>0$, then $\log(20+x(s))>0$. Hence, on any interval on which both variables are positive, the two displayed formulas actually show that both remain strictly positive.
+If $x(s)>0$, then $\log(20+x(s))>0$.
+Hence, on any interval on which both variables are positive, the two displayed formulas actually show that both remain strictly positive.
 
-If there were a first time at which either variable reached $0$, these formulas evaluated at that time would still give a strictly positive value, a contradiction. Thus the solution remains in the first quadrant.
+If there were a first time at which either variable reached $0$, these formulas evaluated at that time would still give a strictly positive value, a contradiction.
+Thus the solution remains in the first quadrant.
 :::
 
 <1>2. The $x$-component satisfies a damped scalar equation with decreasing energy.
@@ -111,19 +113,22 @@ Thus the sublevel set
 \[
 \{x\ge0:U(x)\le E(0)\}
 \]
-is bounded. Since $x(t)\ge0$ by <1>1 and $U(x(t))\le E(t)\le E(0)$, the function $x(t)$ is bounded.
+is bounded.
+Since $x(t)\ge0$ by <1>1 and $U(x(t))\le E(t)\le E(0)$, the function $x(t)$ is bounded.
 
 Let
 \[
 m=\min_{x\ge0}U(x),
 \]
-which is finite because $U$ is continuous and coercive on $[0,\infty)$. Then
+which is finite because $U$ is continuous and coercive on $[0,\infty)$.
+Then
 \[
 \frac12(x'(t))^2
 =E(t)-U(x(t))
 \le E(0)-m,
 \]
-so $x'(t)$ is bounded as well. Finally,
+so $x'(t)$ is bounded as well.
+Finally,
 \[
 y(t)=x'(t)+x(t),
 \]
