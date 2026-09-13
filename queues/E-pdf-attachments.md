@@ -200,7 +200,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall98.pdf](assets/attachments/extracted/Fall98.md) (69L, 6 problems) — applied-algebra — Fall 19
 
-- [ ] [Fall99.pdf](assets/attachments/extracted/Fall99.md) (64L, 0 problems) — applied-algebra — Fall 19
+- [x] [Fall99.pdf](assets/attachments/extracted/Fall99.md) (64L, 0 problems) — Berkeley — prelim — Fall 1999 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1999`, with all 18 numbered problems represented in source order. Sixteen source-local cards were added; Problem 10 reuses `P-BKF07-7B` and Problem 11 reuses `E-AMD-HO6G56UF`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [grad_prelim_Fall08.pdf](assets/attachments/extracted/grad_prelim_Fall08.md) (47L, 8 problems) — UGA — prelim — Fall 2008 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-FALL-2008`, with all 8 source positions represented in order: 7 new cards plus exact reuse of `P-UGAP13F-06` for Problem 3. Problem 4 retains an explicit source gap because the displayed matrix is malformed in the retained extraction and repository history provides no independent recovery; no entries were guessed. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series.
 
