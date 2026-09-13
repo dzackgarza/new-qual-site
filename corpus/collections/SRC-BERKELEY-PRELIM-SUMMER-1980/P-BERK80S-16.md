@@ -24,7 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\left( a _ { n } \right)$ be a sequence of nonzero real numbers. Prove that the sequence of functions $f _ { n } : \mathbb { R } \to \mathbb { R }$
+Let $\left( a _ { n } \right)$ be a sequence of nonzero real numbers.
+Prove that the sequence of functions $f _ { n } : \mathbb { R } \to \mathbb { R }$
 
 $$
 f _ { n } ( x ) = { \frac { 1 } { a _ { n } } } \sin ( a _ { n } x ) + \cos ( x + a _ { n } )
@@ -32,7 +33,6 @@ $$
 
 has a subsequence converging to a continuous function.
 :::
-
 
 ::: {.solution}
 Let
@@ -57,11 +57,13 @@ uniformly for $x\in K$, because the function
 \[
 (t,x)\longmapsto \frac{\sin(tx)}t
 \]
-is continuous near $\{a\}\times K$. Also
+is continuous near $\{a\}\times K$.
+Also
 \[
 \cos(x+a_n)\longrightarrow\cos(x+a)
 \]
-uniformly in $x$ because cosine is Lipschitz. Hence
+uniformly in $x$ because cosine is Lipschitz.
+Hence
 \[
 f_n(x)\longrightarrow \frac{\sin(ax)}a+\cos(x+a)
 \]
@@ -77,11 +79,13 @@ On every compact interval, $a_nx\to0$ uniformly, so
 \[
 \frac{\sin(a_nx)}{a_n}\longrightarrow x
 \]
-uniformly there. Also
+uniformly there.
+Also
 \[
 \cos(x+a_n)\longrightarrow\cos x
 \]
-uniformly. Thus
+uniformly.
+Thus
 \[
 f_n(x)\longrightarrow x+\cos x
 \]
@@ -106,7 +110,8 @@ The points $e^{ia_n}$ lie on the compact unit circle, so after passing to a furt
 \[
 e^{ia_n}\to e^{i\theta}
 \]
-for some real $\theta$. Then for every $x$,
+for some real $\theta$.
+Then for every $x$,
 \[
 \begin{aligned}
 |\cos(x+a_n)-\cos(x+\theta)|
@@ -114,7 +119,8 @@ for some real $\theta$. Then for every $x$,
 &\le |e^{ia_n}-e^{i\theta}|,
 \end{aligned}
 \]
-and the right-hand side is independent of $x$ and tends to $0$. Hence
+and the right-hand side is independent of $x$ and tends to $0$.
+Hence
 \[
 \cos(x+a_n)\longrightarrow\cos(x+\theta)
 \]

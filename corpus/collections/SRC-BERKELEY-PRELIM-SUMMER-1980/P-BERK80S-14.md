@@ -24,7 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ and $B$ be real $2\times2$ matrices such that $A^2=B^2=I$ and $AB+BA=0$. Prove there exists a real nonsingular matrix $T$ with
+Let $A$ and $B$ be real $2\times2$ matrices such that $A^2=B^2=I$ and $AB+BA=0$.
+Prove there exists a real nonsingular matrix $T$ with
 
 \[
 T^{-1}AT=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad T^{-1}BT=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
@@ -32,7 +33,6 @@ T^{-1}AT=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad T^{-1}BT=\begin{pmatrix}0&
 
 ![Source page for Problem 14.](../../../assets/attachments/berkeley-prelim-summer-1980/problem-14.png)
 :::
-
 
 ::: {.solution}
 Because $A^2=I$, the minimal polynomial of $A$ divides

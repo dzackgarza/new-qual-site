@@ -39,7 +39,6 @@ $$
 Prove that there exist points $p \in S , \ q \in T$ , such that the line pq is perpendicular to S at p and to T at q.
 :::
 
-
 ::: {.solution}
 We minimize the squared distance
 \[
@@ -49,7 +48,8 @@ over $S\times T$.
 
 <1>1. The distance between $S$ and $T$ is attained by some pair $(p,q)\in S\times T$.
 ::: {.proof}
-The ellipsoid $S$ is compact. In particular, there is $R>0$ such that
+The ellipsoid $S$ is compact.
+In particular, there is $R>0$ such that
 \[
 S\subset B_R(0).
 \]
@@ -69,7 +69,8 @@ Therefore it suffices to minimize $D$ on
 \[
 S\times\bigl(T\cap \overline B_{R+M+1}(0)\bigr),
 \]
-which is compact. By continuity, $D$ attains its minimum there, say at $(p,q)$.
+which is compact.
+By continuity, $D$ attains its minimum there, say at $(p,q)$.
 :::
 
 <1>2. The minimizing points are distinct.
@@ -91,7 +92,8 @@ Thus $S\cap T=\varnothing$, so the minimizing pair has $p\ne q$ and determines a
 
 <1>3. The line through $p$ and $q$ is perpendicular to $S$ at $p$.
 ::: {.proof}
-Let $v\in T_pS$ be any tangent vector. Choose a smooth curve $\gamma:(-\varepsilon,\varepsilon)\to S$ with
+Let $v\in T_pS$ be any tangent vector.
+Choose a smooth curve $\gamma:(-\varepsilon,\varepsilon)\to S$ with
 \[
 \gamma(0)=p,
 \qquad
@@ -101,11 +103,13 @@ Because $(p,q)$ minimizes the distance, the function
 \[
 \varphi(t)=\|\gamma(t)-q\|^2
 \]
-has a minimum at $t=0$. Hence
+has a minimum at $t=0$.
+Hence
 \[
 0=\varphi'(0)=2(p-q)\cdot v.
 \]
-Since this holds for every $v\in T_pS$, the vector $q-p$ is orthogonal to the tangent plane $T_pS$. Thus the line $pq$ is perpendicular to $S$ at $p$.
+Since this holds for every $v\in T_pS$, the vector $q-p$ is orthogonal to the tangent plane $T_pS$.
+Thus the line $pq$ is perpendicular to $S$ at $p$.
 :::
 
 <1>4. The same line is perpendicular to $T$ at $q$.
@@ -124,6 +128,7 @@ has a minimum at $0$, so
 \[
 0=\psi'(0)=2(q-p)\cdot w.
 \]
-Hence $q-p$ is orthogonal to $T_qT$. Therefore the line $pq$ is perpendicular to both surfaces at the minimizing points.
+Hence $q-p$ is orthogonal to $T_qT$.
+Therefore the line $pq$ is perpendicular to both surfaces at the minimizing points.
 :::
 :::

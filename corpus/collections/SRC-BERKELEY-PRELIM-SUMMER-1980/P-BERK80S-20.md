@@ -31,7 +31,6 @@ Prove that the initial value problem
 has a solution $x(t)$ defined for all $t\in\mathbb R$.
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -66,7 +65,8 @@ Using <1>1,
 |x(t)|
 \le77+85t+3\int_0^t|x(s)|\,ds.
 \]
-Fix $T<\beta$. For $0\le t\le T$,
+Fix $T<\beta$.
+For $0\le t\le T$,
 \[
 |x(t)|
 \le 77+85T+3\int_0^t|x(s)|\,ds.

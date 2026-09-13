@@ -33,7 +33,6 @@ $$
 have in the annulus $1 < | z | < 2 \ ?$
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -56,7 +55,8 @@ while
 |3z^9+z^5+2z^3+1|
 \le3+1+2+1=7<8.
 \]
-By Rouché's theorem, $p(z)$ and $8z^6$ have the same number of zeros in $|z|<1$. Therefore $p$ has exactly six zeros there, counted with multiplicity.
+By Rouché's theorem, $p(z)$ and $8z^6$ have the same number of zeros in $|z|<1$.
+Therefore $p$ has exactly six zeros there, counted with multiplicity.
 The inequality is strict, so $p$ has no zero on $|z|=1$.
 :::
 
@@ -75,12 +75,14 @@ For the remaining terms,
 &=561<1536.
 \end{aligned}
 \]
-Thus Rouché's theorem gives the same number of zeros as $3z^9$, namely nine, inside $|z|<2$. Again the strict inequality shows there are no zeros on $|z|=2$.
+Thus Rouché's theorem gives the same number of zeros as $3z^9$, namely nine, inside $|z|<2$.
+Again the strict inequality shows there are no zeros on $|z|=2$.
 :::
 
 <1>3. Subtract the two disk counts.
 ::: {.proof}
-Every zero in $|z|<2$ lies either in $|z|<1$ or in the annulus $1<|z|<2$, because there are no zeros on $|z|=1$. Hence the annulus contains
+Every zero in $|z|<2$ lies either in $|z|<1$ or in the annulus $1<|z|<2$, because there are no zeros on $|z|=1$.
+Hence the annulus contains
 \[
 9-6=3
 \]

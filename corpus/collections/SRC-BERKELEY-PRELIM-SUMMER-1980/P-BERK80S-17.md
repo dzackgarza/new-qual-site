@@ -24,9 +24,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be monotonically increasing, perhaps discontinuous. Suppose $0<f(0)$ and $f(100)<100$. Prove that $f(x)=x$ for some $x$.
+Let $f:\mathbb R\to\mathbb R$ be monotonically increasing, perhaps discontinuous.
+Suppose $0<f(0)$ and $f(100)<100$.
+Prove that $f(x)=x$ for some $x$.
 :::
-
 
 ::: {.solution}
 Set
@@ -42,7 +43,8 @@ Since $0<f(0)$,
 0\le f(0),
 \]
 so $0\in A$.
-By definition $A\subseteq[0,100]$, hence $A$ is bounded above. Therefore
+By definition $A\subseteq[0,100]$, hence $A$ is bounded above.
+Therefore
 \[
 c:=\sup A
 \]
@@ -51,16 +53,19 @@ exists and lies in $[0,100]$.
 
 <1>2. One has $c\le f(c)$.
 ::: {.proof}
-For every $x\in A$, one has $x\le c$. Because $f$ is monotonically increasing,
+For every $x\in A$, one has $x\le c$.
+Because $f$ is monotonically increasing,
 \[
 f(x)\le f(c).
 \]
-But $x\in A$ also gives $x\le f(x)$. Thus
+But $x\in A$ also gives $x\le f(x)$.
+Thus
 \[
 x\le f(c)
 \qquad\text{for every }x\in A.
 \]
-So $f(c)$ is an upper bound for $A$. Since $c$ is the least upper bound,
+So $f(c)$ is an upper bound for $A$.
+Since $c$ is the least upper bound,
 \[
 c\le f(c).
 \]
@@ -68,7 +73,8 @@ c\le f(c).
 
 <1>3. One has $f(c)\le c$.
 ::: {.proof}
-First note that $c<100$. Indeed, if $c=100$, then <1>2 would imply
+First note that $c<100$.
+Indeed, if $c=100$, then <1>2 would imply
 \[
 100\le f(100),
 \]
@@ -91,7 +97,8 @@ Hence $f(c)\in[0,100]$ and
 f(c)\le f(f(c)),
 \]
 so $f(c)\in A$.
-But $f(c)>c=\sup A$, a contradiction. Therefore
+But $f(c)>c=\sup A$, a contradiction.
+Therefore
 \[
 f(c)\le c.
 \]
