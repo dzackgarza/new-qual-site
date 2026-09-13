@@ -46,7 +46,8 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Record those cards and their count.
   **Acceptance:** the detector's count falls, and each commit's cards read as the source reads.
 
-- **`extraction-pipeline`**. **Closed 2026-09-13** by `fix(intake): gate problem statement commits before formatting`; the UGA Math 8155 source ingested afterwards produced zero detector hits and needed no follow-up normalization commit. **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
+- **`extraction-pipeline`**. **Closed 2026-09-13** by `fix(intake): gate problem statement commits before formatting`; the UGA Math 8155 source ingested afterwards produced zero detector hits and needed no follow-up normalization commit.
+  **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
   Two defects are already established.
   The extraction lands text that was never converted to LaTeX, and the normalization pass then joins its lines — which destroys the column layout that encoded the fraction, the integral bound and the derivative, and is why several of the cards above are now unrecoverable from the card alone.
   A whitespace normalizer must never run over unconverted extraction output.
@@ -62,6 +63,16 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Make the regeneration incremental: the staged diff already names which cards changed, and a card leaves or joins the queue only by gaining or losing a solution div, so the queue can be updated from those paths without reparsing the corpus.
   Keep a full rebuild available as its own recipe for when the file is suspected stale.
   **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that equality on a sample that includes a card gaining a solution and a card losing one.
+
+### Marking a node closed
+
+A node closes by opening with **`Closed <date>.`** followed by the evidence that met its
+acceptance — the recipe that exists, the count that reached zero, the commit that did it. These
+are bullets rather than checkboxes, so there is no box to tick and nothing else marks them; a
+finished node left unmarked stays the first ready node forever. On 2026-09-13 the three
+extraction nodes sat complete and unmarked for seven hours, and a worker re-read
+`extraction-detector` as ready, reimplemented nothing, and reported that this file was stale
+relative to the code. Closing finished work is what makes the rest of this file mean anything.
 
 ### Terminal nodes
 
