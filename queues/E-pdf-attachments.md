@@ -186,7 +186,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall83.pdf](assets/attachments/extracted/Fall83.md) (153L, 6 problems) — algebra — Fall 19
 
-- [ ] [Fall87.pdf](assets/attachments/extracted/Fall87.md) (105L, 2 problems) — algebra — Fall 19
+- [x] [Fall87.pdf](assets/attachments/extracted/Fall87.md) (105L, 2 problems) — Berkeley — prelim — Fall 1987 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1987`, with all 20 source positions represented in order. Eighteen source-local cards were added; Problem 13 reuses `P-BKF93-2` and Problem 19 reuses `P-BKS19-3B`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `2 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Fall89.pdf](assets/attachments/extracted/Fall89.md) (78L, 0 problems) — Berkeley — prelim — Fall 1989 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1989`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `applied-algebra` labels were stale heuristic metadata.
 
