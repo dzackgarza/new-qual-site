@@ -17,18 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let {fn } be a sequence of continuous real-valued functions on [0, 1] and suppose fn (x) converges to another real valued function f (x) at every x ∈ [0, 1]. (a) Prove that for every ε > 0 there is a dense subset D ⊂ [0, 1] such that if x ∈ D then there are an open interval I 3 x and a positive integer Nx such that for all n > Nx
+Problem 5. Let $\{f_n\}$ be a sequence of continuous real-valued functions on $[0,1]$ and suppose $f_n(x)$ converges to another real-valued function $f(x)$ at every $x\in[0,1]$.
 
-```
-                             sup |fn (y) − f (y)| ≤ .
-                             y∈I
-```
+(a) Prove that for every $\varepsilon>0$ there is a dense subset $D_\varepsilon\subset[0,1]$ such that if $x\in D_\varepsilon$, then there are an open interval $I\ni x$ and a positive integer $N_x$ such that for all $n>N_x$,
+\[
+\sup_{y\in I}|f_n(y)-f(y)|\le\varepsilon.
+\]
 
 Hint: Consider the closed sets
+\[
+F_{N,\varepsilon}=\{y\in[0,1]:|f_n(y)-f_m(y)|\le\varepsilon\text{ for all }n,m>N\}.
+\]
 
-```
-           FN, = {y ∈ [0, 1] : |fn (y) − fm (y)| ≤ , ∀n, m > N }.
-```
-
-(b) Prove that f cannot be the characteristic function χQ∩[0,1] where Q is the rational numbers.
+(b) Prove that $f$ cannot be the characteristic function $\chi_{\mathbb Q\cap[0,1]}$, where $\mathbb Q$ is the set of rational numbers.
 :::

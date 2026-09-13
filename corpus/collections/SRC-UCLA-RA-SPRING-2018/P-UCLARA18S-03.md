@@ -17,5 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Suppose f ∈ L1 (R) satisfies f (x)f (y) Z Z lim sup               2    2 dx dy < ∞. ε→0    R R |x − y| + ε Show that f = 0 almost everywhere.
+Problem 3. Suppose $f\in L^1(\mathbb R)$ satisfies
+\[
+\limsup_{\varepsilon\to0}\int_{\mathbb R}\int_{\mathbb R}
+\frac{|f(x)f(y)|}{|x-y|^2+\varepsilon^2}\,dx\,dy<\infty.
+\]
+Show that $f=0$ almost everywhere.
 :::

@@ -17,10 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let {µn } denote a sequence of Borel probability measures on R. For n ∈ N and x ∈ R we define
-
-```
-                       Fn (x) := µn (−∞, x] .
-```
-Suppose the sequence {Fn } converges uniformly on R. Show that then for every bounded continuous function f : R → R the numbers Z f (x) dµn (x) R converge as n → ∞.
+Problem 3. Let $\{\mu_n\}$ denote a sequence of Borel probability measures on $\mathbb R$. For $n\in\mathbb N$ and $x\in\mathbb R$ define
+\[
+F_n(x):=\mu_n(( -\infty,x]).
+\]
+Suppose the sequence $\{F_n\}$ converges uniformly on $\mathbb R$. Show that for every bounded continuous function $f:\mathbb R\to\mathbb R$, the numbers
+\[
+\int_{\mathbb R} f(x)\,d\mu_n(x)
+\]
+converge as $n\to\infty$.
 :::

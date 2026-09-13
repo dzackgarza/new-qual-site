@@ -17,8 +17,19 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let T be the unit circle in the complex plane C and for each α ∈ T define the rotation map Rα : T → T by Rα (z) = αz.
-A Borel probability measure µ on T is called α-invariant if µ(Rα (E)) = µ(E) for all Borel sets E ⊂ T. (a) Let m be Lebesgue measure on T (defined, for instance, by indentifying T with [0, 1) through the exponential function).
-Show that for every α ∈ T, m is α-invariant.
-(b) Prove that if α is not a root of unity, then the set of powers {αn : n ∈ Z} is dense in T. (c) Prove that, if we fix a single α ∈ T which is not a root of unity, then m is the only α-invariant Borel probability measure on T.
+Problem 4. Let $\mathbb T$ be the unit circle in the complex plane $\mathbb C$, and for each $\alpha\in\mathbb T$ define the rotation map $R_\alpha:\mathbb T\to\mathbb T$ by
+\[
+R_\alpha(z)=\alpha z.
+\]
+A Borel probability measure $\mu$ on $\mathbb T$ is called $\alpha$-invariant if
+\[
+\mu(R_\alpha(E))=\mu(E)
+\]
+for every Borel set $E\subset\mathbb T$.
+
+(a) Let $m$ be Lebesgue measure on $\mathbb T$ (defined, for instance, by identifying $\mathbb T$ with $[0,1)$ through the exponential function). Show that for every $\alpha\in\mathbb T$, $m$ is $\alpha$-invariant.
+
+(b) Prove that if $\alpha$ is not a root of unity, then the set of powers $\{\alpha^n:n\in\mathbb Z\}$ is dense in $\mathbb T$.
+
+(c) Prove that, if we fix a single $\alpha\in\mathbb T$ which is not a root of unity, then $m$ is the only $\alpha$-invariant Borel probability measure on $\mathbb T$.
 :::

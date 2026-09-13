@@ -18,13 +18,11 @@ audit:
 
 ::: {.problem}
 Problem 9. Consider the formal product
-                                ∞
-                                Y              z
-                                      1 + n1        1 − nz
-                                                             
-                                n=1
+\[
+\prod_{n=1}^{\infty}\left(1+\frac1n\right)^z\left(1-\frac zn\right).
+\]
 
-(a) Show that the product converges for any z ∈ (−∞, 0).
-(b) Show that the resulting function extends from this interval to an entire function
-of z ∈ C.
+(a) Show that the product converges for every $z\in(-\infty,0)$.
+
+(b) Show that the resulting function extends from this interval to an entire function of $z\in\mathbb C$.
 :::

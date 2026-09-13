@@ -17,6 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. For −1 < β < 1 evaluate Z ∞ xβ dx.
-0   1 + x2
+Problem 10. For $-1<\beta<1$, evaluate
+\[
+\int_0^\infty\frac{x^\beta}{1+x^2}\,dx.
+\]
 :::

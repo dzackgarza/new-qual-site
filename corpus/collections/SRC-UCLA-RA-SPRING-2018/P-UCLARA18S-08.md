@@ -17,5 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Determine the supremum of ∂u ∂x (0, 0) among all harmonic functions u : D → [0, 1], where D = {z ∈ C : |z| < 1}. Prove that your answer is correct.
+Problem 8. Determine the supremum of
+\[
+\left|\frac{\partial u}{\partial x}(0,0)\right|
+\]
+among all harmonic functions $u:\mathbb D\to[0,1]$, where
+\[
+\mathbb D=\{z\in\mathbb C:|z|<1\}.
+\]
+Prove that your answer is correct.
 :::

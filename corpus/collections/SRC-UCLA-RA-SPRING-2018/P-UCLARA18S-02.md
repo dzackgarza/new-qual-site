@@ -17,11 +17,20 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Given f ∈ L2 (R) and h > 0 we define 2f (x) − f (x + h) − f (x − h) Z Q(f, h) =                                    f (x) dx.
-R               h2 (a) Show that Q(f, h) ≥ 0   for all f ∈ L2 (R) and all h > 0. (b) Show that the set E = f ∈ L2 (R) : lim sup Q(f, h) ≤ 1
+Problem 2. Given $f\in L^2(\mathbb R)$ and $h>0$, define
+\[
+Q(f,h)=\int_{\mathbb R}\frac{2f(x)-f(x+h)-f(x-h)}{h^2}\,\overline{f(x)}\,dx.
+\]
 
-```
-                                              h→0
-```
-is closed in L (R).
+(a) Show that
+\[
+Q(f,h)\ge0
+\]
+for all $f\in L^2(\mathbb R)$ and all $h>0$.
+
+(b) Show that the set
+\[
+E=\left\{f\in L^2(\mathbb R):\limsup_{h\to0}Q(f,h)\le1\right\}
+\]
+is closed in $L^2(\mathbb R)$.
 :::

@@ -17,11 +17,18 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let T denote the unit circle in the complex plane and let P(T) denote the space of Borel probability measures on T and P(T × T) denote the space of Borel probability measures on T × T. Fix µ, ν ∈ P(T) and define n               ZZ                            Z               Z M = γ ∈ P(T × T) :            f (x)g(y) dγ(x, y) =     f (x) dµ(x) · g(y) dν(y) T×T                        T               T o for all f, g ∈ C(T) . Show that F : M → R defined by ZZ sin2 θ−φ   dγ eiθ , eiφ
-
-```
-               F (γ) =                    2
-                              T×T
-```
-achieves its minimum on M.
+Problem 6. Let $\mathbb T$ denote the unit circle in the complex plane, let $\mathcal P(\mathbb T)$ denote the space of Borel probability measures on $\mathbb T$, and let $\mathcal P(\mathbb T\times\mathbb T)$ denote the space of Borel probability measures on $\mathbb T\times\mathbb T$. Fix $\mu,\nu\in\mathcal P(\mathbb T)$ and define
+\[
+\mathcal M=\left\{\gamma\in\mathcal P(\mathbb T\times\mathbb T):
+\iint_{\mathbb T\times\mathbb T}f(x)g(y)\,d\gamma(x,y)
+=\int_{\mathbb T}f(x)\,d\mu(x)\int_{\mathbb T}g(y)\,d\nu(y)
+\text{ for all }f,g\in C(\mathbb T)\right\}.
+\]
+Show that $F:\mathcal M\to\mathbb R$ defined by
+\[
+F(\gamma)=\iint_{\mathbb T\times\mathbb T}
+\sin^2\!\left(\frac{\theta-\phi}{2}\right)
+\,d\gamma(e^{i\theta},e^{i\phi})
+\]
+achieves its minimum on $\mathcal M$.
 :::

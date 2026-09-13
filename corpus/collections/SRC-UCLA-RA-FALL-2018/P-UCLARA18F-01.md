@@ -17,8 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let {fn } be a sequence of real-valued Lebesgue measurable functions on R, and let f be another such function.
-Assume that (i) fn → f , Lebesgue almost everywhere, R (ii) R |x||fn (x)|dx ≤ 100, for all n, and (iii) R |fn (x)|2 dx ≤ 100, for all n. R
+Problem 1. Let $\{f_n\}$ be a sequence of real-valued Lebesgue measurable functions on $\mathbb R$, and let $f$ be another such function. Assume that
 
-Prove that fn ∈ L1 for all n, that f ∈ L1 , and that ||fn − f ||L1 → 0. Also show that neither assumption (ii) nor assumption (iii) can be omitted while making these deductions.
+1. $f_n\to f$ Lebesgue almost everywhere;
+2. $\displaystyle \int_{\mathbb R}|x|\,|f_n(x)|\,dx\le100$ for all $n$;
+3. $\displaystyle \int_{\mathbb R}|f_n(x)|^2\,dx\le100$ for all $n$.
+
+Prove that $f_n\in L^1$ for all $n$, that $f\in L^1$, and that
+\[
+\|f_n-f\|_{L^1}\to0.
+\]
+Also show that neither assumption 2 nor assumption 3 can be omitted while making these deductions.
 :::

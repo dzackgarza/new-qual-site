@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let f ∈ L2 (C). For z ∈ C we define
-|f (w)|
-Z g(z) =                          dA(w), {w∈C:|w−z|≤1} |w  − z| where dA denotes integration with respect to Lebesgue measure on C ∼ = R2 . Show that then |g(z)| < ∞ for almost every z ∈ C and that g ∈ L (C).
+Problem 6. Let $f\in L^2(\mathbb C)$. For $z\in\mathbb C$ define
+\[
+g(z)=\int_{\{w\in\mathbb C:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
+\]
+where $dA$ denotes integration with respect to Lebesgue measure on $\mathbb C\cong\mathbb R^2$. Show that $|g(z)|<\infty$ for almost every $z\in\mathbb C$ and that $g\in L^2(\mathbb C)$.
 :::

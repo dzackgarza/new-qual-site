@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let f , g, and h be complex-valued functions defined on C with f = g ◦ h. Show that if h is continuous, and both f and g are non-constant and holomorphic, then h is holomorphic as well.
+Problem 12. Let $f$, $g$, and $h$ be complex-valued functions defined on $\mathbb C$ with
+\[
+f=g\circ h.
+\]
+Show that if $h$ is continuous, and both $f$ and $g$ are non-constant and holomorphic, then $h$ is holomorphic as well.
 :::

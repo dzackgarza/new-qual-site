@@ -17,6 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let C∗ = C ∪ {∞} be the Riemann sphere and let Ω = C∗ \ {0, 1}. Let f : Ω → Ω be a holomorphic function.
-(a) Prove that if f is injective then f (Ω) = Ω. (b) Make a list of all such injective functions f .
+Problem 10. Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere and let
+\[
+\Omega=\mathbb C^*\setminus\{0,1\}.
+\]
+Let $f:\Omega\to\Omega$ be a holomorphic function.
+
+(a) Prove that if $f$ is injective then $f(\Omega)=\Omega$.
+
+(b) Make a list of all such injective functions $f$.
 :::

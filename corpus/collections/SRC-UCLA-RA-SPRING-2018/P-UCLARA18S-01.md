@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose f ∈ L1 (R) satisfies f (x + h) − f (x) Z lim sup                       dx = 0. h→0    R           h Show that f = 0 almost everywhere.
+Problem 1. Suppose $f\in L^1(\mathbb R)$ satisfies
+\[
+\limsup_{h\to0}\int_{\mathbb R}\left|\frac{f(x+h)-f(x)}{h}\right|\,dx=0.
+\]
+Show that $f=0$ almost everywhere.
 :::

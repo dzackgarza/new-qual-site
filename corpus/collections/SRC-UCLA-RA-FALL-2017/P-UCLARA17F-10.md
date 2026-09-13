@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let {fn } be a sequence of holomorphic functions on D with the property that ∞ X F (z) :=   |fn (z)|2 ≤ 1 n=1 for all z ∈ D. Show that the series defining F (z) converges uniformly on compact subsets of D and that F is subharmonic.
+Problem 10. Let $\{f_n\}$ be a sequence of holomorphic functions on $\mathbb D$ with the property that
+\[
+F(z):=\sum_{n=1}^{\infty}|f_n(z)|^2\le1
+\]
+for all $z\in\mathbb D$. Show that the series defining $F(z)$ converges uniformly on compact subsets of $\mathbb D$ and that $F$ is subharmonic.
 :::

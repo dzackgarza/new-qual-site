@@ -17,5 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let f ∈ L2 (R) and assume the Fourier transform satisfies |fˆ(ξ)| > 0 for Lebesgue almost every ξ ∈ R. Prove the set of finite linear combinations of the translates fy (x) = f (x − y) is norm dense in L2 (R).
+Problem 6. Let $f\in L^2(\mathbb R)$ and assume its Fourier transform satisfies
+\[
+|\widehat f(\xi)|>0
+\]
+for Lebesgue almost every $\xi\in\mathbb R$. Prove that the set of finite linear combinations of the translates
+\[
+f_y(x)=f(x-y)
+\]
+is norm dense in $L^2(\mathbb R)$.
 :::

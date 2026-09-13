@@ -17,9 +17,20 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. (a) Fix 1 < p < ∞. Show that Z r Z ρ f 7→ [M f ](x, y) = sup               f (x + h, y + `) dh d` r>0,ρ>0 4rρ −r −ρ
+Problem 4.
 
-is bounded on Lp (R2 ). (b) Show that Z r Z r2 1 Ar f (x, y) = 3                    f (x + h, y + `) dh d` 4r        −r   −r 2
+(a) Fix $1<p<\infty$. Show that
+\[
+f\mapsto [Mf](x,y)
+=\sup_{r>0,\rho>0}\frac1{4r\rho}
+\int_{-r}^{r}\int_{-\rho}^{\rho} f(x+h,y+\ell)\,dh\,d\ell
+\]
+is bounded on $L^p(\mathbb R^2)$.
 
-converges to f a.e. in the plane as r → 0.
+(b) Show that
+\[
+[A_rf](x,y)=\frac1{4r^3}
+\int_{-r}^{r}\int_{-r^2}^{r^2}f(x+h,y+\ell)\,dh\,d\ell
+\]
+converges to $f$ almost everywhere in the plane as $r\to0$.
 :::

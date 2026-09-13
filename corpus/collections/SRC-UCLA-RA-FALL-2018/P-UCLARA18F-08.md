@@ -17,12 +17,23 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let D be the space of Ranalytic functions f (z) on the unit disc D = {z : |z| < 1} such that f (0) = 0 and D |f 0 (z)|2 dxdy < ∞. (a) Prove D is complete in the norm Z                 1/2
-||f || =    |f 0 (z)|2 dxdy      .
-D
+Problem 8. Let $\mathcal D$ be the space of analytic functions $f(z)$ on the unit disc
+\[
+\mathbb D=\{z:|z|<1\}
+\]
+such that $f(0)=0$ and
+\[
+\int_{\mathbb D}|f'(z)|^2\,dx\,dy<\infty.
+\]
 
-```
-    P a necessary and sufficient condition on the coefficients an for the function
-```
-(b) Give f (z) = n≥1 an z n to belong to D.
+(a) Prove that $\mathcal D$ is complete in the norm
+\[
+\|f\|=\left(\int_{\mathbb D}|f'(z)|^2\,dx\,dy\right)^{1/2}.
+\]
+
+(b) Give a necessary and sufficient condition on the coefficients $a_n$ for the function
+\[
+f(z)=\sum_{n\ge1}a_nz^n
+\]
+to belong to $\mathcal D$.
 :::

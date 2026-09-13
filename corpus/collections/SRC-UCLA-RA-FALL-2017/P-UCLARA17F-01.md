@@ -17,5 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Suppose f : R → R is non-decreasing; specifically, for x, y ∈ R we have the implication x ≤ y =⇒ f (x) ≤ f (y). Show that if A ⊂ R is a Borel set, then so is f (A) = {f (x) : x ∈ A}.
+Problem 1. Suppose $f:\mathbb R\to\mathbb R$ is non-decreasing; specifically, for $x,y\in\mathbb R$ we have the implication
+\[
+x\le y \Longrightarrow f(x)\le f(y).
+\]
+Show that if $A\subset\mathbb R$ is a Borel set, then so is
+\[
+f(A)=\{f(x):x\in A\}.
+\]
 :::

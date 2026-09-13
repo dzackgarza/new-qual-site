@@ -17,10 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. If α ∈ C satisfies 0 < |α| < 1 and if n ∈ N = {1, 2, 3, ...} show that the equation
-
-```
-                              ez (z − 1)n = α
-```
-has exactly n simple roots in the half plane {z : Re z > 0}.
+Problem 12. If $\alpha\in\mathbb C$ satisfies $0<|\alpha|<1$ and if $n\in\mathbb N=\{1,2,3,\ldots\}$, show that the equation
+\[
+e^z(z-1)^n=\alpha
+\]
+has exactly $n$ simple roots in the half-plane
+\[
+\{z:\operatorname{Re}z>0\}.
+\]
 :::

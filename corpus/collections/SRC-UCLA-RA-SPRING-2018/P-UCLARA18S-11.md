@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. For R > 1 let AR be the annulus {1 < |z| < R}. Assume there is a conformal (i.e. injective, holomorphic) mapping F from AR1 onto AR2 . Prove that R1 = R2 .
+Problem 11. For $R>1$, let
+\[
+A_R=\{z\in\mathbb C:1<|z|<R\}.
+\]
+Assume there is a conformal (i.e. injective, holomorphic) mapping $F$ from $A_{R_1}$ onto $A_{R_2}$. Prove that $R_1=R_2$.
 :::

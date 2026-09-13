@@ -17,5 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let µ be a real-valued Borel measure on [0, 1] such that Z 1 dµ(t) = 0 for all x > 1. 0 x+t Show that µ = 0.
+Problem 5. Let $\mu$ be a real-valued Borel measure on $[0,1]$ such that
+\[
+\int_0^1\frac1{x+t}\,d\mu(t)=0
+\qquad\text{for all }x>1.
+\]
+Show that $\mu=0$.
 :::

@@ -17,10 +17,19 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let (X, ρ) be a compact metric space and let P (X) be the set of all probability measures on the Borel sigma-algebra of X (i.e. µ ∈ P (X) if µ is a positive Borel measure and µ(X) = 1). Assume {µn } is a sequence in P (X) and µ is another element of P (X) such that for all continuous f : X → R Z              Z f (x)dµn →      f (x)dµ (n → ∞). X               X Prove that
-
-```
-                         µn (E) → µ(E) (n → ∞)
-```
-whenever E is a Borel subset of X such that µ(E) = µ(E o ), where E is the closure of E and E o is the interior of E.
+Problem 3. Let $(X,\rho)$ be a compact metric space and let $\mathcal P(X)$ be the set of all probability measures on the Borel sigma-algebra of $X$. Assume $\{\mu_n\}$ is a sequence in $\mathcal P(X)$ and $\mu\in\mathcal P(X)$ such that, for every continuous $f:X\to\mathbb R$,
+\[
+\int_X f(x)\,d\mu_n\longrightarrow\int_X f(x)\,d\mu
+\qquad(n\to\infty).
+\]
+Prove that
+\[
+\mu_n(E)\to\mu(E)
+\qquad(n\to\infty)
+\]
+whenever $E$ is a Borel subset of $X$ such that
+\[
+\mu(\overline E)=\mu(E^\circ),
+\]
+where $\overline E$ is the closure of $E$ and $E^\circ$ is the interior of $E$.
 :::

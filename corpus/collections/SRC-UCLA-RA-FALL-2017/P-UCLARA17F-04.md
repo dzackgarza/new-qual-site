@@ -17,5 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Consider the Banach space V = C([−1, 1]) of all real-valued continu- ous functions on [−1, 1] equipped with the supremum norm defined as kf k = sup{|f (x)| : x ∈ [−1, 1]}   for f ∈ V . Let B = {f ∈ V : kf k ≤ 1} be the closed unit ball in V . Show that there exists a bounded linear functional Λ : V → R such that Λ(B) is an open subset of R.
+Problem 4. Consider the Banach space $V=C([-1,1])$ of all real-valued continuous functions on $[-1,1]$, equipped with the supremum norm
+\[
+\|f\|=\sup\{|f(x)|:x\in[-1,1]\},\qquad f\in V.
+\]
+Let
+\[
+B=\{f\in V:\|f\|\le1\}
+\]
+be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\mathbb R$ such that $\Lambda(B)$ is an open subset of $\mathbb R$.
 :::

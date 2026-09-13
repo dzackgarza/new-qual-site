@@ -17,5 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Show that a harmonic function u : D → R is uniformly continuous if and only if it admits the representation Z 2π  iθ 1           e + z  iθ u(z) =          Re iθ       f (e ) dθ, z ∈ D, 2π 0         e −z with f : ∂D → R continuous.
+Problem 8. Show that a harmonic function $u:\mathbb D\to\mathbb R$ is uniformly continuous if and only if it admits the representation
+\[
+u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i\theta}-z}\right)f(e^{i\theta})\,d\theta,
+\qquad z\in\mathbb D,
+\]
+with $f:\partial\mathbb D\to\mathbb R$ continuous.
 :::
