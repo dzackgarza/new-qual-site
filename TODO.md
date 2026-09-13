@@ -66,6 +66,17 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Keep a full rebuild available as its own recipe for when the file is suspected stale.
   **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that equality on a sample that includes a card gaining a solution and a card losing one.
 
+### Intake remaining vendored sources
+
+- **`pdf-source-intake`**. **Needs:** none.
+  Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
+  The queue is the live worklist; do not copy its count or filenames here.
+  For a problem-bearing PDF, create or reconcile the canonical collection and extract or reuse its problem cards with the PDF retained as provenance.
+  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
+  Read the retained extraction and, where extraction is unreliable, the source itself before deciding which case applies.
+  **Acceptance:** Queue E has no unchecked entry; every checked source has either a canonical collection/provenance route with its actual problems represented, or an explicit reference-only disposition justified by the source.
+  Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
+
 ### Marking a node closed
 
 A node closes by opening with **`Closed <date>.`** followed by the evidence that met its acceptance — the recipe that exists, the count that reached zero, the commit that did it.
@@ -91,10 +102,18 @@ They are not card instances; they run once the corpus work they follow is closed
   Where a contortion that exists only to silence a checker is genuinely warranted, it must be judged as significantly serving that goal, with the argument recorded explicitly in the commit message.
 
 - **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than closing.
-  Continually audit for unnecessary bloat, bad style and non-idiomatic constructions, LOC reduction opportunities, and anything hand-rolled that a dependency already provides — pandoc, the markdown toolchain, any Python library, anything at all.
-  Append every finding to `COMPLAINTS.md` as it is found, and repair at least one finding in the same turn that records it.
-  A pass that files findings and repairs none has not advanced this node, and a commit whose only content is a `COMPLAINTS.md` entry is not a unit of work.
-  The backlog may outrun the repairs, and the audit is never declared finished.
+  Each pass begins by rereading `AGENTS.md`, `CONTRIBUTING.md`, the current TODO contracts, and the relevant audit skills under `~/ai/opencode/skills/`: `addressing-shallow-work`, `policy-index`, `anti-slop`, `fixing-slop`, `bespoke-software-policy`, `code-patterns`, `thermo-nuclear-code-quality-review`, `brooks-audit`, `brooks-debt`, `test-guidelines`, `test-writing`, `known-solution-first`, `epistemic-integrity`, `reality-grounded-debugging`, `reviewing-llm-code`, `quality-control`, and `general-cleanup`. The skills are lenses, not a checklist: synthesize what this repository is trying to do before changing it.
+
+  Rotate interpretive audits across the publisher/tool architecture, proof-bearing tests, type and API design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-vs-authored boundaries, build/preview cost, and AI-slop patterns.
+  In particular, compare local parsing/rendering machinery against Pandoc and the existing markdown toolchain before polishing a bespoke mechanism that should disappear.
+  Inspect real public behavior and representative pages; source-text tests and formatting churn do not establish correctness.
+
+  A small, well-supported finding is repaired in the same pass and committed with its regression.
+  A finding whose scope is genuinely large becomes one or more concrete DAG nodes with explicit dependencies and behavioral acceptance before implementation continues.
+  Never create a node merely to record that an audit ran.
+  A full pass that finds no defensible change makes **no commit and no complaint entry**; that is successful evidence that the repository has converged under that lens, not permission to close this terminal node.
+  Later passes use different lenses and may revisit old ones after the code changes.
+  The loop is never declared finished.
 
 ## Content issues and policy violations build log
 
@@ -2125,8 +2144,10 @@ That is what cost the 962 lines recovered in `81373e972`. Consolidation in this 
   Real Analysis subset adjudicated 2026-09-11: `P-JHUFA11ANH` has mathematically identical parent proofs, differing only in paragraph formatting, so the retained version requires no change.
   `P-JVAGD` likewise has identical parent proofs; current `main` is strictly preferable because it also corrects the card title from the erroneous `\varphi''` to the source-correct `\varphi'`. No Real Analysis collision card remains to adjudicate under this item.
 
-- [ ] Retire the remaining worktrees.
-  All 25 are fully merged, so the only thing holding each one open is its own uncommitted work.
+- [x] Retire the remaining worktrees.
+  Closed 2026-09-13: `git worktree list --porcelain` now reports only the main checkout; no secondary worktree remains to recover or remove.
+  The historical recovery instructions below explain the completed consolidation and are retained as evidence.
+  All 25 were fully merged, so the only thing holding each one open was its own uncommitted work.
   `git worktree remove` preserves the branch; nine were retired this way, freeing 3.7G. For each of the rest, commit the modified cards onto its branch, merge that branch, then remove the worktree:
 
   ```
