@@ -17,6 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let D be the closed unit disc in the complex plane, let {pn } be distinct points in the open disc D and let rn > 0 be such that the discs Dn = {z : |z − pn | ≤ rn } satisfy (i) Dn ⊂ D; (ii) Dn ∩ Dm = ∅ if n 6= m; and P (iii)   rn < ∞. S Prove X = D \ n Dn has positive area.
-Hint: For −1 < x < 1 consider #{n : Dn ∩ {Rez = x} = 6 ∅}.
+Let $D$ be the closed unit disk in $\mathbb C$, let $\{p_n\}$ be distinct points in the open disk, and let $r_n>0$ be such that the disks
+\[
+D_n=\{z:|z-p_n|\le r_n\}
+\]
+satisfy (i) $D_n\subset D$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
+\[
+X=D\setminus\bigcup_n D_n
+\]
+has positive area.
+
+Hint: for $-1<x<1$ consider $\#\{n:D_n\cap\{\operatorname{Re}z=x\}\ne\varnothing\}$.
 :::

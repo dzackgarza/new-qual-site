@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let fn : [0, 1] → [0, ∞) be a sequence of functions, each of which is non-decreasing on the interval [0, 1]. Suppose the sequence is uniformly bounded in L2 ([0, 1]). Show that there exists a subsequence that converges in L1 ([0, 1]).
+Let $f_n:[0,1]\to[0,\infty)$ be a sequence of functions, each non-decreasing on $[0,1]$. Suppose the sequence is uniformly bounded in $L^2([0,1])$. Show that there exists a subsequence that converges in $L^1([0,1])$.
 :::

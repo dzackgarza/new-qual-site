@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let 1 ≤ p < ∞ and let U (z) be a harmonic function on the complex plane C such that ZZ
-|U (x + iy)|p dxdy < ∞.
-R×R Prove U (z) = 0 for all z = x + iy ∈ C.
+Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\mathbb C$ such that
+\[
+\iint_{\mathbb R\times\mathbb R}|U(x+iy)|^p\,dx\,dy<\infty.
+\]
+Prove that $U(z)=0$ for all $z=x+iy\in\mathbb C$.
 :::

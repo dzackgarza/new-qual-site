@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let K ⊂ R be a compact set of positive measure and let f ∈ L∞ (R). Show that the function                 Z F (x) =        f (x + t) dt
-|K| K
-is uniformly continuous on R. Here |K| denotes the Lebesgue measure of K.
+Let $K\subset\mathbb R$ be a compact set of positive measure and let $f\in L^\infty(\mathbb R)$. Show that
+\[
+F(x)=\frac1{|K|}\int_K f(x+t)\,dt
+\]
+is uniformly continuous on $\mathbb R$. Here $|K|$ denotes the Lebesgue measure of $K$.
 :::

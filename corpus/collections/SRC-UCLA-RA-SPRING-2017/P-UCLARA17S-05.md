@@ -17,6 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let dµ be a finite complex Borel measure on [0, 1] such that Z 1 µ̂(n) =      e2πinx dµ(x) → 0 as n → ∞. Let dν be a finite complex Borel measure on [0, 1] that is absolutely continuous with respect to dµ.
-Show that ν̂(n) → 0     as n → ∞.
+Let $d\mu$ be a finite complex Borel measure on $[0,1]$ such that
+\[
+\widehat\mu(n)=\int_0^1 e^{2\pi i n x}\,d\mu(x)\to0\qquad(n\to\infty).
+\]
+Let $d\nu$ be a finite complex Borel measure on $[0,1]$ absolutely continuous with respect to $d\mu$. Show that
+\[
+\widehat\nu(n)\to0\qquad(n\to\infty).
+\]
 :::

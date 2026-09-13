@@ -17,6 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let a1 , . . . , an be n ≥ 1 distinct points in C and let Ω = C\
-{a1 , . . . , an }. Let H(Ω) be the vector space of real-valued harmonic functions on Ω and let R(Ω) ⊂ H(Ω) be the space of real parts of analytic functions on Ω. Prove H(Ω the quotient space R(Ω)       has dimension n, find a basis for this space, and prove it is a basis.
+Let $a_1,\dots,a_n$ be $n\ge1$ distinct points in $\mathbb C$ and let
+\[
+\Omega=\mathbb C\setminus\{a_1,\dots,a_n\}.
+\]
+Let $H(\Omega)$ be the vector space of real-valued harmonic functions on $\Omega$ and let $R(\Omega)\subset H(\Omega)$ be the space of real parts of analytic functions on $\Omega$. Prove that the quotient space
+\[
+H(\Omega)/R(\Omega)
+\]
+has dimension $n$, find a basis for this space, and prove it is a basis.
 :::
