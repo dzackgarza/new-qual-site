@@ -366,7 +366,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005
 
-- [ ] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007
+- [x] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007 — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Fall 2007, solution packet; already canonical as `SRC-BERKELEY-PRELIM-FALL-2007`, whose provenance is this PDF and whose 18 cards represent Problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
 - [x] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the UC Berkeley Graduate Preliminary Examination, Fall 2014; already canonical as `SRC-BERKELEY-PRELIM-FALL-2014`, which retains both exam and solution PDFs as provenance and contains all 18 source-order problems 1A–9A and 1B–9B.
 
