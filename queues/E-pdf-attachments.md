@@ -296,7 +296,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata
 
-- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — reclassified 2026-09-09: UCLA Basic Exam mixing linear algebra, analysis, ODEs, and related prelim subjects.
+- [x] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — disposition 2026-09-13: ingested as `SRC-UCLA-BASIC-SPRING-2007` with twelve source-order problem cards `P-UCLAB07S-01` through `P-UCLAB07S-12`; the retained PDF is collection provenance.
 
 - [x] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08 — disposition 2026-09-13: identified from the retained PDF and checked extraction as the UCLA Basic Examination, Fall 2008; ingested as `SRC-UCLA-BASIC-FALL-2008` with twelve source-order problem cards `P-UCLAB08F-01` through `P-UCLAB08F-12`. The inventory `0 problems` count was a false negative.
 
