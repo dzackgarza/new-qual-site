@@ -12,5 +12,5 @@ review: draft
 ---
 
 ::: {.problem}
-If A is the ring of n × n matrices with entries in a field K, show that the only two-sided ideals of A are A itself and 0.
+If $A$ is the ring of $n\times n$ matrices with entries in a field $K$, show that the only two-sided ideals of $A$ are $A$ itself and $0$.
 :::
