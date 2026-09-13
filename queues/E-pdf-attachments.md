@@ -252,7 +252,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring96.pdf](assets/attachments/extracted/Spring96.md) (101L, 0 problems) — algebra — Spring 19
 
-- [ ] [Spring97.pdf](assets/attachments/extracted/Spring97.md) (79L, 4 problems) — topology — Spring 19
+- [x] [Spring97.pdf](assets/attachments/extracted/Spring97.md) (79L, 4 problems) — Berkeley — prelim — Spring 1997 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1997`, with Problems 1–18 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `topology` labels were stale heuristic metadata.
 
 - [x] [Spring98.pdf](assets/attachments/extracted/Spring98.md) (77L, 0 problems) — Berkeley — prelim — Spring 1998 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1998`, with Problems 1–18 represented in source order. The damaged matrix entry in Problem 9 was verified directly against the PDF page. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `algebra` labels were stale heuristic metadata.
 
