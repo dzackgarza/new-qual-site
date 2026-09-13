@@ -1728,203 +1728,203 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANF.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANG.md
 - [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-september-2011-pp-22-23/P-JHUFA11ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-3A7RU.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-6Y3IL.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT47.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT48.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT49.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT50.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-HKZVN.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-XYYHG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAI.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAJ.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAK.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67RA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67RA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08AND.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANG.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANH.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-2AO23.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-8XT02.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-8XT03.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-OZXQA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-PGDPX.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-Y3MQA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-YP3XF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT04.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT05.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT06.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT07.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-G62KK.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-JHUFA14CA5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-MFYGZ.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-OEFYN.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-5CQNK.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT08.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT09.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT10.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT11.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-O3LYK.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-WVJBX.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT12.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT13.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT14.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-GKGSD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-JKYJU.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-MW6OS.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT15.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT16.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT17.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT18.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT19.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-AZ2FY.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT22.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT23.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT24.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT25.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT26.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-TCUDY.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-WCDZA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-YZBES.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-4NYI7.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT27.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT28.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT29.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT30.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT31.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT32.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-MSHRB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT33.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT34.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT35.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT36.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT38.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT39.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-NRCTX.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT43.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT44.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT45.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT46.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-JVAGD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-WMJZB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-7QJS2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8RA17.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT20.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT21.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PAQ4K.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PCOHF.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-RGBUN.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-T7IKN.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-4XNZ6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8CA35.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT40.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT41.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT42.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-EA67C.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-KA5KL.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAE.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAA.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAB.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAC.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAD.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B7.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A4.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A5.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A6.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A7.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C1.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C2.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C3.md
-- [ ] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2005-p-44/P-JHUSP05ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-3A7RU.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-6Y3IL.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT47.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT48.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT49.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-8XT50.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-HKZVN.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/analysis-qualifying-exam-spring-2019-p-3/P-XYYHG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2001-p-55/P-JHUFA01CAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAI.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAJ.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-fall-2002-p-50/P-JHUFA02CAK.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2001-p-57/P-JHUSP01CAF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/complex-analysis-core-qualifying-exam-spring-2002-p-52/P-JHUSP02CAF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45CA4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-4-5/P-JHUU45RA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67CA4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67RA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/johns-hopkins-university-department-of-mathematics-real-and-complex-analysis-undated-pp-6-7/P-JHUU67RA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-fall-2008-p-34/P-JHUFA08ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2007-p-37/P-JHUSP07ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08AND.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANG.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/problems-for-analysis-qualifying-exam-spring-2008-p-35/P-JHUSP08ANH.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-2AO23.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-8XT02.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-8XT03.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-OZXQA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-PGDPX.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-Y3MQA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2013-p-16/P-YP3XF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT04.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT05.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT06.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-8XT07.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-G62KK.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-JHUFA14CA5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-MFYGZ.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2014-p-14/P-OEFYN.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-5CQNK.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT08.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT09.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT10.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-8XT11.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-O3LYK.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2015-p-12/P-WVJBX.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT12.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT13.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-8XT14.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-GKGSD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-JKYJU.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2016-p-10/P-MW6OS.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT15.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT16.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT17.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT18.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-8XT19.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-fall-2017-p-8/P-AZ2FY.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT22.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT23.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT24.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT25.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-8XT26.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-TCUDY.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-WCDZA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-may-2013-pp-17-18/P-YZBES.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-4NYI7.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT27.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT28.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT29.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT30.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT31.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-8XT32.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15/P-MSHRB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT33.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT34.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT35.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT36.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT38.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-8XT39.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-NRCTX.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT43.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT44.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT45.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT46.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-JVAGD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-WMJZB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-7QJS2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8RA17.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT20.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT21.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PAQ4K.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PCOHF.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-RGBUN.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-T7IKN.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-4XNZ6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8CA35.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT40.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT41.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT42.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-EA67C.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-KA5KL.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-p-51/P-JHUU51RA6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-spring-2001-p-56/P-JHUSP01RAE.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAA.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAB.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAC.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/spring-2003-complex-analysis-qualifying-exam-p-48/P-JHUSP03CAD.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-seven-problems-syllabus-instructions/P-JHU4547B7.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A4.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A5.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A6.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-and-a-half-hours-seven-problems/P-JHU4547A7.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C1.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C2.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C3.md
+- [x] corpus/collections/SRC-JHU-ANALYSIS-EXAMS/undated-analysis-exam-two-hours-six-questions/P-JHU4547C5.md
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/P-KSRING17-001.md
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/P-KSRING17-002.md
 - [ ] corpus/collections/SRC-KENT-STATE-RING-THEORY-QUAL-2017/P-KSRING17-003.md
@@ -2672,36 +2672,36 @@ Unchecked entries await full-file reading. Checked entries record an independent
 - [x] corpus/collections/SRC-PRELIM-PRACTICE-WEEK6-2020/P-PRACT20-W6-26.md
 - [x] corpus/collections/SRC-PRELIM-PRACTICE-WEEK6-2020/P-PRACT20-W6-27.md
 - [x] corpus/collections/SRC-PRELIM-PRACTICE-WEEK6-2020/index.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-HOUMA.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-I73ZD.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-PUYFS.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-11.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-12.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-13.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW1.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW2.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW3.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW4.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW5.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-VACDU.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-YACKS.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-A4O6K.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-C3MKZ.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-GGJ5N.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-MCFQT.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-PJY52.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-12.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-13.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-14.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-15.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-16.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW1.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW2.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW3.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW4.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW5.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RAYX2.md
-- [ ] corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions/P-RA-WORKSHOP-D4-06.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-HOUMA.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-I73ZD.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-PUYFS.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-11.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-12.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-13.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW1.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW2.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW3.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW4.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-RA-WORKSHOP-D2-METRIC-HW5.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-VACDU.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology/P-YACKS.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-A4O6K.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-C3MKZ.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-GGJ5N.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-MCFQT.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-PJY52.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-12.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-13.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-14.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-15.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-16.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW1.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW2.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW3.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW4.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RA-WORKSHOP-D3-SEQ-HW5.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series/P-RAYX2.md
+- [x] corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions/P-RA-WORKSHOP-D4-06.md
 - [ ] corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions/P-RA-WORKSHOP-D4-07.md
 - [ ] corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions/P-RA-WORKSHOP-D4-08.md
 - [ ] corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions/P-RA-WORKSHOP-D4-09.md
