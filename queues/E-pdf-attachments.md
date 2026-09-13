@@ -170,7 +170,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — UNL — alg-geom — FALL 2011
 
-- [ ] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — complex-analysis
+- [x] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — complex-analysis — reference sheet — disposition 2026-09-13: treated as Robert Won's expository complex-analysis qualifying-exam review sheet, not a posed problem source. The inventory's `99 problems` are numbered facts, observations, and theorem statements. Enriched its existing entry in `wiki/complex-analysis/resources/books-notes.md` with the sheet's actual organization and mathematical scope; no problem cards were manufactured.
 
 ## Preliminary exams (47)
 

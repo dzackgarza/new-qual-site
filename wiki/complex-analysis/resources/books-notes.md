@@ -55,7 +55,7 @@ order: 0
 
 - [Stanford Math Camp complex-analysis review](http://web.stanford.edu/~yuvalwig/math/teaching/ComplexAnalysisNotes.pdf)
 
-- [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
+- [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]] — compact qualifying-exam review organized as useful identities, problem-solving observations, theorem lists, special functions, analytic continuation, complex manifolds, and harmonic-function results including the Dirichlet problem and Harnack theory.
 
 - [[attachments/Complex_Qual_Notes.pdf|Josh Swanson, *2013 Complex Prelim Notes* (September 6, 2013)]] — qualifying-exam review notes covering basic mapping theorems, Cauchy and Poisson formulas, analytic extension, root counting, approximation, normal families, harmonic and subharmonic functions, inequalities, series and products, analytic continuation, residues, and conformal maps. Swanson records Marshall’s notes as the principal source, with Ahlfors, Gamelin, and Rudin also consulted.
 
