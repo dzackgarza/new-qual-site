@@ -692,3 +692,19 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the exact matrix entries cannot be recovered from the retained markdown without inventing layout/content, so a reconstructed matrix would be unsafe source data.
 - **Uncertainty:** the retained PDF may still contain a readable display, but repository policy permits PDF extraction only through `mineru-open-api`, which is unavailable on this host; repository history and public-source searches did not supply an independent transcription.
 - **Repair:** `P-UGAP08F-04` preserves the surviving task and explicitly marks the matrix display unrecovered rather than guessing entries.
+
+### Berkeley Fall 1996 Problem 8 loses part of its displayed binomial coefficient
+
+- **Object and need:** `P-BKF96-8`, Berkeley Preliminary Exam Fall 1996, Problem 8; the problem asks to prove that the denominator of a displayed generalized binomial coefficient is a power of two.
+- **Observed evidence:** `assets/attachments/extracted/Fall96.md` preserves the display only as `\left({1\atop n}\right)`, which makes the stated denominator claim trivial and therefore indicates lost source content in the numerator. No independent repository transcription of this problem was found.
+- **Impact and owner:** the exact generalized binomial coefficient cannot be recovered from the retained extraction without inventing a plausible numerator.
+- **Uncertainty:** related standard identities suggest likely intended expressions, but they are not source evidence and therefore are not used to repair the card.
+- **Repair:** `P-BKF96-8` preserves the surviving request and marks the displayed coefficient unrecovered rather than guessing it.
+
+### Berkeley Fall 1996 Problem 15 leaves epsilon undefined
+
+- **Object and need:** `P-BKF96-15`, Berkeley Preliminary Exam Fall 1996, Problem 15; the problem asks whether a real matrix has a prescribed twentieth power.
+- **Observed evidence:** the retained extraction displays the target matrix as `diag(-1,-1-\varepsilon)` but contains no definition, range, or quantifier for `\varepsilon`. No independent repository transcription supplying the missing condition was found.
+- **Impact and owner:** the answer can depend on what the source intended for `\varepsilon`, so silently imposing a sign or size condition would change the problem.
+- **Uncertainty:** the symbol itself is legible; what is missing is its source condition.
+- **Repair:** `P-BKF96-15` preserves the displayed matrix and explicitly records the undefined parameter rather than supplying an inferred condition.
