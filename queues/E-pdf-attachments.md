@@ -420,7 +420,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19
 
-- [ ] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012
+- [x] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012 — disposition 2026-09-13: identified from the PDF itself as the Amherst College Department of Mathematics and Statistics **Study Guide for Algebra**, September 2016. The inventory metadata and `11 problems` count were stale: the guide contains 31 numbered old-exam examples with worked proofs. Ingested as `SRC-AMHERST-ALGEBRA-STUDY-GUIDE-2016`, with source-order cards `P-AMH-ALG-SG16-01` through `P-AMH-ALG-SG16-31` grouped by the guide's group/permutation/ring/polynomial sections.
 
 - [x] [Summer80.pdf](assets/attachments/extracted/Summer80.md) (163L, 13 problems) — complex-analysis — Summer 19 — disposition 2026-09-12: Berkeley Preliminary Exam, Summer 1980, ingested as `SRC-BERKELEY-PRELIM-SUMMER-1980` with twenty source-order cards `P-BERK80S-01` through `P-BERK80S-20`. The inventory count of 13 was incomplete; the PDF explicitly contains Problems 1–20. OCR-sensitive matrix equations in Problems 2 and 14 are preserved/checked against rendered PDF source pages.
 
