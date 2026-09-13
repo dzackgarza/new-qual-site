@@ -316,7 +316,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-12S.pdf](assets/attachments/extracted/basic-12S.md) (75L, 0 problems) — UCLA — WINTER 2012
 
-- [ ] [basic-13F.pdf](assets/attachments/extracted/basic-13F.md) (75L, 12 problems) — UCLA — applied-algebra — Fall 2013
+- [x] [basic-13F.pdf](assets/attachments/extracted/basic-13F.md) (75L, 12 problems) — UCLA — applied-algebra — Fall 2013 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Fall 2013; already canonical as `SRC-UCLA-BASIC-FALL-2013`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB13F-01` through `P-UCLAB13F-12` match Problems 1–12.
 
 - [x] [basic-13S.pdf](assets/attachments/extracted/basic-13S.md) (101L, 12 problems) — UCLA — alg-geom — Spring 2013 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Spring 2013; already canonical as `SRC-UCLA-BASIC-SPRING-2013`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB13S-01` through `P-UCLAB13S-12` match Problems 1–12.
 
