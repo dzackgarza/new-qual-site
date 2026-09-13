@@ -1412,23 +1412,67 @@ div.panel > ul {
   }
 }
 
-.random-problem-widget {
-  margin: 1.5rem 0;
+.header-random-problem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-.random-problem-widget select {
-  display: block;
-  min-width: 13rem;
-  margin-top: 0.25rem;
-  padding: 0.45rem;
+.header-random-problem label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.header-random-problem select,
+.header-random-problem button {
+  height: 2.15rem;
+  padding: 0.35rem 0.55rem;
   border: 1px solid var(--line);
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
   background: var(--paper);
   color: var(--ink);
 }
 
+.header-random-problem select {
+  max-width: 11.5rem;
+}
+
+.header-random-problem button {
+  cursor: pointer;
+}
+
 .random-problem-status {
-  align-self: center;
-  color: var(--muted);
-  font-size: var(--label);
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+@media (max-width: 70rem) {
+  .header-random-problem label {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (max-width: 56rem) {
+  .header-random-problem {
+    order: 3;
+    width: 100%;
+  }
+
+  .header-random-problem select {
+    flex: 1;
+    max-width: 16rem;
+  }
+
+  .site-links {
+    order: 4;
+  }
 }

@@ -122,6 +122,40 @@ def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, mon
     assert source[0].find_all("svg") != []
 
 
+def test_random_problem_topic_selector_is_in_the_shared_header(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    routes = (
+        Path("index.html"),
+        Path("tag/PRB-INDEXP.html"),
+        Path("wiki/algebra/index.html"),
+        Path("404.html"),
+    )
+    for route in routes:
+        page = read_html(site / route)
+        header = page.root.find_all("header", **{"class": "site-header"})
+        assert len(header) == 1, route
+        forms = header[0].find_all("form", id="random-problem")
+        assert len(forms) == 1, route
+        selects = forms[0].find_all("select", id="random-problem-topic")
+        assert len(selects) == 1, route
+        options = selects[0].find_all("option")
+        assert [(option.attrs["value"], option.text) for option in options] == [
+            ("", "Choose topic"),
+            ("algebra", "Algebra"),
+            ("complex-analysis", "Complex Analysis"),
+            ("real-analysis", "Real Analysis"),
+            ("topology", "Topology"),
+        ]
+
+    app = (site / "app.js").read_text()
+    assert "problemData.rows.filter((row) => row.areas.includes(areaName))" in app
+    assert "window.location.assign(new URL(problem.url, siteRoot).href)" in app
+
+
 def test_problem_lists_survive_display_math_and_keep_nested_items(tmp_path: Path) -> None:
     """Display math inside one item must not flatten the authored list to prose."""
     card = r"""---

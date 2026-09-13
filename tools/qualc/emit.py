@@ -1377,6 +1377,7 @@ def write_json_pages(
     mathjax: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
+    random_problem_topics: dict[str, str],
 ) -> None:
     """Convert every tag page independently through one persistent server."""
     documents = [
@@ -1423,6 +1424,7 @@ def write_json_pages(
             link_targets,
             assets,
             StandardPage(role),
+            random_problem_topics,
         )
 
 
@@ -1521,6 +1523,7 @@ def write_pages(
     mathjax: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
+    random_problem_topics: dict[str, str],
 ) -> None:
     """Front matter is machine-read data; the body is prose.
 
@@ -1564,6 +1567,7 @@ def write_pages(
             link_targets,
             assets,
             navigation,
+            random_problem_topics,
         )
 
 
@@ -2012,35 +2016,9 @@ def card_guide_appearances(
     return guide_appearances
 
 
-def _front_page_random_problem(
-    area_names: dict[str, str],
-) -> pf.RawBlock:
-    """Choose one top-level subject and jump to one random problem in it."""
-    choices = sorted(
-        area_names.items(),
-        key=lambda item: item[1].casefold(),
-    )
-    options = "".join(
-        f'<option value="{html.escape(area, quote=True)}" data-area-name="{html.escape(title, quote=True)}">{html.escape(title)}</option>' for area, title in choices
-    )
-    return pf.RawBlock(
-        '<form id="random-problem" class="practice-actions random-problem-widget" data-problems-url="problems.json">'
-        '<label for="random-problem-topic">Topic'
-        '<select id="random-problem-topic" required>'
-        '<option value="" selected disabled>Choose a topic</option>'
-        f"{options}"
-        "</select></label>"
-        '<button type="submit">Random problem</button>'
-        '<span id="random-problem-status" class="random-problem-status" role="status" aria-live="polite"></span>'
-        "</form>",
-        format="html",
-    )
-
-
 def index_page(
     pandoc: PandocServer,
     con: sqlite3.Connection,
-    area_names: dict[str, str],
 ) -> Page:
     # Every number is counted off the catalog. A figure written into the copy
     # is true on the day it is written and silently false afterwards.
@@ -2079,9 +2057,7 @@ def index_page(
         ),
         "index-page read",
     )
-    blocks = list(from_ast(output[0]).content)
-    blocks.append(_front_page_random_problem(area_names))
-    return {"title": "Qual Corpus"}, blocks
+    return {"title": "Qual Corpus"}, list(from_ast(output[0]).content)
 
 
 # Separates multi-valued facet terms in HTML data attributes. Topics are free
@@ -2612,6 +2588,7 @@ def project(
         mathjax,
         link_targets,
         assets,
+        area_names,
     )
 
     pages: list[PageItem] = []
@@ -2682,6 +2659,7 @@ title: Practice problems
         link_targets,
         assets,
         StandardPage(Listing()),
+        area_names,
     )
 
     write_page(
@@ -2693,6 +2671,7 @@ title: Practice problems
         link_targets,
         assets,
         NotFoundPage(),
+        area_names,
     )
 
     for guide in guides:
@@ -2754,7 +2733,7 @@ title: Practice problems
             StandardPage(Listing()),
         ),
     )
-    pages.append((index_page(pandoc, con, area_names), out / "index.qmd", StandardPage(Listing())))
+    pages.append((index_page(pandoc, con), out / "index.qmd", StandardPage(Listing())))
     write_pages(
         pandoc,
         pages,
@@ -2762,6 +2741,7 @@ title: Practice problems
         mathjax,
         link_targets,
         assets,
+        area_names,
     )
     if wiki_pages:
         cards = {row["id"]: row for row in _rows(con, "select * from cards")}
@@ -2790,5 +2770,6 @@ title: Practice problems
                 mathjax,
                 link_targets,
                 assets,
+                area_names,
             )
     con.close()

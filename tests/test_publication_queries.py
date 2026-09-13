@@ -371,34 +371,3 @@ def test_a_guide_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
         ("Guides", "../guides.html"),
         ("Topology", "GUIDE-TOPOLOGY.html"),
     ]
-
-
-def test_the_front_page_random_problem_widget_uses_top_level_topics(tmp_path: Path) -> None:
-    """The home page chooses one subject and hands one problem to the reader."""
-    work = fixture_repo(tmp_path)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
-    home = read_html(site / "index.html")
-    forms = home.root.find_all("form", id="random-problem")
-    assert len(forms) == 1
-    form = forms[0]
-    assert form.attrs["data-problems-url"] == "problems.json"
-    selects = form.find_all("select", id="random-problem-topic")
-    assert len(selects) == 1
-    options = selects[0].find_all("option")
-    assert [(option.attrs["value"], option.text) for option in options] == [
-        ("", "Choose a topic"),
-        ("algebra", "Algebra"),
-        ("complex-analysis", "Complex Analysis"),
-        ("real-analysis", "Real Analysis"),
-        ("topology", "Topology"),
-    ]
-    buttons = form.find_all("button")
-    assert [(button.attrs["type"], button.text) for button in buttons] == [("submit", "Random problem")]
-    # The widget navigates to a card; it is not the browser's multi-problem sampler.
-    assert home.root.find_all("section", id="practice-sheet") == []
-    app = (site / "app.js").read_text()
-    assert "problemData.rows.filter((row) => row.areas.includes(areaName))" in app
-    assert "window.location.assign(new URL(problem.url, siteRoot).href)" in app
