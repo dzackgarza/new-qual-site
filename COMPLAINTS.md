@@ -684,3 +684,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** guessing the fourth entry would manufacture source mathematics. The problem card therefore cannot be self-contained until the display is recovered from a permitted source representation.
 - **Uncertainty:** the complete matrix is expected to remain visible in the retained PDF, but the repository-mandated `mineru-open-api` extractor is unavailable on this host and no prohibited substitute extractor was used.
 - **Repair:** `P-BKS80-9` preserves the centralizer question and explicitly refers to the matrix displayed in the source exam; no matrix entry or numerical specialization was invented.
+
+### UGA Fall 2008 Problem 4 loses its displayed matrix in the retained extraction
+
+- **Object and need:** `P-UGAP08F-04`, UGA Mathematics Preliminary Examination Fall 2008, Problem 4; the problem asks to diagonalize a displayed matrix and compute its nineteenth power.
+- **Observed evidence:** `assets/attachments/extracted/grad_prelim_Fall08.md` declares a three-column array but emits four entry fields per row, including blank fields. The same malformed text is present in the extraction commit history, and no independent corpus statement of this matrix was found.
+- **Impact and owner:** the exact matrix entries cannot be recovered from the retained markdown without inventing layout/content, so a reconstructed matrix would be unsafe source data.
+- **Uncertainty:** the retained PDF may still contain a readable display, but repository policy permits PDF extraction only through `mineru-open-api`, which is unavailable on this host; repository history and public-source searches did not supply an independent transcription.
+- **Repair:** `P-UGAP08F-04` preserves the surviving task and explicitly marks the matrix display unrecovered rather than guessing entries.

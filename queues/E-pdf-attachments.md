@@ -202,7 +202,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall99.pdf](assets/attachments/extracted/Fall99.md) (64L, 0 problems) — applied-algebra — Fall 19
 
-- [ ] [grad_prelim_Fall08.pdf](assets/attachments/extracted/grad_prelim_Fall08.md) (47L, 8 problems) — complex-analysis — August 12
+- [x] [grad_prelim_Fall08.pdf](assets/attachments/extracted/grad_prelim_Fall08.md) (47L, 8 problems) — UGA — prelim — Fall 2008 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-FALL-2008`, with all 8 source positions represented in order: 7 new cards plus exact reuse of `P-UGAP13F-06` for Problem 3. Problem 4 retains an explicit source gap because the displayed matrix is malformed in the retained extraction and repository history provides no independent recovery; no entries were guessed. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series.
 
 - [x] [grad_prelim_Fall09.pdf](assets/attachments/extracted/grad_prelim_Fall09.md) (53L, 0 problems) — UGA — prelim — Fall 2009 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-FALL-2009`, with all 8 top-level numbered problems represented in source order. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series. The inventory's `0 problems` and `no metadata` labels were stale heuristic metadata.
 
