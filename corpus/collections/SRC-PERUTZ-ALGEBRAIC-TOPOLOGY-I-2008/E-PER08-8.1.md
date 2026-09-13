@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Think of $S^2$ as a tetrahedron, i.e. a $\Delta$-complex with four $2$-simplices, six $1$-simplices and four $0$-simplices. Show that for this structure
+Think of $S^2$ as a tetrahedron, i.e. a $\Delta$-complex with four $2$-simplices, six $1$-simplices and four $0$-simplices.
+Show that for this structure
 \[
 H_0^{\mathrm{simp}}(S^2)=\mathbb Z,\qquad
 H_1^{\mathrm{simp}}(S^2)=0,\qquad

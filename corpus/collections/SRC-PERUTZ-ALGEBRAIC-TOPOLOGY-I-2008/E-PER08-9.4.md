@@ -19,7 +19,8 @@ with differential
 \[
 d_{\operatorname{cone}(a)}(x,y)=-d_Ax+a(x)+d_By
 \]
-(check that this squares to zero). The point of this construction is to convert questions about chain maps to questions about chain complexes.
+(check that this squares to zero).
+The point of this construction is to convert questions about chain maps to questions about chain complexes.
 
 (i) Show that the induced map on homology, $a_\ast=H(a):H_\ast(A)\to H_\ast(B)$, is an isomorphism iff $H(\operatorname{cone}(a)_\ast)=0$.
 
