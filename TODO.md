@@ -36,11 +36,11 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   It belongs beside `tools/unsolved_queue.py` with a `just` recipe, not in a scratch script.
   Then wire it into `test-commit` as a private gate, because a report depends on someone choosing to read it and this defect has already recurred once after being repaired: on 2026-09-13 a worker restored 32 UCLA statements and staged 32 fresh Amherst cards carrying the same defect within the hour.
   The gate inspects only staged card files and refuses two things — a newly added card whose problem block has the defect, and a modified card whose count of it rose against `HEAD`. Touching one of the existing damaged cards for an unrelated reason stays allowed; making it worse does not.
-  **Acceptance:** the recipe runs over the corpus and reports a count; the 182 cards at the time of writing are its baseline, and its output is the worklist for the node below; and a commit adding a card with the defect is refused by `test-commit`.
+  **Acceptance:** the recipe runs over the corpus and reports a count, that output is the worklist for the node below, and a commit adding a card with the defect is refused by `test-commit`. Do not carry a baseline number here: the recipe is the only count, and it already proved a hand-made one wrong — the scan that opened these nodes missed U+2212 minus, the asterisk operator, the tilde operator and the wedge, so every figure it produced was low.
 
 - **`extraction-repair`**. **Needs:** `extraction-detector`. Transcribe each reported card's statement into faithful LaTeX against its source document.
-  Work collection by collection, heaviest first: the eight `SRC-UCLA-RA-*` collections hold 83 of the 182 and are essentially complete populations, then `SRC-BERKELEY-PRELIM-*` at 25 across seventeen terms, `SRC-HARVARD-TATE-ALGEBRA-250A-1985` at 9, `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS` at 8, `SRC-UGA-CA-COMPILATION` at 7, `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017` at 6. Where the source document cannot settle what the statement said, say so on the card rather than guessing a plausible problem: an invented statement is the failure this node exists to end.
-  Record those cards and their count.
+  Work the collections in descending hit count, as the recipe groups them — do not work from a list written here, because these populations move every time a card is repaired or a source is ingested, and a number in this file is stale the moment a commit lands.
+  Where the source document cannot settle what the statement said, say so on the card rather than guessing a plausible problem: an invented statement is the failure this node exists to end. Record those cards and their count.
   **Acceptance:** the detector's count falls, and each commit's cards read as the source reads.
 
 - **`extraction-pipeline`**. **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
