@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(Cauchy's formula for “exterior” region) Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$. Assume $f'(z)$ exists in an open set containing $\gamma$ and $\Omega_2$, and
+(Cauchy's formula for “exterior” region) Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$.
+Assume $f'(z)$ exists in an open set containing $\gamma$ and $\Omega_2$, and
 \[
 \lim_{z\to\infty}f(z)=A.
 \]

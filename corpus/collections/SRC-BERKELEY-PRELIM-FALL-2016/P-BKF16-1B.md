@@ -26,7 +26,8 @@ and let $S_n$ be the $(n-1)$-dimensional “surface area” of the unit sphere i
 
 (b) Show that $s\Gamma(s)=\Gamma(s+1)$ and $\Gamma(1)=1$.
 
-(c) Evaluate $C$. (Hint: $S_2=2\pi$.)
+(c) Evaluate $C$.
+(Hint: $S_2=2\pi$.)
 
 (d) Evaluate $S_4$.
 :::

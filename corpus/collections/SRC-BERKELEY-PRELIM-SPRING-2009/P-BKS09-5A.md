@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-There is a “folk theorem” that a four-footed table can always be rotated into a stable position on an uneven floor. Prove the following mathematical formulation of this theorem.
+There is a “folk theorem” that a four-footed table can always be rotated into a stable position on an uneven floor.
+Prove the following mathematical formulation of this theorem.
 
 Define four points in $\mathbb R^2$, depending on an angle $\theta$, by
 \[
