@@ -708,3 +708,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the answer can depend on what the source intended for `\varepsilon`, so silently imposing a sign or size condition would change the problem.
 - **Uncertainty:** the symbol itself is legible; what is missing is its source condition.
 - **Repair:** `P-BKF96-15` preserves the displayed matrix and explicitly records the undefined parameter rather than supplying an inferred condition.
+
+### Berkeley Fall 1993 Problem 12 loses its contour in the retained extraction
+
+- **Object and need:** `P-BKF93-12`, Berkeley Preliminary Exam Fall 1993, Problem 12; the problem asks for a contour integral of `z^{-2}(1-z^2)^{-1}e^z` along a depicted curve.
+- **Observed evidence:** `assets/attachments/extracted/Fall93.md` preserves the integrand and the reference to a depicted curve `gamma`, but the figure itself is absent from the retained extraction.
+- **Impact and owner:** the integral depends on which poles the contour encloses, so reconstructing the curve from the integrand would invent source data.
+- **Uncertainty:** the curve may remain legible in the retained PDF, but repository policy allows PDF extraction only through `mineru-open-api`, which is unavailable on this host.
+- **Repair:** `P-BKF93-12` preserves the surviving statement and explicitly marks the contour unrecovered rather than guessing it.

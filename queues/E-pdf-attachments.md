@@ -194,7 +194,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall92.pdf](assets/attachments/extracted/Fall92.md) (111L, 5 problems) — algebra — Fall 19
 
-- [ ] [Fall93.pdf](assets/attachments/extracted/Fall93.md) (91L, 4 problems) — algebra — Fall 19
+- [x] [Fall93.pdf](assets/attachments/extracted/Fall93.md) (91L, 4 problems) — Berkeley — prelim — Fall 1993 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1993`, with all 18 numbered problems represented in source order. Problem 12 retains an explicit dependency on the contour omitted from the retained extraction; no curve was guessed. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Fall96.pdf](assets/attachments/extracted/Fall96.md) (123L, 4 problems) — Berkeley — prelim — Fall 1996 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1996`, with all 18 source positions represented in order. Sixteen source-local cards were added; Problem 12 reuses `P-BKS84-7` and Problem 18 reuses `P-BERK80S-11`. Problems 8 and 15 preserve explicit extraction gaps rather than guessed source data. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `complex-analysis` labels were stale heuristic metadata.
 
