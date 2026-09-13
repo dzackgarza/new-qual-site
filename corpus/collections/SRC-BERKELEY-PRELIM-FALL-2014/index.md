@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/Fall_2014_Exam.pdf
+- assets/attachments/Fall_2014_Solutions.pdf
 source:
   source_kind: university-exam
   institution: berkeley
