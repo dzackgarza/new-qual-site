@@ -176,7 +176,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [871-872June_2007_852-871.pdf](assets/attachments/extracted/871-872June_2007_852-871.md) (35L, 0 problems) — algebra
 
-- [ ] [calculating_galois_from_polynomial.pdf](assets/attachments/extracted/calculating_galois_from_polynomial.md) (255L, 22 problems) — applied-algebra
+- [x] [calculating_galois_from_polynomial.pdf](assets/attachments/extracted/calculating_galois_from_polynomial.md) (255L, 22 problems) — Galois theory — reference notes — disposition 2026-09-13: treated as expository computational review notes rather than a problem source. The inventory's `22 problems` are worked examples embedded in the exposition, not a posed problem bank. Added a substantive annotated local-resource entry to `wiki/algebra/resources/fields.md` covering the notes' cubic-discriminant, prime-degree, cyclotomic, and finite-field Frobenius methods; the retained PDF remains the linked source.
 
 - [x] [Fall00.pdf](assets/attachments/extracted/Fall00.md) (56L, 0 problems) — Berkeley — prelim — Fall 2000 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-2000`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `complex-analysis` labels were stale heuristic metadata for a mixed preliminary exam.
 

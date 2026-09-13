@@ -9,6 +9,8 @@ order: 60
 
 - [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD Field Theory Qual Review]], with the review PDF as collection provenance and canonical problem links.
 
+- [[attachments/calculating_galois_from_polynomial.pdf|Calculating a Galois group from a polynomial]] — local review notes on cubic discriminants, prime-degree splitting fields, cyclotomic extensions, and finite-field Frobenius methods, with worked computations over $\mathbb Q$ and finite fields.
+
 - [Galois theory notes (Edinburgh)](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
 
 - [Conrad, Some Examples of the Galois Correspondence](attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf)
