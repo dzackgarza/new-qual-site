@@ -216,7 +216,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [sample_exam.pdf](assets/attachments/extracted/sample_exam.md) (21L, 9 problems) — calculus
 
-- [ ] [Spring00.pdf](assets/attachments/extracted/Spring00.md) (96L, 4 problems) — algebra — Spring 2000
+- [x] [Spring00.pdf](assets/attachments/extracted/Spring00.md) (96L, 4 problems) — Berkeley — prelim — Spring 2000 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-2000`, with all 18 numbered problems represented in source order. Seventeen source-local cards were added and Problem 4 reuses the exact canonical appearance `P-BERK89S-16`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Spring01.pdf](assets/attachments/extracted/Spring01.md) (65L, 5 problems) — Berkeley — prelim — Spring 2001 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-2001`, with all 18 numbered problems represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `5 problems` and `algebra` labels were stale heuristic metadata.
 
