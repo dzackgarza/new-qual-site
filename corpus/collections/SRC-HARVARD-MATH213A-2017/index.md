@@ -35,4 +35,5 @@ source:
   - name: Section 1.8 exercises
     problems:
     - E-HM213A17-10
+    - E-HM213A17-11
 ---
