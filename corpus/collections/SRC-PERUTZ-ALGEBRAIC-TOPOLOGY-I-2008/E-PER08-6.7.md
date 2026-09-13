@@ -11,5 +11,5 @@ review: draft
 ---
 
 ::: {.problem}
-Rotation about a fixed axis, by angles increasing from 0 up to 2π, determines a loop γ in SO(3). Show that γ ∗ γ is nullhomotopic.
+Rotation about a fixed axis, by angles increasing from 0 up to 2π, determines a loop γ in SO(3). Show that γ $\\ast$ γ is nullhomotopic.
 :::
