@@ -248,7 +248,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring92.pdf](assets/attachments/extracted/Spring92.md) (73L, 2 problems) — algebra — Spring 19
 
-- [ ] [Spring95.pdf](assets/attachments/extracted/Spring95.md) (87L, 4 problems) — applied-algebra — Spring 19
+- [x] [Spring95.pdf](assets/attachments/extracted/Spring95.md) (87L, 4 problems) — Berkeley — prelim — Spring 1995 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1995`. Sixteen source-local cards represent Problems 1–15 and 17; Problem 16 reuses canonical card `P-PRELIM82S-03`, and Problem 18 reuses canonical card `P-3A7RU`. OCR-sensitive matrix size in Problem 2 and the coefficient in Problem 14 were checked directly against the PDF pages. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Spring96.pdf](assets/attachments/extracted/Spring96.md) (101L, 0 problems) — Berkeley — prelim — Spring 1996 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1996`, with Problems 1–18 represented in source order. OCR-sensitive limits in Problem 11 and the matrix hypotheses in Problem 15 were checked directly against the PDF pages. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `algebra` labels were stale heuristic metadata.
 
