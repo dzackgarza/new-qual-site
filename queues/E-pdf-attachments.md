@@ -178,7 +178,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [calculating_galois_from_polynomial.pdf](assets/attachments/extracted/calculating_galois_from_polynomial.md) (255L, 22 problems) — applied-algebra
 
-- [ ] [Fall00.pdf](assets/attachments/extracted/Fall00.md) (56L, 0 problems) — complex-analysis — Fall 2000
+- [x] [Fall00.pdf](assets/attachments/extracted/Fall00.md) (56L, 0 problems) — Berkeley — prelim — Fall 2000 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-2000`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `complex-analysis` labels were stale heuristic metadata for a mixed preliminary exam.
 
 - [x] [Fall79.pdf](assets/attachments/extracted/Fall79.md) (117L, 12 problems) — Berkeley — prelim — Fall 1979 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1979`, with all 20 source positions represented in order. Thirteen source-local cards were added; Problems 1, 3, 13, 14, 15, 16, and 19 reuse exact canonical cards `P-BKF89-16`, `P-BKF91-1`, `P-BKF80-17`, `P-BERK81S-20`, `P-JHUSP01CAA`, `P-BERK85S-12`, and `P-BKF87-14`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `12 problems` and `algebra` labels were stale heuristic metadata.
 
