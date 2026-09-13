@@ -55,7 +55,7 @@ Ingesting more sources through the pipeline that produced them adds to the popul
 
 ### The unsolved-queue gate taxes every corpus commit
 
-- **`incremental-unsolved-queue`**. **Needs:** none.
+- **`incremental-unsolved-queue`**. **Closed 2026-09-13.** Landed as `e3ff7493d` (`perf(queue): update unsolved cards incrementally`): `_unsolved-if-staged` updates Queue C from the staged card paths while `just unsolved` remains the full-rebuild oracle. `tests/test_unsolved_queue_incremental.py` proves byte-identical output when one card gains a solution and another loses one; it passes 1/1. A live staged update measured 1.06 seconds versus 161.20 seconds for the full rebuild on the current corpus. **Needs:** none.
   `_unsolved-if-staged` runs on every commit that touches `corpus`, and it does not do a little work: it materializes the whole of `corpus`, `vocabularies` and `wiki` into a temporary tree with `git checkout-index`, parses all ~5900 cards through `tools/unsolved_queue.py`, and copies one file back.
   That was measured at 60 seconds in one observed run, against the recipe's own estimate of ~25 seconds.
   The cost is per commit, so it is a tax on granularity: banking twenty-two written cards individually costs twenty to forty minutes of gate, and a worker that batches instead is responding rationally to the incentive the gate creates.
