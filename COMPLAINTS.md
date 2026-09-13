@@ -676,3 +676,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the problem can be indexed and preserved with the source PDF as provenance, but the authored card cannot make the winding data self-contained without inventing a contour. Source intake owns preserving the gap explicitly rather than guessing it.
 - **Uncertainty:** the contour may remain embedded in `Spring81.pdf` even though it is absent from the retained markdown extraction; recovering that figure requires the permitted extraction path or an archival source asset.
 - **Repair:** `P-BKS81-11` preserves the integral and explicitly points to the source curve. No contour geometry or numerical answer was reconstructed.
+
+### Berkeley Spring 1980 Problem 9 loses part of its displayed matrix in extraction
+
+- **Object and need:** `P-BKS80-9`, Berkeley Preliminary Exam Spring 1980, Problem 9; the problem asks for the centralizer of a particular displayed real two-by-two matrix.
+- **Observed evidence:** `assets/attachments/extracted/Spring80.md` preserves only a malformed fragment of the display before the statement that every commuting real matrix has form `sI+tA`. The surviving OCR is insufficient to determine all four entries without inference. The archival Berkeley problem compilation reproduces the same Spring 1980 problem but its searchable text also omits the matrix display.
+- **Impact and owner:** guessing the fourth entry would manufacture source mathematics. The problem card therefore cannot be self-contained until the display is recovered from a permitted source representation.
+- **Uncertainty:** the complete matrix is expected to remain visible in the retained PDF, but the repository-mandated `mineru-open-api` extractor is unavailable on this host and no prohibited substitute extractor was used.
+- **Repair:** `P-BKS80-9` preserves the centralizer question and explicitly refers to the matrix displayed in the source exam; no matrix entry or numerical specialization was invented.
