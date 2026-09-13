@@ -212,7 +212,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [grad_prelim_Spring08.pdf](assets/attachments/extracted/grad_prelim_Spring08.md) (37L, 8 problems) — algebra — SprinG 2008
 
-- [ ] [grad_prelim_Spring09.pdf](assets/attachments/extracted/grad_prelim_Spring09.md) (42L, 8 problems) — algebra — SprinG 2009
+- [x] [grad_prelim_Spring09.pdf](assets/attachments/extracted/grad_prelim_Spring09.md) (42L, 8 problems) — UGA — prelim — Spring 2009 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-SPRING-2009`, with all 8 numbered problems represented in source order. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series; this missing Spring 2009 sitting is now represented with the retained PDF as provenance. The inventory's `algebra` label was stale heuristic metadata for a mixed preliminary exam.
 
 - [x] [sample_exam.pdf](assets/attachments/extracted/sample_exam.md) (21L, 9 problems) — UGA — prelim — disposition 2026-09-13: reconciled the source-audited UGA sample graduate preliminary exam into the existing canonical `SRC-PRELIM-ART-A2355I` collection. All 9 source problems are represented in order: 7 new source-local cards plus exact existing cards `P-VAWOC` (Problem 4) and `P-HUKW5` (Problem 6). The retained PDF is now collection provenance; the prior collection had only those two appearances and no provenance.
 
