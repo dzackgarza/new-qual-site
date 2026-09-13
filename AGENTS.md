@@ -833,6 +833,14 @@ When any one fails, leave it in place and report it. Re-take all three for each
 worktree at the point of removal rather than acting on a list. Worktrees outside the
 repository are outside this rule; report them and do not remove them.
 
+
+## Merge and reconciliation snapshots
+
+A merge, reconciliation, or duplicate-adjudication snapshot is temporary working state,
+not an archive. Delete the snapshot in the same turn that finishes its last use. If the
+work that depends on it is still active, leave it in place and state the specific live
+dependency; do not retain a completed snapshot merely as insurance.
+
 # Running checks
 
 For prose-only changes that leave every `::: {.problem}` block unchanged, including
