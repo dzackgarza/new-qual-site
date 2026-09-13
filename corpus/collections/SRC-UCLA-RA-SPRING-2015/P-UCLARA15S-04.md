@@ -17,6 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let f ∈ L1loc (R) be 2π-periodic.
-Show that linear combinations of the translates f (x−a), a ∈ R, are dense in L1 ((0, 2π)) if and only if each Fourier coefficient of f is 6= 0.
+Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic. Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
 :::

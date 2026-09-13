@@ -17,16 +17,20 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let f ∈ L1loc (Rn ) and let Z M f (x) = sup                          |f (y)| dy r>0 m(B(r, x))      B(r,x)
+Let $f\in L^1_{\mathrm{loc}}(\mathbb R^n)$ and let
+\[
+Mf(x)=\sup_{r>0}\frac1{m(B(r,x))}\int_{B(r,x)}|f(y)|\,dy
+\]
+be the Hardy--Littlewood maximal function.
 
-be the Hardy-Littlewood maximal function.
-• Show that Z Cn m({x : M f (x) > s}) ≤                        |f (x)| dx,   s > 0, s       |f (x)|>s/2
+(a) Show that
+\[
+m(\{x:Mf(x)>s\})\le\frac{C_n}{s}\int_{|f(x)|>s/2}|f(x)|\,dx,\qquad s>0,
+\]
+where $C_n$ depends only on $n$. The Hardy--Littlewood maximal theorem may be used.
 
-```
-  where the constant Cn depends on n only. The Hardy-Littlewood maximal the-
-  orem may be used.
-```
-• Prove that if ϕ ∈ C 1 (R), ϕ(0) = 0, and ϕ0 > 0 then ϕ0 (t) Z                      Z        Z\
-ϕ(M f (x)) dx ≤ Cn |f (x)|                               dt dx.
-0<t<2|f (x)|   t
+(b) Prove that if $\phi\in C^1(\mathbb R)$, $\phi(0)=0$, and $\phi'>0$, then
+\[
+\int \phi(Mf(x))\,dx\le C_n\int |f(x)|\left(\int_{0<t<2|f(x)|}\frac{\phi'(t)}t\,dt\right)dx.
+\]
 :::

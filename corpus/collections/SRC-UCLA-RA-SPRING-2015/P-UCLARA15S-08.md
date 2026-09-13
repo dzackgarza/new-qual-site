@@ -17,14 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let f : C → C be holomorphic and suppose
-
-```
-    sup |f (x)|2 + |f (ix)|2 < ∞ and |f (z)| ≤ e|z|
-        
-                                                               for all z ∈ C.
-      x∈R
-```
-
-Deduce that f (z) is constant.
+Let $f:\mathbb C\to\mathbb C$ be holomorphic and suppose
+\[
+\sup_{x\in\mathbb R}\bigl(|f(x)|^2+|f(ix)|^2\bigr)<\infty
+\]
+and
+\[
+|f(z)|\le e^{|z|}\qquad\text{for all }z\in\mathbb C.
+\]
+Deduce that $f(z)$ is constant.
 :::

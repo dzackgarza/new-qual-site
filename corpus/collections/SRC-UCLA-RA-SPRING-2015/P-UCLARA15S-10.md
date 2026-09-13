@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Determine Z ∞ dy −∞    (1 + y 2 )(1 + [x − y]2 )
-
-for all x ∈ R. Justify all manipulations.
+Determine
+\[
+\int_{-\infty}^{\infty}\frac{dy}{(1+y^2)(1+(x-y)^2)}
+\]
+for all $x\in\mathbb R$. Justify all manipulations.
 :::

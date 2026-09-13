@@ -17,10 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Let u ∈ L2 (R) and let us set Z U (x, ξ) = e−(x+iξ−y) /2 u(y) dy,               x, ξ ∈ R.
-
-Show that U (x, ξ) is well defined on R2 and that there exists a constant C > 0 such that for all u ∈ L2 (R), we have ZZ                         Z 2 −ξ 2
-|U (x, ξ)| e dx dξ = C |u(y)|2 dy.
-
-Determine C explicitly.
+Let $u\in L^2(\mathbb R)$ and set
+\[
+U(x,\xi)=\int_{\mathbb R}e^{-(x+i\xi-y)^2/2}u(y)\,dy,
+\qquad x,\xi\in\mathbb R.
+\]
+Show that $U(x,\xi)$ is well defined on $\mathbb R^2$ and that there exists a constant $C>0$ such that for all $u\in L^2(\mathbb R)$,
+\[
+\iint_{\mathbb R^2}|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
+=C\int_{\mathbb R}|u(y)|^2\,dy.
+\]
+Determine $C$ explicitly.
 :::

@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let D = {z ∈ C : |z| < 1} and C+ = {z ∈ C : Im z > 0}. Suppose fn : D → C+ is a sequence of holomorphic functions and fn (0) → 0 as n → ∞. Show that fn (z) → 0 uniformly on compact subsets of D.
+Let
+\[
+D=\{z\in\mathbb C:|z|<1\},\qquad \mathbb C_+=\{z\in\mathbb C:\operatorname{Im}z>0\}.
+\]
+Suppose $f_n:D\to\mathbb C_+$ is a sequence of holomorphic functions and $f_n(0)\to0$ as $n\to\infty$. Show that $f_n(z)\to0$ uniformly on compact subsets of $D$.
 :::

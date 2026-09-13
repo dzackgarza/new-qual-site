@@ -17,5 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let Ω = {z ∈ C : 0 < |z| < 1}. Prove that for every bounded harmonic function u : Ω → R there is a harmonic function v : Ω → R obeying ∂u   ∂v                ∂u    ∂v =            and       =− ∂x   ∂y                ∂y    ∂x
+Let
+\[
+\Omega=\{z\in\mathbb C:0<|z|<1\}.
+\]
+Prove that for every bounded harmonic function $u:\Omega\to\mathbb R$ there is a harmonic function $v:\Omega\to\mathbb R$ obeying
+\[
+\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},
+\qquad
+\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
+\]
 :::

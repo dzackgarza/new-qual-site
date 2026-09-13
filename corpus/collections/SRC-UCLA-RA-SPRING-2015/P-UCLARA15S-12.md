@@ -17,11 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Find all entire functions f : C → C that obey
-
-```
-                               f 0 (z)2 + f (z)2 = 1.
-```
-
+Find all entire functions $f:\mathbb C\to\mathbb C$ that obey
+\[
+f'(z)^2+f(z)^2=1.
+\]
 Prove that your list is exhaustive.
 :::

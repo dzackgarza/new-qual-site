@@ -17,10 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let f ∈ L2loc (Rn ), g ∈ L3loc (Rn ). Assume that for all real r ≥ 1, we have Z                               Z
-|f (x)| dx ≤ r ,  a
-|g(x)|3 dx ≤ rb .
-r≤|x|≤2r                      r≤|x|≤2r
-
-Here a, b ∈ R are such that 3a + 2b + n < 0. Show that f g ∈ L1 (Rn ).
+Let $f\in L^2_{\mathrm{loc}}(\mathbb R^n)$ and $g\in L^3_{\mathrm{loc}}(\mathbb R^n)$. Assume that for all real $r\ge1$,
+\[
+\int_{r\le|x|\le2r}|f(x)|^2\,dx\le r^a,
+\qquad
+\int_{r\le|x|\le2r}|g(x)|^3\,dx\le r^b.
+\]
+Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$. Show that $fg\in L^1(\mathbb R^n)$.
 :::

@@ -17,6 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. When B1 and B2 are Banach spaces, we say that a linear operator T : B1 → B2 is compact if for any bounded sequence (xn ) in B1 , the sequence (T xn ) has a convergent subsequence.
-Show that if T is compact then Im T has a dense countable subset.
+When $B_1$ and $B_2$ are Banach spaces, call a linear operator $T:B_1\to B_2$ compact if for any bounded sequence $(x_n)$ in $B_1$, the sequence $(Tx_n)$ has a convergent subsequence. Show that if $T$ is compact then $\operatorname{Im}T$ has a dense countable subset.
 :::
