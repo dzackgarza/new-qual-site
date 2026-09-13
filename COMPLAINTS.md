@@ -652,3 +652,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the literal source condition makes the problem vacuous. The intended radius-of-convergence comparison only needs the estimate for positive indices.
 - **Uncertainty:** none about the printed contradiction; the intended `n>=1` repair is forced by the surrounding series statement.
 - **Repair:** `P-BERK78S-11` states the coherent condition for `n>=1` and records the source defect in its audit note.
+
+### Berkeley Spring 1983 Problem 4 is missing its defining diagram in the retained PDF
+
+- **Object and need:** `P-BKS83-4`, Berkeley Preliminary Exam Spring 1983, Problem 4; the problem asks for the Euclidean symmetry group of a depicted triangular network.
+- **Observed evidence:** the retained PDF does not contain the network figure. In the exact place where the diagram should appear, the PDF prints `../Fig/Pr/Sp83-4.ps not found`.
+- **Impact and owner:** the mathematical statement is incomplete in the retained source itself. The four named points `(0,0)`, `(1,0)`, `(0,1)`, `(1,1)` do not determine the omitted infinite triangular network, so reconstructing a diagram would invent source content.
+- **Uncertainty:** the lost PostScript figure may exist in an upstream TeX source or archival copy, but it is not present in the retained PDF or extraction.
+- **Repair:** `P-BKS83-4` preserves the readable statement and explicitly records that the defining diagram is unavailable; no guessed network was authored.
