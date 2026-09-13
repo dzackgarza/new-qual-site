@@ -41,8 +41,9 @@ They are not card instances; they run once the corpus work they follow is closed
 
 - **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than closing.
   Continually audit for unnecessary bloat, bad style and non-idiomatic constructions, LOC reduction opportunities, and anything hand-rolled that a dependency already provides — pandoc, the markdown toolchain, any Python library, anything at all.
-  Append every finding to `COMPLAINTS.md` as it is found.
-  Findings accumulate; they need not be fixed in the same pass, and the audit is never declared finished.
+  Append every finding to `COMPLAINTS.md` as it is found, and repair at least one finding in the same turn that records it.
+  A pass that files findings and repairs none has not advanced this node, and a commit whose only content is a `COMPLAINTS.md` entry is not a unit of work.
+  The backlog may outrun the repairs, and the audit is never declared finished.
 
 ## Content issues and policy violations build log
 
