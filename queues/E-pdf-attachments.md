@@ -398,7 +398,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 18 problems) — Berkeley — prelim solutions — Spring 2007 — disposition 2026-09-11: derivative solution edition of the separately vendored original exam `s07.pdf`; already linked from `wiki/prelim/problems/berkeley-prelims.md`, so retain it as a solutions resource and perform card intake from the original exam entry instead.
 
-- [ ] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders**
+- [x] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders** — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Spring 2008, solution packet; already canonical as `SRC-BERKELEY-PRELIM-SPRING-2008`. The collection uses this PDF as provenance and contains all 18 source-order problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
 - [x] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010 — disposition 2026-09-13: identified from the retained packet as the UC Berkeley Graduate Preliminary Examination, Spring 2010, with solutions; already canonical as `SRC-BERKELEY-PRELIM-SPRING-2010`. The collection uses this PDF as provenance and contains all 18 source-order problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
