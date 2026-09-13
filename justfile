@@ -107,27 +107,17 @@ extraction-detector:
 _extraction-detector-staged:
     uv run python tools/extraction_detector.py --staged-gate
 
-# Rewrite the queue when the commit touches the corpus, and stage the result so
-# the refresh lands in that commit rather than trailing it. The corpus is the
-# only input that can change the queue, and parsing it costs ~25s, so a commit
-# that touches nothing else is not made to pay for it.
+# Update Queue C from only the staged card diff and stage the generated result.
+# `just unsolved` remains the independent full rebuild/oracle. The incremental path
+# starts from HEAD's generated queue, removes the old state of changed cards, and
+# inserts their staged state, so one-card commits do not reparse the whole corpus.
 _unsolved-if-staged:
     #!/usr/bin/env bash
     set -euo pipefail
     if git diff --cached --quiet -- corpus; then
         echo "queues/C-unsolved-cards.md: no staged corpus change"
     else
-        if [[ -n "${GIT_INDEX_FILE:-}" ]]; then
-            snapshot="$(mktemp -d "${TMPDIR:-/tmp}/new-qual-unsolved-index.XXXXXX")"
-            trap 'rm -rf -- "$snapshot"' EXIT
-            mkdir -p "$snapshot/queues"
-            git ls-files -z -- corpus vocabularies wiki \
-                | git checkout-index -z --stdin --prefix="$snapshot/"
-            uv run python tools/unsolved_queue.py --root "$snapshot"
-            cp "$snapshot/queues/C-unsolved-cards.md" queues/C-unsolved-cards.md
-        else
-            uv run python tools/unsolved_queue.py
-        fi
+        uv run python tools/unsolved_queue.py --incremental-staged
         git add queues/C-unsolved-cards.md
     fi
 
