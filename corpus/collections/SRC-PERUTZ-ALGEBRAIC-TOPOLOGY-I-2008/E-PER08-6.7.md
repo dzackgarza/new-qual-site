@@ -8,8 +8,32 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-13
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
 ---
 
 ::: {.problem}
 Rotation about a fixed axis, by angles increasing from 0 up to 2π, determines a loop γ in SO(3). Show that γ $\\ast$ γ is nullhomotopic.
+:::
+
+::: {.solution}
+Use the double covering
+\[
+SU(2)\cong S^3\longrightarrow SO(3).
+\]
+A rotation through angles from $0$ to $2\pi$ about a fixed axis lifts to a path in $SU(2)$ beginning at $1$ and ending at $-1$.
+Consequently the concatenated loop $\gamma*\gamma$ lifts to a closed loop beginning and ending at $1$ (the second traverse continues from $-1$ back to $1$).
+
+Since $SU(2)\cong S^3$ is simply connected, that lifted loop is null-homotopic.
+Projecting its null-homotopy to $SO(3)$ shows that
+\[
+\boxed{\gamma*\gamma\simeq *}.
+\]
+Equivalently, $[\gamma]$ is the nontrivial element of $\pi_1(SO(3))\cong\mathbb Z/2$.
 :::
