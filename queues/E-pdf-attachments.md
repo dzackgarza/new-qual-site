@@ -188,7 +188,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall87.pdf](assets/attachments/extracted/Fall87.md) (105L, 2 problems) — algebra — Fall 19
 
-- [ ] [Fall89.pdf](assets/attachments/extracted/Fall89.md) (78L, 0 problems) — applied-algebra — Fall 19
+- [x] [Fall89.pdf](assets/attachments/extracted/Fall89.md) (78L, 0 problems) — Berkeley — prelim — Fall 1989 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1989`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Fall91.pdf](assets/attachments/extracted/Fall91.md) (107L, 7 problems) — Berkeley — prelim — Fall 1991 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1991`, with all 18 numbered problems represented in source order. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `7 problems` and `algebra` labels were stale heuristic metadata.
 
