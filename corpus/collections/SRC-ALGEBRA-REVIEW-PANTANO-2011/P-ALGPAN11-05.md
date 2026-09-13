@@ -9,8 +9,45 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-13
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
 ---
 
 ::: {.problem}
 ![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-05.png)
+:::
+
+::: {.solution}
+The answer is $\boxed{\text{(E)}\;p,\ pq,\ p^q}$.
+
+<1>1. Construct the required proper subgroup.
+::: {.proof}
+Take
+\[
+J=p\mathbb Z.
+\]
+This is proper because $p$ is prime.
+It contains $p$, $pq$, and $p^q$.
+:::
+
+<1>2. The other two listed elements are not in $J$.
+::: {.proof}
+Because $p$ and $q$ are distinct primes, $p\nmid q$, hence $p\nmid q^p$.
+Also
+\[
+p\mid(p+q)\iff p\mid q,
+\]
+which is false.
+Therefore among
+\[
+\{p,p+q,pq,p^q,q^p\}
+\]
+exactly $p,pq,p^q$ lie in $J$.
+:::
 :::
