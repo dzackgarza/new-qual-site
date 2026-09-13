@@ -716,3 +716,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the integral depends on which poles the contour encloses, so reconstructing the curve from the integrand would invent source data.
 - **Uncertainty:** the curve may remain legible in the retained PDF, but repository policy allows PDF extraction only through `mineru-open-api`, which is unavailable on this host.
 - **Repair:** `P-BKF93-12` preserves the surviving statement and explicitly marks the contour unrecovered rather than guessing it.
+
+### Berkeley Fall 1992 Problem 6 loses its metric-comparison symbol
+
+- **Object and need:** `P-BKF92-6`, Berkeley Preliminary Exam Fall 1992, Problem 6; the problem compares completeness of two metric spaces under a continuous surjection satisfying a pointwise relation between the two metrics.
+- **Observed evidence:** `assets/attachments/extracted/Fall92.md` renders the relation as `d_1(p,q) \in d_2(f(p),f(q))`, which is not a meaningful comparison of real distances. No independent repository transcription of the missing comparison symbol was found.
+- **Impact and owner:** whether the intended relation is equality or one of the two inequality directions materially changes the completeness implications and available counterexamples.
+- **Uncertainty:** the surrounding two-part question does not uniquely force one relation, so no repair can be justified from mathematical context alone.
+- **Repair:** `P-BKF92-6` preserves the two completeness questions and marks the metric comparison unrecovered instead of guessing it.
