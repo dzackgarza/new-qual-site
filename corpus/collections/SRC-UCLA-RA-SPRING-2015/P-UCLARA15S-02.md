@@ -17,11 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^2_{\mathrm{loc}}(\mathbb R^n)$ and $g\in L^3_{\mathrm{loc}}(\mathbb R^n)$. Assume that for all real $r\ge1$,
+Let $f\in L^2_{\mathrm{loc}}(\mathbb R^n)$ and $g\in L^3_{\mathrm{loc}}(\mathbb R^n)$.
+Assume that for all real $r\ge1$,
 \[
 \int_{r\le|x|\le2r}|f(x)|^2\,dx\le r^a,
 \qquad
 \int_{r\le|x|\le2r}|g(x)|^3\,dx\le r^b.
 \]
-Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$. Show that $fg\in L^1(\mathbb R^n)$.
+Here $a,b\in\mathbb R$ satisfy $3a+2b+n<0$.
+Show that $fg\in L^1(\mathbb R^n)$.
 :::

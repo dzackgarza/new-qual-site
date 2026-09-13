@@ -21,5 +21,6 @@ Let
 \[
 \Omega=\{z\in\mathbb C:|z|>1\text{ and }\operatorname{Re}z>-2\}.
 \]
-Suppose $u:\Omega\to\mathbb R$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $|z|=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$. Determine $u(2)$.
+Suppose $u:\Omega\to\mathbb R$ is bounded, continuous, and harmonic on $\Omega$, with $u(z)=1$ when $|z|=1$ and $u(z)=0$ when $\operatorname{Re}z=-2$.
+Determine $u(2)$.
 :::

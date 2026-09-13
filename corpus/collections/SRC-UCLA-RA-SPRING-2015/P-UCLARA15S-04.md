@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic. Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
+Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be $2\pi$-periodic.
+Show that linear combinations of the translates $f(x-a)$, $a\in\mathbb R$, are dense in $L^1((0,2\pi))$ if and only if each Fourier coefficient of $f$ is nonzero.
 :::

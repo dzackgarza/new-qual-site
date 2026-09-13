@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f\in L^1(\mathbb R)$. Show that
+Let $f\in L^1(\mathbb R)$.
+Show that
 \[
 \lim_{n\to\infty}\sum_{k=-n^2}^{n^2}\left|\int_{k/n}^{(k+1)/n}f(x)\,dx\right|=\int_{\mathbb R}|f(x)|\,dx.
 \]

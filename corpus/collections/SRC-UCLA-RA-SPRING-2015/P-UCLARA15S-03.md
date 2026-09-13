@@ -27,7 +27,8 @@ be the Hardy--Littlewood maximal function.
 \[
 m(\{x:Mf(x)>s\})\le\frac{C_n}{s}\int_{|f(x)|>s/2}|f(x)|\,dx,\qquad s>0,
 \]
-where $C_n$ depends only on $n$. The Hardy--Littlewood maximal theorem may be used.
+where $C_n$ depends only on $n$.
+The Hardy--Littlewood maximal theorem may be used.
 
 (b) Prove that if $\phi\in C^1(\mathbb R)$, $\phi(0)=0$, and $\phi'>0$, then
 \[

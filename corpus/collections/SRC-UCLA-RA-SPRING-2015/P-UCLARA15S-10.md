@@ -21,5 +21,6 @@ Determine
 \[
 \int_{-\infty}^{\infty}\frac{dy}{(1+y^2)(1+(x-y)^2)}
 \]
-for all $x\in\mathbb R$. Justify all manipulations.
+for all $x\in\mathbb R$.
+Justify all manipulations.
 :::
