@@ -264,7 +264,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer81.pdf](assets/attachments/extracted/Summer81.md) (131L, 14 problems) — topology — Summer 19
 
-- [ ] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — complex-analysis — Summer 19
+- [x] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — Berkeley — prelim — Summer 1982 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1982`, with Problems 1–20 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `9 problems` and `complex-analysis` labels were stale heuristic metadata.
 
 - [ ] [syllabus.pdf](assets/attachments/extracted/syllabus.md) (29L, 0 problems) — applied-algebra
 
