@@ -10,6 +10,14 @@ classification:
 relations: []
 review: draft
 audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-13
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Verified that the explicit subtraction and absorption conditions are exactly the two-sided ideal axioms without relying on undefined shorthand.
+audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
@@ -53,4 +61,43 @@ FINALLY DONE! Conclusion.
 Hopefully the moral is clear here.
 You should definitely think of the concepts like "subgroup under $+$" and "closed under subtraction" in your head, but you're going to have to write out their meanings anyhow.
 So by all means think "closed," but write "for all $x,y\in I$, we have $x-y\in I$."
+:::::: {.solution}
+A subset $I\subseteq R$ is a two-sided ideal precisely when the following three explicit conditions hold:
+
+1. $I\ne\varnothing$.
+2. For every $x,y\in I$, one has $x-y\in I$.
+3. For every $x\in I$ and $r\in R$, one has both $rx\in I$ and $xr\in I$.
+
+<1>1. Conditions 1 and 2 give exactly the required additive structure.
+::: {.proof}
+Choose $a\in I$, possible by condition 1. Then condition 2 gives
+\[
+0=a-a\in I.
+\]
+For $x\in I$,
+\[
+-x=0-x\in I.
+\]
+For $x,y\in I$, since $-y\in I$,
+\[
+x+y=x-(-y)\in I.
+\]
+Thus $I$ contains $0$ and is closed under addition and additive inverses. Conversely, any subset with those additive properties is nonempty and is closed under subtraction, because
+\[
+x-y=x+(-y).
+\]
+:::
+
+<1>2. Condition 3 is exactly two-sided absorption by ring elements.
+::: {.proof}
+The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$. Condition 3 states precisely
+\[
+rI\subseteq I
+\qquad\text{and}\qquad
+Ir\subseteq I
+\]
+for every $r\in R$.
+:::
+
+Hence the three displayed conditions are a complete definition of a two-sided ideal and use no further technical term that needs expansion.
 :::
