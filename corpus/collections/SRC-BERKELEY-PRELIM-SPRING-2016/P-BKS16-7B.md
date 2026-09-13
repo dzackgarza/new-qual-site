@@ -20,5 +20,6 @@ Let $A$ be a real square matrix and let $\rho$ be the maximum of the absolute va
 \]
 for all $x\in\mathbb R^n$, where $\lVert\cdot\rVert$ denotes the Euclidean norm.
 
-(2) Is this true when $A$ is not symmetric? Prove or give a counterexample.
+(2) Is this true when $A$ is not symmetric?
+Prove or give a counterexample.
 :::

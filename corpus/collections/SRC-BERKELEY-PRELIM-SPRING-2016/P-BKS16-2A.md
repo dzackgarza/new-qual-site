@@ -12,7 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f$ and $g$ are continuously differentiable real-valued functions on $\mathbb R$ with $f,g,f',g'\in L^2(\mathbb R)$. Show that
+Suppose that $f$ and $g$ are continuously differentiable real-valued functions on $\mathbb R$ with $f,g,f',g'\in L^2(\mathbb R)$.
+Show that
 \[
 \int_{-\infty}^{\infty} f g'\,dx=-\int_{-\infty}^{\infty} f'g\,dx.
 \]
