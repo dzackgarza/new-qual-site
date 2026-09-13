@@ -21,7 +21,7 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: Proved a compact local-injectivity lemma for maps to metric spaces, applied it to a lift of the left edge, and used an explicit circle-valued map to certify that the accumulating rectangle loops are nontrivial.
+  note: Proved a compact local-injectivity lemma for maps to metric spaces, applied it to a lift of the left edge, and used an explicit circle-valued map to demonstrate that the accumulating rectangle loops are nontrivial.
 ---
 
 Let $X$ be the subspace of $\mathbb{R}^2$ consisting of the four sides of the square $[0,1] \times [0,1]$ together with the segments of the vertical lines $x = 1/2, 1/3, 1/4, \ldots$ inside the square.
