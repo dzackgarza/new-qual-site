@@ -17,22 +17,20 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let Kt (x) = (4πt)−3/2 e−|x| /4t ,   x ∈ R3 , t > 0,
+Let
+\[
+K_t(x)=(4\pi t)^{-3/2}e^{-|x|^2/(4t)},\qquad x\in\mathbb R^3,\ t>0,
+\]
+where $|x|$ is the Euclidean norm of $x\in\mathbb R^3$.
 
-where |x| is the Euclidean norm of x ∈ R3 .
+(a) Show that the linear map
+\[
+L^3(\mathbb R^3)\ni f\longmapsto t^{1/2}K_t*f\in L^\infty(\mathbb R^3)
+\]
+is bounded, uniformly in $t>0$. Here
+\[
+K_t*f(x)=\int_{\mathbb R^3}K_t(x-y)f(y)\,dy.
+\]
 
-• Show that the linear map
-
-```
-                           L3 (R3 ) 3 f 7→ t1/2 Kt ∗ f ∈ L∞ (R3 )
-
- is bounded, uniformly in t > 0. Here
-                                     Z
-                        Kt ∗ f (x) =             Kt (x − y)f (y) dy
-                                            R3
-
- is the convolution.
-```
-
-• Prove that t1/2 || Kt ∗ f ||L∞ → 0 as t → 0, for f ∈ L3 (R3 ).
+(b) Prove that $t^{1/2}\lVert K_t*f\rVert_{L^\infty}\to0$ as $t\to0$, for $f\in L^3(\mathbb R^3)$.
 :::

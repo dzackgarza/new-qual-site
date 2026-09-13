@@ -17,14 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. For f ∈ C0∞ (R2 ) define u(x, t) by
-
-```
-                              sin(t |ξ|)
-                    Z
-          u(x, t) =     eix·ξ            f (ξ) dξ,          x ∈ R2 ,   t > 0.
-                     R2          |ξ|
-```
-
-Show that limt→∞ || u(·, t) ||L2 = ∞ for a set of f that is dense in L2 (R2 ).
+For $f\in C_0^\infty(\mathbb R^2)$ define $u(x,t)$ by
+\[
+u(x,t)=\int_{\mathbb R^2}e^{ix\cdot\xi}\frac{\sin(t|\xi|)}{|\xi|}f(\xi)\,d\xi,
+\qquad x\in\mathbb R^2,\ t>0.
+\]
+Show that
+\[
+\lim_{t\to\infty}\lVert u(\cdot,t)\rVert_{L^2}=\infty
+\]
+for a set of $f$ that is dense in $L^2(\mathbb R^2)$.
 :::

@@ -17,12 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let f ∈ L1loc (R) be real valued and assume that for each integer n > 0, we have\
-f x+         ≥ f (x), n for almost all x ∈ R. Show that for each real number a ≥ 0 we have
-
-```
-                                   f (x + a) ≥ f (x),
-```
-
-for almost all x ∈ R.
+Let $f\in L^1_{\mathrm{loc}}(\mathbb R)$ be real valued and assume that for each integer $n>0$,
+\[
+f\!\left(x+\frac1n\right)\ge f(x)
+\]
+for almost all $x\in\mathbb R$. Show that for each real number $a\ge0$,
+\[
+f(x+a)\ge f(x)
+\]
+for almost all $x\in\mathbb R$.
 :::

@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let V1 be a finite-dimensional subspace of the Banach space V . Show that there exists a continuous projection P : V → V1 , i.e., a continuous linear map P : V → V such that P 2 = P and the range of P is equal to V1 .
+Let $V_1$ be a finite-dimensional subspace of the Banach space $V$. Show that there exists a continuous projection $P:V\to V_1$, i.e. a continuous linear map $P:V\to V$ such that $P^2=P$ and the range of $P$ is equal to $V_1$.
 :::

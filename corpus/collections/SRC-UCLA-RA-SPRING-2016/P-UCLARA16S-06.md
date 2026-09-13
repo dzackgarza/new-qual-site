@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Suppose that {φn } is an orthonormal system of continuous functions in L2 ([0, 1]) and let S be the closure of the span of {φn }. If supf ∈S\{0} ||||ff ||||∞2 is finite, prove that S is finite dimensional.
+Suppose that $\{\phi_n\}$ is an orthonormal system of continuous functions in $L^2([0,1])$ and let $S$ be the closure of the span of $\{\phi_n\}$. If
+\[
+\sup_{f\in S\setminus\{0\}}\frac{\lVert f\rVert_\infty}{\lVert f\rVert_2}<\infty,
+\]
+prove that $S$ is finite dimensional.
 :::

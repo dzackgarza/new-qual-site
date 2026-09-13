@@ -17,5 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Does there exist a function f (z) holomorphic in the disk |z| < 1 such that lim|z|→1 |f (z)| = ∞? Either find one or prove that none exist.
+Does there exist a function $f(z)$ holomorphic in the disk $|z|<1$ such that
+\[
+\lim_{|z|\to1}|f(z)|=\infty?
+\]
+Either find one or prove that none exist.
 :::

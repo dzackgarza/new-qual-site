@@ -17,17 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. 1
+(a) Find a real-valued harmonic function $v$ defined on the disk $|z|<1$ such that $v(z)>0$ and
+\[
+\lim_{z\to1}v(z)=\infty.
+\]
 
-```
-• (a) Find a real-valued harmonic function v defined on the disk |z| < 1 such that
-  v(z) > 0 and limz→1 v(z) = ∞.
-
-• (b) Let u be a real-valued harmonic function in the disk |z| < 1 such that u(z) ≤
-  M < ∞ and lim supr→1 u(reiθ ) ≤ 0 for all θ ∈ (0, 2π). Show that u(z) ≤ 0. The
-  function in part (a) is useful here.
-
- The following version of the problem is better than the original: Let u be a real-valued harmonic
-```
-function in the disk |z| < 1 such that u(z) ≤ M < ∞ and limr→1 u(reiθ ) ≤ 0 for almost all θ. Show that u(z) ≤ 0.
+(b) Let $u$ be a real-valued harmonic function in the disk $|z|<1$ such that $u(z)\le M<\infty$ and
+\[
+\limsup_{r\to1}u(re^{i\theta})\le0
+\]
+for all $\theta\in(0,2\pi)$. Show that $u(z)\le0$. The function in part (a) is useful here.
 :::

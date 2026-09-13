@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let f ∈ L1 (R). Show that the series ∞ X    1      √ √ f (x − n) n=1 n
-
-converges absolutely for almost all x ∈ R.
+Let $f\in L^1(\mathbb R)$. Show that the series
+\[
+\sum_{n=1}^{\infty}\frac1{\sqrt n}f(x-\sqrt n)
+\]
+converges absolutely for almost all $x\in\mathbb R$.
 :::
