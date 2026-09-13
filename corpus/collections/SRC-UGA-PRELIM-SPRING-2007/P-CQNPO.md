@@ -50,19 +50,15 @@ This function is $C^\infty$ on $\mathbb R$, vanishes on $(-\infty,0]$, and is no
 (\mathbb Z/2\mathbb Z)[x]
 \]
 viewed as a vector space over $\mathbb Z/2\mathbb Z$. Its basis $1,x,x^2,\dots$ is infinite.
-:::
 
 <1>3. For part (c), take
 \[
 \begin{pmatrix}0&1\\0&0\end{pmatrix}.
 \]
 It is not diagonalizable over $\mathbb C$.
-:::
 
 <1>4. For part (d), take
 \[
 \sum_{n=0}^\infty n!\,z^n.
 \]
 Its radius of convergence is $0$.
-:::
-:::

@@ -36,7 +36,6 @@ H^k(S^4,N)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-:::
 ::: {.proof}
 Since $N\simeq T^2$,
 $$
@@ -49,7 +48,6 @@ Insert these groups and $H^0(S^4)=H^4(S^4)=\mathbb Z$, with all intermediate coh
 $$
 H_i(X;\mathbb Z)\cong H^{4-i}(X,\partial X;\mathbb Z).
 $$
-:::
 ::: {.proof}
 The manifold $X$ is a compact orientable $4$-manifold with boundary, since it is a codimension-zero submanifold of the oriented sphere $S^4$. Lefschetz duality therefore applies integrally.
 :::
@@ -63,9 +61,7 @@ H_i(X;\mathbb Z)\cong
 0,&i\ge3.
 \end{cases}
 $$
-:::
 ::: {.proof}
 Combine <1>1--<1>3 and reverse degrees: $H_0\cong H^4\cong\mathbb Z$, $H_1\cong H^3\cong\mathbb Z$, $H_2\cong H^2\cong\mathbb Z^2$, and $H_3,H_4$ correspond to the vanishing relative groups in degrees $1,0$.
-:::
 :::
 

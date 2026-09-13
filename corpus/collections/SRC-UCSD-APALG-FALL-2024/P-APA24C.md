@@ -304,7 +304,6 @@ Hence
 \qquad(1\le k\le n-2).
 \]
 :::
-:::
 
 ::: {.solution}
 Let
@@ -584,7 +583,6 @@ Since this holds for every $(n-k+1)$-dimensional subspace $L$, taking the minimu
 \lambda_k(A).
 \]
 This is exactly the desired interlacing inequality.
-:::
 :::
 
 ::: {.solution}

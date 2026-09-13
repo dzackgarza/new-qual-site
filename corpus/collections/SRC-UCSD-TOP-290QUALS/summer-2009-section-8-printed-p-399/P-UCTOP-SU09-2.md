@@ -26,7 +26,6 @@ A regular hexagon with opposite sides identified by translations is a fundamenta
 $$
 R:T^2\to T^2.
 $$
-:::
 ::: {.proof}
 The stated top/bottom identification differs from the vertical translation by a $60^\circ$ rotation of the hexagonal lattice, which descends to a torus automorphism. Thus
 $$
@@ -38,13 +37,11 @@ $$
 $$
 A=\begin{pmatrix}0&-1\\1&1\end{pmatrix}.
 $$
-:::
 ::: {.proof}
 A $60^\circ$ rotation sends $u$ to $v$ and sends $v$ to $v-u$. These are the two columns of $A$.
 :::
 
 <1>4. The endomorphism $A-I$ of $\mathbb Z^2$ is an isomorphism.
-:::
 ::: {.proof}
 $$
 A-I=\begin{pmatrix}-1&-1\\1&0\end{pmatrix},
@@ -55,7 +52,6 @@ Hence it is unimodular.
 :::
 
 <1>5. On $H_0(T^2)$ and $H_2(T^2)$, the induced map $R_*$ is the identity.
-:::
 ::: {.proof}
 The torus is connected, so every self-map acts as the identity on $H_0$. The rotation preserves orientation and has determinant $1$ on $H_1$, so it acts by $+1$ on the top homology $H_2(T^2)\cong\mathbb Z$.
 :::
@@ -68,7 +64,6 @@ H_i(X;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-:::
 ::: {.proof}
 The Wang sequence contains
 $$
@@ -76,6 +71,5 @@ $$
 \to H_{i-1}(T^2)\xrightarrow{I-R_*}H_{i-1}(T^2)\to\cdots.
 $$
 In degree $1$, $I-A$ is an isomorphism by <1>4, while in degrees $0$ and $2$ the map $I-R_*$ is zero by <1>5. Exactness then gives $H_3(X)\cong H_2(T^2)\cong\mathbb Z$, $H_2(X)\cong H_2(T^2)\cong\mathbb Z$, $H_1(X)\cong H_0(T^2)\cong\mathbb Z$, and connectedness gives $H_0(X)\cong\mathbb Z$.
-:::
 :::
 

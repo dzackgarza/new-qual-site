@@ -65,4 +65,3 @@ since the min is $< 1$, it equals $|f_n(x) - f(x)|$.
 <1>2 and <1>3 give both directions.
 :::
 :::
-:::

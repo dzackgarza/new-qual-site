@@ -108,4 +108,3 @@ This nontrivial semidirect product is nonabelian because the action is nontrivia
 \end{cases}}
 \]
 :::
-:::

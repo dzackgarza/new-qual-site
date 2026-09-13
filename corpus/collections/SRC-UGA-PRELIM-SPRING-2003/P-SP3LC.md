@@ -66,4 +66,3 @@ If $C=0$, then $L=0$ and continuity is immediate. Suppose $C>0$. Given $\varepsi
 
 <1>4. Therefore every linear map $\mathbb R^2\to\mathbb R^2$ is continuous.
 :::
-:::

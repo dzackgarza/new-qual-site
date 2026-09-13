@@ -108,4 +108,3 @@ The subgroup \(J\) is transitive on the six letters by <1>4, whereas \(\Phi(J)\)
 
 If \(\Phi\) were inner, say \(\Phi(g)=sgs^{-1}\), then \(\Phi(J)=sJs^{-1}\) would be conjugate to \(J\), a contradiction. Hence \(\Phi\) is an outer automorphism of \(S_6\).
 :::
-:::

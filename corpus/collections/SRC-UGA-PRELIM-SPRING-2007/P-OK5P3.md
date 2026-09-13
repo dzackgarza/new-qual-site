@@ -57,7 +57,6 @@ Then
 \int_\gamma y\,dx+2x\,dy
 =\iint_D 1\,dA.
 \]
-:::
 
 <1>4. Therefore
 \[
@@ -69,5 +68,4 @@ The region $D$ is one quarter of a disk of radius $2$, so
 \operatorname{area}(D)=\frac14\pi(2)^2=\pi.
 \]
 Combining this with <1>3 gives the result.
-:::
 :::

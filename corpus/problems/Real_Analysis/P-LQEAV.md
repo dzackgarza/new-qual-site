@@ -61,3 +61,5 @@ $$\|a\|_{\ell^q} = \|a\|_{\ell^p} \|b\|_{\ell^q} \le \|a\|_{\ell^p} \cdot 1 = \|
 ::: {.proof}
 The inequality $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$ holds for all $0 < p < q \le \infty$.
 :::
+
+:::

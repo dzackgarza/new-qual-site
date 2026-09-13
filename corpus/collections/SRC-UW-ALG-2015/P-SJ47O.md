@@ -168,4 +168,3 @@ p^2+p-1,
 \]
 which agrees with the number of conjugacy classes computed in <1>5.
 :::
-:::

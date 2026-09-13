@@ -122,4 +122,3 @@ Therefore $-1$ lies in the kernel of the action on every orbit, hence in the ker
 }
 \]
 :::
-:::

@@ -90,3 +90,5 @@ $$\Lambda_g(f) = \int_0^1 f(x) g(x) \, dx = \frac{1}{m(E)} \int_E \frac{\overlin
 ::: {.proof}
 Combining <1>4 and <1>5 yields $\|\Lambda_g\|_{(L^1)^*} = \|g\|_{L^\infty}$.
 :::
+
+:::

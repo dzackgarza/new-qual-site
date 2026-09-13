@@ -49,4 +49,3 @@ For $n=0$, this is immediate from $F_0=F_1=1$. For $n\ge1$, repeated application
 
 <1>3. Hence every two successive Fibonacci numbers are relatively prime.
 :::
-:::

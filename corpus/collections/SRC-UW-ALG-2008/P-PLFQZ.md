@@ -141,4 +141,3 @@ forces $a=b=c=0$ in every case, contradicting $v\ne0$. Hence no invariant line e
 \dim_{\mathbb C}V=2=\lfloor\sqrt6\rfloor.
 \]
 :::
-:::

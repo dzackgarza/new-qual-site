@@ -106,4 +106,3 @@ R/I\cong\mathbb F_{25}[y].
 \]
 Since this is a PID, each monic irreducible \(q(y)\in\mathbb F_{25}[y]\) generates a maximal ideal \((q)\), and distinct monic irreducibles give distinct maximal ideals. By <1>5 there are infinitely many of them. Their inverse images under the quotient map \(R\to R/I\) are therefore infinitely many distinct maximal ideals of \(R\) containing \(I\).
 :::
-:::

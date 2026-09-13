@@ -61,6 +61,8 @@ FINALLY DONE! Conclusion.
 Hopefully the moral is clear here.
 You should definitely think of the concepts like "subgroup under $+$" and "closed under subtraction" in your head, but you're going to have to write out their meanings anyhow.
 So by all means think "closed," but write "for all $x,y\in I$, we have $x-y\in I$."
+:::
+
 :::::: {.solution}
 A subset $I\subseteq R$ is a two-sided ideal precisely when the following three explicit conditions hold:
 

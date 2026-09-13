@@ -76,4 +76,3 @@ Conversely, every element of degree $\ell$ has a unique monic minimal polynomial
 \boxed{\frac{p^\ell-p}{\ell}}.
 \]
 :::
-:::

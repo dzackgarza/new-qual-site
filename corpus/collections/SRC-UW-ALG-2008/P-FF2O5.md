@@ -131,4 +131,3 @@ R/(c)\oplus R/(d)
 \]
 are isomorphic if and only if their two Smith invariant factors, computed as in <1>7, agree pairwise up to associates.
 :::
-:::

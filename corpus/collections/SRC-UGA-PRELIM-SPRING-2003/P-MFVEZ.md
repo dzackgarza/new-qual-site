@@ -34,7 +34,6 @@ For the clockwise orientation the value is $-\frac12$.
 \[
 (0,0)\to(1,0)\to(1,1)\to(0,1)\to(0,0).
 \]
-:::
 
 <1>3. The bottom side contributes $1$.
 ::: {.proof}
@@ -65,7 +64,6 @@ Along the left side, $x=0$, so both terms vanish.
 \[
 1+\frac12-1+0=\frac12.
 \]
-:::
 
 <1>7. Green's theorem gives the same value.
 ::: {.proof}
@@ -79,5 +77,3 @@ Set $P(x,y)=2x$ and $Q(x,y)=x^2y$. For the unit square $D=[0,1]^2$ with positive
 :::
 
 <1>8. Reversing the orientation changes the sign of every line integral, giving $-\frac12$ for clockwise orientation.
-:::
-:::

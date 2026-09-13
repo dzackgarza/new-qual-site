@@ -59,5 +59,4 @@ $$
 ::: {.proof}
 This is the conclusion of <1>5.
 :::
-:::
 

@@ -61,4 +61,3 @@ Combining with <1>3 yields
 \boxed{\widetilde h_n(X)\cong\widetilde h_{n+1}(SX)}.
 \]
 :::
-:::

@@ -83,4 +83,3 @@ Poincaré duality (<1>4.1) would force $H_2 \cong H^2$, but $H_2 = \ZZ/2$ and $H
 <1>4.5 gives the contradiction, so no such $M$ exists.
 :::
 :::
-:::

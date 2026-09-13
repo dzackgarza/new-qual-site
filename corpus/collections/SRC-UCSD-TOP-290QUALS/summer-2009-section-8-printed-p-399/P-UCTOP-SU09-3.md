@@ -41,7 +41,6 @@ H_n(L(p,1)\times L(q,1);\mathbb Z)\cong
 0,&n=5\text{ or }n>6.
 \end{cases}
 $$
-:::
 ::: {.proof}
 For $L(p,1)$ the only nonzero homology groups are $H_0=\mathbb Z$, $H_1=\mathbb Z/p$, and $H_3=\mathbb Z$, and similarly for $L(q,1)$. The tensor terms give
 $$
@@ -52,6 +51,5 @@ H_4:\ \mathbb Z/p\oplus\mathbb Z/q,\qquad
 H_6:\ \mathbb Z.
 $$
 The only nonzero Tor term occurs from $H_1\otimes H_1$ one degree later, contributing $\mathbb Z/d$ to $H_3$. Over $\mathbb Z$ the Künneth short exact sequence splits noncanonically, yielding the displayed groups.
-:::
 :::
 

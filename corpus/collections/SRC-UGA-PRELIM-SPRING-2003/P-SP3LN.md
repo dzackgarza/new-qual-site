@@ -45,4 +45,3 @@ This follows from <1>2 and $\ln 1=0$.
 ::: {.proof}
 The inequality $f(x)>0$ is exactly $x-\ln x>0$.
 :::
-:::

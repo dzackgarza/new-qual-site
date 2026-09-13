@@ -106,4 +106,3 @@ The upper bound is <1>6, the example in <1>7 attains \(0\), and the biquadratic 
 
 If one restricts specifically to separable quartic extensions that are not Galois, then <1>6 shows there can be at most one intermediate field. Both possibilities occur: <1>7 gives none, while \(\mathbb Q(\sqrt[4]{2})/\mathbb Q\) has the intermediate field \(\mathbb Q(\sqrt2)\), and cannot have a second one because two distinct quadratic intermediate fields would make the quartic extension Galois.
 :::
-:::

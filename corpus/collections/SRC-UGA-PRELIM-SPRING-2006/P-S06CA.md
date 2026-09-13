@@ -31,7 +31,6 @@ m,n\ge N\implies |a_m-a_n|<\varepsilon.
 :::
 
 <1>2. Suppose $a_n\to L$ for some $L\in\mathbb R$, and let $\varepsilon>0$.
-:::
 
 <1>3. There exists $N\in\mathbb N$ such that
 \[
@@ -55,5 +54,4 @@ By the triangle inequality and <1>3,
 <1>5. Therefore every convergent real sequence is Cauchy.
 ::: {.proof}
 The condition in <1>4 is exactly the Cauchy condition stated in <1>1.
-:::
 :::

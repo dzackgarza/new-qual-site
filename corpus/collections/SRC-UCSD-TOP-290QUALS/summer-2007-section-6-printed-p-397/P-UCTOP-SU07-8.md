@@ -39,7 +39,6 @@ H_i(X;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-:::
 ::: {.proof}
 By hypothesis $M$ has the homology of $S^3$, so its only nonzero reduced homology group is $\widetilde H_3(M)\cong\mathbb Z$. Apply <1>2.
 :::
@@ -72,9 +71,7 @@ It is an isomorphism on $H_4$ by construction and on $H_0$ because both spaces a
 $$
 \boxed{\Sigma M\simeq S^4}.
 $$
-:::
 ::: {.proof}
 Both spaces are simply connected CW complexes: $M$ is a closed manifold and hence has CW type, and suspension preserves CW type. By the homological Whitehead theorem, a homology equivalence between simply connected CW complexes is a homotopy equivalence. Apply this to $f$.
-:::
 :::
 

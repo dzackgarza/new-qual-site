@@ -136,4 +136,3 @@ M\otimes_A k(\mathfrak p)=0.
 }
 \]
 :::
-:::

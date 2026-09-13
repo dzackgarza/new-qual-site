@@ -60,3 +60,5 @@ $$\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha \lim_{p \to \infty} (\mu(A_\alph
 ::: {.proof}
 Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p} = \|f\|_{L^\infty}$.
 :::
+
+:::

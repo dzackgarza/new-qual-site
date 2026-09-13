@@ -75,4 +75,3 @@ Here the argument is $225^\circ$, and
 ::: {.proof}
 The equation $z^3=2-2i$ has degree $3$, and <1>2 gives three distinct roots.
 :::
-:::

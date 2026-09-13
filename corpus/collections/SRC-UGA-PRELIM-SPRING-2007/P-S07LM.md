@@ -39,7 +39,6 @@ means: for every $\varepsilon>0$ there exists $\delta>0$ such that
 \delta=e^{-1/\varepsilon}.
 \]
 Then $0<\delta<1$.
-:::
 
 <1>3. If $0<x<\delta$, then
 \[
@@ -73,5 +72,4 @@ By <1>3, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
 \]
 ::: {.proof}
 The estimate in <1>4 holds for every $x$ satisfying $0<x-0<\delta$, so it is exactly the right-hand $\varepsilon$-$\delta$ condition from <1>1.
-:::
 :::

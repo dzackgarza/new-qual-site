@@ -64,4 +64,3 @@ A^2=PD^2P^{-1}=P(9I_2)P^{-1}=9I_2
 =\begin{bmatrix}9&0\\0&9\end{bmatrix}.
 \]
 :::
-:::

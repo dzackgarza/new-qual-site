@@ -37,7 +37,6 @@ The underlying lifted $\mathbb{RP}^3$ is $S^3$, with two further $S^3$'s attache
 $$
 H_3(\widetilde X;\mathbb Z)\cong\mathbb Z^3.
 $$
-:::
 ::: {.proof}
 A wedge of three $3$-spheres is simply connected and has no homology in degrees $1,2$. Its third homology is the direct sum of the three fundamental classes.
 :::
@@ -46,7 +45,6 @@ A wedge of three $3$-spheres is simply connected and has no homology in degrees 
 $$
 \pi_3(\widetilde X)\cong H_3(\widetilde X)\cong\mathbb Z^3.
 $$
-:::
 ::: {.proof}
 Since $\widetilde X$ is $2$-connected, the degree-$3$ Hurewicz homomorphism is an isomorphism.
 :::
@@ -55,9 +53,7 @@ Since $\widetilde X$ is $2$-connected, the degree-$3$ Hurewicz homomorphism is a
 $$
 \boxed{\pi_3(\mathbb{RP}^3\vee S^3)\cong\mathbb Z^3}.
 $$
-:::
 ::: {.proof}
 A covering map induces isomorphisms on all homotopy groups in degrees at least $2$, so $\pi_3(X)\cong\pi_3(\widetilde X)$.
-:::
 :::
 

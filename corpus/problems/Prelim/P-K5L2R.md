@@ -129,4 +129,3 @@ Under the Galois correspondence, an intermediate field is Galois over $\mathbb Q
 \]
 They correspond respectively to $K$, $\mathbb Q(\zeta)$, and $\mathbb Q$. The three order-$2$ subgroups are not normal, so the three cubic subfields are not Galois over $\mathbb Q$.
 :::
-:::

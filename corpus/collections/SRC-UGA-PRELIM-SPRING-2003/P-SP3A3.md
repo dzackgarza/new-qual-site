@@ -47,4 +47,3 @@ The identity matrix $I_3$ has rank $3$, whereas <1>2 gives $\operatorname{rank}(
 ::: {.proof}
 The second required equality is already impossible by <1>3.
 :::
-:::

@@ -46,13 +46,11 @@ H_i(X;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-:::
 ::: {.proof}
 Reduced homology of a finite wedge is the direct sum of the reduced homologies of its summands. Apply <1>1 and $\widetilde H_3(S^3)=\mathbb Z$.
 :::
 
 <1>3. No closed orientable $3$-manifold can have these homology groups.
-:::
 ::: {.proof}
 Suppose $M$ were such a manifold. Poincaré duality gives
 $$
@@ -63,6 +61,5 @@ $$
 H^1(M;\mathbb Z)\cong\operatorname{Hom}(H_1(M),\mathbb Z)
 $$
 because $H_0(M)$ is free. If $H_1(M)\cong\mathbb Z/5$, this Hom group is zero. Thus $H_2(M)=0$, contradicting the required $H_2(M)\cong\mathbb Z/5$.
-:::
 :::
 

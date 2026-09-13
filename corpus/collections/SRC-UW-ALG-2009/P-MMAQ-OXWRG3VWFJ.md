@@ -209,4 +209,3 @@ or
 \boxed{G\cong C_7\times C_7\times C_{41}\text{ with }18\text{ intermediate subgroups}}.
 \]
 :::
-:::

@@ -152,4 +152,3 @@ Therefore
 \]
 By definition, the minimal polynomial $m_{\alpha,F}$ is irreducible in $F[x]$. Thus $F[x]$ contains an irreducible polynomial of degree $n$.
 :::
-:::

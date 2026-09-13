@@ -98,4 +98,3 @@ for a suitable choice of square root inside an algebraic closure. Hence $F(\sqrt
 ::: {.proof}
 Combine <1>3 and <1>4.
 :::
-:::

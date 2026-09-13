@@ -49,5 +49,3 @@ for every $m\ge N$. The right-hand partial sums are bounded because $\sum \sqrt{
 :::
 
 <1>5. Therefore it is impossible for $\sum a_i$ to diverge while $\sum\sqrt{a_i}$ converges.
-:::
-:::

@@ -60,3 +60,5 @@ $$\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge M \lim_{p \to \infty} (\mu(A_M))^{1/
 ::: {.proof}
 Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
 :::
+
+:::

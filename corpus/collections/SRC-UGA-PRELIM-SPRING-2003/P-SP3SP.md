@@ -68,4 +68,3 @@ which belongs to $\operatorname{span}(v_1,\dots,v_k)$.
 ::: {.proof}
 This follows from the two inclusions in <1>2 and <1>3.
 :::
-:::

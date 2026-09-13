@@ -47,9 +47,11 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
     <2>1. ($\implies$): Assume $x \in J(R)$, so $x \in \mathfrak{m}$ for every maximal ideal $\mathfrak{m}$.
         ::: {.proof}
         Let $r \in R$. Suppose for contradiction that $1 + r x$ is not a unit. Then the principal ideal $\langle 1 + r x \rangle$ is proper. By Part (a), $\langle 1 + r x \rangle \subseteq \mathfrak{m}_0$ for some maximal ideal $\mathfrak{m}_0$. Since $x \in J(R)$, $x \in \mathfrak{m}_0$, and hence $r x \in \mathfrak{m}_0$. Since $1 + r x \in \mathfrak{m}_0$ and $r x \in \mathfrak{m}_0$, we have $1 = (1 + r x) - r x \in \mathfrak{m}_0$, which implies $\mathfrak{m}_0 = R$, contradicting that $\mathfrak{m}_0$ is proper. Thus $1 + r x$ must be a unit.
+        :::
     <2>2. ($\impliedby$): Assume $1 + r x \in R^\times$ for all $r \in R$.
         ::: {.proof}
         Suppose for contradiction that $x \notin J(R)$. Then there exists a maximal ideal $\mathfrak{m}$ such that $x \notin \mathfrak{m}$. Since $\mathfrak{m}$ is maximal and $x \notin \mathfrak{m}$, the ideal $\mathfrak{m} + \langle x \rangle = R$. Thus $1 \in \mathfrak{m} + \langle x \rangle$, so there exist $m \in \mathfrak{m}$ and $s \in R$ such that $1 = m - s x$. Rearranging gives $m = 1 + s x$. By hypothesis, choosing $r = s \in R$, $1 + s x$ is a unit, so $m \in \mathfrak{m}$ is a unit. This implies $\mathfrak{m} = R$, contradicting that $\mathfrak{m}$ is a proper ideal. Thus $x \in \mathfrak{m}$ for all maximal ideals, so $x \in J(R)$.
+        :::
 
 :::
 

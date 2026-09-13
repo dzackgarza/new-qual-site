@@ -72,4 +72,3 @@ By <1>4, $\beta\in K$, so $F(\beta)\subseteq K$. By <1>5, $F(\beta)=N$, hence $N
 ::: {.proof}
 We have shown that every element algebraic over $K$ already belongs to $K$. Equivalently, $K$ has no proper algebraic extension. If a nonconstant polynomial in $K[x]$ had no root in $K$, an irreducible factor of degree at least $2$ would have a root in some algebraic extension of $K$, contradicting <1>6. Thus every nonconstant polynomial over $K$ has a root in $K$, so $K$ is algebraically closed.
 :::
-:::

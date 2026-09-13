@@ -121,4 +121,3 @@ so $a$ and $b$ do not commute; hence it is nonabelian.
 \boxed{C_7\rtimes C_3\text{ with nontrivial action}}.
 \]
 :::
-:::

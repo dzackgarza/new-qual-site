@@ -108,4 +108,3 @@ Thus <1>3 would force $1=-1$, a contradiction.
 ::: {.proof}
 The assumption in <1>1 led to the contradiction in <1>4.
 :::
-:::

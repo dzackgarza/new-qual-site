@@ -33,7 +33,6 @@ Simple connectivity gives $H_1=0$. Since $M$ is simply connected, the Hurewicz m
 $$
 b_4=b_2=0,\qquad b_5=b_1=0,\qquad b_6=b_0=1.
 $$
-:::
 ::: {.proof}
 For the closed orientable $6$-manifold $M$, Poincaré duality over $\mathbb Q$ gives $H_i(M;\mathbb Q)\cong H_{6-i}(M;\mathbb Q)^*$. Combine this with <1>2 and connectedness.
 :::
@@ -52,13 +51,11 @@ $$
 \chi(M)=2-b_3
 $$
 is even.
-:::
 ::: {.proof}
 Using <1>2--<1>3,
 $$
 \chi(M)=b_0-b_1+b_2-b_3+b_4-b_5+b_6=1-b_3+1=2-b_3.
 $$
 By <1>4, $b_3$ is even.
-:::
 :::
 

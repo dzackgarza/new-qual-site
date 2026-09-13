@@ -38,7 +38,6 @@ mean respectively that $x$ is a bird, can swim, is a fish, can fly, is a whale, 
 \Rightarrow
 \left[\forall x\,(W(x)\Rightarrow \neg K(x))\right].
 \]
-:::
 
 <1>3. Its contrapositive is
 \[
@@ -69,7 +68,6 @@ and
 :::
 
 <1>4. In English, the contrapositive is: "If some whale can walk, then some bird cannot swim and no fish can fly."
-:::
 
 <1>5. The negation of the original statement is
 \[
@@ -82,5 +80,3 @@ The negation of an implication $P\Rightarrow Q$ is $P\land\neg Q$. Apply this wi
 :::
 
 <1>6. In English, the negation is: "All birds can swim or some fish can fly, and some whale can walk."
-:::
-:::

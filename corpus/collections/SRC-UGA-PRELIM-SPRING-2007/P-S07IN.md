@@ -66,4 +66,3 @@ for every positive integer $n$.
 ::: {.proof}
 This follows from <1>2 and <1>3 by mathematical induction.
 :::
-:::

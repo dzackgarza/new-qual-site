@@ -52,10 +52,8 @@ every measurable function is a pointwise limit of simple functions (<1>2), and a
 $E$ measurable means $E = B \cup N$ where $B$ is Borel (e.g. a $G_\delta$) and $N$ is null.
 :::
 Then $\chi_E = \chi_B$ on $\RR \setminus N$, i.e. almost everywhere, and $\chi_B$ is Borel.
-:::
 
 <1>5. Conclude part (2).
 ::: proof
 By <1>3 and <1>4, the simple approximants can be replaced almost everywhere by Borel simple functions. Taking the corresponding pointwise limit gives a Borel measurable function $g$ with $g=f$ almost everywhere.
-:::
 :::

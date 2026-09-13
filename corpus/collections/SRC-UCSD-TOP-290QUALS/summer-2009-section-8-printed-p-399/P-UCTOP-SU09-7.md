@@ -26,7 +26,6 @@ For a simply connected space, the degree-$2$ Hurewicz map $\pi_2(X)\to H_2(X)$ i
 $$
 \pi_3(X)\xrightarrow{\sim}H_3(X)\cong\mathbb Z^2.
 $$
-:::
 ::: {.proof}
 Apply the Hurewicz theorem in the first possible nonzero homotopy degree after <1>1.
 :::
@@ -35,13 +34,11 @@ Apply the Hurewicz theorem in the first possible nonzero homotopy degree after <
 $$
 f=f_1\vee f_2:S^3\vee S^3\to X.
 $$
-:::
 ::: {.proof}
 The isomorphism in <1>2 lets us represent any chosen basis of $H_3(X)$ by elements of $\pi_3(X)$. The common basepoint gives the wedge map.
 :::
 
 <1>4. The map $f$ is an isomorphism on integral homology in every degree.
-:::
 ::: {.proof}
 It is an isomorphism on $H_3$ by construction and on $H_0$ because both spaces are connected. The source and target have zero homology in every other degree by the hypothesis on $X$ and the homology of a wedge of two $3$-spheres.
 :::
@@ -50,9 +47,7 @@ It is an isomorphism on $H_3$ by construction and on $H_0$ because both spaces a
 $$
 \boxed{X\simeq S^3\vee S^3}.
 $$
-:::
 ::: {.proof}
 Both spaces are simply connected CW complexes. The homological Whitehead theorem says that a homology equivalence between simply connected CW complexes is a homotopy equivalence. Apply it to <1>4.
-:::
 :::
 

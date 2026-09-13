@@ -105,5 +105,3 @@ Let \(1\ne g\in G\). The cyclic subgroup \(\langle g\rangle\) is normal because 
 \[
 \boxed{G\cong C_p\text{ for some prime }p}.
 \]
-:::
-:::

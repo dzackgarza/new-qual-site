@@ -83,4 +83,3 @@ T(x,y)=\left(\frac{4x-2y}{5},\frac{-2x+y}{5}\right),
 \]
 whose coefficient matrix is the displayed matrix.
 :::
-:::

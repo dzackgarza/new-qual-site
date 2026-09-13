@@ -52,7 +52,6 @@ The monodromy of a loop swaps the two sheets exactly when the total exponent of 
 $$
 a^2,\quad b,\quad c,\quad aba^{-1},\quad aca^{-1}.
 $$
-:::
 ::: {.proof}
 Apply Reidemeister--Schreier to the index-$2$ subgroup using transversal $\{1,a\}$. The five nontrivial Schreier generators are precisely the displayed elements, as expected from the rank formula $1+2(3-1)=5$.
 :::
@@ -68,6 +67,5 @@ $$
 \chi(X_4)=1-4=-3,\qquad \chi(X_3)=1-3=-2,
 $$
 so one would need $-3=-2d$, impossible for an integer $d$.
-:::
 :::
 

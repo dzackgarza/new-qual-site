@@ -29,7 +29,6 @@ If $M$ is disconnected, the argument applies to any component meeting the bounda
 $$
 \partial[M,\partial M]=[\partial M]\in H_{n-1}(\partial M;\mathbb Z).
 $$
-:::
 ::: {.proof}
 This is the standard boundary formula for the relative fundamental class of a compact oriented manifold. With the boundary orientation, $[\partial M]$ is the sum of the fundamental classes of the boundary components and is nonzero.
 :::
@@ -38,7 +37,6 @@ This is the standard boundary formula for the relative fundamental class of a co
 $$
 i_*[\partial M]=0.
 $$
-:::
 ::: {.proof}
 Exactness of
 $$
@@ -49,7 +47,6 @@ shows that every element in the image of $\partial$ lies in the kernel of $i_*$.
 :::
 
 <1>4. If a retraction $r:M\to\partial M$ existed, then $i_*$ would be injective on homology.
-:::
 ::: {.proof}
 A retraction satisfies $r\circ i=\operatorname{id}_{\partial M}$. Therefore
 $$
@@ -59,9 +56,7 @@ so $i_*$ has a left inverse and is injective.
 :::
 
 <1>5. This contradicts <1>2--<1>3. Hence no retraction $M\to\partial M$ exists.
-:::
 ::: {.proof}
 The nonzero class $[\partial M]$ lies in $\ker i_*$, contradicting injectivity from <1>4.
-:::
 :::
 
