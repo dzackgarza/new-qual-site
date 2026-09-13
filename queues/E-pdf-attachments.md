@@ -342,7 +342,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [From Stein to Weinstein and Back.pdf](assets/attachments/extracted/From Stein to Weinstein and Back.md) (19152L, 24 problems) — UNL — alg-geom — Spring 19
 
-- [ ] [McMullen_-_Advanced_Complex_Analysis.pdf](assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md) (5772L, 260 problems) — UNL — alg-geom
+- [x] [McMullen_-_Advanced_Complex_Analysis.pdf](assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md) (5772L, 260 problems) — Harvard — complex-analysis — 2017 — disposition 2026-09-13: C. McMullen's *Advanced Complex Analysis*, Harvard Math 213a course notes dated December 4, 2017, are complete as `SRC-HARVARD-MATH213A-2017`. The source has 156 authored exercise appearances across its opening six review exercises, three embedded exercises, and Sections 1.8, 2.5, 3.4, 4.4, and 5.5; all are represented in source order, with exact repeated problems reused rather than duplicated. The inventory's `260 problems`, `UNL`, and `alg-geom` labels were stale heuristic metadata.
 
 - [x] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019 — disposition 2026-09-13: Mike Usher’s UGA Math 8230 Symplectic Topology notes, Spring 2019, ingested as `SRC-UGA-MATH8230-SPRING-2019`. The collection retains the PDF as provenance and contains all 17 actual numbered exercise headings in source order; the inventory count of 18 included a later prose cross-reference to Exercise 4.5.
 

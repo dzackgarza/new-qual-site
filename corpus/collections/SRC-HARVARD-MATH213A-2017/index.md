@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/McMullen_-_Advanced_Complex_Analysis.pdf
 source:
@@ -165,6 +165,34 @@ source:
     - E-HM213A17-124
     - E-HM213A17-125
     - E-HM213A17-126
+  - name: Section 5.5 exercises
+    problems:
+    - E-HM213A17-127
+    - E-HM213A17-128
+    - E-HM213A17-129
+    - E-HM213A17-130
+    - E-HM213A17-131
+    - E-HM213A17-132
+    - E-HM213A17-133
+    - E-HM213A17-134
+    - E-HM213A17-135
+    - E-HM213A17-136
+    - E-HM213A17-137
+    - E-HM213A17-138
+    - E-HM213A17-139
+    - E-HM213A17-140
+    - E-HM213A17-141
+    - E-HM213A17-142
+    - E-HM213A17-143
+    - E-HM213A17-144
+    - E-HM213A17-145
+    - E-HM213A17-146
+    - E-HM213A17-147
+    - E-HM213A17-148
+    - E-HM213A17-149
+    - E-HM213A17-150
+    - E-HM213A17-151
+    - E-HM213A17-152
 ---
 
 
