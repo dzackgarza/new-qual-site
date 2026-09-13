@@ -344,7 +344,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [McMullen_-_Advanced_Complex_Analysis.pdf](assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md) (5772L, 260 problems) — UNL — alg-geom
 
-- [ ] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019
+- [x] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019 — disposition 2026-09-13: Mike Usher’s UGA Math 8230 Symplectic Topology notes, Spring 2019, ingested as `SRC-UGA-MATH8230-SPRING-2019`. The collection retains the PDF as provenance and contains all 17 actual numbered exercise headings in source order; the inventory count of 18 included a later prose cross-reference to Exercise 4.5.
 
 - [x] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom — disposition 2026-09-10: expository Real Analysis course notes rather than an exam sitting; already linked from `wiki/real-analysis/resources/books-notes.md`, so no duplicate collection or problem-card intake is warranted.
 
