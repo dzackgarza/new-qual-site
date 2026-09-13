@@ -67,9 +67,19 @@ This proves the first claim.
 :::
 
 <1>2. The second claim.
+<2>1. Its first subclaim.
     ::: {.proof}
-    This proves the second claim and must remain hidden with the solution.
+    This proves the first subclaim and must remain hidden with the solution.
     :::
+<2>2. Its second subclaim.
+::: {.proof}
+This proves the second subclaim.
+:::
+
+<1>3. The third claim.
+::: {.proof}
+<1>2.2.
+:::
 :::
 """
 
@@ -129,15 +139,18 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path
         "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
     ).fetchall()
     assert [kind for kind, _ in sections].count("solution") == 1
-    assert [kind for kind, _ in sections].count("proof") == 2
+    assert [kind for kind, _ in sections].count("proof") == 4
     solution = next(text for kind, text in sections if kind == "solution")
     assert "This proves the first claim" in solution
-    assert "This proves the second claim and must remain hidden with the solution" in solution
+    assert "This proves the first subclaim and must remain hidden with the solution" in solution
 
     page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
     disclosures = page.root.find_all("details", **{"class": "reveal qual-solution"})
     assert len(disclosures) == 1
     disclosure_text = " ".join(disclosures[0].text.split())
     assert "This proves the first claim" in disclosure_text
-    assert "This proves the second claim and must remain hidden with the solution" in disclosure_text
+    assert "This proves the first subclaim and must remain hidden with the solution" in disclosure_text
+    numbers = [node.text.strip() for node in disclosures[0].find_all("span", **{"class": "pf-number"})]
+    assert numbers == ["1.", "2.", "2.1.", "2.2.", "3."], numbers
+    assert disclosure_text.endswith("2.2.")
     assert ":::" not in page.root.text

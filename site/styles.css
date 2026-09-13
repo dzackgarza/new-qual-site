@@ -1080,6 +1080,21 @@ details.reveal[open] > summary {
   padding-left: 1.8rem;
   text-indent: -1.8rem;
 }
+
+/* A proof div can separate sibling Lamport markers in the Pandoc block tree.
+   Such a marker still carries its authored level even when it cannot remain
+   physically nested under the preceding pf-step, so preserve the visual depth
+   from the level class itself. Nested groups already receive their indentation
+   from the parent step and therefore reset this extra margin. */
+.pf-group > .pf-step.pf-level-2 {
+  margin-left: 1.4rem;
+}
+.pf-group > .pf-step.pf-level-3 {
+  margin-left: 2.8rem;
+}
+.pf-step > .pf-group > .pf-step {
+  margin-left: 0;
+}
 .pf-number {
   font-variant-numeric: tabular-nums;
   color: var(--muted);

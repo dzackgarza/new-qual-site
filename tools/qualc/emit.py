@@ -396,7 +396,7 @@ def _sidenote(
     ]
 
 
-_LAMPORT_MARKER = re.compile(r"^<(\d)>((?:\d+\.)*\d+)\.\s*$")
+_LAMPORT_MARKER = re.compile(r"^<(\d)>(\d+)\.\s*$")
 _LAMPORT_DIVS = {"solution", "proof", "hint", "strategy", "blockquote"}
 
 
@@ -407,18 +407,33 @@ def _marker_level(text: str) -> tuple[int, str] | None:
     return (int(match.group(1)), match.group(2))
 
 
+def _lamport_label(level: int, number: str, state: dict[int, str]) -> str:
+    """Resolve one authored local Lamport number against the current outline.
+
+    Authors write local numbers at each level: `<1>2.` followed by `<2>1.` is
+    rendered as `2.` and `2.1.`.  The state must survive intervening proof divs;
+    otherwise every paragraph starts a new outline and all top-level steps become
+    `1.`.  A missing parent is malformed structure, but rendering the authored
+    local number is safer than inventing a parent.
+    """
+    state[level] = number
+    for deeper in [key for key in state if key > level]:
+        del state[deeper]
+    parts = [state.get(depth) for depth in range(1, level + 1)]
+    if any(part is None for part in parts):
+        return number
+    return ".".join(cast(list[str], parts))
+
+
 def _lamport_group(
     segments: list[tuple[int, str, list[pf.Inline]]],
-    prefix: tuple[int, ...] = (),
+    state: dict[int, str],
 ) -> pf.Div:
     children: list[pf.Block] = []
     i = 0
-    index = 0
     while i < len(segments):
         level, num, content = segments[i]
-        index += 1
-        path = prefix + (index,)
-        label = ".".join(str(part) for part in path)
+        label = _lamport_label(level, num, state)
         body: list[pf.Block] = [pf.Para(pf.Span(pf.Str(f"{label}."), classes=["pf-number"]), *content)]
         i += 1
         deeper: list[tuple[int, str, list[pf.Inline]]] = []
@@ -426,12 +441,12 @@ def _lamport_group(
             deeper.append(segments[i])
             i += 1
         if deeper:
-            body.append(_lamport_group(deeper, path))
+            body.append(_lamport_group(deeper, state))
         children.append(pf.Div(*body, classes=["pf-step", f"pf-level-{level}"]))
     return pf.Div(*children, classes=["pf-group"])
 
 
-def _lamport_paragraph(paragraph: pf.Para | pf.Plain) -> pf.Block:
+def _lamport_paragraph(paragraph: pf.Para | pf.Plain, state: dict[int, str]) -> pf.Block:
     """Split a marker-carrying paragraph into a structured pf-group.
 
     Authors write `<1>1. claim. <2>1. because …` inside one wrapped paragraph;
@@ -461,10 +476,12 @@ def _lamport_paragraph(paragraph: pf.Para | pf.Plain) -> pf.Block:
     kept = [segment for segment in segments if segment[0] >= 0]
     if not kept:
         return paragraph
-    return _lamport_group(kept)
+    if len(kept) == 1 and not kept[0][2]:
+        return paragraph.walk(_lamport_refs)
+    return _lamport_group(kept, state)
 
 
-def _lamport_blocks(blocks: list[pf.Block]) -> list[pf.Block]:
+def _lamport_blocks(blocks: list[pf.Block], state: dict[int, str]) -> list[pf.Block]:
     out: list[pf.Block] = []
     for block in blocks:
         if isinstance(block, pf.Para | pf.Plain):
@@ -473,18 +490,18 @@ def _lamport_blocks(blocks: list[pf.Block]) -> list[pf.Block]:
                 if isinstance(inline, pf.Str) and _marker_level(inline.text or "") is not None:
                     seen = True
                     break
-            out.append(_lamport_paragraph(block) if seen else block)
+            out.append(_lamport_paragraph(block, state) if seen else block)
         elif isinstance(block, pf.Div):
-            block.content = _lamport_blocks(list(block.content))
+            block.content = _lamport_blocks(list(block.content), state)
             out.append(block)
         elif isinstance(block, pf.BulletList | pf.OrderedList):
             for item in block.content:
-                item.content = _lamport_blocks(list(item.content))
+                item.content = _lamport_blocks(list(item.content), state)
             out.append(block)
         else:
             block_type = type(block).__name__.lower()
             if block_type in _LAMPORT_DIVS and hasattr(block, "content"):
-                block.content = _lamport_blocks(list(block.content))
+                block.content = _lamport_blocks(list(block.content), state)
             out.append(block)
     return out
 
@@ -516,7 +533,7 @@ def _lamport(element: pf.Element, document: pf.Doc) -> pf.Element | None:
         return None
     if not _LAMPORT_DIVS.intersection(element.classes):
         return None
-    element.content = _lamport_blocks(list(element.content))
+    element.content = _lamport_blocks(list(element.content), {})
     element.walk(_lamport_refs, element)
     return element
 
@@ -532,17 +549,14 @@ def _lamport_rewrite_ref(inline: object) -> object:
 
 def _lamport_json_group(
     segments: list[tuple[int, str, list[object]]],
-    prefix: tuple[int, ...] = (),
+    state: dict[int, str],
 ) -> dict:
     """A nested `pf-group` of `pf-step`s, as raw pandoc JSON."""
     children: list[dict] = []
     i = 0
-    index = 0
     while i < len(segments):
-        level, _num, content = segments[i]
-        index += 1
-        path = prefix + (index,)
-        label = ".".join(str(part) for part in path)
+        level, num, content = segments[i]
+        label = _lamport_label(level, num, state)
         number: list[object] = [
             {
                 "t": "Span",
@@ -556,12 +570,12 @@ def _lamport_json_group(
             deeper.append(segments[i])
             i += 1
         if deeper:
-            body.append(_lamport_json_group(deeper, path))
+            body.append(_lamport_json_group(deeper, state))
         children.append({"t": "Div", "c": [["", ["pf-step", f"pf-level-{level}"], []], body]})
     return {"t": "Div", "c": [["", ["pf-group"], []], children]}
 
 
-def _lamport_json_paragraph(inlines: list[object]) -> dict | None:
+def _lamport_json_paragraph(inlines: list[object], state: dict[int, str]) -> dict | None:
     """Split a flat marker-carrying inline list into one nested group, or None.
 
     `<1>1. claim. <2>1. because …` reads as one flat paragraph; pandoc does
@@ -588,10 +602,12 @@ def _lamport_json_paragraph(inlines: list[object]) -> dict | None:
     kept = [segment for segment in segments if segment[0] >= 0]
     if not kept:
         return None
-    return _lamport_json_group(kept)
+    if len(kept) == 1 and not kept[0][2]:
+        return None
+    return _lamport_json_group(kept, state)
 
 
-def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
+def _lamport_json_blocks(blocks: list[dict], state: dict[int, str] | None = None) -> list[dict]:
     """`_lamport_blocks` on raw pandoc JSON plus the ref rewrite.
 
     The card-page path keeps bodies as raw JSON (see `_rename_json`) rather
@@ -602,13 +618,16 @@ def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
     `<1>1.4` refs.
     """
     out: list[dict] = []
+    current = state
     for block in blocks:
         t = block.get("t")
         if t in ("Para", "Plain"):
             inlines = block.get("c", [])
             if any(isinstance(x, dict) and x.get("t") == "Str" and _marker_level(x.get("c", "")) is not None for x in inlines):
-                grouped = _lamport_json_paragraph(inlines)
+                local_state = current if current is not None else {}
+                grouped = _lamport_json_paragraph(inlines, local_state)
                 if grouped is not None:
+                    current = local_state
                     out.append(grouped)
                     continue
             block["c"] = [_lamport_rewrite_ref(x) for x in inlines]
@@ -616,20 +635,23 @@ def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
         elif t == "Div":
             classes = block.get("c", [["", [], []]])[0][1]
             if _LAMPORT_DIVS.intersection(classes):
-                block["c"][1] = _lamport_json_blocks(block["c"][1])
+                local_state = current if current is not None else {}
+                block["c"][1] = _lamport_json_blocks(block["c"][1], local_state)
+                if current is not None:
+                    current = local_state
             out.append(block)
         elif t in ("BulletList", "OrderedList"):
             for item in block.get("c", []):
                 if isinstance(item, dict) and item.get("t") == "ListItem":
-                    item["c"] = _lamport_json_blocks(item["c"])
+                    item["c"] = _lamport_json_blocks(item["c"], current)
             out.append(block)
         elif t == "BlockQuote":
             quoted: list[object] = []
             for q in block.get("c", []):
                 if isinstance(q, list):
-                    quoted.append(_lamport_json_blocks(q))
+                    quoted.append(_lamport_json_blocks(q, current))
                 elif isinstance(q, dict):
-                    quoted.append(_lamport_json_blocks([q])[0])
+                    quoted.append(_lamport_json_blocks([q], current)[0])
                 else:
                     quoted.append(q)
             block["c"] = quoted
