@@ -422,19 +422,19 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012
 
-- [ ] [Summer80.pdf](assets/attachments/extracted/Summer80.md) (163L, 13 problems) — complex-analysis — Summer 19
+- [x] [Summer80.pdf](assets/attachments/extracted/Summer80.md) (163L, 13 problems) — complex-analysis — Summer 19 — disposition 2026-09-12: Berkeley Preliminary Exam, Summer 1980, ingested as `SRC-BERKELEY-PRELIM-SUMMER-1980` with twenty source-order cards `P-BERK80S-01` through `P-BERK80S-20`. The inventory count of 13 was incomplete; the PDF explicitly contains Problems 1–20. OCR-sensitive matrix equations in Problems 2 and 14 are preserved/checked against rendered PDF source pages.
 
-- [ ] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19
+- [x] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19 — disposition 2026-09-12: Berkeley Preliminary Exam, Summer 1984, ingested as `SRC-BERKELEY-PRELIM-SUMMER-1984` with twenty source-order cards `P-BERK84S-01` through `P-BERK84S-20`. The inventory count of 6 was a false negative: the PDF explicitly contains Problems 1–20; PDF text-layer checks repaired the OCR of Problem 13 (`2×2`, not `Q×Q`) and restored Problem 20 as the final real-line integral.
 
 - [x] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: canonical retained copy of Kari Eifler's *Solutions to Texas A&M's Real Analysis Qual Courses*. It is already linked from `wiki/real-analysis/resources/solutions.md`; this derivative solutions packet is not an original exam sitting, so intake stops at the existing resource representation rather than creating a duplicate qualifying-exam collection.
 
-- [ ] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders**
+- [x] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders** — disposition 2026-09-12: University of Oregon Fall 2019 Topology Qualifying Exam solution packet, ingested as `SRC-UO-TOP-FALL-2019` with ten source-order problem cards `P-UOT19-01` through `P-UOT19-10`; the inventory `0 problems` count was a false negative caused by the solution-packet extraction layout. Diagram-dependent prompts retain rendered source pages.
 
-- [ ] [UCLA_Solutions.pdf](assets/attachments/extracted/UCLA_Solutions.md) (11367L, 13 problems) — UCLA — applied-algebra — January 25
+- [x] [UCLA_Solutions.pdf](assets/attachments/extracted/UCLA_Solutions.md) (11367L, 13 problems) — UCLA — applied-algebra — January 25 — disposition 2026-09-13: UCLA Analysis Qualifying Exam Solutions compendium (updated January 25, 2019), covering twenty sittings from Spring 2009 through Fall 2018. Existing corpus collections already represented Spring 2009 through Spring 2014. Intake completed the remaining nine sittings as `SRC-UCLA-RA-FALL-2014`, `SRC-UCLA-RA-SPRING-2015`, `SRC-UCLA-RA-FALL-2015`, `SRC-UCLA-RA-SPRING-2016`, `SRC-UCLA-RA-FALL-2016`, `SRC-UCLA-RA-SPRING-2017`, `SRC-UCLA-RA-FALL-2017`, `SRC-UCLA-RA-SPRING-2018`, and `SRC-UCLA-RA-FALL-2018`, with twelve source-order problem cards in each. Official UCLA exam PDFs were used to source-check seven text-bearing sittings; Fall 2014 and Fall 2015 are image-only and were transcribed from the retained compendium. The inventory count `13 problems` counted OCR headings rather than the compendium contents and was not a source count.
 
 ## Final exams (1)
 
-- [ ] [Spring2020Final.pdf](assets/attachments/extracted/Spring2020Final.md) (47L, 6 problems) — UNL — complex-analysis — Spring 2020
+- [x] [Spring2020Final.pdf](assets/attachments/extracted/Spring2020Final.md) (47L, 6 problems) — UNL — complex-analysis — Spring 2020 — disposition 2026-09-12: the queue institution label was incorrect; the source is UGA MATH 8150 Spring 2020 Final Exam (Jingzhi Tie), ingested as `SRC-UGA-MATH8150-SPRING-2020-FINAL`. Five source-local cards represent Problems 1–3 and 5–6; Problem 4 exactly reuses canonical `P-XKOQR` from UGA Fall 2019.
 
 ## Midterm exams (4)
 
@@ -453,25 +453,30 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [calculus_practice_test3.pdf](assets/attachments/extracted/calculus_practice_test3.md) (151L, 9 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: undergraduate calculus multiple-choice practice material, already retained at `wiki/prelim/resources/problems.md`. The prior Queue-E audit (`queues/E-batch-03.md`) explicitly classifies it as “not a collection candidate,” and `queues/E-corrections.md` records numerous scanner gaps/unreadable stems.
   Reference-only intake therefore stops at the existing resource representation; no qualifying-exam collection or cards are manufactured.
 
-- [ ] [multivariable_calculus.pdf](assets/attachments/extracted/multivariable_calculus.md) (127L, 6 problems) — no metadata **OCR: image placeholders**
+- [x] [multivariable_calculus.pdf](assets/attachments/extracted/multivariable_calculus.md) (127L, 6 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: undergraduate multivariable-calculus multiple-choice practice material with an answer key, already retained as “Multivariable-calculus practice” on `wiki/prelim/resources/solutions.md`. This is reference/practice material rather than a qualifying-exam source, so intake stops at the existing resource representation; no qual cards manufactured.
 
 ## Exam or problem set (1)
 
-- [ ] [871-872January_2006_852-871.pdf](assets/attachments/extracted/871-872January_2006_852-871.md) (39L, 0 problems) — topology
+- [x] [871-872January_2006_852-871.pdf](assets/attachments/extracted/871-872January_2006_852-871.md) (39L, 0 problems) — topology — disposition 2026-09-12: UNL Mathematics Qualifying Exam 852/970, January 2006, ingested as `SRC-UNL-QUAL-852-970-JANUARY-2006`. The inventory zero was a false negative: the paper has ten questions.
+  Section A is represented by new cards `P-UNL852970-06A1` through `P-UNL852970-06A5`; Section B is verbatim the first five questions of `SRC-TOP-UNL-2006Q1` and reuses `P-T06Q1-1` through `P-T06Q1-5`.
 
 ## Workshop materials (6)
 
-- [ ] [day_1_compactness.pdf](assets/attachments/extracted/day_1_compactness.md) (31L, 9 problems) — topology — June 2011
+- [x] [day_1_compactness.pdf](assets/attachments/extracted/day_1_compactness.md) (31L, 9 problems) — topology — June 2011 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as `Revised packet — Compactness`. Its three warm-ups and nine numbered problems are represented in source order by the twelve listed workshop/canonical cards; the PDF is already collection provenance.
 
-- [ ] [day_2_connected_path_connnected.pdf](assets/attachments/extracted/day_2_connected_path_connnected.md) (31L, 10 problems) — topology — June 2004
+- [x] [day_2_connected_path_connnected.pdf](assets/attachments/extracted/day_2_connected_path_connnected.md) (31L, 10 problems) — topology — June 2004 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as `Revised packet — Connectedness and path connectedness`. Its two warm-ups and ten numbered problems are represented in source order by the twelve listed workshop/canonical cards; the PDF is already collection provenance.
 
-- [ ] [day_4_homotopy_retractions.pdf](assets/attachments/extracted/day_4_homotopy_retractions.md) (39L, 8 problems) — topology — June 2014
+- [x] [day_4_homotopy_retractions.pdf](assets/attachments/extracted/day_4_homotopy_retractions.md) (39L, 8 problems) — topology — June 2014 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Homotopy and retractions` section.
+  Its two warm-ups and eight numbered problems are represented in source order by the ten listed workshop/canonical cards; the vendored PDF is already collection provenance.
 
-- [ ] [day_5_fundamental_group.pdf](assets/attachments/extracted/day_5_fundamental_group.md) (33L, 9 problems) — topology — June 2005 **OCR: image placeholders**
+- [x] [day_5_fundamental_group.pdf](assets/attachments/extracted/day_5_fundamental_group.md) (33L, 9 problems) — topology — June 2005 **OCR: image placeholders** — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Fundamental group` section.
+  The three warm-ups, seven numbered problems, and two covering-space bonus problems are represented in source order by the twelve listed workshop/canonical cards; the vendored PDF is already collection provenance.
 
-- [ ] [day_6_covering_spaces.pdf](assets/attachments/extracted/day_6_covering_spaces.md) (31L, 11 problems) — topology — June 2005
+- [x] [day_6_covering_spaces.pdf](assets/attachments/extracted/day_6_covering_spaces.md) (31L, 11 problems) — topology — June 2005 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Covering spaces` section.
+  Its two warm-ups and eleven numbered problems are represented one-for-one in source order by the thirteen listed workshop/canonical cards, and the vendored PDF is already collection provenance; no duplicate cards needed.
 
-- [ ] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — topology — June 2005
+- [x] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — topology — June 2005 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Homology` section.
+  Its two warm-ups and ten numbered problems are represented in source order by the twelve listed workshop/canonical cards, and the vendored PDF is already collection provenance; no duplicate cards needed.
 
 ## Problem sets (14)
 
@@ -479,7 +484,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-16F.pdf](assets/attachments/extracted/basic-16F.md) (100L, 0 problems) — no metadata — disposition 2026-09-12: UCLA Basic Examination Fall 2016, already ingested completely as `SRC-UCLA-BASIC-FALL-2016`; all twelve source problems are represented in order by `P-UCLAB16F-01` through `P-UCLAB16F-12`.
 
-- [x] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata — disposition 2026-09-12: reference-only 2015 notes on convergent sequences, subsequences, and subsequential limits in metric spaces. Repository intake notes classify this as reference notes rather than a collection candidate; the existing real-analysis resource link has been annotated and no problem cards manufactured.
+- [x] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata — disposition 2026-09-12: reference-only 2015 notes on convergent sequences, subsequences, and subsequential limits in metric spaces.
+  Repository intake notes classify this as reference notes rather than a collection candidate; the existing real-analysis resource link has been annotated and no problem cards manufactured.
 
 - [x] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology — disposition 2026-09-12: reference-only Joshua Ruiter *Theorems: Real Analysis* notes (March 2018). The inventory problem count is a false positive from numbered theorem statements; repository intake notes classify this as reference notes, not a collection candidate.
   Added to `vocabularies/references.bib` as `Ruiter18AnalysisTheorems` and to the real-analysis books/notes resource page; no problem cards manufactured.
