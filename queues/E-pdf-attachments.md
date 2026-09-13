@@ -174,7 +174,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Preliminary exams (47)
 
-- [ ] [871-872June_2007_852-871.pdf](assets/attachments/extracted/871-872June_2007_852-871.md) (35L, 0 problems) — algebra
+- [x] [871-872June_2007_852-871.pdf](assets/attachments/extracted/871-872June_2007_852-871.md) (35L, 0 problems) — UNL — qualifying exam — June 2007 — disposition 2026-09-13: ingested as `SRC-UNL-QUAL-852-871-JUNE-2007`, with all 9 source positions represented in order. Five Section-A graph-theory/combinatorics cards were added; Section B reuses exact canonical topology cards `P-T07A1` through `P-T07A4` from the separately retained UNL June 2007 topology paper. The inventory's `0 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [calculating_galois_from_polynomial.pdf](assets/attachments/extracted/calculating_galois_from_polynomial.md) (255L, 22 problems) — Galois theory — reference notes — disposition 2026-09-13: treated as expository computational review notes rather than a problem source. The inventory's `22 problems` are worked examples embedded in the exposition, not a posed problem bank. Added a substantive annotated local-resource entry to `wiki/algebra/resources/fields.md` covering the notes' cubic-discriminant, prime-degree, cyclotomic, and finite-field Frobenius methods; the retained PDF remains the linked source.
 
