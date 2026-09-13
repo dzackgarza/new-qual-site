@@ -636,3 +636,19 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 
 - **Observed:** the commit hook at `78ef136f4` reports `reformatting would change what pandoc reads (block 49: BulletList content differs)` for `COMPLAINTS.md` and leaves the file unchanged.
 - **Owner:** the structured-text formatter. Reproduce against this revision and preserve the parsed list content when correcting the formatter. The refusal leaves this document unformatted; it does not establish a defect in the mathematical corpus.
+
+### Berkeley Summer 1978 Problem 9 has false nearest-point hypotheses
+
+- **Object and need:** `P-BERK78S-09`, Berkeley Preliminary Exam Summer 1978, Problem 9; source intake must preserve the printed metric-space problem without silently adding hypotheses.
+- **Observed evidence:** the retained PDF states that if `X={x}` and `Y` is closed in an arbitrary metric space, then `d(x,Y)` is attained, and repeats the claim with `X` compact and `Y` closed. Both assertions are false in general. For example, take points `x,y_1,y_2,...` with `d(x,y_n)=1+1/n` and `d(y_n,y_m)=d(y_n,x)+d(x,y_m)` for `n!=m`; then `Y={y_n}` is closed, `X={x}` is compact, and `d(X,Y)=1` is not attained.
+- **Impact and owner:** the source statement itself is defective, not the extraction. The problem card preserves all three printed parts and records the defect; a later solution must not attempt to prove Parts 1--2 without supplying an additional properness/compactness hypothesis.
+- **Uncertainty:** none; the relevant PDF page was inspected directly.
+- **Repair:** source wording preserved on `P-BERK78S-09` with an audit note documenting the missing hypothesis.
+
+### Berkeley Summer 1978 Problem 11 has an impossible n=0 coefficient inequality
+
+- **Object and need:** `P-BERK78S-11`, Berkeley Preliminary Exam Summer 1978, Problem 11.
+- **Observed evidence:** the source indexes both power series from `n=0` and then requires the strict inequality `|b_n| < n^2 |a_n|` "for all n". At `n=0` this reads `|b_0|<0`, so no sequence can satisfy it.
+- **Impact and owner:** the literal source condition makes the problem vacuous. The intended radius-of-convergence comparison only needs the estimate for positive indices.
+- **Uncertainty:** none about the printed contradiction; the intended `n>=1` repair is forced by the surrounding series statement.
+- **Repair:** `P-BERK78S-11` states the coherent condition for `n>=1` and records the source defect in its audit note.
