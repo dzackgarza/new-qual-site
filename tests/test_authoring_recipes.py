@@ -120,6 +120,34 @@ def test_card_commit_runs_hook_when_problem_statement_changes(tmp_path: Path) ->
     assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == "initial cards"
 
 
+def test_card_commit_runs_hook_for_compact_braced_problem_statement(tmp_path: Path) -> None:
+    collection = workspace(tmp_path)
+    target = collection / "open card.md"
+    target.write_text(target.read_text().replace("::: exercise", ":::{.problem}"))
+    run(tmp_path, "git", "init", "-q")
+    run(tmp_path, "git", "config", "user.name", "Authoring recipe test")
+    run(tmp_path, "git", "config", "user.email", "authoring@example.invalid")
+    run(tmp_path, "git", "config", "commit.gpgsign", "false")
+    hooks = tmp_path / "hooks"
+    hooks.mkdir()
+    run(tmp_path, "git", "config", "core.hooksPath", str(hooks))
+    run(tmp_path, "git", "add", "corpus")
+    run(tmp_path, "git", "commit", "-qm", "initial cards")
+    hook = hooks / "pre-commit"
+    hook.write_text("#!/bin/sh\necho invoked > hook-invoked\nexit 1\n")
+    hook.chmod(0o755)
+    target.write_text(target.read_text().replace("Show that", "Prove that", 1))
+
+    result = subprocess.run(
+        ("just", "--justfile", str(ROOT / "justfile"), "--working-directory", str(tmp_path), "commit-card", "E-CENTER", "compact statement edit"),
+        text=True,
+        capture_output=True,
+    )
+
+    assert result.returncode != 0
+    assert (tmp_path / "hook-invoked").exists()
+
+
 def collection_workspace(root: Path) -> Path:
     collection = workspace(root)
     source = yaml.safe_load((KINDS / "SRC-NEILNOTES.md").read_text().split("---\n")[1])

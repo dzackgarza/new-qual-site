@@ -25,8 +25,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-PROBLEM_OPEN = re.compile(r"(?m)^::: \{\.problem\}\s*$")
-PROBLEM_BLOCK = re.compile(r"(?ms)^::: \{\.problem\}\s*$\n(.*?)^:::\s*$")
+PROBLEM_BLOCK = re.compile(r"(?ms)^:::\s*(?:problem|exercise|\{\.(?:problem|exercise)\})\s*$\n(.*?)^:::\s*$")
 DOLLAR_MATH = re.compile(r"\$\$.*?\$\$|(?<!\\)\$(?:\\.|[^$])*?(?<!\\)\$", re.S)
 CARD_ID = re.compile(r"(?m)^id:\s*([^\s]+)\s*$")
 
@@ -34,7 +33,6 @@ CARD_ID = re.compile(r"(?m)^id:\s*([^\s]+)\s*$")
 # restricted to non-ASCII glyphs.  That criterion is intentionally narrower than
 # "all non-ASCII": Greek letters, curly quotes, accented names, and ordinary prose
 # are not findings unless a mathematical-symbol glyph is also present.
-
 
 
 @dataclass(frozen=True)

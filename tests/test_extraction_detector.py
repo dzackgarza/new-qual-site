@@ -66,6 +66,20 @@ def test_report_lists_unicode_math_outside_dollar_spans(tmp_path: Path) -> None:
     assert "P-TEST: ∩ (1)" in result.stdout
 
 
+def test_report_recognizes_exercise_and_compact_problem_fences(tmp_path: Path) -> None:
+    exercise = write_card(tmp_path, "Let x∈A.", "P-EXERCISE")
+    exercise.write_text(card("Let x∈A.", "P-EXERCISE").replace("::: {.problem}", "::: exercise"))
+    compact = write_card(tmp_path, "Let y∉B.", "P-COMPACT")
+    compact.write_text(card("Let y∉B.", "P-COMPACT").replace("::: {.problem}", ":::{.problem}"))
+
+    result = run_detector(tmp_path)
+
+    assert result.returncode == 0
+    assert "Extraction detector: 2 problem card(s)" in result.stdout
+    assert "P-EXERCISE: ∈ (1)" in result.stdout
+    assert "P-COMPACT: ∉ (1)" in result.stdout
+
+
 def test_report_ignores_non_math_unicode_prose(tmp_path: Path) -> None:
     write_card(tmp_path, "Prove the author’s claim about Café spaces.")
     result = run_detector(tmp_path)

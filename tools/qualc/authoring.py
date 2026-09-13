@@ -18,7 +18,7 @@ from pydantic import TypeAdapter
 from .emit import _collection_source_links
 from .model import Card, CollectionCard, CompilationSource, TextbookSource, discover, parse_card, parse_cards, split_front_matter
 
-PROBLEM_BLOCK = re.compile(r"(?ms)^:::\s+(?:problem|exercise|\{\.(?:problem|exercise)\})\s*$\n(.*?)^:::\s*$")
+PROBLEM_BLOCK = re.compile(r"(?ms)^:::\s*(?:problem|exercise|\{\.(?:problem|exercise)\})\s*$\n(.*?)^:::\s*$")
 
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
