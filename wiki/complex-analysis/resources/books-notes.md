@@ -57,7 +57,7 @@ order: 0
 
 - [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
 
-- [[attachments/Complex_Qual_Notes.pdf|Josh Swanson Complex Prelim Notes]]
+- [[attachments/Complex_Qual_Notes.pdf|Josh Swanson, *2013 Complex Prelim Notes* (September 6, 2013)]] — qualifying-exam review notes covering basic mapping theorems, Cauchy and Poisson formulas, analytic extension, root counting, approximation, normal families, harmonic and subharmonic functions, inequalities, series and products, analytic continuation, residues, and conformal maps. Swanson records Marshall’s notes as the principal source, with Ahlfors, Gamelin, and Rudin also consulted.
 
 - [Cambridge notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis_trim.pdf)
 
