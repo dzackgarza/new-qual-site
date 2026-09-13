@@ -368,7 +368,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007
 
-- [ ] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra
+- [x] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the UC Berkeley Graduate Preliminary Examination, Fall 2014; already canonical as `SRC-BERKELEY-PRELIM-FALL-2014`, which retains both exam and solution PDFs as provenance and contains all 18 source-order problems 1A–9A and 1B–9B.
 
 - [x] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 18 problems) — Berkeley — prelim — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-2018`; the Fall 2018 two-part Graduate Preliminary Examination contains 18 problems across calculus, real analysis, complex analysis, linear algebra, and abstract algebra, represented in paper order by `P-BKF18-1A` through `P-BKF18-9B`.
 
