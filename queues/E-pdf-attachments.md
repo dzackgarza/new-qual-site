@@ -234,7 +234,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring84.pdf](assets/attachments/extracted/Spring84.md) (102L, 4 problems) — algebra — Spring 19
 
-- [ ] [Spring85.pdf](assets/attachments/extracted/Spring85.md) (113L, 3 problems) — applied-algebra — Spring 19
+- [x] [Spring85.pdf](assets/attachments/extracted/Spring85.md) (113L, 3 problems) — Berkeley — prelim — Spring 1985 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1985`, with Problems 1–20 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `3 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Spring86.pdf](assets/attachments/extracted/Spring86.md) (119L, 7 problems) — Berkeley — prelim — Spring 1986 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1986`. Seventeen source-local cards represent Problems 1–12, 15–18, and 20; Problem 13 reuses canonical card `P-UCLAB06S-10`, Problem 14 reuses `P-BERK96S-02`, and Problem 19 reuses `E-AMD-UXMX7R25`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `7 problems` and `algebra` labels were stale heuristic metadata.
 
