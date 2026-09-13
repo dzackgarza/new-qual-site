@@ -12,7 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Show that                  v u            s        r Z 9u √ q t −6 + 5   −6 + 5   −6 + 5 −6 + 5 x dx 4
-
+Show that
+\[
+\int_4^9 \sqrt{-6+5\sqrt{-6+5\sqrt{-6+5\sqrt{-6+5\sqrt{x}}}}}\,dx
+\]
 is a rational number.
 :::

@@ -12,7 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the Galois group of the normal closure of the field √     √ K = Q( 3 + 5)
-
-over Q.
+Compute the Galois group of the normal closure of the field
+\[
+K=\mathbb Q\!\left(\sqrt{3+\sqrt5}\right)
+\]
+over $\mathbb Q$.
 :::

@@ -12,5 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Show that                    Z ∞                   ∞ t e−t/2        X       1 dt = 4 0   1 − e−t        n=0 (2n + 1)2
+Show that
+\[
+\int_0^\infty \frac{t e^{-t/2}}{1-e^{-t}}\,dt
+=4\sum_{n=0}^\infty \frac{1}{(2n+1)^2}.
+\]
 :::

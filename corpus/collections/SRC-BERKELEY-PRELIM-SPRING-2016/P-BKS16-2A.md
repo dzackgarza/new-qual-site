@@ -12,7 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that f and g are continuously differentiable real-valued functions on R with f, g, f 0 , g 0 ∈ L2 (R). Show that               Z    ∞           Z      ∞ f g 0 dx = −        f 0 g dx.
-−∞                  −∞ 2 R∞ (Recall that L (R) is the set of integrable functions h such that        −∞
-|h|2 dx < ∞.)
+Suppose that $f$ and $g$ are continuously differentiable real-valued functions on $\mathbb R$ with $f,g,f',g'\in L^2(\mathbb R)$. Show that
+\[
+\int_{-\infty}^{\infty} f g'\,dx=-\int_{-\infty}^{\infty} f'g\,dx.
+\]
+(Recall that $L^2(\mathbb R)$ is the set of integrable functions $h$ such that $\int_{-\infty}^{\infty}|h|^2\,dx<\infty$.)
 :::

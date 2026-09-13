@@ -12,5 +12,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let (fi )∞                                                                   00 i=1 and g be twice-differentiable real-valued functions on R, with fi ≥ 0. Suppose that lim fi (x) = g(x) i→∞ 00 for all x ∈ R. Show that g ≥ 0.
+Let $(f_i)_{i=1}^\infty$ and $g$ be twice-differentiable real-valued functions on $\mathbb R$, with $f_i''\ge 0$. Suppose that
+\[
+\lim_{i\to\infty} f_i(x)=g(x)
+\]
+for all $x\in\mathbb R$. Show that $g''\ge 0$.
 :::

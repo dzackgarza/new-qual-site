@@ -12,5 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Compute                               Z 2π dθ . 0     (3 + e−iθ )2
+Compute
+\[
+\int_0^{2\pi}\frac{d\theta}{(3+e^{-i\theta})^2}.
+\]
 :::

@@ -13,10 +13,8 @@ review: draft
 
 ::: {.problem}
 Factor the polynomial
-
-```
-                     f (x) = 6x5 + 3x4 − 9x3 + 15x2 − 13x − 2
-```
-
-into a product of irreducible polynomials in the ring Q[x].
+\[
+f(x)=6x^5+3x^4-9x^3+15x^2-13x-2
+\]
+into a product of irreducible polynomials in the ring $\mathbb Q[x]$.
 :::
