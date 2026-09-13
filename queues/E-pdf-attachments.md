@@ -256,7 +256,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring98.pdf](assets/attachments/extracted/Spring98.md) (77L, 0 problems) — algebra — Spring 19
 
-- [ ] [Summer77.pdf](assets/attachments/extracted/Summer77.md) (111L, 8 problems) — complex-analysis — Summer 19
+- [x] [Summer77.pdf](assets/attachments/extracted/Summer77.md) (111L, 8 problems) — Berkeley — prelim — Summer 1977 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1977`, with Problems 1–20 represented in source order. OCR-sensitive details in Problems 8, 9, and 20 were checked directly against the PDF pages. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `8 problems` and `complex-analysis` labels were stale heuristic metadata.
 
 - [x] [Summer78.pdf](assets/attachments/extracted/Summer78.md) (173L, 26 problems) — Berkeley — prelim — Summer 1978 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1978`, with Problems 1–20 represented in source order. Problem 9 is preserved with an audit note because its nearest-point assertions are false for arbitrary metric spaces as printed; Problem 11 records the source's impossible n=0 strict coefficient inequality and states the coherent n>=1 condition. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `26 problems` and `algebra` labels were stale heuristic metadata.
 
