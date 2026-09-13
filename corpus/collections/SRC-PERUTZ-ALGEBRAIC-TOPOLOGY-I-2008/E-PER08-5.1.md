@@ -67,7 +67,8 @@ I=(x-1/4,x+1/4),
 \qquad
 U=q(I).
 \]
-Because $I$ has length less than $1$, no two distinct points of $I$ differ by an integer. Thus
+Because $I$ has length less than $1$, no two distinct points of $I$ differ by an integer.
+Thus
 \[
 q|_I:I\to U
 \]
@@ -81,12 +82,14 @@ The intervals $I+k$ are pairwise disjoint, and translation by $k$ followed by $q
 \[
 q|_{I+k}:I+k\to U
 \]
-is a homeomorphism for every $k$. Hence $U$ is evenly covered.
+is a homeomorphism for every $k$.
+Hence $U$ is evenly covered.
 :::
 
 <1>2. The map $p_n:S^1\to S^1$, $p_n(z)=z^n$, is a covering map.
 ::: {.proof}
-Fix $e^{i\theta}\in S^1$. Choose $0<\varepsilon<\pi$ and let
+Fix $e^{i\theta}\in S^1$.
+Choose $0<\varepsilon<\pi$ and let
 \[
 U=\{e^{iu}:|u-\theta|<\varepsilon\}.
 \]
@@ -113,7 +116,8 @@ so each restriction
 \[
 p_n|_{V_j}:V_j\to U
 \]
-is a homeomorphism. Thus $p_n$ is an $n$-sheeted covering.
+is a homeomorphism.
+Thus $p_n$ is an $n$-sheeted covering.
 :::
 
 <1>3. A finite product of covering maps is a covering map.
@@ -125,7 +129,9 @@ Let
 p_i:\widetilde X_i\to X_i
 \qquad(i=1,2)
 \]
-be covering maps. Fix $(x_1,x_2)\in X_1\times X_2$. Choose evenly covered neighborhoods $U_i$ of $x_i$ with
+be covering maps.
+Fix $(x_1,x_2)\in X_1\times X_2$.
+Choose evenly covered neighborhoods $U_i$ of $x_i$ with
 \[
 p_i^{-1}(U_i)=\coprod_{\alpha_i}V_{i,\alpha_i}
 \]
@@ -156,11 +162,13 @@ Taking the $n$-fold product of the covering $\mathbb R\to\mathbb R/\mathbb Z$ fr
 
 <1>4. The antipodal quotient $q:S^n\to\mathbb{RP}^n$ is a covering map.
 ::: {.proof}
-Fix a point $[x]\in\mathbb{RP}^n$, represented by a unit vector $x\in S^n$. Define
+Fix a point $[x]\in\mathbb{RP}^n$, represented by a unit vector $x\in S^n$.
+Define
 \[
 U=\{[y]\in\mathbb{RP}^n:\langle x,y\rangle\neq0\}.
 \]
-This is well defined because replacing $y$ by $-y$ changes the sign but not the nonvanishing of the inner product. It is an open neighborhood of $[x]$.
+This is well defined because replacing $y$ by $-y$ changes the sign but not the nonvanishing of the inner product.
+It is an open neighborhood of $[x]$.
 
 Its preimage is the disjoint union of the two open hemispheres
 \[
@@ -168,7 +176,8 @@ H_+=\{y\in S^n:\langle x,y\rangle>0\},
 \qquad
 H_-=\{y\in S^n:\langle x,y\rangle<0\}.
 \]
-Every projective point in $U$ has exactly one representative in $H_+$ and exactly one in $H_-$. Therefore
+Every projective point in $U$ has exactly one representative in $H_+$ and exactly one in $H_-$.
+Therefore
 \[
 q|_{H_+}:H_+\to U
 \]
@@ -176,7 +185,9 @@ and
 \[
 q|_{H_-}:H_-\to U
 \]
-are continuous bijections. Their inverses choose, respectively, the unique representative having positive or negative inner product with $x$; these choices vary continuously because the sign cannot change inside $U$. Hence both restrictions are homeomorphisms.
+are continuous bijections.
+Their inverses choose, respectively, the unique representative having positive or negative inner product with $x$; these choices vary continuously because the sign cannot change inside $U$.
+Hence both restrictions are homeomorphisms.
 
 Thus $U$ is evenly covered and
 \[
