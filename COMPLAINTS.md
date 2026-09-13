@@ -660,3 +660,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the mathematical statement is incomplete in the retained source itself. The four named points `(0,0)`, `(1,0)`, `(0,1)`, `(1,1)` do not determine the omitted infinite triangular network, so reconstructing a diagram would invent source content.
 - **Uncertainty:** the lost PostScript figure may exist in an upstream TeX source or archival copy, but it is not present in the retained PDF or extraction.
 - **Repair:** `P-BKS83-4` preserves the readable statement and explicitly records that the defining diagram is unavailable; no guessed network was authored.
+
+### Spring 1982 retained extraction does not match PDF Problems 2--9
+
+- **Object and need:** `assets/attachments/extracted/Spring82.md` versus `assets/attachments/Spring82.pdf`; PDF source intake must recover the actual exam statements rather than trusting stale extraction text.
+- **Observed evidence:** the PDF page for Problems 2--9 contains, in order, an uncountable-subset accumulation problem, a Hilbert--Schmidt trace inequality, a directional-derivative question, an Arzela--Ascoli-style second-derivative compactness problem, polynomial value/jet normalization, a two-generator group presentation, a contour integral of `cos x/(x^4+1)`, and a real Jordan-form problem. The retained markdown instead gives eight different statements (beginning with a rational integral and distinct linear functionals). Problems 10 onward agree substantially with the PDF.
+- **Impact and owner:** automated use of the retained extraction would ingest the wrong mathematics under Spring 1982 provenance. This is not a Unicode-formatting defect detectable by `extraction-detector`; it is content substitution/misalignment.
+- **Uncertainty:** the mismatched markdown may have been sourced from another historical prelim during migration, but identifying that source is not required to recover Spring 1982 correctly.
+- **Repair:** `SRC-BERKELEY-PRELIM-SPRING-1982` was transcribed against the retained PDF itself for all 20 positions, with Problems 2--9 explicitly source-checked from the PDF page.
