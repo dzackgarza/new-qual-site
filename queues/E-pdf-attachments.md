@@ -218,7 +218,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring00.pdf](assets/attachments/extracted/Spring00.md) (96L, 4 problems) — algebra — Spring 2000
 
-- [ ] [Spring01.pdf](assets/attachments/extracted/Spring01.md) (65L, 5 problems) — algebra — Spring 2001
+- [x] [Spring01.pdf](assets/attachments/extracted/Spring01.md) (65L, 5 problems) — Berkeley — prelim — Spring 2001 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-2001`, with all 18 numbered problems represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `5 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Spring77.pdf](assets/attachments/extracted/Spring77.md) (157L, 17 problems) — Berkeley — prelim — Spring 1977 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-1977`, with all 20 numbered problems represented in source order. Problem 3 remains mathematically complete despite the retained source printing a missing-PostScript message for its illustration, because the regular-polygon construction and chord lengths are specified textually. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `17 problems` and `applied-algebra` labels were stale heuristic metadata.
 
