@@ -168,7 +168,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [UCSD_Topology_Qual_Problems_2020-05-29.pdf](assets/attachments/extracted/UCSD_Topology_Qual_Problems_2020-05-29.md) (320L, 120 problems) — applied-algebra **OCR: image placeholders**
 
-- [ ] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — UNL — alg-geom — FALL 2011
+- [x] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — Mike Usher — Math 8210 Differential Geometry — Fall 2011 — reference/course notes — disposition 2026-09-13: treated as semester-long smooth-manifold lecture notes rather than a standalone problem source. The embedded exercises are subordinate to the exposition. Added a substantive annotated local-resource entry to `wiki/topology/resources/books-notes.md` covering tangent/vector-field formalisms, partitions of unity, bundles, differential forms, submanifolds and tubular neighborhoods, flows, Lie derivatives, Cartan's formula, and Moser's method; no exercise cards were manufactured.
 
 - [x] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — complex-analysis — reference sheet — disposition 2026-09-13: treated as Robert Won's expository complex-analysis qualifying-exam review sheet, not a posed problem source. The inventory's `99 problems` are numbered facts, observations, and theorem statements. Enriched its existing entry in `wiki/complex-analysis/resources/books-notes.md` with the sheet's actual organization and mathematical scope; no problem cards were manufactured.
 
