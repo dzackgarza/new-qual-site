@@ -204,7 +204,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [grad_prelim_Fall08.pdf](assets/attachments/extracted/grad_prelim_Fall08.md) (47L, 8 problems) — complex-analysis — August 12
 
-- [ ] [grad_prelim_Fall09.pdf](assets/attachments/extracted/grad_prelim_Fall09.md) (53L, 0 problems) — no metadata
+- [x] [grad_prelim_Fall09.pdf](assets/attachments/extracted/grad_prelim_Fall09.md) (53L, 0 problems) — UGA — prelim — Fall 2009 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-FALL-2009`, with all 8 top-level numbered problems represented in source order. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series. The inventory's `0 problems` and `no metadata` labels were stale heuristic metadata.
 
 - [x] [grad_prelim_Fall11.pdf](assets/attachments/extracted/grad_prelim_Fall11.md) (29L, 9 problems) — UGA — prelim — Fall 2011 — disposition 2026-09-13: ingested as `SRC-UGA-PRELIM-FALL-2011`, with all 9 numbered problems represented in source order. The `grad_prelim_*` attachment lineage is the repository's UGA first-year preliminary-exam series.
 
