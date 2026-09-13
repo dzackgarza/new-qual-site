@@ -1,0 +1,27 @@
+---
+schema: qual/card@1
+id: P-BKS88-9
+kind: problem
+title: Berkeley Spring 1988 preliminary exam problem 9
+classification:
+  areas:
+  - prelim
+  topics: []
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
+---
+
+::: problem
+Prove that the integrals
+
+$$
+\int _ { 0 } ^ { \infty } \cos x ^ { 2 } d x \quad a n d \quad \int _ { 0 } ^ { \infty } \sin x ^ { 2 } d x
+$$
+
+converge.
+:::

@@ -416,7 +416,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring_2019_prelim_solutions.pdf](assets/attachments/extracted/Spring_2019_prelim_solutions.md) (385L, 8 problems) — Berkeley — applied-algebra
 
-- [ ] [Spring88.pdf](assets/attachments/extracted/Spring88.md) (83L, 2 problems) — UNL — algebra — Spring 19
+- [x] [Spring88.pdf](assets/attachments/extracted/Spring88.md) (83L, 2 problems) — UNL — algebra — Spring 19 — disposition 2026-09-13: identified from the PDF as the UC Berkeley Spring 1988 Preliminary Exam and ingested as `SRC-BERKELEY-PRELIM-SPRING-1988`, with all twenty Problems 1–20 represented in source order by `P-BKS88-1` through `P-BKS88-20`. The inventory metadata/count were stale: the source is Berkeley prelim material and contains 20 numbered problems, not 2.
 
 - [ ] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19
 
