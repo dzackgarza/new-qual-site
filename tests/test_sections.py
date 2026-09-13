@@ -14,6 +14,7 @@ import sqlite3
 from pathlib import Path
 
 from conftest import fixture_repo, run_qualc
+from test_invariants import read_html
 
 NESTED_CARD = """---
 schema: qual/card@1
@@ -39,6 +40,36 @@ Counting Sylow subgroups gives $n_p \\equiv 1 \\pmod p$, and the only divisor
 of the index congruent to $1$ is $1$ itself, so the subgroup is normal.
 :::
 
+:::
+"""
+
+
+COMPACT_NESTED_CARD = """---
+schema: qual/card@1
+id: P-NEST2
+kind: problem
+title: A solution whose proof fences follow their Lamport steps directly
+classification:
+  areas: [algebra]
+  topics: [groups]
+relations: []
+review: draft
+---
+
+::: problem
+Prove two claims.
+:::
+
+::: solution
+<1>1. The first claim.
+::: {.proof}
+This proves the first claim.
+:::
+
+<1>2. The second claim.
+    ::: {.proof}
+    This proves the second claim and must remain hidden with the solution.
+    :::
 :::
 """
 
@@ -79,3 +110,34 @@ def test_enclosing_section_still_carries_its_own_text(tmp_path: Path) -> None:
     con = build(tmp_path)
     (solution_text,) = con.execute("select text from sections where card_id = 'P-NEST1' and section_kind = 'solution'").fetchone()
     assert "follows from Sylow" in solution_text
+
+
+def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path) -> None:
+    """The corpus's compact proof spelling is normalized before Pandoc reads it.
+
+    A generated proof opener often follows its Lamport step with no intervening
+    blank line, and deeper proof openers are indented by four or eight spaces.
+    Pandoc otherwise reads those as paragraph/code text and the first bare
+    `:::` closes the surrounding solution, exposing everything after it.
+    """
+    work = fixture_repo(tmp_path, {"compact-nested.md": COMPACT_NESTED_CARD})
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    sections = con.execute(
+        "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
+    ).fetchall()
+    assert [kind for kind, _ in sections].count("solution") == 1
+    assert [kind for kind, _ in sections].count("proof") == 2
+    solution = next(text for kind, text in sections if kind == "solution")
+    assert "This proves the first claim" in solution
+    assert "This proves the second claim and must remain hidden with the solution" in solution
+
+    page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
+    disclosures = page.root.find_all("details", **{"class": "reveal qual-solution"})
+    assert len(disclosures) == 1
+    disclosure_text = " ".join(disclosures[0].text.split())
+    assert "This proves the first claim" in disclosure_text
+    assert "This proves the second claim and must remain hidden with the solution" in disclosure_text
+    assert ":::" not in page.root.text

@@ -480,6 +480,113 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES
 
 
+# A large mechanical proof-label conversion in the corpus inserted fenced-div
+# openers immediately after Lamport step lines, without the blank line Markdown
+# needs to start a block.  Pandoc consequently reads `::: {.proof}` as literal
+# paragraph text; the following bare `:::` then closes the surrounding solution,
+# which exposes the rest of that solution and destroys its proof structure.  A
+# second spelling of the same defect indents proof fences to four or eight
+# spaces to show Lamport depth, which makes them Markdown code blocks instead of
+# divs.
+#
+# Canonicalize those two spellings before the Markdown reader sees them.  This
+# is syntax only: the existing opener / closer order determines the same tree,
+# and no prose or mathematical content is moved or inferred.
+_FENCED_DIV_LINE = re.compile(r"^(?P<indent>[ \t]*)(?P<fence>:{3,})(?P<rest>.*)$")
+_LAMPORT_INDENTED_MARKER = re.compile(r"^[ \t]+<[123]>")
+
+
+@dataclass
+class _FencedDivNode:
+    start: int
+    indent: int
+    width: int
+    rest: str
+    end: int | None = None
+
+
+def _fenced_div_opening(line: str) -> tuple[int, int, str] | None:
+    """Return indentation and attributes for an authored fenced-div opener."""
+    match = _FENCED_DIV_LINE.match(line)
+    if match is None:
+        return None
+    rest = match.group("rest").strip()
+    if not rest:
+        return None
+
+    indent = len(match.group("indent").expandtabs(4))
+    return indent, len(match.group("fence")), rest
+
+
+def normalize_fenced_divs(markdown: str) -> str:
+    """Canonicalize the corpus's nested fenced-div spelling for Pandoc.
+
+    The source order is authoritative.  An opener pushes and a bare colon line
+    pops, so balancing can be checked without interpreting any mathematics.
+    Once paired, proof fences are separated from the preceding paragraph,
+    indented fence bodies are moved out of Markdown's code-block column, and
+    indented Lamport markers are likewise restored as ordinary proof steps.
+    Unbalanced source is rejected rather than guessed at.
+    """
+    lines = markdown.splitlines()
+    stack: list[_FencedDivNode] = []
+    starts: dict[int, _FencedDivNode] = {}
+    ends: dict[int, _FencedDivNode] = {}
+
+    for index, line in enumerate(lines):
+        opening = _fenced_div_opening(line)
+        if opening is not None:
+            indent, width, rest = opening
+            node = _FencedDivNode(index, indent, width, rest)
+            starts[index] = node
+            stack.append(node)
+            continue
+
+        match = _FENCED_DIV_LINE.match(line)
+        if match is not None and not match.group("rest").strip():
+            if not stack:
+                raise ValueError(f"unmatched fenced-div closer on line {index + 1}")
+            node = stack.pop()
+            node.end = index
+            ends[index] = node
+
+    if stack:
+        node = stack[-1]
+        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + 1}")
+
+    output: list[str] = []
+    active: list[_FencedDivNode] = []
+    for index, source_line in enumerate(lines):
+        if index in starts:
+            node = starts[index]
+            if output and output[-1]:
+                output.append("")
+            output.append(":" * node.width + " " + node.rest)
+            active.append(node)
+            continue
+
+        if index in ends:
+            node = ends[index]
+            output.append(":" * node.width)
+            if not active or active[-1] is not node:
+                raise ValueError(f"internal fenced-div pairing error on line {index + 1}")
+            active.pop()
+            continue
+
+        line = source_line
+        if active and active[-1].indent:
+            expanded = line.expandtabs(4)
+            indent = active[-1].indent
+            if expanded.startswith(" " * indent):
+                line = expanded[indent:]
+        if active and _LAMPORT_INDENTED_MARKER.match(line):
+            line = line.lstrip()
+        output.append(line)
+
+    suffix = "\n" if markdown.endswith("\n") else ""
+    return "\n".join(output) + suffix
+
+
 class ParsedCard(Strict):
     """A validated card, its body as a pandoc AST, and its semantic sections."""
 
@@ -565,8 +672,9 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
+    normalized = normalize_fenced_divs(markdown)
     with PandocServer() as pandoc:
-        result = pandoc.read_markdown([markdown], MARKDOWN)[0]
+        result = pandoc.read_markdown([normalized], MARKDOWN)[0]
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
@@ -738,6 +846,7 @@ def parse_cards_with(
     for path in paths:
         try:
             meta, body = split_front_matter(path.read_text(), path)
+            body = normalize_fenced_divs(body)
             card: Card = adapter.validate_python(meta)
             prepared.append((path, card, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
