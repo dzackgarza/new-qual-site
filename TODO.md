@@ -24,46 +24,30 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 ### Faithful statements before any further ingestion
 
-A card whose statement is not the mathematics of its source is worse than a missing card,
-because `just unsolved` offers it for solution and a worker will write a proof of nothing.
-On 2026-09-13 a scan of the 2822 authored problem blocks found **182** whose statement carries
-unicode mathematics sitting outside any `$`-delimiter — the signature of raw PDF text
-extraction landed verbatim. Verified samples: `P-BKS16-1A` reduces a nested radical to
-`v u s r Z 9u √ q t −6 + 5`; `P-UCLARA18S-12` renders an integral sign as a bare `Z` and
-splits `1/π` across the collapsed line; `P-UCLARA18S-08` turns `∂u/∂x` into `∂u ∂x`;
-`P-TIE-F15-08` drops the power series out of its own sentence; `P-UTCT-1-27` fuses words
-into `Thatis,for F compact,connected,showthat`.
+A card whose statement is not the mathematics of its source is worse than a missing card, because `just unsolved` offers it for solution and a worker will write a proof of nothing.
+On 2026-09-13 a scan of the 2822 authored problem blocks found **182** whose statement carries unicode mathematics sitting outside any `$`-delimiter — the signature of raw PDF text extraction landed verbatim.
+Verified samples: `P-BKS16-1A` reduces a nested radical to `v u s r Z 9u √ q t −6 + 5`; `P-UCLARA18S-12` renders an integral sign as a bare `Z` and splits `1/π` across the collapsed line; `P-UCLARA18S-08` turns `∂u/∂x` into `∂u ∂x`; `P-TIE-F15-08` drops the power series out of its own sentence; `P-UTCT-1-27` fuses words into `Thatis,for F compact,connected,showthat`.
 
-These nodes precede every remaining ingestion task. Ingesting more sources through the
-pipeline that produced them adds to the population being repaired.
+These nodes precede every remaining ingestion task.
+Ingesting more sources through the pipeline that produced them adds to the population being repaired.
 
 - **`extraction-detector`**. **Needs:** none.
-  Add a checker that reports every authored card whose `::: {.problem}` block contains a
-  character from the mathematical unicode set after all `$…$` and `$$…$$` spans are removed.
+  Add a checker that reports every authored card whose `::: {.problem}` block contains a character from the mathematical unicode set after all `$…$` and `$$…$$` spans are removed.
   It belongs beside `tools/unsolved_queue.py` with a `just` recipe, not in a scratch script.
-  **Acceptance:** the recipe runs over the corpus and reports a count; the 182 cards currently
-  matching are its baseline, and its output is the worklist for the node below.
+  Then wire it into `test-commit` as a private gate, because a report depends on someone choosing to read it and this defect has already recurred once after being repaired: on 2026-09-13 a worker restored 32 UCLA statements and staged 32 fresh Amherst cards carrying the same defect within the hour.
+  The gate inspects only staged card files and refuses two things — a newly added card whose problem block has the defect, and a modified card whose count of it rose against `HEAD`. Touching one of the existing damaged cards for an unrelated reason stays allowed; making it worse does not.
+  **Acceptance:** the recipe runs over the corpus and reports a count; the 182 cards at the time of writing are its baseline, and its output is the worklist for the node below; and a commit adding a card with the defect is refused by `test-commit`.
 
-- **`extraction-repair`**. **Needs:** `extraction-detector`.
-  Transcribe each reported card's statement into faithful LaTeX against its source document.
-  Work collection by collection, heaviest first: the eight `SRC-UCLA-RA-*` collections hold
-  83 of the 182 and are essentially complete populations, then `SRC-BERKELEY-PRELIM-*` at 25
-  across seventeen terms, `SRC-HARVARD-TATE-ALGEBRA-250A-1985` at 9,
-  `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS` at 8, `SRC-UGA-CA-COMPILATION` at 7,
-  `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017` at 6.
-  Where the source document cannot settle what the statement said, say so on the card rather
-  than guessing a plausible problem: an invented statement is the failure this node exists to
-  end. Record those cards and their count.
+- **`extraction-repair`**. **Needs:** `extraction-detector`. Transcribe each reported card's statement into faithful LaTeX against its source document.
+  Work collection by collection, heaviest first: the eight `SRC-UCLA-RA-*` collections hold 83 of the 182 and are essentially complete populations, then `SRC-BERKELEY-PRELIM-*` at 25 across seventeen terms, `SRC-HARVARD-TATE-ALGEBRA-250A-1985` at 9, `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS` at 8, `SRC-UGA-CA-COMPILATION` at 7, `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017` at 6. Where the source document cannot settle what the statement said, say so on the card rather than guessing a plausible problem: an invented statement is the failure this node exists to end.
+  Record those cards and their count.
   **Acceptance:** the detector's count falls, and each commit's cards read as the source reads.
 
-- **`extraction-pipeline`**. **Needs:** `extraction-detector`.
-  Repair the ingest itself so it stops producing them. Two defects are already established.
-  The extraction lands text that was never converted to LaTeX, and the normalization pass then
-  joins its lines — which destroys the column layout that encoded the fraction, the integral
-  bound and the derivative, and is why several of the cards above are now unrecoverable from
-  the card alone. A whitespace normalizer must never run over unconverted extraction output.
-  **Acceptance:** a source ingested after this node produces zero detector hits, demonstrated
-  on a real source, and no card in that ingest needs a follow-up normalization commit.
+- **`extraction-pipeline`**. **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
+  Two defects are already established.
+  The extraction lands text that was never converted to LaTeX, and the normalization pass then joins its lines — which destroys the column layout that encoded the fraction, the integral bound and the derivative, and is why several of the cards above are now unrecoverable from the card alone.
+  A whitespace normalizer must never run over unconverted extraction output.
+  **Acceptance:** a source ingested after this node produces zero detector hits, demonstrated on a real source, and no card in that ingest needs a follow-up normalization commit.
 
 ### Terminal nodes
 
