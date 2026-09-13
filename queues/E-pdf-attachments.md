@@ -240,7 +240,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring87.pdf](assets/attachments/extracted/Spring87.md) (105L, 5 problems) — algebra — Spring 19
 
-- [ ] [Spring89.pdf](assets/attachments/extracted/Spring89.md) (108L, 6 problems) — algebra — Spring 19
+- [x] [Spring89.pdf](assets/attachments/extracted/Spring89.md) (108L, 6 problems) — Berkeley — prelim — Spring 1989 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1989`, with Problems 1–18 represented in source order. Problem 17's garbled ideal conclusion was checked directly against the PDF page. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `6 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Spring90.pdf](assets/attachments/extracted/Spring90.md) (101L, 0 problems) — Berkeley — prelim — Spring 1990 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1990`, with Problems 1–18 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `0 problems` and `complex-analysis` labels were stale heuristic metadata.
 
