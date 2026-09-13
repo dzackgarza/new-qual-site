@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Consider the quadratic polynomial $f(z)=z^2-1$ on $\mathbb C$. We are interested in the iterates $f^n$ of $f$, defined by $f^0=\operatorname{id}_{\mathbb C}$ and
+Consider the quadratic polynomial $f(z)=z^2-1$ on $\mathbb C$.
+We are interested in the iterates $f^n$ of $f$, defined by $f^0=\operatorname{id}_{\mathbb C}$ and
 \[
 f^n=\underbrace{f\circ\cdots\circ f}_{n\text{ factors}}
 \]
@@ -25,5 +26,6 @@ for $n\in\mathbb N$.
 
 (a) Find an explicit constant $M>0$ such that for each $z\in\mathbb C$ either (i) $|f^n(z)|\to\infty$ as $n\to\infty$, or (ii) $|f^n(z)|\le M$ for all $n\in\mathbb N_0$.
 
-(b) Let $U$ be the set of all $z\in\mathbb C$ for which (i) holds and $K$ the set of all $z\in\mathbb C$ for which (ii) holds. Show that $U$ is open and $K$ is compact without “holes”, i.e. $\mathbb C\setminus K$ has no bounded connected components.
+(b) Let $U$ be the set of all $z\in\mathbb C$ for which (i) holds and $K$ the set of all $z\in\mathbb C$ for which (ii) holds.
+Show that $U$ is open and $K$ is compact without “holes”, i.e. $\mathbb C\setminus K$ has no bounded connected components.
 :::

@@ -21,7 +21,8 @@ Let $X=C([0,1])$ be the Banach space of real-valued continuous functions on $[0,
 \[
 \lVert f\rVert=\max_{x\in[0,1]}|f(x)|.
 \]
-Let $\mathcal A$ be the Borel $\sigma$-algebra on $X$. Show that $\mathcal A$ is the smallest $\sigma$-algebra on $X$ that contains all sets of the form
+Let $\mathcal A$ be the Borel $\sigma$-algebra on $X$.
+Show that $\mathcal A$ is the smallest $\sigma$-algebra on $X$ that contains all sets of the form
 \[
 S(t,B)=\{f\in X:f(t)\in B\},
 \]

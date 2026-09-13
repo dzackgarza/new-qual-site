@@ -17,11 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-We consider the space $L^1(\mu)$ of integrable functions on a measure space $(X,\mathcal M,\mu)$. For $g\in L^1(\mu)$ let
+We consider the space $L^1(\mu)$ of integrable functions on a measure space $(X,\mathcal M,\mu)$.
+For $g\in L^1(\mu)$ let
 \[
 \lVert g\rVert_1=\int |g(x)|\,d\mu
 \]
-be the corresponding $L^1$-norm. Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ such that
+be the corresponding $L^1$-norm.
+Suppose that $f$ and $f_n$, for $n\in\mathbb N$, are functions in $L^1(\mu)$ such that
 
 (i) $f_n(x)\to f(x)$ for $\mu$-almost every $x\in X$, and
 

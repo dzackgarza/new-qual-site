@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be a finite positive Borel measure on $\mathbb R$ that is singular to Lebesgue measure. Show that
+Let $\mu$ be a finite positive Borel measure on $\mathbb R$ that is singular to Lebesgue measure.
+Show that
 \[
 \lim_{r\to0^+}\frac{\mu([x-r,x+r])}{2r}=+\infty
 \]

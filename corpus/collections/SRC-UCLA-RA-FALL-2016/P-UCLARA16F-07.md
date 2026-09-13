@@ -21,11 +21,13 @@ Let $H$ be the space of holomorphic functions $f$ on the unit disk $D=\{z\in\mat
 \[
 \int_D |f(z)|^2\,dA(z)<\infty.
 \]
-Here integration is with respect to Lebesgue measure $A$ on $D$. The vector space $H$ is a Hilbert space if equipped with the inner product
+Here integration is with respect to Lebesgue measure $A$ on $D$.
+The vector space $H$ is a Hilbert space if equipped with the inner product
 \[
 \langle f,g\rangle=\int_D f(z)\overline{g(z)}\,dA(z)
 \]
-for $f,g\in H$. Fix $z_0\in D$ and define $L_{z_0}(f)=f(z_0)$ for $f\in H$.
+for $f,g\in H$.
+Fix $z_0\in D$ and define $L_{z_0}(f)=f(z_0)$ for $f\in H$.
 
 (a) Show that $L_{z_0}:H\to\mathbb C$ is a bounded linear functional on $H$.
 
