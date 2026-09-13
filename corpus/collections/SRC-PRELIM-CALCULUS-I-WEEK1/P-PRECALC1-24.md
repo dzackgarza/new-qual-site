@@ -12,5 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate lim $\left. \frac { 1 } { x } \int _ { 0 } ^ { x } ( 1 + \sin ( 2 t ) ) ^ { 1 / t } d t \right.$ x→0
+Calculate
+\[
+\lim_{x\to0}\frac1x\int_0^x(1+\sin(2t))^{1/t}\,dt.
+\]
 :::

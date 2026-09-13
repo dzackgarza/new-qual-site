@@ -12,5 +12,6 @@ review: draft
 ---
 
 ::: {.problem}
-It is a corollary to the Jordan canonical form theorem that $n\times n$ matrices in Jordan canonical form, all of whose eigenvalues are zeroes, are similar if and only if the sizes of their Jordan blocks coincide (up to permutations). Prove this directly, without using the Jordan canonical form theorem.
+It is a corollary to the Jordan canonical form theorem that $n\times n$ matrices in Jordan canonical form, all of whose eigenvalues are zeroes, are similar if and only if the sizes of their Jordan blocks coincide (up to permutations).
+Prove this directly, without using the Jordan canonical form theorem.
 :::

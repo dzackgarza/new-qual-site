@@ -17,9 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-(Cauchy’s formula for “exterior” region) Let $\gamma$ be piecewise smooth simple closed curve with interior $\Omega _ { 1 }$ and exterior $\Omega _ { 2 }$ . Assume $f ^ { \prime } ( z )$ exists in an open set containing $\gamma$ and $\Omega _ { 2 }$ and lim $f ( z ) = A$ . Show that z→∞
-
-$$
-{ \frac { 1 } { 2 \pi i } } \int _ { \gamma } { \frac { f ( \xi ) } { \xi - z } } d \xi = { \left\{ \begin{array} { l l } { A , } & { { \mathrm { i f ~ } } z \in \Omega _ { 1 } , } \\ { - f ( z ) + A , } & { { \mathrm { i f ~ } } z \in \Omega _ { 2 } } \end{array} \right. }
-$$
+(Cauchy's formula for “exterior” region) Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$. Assume $f'(z)$ exists in an open set containing $\gamma$ and $\Omega_2$, and
+\[
+\lim_{z\to\infty}f(z)=A.
+\]
+Show that
+\[
+\frac{1}{2\pi i}\int_\gamma \frac{f(\xi)}{\xi-z}\,d\xi
+=
+\begin{cases}
+A, & z\in\Omega_1,\\
+-f(z)+A, & z\in\Omega_2.
+\end{cases}
+\]
 :::

@@ -14,21 +14,39 @@ review: draft
 ::: {.problem}
 What is the output of the following algorithms?
 
-(A) (B)\
-a = 273 n = 88 n = 123456\
-b = 110 while n > 0\
-while b > 0 while i < n j = n (mod 100)\
-r = a (mod b) i = i+1 print j\
-a = b n = floor(n/100)\
-while k ≥ i end\
-print r if i=k then print i\
-end k = k - 1\
-end\
+(A)
+```text
+a = 273
+b = 110
+while b > 0
+    r = a (mod b)
+    a = b
+    b = r
+    print r
 end
-:::
+```
 
-::: {.solution}
-(A) 53, 4, 1, 0\
-(B) 2, 3, 4, 5, . . . , 87, 88\
-(C) 56, 34, 12
+(B)
+```text
+n = 88
+i = 1
+while i < n
+    i = i+1
+    k = n
+    while k >= i
+        if i=k then print i
+        k = k - 1
+    end
+end
+```
+
+(C)
+```text
+n = 123456
+while n > 0
+    j = n (mod 100)
+    print j
+    n = floor(n/100)
+end
+```
 :::

@@ -16,5 +16,5 @@ audit:
 ---
 
 ::: {.problem}
-Let $R \subseteq S$ be commutative domains with the same identity, and assume that S is an integral extension of R. Let I be a nonzero ideal of S. Prove that I ∩ R is a nonzero ideal of R.
+Let $R\subseteq S$ be commutative domains with the same identity, and assume that $S$ is an integral extension of $R$. Let $I$ be a nonzero ideal of $S$. Prove that $I\cap R$ is a nonzero ideal of $R$.
 :::

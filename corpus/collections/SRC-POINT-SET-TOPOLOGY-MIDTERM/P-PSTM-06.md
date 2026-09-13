@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let X be a discrete topological space, and let ∼ be an equivalence relation on X. Prove that $X / \sim _ { ; }$ endowed with the quotient topology, is also a discrete space.
+Let $X$ be a discrete topological space, and let $\sim$ be an equivalence relation on $X$. Prove that $X/\!\sim$, endowed with the quotient topology, is also a discrete space.
 :::
 
 ::: {.solution}

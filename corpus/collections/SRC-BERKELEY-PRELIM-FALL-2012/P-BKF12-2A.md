@@ -14,5 +14,5 @@ review: draft
 ::: {.problem}
 Prove or disprove the following assertion:
 
-If f : R → R has the property that $f ( [ a , b ] )$ is a bounded closed interval for every $a \leq b ,$ then f is continuous.
+If $f:\mathbb R\to\mathbb R$ has the property that $f([a,b])$ is a bounded closed interval for every $a\le b$, then $f$ is continuous.
 :::

@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let S be a real, n × n-symmetric matrix $S , { \mathrm { i . e . , ~ } } ^ { t } S = S$
+Let $S$ be a real $n\times n$ symmetric matrix, i.e. ${}^tS=S$.
 
-(A) Prove that the eigenvalues of S are real.
+(A) Prove that the eigenvalues of $S$ are real.
 
-(B) State and prove the Spectral Theorem for S.
+(B) State and prove the Spectral Theorem for $S$.
 :::

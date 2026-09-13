@@ -12,11 +12,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D = \{ z \in \mathbb { C } : | z | \leq 1 \} - \{ 1 , - 1 \}$ . Find an explicit continuous function $f : D \to \mathbb { R }$ satisfying all the following conditions:
+Let
+\[
+D=\{z\in\mathbb C:|z|\le 1\}\setminus\{1,-1\}.
+\]
+Find an explicit continuous function $f:D\to\mathbb R$ satisfying all the following conditions:
 
-• f is harmonic on the interior of D (the open unit disk),
-
-• f(z) = 1 when |z| = 1 and Im(z) > 0, and
-
-• f(z) = −1 when |z| = 1 and Im(z) < 0.
+- $f$ is harmonic on the interior of $D$ (the open unit disk),
+- $f(z)=1$ when $|z|=1$ and $\operatorname{Im}(z)>0$, and
+- $f(z)=-1$ when $|z|=1$ and $\operatorname{Im}(z)<0$.
 :::

@@ -17,7 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle.
-Let denote the the power series in the open disc.
-Show that (1) $c _ { n } \neq 0$ for all large enough n’s, and (2) lim $\frac { c _ { n } } { c _ { n + 1 } } = z _ { 0 }$ n→∞
+Suppose that $f$ is holomorphic in an open set containing the closed unit disc, except for a pole at $z_0$ on the unit circle.
+
+The retained source then reads “Let denote the the power series in the open disc.” The mathematical expression that should occur between “Let” and “denote” is absent from the PDF itself and is unrecovered.
+
+The surviving requests are:
+
+1. Show that $c_n\ne0$ for all sufficiently large $n$.
+2. Show that
+\[
+\lim_{n\to\infty}\frac{c_n}{c_{n+1}}=z_0.
+\]
 :::

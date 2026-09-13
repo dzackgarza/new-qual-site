@@ -12,5 +12,8 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate lim $\int _ { 1 } ^ { n } { \frac { d x } { x ^ { n } } }$ n→∞
+Calculate
+\[
+\lim_{n\to\infty}\int_1^n\frac{dx}{x^n}.
+\]
 :::
