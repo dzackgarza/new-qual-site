@@ -668,3 +668,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** automated use of the retained extraction would ingest the wrong mathematics under Spring 1982 provenance. This is not a Unicode-formatting defect detectable by `extraction-detector`; it is content substitution/misalignment.
 - **Uncertainty:** the mismatched markdown may have been sourced from another historical prelim during migration, but identifying that source is not required to recover Spring 1982 correctly.
 - **Repair:** `SRC-BERKELEY-PRELIM-SPRING-1982` was transcribed against the retained PDF itself for all 20 positions, with Problems 2--9 explicitly source-checked from the PDF page.
+
+### Berkeley Spring 1981 Problem 11 loses its contour figure in the retained extraction
+
+- **Object and need:** `P-BKS81-11`, Berkeley Preliminary Exam Spring 1981, Problem 11; evaluating the contour integral requires the closed curve that the exam says is "shown below".
+- **Observed evidence:** `assets/attachments/extracted/Spring81.md` contains the integral `(e^z-1)/(z^2(z-1))` and the sentence referring to the curve, but no figure or geometric description follows. No duplicate problem or legacy Spring 1981 figure asset is present in the repository. The repository-mandated `mineru-open-api` extractor is not installed on this host, so a prohibited substitute extractor was not used.
+- **Impact and owner:** the problem can be indexed and preserved with the source PDF as provenance, but the authored card cannot make the winding data self-contained without inventing a contour. Source intake owns preserving the gap explicitly rather than guessing it.
+- **Uncertainty:** the contour may remain embedded in `Spring81.pdf` even though it is absent from the retained markdown extraction; recovering that figure requires the permitted extraction path or an archival source asset.
+- **Repair:** `P-BKS81-11` preserves the integral and explicitly points to the source curve. No contour geometry or numerical answer was reconstructed.
