@@ -37,7 +37,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 <1>1. A particular solution is
 \[
@@ -85,7 +84,9 @@ Thus every homogeneous solution has the form
 \[
 x_h(t)=e^{-4t}(C\cos3t+D\sin3t)
 \]
-for real constants $C,D$. The prescribed initial conditions determine some particular values of $C$ and $D$, but their values are irrelevant for the limit. Since $\cos3t$ and $\sin3t$ are bounded,
+for real constants $C,D$.
+The prescribed initial conditions determine some particular values of $C$ and $D$, but their values are irrelevant for the limit.
+Since $\cos3t$ and $\sin3t$ are bounded,
 \[
 \lim_{t\to\infty}x_h(t)=0.
 \]
@@ -108,7 +109,8 @@ and choose $\delta$ with
 \qquad
 \sin\delta=\frac1{\sqrt{10}};
 \]
-for example $\delta=\arctan(1/3)$. Then
+for example $\delta=\arctan(1/3)$.
+Then
 \[
 \alpha\cos(t-\delta)
 =\alpha(\cos t\cos\delta+\sin t\sin\delta)

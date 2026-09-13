@@ -31,7 +31,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 Consider
 \[
@@ -42,7 +41,8 @@ Its poles are $-2\pm4i$.
 
 <1>1. On a large upper semicircle, the contour integral of $F$ tends to zero.
 ::: {.proof}
-Let $C_R$ be the upper semicircle $z=Re^{i\theta}$, $0\le\theta\le\pi$, with $R$ large. Since the denominator is quadratic, there is a constant $K$ such that on $C_R$,
+Let $C_R$ be the upper semicircle $z=Re^{i\theta}$, $0\le\theta\le\pi$, with $R$ large.
+Since the denominator is quadratic, there is a constant $K$ such that on $C_R$,
 \[
 \left|\frac{z}{z^2+4z+20}\right|\le\frac{K}{R}.
 \]

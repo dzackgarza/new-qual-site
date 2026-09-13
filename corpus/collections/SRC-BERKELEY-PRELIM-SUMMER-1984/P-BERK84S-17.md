@@ -43,7 +43,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 Fix $r$ with $0<r<R$.
 
@@ -53,7 +52,8 @@ Fix $r$ with $0<r<R$.
 \qquad(n\ge0).
 \]
 ::: {.proof}
-Because $r<R$, the power series for $f$ converges absolutely at $z=r$. Therefore
+Because $r<R$, the power series for $f$ converges absolutely at $z=r$.
+Therefore
 \[
 C:=\sum_{n=0}^{\infty}|a_n|r^n<\infty.
 \]
@@ -72,7 +72,8 @@ By <1>1, for every $z\in\mathbb C$,
 \le C\sum_{n=0}^{\infty}\frac{(|z|/r)^n}{n!}
 =C e^{|z|/r}<\infty.
 \]
-Thus the power series for $h$ has infinite radius of convergence. Hence $h$ is entire.
+Thus the power series for $h$ has infinite radius of convergence.
+Hence $h$ is entire.
 :::
 
 <1>3. The required growth estimate holds.

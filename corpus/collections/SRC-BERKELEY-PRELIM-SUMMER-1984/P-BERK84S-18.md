@@ -31,7 +31,6 @@ f ( x ) = \sin x + \int _ { 0 } ^ { 1 } { \frac { f ( y ) } { e ^ { x + y + 1 } 
 $$
 :::
 
-
 ::: {.solution}
 Set
 \[
@@ -91,7 +90,8 @@ I_0:=\frac{A}{1-k}
 \qquad	ext{and}\qquad
 f_0(x):=\sin x+I_0e^{-(x+1)}.
 \]
-The function $f_0$ is continuous on $[0,1]$. Moreover, the calculation in <1>2, read in reverse, gives
+The function $f_0$ is continuous on $[0,1]$.
+Moreover, the calculation in <1>2, read in reverse, gives
 \[
 \int_0^1 e^{-y}f_0(y)\,dy=A+kI_0=I_0.
 \]
@@ -101,6 +101,7 @@ Therefore
 =\sin x+e^{-(x+1)}I_0
 =f_0(x).
 \]
-So $f_0$ is a solution. Together with uniqueness from <1>2, it is the unique continuous real-valued solution.
+So $f_0$ is a solution.
+Together with uniqueness from <1>2, it is the unique continuous real-valued solution.
 :::
 :::
