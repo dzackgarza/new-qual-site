@@ -528,6 +528,21 @@ every source. And where the source cannot settle what a statement said, mark the
 unrecovered and say so; an invented plausible problem is the one outcome worse than a gap,
 because nothing downstream can tell it from the real thing.
 
+## Bank before you wait
+
+Work that is written but uncommitted lives only in this chat's working tree, and a turn that
+ends, a chat that is replaced, or a host that runs out of memory takes it with it. On
+2026-09-13 this repository sat idle holding 91 tracked paths of finished repairs, none of them
+banked, while the thing they were waiting on was a gate run over the whole batch.
+
+So order the work the other way. When a piece is written and you believe it correct, commit it
+*before* starting whatever comes next — the validating run, the next collection, the rest of
+the batch. A commit is not a claim that everything is finished; the message can say what is
+still pending. What it buys is that a stall, a kill or an ended turn costs a wait and nothing
+else, rather than taking the work with it.
+
+Commit in coherent groups as you go, not in one batch at the end. One collection transcribed is a commit; there is no reason for the second collection's work to ride on the first one's gate.
+
 ## What a tool may do
 
 A tool may render and transport: build the site, sync an external file into the
