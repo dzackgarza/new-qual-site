@@ -177,7 +177,7 @@ test-commit: _no-worktrees _unsolved-if-staged _extraction-detector-staged _no-b
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: backlog
+test-push: backlog crawl
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

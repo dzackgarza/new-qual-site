@@ -616,3 +616,23 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** both losses make the authored statement malformed and obscure the hyperplane geometry used by the problem. The problem card owns the transcription repair.
 - **Uncertainty:** the extractor lost the glyphs, so the repair is reconstructed from the source sentence's own notation rather than from the damaged markdown token itself.
 - **Repair:** restored the map arrow and the range $i=1,\ldots,n$ on `P-BERK84S-03`, then supplied the complete alternative-theorem proof.
+
+### ag-notes migration omits substantive source content
+
+**Assessment:** incomplete. The [ag-notes migration queue](queues/H-ag-notes-migration.md) owns the direct source-to-target comparison and remaining work. It identifies missing questions, proofs, hypotheses, examples and diagrams, with separate source-repair, reference and private-material dispositions.
+
+**Source boundary:** the deployed `/var/www/ag_notes/` tree was compared with authored corpus and wiki content. The later `/var/www/Notes/Class_Notes/2022/Fall/Orals/` vault remains a separate, unreviewed revision. The queue records the source inventory and target revision.
+
+**Owner and expected repair:** algebraic-geometry corpus curation. Complete the named mathematical items and resolve damaged source fragments before retiring their source. The queue records work; it does not perform the migration.
+
+### Sheaf operations page overstates pullback and the scope of exceptional functors
+
+- **Object:** [Operations and functoriality](wiki/algebraic-geometry/sheaves-of-modules/operations.md).
+- **Evidence:** the page says module pullback is right exact and “preserves everything”, then presents extension by zero and exceptional inverse image as functors on sheaves of sets for a general continuous map.
+- **Mathematical defect:** tensor pullback need not preserve kernels. For the map from the closed point to `Spec Z`, tensoring multiplication by a prime with its residue field destroys injectivity. Extension by zero for module or abelian sheaves cannot be transferred unchanged to arbitrary sheaves of sets, which lack a distinguished zero section. The exceptional-functor assertions require an appropriate category and hypotheses.
+- **Expected repair:** state the actual exactness properties and give the categories and hypotheses for each operation. This is an independent exposition defect encountered during the source comparison; repair remains open here.
+
+### Flowmark refuses to format the complaints document
+
+- **Observed:** the commit hook at `78ef136f4` reports `reformatting would change what pandoc reads (block 49: BulletList content differs)` for `COMPLAINTS.md` and leaves the file unchanged.
+- **Owner:** the structured-text formatter. Reproduce against this revision and preserve the parsed list content when correcting the formatter. The refusal leaves this document unformatted; it does not establish a defect in the mathematical corpus.

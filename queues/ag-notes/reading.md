@@ -1,0 +1,129 @@
+# AG reading-source migration comparison
+
+Source: deployed ag-notes snapshot `/var/www/ag_notes/`. Targets are current `corpus/` and `wiki/`. Theory IDs name files under `corpus/theory/Algebraic_Geometry/` unless indicated otherwise; Hartshorne problem IDs name files under `corpus/collections/SRC-TEXT-HART77/`. Statements, hypotheses, examples, hints, footnotes and diagrams were compared directly.
+Status records transfer, not correctness certification.
+
+## Reading notes
+
+The first three rows occur under both `0_Study Guides/Notes/` and `0_Study Guides/Reading Notes/`.
+
+| Relative source | Status | Retained content and exact remainder |
+| --- | --- | --- |
+| `1_Hartshorne/1_1x.html` | partial | Main topology/ideal dictionary, dimensions, coordinate rings and localization: `D-BIVAU`, `T-JRTS2`, `PR-7OT2Z`, `D-9DIKB`, `PR-TNVSI`, `D-5LJUX`, `PR-VARHT`, `D-VARREG`. Missing from these targets: opening vanishing-set union/product and intersection/sum formulas, ideal-of-union formula, regular-function intersection in the function field; cofinite-topology PID/factorization hint; irreducibility exercise without Nullstellensatz; explicit maximal-ideal generators `(x_i-a_i)`; realization of every finitely generated domain as a coordinate ring; quasi-affine dimension/closure equality. `D-5LJUX` narrows the general-field transcendence-degree assertion to algebraically closed fields. `PR-VARHT` narrows the Noetherian-domain UFD criterion to normal domains and adds a false affine twisted-cubic three-generator claim. Correct these target changes and the source's inclusion/transcendence-base typos. |
+| `1_Hartshorne/1_2x.html` | partial | `D-CP2MH`, `D-DEFGRRNG`, `D-VARQAP` retain projective varieties, graded rings, homogeneous ideals and charts; `P-AGH23ZIPROPS` retains projective ideal/vanishing operations. Outstanding: homogeneous-ideal closure under sum/product/intersection/radical, primality tested on homogeneous elements, and the stars-and-bars degree-three monomial correspondence. `P-AGH212DUPLE` retains the binomial monomial count but not that argument. Both `2022-10-08_18-48-17.png` and `2022-10-08_19-05-22.png` are readable variants of this correspondence; the latter occurs in both Notes and Reading Notes figure directories. Preserve one complete semantic rendition and correct the source variable-count mismatch. |
+| `2_Hartshorne/2_1x.html` | partial | Main definitions: `D-RCCFY`, `D-0QSI0`, `T-3VX80`, `D-A7LCT`, `D-VJFAP`, `PR-IP6ZG`, `D-UDIVH`, `D-MODPULL`. Exact constructions: `P-AGH2110DIRLIM`–`P-AGH2113ESPETALE`, `P-AGH2114SUPPORT`, `P-AGH2115SHEAFHOM`, `P-AGH2116FLASQUE`, `P-AGH2117SKYSCRAPER`, `P-AGH2119EXTZERO`, `P-AGH2121VARSHEAVES`, `P-AGH2122GLUESHEAVES`. These retain limits, support, sheaf Hom, skyscraper and extension-by-zero sections/stalks, ideal sheaves and cocycle gluing. `D-VARREG` retains the regular-function sheaf/local ring; `P-AGH211CONSTSHEAF` retains locally constant functions; `P-AGH212STALKEXACT` retains stalk exactness. Outstanding: explicit inverse-image presheaf `U -> colim_{V containing f(U)} G(V)`, restriction-stalk equality, constant-sheaf sections `A^(pi_0 U)` when components are open, and regular-function sheaf locality hint. The q.uiver payload for `4f01b3b5bc83e9e5680025fcbbaf58722f3d113b` is the eta/restriction square and is retained in `D-DEFNATTR`; it needs no recovery. `FE-SHFISOSTALKS` adds the false claim that double-cover pushforward on S1 is not locally constant; correct that target error. |
+| `0_Study Guides/Notes/Nonlinear Algebra 1.html` | partial | `corpus/theory/Algebra/PR-76BDN` retains maximal/prime/radical quotient criteria; `P-HCAO10` retains maximal-implies-prime. `P-KSRING17-052(b)` applied to R/I retains radical as intersection of primes. Outstanding: prime-implies-primary and radical/primary independence exercise. `FD-LHLDU` is about primary modules and does not replace it. Two other Verify boxes are empty. |
+| `0_Study Guides/Notes/Toric Varieties 1.html` | partial | Toric wiki and `T-TORDIV`, `FE-TORCD`, `FE-TORP2`, `FE-TORHIRZ` retain cones/fans/tori and many divisor computations. Outstanding **Unsorted** Cox/GIT quotient, irrelevant monomial ideal, primitive collections, simplicial geometric-quotient criterion; **Divisors** Cartier data as inverse limit over face poset; **Basics** dual cokernel/kernel and tensor–Hom prompts; explicit Tot(O_P1(n)) coordinates and projective-space/Segre quotient coordinates. The three q.uiver diagrams were decoded. `T-TORDIV` retains the two divisor exact-sequence maps only for spanning fans; retain the general nonzero-kernel case. `FE-TORCD` retains the third Z²→Z²→Z/2 computation and both explicit maps. The nonsimplicial threefold class/Picard calculation is specified in the Fulton image table. Correct the source's smoothness restriction on Hirzebruch indices. |
+| `Fulton/0 Notes.html` | partial | **Quick Criteria**, **Cones and Lattices**, **Divisors**, **Polytopes**, **Singularities and Classification**, **Examples** compared against `PR-FULCRIT`, `PR-FULCOTAN`, `D-FULSAT`, `D-FULSTAR`, `D-FULSIMPLE`, `D-FULNORMPOLY`, `FE-FULHIRZBUN` and toric wiki. Outstanding: Hirzebruch four chart rings/transitions; rational-normal-scroll matrix/monomial parametrization; affine blowup incidence `V(xt1-yt0)` and both chart identifications; P2 chart coordinates; polar-dual facet-rescaling calculation and combinatorial-equivalence definition. Detached figures have individual entries below. Empty example TODOs contain no argument. |
+| `Fulton/I Definitions and Examples.html` | migrated | Section 1.1 construction and bundle example retained in `D-Q7Q2N`, `PR-FULLOC`, `FE-FULHIRZBUN`; section 1.2 separation/double-duality, facets, face duality and localization in `PR-FULSEP`, `PR-FULFACET`, `PR-FULFACEDUAL`, `PR-FULLOC`. Source direction/uniqueness errors corrected in target formulas. |
+| `Fulton/II Singularities and Compactness.html` | reference-only | Dated title and backlink only. |
+| `0_Study Guides/Notes/McKernan AG 2.html` | reference-only | Title, tags and resource template only. |
+| `0_Study Guides/Notes/Untitled.html` | reference-only | Heading “Relating covers to pi_1:” only. |
+
+## McKernan AG 1
+
+`0_Study Guides/Notes/Mckernan AG 1.html` is **partial**. The complete lecture sequence was read.
+The table identifies transferred mathematics and the source-specific remainder.
+Source prompts are not replaced by a different example with the same topic.
+
+| Source locator | Retained target content | Remaining content |
+| --- | --- | --- |
+| Lecture 1 | `D-BIVAU`, `PR-7OT2Z`, `T-JRTS2`, `D-9DIKB`, `PR-TNVSI`. | Topology-axiom proof, radical-is-an-ideal exercise, Noetherian induction, quadrics cutting out at most 2n general-position points, specified nodal/cuspidal irreducibility exercises; I.1 formula gaps above. |
+| Lecture 2 | `D-DEFINTEG`, `D-DEFINTCL`, `T-JRTS2`; `P-HCAO33` parts 2–5 retain finite-module integrality, adjoining integral elements, integral closure as ring and the subring-field consequence. | Polynomial localization k[x,1/f] never a field; finitely-generated-field-algebra/Zariski-lemma assertion beyond Nullstellensatz forms. Correct R/F base confusion in source criterion. |
+| Lecture 3 | `D-DEFFFF` retains full subcategories and equivalence criterion; `PR-SCHFOP` supplies only the scheme-specific Yoneda statement. | General locally-small definition, Yoneda embedding/full faithfulness, representing-object uniqueness; parabola/nodal parametrizations; Jacobian-conjecture prompt. Correct source twisted-cubic A2 to A1. |
+| Lecture 4 | `PR-7OT2Z`, `D-VARREG`; `T-SK599` is affine-scheme anti-equivalence. | Explicit essential image and anti-equivalence for affine varieties/finitely generated reduced algebras. |
+| Lectures 5–6 | II.1 map above; `D-AN662` and `D-MODPULL` retain locally ringed morphisms/module pullback. | Holomorphic germs as convergent series, smooth germs' nonzero Taylor kernel; explicit inverse-image formula. Correct formal-versus-convergent source error. |
+| Lecture 7 | `D-VKR54`, `D-SCHPTS` retain spectrum, residue values, nilpotent vanishing, generic/DVR points; `P-KSRING17-052(b)` retains radical-intersection assertion. | Specific value/zero calculation for n=60 on Spec Z; primes of k[x,y]; distinguished-open cover implies power-membership formula; topology formula gaps above. |
+| Lecture 8 | `D-VKR54`, `D-AN662`, `T-SK599` retain listed constructions and equivalence with contravariance corrected. | None identified. |
+| Lecture 9 | `P-AGH211LINEAR` retains linear subspaces, dimension/intersection inequality and hint. | None identified. |
+| Lecture 10 | `D-DEFGRRNG`, `D-CP2MH`. | Infinite-field scaling iff homogeneous; circle/cubic homogenizations; parallel-line point at infinity; circular-point criterion; conic parameter space/hyperplanes; conic and circle interpolation. Correct broken spoilers and general-circle/unit-circle confusion. |
+| Lecture 11 | `P-AGH212DUPLE`, `PR-VA4S3`, `P-AGH434RATIONALNORMALCURVE` retain Veronese, twisted cubic and rank-one determinant equations. | General determinantal-variety definition and projective-morphism local homogeneous-coordinate condition. |
+| Lecture 12 | Projective-duality/linear-action material overlaps textbook exercises. | PGL quotient, Grassmannian family through W, frame uniqueness, hyperplane-moduli description and unique rational-normal-curve interpolation through n+3 points. Correct PGL indexing for Pn. |
+| Lecture 13 | Projective/quasi-projective definitions and principal affine opens occur in projective-variety cards. | Circle parametrization/inverse and their projectivizations, with correct domains. |
+| Lecture 14 | `D-QXER7`, `D-OKSJJ`, `D-5MX7E` retain limits, inverse systems, products and coproducts; `D-SCHFPR` retains tensor-product pushout. | Initial/terminal objects as empty (co)limits. |
+| Lecture 15 | `PR-VA4S3` retains Segre equations and projectivity. | Categorical product universal property for subvarieties and graph of a quasi-projective morphism. |
+| Lecture 16 | `D-DEFREGLR`, `corpus/theory/Algebra/D-VK2KZ`, `D-HWLVG`, `D-SCHPTS` retain DVR/valuation ring and local spectrum. | Holomorphic-disc DVR; maps between curve local spectra and their fraction fields; Q(sqrt3) splitting/inertia/ramification. `PR-SCHFIB` uses Z[i], a different example. |
+| Lecture 17 | `D-MORFT`, `D-MORFIN`, `D-SCHSUB`, `PR-6TCSJ` retain scheme/morphism definitions and same-support examples; `P-ALGS11H` retains distinguished-open Noetherian descent with full proof. | Every-affine-open local-Noetherian criterion; topologically Noetherian non-Noetherian example; k[x,1/x] finite-type/nonfinite example; infinitesimal neighborhood definition. Correct local-map residue-field criterion: it concerns a given homomorphism, not reconstructing one from a residue-field inclusion. Correct localization spoiler's module typo. |
+| Lecture 18 | `P-AGH2122GLUESHEAVES`, `D-SCHGLUE`, `D-SCHRED`, `D-SCHFPR` retain sheaf/scheme gluing, reduced induced structure and fiber-product gluing. | No unread formula; damaged source syntax does not prevent comparison. |
+
+## Fulton figures
+
+All source filenames below are relative to `Fulton/figures/`. Every image was viewed; the text-bearing images were also viewed at full resolution.
+All are readable.
+A figure's content may be represented by authored equations, but a different example does not preserve its specific computation.
+
+| Source image | Status | Mathematical comparison |
+| --- | --- | --- |
+| `2022-10-18_15-33-37.png` | partial | Cone and dual lattice diagram for the quadric cone in `Fulton/0 Notes.html`, Examples. `FE-TORCD` gives the same degree-two semigroup algebra; preserve the paired cone/lattice picture alongside the computation. |
+| `2022-10-18_15-33-47.png` | migrated | Quadric cone surface drawing, semantically retained by `wiki/algebraic-geometry/toric/affine-computations.md` and its quadric-cone surface plot. |
+| `2022-10-18_15-36-53.png` | partial | Projective-line fan and ring/space gluing diagram `C[x^-1] -> C[x,x^-1] <- C[x]`, with the reversed open embeddings. The toric dictionary gives the general construction; retain this explicit diagram in the projective-line example. |
+| `2022-10-18_15-39-10.png` | partial | First-quadrant subdivision by the diagonal ray, the fan of the affine-plane blowup. Ties to the missing explicit blowup chart computation in `Fulton/0 Notes.html`, Examples. |
+| `2022-10-18_15-42-04.png`; `2022-10-18_15-42-18.png` | partial | Projective-plane fan and its three dual cones. `FE-TORP2` retains ray coordinates and maximal cones; the dual-cone/chart display belongs with the missing full projective-plane coordinate-ring computation. |
+| `2022-10-18_15-45-17.png` | partial | Hirzebruch four-chart transition square `(x^-1,x^a y)`, `(x,y)`, `(x^-1,x^-a y^-1)`, `(x,y^-1)`. `FE-FULHIRZBUN` retains the bundle but not this full transition square. |
+| `2022-10-18_20-35-45.png` | partial | Two three-dimensional cone cross-sections, with five and four extreme rays. Retain the displayed nonsimplicial examples with the cone definitions; generic cone prose does not reproduce these configurations. |
+| `2022-10-19_18-23-05.png` | partial | Three-dimensional cone with four extreme rays, illustrating the nonsimplicial cone. Retain with the specific cone/dual computation in the notes. |
+| `2022-10-19_18-35-59.png` | partial | Square and polar diamond. `D-TORPOLY` gives polar duality, but the target's projective-plane triangle is a different example; retain the square computation. |
+| `2022-10-19_19-08-06.png` | partial | Hexagonal polygon with vertex tangent directions, paired with its six-cone normal fan. Retain the example relating vertices to maximal normal cones; general normal-fan definition alone does not retain it. |
+| `2022-10-19_19-19-36.png` | partial | Cube vertices `(±1,±1,±1)`, facet normals `±e_i`, inequalities `<m,±e_i> >= -1`, polar octahedron and octant normal fan. `D-FULSIMPLE` names cube/octahedron but omits this explicit duality/fan calculation. |
+| `2022-10-20_00-07-20.png` | migrated | Explicit class-group matrices for P2, Hirzebruch surface and the degree-d rational-normal-curve cone. `FE-TORP2`, `FE-TORHIRZ`, `FE-TORCD` retain rays, integer maps, cokernel groups and divisor relations (with changed basis/order). |
+| `2022-10-20_00-10-35.png` | partial | Cone over P1×P1 `V(xz-yw)`: four-ray integer matrix, Cl=Z generated by any invariant divisor, Pic=0. The toric surfaces/morphisms page retains the cone/rays but omits this particular class-group/Picard computation. |
+
+## Navigation and empty headings
+
+These HTML pages have only chapter/section headings, backlinks or generated child-page lists.
+Raw HTML checks found no additional mathematical title payloads or images.
+Root `1_Hartshorne.html`, `2_Hartshorne.html`, `Fulton.html` are navigation; `2_Hartshorne/2_1.html` is heading-only.
+Root I exercise-page aliases are listed in the worked-source comparison.
+
+The following relative paths occur under **both** `0_Study Guides/Notes/` and `0_Study Guides/Reading Notes/`:
+
+| Relative source paths | Status | Content basis |
+| --- | --- | --- |
+| `1_Hartshorne.html`, `2_Hartshorne.html`, `3_Hartshorne.html`, `4_Hartshorne.html`, `5_Hartshorne.html` | reference-only | Auto-generated child-page navigation. |
+| `1_Hartshorne/1_3.html`, `1_Hartshorne/1_4.html`, `1_Hartshorne/1_5.html`, `1_Hartshorne/1_6.html`, `1_Hartshorne/1_7.html` | reference-only | Morphisms; Rational Maps; Nonsingular Varieties; Nonsingular Curves; Intersections in Projective Space headings only. |
+| `2_Hartshorne/2_2.html`, `2_Hartshorne/2_3.html`, `2_Hartshorne/2_4.html`, `2_Hartshorne/2_5.html`, `2_Hartshorne/2_6.html`, `2_Hartshorne/2_7.html`, `2_Hartshorne/2_8.html`, `2_Hartshorne/2_9.html` | reference-only | Schemes through Formal Schemes headings only. |
+| `3_Hartshorne/301.html`, `3_Hartshorne/302.html`, `3_Hartshorne/303.html`, `3_Hartshorne/304.html`, `3_Hartshorne/305.html`, `3_Hartshorne/306.html`, `3_Hartshorne/307.html`, `3_Hartshorne/308.html`, `3_Hartshorne/309.html`, `3_Hartshorne/310.html`, `3_Hartshorne/311.html`, `3_Hartshorne/312.html` | reference-only | Derived Functors through Semicontinuity headings only. These differ from the substantive exercise pages with `x` suffixes under root `Hartshorne/`. |
+| `4_Hartshorne/4_4.html`, `4_Hartshorne/4_5.html`, `4_Hartshorne/4_6.html` | reference-only | Elliptic Curves; Canonical Embedding; Classification of Curves in Projective Space headings only. |
+| `5_Hartshorne/5_1.html`, `5_Hartshorne/5_2.html`, `5_Hartshorne/5_3.html`, `5_Hartshorne/5_4.html`, `5_Hartshorne/5_5.html`, `5_Hartshorne/5_6.html` | reference-only | Geometry on a Surface through Classification of Surfaces headings only. |
+
+## Hartshorne III and IV exercise pages
+
+All target IDs below are files under `corpus/collections/SRC-TEXT-HART77/`. The collection index supplies the individual source exercise locators.
+Each statement, subpart, displayed formula, mathematical footnote and hint was read against its target.
+Source task tags and backlinks are navigation.
+
+| Exact deployed source | Status | Target and disposition |
+| --- | --- | --- |
+| `Hartshorne/3_Hartshorne/301x.html` | reference-only | Commentary introducing exercises only; no posed mathematics. |
+| `Hartshorne/3_Hartshorne/302x.html` | partial | III.2.1–7, `P-AGH321CONSTSHEAFAFFLINE` through `P-AGH327CIRCLE`: mathematical content present. Restore the source difficulty star on III.2.1(b). |
+| `Hartshorne/3_Hartshorne/303x.html` | partial | III.3.1–8, `P-AGH331REDAFFINE` through `P-AGH338NONNOETHFAIL`: mathematical content and hints present. Restore III.3.6(b) difficulty star in `P-AGH336QCOHINJECTIVES`. |
+| `Hartshorne/3_Hartshorne/304x.html` | partial | III.4.1–11, `P-AGH341AFFINEMORPH` through `P-AGH3411LERAYACYCLIC`: mathematics present, including infinitesimal extensions and all hints. Restore stars on III.4.8(d) and III.4.10. |
+| `Hartshorne/3_Hartshorne/305x.html` | partial | III.5.1–10, `P-AGH351EULERCHAR` through `P-AGH3510TWISTEXACT`: main problems and hints present. **Footnote 9 of III.5.9 is absent from `P-AGH359NONPROJ`:** generalize the nonprojective infinitesimal extension from the projective plane to every nonsingular projective surface in characteristic zero, using ample D, its class in H1(Omega1), and delta(L(E))=(D.E); retain the positive-characteristic contrast concerning projectivity of X and Xred. Related theory/wiki searches did not locate this extension. |
+| `Hartshorne/3_Hartshorne/306x.html` | migrated | III.6.1–10, `P-AGH361EXTONE` through `P-AGH3610FINITEFLATDUAL`: Ext classifications, homological dimension, Kleiman, K-group and finite-flat duality, with all mathematical hints. |
+| `Hartshorne/3_Hartshorne/307x.html` | partial | III.7.1–4, `P-AGH371KODAIRAVAN` through `P-AGH374COHOMCLASS`: mathematics present; restore III.7.4 star. |
+| `Hartshorne/3_Hartshorne/308x.html` | migrated | III.8.1–4, `P-AGH381DEGENLERAY` through `P-AGH384PROJBUNDLE`: degenerate Leray, affine morphisms, projection formula and projective-bundle cohomology, including hints. |
+| `Hartshorne/3_Hartshorne/309x.html` | partial | III.9.1–11, `P-AGH391FLATOPEN` through `P-AGH3911GENUSBOUND`: all mathematical subparts and hints present. Restore stars on III.9.8 and III.9.10(c). |
+| `Hartshorne/3_Hartshorne/310x.html` | partial | III.10.1–9, `P-AGH3101SMOOTHVSREG` through `P-AGH3109MIRACLEFLAT`: all statements and hints present. The detached `Hartshorne/3_Hartshorne/figures/2022-10-23_00-23-42.png` is the readable Figure 12 finite étale cover: the source curve has two crossings over the nodal base curve's crossing. Preserve this cover diagram with `P-AGH3106NODALCOVER`; its mathematical picture is absent from that target. |
+| `Hartshorne/3_Hartshorne/311x.html` | partial | III.11.1–8, `P-AGH3111PUNCTAFFINE` through `P-AGH3118VANISHNBHD`: all mathematics present, including Lefschetz footnote; restore III.11.5 star. |
+| `Hartshorne/3_Hartshorne/312x.html` | partial | III.12.1–6, `P-AGH3121EMBDIMSEMI` through `P-AGH3126PICPRODUCT`: all mathematics present; restore III.12.6 star. |
+| `Hartshorne/4_Hartshorne/4_1x.html` | partial | IV.1.1–10, `P-AGH411REGULAROUTSIDEP` through `P-AGH4110PICOFARITHGENUSONE`: all source mathematics and hints present; restore star on IV.1.9 (`P-AGH419RRSINGULAR`). Source IV.1.10 and target both incorrectly name Pic instead of Pic0; this is a retained source error, not an omission. |
+| `Hartshorne/4_Hartshorne/4_2x.html` | migrated | IV.2.1–7, `P-AGH421PNSIMPLYCONNECTED` through `P-AGH427ETALEDEGREETWO`: all subparts and mathematical footnotes retained, including characteristic-p exception to Hurwitz, bitangent computation, trace splitting and cyclic étale-cover generalization. |
+| `Hartshorne/4_Hartshorne/4_3x.html` | migrated | IV.3.1–12, `P-AGH431GENUSTWOVERYAMPLE` through `P-AGH4312NODALCURVESEXIST`: all subparts, examples and hints retained, including nilpotent projection degeneration, strange curve parametrization and Severi footnote. |
+| `Hartshorne/4_Hartshorne/4_4x.html` | partial | IV.4.1–22, `P-AGH441GRADEDRINGWEIERSTRASS` through `P-AGH4422FAMILYOVERAFFINELINE`: all main problems and worked hints retained. Footnote 5 of IV.4.8 explicitly presents the surface group with generators a_i,b_i and product of commutators equal to 1; `P-AGH448ALGEBRAICFUNDAMENTALGROUP` stops at the surface-group description and omits that presentation. Restore IV.4.22 star. |
+| `Hartshorne/4_Hartshorne/4_5x.html` | migrated | IV.5.1–7, `P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION` through `P-AGH457AUTOMORPHISMSGENUSTHREE`: all source subparts, dimension-count hints and mathematical footnotes retained, including Enriques–Petri and general trivial automorphism-group assertion. |
+| `Hartshorne/4_Hartshorne/4_6x.html` | migrated | IV.6.1–9, `P-AGH461RATIONALQUARTICONUNIQUEQUADRIC` through `P-AGH469NONSINGULARSURFACECONTAININGACURVE`: all mathematical content and hints retained, including the Bertini-on-blowup construction. |
+
+The heading-only pages `Hartshorne/3_Hartshorne/301.html`, `302.html`, `303.html`, `304.html`, `305.html`, `306.html`, `307.html`, `308.html`, `309.html`, `310.html`, `311.html`, `312.html` (all relative to `Hartshorne/3_Hartshorne/`) are reference-only.
+Likewise `Hartshorne/4_Hartshorne/4_3.html`, `4_4.html`, `4_5.html`, `4_6.html` (all relative to `Hartshorne/4_Hartshorne/`) are heading-only reference pages.
+These have no hidden mathematical title payloads or mathematical image elements.
+Chapter III–IV exercise comparisons have no unread residue.
+Their partial rows identify content or source-annotation gaps, not unfinished source reads.
+
+## Curve reading notes
+
+Both `0_Study Guides/Notes/4_Hartshorne/` and `0_Study Guides/Reading Notes/4_Hartshorne/` carry the following named pages.
+| Source | Status | Actual targets and outstanding content |
+| --- | --- | --- |
+| `4_1x.html` | partial | `D-G1AEH`, `FE-CRVQUAD`, `D-DIVLINSYS`, `PR-Y5S7V`, `D-4GCH6`, `D-CRVSPEC`, `T-MWDVL`, `PR-VGA2L`, `PR-CRVGRP` retain the genus dictionary, every-genus construction, divisor degree, linear systems, differentials, speciality, Riemann–Roch and its canonical-degree consequence, genus-zero criterion and elliptic Picard bijection. The last card preserves the source's Riemann–Roch bijection argument with the correct Pic^0 target. Restore the explicit exercises that a nonzero section forces nonnegative degree, and that degree zero with a nonzero section forces the trivial line bundle. `D-DIVOD` and `D-DIVLINSYS` supply their ingredients but do not state these exercises. Restore the hyperplane-section calculation L(D)=O_X(1), chi(L(D))=d+1-p_a as a single worked step; its pieces occur in `T-MWDVL` and divisor cards. Preserve the short genus-equality argument using III.5.3 and duality. Source slips in the definition of linear equivalence and omission of effective divisors in the linear system need correction, not transcription. |
+| `4_2x.html` | partial | `D-IV2RAM`, `T-LKT0U`, `D-IV2FROBTWIST`, `PR-IV2DEGREVEN`, `D-IV2ETCOV`, `PR-IV2INSEP`, `T-IV2LUROTH` retain the ramification-index and derivative-length calculation, tame/wild distinction, cotangent sequence, Hurwitz derivation, Frobenius examples, even ramification degree, the complete simple-connectedness proof, genus inequality and Lüroth argument. Restore the explicit divisor pullback sum and compatibility f*L(D)=L(f*D); `D-MODPULL` and `P-AGH268PULLBACKPIC` retain the Picard functor but not that curve calculation. Correct `PR-IV2INSEP`'s added assertion that absolute Frobenius is an isomorphism of underlying schemes: t maps to t^p on k[t], which is not surjective. The Frobenius-twisted curves can be isomorphic as abstract schemes without that morphism being an isomorphism. The source's higher-dimensional Lüroth footnote is retained with characteristic-zero scope in `T-IV2LUROTH`. |
+| `4_3x.html` | partial | `D-DIVAMPLE`, `D-DIVLINSYS`, `T-D8TUX`, `PR-CRVDEGBD`, `PR-DIVAMPCURVE`, `T-CRVEMBP3` retain the ample/base-point dictionary, point-pair criterion including coincident points, all degree thresholds and low-genus specializations, quartic counterexample, projection criteria, secant/tangent dimensions, nodal genus and Severi-family dimension/nonemptiness/irreducibility. Restore the skyscraper exact-sequence hint L(D-P)->L(D)->k(P) on the degree-criterion argument. Correct the source's definition of a node as merely multiplicity two: distinct tangent directions are required. The source's chained equivalence confuses birationality with birationality onto a nodal image; the target projection statement separates the latter correctly. Source reading-stop annotations carry no mathematical result beyond the material listed here. |

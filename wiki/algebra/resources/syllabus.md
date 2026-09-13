@@ -23,13 +23,13 @@ Adapted from remark written by Roy Smith, August 2006:
 
 - [@Hun74]
 
-- [@Smi]
+- [@Smi96]
 
   - Note: scroll down the page to find links to his course notes.
 
 ## Group Theory
 
-> References: [@DF04, chaps. 1-6]; [@Hun74]; [@Smi].
+> References: [@DF04, chaps. 1-6]; [@Hun74]; [@Smi96].
 
 ### Topics
 
@@ -135,7 +135,7 @@ See [@DF04, chaps. 1-9].
 
 ## Linear Algebra
 
-> References: [@DF04],[@HK71],[@Smi]
+> References: [@DF04],[@HK71],[@Smi96]
 
 ### Topics
 
@@ -167,11 +167,11 @@ See [@DF04, chaps. 1-9].
 
 ## Rings
 
-> References: [@DF04]; [@Hun74]; [@Smi].
+> References: [@DF04]; [@Hun74]; [@Smi96].
 
 - [@DF04, chaps. 13-14]
 
-- [@Smi]:
+- [@Smi96]:
 
   - 843-2, sections 11,12, and 16-21 (39 pages)
 
@@ -199,7 +199,7 @@ See [@DF04, chaps. 1-9].
 
   - Why it is unnecessary in countable or noetherian rings.
 
-  > See [@Smi, sec. 844-1].
+  > See [@Smi96, sec. 844-1].
 
 - Chinese Remainder Theorem
 
@@ -247,7 +247,7 @@ See [@DF04, chaps. 1-9].
 
       - Proof that a Euclidean domain is a PID and hence a UFD
 
-      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi, p. 289; @DF04, p. 300]
+      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi96, p. 289; @DF04, p. 300]
 
       - A polynomial ring in infinitely many variables over a UFD is still a UFD [@DF04, p. 305]
 
@@ -271,7 +271,7 @@ See [@DF04, chaps. 1-9].
 
   - Eisenstein's criterion [@DF04, p. 309]
   > Stated only for monic polynomials -- proof of general case identical.
-  > See [@Smi] for the full version.
+  > See [@Smi96] for the full version.
 
   - Reducibility
 
@@ -279,13 +279,13 @@ See [@DF04, chaps. 1-9].
 
 - Cyclic product structure of $(\ZZ/n\ZZ)\units$
 
-  > See [@DF04] and [@Smi, sec. 844-2.18].
+  > See [@DF04] and [@Smi96, sec. 844-2.18].
 
 - Gröbner bases and division algorithms for polynomials in several variables [@DF04, sec. 9.6]
 
 ## Modules
 
-> References: [@DF04]; [@Hun74]; [@Smi].
+> References: [@DF04]; [@Hun74]; [@Smi96].
 
 ### Topics
 
@@ -304,13 +304,13 @@ See [@DF04, chaps. 1-9].
 
   - Constructive proof of decomposition [@DF04, exs. 12.1.16-19]
 
-  > See [@Smi, secs. 845-1 and 845-2] for a detailed discussion of the constructive proof.
+  > See [@Smi96, secs. 845-1 and 845-2] for a detailed discussion of the constructive proof.
 
 ## Field Theory
 
 ### Topics
 
-> References: [@DF04]; [@Hun74]; [@Smi].
+> References: [@DF04]; [@Hun74]; [@Smi96].
 
 - Algebraic extensions of fields
 

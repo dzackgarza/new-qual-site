@@ -717,7 +717,7 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     citeproc resolves it against `references.bib`: the reader gets an author-date
     reference in place and a bibliography entry to look it up in."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nReferences: [@DF04], [@Smi].\n"))
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nReferences: [@DF04], [@Smi96].\n"))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -733,7 +733,7 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     # one, which labels a reference `[DuFo04]` rather than `(Dummit and Foote 2004)`.
     text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
     assert "[DuFo04]" in text
-    assert "[Smit]" in text
+    assert "[Smit96]" in text
     assert "Dummit, D. S. and R. M. Foote" in text
     assert "Wiley, 2004" in text
     assert "Smith, R." in text

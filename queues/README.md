@@ -4,8 +4,7 @@ Two kinds of queue files:
 
 - `01-11`: Validity review of each `TODO.md` unchecked item and each `DESIGN_TODO.md` defect.
 
-- `A-G`: Concrete document lists — the actual files and cards that need checking.
-  Each item is a checkbox.
+- `A-H`: Concrete document lists — the actual files and cards that need checking or migration.
 
 ## Document queues (files to check)
 
@@ -18,6 +17,7 @@ Two kinds of queue files:
 | `E-pdf-attachments.md` | active | Every PDF not in any collection provenance, classified by document content. The authored work is creating collection cards and extracting problems, one document at a time. |
 | `F-wiki-doctor.md` | done | `just doctor` findings; the 5 structural one-child directories are recorded non-defects with real content. |
 | `G-math-error-scan.md` | done | All 66 candidate mathematical errors found by the reading pass have been independently re-derived and dispositioned. |
+| [H-ag-notes-migration.md](H-ag-notes-migration.md) | active | Deployed ag-notes source comparison, remaining mathematical content, source repair, references and private material. |
 
 ## Validity review queues (TODO.md items)
 
@@ -38,6 +38,6 @@ Two kinds of queue files:
 
 ## How to use
 
-Read a document queue (A-G). Check each file/card against its criterion.
+Read a document queue (A-H). Check each file/card against its criterion.
 Commit each completed check.
 When a queue is empty, the work is done.

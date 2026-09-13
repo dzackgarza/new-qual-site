@@ -424,9 +424,13 @@ areas because they are whole exams, not topics inside a core area: `prelim`
 area + date; Applied Algebra and Algebra share institution and term, so they
 cannot share `area: algebra`.
 
-Extensions live inside those areas, usually as topics: algebraic geometry,
-commutative algebra, differential geometry / manifolds, representation theory
-(filed in algebra), and number theory.
+`algebraic-geometry` is a seventh registered area. It is a qualifying exam in
+its own right at Harvard and Berkeley, with its own examiners and its own
+question bank, so it is not a topic inside algebra.
+
+The remaining extensions do live inside those areas as topics: commutative
+algebra, differential geometry / manifolds, representation theory (filed in
+algebra), and number theory.
 
 Do not add numerical analysis, statistics, or probability. Those are out of
 scope for now. A department posting an exam in those subjects is not a reason
