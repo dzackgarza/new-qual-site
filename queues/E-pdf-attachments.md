@@ -300,7 +300,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08
 
-- [ ] [basic-08S.pdf](assets/attachments/extracted/basic-08S.md) (109L, 11 problems) — no metadata
+- [x] [basic-08S.pdf](assets/attachments/extracted/basic-08S.md) (109L, 11 problems) — no metadata — disposition 2026-09-13: identified from the retained resource link and checked extraction as the UCLA Basic Examination, Spring 2008; ingested as `SRC-UCLA-BASIC-SPRING-2008` with twelve source-order problem cards `P-UCLAB08S-01` through `P-UCLAB08S-12`. The inventory count of 11 was stale.
 
 - [x] [basic-09F.pdf](assets/attachments/extracted/basic-09F.md) (87L, 12 problems) — UCLA — applied-algebra — Fall 2009 — disposition 2026-09-13: identified from the retained extraction as the UCLA Basic Exam, Fall 2009; ingested as `SRC-UCLA-BASIC-FALL-2009` with twelve source-order problem cards `P-UCLAB09F-01` through `P-UCLAB09F-12`. The source is a mixed Basic Examination, so the canonical collection is classified `prelim`.
 
