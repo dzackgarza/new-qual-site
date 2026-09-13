@@ -11,7 +11,7 @@ title: Solution Compendia
 
 [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-[[attachments/Algebra_Solutions.pdf|Kleshchev algebra student solution manual, Chapters 1–5]]
+[[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1–5 (2003)]] — graduate algebra qualifying-exam preparation covering groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra; the vendored `Algebra_Solutions 1.pdf` is a byte-identical duplicate of this reference.
 
 [[attachments/Ch6Sltns.pdf|Gallian Contemporary Abstract Algebra, Chapter 6 selected solution outlines]]
 
