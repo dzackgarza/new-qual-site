@@ -222,7 +222,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring77.pdf](assets/attachments/extracted/Spring77.md) (157L, 17 problems) — applied-algebra — Spring 19
 
-- [ ] [Spring78.pdf](assets/attachments/extracted/Spring78.md) (135L, 14 problems) — complex-analysis — Spring 19
+- [x] [Spring78.pdf](assets/attachments/extracted/Spring78.md) (135L, 14 problems) — Berkeley — prelim — Spring 1978 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-1978`, with all 20 numbered problems represented in source order. Seventeen source-local cards were added; Problem 3 reuses `P-EMCA9`, Problem 4 reuses `P-BERK97S-12`, and Problem 9 reuses `P-PRELIM82S-01`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `14 problems` and `complex-analysis` labels were stale heuristic metadata.
 
 - [x] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — Berkeley — prelim — Spring 1980 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-1980`, with all 20 numbered problems represented in source order. Problem 9 preserves an explicit source gap because the retained extraction loses part of its displayed 2-by-2 matrix, and no missing entry was guessed. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `13 problems` count was stale heuristic metadata.
 
