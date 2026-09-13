@@ -77,6 +77,23 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   **Acceptance:** Queue E has no unchecked entry; every checked source has either a canonical collection/provenance route with its actual problems represented, or an explicit reference-only disposition justified by the source.
   Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
 
+### Measure solution progress while intake is still growing the denominator
+
+Queue C and source intake move in opposite directions: writing a solution removes one problem from
+Queue C, while ingesting a new unsolved problem adds one. The solved percentage can therefore fall
+during a highly productive period. **Do not use completion percentage, Queue C size, or their net
+change alone to judge solution-writing progress while `pdf-source-intake` is open.**
+
+For any progress comparison over a time window, derive four quantities from the repository's own
+problem/queue state at the two revisions: current total problem population; current unsolved count;
+**Queue C exits** (previously unsolved card IDs that are no longer unsolved, the gross solution
+closure measure); and **Queue C entries** (newly unsolved card IDs, normally intake). Report the
+solved fraction only beside those flows. A rising unsolved count is not a regression when intake
+added more valid problems than solution authors closed, and a rising solved percentage is not proof
+of throughput if the corpus shrank. Do not throttle or defer valid intake merely to improve the
+percentage. Do not turn a recent cards/hour observation into a quota; rates are diagnostics for
+stalls, while mathematical correctness and source fidelity remain the acceptance criteria.
+
 ### Marking a node closed
 
 A node closes by opening with **`Closed <date>.`** followed by the evidence that met its acceptance — the recipe that exists, the count that reached zero, the commit that did it.
