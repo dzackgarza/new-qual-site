@@ -607,3 +607,12 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Observed evidence:** before repair, the built catalog contained 41,385 literal `:::` AST tokens across 3,844 cards. `P-4E6U3` parsed only the beginning of its solution as `solution`; the first generated `::: {.proof}` was read as paragraph text because it followed a Lamport step without a block boundary, and the next bare `:::` closed the solution. The corpus also contained 537 proof openers indented into Markdown's code-block column and 79 cards with genuinely unbalanced semantic fence syntax.
 - **Impact and owner:** answers were rendered outside the collapsed solution block, proof labels/fences appeared as source text or code, and the section index undercounted affected solutions and proofs. The defect is in the corpus-reader boundary plus malformed authored fence pairs, not in the disclosure CSS.
 - **Repair:** normalize compact and indented fenced-div syntax before Pandoc reads a card, reject genuinely unbalanced fences, repair the existing unbalanced sources, and regression-test that compact nested proofs remain inside one rendered solution disclosure. A rebuilt-catalog audit must contain no literal colon-fence tokens or fence-bearing code blocks.
+
+
+### `P-BERK84S-03` lost the map arrow and inequality range during extraction
+
+- **Object and need:** `P-BERK84S-03`, Berkeley Preliminary Exam Summer 1984, Problem 3; the statement must identify the codomain of $f$ and the full indexed system of inequalities.
+- **Observed evidence:** the retained extraction read `f : R^m  R^n` with no arrow and ended the range as `i=1,...,n_i`, while the same sentence defines $f(v)=(f_1(v),\ldots,f_n(v))$ and states `rank n-1` in $\mathbb R^n$. The only coherent source-faithful reconstruction is $f:\mathbb R^m\to\mathbb R^n$ with inequalities indexed by $i=1,\ldots,n$.
+- **Impact and owner:** both losses make the authored statement malformed and obscure the hyperplane geometry used by the problem. The problem card owns the transcription repair.
+- **Uncertainty:** the extractor lost the glyphs, so the repair is reconstructed from the source sentence's own notation rather than from the damaged markdown token itself.
+- **Repair:** restored the map arrow and the range $i=1,\ldots,n$ on `P-BERK84S-03`, then supplied the complete alternative-theorem proof.
