@@ -182,7 +182,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Fall79.pdf](assets/attachments/extracted/Fall79.md) (117L, 12 problems) — Berkeley — algebra — Fall 19
 
-- [ ] [Fall80.pdf](assets/attachments/extracted/Fall80.md) (145L, 11 problems) — applied-algebra — Fall 19
+- [x] [Fall80.pdf](assets/attachments/extracted/Fall80.md) (145L, 11 problems) — Berkeley — prelim — Fall 1980 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1980`, with all 20 source positions represented in order. Eighteen source-local cards were added; Problem 2 reuses `P-BKF92-1` and Problem 19 reuses `P-BKS10-1A`. Problem 9 retains an explicit extraction gap in the matrix-norm notation rather than guessing the missing typographic detail. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `11 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Fall83.pdf](assets/attachments/extracted/Fall83.md) (153L, 6 problems) — Berkeley — prelim — Fall 1983 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-FALL-1983`, with all 20 source positions represented in order. Sixteen source-local cards were added; Problem 5 reuses `P-BERK96S-16`, Problem 14 reuses `E-AMD-HO6G56UF`, Problem 17 reuses `P-OVRL2`, and Problem 19 reuses `P-AA27R`. The existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `6 problems` and `algebra` labels were stale heuristic metadata.
 

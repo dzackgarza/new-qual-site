@@ -724,3 +724,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** whether the intended relation is equality or one of the two inequality directions materially changes the completeness implications and available counterexamples.
 - **Uncertainty:** the surrounding two-part question does not uniquely force one relation, so no repair can be justified from mathematical context alone.
 - **Repair:** `P-BKF92-6` preserves the two completeness questions and marks the metric comparison unrecovered instead of guessing it.
+
+### Berkeley Fall 1980 Problem 9 has ambiguous norm typography in the retained extraction
+
+- **Object and need:** `P-BKF80-9`, Berkeley Preliminary Exam Fall 1980, Problem 9; the problem asks for the distance from `diag(1,2)` to the singular `2x2` real matrices under a displayed matrix metric.
+- **Observed evidence:** `assets/attachments/extracted/Fall80.md` prints `||X|| = x^2+y^2+z^2+t^2` for a matrix with entries `x,y,z,t`, and immediately defines `d(X,Y)=||X-Y||` as a metric. With the displayed formula taken literally, `||.||` is the squared Euclidean norm and `d` is not a metric. Repository search and history supplied no independent transcription resolving whether the source had `||X||^2 = ...` or `||X|| = sqrt(...)`.
+- **Impact and owner:** either possible typographic repair gives the intended Euclidean geometry, but choosing one silently would invent source notation and can alter the numerical value described as the distance.
+- **Uncertainty:** the generic matrix display and `A=diag(1,2)` are recoverable from the surviving layout, but the missing square/square-root detail is not.
+- **Repair:** `P-BKF80-9` preserves the extracted formula and explicitly records the unresolved norm typography rather than guessing it.
