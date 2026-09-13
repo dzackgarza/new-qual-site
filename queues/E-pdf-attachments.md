@@ -244,7 +244,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring90.pdf](assets/attachments/extracted/Spring90.md) (101L, 0 problems) — complex-analysis — Spring 19
 
-- [ ] [Spring91.pdf](assets/attachments/extracted/Spring91.md) (128L, 4 problems) — applied-algebra — Spring 19
+- [x] [Spring91.pdf](assets/attachments/extracted/Spring91.md) (128L, 4 problems) — Berkeley — prelim — Spring 1991 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1991`. Seventeen source-local cards represent Problems 1 and 3–18; Problem 2 reuses canonical card `P-BERK79S-07`, the identical exponential-integral-entire statement from Summer 1979. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `applied-algebra` labels were stale heuristic metadata.
 
 - [x] [Spring92.pdf](assets/attachments/extracted/Spring92.md) (73L, 2 problems) — Berkeley — prelim — Spring 1992 — disposition 2026-09-13: identified from the retained PDF as an 18-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1992`. Seventeen source-local cards represent Problems 2–18; Problem 1 is the verbatim subgroup problem already canonical as `P-BERK77S-14`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `2 problems` and `algebra` labels were stale heuristic metadata.
 
