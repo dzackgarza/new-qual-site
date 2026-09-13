@@ -400,7 +400,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders**
 
-- [ ] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010
+- [x] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010 — disposition 2026-09-13: identified from the retained packet as the UC Berkeley Graduate Preliminary Examination, Spring 2010, with solutions; already canonical as `SRC-BERKELEY-PRELIM-SPRING-2010`. The collection uses this PDF as provenance and contains all 18 source-order problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
 - [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; all 18 problems `1A`–`9B` are represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The prior count of eleven came from lost extraction headings.
 
