@@ -338,7 +338,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — reclassified 2026-09-09: UCLA Basic Exam, a mixed prelim source rather than a Real Analysis collection.
 
-- [ ] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom
+- [x] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom — disposition 2026-09-13: the retained 2017 *Introduction to Differential Geometry: Lecture Notes for MAT367* are already canonical as `SRC-MAT367-DIFFGEOM-2017`, marked complete with 35 source-checked exercise/subpart cards `E-MAT367-01` through `E-MAT367-35` in source chapter order. The queue’s `52 problems` and `UNL` labels came from the old inventory heuristic; the PDF itself supplies neither that semantic count nor an institution. Intake is reconciled to the canonical collection, and the first exercise now carries a checked solution.
 
 - [ ] [From Stein to Weinstein and Back.pdf](assets/attachments/extracted/From Stein to Weinstein and Back.md) (19152L, 24 problems) — UNL — alg-geom — Spring 19
 
