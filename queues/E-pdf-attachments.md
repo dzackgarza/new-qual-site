@@ -302,7 +302,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-08S.pdf](assets/attachments/extracted/basic-08S.md) (109L, 11 problems) — no metadata
 
-- [ ] [basic-09F.pdf](assets/attachments/extracted/basic-09F.md) (87L, 12 problems) — UCLA — applied-algebra — Fall 2009
+- [x] [basic-09F.pdf](assets/attachments/extracted/basic-09F.md) (87L, 12 problems) — UCLA — applied-algebra — Fall 2009 — disposition 2026-09-13: identified from the retained extraction as the UCLA Basic Exam, Fall 2009; ingested as `SRC-UCLA-BASIC-FALL-2009` with twelve source-order problem cards `P-UCLAB09F-01` through `P-UCLAB09F-12`. The source is a mixed Basic Examination, so the canonical collection is classified `prelim`.
 
 - [x] [basic-09S.pdf](assets/attachments/extracted/basic-09S.md) (122L, 0 problems) — UCLA — algebra — Spring 2009 — disposition 2026-09-13: UCLA Basic Examination Spring 2009 ingested as `SRC-UCLA-BASIC-SPRING-2009`; all 12 numbered exam problems are represented in source order by `P-UCLAB09S-01` through `P-UCLAB09S-12`. The inventory count of 0 was a false negative, and the mixed Basic Examination is classified as `prelim` rather than algebra alone.
 
