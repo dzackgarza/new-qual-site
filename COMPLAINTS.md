@@ -592,3 +592,11 @@ The card begins “$R$ be a commutative ring with identity...” rather than “
 - **Impact and owner:** the source statement is sound, but the supplied answer is mathematically wrong. Queue-E intake owns preserving the problem statement while declining to import that answer as a local solution; later solution authorship should use the correct spectrum $\{5,2,2\}$.
 - **Uncertainty:** none; both the displayed matrix and the erroneous answer were checked in the vendored PDF text, not inferred from the OCR inventory.
 - **Repair:** repaired `P-HM21B18-PF6-08` with the correct decomposition $A=2I+J$, spectrum $\{5,2,2\}$, and an explicit orthonormal eigenbasis; the card also records that the source-provided eigensolution is incorrect.
+
+### `E-PER08-15.5` overstates the relation between integral and mod-p orientations
+
+- **Object and need:** `E-PER08-15.5`, Perutz *Algebraic Topology I* Exercise 15.5; the exercise must be interpreted consistently with Definitions 15.2--15.3 immediately preceding it.
+- **Observed evidence:** the retained notes define an \(R\)-orientation at \(x\) to be an actual \(R\)-module isomorphism \(H_n(M,M\setminus\{x\};R)\to R\). For \(R=\mathbb F_p\), an oriented local homology line therefore has \(p-1\) possible orientations, while over \(\mathbb Z\) it has only two. For \(p=5\), \(2\bar\eta\) is a valid mod-5 orientation but is not the reduction of either \(\eta\) or \(-\eta\).
+- **Impact and owner:** the printed claim that a \(\mathbb Z/p\)-orientation “determines, and is determined by” a \(\mathbb Z\)-orientation is false literally for \(p>3\). The correct invariant statement is equivalence of \(\mathbb Z/p\)-orientability and integral orientability when \(p\) is odd.
+- **Uncertainty:** none under the definitions printed in the same notes; the issue disappears only if “orientation” in the exercise is read informally as “orientability”.
+- **Repair:** preserve the printed statement on `E-PER08-15.5`, exhibit the \(p=5\) counterexample, and prove the corrected orientability equivalence using the \(\{\pm1\}\)-valued orientation monodromy.
