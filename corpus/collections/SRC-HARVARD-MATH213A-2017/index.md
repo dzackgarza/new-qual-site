@@ -67,6 +67,32 @@ source:
     - E-HM213A17-40
     - E-HM213A17-41
     - E-HM213A17-42
+  - name: Section 2.5 exercises
+    problems:
+    - E-HM213A17-43
+    - E-HM213A17-44
+    - E-HM213A17-45
+    - E-HM213A17-46
+    - E-HM213A17-47
+    - E-HM213A17-48
+    - E-HM213A17-49
+    - E-HM213A17-50
+    - E-HM213A17-51
+    - E-HM213A17-52
+    - E-HM213A17-53
+    - E-HM213A17-54
+    - E-HM213A17-55
+    - E-HM213A17-56
+    - E-HM213A17-57
+    - E-HM213A17-58
+    - E-HM213A17-59
+    - E-HM213A17-60
+    - E-HM213A17-61
+    - E-HM213A17-62
+    - E-HM213A17-63
+    - E-HM213A17-64
+    - E-HM213A17-65
+    - E-HM213A17-66
 ---
 
 
