@@ -214,7 +214,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [grad_prelim_Spring09.pdf](assets/attachments/extracted/grad_prelim_Spring09.md) (42L, 8 problems) — algebra — SprinG 2009
 
-- [ ] [sample_exam.pdf](assets/attachments/extracted/sample_exam.md) (21L, 9 problems) — calculus
+- [x] [sample_exam.pdf](assets/attachments/extracted/sample_exam.md) (21L, 9 problems) — UGA — prelim — disposition 2026-09-13: reconciled the source-audited UGA sample graduate preliminary exam into the existing canonical `SRC-PRELIM-ART-A2355I` collection. All 9 source problems are represented in order: 7 new source-local cards plus exact existing cards `P-VAWOC` (Problem 4) and `P-HUKW5` (Problem 6). The retained PDF is now collection provenance; the prior collection had only those two appearances and no provenance.
 
 - [x] [Spring00.pdf](assets/attachments/extracted/Spring00.md) (96L, 4 problems) — Berkeley — prelim — Spring 2000 — disposition 2026-09-13: ingested as `SRC-BERKELEY-PRELIM-SPRING-2000`, with all 18 numbered problems represented in source order. Seventeen source-local cards were added and Problem 4 reuses the exact canonical appearance `P-BERK89S-16`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `algebra` labels were stale heuristic metadata.
 

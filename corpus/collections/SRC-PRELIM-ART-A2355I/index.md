@@ -2,19 +2,28 @@
 schema: qual/card@1
 id: SRC-PRELIM-ART-A2355I
 kind: collection
-title: UGA (undated) (prelim)
+title: UGA Sample Graduate Preliminary Exam
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
-provenance: []
+completion: complete
+provenance:
+- assets/attachments/sample_exam.pdf
 source:
   source_kind: university-exam
   problems:
+  - P-UGASAMP-01
+  - P-UGASAMP-02
+  - P-UGASAMP-03
   - P-VAWOC
+  - P-UGASAMP-05
   - P-HUKW5
+  - P-UGASAMP-07
+  - P-UGASAMP-08
+  - P-UGASAMP-09
   date:
     kind: unknown
   institution: uga
@@ -22,8 +31,5 @@ source:
 ---
 
 ::: remark
-UGA (undated)
-
-`P-VAWOC` is the Taylor series of $\ln x$ at 1; `P-HUKW5` is the Jacobian of polar coordinates at the origin.
-Distinct from `SRC-PRELIM-ART-INTEGRAL-PRACTICE`.
+UGA sample graduate preliminary exam, undated. The retained source states that the exam lasts three hours and contains nine equally weighted problems. Problems are listed in source order.
 :::
