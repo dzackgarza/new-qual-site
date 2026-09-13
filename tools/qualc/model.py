@@ -516,6 +516,172 @@ class ParsedCard(Strict):
 MARKDOWN = "markdown+fenced_divs+raw_tex+tex_math_dollars+tex_math_single_backslash+wikilinks_title_after_pipe"
 
 
+FENCED_DIV_OPEN = re.compile(r"^(?P<indent> *)(?P<fence>:{3,})\s*(?P<label>\{.+\}|[A-Za-z][^\n]*)\s*$")
+FENCED_DIV_CLOSE = re.compile(r"^(?P<indent> *):{3,}\s*$")
+LAMPORT_STEP = re.compile(r"^\s*<\d+>(?:\d+\.)*\d+\.\s+")
+
+
+def _fenced_div_class(match: re.Match[str]) -> str:
+    label = match.group("label")
+    if label.startswith("{"):
+        class_match = re.search(r"\.([A-Za-z0-9_-]+)", label)
+        return class_match.group(1) if class_match is not None else ""
+    return label.split(maxsplit=1)[0]
+
+
+def _dedent_div_contents(lines: list[str], div_class: str) -> list[str]:
+    """Remove Markdown-code indentation shared by one semantic div's body.
+
+    Generated Lamport proofs often indent every line by four spaces underneath
+    an unindented ``::: proof`` opener.  Since the div itself already supplies
+    the nesting, that common indentation only turns the proof into a code
+    block.  Explicit fenced code blocks contain an unindented backtick fence,
+    so their body has common indentation zero and is left untouched.
+    """
+    out = list(lines)
+    i = 0
+    while i < len(out):
+        opener = FENCED_DIV_OPEN.match(out[i])
+        if opener is None or _fenced_div_class(opener) != div_class:
+            i += 1
+            continue
+        depth = 1
+        end = i + 1
+        while end < len(out) and depth:
+            if FENCED_DIV_OPEN.match(out[end]) is not None:
+                depth += 1
+            elif FENCED_DIV_CLOSE.match(out[end]) is not None:
+                depth -= 1
+            end += 1
+        if depth:
+            i += 1
+            continue
+        close_index = end - 1
+        content = out[i + 1 : close_index]
+        indents = [len(line) - len(line.lstrip(" ")) for line in content if line.strip() and FENCED_DIV_OPEN.match(line) is None and FENCED_DIV_CLOSE.match(line) is None]
+        common = min(indents, default=0)
+        if common >= 4:
+            for index in range(i + 1, close_index):
+                if out[index].startswith(" " * common):
+                    out[index] = out[index][common:]
+        i += 1
+    return out
+
+
+def normalize_fenced_div_boundaries(markdown: str) -> str:
+    """Make authored fenced divs unambiguous to Pandoc without changing prose.
+
+    A large part of the corpus writes a Lamport step immediately followed by a
+    nested proof fence::
+
+        <1>1. Claim.
+        ::: {.proof}
+        Reason.
+        :::
+
+    Pandoc requires a blank line before a fenced-div opener.  Without it the
+    opener becomes literal paragraph text and the next closing fence closes the
+    enclosing solution instead, which can expose the remainder of the solution
+    as part of the public problem statement.
+
+    Some older cards indent the proof fence by four or eight spaces to mirror
+    the Lamport level.  Outside a Markdown list that indentation is a code
+    block, not div nesting, so remove the common indentation from that explicit
+    fenced-div block before adding the missing block boundary.  One-to-three
+    spaces are retained because Pandoc uses those for divs nested in list
+    items.
+    """
+    trailing_newline = markdown.endswith("\n")
+    lines = markdown.splitlines()
+
+    # Lamport levels are explicit in `<N>k.`.  Thousands of generated
+    # solutions also indented those lines by four spaces to suggest nesting;
+    # Markdown instead reads four spaces as an indented code block, so the
+    # authoring markers and all following mathematics render verbatim.  The
+    # marker already carries the hierarchy, hence the indentation is redundant
+    # and must not participate in Markdown block parsing.
+    for index, line in enumerate(lines):
+        stripped = line.lstrip(" ")
+        if len(line) - len(stripped) >= 4 and LAMPORT_STEP.match(stripped):
+            lines[index] = stripped
+
+    # Dedent explicit fenced-div blocks that Markdown would otherwise read as
+    # indented code.  Generated Lamport prose often indented the opener by the
+    # step depth while leaving its close at column zero, so the closing fence
+    # may be less indented than the opener. Relative indentation inside the
+    # block is preserved.
+    i = 0
+    while i < len(lines):
+        match = FENCED_DIV_OPEN.match(lines[i])
+        if match is None or len(match.group("indent")) < 4:
+            i += 1
+            continue
+        indent = match.group("indent")
+        end = i + 1
+        while end < len(lines):
+            close_match = FENCED_DIV_CLOSE.match(lines[end])
+            if close_match is not None and len(close_match.group("indent")) <= len(indent):
+                break
+            end += 1
+        if end == len(lines):
+            i += 1
+            continue
+        for index in range(i, end + 1):
+            if lines[index].startswith(indent):
+                lines[index] = lines[index][len(indent) :]
+        i += 1
+
+    separated: list[str] = []
+    for line in lines:
+        if FENCED_DIV_OPEN.match(line) is not None and separated and separated[-1].strip():
+            separated.append("")
+        separated.append(line)
+
+    # Some generated Lamport solutions also put a closing fence after the
+    # assertion *before* opening that assertion's proof.  At that point the
+    # only open div is the enclosing solution, so Pandoc closes the solution
+    # and exposes every later step.  Keep the solution open whenever another
+    # Lamport step or proof opener follows; a close after its last step is the
+    # real solution close.  A close with no open div is likewise stray syntax,
+    # not prose to publish.
+    stack: list[str] = []
+    balanced: list[str] = []
+    for index, line in enumerate(separated):
+        opener = FENCED_DIV_OPEN.match(line)
+        if opener is not None:
+            stack.append(_fenced_div_class(opener))
+            balanced.append(line)
+            continue
+        if FENCED_DIV_CLOSE.match(line) is None:
+            balanced.append(line)
+            continue
+        if not stack:
+            continue
+        if stack[-1] == "solution":
+            later_solution_content = False
+            for following in separated[index + 1 :]:
+                if LAMPORT_STEP.match(following):
+                    later_solution_content = True
+                    break
+                following_opener = FENCED_DIV_OPEN.match(following)
+                if following_opener is None:
+                    continue
+                following_class = _fenced_div_class(following_opener)
+                if following_class == "proof":
+                    later_solution_content = True
+                    break
+                if following_class in {"problem", "exercise", "solution", "hint"}:
+                    break
+            if later_solution_content:
+                continue
+        stack.pop()
+        balanced.append(line)
+
+    balanced = _dedent_div_contents(balanced, "proof")
+    normalized = "\n".join(balanced)
+    return normalized + ("\n" if trailing_newline else "")
+
+
 # `tex_math_dollars` is strict about its delimiters in two ways the corpus broke:
 # `$ x $` needs no space inside them, and `$$ ... $$` allows no blank line between
 # them. Either way the dollars survive as text and the macros between them are
@@ -743,7 +909,7 @@ def parse_cards_with(
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
             errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 
-    bodies = [body for _, _, body in prepared]
+    bodies = [normalize_fenced_div_boundaries(body) for _, _, body in prepared]
     results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
     processable: list[tuple[Path, Card, str]] = []
     for (path, card, _), result in zip(prepared, results, strict=True):

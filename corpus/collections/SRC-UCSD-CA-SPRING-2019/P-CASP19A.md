@@ -21,6 +21,7 @@ audit:
 Let $f$ be an entire function.
 Assume $|f| \leq \log(|f| + 2)$ on $\mathbb{C}$.
 Prove $f$ is constant.
+:::
 
 ::: {.solution}
 <1>1. The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \mathbb{C}$.
@@ -56,6 +57,5 @@ Liouville's theorem.
 <1>7. Q.E.D.
 ::: {.proof}
 <1>6.
-:::
 :::
 :::

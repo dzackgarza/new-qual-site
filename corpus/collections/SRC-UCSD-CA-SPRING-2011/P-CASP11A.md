@@ -35,6 +35,7 @@ If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits a
 (f) If $f: \mathbb{C} \to \mathbb{C}$ is analytic and $\operatorname{Re} f(z) \geq c$ for some real constant $c$, then $f$ is constant.
 
 (g) There is a polynomial $p(z)$ such that $|p(z) - 1/z| < 1$ for all $z$ in the annulus $1/2 < |z| < 3/2$.
+:::
 
 ::: {.solution}
 **(a) False.**
@@ -169,6 +170,5 @@ $p$ is entire, and $\int_{|z|=1} z^{-1}dz = 2\pi i$.
 <1>5. Contradiction ($2\pi < 2\pi$ impossible), so no such $p$ exists.
 ::: {.proof}
 <1>3 and <1>4.
-:::
 :::
 :::

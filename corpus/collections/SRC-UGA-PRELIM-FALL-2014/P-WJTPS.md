@@ -27,13 +27,13 @@ $$
 \int_C xe^x ~dx + ye^y +x^2 ~dy = \iint_D 2x ~dA.
 $$
 
-    We can parameterize this region as
+We can parameterize this region as
   $$
   D = \theset{x^2+y^2-2x = 0 \suchthat (x,y) \in \RR^2, y \geq 0}
   = \theset{(r(1+ \cos\theta), r\sin\theta) \suchthat \theta \in [0, \pi), r\in [0, 1]}.
   $$
 
-    Noting that $dA = r~dr~d\theta$, we can then integrate
+Noting that $dA = r~dr~d\theta$, we can then integrate
   $$
   \iint_D 2x ~dA
   = \int_0^{\pi} \int_0^1 2(r(1 + \cos\theta)) r ~dr ~d\theta \\

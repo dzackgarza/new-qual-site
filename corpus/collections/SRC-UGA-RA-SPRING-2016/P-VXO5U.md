@@ -56,15 +56,14 @@ Use this to show the following:
 <1>2. Bernoulli's inequality: for $-1 < x$, $(1+x)^n \ge 1 + nx$ for every $n \in \NN$.
     ::: proof
     by induction on $n$. For $n = 1$ it is an equality. If $(1+x)^n \ge 1+nx$, then multiplying by $1+x \ge 0$ (since $x > -1$),
-    :::
     \[
     (1+x)^{n+1} \ge (1+nx)(1+x) = 1 + (n+1)x + nx^2 \ge 1 + (n+1)x,
     \]
     as $nx^2 \ge 0$.
+    :::
 <1>3. $e_n$ is increasing.
     ::: proof
     with $e_n = ((n+1)/n)^n$,
-    :::
     \[
     \frac{e_{n+1}}{e_n} = \Big(\frac{n+2}{n+1}\Big)^{n+1}\Big(\frac{n}{n+1}\Big)^n = \Big(1 + \frac{1}{n+1}\Big)\Big(1 - \frac{1}{(n+1)^2}\Big)^n,
     \]
@@ -77,10 +76,10 @@ Use this to show the following:
     \frac{e_{n+1}}{e_n} \ge \frac{n+2}{n+1}\cdot\frac{n^2+n+1}{(n+1)^2} = \frac{(n+2)(n^2+n+1)}{(n+1)^3} = \frac{(n+1)^3 + 1}{(n+1)^3} > 1.
     \]
     Hence $e_{n+1} > e_n$.
+    :::
 <1>4. $E_n$ is decreasing.
     ::: proof
     with $E_n = ((n+1)/n)^{n+1}$,
-    :::
     \[
     \frac{E_n}{E_{n+1}} = \Big(\frac{n+1}{n}\Big)^{n+1}\Big(\frac{n+1}{n+2}\Big)^{n+2} = \Big(1 + \frac{1}{n(n+2)}\Big)^{n+1}\cdot\frac{n+1}{n+2},
     \]
@@ -93,6 +92,7 @@ Use this to show the following:
     \frac{E_n}{E_{n+1}} \ge \frac{(n^2+3n+1)(n+1)}{n(n+2)^2} = \frac{n^3 + 4n^2 + 4n + 1}{n^3 + 4n^2 + 4n} > 1.
     \]
     Hence $E_{n+1} < E_n$.
+    :::
 <1>5. $2 < e_n < E_n < 4$ for $n \ge 2$.
     ::: proof
     $e_1 = 2$ and $e_n$ is increasing (<1>3), so $e_n \ge 2$, with $e_2 = 9/4 > 2$; $E_1 = 4$ and $E_n$ is decreasing (<1>4), so $E_n \le 4$, with $E_2 = 27/8 < 4$; and $e_n < E_n$ by <1>1.     Hence $2 < e_n < E_n < 4$ for all $n \ge 2$. (For $n = 1$: $2 = e_1 < E_1 = 4$.)

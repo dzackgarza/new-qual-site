@@ -90,6 +90,7 @@ $$
 :::
 
 <1>6. Conclusion:
-::: {.proof}    $\sum_{n=1}^\infty |f_n| \notin L^1([0, \infty))$, whereas $\sum_{n=1}^\infty f_n \in L^1([0, \infty))$ with integral equal to $\ln(b/a)$.
+::: {.proof}
+$\sum_{n=1}^\infty |f_n| \notin L^1([0, \infty))$, whereas $\sum_{n=1}^\infty f_n \in L^1([0, \infty))$ with integral equal to $\ln(b/a)$.
 :::
 :::

@@ -21,6 +21,7 @@ audit:
 $$
 \int_ {0} ^ {2 \pi} \frac {d \theta}{(a + \cos \theta) ^ {2}} = \frac {2 \pi a}{(a ^ {2} - 1) ^ {3 / 2}}, \quad \text { whenever } a > 1.
 $$
+:::
 
 ::: {.solution}
 <1>1. Put $z = e^{i\theta}$, so $\cos\theta = \frac{z+z^{-1}}{2}$ and $d\theta = \frac{dz}{iz}$.
@@ -45,6 +46,5 @@ product of roots $=1$, and $|z_0|<1<|z_1|$.
 <1>6. Q.E.D.
 ::: {.proof}
 <1>5.
-:::
 :::
 :::

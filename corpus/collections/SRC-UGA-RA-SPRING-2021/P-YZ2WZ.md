@@ -48,11 +48,11 @@ E \da \Union_{x\in \RR} \ts{ x } \cross E_x
 <1>1. Reformulate via the hint.
     ::: {.proof}
     let $h(x,y,z) = f(x,y) - f(x,z)$, measurable on $\RR^3$, and let
-    :::
     \[
     A \da \big\{(x,y,z) \in \RR^3 : h(x,y,z) = 0\big\} = \big\{(x,y,z) : f(x,y) = f(x,z)\big\},
     \]
     which is measurable (preimage of $\{0\}$ under a measurable function).
+    :::
 <1>2. For fixed $x, y$, the vertical section $A_{x,y} = \{z : (x,y,z) \in A\}$ satisfies $\mu(A_{x,y}) = \mu\{z : f(x,z) = f(x,y)\}$.
     ::: {.proof}
     by definition of $A$ in <1>1.
@@ -60,18 +60,18 @@ E \da \Union_{x\in \RR} \ts{ x } \cross E_x
 <1>3. The map $(x,y) \mapsto \mu(A_{x,y})$ is measurable.
     ::: {.proof}
     by Tonelli's theorem applied to the measurable non-negative function $\chi_A$ on $\RR^3$,
-    :::
     \[
     (x,y) \mapsto \int_{\RR} \chi_A(x,y,z)\,dz = \mu(A_{x,y})
     \]
     is measurable (the partial integral of a measurable non-negative function over one variable is a measurable function of the remaining variables).
+    :::
 <1>4. $E$ is measurable.
     ::: {.proof}
     by <1>2 and <1>3,
-    :::
     \[
     E = \Union_{x\in\RR}\{x\} \times E_x = \big\{(x,y) : \mu(A_{x,y}) > 0\big\},
     \]
     the superlevel set of a measurable function, hence measurable.
+    :::
 <1>5. Q.E.D.
 :::

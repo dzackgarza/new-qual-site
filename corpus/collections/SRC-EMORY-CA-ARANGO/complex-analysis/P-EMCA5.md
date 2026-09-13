@@ -24,6 +24,7 @@ Use the Schwarz lemma to show that for each $a \in \mathbf{D}$,
 $$
 \frac{|f'(a)|}{1 - |f(a)|^2} \leq \frac{1}{1 - |a|^2}.
 $$
+:::
 
 ::: {.solution}
 **(a).**
@@ -78,6 +79,5 @@ compute the derivatives of the Möbius maps.
 <1>9. Q.E.D.
 ::: {.proof}
 <1>1 (a) and <1>8 (b).
-:::
 :::
 :::

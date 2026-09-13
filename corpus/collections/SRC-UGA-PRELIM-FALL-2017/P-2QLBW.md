@@ -73,8 +73,8 @@ Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendicular to t
 <1>4. By the multivariable Chain Rule, $g'(0) = \nabla f(\gamma(0)) \cdot \gamma'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0)$.
     ::: {.proof}
     Since $f$ is continuously differentiable and $\gamma$ is differentiable at $t=0$, the chain rule applies:
-    :::
     $$g'(0) = \left.\frac{d}{dt} f(x(t), y(t))\right|_{t=0} = \frac{\partial f}{\partial x}(\mathbf{p}) x'(0) + \frac{\partial f}{\partial y}(\mathbf{p}) y'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0).$$
+    :::
 
 <1>5. $\nabla f(\mathbf{p}) \cdot \gamma'(0) = 0$.
     ::: {.proof}

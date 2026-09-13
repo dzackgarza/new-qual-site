@@ -36,7 +36,6 @@ f(x) \da x^{- \alpha} \abs{ \log(x) }^{ \beta}
 <1>1. Case (i) ($a < p < b$): define $f$ piecewise.
     ::: {.proof}
     take, for fixed $\delta > 0$ (chosen below),
-    :::
     \[
     f(x) \da \begin{cases}
     x^{-1/b}\,(-\log x)^{-1} & 0 < x \le 1/2,\\
@@ -44,6 +43,7 @@ f(x) \da x^{- \alpha} \abs{ \log(x) }^{ \beta}
     x^{-1/a}\,(\log x)^{-1} & x > 2 .
     \end{cases}
     \]
+    :::
 <1>2. $f \in L^p(0,\infty)$ iff $a < p < b$.
     ::: {.proof}
     near $0$: $\int_0^{1/2} x^{-p/b}(-\log x)^{-p}\,dx$ converges iff $p/b < 1$, i.e. $p < b$ (the power of $x$ is integrable near $0$ exactly when its exponent is $> -1$; the log factor is irrelevant unless $p = b$, where $x^{-1}(-\log x)^{-1}$ is not integrable near $0$: substituting $u = -\log x$ gives $\int du/u = \infty$). Near $\infty$: $\int_2^\infty x^{-p/a}(\log x)^{-p}\,dx$ converges iff $p/a > 1$, i.e. $p > a$ (similarly, at $p = a$ the integrand is $x^{-1}(\log x)^{-1}$, not integrable). On $[1/2,2]$ the function is bounded. Hence $f \in L^p$ exactly when $a < p < b$.

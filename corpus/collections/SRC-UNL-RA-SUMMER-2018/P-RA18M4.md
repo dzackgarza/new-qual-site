@@ -53,6 +53,7 @@ Determine whether the set $S$ is compact in $(C_b([0,1]),\rho_\infty)$.
 
 <1>2. (b) $S$ is NOT compact.
     <2>1. $S$ is not closed in $C_b[0,1]$.
+        ::: proof
         Proof: define
         \[
         f_n(x)=M\left(\sqrt{(x-\tfrac12)^2+n^{-2}}-\sqrt{\tfrac14+n^{-2}}\right).
@@ -68,6 +69,7 @@ Determine whether the set $S$ is compact in $(C_b([0,1]),\rho_\infty)$.
         f_n(x)\longrightarrow f(x):=M\left(|x-\tfrac12|-\tfrac12\right)
         \]
         on $[0,1]$. The limit satisfies $f(0)=0$ but is not differentiable at the interior point $x=1/2$. Thus $f\notin S$, so $S$ is not closed.
+        :::
     <2>2. Compact subsets of metric spaces are closed.
         Proof: A compact subset of a Hausdorff space is closed; every metric space is Hausdorff.
     <2>3. Q.E.D.

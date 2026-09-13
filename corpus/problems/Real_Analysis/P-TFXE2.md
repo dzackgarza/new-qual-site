@@ -37,18 +37,18 @@ Hf(x) \geq {c \over (1 + \abs x)^n }
 <1>3. Lower bound for $Hf(x)$ in terms of $|x|$.
     ::: {.proof}
     by <1>2,
-    :::
     \[
     Hf(x) \ge \frac{1}{|B(x,|x-y|+r)|}\int_{B(x,|x-y|+r)} |f| \ge \frac{C}{\big(|x-y|+r\big)^n}
     \]
     with $C = \frac{\int_{B(y,r)}|f|}{\omega_n} > 0$, where $\omega_n$ is the volume of the unit ball.
+    :::
 <1>4. Conclude: $Hf(x) \ge c/(1+|x|)^n$ for a constant $c > 0$.
     ::: {.proof}
     from <1>3, $|x-y|+r \le |x| + |y| + r$, so
-    :::
     \[
     Hf(x) \ge \frac{C}{(|x|+|y|+r)^n} \ge \frac{c}{(1+|x|)^n}
     \]
     with $c = C/(1+|y|+r)^n > 0$, since $1+|x| \le 1+|y|+r+|x| \le (1+|y|+r)(1+|x|)$.
+    :::
 <1>5. Q.E.D.
 :::

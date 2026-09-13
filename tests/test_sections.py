@@ -43,6 +43,46 @@ of the index congruent to $1$ is $1$ itself, so the subgroup is normal.
 """
 
 
+ADJACENT_LAMPORT_CARD = """---
+schema: qual/card@1
+id: P-FENCE1
+kind: problem
+title: A solution with adjacent Lamport proof fences
+classification:
+  areas: [algebra]
+  topics: [groups]
+relations: []
+review: draft
+---
+
+::: problem
+Show the claim.
+:::
+
+::: solution
+<1>1. First step.
+::: proof
+First reason.
+:::
+
+<1>2. Second step.
+    ::: proof
+    <2>1. Nested reason.
+    <2>2. Another nested reason.
+:::
+
+<1>3. Third step.
+:::
+::: proof
+Third reason.
+:::
+
+<1>4. Final step.
+:::
+:::
+"""
+
+
 def build(tmp_path: Path) -> sqlite3.Connection:
     """The claim under test is about the nested card, so it is the only card that
     needs to be here. This used to copy and build the whole real corpus -- three
@@ -79,3 +119,40 @@ def test_enclosing_section_still_carries_its_own_text(tmp_path: Path) -> None:
     con = build(tmp_path)
     (solution_text,) = con.execute("select text from sections where card_id = 'P-NEST1' and section_kind = 'solution'").fetchone()
     assert "follows from Sylow" in solution_text
+
+
+def test_adjacent_lamport_proof_fences_stay_inside_the_solution(tmp_path: Path) -> None:
+    """A proof fence adjacent to a Lamport step must not terminate the solution.
+
+    The corpus has both unindented and Lamport-indented spellings.  Pandoc
+    otherwise reads the opener as paragraph/code text and uses its closing
+    fence to close the surrounding solution, exposing later solution steps as
+    part of the public statement.
+    """
+    work = fixture_repo(tmp_path, {"fence.md": ADJACENT_LAMPORT_CARD})
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    sections = con.execute("select section_kind, text from sections where card_id='P-FENCE1' order by ordinal").fetchall()
+    assert [kind for kind, _ in sections] == ["problem", "solution", "proof", "proof", "proof"]
+    solution = next(text for kind, text in sections if kind == "solution")
+    assert "First step" in solution
+    assert "Second step" in solution
+    assert "Third step" in solution
+    assert "Final step" in solution
+
+    page = (work / "build" / "quarto" / "_site" / "tag" / "P-FENCE1.html").read_text()
+    statement = page.split('<div class="card-statement">', 1)[1].split('<details class="reveal qual-solution">', 1)[0]
+    disclosure = page.split('<details class="reveal qual-solution">', 1)[1].split("</details>", 1)[0]
+    assert "First reason" not in statement
+    assert "Second step" not in statement
+    assert "Final step" not in statement
+    assert "First reason" in disclosure
+    assert "Nested reason" in disclosure
+    assert "Another nested reason" in disclosure
+    assert "Third reason" in disclosure
+    assert "Final step" in disclosure
+    assert ":::" not in page
+    assert "<pre><code>" not in disclosure
+    assert 'class="pf-step pf-level-2"' in disclosure
