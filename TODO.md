@@ -31,7 +31,7 @@ Verified samples: `P-BKS16-1A` reduces a nested radical to `v u s r Z 9u √ q t
 These nodes precede every remaining ingestion task.
 Ingesting more sources through the pipeline that produced them adds to the population being repaired.
 
-- **`extraction-detector`**. **Needs:** none.
+- **`extraction-detector`**. **Closed 2026-09-13.** `tools/extraction_detector.py` with the `just extraction-detector` recipe, `tests/test_extraction_detector.py`, and the private `_extraction-detector-staged` gate wired into `test-commit`. **Needs:** none.
   Add a checker that reports every authored card whose `::: {.problem}` block contains a character from the mathematical unicode set after all `$…$` and `$$…$$` spans are removed.
   It belongs beside `tools/unsolved_queue.py` with a `just` recipe, not in a scratch script.
   Then wire it into `test-commit` as a private gate, because a report depends on someone choosing to read it and this defect has already recurred once after being repaired: on 2026-09-13 a worker restored 32 UCLA statements and staged 32 fresh Amherst cards carrying the same defect within the hour.
@@ -40,13 +40,13 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Those are legible mathematics in inconsistent style, not lost content, and they are a separate judgment from this node; do not read a later count of them as this gate having failed.
   Do not carry a baseline number here: the recipe is the only count, and it already proved a hand-made one wrong — the scan that opened these nodes missed U+2212 minus, the asterisk operator, the tilde operator and the wedge, so every figure it produced was low.
 
-- **`extraction-repair`**. **Needs:** `extraction-detector`. Transcribe each reported card's statement into faithful LaTeX against its source document.
+- **`extraction-repair`**. **Closed 2026-09-13.** The detector reports 0 against committed state, down from 168. **Needs:** `extraction-detector`. Transcribe each reported card's statement into faithful LaTeX against its source document.
   Work the collections in descending hit count, as the recipe groups them — do not work from a list written here, because these populations move every time a card is repaired or a source is ingested, and a number in this file is stale the moment a commit lands.
   Where the source document cannot settle what the statement said, say so on the card rather than guessing a plausible problem: an invented statement is the failure this node exists to end.
   Record those cards and their count.
   **Acceptance:** the detector's count falls, and each commit's cards read as the source reads.
 
-- **`extraction-pipeline`**. **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
+- **`extraction-pipeline`**. **Closed 2026-09-13** by `fix(intake): gate problem statement commits before formatting`; the UGA Math 8155 source ingested afterwards produced zero detector hits and needed no follow-up normalization commit. **Needs:** `extraction-detector`. Repair the ingest itself so it stops producing them.
   Two defects are already established.
   The extraction lands text that was never converted to LaTeX, and the normalization pass then joins its lines — which destroys the column layout that encoded the fraction, the integral bound and the derivative, and is why several of the cards above are now unrecoverable from the card alone.
   A whitespace normalizer must never run over unconverted extraction output.
@@ -55,23 +55,13 @@ Ingesting more sources through the pipeline that produced them adds to the popul
 ### The unsolved-queue gate taxes every corpus commit
 
 - **`incremental-unsolved-queue`**. **Needs:** none.
-  `_unsolved-if-staged` runs on every commit that touches `corpus`, and it does not do a little
-  work: it materializes the whole of `corpus`, `vocabularies` and `wiki` into a temporary tree
-  with `git checkout-index`, parses all ~5900 cards through `tools/unsolved_queue.py`, and copies
-  one file back. That was measured at 60 seconds in one observed run, against the recipe's own
-  estimate of ~25 seconds.
-  The cost is per commit, so it is a tax on granularity: banking twenty-two written cards
-  individually costs twenty to forty minutes of gate, and a worker that batches instead is
-  responding rationally to the incentive the gate creates. On 2026-09-13 a steward pushed twice
-  for per-card banking while this was the reason it was not happening — the obstruction was the
-  gate, not the discipline.
-  Make the regeneration incremental: the staged diff already names which cards changed, and a
-  card leaves or joins the queue only by gaining or losing a solution div, so the queue can be
-  updated from those paths without reparsing the corpus. Keep a full rebuild available as its own
-  recipe for when the file is suspected stale.
-  **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting
-  `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that
-  equality on a sample that includes a card gaining a solution and a card losing one.
+  `_unsolved-if-staged` runs on every commit that touches `corpus`, and it does not do a little work: it materializes the whole of `corpus`, `vocabularies` and `wiki` into a temporary tree with `git checkout-index`, parses all ~5900 cards through `tools/unsolved_queue.py`, and copies one file back.
+  That was measured at 60 seconds in one observed run, against the recipe's own estimate of ~25 seconds.
+  The cost is per commit, so it is a tax on granularity: banking twenty-two written cards individually costs twenty to forty minutes of gate, and a worker that batches instead is responding rationally to the incentive the gate creates.
+  On 2026-09-13 a steward pushed twice for per-card banking while this was the reason it was not happening — the obstruction was the gate, not the discipline.
+  Make the regeneration incremental: the staged diff already names which cards changed, and a card leaves or joins the queue only by gaining or losing a solution div, so the queue can be updated from those paths without reparsing the corpus.
+  Keep a full rebuild available as its own recipe for when the file is suspected stale.
+  **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that equality on a sample that includes a card gaining a solution and a card losing one.
 
 ### Terminal nodes
 
