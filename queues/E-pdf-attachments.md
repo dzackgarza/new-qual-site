@@ -232,7 +232,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring83.pdf](assets/attachments/extracted/Spring83.md) (135L, 3 problems) — complex-analysis — Spring 19
 
-- [ ] [Spring84.pdf](assets/attachments/extracted/Spring84.md) (102L, 4 problems) — algebra — Spring 19
+- [x] [Spring84.pdf](assets/attachments/extracted/Spring84.md) (102L, 4 problems) — Berkeley — prelim — Spring 1984 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1984`. Eighteen source-local cards represent Problems 1–8, 10, and 12–20; Problem 9 reuses canonical card `P-BERK87S-09`, and Problem 11 reuses canonical card `P-BKF81-18`. The Spring 1984 source uses the established `P-BKS84-*` ID family to avoid collision with the existing Summer 1984 `P-BERK84S-*` cards. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `4 problems` and `algebra` labels were stale heuristic metadata.
 
 - [x] [Spring85.pdf](assets/attachments/extracted/Spring85.md) (113L, 3 problems) — Berkeley — prelim — Spring 1985 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SPRING-1985`, with Problems 1–20 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `3 problems` and `applied-algebra` labels were stale heuristic metadata.
 
