@@ -93,6 +93,46 @@ source:
     - E-HM213A17-64
     - E-HM213A17-65
     - E-HM213A17-66
+  - name: Section 3.4 exercises
+    problems:
+    - id: P-CAFA22F
+      comment: Section 3.4 Exercise 1
+    - E-HM213A17-67
+    - E-HM213A17-68
+    - E-HM213A17-69
+    - E-HM213A17-70
+    - E-HM213A17-71
+    - id: P-CAF06G
+      comment: Section 3.4 Exercise 7
+    - E-HM213A17-72
+    - E-HM213A17-73
+    - E-HM213A17-74
+    - E-HM213A17-75
+    - E-HM213A17-76
+    - E-HM213A17-77
+    - E-HM213A17-78
+    - id: E-HM213A17-68
+      comment: Section 3.4 Exercise 15 (repeats Exercise 3)
+    - E-HM213A17-79
+    - E-HM213A17-80
+    - E-HM213A17-81
+    - E-HM213A17-82
+    - E-HM213A17-83
+    - E-HM213A17-84
+    - E-HM213A17-85
+    - E-HM213A17-86
+    - E-HM213A17-87
+    - E-HM213A17-88
+    - E-HM213A17-89
+    - E-HM213A17-90
+    - E-HM213A17-91
+    - id: E-SS5.EX-6
+      comment: Section 3.4 Exercise 29
+    - E-HM213A17-92
+    - E-HM213A17-93
+    - E-HM213A17-94
+    - E-HM213A17-95
+    - E-HM213A17-96
 ---
 
 
