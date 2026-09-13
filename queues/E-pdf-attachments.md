@@ -360,7 +360,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011 — disposition 2026-09-10: Chernov's solved Real Analysis problem collection, not a single exam sitting; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing an exam collection.
 
-- [ ] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011
+- [x] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011 — disposition 2026-09-13: Cihan Bahran’s 2013 University of Minnesota complex-analysis prelim solution compilation is already canonical as `SRC-UMN-COMPLEX-PRELIM-BAHRAN-2013`. The collection retains this PDF as provenance and represents all 33 source-selected problems in its seven technique sections; the inventory count of 14 was only an extraction heuristic. The collection also records the packet’s repeated Fall 2009 Problem 5 and combined exam labels without manufacturing duplicate cards.
 
 - [ ] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — complex-analysis
 
