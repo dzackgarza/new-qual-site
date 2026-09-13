@@ -312,7 +312,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [basic-11F.pdf](assets/attachments/extracted/basic-11F.md) (93L, 2 problems) — UCLA — Fall 2011
 
-- [ ] [basic-11S.pdf](assets/attachments/extracted/basic-11S.md) (99L, 20 problems) — UCLA — algebra — Spring 2011
+- [x] [basic-11S.pdf](assets/attachments/extracted/basic-11S.md) (99L, 20 problems) — UCLA — algebra — Spring 2011 — disposition 2026-09-13: UCLA Basic Examination Spring 2011 ingested as `SRC-UCLA-BASIC-SPRING-2011`; all twelve numbered exam problems are represented in source order by `P-UCLAB11S-01` through `P-UCLAB11S-12`. The inventory’s `20 problems` count split subparts/list items rather than the exam’s numbered problem units, and the source is classified as the mixed `prelim` Basic Examination rather than algebra alone.
 
 - [ ] [basic-12S.pdf](assets/attachments/extracted/basic-12S.md) (75L, 0 problems) — UCLA — WINTER 2012
 
