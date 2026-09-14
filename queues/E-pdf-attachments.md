@@ -138,7 +138,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [solution9.pdf](assets/attachments/extracted/solution9.md) (700L, 0 problems) — applied-algebra **OCR: image placeholders**
 
-- [ ] [solution.pdf](assets/attachments/extracted/solution.md) (723L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [solution.pdf](assets/attachments/extracted/solution.md) (723L, 0 problems) — Harvard Math 21b — applied-algebra — Spring 2018 final with solutions — disposition 2026-09-14: ingested as `SRC-HARVARD-MATH21B-SPRING-2018-FINAL`, with all 13 top-level final-exam problems represented by source-local cards. The existing Harvard Math 21b Spring 2018 resource page and Practice Final 6 collection establish the course provenance. One true-or-false item in Problem 1 and figure-dependent choices in Problems 2, 7, and 11 are unrecovered in the retained extraction and are recorded explicitly rather than reconstructed. The inventory’s `0 problems`, `UNL`, and OCR-derived labels were stale heuristic metadata.
 
 - [x] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: exact byte duplicate of `Neil_Spring_2019_Solutions.pdf`; its five exam problems are already represented in `SRC-UGA-RA-SPRING-2019`, and the solution packet is not collection provenance.
 
