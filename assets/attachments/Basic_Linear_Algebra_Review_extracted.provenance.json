@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/Basic_Linear_Algebra_Review.pdf",
+  "source_pdf_sha256": "a14809f50a5e583fe472dab07406bf1b4567627984ca15786b027e67fe82a509",
+  "extracted_markdown": "assets/attachments/Basic_Linear_Algebra_Review_extracted.md",
+  "extracted_markdown_sha256": "32f40f3b6a9b6316290f81aa55ffd1bf55c428ea3f23056b84a32608eabab0f3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Basic_Linear_Algebra_Review.pdf' --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "different from assets/attachments/extracted/Basic_Linear_Algebra_Review.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "reconciliation": "The source is predominantly expository Math 150-01 linear-algebra review notes. Its final Review Problems section contains exactly seven numbered source problems, represented by SRC-BASIC-LINEAR-ALGEBRA-REVIEW. Expository definitions and worked examples are retained as reference content rather than converted into artificial problem cards. Review Problem 7(d) contains an explicit domain/formula mismatch, recorded on its card."
+}
