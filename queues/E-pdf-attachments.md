@@ -61,9 +61,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [day_3_sep_counterex_defn.pdf](assets/attachments/extracted/day_3_sep_counterex_defn.md) (85L, 11 problems) — topology — June 2004
 
-- [ ] [DG Sample Problems 1.pdf](assets/attachments/extracted/DG Sample Problems 1.md) (267L, 0 problems) — alg-geom
+- [x] [DG Sample Problems 1.pdf](assets/attachments/DG Sample Problems 1_extracted.md) (267L, 20 problems) — differential geometry — disposition 2026-09-14: ingested as `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE` from a deterministic MinerU Flash extraction. The source is titled *MTH 674 Differential Geometry of manifolds Midterm Sample Problems* and contains Problems I–XX; all twenty are represented in source order by `P-MTH674-01` through `P-MTH674-20`. Explicit local Flash defects and their deterministic-context repairs are recorded in the extraction provenance. The inventory's `0 problems` count was a false negative.
 
-- [ ] [DG Sample Problems.pdf](assets/attachments/extracted/DG Sample Problems.md) (267L, 0 problems) — alg-geom
+- [x] [DG Sample Problems.pdf](assets/attachments/extracted/DG Sample Problems.md) (267L, duplicate) — differential geometry — disposition 2026-09-14: exact byte duplicate of `DG Sample Problems 1.pdf` (SHA-256 `c76da1618392449b3d284ee8954f688d118ff2db0a192ffda6576bc8ac50512c`). Its contents are represented once by `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE`; no duplicate extraction or cards are manufactured.
 
 - [ ] [f04.pdf](assets/attachments/extracted/f04.md) (77L, 0 problems) — applied-algebra
 
