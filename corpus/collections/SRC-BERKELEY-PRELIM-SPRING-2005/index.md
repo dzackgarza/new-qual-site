@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
+- assets/attachments/s05.pdf
 - assets/attachments/s05solution.pdf
 source:
   source_kind: university-exam

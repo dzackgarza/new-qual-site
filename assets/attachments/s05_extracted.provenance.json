@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/s05.pdf",
+  "source_pdf_sha256": "2eac7f3016889949417c0cbcadad80662a075bf3975688e2e1595e3ed49e5a9c",
+  "extracted_markdown": "assets/attachments/s05_extracted.md",
+  "extracted_markdown_sha256": "d8de7d990893909a4ad19e3152ee624c9ce01d0dacf0b39732847afd2d5f2f9b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/s05.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/s05.md",
+  "source_identification": "UC Berkeley Preliminary Examination, Spring 2005, with Part A problems 1A-9A and Part B problems 1B-9B.",
+  "card_reconciliation": "All 18 positions are represented in source order by complete collection SRC-BERKELEY-PRELIM-SPRING-2005. The fresh exam statement was used as the primary statement source; the independently fresh companion solution packet was used to resolve duplicated-statement extraction defects."
+}

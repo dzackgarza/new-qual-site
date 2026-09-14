@@ -9,6 +9,11 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-14
+  note: Checked against fresh deterministic MinerU Flash extractions of the UC Berkeley Spring 2005 exam and its companion solution packet; unambiguous duplicated-statement extraction defects were normalized.
 ---
 
 ::: {.problem}
@@ -19,5 +24,5 @@ $$
 G : = \left\{ ( x , y ) : x \in D , \ y = f ( x ) \right\}
 $$
 
-of $\mathbb { R } ^ { 2 }$ . Prove that if G is compact, then $f$ is continuous.
+of $\mathbb { R } ^ { 2 }$ . Prove that if G is compact, then f is continuous.
 :::
