@@ -8,5 +8,25 @@
   "command": "mineru-open-api flash-extract assets/attachments/871-872January_2008_850-871.pdf --language en",
   "generated_at": "2026-09-14",
   "retained_extraction_byte_identical": "assets/attachments/extracted/871-872January_2008_850-871.md",
-  "card_comparison": "All nine source questions were reconciled against this baseline: six owned cards and three reused canonical topology cards match the extracted statements."
+  "card_comparison": "All nine source questions were reconciled against this baseline: six owned cards and three reused canonical topology cards match the extracted statements.",
+  "source_structure": {
+    "instructions": "Do three questions from each section; if more are attempted, clearly mark which should count.",
+    "section_a": "Questions 1-5: combinatorics and coding theory",
+    "section_b": "Questions 6-9: topology",
+    "total_source_positions": 9
+  },
+  "canonical_reuses": [
+    {
+      "source_position": "Section B, Question 7",
+      "card_id": "P-TOP-WORKSHOP-D2-02"
+    },
+    {
+      "source_position": "Section B, Question 8",
+      "card_id": "P-TOP-WORKSHOP-D4-03B"
+    },
+    {
+      "source_position": "Section B, Question 9",
+      "card_id": "P-TOP-WORKSHOP-D3-01"
+    }
+  ]
 }
