@@ -19,7 +19,7 @@ order: 30
 
 - [Multivariable-calculus practice](attachments/multivariable_calculus.pdf)
 
-- [Additional calculus practice from test 2](attachments/more_calculus_from_test2.pdf)
+- [Selected calculus practice from GRE Mathematics Test Form GR8767](attachments/more_calculus_from_test2.pdf) — calculus-focused multiple-choice questions from the GRE mathematics form together with the form’s answer-key/item-difficulty worksheet. The retained scan is figure-heavy, and some question text is not recoverable faithfully from the deterministic extraction.
 
 - [Week 1: Calculus I practice solutions](attachments/Week1_solns.pdf)
 
