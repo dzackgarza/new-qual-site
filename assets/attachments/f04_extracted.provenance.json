@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/f04.pdf",
+  "source_pdf_sha256": "5a943ce696fab6be7a3d5174712262c81539f5c838aa5f6a1480d2a206339224",
+  "extracted_markdown": "assets/attachments/f04_extracted.md",
+  "extracted_markdown_sha256": "2d4943134e66bceccbb9b77cae52aee2ac8e951d9f7e3c47e0596cfd82d986d6",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/f04.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/f04.md",
+  "collection": "SRC-BERKELEY-PRELIM-FALL-2004",
+  "card_comparison": "The deterministic Flash baseline contains eighteen exam problems in paper order, Part A 1A-9A followed by Part B 1B-9B. The existing complete collection lists exactly those eighteen canonical cards in the same order and retains f04.pdf as provenance; no duplicate cards are created."
+}

@@ -65,7 +65,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [DG Sample Problems.pdf](assets/attachments/extracted/DG Sample Problems.md) (267L, duplicate) — differential geometry — disposition 2026-09-14: exact byte duplicate of `DG Sample Problems 1.pdf` (SHA-256 `c76da1618392449b3d284ee8954f688d118ff2db0a192ffda6576bc8ac50512c`). Its contents are represented once by `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE`; no duplicate extraction or cards are manufactured.
 
-- [ ] [f04.pdf](assets/attachments/extracted/f04.md) (77L, 0 problems) — applied-algebra
+- [x] [f04.pdf](assets/attachments/f04_extracted.md) (77L, 18 problems) — Berkeley — prelim — Fall 2004 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. The source contains Part A Problems 1A–9A followed by Part B Problems 1B–9B, all already represented in paper order by the complete `SRC-BERKELEY-PRELIM-FALL-2004` collection. The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
 - [ ] [f05.pdf](assets/attachments/extracted/f05.md) (61L, 0 problems) — applied-algebra — FALL 2005
 
