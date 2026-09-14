@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds.pdf",
+  "source_pdf_sha256": "54706d12059dd9d2d3e6c19272d682921da6e4ef5c8fac023732426eebf13ecb",
+  "extracted_markdown": "assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds_extracted.md",
+  "extracted_markdown_sha256": "750cd29aa152fdbed28b63174ef06b3c89339500fcf3ba0448721410066d5282",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract 'assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds.pdf' --language en --pages 1-20",
+    "mineru-open-api flash-extract 'assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds.pdf' --language en --pages 21-40"
+  ],
+  "assembly": "The two successful Flash page-range outputs were concatenated in page order. A request beginning at page 41 was rejected by Flash as beyond the document, so the second range contains the document's final pages.",
+  "generated_at": "2026-09-14",
+  "retained_extraction": "assets/attachments/extracted/8210 Lecture Notes (Usher) Smooth Manifolds.md",
+  "retained_extraction_status": "not byte-identical to the v0.5.9 Flash baseline; superseded for intake evidence",
+  "disposition": "reference-only",
+  "content_review": "Mike Usher's MATH 8210 Fall 2011 lecture notes. The extracted portion develops smooth manifolds from coordinate-free multivariable calculus through partitions of unity, tangent and cotangent bundles, vector fields, differential forms, the exterior derivative, pullback, and de Rham cohomology. Thirteen numbered exercises are interspersed as course-note exercises; they do not turn the document into a qualifying-exam or standalone problem-set source.",
+  "resource_route": "wiki/topology/resources/books-notes.md already lists a distinct, larger Mike Usher Fall 2011 differential-geometry notes PDF (assets/attachments/Usher DG Notes.pdf, different SHA-256). That resource page is concurrent MM state, so this intake does not rewrite it or add a redundant second Usher-notes link."
+}
