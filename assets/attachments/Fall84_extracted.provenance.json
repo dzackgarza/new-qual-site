@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/Fall84.pdf",
+  "source_pdf_sha256": "e885e8b8318e6ea5d3594b1e04d3663f33ccb01aec404816b07edbe490ba0f48",
+  "extracted_markdown": "assets/attachments/Fall84_extracted.md",
+  "extracted_markdown_sha256": "8beebb0eae7189ed0ce266500aa4fd40f6af3b03c0e08ef9cd1f8761010cd447",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall84.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall84.md",
+  "card_comparison": "The deterministic extraction contains twenty top-level problems. SRC-BERKELEY-PRELIM-FALL-1984 represents all twenty in source order by source-local cards.",
+  "known_extractor_defects": [
+    "Problem 2 drops the arrow in the limit t to 0; the card restores t -> 0.",
+    "Problem 15 garbles the norm/epsilon-delta condition in part 2; the card restores the uniquely determined stability statement from the surrounding deterministic text.",
+    "Problem 16 inserts a spurious symbol before 'p-th power'; the card records 'not a p-th power'.",
+    "Problem 18 appends a stray trailing token after pi(D); the card omits it.",
+    "Problem 19 garbles the phrase 'if f^2 is analytic'; the card restores that phrase from context."
+  ]
+}
