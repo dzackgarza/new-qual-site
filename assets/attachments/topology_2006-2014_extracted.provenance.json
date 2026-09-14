@@ -1,0 +1,28 @@
+{
+  "source_pdf": "assets/attachments/topology_2006-2014.pdf",
+  "source_pdf_sha256": "3365072331b74ffd56cde3f6b5c82edf35e08763d9301a9c8403f007736f8b85",
+  "source_pages": 22,
+  "extracted_markdown": "assets/attachments/topology_2006-2014_extracted.md",
+  "extracted_markdown_sha256": "ad3a8c7c9582a4ef9e878844d373dcf805005643931785572b36b786ff8bc561",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-14",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/topology_2006-2014.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
+  "page_ranges": [
+    { "pages": "1-20", "exit": 0, "bytes": 33865 },
+    { "pages": "21-22", "exit": 0, "bytes": 2934 }
+  ],
+  "assembly": "The final baseline concatenates the successful 1-20 and 21-22 Markdown range outputs in source-page order, separated only by blank lines.",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/topology_2006-2014.md",
+  "old_unknown_provenance_sha256": "b7fdd9113291752f7accdf4b46410fa4c00f3d4c4f3375c54175449859afecf8",
+  "source_identification": "Wesleyan University topology qualifying-exam compilation containing June 2014 (6 top-level problems), August 2013 (8), August 2012 (8), August 2011 (9), August 2010 (8), August 2009 (10), August 2008 (7), June 2007 (10), and June 2006 (16), for 82 top-level positions total.",
+  "card_reconciliation": "The nine existing complete Wesleyan topology collections represent all 82 top-level source positions in sitting order, with exact repeated statements routed to their existing canonical owners. The fresh baseline corroborates the sitting boundaries and problem counts. No collection path is modified in this intake because the collection trees carry concurrent shared residue.",
+  "known_source_or_extractor_defects": [
+    "The fresh Flash run is not byte-identical to the old unknown-provenance extraction and contains local glyph/layout regressions as well as improvements; the old extraction is therefore not treated as the deterministic baseline.",
+    "June 2014 Problem 6, August 2013 Part II Problem 4, August 2010 Part II Problem 4, August 2009 Part II Problem 5, August 2012 Problem 2, and June 2006 Part B Problem 2(c) depend on diagrams emitted only as image placeholders or without recoverable labels; the existing cards leave those source gaps explicit.",
+    "The fresh run locally corrupts some otherwise identifiable expressions (for example June 2014 Problem 4's solid-torus display and August 2013 Part I Problem 1's product-space notation). Existing source-sensitive card wording is not rewritten from these extractor regressions.",
+    "August 2013 Part II Problem 2 prints one cylinder boundary circle as S^2 x {0}, which is internally incompatible with S^1 x I; the existing collection records the exact canonical source-equivalent occurrence rather than silently normalizing the corrupted extraction.",
+    "August 2011 survives with nine numbered problems although its preamble refers to two parts; no unprinted additional problems are invented."
+  ]
+}
