@@ -1,0 +1,26 @@
+{
+  "source_pdf": "assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf",
+  "source_pdf_sha256": "e86b2c39b4d81750b7c4c287bdce6f10adc57cecba1489fa44eb408091aa314e",
+  "source_pages": 99,
+  "extracted_markdown": "assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES_extracted.md",
+  "extracted_markdown_sha256": "58481fb29b1d97aeab2274981aee0fc23983825f6377086047025d7a821dc00b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-14",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds API limit (20 pages)",
+  "page_range_extraction": [
+    "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 21-40",
+    "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 41-60",
+    "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 61-80",
+    "mineru-open-api flash-extract assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf --language en --pages 81-99"
+  ],
+  "range_results": "All five page-range commands exited 0 and produced nonempty Markdown. The final baseline concatenates their outputs in source-page order, separated only by blank lines.",
+  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md",
+  "superseded_extraction_sha256": "7957e1c5a1982797c685875f2713d31436d851e3d392b50b6feb5fcccd2d0a6f",
+  "source_identification": "Jenia Tevelev, Graduate Algebra: Numbers, Equations, Symmetries.",
+  "source_role": "Reference/course text. The document is organized as graduate-algebra exposition with exercise sections and sample midterms embedded in the text, covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic reciprocity, transcendence, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups. It is not a standalone exam or problem sheet, so no problem collection is manufactured.",
+  "public_route": "wiki/algebra/resources/books-notes.md already links and accurately annotates this source; that concurrent shared path was left untouched during intake.",
+  "known_raw_flash_defects": "The assembled raw Flash baseline contains 33 control characters, predominantly NUL bytes, in expository/formula text. They are retained verbatim and recorded here rather than silently normalized."
+}
