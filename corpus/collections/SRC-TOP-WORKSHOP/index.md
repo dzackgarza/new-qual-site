@@ -41,6 +41,7 @@ provenance:
 - assets/attachments/Day_9_-_Homology.pdf
 - assets/attachments/day_1_compactness.pdf
 - assets/attachments/day_2_connected_path_connnected.pdf
+- assets/attachments/day_3_sep_counterex_defn.pdf
 - assets/attachments/day_4_homotopy_retractions.pdf
 - assets/attachments/day_5_fundamental_group.pdf
 - assets/attachments/day_6_covering_spaces.pdf
@@ -204,6 +205,22 @@ source:
     - P-T14B4
     - P-T15B3
     - P-T15B4
+  - name: Revised packet — Separation axioms, counterexamples, and definitions
+    problems:
+    - P-TOP-WORKSHOP-D3-W2
+    - P-UNLJ04-03
+    - P-TOP-WORKSHOP-D3-W4
+    - P-TOP-WORKSHOP-D3-04
+    - P-TOP-WORKSHOP-D3-05
+    - P-TOP-WORKSHOP-D3-03
+    - P-T09A1
+    - P-TOP-WORKSHOP-D4-03
+    - P-T08A1
+    - P-T09A2
+    - P-2SGBM
+    - P-T05A4
+    - P-T06Q1-2
+    - P-T14A4
   area: topology
 ---
 
