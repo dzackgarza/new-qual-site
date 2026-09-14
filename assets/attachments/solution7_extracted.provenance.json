@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/solution7.pdf",
+  "source_pdf_sha256": "98a0bf7614f4c7f19317f62d68794450cd4da1e0808367e3cdc11a173d2cd6c1",
+  "extracted_markdown": "assets/attachments/solution7_extracted.md",
+  "extracted_markdown_sha256": "87a49a786650e73e4827f4a2940e95225a3a0abc90383914a1fef50716932984",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution7.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/solution7.md",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 7 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 1 item 11 states that a 23-by-23 matrix of rank 23 has eigenvalue 0, while the packet's own worked solution invokes a nontrivial kernel. The fresh extraction is byte-identical to the retained extraction, so the inconsistency is preserved as a source defect rather than repaired.",
+    "Problems 2 and 3 depend on source images/tables that Flash does not fully recover; the existing cards keep those gaps explicit."
+  ]
+}
