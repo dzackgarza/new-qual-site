@@ -1,0 +1,30 @@
+{
+  "source_pdf": "assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf",
+  "source_pdf_sha256": "6b1173af8b79d1d864a23f0c07312c2692086a1be5d7582069243f6ee78afd99",
+  "source_pages": 36,
+  "extracted_markdown": "assets/attachments/Topology_Prelim_Answers_-_Unknown_extracted.md",
+  "extracted_markdown_sha256": "b44624d26cbbbd0505f2accd3f28261f6675e95a56eca17c460a049ef03eaabc",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-14",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
+  "page_ranges": [
+    { "pages": "1-20", "exit": 0, "bytes": 41416 },
+    { "pages": "21-36", "exit": 0, "bytes": 13416 }
+  ],
+  "assembly": "The final baseline concatenates the successful 1-20 and 21-36 Markdown range outputs in source-page order, separated only by blank lines.",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md",
+  "old_unknown_provenance_sha256": "235257226049a18d6b6dd6dd99a1b6bf05a06d5a113d64fb8757492965430a41",
+  "source_identification": "William Malone and Matt Housley topology/preliminary-exam worked-answer compilation, Summer 2007. It contains Math 6520 Final Exam 2007 (8 numbered positions), January 2007 (16), Math 6510 Final Exam (8), August 2006 (16), January 2006 (9), an embedded August 2005 block (8), and January 2005 (10), for 75 numbered source positions total.",
+  "card_reconciliation": "The existing complete SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007 collection represents all 75 numbered positions with 72 canonical cards and three exact repeated appearances. The fresh deterministic baseline preserves the same section boundaries and the same unrecovered source gaps, so no collection/card edit is warranted in this intake; those paths carry concurrent shared residue.",
+  "raw_control_bytes": 77,
+  "known_source_or_extractor_defects": [
+    "The fresh Flash baseline is not byte-identical to the old unknown-provenance extraction and contains 77 raw C0 control-byte artifacts; these are retained verbatim and counted rather than silently normalized.",
+    "January 2006 Problem 9 still truncates immediately after beginning the covering-space classification statement with 'Let x in X'; the remainder is absent before the embedded August 2005 block begins.",
+    "January 2005 Problem 3 still ends immediately after the induced-map symbol following the degree-one hypothesis, so the requested conclusion remains unrecovered.",
+    "January 2005 Problem 8 still ends after 'for almost every a in R^n the function', with its formula and requested property absent.",
+    "January 2005 Problems 9 and 10 are still present only as numbered positions with no statement text.",
+    "The fresh output contains additional local glyph corruption in otherwise recoverable text; existing source-sensitive cards are not rewritten from those extractor artifacts."
+  ]
+}
