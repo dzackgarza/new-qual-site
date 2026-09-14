@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/871-872January_2004_871-953.pdf",
+  "source_pdf_sha256": "53af1b16f25d9f74a4edf2d32ff874d507a1ea909b99c1ba9771ef17af789907",
+  "extracted_markdown": "assets/attachments/871-872January_2004_871-953_extracted.md",
+  "extracted_markdown_sha256": "72ebb158f03a7c6bae4416291455b5460c760f28143169913101f34fb5459a0c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/871-872January_2004_871-953.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/871-872January_2004_871-953.md",
+  "card_comparison": "All ten source positions were reconciled against this baseline: seven owned cards and three reused canonical topology cards match the extracted problems after the explicitly recorded extractor cleanups.",
+  "known_extractor_defects": [
+    "Part I Problem 5 drops the map arrow between the displayed source and target; the card restores the map notation from the surrounding deterministic text.",
+    "Part II Problem 3 garbles the typography around dim Gamma(D); the surrounding deterministic text identifies the divisor D and the requested dimension, and the card records dim Gamma(D).",
+    "Part II Problem 4 misreads the just-defined ideal sheaf I as T in the quotient defining G; the card restores G(U)=F(U)/I(U) from the deterministic context."
+  ]
+}
