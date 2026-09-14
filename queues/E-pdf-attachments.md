@@ -14,7 +14,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Qualifying exams (76)
 
-- [ ] [8155-starter-problems.pdf](assets/attachments/extracted/8155-starter-problems.md) (59L, 7 problems) — applied-algebra
+- [x] [8155-starter-problems.pdf](assets/attachments/8155-starter-problems_extracted.md) (58L, 7 problems) — UGA Math 8155 — complex-analysis — disposition 2026-09-14: substantive intake is already durable in `a994186e1` / `31174b4d5`; deterministic MinerU Flash v0.5.9 is byte-identical to the retained extraction, and complete collection `SRC-UGA-MATH8155-STARTER-PROBLEMS` represents all seven numbered source problems in order with source-audit notes. The inventory's `applied-algebra` label was stale.
 
 - [ ] [8210 Lecture Notes (Usher) Smooth Manifolds.pdf](assets/attachments/extracted/8210 Lecture Notes (Usher) Smooth Manifolds.md) (2574L, 5 problems) — UNL — alg-geom — FALL 2011
 

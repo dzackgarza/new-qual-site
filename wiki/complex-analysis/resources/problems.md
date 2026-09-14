@@ -18,7 +18,7 @@ tag:complex/exercise path:"30_Complex"
 
 ## UGA Courses
 
-- [Problem Session Problems](attachments/8155-starter-problems.pdf)
+- [UGA Math 8155 Starter Problems — Complex Numbers and Plane](attachments/8155-starter-problems.pdf) — seven starter problems on complex arithmetic, roots of unity, geometry in the complex plane, and trigonometric sums; fully represented by `SRC-UGA-MATH8155-STARTER-PROBLEMS`.
 
 - [Spring 2021 HW1](attachments/8150-hw1.pdf)
 
