@@ -22,11 +22,11 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [871-872January_2008_850-871.pdf](assets/attachments/extracted/871-872January_2008_850-871.md) (73L, 0 problems) — applied-algebra
 
-- [ ] [analysis_2003-2007.pdf](assets/attachments/extracted/analysis_2003-2007.md) (611L, 76 problems) — Wesleyan — applied-algebra — SUMMER 2007 **OCR: MinerU hallucination notes**
+- [x] [analysis_2003-2007.pdf](assets/attachments/extracted/analysis_2003-2007.md) (611L, 76 problems) — Wesleyan — analysis compilation — 2003–2007 — disposition 2026-09-14: reconciled from a fresh deterministic MinerU Flash extraction in commit `b0e08aa6d`. The retained packet contains 95 unique source positions: 45 real-analysis positions (2003–2007, with the 2006 sitting duplicated verbatim in the packet) and 50 complex-analysis positions (2004–2007). Canonical Wesleyan sitting collections represent every position; exact repeats reuse existing owners, and unresolved extraction glyphs are recorded explicitly rather than guessed. The inventory's `76 problems`, `applied-algebra`, and single-date labels were stale heuristic metadata.
 
-- [ ] [analysis_2008-2013.pdf](assets/attachments/extracted/analysis_2008-2013.md) (727L, 111 problems) — Wesleyan — applied-algebra — Summer 2011
+- [x] [analysis_2008-2013.pdf](assets/attachments/extracted/analysis_2008-2013.md) (727L, 111 problems) — Wesleyan — analysis compilation — 2008–2013 — disposition 2026-09-14: reconciled from deterministic MinerU Flash in commit `f51240c6f`. The packet contains 122 numbered source positions across fourteen real/complex-analysis sittings: 2008, 2009, 2010, 2011, 2012, June 2013, and supplemental/August 2013. Canonical Wesleyan sitting collections represent all 122 positions; exact repeated statements reuse canonical cards and unresolved Flash defects remain explicit. The inventory's `111 problems`, `applied-algebra`, and single-sitting label were stale heuristic metadata.
 
-- [ ] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — topology — July 2016
+- [x] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — Wesleyan — analysis compilation — 2014–2016 — disposition 2026-09-14: reconciled from deterministic MinerU Flash in commit `5e7c0bfb4`. The retained eight-page packet has 33 represented source positions across five sittings: 2016 Complex (8), July 2016 Real (8), July 2015 Real (5 retained statements), July 2015 Complex (4 retained statements), and July 2014 Real (8). The 2015 instructions advertise 7 real and 8 complex problems, but the retained source contains only 5 and 4 statements respectively; absent problems were not invented. The inventory's `12 problems` and `topology` labels were stale heuristic metadata.
 
 - [x] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — real-analysis — Winter 2014 — disposition 2026-09-09: ingested as `SRC-DUKE-BASIC-ANALYSIS-WINTER-2014`; all twelve problems are represented in source order by solved, source-checked cards `P-DUKEBA14-1` through `P-DUKEBA14-12`.
 
@@ -37,11 +37,11 @@ External links that are not vendored remain on the resource pages until a delibe
   The card's reading is the only one that states a problem, so it stands.
   The extraction is not reliable at single glyphs here: the same run dropped `$\sigma$` to a bare space in problem 6(c).
 
-- [ ] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — January 2003
+- [x] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — disposition 2026-09-14: ingested as `SRC-AZOFF-PROBLEMS-BY-TOPIC` in commit `8f9f8a19d` from a fresh deterministic MinerU Flash extraction. The packet contains 89 source positions across nine topic blocks; 74 source-owned cards represent genuine gaps and 15 exact existing canonical statements are reused. Concrete extraction defects are documented on affected cards. The inventory count of 88 was stale.
 
-- [ ] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — prelim
+- [x] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — linear algebra review sheet — disposition 2026-09-14: ingested as `SRC-BASIC-LINEAR-ALGEBRA-REVIEW` in commit `4db24ca57`. The source is predominantly expository Math 150-01 review notes; its final Review Problems section contains exactly seven numbered source problems, all represented by `P-BLAR-01` through `P-BLAR-07`. Definitions and worked examples remain reference material rather than artificial problem cards. The inventory count of 47 was a false positive from expository numbering/list structure.
 
-- [ ] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — alg-geom
+- [x] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — *Mathematical Trivium* problem compilation — disposition 2026-09-14: ingested as `SRC-MATHEMATICAL-TRIVIUM` in commit `18241b134` from a 32-page deterministic MinerU Flash baseline. The source has 243 numbered positions across Linear Algebra (48), Real Analysis (62), Complex Analysis (34), Variational Principle (15), Differential Equations (51), and Probability (33). 242 source-owned cards plus exact reuse of `P-BKS04-7A` represent all positions; figure/extraction gaps are explicit. The inventory's `249 problems` and `alg-geom` labels were stale heuristics.
 
 - [ ] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — UNL — applied-algebra
 
