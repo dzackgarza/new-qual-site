@@ -13,5 +13,25 @@
     "Part I Problem 5 drops the map arrow between the displayed source and target; the card restores the map notation from the surrounding deterministic text.",
     "Part II Problem 3 garbles the typography around dim Gamma(D); the surrounding deterministic text identifies the divisor D and the requested dimension, and the card records dim Gamma(D).",
     "Part II Problem 4 misreads the just-defined ideal sheaf I as T in the quotient defining G; the card restores G(U)=F(U)/I(U) from the deterministic context."
+  ],
+  "source_structure": {
+    "instructions": "Do three problems from Part I and three from Part II; if more than three are attempted in a part, identify which three should count.",
+    "part_i": "Topology (970), Problems 1-5",
+    "part_ii": "Algebraic Geometry (953), Problems 1-5",
+    "total_source_positions": 10
+  },
+  "canonical_reuses": [
+    {
+      "source_position": "Part I, Problem 2",
+      "card_id": "P-TOP-WORKSHOP-D3-04"
+    },
+    {
+      "source_position": "Part I, Problem 3",
+      "card_id": "P-TOP-WORKSHOP-D4-03"
+    },
+    {
+      "source_position": "Part I, Problem 4",
+      "card_id": "P-TOP-WORKSHOP-D3-05"
+    }
   ]
 }
