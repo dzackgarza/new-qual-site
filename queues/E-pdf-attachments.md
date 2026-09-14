@@ -150,7 +150,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [squal1.pdf](assets/attachments/extracted/squal1.md) (25L, 8 problems) — topology
 
-- [ ] [squal2.pdf](assets/attachments/extracted/squal2.md) (22L, 8 problems) — topology
+- [x] [squal2.pdf](assets/attachments/extracted/squal2.md) (22L, 8 problems) — topology — undated qualifying exam — disposition 2026-09-14: ingested as neutral collection `SRC-TOP-SQUAL2`, with all eight source positions represented by six new source-local cards plus exact canonical reuse of `P-T07A2` for Section A Problem 4 and `P-OMOPR` for Section B Problem 6. Neither the retained extraction nor the original qual-wiki resource page identifies an institution or date, so none was inferred.
 
 - [x] [Summer83.pdf](assets/attachments/extracted/Summer83.md) (103L, 2 problems) — Berkeley — prelim — Summer 1983 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SUMMER-1983`, with all 20 source-order problems represented by 17 new source-local cards plus exact canonical reuse of `P-BKS84-1` for Problem 7, `P-BKF18-3B` for Problem 12, and `P-BKF96-14` for Problem 15. The inventory's `2 problems`, `applied-algebra`, and truncated `Summer 19` labels were stale heuristic metadata.
 
