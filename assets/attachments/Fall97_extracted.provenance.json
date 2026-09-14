@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Fall97.pdf",
+  "source_pdf_sha256": "919356dccdbd298abab0ca63eada354f3f528914aa317204c1ba59ff65741b66",
+  "extracted_markdown": "assets/attachments/Fall97_extracted.md",
+  "extracted_markdown_sha256": "530e1913543684f11603957efbc930e219241a51c4e275c5b1396c51c83bb82c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall97.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall97.md",
+  "card_comparison": "The eighteen top-level source problems are represented by eighteen source-local cards in source order.",
+  "known_extractor_defects": [
+    "Problem 12 drops the map arrows in both declarations f:R^m->R^n; the cards restore those arrows from the deterministic surrounding definition.",
+    "Minor spacing/word-joining noise occurs in Problems 5, 7, 8, and 12 and is normalized without changing mathematical content."
+  ]
+}
