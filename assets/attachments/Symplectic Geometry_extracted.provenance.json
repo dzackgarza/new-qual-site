@@ -1,0 +1,24 @@
+{
+  "source_pdf": "assets/attachments/Symplectic Geometry.pdf",
+  "source_pdf_sha256": "2effa389f2c8834bd2dceb89791054959cfa46a64cd06f557035f4977e110149",
+  "source_pages": 42,
+  "extracted_markdown": "assets/attachments/Symplectic Geometry_extracted.md",
+  "extracted_markdown_sha256": "1240d863fbb4ca5c787e3b701a2d9c369179882a54de1d877369c4a395af3b30",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-14",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/Symplectic Geometry.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds API limit (20 pages)",
+  "page_range_extraction": [
+    "mineru-open-api flash-extract assets/attachments/Symplectic Geometry.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/Symplectic Geometry.pdf --language en --pages 21-40",
+    "mineru-open-api flash-extract assets/attachments/Symplectic Geometry.pdf --language en --pages 41-42"
+  ],
+  "range_results": "All three page-range commands exited 0 and produced nonempty Markdown. The final baseline concatenates their outputs in source-page order, separated only by blank lines.",
+  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/Symplectic Geometry.md",
+  "superseded_extraction_sha256": "3df09d3517f270b7cd6a2b01091e92fecb349a992f74cdae23ffcd7bc0a571bb",
+  "source_identification": "J.J. Duistermaat, Symplectic Geometry, Spring School, June 7-14, 2004, Utrecht.",
+  "source_role": "Reference/course notes. The four expository chapters cover symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton-Jacobi theory. Each chapter ends with an exercise section integrated into the lecture text; this is not a standalone exam or problem sheet, so no problem collection is manufactured.",
+  "public_route": "wiki/topology/resources/books-notes.md already links and accurately annotates this source; that concurrent shared path was left untouched during intake.",
+  "known_raw_flash_defects": "The assembled raw Flash baseline contains three U+000F control characters in expository/exercise text. They are retained verbatim and recorded here rather than silently normalized."
+}
