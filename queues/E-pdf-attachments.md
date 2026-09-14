@@ -103,7 +103,9 @@ External links that are not vendored remain on the resource pages until a delibe
   The notes are an expository course text; Exercise Sets 2–9 are integrated into the lecture sequence rather than a standalone problem bank. The inventory's `117 problems`, `UNL`, `alg-geom`, and truncated `July 19` labels were stale heuristic metadata.
   Added a substantive annotated entry to `wiki/topology/resources/books-notes.md` covering symmetry and differential equations, Lie groups and actions, conservation laws, symplectic manifolds, reduction, and the Gromov school; no exercise cards were manufactured. The raw Flash baseline's single NUL-byte defect is recorded in provenance rather than silently normalized.
 
-- [ ] [Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf](assets/attachments/extracted/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.md) (3363L, 58 problems) — alg-geom — Spring 2018
+- [x] [Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf](assets/attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY_extracted.md) (4036L, reference/course notes) — Si Li — algebraic topology — Tsinghua University, Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash extraction identifies *Introduction to Algebraic Topology*, a 28-section expository course text running from categories and the fundamental groupoid through coverings, homotopy groups, CW complexes, homology/cohomology, duality, spectral sequences, obstruction theory, Hurewicz, and the Eilenberg–Steenrod axioms.
+  The fresh extraction contains no exercise/problem/homework headings; its only two uses of the word “problem” are ordinary expository prose. The inventory's `58 problems` and `alg-geom` labels were stale extraction heuristics.
+  Enriched the existing topology resource entry with the source's actual course provenance and mathematical scope; no problem cards were manufactured.
 
 - [ ] [more_calculus_from_test2.pdf](assets/attachments/extracted/more_calculus_from_test2.md) (172L, 20 problems) — algebra
 

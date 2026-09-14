@@ -28,7 +28,7 @@ order: 0
 
 [Auroux, Math 131: Introduction to Topology](attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf)
 
-[Li, Introduction to Algebraic Topology](attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf)
+[Si Li, *Introduction to Algebraic Topology*, Tsinghua University, Spring 2018](attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf) — expository course notes in 28 sections covering categories and functors, fundamental groupoids, coverings and fibrations, van Kampen, homotopy groups and Puppe sequences, CW complexes, singular and cellular homology, cohomology and products, Poincaré duality, spectral sequences, obstruction theory, Hurewicz, and the Eilenberg–Steenrod axioms.
 
 [Perutz, Algebraic Topology I, Fall 2008](attachments/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf)
 
