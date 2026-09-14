@@ -89,7 +89,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Fall88.pdf](assets/attachments/Fall88_extracted.md) (107L, 18 problems) — Berkeley — prelim — Fall 1988 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1988` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. All eighteen source positions are represented in source order by `P-BKF88-1` through `P-BKF88-18`; nearby prior cards had different hypotheses or extra obligations and were not reused. The identified local Flash defects are recorded in provenance and on affected cards. The inventory's `5 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall90.pdf](assets/attachments/extracted/Fall90.md) (101L, 0 problems) — algebra — Fall 19
+- [x] [Fall90.pdf](assets/attachments/Fall90_extracted.md) (101L, 18 problems) — Berkeley — prelim — Fall 1990 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1990` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. All eighteen source positions are represented in source order by `P-BKF90-1` through `P-BKF90-18`; nearby prior cards imposed different hypotheses or different tasks and were not reused. The identified local Flash defects are recorded in provenance and on the affected source-checked card. The inventory's `0 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
 - [ ] [Fall95.pdf](assets/attachments/extracted/Fall95.md) (84L, 2 problems) — applied-algebra — Fall 19
 
