@@ -38,7 +38,7 @@ order: 15
 
 - [Real analysis course notes](attachments/Real_Analysis_Course_Notes.pdf)
 
-- [[cambride_analysis_ii.pdf|Cambridge analysis notes]]
+- [[cambride_analysis_ii.pdf|Dexter Chua, *Part IB — Analysis II* (Michaelmas 2015)]] — course notes based on lectures by N. Wickramasekera, covering uniform convergence and continuity, Riemann integration, normed and metric spaces, contraction mappings, and multivariable differentiation.
 
 UGA Math 8100 as posted by Lyall.
 These are that course's sheets, not a live syllabus.

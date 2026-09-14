@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/cambride_analysis_ii.pdf",
+  "source_pdf_sha256": "d063650ef3c32a603f99e7aacb3e5bee0ac64b4045d03327e0f50e41899a0820",
+  "extracted_markdown": "assets/attachments/cambride_analysis_ii_extracted.md",
+  "extracted_markdown_sha256": "31e203bfe61af7b101e6402c4aeb81a73bf9ff0939982863326261dad34ec988",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract assets/attachments/cambride_analysis_ii.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/cambride_analysis_ii.pdf --language en --pages 21-40",
+    "mineru-open-api flash-extract assets/attachments/cambride_analysis_ii.pdf --language en --pages 41-60",
+    "mineru-open-api flash-extract assets/attachments/cambride_analysis_ii.pdf --language en --pages 61-79"
+  ],
+  "assembly": "The four Flash Markdown outputs were concatenated in page order without normalization or semantic rewriting.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "different from assets/attachments/extracted/cambride_analysis_ii.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "disposition": "Reference-only intake. The 79-page source is Dexter Chua's Part IB Analysis II lecture notes for Michaelmas 2015, based on lectures by N. Wickramasekera. It consists of expository definitions, theorems, examples, and proofs, with occasional references to separate example sheets rather than an authored problem collection. No problem cards are manufactured from the inventory's stale 13-problem heuristic; the source remains a Real Analysis course-notes resource."
+}
