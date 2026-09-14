@@ -29,7 +29,7 @@ order: 40
 
 - [Chapter 8 solutions](attachments/Ch8Sltns.pdf)
 
-- [Chapter 9 solutions](attachments/Ch9Sltns.pdf)
+- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Chapter 9 factor-group solutions]], with the retained solution PDF as collection provenance.
 
 - [Chapter 10, part A solutions](attachments/Ch10PtASltns.pdf)
 

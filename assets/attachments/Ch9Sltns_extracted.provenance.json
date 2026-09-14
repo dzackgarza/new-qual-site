@@ -1,0 +1,14 @@
+{
+  "source_pdf": "assets/attachments/Ch9Sltns.pdf",
+  "source_pdf_sha256": "4ff4b39732b0a6174a8387428211da478392000a21feca6e7c174755d285af04",
+  "extracted_markdown": "assets/attachments/Ch9Sltns_extracted.md",
+  "extracted_markdown_sha256": "8fb219a03cd33063bc0ba903dbf0e4ee29a6ce8be5791dceaf96f67c00e55a2b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract assets/attachments/Ch9Sltns.pdf --language en"
+  ],
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "different from assets/attachments/extracted/Ch9Sltns.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "disposition": "Problem-bearing solution packet. The deterministic six-page Flash baseline contains 28 problem statements: 25 sparse-numbered Chapter 9 factor-group problems and three Team Problem Solutions prompts. The canonical collection SRC-CH9-FACTOR-GROUP-SOLUTIONS represents those prompts; worked answers remain in the retained PDF rather than being copied into the problem cards."
+}
