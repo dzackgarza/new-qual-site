@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Fall95.pdf",
+  "source_pdf_sha256": "cce2965e2178b507c6717012926b63d16ece897158f0f2070b7c79d0f94e1447",
+  "extracted_markdown": "assets/attachments/Fall95_extracted.md",
+  "extracted_markdown_sha256": "c5990fad200369d5f3983f0b66d25cdf4481c8b4d304b52efe40dd18a24fbb72",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall95.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall95.md",
+  "card_comparison": "The eighteen top-level source problems are represented by seventeen source-local cards plus exact reuse of P-BERK87S-19 for Problem 10.",
+  "known_extractor_defects": [
+    "Problem 9 garbles the placement of lim inf and n->infinity; the card restores liminf_{n->infinity} x_n > 0 from the deterministic sentence.",
+    "Problem 12 reads 'f and f0' although the displayed inequality uses f'(x); the card restores the hypothesis that f and f' are continuous.",
+    "Problem 15 drops the arrow in f:R->R.",
+    "Problem 18 drops the arrow and infinity symbol in the hypothesis f(x)->0 as |x|->infinity; the card restores them from the deterministic sentence."
+  ]
+}
