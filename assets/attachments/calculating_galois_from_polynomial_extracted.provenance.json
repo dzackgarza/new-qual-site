@@ -1,0 +1,22 @@
+{
+  "source_pdf": "assets/attachments/calculating_galois_from_polynomial.pdf",
+  "source_pdf_sha256": "4f80fb828936cd0762dfe4ef1e1280a568194d9e92d245948dff3c44f26aa522",
+  "source_pages": 10,
+  "extracted_markdown": "assets/attachments/calculating_galois_from_polynomial_extracted.md",
+  "extracted_markdown_sha256": "e2cc941f733424833ab3c5d02013fbdad89ddc1e0b282d2702af74a2658b2512",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/calculating_galois_from_polynomial.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/calculating_galois_from_polynomial.md",
+  "old_unknown_provenance_sha256": "bdea45212b62f1dc8800bec99278523841701b61351fb610fbc2ea6bdf490025",
+  "source_identification": "Expository computational Galois-theory review notes on determining Galois groups from polynomials. The notes develop quadratic and cubic cases, discriminants, prime-degree arguments, cyclotomic extensions, and finite-field/Frobenius methods, with worked Examples sections embedded in the exposition.",
+  "source_role": "reference/computational review notes",
+  "problem_reconciliation": "The inventory's 22-problem heuristic counts worked examples and numbered theorem/list items within exposition. The fresh source has theorem statements and worked Examples sections rather than a standalone authored exercise/problem bank, so no problem collection is manufactured.",
+  "resource_reconciliation": "wiki/algebra/resources/fields.md already routes this exact retained PDF and accurately summarizes its computational scope. No resource edit is required in this intake.",
+  "raw_control_bytes": 2,
+  "known_source_or_extractor_defects": [
+    "The fresh Flash baseline is not byte-identical to the old unknown-provenance extraction and contains two raw C0 control bytes (0x03), retained verbatim and recorded rather than silently normalized."
+  ]
+}
