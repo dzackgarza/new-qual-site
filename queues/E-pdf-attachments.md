@@ -43,7 +43,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — *Mathematical Trivium* problem compilation — disposition 2026-09-14: ingested as `SRC-MATHEMATICAL-TRIVIUM` in commit `18241b134` from a 32-page deterministic MinerU Flash baseline. The source has 243 numbered positions across Linear Algebra (48), Real Analysis (62), Complex Analysis (34), Variational Principle (15), Differential Equations (51), and Probability (33). 242 source-owned cards plus exact reuse of `P-BKS04-7A` represent all positions; figure/extraction gaps are explicit. The inventory's `249 problems` and `alg-geom` labels were stale heuristics.
 
-- [ ] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — UNL — applied-algebra
+- [x] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — Cambridge — real-analysis — Michaelmas 2015 — disposition 2026-09-14: reference-only intake. A fresh 79-page deterministic MinerU Flash extraction identifies Dexter Chua's *Part IB — Analysis II*, based on lectures by N. Wickramasekera. The source is expository course notes (definitions, theorems, examples, and proofs) with occasional references to separate example sheets, not an authored problem collection; no cards are manufactured. The retained PDF is enriched on `wiki/real-analysis/resources/books-notes.md`. The inventory's `13 problems`, `UNL`, and `applied-algebra` labels were stale heuristics.
 
 - [ ] [Ch9Sltns.pdf](assets/attachments/extracted/Ch9Sltns.md) (161L, 0 problems) — applied-algebra
 
