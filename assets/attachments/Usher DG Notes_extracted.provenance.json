@@ -1,0 +1,29 @@
+{
+  "source_pdf": "assets/attachments/Usher DG Notes.pdf",
+  "source_pdf_sha256": "32e38ec13a229473d1601cc295dcb28c4affffaeaefce39b6660189f6b181948",
+  "source_pages": 54,
+  "extracted_markdown": "assets/attachments/Usher DG Notes_extracted.md",
+  "extracted_markdown_sha256": "5164a9cb334250240a452c8bfd8f09cfc0202c28d1ba248e95d7f4d427110d28",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-14",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/Usher DG Notes.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
+  "page_ranges": [
+    { "pages": "1-20", "exit": 0, "bytes": 97991 },
+    { "pages": "21-40", "exit": 0, "bytes": 100718 },
+    { "pages": "41-54", "exit": 0, "bytes": 65887 }
+  ],
+  "assembly": "The final baseline concatenates the successful 1-20, 21-40, and 41-54 Markdown range outputs in source-page order, separated only by blank lines.",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Usher DG Notes.md",
+  "old_unknown_provenance_sha256": "988af371a19f4cb1ef0ba830a56b6d2426715b54ce5ed6d760ce373d174a8fe6",
+  "source_identification": "Mike Usher, MATH 8210 Fall 2011 lecture notes, a two-part smooth-manifold/differential-geometry course text. The fresh baseline covers coordinate-free multivariable calculus, partitions of unity, smooth manifolds, tangent/vector-field formalisms, differential forms and de Rham theory, then submanifolds, vector bundles/tubular neighborhoods, vector fields and flows, Lie derivatives, Cartan's formula, and related material.",
+  "source_role": "reference/course notes",
+  "exercise_structure": "Thirteen numbered Exercise headings are integrated into the exposition (Exercises 1.2, 1.3, 2.11, 3.4, 3.11, 3.14, 3.15, 3.22, 4.4, 4.11, 4.12, 4.20, and 4.24). They are subordinate course-note exercises rather than a standalone exam/problem sheet, so no exercise collection is manufactured.",
+  "resource_reconciliation": "The existing wiki/topology/resources/books-notes.md entry already routes this exact PDF and accurately describes its mathematical scope. That shared resource path carries concurrent edits and is not modified here.",
+  "raw_control_bytes": 25,
+  "known_source_or_extractor_defects": [
+    "The fresh Flash baseline is not byte-identical to the old unknown-provenance extraction and contains 25 raw C0 control bytes (all 0x03); these are retained verbatim and counted rather than silently normalized.",
+    "The PDF is distinct from assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds.pdf; the repository already records their different sizes and SHA-256 hashes, so no duplicate-source collapse is performed."
+  ]
+}
