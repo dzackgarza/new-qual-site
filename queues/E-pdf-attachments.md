@@ -45,7 +45,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — Cambridge — real-analysis — Michaelmas 2015 — disposition 2026-09-14: reference-only intake. A fresh 79-page deterministic MinerU Flash extraction identifies Dexter Chua's *Part IB — Analysis II*, based on lectures by N. Wickramasekera. The source is expository course notes (definitions, theorems, examples, and proofs) with occasional references to separate example sheets, not an authored problem collection; no cards are manufactured. The retained PDF is enriched on `wiki/real-analysis/resources/books-notes.md`. The inventory's `13 problems`, `UNL`, and `applied-algebra` labels were stale heuristics.
 
-- [ ] [Ch9Sltns.pdf](assets/attachments/extracted/Ch9Sltns.md) (161L, 0 problems) — applied-algebra
+- [x] [Ch9Sltns.pdf](assets/attachments/extracted/Ch9Sltns.md) (161L, 0 problems) — algebra — factor groups — disposition 2026-09-14: problem-bearing solution packet ingested as `SRC-CH9-FACTOR-GROUP-SOLUTIONS`. A fresh six-page deterministic MinerU Flash baseline contains 28 sparse-numbered problem prompts: 25 Chapter 9 problems and three Team Problem Solutions. The prompts are represented as canonical cards; the worked answers remain in the retained PDF rather than being duplicated. The existing group-theory resource now points to the collection. The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
 - [ ] [chapter-2.pdf](assets/attachments/extracted/chapter-2.md) (275L, 18 problems) — calculus **OCR: image placeholders**
 
