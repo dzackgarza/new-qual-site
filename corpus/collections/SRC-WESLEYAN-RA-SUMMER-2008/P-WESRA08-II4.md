@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Checked against the exact Part II, Problem 3 occurrence in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. This event certifies the 2003 occurrence only; it does not recertify the separate 2008 source.
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash prints `f` rather than `f_n` in the displayed integrand; the card retains the sequence-indexed form required by the surrounding convergence statement.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11

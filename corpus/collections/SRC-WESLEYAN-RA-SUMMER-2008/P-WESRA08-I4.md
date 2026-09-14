@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Theorems and Definitions item 4 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -30,7 +30,8 @@ Let $(X,\mathcal M,\mu)$ be a measure space, let $1\le p,q\le\infty$ satisfy
 \[
 \frac1p+\frac1q=1,
 \]
-and let $f\in L^p(\mu)$ and $g\in L^q(\mu)$. Then $fg\in L^1(\mu)$ and
+and let $f\in L^p(\mu)$ and $g\in L^q(\mu)$.
+Then $fg\in L^1(\mu)$ and
 \[
 \boxed{
 \int_X|fg|\,d\mu

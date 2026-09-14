@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Theorems and Definitions item 2 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11

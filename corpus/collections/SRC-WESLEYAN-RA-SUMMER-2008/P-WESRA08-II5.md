@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Problem 5 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -22,11 +22,13 @@ audit:
 ---
 
 ::: problem
-Suppose that $(V,\|\cdot\|)$ is a real normed vector space in which every absolutely convergent series converges. Prove that $V$ is complete.
+Suppose that $(V,\|\cdot\|)$ is a real normed vector space in which every absolutely convergent series converges.
+Prove that $V$ is complete.
 :::
 
 ::: solution
-Let $(x_n)$ be a Cauchy sequence in $V$. We prove that it converges.
+Let $(x_n)$ be a Cauchy sequence in $V$.
+We prove that it converges.
 
 Choose inductively indices
 \[
@@ -36,7 +38,8 @@ such that
 \[
 \|x_{n_{k+1}}-x_{n_k}\|<2^{-k}
 \]
-for every $k\ge1$. This is possible because $(x_n)$ is Cauchy.
+for every $k\ge1$.
+This is possible because $(x_n)$ is Cauchy.
 
 Then
 \[
@@ -48,7 +51,8 @@ Hence the series
 \[
 \sum_{k=1}^\infty (x_{n_{k+1}}-x_{n_k})
 \]
-is absolutely convergent. By hypothesis it converges in $V$, say to $y$.
+is absolutely convergent.
+By hypothesis it converges in $V$, say to $y$.
 
 Its partial sums telescope:
 \[
@@ -61,7 +65,8 @@ x_{n_{N+1}}\longrightarrow x_{n_1}+y=:x\in V.
 \]
 So the Cauchy sequence has a convergent subsequence.
 
-Finally, a Cauchy sequence with a subsequence converging to $x$ must itself converge to $x$. Indeed, given $\varepsilon>0$, choose $N_0$ so that
+Finally, a Cauchy sequence with a subsequence converging to $x$ must itself converge to $x$.
+Indeed, given $\varepsilon>0$, choose $N_0$ so that
 \[
 \|x_m-x_n\|<\varepsilon/2
 \]

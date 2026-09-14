@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Theorems and Definitions item 3 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -34,7 +34,8 @@ be measurable functions with
 \[
 f_n(x)\longrightarrow f(x)
 \]
-for almost every $x\in X$. Then $f$ is measurable and
+for almost every $x\in X$.
+Then $f$ is measurable and
 \[
 \boxed{
 \int_X f\,d\mu

@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Problem 1 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -22,7 +22,8 @@ audit:
 ---
 
 ::: problem
-Let $(X,\mathcal B,\mu)$ be a measure space and let $f:X\to\mathbb R$ be integrable. Prove that
+Let $(X,\mathcal B,\mu)$ be a measure space and let $f:X\to\mathbb R$ be integrable.
+Prove that
 \[
 \{x\in X:f(x)\ne0\}
 \]
@@ -45,7 +46,9 @@ Hence
 \mu(E_n)\le n\|f\|_1<\infty.
 \]
 
-If $f(x)\ne0$, then $|f(x)|>1/n$ for some sufficiently large $n$, so $x\in E_n$. Conversely every $E_n$ is contained in the nonzero set. Therefore
+If $f(x)\ne0$, then $|f(x)|>1/n$ for some sufficiently large $n$, so $x\in E_n$.
+Conversely every $E_n$ is contained in the nonzero set.
+Therefore
 \[
 \boxed{\{f\ne0\}=\bigcup_{n=1}^\infty E_n,}
 \]

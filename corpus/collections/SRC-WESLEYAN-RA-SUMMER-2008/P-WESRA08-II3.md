@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked against Problem 3 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -26,7 +26,8 @@ Suppose that $A\subseteq\mathbb R$ is Lebesgue measurable and
 \[
 A+r=A
 \]
-for every rational number $r$. Prove that either
+for every rational number $r$.
+Prove that either
 \[
 m(A)=0
 \qquad\text{or}\qquad
@@ -57,9 +58,11 @@ Hence, after a change of variables,
 \[
 u_\varepsilon(x+q)=u_\varepsilon(x).
 \]
-Thus every rational number is a period of $u_\varepsilon$. Since $\mathbb Q$ is dense and $u_\varepsilon$ is continuous, $u_\varepsilon$ must be constant on $\mathbb R$.
+Thus every rational number is a period of $u_\varepsilon$.
+Since $\mathbb Q$ is dense and $u_\varepsilon$ is continuous, $u_\varepsilon$ must be constant on $\mathbb R$.
 
-By the Lebesgue density theorem, choose a density point $a$ of $A$ and a density point $b$ of $A^c$. Approximate identities recover characteristic functions at density points, so
+By the Lebesgue density theorem, choose a density point $a$ of $A$ and a density point $b$ of $A^c$.
+Approximate identities recover characteristic functions at density points, so
 \[
 u_\varepsilon(a)\longrightarrow1,
 \qquad
@@ -71,7 +74,9 @@ But for every $\varepsilon>0$, the function $u_\varepsilon$ is constant, so
 \[
 u_\varepsilon(a)=u_\varepsilon(b),
 \]
-which is impossible in the limit. Therefore $A$ and $A^c$ cannot both have positive measure. Hence
+which is impossible in the limit.
+Therefore $A$ and $A^c$ cannot both have positive measure.
+Hence
 \[
 \boxed{m(A)=0\text{ or }m(A^c)=0.}
 \]

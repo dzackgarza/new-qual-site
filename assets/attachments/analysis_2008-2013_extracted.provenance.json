@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/analysis_2008-2013.pdf",
+  "source_pdf_sha256": "125be26a4bb973d03a08e718d1f984b4663e05f8cd49f3afd6fe92a6e01c81ba",
+  "extracted_markdown": "assets/attachments/analysis_2008-2013_extracted.md",
+  "extracted_markdown_sha256": "439ac67d09d4deb25aea38cb317cd2d6f263ef59e67b16fda6e030e0e2b1d0bb",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract assets/attachments/analysis_2008-2013.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/analysis_2008-2013.pdf --language en --pages 21-27"
+  ],
+  "assembly": "The two Flash Markdown outputs were concatenated in page order without normalization or semantic rewriting.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "different from assets/attachments/extracted/analysis_2008-2013.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "reconciliation": "The packet contains 122 numbered source positions across fourteen sittings: real analysis and complex analysis for 2008, 2009, 2010, 2011, 2012, June 2013, and supplemental/August 2013. Exact repeated obligations reuse canonical cards. Specific unresolved Flash defects are recorded on the affected cards rather than silently corrected."
+}
