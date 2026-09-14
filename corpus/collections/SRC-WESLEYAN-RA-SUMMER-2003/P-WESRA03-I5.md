@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Short Answer Question 5 of the Wesleyan Preliminary Exam in Analysis, August 4, 2003, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Short Answer Question 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,7 +22,9 @@ audit:
 ---
 
 ::: problem
-Let $E\subset\mathbb R$ be Lebesgue measurable with $m(E)<\infty$. Suppose $(f_n)$ is a uniformly bounded sequence of real-valued measurable functions on $E$ and $f_n(x)\to f(x)$ for every $x\in E$. What relationship holds between $\int_Ef_n\,dm$ and $\int_Ef\,dm$?
+Let $E\subset\mathbb R$ be Lebesgue measurable with $m(E)<\infty$.
+Suppose $(f_n)$ is a uniformly bounded sequence of real-valued measurable functions on $E$ and $f_n(x)\to f(x)$ for every $x\in E$.
+What relationship holds between $\int_Ef_n\,dm$ and $\int_Ef\,dm$?
 :::
 
 ::: solution
@@ -35,7 +37,8 @@ Then also $|f(x)|\le M$, and
 \[
 M\mathbf1_E\in L^1(\mathbb R)
 \]
-because $m(E)<\infty$. The Dominated Convergence Theorem therefore gives
+because $m(E)<\infty$.
+The Dominated Convergence Theorem therefore gives
 \[
 \boxed{\lim_{n\to\infty}\int_E f_n\,dm=\int_E f\,dm.}
 \]

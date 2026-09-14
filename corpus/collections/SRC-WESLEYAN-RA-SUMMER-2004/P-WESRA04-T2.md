@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.1, item 2 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis section 2.1, item 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -26,7 +26,8 @@ State the Radon--Nikodym theorem.
 :::
 
 ::: solution
-Let $(X,\mathcal A)$ be a measurable space, and let $\mu$ and $\nu$ be sigma-finite positive measures on it. If
+Let $(X,\mathcal A)$ be a measurable space, and let $\mu$ and $\nu$ be sigma-finite positive measures on it.
+If
 \[
 \mu\ll\nu,
 \]

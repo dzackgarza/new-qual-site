@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.3, problem 6 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis section 2.3, problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -26,7 +26,8 @@ Prove that $L^\infty(X,\mathcal B,\mu)$ is complete in the $L^\infty$ norm.
 :::
 
 ::: solution
-Let $(f_n)$ be Cauchy in $L^\infty$. Choose a subsequence $(f_{n_k})$ such that
+Let $(f_n)$ be Cauchy in $L^\infty$.
+Choose a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_{k+1}}-f_{n_k}\|_\infty<2^{-k}
 \qquad(k\ge1).
@@ -39,13 +40,15 @@ Let
 \[
 N=\bigcup_{k=1}^\infty N_k.
 \]
-Then $\mu(N)=0$. For $x\notin N$ and $m>k$,
+Then $\mu(N)=0$.
+For $x\notin N$ and $m>k$,
 \[
 |f_{n_m}(x)-f_{n_k}(x)|
 \le\sum_{j=k}^{m-1}2^{-j}
 \le2^{1-k}.
 \]
-Thus $(f_{n_k})$ is uniformly Cauchy on $X\setminus N$. Define
+Thus $(f_{n_k})$ is uniformly Cauchy on $X\setminus N$.
+Define
 \[
 f(x)=\lim_{k\to\infty}f_{n_k}(x)
 \quad(x\notin N),
@@ -53,7 +56,8 @@ f(x)=\lim_{k\to\infty}f_{n_k}(x)
 f(x)=0
 \quad(x\in N).
 \]
-Then $f$ is measurable. Moreover, for $x\notin N$,
+Then $f$ is measurable.
+Moreover, for $x\notin N$,
 \[
 |f(x)-f_{n_k}(x)|\le2^{1-k},
 \]

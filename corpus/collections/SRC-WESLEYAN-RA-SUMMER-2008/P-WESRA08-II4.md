@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked visually against Problem 4 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf. The source itself prints f in the displayed integrand although the statement concerns the sequence f_n; the card corrects this evident source typo to f_n.
+  date: 2026-09-14
+  note: Checked against the exact Part II, Problem 3 occurrence in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. This event certifies the 2003 occurrence only; it does not recertify the separate 2008 source.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -22,7 +22,8 @@ audit:
 ---
 
 ::: problem
-Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)<\infty$. Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure if and only if
+Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)<\infty$.
+Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure if and only if
 \[
 \lim_{n\to\infty}
 \int_X \frac{|f_n|}{1+|f_n|}\,d\mu=0.
@@ -38,13 +39,16 @@ Set
 
 <1>1. Convergence in measure implies convergence of the integrals.
 ::: proof
-Assume $f_n\to0$ in measure. Fix $\varepsilon>0$. If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
+Assume $f_n\to0$ in measure.
+Fix $\varepsilon>0$.
+If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
 
 Choose $\delta>0$ so that
 \[
 \delta\mu(X)<\frac\varepsilon2.
 \]
-Split $X$ into the sets where $|f_n|\le\delta$ and $|f_n|>\delta$. Since $0\le\Phi(t)\le t$ and $\Phi(t)\le1$,
+Split $X$ into the sets where $|f_n|\le\delta$ and $|f_n|>\delta$.
+Since $0\le\Phi(t)\le t$ and $\Phi(t)\le1$,
 \[
 \begin{aligned}
 \int_X\Phi(|f_n|)\,d\mu
@@ -67,7 +71,8 @@ Assume
 \[
 \int_X\Phi(|f_n|)\,d\mu\longrightarrow0.
 \]
-Fix $\eta>0$. On the set $\{|f_n|>\eta\}$, monotonicity of $\Phi$ gives
+Fix $\eta>0$.
+On the set $\{|f_n|>\eta\}$, monotonicity of $\Phi$ gives
 \[
 \Phi(|f_n|)\ge \frac{\eta}{1+\eta}.
 \]

@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked against Part II, item 1 of the Real Analysis section of the Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Part II, item 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,7 +22,8 @@ audit:
 ---
 
 ::: problem
-Let $(X,\mathcal A,\mu)$ be a measure space and let $A_1\subseteq A_2\subseteq\cdots$ be measurable. Prove that
+Let $(X,\mathcal A,\mu)$ be a measure space and let $A_1\subseteq A_2\subseteq\cdots$ be measurable.
+Prove that
 \[
 \mu\!\left(\bigcup_{n=1}^\infty A_n\right)=\lim_{n\to\infty}\mu(A_n).
 \]
@@ -30,7 +31,8 @@ Give an example showing that the corresponding statement for decreasing sequence
 :::
 
 ::: solution
-For $n\ge2$ set $B_n=A_n\setminus A_{n-1}$ and set $B_1=A_1$. Then the $B_n$ are pairwise disjoint and
+For $n\ge2$ set $B_n=A_n\setminus A_{n-1}$ and set $B_1=A_1$.
+Then the $B_n$ are pairwise disjoint and
 \[
 A_n=\bigcup_{k=1}^n B_k,
 \qquad

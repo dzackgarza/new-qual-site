@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Problem 3 of the scanned Wesleyan Real Analysis Preliminary Examination, 2006, in analysis_2003-2007.pdf. The source value is genuinely sum_n mu(A_n)=55.
+  date: 2026-09-14
+  note: Checked against Real Analysis Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. Flash reproduces the printed hypothesis sum_n mu(A_n)=55.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,25 +22,31 @@ audit:
 ---
 
 ::: problem
-Let $\Omega$ be a nonempty set, let $\mathcal A$ be a sigma-algebra on $\Omega$, and let $A_1,A_2,\ldots\in\mathcal A$. Let
+Let $\Omega$ be a nonempty set, let $\mathcal A$ be a sigma-algebra on $\Omega$, and let $A_1,A_2,\ldots\in\mathcal A$.
+Let
 \[
 \overline A=\{\omega\in\Omega:\omega\text{ belongs to infinitely many }A_n\}.
 \]
 
 1. Prove that $\overline A\in\mathcal A$.
+
 2. If $\mu$ is a finite measure and
    \[
    \sum_{n=1}^\infty\mu(A_n)=55,
    \]
    determine $\mu(\overline A)$.
-3. Let $f(\omega)$ be the number of sets $A_n$ containing $\omega$, with $f(\omega)=\infty$ when $\omega\in\overline A$. Prove that $f$ is measurable and, under the hypothesis in part 2, integrable.
+
+3. Let $f(\omega)$ be the number of sets $A_n$ containing $\omega$, with $f(\omega)=\infty$ when $\omega\in\overline A$.
+   Prove that $f$ is measurable and, under the hypothesis in part 2, integrable.
+
 4. For normalized Lebesgue measure on $[0,1]$, compute the measure of the set of numbers whose first even digit in their decimal expansion is either $4$ or $8$.
 :::
 
 ::: solution
 <1>1. Express the infinitely-often set by countable unions and intersections.
 ::: proof
-A point belongs to infinitely many $A_n$ exactly when, for every $N$, it belongs to at least one $A_n$ with $n\ge N$. Hence
+A point belongs to infinitely many $A_n$ exactly when, for every $N$, it belongs to at least one $A_n$ with $n\ge N$.
+Hence
 \[
 \overline A
 =\bigcap_{N=1}^\infty\bigcup_{n=N}^\infty A_n.
@@ -77,7 +83,8 @@ Each $f_N$ is measurable and
 \[
 f_N(\omega)\uparrow f(\omega)
 \]
-for every $\omega$. Therefore $f$ is measurable as the pointwise limit of measurable functions.
+for every $\omega$.
+Therefore $f$ is measurable as the pointwise limit of measurable functions.
 
 By the Monotone Convergence Theorem,
 \[
@@ -94,9 +101,11 @@ Hence
 
 <1>4. Compute the decimal-digit event.
 ::: proof
-Ignore the countable set of numbers having two decimal expansions; it has Lebesgue measure zero. For the remaining numbers, the decimal digits are independent and each digit $0,1,\ldots,9$ has probability $1/10$ under normalized Lebesgue measure.
+Ignore the countable set of numbers having two decimal expansions; it has Lebesgue measure zero.
+For the remaining numbers, the decimal digits are independent and each digit $0,1,\ldots,9$ has probability $1/10$ under normalized Lebesgue measure.
 
-The first even digit is $4$ or $8$ exactly when there are some number $k-1\ge0$ of initial odd digits, followed by either $4$ or $8$. The probability of an odd digit is
+The first even digit is $4$ or $8$ exactly when there are some number $k-1\ge0$ of initial odd digits, followed by either $4$ or $8$.
+The probability of an odd digit is
 \[
 \frac5{10}=\frac12,
 \]

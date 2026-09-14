@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked against Part II, item 3 of the Real Analysis section of the Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Part II, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. Flash misrecognizes the measure symbol in m(B)=t, but the same statement defines m(A)>0 and asks for a subset of prescribed measure; the card normalizes that concrete extraction defect.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,7 +22,8 @@ audit:
 ---
 
 ::: problem
-Let $A\subset\mathbb R^2$ be Lebesgue measurable with $m(A)>0$. Prove that for every
+Let $A\subset\mathbb R^2$ be Lebesgue measurable with $m(A)>0$.
+Prove that for every
 \[
 0<t<m(A)
 \]
@@ -30,7 +31,8 @@ there is a measurable subset $B\subset A$ with $m(B)=t$.
 :::
 
 ::: solution
-Fix $0<t<m(A)$. Since
+Fix $0<t<m(A)$.
+Since
 \[
 A=\bigcup_{N=1}^\infty \bigl(A\cap[-N,N]^2\bigr)
 \]
@@ -48,13 +50,16 @@ For $s\in\mathbb R$, define
 \[
 F(s)=m\bigl(E\cap(( -\infty,s]\times\mathbb R)\bigr).
 \]
-Then $F(s)=0$ for $s<-N$ and $F(s)=m(E)>t$ for $s\ge N$. Moreover $F$ is continuous. Indeed, if $s_j\to s$, then
+Then $F(s)=0$ for $s<-N$ and $F(s)=m(E)>t$ for $s\ge N$.
+Moreover $F$ is continuous.
+Indeed, if $s_j\to s$, then
 \[
 \mathbf1_{E\cap(( -\infty,s_j]\times\mathbb R)}
 \longrightarrow
 \mathbf1_{E\cap(( -\infty,s]\times\mathbb R)}
 \]
-for every point outside the vertical line $\{s\}\times\mathbb R$, which has two-dimensional Lebesgue measure zero. Since the indicators are bounded by the integrable function $\mathbf1_E$, dominated convergence gives $F(s_j)\to F(s)$.
+for every point outside the vertical line $\{s\}\times\mathbb R$, which has two-dimensional Lebesgue measure zero.
+Since the indicators are bounded by the integrable function $\mathbf1_E$, dominated convergence gives $F(s_j)\to F(s)$.
 
 By the intermediate value theorem, there is $s_0\in[-N,N]$ such that
 \[

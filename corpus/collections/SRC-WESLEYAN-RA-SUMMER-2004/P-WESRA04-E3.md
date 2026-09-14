@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.2, item 3 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis section 2.2, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -25,6 +25,7 @@ audit:
 Give examples of
 
 1. a real-valued function in $L^2(\mathbb R)$ but not in $L^3(\mathbb R)$;
+
 2. a real-valued function in $L^3(\mathbb R)$ but not in $L^2(\mathbb R)$.
 :::
 

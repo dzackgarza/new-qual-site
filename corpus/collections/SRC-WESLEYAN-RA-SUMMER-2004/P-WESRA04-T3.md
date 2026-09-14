@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.1, item 3 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis section 2.1, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -26,7 +26,8 @@ State a theorem describing how Lebesgue measurable functions on $[0,1]$ can be a
 :::
 
 ::: solution
-One standard answer is Lusin's theorem. If $f:[0,1]\to\mathbb R$ is Lebesgue measurable and finite almost everywhere, then for every $\varepsilon>0$ there exists a compact set $K\subset[0,1]$ such that
+One standard answer is Lusin's theorem.
+If $f:[0,1]\to\mathbb R$ is Lebesgue measurable and finite almost everywhere, then for every $\varepsilon>0$ there exists a compact set $K\subset[0,1]$ such that
 \[
 m([0,1]\setminus K)<\varepsilon
 \]

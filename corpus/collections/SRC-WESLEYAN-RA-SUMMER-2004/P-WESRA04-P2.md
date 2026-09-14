@@ -9,10 +9,6 @@ classification:
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.3, problem 2 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf. The source notation T_a^b denotes total variation on [a,b].
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,7 +18,8 @@ audit:
 ---
 
 ::: problem
-Let $(f_n)$ be a sequence of functions on $[a,b]$ converging pointwise to $f$. If $T_a^b(h)$ denotes the total variation of $h$ on $[a,b]$, prove that
+Let $(f_n)$ be a sequence of functions on $[a,b]$ converging pointwise to $f$.
+If $T_a^b(h)$ denotes the total variation of $h$ on $[a,b]$, prove that
 \[
 T_a^b(f)\le \liminf_{n\to\infty}T_a^b(f_n).
 \]
@@ -51,7 +48,8 @@ V_P(f)
 =\lim_{n\to\infty}V_P(f_n)
 \le \liminf_{n\to\infty}T_a^b(f_n).
 \]
-The right-hand side is independent of $P$. Taking the supremum over all partitions yields
+The right-hand side is independent of $P$.
+Taking the supremum over all partitions yields
 \[
 T_a^b(f)
 =\sup_P V_P(f)

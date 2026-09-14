@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/analysis_2003-2007.pdf",
+  "source_pdf_sha256": "cea6ea4cf64d6c67dd3f2971699fb0b990e9363da92e4f9c090e278b6a003915",
+  "extracted_markdown": "assets/attachments/analysis_2003-2007_extracted.md",
+  "extracted_markdown_sha256": "c5937e949a102ba2ba76215751b49a43d9261339d66fa5a772c625fbe3028ba3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract assets/attachments/analysis_2003-2007.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/analysis_2003-2007.pdf --language en --pages 21-38"
+  ],
+  "assembly": "The two Flash Markdown outputs were concatenated in page order without normalization or semantic rewriting.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "The fresh Flash extraction differs from assets/attachments/extracted/analysis_2003-2007.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "real_analysis_reconciliation": "The compilation has 45 unique real-analysis source positions: 15 in 2003, 12 in 2004, 3 in 2005, 3 in 2006, and 12 in 2007. The 2006 real-analysis exam is duplicated verbatim in the packet. Four previously missing 2003 Part II owners were added and Part II Problem 3 reuses P-WESRA08-II4. Four retained cards have no Flash source-check event because the deterministic extraction does not settle a specific glyph or omitted expression: P-WESRA03-I9, P-WESRA04-P2, P-WESRA05-2, and P-WESRA07-II2.",
+  "complex_analysis_reconciliation": "The compilation has 50 complex-analysis source positions: 13 in 2004, 13 in 2005, 11 in 2006, and 13 in 2007. Four new Wesleyan complex-analysis collections represent all positions. Exact repeated prompts reuse earlier Wesleyan owners within the packet; 2004 Problem 6 reuses P-JHUU45CA1 and 2006 Problem 4 reuses P-EMCA9 rather than duplicating existing canonical statements."
+}

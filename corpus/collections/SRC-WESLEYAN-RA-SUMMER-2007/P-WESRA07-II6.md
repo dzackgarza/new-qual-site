@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Part II, item 6 of the scanned Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf. The source itself prints ||f|| = integral f dm, with no absolute value. Thus the claim that this is a norm is false as printed; this is not an OCR omission.
+  date: 2026-09-14
+  note: Checked against Part II, item 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md. Flash explicitly prints the functional as integral f dm without absolute values; the card preserves and diagnoses that printed defect.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -29,9 +29,12 @@ The source defines, for $f\in C([0,1],\mathbb R)$,
 and asks:
 
 1. Explain why this defines a norm on $C([0,1])$.
+
 2. Is $C([0,1])$ complete with respect to this norm?
 
-Is the printed claim valid? If not, identify the defect. For comparison, also answer the completeness question for the likely corrected formula
+Is the printed claim valid?
+If not, identify the defect.
+For comparison, also answer the completeness question for the likely corrected formula
 \[
 \|f\|_1:=\int_0^1|f|\,dm.
 \]
@@ -40,7 +43,8 @@ Is the printed claim valid? If not, identify the defect. For comparison, also an
 ::: solution
 <1>1. The printed formula does not define a norm.
 ::: proof
-A norm must be nonnegative. For the continuous function $f\equiv-1$,
+A norm must be nonnegative.
+For the continuous function $f\equiv-1$,
 \[
 \int_0^1 f\,dm=-1<0.
 \]
@@ -65,7 +69,8 @@ The functional
 \[
 \|f\|_1=\int_0^1|f(x)|\,dx
 \]
-is a norm on $C([0,1])$: homogeneity and the triangle inequality are immediate, and if $\|f\|_1=0$, then $|f|=0$ almost everywhere. Since $f$ is continuous, this forces $f\equiv0$.
+is a norm on $C([0,1])$: homogeneity and the triangle inequality are immediate, and if $\|f\|_1=0$, then $|f|=0$ almost everywhere.
+Since $f$ is continuous, this forces $f\equiv0$.
 
 To see incompleteness, let
 \[
@@ -77,13 +82,16 @@ h_n(x)=0\quad(x\le 1/2-1/n),
 \qquad
 h_n(x)=1\quad(x\ge1/2+1/n),
 \]
-and interpolate linearly on the interval between these two points. Then
+and interpolate linearly on the interval between these two points.
+Then
 \[
 \|h_n-h\|_1\le\frac2n\longrightarrow0.
 \]
 Thus $(h_n)$ is Cauchy in the $L^1$ norm.
 
-If it converged in that norm to some $g\in C([0,1])$, uniqueness of $L^1$ limits would give $g=h$ almost everywhere. Continuity would then force $g=0$ on $(0,1/2)$ and $g=1$ on $(1/2,1)$, which is impossible at $x=1/2$. Hence no continuous $L^1$ limit exists.
+If it converged in that norm to some $g\in C([0,1])$, uniqueness of $L^1$ limits would give $g=h$ almost everywhere.
+Continuity would then force $g=0$ on $(0,1/2)$ and $g=1$ on $(1/2,1)$, which is impossible at $x=1/2$.
+Hence no continuous $L^1$ limit exists.
 
 Therefore, for the corrected norm,
 \[

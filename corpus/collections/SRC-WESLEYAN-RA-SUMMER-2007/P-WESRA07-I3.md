@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked against Part I, item 3 of the Real Analysis section of the Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Part I, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -31,7 +31,8 @@ We say that $f_n$ converges to $f$ almost uniformly if for every $\varepsilon>0$
 \[
 \mu(E)<\varepsilon
 \]
-and $f_n\to f$ uniformly on $X\setminus E$. Equivalently, for every $\varepsilon>0$ there is $E\in\mathcal A$ with $\mu(E)<\varepsilon$ such that
+and $f_n\to f$ uniformly on $X\setminus E$.
+Equivalently, for every $\varepsilon>0$ there is $E\in\mathcal A$ with $\mu(E)<\varepsilon$ such that
 \[
 \boxed{\sup_{x\in X\setminus E}|f_n(x)-f(x)|\longrightarrow0.}
 \]

@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Short Answer Question 8 of the Wesleyan Preliminary Exam in Analysis, August 4, 2003, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Short Answer Question 8 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,14 +22,16 @@ audit:
 ---
 
 ::: problem
-Let $\mu$ be a measure and let $F_1\supseteq F_2\supseteq\cdots$ be measurable. Is it always true that
+Let $\mu$ be a measure and let $F_1\supseteq F_2\supseteq\cdots$ be measurable.
+Is it always true that
 \[
 \mu\!\left(\bigcap_{n=1}^\infty F_n\right)=\lim_{n\to\infty}\mu(F_n)?
 \]
 :::
 
 ::: solution
-No, not without a finiteness hypothesis. For Lebesgue measure on $\mathbb R$, let
+No, not without a finiteness hypothesis.
+For Lebesgue measure on $\mathbb R$, let
 \[
 F_n=[n,\infty).
 \]

@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Problem 3 of the scanned Wesleyan Real Analysis Preliminary Examination, 2005, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -25,8 +25,11 @@ audit:
 Let $B$ be a real vector space.
 
 1. Define a norm on $B$.
+
 2. Give the metric induced by a norm and prove that it is a metric.
+
 3. Define a Banach space.
+
 4. State the Uniform Boundedness Theorem for a family of bounded linear maps from the Banach space $B$ to a normed space $N$, and explain the main idea of its proof.
 :::
 
@@ -73,7 +76,8 @@ A normed vector space is a Banach space if it is complete for the metric induced
 
 <1>4. State Uniform Boundedness.
 ::: proof
-Let $B$ be Banach, let $N$ be normed, and let $\mathcal T$ be a family of bounded linear operators $T:B\to N$. If for every $x\in B$,
+Let $B$ be Banach, let $N$ be normed, and let $\mathcal T$ be a family of bounded linear operators $T:B\to N$.
+If for every $x\in B$,
 \[
 \sup_{T\in\mathcal T}\|Tx\|<\infty,
 \]
@@ -90,7 +94,8 @@ For $m\in\mathbb N$, set
 \[
 E_m=\left\{x\in B:\sup_{T\in\mathcal T}\|Tx\|\le m\right\}.
 \]
-Each $E_m$ is closed, because it is the intersection over $T\in\mathcal T$ of the closed sets $\{x:\|Tx\|\le m\}$. Pointwise boundedness says
+Each $E_m$ is closed, because it is the intersection over $T\in\mathcal T$ of the closed sets $\{x:\|Tx\|\le m\}$.
+Pointwise boundedness says
 \[
 B=\bigcup_{m=1}^\infty E_m.
 \]

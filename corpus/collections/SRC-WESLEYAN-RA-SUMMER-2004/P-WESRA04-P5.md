@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Real Analysis section 2.3, problem 5 of the Wesleyan Preliminary Examination, August 2, 2004, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis section 2.3, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -22,11 +22,13 @@ audit:
 ---
 
 ::: problem
-Let $f,g$ be integrable functions on a measure space $(X,\mathcal B,\mu)$. Suppose that
+Let $f,g$ be integrable functions on a measure space $(X,\mathcal B,\mu)$.
+Suppose that
 \[
 \int_A f\,d\mu=\int_A g\,d\mu
 \]
-for every $A\in\mathcal B$. Prove that $f=g$ almost everywhere.
+for every $A\in\mathcal B$.
+Prove that $f=g$ almost everywhere.
 :::
 
 ::: solution
@@ -48,7 +50,8 @@ If $\mu(E_n)>0$, then
 0=\int_{E_n}h\,d\mu
 \ge \frac1n\mu(E_n)>0,
 \]
-a contradiction. Hence every $E_n$ is null, so
+a contradiction.
+Hence every $E_n$ is null, so
 \[
 \mu\{h>0\}=0.
 \]

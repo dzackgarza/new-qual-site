@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked directly against Problem 1 of the scanned Wesleyan Real Analysis Preliminary Examination, 2006, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Real Analysis Problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -25,8 +25,11 @@ audit:
 Let $(X,d)$ be a metric space.
 
 1. Define a Cauchy sequence in $(X,d)$.
+
 2. Prove that every convergent sequence in $(X,d)$ is Cauchy.
+
 3. Define completeness of $(X,d)$.
+
 4. State one form of Baire's category theorem.
 :::
 
@@ -41,7 +44,8 @@ m,n\ge N\quad\Longrightarrow\quad d(x_m,x_n)<\varepsilon.
 
 <1>2. Every convergent sequence is Cauchy.
 ::: proof
-Suppose $x_n\to x\in X$. Given $\varepsilon>0$, choose $N$ such that
+Suppose $x_n\to x\in X$.
+Given $\varepsilon>0$, choose $N$ such that
 \[
 n\ge N\quad\Longrightarrow\quad d(x_n,x)<\frac\varepsilon2.
 \]
