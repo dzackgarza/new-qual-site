@@ -124,7 +124,8 @@ External links that are not vendored remain on the resource pages until a delibe
   Reconciled all 11 source positions in source order into `SRC-TOP-WORKSHOP`: five exact canonical reuses (`P-TOP-WORKSHOP-HR-W1`, `P-TOP-WORKSHOP-HR-W2`, `P-TOPSU15C`, `P-5AXU3`, `P-TOP-WORKSHOP-HR-05`) plus six source-local cards under `legacy-qual-problems-homotopy/`.
   MinerU's dropped-arrow and malformed-presentation defects are recorded in provenance; no fallback extraction path was used. The inventory's `0 problems` and `alg-geom` labels were stale heuristics.
 
-- [ ] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/extracted/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.md) (179L, 16 problems) — alg-geom **OCR: image placeholders**
+- [ ] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md) (178L, 107 Hatcher references + 16 practice problems) — topology — **BLOCKED 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown. The review sheet now has collection `SRC-QUAL-REVIEW-HATCHER`: 106 current Hatcher exercise selections reuse canonical `SRC-TEXT-HAT02` cards, while the sheet's §2.2 Exercise 34 reference is recorded but has no current card because Hatcher's errata withdrew that exercise; §2.2 Exercise 43(a) is represented by whole-exercise card `E-HAT-2.2-43` with the part-(a)-only selection documented.
+  Thirteen of the sixteen additional practice problems are source-local cards. Practice problem 4 has an unresolved `S^4`/four-coordinate inconsistency in the deterministic text, and problems 6–7 depend on a figure emitted only as an image placeholder, so no repaired statements were invented. The inventory's `alg-geom` label was stale.**
 
 - [ ] [s04.pdf](assets/attachments/extracted/s04.md) (89L, 3 problems) — applied-algebra
 
