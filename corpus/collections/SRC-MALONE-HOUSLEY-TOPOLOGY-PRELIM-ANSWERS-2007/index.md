@@ -72,6 +72,18 @@ source:
     - P-MH07-AUG06-14
     - P-MH07-AUG06-15
     - P-MH07-AUG06-16
+  - name: January 2006
+    problems:
+    - P-MH07-JAN06-01
+    - P-MH07-JAN06-02
+    - id: P-MH07-AUG05-07
+      comment: January 2006 Problem 3; the retained extraction drops the final superscript on $\mathbb R^2$, while the same problem is printed completely as August 2005 Problem 7
+    - P-MH07-JAN06-04
+    - P-MH07-JAN06-05
+    - P-MH07-JAN06-06
+    - P-MH07-JAN06-07
+    - P-MH07-JAN06-08
+    - P-MH07-JAN06-09
   - name: August 2005
     problems:
     - P-MH07-AUG05-01
@@ -89,5 +101,5 @@ source:
 ---
 
 ::: remark
-Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. The complete Math 6520 Final Exam, January 2007, Math 6510 Final Exam, August 2006, and embedded August 2005 sections are reconciled here; the collection remains incomplete and the Queue-E source must stay open until the January 2006 and January 2005 material is represented.
+Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. Math 6520 Final Exam, January 2007, Math 6510 Final Exam, August 2006, January 2006, and the embedded August 2005 block are now represented. January 2006 Problem 9 is explicitly unrecovered beyond the covering-space-classification preamble because the retained packet truncates it. The collection remains incomplete until the January 2005 chapter is represented.
 :::
