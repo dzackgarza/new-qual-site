@@ -146,7 +146,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring93.pdf](assets/attachments/extracted/Spring93.md) (79L, 2 problems) — applied-algebra — Spring 19
 
-- [ ] [Spring99.pdf](assets/attachments/extracted/Spring99.md) (66L, 12 problems) — complex-analysis — Spring 19
+- [x] [Spring99.pdf](assets/attachments/extracted/Spring99.md) (66L, 12 problems) — Berkeley — prelim — Spring 1999 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SPRING-1999`, with all 18 source-order problems represented by source-local cards. Problem 8's displayed polynomial matrix loses its third row in every retained extraction; that source gap is explicit on `P-BKS99-08` rather than reconstructed. The inventory's `12 problems`, `complex-analysis`, and truncated `Spring 19` labels were stale heuristic metadata.
 
 - [x] [squal1.pdf](assets/attachments/extracted/squal1.md) (25L, 8 problems) — topology — undated qualifying exam — disposition 2026-09-14: ingested as neutral collection `SRC-TOP-SQUAL1`, with all eight source-order problems represented by source-local cards. Neither the retained extraction nor the original qual-wiki resource page identifies an institution or date, so none was inferred.
 
