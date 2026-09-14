@@ -72,11 +72,22 @@ source:
     - P-MH07-AUG06-14
     - P-MH07-AUG06-15
     - P-MH07-AUG06-16
+  - name: August 2005
+    problems:
+    - P-MH07-AUG05-01
+    - P-MH07-AUG05-02
+    - P-MH07-AUG05-03
+    - P-MH07-AUG05-04
+    - P-MH07-AUG05-05
+    - P-MH07-AUG05-06
+    - P-MH07-AUG05-07
+    - id: P-MH07-AUG06-05
+      comment: August 2005 Problem 8; repeated exactly as August 2006 Problem 5
   date:
     kind: year
     year: 2007
 ---
 
 ::: remark
-Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. The complete Math 6520 Final Exam, January 2007, Math 6510 Final Exam, and August 2006 chapters are reconciled here in source order; the collection remains incomplete and the Queue-E source must stay open until the January 2006 and January 2005 chapters are represented.
+Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. The complete Math 6520 Final Exam, January 2007, Math 6510 Final Exam, August 2006, and embedded August 2005 sections are reconciled here; the collection remains incomplete and the Queue-E source must stay open until the January 2006 and January 2005 material is represented.
 :::
