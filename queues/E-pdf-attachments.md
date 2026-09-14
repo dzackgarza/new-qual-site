@@ -152,7 +152,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [squal2.pdf](assets/attachments/extracted/squal2.md) (22L, 8 problems) — topology
 
-- [ ] [Summer83.pdf](assets/attachments/extracted/Summer83.md) (103L, 2 problems) — applied-algebra — Summer 19
+- [x] [Summer83.pdf](assets/attachments/extracted/Summer83.md) (103L, 2 problems) — Berkeley — prelim — Summer 1983 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SUMMER-1983`, with all 20 source-order problems represented by 17 new source-local cards plus exact canonical reuse of `P-BKS84-1` for Problem 7, `P-BKF18-3B` for Problem 12, and `P-BKF96-14` for Problem 15. The inventory's `2 problems`, `applied-algebra`, and truncated `Summer 19` labels were stale heuristic metadata.
 
 - [x] [Summer85.pdf](assets/attachments/extracted/Summer85.md) (117L, 7 problems) — Berkeley — prelim — Summer 1985 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SUMMER-1985`, with all 20 source-order problems represented by 18 new source-local cards plus exact canonical reuse of `P-BKF89-13` for Problem 12 and `P-BKF83-2` for Problem 14. The inventory's `7 problems`, `applied-algebra`, and truncated `Summer 19` labels were stale heuristic metadata.
 
