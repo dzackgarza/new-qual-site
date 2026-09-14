@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/Complex_Analysis_Exam_Prep_Solutions.pdf",
+  "source_pdf_sha256": "ea6bc79626328486884e73835950a9ae31a39ffd0b93d5ecabdcaaf43f136bfb",
+  "extracted_markdown": "assets/attachments/Complex_Analysis_Exam_Prep_Solutions_extracted.md",
+  "extracted_markdown_sha256": "fc7b375d1e588b9fdfd8a57bd6082bcb60d21957008512c4f71313ff7a174ddb",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Complex_Analysis_Exam_Prep_Solutions.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Complex_Analysis_Exam_Prep_Solutions.md",
+  "card_comparison": "All sixteen numbered practice problems were compared against this baseline. P-CAEXAMPREP-07 restores the source hint's radius-one-ball parenthetical and P-CAEXAMPREP-09 restores the source hints for parts (a) and (b); the other fourteen problem statements match."
+}

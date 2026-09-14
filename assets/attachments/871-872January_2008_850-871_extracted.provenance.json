@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/871-872January_2008_850-871.pdf",
+  "source_pdf_sha256": "df3dc73f1a34daa9db3a1ea3ccc5203139467ac441af1841b1e046c87bb9b0f9",
+  "extracted_markdown": "assets/attachments/871-872January_2008_850-871_extracted.md",
+  "extracted_markdown_sha256": "04f0e76086c4e8740bc7cecfe4f76f7918fe3b88198ff563650224b1a2b99a37",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/871-872January_2008_850-871.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/871-872January_2008_850-871.md",
+  "card_comparison": "All nine source questions were reconciled against this baseline: six owned cards and three reused canonical topology cards match the extracted statements."
+}

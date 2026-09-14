@@ -11,12 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-12
-  note: Checked against Question 3 of the retained June 2004 UNL Mathematics Qualifying Exam 970/852 PDF.
-- event: source-checked
-  by: gpt-5.6-sol
   date: 2026-09-14
-  note: Restored the two containment targets U and V from the retained exam PDF; the earlier extraction had corrupted them as \mathcal U and \nu.
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/day_3_sep_counterex_defn_extracted.md, which reproduces June 2004 A3 with containment targets U and V; the retained old exam extraction had corrupted them as \mathcal U and \nu.
 ---
 
 ::: {.problem}
