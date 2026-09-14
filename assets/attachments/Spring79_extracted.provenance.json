@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring79.pdf",
+  "source_pdf_sha256": "cb5124bf418fb284bcd30147d0e609611d95f8682c259dd8a04a867541c62955",
+  "extracted_markdown": "assets/attachments/Spring79_extracted.md",
+  "extracted_markdown_sha256": "be2d9688ee4fbbcb0822ea9e997dfa02ea9a37a825d20bba06b04435c8022709",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring79.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Spring79.md",
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1979, containing Problems 1-20 in source order.",
+  "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SPRING-1979 represents all twenty source positions in order by nineteen source-local cards plus exact canonical reuse of P-BERK97S-08 for Problem 11. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 8's matrix-size glyph is rendered as an unreadable B-by-B-like symbol in the deterministic extraction; the existing card states only that M is a nonsingular real square matrix and does not infer a dimension.",
+    "Problem 13's displayed initial-condition equation has a 3-by-3 matrix acting on a three-entry initial vector but Flash renders the right-hand side as a two-entry zero column. The existing card preserves the unrecovered right-hand side explicitly rather than inventing it."
+  ]
+}
