@@ -130,7 +130,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [solution4.pdf](assets/attachments/extracted/solution4.md) (693L, 0 problems) — applied-algebra **OCR: image placeholders**
 
-- [ ] [solution5.pdf](assets/attachments/extracted/solution5.md) (695L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [solution5.pdf](assets/attachments/extracted/solution5.md) (695L, 0 problems) — Harvard Math 21b — applied-algebra — Spring 2018 Practice Final 5 with solutions — disposition 2026-09-14: ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5`, with all 14 top-level source problems represented by source-local cards. The Harvard Math 21b Spring 2018 resource page establishes course provenance. OCR loses headings for Problems 2, 3, 7, and 13, and Problem 3’s phase-portrait table is incomplete; those source conditions are explicit rather than reconstructed. The inventory’s `0 problems`, `UNL`, and OCR-derived labels were stale heuristic metadata.
 
 - [x] [solution7.pdf](assets/attachments/extracted/solution7.md) (616L, 0 problems) — Harvard Math 21b — applied-algebra — Spring 2018 Practice Final 7 with solutions — disposition 2026-09-14: ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7`, with all 14 top-level source problems represented by source-local cards. The Harvard Math 21b Spring 2018 resource page establishes course provenance. Problem 1 contains an internally inconsistent matrix-rank statement, while Problems 2 and 3 depend on graph/table material not fully recoverable from the retained extraction; those source defects are explicit rather than silently repaired. The inventory’s `0 problems` and OCR-derived labels were stale heuristic metadata.
 
