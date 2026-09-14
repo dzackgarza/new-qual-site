@@ -142,7 +142,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: exact byte duplicate of `Neil_Spring_2019_Solutions.pdf`; its five exam problems are already represented in `SRC-UGA-RA-SPRING-2019`, and the solution packet is not collection provenance.
 
-- [ ] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — algebra — Spring 19
+- [x] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — Berkeley — prelim — Spring 1979 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SPRING-1979`, with all 20 source-order problems represented by 19 new source-local cards plus exact canonical reuse of `P-BERK97S-08` for Problem 11. Problem 8’s matrix-size glyph and Problem 13’s initial-condition right-hand side are unrecovered in every retained extraction and are recorded explicitly rather than reconstructed. The inventory’s `8 problems`, `algebra`, and truncated `Spring 19` labels were stale heuristic metadata.
 
 - [x] [Spring93.pdf](assets/attachments/extracted/Spring93.md) (79L, 2 problems) — Berkeley — prelim — Spring 1993 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SPRING-1993`, with all 18 source-order problems represented by source-local cards. Problem 5 is preserved with its literal homogeneous-boundary wording rather than an inferred nonzero-solution qualifier, and Problem 9's corrupted strip-coordinate glyph is explicitly unrecovered. The inventory's `2 problems`, `applied-algebra`, and truncated `Spring 19` labels were stale heuristic metadata.
 
