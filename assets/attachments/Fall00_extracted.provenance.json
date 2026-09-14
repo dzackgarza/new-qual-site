@@ -1,0 +1,21 @@
+{
+  "source_pdf": "assets/attachments/Fall00.pdf",
+  "source_pdf_sha256": "e59d38b9f161d5e51a63ac9d435a9b5cafd25117d1feb13c58a0fa6de301ca40",
+  "source_pages": 3,
+  "extracted_markdown": "assets/attachments/Fall00_extracted.md",
+  "extracted_markdown_sha256": "44213eefbe685a941305832e7f32adc3c720df807bb35974d9011e20ff029e1c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall00.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall00.md",
+  "old_unknown_provenance_sha256": "44213eefbe685a941305832e7f32adc3c720df807bb35974d9011e20ff029e1c",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 2000, containing Problems 1 through 18 in source order across mixed preliminary-exam subjects.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-2000 collection represents all 18 source positions in order with source-checked cards. No collection path is modified in this intake because the shared collection tree is already authored and complete.",
+  "raw_control_bytes": 0,
+  "known_source_or_extractor_defects": [
+    "Problem 11's infinity symbol for the union over n>=1 is laid out on the preceding line in the raw Flash output. The existing source-checked card already records the source-forced infinite-union reading."
+  ]
+}
