@@ -515,6 +515,14 @@ second transcription pass or a claim that the rest of the extraction has been ve
 deterministic extractor cannot run, intake of that PDF is blocked rather than silently falling
 back to another extraction path.
 
+A genuine source that exists only as a retained raster image is not a separate extraction case.
+Preserve the original image as provenance, wrap it losslessly and deterministically into a PDF
+container, record the image hash and derived-PDF hash, and run the same MinerU Flash extraction on
+that PDF. The conversion step must not OCR, resample, enhance, redraw, or otherwise interpret the
+image. Model vision is still not evidence. If the image itself is missing (for example the lost Anki
+`collection.media` figures), there is nothing to convert or extract; that remains missing-source
+recovery work.
+
 Never extract PDFs to `/tmp`, `.tmp`, or any other temp directory. Temp
 files are not tracked by git and vanish between sessions. Always extract
 into the repository so the output is versioned and persistent.
