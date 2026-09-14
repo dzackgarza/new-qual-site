@@ -43,11 +43,30 @@ source:
     - P-MH07-6510-06
     - P-MH07-6510-07
     - P-MH07-6510-08
+  - name: January 2007
+    problems:
+    - P-MH07-JAN07-01
+    - P-MH07-JAN07-02
+    - P-MH07-JAN07-03
+    - P-MH07-JAN07-04
+    - P-MH07-JAN07-05
+    - P-MH07-JAN07-06
+    - P-MH07-JAN07-07
+    - id: P-MH07-6510-07
+      comment: January 2007 Problem 8; repeated exactly as Math 6510 Final Exam Problem 7
+    - P-MH07-JAN07-09
+    - P-MH07-JAN07-10
+    - P-MH07-JAN07-11
+    - P-MH07-JAN07-12
+    - P-MH07-JAN07-13
+    - P-MH07-JAN07-14
+    - P-MH07-JAN07-15
+    - P-MH07-JAN07-16
   date:
     kind: year
     year: 2007
 ---
 
 ::: remark
-Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. The complete August 2006 and Math 6510 Final Exam chapters are reconciled here so far; the collection remains incomplete and the Queue-E source must stay open until the other four chapters are represented.
+Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. The complete August 2006, Math 6510 Final Exam, and January 2007 chapters are reconciled here so far; the collection remains incomplete and the Queue-E source must stay open until the other three chapters are represented.
 :::
