@@ -16,7 +16,7 @@ order: 20
 
 - [Indian Statistical Institute complex-analysis solutions, 2009–10](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
 
-- [[Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]]
+- [[Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]] — sixteen numbered practice problems with worked solutions, represented in source order by `SRC-COMPLEX-ANALYSIS-EXAM-PREP`.
 
 - [Berkeley Math 185 problem set 7 solutions, Fall 2009](attachments/math185f09-hw7sol.pdf)
 

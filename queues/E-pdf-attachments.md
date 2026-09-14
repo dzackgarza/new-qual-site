@@ -54,7 +54,8 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Chapter-7.pdf](assets/attachments/extracted/Chapter-7.md) (259L, 21 problems) — UNL — complex-analysis **OCR: image placeholders**
 
-- [ ] [Complex_Analysis_Exam_Prep_Solutions.pdf](assets/attachments/extracted/Complex_Analysis_Exam_Prep_Solutions.md) (237L, 14 problems) — complex-analysis
+- [x] [Complex_Analysis_Exam_Prep_Solutions.pdf](assets/attachments/Complex_Analysis_Exam_Prep_Solutions_extracted.md) (236L, 16 problems + worked solutions) — complex-analysis — disposition 2026-09-14: substantive deterministic MinerU Flash v0.5.9 intake is already durable in `511b36954` / `4ea970285`. The fresh baseline is byte-identical to the retained extraction and contains sixteen numbered practice problems, each followed by its worked solution.
+  Complete collection `SRC-COMPLEX-ANALYSIS-EXAM-PREP` represents all sixteen posed problems in source order; source comparison restored omitted hint material in cards 07 and 09. The public complex-analysis solutions resource now records the sixteen-problem structure. The inventory's `14 problems` count was stale.
 
 - [ ] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — UNL — applied-algebra — Spring 19
 
