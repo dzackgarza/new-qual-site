@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall78.pdf",
+  "source_pdf_sha256": "5221109e6748196bdfe93ea3857df241793e655e7607e684151958bfa60ec643",
+  "extracted_markdown": "assets/attachments/Fall78_extracted.md",
+  "extracted_markdown_sha256": "587b2175689f141246c8c1ec61d6f0073355fe1bf91013136f0f0f0c9c5b820b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall78.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall78.md",
+  "card_comparison": "The deterministic extraction contains twenty top-level problems. SRC-BERKELEY-PRELIM-FALL-1978 represents all twenty in source order with nineteen source-local cards and exact reuse of P-RA-WORKSHOP-D2-METRIC-11 for Problem 1.",
+  "known_extractor_defects": [
+    "Problem 7 renders the inequality xH != Hx as the text 'xH 6= Hx'; the card restores the inequality symbol.",
+    "Problem 9 garbles the orthogonality-preservation hypothesis; the card records the deterministic intended implication <x,y>=0 => <Tx,Ty>=0.",
+    "Problem 15 appends the stray token 'ds^2' after the question asking for h'(0); the card omits that extraction artifact."
+  ]
+}

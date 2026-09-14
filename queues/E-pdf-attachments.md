@@ -79,7 +79,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: UGA Fall 2019 Real Analysis; all five problems are already represented in `SRC-UGA-RA-FALL-2019`. This file is byte-identical to `Neil_Fall_2019_Solutions.pdf` (SHA-256 `a3d7d30454ada0b3a1071f234bd5b6a27b22e16cf615769b876fa8894eb2ebbc`), so no duplicate collection or provenance entry is needed.
 
-- [ ] [Fall78.pdf](assets/attachments/extracted/Fall78.md) (103L, 9 problems) — applied-algebra — Fall 19
+- [x] [Fall78.pdf](assets/attachments/Fall78_extracted.md) (103L, 20 problems) — Berkeley — prelim — Fall 1978 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1978` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. All twenty source positions are represented in order by nineteen new source-local cards plus exact canonical reuse of `P-RA-WORKSHOP-D2-METRIC-11` for Problem 1. The three identified Flash defects in Problems 7, 9, and 15 are explicit in provenance and source-check notes. The inventory's `9 problems`, `applied-algebra`, and truncated `Fall 19` labels were stale heuristics.
 
 - [ ] [Fall84.pdf](assets/attachments/extracted/Fall84.md) (171L, 14 problems) — applied-algebra — Fall 19
 
