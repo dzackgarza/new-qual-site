@@ -71,10 +71,11 @@ Ingesting more sources through the pipeline that produced them adds to the popul
 - **`pdf-source-intake`**. **Needs:** none.
   Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
   The queue is the live worklist; do not copy its count or filenames here.
-  For a problem-bearing PDF, create or reconcile the canonical collection and extract or reuse its problem cards with the PDF retained as provenance.
-  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
-  Read the retained extraction and, where extraction is unreliable, the source itself before deciding which case applies.
-  **Acceptance:** Queue E has no unchecked entry; every checked source has either a canonical collection/provenance route with its actual problems represented, or an explicit reference-only disposition justified by the source.
+  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path. An old extraction file with unknown provenance must be regenerated before it can support intake.
+  Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance. Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
+  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count. The same extraction rule applies when claims about the reference's contents depend on reading the PDF.
+  If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
+  **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed deterministic MinerU Flash extraction (or an already-retained extraction with established MinerU provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
   Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
 
 ### Measure solution progress while intake is still growing the denominator

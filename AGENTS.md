@@ -487,13 +487,33 @@ recipe. Its output is committed corpus content; the tool itself is fossil.
 
 ## PDF extraction
 
-The only valid method of PDF extraction is:
+PDF intake has one epistemic baseline: a **deterministic high-quality machine extraction**.
+The only valid method is MinerU Flash:
 
 ```bash
 mineru-open-api flash-extract myfile.pdf --language en
 ```
 
-Do not use `pdftotext`, `pdftoppm`, or any other tools.
+Do not use `pdftotext`, `pdftoppm`, Tesseract, PyMuPDF/`fitz`, PDFium/`pypdfium2`,
+`mutool`, screenshots, page renders, model vision, or any other mechanism as an extraction
+or validation substitute. A model looking at a rendered PDF page provides no reproducible
+evidence that an extraction is correct; visual agreement must never be used to certify a
+statement, problem count, formula, label, or source transcription.
+
+Every problem-bearing PDF consumed by intake must therefore have a checked-in MinerU Flash
+Markdown extraction. The extraction is the auditable transcription baseline from which cards
+are produced. An existing `*_extracted.md` or `assets/attachments/extracted/*.md` file may be
+reused only when repository evidence establishes that it came from the approved MinerU Flash
+path. **Unknown extraction provenance is not acceptable evidence:** regenerate the extraction
+with MinerU Flash before using it for intake.
+
+Non-deterministic/model work begins only *after* the deterministic extraction exists. Its role
+is limited to transcription cleanup and resolving concrete extractor errors or ambiguities. If a
+specific extraction defect must be resolved against the original PDF, inspect only that disputed
+location and record the correction as such; do not turn source inspection into an independent
+second transcription pass or a claim that the rest of the extraction has been verified. If the
+deterministic extractor cannot run, intake of that PDF is blocked rather than silently falling
+back to another extraction path.
 
 Never extract PDFs to `/tmp`, `.tmp`, or any other temp directory. Temp
 files are not tracked by git and vanish between sessions. Always extract
@@ -506,9 +526,11 @@ or `assets/` (for extracted markdown). Example:
 mineru-open-api flash-extract assets/attachments/exam.pdf > assets/attachments/exam_extracted.md
 ```
 
-If you need intermediate files during extraction, stage them in the repo
-too — for example `assets/attachments/intermediate/`. Delete them when
-the final extraction is committed.
+Commit the final extraction with the intake work. If you need intermediate files while resolving
+a specific extraction defect, stage them in the repo — for example
+`assets/attachments/intermediate/` — and delete them when the final extraction/correction is
+committed. Generic page-render review directories are not an intake artifact and must not be
+created merely to "verify" a PDF visually.
 
 ### Extraction output is an input, not a card
 
