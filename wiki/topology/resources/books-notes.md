@@ -20,6 +20,8 @@ order: 0
 
 [Mike Usher, Math 8210 Differential Geometry lecture notes, Fall 2011](attachments/Usher%20DG%20Notes.pdf) — smooth-manifold course notes covering coordinate-free tangent vectors and vector fields, partitions of unity, tangent and cotangent bundles, differential forms and exterior differentiation, submanifolds and tubular neighborhoods, flows and Lie derivatives, Cartan's formula, and Moser's method.
 
+[J.J. Duistermaat, *Symplectic Geometry*, Utrecht Spring School 2004](attachments/Symplectic%20Geometry.pdf) — lecture notes on symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory. Each of the four chapters ends with an exercise section, but the document is an expository spring-school text rather than a standalone problem sheet.
+
 [Cambridge Part II algebraic topology notes](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
 
 [Auroux, Math 131: Introduction to Topology](attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf)

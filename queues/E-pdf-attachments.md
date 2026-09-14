@@ -156,7 +156,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer85.pdf](assets/attachments/extracted/Summer85.md) (117L, 7 problems) — applied-algebra — Summer 19
 
-- [ ] [Symplectic Geometry.pdf](assets/attachments/extracted/Symplectic Geometry.md) (1992L, 2 problems) — UNL — alg-geom
+- [x] [Symplectic Geometry.pdf](assets/attachments/extracted/Symplectic Geometry.md) (1992L, 2 problems) — J.J. Duistermaat — symplectic geometry — Utrecht Spring School 2004 — reference/course notes — disposition 2026-09-14: treated as Duistermaat's expository spring-school lecture notes rather than a standalone problem source. The four chapters cover symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory, each with an exercise section. Added a substantive annotated entry to `wiki/topology/resources/books-notes.md`; no cards were manufactured from the heuristic `2 problems` count.
 
 - [x] [Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf](assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md) (4968L, 14 problems) — algebra — reference/course text — disposition 2026-09-14: treated as Tevelev's graduate-algebra notes rather than a standalone problem source. The document is organized as exposition on field extensions and Galois theory, radicals and cyclotomic fields, quadratic reciprocity, affine algebraic geometry, localization, and finite-group representations, with exercise sections and sample midterms embedded in the text. Enriched its existing entry in `wiki/algebra/resources/books-notes.md` with that mathematical scope; no cards were manufactured from the heuristic `14 problems` count.
 
