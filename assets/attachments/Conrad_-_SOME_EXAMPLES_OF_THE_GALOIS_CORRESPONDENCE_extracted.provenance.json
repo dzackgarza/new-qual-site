@@ -1,0 +1,14 @@
+{
+  "source_pdf": "assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf",
+  "source_pdf_sha256": "ae7d4bd90dd8dca1ae809b4bad21d087b1ac5c6eee63a044687cc1d22bbb542a",
+  "extracted_markdown": "assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE_extracted.md",
+  "extracted_markdown_sha256": "341320b9604a7f2f6bf99a1384abe2fdb386b1a6552832cc5fc9fc3b22144bd9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.md",
+  "disposition": "reference-only",
+  "content_review": "Keith Conrad's expository note develops the Galois correspondence through five worked examples, including explicit S_3 and D_4 Galois groups, subgroup/subfield diagrams, and fixed-field calculations. It is not organized as a standalone problem collection; the only exercise-like instruction is an inline check inside the worked exposition.",
+  "resource_route": "wiki/algebra/resources/fields.md already links this retained PDF as an algebra reference, so no duplicate resource entry is needed."
+}

@@ -55,7 +55,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — UNL — applied-algebra — Spring 19
 
-- [ ] [Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf](assets/attachments/extracted/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.md) (174L, 0 problems) — algebra **OCR: image placeholders**
+- [x] [Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf](assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE_extracted.md) (174L, reference-only) — algebra — disposition 2026-09-14: deterministic MinerU Flash extraction is byte-identical to the retained extraction. Keith Conrad's note consists of five worked examples of the Galois correspondence and fixed-field/subgroup calculations, with only an inline exercise-style check rather than a standalone problem set. It is already routed through `wiki/algebra/resources/fields.md`; no duplicate problem collection is manufactured.
 
 - [ ] [Cracking_the_GRE_Mathematics_Subject.pdf](assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md) (14062L, 722 problems) — UCSD — alg-geom
 
