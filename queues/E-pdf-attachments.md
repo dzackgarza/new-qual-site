@@ -154,7 +154,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Summer83.pdf](assets/attachments/extracted/Summer83.md) (103L, 2 problems) — applied-algebra — Summer 19
 
-- [ ] [Summer85.pdf](assets/attachments/extracted/Summer85.md) (117L, 7 problems) — applied-algebra — Summer 19
+- [x] [Summer85.pdf](assets/attachments/extracted/Summer85.md) (117L, 7 problems) — Berkeley — prelim — Summer 1985 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SUMMER-1985`, with all 20 source-order problems represented by 18 new source-local cards plus exact canonical reuse of `P-BKF89-13` for Problem 12 and `P-BKF83-2` for Problem 14. The inventory's `7 problems`, `applied-algebra`, and truncated `Summer 19` labels were stale heuristic metadata.
 
 - [x] [Symplectic Geometry.pdf](assets/attachments/extracted/Symplectic Geometry.md) (1992L, 2 problems) — J.J. Duistermaat — symplectic geometry — Utrecht Spring School 2004 — reference/course notes — disposition 2026-09-14: treated as Duistermaat's expository spring-school lecture notes rather than a standalone problem source. The four chapters cover symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory, each with an exercise section. Added a substantive annotated entry to `wiki/topology/resources/books-notes.md`; no cards were manufactured from the heuristic `2 problems` count.
 
