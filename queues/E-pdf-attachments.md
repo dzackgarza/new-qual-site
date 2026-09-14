@@ -148,7 +148,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring99.pdf](assets/attachments/extracted/Spring99.md) (66L, 12 problems) — complex-analysis — Spring 19
 
-- [ ] [squal1.pdf](assets/attachments/extracted/squal1.md) (25L, 8 problems) — topology
+- [x] [squal1.pdf](assets/attachments/extracted/squal1.md) (25L, 8 problems) — topology — undated qualifying exam — disposition 2026-09-14: ingested as neutral collection `SRC-TOP-SQUAL1`, with all eight source-order problems represented by source-local cards. Neither the retained extraction nor the original qual-wiki resource page identifies an institution or date, so none was inferred.
 
 - [x] [squal2.pdf](assets/attachments/extracted/squal2.md) (22L, 8 problems) — topology — undated qualifying exam — disposition 2026-09-14: ingested as neutral collection `SRC-TOP-SQUAL2`, with all eight source positions represented by six new source-local cards plus exact canonical reuse of `P-T07A2` for Section A Problem 4 and `P-OMOPR` for Section B Problem 6. Neither the retained extraction nor the original qual-wiki resource page identifies an institution or date, so none was inferred.
 
