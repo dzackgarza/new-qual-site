@@ -30,6 +30,6 @@ order: 20
 
 [[attachments/Review1.pdf|Abstract algebra test review: direct products and quotient groups]]
 
-[[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf|Tevelev, Graduate Algebra: Numbers, Equations, Symmetries]]
+[[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf|Tevelev, Graduate Algebra: Numbers, Equations, Symmetries]] — graduate-algebra notes covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic extensions and reciprocity, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups. The text includes exercise sections and sample midterms within the exposition.
 
 [MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html)
