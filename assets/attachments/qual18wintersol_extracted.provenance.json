@@ -1,0 +1,15 @@
+{
+  "source_pdf": "assets/attachments/qual18wintersol.pdf",
+  "source_pdf_sha256": "7ebc43426871f7f4a2dc403238e0efcb9f3b5bebdc438b0d101b01928366fbd8",
+  "extracted_markdown": "assets/attachments/qual18wintersol_extracted.md",
+  "extracted_markdown_sha256": "4a6d664545fcb65c04ecefa4854c2bd5fb7fd8f897324d042388ed5afff3e9e0",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/qual18wintersol.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/qual18wintersol.md",
+  "card_comparison": "All ten posed questions are represented in source order: five true/false questions in Part I and five longer problems in Part II. The source includes worked answers, which remain source provenance rather than being imported as authored solutions.",
+  "known_extractor_defects": [
+    "Part II Problem 5 mangles the symmetric-square notation in the problem line. The same deterministic extraction's worked solution repeatedly identifies the induced operator as S^2 f, so the card records the intended identity 2 tr(S^2 f) = tr(f)^2 + tr(f^2)."
+  ]
+}
