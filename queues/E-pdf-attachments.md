@@ -120,7 +120,9 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [qual18wintersol.pdf](assets/attachments/qual18wintersol_extracted.md) (61L, 10 problems) — algebra — Winter 2018 — disposition 2026-09-14: already ingested in `3a7a8b373` as complete collection `SRC-ALG-QUAL-WINTER-2018`, grounded in deterministic MinerU Flash v0.5.9. All ten source positions are represented in source order by five Part I true/false cards and five Part II longer-problem cards; the worked answers remain source provenance rather than imported solutions. The one identified symmetric-square extraction defect in Part II Problem 5 is recorded in provenance and on the source-checked card.
 
-- [ ] [QualProblemsHomotopy.pdf](assets/attachments/extracted/QualProblemsHomotopy.md) (33L, 0 problems) — alg-geom
+- [x] [QualProblemsHomotopy.pdf](assets/attachments/QualProblemsHomotopy_extracted.md) (32L, 11 posed items) — topology — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained extraction and identifies *Topology Qual Workshop Day 6: Homotopy & Retractions*.
+  Reconciled all 11 source positions in source order into `SRC-TOP-WORKSHOP`: five exact canonical reuses (`P-TOP-WORKSHOP-HR-W1`, `P-TOP-WORKSHOP-HR-W2`, `P-TOPSU15C`, `P-5AXU3`, `P-TOP-WORKSHOP-HR-05`) plus six source-local cards under `legacy-qual-problems-homotopy/`.
+  MinerU's dropped-arrow and malformed-presentation defects are recorded in provenance; no fallback extraction path was used. The inventory's `0 problems` and `alg-geom` labels were stale heuristics.
 
 - [ ] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/extracted/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.md) (179L, 16 problems) — alg-geom **OCR: image placeholders**
 

@@ -46,6 +46,7 @@ provenance:
 - assets/attachments/day_5_fundamental_group.pdf
 - assets/attachments/day_6_covering_spaces.pdf
 - assets/attachments/day_7_homology.pdf
+- assets/attachments/QualProblemsHomotopy.pdf
 source:
   source_kind: compilation
   date:
@@ -122,6 +123,19 @@ source:
     - P-TOP-WORKSHOP-D9-05
     - P-TOP-WORKSHOP-D9-06
     - P-TOP-WORKSHOP-D9-07
+  - name: Legacy packet — Homotopy and retractions
+    problems:
+    - P-TOP-WORKSHOP-HR-W1
+    - P-TOP-WORKSHOP-HR-W2
+    - P-TOPSU15C
+    - P-5AXU3
+    - P-TOP-WORKSHOP-QPH-02
+    - P-TOP-WORKSHOP-QPH-03
+    - P-TOP-WORKSHOP-QPH-04
+    - P-TOP-WORKSHOP-HR-05
+    - P-TOP-WORKSHOP-QPH-06
+    - P-TOP-WORKSHOP-QPH-C1
+    - P-TOP-WORKSHOP-QPH-C2
   - name: Revised packet — Compactness
     problems:
     - P-TOP-WORKSHOP-D1-W1

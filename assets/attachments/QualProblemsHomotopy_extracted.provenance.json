@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/QualProblemsHomotopy.pdf",
+  "source_pdf_sha256": "5bc7b48924d8e99ae2b593e7df7f72094d87606d93f524cadc352c3c1aea43a4",
+  "extracted_markdown": "assets/attachments/QualProblemsHomotopy_extracted.md",
+  "extracted_markdown_sha256": "8dc23801907952fdc631f40657fac74476687d14060f3fde73175f1b3f3972eb",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/QualProblemsHomotopy.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/QualProblemsHomotopy.md",
+  "card_comparison": "Eleven posed positions are represented in source order in SRC-TOP-WORKSHOP: two warm-ups, Problem 1, its explicit variation, Problems 2-6, and two covering-space presentation-complex problems. Five exact statements reuse P-TOP-WORKSHOP-HR-W1, P-TOP-WORKSHOP-HR-W2, P-TOPSU15C, P-5AXU3, and P-TOP-WORKSHOP-HR-05; six packet-specific statements are source-local cards.",
+  "known_extractor_defects": [
+    "MinerU drops several arrow glyphs in maps such as Y -> X and S^1 -> S^1; the surrounding domain/codomain syntax makes the intended map notation unambiguous.",
+    "The cyclic presentations at the end are rendered as malformed angle-bracket notation; the cards normalize the visible x | x^2 and x | x^6 presentations to standard group-presentation syntax without changing the mathematical statement."
+  ]
+}
