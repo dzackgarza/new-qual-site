@@ -42,7 +42,7 @@ Exercises from [@Fol13]:
 
 - [Analysis qual problem collection](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
 
-- [Sequence Series (Neil Lyall 2019).pdf](attachments/Sequence_Series_(Neil_Lyall_2019).pdf)
+- [Math 4100/6100 Sequences and Series / real-analysis assignments (Fall 2020)](attachments/Sequence_Series_(Neil_Lyall_2019).pdf) — nine assignments spanning sequences and series, limsup/liminf, cardinality, topology of the real line, continuity, differentiation, and uniform convergence; the retained packet contains 67 regular/bonus/challenge source positions.
 
 - [analysis_jan2014.pdf](attachments/analysis_jan2014.pdf)
 

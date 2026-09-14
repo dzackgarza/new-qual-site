@@ -1,0 +1,14 @@
+{
+  "source_pdf": "assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf",
+  "source_pdf_sha256": "c6f71dcb8ef0d668cc095b0eaef634bdb2fafc4de4fd03b6962114751b5584e9",
+  "extracted_markdown": "assets/attachments/Sequence_Series_Neil_Lyall_2019_extracted.md",
+  "extracted_markdown_sha256": "419ef0ac202d9d1e79d822c7cd9571a3c8b8e81e26f5cbe37fa08e51cac8d3f9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf' --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Sequence_Series_(Neil_Lyall_2019).md",
+  "source_identification": "Nine Math 4100/6100 real-analysis assignments from Fall 2020, due September 1 through November 12, with 67 top-level regular/bonus/challenge positions in the retained packet.",
+  "card_reconciliation": "Assignments 1-6 already represented 47 source positions. This intake adds Assignments 7-8 completely and six of the seven Assignment 9 positions, for 66 of 67 positions represented overall. Assignment 8 Problem 1 reuses P-RA-WORKSHOP-D5-W2 and Assignment 8 Bonus Problem 1 reuses P-AZOFF-A05; the other newly represented positions are source-local cards.",
+  "blocking_defect": "Assignment 9 Problem 1 is not carded because MinerU corrupts the piecewise definition of g_n: it emits a stacked '1 / n x' expression with only one condition, so the second branch/condition cannot be recovered source-faithfully. No authored/native companion for this PDF survives in the repository and no fallback extraction path was used."
+}
