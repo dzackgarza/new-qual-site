@@ -8,7 +8,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/Topology_Prelim_Answers_-_Unknown.pdf
 source:
@@ -95,11 +95,23 @@ source:
     - P-MH07-AUG05-07
     - id: P-MH07-AUG06-05
       comment: August 2005 Problem 8; repeated exactly as August 2006 Problem 5
+  - name: January 2005
+    problems:
+    - P-MH07-JAN05-01
+    - P-MH07-JAN05-02
+    - P-MH07-JAN05-03
+    - P-MH07-JAN05-04
+    - P-MH07-JAN05-05
+    - P-MH07-JAN05-06
+    - P-MH07-JAN05-07
+    - P-MH07-JAN05-08
+    - P-MH07-JAN05-09
+    - P-MH07-JAN05-10
   date:
     kind: year
     year: 2007
 ---
 
 ::: remark
-Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. Math 6520 Final Exam, January 2007, Math 6510 Final Exam, August 2006, January 2006, and the embedded August 2005 block are now represented. January 2006 Problem 9 is explicitly unrecovered beyond the covering-space-classification preamble because the retained packet truncates it. The collection remains incomplete until the January 2005 chapter is represented.
+Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. All 75 numbered source positions are represented. January 2006 Problem 9 and January 2005 Problems 3 and 8 are explicitly truncated by the retained extraction, while January 2005 Problems 9 and 10 contain no statement text; those gaps are recorded on their cards rather than reconstructed.
 :::
