@@ -144,7 +144,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [ ] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — algebra — Spring 19
 
-- [ ] [Spring93.pdf](assets/attachments/extracted/Spring93.md) (79L, 2 problems) — applied-algebra — Spring 19
+- [x] [Spring93.pdf](assets/attachments/extracted/Spring93.md) (79L, 2 problems) — Berkeley — prelim — Spring 1993 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SPRING-1993`, with all 18 source-order problems represented by source-local cards. Problem 5 is preserved with its literal homogeneous-boundary wording rather than an inferred nonzero-solution qualifier, and Problem 9's corrupted strip-coordinate glyph is explicitly unrecovered. The inventory's `2 problems`, `applied-algebra`, and truncated `Spring 19` labels were stale heuristic metadata.
 
 - [x] [Spring99.pdf](assets/attachments/extracted/Spring99.md) (66L, 12 problems) — Berkeley — prelim — Spring 1999 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-SPRING-1999`, with all 18 source-order problems represented by source-local cards. Problem 8's displayed polynomial matrix loses its third row in every retained extraction; that source gap is explicit on `P-BKS99-08` rather than reconstructed. The inventory's `12 problems`, `complex-analysis`, and truncated `Spring 19` labels were stale heuristic metadata.
 
