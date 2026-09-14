@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/871-872June_2007_852-871.pdf",
+  "source_pdf_sha256": "809fbb4b70959014e3107c72112f8e662e3a42ea9a723d8120be8f5fee8f7cb5",
+  "source_pages": 2,
+  "extracted_markdown": "assets/attachments/871-872June_2007_852-871_extracted.md",
+  "extracted_markdown_sha256": "5103b263c32684fdd96e4af89150616d1840bc484f7e36fbf51f209e07a949b8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/871-872June_2007_852-871.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/871-872June_2007_852-871.md",
+  "old_unknown_provenance_sha256": "5103b263c32684fdd96e4af89150616d1840bc484f7e36fbf51f209e07a949b8",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UNL Mathematics Qualifying Exam 852/871, June 2007. Section A contains five graph-theory/combinatorics problems; Section B contains four topology problems. The instructions ask for three problems from each section.",
+  "card_reconciliation": "The existing complete SRC-UNL-QUAL-852-871-JUNE-2007 collection represents all nine source positions in order. Section A uses five source-local cards; Section B is verbatim the first four questions of SRC-TOP-UNL-2007Q2 and reuses canonical cards P-T07A1 through P-T07A4.",
+  "raw_control_bytes": 0
+}
