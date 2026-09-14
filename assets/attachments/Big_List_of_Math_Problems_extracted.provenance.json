@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Big_List_of_Math_Problems.pdf",
+  "source_pdf_sha256": "37e923353a69048d8a454319bd74561dca89e3a98f98da1f29b590140779b0a0",
+  "extracted_markdown": "assets/attachments/Big_List_of_Math_Problems_extracted.md",
+  "extracted_markdown_sha256": "d9e1f6e673f6ba735eaa1391d178348359df538658f39f38096e90fab251252a",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract 'assets/attachments/Big_List_of_Math_Problems.pdf' --language en --pages 1-20",
+    "mineru-open-api flash-extract 'assets/attachments/Big_List_of_Math_Problems.pdf' --language en --pages 21-32"
+  ],
+  "assembly": "The two Flash Markdown outputs were concatenated in page order without normalization or semantic rewriting.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "different from assets/attachments/extracted/Big_List_of_Math_Problems.md; the old extraction had unknown provenance and was not used as source evidence.",
+  "reconciliation": "The source contains 243 numbered positions: LA 48, RA 62, CA 34, VP 15, DE 51, PR 33. One exact canonical occurrence (the Dirichlet integral, P-BKS04-7A) is reused; 242 Mathematical-Trivium-owned cards represent the remaining positions. Source-order numbering repairs and explicit extraction/figure gaps are documented on affected cards."
+}
