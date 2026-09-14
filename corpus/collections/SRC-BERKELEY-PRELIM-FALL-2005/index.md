@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
+- assets/attachments/f05.pdf
 - assets/attachments/f05solution.pdf
 source:
   source_kind: university-exam
@@ -41,5 +43,7 @@ source:
 ---
 
 ::: remark
-UC Berkeley preliminary examination, Fall 2005, reconstructed from the retained solution packet, which prints each problem with its solution. Problems are listed in source order, Part A followed by Part B.
+UC Berkeley preliminary examination, Fall 2005, reconstructed from the retained solution packet, which prints each problem with its solution.
+Problems are listed in source order, Part A followed by Part B.
+The retained exam PDF has now been independently grounded by deterministic MinerU Flash extraction and agrees with all eighteen problem statements.
 :::

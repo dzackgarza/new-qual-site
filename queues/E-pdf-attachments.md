@@ -67,7 +67,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [f04.pdf](assets/attachments/f04_extracted.md) (77L, 18 problems) — Berkeley — prelim — Fall 2004 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. The source contains Part A Problems 1A–9A followed by Part B Problems 1B–9B, all already represented in paper order by the complete `SRC-BERKELEY-PRELIM-FALL-2004` collection. The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
-- [ ] [f05.pdf](assets/attachments/extracted/f05.md) (61L, 0 problems) — applied-algebra — FALL 2005
+- [x] [f05.pdf](assets/attachments/f05_extracted.md) (61L, 18 problems) — Berkeley — prelim — Fall 2005 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction. The exam contains Part A Problems 1A–9A and Part B Problems 1B–9B; all eighteen agree with and are represented in paper order by `SRC-BERKELEY-PRELIM-FALL-2005`, whose provenance now includes the exam PDF in addition to its solution packet. The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
 - [ ] [f06.pdf](assets/attachments/extracted/f06.md) (73L, 0 problems) — complex-analysis
 

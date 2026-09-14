@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/f05.pdf",
+  "source_pdf_sha256": "f527796fe0a4410b824b797390ab8d59014a4f2e81097eeb75fba26476fa17ae",
+  "extracted_markdown": "assets/attachments/f05_extracted.md",
+  "extracted_markdown_sha256": "6449ef6bbf431308821cc6cc3b54b0fdbf0a0586b59b1d01992f2072b998ed16",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/f05.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/f05.md",
+  "collection": "SRC-BERKELEY-PRELIM-FALL-2005",
+  "card_comparison": "The deterministic exam baseline contains eighteen problems in paper order, Part A 1A-9A followed by Part B 1B-9B. The existing collection, previously reconstructed from the retained solution packet, contains exactly those eighteen statements in the same order; the cards use ordinary LaTeX normalization without changing the mathematical statements."
+}
