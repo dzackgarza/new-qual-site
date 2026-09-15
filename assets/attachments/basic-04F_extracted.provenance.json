@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-04F.pdf",
+  "source_pdf_sha256": "5f2211c91fd7322251a41a94c691a557249b46f75a08886e52a586b76bc7f714",
+  "extracted_markdown": "assets/attachments/basic-04F_extracted.md",
+  "extracted_markdown_sha256": "c022a7568576bd814e491c3bc8507034908658ab516f0195bf0cde0a79f213a8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-04F.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-04F.md",
+  "old_unknown_provenance_sha256": "c022a7568576bd814e491c3bc8507034908658ab516f0195bf0cde0a79f213a8",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Exam, Fall 2004, containing ten numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. It drops the visible top-level number for Problem 3 and for Problems 8–10, while retaining their substantive statements; several arrows and symbols are also degraded. Problem 10 reproduces the source-authored defect of setting V=R^n while allowing complex generalized eigenvalues, already recorded on the source-checked card. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-FALL-2004 collection represents all ten source positions in order with nine source-local cards plus canonical reuse of P-UCLAB05S-AN5 for Problem 1. All ten collection paths are byte-identical to HEAD; no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}
