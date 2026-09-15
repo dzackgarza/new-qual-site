@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring00.pdf",
+  "source_pdf_sha256": "1c357888cf6f77d5ac91b2fe597bc54fdee990c83f2d1b58606d9b561b25fed2",
+  "extracted_markdown": "assets/attachments/Spring00_extracted.md",
+  "extracted_markdown_sha256": "896e64fa872d99ea1e57f40b43e81c71de85be558556c5c02c01c5ef369654e5",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring00.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring00.md",
+  "old_unknown_provenance_sha256": "896e64fa872d99ea1e57f40b43e81c71de85be558556c5c02c01c5ef369654e5",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 2000, containing Problems 1 through 18 in source order; the retained PDF omits the institution name, while repository source lineage supplies the Berkeley attribution.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-2000 collection represents all 18 source positions in order with 17 source-local cards plus exact canonical reuse of P-BERK89S-16 for Problem 4. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
