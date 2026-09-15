@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall99.pdf",
+  "source_pdf_sha256": "4bd865f3c9ae21b83efb6e6d91bb1c151fd3f42018b4468e37fbaf76d5afb287",
+  "extracted_markdown": "assets/attachments/Fall99_extracted.md",
+  "extracted_markdown_sha256": "de8ca8871f69b4ed086ce00655fa38e88083d29dc0b6b32c18f51bd245164270",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall99.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall99.md",
+  "old_unknown_provenance_sha256": "de8ca8871f69b4ed086ce00655fa38e88083d29dc0b6b32c18f51bd245164270",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1999, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1999 collection represents all 18 source positions in order with 16 source-local cards plus exact canonical reuse of P-BKF07-7B for Problem 10 and E-AMD-HO6G56UF for Problem 11. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
