@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring87.pdf",
+  "source_pdf_sha256": "17589fcf4978ae0c19c479557d27533e3f07696f962e2e71e9407cfcac4a9f4b",
+  "extracted_markdown": "assets/attachments/Spring87_extracted.md",
+  "extracted_markdown_sha256": "d64853e535c9ad25740ec40a18969ae3e2f409550e0f37759a5020bae590504b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring87.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring87.md",
+  "old_unknown_provenance_sha256": "d64853e535c9ad25740ec40a18969ae3e2f409550e0f37759a5020bae590504b",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1987, containing Problems 1 through 20 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1987 collection represents all 20 source positions in order with 18 source-local cards plus exact canonical reuse of P-8CA31 for Problem 15 and E-AMD-HO6G56UF for Problem 18. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
