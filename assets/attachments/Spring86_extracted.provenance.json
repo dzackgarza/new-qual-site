@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring86.pdf",
+  "source_pdf_sha256": "f48a7e83d29bc8cbec4484da0c41386596fc0f481de7629df4999bddaed693bd",
+  "extracted_markdown": "assets/attachments/Spring86_extracted.md",
+  "extracted_markdown_sha256": "664c4e6338ce68f21b7ca89d0a14cf5b71bee70dd9655df6750bb7c134131572",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring86.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring86.md",
+  "old_unknown_provenance_sha256": "664c4e6338ce68f21b7ca89d0a14cf5b71bee70dd9655df6750bb7c134131572",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1986, containing Problems 1 through 20 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1986 collection represents all 20 source positions in order with 17 source-local cards plus exact canonical reuse of P-UCLAB06S-10 for Problem 13, P-BERK96S-02 for Problem 14, and E-AMD-UXMX7R25 for Problem 19. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
