@@ -5,7 +5,7 @@ kind: collection
 title: MAT367 Introduction to Differential Geometry exercises (2017)
 classification:
   areas:
-  - alg-geom
+  - topology
   topics: []
 relations: []
 review: draft
@@ -14,7 +14,7 @@ provenance:
 - assets/attachments/DiffGeomNotes.pdf
 source:
   source_kind: compilation
-  area: alg-geom
+  area: topology
   date:
     kind: year
     year: 2017
@@ -65,5 +65,4 @@ source:
     - E-MAT367-34
     - E-MAT367-35
 ---
-
 
