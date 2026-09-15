@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-05F.pdf",
+  "source_pdf_sha256": "a292879dcd55e0da7af57815e76230cc53d48df68db3d2fda87cc68761ec78af",
+  "extracted_markdown": "assets/attachments/basic-05F_extracted.md",
+  "extracted_markdown_sha256": "ec48b6d2185961e100d899f5535a72165989107a1654352becf176e64a306451",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-05F.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-05F.md",
+  "old_unknown_provenance_sha256": "ec48b6d2185961e100d899f5535a72165989107a1654352becf176e64a306451",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Examination, September 2005, containing ten numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. Problem 2 degrades one mixed-partial denominator; Problem 8 has an incomplete displayed definition of the operator norm; Problem 9 drops the end of the phrase defining span(V_1,V_2); several arrows and minor symbols are also degraded. The existing source-checked cards record the recovered notation and text. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-FALL-2005 collection represents all ten source positions in order with ten source-local cards. All eleven collection paths are byte-identical to HEAD; no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}
