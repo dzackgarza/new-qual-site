@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/grad_prelim_Fall08.pdf",
+  "source_pdf_sha256": "5c3a0f60a1d99fa8460384886dbcc3dcfd2f609f5a01cafe69bd0008f87e6623",
+  "extracted_markdown": "assets/attachments/grad_prelim_Fall08_extracted.md",
+  "extracted_markdown_sha256": "69a62c3a1be3408ecef9b940073f6e1e9de77fa3cd28d7df821d44a05cfeff09",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/grad_prelim_Fall08.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/grad_prelim_Fall08.md",
+  "old_unknown_provenance_sha256": "69a62c3a1be3408ecef9b940073f6e1e9de77fa3cd28d7df821d44a05cfeff09",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UGA Mathematics Preliminary Examination, Fall 2008 (August 12, 2008), containing Problems 1 through 8 in source order.",
+  "card_reconciliation": "The existing complete SRC-UGA-PRELIM-FALL-2008 collection represents all 8 source positions in order with 7 source-local cards plus exact canonical reuse of P-UGAP13F-06 for Problem 3. Problem 4 retains the explicit malformed-matrix extraction gap rather than guessed entries. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
