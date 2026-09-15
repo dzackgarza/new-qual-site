@@ -361,7 +361,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-04F.pdf](assets/attachments/basic-04F_extracted.md) (54L, 10 problems) — UCLA — prelim — Fall 2004 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 c022a7568576bd814e491c3bc8507034908658ab516f0195bf0cde0a79f213a8`). The existing complete `SRC-UCLA-BASIC-FALL-2004` collection represents all ten source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB05S-AN5` for Problem 1. The deterministic extraction loses several top-level problem numbers and reproduces the Problem 10 source defect already recorded on its source-checked card; no fallback extraction was used.
 
-- [ ] [basic-04S.pdf](assets/attachments/extracted/basic-04S.md) (83L, 10 problems) — UCLA — applied-algebra
+- [x] [basic-04S.pdf](assets/attachments/basic-04S_extracted.md) (82L, 10 problems) — UCLA — prelim — Spring 2004 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ff52cf9698ad18317a47b48e8a34391790d694fcc06045b5212de77d9ef9b2c8`). The existing complete `SRC-UCLA-BASIC-SPRING-2004` collection represents all ten source positions in order with eight source-local cards plus canonical reuse of `P-UCLAB06S-01` for Problem 3 and `E-HK-35-11` for Problem 7. The deterministic extraction retains localized notation/subpart-label defects already recovered on source-checked cards; no fallback extraction was used.
 
 - [ ] [basic-05F.pdf](assets/attachments/extracted/basic-05F.md) (73L, 10 problems) — UCLA
 
