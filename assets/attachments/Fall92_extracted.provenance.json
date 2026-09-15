@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall92.pdf",
+  "source_pdf_sha256": "6b6aff25d1a1b549db6cdb955aa352f1b0b5d3305962e0c5d7837639faead880",
+  "extracted_markdown": "assets/attachments/Fall92_extracted.md",
+  "extracted_markdown_sha256": "62f6a721a423946bd474c952db4f0aa5f185809e34e5b6d14327674699f74b11",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall92.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall92.md",
+  "old_unknown_provenance_sha256": "62f6a721a423946bd474c952db4f0aa5f185809e34e5b6d14327674699f74b11",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1992, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1992 collection represents all 18 source positions in order with 17 source-local cards and exact canonical reuse of P-BKS80-16 for Problem 16. Problem 6 preserves the extraction gap in its metric-comparison hypothesis rather than guessing the missing relation. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
