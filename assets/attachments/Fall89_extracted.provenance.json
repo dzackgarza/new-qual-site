@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall89.pdf",
+  "source_pdf_sha256": "acbf8c0eb6357b5f812d38bfcbceda004dbba415b28abd81d6b34d5b1291cb92",
+  "extracted_markdown": "assets/attachments/Fall89_extracted.md",
+  "extracted_markdown_sha256": "867c9628f1357dac237e53e1d5aa0104e49bf46583ed2a3ef3f4fda99b607b18",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall89.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall89.md",
+  "old_unknown_provenance_sha256": "867c9628f1357dac237e53e1d5aa0104e49bf46583ed2a3ef3f4fda99b607b18",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1989, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1989 collection represents all 18 source positions in order with 18 source-local cards. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
