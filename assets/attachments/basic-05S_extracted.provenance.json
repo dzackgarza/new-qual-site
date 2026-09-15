@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-05S.pdf",
+  "source_pdf_sha256": "3c5f162af4adc27e9abde9f0ea4d90869e382eea29c8217ac8d18aaa77f0c9e2",
+  "extracted_markdown": "assets/attachments/basic-05S_extracted.md",
+  "extracted_markdown_sha256": "4f0731533b4a6bb44b5a06d76e113f0574cb4e1352ce1b8001e555dd9f1a0376",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-05S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-05S.md",
+  "old_unknown_provenance_sha256": "4f0731533b4a6bb44b5a06d76e113f0574cb4e1352ce1b8001e555dd9f1a0376",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Exam, May 2005, containing four Linear Algebra problems and eight Analysis problems, twelve source positions total.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. It degrades the commutator-sum index in Linear Algebra Problem 1, reproduces the source omission of a nonempty condition in the two-sided-ideal definition in Linear Algebra Problem 4, and reproduces the source claim that the complex-matrix Euclidean metric is the usual metric on R^{n^2} in Analysis Problem 7; minor arrows/subpart labels are also degraded. Existing source-checked cards record these issues. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-SPRING-2005 collection represents all twelve source positions in order with twelve source-local cards. All thirteen collection paths are byte-identical to HEAD; no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}

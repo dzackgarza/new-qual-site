@@ -365,7 +365,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-05F.pdf](assets/attachments/basic-05F_extracted.md) (72L, 10 problems) — UCLA — prelim — Fall 2005 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ec48b6d2185961e100d899f5535a72165989107a1654352becf176e64a306451`). The existing complete `SRC-UCLA-BASIC-FALL-2005` collection represents all ten source positions in order with ten source-local cards. The deterministic baseline retains localized extraction defects in Problems 2, 8, and 9 already recovered on source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-05S.pdf](assets/attachments/extracted/basic-05S.md) (131L, 12 problems) — topology
+- [x] [basic-05S.pdf](assets/attachments/basic-05S_extracted.md) (130L, 12 problems) — UCLA — prelim — Spring 2005 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 4f0731533b4a6bb44b5a06d76e113f0574cb4e1352ce1b8001e555dd9f1a0376`). The existing complete `SRC-UCLA-BASIC-SPRING-2005` collection represents all twelve source positions in order with twelve source-local cards: four Linear Algebra and eight Analysis problems. The deterministic baseline retains localized source/extraction defects already recorded on source-checked cards; no fallback extraction was used.
 
 - [ ] [basic-06W.pdf](assets/attachments/extracted/basic-06W.md) (55L, 0 problems) — UCLA — applied-algebra — WINTER 2006
 
