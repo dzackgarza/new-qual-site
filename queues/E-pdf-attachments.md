@@ -407,7 +407,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-17F.pdf](assets/attachments/basic-17F_extracted.md) (92L, 12 problems) — UCLA — prelim — Fall 2017 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 03a314781d1cad9a7b9dd2f368be158d2fb733eb8795e9df7b8e222bff6b550f`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 b2dec65c9397175307538b44b7959a1b14946f0c00bca3a5f006cb3ac97490d8`) and is locally noisier, dropping several map arrows and garbling the final Arzelà–Ascoli equivalence. The complete `SRC-UCLA-BASIC-FALL-2017` collection represents all twelve source positions with source-checked cards and is banked with this intake; no fallback extraction was used.
 
-- [ ] [basic-17S.pdf](assets/attachments/extracted/basic-17S.md) (97L, 0 problems) — UCLA — algebra — SPRING 2017
+- [x] [basic-17S.pdf](assets/attachments/basic-17S_extracted.md) (96L, 12 problems) — UCLA — prelim — Spring 2017 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 62a538a96d058cdfc7b59ff2a4732bfc902579b00ea4061f5af639407a6b897c`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 50a5846a6ef410ae4377afcc78bebc4282a48f5357674f58ef340b4a01ad94a6`) and is locally noisier, dropping map arrows and introducing several notation/rendering regressions already covered by the correction ledger. The complete `SRC-UCLA-BASIC-SPRING-2017` collection represents all twelve source positions with source-checked cards and is banked with this intake; no fallback extraction was used.
 
 - [ ] [basic-18F.pdf](assets/attachments/extracted/basic-18F.md) (109L, 0 problems) — UCLA — FALL 2018
 
