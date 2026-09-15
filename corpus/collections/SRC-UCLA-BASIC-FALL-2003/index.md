@@ -23,7 +23,7 @@ source:
   - P-UCLAB03F-05
   - P-UCLAB03F-06
   - id: P-UCLAB04F-05
-    comment: Problem 7
+    comment: Fall 2003 Problem 7; this appearance asks for completeness in the supremum metric and says one need not verify that it is a metric. Unlike the Fall 2004 appearance, it does not grant use of the uniform-limit theorem without proof.
   - P-UCLAB03F-08
   - P-UCLAB03F-09
   - P-UCLAB03F-10
