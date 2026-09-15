@@ -401,7 +401,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-15F.pdf](assets/attachments/basic-15F_extracted.md) (106L, 12 problems) — UCLA — prelim — Fall 2015 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 d485a0d84a4b1da783bc44e7f748923a7485834e458bedcc4e84247ea90753fa`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 3fb542b2f86be1936de055c12e01974011ee12a8764fba116286a0df0bb49275`) and is substantially noisier in several formulas. The current complete `SRC-UCLA-BASIC-FALL-2015` collection represents all twelve source positions with source-checked cards that recover those local transcription defects. Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-15S.pdf](assets/attachments/extracted/basic-15S.md) (97L, 0 problems) — UCLA — algebra — SPRING 2015
+- [x] [basic-15S.pdf](assets/attachments/basic-15S_extracted.md) (96L, 12 problems) — UCLA — prelim — Spring 2015 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 55eb4c3434bf0689df473189262f1ea5121ec740c3437658bfae4de47c965092`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 c953bd07373e82d8fba40f470a775f590519128bbc496600ee60af90a187db8c`) and is locally noisier. The current complete `SRC-UCLA-BASIC-SPRING-2015` collection represents all twelve source positions with source-checked cards. Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
 - [ ] [basic-16S.pdf](assets/attachments/extracted/basic-16S.md) (105L, 0 problems) — UCLA — algebra — SPRING 2016
 
