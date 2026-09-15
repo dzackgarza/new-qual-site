@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-02W.pdf",
+  "source_pdf_sha256": "536b760085cd870f309252033e841029e6f5874313587dfe0ca074debe52bd8c",
+  "extracted_markdown": "assets/attachments/basic-02W_extracted.md",
+  "extracted_markdown_sha256": "4fb3e21855fc63e10d0a321d3ceffd9f9ae45c8c1fbf86f0ed2b3db8930c577d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-02W.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-02W.md",
+  "old_unknown_provenance_sha256": "4fb3e21855fc63e10d0a321d3ceffd9f9ae45c8c1fbf86f0ed2b3db8930c577d",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Examination, Winter 2002. The source instructs candidates to do any ten of eleven numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. Problem 1 part (b) is garbled after the displayed differentiation-under-the-integral formula; the existing source-checked card P-UCLAB02W-01 records the recovered instruction to prove the formula under the conditions stated in part (a). Problem 2 is source-authored with the printed sentence ending at “has a convergent”; Problem 8 prints the weaker upper bound using max rather than min; Problem 11 calls its matrix upper triangular while printing the lower-triangular index condition. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-WINTER-2002 collection represents all eleven numbered source positions in order with ten source-local cards plus canonical reuse of P-UCLAB05F-02 for Problem 6. All eleven collection paths are byte-identical to HEAD, so no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}
