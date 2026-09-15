@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-06W.pdf",
+  "source_pdf_sha256": "46bf4f98cf225e270e8ba2024e63fdd1ee5aae87b72de70318831109d51da455",
+  "extracted_markdown": "assets/attachments/basic-06W_extracted.md",
+  "extracted_markdown_sha256": "817659784f56aca07fa5f6dd4fae04a082e00bba44ea4fad891491bd12ea9919",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-06W.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-06W.md",
+  "old_unknown_provenance_sha256": "18b3ba26c18f5aa08f6fe479252c5317acaecb5b8a1be2ed0caca051e2f01079",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Qual, Winter 2006, containing ten numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction. The fresh output introduces localized degradations including x=1 rendered as x=12 in Problem 2, [a,b] rendered as {a,b} in Problem 3, a lost convergence arrow in Problem 4, and damaged map notation in Problem 6. Existing source-checked cards record the source-faithful statements. Separately, Problems 3 and 9 contain genuine source-level false assertions already documented and addressed on their cards. No fallback extraction or independent full-source transcription was used for this intake.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-WINTER-2006 collection represents all ten source positions in order with ten source-local cards. All eleven collection paths are byte-identical to HEAD; no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}

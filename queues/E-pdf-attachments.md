@@ -367,7 +367,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-05S.pdf](assets/attachments/basic-05S_extracted.md) (130L, 12 problems) — UCLA — prelim — Spring 2005 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 4f0731533b4a6bb44b5a06d76e113f0574cb4e1352ce1b8001e555dd9f1a0376`). The existing complete `SRC-UCLA-BASIC-SPRING-2005` collection represents all twelve source positions in order with twelve source-local cards: four Linear Algebra and eight Analysis problems. The deterministic baseline retains localized source/extraction defects already recorded on source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-06W.pdf](assets/attachments/extracted/basic-06W.md) (55L, 0 problems) — UCLA — applied-algebra — WINTER 2006
+- [x] [basic-06W.pdf](assets/attachments/basic-06W_extracted.md) (54L, 10 problems) — UCLA — prelim — Winter 2006 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 817659784f56aca07fa5f6dd4fae04a082e00bba44ea4fad891491bd12ea9919`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 18b3ba26c18f5aa08f6fe479252c5317acaecb5b8a1be2ed0caca051e2f01079`) and is locally noisier in Problems 2, 3, 4, and 6. The existing complete `SRC-UCLA-BASIC-WINTER-2006` collection represents all ten source positions with source-checked cards that recover those local transcription defects and record the source-level false assertions in Problems 3 and 9. No fallback extraction was used.
 
 - [ ] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata
 
