@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall96.pdf",
+  "source_pdf_sha256": "2f7d17ecbee5afec8eabeb854bd64a64e411f2c79f09ce8dfff82f89036cab2a",
+  "extracted_markdown": "assets/attachments/Fall96_extracted.md",
+  "extracted_markdown_sha256": "25d9901f7f0a08560f023b7967014d2f2b0e5aa5a1d946f036becbbb9ca1b1f1",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall96.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall96.md",
+  "old_unknown_provenance_sha256": "25d9901f7f0a08560f023b7967014d2f2b0e5aa5a1d946f036becbbb9ca1b1f1",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1996, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1996 collection represents all 18 source positions in order with 16 source-local cards plus exact canonical reuse of P-BKS84-7 for Problem 12 and P-BERK80S-11 for Problem 18. Problems 8 and 15 preserve explicit extraction gaps rather than guessed source data. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
