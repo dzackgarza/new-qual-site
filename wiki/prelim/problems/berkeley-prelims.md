@@ -4,7 +4,7 @@ order: 11
 
 # Berkeley Prelims
 
-[Syllabus](attachments/syllabus.pdf)
+**Preliminary-exam information and syllabus.** [Retained syllabus PDF](attachments/syllabus.pdf) — exam format and purpose, the calculus/classical-analysis/abstract-algebra/linear-algebra/complex-analysis syllabus, suggested texts, grading, and review policy.
 
 [Fall 2003 exam](attachments/f03.pdf)
 

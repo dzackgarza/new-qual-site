@@ -340,7 +340,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — Berkeley — prelim — Summer 1982 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1982`, with Problems 1–20 represented in source order. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution. The inventory's `9 problems` and `complex-analysis` labels were stale heuristic metadata.
 
-- [ ] [syllabus.pdf](assets/attachments/extracted/syllabus.md) (29L, 0 problems) — applied-algebra
+- [x] [syllabus.pdf](assets/attachments/syllabus_extracted.md) (28L, reference-only) — Berkeley — prelim — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 8c4f65082295fa97212f16207261b2d84e24742c7f171ad56dd90518be0ca15c`). The document is preliminary-exam information and syllabus material covering format, purpose, five subject areas, suggested texts, grading, and review policy; it contains no posed problem set. The existing Berkeley prelim resource entry is substantively annotated from this baseline rather than manufacturing cards.
 
 ## UCLA basic exams (41)
 

@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/syllabus.pdf",
+  "source_pdf_sha256": "37e32bd2cd5205c054f456a5120d238e7d667643a4899a3807c46ef87fba9693",
+  "extracted_markdown": "assets/attachments/syllabus_extracted.md",
+  "extracted_markdown_sha256": "8c4f65082295fa97212f16207261b2d84e24742c7f171ad56dd90518be0ca15c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/syllabus.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/syllabus.md",
+  "old_unknown_provenance_sha256": "8c4f65082295fa97212f16207261b2d84e24742c7f171ad56dd90518be0ca15c",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "Berkeley preliminary-examination information and syllabus document covering exam format, purpose, subject syllabus, suggested texts, grading, and review policy.",
+  "reference_only_disposition": "The document contains no posed problem set. The only uses of the word problem occur in the grading-policy discussion. Intake therefore enriches the existing Berkeley prelim resource entry rather than manufacturing problem cards or a collection.",
+  "raw_control_bytes": 0
+}
