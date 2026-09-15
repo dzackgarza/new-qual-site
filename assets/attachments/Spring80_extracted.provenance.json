@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring80.pdf",
+  "source_pdf_sha256": "798918ea5981bd55ad86402a7578405dafa37b1504f6572f5651f2341d45c79f",
+  "extracted_markdown": "assets/attachments/Spring80_extracted.md",
+  "extracted_markdown_sha256": "e7273342588157a11da0f8ada9a54da82b3b41239086e3dbb6353d7d02e12ff3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring80.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring80.md",
+  "old_unknown_provenance_sha256": "e7273342588157a11da0f8ada9a54da82b3b41239086e3dbb6353d7d02e12ff3",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1980, containing Problems 1 through 20 in source order; the retained PDF omits the institution name, while repository source lineage supplies the Berkeley attribution.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1980 collection represents all 20 source positions in order with 20 source-local cards. Problem 9 explicitly preserves the unrecovered displayed-matrix entry gap rather than guessing missing data. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
