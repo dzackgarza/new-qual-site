@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-16S.pdf",
+  "source_pdf_sha256": "ed1a2a292b37086787d660a7ab041b327e0d7e737c7ebc8d365d4f89d5415527",
+  "extracted_markdown": "assets/attachments/basic-16S_extracted.md",
+  "extracted_markdown_sha256": "7ab5faefa3f3f57fda39c7061d465de004ca0065ae3f4f4543a4ae674b3289d4",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-16S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-16S.md",
+  "old_unknown_provenance_sha256": "0b4cf1de06f74a4846332f1096120c0d7802bf7ce86d2fd6b8b11eacc3c9ace2",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Exam, Spring 2016, containing twelve numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is locally noisier in several arrows, limits, indices, and map notations. Existing source-checked cards record source-faithful statements. Problem 3 is false as printed: for f identically 1, the displayed expression inside the outer limit equals n. Problem 11 as printed asks for the ordinary limit of log(det M_n); with D_n=det M_n one has D_n=a D_{n-1}+b^2 D_{n-2}, so D_n has exponential rate lambda_+=(a+sqrt(a^2+4b^2))/2 and log D_n is not generally a finite real limit (it tends to plus or minus infinity unless lambda_+=1). No corrected source statement is invented here. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The current shared SRC-UCLA-BASIC-SPRING-2016 collection represents all twelve source positions in order with twelve source-local cards. Several collection paths have unrelated live formatting edits, including Problems 3 and 11; this intake does not modify or stage any collection path.",
+  "raw_control_bytes": 0
+}
