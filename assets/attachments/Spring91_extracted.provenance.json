@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring91.pdf",
+  "source_pdf_sha256": "8ef135196f483675e5eff878a53e0050dc9e748814a5da347028a43e1ac16129",
+  "extracted_markdown": "assets/attachments/Spring91_extracted.md",
+  "extracted_markdown_sha256": "d2a0d65568110c90fe51c7735c3535b6ac0d37b1e010a6c98613f44a48a28475",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring91.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring91.md",
+  "old_unknown_provenance_sha256": "d2a0d65568110c90fe51c7735c3535b6ac0d37b1e010a6c98613f44a48a28475",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1991, containing Problems 1 through 18 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1991 collection represents all 18 source positions in order with 17 source-local cards plus exact canonical reuse of P-BERK79S-07 for Problem 2. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
