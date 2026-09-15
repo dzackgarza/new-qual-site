@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-03S.pdf",
+  "source_pdf_sha256": "e2f02875f1edf761618d3f440adad95da5d280d2f69740db8a818bad49112cca",
+  "extracted_markdown": "assets/attachments/basic-03S_extracted.md",
+  "extracted_markdown_sha256": "ab0bb8cc7d5bfb6ecfeca0421f171d087ea92f845bc79a7bc2b9aa4a1df3772f",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-03S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-03S.md",
+  "old_unknown_provenance_sha256": "ab0bb8cc7d5bfb6ecfeca0421f171d087ea92f845bc79a7bc2b9aa4a1df3772f",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Examination, May 2003, containing ten numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. It reproduces source-authored defects already recorded on source-checked cards: Problem 4 prints an undefined f(x,y) while calling f one-variable, Problem 5 uses an undefined s in the unit-circle equation, Problem 7 writes functionals V→F although V is real and F is undefined, and Problem 10 calls a real operator hermitian and refers to a nonexistent standard basis. Minor arrow/limit typography is also degraded. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-SPRING-2003 collection represents all ten source positions in order with nine source-local cards plus canonical reuse of P-UCLAB05F-02 for Problem 6. All ten collection paths are byte-identical to HEAD; no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}
