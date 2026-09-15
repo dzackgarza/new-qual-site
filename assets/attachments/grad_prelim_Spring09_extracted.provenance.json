@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/grad_prelim_Spring09.pdf",
+  "source_pdf_sha256": "f7bd925b3eba57125a86ccfd5cff2948815ba0a2b13a7d16ab879ff3a39247d1",
+  "extracted_markdown": "assets/attachments/grad_prelim_Spring09_extracted.md",
+  "extracted_markdown_sha256": "9eabf2ee38ca6f00412fe4963c2aa58620e1cd2ead367d77673494cfae2883ff",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/grad_prelim_Spring09.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/grad_prelim_Spring09.md",
+  "old_unknown_provenance_sha256": "9eabf2ee38ca6f00412fe4963c2aa58620e1cd2ead367d77673494cfae2883ff",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UGA graduate preliminary examination, Spring 2009, containing eight equally weighted numbered problems in source order.",
+  "card_reconciliation": "The existing complete SRC-UGA-PRELIM-SPRING-2009 collection represents all 8 numbered source positions in order with 8 source-local cards. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
