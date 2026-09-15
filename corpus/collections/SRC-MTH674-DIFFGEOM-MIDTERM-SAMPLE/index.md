@@ -4,7 +4,7 @@ id: SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE
 kind: collection
 title: MTH 674 Differential Geometry of Manifolds Midterm Sample Problems
 classification:
-  areas: [alg-geom]
+  areas: [topology]
   topics: []
 relations: []
 review: draft
@@ -13,7 +13,7 @@ provenance:
 - assets/attachments/DG Sample Problems 1.pdf
 source:
   source_kind: compilation
-  area: alg-geom
+  area: topology
   date:
     kind: unknown
   problems:
