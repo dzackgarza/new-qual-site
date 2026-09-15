@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-03F.pdf",
+  "source_pdf_sha256": "d8e1b77dcfe98773b0f6b3e101dc11f6a51991c7feea47447cdf113b79e90fc8",
+  "extracted_markdown": "assets/attachments/basic-03F_extracted.md",
+  "extracted_markdown_sha256": "d93eb2bf746b5cad52c838d33650dd03f06ac56c18787eee09691c8cc3566ca5",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-03F.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-03F.md",
+  "old_unknown_provenance_sha256": "d93eb2bf746b5cad52c838d33650dd03f06ac56c18787eee09691c8cc3566ca5",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UCLA Basic Exam, Fall 2003, containing ten numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is byte-identical to the retained extraction. It drops the visible “2:” label before Problem 2 and loses some arrow/subpart typography in Problems 2, 8, and 10, while retaining the substantive statements. Image placeholders do not conceal a missing posed problem. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The existing complete SRC-UCLA-BASIC-FALL-2003 collection represents all ten source positions in order with nine source-local cards plus canonical reuse of P-UCLAB04F-05 for Problem 7. The Fall 2003 appearance differs from the Fall 2004 appearance in proof permissions; commit 969ced526 records that source-specific distinction in ProblemEntry.comment without duplicating the mathematical problem. All remaining collection paths match HEAD.",
+  "raw_control_bytes": 0
+}
