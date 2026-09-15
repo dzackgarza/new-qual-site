@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall93.pdf",
+  "source_pdf_sha256": "743e7f04674ff47b3dcf29b0e3c87d3fc2b353aee4ee476ead5498d7225cafc0",
+  "extracted_markdown": "assets/attachments/Fall93_extracted.md",
+  "extracted_markdown_sha256": "b63b209f77f7d24d9c5fff297d401e2bc68ab2aafe22d04e597838c6d30284d9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall93.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall93.md",
+  "old_unknown_provenance_sha256": "b63b209f77f7d24d9c5fff297d401e2bc68ab2aafe22d04e597838c6d30284d9",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1993, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1993 collection represents all 18 source positions in order with 18 source-local cards. Problem 12 preserves an explicit dependency on the contour omitted from the deterministic extraction; no curve is guessed. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}
