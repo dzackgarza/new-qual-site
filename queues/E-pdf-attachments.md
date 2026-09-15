@@ -349,7 +349,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-01F.pdf](assets/attachments/basic-01F_extracted.md) (50L, 10 problems) — UCLA — prelim — Fall 2001 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 2512bd5ae25e0c0e71d7a7396783a31a3f1efecb148c58d9999e00d52bd47cc7`). The existing complete `SRC-UCLA-BASIC-FALL-2001` collection represents all ten numbered source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB04S-10` for Problem 9. The extraction retains three image placeholders, but all ten posed statements are present in text; no fallback extraction was used.
 
-- [ ] [basic-02F.pdf](assets/attachments/extracted/basic-02F.md) (65L, 10 problems) — applied-algebra **OCR: image placeholders**
+- [x] [basic-02F.pdf](assets/attachments/basic-02F_extracted.md) (64L, 10 problems) — UCLA — prelim — Fall 2002 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 5413250ff92354debe8a635241b206c2a5de972cae3190c72ead8a30e6ffa720`). The existing complete `SRC-UCLA-BASIC-FALL-2002` collection represents all ten numbered source positions in order with ten source-local cards; all collection paths are byte-identical to `HEAD`. The extraction retains image placeholders, but all ten posed statements are present in text; no fallback extraction was used.
 
 - [ ] [basic-02S.pdf](assets/attachments/extracted/basic-02S.md) (51L, 11 problems) — applied-algebra **OCR: image placeholders**
 
