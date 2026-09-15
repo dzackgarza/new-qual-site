@@ -397,7 +397,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [basic-14F.pdf](assets/attachments/extracted/basic-14F.md) (61L, 0 problems) — UCLA — FALL 2014 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Fall 2014; already canonical as `SRC-UCLA-BASIC-FALL-2014`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB14F-01` through `P-UCLAB14F-12` match Problems 1–12. The inventory `0 problems` count was a false negative.
 
-- [ ] [basic-14S.pdf](assets/attachments/extracted/basic-14S.md) (107L, 12 problems) — UCLA — applied-algebra — Spring 2014
+- [x] [basic-14S.pdf](assets/attachments/basic-14S_extracted.md) (106L, 12 problems) — UCLA — prelim — Spring 2014 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 f380f0de11851fbcd1bc875c8a22ef13450735454abef0220363efdc63efdb5e`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 82e42a2774365a4be32f4b5645182bc99cd032d55153c419dfd01ba1d8b5f1f3`) and is locally noisier. The current `SRC-UCLA-BASIC-SPRING-2014` collection represents all twelve source positions with source-checked cards; Problem 1’s false printed invariant-subspace assertion is now explicitly recorded in its audit metadata. Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
 - [ ] [basic-15F.pdf](assets/attachments/extracted/basic-15F.md) (107L, 0 problems) — UCLA — calculus — FALL 2015
 

@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-14S.pdf",
+  "source_pdf_sha256": "dcf557b5fdd81008da3acf51dd5b1959f5db723779431a8db2ffc8d5460f3ae2",
+  "extracted_markdown": "assets/attachments/basic-14S_extracted.md",
+  "extracted_markdown_sha256": "f380f0de11851fbcd1bc875c8a22ef13450735454abef0220363efdc63efdb5e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-14S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-14S.md",
+  "old_unknown_provenance_sha256": "82e42a2774365a4be32f4b5645182bc99cd032d55153c419dfd01ba1d8b5f1f3",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Exam, Spring 2014, containing twelve numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is locally noisier, especially in Problem 7 row/column indices, Problem 8 variable and dimension symbols, Problem 9 function-space notation, and Problem 12 interval indices. Existing source-checked cards record source-faithful statements. Problem 1(b) is false as printed because t^4+1 factors over R into coprime nonconstant quadratics; commit bfbc658b6 records that source defect without changing the posed problem. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The current shared SRC-UCLA-BASIC-SPRING-2014 collection represents all twelve source positions with twelve source-local cards. Several collection paths have unrelated live formatting edits; this intake does not modify or stage them, except that the previously clean Problem 1 audit note was separately banked in bfbc658b6.",
+  "raw_control_bytes": 0
+}
