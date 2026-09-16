@@ -13,9 +13,14 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $(X,\mcm,m)$ be a [[D-QYLPH|measure]] space and let $A,B,C\in\mcm$.
-If $m(A) = m(B) + m(C)$ and $m(C) < \infty$, then
+Let $(X,\mcm,m)$ be a [[D-QYLPH|measure]] space and let $A,C\in\mcm$ with $C\subseteq A$ and $m(C) < \infty$.
+Then
 $$
-m(A) - m(C) = m(B).
+m(A\setminus C) = m(A) - m(C)
 $$
+[@Fol13, Theorem 1.8].
+:::
+
+::: {.remark}
+The hypothesis $m(C)<\infty$ cannot be dropped: for Lebesgue measure with $A = C = \RR$, the right-hand side $\infty-\infty$ is undefined.
 :::
