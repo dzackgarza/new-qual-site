@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-5K3IO
 kind: theorem
-title: Monotone Convergence
+title: Monotone convergence theorem
 classification:
   areas:
   - real-analysis
@@ -13,11 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $f_n: X\to [0, \infty) \in L^+$ and $f_n \nearrow f$ almost everywhere, then
+::: {.theorem}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, and let $f_n$ for $n\geq1$ and $f$ be functions in [[D-BF5L2|$L^+(X,\mcm)$]] such that, for almost every $x\in X$, $f_n(x)\leq f_{n+1}(x)$ for all $n$ and $f_n(x)\to f(x)$.
+Then
 $$
-\lim \int f_n
-= \int \lim f_n = \int f
-\quad \text{i.e.}~~ \int f_n \to \int f
-.$$
+\lim_{n\to\infty} \int_X f_n\dmu = \int_X f\dmu .
+$$
 :::
