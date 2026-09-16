@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.fact}
-A subset $A\subseteq X$ is *dense* in $X$ $\iff$ $\mathrm{cl}_X(A) = X$.
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is [[FD-BA2WU|dense]] in $X$ if and only if $\cl_X(A) = X$, if and only if every nonempty open subset of $X$ meets $A$.
 :::

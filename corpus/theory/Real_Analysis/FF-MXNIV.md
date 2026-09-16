@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-MXNIV
 kind: fact
-title: Sets known to be measurable
+title: Classes of Lebesgue measurable sets
 prompts:
 - Which sets are known to be measurable?
 classification:
@@ -15,11 +15,13 @@ review: draft
 ---
 
 ::: {.fact}
-- Open
+The following subsets of $\RR^n$ are [[D-MDJII|Lebesgue measurable]]:
 
-- Closed
+- open sets;
 
-- Outer measure zero
+- closed sets;
 
-- $M\cross \RR$ for $M$ measurable (a cylinder)
+- sets $E$ with [[D-3XE77|outer measure]] $m_*(E) = 0$.
+
+If $M\subseteq\RR^n$ is Lebesgue measurable, then the cylinder $M\times\RR\subseteq\RR^{n+1}$ is Lebesgue measurable.
 :::
