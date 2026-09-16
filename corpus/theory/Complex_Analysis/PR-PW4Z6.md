@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-PW4Z6
 kind: proposition
-title: Upper half-disc to first quadrant
+title: Möbius map from the upper half-disc to the first quadrant
 classification:
   areas:
   - complex-analysis
@@ -13,38 +13,35 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\ts{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \ts{ w \st \Re(w)>0,\, \Im(w) > 0}  \\
-z &\mapsto {1+z \over 1-z} \\
-{w-1\over w+1} &\mapsfrom w
-.\]
+::: {.proposition}
+The map
+$$
+f\colon\ts{z\st\abs{z}<1,\ \Im z>0}\to\ts{w\st\Re w>0,\ \Im w>0},\qquad f(z)=\frac{1+z}{1-z},
+$$
+is a [[D-TM4TE|biholomorphism]] from the upper half-disc onto the first quadrant, with inverse $f^{-1}(w)=\frac{w-1}{w+1}$.
+:::
 
-- Why this lands in the first quadrant:
-  - Use that squares are non-negative and $z=x+iy\in \DD \implies x^2 + y^2 < 1$:
-\[
-f(z)=\frac{1-\left(x^{2}+y^{2}\right)}{(1-x)^{2}+y^{2}}+i \frac{2 y}{(1-x)^{2}+y^{2}}
-.\]
-- Why the inverse lands in the unit disc:
-  - For $w$ in Q1, the distance from $w$ to 1 is smaller than from $w$ to $-1$.
-  - Check that if $w=u+iv$ where $u, v>0$, the imaginary part of the image is positive:
+::: {.proof}
+For $z=x+iy$ with $x^2+y^2<1$ and $y>0$, multiplying numerator and denominator by $1-\bar z$ gives
+$$
+f(z)=\frac{(1+z)(1-\bar z)}{\abs{1-z}^2}=\frac{1-(x^2+y^2)}{(1-x)^2+y^2}+i\,\frac{2y}{(1-x)^2+y^2},
+$$
+and both parts are positive, so $f(z)$ lies in the first quadrant.
 
-\[
-{w-1 \over w+1}
-&= { (w-1) \bar{(w+1)} \over \abs{w+1}^2}\\
-&={ \qty{u-1 + iv} \qty{u+1-iv} \over (u+1)^2 + v^2 } \\
-&= {u^2 + v^2 + 1 \over (u+1)^2 + v^2}
-+ i\qty{ 2v \over (u+1)^2 + v^2}
-.\]
+For $w=u+iv$ with $u,v>0$, the point $w$ is closer to $1$ than to $-1$ because $u>0$, so $\abs{\frac{w-1}{w+1}}<1$.
+Moreover
+$$
+\frac{w-1}{w+1}=\frac{(u-1+iv)(u+1-iv)}{(u+1)^2+v^2}=\frac{u^2+v^2-1}{(u+1)^2+v^2}+i\,\frac{2v}{(u+1)^2+v^2},
+$$
+whose imaginary part is positive.
+So $w\mapsto\frac{w-1}{w+1}$ maps the first quadrant into the upper half-disc, and solving $w=\frac{1+z}{1-z}$ for $z$ shows that the two maps are mutually inverse.
+:::
 
-
-**Boundary behavior**:
-
-- On the upper half circle \( \ts{ e^{it } \st t\in (0, \pi)  } \), write
-\[
-f(z)=\frac{1+e^{i \theta}}{1-e^{i \theta}}=\frac{e^{-i \theta / 2}+e^{i \theta / 2}}{e^{-i \theta / 2}-e^{i \theta / 2}}=\frac{i}{\tan (\theta / 2)}
-,\]
-  so as $t$ ranges $0\to \pi$ we have $f(z)$ ranging from $0\to i\infty$ along the imaginary axis.
-
-- As $x$ ranges from $-1\to 1$ in $\RR$, $f(z)$ ranges from $0\to \infty$ with $f(0) = 1$.
+::: {.remark}
+On the upper unit semicircle, for $z=e^{i\theta}$ with $0<\theta<\pi$,
+$$
+f(e^{i\theta})=\frac{e^{-i\theta/2}+e^{i\theta/2}}{e^{-i\theta/2}-e^{i\theta/2}}=\frac{2\cos(\theta/2)}{-2i\sin(\theta/2)}=i\cot(\theta/2),
+$$
+so as $\theta$ increases from $0$ to $\pi$, $f(e^{i\theta})$ moves from $i\infty$ to $0$ along the positive imaginary axis.
+As $x$ increases from $-1$ to $1$, $f(x)=\frac{1+x}{1-x}$ increases from $0$ to $\infty$ along the positive real axis, with $f(0)=1$.
 :::
