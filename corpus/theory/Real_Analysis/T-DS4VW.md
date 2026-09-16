@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-DS4VW
 kind: theorem
-title: Term by Term Differentiability Theorem
+title: Term-by-term differentiation of series of functions
 classification:
   areas:
   - real-analysis
@@ -14,21 +14,15 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $\ts{f_n}$ is a sequence of functions where
+::: {.theorem}
+Let $a<b$, and let $f_n\colon[a,b]\to\RR$ be differentiable for $n\geq1$.
+Assume that
 
-- each $f_n$ is differentiable, 
-- there is some $G$ such that $\norm{ \sum_{n\leq N} f_n' - G}_\infty \convergesto{N\to\infty} 0$, and 
-- there exists at least *one point*[^pointwise_works_too] $x_0$ such that $\sum f_n(x)$ converges (pointwise), 
+- there is a function $g\colon[a,b]\to\RR$ such that $\sum_{n}f_n'$ [[D-YZC3C|converges uniformly]] to $g$ on $[a,b]$, that is, $\sup_{x\in[a,b]}\abs{\sum_{n\leq N}f_n'(x)-g(x)}\to0$ as $N\to\infty$, and
 
-then there exists an $F$ such that 
-[^theorem_referfence_6.4.3_Abbott]
-\[
-\norm{ \sum_{n\leq N} f_n - F}_\infty \convergesto{N\to\infty} 0 && F' = g
-.\]
+- there exists $x_0\in[a,b]$ such that $\sum_n f_n(x_0)$ converges.
 
+Then there exists a differentiable function $F\colon[a,b]\to\RR$ such that $\sum_n f_n$ converges uniformly to $F$ on $[a,b]$ and $F'=g$ on $[a,b]$.[^theorem_referfence_6.4.3_Abbott]
 :::
-
-[^pointwise_works_too]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.
 
 [^theorem_referfence_6.4.3_Abbott]: See Abbott theorem 6.4.3, pp 168.
