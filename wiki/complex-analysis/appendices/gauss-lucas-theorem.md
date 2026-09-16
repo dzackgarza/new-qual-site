@@ -2,29 +2,35 @@
 order: 101
 ---
 
-# Gauss-Lucas Theorem
-
-The zeros of a polynomial's derivative lie in the convex hull of the zeros of the polynomial itself.
-This is a purely algebraic fact with a short complex-analytic proof.
-
-::: {.theorem}
-If $f$ is a nonconstant polynomial and $a_1, \dots, a_n$ are its zeros (counted with multiplicity), then every zero of $f'$ lies in $\operatorname{conv}(\{a_1, \dots, a_n\})$.
-:::
-
-**Proof.** Suppose $f'(w) = 0$ with $w \notin \operatorname{conv}(\{a_1, \dots, a_n\})$.
-Then there is a hyperplane separating $w$ from the convex hull, so after a rotation we may assume $\operatorname{Re}(a_k) < \operatorname{Re}(w)$ for every $k$.
-But then
-
-$$
-\frac{f'(w)}{f(w)} = \sum_{k=1}^n \frac{1}{w - a_k}
-$$
-
-has $\operatorname{Re}\bigl(\frac{1}{w-a_k}\bigr) > 0$ for each $k$, so $\operatorname{Re}(f'(w)/f(w)) > 0$, contradicting $f'(w) = 0$.
-$\qed$
-
-The equality case is sharp: $f(z) = z^n$ has all zeros at the origin, and $f'(z) = nz^{n-1}$ has its zero there too.
-More interestingly, the zeros of $f'$ can be strictly interior to the convex hull — take $f(z) = z^3 - 1$, whose zeros are the cube roots of unity and whose derivative $3z^2$ has a double zero at the origin.
-
-A consequence: if all zeros of $f$ lie in a half-plane, then so do all zeros of $f'$, and by induction so do all zeros of every derivative.
+# Gauss--Lucas theorem
 
 [[T-C7GBB]]
+
+::: {.theorem title="Gauss--Lucas"}
+If $f$ is a nonconstant polynomial with zeros $a_1, \ldots, a_n$, listed with multiplicity, then every zero of $f'$ lies in the convex hull $\operatorname{conv}\ts{a_1, \ldots, a_n}$.
+:::
+
+::: {.proof}
+Let $f'(w) = 0$ and suppose $w \notin \operatorname{conv}\ts{a_1, \ldots, a_n}$; in particular $f(w)\neq 0$.
+A point outside a compact convex set is strictly separated from it by a line, so after a rotation $z\mapsto e^{i\phi}z$ of the plane, which changes neither the hypotheses nor the conclusion, $\Re(a_k) < \Re(w)$ for every $k$.
+Writing $f(z) = c\prod_{k=1}^n (z-a_k)$,
+$$
+\frac{f'(w)}{f(w)} = \sum_{k=1}^n \frac{1}{w - a_k},
+$$
+and $\Re\qty{\frac{1}{w-a_k}} = \frac{\Re(w-a_k)}{\abs{w-a_k}^2} > 0$ for each $k$.
+So $\Re\qty{f'(w)/f(w)} > 0$, contradicting $f'(w) = 0$.
+:::
+
+::: {.example}
+The zeros of $f'$ can lie on the boundary of the convex hull or in its interior.
+For $f(z) = z^n$ the hull is $\ts{0}$, and $f'(z) = nz^{n-1}$ vanishes only at $0$.
+For $f(z) = z^3 - 1$ the hull is the triangle whose vertices are the cube roots of unity, and $f'(z) = 3z^2$ vanishes only at the interior point $0$.
+:::
+
+::: {.corollary}
+If all zeros of a nonconstant polynomial $f$ lie in a closed half-plane $H$, then all zeros of $f^{(k)}$ lie in $H$ for every $k$ such that $f^{(k)}$ is nonconstant.
+:::
+
+::: {.proof}
+$H$ is convex, so it contains the convex hull of the zeros of $f$, and the theorem gives the case $k=1$; induct on $k$.
+:::
