@@ -5,16 +5,21 @@ title: Topology
 lede: 'The qualifying exam syllabus in general and algebraic topology: point-set axioms, separation and countability, compactness and connectedness, quotient constructions, the fundamental group, covering spaces, CW complexes, and singular homology.'
 sections:
   - slug: spaces-and-continuous-maps
-    title: Spaces and Continuous Maps
+    title: Spaces and continuous maps
     parent: GUIDE-TOPOLOGY
-    lede: 'A topology is a family of open sets closed under arbitrary unions and finite
-      intersections. A basis produces such a family
-      in practice, and the closed sets, the closure, and the limit points are the same
-      data read through the complement. Continuity can be checked on basis elements;
-      Munkres 18.1 collects
-      the equivalent forms, and open and closed maps isolate the one-sided condition
-      that continuity alone does not supply. A homeomorphism is a continuous bijection
-      with continuous inverse.'
+    lede: >-
+      A topology on a set $X$ is a family of subsets of $X$, the open sets, that contains
+      $\varnothing$ and $X$ and is closed under arbitrary unions and finite intersections. A
+      basis $\mathcal B$ generates the topology whose open sets are the unions of elements of
+      $\mathcal B$. Closed sets are complements of open sets; the closure $\overline A$ of $A$
+      is the smallest closed set containing $A$, and $x\in\overline A$ if and only if every
+      neighbourhood of $x$ meets $A$. A map $f\colon X\to Y$ is continuous if the preimage of
+      every open set is open, equivalently if the preimage of every basis element is open,
+      equivalently if the preimage of every closed set is closed, equivalently if $f(\overline
+      A)\subseteq\overline{f(A)}$ for every $A\subseteq X$. A map is open if it sends open
+      sets to open sets, and closed if it sends closed sets to closed sets. A homeomorphism is
+      a continuous bijection with continuous inverse; a continuous bijection is a
+      homeomorphism if and only if it is open.
     topics:
       - Point-Set Topology
       - Closure
@@ -38,17 +43,21 @@ sections:
       - ref: D-BCNUH
       - ref: D-KW52R
   - slug: constructions-of-spaces
-    title: Constructions of Spaces
+    title: Constructions of spaces
     parent: spaces-and-continuous-maps
-    lede: The subspace topology
-      is the coarsest making the inclusion continuous, the product topology the coarsest
-      making every projection continuous, and the quotient topology the finest making
-      the projection out continuous. Thus maps into a product are checked componentwise,
-      while maps out of a quotient are checked after composition with the quotient map. The box topology is the plausible alternative
-      to the product that fails that test. Attaching one space to another along a map
-      is the quotient case that builds cell complexes and surfaces later, and the orbit
-      space of a group action is the same construction with the identifications supplied
-      by the group.
+    lede: >-
+      For $A\subseteq X$, the subspace topology is the coarsest topology on $A$ for which the
+      inclusion is continuous; the product topology on $\prod_\alpha X_\alpha$ is the coarsest
+      for which every projection $\pi_\alpha$ is continuous; and for a surjection $q\colon
+      X\to Y$, the quotient topology is the finest on $Y$ for which $q$ is continuous. Hence
+      $f\colon Z\to\prod_\alpha X_\alpha$ is continuous if and only if every $\pi_\alpha\circ
+      f$ is continuous, and $g\colon Y\to W$ is continuous if and only if $g\circ q$ is
+      continuous. For the box topology on $\RR^\omega$ the first criterion fails: the diagonal
+      map $t\mapsto(t,t,\ldots)$ has continuous components and is not continuous, since the
+      preimage of $\prod_n(-1/n,1/n)$ is $\{0\}$. For $A\subseteq X$ and $f\colon A\to Y$, the
+      adjunction space $Y\cup_fX$ is the quotient of $X\sqcup Y$ by $a\sim f(a)$ for $a\in A$;
+      attaching cells is the case $X=D^n$, $A=S^{n-1}$. For a group $G$ acting on $X$ by
+      homeomorphisms, the orbit space $X/G$ has the quotient topology from $X\to X/G$.
     topics:
       - Subspace Topology
       - Product Topology
@@ -62,17 +71,17 @@ sections:
       - ref: D-HRU62
       - ref: D-O5NN7
   - slug: separation-and-countability
-    title: Separation and Countability
+    title: Separation and countability
     parent: spaces-and-continuous-maps
-    lede: "Each separation axiom says which pair of disjoint
-      objects can be pulled apart by open sets, with $T_1$ exactly the condition that
-      points are closed and $T_2$ the hypothesis that later compactness arguments use.
-      Urysohn's lemma is the statement that normality is already enough to separate
-      closed sets by a function rather than merely by open sets. The countability axioms
-      bound the size of the same data instead of its separation, first countability
-      through neighborhood bases at a point and second countability through a basis
-      for the whole topology; separability asks the weaker question of a countable dense
-      subset, stated in terms of the closure above."
+    lede: >-
+      A space is $T_1$ if and only if its points are closed, and Hausdorff if distinct points
+      have disjoint neighbourhoods. A $T_1$ space is regular if a point and a closed set not
+      containing it have disjoint neighbourhoods, and normal if disjoint closed sets have
+      disjoint neighbourhoods. Urysohn's lemma: if $X$ is normal and $A,B\subseteq X$ are
+      disjoint closed sets, there is a continuous $f\colon X\to[0,1]$ with $f=0$ on $A$ and
+      $f=1$ on $B$. A space is first countable if every point has a countable neighbourhood
+      basis, second countable if its topology has a countable basis, and separable if it has a
+      countable dense subset; a second countable space is first countable and separable.
     topics:
       - Hausdorff Spaces
       - Separation Axioms
@@ -91,16 +100,19 @@ sections:
       - ref: D-X6LZD
       - ref: D-3O6QH
   - slug: metric-spaces
-    title: Metric Spaces
+    title: Metric spaces
     parent: separation-and-countability
-    lede: 'A metric produces a topology, and the questions above all have sharper answers
-      inside one. A metric space is automatically Hausdorff and normal, so the separation
-      axioms cost nothing here, and separability and second countability become equivalent.
-      Two conditions that are invisible to the topology alone appear at this level:
-      completeness, which is a statement about Cauchy sequences and not about open sets,
-      and total boundedness, which bounds how many balls of a fixed radius are needed.
-      Their conjunction is exactly compactness for metric spaces. The
-      Lebesgue number lemma is the technical bridge between the two readings.'
+    lede: >-
+      A metric $d$ on $X$ induces the topology with basis the open balls. Metric spaces are
+      Hausdorff and normal, and a metric space is separable if and only if it is second
+      countable. A metric space is complete if every Cauchy sequence converges, and totally
+      bounded if for every $\varepsilon>0$ it is covered by finitely many balls of radius
+      $\varepsilon$. Neither property is a topological invariant: $\RR$ is complete and not
+      totally bounded, $(0,1)$ is totally bounded and not complete, and the two are
+      homeomorphic. A metric space is compact if and only if it is complete and totally
+      bounded. The Lebesgue number lemma: for every open cover $\mathcal U$ of a compact
+      metric space there is $\delta>0$ such that every subset of diameter less than $\delta$
+      lies in some member of $\mathcal U$.
     topics:
       - Metric Spaces
       - Completeness
@@ -119,15 +131,16 @@ sections:
   - slug: compactness
     title: Compactness
     parent: separation-and-countability
-    lede: 'Compactness is the first hypothesis that turns the local statements above
-      into global ones, because a finite subcover replaces an arbitrary indexing set
-      by a maximum. Read the results in two groups. The first is what a continuous map
-      does to a compact set: the image stays compact, a real-valued map attains its
-      extremes, and a continuous bijection from a compact space to a Hausdorff space is
-      a homeomorphism. The second
-      is what compactness does inside a product or a metric space, the tube lemma being
-      the projection statement that makes products of compact spaces tractable, and
-      completeness with total boundedness being the metric reformulation.'
+    lede: >-
+      A space is compact if every open cover has a finite subcover. For continuous $f\colon
+      X\to Y$ with $X$ compact, $f(X)$ is compact; for $Y=\RR$, $f$ attains its maximum and
+      minimum; and if $Y$ is Hausdorff and $f$ is bijective, $f$ is a homeomorphism. Closed
+      subsets of compact spaces are compact, and compact subsets of Hausdorff spaces are
+      closed. The tube lemma: if $Y$ is compact and $N$ is an open subset of $X\times Y$
+      containing $\{x_0\}\times Y$, then $N$ contains $W\times Y$ for some neighbourhood $W$
+      of $x_0$. The tube lemma shows that a product of two compact spaces is compact, and
+      Tychonoff's theorem extends this to arbitrary products. A metric space is compact if and
+      only if it is complete and totally bounded.
     topics:
       - Compactness
       - Tube Lemma
@@ -148,18 +161,23 @@ sections:
       - ref: T-HH3YP
       - ref: T-7DICT
   - slug: connectedness-and-homotopy
-    title: Connectedness and Homotopy
+    title: Connectedness and homotopy
     parent: spaces-and-continuous-maps
-    lede: 'Connectedness is the other property preserved by continuous surjections,
-      and it is stated by what cannot happen: no decomposition into two disjoint nonempty
-      open sets, or equivalently no proper clopen subset. Path-connectedness replaces
-      that negative condition with a map out of the interval, which is the first time
-      a space is probed by maps in rather than by covers. Homotopy makes those probing
-      maps themselves the object of study: a continuous deformation through $X \times
-      I$, an equivalence relation on $\hom(X,Y)$, and hence a notion of equivalence
-      for spaces that is strictly weaker than homeomorphism. Retracts and deformation
-      retracts are the computable case, and a contractible space is one where the identity
-      is nullhomotopic, so every map into it carries no information.'
+    lede: >-
+      A space $X$ is connected if its only subsets that are both open and closed are
+      $\varnothing$ and $X$, and path-connected if any two points are joined by a continuous
+      path $[0,1]\to X$. Continuous images of connected spaces are connected, continuous
+      images of path-connected spaces are path-connected, and path-connected spaces are
+      connected; the topologist's sine curve is connected and not path-connected. A homotopy
+      from $f\colon X\to Y$ to $g\colon X\to Y$ is a continuous $H\colon X\times[0,1]\to Y$
+      with $H(x,0)=f(x)$ and $H(x,1)=g(x)$, and homotopy is an equivalence relation on
+      continuous maps $X\to Y$. The spaces $X$ and $Y$ are homotopy equivalent if there are
+      continuous $f\colon X\to Y$ and $g\colon Y\to X$ with $g\circ f\simeq\id_X$ and $f\circ
+      g\simeq\id_Y$; homeomorphic spaces are homotopy equivalent, and $\RR^n$ is homotopy
+      equivalent to a point. A subspace $A\subseteq X$ is a deformation retract if there is a
+      homotopy from $\id_X$ to a retraction $X\to A$ that fixes every point of $A$ at all
+      times. A space is contractible if $\id_X$ is homotopic to a constant map; any two maps
+      from a space into a contractible space are homotopic.
     topics:
       - Connectedness
       - Homotopy
@@ -183,18 +201,20 @@ sections:
       - ref: D-UH3L5
       - ref: T-TQ4J3
   - slug: the-fundamental-group
-    title: The Fundamental Group
+    title: The fundamental group
     parent: connectedness-and-homotopy
-    lede: The fundamental group $\pi_1(X,x_0)$ is the group of based loops modulo based
-      homotopy, with product given by concatenation. Simple connectedness is the statement
-      that this group is trivial, and
-      [Connectedness and Homotopy](connectedness-and-homotopy.html) supplies the
-      path-connectedness needed for the basepoint to be immaterial. Convexity supplies
-      the one family of spaces whose homotopies
-      can be written down directly, and Seifert-van Kampen converts an open cover by
-      path-connected sets into an amalgamated free product, so the group of a union
-      is computed from the groups of the pieces and their intersection. The wedge is
-      the case where the intersection is a point.
+    lede: >-
+      For a space $X$ and $x_0\in X$, $\pi_1(X,x_0)$ is the set of homotopy classes, relative
+      to the endpoints, of loops at $x_0$, with the group operation induced by concatenation.
+      A path $\gamma$ from $x_0$ to $x_1$ induces an isomorphism
+      $\pi_1(X,x_0)\to\pi_1(X,x_1)$, $[\alpha]\mapsto[\overline\gamma\cdot\alpha\cdot\gamma]$,
+      which depends on $\gamma$ only through its homotopy class; different paths give
+      isomorphisms that differ by conjugation. A path-connected space is simply connected if
+      its fundamental group is trivial, and convex subsets of $\RR^n$ are simply connected
+      through straight-line homotopies. The Seifert--van Kampen theorem: if $X=U\cup V$ with
+      $U$ and $V$ open, and $U$, $V$, and $U\cap V$ path-connected and containing $x_0$, then
+      $\pi_1(X,x_0)\cong\pi_1(U,x_0)*_{\pi_1(U\cap V,x_0)}\pi_1(V,x_0)$. The fundamental group
+      of the wedge of $n$ circles is the free group on $n$ generators.
     topics:
       - Fundamental Group
       - van Kampen
@@ -212,19 +232,25 @@ sections:
       - ref: PR-OO3DH
       - ref: D-EUX36
   - slug: covering-spaces
-    title: Covering Spaces
+    title: Covering spaces
     parent: the-fundamental-group
-    lede: Van Kampen computes the fundamental group from a cover by open sets; covering
-      spaces invert the question and recover spaces from the subgroups of that group.
-      A covering map is a local homeomorphism with evenly covered neighborhoods, so
-      paths and homotopies lift uniquely once a starting lift is fixed, and the induced
-      map on $\pi_1$ is injective. The lifting criterion states exactly which maps factor
-      through a cover in terms of the image subgroup, and the fundamental theorem makes
-      the correspondence with subgroups precise for spaces that are path-connected,
-      locally path-connected, and semilocally simply connected, with deck transformations
-      realizing the normalizer quotient and Galois covers the normal case. A free properly
-      discontinuous action produces such covers directly, and the subgroups of free
-      groups are the payoff.
+    lede: >-
+      A covering map $p\colon\tilde X\to X$ is a continuous surjection such that every point
+      of $X$ has an open neighbourhood $U$ for which $p^{-1}(U)$ is a disjoint union of open
+      sets, each mapped homeomorphically onto $U$ by $p$. Paths and homotopies in $X$ lift
+      uniquely to $\tilde X$ once the starting point of the lift is chosen, and
+      $p_*\colon\pi_1(\tilde X,\tilde x_0)\to\pi_1(X,x_0)$ is injective. The lifting
+      criterion: for $Y$ path-connected and locally path-connected, a map
+      $f\colon(Y,y_0)\to(X,x_0)$ lifts to $(\tilde X,\tilde x_0)$ if and only if
+      $f_*\pi_1(Y,y_0)\subseteq p_*\pi_1(\tilde X,\tilde x_0)$. For $X$ path-connected,
+      locally path-connected, and semilocally simply connected, isomorphism classes of based
+      path-connected covering spaces correspond to subgroups $H\le\pi_1(X,x_0)$; the deck
+      transformation group of the cover corresponding to $H$ is isomorphic to $N(H)/H$, where
+      $N(H)$ is the normalizer of $H$, and the cover is normal if and only if
+      $H\trianglelefteq\pi_1(X,x_0)$. If a group $G$ acts on $Y$ so that every point has a
+      neighbourhood $U$ with $gU\cap U=\varnothing$ for all $g\ne1$, then $Y\to Y/G$ is a
+      covering map. Applying the correspondence to graphs shows that every subgroup of a free
+      group is free.
     topics:
       - Covering Spaces
       - Group Actions
@@ -246,17 +272,19 @@ sections:
       - ref: T-O44GI
       - ref: C-ILVEB
   - slug: cell-complexes
-    title: Cell Complexes
+    title: Cell complexes
     parent: constructions-of-spaces
-    lede: 'A CW complex is assembled by induction on dimension, attaching $n$-cells
-      to the $(n-1)$-skeleton along maps
-      out of $S^{n-1}$ and giving the union the weak topology, which applies the quotient
-      constructions from [Constructions of Spaces](constructions-of-spaces.html) one dimension at a time. The standard
-      operations are all instances: the cone, the suspension, the wedge, the smash,
-      the mapping cylinder and the mapping cone. Cellular approximation says no homotopy
-      information is lost by insisting maps respect the skeleta, and the product of
-      two complexes has the cells the generating function predicts, which is what makes
-      the homology of a product computable.'
+    lede: >-
+      A CW complex $X$ is built by induction on dimension: the $0$-skeleton $X^0$ is a
+      discrete space, and $X^n$ is obtained from $X^{n-1}$ by attaching $n$-cells along maps
+      $S^{n-1}\to X^{n-1}$, the adjunction construction of [constructions of
+      spaces](constructions-of-spaces.html). The space $X=\bigcup_nX^n$ has the weak topology:
+      a subset is closed if and only if its intersection with every $X^n$ is closed. Cones,
+      suspensions, wedge sums, mapping cylinders, and mapping cones of CW complexes and
+      cellular maps are CW complexes. The cellular approximation theorem: every map between CW
+      complexes is homotopic to a cellular map, one sending $X^n$ into $Y^n$ for every $n$. If
+      $X$ or $Y$ is locally compact, $X\times Y$ is a CW complex whose $n$-cells are the
+      products $e^i\times e^j$ of cells with $i+j=n$.
     topics:
       - Cell Complexes
       - Category Theory
@@ -281,15 +309,22 @@ sections:
   - slug: homology
     title: Homology
     parent: cell-complexes
-    lede: Singular homology is defined from maps of simplices and is a homotopy invariant;
-      cellular homology
-      computes the same groups from the cell structure in [Cell Complexes](cell-complexes.html), with
-      the differentials given by degrees of maps between spheres. The long exact sequence of a pair converts a subspace into a correction
-      term, excision says the relative groups do not see what is cut out well inside
-      the subspace, and Mayer-Vietoris is the sequence attached to a cover by two open
-      sets, the homological counterpart of van Kampen. Wedges split and the Kunneth
-      formula handles products, so the homology of the standard spaces follows by induction
-      on dimension.
+    lede: >-
+      Singular homology $H_n(X)$ is the homology of the chain complex of formal sums of maps
+      $\Delta^n\to X$, and homotopic maps induce equal maps on homology. For a CW complex $X$,
+      cellular homology is the homology of the chain complex with $n$th group
+      $H_n(X^n,X^{n-1})$, free on the $n$-cells, whose differentials are given by the degrees
+      of attaching maps composed with collapse maps $S^{n-1}\to S^{n-1}$; it is isomorphic to
+      singular homology. A pair $(X,A)$ has a long exact sequence $\cdots\to H_n(A)\to
+      H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots$. Excision: for $Z\subseteq A\subseteq X$ with
+      $\overline Z$ contained in the interior of $A$, the inclusion induces isomorphisms
+      $H_n(X\setminus Z,A\setminus Z)\cong H_n(X,A)$. If $X$ is the union of the interiors of
+      $A$ and $B$, the Mayer--Vietoris sequence $\cdots\to H_n(A\cap B)\to H_n(A)\oplus
+      H_n(B)\to H_n(X)\to H_{n-1}(A\cap B)\to\cdots$ is exact. For a wedge of spaces whose
+      basepoints have neighbourhoods deformation retracting onto them, $\tilde
+      H_n(\bigvee_\alpha X_\alpha)\cong\bigoplus_\alpha\tilde H_n(X_\alpha)$, and the Künneth
+      formula computes $H_n(X\times Y)$ from the homology of $X$ and $Y$. These tools give
+      $\tilde H_n(S^k)\cong\ZZ$ for $n=k$ and $\tilde H_n(S^k)=0$ for $n\ne k$.
     topics:
       - Homology
       - Mayer-Vietoris
@@ -314,16 +349,21 @@ sections:
       - ref: D-KC4BS
       - ref: T-GL7E6
   - slug: degree-and-fixed-points
-    title: Degree and Fixed Points
+    title: Degree and fixed points
     parent: homology
-    lede: 'Degree is what the homology calculation makes possible: a self-map of $S^n$
-      acts on an infinite cyclic group and is therefore recorded by a single integer,
-      which depends only on the homotopy class and is computable as a sum of local degrees.
-      Every fixed-point theorem in the qualifying exams is an application of that integer
-      or of its alternating-sum refinement, the Lefschetz number. The pattern is always
-      the same: assume no fixed point, use the assumption to write down a homotopy to
-      the antipodal map, and contradict the degree that homotopy would force. Brouwer,
-      the hairy ball theorem and Borsuk-Ulam are the three standard conclusions.'
+    lede: >-
+      A map $f\colon S^n\to S^n$ with $n\ge1$ induces multiplication by an integer $\deg f$ on
+      $H_n(S^n)\cong\ZZ$. The degree depends only on the homotopy class of $f$, is
+      multiplicative under composition, and equals $(-1)^{n+1}$ for the antipodal map; if
+      $y\in S^n$ has finite preimage, $\deg f$ is the sum of the local degrees of $f$ at the
+      points of $f^{-1}(y)$. A map $S^n\to S^n$ without fixed points is homotopic to the
+      antipodal map, which gives Brouwer's fixed point theorem, that every continuous map
+      $D^n\to D^n$ has a fixed point, and the hairy ball theorem, that $S^n$ has a continuous
+      nowhere-vanishing tangent vector field if and only if $n$ is odd. The Borsuk--Ulam
+      theorem: every continuous map $S^n\to\RR^n$ sends some pair of antipodal points to the
+      same point. For a retract $X$ of a finite simplicial complex and continuous $f\colon
+      X\to X$, if the Lefschetz number $\tau(f)=\sum_k(-1)^k\operatorname{tr}\big(f_*\colon
+      H_k(X;\QQ)\to H_k(X;\QQ)\big)$ is nonzero, then $f$ has a fixed point.
     topics:
       - Degree
       - Fixed Points
@@ -338,16 +378,18 @@ sections:
   - slug: surfaces
     title: Surfaces
     parent: homology
-    lede: Dimension two is the case where the invariants above are a complete answer.
-      Every compact surface is an identification space of a polygon with its edges paired,
-      the connected sum makes the set of them a monoid, and the single relation $\RP^2
-      \# \RP^2 \# \RP^2 = \RP^2 \# T^2$ collapses that monoid to two families. The Euler
-      characteristic is computed from any cell structure and is a homotopy invariant,
-      so orientability together with $\chi$ classifies compact surfaces up to homeomorphism,
-      with $\chi = 2 - 2g - b$ in the orientable case and $\chi = 2 - k - b$ in the
-      nonorientable one. Inclusion-exclusion for $\chi$ over a cover and its multiplicativity
-      under covering maps are what make most exam problems in this section one-line
-      arguments.
+    lede: >-
+      Every compact connected surface without boundary is homeomorphic to $S^2$, to a
+      connected sum of $g\ge1$ tori, or to a connected sum of $k\ge1$ projective planes, and
+      each of these is a quotient of a polygon by a pairing of its edges; moreover
+      $\RP^2\#\RP^2\#\RP^2\cong\RP^2\#T^2$. The Euler characteristic of a finite CW complex is
+      the alternating count of its cells, equals $\sum_k(-1)^k\operatorname{rank}H_k$, and is
+      a homotopy invariant. A compact connected surface with $b$ boundary circles is
+      determined up to homeomorphism by $b$, orientability, and $\chi$, where $\chi=2-2g-b$ in
+      the orientable case and $\chi=2-k-b$ in the nonorientable case. If a finite CW complex
+      $X$ is the union of subcomplexes $A$ and $B$, then $\chi(X)=\chi(A)+\chi(B)-\chi(A\cap
+      B)$, and an $n$-sheeted covering space $\tilde X$ of $X$ satisfies $\chi(\tilde
+      X)=n\chi(X)$.
     topics:
       - Surfaces
       - Classification
@@ -366,18 +408,26 @@ sections:
       - ref: PR-QV4U5
       - ref: PR-TU4G5
   - slug: manifolds-and-duality
-    title: Manifolds and Duality
+    title: Manifolds and duality
     parent: homology
-    lede: A manifold is locally Euclidean, so its local homology is the local homology
-      of $\RR^n$ and each point carries two generators of $H_n(M, M \sm \ts{x})$. An
-      orientation is a consistent global choice of one of them, the orientation double
-      cover is the space of all such choices, and orientability is exactly the statement
-      that this cover is disconnected. A closed connected oriented manifold then carries
-      a fundamental class, and cap product with it is Poincaré duality, pairing $H^k$
-      against $H_{n-k}$; the relative form for a manifold with boundary is Lefschetz
-      duality and the complement form is Alexander duality. In the middle dimension
-      the pairing becomes the intersection form, symmetric or symplectic according to
-      parity, which is the invariant that separates four-manifolds.
+    lede: >-
+      For an $n$-manifold $M$ and $x\in M$, $H_n(M,M\setminus\{x\};\ZZ)\cong\ZZ$. An
+      orientation of $M$ is a choice of generator $\mu_x$ of this group for every $x$ that is
+      locally consistent: each $x$ has a ball neighbourhood $B$ and a class in
+      $H_n(M,M\setminus B;\ZZ)$ restricting to $\mu_y$ for every $y\in B$. The orientation
+      double cover $\tilde M\to M$ has fibre over $x$ the two generators of
+      $H_n(M,M\setminus\{x\};\ZZ)$, and a connected $M$ is orientable if and only if $\tilde
+      M$ is disconnected. A closed connected orientable $n$-manifold has a fundamental class
+      $[M]$ generating $H_n(M;\ZZ)\cong\ZZ$, and Poincaré duality states that $H^k(M;\ZZ)\to
+      H_{n-k}(M;\ZZ)$, $\varphi\mapsto[M]\frown\varphi$, is an isomorphism for every $k$. For
+      a compact orientable $n$-manifold $M$ with boundary, Lefschetz duality gives
+      $H^k(M;\ZZ)\cong H_{n-k}(M,\partial M;\ZZ)$ and $H^k(M,\partial M;\ZZ)\cong
+      H_{n-k}(M;\ZZ)$. For a compact, locally contractible, nonempty proper subspace
+      $K\subseteq S^n$, Alexander duality gives $\tilde H_i(S^n\setminus K;\ZZ)\cong\tilde
+      H^{n-i-1}(K;\ZZ)$. For a closed oriented $2m$-manifold,
+      $(\alpha,\beta)\mapsto\langle\alpha\smile\beta,[M]\rangle$ on $H^m(M;\ZZ)$ modulo
+      torsion is the intersection form, a unimodular bilinear form that is symmetric for $m$
+      even and skew-symmetric for $m$ odd.
     topics:
       - Manifolds
       - Orientation
