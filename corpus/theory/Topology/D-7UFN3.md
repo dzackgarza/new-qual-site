@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-7UFN3
 kind: definition
-title: Homologous
+title: Homologous cycles
 classification:
   areas:
   - topology
@@ -13,10 +13,14 @@ review: draft
 ---
 
 ::: {.definition}
-Two cycles $\alpha, \beta \in Z_n(X)$ are **homologous** iff their difference is a boundary, i.e. $\alpha - \beta = \del_{n+1}\gamma$ for some $\gamma \in C_{n+1}(X)$.
-Equivalently, they represent the same class in $H_n(X)$.
+Let $X$ be a topological space and $n\geq 0$.
+Two [[D-OH4ON|cycles]] $\alpha, \beta \in Z_n(X)$ are \dfn{homologous} if there exists $\gamma\in C_{n+1}(X)$ with $\alpha - \beta = \del_{n+1}\gamma$.
+:::
+
+::: {.remark}
+Two cycles are homologous if and only if they represent the same class in the [[D-6BUWA|singular homology]] group $H_n(X)$.
 :::
 
 ::: {.concept}
-See Hatcher, p. 106.
+[@Hat02, p. 106].
 :::
