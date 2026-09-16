@@ -76,8 +76,11 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [Complex_Analysis_Exam_Prep_Solutions.pdf](assets/attachments/Complex_Analysis_Exam_Prep_Solutions_extracted.md) (237L, 16 problems) — complex-analysis — disposition 2026-09-14: ingested as `SRC-COMPLEX-ANALYSIS-EXAM-PREP` in `511b36954` and grounded in deterministic MinerU Flash in `4ea970285`. All sixteen numbered practice problems are represented in source order by `P-CAEXAMPREP-01` through `P-CAEXAMPREP-16`; the two identified extraction omissions in Problems 7 and 9 are recorded in the checked-in provenance and restored on the source-checked cards.
   The inventory's `14 problems` count was stale.
 
-- [ ] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — UNL — applied-algebra — Spring 19 **BLOCKED 2026-09-14: MinerU Flash requires split ranges; pages 1–20 and 21–40 extracted successfully, but pages 41–60 failed with `[-60010] parsing failed` and a narrower pages 41–50 request also failed.
-  No incomplete extraction was retained and no fallback extraction used.**
+- [x] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — complex-analysis — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (39 pages).
+  The PDF is Douglas N. Arnold's lecture notes for a half-semester beginning-graduate complex-analysis course at Penn State, Spring 1997: complex numbers, analytic functions and Möbius transformations, complex integration, singularities and residues, the theorems of Weierstrass, Hurwitz and Montel, Schwarz's lemma, the Riemann mapping theorem, and harmonic functions through the Perron method and Schwarz reflection.
+  It poses no problems; the text only defers two verifications to homework, so no cards are made.
+  The resource entry in `wiki/complex-analysis/resources/books-notes.md` now names the notes by author, content and course.
+  The inventory's UNL, applied-algebra and Spring 19 labels were stale.
 
 - [x] [Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf](assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE_extracted.md) (174L, reference-only) — algebra — disposition 2026-09-14: deterministic MinerU Flash extraction is byte-identical to the retained extraction.
   Keith Conrad's note consists of five worked examples of the Galois correspondence and fixed-field/subgroup calculations, with only an inline exercise-style check rather than a standalone problem set.

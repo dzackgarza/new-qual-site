@@ -46,7 +46,7 @@ order: 0
 
 - [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, complex-analysis notes following Stein–Shakarchi]]
 
-- [[attachments/complex.pdf|Douglas Arnold, notes on various topics]]
+- [[attachments/complex.pdf|Douglas N. Arnold, complex-analysis lecture notes (Penn State, Spring 1997)]]
 
 - [[attachments/ist_ca_2015.pdf|Sameer Chavan, problems in complex analysis]]
 
