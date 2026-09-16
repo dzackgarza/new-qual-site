@@ -39,7 +39,3 @@ source:
     term: fall
     year: 1991
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1991. Problems are listed in source order.
-:::
