@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA59
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 59'
+title: Solutions of the exponential functional equation $f(x)f(y)=f(x+y)$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA57
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 57'
+title: Finite geometric sums $\sum r^ke^{ik\phi}$, $\sum r^k\cos k\phi$ and $\sum r^k\sin k\phi$
 classification:
   areas: [real-analysis]
   topics: []

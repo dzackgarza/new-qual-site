@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA47
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 47'
+title: Eigenfunctions of the Fourier transform
 classification:
   areas: [real-analysis]
   topics: []

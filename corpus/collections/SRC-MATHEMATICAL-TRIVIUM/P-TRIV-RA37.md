@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA37
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 37'
+title: Area of the surface of revolution of $y=\sin x$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA60
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 60'
+title: Integrable smooth function with a single nonzero derivative at $0$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA32
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 32'
+title: Arc length of $y=\log\cos x$ on $[0,\pi/6]$
 classification:
   areas: [real-analysis]
   topics: []

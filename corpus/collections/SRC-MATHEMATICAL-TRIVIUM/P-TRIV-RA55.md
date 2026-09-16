@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA55
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 55'
+title: Closed form and small-$a$ expansion of $\sum_n ne^{-an}$
 classification:
   areas: [real-analysis]
   topics: []

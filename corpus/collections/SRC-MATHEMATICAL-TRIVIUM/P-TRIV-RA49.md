@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA49
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 49'
+title: Fourier transform of the Yukawa potential $\alpha e^{-\mu r}/r$
 classification:
   areas: [real-analysis]
   topics: []

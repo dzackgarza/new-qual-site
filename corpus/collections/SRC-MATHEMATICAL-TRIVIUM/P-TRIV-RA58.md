@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA58
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 58'
+title: Ant on a stretching rubber rope
 classification:
   areas: [real-analysis]
   topics: []

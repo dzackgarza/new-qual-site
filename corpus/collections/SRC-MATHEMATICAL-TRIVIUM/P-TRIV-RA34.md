@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA34
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 34'
+title: Polar equation and asymptotics of the hyperbolic spiral
 classification:
   areas: [real-analysis]
   topics: []

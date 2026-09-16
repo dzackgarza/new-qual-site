@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA52
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 52'
+title: Divergence of the $p$-series $\sum n^{-\alpha}$
 classification:
   areas: [real-analysis]
   topics: []

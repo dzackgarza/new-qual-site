@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA43
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 43'
+title: Flux of the Coulomb field through a sphere
 classification:
   areas: [real-analysis]
   topics: []

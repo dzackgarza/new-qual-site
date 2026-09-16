@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA61
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 61'
+title: $\int_0^\pi\log(1-2a\cos x+a^2)\,dx=0$ for $\lvert a\rvert<1$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA53
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 53'
+title: $\sum_{n\ge1}\frac{(-1)^n}{n}=-\log 2$
 classification:
   areas: [real-analysis]
   topics: []

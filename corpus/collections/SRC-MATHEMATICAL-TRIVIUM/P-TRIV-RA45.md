@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA45
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 45'
+title: Fourier transforms of a box function and a one-sided exponential
 classification:
   areas: [real-analysis]
   topics: []

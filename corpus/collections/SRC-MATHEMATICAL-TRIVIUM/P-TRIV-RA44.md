@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA44
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 44'
+title: Electric field on the axis of a charged ring and a charged disk
 classification:
   areas: [real-analysis]
   topics: []

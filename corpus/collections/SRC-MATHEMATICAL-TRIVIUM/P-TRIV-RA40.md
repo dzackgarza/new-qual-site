@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA40
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 40'
+title: Volumes of high-dimensional balls and concentration near the boundary
 classification:
   areas: [real-analysis]
   topics: []

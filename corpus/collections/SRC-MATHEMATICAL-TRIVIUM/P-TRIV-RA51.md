@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA51
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 51'
+title: Fourier transform of $f_0(\frac1r+\frac1a)e^{-2r/a}$ in $\mathbb{R}^3$
 classification:
   areas: [real-analysis]
   topics: []

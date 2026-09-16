@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA41
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 41'
+title: Components of $\nabla\log\frac1r$ in Cartesian, cylindrical and spherical coordinates
 classification:
   areas: [real-analysis]
   topics: []

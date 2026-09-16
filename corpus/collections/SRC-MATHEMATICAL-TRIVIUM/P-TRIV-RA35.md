@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA35
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 35'
+title: Jacobians of spherical and cylindrical coordinates
 classification:
   areas: [real-analysis]
   topics: []

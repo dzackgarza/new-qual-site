@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA46
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 46'
+title: Inverse Fourier transform of $-\frac1\pi\frac{k}{a^2+k^2}$
 classification:
   areas: [real-analysis]
   topics: []

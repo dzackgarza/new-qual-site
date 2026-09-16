@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA38
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 38'
+title: Volume of the ball in $\mathbb{R}^3$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA39
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 39'
+title: Volume of the solid of revolution of $y=\arcsin x$
 classification:
   areas: [real-analysis]
   topics: []

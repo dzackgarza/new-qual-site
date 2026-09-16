@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA50
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 50'
+title: Fourier transform of the indicator of a ball in $\mathbb{R}^3$
 classification:
   areas: [real-analysis]
   topics: []

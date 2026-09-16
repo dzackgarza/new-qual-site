@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA33
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 33'
+title: Arc length of a helix
 classification:
   areas: [real-analysis]
   topics: []

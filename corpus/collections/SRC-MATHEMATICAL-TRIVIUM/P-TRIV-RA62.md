@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA62
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 62'
+title: Borwein integrals
 classification:
   areas: [real-analysis]
   topics: []

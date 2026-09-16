@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA42
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 42'
+title: Divergence, Laplacian and curl of $\nabla\frac1r$
 classification:
   areas: [real-analysis]
   topics: []

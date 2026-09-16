@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA36
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 36'
+title: Surface areas of the sphere and the torus
 classification:
   areas: [real-analysis]
   topics: []

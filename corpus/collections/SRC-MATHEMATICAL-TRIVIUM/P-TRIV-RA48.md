@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA48
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 48'
+title: Fourier transforms under scaling and translation
 classification:
   areas: [real-analysis]
   topics: []

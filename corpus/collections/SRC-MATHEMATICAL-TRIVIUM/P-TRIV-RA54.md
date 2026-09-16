@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA54
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 54'
+title: $\sum_{n\ge1}\frac{x^{n-1}}{n(n+1)}$
 classification:
   areas: [real-analysis]
   topics: []

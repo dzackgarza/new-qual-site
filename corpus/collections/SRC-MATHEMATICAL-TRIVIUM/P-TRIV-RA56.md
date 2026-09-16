@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA56
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 56'
+title: $\sum_{n\in\mathbb{Z}}\lvert 2n+1\rvert e^{-a\lvert 2n+1\rvert}$
 classification:
   areas: [real-analysis]
   topics: []
