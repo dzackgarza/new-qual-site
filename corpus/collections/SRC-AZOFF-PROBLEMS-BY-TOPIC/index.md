@@ -215,7 +215,6 @@ source:
       comment: Problem 10
 ---
 
-::: remark
-The deterministic source contains 89 numbered problem positions in nine topic blocks.
-Exact previously owned statements are reused; variants and source-specific subproblem bundles retain independent Azoff owners.
+::: {.remark}
+The source contains 89 numbered problems in nine topic blocks.
 :::
