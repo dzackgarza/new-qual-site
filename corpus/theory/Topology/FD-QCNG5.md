@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-QCNG5
 kind: definition
-title: Neighborhood Basis
+title: Neighborhood basis
 prompts:
 - What is a neighborhood basis at a point $x$?
 classification:
@@ -17,5 +17,6 @@ review: draft
 ---
 
 ::: {.definition}
-A neighborhood basis about a point $x$ is a collection of open sets $\theset{B_k}_{k\in J}$ such that for every neighborhood $U_x$ of $x$, there exists some $j$ such that $B_j \subseteq U_x$.
+Let $X$ be a topological space and $x\in X$.
+A \dfn{neighborhood basis} at $x$ is a collection $\ts{B_j}_{j\in J}$ of open subsets of $X$ containing $x$ such that for every [[D-JMRPA|neighborhood]] $U_x$ of $x$ there exists $j\in J$ with $B_j \subseteq U_x$.
 :::
