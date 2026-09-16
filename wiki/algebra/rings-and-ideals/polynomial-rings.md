@@ -19,7 +19,7 @@ For a commutative ring $R$, the polynomial ring $R[x]$ contains $R$ as the const
 
 [[D-GOFWL]]
 
-[[D-O26OY]]
+[[D-JNCUB]]
 
 [[FD-LXZIW]]
 
