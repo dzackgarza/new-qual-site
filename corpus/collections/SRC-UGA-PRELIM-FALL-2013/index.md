@@ -31,6 +31,6 @@ source:
     year: 2013
 ---
 
-::: remark
-UGA Mathematics Preliminary Exam, Fall 2013. The retained source contains nine numbered problems.
+::: {.remark}
+UGA Mathematics Preliminary Exam, Fall 2013, with nine problems.
 :::
