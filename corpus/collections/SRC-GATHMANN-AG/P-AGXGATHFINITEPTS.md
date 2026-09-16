@@ -83,3 +83,11 @@ which follows from $\tilde f_k(p_j^1) = p_j^k$ for every $k$ and every $j$ by co
 $X^c \subseteq V(f_i)^c$: this follows because the polynomials given by Lagrange interpolation are unique, so the roots of $\tilde f$ are unique.
 If some other point were in $V(f_i)$, then one of its coordinates would be another root of some $\tilde f$.
 :::
+
+::: {.remark}
+Erratum: the source argument has three gaps, retained above as written.
+
+- The reduction to distinct first coordinates is asserted without the coordinate change it needs. Since $X$ is finite and $k$ is infinite, a linear change of coordinates on $\AA^n$ makes the $x_1$-coordinates of the $\mathbf{p}_j$ pairwise distinct, and a linear change of coordinates carries zero loci of $n$ polynomials to zero loci of $n$ polynomials.
+- The interpolating polynomial through $d$ points with distinct $x_i$ has degree at most $d-1$, not $d$; the product in the Lagrange formula runs over $1\leq m\leq d$, and the sentence beginning "Equivalently" does not define a polynomial.
+- The reverse inclusion $V(f_1,\cdots,f_n)\subseteq X$ does not follow from uniqueness of interpolating polynomials. If $\mathbf{q}\in V(f_1,\cdots,f_n)$, then $f_1(\mathbf{q})=0$ gives $q^1=p_j^1$ for some $j$, and then $f_k(\mathbf{q})=0$ gives $q^k=\tilde f_k(p_j^1)=p_j^k$ for $2\leq k\leq n$, so $\mathbf{q}=\mathbf{p}_j$.
+:::

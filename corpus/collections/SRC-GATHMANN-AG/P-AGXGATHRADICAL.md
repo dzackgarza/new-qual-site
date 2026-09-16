@@ -47,3 +47,8 @@ In fact $P = V(I)$, and so taking the ideal of $P$ yields
 ,\]
 and thus $\sqrt{I} = \gens{y-x^2}$.
 :::
+
+::: {.remark}
+Erratum: the source's conclusion swaps the variables.
+With $x=x_1$ and $y=x_2$, the locus $P=\ts{(t^2,t)}$ is the zero locus of $x-y^2$, so $\mci(P)=\gens{x-y^2}$ and $\sqrt{I}=\gens{x_1-x_2^2}$; the ideal $\gens{y-x^2}$ vanishes on the different parabola $\ts{(t,t^2)}$.
+:::

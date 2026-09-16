@@ -76,3 +76,12 @@ But
 \]
 cannot contain any nonzero element of degree $d<3$, so no such $\alpha_i$ exist and these elements are $k\dash$linearly independent.
 :::
+
+::: {.remark}
+Erratum: the computation of $I(X)$ above is wrong at two steps, although its final ideal is correct.
+
+- $V(x_2x_3)$ is the union of the coordinate planes $\ts{x_2=0}$ and $\ts{x_3=0}$, not the $x_1$-axis. The $x_1$-axis is $V(x_2,x_3)$, with ideal $\gens{x_2,x_3}$, and similarly for the other two axes.
+- The ideal of a union is the intersection of the ideals; the radical of the sum is the ideal of the intersection $X_1\intersect X_2\intersect X_3$. The correct computation is $I(X)=\gens{x_2,x_3}\intersect\gens{x_1,x_3}\intersect\gens{x_1,x_2}$, an intersection of monomial ideals, which equals $\gens{x_2x_3,\,x_1x_3,\,x_1x_2}$.
+
+In the second claim $\mfm$ means $\gens{x_1,x_2,x_3}$.
+:::
