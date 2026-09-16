@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-SDEOY
 kind: theorem
-title: Whitehead's Theorem
+title: Whitehead's theorem
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-A map $X \mapsvia{f} Y$ on CW complexes that is a weak homotopy equivalence (inducing isomorphisms in homotopy) is in fact a homotopy equivalence.
+Let $f\colon X\to Y$ be a map of connected CW complexes that induces isomorphisms $f_*\colon\pi_n(X)\to\pi_n(Y)$ for all $n$, that is, a [[D-QMJHY|weak homotopy equivalence]].
+Then $f$ is a [[D-HFR32|homotopy equivalence]] [@Hat02, Theorem 4.5, p. 346].
 :::
