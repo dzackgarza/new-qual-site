@@ -31,7 +31,3 @@ source:
   - {id: P-WESTOP09-II4, comment: Part II Problem 4}
   - {id: P-WESTOP09-II5, comment: Part II Problem 5}
 ---
-
-::: remark
-Part II Problem 5 depends on a commutative diagram whose object labels are missing from the retained Markdown extraction; the surviving exactness and vertical-map hypotheses are recorded on the card without reconstructing the diagram.
-:::
