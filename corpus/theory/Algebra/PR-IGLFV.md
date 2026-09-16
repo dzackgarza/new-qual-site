@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Every group $G$ of order $p^2$ is abelian, and thus isomorphic to either $C_{p^2}$ or $C_p^2$.
+Let $p$ be a prime.
+Every group $G$ of order $p^2$ is abelian, and hence $G \cong C_{p^2}$ or $G \cong C_p \times C_p$.
 :::

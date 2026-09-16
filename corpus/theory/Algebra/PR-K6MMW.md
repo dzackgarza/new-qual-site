@@ -15,22 +15,22 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $T:V\to V$ be a linear map where $n\da \dim_k V$.
-TFAE:
+Let $k$ be a field, $V$ a $k$-vector space of dimension $n \coloneqq \dim_k V \geq 1$, and $T\colon V\to V$ a nilpotent linear map.
+The following are equivalent:
 
-- There exists a basis \( \ts{ e_i } \) of $V$ such that
-\[
+- There exists a basis $e_1, \ldots, e_n$ of $V$ such that
+$$
 T(e_i) =
 \begin{cases}
-e_{i-1} &  i \geq 2
+e_{i-1} & \text{if } i \geq 2,
 \\
-0 & i=1.
+0 & \text{if } i=1.
 \end{cases}
-\]
+$$
 
-- There exists a cyclic vector $\vector v$ such that \( \ts{ T^k \vector v \st k=1,2,\cdots, n} \) form a basis for $V$.
+- There exists a cyclic vector $v \in V$: the vectors $T^k v$ for $k = 0, 1, \ldots, n-1$ form a basis of $V$.
 
-- $T^{n-1} \neq 0$
+- $T^{n-1} \neq 0$.
 
 - $\dim_k \ker T^\ell = \ell$ for each $1\leq \ell \leq n$.
 

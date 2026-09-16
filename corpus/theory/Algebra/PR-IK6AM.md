@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.proposition}
-$k$ is perfect (using the irreducible implies separable condition) if either
+A field $k$ is [[FD-YYLYR|perfect]], that is, every irreducible polynomial in $k[x]$ is separable, if and only if either
 
-- $\ch k = 0$ or
+- $\ch k = 0$, or
 
 - $\ch k = p > 0$ and $k^p = k$.
 :::
