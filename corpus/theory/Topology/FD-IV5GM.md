@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-IV5GM
 kind: definition
-title: 'Definition: the discrete topology'
+title: Discrete topology
 prompts:
 - Which sets are open in the discrete topology on $X$?
 classification:
@@ -17,5 +17,6 @@ review: draft
 ---
 
 ::: {.definition}
-For $X$ a space, the discrete topology is given by $\tau = \mcp(X)$, i.e. every subset is open.
+Let $X$ be a set.
+The \dfn{discrete topology} on $X$ is the [[D-2TZAI|topology]] $\tau = \mcp(X)$, in which every subset of $X$ is open.
 :::
