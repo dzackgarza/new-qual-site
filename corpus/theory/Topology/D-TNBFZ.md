@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-TNBFZ
 kind: definition
-title: Quotient Map
+title: Quotient map
 classification:
   areas:
   - topology
@@ -14,9 +14,12 @@ review: draft
 ---
 
 ::: {.definition}
-A map $q:X\to Y$ is a **quotient map** if and only if
+Let $X$ and $Y$ be topological spaces.
+A map $q\colon X\to Y$ is a \dfn{quotient map} if
 
 1. $q$ is surjective, and
 
-2. $U \subseteq Y$ is open if and only if $q ^{-1} (U)$ is open.
+2. for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $q\inv(U)$ is open in $X$
+
+[@Mun00, sec. 22].
 :::
