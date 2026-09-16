@@ -16,7 +16,7 @@ review: draft
 
 ::: {.theorem}
 Let $\mch$ be a [[D-7QQUO|Hilbert space]] and let $(u_n)_{n\in A}$ be a family in $\mch$, indexed by a set $A$, with $\inner{u_n}{u_m}=0$ for $n\neq m$ and $\norm{u_n}=1$ for all $n$.
-For each $x\in\mch$ only countably many $\inner{x}{u_n}$ are nonzero ([[T-4CDKK]]), and sums over $A$ below are taken over those indices.
+For each $x\in\mch$ only countably many $\inner{x}{u_n}$ are nonzero ([[T-4BDE3]]), and sums over $A$ below are taken over those indices.
 The following are equivalent:
 
 1. (Completeness) If $x\in\mch$ and $\inner{x}{u_n}=0$ for all $n\in A$, then $x=0$.

@@ -70,8 +70,6 @@ Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
 
 [[T-4BDE3]]
 
-[[T-4CDKK]]
-
 Proved in [[real-analysis/fourier/index|Fourier]].
 
 ## Functional analysis
