@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-10
 kind: problem
-title: UCLA analysis Spring 2018, Problem 10
+title: Injective holomorphic self-maps of the thrice-punctured sphere
 classification:
   areas:
   - real-analysis

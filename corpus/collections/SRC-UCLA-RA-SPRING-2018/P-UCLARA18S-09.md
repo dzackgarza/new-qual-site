@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-09
 kind: problem
-title: UCLA analysis Spring 2018, Problem 9
+title: The Weierstrass product $\prod(1+\frac1n)^z(1-\frac zn)$
 classification:
   areas:
   - real-analysis

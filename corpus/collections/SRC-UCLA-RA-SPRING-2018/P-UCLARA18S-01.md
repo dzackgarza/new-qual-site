@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-01
 kind: problem
-title: UCLA analysis Spring 2018, Problem 1
+title: $L^1$ functions with vanishing $L^1$ difference quotients are zero
 classification:
   areas:
   - real-analysis

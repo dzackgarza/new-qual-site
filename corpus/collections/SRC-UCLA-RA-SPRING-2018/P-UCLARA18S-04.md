@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-04
 kind: problem
-title: UCLA analysis Spring 2018, Problem 4
+title: Strong maximal function and differentiation along parabolic rectangles
 classification:
   areas:
   - real-analysis

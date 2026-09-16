@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-05
 kind: problem
-title: UCLA analysis Spring 2018, Problem 5
+title: Measures on $[0,1]$ with vanishing Stieltjes transform are zero
 classification:
   areas:
   - real-analysis

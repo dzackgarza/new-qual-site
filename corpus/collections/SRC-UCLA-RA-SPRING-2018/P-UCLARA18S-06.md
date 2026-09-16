@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-06
 kind: problem
-title: UCLA analysis Spring 2018, Problem 6
+title: Existence of optimal couplings on the circle
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-12
 kind: problem
-title: UCLA analysis Spring 2018, Problem 12
+title: Bergman reproducing formula for bounded holomorphic functions on the disk
 classification:
   areas:
   - real-analysis

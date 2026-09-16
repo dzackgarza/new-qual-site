@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-07
 kind: problem
-title: UCLA analysis Spring 2018, Problem 7
+title: Holomorphy of $F(z,z)$ for separately holomorphic continuous $F$
 classification:
   areas:
   - real-analysis

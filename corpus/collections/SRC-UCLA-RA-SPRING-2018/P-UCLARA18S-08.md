@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-08
 kind: problem
-title: UCLA analysis Spring 2018, Problem 8
+title: Sharp bound on $|\partial_xu(0)|$ for harmonic $u:\mathbb D\to[0,1]$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-03
 kind: problem
-title: UCLA analysis Spring 2018, Problem 3
+title: $L^1$ functions with finite energy $\iint\frac{|f(x)f(y)|}{|x-y|^2}$ vanish
 classification:
   areas:
   - real-analysis

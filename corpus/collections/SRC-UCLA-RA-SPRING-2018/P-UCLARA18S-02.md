@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-02
 kind: problem
-title: UCLA analysis Spring 2018, Problem 2
+title: Nonnegativity and closed sublevel sets of the second-difference form $Q(f,h)$
 classification:
   areas:
   - real-analysis

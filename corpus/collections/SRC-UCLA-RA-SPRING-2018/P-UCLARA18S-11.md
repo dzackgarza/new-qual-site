@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-11
 kind: problem
-title: UCLA analysis Spring 2018, Problem 11
+title: Conformally equivalent annuli have equal moduli
 classification:
   areas:
   - real-analysis
