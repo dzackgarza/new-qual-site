@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-4GQK3
 kind: corollary
-title: Normality satisfies the lifting property
+title: Compositum and intersection of normal extensions
 classification:
   areas:
   - algebra
@@ -15,7 +15,8 @@ review: draft
 ---
 
 ::: {.corollary}
-$E_1/k$ normal and $E_2/k$ normal $\implies E_1E_2/k$ normal and $E_1 \intersect E_2 / k$ normal.
+Let $k$ be a field, let $\Omega$ be an algebraic closure of $k$, and let $E_1, E_2 \subseteq \Omega$ be extensions of $k$.
+If $E_1/k$ and $E_2/k$ are [[D-LZTAK|normal]], then the compositum $E_1E_2/k$ and the intersection $(E_1 \cap E_2)/k$ are normal.
 
 \begin{tikzcd}
 	&& {E_1 E_2} \\

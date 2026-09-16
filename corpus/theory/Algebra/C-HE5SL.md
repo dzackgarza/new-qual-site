@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-HE5SL
 kind: corollary
-title: Burnside's Lemma
+title: Burnside's lemma
 classification:
   areas:
   - algebra
@@ -14,13 +14,15 @@ relations: []
 review: draft
 ---
 
-:::{.corollary}
-For $G$ a finite group acting on $X$, 
-\[
-\size  {X/G} = \frac{1}{\size  G }\sum_{g\in G} \size  \Fix(g)
-,\]
-where $X/G = \ts{\Orb(x_1), \cdots, \Orb(x_n)}$ is the set or orbits and $\Fix(g) = \ts{x\in X \st gx=x}$ are the fixed points under $g$.
+::: {.corollary}
+Let $G$ be a finite group [[D-WYC7C|acting]] on a finite set $X$.
+Let $X/G$ be the set of orbits, and for $g\in G$ let $\Fix(g) = \theset{x\in X \st gx=x}$.
+Then
+$$
+\size (X/G) = \frac{1}{\size G}\sum_{g\in G} \size \Fix(g).
+$$
+:::
 
-> Slogan: the number of orbits is equal to the average number of fixed points.
-
+::: {.remark}
+The number of orbits is the average over $G$ of the number of fixed points.
 :::

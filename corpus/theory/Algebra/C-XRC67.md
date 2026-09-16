@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-XRC67
 kind: corollary
-title: The coset counting formula $\# G = [G:H]\,\#H$
+title: 'Coset counting formula $\# G = [G:H]\,\#H$'
 classification:
   areas:
   - algebra
@@ -15,12 +15,12 @@ relations:
 review: draft
 ---
 
-:::{.corollary}
-\[
-\# G = \#(G/H) \#H \da [G:H] \, \# H
-,\]
-or written another way,
-\[
-\#(G/H) = \# G/ \# H
-.\]
+::: {.corollary}
+Let $G$ be a finite group, let $H\leq G$ be a [[D-IQ4OX|subgroup]], and let $G/H$ be the set of left cosets of $H$ in $G$, so that $[G:H] = \# (G/H)$ is the [[D-VJGH5|index]] of $H$.
+Then
+$$
+\# G = [G:H]\, \# H,
+\qquad\text{equivalently}\qquad
+[G:H] = \frac{\# G}{\# H}.
+$$
 :::

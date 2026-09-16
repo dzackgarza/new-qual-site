@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-A6UAR
 kind: corollary
-title: The Class Equation
+title: Class equation
 classification:
   areas:
   - algebra
@@ -14,15 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.corollary}
-\[
-\# {G} = \# {Z(G)} + \sum_{\substack{\text{One $g$ from} \\ \text{each nontrivial} \\ \text{conj. class}}} [G: Z(g)]
-\]
-
-As a reminder,
-\[
-Z(g) &= \ts{h\in G \st hgh\inv = g} \text{ is the centralizer of } g\\
-Z(G) &= \ts{h\in G \st hgh\inv = g\,\, \forall g\in G} = \Intersect_{g\in G} Z(g) \text{ is the center of } G
-.\]
-
+::: {.corollary}
+Let $G$ be a finite group with [[D-NK7G7|center]] $Z(G)$, and for $g\in G$ let $Z(g) = \theset{h\in G \st hgh^{-1} = g}$ be the [[D-PX64W|centralizer]] of $g$.
+Let $g_1, \ldots, g_r$ be representatives of the [[D-HLDEY|conjugacy classes]] of $G$ that have more than one element.
+Then
+$$
+\# G = \# Z(G) + \sum_{i=1}^{r} [G : Z(g_i)],
+$$
+where $[G:Z(g_i)]$ is the [[D-VJGH5|index]] of $Z(g_i)$ in $G$.
 :::
