@@ -17,23 +17,40 @@ source:
   sections:
   - name: Chapter 12 exercises
     problems:
-    - P-CH12-3
-    - P-CH12-4
-    - P-CH12-6
-    - P-CH12-9
-    - P-CH12-12
-    - P-CH12-17
-    - P-CH12-19
-    - P-CH12-20
-    - P-CH12-27
-    - P-CH12-31
-    - P-CH12-33
-    - P-CH12-38
-    - P-CH12-42
-    - P-CH12-43
-    - P-CH12-45
-    - P-CH12-46
-    - P-CH12-50
+    - id: P-CH12-3
+      comment: Exercise 3
+    - id: P-CH12-4
+      comment: Exercise 4
+    - id: P-CH12-6
+      comment: Exercise 6
+    - id: P-CH12-9
+      comment: Exercise 9
+    - id: P-CH12-12
+      comment: Exercise 12
+    - id: P-CH12-17
+      comment: Exercise 17
+    - id: P-CH12-19
+      comment: Exercise 19
+    - id: P-CH12-20
+      comment: Exercise 20
+    - id: P-CH12-27
+      comment: Exercise 27
+    - id: P-CH12-31
+      comment: Exercise 31
+    - id: P-CH12-33
+      comment: Exercise 33
+    - id: P-CH12-38
+      comment: Exercise 38
+    - id: P-CH12-42
+      comment: Exercise 42
+    - id: P-CH12-43
+      comment: Exercise 43
+    - id: P-CH12-45
+      comment: Exercise 45
+    - id: P-CH12-46
+      comment: Exercise 46
+    - id: P-CH12-50
+      comment: Exercise 50
   date:
     kind: unknown
 ---
