@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-HRUA3
 kind: fact
-title: Nowhere dense set
+title: Nowhere dense sets
 prompts:
 - What does it mean for a set to be nowhere dense?
 classification:
@@ -16,9 +16,14 @@ review: draft
 ---
 
 ::: {.fact}
-A set is $A$ **nowhere dense** if its closure has empty interior $\qty{\overline{A}}^\circ$, equivalently it is not dense in *any* nonempty open set.
+Let $X$ be a topological space and $A\subseteq X$.
+The following are equivalent:
 
-For ${\mathbf{R}}$, every interval $I$ contains a subinterval $S\subset I$ with $S\cap A = \emptyset$, i.e. its closure contains no intervals.
+- $A$ is [[D-2MJRE|nowhere dense]] in $X$, that is, $\qty{\overline{A}}^\circ = \emptyset$;
 
-Intuition: elements are not tightly clustered, set is full of holes.
+- every nonempty open set $U\subseteq X$ contains a nonempty open set $V$ with $V\cap A = \emptyset$;
+
+- $A$ is not [[FD-BA2WU|dense]] in any nonempty open subset of $X$.
+
+For $X = \RR$, $A$ is nowhere dense if and only if every open interval $I$ contains an open interval $S\subseteq I$ with $S\cap A = \emptyset$, that is, $\overline{A}$ contains no open interval.
 :::
