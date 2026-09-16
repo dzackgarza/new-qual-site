@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-EPQ54
 kind: definition
-title: Semilocally Simply Connected
+title: Semilocally simply connected space
 classification:
   areas:
   - topology
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **semilocally simply connected** if every $x\in X$ has a neighborhood $U$ such that $U\injects X$ induces the trivial map $\pi_1(U;x) \to \pi_1(X, x)$.
+A topological space $X$ is \dfn{semilocally simply connected} if every $x\in X$ has a [[D-JMRPA|neighborhood]] $U$ such that the homomorphism $\pi_1(U, x)\to\pi_1(X, x)$ of [[D-EBNUE|fundamental groups]] induced by the inclusion $U\hookrightarrow X$ is trivial.
 :::
