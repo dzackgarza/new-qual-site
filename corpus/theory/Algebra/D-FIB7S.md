@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-FIB7S
 kind: definition
-title: p-groups
+title: $p$-groups
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-If $\abs{G} = p^k$, then $G$ is a **p-group.**
+Let $p$ be a prime.
+A finite group $G$ is a \dfn{$p$-group} if $\abs{G} = p^k$ for some integer $k\geq 0$.
 :::

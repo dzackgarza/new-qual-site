@@ -14,7 +14,19 @@ review: draft
 ---
 
 ::: {.definition}
-A subgroup $N\leq G$ is **normal** iff $gH = Hg$ for every $g\in G$, or equivalently $gHg\inv = H$ for all $g$, so $H$ has only itself as a conjugate.
-We denote this by $N\normal G$.
-Equivalently, for every inner automorphism $\psi \in \Inn(G)$, $\psi(N) = N$.
+Let $G$ be a group.
+A [[D-IQ4OX|subgroup]] $N\leq G$ is \dfn{normal}, written $N\normal G$, if $gNg^{-1} = N$ for every $g\in G$.
+:::
+
+::: {.proposition}
+Let $G$ be a group and $N\leq G$.
+The following are equivalent:
+
+1. $N\normal G$.
+
+2. $gN = Ng$ for every $g\in G$.
+
+3. $\psi(N) = N$ for every inner automorphism $\psi \in \Inn(G)$.
+
+4. $N$ is the only subgroup of $G$ [[D-ES7MP|conjugate]] to $N$.
 :::

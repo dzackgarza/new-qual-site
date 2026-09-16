@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-DU4UQ
 kind: definition
-title: Gorenstein Rings
+title: Gorenstein ring
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.definition}
-A commutative Noetherian ring $R$ is **Gorenstein** iff $R$ viewed as an $R\dash$module has finite injective dimension.
+A commutative [[D-TZXBO|Noetherian]] ring $R$ is \dfn{Gorenstein} if $R$, as a module over itself, has finite injective dimension.
 :::
