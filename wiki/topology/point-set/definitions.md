@@ -29,13 +29,11 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-3KS2F]] [[D-2GCTV]] [[D-KW52R]]
 
-[[D-ZNVPP]]
+[[D-YO6NZ]]
 
 [[D-3KS2F]]
 
 [[D-MVBYO]]
-
-[[D-YO6NZ]]
 
 [[D-FAEYE]]
 

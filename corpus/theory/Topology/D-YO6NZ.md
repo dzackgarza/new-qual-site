@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space.
 A \dfn{separation} of $X$ is a pair $(U, V)$ of disjoint nonempty open subsets of $X$ with $X = U\union V$.
-The space $X$ is \dfn{disconnected} if it has a separation, and [[D-ZNVPP|connected]] otherwise.
+The space $X$ is \dfn{disconnected} if it has a separation, and connected otherwise.
 :::
 
 ::: {.proposition}

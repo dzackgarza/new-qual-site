@@ -36,7 +36,7 @@ Each copy of $\RR$ is Hausdorff, and the two origins have no disjoint neighborho
 :::
 
 ::: {.example title="A connected space need not be path connected"}
-The topologist's sine curve $\ts{(x,\sin(1/x)) \st 0<x\leq 1}\union \ts{0}\times[-1,1]$ is [[D-ZNVPP|connected]] and not [[D-X73EB|path connected]].
+The topologist's sine curve $\ts{(x,\sin(1/x)) \st 0<x\leq 1}\union \ts{0}\times[-1,1]$ is [[D-YO6NZ|connected]] and not [[D-X73EB|path connected]].
 It is also not [[D-GYBZ2|locally connected]].
 
 :::
