@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-UZVC3
 kind: proposition
-title: Limit and integral need not commute
+title: Limits and integrals need not commute
 classification:
   areas:
   - real-analysis
@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\lim_{n\to \infty} \int_a^b f_n(x) \,dx \neq \int_a^b \lim_{n\to \infty} \qty{ f_n(x) } \,dx
-.\]
+::: {.proposition}
+For $n\geq1$ let $f_n\coloneqq n\chi_{(0,1/n)}\colon[0,1]\to\RR$.
+Then $f_n(x)\to0$ for every $x\in[0,1]$, but
+$$
+\lim_{n\to \infty} \int_0^1 f_n(x) \,dx = 1 \neq 0 = \int_0^1 \lim_{n\to \infty} f_n(x) \,dx .
+$$
 :::
