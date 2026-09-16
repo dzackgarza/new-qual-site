@@ -21,6 +21,4 @@ For every real $c>1$,
 $$
 1 \prec \log(\log n) \prec \log n \prec n \prec n\log n \prec n^{c} \prec c^n \prec n!.
 $$
-
-![](https://i.imgur.com/M9u3lOr.png)
 :::
