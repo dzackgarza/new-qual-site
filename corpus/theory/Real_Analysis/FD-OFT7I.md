@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-OFT7I
 kind: definition
-title: 'Definition: Measurable Function'
+title: Lebesgue and Borel measurable functions
 prompts:
 - Which preimages must be measurable for $f$ to be a measurable function?
 classification:
@@ -15,11 +15,10 @@ review: draft
 ---
 
 ::: {.definition}
-$f:\RR \to \bar \RR$ is Lebesgue/Borel measurable iff
+Let $\mathcal{M}_L$ and $\mathcal{M}_B$ be the $\sigma$-algebras of [[D-MDJII|Lebesgue measurable]] and Borel subsets of $\RR$, let $E\in\mathcal{M}_L$, and let $f\colon E \to [-\infty,\infty]$.
+The function $f$ is \dfn{Lebesgue measurable} if
 $$
-\{x \in E \mid f(x)>a\}=f^{-1}((a, \infty]) \in \mathcal{M}_L, \mathcal{M}_B
-,$$
-the collection of Lebesgue/Borel measurable *sets* respectively.
-
-> Mnemonic: preimage of a ray should be a measurable set.
+\theset{x \in E \suchthat f(x)>a}=f^{-1}((a, \infty]) \in \mathcal{M}_L \quad\text{for every } a\in\RR.
+$$
+When $E\in\mathcal{M}_B$, the function $f$ is \dfn{Borel measurable} if $f^{-1}((a, \infty]) \in \mathcal{M}_B$ for every $a\in\RR$.
 :::
