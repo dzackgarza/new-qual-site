@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ZNVAT
 kind: proposition
-title: Translation Invariance
+title: Translation invariance of the Lebesgue integral
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,10 @@ relations:
 review: draft
 ---
 
-:::{.proposition}
-The Lebesgue integral is translation invariant, i.e.
-\[
-\int f(x) ~dx = \int f(x + h) ~dx &&\text{ for any } h
-.\]
-
+::: {.proposition}
+Let $f\in L^1(\RR^n)$ and $h\in\RR^n$.
+Then $x\mapsto f(x+h)$ lies in $L^1(\RR^n)$ and
+$$
+\int_{\RR^n} f(x+h)\dx = \int_{\RR^n} f(x)\dx.
+$$
 :::
