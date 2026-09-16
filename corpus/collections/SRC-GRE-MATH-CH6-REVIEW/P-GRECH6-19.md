@@ -9,10 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Re-transcribed from Chapter 6 review Question 19 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}
-How many $x\in\mathbb Z_{11}$ satisfy $x^{12}-x^{10}=2$?
+How many elements $x$ in the field $\ZZ_{11}$ satisfy the equation $x^{12} - x^{10} = 2$?
 
-(A) 1  (B) 2  (C) 3  (D) 4  (E) 5
+(A) $1$
+(B) $2$
+(C) $3$
+(D) $4$
+(E) $5$
 :::

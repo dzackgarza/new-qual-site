@@ -9,11 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Re-transcribed from Chapter 6 review Question 12 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}
-Let $p,q$ be distinct primes.
-How many mutually nonisomorphic abelian groups have order $p^2q^4$?
+Let $p$ and $q$ be distinct primes. How many (mutually nonisomorphic) Abelian groups are there of order $p^2 q^4$?
 
-(A) 6  (B) 8  (C) 10  (D) 12  (E) 16
+(A) $6$
+(B) $8$
+(C) $10$
+(D) $12$
+(E) $16$
 :::
