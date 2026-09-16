@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-KRKV7
 kind: definition
-title: The Quaternion Group
+title: Quaternion group $Q_8$
 classification:
   areas:
   - algebra
@@ -14,13 +14,20 @@ review: draft
 ---
 
 ::: {.definition}
-The **Quaternion group** of order 8 is given by
-\[
-Q &= \gens{x,y,z \suchthat x^2 = y^2 = z^2 = xyz = -1} \\
-  &= \gens{x, y \suchthat  x^4 = y^4, x^2 = y^2, yxy\inv = x\inv}
-\]
-Mnemonic: multiply clockwise to preserve sign, counter-clockwise to negate sign.
-Everything squares to $-1$, and the triple product is $-1$:
+The \dfn{quaternion group} is the group of order $8$
+$$
+\begin{aligned}
+Q_8 &= \gens{-1, i, j, k \suchthat (-1)^2 = 1,\ i^2 = j^2 = k^2 = ijk = -1} \\
+  &\cong \gens{x, y \suchthat  x^4 = y^4,\ x^2 = y^2,\ yxy^{-1} = x^{-1}},
+\end{aligned}
+$$
+where the isomorphism sends $x\mapsto i$ and $y\mapsto j$.
+Its elements are $\pm1,\pm i,\pm j,\pm k$.
+:::
+
+::: {.remark}
+Every element of $\theset{i,j,k}$ squares to $-1$, and $ijk=-1$.
+Products of two distinct elements of $\theset{i,j,k}$ taken along the cycle $i\to j\to k\to i$ are positive, $ij=k$, $jk=i$, $ki=j$, and products taken against the cycle are negative, $ji=-k$, $kj=-i$, $ik=-j$:
 
 \begin{tikzcd}
 	&& {-1} \\
@@ -37,6 +44,4 @@ Everything squares to $-1$, and the triple product is $-1$:
 	\arrow["{ji=-k}"', curve={height=30pt}, dashed, from=3-3, to=6-1]
 	\arrow["{ijk=-1}"', from=3-3, to=1-3]
 \end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMiwyLCJpIl0sWzMsNV0sWzAsNSwiayJdLFs0LDUsImoiXSxbMiwwLCItMSJdLFswLDMsImtpPWoiLDJdLFszLDIsImlqPWsiLDJdLFsyLDAsImprPWkiLDJdLFsyLDMsImlrPS1qIiwyLHsiY3VydmUiOjUsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDAsImtqPS1pIiwyLHsiY3VydmUiOjUsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDIsImppPS1rIiwyLHsiY3VydmUiOjUsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFswLDQsImlqaz0tMSIsMl1d)
 :::
