@@ -41,7 +41,3 @@ source:
     term: spring
     year: 1988
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Spring 1988. Problems are listed in paper order.
-:::
