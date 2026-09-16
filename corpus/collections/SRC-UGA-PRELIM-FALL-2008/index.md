@@ -31,6 +31,6 @@ source:
     year: 2008
 ---
 
-::: remark
-UGA Mathematics Preliminary Examination, August 12, 2008. All eight source positions are represented; Problem 4 retains an explicit source gap because the displayed matrix is malformed in the retained extraction and was not reconstructed heuristically.
+::: {.remark}
+UGA Mathematics Preliminary Examination, August 12, 2008, with eight problems.
 :::
