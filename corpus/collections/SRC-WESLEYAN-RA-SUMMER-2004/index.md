@@ -33,7 +33,3 @@ source:
   - P-WESRA04-P5
   - P-WESRA04-P6
 ---
-
-::: remark
-The deterministic MinerU Flash extraction renders the operator in Real Analysis Problem 2 as `\varinjlim`, while the retained card has the lower-semicontinuity statement with `\liminf`. Flash alone does not settle that glyph, so `P-WESRA04-P2` is retained but is not marked source-checked by this audit.
-:::
