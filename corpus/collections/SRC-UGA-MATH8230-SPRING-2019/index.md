@@ -49,5 +49,4 @@ source:
     year: 2019
 ---
 
-The collection records the numbered exercises in Mike Usher's retained UGA Math 8230 lecture notes.
-The source contains 17 actual exercise headings; the older Queue E count of 18 included a prose reference to Exercise 4.5 later in the notes.
+The 17 numbered exercises in Mike Usher's lecture notes for UGA Math 8230.
