@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-KKJ6O
 kind: proposition
-title: Continuity of Measure
+title: Continuity of measure from below and from above
 classification:
   areas:
   - real-analysis
@@ -13,13 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\text{Continuity from below:} \quad 
-E_{n} \nearrow E &\implies m(E_{n}) \converges{n\to\infty}\too m(E) \\
-\text{Continuity from above:} \quad 
-m(E_{1}) < \infty \text{ and } E_{n} \searrow E &\implies m(E_{n}) \converges{n\to\infty}\too m(E)
-.\]
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $E_n\in\mcm$ for $n\geq1$ [@Fol13, Theorem 1.8].
 
-Mnemonic: $\lim_n \mu(E_n) = \mu(\lim E_n)$ where $\lim_n E_n = E\da \union_N E_n$ for $E_n \increasesto E$ and $\lim_n E_n = E \da \intersect_n E_n$ for $E_n\decreasesto E$.
+(a) If $E_1\subseteq E_2\subseteq\cdots$ and $E\coloneqq\bigcup_{n\geq1}E_n$, then $\mu(E_n)\to\mu(E)$.
+
+(b) If $E_1\supseteq E_2\supseteq\cdots$, $\mu(E_1)<\infty$, and $E\coloneqq\bigcap_{n\geq1}E_n$, then $\mu(E_n)\to\mu(E)$.
+:::
+
+::: {.example}
+The hypothesis $\mu(E_1)<\infty$ in (b) is needed: for Lebesgue measure $m$ on $\RR$ and $E_n\coloneqq[n,\infty)$, $m(E_n)=\infty$ for all $n$ but $\bigcap_n E_n=\emptyset$.
 :::
