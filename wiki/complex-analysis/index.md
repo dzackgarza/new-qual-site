@@ -5,11 +5,11 @@ order: 30
 
 # Complex Analysis
 
-## What the exam asks
+## Recurring questions
 
-The paper is six recurring kinds of question, and each one is treated by a chapter here.
+The questions below recur on the exam papers in this corpus; each links to the page that treats it.
 
-| The question | Where it is treated |
+| Question | Page |
 | --- | --- |
 | Is this function holomorphic, and where? | [[complex-analysis/holomorphic-functions/is-it-holomorphic\|Is it holomorphic?]] |
 | Show that $f$ is constant | [[complex-analysis/cauchy-theory/theorems-that-give-a-constant\|Theorems that give a constant]] |
@@ -18,10 +18,10 @@ The paper is six recurring kinds of question, and each one is treated by a chapt
 | How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
 | Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
 
-Each of those pages is a decision procedure keyed on the form of the problem, since at minute forty that is all you have.
-The chapter behind each one carries the statements and proofs.
+Each of those pages is a decision procedure keyed on the form of the problem.
+The chapter containing it states and proves the results the procedure uses.
 
-## The chapters, in dependency order
+## Chapters
 
 1. [[complex-analysis/holomorphic-functions/index|Holomorphic functions]] -- arithmetic, the logarithm, Cauchy-Riemann, power series, harmonic functions.
 
@@ -35,15 +35,15 @@ The chapter behind each one carries the statements and proofs.
 
 6. [[complex-analysis/conformal-maps/index|Conformal maps]] -- Möbius transformations, Schwarz, Riemann mapping.
 
-Three pages sit across the chapters:
+Three pages collect material from several chapters:
 
-- [[complex-analysis/review|Review sheet]] -- every statement, on one page.
+- [[complex-analysis/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
 
 - [[complex-analysis/counterexamples|Counterexamples]] -- filed by the hypothesis each one shows is load-bearing.
 
 - [[complex-analysis/standard-integrals|Standard integrals]] -- the recurring ones, with their contours and estimates.
 
-Also here: [[complex-analysis/basics/index|background and reference]] for the undergraduate layer and the standard series, and [[complex-analysis/appendices/index|appendix notes]].
+[[complex-analysis/basics/index|Background and reference]] covers undergraduate analysis and standard series expansions; [[complex-analysis/appendices/index|Appendix notes]] holds supplementary proofs and special functions.
 
 ## The syllabus
 
@@ -130,6 +130,6 @@ Thanks to:
 - Mentzelos Melistas, for explaining and documenting many solutions.
 
 - Jingzhi Tie, for many additional problems and solutions.
-  Notation used with those problems: $f_x \definedas \dd{f}{x}$ for partial derivatives, and $\bd_z^n f$ for $f^{(n)}(z)$.
+  Notation used with those problems: $f_x \coloneqq \dd{f}{x}$ for partial derivatives, and $\bd_z^n f$ for $f^{(n)}(z)$.
 
 - Swaroop Hegde, for a number of proofs.
