@@ -107,7 +107,7 @@ The following results are developed on [[complex-analysis/singularities/index|Si
 
 [[T-ISZP3]]
 
-[[T-AELHU]]
+[[T-HWBWI]]
 
 ## Zero divisors
 
