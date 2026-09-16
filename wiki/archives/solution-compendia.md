@@ -13,7 +13,7 @@ title: Solution collections
 
 - [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-- [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1–5 (2003)]]: groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra.
+- [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1–5 (2003)]] — groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra.
 
 - [[attachments/Ch6Sltns.pdf|Gallian, *Contemporary Abstract Algebra*, Chapter 6 selected solution outlines]]
 
