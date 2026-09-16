@@ -321,7 +321,7 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-4QNEW]]
 
-[[D-YTISD]]
+[[D-MWD2L]]
 
 [[D-MGRZP]]
 

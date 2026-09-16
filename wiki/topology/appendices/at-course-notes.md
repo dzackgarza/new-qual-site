@@ -78,4 +78,4 @@ order: 200
 
   * The action of the fundamental group on fibers
 
-  * [[D-YTISD|Normal (regular) covers]]
+  * [[D-MWD2L|Normal (regular) covers]]
