@@ -9,25 +9,21 @@ topics:
 
 # Meromorphic functions
 
-A function whose only singularities are poles: holomorphic everywhere except at a discrete set, and blowing up in the mildest possible way at each point of it.
+A meromorphic function on an open set is holomorphic except on a discrete set, at each point of which it has a pole.
 
 [[D-7DFVJ]]
 
 [[T-UBWL2]]
 
 ::: {.proof}
-Consider $f(z) - P(z)$, subtracting off the principal part at each pole, to obtain a bounded entire function, and apply Liouville.
-:::
-
-::: {.remark title="Why the proof is short"}
-Every step is a theorem already in hand.
-The principal part at a pole is a finite sum of powers of $(z-z_0)\inv$, so subtracting it is legal and leaves a function with removable singularities.
-Finiteness of the pole set makes the subtraction finite, and Liouville turns bounded-and-entire into constant.
-This is the standard shape of a meromorphic-function argument: remove the poles, then quote a theorem about entire functions.
+Since $\infty$ is removable or a pole, $f$ has no poles in $\ts{\abs z > R}$ for some $R$, and the poles in the compact disc $\abs z\leq R$ are isolated, hence finitely many: $z_1,\ldots,z_N$.
+Let $P_j$ be the principal part of $f$ at $z_j$, a polynomial in $(z-z_j)\inv$ without constant term, and let $P_\infty$ be the polynomial part of the Laurent series of $f$ on $\abs z>R$ with its constant term omitted, so that $f - P_\infty$ is bounded near $\infty$.
+Then $g \coloneqq f - P_\infty - \sum_j P_j$ has only removable singularities in $\CC$, so it extends to an entire function, and it is bounded near $\infty$ because each $P_j\to 0$ as $z\to\infty$.
+By Liouville's theorem $g$ is constant, so $f = g + P_\infty + \sum_j P_j$ is rational.
 :::
 
 [[T-DB3DO]]
 
-::: {.remark title="Where they appear"}
-A meromorphic function is what the [[complex-analysis/counting-zeros/the-argument-principle|argument principle]] counts, and it is the natural class for [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]] -- the residue at a pole is defined by the Laurent expansion, and meromorphic says every singularity has one with finitely many negative terms.
+::: {.remark}
+The [[complex-analysis/counting-zeros/the-argument-principle|argument principle]] counts zeros minus poles of a meromorphic function, and [[complex-analysis/residues-and-contours/the-residue-theorem|the residue theorem]] applies to meromorphic functions with finitely many poles in the region, where each residue is the coefficient $c_{-1}$ of a Laurent series with finitely many negative terms.
 :::
