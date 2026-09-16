@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-BSOZF
 kind: theorem
-title: Dirichlet's Test
+title: Dirichlet's test
 prompts:
 - What hypotheses does Dirichlet's test put on $\theset{a_n}$ and $\theset{b_n}$?
 classification:
@@ -18,11 +18,11 @@ review: draft
 ---
 
 ::: {.theorem}
-If $\theset{a_n}, \theset{b_n}$ satisfy
+Let $(a_n)_{n\ge1}$ be a sequence of real numbers and $(b_n)_{n\ge1}$ a sequence of complex numbers such that
 
-- $a_n \searrow 0$
+- $(a_n)$ is nonincreasing and $a_n\to0$, and
 
-- For every $N$, there exists an $M_N$ such that $\abs{\sum_{n=1}^N b_n} \leq M_N$
+- there exists $M\ge0$ such that $\abs{\sum_{n=1}^N b_n} \leq M$ for every $N\ge1$.
 
-Then $$ \sum_{n=1}^\infty a_n b_n < \infty .$$
+Then the series $\sum_{n=1}^\infty a_n b_n$ converges.
 :::

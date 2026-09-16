@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-EAZX6
 kind: lemma
-title: Dirichlet's Test
+title: Dirichlet's test
 classification:
   areas:
   - complex-analysis
@@ -13,14 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.lemma}
-Given two sequences of real numbers \( \ts{ a_k } , \ts{ b_k } \) which satisfy
+::: {.lemma}
+Let $(a_k)_{k\ge1}$ and $(b_k)_{k\ge1}$ be sequences of real numbers, and let $A_n\coloneqq\sum_{k=1}^n a_k$.
+Suppose that
 
-1. The sequence of partial sums \( \ts{ A_n } \) is bounded,
-2. $b_k \searrow 0$.
+1. the sequence of partial sums $(A_n)_{n\ge1}$ is bounded, and
+2. $(b_k)$ is nonincreasing and $b_k\to0$.
 
-then 
-\[
-\sum_{k\geq 1} a_k b_k < \infty
-.\]
+Then the series $\sum_{k\geq 1} a_k b_k$ converges.
 :::

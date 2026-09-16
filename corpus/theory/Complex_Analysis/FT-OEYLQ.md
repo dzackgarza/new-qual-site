@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-OEYLQ
 kind: theorem
-title: Open Mapping Theorem
+title: Open mapping theorem
 prompts:
 - State the open mapping theorem.
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f: \Omega \to \CC$ is holomorphic and not constant on $\Omega$, then $f$ is an open map.
+Let $\Omega\subseteq\CC$ be a connected open set and let $f\colon \Omega \to \CC$ be [[D-E7A5W|holomorphic]] and nonconstant.
+Then $f$ is an open map: $f(U)$ is open for every open set $U\subseteq\Omega$.
 :::

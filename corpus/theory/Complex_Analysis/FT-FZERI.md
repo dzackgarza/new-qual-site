@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-FZERI
 kind: theorem
-title: Rouche's Theorem
+title: Rouché's theorem
 prompts:
 - What does Rouche's theorem conclude about the zero counts of $f$ and $g$?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f, g$ are holomorphic on $\bar{D}(z_0)$ and $\abs{f - g} < \abs{f} + \abs{g}$ on $\bd D$, then $f,g$ are nonvanishing on $\bd D$ and have the same number of zeros.
+Let $D=\theset{z : \abs{z-z_0}<R}$, and let $f,g$ be [[D-E7A5W|holomorphic]] on an open set containing $\overline D$.
+If $\abs{f(z) - g(z)} < \abs{f(z)} + \abs{g(z)}$ for all $z\in\bd D$, then $f$ and $g$ are nonvanishing on $\bd D$ and have the same number of [[D-65VIK|zeros]] in $D$, counted with multiplicity.
 :::
