@@ -14,9 +14,11 @@ relations:
 review: draft
 ---
 
+::: {.problem}
 - $X$ is compact
 
 - Every infinite subset $A\subseteq X$ has a limit point in $X$.
+:::
 
 ::: {.remark}
 These are the first two conditions of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without their stem.

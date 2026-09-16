@@ -14,7 +14,9 @@ relations:
 review: draft
 ---
 
+::: {.problem}
 - Every sequence in $X$ has a convergent subsequence in $X$.
+:::
 
 ::: {.remark}
 This is the third condition of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without its stem.

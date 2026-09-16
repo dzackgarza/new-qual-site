@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that $[0, 1]$ is connected.
+:::
 
 ::: {.solution}
 ::: {.concept}

@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $f : X \to Y$ be a continuous function, with $X$ compact.
 Show that $f(X)$ is compact.
+:::
 
 ::: {.solution}
 ::: {.concept}
