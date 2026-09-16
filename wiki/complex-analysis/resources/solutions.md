@@ -2,13 +2,13 @@
 order: 20
 ---
 
-# Solutions (Complex)
+# Solutions
 
-- [UCSD 2014 Qual with Solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
+- [UCSD complex analysis qualifying exam, Spring 2014, with solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf)
 
 - [Minnesota complex analysis exam, Fall 2015](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf)
 
-- [Chateley's complex analysis qual solutions](http://www.jchateley.com/project/complex_qual.pdf), arranged by topic.
+- [Chateley, complex analysis qualifying exam solutions](http://www.jchateley.com/project/complex_qual.pdf), arranged by topic.
 
 - [Minnesota complex analysis prelim solutions](http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf)
 
@@ -16,39 +16,39 @@ order: 20
 
 - [Indian Statistical Institute complex-analysis solutions, 2009–10](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10)
 
-- [[Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]] — sixteen numbered practice problems with worked solutions, represented in source order by `SRC-COMPLEX-ANALYSIS-EXAM-PREP`.
+- [[Complex_Analysis_Exam_Prep_Solutions.pdf|Complex-analysis exam-prep solutions]]: sixteen numbered practice problems with worked solutions.
 
 - [Berkeley Math 185 problem set 7 solutions, Fall 2009](attachments/math185f09-hw7sol.pdf)
 
 - [[complex_prelim.pdf|Bahran, Solutions to Complex Prelim Problems (Minnesota)]]
 
-- [Berkeley final solutions](https://math.berkeley.edu/~nikhil/courses/185.f15/finalsol.pdf)
+- [Berkeley Math 185, Fall 2015, final exam solutions](https://math.berkeley.edu/~nikhil/courses/185.f15/finalsol.pdf)
 
-- [Antieau midterms solutions](https://math.northwestern.edu/~antieau/201202-132/midterm-sols.pdf)
+- [Benjamin Antieau, Northwestern midterm solutions](https://math.northwestern.edu/~antieau/201202-132/midterm-sols.pdf)
 
-- [Rudin solutions](https://pages.uoregon.edu/ncp/Courses/Math618_Sp20_Web/HW/618_Sp20_HW06_Soln.pdf)
+- [University of Oregon Math 618, Spring 2020, homework 6 solutions](https://pages.uoregon.edu/ncp/Courses/Math618_Sp20_Web/HW/618_Sp20_HW06_Soln.pdf)
 
-## Solutions from courses
+## Course solutions
 
-Some homework solutions from an undergrad course at Berkeley:
+Berkeley Math 185 problem set solutions:
 
-- [PSet 1](https://math.berkeley.edu/~murphy/185-Solutions1.pdf)
+- [Problem set 1](https://math.berkeley.edu/~murphy/185-Solutions1.pdf)
 
-- [PSet 2](https://math.berkeley.edu/~murphy/185-Solutions2.pdf)
+- [Problem set 2](https://math.berkeley.edu/~murphy/185-Solutions2.pdf)
 
-- [PSet 3](https://math.berkeley.edu/~murphy/185-Solutions3.pdf)
+- [Problem set 3](https://math.berkeley.edu/~murphy/185-Solutions3.pdf)
 
-- [PSet 4](https://math.berkeley.edu/~murphy/185-Solutions4.pdf)
+- [Problem set 4](https://math.berkeley.edu/~murphy/185-Solutions4.pdf)
 
-- [PSet 5](https://math.berkeley.edu/~murphy/185-Solutions5.pdf)
+- [Problem set 5](https://math.berkeley.edu/~murphy/185-Solutions5.pdf)
 
-- [PSet 6](https://math.berkeley.edu/~murphy/185-Solutions6.pdf)
+- [Problem set 6](https://math.berkeley.edu/~murphy/185-Solutions6.pdf)
 
-- [PSet 7](https://math.berkeley.edu/~murphy/185-Solutions7.pdf)
+- [Problem set 7](https://math.berkeley.edu/~murphy/185-Solutions7.pdf)
 
-- [PSet 8](https://math.berkeley.edu/~murphy/185-Solutions8.pdf)
+- [Problem set 8](https://math.berkeley.edu/~murphy/185-Solutions8.pdf)
 
-- [PSet 9](https://math.berkeley.edu/~murphy/185-Solutions9.pdf)
+- [Problem set 9](https://math.berkeley.edu/~murphy/185-Solutions9.pdf)
 
 UBC Math 440/508, Fall 2017:
 
@@ -76,18 +76,18 @@ UBC Math 440/508, Fall 2017:
 
 - [Quiz 12 solution](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Quiz12-Solution.pdf)
 
-- [Homework 1 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_1_Solutions.pdf)
+- [Homework 1 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_1_Solutions.pdf)
 
-- [Homework 2 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_2_Solutions.pdf)
+- [Homework 2 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_2_Solutions.pdf)
 
-- [Homework 3 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_3_Solutions.pdf)
+- [Homework 3 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_3_Solutions.pdf)
 
-- [Homework 4 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf)
+- [Homework 4 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf)
 
-- [Homework 5 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_5_Solutions.pdf)
+- [Homework 5 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_5_Solutions.pdf)
 
-- [Homework 6 solutions.](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_6_Solutions.pdf)
+- [Homework 6 solutions](https://personal.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_6_Solutions.pdf)
 
-Misc:
+UCSD Math 220A, Fall 2017:
 
-- [Conway exercise solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)
+- [Homework 6 solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)
