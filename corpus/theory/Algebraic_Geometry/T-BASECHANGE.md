@@ -48,11 +48,7 @@ If $f$ is quasicompact and separated, $g$ is flat, and $\mathcal{F}$ is quasicoh
 
 ::: {.corollary title="Extension of the base field"}
 Let $X$ be a quasicompact separated scheme over a field $k$, $\mathcal{F}$ a quasicoherent sheaf on $X$, and $K/k$ a field extension, with $X_K = X \times_k \Spec K$ and $\mathcal{F}_K$ the pullback of $\mathcal{F}$.
-Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $i$; in particular $\dim_k H^i(X, \mathcal{F}) = \dim_K H^i(X_K, \mathcal{F}_K)$.
-:::
-
-::: {.proof}
-Every $k$-vector space is flat over $k$, so flat base change applies to $\Spec K \to \Spec k$: the Čech complex of $\mathcal{F}_K$ for the pulled-back affine cover is $C^\bullet(\mathcal{U}, \mathcal{F}) \otimes_k K$, and the exact functor $- \otimes_k K$ commutes with cohomology.
+Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $i$; in particular $\dim_k H^i(X, \mathcal{F}) = \dim_K H^i(X_K, \mathcal{F}_K)$ [@Har10a, Proposition III.9.3].
 :::
 
 ::: {.theorem title="Proper base change"}

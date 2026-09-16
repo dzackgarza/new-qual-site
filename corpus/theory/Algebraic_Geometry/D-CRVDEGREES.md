@@ -52,18 +52,6 @@ Let $C$ be a regular projective integral curve over $k$.
 
 2. For a locally free sheaf $\mathcal{E}$ of rank $r$ and an invertible sheaf $\mathcal{L}$, $\chi(\mathcal{E} \otimes \mathcal{L}) = \chi(\mathcal{E}) + r \deg \mathcal{L}$.
 
-3. If $\pi \colon C' \to C$ is a finite surjective morphism from a projective integral curve, then $\deg_{C'} \pi^* \mathcal{L} = (\deg \pi)(\deg_C \mathcal{L})$.
+3. If $\pi \colon C' \to C$ is a finite surjective morphism from a projective integral curve, then $\deg_{C'} \pi^* \mathcal{L} = (\deg \pi)(\deg_C \mathcal{L})$ [@Har10a, Proposition II.6.9].
 :::
 
-::: {.proof}
-1. For a closed point $p$ and any divisor $D$, tensoring $0 \to \OO_C(-p) \to \OO_C \to \OO_p \to 0$ with the invertible sheaf $\OO_C(D + p)$ gives $0 \to \OO_C(D) \to \OO_C(D+p) \to \kappa(p) \to 0$, since $\OO_p \otimes \OO_C(D+p) \cong \OO_p$.
-   So $\chi(\OO_C(D+p)) = \chi(\OO_C(D)) + \deg p$, and induction from $D = 0$ in both directions gives $\chi(\OO_C(D)) = \deg D + \chi(\OO_C)$.
-   A nonzero rational section $s$ of $\mathcal{L}$ gives $\mathcal{L} \cong \OO_C(\div s)$.
-
-2. Write $\mathcal{L} \cong \OO_C(D)$.
-   The sequence in step 1 tensored with $\mathcal{E}$ gives $0 \to \mathcal{E}(D) \to \mathcal{E}(D+p) \to \mathcal{E} \otimes \kappa(p) \to 0$ with $\dim_k \mathcal{E} \otimes \kappa(p) = r \deg p$, and the same induction applies.
-
-3. Let $n = \deg \pi$ and $\mathcal{E} = \pi_* \OO_{C'}$, locally free of rank $n$ because $C$ is regular.
-   Since $\pi$ is affine, $\chi(C', \mathcal{G}) = \chi(C, \pi_* \mathcal{G})$ for coherent $\mathcal{G}$, and the projection formula gives $\pi_* \pi^* \mathcal{L} \cong \mathcal{L} \otimes \mathcal{E}$.
-   So $\deg \pi^* \mathcal{L} = \chi(C, \mathcal{L} \otimes \mathcal{E}) - \chi(C, \mathcal{E}) = n \deg \mathcal{L}$ by step 2.
-:::

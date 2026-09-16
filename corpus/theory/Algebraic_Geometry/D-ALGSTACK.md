@@ -54,7 +54,7 @@ An algebraic stack $\mathcal{X}$ over $S$ is \dfn{smooth over $S$} if for some s
 :::
 
 ::: {.remark}
-Smoothness of $U \to S$ does not depend on the atlas: for two atlases $U, U'$, the projections $U \times_{\mathcal{X}} U' \to U$ and $U \times_{\mathcal{X}} U' \to U'$ are smooth and surjective, and smoothness over $S$ is local on the source for the smooth topology.
+Smoothness of $U \to S$ does not depend on the choice of smooth atlas.
 :::
 
 ::: {.definition title="Orbifold"}

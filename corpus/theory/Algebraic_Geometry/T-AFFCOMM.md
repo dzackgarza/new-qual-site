@@ -19,7 +19,7 @@ relations:
   target: D-MORLOCAL
 review: draft
 prompts:
-- State and prove the affine communication lemma.
+- State the affine communication lemma.
 - Why is integrality not an affine-local property?
 ---
 
@@ -30,28 +30,7 @@ Let $X$ be a scheme and $P$ a property of affine open subschemes of $X$ such tha
 
 2. if $\Spec A \subseteq X$ is an affine open, $f_1, \ldots, f_n \in A$ generate the unit ideal, and every $\Spec A_{f_i}$ has $P$, then $\Spec A$ has $P$.
 
-If $X$ has a cover by affine opens $\Spec A_i$ with $P$, then every affine open of $X$ has $P$.
-:::
-
-<1>1. Let $U = \Spec A$ and $V = \Spec B$ be affine opens of $X$. Every point $p \in U \cap V$ has an open neighbourhood $W \subseteq U \cap V$ that is distinguished in both: $W = \Spec A_a = \Spec B_b$ for some $a \in A$, $b \in B$.
-
-::: {.proof}
-Choose $f \in A$ with $p \in \Spec A_f \subseteq U \cap V$, and then $g \in B$ with $p \in \Spec B_g \subseteq \Spec A_f$.
-The restriction of $g$ to the affine scheme $\Spec A_f$ is an element $g' = h / f^m$ of $A_f$ with $h \in A$, and $\Spec B_g$ is the locus in $\Spec A_f$ where $g'$ does not vanish, which is $\Spec (A_f)_{g'} = \Spec A_{fh}$.
-So $W = \Spec B_g$ is distinguished in $U$, with $a = fh$, and in $V$, with $b = g$.
-:::
-
-<1>2. Every affine open $U = \Spec A$ of $X$ is covered by distinguished opens $\Spec A_a$ that have $P$.
-
-::: {.proof}
-Each $p \in U$ lies in some $\Spec A_i$ of the given cover. By step <1>1 there is $W = \Spec A_a = \Spec (A_i)_b$ containing $p$, and $W$ has $P$ by hypothesis 1 applied to $\Spec A_i$.
-:::
-
-<1>3. Q.E.D.
-
-::: {.proof}
-$U = \Spec A$ is quasicompact, so by step <1>2 it is covered by finitely many $\Spec A_{a_j}$ with $P$.
-They cover $\Spec A$, so the $a_j$ generate the unit ideal ([[PR-SCHUNITCOVER]]), and hypothesis 2 gives $P$ for $U$.
+If $X$ has a cover by affine opens $\Spec A_i$ with $P$, then every affine open of $X$ has $P$ [@Vak25, Lemma 5.3.2].
 :::
 
 ::: {.example}

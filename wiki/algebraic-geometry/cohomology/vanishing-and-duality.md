@@ -54,7 +54,3 @@ Duality converts $h^2$ into $h^0(K-D)$, and the resulting inequality is the firs
 [[T-LEFHYP]]
 
 [[T-HARDLEF]]
-
-## Affineness and nilpotents
-
-[[T-AFFRED]]

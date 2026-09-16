@@ -38,15 +38,6 @@ A $\mathcal{G}$-torsor $\mathcal{P}$ is trivial exactly when $\mathcal{P}(X) \ne
 Isomorphism classes of $\mathcal{G}$-torsors trivialized on a covering $\mathfrak{U} = \{U_i \to X\}$ are in bijection with the Čech cohomology set $\check{H}^1(\mathfrak{U}, \mathcal{G})$, and all torsors with $\check{H}^1(X, \mathcal{G}) = \varinjlim_{\mathfrak{U}} \check{H}^1(\mathfrak{U}, \mathcal{G})$; for $\mathcal{G}$ abelian this is $H^1(X, \mathcal{G})$.
 :::
 
-::: {.proof}
-1. A section $p \in \mathcal{P}(X)$ gives the equivariant morphism $\mathcal{G} \to \mathcal{P}$, $g \mapsto pg$, which is an isomorphism by condition 2.
-   An equivariant morphism of torsors is an isomorphism locally, where both are trivial, hence an isomorphism.
-
-2. Choose $p_i \in \mathcal{P}(U_i)$.
-   On $U_{ij} = U_i \times_X U_j$ there is a unique $g_{ij} \in \mathcal{G}(U_{ij})$ with $p_j = p_i g_{ij}$, and uniqueness gives $g_{ij} g_{jk} = g_{ik}$ on $U_{ijk}$, a Čech $1$-cocycle.
-   Replacing $p_i$ by $p_i h_i$ replaces $g_{ij}$ by $h_i^{-1} g_{ij} h_j$, so the class is well defined, and gluing trivial torsors $\mathcal{G}|_{U_i}$ along left multiplication by $g_{ij}$ inverts the construction, using that $\mathcal{P}$ is a sheaf.
-:::
-
 ::: {.example}
 On a scheme $X$ with the Zariski topology, a $\GG_m = \OO_X^\times$-torsor is the sheaf of nowhere-vanishing local sections of an invertible sheaf $\mathcal{L}$, so $\Pic X \cong H^1(X, \OO_X^\times)$ ([[PR-DIVLB]]).
 Likewise $\operatorname{GL}_n$-torsors correspond to locally free sheaves of rank $n$, through their sheaves of local frames.

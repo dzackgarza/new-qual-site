@@ -34,18 +34,7 @@ $$\Hom_X(T, \operatorname{\mathbf{Spec}}_X \mathcal{A}) \cong \Hom_{\OO_X\text{-
 ::: {.proposition}
 The relative Spec exists and is unique up to unique isomorphism.
 For every affine open $V = \Spec B \subseteq X$ with $\mathcal{A}|_V \cong \widetilde{A}$ for a $B$-algebra $A$, $\pi^{-1}(V) \cong \Spec A$ over $V$.
-In particular $\pi$ is affine, $\pi_* \OO_{\operatorname{\mathbf{Spec}}_X \mathcal{A}} \cong \mathcal{A}$, and $\mathcal{A} \mapsto \operatorname{\mathbf{Spec}}_X \mathcal{A}$ is an anti-equivalence from quasicoherent $\OO_X$-algebras to affine morphisms with target $X$.
-:::
-
-::: {.proof}
-1. Uniqueness is the Yoneda lemma.
-
-2. For $X = \Spec B$ and $\mathcal{A} = \widetilde{A}$: a morphism of $B$-schemes $T \to \Spec A$ is the same as a $B$-algebra map $A \to \Gamma(T, \OO_T)$, and $B$-algebra maps $A \to \Gamma(T, \OO_T)$ are the same as $\OO_X$-algebra maps $\widetilde{A} \to t_* \OO_T$, because $\widetilde{(\cdot)}$ is left adjoint to global sections on $\Spec B$.
-   So $\Spec A$ represents the functor.
-
-3. For general $X$, cover $X$ by affine opens $V_i$ and put $Y_i = \Spec \mathcal{A}(V_i)$.
-   For $V_i \cap V_j$, the restrictions of $Y_i$ and $Y_j$ both represent the functor over $V_i \cap V_j$, so by step 1 they are identified by unique isomorphisms, which satisfy the cocycle condition by uniqueness.
-   The glued scheme represents the functor because morphisms into it, and $\OO_X$-algebra maps out of $\mathcal{A}$, are both determined locally on $X$.
+In particular $\pi$ is affine, $\pi_* \OO_{\operatorname{\mathbf{Spec}}_X \mathcal{A}} \cong \mathcal{A}$, and $\mathcal{A} \mapsto \operatorname{\mathbf{Spec}}_X \mathcal{A}$ is an anti-equivalence from quasicoherent $\OO_X$-algebras to affine morphisms with target $X$ ([[P-AGH2517AFFMOR]]).
 :::
 
 ::: {.definition title="Relative Proj"}

@@ -27,7 +27,6 @@ Let $R$ be a ring and consider functors on the category of $R$-schemes.
 ::: {.example title="Affine space"}
 The functor $X \mapsto \Gamma(X, \OO_X)^{n}$, sending a morphism $f \colon X' \to X$ to $(a_i) \mapsto (f^\sharp a_i)$, is represented by $\AA^n_R = \Spec R[x_1, \ldots, x_n]$, with universal element $(x_1, \ldots, x_n)$.
 
-Indeed, for an $R$-scheme $X$, morphisms of $R$-schemes $X \to \Spec R[x_1, \ldots, x_n]$ correspond to $R$-algebra maps $R[x_1, \ldots, x_n] \to \Gamma(X, \OO_X)$, and such a map is determined by the images of $x_1, \ldots, x_n$, which are arbitrary.
 Over $R = \ZZ$ this is the functor $X \mapsto \Gamma(X, \OO_X)^n$ on all schemes, represented by $\Spec \ZZ[x_1, \ldots, x_n]$: $n$ variables, not $n+1$.
 :::
 
@@ -35,7 +34,6 @@ Over $R = \ZZ$ this is the functor $X \mapsto \Gamma(X, \OO_X)^n$ on all schemes
 $\AA^n_R \setminus \{0\}$ denotes the open complement of $V(x_1, \ldots, x_n)$.
 It represents the functor sending $X$ to the set of $(a_1, \ldots, a_n) \in \Gamma(X, \OO_X)^n$ that are \dfn{unimodular}: the $a_i$ generate the unit ideal sheaf, that is, for every $x \in X$ some $a_i(x) \neq 0$ in $\kappa(x)$.
 
-Indeed, a morphism $X \to \AA^n_R$ with coordinates $(a_i)$ factors through the open subscheme $\AA^n_R \setminus \{0\}$ exactly when its image avoids $V(x_1, \ldots, x_n)$, which says that no point of $X$ is a common zero of the $a_i$.
 The condition is pointwise: on $X = \Spec k[t]$, the pair $(t, 0)$ is not the zero pair, but both entries vanish at $t = 0$, so it is not a point of $\AA^2_k \setminus \{0\}$.
 When $X = \Spec A$ it says $(a_1, \ldots, a_n) = A$.
 :::

@@ -40,16 +40,7 @@ A \dfn{normalization} of $X$ is a normal integral scheme $\widetilde{X}$ with a 
 ::: {.theorem title="Existence of the normalization"}
 Every integral scheme $X$ has a normalization, unique up to unique isomorphism.
 If $X = \Spec A$ is affine, $\widetilde{X} = \Spec \widetilde{A}$ for the integral closure $\widetilde{A}$ of $A$ in its fraction field, and in general $\widetilde{X}$ is obtained by gluing these over an affine cover.
-If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective.
-:::
-
-::: {.proof}
-1. For $X = \Spec A$, a dominant morphism $\Spec B \to \Spec A$ from a normal integral affine scheme is an injective ring map $A \to B$, which extends to fraction fields $K(A) \to K(B)$; the image of an element of $\widetilde{A}$ is integral over the image of $A$, hence lies in the integrally closed domain $B$, so $A \to B$ extends uniquely to $\widetilde{A} \to B$.
-   For a general normal integral $Y$, apply this on an affine cover of $Y$ and glue by uniqueness.
-
-2. Integral closure commutes with localization, $\widetilde{A_f} = \widetilde{A}_f$, so the affine normalizations glue over an affine cover of $X$, and the universal property holds by step 1 applied locally on $X$.
-
-3. For $A$ a finitely generated $k$-domain, $\widetilde{A}$ is a finite $A$-module (finiteness of integral closure), so $\nu$ is finite; it is birational because $K(\widetilde{A}) = K(A)$.
+If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective [@Har10a, Exercise II.3.8].
 :::
 
 ::: {.remark}

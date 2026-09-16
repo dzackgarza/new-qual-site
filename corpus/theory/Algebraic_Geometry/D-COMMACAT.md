@@ -54,11 +54,6 @@ A colimit of $F$ ([[D-5MX7E]]) is exactly an initial object of the category of c
 In particular a colimit is unique up to unique isomorphism.
 :::
 
-::: {.proof}
-An initial cocone $(L, \iota)$ is one for which every cocone $(N, \psi)$ receives a unique morphism $g \colon L \to N$ with $g \circ \iota_X = \psi_X$ for all $X$, which is the universal property defining the colimit.
-Two initial objects are related by a unique isomorphism, since the only endomorphism of an initial object is the identity.
-:::
-
 ::: {.example}
 For a presheaf $\mathcal{F}$ on a space $Y$ and a point $p \in Y$, the stalk $\mathcal{F}_p$ ([[D-0QSI0]]) is the colimit of the functor $U \mapsto \mathcal{F}(U)$ on the category of open neighbourhoods of $p$ with the opposite of inclusion, and the maps $\mathcal{F}(U) \to \mathcal{F}_p$, $s \mapsto s_p$, form the initial cocone.
 :::
