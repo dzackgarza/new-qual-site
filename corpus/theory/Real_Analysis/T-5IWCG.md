@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-5IWCG
 kind: theorem
-title: Functionals are continuous if and only if bounded
+title: Linear functionals are continuous if and only if bounded
 classification:
   areas:
   - real-analysis
@@ -15,11 +15,12 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $L:X \to \CC$ be a linear functional, then the following are equivalent:
+Let $(X,\norm{\cdot})$ be a normed vector space over $\CC$ and let $L\colon X \to \CC$ be a [[D-EPSKF|linear functional]].
+The following are equivalent:
 
-1. $L$ is continuous
+1. $L$ is continuous.
 
-2. $L$ is continuous at zero
+2. $L$ is continuous at $0$.
 
-3. $L$ is bounded, i.e. $\exists c\geq 0$ such that $\abs{L(x)} \leq c \norm{x}$ for all $x\in H$
+3. $L$ is bounded: there exists $c\geq 0$ such that $\abs{L(x)} \leq c \norm{x}$ for all $x\in X$.
 :::
