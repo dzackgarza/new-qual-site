@@ -30,17 +30,6 @@ If $q\colon C\to X$ is a covering map with $C$ path-connected, then there is a c
 In particular, $\hat X$ is unique up to isomorphism of covering spaces.
 :::
 
-::: {.proposition}
-Let $X$ be path-connected and locally path-connected, let $\tilde X\to X$ be a path-connected covering space, and let $H\coloneqq p_* \pi_1(\tilde X, \tilde x_0)\leq G\coloneqq \pi_1(X, x_0)$.
-Then
-
-- $\tilde X\to X$ is normal if and only if $H\normal G$;
-
-- $\Deck(\tilde X\to X) \cong N_{G}(H)/H$, where $N_G(H)$ is the normalizer of $H$ in $G$;
-
-- $\Deck(\tilde X\to X) \cong G/H$ if $\tilde X\to X$ is normal;
-
-- $\Deck(\hat{X} \to X) \cong G$ for the universal cover
-
-[@Hat02, Proposition 1.39, p. 71].
+::: {.remark}
+The [[D-4VGAW|deck transformation group]] of the universal cover is isomorphic to $\pi_1(X)$; deck groups of general covers are described in [[T-F4PQY]] [@Hat02, Proposition 1.39, p. 71].
 :::
