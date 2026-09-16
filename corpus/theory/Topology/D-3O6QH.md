@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-3O6QH
 kind: definition
-title: Separable spaces
+title: Separable space
 classification:
   areas:
   - topology
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **separable** iff $X$ contains a countable dense subset.
+A topological space $X$ is \dfn{separable} if there exists a countable subset $Q\subseteq X$ that is [[D-KJBAK|dense]] in $X$.
 :::
