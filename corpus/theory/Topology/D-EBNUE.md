@@ -35,5 +35,5 @@ In particular, if $X$ is [[D-X73EB|path connected]], the groups $\pi_1(X, x)$ fo
 :::
 
 ::: {.concept}
-See [@Hat02, §1.1, pp. 26--28, Propositions 1.3 and 1.5].
+See [@Hat02].
 :::

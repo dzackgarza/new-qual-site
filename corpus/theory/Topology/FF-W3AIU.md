@@ -23,6 +23,6 @@ $$
 \chi(\RP^2) = 1,\qquad
 \chi(K) = 0,
 $$
-where $\Sigma_g$ is the closed orientable surface of genus $g$ and $K$ is the Klein bottle [@Hat02, Examples 2.36--2.37 and Theorem 2.44, pp. 141, 146].
+where $\Sigma_g$ is the closed orientable surface of genus $g$ and $K$ is the Klein bottle [@Hat02].
 In particular $\chi(S^1) = 0$, $\chi(S^2) = 2$, $\chi(\Sigma_1) = 0$, $\chi(\Sigma_2) = -2$ and $\chi(\Sigma_3) = -4$.
 :::

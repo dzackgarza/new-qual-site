@@ -61,5 +61,5 @@ Then $\Delta$ is continuous for the product topology, but not for the box topolo
 :::
 
 ::: {.concept}
-See [@Mun00, §19, Theorems 19.1 and 19.6].
+See [@Mun00].
 :::

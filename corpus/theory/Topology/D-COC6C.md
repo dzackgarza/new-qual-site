@@ -29,5 +29,5 @@ In $\Ab$ it is the [[D-TZSG2|direct sum]] $\bigoplus_\alpha X_\alpha$, and in $\
 :::
 
 ::: {.concept}
-See [@Hat02, §4.H, p. 461].
+See [@Hat02].
 :::

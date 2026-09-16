@@ -19,5 +19,5 @@ Then the projections induce an isomorphism
 $$
 \pi_1 (X \cross Y) \xrightarrow{\ \sim\ } \pi_1(X) \cross \pi_1(Y)
 $$
-[@Hat02, Proposition 1.12, p. 34].
+[@Hat02].
 :::

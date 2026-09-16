@@ -26,5 +26,5 @@ The following are equivalent:
 
 - for each $x\in X$ and each neighborhood $V$ of $f(x)$, there is a neighborhood $U$ of $x$ such that $f(U) \subseteq V$
 
-[@Mun00, Theorem 18.1].
+[@Mun00].
 :::

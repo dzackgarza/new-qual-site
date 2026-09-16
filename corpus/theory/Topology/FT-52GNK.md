@@ -18,7 +18,7 @@ review: draft
 
 ::: {.theorem}
 Let $X$ be a topological space.
-Then $X$ is [[D-YEQC3|normal]] if and only if for every pair of disjoint closed subsets $A, B \subseteq X$ there is a continuous function $f\colon X\to [0,1]$ with $f(a) = 0$ for all $a\in A$ and $f(b) = 1$ for all $b\in B$ [@Mun00, Theorem 33.1].
+Then $X$ is [[D-YEQC3|normal]] if and only if for every pair of disjoint closed subsets $A, B \subseteq X$ there is a continuous function $f\colon X\to [0,1]$ with $f(a) = 0$ for all $a\in A$ and $f(b) = 1$ for all $b\in B$ [@Mun00].
 :::
 
 ::: {.remark}

@@ -21,9 +21,9 @@ The \dfn{smash product} is the quotient space
 $$
 X\wedge Y\coloneqq(X\times Y)/(X\vee Y),
 $$
-based at the image of $X\vee Y$ [@Hat02, p. 10].
+based at the image of $X\vee Y$ [@Hat02].
 :::
 
 ::: {.proposition}
-For $m,n\geq0$ there is a homeomorphism $S^m\wedge S^n\cong S^{m+n}$, and for a based space $X$ the reduced suspension satisfies $\Sigma X\cong S^1\wedge X$ [@Hat02, p. 10].
+For $m,n\geq0$ there is a homeomorphism $S^m\wedge S^n\cong S^{m+n}$, and for a based space $X$ the reduced suspension satisfies $\Sigma X\cong S^1\wedge X$ [@Hat02].
 :::

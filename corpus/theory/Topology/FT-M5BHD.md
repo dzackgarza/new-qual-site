@@ -18,10 +18,10 @@ review: draft
 
 ::: {.theorem}
 Let $f\colon X\to Y$ be a continuous bijection.
-If $X$ is compact and $Y$ is [[D-ZFRV4|Hausdorff]], then $f$ is a homeomorphism [@Mun00, Theorem 26.6].
+If $X$ is compact and $Y$ is [[D-ZFRV4|Hausdorff]], then $f$ is a homeomorphism [@Mun00].
 :::
 
 ::: {.remark}
-The theorem rests on three facts: closed subspaces of compact spaces are compact [@Mun00, Theorem 26.2], continuous images of compact spaces are compact [@Mun00, Theorem 26.5], and compact subspaces of Hausdorff spaces are closed [@Mun00, Theorem 26.3].
+The theorem rests on three facts: closed subspaces of compact spaces are compact [@Mun00], continuous images of compact spaces are compact [@Mun00], and compact subspaces of Hausdorff spaces are closed [@Mun00].
 Together they show that $f$ is a closed map.
 :::

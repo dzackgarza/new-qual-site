@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.theorem}
-For every continuous map $f\colon S^n \to \RR^n$ there is a point $x\in S^n$ with $f(x) = f(-x)$ [@Hat02, Corollary 2B.7, p. 176].
+For every continuous map $f\colon S^n \to \RR^n$ there is a point $x\in S^n$ with $f(x) = f(-x)$ [@Hat02].
 :::

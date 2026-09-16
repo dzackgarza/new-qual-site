@@ -24,5 +24,5 @@ Identifying $\pt\times I$ with $I$, this is the [[D-HOCNK|homotopy lifting prope
 
 ::: {.proposition}
 Let $p\colon\tilde X\to X$ be a [[D-ANO2D|covering space]].
-For every path $\gamma\colon I\to X$ and every $\tilde x_0\in p\inv(\gamma(0))$ there is a unique path $\tilde\gamma\colon I\to\tilde X$ with $p\circ\tilde\gamma=\gamma$ and $\tilde\gamma(0)=\tilde x_0$ [@Hat02, Prop. 1.30].
+For every path $\gamma\colon I\to X$ and every $\tilde x_0\in p\inv(\gamma(0))$ there is a unique path $\tilde\gamma\colon I\to\tilde X$ with $p\circ\tilde\gamma=\gamma$ and $\tilde\gamma(0)=\tilde x_0$ [@Hat02].
 :::

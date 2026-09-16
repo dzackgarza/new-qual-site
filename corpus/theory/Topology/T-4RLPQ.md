@@ -19,5 +19,5 @@ A metric space $X$ is sequentially compact if and only if it is complete and [[F
 :::
 
 ::: {.remark}
-For metric spaces, sequential compactness is equivalent to compactness [@Mun00, Theorem 28.2], and compactness is equivalent to being complete and totally bounded [@Mun00, Theorem 45.1].
+For metric spaces, sequential compactness is equivalent to compactness [@Mun00], and compactness is equivalent to being complete and totally bounded [@Mun00].
 :::

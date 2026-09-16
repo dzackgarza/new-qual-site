@@ -28,5 +28,5 @@ For groups, if $s$ splits the sequence, then $B \cong A\rtimes_\varphi C$, where
 :::
 
 ::: {.concept}
-[@DF04, §5.5 and §10.5].
+[@DF04].
 :::

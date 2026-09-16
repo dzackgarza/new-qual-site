@@ -22,5 +22,5 @@ $$
 \Tor^{\ZZ}_1(C_n, A)\cong A[n],\qquad
 \Tor^{\ZZ}_k(C_n, A) = 0\quad (k\geq 2)
 $$
-[@Hat02, §3.A, p. 265].
+[@Hat02].
 :::

@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.fact}
-Every connected [[FD-QPIIL|closed surface]] is homeomorphic to exactly one of: the sphere $S^2$; the connected sum $\Sigma_g = \#_{i=1}^g T^2$ of $g\geq 1$ tori; or the connected sum $N_k = \#_{i=1}^k \RP^2$ of $k\geq 1$ projective planes [@Mun00]; [@Hat02, Examples 2.36--2.37, p. 141].
+Every connected [[FD-QPIIL|closed surface]] is homeomorphic to exactly one of: the sphere $S^2$; the connected sum $\Sigma_g = \#_{i=1}^g T^2$ of $g\geq 1$ tori; or the connected sum $N_k = \#_{i=1}^k \RP^2$ of $k\geq 1$ projective planes [@Mun00]; [@Hat02].
 The surfaces $\Sigma_g$ are orientable and the surfaces $N_k$ are not.
 :::
 

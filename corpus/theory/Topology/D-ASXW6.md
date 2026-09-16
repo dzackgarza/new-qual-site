@@ -23,6 +23,6 @@ also written $\bar U$.
 :::
 
 ::: {.remark}
-If $Y\subseteq X$ is a subspace containing $U$, the closure of $U$ in $Y$ is $\cl_Y(U) = \cl_X(U) \intersect Y$ [@Mun00, Theorem 17.4].
-A point $x\in X$ lies in $\cl_X(U)$ if and only if every [[D-JMRPA|neighborhood]] of $x$ in $X$ intersects $U$ [@Mun00, Theorem 17.5].
+If $Y\subseteq X$ is a subspace containing $U$, the closure of $U$ in $Y$ is $\cl_Y(U) = \cl_X(U) \intersect Y$ [@Mun00].
+A point $x\in X$ lies in $\cl_X(U)$ if and only if every [[D-JMRPA|neighborhood]] of $x$ in $X$ intersects $U$ [@Mun00].
 :::

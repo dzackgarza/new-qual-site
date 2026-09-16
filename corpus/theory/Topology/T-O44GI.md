@@ -24,5 +24,5 @@ Then
 
 3. if $Y$ is path-connected and locally path-connected, then $G\cong \pi_1(Y/G) / p_*(\pi_1(Y))$
 
-[@Hat02, Proposition 1.40, p. 72].
+[@Hat02].
 :::

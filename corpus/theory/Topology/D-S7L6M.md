@@ -28,5 +28,5 @@ It is \dfn{exact} if it is both left and right exact, that is, if it takes every
 :::
 
 ::: {.example}
-For a commutative ring $R$ and an $R$-module $N$, the functor $-\otimes_RN$ on $R$-modules is right exact [@DF04, sec. 10.5], and so is $N\otimes_R-$.
+For a commutative ring $R$ and an $R$-module $N$, the functor $-\otimes_RN$ on $R$-modules is right exact [@DF04], and so is $N\otimes_R-$.
 :::

@@ -24,5 +24,5 @@ H_n(M;\ZZ) \cong \begin{cases}
 \end{cases}
 \qquad H_i(M;\ZZ) = 0 \text{ for } i > n
 $$
-[@Hat02, Theorem 3.26, p. 236], and the torsion subgroup of $H_{n-1}(M;\ZZ)$ is trivial if $M$ is orientable and $\ZZ/2$ otherwise [@Hat02, Corollary 3.28, p. 238].
+[@Hat02], and the torsion subgroup of $H_{n-1}(M;\ZZ)$ is trivial if $M$ is orientable and $\ZZ/2$ otherwise [@Hat02].
 :::

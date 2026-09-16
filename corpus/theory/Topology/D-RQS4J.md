@@ -21,7 +21,7 @@ The \dfn{cap product} on chains and cochains is the $R$-bilinear map
 $$
 \frown\colon C_p(X;R)\times C^q(X;R)\to C_{p-q}(X;R),\qquad \sigma\frown\psi\coloneqq\psi\qty{\sigma|_{[v_0,\ldots,v_q]}}\,\sigma|_{[v_q,\ldots,v_p]}
 $$
-on singular $p$-simplices $\sigma$ and [[D-R6LA3|singular $q$-cochains]] $\psi$, extended linearly in $\sigma$ [@Hat02, p. 239].
+on singular $p$-simplices $\sigma$ and [[D-R6LA3|singular $q$-cochains]] $\psi$, extended linearly in $\sigma$ [@Hat02].
 :::
 
 ::: {.proposition}
@@ -33,5 +33,5 @@ so the cap product of a cycle and a cocycle is a cycle, and it induces an $R$-bi
 $$
 \frown\colon H_p(X;R)\times H^q(X;R)\to H_{p-q}(X;R)
 $$
-[@Hat02, p. 239].
+[@Hat02].
 :::

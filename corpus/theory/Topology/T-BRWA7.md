@@ -23,7 +23,7 @@ E \ar[d,"\varepsilon"'] \\
 A' \ar[r,"f'"'] & B' \ar[r,"g'"'] & C' \ar[r,"h'"'] & D' \ar[r,"i'"'] & E'
 \end{tikzcd}
 are exact.
-If $\alpha$ is surjective, $\beta$ and $\delta$ are isomorphisms, and $\varepsilon$ is injective, then $\gamma$ is an isomorphism [@Hat02, §2.1, p. 129].
+If $\alpha$ is surjective, $\beta$ and $\delta$ are isomorphisms, and $\varepsilon$ is injective, then $\gamma$ is an isomorphism [@Hat02].
 :::
 
 ::: {.proof}

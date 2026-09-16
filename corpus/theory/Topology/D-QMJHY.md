@@ -18,13 +18,13 @@ A continuous map $f\colon X\to Y$ of topological spaces is a \dfn{weak homotopy 
 $$
 f_*\colon\pi_n(X,x_0)\to\pi_n(Y,f(x_0))
 $$
-is an isomorphism [@Hat02, p. 352].
+is an isomorphism [@Hat02].
 :::
 
 ::: {.theorem}
 Let $f\colon X\to Y$ be a weak homotopy equivalence.
 
-(a) For every $n$ and every abelian group $G$, $f_*\colon H_n(X;G)\to H_n(Y;G)$ and $f^*\colon H^n(Y;G)\to H^n(X;G)$ are isomorphisms [@Hat02, Prop. 4.21].
+(a) For every $n$ and every abelian group $G$, $f_*\colon H_n(X;G)\to H_n(Y;G)$ and $f^*\colon H^n(Y;G)\to H^n(X;G)$ are isomorphisms [@Hat02].
 
-(b) (Whitehead) If $X$ and $Y$ are [[D-ZOU5G|CW complexes]], then $f$ is a [[D-HFR32|homotopy equivalence]] [@Hat02, Theorem 4.5].
+(b) (Whitehead) If $X$ and $Y$ are [[D-ZOU5G|CW complexes]], then $f$ is a [[D-HFR32|homotopy equivalence]] [@Hat02].
 :::

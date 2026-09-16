@@ -28,7 +28,7 @@ For $x\in M$, excision gives $H_n(M\mid x)\cong H_n(\RR^n, \RR^n\sm\ts{0};\ZZ)\c
 ::: {.remark}
 Each $H_n(M\mid x)$ has exactly two generators, so $M$ has exactly two local orientations at each point.
 The local orientations form the orientation double cover $\tilde M = \ts{\mu_x \st x\in M,\ \mu_x \text{ a local orientation of } M \text{ at } x}$, with $\mu_x\mapsto x$.
-The manifold $\tilde M$ is orientable, and a connected manifold $M$ is orientable if and only if $\tilde M$ has two components [@Hat02, §3.3].
+The manifold $\tilde M$ is orientable, and a connected manifold $M$ is orientable if and only if $\tilde M$ has two components [@Hat02].
 :::
 
 ::: {.proposition}
@@ -47,5 +47,5 @@ The following are equivalent:
 :::
 
 ::: {.concept}
-[@Hat02, §3.3, p. 234].
+[@Hat02].
 :::

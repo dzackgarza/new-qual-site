@@ -23,5 +23,5 @@ H_k(\CP^2;\ZZ) \cong \begin{cases}
 0 & \text{otherwise}
 \end{cases}
 $$
-[@Hat02, §2.2, p. 140].
+[@Hat02].
 :::

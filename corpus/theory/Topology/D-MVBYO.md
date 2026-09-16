@@ -21,7 +21,7 @@ The topologies $\tau_1$ and $\tau_2$ are \dfn{comparable} if $\tau_1\subseteq\ta
 
 ::: {.proposition}
 Let $X$ be a set and let $\mathrm{Top}(X)$ be the set of topologies on $X$, partially ordered by inclusion.
-Then $\mathrm{Top}(X)$ is a complete lattice [@Mun00, sec. 13, Exercise 4]:
+Then $\mathrm{Top}(X)$ is a complete lattice [@Mun00]:
 
 - the infimum of a nonempty family $(\tau_i)_{i\in I}$ is the intersection $\bigcap_{i\in I}\tau_i$;
 

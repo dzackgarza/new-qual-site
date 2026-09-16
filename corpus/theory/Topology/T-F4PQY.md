@@ -22,5 +22,5 @@ Then
 
 2. $G(\tilde X) \cong N_G(H)/H$, where $N_G(H)$ is the normalizer of $H$ in $G$.
 
-In particular, $G(\tilde X) \cong G/H$ if $\tilde X$ is normal, and $G(\hat X) \cong G$ for the universal cover $\hat X$ [@Hat02, Proposition 1.39, p. 71].
+In particular, $G(\tilde X) \cong G/H$ if $\tilde X$ is normal, and $G(\hat X) \cong G$ for the universal cover $\hat X$ [@Hat02].
 :::

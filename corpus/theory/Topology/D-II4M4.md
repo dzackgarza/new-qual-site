@@ -32,5 +32,5 @@ The cone $CS^1$ on the circle is homeomorphic to the closed disk $D^2$, by $[(z,
 :::
 
 ::: {.concept}
-See [@Hat02, p. 9].
+See [@Hat02].
 :::

@@ -18,9 +18,9 @@ review: draft
 ::: {.proposition}
 Let $f\colon X\to Y$ be continuous.
 
-- If $X$ is compact, then $f(X)$ is compact [@Mun00, Theorem 26.5].
+- If $X$ is compact, then $f(X)$ is compact [@Mun00].
 
-- If $X$ is connected, then $f(X)$ is connected [@Mun00, Theorem 23.5].
+- If $X$ is connected, then $f(X)$ is connected [@Mun00].
 
 - If $D\subseteq X$ is dense, then $f(D)$ is dense in $f(X)$ with the subspace topology; in particular, if $X$ is separable, then so is $f(X)$, and if $f$ is surjective, then $f(D)$ is dense in $Y$.
 :::

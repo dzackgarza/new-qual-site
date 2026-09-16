@@ -25,5 +25,5 @@ The \dfn{dimension} of $M$ is this integer $n$, equivalently the unique $i$ with
 :::
 
 ::: {.concept}
-See [@Hat02, §2.2, Theorem 2.26].
+See [@Hat02].
 :::

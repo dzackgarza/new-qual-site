@@ -18,5 +18,5 @@ Let $X$ be a finite simplicial complex, or a retract of one, and let $f\colon X\
 $$
 \tau(f) = \sum_{k \geq 0} (-1)^k \tr\qty{f_*\colon H_k(X; \QQ) \to H_k(X; \QQ)}
 .$$
-If $\tau(f) \neq 0$, then $f$ has a fixed point [@Hat02, Theorem 2C.3, p. 179].
+If $\tau(f) \neq 0$, then $f$ has a fixed point [@Hat02].
 :::

@@ -32,7 +32,7 @@ $$
 :::
 
 ::: {.theorem}
-In the situation of the definition, $\del$ is well defined and the Mayer--Vietoris sequence is exact [@Hat02, §2.2, p. 149].
+In the situation of the definition, $\del$ is well defined and the Mayer--Vietoris sequence is exact [@Hat02].
 :::
 
 ::: {.remark}

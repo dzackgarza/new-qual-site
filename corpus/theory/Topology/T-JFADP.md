@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Every compact subset of a [[D-ZFRV4|Hausdorff space]] is closed [@Mun00, Theorem 26.3].
+Every compact subset of a [[D-ZFRV4|Hausdorff space]] is closed [@Mun00].
 :::
 
 ::: {.remark}

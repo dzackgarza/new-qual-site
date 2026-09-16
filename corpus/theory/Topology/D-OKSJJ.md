@@ -34,5 +34,5 @@ A short exact sequence $0\to A_n\to B_n\to C_n\to0$ of inverse systems indexed b
 $$
 0\to\varprojlim A_n\to\varprojlim B_n\to\varprojlim C_n\to\varprojlim{}^1A_n\to\varprojlim{}^1B_n\to\varprojlim{}^1C_n\to0,
 $$
-so $\varprojlim^1$ measures the failure of $\varprojlim B_n\to\varprojlim C_n$ to be surjective [@Hat02, p. 312].
+so $\varprojlim^1$ measures the failure of $\varprojlim B_n\to\varprojlim C_n$ to be surjective [@Hat02].
 :::

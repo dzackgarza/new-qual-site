@@ -20,7 +20,7 @@ Then cap product with the fundamental class gives isomorphisms
 $$
 H^{k}(M; R) \xrightarrow{\ \sim\ } H_{n-k}(M; R)
 $$
-for all $k$ [@Hat02, Theorem 3.30, p. 241].
+for all $k$ [@Hat02].
 :::
 
 ::: {.remark}

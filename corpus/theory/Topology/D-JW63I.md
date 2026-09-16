@@ -25,5 +25,5 @@ A \dfn{local orientation} of $M$ at $x$ is a choice of generator $\mu_x$ of the 
 :::
 
 ::: {.concept}
-See [@Hat02, §3.3, p. 234].
+See [@Hat02].
 :::

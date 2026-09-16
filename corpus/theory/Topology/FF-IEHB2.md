@@ -21,6 +21,6 @@ The closed orientable surface $\Sigma_g$ of genus $g$ and the closed nonorientab
 $$
 \chi(\Sigma_g) = 2-2g, \qquad \chi(N_k) = 2-k
 $$
-[@Hat02, Examples 2.36--2.37 and Theorem 2.44, pp. 141, 146].
+[@Hat02].
 Removing the interiors of $b$ disjoint closed discs from a closed surface lowers $\chi$ by $b$.
 :::

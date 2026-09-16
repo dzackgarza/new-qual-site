@@ -15,7 +15,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space and $G$ an abelian group.
 Let $C^n(X;G)\coloneqq\Hom(C_n(X),G)$ be the group of singular [[D-EILQL|$n$-cochains]], where $C_n(X)$ is the group of [[D-6BUWA|singular $n$-chains]] with boundary map $\del_{n+1}\colon C_{n+1}(X)\to C_n(X)$, and let $\delta^n\colon C^n(X;G)\to C^{n+1}(X;G)$ be the coboundary map $\delta^n\psi\coloneqq\psi\circ\del_{n+1}$.
-An $n$-cochain $\psi\in C^n(X;G)$ is an \dfn{$n$-cocycle} if $\delta^n\psi=0$ [@Hat02, p. 198].
+An $n$-cochain $\psi\in C^n(X;G)$ is an \dfn{$n$-cocycle} if $\delta^n\psi=0$ [@Hat02].
 The $n$-cocycles form the subgroup $Z^n(X;G)\coloneqq\ker\delta^n$.
 :::
 

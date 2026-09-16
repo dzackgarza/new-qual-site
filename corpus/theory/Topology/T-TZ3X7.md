@@ -24,5 +24,5 @@ and it splits, though not naturally:
 $$
 H_{k}(X\cross Y; R) \cong \qty{ \bigoplus_{i+j = k} H_{i}(X;R) \tensor_R H_{j}(Y;R) } \oplus \bigoplus_{i+j = k-1}\Tor^R_1\qty{H_{i}(X;R), H_{j}(Y;R)}
 $$
-[@Hat02, Theorem 3B.6, p. 275].
+[@Hat02].
 :::

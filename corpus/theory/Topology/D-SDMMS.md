@@ -19,5 +19,5 @@ A real number $\delta>0$ is a \dfn{Lebesgue number} for $\mathcal U$ if every su
 :::
 
 ::: {.theorem title="Lebesgue number lemma"}
-Every open cover of a [[D-EILKJ|compact]] metric space has a Lebesgue number [@Mun00, Lemma 27.5].
+Every open cover of a [[D-EILKJ|compact]] metric space has a Lebesgue number [@Mun00].
 :::

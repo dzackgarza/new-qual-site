@@ -29,5 +29,5 @@ If $R\neq 0$, then $RG$ is commutative if and only if $G$ is abelian.
 :::
 
 ::: {.concept}
-See [@DF04, §7.2].
+See [@DF04].
 :::

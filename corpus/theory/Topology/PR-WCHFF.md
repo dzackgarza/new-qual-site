@@ -22,5 +22,5 @@ H_i(S^3 \sm K;\ZZ) \cong \begin{cases}
 0 & \text{otherwise}
 \end{cases}
 $$
-[@Hat02, Corollary 3.45, p. 255].
+[@Hat02].
 :::

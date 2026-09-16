@@ -24,5 +24,5 @@ A chain $\alpha\in C_n(X)$ is a relative cycle if and only if its image in $C_n(
 :::
 
 ::: {.concept}
-[@Hat02, p. 115].
+[@Hat02].
 :::

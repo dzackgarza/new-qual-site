@@ -19,5 +19,5 @@ The topologies $\tau_1$ and $\tau_2$ are \dfn{comparable} if $\tau_1\subseteq\ta
 :::
 
 ::: {.concept}
-See [@Mun00, §12].
+See [@Mun00].
 :::

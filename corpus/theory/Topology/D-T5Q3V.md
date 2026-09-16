@@ -20,7 +20,7 @@ The \dfn{loop space} of $X$ is the set
 $$
 \Omega X\coloneqq\ts{\gamma\colon S^1\to X \st \gamma\text{ continuous},\ \gamma(s_0)=x_0}
 $$
-with the compact-open topology, based at the constant loop at $x_0$ [@Hat02, p. 395].
+with the compact-open topology, based at the constant loop at $x_0$ [@Hat02].
 :::
 
 ::: {.proposition}
@@ -30,5 +30,5 @@ Let $(X,x_0)$ and $(Y,y_0)$ be based spaces, and write $[-,-]_*$ for based homot
 
 (b) There is a bijection $[\Sigma X,Y]_*\cong[X,\Omega Y]_*$, natural in $X$ and $Y$.
 
-[@Hat02, p. 395]
+[@Hat02]
 :::

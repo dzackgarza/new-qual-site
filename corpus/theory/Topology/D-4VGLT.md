@@ -23,5 +23,5 @@ where $P_\bullet \to A$ is a [[D-PKIY7|projective resolution]] of the $R$-module
 :::
 
 ::: {.concept}
-[@DF04, §17.1].
+[@DF04].
 :::

@@ -21,5 +21,5 @@ Then $H$ is free.
 :::
 
 ::: {.concept}
-[@Hat02, §1.A].
+[@Hat02].
 :::

@@ -29,5 +29,5 @@ For a set $S$, the free group on $S$ is isomorphic to $\ast_{s\in S}\ZZ$.
 :::
 
 ::: {.concept}
-See [@Hat02, §1.2, p. 41].
+See [@Hat02].
 :::

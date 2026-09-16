@@ -34,5 +34,5 @@ for every $n$.
 :::
 
 ::: {.concept}
-See [@Hat02, pp. 10 and 126, Corollary 2.25].
+See [@Hat02].
 :::

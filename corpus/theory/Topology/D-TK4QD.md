@@ -30,7 +30,7 @@ $$
 H_i(M;\ZZ)/\mathrm{torsion}\times H_{n-i}(M;\ZZ)/\mathrm{torsion}\to\ZZ
 $$
 is nondegenerate: its adjoint is an isomorphism onto $\Hom(H_{n-i}(M;\ZZ)/\mathrm{torsion},\ZZ)$.
-This is the cup product pairing of [@Hat02, Prop. 3.38] transported by $D$.
+This is the cup product pairing of [@Hat02] transported by $D$.
 :::
 
 ::: {.remark}

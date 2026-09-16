@@ -35,5 +35,5 @@ The class $[M]$ is the [[D-TS7TZ|fundamental class]] of $M$.
 :::
 
 ::: {.concept}
-See [@Hat02, §3.3, pp. 234--236, Theorem 3.26].
+See [@Hat02].
 :::

@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A metric space $(M, d)$ is \dfn{totally bounded} if for every $\eps > 0$ there are finitely many open balls of radius $\eps$ whose union is $M$ [@Mun00, §45, p. 275].
+A metric space $(M, d)$ is \dfn{totally bounded} if for every $\eps > 0$ there are finitely many open balls of radius $\eps$ whose union is $M$ [@Mun00].
 :::

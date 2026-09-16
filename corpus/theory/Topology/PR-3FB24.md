@@ -20,6 +20,6 @@ The cup product pairing
 $$
 H^k(M;\ZZ)/\mathrm{torsion}\times H^{n-k}(M;\ZZ)/\mathrm{torsion}\to\ZZ,\qquad (a,b)\mapsto\langle a\smile b, [M]\rangle
 $$
-is nonsingular, and for a field $F$ the pairing $H^k(M;F)\times H^{n-k}(M;F)\to F$ is nonsingular for every closed $F$-orientable $n$-manifold $M$ [@Hat02, Proposition 3.38, p. 250].
+is nonsingular, and for a field $F$ the pairing $H^k(M;F)\times H^{n-k}(M;F)\to F$ is nonsingular for every closed $F$-orientable $n$-manifold $M$ [@Hat02].
 Under Poincaré duality this is the intersection pairing on $H_{n-k}(M)\times H_k(M)$ modulo torsion.
 :::

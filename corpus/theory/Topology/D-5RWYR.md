@@ -22,5 +22,5 @@ r_1 s_1 + \cdots + r_n s_n = 0 \implies r_1 = \cdots = r_n = 0
 :::
 
 ::: {.concept}
-[@DF04, §10.3].
+[@DF04].
 :::

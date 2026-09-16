@@ -27,5 +27,5 @@ By the Lefschetz fixed point theorem, if $\tau(f)\neq 0$, then $f$ has a fixed p
 :::
 
 ::: {.concept}
-[@Hat02, §2.C, Theorem 2C.3, p. 179].
+[@Hat02].
 :::

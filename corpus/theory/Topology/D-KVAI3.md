@@ -29,5 +29,5 @@ Every CW pair $(X, A)$ has the homotopy extension property.
 :::
 
 ::: {.concept}
-See [@Hat02, p. 14, and Proposition 0.16, p. 15].
+See [@Hat02].
 :::

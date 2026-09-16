@@ -20,11 +20,11 @@ For each $i$ there are natural short exact sequences
 $$
 0 \to H_i(X;\ZZ)\tensor G \to H_i(X; G) \to \Tor(H_{i-1}(X;\ZZ), G) \to 0
 $$
-[@Hat02, Theorem 3A.3, p. 264] and
+[@Hat02] and
 $$
 0 \to \Ext(H_{i-1}(X;\ZZ), G) \to H^i(X;G) \to \Hom(H_i(X;\ZZ), G) \to 0
 $$
-[@Hat02, Theorem 3.2, p. 195].
+[@Hat02].
 Both sequences split, though not naturally, so
 $$
 H_i(X;G) \cong \qty{H_i(X;\ZZ)\tensor G} \oplus \Tor(H_{i-1}(X;\ZZ), G), \qquad
@@ -37,6 +37,6 @@ If $H_i(X;\ZZ)$ and $H_{i-1}(X;\ZZ)$ are finitely generated with torsion subgrou
 $$
 H^i(X;\ZZ) \cong \qty{H_i(X;\ZZ)/T_i} \oplus T_{i-1}
 $$
-[@Hat02, Corollary 3.3, p. 196].
-If $F$ is a field, then $H^i(X;F) \cong \Hom_F(H_i(X;F), F)$ [@Hat02, §3.1, p. 198].
+[@Hat02].
+If $F$ is a field, then $H^i(X;F) \cong \Hom_F(H_i(X;F), F)$ [@Hat02].
 :::

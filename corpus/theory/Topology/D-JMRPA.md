@@ -18,5 +18,5 @@ A \dfn{neighborhood} of $x$ is an open set $U\subseteq X$ with $x\in U$.
 :::
 
 ::: {.concept}
-See [@Mun00, §17].
+See [@Mun00].
 :::

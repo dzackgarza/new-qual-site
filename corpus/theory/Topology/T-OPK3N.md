@@ -15,5 +15,5 @@ review: draft
 
 ::: {.theorem}
 Let $f\colon X \to Y$ be continuous, where $X$ is a nonempty compact space and $Y$ is an ordered set in the order topology.
-Then there exist $c, d\in X$ with $f(c)\leq f(x)\leq f(d)$ for every $x\in X$ [@Mun00, Theorem 27.4].
+Then there exist $c, d\in X$ with $f(c)\leq f(x)\leq f(d)$ for every $x\in X$ [@Mun00].
 :::

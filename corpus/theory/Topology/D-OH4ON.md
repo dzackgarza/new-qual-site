@@ -14,7 +14,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, let $C_n(X)$ be the group of [[D-6BUWA|singular $n$-chains]] of $X$, and let $\del_n\colon C_n(X)\to C_{n-1}(X)$ be the boundary map.
-An $n$-chain $\alpha\in C_n(X)$ is an \dfn{$n$-cycle} if $\del_n\alpha=0$ [@Hat02, p. 106].
+An $n$-chain $\alpha\in C_n(X)$ is an \dfn{$n$-cycle} if $\del_n\alpha=0$ [@Hat02].
 The $n$-cycles form the subgroup $Z_n(X)\coloneqq\ker\del_n$.
 :::
 

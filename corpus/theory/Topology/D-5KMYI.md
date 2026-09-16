@@ -23,5 +23,5 @@ The chain maps $f$ and $g$ are \dfn{chain homotopic} if a chain homotopy from $f
 :::
 
 ::: {.concept}
-[@Hat02, §2.1, p. 111].
+[@Hat02].
 :::

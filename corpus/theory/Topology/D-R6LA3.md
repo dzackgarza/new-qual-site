@@ -19,7 +19,7 @@ A \dfn{singular $n$-cochain} of $X$ with coefficients in $G$ is a homomorphism $
 $$
 C^n(X;G)\coloneqq\Hom(C_n(X),G)
 $$
-is the group of singular $n$-cochains [@Hat02, sec. 3.1].
+is the group of singular $n$-cochains [@Hat02].
 :::
 
 ::: {.remark}

@@ -23,5 +23,5 @@ For a point $x\in X$, write $H_n(X\mid x)\coloneqq H_n(X\mid\ts{x})$.
 :::
 
 ::: {.concept}
-[@Hat02, §3.3].
+[@Hat02].
 :::

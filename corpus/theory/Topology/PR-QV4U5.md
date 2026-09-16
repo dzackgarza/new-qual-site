@@ -22,5 +22,5 @@ $$
 :::
 
 ::: {.remark}
-This follows by counting cells, since the [[D-QK5BM|Euler characteristic]] of a finite CW complex is the alternating sum of its numbers of cells [@Hat02, Theorem 2.44, p. 146].
+This follows by counting cells, since the [[D-QK5BM|Euler characteristic]] of a finite CW complex is the alternating sum of its numbers of cells [@Hat02].
 :::

@@ -24,5 +24,5 @@ A [[D-ZOU5G|CW complex]] $X$ carries the weak topology determined by its skeleta
 :::
 
 ::: {.concept}
-[@Hat02, pp. 5 and 520].
+[@Hat02].
 :::

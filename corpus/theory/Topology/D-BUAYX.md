@@ -24,5 +24,5 @@ For a continuous injective map of topological spaces, a left inverse need not be
 :::
 
 ::: {.concept}
-[@DF04, §0.1].
+[@DF04].
 :::

@@ -32,5 +32,5 @@ The quotient is defined because $\del_n \circ \del_{n+1} = 0$.
 :::
 
 ::: {.concept}
-[@Hat02, §2.1, p. 108].
+[@Hat02].
 :::

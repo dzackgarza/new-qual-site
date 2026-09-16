@@ -19,5 +19,5 @@ The number of sheets of $p$, that is, the cardinality of $p^{-1}(x_0)$, equals t
 $$
 [\pi_1(X, x_0) : p_*(\pi_1(\tilde X, \tilde x_0))]
 $$
-[@Hat02, Proposition 1.32, p. 61].
+[@Hat02].
 :::

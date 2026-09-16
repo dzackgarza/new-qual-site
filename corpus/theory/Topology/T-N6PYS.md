@@ -19,11 +19,11 @@ review: draft
 Let $f\colon X\to Y$ be continuous, with $X$ compact and $Y$ [[D-ZFRV4|Hausdorff]].
 Then
 
-- $f$ is a closed map [@Mun00, Theorems 26.2, 26.3 and 26.5];
+- $f$ is a closed map [@Mun00];
 
 - if $f$ is surjective, $f$ is a quotient map;
 
 - if $f$ is injective, $f$ is a [[D-9KQZT|topological embedding]];
 
-- if $f$ is bijective, $f$ is a homeomorphism [@Mun00, Theorem 26.6].
+- if $f$ is bijective, $f$ is a homeomorphism [@Mun00].
 :::

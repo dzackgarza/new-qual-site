@@ -23,7 +23,7 @@ There are homomorphisms $\del\colon H_n(C_\bullet)\to H_{n-1}(A_\bullet)$, the \
 $$
 \cdots\to H_n(A_\bullet)\mapsvia{i_*}H_n(B_\bullet)\mapsvia{j_*}H_n(C_\bullet)\mapsvia{\del}H_{n-1}(A_\bullet)\to\cdots
 $$
-is exact [@Hat02, Theorem 2.16].
+is exact [@Hat02].
 :::
 
 ::: {.example}
@@ -31,5 +31,5 @@ For a topological space $X$ and a subspace $A$, the short exact sequence $0\to C
 $$
 \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\mapsvia{\del}H_{n-1}(A)\to\cdots\to H_0(X,A)\to0
 $$
-[@Hat02, p. 117].
+[@Hat02].
 :::

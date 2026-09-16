@@ -28,5 +28,5 @@ $$
 :::
 
 ::: {.concept}
-See [@Hat02, §1.1, p. 25] and [@Mun00, §51].
+See [@Hat02] and [@Mun00].
 :::

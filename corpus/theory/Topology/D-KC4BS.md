@@ -35,5 +35,5 @@ For $m\geq 2$, the space $S^n\cup_m e^{n+1}$ obtained by attaching an $(n+1)$-ce
 :::
 
 ::: {.concept}
-See [@Hat02, §2.2, Example 2.40, p. 143].
+See [@Hat02].
 :::

@@ -28,5 +28,5 @@ For a continuous map $g\colon X\to Y$, the [[D-RMQ7W|mapping cylinder]] of $g$ i
 :::
 
 ::: {.concept}
-See [@Hat02, p. 13].
+See [@Hat02].
 :::

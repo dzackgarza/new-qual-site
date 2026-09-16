@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Every connected closed surface is homeomorphic to the quotient of a polygon whose edges are identified in pairs according to one of the words $a_1a_1^{-1}$, $a_1b_1a_1^{-1}b_1^{-1}\cdots a_gb_ga_g^{-1}b_g^{-1}$ ($g\geq 1$), or $a_1a_1\cdots a_ka_k$ ($k\geq 1$) [@Mun00, Theorems 77.5 and 78.2].
+Every connected closed surface is homeomorphic to the quotient of a polygon whose edges are identified in pairs according to one of the words $a_1a_1^{-1}$, $a_1b_1a_1^{-1}b_1^{-1}\cdots a_gb_ga_g^{-1}b_g^{-1}$ ($g\geq 1$), or $a_1a_1\cdots a_ka_k$ ($k\geq 1$) [@Mun00].
 For compact surfaces with boundary, the orientable surface of genus $g$ with $b$ boundary circles is obtained from the word $\alpha_1\beta_1\alpha_1^{-1}\beta_1^{-1}\cdots\alpha_g\beta_g\alpha_g^{-1}\beta_g^{-1}\,\xi_1\rho_1\xi_1^{-1}\cdots\xi_b\rho_b\xi_b^{-1}$, in which the edges $\rho_j$ are left unidentified and become the boundary circles.
 :::
 

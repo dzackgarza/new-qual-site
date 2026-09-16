@@ -24,5 +24,5 @@ A chain complex is acyclic if and only if it is [[D-STPAM|exact]].
 :::
 
 ::: {.concept}
-[@Hat02, p. 142].
+[@Hat02].
 :::

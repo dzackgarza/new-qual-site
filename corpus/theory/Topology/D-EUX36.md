@@ -32,5 +32,5 @@ Since $I^n/\del I^n\cong S^n$, the set $\pi_n(X, x_0)$ is in bijection with the 
 :::
 
 ::: {.concept}
-See [@Hat02, §4.1, p. 340].
+See [@Hat02].
 :::

@@ -24,5 +24,5 @@ H_k(K;\ZZ) \cong \begin{cases}
 0 & \text{otherwise}
 \end{cases}
 $$
-[@Hat02, Example 2.37, p. 141].
+[@Hat02].
 :::

@@ -18,5 +18,5 @@ A topological space $X$ is \dfn{locally connected} if for every $x\in X$ and eve
 :::
 
 ::: {.concept}
-See [@Mun00, §25].
+See [@Mun00].
 :::

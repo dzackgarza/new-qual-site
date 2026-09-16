@@ -41,5 +41,5 @@ The circle $S^1$ is a $K(\ZZ, 1)$, $\CP^\infty$ is a $K(\ZZ, 2)$, and $\RP^\inft
 :::
 
 ::: {.concept}
-See [@Hat02, §4.2, p. 365, Theorem 4.30, and Theorem 4.57]; $K(G,1)$ spaces are treated in [@Hat02, §1.B, p. 87].
+[@Hat02].
 :::

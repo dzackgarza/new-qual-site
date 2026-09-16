@@ -25,7 +25,7 @@ The cases $A = \emptyset$ and $B = \emptyset$ are what is usually called Lefsche
 $$
 H^k(M, \del M; R) \cong H_{n-k}(M; R), \qquad H^k(M; R)\cong H_{n-k}(M, \del M; R)
 $$
-[@Hat02, Theorem 3.43, p. 254].
+[@Hat02].
 :::
 
 ::: {.remark}

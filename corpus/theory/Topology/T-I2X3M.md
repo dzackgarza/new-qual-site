@@ -15,5 +15,5 @@ review: draft
 
 ::: {.theorem}
 Every map $f\colon X\to Y$ of CW complexes is homotopic to a cellular map.
-If $f$ is already cellular on a subcomplex $A\subseteq X$, the homotopy may be taken to be stationary on $A$ [@Hat02, Theorem 4.8, p. 349].
+If $f$ is already cellular on a subcomplex $A\subseteq X$, the homotopy may be taken to be stationary on $A$ [@Hat02].
 :::

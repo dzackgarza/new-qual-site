@@ -27,5 +27,5 @@ An injective continuous map $f\colon X\to Y$ that is a homeomorphism onto $f(X)$
 :::
 
 ::: {.concept}
-[@Mun00, §18].
+[@Mun00].
 :::

@@ -18,5 +18,5 @@ A \dfn{singular $p$-chain} in $X$ with coefficients in $R$ is an element of the 
 :::
 
 ::: {.concept}
-See [@Hat02, §2.1, p. 108].
+See [@Hat02].
 :::

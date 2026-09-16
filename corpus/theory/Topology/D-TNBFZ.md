@@ -21,5 +21,5 @@ A map $q\colon X\to Y$ is a \dfn{quotient map} if
 
 2. for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $q\inv(U)$ is open in $X$
 
-[@Mun00, sec. 22].
+[@Mun00].
 :::

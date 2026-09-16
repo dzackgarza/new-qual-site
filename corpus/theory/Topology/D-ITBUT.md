@@ -28,5 +28,5 @@ The same holds with "open" replaced by "closed" throughout.
 :::
 
 ::: {.concept}
-See [@Mun00, §22].
+See [@Mun00].
 :::

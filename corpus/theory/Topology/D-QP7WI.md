@@ -25,5 +25,5 @@ given by the [[D-RQS4J|cap product]] with $[M]$.
 :::
 
 ::: {.theorem}
-In this situation $D\colon H^k(M;R)\to H_{n-k}(M;R)$ is an isomorphism for every $k$ [@Hat02, Theorem 3.30].
+In this situation $D\colon H^k(M;R)\to H_{n-k}(M;R)$ is an isomorphism for every $k$ [@Hat02].
 :::

@@ -22,5 +22,5 @@ Two cycles are homologous if and only if they represent the same class in the [[
 :::
 
 ::: {.concept}
-[@Hat02, p. 106].
+[@Hat02].
 :::

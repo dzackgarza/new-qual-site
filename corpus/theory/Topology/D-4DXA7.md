@@ -38,5 +38,5 @@ A space is $T_1$ if and only if every singleton is closed.
 :::
 
 ::: {.concept}
-[@Mun00, §§17, 31 and 33].
+[@Mun00].
 :::

@@ -31,5 +31,5 @@ For a path connected space $X$, the following are equivalent:
 :::
 
 ::: {.concept}
-See [@Hat02, §1.1, Proposition 1.6 and Exercise 5].
+See [@Hat02].
 :::

@@ -23,5 +23,5 @@ a subset $W\subseteq X\times Y$ is open if and only if it is a union of elements
 :::
 
 ::: {.concept}
-See [@Mun00, §15].
+See [@Mun00].
 :::

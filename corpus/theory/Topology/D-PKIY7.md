@@ -28,7 +28,7 @@ Let $R$ be a ring and $M$ an $R$-module.
 
 (a) $M$ has a free resolution, and hence a projective resolution.
 
-(b) If $P_\bullet\to M$ and $Q_\bullet\to M$ are projective resolutions, there is a chain map $P_\bullet\to Q_\bullet$ over $\id_M$, and any such chain map is a chain homotopy equivalence [@Hat02, pp. 193--195].
+(b) If $P_\bullet\to M$ and $Q_\bullet\to M$ are projective resolutions, there is a chain map $P_\bullet\to Q_\bullet$ over $\id_M$, and any such chain map is a chain homotopy equivalence [@Hat02].
 :::
 
 ::: {.remark}

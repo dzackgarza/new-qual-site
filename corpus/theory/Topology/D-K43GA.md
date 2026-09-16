@@ -21,5 +21,5 @@ A topological space $X$ is contractible if and only if $X$ is [[D-HFR32|homotopy
 :::
 
 ::: {.concept}
-See [@Hat02, p. 4].
+See [@Hat02].
 :::

@@ -30,5 +30,5 @@ For a based space $(Y, y_0)$ and $n\geq 1$, the [[D-EUX36|homotopy group]] $\pi_
 :::
 
 ::: {.concept}
-See [@Hat02, p. 3 and Theorem 2.10].
+See [@Hat02].
 :::

@@ -14,5 +14,5 @@ review: draft
 
 ::: {.theorem}
 Let $B$ be a compact space and $A\subseteq B$ a closed subset.
-Then $A$ is compact [@Mun00, Theorem 26.2].
+Then $A$ is compact [@Mun00].
 :::

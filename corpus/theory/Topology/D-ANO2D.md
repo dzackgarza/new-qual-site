@@ -33,5 +33,5 @@ An \dfn{isomorphism of covering spaces} is a homeomorphism $f\colon\tilde X_1\to
 :::
 
 ::: {.concept}
-[@Hat02, §1.3].
+[@Hat02].
 :::

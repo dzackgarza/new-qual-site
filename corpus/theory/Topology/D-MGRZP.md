@@ -22,5 +22,5 @@ If $f\colon X\to Y$ is nullhomotopic, then $f_*\colon\tilde H_n(X)\to\tilde H_n(
 :::
 
 ::: {.concept}
-See [@Hat02, p. 4 and Theorem 2.10].
+See [@Hat02].
 :::

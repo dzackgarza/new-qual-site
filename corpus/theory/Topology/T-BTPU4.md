@@ -20,7 +20,7 @@ Then the inclusions $U_1, U_2\injects X$ induce an isomorphism
 $$
 \pi_{1}(U_1, x_0) \ast_{\pi_{1}(U_1 \intersect U_2, x_0)} \pi_{1}(U_2, x_0) \xrightarrow{\ \sim\ } \pi_{1}(X, x_0)
 $$
-onto $\pi_1(X, x_0)$ from the [[D-WSFYS|free product with amalgamation]], which is the [[D-5S7PK|pushout]] of $\pi_1(U_1, x_0)\xleftarrow{\iota_1}\pi_1(U_1\intersect U_2, x_0)\xrightarrow{\iota_2}\pi_1(U_2, x_0)$ in the category of groups [@Hat02, Theorem 1.20, p. 43].
+onto $\pi_1(X, x_0)$ from the [[D-WSFYS|free product with amalgamation]], which is the [[D-5S7PK|pushout]] of $\pi_1(U_1, x_0)\xleftarrow{\iota_1}\pi_1(U_1\intersect U_2, x_0)\xrightarrow{\iota_2}\pi_1(U_2, x_0)$ in the category of groups [@Hat02].
 :::
 
 ::: {.proposition}
@@ -34,7 +34,7 @@ Then
 $$
 \pi_{1}(X, x_0) \cong \left\langle u_{1}, \ldots, u_{k}, v_{1}, \ldots, v_{m} \suchthat \alpha_{1}, \ldots, \alpha_{l},\ \beta_{1}, \ldots, \beta_{n},\ \iota_1(w_{1}) \iota_2(w_{1})^{-1}, \ldots, \iota_1(w_{p}) \iota_2(w_{p})^{-1} \right\rangle
 $$
-[@Hat02, Theorem 1.20, p. 43].
+[@Hat02].
 :::
 
 ::: {.remark}

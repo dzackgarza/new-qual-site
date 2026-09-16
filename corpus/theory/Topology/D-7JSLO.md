@@ -22,5 +22,5 @@ Equivalently, $X$ has a [[D-WKURJ|basis]] consisting of path-connected open sets
 :::
 
 ::: {.concept}
-[@Mun00, §25].
+[@Mun00].
 :::

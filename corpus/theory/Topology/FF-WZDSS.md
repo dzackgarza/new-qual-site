@@ -22,5 +22,5 @@ $$
 \Ext^1_{\ZZ}(\ZZ/n, A)\cong A/nA,\qquad
 \Ext^k_{\ZZ}(\ZZ/n, A) = 0\quad (k\geq 2)
 $$
-[@Hat02, §3.1, p. 195].
+[@Hat02].
 :::

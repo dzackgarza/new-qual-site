@@ -23,7 +23,7 @@ H_*(M;\ZZ) \cong \begin{cases}
 \qty{ \ZZ,\; \ZZ^r \oplus F,\; \ZZ^{r-1} \oplus \ZZ/2,\; 0 } & M \text{ nonorientable},
 \end{cases}
 $$
-in degrees $0, 1, 2, 3$, with all higher groups zero; in the nonorientable case $r \geq 1$ [@Hat02, §3.3, Exercise 24, p. 259]; [@Hat02, Theorem 3.26, p. 236].
+in degrees $0, 1, 2, 3$, with all higher groups zero; in the nonorientable case $r \geq 1$ [@Hat02].
 :::
 
 ::: {.remark}

@@ -24,5 +24,5 @@ Let $G$ be a group acting on a topological space $X$ by homeomorphisms, $G\actso
 ::: {.remark}
 A properly discontinuous action in this sense is free.
 Other sources call an action properly discontinuous under the weaker condition that every $x\in X$ has a neighborhood $U$ with $U \intersect g(U) \neq \emptyset$ for only finitely many $g\in G$.
-An action satisfying the condition in the definition is called a covering space action in [@Hat02, §1.3, p. 72].
+An action satisfying the condition in the definition is called a covering space action in [@Hat02].
 :::

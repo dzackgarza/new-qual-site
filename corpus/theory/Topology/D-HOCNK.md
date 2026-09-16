@@ -24,5 +24,5 @@ A [[D-ANO2D|covering space]] $p\colon\tilde X\to X$ has the homotopy lifting pro
 :::
 
 ::: {.concept}
-See [@Hat02, p. 60, Proposition 1.30, and p. 375].
+See [@Hat02].
 :::

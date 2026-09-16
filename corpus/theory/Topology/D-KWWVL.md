@@ -23,5 +23,5 @@ A subset $U\subseteq X$ is saturated with respect to $p$ if and only if $U = p\i
 :::
 
 ::: {.concept}
-See [@Mun00, §22].
+See [@Mun00].
 :::

@@ -23,5 +23,5 @@ Each $n$-cell $e^n_\alpha$ is homeomorphic to the open disk $D^n\sm S^{n-1}\cong
 :::
 
 ::: {.concept}
-See [@Hat02, pp. 5 and 7].
+See [@Hat02].
 :::

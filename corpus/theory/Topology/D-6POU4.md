@@ -29,5 +29,5 @@ By [[D-QP7WI|Poincaré duality]], $I$ vanishes on torsion classes and induces a 
 :::
 
 ::: {.concept}
-[@Hat02, §3.3].
+[@Hat02].
 :::

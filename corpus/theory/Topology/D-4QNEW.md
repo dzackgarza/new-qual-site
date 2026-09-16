@@ -25,5 +25,5 @@ A space is $0$-connected if and only if it is path-connected, and $1$-connected 
 :::
 
 ::: {.concept}
-[@Hat02, §4.1, p. 346].
+[@Hat02].
 :::

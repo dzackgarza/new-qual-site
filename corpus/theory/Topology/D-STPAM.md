@@ -18,7 +18,7 @@ $$
 \cdots\to A_{n+1}\mapsvia{d_{n+1}}A_n\mapsvia{d_n}A_{n-1}\to\cdots
 $$
 be a sequence of $R$-modules and $R$-linear maps.
-The sequence is \dfn{exact at $A_n$} if $\im d_{n+1}=\ker d_n$, and \dfn{exact} if it is exact at every term that has both an incoming and an outgoing map [@Hat02, p. 113].
+The sequence is \dfn{exact at $A_n$} if $\im d_{n+1}=\ker d_n$, and \dfn{exact} if it is exact at every term that has both an incoming and an outgoing map [@Hat02].
 :::
 
 ::: {.remark}

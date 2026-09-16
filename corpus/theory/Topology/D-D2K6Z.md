@@ -24,5 +24,5 @@ For every $n\geq 0$, $\delta^{n+1}\circ\delta^n = 0$; hence $B^{n+1}(X;G)\subset
 :::
 
 ::: {.concept}
-See [@Hat02, §3.1, p. 198].
+See [@Hat02].
 :::
