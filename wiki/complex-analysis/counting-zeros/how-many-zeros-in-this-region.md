@@ -11,61 +11,57 @@ topics:
 
 # How many zeros in this region?
 
-Counting the zeros of a function in a region is one exam question with three standard answers, and choosing between them is the whole difficulty.
-The choice is made on what you are handed, not on what the theorems say.
+The zeros of a holomorphic function in a region can be counted by factoring, by Rouché's theorem, by the argument principle, or, for a locally uniform limit, by Hurwitz's theorem.
+Each applies under different information about the function.
 
-## Can you just factor it?
+## Explicit factorization
 
-Try this first, and on a polynomial of low degree it often ends the problem.
-A zero you can name is worth more than a zero you have counted, and multiplicity is read off the factorization.
+For a polynomial whose roots can be computed, the factorization gives the zeros and their multiplicities.
 
-Two facts that shorten the search:
+::: {.fact}
+\envlist
 
-- A zero of $f$ of multiplicity $m \geq 2$ is a zero of $f'$, and the same holds for $f - a$ at an $a\dash$point.
+- A zero of $f$ of multiplicity $m \geq 2$ is a zero of $f'$, and a solution of $f(z) = a$ of multiplicity $m\geq 2$ is a zero of $f'$.
 
-- $f$ and $f-w$ have the same derivative, so the critical points do not move when you change the value you are counting.
+- $f$ and $f-w$ have the same derivative, so the multiple solutions of $f(z)=w$, for every $w$, lie among the zeros of $f'$.
+:::
 
-## Does the function split into a big part and a small part?
+## A dominant term on the boundary
 
-**Use Rouché.**
-This is the case whenever $f$ is a sum whose terms have visibly different sizes on the boundary: a polynomial where one monomial dominates on $\abs z = R$, or an entire function against a polynomial.
+**Rouché's theorem.**
+If $f = M + m$ with $\abs{m} < \abs{M}$ on the boundary curve $\gamma$, then $f$ and $M$ have the same number of zeros minus poles inside $\gamma$ ([[T-CJCKL]]).
+This applies when $M$ is a term whose zeros inside $\gamma$ are known, such as one monomial of a polynomial that dominates on $\abs z = R$, or an entire function compared with a polynomial.
+The dominant term depends on the curve: for $z^4+6z+3$, it is $z^4$ on $\abs z = 2$ and $6z$ on $\abs z = 1$ ([[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]).
 
-Write $f = M + m$, show $\abs{m} < \abs{M}$ on $\gamma$, and count the zeros of $M$, which you chose to be something you can count.
-The strategies are on [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]; the splitting usually changes with the radius, which is why the same polynomial needs a different $M$ on $\abs z < 1$ than on $\abs z < 2$.
+The inequality must be strict at every point of $\gamma$, and for meromorphic functions the conclusion is an equality of zeros minus poles.
 
-Rouché needs a *strict* inequality on the whole boundary curve, and it counts zeros minus poles, so for a meromorphic $f$ read the conclusion carefully.
+## The image of the boundary curve
 
-## Are you given a winding number, or a picture of the image curve?
+**Argument principle.**
+For $f$ meromorphic with no zeros or poles on $\gamma$, the number of zeros minus poles inside $\gamma$ is the winding number of $f\circ\gamma$ about $0$ ([[T-52HK6]]).
+It applies when the image curve $f\circ\gamma$ or the change of $\arg f$ along $\gamma$ is known, and it counts zeros and poles together.
 
-**Use the argument principle.**
-The index version says the count is how many times $f\circ\gamma$ wraps the origin, so a problem that shows you the image of the boundary, or tells you the change in $\arg f$ along it, is asking for this one and nothing else.
+## A locally uniform limit
 
-It is also the right tool when the question is about zeros *and* poles together, since it is the difference that the integral computes.
+**Hurwitz's theorem.**
+If $f_n \to f$ locally uniformly on a connected open set, then near a zero of order $n$ of $f$, the functions $f_k$ have exactly $n$ zeros for large $k$ ([[T-FZWEC]]).
+Consequently a limit of nowhere-zero functions is nowhere zero or identically zero, and a limit of univalent functions is univalent or constant ([[T-SULVA]]).
 
-## Is the function a limit of functions you already understand?
+## Solutions of $f(z) = w$
 
-**Use Hurwitz.**
-A sequence $f_n \to f$ locally uniformly, with each $f_n$ nonvanishing (or injective), forces the limit to be nonvanishing (or injective) unless it is constant.
-This is how a normal-families argument ends: Montel produces the limit, Hurwitz says the limit kept the property.
+Rouché's theorem applies to $f - w$.
+The argument principle expresses the number of solutions in $\Omega$ as
+$$
+F(w) \coloneqq {1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z) - w} \dz
+,$$
+which is continuous and integer valued on each connected component of $\CC\sm f(\bd\Omega)$, hence constant there.
+So the number of solutions of $f(z)=w$ in $\Omega$ is the same for all $w$ in one component of $\CC\sm f(\bd\Omega)$.
 
-## Is the question "exactly one solution of $f(z) = w$"?
-
-Both tools answer it, and Rouché is usually shorter.
-Apply Rouché to $f - w$, splitting off the dominant term.
-The argument principle answers it through the counting integral
-\[
-F(w) \da {1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z) - w} \dz
-,\]
-which is continuous in $w$ wherever $f \neq w$ on $\bd\Omega$ and integer valued, hence locally constant.
-That local constancy is the actual content: the number of solutions cannot change as $w$ moves inside a component.
-
-## The two theorems, side by side
+## Comparison
 
 |  | Argument principle | Rouché |
 | --- | --- | --- |
-| What you must know | $f$ on the boundary, or its image curve | that one term dominates on the boundary |
-| What it returns | $\size Z_f - \size P_f$ | $\size Z_f = \size Z_M$ |
-| Typical input | a winding number, a change in $\arg$ | a polynomial, or an entire function plus a small term |
-| Fails when | you cannot evaluate the integral or see the image | no term dominates, or the inequality is not strict |
+| Input | $f\circ\gamma$, or the change of $\arg f$ along $\gamma$ | a decomposition $f=M+m$ with $\abs m<\abs M$ on $\gamma$ |
+| Conclusion | $Z_f - P_f$ equals a winding number | $Z_f - P_f = Z_M - P_M$ |
 
-Rouché is proved *from* the argument principle, so nothing is lost by reaching for Rouché first; it is the argument principle with the integral already done.
+Rouché's theorem is proved from the argument principle.
