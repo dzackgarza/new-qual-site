@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-10
 kind: problem
-title: Nori Galois theory problem 3.10
+title: Quartic extensions containing a quadratic subfield have minimal polynomial $Q^2-cP^2$
 classification:
   areas: [algebra]
   topics: []

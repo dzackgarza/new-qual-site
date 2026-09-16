@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-02
 kind: problem
-title: Nori Galois theory problem 5.2
+title: Galois group over an intersection of fixed fields is $\langle H_1,H_2\rangle$
 classification:
   areas: [algebra]
   topics: []

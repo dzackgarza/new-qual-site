@@ -16,58 +16,100 @@ source:
   sections:
   - name: Section 2
     problems:
-    - P-NORI-GT-2-01
-    - P-NORI-GT-2-02
-    - P-NORI-GT-2-03
-    - P-NORI-GT-2-04
+    - id: P-NORI-GT-2-01
+      comment: Problem 2.1
+    - id: P-NORI-GT-2-02
+      comment: Problem 2.2
+    - id: P-NORI-GT-2-03
+      comment: Problem 2.3
+    - id: P-NORI-GT-2-04
+      comment: Problem 2.4
   - name: Section 3
     problems:
-    - P-NORI-GT-3-01
-    - P-NORI-GT-3-02
-    - P-NORI-GT-3-03
-    - P-NORI-GT-3-04
-    - P-NORI-GT-3-05
-    - P-NORI-GT-3-06
-    - P-NORI-GT-3-07
-    - P-NORI-GT-3-08
-    - P-NORI-GT-3-09
-    - P-NORI-GT-3-10
-    - P-NORI-GT-3-11
+    - id: P-NORI-GT-3-01
+      comment: Problem 3.1
+    - id: P-NORI-GT-3-02
+      comment: Problem 3.2
+    - id: P-NORI-GT-3-03
+      comment: Problem 3.3
+    - id: P-NORI-GT-3-04
+      comment: Problem 3.4
+    - id: P-NORI-GT-3-05
+      comment: Problem 3.5
+    - id: P-NORI-GT-3-06
+      comment: Problem 3.6
+    - id: P-NORI-GT-3-07
+      comment: Problem 3.7
+    - id: P-NORI-GT-3-08
+      comment: Problem 3.8
+    - id: P-NORI-GT-3-09
+      comment: Problem 3.9
+    - id: P-NORI-GT-3-10
+      comment: Problem 3.10
+    - id: P-NORI-GT-3-11
+      comment: Problem 3.11
   - name: Section 4
     problems:
-    - P-NORI-GT-4-01
-    - P-NORI-GT-4-02
-    - P-NORI-GT-4-03
-    - P-NORI-GT-4-04
-    - P-NORI-GT-4-05
-    - P-NORI-GT-4-06
-    - P-NORI-GT-4-07
-    - P-NORI-GT-4-08
-    - P-NORI-GT-4-09
-    - P-NORI-GT-4-10
+    - id: P-NORI-GT-4-01
+      comment: Problem 4.1
+    - id: P-NORI-GT-4-02
+      comment: Problem 4.2
+    - id: P-NORI-GT-4-03
+      comment: Problem 4.3
+    - id: P-NORI-GT-4-04
+      comment: Problem 4.4
+    - id: P-NORI-GT-4-05
+      comment: Problem 4.5
+    - id: P-NORI-GT-4-06
+      comment: Problem 4.6
+    - id: P-NORI-GT-4-07
+      comment: Problem 4.7
+    - id: P-NORI-GT-4-08
+      comment: Problem 4.8
+    - id: P-NORI-GT-4-09
+      comment: Problem 4.9
+    - id: P-NORI-GT-4-10
+      comment: Problem 4.10
   - name: Section 5
     problems:
-    - P-NORI-GT-5-01
-    - P-NORI-GT-5-02
-    - P-NORI-GT-5-03
-    - P-NORI-GT-5-04
-    - P-NORI-GT-5-05
-    - P-NORI-GT-5-06
-    - P-NORI-GT-5-07
-    - P-NORI-GT-5-08
-    - P-NORI-GT-5-09
-    - P-NORI-GT-5-10
-    - P-NORI-GT-5-11
+    - id: P-NORI-GT-5-01
+      comment: Problem 5.1
+    - id: P-NORI-GT-5-02
+      comment: Problem 5.2
+    - id: P-NORI-GT-5-03
+      comment: Problem 5.3
+    - id: P-NORI-GT-5-04
+      comment: Problem 5.4
+    - id: P-NORI-GT-5-05
+      comment: Problem 5.5
+    - id: P-NORI-GT-5-06
+      comment: Problem 5.6
+    - id: P-NORI-GT-5-07
+      comment: Problem 5.7
+    - id: P-NORI-GT-5-08
+      comment: Problem 5.8
+    - id: P-NORI-GT-5-09
+      comment: Problem 5.9
+    - id: P-NORI-GT-5-10
+      comment: Problem 5.10
+    - id: P-NORI-GT-5-11
+      comment: Problem 5.11
   - name: Section 6
     problems:
-    - P-NORI-GT-6-01
-    - P-NORI-GT-6-02
-    - P-NORI-GT-6-03
-    - P-NORI-GT-6-04
-    - P-NORI-GT-6-05
+    - id: P-NORI-GT-6-01
+      comment: Problem 6.1
+    - id: P-NORI-GT-6-02
+      comment: Problem 6.2
+    - id: P-NORI-GT-6-03
+      comment: Problem 6.3
+    - id: P-NORI-GT-6-04
+      comment: Problem 6.4
+    - id: P-NORI-GT-6-05
+      comment: Problem 6.5
   - name: Section 7
     problems:
-    - P-NORI-GT-7-01
+    - id: P-NORI-GT-7-01
+      comment: Problem 7.1
   date:
     kind: unknown
 ---

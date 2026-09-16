@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-04
 kind: problem
-title: Nori Galois theory problem 5.4
+title: 'Natural irrationalities: $\operatorname{Gal}(EK/E)\cong\operatorname{Gal}(K/K\cap E)$'
 classification:
   areas: [algebra]
   topics: []

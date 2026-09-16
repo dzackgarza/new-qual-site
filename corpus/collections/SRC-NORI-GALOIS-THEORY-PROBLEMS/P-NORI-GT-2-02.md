@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-2-02
 kind: problem
-title: Nori Galois theory problem 2.2
+title: Degree of a multiquadratic extension and the subgroup of $F^\times/(F^\times)^2$
 classification:
   areas: [algebra]
   topics: []

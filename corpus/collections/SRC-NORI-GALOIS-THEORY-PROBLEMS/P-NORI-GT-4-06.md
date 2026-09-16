@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-06
 kind: problem
-title: Nori Galois theory problem 4.6
+title: $S_d$ as a Galois group via symmetric rational functions
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-02
 kind: problem
-title: Nori Galois theory problem 4.2
+title: Injectivity of a matrix over an integral domain and its determinant
 classification:
   areas: [algebra]
   topics: []

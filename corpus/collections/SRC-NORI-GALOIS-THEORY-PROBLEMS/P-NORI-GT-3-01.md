@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-01
 kind: problem
-title: Nori Galois theory problem 3.1
+title: Size of the splitting field of $X^q+X$ over $\mathbb F_p$
 classification:
   areas: [algebra]
   topics: []

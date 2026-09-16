@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-04
 kind: problem
-title: Nori Galois theory problem 3.4
+title: Towers of quadratic extensions of $\mathbb F_p$ for $p\equiv 3 \pmod 4$
 classification:
   areas: [algebra]
   topics: []

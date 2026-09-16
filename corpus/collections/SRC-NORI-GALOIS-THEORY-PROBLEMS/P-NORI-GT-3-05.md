@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-05
 kind: problem
-title: Nori Galois theory problem 3.5
+title: Towers of cubic extensions of $\mathbb F_{19}$
 classification:
   areas: [algebra]
   topics: []

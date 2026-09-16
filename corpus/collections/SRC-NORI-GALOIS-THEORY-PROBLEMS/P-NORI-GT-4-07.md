@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-07
 kind: problem
-title: Nori Galois theory problem 4.7
+title: Every finite group is a Galois group
 classification:
   areas: [algebra]
   topics: []

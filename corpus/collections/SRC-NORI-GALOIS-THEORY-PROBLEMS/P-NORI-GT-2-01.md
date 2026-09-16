@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-2-01
 kind: problem
-title: Nori Galois theory problem 2.1
+title: Kernel of $F^\times/(F^\times)^2\to E^\times/(E^\times)^2$ for a quadratic extension
 classification:
   areas: [algebra]
   topics: []

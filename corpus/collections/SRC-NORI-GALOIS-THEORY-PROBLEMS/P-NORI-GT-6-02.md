@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-6-02
 kind: problem
-title: Nori Galois theory problem 6.2
+title: The splitting algebra of a monic polynomial is free with monomial basis
 classification:
   areas: [algebra]
   topics: []

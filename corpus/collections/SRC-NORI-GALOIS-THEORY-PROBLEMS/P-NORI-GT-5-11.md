@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-11
 kind: problem
-title: Nori Galois theory problem 5.11
+title: Embedding a cyclic degree $p$ extension in a cyclic degree $p^2$ extension
 classification:
   areas: [algebra]
   topics: []

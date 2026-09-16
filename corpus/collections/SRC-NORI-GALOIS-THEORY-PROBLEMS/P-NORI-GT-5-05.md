@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-05
 kind: problem
-title: Nori Galois theory problem 5.5
+title: Degree of $F(a^{1/p^n})$ over a field with $p^n$-th roots of unity
 classification:
   areas: [algebra]
   topics: []

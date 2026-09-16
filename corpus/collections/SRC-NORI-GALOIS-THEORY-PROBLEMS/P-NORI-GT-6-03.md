@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-6-03
 kind: problem
-title: Nori Galois theory problem 6.3
+title: Additivity of the polynomial vanishing on a finite additive subgroup
 classification:
   areas: [algebra]
   topics: []

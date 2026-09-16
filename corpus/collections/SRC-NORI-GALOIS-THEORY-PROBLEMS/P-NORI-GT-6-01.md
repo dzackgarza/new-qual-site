@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-6-01
 kind: problem
-title: Nori Galois theory problem 6.1
+title: Generators and bases in towers of ring extensions
 classification:
   areas: [algebra]
   topics: []

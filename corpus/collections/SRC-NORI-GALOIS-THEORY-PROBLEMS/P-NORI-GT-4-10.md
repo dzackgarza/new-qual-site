@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-10
 kind: problem
-title: Nori Galois theory problem 4.10
+title: Invariants of $X\mapsto X+1$ on $F(X)$ in characteristic $p$
 classification:
   areas: [algebra]
   topics: []

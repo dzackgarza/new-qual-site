@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-6-04
 kind: problem
-title: Nori Galois theory problem 6.4
+title: Additive polynomials in characteristic $p$
 classification:
   areas: [algebra]
   topics: []

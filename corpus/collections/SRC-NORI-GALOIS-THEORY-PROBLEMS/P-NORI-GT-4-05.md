@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-05
 kind: problem
-title: Nori Galois theory problem 4.5
+title: $E(X_1,\dots,X_d)/F(X_1,\dots,X_d)$ has the same degree as $E/F$
 classification:
   areas: [algebra]
   topics: []

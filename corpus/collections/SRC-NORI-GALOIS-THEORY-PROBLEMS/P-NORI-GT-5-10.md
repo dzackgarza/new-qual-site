@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-10
 kind: problem
-title: Nori Galois theory problem 5.10
+title: Abelian normal closure of $K(a^{1/p})$ is a Kummer extension by an element of $F$
 classification:
   areas: [algebra]
   topics: []

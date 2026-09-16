@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-09
 kind: problem
-title: Nori Galois theory problem 5.9
+title: Abelian normal closure of $K(a^{1/p})$ forces $a^{-1}\sigma(a)$ to be a $p$-th power
 classification:
   areas: [algebra]
   topics: []

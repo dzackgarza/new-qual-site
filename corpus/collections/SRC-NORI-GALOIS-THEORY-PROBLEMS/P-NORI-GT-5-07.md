@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-07
 kind: problem
-title: Nori Galois theory problem 5.7
+title: Degree of a multi-Kummer extension and the subgroup of $F^\times/(F^\times)^p$
 classification:
   areas: [algebra]
   topics: []

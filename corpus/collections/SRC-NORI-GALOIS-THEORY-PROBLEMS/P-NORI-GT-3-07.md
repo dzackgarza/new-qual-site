@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-07
 kind: problem
-title: Nori Galois theory problem 3.7
+title: Roots of cyclotomic polynomials in characteristic $p$
 classification:
   areas: [algebra]
   topics: []

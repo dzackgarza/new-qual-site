@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-08
 kind: problem
-title: Nori Galois theory problem 3.8
+title: $\Phi_{n'p^k}=\Phi_{n'}^{\varphi(p^k)}$ in $\mathbb F_p[X]$
 classification:
   areas: [algebra]
   topics: []

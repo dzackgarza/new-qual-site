@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-03
 kind: problem
-title: Nori Galois theory problem 5.3
+title: Base change of separable, normal, and Galois extensions
 classification:
   areas: [algebra]
   topics: []
