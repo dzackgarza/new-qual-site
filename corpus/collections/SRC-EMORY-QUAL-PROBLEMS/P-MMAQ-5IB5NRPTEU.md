@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked irreducibility of the two factors, exact exponent constraints from the minimal polynomial, all integer multiplicity solutions, and uniqueness and existence of the four matrix classes."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Linear Algebra (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL2, whose solution repeats this elementary-divisor count."
 ---
 
 ::: problem

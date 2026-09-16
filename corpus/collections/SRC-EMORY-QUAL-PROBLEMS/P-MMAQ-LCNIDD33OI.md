@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked inversion modulo a maximal ideal, cancellation for the nonzero prime generator, and properness and primality of the prime-element ideal."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Rings (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAR3, whose solution repeats this argument."
 ---
 
 ::: problem

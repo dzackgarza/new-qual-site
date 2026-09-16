@@ -25,6 +25,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked both allowed Sylow-13 counts, the exact complement count forcing a unique Sylow-3 subgroup, and the normal Sylow factors and generator of the order-33 group."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG4, whose solution repeats this Sylow-counting argument."
 ---
 
 ::: problem

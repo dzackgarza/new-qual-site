@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked both Eisenstein applications, recovery of the second quartic radical, the exact four-cycle of the automorphism, and the cubic degree, root action, and proper Galois subfield."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Fields and Galois Theory (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF4, whose solution repeats this argument."
 ---
 
 ::: problem

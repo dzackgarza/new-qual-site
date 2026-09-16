@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked nondegeneracy of the coefficient pairing, the matrix identity C-transpose B=BC, and the conjugation formula after rational canonical decomposition."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Linear Algebra (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL1 and carried its Jordan-form proof over C as a second solution."
 ---
 
 ::: problem
@@ -83,5 +87,32 @@ $$
 This is the required conjugacy, in particular over
 $\mathbb C$. The empty matrix, if allowed, is
 its own transpose and needs no blocks.
+:::
+:::
+
+::: {.solution}
+We work over $\mathbb{C}$, as the problem permits.
+
+<1>1. Every Jordan block is similar to its transpose.
+
+::: {.proof}
+Let $J=J_k(\lambda)$ be the $k\times k$ Jordan block, with $\lambda$ on the diagonal and $1$ in each entry $(i,i+1)$.
+Let $R$ be the permutation matrix with $1$ in each entry $(i,k+1-i)$; then $R=R^{-1}$.
+The entry $(i,j)$ of $RJR$ is the entry $(k+1-i,k+1-j)$ of $J$.
+It equals $\lambda$ when $i=j$ and $1$ when $j=i-1$, and is zero otherwise.
+Thus $RJR^{-1}=J^{\mathsf T}$.
+:::
+
+<1>2. Every square complex matrix $A$ is similar to $A^{\mathsf T}$.
+
+::: {.proof}
+Jordan canonical form gives an invertible $P$ with $A=PJP^{-1}$, where $J=J_1\oplus\cdots\oplus J_m$ is a direct sum of Jordan blocks.
+Let $R_i$ be the matrix of step <1>1 for $J_i$ and $R=R_1\oplus\cdots\oplus R_m$.
+Then $RJR^{-1}=J_1^{\mathsf T}\oplus\cdots\oplus J_m^{\mathsf T}=J^{\mathsf T}$.
+Transposing $A=PJP^{-1}$ gives $A^{\mathsf T}=(P^{-1})^{\mathsf T}J^{\mathsf T}P^{\mathsf T}$.
+With $Q=(P^{-1})^{\mathsf T}RP^{-1}$, which is invertible,
+$$
+QAQ^{-1}=(P^{-1})^{\mathsf T}RJR^{-1}P^{\mathsf T}=(P^{-1})^{\mathsf T}J^{\mathsf T}P^{\mathsf T}=A^{\mathsf T}.
+$$
 :::
 :::

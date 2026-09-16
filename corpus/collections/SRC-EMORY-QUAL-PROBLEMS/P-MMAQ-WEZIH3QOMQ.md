@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked leading coefficients, the recursive series inverse, the truncation quotient and remainder including unit divisors, and the least-value ideal-generator argument."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Rings (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAR1, whose solution repeats this order-of-vanishing argument."
 ---
 
 ::: problem

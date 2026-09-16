@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked linearity and separation by a coordinate functional, the finite-basis inverse, and the non-evaluation double-dual functional constructed from finite-support functions in the infinite-dimensional case."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Linear Algebra (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL3, whose solution repeats this double-dual construction."
 ---
 
 ::: problem

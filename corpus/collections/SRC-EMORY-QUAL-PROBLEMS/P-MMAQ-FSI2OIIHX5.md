@@ -25,6 +25,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked Sylow containment, the fixed-coset characterization, divisibility of every nontrivial orbit size, and the case H is trivial."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG2, whose solution repeats this orbit-counting argument."
 ---
 
 ::: problem

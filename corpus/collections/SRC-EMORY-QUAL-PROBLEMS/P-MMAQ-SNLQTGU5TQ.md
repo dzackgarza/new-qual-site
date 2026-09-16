@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SNLQTGU5TQ
 kind: problem
-title: Carefully state Zorn's lemma and use it to prove that every vector
+title: Every vector space has a basis, by Zorn's lemma
 classification:
   areas:
   - algebra

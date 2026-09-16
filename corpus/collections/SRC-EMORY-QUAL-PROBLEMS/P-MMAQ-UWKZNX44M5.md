@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the central-coset representatives, divisibility in the class equation, and both possible center orders for a group of order p squared."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (5) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG5, whose solution repeats this class-equation argument."
 ---
 
 ::: problem

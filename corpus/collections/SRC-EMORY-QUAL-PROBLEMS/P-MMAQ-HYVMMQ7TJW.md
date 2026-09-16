@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the full symmetric root action, irreducibility via conjugates, the third-root transposition using n>=3, and the maximal point-stabilizer argument under Galois correspondence."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Fields and Galois Theory (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF3, whose solution repeats this symmetric-group argument."
 ---
 
 ::: problem

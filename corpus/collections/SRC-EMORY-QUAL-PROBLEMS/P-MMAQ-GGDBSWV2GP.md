@@ -17,12 +17,16 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (9) of Arango-Piñeros, Some quals problems; corrected the misspelling clyclic; merged the duplicate P-EMAG9, whose solution repeats this element-order count."
 ---
 
 ::: problem
 1. Let $G$ be a group of order $n$.
    Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
-   Show that $G$ is clyclic.
+   Show that $G$ is cyclic.
 
 2. Let $F$ be a field.
    Show that every finite subgroup of the group of units $F^\times$ is cyclic.

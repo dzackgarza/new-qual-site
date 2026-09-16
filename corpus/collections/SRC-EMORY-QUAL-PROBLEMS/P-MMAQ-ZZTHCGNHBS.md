@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the Sylow proof at order 15, the regular-action sign character giving the normal subgroup of index two, all four conjugation actions, and the distinct center orders."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (7) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG7, whose solution repeats this semidirect-product classification."
 ---
 
 ::: problem

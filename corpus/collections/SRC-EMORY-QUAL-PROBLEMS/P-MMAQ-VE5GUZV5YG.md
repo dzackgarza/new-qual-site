@@ -24,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the coset kernel using the normal subgroups of each symmetric group, including n=4 and n=6, the labeled stabilizer, and maximality; treated n=1 without claiming a proper maximal subgroup."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG3, whose solution repeats this coset-action argument."
 ---
 
 ::: problem

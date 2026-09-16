@@ -16,6 +16,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Groups (6) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG6, whose solution repeats this counting argument."
 ---
 
 ::: problem

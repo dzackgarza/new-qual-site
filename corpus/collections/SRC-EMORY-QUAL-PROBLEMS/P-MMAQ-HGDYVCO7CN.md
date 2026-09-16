@@ -23,6 +23,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Checked the splitting-field identity, separability, the relative Frobenius automorphism and its exact order, including the trivial extension."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Fields and Galois Theory (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF2, whose solution repeats this Frobenius argument."
 ---
 
 ::: problem
