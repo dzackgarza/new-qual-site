@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $f$ has a pole $z_0$ of order $n$, then
-\[
-\Res_{z=z_0} f = \lim_{z\to z_0} {1 \over (n-1)!} \qty{\dd{}{z}}^{n-1} (z-z_0)^n f(z)
-.\]
+::: {.proposition}
+Let $n\ge1$, and let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc about $z_0$ with a [[D-AUD6K|pole]] of order $n$ at $z_0$.
+Then the [[D-C3JIU|residue]] of $f$ at $z_0$ is
+$$
+\Res_{z=z_0} f = \lim_{z\to z_0} {1 \over (n-1)!} \frac{d^{n-1}}{dz^{n-1}}\qty{(z-z_0)^n f(z)}.
+$$
 :::
