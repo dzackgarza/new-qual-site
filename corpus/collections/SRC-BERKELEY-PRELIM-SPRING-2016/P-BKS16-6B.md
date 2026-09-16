@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-6B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 6B
+title: Optimality condition for nonnegative least squares
 classification:
   areas:
   - prelim

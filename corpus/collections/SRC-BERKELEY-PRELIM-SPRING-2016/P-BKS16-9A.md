@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-9A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 9A
+title: Galois group of the normal closure of $\mathbb Q(\sqrt{3+\sqrt 5})$
 classification:
   areas:
   - prelim

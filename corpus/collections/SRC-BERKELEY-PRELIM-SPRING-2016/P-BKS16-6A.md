@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-6A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 6A
+title: Real 100th roots of $\operatorname{diag}(-1,-1-\epsilon)$
 classification:
   areas:
   - prelim

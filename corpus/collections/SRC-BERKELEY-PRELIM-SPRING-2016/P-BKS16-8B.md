@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-8B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 8B
+title: Factorization of $6x^5+3x^4-9x^3+15x^2-13x-2$ over $\mathbb Q$
 classification:
   areas:
   - prelim

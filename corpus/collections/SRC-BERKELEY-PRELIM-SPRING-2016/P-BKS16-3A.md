@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-3A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 3A
+title: Convergence of $\int f_n^4$ from $\int f_n\to 0$ and $f_n^2\le g$
 classification:
   areas:
   - prelim

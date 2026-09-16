@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-3B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 3B
+title: Lipschitz limit of $\sum(-1)^k/(k+|x|)$ and uniform convergence
 classification:
   areas:
   - prelim

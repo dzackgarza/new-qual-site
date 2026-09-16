@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-4B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 4B
+title: Contour integral of $(6z^5+1)/(z^6+z+1)$ over $|z|=2$
 classification:
   areas:
   - prelim

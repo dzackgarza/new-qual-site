@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-1B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 1B
+title: $\int_0^\infty te^{-t/2}/(1-e^{-t})\,dt$ as a sum over odd squares
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-2B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 2B
+title: Pointwise limits of convex functions are convex
 classification:
   areas:
   - prelim

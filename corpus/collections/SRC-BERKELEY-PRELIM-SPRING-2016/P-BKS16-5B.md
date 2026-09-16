@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-5B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 5B
+title: Hadamard product of power series holomorphic near the closed disk
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-9B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 9B
+title: Groups of order $p^2$ are abelian
 classification:
   areas:
   - prelim

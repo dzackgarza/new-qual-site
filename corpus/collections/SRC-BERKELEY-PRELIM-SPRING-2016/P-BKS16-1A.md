@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-1A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 1A
+title: Rationality of an integral of nested radicals $\sqrt{-6+5\sqrt{\cdots}}$
 classification:
   areas:
   - prelim

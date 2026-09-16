@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-2A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 2A
+title: Integration by parts on $\mathbb R$ for $L^2$ functions with $L^2$ derivatives
 classification:
   areas:
   - prelim

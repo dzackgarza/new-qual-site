@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-7A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 7A
+title: Rationality of eigenvalues of rational symmetric matrices
 classification:
   areas:
   - prelim

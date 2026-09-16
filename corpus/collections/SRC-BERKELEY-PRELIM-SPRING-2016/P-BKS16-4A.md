@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-4A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 4A
+title: Real-rootedness of real polynomials via the sign of $\operatorname{Im}(p'/p)$
 classification:
   areas:
   - prelim

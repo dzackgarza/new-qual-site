@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-7B
 kind: problem
-title: Berkeley Spring 2016 prelim problem 7B
+title: Spectral radius bounds the norm of a symmetric matrix
 classification:
   areas:
   - prelim

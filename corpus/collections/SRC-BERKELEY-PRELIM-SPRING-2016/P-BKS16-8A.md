@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-8A
 kind: problem
-title: Berkeley Spring 2016 prelim problem 8A
+title: Structure of $(\mathbb Z/2016\mathbb Z)^\times$
 classification:
   areas:
   - prelim
