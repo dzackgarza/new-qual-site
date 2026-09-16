@@ -58,8 +58,6 @@ For measurable $E_n$, the set $\limsup_n E_n$ of points lying in infinitely many
 
 [[FR-CSUMF]]
 
-[[PR-I44DD]]
-
 [[PR-552IH]]
 
 [[D-BXAUS]]
