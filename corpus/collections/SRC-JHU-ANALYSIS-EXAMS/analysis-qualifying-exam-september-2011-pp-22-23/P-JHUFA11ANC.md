@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $D=\{z\in\mathbb C:|z|<1\}$ and let $f$ be
+Let $D=\{z\in\CC:\abs{z}<1\}$ and let $f$ be
 holomorphic on $D\setminus\{0\}$. Suppose there is a
 positive integer $n$ such that $f^{-1}(w)$ contains at
-most $n$ points for every $w\in\mathbb C$. Prove that
+most $n$ points for every $w\in\CC$. Prove that
 zero is a removable singularity or a pole.
 :::
 
@@ -36,15 +36,15 @@ zero is a removable singularity or a pole.
 Suppose, for a contradiction, that zero is an essential
 singularity. In particular $f$ is nonconstant.
 
-<1>1. The image of every punctured disk about zero is dense in $\mathbb C$.
+<1>1. The image of every punctured disk about zero is dense in $\CC$.
 
 ::: {.proof}
-Fix $0<r<1$. If $f(\{0<|z|<r\})$ were not dense,
-there would be $w\in\mathbb C$ and $\delta>0$ such that
-$|f(z)-w|\geq\delta$ throughout this punctured disk.
+Fix $0<r<1$. If $f(\{0<\abs{z}<r\})$ were not dense,
+there would be $w\in\CC$ and $\delta>0$ such that
+$\abs{f(z)-w}\geq\delta$ throughout this punctured disk.
 Then $g(z)=1/(f(z)-w)$ is holomorphic and bounded by
 $1/\delta$ there. It extends holomorphically across zero
-by the removable-singularity theorem [@SS03]; denote
+by [[D-BQLJV|Riemann's removable singularity theorem]]; denote
 the extension by $G$.
 
 If $G(0)\ne0$, the identity $f=w+1/G$ extends $f$
@@ -63,17 +63,17 @@ Choose an open disk $B_1$ with closure contained in
 $D\setminus\{0\}$. The restriction of $f$ to $B_1$ is
 nonconstant: otherwise the identity theorem on the
 connected punctured disk would make $f$ constant everywhere.
-Thus $V_1=f(B_1)$ is nonempty and open by the open mapping
-theorem [@SS03].
+Thus $V_1=f(B_1)$ is nonempty and open by the
+[[C-FRF33|open mapping theorem]].
 
 Inductively, suppose $B_1,\ldots,B_k$ have pairwise
 disjoint closures in $D\setminus\{0\}$ and
 $V_k=\bigcap_{j=1}^k f(B_j)$ is nonempty and open.
 Choose $r>0$ so small that $r<1$ and the punctured disk
-$0<|z|<r$ misses all those closures. Step <1>1 gives
+$0<\abs{z}<r$ misses all those closures. Step <1>1 gives
 a point $a$ in this punctured disk with $f(a)\in V_k$.
 Choose an open disk $B_{k+1}$ about $a$ whose closure
-is contained in $0<|z|<r$. It is disjoint from all
+is contained in $0<\abs{z}<r$. It is disjoint from all
 the earlier closures. Its image is open by the same
 nonconstancy and open mapping argument. Hence
 $$
@@ -90,7 +90,13 @@ Choose $w\in\bigcap_{j=1}^{n+1}f(B_j)$. For each $j$
 there is $z_j\in B_j$ with $f(z_j)=w$. The disks are
 disjoint, so these are $n+1$ distinct points of $f^{-1}(w)$,
 contrary to the hypothesis. Zero is therefore not essential.
-The classification of isolated singularities leaves only
-a removable singularity or a pole [@SS03], as required.
+The [[FF-QZXBS|classification of isolated singularities]] leaves only
+a removable singularity or a pole, as required.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the required classification of the singularity at zero.
 :::
 :::
