@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-WB7MM
 kind: proposition
-title: Morphisms between groups finite and infinite groups
+title: Homomorphisms from finite groups to free groups
 classification:
   areas:
   - topology
@@ -14,6 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-There are no nontrivial homomorphisms from finite groups into free groups.
-In particular, any group morphism $f: \ZZ_n \to \ZZ$ is trivial.
+Every homomorphism from a finite group to a free group is trivial, since free groups are torsion-free.
+In particular, every homomorphism $\ZZ/n \to \ZZ$ is trivial.
 :::
