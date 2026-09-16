@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-G4GO4
 kind: theorem
-title: The Tube Lemma
+title: The tube lemma
 classification:
   areas:
   - topology
@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $X, Y$ be spaces with $Y$ compact, and let $x_0\in X$.
-Let $N\subseteq X\cross Y$ be an open set containing the slice $x_0 \cross Y$, then there is a neighborhood $W\ni x$ in $X$ such that $N \supset W\cross Y$:
-
-![figures/image_2021-05-21-00-28-13.png](../../assets/figures/image_2021-05-21-00-28-13.png)
+Let $X, Y$ be topological spaces with $Y$ compact, and let $x_0\in X$.
+If $N\subseteq X\cross Y$ is an open set containing the slice $\theset{x_0} \cross Y$, then there is a neighborhood $W$ of $x_0$ in $X$ with $W\cross Y\subseteq N$ [@Mun00, Lemma 26.8].
 :::
+
+![A tube $W\cross Y$ inside $N$](../../assets/figures/image_2021-05-21-00-28-13.png)
