@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 8 problem 7A.
 ---
 
 ::: {.problem}
-Given two vectors x and$y$in$\mathbb { R } ^ { n }$with$\| x \| _ { 2 } = \| y \| _ { 2 }$, construct an orthogonal matrix$Q$such that$Q x = y$. Can there be such a matrix if$\| x \| _ { 2 } \neq \| y \| _ { 2 } ?$
+Given two vectors $x$ and $y$ in $\mathbb{R}^n$ with $\|x\|_2 = \|y\|_2$, construct an orthogonal matrix $Q$ such that $Qx = y$. Can there be such a matrix if $\|x\|_2 \neq \|y\|_2$?
 :::

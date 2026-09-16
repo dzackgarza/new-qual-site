@@ -9,14 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 14 problem 3B.
 ---
 
 ::: {.problem}
-The error of a quadrature rule with$p + 1$distinct points$x _ { j }$, weights$w _ { j }$is
+The error of a quadrature rule with $p + 1$ distinct points $x_j$, weights $w_j$ is
 
 $$
-E _ { p } ( f ) = \int _ { a } ^ { b } f ( x ) d x - \sum _ { j = 0 } ^ { p } w _ { j } f ( x _ { j } ) .
+E_p(f) = \int_a^b f(x) \, dx - \sum_{j=0}^{p} w_j f(x_j).
 $$
 
-Suppose that$E _ { p } ( f ) = 0$whenever$f$is a polynomial of degree$\leq q$. Show that$q \leq 2 p + 1$and if$q \geq 2 p$then$w _ { j } > 0$for all$j$.
+Suppose that $E_p(f) = 0$ whenever $f$ is a polynomial of degree $\leq q$. Show that $q \leq 2p + 1$ and if $q \geq 2p$ then $w_j > 0$ for all $j$.
 :::

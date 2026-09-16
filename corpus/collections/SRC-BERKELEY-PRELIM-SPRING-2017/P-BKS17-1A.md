@@ -9,12 +9,17 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 2 problem 1A.
 ---
 
 ::: {.problem}
 Show that the following improper Riemann integrals exist and are equal:
 
 $$
-\int _ { - \infty } ^ { \infty } { \frac { \sin ( x ) } { x } } d x = \int _ { - \infty } ^ { \infty } { \frac { \sin ^ { 2 } ( x ) } { x ^ { 2 } } } d x
+\int_{-\infty}^{\infty} \frac{\sin(x)}{x} \, dx = \int_{-\infty}^{\infty} \frac{\sin^2(x)}{x^2} \, dx.
 $$
 :::

@@ -9,19 +9,24 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 6 problem 5A.
 ---
 
 ::: {.problem}
 Suppose the coefficients of the power series
 
 $$
-\sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }
+\sum_{n=0}^{\infty} a_n z^n
 $$
 
 are given by the recurrence relation
 
 $$
-a _ { 0 } = 1 , a _ { 1 } = - 1 , 3 a _ { n } + 4 a _ { n - 1 } - a _ { n - 2 } = 0 , n = 2 , 3 , \ldots .
+a_0 = 1, \quad a_1 = -1, \quad 3a_n + 4a_{n-1} - a_{n-2} = 0, \quad n = 2, 3, \ldots.
 $$
 
 Find the radius of convergence of the series and the function to which it converges in its disc of convergence.

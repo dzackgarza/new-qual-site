@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 16 problem 5B.
 ---
 
 ::: {.problem}
-Write all values of$i ^ { i }$in the form$a + b i$
+Write all values of $i^i$ in the form $a + bi$.
 :::

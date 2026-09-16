@@ -9,14 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored spaces around inline math and normalized LaTeX against Sp17_Exam_0.pdf page 13 problem 2B.
 ---
 
 ::: {.problem}
-Suppose$f : [ - 1 , 1 ] \to \mathbb { C }$is a continuous complex-valued function, and for all non-negative integers n
+Suppose $f : [-1, 1] \to \mathbb{C}$ is a continuous complex-valued function, and for all non-negative integers $n$
 
 $$
-\int _ { - 1 } ^ { 1 } x ^ { n } f ( x ) d x = 0 .
+\int_{-1}^{1} x^n f(x) \, dx = 0.
 $$
 
-Prove that$f = 0 .$
+Prove that $f = 0$.
 :::
