@@ -982,6 +982,3 @@ source:
     - id: P-AGH562CHERNGRIFFITHS
       comment: V.6.2
 ---
-
-The exercises are the course, and an algebraic geometry qual is in large part a conversation about them.
-Solutions here are the author's own, written while reading for the exam.
