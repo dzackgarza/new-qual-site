@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-For a subset $A$ of a metric space $(X, d)$, the **diameter** of $A$ is defined as $\sup_{p, q\in A}d(p, q)$.
+Let $(X, d)$ be a metric space and $A\subseteq X$ a nonempty subset.
+The \dfn{diameter} of $A$ is $\diam(A)\coloneqq\sup_{p, q\in A} d(p, q)\in[0,\infty]$.
 :::
