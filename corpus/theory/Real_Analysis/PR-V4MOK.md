@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-V4MOK
 kind: proposition
-title: Differentiating Under an Integral (non-negative)
+title: Differentiation under the integral sign
 classification:
   areas:
   - real-analysis
@@ -14,19 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
-\[
-\dd{}{t} F(t)
-&\definedas \lim_{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
-&\eq^{\scriptstyle\text{DCT}} \int \dd{}{t} f(x, t) ~dx
-.\]
-
-To justify passing the limit, let $h_k \to 0$ be any sequence and define
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]], let $I\subseteq\RR$ be an open interval, and let $f\colon X\times I\to\CC$ be such that $x\mapsto f(x,t)$ is [[D-R5DL3|integrable]] for each $t\in I$.
+Put $F(t)\coloneqq\int_X f(x,t)\dmu(x)$.
+Suppose $\frac{\partial f}{\partial t}(x,t)$ exists for all $x\in X$ and $t\in I$, and there is $g\in L^1(\mu)$ with $\abs{\frac{\partial f}{\partial t}(x,t)}\leq g(x)$ for all $x\in X$ and $t\in I$.
+Then $F$ is differentiable on $I$ and
 $$
-f_k(x, t) = \frac{f(x, t+h_k)-f(x, t)}{h_k}
-,$$
-so $f_k \converges{k\to\infty}\too \dd{f}{t}$ pointwise.
-
-Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$, and show that $f_k(\xi, t) \in L_1$.
+F'(t) = \int_X \frac{\partial f}{\partial t}(x, t) \dmu(x)
+$$
+[@Fol13, Theorem 2.27].
 :::
