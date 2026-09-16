@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-QK5BM
 kind: definition
-title: Euler Characteristic
+title: Euler characteristic of a finite CW complex
 classification:
   areas:
   - topology
@@ -15,17 +15,18 @@ review: draft
 ---
 
 ::: {.definition}
-For $X$ a finite CW complex with $c_n$ cells in dimension $n$,
-\[
-\chi(X) \da \sum_n (-1)^n c_n
-.\]
-This agrees with the homological Euler characteristic,
-\[
-\chi(X) = \sum_n (-1)^n \rank H_n(X;\ZZ)
-,\]
-so $\chi$ is independent of the cell structure and depends only on the homotopy type of $X$.
+Let $X$ be a finite [[D-ZOU5G|CW complex]] with $c_n$ cells of dimension $n$.
+The \dfn{Euler characteristic} of $X$ is
+$$
+\chi(X)\coloneqq\sum_{n\geq0}(-1)^nc_n.
+$$
 :::
 
-::: {.concept}
-See Hatcher, §2.2, Theorem 2.44, p. 146.
+::: {.theorem}
+For a finite CW complex $X$,
+$$
+\chi(X)=\sum_{n\geq0}(-1)^n\rank H_n(X;\ZZ),
+$$
+where $H_n(X;\ZZ)$ is [[D-6BUWA|singular homology]] [@Hat02, Theorem 2.44].
+Consequently $\chi(X)$ does not depend on the CW structure, and finite CW complexes that are homotopy equivalent have the same Euler characteristic.
 :::
