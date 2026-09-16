@@ -17,13 +17,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Statement transcribed from the retained scan problem-16.png (source question 46) in place of the embedded image.
 ---
 
 ::: {.problem}
-Let $G=\{1,i,-1,-i\}$ under multiplication.
-Decide which listed assertions about homomorphisms $G\to G$ are true, including complex conjugation, squaring, and the claim that every endomorphism is $z\mapsto z^k$ for some integer $k$.
+Let $G$ be the group of complex numbers $\{1,i,-1,-i\}$ under multiplication.
+Which of the following statements are true about the homomorphisms of $G$ into itself?
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-16.png)
+I. $z\mapsto\bar z$ defines one such homomorphism, where $\bar z$ denotes the complex conjugate of $z$.
+
+II. $z\mapsto z^2$ defines one such homomorphism.
+
+III. For every such homomorphism, there is an integer $k$ such that the homomorphism has the form $z\mapsto z^k$.
+
+(A) None (B) II only (C) I and II only (D) II and III only (E) I, II, and III
 :::
 
 ::: {.solution}

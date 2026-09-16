@@ -17,13 +17,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Statement transcribed from the retained scan problem-13.png (source question 21) in place of the embedded image.
 ---
 
 ::: {.problem}
-Let $P$ be the set of all primes, and for each integer $n$ let $P_n$ be the set of all prime multiples of $n$.
-Which of the listed intersections is nonempty?
+Let $P_1$ be the set of all primes, $\{2,3,5,7,\ldots\}$, and for each integer $n$, let $P_n$ be the set of all prime multiples of $n$, $\{2n,3n,5n,7n,\ldots\}$.
+Which of the following intersections is nonempty?
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-13.png)
+(A) $P_1\cap P_{23}$ (B) $P_7\cap P_{21}$ (C) $P_{12}\cap P_{20}$ (D) $P_{20}\cap P_{24}$ (E) $P_5\cap P_{25}$
 :::
 
 ::: {.solution}
