@@ -40,8 +40,6 @@ source:
     year: 2008
 ---
 
-::: remark
-The retained paper has two sections and asks the candidate to do three questions from each.
-Section A contains five combinatorics/coding questions; Section B contains four topology questions.
-Section B Questions 7--9 are already represented verbatim by the canonical topology-workshop cards listed above, so this collection reuses them rather than creating duplicate problem owners.
+::: {.remark}
+The paper has two sections, and candidates answer three questions from each. Section A has five combinatorics and coding theory questions, and Section B has four topology questions.
 :::
