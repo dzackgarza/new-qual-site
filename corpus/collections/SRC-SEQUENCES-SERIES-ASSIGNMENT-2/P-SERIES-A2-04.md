@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-04
 kind: problem
-title: Sequences and series Assignment 2, problem 4
+title: Subsequence criteria for convergence of a sequence
 classification:
   areas:
   - real-analysis

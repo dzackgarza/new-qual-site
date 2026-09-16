@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-05
 kind: problem
-title: Sequences and series Assignment 2, problem 5
+title: Sequences with $|a_{n+1}-a_n|\le\frac12|a_n-a_{n-1}|$ converge
 classification:
   areas:
   - real-analysis

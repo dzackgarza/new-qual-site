@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-10
 kind: problem
-title: Sequences and series Assignment 2, problem 10
+title: Divergence when $na_n\to\ell\ne0$ and convergence of $\sum a_n^p$
 classification:
   areas:
   - real-analysis

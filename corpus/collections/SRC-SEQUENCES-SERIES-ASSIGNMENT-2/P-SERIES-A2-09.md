@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-09
 kind: problem
-title: Sequences and series Assignment 2, problem 9
+title: Ratio test versus root test
 classification:
   areas:
   - real-analysis

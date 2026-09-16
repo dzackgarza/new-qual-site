@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-06
 kind: problem
-title: Sequences and series Assignment 2, problem 6
+title: Convergence of the Kempner series omitting the digit 0
 classification:
   areas:
   - real-analysis

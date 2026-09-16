@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-03
 kind: problem
-title: Sequences and series Assignment 2, problem 3
+title: $\limsup$ and $\liminf$ of a recursively defined sequence
 classification:
   areas:
   - real-analysis

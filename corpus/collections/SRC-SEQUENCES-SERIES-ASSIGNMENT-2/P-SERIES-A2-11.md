@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-11
 kind: problem
-title: Sequences and series Assignment 2, problem 11
+title: 'Convergent series: $\sum a_nb_n$, $\sum n^2a_n$ and $na_n\to0$'
 classification:
   areas:
   - real-analysis

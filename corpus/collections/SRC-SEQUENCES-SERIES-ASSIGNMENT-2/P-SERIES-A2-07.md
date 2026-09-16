@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-07
 kind: problem
-title: Sequences and series Assignment 2, problem 7
+title: Convergence of ratios of consecutive Fibonacci numbers
 classification:
   areas:
   - real-analysis
