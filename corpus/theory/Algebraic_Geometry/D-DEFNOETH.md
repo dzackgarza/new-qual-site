@@ -30,7 +30,7 @@ An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
 :::
 
 ::: {.definition title="Noetherian scheme"}
-A scheme $X$ is **locally Noetherian** if it can be covered by open affine subsets $\Spec A_i$ with each $A_i$ a Noetherian ring.
+A scheme $X$ is \dfn{locally Noetherian} if it can be covered by open affine subsets $\Spec A_i$ with each $A_i$ a Noetherian ring.
 It is **Noetherian** if it is locally Noetherian and quasicompact, equivalently if it has a finite such cover.
 A scheme is locally Noetherian if and only if $R$ is Noetherian for every open affine $\Spec R \subseteq X$.
 [@Har10a, §II.3, Proposition II.3.2]

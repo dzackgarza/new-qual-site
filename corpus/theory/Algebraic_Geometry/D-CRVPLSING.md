@@ -40,7 +40,7 @@ Up to analytic isomorphism at the origin:
 | cusp, $A_2$ | $y^2 = x^3$ | $1$ | $1$ |
 | tacnode, $A_3$ | $y^2 = x^4$ | $2$ | $2$ |
 
-A **node** is a singular point of multiplicity $2$ with two distinct tangent directions; multiplicity $2$ alone does not make a node, since the cusp and the tacnode also have multiplicity $2$.
+A \dfn{node} is a singular point of multiplicity $2$ with two distinct tangent directions; multiplicity $2$ alone does not make a node, since the cusp and the tacnode also have multiplicity $2$.
 More generally $A_n : y^2 = x^{n+1}$ has $\delta_p = \floor{(n+1)/2}$, and an ordinary point of multiplicity $r$, meaning $r$ smooth branches with distinct tangents, has $\delta_p = \binom{r}{2}$.
 :::
 

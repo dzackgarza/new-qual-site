@@ -44,7 +44,7 @@ The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \Cone(P \cap M - m_
 :::
 
 ::: {.definition title="Combinatorial equivalence"}
-Polytopes $P_1$ and $P_2$ are **combinatorially equivalent** if there is a bijection between their faces that preserves inclusions, intersections and dimensions of faces.
+Polytopes $P_1$ and $P_2$ are \dfn{combinatorially equivalent} if there is a bijection between their faces that preserves inclusions, intersections and dimensions of faces.
 :::
 
 ::: {.example title="A hexagon"}

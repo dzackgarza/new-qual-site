@@ -30,7 +30,7 @@ It is **quasi-separated** if $\Delta_{X/Y}$ is quasicompact, equivalently if for
 :::
 
 ::: {.definition title="Quasicompact and quasi-separated"}
-A scheme $X$ is **quasicompact** if every open cover of $X$ has a finite subcover, and a morphism $f: X \to Y$ is **quasicompact** if $f^{-1}(V)$ is quasicompact for every affine open $V \subseteq Y$.
+A scheme $X$ is \dfn{quasicompact} if every open cover of $X$ has a finite subcover, and a morphism $f: X \to Y$ is **quasicompact** if $f^{-1}(V)$ is quasicompact for every affine open $V \subseteq Y$.
 A scheme $X$ is **quasi-separated** if the intersection of any two quasicompact open subsets of $X$ is quasicompact, equivalently if the intersection of any two affine open subsets is quasicompact; this is quasi-separatedness of $X \to \Spec \ZZ$.
 :::
 
