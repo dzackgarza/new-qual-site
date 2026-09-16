@@ -21,4 +21,5 @@ A subset $\mathcal F\subseteq C(K,\RR^m)$ is [[D-EILKJ|compact]] if and only if 
 $$
 \forall x\in K\quad\forall\varepsilon>0\quad\exists\delta>0\quad\forall y\in K\quad\forall f\in\mathcal F:\quad\norm{x-y}<\delta\implies\norm{f(x)-f(y)}<\varepsilon.
 $$
+[@Mun00].
 :::

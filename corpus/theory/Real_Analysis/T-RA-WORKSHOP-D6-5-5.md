@@ -20,4 +20,5 @@ Then there exists $c\in(a,b)$ such that
 $$
 \frac{1}{b-a}\int_a^b f(x)\,dx=f(c).
 $$
+[@Apo74].
 :::
