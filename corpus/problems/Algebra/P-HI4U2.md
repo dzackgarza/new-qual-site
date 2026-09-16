@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 What are the following objects?
 
 - $K(x)$
@@ -23,6 +24,7 @@ What are the following objects?
 - $K( \alpha)$
 
 - $K[ \alpha]$
+:::
 
 ::: {.solution}
 ![](../../assets/Algebra/999_Review/image/SmartSelect_20210419-233949_Xodo_Docs.jpg)

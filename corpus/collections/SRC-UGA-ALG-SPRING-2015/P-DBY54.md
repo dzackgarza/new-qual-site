@@ -14,13 +14,14 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $R$ be a commutative ring, and $S\subset R$ be a nonempty subset that does not contain 0 such that for all $x, y\in S$ we have $xy\in S$.
 Let $\mci$ be the set of all ideals $I\normal R$ such that $I\intersect S = \emptyset$.
 
 Show that for every ideal $I\in \mci$, there is an ideal $J\in \mci$ such that $I\subset J$ and $J$ is not properly contained in any other ideal in $\mci$.
 
 Prove that every such ideal $J$ is prime.
-
+:::
 
 :::{.solution}
 \envlist

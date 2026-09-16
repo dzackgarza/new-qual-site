@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 What does it mean to be algebraically closed?
+:::
 
 ::: {.solution}
 ![Projects/Quals/Algebra/image/SmartSelect_20210420-000204_Xodo_Docs.jpg](../../assets/Algebra/999_Review/image/SmartSelect_20210420-000204_Xodo_Docs.jpg)

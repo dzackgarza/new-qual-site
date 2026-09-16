@@ -18,7 +18,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
+:::
 
 ::: {.solution}
 <1>1. Let \(n_p\) and \(n_q\) denote the numbers of Sylow \(p\)- and Sylow \(q\)-subgroups of \(G\). Then

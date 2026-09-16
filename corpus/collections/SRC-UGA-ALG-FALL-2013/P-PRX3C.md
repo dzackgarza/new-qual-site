@@ -14,9 +14,11 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 a. Define *prime ideal*, give an example of a nontrivial ideal in the ring $\ZZ$ that is not prime, and prove that it is not prime.
 
 b. Define *maximal ideal*, give an example of a nontrivial maximal ideal in $\ZZ$ and prove that it is maximal.
+:::
 
 ::: {.solution}
 \envlist

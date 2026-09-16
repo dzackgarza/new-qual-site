@@ -16,11 +16,13 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 (a) Let $R$ be the ring of all polynomials in $\mathbb{Q}[x]$ having no $x$-term.
 Show that $x^5$ and $x^6$ have no GCD in $R$.
 
 (b) If $S$ is a Euclidean domain and $T$ is a subring of $S$, is it true that $T$ is a Euclidean domain?
 Justify your answer.
+:::
 
 ::: {.solution}
 **(a).**

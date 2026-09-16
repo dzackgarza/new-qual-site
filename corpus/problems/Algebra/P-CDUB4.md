@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Why is $[K\(alpha): K]$ equal to the degree of the minimal polynomial of $\alpha$ when it is algebraic?
+:::
 
 ::: {.solution}
 ![[Projects/Quals/Algebra/image/SmartSelect_20210419-234549_Xodo_Docs.jpg]]

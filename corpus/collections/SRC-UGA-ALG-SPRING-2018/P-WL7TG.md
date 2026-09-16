@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let 
 \[
 M=\left(\begin{array}{ll}{a} & {b} \\ {c} & {d}\end{array}\right)
@@ -28,6 +29,7 @@ Prove that
 M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
 \implies MN = 0
 .\]
+:::
 
 :::{.solution}
 \envlist

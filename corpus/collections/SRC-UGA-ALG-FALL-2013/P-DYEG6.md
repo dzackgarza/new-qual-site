@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $L/K$ be a finite extension of fields.
 
 a.
@@ -25,7 +26,7 @@ Show that if $K$ is a finite field, then $L/K$ is always separable.
 
 c.
 Give an example of a finite extension $L/K$ that is not separable.
-
+:::
 
 :::{.solution}
 \envlist

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Define
 \[
 f(x) \da x^4 + 4x^2 + 64 \in \QQ[x]
@@ -24,7 +25,7 @@ a. Find the splitting field $K$ of $f$ over $\QQ$.
 b. Find the Galois group $G$ of $f$.
 
 c. Exhibit explicitly the correspondence between subgroups of $G$ and intermediate fields between $\QQ$ and $K$.
-
+:::
 
 :::{.concept}
 \envlist

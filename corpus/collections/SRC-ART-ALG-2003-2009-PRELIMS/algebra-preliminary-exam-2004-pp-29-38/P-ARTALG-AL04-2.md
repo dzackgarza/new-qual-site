@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Prove that any group of size 15 is cyclic.
+:::
 
 ::: {.solution}
 <1>1. Sylow analysis of $G$:

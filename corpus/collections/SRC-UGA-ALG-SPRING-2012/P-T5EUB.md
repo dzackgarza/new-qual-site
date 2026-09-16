@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $G$ be a finite group and $p$ a prime number such that there is a normal subgroup $H\normal G$ with $\abs{H} = p^i > 1$.
 
 a.
@@ -22,6 +23,7 @@ Show that $H$ is a subgroup of any Sylow $p\dash$subgroup of $G$.
 
 b.
 Show that $G$ contains a nonzero abelian normal subgroup of order divisible by $p$.
+:::
 
 :::{.concept}
 \envlist

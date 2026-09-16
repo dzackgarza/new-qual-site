@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 What is an example of isomorphic but not equal fields?
+:::
 
 ::: {.solution}
 ![Projects/Quals/Algebra/image/SmartSelect_20210419-235238_Xodo_Docs.jpg](../../assets/Algebra/999_Review/image/SmartSelect_20210419-235238_Xodo_Docs.jpg)

@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let m
 \[
 A \da 
@@ -36,6 +37,7 @@ c.
 Write down the minimal polynomial of $A$.
 
 > You should not need to compute $P\inv$
+:::
 
 :::{.concept}
 \envlist
