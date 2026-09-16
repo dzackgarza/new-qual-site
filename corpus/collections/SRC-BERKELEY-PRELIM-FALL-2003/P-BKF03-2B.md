@@ -21,16 +21,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified the discrete maximum-principle contradiction at a maximizing point of minimal first coordinate.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed the stray N subscript residue in the boundary condition against f03.pdf page 2 problem 2B, and restored two solution formulas where a line break had become the symbol nu.
 ---
 
 ::: {.problem}
-Let $u _ { m , n }$ be an array of numbers for $1 \leq m \leq N$ and $1 \leq n \leq N$ . Suppose that $u _ { m , n } = 0$ when m is 1 or $N _ { ; }$ or when n is 1 or N. Suppose also that
+Let $u_{m,n}$ be an array of numbers for $1 \leq m \leq N$ and $1 \leq n \leq N$. Suppose that $u_{m,n} = 0$ when $m$ is $1$ or $N$, or when $n$ is $1$ or $N$. Suppose also that
 
 $$
-u _ { m , n } = { \frac { 1 } { 4 } } \left( u _ { m - 1 , n } + u _ { m + 1 , n } + u _ { m , n - 1 } + u _ { m , n + 1 } \right)
+u_{m,n} = \frac{1}{4} \left( u_{m-1,n} + u_{m+1,n} + u_{m,n-1} + u_{m,n+1} \right)
 $$
 
-whenever $1 < m < N$ and $1 < n < N$ . Show that all the $u _ { m , n }$ are zero.
+whenever $1 < m < N$ and $1 < n < N$. Show that all the $u_{m,n}$ are zero.
 :::
 
 
@@ -55,7 +59,8 @@ Hence no maximizing point can have $m\in\{1,N\}$ or $n\in\{1,N\}$.
 
 <1>3. Choose a maximizing point $(m,n)$ with $m$ minimal.
 Then
-\[\nu_{m-1,n}<M,
+\[
+u_{m-1,n}<M,
 \]
 while each of the other three neighboring values is at most $M$.
 ::: {.proof}
@@ -69,7 +74,8 @@ Thus $u_{m-1,n}<M$.
 ::: {.proof}
 Using <1>3,
 \[
-\begin{aligned}\nu_{m,n}
+\begin{aligned}
+u_{m,n}
 &=\frac14\bigl(u_{m-1,n}+u_{m+1,n}+u_{m,n-1}+u_{m,n+1}\bigr)\\
 &<\frac14(M+M+M+M)=M.
 \end{aligned}
