@@ -32,3 +32,5 @@ Irreducibility is where the topology is least like the one a student brings from
 The following is worth being able to produce on demand, because it is the fastest way to show that intuition transported from the analytic topology does not survive.
 
 [[FE-ISIPR]]
+
+[[FE-VARDISJUNION]]
