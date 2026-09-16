@@ -2,8 +2,66 @@
 
 ## Execution DAG
 
-The active solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists.
 A prerequisite `A` on task `B` means `A -> B`. `none` denotes a ready root.
+Before committing a dependency change, verify unique IDs, resolved references, and absence of cycles.
+Preserve the complete mathematical obligation.
+
+The issue log and checked entries below retain their existing evidence and dispositions; this graph does not recertify them or reopen completed tasks.
+For an additional selected repair, use its issue or card ID, name its immediate Needs and acceptance beside the existing item, and link its complaint.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they arise in [COMPLAINTS.md](COMPLAINTS.md).
+
+### Milestone: publish with every remedial obligation cleared
+
+The site is published at `publication-milestone`, complete except for unsolved problems.
+Every remedial node below precedes it, and the long-tail solution work in [Author solutions](#7-author-solutions) follows it.
+
+The remedial nodes are listed in priority order.
+Take work from the highest-priority node that has ready work; work a lower node only while every higher node is closed or blocked on something outside the repository, such as a MinerU Flash failure recorded against its source.
+Priority is not a prerequisite edge: a blocked higher node does not idle the stream, and it stays first the moment it unblocks.
+
+1. `copy-policy-repair`
+2. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
+3. `math-defect-repair`
+4. `merged-proof-adjudication`
+
+- **`copy-policy-repair`**. **Needs:** none.
+  The authorial-stance, prose and mathematical-authoring policies in [CONTRIBUTING.md](CONTRIBUTING.md) (`STANCE-*`, `PROSE-*`, `RESOURCE-*`, `PR-*`, `EV-*`, `MA-*`, `DEF-*`, `TERM-*`, `SYM-*` and the rest of that catalogue) were written from violations observed in the copy the site already publishes.
+  Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
+  Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
+  Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
+  Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `PROSE-02` reports on issues #86 and #88 is a lead to read, not a finding.
+  **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
+
+- **`pdf-source-intake`**. **Needs:** none.
+  Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
+  The queue is the live worklist; do not copy its count or filenames here.
+  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path.
+  An old extraction file with unknown provenance must be regenerated before it can support intake.
+  Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance.
+  Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
+  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
+  The same extraction rule applies when claims about the reference's contents depend on reading the PDF. If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
+  **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed deterministic MinerU Flash extraction (or an already-retained extraction with established MinerU provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
+  Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
+
+- **`math-defect-repair`**. **Needs:** none.
+  Correct or resolve every recorded incorrect mathematical statement, proof, title or source transcription: the mathematical entries in [COMPLAINTS.md](COMPLAINTS.md#mathematical-issues-and-source-questions), the mathematical items of [`queues/H-complaint-defects.md`](queues/H-complaint-defects.md), and mathematical-error candidates on the open review-crawl issues.
+  Read each entry, then the card and its source. A defect already repaired is resolved by removing its entry with the evidence, as `COMPLAINTS.md` prescribes; an open defect is repaired against the source, or recorded on the card as an erratum with its counterexample and corrected hypotheses when the source itself is false.
+  A source that cannot settle the statement is recorded on the card as unrecovered rather than guessed.
+  **Acceptance:** no mathematical complaint entry, Queue H item, or unread review-crawl mathematics candidate remains; each was repaired, errata-recorded, or read and dispositioned against its source.
+
+- **`merged-proof-adjudication`**. **Needs:** none.
+  The 1.R2 / 1.R3 item in [Close out the branch consolidation](#12-close-out-the-branch-consolidation): read both authored proofs for every card where the consolidation merge chose one mechanically, starting with the four whose merged text matches neither parent and the six Spring 2019 algebra cards, and including the twenty recovered cards in `81373e972` that compete with `main`.
+  **Acceptance:** that item is checked, each card carrying a proof chosen or combined by mathematical reading.
+
+- **`publication-milestone`**. **Needs:** `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`.
+  Deploy the site from a revision at which all four are closed.
+  **Acceptance:** the deployed `revision.txt` names that revision, and the rendered site is inspected under the same criteria as [Prove the deployed site](#prove-the-deployed-site).
+
+### Solutions after the milestone
+
+The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `publication-milestone`.
 Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
@@ -13,16 +71,55 @@ Use the existing collection checklist and card audit/commit evidence, not a seco
 
 The source-review prerequisite applies when incorporating a source solution; for an original proof it has no source-solution input to review.
 Source reading and review of the authored proof remain required in either case.
+An unfinished source correction needed by a proof must precede that card's proof.
 
-The issue log and checked entries below retain their existing evidence and dispositions; this graph does not recertify them or reopen completed tasks.
-For an additional selected repair, use its issue or card ID, name its immediate Needs and acceptance beside the existing item, and link its complaint.
-An unfinished source correction needed by a proof must precede that card's proof; an unrelated renderer or subject issue does not block solution authorship.
-Before committing a dependency change, verify unique IDs, resolved references, and absence of cycles.
-Preserve the complete mathematical obligation.
+### Measure solution progress while intake is still growing the denominator
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they arise in [COMPLAINTS.md](COMPLAINTS.md).
+Queue C and source intake move in opposite directions: writing a solution removes one problem from Queue C, while ingesting a new unsolved problem adds one.
+The solved percentage can therefore fall during a highly productive period.
+**Do not use completion percentage, Queue C size, or their net change alone to judge solution-writing progress while `pdf-source-intake` is open.**
 
-### Faithful statements before any further ingestion
+For any progress comparison over a time window, derive four quantities from the repository's own problem/queue state at the two revisions: current total problem population; current unsolved count; **Queue C exits** (previously unsolved card IDs that are no longer unsolved, the gross solution closure measure); and **Queue C entries** (newly unsolved card IDs, normally intake).
+Report the solved fraction only beside those flows.
+A rising unsolved count is not a regression when intake added more valid problems than solution authors closed, and a rising solved percentage is not proof of throughput if the corpus shrank.
+Do not throttle or defer valid intake merely to improve the percentage.
+Do not turn a recent cards/hour observation into a quota; rates are diagnostics for stalls, while mathematical correctness and source fidelity remain the acceptance criteria.
+
+### Marking a node closed
+
+A node closes by opening with **`Closed <date>.`** followed by the evidence that met its acceptance — the recipe that exists, the count that reached zero, the commit that did it.
+These are bullets rather than checkboxes, so there is no box to tick and nothing else marks them; a finished node left unmarked stays the first ready node forever.
+On 2026-09-13 the three extraction nodes sat complete and unmarked for seven hours, and a worker re-read `extraction-detector` as ready, reimplemented nothing, and reported that this file was stale relative to the code.
+Closing finished work is what makes the rest of this file mean anything.
+
+### Terminal nodes
+
+These repository-level nodes run only after `publication-milestone` and the solution obligations are closed.
+They are finite cleanup work, not a recurring reporting programme.
+
+- **`refactor-audit`**. **Needs:** every substantive queue closed.
+  Inspect the tooling and site sources — `tools/`, `site/`, generators, and checkers, not authored mathematics — for concrete defects in ownership, encapsulation, duplicated sources of truth, unnecessary bespoke machinery, and maintainability that affects reliable behavior.
+  Repair a defensible finding at its actual owner rather than creating an audit receipt, inventory-only node, or approval stage.
+  A genuinely large cross-owner repair may become a concrete DAG node with its real dependencies and behavioral acceptance; the audit itself does not recursively manufacture scheduling nodes.
+  **Acceptance:** every finding from the pass has been repaired at its owner, and a final repository-wide pass over the same scope finds no further concrete defect requiring work.
+  A later regression is a new owner-local defect; it does not keep this historical audit open forever.
+
+- **`type-paydown`**. **Needs:** `refactor-audit`. Repair the tooling type defects for which stronger typing materially improves legibility, comprehension, or static reasoning about correctness.
+  The objective is the resulting program structure, not a diagnostic count.
+  Do not add contortions whose only value is silencing a checker.
+  **Acceptance:** the type defects selected by the refactor pass have been repaired at their owning interfaces, with behavior preserved and the resulting annotations/interfaces clearer than the state they replace.
+
+- **`bloat-audit-loop`**. **Needs:** `type-paydown`. The identifier is retained for history; the work is finite.
+  Make one final whole-tooling/site convergence pass using the relevant lenses already established for this repository: publisher/tool architecture, proof-bearing tests, API and type design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-versus-authored boundaries, build/preview cost, and AI-slop patterns.
+  Compare bespoke Markdown parsing/rendering against Pandoc and the existing Markdown toolchain before polishing local machinery that should disappear.
+  Inspect representative public behavior; source-text churn is not acceptance evidence.
+  Repair each defensible finding at its owner.
+  Do not create a complaint, dashboard entry, or DAG node merely to prove that the pass ran.
+  **Acceptance:** all findings from the pass are repaired and a final pass across those lenses finds no further defensible change.
+  A no-finding pass makes no receipt commit.
+  Later regressions are repaired when they occur rather than keeping this node permanently open.
+
+### Closed: faithful statements before any further ingestion
 
 A card whose statement is not the mathematics of its source is worse than a missing card, because `just unsolved` offers it for solution and a worker will write a proof of nothing.
 On 2026-09-13 a scan of the 2822 authored problem blocks found **182** whose statement carries unicode mathematics sitting outside any `$`-delimiter — the signature of raw PDF text extraction landed verbatim.
@@ -53,7 +150,7 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   A whitespace normalizer must never run over unconverted extraction output.
   **Acceptance:** a source ingested after this node produces zero detector hits, demonstrated on a real source, and no card in that ingest needs a follow-up normalization commit.
 
-### The unsolved-queue gate taxes every corpus commit
+### Closed: the unsolved-queue gate taxes every corpus commit
 
 - **`incremental-unsolved-queue`**. **Closed 2026-09-13.** Landed as `e3ff7493d` (`perf(queue): update unsolved cards incrementally`): `_unsolved-if-staged` updates Queue C from the staged card paths while `just unsolved` remains the full-rebuild oracle.
   `tests/test_unsolved_queue_incremental.py` proves byte-identical output when one card gains a solution and another loses one; it passes 1/1. A live staged update measured 1.06 seconds versus 161.20 seconds for the full rebuild on the current corpus.
@@ -65,76 +162,6 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Make the regeneration incremental: the staged diff already names which cards changed, and a card leaves or joins the queue only by gaining or losing a solution div, so the queue can be updated from those paths without reparsing the corpus.
   Keep a full rebuild available as its own recipe for when the file is suspected stale.
   **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that equality on a sample that includes a card gaining a solution and a card losing one.
-
-### Intake remaining vendored sources
-
-- **`pdf-source-intake`**. **Needs:** none.
-  Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
-  The queue is the live worklist; do not copy its count or filenames here.
-  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path.
-  An old extraction file with unknown provenance must be regenerated before it can support intake.
-  Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance.
-  Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
-  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
-  The same extraction rule applies when claims about the reference's contents depend on reading the PDF. If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
-  **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed deterministic MinerU Flash extraction (or an already-retained extraction with established MinerU provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
-  Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
-
-### Measure solution progress while intake is still growing the denominator
-
-Queue C and source intake move in opposite directions: writing a solution removes one problem from Queue C, while ingesting a new unsolved problem adds one.
-The solved percentage can therefore fall during a highly productive period.
-**Do not use completion percentage, Queue C size, or their net change alone to judge solution-writing progress while `pdf-source-intake` is open.**
-
-For any progress comparison over a time window, derive four quantities from the repository's own problem/queue state at the two revisions: current total problem population; current unsolved count; **Queue C exits** (previously unsolved card IDs that are no longer unsolved, the gross solution closure measure); and **Queue C entries** (newly unsolved card IDs, normally intake).
-Report the solved fraction only beside those flows.
-A rising unsolved count is not a regression when intake added more valid problems than solution authors closed, and a rising solved percentage is not proof of throughput if the corpus shrank.
-Do not throttle or defer valid intake merely to improve the percentage.
-Do not turn a recent cards/hour observation into a quota; rates are diagnostics for stalls, while mathematical correctness and source fidelity remain the acceptance criteria.
-
-### Marking a node closed
-
-A node closes by opening with **`Closed <date>.`** followed by the evidence that met its acceptance — the recipe that exists, the count that reached zero, the commit that did it.
-These are bullets rather than checkboxes, so there is no box to tick and nothing else marks them; a finished node left unmarked stays the first ready node forever.
-On 2026-09-13 the three extraction nodes sat complete and unmarked for seven hours, and a worker re-read `extraction-detector` as ready, reimplemented nothing, and reported that this file was stale relative to the code.
-Closing finished work is what makes the rest of this file mean anything.
-
-### Bring existing public copy into line with the contributor policies
-
-- **`copy-policy-repair`**. **Needs:** none.
-  The authorial-stance, prose and mathematical-authoring policies in [CONTRIBUTING.md](CONTRIBUTING.md) (`STANCE-*`, `PROSE-*`, `RESOURCE-*`, `PR-*`, `EV-*`, `MA-*`, `DEF-*`, `TERM-*`, `SYM-*` and the rest of that catalogue) were written from violations observed in the copy the site already publishes.
-  Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
-  Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
-  Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
-  Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `PROSE-02` reports on issues #86 and #88 is a lead to read, not a finding.
-  **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
-
-### Terminal nodes
-
-These repository-level nodes run only after the substantive corpus, source-intake, publication, and solution obligations above are closed.
-They are finite cleanup work, not a recurring reporting programme.
-
-- **`refactor-audit`**. **Needs:** every substantive queue closed.
-  Inspect the tooling and site sources — `tools/`, `site/`, generators, and checkers, not authored mathematics — for concrete defects in ownership, encapsulation, duplicated sources of truth, unnecessary bespoke machinery, and maintainability that affects reliable behavior.
-  Repair a defensible finding at its actual owner rather than creating an audit receipt, inventory-only node, or approval stage.
-  A genuinely large cross-owner repair may become a concrete DAG node with its real dependencies and behavioral acceptance; the audit itself does not recursively manufacture scheduling nodes.
-  **Acceptance:** every finding from the pass has been repaired at its owner, and a final repository-wide pass over the same scope finds no further concrete defect requiring work.
-  A later regression is a new owner-local defect; it does not keep this historical audit open forever.
-
-- **`type-paydown`**. **Needs:** `refactor-audit`. Repair the tooling type defects for which stronger typing materially improves legibility, comprehension, or static reasoning about correctness.
-  The objective is the resulting program structure, not a diagnostic count.
-  Do not add contortions whose only value is silencing a checker.
-  **Acceptance:** the type defects selected by the refactor pass have been repaired at their owning interfaces, with behavior preserved and the resulting annotations/interfaces clearer than the state they replace.
-
-- **`bloat-audit-loop`**. **Needs:** `type-paydown`. The identifier is retained for history; the work is finite.
-  Make one final whole-tooling/site convergence pass using the relevant lenses already established for this repository: publisher/tool architecture, proof-bearing tests, API and type design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-versus-authored boundaries, build/preview cost, and AI-slop patterns.
-  Compare bespoke Markdown parsing/rendering against Pandoc and the existing Markdown toolchain before polishing local machinery that should disappear.
-  Inspect representative public behavior; source-text churn is not acceptance evidence.
-  Repair each defensible finding at its owner.
-  Do not create a complaint, dashboard entry, or DAG node merely to prove that the pass ran.
-  **Acceptance:** all findings from the pass are repaired and a final pass across those lenses finds no further defensible change.
-  A no-finding pass makes no receipt commit.
-  Later regressions are repaired when they occur rather than keeping this node permanently open.
 
 ## Content issues and policy violations build log
 
@@ -1371,7 +1398,7 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** none.
+- [ ] **`select`**. **Needs:** `publication-milestone`.
   Select one unsolved card.
 
 - [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
