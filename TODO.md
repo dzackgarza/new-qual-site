@@ -33,7 +33,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
   Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
   Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
-  Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `PROSE-02` reports on issues #86 and #88 is a lead to read, not a finding.
+  Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `COPY-02` (filed as `PROSE-02`) reports on issues #86 and #88 is a lead to read, not a finding.
   **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
 
 - **`pdf-source-intake`**. **Needs:** none.
