@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-ZENUU
 kind: theorem
-title: Sylow Theorems
+title: Sylow theorems
 prompts:
 - State the three Sylow theorems.
 classification:
@@ -16,13 +16,12 @@ review: draft
 ---
 
 ::: {.theorem}
-Write $\abs{G} = p^n m$ with $(p, m) = 1$.
-**Sylow 1**
-Writing $\abs{G} = \prod p_i^{n_i}$, there exist Sylow $p_i\dash$subgroups $P_i$ of order $p_i^{n_i}$ for every $i$.
-**Sylow 2**
-All Sylows are conjugate.
-**Sylow 3**
-1. $n_p$ divides $m$
-1. $n_p \equiv 1 \mod p$
-2. $n_p = [G: N_G(P)]$
+Let $G$ be a finite group and let $p$ be a prime.
+Write $\abs G=p^am$ with $a\ge0$ and $p\nmid m$, and let $n_p$ be the number of [[D-7TQ2M|Sylow $p$-subgroups]] of $G$.
+
+(i) $G$ has a Sylow $p$-subgroup, that is, a subgroup of order $p^a$.
+
+(ii) Any two Sylow $p$-subgroups of $G$ are [[D-ES7MP|conjugate]] in $G$.
+
+(iii) $n_p\divides m$, $n_p\equiv1\pmod p$, and $n_p=[G:N_G(P)]$ for every Sylow $p$-subgroup $P$, where $N_G(P)$ is the [[D-OZ2RR|normalizer]] of $P$.
 :::
