@@ -42,8 +42,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Where the corpus shows stylistic drift, the catalogue fixes one convention; defined terms are written `\dfn{term}`. Rules imported from another project's guide that do not govern this corpus are removed, and `AGENTS.md` carries no rule or imported guidance that duplicates or contradicts the catalogue.
   **Acceptance:** one catalogue, no duplicate or conflicting codes, no references to deleted files, and the formatter accepts the file.
 
-- **`copy-policy-repair`**. **Needs:** `policy-consolidation`.
-  The authorial-stance, prose and mathematical-authoring policies in [CONTRIBUTING.md](CONTRIBUTING.md) (`STANCE-*`, `PROSE-*`, `RESOURCE-*`, `PR-*`, `EV-*`, `MA-*`, `DEF-*`, `TERM-*`, `SYM-*` and the rest of that catalogue) were written from violations observed in the copy the site already publishes.
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation`. The policy catalogue in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families), including the `STYLE-*` presentation conventions, was written from violations and drift observed in the copy the site already publishes.
   Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
   Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
   Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
@@ -69,7 +68,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   A source that cannot settle the statement is recorded on the card as unrecovered rather than guessed.
   **Acceptance:** no mathematical complaint entry, Queue H item, or unread review-crawl mathematics candidate remains; each was repaired, errata-recorded, or read and dispositioned against its source.
 
-- **`merged-proof-adjudication`**. **Needs:** none.
+- **`merged-proof-adjudication`**. **Closed 2026-09-16.** The 1.R2 / 1.R3 item below is checked with its evidence; the last card is `53f516975`. **Needs:** none.
   The 1.R2 / 1.R3 item in [Close out the branch consolidation](#12-close-out-the-branch-consolidation): read both authored proofs for every card where the consolidation merge chose one mechanically, starting with the four whose merged text matches neither parent and the six Spring 2019 algebra cards, and including the twenty recovered cards in `81373e972` that compete with `main`. **Acceptance:** that item is checked, each card carrying a proof chosen or combined by mathematical reading.
 
 - **`ag-notes-migration`**. **Needs:** none.
@@ -1876,7 +1875,8 @@ That is what cost the 962 lines recovered in `81373e972`. Consolidation in this 
   Every occurrence had a correctly-escaped sibling in the same file, so none was ambiguous.
   The detector is worth re-running after any future bulk merge.
 
-- [ ] 1.R2 / 1.R3 — adjudicate the cards where two people independently authored a proof of the same card.
+- [x] 1.R2 / 1.R3 — adjudicate the cards where two people independently authored a proof of the same card.
+  Closed 2026-09-16: the 50 collision cards and the twenty recovered cards are adjudicated in [queue 01](queues/01-corpus-defects.md) (1.R2, 1.R3); the four it omitted are resolved here — `P-22OXL` already carries the source statement and one correct proof (`2191ef397`), and `P-7INJI`, `P-REKYU`, `P-RILUB` had the imported statement restored and their two appended solutions reduced to one by reading (`3e36475d4`, `f69b0dd20`, and `53f516975`).
   The merge had to pick one and picked mechanically: solution present, then uncorrupted, then more audit events, then more proof steps, then more content.
   That is a completeness heuristic, not a mathematical judgement, and it decided 52 cards.
   Regenerate the exact list with the merge commits, which record both parents:
