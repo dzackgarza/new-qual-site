@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-BA2WU
 kind: definition
-title: 'Dense: A subset $A\subseteq X$ is dense in $X$ iff $\mathrm{cl}_X(A) = X$.'
+title: Dense subsets
 prompts:
 - When is a subset $A \subseteq X$ dense in $X$?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-A subset $A\subseteq X$ is *dense* in $X$ iff $\mathrm{cl}_X(A) = X$.
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is \dfn{dense} in $X$ if its [[D-ASXW6|closure]] is $X$: $\cl_X(A) = X$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-3BK6U
 kind: definition
-title: Chebyshev's Inequality
+title: Chebyshev's inequality
 prompts:
 - State Chebyshev's inequality.
 classification:
@@ -17,11 +17,18 @@ review: draft
 ---
 
 ::: {.definition}
+Let $m$ be Lebesgue measure on $\RR^n$, let $f\colon\RR^n\to\CC$ be [[D-DHFN4|measurable]], and let $0<p<\infty$.
+For every $\alpha>0$,
 $$
-\mu\qty{\{x \in\RR^n \suchthat \abs{f(x)} \geq \alpha\}} \leq \qty{\norm{f}_p \over \alpha }^p \quad \forall \alpha, p
-.$$
-Take $p=1$ to obtain
+m\qty{\theset{x \in\RR^n \suchthat \abs{f(x)} \geq \alpha}} \leq \qty{\frac{\norm{f}_p}{\alpha}}^p, \qquad \norm{f}_p\coloneqq\qty{\int_{\RR^n}\abs{f(x)}^p\,dx}^{1/p}.
 $$
-\mu\qty{\{x \in \RR^n\suchthat \abs{f(x)} \geq \alpha\}} \leq {1\over \alpha } \int \abs{f(x)} \, dx \quad \forall \alpha
-.$$
+Taking $p=1$ gives
+$$
+m\qty{\theset{x \in \RR^n\suchthat \abs{f(x)} \geq \alpha}} \leq \frac{1}{\alpha} \int_{\RR^n} \abs{f(x)} \, dx.
+$$
+:::
+
+::: {.proof}
+Let $E_\alpha\coloneqq\theset{x \suchthat \abs{f(x)}\geq\alpha}$.
+Then $\alpha^p\chi_{E_\alpha}\leq\abs{f}^p$ pointwise, and integrating gives $\alpha^p\, m(E_\alpha)\leq\norm{f}_p^p$.
 :::

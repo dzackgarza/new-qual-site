@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-5T3HX
 kind: definition
-title: 'Definition: Almost Disjoint'
+title: Almost disjoint sets
 prompts:
 - When are two sets almost disjoint?
 classification:
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-$A^\circ \intersect B^\circ = \emptyset$
+Let $X$ be a topological space.
+Subsets $A,B\subseteq X$ are \dfn{almost disjoint} if their interiors are disjoint: $A^\circ \cap B^\circ = \emptyset$.
 :::
