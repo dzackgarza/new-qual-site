@@ -36,5 +36,4 @@ In $S_6$, both $(1\,2\,3)$ and $(1\,4\,2\,5\,3\,6)$ preserve the partition $\the
 ::: {.remark}
 For the Galois group $G \leq S_n$ of an irreducible separable polynomial $f$ of degree $n$, the action on the roots is transitive, so $n \divides \abs{G}$ by the orbit-stabilizer theorem.
 If $n$ is prime, Cauchy's theorem gives an element of order $n$ in $G$, and every element of order $n$ in $S_n$ is an $n$-cycle.
-In fact, it suffices to find a $k$-cycle for any $k \geq n/2$, which can be found by reducing $f$ modulo primes $p$ and examining cycle types.
 :::
