@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-23V5J
 kind: fact
-title: Euler Characteristic 2
+title: Closed surfaces with Euler characteristic 2
 prompts:
 - Which surface has Euler characteristic 2?
 classification:
@@ -17,5 +17,10 @@ review: draft
 ---
 
 ::: {.fact}
-$\chi X = 2 \implies X \cong S^2$
+Let $\Sigma$ be a connected [[FD-QPIIL|closed surface]].
+If its [[D-QK5BM|Euler characteristic]] is $\chi(\Sigma) = 2$, then $\Sigma \cong S^2$.
+:::
+
+::: {.concept}
+[@Mun00, §§77--78].
 :::
