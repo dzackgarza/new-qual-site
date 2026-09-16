@@ -27,7 +27,3 @@ source:
     term: spring
     year: 2010
 ---
-
-::: remark
-Exam #6 is the $p$-norm limit for bounded measurable functions on $[0,1]$; `P-OFICU` takes nonnegative measurable $f$ and `P-QXYTV` takes continuous $f\ge 0$ on $[a,b]$, and neither was used.
-:::
