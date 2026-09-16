@@ -7,82 +7,59 @@ topics:
 
 # Computing residues
 
-Once the contour is chosen the problem is arithmetic: find $c_{-1}$ at each enclosed singularity.
-There are three ways, and the order below is the order to try them in.
+For $f$ holomorphic on a punctured disc about $z_0$ with Laurent series $\sum_{k\in\ZZ} a_k(z-z_0)^k$, the residue $\Res_{z=z_0} f$ is $a_{-1} = \frac{1}{2\pi i}\oint_{\abs{z-z_0}=r} f(z)\dz$ for small $r$; at a pole this is the [[D-C3JIU|residue]] of the principal part.
+At poles it is given by limit formulas, and at essential singularities it is read from the series.
 
 ## A simple pole
 
-[[PR-2XFT4]]
-
 [[PR-L4Y5F]]
-
-For $f = g/h$ with $h$ vanishing simply at $z_0$, differentiating the denominator alone is fastest:
 
 [[C-Q6BSL]]
 
-:::{.proof}
-Apply L'Hopital:
-\[
-(z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z)} \equalsbecause{LH}
-{g(z) + (z-z_0) g'(z) \over h'(z)} \converges{z\to z_0}\too {g(z_0) \over h'(z_0)}
-.\]
+::: {.proof}
+Since $h(z_0)=0$ and $h'(z_0)\neq 0$, $z_0$ is at most a simple pole of $g/h$, and by L'Hôpital's rule
+$$
+(z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z)} \to
+{g(z_0) \over h'(z_0)} \quad\text{as } z\to z_0
+,$$
+because $\frac{d}{dz}\bigl((z-z_0)g(z)\bigr) = g(z) + (z-z_0)g'(z)$ equals $g(z_0)$ at $z_0$.
 
 :::
 
-:::{.warnings}
-Only the denominator is differentiated, not the numerator.
-To remember this, rederive it from L'Hopital and use the product rule on $(z-z_0)g(z)$.
-
-:::
-
-:::{.example title="Residue of a simple pole"}
+::: {.example title="Residue of a simple pole"}
 Let $f(z) = \frac{1}{1+z^2}$, so $g(z) = 1$ and $h(z) = 1+z^2$ with $h'(z) = 2z$ and $h'(i) = 2i \neq 0$.
 Thus
-\[
+$$
 \Res_{z=i}{1\over 1+z^2} = \frac{1}{2i}
-.\]
+.$$
 
 :::
-
-A shortcut worth having when $z_0$ is a root of $p$, $p'$ or $q'$:
-\[
-\dd{}{z} {p(z) \over q(z)} = {p'(z)\over q(z)} - {p(z)q'(z) \over q^2(z)}
-.\]
 
 ## A pole of higher order
 
-[[PR-D3CDJ]]
+[[PR-2XFT4]]
 
 [[FF-VOO4Q]]
 
-## By the series
+## By the Laurent series
 
-When the pole is high order or the derivative is unpleasant, expand and read off $c_{-1}$ directly.
-This is often the fastest route for an essential singularity, where no formula applies at all.
+At an essential singularity the residue is the coefficient $a_{-1}$ of the Laurent series.
 
-[[T-VE5MW]]
-
-[[T-ESKLY]]
-
-[[C-ZTEH7]]
-
-## The residue at infinity
-
-:::{.concept}
-For $\Gamma$ positively oriented about $z=0$,
-\[
-\Res_{z=\infty}f(z) = -{1\over 2\pi i}\oint_\Gamma f(z) \dz, \qquad \Res_{z=\infty}f(z) = \Res_{z=0} \qty{-{1\over z^2}f\qty{1\over z}}
-.\]
+::: {.example title="Residue at an essential singularity"}
+Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $z\inv$ is $1$, so $\Res_{z=0} e^{1/z} = 1$.
 
 :::
 
-[[T-WFXQP]]
+## The residue at infinity
 
-[[T-SSNLT]]
+[[PR-D3CDJ]]
 
-:::{.proof}
-
-![](../../../../assets/assets/figures/2021-12-22_05-13-27.png)
+::: {.remark title="Sum of residues"}
+If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
+$$
+\sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0
+,$$
+because for $\rho$ larger than every $\abs{z_j}$ the residue theorem gives $\frac{1}{2\pi i}\oint_{\abs z=\rho} f = \sum_j\Res_{z=z_j} f$, and the definition gives $-\Res_{z=\infty} f$ for the same integral.
 
 :::
 
