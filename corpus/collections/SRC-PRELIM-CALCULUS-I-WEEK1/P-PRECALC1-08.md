@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the lost arrow in the map from R to R of Problem 8 on page 2 of Week1_solns.pdf.
 ---
 
 ::: {.problem}
-If $f : \mathbb { R }  \mathbb { R }$ is continuously differentiable on $( - 1 , 4 )$ with $f ( 3 ) = 5$ and $f ^ { \prime } ( x ) \geq 1$ for all $x \in ( - 1 , 4 )$ , what is the greatest possible value of $f ( 0 ) ?$
+If $f : \mathbb{R} \to \mathbb{R}$ is continuously differentiable on $(-1, 4)$ with $f(3) = 5$ and $f'(x) \geq 1$ for all $x \in (-1, 4)$, what is the greatest possible value of $f(0)$?
 :::

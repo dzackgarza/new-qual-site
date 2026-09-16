@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the lost arrow in the limit of Problem 6 on page 1 of Week1_solns.pdf.
 ---
 
 ::: {.problem}
-Compute the limit $\operatorname* { l i m } _ { x  0 } ( x ^ { - 2 } - \sin ( x ) ^ { - 2 } )$
+Compute the limit $\lim_{x \to 0} (x^{-2} - \sin(x)^{-2})$.
 :::

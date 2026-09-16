@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the lost arrow in the limit of Problem 28 on page 6 of Week1_solns.pdf.
 ---
 
 ::: {.problem}
-Calculate $\operatorname* { l i m } _ { n  \infty } { \frac { 3 } { n } } \sum _ { i = 1 } ^ { n } [ ( { \frac { 3 i } { n } } ) ^ { 2 } - ( { \frac { 3 i } { n } } ) ]$
+Calculate $\displaystyle\lim_{n \to \infty} \frac{3}{n} \sum_{i=1}^{n} \left[ \left(\frac{3i}{n}\right)^2 - \left(\frac{3i}{n}\right) \right]$.
 :::

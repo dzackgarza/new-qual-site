@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced the extraction's \updownarrow with the question mark of Problem 5 on page 1 of Week1_solns.pdf.
 ---
 
 ::: {.problem}
-Let $f ( x ) = | x | + 3 x ^ { 2 }$ for $x \in \mathbb { R }$ . What is $f ^ { \prime } ( - 1 ) \smash { \operatorname { \updownarrow } }$
+Let $f(x) = |x| + 3x^2$ for $x \in \mathbb{R}$. What is $f'(-1)$?
 :::
