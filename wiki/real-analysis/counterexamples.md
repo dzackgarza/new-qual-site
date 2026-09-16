@@ -48,7 +48,7 @@ Then $B$ is Lebesgue measurable, being a subset of the null set $C$, but $B$ is 
 :::
 
 ::: {.example title="A composition of Lebesgue measurable functions need not be measurable"}
-With $\psi$, $A$, and $B$ as in the previous example, $\chi_B$ is Lebesgue measurable and $\psi^{-1}\colon[0,2]\to[0,1]$ is continuous, but $\chi_B\circ\psi^{-1} = \chi_A$ is not Lebesgue measurable.
+With $\psi$, $A$, and $B$ as in the construction of a Lebesgue measurable set that is not Borel, $\chi_B$ is Lebesgue measurable and $\psi^{-1}\colon[0,2]\to[0,1]$ is continuous, but $\chi_B\circ\psi^{-1} = \chi_A$ is not Lebesgue measurable.
 If $g$ is continuous and $f$ is Lebesgue measurable, then $g\circ f$ is Lebesgue measurable.
 
 :::
