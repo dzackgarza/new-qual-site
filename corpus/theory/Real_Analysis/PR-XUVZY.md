@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-XUVZY
 kind: proposition
-title: Minkowski's Inequality
+title: Minkowski's inequality
 classification:
   areas:
   - real-analysis
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[  
-1\leq p < \infty \implies \pnorm{f+g}{p} \leq \pnorm{f}{p}+ \pnorm{g}{p}
-.\]
-
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]], let $1\leq p<\infty$, and let $f,g\in L^p(\mu)$.
+Then $f+g\in L^p(\mu)$ and
+$$
+\norm{f+g}_p \leq \norm{f}_p+ \norm{g}_p .
+$$
 :::
