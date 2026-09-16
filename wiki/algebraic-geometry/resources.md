@@ -91,3 +91,7 @@ These reference documents and solution collections are preserved in the reposito
 - [UW Spring 2016 Introduction to Algebraic Geometry](/assets/algebraic-geometry/resources/iag.pdf): lecture notes from affine varieties through schemes.
 - [Spring 2013 Algebra Qualifying Exam](/assets/algebraic-geometry/resources/2013SP_algebra.pdf): qualifying exam paper.
 
+### Problem lists and course pages
+- [Christopher Siegel, oral exam problems](https://www2.math.upenn.edu/~siegelch/Orals/SiegelProblems.pdf): miscellaneous oral-examination problems.
+- [Stacks Project, final exam questions](https://stacks.math.columbia.edu/tag/0G12): exam questions collected in the Stacks Project.
+- [Arthur Ogus, Math 256B (2017)](https://math.berkeley.edu/~ogus/Math_256B-2017/index.html): Berkeley course page.

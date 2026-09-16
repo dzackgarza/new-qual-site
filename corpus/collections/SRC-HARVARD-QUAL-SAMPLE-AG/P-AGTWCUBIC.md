@@ -22,3 +22,7 @@ Is it the scheme-theoretic intersection of two surfaces?
 
 More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a set-theoretic or scheme-theoretic intersection of two surfaces?
 :::
+
+::: remark
+The examiner withdrew the final question, about curves $Y \cong \AA^1$ in $\AA^3$, after posing it.
+:::
