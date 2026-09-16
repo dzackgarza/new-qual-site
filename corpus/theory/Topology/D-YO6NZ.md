@@ -13,26 +13,32 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-A space $X$ is **disconnected** iff 
-
-- There exists a *separation of $X$*: a decomposition $X = U\Disjoint V$ with $U, V$ disjoint, open, and nonempty.
-  - I.e. $X$ can not be decomposed as the disjoint union of two proper nonempty sets.
-- The only clopen sets of $X$ are $\emptyset, X$
-  -I.e. $X$ contains no proper nonempty clopen sets.
-- For $Y \subseteq X$ a subspace, $Y$ is disconnected iff $Y$ is disconnected in the subspace topology.
-  Equivalently, a *separation of $Y$ in $X$* is a decomposition $Y = U \Disjoint V$ with $U, V$ open in $Y$ and 
-\[
-\cl_{Y}(U) \intersect V = \emptyset,\qquad U \intersect \cl_{Y}(V) = \emptyset
-,\]
-  so neither set contains a limit point of the other.
-- $\Hom_\Top(X, \ts{0, 1}) \cong \ts{0, 1}$, i.e. all such continuous functions are constant. 
-
-:::{.example}
-Some examples:
-
-- $\QQ$ is disconnected, and $\pi_0(\QQ) \cong \QQ$: the only connected components are singletons.
-
+::: {.definition}
+Let $X$ be a topological space.
+A \dfn{separation} of $X$ is a pair $(U, V)$ of disjoint nonempty open subsets of $X$ with $X = U\union V$.
+The space $X$ is \dfn{disconnected} if it has a separation, and [[D-ZNVPP|connected]] otherwise.
 :::
 
+::: {.proposition}
+For a topological space $X$, the following are equivalent:
+
+(a) $X$ is connected.
+
+(b) The only subsets of $X$ that are both open and closed are $\emptyset$ and $X$.
+
+(c) Every continuous map from $X$ to the discrete space $\ts{0, 1}$ is constant.
+:::
+
+::: {.proposition}
+Let $X$ be a topological space and $Y\subseteq X$ a subspace.
+Then $Y$ is disconnected if and only if there exist disjoint nonempty subsets $A, B\subseteq Y$ with $Y = A\union B$ such that neither contains a [[D-Y6JAS|limit point]] of the other, that is, $\cl_X(A)\intersect B = \emptyset$ and $A\intersect\cl_X(B) = \emptyset$.
+:::
+
+::: {.example}
+The subspace $\QQ\subseteq\RR$ is disconnected, and every connected subspace of $\QQ$ has at most one point, so the connected components of $\QQ$ are its singletons.
+For rationals $p < q$ and an irrational $r$ with $p<r<q$, the sets $\QQ\intersect(-\infty, r)$ and $\QQ\intersect(r, \infty)$ form a separation of $\QQ$.
+:::
+
+::: {.concept}
+[@Mun00, §23, Lemma 23.1].
 :::
