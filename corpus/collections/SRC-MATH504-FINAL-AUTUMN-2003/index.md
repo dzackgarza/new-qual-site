@@ -17,13 +17,20 @@ source:
   sections:
   - name: Autumn 2003 final
     problems:
-    - P-M504F03-1
-    - P-M504F03-2
-    - P-M504F03-3
-    - P-M504F03-4
-    - P-M504F03-5
-    - P-M504F03-6
-    - P-M504F03-7
+    - id: P-M504F03-1
+      comment: Problem 1
+    - id: P-M504F03-2
+      comment: Problem 2
+    - id: P-M504F03-3
+      comment: Problem 3
+    - id: P-M504F03-4
+      comment: Problem 4
+    - id: P-M504F03-5
+      comment: Problem 5
+    - id: P-M504F03-6
+      comment: Problem 6
+    - id: P-M504F03-7
+      comment: Problem 7
   date:
     kind: academic-term
     term: fall
