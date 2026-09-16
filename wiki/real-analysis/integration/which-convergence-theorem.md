@@ -32,7 +32,7 @@ Bounded convergence is dominated convergence with $g\equiv M$, which is integrab
 
 3. **Uniformly bounded sequences on a finite measure space.** The bounded convergence theorem applies.
 
-4. **Nonnegative sequences without domination.** Fatou's lemma gives the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and strict inequality occurs in each example below.
+4. **Nonnegative sequences without domination.** Fatou's lemma gives the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and the inequality is strict for each sequence $n\chi_{[0,1/n]}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
 
 ## Failure of the interchange
 
