@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed the stray accent on C in CAC^T = B against Fall_2014_Exam.pdf page 18 problem 7B.
 ---
 
 ::: {.problem}
-Let n be a fixed positive integer, and define two n by n real symmetric matrices A and B to be equivalent if there is a non-singular real matrix C with $\dot { C } A C ^ { T } = B$ (where $C ^ { T }$ is the transpose of C). How many equivalence classes are there?
+Let $n$ be a fixed positive integer, and define two $n$ by $n$ real symmetric matrices $A$ and $B$ to be equivalent if there is a non-singular real matrix $C$ with $CAC^T = B$ (where $C^T$ is the transpose of $C$). How many equivalence classes are there?
 :::
