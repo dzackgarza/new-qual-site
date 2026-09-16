@@ -41,6 +41,6 @@ source:
     year: 2004
 ---
 
-::: remark
-UC Berkeley Preliminary Exam, Spring 2004. Problems are listed in paper order: Part A 1A–9A, then Part B 1B–9B. The companion solution packet is retained as provenance and transcribed into the cards' solution divs.
+::: {.remark}
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B. A companion solution packet accompanies the exam.
 :::
