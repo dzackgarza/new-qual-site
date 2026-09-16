@@ -25,6 +25,7 @@ The canonical divisor $K$ is very ample exactly when $g \geq 3$ and $C$ is not h
 :::
 
 ::: {.proposition title="The criterion it comes from"}
+For every divisor $D$ and closed point $p$ on $C$, $\ell(D) - 1 \leq \ell(D - p) \leq \ell(D)$.
 A divisor $D$ on $C$ is very ample if and only if
 \[
 \ell(D - p - q) = \ell(D) - 2 \quad \text{for all points } p, q ,
@@ -32,6 +33,7 @@ A divisor $D$ on $C$ is very ample if and only if
 including $p = q$.
 It is base-point free if and only if $\ell(D - p) = \ell(D) - 1$ for all $p$.
 Any $D$ with $\deg D \geq 2g+1$ is very ample.
+[@Har10a, Proposition IV.3.1, Corollary IV.3.2]
 :::
 
 ::: {.remark}

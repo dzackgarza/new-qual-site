@@ -31,6 +31,20 @@ Closed subschemes of $\Spec A$ correspond exactly to ideals $\mfa \normal A$, vi
 In general, closed subschemes of $X$ correspond to quasicoherent ideal sheaves $\mci \subseteq \OO_X$, with $\OO_Z = \OO_X/\mci$.
 :::
 
+::: {.proposition title="Closed subscheme sequences"}
+For a closed immersion $i: Z \to X$ with ideal sheaf $\mci$ there is an exact sequence of $\OO_X$-modules
+\[
+0 \to \mci \to \OO_X \to i_* \OO_Z \to 0 ,
+\]
+and tensoring with a locally free $\OO_X$-module $\mce$ keeps it exact: $0 \to \mci \tensor \mce \to \mce \to i_*(i^* \mce) \to 0$.
+If $Z = D$ is an effective Cartier divisor, then $\mci = \OO_X(-D) = \OO_X(D)^\vee$, giving
+\[
+0 \to \OO_X(-D) \to \OO_X \to \OO_D \to 0 , \qquad 0 \to \mcl(-D) \to \mcl \to \ro{\mcl}{D} \to 0
+\]
+for every invertible sheaf $\mcl$.
+[@Har10a, Proposition II.6.18]
+:::
+
 ::: {.remark}
 The asymmetry is the content: an open subset carries a *unique* scheme structure, and a closed subset carries *many*. $V(x)$ and $V(x^2)$ in $\AA^1$ are the same closed set and different closed subschemes, and the distinction is the whole reason the definition is phrased with an ideal sheaf rather than a subset.
 

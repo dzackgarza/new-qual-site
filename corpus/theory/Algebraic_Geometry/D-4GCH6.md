@@ -43,6 +43,6 @@ for a composite, and
 \[
 \mci/\mci^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0
 \]
-for a closed immersion $Z \subseteq X$.
+for a closed immersion $Z \subseteq X$ with ideal sheaf $\mci$, whose first map sends the class of a local section $f$ of $\mci$ to $df \tensor 1$; affinely, for $B \to A$ and an ideal $I \subseteq A$, it is $I/I^2 \to \Omega_{A/B} \tensor_A A/I$.
 $X$ is smooth over $k$ of dimension $n$ exactly when $\Omega_{X/k}$ is locally free of rank $n$, which is the intrinsic form of the Jacobian criterion.
 :::
