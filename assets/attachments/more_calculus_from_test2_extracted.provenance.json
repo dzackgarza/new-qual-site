@@ -7,5 +7,10 @@
   "extractor_model": "mistral-ocr-latest",
   "pages": 21,
   "command": "just ocr-pdf assets/attachments/more_calculus_from_test2.pdf assets/attachments/more_calculus_from_test2_extracted.md",
-  "generated_at": "2026-09-16"
+  "generated_at": "2026-09-16",
+  "source_identification": "Twenty-six calculus questions of GRE Mathematics Test Form GR8767 (Questions 4, 6-8, 11-13, 16, 19-21, 27-31, 36, 39, 41, 44-46, 51, 56, 59, 63), each page cropped from the scanned test booklet, followed by the form's answer key and percentage worksheet. The PDF's crop boxes hide the other questions on the scanned pages; the displayed selection is the source.",
+  "extraction_corrections": [
+    "Question 12 choice (B): the extraction reads e^pi, duplicating (C); page 5 of the PDF prints e pi.",
+    "Questions 6, 7, 41 and 59: figures emitted as image placeholders; pages 2, 3, 14 and 19 were rendered to assets/attachments/gr8767-calculus-figures/ and embedded on the cards."
+  ]
 }

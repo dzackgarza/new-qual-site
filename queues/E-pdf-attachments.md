@@ -187,11 +187,10 @@ External links that are not vendored remain on the resource pages until a delibe
   The inventory's `58 problems` and `alg-geom` labels were stale extraction heuristics.
   Enriched the existing topology resource entry with the source's actual course provenance and mathematical scope; no problem cards were manufactured.
 
-- [ ] [more_calculus_from_test2.pdf](assets/attachments/more_calculus_from_test2_extracted.md) (162L, GRE Mathematics Test Form GR8767 calculus selection) — calculus / GRE mathematics — **BLOCKED 2026-09-14: deterministic MinerU Flash split extraction succeeded for pages 1–40 and identifies selected calculus questions from Form GR8767 followed by its answer-key/percentage worksheet, but a complete source-faithful card set cannot be recovered from the deterministic output.
-  Several statements lose figures, question numbers, option labels, or essential formula glyphs (including the derivative-graph question, Questions 28–30's shared semicircle figure, and Question 41's graph choices).
-  A pages 41–60 request returned MinerU `[-30003]` after the answer-key material; no fallback OCR/parser/model-vision path was used.
-  Fresh extraction/provenance are retained and the existing resource entry is source-identified.
-  The inventory's `20 problems` and `algebra` labels were stale heuristics.**
+- [x] [more_calculus_from_test2.pdf](assets/attachments/more_calculus_from_test2_extracted.md) (162L, GRE Mathematics Test Form GR8767 calculus selection) — calculus / GRE mathematics — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (21 pages); a fresh MinerU Flash `--ocr` run returns the same twenty-six questions.
+  The PDF crops pages of the scanned Form GR8767 booklet to twenty-six calculus questions, followed by the form's answer key; all twenty-six are `SRC-GRE-GR8767-CALCULUS-SELECTION` in form order, `P-GR8767-NN` numbered as on the form.
+  The figures of Questions 6, 7, 41 and 59, which the extraction emits only as placeholders, are embedded from rendered source pages in `assets/attachments/gr8767-calculus-figures/`, and Question 12's choice (B) was read from the page; the provenance file records both corrections.
+  No existing card duplicates these questions. The inventory's `20 problems` and `algebra` labels were stale.
 
 - [x] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: exact byte duplicate of `Fall_2019_SOLUTIONS.pdf`; the shared UGA Fall 2019 exam is already complete as `SRC-UGA-RA-FALL-2019`.
 
