@@ -15,21 +15,28 @@ review: draft
 ---
 
 ::: {.proposition}
-Given any presentation of a group as a product of cyclic groups $G = \prod \ZZ_i/m_i$, with the $m_i$ not necessarily distinct,
+Let $G$ be a finite abelian group with $G\cong\bigoplus_{i=1}^s \ZZ/m_i\ZZ$ for integers $m_i\geq 2$, not necessarily distinct.
 
-- Factor all of the $m_i$ into prime powers, keeping the exponents intact.
+(a) The elementary divisors of $G$ are the prime powers $p^e$, $e\geq1$, occurring in the factorizations $m_i=\prod_p p^{e_{p,i}}$, listed with multiplicity over all $i$; that is, $G\cong\bigoplus_{i}\bigoplus_{p} \ZZ/p^{e_{p,i}}\ZZ$.
 
-- Organize into a table whose columns correspond to individual primes $p_i$.
+(b) For each prime $p$, list the exponents of the $p$-power elementary divisors in decreasing order, $e_{p,1}\geq e_{p,2}\geq\cdots$, padding with zeros.
+Put $d_j\coloneqq\prod_p p^{e_{p,j}}$ and let $t$ be the largest $j$ with $d_j\neq 1$.
+Then $d_t\divides d_{t-1}\divides\cdots\divides d_1$ and
+$$
+G\cong \ZZ/d_t\ZZ\oplus\cdots\oplus\ZZ/d_1\ZZ
+$$
+is the invariant factor decomposition of $G$.
+:::
 
-  - Within an individual column for the prime $p_k$, write all terms of the form $p_k^{e_k}$ (with exponents intact)
+::: {.proof}
+By the Chinese remainder theorem, $\ZZ/m\ZZ\cong\bigoplus_p\ZZ/p^{e_p}\ZZ$ for $m=\prod_p p^{e_p}$, which gives (a).
+For (b), the same theorem gives $\ZZ/d_j\ZZ\cong\bigoplus_p\ZZ/p^{e_{p,j}}\ZZ$, so $\bigoplus_j\ZZ/d_j\ZZ$ has the same elementary divisors as $G$ and is isomorphic to $G$.
+Since $e_{p,j+1}\leq e_{p,j}$ for every $p$, $d_{j+1}\divides d_j$.
+:::
 
-  - Arrange the terms from lowest at the top to highest at the bottom.
-    Push everything down so that the bottom-most rows are all filled out.
-
-- For **elementary divisors**, just list out all of elements of the table individually, running across rows.
-
-- For **invariant factors**, iterate a process of taking the largest of each prime power (i.e. the bottom row) at each step, deleting that row, and continuing in the same fashion.
-
-> Note: this sounds much more complicated than it actually is.
-> Try it!
+::: {.example}
+Let $G=\ZZ/12\ZZ\oplus\ZZ/18\ZZ\oplus\ZZ/5\ZZ$.
+Since $12=2^2\cdot3$ and $18=2\cdot3^2$, the elementary divisors are $2^2, 2, 3^2, 3, 5$.
+The largest power of each prime gives $d_1=2^2\cdot3^2\cdot5=180$, and the remaining powers give $d_2=2\cdot3=6$.
+Hence $G\cong\ZZ/6\ZZ\oplus\ZZ/180\ZZ$, with $6\divides180$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-UVUS6
 kind: proposition
-title: STFGMPID
+title: Structure theorem for finitely generated modules over a PID
 classification:
   areas:
   - algebra
@@ -15,16 +15,13 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $M$ be a finitely generated modules over a PID $R$.
-Then there is an **invariant factor** decomposition
-
-\begin{align*}
-M \cong F \bigoplus_{i=1}^m R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
-\end{align*}
-
-and similarly an **elementary divisor** decomposition:
-\[
-M \cong F \bigoplus_{i=1}^n R/ \gens{p_i^{e_i}}
-\]
-where $F$ is free of finite rank and the $p_i$ are *not necessarily distinct* primes in $R$.
+Let $R$ be a [[D-HTIL5|principal ideal domain]] and $M$ a finitely generated $R$-module.
+Then there are an integer $r\geq0$, nonzero nonunits $r_1 \divides r_2 \divides \cdots\divides r_m$ of $R$, and primes $p_1,\ldots,p_s$ of $R$, not necessarily distinct, with exponents $e_i\geq1$, such that
+$$
+M \cong R^r\oplus \bigoplus_{i=1}^m R/(r_i)
+\qquad\text{and}\qquad
+M \cong R^r\oplus \bigoplus_{i=1}^s R/(p_i^{e_i}).
+$$
+The first is the invariant factor decomposition and the second the elementary divisor decomposition.
+The rank $r$ is unique, the $r_i$ are unique up to units, and the $p_i^{e_i}$ are unique up to units and reordering.
 :::
