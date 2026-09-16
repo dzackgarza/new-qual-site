@@ -10,11 +10,11 @@ topics:
 
 # Normal families and Montel
 
-Compactness for families of holomorphic functions.
-This is the machinery the Riemann mapping theorem runs on: it produces a limit out of a sequence, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz]] then says the limit kept what the sequence had.
+Montel's theorem gives compactness for locally uniformly bounded families of holomorphic functions.
+In the proof of the [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|Riemann mapping theorem]] it produces a locally uniformly convergent subsequence of injective maps, and [[complex-analysis/counting-zeros/hurwitz|Hurwitz's theorem]] shows that the nonconstant limit is injective.
 
 ::: {.remark}
-Throughout, "locally" means "on all compact subsets".
+Throughout, "locally uniformly" means "uniformly on every compact subset".
 :::
 
 ## Equicontinuity
@@ -22,44 +22,49 @@ Throughout, "locally" means "on all compact subsets".
 [[D-TIHRR]]
 
 ::: {.slogan}
-Equicontinuity is uniform continuity which is also uniform across the family.
+An equicontinuous family is uniformly continuous with one $\delta(\varepsilon)$ for every member.
 :::
 
 [[T-6F3GO]]
 
 ::: {.remark}
-A family of continuous functions that is equicontinuous and pointwise bounded contains a uniformly convergent subsequence, and the limit is continuous.
-The proof is an $\eps/3$ argument.
+Applied on each compact set, the Arzelà--Ascoli theorem shows that a pointwise bounded, equicontinuous sequence of continuous functions on a compact metric space has a uniformly convergent subsequence, whose limit is continuous.
 :::
 
-::: {.example title="Negating equicontinuity"}
-To negate it, produce $\eps>0$ and a bad triple $(x, y, f\in \mcf)$ such that for any $\delta$ one can arrange $\abs{x-y} < \delta$ while $\abs{f(x) - f(y)} > \eps$.
-This gives sequences $x_k, y_k, f_k$ with $\abs{x_k-y_k}\to 0$ but $\abs{f_k(x_k) - f_k(y_k)} > \eps$.
+::: {.remark title="Negation of equicontinuity"}
+A family $\mathcal F$ of functions on a metric space $X$ is not equicontinuous if and only if there exist $\varepsilon>0$, points $x_k, y_k\in X$, and $f_k\in \mathcal F$ with $\abs{x_k-y_k}\to 0$ and $\abs{f_k(x_k) - f_k(y_k)} \geq \varepsilon$ for all $k$.
 :::
 
 ## Normal families
 
-A normal family is a sequential compactness condition for the topology of locally uniform convergence: from every sequence, extract a subsequence converging uniformly on each compact subset.
-For holomorphic families, local uniform boundedness gives the two inputs needed for compactness.
-Cauchy estimates turn the common bound on a slightly larger compact set into equicontinuity on a smaller one, and Arzelà--Ascoli then extracts uniformly convergent subsequences on compacta.
-This is the mechanism behind Montel's theorem, not a separate compactness principle.
-
 [[D-IJMPJ]]
 
-The hypotheses below are the quantifiers to keep straight.
-"Uniformly bounded on compact subsets" means the bound may depend on the compact set but not on the function in the family; equicontinuity means the same \(\delta(\varepsilon)\) works for every member of the family.
-Once these are uniform across the family, ordinary compactness arguments become available.
-
 [[D-MBDTR]]
+
+::: {.proposition title="Local boundedness implies equicontinuity"}
+Let $\mathcal F$ be a family of holomorphic functions on $\Omega$ that is uniformly bounded on compact subsets.
+Then $\mathcal F$ is equicontinuous on every compact $K\subseteq\Omega$.
+:::
+
+::: {.proof}
+Choose $r>0$ such that $K_{2r}\coloneqq\ts{z : \operatorname{dist}(z,K)\leq 2r}\subseteq\Omega$, and let $M$ bound every $f\in\mathcal F$ on the compact set $K_{2r}$.
+For $\xi\in K_r$ the closed disc $\overline{D_r(\xi)}$ lies in $K_{2r}$, so Cauchy's estimate gives $\abs{f'(\xi)}\leq M/r$.
+For $z,w\in K$ with $\abs{z-w}<r$, the segment $[z,w]$ lies in $D_r(z)\subseteq K_r$, so $\abs{f(z)-f(w)}\leq (M/r)\abs{z-w}$ for every $f\in\mathcal F$.
+:::
+
+Montel's theorem follows by applying the Arzelà--Ascoli theorem on each set of an exhaustion of $\Omega$ by compact sets and taking a diagonal subsequence.
 
 [[T-MCB7V]]
 
 [[D-HL4KE]]
 
-::: {.remark title="Univalence, and how the complex case differs"}
-If $f: \Omega \to \Omega'$ is a univalent surjection then $f$ is invertible with holomorphic inverse.
-The real case is genuinely worse: $f(x) = x^3$ is injective on $(-c,c)$ for every $c$, yet $f'(0)=0$ and $f\inv(x) = x^{1/3}$ is not differentiable at zero.
-Thus once the Riemann mapping argument produces a univalent surjection, no separate inverse-regularity step is needed: it is already a biholomorphism.
+::: {.remark title="Univalent maps"}
+If $f\colon \Omega \to \Omega'$ is holomorphic, injective, and surjective, then $f'$ does not vanish, and $f\inv$ is holomorphic.
+So a univalent surjection produced by the Riemann mapping argument is a biholomorphism.
+:::
+
+::: {.example title="The real analogue fails"}
+The map $f(x) = x^3$ is a bijection $\RR\to\RR$ with $f'(0)=0$, and $f\inv(x) = x^{1/3}$ is not differentiable at $0$.
 :::
 
 [[E-ISFYB]] [[E-LXY7N]] [[E-YFL4K]]
@@ -69,14 +74,17 @@ Thus once the Riemann mapping argument produces a univalent surjection, no separ
 [[T-4ALS2]]
 
 ::: {.slogan}
-Locally uniformly bounded families are normal.
-If a locally uniformly bounded sequence of holomorphic functions converges pointwise on the domain, then it converges locally uniformly: Montel gives locally uniformly convergent subsequences, and pointwise convergence forces every such subsequential limit to be the same function.
+Locally uniformly bounded families of holomorphic functions are normal.
 :::
 
-::: {.remark}
-A sequence of holomorphic functions avoiding the exterior of a disc has a locally uniformly convergent subsequence, and the limit is holomorphic.
+::: {.remark title="Pointwise convergence"}
+If a locally uniformly bounded sequence of holomorphic functions on $\Omega$ converges pointwise on $\Omega$, then it converges locally uniformly.
+By Montel's theorem every subsequence has a further subsequence converging locally uniformly, and pointwise convergence forces all of these limits to equal the pointwise limit.
+Consequently, if $f_n \to f$ pointwise on $\Omega$ and $f$ is discontinuous or fails to be holomorphic at some point, then $\ts{f_n}$ is not uniformly bounded on compact subsets of $\Omega$.
+:::
 
-Read backwards, this is a useful negative test: if $f_n \to f$ pointwise and $f$ fails continuity or differentiability at even one point, then $\ts{f_n}$ cannot have been uniformly bounded on all compact subsets.
+::: {.example}
+A sequence of holomorphic functions on $\Omega$ with values in a fixed disc is uniformly bounded, so it has a locally uniformly convergent subsequence, and the limit is holomorphic.
 :::
 
 ## Exercises
