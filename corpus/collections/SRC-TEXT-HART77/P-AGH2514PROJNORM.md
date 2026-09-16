@@ -17,6 +17,7 @@ review: draft
 ::: problem
 Let $A$ be a ring, and let $X$ be a closed subscheme of $\PP^r_A$.
 Define the **homogeneous coordinate ring** $S(X)$ of $X$ for the given embedding to be $A[x_0, \ldots, x_r]/I$, where $I$ is the ideal $\Gamma_*(\mci_X)$ constructed in the proof of (5.16).
+If $A$ is a field and $X$ a variety, this coincides with the definition given in (I, §2).
 Recall that a scheme $X$ is **normal** if its local rings are integrally closed domains.
 A closed subscheme $X \subseteq \PP^r_A$ is **projectively normal** for the given embedding if $S(X)$ is an integrally closed domain (cf. (I, Ex. 3.18)).
 

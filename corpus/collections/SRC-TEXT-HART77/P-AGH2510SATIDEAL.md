@@ -16,7 +16,7 @@ review: draft
 
 ::: problem
 Let $A$ be a ring, let $S = A[x_0, \ldots, x_r]$, and let $X = \Proj S$.
-A homogeneous ideal $I$ in $S$ defines a closed subscheme of $X$, and conversely every closed subscheme of $X$ arises in this way.
+We have seen that a homogeneous ideal $I$ in $S$ defines a closed subscheme of $X$ (Ex. 3.12), and that conversely every closed subscheme of $X$ arises in this way (5.16).
 
 a. For any homogeneous ideal $I \subseteq S$, define the **saturation** $\bar I$ of $I$ to be the set of $s \in S$ such that for each $i = 0, \ldots, r$ there is an $n$ with $x_i^n s \in I$.
 We say $I$ is **saturated** if $I = \bar I$.
