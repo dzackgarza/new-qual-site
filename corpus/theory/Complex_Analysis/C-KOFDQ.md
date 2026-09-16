@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-KOFDQ
 kind: corollary
-title: Maximum Modulus
+title: Maximum principle for complex-valued harmonic functions
 classification:
   areas:
   - complex-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.corollary ref="MaximumModulus"}
-Let $h(z)$ be a complex-valued harmonic function on a bounded domain $D$ such that $h(z)$ extends continuously to the boundary $\partial D$ of $D .$ If $|h(z)| \leq M$ for all $z \in \partial D$, then $|h(z)| \leq M$ for all $z \in D$.
+Let $D\subseteq\CC$ be a bounded domain, and let $h\colon D\to\CC$ be [[D-CFBSA|harmonic]] and extend continuously to $\overline D$.
+If $\abs{h(z)}\le M$ for all $z\in\bd D$, then $\abs{h(z)}\le M$ for all $z\in D$.
 :::

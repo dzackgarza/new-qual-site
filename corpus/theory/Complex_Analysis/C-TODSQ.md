@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-TODSQ
 kind: corollary
-title: Sufficient condition for a sequence to converge to a holomorphic function
+title: Locally uniform limits of holomorphic functions are holomorphic
 classification:
   areas:
   - complex-analysis
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.corollary}
-If \( \ts{ f_n }_{n\in \NN} \) is a holomorphic sequence on a region \( \Omega  \) which uniformly converges to $f$ on every compact subset $K \subseteq \Omega$, then $f$ is holomorphic, and $f_n' \to f'$ uniformly on every such compact subset $K$.
+Let $\Omega\subseteq\CC$ be open, and let $(f_n)_{n\in\NN}$ be [[D-E7A5W|holomorphic]] functions on $\Omega$ that converge to $f$ uniformly on every compact subset of $\Omega$.
+Then $f$ is holomorphic on $\Omega$, and $f_n'\to f'$ uniformly on every compact subset of $\Omega$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-GM57K
 kind: corollary
-title: Maximum Modulus
+title: Maximum modulus principle
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,9 @@ review: draft
 ---
 
 ::: {.corollary ref="MaximumModulus"}
-If $f$ is holomorphic and nonconstant on an open connected region $\Omega$, then $\abs{f}$ can not attain a maximum on $\Omega$.
-If $\Omega$ is bounded and $f$ is continuous on $\bar \Omega$, then $\max_{\bar \Omega} \abs{f}$ occurs on $\bd \Omega$.
-Conversely, if $f$ attains a local supremum at $z_0 \in \Omega$, then $f$ is constant on $\Omega$.
+Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$.
+
+(a) If $\abs{f}$ attains a local maximum at some $z_0\in\Omega$, then $f$ is constant on $\Omega$.
+
+(b) If $\Omega$ is bounded and $f$ extends continuously to $\overline\Omega$, then $\max_{\overline\Omega}\abs{f}=\max_{\bd\Omega}\abs{f}$.
 :::

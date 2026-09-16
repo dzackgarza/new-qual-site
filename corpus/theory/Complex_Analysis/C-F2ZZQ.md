@@ -14,7 +14,11 @@ review: draft
 ---
 
 ::: {.corollary}
-If $f,g$ are holomorphic and $f=g$ on any set with a limit point, then $f\equiv g$.
+Let $\Omega\subseteq\CC$ be a connected open set and let $f,g$ be [[D-E7A5W|holomorphic]] on $\Omega$.
+If $f=g$ on a subset of $\Omega$ that has a [[D-TFSPT|limit point]] in $\Omega$, then $f=g$ on $\Omega$.
+:::
 
-The proof follows from the fact that $f-g$ is holomorphic and has nonisolated zeros.
+::: {.proof}
+The function $f-g$ is holomorphic on $\Omega$, and its [[D-65VIK|zeros]] have a limit point in $\Omega$.
+The zeros of a holomorphic function on a connected open set that is not identically zero are isolated, so $f-g\equiv0$.
 :::

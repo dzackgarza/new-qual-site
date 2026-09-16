@@ -15,15 +15,22 @@ review: draft
 ---
 
 ::: {.corollary}
-Let $\Omega$ be a region with compact closure, $f$ holomorphic on $\Omega$ and continuous on $\cl\Omega$, and suppose $f$ is nowhere zero on $\Omega$.
-Then $\abs f$ attains its minimum over $\cl\Omega$ on the boundary $\del\Omega$:
-\[
-\inf_{z\in\Omega}\abs{f(z)} \geq \inf_{z\in \del\Omega}\abs{f(z)}
-.\]
-Apply the maximum modulus principle to $1/f$, which is holomorphic exactly because $f$ does not vanish.
-That hypothesis cannot be dropped: $f(z) = z$ on $\DD$ attains its minimum modulus at the interior point $0$.
+Let $\Omega\subseteq\CC$ be a bounded connected open set, and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, continuous on $\overline\Omega$, and nowhere zero on $\Omega$.
+Then
+$$
+\min_{z\in\overline\Omega}\abs{f(z)}=\min_{z\in\bd\Omega}\abs{f(z)}.
+$$
+:::
+
+::: {.proof}
+If $f$ vanishes at a point of $\bd\Omega$, both minima are $0$.
+Otherwise $f$ is nowhere zero on $\overline\Omega$, and the function $1/f$ is holomorphic on $\Omega$ and continuous on $\overline\Omega$, so by the [[C-GM57K|maximum modulus principle]], $\max_{\overline\Omega}\abs{1/f}=\max_{\bd\Omega}\abs{1/f}$.
+:::
+
+::: {.example}
+The hypothesis that $f$ has no zeros is needed: $f(z)=z$ on $\DD$ has $\min_{\overline\DD}\abs{f}=0$, attained only at the interior point $0$, while $\abs{f}=1$ on $\bd\DD$.
 :::
 
 ::: {.remark}
-Stein and Shakarchi, *Complex Analysis*, Ch. 3 Theorem 4.5 and Corollary 4.6.
+Stein--Shakarchi, *Complex Analysis*, Chapter 3, Theorem 4.5 and Corollary 4.6.
 :::
