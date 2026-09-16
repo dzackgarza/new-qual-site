@@ -13,8 +13,13 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against problem 4.5 of the retained Nori Galois Theory Problems PDF.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Stated the hypothesis on E and F from Problem 4.4, on which this problem depends, from p. 3 of the Nori Galois Theory Problems PDF.
 ---
 
 ::: {.problem}
-With E and F as in the previous problem, show that $E ( X _ { 1 } , . . . , X _ { d } )$ is a field extension of $F ( X _ { 1 } , . . . , X _ { d } )$ of degree n.
+Let $E$ be a field extension of $F$ of degree $n$.
+Show that $E(X_1, \ldots, X_d)$ is a field extension of $F(X_1, \ldots, X_d)$ of degree $n$.
 :::
