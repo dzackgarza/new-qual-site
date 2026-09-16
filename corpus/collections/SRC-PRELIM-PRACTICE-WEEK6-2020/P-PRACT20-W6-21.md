@@ -9,10 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed a stray brace and restored the question mark, checked against Week6_solns.pdf (Problem 21).
 ---
 
 ::: {.problem}
-How many surjective functions are there from {1, 2, 3, 4} to $\{ 1 , 2 , 3 \} \}$
+How many surjective functions are there from $\{1, 2, 3, 4\}$ to $\{1, 2, 3\}$?
 :::
 
 ::: {.solution}

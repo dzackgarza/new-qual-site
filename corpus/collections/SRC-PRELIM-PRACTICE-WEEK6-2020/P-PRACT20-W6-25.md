@@ -9,12 +9,17 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the arrow lost from g composed with f, checked against Week6_solns.pdf (Problem 25).
 ---
 
 ::: {.problem}
-Let S, T, U be nonempty sets and $f : S \to T , g : T \to U$ be functions such that $g \circ f : S  U$ is one-to-one.
-Prove that f is one-to-one.
-Show by example that g need not be one-to-one.
+Let $S, T, U$ be nonempty sets and $f : S \to T$, $g : T \to U$ be functions such that $g \circ f : S \to U$ is one-to-one.
+Prove that $f$ is one-to-one.
+Show by example that $g$ need not be one-to-one.
 :::
 
 ::: {.solution}

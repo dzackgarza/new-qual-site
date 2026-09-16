@@ -9,16 +9,25 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed a stray figure caption from another page and separated the choices, checked against Week6_solns.pdf page 5 (Problem 11).
 ---
 
 ::: {.problem}
-Which of the following necessarily holds for $\mathbb { Q } \subseteq A \subseteq \mathbb { R } ?$
+Which of the following necessarily holds for $\QQ \subseteq A \subseteq \RR$?
 
-(A) If A is open, then $A = \mathbb { R }$ (B) If A is closed, then $A = \mathbb { R }$ (C) If A is uncountable, then $A = \mathbb { R }$
+(A) If $A$ is open, then $A = \RR$.
 
-(D) If A is uncountable, then A is open (E) If A is countable, then A is closed
+(B) If $A$ is closed, then $A = \RR$.
 
-Figure 2: f, Problem 9
+(C) If $A$ is uncountable, then $A = \RR$.
+
+(D) If $A$ is uncountable, then $A$ is open.
+
+(E) If $A$ is countable, then $A$ is closed.
 :::
 
 ::: {.solution}

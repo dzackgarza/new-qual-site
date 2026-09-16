@@ -9,16 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the empty set misread as alpha, checked against Week6_solns.pdf (Problem 9).
 ---
 
 ::: {.problem}
-Let $\alpha \neq K \subseteq \mathbb { R } ^ { n }$ . Which of the following statements are true?
+Let $\emptyset \neq K \subseteq \RR^n$. Which of the following statements are true?
 
-(A) If K is compact, then every continuous real-valued function on K is bounded.
+(A) If $K$ is compact, then every continuous real-valued function on $K$ is bounded.
 
-(B) If every continuous real-valued function on K is bounded, then K is compact.
+(B) If every continuous real-valued function on $K$ is bounded, then $K$ is compact.
 
-(C) If K is compact, then K is connected.
+(C) If $K$ is compact, then $K$ is connected.
 :::
 
 ::: {.solution}

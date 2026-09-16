@@ -9,10 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed a stray brace and restored the question mark, checked against Week6_solns.pdf (Problem 16).
 ---
 
 ::: {.problem}
-Suppose X, Y are i.i.d. random variables taking value $n \in \mathbb N$ with probability $\frac { 1 } { 2 ^ { n } }$ What is the probability that max $\{ X , Y \} > 3 \}$
+Suppose $X, Y$ are i.i.d. random variables taking value $n \in \NN$ with probability $\frac{1}{2^n}$. What is the probability that $\max\{X, Y\} > 3$?
 :::
 
 ::: {.solution}

@@ -9,16 +9,23 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the arrow lost from choice (D) and separated the choices, checked against Week6_solns.pdf (Problem 12).
 ---
 
 ::: {.problem}
-Let $d ( x , y ) = { \left\{ \begin{array} { l l } { 0 , x = y , } \\ { 1 , x \neq y . } \end{array} \right. }$ Which of the following hold in the metric space $( \mathbb { R } , d ) ?$
+Let $d(x, y) = \begin{cases} 0, & x = y, \\ 1, & x \neq y. \end{cases}$ Which of the following hold in the metric space $(\RR, d)$?
 
-(A) $\{ x \}$ is open for each $x \in \mathbb { R }$ (B) Every subset of R is closed
+(A) $\{x\}$ is open for each $x \in \RR$.
 
-(C) If $d ^ { \prime }$ is the ordinary metric on R, then the identity map $( \mathbb { R } , d ) \to ( \mathbb { R } , d ^ { \prime } )$ is continuous
+(B) Every subset of $\RR$ is closed.
 
-(D) If $d ^ { \prime }$ is the ordinary metric on R, then the identity map $( \mathbb { R } , d ^ { \prime } )  ( \mathbb { R } , d )$ is continuous
+(C) If $d'$ is the ordinary metric on $\RR$, then the identity map $(\RR, d) \to (\RR, d')$ is continuous.
+
+(D) If $d'$ is the ordinary metric on $\RR$, then the identity map $(\RR, d') \to (\RR, d)$ is continuous.
 :::
 
 ::: {.solution}
