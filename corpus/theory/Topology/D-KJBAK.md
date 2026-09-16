@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-KJBAK
 kind: definition
 title: Dense subspace
+prompts:
+- In terms of closure, when is $A \subset X$ dense in $X$?
 classification:
   areas:
   - topology

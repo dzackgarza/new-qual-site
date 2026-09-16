@@ -97,7 +97,7 @@ sections:
       - ref: D-EMJTU
       - ref: D-E2NWN
       - ref: D-23NTI
-      - ref: D-X6LZD
+      - ref: D-KJBAK
       - ref: D-3O6QH
   - slug: metric-spaces
     title: Metric spaces

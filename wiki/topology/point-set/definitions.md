@@ -55,10 +55,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-KJBAK]] [[D-HS6DE]]
 
-[[D-X6LZD]]
-
-[[FD-SQ57O]]
-
 [[FD-AHIOS]] [[FD-IV5GM]]
 
 [[FD-EQPN4]]
