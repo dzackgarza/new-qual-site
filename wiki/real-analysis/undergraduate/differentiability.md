@@ -1,4 +1,5 @@
 ---
+title: Differentiability
 order: 35
 topics:
 - Differentiation
@@ -7,11 +8,8 @@ topics:
 
 # Differentiability
 
-The mean value theorem is the bridge from pointwise derivative information to global
-estimates.  A bounded derivative gives a Lipschitz bound, while differentiating a limit
-or series term-by-term requires uniform control strong enough to pass the derivative
-through the limit.  None of these statements says that the derivative of a bounded
-function must itself be bounded; the example below is the standard counterexample.
+By the mean value theorem, a differentiable function with $\abs{f'}\leq C$ on an interval is $C$-Lipschitz there.
+Differentiating a series term by term requires uniform convergence of the series of derivatives and convergence of the series at one point.
 
 [[T-OXNTU]]
 
@@ -23,26 +21,27 @@ function must itself be bounded; the example below is the standard counterexampl
 
 [[T-TR526]]
 
-:::{.example title="Derivatives of bounded functions need not be bounded"}
-\[
-f(x) \da 
+::: {.example title="A bounded differentiable function with unbounded derivative"}
+On $[-1,1]$ let
+$$
+f(x) \coloneqq
 \begin{cases}
-x^2 \sin\qty{1\over x^2} &  x\neq 0
+x^2 \sin\qty{1\over x^2}, & x\neq 0,
 \\
-0 & x=0.
+0, & x=0.
 \end{cases}
-.\]
-
-Note that $f$ is differentiable at $x=0$ since ${1\over h}\abs{f(h) - f(0)} = \abs{ h\sin\qty{h^{-2}}}\leq \abs{h}\to 0$, and
-\[
-f'(x) = 2x\sin\qty{1\over x^2 } - \qty{2\over x}\cos\qty{1\over x^2} \chi_{x\neq 0}
-.\]
-Now take $x_k \da 1/\sqrt{k\pi}$.  Then
-\[
+$$
+Then $\abs f\leq1$, and $f$ is differentiable at $0$ since $\abs{f(h) - f(0)}/\abs h = \abs{ h\sin\qty{h^{-2}}}\leq \abs{h}\to 0$.
+For $x\neq0$,
+$$
+f'(x) = 2x\sin\qty{1\over x^2 } - {2\over x}\cos\qty{1\over x^2}.
+$$
+For $x_k \coloneqq 1/\sqrt{k\pi}$,
+$$
 f'(x_k)=-2\sqrt{k\pi}(-1)^k,
 \qquad
 \abs{f'(x_k)}=2\sqrt{k\pi}\longrightarrow\infty,
-\]
-so $f'$ is unbounded.
+$$
+so $f'$ is unbounded on $[-1,1]$.
 
 :::
