@@ -14,10 +14,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2015 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 6 on pages 1-2 of the official analysis-15F.pdf exam, checked against the Fall 2015 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Problem 6. Let uPL2pRdq and say that uPH1{2pRdq (a Sobolev space) if ´ 1`|ξ|1{2 ¯ ˆupξqP L2pRdq. Here ˆu is the Fourier transform of u. Show that uPH1{2pRdq if and only if ĳ |upx`yq´ upxq|2
-|y|d`1 dxdy ă 8.
-89
+Let $u \in L^2(\mathbb{R}^d)$ and let us say that $u \in H^{1/2}(\mathbb{R}^d)$ (a Sobolev space) if
+\[
+\left( 1 + |\xi|^{1/2} \right) \hat{u}(\xi) \in L^2(\mathbb{R}^d).
+\]
+Here $\hat{u}$ is the Fourier transform of $u$. Show that $u \in H^{1/2}(\mathbb{R}^d)$ if and only if
+\[
+\iint \frac{|u(x+y) - u(x)|^2}{|y|^{d+1}}\,dx\,dy < \infty.
+\]
 :::

@@ -14,12 +14,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2015 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 9 on page 2 of the official analysis-15F.pdf exam, checked against the Fall 2015 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Problem 9. Letpfjq be a sequence of entire functions such that, writing z“x`iy, we have ĳ C
-|fjpzq|2e´|z|2
-dxdy ď C, j “ 1, 2,... for some constant Cą 0. Show that there exists a subsequence pfjkq and an entire function f such that we have ĳ C
-|fjkpzq´ fpzq|2e´2|z|2
-dxdy Ñ 0, k Ñ8.
+Let $(f_j)$ be a sequence of entire functions such that, writing $z = x + iy$, we have
+\[
+\iint_{\mathbb{C}} |f_j(z)|^2 e^{-|z|^2}\,dx\,dy \leq C, \quad j = 1, 2, \ldots,
+\]
+for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and an entire function $f$ such that we have
+\[
+\iint_{\mathbb{C}} |f_{j_k}(z) - f(z)|^2 e^{-2|z|^2}\,dx\,dy \to 0, \quad k \to \infty.
+\]
 :::

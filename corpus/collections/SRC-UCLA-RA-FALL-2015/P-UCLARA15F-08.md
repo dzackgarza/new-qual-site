@@ -14,8 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2015 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 8 on page 2 of the official analysis-15F.pdf exam, checked against the Fall 2015 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Problem 8. Assume that fpzq is an entire function that is 2π-periodic in the sense that fpz` 2πq“ fpzq, and |fpx`iyq| ď Ceα|y| for some Cą 0, where 0 ăαă 1. Prove that f is constant.
+Assume that $f(z)$ is an entire function that is $2\pi$-periodic in the sense that $f(z + 2\pi) = f(z)$, and
+\[
+|f(x+iy)| \leq C e^{\alpha|y|},
+\]
+for some $C > 0$, where $0 < \alpha < 1$. Prove that $f$ is constant.
 :::

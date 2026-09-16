@@ -14,8 +14,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2015 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 7 on page 2 of the official analysis-15F.pdf exam, checked against the Fall 2015 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Problem 7. Assume that fpzq is analytic in D and continuous on D. If fpzq “fp1{zq when |z| “ 1, prove that fpzq is constant.
+Assume that $f(z)$ is analytic in $\{z : |z| < 1\}$ and continuous on $\{z : |z| \leq 1\}$. If $f(z) = f(1/z)$ when $|z| = 1$, prove that $f(z)$ is constant.
 :::
