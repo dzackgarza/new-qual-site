@@ -7,139 +7,132 @@ topics:
 - Euler Characteristic
 ---
 
-#  CW and Simplicial Complexes
+# CW and simplicial complexes
 
-:::{.warnings}
-The maps go *down* in degree for cellular chain complexes! I.e., 
-\[
-C_*(X) = (0 \from C_0 \from C_1 \from \cdots )
-.\]
-
-:::
+The cellular chain complex of a [[D-ZOU5G|CW complex]] $X$ has differentials lowering degree:
+$$
+C_*(X) = \qty{0 \leftarrow C_0 \xleftarrow{\ \del_1\ } C_1 \xleftarrow{\ \del_2\ } C_2 \leftarrow \cdots }.
+$$
 
 [[PR-QJZDT]]
 
-:::{.remark}
-This is nontrivial, it's the content of the *Eilenberg-Zilber theorem*.
+::: {.remark}
+For singular chains the corresponding statement is the Eilenberg--Zilber theorem: $C_*(X\cross Y)$ is naturally chain homotopy equivalent to $C_*(X)\tensor_\ZZ C_*(Y)$.
 
 :::
 
-:::{.example}
-Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, then $p_X(t) = 1 + t^a + t^b + t^{a+b}$, so $X$ has 
-
-- One 1-cell
-- One $a\dash$cell
-- One $b\dash$cell
-- One $(a+b)\dash$cell
+::: {.example}
+Let $X= S^a \cross S^b$ with $a,b\geq 1$ and the product of the CW structures $e^0\union e^a$ and $e^0\union e^b$.
+Then $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, so $p_X(t) = 1 + t^a + t^b + t^{a+b}$, and $X$ has one $0$-cell, one $a$-cell, one $b$-cell, and one $(a+b)$-cell.
 
 :::
 
 [[E-GTNVU]]
 
-## CW Structures on Common Spaces
+## CW structures on common spaces
 
-:::{.example title="Spheres"}
-$S^n = e^0 \union e^n$: a point and an $n\dash$cell.
-
-:::
-
-:::{.example title="Real Projective Space"}
-$\RP^n = e^1 \cup e^2 \cup \cdots \cup e^n$: one cell in each dimension.
+::: {.example title="Spheres"}
+For $n\geq 1$, $S^n = e^0 \union e^n$, a $0$-cell and an $n$-cell attached by the constant map $\del D^n\to e^0$.
+Another CW structure on $S^n$ has two $k$-cells for each $0\leq k \leq n$, the $k$-skeleton being $S^k$ and the two $k$-cells its hemispheres.
 
 :::
 
-:::{.example title="Complex Projective Space"}
-$\mathbb{CP}^n =e^2 \cup e^4 \cup \cdots e^{2n}$
+::: {.example title="Real projective space"}
+$\RP^n = e^0\union e^1 \union e^2 \union \cdots \union e^n$, one cell in each dimension $0,\ldots,n$, with $e^k$ attached by the double cover $S^{k-1}\to\RP^{k-1}$.
 
 :::
 
-:::{.example title="Surfaces"}
+::: {.example title="Complex projective space"}
+$\CP^n = e^0\union e^2 \union e^4 \union \cdots \union e^{2n}$, with $e^{2k}$ attached by the quotient map $S^{2k-1}\to\CP^{k-1}$.
+
+:::
+
+::: {.example title="Surfaces"}
+A closed surface given by a polygon with edge identifications has one $2$-cell, one $1$-cell for each edge pair, and one $0$-cell for each vertex class.
+
 ![Fundamental domains](../../../../assets/assets/Topology/figures/1513064067523.png)
 
 :::
 
-## Examples of Simplicial Complexes 
+## Simplicial complexes
 
-:::{.remark}
-To write down a simplicial complex, label the vertices with increasing integers. 
-Then each $n$-cell will correspond to a set of $n+1$ of these integers - throw them in a list.
+::: {.remark}
+With the vertices labelled by integers, a simplicial complex is determined by its list of simplices, each $n$-simplex being recorded as the set of the $n+1$ labels of its vertices.
 
 :::
 
-:::{.example title="Torus"}
+::: {.example title="Torus"}
 ![Torus](../../../../assets/assets/Topology/figures/1513062466927.png)
 
 :::
 
-:::{.example title="Klein Bottle and $\RP^2$"}
+::: {.example title="Klein bottle and $\RP^2$"}
 ![Klein Bottle and $\RP^2$](../../../../assets/assets/Topology/figures/1513062526623.png)
 
 :::
 
-:::{.example title="Non-example"}
-For counterexamples, note that this fails to be a triangulation of $T$:
-
+::: {.example title="A labelling of the torus that is not a triangulation"}
 ![Not a Torus](../../../../assets/assets/Topology/figures/1513062599096.png)
 
-This fails - for example, the specification of a simplex $[1,2,1]$ does not uniquely determine a triangle in the this picture.
+In this picture a triangle has two vertices with the same label $1$, so the vertex set $\ts{1,2}$ does not determine a unique triangle, and the picture is not a simplicial complex.
 
 :::
 
-## Cellular Homology
+## Cellular homology
 
-* $S^n$ has the CW complex structure of 2 $k$-cells for each $0\leq k \leq n$.
+::: {.fact title="Computing cellular homology"}
+Let $X$ be a CW complex with finitely many cells in each dimension.
 
-How to compute:
+1. The cellular chain group $C_n$ is free abelian on the $n$-cells $e^n_\alpha$.
 
-1. Write cellular complex $$0 \to C^n \to C^{n-1} \to \cdots C^2 \to C^1 \to C^0 \to 0$$
+2. The differential is
+$$
+\del_n(e_{\alpha}^n) = \sum_{\beta} d_{\alpha\beta}\, e_{\beta}^{n-1},
+$$
+where $d_{\alpha\beta}$ is the degree of the composite $S^{n-1} \to X^{(n-1)} \to X^{(n-1)}/\qty{X^{(n-1)}\sm e^{n-1}_\beta}\cong S^{n-1}$ of the attaching map of $e^n_\alpha$ with the map collapsing the complement of $e^{n-1}_\beta$.
+For a smooth map $S^{n-1}\to S^{n-1}$ and a regular value $y$, the degree is the number of points of the preimage of $y$ counted with sign $+1$ where the map preserves orientation and $-1$ where it reverses it.
 
-2. Compute differentials $\del_{i}: C^i \to C^{i-1}$
+3. If $X$ has a single $0$-cell, then $\del_1 = 0$.
+If $X$ has no $n$-cells, then $H_n(X) = 0$.
 
-3. *Note: if $C^0$ is a point, $\del_{1}$ is the zero map.*
+4. With bases of cells, $\del_n\colon \ZZ^{m} \to \ZZ^{k}$ is a $k\times m$ integer matrix, and $H_n(X) = \ker\del_n/\im\del_{n+1}$.
 
-4. *Note: $H_{n} X = 0 \iff C^n = \emptyset$.*
+5. If the Smith normal form of $\del_{n+1}$ has nonzero diagonal entries $d_1,\ldots,d_r$, and $\ker\del_n$ has rank $s$, then
+$$
+H_n(X)\cong \ZZ^{s-r}\oplus\bigoplus_{i=1}^r \ZZ/d_i.
+$$
 
-5. Compute degrees: Use $\del_{n}(e_{i}^n) = \sum_{i} d_{i} e_{i}^{n-1}$ where $$d_{i} = \deg(\text{Attach }e_{i}^n \to \text{Collapse } X^{n-1}\dash\text{skeleton}),$$ which is a map $S^{n-1} \to S^{n-1}$.
+:::
 
-  Alternatively, choose orientations for both spheres. Then pick a point in the target, and look at points in the fiber. Sum them up with a weight of +1 if the orientations match and -1 otherwise.
+::: {.example title="A kernel from reduced row echelon form"}
+The integer matrix with reduced row echelon form
+$$
+\begin{pmatrix}
+1&2&0&2\\0&0&1&-1\\0&0&0&0
+\end{pmatrix},
+$$
+viewed as a map $\ZZ^4\to\ZZ^3$ on coordinates $(x_1,x_2,x_3,x_4)$, has kernel given by $x_1=-2x_2-2x_4$ and $x_3=x_4$, with basis
+$$
+\ker = \gens{(2,-1,0,0),\ (2,0,-1,-1)}.
+$$
+Its rows span the image of the transpose, $\gens{(1,2,0,2),(0,0,1,-1)}\subseteq\ZZ^4$.
 
-6. Note that $\ZZ^m \mapsvia{f} \ZZ^n$ has an $n\times m$ matrix
+:::
 
-7. Row reduce, image is span of rows with pivots. The kernel is found by taking the RREF, padding with zero rows so the matrix is square with all diagonal entries present, then reading down the diagonal: whenever a zero is encountered in the $n$-th diagonal position, take the column vector with $-1$ in the $n$-th entry and zeros elsewhere (and the pivot columns filled in to satisfy the homogeneous equations) as a basis element of the kernel.
+## Constructing a CW complex with prescribed homology
 
-  For example:
-\[
-\begin{matrix}
-\mathbf1&2&0&2\\0&0&\mathbf1&-1\\0&0&0&\mathbf0
-\end{matrix} 
-\to
-\begin{matrix}
-\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0
-\end{matrix}
-\begin{matrix}
-\mathbf1&2&0&2\\0&\mathbf0&0&0\\0&0&\mathbf1&-1\\0&0&0&\mathbf0
-\end{matrix} \\
-\ker = 
-\begin{matrix}
-2\\-1\\0\\0
-\end{matrix} 
-\begin{matrix}
-3\\0\\-1\\-1
-\end{matrix}\\
-\im = \generators{a+2b+2d,c-d}
-.\]
-  
-6. Or look at elementary divisors, say $n_{i}$, then the image is isomorphic to $\bigoplus n_{i} \ZZ$
+::: {.proposition}
+For finitely generated abelian groups $G_1, G_2, \ldots$, there is a connected CW complex $X$ with $H_n(X)\cong G_n$ for all $n\geq 1$.
 
-## Constructing a CW Complex with Prescribed Homology
+:::
 
-Given $G = \bigoplus G_{i}$, and want a space such that $H_{i} X = G$? Construct $X = \bigvee X_{i}$ and then $H_{i} (\bigvee X_{i}) = \bigoplus H_{i} X_{i}$. Reduces problem to: given a group $H$, find a space $Y$ such that $H_{n}(Y) = G$.
-By the structure theorem of finitely generated abelian groups, it suffices to know how to do this for $\ZZ$ and $\ZZ/n\ZZ$, since their powers are just obtained by wedging (previous remark).
-Recipe:
+::: {.proof}
+By the structure theorem for finitely generated abelian groups, each $G_n$ is a finite direct sum of copies of $\ZZ$ and $\ZZ/d$.
+Attaching an $n$-cell to a point gives $S^n$ with $\tilde H_n = \ZZ$ and no other reduced homology.
+Attaching an $(n+1)$-cell to $S^n$ along a map of degree $d$ gives a space with $\tilde H_n = \ZZ/d$ and no other reduced homology.
+For good pointed spaces $X_i$, $\tilde H_n(\bigvee_i X_i) \cong \bigoplus_i \tilde H_n(X_i)$, so the wedge of these spaces over all summands of all $G_n$ has the required homology.
 
-1. Attach an $e^n$ to a point to get $H_{n} = \ZZ$
-
-2. Attach an $e^{n+1}$ with attaching map of degree $d$ to get $H_{n} = \ZZ_{d}$
+:::
 
 ## Exercises
 
