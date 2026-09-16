@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YMPTF
 kind: theorem
-title: Borel-Cantelli
+title: Borel--Cantelli lemma
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,7 @@ relations:
 review: draft
 ---
 
-:::{.theorem}
-Let $\{E_{k}\}$ be a countable collection of measurable sets.
-Then
-$$
-\sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
-.$$
+::: {.theorem}
+Let $m$ be Lebesgue measure on $\RR$, and let $\{E_k\}_{k\geq1}$ be a sequence of [[D-MDJII|Lebesgue measurable]] subsets of $\RR$.
+If $\sum_{k=1}^\infty m(E_k)<\infty$, then almost every $x\in\RR$ belongs to only finitely many of the sets $E_k$.
 :::
