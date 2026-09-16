@@ -65,9 +65,9 @@ source:
     - P-ZRVTI
     - P-TIE-F11-11
     - P-TIE-F09-12
-    - id: P-TIE-F11-13
+    - id: P-TIE-F09-13
       comment: Question 13
-    - id: P-TIE-F11-14
+    - id: P-TIE-F09-13
       comment: Question 14
     - id: P-TIE-F11-15
       comment: Question 15
@@ -198,7 +198,7 @@ source:
     - P-KNIPC
     - id: P-TIE-S15-29
       comment: Question 29
-    - id: P-TIE-S15-30
+    - id: P-TIE-S15-24
       comment: Question 30
     - id: P-TIE-S15-31
       comment: Question 31

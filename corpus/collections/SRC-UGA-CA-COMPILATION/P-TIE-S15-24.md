@@ -14,16 +14,22 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 24.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Absorbed the duplicate P-TIE-S15-30, which the source prints again as Spring 2015, question 30, page 14 of Questions_from_Tie.pdf, and took over its typed statement and remark.
 ---
 
 ::: {.problem}
-Let $\psi _ { \alpha } ( z ) = { \frac { \alpha - z } { 1 - \bar { \alpha } z } }$ with $| \alpha | < 1$ and ${ \mathbb D } = \{ z : ~ | z | < 1 \}$ . Prove that
+Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} < 1$ and $\mathbb{D} = \{z : \abs{z} < 1\}$. Prove that
 
-$$
-\bullet \ \frac { 1 } { \pi } \iint _ { \mathbb { D } } | \psi _ { \alpha } ^ { \prime } | ^ { 2 } d x d y = 1 .
-$$
+(a) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}^2\,dx\,dy = 1$.
 
-$$
-\bullet \ \frac { 1 } { \pi } \iint _ { \mathbb { D } } | \psi _ { \alpha } ^ { \prime } | d x d y = \frac { 1 - | \alpha | ^ { 2 } } { | \alpha | ^ { 2 } } \log \frac { 1 } { 1 - | \alpha | ^ { 2 } } .
-$$
+(b) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
+:::
+
+::: {.remark}
+The source prints this problem twice, as questions 24 and 30 of Spring 2015.
+Under question 30 it also prints "Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from half disc $\{z = x + iy : \abs{z} < 1,\ y > 0\}$ to upper half plane $\mathbb{H} = \{z = x + iy : y > 0\}$", which is question 25 of the same list.
+It is a separate problem, carried by its own card.
 :::
