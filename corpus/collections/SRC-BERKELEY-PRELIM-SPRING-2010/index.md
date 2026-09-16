@@ -40,7 +40,6 @@ source:
     year: 2010
 ---
 
-::: remark
-UC Berkeley mathematics preliminary examination, Spring 2010, reconstructed from the retained solution packet, which prints each problem before its solution.
-Problems are listed in source order, Part A followed by Part B.
+::: {.remark}
+A solution packet for this exam prints each problem before its solution. Part A precedes Part B.
 :::
