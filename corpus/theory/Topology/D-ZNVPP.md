@@ -25,5 +25,5 @@ Let $X$ be a topological space.
 :::
 
 ::: {.concept}
-[@Mun00, §23, Lemma 23.1].
+[@Mun00].
 :::

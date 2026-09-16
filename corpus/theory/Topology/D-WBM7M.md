@@ -29,5 +29,5 @@ In particular, $M$ is free if and only if $M\cong R^{(T)}$ for some set $T$.
 :::
 
 ::: {.concept}
-[@DF04, §10.3].
+[@DF04].
 :::

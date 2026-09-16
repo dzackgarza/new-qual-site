@@ -20,5 +20,5 @@ A topological space $X$ is \dfn{semilocally simply connected} if every $x\in X$ 
 :::
 
 ::: {.concept}
-[@Hat02, §1.3, p. 63].
+[@Hat02].
 :::

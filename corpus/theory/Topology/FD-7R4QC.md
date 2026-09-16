@@ -33,5 +33,5 @@ The following subspaces of Euclidean space are not locally compact:
 :::
 
 ::: {.concept}
-[@Mun00, §29].
+[@Mun00].
 :::

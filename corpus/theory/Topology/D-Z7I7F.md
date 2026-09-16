@@ -27,5 +27,5 @@ The [[D-EBNUE|fundamental group]] $\pi_1(X, x_0)$ is the set of classes of loops
 :::
 
 ::: {.concept}
-[@Hat02, pp. 3 and 25]; [@Mun00, §51].
+[@Hat02]; [@Mun00].
 :::

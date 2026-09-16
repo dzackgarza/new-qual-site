@@ -36,5 +36,5 @@ whose unlabelled maps are induced by the inclusions $(A, x_0)\injects(X, x_0)$ a
 :::
 
 ::: {.concept}
-[@Hat02, §4.1, pp. 343--344, Theorem 4.3].
+[@Hat02].
 :::

@@ -30,5 +30,5 @@ In the setting of the definition, $\deg f = \sum_{i=1}^m \deg f\vert_{x_i}$, whe
 :::
 
 ::: {.concept}
-[@Hat02, §2.2, Proposition 2.30].
+[@Hat02].
 :::

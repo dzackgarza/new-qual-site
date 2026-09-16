@@ -40,5 +40,5 @@ For rationals $p < q$ and an irrational $r$ with $p<r<q$, the sets $\QQ\intersec
 :::
 
 ::: {.concept}
-[@Mun00, §23, Lemma 23.1].
+[@Mun00].
 :::

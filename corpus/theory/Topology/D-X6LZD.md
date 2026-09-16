@@ -26,5 +26,5 @@ A subset $Q\subseteq X$ is dense in $X$ if and only if its [[D-ASXW6|closure]] i
 :::
 
 ::: {.concept}
-[@Mun00, §17].
+[@Mun00].
 :::

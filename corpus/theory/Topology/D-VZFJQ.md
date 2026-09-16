@@ -23,5 +23,5 @@ The relation $\sim$ is an equivalence relation on $X$, and $x\sim y$ if and only
 :::
 
 ::: {.concept}
-[@Mun00, §25].
+[@Mun00].
 :::

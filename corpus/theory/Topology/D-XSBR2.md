@@ -32,5 +32,5 @@ In $\Top$, the categorical product of a family of spaces $(X_\alpha)_{\alpha\in 
 :::
 
 ::: {.concept}
-[@DF04, §10.3]; [@Hat02, §4.H, p. 461].
+[@DF04]; [@Hat02].
 :::

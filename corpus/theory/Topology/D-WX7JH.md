@@ -30,5 +30,5 @@ If $M$ is connected, then $M$ is orientable if and only if $\tilde M$ has two co
 :::
 
 ::: {.concept}
-[@Hat02, §3.3, pp. 234--235, Proposition 3.25].
+[@Hat02].
 :::

@@ -35,5 +35,5 @@ The pairing can be degenerate: for $X=\RR P^2$, $R=\ZZ$, and $n=2$, $H^2(\RR P^2
 :::
 
 ::: {.concept}
-[@Hat02, §3.1, Theorem 3.2].
+[@Hat02].
 :::

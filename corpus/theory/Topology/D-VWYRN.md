@@ -28,5 +28,5 @@ If $Z$ is a point, then $X\cross_Z Y = X\cross Y$.
 :::
 
 ::: {.concept}
-[@Hat02, §4.H, p. 461].
+[@Hat02].
 :::

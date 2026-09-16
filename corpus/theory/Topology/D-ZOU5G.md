@@ -27,5 +27,5 @@ with the quotient topology.
 :::
 
 ::: {.concept}
-[@Hat02, p. 5].
+[@Hat02].
 :::

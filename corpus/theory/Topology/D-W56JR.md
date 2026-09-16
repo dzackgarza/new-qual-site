@@ -23,5 +23,5 @@ The relation $\mcv\leq\mcu$ if $\mcv$ refines $\mcu$ is a preorder on the set of
 :::
 
 ::: {.concept}
-[@Mun00, §41].
+[@Mun00].
 :::

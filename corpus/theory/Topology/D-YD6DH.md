@@ -42,5 +42,5 @@ Let $X$ be a topological space and $x_0\in X$.
 :::
 
 ::: {.concept}
-[@Hat02, §1.1, Proposition 1.3].
+[@Hat02].
 :::

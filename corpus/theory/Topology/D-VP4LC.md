@@ -49,5 +49,5 @@ For $X = \RR P^2$, $R = \ZZ$, and $n = 2$, one has $H_1(\RR P^2;\ZZ)\cong\ZZ/2$ 
 :::
 
 ::: {.concept}
-[@Hat02, §3.1, Theorem 3.2].
+[@Hat02].
 :::

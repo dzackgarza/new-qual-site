@@ -29,5 +29,5 @@ $$
 
 ::: {.remark}
 Equivalently, there is a [[D-NCLVD|retraction]] $r\colon X\to A$ such that $\iota\circ r$ is [[D-Z7I7F|homotopic]] to $\id_X$, where $\iota\colon A\injects X$ is the inclusion.
-The [[D-2O3N7|deformation retraction]] of [@Hat02, p. 2] additionally requires $F(a, t) = a$ for all $a\in A$ and $t\in I$.
+The [[D-2O3N7|deformation retraction]] of [@Hat02] additionally requires $F(a, t) = a$ for all $a\in A$ and $t\in I$.
 :::

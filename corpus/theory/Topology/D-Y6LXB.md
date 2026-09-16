@@ -23,5 +23,5 @@ The relative homology group $H_n(X,A)$ is isomorphic to the group of [[D-2XKM5|r
 :::
 
 ::: {.concept}
-[@Hat02, p. 115].
+[@Hat02].
 :::

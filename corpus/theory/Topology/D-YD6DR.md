@@ -31,5 +31,5 @@ Let $M$ be an $n$-manifold.
 :::
 
 ::: {.concept}
-[@Hat02, §3.3, p. 235].
+[@Hat02].
 :::

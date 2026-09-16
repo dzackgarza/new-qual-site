@@ -25,5 +25,5 @@ The relation $\sim$ is an equivalence relation on $X$.
 :::
 
 ::: {.concept}
-[@Mun00, §25].
+[@Mun00].
 :::

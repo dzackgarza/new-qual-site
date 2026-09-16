@@ -24,5 +24,5 @@ In a Hausdorff space, every sequence converges to at most one point.
 :::
 
 ::: {.concept}
-[@Mun00, §17, Theorem 17.10].
+[@Mun00].
 :::

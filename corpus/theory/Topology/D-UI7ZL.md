@@ -30,5 +30,5 @@ Let $X$ be a topological space and $U\subseteq X$.
 :::
 
 ::: {.concept}
-[@Mun00, §17, Theorems 17.2 and 17.6].
+[@Mun00].
 :::

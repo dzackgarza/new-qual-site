@@ -28,5 +28,5 @@ Let $n\geq 1$ and $f, g\colon S^n\to S^n$ be continuous.
 :::
 
 ::: {.concept}
-[@Hat02, §2.2, p. 134].
+[@Hat02].
 :::

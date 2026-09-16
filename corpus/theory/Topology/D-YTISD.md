@@ -19,5 +19,5 @@ The covering $p$ is \dfn{normal}, also called \dfn{regular}, if for every $x\in 
 :::
 
 ::: {.concept}
-[@Hat02, §1.3, p. 70].
+[@Hat02].
 :::

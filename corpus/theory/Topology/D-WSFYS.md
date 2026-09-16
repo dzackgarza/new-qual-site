@@ -28,9 +28,9 @@ Together with the homomorphisms $A\to A\ast_C B$ and $B\to A\ast_C B$ induced by
 :::
 
 ::: {.remark}
-By [[T-BTPU4|van Kampen's theorem]], if $X = U_1\union U_2$ with $U_1$, $U_2$ and $U_1\intersect U_2$ open and path-connected, then $\pi_1(X)$ is the free product of $\pi_1(U_1)$ and $\pi_1(U_2)$ amalgamated over $\pi_1(U_1\intersect U_2)$ [@Hat02, Theorem 1.20, p. 43].
+By [[T-BTPU4|van Kampen's theorem]], if $X = U_1\union U_2$ with $U_1$, $U_2$ and $U_1\intersect U_2$ open and path-connected, then $\pi_1(X)$ is the free product of $\pi_1(U_1)$ and $\pi_1(U_2)$ amalgamated over $\pi_1(U_1\intersect U_2)$ [@Hat02].
 :::
 
 ::: {.concept}
-[@Hat02, §1.B, p. 92].
+[@Hat02].
 :::
