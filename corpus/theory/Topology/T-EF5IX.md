@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-EF5IX
 kind: theorem
-title: Lifting criterion for covers, Hatcher 1.33
+title: Lifting criterion for covering spaces
 classification:
   areas:
   - topology
@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f: Y\to X$ with $Y$ path-connected and locally path-connected, then there exists a unique lift $\tilde f: Y\to \tilde X$ if and only if $f_*(\pi_1(Y)) \subset \pi_*(\pi_1 (\tilde X))$:
+Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-2PNEG|covering space]] and $f\colon(Y, y_0)\to(X, x_0)$ a map with $Y$ path-connected and locally path-connected.
+Then a lift $\tilde f\colon(Y, y_0)\to(\tilde X, \tilde x_0)$ with $p\circ\tilde f = f$ exists if and only if $f_*(\pi_1(Y, y_0)) \subseteq p_*(\pi_1 (\tilde X, \tilde x_0))$ [@Hat02, Proposition 1.33, p. 61]:
 
 \begin{tikzcd}
 	&& {\tilde X} \\
@@ -24,7 +25,6 @@ If $f: Y\to X$ with $Y$ path-connected and locally path-connected, then there ex
 	\arrow["{f}"', from=3-1, to=3-3]
 	\arrow["{\tilde f}", from=3-1, to=1-3, dashed]
 \end{tikzcd}
-> [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMCwyLCJZIl0sWzIsMiwiWCJdLFsyLDAsIlxcdGlsZGUgWCJdLFsyLDEsInAiXSxbMCwxLCJmIiwyXSxbMCwyLCJcXHRpbGRlIGYiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
 
-Moreover, lifts are *unique* if they agree at a single point.
+If $Y$ is connected, two lifts of $f$ that agree at one point are equal [@Hat02, Proposition 1.34, p. 62].
 :::
