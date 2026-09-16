@@ -43,7 +43,6 @@ source:
     year: 1982
 ---
 
-::: remark
-The retained PDF is titled *Preliminary Exam - Summer 1982* and contains Problems 1--20 in source order.
-The PDF itself omits the institution name; the existing Berkeley prelim resource page identifies `Summer82.pdf` as the Summer 1982 Berkeley exam, matching the canonical Summer 1980 and Summer 1984 source sequence.
+::: {.remark}
+The paper, titled *Preliminary Exam - Summer 1982*, does not name its institution; it belongs to the Berkeley preliminary exam sequence.
 :::
