@@ -202,10 +202,6 @@ source:
       comment: Smith 8000 fall 2006 final I
 ---
 
-::: remark
-Course notes with no publication year, so the date is recorded as unknown.
-
-Listed: abelian groups, Euclidean domains, finitely generated modules, Jordan forms, Noetherian rings, normality and localization, Sylow, cycles and commutators, and the concrete Galois problems.
-
-Remaining: the separate 843–845 course notes cited on the syllabus (a different document from this PDF).
+::: {.remark}
+Course notes with no publication year. The problems concern abelian groups, Euclidean domains, finitely generated modules, Jordan forms, Noetherian rings, normality and localization, Sylow theory, cycles and commutators, and explicit Galois groups.
 :::
