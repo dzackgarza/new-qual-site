@@ -7,7 +7,7 @@ order: 7
 
 ## Point-set
 
-Proved in [[topology/point-set/index|Point-set topology]] -- the characterizations of compactness, Tychonoff, Urysohn and Tietze, the metrization theorems, and Baire.
+The characterizations of compactness, Tychonoff's theorem, Urysohn's lemma, the Tietze extension theorem, the metrization theorems, and the Baire category theorem are in [[topology/point-set/index|Point-set topology]].
 
 ## Fundamental group
 
@@ -53,8 +53,8 @@ Proved in [[topology/homology/index|Homology]].
 
 ## The standard computations
 
-The table is [[topology/the-standard-spaces|The standard spaces]], and it answers more exam questions than the theorems above.
+The fundamental groups and homology groups of spheres, tori, projective spaces, surfaces, and wedges of spheres are tabulated on [[topology/the-standard-spaces|The standard spaces]].
 
-## What to check before using each one
+## Counterexamples
 
-The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[topology/counterexamples|Counterexamples]].
+[[topology/counterexamples|Counterexamples]] gives, for statements that fail without a hypothesis, a space or map witnessing the failure.
