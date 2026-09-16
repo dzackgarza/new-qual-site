@@ -9,9 +9,9 @@ topics:
 
 # Polynomial rings
 
-## Basics
+## Rings, ideals, and characteristic
 
-Treat \(R[x]\) as a ring construction applied to the coefficient ring \(R\): the constant polynomials retain the coefficient-ring arithmetic, while ideals and ring morphisms are the language for passing to quotients, reducing coefficients, and evaluating polynomials.
+For a commutative ring $R$, the polynomial ring $R[x]$ contains $R$ as the constant polynomials, and for each $a\in R$ evaluation $f\mapsto f(a)$ is a [[D-GXMDW|ring morphism]] $R[x]\to R$ with kernel $\gens{x-a}$.
 
 [[D-GURUB]]
 
@@ -23,9 +23,10 @@ Treat \(R[x]\) as a ring construction applied to the coefficient ring \(R\): the
 
 [[FD-LXZIW]]
 
-::: {.remark title="What survives passing to $R[x]$"}
-$R$ a UFD gives $R[x]$ a UFD, and $R$ Noetherian gives $R[x]$ Noetherian by the Hilbert basis theorem.
-$R$ a PID does *not* give $R[x]$ a PID, and $\gens{2,x}\normal\ZZ[x]$ is the counterexample every time.
+::: {.remark title="Properties inherited by $R[x]$"}
+If $R$ is a [[D-INULL|UFD]], then $R[x]$ is a UFD, and if $R$ is [[D-TZXBO|Noetherian]], then $R[x]$ is Noetherian by the Hilbert basis theorem.
+If $R$ is a [[D-HTIL5|PID]], then $R[x]$ need not be a PID: the ideal $\gens{2,x}\normal\ZZ[x]$ is not principal.
+In fact $R[x]$ is a PID if and only if $R$ is a field.
 :::
 
-The irreducibility criteria and the field theory built on $k[x]$ are [[algebra/fields/polynomials|Polynomials over a field]].
+Irreducibility criteria and the field theory of $k[x]$ for a field $k$ are on [[algebra/fields/polynomials|Polynomials over a field]].

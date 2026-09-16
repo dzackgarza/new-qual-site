@@ -9,7 +9,7 @@ topics:
 
 # Commutative algebra
 
-The layer past the qual's core that the qual still asks about: Zorn, Nakayama, Noetherian conditions, localization.
+Throughout, rings are commutative with identity.
 
 ## Zorn's lemma
 
@@ -27,20 +27,16 @@ The layer past the qual's core that the qual still asks about: Zorn, Nakayama, N
 
 [[E-NXHG6]]
 
-:::{.remark title="What Zorn is for here"}
-Three existence statements, all proved the same way: every nonzero ring has a maximal ideal, every proper ideal is contained in a maximal one, and every vector space has a basis.
-The pattern is a chain argument on a poset of partial objects, and the only step with content is that the union of a chain is an upper bound.
-
+::: {.remark title="Existence statements proved by Zorn's lemma"}
+Every nonzero ring has a maximal ideal, every proper ideal is contained in a maximal ideal, and every vector space has a basis.
+Each proof applies Zorn's lemma to a poset of partial objects ordered by inclusion -- proper ideals containing a given ideal, or linearly independent subsets -- in which the union of a chain is again an element of the poset and is an upper bound for the chain.
 :::
 
-## Nakayama
+## Nakayama's lemma
 
-Nakayama is the local test for whether a finite set really generates.  Over a local
-ring $(R,\mathfrak m)$ and for $M$ finitely generated, the extreme form is
-$\mathfrak mM=M\Rightarrow M=0$; equivalently, generators of the vector space
-$M/\mathfrak mM$ lift to generators of $M$.  This is why reduction modulo the maximal
-ideal detects finite generation phenomena and why the lemma appears in geometric
-statements about fibers and differentials.
+Let $(R,\mfm)$ be a [[D-TGB4R|local ring]] and $M$ a finitely generated $R$-module.
+If $\mfm M=M$, then $M=0$.
+Equivalently, elements $m_1,\ldots,m_n\in M$ generate $M$ if and only if their images span the $R/\mfm$-vector space $M/\mfm M$.
 
 [[FF-NREXC]]
 
@@ -54,11 +50,14 @@ statements about fibers and differentials.
 
 ## Noetherian rings and Krull dimension
 
-Noetherianity is the finiteness condition that makes ideal-theoretic induction work:
-ascending chains stabilize and every ideal is finitely generated.  The results below
-control what happens to powers and chains of ideals—Krull's principal-ideal and
-intersection theorems, together with Artin--Rees—and are the standard tools for turning
-that finiteness into dimension and separation statements.
+A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes, equivalently if every ideal is finitely generated.
+Let $R$ be a Noetherian ring and $I\subseteq R$ an ideal.
+
+- By Krull's principal ideal theorem, a prime ideal minimal over a principal ideal has height at most $1$.
+
+- By the Artin--Rees lemma, for a finitely generated $R$-module $M$ and a submodule $N\subseteq M$ there is $c\geq 0$ with $I^nM\intersect N = I^{n-c}(I^cM\intersect N)$ for all $n\geq c$.
+
+- By Krull's intersection theorem, if $R$ is local and $I$ is proper, then $\Intersect_{n\geq 1}I^nM=0$ for every finitely generated $R$-module $M$.
 
 [[FF-ESIOA]]
 
@@ -70,11 +69,7 @@ that finiteness into dimension and separation statements.
 
 ## Integral extensions
 
-Integral extensions preserve enough prime-ideal structure to compare spectra.  The
-going-up theorem is the chain-lifting statement: once a prime upstairs lies over the
-bottom of a chain downstairs, the rest of the chain can be lifted through the integral
-extension.  This is the prime-ideal analogue of the algebraicity constraints familiar
-from field extensions.
+For an integral extension of rings $A\subseteq B$, every prime of $A$ is the contraction of a prime of $B$, and by the going-up theorem a chain of primes $\mfp_1\subseteq\cdots\subseteq\mfp_n$ of $A$ together with a prime $\mathfrak q_1$ of $B$ satisfying $\mathfrak q_1\intersect A=\mfp_1$ extends to a chain $\mathfrak q_1\subseteq\cdots\subseteq\mathfrak q_n$ of primes of $B$ with $\mathfrak q_i\intersect A=\mfp_i$.
 
 [[FF-IBDAT]]
 
@@ -82,40 +77,31 @@ from field extensions.
 
 [[D-OXIVT]]
 
-Use the [Stacks Project localization section](https://stacks.math.columbia.edu/tag/00CM)
-for the canonical construction and universal property.
+For a submonoid $S\leq (R,\cdot)$, write $S^{-1}R$ for the localization of $R$ at $S$; its construction and universal property are in the [Stacks Project, Tag 00CM](https://stacks.math.columbia.edu/tag/00CM).
 
-For a submonoid $S\leq (R,\cdot)$, write $S^{-1}R$ for the localization of $R$
-obtained by inverting the image of $S$.
-
-:::{.warnings}
+::: {.warnings}
 The canonical map
-\[
+$$
+\begin{aligned}
 R &\to R\localize{S} \\
 x &\mapsto {x\over 1}
-\]
-need not be injective.
-
+\end{aligned}
+$$
+need not be injective: its kernel is $\ts{x\in R \st sx=0 \text{ for some } s\in S}$.
 :::
 
-:::{.remark}
+::: {.remark}
 For an integral domain $R$,
-\[
-\ff(R) \cong R\localize{ (R\nonzero) }
-.\]
-
+$$
+\ff(R) \cong R\localize{ (R\nonzero) }.
+$$
 :::
+
+## Hilbert's basis theorem and primary ideals
 
 [[T-YYLPH]]
 
 [[D-JGYK4]]
 
-Hilbert's basis theorem is the permanence result to remember: adjoining finitely many
-polynomial variables to a Noetherian ring keeps it Noetherian.  Primary ideals refine
-prime ideals by allowing nilpotence in the quotient, and are the language in which
-Noetherian ideals are decomposed when a problem asks for more than their radical.
-
-:::{.fact}
-The division algorithm for Euclidean domains.
-
-:::
+If $R$ is Noetherian, then so is $R[x_1,\ldots,x_n]$, by Hilbert's basis theorem and induction on $n$.
+An ideal $\mathfrak q\subsetneq R$ is [[D-JGYK4|primary]] if every zero divisor of $R/\mathfrak q$ is nilpotent; every prime ideal is primary, and by the Lasker--Noether theorem every ideal of a Noetherian ring is a finite intersection of primary ideals.

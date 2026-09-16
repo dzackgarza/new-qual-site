@@ -9,14 +9,13 @@ topics:
 
 # Domains and factorization
 
-Where the tower on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]] comes from.
+The implications among the classes of rings, with a ring separating each class from the next, are on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]].
 
 ## Elements
 
-Factorization starts with divisibility modulo units.
-Associates differ by a unit and therefore represent the same factor for uniqueness questions.
-An irreducible element cannot be factored nontrivially; a prime element has the stronger divisibility property $p\mid ab\Rightarrow p\mid a$ or $p\mid b$.
-Keeping those two notions distinct is the point of most counterexamples in this section.
+Let $R$ be an integral domain.
+Elements $a,b\in R$ are [[D-R4H6F|associates]] if $a=ub$ for a [[D-QQIQZ|unit]] $u$, so factorizations are compared up to units and associates.
+A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $b$ is a unit, and [[D-AWSKI|prime]] if $p\divides ab$ implies $p\divides a$ or $p\divides b$.
 
 [[D-AVBIP]]
 
@@ -32,16 +31,16 @@ Keeping those two notions distinct is the point of most counterexamples in this 
 
 [[D-R4H6F]]
 
-::: {.remark title="Prime against irreducible"}
-Prime always implies irreducible in a domain; the converse needs a UFD, and its failure is exactly what $\ZZ[\sqrt{-5}]$ exhibits.
-A problem that asks you to distinguish the two is asking whether the ring is a UFD.
+::: {.remark title="Prime and irreducible elements"}
+In an integral domain every prime element is irreducible.
+In a [[D-INULL|unique factorization domain]] every irreducible element is prime.
+In $\ZZ[\sqrt{-5}]$ the element $3$ is irreducible and not prime, since $3$ divides $9=(2+\sqrt{-5})(2-\sqrt{-5})$ and divides neither factor.
 :::
 
-## Types of ring
+## Classes of rings
 
-The first divide is whether zero divisors exist.
-An integral domain has none, while a field goes further and makes every nonzero element a unit.
-These hypotheses determine which cancellation and factorization arguments are legal before any stronger finiteness condition is invoked.
+A commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it has no nonzero [[D-4I3SL|zero divisors]], equivalently if $ab=ac$ and $a\neq0$ imply $b=c$.
+It is a [[D-UI6CU|field]] if every nonzero element is a unit.
 
 [[D-7O2CH]]
 
@@ -59,15 +58,14 @@ These hypotheses determine which cancellation and factorization arguments are le
 
 [[E-HOJKE]]
 
-### The big ones
+### Euclidean domains, principal ideal domains, and unique factorization domains
 
-For integral domains, remember the implication chain
-\[
-\text{Euclidean domain}\Longrightarrow\text{PID}\Longrightarrow\text{UFD}
-\Longrightarrow\text{integral domain}.
-\]
-A Euclidean function gives an algorithm for gcds, every ideal being principal turns ideal generation into element divisibility, and unique factorization is exactly the stage at which irreducible elements become prime.
-None of the reverse implications is automatic, so examples separating adjacent classes are part of the standard toolkit.
+For integral domains,
+$$
+\text{Euclidean domain}\implies\text{PID}\implies\text{UFD}\implies\text{integral domain},
+$$
+and none of these implications reverses.
+In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest common divisors; in a [[D-HTIL5|principal ideal domain]] $\gens{a,b}=\gens{d}$ for a greatest common divisor $d$ of $a$ and $b$; and in a [[D-INULL|unique factorization domain]] every nonzero nonunit is a product of irreducible elements, unique up to order and associates.
 
 [[D-D7VK2]]
 
@@ -83,13 +81,19 @@ None of the reverse implications is automatic, so examples separating adjacent c
 
 [[FD-GXXBV]]
 
-### Others
+### Other classes of rings
 
-The remaining adjectives answer different structural questions and should not be read as further steps in the chain above.
-Noetherian means ascending chains of ideals stop; reduced means nilpotents vanish; local means there is a unique maximal ideal.
-Valuation rings and DVRs organize divisibility locally, while Dedekind domains replace global element factorization by unique factorization of nonzero ideals.
-Regularity is a local dimension/generator condition.
-In a problem, identify which of these properties is actually being used rather than trying to place the ring on one master ladder.
+- A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes.
+
+- A ring is [[D-PQHHJ|reduced]] if its only nilpotent element is $0$.
+
+- A ring is [[D-TGB4R|local]] if it has a unique maximal ideal.
+
+- A [[D-HWLVG|valuation ring]] is an integral domain $R$ with fraction field $K$ such that $x\in R$ or $x\inv\in R$ for every $x\in K^\times$; a [[D-VK2KZ|discrete valuation ring]] is a valuation ring whose valuation has value group $\ZZ$.
+
+- In a [[D-WUGPG|Dedekind domain]] every nonzero proper ideal is a product of prime ideals, uniquely up to order.
+
+- A Noetherian local ring $(R,\mfm)$ is [[D-JSZ77|regular]] if $\dim_{R/\mfm}\mfm/\mfm^2=\dim R$.
 
 [[D-TZXBO]]
 
@@ -119,9 +123,9 @@ In a problem, identify which of these properties is actually being used rather t
 
 ## Structure theorems
 
-There is a second use of the word "simple" here, now for modules.
-Semisimplicity means decomposition as a direct sum of simples, and Artin--Wedderburn classifies semisimple rings by matrix blocks over division rings.
-This is structural decomposition rather than element factorization; it is included here because ring hypotheses are often translated immediately into statements about their module categories.
+An $R$-module is [[D-4KM4P|simple]] if it is nonzero and has no submodules other than $0$ and itself, and [[D-CYAJI|semisimple]] if it is a direct sum of simple modules.
+By the Artin--Wedderburn theorem, a ring that is semisimple as a left module over itself is isomorphic to a finite product $\prod_i M_{n_i}(D_i)$ of matrix rings over division rings $D_i$.
+By Wedderburn's little theorem, every finite division ring is a field.
 
 [[D-4KM4P]]
 

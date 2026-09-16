@@ -4,11 +4,10 @@ topics:
 - Number Theory
 ---
 
-# Number Theory
+# Number theory
 
-Two number-theoretic tools recur in the algebra problems for different reasons.
-The field norm turns multiplicative information in a number field into integer arithmetic: on the ring of integers it detects units by norm \(\pm1\) and sends divisibility to divisibility.
-Euler's totient instead measures the unit group of \(\ZZ/n\ZZ\); Euler's theorem is just the finite-group order statement for an element of that unit group, with Fermat's little theorem as the prime-modulus case.
+For a number field $K$ with ring of integers $\OO_K$, the norm $N_{K/\QQ}$ is multiplicative, an element of $\OO_K$ is a unit if and only if its norm is $\pm1$, and $a\divides b$ in $\OO_K$ implies $N_{K/\QQ}(a)\divides N_{K/\QQ}(b)$ in $\ZZ$.
+The unit group $(\ZZ/n)^\times$ has order $\phi(n)$, where $\phi$ is [[D-JX3YC|Euler's totient function]]; Euler's theorem $a^{\phi(n)}\equiv 1\pmod n$ for $\gcd(a,n)=1$ is Lagrange's theorem applied to the class of $a$ in $(\ZZ/n)^\times$, and Fermat's little theorem is the case $n=p$ prime.
 
 ## Norms in number fields
 
