@@ -21,5 +21,5 @@ Then $G$ has an element of order $p$, and hence a subgroup of order $p$.
 
 ::: {.remark}
 Cauchy's theorem is a partial converse to Lagrange's theorem.
-[[T-4RADG|Sylow's first theorem]] strengthens it: if $p^a$ is the largest power of $p$ dividing $\abs G$, then $G$ has a subgroup of order $p^a$.
+[[T-WRMBM|Sylow's first theorem]] strengthens it: if $p^a$ is the largest power of $p$ dividing $\abs G$, then $G$ has a subgroup of order $p^a$.
 :::
