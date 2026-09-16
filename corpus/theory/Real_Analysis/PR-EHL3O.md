@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-EHL3O
 kind: proposition
-title: Uniformly continuous $L^1$ functions vanish at infinity.
+title: Uniformly continuous $L^1$ functions vanish at infinity
 classification:
   areas:
   - real-analysis
@@ -17,5 +17,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to\infty}\to 0$.
+Let $f\colon\RR^n\to\CC$ be [[D-HHVPT|uniformly continuous]] with $f\in L^1(\RR^n)$.
+Then $f(x) \to 0$ as $\abs{x}\to\infty$.
 :::
