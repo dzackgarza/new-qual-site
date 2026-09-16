@@ -19,7 +19,3 @@ $$
 $$
 with equality if and only if $a=b$.
 :::
-
-::: {.proof}
-$\frac{a+b}{2}-\sqrt{ab}=\frac12\big(\sqrt a-\sqrt b\big)^2\geq0$, with equality exactly when $\sqrt a=\sqrt b$.
-:::
