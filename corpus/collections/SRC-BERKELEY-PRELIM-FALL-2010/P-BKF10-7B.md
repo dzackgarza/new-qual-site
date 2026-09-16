@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-7B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 7B
+title: The derivative bound $\lvert f'(0)\rvert\le1$ in Schwarz's lemma
 classification:
   areas: [prelim]
   topics: []

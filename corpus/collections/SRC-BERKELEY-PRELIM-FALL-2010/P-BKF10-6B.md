@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-6B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 6B
+title: Groups of order $30$ are not simple
 classification:
   areas: [prelim]
   topics: []

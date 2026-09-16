@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-1B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 1B
+title: Proper continuous functions $\mathbb R^2\to\mathbb R$ attain a minimum or a maximum
 classification:
   areas: [prelim]
   topics: []

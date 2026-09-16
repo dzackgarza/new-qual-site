@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-4B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 4B
+title: Determinant of the $6\times6$ matrix $(j^k)$
 classification:
   areas: [prelim]
   topics: []

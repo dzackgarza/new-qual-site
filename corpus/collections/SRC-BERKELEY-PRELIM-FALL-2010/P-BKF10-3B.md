@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-3B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 3B
+title: Conformal map from the unit disk onto the sector $0<\arg z<\pi/4$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-2A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 2A
+title: Every finite ring satisfies an identity $x^m=x^n$ with $m>n$
 classification:
   areas: [prelim]
   topics: []

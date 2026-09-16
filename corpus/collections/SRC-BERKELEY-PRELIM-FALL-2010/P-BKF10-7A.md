@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-7A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 7A
+title: Evaluation of $\int_{-\infty}^{\infty}\sin x/(x^2+4x+5)\,dx$ by residues
 classification:
   areas: [prelim]
   topics: []

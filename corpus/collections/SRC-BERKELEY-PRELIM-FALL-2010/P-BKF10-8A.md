@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-8A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 8A
+title: Positive semidefinite quadratic forms are sums of squares of linear forms
 classification:
   areas: [prelim]
   topics: []

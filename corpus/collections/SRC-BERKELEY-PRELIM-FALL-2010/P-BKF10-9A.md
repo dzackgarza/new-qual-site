@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-9A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 9A
+title: Nonuniqueness of solutions of $y'=y^{2/3}$, $y(0)=1$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-6A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 6A
+title: Distributivity of $\gcd$ over $\operatorname{lcm}$
 classification:
   areas: [prelim]
   topics: []

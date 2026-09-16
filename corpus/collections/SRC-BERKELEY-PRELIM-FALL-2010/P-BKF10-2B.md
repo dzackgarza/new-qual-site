@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-2B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 2B
+title: Galois group of $x^5-10x+5$ over $\mathbb Q$ is $S_5$
 classification:
   areas: [prelim]
   topics: []

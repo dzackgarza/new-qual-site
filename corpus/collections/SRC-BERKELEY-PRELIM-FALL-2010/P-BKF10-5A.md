@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-5A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 5A
+title: Uniform convergence of $\sum\sin(x/n^2)$ on bounded intervals
 classification:
   areas: [prelim]
   topics: []

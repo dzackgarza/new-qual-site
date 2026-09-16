@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-1A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 1A
+title: Nested closed connected subsets of a compact metric space have connected nonempty intersection
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-5B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 5B
+title: $f(x)/x$ is increasing when $f(0)=0$ and $f'$ is increasing
 classification:
   areas: [prelim]
   topics: []

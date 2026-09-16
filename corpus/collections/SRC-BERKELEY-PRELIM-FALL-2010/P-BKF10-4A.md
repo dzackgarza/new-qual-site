@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-4A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 4A
+title: Hermitian matrices have real eigenvalues
 classification:
   areas: [prelim]
   topics: []

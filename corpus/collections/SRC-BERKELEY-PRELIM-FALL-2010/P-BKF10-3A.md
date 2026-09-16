@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-3A
 kind: problem
-title: Berkeley Fall 2010 prelim problem 3A
+title: Bounded isolated singularities are removable
 classification:
   areas: [prelim]
   topics: []

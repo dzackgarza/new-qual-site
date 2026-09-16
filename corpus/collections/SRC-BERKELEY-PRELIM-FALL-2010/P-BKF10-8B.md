@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF10-8B
 kind: problem
-title: Berkeley Fall 2010 prelim problem 8B
+title: Existence of monic orthogonal polynomials for a positive weight on $[a,b]$
 classification:
   areas: [prelim]
   topics: []
