@@ -8,10 +8,10 @@ topics:
 
 # Modules
 
-- [[algebra/modules/classify-this-module|Classify this module]], which question the ring allows you to ask.
+- [[algebra/modules/classify-this-module|Classify this module]] -- the structure theorem computation over a PID, and free, projective, flat, and torsion-free modules over other rings.
 
-- [[algebra/modules/over-a-pid|Modules over a PID]], the structure theorem and its consequences.
+- [[algebra/modules/over-a-pid|Modules over a PID]] -- the structure theorem and its consequences.
 
-- [[algebra/modules/free-and-projective|Free and projective modules]], the properties that separate once the ring is worse.
+- [[algebra/modules/free-and-projective|Free and projective modules]] -- rank, torsion, and projective modules.
 
-- [[algebra/modules/exact-sequences|Exact sequences and tensor products]], splitting and right exactness.
+- [[algebra/modules/exact-sequences|Exact sequences and tensor products]] -- split exact sequences and right exactness.

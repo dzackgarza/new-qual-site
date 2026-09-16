@@ -17,22 +17,25 @@ topics:
 
 [[PR-OODAV]]
 
-::: {.remark title="Why splitting is the question"}
-A short exact sequence $0\to A\to B\to C\to 0$ always says $B$ is built from $A$ and $C$; it says $B \cong A\oplus C$ only when it splits.
-Two sufficient conditions do nearly all the work on an exam: $C$ projective, and a retraction of the first map.
-Free implies projective, so a sequence ending in a free module always splits, which is the step used to peel the free part off a module over a PID.
+::: {.remark title="Sufficient conditions for splitting"}
+A short [[D-BJYH3|exact sequence]] $0\to A\xrightarrow{f} B\xrightarrow{g} C\to 0$ of $R$-modules splits, and then $B \cong A\oplus C$, if $C$ is projective or if $A$ is injective.
+Every free module is projective, so the sequence splits when $C$ is free.
+Over a PID, applied to $0\to M_t\to M\to M/M_t\to 0$ with $M/M_t$ free, this splits off the free part of a finitely generated module $M$.
 :::
 
 ## Tensor products
 
-::: {.example title="Computing tensor products"}
-$\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$.
-
-The general principle: $\ZZ/m \tensor_\ZZ \ZZ/n \cong \ZZ/\gcd(m,n)$, so coprime orders kill the tensor product entirely.
-The computation is a right-exactness argument: tensoring the presentation $\ZZ \xrightarrow{n} \ZZ \to \ZZ/n \to 0$ with $\ZZ/m$ gives $\ZZ/m \xrightarrow{n} \ZZ/m \to \ZZ/n\tensor \ZZ/m \to 0$, and multiplication by $n$ on $\ZZ/m$ is surjective when $\gcd(m,n)=1$.
+::: {.proposition}
+For positive integers $m$ and $n$, $\ZZ/m \tensor_\ZZ \ZZ/n \cong \ZZ/\gcd(m,n)$.
+In particular $\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$.
 :::
 
-::: {.remark title="Right exact, not exact"}
-Tensoring preserves cokernels and not kernels: $-\tensor M$ is right exact for every $M$, and exact exactly when $M$ is flat.
-The failure is measured by $\Tor$, and the standard example is $\ZZ \xrightarrow{2} \ZZ$ tensored with $\ZZ/2$, which is the zero map rather than injective.
+::: {.proof}
+Tensoring the exact sequence $\ZZ \xrightarrow{n} \ZZ \to \ZZ/n \to 0$ with $\ZZ/m$ gives, by right exactness, the exact sequence $\ZZ/m \xrightarrow{n} \ZZ/m \to \ZZ/n\tensor_\ZZ \ZZ/m \to 0$.
+Hence $\ZZ/n\tensor_\ZZ\ZZ/m \cong (\ZZ/m)/n(\ZZ/m) \cong \ZZ/\gcd(m,n)$.
+:::
+
+::: {.remark title="Right exactness"}
+For every $R$-module $M$, the functor $-\tensor_R M$ is right exact, and it is exact if and only if $M$ is flat.
+Multiplication by $2$ on $\ZZ$ is injective, and tensored with $\ZZ/2$ it is the zero map on $\ZZ/2$, which is not injective; the kernel is $\Tor_1^\ZZ(\ZZ/2,\ZZ/2)\cong\ZZ/2$.
 :::

@@ -8,15 +8,10 @@ topics:
 
 # Free and projective modules
 
-The properties that separate once the ring is not a PID.
-
 ## Free modules, rank, and torsion
 
-A free module is one with a basis, so after choosing that basis it is a direct sum of
-copies of the ring.  Rank counts those copies.  Over a domain, freeness forces
-torsion-freeness because a nonzero scalar cannot kill a nonzero coordinate vector; the
-torsion submodule and annihilator record exactly where that cancellation fails for a
-general module.
+An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomorphic to $\bigoplus_{i\in I}R$ for some set $I$; over a commutative ring $R\neq0$ the cardinality of $I$ is its [[D-IGB7I|rank]].
+Over an integral domain, a free module is [[D-ZJJ7G|torsion-free]]: if $r\neq0$ and $x=\sum_i c_ie_i\neq0$ in a basis $(e_i)$, then $rx=\sum_i rc_ie_i\neq0$.
 
 [[D-LIEMF]]
 
@@ -38,11 +33,9 @@ general module.
 
 ## Projective modules
 
-Projective modules retain the splitting property of free modules without requiring a
-basis.  Equivalently, they are direct summands of free modules, which is why every free
-module is projective and why projectivity is the right hypothesis for splitting short
-exact sequences.  Over a PID, finitely generated torsion-free modules are free, so the
-distinctions below collapse; over a general ring they do not.
+An $R$-module is [[D-RHJMK|projective]] if and only if it is a direct summand of a free module.
+Every free module is projective, and every short exact sequence $0\to A\to B\to P\to0$ with $P$ projective splits.
+Over a PID, a finitely generated torsion-free module is free, so finitely generated projective and free modules coincide.
 
 [[D-RHJMK]]
 
@@ -50,12 +43,11 @@ distinctions below collapse; over a general ring they do not.
 
 [[PR-RPL4Q]]
 
-:::{.remark title="The hierarchy"}
-For finitely generated modules over an integral domain,
-\[
-\text{free} \implies \text{projective} \implies \text{flat} \implies \text{torsion-free}
-,\]
-with no arrow reversing in general and all four coinciding over a PID.
-Which arrow a problem is asking about is usually decided by the ring, so read the ring first.
-
+::: {.remark title="Free, projective, flat, torsion-free"}
+For modules over an integral domain,
+$$
+\text{free} \implies \text{projective} \implies \text{flat} \implies \text{torsion-free},
+$$
+no implication reverses in general, and for finitely generated modules over a PID all four conditions coincide.
+Examples separating them are on [[algebra/modules/classify-this-module|Classify this module]].
 :::
