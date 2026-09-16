@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA21
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 21'
+title: $\int_0^\infty \frac{x^p}{x^2+1}\,dx$ for $0<p<1$ by a keyhole contour
 classification:
   areas: [complex-analysis]
   topics: []

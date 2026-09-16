@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA14
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 14'
+title: Fourier transform of $1/(x^2+m^2)$ by residues
 classification:
   areas: [complex-analysis]
   topics: []

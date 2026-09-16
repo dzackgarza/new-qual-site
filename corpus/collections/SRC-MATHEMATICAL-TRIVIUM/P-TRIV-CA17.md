@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA17
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 17'
+title: $\int_{-\infty}^\infty \frac{x^2}{x^4-2x^2\cos 2\theta+1}\,dx$ by residues
 classification:
   areas: [complex-analysis]
   topics: []

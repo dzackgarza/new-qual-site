@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA25
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 25'
+title: Matsubara sums giving the Bose and Fermi distributions
 classification:
   areas: [complex-analysis]
   topics: []

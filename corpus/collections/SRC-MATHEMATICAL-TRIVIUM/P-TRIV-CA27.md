@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA27
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 27'
+title: Large-$x$ asymptotics of the modified Bessel function $K_\nu$
 classification:
   areas: [complex-analysis]
   topics: []

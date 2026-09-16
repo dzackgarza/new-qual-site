@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA02
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 2'
+title: Cartesian forms of $e^{i\theta}$, $3e^{i\pi/4}$, $\frac12 e^{i\pi}$, $2e^{2i\pi/3}$ and $e^{-3i\pi/4}$
 classification:
   areas: [complex-analysis]
   topics: []

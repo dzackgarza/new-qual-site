@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA24
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 24'
+title: $\int_0^\infty \frac{\log^2 x}{1+x^2}\,dx$ by contour integration
 classification:
   areas: [complex-analysis]
   topics: []

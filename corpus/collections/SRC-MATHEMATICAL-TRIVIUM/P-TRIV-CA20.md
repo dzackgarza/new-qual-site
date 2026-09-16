@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA20
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 20'
+title: $\int_0^\infty \frac{dx}{(x+i)\sqrt x}$ by a keyhole contour
 classification:
   areas: [complex-analysis]
   topics: []

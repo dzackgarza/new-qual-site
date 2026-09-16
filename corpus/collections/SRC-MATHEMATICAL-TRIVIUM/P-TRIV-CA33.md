@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA33
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 33'
+title: Poles and residues of the Gamma function at nonpositive integers
 classification:
   areas: [complex-analysis]
   topics: []

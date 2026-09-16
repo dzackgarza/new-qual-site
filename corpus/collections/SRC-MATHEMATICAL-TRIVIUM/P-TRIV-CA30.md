@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA30
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 30'
+title: Stirling asymptotics of $\binom{2N}{N}$ and $\log\binom{N}{m}$
 classification:
   areas: [complex-analysis]
   topics: []

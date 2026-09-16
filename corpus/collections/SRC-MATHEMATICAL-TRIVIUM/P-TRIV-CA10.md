@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA10
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 10'
+title: Image of a disk under the principal branch of $\log z$
 classification:
   areas: [complex-analysis]
   topics: []

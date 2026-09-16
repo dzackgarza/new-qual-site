@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA19
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 19'
+title: $\int_0^\pi \cos^{2n}\theta\,d\theta$
 classification:
   areas: [complex-analysis]
   topics: []

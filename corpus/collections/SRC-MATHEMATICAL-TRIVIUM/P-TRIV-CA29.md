@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA29
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 29'
+title: Stirling's approximation from the Gamma integral
 classification:
   areas: [complex-analysis]
   topics: []

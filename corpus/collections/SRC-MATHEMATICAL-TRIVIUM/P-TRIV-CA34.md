@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA34
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 34'
+title: $\int_0^\infty \frac{dx}{1+x^\alpha}$ by contour integration of $\frac{\log z}{1+z^\alpha}$
 classification:
   areas: [complex-analysis]
   topics: []

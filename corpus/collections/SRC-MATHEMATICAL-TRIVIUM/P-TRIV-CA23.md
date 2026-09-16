@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA23
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 23'
+title: $\int_0^\infty \frac{\log x}{1+x^\alpha}\,dx$ by a wedge contour
 classification:
   areas: [complex-analysis]
   topics: []

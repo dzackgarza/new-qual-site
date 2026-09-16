@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA31
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 31'
+title: Analytic continuation of $\int_0^\infty t e^{-zt}\,dt$
 classification:
   areas: [complex-analysis]
   topics: []

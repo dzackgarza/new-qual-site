@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA15
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 15'
+title: $\int_{-\infty}^\infty \frac{e^{i\alpha x}}{(3-ix)(1+ix)}\,dx$ by residues
 classification:
   areas: [complex-analysis]
   topics: []

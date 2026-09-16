@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA09
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 9'
+title: Conformal map from the unit disk onto the left half-plane
 classification:
   areas: [complex-analysis]
   topics: []

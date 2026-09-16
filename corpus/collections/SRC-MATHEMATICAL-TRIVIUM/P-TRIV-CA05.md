@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA05
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 5'
+title: Laurent series of $1/(z-3)^3$ about $z=i$
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA28
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 28'
+title: Large-$x$ asymptotics of the Hankel function $H^{(1)}_\nu$
 classification:
   areas: [complex-analysis]
   topics: []

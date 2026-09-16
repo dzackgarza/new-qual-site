@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA26
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 26'
+title: Saddle-point asymptotics of $\int_{-\infty}^\infty \frac{e^{-t(z^2-1/4)}\cos tz}{1+z^2}\,dz$
 classification:
   areas: [complex-analysis]
   topics: []

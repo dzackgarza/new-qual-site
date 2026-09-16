@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA07
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 7'
+title: Laurent series of $\sin\frac{z}{1-z}$ about $z=1$
 classification:
   areas: [complex-analysis]
   topics: []

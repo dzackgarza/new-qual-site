@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA13
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 13'
+title: $\int_{-\infty}^\infty \frac{dx}{1+x^6}$ by residues
 classification:
   areas: [complex-analysis]
   topics: []

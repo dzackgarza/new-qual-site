@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA22
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 22'
+title: $\int_0^1 (x^2-x^3)^{-1/3}\,dx$ by a dogbone contour
 classification:
   areas: [complex-analysis]
   topics: []

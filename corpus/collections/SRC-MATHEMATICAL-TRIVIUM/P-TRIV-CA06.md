@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA06
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 6'
+title: Laurent series of $z/((z+1)(z-1))$ about $z=1$
 classification:
   areas: [complex-analysis]
   topics: []

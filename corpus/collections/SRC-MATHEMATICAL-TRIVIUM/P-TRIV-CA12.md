@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA12
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 12'
+title: $\int_0^\infty \frac{dx}{1+x^2}$ by residues
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA18
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 18'
+title: $\int_0^{2\pi}\frac{d\theta}{1+a\cos\theta}$ for $|a|<1$
 classification:
   areas: [complex-analysis]
   topics: []

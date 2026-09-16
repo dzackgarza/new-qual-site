@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA11
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 11'
+title: Image of the sector $\operatorname{Re} z>\operatorname{Im} z>0$ under $e^{z^2}$
 classification:
   areas: [complex-analysis]
   topics: []

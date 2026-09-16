@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA04
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 4'
+title: Laurent series of $e^z/(z-1)^2$ about $z=1$
 classification:
   areas: [complex-analysis]
   topics: []

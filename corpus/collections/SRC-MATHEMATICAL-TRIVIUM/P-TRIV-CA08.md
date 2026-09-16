@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA08
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 8'
+title: Laurent series of $1/((z+1)(z+2))$ on its annuli of convergence
 classification:
   areas: [complex-analysis]
   topics: []

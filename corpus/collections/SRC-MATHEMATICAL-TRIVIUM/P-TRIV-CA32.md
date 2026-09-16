@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA32
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 32'
+title: Integral representation and functional equation of the Riemann zeta function
 classification:
   areas: [complex-analysis]
   topics: []

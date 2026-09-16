@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA03
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 3'
+title: Complex roots of $z^2+3z+12$, $z^4+5z^2+4$, $z^6=1$ and $z^3=-1$
 classification:
   areas: [complex-analysis]
   topics: []

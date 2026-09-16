@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-CA01
 kind: problem
-title: 'Mathematical Trivium — Complex Analysis problem 1'
+title: Polar forms of $3i$, $1-i$, $2+i$, $-4$, $2-i\sqrt3$ and $\frac{2-i}{1+4i}$
 classification:
   areas: [complex-analysis]
   topics: []
