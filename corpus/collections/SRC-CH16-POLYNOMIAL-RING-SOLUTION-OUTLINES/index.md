@@ -17,20 +17,34 @@ source:
   sections:
   - name: Chapter 16 exercises
     problems:
-    - P-CH16-1
-    - P-CH16-2
-    - P-CH16-4
-    - P-CH16-6
-    - P-CH16-10
-    - P-CH16-11
-    - P-CH16-15
-    - P-CH16-16
-    - P-CH16-17
-    - P-CH16-19
-    - P-CH16-20
-    - P-CH16-28
-    - P-CH16-50
-    - P-CH16-56
+    - id: P-CH16-1
+      comment: Exercise 1
+    - id: P-CH16-2
+      comment: Exercise 2
+    - id: P-CH16-4
+      comment: Exercise 4
+    - id: P-CH16-6
+      comment: Exercise 6
+    - id: P-CH16-10
+      comment: Exercise 10
+    - id: P-CH16-11
+      comment: Exercise 11
+    - id: P-CH16-15
+      comment: Exercise 15
+    - id: P-CH16-16
+      comment: Exercise 16
+    - id: P-CH16-17
+      comment: Exercise 17
+    - id: P-CH16-19
+      comment: Exercise 19
+    - id: P-CH16-20
+      comment: Exercise 20
+    - id: P-CH16-28
+      comment: Exercise 28
+    - id: P-CH16-50
+      comment: Exercise 50
+    - id: P-CH16-56
+      comment: Exercise 56
   date:
     kind: unknown
 ---
