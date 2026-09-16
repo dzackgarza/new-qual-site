@@ -39,9 +39,9 @@ Three pages collect material from several chapters:
 
 - [[complex-analysis/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
 
-- [[complex-analysis/counterexamples|Counterexamples]] -- filed by the hypothesis each one shows is load-bearing.
+- [[complex-analysis/counterexamples|Counterexamples]] -- functions showing that a theorem fails when one of its hypotheses is dropped, grouped by hypothesis.
 
-- [[complex-analysis/standard-integrals|Standard integrals]] -- the recurring ones, with their contours and estimates.
+- [[complex-analysis/standard-integrals|Standard integrals]] -- real integrals evaluated by residues, with their contours and arc estimates.
 
 [[complex-analysis/basics/index|Background and reference]] covers undergraduate analysis and standard series expansions; [[complex-analysis/appendices/index|Appendix notes]] holds supplementary proofs and special functions.
 
