@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ASW5L
 kind: proposition
-title: Principal Ideals are Free
+title: An ideal of an integral domain is free if and only if it is principal
 classification:
   areas:
   - algebra
@@ -15,8 +15,11 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $R$ be an integral domain.
-If $I \normal R$ is an ideal of $R$, then $I$ is a free $R\dash$module iff $I$ is a principal ideal.
+Let $R$ be an [[D-QJ3QL|integral domain]] and $I \subseteq R$ an ideal.
+Then $I$ is a [[D-LIEMF|free]] $R$-module if and only if $I$ is a [[D-D7VK2|principal]] ideal.
+:::
 
-The hypothesis that $R$ is a domain is needed: $\gens{2} \normal \ZZ/6\ZZ$ is principal but not free, since $3\cdot 2 = 0$.
+::: {.example}
+Over a ring with zero divisors, a principal ideal need not be free.
+In $\ZZ/6\ZZ$, the principal ideal $\gens{2}$ is not a free $\ZZ/6\ZZ$-module, since $3 \cdot 2 = 0$ with $3 \neq 0$, whereas a nonzero element of a basis of a free module has zero annihilator.
 :::
