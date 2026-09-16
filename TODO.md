@@ -36,7 +36,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 
 8. `complaints-clearance`
 
-- **`policy-consolidation`**. **Needs:** none.
+- **`policy-consolidation`**. **Closed 2026-09-16.** `20020d3ab` and `94ef2330e`: `CONTRIBUTING.md` is the single catalogue with `STYLE-*` drift conventions; `REVIEW_POLICY.md`, `HANDOFF.md` and `TEXTBOOK_SOURCES.md` are deleted. **Needs:** none.
   Every named policy code lives in one catalogue, [CONTRIBUTING.md](CONTRIBUTING.md): the `QUAL-*` table, the copy, structure and presentation policies, and the review-crawl defect patterns now in `REVIEW_POLICY.md`, which is folded in and deleted, with the crawler workflow and every reference repointed.
   The catalogue governs presentation — wiki structure, exposition style, level of detail and rigour, uniform presentation, completeness, and linking every named term to its definition — not mathematical conventions, which come from the textbooks and notes the content is drawn from.
   Where the corpus shows stylistic drift, the catalogue fixes one convention; defined terms are written `\dfn{term}`. Rules imported from another project's guide that do not govern this corpus are removed, and `AGENTS.md` carries no rule or imported guidance that duplicates or contradicts the catalogue.
