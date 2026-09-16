@@ -29,54 +29,57 @@ audit:
 
 ::: {.problem}
 Let
-\[
-\omega(\alpha)=m\{x\in\mathbb R^n:|f(x)|>\alpha\},\qquad \alpha>0,
-\]
-be the distribution function of $f\in L^p(\mathbb R^n)$, where $p>0$.
+$$
+\omega(\alpha)=m\{x\in\RR^n:\abs{f(x)}>\alpha\},\qquad \alpha>0,
+$$
+be the distribution function of $f\in L^p(\RR^n)$, where $p>0$.
 Does $\alpha^p\omega(\alpha)$ tend to a limit as $\alpha\to0^+$? Give a proof or counterexample.
 :::
 
 ::: {.solution}
-Yes. The limit exists and equals $0$.
-
 <1>1. Use the layer-cake identity.
 ::: {.proof}
-For the nonnegative function $|f|^p$,
-\[
-\|f\|_p^p
+For the nonnegative function $\abs{f}^p$,
+$$
+\norm{f}_p^p
 =p\int_0^\infty \alpha^{p-1}\omega(\alpha)\,d\alpha<\infty.
-\]
+$$
 Thus
-\[
+$$
 \int_0^a \alpha^{p-1}\omega(\alpha)\,d\alpha\longrightarrow0
 \qquad(a\downarrow0).
-\]
+$$
 :::
 
-<1>2. Bound $\alpha^p\omega(\alpha)$ by a shrinking tail of that integral.
+<1>2. The limit is
+$$
+\boxed{\lim_{\alpha\to0^+}\alpha^p\omega(\alpha)=0}.
+$$
 ::: {.proof}
 The distribution function $\omega$ is decreasing. Hence for $t\in[\alpha/2,\alpha]$,
-\[
+$$
 \omega(t)\ge\omega(\alpha).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \int_{\alpha/2}^{\alpha}t^{p-1}\omega(t)\,dt
 &\ge \omega(\alpha)\int_{\alpha/2}^{\alpha}t^{p-1}\,dt\\
 &=\frac{1-2^{-p}}p\,\alpha^p\omega(\alpha).
 \end{aligned}
-\]
+$$
 Consequently
-\[
+$$
 0\le \alpha^p\omega(\alpha)
 \le \frac{p}{1-2^{-p}}
 \int_0^\alpha t^{p-1}\omega(t)\,dt
 \longrightarrow0.
-\]
-Thus
-\[
-\boxed{\lim_{\alpha\to0^+}\alpha^p\omega(\alpha)=0.}
-\]
+$$
+The last limit follows from step <1>1.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 gives the requested limit.
 :::
 :::
