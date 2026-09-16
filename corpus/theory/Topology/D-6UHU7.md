@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-6UHU7
 kind: definition
-title: Deformation Retract
+title: Deformation retraction
 classification:
   areas:
   - topology
@@ -13,32 +13,20 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_{A}$) *that also satisfies* $\iota \circ r \homotopic \id_{X}$.
-
-> Note that this is equality in one direction, but only homotopy equivalence in the other.
-
-Equivalently, a map $F:I\cross X\to X$ such that 
-\[
-F_{0}(x) &= \id_{X}
-F_{t}(x)\mid_{A} &= \id_{A}
-F_{1}(X) &= A
-.\]
-
-Alt:
-
-A **deformation retract** is a homotopy $H:X\cross I \into X$ from $\id_X$ to $\id_A$ where $\ro{H}{A} = \id_A$ fixes $A$ at all times.
+::: {.definition}
+Let $X$ be a topological space, $A\subseteq X$ a subspace, and $\iota\colon A\injects X$ the inclusion.
+A \dfn{deformation retraction} of $X$ onto $A$ is a [[D-SOVXO|homotopy]] $F\colon X\cross I\to X$, written $F_t \coloneqq F(\wait, t)$, such that for all $t\in I$:
 $$
-H: X\cross I \to X \\
-H(x, 0) = \id_X \\
-H(x, 1) = \id_A \\
-x\in A \implies H(x, t) \in A \quad \forall t
-$$
-
-:::{.remark}
-A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$. Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
-
-
+F_0 = \id_X, \qquad F_1(X) \subseteq A, \qquad F_t(a) = a \text{ for all } a\in A
+.$$
+The subspace $A$ is a \dfn{deformation retract} of $X$ if there exists a deformation retraction of $X$ onto $A$.
 :::
 
+::: {.remark}
+If $F$ is a deformation retraction of $X$ onto $A$, then $r\coloneqq F_1\colon X\to A$ is a [[D-NCLVD|retraction]], $r\circ\iota = \id_A$, and $F$ is a homotopy from $\id_X$ to $\iota\circ r$.
+Hence $\iota$ is a [[D-HFR32|homotopy equivalence]] with homotopy inverse $r$.
+:::
+
+::: {.remark}
+Two spaces $X$ and $Y$ are homotopy equivalent if and only if there exists a space $Z$ containing both $X$ and $Y$ as deformation retracts; for a homotopy equivalence $f\colon X\to Y$, the [[D-RMQ7W|mapping cylinder]] of $f$ is such a $Z$.
 :::
