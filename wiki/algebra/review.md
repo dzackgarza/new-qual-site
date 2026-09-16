@@ -5,8 +5,6 @@ order: 7
 
 # Review sheet
 
-Every statement the exam assumes, in the order the chapters develop them.
-
 ## Groups
 
 [[T-QMKXQ]]
@@ -29,7 +27,7 @@ Every statement the exam assumes, in the order the chapters develop them.
 
 [[T-OSJ5S]]
 
-Proved in [[algebra/groups/index|Groups]].
+Chapter: [[algebra/groups/index|Groups]].
 
 ## Group actions
 
@@ -57,7 +55,7 @@ Proved in [[algebra/groups/index|Groups]].
 
 [[PR-PADL7]]
 
-Proved in [[algebra/group-actions/index|Group actions]].
+Chapter: [[algebra/group-actions/index|Group actions]].
 
 ## Rings and ideals
 
@@ -75,7 +73,7 @@ Proved in [[algebra/group-actions/index|Group actions]].
 
 [[T-QSTRJ]]
 
-Proved in [[algebra/rings-and-ideals/index|Rings and ideals]].
+Chapter: [[algebra/rings-and-ideals/index|Rings and ideals]].
 
 ## Modules
 
@@ -89,7 +87,7 @@ Proved in [[algebra/rings-and-ideals/index|Rings and ideals]].
 
 [[PR-RPL4Q]]
 
-Proved in [[algebra/modules/index|Modules]].
+Chapter: [[algebra/modules/index|Modules]].
 
 ## Linear algebra
 
@@ -109,7 +107,7 @@ Proved in [[algebra/modules/index|Modules]].
 
 [[PR-GV5CF]]
 
-Proved in [[algebra/linear-algebra/index|Linear algebra]].
+Chapter: [[algebra/linear-algebra/index|Linear algebra]].
 
 ## Fields and Galois theory
 
@@ -137,7 +135,7 @@ Proved in [[algebra/linear-algebra/index|Linear algebra]].
 
 [[T-EN5H4]]
 
-Proved in [[algebra/fields/index|Fields]] and [[algebra/galois-theory/index|Galois theory]].
+Chapters: [[algebra/fields/index|Fields]] and [[algebra/galois-theory/index|Galois theory]].
 
 ## Representations
 
@@ -145,8 +143,8 @@ Proved in [[algebra/fields/index|Fields]] and [[algebra/galois-theory/index|Galo
 
 [[T-YHH3M]]
 
-Proved in [[algebra/representations/index|Representations]].
+Chapter: [[algebra/representations/index|Representations]].
 
-## What to check before using each one
+## Counterexamples
 
-The hypotheses that decide problems are collected on the recognition pages, and the examples showing each is necessary are on [[algebra/counterexamples|Counterexamples]].
+Counterexamples to converses and weakened forms of several of these statements are on [[algebra/counterexamples|Counterexamples]].
