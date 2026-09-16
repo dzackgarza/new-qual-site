@@ -9,36 +9,36 @@ topics:
 - Knot Theory
 ---
 
-# Surfaces and Manifolds
+# Surfaces and manifolds
 
-:::{.remark}
-The most common spaces appearing in this theory:
+::: {.example title="Standard surfaces"}
+\envlist
 
-- $\SS ^2$, 
-- $\TT^2 \definedas  S^1\cross S^1$, 
-- $\RP^2$
-- $\KK$ the Klein bottle
-- $\bbm$ the Möbius Strip
-- $\Sigma_n \definedas \#_{i=1}^n \TT^2$.
+- the sphere $\SS ^2$;
+- the torus $\TT^2 \coloneqq  S^1\cross S^1$;
+- the real projective plane $\RP^2$;
+- the Klein bottle $\KK$;
+- the Möbius band $\bbm$;
+- the closed orientable surface of genus $g$, $\Sigma_g \coloneqq \#_{i=1}^g \TT^2$.
 
-The first 4 can be obtained from the following pasting diagrams:
+The first four are quotients of a square by the edge identifications in the following pasting diagrams:
 
 ![Pasting Diagrams for Surfaces](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
 
 :::
 
-## Classification of Surfaces
+## Classification of surfaces
 
-### The Classification Theorem
-
-For a compact connected surface, first count its boundary components and decide
-orientability.  The classification theorem then reduces the surface to one of two
-normal forms: an orientable genus-$g$ surface with $b$ discs removed, or a
-nonorientable connected sum of $k$ projective planes with $b$ discs removed.  Polygon
-models are the concrete reduction procedure: cut to a polygon, simplify the edge word,
-and read off handles or crosscaps together with the unpaired boundary components.
+### The classification theorem
 
 [[T-NBARV]]
+
+::: {.remark}
+A compact connected surface is therefore determined up to homeomorphism by its orientability, its number $b$ of boundary components, and its Euler characteristic.
+A polygon model computes these: the edge word of a polygon with identifications reduces to a normal form $a_1b_1a_1\inv b_1\inv\cdots a_gb_ga_g\inv b_g\inv$ or $a_1a_1\cdots a_ka_k$, together with the unpaired boundary edges.
+For example, the torus and the annulus both have Euler characteristic $0$ and are not homeomorphic, since $b=0$ for the torus and $b=2$ for the annulus.
+
+:::
 
 [[FF-GBHJL]]
 
@@ -48,28 +48,22 @@ and read off handles or crosscaps together with the unpaired boundary components
 
 [[PR-ZW6XI]]
 
-For closed surfaces $b=0$, orientability and Euler characteristic determine the
-homeomorphism type.  With boundary present, $b$ is an additional invariant: for
-example, the torus and annulus both have Euler characteristic zero but are not
-homeomorphic.  This is why the classification step precedes the Euler-characteristic
-lookup below.
-
-### Euler Characteristic
-
-:::{.remark}
-For closed surfaces the Euler characteristic and orientability together decide the homeomorphism type, so most classification questions reduce to computing $\chi$ and then reading the table below.
-:::
+### Euler characteristic
 
 [[FF-IEHB2]] [[FF-CKGXX]]
 
 [[FF-W3AIU]]
 
-:::{.fact table="Table of surfaces possible for a given Euler characteristic"}
+::: {.fact title="Closed surfaces by Euler characteristic"}
+The closed orientable surface $\Sigma_g$ has $\chi = 2-2g$, and the closed nonorientable surface $N_k \coloneqq \#_{i=1}^k\RP^2$ has $\chi = 2-k$.
+Removing the interiors of $b$ disjoint discs lowers $\chi$ by $b$.
 
-| Orientable?  | $-4$       | $-3$        | $-2$       | $-1$        | $0$                  | $1$     | $2$         |
-| ------------ | ---        | ----        | ----       | ---         | ---                  | ---     | ---         |
-| Yes          | $\Sigma_3$ | $\emptyset$ | $\Sigma_2$ | $\emptyset$ | $\TT^2, S^1\cross I$ | $\DD^2$ | $\SS^2$     |
-| No           | ?          | ?           | ?          | ?           | $\KK, \bbm$          | $\RP^2$ | $\emptyset$ |
+| Orientable | $-4$       | $-3$        | $-2$       | $-1$        | $0$     | $1$     | $2$         |
+| ---------- | ---        | ----        | ----       | ---         | ---     | ---     | ---         |
+| Yes        | $\Sigma_3$ | none        | $\Sigma_2$ | none        | $\TT^2$ | none    | $\SS^2$     |
+| No         | $N_6$      | $N_5$       | $N_4$      | $N_3$       | $\KK$   | $\RP^2$ | none        |
+
+With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band $\bbm$, and $\chi=1$ includes the disc $\DD^2$.
 
 :::
 
@@ -81,23 +75,22 @@ For closed surfaces the Euler characteristic and orientability together decide t
 
 [[PR-QV4U5]]
 
-:::{.proof title="Inclusion-exclusion for $\chi$"}
-Assume $U,V,U\cap V,X$ have finitely generated homology, so that Euler characteristics are defined.
-Mayer–Vietoris is the long exact sequence
-\[
+::: {.proof title="Inclusion-exclusion for $\chi$"}
+Let $U,V\subseteq X$ be open with $X=U\cup V$, and assume $U$, $V$, $U\cap V$, and $X$ have finitely generated total homology, so that their Euler characteristics are defined.
+The Mayer--Vietoris sequence
+$$
 \cdots
 \to H_n(U\cap V)
 \to H_n(U)\oplus H_n(V)
 \to H_n(X)
 \to H_{n-1}(U\cap V)
 \to \cdots
-.\]
-For any long exact sequence of finitely generated abelian groups the alternating sum of ranks vanishes, so
-\[
+$$
+is a finite long exact sequence of finitely generated abelian groups, so the alternating sum of the ranks of its terms vanishes:
+$$
 \chi(U\cap V) - \bigl(\chi(U)+\chi(V)\bigr) + \chi(X)
-= 0
-,\]
-which is the stated identity.
+= 0.
+$$
 
 :::
 
@@ -105,51 +98,46 @@ which is the stated identity.
 
 [[C-CT2NX]]
 
-:::{.proof}
-Set $U\simeq A$ and $V\simeq B$ so that $U\cap V\simeq S^2$.
-Inclusion-exclusion then gives $\chi(A\# B)=\chi(A)+\chi(B)-\chi(S^2)=\chi(A)+\chi(B)-2$.
+::: {.proof}
+Let $A$ and $B$ be compact surfaces, and let $A'$ and $B'$ be $A$ and $B$ with the interior of a closed disc removed, so that $A\# B = A'\union_{S^1} B'$.
+Gluing a disc back along a circle and applying inclusion-exclusion gives $\chi(A) = \chi(A') + \chi(\DD^2) - \chi(S^1) = \chi(A')+1$, and likewise $\chi(B)=\chi(B')+1$.
+Applying inclusion-exclusion to open neighborhoods $U\homotopic A'$ and $V\homotopic B'$ with $U\cap V\homotopic S^1$,
+$$
+\chi(A\# B)=\chi(A')+\chi(B')-\chi(S^1)=\chi(A)+\chi(B)-2.
+$$
 
 :::
 
-### Connect Sums and Polygon Decompositions
+### Connected sums and polygon decompositions
 
 [[PR-GKRFP]]
 
 [[PR-LIXWH]]
 
-:::{.proof title="Klein bottle as two projective planes"}
-Removing an open disc from $\RP^2$ leaves a Möbius strip (the projective plane is a Möbius strip with a disc glued along the boundary).
-The connected sum $\RP^2\#\RP^2$ is therefore two Möbius strips glued along their boundary circles.
-That gluing is the standard decomposition of the Klein bottle: $\KK$ is two Möbius bands identified along $\partial$.
+::: {.proof title="Klein bottle as two projective planes"}
+Removing an open disc from $\RP^2$ leaves a Möbius band, since $\RP^2$ is a Möbius band with a disc glued along its boundary circle.
+The connected sum $\RP^2\#\RP^2$ is therefore two Möbius bands glued along their boundary circles, which is the Klein bottle: cutting $\KK$ along a circle parallel to the boundary edges of its square model decomposes it into two Möbius bands.
 
 :::
 
 [[PR-BDH3V]]
 
-:::{.proof title="Crosscap plus Klein versus crosscap plus torus"}
-The classification theorem [[T-NBARV]] includes the relation $3\RP^2 = \RP^2 \# \TT^2$.
-From [[PR-LIXWH]], $\KK\cong \RP^2\#\RP^2$, so
-\[
+::: {.proof title="Crosscap plus Klein bottle versus crosscap plus torus"}
+The classification theorem [[T-NBARV]] gives $\RP^2\#\RP^2\#\RP^2 \cong \RP^2 \# \TT^2$, since both are closed and nonorientable with $\chi = -1$.
+By [[PR-LIXWH]], $\KK\cong \RP^2\#\RP^2$, so
+$$
 \RP^2 \# \KK
 \cong \RP^2 \# \RP^2 \# \RP^2
-\cong \RP^2 \# \TT^2
-.\]
-Equivalently: both sides are closed nonorientable surfaces with
-\[
-\chi(\RP^2\#\KK)
-= 1+0-2
-= -1
-= \chi(\RP^2\#\TT^2)
-,\]
-and there is a unique such surface up to homeomorphism.
+\cong \RP^2 \# \TT^2.
+$$
 
 :::
 
 ## Manifolds
 
-:::{.remark}
-To show something is not a manifold, try looking at local homology. 
-Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; this should essentially always yield $\ZZ$ by excision arguments.
+::: {.fact title="Local homology"}
+If $M$ is an $n$-manifold and $x\in M$ is an interior point, then by excision $H_k(M, M\sm\ts x) \cong H_k(\RR^n,\RR^n\sm\ts 0) \cong \tilde H_{k-1}(S^{n-1})$, which is $\ZZ$ for $k=n$ and $0$ otherwise.
+A space with a point at which these local homology groups differ from those of every $\RR^n$ is not a manifold near that point.
 
 :::
 
@@ -163,17 +151,17 @@ Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; t
 
 [[PR-TU4G5]]
 
-:::{.proof title="Odd-dimensional closed manifolds"}
-Work with rational homology, so Poincaré duality reads $H^k(M;\QQ)\cong H_{n-k}(M;\QQ)$ and the Betti numbers satisfy $b_k(M)=b_{n-k}(M)$.
+::: {.proof title="Odd-dimensional closed manifolds"}
+Let $M$ be a closed $n$-manifold and work with $\FF_2$ coefficients, for which Poincaré duality holds without an orientability hypothesis: $H^k(M;\FF_2)\cong H_{n-k}(M;\FF_2)$.
+Since $H^k(M;\FF_2)\cong\Hom(H_k(M;\FF_2),\FF_2)$, the Betti numbers $b_k\coloneqq\dim_{\FF_2} H_k(M;\FF_2)$ satisfy $b_k=b_{n-k}$, and $\chi(M)=\sum_k(-1)^kb_k$ for any field of coefficients.
 Then
-\[
+$$
 \chi(M)
-= \sum_{k=0}^n (-1)^k b_k
 = \sum_{k=0}^n (-1)^k b_{n-k}
-= (-1)^n \sum_{k=0}^n (-1)^{n-k} b_{n-k}
-= (-1)^n \chi(M)
-.\]
-If $n$ is odd then $\chi(M)=-\chi(M)$, so $\chi(M)=0$.
+= (-1)^n \sum_{j=0}^n (-1)^{j} b_{j}
+= (-1)^n \chi(M),
+$$
+so if $n$ is odd then $\chi(M)=0$.
 
 :::
 
@@ -183,10 +171,10 @@ If $n$ is odd then $\chi(M)=-\chi(M)$, so $\chi(M)=0$.
 
 [[T-QNYSB]]
 
-### 3-Manifolds, and Knot Complements
+### 3-manifolds and knot complements
 
-:::{.fact}
-Every $\CC\dash$manifold is canonically orientable.
+::: {.fact}
+Every complex manifold is canonically oriented by its complex structure.
 
 :::
 
@@ -194,33 +182,44 @@ Every $\CC\dash$manifold is canonically orientable.
 
 [[PR-6HORN]]
 
-:::{.proof title="Knot complements"}
-Papakyriakopoulos's sphere theorem implies that an irreducible orientable $3$-manifold with infinite fundamental group is aspherical.
-A knot complement $S^3\setminus K$ is an open irreducible $3$-manifold with $\pi_1$ infinite (a knot group is never trivial), so $\pi_j(S^3\setminus K)=0$ for $j\geq 2$: it is a $K(\pi,1)$.
+::: {.proof title="Knot complements"}
+By Alexander's theorem, $S^3\sm K$ is irreducible, and its fundamental group is infinite since its abelianization $H_1(S^3\sm K)\cong\ZZ$.
+By the sphere theorem, an irreducible orientable $3$-manifold has $\pi_2=0$; its universal cover is then a noncompact simply connected $3$-manifold with $H_2=H_3=0$, hence contractible by the Hurewicz and Whitehead theorems.
+So $\pi_j(S^3\sm K)=0$ for $j\geq 2$, and $S^3\sm K$ is a $K(\pi,1)$.
 
-For the wedge: $\RR^3\setminus K$ is $S^3\setminus (K\cup\theset{\infty})$.
-A small sphere about the point at infinity is homotopically independent of the knot complement, and
-\[
-\RR^3\setminus K
-\simeq
-(S^3\setminus K) \vee S^2
-.\]
+For the wedge, $\RR^3\sm K \cong (S^3\sm K)\sm\ts{\infty}$.
+The space $S^3\sm K$ deformation retracts onto the compact manifold $C\coloneqq S^3\sm\nu(K)$ with torus boundary, and a compact $3$-manifold with nonempty boundary deformation retracts onto a $2$-dimensional spine missing a chosen interior point.
+Removing that point therefore gives a space deformation retracting onto the spine together with a small sphere around the point and an arc joining them, so
+$$
+\RR^3\sm K
+\homotopic
+(S^3\sm K) \vee S^2.
+$$
 
-If $K$ is nullhomologous in a $3$-manifold $X$, Mayer–Vietoris for $X = \bigl(X\setminus\nu(K)\bigr)\cup \nu(K)$ has intersection a torus.
-The solid torus $\nu(K)\simeq S^1$ kills the meridian, while $[K]=0$ in $H_1(X)$ means the longitude dies in $H_1(X)$.
-The remaining generator of $H_1(T^2)$ survives in $H_1(X\setminus\nu(K))$ as a $\ZZ$ factor, and
-\[
-H_1\bigl(X\setminus\nu(K)\bigr)
+For the homology statement, assume $X$ is orientable and let $K\subseteq X$ be nullhomologous, with tubular neighborhood $\nu(K)$, complement $C\coloneqq X\sm\nu(K)$, meridian $\mu$, and a longitude $\lambda$ on $\del\nu(K)\cong T^2$ bounding a Seifert surface $S$ for $K$.
+Intersection number with $S$ gives a homomorphism $\varphi\colon H_1(C)\to\ZZ$ with $\varphi(\mu)=1$, so $H_1(C)\cong\ZZ\mu\oplus\ker\varphi$, and $\lambda=0$ in $H_1(C)$.
+In the Mayer--Vietoris sequence for $X = C\cup\nu(K)$,
+$$
+H_1(T^2)\to H_1(C)\oplus H_1(\nu(K))\to H_1(X)\to 0,
+$$
+the first map sends $\mu\mapsto(\mu,0)$ and $\lambda\mapsto(0,1)$, so $H_1(X)\cong H_1(C)/\ZZ\mu\cong\ker\varphi$, and
+$$
+H_1\bigl(X\sm\nu(K)\bigr)
 \cong
-H_1(X)\times\ZZ
-.\]
+H_1(X)\oplus\ZZ.
+$$
 
 :::
 
 [[PR-WCHFF]]
 
-:::{.proof}
-Apply Mayer-Vietoris, taking $S^3 = n(K) \cup (S^3-K)$, where $n(K) \homotopic S^1$ and $S^3-K \cap n(K) \homotopic T^2$. 
-Use the fact that $S^3-K$ is a connected, open 3-manifold, so $H^3(S^3-K) =0$.
+::: {.proof}
+$S^3\sm K$ is path connected, so $H_0\cong\ZZ$, and $H_1\cong\ZZ$ by [[PR-6HORN]] with $X=S^3$.
+In the Mayer--Vietoris sequence for $S^3 = \nu(K) \cup C$ with $C\coloneqq S^3\sm\nu(K)\homotopic S^3\sm K$, $\nu(K) \homotopic S^1$, and $C\cap\nu(K)\homotopic T^2$,
+$$
+H_3(S^3)\to H_2(T^2)\to H_2(C)\oplus H_2(\nu(K))\to H_2(S^3)=0,
+$$
+the map $H_3(S^3)\cong\ZZ\to H_2(T^2)\cong\ZZ$ is an isomorphism, so $H_2(C)=0$.
+Since $S^3\sm K$ is a connected noncompact $3$-manifold, $H_k(S^3\sm K)=0$ for $k\geq 3$.
 
 :::
