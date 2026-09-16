@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-UBJ3S
 kind: fact
-title: Kunneth isomorphism (nice case)
+title: Künneth isomorphism with free homology
 prompts:
 - State the Kunneth isomorphism in the torsion-free case.
 classification:
@@ -16,5 +16,10 @@ review: draft
 ---
 
 ::: {.fact}
-$$H_{k}(X\times Y;R) \cong \bigoplus_{i+j=k}H_{i}(X;R)\otimes H_{j}(Y;R)$$
+Let $X, Y$ be CW complexes, let $R$ be a principal ideal domain, and suppose $H_i(X;R)$ is a free $R$-module for every $i$ (for example, $R$ a field).
+Then for each $k$ the cross product gives an isomorphism
+$$
+\bigoplus_{i+j=k}H_{i}(X;R)\tensor_R H_{j}(Y;R) \xrightarrow{\ \sim\ } H_{k}(X\times Y;R)
+$$
+[@Hat02, Theorem 3B.6, p. 275].
 :::
