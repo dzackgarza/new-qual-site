@@ -41,7 +41,3 @@ source:
     term: fall
     year: 1999
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1999. Problems are listed in source order.
-:::
