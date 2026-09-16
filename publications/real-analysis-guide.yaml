@@ -352,7 +352,7 @@ sections:
       - ref: PR-DPRY7
       - ref: PR-IGMH4
       - ref: T-DTXIA
-      - ref: PR-CCDRN
+      - ref: PR-JCZKL
   - slug: problems-from-the-joint-exams
     title: Problems from the joint analysis exams
     parent: GUIDE-REAL-ANALYSIS
