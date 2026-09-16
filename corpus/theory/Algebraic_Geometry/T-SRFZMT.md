@@ -28,12 +28,12 @@ Then every fibre $f^{-1}(y)$ is connected.
 Let $X$ and $Y$ be smooth projective varieties over an algebraically closed field $k$, and $F \colon X \dashrightarrow Y$ a birational map.
 Assume that $k$ has characteristic $0$, or that $\dim X = 2$.
 Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
-\[
+
 \begin{tikzcd}
 & W \arrow[dl, "g"'] \arrow[dr, "f"] & \\
 X \arrow[rr, dashed, "F"] & & Y
 \end{tikzcd}
-\]
+
 with $F \circ g = f$ on the open subset of $W$ where $F \circ g$ is defined.
 :::
 
