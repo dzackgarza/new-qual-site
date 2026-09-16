@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-F4PQY
 kind: theorem
-title: Fundamental theorem of covering spaces, Hatcher 1.39
+title: Deck transformations and normal covering spaces
 classification:
   areas:
   - topology
@@ -13,25 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-For $\tilde X \mapsvia{p} X$ a covering space with
+::: {.theorem}
+Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-2PNEG|covering space]] with $\tilde X$ path-connected and $X$ path-connected and locally path-connected.
+Let $G\coloneqq\pi_1(X, x_0)$ and $H\coloneqq p_*\pi_1(\tilde X, \tilde x_0)$, and let $G(\tilde X)$ be the group of [[D-4VGAW|deck transformations]].
+Then
 
-- $\tilde X$ path-connected,
-- $X$ path-connected and locally path-connected,
+1. $\tilde X$ is normal if and only if $H\normal G$;
 
-letting $H$ be the image of $\pi_1(\tilde X)$ in $\pi_1(X)$, we have
+2. $G(\tilde X) \cong N_G(H)/H$, where $N_G(H)$ is the normalizer of $H$ in $G$.
 
-1. $\tilde X$ is normal if and only if $H\normal \pi_1(X)$,
-
-2. For the normalizer $N_G(H)$ where $G\da \pi_1(X)$,
-\[
-G(\tilde X) \da \Aut_{\mathrm{Cov}(X) }(\tilde X) \cong {N_G(H) \over H}
-.\]
-
-In particular,
-\[
-\tilde X \text{ normal} &\implies G(\tilde X) \cong \pi_1(X) / H \\
-\hat X \text{ universal} &\implies G(\hat X) \cong \pi_1(X)
-.\]
-
+In particular, $G(\tilde X) \cong G/H$ if $\tilde X$ is normal, and $G(\hat X) \cong G$ for the universal cover $\hat X$ [@Hat02, Proposition 1.39, p. 71].
 :::
