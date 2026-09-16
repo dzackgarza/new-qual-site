@@ -19,24 +19,34 @@ Every geometric construction in the subject is one of these two applied to a she
 
 [[D-MODPULL]]
 
-The pattern to expect is that $f^*$ is the easy half and $f_*$ is where the theorems are.
-Pulling back is a tensor product, so it is right exact and preserves everything; pushing forward is left exact, its derived functors are the higher direct images, and it preserves coherence only under properness.
-This asymmetry is the reason cohomology exists as a subject rather than as a computation.
+For a morphism of ringed spaces $f\colon X\to Y$, the module pullback $f^*\mcg=f^{-1}\mcg\otimes_{f^{-1}\OO_Y}\OO_X$ is left adjoint to $f_*$.
+Hence $f^*$ is right exact and $f_*$ is left exact; the higher direct images $R^if_*$ are the right derived functors of $f_*$.
 
-## The four functors for sheaves of sets
+The inverse image $f^{-1}$ of abelian sheaves is exact, but the tensor product in $f^*$ need not preserve kernels.
+For the closed point $f\colon\Spec\FF_p\to\Spec\ZZ$, the injection $\ZZ\xrightarrow{p}\ZZ$ pulls back to the zero map $\FF_p\to\FF_p$.
+If $f$ is flat, $f^*$ is exact.
+
+On schemes, $f^*$ preserves quasicoherent sheaves, sheaves of finite type, and coherent sheaves when $X$ and $Y$ are locally noetherian.
+The pushforward $f_*$ preserves quasicoherent sheaves when $f$ is quasicompact and quasiseparated, and preserves coherent sheaves when $f$ is proper and $Y$ is locally noetherian.
+
+## The four functors for abelian sheaves
 
 For $f \colon X \to Y$ continuous:
 
-- $f_* \colon \Sh(X) \to \Sh(Y)$, $(f_*\mcf)(V) = \mcf(f^{-1}V)$, the direct image or pushforward;
+- $f_* \colon \Sh(X) \to \Sh(Y)$, $(f_*\mcf)(V) = \mcf(f^{-1}V)$, the direct image or pushforward, left exact;
 
-- $f^{-1} \colon \Sh(Y) \to \Sh(X)$, the inverse image or pullback, left adjoint to $f_*$;
+- $f^{-1} \colon \Sh(Y) \to \Sh(X)$, the inverse image, left adjoint to $f_*$ and exact;
 
-- $f_! \colon \Sh(X) \to \Sh(Y)$, extension by zero when $f$ is an open or closed immersion, read as ``$f$ lower shriek'';
+- $f_!$, the direct image with proper supports, defined for sheaves of abelian groups by taking the sections of $f_*\mcf$ whose support is proper over $Y$.
+  For an open immersion $j$, $j_!$ is extension by zero, which is exact and left adjoint to $j^{-1}$; for a closed immersion $i$, $i_!=i_*$;
 
-- $f^! \colon \Sh(Y) \to \Sh(X)$, the exceptional inverse image, read as ``$f$ upper shriek''.
+- $f^!$, the exceptional inverse image.
+  For a closed immersion $i\colon Z\to X$, $i^!\mcf$ is the restriction to $Z$ of the sheaf of sections of $\mcf$ supported in $Z$, right adjoint to $i_*$ on abelian sheaves.
+  For a general $f$ it exists only on derived categories, as a right adjoint to $Rf_!$ when $X$ and $Y$ are locally compact Hausdorff and $f_!$ has finite cohomological dimension (Verdier duality).
 
-These are the four among the six operations; the remaining two are $\otimes$ and $\sHom$.
-For $\OO_X$-modules the same symbols are written $f^*$ for the module pullback.
+$f_!$ and $f^!$ use the zero section of an abelian sheaf, so they do not transfer to sheaves of sets.
+Together with $\otimes$ and internal $\mathcal{H}om$ these are the six operations.
+For $\OO_X$-modules the pullback is written $f^*$.
 
 ## Ideal sheaves
 
