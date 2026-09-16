@@ -94,6 +94,10 @@ sample-unsolved collection n="5" section="":
 macros:
     uv run python tools/sync_macros.py
 
+# Refresh the command set the site's MathJax build defines (checked against authored mathematics)
+mathjax-commands:
+    bun tools/mathjax_commands.mjs
+
 # Rewrite the unsolved-cards queue from the corpus
 unsolved:
     uv run python tools/unsolved_queue.py

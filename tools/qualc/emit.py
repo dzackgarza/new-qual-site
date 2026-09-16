@@ -69,6 +69,7 @@ from .static_site import (
     build_asset_catalog,
     write_page,
 )
+from .tex import mark_definienda
 from .wiki import (
     SITE_PAGES,
     WIKI_BATCH_SIZE,
@@ -1459,7 +1460,7 @@ def build_inline_cache(
     sources = list(dict.fromkeys(markdown_values))
     outputs = _successful_outputs(
         pandoc.read_markdown(
-            [INLINE_SENTINEL + source for source in sources],
+            [INLINE_SENTINEL + mark_definienda(source) for source in sources],
             MARKDOWN,
         ),
         "inline read",

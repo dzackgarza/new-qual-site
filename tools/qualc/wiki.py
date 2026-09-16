@@ -24,6 +24,7 @@ from .diagnostics import Diagnostic, DiagnosticCode
 from .model import MARKDOWN, drop_path_captions, from_ast, load_front_matter, unread_math
 from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
+from .tex import mark_definienda
 
 WIKI_BATCH_SIZE = 8
 
@@ -273,7 +274,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
     for path in paths:
         try:
             metadata, body = _split_front_matter(path.read_text(), path)
-            prepared.append((path, path.relative_to(root), metadata, body))
+            prepared.append((path, path.relative_to(root), metadata, mark_definienda(body)))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
             errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 

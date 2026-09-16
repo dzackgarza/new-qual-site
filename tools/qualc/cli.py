@@ -8,12 +8,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+import panflute as pf
+
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import ParsedCard, discover, parse_cards_with
+from .model import ParsedCard, discover, parse_cards_with, to_json
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
+from .tex import unrenderable_tex
 from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
 
 
@@ -43,6 +46,10 @@ def load(
         errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
         link_citations(wiki_pages, card_routes)
     errors.extend(_publication_references(root, {item.card.id for item in parsed}))
+    preamble = json.loads((root / "vocabularies" / "macros.json").read_text())
+    documents = [(item.source_path, item.ast) for item in parsed]
+    documents.extend((str(page.source_path), to_json(pf.Doc(*page.blocks))) for page in wiki_pages)
+    errors.extend(unrenderable_tex(pandoc, documents, preamble))
     return parsed, wiki_pages, errors
 
 

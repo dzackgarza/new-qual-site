@@ -64,7 +64,7 @@ def test_a_defined_term_renders_as_a_dfn_element(tmp_path: Path) -> None:
     assert result.returncode == 0, result.stderr
 
     page = (work / "build" / "quarto" / "_site" / "tag" / "D-DFN.html").read_text()
-    [term] = re.findall(r'<dfn class="qual-dfn">(.*?)</dfn>', page)
+    [term] = re.findall(r'<dfn class="qual-dfn">(.*?)</dfn>', page, re.S)
     assert 'class="math inline"' in term
     assert re.sub(r"<[^>]+>", "", term) == "\\(p\\)-group"
-    assert "power of the prime" in page
+    assert "power of the prime" in " ".join(page.split())

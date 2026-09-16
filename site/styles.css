@@ -68,6 +68,14 @@ a:hover {
   color: var(--accent-dark);
 }
 
+/* A term at its defining occurrence (`\dfn{term}`, DEF-26): one style for every
+   definiendum, whatever emphasis the source it came from used. */
+dfn.qual-dfn {
+  font-style: italic;
+  font-weight: normal;
+  color: var(--ink);
+}
+
 /* One ring for every link, button, field and disclosure on the site. */
 :focus-visible {
   outline: 2px solid var(--accent);

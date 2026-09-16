@@ -31,6 +31,7 @@ from pydantic import (
 
 from .diagnostics import Diagnostic, DiagnosticCode
 from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
+from .tex import mark_definienda
 
 
 class Strict(BaseModel):
@@ -672,7 +673,7 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
-    normalized = normalize_fenced_divs(markdown)
+    normalized = mark_definienda(normalize_fenced_divs(markdown))
     with PandocServer() as pandoc:
         result = pandoc.read_markdown([normalized], MARKDOWN)[0]
     match result:
@@ -869,7 +870,7 @@ def parse_cards_with(
     for path in paths:
         try:
             meta, body = split_front_matter(path.read_text(), path)
-            body = normalize_fenced_divs(body)
+            body = mark_definienda(normalize_fenced_divs(body))
             card: Card = adapter.validate_python(meta)
             prepared.append((path, card, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
