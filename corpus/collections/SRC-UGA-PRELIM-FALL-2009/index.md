@@ -30,6 +30,6 @@ source:
     year: 2009
 ---
 
-::: remark
-UGA Mathematics Preliminary Exam, Fall 2009. The retained source contains eight top-level numbered problems.
+::: {.remark}
+UGA Mathematics Preliminary Exam, Fall 2009, with eight problems.
 :::
