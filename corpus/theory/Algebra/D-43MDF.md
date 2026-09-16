@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-43MDF
 kind: definition
-title: Normalizers Grow
+title: Normalizers grow
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-If for every proper $H < G$, $H\normal N_G(H)$ is again proper, then "normalizers grow" in $G$.
+Let $G$ be a group.
+\dfn{Normalizers grow} in $G$ if for every proper subgroup $H < G$, the subgroup $H$ is a proper subgroup of its [[D-OZ2RR|normalizer]] $N_G(H)$.
 :::

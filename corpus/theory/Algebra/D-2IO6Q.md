@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-2IO6Q
 kind: definition
-title: Jacobson Radical
+title: Jacobson radical
 classification:
   areas:
   - algebra
@@ -14,9 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **Jacobson radical** $\jacobsonrad{R}$ is the intersection of all maximal ideals, i.e.
-\[  
-\jacobsonrad{R} = \Intersect_{\mfm \in \mspec R} \mfm
-.\]
+::: {.definition}
+Let $R$ be a commutative ring.
+The \dfn{Jacobson radical} of $R$ is the intersection of all [[D-7XH2R|maximal ideals]] of $R$:
+$$
+\jacobsonrad{R} \coloneqq \Intersect_{\mfm \in \mspec R} \mfm,
+$$
+where $\mspec R$ is the [[D-NX4KW|max spectrum]] of $R$.
 :::

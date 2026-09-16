@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-3V3SP
 kind: definition
-title: Symplectic Group
+title: Symplectic group $\operatorname{Sp}_{2n}(\CC)$
 classification:
   areas:
   - algebra
@@ -13,18 +13,24 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-\[
-\mathrm{Sp}_{2n}(\CC) \da \ts{ A \in \GL_{2n}(\CC) \st A^tJA = J } &&
-J \da 
+::: {.definition}
+Let $n\geq 1$, and let
+$$
+J \coloneqq
 \begin{bmatrix}
-0 & 1_n
+0 & I_n
 \\
--1_n & 0
+-I_n & 0
 \end{bmatrix}
-.\]
+\in \GL_{2n}(\CC).
+$$
+The \dfn{symplectic group} is
+$$
+\operatorname{Sp}_{2n}(\CC) \coloneqq \theset{ A \in \GL_{2n}(\CC) \st A^tJA = J }.
+$$
+:::
 
-The block $-1_n$ is essential: $J$ must be **antisymmetric**.
-Taking $J$ symmetric, with $+1_n$ in the lower left, defines an orthogonal group for a split quadratic form instead.
-
+::: {.remark}
+The matrix $J$ is skew-symmetric, $J^t = -J$, so $\operatorname{Sp}_{2n}(\CC)$ is the group of invertible matrices preserving the alternating bilinear form $\omega(x,y) = x^tJy$ on $\CC^{2n}$.
+Replacing $J$ by the symmetric matrix $\begin{bmatrix} 0 & I_n \\ I_n & 0 \end{bmatrix}$ gives instead the orthogonal group of the symmetric bilinear form $x^t\begin{bmatrix} 0 & I_n \\ I_n & 0 \end{bmatrix}y$.
 :::
