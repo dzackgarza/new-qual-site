@@ -12,7 +12,7 @@ classification:
   - Conformal Maps
 relations:
 - kind: variant-of
-  target: T-HSWGS
+  target: T-W26VL
 review: draft
 ---
 

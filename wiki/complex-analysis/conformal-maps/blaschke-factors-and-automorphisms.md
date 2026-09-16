@@ -77,8 +77,6 @@ $$
 
 :::
 
-[[T-HSWGS]]
-
 [[T-VGDFW]]
 
 ## Exercises

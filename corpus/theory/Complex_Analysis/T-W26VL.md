@@ -19,5 +19,5 @@ The group $\Aut_\CC(\DD)$ of [[D-TM4TE|biholomorphisms]] $\DD\to\DD$ is
 $$
 \Aut_\CC(\DD)=\{\lambda\psi_a : a\in\DD,\ \lambda\in S^1\},
 $$
-so every automorphism of $\DD$ is a Blaschke factor followed by a rotation.
+so every automorphism of $\DD$ is a Blaschke factor followed by a rotation [@SS03, Chapter 8, Theorem 2.2].
 :::
