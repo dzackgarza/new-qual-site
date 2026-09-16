@@ -522,8 +522,7 @@ source:
     - E-HAT-4.L-5
 ---
 
-::: remark
-The §2.2 list skips number 34: Hatcher's errata withdrew that exercise, so the current book has no statement to extract for it.
-
-Topic 2.A (Homology and Fundamental Group) carries no exercise set in the book, so this collection lists none for it; the exercise sets of chapter 2 are §2.1 (31), §2.2 (43, minus erratum 34), §2.3 (4), 2.B (11), and 2.C (9).
+::: {.remark}
+Hatcher's errata withdraw §2.2 Exercise 34, so the current book has no statement with that number.
+Section 2.A has no exercises. The exercise sets of Chapter 2 are §2.1 (31 exercises), §2.2 (Exercises 1--43 without 34), §2.3 (4), §2.B (11), and §2.C (9).
 :::
