@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $h : \mathbb { C } \to \mathbb { R }$ be a harmonic function such that h is bounded below.
+2. Let $h : \CC \to \RR$ be a harmonic function such that h is bounded below.
    Prove that h is constant.
 :::
 
@@ -35,7 +35,7 @@ audit:
 
 ::: {.proof}
 Write $z=x+iy$, regard $h$ as a function of $(x,y)$, and
-define on all of $\mathbb R^2$
+define on all of $\RR^2$
 $$
 v(x,y)=-\int_0^x h_y(t,0)\,dt+
 \int_0^y h_x(x,s)\,ds.
@@ -57,22 +57,28 @@ v_x(x,y)
 $$
 Thus $H=h+iv$ has continuous first partial derivatives
 and satisfies the Cauchy–Riemann equations on the plane.
-It is entire and has real part $h$ [@SS03].
+By [[PR-JKE6C|Cauchy--Riemann implies holomorphic]], it is entire and has real part $h$.
 :::
 
 <1>2. The lower bound makes an entire exponential bounded.
 
 ::: {.proof}
-Choose $m\in\mathbb R$ with $h(z)\geq m$ everywhere.
+Choose $m\in\RR$ with $h(z)\geq m$ everywhere.
 Then $E(z)=e^{-H(z)}$ is entire and satisfies
 $$
-|E(z)|=e^{-\operatorname{Re}H(z)}=e^{-h(z)}\leq e^{-m}.
+\abs{E(z)}=e^{-\operatorname{Re}H(z)}=e^{-h(z)}\leq e^{-m}.
 $$
-Liouville's theorem makes $E$ constant [@SS03]. Since
+[[T-QHIHJ|Liouville's theorem]] makes $E$ constant. Since
 an exponential never vanishes, differentiation of this
 constant function yields
 $0=E'=-H'e^{-H}$ and hence $H'=0$ everywhere.
 An entire function with zero derivative is constant on
 the connected plane, so $h=\operatorname{Re}H$ is constant.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves that $h$ is constant.
 :::
 :::
