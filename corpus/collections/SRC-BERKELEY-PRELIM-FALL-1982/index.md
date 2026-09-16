@@ -41,7 +41,3 @@ source:
     term: fall
     year: 1982
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1982. Problems are listed in paper order.
-:::
