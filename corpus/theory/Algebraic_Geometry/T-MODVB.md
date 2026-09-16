@@ -23,7 +23,9 @@ prompts:
 ---
 
 ::: {.definition title="Locally free"}
-$\mcf$ is \dfn{free} of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$, and **locally free** of rank $n$ if $X$ has an open cover on which $\mcf$ is free of rank $n$.
+$\mcf$ is \dfn{free} if $\mcf \cong \bigoplus_{i \in I} \OO_X$ for some index set $I$, whose cardinality is its rank; it is free of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$.
+$\mcf$ is **locally free** if $X$ has an open cover $\ts{U_j}$ with each $\ro{\mcf}{U_j}$ free, and locally free of rank $n$ if each $\ro{\mcf}{U_j}$ is free of rank $n$.
+The rank of a locally free sheaf is constant on each connected component of $X$.
 An **invertible sheaf** is a locally free sheaf of rank $1$.
 :::
 

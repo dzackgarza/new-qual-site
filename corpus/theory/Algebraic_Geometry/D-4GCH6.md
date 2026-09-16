@@ -27,7 +27,8 @@ For a morphism of schemes $f: X \to Y$, the sheaf $\Omega_{X/Y}$ is obtained by 
 :::
 
 ::: {.proposition}
-$\Omega_{X/Y}$ is quasicoherent, and coherent when $f$ is of finite type.
+$\Omega_{X/Y}$ is quasicoherent, and coherent when $Y$ is Noetherian and $f$ is of finite type.
+[@Har10a, §II.8]
 :::
 
 ::: {.remark}

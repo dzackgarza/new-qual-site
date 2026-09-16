@@ -20,12 +20,13 @@ prompts:
 - What is $\OO_X$ for an affine variety?
 - What is $k[V]$, what is $A(V)$, and what is $k(V)$?
 - What are the sections of $\OO_X$ over a distinguished open set?
+- Show that the regular functions on a variety form a sheaf of rings.
 ---
 
 ::: {.definition title="Regular functions"}
 Let $X$ be a variety and $U \subseteq X$ open.
 A function $\phi: U \to k$ is \dfn{regular} if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
-These form a sheaf $\OO_X$.
+These form a sheaf of rings $\OO_X$, with restriction of functions: regularity is a local condition, and a function that is zero on each set of an open cover is zero.
 The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the **function field** $k(X)$.
 :::
 

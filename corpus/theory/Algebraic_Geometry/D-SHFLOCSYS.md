@@ -18,6 +18,12 @@ prompts:
 - What is a local system?
 ---
 
+::: {.definition title="Constant sheaf"}
+Let $A$ be an abelian group with the discrete topology. The \dfn{constant sheaf} $\ul{A}$ on a topological space $X$ has $\ul{A}(U)$ the group of continuous maps $U \to A$, with restriction of functions.
+If $U$ is open and connected, then $\ul{A}(U) = A$; more generally, if every connected component of the open set $U$ is open, then $\ul{A}(U) = \prod_{\pi_0(U)} A$, one factor for each connected component.
+[@Har10a, §II.1]
+:::
+
 ::: {.definition title="Locally constant sheaf and local system"}
 A sheaf $\mathcal{L}$ of abelian groups on a topological space $X$ is \dfn{locally constant} if every point has an open neighbourhood $U$ with $\mathcal{L}|_U$ isomorphic to a constant sheaf.
 A \dfn{local system} is a locally constant sheaf of abelian groups, or of $k$-vector spaces, whose stalks are finitely generated, respectively finite-dimensional.

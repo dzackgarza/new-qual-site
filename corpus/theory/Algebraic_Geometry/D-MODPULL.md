@@ -22,6 +22,22 @@ prompts:
 - Does $f_*$ preserve quasicoherence? Coherence?
 ---
 
+::: {.definition title="Topological inverse image"}
+Let $f: X \to Y$ be a continuous map and $\mcg$ a sheaf on $Y$.
+The \dfn{inverse image sheaf} $f\inv \mcg$ is the sheafification of the presheaf
+\[
+U \mapsto \colim_{V \supseteq f(U)} \mcg(V) ,
+\]
+the colimit over open subsets $V \subseteq Y$ containing $f(U)$.
+If $i: Z \injects X$ is the inclusion of a subspace, the **restriction** of a sheaf $\mcf$ on $X$ is $\ro{\mcf}{Z} \da i\inv \mcf$.
+:::
+
+::: {.proposition}
+$f\inv$ is left adjoint to $f_*$ on sheaves of abelian groups, and for $x \in X$ the stalk is $(f\inv \mcg)_x = \mcg_{f(x)}$; in particular $(\ro{\mcf}{Z})_x = \mcf_x$ for $x \in Z$.
+If $\mcg$ is an $\OO_Y$-module, then $f\inv \mcg$ is an $f\inv \OO_Y$-module, which need not be an $\OO_X$-module.
+[@Har10a, §II.1, Exercise II.1.18]
+:::
+
 ::: {.definition title="Direct and inverse image"}
 For $f: X \to Y$ of ringed spaces, $f_*\mcf$ is the $\OO_Y$-module $U \mapsto \mcf(f\inv U)$.
 For $\mcg \in \mods{\OO_Y}$, the \dfn{inverse image} is
