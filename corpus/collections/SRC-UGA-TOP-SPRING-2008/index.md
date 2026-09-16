@@ -33,6 +33,6 @@ source:
     year: 2008
 ---
 
-::: remark
-Exam #1 repeats the compact-subset-of-a-Hausdorff-space theorem represented by [[P-SG462]]. Exam #2 is the same connected-but-not-path-connected example prompt represented by [[P-8TF28]]. Exam #8 is the same identity-glued-solid-tori homology problem represented by [[P-WOFN2]].
+::: {.remark}
+Problem 1 is the same problem as Spring 2018 Problem 3, and Problem 2 is the same problem as Fall 2013 Problem 2.
 :::
