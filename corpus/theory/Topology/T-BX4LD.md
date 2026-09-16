@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-BX4LD
 kind: theorem
-title: Lefschetz Fixed Point
+title: Lefschetz fixed point theorem
 classification:
   areas:
   - topology
@@ -14,10 +14,9 @@ review: draft
 ---
 
 ::: {.theorem}
-For $f:X\to X$, define the **trace** of $f$ to be
-\[
-\Lambda_f \da \sum_{k \geq 0} (-1)^k ~\mathrm{Tr}(f_* \mid H_k(X; \QQ))
-\]
-where $f_*: H_k(X; \QQ) \to H_k(X; \QQ)$ is the induced map on homology.
-If $\Lambda_f \neq 0$ then $f$ has a fixed point.
+Let $X$ be a finite simplicial complex, or a retract of one, and let $f\colon X\to X$ be continuous with [[D-3UY5O|Lefschetz number]]
+$$
+\tau(f) = \sum_{k \geq 0} (-1)^k \tr\qty{f_*\colon H_k(X; \QQ) \to H_k(X; \QQ)}
+.$$
+If $\tau(f) \neq 0$, then $f$ has a fixed point [@Hat02, Theorem 2C.3, p. 179].
 :::
