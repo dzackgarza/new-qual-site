@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-W5SDY
 kind: theorem
-title: The operator norm on $X\dual$ yields a Banach space
+title: The dual space $X\dual$ with the operator norm is a Banach space
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X$ is a normed vector space, then $(X\dual, \norm{\wait}_{\text{op}})$ is a Banach space.
+Let $X$ be a normed vector space over $\mathbb K\in\theset{\RR,\CC}$, and let $X\dual$ be the vector space of continuous linear functionals $X\to\mathbb K$ with the [[D-T4LOC|operator norm]] $\norm{L}_{\text{op}}\coloneqq\sup_{x\in X,\ \norm{x}\leq1}\abs{L(x)}$.
+Then $(X\dual,\norm{\cdot}_{\text{op}})$ is a [[D-BG455|Banach space]].
 :::
