@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-QBTWN
 kind: theorem
-title: The operator norm is a norm
+title: The operator norm is a norm on the dual of a Hilbert space
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $H$ is a Hilbert space, then $(H\dual, \norm{\wait}_{\text{op}})$ is a normed space.
+Let $H\neq\theset{0}$ be a [[D-7QQUO|Hilbert space]] over $\CC$, and let $H\dual$ be its [[D-PQIQO|dual]].
+Then the [[D-T4LOC|operator norm]] $\norm{L}_{\mathrm{op}}\coloneqq\sup_{\norm{x}=1}\abs{L(x)}$ is a norm on the vector space $H\dual$.
 :::
