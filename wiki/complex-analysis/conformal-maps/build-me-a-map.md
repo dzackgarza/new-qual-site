@@ -10,91 +10,80 @@ topics:
 
 # Build me a map
 
-"Find a conformal map from $\Omega_1$ to $\Omega_2$" is answered by composition, not by cleverness.
-There is a short list of maps between standard regions, and the work is routing from one region to another through the list.
-
-Nearly every route passes through $\HH$ or $\DD$, so the practical algorithm is: get to $\HH$, then to $\DD$ if the target is a disc.
+A conformal map between two regions is usually written as a composition of maps between standard regions, most often passing through $\HH$ or $\DD$.
 
 ## Notation
 
 | Symbol | Region |
 | --- | --- |
-| $\DD \da \ts{z \st \abs z < 1}$ | the open unit disc |
-| $\HH \da \ts{z \st \Im z > 0}$ | the open upper half plane |
-| $Q_i$ | the $i$th quadrant, so $Q_1 \da \ts{z \st \Re z, \Im z > 0}$ |
-| $Q_{ij} \da Q_i \union Q_j$ | so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane |
-| $L \da \ts{x+iy \st 0 < y < \pi}$ | the horizontal strip |
+| $\DD \coloneqq \ts{z \st \abs z < 1}$ | the open unit disc |
+| $\HH \coloneqq \ts{z \st \Im z > 0}$ | the open upper half plane |
+| $Q_i$ | the $i$th open quadrant, so $Q_1 \coloneqq \ts{z \st \Re z> 0,\ \Im z > 0}$ |
+| $Q_{ij}$ | the interior of $\overline{Q_i \union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane |
+| $L \coloneqq \ts{x+iy \st 0 < y < \pi}$ | the horizontal strip |
 
-Everything here is open; boundaries are not included.
+All regions in the table are open.
 
-## The moves
+## Maps between standard regions
 
-- **$\HH \to \DD$**: the Cayley map $z\mapsto {z-i \over z+i}$.
-  The variant ${i-z\over i+z}$ is the same map composed with $z\mapsto -z$.
+- **$\HH \to \DD$.** The Cayley map $z\mapsto {z-i \over z+i}$.
+  The map $z\mapsto{i-z\over i+z}$ is its composition with $w\mapsto -w$.
 
-- **$\DD \to \DD$**: $\lambda\, {z-a\over 1-\bar a z}$ for $\lambda \in S^1$.
-  These are all of them, which is [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
+- **$\DD \to \DD$.** The automorphisms $z\mapsto\lambda\, {z-a\over 1-\bar a z}$ with $a\in\DD$ and $\lambda \in S^1$; by [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]], every automorphism of $\DD$ has this form.
 
-- **Sector $\to \HH$**: $z\mapsto z^n$ opens $\ts{0 < \Arg z < \pi/n}$ to $\HH$.
-  In general $z \mapsto z^a$ sends $\ts{\Arg z \in (-\theta_0, \theta_0)}$ to $\ts{\Arg z \in (-a\theta_0, a\theta_0)}$, so $a = \pi/2\theta_0$ opens a symmetric sector to a half plane.
+- **Sector $\to \HH$.** $z\mapsto z^n$ maps $\ts{0 < \Arg z < \pi/n}$ onto $\HH$.
+  More generally, for $0<a\theta_0\leq\pi$, a branch of $z \mapsto z^a$ maps $\ts{\Arg z \in (-\theta_0, \theta_0)}$ onto $\ts{\Arg w \in (-a\theta_0, a\theta_0)}$, so $a = \pi/(2\theta_0)$ maps a symmetric sector onto the right half plane.
 
   ![Squaring](../../../../assets/assets/figures/2021-12-10_20-25-14.png)
 
   ![Symmetric sector to right half-plane](../../../../assets/assets/figures/2021-12-10_20-24-49.png)
 
-- **Strip $\to \HH$**: $z\mapsto e^z$ on $0 < \Im z < \pi$.
-  On $\Im z \in (-\pi,\pi)$ it gives $\CC\sm\RR_{\leq 0}$.
-  The exponential sends boxes to sectors:
-  \[
+- **Strip $\to \HH$.** $z\mapsto e^z$ maps $L$ onto $\HH$, and maps $\ts{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq 0}$.
+  For $b-a>0$ and $0<d-c\leq 2\pi$, the exponential maps rectangles to annular sectors:
+  $$
   \ts{\Re z \in [a,b],\ \Im z \in [c,d]} \mapsto \ts{Re^{i\theta} \st R\in[e^a,e^b],\ \theta\in[c,d]}
-  .\]
+  .$$
 
-- **Half disc $\to$ half plane**: the Joukowski map $z\mapsto z + z\inv$.
-  It sends $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ to $Q_{34}$, $\DD^c \intersect \HH$ to $\HH$, and $\DD^c$ to $\CC\sm[-2,2]$.
+- **Half disc $\to$ half plane.** The Joukowski map $z\mapsto z + z\inv$ maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, $\overline{\DD}^c \intersect \HH$ onto $\HH$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$.
 
-- **Lune, or any region bounded by two arcs $\to$ strip**: send the two cusps to $0$ and $\infty$.
-  A cross ratio does it, and the image is a sector; if the arcs are tangent it is a strip.
+- **Region bounded by two circular arcs $\to$ sector or strip.** A Möbius transformation sending the two intersection points of the arcs to $0$ and $\infty$ maps the region onto a sector.
+  If the arcs are tangent at one point, a Möbius transformation sending that point to $\infty$ maps the region onto a strip.
 
   ![](../../../../assets/assets/figures/2021-12-10_17-12-12.png)
 
-- **Slit region**: aim for $\CC\sm[0,\infty) \mapsvia{\sqrt z} \HH$.
+- **Slit plane $\to \HH$.** The branch of $\sqrt z$ with argument in $(0,\pi)$ maps $\CC\sm[0,\infty)$ onto $\HH$.
 
-- **Reflections and inversions**: $z\mapsto -z$ reflects, so $\HH \to Q_{34}$.
-  $z\mapsto 1/z$ is $Re^{it}\mapsto R\inv e^{-it}$, a reflection about $\RR$ composed with inversion in $S^1$, and is a rotation of $\CP^1$ by $\pi$ about the real axis.
+- **Reflections and inversions.** $z\mapsto -z$ maps $\HH$ onto $Q_{34}$.
+  The map $z\mapsto 1/z$ sends $Re^{it}$ to $R\inv e^{-it}$; it is reflection in $\RR$ composed with inversion in $S^1$, and on $\CP^1$ it is the rotation by $\pi$ about the axis through $\pm 1$.
 
-## Routing
+## Boundary features
 
-Read the target region's *corners and boundary arcs*, since those are what the moves act on.
-
-| The region has | Send it through |
+| The region has | Map |
 | --- | --- |
-| a corner of angle $\theta_0$ | $z^{\pi/\theta_0}$, opening it to a half plane |
-| two boundary arcs meeting at two points | a cross ratio taking those points to $0,\infty$ |
-| two tangent circles | the tangency to $\infty$, giving parallel lines |
-| a slit | $\sqrt z$ |
+| a corner of angle $\theta_0$ at $0$ | $z^{\pi/\theta_0}$, to a half plane |
+| two boundary arcs meeting at two points | a Möbius transformation taking those points to $0$ and $\infty$ |
+| two tangent boundary circles | a Möbius transformation taking the point of tangency to $\infty$, giving parallel lines |
+| a slit along a ray | a branch of $\sqrt z$ |
 | a strip | $e^z$ |
-| a circular boundary and you want a disc | the Cayley map, then Blaschke factors to place the points |
+| a half-plane, with target $\DD$ | the Cayley map, then an automorphism of $\DD$ |
 
-## Tips that save the computation
+## Computational facts
 
-- $z\inv = \bar z/\abs z^2$ makes images quick to compute: under $f(z)=1/z$, the point $1+i$ on $\abs{z-1}=1$ goes to ${1-i\over 2}$.
+- $z\inv = \bar z/\abs z^2$; for example, under $z\mapsto 1/z$ the point $1+i$ on $\abs{z-1}=1$ goes to ${1-i\over 2}$.
 
-- Conformal maps preserve angles, so use tangent vectors, including at $\infty$.
-  Circles meeting orthogonally must map to orthogonally meeting circles or lines; circles meeting tangentially map to parallel lines or tangent circles.
+- Conformal maps preserve angles between curves, including at $\infty$ on $\CP^1$.
+  Circles meeting orthogonally map to generalized circles meeting orthogonally, and tangent circles map to tangent circles or parallel lines.
 
-- Conformal maps send generalized circles to generalized circles, where a line is a circle through $\infty$.
+- Möbius transformations map generalized circles to generalized circles, where a line is a circle through $\infty$, and map an arc between two points onto an arc between their images.
 
-- Arcs between two points map to arcs between the images.
+- The cross ratio sending $a\mapsto 1$, $b \mapsto 0$, $c\mapsto \infty$ is
+  $$
+  (z; a, b, c) = \frac{z-b}{z-c}\cdot\frac{a-c}{a-b}
+  .$$
 
-- The locus equidistant from two points is the perpendicular bisector.
+- $t\mapsto\tan t$ is a bijection $(-\pi/2,\pi/2)\to\RR$, which parameterizes the real line by a bounded interval.
 
-- Inverting a map: set $f(z) = w$ and solve for $z$.
-
-- To remember the cross ratio $(z; a, b, c)$ sending $a\mapsto 1$, $b \mapsto 0$, $c\mapsto \infty$: put $z-b$ in the numerator to send $b\to 0$, put $z-c$ in the denominator to send $c\to\infty$, and cancel with $a-c$ over $a-b$ so that $a\mapsto 1$.
-
-- $\RR = \ts{\tan t \st t \in (-\pi/2,\pi/2)}$, which is occasionally the parameterization a problem wants.
-
-## The standard maps, as statements
+## Standard maps
 
 $\HH$ and $\DD$:
 
