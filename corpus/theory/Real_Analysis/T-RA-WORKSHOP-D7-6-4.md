@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-4
 kind: theorem
-title: 'Theorem 6.4: Uniform convergence of differentiable functions'
+title: Uniform convergence of derivatives and differentiability of the limit
 classification:
   areas:
   - real-analysis
@@ -15,6 +15,10 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $\{f_n\}$ be a sequence of functions differentiable on $[a,b]$ for which $\{f_n(x_0)\}$ converges at some $x_0\in[a,b]$.
-If $\{f_n'\}$ converges uniformly on $[a,b]$ then $\{f_n\}$ converges uniformly on $[a,b]$ to a function $f$ such that $$\lim_{n\to\infty}f_n'(x)=f'(x).$$
+Let $a<b$, and let $f_n\colon[a,b]\to\RR$ for $n\geq1$ be differentiable on $[a,b]$.
+Suppose that $\{f_n(x_0)\}$ converges for some $x_0\in[a,b]$ and that $\{f_n'\}$ converges [[D-RA-WORKSHOP-D7-CONVERGENCE|uniformly]] on $[a,b]$.
+Then $\{f_n\}$ converges uniformly on $[a,b]$ to a function $f\colon[a,b]\to\RR$, $f$ is differentiable on $[a,b]$, and
+$$
+f'(x)=\lim_{n\to\infty}f_n'(x)\qquad\text{for all }x\in[a,b].
+$$
 :::
