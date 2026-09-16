@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-QDIOC
 kind: proposition
-title: Exactness of $A\to B\to C$ iff $\im f_1=\ker f_2$
+title: Exactness of $A\to B\to C$
 classification:
   areas:
   - topology
@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: {.proposition}
-The sequence $A \mapsvia{f_1} B \mapsvia{f_2} C$ is exact if and only if $\im f_i = \ker f_{i+1}$ and thus $f_2 \circ f_1 = 0$.
+A sequence of homomorphisms $A \mapsvia{f_1} B \mapsvia{f_2} C$ is [[D-STPAM|exact]] at $B$ if and only if $\im f_1 = \ker f_2$.
+In that case $f_2 \circ f_1 = 0$; the converse fails, since $f_2\circ f_1 = 0$ only gives $\im f_1\subseteq\ker f_2$.
 :::
