@@ -14,10 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-Letting $\cat C \da \mathsf{Cov}(X) \leq \Top\slice X$ be the subcategory of the slice category over $X$ of covering maps $\tilde X\to X$, the group of **deck transformations** is given by
-\[
-\mathrm{Deck}(\tilde X\to X) \da \Aut_{\cat C}(\tilde X\to X)
-,\]
-i.e topological automorphisms of $\tilde X$ which fix $X$ pointwise.
+::: {.definition}
+Let $p\colon\tilde X\to X$ be a [[D-ANO2D|covering space]].
+A \dfn{deck transformation} of $p$ is a [[D-9KQZT|homeomorphism]] $\psi\colon\tilde X\to\tilde X$ with $p\circ\psi=p$.
+The deck transformations form a group $\Deck(\tilde X\to X)$ under composition.
+:::
+
+::: {.remark}
+In the slice category $\mathsf{Top}_{/X}$, whose objects are continuous maps to $X$ and whose morphisms are maps over $X$, the group $\Deck(\tilde X\to X)$ is the automorphism group $\Aut_{\mathsf{Top}_{/X}}(p)$ of the object $p\colon\tilde X\to X$.
+A deck transformation permutes each fiber $p\inv(x)$; it need not fix any point of $\tilde X$.
 :::
