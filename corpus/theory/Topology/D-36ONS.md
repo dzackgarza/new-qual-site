@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-36ONS
 kind: definition
-title: Chain Map
+title: Chain map
 classification:
   areas:
   - topology
@@ -13,11 +13,9 @@ review: draft
 ---
 
 ::: {.definition}
-A map between chain complexes $(C_*, \del_{C}) \mapsvia{f} (D_*, \del_{D})$ is a chain map iff each component $C_{i} \mapsvia{f_{i}} D_{i}$ satisfies
+Let $R$ be a ring and let $(C_*, \del^C)$ and $(D_*, \del^D)$ be chain complexes of $R$-modules, with $\del^C_i\colon C_i\to C_{i-1}$ and $\del^D_i\colon D_i\to D_{i-1}$.
+A \dfn{chain map} $f\colon C_*\to D_*$ is a family of $R$-linear maps $f_i\colon C_i\to D_i$, $i\in\ZZ$, such that
 $$
-f_{i-1}\circ\del_{C, i} = \del_{D,i} \circ f_{i}
-$$
-(i.e this forms a commuting ladder)
-
-<!--![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Chain_{map}.svg/650px-Chain_{map}.svg.png)-->
+f_{i-1}\circ\del^C_i = \del^D_i \circ f_i \quad\text{for all } i\in\ZZ
+.$$
 :::
