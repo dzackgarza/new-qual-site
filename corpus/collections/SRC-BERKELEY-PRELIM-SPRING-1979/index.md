@@ -42,7 +42,3 @@ source:
     term: spring
     year: 1979
 ---
-
-::: remark
-The retained PDF is titled *Preliminary Exam - Spring 1979* and contains Problems 1--20 in source order. The existing Berkeley prelim resource page identifies `Spring79.pdf` in the Berkeley exam sequence. Problem 8's matrix-size glyph and Problem 13's displayed initial-condition right-hand side are unrecovered in every retained extraction and are recorded explicitly rather than reconstructed.
-:::
