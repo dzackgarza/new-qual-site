@@ -12,14 +12,22 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-F: \qty{-{\pi \over 2}, {\pi \over 2}} \cross i\RR &\to \DD \intersect \ts{\Re(z) > 0} \\
-z &\mapsto e^{iz} \\
--i\Log(w) &\mapsfrom w
-.\]
+::: {.proposition}
+Let $S\coloneqq\theset{z\in\CC : -\pi/2<\Re z<\pi/2,\ \Im z>0}$ and $H\coloneqq\DD \intersect \ts{\Re(w) > 0}$.
+Then
+$$
+\begin{aligned}
+F\colon S &\to H, \\
+z &\mapsto e^{iz}
+\end{aligned}
+$$
+is a [[D-TM4TE|biholomorphism]] with inverse $w\mapsto -i\Log(w)$, where $\Log$ is the [[D-4CSPM|principal branch]] of the logarithm.
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_18-22-45.png)
+:::
 
-This is essentially polar coordinates: write $e^z = e^{-y} e^{ix}$, then $x\in (-\pi/2, \pi/2)$ and $y\in (0, \infty)$ so this fills out a half-disc as $x,y$ vary.
+::: {.proof}
+For $z=x+iy\in S$, $e^{iz}=e^{-y}e^{ix}$ has modulus $e^{-y}\in(0,1)$ and argument $x\in(-\pi/2,\pi/2)$, so $e^{iz}\in H$, and $-i\Log(e^{iz})=-i(-y+ix)=x+iy=z$.
+Conversely, every $w\in H$ is $w=re^{i\theta}$ with $r\in(0,1)$ and $\theta\in(-\pi/2,\pi/2)$, and $-i\Log(w)=\theta-i\log r$ has real part $\theta\in(-\pi/2,\pi/2)$ and imaginary part $-\log r>0$, so it lies in $S$, and $e^{i(-i\Log w)}=e^{\Log w}=w$.
+Both maps are holomorphic and mutually inverse.
 :::

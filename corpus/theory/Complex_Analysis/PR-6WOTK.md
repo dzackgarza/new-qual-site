@@ -14,6 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $u(z)$ be a real-valued harmonic function on a domain $D$ such that $u(z) \leq M$ for all $z \in D$.
-If $u\left(z_{0}\right)=M$ for some $z_{0} \in D$, then $u(z)=M$ for all $z \in D$.
+Let $D\subseteq\CC$ be a connected open set, let $u\colon D\to\RR$ be [[D-CFBSA|harmonic]], and let $M\in\RR$ satisfy $u(z) \leq M$ for all $z \in D$.
+If $u(z_0)=M$ for some $z_0 \in D$, then $u(z)=M$ for all $z \in D$.
 :::
