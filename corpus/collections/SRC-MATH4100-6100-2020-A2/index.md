@@ -29,6 +29,6 @@ source:
     year: 2020
 ---
 
-::: remark
-This is Assignment 2 of the retained nine-assignment Math 4100/6100 real-analysis packet, due September 9, 2020. No institution is stated in the retained source or old resource page, so none is inferred.
+::: {.remark}
+Assignment 2 of the nine assignments of a Math 4100/6100 real-analysis course, due September 9, 2020. The course packet names no institution.
 :::
