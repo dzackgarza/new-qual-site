@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-08
 kind: problem
-title: Amherst algebra study guide problem 8
+title: $x^{42}\in N$ for a normal subgroup $N$ of index 42
 classification:
   areas:
   - algebra

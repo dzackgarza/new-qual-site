@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-25
 kind: problem
-title: Amherst algebra study guide problem 25
+title: Ideals properly containing an ideal with field quotient contain 1
 classification:
   areas:
   - algebra

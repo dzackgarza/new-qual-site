@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-19
 kind: problem
-title: Amherst algebra study guide problem 19
+title: Annihilators are ideals
 classification:
   areas:
   - algebra

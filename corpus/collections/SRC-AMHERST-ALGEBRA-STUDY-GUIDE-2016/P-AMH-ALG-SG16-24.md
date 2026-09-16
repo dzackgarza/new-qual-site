@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-24
 kind: problem
-title: Amherst algebra study guide problem 24
+title: Ideals of a field are trivial
 classification:
   areas:
   - algebra

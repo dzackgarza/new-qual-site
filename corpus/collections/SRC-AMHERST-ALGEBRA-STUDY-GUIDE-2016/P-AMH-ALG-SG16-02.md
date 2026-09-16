@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-02
 kind: problem
-title: Amherst algebra study guide problem 2
+title: Proper subgroups of a group of order $pq$ are cyclic
 classification:
   areas:
   - algebra

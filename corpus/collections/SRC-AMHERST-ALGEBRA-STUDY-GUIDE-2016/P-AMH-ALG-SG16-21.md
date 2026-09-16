@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-21
 kind: problem
-title: Amherst algebra study guide problem 21
+title: Quotients by ideals containing all commutators are commutative
 classification:
   areas:
   - algebra

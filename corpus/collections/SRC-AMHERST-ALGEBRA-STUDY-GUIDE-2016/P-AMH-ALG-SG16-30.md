@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-30
 kind: problem
-title: Amherst algebra study guide problem 30
+title: Reducibility of $X^4+X^2+1$ over $\mathbb F_2$ and irreducibility of $X^3+2X^2+2X+3$ over $\mathbb F_5$
 classification:
   areas:
   - algebra

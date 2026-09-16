@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-10
 kind: problem
-title: Amherst algebra study guide problem 10
+title: Cosets of the preimage of a subgroup under a homomorphism
 classification:
   areas:
   - algebra

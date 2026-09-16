@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-20
 kind: problem
-title: Amherst algebra study guide problem 20
+title: The ideal $(6,x+1)$ in $\mathbb Z[x]$
 classification:
   areas:
   - algebra

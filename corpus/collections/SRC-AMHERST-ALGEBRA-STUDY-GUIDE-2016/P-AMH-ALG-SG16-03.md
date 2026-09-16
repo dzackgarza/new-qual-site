@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-03
 kind: problem
-title: Amherst algebra study guide problem 3
+title: Elements commuting with the cosets of a subgroup form a subgroup
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-31
 kind: problem
-title: Amherst algebra study guide problem 31
+title: Reducibility of $x^2+3$ over $\mathbb F_7$ and an intermediate ideal
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-06
 kind: problem
-title: Amherst algebra study guide problem 6
+title: Centralizers are subgroups containing $\langle s\rangle$ as a normal subgroup
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-16
 kind: problem
-title: Amherst algebra study guide problem 16
+title: Definition of an ideal of a ring
 classification:
   areas:
   - algebra

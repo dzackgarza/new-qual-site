@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-17
 kind: problem
-title: Amherst algebra study guide problem 17
+title: Ideals of $\mathbb Z$ containing relatively prime integers
 classification:
   areas:
   - algebra

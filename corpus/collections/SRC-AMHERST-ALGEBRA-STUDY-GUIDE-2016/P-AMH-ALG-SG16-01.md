@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-01
 kind: problem
-title: Amherst algebra study guide problem 1
+title: Intersections of subgroups are subgroups
 classification:
   areas:
   - algebra

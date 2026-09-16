@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-27
 kind: problem
-title: Amherst algebra study guide problem 27
+title: Cosets of a principal ideal in $F[x]$ and remainder representatives
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-23
 kind: problem
-title: Amherst algebra study guide problem 23
+title: The kernel of a ring homomorphism restricted to an ideal is an ideal
 classification:
   areas:
   - algebra

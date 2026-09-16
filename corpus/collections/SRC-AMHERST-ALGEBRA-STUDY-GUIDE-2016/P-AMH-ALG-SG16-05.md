@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-05
 kind: problem
-title: Amherst algebra study guide problem 5
+title: Subgroups containing all commutators are normal
 classification:
   areas:
   - algebra

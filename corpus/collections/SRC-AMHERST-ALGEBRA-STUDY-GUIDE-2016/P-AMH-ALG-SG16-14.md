@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-14
 kind: problem
-title: Amherst algebra study guide problem 14
+title: Elements of order 21 and 11 in $S_{10}$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-12
 kind: problem
-title: Amherst algebra study guide problem 12
+title: Recovering a lost permutation in $A_{10}$ and its order
 classification:
   areas:
   - algebra

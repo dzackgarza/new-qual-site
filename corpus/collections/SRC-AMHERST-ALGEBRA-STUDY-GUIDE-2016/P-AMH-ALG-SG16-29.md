@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-29
 kind: problem
-title: Amherst algebra study guide problem 29
+title: The field $\mathbb F_3[x]/(x^2+1)$ and the inverse of $x$
 classification:
   areas:
   - algebra

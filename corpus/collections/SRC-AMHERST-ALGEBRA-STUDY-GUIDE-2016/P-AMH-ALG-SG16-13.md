@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-13
 kind: problem
-title: Amherst algebra study guide problem 13
+title: Disjoint cycles, order and parity of $(4\ 2\ 1)(6\ 1\ 3\ 2)$
 classification:
   areas:
   - algebra

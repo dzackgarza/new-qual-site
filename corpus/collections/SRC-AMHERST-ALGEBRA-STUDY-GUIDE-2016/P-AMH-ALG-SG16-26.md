@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-26
 kind: problem
-title: Amherst algebra study guide problem 26
+title: Polynomials vanishing at 2 and 5 form an ideal of $\mathbb R[x]$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-07
 kind: problem
-title: Amherst algebra study guide problem 7
+title: The product $NH$ of a normal subgroup and a subgroup is a subgroup
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-09
 kind: problem
-title: Amherst algebra study guide problem 9
+title: Homomorphisms from a group of order 144 to a group of order 25 are trivial
 classification:
   areas:
   - algebra

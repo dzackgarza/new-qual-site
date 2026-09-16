@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-18
 kind: problem
-title: Amherst algebra study guide problem 18
+title: An ideal in the ring of upper triangular $2\times 2$ real matrices
 classification:
   areas:
   - algebra

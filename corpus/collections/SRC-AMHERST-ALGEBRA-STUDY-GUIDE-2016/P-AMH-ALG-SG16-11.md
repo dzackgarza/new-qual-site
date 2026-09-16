@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-11
 kind: problem
-title: Amherst algebra study guide problem 11
+title: The order of a homomorphic image of a subgroup divides $|G_1|$
 classification:
   areas:
   - algebra

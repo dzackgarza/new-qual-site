@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-04
 kind: problem
-title: Amherst algebra study guide problem 4
+title: Intersections of normal subgroups are normal
 classification:
   areas:
   - algebra

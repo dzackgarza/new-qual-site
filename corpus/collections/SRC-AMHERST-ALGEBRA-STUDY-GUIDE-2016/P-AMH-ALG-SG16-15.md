@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-15
 kind: problem
-title: Amherst algebra study guide problem 15
+title: Homomorphisms from $S_n$ to groups of odd order are trivial
 classification:
   areas:
   - algebra

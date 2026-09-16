@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-22
 kind: problem
-title: Amherst algebra study guide problem 22
+title: Reduced quotient rings and radical ideals
 classification:
   areas:
   - algebra

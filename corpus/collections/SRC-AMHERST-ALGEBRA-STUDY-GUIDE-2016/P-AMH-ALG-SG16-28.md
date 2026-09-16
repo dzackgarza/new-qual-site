@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-28
 kind: problem
-title: Amherst algebra study guide problem 28
+title: Cubic polynomials over a field are irreducible exactly when rootless
 classification:
   areas:
   - algebra
