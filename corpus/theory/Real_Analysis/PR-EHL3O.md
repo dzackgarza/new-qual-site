@@ -17,6 +17,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $f\colon\RR^n\to\CC$ be [[D-HHVPT|uniformly continuous]] with $f\in L^1(\RR^n)$.
+Let $f\colon\RR^n\to\CC$ be [[D-WGYSB|uniformly continuous]] with $f\in L^1(\RR^n)$.
 Then $f(x) \to 0$ as $\abs{x}\to\infty$.
 :::
