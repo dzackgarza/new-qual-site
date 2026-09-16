@@ -19,13 +19,13 @@ title: "Algebra qual prep week 4: rings"
 
 - Localization
 
-![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 15.png)
+[[P-AMH-ALG-SG16-17]]
 
-![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 16.png)
+[[P-AMH-ALG-SG16-19]]
 
-![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 17.png)
+[[P-AMH-ALG-SG16-21]]
 
-![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 18.png)
+[[P-AMH-ALG-SG16-22]]
 
 [[P-3PTP5]]
 

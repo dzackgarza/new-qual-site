@@ -103,16 +103,16 @@ title: "Algebra qual prep week 2: finite group theory"
 
 ## Qual problems
 
-![](_attachments/Untitled 14.png)
+[[P-P3RNI]]
 
-![](_attachments/Pasted image 20210526171835.png)
+[[P-TR6YB]]
 
-![](_attachments/Pasted image 20210526172046.png)
+[[P-FKAJJ]]
 
-![](_attachments/Pasted image 20210526172119.png)
+[[P-EI5VA]]
 
-![](_attachments/Pasted image 20210526172140.png)
+[[P-DXHST]]
 
 The following problem uses the Sylow theorems.
 
-![](_attachments/Pasted image 20210526173749.png)
+[[P-VI6QM]]

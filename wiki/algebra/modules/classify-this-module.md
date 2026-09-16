@@ -10,7 +10,7 @@ topics:
 
 ## Principal ideal domains and other rings
 
-Over a [[D-HTIL5|principal ideal domain]] $R$ -- for example $\ZZ$, $k[x]$ and $k[[x]]$ for a field $k$, and every Euclidean domain -- the structure theorem classifies finitely generated $R$-modules: each is the direct sum of a free module and a torsion module, and the torsion module is determined up to isomorphism by its invariant factors.
+Over a [[D-HTIL5|principal ideal domain]] $R$ -- for example $\ZZ$, $k[x]$ and $k[\![x]\!]$ for a field $k$, and every Euclidean domain -- the structure theorem classifies finitely generated $R$-modules: each is the direct sum of a free module and a torsion module, and the torsion module is determined up to isomorphism by its invariant factors.
 
 Over a ring that is not a PID, such as $k[x,y]$, $\ZZ[x]$, or a quotient $k[x,y]/I$, the structure theorem does not apply.
 For finitely generated modules over such a ring, the properties of being [[D-LIEMF|free]], [[D-RHJMK|projective]], flat, and [[D-ZJJ7G|torsion-free]] can differ; over a PID they coincide.
