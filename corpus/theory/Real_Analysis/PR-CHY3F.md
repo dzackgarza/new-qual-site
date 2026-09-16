@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-CHY3F
 kind: proposition
-title: Exponential Inequality
+title: Exponential inequality
 classification:
   areas:
   - real-analysis
@@ -12,8 +12,9 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[  
-\forall t\in \RR,\quad 1 + t \leq  e^t
-.\]
+::: {.proposition}
+For all $t\in \RR$,
+$$
+1 + t \leq e^t .
+$$
 :::

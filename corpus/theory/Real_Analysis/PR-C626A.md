@@ -14,8 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\inner{f}{\phi} \da \int f \cdot \phi = 0 \quad \forall \phi\in C_c^0 \implies f \eqae 0
-.\]
+::: {.proposition}
+Let $f\colon\RR^n\to\CC$ be locally integrable, that is, $\int_K\abs{f}<\infty$ for every compact $K\subseteq\RR^n$, and let $C_c^0(\RR^n)$ be the space of continuous functions $\RR^n\to\CC$ with compact support.
+If
+$$
+\int_{\RR^n} f \phi = 0 \quad \text{for all } \phi\in C_c^0(\RR^n),
+$$
+then $f = 0$ almost everywhere.
 :::

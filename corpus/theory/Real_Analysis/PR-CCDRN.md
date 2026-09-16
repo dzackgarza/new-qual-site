@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: PR-CCDRN
 kind: proposition
-title: 'Plancherel: $\begin{aligned}\norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\ \int_{\RR^d}
-  \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2\end{aligned}$'
+title: Plancherel theorem
 classification:
   areas:
   - real-analysis
@@ -15,11 +14,9 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\
-\int_{\RR^d} \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2
-.\]
-
-
+::: {.proposition}
+If $f\in L^1(\RR^d)\cap L^2(\RR^d)$, then its [[D-5LZQ4|Fourier transform]] $\widehat f$ lies in $L^2(\RR^d)$ and
+$$
+\norm{f}_{L^2}^2 = \int_{\RR^d} \abs{f}^2 = \int_{\RR^d} \abs{\widehat f}^2 = \norm{\widehat{f}}_{L^2}^2 .
+$$
 :::
