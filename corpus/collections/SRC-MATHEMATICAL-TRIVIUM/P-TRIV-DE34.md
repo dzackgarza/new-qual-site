@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE34
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 34'
+title: $\int_{-\infty}^\infty \delta''(x-2)\frac{dx}{1+x^2}$
 classification:
   areas: [prelim]
   topics: []

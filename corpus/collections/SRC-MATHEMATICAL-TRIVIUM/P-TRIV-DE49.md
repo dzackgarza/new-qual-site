@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE49
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 49'
+title: Steady temperature in a semi-infinite cylinder
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE03
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 3'
+title: First-order linear equation $(x+1)y'=2y+(x+1)^{5/2}$
 classification:
   areas: [prelim]
   topics: []

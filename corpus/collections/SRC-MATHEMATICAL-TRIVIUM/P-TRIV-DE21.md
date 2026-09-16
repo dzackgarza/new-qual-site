@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE21
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 21'
+title: Perturbative ground-state energy of the quartic anharmonic oscillator
 classification:
   areas: [prelim]
   topics: []

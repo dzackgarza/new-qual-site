@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE22
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 22'
+title: Reduction of order for $y''+P y'+Qy=0$
 classification:
   areas: [prelim]
   topics: []

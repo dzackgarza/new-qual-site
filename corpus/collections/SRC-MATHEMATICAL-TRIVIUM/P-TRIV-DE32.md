@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE32
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 32'
+title: $\delta(x)$ as the limit of $\frac1\pi\operatorname{Im}\frac{1}{x-i\epsilon}$
 classification:
   areas: [prelim]
   topics: []

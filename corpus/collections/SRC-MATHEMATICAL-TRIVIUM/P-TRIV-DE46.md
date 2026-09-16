@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE46
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 46'
+title: Heat equation on a half-line with delta initial data
 classification:
   areas: [prelim]
   topics: []

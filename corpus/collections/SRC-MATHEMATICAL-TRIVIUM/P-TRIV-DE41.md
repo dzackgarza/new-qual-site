@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE41
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 41'
+title: First-order PDE $(\partial_x+\partial_y+\partial_z)f=x-y$ by characteristics
 classification:
   areas: [prelim]
   topics: []

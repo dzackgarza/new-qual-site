@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE26
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 26'
+title: Small-$x$ asymptotics of the modified Bessel function $K_\nu$
 classification:
   areas: [prelim]
   topics: []

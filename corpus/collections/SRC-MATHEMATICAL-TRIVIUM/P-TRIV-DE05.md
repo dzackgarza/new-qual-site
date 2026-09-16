@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE05
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 5'
+title: Constant-coefficient equation $y''-y'-2y=0$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE42
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 42'
+title: Boundary value problem for $u_{xx}+2u_{xy}+u_{yy}=0$
 classification:
   areas: [prelim]
   topics: []

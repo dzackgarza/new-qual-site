@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE44
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 44'
+title: Vibrating rectangular membrane with a single-mode initial profile
 classification:
   areas: [prelim]
   topics: []

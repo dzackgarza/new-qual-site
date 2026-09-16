@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE35
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 35'
+title: Expansion of $\delta''(x-x_0)/(1+x-x_0)$ in derivatives of $\delta$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE19
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 19'
+title: Power series solution of $x(2-x)y''+3(1-x)y'-y=0$ about $x=1$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE06
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 6'
+title: Repeated-root equation $y''-6y'+9y=0$ with boundary conditions
 classification:
   areas: [prelim]
   topics: []

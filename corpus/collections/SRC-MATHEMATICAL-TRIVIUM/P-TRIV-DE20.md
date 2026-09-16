@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE20
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 20'
+title: Frobenius series solution of a parabolic-coordinate radial equation
 classification:
   areas: [prelim]
   topics: []

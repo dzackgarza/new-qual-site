@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE11
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 11'
+title: Integrating factor for $(xy^2-y)\,dx+x\,dy=0$
 classification:
   areas: [prelim]
   topics: []

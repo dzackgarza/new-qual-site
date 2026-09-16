@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE09
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 9'
+title: Forced equation $y''+3y'+2y=\tanh x$ by variation of parameters
 classification:
   areas: [prelim]
   topics: []

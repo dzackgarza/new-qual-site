@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE18
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 18'
+title: Charge distribution of the Yukawa potential $e^{-ar}/r$
 classification:
   areas: [prelim]
   topics: []

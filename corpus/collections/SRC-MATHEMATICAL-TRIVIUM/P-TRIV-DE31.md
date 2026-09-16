@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE31
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 31'
+title: Eigenvalues of $(xu')'=-\lambda u/x$ with mixed boundary conditions
 classification:
   areas: [prelim]
   topics: []

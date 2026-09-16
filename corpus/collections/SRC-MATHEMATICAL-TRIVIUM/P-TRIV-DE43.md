@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE43
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 43'
+title: Helmholtz equation in a cube with Dirichlet boundary conditions
 classification:
   areas: [prelim]
   topics: []

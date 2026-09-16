@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE08
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 8'
+title: Forced equation $y''-3y'+2y=\sin x$
 classification:
   areas: [prelim]
   topics: []

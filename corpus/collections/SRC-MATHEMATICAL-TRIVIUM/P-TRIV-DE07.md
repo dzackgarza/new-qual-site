@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE07
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 7'
+title: Third-order equation $y'''-3y'+2y=0$
 classification:
   areas: [prelim]
   topics: []

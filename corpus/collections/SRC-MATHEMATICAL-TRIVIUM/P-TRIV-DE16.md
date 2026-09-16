@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE16
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 16'
+title: Oscillator $y''+16y=\theta(\pi-t)$ with Heaviside forcing
 classification:
   areas: [prelim]
   topics: []

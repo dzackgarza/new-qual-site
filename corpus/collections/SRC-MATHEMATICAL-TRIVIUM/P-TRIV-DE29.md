@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE29
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 29'
+title: Neumann eigenvalue problem for $y''+\lambda y=0$ on $[0,\pi]$
 classification:
   areas: [prelim]
   topics: []

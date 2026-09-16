@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE50
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 50'
+title: Radial harmonic functions in $\mathbb{R}^d$
 classification:
   areas: [prelim]
   topics: []

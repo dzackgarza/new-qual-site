@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE28
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 28'
+title: Series solution of Laguerre's equation
 classification:
   areas: [prelim]
   topics: []

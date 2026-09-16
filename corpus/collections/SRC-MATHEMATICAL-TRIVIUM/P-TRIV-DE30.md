@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE30
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 30'
+title: Eigenvalue problem for the Euler equation $x^2y''+3xy'+\lambda y=0$ on $[1,e]$
 classification:
   areas: [prelim]
   topics: []

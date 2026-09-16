@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE38
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 38'
+title: Distributional derivative of $\log x$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE02
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 2'
+title: Linear system $x'=-x+6y$, $y'=2x+3y$
 classification:
   areas: [prelim]
   topics: []

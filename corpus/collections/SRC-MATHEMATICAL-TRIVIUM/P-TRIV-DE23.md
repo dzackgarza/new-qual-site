@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE23
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 23'
+title: Integral solution of the modified Bessel equation of order zero
 classification:
   areas: [prelim]
   topics: []

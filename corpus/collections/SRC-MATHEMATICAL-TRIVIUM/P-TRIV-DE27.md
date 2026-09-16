@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE27
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 27'
+title: Self-adjoint forms of the Laguerre, Hermite and Chebyshev equations
 classification:
   areas: [prelim]
   topics: []

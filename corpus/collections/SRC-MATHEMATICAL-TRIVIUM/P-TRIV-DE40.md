@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE40
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 40'
+title: First-order PDE $xf_x-yf_y=0$ by characteristics
 classification:
   areas: [prelim]
   topics: []

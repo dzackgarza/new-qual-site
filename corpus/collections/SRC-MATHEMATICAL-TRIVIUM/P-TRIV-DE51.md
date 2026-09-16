@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE51
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 51'
+title: Grounded conducting sphere in a uniform electric field
 classification:
   areas: [prelim]
   topics: []

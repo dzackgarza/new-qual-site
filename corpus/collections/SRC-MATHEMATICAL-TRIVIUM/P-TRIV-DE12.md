@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE12
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 12'
+title: Laplace transform solution of $y'-y=e^{3t}$
 classification:
   areas: [prelim]
   topics: []

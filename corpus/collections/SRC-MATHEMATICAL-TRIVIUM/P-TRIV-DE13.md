@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE13
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 13'
+title: Laplace transform solution of $y''-3y'+2y=e^{3t}$
 classification:
   areas: [prelim]
   topics: []

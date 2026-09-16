@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE25
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 25'
+title: Recurrence relations for Bessel functions of the first kind
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE15
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 15'
+title: First-order equation $y'+2y=e^{-t}\theta(t)$ with Heaviside forcing
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE10
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 10'
+title: Riccati-type kinetics equation $C'=\alpha(a-C)(b-C)$
 classification:
   areas: [prelim]
   topics: []

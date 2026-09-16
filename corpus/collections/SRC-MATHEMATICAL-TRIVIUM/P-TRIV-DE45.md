@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE45
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 45'
+title: Steady temperature in a sphere with hemispheres at different temperatures
 classification:
   areas: [prelim]
   topics: []

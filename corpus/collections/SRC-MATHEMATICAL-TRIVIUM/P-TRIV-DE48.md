@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE48
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 48'
+title: Struck string with fixed ends
 classification:
   areas: [prelim]
   topics: []

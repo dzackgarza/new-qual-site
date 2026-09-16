@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE17
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 17'
+title: Green function of the damped harmonic oscillator
 classification:
   areas: [prelim]
   topics: []

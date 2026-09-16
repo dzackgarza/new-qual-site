@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE33
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 33'
+title: Composition of the Dirac delta with a function
 classification:
   areas: [prelim]
   topics: []

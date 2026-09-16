@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE01
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 1'
+title: Separable equation $y'=xe^{x^2-2\log y}$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE47
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 47'
+title: Heat equation on a rod with fixed end temperatures
 classification:
   areas: [prelim]
   topics: []

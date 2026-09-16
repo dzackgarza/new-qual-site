@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE14
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 14'
+title: Laplace transform solution of $y''-6y'+15y=2\sin 3t$
 classification:
   areas: [prelim]
   topics: []

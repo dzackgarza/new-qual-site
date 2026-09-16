@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE04
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 4'
+title: Bernoulli equation $y'=f(x)y+g(x)y^n$
 classification:
   areas: [prelim]
   topics: []

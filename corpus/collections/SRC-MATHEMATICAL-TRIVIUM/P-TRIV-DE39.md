@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE39
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 39'
+title: First-order PDE $f_x+af_y+(x-2y)f=0$ by characteristics
 classification:
   areas: [prelim]
   topics: []

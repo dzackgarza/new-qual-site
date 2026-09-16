@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE37
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 37'
+title: Green function of $-\frac{d^2}{dx^2}+m^2$ on the line
 classification:
   areas: [prelim]
   topics: []

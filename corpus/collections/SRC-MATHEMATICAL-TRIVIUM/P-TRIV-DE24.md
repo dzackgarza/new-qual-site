@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE24
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 24'
+title: Frobenius series for the Bessel functions $J_{\pm p}$
 classification:
   areas: [prelim]
   topics: []

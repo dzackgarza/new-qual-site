@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE36
 kind: problem
-title: 'Mathematical Trivium — Differential Equations problem 36'
+title: Boundary value problem $y''-3y'+2y=\delta(x-1)$
 classification:
   areas: [prelim]
   topics: []
