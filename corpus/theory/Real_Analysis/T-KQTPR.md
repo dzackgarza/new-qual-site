@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-KQTPR
 kind: theorem
-title: Open Mapping
+title: Open mapping theorem
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X, Y\in \Banach$ and $T:X\to Y$ is a surjective continuous operator, then $T$ is an open map.
+Let $X$ and $Y$ be [[D-BG455|Banach spaces]] and let $T\colon X\to Y$ be a continuous linear surjection.
+Then $T$ is an open map: $T(V)$ is open in $Y$ for every open $V\subseteq X$.
 :::
