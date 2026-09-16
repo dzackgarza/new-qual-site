@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A **field** is a commutative division ring, i.e. every nonzero element is a uni, i.e. every nonzero element is a unit
+A \dfn{field} is a commutative [[D-7O2CH|division ring]]: a commutative [[D-GURUB|ring]] with $1\neq 0$ in which every nonzero element is a [[D-QQIQZ|unit]].
 :::

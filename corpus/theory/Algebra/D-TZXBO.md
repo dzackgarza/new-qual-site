@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-TZXBO
 kind: definition
-title: Noetherian
+title: Noetherian ring
 classification:
   areas:
   - algebra
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A ring $R$ is **Noetherian** if the ACC holds: every ascending chain of ideals $I_1 \leq I_2 \cdots$ stabilizes in the sense that there exists some $N$ such that $I_N = I_{N+1} = \cdots$.
+A [[D-GURUB|ring]] $R$ is \dfn{Noetherian} if it satisfies the ascending chain condition on [[D-GOFWL|ideals]]: for every chain of ideals $I_1 \subseteq I_2 \subseteq \cdots$ of $R$ there exists $N\geq 1$ such that $I_N = I_{N+1} = \cdots$.
 :::
