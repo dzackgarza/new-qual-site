@@ -7,7 +7,7 @@ title: Theorems
 
 ## Calculus and series
 
-[[T-UW2GQ]]
+[[T-OXNTU]]
 
 [[T-2R7PC]]
 
