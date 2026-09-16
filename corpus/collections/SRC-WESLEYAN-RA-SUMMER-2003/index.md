@@ -37,10 +37,6 @@ source:
   - P-WESRA03-II5
 ---
 
-::: remark
-The retained compilation continues after the ten short-answer questions with five Part II problems.
-Part II Problem 3 is exactly the convergence-in-measure criterion already owned by `P-WESRA08-II4`, so this occurrence reuses that card.
-
-The deterministic MinerU Flash extraction does not settle the exact typography of Short Answer Question 9: it drops or displaces the limit attached to the integral.
-That card is retained from the earlier transcription but is not marked source-checked by the Flash audit.
+::: {.remark}
+Ten short-answer questions are followed by five Part II problems. Part II Problem 3 is the same problem as [[P-WESRA08-II4]].
 :::
