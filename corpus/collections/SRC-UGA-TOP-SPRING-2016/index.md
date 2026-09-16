@@ -31,6 +31,6 @@ source:
     year: 2016
 ---
 
-::: remark
-Exam #1 repeats the connected-product theorem from Spring 2015 #1 and reuses [[P-43KOX]].
+::: {.remark}
+Problem 1 is the same problem as Spring 2015 Problem 1, on products of connected spaces.
 :::
