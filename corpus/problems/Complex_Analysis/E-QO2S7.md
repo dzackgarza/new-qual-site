@@ -19,14 +19,12 @@ audit:
   date: 2026-08-17
 ---
 
-::: {.proposition}
-For $\Omega\subseteq\CC$, show that $A(\CC)\definedas \theset{f: \Omega \to \CC \st f\text{ is bounded}}$ is a Banach space.
+::: {.problem}
+For an open set $\Omega\subseteq\CC$, show that $A(\Omega)\definedas \theset{f: \Omega \to \CC \st f\text{ is holomorphic and bounded}}$, with the supremum norm, is a Banach space.
 :::
 
-::: {.proof}
-?
-
-> Apply Morera's Theorem and Cauchy's Theorem
+::: {.hint}
+Apply Morera's theorem and Cauchy's theorem.
 :::
 
 ::: {.solution}
