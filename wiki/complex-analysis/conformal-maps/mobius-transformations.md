@@ -9,7 +9,7 @@ topics:
 
 # Möbius transformations
 
-## What conformal means
+## Conformal maps
 
 [[D-TM4TE]]
 
@@ -17,31 +17,27 @@ topics:
 
 [[FE-O47RH]]
 
-:::{.remark title="Holomorphic with nonvanishing derivative is conformal"}
-Write $f(z+\eps) = f(z) + \eps f'(z) + \bigo(\eps^2)$, so that
-\[
-\Arg(f(z+\eps) - f(z)) \approx \Arg(\eps f'(z)) = \Arg(\eps) + \Arg(f'(z))\to \Arg(f'(z))
-.\]
-Every tangent vector at $z_0$ is rotated by approximately the same angle, so the angles between them are preserved.
+::: {.remark title="Holomorphic with nonvanishing derivative is conformal"}
+Let $f$ be holomorphic at $z_0$ with $f'(z_0)\neq 0$, and let $\gamma$ be a smooth curve with $\gamma(0)=z_0$ and $\gamma'(0)\neq 0$.
+By the chain rule $(f\circ\gamma)'(0) = f'(z_0)\,\gamma'(0)$, so $f$ multiplies every tangent vector at $z_0$ by the same nonzero complex number $f'(z_0)$: it rotates by $\arg f'(z_0)$ and scales by $\abs{f'(z_0)}$.
+Hence the signed angle between two curves through $z_0$ equals the signed angle between their images.
 
 :::
 
-:::{.fact title="Checking conformality"}
+::: {.fact title="Checking conformality"}
 Once holomorphy is known, it suffices to check $f'(p)\neq 0$.
 
 :::
 
-:::{.warnings}
-Do not replace complex differentiability by invertibility of the real derivative.  The
-map $f(z)=\bar z$ has an invertible real Jacobian, but it fails the Cauchy--Riemann
-equations, has no complex derivative, and reverses orientation.  Thus the test
-$f'(z)\neq0$ presupposes that \(f\) is holomorphic.
+::: {.example title="Complex conjugation"}
+The map $f(z)=\bar z$ has invertible real Jacobian $\operatorname{diag}(1,-1)$ at every point, but it fails the Cauchy--Riemann equations, so it has no complex derivative.
+It reverses signed angles and is not conformal.
 
 :::
 
-:::{.remark title="Inverses come for free"}
-A bijective holomorphic map has a holomorphic inverse, and this weakens: an *injective* holomorphic map has $f'(z)\neq 0$ throughout, and its inverse is well defined and holomorphic on the image.
-The self-biholomorphisms of a domain $\Omega$ therefore form a group $\Aut_\CC(\Omega)$, computed for the disc in [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
+::: {.remark title="Inverses"}
+An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $f\inv\colon f(U)\to U$ is holomorphic ([[C-FVT4V]]).
+The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 :::
 
@@ -49,22 +45,23 @@ The self-biholomorphisms of a domain $\Omega$ therefore form a group $\Aut_\CC(\
 
 [[D-FRVBV]]
 
-:::{.remark title="As projective linear automorphisms"}
+::: {.remark title="As projective linear automorphisms"}
 Since $\Aut(\CP^1) \cong \PGL_2(\CC)$, acting on projective coordinates gives a matrix representation:
-\[
+$$
 \matt a b c d \cdot \tv{z: 1}^t = \tv{ {az+b \over cz + d }: 1} = \tv{f(z): 1}
-.\]
-This is the fastest way to invert one: invert the matrix and ignore the determinant, which only scales every entry.
-\[
+.$$
+Nonzero scalar multiples of a matrix give the same transformation, so the inverse transformation is given by the adjugate matrix:
+$$
 {az + b\over cz+ d} \leadsto \matt a b c d \inv = \matt d {-b} {-c} a
 \leadsto
 {dw-b \over -cw + a}
-.\]
+.$$
 
 :::
 
-:::{.remark}
-A Möbius transformation fixing three points is the identity, which is the uniqueness half of the next statement.
+::: {.remark}
+A Möbius transformation $z\mapsto (az+b)/(cz+d)$ fixing three distinct points of $\CC$ is the identity: its fixed points in $\CC$ are the roots of $cz^2 + (d-a)z - b = 0$, and a polynomial of degree at most $2$ with three roots is zero, so $c=b=0$ and $a=d$.
+This gives the uniqueness in [[PR-74KHY]].
 
 :::
 
@@ -76,27 +73,23 @@ A Möbius transformation fixing three points is the identity, which is the uniqu
 
 [[FF-W4FFF]]
 
-:::{.example}
+::: {.example title="Maps given by cross ratios"}
 \envlist
 
-- $(z, i, 1, -1): \DD\to \HH$
-- $(z, 0, -1, 1): \DD \intersect \HH \to Q_1$
+- $z\mapsto(z, i, 1, -1)$ maps $\DD$ onto $\HH$.
+
+- $z\mapsto(z, 0, -1, 1)$ maps $\DD \intersect \HH$ onto the first quadrant $Q_1$.
 
 :::
 
 ## Classification and standard images
 
-The standard maps are best remembered as a small composition toolkit rather than as a
-table of unrelated formulas.  Möbius transformations move discs and half-planes while
-preserving generalized circles; power maps multiply arguments and therefore open or
-close sectors; a chosen logarithm branch turns angular width into vertical width and
-maps sectors to strips; exponentials reverse that last step.  Most exam maps are a
-composition of two or three of these operations, chosen by following the boundary.
+Möbius transformations map generalized circles to generalized circles, and hence map discs and half-planes onto discs and half-planes.
+A branch of $z\mapsto z^\alpha$ on a sector of opening $\theta$ at $0$, with $\alpha\theta\leq 2\pi$, maps it onto a sector of opening $\alpha\theta$.
+A branch of $\log$ maps the sector $\ts{\theta_1<\arg z<\theta_2}$ onto the strip $\ts{\theta_1<\Im w<\theta_2}$, and $\exp$ is its inverse.
 
-The Cayley transform is the basic disc/half-plane bridge.  After moving a distinguished
-interior point to \(0\), disc automorphisms give the remaining normalization freedom;
-the Riemann mapping theorem says that for a simply connected proper domain some such
-biholomorphism with the disc exists even when no elementary formula is available.
+The Cayley transform maps $\HH$ onto $\DD$.
+Any two biholomorphisms of an open set onto $\DD$ differ by an automorphism of $\DD$, and the Riemann mapping theorem gives the existence of one for every simply connected open $\Omega\subsetneq\CC$.
 
 [[T-77SHB]]
 
@@ -108,17 +101,13 @@ biholomorphism with the disc exists even when no elementary formula is available
 
 [[PR-FL6T7]]
 
-For explicit polygonal-looking domains, work with angles.  A power \(z^\alpha\) sends a
-sector of opening \(\theta\) to one of opening \(\alpha\theta\); once a sector has been
-straightened to a half-plane, use Cayley to reach the disc.  If the target is a strip,
-choose a logarithm branch whose argument interval is exactly the desired vertical
-interval.
+A sector of opening $\theta$ is mapped onto a half-plane by a power map with $\alpha = \pi/\theta$, and then onto $\DD$ by the Cayley transform; it is mapped onto a strip by a branch of $\log$ whose argument interval is that of the sector.
 
-:::{.remark}
-The map $z\mapsto {z-i\over z+i}$ that is sometimes written instead is the composition of the above with $z\mapsto -z$:
-\[
+::: {.remark}
+The map $z\mapsto {z-i\over z+i}$ is also used as the Cayley transform; it is the composition of $F(z) = (i-z)/(i+z)$ from [[T-77SHB]] with $w\mapsto -w$:
+$$
 - {i-z \over i + z} = {z-i \over i+z} = {z-i \over z+i}
-.\]
+.$$
 
 :::
 
@@ -132,15 +121,16 @@ The map $z\mapsto {z-i\over z+i}$ that is sometimes written instead is the compo
 
 [[PR-XCDL5]]
 
-:::{.remark title="The logarithm"}
-This extends to $\CC\sm\RR^{\leq 0} \to \RR \cross (-\pi, \pi)$: circles of radius $R$ map to vertical segments joining $\ln R + i\pi$ to $\ln R - i\pi$, and rays map to horizontal lines.
+::: {.remark title="The logarithm"}
+The principal branch $\Log$ maps $\CC\sm\RR^{\leq 0}$ onto $\RR \cross (-\pi, \pi)$: the part of the circle of radius $R$ in the slit plane maps to the open vertical segment from $\ln R - i\pi$ to $\ln R + i\pi$, and rays from $0$ map to horizontal lines.
 
-Other images worth having:
-\[
+It also maps
+$$
+\begin{aligned}
 \ts{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \RR^{<0} \cross (0, \pi ) \\
 \ts{ z \st \abs{z} > 1,\, \Im(z) > 0 } &\mapstofrom \RR^{>0} \cross (0, \pi )
-.\]
-For the upper half disc to the negative half strip, follow the boundary: as $x$ runs $0\to 1$ in $\RR$, $\log x$ runs $-\infty \to 0$; as $x$ runs from $-1$ to $1$ along $S^1\intersect\HH$, $\log x$ runs from $0$ to $i\pi$ vertically; as $x$ runs $-1 \to 0$, $\log x$ runs from $i\pi$ out to $-\infty + i\pi$ along the top.
+\end{aligned}.$$
+On the boundary of the upper half disc: as $x$ runs from $0$ to $1$ in $\RR$, $\Log x$ runs from $-\infty$ to $0$; as $z$ runs from $1$ to $-1$ along $S^1\intersect\overline\HH$, $\Log z$ runs from $0$ to $i\pi$ vertically; as $x$ runs from $-1$ to $0$, $\Log x$, extended continuously from $\HH$, runs from $i\pi$ to $-\infty + i\pi$.
 
 :::
 
@@ -150,4 +140,4 @@ For the upper half disc to the negative half strip, follow the boundary: as $x$ 
 
 [[PR-KKU6N]]
 
-Which of these to reach for is [[complex-analysis/conformal-maps/build-me-a-map|Build me a map]].
+Compositions of these maps between standard regions are on [[complex-analysis/conformal-maps/build-me-a-map|Build me a map]].
