@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 A space $X$ is constructed by gluing up the solid hexagonal prism: the hexagonal faces are glued using translation and a 60 degree rotation, and the opposite sides of the prism are glued in pairs via translation.
 Calculate the integral homology of $X$.
+:::
 
 ::: {.solution}
 <1>1. Pairing the three opposite rectangular sides of the prism by translations turns each horizontal hexagonal cross-section into a torus $T^2$.

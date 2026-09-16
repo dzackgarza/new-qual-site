@@ -15,8 +15,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X = S^1 \cross S^1$ and $A\subset X$ be a subspace with $A \cong S^1 \vee S^1$.
 Show that there is no retraction from $X$ to $A$.
+:::
 
 ::: {.solution}
 We have $\pi_1(S^1 \cross S^1) = \pi_1(S^1) \cross \pi_1(S^1)$ since $S^1$ is path-connected (by a lemma from the problem sets), and this equals $\ZZ \cross \ZZ$.

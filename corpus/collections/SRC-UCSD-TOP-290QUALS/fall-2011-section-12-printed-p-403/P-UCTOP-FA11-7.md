@@ -16,9 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Let $L(p)$ be a space whose integral homology groups are $\mathbb{Z}, \mathbb{Z}_p, 0, \mathbb{Z}$ in dimensions 0, 1, 2, 3, and zero otherwise.
 Let $\Sigma$ denote the suspension of a space.
 Compute the cohomology $H^*(\Sigma L(p) \times \Sigma L(q))$.
+:::
 
 ::: {.solution}
 <1>1. Homology and cohomology of the suspension $\Sigma L(p)$:

@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 90 degree rotations.
 Compute the homology $H_*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. Under the quarter-turn face pairings, the quotient CW structure has two $0$-cells, four $1$-cells, three $2$-cells, and one $3$-cell.

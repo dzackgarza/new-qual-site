@@ -12,9 +12,11 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Consider the set $L$ of 3-manifolds which can be formed by gluing together the boundaries of two solid tori $S^1 \times B^2$ using a homeomorphism.
 Consider the function $d : L \to \mathbb{N}$ given by the total dimension of its mod-5 homology: $d(M) = \sum \dim H_i(M; \mathbb{Z}_5)$.
 What is the maximal value of $d$?
+:::
 
 ::: {.solution}
 <1>1. Every manifold obtained by gluing two solid tori is a closed connected orientable $3$-manifold admitting a genus-$1$ Heegaard splitting.

@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X$ be $T^2$ with a 2-cell attached to the interior along a longitude.
 Compute $\pi_2(X)$.
+:::
 
 ::: {.solution}
 Useful facts:

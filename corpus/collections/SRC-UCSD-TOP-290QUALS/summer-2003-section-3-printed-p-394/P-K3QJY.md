@@ -18,7 +18,9 @@ audit:
   note: Replaced the erroneous pi_0 calculation and scratchpad TODO with the homotopy-LES/Hurewicz argument.
 ---
 
+::: {.problem}
 Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.
+:::
 
 ::: {.solution}
 <1>1. The total space $E$ is path connected and satisfies

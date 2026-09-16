@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Let $X$ be the CW complex formed by attaching $k$ two-cells $e_1^2, \ldots, e_k^2$ to the circle $S^1$ via attaching maps with degrees $n_1, n_2, \ldots, n_k$.
 Compute $\pi_2(X)$ in terms of $n_1, \ldots, n_k$.
+:::
 
 ::: {.solution}
 <1>1. Compute the fundamental group $\pi_1(X)$: <2>1. $X$ has a cell presentation with one 0-cell, one 1-cell $a$, and $k$ 2-cells attached with degrees $n_1, \dots, n_k$.

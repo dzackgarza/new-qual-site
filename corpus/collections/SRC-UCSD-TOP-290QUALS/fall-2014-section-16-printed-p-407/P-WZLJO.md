@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Suppose $f\colon M\to N$ is a map of non-zero degree between two closed connected oriented $n$-manifolds.
 Prove that for any field $F$, the induced map $f^*\colon H^*(N;F)\to H^*(M;F)$ is injective.
+:::
 
 ::: {.solution}
 <1>1. Fix a degree $k$ and a nonzero class $0\ne\alpha\in H^k(N;F)$.

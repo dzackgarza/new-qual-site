@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X = K \times K$ be the product of the Klein bottle $K$ with itself.
 Compute the homology $H_*(X; \mathbb{Z})$ and cohomology $H^*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. The integral homology of the Klein bottle is

@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Let $f, g : X \to S^2$ be continuous maps such that for all $x$ in $X$, $f(x)$ is not antipodal to $g(x)$.
 Show that $f$ is homotopic to $g$.
+:::
 
 ::: {.solution}
 <1>1. For each $x \in X$, $f(x)$ and $g(x)$ are not antipodal, so the segment from $f(x)$ to $g(x)$ does not pass through the origin.

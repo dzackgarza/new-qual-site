@@ -22,7 +22,9 @@ audit:
   date: 2026-09-04
 ---
 
+::: {.problem}
 For each ordered pair of distinct spaces among $S^2$, $T^2$, and the Klein bottle $K$, determine whether a covering map from the first space to the second can exist.
+:::
 
 :::{.solution}
 <1>1. None of the four covering maps involving $S^2$ and one of $T^2,K$ can exist.

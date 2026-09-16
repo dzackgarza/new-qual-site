@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X = \RR^3 - \Delta^{(1)}$, the complement of the skeleton of regular tetrahedron, and compute $\pi_1(X)$ and $H_*(X)$.
+:::
 
 ::: {.solution}
 Lay the graph out flat in the plane, then take a maximal tree - these leaves 3 edges, and so $\pi_1(X) = \ZZ^{\ast 3}$.

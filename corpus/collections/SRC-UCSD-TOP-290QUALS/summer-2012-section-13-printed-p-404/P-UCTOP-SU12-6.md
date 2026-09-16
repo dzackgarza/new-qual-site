@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that there exists a degree 1 map from $T^3 = S^1 \times S^1 \times S^1$ to $S^3$, but not vice versa.
+:::
 
 ::: {.solution}
 <1>1. Choose an embedded closed $3$-ball $B^3\subset T^3$ and collapse its complement to a point:

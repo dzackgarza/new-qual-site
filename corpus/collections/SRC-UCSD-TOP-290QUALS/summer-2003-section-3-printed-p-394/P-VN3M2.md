@@ -15,7 +15,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Compute the homology and cohomology of a closed, connected, oriented 3-manifold $M$ with $\pi_1(M) = \ZZ^{\ast 2}$.
+:::
 
 ::: {.solution}
 Facts used:

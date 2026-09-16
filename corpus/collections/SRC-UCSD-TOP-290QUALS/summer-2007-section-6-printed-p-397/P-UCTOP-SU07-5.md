@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 On any closed surface $\Sigma_g$ of genus $g \geq 1$, it is possible to find a pair of simple closed curves (submanifolds homeomorphic to $S^1$) meeting transversely once.
 Use this fact together with intersection theory to show that any map $S^2 \to \Sigma_g$ has degree zero.
+:::
 
 ::: {.solution}
 <1>1. Choose oriented simple closed curves $\alpha,\beta\subset\Sigma_g$ meeting transversely in exactly one point.

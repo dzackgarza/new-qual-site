@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 How many distinct double covers does $\mathbb{RP}^3 \times S^1$ have?
 Can you identify any of them?
+:::
 
 ::: {.solution}
 <1>1. We have

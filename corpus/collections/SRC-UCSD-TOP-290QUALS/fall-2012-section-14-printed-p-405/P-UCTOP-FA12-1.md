@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X_n$ be the bouquet of $n$ circles, whose fundamental group (based at the vertex of the bouquet) is the free group $F_n$ on $n$ generators.
 Show that $X_4$ cannot cover $X_3$, but that $X_5$ can.
+:::
 
 ::: {.solution}
 <1>1. If a connected finite graph $Y$ is a $d$-sheeted cover of $X_3$, then

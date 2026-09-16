@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Let $M^{2n}$ be a closed orientable even-dimensional manifold.
 Show that its Euler characteristic is odd if and only if the dimension of $H_n(M; \mathbb{Q})$ is odd, and that consequently a closed manifold of dimension $4n + 2$ with odd Euler characteristic must be non-orientable.
+:::
 
 ::: {.solution}
 **Goal.** For a closed orientable $2n$-manifold $M$, relate the parity of $\chi(M)$ to $\dim H_n(M;\QQ)$, and deduce a non-orientability statement in dimension $4n+2$.

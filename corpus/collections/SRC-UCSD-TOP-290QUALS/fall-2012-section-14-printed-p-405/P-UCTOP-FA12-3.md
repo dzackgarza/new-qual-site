@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $Y$ be a space whose homology groups vanish except for $H_0(Y; \mathbb{Z}) = \mathbb{Z}$ and $H_2(Y; \mathbb{Z}) = \mathbb{Z}_4$.
 Compute the homology $H_*(\mathbb{RP}^2 \times Y; \mathbb{Z})$ and cohomology $H^*(\mathbb{RP}^2 \times Y; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. The only nonzero integral homology groups of the factors are

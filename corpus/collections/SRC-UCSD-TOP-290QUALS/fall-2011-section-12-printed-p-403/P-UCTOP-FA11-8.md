@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that there is no self-map of $\mathbb{CP}^2 \times \mathbb{CP}^2$ having degree $-1$.
+:::
 
 ::: {.solution}
 <1>1. Write

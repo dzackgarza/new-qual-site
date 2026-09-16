@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Construct a space whose integral homology groups are $\mathbb{Z}, \mathbb{Z}_5, \mathbb{Z}_5, \mathbb{Z}$ in dimensions 0, 1, 2, 3, and zero otherwise.
 Does there exist a closed orientable 3-manifold with these homology groups?
+:::
 
 ::: {.solution}
 <1>1. Let

@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Use the Hurewicz theorem to calculate $\pi_3(\mathbb{RP}^3 \vee S^3)$.
+:::
 
 ::: {.solution}
 <1>1. The universal cover of

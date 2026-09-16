@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Compute the first, second and third homotopy groups of $X = \mathbb{RP}^2 \times S^1 \times S^1$.
+:::
 
 ::: {.solution}
 <1>1. The fundamental group is

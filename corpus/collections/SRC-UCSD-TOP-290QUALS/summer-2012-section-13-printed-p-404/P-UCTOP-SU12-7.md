@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that the second homology group $H_2(X; \mathbb{Z})$ of a closed, path-connected, simply-connected 4-manifold $X$ is free and has rank $\chi(X) - 2$, where $\chi(X)$ is the Euler characteristic.
+:::
 
 ::: {.solution}
 <1>1. The manifold $X$ is orientable.
