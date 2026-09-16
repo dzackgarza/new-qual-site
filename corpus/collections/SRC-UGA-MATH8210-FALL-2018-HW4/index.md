@@ -26,4 +26,4 @@ source:
     year: 2018
 ---
 
-The retained file is named `HW4.pdf` and was produced on November 4, 2018, but its internal heading repeats `Homework 3`. It is distinct from the October 3 `HW3.pdf` packet and contains a different five-problem assignment.
+The file is named `HW4.pdf` and dated November 4, 2018, but its heading reads "Homework 3". It is a different five-problem assignment from the Homework 3 of October 3, 2018.
