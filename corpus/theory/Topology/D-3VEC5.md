@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-3VEC5
 kind: definition
-title: Acyclic
+title: Acyclic spaces and chain complexes
 classification:
   areas:
   - topology
@@ -14,10 +14,15 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **acyclic** iff its reduced homology vanishes in every degree, $\tilde H_n(X;\ZZ) = 0$ for all $n$, i.e. iff $X$ has the homology of a point.
-A chain complex is acyclic iff it is exact, i.e. iff all of its homology groups vanish.
+A topological space $X$ is \dfn{acyclic} if its reduced singular homology vanishes, $\tilde H_n(X;\ZZ) = 0$ for all $n$.
+A chain complex $(C_*, \del)$ is \dfn{acyclic} if $H_n(C_*) = 0$ for all $n$.
+:::
+
+::: {.remark}
+A nonempty space is acyclic if and only if the map to a point induces isomorphisms on all homology groups.
+A chain complex is acyclic if and only if it is [[D-STPAM|exact]].
 :::
 
 ::: {.concept}
-See Hatcher, p. 142.
+[@Hat02, p. 142].
 :::
