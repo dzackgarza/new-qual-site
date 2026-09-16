@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-IYDZU
 kind: definition
-title: Pointwise Convergence
+title: Pointwise convergence
 classification:
   areas:
   - real-analysis
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-A sequence of functions \( \ts{ f_j } \)  is said to **converge pointwise** to \( f \) if and only if 
-\[  
-(\forall \varepsilon>0)(\forall x \in S)\left(\exists n_{0} = n_0(x, \eps) \right)\left(\forall n>n_{0}\right)\left(\left|f_{n}(x)-f(x)\right|<\varepsilon\right)
-.\]
+::: {.definition}
+Let $S$ be a set, and let $f_n\colon S\to\CC$ for $n\geq 1$ and $f\colon S\to\CC$ be functions.
+The sequence $(f_n)$ \dfn{converges pointwise} to $f$ on $S$ if
+$$
+(\forall \varepsilon>0)\,(\forall x \in S)\,(\exists n_0 = n_0(x, \varepsilon))\,(\forall n>n_0)\quad \abs{f_n(x)-f(x)}<\varepsilon.
+$$
 :::
