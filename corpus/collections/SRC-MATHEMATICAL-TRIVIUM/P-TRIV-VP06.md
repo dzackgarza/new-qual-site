@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP06
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 6'
+title: Euler--Lagrange equations for a particle in a potential
 classification:
   areas: [prelim]
   topics: []

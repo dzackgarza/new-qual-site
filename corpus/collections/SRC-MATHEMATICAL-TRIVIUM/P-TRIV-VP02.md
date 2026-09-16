@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP02
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 2'
+title: Extremal of $\int_0^{\pi/2}(f'^2-f^2)\,dx$ with fixed endpoints
 classification:
   areas: [prelim]
   topics: []

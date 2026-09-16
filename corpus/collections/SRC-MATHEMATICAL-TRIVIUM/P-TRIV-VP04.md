@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP04
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 4'
+title: Minimal surface of revolution
 classification:
   areas: [prelim]
   topics: []

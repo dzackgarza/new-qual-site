@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP01
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 1'
+title: Fubini instanton for the potential $-\frac\lambda4 f^4$
 classification:
   areas: [prelim]
   topics: []

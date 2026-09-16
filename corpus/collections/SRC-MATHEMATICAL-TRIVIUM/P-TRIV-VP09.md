@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP09
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 9'
+title: Variational principle for the biharmonic equation
 classification:
   areas: [prelim]
   topics: []

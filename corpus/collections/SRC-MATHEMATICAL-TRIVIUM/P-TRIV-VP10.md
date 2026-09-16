@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP10
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 10'
+title: Natural boundary conditions from a boundary term in the functional
 classification:
   areas: [prelim]
   topics: []

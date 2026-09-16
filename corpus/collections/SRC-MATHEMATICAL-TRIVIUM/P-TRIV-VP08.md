@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP08
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 8'
+title: Variational principle for Poisson's equation
 classification:
   areas: [prelim]
   topics: []

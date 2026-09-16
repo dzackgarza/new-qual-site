@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP11
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 11'
+title: Natural boundary conditions for free-boundary extremals
 classification:
   areas: [prelim]
   topics: []

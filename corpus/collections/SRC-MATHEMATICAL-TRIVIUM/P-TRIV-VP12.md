@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP12
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 12'
+title: Action functionals for the time-dependent and stationary Schrödinger equations
 classification:
   areas: [prelim]
   topics: []

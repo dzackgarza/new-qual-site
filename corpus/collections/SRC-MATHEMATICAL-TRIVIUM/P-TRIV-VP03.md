@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP03
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 3'
+title: Brachistochrone
 classification:
   areas: [prelim]
   topics: []

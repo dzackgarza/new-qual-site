@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP07
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 7'
+title: Dirichlet energy and Laplace's equation
 classification:
   areas: [prelim]
   topics: []

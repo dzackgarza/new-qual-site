@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP13
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 13'
+title: Gaussian variational ansatz for the harmonic oscillator ground state
 classification:
   areas: [prelim]
   topics: []

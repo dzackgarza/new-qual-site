@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP15
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 15'
+title: Derrick's theorem
 classification:
   areas: [prelim]
   topics: []

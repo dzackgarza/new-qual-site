@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-VP05
 kind: problem
-title: 'Mathematical Trivium — Variational Principle problem 5'
+title: Extremal of $\int_0^1(360x^2f-f''^2)\,dx$ with clamped endpoints
 classification:
   areas: [prelim]
   topics: []
