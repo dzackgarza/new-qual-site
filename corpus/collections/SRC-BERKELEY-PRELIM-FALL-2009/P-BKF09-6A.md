@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-6A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 6A
+title: Finite continued fractions as ratios of determinants
 classification:
   areas:
   - prelim

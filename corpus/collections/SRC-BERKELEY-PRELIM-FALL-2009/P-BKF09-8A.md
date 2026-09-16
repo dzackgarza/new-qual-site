@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-8A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 8A
+title: Number of fifth powers in $\mathbb Z/6464\mathbb Z$
 classification:
   areas:
   - prelim

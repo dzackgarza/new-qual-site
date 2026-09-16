@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-9B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 9B
+title: Functions with positive Laplacian have no local maximum
 classification:
   areas:
   - prelim

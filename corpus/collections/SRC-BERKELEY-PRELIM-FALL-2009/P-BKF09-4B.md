@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-4B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 4B
+title: Two-colorings of the edges of a tetrahedron up to rotation
 classification:
   areas:
   - prelim

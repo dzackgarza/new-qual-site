@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-1B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 1B
+title: Convergence of the improper integral $\int_1^\infty x^2\cos(x^\beta)\,dx$
 classification:
   areas:
   - prelim

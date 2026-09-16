@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-6B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 6B
+title: The numerical range of a normal matrix is a convex polygon
 classification:
   areas:
   - prelim

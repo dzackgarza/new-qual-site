@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-7A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 7A
+title: The Schwarzian derivative is holomorphic at a simple pole
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-7B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 7B
+title: Evaluation of $\int_0^{2\pi} d\theta/(1-2\alpha\cos\theta+\alpha^2)$
 classification:
   areas:
   - prelim

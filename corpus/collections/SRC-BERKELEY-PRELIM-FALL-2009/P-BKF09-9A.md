@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-9A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 9A
+title: Locally uniform convergence of $(1+z/n)^n$ to $e^z$
 classification:
   areas:
   - prelim

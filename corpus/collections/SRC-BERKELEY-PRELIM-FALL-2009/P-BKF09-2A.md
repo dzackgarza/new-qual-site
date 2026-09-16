@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-2A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 2A
+title: No polynomial in the entries of a $2\times2$ matrix always gives an eigenvalue
 classification:
   areas:
   - prelim

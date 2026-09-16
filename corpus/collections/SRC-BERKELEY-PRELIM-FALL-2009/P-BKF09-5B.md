@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-5B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 5B
+title: Solution of $xy'+y=y^2$ with $y(1)=2$
 classification:
   areas:
   - prelim

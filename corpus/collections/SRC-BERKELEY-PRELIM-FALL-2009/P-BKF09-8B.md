@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-8B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 8B
+title: Which of $\mathbb R^*$, $\mathbb C^*$, $C_2\times C_3$, $S_4$, $\operatorname{SL}_2(\mathbb R)$ contain a copy of $C_6$
 classification:
   areas:
   - prelim
