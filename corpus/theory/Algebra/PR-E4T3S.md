@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $f \in \QQ[x]$ be a monic irreducible quartic with [[D-W3DSO|discriminant]] $\Delta$ and [[D-4DWC5|resolvent cubic]] $R_4$, and let $G \leq S_4$ be the Galois group of a splitting field of $f$ over $\QQ$ [@Hun74, p. 273].
+Let $f \in \QQ[x]$ be a monic irreducible quartic with [[D-W3DSO|discriminant]] $\Delta$ and [[D-4DWC5|resolvent cubic]] $R_4$, and let $G \leq S_4$ be the Galois group of a splitting field of $f$ over $\QQ$ [@Hun74].
 
 - If $\sqrt{\Delta} \in \QQ$, then $G = A_4$ or $G = V_4 \cong C_2^2$: $G = A_4$ if $R_4$ is irreducible over $\QQ$, and $G = V_4$ otherwise.
 

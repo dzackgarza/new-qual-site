@@ -17,7 +17,7 @@ review: draft
 
 ::: {.fact}
 Let $k$ be an algebraically closed field and $f\colon X\to Y$ a morphism of projective varieties over $k$.
-If $f$ is injective on closed points and the differential $df_p\colon T_pX\to T_{f(p)}Y$ is injective for every closed point $p\in X$, then $f$ is a closed immersion [@Har10a, Proposition II.7.3 and Lemma II.7.4].
+If $f$ is injective on closed points and the differential $df_p\colon T_pX\to T_{f(p)}Y$ is injective for every closed point $p\in X$, then $f$ is a closed immersion [@Har10a].
 :::
 
 ::: {.remark}

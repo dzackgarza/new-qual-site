@@ -38,5 +38,5 @@ The form $\inner x y = x_1y_1$ on $\RR^2$ is degenerate, with nullspace $\RR e_2
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, §8.4, Lemma 8.4.2, Proposition 8.4.4 and Theorem 8.4.5, pp. 235-238. The formulation over an arbitrary field, through the adjoint $V \to V\dual$, is [[D-O4WWN]].
+See [@Art11]. The formulation over an arbitrary field, through the adjoint $V \to V\dual$, is [[D-O4WWN]].
 :::

@@ -43,5 +43,5 @@ This preserves the rank of $A$ and, for $k=\RR$ and a symmetric form, its signat
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, §8.1, (8.1.4) and Proposition 8.1.5, pp. 229-230; the change-of-basis rule is Proposition 8.1.7 and Corollary 8.1.8.
+See [@Art11].
 :::

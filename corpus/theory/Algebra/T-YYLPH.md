@@ -22,5 +22,5 @@ By induction, $R[x_1, \ldots, x_n]$ is Noetherian for every $n$; in particular e
 :::
 
 ::: {.concept}
-[@DF04, §9.6, Theorem 21].
+[@DF04].
 :::

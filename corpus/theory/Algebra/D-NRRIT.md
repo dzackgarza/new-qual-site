@@ -30,5 +30,5 @@ If $V$ has basis $e_1,\ldots,e_n$, then in the coordinates $x=\sum_i x_ie_i$ the
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, ch. 8.
+See [@Art11].
 :::

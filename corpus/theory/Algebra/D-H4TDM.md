@@ -32,5 +32,5 @@ Let $k$, $V$, $\mathcal B$, $b$, and $G$ be as in the definition, and write $[x]
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, ch. 8.
+See [@Art11].
 :::

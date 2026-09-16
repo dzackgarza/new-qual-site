@@ -31,5 +31,5 @@ If $\dim_k V = n< \infty$, then $\dim_k V^{\vee}=n$, so the adjoint map is injec
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, ch. 8.
+See [@Art11].
 :::
