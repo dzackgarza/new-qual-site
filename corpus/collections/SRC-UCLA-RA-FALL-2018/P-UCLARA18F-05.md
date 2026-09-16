@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-05
 kind: problem
-title: UCLA analysis Fall 2018, Problem 5
+title: Pointwise limits of continuous functions converge locally uniformly on a dense set
 classification:
   areas:
   - real-analysis

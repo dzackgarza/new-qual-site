@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-06
 kind: problem
-title: UCLA analysis Fall 2018, Problem 6
+title: Wiener's theorem on translates in $L^2(\mathbb R)$
 classification:
   areas:
   - real-analysis

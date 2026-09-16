@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-09
 kind: problem
-title: UCLA analysis Fall 2018, Problem 9
+title: Residues and Taylor coefficients of $\pi z\cot\pi z$
 classification:
   areas:
   - real-analysis

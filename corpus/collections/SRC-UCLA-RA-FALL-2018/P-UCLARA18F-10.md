@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-10
 kind: problem
-title: UCLA analysis Fall 2018, Problem 10
+title: Evaluation of $\int_0^\infty\frac{x^\beta}{1+x^2}\,dx$
 classification:
   areas:
   - real-analysis

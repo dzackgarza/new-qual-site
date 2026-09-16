@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-03
 kind: problem
-title: UCLA analysis Fall 2018, Problem 3
+title: Portmanteau theorem for continuity sets
 classification:
   areas:
   - real-analysis

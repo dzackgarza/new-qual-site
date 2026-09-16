@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-04
 kind: problem
-title: UCLA analysis Fall 2018, Problem 4
+title: Unique ergodicity of irrational rotations of the circle
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-07
 kind: problem
-title: UCLA analysis Fall 2018, Problem 7
+title: Entire functions with integrable $\log|f|$ are constant
 classification:
   areas:
   - real-analysis

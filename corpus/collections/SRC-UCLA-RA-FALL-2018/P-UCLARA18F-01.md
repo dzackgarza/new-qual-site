@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-01
 kind: problem
-title: UCLA analysis Fall 2018, Problem 1
+title: $L^1$ convergence from almost everywhere convergence with weighted $L^1$ and $L^2$ bounds
 classification:
   areas:
   - real-analysis

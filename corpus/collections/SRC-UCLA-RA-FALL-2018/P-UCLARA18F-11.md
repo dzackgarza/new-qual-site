@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-11
 kind: problem
-title: UCLA analysis Fall 2018, Problem 11
+title: Finitely connected domains are conformally equivalent to domains bounded by analytic Jordan curves
 classification:
   areas:
   - real-analysis

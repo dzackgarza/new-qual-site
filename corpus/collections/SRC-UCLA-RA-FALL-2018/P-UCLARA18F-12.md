@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18F-12
 kind: problem
-title: UCLA analysis Fall 2018, Problem 12
+title: Roots of $e^z(z-1)^n=\alpha$ in the right half-plane
 classification:
   areas:
   - real-analysis
