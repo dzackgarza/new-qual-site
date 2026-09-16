@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-WQHMA
 kind: theorem
-title: The Spectral Theorem
+title: Spectral theorem for Hermitian and real symmetric matrices
 classification:
   areas:
   - algebra
@@ -15,9 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-\envlist
+1. If $A\in\Mat_n(\CC)$ is Hermitian, that is, $A^{\dagger} = A$, then $A$ is diagonalizable over $\CC$; more precisely, there is a unitary matrix $U$ such that $U^{\dagger}AU$ is diagonal with real entries.
 
-1. Hermitian (self-adjoint) matrices (i.e. $A^{\dagger} = A$) are diagonalizable over $\CC$.
-
-2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
+2. If $A\in\Mat_n(\RR)$ is symmetric, that is, $A^t = A$, then $A$ is diagonalizable over $\RR$; more precisely, there is an orthogonal matrix $Q$ such that $Q^tAQ$ is diagonal.
 :::

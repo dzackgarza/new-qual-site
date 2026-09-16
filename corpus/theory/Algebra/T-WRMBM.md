@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-WRMBM
 kind: theorem
-title: Sylow 1
+title: 'Sylow''s first theorem: subgroups of prime-power order'
 classification:
   areas:
   - algebra
@@ -13,8 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-\[
-\forall p^n \text{ dividing } \abs{G} \text{, there exists a subgroup of size } p^n
-.\]
+::: {.theorem}
+Let $G$ be a finite group, $p$ a prime, and $n\geq 0$ an integer such that $p^n$ divides $\abs{G}$.
+Then $G$ has a subgroup of order $p^n$.
 :::

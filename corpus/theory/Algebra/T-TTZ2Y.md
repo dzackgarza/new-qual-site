@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-TTZ2Y
 kind: theorem
-title: Chinese Remainder Theorem
+title: Chinese remainder theorem
 classification:
   areas:
   - algebra
@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-\[
-\gcd(p, q) = 1 \implies \ZZ/p\ZZ \cross \ZZ/q\ZZ \cong \ZZ/pq\ZZ
-.\]
+::: {.theorem}
+Let $p$ and $q$ be positive integers with $\gcd(p, q) = 1$.
+Then
+$$
+\ZZ/pq\ZZ \cong \ZZ/p\ZZ \times \ZZ/q\ZZ.
+$$
 :::

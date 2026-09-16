@@ -13,7 +13,7 @@ review: reviewed
 ---
 
 ::: {.theorem}
-If $H$ is a subgroup of a finite group $G$, then
+If $H$ is a [[D-IQ4OX|subgroup]] of a finite group $G$ with [[D-VJGH5|index]] $[G:H]$, then
 $$
 \abs G = [G:H]\abs H.
 $$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-WR7CD
 kind: theorem
-title: Counting Cosets
+title: Order of a quotient group
 classification:
   areas:
   - algebra
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $H\normal G$ and $G$ is finite then
-\[
-[G: H] = \abs{G/H} = {\abs G \over \abs H}
-.\]
+::: {.theorem}
+Let $G$ be a finite group and $H\normal G$ a [[D-EKE4Q|normal subgroup]].
+Then
+$$
+[G: H] = \abs{G/H} = \frac{\abs G}{\abs H}.
+$$
 :::
