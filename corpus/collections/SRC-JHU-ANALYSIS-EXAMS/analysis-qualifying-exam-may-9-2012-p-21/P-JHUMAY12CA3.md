@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is holomorphic on $U := D(0,1) \setminus \{0\}$.
+Suppose $f$ is holomorphic on $U \coloneqq D(0,1) \setminus \{0\}$.
 Assume that the real part $\operatorname{Re}(f)$ is bounded from below on $U$.
 Prove that $z = 0$ is a removable singularity.
 :::
 
 ::: {.solution}
-Choose $m\in\mathbb R$ with $\operatorname{Re}f(z)\geq m$
+Choose $m\in\RR$ with $\operatorname{Re}f(z)\geq m$
 on the punctured disk $U$.
 
 <1>1. A fractional transform of $f$ is bounded and holomorphic on $U$.
@@ -44,23 +44,22 @@ $$
 Since $\operatorname{Re}(F+1)\geq2$, its denominator
 never vanishes. Moreover,
 $$
-|F+1|^2-|F-1|^2=4\operatorname{Re}F\geq4>0,
+\abs{F+1}^2-\abs{F-1}^2=4\operatorname{Re}F\geq4>0,
 $$
-so $|q|<1$ throughout $U$. The bounded removable-singularity
-theorem extends $q$ holomorphically to the full unit disk;
-write $Q$ for this extension [@SS03]. Continuity gives
-$|Q(0)|\leq1$.
+so $\abs{q}<1$ throughout $U$. [[D-BQLJV|Riemann's removable singularity theorem]]
+extends $q$ holomorphically to the full unit disk; write $Q$ for this extension.
+Continuity gives $\abs{Q(0)}\leq1$.
 :::
 
 <1>2. The inverse transform extends $f$ across zero.
 
 ::: {.proof}
-In fact $|Q(0)|<1$. Otherwise $Q$ would attain its
+In fact $\abs{Q(0)}<1$. Otherwise $Q$ would attain its
 maximum modulus one at an interior point of the disk.
-The maximum modulus principle would make $Q$ constant
-of modulus one, contradicting $|q(z)|<1$ on $U$ [@SS03].
+The [[T-BYNL5|maximum modulus principle]] would make $Q$ constant
+of modulus one, contradicting $\abs{q(z)}<1$ on $U$.
 Together with the original strict bound, this gives
-$|Q|<1$ everywhere on the full disk. Hence $1-Q$ is
+$\abs{Q}<1$ everywhere on the full disk. Hence $1-Q$ is
 nowhere zero there, and
 $$
 \widetilde f(z)=m+\frac{2Q(z)}{1-Q(z)}
@@ -70,5 +69,11 @@ $q=(F-1)/(F+1)$ gives $F=(1+q)/(1-q)$ and consequently
 $f=m+2q/(1-q)$. Thus $\widetilde f=f$ on $U$.
 The displayed function is a holomorphic extension of
 $f$ through zero, proving removability.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 constructs the required holomorphic extension across zero.
 :::
 :::
