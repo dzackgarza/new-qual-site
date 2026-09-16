@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $A$ be an $R$-module. Show that evaluation
 \[
-\End_R(A)\times A\longrightarrow A,\qquad (f,a)\longmapsto f(a),
+\Endo_R(A)\times A\longrightarrow A,\qquad (f,a)\longmapsto f(a),
 \]
-makes $A$ into a left module over the endomorphism ring $\End_R(A)$.
+makes $A$ into a left module over the endomorphism ring $\Endo_R(A)$.
 :::
 
 ::: {.solution}
@@ -43,13 +43,13 @@ because $f$ is $R$-linear.
 
 <1>2. The action is additive in the scalar variable.
 ::: {.proof}
-For $f,g\in\End_R(A)$,
+For $f,g\in\Endo_R(A)$,
 \[
 (f+g)\cdot a=(f+g)(a)=f(a)+g(a)=f\cdot a+g\cdot a.
 \]
 :::
 
-<1>3. Multiplication in $\End_R(A)$ is compatible with the action.
+<1>3. Multiplication in $\Endo_R(A)$ is compatible with the action.
 ::: {.proof}
 The ring multiplication is composition, so
 \[
@@ -59,11 +59,11 @@ The ring multiplication is composition, so
 
 <1>4. The identity endomorphism acts as the identity.
 ::: {.proof}
-The multiplicative identity of $\End_R(A)$ is $\id_A$, and
+The multiplicative identity of $\Endo_R(A)$ is $\id_A$, and
 \[
 \id_A\cdot a=\id_A(a)=a.
 \]
 :::
 
-Therefore $A$ is a left $\End_R(A)$-module under evaluation.
+Therefore $A$ is a left $\Endo_R(A)$-module under evaluation.
 :::
