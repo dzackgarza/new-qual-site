@@ -20,31 +20,54 @@ If the matrix is invertible, what is the maximum amount of ones in the matrix?
 :::
 
 ::: {.solution}
-The maximum amount of ones in the matrix is $n ^ { 2 } - n + 1$ . Indeed, we can think of starting with a matrix full of ones and removing entries and replacing them with zero.
-If we have removed less than $n - 1$ entries, then two columns have remained untouched, meaning there are still two columns full of ones and the matrix is singular since its columns are linearly dependent.
-Thus there can be a most $n ^ { 2 } - n + 1$ ones.
+<1>1. An invertible $0$--$1$ matrix has at most $n^2-n+1$ entries equal to $1$.
+::: {.proof}
+Suppose the matrix had more than $n^2-n+1$ ones. Then it would contain fewer than $n-1$ zeros.
 
-Now we exhibit a matrix that actually has this number of ones.
-Define $A \in \mathbb { R } ^ { n \times n }$ by
-
+A column fails to be the all-ones column only if it contains at least one zero. With fewer than $n-1$ zeros, at most $n-2$ columns can contain a zero. Hence at least two columns are both equal to
 $$
-A = \left( \begin{array} { l l l l l l l } { 1 } & { 1 } & { 1 } & { 1 } & { \cdots } & { 1 } \\ { 0 } & { 1 } & { 1 } & { 1 } & { \cdots } & { 1 } \\ { 1 } & { 0 } & { 1 } & { 1 } & { \cdots } & { 1 } \\ { \vdots } & { \ddots } & { \ddots } & { \ddots } & & { \vdots } \\ & & { \ddots } & { \ddots } & { \ddots } & { \vdots } \\ { 1 } & { 1 } & { \cdots } & { 1 } & { 0 } & { 1 } \end{array} \right) .
+\begin{pmatrix}1\\ \vdots\\1\end{pmatrix}.
 $$
+Those two columns are equal, so the matrix is singular. Therefore an invertible matrix can contain at most $n^2-n+1$ ones.
+:::
 
-That is, A is full of ones except the first subdiagonal is zero.
-Then A has $n ^ { 2 } - n + 1$ ones and A is invertible.
-Indeed, if
-
+<1>2. The upper bound $n^2-n+1$ is attained.
+::: {.proof}
+Let $A=(a_{ij})$ be the $n\times n$ matrix with
 $$
-A x = 0
+a_{ij}=
+\begin{cases}
+0,&i=j+1,\\
+1,&\text{otherwise}.
+\end{cases}
 $$
-
-then
-
+Thus the only zeros are the $n-1$ entries immediately below the diagonal, so $A$ has
 $$
-\begin{array} { c } { { x _ { 1 } + x _ { 2 } + \cdots + x _ { n - 1 } + x _ { n } = 0 , } } \\ { { \qquad x _ { 2 } + \cdots + x _ { n - 1 } + x _ { n } = 0 , } } \\ { { \qquad x _ { 1 } + \qquad \cdots + x _ { n - 1 } + x _ { n } = 0 , } } \\ { { \qquad \vdots } } \\ { { \qquad x _ { 1 } + x _ { 2 } + \cdots \qquad \quad + x _ { n } = 0 . } } \end{array}
+n^2-(n-1)=n^2-n+1
 $$
+ones.
 
-Subtracting the second equation from the first gives $x _ { 1 } = 0$ . Then subtracting the third from the first gives $x _ { 2 } = 0$ . Continuing this procedure, subtracting the $k ^ { \mathrm { t h } }$ equation from the first will give $x _ { k } = 0$ until the last equation simply reads $x _ { n } = 0$ . Thus $x = 0$ is the only solution to $A x = 0$ and so A is invertible.
-(One can also show by induction on the dimension n that det $( A ) = 1$ , though this is a bit tricky).
+To prove invertibility, suppose $Ax=0$ for $x=(x_1,\dots,x_n)^T$. The first row gives
+$$
+x_1+\cdots+x_n=0.
+$$
+For each $i=2,\dots,n$, the $i$th row gives the same sum with $x_{i-1}$ omitted. Subtracting that equation from the first-row equation yields
+$$
+x_{i-1}=0.
+$$
+Hence $x_1=\cdots=x_{n-1}=0$, and the first-row equation then gives $x_n=0$. Thus $\ker A=0$, so $A$ is invertible.
+:::
+
+<1>3. The maximum number of ones is
+$$
+\boxed{n^2-n+1}.
+$$
+::: {.proof}
+Step <1>1 gives the upper bound and step <1>2 gives an invertible matrix attaining it.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the requested maximum.
+:::
 :::
