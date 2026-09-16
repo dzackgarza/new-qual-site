@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-06
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 6'
+title: Integral of $\frac{x^2+b^2}{x^2+a^2}$ over $[0,a]$
 classification:
   areas:
   - prelim

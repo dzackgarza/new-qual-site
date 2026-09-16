@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-11
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 11'
+title: Limit of $(x_1^n+\cdots+x_k^n)^{1/n}$
 classification:
   areas:
   - prelim

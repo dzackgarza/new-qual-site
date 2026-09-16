@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-16
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 16'
+title: Convergence of $\sum(1-\tanh n)$ and $\sum(\frac\pi2-\arctan n)$
 classification:
   areas:
   - prelim

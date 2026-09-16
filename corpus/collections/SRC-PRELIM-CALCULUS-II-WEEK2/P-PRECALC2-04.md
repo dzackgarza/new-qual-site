@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-04
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 4'
+title: Integral of $\frac{1}{\cosh t}$ over $(-\infty,x]$
 classification:
   areas:
   - prelim

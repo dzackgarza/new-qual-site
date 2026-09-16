@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-10
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 10'
+title: Volume and surface area of Gabriel's horn
 classification:
   areas:
   - prelim

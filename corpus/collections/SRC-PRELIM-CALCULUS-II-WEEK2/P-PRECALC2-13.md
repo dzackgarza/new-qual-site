@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-13
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 13'
+title: Convergence of $\sum\frac{1}{\log(n!)}$ and $\sum\frac{1}{(\log n)^{\log n}}$
 classification:
   areas:
   - prelim

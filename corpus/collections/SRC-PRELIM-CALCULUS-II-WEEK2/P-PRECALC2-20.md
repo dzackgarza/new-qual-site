@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-20
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 20'
+title: Convergence of a series with products of square roots of 3 in the denominators
 classification:
   areas:
   - prelim

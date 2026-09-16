@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-08
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 8'
+title: Integral of $\frac{1}{1+\tan^{2020}x}$ over $[0,\pi/2]$
 classification:
   areas:
   - prelim

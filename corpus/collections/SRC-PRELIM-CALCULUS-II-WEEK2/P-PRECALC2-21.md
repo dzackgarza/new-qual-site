@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-21
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 21'
+title: Riemann sum limits of $\sum_k\frac{1}{\sqrt{n^2+k^2}}$ and $\sum_k\frac{1}{\sqrt{n^2+k}}$
 classification:
   areas:
   - prelim

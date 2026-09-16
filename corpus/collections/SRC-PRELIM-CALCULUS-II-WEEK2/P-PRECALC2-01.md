@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-01
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 1'
+title: Arc length of the upper unit semicircle
 classification:
   areas:
   - prelim

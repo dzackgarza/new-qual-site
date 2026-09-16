@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-23
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 23'
+title: Convergence of $\int_0^\infty\frac{dx}{1+x^4\sin^2x}$
 classification:
   areas:
   - prelim

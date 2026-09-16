@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-17
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 17'
+title: Counterexamples for the alternating series test and for $\sum b_n$ versus $\sum b_n^2$
 classification:
   areas:
   - prelim
