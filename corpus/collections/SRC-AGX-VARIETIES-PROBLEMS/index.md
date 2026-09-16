@@ -83,6 +83,6 @@ source:
     kind: unknown
 ---
 
-A working list of questions on varieties assembled alongside the author's algebraic geometry notes, running from the Zariski topology and the Nullstellensatz through dimension, smoothness and normality, projective varieties, divisors and the canonical bundle.
-The second group is a bank of standard worked examples: the cuspidal and nodal cubics, the quadric cone, the Segre quadric, the Weierstrass cubic, and cyclic quotient singularities.
-The source records a solution only for the coordinate-ring question.
+Questions on varieties, from the Zariski topology and the Nullstellensatz through dimension, smoothness and normality, projective varieties, divisors, and the canonical bundle.
+The second group consists of worked examples: the cuspidal and nodal cubics, the quadric cone, the Segre quadric, the Weierstrass cubic, and cyclic quotient singularities.
+The source gives a solution only for the coordinate-ring question.
