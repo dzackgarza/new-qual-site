@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-04
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 4"
+title: Classification of prime ideals of $B[X]$ for a principal ideal domain $B$
 classification:
   areas:
   - algebra

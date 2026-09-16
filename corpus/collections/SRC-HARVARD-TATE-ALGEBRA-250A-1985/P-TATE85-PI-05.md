@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-05
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 5"
+title: Prime ideals of $\mathbb C[X,Y]$
 classification:
   areas:
   - algebra

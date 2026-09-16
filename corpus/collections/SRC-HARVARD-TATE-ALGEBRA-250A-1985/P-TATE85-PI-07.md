@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-07
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 7"
+title: The unique prime ideal of $B/M^n$
 classification:
   areas:
   - algebra

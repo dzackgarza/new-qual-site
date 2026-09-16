@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-03
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 3"
+title: Prime ideals of $B[X]$ lying over a prime of $B$
 classification:
   areas:
   - algebra

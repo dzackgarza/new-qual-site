@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-08
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 8"
+title: Prime ideals of convergent and formal power series rings
 classification:
   areas:
   - algebra

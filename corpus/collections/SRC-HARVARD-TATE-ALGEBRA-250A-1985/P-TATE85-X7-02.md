@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-X7-02
 kind: problem
-title: "Tate Algebra 250(a), X^7 - 7X + 3, problem 2"
+title: Galois group of $X^7-7X+3$
 classification:
   areas:
   - algebra

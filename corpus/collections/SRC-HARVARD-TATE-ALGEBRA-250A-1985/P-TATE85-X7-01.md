@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-X7-01
 kind: problem
-title: "Tate Algebra 250(a), X^7 - 7X + 3, problem 1"
+title: Galois groups of degree 7 polynomials with square discriminant and three real roots
 classification:
   areas:
   - algebra

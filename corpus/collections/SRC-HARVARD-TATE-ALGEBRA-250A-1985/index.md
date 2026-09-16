@@ -17,54 +17,90 @@ source:
   sections:
   - name: "October 22, 1985"
     problems:
-    - P-TATE85-1022-01
-    - P-TATE85-1022-02
-    - P-TATE85-1022-03
-    - P-TATE85-1022-04
+    - id: P-TATE85-1022-01
+      comment: Problem 1
+    - id: P-TATE85-1022-02
+      comment: Problem 2
+    - id: P-TATE85-1022-03
+      comment: Problem 3
+    - id: P-TATE85-1022-04
+      comment: Problem 4
   - name: "October 29, 1985"
     problems:
-    - P-TATE85-1029-01
-    - P-TATE85-1029-02
-    - P-TATE85-1029-03
-    - P-TATE85-1029-04
+    - id: P-TATE85-1029-01
+      comment: Problem 1
+    - id: P-TATE85-1029-02
+      comment: Problem 2
+    - id: P-TATE85-1029-03
+      comment: Problem 3
+    - id: P-TATE85-1029-04
+      comment: Problem 4
   - name: "November 5, 1985"
     problems:
-    - P-TATE85-1105-01
-    - P-TATE85-1105-02
-    - P-TATE85-1105-03
-    - P-TATE85-1105-04
-    - P-TATE85-1105-05
-    - P-TATE85-1105-06
-    - P-TATE85-1105-07
-    - P-TATE85-1105-08
-    - P-TATE85-1105-09
+    - id: P-TATE85-1105-01
+      comment: Problem 1
+    - id: P-TATE85-1105-02
+      comment: Problem 2
+    - id: P-TATE85-1105-03
+      comment: Problem 3
+    - id: P-TATE85-1105-04
+      comment: Problem 4
+    - id: P-TATE85-1105-05
+      comment: Problem 5
+    - id: P-TATE85-1105-06
+      comment: Problem 6
+    - id: P-TATE85-1105-07
+      comment: Problem 7
+    - id: P-TATE85-1105-08
+      comment: Problem 8
+    - id: P-TATE85-1105-09
+      comment: Problem 9
   - name: "November 12, 1985"
     problems:
-    - P-TATE85-1112-01
-    - P-TATE85-1112-02
-    - P-TATE85-1112-03
+    - id: P-TATE85-1112-01
+      comment: Problem 1
+    - id: P-TATE85-1112-02
+      comment: Problem 2
+    - id: P-TATE85-1112-03
+      comment: Problem 3
   - name: "November 19, 1985"
     problems:
-    - P-TATE85-1119-01
-    - P-TATE85-1119-02
-    - P-TATE85-1119-03
-    - P-TATE85-1119-04
-    - P-TATE85-1119-05
+    - id: P-TATE85-1119-01
+      comment: Problem 1
+    - id: P-TATE85-1119-02
+      comment: Problem 2
+    - id: P-TATE85-1119-03
+      comment: Problem 3
+    - id: P-TATE85-1119-04
+      comment: Problem 4
+    - id: P-TATE85-1119-05
+      comment: Problem 5
   - name: "X^7 - 7X + 3"
     problems:
-    - P-TATE85-X7-01
-    - P-TATE85-X7-02
+    - id: P-TATE85-X7-01
+      comment: Problem 1
+    - id: P-TATE85-X7-02
+      comment: Problem 2
   - name: "Examples of prime ideals"
     problems:
-    - P-TATE85-PI-01
-    - P-TATE85-PI-02
-    - P-TATE85-PI-03
-    - P-TATE85-PI-04
-    - P-TATE85-PI-05
-    - P-TATE85-PI-06
-    - P-TATE85-PI-07
-    - P-TATE85-PI-08
-    - P-TATE85-PI-09
+    - id: P-TATE85-PI-01
+      comment: Problem 1
+    - id: P-TATE85-PI-02
+      comment: Problem 2
+    - id: P-TATE85-PI-03
+      comment: Problem 3
+    - id: P-TATE85-PI-04
+      comment: Problem 4
+    - id: P-TATE85-PI-05
+      comment: Problem 5
+    - id: P-TATE85-PI-06
+      comment: Problem 6
+    - id: P-TATE85-PI-07
+      comment: Problem 7
+    - id: P-TATE85-PI-08
+      comment: Problem 8
+    - id: P-TATE85-PI-09
+      comment: Problem 9
   date:
     kind: year
     year: 1985

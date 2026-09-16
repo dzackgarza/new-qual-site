@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-02
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 2"
+title: Prime ideals of a principal ideal domain
 classification:
   areas:
   - algebra
