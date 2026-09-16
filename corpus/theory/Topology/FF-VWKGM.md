@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
 id: FF-VWKGM
-kind: fact
-title: 'Definition: Totally Bounded'
+kind: definition
+title: Totally bounded metric space
 prompts:
 - What does it mean for a metric space to be totally bounded?
 classification:
@@ -15,6 +15,6 @@ relations: []
 review: draft
 ---
 
-::: {.fact}
-A metric space $(M, d)$ is totally bounded iff $\forall \varepsilon$ there exists a *finite* collection of open balls of radius $\varepsilon$ whose union contains $M$.
+::: {.definition}
+A metric space $(M, d)$ is \dfn{totally bounded} if for every $\eps > 0$ there are finitely many open balls of radius $\eps$ whose union is $M$ [@Mun00, §45, p. 275].
 :::
