@@ -8,9 +8,8 @@ topics:
 
 # Splitting fields and normal extensions
 
-Normality says that algebraic conjugates do not escape the extension.
-Equivalently, an irreducible polynomial over the base that has one root in a normal extension has all of its roots there.
-Splitting fields are therefore the concrete models to keep in mind: finite normal extensions are precisely splitting fields of suitable polynomials over the base.
+An algebraic extension $L/K$ is [[D-LZTAK|normal]] if every irreducible polynomial in $K[x]$ with a root in $L$ splits into linear factors over $L$.
+A finite extension $L/K$ is normal if and only if $L$ is the [[FD-LHTRR|splitting field]] over $K$ of some polynomial in $K[x]$.
 
 [[D-LZTAK]]
 
@@ -24,13 +23,11 @@ Splitting fields are therefore the concrete models to keep in mind: finite norma
 
 [[PR-TZN4M]]
 
-When an extension is not normal, its normal closure is obtained by adjoining the missing conjugates.
-Computationally this means replacing $K(\alpha)$ by the splitting field of the minimal polynomial of $\alpha$ (and doing the same for a finite generating set in a general finite extension).
-That enlargement is exactly what turns an extension problem into a Galois-group problem on the later pages.
+For a finite extension $L = K(\alpha_1,\ldots,\alpha_r)$ inside an algebraic closure $\overline K$, the [[D-XD5NG|normal closure]] of $L/K$ is the splitting field over $K$ of the product of the minimal polynomials of $\alpha_1,\ldots,\alpha_r$; it is the smallest normal extension of $K$ in $\overline K$ containing $L$.
+For example, the normal closure of $\QQ(2^{1/4})/\QQ$ is $\QQ(2^{1/4}, i)$, the splitting field of $x^4-2$.
 
 ::: {.remark title="Normality is not transitive"}
-A tower $M/L/K$ with $M/L$ and $L/K$ both normal need not have $M/K$ normal.
-The standard example is $\QQ(2^{1/4})/\QQ(\sqrt 2)/\QQ$: each step is quadratic hence normal, but $\QQ(2^{1/4})/\QQ$ omits the complex fourth roots of $2$.
+In the tower $\QQ\subseteq\QQ(\sqrt 2)\subseteq\QQ(2^{1/4})$, both steps have degree $2$ and are therefore normal, and $\QQ(2^{1/4})/\QQ$ is not normal: $x^4-2$ is irreducible over $\QQ$ and has the root $2^{1/4}$ in $\QQ(2^{1/4})\subseteq\RR$, but not its roots $\pm i2^{1/4}$.
 
-Under the Galois correspondence, an intermediate field is normal over the base exactly when its corresponding subgroup is normal.
+For a finite Galois extension $L/K$ and an intermediate field $K\subseteq E\subseteq L$, $E/K$ is normal if and only if $\Gal(L/E)$ is a normal subgroup of $\Gal(L/K)$.
 :::

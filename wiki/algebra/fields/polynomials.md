@@ -8,12 +8,10 @@ topics:
 
 # Polynomials over a field
 
-The layer beneath field theory: what $k[x]$ looks like, and how to tell whether something factors.
+## Polynomial rings and Gauss's lemma
 
-## Basics
-
-Over a field, $k[x]$ is Euclidean by degree, hence a PID and a UFD.  That makes irreducible polynomials the prime elements and turns gcd computations into the basic tool for factorization and extension theory.
-Over $\ZZ[x]$, Gauss's lemma is the bridge back to $\QQ[x]$: strip off the content, work with a primitive polynomial, and test irreducibility over the field of fractions.
+For a field $k$, $k[x]$ is a Euclidean domain with respect to degree, hence a PID and a UFD, and its prime elements are the irreducible polynomials.
+A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coefficients is $1$, and by Gauss's lemma a product of primitive polynomials is primitive.
 
 [[FD-CI4NB]] [[FD-SZKGS]]
 
@@ -30,14 +28,14 @@ Over $\ZZ[x]$, Gauss's lemma is the bridge back to $\QQ[x]$: strip off the conte
 [[FT-OXN3Y]]
 
 ::: {.corollary}
-A primitive $p\in \QQ[x]$ is irreducible exactly when it is irreducible in $\ZZ[x]$.
+A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$.
 :::
 
 ## Standard factorizations and root counts
 
 ::: {.remark}
-Irreducibility arguments usually begin with an attempt to factor by hand, so the identities below are worth having ready.
-Descartes' rule bounds how many real roots such a factorization can account for, which is often enough to finish a problem over $\QQ$ or $\RR$.
+The identities below factor $x^n\pm y^n$.
+By Descartes' rule of signs, the number of positive real roots of a real polynomial, counted with multiplicity, is at most the number of sign changes in its sequence of nonzero coefficients, and differs from it by an even number.
 :::
 
 [[FF-UC7SQ]] [[FF-ED3CD]]
@@ -46,11 +44,12 @@ Descartes' rule bounds how many real roots such a factorization can account for,
 
 [[FF-HK72Z]]
 
-## Field-theoretic prerequisites
+## Characteristic, automorphisms, and perfect fields
 
-Polynomial behavior depends on the base field.
-Characteristic determines the prime subfield and controls derivatives; automorphisms and fixed fields are what later turn roots into Galois data; perfectness is the condition that removes inseparability.
-Keep these notions adjacent to the polynomial criteria because changing the base field can change factorization and which roots lie in the base field.
+The [[D-JNCUB|characteristic]] of a field is $0$ or a prime $p$, and its [[D-EOCCU|prime subfield]] is $\QQ$ or $\FF_p$ respectively.
+In characteristic $p$, $(a+b)^p = a^p+b^p$, so $a\mapsto a^p$ is a field homomorphism.
+For a group $G$ of automorphisms of a field $L$, the [[D-5FG7E|fixed field]] $L^G$ is the subfield of elements fixed by every element of $G$.
+A field $k$ is [[D-KQFIV|perfect]] if every irreducible polynomial over $k$ is separable; equivalently, $k$ has characteristic $0$, or characteristic $p$ and $a\mapsto a^p$ is surjective on $k$.
 
 [[D-JNCUB]]
 
@@ -76,12 +75,12 @@ Keep these notions adjacent to the polynomial criteria because changing the base
 
 ## Cyclotomic polynomials
 
-The $n$th cyclotomic polynomial $\Phi_n$ packages the primitive $n$th roots of unity, with
-\[
+The $n$th [[D-BLV6F|cyclotomic polynomial]] $\Phi_n(x)=\prod(x-\zeta)$, the product over the primitive $n$th roots of unity $\zeta\in\CC$, has integer coefficients and satisfies
+$$
 x^n-1=\prod_{d\mid n}\Phi_d(x).
-\]
-Over $\QQ$, $\Phi_n$ is irreducible and has degree $\varphi(n)$, so adjoining one primitive $n$th root produces the cyclotomic field of that degree.
-This is the standard place where polynomial factorization, Euler's totient, and Galois theory meet.
+$$
+Over $\QQ$, $\Phi_n$ is irreducible of degree $\phi(n)$, where $\phi$ is [[D-JX3YC|Euler's totient function]], so $[\QQ(\zeta_n):\QQ]=\phi(n)$ for a primitive $n$th root of unity $\zeta_n$.
+By the Kronecker--Weber theorem, every finite abelian extension of $\QQ$ is contained in a [[D-IPR4B|cyclotomic field]].
 
 [[D-BLV6F]]
 
