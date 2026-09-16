@@ -8,12 +8,12 @@ topics:
 
 # Galois theory
 
-- [[algebra/galois-theory/compute-this-galois-group|Compute this Galois group]], the five steps and the candidate tables.
+- [[algebra/galois-theory/compute-this-galois-group|Compute this Galois group]] -- degree bounds, transitive subgroups, discriminants, and cycle types from reduction modulo primes.
 
-- [[algebra/galois-theory/the-correspondence|The Galois correspondence]], and the checklist for showing an extension is Galois.
+- [[algebra/galois-theory/the-correspondence|The Galois correspondence]] -- the fundamental theorem, and criteria for irreducibility, separability, normality, and Galois extensions.
 
-- [[algebra/galois-theory/cyclotomic-and-radical-extensions|Cyclotomic and radical extensions]], the families whose groups are known in advance.
+- [[algebra/galois-theory/cyclotomic-and-radical-extensions|Cyclotomic and radical extensions]] -- $\Gal(\QQ(\zeta_n)/\QQ)\cong(\ZZ/n)^\times$, splitting fields of $x^n-a$, and solvability by radicals.
 
-- [[algebra/galois-theory/worked-examples|Worked examples]], the computations by degree.
+- [[algebra/galois-theory/worked-examples|Worked examples]] -- Galois groups of quadratics, cubics, and quartics.
 
-The field theory underneath is [[algebra/fields/index|Fields]].
+Field extensions, separability, and finite fields are in [[algebra/fields/index|Fields]].
