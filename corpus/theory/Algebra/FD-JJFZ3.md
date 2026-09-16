@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-JJFZ3
 kind: definition
-title: Normal Field Extension
+title: Normal field extension
 prompts:
 - What does it mean for a field extension $L/K$ to be normal?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A field extension $L/K$ is **normal** iff every irreducible $p(x) \in K[x]$ either has no roots in $L$ or splits into linear factors in $L[x]$.
+An algebraic field extension $L/K$ is \dfn{normal} if every irreducible polynomial $p \in K[x]$ either has no roots in $L$ or splits into linear factors in $L[x]$.
 :::

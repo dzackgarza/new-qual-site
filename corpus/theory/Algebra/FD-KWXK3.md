@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-KWXK3
 kind: definition
-title: Algebraic Extension
+title: Algebraic field extension
 prompts:
 - When is a field extension $L/K$ algebraic over $K$?
 classification:
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.definition}
-A field extension $L/K$ is **algebraic** $\iff$ every $\alpha \in L$ is the root of some polynomial $f(x)\in K[x]$.
+A field extension $L/K$ is \dfn{algebraic} if every $\alpha \in L$ is [[FD-2EVYB|algebraic]] over $K$, that is, a root of some nonzero polynomial $f\in K[x]$.
 :::
