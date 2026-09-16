@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OTS37
 kind: problem
-title: Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endo_K(V)$
+title: Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\Endoo_K(V)$
 classification:
   areas:
   - algebra
@@ -15,18 +15,18 @@ review: draft
 ---
 
 ::: {.problem}
-Let $V$ be an $n$-dimensional vector space over a field $K$, and identify $M_n(K)$ with $\End_K(V)$.
+Let $V$ be an $n$-dimensional vector space over a field $K$, and identify $M_n(K)$ with $\Endo_K(V)$.
 Describe the left, right, and two-sided ideals of $M_n(K)$, and identify the simple left and right ideals geometrically.
 :::
 
 ::: {.solution}
-Write multiplication in $\End_K(V)$ as composition.
+Write multiplication in $\Endo_K(V)$ as composition.
 
 <1>1. Left ideals are determined by subspaces on which every map vanishes.
 ::: {.proof}
 For a subspace $U\le V$, set
 \[
-L_U=\{f\in\End_K(V):U\subseteq\ker f\}.
+L_U=\{f\in\Endo_K(V):U\subseteq\ker f\}.
 \]
 This is a left ideal because if $f$ vanishes on $U$, then so does $g\circ f$ for every $g$.
 
@@ -37,7 +37,7 @@ Conversely, every left ideal of $M_n(K)$ is of this form. In matrix language, le
 ::: {.proof}
 For a subspace $W\le V$, set
 \[
-R_W=\{f\in\End_K(V):\operatorname{im}f\subseteq W\}.
+R_W=\{f\in\Endo_K(V):\operatorname{im}f\subseteq W\}.
 \]
 This is a right ideal because $f\circ g$ still has image contained in $W$.
 Conversely every right ideal is of this form. In matrix language, its matrices have all columns in a fixed subspace.
