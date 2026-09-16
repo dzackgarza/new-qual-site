@@ -29,8 +29,6 @@ Use residues to calculate the integral $\int_0^\infty \frac{1}{(1 + x^2)^2} \, d
 :::
 
 ::: {.solution}
-The value is $\boxed{\pi/4}$.
-
 <1>1. The upper-half-plane contour integral is $\pi/2$.
 
 ::: {.proof}
@@ -44,28 +42,36 @@ $$
 =\left.\frac{d}{dz}(z+i)^{-2}\right|_{z=i}
 =-\frac{2}{(2i)^3}=\frac{1}{4i}.
 $$
-The residue theorem therefore gives
+The [[T-HRPNO|residue theorem]] therefore gives
 $$
 \int_{-R}^R\frac{dx}{(1+x^2)^2}
 +\int_{\Gamma_R}F(z)\,dz
 =2\pi i\frac{1}{4i}=\frac\pi2
 $$
-[@SS03].
 :::
 
-<1>2. Passing to the infinite contour and using evenness gives the answer.
+<1>2. The requested integral is
+$$
+\boxed{\int_0^\infty \frac{dx}{(1+x^2)^2}=\frac{\pi}{4}}.
+$$
 
 ::: {.proof}
-For $|z|=R$, the inequality $|1+z^2|\geq R^2-1$ yields
+For $\abs{z}=R$, the inequality $\abs{1+z^2}\geq R^2-1$ yields
 $$
-\left|\int_{\Gamma_R}F(z)\,dz\right|
+\abs{\int_{\Gamma_R}F(z)\,dz}
 \leq\frac{\pi R}{(R^2-1)^2}\longrightarrow0.
 $$
 The real integral converges absolutely, since its integrand
-is bounded by one on $[-1,1]$ and by $|x|^{-4}$ outside
+is bounded by one on $[-1,1]$ and by $\abs{x}^{-4}$ outside
 that interval. Letting $R\to\infty$ in step <1>1 thus
 gives $\int_{-\infty}^\infty(1+x^2)^{-2}\,dx=\pi/2$.
 The integrand is even, so the requested half-line integral
 is one half of this value, namely $\pi/4$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested value.
 :::
 :::
