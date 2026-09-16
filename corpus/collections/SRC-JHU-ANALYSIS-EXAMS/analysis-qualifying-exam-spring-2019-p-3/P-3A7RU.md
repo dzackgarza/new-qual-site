@@ -24,7 +24,9 @@ audit:
   note: "Checked the removable extension, exclusion of both annulus boundary circles, and continuity of the inverse at the extended value. Source preservation includes the unrestricted smooth-kernel repair on P-JHUU67RA3."
 ---
 
-Question 2.4. Show that the punctured unit disk $\{ z \ : \ 0 < \ | z | < 1 \}$ and the annulus $\{ z : 1 < | z | < 2 \}$ cannot be conformally equivalent.
+::: {.problem}
+Show that the punctured unit disk $\{z:0<|z|<1\}$ and the annulus $\{z:1<|z|<2\}$ cannot be conformally equivalent.
+:::
 
 ::: solution
 Write $D=\{z:|z|<1\}$ and $A=\{w:1<|w|<2\}$.
