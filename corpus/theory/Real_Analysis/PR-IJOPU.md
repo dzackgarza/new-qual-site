@@ -19,7 +19,3 @@ $$
 \abs{\norm{x} - \norm{y}} \leq \norm{x - y} .
 $$
 :::
-
-::: {.proof}
-By the triangle inequality, $\norm{x}\leq\norm{x-y}+\norm{y}$ and $\norm{y}\leq\norm{y-x}+\norm{x}$, and $\norm{y-x}=\norm{x-y}$.
-:::
