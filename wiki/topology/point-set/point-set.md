@@ -90,9 +90,7 @@ Urysohn's lemma states that in a normal space, disjoint closed sets are separate
 
 :::
 
-[[FT-MHQGF]]
-
-[[FT-52GNK]] [[FT-J7RQV]]
+[[FT-52GNK]]
 
 ## Maps and homeomorphisms
 

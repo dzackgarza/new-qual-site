@@ -2,9 +2,10 @@
 schema: qual/card@1
 id: FT-52GNK
 kind: theorem
-title: Urysohn's Lemma
+title: Urysohn's lemma
 prompts:
 - State Urysohn's lemma.
+- Which separation property does Urysohn's lemma characterise, and by what function?
 classification:
   areas:
   - topology
@@ -16,13 +17,11 @@ review: draft
 ---
 
 ::: {.theorem}
-A space $X$ is normal iff for every pair of **disjoint** closed sets $U, V \subseteq X$ there is a continuous $f: X\to [0,1]$ with $\ro f U = 0$ and $\ro f V = 1$.
+Let $X$ be a topological space.
+Then $X$ is [[D-YEQC3|normal]] if and only if for every pair of disjoint closed subsets $A, B \subseteq X$ there is a continuous function $f\colon X\to [0,1]$ with $f(a) = 0$ for all $a\in A$ and $f(b) = 1$ for all $b\in B$ [@Mun00, Theorem 33.1].
 :::
 
 ::: {.remark}
-Munkres, *Topology*, §33, Theorem 33.1. Disjointness is needed: without it take $U = V$ nonempty and no such $f$ exists.
-
-This card previously closed with "Equivalently, a topological space is separable and metrizable iff it is regular, Hausdorff, and second-countable".
-That is the **Urysohn metrization theorem**, Munkres §34, Theorem 34.1 — a different theorem with a different conclusion, not an equivalent form of the lemma.
-The lemma is what metrization is proved *from*.
+The forward direction is Urysohn's lemma; the converse follows by taking the disjoint open sets $f^{-1}([0,1/2))$ and $f^{-1}((1/2,1])$.
+The hypothesis that $A$ and $B$ are disjoint cannot be dropped: if $A\cap B\neq\emptyset$, no such $f$ exists.
 :::
