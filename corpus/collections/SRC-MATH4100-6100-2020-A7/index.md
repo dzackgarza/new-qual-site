@@ -15,11 +15,16 @@ source:
   source_kind: homework
   area: real-analysis
   problems:
-  - P-M4100-20-A7-01
-  - P-M4100-20-A7-02
-  - P-M4100-20-A7-03
-  - P-M4100-20-A7-04
-  - P-M4100-20-A7-B01
+  - id: P-M4100-20-A7-01
+    comment: Problem 1
+  - id: P-M4100-20-A7-02
+    comment: Problem 2
+  - id: P-M4100-20-A7-03
+    comment: Problem 3
+  - id: P-M4100-20-A7-04
+    comment: Problem 4
+  - id: P-M4100-20-A7-B01
+    comment: Bonus problem 1
   date:
     kind: academic-term
     term: fall

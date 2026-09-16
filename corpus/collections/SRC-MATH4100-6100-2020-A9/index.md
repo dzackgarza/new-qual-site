@@ -16,12 +16,18 @@ source:
   area: real-analysis
   problems:
   - P-M4100-20-A9-01
-  - P-M4100-20-A9-02
-  - P-M4100-20-A9-03
-  - P-M4100-20-A9-04
-  - P-M4100-20-A9-05
-  - P-M4100-20-A9-B01
-  - P-M4100-20-A9-B02
+  - id: P-M4100-20-A9-02
+    comment: Problem 2
+  - id: P-M4100-20-A9-03
+    comment: Problem 3
+  - id: P-M4100-20-A9-04
+    comment: Problem 4
+  - id: P-M4100-20-A9-05
+    comment: Problem 5
+  - id: P-M4100-20-A9-B01
+    comment: Bonus problem 1
+  - id: P-M4100-20-A9-B02
+    comment: Bonus problem 2
   date:
     kind: academic-term
     term: fall

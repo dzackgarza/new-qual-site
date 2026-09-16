@@ -17,14 +17,20 @@ source:
   problems:
   - id: P-RA-WORKSHOP-D5-W2
     comment: Assignment 8 Problem 1; exact canonical appearance of Rudin Exercise 5.1
-  - P-M4100-20-A8-02
-  - P-M4100-20-A8-03
-  - P-M4100-20-A8-04
-  - P-M4100-20-A8-05
-  - P-M4100-20-A8-06
+  - id: P-M4100-20-A8-02
+    comment: Problem 2
+  - id: P-M4100-20-A8-03
+    comment: Problem 3
+  - id: P-M4100-20-A8-04
+    comment: Problem 4
+  - id: P-M4100-20-A8-05
+    comment: Problem 5
+  - id: P-M4100-20-A8-06
+    comment: Problem 6
   - id: P-AZOFF-A05
     comment: Assignment 8 Math 6100 Bonus Problem 1; exact canonical uniformly-differentiable problem
-  - P-M4100-20-A8-B02
+  - id: P-M4100-20-A8-B02
+    comment: Bonus problem 2
   date:
     kind: academic-term
     term: fall
