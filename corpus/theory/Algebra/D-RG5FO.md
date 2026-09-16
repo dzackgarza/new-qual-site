@@ -16,20 +16,30 @@ review: draft
 ---
 
 ::: {.definition}
-Following Artin, let $\inner{\wait}{\wait}$ be a bilinear form on a finite-dimensional real vector space $V$ and $\mathbf B = (v_1, \cdots, v_n)$ an ordered basis; nothing below uses $\RR$ rather than an arbitrary field.
-The **Gram matrix**, which Artin calls the *matrix of the form*, is
-\[
-A = (a_{ij}), \qquad a_{ij} \da \inner{v_i}{v_j}
-.\]
-It computes the form in coordinates: if $X$ and $Y$ are the coordinate vectors of $v$ and $w$, then
-\[
-\inner{v}{w} = X^t A Y
-.\]
-So a bilinear form on $V$ and an $n\times n$ matrix are the same data once a basis is fixed, and the form is symmetric iff $A$ is.
+Let $k$ be a field, $V$ a finite-dimensional $k$-vector space, $\inner{\wait}{\wait}$ a bilinear form on $V$, and $\mathbf B = (v_1, \ldots, v_n)$ an ordered basis of $V$.
+The \dfn{Gram matrix} of the form with respect to $\mathbf B$, also called the \dfn{matrix of the form}, is
+$$
+A = (a_{ij}), \qquad a_{ij} \coloneqq \inner{v_i}{v_j}.
+$$
+:::
+
+::: {.proposition}
+If $X,Y\in k^n$ are the coordinate vectors of $v,w\in V$ with respect to $\mathbf B$, then
+$$
+\inner{v}{w} = X^t A Y.
+$$
+Consequently, for a fixed basis $\mathbf B$, the assignment of the Gram matrix is a bijection from bilinear forms on $V$ to $\Mat_{n\times n}(k)$, and a form is symmetric if and only if its Gram matrix is symmetric.
+:::
+
+::: {.proof}
+Writing $v=\sum_i x_iv_i$ and $w=\sum_j y_jv_j$, bilinearity gives $\inner{v}{w}=\sum_{i,j}x_iy_j\inner{v_i}{v_j}=X^tAY$.
+Conversely, every $A\in\Mat_{n\times n}(k)$ defines the bilinear form $(v,w)\mapsto X^tAY$, whose Gram matrix is $A$.
+The form is symmetric if and only if $a_{ij}=a_{ji}$ for all $i,j$, by the displayed formula.
 :::
 
 ::: {.remark}
-Changing basis by an invertible $P$ replaces $A$ with $P^t A P$, which is *congruence*, not similarity: the two matrices of one form need not have the same eigenvalues, only the same rank and, over $\RR$, the same signature.
+If $\mathbf B'$ is another ordered basis and $P\in\GL_n(k)$ is the change-of-basis matrix, so that coordinates satisfy $X=PX'$, then the Gram matrix with respect to $\mathbf B'$ is $P^t A P$.
+This preserves the rank of $A$ and, for $k=\RR$ and a symmetric form, its signature, but not its eigenvalues: for $P=2I_n$ the new Gram matrix is $4A$.
 :::
 
 ::: {.concept}

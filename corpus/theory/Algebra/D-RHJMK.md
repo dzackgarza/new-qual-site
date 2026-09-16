@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-RHJMK
 kind: definition
-title: Projective Modules
+title: Projective modules
 classification:
   areas:
   - algebra
@@ -15,33 +15,39 @@ review: draft
 ---
 
 ::: {.definition}
-A module $P$ is **projective** iff it satisfies any of the following conditions:
-
-- A universal property: for every surjective $N \mapsvia{g} M$ and $P \mapsvia{f} M$, the following lift exists:
+Let $R$ be a ring.
+An [[D-NQZUY|$R$-module]] $P$ is \dfn{projective} if for every surjective $R$-linear map $g\colon N \to M$ and every $R$-linear map $f\colon P\to M$ there exists an $R$-linear map $\tilde f\colon P\to N$ with $g\circ\tilde f = f$:
 
 \begin{tikzcd}
 	&& P \\
 	\\
-	N && M && 0
+	N && M
 	\arrow["g", two heads, from=3-1, to=3-3]
-	\arrow[from=3-3, to=3-5]
 	\arrow["f", from=1-3, to=3-3]
 	\arrow["{\exists \tilde f}"', dashed, from=1-3, to=3-1]
 \end{tikzcd}
+:::
 
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMiwwLCJQIl0sWzIsMiwiTSJdLFswLDIsIk4iXSxbNCwyLCIwIl0sWzIsMSwiZyIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDNdLFswLDEsImYiXSxbMCwyLCJcXGV4aXN0cyBcXHRpbGRlIGYiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
+::: {.proposition}
+Let $R$ be a ring and $P$ an $R$-module.
+The following are equivalent:
 
-- Direct summand:
+1. $P$ is projective;
 
-  $P$ is a direct summand of a free module $F$, so $F = P \oplus T$ for some module $T\leq F$.
+2. $P$ is a direct summand of a [[D-LIEMF|free]] module: there are a free $R$-module $F$ and a submodule $T\leq F$ with $F = P \oplus T$, up to isomorphism;
 
-- Splitting:
+3. every short exact sequence $0\to A\to B\xrightarrow{p} P\to 0$ of $R$-modules splits: there is an $R$-linear map $s\colon P\to B$ with $p\circ s = \id_P$;
 
-  For every SES $0\to A\to B\to P\to 0$, there is a right section $P\to B$ such that $P\to B\to P = \id_P$.
+4. the functor $\Hom_R(P, \wait)$ from $R$-modules to abelian groups is exact.
+:::
 
-  > Note that this implies $B\cong \im(P\to B) \oplus \ker(B\to P)$.
+::: {.proof}
+(1)$\Rightarrow$(3): lift $\id_P$ along the surjection $p$.
+(3)$\Rightarrow$(2): choose a free module $F$ with a surjection $p\colon F\to P$, for example on a generating set of $P$; a section $s$ of $p$ gives $F=s(P)\oplus\ker p$ with $s(P)\cong P$.
+(2)$\Rightarrow$(1): a free module $F$ with basis $(e_i)$ is projective, since $\tilde f(e_i)$ may be chosen as any preimage under $g$ of $f(e_i)$; if $F=P\oplus T$ with inclusion $\iota\colon P\to F$ and projection $\pi\colon F\to P$, a lift $h$ of $f\circ\pi$ gives the lift $\tilde f=h\circ\iota$ of $f$.
+(1)$\Leftrightarrow$(4): $\Hom_R(P,\wait)$ is always left exact, and it preserves surjections exactly when every $f\colon P\to M$ lifts along every surjection $g\colon N\to M$.
+:::
 
-- Exactness:
-
-  The (always left-exact) covariant hom functor $\Hom(P, \wait)$ is right-exact.
+::: {.remark}
+In (3), the section $s$ gives $B = s(P) \oplus \ker p$, and $s(P)\cong P$.
 :::

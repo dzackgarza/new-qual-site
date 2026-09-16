@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-T2NZ4
 kind: definition
-title: Simple Groups
+title: Simple groups
 classification:
   areas:
   - algebra
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A group $G$ is **simple** iff $H\normal G \implies H = \theset{e}, G$, i.e. it has no non-trivial proper subgroups.
+A group $G$ is \dfn{simple} if its only [[D-EKE4Q|normal subgroups]] are $\theset{e}$ and $G$.
 :::

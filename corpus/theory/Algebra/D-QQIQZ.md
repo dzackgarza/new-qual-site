@@ -13,6 +13,12 @@ review: draft
 ---
 
 ::: {.definition}
-An element $r\in R$ is a **unit** if $r\divides 1$: there exists an $s\in R$ such that $rs = sr = 1$.
-Then $r\inv \da s$ is uniquely determined, and the set of units $(R\units, \cdot) \in \Ab\Grp$ forms a group.
+Let $R$ be a [[D-GURUB|ring]].
+An element $r\in R$ is a \dfn{unit} if there exists $s\in R$ such that $rs = sr = 1$.
+The set of units of $R$ is denoted $R^{\times}$.
+:::
+
+::: {.remark}
+If $r\in R^{\times}$, the element $s$ with $rs=sr=1$ is unique: if also $rs'=s'r=1$, then $s'=s'(rs)=(s'r)s=s$.
+It is written $r^{-1}$, and $(R^{\times}, \cdot)$ is a group, abelian when $R$ is commutative.
 :::
