@@ -14,7 +14,7 @@ A holomorphic map $f\colon\DD\to\DD$ with $f(0)=0$ satisfies $\abs{f(z)}\leq\abs
 
 [[T-VM6MJ]]
 
-[[FD-BIAA7]] [[FF-5H4UZ]]
+[[FF-5H4UZ]]
 
 ![](../../../../assets/assets/figures/2021-10-29_02-32-14.png)
 
