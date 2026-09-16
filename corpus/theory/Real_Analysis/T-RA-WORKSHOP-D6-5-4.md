@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-4
 kind: theorem
-title: 'Theorem 5.4: First fundamental theorem of calculus'
+title: First fundamental theorem of calculus
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,10 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f\in\mathcal R$ on $[a,b]$ and $$F(x)=\int_a^x f(t)\,dt,$$ then $F$ is continuous on $[a,b]$ and differentiable at any $x_0\in[a,b]$ where $f$ is continuous with $F'(x_0)=f(x_0)$.
+Let $a<b$, let $f\colon[a,b]\to\RR$ be Riemann integrable on $[a,b]$, and define $F\colon[a,b]\to\RR$ by
+$$
+F(x)\coloneqq\int_a^x f(t)\,dt.
+$$
+Then $F$ is continuous on $[a,b]$.
+If $f$ is continuous at $x_0\in[a,b]$, then $F$ is differentiable at $x_0$, one-sidedly if $x_0\in\theset{a,b}$, and $F'(x_0)=f(x_0)$.
 :::
