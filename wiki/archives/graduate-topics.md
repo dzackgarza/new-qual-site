@@ -1,9 +1,9 @@
 ---
-title: Graduate Topics
+title: Graduate syllabus topics
 order: 110
 ---
 
-# Graduate Topics
+# Graduate syllabus topics
 
 ## Algebra
 
@@ -21,7 +21,7 @@ order: 110
 
 - Yoneda lemma
 
-### Group Theory
+### Group theory
 
 First 6 chapters (220 pages) of D&F.
 
@@ -97,9 +97,11 @@ First 6 chapters (220 pages) of D&F.
 
 - symmetric groups and permutation representations;
 
+- symmetric groups and subgroups
+
 - transpositions
 
-### Commutative Ring Theory
+### Commutative ring theory
 
 Chapters 7-9 in D&F
 
@@ -179,7 +181,7 @@ Chapters 7-9 in D&F
 
 - Zorn's lemma
 
-### Field Theory
+### Field theory
 
 > Chapters 13-14 in D&F
 
@@ -221,7 +223,7 @@ Chapters 7-9 in D&F
 
 - transcendental extensions
 
-### Galois Theory
+### Galois theory
 
 - abelian extensions of $\QQ$
 
@@ -251,7 +253,7 @@ Chapters 7-9 in D&F
 
 - the Fundamental Theorem of Symmetric Functions
 
-### Module Theory
+### Module theory
 
 > Sections 10.1,2,3 and 12.1,2,3.
 
@@ -275,7 +277,7 @@ Chapters 7-9 in D&F
 
 - the Isomorphism Theorems
 
-### Noncommutative Ring Theory
+### Noncommutative ring theory
 
 - Artin-Wedderburn theorem;
 
@@ -291,7 +293,7 @@ Chapters 7-9 in D&F
 
 - Semisimple rings
 
-### Representations of Groups
+### Representations of groups
 
 - character tables
 
@@ -312,7 +314,7 @@ Chapters 7-9 in D&F
 
 - Schur orthogonality
 
-## Real Analysis
+## Real analysis
 
 - $L^p$ spaces
 
@@ -418,7 +420,7 @@ Chapters 7-9 in D&F
 
 - Weak $L^p$ spaces
 
-## Complex Analysis
+## Complex analysis
 
 - Analytic functions
 
@@ -512,7 +514,9 @@ Chapters 7-9 in D&F
 
 - Weierstrass product theorem
 
-## Differential Topology
+## Differential topology
+
+Guillemin and Pollack, *Differential Topology*.
 
 - degree theory
 
@@ -542,7 +546,9 @@ Chapters 7-9 in D&F
 
 - vector fields
 
-## Differential Geometry
+## Differential geometry
+
+Spivak, differential geometry.
 
 - de Rham cohomology
 
@@ -572,7 +578,7 @@ Chapters 7-9 in D&F
 
 - volume forms
 
-## Algebraic Topology
+## Algebraic topology
 
 - axioms of homology theory
 
