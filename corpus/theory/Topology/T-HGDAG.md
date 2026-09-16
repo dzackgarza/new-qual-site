@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-HGDAG
 kind: theorem
-title: 'Baire category theorem: countable intersections of dense open sets in a complete
+title: Baire category theorem for complete metric spaces
   metric space are dense'
 classification:
   areas:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X$ is a complete metric space, $X$ is a **Baire space**: the intersection of countably many dense open sets in $X$ is again dense in $X$.
+Every complete metric space $X$ is a [[D-VFNTY|Baire space]]: the intersection of countably many dense open subsets of $X$ is dense in $X$ [@Mun00, Theorem 48.2 and Lemma 48.1].
 :::
