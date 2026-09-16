@@ -14,7 +14,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Arguments, branch cuts, and the complex logarithm]]
 - [[complex-analysis/basics/precalculus|Elementary geometry and conic sections]]
 - Uniform continuity, uniform differentiability, uniform convergence, and the Heine--Cantor theorem
-- [[complex-analysis/basics/calculus-preliminaries|Calculus]]: the [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|implicit and inverse function theorems]], [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]], and [[complex-analysis/basics/calculus-preliminaries#Stokes' theorem|Stokes' theorem]]
+- [[complex-analysis/basics/calculus-preliminaries|Calculus]] — the [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|implicit and inverse function theorems]], [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]], and [[complex-analysis/basics/calculus-preliminaries#Stokes' theorem|Stokes' theorem]]
 
 ## Differentiation and integration
 
@@ -28,7 +28,7 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 
 - [[complex-analysis/holomorphic-functions/power-series|Power series]] and [[complex-analysis/basics/series-reference|standard series]]
 - [[complex-analysis/singularities/laurent-series|Laurent series]]
-- [[complex-analysis/singularities/removable-poles-essential|Isolated singularities]]: poles, essential singularities, and Riemann's removable singularity theorem
+- [[complex-analysis/singularities/removable-poles-essential|Isolated singularities]] — poles, essential singularities, and Riemann's removable singularity theorem
 - [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]]
 
 ## Integration
@@ -74,6 +74,6 @@ The [UGA complex analysis prelim review topic list](attachments/Complex_Analysis
 - $\operatorname{SL}_2(\RR)$, modular forms, and elliptic curves
 - The hyperbolic metric
 - Riemann surfaces
-- [[complex-analysis/appendices/special-functions|Special functions]]: the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
+- [[complex-analysis/appendices/special-functions|Special functions]] — the [[complex-analysis/appendices/special-functions#The Gamma function|Gamma function]], the [[complex-analysis/appendices/special-functions#The Riemann zeta function|zeta function]], and [[complex-analysis/appendices/special-functions#Elliptic functions|elliptic functions]]
 - [[complex-analysis/appendices/special-functions#Infinite series and products|Canonical products]]
 - [[complex-analysis/appendices/pdes|The Dirichlet problem]]
