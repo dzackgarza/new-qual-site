@@ -121,9 +121,9 @@ External links that are not vendored remain on the resource pages until a delibe
   The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
 - [x] [Fall_2019_Assignments.pdf](assets/attachments/extracted/Fall_2019_Assignments.md) (919L, 70 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (16 pages).
-  The PDF compiles Neil Lyall's UGA Math 8100 Assignments 1–8 with their extra challenge problems and a final set of extra practice problems: 67 positions (7+3, 6+3, 6+3, 7+3, 6+2, 6+1, 6+2 and 6+3).
+  The PDF compiles Neil Lyall's UGA Math 8100 Assignments 1–8 with their extra challenge problems and a final set of extra practice problems: 70 positions (7+3, 6+3, 6+3, 7+3, 6+2, 6+1, 6+2 and 6+3).
   They match, position for position and in source order, the canonical cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`, which the compilation collection `SRC-MATH8100-FALL-2019-ASSIGNMENTS` already routes; no new cards are needed.
-  The inventory's UNL and applied-algebra labels and count of 70 were stale.
+  The inventory's UNL and applied-algebra labels were stale.
 
 - [x] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (91 pages).
   The PDF is D. Zack Garza's written solutions to UGA Math 8100 Assignments 1–8 (handwritten for the first three, typeset from Assignment 4 on); it states no problems of its own, and the problems it solves are the cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`.
