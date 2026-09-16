@@ -11,8 +11,7 @@ topics:
 
 # Maximum modulus and open mapping
 
-Two statements of one fact: a nonconstant holomorphic map cannot hold still.
-It is open, and therefore its modulus has no interior maximum.
+A nonconstant holomorphic function on a connected open set is an open map, and its modulus has no local maximum.
 
 ## The open mapping theorem
 
@@ -20,13 +19,13 @@ It is open, and therefore its modulus has no interior maximum.
 
 [[FT-OEYLQ]]
 
-:::{.proof title="Using Rouché"}
+::: {.proof title="Using Rouché's theorem"}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-26-16.png)
 
 :::
 
-:::{.proof title="using the argument principle"}
+::: {.proof title="Using the argument principle"}
 
 ![](../../../../assets/assets/figures/2022-01-02_02-14-55.png)
 
@@ -34,15 +33,16 @@ It is open, and therefore its modulus has no interior maximum.
 
 :::
 
-:::{.proof title="using local degrees"}
+::: {.proof title="Using local degrees"}
 
 ![attachments/Pasted image 20211215022640.png](../../../../assets/assets/attachments/Pasted%20image%2020211215022640.png)
 
 :::
 
-:::{.remark title="Where the proofs come from"}
-All three count solutions of $f(z) = w$ for $w$ near $f(z_0)$ and show the count is positive on a whole neighborhood, which is [[complex-analysis/counting-zeros/how-many-zeros-in-this-region|counting zeros]] again.
-Rouché is the shortest route: perturbing $w$ slightly cannot change the number of solutions.
+::: {.remark title="Common structure of the proofs"}
+Each proof shows that for $w$ near $w_0 \coloneqq f(z_0)$ the equation $f(z) = w$ has a solution near $z_0$, by [[complex-analysis/counting-zeros/how-many-zeros-in-this-region|counting zeros]] of $f - w$.
+Since $f$ is nonconstant, the zeros of $f - w_0$ are isolated, so there is $r>0$ with $\delta \coloneqq \min_{\abs{z-z_0}=r}\abs{f(z)-w_0} > 0$.
+For $\abs{w-w_0}<\delta$, Rouché's theorem applied to $f - w = (f-w_0) + (w_0 - w)$ shows that $f-w$ has as many zeros in $D_r(z_0)$ as $f-w_0$, hence at least one.
 
 :::
 
@@ -52,42 +52,40 @@ Rouché is the shortest route: perturbing $w$ slightly cannot change the number 
 
 [[FT-DWCQ7]]
 
-:::{.proof title="by the open mapping theorem"}
-The map $z\mapsto \abs z$ is open away from $z=0$, and $f$ is open by the previous theorem.
-If $\abs f$ attained a maximum at an interior $z_0$, there would be a neighborhood $U \ni z_0$ with $\abs{f(U)}$ open in $\RR$, and such an interval contains values larger than $\abs{f(z_0)}$.
+::: {.proof title="By the open mapping theorem"}
+Suppose $\abs{f(z)}\leq\abs{f(z_0)}$ for $z$ in a disc $U$ about $z_0$, and that $f$ is nonconstant on $U$.
+By [[C-FRF33|the open mapping theorem]], $f(U)$ is an open set containing $f(z_0)$, so it contains $(1+t)f(z_0)$ for small $t>0$ if $f(z_0)\neq 0$, and a small nonzero value if $f(z_0)=0$.
+Either value has modulus larger than $\abs{f(z_0)}$, a contradiction, so $f$ is constant on $U$.
 
 :::
 
-:::{.proof title="by the mean value property"}
-Let $z_0\in\Omega$ and pick $R$ with $\DD_R(z_0) \subseteq \Omega$.
-The mean value property gives
-\[
-f(z_0) = {1\over 2\pi} \int_0^{2\pi } f(Re^{it} + z_0) \dt
-,\]
-so
-\[
-\abs{f(z_0)} \leq {1\over 2\pi}\int_0^{2\pi }\abs{f(Re^{it} + z_0 )} \dt \leq \max_{t \in [0, 2\pi]} \abs{f(Re^{it} + z_0) }
-.\]
-Taking $z_R$ to be the maximizing point, $\abs{f(z_0)} \leq \abs{f(z_R)}$.
-Since this holds for every $R$, equality throughout forces $f$ constant on $\DD_R(z_0)$, and the identity principle extends that to $\Omega$.
+::: {.proof title="By the mean value property"}
+Suppose $\abs{f(z)}\leq\abs{f(z_0)}$ on a disc $\DD_R(z_0) \subseteq \Omega$.
+For $0<r<R$ the mean value property gives
+$$
+\abs{f(z_0)} = \abs{{1\over 2\pi} \int_0^{2\pi } f(z_0 + re^{it}) \dt} \leq {1\over 2\pi}\int_0^{2\pi }\abs{f(z_0 + re^{it})} \dt \leq \abs{f(z_0)}
+.$$
+The integrand $\abs{f(z_0)} - \abs{f(z_0+re^{it})}$ is continuous and nonnegative with integral $0$, so it vanishes, and $\abs f = \abs{f(z_0)}$ on $\DD_R(z_0)$.
+If $\abs{f(z_0)} = 0$ then $f\equiv 0$ there.
+Otherwise $\bar f = \abs{f(z_0)}^2/f$ is holomorphic on $\DD_R(z_0)$, so $f$ and $\bar f$ both satisfy the Cauchy–Riemann equations, which forces $f' = 0$ and $f$ constant on $\DD_R(z_0)$.
+On a connected $\Omega$, the identity principle extends this to $\Omega$.
 
 :::
 
-:::{.remark title="The real version underneath"}
-The mean value proof never uses holomorphy directly, only the averaging identity, so it proves the statement for harmonic functions at the same time.
-Thus the harmonic and holomorphic maximum principles have the same averaging proof.
+::: {.remark title="Harmonic functions"}
+The first half of the mean value proof uses only continuity and the mean value property, which a real harmonic function $u$ also has; with $u$ in place of $\abs f$ it shows that $u$ is constant near a local maximum.
 
 :::
 
 [[PR-6WOTK]]
 
-:::{.proof title="from Gamelin"}
-The idea is to use the mean value property to show $\ts{u(z)=M}$ is open.
-Suppose $u(z_1)=M$ and write the mean value equality as
-\[
+::: {.proof title="from Gamelin"}
+The set $\ts{u(z)=M}$ is open.
+Suppose $u(z_1)=M$ and $\DD_\rho(z_1)\subseteq D$, and write the mean value equality as
+$$
 0=\int_{0}^{2 \pi}\left[u\left(z_{1}\right)-u\left(z_{1}+r e^{i \theta}\right)\right] \frac{\dtheta}{2 \pi}, \quad 0<r<\rho
-.\]
-The integrand is nonnegative and continuous, so the integral vanishes only if the integrand does.
+.$$
+Since $u\leq M$, the integrand is nonnegative and continuous, so it vanishes identically.
 Thus $u(z_1+re^{i\theta})=u(z_1)=M$ for all such $r, \theta$, and $\ts{u(z)=M}$ contains a disc about each of its points, hence is open.
 The set $\ts{u(z)<M}$ is open by continuity.
 Since $D$ is connected one of them is empty, so either $u<M$ throughout or $u\equiv M$.
@@ -96,7 +94,7 @@ Since $D$ is connected one of them is empty, so either $u<M$ throughout or $u\eq
 
 [[PR-QW3ZK]]
 
-:::{.proof title="from Gamelin"}
+::: {.proof title="from Gamelin"}
 Replace $h(z)$ by $\lambda h(z)$ for a unimodular constant $\lambda$ so that $h(z_0) = M$, and set $u = \Re h$.
 Then $u$ is harmonic on $D$ and attains its maximum at $z_0$, so $u \equiv M$ by the real version.
 Since $\abs h \leq M$ and $\Re h = M$, we get $\Im h = 0$, so $h$ is constant.
@@ -105,8 +103,10 @@ Since $\abs h \leq M$ and $\Re h = M$, we get $\Im h = 0$, so $h$ is constant.
 
 [[C-KOFDQ]]
 
-:::{.proof}
-A continuous function on a compact space attains its maximum modulus; if that happens at an interior point, the strict maximum principle makes $h$ constant.
+::: {.proof}
+Since $\overline D$ is compact and $h$ is continuous on it, $\abs h$ attains its maximum on $\overline D$ at some $z^*$.
+If $z^*\in\bd D$, then $\abs h\leq \abs{h(z^*)}\leq M$ on $D$.
+If $z^*\in D$, then [[PR-QW3ZK]] makes $h$ constant on $D$, hence on $\overline D$ by continuity, and its constant modulus is at most $M$ because $\bd D$ is nonempty.
 
 :::
 
@@ -114,16 +114,15 @@ A continuous function on a compact space attains its maximum modulus; if that ha
 
 [[T-YLI6Y]]
 
-:::{.proof}
-Suppose $f\neq 0$ on $G$.
-If $f$ vanishes somewhere on $\bd G$ we are done, so assume $f \neq 0$ on $\bar G$.
-Then $1/f$ is holomorphic on $G$ and continuous on $\bar G$, so $\max_{z\in \bar G}\abs{1/f(z)} = \max_{z\in \bd G} \abs{1/f(z)}$, which is the claim.
+::: {.proof}
+Since $f$ does not vanish on $\Omega$, $g \coloneqq 1/f$ is holomorphic on $\Omega$.
+A local minimum of $\abs f$ at $z_0$ is a local maximum of $\abs g$ at $z_0$, so $g$, and hence $f$, is constant near $z_0$ by the maximum modulus principle [[T-BYNL5]].
+On a connected $\Omega$ the identity principle makes $f$ constant.
 
 :::
 
-:::{.warnings}
-The nonvanishing hypothesis is the whole theorem.
-A zero of $f$ in the interior is an interior minimum of $\abs f$, so dropping it makes the statement false rather than merely unproven.
+::: {.example title="The nonvanishing hypothesis is necessary"}
+The function $f(z) = z$ on $\DD$ is nonconstant, and $\abs f$ has its minimum at the interior point $0$.
 
 :::
 
