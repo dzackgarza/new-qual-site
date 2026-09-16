@@ -97,7 +97,7 @@ $$
 [[C-CT2NX]]
 
 ::: {.proof}
-Let $A$ and $B$ be compact surfaces, and let $A'$ and $B'$ be $A$ and $B$ with the interior of a closed disc removed, so that $A\# B = A'\union_{S^1} B'$.
+Let $A$ and $B$ be closed surfaces, and let $A'$ and $B'$ be $A$ and $B$ with the interior of a closed disc removed, so that $A\# B = A'\union_{S^1} B'$.
 Gluing a disc back along a circle and applying inclusion-exclusion gives $\chi(A) = \chi(A') + \chi(\DD^2) - \chi(S^1) = \chi(A')+1$, and likewise $\chi(B)=\chi(B')+1$.
 Applying inclusion-exclusion to open neighborhoods $U\homotopic A'$ and $V\homotopic B'$ with $U\cap V\homotopic S^1$,
 $$
