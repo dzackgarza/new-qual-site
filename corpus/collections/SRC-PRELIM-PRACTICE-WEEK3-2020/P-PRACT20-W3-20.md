@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-20
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 20"
+title: Minimizing $x+4z$ on the sphere $x^2+y^2+z^2=2$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-21
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 21"
+title: Work done by a constant force along the twisted cubic $(t,t^2,t^3)$
 classification:
   areas:
   - real-analysis

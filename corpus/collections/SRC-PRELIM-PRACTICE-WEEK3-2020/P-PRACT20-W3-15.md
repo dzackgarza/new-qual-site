@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-15
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 15"
+title: Plane through the origin perpendicular to the intersection line of two planes
 classification:
   areas:
   - real-analysis

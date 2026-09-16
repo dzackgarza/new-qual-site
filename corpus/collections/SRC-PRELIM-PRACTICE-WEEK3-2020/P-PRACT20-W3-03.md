@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-03
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 3"
+title: The integral $\int_0^\infty\lfloor x\rfloor e^{-x}\,dx$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-19
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 19"
+title: Volume between the paraboloids $z=6-x^2-2y^2$ and $z=-2+x^2+2y^2$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-16
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 16"
+title: Recovering $f(x,y)$ from its partial derivatives $2x+y$ and $x+2y$
 classification:
   areas:
   - real-analysis

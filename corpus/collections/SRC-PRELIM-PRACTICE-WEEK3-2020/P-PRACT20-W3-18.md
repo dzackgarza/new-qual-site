@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-18
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 18"
+title: Partial derivative of the elementary symmetric polynomial $\sum_{i<j}x_ix_j$
 classification:
   areas:
   - real-analysis
