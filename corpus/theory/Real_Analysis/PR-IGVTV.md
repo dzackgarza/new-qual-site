@@ -20,8 +20,3 @@ $$
 \sum_{n=N}^\infty a_n \convergesto{N\to\infty} 0 .
 $$
 :::
-
-::: {.proof}
-Let $s_N\coloneqq\sum_{n=1}^N a_n$ and $s\coloneqq\lim_N s_N$.
-Then $a_N=s_N-s_{N-1}\to s-s=0$, and $\sum_{n=N}^\infty a_n=s-s_{N-1}\to0$.
-:::
