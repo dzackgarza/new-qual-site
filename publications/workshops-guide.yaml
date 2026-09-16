@@ -3,18 +3,15 @@ id: GUIDE-WORKSHOPS
 kind: study-guide
 title: Workshops
 lede: >-
-  The qual workshops as a practice track across all four subjects. Problems appear in
-  the order the workshops met them rather than in dependency order, so this is a
-  companion practice sequence to the subject guides rather than a second traversal of
-  the theory.
+  Problems from the qualifying-exam workshops in algebra, real analysis, complex analysis,
+  and topology, listed in the order of the workshop sessions.
 sections:
   - slug: algebra
     title: Algebra
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Four sessions: subgroup and index counting first, then the finite-group structure
-      the counting supports, then Sylow applied, and finally rings. The problems appear
-      in workshop order rather than in dependency order.
+      Four sessions, in order: a warm-up on groups, finite group theory, Sylow theory, and
+      rings.
     items:
       # Algebra Week 1 Groups Warmup
       - ref: P-SERVA
@@ -75,12 +72,11 @@ sections:
       - ref: P-3PTP5
       - ref: P-HWBXR
   - slug: real-analysis
-    title: Real Analysis
+    title: Real analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One session on the preliminaries assumed by continuity. The UNL workshop packet
-      — topic sheets, three qualifying exams, and the numbered results the worksheets
-      state — follows under Real Analysis Workshop Packet.
+      One session on real-analysis preliminaries. The UNL workshop packet is listed under
+      [real analysis workshop packet](real-analysis-workshop-packet.html).
     items:
       # Real Week 1 Preliminaries
       - ref: E-JY5OT
@@ -91,12 +87,13 @@ sections:
       - ref: E-GMYE2
       - ref: P-4FH62
   - slug: complex-analysis
-    title: Complex Analysis
+    title: Complex analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Two sessions: [Holomorphy and Analyticity](../GUIDE-COMPLEX-ANALYSIS/holomorphy-and-analyticity.html),
-      then [Cauchy Theory](../GUIDE-COMPLEX-ANALYSIS/cauchy-theory.html), where the exercises are worked
-      applications of the integral formula rather than restatements of it.
+      Two sessions: preliminaries, on the material of [holomorphy and
+      analyticity](../GUIDE-COMPLEX-ANALYSIS/holomorphy-and-analyticity.html), and [Cauchy
+      theory](../GUIDE-COMPLEX-ANALYSIS/cauchy-theory.html), with exercises that apply the
+      Cauchy integral formula.
     items:
       # Complex Week 1 Preliminaries
       - ref: E-N6DX3
@@ -109,9 +106,9 @@ sections:
     title: Topology
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One session on point-set preliminaries, carrying more problems than any other single
-      workshop. It exercises the separation and compactness hypotheses used throughout
-      the early topology problems.
+      One session on point-set topology, with problems on separation axioms and compactness.
+      The workshop packets are listed under [topology workshop
+      packets](topology-workshop-packets.html).
     items:
       # Topology Week 1 Preliminaries
       - ref: E-YUGKU
@@ -141,14 +138,14 @@ sections:
       - ref: P-WHXWM
       - ref: P-TC2PJ
   - slug: real-analysis-workshop-packet
-    title: Real Analysis Workshop Packet
+    title: Real analysis workshop packet
     parent: real-analysis
     lede: >-
-      The UNL real-analysis workshop packet, organized by day from the worksheets.
-      Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying
-      exams; Days 2–8 are the topic sheets. The packet states twenty numbered results
-      and then sets problems against them. Their numbering runs 3.1 to 6.7 with 6.6
-      absent, matching the source.
+      The UNL real-analysis workshop packet, by day. Days 1, 9, and 10 are the May 2016,
+      January 2019, and May 2018 qualifying exams, and Days 2--8 are topic sheets. The
+      worksheets state numbered results 3.1--3.5, 4.1--4.3, 5.1--5.5, and 6.1--6.7, with no
+      result 6.6 in the source, and a definition of pointwise and uniform convergence of
+      sequences and series of functions; problems on the sheets apply them.
     items:
       - ref: SRC-RA-WORKSHOP
       # The numbered results the worksheets state and then set problems against.
@@ -174,14 +171,13 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-5
       - ref: T-RA-WORKSHOP-D7-6-7
   - slug: topology-workshop-packets
-    title: Topology Workshop Packets
+    title: Topology workshop packets
     parent: topology
     lede: >-
-      Two topology workshop packets. The numbered-day packet runs through compactness,
-      connectedness, separation axioms, counterexamples, then fundamental groups,
-      covering spaces and homology, with no Day 5 or Day 6 among the source worksheets.
-      The May 2020 packet runs the same ground again in one week. Problems remain in
-      day or worksheet order.
+      Two topology workshop packets. The numbered-day packet covers compactness,
+      connectedness, separation axioms, and counterexamples, then fundamental groups, covering
+      spaces, and homology; the source has no Day 5 or Day 6 worksheet. The May 2020 packet
+      covers the same topics in one week. Problems are listed in day or worksheet order.
     items:
       - ref: SRC-TOP-WORKSHOP
       - ref: SRC-TOP-WORKSHOP-2020
