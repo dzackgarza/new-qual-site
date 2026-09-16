@@ -31,7 +31,7 @@ c. Let $U = \bigcap_i U_i$, and consider the map
 f: U \to X \fiberproduct{S} P_1 \fiberproduct{S} \cdots \fiberproduct{S} P_n
 \]
 deduced from the given maps $U \to X$ and $U \to P_i$.
-Let $X'$ be the closed image subscheme structure on $\cl_X f(U)$.
+Let $X'$ be the closed image subscheme structure on $\cl_X f(U)$ (see Ex. 3.11d).
 Let $g: X' \to X$ be the projection onto the first factor, and let $h: X' \to P = P_1 \fiberproduct{S} \cdots \fiberproduct{S} P_n$ be the projection onto the product of the remaining factors.
 Show that $h$ is a closed immersion, hence $X'$ is projective over $S$.
 
