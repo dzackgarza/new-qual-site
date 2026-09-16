@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A manifold that is compact, with or without boundary.
+A \dfn{closed manifold} is a [[D-EILKJ|compact]] [[D-UBWVX|manifold]] without boundary [@Hat02, sec. 3.3].
 :::
