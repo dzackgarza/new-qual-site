@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-O4UD3
 kind: theorem
-title: Heine-Cantor
+title: Heine--Cantor theorem
 classification:
   areas:
   - real-analysis
@@ -15,6 +15,11 @@ review: draft
 ---
 
 ::: {.theorem}
-Every continuous function $f:X\to Y$ where $X$ is a compact metric space is uniformly continuous.
-As a result, if $f:U\to \RR$ is continuous, then $f$ is uniformly continuous on any $K \subseteq U$ compact.
+Let $X$ and $Y$ be metric spaces with $X$ [[D-EILKJ|compact]].
+Every continuous function $f\colon X\to Y$ is [[D-WGYSB|uniformly continuous]].
+:::
+
+::: {.corollary}
+Let $U\subseteq\RR^n$ and let $f\colon U\to \RR$ be continuous.
+For every compact $K \subseteq U$, the restriction $\ro{f}{K}$ is uniformly continuous.
 :::
