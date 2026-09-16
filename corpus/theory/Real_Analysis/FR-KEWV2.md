@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: FR-KEWV2
 kind: proof
-title: 'Proposition: $\sum \abs{f_n} \in L^1 \implies \sum \abs{f_n(x)} < \infty$
-  a.e.'
+title: A series of functions with summable $L^1$ norms converges absolutely almost everywhere
 classification:
   areas:
   - real-analysis
@@ -14,13 +13,23 @@ relations: []
 review: draft
 ---
 
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $f_n\colon X\to\CC$ for $n\geq1$ be [[D-DHFN4|measurable]], and let $S(x) \coloneqq \sum_{n\geq1} \abs{f_n(x)}\in[0,\infty]$.
+Then
+$$
+\int_X S\dmu = \sum_{n\geq1} \norm{f_n}_1 .
+$$
+In particular, if $\sum_{n\geq1} \norm{f_n}_1<\infty$, then $S\in L^1(X,\mu)$ and $\sum_{n\geq1} \abs{f_n(x)} < \infty$ for $\mu$-almost every $x\in X$.
+:::
+
 ::: {.proof}
-Let $S(x) \da \sum_n \abs{f_n(x)}$, the pointwise sum of the nonnegative functions $\abs{f_n}$.
-By the monotone convergence theorem applied to the partial sums $S_N(x) = \sum_{n=1}^N \abs{f_n(x)}$,
-\[
-\int_X S = \int_X \lim_N S_N = \lim_N \int_X S_N = \lim_N \sum_{n=1}^N \int_X \abs{f_n} = \sum_n \norm{f_n}_1 < \infty,
-\]
-where the last equality is the hypothesis $\sum \abs{f_n} \in L^1$.
-An integrable function is finite almost everywhere: if $S(x) = \infty$ on a set of positive measure, then $\int_X S = \infty$, contradicting the computation above.
-Therefore $S(x) = \sum_n \abs{f_n(x)} < \infty$ for almost every $x$.
+The partial sums $S_N \coloneqq \sum_{n=1}^N \abs{f_n}$ are nonnegative, measurable, and increase pointwise to $S$.
+By the monotone convergence theorem,
+$$
+\int_X S\dmu = \lim_{N\to\infty} \int_X S_N\dmu = \lim_{N\to\infty} \sum_{n=1}^N \int_X \abs{f_n}\dmu = \sum_{n\geq1} \norm{f_n}_1.
+$$
+Now assume $\sum_{n\geq1} \norm{f_n}_1<\infty$, so $\int_X S\dmu<\infty$.
+Let $A\coloneqq\theset{x\in X\suchthat S(x)=\infty}$, which is measurable.
+For every $t>0$ we have $S\geq t\,\one_A$, so $t\,\mu(A)\le\int_X S\dmu$; letting $t\to\infty$ gives $\mu(A)=0$.
+Therefore $\sum_{n\geq1} \abs{f_n(x)} < \infty$ for almost every $x$.
 :::
