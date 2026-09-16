@@ -21,7 +21,7 @@ prompts:
 - Over an infinite field, show that $f$ is homogeneous of degree $d$ if and only if $f(\lambda \mathbf{x}) = \lambda^d f(\mathbf{x})$ for all $\lambda$.
 - Find the projective closures of $V(x^2 + y^2 - 1)$ and $V(y - x^3)$ in $\PP^2$.
 - Describe the line at infinity in $\PP^2$, and find the intersection of the projective closures of $V(y)$ and $V(y - tx - 1)$ when $t = 0$.
-- Show that a real conic $V(f) \subseteq \RR^2$ with infinitely many real points is a circle if and only if the projective closure of $V(f)$ passes through the circular points $[1 : \pm i : 0]$.
+- 'Show that a real conic $V(f) \subseteq \RR^2$ with infinitely many real points is a circle if and only if the projective closure of $V(f)$ passes through the circular points $[1 : \pm i : 0]$.'
 - Show that conics in $\PP^2$ are parametrized by $\PP^5$, and that the conics through a fixed point form a hyperplane $H_p$.
 - Show that over an infinite field the conics through $5$ fixed points form a single point or an infinite set, and that there is a unique conic through $5$ points in linear general position.
 - Show that there is a unique circle through any $3$ non-collinear points of $\RR^2$.
