@@ -41,7 +41,3 @@ source:
     term: fall
     year: 1996
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1996. Problems are listed in source order. Problems 8 and 15 preserve explicit extraction gaps rather than guessed missing source data.
-:::
