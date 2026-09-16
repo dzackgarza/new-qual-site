@@ -6,7 +6,7 @@ title: Elementary divisors and invariant factors of $\mathbf{Z}_{15}\times\mathb
   abelian groups of order $2700$
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Abelian Groups
   - Structure Theorem
