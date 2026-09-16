@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-PPYCK
 kind: definition
-title: Equicontinuity
+title: Equicontinuity on a set
 classification:
   areas:
   - complex-analysis
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-A family $\mcf$ of holomorphic functions is **equicontinuous** on $K$ if 
-\[
-\forall \eps>0,\, \exists \delta = \delta(\eps) \text{ such that } z,w\in K,\, \abs{z-w}< \delta \implies \abs{f(z) - f(w)} < \eps \quad \forall f\in \mcf
-.\]
+::: {.definition}
+Let $\Omega\subseteq\CC$ be open, let $K\subseteq\Omega$, and let $\mathcal F$ be a family of [[D-E7A5W|holomorphic]] functions on $\Omega$.
+The family $\mathcal F$ is \dfn{equicontinuous} on $K$ if for every $\varepsilon>0$ there exists $\delta>0$ such that
+$$
+\abs{f(z)-f(w)}<\varepsilon\qquad\text{for all } f\in\mathcal F \text{ and all } z,w\in K \text{ with } \abs{z-w}<\delta.
+$$
 :::
