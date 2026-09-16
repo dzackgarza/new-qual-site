@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-L7LNZ
 kind: proposition
-title: Uniform Limits Commute with Integrals
+title: Uniform limits commute with integrals on finite measure spaces
 classification:
   areas:
   - real-analysis
@@ -14,25 +14,20 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $(X,\mathcal M,\mu)$ be a finite measure space. If $f_n,f\in L^1(X,\mu)$ and $f_n\to f$ uniformly (equivalently, $\|f_n-f\|_\infty\to0$), then
-\[
-\int_X f_n\,d\mu\longrightarrow\int_X f\,d\mu.
-\]
-More precisely,
-\[
-\left|\int_X(f_n-f)\,d\mu\right|
-\le \mu(X)\|f_n-f\|_\infty.
-\]
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] with $\mu(X)<\infty$.
+If $f_n,f\in L^1(X,\mu)$ and $f_n\to f$ [[D-YZC3C|uniformly]] on $X$, then
+$$
+\abs{\int_X(f_n-f)\dmu}
+\leq \mu(X)\sup_{x\in X}\abs{f_n(x)-f(x)} \convergesto{n\to\infty} 0,
+$$
+so $\int_X f_n\dmu\to\int_X f\dmu$.
 :::
 
 ::: {.proof}
-Since $\mu(X)<\infty$,
-\[
-\begin{aligned}
-\left|\int_X(f_n-f)\,d\mu\right|
-&\le \int_X|f_n-f|\,d\mu\\
-&\le \mu(X)\|f_n-f\|_\infty.
-\end{aligned}
-\]
-The right-hand side tends to $0$, proving the claimed convergence of the integrals.
+$$
+\abs{\int_X(f_n-f)\dmu}
+\leq \int_X\abs{f_n-f}\dmu
+\leq \mu(X)\sup_{x\in X}\abs{f_n(x)-f(x)},
+$$
+and the right-hand side tends to $0$ by uniform convergence.
 :::
