@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-TGQFG
 kind: proposition
-title: Volumes of Rectangles
+title: Volume of a rectangle is additive over almost disjoint decompositions and subadditive over covers
 classification:
   areas:
   - real-analysis
@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $\ts{R_j} \covers R$ is a covering of $R$ by rectangles,
-\[
-R = \overset{\circ}{\Disjoint_{j}} R_j &\implies \abs R = \sum \abs R_j \\
-R \subseteq \Union_j R_j &\implies \abs R \leq \sum \abs R_j
-.\]
+::: {.proposition}
+A closed rectangle in $\RR^n$ is a product $R=\prod_{i=1}^n[a_i,b_i]$ with $a_i\leq b_i$, with volume $\abs{R}\coloneqq\prod_{i=1}^n(b_i-a_i)$.
+Let $R$ and $R_1,R_2,\ldots$ be closed rectangles in $\RR^n$, finitely or countably many.
 
+(a) If $R=\bigcup_j R_j$ and the $R_j$ are pairwise [[FD-5T3HX|almost disjoint]], then $\abs{R}=\sum_j\abs{R_j}$.
+
+(b) If $R\subseteq\bigcup_j R_j$, then $\abs{R}\leq\sum_j\abs{R_j}$.
 :::
