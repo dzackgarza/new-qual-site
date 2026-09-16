@@ -36,7 +36,7 @@ a. First suppose that $g: A \to B'$ is a given homomorphism lifting $f$.
 b. Now let $P = k[x_1, \ldots, x_n]$ be a polynomial ring over $k$ of which $A$ is a quotient, and let $J$ be the kernel.
    Show that there does exist a homomorphism $h: P \to B'$ compatible with $f$ and with the surjections $P \surjects A$ and $B' \surjects B$, and show that $h$ induces an $A\dash$linear map $\bar h: J/J^2 \to I$.
 
-c. Now use the hypothesis that $\Spec A$ is nonsingular to obtain an exact sequence
+c. Now use the hypothesis that $\Spec A$ is nonsingular and (8.17) to obtain an exact sequence
 \[
 0 \to J/J^2 \to \Omega_{P/k} \tensor A \to \Omega_{A/k} \to 0
 .\]

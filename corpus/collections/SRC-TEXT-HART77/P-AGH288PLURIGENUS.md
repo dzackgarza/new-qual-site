@@ -31,5 +31,5 @@ is the sheaf of regular $q\dash$forms on $X$.
 In particular, for $q = \dim X$ we recover the geometric genus.
 The integers $h^{q,0}$ are called **Hodge numbers**.
 
-Show that $P_n$ and $h^{q,0}$ are birational invariants of $X$: if $X$ and $X'$ are birationally equivalent nonsingular projective varieties, then $P_n(X) = P_n(X')$ and $h^{q,0}(X) = h^{q,0}(X')$.
+Using the method of (8.19), show that $P_n$ and $h^{q,0}$ are birational invariants of $X$: if $X$ and $X'$ are birationally equivalent nonsingular projective varieties, then $P_n(X) = P_n(X')$ and $h^{q,0}(X) = h^{q,0}(X')$.
 :::

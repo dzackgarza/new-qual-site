@@ -29,4 +29,5 @@ Then the topological space $X$ with the sheaf of rings $\OO_{X'}$ is an infinite
 
 The general problem of classifying extensions of $X$ by $\mcf$ can be quite complicated.
 So for now, just prove the following special case: if $X$ is affine and nonsingular, then any extension of $X$ by a coherent sheaf $\mcf$ is isomorphic to the trivial one.
+See (III, Ex. 4.10) for another case.
 :::

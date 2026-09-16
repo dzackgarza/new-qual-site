@@ -24,5 +24,5 @@ Conclude that there is a morphism $\OO_X \to \mce$ giving rise to an exact seque
 \]
 where $\mce'$ is also locally free.
 
-*Hint:* use a method similar to the proof of Bertini's theorem.
+*Hint:* use a method similar to the proof of Bertini's theorem (8.18).
 :::

@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: problem
-Let $X$ be a nonsingular variety, let $Y$ be a nonsingular subvariety of codimension $r \geq 2$, let $\pi: \tilde X \to X$ be the blowing-up of $X$ along $Y$, and let $Y' = \pi\inv(Y)$.
+As in (8.24), let $X$ be a nonsingular variety, let $Y$ be a nonsingular subvariety of codimension $r \geq 2$, let $\pi: \tilde X \to X$ be the blowing-up of $X$ along $Y$, and let $Y' = \pi\inv(Y)$.
 
 a. Show that the maps $\pi^*: \Pic X \to \Pic \tilde X$, and $\ZZ \to \Pic \tilde X$ defined by $n \mapsto$ the class of $nY'$, give rise to an isomorphism $\Pic \tilde X \cong \Pic X \oplus \ZZ$.
 
