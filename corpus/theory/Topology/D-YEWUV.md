@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-See **limit point**.
+Let $X$ be a topological space and $A\subseteq X$.
+A point $x\in X$ is an \dfn{accumulation point} of $A$ if it is a [[D-Y6JAS|limit point]] of $A$: every [[D-JMRPA|neighborhood]] of $x$ meets $A\sm\ts{x}$.
 :::
