@@ -41,8 +41,3 @@ source:
     term: spring
     year: 1980
 ---
-
-::: {.remark}
-UC Berkeley Preliminary Exam, Spring 1980. Problems are listed in source order.
-Problem 9 depends on a displayed matrix whose full entries are not recoverable from the retained extraction or the archival problem compilation; its card preserves that source gap explicitly.
-:::
