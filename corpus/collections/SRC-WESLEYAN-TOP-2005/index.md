@@ -31,7 +31,3 @@ source:
   - {id: P-WESTOP05-09, comment: Part Two Problem 9}
   - {id: P-WESTOP05-10, comment: Part Two Problem 10}
 ---
-
-::: remark
-All ten top-level August 2005 source positions are represented. Part One Problem 5(b) has an unrecoverable Čech--Stone cardinality expression, and Part Two Problem 10(a) refers to a missing source diagram; both losses are explicit on their cards.
-:::
