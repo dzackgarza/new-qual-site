@@ -1666,8 +1666,6 @@ def collection_page(
         """,
         (src["id"],),
     )
-    completion_rows = _rows(con, "select completion from sources where id=?", (src["id"],))
-    completion = completion_rows[0]["completion"] if completion_rows else "complete"
     provenance = [
         row["href"]
         for row in _rows(
@@ -1686,7 +1684,6 @@ def collection_page(
         src["id"],
         listed,
         inline_cache,
-        completion,
     )
 
 
@@ -1744,7 +1741,6 @@ def _collection_listing(
     collection_id: str,
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
-    completion: str = "complete",
 ) -> list[pf.Block]:
     """Render the collection's authored source-order contents.
 
@@ -1766,8 +1762,6 @@ def _collection_listing(
         return pf.ListItem(pf.Plain(*inlines))
 
     blocks: list[pf.Block] = []
-    if completion == "incomplete":
-        blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
     problem_count = sum(row["kind"] == "problem" for row in listed)
     blocks.append(
         pf.Para(
@@ -2060,16 +2054,16 @@ def index_page(
         f"{scale['solved']:,} carry a written solution.\n\n"
     )
     links = (
-        "## Where to start\n\n"
+        "## Contents\n\n"
         "[Problems](problems.html)\n"
-        ": Every problem, with live topic/source filters plus random sampling and print/PDF.\n\n"
+        ": Every problem, filtered by topic and source, with random samples and print/PDF output.\n\n"
         "[Exams](exams.html)\n"
-        ": Each sitting as it was sat, problem by problem.\n\n"
+        ": Each exam sitting, problem by problem.\n\n"
         "[Guides](guides.html)\n"
-        ": One ordered path per subject, built from the same problems. Read front to back:\n"
-        "  a section assumes only the sections above it.\n\n"
+        ": One ordered sequence per subject, built from the same problems; each section uses\n"
+        "  only the sections above it.\n\n"
         "[Wiki](wiki/index.html)\n"
-        ": Written notes filed by subject. Look one topic up rather than read a path.\n"
+        ": Notes filed by subject and topic.\n"
     )
     output = _successful_outputs(
         pandoc.read_markdown(
@@ -2288,16 +2282,14 @@ SOURCE_KIND_HEADINGS = {
 
 
 GUIDES_LEDE = (
-    "One ordered path per subject, built from the corpus. "
-    "A guide is read front to back: each section assumes only the sections above it, and the study path in the margin is that order. "
-    "The [wiki](wiki/index.html) covers the same subjects as written notes, filed to be looked up rather than read through."
+    "One ordered sequence per subject, built from the corpus. "
+    "Each section uses only the sections above it, and the study path in the margin lists that order. "
+    "The [wiki](wiki/index.html) covers the same subjects as notes filed by topic."
 )
 
 
 ACROSS_SUBJECTS_LEDE = (
-    "Not a subject. These read the same problems the subject guides do, in a different order, "
-    "so a subject appears in both and neither is a copy of the other. "
-    "The wiki files each of these pages under the subject it belongs to."
+    "Guides that order problems from several subjects. Their problems also appear in the subject guides, and the wiki files each of their pages under its subject."
 )
 
 
@@ -2550,7 +2542,6 @@ def project(
     inline_values.extend(
         [
             "problems.",
-            ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
             f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
             GUIDES_LEDE,
@@ -2663,11 +2654,11 @@ def project(
 title: Practice problems
 ---
 
-Practice generation now lives in the [problem browser](problems.html).
+Random practice sets are drawn in the [problem browser](problems.html).
 """
     (out / "generate.qmd").write_text(generate_qmd)
     generate_html = (
-        '<p>Practice generation now lives in the <a href="problems.html">problem browser</a>.</p>'
+        '<p>Random practice sets are drawn in the <a href="problems.html">problem browser</a>.</p>'
         '<script>(function(){const target=new URL("problems.html",document.baseURI);'
         "const source=new URLSearchParams(location.search);for(const [key,value] of source)target.searchParams.append(key,value);"
         'if(!target.searchParams.has("sample"))target.searchParams.set("sample","8");location.replace(target.href);})();</script>'
