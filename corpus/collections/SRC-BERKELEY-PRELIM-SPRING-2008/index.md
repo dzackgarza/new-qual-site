@@ -40,7 +40,6 @@ source:
     year: 2008
 ---
 
-::: remark
-UC Berkeley preliminary examination, Spring 2008, reconstructed from the retained solution packet, which prints each problem with its solution.
-Problems are listed in source order, Part A followed by Part B.
+::: {.remark}
+A solution packet for this exam prints each problem with its solution. Part A precedes Part B.
 :::
