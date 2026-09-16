@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution1.pdf` is Harvard Math 21b Spring 2018 Practice Final 1, dated May 8, 2018, with fourteen top-level problems. The course resource page establishes provenance. Problems 2, 3, and 11 depend on source images not recovered in the extraction, while Problem 14's giant display is represented by the scalar-matrix structure identified explicitly in the packet's own worked solution.
+::: {.remark}
+Practice Final 1 of Harvard Math 21b, Spring 2018, dated May 8, 2018, with fourteen problems.
 :::
