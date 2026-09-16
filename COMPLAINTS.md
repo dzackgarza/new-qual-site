@@ -361,6 +361,7 @@ of public mathematical remarks.
 ### Flowmark refuses to format the complaints document
 
 - **Observed:** the commit hook at `78ef136f4` reports `reformatting would change what pandoc reads (block 49: BulletList content differs)` for `COMPLAINTS.md` and leaves the file unchanged.
+- **Reproduced 2026-09-16:** the hook for `b0c3380a1` refused again, now at block 47 with the same `BulletList content differs` message.
 - **Owner:** the structured-text formatter. Reproduce against this revision and preserve the parsed list content when correcting the formatter. The refusal leaves this document unformatted; it does not establish a defect in the mathematical corpus.
 
 ### MinerU Flash extraction requests fail against the remote service

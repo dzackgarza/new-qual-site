@@ -10,6 +10,7 @@ The mathematical entries are the worklist of the `math-defect-repair` node in [T
 ## Count
 
 - Mathematical entries: 6
+
 - Workflow and rendering papercuts: 18
 
 ## Mathematical entries
