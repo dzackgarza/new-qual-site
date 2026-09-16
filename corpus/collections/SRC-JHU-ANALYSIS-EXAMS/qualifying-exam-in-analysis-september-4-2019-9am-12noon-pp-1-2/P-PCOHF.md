@@ -23,11 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
-4. Prove that every closed convex subset of a Hilbert space has a unique element of minimal norm.
-
-## Part II. Complex Analysis
-
-Choose three of four problems and show all work with each problem on a new page.
+::: {.problem}
+Prove that every closed convex subset of a Hilbert space has a unique element of minimal norm.
+:::
 
 ::: {.solution}
 <1>1. Choose a minimizing sequence.

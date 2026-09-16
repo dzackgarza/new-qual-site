@@ -23,17 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
-5.i. Find the sum of the series $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } \frac { \sin { ( 2 n - 1 ) x } } { 2 n - 1 } \mathrm { o n } \left( 0 , 2 \pi \right) } \end{array}$
+::: {.problem}
+(i) Find the sum of the series $\displaystyle\sum_{n=1}^{\infty}\frac{\sin((2n-1)x)}{2n-1}$ on $(0,2\pi)$.
 
-ii.
-Show that $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } { \frac { 1 } { ( 2 n - 1 ) ^ { 2 } } } = { \frac { \pi ^ { 2 } } { 8 } } } \end{array}$
-
-## Complex Analysis Core Qualifying Exam, Fall 2002
-
-Do 5 of the 6 problems.
-Indicate clearly which 5 you want graded; if it is not clear, we will grade $\# 1 \mathrm { - } 5$ . Each problem counts for 20 points.
-In the case where there are two parts, the score is subdivided as indicated.
-Note: for the purposes of the exam, holomorphic is the same as complex analytic.
+(ii) Show that $\displaystyle\sum_{n=1}^{\infty}\frac{1}{(2n-1)^2}=\frac{\pi^2}{8}$.
+:::
 
 ::: {.solution}
 <1>1. Identify the odd sine series as the Fourier series of a square wave.
