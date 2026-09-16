@@ -6,7 +6,7 @@ title: Examples of vanishing tensors over $\mathbf{Z}$ and $\mathbf{Q}$, torsion
   nonfree modules, maximal nonprime ideals, non-Noetherian rings, and non-ideal centers
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Tensor Products
   - Modules
