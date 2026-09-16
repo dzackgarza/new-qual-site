@@ -15,10 +15,14 @@ review: draft
 ---
 
 ::: {.definition}
-A subspace $Q\subset X$ is **dense** iff every neighborhood of every point in $x$ intersects $Q$.
-Equivalently, $\cl_X(Q) = X$.
-
-::: {.remark}
-Munkres, *Topology*, 2nd ed., §17, p. 95.
+Let $X$ be a topological space.
+A subset $Q\subseteq X$ is \dfn{dense} in $X$ if every [[D-JMRPA|neighborhood]] of every point $x\in X$ intersects $Q$.
 :::
+
+::: {.proposition}
+A subset $Q\subseteq X$ is dense in $X$ if and only if its [[D-ASXW6|closure]] is $\cl_X(Q) = X$.
+:::
+
+::: {.concept}
+See [@Mun00, §17, p. 95].
 :::
