@@ -13,7 +13,7 @@ topics:
 
 # Compute $\pi_1$
 
-Four methods compute the [[D-EBNUE|fundamental group]]: deformation retraction, van Kampen's theorem, covering spaces, and products.
+The [[D-EBNUE|fundamental group]] can be computed by four methods: deformation retraction, van Kampen's theorem, covering spaces, and products.
 
 ## Deformation retracts
 
