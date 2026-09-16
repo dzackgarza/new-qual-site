@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ZWLD5
 kind: definition
-title: Singular Chain
+title: Singular chain
 classification:
   areas:
   - topology
@@ -13,6 +13,11 @@ review: draft
 ---
 
 ::: {.definition}
-
-\[x \in C_{n}(x) \implies X = \sum_{i} n_{i} \sigma_{i} = \sum_{i} n_{i} (\Delta^n \mapsvia{\sigma_{i}} X) .\]
+Let $X$ be a topological space, $n\geq 0$, and $\Delta^n$ the standard $n$-simplex.
+A \dfn{singular $n$-chain} in $X$ is a finite formal sum
+$$
+\alpha = \sum_{i=1}^{k} n_i \sigma_i,
+$$
+with $n_i\in\ZZ$ and each $\sigma_i\colon\Delta^n\to X$ a continuous map, a singular $n$-simplex.
+The singular $n$-chains form the free abelian group $C_n(X)$ on the singular $n$-simplices of [[D-6BUWA|singular homology]].
 :::
