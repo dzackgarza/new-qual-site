@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.theorem}
-A metric space is totally bounded iff every sequence has a Cauchy subsequence.
+A metric space is [[FF-VWKGM|totally bounded]] if and only if every sequence in it has a Cauchy subsequence.
 :::
