@@ -15,9 +15,11 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Can every continuous function on $\bar \DD$ be uniformly approximated by polynomials in the variable $z$?
 
 > Hint: compare to Weierstrass for the real interval.
+:::
 
 ::: {.solution}
 No: polynomials are holomorphic and the uniform limit of holomorphic functions is holomorphic.

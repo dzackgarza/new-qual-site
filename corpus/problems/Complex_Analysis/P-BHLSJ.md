@@ -14,10 +14,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Find the Laurent expansions about $z=0$ of the following functions:
 \[
 e^{1\over z} \hspace{8em} \cos \qty{1\over z}
 .\]
+:::
 
 ::: {.solution}
 Substitute $1/z$ into the usual Taylor series.

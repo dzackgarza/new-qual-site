@@ -14,11 +14,13 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Find the Laurent expansion of
 \[
 f(z) = {z + 1 \over z(z-1)}
 \]
 about $z=0$ and $z=1$ respectively.
+:::
 
 :::{.solution}
 \envlist
