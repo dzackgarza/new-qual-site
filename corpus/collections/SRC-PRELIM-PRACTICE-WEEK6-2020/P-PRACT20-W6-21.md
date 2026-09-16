@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-21
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 21"
+title: Surjections from a $4$-element set onto a $3$-element set
 classification:
   areas:
   - prelim

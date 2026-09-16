@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-25
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 25"
+title: Injectivity of $g\circ f$ forces injectivity of $f$
 classification:
   areas:
   - prelim

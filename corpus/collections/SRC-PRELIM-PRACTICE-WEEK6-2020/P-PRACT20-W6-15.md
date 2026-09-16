@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-15
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 15"
+title: Topology of the points of the unit square with an irrational coordinate
 classification:
   areas:
   - prelim

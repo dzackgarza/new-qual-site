@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-24
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 24"
+title: Images and preimages of unions and intersections
 classification:
   areas:
   - prelim

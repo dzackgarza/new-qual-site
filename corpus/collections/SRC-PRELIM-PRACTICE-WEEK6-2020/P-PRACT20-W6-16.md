@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-16
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 16"
+title: Maximum of two independent geometric random variables
 classification:
   areas:
   - prelim

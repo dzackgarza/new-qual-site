@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-18
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 18"
+title: Probability that $X<Y$ for $X$ uniform on $[0,3]$ and $Y$ uniform on $[0,4]$
 classification:
   areas:
   - prelim

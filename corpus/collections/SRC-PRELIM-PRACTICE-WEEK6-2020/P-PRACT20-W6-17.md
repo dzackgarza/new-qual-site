@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-17
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 17"
+title: Probability that neither of two numbers from $1$ to $10$ is the square of the other
 classification:
   areas:
   - prelim

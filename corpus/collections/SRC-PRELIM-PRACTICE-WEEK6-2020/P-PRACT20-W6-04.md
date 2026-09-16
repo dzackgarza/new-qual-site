@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-04
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 4"
+title: Pointwise and uniform convergence of $x^n/(1+x^n)$ on $[0,1]$
 classification:
   areas:
   - prelim

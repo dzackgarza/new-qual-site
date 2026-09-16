@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-12
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 12"
+title: The discrete metric on $\mathbb R$
 classification:
   areas:
   - prelim

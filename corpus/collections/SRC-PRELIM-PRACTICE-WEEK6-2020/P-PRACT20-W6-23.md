@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-23
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 23"
+title: Negating bijectivity of a function
 classification:
   areas:
   - prelim

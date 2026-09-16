@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-03
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 3"
+title: Candidate metrics on $\mathbb R$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-09
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 9"
+title: Compactness, boundedness of continuous functions and connectedness in $\mathbb R^n$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-19
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 19"
+title: Probability that the first player tosses heads first
 classification:
   areas:
   - prelim

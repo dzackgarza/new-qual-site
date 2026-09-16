@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-10
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 10"
+title: Functions not tending to $0$ at infinity despite integrability or vanishing along integer translates
 classification:
   areas:
   - prelim

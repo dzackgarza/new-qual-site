@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-27
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 27"
+title: Tracing the Euclidean algorithm and two integer loops
 classification:
   areas:
   - prelim

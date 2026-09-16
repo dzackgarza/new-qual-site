@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-11
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 11"
+title: Open, closed and uncountable sets containing $\mathbb Q$
 classification:
   areas:
   - prelim

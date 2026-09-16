@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-07
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 7"
+title: Total variation of a piecewise linear function
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-01
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 1"
+title: Continuity of the function equal to $x/2$ on $\mathbb Q$ and $x/3$ off $\mathbb Q$
 classification:
   areas:
   - prelim

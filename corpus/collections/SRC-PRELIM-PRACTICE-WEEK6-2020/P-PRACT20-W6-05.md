@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-05
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 5"
+title: Uniformly continuous functions on $(0,1)$ have limits at $0$
 classification:
   areas:
   - prelim

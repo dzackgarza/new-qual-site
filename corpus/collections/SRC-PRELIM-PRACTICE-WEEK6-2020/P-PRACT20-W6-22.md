@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-22
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 22"
+title: Factorials ending in exactly $99$ zeros
 classification:
   areas:
   - prelim
