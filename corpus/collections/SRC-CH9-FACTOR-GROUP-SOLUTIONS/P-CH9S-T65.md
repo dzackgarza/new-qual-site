@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH9S-T65
 kind: problem
-title: Chapter 9 solution packet, problem 65
+title: $\operatorname{Aut}(G)$ is not cyclic for non-abelian $G$
 classification:
   areas:
   - algebra

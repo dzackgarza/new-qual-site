@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH9S-T47
 kind: problem
-title: Chapter 9 solution packet, problem 47
+title: A normal subgroup of prime index contains $H$ or satisfies $NH=G$
 classification:
   areas:
   - algebra

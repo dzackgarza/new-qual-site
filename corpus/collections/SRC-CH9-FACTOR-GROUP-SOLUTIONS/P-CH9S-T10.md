@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH9S-T10
 kind: problem
-title: Chapter 9 solution packet, problem 10
+title: Left cosets of a non-normal subgroup of $A_4$ do not form a group
 classification:
   areas:
   - algebra
