@@ -29,6 +29,6 @@ source:
     year: 2017
 ---
 
-::: remark
-Math 290A course final (“290A Exam, Fall 2017”), not the department Fall 2017 topology qualifying exam (`SRC-UCSD-TOP-QUAL-FALL-2017`). Problem list is disjoint: unit-cube faces and diagonals, $\pi_1(\Sigma X)$, no retraction $T^2\to S^1\vee S^1$, antipodal coincidence on $S^2\to S^1$, 2-fold covers of $S^1\vee\mathbb{RP}^2$, free-group subgroup isomorphism.
+::: {.remark}
+The Math 290A course final, headed "290A Exam, Fall 2017". It is a different exam from the [[SRC-UCSD-TOP-QUAL-FALL-2017|Fall 2017 topology qualifying exam]], and the two have no problems in common.
 :::
