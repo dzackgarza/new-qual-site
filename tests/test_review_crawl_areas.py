@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 def test_the_area_listing_is_the_wiki_subject_registry() -> None:
     from qualc.index import load_vocabularies
 
-    result = subprocess.run([sys.executable, "-m", "qualc.index", "areas", "--root", str(ROOT)], capture_output=True, text=True)
+    result = subprocess.run([sys.executable, "-m", "qualc.index", "--root", str(ROOT), "areas"], capture_output=True, text=True)
 
     assert result.returncode == 0, result.stderr
     listed = result.stdout.split()

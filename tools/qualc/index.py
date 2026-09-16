@@ -289,3 +289,49 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
 
     con.commit()
     con.close()
+
+
+def area_review_files(root: Path, area: str) -> list[str]:
+    """The authored files the review crawler reads for one subject.
+
+    The subject's wiki branch, its guide (`GUIDE-<AREA>`), the theory and problem
+    folders that slug to it, and every collection card classified under it.
+    """
+    if area not in load_areas(root / "wiki"):
+        raise ValueError(f"not a registered area: {area}")
+    files = {str(path.relative_to(root)) for path in (root / "wiki" / area).rglob("*.md")}
+    guide_id = f"GUIDE-{area.upper()}"
+    for manifest in sorted((root / "publications").glob("*.yaml")):
+        if yaml.safe_load(manifest.read_text()).get("id") == guide_id:
+            files.add(str(manifest.relative_to(root)))
+    for kind in ("theory", "problems"):
+        base = root / "corpus" / kind
+        for directory in base.iterdir() if base.is_dir() else ():
+            if directory.is_dir() and slug(directory.name) == area:
+                files |= {str(path.relative_to(root)) for path in directory.rglob("*.md")}
+    classified = f"\n  - {area}\n"
+    for card in (root / "corpus" / "collections").rglob("*.md"):
+        if classified in card.read_text():
+            files.add(str(card.relative_to(root)))
+    return sorted(files)
+
+
+def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser(prog="python -m qualc.index")
+    parser.add_argument("--root", type=Path, default=Path.cwd())
+    commands = parser.add_subparsers(dest="command", required=True)
+    commands.add_parser("areas", help="print every registered subject id")
+    files = commands.add_parser("area-files", help="print the authored files the review crawler reads for one subject")
+    files.add_argument("area")
+    args = parser.parse_args(argv)
+    if args.command == "areas":
+        print("\n".join(load_areas(args.root / "wiki")))
+    else:
+        print("\n".join(area_review_files(args.root, args.area)))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
