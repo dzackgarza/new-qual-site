@@ -33,7 +33,3 @@ source:
   - P-WESTOP04-09
   - P-WESTOP04-10
 ---
-
-::: remark
-Problem 1 has a source-sensitive domain delimiter in the retained extraction, and Problem 8 loses the exponent in the generalized Cantor-space notation. Both are explicit on their cards. Problems 2 and 3 are exact canonical repeats.
-:::
