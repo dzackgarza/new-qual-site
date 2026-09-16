@@ -33,6 +33,6 @@ source:
     year: 2007
 ---
 
-::: remark
-The paper has two sections and asks for three problems from each. Section A contains five graph-theory/combinatorics problems. Section B is verbatim the first four questions of the separately retained UNL June 2007 topology paper `SRC-TOP-UNL-2007Q2`, so those canonical cards are reused rather than duplicated.
+::: {.remark}
+The paper has two sections, and candidates answer three problems from each. Section A has five graph theory and combinatorics problems; Section B consists of the first four questions of the [[SRC-TOP-UNL-2007Q2|June 2007 topology qualifying exam]].
 :::
