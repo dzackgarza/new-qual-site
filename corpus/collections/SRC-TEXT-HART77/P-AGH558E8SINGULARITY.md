@@ -24,5 +24,17 @@ Show that $z$ is irreducible in $A$; $t \in k[u, v]$, and $A\left[z^{-1}\right]=
 Conclude that $A$ is a UFD.
 
 b. Show that the singularity at $P$ can be resolved by eight successive blowings-up.
-If $\tilde{X}$ is the resulting nonsingular surface, then the inverse image of $P$ is a union of eight projective lines, which intersect each other according to the Dynkin diagram $\mathbf{E}_8$.
+If $\tilde{X}$ is the resulting nonsingular surface, then the inverse image of $P$ is a union of eight projective lines, which intersect each other according to the Dynkin diagram $\mathbf{E}_8$:
+
+\begin{tikzcd}
+	\circ & \circ & \circ & \circ & \circ & \circ & \circ \\
+	&&&& \circ
+	\arrow[dash, from=1-1, to=1-2]
+	\arrow[dash, from=1-2, to=1-3]
+	\arrow[dash, from=1-3, to=1-4]
+	\arrow[dash, from=1-4, to=1-5]
+	\arrow[dash, from=1-5, to=1-6]
+	\arrow[dash, from=1-6, to=1-7]
+	\arrow[dash, from=1-5, to=2-5]
+\end{tikzcd}
 :::
