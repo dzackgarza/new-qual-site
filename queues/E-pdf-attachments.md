@@ -210,12 +210,11 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [s05.pdf](assets/attachments/s05_extracted.md) (56L, 18 problems) — UC Berkeley preliminary examination — Spring 2005 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown and contains Part A 1A–9A plus Part B 1B–9B. The existing `SRC-BERKELEY-PRELIM-SPRING-2005` cards were re-grounded in the fresh exam baseline and independently checked against the companion solution packet; stale extraction corruptions in statements such as 6A and 7B were remediated, all 18 cards now carry source-checked audit events, and the exam itself is recorded in collection provenance.
   The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
-- [ ] [Sequence_Series_(Neil_Lyall_2019).pdf](assets/attachments/Sequence_Series_Neil_Lyall_2019_extracted.md) (649L, 67 source positions) — Math 4100/6100 real analysis — Fall 2020 — **BLOCKED 2026-09-14 only at Assignment 9 Problem 1: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown.
-  Assignments 1–6 already represented 47 source positions; this intake adds complete collections A7 and A8 plus six of seven A9 positions, bringing the packet to 66/67 represented.
-  Assignment 8 Problem 1 reuses `P-RA-WORKSHOP-D5-W2` and Assignment 8 Bonus Problem 1 reuses `P-AZOFF-A05`; the other newly represented positions are source-local cards.
-  A9 Problem 1 is not carded because MinerU corrupts the piecewise definition of `g_n` and no authored/native companion survives to recover the missing branch/condition without inference.
-  No fallback extraction path was used.
-  The inventory's `UNL` and `applied-algebra` labels were stale.**
+- [x] [Sequence_Series_(Neil_Lyall_2019).pdf](assets/attachments/Sequence_Series_Neil_Lyall_2019_extracted.md) (649L, 67 source positions) — Math 4100/6100 real analysis — Fall 2020 — disposition 2026-09-16: deterministic MinerU Flash v0.5.9 extraction, byte-identical to the retained Markdown.
+  All 67 source positions are represented in `SRC-MATH4100-6100-2020-A1` through `SRC-MATH4100-6100-2020-A9`.
+  Assignment 8 Problem 1 reuses `P-RA-WORKSHOP-D5-W2` and Assignment 8 Bonus Problem 1 reuses `P-AZOFF-A05`; the other positions are source-local cards.
+  MinerU corrupts the piecewise definition of `g_n` in Assignment 9 Problem 1; that display was read from page 13 of the PDF and `P-M4100-20-A9-01` and the provenance file record the correction.
+  The inventory's `UNL` and `applied-algebra` labels were stale.
 
 - [x] [solution1.pdf](assets/attachments/solution1_extracted.md) (723L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 baseline assembled in source order from twenty single-page Flash extractions after the 11.6 MB whole-file request was rejected by Flash with `[-30001]` for exceeding its 10 MB upload limit.
   All twenty page requests exited 0 and produced nonempty Markdown.

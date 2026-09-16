@@ -8,13 +8,14 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf
 source:
   source_kind: homework
   area: real-analysis
   problems:
+  - P-M4100-20-A9-01
   - P-M4100-20-A9-02
   - P-M4100-20-A9-03
   - P-M4100-20-A9-04
