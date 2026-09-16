@@ -99,11 +99,9 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-7ALR2]]
 
-[[D-JKH35]] [[D-WHVXL]] [[D-MQSFD]]
+[[D-JKH35]] [[D-GDXFZ]] [[D-MQSFD]]
 
 [[D-C5THN]]
-
-[[D-GDXFZ]]
 
 [[D-P6XCN]]
 
