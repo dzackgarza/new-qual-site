@@ -54,3 +54,8 @@ To enforce the rank one condition, the second row must be a scalar multiple of t
 
 > Note: I looked at this for a couple of hours, but I don't know how to prove either of these statements with the tools we have so far.
 :::
+
+::: {.remark}
+Erratum: the solution above is unfinished.
+It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\gens{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
+:::
