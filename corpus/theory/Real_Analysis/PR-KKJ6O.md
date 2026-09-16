@@ -3,6 +3,8 @@ schema: qual/card@1
 id: PR-KKJ6O
 kind: proposition
 title: Continuity of measure from below and from above
+prompts:
+- State continuity of measure from above and from below.
 classification:
   areas:
   - real-analysis

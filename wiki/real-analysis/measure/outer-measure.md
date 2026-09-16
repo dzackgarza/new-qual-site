@@ -22,8 +22,6 @@ For arbitrary $E_n\in\mathcal M$, the sets $F_n\coloneqq E_n\setminus\bigcup_{k<
 
 [[PR-KKJ6O]]
 
-[[FT-OMADI]]
-
 ## Outer measure
 
 An outer measure $\mu^*$ on $X$ is defined on every subset of $X$, with $\mu^*(\varnothing)=0$, monotone, and countably subadditive.
