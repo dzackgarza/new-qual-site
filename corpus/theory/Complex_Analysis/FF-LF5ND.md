@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-LF5ND
 kind: fact
-title: Series expansion for $\cosh(z)$
+title: Taylor series of $\cosh z$
 prompts:
 - What is the series expansion of $\cosh(z)$?
 classification:
@@ -16,7 +16,8 @@ review: draft
 ---
 
 ::: {.fact}
+For every $z\in\CC$,
 $$
-\cosh x=1+\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}+\frac{x^{6}}{6 !}+\cdots=\sum_{n=0}^{\infty} \frac{x^{2 n}}{(2 n) !}
-.$$
+\cosh z=1+\frac{z^{2}}{2 !}+\frac{z^{4}}{4 !}+\frac{z^{6}}{6 !}+\cdots=\sum_{n=0}^{\infty} \frac{z^{2 n}}{(2 n) !}.
+$$
 :::

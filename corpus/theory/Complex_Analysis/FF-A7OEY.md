@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-A7OEY
 kind: fact
-title: $\arctan(\infty) = \cdots$
+title: Limit of $\arctan x$ as $x\to\infty$
 prompts:
 - What is $\arctan(\infty)$?
 classification:
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.fact}
-$\arctan(\infty) = {\pi \over 2}$
+For real $x$, $\lim_{x\to+\infty}\arctan x = {\pi \over 2}$.
 :::

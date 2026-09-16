@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-AGEQ4
 kind: fact
-title: 'Relating hyperbolic functions to usual ones: $\cos(z) = \cosh(?)\\ .$'
+title: $\cos z = \cosh(iz)$
 prompts:
 - How is $\cos(z)$ written in terms of $\cosh$?
 classification:
@@ -16,7 +16,8 @@ review: draft
 ---
 
 ::: {.fact}
+For every $z\in\CC$,
 $$
-\cos(z) = \cosh(iz)\\
-.$$
+\cos(z) = \cosh(iz).
+$$
 :::

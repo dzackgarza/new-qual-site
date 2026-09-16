@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-7KQCC
 kind: fact
-title: $\arctan\qty{1\over \sqrt 3} = \cdots$
+title: Value of $\arctan(1/\sqrt 3)$
 prompts:
 - What is $\arctan\qty{1 \over \sqrt 3}$?
 classification:
