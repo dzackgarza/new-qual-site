@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-CLFAB
 kind: fact
-title: $\cos(\pi/6) = \cdots$
+title: Value of $\cos(\pi/6)$
 prompts:
 - What is $\cos(\pi/6)$?
 classification:
@@ -17,6 +17,6 @@ review: draft
 
 ::: {.fact}
 $$
-\cos(\pi/6) = {\sqrt 3 \over 2}
-.$$
+\cos(\pi/6) = \frac{\sqrt 3}{2}.
+$$
 :::
