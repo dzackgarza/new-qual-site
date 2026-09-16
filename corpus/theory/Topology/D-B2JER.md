@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-B2JER
 kind: definition
-title: Cup Product
+title: Cup product
 classification:
   areas:
   - topology
@@ -13,14 +13,22 @@ review: draft
 ---
 
 ::: {.definition}
-A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
-\[
-H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\
-(a \cup b)(\sigma) = a(\sigma \circ I_{0}^p)~b(\sigma \circ I_{p}^{p+q})
-\]
-where $\Delta^{p+q} \mapsvia{\sigma} X$ is a singular $p+q$ simplex and
+Let $X$ be a topological space, $R$ a ring, and $p, q\geq 0$.
+For singular cochains $\varphi\in C^p(X;R)$ and $\psi\in C^q(X;R)$, the \dfn{cup product} $\varphi\smile\psi\in C^{p+q}(X;R)$ is the cochain whose value on a singular $(p+q)$-simplex $\sigma\colon[v_0, \ldots, v_{p+q}]\to X$ is
+$$
+(\varphi\smile\psi)(\sigma) \coloneqq \varphi\qty{\ro{\sigma}{[v_0, \ldots, v_p]}}\,\psi\qty{\ro{\sigma}{[v_p, \ldots, v_{p+q}]}}
+,$$
+where each face is identified with the standard simplex of its dimension by the order-preserving linear homeomorphism.
+:::
 
-\[I_{i}^j: [i, \cdots, j] \injects\Delta^{p+q} .\]
+::: {.remark}
+The coboundary satisfies $\delta(\varphi\smile\psi) = \delta\varphi\smile\psi + (-1)^p\varphi\smile\delta\psi$, so the cup product of two cocycles is a cocycle and the cup product of a cocycle with a coboundary is a coboundary.
+Hence it induces a bilinear map
+$$
+\smile\colon H^p(X;R)\cross H^q(X;R)\to H^{p+q}(X;R), \qquad [\varphi]\smile[\psi]\coloneqq[\varphi\smile\psi]
+.$$
+:::
 
-is an embedding of the $(j-i)\dash$simplex into a $(p+q)\dash$simplex.
+::: {.concept}
+[@Hat02, §3.2, p. 206].
 :::
