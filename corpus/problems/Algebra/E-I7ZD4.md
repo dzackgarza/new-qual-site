@@ -25,7 +25,7 @@ Prove Cayley-Hamilton using the JCF.
 :::
 
 ::: {.solution}
-Let $A\in\End_k(V)$ with $V$ finite-dimensional.
+Let $A\in\Endo_k(V)$ with $V$ finite-dimensional.
 
 <1>1. It is enough to prove the identity after extending scalars to an algebraic closure $\overline{k}$.
 ::: {.proof}
@@ -37,7 +37,7 @@ Set
 \]
 The characteristic polynomial is unchanged by scalar extension, so $\chi_{\overline A}(t)=\chi_A(t)$ viewed in $\overline{k}[t]$. Moreover, the natural map
 \[
-\End_k(V)\longrightarrow\End_{\overline{k}}(\overline V),
+\Endo_k(V)\longrightarrow\Endo_{\overline{k}}(\overline V),
 \qquad T\longmapsto T\otimes1,
 \]
 is injective. Hence if $\chi_A(A)\otimes1=0$, then $\chi_A(A)=0$ already over $k$.
