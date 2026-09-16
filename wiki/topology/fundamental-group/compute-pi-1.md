@@ -13,64 +13,81 @@ topics:
 
 # Compute $\pi_1$
 
-Four methods, and the space tells you which.
+Four methods compute the [[D-YD6DH|fundamental group]]: deformation retraction, van Kampen's theorem, covering spaces, and products.
 
-## 1. Is it contractible, or does it deformation retract?
+## Deformation retracts
 
-If $X$ deformation retracts onto $A$ then $\pi_1(X) \cong \pi_1(A)$, and this is the cheapest method by a wide margin.
-Look for it first, because most spaces on an exam are a familiar space with something contractible glued on or removed:
+::: {.fact}
+If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$.
 
-- $\RR^n \sm \ts{0}$ retracts onto $S^{n-1}$;
-- a punctured torus retracts onto a wedge of two circles;
-- $\RR^3$ minus a line retracts onto $S^1$, minus a point onto $S^2$;
-- the Möbius band retracts onto its core circle.
+- $\RR^n \sm \ts{0}$ deformation retracts onto $S^{n-1}$.
+- A torus minus a point deformation retracts onto $S^1\vee S^1$.
+- $\RR^3$ minus a line deformation retracts onto a circle, and $\RR^3$ minus a point onto $S^2$.
+- The Möbius band deformation retracts onto its core circle.
 
-## 2. Is it a union of two open pieces?
+:::
 
-**Van Kampen.**
-For $X = U\union V$ with $U, V, U\intersect V$ open and path connected,
-\[
-\pi_1(X) \cong \pi_1(U) *_{\pi_1(U\intersect V)} \pi_1(V)
-.\]
+## Van Kampen's theorem
 
-The whole skill is choosing the decomposition so that all three groups are known.
-The standard choices:
+::: {.theorem title="Van Kampen"}
+Let $X = U\union V$ with $U, V$ open, and $U, V, U\intersect V$ path connected, and let $x_0\in U\intersect V$.
+Then the maps induced by inclusion give
+$$
+\pi_1(X,x_0) \cong \pi_1(U,x_0) *_{\pi_1(U\intersect V,x_0)} \pi_1(V,x_0).
+$$
+If $U\intersect V$ is simply connected, this is the free product $\pi_1(U,x_0)*\pi_1(V,x_0)$.
+If $V$ is simply connected, this is $\pi_1(U,x_0)$ modulo the normal closure of the image of $\pi_1(U\intersect V,x_0)$.
 
-- **A CW complex:** $U$ a neighborhood of the $1\dash$skeleton, $V$ the interior of each $2\dash$cell.
-  The relations are then exactly the attaching maps, which is why a presentation can be read straight off a CW structure.
-- **A wedge:** thicken each piece slightly, so the intersection is contractible and the amalgamation is free.
-  $\pi_1$ of a wedge of $n$ circles is free on $n$ generators.
-- **A surface from a polygon:** one $0\dash$cell, one $1\dash$cell per edge class, one $2\dash$cell, so the presentation has one relation, the boundary word.
+:::
 
-If $U\intersect V$ is simply connected the amalgamation is a free product; if $V$ is simply connected the result is $\pi_1(U)$ modulo the normal closure of the image.
+::: {.example title="Standard decompositions"}
+\envlist
 
-## 3. Is it covered by something you understand?
+- **A CW complex.** For a CW complex $X$ with $2$-skeleton $X^{(2)}$, $\pi_1(X)\cong\pi_1(X^{(2)})$, and attaching one $2$-cell $e^2$ along $\varphi\colon S^1\to X^{(1)}$ takes $U$ a neighborhood of $X^{(1)}$ deformation retracting onto it and $V$ the open cell; the result is $\pi_1(X^{(1)})$ modulo the normal closure of $[\varphi]$. Inductively, $\pi_1(X)$ is presented by generators from a graph $X^{(1)}$ and one relation for each $2$-cell.
+- **A wedge.** If $x_0\in X$ and $y_0\in Y$ have contractible open neighborhoods deformation retracting onto them, then $\pi_1(X\vee Y)\cong\pi_1(X)*\pi_1(Y)$. In particular, $\pi_1$ of a wedge of $n$ circles is free on $n$ generators.
+- **A surface from a polygon.** If all vertices of the polygon are identified to one point, the surface has one $0$-cell, one $1$-cell for each edge pair, and one $2$-cell, so $\pi_1$ has one generator for each edge pair and one relation, the boundary word.
 
-For a covering $p: \tilde X \to X$:
+:::
 
-- $p_*$ is injective, so $\pi_1(\tilde X)$ is a subgroup of $\pi_1(X)$ of index the number of sheets;
-- if $\tilde X$ is simply connected then $\pi_1(X)$ is the deck group;
-- $\pi_1(X)/p_*\pi_1(\tilde X)$ acts simply transitively on a fibre when the cover is normal.
+## Covering spaces
 
-So an explicit universal cover computes $\pi_1$ outright: $\RR \to S^1$ gives $\ZZ$, $\RR^2\to T^2$ gives $\ZZ^2$, $S^n \to \RP^n$ gives $\ZZ/2$ for $n\geq 2$.
+::: {.fact}
+Let $p\colon \tilde X \to X$ be a [[D-ANO2D|covering map]] with $\tilde X$ path connected and $X$ path connected and locally path connected.
 
-## 4. Is it a product, or a quotient you know?
+- $p_*$ is injective, and $p_*\pi_1(\tilde X)$ has index in $\pi_1(X)$ equal to the number of sheets.
+- If $\tilde X$ is simply connected, then $\pi_1(X)$ is isomorphic to the deck group.
+- If the cover is normal, then $\pi_1(X)/p_*\pi_1(\tilde X)$ is isomorphic to the deck group, which acts simply transitively on each fiber.
 
-$\pi_1(X\times Y) \cong \pi_1(X)\times\pi_1(Y)$, which handles the torus and every product of the standard spaces.
+:::
 
-For quotients, [[topology/the-standard-spaces|the standard spaces]] table is faster than any computation.
+::: {.example}
+The universal covers $\RR \to S^1$, $\RR^2\to T^2$, and $S^n \to \RP^n$ for $n\geq 2$ give $\pi_1(S^1)\cong\ZZ$, $\pi_1(T^2)\cong\ZZ^2$, and $\pi_1(\RP^n)\cong\ZZ/2$.
 
-## Choosing between them
+:::
 
-| The space is given as | Use |
+## Products and quotients
+
+::: {.fact}
+For path-connected spaces $X$ and $Y$, the projections induce $\pi_1(X\times Y) \cong \pi_1(X)\times\pi_1(Y)$.
+
+:::
+
+The fundamental groups of quotients such as projective spaces and closed surfaces are listed on [[topology/the-standard-spaces|The standard spaces]].
+
+## Choosing a method
+
+| The space is given as | Method |
 | --- | --- |
 | a subspace of $\RR^n$ with something deleted | deformation retract |
-| a CW complex, or a polygon with identifications | van Kampen |
-| a quotient by a group action | covering spaces, and the deck group |
+| a CW complex, or a polygon with identifications | van Kampen's theorem |
+| a quotient by a free, properly discontinuous group action | covering spaces and the deck group |
 | a product | the product formula |
-| a wedge or connected sum | van Kampen, free product |
+| a wedge or connected sum | van Kampen's theorem |
 
-## After computing it
+## Relation to homology
 
-$\pi_1$ abelianizes to $H_1$, so a homology computation checks a fundamental group computation and vice versa.
-If the two disagree, one of them is wrong -- and that is the cheapest error check available.
+::: {.fact}
+For a path-connected space $X$, the Hurewicz map induces $\pi_1(X)^{\mathrm{ab}} \cong H_1(X)$.
+A computation of $\pi_1(X)$ therefore determines $H_1(X)$.
+
+:::
