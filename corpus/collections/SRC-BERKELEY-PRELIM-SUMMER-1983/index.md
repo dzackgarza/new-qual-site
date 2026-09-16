@@ -44,7 +44,3 @@ source:
     term: summer
     year: 1983
 ---
-
-::: remark
-The retained PDF is titled *Preliminary Exam - Summer 1983* and contains Problems 1--20 in source order. The existing Berkeley prelim resource page identifies `Summer83.pdf` in the Berkeley summer-exam sequence.
-:::
