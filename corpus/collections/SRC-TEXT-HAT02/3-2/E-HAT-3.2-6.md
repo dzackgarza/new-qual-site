@@ -16,10 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
-# E-HAT-3.2-6
-
+::: {.problem}
 Use cup products to compute the map $H^*(\mathbb{CP}^n; \mathbb{Z}) \to H^*(\mathbb{CP}^n; \mathbb{Z})$ induced by the map $\mathbb{CP}^n \to \mathbb{CP}^n$ that is a quotient of the map $\mathbb{C}^{n+1} \to \mathbb{C}^{n+1}$ raising each coordinate to the $d$th power, $(z_0, \ldots, z_n) \mapsto (z_0^d, \ldots, z_n^d)$, for a fixed integer $d > 0$.
 [First do the case $n = 1$.]
+:::
 
 ::: {.solution}
 <1>1. For $n = 1$, the map $\mathbb{CP}^1 \to \mathbb{CP}^1$ is $[z_0 : z_1] \mapsto [z_0^d : z_1^d]$, which has degree $d$.

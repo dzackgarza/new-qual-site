@@ -24,9 +24,9 @@ audit:
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
 ---
 
-# E-HAT-3.1-2
-
+::: {.problem}
 Show that the maps $G \xrightarrow{n} G$ and $H \xrightarrow{n} H$ multiplying each element by the integer $n$ induce multiplication by $n$ in $\operatorname{Ext}(H, G)$.
+:::
 
 ::: {.solution}
 Choose a free resolution

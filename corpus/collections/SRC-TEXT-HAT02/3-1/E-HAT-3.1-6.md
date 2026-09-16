@@ -24,11 +24,11 @@ audit:
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
 ---
 
-# E-HAT-3.1-6
-
+::: {.problem}
 (a) Directly from the definitions, compute the simplicial cohomology groups of $S^1 \times S^1$ with $\mathbb{Z}$ and $\mathbb{Z}_2$ coefficients, using the $\Delta$-complex structure given in §2.1.
 
 (b) Do the same for $\mathbb{RP}^2$ and the Klein bottle.
+:::
 
 ::: {.solution}
 We compute directly from the cellular/simplicial cochain complexes obtained by dualizing the displayed $\Delta$-complex chain complexes.

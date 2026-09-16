@@ -23,9 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
-# E-HAT-3.2-7
-
+::: {.problem}
 Use cup products to show that $\mathbb{RP}^3$ is not homotopy equivalent to $\mathbb{RP}^2 \vee S^3$.
+:::
 
 ::: {.solution}
 With $\mathbb Z_2$ coefficients,

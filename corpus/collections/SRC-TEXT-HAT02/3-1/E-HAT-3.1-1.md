@@ -16,9 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
-# E-HAT-3.1-1
-
+::: {.problem}
 Show that $\operatorname{Ext}(H, G)$ is a contravariant functor of $H$ for fixed $G$, and a covariant functor of $G$ for fixed $H$.
+:::
 
 ::: {.solution}
 <1>1. Definition of $\operatorname{Ext}(H, G)$: <2>1. For an abelian group $H$, choose a free resolution $0 \to F_1 \xrightarrow{d} F_0 \xrightarrow{\varepsilon} H \to 0$.

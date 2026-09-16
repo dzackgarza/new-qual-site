@@ -23,9 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
-# E-HAT-3.2-5
-
+::: {.problem}
 Show the ring $H^*(\mathbb{RP}^\infty; \mathbb{Z}_{2k})$ is isomorphic to $\mathbb{Z}_{2k}[\alpha, \beta] / (2\alpha, 2\beta, \alpha^2 - k\beta)$ where $|\alpha| = 1$ and $|\beta| = 2$.
+:::
 
 ::: {.solution}
 Put $R=\mathbb Z_{2k}$. With the standard CW structure on $\mathbb{RP}^\infty$, there is one cell in each dimension and the cellular boundary is multiplication by $2$ in even dimensions and $0$ in odd dimensions. Hence the cellular cochain differential with coefficients in $R$ is

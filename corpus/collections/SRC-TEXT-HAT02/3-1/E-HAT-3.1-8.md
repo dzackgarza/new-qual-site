@@ -24,8 +24,7 @@ audit:
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
 ---
 
-# E-HAT-3.1-8
-
+::: {.problem}
 Many basic homology arguments work just as well for cohomology even though maps go in the opposite direction.
 Verify this in the following cases:
 
@@ -34,6 +33,7 @@ Verify this in the following cases:
 (b) Show that if $A$ is a closed subspace of $X$ that is a deformation retract of some neighborhood, then the quotient map $X \to X/A$ induces isomorphisms $H^n(X, A; G) \approx \widetilde{H}^n(X/A; G)$ for all $n$.
 
 (c) Show that if $A$ is a retract of $X$ then $H^n(X; G) \approx H^n(A; G) \oplus H^n(X, A; G)$.
+:::
 
 ::: {.solution}
 All coefficient groups below are an arbitrary fixed abelian group $G$.

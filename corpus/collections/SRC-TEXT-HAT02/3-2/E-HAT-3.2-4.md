@@ -23,10 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
-# E-HAT-3.2-4
-
+::: {.problem}
 Apply the Lefschetz fixed point theorem to show that every map $f: \mathbb{CP}^n \to \mathbb{CP}^n$ has a fixed point if $n$ is even, using the fact that $f^*: H^*(\mathbb{CP}^n; \mathbb{Z}) \to H^*(\mathbb{CP}^n; \mathbb{Z})$ is a ring homomorphism.
 When $n$ is odd show there is a fixed point unless $f^*(\alpha) = -\alpha$, for $\alpha$ a generator of $H^2(\mathbb{CP}^n; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 Let $\alpha\in H^2(\mathbb{CP}^n;\mathbb Z)$ be the standard generator. Since $f^*$ is a ring map, there is an integer $d$ such that

@@ -24,9 +24,9 @@ audit:
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
 ---
 
-# E-HAT-3.1-3
-
+::: {.problem}
 Regarding $\mathbb{Z}_2$ as a module over the ring $\mathbb{Z}_4$, construct a resolution of $\mathbb{Z}_2$ by free modules over $\mathbb{Z}_4$ and use this to show that $\operatorname{Ext}_{\mathbb{Z}_4}^n(\mathbb{Z}_2, \mathbb{Z}_2)$ is nonzero for all $n$.
+:::
 
 ::: {.solution}
 Regard $\mathbb Z_2$ as the quotient $\mathbb Z_4/(2)$. Consider the periodic free resolution
