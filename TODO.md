@@ -21,8 +21,11 @@ Take work from the highest-priority node that has ready work; work a lower node 
 Priority is not a prerequisite edge: a blocked higher node does not idle the stream, and it stays first the moment it unblocks.
 
 1. `copy-policy-repair`
+
 2. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
+
 3. `math-defect-repair`
+
 4. `merged-proof-adjudication`
 
 - **`copy-policy-repair`**. **Needs:** none.
@@ -47,22 +50,20 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 
 - **`math-defect-repair`**. **Needs:** none.
   Correct or resolve every recorded incorrect mathematical statement, proof, title or source transcription: the mathematical entries in [COMPLAINTS.md](COMPLAINTS.md#mathematical-issues-and-source-questions), the mathematical items of [`queues/H-complaint-defects.md`](queues/H-complaint-defects.md), and mathematical-error candidates on the open review-crawl issues.
-  Read each entry, then the card and its source. A defect already repaired is resolved by removing its entry with the evidence, as `COMPLAINTS.md` prescribes; an open defect is repaired against the source, or recorded on the card as an erratum with its counterexample and corrected hypotheses when the source itself is false.
+  Read each entry, then the card and its source.
+  A defect already repaired is resolved by removing its entry with the evidence, as `COMPLAINTS.md` prescribes; an open defect is repaired against the source, or recorded on the card as an erratum with its counterexample and corrected hypotheses when the source itself is false.
   A source that cannot settle the statement is recorded on the card as unrecovered rather than guessed.
   **Acceptance:** no mathematical complaint entry, Queue H item, or unread review-crawl mathematics candidate remains; each was repaired, errata-recorded, or read and dispositioned against its source.
 
 - **`merged-proof-adjudication`**. **Needs:** none.
-  The 1.R2 / 1.R3 item in [Close out the branch consolidation](#12-close-out-the-branch-consolidation): read both authored proofs for every card where the consolidation merge chose one mechanically, starting with the four whose merged text matches neither parent and the six Spring 2019 algebra cards, and including the twenty recovered cards in `81373e972` that compete with `main`.
-  **Acceptance:** that item is checked, each card carrying a proof chosen or combined by mathematical reading.
+  The 1.R2 / 1.R3 item in [Close out the branch consolidation](#12-close-out-the-branch-consolidation): read both authored proofs for every card where the consolidation merge chose one mechanically, starting with the four whose merged text matches neither parent and the six Spring 2019 algebra cards, and including the twenty recovered cards in `81373e972` that compete with `main`. **Acceptance:** that item is checked, each card carrying a proof chosen or combined by mathematical reading.
 
-- **`publication-milestone`**. **Needs:** `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`.
-  Deploy the site from a revision at which all four are closed.
+- **`publication-milestone`**. **Needs:** `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`. Deploy the site from a revision at which all four are closed.
   **Acceptance:** the deployed `revision.txt` names that revision, and the rendered site is inspected under the same criteria as [Prove the deployed site](#prove-the-deployed-site).
 
 ### Solutions after the milestone
 
-The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `publication-milestone`.
-Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
+The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `publication-milestone`. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
 Returning to selection creates an instance for a different card, not a back-edge from commit to the same select node.
@@ -163,100 +164,10 @@ Ingesting more sources through the pipeline that produced them adds to the popul
   Keep a full rebuild available as its own recipe for when the file is suspected stale.
   **Acceptance:** a commit touching one card runs the gate in a second or two, the resulting `queues/C-unsolved-cards.md` is byte-identical to a full rebuild, and a test proves that equality on a sample that includes a card gaining a solution and a card losing one.
 
-## Content issues and policy violations build log
+## Issues and queue logs
 
-Built log from live GH issues and local queue logs.
-
-### Content issues log (issue source: label `bug` or `documentation`)
-
-Total instances: **31**\
-Open: **21**\
-Closed: **10**
-
-Open content issues:
-
-1. https://github.com/dzackgarza/new-qual-site/issues/61 — Rendering defects visible on card pages: collapsed lists, lost nesting, stem-derived titles, duplicate backlinks
-
-2. https://github.com/dzackgarza/new-qual-site/issues/62 — Design: guide section headings rendered as card links instead of section headings
-
-3. https://github.com/dzackgarza/new-qual-site/issues/63 — Guide pages list problems as flat topic-bucket dumps, not curated reading sequences
-
-4. https://github.com/dzackgarza/new-qual-site/issues/64 — Topic vocabulary has cross-subject homonyms (e.g. `Algebras` spans commutative and representation theory)
-
-5. https://github.com/dzackgarza/new-qual-site/issues/65 — Eliminate standalone `kind: solution` cards
-
-6. https://github.com/dzackgarza/new-qual-site/issues/67 — Wiki prose stance: audience is reviewing graduate students, not first-time learners
-
-7. https://github.com/dzackgarza/new-qual-site/issues/68 — Card page metadata + appearance list issues
-
-8. https://github.com/dzackgarza/new-qual-site/issues/69 — Hints inlined into solutions instead of hidden hints envs
-
-9. https://github.com/dzackgarza/new-qual-site/issues/70 — Duplicate cards and metadata-strip defects
-
-10. https://github.com/dzackgarza/new-qual-site/issues/71 — Guide pages do not define or link named terms
-
-11. https://github.com/dzackgarza/new-qual-site/issues/72 — Guide prose leaks internal authoring status
-
-12. https://github.com/dzackgarza/new-qual-site/issues/73 — Maintain a policy index of corpus defect patterns
-
-13. https://github.com/dzackgarza/new-qual-site/issues/74 — Defer definitions/theorems to external oracles where they exist
-
-14. https://github.com/dzackgarza/new-qual-site/issues/75 — Lamport solution blocks render as flat prose
-
-15. https://github.com/dzackgarza/new-qual-site/issues/76 — Compilation collections render as flat unsectioned dumps
-
-16. https://github.com/dzackgarza/new-qual-site/issues/77 — Guide ledes use formulaic copy
-
-17. https://github.com/dzackgarza/new-qual-site/issues/78 — Guide sidebar parent-child tree and “Study path” navigation
-
-18. https://github.com/dzackgarza/new-qual-site/issues/79 — Guide pages mix authored cards with query dumps
-
-19. https://github.com/dzackgarza/new-qual-site/issues/80 — Pages dump bare links instead of narrative content
-
-20. https://github.com/dzackgarza/new-qual-site/issues/81 — Centralize/structure resource pages and intake external PDFs into collections
-
-21. https://github.com/dzackgarza/new-qual-site/issues/82 — In-page TOC includes footer metadata blocks
-
-Closed content issues:
-
-1. https://github.com/dzackgarza/new-qual-site/issues/21 — Node runtime fix for pinned Pages actions
-
-2. https://github.com/dzackgarza/new-qual-site/issues/36 — `sync_macros.py` regeneration failure
-
-3. https://github.com/dzackgarza/new-qual-site/issues/42 — Macro vocabulary coverage gap
-
-4. https://github.com/dzackgarza/new-qual-site/issues/44 — Missing wiki hierarchy navigation
-
-5. https://github.com/dzackgarza/new-qual-site/issues/49 — Truncated LaTeX in PDF-extracted cards
-
-6. https://github.com/dzackgarza/new-qual-site/issues/54 — Blank viewport for heading-fragment navigation
-
-7. https://github.com/dzackgarza/new-qual-site/issues/56 — Duplicate card-body candidates found by title migration
-
-8. https://github.com/dzackgarza/new-qual-site/issues/57 — Inline math parsing failure in many sites
-
-9. https://github.com/dzackgarza/new-qual-site/issues/58 — Search shows raw TeX titles
-
-10. https://github.com/dzackgarza/new-qual-site/issues/59 — Footnotes with marks but no note
-
-### Policy-violation oriented log
-
-No explicit `policy` label appears on open issues.\
-Open policy pattern instance:
-
-1. https://github.com/dzackgarza/new-qual-site/issues/73
-
-Related keyword-hit instance with “policy” text only: 2. https://github.com/dzackgarza/new-qual-site/issues/16 (closed, QC formatting scope boundary)
-
-### Queue logs that support the same area
-
-- `queues/README.md`: issue categories and queue state summary.
-
-- `queues/F-wiki-doctor.md`: all measured findings closed except 5 structural one-child directories marked non-defects.
-
-- `queues/11-design-issues.md`: 25/25 defects resolved.
-
-- `queues/G-math-error-scan.md`: 66 candidate mathematical error findings; all 66 independently dispositioned, with confirmed defects repaired.
+Live issue state is on [GitHub issues](https://github.com/dzackgarza/new-qual-site/issues); queue state is in [`queues/README.md`](queues/README.md).
+Do not mirror either here.
 
 * * *
 
@@ -298,9 +209,9 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit: dcf7bd3 (verified: 10 cards, 10 in index; provenance: `assets/attachments/8000e.pdf` (Nakano MATH 8000 problem bank, contains past exams + homework from same course))
 
-- [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet, 2/3 problems transcribed; third not yet transcribed)
+- [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet; all three problems are now transcribed, see [Finish partial extractions](#finish-partial-extractions))
 
-- [x] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit: (pending commit; verified: 10 cards, 10 in index; provenance: `assets/attachments/8000e.pdf` (Nakano MATH 8000 problem bank))
+- [x] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit: f2d990062 (verified: 10 cards, 10 in index; provenance: `assets/attachments/8000e.pdf` (Nakano MATH 8000 problem bank))
 
 - [x] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit: dc0ff8314 (verified: 6 source problems, 6 cards, all match)
 
@@ -1398,8 +1309,7 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** `publication-milestone`.
-  Select one unsolved card.
+- [ ] **`select`**. **Needs:** `publication-milestone`. Select one unsolved card.
 
 - [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
 
@@ -1838,7 +1748,7 @@ surfaces-and-manifolds/    classification
 **Prelim** — the eleven sections of the paper, plus `useful-tricks.md`, which already exists and is exactly a recognition page.
 
 **Applied algebra** — matrix analysis · representation theory · symmetric functions · Gröbner bases and varieties · invariant theory.
-All unwritten; 247 problems and no theory cards, so the wiki is the only place its mathematics can live.
+The subject has no theory cards, so its five wiki chapters are the only place its mathematics lives.
 
 #### What generated this
 
@@ -1858,7 +1768,7 @@ One subject at a time, chapter by chapter, reading the existing pages before eac
 
 - [x] Complex analysis.
   All six chapters are authored, each with its recognition page, each rendered and read: `holomorphic-functions` (`cd06aa114`), `cauchy-theory` (`ae4df7c87`), `singularities` (`5e15fdf71`), `residues-and-contours` (`78c9cc7a6`, described in `dbbe898ad`), `counting-zeros` (`d1869aaea`), `conformal-maps` (`baa62f788`). `Cauchy`, `Zeros_and_poles`, `Omitted_values`, `Maps_of_the_disc` and `Conformal_maps` are gone; `Basics` holds the undergraduate layer and the reference tables under that name.
-  Remaining for this subject: the four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`), and the `Quals`, `Exercises`, `Workshops` and `Resources` folders, which the table of contents replaces with the `problems:` query rather than moving.
+  The four subject-level pages (`index`, `review`, `counterexamples`, `standard-integrals`) are written, and the `Quals` and `Exercises` folders are replaced by page `topics:` links into the problem browser; `workshops` and `resources` remain as folders.
 
 - [x] Algebra.
   All eight chapters are authored, each with its recognition page: `groups` (`bb821e913`), `group-actions` (`9ca42e320`), `rings-and-ideals` (`965e90eb4`, described in `f0ee0de67`), `modules` (`9f078fb90`), `linear-algebra` (`0161cf376`), `fields` and `galois-theory` (`c61d84782`), `representations` (`dc8084b5d`). The three cross-cutting pages and the subject index are written, and the 26 `Quals` and 12 `Exercises` pages are replaced by topic queries; all 970 cards they named were checked reachable first.
@@ -1878,248 +1788,21 @@ One subject at a time, chapter by chapter, reading the existing pages before eac
 - [x] Applied algebra.
   Five chapters, all authored rather than moved, since the subject had 247 problems and no theory pages at all (`79c1b8233`). Each carries a topics query, so those problems now sit under the theory they use.
 
-Everything below is evidence for that authoring, not a plan that precedes it.
+### Migration traps
 
-### What the migration costs
-
-Build measured: `just build` runs clean in 142 s. Read from the generator rather than assumed.
-The wiki pipeline is carefully built.
-The hard parts are elsewhere, and there is one genuine trap.
-
-#### Reorganizing touches no code, tested
-
-The renderer is generic over whatever tree it is given.
-There are no content literals in `tools/qualc/*.py` outside comments: no folder name, no page name, no subject name.
-Path handling is `parts[:-1]` and `parts[:-2]`, and the current tree already renders a depth-5 page (`Topology/Quals/UCSD/Quals/Old/Fall 2014.md`). Every page goes through one path — `_wiki_blocks(page, incoming, cards)` and `_wiki_chrome(nav, page)` over `wiki_pages` — with no per-page or per-folder branch.
-Navigation, breadcrumbs, previous and next, the manifest and the sidebar are all derived from the page list, and `.subject-sidebar ol ol` is a descendant selector, so any nesting depth indents.
-
-Tested in a worktree, not inferred:
-
-- Pure folder move, `Topology/Degree` to `degree-and-fixed-points`, filenames unchanged: **0 errors**.
-
-- Folder move plus ten kebab-case file renames, `Cauchy/` to `cauchy-theory/`: **32 errors**, each naming the exact file and the exact broken reference.
-  Restoring the filenames left **19**, all path-form links in two files, cleared by one `sed` on the path prefix.
-
-- `qualc build` on the reorganized tree: **exit 0, 139 s**, rendering `wiki/complex-analysis/cauchy-theory/`.
-
-- Code changed: **none**.
-
-`qualc check`, which is parse plus validate plus link resolution and stops before emit, runs in **44 s**. That is the loop for a reorganization.
-
-#### The mechanism the table of contents needs already exists
-
-`emit.py:578-660` transcludes.
-A paragraph that is nothing but card links renders those cards' bodies in place, each under its own `(Tag ...)` permalink, the way the Stacks Project prints a result under its tag; a wikilink inside a sentence stays a link.
-So "definitions and theorems are the content of a page, inlined" works today, and it is the single thing the table of contents most depends on.
-Landed in `7aba6b8a0`; `queues/11-design-issues.md` item 6 recorded the opposite and is corrected.
-
-What still needs code is one thing, and it is a new capability rather than a reorganization.
-
-This was subsequently simplified further.
-A guide section or wiki page now owns ordinary mathematical `topics:` metadata.
-The renderer turns that metadata into one prefilled link to the canonical `problems.html` browser; there is no guide `query:` item and no wiki `problems:` query block.
-Explicit card `ref:` / wikilinks remain the mechanism for statements that are actually part of the authored exposition.
-Subject landing pages link to their complete area-wide problem view automatically.
-
-#### What the machinery does not make hard
-
-**URLs.** Routes are `slug()` of the source path (`wiki.py:148`). Nothing outside links in: README, CONTRIBUTING, and SDL contain zero wiki deep links, and all seven guide manifests contain one.
-
-**Images — the scary-looking one that is fine.** 142 relative asset references, 118 of them four levels deep (`../../../../assets/assets/figures/...`). That reads as fatal for a move.
-It isn't: `_asset_source` (`static_site.py:515`) discards the relative prefix entirely.
-It splits on the literal `assets` path segment, then falls back to a basename lookup in the catalog.
-Depth-independent.
-Moving a page cannot break its figures.
-
-**Ordering.** `order` sorts within a parent — key is `(parent_key, order, title, key)` at `emit.py:503`. There is no global sequence to reconcile; a moved page needs one number relative to its new siblings.
-
-**Subject identity.** Area ids are `slug(folder_name)` (`index.py:78`), and `Complex_Analysis` and `complex-analysis` slug identically.
-Kebab-casing the six top-level folders is a no-op for all 9,104 cards' area validation.
-One constraint: a new non-subject branch like `reading/` needs `subject: false` in its index or it becomes a seventh area in Browse, Generate, and Guides.
-
-**Tests.** Zero coupling.
-Every wiki test builds a synthetic tree in `tmp_path` via `fixture_repo`. No test asserts a real wiki path.
-
-**The catalog.** No table stores a wiki route; pages reach `emit.project` as objects.
-
-**The ledgers.** 1,353 wiki paths across 10 `sources/*.jsonl` files, and the build reads none of them.
-They record where content came from at import and stay as written.
-
-**Card links.** 4,051 of the 5,152 wikilinks are card ids — id-resolved, move-immune.
-
-**And it fails loud.** A missing or ambiguous page reference becomes a `Diagnostic` and `cli.py:103` returns 1 before anything is emitted.
-You cannot ship a broken link.
-
-#### The one real trap
-
-`_page_target` (`wiki.py:414-421`) tries a bare link against the linking page's *own folder* before falling back to a global stem match.
-There are 776 bare links, and **54 of them name a stem that exists in more than one folder**: `Exercises` ×5, `Problems` ×4, `Definitions` ×3, `Counterexamples` ×3, `2021_Fall` ×3, `Functional Analysis` ×3, and nine more.
-
-Move the linking page and those links silently retarget a *different existing page*. No error, no diagnostic, correct-looking build.
-This is the only failure the machinery cannot catch, and it is the one that would corrupt the text quietly.
+`_page_target` in `tools/qualc/wiki.py` tries a bare link against the linking page's own folder before a global stem match, so moving a page silently retargets a bare link whose stem exists in more than one folder.
+`wikilinks_title_after_pipe` renders a link's target name as its text, so a page rename changes the sentences that link to it.
 
 - [x] Rewrite the 54 ambiguous bare links to full paths, before anything moves.
   After that the resolver's failure mode is loud everywhere and the migration is self-checking.
   Done in `29680a98e`: all 54 resolved in-folder before the rewrite and point at the same pages after it, each keeping its display text after a pipe.
   No bare link in the wiki now names a stem that exists in more than one folder.
 
-#### The second coupling, which is not a bug
+### Problem discovery on topical pages
 
-`wikilinks_title_after_pipe` means `[[Sylow_Theorems]]` renders as the literal text "Sylow_Theorems". 776 links display their target's name.
-The TOC renames nearly every page, so a rename is never just a rename — the link text is part of a sentence, and each one needs re-reading in context.
-This is authoring work created by an engineering choice, and it is unavoidable short of rewriting all 776 to piped form.
-
-#### Why "moving files around" describes the smallest part
-
-> Historical note: the discussion below records the pre-centralization design state.
-> The current schema has no guide `query:` item and no wiki `problems:` block.
-> Guide sections and topical wiki pages own `topics:` metadata; the renderer derives one link into `problems.html`, and subject roots derive an area-wide link.
-> Collection pages likewise delegate their ordered problem view to that browser.
-
-Complex analysis: 109 pages today, ~43 in the filed TOC. Of those 43 —
-
-- **~26** are edits of existing prose, mostly merges and splits.
-
-- **6** are area indexes.
-
-- **~11 do not exist in any form**: the six recognition pages, three compendia, the review sheet.
-
-- The **45** `Quals`/`Exercises`/`Workshops`/`Resources` pages do not move anywhere.
-  They are replaced by a mechanism that is not built.
-
-That mechanism is the gate.
-The `problems:` query block does not exist — `publication.py` has query handling for guides, the wiki page path has none, and adding it is work inside `emit.py` (2,512 lines).
-It is worthless until the topic vocabulary is curated: 668 strings, 166 of them singletons, and curating them is reading.
-
-Then the eight pages that hold several chapters each — 26 kB of Galois computations under five headings, 18 kB of group basics under eight — split by mathematical reading, not by any tool.
-
-#### Effort shape
-
-| Work | Character |
-| --- | --- |
-| Rewrite the 54 ambiguous bare links | Read once each. Do first. Unblocks everything. |
-| `problems:` query in `emit.py` | Ordinary engineering, one mechanism, mirrors `publication.py`. |
-| Curate the topic vocabulary | Reading, ~120 topics, gates the query block. |
-| Moves, renames, `order` values, 325 path links | Mechanical, and the build proves each step. |
-| 776 link texts | Reading, one sentence at a time. |
-| Split the eight omnibus pages | Mathematical reading. |
-| Write ~11 new pages per subject, and two whole subjects | This is the project, not the migration. |
-
-The infrastructure is not the obstacle.
-Strip out the authoring and this is mechanical work with a 142-second proof loop and a build that refuses to ship a broken link.
-The reason it is large is that the plan asks for pages that were never written — which is the point of the plan.
-
-#### Addendum: what this assessment covers, and what it does not
-
-The first version of this section read the inputs — routes, assets, `order`, area ids, ledgers, tests — and concluded the migration was cheap.
-It never opened the rendering path, so it could not answer whether the renderer is written against the tree that exists.
-It is not, and a worktree test says so rather than a reading.
-Two conclusions changed:
-
-- Reorganizing needs no code.
-  Measured above, not inferred.
-
-- Transclusion exists, since `7aba6b8a0`. The earlier claim that a bare `[[card-id]]` never transcludes came from `queues/11-design-issues.md`, which predates it.
-
-What is still unverified:
-
-- One folder move and one chapter rename were tested.
-  A whole-subject reorganization, a page split, and a page merge were not.
-
-- The new page kinds are untested as rendered output.
-  A recognition page is prose and a compendium is a table, so both are ordinary; a review sheet transcluding forty theorem cards onto one page is not, and its size and typesetting cost are unknown.
-
-- Nothing was looked at.
-  The evidence is exit codes and emitted paths, which is a build proving itself, not a page proving itself.
-  Before any of this is called done, render it and read it.
-
-- The `problems:` query block is unimplemented, so every claim about it is a claim about work not started.
-
-- Search behaviour across renamed routes was not checked beyond the build succeeding.
-
-### What is there now (measured)
-
-| Kind of page | Count | Share |
-| --- | ---: | ---: |
-| `index.md` navigation stubs | 70 | 19% |
-| `Quals/` hand-listed problem indexes | 90 | 25% |
-| `Resources/` (bibliography, source archives) | 24 | 7% |
-| `Exercises/` (PSet writeups) | 18 | 5% |
-| `Archives/` (tracking, topics, source dumps) | 14 | 4% |
-| `Appendices/` + `Workshops/` + `Review/` | 24 | 6% |
-| Mathematical notes | 127 | 35% |
-
-4,051 card references.
-115 pages are more link than text.
-120 filenames contain spaces, 75 contain underscores.
-69 pages carry `order: 100001` — the marker for "no place in the tree".
-
-### Chapters that do not exist yet
-
-The card counts are already there; the writing is not.
-This is the largest body of work in the section.
-
-- **Applied algebra**: 247 problems, zero theory cards, zero prose.
-  `Applied_Algebra/` holds an index and a source archive.
-
-- **Prelim**: 257 problems, zero theory cards, two notes (`Useful Tricks`, `Prelim Resources`).
-
-Both subjects have no theory cards at all, so the wiki is the only place their mathematics can live.
-
-Inside the four written subjects, these areas hold one or two notes each:
-
-| Area | Notes today |
-| --- | ---: |
-| `Topology/{Basics, Degree, Examples, Manifolds}` | 1 each |
-| `Real_Analysis/Functional_analysis` | 1 |
-| `Algebra/{Modules, Representation_theory}` | 2 each |
-| `Real_Analysis/{Measure, Fourier}` | 2 each |
-| `Topology/{Homology, Appendices}` | 2 each |
-| `Complex_Analysis/{Maps_of_the_disc, Omitted_values}` | 3 each |
-
-Topology carries the thinnest coverage of any written subject.
-
-### Pages that hold several chapters
-
-Whatever table of contents is authored, these pages hold more than one subject each and will split.
-
-| Page | Size | Sections |
-| --- | ---: | ---: |
-| `Algebra/Fields/Galois_Theory_Computations.md` | 26 kB | 5 h2, 10 h3 |
-| `Algebra/Fields/Fields_Extensions.md` | 20 kB | 6 h2 |
-| `Algebra/Groups/Groups_Classification.md` | 20 kB | 5 h2 |
-| `Algebra/Groups/Groups_Basics.md` | 18 kB | 8 h2 |
-| `Archives/Topics.md` | 14 kB | 10 h2, 10 h3 |
-| `Topology/Examples/Examples.md` | 14 kB | 2 h2 |
-| `Complex_Analysis/Basics/Tips_Techs.md` | 13 kB | 11 h2 |
-| `Algebra/index.md` |  | syllabus and a twelve-week sequence in one page |
-
-### A name is not a subject
-
-Six complex analysis pages carry Schwarz in the title, across three folders, and they are three different subjects.
-`Cauchy/Schwarz.md` is the lemma (`T-XMSIT`). `Cauchy/Schwarz reflection principle.md` is an unrelated theorem (`T-5SKNT`). `Maps_of_the_disc/Schwarz lemma.md` is Blaschke factors and hyperbolic translations, under a heading that names neither.
-
-Merging these on the name files the automorphism material under a lemma it is not about.
-Every same-name pair in `wiki/` needs both pages read before anything is decided about them.
-
-### The 90 pages that retype card data
-
-`corpus/collections/*/index.md` records institution, term, and the ordered problem list.
-Every card records `classification.topics`. The site emits 339 `/exam/` pages and 8,719 `/tag/` pages from that data.
-The `Quals/` folders are a third, hand-typed copy, and they drift.
-
-The eventual replacement is ordinary page topic metadata, not a problem-list configuration object:
-
-```yaml
----
-title: Sylow Theorems
-order: 40
-topics: [Sylow Theory, p-Groups]
----
-```
-
-`emit.py` renders one link to the centralized browser with those topics prefilled.
-The browser owns the matching rows, further filters, sampling, and printing.
+A guide section or wiki page owns ordinary `topics:` metadata, and the renderer turns it into one prefilled link to the canonical `problems.html` browser.
+Subject landing pages link to their area-wide problem view.
+Explicit card `ref:` links and wikilinks remain the mechanism for statements that are part of the authored exposition.
 
 - [x] Give topical pages metadata-backed problem discovery.
   The intermediate `problems:` query implementation landed in `088386d79`; it was later superseded by page-level `topics:` plus the centralized `problems.html` browser.
@@ -2130,9 +1813,6 @@ The browser owns the matching rows, further filters, sampling, and printing.
   These are the only pages this section removes, and their content survives: it is card data, rendered.
   Complex analysis is done: 35 pages, 348 cards, each checked reachable from a chapter page before deletion (`00a38780b`). Two things that were not card data had to be moved first rather than deleted: the acknowledgements on `Quals/Preface`, which name four people, and eight exam PDF links that existed nowhere else and are now on the provenance of the collection card for each sitting.
   Expect both in the other subjects.
-
-One caveat: the corpus has 668 distinct topic strings and 166 appear exactly once.
-A query needs a curated topic list, and that curation is reading, not scripting.
 
 - [x] Curate the topic vocabulary, subject by subject, and map the raw strings onto it.
   Done in `a39ebe785`: 290 topic entries on 276 cards merged onto one spelling each, taking 668 distinct strings to 627. It did not gate the query block, which was built and used across all six subjects before this ran; merging shortened the queries that had to name every variant.
@@ -2145,16 +1825,17 @@ These decide nothing about what the text should be.
 
 - Every directory needs an `index.md`, or the build drops it from the tree.
 
-- Every page needs an integer `order`. The 69 pages at `100001` have none that means anything.
+- Every page needs an integer `order`.
 
 - Routes are slugged from the source path, so a filename with spaces or underscores reads differently from its URL. Lowercase kebab-case makes the two agree.
 
-- One `# H1` per page, equal to `title`. Six pages named `Preface` and a second H1 on `Topology/index.md` are section 10 items.
+- One `# H1` per page, equal to `title`.
 
 ## 12. Close out the branch consolidation
 
-Every branch in `git branch` is merged into `main` as of `123e9b229`; `git rev-list --count main..<branch>` is 0 for all 44. Nothing is left to merge.
-What remains is judgement work the merge could not do, and worktrees that could not be retired.
+All 44 consolidation branches were merged into `main` by `123e9b229`.
+Two later branches each carry one commit not reachable from `main`, and both changes are already on `main`: `agent/sp19-zack-current` (`ee929c1c1`, the quoted `P-JHUMAY09ANH` audit note) and `work/complex-analysis-stream` (`23c025eea`, a removed COMPLAINTS entry).
+What remains is judgement work the merge could not do.
 
 The merges were made with `git merge-tree` + `git commit-tree` + a compare-and-swap `git update-ref`, never porcelain `git merge`, because `main`'s index carries staged entries belonging to live authoring sessions.
 A porcelain merge in the shared checkout commits whichever entries happen to be staged and, on conflict, `git merge --abort` resets the working tree under whoever is writing in it.
@@ -2194,17 +1875,3 @@ That is what cost the 962 lines recovered in `81373e972`. Consolidation in this 
 
 - [x] Retire the remaining worktrees.
   Closed 2026-09-13: `git worktree list --porcelain` now reports only the main checkout; no secondary worktree remains to recover or remove.
-  The historical recovery instructions below explain the completed consolidation and are retained as evidence.
-  All 25 were fully merged, so the only thing holding each one open was its own uncommitted work.
-  `git worktree remove` preserves the branch; nine were retired this way, freeing 3.7G. For each of the rest, commit the modified cards onto its branch, merge that branch, then remove the worktree:
-
-  ```
-  for p in .worktrees/*; do
-    printf '%-34s ahead=%-4s dirty=%s\n' "${p#.worktrees/}" \
-      "$(git rev-list --count main..$(git -C $p symbolic-ref --short HEAD))" \
-      "$(git -C $p status --porcelain | wc -l)"
-  done
-  ```
-
-  Nothing there is disposable: the dirty entries are authored card bodies, not build residue.
-  At roughly 420M each this is the repository's largest recoverable cost, and the disk has hit 100% once already.
