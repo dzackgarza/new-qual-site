@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-AHIOS
 kind: definition
-title: 'Definition: the discrete topology'
+title: Discrete topology
 prompts:
 - What is the discrete topology on a set $X$?
 classification:
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-For $X$ a space, the discrete topology is given by $\tau = \mathcal{P}(X)$, i.e. every subset is open.
+Let $X$ be a set.
+The \dfn{discrete topology} on $X$ is the [[D-2TZAI|topology]] $\tau = \mathcal{P}(X)$, in which every subset of $X$ is open.
 :::
