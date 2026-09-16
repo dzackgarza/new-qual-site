@@ -27,6 +27,8 @@ Let $X$ be a topological space and $U\subseteq X$.
 (b) $U$ is closed in $X$ if and only if $\cl_X(U) = U$, where $\cl_X(U)$ is the [[D-ASXW6|closure]] of $U$ in $X$.
 
 (c) If $Y\subseteq X$ is a subspace and $U\subseteq Y$, then $U$ is closed in $Y$ if and only if $U = Y \intersect V$ for some closed subset $V$ of $X$.
+
+(d) If $Y\subseteq X$ is a subspace and $U\subseteq Y$, then the closure of $U$ in $Y$ is $\cl_Y(U) = \cl_X(U)\intersect Y$.
 :::
 
 ::: {.concept}

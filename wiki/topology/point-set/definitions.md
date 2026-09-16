@@ -39,7 +39,7 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-FAEYE]]
 
-[[D-KJC6W]] [[D-Q5272]] [[D-EILKJ]]
+[[D-Q5272]] [[D-EILKJ]]
 
 [[D-UI7ZL]]
 
