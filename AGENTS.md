@@ -130,8 +130,8 @@ candidate reporting: no candidate is a finding until a human reads it, no agent
 finding triggers an edit, and a run with no candidates is not evidence that the corpus
 is clean.
 
-`just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`
-on every commit. Never run it manually — it is redundant.
+`just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`;
+`just test-push` runs it before every push. Never run it manually — it is redundant.
 
 ## This corpus is authored content
 
@@ -243,10 +243,8 @@ lemma, the reflection principle, and — under a heading that names neither —
 Blaschke factors. Merging those on the name files the automorphism material
 under a lemma it is not about.
 
-**Do not remove a thin or empty section.** It is a chapter not yet written.
-Applied algebra has 247 problems and no prose; prelim has 257 and almost none.
-Those are the two largest pieces of writing this project is waiting on, not two
-folders to tidy away. Write the chapter.
+**Do not remove a thin or empty section.** It is a chapter not yet written, not
+a folder to tidy away. Write the chapter.
 
 **Do not treat a merge as an improvement in itself.** A merge is only ever a
 correction to a duplicate, and the duplication has to be proved by reading both
@@ -310,21 +308,23 @@ somebody notices and pushes it. On 2026-09-12 that happened nine times, costing 
 and fifty-five minutes each — more total time than every blocked commit, stale lock and failed
 hook that day combined.
 
-Ending a turn is a decision to stop, so make it deliberately. When a source is carded and
-committed, take the next one from the queue in the same turn: open it, read it, begin. If work
-genuinely must pause — a run you are waiting on, a decision you cannot make — say what you are
-waiting for and what you will do when it returns, so the next turn begins with an instruction
-rather than a question.
+Ending a turn is a decision to stop, so make it deliberately. When a unit of work is committed,
+take the next one in the same turn from the highest-priority node with ready work in the
+[TODO.md milestone](TODO.md#milestone-publish-with-every-remedial-obligation-cleared): open it,
+read it, begin. If work genuinely must pause — a run you are waiting on, a decision you cannot
+make — say what you are waiting for and what you will do when it returns, so the next turn begins
+with an instruction rather than a question.
 
-Queue E is ordered and its bottom entry is always available. Selecting the next source is your
-work, not the steward's.
+Selecting the next item is your work, not the steward's. A Queue E entry recorded as blocked on
+MinerU Flash is not ready work; take the next ready item instead.
 
 ## A disposition is not a unit of work
 
 Deciding that a source is reference-only, ticking a queue entry, closing a defect record,
 normalising whitespace across a collection: none of this is authored content, and none of it is
 a unit of work. The unit of work in this repository is a card, a solution, a source properly
-carded. A session whose output is dispositions has produced a tidier queue and no mathematics.
+carded, a statement corrected against its source, or a page or card's copy rewritten to the
+[CONTRIBUTING.md](CONTRIBUTING.md) policies. A session whose output is dispositions has produced a tidier queue and no mathematics.
 
 This matters here more than elsewhere because the queue is long and dispositioning is easy. It
 is always possible to spend a session deciding about sources rather than carding them, and the
@@ -357,10 +357,11 @@ list disagrees with the corpus, find out which is lying before authoring against
 
 Before starting a new source, look back at the one you just finished and ask what it produced:
 
-- **Cards and solutions, or dispositions and normalisations?** The former is the product. A
-  session whose output is decisions about sources has left the corpus the same size.
-- **Did the corpus counts move?** If `just unsolved` and the queue counts are unchanged while
-  commits landed, the commits were not authoring.
+- **Authored content, or dispositions and normalisations?** Cards, solutions, corrected
+  statements and rewritten copy are the product. A session whose output is decisions about
+  sources has left the corpus unchanged.
+- **Did authored content change?** If commits landed but no card, statement, solution or page
+  copy changed, the commits were not authoring.
 - **Is something making every source cost more than it should?** An extraction step you redo by
   hand each time, a check that reformats files you did not touch, a count you have learned not
   to trust. That is an obstruction, and working around it silently is how it survives to cost
@@ -528,8 +529,9 @@ Never extract PDFs to `/tmp`, `.tmp`, or any other temp directory. Temp
 files are not tracked by git and vanish between sessions. Always extract
 into the repository so the output is versioned and persistent.
 
-The correct output path is under `assets/attachments/` (for source PDFs)
-or `assets/` (for extracted markdown). Example:
+Source PDFs live under `assets/attachments/`. Their checked-in extractions live
+under `assets/attachments/` as `<stem>_extracted.md` beside the PDF or as
+`assets/attachments/extracted/<stem>.md`. Example:
 
 ```bash
 mineru-open-api flash-extract assets/attachments/exam.pdf > assets/attachments/exam_extracted.md
@@ -761,9 +763,12 @@ or the state of the provenance field.
 # Data issues
 
 Completion of all solutions is a very low priority concern and is NOT a data
-issue. Solutions are authored content that will be filled in over time.
+issue. Solutions are authored content that will be filled in over time, after
+`publication-milestone`. The order of work across copy, intake, mathematical
+repair and proof adjudication is the
+[TODO.md milestone](TODO.md#milestone-publish-with-every-remedial-obligation-cleared).
 
-Important data issues (roughly in order of urgency):
+Within data issues, in order of urgency:
 1. Incorrect data — problem statements, titles, or classifications that are
    simply wrong. This is the most urgent.
 2. Problem cards not appearing in any collection (orphaned problems)
@@ -784,7 +789,7 @@ When a generation changes the file, commit the diff in the next commit.
 The queues are candidates to read — a measurement that disappears is not a
 disposition, so record the reason in `TODO.md`.
 
-## Reconcile queues across all agent branches before claiming
+## Reconcile queues before claiming
 
 Every stream solves on `main`, so a queue is stale the moment a sibling commits.
 Before claiming cards from a queue (`queues/C-unsolved-cards.md` and its siblings),
@@ -833,9 +838,10 @@ There is one environment, the main checkout's `.venv`, created with
 fighting over one editable install, and with one checkout there is nothing to point
 anywhere.
 
-## Worktrees that already exist
+## Worktrees from before this rule
 
-Some remain from before this rule. They are not debris and must not be removed on
+`git worktree list` reports only the main checkout, and `test-commit` runs `_no-worktrees`.
+If a worktree from before this rule is found, it is not debris and must not be removed on
 sight: another stream's authoring is live until three readings say otherwise, taken
 immediately before the removal and never carried over from an earlier survey.
 
@@ -988,14 +994,15 @@ workflow are deliberately separate:
   candidate card before selecting it. A card leaves the list only by gaining
   a solution; the boxes are a measurement, not a ledger.
 - `TODO.md` §7, "Author solutions", together with issue #2 — the authored
-  repeating loop. Select one unsolved card, read the problem and its source,
+  repeating loop, which begins after `publication-milestone`. Select one unsolved card, read the problem and its source,
   independently verify any retained source solution, write a complete
   Lamport-style structured proof in a `solution` section on that same problem
   card, and commit it before selecting the next card using the prose-only
   route in [Running checks](#running-checks).
 
-`just sample-unsolved` draws n random unsolved cards (default 5) by querying
-the catalog for problem cards with no solution section. The solution
+`just sample-unsolved COLLECTION [n] [section]` samples up to n distinct
+unsolved card IDs (default 5) from one collection's authored appearances and
+lists them in source order. The solution
 authoring workflow is recorded in `TODO.md` under
 [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2), and the
 solution-sheet routing ledgers live in

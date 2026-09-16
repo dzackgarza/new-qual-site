@@ -1,7 +1,7 @@
 # Qual Corpus
 
 Qual Corpus collects qualifying-exam problems and study material for graduate mathematics.
-It covers prelims, algebra, real analysis, complex analysis, topology, and workshop problems.
+It covers prelims, algebra, applied algebra, algebraic geometry, real analysis, complex analysis, topology, and workshop problems.
 
 **[Open Qual Corpus](https://dzackgarza.github.io/new-qual-site/)**
 
@@ -9,11 +9,9 @@ No installation is required.
 
 ## Study
 
-- [Browse problems](https://dzackgarza.github.io/new-qual-site/problems.html).
-
-- [Browse past exams](https://dzackgarza.github.io/new-qual-site/exams.html).
-
 - [Browse, filter, sample, and print problems](https://dzackgarza.github.io/new-qual-site/problems.html).
+
+- [Browse sources](https://dzackgarza.github.io/new-qual-site/exams.html): past exams, textbooks, homework sets, and compilations.
 
 - Press `/` on any page to search titles, statements, proofs, and topics.
 
@@ -25,6 +23,8 @@ They also show available definitions, theorems, hints, solutions, and related pr
 - [Prelim](https://dzackgarza.github.io/new-qual-site/guide/GUIDE-PRELIM.html)
 
 - [Algebra](https://dzackgarza.github.io/new-qual-site/guide/GUIDE-ALGEBRA.html)
+
+- [Applied Algebra](https://dzackgarza.github.io/new-qual-site/guide/GUIDE-APPLIED-ALGEBRA.html)
 
 - [Real Analysis](https://dzackgarza.github.io/new-qual-site/guide/GUIDE-REAL-ANALYSIS.html)
 

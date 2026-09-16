@@ -1,6 +1,6 @@
 # Queue 11: Wiki design defects (rendered verification)
 
-Source: `DESIGN_TODO.md` (committed 2026-08-27, `ab0b3d190`) Evidence: 12 pages rendered in browser at 540px, re-rendered at 1440px and 375px. Frequency counts from built HTML in `build/quarto/_site/wiki` (398 pages).
+Source: `DESIGN_TODO.md` (committed 2026-08-27, `ab0b3d190`; removed as superseded in `9334a7e02`) Evidence: 12 pages rendered in browser at 540px, re-rendered at 1440px and 375px. Frequency counts from built HTML in `build/quarto/_site/wiki` (398 pages).
 
 Each item is marked with validity status after checking against current source and build.
 
