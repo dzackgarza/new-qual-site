@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: D-5KDNB
-kind: definition
+kind: theorem
 title: Alexander duality
 classification:
   areas:
