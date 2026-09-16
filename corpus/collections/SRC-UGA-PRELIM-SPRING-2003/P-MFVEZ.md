@@ -28,7 +28,7 @@ Evaluate the line integral (a) directly and (b) by using Green's theorem.
 \int_C 2x\,dx+x^2y\,dy=\frac12.
 \]
 For the clockwise orientation the value is $-\frac12$.
-:::
+The source does not specify an orientation; the steps below compute the positively oriented integral, which is the orientation Green's theorem uses.
 
 <1>2. Compute the positively oriented integral directly by traversing the four sides
 \[
@@ -77,3 +77,4 @@ Set $P(x,y)=2x$ and $Q(x,y)=x^2y$. For the unit square $D=[0,1]^2$ with positive
 :::
 
 <1>8. Reversing the orientation changes the sign of every line integral, giving $-\frac12$ for clockwise orientation.
+:::
