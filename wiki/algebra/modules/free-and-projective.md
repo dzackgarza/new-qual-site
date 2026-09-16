@@ -10,7 +10,7 @@ topics:
 
 ## Free modules, rank, and torsion
 
-An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomorphic to $\bigoplus_{i\in I}R$ for some set $I$; over a commutative ring $R\neq0$ the cardinality of $I$ is its [[FD-CVEAI|rank]]. Over an integral domain, a free module is [[D-ZJJ7G|torsion-free]]: if $r\neq0$ and $x=\sum_i c_ie_i\neq0$ in a basis $(e_i)$, then $rx=\sum_i rc_ie_i\neq0$.
+An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomorphic to $\bigoplus_{i\in I}R$ for some set $I$; over a commutative ring $R\neq0$ the cardinality of $I$ is its [[FD-CVEAI|rank]]. Over an integral domain, a free module is [[D-ZJJ7G|torsion-free]]; if $r\neq0$ and $x=\sum_i c_ie_i\neq0$ in a basis $(e_i)$, then $rx=\sum_i rc_ie_i\neq0$.
 
 [[D-LIEMF]]
 
