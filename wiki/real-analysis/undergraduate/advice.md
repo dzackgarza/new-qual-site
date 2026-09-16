@@ -1,125 +1,75 @@
 ---
+title: Techniques and standard facts
 order: 5
 ---
 
-# Advice and Essentials 
+# Techniques and standard facts
 
-- General advice: try swapping the orders of limits, sums, integrals, etc.
-- Good set / bad set: for measure theory or integrals, try to break a set up into "good" and "bad" subsets, and put bounds on each piece separately.
-- Limits:
-  - Take the $\limsup$ or $\liminf$, which always exist, and aim for an inequality like
-  \[  
-  c \leq \liminf a_n \leq \limsup a_n \leq c
-  .\]
-  - $\lim f_n = \limsup f_n = \liminf f_n$ iff the limit exists, so to show some $g$ is a limit, show
-  \[  
-\limsup f_n \leq g \leq \liminf f_n \qquad (\implies g = \lim f) 
-  .\]
-  - A  limit does *not* exist if $\liminf a_n > \limsup a_n$.
+## Proof techniques
 
-- Sequences and Series
-  - If $f_n$ has a global maximum (computed using $f_n'$ and the first derivative test) $M_n \to 0$, then $f_n \to 0$ uniformly.
-  - For a fixed $x$, if $f = \sum f_n$ converges *uniformly* on some $B_r(x)$ and each $f_n$ is continuous at $x$, then $f$ is also continuous at $x$ .
+- **Limits via $\limsup$ and $\liminf$.** For a real sequence $(a_n)$, $\limsup_n a_n$ and $\liminf_n a_n$ exist in $[-\infty,\infty]$, and $\lim_n a_n = c$ if and only if $\limsup_n a_n\leq c\leq\liminf_n a_n$. The limit fails to exist exactly when $\liminf_n a_n<\limsup_n a_n$.
 
-- Equalities
-  - Split into upper and lower bounds:
-  \[  
-  a=b \iff a\leq b \text{ and }  a\geq b
-  .\]
-  - Use an epsilon of room:
-  \[  
-  \qty{ \forall \epsilon, \,\,a < b + \eps} \implies a\leq b 
-  .\]
-  - Showing something is zero:
-  \[  
-  \qty{ \forall \epsilon, \,\, \norm{a} < \eps} \implies a = 0
-  .\]
+- **Equality from two inequalities.** $a=b$ if and only if $a\leq b$ and $b\leq a$.
 
-- Continuity / differentiability: 
-  - Show it holds on $[-M, M]$ for all $M$ to get it to hold on $\RR$.
-  - In higher dimensions: intersect with a ball $B_R(\vector 0)\subset \RR^n$ about zero.
+- **An $\varepsilon$ of room.** If $a<b+\varepsilon$ for every $\varepsilon>0$, then $a\leq b$; if $\norm a<\varepsilon$ for every $\varepsilon>0$, then $a=0$.
 
-- Simplifications:
-  - To show something for a measurable set, show it for bounded/compact/elementary sets and use approximations in measure.
-  - To show something for an arbitrary function, try various dense classes of functions: 
-    continuous, bounded, compactly supported, simple, indicator functions, etc and use approximations in norm.
-  - Replace $\eps\to 0$ with an arbitrary countable sequence ($x_n \to 0$)
-    - Note: this is not always helpful, since you now have to predicate over all such sequences.
+- **Approximate infima.** If $s = \inf S$ for a nonempty $S\subseteq\RR$ bounded below, then for every $\varepsilon>0$ there is $x\in S$ with $s\leq x<s+\varepsilon$.
 
-- Integrals
-  - Calculus techniques: Taylor series, IVT, MVT, etc.
-  - Break up $\RR^n = \theset{\abs{x} \leq 1} \coprod \theset{\abs{x} > 1}$.
+- **Local to global.** A property of a function that is local, such as continuity or differentiability at each point, holds on $\RR^n$ if it holds on every ball $B_R(0)$.
 
-    - Or break the integration region into disjoint annuli: 
-    \[
-    \int_\RR f = \sum_{k\geq 0}\int_{2^k}^{2^{k+1}} d
-    .\]
+- **Good and bad sets.** An integral $\int_X\abs f$ is bounded by splitting $X = G\sqcup B$, with $f$ controlled pointwise on $G$ and $\mu(B)$ small; for two functions, $X = \theset{f>g}\sqcup\theset{f=g}\sqcup\theset{f<g}$.
 
-  - For pairs of functions $f, g$: break up into $\theset{f>g} \disjoint \theset{f=g} \disjoint \theset{f< g}$.
-  - Tail estimates!
-  - Most of what works for integrals will work for sums.
+- **Local singularities and tails.** $\int_{\RR^n}\abs f = \int_{\abs x\leq1}\abs f + \int_{\abs x>1}\abs f$, and on $(1,\infty)$, $\int_1^\infty\abs f = \sum_{k\geq0}\int_{2^k}^{2^{k+1}}\abs f$.
 
-- Measure theory:
+- **Add and subtract.** For example, $\norm{T_nx_n - Tx}\leq\norm{T_nx_n - Tx_n} + \norm{Tx_n - Tx}\leq\norm{T_n-T}\norm{x_n}+\norm T\norm{x_n-x}$.
 
-  - Always consider bounded sets, and if $E$ is unbounded write $E = \Union_{n\geq 0} \qty{ B_{n}(0) \intersect E}$ and use countable subadditivity or continuity of measure.
+- **Reduction to nice sets and functions.** A statement about measurable sets can often be proved for bounded or compact sets, or for finite unions of rectangles, and extended using regularity and continuity of measure; for unbounded $E$, $E = \bigcup_{n\geq1}(E\cap B_n(0))$. A statement continuous in $f\in L^p$, $1\leq p<\infty$, can be proved on a dense class, such as simple functions or $C_c$, and extended by approximation in norm.
 
-  - $F_\sigma$ sets are Borel, so establish something for Borel sets and use this to extend it to Lebesgue.
+- **Subsequences.** A sequence converging in $L^p$ has an almost everywhere convergent subsequence, and a bounded sequence in $\RR^n$ has a convergent subsequence.
 
-  - $s = \inf\theset{x\in X} \implies$ for every $\varepsilon$ there is an $x\in X$ such that $x \leq s + \varepsilon$ or $x\in [s, s+\eps]$.
+- **Sequential criteria.** $\lim_{\varepsilon\to0}g(\varepsilon) = L$ if and only if $g(\varepsilon_n)\to L$ for every sequence $\varepsilon_n\to0$ with $\varepsilon_n\neq0$.
 
-- Useful facts about continuous compactly supported ($C_c^0(\RR)$) functions:
-  - Uniformly continuous
-  - Bounded almost everywhere
+## Standard facts
 
-- Pass to a subsequence!
+- If $\sup_x\abs{f_n(x)} = M_n\to0$, then $f_n\to0$ uniformly; $M_n$ can often be computed from $f_n'$ by the first derivative test.
 
-- Add and subtract a thing. 
-  Eg, $\norm{T_nx_n - Tx} = \norm{T_nx_n - Tx_n + Tx_n - Tx}$.
+- If $\sum_n f_n$ converges uniformly on a neighborhood of $x$ and each $f_n$ is continuous at $x$, then $\sum_n f_n$ is continuous at $x$.
 
-- $(a_k) \in \ell^2(\ZZ)$ is much weaker than $(a_k) \in \ell^1(\ZZ)$.
-- Littlewood's principles:
-  - Measurable sets are almost finite unions of intervals,
-  - Measurable functions are almost continuous,
-  - Pointwise convergent sequences of measurable functions are almost uniformly convergent.
+- Uniform convergence of $\sum_n f_n$ on $A$ follows from the Weierstrass $M$-test: $\sup_{A}\abs{f_n}\leq M_n$ with $\sum_n M_n<\infty$.
 
-- $L^p$ spaces shrink as $p\nearrow \infty$ (by Holder).
+- A continuous function with compact support on $\RR^n$ is bounded and uniformly continuous.
 
-- Nesting of $L^p$ spaces: let $p< q$
-  - For $\mu(X) = \infty$: no general containments.
-  - For $\mu(X) < \infty: p < p+1 < \cdots \implies L^p \supseteq L^{p+1} \supseteq \cdots$.
-    Why? Holder.
-  - For $X=\ZZ: L^p \subseteq L^{p+1} \subseteq \cdots$
-- Failing to be in $L^p$: singularities away from infinity, or long tails.
+- $\ell^1(\ZZ)\subsetneq\ell^2(\ZZ)$: for example $(1/(\abs k+1))_{k\in\ZZ}\in\ell^2\setminus\ell^1$.
 
-- Every Borel is $F_\sigma$ up to a null set.
+- If $\mu(X)<\infty$ and $1\leq p<q\leq\infty$, then $L^q(\mu)\subseteq L^p(\mu)$, by Hölder's inequality. For counting measure on $\ZZ$, $\ell^p\subseteq\ell^q$. For Lebesgue measure on $\RR$, neither inclusion holds.
 
-- Proving uniform convergence: use the $M\dash$test.
+- A function fails to be in $L^p(\RR^n)$ because of a local singularity, such as $\abs x^{-n/p}$ near $0$, or a slowly decaying tail, such as $\abs x^{-n/p}$ near $\infty$.
 
-- A problem using absolute continuity will often be used to imply bounded variation (which allow using FTC)
+- Every Lebesgue measurable set $E\subseteq\RR^n$ is $H\sqcup N$ with $H$ an $F_\sigma$ set and $N$ null.
 
-- If two functions are in conjugate $L^p$ spaces, try Holder.
+- An absolutely continuous function on $[a,b]$ has bounded variation, and $f(x) = f(a)+\int_a^x f'$.
 
-- $\mu(X) = \norm{\id}_{L^1(X)} = \int_X 1 \dmu$
+- For $f,g$ in conjugate spaces $L^p$ and $L^q$, $\abs{\int fg}\leq\norm f_p\norm g_q$.
 
+- $\mu(X) = \norm{1}_{L^1(\mu)} = \int_X 1\,d\mu$.
 
-## The Absolute Essentials
+- Littlewood's principles, on a set of finite measure: measurable sets are nearly finite unions of intervals, measurable functions are nearly continuous, and almost everywhere convergent sequences are nearly uniformly convergent; see [[real-analysis/measure/littlewoods-principles|Littlewood's three principles]].
+
+## Standard results
 
 [[PR-IGVTV]]
 
 [[T-ERNLN]]
 
-:::{.proof}
-\envlist
-- Follows from an $\varepsilon/3$ argument: 
-  \[  
-  \abs{F(x) - F(y)} \leq 
-  \abs{F(x) - F_N(x)} + \abs{F_N(x) - F_N(y)} + \abs{F_N(y) - F(y)} 
-  \leq \eps \to 0
-  .\]
-
-  - The first and last $\eps/3$ come from uniform convergence of $F_N\to F$.
-  - The middle $\eps/3$ comes from continuity of each $F_N$.
-- So just need to choose $N$ large enough and $\delta$ small enough to make all 3 $\varepsilon$ bounds hold.
+::: {.proof}
+Let $\varepsilon>0$ and $x$ in the domain.
+Choose $N$ with $\sup_y\abs{F_N(y)-F(y)}<\varepsilon/3$, and $\delta>0$ with $\abs{F_N(x)-F_N(y)}<\varepsilon/3$ for $\abs{x-y}<\delta$, by continuity of $F_N$.
+Then for $\abs{x-y}<\delta$,
+$$
+\abs{F(x) - F(y)} \leq
+\abs{F(x) - F_N(x)} + \abs{F_N(x) - F_N(y)} + \abs{F_N(y) - F(y)}
+< \varepsilon.
+$$
 
 :::
 
@@ -131,50 +81,48 @@ order: 5
 
 [[PR-PIVFR]]
 
-:::{.proof title="of Borel characterization"}
-For every $\frac 1 n$ there exists a closed set $K_{n} \subset E$ such that $m(E\setminus K_{n}) \leq \frac 1 n$.
-Take $K = \union K_{n}$, wlog $K_{n} \nearrow K$ so $m(K) = \lim m(K_{n}) = m(E)$.
-Take $N\da E\setminus K$, then $m(N) = 0$.
+::: {.proof title="Borel characterization of measurable sets"}
+For each $n\geq1$ there is a closed $K_n\subseteq E$ with $m(E\setminus K_n) \leq \frac 1 n$.
+Let $H\coloneqq\bigcup_n K_n$, an $F_\sigma$ set contained in $E$.
+Then $N\coloneqq E\setminus H\subseteq E\setminus K_n$ for every $n$, so $m(N)\leq\frac1n$ for every $n$ and $m(N)=0$.
 
 :::
 
 [[T-IIKSW]]
 
-:::{.proof title="that measurable sets can be approximated"}
-\envlist
+::: {.proof title="Approximation of measurable sets"}
+(1) Suppose first $m(E)<\infty$.
+By the definition of outer measure there are closed cubes $Q_i$ with $E\subseteq\bigcup_iQ_i$ and $\sum_i\abs{Q_i}<m(E)+\varepsilon/2$; enlarging each $Q_i$ to an open cube $Q_i'$ with $\abs{Q_i'}<\abs{Q_i}+\varepsilon2^{-i-1}$, the open set $O\coloneqq\bigcup_iQ_i'$ satisfies $m(O)<m(E)+\varepsilon$, so $m(O\setminus E)<\varepsilon$.
+In general write $E=\bigcup_kE_k$ with $m(E_k)<\infty$, choose open $O_k\supseteq E_k$ with $m(O_k\setminus E_k)<\varepsilon2^{-k}$, and let $O\coloneqq\bigcup_kO_k$.
 
-- (1): Take $\theset{Q_{i}} \covers E$ and set $O = \union Q_{i}$.
-- (2): Since $E^c$ is measurable, produce $O\supset E^c$ with $m(O\setminus E^c) < \eps$.
-  - Set $F = O^c$, so $F$ is closed.
-  - Then $F\subset E$ by taking complements of $O\supset E^c$
-  - $E\setminus F = O\setminus E^c$ and taking measures yields $m(E\setminus F) < \eps$
-- (3): Pick $F\subset E$ with $m(E\setminus F) < \eps/2$.
-  - Set $K_{n} = F\intersect \DD_{n}$, a ball of radius $n$ about $0$.
-  - Then $E\setminus K_{n} \searrow E\setminus F$
-  - Since $m(E) < \infty$, there is an $N$ such that $n\geq N \implies m(E\setminus K_{n}) < \eps$.
+(2) Apply (1) to $E^c$ to get an open $O\supseteq E^c$ with $m(O\setminus E^c)<\varepsilon$, and let $F\coloneqq O^c$.
+Then $F$ is closed, $F\subseteq E$, and $E\setminus F = O\setminus E^c$, so $m(E\setminus F)<\varepsilon$.
+
+(3) Assume $m(E)<\infty$; for $E=\RR^n$ no compact $K$ has $m(E\setminus K)<\infty$.
+By (2) choose a closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon/2$, and let $K_n\coloneqq F\cap\overline{B_n(0)}$, which is compact.
+The sets $E\setminus K_n$ decrease to $E\setminus F$ and $m(E)<\infty$, so $m(E\setminus K_n)\to m(E\setminus F)$, and $m(E\setminus K_n)<\varepsilon$ for $n$ large.
 
 :::
 
-## Quintessential Qual Problems
+## Exercises
 
 [[E-OMK54]]
+
 [[PR-6NDTF]]
 
-:::{.proof title="of measurable slices"}
-\envlist
-
-$\implies$:
-
-- Let $f$ be measurable on $\RR^n$.
-- Then the cylinders $F(x, y) = f(x)$ and $G(x, y) = f(y)$ are both measurable on $\RR^{n+1}$.
-- Write $\mathcal{A} = \theset{G \leq F} \intersect \theset{G \geq 0}$; both are measurable.
-
-$\impliedby$:
-
-- Let $A$ be measurable in $\RR^{n+1}$.
-- Define $A_x = \theset{y\in \RR \mid (x, y) \in \mathcal{A}}$, then $m(A_x) = f(x)$.
-- By the corollary, $A_x$ is measurable set, $x \mapsto A_x$ is a measurable function, and $m(A) = \int f(x) ~dx$.
-- Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
+::: {.proposition title="The region under a graph"}
+Let $f\colon\RR^n\to[0,\infty)$ and $A\coloneqq\theset{(x,y)\in\RR^n\times\RR \st 0\leq y\leq f(x)}$.
+Then $f$ is Lebesgue measurable if and only if $A$ is Lebesgue measurable in $\RR^{n+1}$, and in that case $m(A) = \int_{\RR^n}f(x)\dx$.
 
 :::
 
+::: {.proof}
+Suppose $f$ is measurable.
+The functions $F(x,y)\coloneqq f(x)$ and $G(x,y)\coloneqq y$ are measurable on $\RR^{n+1}$, since $\theset{F>a} = \theset{f>a}\times\RR$ and $\theset{G>a} = \RR^n\times(a,\infty)$.
+Hence $A = \theset{G\leq F}\cap\theset{G\geq0}$ is measurable.
+
+Suppose $A$ is measurable.
+For every $x$, the slice $A_x = [0,f(x)]$ has $m(A_x) = f(x)$.
+By [[PR-6NDTF]], $x\mapsto m(A_x) = f(x)$ is measurable and $m(A) = \int_{\RR^n}m(A_x)\dx = \int_{\RR^n}f(x)\dx$.
+
+:::
