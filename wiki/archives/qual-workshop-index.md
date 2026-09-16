@@ -1,13 +1,13 @@
 ---
 order: 30
-title: Workshop Index
+title: Workshop index
 ---
 
-# Workshop Index
+# Workshop index
 
-Week-by-week qual-prep sessions, also filed under each subject.
+Weekly qualifying-exam workshop pages, grouped by subject.
 
-## Complex Analysis
+## Complex analysis
 
 - [[complex-analysis/workshops/index|Workshops]]
 
@@ -15,7 +15,7 @@ Week-by-week qual-prep sessions, also filed under each subject.
 
 - [[complex-analysis/workshops/complex-week-2-cauchy]]
 
-## Real Analysis
+## Real analysis
 
 - [[real-analysis/workshops/index|Workshops]]
 
