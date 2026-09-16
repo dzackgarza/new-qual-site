@@ -43,7 +43,3 @@ source:
     term: fall
     year: 1980
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1980. Problems are listed in source order. Problem 9 retains an explicit extraction ambiguity in the matrix norm notation rather than guessing the missing typographic detail.
-:::
