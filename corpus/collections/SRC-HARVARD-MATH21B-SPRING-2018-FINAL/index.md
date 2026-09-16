@@ -36,6 +36,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution.pdf` is the Harvard Math 21b Spring 2018 final exam with worked solutions and thirteen top-level problems. The course's resource page and the existing Practice Final 6 collection establish the Harvard Math 21b Spring 2018 provenance. One true-or-false item in Problem 1 and figure-dependent choices in Problems 2, 7, and 11 are not recovered in the retained extraction and are recorded explicitly rather than reconstructed.
+::: {.remark}
+The Spring 2018 final exam of Harvard Math 21b, with worked solutions and thirteen problems.
 :::
