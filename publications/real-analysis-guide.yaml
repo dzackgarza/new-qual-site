@@ -172,7 +172,7 @@ sections:
       - ref: PR-O2XFF
       - ref: T-RA-WORKSHOP-D7-6-3
       - ref: T-RA-WORKSHOP-D7-6-4
-      - ref: T-DS4VW
+      - ref: T-TR526
       - ref: D-2CCDB
       - ref: T-RA-WORKSHOP-D7-6-5
       - ref: FT-JQSOK

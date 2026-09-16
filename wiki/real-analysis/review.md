@@ -94,8 +94,6 @@ Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
 
 [[T-OXNTU]]
 
-[[T-DS4VW]]
-
 [[T-TR526]]
 
 [[T-O4UD3]]

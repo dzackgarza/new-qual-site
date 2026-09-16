@@ -13,13 +13,11 @@ Differentiating a series term by term requires uniform convergence of the series
 
 [[T-OXNTU]]
 
-[[T-DS4VW]]
+[[T-TR526]]
 
 [[PR-LTRLV]]
 
 [[FR-EDJWQ]]
-
-[[T-TR526]]
 
 ::: {.example title="A bounded differentiable function with unbounded derivative"}
 On $[-1,1]$ let
