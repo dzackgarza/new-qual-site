@@ -17,6 +17,8 @@ review: draft
 prompts:
 - Write down the fan of the Hirzebruch surface F_a and compute its class group and intersection numbers.
 - Why is F_0 the quadric surface?
+- What is a fan for the total space of $\OO_{\PP^1}(n)$?
+- Describe the Segre embedding $\PP^1 \times \PP^1 \to \PP^3$ and its polytope.
 ---
 
 ::: {.example title="The fan"}
@@ -55,4 +57,10 @@ Also $-K = \sum D_i \sim 2S + (a+2)F$.
 $\FF_0$ has rays $(\pm 1, 0), (0, \pm 1)$, a product fan, so $\FF_0 = \PP^1 \times \PP^1$, the smooth quadric in $\PP^3$.
 $\FF_1$ is $\PP^2$ blown up at a point, with $D_2$ the exceptional curve of self-intersection $-1$.
 For $a \geq 2$ the surface is not Fano: $-K \cdot D_2 = 2 - a \leq 0$.
+Every $\FF_a$ is smooth, for all $a \geq 0$, since each maximal cone has determinant $\pm 1$.
+:::
+
+::: {.example title="The Segre embedding of $\FF_0$"}
+The Segre embedding $\PP^1 \times \PP^1 \to \PP^3$, $([a:b],[c:d]) \mapsto [ac : ad : bc : bd]$, has image $V(xw - yz)$.
+Its four monomials have exponent vectors $(1,0,1,0)$, $(1,0,0,1)$, $(0,1,1,0)$, $(0,1,0,1)$ in the variables $a, b, c, d$, the vertices of a square, and the affine cone over the image is the affine toric variety $V(xw - yz) \subseteq \CC^4$ of the cone over that square.
 :::
