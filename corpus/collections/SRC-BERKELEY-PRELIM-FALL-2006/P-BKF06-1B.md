@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-1B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 1B
+title: Entire functions with $\lvert f(z^2)\rvert\le2\lvert f(z)\rvert$ are constant
 classification:
   areas: [prelim]
   topics: []

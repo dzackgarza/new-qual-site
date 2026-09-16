@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-6A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 6A
+title: Irreducibility of $x^p-x+1$ over $\mathbb F_p$
 classification:
   areas: [prelim]
   topics: []

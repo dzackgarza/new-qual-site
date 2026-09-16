@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-4A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 4A
+title: Finite integral domains are fields
 classification:
   areas: [prelim]
   topics: []

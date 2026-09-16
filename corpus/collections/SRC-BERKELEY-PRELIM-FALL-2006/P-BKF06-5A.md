@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-5A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 5A
+title: The Volterra integration operator on $C^0[0,1]$ has no eigenvectors
 classification:
   areas: [prelim]
   topics: []

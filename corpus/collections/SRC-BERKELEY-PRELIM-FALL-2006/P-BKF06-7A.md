@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-7A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 7A
+title: The equation $1+z+az^n=0$ has a root in $\lvert z\rvert\le2$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-3B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 3B
+title: Continuity of $x\mapsto\max_{y\in[0,1]}f(x,y)$
 classification:
   areas: [prelim]
   topics: []

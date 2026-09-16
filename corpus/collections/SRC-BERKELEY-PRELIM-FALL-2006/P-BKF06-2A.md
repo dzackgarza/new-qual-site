@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-2A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 2A
+title: Exponential of a $2\times2$ integer matrix with eigenvalues $1$ and $2$
 classification:
   areas: [prelim]
   topics: []

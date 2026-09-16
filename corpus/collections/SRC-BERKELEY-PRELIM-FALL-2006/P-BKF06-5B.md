@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-5B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 5B
+title: Entire functions determined by their integrals against $(\sin z)^{-m}$
 classification:
   areas: [prelim]
   topics: []

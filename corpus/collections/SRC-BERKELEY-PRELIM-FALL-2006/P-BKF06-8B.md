@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-8B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 8B
+title: Simultaneous diagonalization of a Hermitian and a positive-definite matrix
 classification:
   areas: [prelim]
   topics: []

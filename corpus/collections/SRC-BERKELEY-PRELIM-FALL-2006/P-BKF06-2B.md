@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-2B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 2B
+title: Linear independence of the monomials in $C^0[0,1]$
 classification:
   areas: [prelim]
   topics: []

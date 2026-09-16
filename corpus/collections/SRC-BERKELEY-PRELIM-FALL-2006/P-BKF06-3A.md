@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-3A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 3A
+title: Analytic continuation of $\sum\binom{2n}{n}z^n$ to $z=-2$
 classification:
   areas: [prelim]
   topics: []

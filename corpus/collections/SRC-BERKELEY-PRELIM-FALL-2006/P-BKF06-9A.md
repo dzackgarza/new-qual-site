@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-9A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 9A
+title: Fields with finitely generated additive group are finite
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-6B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 6B
+title: Global fixed points of actions of the nonabelian group of order $21$
 classification:
   areas: [prelim]
   topics: []

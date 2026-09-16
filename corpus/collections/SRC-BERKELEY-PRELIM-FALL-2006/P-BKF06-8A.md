@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-8A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 8A
+title: Kernel, image and cokernel of a $3\times3$ integer matrix
 classification:
   areas: [prelim]
   topics: []

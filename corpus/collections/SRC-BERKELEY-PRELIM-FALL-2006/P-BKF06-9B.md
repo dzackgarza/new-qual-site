@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-9B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 9B
+title: Convergence of the iteration $z_{n+1}=1+1/z_n$
 classification:
   areas: [prelim]
   topics: []

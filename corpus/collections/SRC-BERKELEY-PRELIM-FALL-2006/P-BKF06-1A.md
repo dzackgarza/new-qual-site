@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-1A
 kind: problem
-title: Berkeley Fall 2006 prelim problem 1A
+title: Fourth derivative of $x/\sin x$ at $0$
 classification:
   areas: [prelim]
   topics: []

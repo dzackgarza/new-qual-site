@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-7B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 7B
+title: Uniform limits of continuous maps between metric spaces are continuous
 classification:
   areas: [prelim]
   topics: []

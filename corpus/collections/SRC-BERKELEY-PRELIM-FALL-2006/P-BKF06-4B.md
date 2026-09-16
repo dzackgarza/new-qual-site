@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-4B
 kind: problem
-title: Berkeley Fall 2006 prelim problem 4B
+title: Irreducibility of $f(x^3)$ when a root of $f$ has no cube root
 classification:
   areas: [prelim]
   topics: []
