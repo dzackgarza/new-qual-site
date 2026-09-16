@@ -2,9 +2,9 @@
 schema: qual/card@1
 id: FF-JXE7U
 kind: fact
-title: $\mathrm{Hom}_R(R,A)\cong A$
+title: $\Hom_R(R,A)\cong A$
 prompts:
-- Prove $\mathop{\mathrm{Hom}}_R(R, A) \cong A$.
+- What is $\mathop{\mathrm{Hom}}_R(R, A)$ for a left $R$-module $A$?
 classification:
   areas:
   - topology
@@ -16,9 +16,6 @@ review: draft
 ---
 
 ::: {.fact}
-Take the map $\Phi$ where $f\mapsto f(1)$,
-
-Surjects by defining $f_a(1) \coloneqq a$ for any $a\in A$ and extending by $f_a(n) \coloneqq na$
-
-Injects: if $f(1) = g(1) = a$ then $f(n) \coloneqq na$ and $g(n) \coloneqq na$ so $f\equiv g$.
+Let $R$ be a ring with $1$ and $A$ a left $R$-module.
+The map $\Hom_R(R, A)\to A$, $f\mapsto f(1)$, is an isomorphism of abelian groups, with inverse sending $a\in A$ to the homomorphism $r\mapsto ra$; if $R$ is commutative, it is an isomorphism of $R$-modules.
 :::
