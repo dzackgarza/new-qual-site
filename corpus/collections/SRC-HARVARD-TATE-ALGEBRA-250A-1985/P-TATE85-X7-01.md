@@ -9,10 +9,18 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed part (I) from the page headed X^7 - 7X + 3 in Tate_Galois_Theory_Problems.pdf; the OCR had glued math delimiters to words and dropped TeX into prose.
 ---
 
 ::: {.problem}
-(I) Suppose$f ( X ) \in \mathbb { Z } [ X ]$is monic irreducible of degree 7, has a square discriminant, and has exactly three real roots. Prove that$G _ { f }$is isomorphic either to$\boldsymbol { A } _ { 7 }$or to the group$G _ { 1 6 8 } = \mathrm { G L } ( 3 , \mathbb { F } _ { 2 } ) \approx \mathrm { P S L } ( 2 , \mathbb { F } _ { 7 } )$. Note that$G _ { 1 6 8 }$is isomorphic to a subgroup of${ \cal S } _ { 7 } ,$in fact of$\boldsymbol { A } _ { 7 }$, via the action of$G _ { 1 6 8 } = \mathrm { G L _ { 3 } ( F _ { 2 } ) }$on the 7 non-zero vectors in$\mathbb { F } _ { 2 } ^ { 3 }$
+Suppose $f(X) \in \mathbb{Z}[X]$ is monic irreducible of degree $7$, has a square discriminant, and has exactly three real roots.
+Prove that $G_f$ is isomorphic either to $A_7$ or to the group $G_{168} = \mathrm{GL}(3, \mathbb{F}_2) \cong \mathrm{PSL}(2, \mathbb{F}_7)$.
+Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via the action of $G_{168} = \mathrm{GL}_3(\mathbb{F}_2)$ on the $7$ nonzero vectors in $\mathbb{F}_2^3$.
 
-(By considering Sylow subgroups, especially the ones for 7, this can be done from scratch without too much trouble. But it is even easier if you know that the only non-abelian simple groups of order$< 1 0 0 0$are$A _ { 5 }$of order$6 0 = 2 ^ { 2 } \cdot 3 \cdot 5 , G _ { 1 6 8 }$of order$1 6 8 = 2 ^ { 3 } \cdot 3 \cdot 7 , \mathcal { A } _ { 6 }$of order$3 6 0 = 2 ^ { 3 } \cdot 3 ^ { 2 } \cdot 5$7$\mathrm { P S L } ( 2 , \mathbb { F } _ { 8 } )$of order$5 0 4 = 2 ^ { 3 } \cdot 3 ^ { 2 } \cdot 7 .$PSL$( 2 , \mathbb { F } _ { 1 1 } )$of order$6 6 0 = 2 ^ { 2 } \cdot 3 \cdot 5 \cdot 1 1 )$
+(By considering Sylow subgroups, especially the ones for $7$, this can be done from scratch without too much trouble.
+But it is even easier if you know that the only non-abelian simple groups of order $< 1000$ are $A_5$ of order $60 = 2^2 \cdot 3 \cdot 5$, $G_{168}$ of order $168 = 2^3 \cdot 3 \cdot 7$, $A_6$ of order $360 = 2^3 \cdot 3^2 \cdot 5$, $\mathrm{PSL}(2, \mathbb{F}_8)$ of order $504 = 2^3 \cdot 3^2 \cdot 7$, and $\mathrm{PSL}(2, \mathbb{F}_{11})$ of order $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$.)
 :::
