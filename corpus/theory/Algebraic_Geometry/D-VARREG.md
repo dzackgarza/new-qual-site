@@ -36,6 +36,19 @@ For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $
 \]
 :::
 
+::: {.proposition title="Sections as an intersection in the function field"}
+Let $X$ be a variety.
+For every nonempty open $U \subseteq X$, restriction identifies $\OO_X(U)$ with a subring of $k(X)$, and if $U = \bigcup_i U_i$ with each $U_i$ nonempty and open, then
+\[
+\OO_X(U) = \bigcap_i \OO_X(U_i) \quad \text{inside } k(X) .
+\]
+In particular, for an ideal $\mfa \neq 0$ of $k[x_1,\ldots,x_n]$, the open set $\AA^n \sm V(\mfa) = \bigcup_{0 \neq f \in \mfa} D(f)$ has
+\[
+\OO_{\AA^n}(\AA^n \sm V(\mfa)) = \bigcap_{0 \neq f \in \mfa} k[x_1,\ldots,x_n]\invert{f} \subseteq k(x_1,\ldots,x_n) .
+\]
+[@Har10a, §I.3]
+:::
+
 ::: {.remark}
 The condition is *locally* a quotient, not globally one, and the gap between those two is the whole content: on $\PP^n$ every function is locally a ratio of forms of equal degree and there are no nonconstant global ones, and the standard affine example is $X = V(xw - yz) \subseteq \AA^4$, where $x/y = z/w$ is regular on a union of two opens but is not a single quotient on it.
 

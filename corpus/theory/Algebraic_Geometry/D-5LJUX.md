@@ -28,15 +28,26 @@ of irreducible closed subsets.
 :::
 
 ::: {.proposition}
-For an affine variety $X$ over $k = \bar{k}$,
-\[
-\dim X = \krulldim k[X] = \trdeg_k k(X) .
-\]
+If $Y \subseteq \AA^n$ is an affine algebraic set, then $\dim Y = \krulldim A(Y)$.
+[@Har10a, Proposition I.1.7]
+:::
+
+::: {.theorem}
+Let $k$ be any field and $B$ a finitely generated $k$-algebra that is a domain.
+Then $\krulldim B = \trdeg_k \Frac B$.
+[@Har10a, Theorem I.1.8A]
+:::
+
+::: {.proposition}
+If $Y$ is a quasi-affine variety, then $\dim Y = \dim \closure{Y}$, where $\closure{Y}$ is the closure of $Y$ in $\AA^n$.
+[@Har10a, Proposition I.1.10]
 :::
 
 ::: {.remark}
-Three descriptions, and a computation usually wants the third: the dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
-
-The chain definition is the one to quote when asked for the definition, and the Krull statement is the bridge that makes dimension theory of rings available.
-The identification with transcendence degree is where algebraic closure is used, and it fails without it.
+Hence for an affine variety $X$ over $k$,
+\[
+\dim X = \krulldim A(X) = \trdeg_k k(X) ,
+\]
+and in particular $\dim \AA^n = n$ [@Har10a, Proposition I.1.9].
+A computation usually wants the last description: the dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
 :::
