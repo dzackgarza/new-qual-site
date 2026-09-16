@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-9A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 9A
+title: Bell numbers grow slower than $n!$
 classification:
   areas:
   - prelim

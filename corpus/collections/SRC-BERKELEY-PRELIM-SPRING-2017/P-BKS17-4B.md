@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-4B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 4B
+title: Existence and uniqueness of polynomial interpolation
 classification:
   areas:
   - prelim

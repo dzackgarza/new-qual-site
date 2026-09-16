@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-6B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 6B
+title: Low-rank approximation of the matrix $f(t_is_j)$ for analytic $f$
 classification:
   areas:
   - prelim

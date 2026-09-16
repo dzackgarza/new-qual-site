@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-9B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 9B
+title: Elements of order 20 and 18 in $S_9$
 classification:
   areas:
   - prelim

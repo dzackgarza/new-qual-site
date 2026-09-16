@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-1B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 1B
+title: Functions whose derivative equals every symmetric difference quotient
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-6A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 6A
+title: $\det e^A=e^{\operatorname{tr}A}$
 classification:
   areas:
   - prelim

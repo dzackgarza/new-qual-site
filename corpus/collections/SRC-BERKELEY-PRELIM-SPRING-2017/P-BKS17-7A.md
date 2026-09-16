@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-7A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 7A
+title: Orthogonal matrices mapping one vector to another of equal norm
 classification:
   areas:
   - prelim

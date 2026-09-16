@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-3A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 3A
+title: Positive functions satisfying $\int_x^y f(x)f(y)/f(t)^2\,dt=\sin(y-x)$
 classification:
   areas:
   - prelim

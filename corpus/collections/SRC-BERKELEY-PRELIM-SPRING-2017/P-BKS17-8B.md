@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-8B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 8B
+title: Structure of $(\mathbb Z/1000000\mathbb Z)^\times$
 classification:
   areas:
   - prelim

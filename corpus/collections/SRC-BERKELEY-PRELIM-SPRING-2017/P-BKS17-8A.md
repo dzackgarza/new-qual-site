@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-8A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 8A
+title: Power sums $\sum_{k=0}^n k^p$ are polynomials of degree $p+1$ in $n$
 classification:
   areas:
   - prelim

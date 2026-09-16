@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-1A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 1A
+title: $\int_{-\infty}^\infty\sin x/x\,dx=\int_{-\infty}^\infty\sin^2x/x^2\,dx$
 classification:
   areas:
   - prelim

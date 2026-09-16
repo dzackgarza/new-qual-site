@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-2A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 2A
+title: Solutions of $f(2x)=2f(x)$ differentiable at the origin are linear
 classification:
   areas:
   - prelim

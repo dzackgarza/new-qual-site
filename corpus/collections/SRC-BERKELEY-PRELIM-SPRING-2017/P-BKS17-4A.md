@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-4A
 kind: problem
-title: Berkeley Spring 2017 prelim problem 4A
+title: Legendre's relation for the Weierstrass zeta function
 classification:
   areas:
   - prelim

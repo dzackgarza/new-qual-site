@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-3B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 3B
+title: Maximal degree of exactness and positive weights of quadrature rules
 classification:
   areas:
   - prelim

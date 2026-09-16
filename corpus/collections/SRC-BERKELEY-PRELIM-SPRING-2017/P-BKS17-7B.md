@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-7B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 7B
+title: Upper triangular solutions of $E^TR+R^TE=A$
 classification:
   areas:
   - prelim

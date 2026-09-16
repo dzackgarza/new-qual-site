@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-2B
 kind: problem
-title: Berkeley Spring 2017 prelim problem 2B
+title: A continuous function with vanishing moments on $[-1,1]$ is zero
 classification:
   areas:
   - prelim
