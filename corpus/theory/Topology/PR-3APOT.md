@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-3APOT
 kind: proposition
-title: $\pi_1$ of a wedge
+title: $\pi_1$ of a wedge sum
 classification:
   areas:
   - topology
@@ -13,8 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\pi_1(X \vee Y) = \pi_1(X) \ast \pi_1(Y)
-.\]
+::: {.proposition}
+Let $(X, x_0)$ and $(Y, y_0)$ be path-connected pointed spaces such that $x_0$ and $y_0$ are deformation retracts of open neighborhoods in $X$ and $Y$ respectively.
+Then the inclusions induce an isomorphism
+$$
+\pi_1(X)\ast\pi_1(Y)\xrightarrow{\ \sim\ }\pi_1(X \vee Y)
+$$
+[@Hat02, Example 1.21, p. 43].
 :::
