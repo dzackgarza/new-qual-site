@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-FO27T
 kind: theorem
-title: Bounded inverse
+title: Bounded inverse theorem
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X, Y\in \Banach$ and $T:X\to Y$ is a bijective continuous operator, then $T\inv$ is continuous and thus $T$ is a homeomorphism.
+Let $X$ and $Y$ be [[D-BG455|Banach spaces]] and let $T\colon X\to Y$ be a continuous linear bijection.
+Then the linear map $T\inv\colon Y\to X$ is continuous, so $T$ is a homeomorphism.
 :::
