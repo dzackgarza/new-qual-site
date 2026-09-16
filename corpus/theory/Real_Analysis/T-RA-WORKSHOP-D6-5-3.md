@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-3
 kind: theorem
-title: 'Theorem 5.3: Reduction of a Stieltjes integral to a Riemann integral'
+title: Reduction of a Stieltjes integral to a Riemann integral
 classification:
   areas:
   - real-analysis
@@ -14,6 +14,9 @@ review: draft
 ---
 
 ::: {.theorem}
-Assume $\alpha$ increases monotonically and $\alpha'\in\mathcal R$ on $[a,b]$ with $f:[a,b]\to\mathbb R$ bounded.
-Then, $f\in\mathcal R(\alpha)$ if and only if $f\alpha'\in\mathcal R$ and, in that case, $$\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx.$$
+Let $a<b$, let $\alpha\colon[a,b]\to\RR$ be monotonically increasing and differentiable with $\alpha'$ Riemann integrable on $[a,b]$, and let $f\colon[a,b]\to\RR$ be bounded.
+Then $f\in\mathcal R(\alpha)$ on $[a,b]$ if and only if $f\alpha'$ is Riemann integrable on $[a,b]$, and in that case
+$$
+\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx.
+$$
 :::
