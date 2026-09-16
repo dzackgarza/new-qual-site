@@ -47,8 +47,9 @@ isolate. If a commit sweeps in a sibling's concurrent edit, that is a wrong comm
 message rather than lost work — `git commit --amend`, or commit the paths you meant
 with an explicit pathspec as `QUAL-07` already requires.
 
-Worktrees left over from the previous rule are retired under `QUAL-09`; see
-[AGENTS.md](AGENTS.md#one-checkout-one-branch) for what each reading establishes.
+No worktree from the previous rule remains. If one reappears, retire it under
+`QUAL-09`; see [AGENTS.md](AGENTS.md#one-checkout-one-branch) for what each
+reading establishes.
 
 ## Repository structure
 
@@ -708,7 +709,8 @@ required properties. Combining both in one sentence hides that logical order.
 **Bad:** “This theorem is included because the audit requires it.”
 
 **Good:** State the theorem and its hypotheses. Record audit or authoring
-information in this guide or in the repository work queues.
+information in [COMPLAINTS.md](COMPLAINTS.md), [TODO.md](TODO.md), or the
+repository work queues, as `QUAL-08` requires.
 
 Readers need mathematical reasons for mathematical claims. Internal workflow,
 review status, and implementation reasons belong in contributor documentation.
@@ -721,9 +723,8 @@ introduced earlier.”
 **Good:** “The definition of a scheme uses a locally ringed space. Cohomology
 then assigns groups to sheaves on a scheme.”
 
-A reading order is useful only when it names a dependency, prerequisite, or
-explicit exam strategy. Historical chronology and an author’s claim about what
-can be understood do not establish either one. State the mathematical relation
+A reading order is useful only when it names a dependency or prerequisite.
+Historical chronology and an author’s claim about what can be understood do not establish either one. State the mathematical relation
 that requires the order, or let the navigation express an editorial choice.
 
 ### `PROSE-13`: Do not divide readers by imagined motive
@@ -1526,6 +1527,7 @@ the main sentence or delete the parenthetical.
 
 The following policy corpus applies to authored mathematics in this repository.
 It is the detailed source for the concise rules above.
+
 ## Prose (`PR-*`)
 
 Bad prose on its own terms. The fix is a rewrite.
@@ -1987,9 +1989,6 @@ with pullbacks and terminal object $*$.
 :::
 ```
 
-The declared block classes are listed at the bottom of
-`writing/.book/_quarto.yml`. Add a class there before using it.
-
 ## Cross-references (`XREF-*`)
 
 ### `XREF-1`: `\ref` and `\longref` only
@@ -2029,7 +2028,7 @@ truth. If a work is not in Zotero, add it there first.
 
 ### `CITE-2`: No inline URLs
 
-**Banned:** an inline URL to arXiv, a DOI, or nLab. The docs gate rejects it.
+**Banned:** an inline URL to arXiv, a DOI, or nLab.
 
 ## Diagrams (`DIA-*`)
 
@@ -2234,9 +2233,7 @@ Terminology failures have three recurring forms:
 - **Colliding overload.** A standard word such as "kernel", "core", or
   "fiber" is reused with a project-management or implementation meaning.
 
-The citation-backed recurring inventory lives in
-`.agents/references/terminology-dictionary.md`. The following replacements
-apply to this book:
+The following replacements apply to this book:
 
 | Term to avoid | Required mathematical statement |
 | --- | --- |
@@ -5980,7 +5977,7 @@ the permutation check; if not much harder, the general is the definition.
 
 ### `PR-72`: Premature specialization as the definition — signature $(p,q,r)$ for $F$ ordered finite-dimensional, and $\operatorname{sig}(L)$ for $L\in\mathbf{Lat}_R$ — and the explicit scope that was owed
 
-The block "`$F$ ordered, $V$ finite-dimensional, $p:=\max\dim U$ with
+The block "$F$ ordered, $V$ finite-dimensional, $p:=\max\dim U$ with
 $b_{|U}>0$" is *sound* for $F$ a field — every field has IBN, so
 $\dim_FU$ is well-defined and $\{\dim U\mid b_{|U}>0\}\subseteq
 \{0,\dots,n\}$ has a $\max$ — and Sylvester's law makes $(p,q,r)$ an
