@@ -22,10 +22,3 @@ $$
 $$
 where $\norm{f}_\infty$ is the [[D-3PVRB|essential supremum]] of $\abs{f}$.
 :::
-
-::: {.proof}
-If $\mu(X)=0$, every $\norm{f}_p$ and $\norm{f}_\infty$ equal $0$; assume $\mu(X)>0$.
-Since $\abs{f}\leq\norm{f}_\infty$ almost everywhere, $\norm{f}_p\leq\norm{f}_\infty\,\mu(X)^{1/p}$, so $\limsup_{p\to\infty}\norm{f}_p\leq\norm{f}_\infty$.
-For $0\leq M<\norm{f}_\infty$, the set $S\coloneqq\theset{\abs{f}>M}$ has $\mu(S)>0$, and $\norm{f}_p\geq M\mu(S)^{1/p}\to M$.
-Hence $\liminf_{p\to\infty}\norm{f}_p\geq M$ for every such $M$, which gives the claim, including the case $\norm{f}_\infty=\infty$.
-:::
