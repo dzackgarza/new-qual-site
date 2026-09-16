@@ -139,5 +139,4 @@ source:
     year: 2013
 ---
 
-The retained packet names `PS9.1` as due on November 14, 2013, but contains no statement or locator for that problem.
-No mathematical statement is invented for the missing item.
+The packet lists `PS9.1` as due November 14, 2013, but gives no statement for it.
