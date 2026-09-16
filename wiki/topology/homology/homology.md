@@ -104,7 +104,7 @@ Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A
 
 [[FF-5LPTQ]]
 
-[[T-3VUOH]]
+[[D-FAIJX]]
 
 ::: {.example title="Homology of a connected sum"}
 For connected closed $n$-manifolds $M$ and $N$, $M\# N = (M\sm D)\union_{S^{n-1}} (N\sm D')$ for open $n$-balls $D\subseteq M$ and $D'\subseteq N$.

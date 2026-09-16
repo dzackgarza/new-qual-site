@@ -9,9 +9,7 @@ classification:
   topics:
   - Mayer-Vietoris
   - Homology
-relations:
-- kind: related-to
-  target: T-3VUOH
+relations: []
 review: draft
 ---
 
@@ -32,7 +30,7 @@ $$
 :::
 
 ::: {.theorem}
-In the situation of the definition, $\del$ is well defined and the Mayer--Vietoris sequence is exact.
+In the situation of the definition, $\del$ is well defined and the Mayer--Vietoris sequence is exact [@Hat02, §2.2, p. 149].
 :::
 
 ::: {.remark}
@@ -47,8 +45,4 @@ and $\del$ is its connecting homomorphism; since $\del z = 0$, the chain $\del x
 
 ::: {.remark}
 When $A\cap B\neq\emptyset$ there is an exact sequence of the same form in reduced homology, and there is an exact sequence for singular cohomology with the arrows reversed.
-:::
-
-::: {.concept}
-See [@Hat02, §2.2, p. 149].
 :::

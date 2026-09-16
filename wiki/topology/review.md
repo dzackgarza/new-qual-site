@@ -39,7 +39,7 @@ Proved in [[topology/fundamental-group/index|Fundamental group]].
 
 [[T-FBMYQ]]
 
-[[T-3VUOH]]
+[[D-FAIJX]]
 
 [[T-TZ3X7]]
 
