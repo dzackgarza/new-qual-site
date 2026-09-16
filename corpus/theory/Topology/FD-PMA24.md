@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-PMA24
 kind: definition
-title: 'Definition: Limit Point Compactness'
+title: Limit point compact space
 prompts:
 - What does it mean for a space to be limit point compact?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-Every infinite subset has a limit point.
+A topological space $X$ is \dfn{limit point compact} if every infinite subset of $X$ has a [[D-Y6JAS|limit point]] in $X$.
 :::
