@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BCNUH
 kind: definition
-title: Topological Embedding
+title: Topological embedding
 classification:
   areas:
   - topology
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-A topological **embedding** is a continuous map $f:X\to Y$ which is a homeomorphism onto its image, i.e. $X\cong_{\Top} f(X)$.
+Let $X$ and $Y$ be topological spaces.
+A continuous map $f\colon X\to Y$ is a \dfn{topological embedding} if it is injective and the map $X\to f(X)$, $x\mapsto f(x)$, is a [[D-9KQZT|homeomorphism]], where $f(X)$ carries the [[D-LB2LS|subspace topology]].
 :::
