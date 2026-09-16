@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-MBUKG
 kind: fact
-title: Groups of Order 18
+title: Groups of order 18
 prompts:
 - What are the groups of order 18?
 classification:
@@ -16,15 +16,12 @@ review: draft
 ---
 
 ::: {.fact}
-2 Abelian, 3 Nonabelian
+Up to isomorphism there are five groups of order $18$.
+The abelian ones are $\ZZ/18\ZZ$ and $(\ZZ/3\ZZ)^2\times\ZZ/2\ZZ$, and the nonabelian ones are
 
-1. $\ZZ/18\ZZ$
+1. the [[D-4R2Z5|dihedral group]] $D_9$ of order $18$,
 
-2. $(\ZZ/3\ZZ)^2\times \ZZ/2\ZZ$
+2. $S_3\times\ZZ/3\ZZ$,
 
-3. $D_9$
-
-4. $S_3 \cross \ZZ/3\ZZ$
-
-5. The generalized dihedral group $(\ZZ/3\ZZ)^2 \semidirect \ZZ/2\ZZ$, with the order-two factor acting by inversion
+3. the generalized dihedral group $(\ZZ/3\ZZ)^2\rtimes\ZZ/2\ZZ$, with the generator of $\ZZ/2\ZZ$ acting by inversion.
 :::

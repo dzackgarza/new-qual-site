@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-JKCAM
 kind: fact
-title: Groups of Order 20
+title: Groups of order 20
 prompts:
 - What are the groups of order 20?
 classification:
@@ -16,15 +16,15 @@ review: draft
 ---
 
 ::: {.fact}
-2 Abelian, 3 Nonabelian
+Up to isomorphism there are five groups of order $20$.
+The abelian ones are $\ZZ/20\ZZ$ and $(\ZZ/2\ZZ)^2\times\ZZ/5\ZZ$, and the nonabelian ones are
 
-1. $\ZZ/20\ZZ$
+1. the [[D-4R2Z5|dihedral group]] $D_{10}$ of order $20$,
 
-2. $(\ZZ/2\ZZ)^2\times \ZZ/5\ZZ$
+2. $\ZZ/5\ZZ\rtimes\ZZ/4\ZZ$ with $\ZZ/4\ZZ$ acting faithfully, which is the affine group $\operatorname{AGL}_1(\FF_5)$,
 
-3. $D_{10}$
-
-4. $\ZZ/5\ZZ \semidirect \ZZ/4\ZZ$ with $\ZZ/4\ZZ$ acting faithfully, the affine group $\mathrm{AGL}_1(\FF_5)$
-
-5. The dicyclic group of order 20, $\gens{a, b \suchthat a^{10}, \, b^2 a^{-5}, \, bab\inv a}$
+3. the dicyclic group of order $20$,
+$$
+\gens{a,b\suchthat a^{10}=1,\ b^2=a^5,\ bab^{-1}=a^{-1}}.
+$$
 :::
