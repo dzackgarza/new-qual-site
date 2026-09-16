@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A sequence of functions $f_n$ is said to converge **locally uniformly** on $\Omega \subseteq \CC$ iff $f_n\to f$ uniformly on every compact subset $K \subseteq \Omega$.
+Let $\Omega\subseteq\CC$ be open and let $f_n,f\colon\Omega\to\CC$ for $n\ge1$.
+The sequence $(f_n)$ \dfn{converges locally uniformly} to $f$ on $\Omega$ if $f_n\to f$ [[D-YZC3C|uniformly]] on every [[D-EILKJ|compact]] subset $K\subseteq\Omega$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-5Y4MC
 kind: definition
-title: Equicontinuous Family
+title: Equicontinuous family
 classification:
   areas:
   - complex-analysis
@@ -14,9 +14,14 @@ review: draft
 ---
 
 ::: {.definition}
-A family of functions $f_n$ is **equicontinuous** iff for every $\eps$ there exists a $\delta = \delta(\eps)$ (not depending on $n$ or $f_n$) such that $\abs{x-y}<\delta \implies \abs{f_n(x) - f_n(y)} < \eps$ for all $n$.
+Let $S\subseteq\CC$ and let $(f_n)_{n\ge1}$ be a sequence of functions $f_n\colon S\to\CC$.
+The family $\{f_n\}$ is \dfn{equicontinuous} on $S$ if for every $\varepsilon>0$ there exists $\delta>0$ such that
+$$
+\abs{f_n(x)-f_n(y)}<\varepsilon\qquad\text{for all } n\ge1 \text{ and all } x,y\in S \text{ with } \abs{x-y}<\delta.
+$$
+:::
 
 ::: {.remark}
-Rudin, *Principles of Mathematical Analysis*, 3rd ed., Definition 7.22.
-:::
+The number $\delta$ depends only on $\varepsilon$, not on $n$, $x$, or $y$.
+This is Definition 7.22 of Rudin, *Principles of Mathematical Analysis*, 3rd ed., stated there for families of complex functions on a subset of a metric space.
 :::

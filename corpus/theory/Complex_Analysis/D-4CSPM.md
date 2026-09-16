@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-4CSPM
 kind: definition
-title: Principal branch and exponential
+title: Principal branch of the logarithm and of $z^\alpha$
 classification:
   areas:
   - complex-analysis
@@ -12,16 +12,16 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-Take $\CC$ and delete $\RR^{\leq 0}$ to obtain the **principal branch** of the logarithm.
-Equivalently, this is define for all $z=re^{i\theta}$ where $\theta \in (-\pi, \pi)$.
-
-Here the log is defined as
-\[
-\Log(z) \da \log(r) + i\theta && \abs{\theta} < \pi
-.\]
-Similarly define
-\[
-z^{\alpha} \da e^{\alpha \Log(z)}
-.\]
+::: {.definition}
+Let $\Omega\coloneqq\CC\setminus(-\infty,0]$.
+Every $z\in\Omega$ can be written uniquely as $z=re^{i\theta}$ with $r>0$ and $\theta\in(-\pi,\pi)$.
+The \dfn{principal branch of the logarithm} is the function $\Log\colon\Omega\to\CC$ given by
+$$
+\Log(z)\coloneqq\log r+i\theta,
+$$
+where $\log r$ is the real natural logarithm.
+For $\alpha\in\CC$, the \dfn{principal branch of $z^\alpha$} is the function on $\Omega$ given by
+$$
+z^{\alpha}\coloneqq e^{\alpha\Log(z)}.
+$$
 :::
