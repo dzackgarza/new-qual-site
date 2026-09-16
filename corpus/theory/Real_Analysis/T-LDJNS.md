@@ -16,7 +16,7 @@ review: draft
 ::: {.theorem}
 Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f_n\colon X\to[0,\infty]$ be [[D-DHFN4|measurable]] for $n\geq1$.
 
-1. (Fatou's lemma)
+1. (Fatou's lemma [@Fol13, §2.3])
 $$
 \liminf_{n\to\infty} \int_X f_n\dmu \geq \int_X \liminf_{n\to\infty} f_n\dmu .
 $$
@@ -25,15 +25,6 @@ $$
 $$
 \limsup_{n\to\infty} \int_X f_n\dmu \leq \int_X \limsup_{n\to\infty} f_n\dmu .
 $$
-:::
-
-::: {.proof}
-Part (1) is Fatou's lemma.
-For part (2), the functions $g-f_n$ are nonnegative and measurable, and part (1) gives
-$$
-\int_X g\dmu-\limsup_{n\to\infty}\int_X f_n\dmu=\liminf_{n\to\infty}\int_X(g-f_n)\dmu\geq\int_X\liminf_{n\to\infty}(g-f_n)\dmu=\int_X g\dmu-\int_X\limsup_{n\to\infty}f_n\dmu .
-$$
-Subtracting the finite number $\int_X g\dmu$ gives the inequality.
 :::
 
 ::: {.example}
