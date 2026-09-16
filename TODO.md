@@ -74,7 +74,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 - **`ag-notes-migration`**. **Needs:** none.
   Work [`queues/H-ag-notes-migration.md`](queues/H-ag-notes-migration.md) and its section queues until no row is `missing`, `partial`, `source-repair` or `unreviewed`. **Acceptance:** every row is `migrated`, `reference-only` or `private`, each with its source-to-target evidence.
 
-- **`tooling-remediation`**. **Needs:** none.
+- **`tooling-remediation`**. **Closed 2026-09-16.** Red proofs `6acf8f062`; `1bf4b1971` renders `\dfn{term}` as `<dfn class="qual-dfn">` and fails `check` on dropped raw TeX and on macros neither the preamble nor MathJax defines (#87); `6a94a62a3` reports every check error in one run (#89); `3a652a559` rejects repeated front-matter keys and refuses `just commit-card` from a secondary worktree; `d7326c0b4` runs the pinned Pandoc by absolute path; `10ca1820d` derives the crawler's areas from the wiki subject registry. **Needs:** none.
   Repair the observed tooling defects that let broken content pass or misrender: inline `\dfn{term}` renders as a styled `<dfn>` element instead of being dropped; issue #87 (undefined macros in authored prose pass `just check`); issue #89 (`qualc check` stops at the first error); card validation rejects duplicate YAML mapping keys; authoring commands use the supported Pandoc rather than the host one; the review crawler covers every registered area, including `algebraic-geometry`; and `just commit-card` refuses to run from a secondary worktree, as `QUAL-09` requires.
   **Acceptance:** each defect is reproduced by a failing test first and fixed at its owner, and the corresponding issues and complaint entries are closed.
 

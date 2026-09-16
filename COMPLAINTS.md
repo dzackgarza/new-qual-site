@@ -52,16 +52,3 @@ Complete the named mathematical items and resolve damaged source fragments befor
 The queue records work; it does not perform the migration.
 
 ## Workflow and rendering papercuts
-
-### Direct `.venv` authoring commands can see an unsupported host Pandoc
-
-- **Object and evidence:** during the final read-only sweep of the assigned range, `.venv/bin/python -m qualc.authoring unsolved <collection>` failed inside `qualc.pandoc_batch` because the process found host Pandoc 3.1.3 while the repository requires Pandoc 3.10 or newer.
-  The same authoring command succeeds through the repository's normal login-shell `uv run` route.
-
-- **Impact:** invoking the repository interpreter directly is insufficient for authoring commands that depend on the repository's Pandoc toolchain; a seemingly valid local environment therefore fails before reading any card content.
-  No corpus file was changed by the failed sweep.
-
-- **Rechecked 2026-09-16:** `/usr/bin/pandoc` is still 3.1.3 and `~/.local/bin/pandoc` is 3.10.2; `qualc.pandoc_batch` resolves `pandoc` from `PATH`, so a direct invocation whose `PATH` lacks `~/.local/bin` still reaches the unsupported executable.
-
-- **Repair:** use the repository's documented `just`/`uv run` authoring entry points for Pandoc-dependent commands, or make the supported Pandoc executable available inside direct `.venv` invocations if that route is meant to be supported.
-

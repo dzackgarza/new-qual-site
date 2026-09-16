@@ -11,14 +11,12 @@ The mathematical entries are the worklist of the `math-defect-repair` node in [T
 
 - Mathematical entries: 1
 
-- Workflow and rendering papercuts: 2
+- Workflow and rendering papercuts: 1
 
 ## Mathematical entries
 
 - [ ] ag-notes migration omits substantive source content
 
 ## Workflow and rendering papercuts
-
-- [ ] Direct `.venv` authoring commands can see an unsupported host Pandoc
 
 - [ ] MinerU Flash extraction requests fail against the remote service
