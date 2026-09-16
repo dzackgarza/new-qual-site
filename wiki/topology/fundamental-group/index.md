@@ -7,6 +7,6 @@ topics:
 
 # Fundamental group
 
-- [[topology/fundamental-group/compute-pi-1|Compute $\pi_1$]], the four methods and which the space calls for.
+- [[topology/fundamental-group/compute-pi-1|Compute $\pi_1$]]: deformation retracts, van Kampen's theorem, covering spaces, and products.
 
-- [[topology/fundamental-group/theorems|The theorems]], homotopy, van Kampen, and the general theory.
+- [[topology/fundamental-group/theorems|The theorems]]: homotopy, van Kampen's theorem, and the general theory.
