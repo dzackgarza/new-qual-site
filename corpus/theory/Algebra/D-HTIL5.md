@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HTIL5
 kind: definition
-title: Principal Ideal Domain
+title: Principal ideal domain
 classification:
   areas:
   - algebra
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A ring $R$ is a **principal ideal domain** iff every ideal is principal.
+An [[D-QJ3QL|integral domain]] $R$ is a \dfn{principal ideal domain} if every [[D-GOFWL|ideal]] of $R$ is [[D-D7VK2|principal]].
 :::
