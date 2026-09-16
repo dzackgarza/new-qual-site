@@ -68,7 +68,7 @@ H_c^1(\widetilde X)\cong\mathbb Z.
 
 If $g>1$, the universal covering tree has branching. Choose the exhaustion so that each $T_{i+1}$ is obtained by adding a finite layer of adjacent edges. Then the maps
 \[
-\widetilde H^0(\widetilde X-T_i)	o
+\widetilde H^0(\widetilde X-T_i)\to
 \widetilde H^0(\widetilde X-T_{i+1})
 \]
 are split injections: each old complementary component breaks into finitely many new components, and choosing one distinguished descendant in each component gives a splitting. The ranks $c_i-1$ tend to infinity because the tree has infinitely many ends and branching repeats indefinitely. Thus the direct limit is a free abelian group on a countably infinite set of generators.

@@ -55,7 +55,7 @@ Thus $W$ is $A$-invariant.
 Suppose instead that $0\ne cx\in W$. Since $c\ne0$, this implies $x\in W$, so there exists $z\in\mathbb C^n$ with
 \[
 Nz=x,
-\qquad	ext{i.e.}\qquad
+\qquad\text{i.e.}\qquad
 (A-\lambda I)z=x.
 \]
 Then $x$ and $z$ are linearly independent, because if $z=\alpha x$, then

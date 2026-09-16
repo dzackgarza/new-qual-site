@@ -84,7 +84,7 @@ f_2-f_3=x^3-y+z^2-2,
 so substituting the preceding expression for $y$ gives
 \[
 x^3+x^2+z^2=0,
-\qquad	ext{hence}\qquad
+\qquad\text{hence}\qquad
 z^2=-x^2(x+1).
 \]
 Finally, substituting $y=-x^2-2$ into $f_3=0$ gives

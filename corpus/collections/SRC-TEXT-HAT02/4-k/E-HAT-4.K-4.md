@@ -38,7 +38,7 @@ A nondegenerate chord is determined by two parameters: the unoriented line throu
 \]
 Hence the chord space is
 \[
-(S^1\times[-1,1])/igl((\theta,s)\sim(\theta+\pi,-s)\bigr),
+(S^1\times[-1,1])/\bigl((\theta,s)\sim(\theta+\pi,-s)\bigr),
 \]
 which is the standard interval-bundle model of the Möbius band. The boundary \(|s|=1\) consists exactly of the degenerate chords \(\{z,z\}\), so the diagonal copy of \(S^1\) is the boundary circle of the Möbius band. Therefore
 \[

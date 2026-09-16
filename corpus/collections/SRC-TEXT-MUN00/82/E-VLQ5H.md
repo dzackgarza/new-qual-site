@@ -37,7 +37,7 @@ Now let \(a=(a_1,a_2,\ldots)\in\{0,1\}^{\mathbb N}\). Divide \([0,1]\) into inte
 \[
 I_n=[1-2^{-(n-1)},\,1-2^{-n}]
 \]
-accumulating at \(1\). On \(I_n\), let \(f_a\) traverse \(C_n\) once if \(a_n=1\), and stay at \(p\) if \(a_n=0\); set \(f_a(1)=p\). This defines a continuous loop because \(\operatorname{diam}(C_n)	o0\).
+accumulating at \(1\). On \(I_n\), let \(f_a\) traverse \(C_n\) once if \(a_n=1\), and stay at \(p\) if \(a_n=0\); set \(f_a(1)=p\). This defines a continuous loop because \(\operatorname{diam}(C_n)\to0\).
 
 For each \(n\),
 \[

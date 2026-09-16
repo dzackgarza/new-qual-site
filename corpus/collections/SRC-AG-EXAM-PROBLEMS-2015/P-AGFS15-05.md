@@ -122,7 +122,7 @@ with respect to \(v\) is \(1\) at \((0,0)\). Thus \(u\) is a local parameter at 
 \[
 v=u^3\cdot\varepsilon(u)
 \]
-for a unit \(arepsilon(u)\) with \(arepsilon(0)=1\). Hence
+for a unit \(\varepsilon(u)\) with \(\varepsilon(0)=1\). Hence
 \[
 \operatorname{ord}_{P_\infty}(v)=3.
 \]

@@ -33,7 +33,7 @@ The irreducible characters of a direct product are exactly the external tensor p
 \mathrm{std}&2&0&-1
 \end{array}.
 \]
-For \(S_2\), with classes \(1,	au\), the irreducible characters are
+For \(S_2\), with classes \(1,\tau\), the irreducible characters are
 \[
 \begin{array}{c|cc}
 &1&\tau\\ \hline

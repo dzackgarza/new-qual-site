@@ -33,7 +33,7 @@ Choose a unit eigenvector \(q_1\in\mathbb C^n\) of \(A\) for \(\alpha\):
 \[
 Aq_1=\alpha q_1.
 \]
-Because \(eta\) is an eigenvalue of \(A\), \(\overline\beta\) is an eigenvalue of \(A^H\). Choose a unit vector \(q_2\) such that
+Because \(\beta\) is an eigenvalue of \(A\), \(\overline\beta\) is an eigenvalue of \(A^H\). Choose a unit vector \(q_2\) such that
 \[
 A^Hq_2=\overline\beta\,q_2.
 \]
@@ -93,7 +93,7 @@ Since \(q_2^HA=\beta q_2^H\), this equals
 \[
 \beta q_2^Hq_j.
 \]
-By orthonormality this is \(0\) for \(j\ne2\) and \(eta\) for \(j=2\).
+By orthonormality this is \(0\) for \(j\ne2\) and \(\beta\) for \(j=2\).
 :::
 
 <1>5. Therefore \(Q^HAQ\) has the required form

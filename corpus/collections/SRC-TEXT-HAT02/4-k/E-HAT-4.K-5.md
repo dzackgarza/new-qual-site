@@ -48,7 +48,7 @@ whose long exact homotopy sequence identifies, for \(i>0\),
 \[
 \pi_i(F_b,p^{-1}(b),x_0)
 \cong
-\ker\!\left[\pi_i(E,p^{-1}(b),x_0)	o\pi_i(B,b)\right]
+\ker\!\left[\pi_i(E,p^{-1}(b),x_0)\to\pi_i(B,b)\right]
 \]
 together with the corresponding cokernel one degree higher. Comparing the long exact sequence of the pair \((E,p^{-1}(b))\) with that of the homotopy-fiber fibration and applying the five-lemma shows:
 \[

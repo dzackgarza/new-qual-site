@@ -40,13 +40,13 @@ Every automorphism is therefore represented by a matrix
 \[
 A\in GL_2(\mathbb Z).
 \]
-Let \(L_A:\mathbb R^2	o\mathbb R^2\) be the linear map with matrix \(A\). Since \(A(\mathbb Z^2)=\mathbb Z^2\), the map descends through the quotient \(\mathbb R^2/\mathbb Z^2=T\) to
+Let \(L_A:\mathbb R^2\to\mathbb R^2\) be the linear map with matrix \(A\). Since \(A(\mathbb Z^2)=\mathbb Z^2\), the map descends through the quotient \(\mathbb R^2/\mathbb Z^2=T\) to
 \[
 f_A:T\to T,\qquad [v]\mapsto[Av].
 \]
 It fixes the basepoint \([0]\). Since \(A^{-1}\in GL_2(\mathbb Z)\), \(f_{A^{-1}}\) is its inverse, so \(f_A\) is a homeomorphism. On fundamental groups, \((f_A)_*=A\). Hence every automorphism of \(\pi_1(T)\) is induced by a basepoint-preserving homeomorphism.
 
-(b) Assume the covering \(p:E	o T\) is connected, and put
+(b) Assume the covering \(p:E\to T\) is connected, and put
 \[
 H=p_*\pi_1(E,e_0)\le\mathbb Z^2.
 \]

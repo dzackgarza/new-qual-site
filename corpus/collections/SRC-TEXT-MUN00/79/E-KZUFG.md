@@ -75,7 +75,7 @@ with
 \[
 p\overline m=m(p\times p),\qquad p\overline I=Ip,
 \]
-and with \(\overline m(	ilde e,	ilde e)=	ilde e\), \(\overline I(	ilde e)=	ilde e\). Uniqueness of based lifts makes these maps unique.
+and with \(\overline m(\tilde e,\tilde e)=\tilde e\), \(\overline I(\tilde e)=\tilde e\). Uniqueness of based lifts makes these maps unique.
 
 (b) Define
 \[
@@ -86,11 +86,11 @@ Both satisfy
 \[
 pL=p=pR
 \]
-and both send \(	ilde e\) to \(	ilde e\). The identity map of \(\overline G\) is another based lift of \(p\). By uniqueness of lifts,
+and both send \(\tilde e\) to \(\tilde e\). The identity map of \(\overline G\) is another based lift of \(p\). By uniqueness of lifts,
 \[
 L=R=1_{\overline G}.
 \]
-So \(	ilde e\) is a two-sided identity.
+So \(\tilde e\) is a two-sided identity.
 
 (c) The maps
 \[
@@ -103,7 +103,7 @@ pA(\tilde g)=p(\tilde g)p(\tilde g)^{-1}=e,
 \qquad
 pB(\tilde g)=e.
 \]
-They both take \(	ilde e\) to \(	ilde e\). The constant map \(	ilde g\mapsto	ilde e\) is the unique based lift of the constant map to \(e\). Hence
+They both take \(\tilde e\) to \(\tilde e\). The constant map \(\tilde g\mapsto\tilde e\) is the unique based lift of the constant map to \(e\). Hence
 \[
 A=B\equiv\tilde e.
 \]
@@ -120,10 +120,10 @@ F'(\tilde g,\tilde g',\tilde g'')
 \]
 Their projections are equal by associativity in \(G\):
 \[
-pF=p(\tilde g)igl(p(\tilde g')p(\tilde g'')\bigr)
-=igl(p(\tilde g)p(\tilde g')\bigr)p(\tilde g'')=pF'.
+pF=p(\tilde g)\bigl(p(\tilde g')p(\tilde g'')\bigr)
+=\bigl(p(\tilde g)p(\tilde g')\bigr)p(\tilde g'')=pF'.
 \]
-Both send \((\tilde e,\tilde e,\tilde e)\) to \(	ilde e\). By uniqueness of based lifts,
+Both send \((\tilde e,\tilde e,\tilde e)\) to \(\tilde e\). By uniqueness of based lifts,
 \[
 F=F'.
 \]
@@ -136,5 +136,5 @@ p(\overline I(x))=p(x)^{-1},
 \]
 so \(p\) is a continuous group homomorphism.
 
-Finally, any other multiplication making \(	ilde e\) the identity and \(p\) a homomorphism would be a based lift of \(m(p\times p)\), hence would equal \(\overline m\) by uniqueness. The inverse map is then forced as well. Thus the topological-group structure is unique.
+Finally, any other multiplication making \(\tilde e\) the identity and \(p\) a homomorphism would be a based lift of \(m(p\times p)\), hence would equal \(\overline m\) by uniqueness. The inverse map is then forced as well. Thus the topological-group structure is unique.
 :::

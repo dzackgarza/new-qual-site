@@ -65,8 +65,8 @@ H^*(M(B,n),M(A,n);G)\cong\widetilde H^*(M(C,n);G),
 \]
 therefore becomes exactly
 \[
-0\to\operatorname{Hom}(C,G)	o\operatorname{Hom}(B,G)	o
-\operatorname{Hom}(A,G)	o\operatorname{Ext}(C,G)	o
-\operatorname{Ext}(B,G)	o\operatorname{Ext}(A,G)	o0.
+0\to\operatorname{Hom}(C,G)\to\operatorname{Hom}(B,G)\to
+\operatorname{Hom}(A,G)\to\operatorname{Ext}(C,G)\to
+\operatorname{Ext}(B,G)\to\operatorname{Ext}(A,G)\to0.
 \]
 :::

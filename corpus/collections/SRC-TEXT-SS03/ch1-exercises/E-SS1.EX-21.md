@@ -86,7 +86,7 @@ Put $r=|z|<1$. By <1>2, the exponents $2^k(2j+1)$, as $(k,j)$ ranges over nonneg
 
 <1>4. Hence
 \[
-\sum_{k=0}^{\infty}rac{z^{2^k}}{1-z^{2^{k+1}}}
+\sum_{k=0}^{\infty}\frac{z^{2^k}}{1-z^{2^{k+1}}}
 =
 \frac{z}{1-z}.
 \]
@@ -121,7 +121,7 @@ Apply this with $x=z^{2^k}$ and multiply by $2^k$.
 
 <1>6. The $N$th partial sum of the second series is
 \[
-\sum_{k=0}^{N}rac{2^kz^{2^k}}{1+z^{2^k}}
+\sum_{k=0}^{N}\frac{2^kz^{2^k}}{1+z^{2^k}}
 =
 \frac{z}{1-z}
 -
@@ -155,7 +155,7 @@ which tends to $0$ because the exponential decay in $2^N$ dominates the factor $
 
 <1>8. Therefore
 \[
-\sum_{k=0}^{\infty}rac{2^kz^{2^k}}{1+z^{2^k}}
+\sum_{k=0}^{\infty}\frac{2^kz^{2^k}}{1+z^{2^k}}
 =
 \frac{z}{1-z}.
 \]

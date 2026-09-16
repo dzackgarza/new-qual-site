@@ -37,7 +37,7 @@ Suppose first that \(H_0\triangleleft G\). Then for every \(e\in p^{-1}(b_0)\),
 \[
 p_*\pi_1(E,e)=H_0.
 \]
-Given \(e_1,e_2\in p^{-1}(b_0)\), the two pointed coverings \((E,e_1)	o(B,b_0)\) and \((E,e_2)	o(B,b_0)\) therefore have the same associated subgroup. By the equivalence theorem for pointed connected coverings, there is a covering equivalence
+Given \(e_1,e_2\in p^{-1}(b_0)\), the two pointed coverings \((E,e_1)\to(B,b_0)\) and \((E,e_2)\to(B,b_0)\) therefore have the same associated subgroup. By the equivalence theorem for pointed connected coverings, there is a covering equivalence
 \[
 h:E\to E,\qquad p\circ h=p,\qquad h(e_1)=e_2.
 \]
@@ -46,7 +46,7 @@ Conversely, suppose that for every pair \(e_1,e_2\) in the fiber there is such a
 \[
 p_*\pi_1(E,e_g)=g^{-1}H_0g.
 \]
-By hypothesis there is an equivalence \(h:E	o E\) with \(h(e_0)=e_g\). Since \(p h=p\),
+By hypothesis there is an equivalence \(h:E\to E\) with \(h(e_0)=e_g\). Since \(p h=p\),
 \[
 p_*\pi_1(E,e_g)
 =p_*h_*\pi_1(E,e_0)

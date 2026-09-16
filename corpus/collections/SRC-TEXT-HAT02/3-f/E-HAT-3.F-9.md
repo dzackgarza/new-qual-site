@@ -51,16 +51,16 @@ Applying $\operatorname{Hom}(-,\mathbb Z)$ and $\operatorname{Ext}(-,\mathbb Z)$
 \]
 Applying them to the second gives
 \[
-0\to\operatorname{Hom}(A,\mathbb Z)	o\operatorname{Hom}(pA,\mathbb Z)
+0\to\operatorname{Hom}(A,\mathbb Z)\to\operatorname{Hom}(pA,\mathbb Z)
 \to\operatorname{Ext}(A_p,\mathbb Z)
 \to\operatorname{Ext}(A,\mathbb Z)
 \to\operatorname{Ext}(pA,\mathbb Z)\to0.
 \]
 Splicing at $\operatorname{Ext}(pA,\mathbb Z)$ yields
 \[
-\operatorname{Hom}(pA,\mathbb Z)	o\operatorname{Ext}(A_p,\mathbb Z)	o
-\operatorname{Ext}(A,\mathbb Z)	o\operatorname{Ext}(A,\mathbb Z)	o
-\operatorname{Ext}({}_pA,\mathbb Z)	o0.
+\operatorname{Hom}(pA,\mathbb Z)\to\operatorname{Ext}(A_p,\mathbb Z)\to
+\operatorname{Ext}(A,\mathbb Z)\to\operatorname{Ext}(A,\mathbb Z)\to
+\operatorname{Ext}({}_pA,\mathbb Z)\to0.
 \]
 The composite of the two middle maps is induced contravariantly by
 \[
@@ -69,7 +69,7 @@ A\xrightarrow{p}pA\hookrightarrow A,
 which is multiplication by $p$ on $A$. By functoriality of Ext, the composite is therefore multiplication by $p$ on $\operatorname{Ext}(A,\mathbb Z)$. Hence the spliced sequence is precisely
 \[
 \boxed{
-\operatorname{Hom}(pA,\mathbb Z)\to\operatorname{Ext}(A_p,\mathbb Z)	o
+\operatorname{Hom}(pA,\mathbb Z)\to\operatorname{Ext}(A_p,\mathbb Z)\to
 \operatorname{Ext}(A,\mathbb Z)\xrightarrow{p}
 \operatorname{Ext}(A,\mathbb Z)\to
 \operatorname{Ext}({}_pA,\mathbb Z)\to0.}

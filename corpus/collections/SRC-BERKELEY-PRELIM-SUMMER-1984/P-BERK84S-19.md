@@ -92,7 +92,7 @@ Since $\cos3t$ and $\sin3t$ are bounded,
 \]
 Therefore
 \[
-\lim_{t\to\infty}igl(x(t)-x_p(t)\bigr)=0.
+\lim_{t\to\infty}\bigl(x(t)-x_p(t)\bigr)=0.
 \]
 :::
 

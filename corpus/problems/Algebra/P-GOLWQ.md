@@ -25,7 +25,7 @@ audit:
 :::
 
 ::: solution
-Let $\phi:F	o R$ be a ring homomorphism with $F$ a field. Its kernel is an ideal of $F$. A field has only the ideals $(0)$ and $F$, so either
+Let $\phi:F\to R$ be a ring homomorphism with $F$ a field. Its kernel is an ideal of $F$. A field has only the ideals $(0)$ and $F$, so either
 \[
 \ker\phi=(0)
 \]

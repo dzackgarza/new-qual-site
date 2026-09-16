@@ -55,7 +55,7 @@ These maps commute with the maps in the long exact sequence of the pair. In part
 \]
 then
 \[
-\partial\beta_\gamma=eta_\gamma\partial,
+\partial\beta_\gamma=\beta_\gamma\partial,
 \]
 and the analogous naturality holds for \(\pi_n(A)\to\pi_n(X)\) and \(\pi_n(X)\to\pi_n(X,A)\).
 

@@ -19,7 +19,7 @@ Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nulhomotopic.
 :::
 
 ::: {.solution}
-Let \(n>1\) and \(f:S^n	o S^1\). Choose a basepoint \(x_0\in S^n\), and let
+Let \(n>1\) and \(f:S^n\to S^1\). Choose a basepoint \(x_0\in S^n\), and let
 \[
 p:\mathbb R\longrightarrow S^1,\qquad p(t)=e^{2\pi i t}
 \]
@@ -31,5 +31,5 @@ The lifting criterion therefore gives a lift
 \[
 \tilde f:S^n\to\mathbb R,\qquad p\tilde f=f.
 \]
-Because \(\mathbb R\) is contractible, \(	ilde f\) is homotopic to a constant map. Composing this homotopy with \(p\) gives a homotopy of \(f\) to a constant map in \(S^1\). Hence every map \(S^n	o S^1\) is nullhomotopic.
+Because \(\mathbb R\) is contractible, \(\tilde f\) is homotopic to a constant map. Composing this homotopy with \(p\) gives a homotopy of \(f\) to a constant map in \(S^1\). Hence every map \(S^n\to S^1\) is nullhomotopic.
 :::

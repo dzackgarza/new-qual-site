@@ -94,7 +94,7 @@ Thus
 \int_0^\infty \sin(x^2)\,dx
 =
 \int_0^\infty \cos(x^2)\,dx
-=rac{\sqrt{2\pi}}{4}}
+=\frac{\sqrt{2\pi}}{4}}
 \]
 as required.
 :::

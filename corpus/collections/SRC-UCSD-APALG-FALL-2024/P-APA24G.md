@@ -50,7 +50,7 @@ Thus \(Pv\in V^G\).
 
 <1>2. The operator \(P\) acts as the identity on \(V^G\).
 ::: {.proof}
-If \(v\in V^G\), then \(arphi(g)v=v\) for every \(g\in G\). Therefore
+If \(v\in V^G\), then \(\varphi(g)v=v\) for every \(g\in G\). Therefore
 \[
 Pv=\frac1{|G|}\sum_{g\in G}v=v.
 \]

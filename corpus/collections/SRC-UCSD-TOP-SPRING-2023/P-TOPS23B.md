@@ -48,7 +48,7 @@ $$
 0&0
 \end{pmatrix},
 \qquad
-\partial_1=egin{pmatrix}0&t-1\end{pmatrix}.
+\partial_1=\begin{pmatrix}0&t-1\end{pmatrix}.
 $$
 ::: {.proof}
 Use the presentation complex for

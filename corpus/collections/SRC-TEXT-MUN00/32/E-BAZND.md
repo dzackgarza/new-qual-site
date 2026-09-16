@@ -90,7 +90,7 @@ U(\mathbf x,B)=\{\mathbf y:\mathbf y(\alpha)=\mathbf x(\alpha)\text{ for all }\a
 \]
 with \(B\subset J\) finite, form a basis.
 
-(b) The complement of \(P_n\) is open. Indeed, \(\mathbf x\notin P_n\) exactly when there are distinct \(\alpha,eta\in J\) and an integer \(m\ne n\) such that
+(b) The complement of \(P_n\) is open. Indeed, \(\mathbf x\notin P_n\) exactly when there are distinct \(\alpha,\beta\in J\) and an integer \(m\ne n\) such that
 \[
 \mathbf x(\alpha)=\mathbf x(\beta)=m.
 \]

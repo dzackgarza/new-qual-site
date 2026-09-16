@@ -48,7 +48,7 @@ The resulting exact sequence therefore contains
 Hence
 \[
 \boxed{\operatorname{Ext}(A,\mathbb Z)
-\cong\operatorname{coker}\bigl(\operatorname{Hom}(A,\mathbb Q)	o
+\cong\operatorname{coker}\bigl(\operatorname{Hom}(A,\mathbb Q)\to
 \operatorname{Hom}(A,\mathbb Q/\mathbb Z)\bigr).}
 \]
 

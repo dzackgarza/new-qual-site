@@ -87,7 +87,7 @@ Thus at most one continuous solution can exist.
 Let
 \[
 I_0:=\frac{A}{1-k}
-\qquad	ext{and}\qquad
+\qquad\text{and}\qquad
 f_0(x):=\sin x+I_0e^{-(x+1)}.
 \]
 The function $f_0$ is continuous on $[0,1]$.
