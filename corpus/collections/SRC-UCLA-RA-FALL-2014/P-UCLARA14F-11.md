@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-11
 kind: problem
-title: UCLA analysis Fall 2014, Problem 11
+title: Harnack inequality for nonnegative harmonic functions
 classification:
   areas:
   - real-analysis

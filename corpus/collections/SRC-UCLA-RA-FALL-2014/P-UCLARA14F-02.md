@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-02
 kind: problem
-title: UCLA analysis Fall 2014, Problem 2
+title: An $L^1$ function whose translates do not converge almost everywhere
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-05
 kind: problem
-title: UCLA analysis Fall 2014, Problem 5
+title: Density of a pushforward under a nonsingular continuous map
 classification:
   areas:
   - real-analysis

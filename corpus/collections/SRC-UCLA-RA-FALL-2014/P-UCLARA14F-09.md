@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-09
 kind: problem
-title: UCLA analysis Fall 2014, Problem 9
+title: Locally uniform limits of injective holomorphic functions
 classification:
   areas:
   - real-analysis

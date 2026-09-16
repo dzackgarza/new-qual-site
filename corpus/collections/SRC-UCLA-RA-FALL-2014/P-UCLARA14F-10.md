@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-10
 kind: problem
-title: UCLA analysis Fall 2014, Problem 10
+title: Completeness of the Fock space of entire functions
 classification:
   areas:
   - real-analysis

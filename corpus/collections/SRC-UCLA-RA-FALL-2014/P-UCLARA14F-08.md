@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-08
 kind: problem
-title: UCLA analysis Fall 2014, Problem 8
+title: Entire functions of exponential type and growth of derivatives at 0
 classification:
   areas:
   - real-analysis

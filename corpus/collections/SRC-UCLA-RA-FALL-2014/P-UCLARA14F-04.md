@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-04
 kind: problem
-title: UCLA analysis Fall 2014, Problem 4
+title: Cosine series with $\sum(1+n^2)|c_n|^2<\infty$ form an algebra
 classification:
   areas:
   - real-analysis

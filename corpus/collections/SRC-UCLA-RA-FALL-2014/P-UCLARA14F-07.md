@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-07
 kind: problem
-title: UCLA analysis Fall 2014, Problem 7
+title: Conformal map from a slit upper half-plane to the disk
 classification:
   areas:
   - real-analysis

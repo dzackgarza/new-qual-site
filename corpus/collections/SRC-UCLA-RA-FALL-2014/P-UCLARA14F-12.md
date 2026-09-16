@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-12
 kind: problem
-title: UCLA analysis Fall 2014, Problem 12
+title: Maximum principle for bounded subharmonic functions outside the unit disk
 classification:
   areas:
   - real-analysis

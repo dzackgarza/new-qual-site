@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-03
 kind: problem
-title: UCLA analysis Fall 2014, Problem 3
+title: Bounded $L^2$ sequences converging to 0 almost everywhere converge weakly
 classification:
   areas:
   - real-analysis

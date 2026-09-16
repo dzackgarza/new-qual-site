@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-06
 kind: problem
-title: UCLA analysis Fall 2014, Problem 6
+title: Separable dual implies separable Banach space
 classification:
   areas:
   - real-analysis

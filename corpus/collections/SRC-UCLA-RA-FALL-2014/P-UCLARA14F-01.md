@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14F-01
 kind: problem
-title: UCLA analysis Fall 2014, Problem 1
+title: Borel measurability of $L^2\cap L^3$ in $L^3(\mathbb R)$
 classification:
   areas:
   - real-analysis
