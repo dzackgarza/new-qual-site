@@ -37,8 +37,6 @@ $$
 
 ## A pole of higher order
 
-[[PR-2XFT4]]
-
 [[FF-VOO4Q]]
 
 ## By the Laurent series
