@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-1A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 1A
+title: Poisson kernel limit $\int f(t)\,\epsilon/(\epsilon^2+t^2)\,dt$ as $\epsilon\to 0^+$
 classification:
   areas:
   - prelim

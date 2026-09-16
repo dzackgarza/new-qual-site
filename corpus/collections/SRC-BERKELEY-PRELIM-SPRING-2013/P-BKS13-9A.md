@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-9A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 9A
+title: Finite-dimensional domains over a field are fields
 classification:
   areas:
   - prelim

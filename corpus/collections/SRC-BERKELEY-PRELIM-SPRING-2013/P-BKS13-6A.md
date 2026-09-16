@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-6A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 6A
+title: Triple orthogonal complements in inner product spaces
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-8A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 8A
+title: Rationality of $\log_m n$
 classification:
   areas:
   - prelim

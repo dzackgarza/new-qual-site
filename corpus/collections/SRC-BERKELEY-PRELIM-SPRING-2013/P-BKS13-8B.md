@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-8B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 8B
+title: Average trace of permutation matrices in $S_n$
 classification:
   areas:
   - prelim

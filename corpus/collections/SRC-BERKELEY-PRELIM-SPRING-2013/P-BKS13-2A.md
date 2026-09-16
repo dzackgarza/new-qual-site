@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-2A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 2A
+title: Quadratic convergence of Newton's method
 classification:
   areas:
   - prelim

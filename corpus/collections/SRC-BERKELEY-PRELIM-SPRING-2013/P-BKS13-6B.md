@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-6B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 6B
+title: Cauchy determinant
 classification:
   areas:
   - prelim

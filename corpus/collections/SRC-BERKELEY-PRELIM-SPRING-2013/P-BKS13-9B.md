@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-9B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 9B
+title: Squares in finite fields; every element is a sum of two squares
 classification:
   areas:
   - prelim

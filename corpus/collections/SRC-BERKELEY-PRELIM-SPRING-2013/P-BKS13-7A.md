@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-7A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 7A
+title: Complex matrices of finite order are diagonalizable
 classification:
   areas:
   - prelim

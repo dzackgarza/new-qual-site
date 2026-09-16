@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-3B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 3B
+title: Fourier series solution of $f''+kf=g$
 classification:
   areas:
   - prelim

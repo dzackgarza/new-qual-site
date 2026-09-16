@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-5B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 5B
+title: Biholomorphic equivalence of the plane, the disk, and the upper half-plane
 classification:
   areas:
   - prelim

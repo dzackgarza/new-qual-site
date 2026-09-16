@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-4B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 4B
+title: Cauchy estimate for derivatives on a compact subset
 classification:
   areas:
   - prelim

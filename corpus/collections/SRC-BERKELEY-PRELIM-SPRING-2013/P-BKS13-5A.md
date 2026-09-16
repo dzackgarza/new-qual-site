@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-5A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 5A
+title: A trigonometric polynomial exceeds its constant term in modulus
 classification:
   areas:
   - prelim

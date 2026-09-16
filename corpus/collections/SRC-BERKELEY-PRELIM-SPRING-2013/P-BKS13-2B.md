@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-2B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 2B
+title: Nested intersections of closed connected subsets of a compact metric space
 classification:
   areas:
   - prelim

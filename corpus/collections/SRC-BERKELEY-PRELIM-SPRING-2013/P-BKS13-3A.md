@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-3A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 3A
+title: Convergence of $\int_0^\infty x\exp(-x^6\sin^2 x)\,dx$
 classification:
   areas:
   - prelim

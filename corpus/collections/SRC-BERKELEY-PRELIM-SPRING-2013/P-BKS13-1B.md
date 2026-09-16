@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-1B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 1B
+title: Evaluation of $\int_0^1\arctan x\,dx$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-4A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 4A
+title: Contour integral of $\cosh(\pi z)/(z(z^2+1))$ over $|z|=2$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS13-7B
 kind: problem
-title: Berkeley Spring 2013 prelim problem 7B
+title: Cayley transform between orthogonal and skew-symmetric matrices
 classification:
   areas:
   - prelim
