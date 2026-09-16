@@ -17,5 +17,9 @@ review: draft
 ---
 
 ::: {.example}
-$f_n = n\chi_{(0, {1\over n})}$
+For $n\geq 1$ let $f_n\coloneqq n\chi_{(0, 1/n)}\colon\RR\to\RR$.
+
+- For $x\leq 0$, $f_n(x) = 0$ for all $n$; for $x>0$, $f_n(x) = 0$ for all $n > 1/x$. Hence $f_n\to 0$ [[D-IYDZU|pointwise]] on $\RR$.
+
+- $\int_\RR\abs{f_n - 0}\dx = n\cdot\frac1n = 1$ for every $n$, so $f_n\not\to 0$ in $L^1(\RR)$.
 :::
