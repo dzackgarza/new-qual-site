@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-CSABG
 kind: fact
-title: The Artin-Rees lemma
+title: The Artin--Rees lemma
 prompts:
 - What is the Artin-Rees lemma?
 classification:
@@ -17,7 +17,9 @@ review: draft
 ---
 
 ::: {.fact}
-$I{~\trianglelefteq~}R, N\leq M\in   {}_{R}{\mathsf{Mod}}\implies \exists C\in {\mathbf{Z}}$ such that
-
-$$I^nM = I^{n-C}(I^CM \cap N)$$
+Let $R$ be a commutative [[D-TZXBO|Noetherian]] ring, let $I\subseteq R$ be an [[D-GOFWL|ideal]], let $M$ be a finitely generated $R$-module, and let $N\subseteq M$ be a submodule.
+Then there is an integer $c\ge0$ such that for every $n\ge c$,
+$$
+I^nM\cap N=I^{n-c}\qty{I^cM\cap N}.
+$$
 :::

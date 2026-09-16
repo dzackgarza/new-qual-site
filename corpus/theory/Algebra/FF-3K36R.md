@@ -17,9 +17,17 @@ review: draft
 ---
 
 ::: {.fact}
-For $I{~\trianglelefteq~}R$ Noetherian with $I \subseteq {J ({R}) }$,
+Let $R$ be a commutative [[D-TZXBO|Noetherian]] ring and let $I\subseteq R$ be an [[D-GOFWL|ideal]] contained in the [[D-2IO6Q|Jacobson radical]] $J(R)$.
+Then
+$$
+\bigcap_{n\ge0}I^n=0.
+$$
+In particular, $\bigcap_{n\ge0}\mfm^n=0$ for every Noetherian [[D-TGB4R|local ring]] $(R,\mfm)$.
+:::
 
-$$\bigcap_{n\geq 0} I^n = 0$$
-
-Works for $R\in \mathsf{Loc}\mathsf{CRing}$ with $I\coloneqq{\mathfrak{m}}_R$.
+::: {.proof}
+Let $N=\bigcap_{n\ge0}I^n$.
+By the [[FF-CSABG|Artin--Rees lemma]] applied to $N\subseteq R$, there is $c\ge0$ with $I^n\cap N=I^{n-c}(I^c\cap N)$ for all $n\ge c$.
+Since $N\subseteq I^n$ for every $n$, taking $n=c+1$ gives $N=I(I^c\cap N)=IN$.
+The ideal $N$ is finitely generated because $R$ is Noetherian, so [[FF-NREXC|Nakayama's lemma]] with $I\subseteq J(R)$ gives $N=0$.
 :::
