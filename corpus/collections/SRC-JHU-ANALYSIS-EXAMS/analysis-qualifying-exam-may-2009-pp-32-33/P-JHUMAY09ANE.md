@@ -33,24 +33,35 @@ defines a bounded continuous function on $\mathbb R$.
 :::
 
 ::: {.solution}
-For each $x$, Cauchy--Schwarz and translation invariance of the $L^2$ norm give
-\[
-|(f*g)(x)|\le \|f\|_2\,\|g(x-\cdot)\|_2=\|f\|_2\|g\|_2.
-\]
-Hence
-\[
+<1>1. The convolution is bounded, with
+$$
 \|f*g\|_\infty\le\|f\|_2\|g\|_2.
-\]
+$$
+::: {.proof}
+For each $x$, the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]] and translation invariance of the $L^2$ norm give
+$$
+|(f*g)(x)|\le \|f\|_2\,\|g(x-\cdot)\|_2=\|f\|_2\|g\|_2.
+$$
+Taking the supremum over $x$ proves the claim.
+:::
 
-For continuity, let $h\to0$. Then
-\[
+<1>2. The convolution is uniformly continuous.
+::: {.proof}
+For $h\in\mathbb R$,
+$$
 (f*g)(x+h)-(f*g)(x)
 =\int_{\mathbb R}f(y)\bigl(g(x+h-y)-g(x-y)\bigr)\,dy.
-\]
-Therefore, uniformly in $x$,
-\[
+$$
+Applying Cauchy--Schwarz again gives, uniformly in $x$,
+$$
 |(f*g)(x+h)-(f*g)(x)|
 \le\|f\|_2\,\|g(\cdot+h)-g\|_2.
-\]
-Translations are continuous in $L^2(\mathbb R)$, so the right-hand side tends to $0$ as $h\to0$. Thus $f*g$ is in fact uniformly continuous, and in particular continuous.
+$$
+By [[PR-JX4YU|continuity of translation in $L^p$]], the final norm tends to $0$ as $h\to0$. The bound is independent of $x$, so $f*g$ is uniformly continuous, hence continuous.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves boundedness and step <1>2 proves continuity.
+:::
 :::
