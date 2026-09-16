@@ -47,5 +47,3 @@ source:
   date:
     kind: unknown
 ---
-
-Intake reconciliation: the retained Chapter 1 review source contains twenty-five numbered questions, all represented above in source order by `P-GRECH1-01` through `P-GRECH1-25`; the original Queue E inventory count of sixteen was incomplete.
