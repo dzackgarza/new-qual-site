@@ -5,20 +5,18 @@ order: 40
 
 # Topology
 
-## What the exam asks
+## Recurring questions
 
-The paper is a third point-set and two thirds algebraic, and each half asks a small number of questions.
-
-| The question | Where it is decided |
+| Question | Page |
 | --- | --- |
 | Compute $\pi_1$ of this space | [[topology/fundamental-group/compute-pi-1\|Compute $\pi_1$]] |
 | Compute the homology of this space | [[topology/homology/compute-h-star\|Compute $H_*$]] |
 | What is this space, and what are its invariants | [[topology/the-standard-spaces\|The standard spaces]] |
 | Is this true for all spaces | [[topology/counterexamples\|Counterexamples]] |
 
-The standard-spaces table answers more problems outright than any computation, since most spaces on the paper are one of its rows, or a wedge, product, or puncture of one.
+The standard-spaces table lists $\pi_1$ and $H_*$ of the spaces from which wedges, products, and punctured surfaces are built.
 
-## The chapters, in dependency order
+## Chapters
 
 1. [[topology/point-set/index|Point-set topology]] -- constructions, connectedness, compactness, separation.
 
@@ -34,19 +32,19 @@ The standard-spaces table answers more problems outright than any computation, s
 
 7. [[topology/surfaces/index|Surfaces and manifolds]] -- the classification.
 
-Across the chapters:
+Pages collecting material from several chapters:
 
-- [[topology/review|Review sheet]] -- every statement, on one page.
+- [[topology/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
 
 - [[topology/the-standard-spaces|The standard spaces]] -- the table, with $\pi_1$ and $H_*$.
 
 - [[topology/counterexamples|Counterexamples]] -- filed by the statement each refutes.
 
-Also here: [[topology/appendices/index|appendices]], [[topology/resources/index|resources]], and [[topology/workshops/index|workshops]].
+Supplementary pages: [[topology/appendices/index|appendices]], [[topology/resources/index|resources]], and [[topology/workshops/index|workshops]].
 
 ## Acknowledgements
 
-A great deal of credit goes to Mike Usher, who created the initial PDF of past UGA qual questions organized by topic.
+Mike Usher created the initial PDF of past UGA qualifying exam questions organized by topic.
 
 ## Syllabus
 
@@ -54,7 +52,7 @@ Revised May 2006.
 
 > The weight of topics on the exam should be about 1/3 general topology and 2/3 algebraic topology.
 
-### General Topology
+### General topology
 
 - Topological spaces, continuous functions, product and quotient topology [@Mun00, chap. 2]
 
@@ -64,7 +62,7 @@ Revised May 2006.
 
 - Complete metric spaces and function spaces [@Mun00, secs. 43 and 45]
 
-### Algebraic Topology
+### Algebraic topology
 
 - Classification of surfaces [@Mas19, chap. 1]
 
