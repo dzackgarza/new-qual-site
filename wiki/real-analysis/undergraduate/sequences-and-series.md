@@ -74,8 +74,6 @@ For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ 
 
 [[C-VSE32]]
 
-[[PR-4RWAG]]
-
 [[T-2R7PC]]
 
 ## Uniform convergence
