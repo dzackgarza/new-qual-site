@@ -29,7 +29,3 @@ source:
   - P-WESTOP12-7
   - P-WESTOP12-8
 ---
-
-::: remark
-Problem 2's source diagram is not retained in the Markdown extraction, but the surrounding text unambiguously identifies it as a short exact sequence of chain complexes and states the requested long-exact-sequence construction. The missing diagram labels are left unrecovered.
-:::
