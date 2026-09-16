@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA31
 kind: problem
-title: $\int_0^\infty e^{-ax}\frac{\sin xy}{x}\,dx$ by differentiation under the integral
+title: $\int_0^\infty e^{-ax}\frac{\sin xy}{x}\,dx$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA53
 kind: problem
-title: $\sum_{n\ge1}\frac{(-1)^n}{n}=-\log 2$
+title: Sum of the alternating harmonic series
 classification:
   areas: [real-analysis]
   topics: []

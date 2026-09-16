@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA13
 kind: problem
-title: Limit of $\frac{\sin\tan x-\tan\sin x}{\arcsin\arctan x-\arctan\arcsin x}$ as $x\to0$
+title: Limit as $x\to0$ involving $\sin\tan x-\tan\sin x$ and $\arcsin\arctan x-\arctan\arcsin x$
 classification:
   areas: [real-analysis]
   topics: []
