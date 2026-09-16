@@ -3,27 +3,29 @@ id: GUIDE-APPLIED-ALGEBRA
 kind: study-guide
 title: Applied Algebra
 lede: >-
-  Applied algebra is a separate exam track from the algebra qual, and it asks for
-  computation rather than classification: the spectral and factorisation theory of a
-  concrete matrix, the character theory that turns a finite group into a table of
-  integers, the symmetric functions that make that table combinatorial for the
-  symmetric group, and the Gröbner machinery that makes an ideal decidable. The path
-  below runs in that order, because each layer is the previous one made effective.
-  Each section closes with qualifying-exam problems from the corresponding family,
-  so the reading path stays attached to the computations it is meant to support.
+  The qualifying exam syllabus in applied algebra: spectral theory and factorizations of
+  matrices, representations and characters of finite groups, symmetric functions and the
+  representation theory of the symmetric groups, Gröbner bases and polynomial systems, and
+  invariant theory of finite groups.
 sections:
   - slug: matrix-analysis
-    title: Matrix Analysis
+    title: Matrix analysis
     parent: GUIDE-APPLIED-ALGEBRA
     lede: >-
-      For a Hermitian matrix the eigenvalues are real, Rayleigh
-      quotients and Courant--Fischer characterise them variationally, and interlacing
-      says what a low-rank update can move them by. Normality is the exact condition
-      for a unitary diagonalisation; every matrix still has a singular value
-      decomposition, so SVD remains available when eigendecomposition does not. Positive definiteness
-      supplies the square root and with it the polar factorisation $A = UH$, and the
-      Jordan form is kept for the questions that are genuinely about a nilpotent part
-      -- reading a form off a rank sequence, or watching it fail to be continuous.
+      A Hermitian matrix $A\in M_n(\CC)$ has real eigenvalues and an orthonormal basis of
+      eigenvectors. By the Courant--Fischer theorem, its eigenvalues
+      $\lambda_1\ge\cdots\ge\lambda_n$ are min-max values of the Rayleigh quotient
+      $x^*Ax/x^*x$ over subspaces of $\CC^n$, and the interlacing theorems place the
+      eigenvalues of a principal submatrix of $A$, and of a rank-one Hermitian perturbation of
+      $A$, between consecutive eigenvalues of $A$. A matrix is unitarily diagonalizable if and
+      only if it is normal. Every $A\in M_{m\times n}(\CC)$ has a singular value decomposition
+      $A=U\Sigma V^*$ with $U$ and $V$ unitary and $\Sigma$ diagonal with nonnegative entries.
+      A positive semidefinite matrix has a unique positive semidefinite square root, and every
+      square matrix has a polar decomposition $A=UH$ with $U$ unitary and $H=(A^*A)^{1/2}$.
+      The Jordan form of a nilpotent matrix $N$ is determined by the ranks of the powers
+      $N^k$, and the Jordan form does not depend continuously on the matrix:
+      $\begin{pmatrix}0&\varepsilon\\0&0\end{pmatrix}$ has one Jordan block for
+      $\varepsilon\ne0$ and two for $\varepsilon=0$.
     topics:
       - Linear Algebra
       - Inner Product Spaces
@@ -39,22 +41,21 @@ sections:
       - Multilinear Algebra
     items: []
   - slug: representation-theory
-    title: Representation Theory
+    title: Representation theory
     parent: matrix-analysis
     lede: >-
-      A representation is a homomorphism into a matrix group, so the unitary structure
-      and diagonalisation from [Matrix Analysis](matrix-analysis.html) are in force
-      from the start: averaging puts an invariant inner product on the space, and
-      Maschke then decomposes every finite-group representation over $\mathbb{C}$ as a direct
-      sum of irreducibles. The character is the trace, and because trace is invariant
-      under conjugation it is a function on conjugacy classes; orthogonality of
-      characters recovers multiplicities by inner products. The counts a character
-      table has to satisfy -- the number of
-      irreducibles against the number of classes, the sum of the squares of the
-      degrees against the group order -- are usually enough to reconstruct a table
-      from very little, and the questions here exploit that. Induction and
-      restriction move a module between a group and a subgroup, and Frobenius
-      reciprocity is the statement that they are adjoint.
+      A complex representation of a finite group $G$ is a homomorphism $\rho\colon G\to\GL(V)$
+      for a finite-dimensional complex vector space $V$. Averaging an inner product on $V$
+      over $G$ gives a $G$-invariant inner product, for which every $\rho(g)$ is unitary, and
+      by Maschke's theorem $V$ is a direct sum of irreducible representations. The character
+      $\chi_V(g)=\operatorname{tr}\rho(g)$ is constant on conjugacy classes. The irreducible
+      characters form an orthonormal basis of the space of class functions for
+      $\inner{\chi}{\psi}=\frac{1}{\abs{G}}\sum_{g\in G}\chi(g)\overline{\psi(g)}$, so the
+      multiplicity of an irreducible representation $W$ in $V$ is $\inner{\chi_V}{\chi_W}$.
+      The number of irreducible characters equals the number of conjugacy classes, and
+      $\sum_W(\dim W)^2=\abs{G}$, the sum taken over the irreducible representations. For a
+      subgroup $H\le G$, induction and restriction satisfy Frobenius reciprocity,
+      $\inner{\operatorname{Ind}_H^G\psi}{\chi}_G=\inner{\psi}{\operatorname{Res}^G_H\chi}_H$.
     topics:
       - Representation Theory
       - Character Theory
@@ -67,20 +68,22 @@ sections:
       - Modules
     items: []
   - slug: symmetric-functions
-    title: Symmetric Functions and the Symmetric Group
+    title: Symmetric functions and the symmetric group
     parent: representation-theory
     lede: >-
-      For $S_n$, [Representation Theory](representation-theory.html) becomes combinatorics.
-      Partitions of $n$ index the conjugacy classes and therefore the irreducibles,
-      the Specht modules; standard Young tableaux count their dimensions;
-      Murnaghan--Nakayama evaluates a character by removing rim hooks rather than by
-      any linear algebra. The characteristic map carries this across to symmetric
-      functions, where the Schur functions are the images of the irreducible
-      characters and the inner product of characters becomes the Hall inner product.
-      Induction from a Young subgroup becomes multiplication of Schur functions, and
-      the Littlewood--Richardson rule is the tableau count that gives the
-      coefficients. The enumeration problems at the end -- Pólya counting, generating
-      functions -- are the same orbit-counting idea used without the module theory.
+      The conjugacy classes of $S_n$ are indexed by the partitions of $n$ through cycle type,
+      and so are its irreducible complex representations, the Specht modules $S^\lambda$. The
+      dimension of $S^\lambda$ is the number of standard Young tableaux of shape $\lambda$,
+      and the Murnaghan--Nakayama rule evaluates the character $\chi^\lambda$ on a class as a
+      signed sum over successive removals of rim hooks. The Frobenius characteristic map is an
+      isometry from the class functions on $S_n$, with the character inner product, to the
+      homogeneous symmetric functions of degree $n$, with the Hall inner product; it sends
+      $\chi^\lambda$ to the Schur function $s_\lambda$ and the character of
+      $\operatorname{Ind}_{S_m\times S_k}^{S_{m+k}}(V\boxtimes W)$ to the product of the
+      images of $V$ and $W$. The Littlewood--Richardson coefficients $c^\nu_{\lambda\mu}$ in
+      $s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}s_\nu$ count Littlewood--Richardson
+      tableaux. Pólya enumeration counts the orbits of a finite permutation group on
+      colourings by Burnside's lemma, through the cycle index of the group.
     topics:
       - Symmetric Functions
       - Tableaux
@@ -91,19 +94,21 @@ sections:
       - Pólya Enumeration
     items: []
   - slug: grobner-bases-and-varieties
-    title: Gröbner Bases and Varieties
+    title: Gröbner bases and varieties
     parent: GUIDE-APPLIED-ALGEBRA
     lede: >-
-      An ideal of a polynomial ring is not decidable as written: membership, equality
-      and elimination all need a normal form, and a monomial order plus Buchberger's
-      algorithm supply one. A Gröbner basis reduces membership to division with
-      remainder, and eliminating variables from it solves a polynomial system by
-      triangularising it. The Nullstellensatz is the bridge back to geometry --
-      vanishing on the variety is membership in the radical, not in the ideal -- and
-      the Rabinowitsch trick, adjoining a variable to invert a polynomial, is how
-      radical membership is decided by the same machinery. A finite variety is
-      exactly a finite-dimensional quotient, and the monomials outside the initial
-      ideal are the basis that makes the dimension countable.
+      Fix a monomial order on $k[x_1,\ldots,x_n]$. A Gröbner basis of an ideal $I$ is a finite
+      subset of $I$ whose leading terms generate the initial ideal $\operatorname{in}(I)$, and
+      Buchberger's algorithm computes one from any finite generating set. The remainder of $f$
+      on division by a Gröbner basis is unique, and $f\in I$ if and only if that remainder is
+      $0$. For the lexicographic order with $x_1>\cdots>x_n$ and a Gröbner basis $G$ of $I$,
+      $G\cap k[x_{j+1},\ldots,x_n]$ is a Gröbner basis of the elimination ideal $I\cap
+      k[x_{j+1},\ldots,x_n]$, which solves a polynomial system one variable at a time. For any
+      field, $f\in\sqrt{I}$ if and only if $1\in I+(1-yf)\subseteq k[x_1,\ldots,x_n,y]$ (the
+      Rabinowitsch trick). For $k$ algebraically closed, Hilbert's Nullstellensatz states that
+      $f$ vanishes on $V(I)$ if and only if $f\in\sqrt{I}$, and $V(I)$ is finite if and only
+      if $\dim_kk[x_1,\ldots,x_n]/I<\infty$; the monomials not in $\operatorname{in}(I)$ form
+      a $k$-basis of $k[x_1,\ldots,x_n]/I$.
     topics:
       - Gröbner Bases
       - Ideals
@@ -112,18 +117,21 @@ sections:
       - Polynomial Systems
     items: []
   - slug: invariant-theory
-    title: Invariant Theory
+    title: Invariant theory
     parent: grobner-bases-and-varieties
     lede: >-
-      Invariant theory joins [Representation Theory](representation-theory.html) with
-      [Gröbner Bases and Varieties](grobner-bases-and-varieties.html): a finite group acts
-      linearly on a polynomial ring and the question is what survives. The invariant ring is
-      finitely generated, generators can be produced by averaging over the group and
-      reduced with a Gröbner basis, and the Hilbert series counts invariants degree by
-      degree. Molien's formula computes that series from the character of the action
-      alone. Consequently two isomorphic abstract subgroups of
-      $\mathrm{GL}_2(\mathbb{C})$ can have different Hilbert series: the series is an
-      invariant of the representation, not of the abstract group.
+      Let a finite group $G$ act linearly on $\CC^n$ through a representation $\rho$, and so
+      on $\CC[x_1,\ldots,x_n]$. The invariant ring $\CC[x_1,\ldots,x_n]^G$ is finitely
+      generated, and the Reynolds operator $f\mapsto\frac{1}{\abs{G}}\sum_{g\in G}g\cdot f$ is
+      a projection onto it; by Noether's bound, its values on the monomials of degree at most
+      $\abs{G}$ generate the invariant ring, and a Gröbner basis computation finds the
+      relations among generators. Molien's formula expresses the Hilbert series through
+      $\rho$:
+      $\sum_{d\ge0}\dim_\CC\big(\CC[x_1,\ldots,x_n]^G\big)_d\,t^d=\frac{1}{\abs{G}}\sum_{g\in
+      G}\frac{1}{\det(I-t\rho(g))}$. The Hilbert series depends on $\rho$ and not only on the
+      abstract group: the subgroups $\{\pm I\}$ and $\{I,\operatorname{diag}(1,-1)\}$ of
+      $\GL_2(\CC)$ are both cyclic of order $2$, with Hilbert series $\frac{1+t^2}{(1-t^2)^2}$
+      and $\frac{1}{(1-t)(1-t^2)}$.
     topics:
       - Invariant Theory
     items: []
