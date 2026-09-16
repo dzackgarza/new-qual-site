@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-QPIIL
 kind: definition
-title: 'Definition: Closed Surfaces'
+title: Closed surface
 prompts:
 - What is a closed surface?
 classification:
@@ -17,5 +17,5 @@ review: draft
 ---
 
 ::: {.definition}
-Compact and without boundary.
+A \dfn{closed surface} is a compact $2$-dimensional [[D-UBWVX|manifold]] without boundary.
 :::
