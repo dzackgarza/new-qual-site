@@ -15,16 +15,15 @@ review: draft
 ---
 
 ::: {.theorem}
-Suppose $f$ is holomorphic on an open set $\Omega$, and let $D$ be a disc centred at $p$ whose closure is contained in $\Omega$.
-Then $f$ has a power series expansion at $p$,
-\[
-f(z) = \sum_{k\geq 0} c_k (z-p)^k, \qquad c_k = {f^{(k)}(p) \over k!}
-,\]
-converging for all $z\in D$.
+Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $D$ be an open disc centred at $p$ whose closure is contained in $\Omega$.
+Then for every $z\in D$ the series below converges and
+$$
+f(z)=\sum_{k\geq0}c_k(z-p)^k,\qquad c_k=\frac{f^{(k)}(p)}{k!}.
+$$
+In particular, $f$ is [[D-V6UQJ|analytic]] at every point of $\Omega$.
 :::
 
 ::: {.remark}
-Stein and Shakarchi, *Complex Analysis*, Ch. 2 Theorem 4.4.
-The hypothesis is holomorphy, i.e. complex differentiability; the conclusion is analyticity, i.e. a local power series.
-The two are therefore equivalent, which is why the words are used interchangeably, but this theorem is the direction that needs Cauchy's integral formula.
+See [@SS03, Chapter 2, Theorem 4.4].
+Conversely, a function analytic on $\Omega$ is holomorphic on $\Omega$, since a power series is complex differentiable inside its disc of convergence; so holomorphic and analytic functions on $\Omega$ coincide.
 :::

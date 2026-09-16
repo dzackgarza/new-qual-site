@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-QMGPN
 kind: theorem
-title: Implicit Function Theorem
+title: Implicit function theorem
 classification:
   areas:
   - complex-analysis

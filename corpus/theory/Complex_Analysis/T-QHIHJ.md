@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-QHIHJ
 kind: theorem
-title: Liouville's Theorem
+title: Liouville's theorem
 classification:
   areas:
   - complex-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem ref="Liouville"}
-If $f$ is entire and bounded, $f$ is constant.
+Let $f$ be an [[D-E7A5W|entire]] function.
+If there is $M>0$ with $\abs{f(z)}\leq M$ for all $z\in\CC$, then $f$ is constant.
 :::

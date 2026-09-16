@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RGE7C
 kind: theorem
-title: Continuation Principle / Identity Theorem
+title: Identity theorem
 classification:
   areas:
   - complex-analysis
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f$ is holomorphic on a bounded connected domain $\Omega$ and there exists a sequence $\theset{z_i}$ with a limit point in $\Omega$ such that $f(z_i) = 0$, then $f\equiv 0$ on $\Omega$.
+Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$.
+If the set of [[D-65VIK|zeros]] of $f$ has a [[D-TFSPT|limit point]] in $\Omega$, then $f\equiv0$ on $\Omega$.
 :::
