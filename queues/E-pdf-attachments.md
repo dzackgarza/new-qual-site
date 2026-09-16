@@ -147,7 +147,6 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Fall86.pdf](assets/attachments/Fall86_extracted.md) (125L, 20 problems) — Berkeley — prelim — Fall 1986 — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19`, which recovers Problem 5's matrix $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ that MinerU Flash garbled.
   `SRC-BERKELEY-PRELIM-FALL-1986` lists all twenty problems in source order; Problems 4 and 15 reuse `P-BKF13-4A` and `P-AA27R`, and the other eighteen are `P-BKF86-*`. No alternate parser/OCR/model-vision fallback used.
-  Problems 4 and 15 are known exact reuses of `P-BKF13-4A` and `P-AA27R`; the source remains open until Problem 5 can be recovered.**
 
 - [x] [Fall88.pdf](assets/attachments/Fall88_extracted.md) (107L, 18 problems) — Berkeley — prelim — Fall 1988 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1988` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
   All eighteen source positions are represented in source order by `P-BKF88-1` through `P-BKF88-18`; nearby prior cards had different hypotheses or extra obligations and were not reused.
@@ -676,7 +675,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017 — disposition 2026-09-10: Xin Ma's derivative solution notes for TAMU Real Analysis qualifying exams, not an original exam source; already linked from `wiki/real-analysis/resources/solutions.md`, so no duplicate collection is warranted.
 
-- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017 — disposition 2026-09-10: Jacob S. Townson's derivative solutions to University of Louisville analysis quals, not an original exam paper; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
+- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1758L, derivative solutions/reference) — University of Louisville — real-analysis — August–December 2017 — disposition 2026-09-16: re-extracted deterministically with MinerU Flash v0.5.9 in page ranges 1–20 and 21–27 after the whole-file request hit the 20-page Flash limit. The fresh baseline was read in full and confirms Jacob S. Townson's derivative solutions to University of Louisville analysis quals plus review notes, not an original exam paper; it is already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
 
 - [x] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 18 problems) — Berkeley — prelim — Spring 2021 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-SPRING-2021`, with all 18 problem statements represented in source order by `P-BKS21-1A` through `P-BKS21-9B`.
 

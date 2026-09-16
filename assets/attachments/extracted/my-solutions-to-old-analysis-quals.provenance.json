@@ -1,0 +1,31 @@
+{
+  "source_pdf": "assets/attachments/my-solutions-to-old-analysis-quals.pdf",
+  "source_pdf_sha256": "798182ef54ffbbd216987aeeb450ddb2d5a536d9872d35f066cab2eacc4d62b5",
+  "source_pages": 27,
+  "extracted_markdown": "assets/attachments/extracted/my-solutions-to-old-analysis-quals.md",
+  "extracted_markdown_sha256": "cf1e981ffe891e4fde2fa5a28128c8ad663edd7b3c8e467746ff09bc219a8961",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "generated_at": "2026-09-16",
+  "whole_file_attempt": "mineru-open-api flash-extract assets/attachments/my-solutions-to-old-analysis-quals.pdf --language en",
+  "whole_file_result": "[-30003] file page count exceeds Flash API limit (20 pages)",
+  "page_ranges": [
+    {
+      "pages": "1-20",
+      "exit": 0,
+      "bytes": 88757
+    },
+    {
+      "pages": "21-27",
+      "exit": 0,
+      "bytes": 33573
+    }
+  ],
+  "assembly": "The final baseline concatenates the successful 1-20 and 21-27 Markdown range outputs in source-page order, separated only by blank lines.",
+  "superseded_fallback": "The previous retained extraction originated in commit 582f94795e from the now-disallowed pypdf fallback and was later renamed in d4776814125.",
+  "superseded_fallback_sha256": "b7fec43600d4896f78dcf0b2e74ec7d7bc6731df3366e4eee5e990d30f1607ab",
+  "source_identification": "Jacob S. Townson, My Solutions to Old Analysis Quals, August-December 2017; derivative worked solutions to University of Louisville qualifying examinations together with analysis review notes.",
+  "source_role": "Reference/solutions resource rather than an original examination source; no separate problem collection is manufactured from this derivative document.",
+  "public_route": "wiki/real-analysis/resources/solutions.md",
+  "transcription_review": "Fresh MinerU Flash extraction read in full to establish source identity, derivative-solution role, and the existing reference-only disposition."
+}
