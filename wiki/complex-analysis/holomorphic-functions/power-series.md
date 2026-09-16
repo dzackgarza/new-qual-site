@@ -78,7 +78,7 @@ By the Weierstrass $M\dash$test, the series converges uniformly on $\abs z\leq R
 
 ::: {.proof}
 Let $A_n \coloneqq \sum_{k=1}^n a_k$ and $A_0\coloneqq 0$, and choose $M$ with $\abs{A_n}\leq M$ for all $n$.
-Summation by parts ([[PR-6GL7M]] with $m=1$) gives
+Summation by parts ([[PR-2MTPE]] with $m=1$) gives
 $$
 \sum_{k=1}^n a_k b_k = A_n b_n + \sum_{k=1}^{n-1} A_k (b_k - b_{k+1})
 .$$
@@ -112,7 +112,7 @@ So a radial limit can exist at a point where the series diverges, and the conver
 
 :::
 
-[[PR-6GL7M]]
+[[PR-2MTPE]]
 
 ::: {.proof}
 Define $A_n \coloneqq \sum_{k\leq n} a_k$, use $a_k = A_k - A_{k-1}$, reindex, and peel off the top and bottom terms:
