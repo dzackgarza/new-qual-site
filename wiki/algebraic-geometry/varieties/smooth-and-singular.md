@@ -16,6 +16,14 @@ Two criteria, and they are asked for as a pair.
 The rank computation is what one does to a presented variety; regularity of the local ring is what one says when the variety is not presented, and it is the definition that survives to schemes.
 Over a perfect field they agree, and the question about curves over perfect fields is asking exactly for that.
 
+## Normal crossings
+
+[[D-VARNCROSS]]
+
+## Tangent hyperplanes and the dual variety
+
+[[D-VARDUAL]]
+
 ## Normality, the weaker condition
 
 [[D-QJ5M9]]

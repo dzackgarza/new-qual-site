@@ -21,6 +21,8 @@ Dimension has three descriptions and they are used for different things: the cha
 
 [[D-VARDEG]]
 
+[[D-VARSCROLL]]
+
 ## The Hilbert polynomial
 
 [[D-L6ERW]]
@@ -35,3 +37,11 @@ Asking what the leading term means is asking for the degree; asking what the con
 Degree does, and so does the whole Hilbert polynomial, because the homogeneous coordinate ring does: $\PP^1$ embedded as a line has degree $1$, and embedded as the twisted cubic it has degree $3$, and it is the same curve.
 Dimension does not.
 Neither does the arithmetic genus of a smooth projective curve, which is why the constant term is a better invariant than the leading one — and why "does the genus depend on the embedding" has the answer it has.
+
+## Families of varieties
+
+Hypersurfaces of degree $d$ are the points of a projective space, and effective cycles of fixed dimension and degree are the points of the Chow variety.
+
+[[D-VARVERYGEN]]
+
+[[D-VARCHOW]]
