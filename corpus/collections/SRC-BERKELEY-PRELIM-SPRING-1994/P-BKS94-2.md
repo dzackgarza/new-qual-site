@@ -14,12 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored UC Berkeley Spring 1994 preliminary examination.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the garbled norm notation against Spring94.pdf page 1 problem 2.
 ---
 
 ::: {.problem}
-Let A be a real $n \times n$ matrix. Let M denote the maximum of the absolute values of the eigenvalues of A.
+Let $A$ be a real $n \times n$ matrix. Let $M$ denote the maximum of the absolute values of the eigenvalues of $A$.
 
-1. Prove that if A is symmetric, then $\| A x \| \leqslant M \| x \|$ for all x in $\mathbb { R } ^ { n }$ (Here, k · k denotes the Euclidean norm.)
+1. Prove that if $A$ is symmetric, then $\|Ax\| \leqslant M \|x\|$ for all $x$ in $\mathbb{R}^n$. (Here, $\|\cdot\|$ denotes the Euclidean norm.)
 
-2. Prove that the preceding inequality can fail if A is not symmetric.
+2. Prove that the preceding inequality can fail if $A$ is not symmetric.
 :::
