@@ -45,6 +45,6 @@ source:
     year: 2015
 ---
 
-::: remark
-UC Berkeley Graduate Preliminary Examination, Spring 2015. Problems are listed in paper order, Part A followed by Part B. The retained solution packet is provenance for the same examination.
+::: {.remark}
+The paper has Parts A and B; a solution packet accompanies it.
 :::
