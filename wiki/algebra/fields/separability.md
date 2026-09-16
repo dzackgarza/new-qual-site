@@ -17,8 +17,6 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[PR-ENHVC]]
 
-[[PR-OMKPN]]
-
 [[PR-TLBPS]]
 
 [[C-C2GYX]]
@@ -42,8 +40,6 @@ If $K\subseteq L\subseteq M$, then $M/K$ is separable if and only if $M/L$ and $
 [[PR-MK2W6]]
 
 [[PR-25FLW]]
-
-[[PR-XB3O7]]
 
 [[D-WB4M5]]
 
