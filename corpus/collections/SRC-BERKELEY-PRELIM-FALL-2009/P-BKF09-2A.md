@@ -9,10 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the 2x2 matrix with both rows and the field C against f09solutions.pdf page 1 problem 2A.
 ---
 
 ::: {.problem}
-Prove that no polynomial $p ( a , b , c , d )$in four variables over C has the property that when p is evaluated on the entries of a$2 \times 2$matrix$A = { \bigg [ } { a b } { \bigg ] }$ , the result is an eigenvalue of A, for all A.
+Prove that no polynomial $p(a, b, c, d)$ in four variables over $\mathbb{C}$ has the property that when $p$ is evaluated on the entries of a $2 \times 2$ matrix $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, the result is an eigenvalue of $A$, for all $A$.
 :::
 
 ::: {.solution}
