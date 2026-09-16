@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-1
 kind: problem
-title: Hatcher Section 3.2 Exercise 1
+title: Cup product structure on closed orientable surfaces
 classification:
   areas:
   - topology

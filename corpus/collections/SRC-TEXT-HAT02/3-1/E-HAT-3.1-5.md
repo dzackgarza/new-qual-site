@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-5
 kind: problem
-title: Hatcher Section 3.1 Exercise 5
+title: 1-cocycles as functions on paths and $H^1(X;G)\to\operatorname{Hom}(\pi_1(X),G)$
 classification:
   areas:
   - topology

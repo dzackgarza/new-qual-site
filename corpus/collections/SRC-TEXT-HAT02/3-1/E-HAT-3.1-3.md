@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-3
 kind: problem
-title: Hatcher Section 3.1 Exercise 3
+title: $\operatorname{Ext}^n_{\mathbb Z_4}(\mathbb Z_2,\mathbb Z_2)$ is nonzero for all $n$
 classification:
   areas:
   - topology

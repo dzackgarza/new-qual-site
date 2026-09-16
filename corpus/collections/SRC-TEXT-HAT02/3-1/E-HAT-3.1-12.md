@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-12
 kind: problem
-title: Hatcher Section 3.1 Exercise 12
+title: Vanishing of $H^k(X,X^n;G)$ for $k\le n$
 classification:
   areas:
   - topology

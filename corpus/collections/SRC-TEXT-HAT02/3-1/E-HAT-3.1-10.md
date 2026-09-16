@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-10
 kind: problem
-title: Hatcher Section 3.1 Exercise 10
+title: Cohomology of lens spaces with various coefficients
 classification:
   areas:
   - topology

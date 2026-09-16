@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-7
 kind: problem
-title: Hatcher Section 3.1 Exercise 7
+title: $\operatorname{Hom}(H_n(X),\mathbb Z)$ is not a cohomology theory
 classification:
   areas:
   - topology

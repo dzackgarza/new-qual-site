@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-10
 kind: problem
-title: Hatcher Section 3.2 Exercise 10
+title: Failure of the Künneth cross product for infinite discrete spaces
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-6
 kind: problem
-title: Hatcher Section 3.1 Exercise 6
+title: Simplicial cohomology of the torus, $\mathbb{RP}^2$, and the Klein bottle
 classification:
   areas:
   - topology

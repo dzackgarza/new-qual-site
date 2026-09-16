@@ -236,31 +236,54 @@ source:
     - E-HAT-2.C-9
   - name: '3.1'
     problems:
-    - E-HAT-3.1-1
-    - E-HAT-3.1-2
-    - E-HAT-3.1-3
-    - E-HAT-3.1-4
-    - E-HAT-3.1-5
-    - E-HAT-3.1-6
-    - E-HAT-3.1-7
-    - E-HAT-3.1-8
-    - E-HAT-3.1-9
-    - E-HAT-3.1-10
-    - E-HAT-3.1-11
-    - E-HAT-3.1-12
-    - E-HAT-3.1-13
+    - id: E-HAT-3.1-1
+      comment: Exercise 3.1.1
+    - id: E-HAT-3.1-2
+      comment: Exercise 3.1.2
+    - id: E-HAT-3.1-3
+      comment: Exercise 3.1.3
+    - id: E-HAT-3.1-4
+      comment: Exercise 3.1.4
+    - id: E-HAT-3.1-5
+      comment: Exercise 3.1.5
+    - id: E-HAT-3.1-6
+      comment: Exercise 3.1.6
+    - id: E-HAT-3.1-7
+      comment: Exercise 3.1.7
+    - id: E-HAT-3.1-8
+      comment: Exercise 3.1.8
+    - id: E-HAT-3.1-9
+      comment: Exercise 3.1.9
+    - id: E-HAT-3.1-10
+      comment: Exercise 3.1.10
+    - id: E-HAT-3.1-11
+      comment: Exercise 3.1.11
+    - id: E-HAT-3.1-12
+      comment: Exercise 3.1.12
+    - id: E-HAT-3.1-13
+      comment: Exercise 3.1.13
   - name: '3.2'
     problems:
-    - E-HAT-3.2-1
-    - E-HAT-3.2-2
-    - E-HAT-3.2-3
-    - E-HAT-3.2-4
-    - E-HAT-3.2-5
-    - E-HAT-3.2-6
-    - E-HAT-3.2-7
-    - E-HAT-3.2-8
-    - E-HAT-3.2-9
-    - E-HAT-3.2-10
+    - id: E-HAT-3.2-1
+      comment: Exercise 3.2.1
+    - id: E-HAT-3.2-2
+      comment: Exercise 3.2.2
+    - id: E-HAT-3.2-3
+      comment: Exercise 3.2.3
+    - id: E-HAT-3.2-4
+      comment: Exercise 3.2.4
+    - id: E-HAT-3.2-5
+      comment: Exercise 3.2.5
+    - id: E-HAT-3.2-6
+      comment: Exercise 3.2.6
+    - id: E-HAT-3.2-7
+      comment: Exercise 3.2.7
+    - id: E-HAT-3.2-8
+      comment: Exercise 3.2.8
+    - id: E-HAT-3.2-9
+      comment: Exercise 3.2.9
+    - id: E-HAT-3.2-10
+      comment: Exercise 3.2.10
     - E-HAT-3.2-11
     - E-HAT-3.2-12
     - E-HAT-3.2-13

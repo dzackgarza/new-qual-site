@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-9
 kind: problem
-title: Hatcher Section 3.1 Exercise 9
+title: Degree $d$ maps act on $H^n(S^n;G)$ by multiplication by $d$
 classification:
   areas:
   - topology

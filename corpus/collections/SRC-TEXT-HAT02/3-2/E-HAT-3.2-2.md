@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-2
 kind: problem
-title: Hatcher Section 3.2 Exercise 2
+title: Cup products vanish on unions of contractible open sets
 classification:
   areas:
   - topology

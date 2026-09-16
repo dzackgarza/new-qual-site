@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-6
 kind: problem
-title: Hatcher Section 3.2 Exercise 6
+title: The $d$-th power map on $\mathbb{CP}^n$ in cohomology
 classification:
   areas:
   - topology

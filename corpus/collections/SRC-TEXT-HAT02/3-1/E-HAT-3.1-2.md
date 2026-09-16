@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-2
 kind: problem
-title: Hatcher Section 3.1 Exercise 2
+title: Multiplication by $n$ induces multiplication by $n$ on $\operatorname{Ext}$
 classification:
   areas:
   - topology

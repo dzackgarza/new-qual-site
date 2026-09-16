@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-4
 kind: problem
-title: Hatcher Section 3.1 Exercise 4
+title: Homology defined by $\operatorname{Hom}(G,C_n(X))$
 classification:
   areas:
   - topology

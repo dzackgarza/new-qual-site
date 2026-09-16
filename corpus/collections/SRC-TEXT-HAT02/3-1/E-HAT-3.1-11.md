@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-11
 kind: problem
-title: Hatcher Section 3.1 Exercise 11
+title: Moore spaces show the universal coefficient splitting is not natural
 classification:
   areas:
   - topology

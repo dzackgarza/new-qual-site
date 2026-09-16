@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-5
 kind: problem
-title: Hatcher Section 3.2 Exercise 5
+title: Cohomology ring $H^*(\mathbb{RP}^\infty;\mathbb Z_{2k})$
 classification:
   areas:
   - topology

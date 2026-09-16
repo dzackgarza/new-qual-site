@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-1
 kind: problem
-title: Hatcher Section 3.1 Exercise 1
+title: Functoriality of $\operatorname{Ext}(H,G)$ in both variables
 classification:
   areas:
   - topology

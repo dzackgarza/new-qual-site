@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-8
 kind: problem
-title: Hatcher Section 3.1 Exercise 8
+title: Cohomology of spheres, good pairs, and retracts
 classification:
   areas:
   - topology

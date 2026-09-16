@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-8
 kind: problem
-title: Hatcher Section 3.2 Exercise 8
+title: Spaces with isomorphic integral but distinct $\mathbb Z_p$ cohomology rings
 classification:
   areas:
   - topology

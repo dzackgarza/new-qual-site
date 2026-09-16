@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-13
 kind: problem
-title: Hatcher Section 3.1 Exercise 13
+title: Maps to $K(G,1)$ represent $H^1(X;G)$
 classification:
   areas:
   - topology

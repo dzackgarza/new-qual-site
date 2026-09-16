@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-9
 kind: problem
-title: Hatcher Section 3.2 Exercise 9
+title: $H^*(X;\mathbb Z_p)\cong H^*(X;\mathbb Z)\otimes\mathbb Z_p$ as rings when homology is free
 classification:
   areas:
   - topology
