@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAX24
 kind: problem
-title: Define the modular group
+title: The modular group and its action on the upper half-plane
 classification:
   areas:
   - complex-analysis

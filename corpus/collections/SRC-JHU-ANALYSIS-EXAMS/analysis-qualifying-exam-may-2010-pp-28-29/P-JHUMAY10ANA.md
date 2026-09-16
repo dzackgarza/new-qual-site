@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANA
 kind: problem
-title: "f has a removable singularity at 0."
+title: Removable singularity under the bound $|f(z)|\le|z|^{-1/2}$
 classification:
   areas:
   - complex-analysis

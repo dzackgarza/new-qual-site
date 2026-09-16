@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAX26
 kind: problem
-title: Define the Riemann zeta function
+title: The Riemann zeta function and its analytic continuation
 classification:
   areas:
   - complex-analysis

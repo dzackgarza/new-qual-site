@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAX18
 kind: problem
-title: Evaluate an improper integral by complex analysis
+title: The integral $\int_0^\infty \frac{\sqrt x}{1+x^2}\,dx$
 classification:
   areas:
   - complex-analysis
