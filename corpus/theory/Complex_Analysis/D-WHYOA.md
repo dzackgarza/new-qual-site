@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-WHYOA
 kind: definition
-title: The logarithmic derivative
+title: Logarithmic derivative
 classification:
   areas:
   - complex-analysis
@@ -14,9 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **logarithmic derivative** is defined as 
-\[
-\logd f \da {f' \over f}
-.\]
+::: {.definition}
+Let $\Omega\subseteq\CC$ be open and let $f$ be [[D-7DFVJ|meromorphic]] on $\Omega$ and not identically zero on any connected component of $\Omega$.
+The \dfn{logarithmic derivative} of $f$ is the meromorphic function
+$$
+\logd f\coloneqq\frac{f'}{f}
+$$
+on $\Omega$.
 :::
