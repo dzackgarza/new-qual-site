@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-2B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 2B
+title: Gaussian integral via $F(t)^2+G(t)$ constant
 classification:
   areas:
   - prelim

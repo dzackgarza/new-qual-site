@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-6B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 6B
+title: Moore determinant over $\mathbb Z/2$
 classification:
   areas:
   - prelim

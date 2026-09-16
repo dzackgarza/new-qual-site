@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-8A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 8A
+title: The elementary symmetric polynomial map on $\mathbb C^3$ is surjective but not injective
 classification:
   areas:
   - prelim

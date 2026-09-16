@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-7B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 7B
+title: Conjugacy in $\operatorname{GL}_2^+(\mathbb R)$ versus $\operatorname{GL}_2(\mathbb R)$
 classification:
   areas:
   - prelim

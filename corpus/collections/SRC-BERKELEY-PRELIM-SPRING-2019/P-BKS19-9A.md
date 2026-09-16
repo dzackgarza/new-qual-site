@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-9A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 9A
+title: Fast-growing series $\sum 1/f(n)$ avoiding a countable set
 classification:
   areas:
   - prelim

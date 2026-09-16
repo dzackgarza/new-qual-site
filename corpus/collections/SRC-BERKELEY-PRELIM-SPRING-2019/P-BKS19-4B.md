@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-4B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 4B
+title: Bound on the zeros of a monic complex polynomial
 classification:
   areas:
   - prelim

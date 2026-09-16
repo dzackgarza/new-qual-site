@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-6A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 6A
+title: Invertible matrices with $YX=aXY$ exist iff $a^n=1$
 classification:
   areas:
   - prelim

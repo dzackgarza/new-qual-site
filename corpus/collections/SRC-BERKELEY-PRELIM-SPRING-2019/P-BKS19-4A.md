@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-4A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 4A
+title: Evaluation of $\int_{-\infty}^\infty x\sin x/(1+x^2)^2\,dx$
 classification:
   areas:
   - prelim

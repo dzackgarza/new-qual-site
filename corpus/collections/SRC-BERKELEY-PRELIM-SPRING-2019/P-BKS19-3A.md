@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-3A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 3A
+title: Sup-norm bound $\max|f|\le\frac18\max|f''|$ with zero boundary values
 classification:
   areas:
   - prelim

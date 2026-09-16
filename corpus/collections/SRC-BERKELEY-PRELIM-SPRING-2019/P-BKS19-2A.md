@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-2A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 2A
+title: Solutions of autonomous ODEs $y'=f(y)$ are monotone
 classification:
   areas:
   - prelim

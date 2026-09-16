@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-5A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 5A
+title: Roots of $e^z=3z^6$ in the upper half of the unit disk
 classification:
   areas:
   - prelim

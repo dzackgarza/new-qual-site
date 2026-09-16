@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-7A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 7A
+title: Complex matrices with $A^{37}=I$ are diagonalizable
 classification:
   areas:
   - prelim

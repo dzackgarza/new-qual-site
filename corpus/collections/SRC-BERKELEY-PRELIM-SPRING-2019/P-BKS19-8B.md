@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-8B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 8B
+title: Boolean rings are commutative of characteristic 2
 classification:
   areas:
   - prelim

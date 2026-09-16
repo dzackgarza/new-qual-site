@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-3B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 3B
+title: Convergence of the iteration $x_{n+1}=1/(1+x_n)$
 classification:
   areas:
   - prelim

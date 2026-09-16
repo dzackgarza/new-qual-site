@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-1A
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 1A
+title: Decaying solutions of $y'''=y$
 classification:
   areas:
   - prelim

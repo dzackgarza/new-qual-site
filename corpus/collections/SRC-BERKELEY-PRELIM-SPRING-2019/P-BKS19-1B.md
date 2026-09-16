@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-1B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 1B
+title: Evaluation of $\int_0^{\pi/2}\sin x\cos x/(\sin^4x+\cos^4x)\,dx$
 classification:
   areas:
   - prelim

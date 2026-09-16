@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-5B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 5B
+title: Coefficient bounds for analytic $f$ with $|f(z)|<1/(1-|z|)$
 classification:
   areas:
   - prelim

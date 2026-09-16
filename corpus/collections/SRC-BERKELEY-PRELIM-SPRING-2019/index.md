@@ -18,24 +18,42 @@ source:
   institution: berkeley
   area: prelim
   problems:
-  - P-BKS19-1A
-  - P-BKS19-2A
-  - P-BKS19-3A
-  - P-BKS19-4A
-  - P-BKS19-5A
-  - P-BKS19-6A
-  - P-BKS19-7A
-  - P-BKS19-8A
-  - P-BKS19-9A
-  - P-BKS19-1B
-  - P-BKS19-2B
-  - P-BKS19-3B
-  - P-BKS19-4B
-  - P-BKS19-5B
-  - P-BKS19-6B
-  - P-BKS19-7B
-  - P-BKS19-8B
-  - P-BKS19-9B
+  - id: P-BKS19-1A
+    comment: Problem 1A
+  - id: P-BKS19-2A
+    comment: Problem 2A
+  - id: P-BKS19-3A
+    comment: Problem 3A
+  - id: P-BKS19-4A
+    comment: Problem 4A
+  - id: P-BKS19-5A
+    comment: Problem 5A
+  - id: P-BKS19-6A
+    comment: Problem 6A
+  - id: P-BKS19-7A
+    comment: Problem 7A
+  - id: P-BKS19-8A
+    comment: Problem 8A
+  - id: P-BKS19-9A
+    comment: Problem 9A
+  - id: P-BKS19-1B
+    comment: Problem 1B
+  - id: P-BKS19-2B
+    comment: Problem 2B
+  - id: P-BKS19-3B
+    comment: Problem 3B
+  - id: P-BKS19-4B
+    comment: Problem 4B
+  - id: P-BKS19-5B
+    comment: Problem 5B
+  - id: P-BKS19-6B
+    comment: Problem 6B
+  - id: P-BKS19-7B
+    comment: Problem 7B
+  - id: P-BKS19-8B
+    comment: Problem 8B
+  - id: P-BKS19-9B
+    comment: Problem 9B
   date:
     kind: academic-term
     term: spring

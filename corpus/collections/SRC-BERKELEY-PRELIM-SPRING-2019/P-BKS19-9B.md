@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-9B
 kind: problem
-title: Berkeley Spring 2019 preliminary exam problem 9B
+title: Square roots in $S_6$ of elements of $A_6$
 classification:
   areas:
   - prelim
