@@ -14,20 +14,34 @@ source:
   source_kind: compilation
   area: algebra
   problems:
-  - P-CH13-6
-  - P-CH13-10
-  - P-CH13-12
-  - P-CH13-13
-  - P-CH13-16
-  - P-CH13-18
-  - P-CH13-26
-  - P-CH13-29
-  - P-CH13-35
-  - P-CH13-41
-  - P-CH13-46
-  - P-CH13-47
-  - P-CH13-57
-  - P-CH13-68
+  - id: P-CH13-6
+    comment: Exercise 6
+  - id: P-CH13-10
+    comment: Exercise 10
+  - id: P-CH13-12
+    comment: Exercise 12
+  - id: P-CH13-13
+    comment: Exercise 13
+  - id: P-CH13-16
+    comment: Exercise 16
+  - id: P-CH13-18
+    comment: Exercise 18
+  - id: P-CH13-26
+    comment: Exercise 26
+  - id: P-CH13-29
+    comment: Exercise 29
+  - id: P-CH13-35
+    comment: Exercise 35
+  - id: P-CH13-41
+    comment: Exercise 41
+  - id: P-CH13-46
+    comment: Exercise 46
+  - id: P-CH13-47
+    comment: Exercise 47
+  - id: P-CH13-57
+    comment: Exercise 57
+  - id: P-CH13-68
+    comment: Exercise 68
   date: {kind: year, year: 2016}
 ---
 
