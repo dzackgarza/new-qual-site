@@ -27,6 +27,6 @@ source:
     year: 2019
 ---
 
-::: remark
-Institution not named in the document; six problems with worked solutions.
+::: {.remark}
+The document names no institution. It contains six problems with worked solutions.
 :::
