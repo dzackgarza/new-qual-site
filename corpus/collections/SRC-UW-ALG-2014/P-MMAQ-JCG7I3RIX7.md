@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 - Let $G$ be a group (not necessarily finite) that contains a subgroup of index $n$.
-  Show that $G$ contains a `\textit{normal}`{=tex} subgroup $N$ such that $n\leq[G:N]\leq n!$
+  Show that $G$ contains a *normal* subgroup $N$ such that $n\leq[G:N]\leq n!$
 
 - Use part (a) to show that there is no simple group of order 36.
 :::
