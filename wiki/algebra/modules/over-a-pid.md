@@ -91,8 +91,6 @@ For a module $M$ over a commutative ring $R$, the functor $M\tensor_R-$ preserve
 
 [[PR-O5YUI]]
 
-[[PR-BHUO6]]
-
 [[PR-TGFTL]]
 
 [[PR-LPJLD]]
