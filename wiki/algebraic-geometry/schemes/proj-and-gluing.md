@@ -31,3 +31,7 @@ What makes it worth a separate construction is that the charts and the gluing ar
 
 The reason to define $\PP^n$ over $\ZZ$ and base change, rather than glue afresh over each base, is that the properties of $\PP^n\slice S$ that matter — properness, the computation of $\OO(d)$ and its cohomology — are stable under base change, so they are proved once.
 Base change is the subject of [[algebraic-geometry/schemes/fibre-products-and-base-change|the next page]].
+
+## Quotients by group actions
+
+[[D-GITQUOT]]

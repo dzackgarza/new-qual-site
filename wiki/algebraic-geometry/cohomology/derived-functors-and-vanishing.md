@@ -20,6 +20,8 @@ The definition is never used directly and is asked anyway, so it is worth being 
 Flasque sheaves are the practical supply of acyclics, and the only class one ever exhibits by hand.
 Injective implies flasque implies acyclic, and the second implication is the one whose proof an examiner may ask for.
 
+[[D-SHFFINE]]
+
 ## The two bounds
 
 [[T-COHAFF]]
@@ -36,3 +38,7 @@ The hypotheses are complementary and it is worth keeping them straight: affine v
 
 Every computation on the exam is this sequence applied to the ideal sequence or the skyscraper sequence, with one term known from projective space.
 Being fluent with the twisted ideal sequence is worth more than any vanishing theorem, because it is what turns the theorems into numbers.
+
+## The six operations
+
+[[D-SHFSIX]]

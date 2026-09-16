@@ -33,8 +33,9 @@ If $Z$ and $X$ are smooth over $k$ of dimensions $m$ and $n$, the conormal seque
 \]
 $\mci/\mci^2$ is locally free of rank $n - m$, and taking determinants gives
 \[
-\omega_Z \cong \ro{\qty{\omega_X \tensor \Extpower^{n-m}\mcn_{Z/X}}}{Z} .
+\omega_Z \cong \ro{\omega_X}{Z} \tensor_{\OO_Z} \Extpower^{n-m}\mcn_{Z/X} ,
 \]
+where $\mcn_{Z/X}$ is already an $\OO_Z$-module, so $\omega_X$ is restricted to $Z$ before tensoring.
 :::
 
 ::: {.theorem title="Adjunction for a divisor"}

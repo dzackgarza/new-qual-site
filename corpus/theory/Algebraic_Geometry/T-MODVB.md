@@ -35,6 +35,6 @@ Taking a rank-$n$ vector bundle $\pi: E \to X$ to its sheaf of sections $U \maps
 Both objects are glued from the same data — trivialisations on a cover, and transition functions in $\GL_n(\OO_X(U_{ij}))$ satisfying the cocycle condition — so the equivalence is really the statement that each is a name for that data.
 The sheaf side is the one to compute with, because it lives in an abelian category where kernels, cokernels and cohomology exist; the bundle side is the one that makes geometric statements about fibres legible.
 
-A locally free sheaf is quasicoherent, and coherent when the rank is finite: local freeness is the strongest of the three conditions, and the questions about it are questions about the transition data.
-The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre, and a coherent sheaf is locally free exactly when the fibre dimension is locally constant, over a reduced scheme.
+A locally free sheaf is quasicoherent, and on a locally Noetherian scheme it is coherent when the rank is finite: local freeness is the strongest of the three conditions, and the questions about it are questions about the transition data.
+The fibre $\mcf \tensor \kappa(x)$ recovers the bundle's fibre, and a coherent sheaf on a reduced locally Noetherian scheme is locally free exactly when the fibre dimension $x \mapsto \dim_{\kappa(x)} \mcf \tensor \kappa(x)$ is locally constant.
 :::

@@ -23,3 +23,7 @@ An irreducible closed subset of a scheme has a unique generic point, and this is
 For $X$ integral the generic point $\eta$ has residue field $k(X)$, the function field, and a rational map is a morphism defined on some neighbourhood of $\eta$.
 
 The practical consequence is that generic statements become statements at a point: a coherent sheaf is locally free at $\eta$ always, and generic flatness, generic smoothness and generic reducedness are all the observation that a condition open on the base holds at $\eta$ exactly when it holds on a dense open.
+
+## Singularity classes
+
+[[D-SCHCMGOR]]

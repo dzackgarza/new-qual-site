@@ -29,3 +29,11 @@ The shape to memorise is a hierarchy of stability: $\chi$ is locally constant, e
 
 Flatness is load-bearing in all of it, and reducedness of the base is what Grauert's form needs.
 Asked for an example where cohomology fails to commute with base change, give a family of degree-zero line bundles on a fixed curve: $h^0$ jumps from $0$ to $1$ at the trivial bundle, and $\chi = 1-g$ throughout.
+
+## Base change theorems
+
+[[T-BASECHANGE]]
+
+## The projection formula
+
+[[PR-SCHPROJFORM]]

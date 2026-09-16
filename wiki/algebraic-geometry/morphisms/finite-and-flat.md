@@ -35,3 +35,9 @@ The third is why flatness is invisible in the curve questions on the exam and es
 [[FE-MORNOTFLAT]]
 
 The two failures are different and the distinction gets asked for: the blowup jumps in fibre *dimension*, the normalisation jumps in fibre *length*. Equidimensional fibres are therefore necessary and not sufficient, and the invariant flatness really fixes is the Hilbert polynomial.
+
+## Flatness in examples
+
+[[FE-SCHFFLAT]]
+
+[[PR-MIRACLEFLAT]]

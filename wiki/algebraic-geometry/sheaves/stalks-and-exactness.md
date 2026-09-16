@@ -23,6 +23,8 @@ The example makes the gap a number.
 
 [[FE-SHFISOSTALKS]]
 
+[[PR-SHFPUSHEX]]
+
 ## What to say when asked where it fails
 
 Lifting a global section of $\mch$ is possible over each member of some open cover, by the definition of surjectivity.
@@ -33,6 +35,12 @@ The section lifts globally exactly when that cocycle is a coboundary, so the obs
 \]
 is the bookkeeping for it.
 Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream of this paragraph.
+
+## Locally constant and constructible sheaves
+
+[[D-SHFLOCSYS]]
+
+[[D-SHFCONSTR]]
 
 ## Support
 

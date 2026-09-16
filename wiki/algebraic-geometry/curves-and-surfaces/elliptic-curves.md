@@ -57,3 +57,7 @@ For $y^2 = x^3 - x$ the computation is short enough to do on the board, and it l
 
 The subgroup claim is the part that needs the base point to be rational; finite generation is the part with content, and it is a descent plus a height.
 Torsion is classified and the rank is not, which is where to stop.
+
+## Families of elliptic curves
+
+[[D-ELLSCH]]

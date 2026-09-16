@@ -37,3 +37,7 @@ The list of adjectives stable under base change is long and the exceptions are f
 
 The universal property in the definition of the fibre product is a statement about $\Hom(T, -)$ for all $T$, which is to say it is a statement about the functor of points.
 Reading it that way turns the two standard computations — maps out of a field and maps out of the dual numbers — into the statement that points and tangent vectors are both things a scheme is probed by, and it is the language in which moduli problems are posed.
+
+## Fibres of families
+
+[[D-SCHFIBRES]]

@@ -47,6 +47,10 @@ Duality converts $h^2$ into $h^0(K-D)$, and the resulting inequality is the firs
 
 [[T-KODVAN]]
 
+[[T-GAGA]]
+
 ## Topology of hyperplane sections
 
 [[T-LEFHYP]]
+
+[[T-HARDLEF]]

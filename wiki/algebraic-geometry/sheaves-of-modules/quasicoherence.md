@@ -20,6 +20,8 @@ That is the form to reach for, because a presentation exists in cases where the 
 
 [[D-CB9XS]]
 
+[[FE-SHFPONE]]
+
 $\OO(1)$ is where the grading on the homogeneous coordinate ring becomes geometry: its sections are the linear forms, its $d$-th power has the degree-$d$ forms, and the Hilbert polynomial of [[algebraic-geometry/varieties/dimension-and-degree|dimension and degree]] is the function $d \mapsto h^0(X, \OO_X(d))$ for $d \gg 0$.
 
 Every coherent sheaf on projective space is a quotient of a sum of twists.

@@ -20,6 +20,7 @@ prompts:
 - What is the Euler sequence?
 - How do you compute $\omega_{\PP^n}$?
 - Why is $\Omega_{\PP^n}$ not a sum of line bundles?
+- On $\PP^1$, what is the cokernel of $\OO \to \OO(1)^{\oplus 2}$?
 ---
 
 ::: {.theorem title="Euler sequence"}
@@ -40,5 +41,11 @@ Taking top exterior powers in a short exact sequence multiplies them, so
 \]
 which is the one computation that the genus formulas, the Fano property of $\PP^n$, and every application of adjunction in projective space come out of.
 
-The sequence also does not split for $n \geq 1$: $\Omega_{\PP^n}$ is locally free but not a direct sum of line bundles, and the Euler sequence is the standard witness that locally free does not mean split.
+The sequence does not split for $n \geq 1$, and for $n \geq 2$ the sheaf $\Omega_{\PP^n}$ is locally free but not a direct sum of line bundles: the Euler sequence is the standard witness that locally free does not mean split.
 :::
+
+::: {.example}
+On $\PP^1$ with coordinates $x, y$, the dual Euler sequence is $0 \to \OO \xrightarrow{(x,\,y)} \OO(1)^{\oplus 2} \to T_{\PP^1} \to 0$.
+So the cokernel of $(x, y) \colon \OO \to \OO(1)^{\oplus 2}$ is $T_{\PP^1} \cong \OO(2)$, the determinant of $\OO(1)^{\oplus 2}$; explicitly $(s, t) \mapsto y s - x t$ identifies it with $\OO(2)$.
+:::
+

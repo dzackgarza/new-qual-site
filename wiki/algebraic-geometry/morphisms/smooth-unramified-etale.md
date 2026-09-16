@@ -60,3 +60,11 @@ The jacobian criterion is the only computational tool here, and the thing that g
 
 Frobenius is the example that defeats every cheap criterion at once, and generic smoothness is the theorem it obstructs, which is why characteristic zero appears in the statement.
 Generic *flatness* needs no such hypothesis, and keeping the two apart is the usual follow-up.
+
+## Normal and regular morphisms
+
+[[D-MORNORMREG]]
+
+## Henselian rings
+
+[[D-HENSEL]]

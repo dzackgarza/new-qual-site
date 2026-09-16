@@ -14,6 +14,7 @@ relations: []
 review: draft
 prompts:
 - What is the Lefschetz hyperplane section theorem?
+- What is the weak Lefschetz theorem?
 ---
 
 ::: {.theorem title="Lefschetz hyperplane theorem"}
