@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-7DICT
 kind: theorem
-title: Cantor's Intersection Theorem
+title: Cantor's intersection theorem
 classification:
   areas:
   - topology
@@ -13,15 +13,11 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $X$ be compact and let $C_1 \supseteq C_2 \supseteq \cdots$ be a nested decreasing sequence of nonempty **closed** subsets of $X$.
-Then $\Intersect_n C_n \neq \emptyset$.
-
-Equivalently, taking each $C_n$ compact suffices when $X$ is Hausdorff, since a compact subset of a Hausdorff space is closed.
+Let $X$ be a compact space and let $C_1 \supseteq C_2 \supseteq \cdots$ be a decreasing sequence of nonempty closed subsets of $X$.
+Then $\Intersect_n C_n \neq \emptyset$ [@Mun00, Theorem 26.9].
 :::
 
 ::: {.remark}
-Munkres, *Topology*, §26, Theorem 26.9 and the nested-sequence special case that follows it.
-
-Closedness is what the argument uses, and dropping it is not harmless: give an infinite set the indiscrete topology, where every subset is compact, and take $C_n = \ts{n, n+1, \cdots}$.
-Each is nonempty and compact and the sequence decreases, but the intersection is empty.
+If $X$ is Hausdorff, it suffices that each $C_n$ be nonempty and compact, since compact subsets of Hausdorff spaces are closed [@Mun00, Theorem 26.3].
+Without closedness the conclusion fails: in an infinite set $\NN$ with the indiscrete topology every subset is compact, and $C_n = \ts{n, n+1, \ldots}$ is a decreasing sequence of nonempty compact sets with empty intersection.
 :::
