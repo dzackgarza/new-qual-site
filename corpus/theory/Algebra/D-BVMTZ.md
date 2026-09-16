@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BVMTZ
 kind: definition
-title: Reducible and Irreducible Polynomials
+title: Reducible and irreducible polynomials
 classification:
   areas:
   - algebra
@@ -15,6 +15,7 @@ review: draft
 ---
 
 ::: {.definition}
-For $\FF$ a field, a polynomial $f\in \FF[x]$ is **reducible** if and only if $f$ can be factored as $f(x) = g(x) h(x)$ for some $g, h\in \FF[x]$ with $\deg g, \deg h \geq 1$ (so $g, h$ are nonconstant).
-$f$ is **irreducible** if $f$ is not reducible.
+Let $k$ be a field and let $f\in k[x]$ be nonconstant.
+The polynomial $f$ is \dfn{reducible} if there exist $g, h\in k[x]$ with $\deg g, \deg h \geq 1$ and $f = gh$.
+The polynomial $f$ is \dfn{irreducible} if it is not reducible.
 :::

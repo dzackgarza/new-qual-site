@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A module is **simple** iff it has no nontrivial proper submodules.
+Let $R$ be a ring.
+An $R$-module $M$ is \dfn{simple} if its only submodules are $0$ and $M$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BSUV4
 kind: definition
-title: Normal Matrix
+title: Normal matrix
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-A matrix $A\in \Mat(n\times n; \CC)$ is **normal** iff $A^{\dagger} A = AA^{\dagger}$ where $A^{\dagger}$ is the conjugate transpose.
+Let $n\geq 1$.
+A matrix $A\in \Mat(n\times n; \CC)$ is \dfn{normal} if $A^{\dagger} A = AA^{\dagger}$, where $A^{\dagger} = \bar A^t$ is the conjugate transpose of $A$.
 :::
