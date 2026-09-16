@@ -18,7 +18,7 @@ review: draft
 
 ::: {.fact}
 Let $R$ be a commutative ring.
-The [[D-2IO6Q|Jacobson radical]] of $R$ is the intersection of the annihilators of the [[D-CRWZ7|simple]] $R$-modules:
+The [[D-2IO6Q|Jacobson radical]] of $R$ is the intersection of the annihilators of the [[D-4KM4P|simple]] $R$-modules:
 $$
 J(R)=\bigcap_{\mfm\in\mspec R}\mfm=\bigcap_{M\text{ simple}}\Ann_R(M).
 $$
