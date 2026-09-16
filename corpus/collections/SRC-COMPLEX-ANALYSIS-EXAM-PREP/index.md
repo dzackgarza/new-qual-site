@@ -37,7 +37,6 @@ source:
     - id: P-CAEXAMPREP-16
 ---
 
-::: remark
-The retained PDF is a worked complex-analysis exam-preparation sheet.
-It contains sixteen numbered practice problems followed immediately by their solutions; this collection records the sixteen posed problems in source order.
+::: {.remark}
+A complex analysis exam-preparation sheet of sixteen numbered practice problems, each followed by its solution.
 :::
