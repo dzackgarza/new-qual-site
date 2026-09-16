@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-08
 kind: problem
-title: UCLA analysis Fall 2015, Problem 8
+title: Periodic entire functions of exponential type less than 1 are constant
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-10
 kind: problem
-title: UCLA analysis Fall 2015, Problem 10
+title: Residue computation of $\int_0^\infty e^{\cos x}\sin(\sin x)\,\frac{dx}{x}$
 classification:
   areas:
   - real-analysis

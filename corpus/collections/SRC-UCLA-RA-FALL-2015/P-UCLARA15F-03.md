@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-03
 kind: problem
-title: UCLA analysis Fall 2015, Problem 3
+title: Locally integrable functions bounded by the $L^p$ quasinorm with $0<p<1$ vanish
 classification:
   areas:
   - real-analysis

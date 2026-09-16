@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-04
 kind: problem
-title: UCLA analysis Fall 2015, Problem 4
+title: Completeness of orthonormal systems close to an orthonormal basis
 classification:
   areas:
   - real-analysis

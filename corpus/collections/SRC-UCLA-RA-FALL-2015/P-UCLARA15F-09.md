@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-09
 kind: problem
-title: UCLA analysis Fall 2015, Problem 9
+title: Normal families in a Gaussian-weighted $L^2$ space of entire functions
 classification:
   areas:
   - real-analysis

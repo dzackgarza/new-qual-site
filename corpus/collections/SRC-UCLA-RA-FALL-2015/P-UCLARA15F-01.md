@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-01
 kind: problem
-title: UCLA analysis Fall 2015, Problem 1
+title: Locally uniform convergence of $f*g_n$ for bounded $g_n\to0$ almost everywhere
 classification:
   areas:
   - real-analysis

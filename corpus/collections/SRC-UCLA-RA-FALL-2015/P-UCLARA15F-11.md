@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-11
 kind: problem
-title: UCLA analysis Fall 2015, Problem 11
+title: Phragmén--Lindelöf principle for subharmonic functions in the quadrant
 classification:
   areas:
   - real-analysis

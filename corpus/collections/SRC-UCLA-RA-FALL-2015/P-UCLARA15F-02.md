@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-02
 kind: problem
-title: UCLA analysis Fall 2015, Problem 2
+title: Almost everywhere convergence of $\sum_n\int_n^{n+n^{-a}}|f(x+y)|\,dy$ for $f\in L^p$
 classification:
   areas:
   - real-analysis

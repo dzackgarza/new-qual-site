@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-07
 kind: problem
-title: UCLA analysis Fall 2015, Problem 7
+title: Disk functions with symmetric boundary values under $z\mapsto 1/z$ are constant
 classification:
   areas:
   - real-analysis

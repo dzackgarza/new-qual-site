@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-12
 kind: problem
-title: UCLA analysis Fall 2015, Problem 12
+title: Harmonic function between the tangent circles $|z|=2$ and $|z-1|=1$
 classification:
   areas:
   - real-analysis

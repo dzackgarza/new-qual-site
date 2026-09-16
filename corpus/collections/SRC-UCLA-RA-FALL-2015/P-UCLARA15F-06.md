@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-06
 kind: problem
-title: UCLA analysis Fall 2015, Problem 6
+title: Difference-quotient characterization of $H^{1/2}(\mathbb R^d)$
 classification:
   areas:
   - real-analysis

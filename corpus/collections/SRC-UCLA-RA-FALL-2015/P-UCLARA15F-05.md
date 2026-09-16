@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15F-05
 kind: problem
-title: UCLA analysis Fall 2015, Problem 5
+title: Hölder continuous functions are meager in $C[0,1]$
 classification:
   areas:
   - real-analysis
