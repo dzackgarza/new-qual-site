@@ -5,18 +5,16 @@ order: 11
 
 # Resources
 
-Books, problem lists, and solutions for the real-analysis qual.
+- [[real-analysis/resources/preface|Exercises from Folland]] -- exercises from chapters 1--3 of [@Fol13].
 
-- [[real-analysis/resources/preface|Preface]], the reading plan.
+- [[real-analysis/resources/topics|Real analysis topics]] -- a workshop schedule and topic lists from qualifying exam syllabi.
 
-- [[real-analysis/resources/topics|Real Analysis Topics]], the topic checklist.
+- [[real-analysis/resources/books-notes|Real analysis books and notes]] -- textbooks, course notes, and the UGA Math 8100 homework and exams.
 
-- [[real-analysis/resources/books-notes|Real Analysis Books and Notes]], the annotated bibliography, including the UGA 8100 sheets.
+- [[real-analysis/resources/problems|Problems]] -- problem collections and exam archives.
 
-- [[real-analysis/resources/problems|Problems (Real)]], the problem index.
+- [[real-analysis/resources/solutions|Solutions]] -- solution collections.
 
-- [[real-analysis/resources/solutions|Solutions]], the solution index.
+- [[real-analysis/resources/extra-questions|Extra questions]] -- problems from the UNL real analysis workshop packet, grouped by topic.
 
-- [[real-analysis/resources/extra-questions|Extra Questions]], a workshop TeX dump: UNL Math 825/826 papers mixed with the UNL packet's January, June and May tags, not a UGA quals exam.
-
-- Browse the [Sources listing](exams.html) by subject, institution, and year; each exam page links its source material.
+The [Sources listing](exams.html) lists exams by subject, institution, and year, and each exam page links its source material.
