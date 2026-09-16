@@ -39,7 +39,3 @@ source:
     term: spring
     year: 2001
 ---
-
-::: {.remark}
-UC Berkeley Preliminary Exam, Spring 2001. Problems are listed in source order.
-:::
