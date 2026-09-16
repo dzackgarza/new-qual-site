@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA23
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 23'
+title: $\int_0^{x_0}\sqrt{1-x^2/x_0^2}\,dx$
 classification:
   areas: [real-analysis]
   topics: []

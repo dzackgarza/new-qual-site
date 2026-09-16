@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA18
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 18'
+title: $\int e^{2x}\sin x\,dx$
 classification:
   areas: [real-analysis]
   topics: []

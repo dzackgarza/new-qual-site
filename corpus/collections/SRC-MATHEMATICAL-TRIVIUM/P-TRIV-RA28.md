@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA28
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 28'
+title: Convergence of $\int\frac{dx}{x^\alpha\log^\beta x}$ on $(0,1)$ and $(1,\infty)$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA01
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 1'
+title: Derivatives of $\log\frac{a}{x}$, $\cos\arcsin x$ and $\frac{x^2+1}{x^3+1}$
 classification:
   areas: [real-analysis]
   topics: []

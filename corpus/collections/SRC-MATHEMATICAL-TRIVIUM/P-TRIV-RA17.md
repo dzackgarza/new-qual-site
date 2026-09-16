@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA17
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 17'
+title: $\int\frac{x^5+2}{x^2-1}\,dx$
 classification:
   areas: [real-analysis]
   topics: []

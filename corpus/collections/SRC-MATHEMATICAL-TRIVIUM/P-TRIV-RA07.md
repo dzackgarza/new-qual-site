@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA07
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 7'
+title: Minimum of the tilted double well $\frac\lambda4(x^2-v^2)^2-\epsilon x$ for small $\epsilon$
 classification:
   areas: [real-analysis]
   topics: []

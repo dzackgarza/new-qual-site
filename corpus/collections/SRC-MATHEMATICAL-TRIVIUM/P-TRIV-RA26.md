@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA26
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 26'
+title: $\int_0^1\frac{dx}{(ax+b(1-x))^2}=\frac1{ab}$
 classification:
   areas: [real-analysis]
   topics: []

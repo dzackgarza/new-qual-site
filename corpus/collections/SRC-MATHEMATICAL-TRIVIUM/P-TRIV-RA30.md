@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA30
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 30'
+title: Asymptotic approximation of the cosine integral $\operatorname{Ci}x$
 classification:
   areas: [real-analysis]
   topics: []

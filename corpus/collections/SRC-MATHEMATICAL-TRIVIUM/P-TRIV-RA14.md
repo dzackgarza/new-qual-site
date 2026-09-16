@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA14
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 14'
+title: Double and iterated limits of $x+y\sin\frac1x$
 classification:
   areas: [real-analysis]
   topics: []

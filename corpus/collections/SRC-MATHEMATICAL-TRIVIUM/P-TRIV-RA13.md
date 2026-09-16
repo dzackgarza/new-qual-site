@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA13
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 13'
+title: Limit of $\frac{\sin\tan x-\tan\sin x}{\arcsin\arctan x-\arctan\arcsin x}$ as $x\to0$
 classification:
   areas: [real-analysis]
   topics: []

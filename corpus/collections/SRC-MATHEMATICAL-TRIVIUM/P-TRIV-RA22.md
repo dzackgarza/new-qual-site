@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA22
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 22'
+title: $\int_0^{\pi^2}\cos\sqrt x\,dx$
 classification:
   areas: [real-analysis]
   topics: []

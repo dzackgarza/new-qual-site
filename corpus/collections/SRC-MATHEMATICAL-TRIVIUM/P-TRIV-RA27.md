@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA27
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 27'
+title: Convergence of $\int_0^1 x^{-\alpha}\,dx$ and $\int_1^\infty x^{-\alpha}\,dx$
 classification:
   areas: [real-analysis]
   topics: []

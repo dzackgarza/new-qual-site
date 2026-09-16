@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA02
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 2'
+title: Derivative of $x^x$
 classification:
   areas: [real-analysis]
   topics: []

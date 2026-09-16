@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA20
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 20'
+title: $\int_0^\infty x^ne^{-x}\,dx=n!$
 classification:
   areas: [real-analysis]
   topics: []

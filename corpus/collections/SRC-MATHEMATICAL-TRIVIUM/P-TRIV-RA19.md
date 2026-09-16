@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA19
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 19'
+title: $\int\frac{dx}{\sin x}$
 classification:
   areas: [real-analysis]
   topics: []

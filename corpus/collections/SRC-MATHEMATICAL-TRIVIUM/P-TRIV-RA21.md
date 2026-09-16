@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA21
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 21'
+title: Gaussian integral $\int_0^\infty e^{-x^2}\,dx$
 classification:
   areas: [real-analysis]
   topics: []

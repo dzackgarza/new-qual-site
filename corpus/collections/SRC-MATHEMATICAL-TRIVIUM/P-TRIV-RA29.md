@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA29
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 29'
+title: Convergence of the pendulum period integral at the turning point
 classification:
   areas: [real-analysis]
   topics: []

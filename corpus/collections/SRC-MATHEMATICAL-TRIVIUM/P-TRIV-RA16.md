@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA16
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 16'
+title: $\int\log x\,dx$
 classification:
   areas: [real-analysis]
   topics: []

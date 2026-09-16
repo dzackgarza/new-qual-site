@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA06
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 6'
+title: Derivative of $\cosh\sqrt{1-x^2}$ at $0$
 classification:
   areas: [real-analysis]
   topics: []

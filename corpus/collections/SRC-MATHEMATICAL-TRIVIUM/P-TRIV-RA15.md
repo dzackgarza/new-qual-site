@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA15
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 15'
+title: $\int\cot x\,dx$
 classification:
   areas: [real-analysis]
   topics: []

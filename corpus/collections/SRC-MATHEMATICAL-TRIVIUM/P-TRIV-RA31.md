@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA31
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 31'
+title: $\int_0^\infty e^{-ax}\frac{\sin xy}{x}\,dx$ by differentiation under the integral
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA04
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 4'
+title: $f^{(100)}(0)$ for $f(x)=(x^{100}+x)e^{100x}$
 classification:
   areas: [real-analysis]
   topics: []

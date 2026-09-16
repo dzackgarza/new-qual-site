@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA25
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 25'
+title: $\int_{\sqrt2}^\infty\frac{dx}{x+x^{\sqrt2}}$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA11
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 11'
+title: 'Huygens problem: amplifying velocity through a chain of elastic collisions'
 classification:
   areas: [real-analysis]
   topics: []

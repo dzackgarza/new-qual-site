@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA24
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 24'
+title: Vanishing of $\int_{-\infty}^\infty e^{-x^{-4}-x^4}\sin^5x\,dx$ by oddness
 classification:
   areas: [real-analysis]
   topics: []

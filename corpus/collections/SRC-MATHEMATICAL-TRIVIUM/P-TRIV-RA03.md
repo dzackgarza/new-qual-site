@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA03
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 3'
+title: Derivatives of $e^{-1/x^2}$ at $0$
 classification:
   areas: [real-analysis]
   topics: []

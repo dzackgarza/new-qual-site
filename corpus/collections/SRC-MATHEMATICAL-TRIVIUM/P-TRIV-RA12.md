@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA12
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 12'
+title: $\lim_{x\to0}\frac{\sin x}{x}$
 classification:
   areas: [real-analysis]
   topics: []

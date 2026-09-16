@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA09
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 9'
+title: Extrema of $x^2+y^2+z^2$ on an ellipsoid
 classification:
   areas: [real-analysis]
   topics: []

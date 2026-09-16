@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA08
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 8'
+title: Local extrema of $xy\log(x^2+y^2)$
 classification:
   areas: [real-analysis]
   topics: []

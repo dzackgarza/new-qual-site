@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA05
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 5'
+title: Estimating $\sin 100.1$ to within $10\%$
 classification:
   areas: [real-analysis]
   topics: []

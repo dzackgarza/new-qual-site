@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-RA10
 kind: problem
-title: 'Mathematical Trivium — Real Analysis problem 10'
+title: Triple product rule for partial derivatives of an implicit function
 classification:
   areas: [real-analysis]
   topics: []
