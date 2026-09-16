@@ -30,6 +30,6 @@ source:
     year: 2009
 ---
 
-::: remark
-UGA graduate preliminary exam, Spring 2009. The retained source states that the exam lasts three hours and contains eight equally weighted problems.
+::: {.remark}
+The paper states that the exam lasts three hours and has eight equally weighted problems.
 :::
