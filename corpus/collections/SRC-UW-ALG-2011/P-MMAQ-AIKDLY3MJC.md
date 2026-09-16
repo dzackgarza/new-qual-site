@@ -20,7 +20,7 @@ audit:
 
 ::: {.problem}
 Let $R$ be a commutative ring.
-Recall that an element $r$ of $R$ is `\textit{nilpotent}`{=tex} if $r^n=0$ for some positive integer $n$ and that the `\textit{nilradical}`{=tex} of $R$ is the set $N(R)$ of nilpotent elements.
+Recall that an element $r$ of $R$ is *nilpotent* if $r^n=0$ for some positive integer $n$ and that the *nilradical* of $R$ is the set $N(R)$ of nilpotent elements.
 
 - Prove that
   \[
