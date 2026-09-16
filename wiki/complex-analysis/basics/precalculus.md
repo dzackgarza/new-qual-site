@@ -1,125 +1,92 @@
 ---
 order: 1
-title: Precalculus Preliminaries 
+title: Precalculus preliminaries
 ---
 
-# Precalculus Preliminaries 
+# Precalculus preliminaries
 
 ## Geometry
 
-:::{.fact}
-The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
+::: {.fact}
+The interior angles of a convex $n$-gon sum to $(n-2)\pi$, so each interior angle of a regular $n$-gon is $\frac{n-2}{n}\pi$.
 
 :::
 
-:::{.fact title="Standard forms of conic sections"}
+::: {.fact title="Standard forms of conic sections"}
 \envlist
 
-- Circle: $x^2 + y^2 = r^2$, or equivalently $\abs{z-a}=c$ or $\abs{z-a} = c\abs{z-b}$, the locus of points whose distances to two fixed points $A, B$ is a constant ratio not equal to 1, so $d_1/d_2 = c$:
+- Circle: $x^2 + y^2 = r^2$, or $\abs{z-a}=r$.
+  For $a\neq b$ and a constant $c>0$ with $c\neq 1$, the locus $\abs{z-a} = c\abs{z-b}$ of points whose distances $d_1, d_2$ to the two points $a, b$ have constant ratio $d_1/d_2 = c$ is also a circle:
 
 ![](figures/2021-12-04_00-49-30.png)
 
-- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$, or equivalently $\abs{z-a} + \abs{z-b} = c$
-  Equivalently, the locus of points whose *sums* of distances to two fixed points points $A, B$ is a constant, so $d_1 + d_2 = c$:
+- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$, or $\abs{z-a} + \abs{z-b} = c$ with $c > \abs{a-b}$, the locus of points whose distances to $a$ and $b$ have constant sum $d_1 + d_2 = c$:
 
 ![](figures/2021-12-04_00-53-36.png)
 
-- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$ or equivalently $\abs{z-a} - \abs{z-b} = c$:
+- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$, or $\abs{\abs{z-a} - \abs{z-b}} = c$ with $0 < c < \abs{a-b}$:
 
 ![](figures/2021-12-04_00-57-40.png)
 
-  - Rectangular Hyperbola: $xy = \frac{c^2}{2}$.
-- Parabola: $-4ax + y^2 = 0$.
+  The rectangular hyperbola is $xy = \frac{c^2}{2}$.
+- Parabola: $y^2 = 4ax$.
 
 :::
 
-:::{.remark}
-Another way to distinguish: write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then consider the discriminant $\Delta = B^2 - 4AC$:
+::: {.fact title="Classification by the discriminant"}
+For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with discriminant $\Delta \coloneqq B^2 - 4AC$:
 
-- $\Delta < 0 \iff$ ellipse
-  - $\Delta < 0$ and $A=C, B=0 \iff$ circle
-- $\Delta = 0 \iff$ parabola
-- $\Delta > 0 \iff$ hyperbola
+- $\Delta < 0$ if and only if the conic is an ellipse, and it is a circle if and only if moreover $A=C$ and $B=0$;
+- $\Delta = 0$ if and only if the conic is a parabola;
+- $\Delta > 0$ if and only if the conic is a hyperbola.
 
 :::
 
-:::{.remark}
-Some useful parametric equations:
+::: {.fact title="Parameterizations"}
+\envlist
 
-- For ellipses $\qty{x\over a}^2 + \qty{y\over b}^2 = 1$, take $\tv{a\cos(t), b\sin(t)}$:
+- The ellipse $\qty{x\over a}^2 + \qty{y\over b}^2 = 1$ is parameterized by $t\mapsto (a\cos(t), b\sin(t))$:
 
 ![](figures/2021-12-30_19-31-42.png)
 
-  - In complex form: $\gamma(t) = ae^{it} + be^{-it}$.
-  - What the parameters mean: 
-	![](figures/2022-01-01_00-11-24.png)
-	- The foci are at $(\pm c, 0)$ where $c\da \sqrt{a^2-b^2}$ assuming $a\geq b$.
-	- The vertices are $(\pm a, 0)$ and $(0, \pm b)$.
+  - In complex form, $\gamma(t) = pe^{it} + qe^{-it}$ with $p \coloneqq \frac{a+b}{2}$ and $q \coloneqq \frac{a-b}{2}$, since $pe^{it} + qe^{-it} = a\cos(t) + ib\sin(t)$.
+  - For $a\geq b$ the foci are $(\pm c, 0)$ with $c\coloneqq \sqrt{a^2-b^2}$, and the vertices are $(\pm a, 0)$ and $(0, \pm b)$:
 
-- For off-center circles $(x-h)^2 + (y-k)^2 = r^2$, use $\tv{r\cos(t) + h, r\sin(t) + k}$.
+    ![](figures/2022-01-01_00-11-24.png)
 
-  - In complex form: $\gamma(t) = z_0 + re^{it}$ where $z_0\da h + ik$.
+- The circle $(x-h)^2 + (y-k)^2 = r^2$ is parameterized by $t\mapsto (r\cos(t) + h, r\sin(t) + k)$, in complex form $\gamma(t) = z_0 + re^{it}$ with $z_0\coloneqq h + ik$.
 
-- Setting $u\da \tan(t/2)$,
-\[
-\cos(t) = {1-u^2\over 1+u^2} && \sin(t) = {2u\over 1+u^2}
-.\]
+- With $u\coloneqq \tan(t/2)$,
+$$
+\cos(t) = {1-u^2\over 1+u^2}, \qquad \sin(t) = {2u\over 1+u^2}.
+$$
+  This gives the rational parameterization of the ellipse
+$$
+u\mapsto a {1-u^2\over 1+u^2} +ib{2u\over 1+u^2},
+$$
+  and, for $a=b=R$, of the circle of radius $R$; each misses only the point $-a$.
 
-  - Rational parameterization of an ellipse:
-  \[
-  \tv{a {1-u^2\over 1+u^2} , b {2u\over 1+u^2}} = a {1-u^2\over 1+u^2} +ib{2u\over 1+u^2}
-  .\]
-  - Rational parameterization of a circle: just take $a=b=R$,
-  \[
-  \tv{R {1-u^2\over 1+u^2} , R {2u\over 1+u^2}} = R {1-u^2\over 1+u^2} +iR{2u\over 1+u^2}
-  .\]
-
-- Lines: $\bar{a}z + a\bar{z} + c = 0$.
+- For $a\in\CC\setminus\ts{0}$ and $c\in\RR$, the set $\ts{z \st \bar{a}z + a\bar{z} + c = 0}$ is a line, and every line has this form.
 
 :::
 
 ## Algebra
 
-:::{.remark}
-Some useful numerology that comes up when trying to estimate when poles fall within a disc:
-
-- $\sqrt{2} \approx 1.4142$
-- $1/\sqrt{2} \approx 0.707$
-- $\sqrt{3} \approx 1.732$
-- $1/\sqrt{3} \approx 0.577$
-- $e\approx 2.718$
-- $\pi \approx 3.14159$
+::: {.fact title="Numerical values"}
+$\sqrt{2} \approx 1.4142$, $1/\sqrt{2} \approx 0.7071$, $\sqrt{3} \approx 1.7321$, $1/\sqrt{3} \approx 0.5774$, $e\approx 2.7183$, $\pi \approx 3.14159$.
 
 :::
 
-:::{.fact title="Completing the square"}
-\envlist
-
-\[
-x^2 + bx + c = 0 
-\iff x^2 + bx {\color{red} \, + \qty{b\over 2}^2 - \qty{b\over 2}^2 } + c = 0 \\
-\iff \qty{x+ {b\over 2}}^2 + \qty{c - \qty{b\over 2}^2} = 0
-.\]
-
-More generally:
-\[
-ax^2 + bx + c = 0
-\iff x^2 + {b\over a}x + {c\over a} = 0 \\
-\iff x^2 + {b\over a}x + {\color{red} \qty{b/a \over 2}^2 - \qty{b/a \over 2}^2} + c = 0 \\
-\iff (x + {b\over 2a})^2 + \qty{c - \qty{b\over 2a}^2} = 0
-.\]
-
-So given $ax^2+bx+c=0$, you can always write it as $a(x+d)^2 + e$ where $d\da b/2a$ and $e\da c - (b/2a)^2$.
+::: {.fact title="Completing the square"}
+For $a\neq 0$,
+$$
+ax^2 + bx + c = a\qty{x + d}^2 + e, \qquad d \coloneqq \frac{b}{2a}, \quad e\coloneqq c - \frac{b^2}{4a}.
+$$
+In particular $x^2 + bx + c = \qty{x+ {b\over 2}}^2 + c - \qty{b\over 2}^2$.
 
 :::
 
 ## Trigonometry
-
-:::{.remark}
-These are the values that come up when a contour is parameterized, when a root of unity is written in rectangular form, or when a pole sits at a standard angle.
-They are recall rather than derivation, and they are collected here for the same reason as the numerology above: an exam is a bad place to rebuild them.
-
-:::
 
 [[FF-ATMHV]] [[FF-ZQFSR]] [[FF-TGTS7]]
 
@@ -133,8 +100,8 @@ They are recall rather than derivation, and they are collected here for the same
 
 [[FF-7KQCC]] [[FF-2VUTS]] [[FF-2ABHQ]]
 
-:::{.remark}
-Written in rectangular coordinates, a root of unity is a pair of these values, and the tangent half-angle substitution from [Geometry](#geometry) turns the same values into a rational parameterization of the circle.
+::: {.remark}
+The root of unity $e^{2\pi i k/n}$ has rectangular coordinates $\qty{\cos(2\pi k/n), \sin(2\pi k/n)}$, and the values above give the rectangular forms of $e^{2\pi i/3}$ and $e^{2\pi i/6}$.
 
 :::
 
@@ -144,16 +111,16 @@ Written in rectangular coordinates, a root of unity is a pair of these values, a
 
 [[FF-TBIC5]]
 
-## Hyperbolic Functions
-
-:::{.remark}
-The hyperbolic functions appear as soon as $\cos$ and $\sin$ are evaluated at a complex argument: splitting $z = x+iy$ turns an angle addition formula into a mixed trigonometric-hyperbolic one.
-The series expansions are collected with the other standard series in [[series-reference|Series: Reference]].
-
-:::
+## Hyperbolic functions
 
 [[FD-XUGN3]]
 
 [[FF-AGEQ4]] [[FF-MV5X6]]
 
 [[FF-VFWB6]] [[FF-VR4UT]]
+
+::: {.remark}
+For $z = x+iy$, the addition formulas together with $\cos(iy) = \cosh(y)$ and $\sin(iy) = i\sinh(y)$ give $\cos(z) = \cos(x)\cosh(y) - i\sin(x)\sinh(y)$ and $\sin(z) = \sin(x)\cosh(y) + i\cos(x)\sinh(y)$.
+The series expansions are on [[complex-analysis/basics/series-reference|Series reference]].
+
+:::
