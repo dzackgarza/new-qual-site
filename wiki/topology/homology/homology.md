@@ -102,8 +102,6 @@ Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A
 
 :::
 
-[[FF-5LPTQ]]
-
 [[D-FAIJX]]
 
 ::: {.example title="Homology of a connected sum"}

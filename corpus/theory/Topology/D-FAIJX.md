@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-FAIJX
 kind: definition
 title: Mayer--Vietoris sequence
+prompts:
+- Write the Mayer-Vietoris long exact sequence for $X = A \cup B$.
 classification:
   areas:
   - topology
