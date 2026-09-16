@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH4410PICOFPRODUCT
 kind: problem
-title: $\Pic(X \times X)$ is an extension of $\End(X, P_0)$ by the pullbacks of $\Pic X$
+title: $\Pic(X \times X)$ is an extension of $\operatorname{End}(X, P_0)$ by the pullbacks of $\Pic X$
 classification:
   areas:
   - algebraic-geometry
