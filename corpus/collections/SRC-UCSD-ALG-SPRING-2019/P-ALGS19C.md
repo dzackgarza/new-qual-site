@@ -21,6 +21,10 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Spring 2020 problem D states the same problem with the same hint; that sitting now lists this card, and its independent proof by a cyclic-vector bound on the nilpotency index is kept as a second solution."
 ---
 
 ::: problem
@@ -56,5 +60,40 @@ Every nilpotent element belongs to every prime ideal. Conversely, suppose \(a\in
 <1>5. Since \(A\) has no nonzero nilpotent elements, \(N^n=0\).
 ::: {.proof}
 By hypothesis \(A\) is reduced, so its nilradical is \(0\). By <1>3 and <1>4, every entry of \(N^n\) is therefore zero. Hence \(N^n\) is the zero matrix.
+:::
+:::
+
+::: {.solution}
+<1>1. Fix a prime ideal \(\mathfrak p\subseteq A\), and let \(\overline N\) be the image of \(N\) in \(M_n(A/\mathfrak p)\). Then \(\overline N\) is nilpotent.
+::: {.proof}
+If \(N^m=0\), then reducing entries modulo \(\mathfrak p\) gives \(\overline N^{\,m}=0\).
+:::
+
+<1>2. Let \(K=\operatorname{Frac}(A/\mathfrak p)\). Viewed as an endomorphism of the \(n\)-dimensional \(K\)-vector space \(K^n\), the matrix \(\overline N\) satisfies \(\overline N^{\,n}=0\).
+::: {.proof}
+Because \(A/\mathfrak p\) is a domain, it embeds in its fraction field \(K\). Suppose a nilpotent endomorphism \(T\) of an \(n\)-dimensional vector space has nilpotency index \(m\), so \(T^m=0\) but \(T^{m-1}\ne0\). Choose \(v\) with \(T^{m-1}v\ne0\). Then
+\[
+v,Tv,\ldots,T^{m-1}v
+\]
+are linearly independent: if \(\sum_{i=0}^{m-1}a_iT^iv=0\) and \(j\) is the least index with \(a_j\ne0\), applying \(T^{m-1-j}\) leaves \(a_jT^{m-1}v=0\), contradiction. Thus \(m\le n\), and therefore \(T^n=0\). Apply this to \(T=\overline N\).
+:::
+
+<1>3. Hence every entry of \(N^n\) lies in \(\mathfrak p\).
+::: {.proof}
+The equality \(\overline N^{\,n}=0\) says exactly that the image modulo \(\mathfrak p\) of every entry of \(N^n\) is zero. Thus each entry belongs to \(\mathfrak p\).
+:::
+
+<1>4. Since \(\mathfrak p\) was arbitrary, every entry of \(N^n\) belongs to
+\[
+\bigcap_{\mathfrak p\in\operatorname{Spec}(A)}\mathfrak p.
+\]
+This intersection is the nilradical of \(A\), which is zero because \(A\) has no nonzero nilpotents.
+::: {.proof}
+The nilradical of a commutative ring is the intersection of all prime ideals. By hypothesis \(A\) is reduced, so its nilradical is \(0\).
+:::
+
+<1>5. Therefore \(N^n=0\).
+::: {.proof}
+By <1>4 every entry of \(N^n\) is zero.
 :::
 :::

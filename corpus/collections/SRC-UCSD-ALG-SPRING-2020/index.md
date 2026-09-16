@@ -20,7 +20,7 @@ source:
   - P-ALGS20A
   - P-ALGS20B
   - P-ALGS20C
-  - P-ALGS20D
+  - P-ALGS19C
   - P-ALGS20E
   - P-ALGS20F
   - P-ALGS20G
