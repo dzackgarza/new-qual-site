@@ -2,7 +2,7 @@
 order: 0
 ---
 
-# Complex Analysis Books and Notes
+# Books and notes
 
 ## Books
 
@@ -12,14 +12,13 @@ order: 0
 
 - Rudin, *Real and Complex Analysis*
 
-- Silverman, Richard.
-  *Complex Analysis with Applications*
+- Richard Silverman, *Complex Analysis with Applications*
 
 - [@SS03]
 
 - Taylor, *Complex Analysis*
 
-- Barry Simon, *Basic Complex Analysis*
+- Simon, *Basic Complex Analysis*
 
 - Hörmander, *An Introduction to Complex Analysis in Several Variables*
 
@@ -27,13 +26,13 @@ order: 0
 
 - Gilman, Kra, and Rodríguez, *Complex Analysis: In the Spirit of Lipman Bers*
 
-- Sarason, *Complex Function Theory* [Link to PDF](https://www.dropbox.com/s/3atiop7trmmh1d2/Complex%20Function%20Theory%20-%20Sarason.pdf?dl=0)
+- Sarason, *Complex Function Theory* [PDF](https://www.dropbox.com/s/3atiop7trmmh1d2/Complex%20Function%20Theory%20-%20Sarason.pdf?dl=0)
 
 - Freitag and Busam, *Complex Analysis*
 
 - Conway, *Functions of One Complex Variable I*
 
-## UGA Material
+## UGA course notes
 
 - [[attachments/8.3 Riemann Mapping Theorem (1).pdf|Jingzhi Tie, UGA Math 8150 notes on the Riemann mapping theorem (Spring 2020)]]
 
@@ -43,7 +42,7 @@ order: 0
 
 ## Summaries
 
-- [Condensed computational summary](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf)
+- [UC Irvine complex-analysis computational summary](https://www.math.uci.edu/~timmym/Complex%20Analysis.pdf)
 
 - [[attachments/Eur_ComplexAnalysis_Notes (1).pdf|Chris Eur, complex-analysis notes following Stein–Shakarchi]]
 
@@ -58,20 +57,20 @@ order: 0
 - [[attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf|Robert Won, Complex Analysis Qual Sheet]]
 
 - [[attachments/Complex_Qual_Notes.pdf|Josh Swanson, *2013 Complex Prelim Notes* (September 6, 2013)]] — qualifying-exam review notes covering basic mapping theorems, Cauchy and Poisson formulas, analytic extension, root counting, approximation, normal families, harmonic and subharmonic functions, inequalities, series and products, analytic continuation, residues, and conformal maps.
-  Swanson records Marshall’s notes as the principal source, with Ahlfors, Gamelin, and Rudin also consulted.
+  The notes name Marshall's notes as their principal source, with Ahlfors, Gamelin, and Rudin also consulted.
 
-- [Cambridge notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis_trim.pdf)
+- [Cambridge Part IB complex analysis, condensed notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis_trim.pdf)
 
-## Course Notes
+## Course notes
 
-- [Harvard 2021 complex-analysis course notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
+- [Curtis McMullen, Harvard Math 213a course notes](http://people.math.harvard.edu/~ctm/papers/home/text/class/harvard/213a/course/course.pdf)
 
 - [Ko Honda, complex-analysis course notes](https://www.math.ucla.edu/~honda/math520/notes.pdf)
 
-- [Cambridge complex-analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
+- [Cambridge Part IB complex analysis lecture notes](https://dec41.user.srcf.net/notes/IB_L/complex_analysis.pdf)
 
-- [Arun's course notes](https://web.ma.utexas.edu/users/a.debray/lecture_notes/116notes.pdf)
+- [Arun Debray, complex-analysis lecture notes](https://web.ma.utexas.edu/users/a.debray/lecture_notes/116notes.pdf)
 
-- [Berkeley 2015 complex-analysis course notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
+- [Missouri S&T complex-analysis course notes](https://web.mst.edu/~jcmcfd/Complex-Analysis.pdf)
 
 - [[McMullen_-_Advanced_Complex_Analysis.pdf|McMullen, Advanced Complex Analysis]]
