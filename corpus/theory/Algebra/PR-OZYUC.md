@@ -32,8 +32,6 @@ In that case every $k$-embedding $\sigma\colon L\to\bar k$ restricts to a $k$-au
 	\arrow["\sigma", hook, from=3-1, to=1-3]
 	\arrow["\sigma", hook, two heads, from=3-1, to=3-3]
 \end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCw0LCJrIl0sWzAsMiwiTCJdLFsyLDQsImsiXSxbMiwwLCJcXGJhcntrfSJdLFsyLDIsIlxcc2lnbWEoTCkgPSBMIixbMTIwLDYwLDYwLDFdXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsNCwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNCwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDMsIlxcc2lnbWEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDQsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dXQ==)
 :::
 
 ::: {.proof}
