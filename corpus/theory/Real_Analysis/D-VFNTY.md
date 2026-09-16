@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is a **Baire space** if and only if every countable intersections of open, dense sets is still dense.
+A topological space $X$ is a \dfn{Baire space} if every countable intersection of open [[D-KJBAK|dense]] subsets of $X$ is dense in $X$.
 :::
