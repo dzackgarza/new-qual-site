@@ -32,28 +32,37 @@ Suppose $(f_n)$ is a sequence in $L^2(\mathbb R)$ that converges weakly to $f\in
 :::
 
 ::: {.solution}
-No.
-
+<1>1. The associated functionals have uniformly bounded operator norms.
+::: {.proof}
 For each $n$, define the bounded linear functional
-\[
+$$
 T_n(g)=\langle f_n,g\rangle_{L^2},
 \qquad g\in L^2(\mathbb R).
-\]
+$$
 Weak convergence means that for every fixed $g\in L^2$,
-\[
+$$
 T_n(g)=\langle f_n,g\rangle\longrightarrow\langle f,g\rangle.
-\]
-Hence for every $g$ the scalar sequence $(T_n(g))$ is bounded. By the Uniform Boundedness Principle,
-\[
+$$
+Hence for every $g$ the scalar sequence $(T_n(g))$ is bounded. By the [[T-F2THV|uniform boundedness principle]],
+$$
 \sup_n\|T_n\|<\infty.
-\]
-By the Riesz representation theorem for the Hilbert space $L^2(\mathbb R)$,
-\[
+$$
+:::
+
+<1>2. The functional norms are the $L^2$ norms of the representing functions.
+::: {.proof}
+By the [[T-LDCZB|Riesz representation theorem for Hilbert spaces]],
+$$
 \|T_n\|=\|f_n\|_2.
-\]
+$$
 Therefore
-\[
+$$
 \sup_n\|f_n\|_2<\infty.
-\]
-So a weakly convergent sequence in $L^2$ cannot have norms tending to infinity.
+$$
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+By step <1>1, the norms $\|T_n\|$ are uniformly bounded; step <1>2 therefore shows that $\|f_n\|_2$ cannot tend to infinity.
+:::
 :::
