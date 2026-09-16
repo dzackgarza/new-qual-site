@@ -43,4 +43,4 @@ source:
     - P-UCSD-ALG-REVIEW-RM-08
 ---
 
-The final review-sheet block is printed as “Fall 2009, problems 2–4,” but its first two statements match the canonical Fall 2007 problems `P-ALGF07B` and `P-ALGF07C`. The third is an abridged/modified module problem, so this collection owns a separate `variant-of` card instead of assigning a non-identical source appearance to `P-ALGF07D`.
+The last block of the review sheet is labelled "Fall 2009, problems 2--4", but its first two statements are the Fall 2007 problems [[P-ALGF07B]] and [[P-ALGF07C]], and the third is a shortened and modified form of the Fall 2007 problem [[P-ALGF07D]].
