@@ -33,8 +33,3 @@ source:
   - P-WESRA07-II5
   - P-WESRA07-II6
 ---
-
-::: remark
-For Part II Problem 2 the deterministic MinerU Flash extraction drops the absolute-value delimiters around `f_n-f` in the displayed integral.
-The retained card states the earlier $L^1$ transcription, but Flash alone does not settle that discrepancy, so the card is not marked source-checked by this audit.
-:::
