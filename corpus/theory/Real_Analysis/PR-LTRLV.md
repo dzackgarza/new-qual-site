@@ -24,5 +24,5 @@ A Lipschitz function need not be differentiable: $x\mapsto\abs{x}$ on $(-1,1)$ s
 :::
 
 ::: {.example}
-The interval hypothesis is needed: on $U\coloneqq(-2,-1)\cup(1,2)$, the function $f\coloneqq\chi_{(1,2)}$ is differentiable with $f'=0$, but $\abs{f(1.1)-f(-1.1)}=1>C\cdot2.2$ for $C<1/2.2$, so every Lipschitz constant is at least $1/2.2$ while $\sup\abs{f'}=0$.
+The interval hypothesis is needed: on $U\coloneqq(0,1)\cup(1,2)$, the function $f\coloneqq\chi_{(1,2)}$ is differentiable with $f'=0$, but $\abs{f(1+\delta)-f(1-\delta)}=1$ for $0<\delta<1$, so $f$ is not Lipschitz on $U$.
 :::
