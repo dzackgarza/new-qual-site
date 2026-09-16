@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-AZQ6S
 kind: proposition
-title: Relative Poincaré Duality for manifolds
+title: Poincaré--Lefschetz duality for manifolds with boundary
 classification:
   areas:
   - topology
@@ -14,14 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $M^n$ is a compact orientable manifold with boundary then 
-\[
-H_k(M^n; \ZZ) \cong H^{n-k}(M^n, \del M^n; \ZZ)
-.\]
-
-:::{.remark}
-Hatcher, *Algebraic Topology*, Theorem 3.43, with $A = \del M^n$ and $B = \emptyset$.
-A closed manifold has empty boundary by definition, so the hypothesis is compactness, not closedness.
-:::
+::: {.proposition}
+Let $M$ be a compact orientable $n$-manifold with boundary $\del M$.
+Then for all $k$
+$$
+H^{n-k}(M, \del M; \ZZ) \cong H_k(M; \ZZ), \qquad H^{n-k}(M; \ZZ) \cong H_k(M, \del M; \ZZ)
+$$
+[@Hat02, Theorem 3.43, p. 254].
 :::
