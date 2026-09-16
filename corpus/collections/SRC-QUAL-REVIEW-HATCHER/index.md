@@ -167,12 +167,8 @@ source:
     - P-QUAL-REVIEW-HATCHER-16
 ---
 
-::: remark
-The review sheet prints 107 Hatcher exercise references.
-The collection reuses 106 current canonical cards from `SRC-TEXT-HAT02`. Hatcher §2.2 Exercise 34 is intentionally absent: Hatcher’s errata withdrew that exercise, and the review sheet provides only its number, not a statement.
-
-The review sheet selects only §2.2 Exercise 43(a). The corpus indexes Hatcher at whole-exercise granularity, so this collection references `E-HAT-2.2-43`; only part (a) is selected by this source.
-
-Among the sixteen additional practice problems, positions 6 and 7 are not represented: both depend on a figure of a 2-manifold that neither extraction recovered.
-The other fourteen positions are represented above.
+::: {.remark}
+The review sheet cites 107 exercises from Hatcher's *Algebraic Topology* and adds sixteen practice problems.
+It selects only part (a) of §2.2 Exercise 43.
+It cites §2.2 Exercise 34 by number only; Hatcher's errata withdraw that exercise.
 :::
