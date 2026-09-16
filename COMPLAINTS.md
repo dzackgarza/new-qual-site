@@ -37,18 +37,4 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### ag-notes migration omits substantive source content
-
-**Assessment:** incomplete.
-The [ag-notes migration queue](queues/H-ag-notes-migration.md) owns the direct source-to-target comparison and remaining work.
-It identifies missing questions, proofs, hypotheses, examples and diagrams, with separate source-repair, reference and private-material dispositions.
-
-**Source boundary:** the deployed `/var/www/ag_notes/` tree was compared with authored corpus and wiki content.
-The later `/var/www/Notes/Class_Notes/2022/Fall/Orals/` vault remains a separate, unreviewed revision.
-The queue records the source inventory and target revision.
-
-**Owner and expected repair:** algebraic-geometry corpus curation.
-Complete the named mathematical items and resolve damaged source fragments before retiring their source.
-The queue records work; it does not perform the migration.
-
 ## Workflow and rendering papercuts
