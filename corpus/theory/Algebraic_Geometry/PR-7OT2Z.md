@@ -21,7 +21,10 @@ prompts:
 - Show that the algebraic sets are the closed sets of a topology on $\AA^n$.
 - Show that the maximal ideals of $k[x_1,\ldots,x_n]$ are the ideals $(x_1-a_1,\ldots,x_n-a_n)$ when $k$ is algebraically closed, and that this fails otherwise.
 - Show that every finitely generated $k$-algebra that is a domain is the coordinate ring of an affine variety.
----
+- Show that $I(V)$ and $\sqrt{I}$ are ideals, and that $V$ and $I$ are inclusion-reversing.
+- Show that a set of $d \leq 2n$ points of $\AA^n_k$ in linear general position is cut out by quadratic polynomials.
+- Show that $V(y - x^2) \cong \AA^1$ and $V(y - x^2, z - x^3) \cong \AA^1$ as affine varieties.
+- Show that the nodal cubic $V(y^2 - x^3 - x^2)$ has the parametrization $t \mapsto (t^2 - 1, t^3 - t)$.---
 
 ::: {.proposition}
 Over an algebraically closed field $k$, the maps $V$ and $I$ are mutually inverse, order-reversing bijections between the radical ideals of $k[x_1,\ldots,x_n]$ and the Zariski-closed subsets of $\AA^n$.

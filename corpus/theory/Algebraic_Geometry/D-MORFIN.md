@@ -20,6 +20,7 @@ prompts:
 - What is a finite morphism?
 - How does finite differ from finite type?
 - What are the consequences of a morphism being finite?
+- Show that $k[x] \to k[x]_x = k[x, x^{-1}]$ makes $k[x, x^{-1}]$ a finitely generated $k[x]$-algebra that is not a finitely generated $k[x]$-module, so $\Spec k[x, x^{-1}] \to \Spec k[x]$ is of finite type and not finite.
 ---
 
 ::: {.definition title="Finite"}

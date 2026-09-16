@@ -17,6 +17,9 @@ review: draft
 prompts:
 - What is an open subscheme? A closed subscheme?
 - What do closed subschemes of an affine scheme correspond to?
+- Give an irreducible scheme that is not reduced, and two distinct schemes with the same support.
+- What is the $n$th infinitesimal neighbourhood of a prime $\mfp \in \Spec A$?
+- Show that a scheme is reduced if and only if all its stalks are reduced.
 ---
 
 ::: {.definition}

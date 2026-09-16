@@ -15,6 +15,10 @@ prompts:
 - Define full, faithful, and fully faithful for a functor.
 - What extra condition upgrades a fully faithful functor to an equivalence of categories?
 - Give a faithful functor that is not full.
+- What is a locally small category?
+- Define the Yoneda embedding $h \colon \mathsf{C} \to \operatorname{Fun}(\mathsf{C}^{\mathrm{op}}, \mathsf{Set})$ and show that it is fully faithful.
+- If a functor $\mathsf{C} \to \mathsf{Set}$ is representable, show that the representing object is unique up to unique isomorphism.
+- Describe initial and terminal objects as limits, and decide whether a product is a limit or a colimit.
 ---
 
 ::: {.definition title="full, faithful, fully faithful"}

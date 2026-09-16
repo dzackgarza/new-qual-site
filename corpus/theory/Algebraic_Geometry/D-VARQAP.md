@@ -17,6 +17,8 @@ review: draft
 prompts:
 - What is a quasi-affine variety? A quasi-projective variety?
 - How is $\PP^n$ covered by affine spaces?
+- Derive the rational parametrization $\AA^1 \to V(a^2 + b^2 - 1)$ and its inverse, with their domains, and projectivize both maps.
+- If $X$ is projective and $F$ is homogeneous of degree $d$, show that $\ts{x \in X \st F(x) \neq 0}$ is an open affine subset of $X$.
 ---
 
 ::: {.definition title="The four classes"}

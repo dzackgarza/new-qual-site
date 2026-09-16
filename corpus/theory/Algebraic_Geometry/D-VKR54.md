@@ -19,6 +19,12 @@ prompts:
 - What is the structure sheaf of $\Spec A$?
 - What are the stalks of $\OO_{\Spec A}$?
 - Construct a ring $R$ such that $\Spec R$ is $\AA^1_k$ punctured at $0$ and $1$.
+- What is the value of $n \in \ZZ$ at a prime $p \in \Spec \ZZ$, and what are the zeros of $60$ as a function on $\Spec \ZZ$?
+- Find a ring $R$ and $0 \neq f \in R$ whose value at every point of $\Spec R$ is zero.
+- Describe all the prime ideals of $k[x,y]$.
+- Show that $\sqrt{I}$ is the intersection of the prime ideals containing $I$.
+- If $D(f) = \bigcup_i D(g_i)$, show that $f^n = \sum_i b_i g_i$ for some $n$ and some $b_i \in R$.
+- Show that the Zariski topology on $\Spec R$ is not $T_1$ in general.
 ---
 
 ::: {.definition title="The spectrum"}

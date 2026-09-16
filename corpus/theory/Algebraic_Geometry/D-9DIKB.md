@@ -16,6 +16,10 @@ prompts:
 - What does it mean for a topological space to be irreducible?
 - What does it mean for a topological space to be Noetherian?
 - Why is $\AA^n$ Noetherian?
+- What is Noetherian induction?
+- Show that a closed subset of a Noetherian space has a unique decomposition into irreducible components.
+- Show that a nonempty open subset of an irreducible space is dense.
+- Show that the nodal cubic $V(y^2 - x^3 - x^2)$ and the cuspidal cubic $V(y^2 - x^3)$ are irreducible.
 ---
 
 ::: {.definition title="Irreducible"}

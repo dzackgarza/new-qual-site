@@ -14,6 +14,9 @@ review: draft
 prompts:
 - What is a Noetherian ring, and what is the equivalent finiteness condition?
 - Which operations preserve the Noetherian condition?
+- Show that a scheme is locally Noetherian if and only if $R$ is Noetherian for every affine open $\Spec R \subseteq X$.
+- If $(f_1, \ldots, f_n) = (1)$ in $A$ and every $A_{f_i}$ is Noetherian, show that $A$ is Noetherian.
+- Give a scheme whose underlying space is Noetherian but which is not a Noetherian scheme.
 ---
 
 ::: {.definition title="Noetherian ring"}
@@ -29,7 +32,8 @@ An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
 ::: {.definition title="Noetherian scheme"}
 A scheme $X$ is **locally Noetherian** if it can be covered by open affine subsets $\Spec A_i$ with each $A_i$ a Noetherian ring.
 It is **Noetherian** if it is locally Noetherian and quasicompact, equivalently if it has a finite such cover.
-[@Har10a, §II.3]
+A scheme is locally Noetherian if and only if $R$ is Noetherian for every open affine $\Spec R \subseteq X$.
+[@Har10a, §II.3, Proposition II.3.2]
 :::
 
 ::: {.remark}

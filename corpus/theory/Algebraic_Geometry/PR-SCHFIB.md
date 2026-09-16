@@ -17,6 +17,7 @@ review: draft
 prompts:
 - What is the fibre of a morphism of schemes over a point?
 - Why is the scheme-theoretic fibre better than the set-theoretic preimage?
+- For $K = \QQ(\sqrt 3)$, describe the fibres of $\Spec \OO_K \to \Spec \ZZ$ over each prime, and which primes split, are inert or ramify.
 ---
 
 ::: {.definition}

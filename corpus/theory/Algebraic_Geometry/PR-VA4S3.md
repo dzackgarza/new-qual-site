@@ -17,6 +17,11 @@ review: draft
 prompts:
 - Is $\PP^1 \times \PP^1$ a projective variety?
 - What equations cut out the Segre image?
+- Show that the Segre variety is the categorical product of projective varieties $X \subseteq \PP^n$ and $Y \subseteq \PP^m$.
+- What is the graph $\Gamma_f$ of a morphism $f \colon X \to B$ of quasi-projective varieties?
+- Give a precise definition of a morphism of projective varieties, in terms of homogeneous coordinates locally.
+- Describe the image of $[x:y] \mapsto [x^2 : xy : y^2]$, and give equations for the Veronese surface and its ambient $\PP^N$.
+- What is a determinantal variety?
 ---
 
 ::: {.proposition}

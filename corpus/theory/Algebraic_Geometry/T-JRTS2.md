@@ -16,6 +16,8 @@ prompts:
 - What is $I(V(J))$?
 - Where does the Nullstellensatz use that $k$ is algebraically closed?
 - How is the Nullstellensatz proved?
+- If $L/k$ is a field extension and $L$ is a finitely generated $k$-algebra, show that $L/k$ is algebraic.
+- State the weak Nullstellensatz in terms of maximal ideals and in terms of systems of polynomial equations, and deduce the strong form by the Rabinowitsch trick.
 ---
 
 ::: {.theorem title="Hilbert's Nullstellensatz"}

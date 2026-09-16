@@ -20,6 +20,9 @@ prompts:
 - When is a Noetherian local ring regular?
 - Characterise discrete valuation rings among Noetherian local rings.
 - Is a regular local ring a domain? Is it integrally closed?
+- Show that $R$ is a discrete valuation ring if and only if $R$ is a local PID that is not a field, and define a uniformizer.
+- Show that the ring of germs at $0$ of holomorphic functions on a disc is a discrete valuation ring with uniformizer $z$.
+- For the local ring $R$ of a curve at a point, over $k = \bar k$, identify the closed and generic points of $\Spec R$ and their residue fields, and decide which maps between $\Spec R$ and $\Spec \operatorname{Frac} R$ are morphisms of schemes.
 ---
 
 ::: {.definition title="regular local ring"}
