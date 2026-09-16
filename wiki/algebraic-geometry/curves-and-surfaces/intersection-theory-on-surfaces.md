@@ -46,3 +46,7 @@ Ampleness on a surface is purely numerical, so it depends only on the class in $
 ## Chow rings in any dimension
 
 [[D-CHOWRING]]
+
+## The Todd genus
+
+[[D-VARTODD]]

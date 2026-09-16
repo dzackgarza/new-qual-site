@@ -37,3 +37,9 @@ Those questions are the proof, split into its steps.
 ## The small genera
 
 [[PR-VGA2L]]
+
+## Twisted forms of the line
+
+[[D-VARSEVBRAUER]]
+
+[[P-AGXMISCTSENPONEBUNDLE]]

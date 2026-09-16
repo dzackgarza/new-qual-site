@@ -24,3 +24,7 @@ The shift is the canonical sheaf $\OO(-n-1)$ of [[../sheaves-of-modules/differen
 
 Two answers to the same question, and an examiner usually wants both: $H^1$ obstructs lifting sections, and $H^1$ of the units *is* the Picard group.
 The cocycle in one description is the difference of local lifts, and in the other the transition functions of a bundle.
+
+## Dévissage
+
+[[D-COHDEVISSAGE]]

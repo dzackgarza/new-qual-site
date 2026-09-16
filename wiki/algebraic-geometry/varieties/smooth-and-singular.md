@@ -43,3 +43,11 @@ Finding them is the Jacobian computation and nothing else: set the partials to z
 \]
 makes the vanishing of the partials imply the vanishing of $f$ whenever $\deg f$ is invertible in $k$.
 So for a plane curve in characteristic zero the singular locus is cut out by the partials alone.
+
+## Resolutions
+
+[[D-VARLOGRES]]
+
+[[D-VARCREPANT]]
+
+[[D-SRFADE]]

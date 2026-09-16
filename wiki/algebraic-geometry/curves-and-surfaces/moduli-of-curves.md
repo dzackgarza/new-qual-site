@@ -36,3 +36,7 @@ Finiteness of $\Aut C$ is what makes the orbits in the quartic count $8$-dimensi
 ## Smoothness and properness of the moduli stacks
 
 [[T-MGSMOOTH]]
+
+## Stable maps
+
+[[D-STABLEMAP]]

@@ -44,3 +44,7 @@ Comparing it with $\binom{d-1}{2}$ for plane curves gives the slogan: spreading 
 [[FE-CRVDEGS]]
 
 Organising the low-degree list by whether $\OO_C(1)$ is special is what makes it memorable, rather than a table.
+
+## Dual curves
+
+[[D-CRVDUAL]]

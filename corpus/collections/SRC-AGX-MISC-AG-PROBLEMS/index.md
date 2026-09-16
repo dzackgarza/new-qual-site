@@ -18,6 +18,8 @@ source:
     - id: P-AGXMISCPRODRATIONAL
     - id: P-AGXMISCGENUSONERAM
     - id: P-AGXMISCGENUSZEROCONIC
+    - id: P-AGXMISCOCONNECTED
+    - id: P-AGXMISCTSENPONEBUNDLE
   - name: Sheaves of Modules
     problems:
     - id: P-AGXMISCINJINVERTIBLE

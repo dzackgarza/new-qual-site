@@ -52,3 +52,7 @@ The row worth rehearsing is $\kappa = 0$, separated by $(p_g, q)$: K3 at $(1,0)$
 ## Birational invariants
 
 [[T-BIRINV]]
+
+## A K3 surface
+
+[[FE-SRFFERMATQUARTIC]]
