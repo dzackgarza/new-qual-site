@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-FG4DK
 kind: proposition
-title: Killing homotopy
+title: Skeleta and homotopy groups
 classification:
   areas:
   - topology
@@ -15,6 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-$\pi_1 X$ for $X$ a CW-complex only depends on the 2-skeleton $X^{2}$, and in general $\pi_k(X)$ only depends on the $k+2$-skeleton.
-Thus attaching $k+2$ or higher cells does not change $\pi_k$.
+Let $X$ be a CW complex and $k\geq 1$.
+The inclusion $X^{k+1}\injects X$ of the $(k+1)$-skeleton induces an isomorphism $\pi_k(X^{k+1})\cong\pi_k(X)$ [@Hat02, Corollary 4.12, p. 351].
+In particular, $\pi_1(X)$ depends only on the $2$-skeleton [@Hat02, Proposition 1.26, p. 50], and attaching cells of dimension $k+2$ or higher does not change $\pi_k$.
 :::
