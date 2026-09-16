@@ -15,7 +15,7 @@ review: draft
 
 ::: {.proposition}
 Let $S\coloneqq\theset{z\in\CC : -\pi/2<\Re z<\pi/2,\ \Im z>0}$.
-Then $\sin$ restricts to a [[D-TM4TE|biholomorphism]] $S\to\HH$.
+Then $\sin$ restricts to a [[D-TM4TE|biholomorphism]] $S\to\HH$, and its inverse $\arcsin\colon\HH\to S$ is a biholomorphism from the upper half-plane onto the vertical half-strip.
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-31_23-01-11.png)
 :::
