@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-1
 kind: theorem
-title: 'Theorem 4.1: Fermat’s stationary-point theorem'
+title: Fermat's stationary-point theorem
 classification:
   areas:
   - real-analysis
@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:[a,b]\to\mathbb R$ has a local maximum or minimum at $c\in(a,b)$ and $f'(c)$ exists, then $f'(c)=0$.
+Let $a<b$, let $f\colon[a,b]\to\RR$, and let $c\in(a,b)$.
+If $f$ has a local maximum or a local minimum at $c$ and $f$ is differentiable at $c$, then $f'(c)=0$.
 :::
