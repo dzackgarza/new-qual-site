@@ -411,7 +411,7 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-FS52P]]
 
-[[D-WBM7M]]
+[[D-LIEMF]]
 
 [[D-FHUV5]]
 

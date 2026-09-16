@@ -44,3 +44,13 @@ Given a basis $(\beta_i)_{i\in I}$, take $\mathcal B=I$ and $\iota(i)=\beta_i$; 
 Conversely, if $(\mathcal B,\iota)$ has the universal property, compare $M$ with the module $R^{(\mathcal B)}$ of finitely supported functions $\mathcal B\to R$ and its standard basis $(e_b)_{b\in\mathcal B}$: the linear maps $M\to R^{(\mathcal B)}$ extending $b\mapsto e_b$ and $R^{(\mathcal B)}\to M$ extending $e_b\mapsto\iota(b)$ compose in both orders to maps that restrict to the identity on the generators, so by uniqueness they are inverse isomorphisms, and $(\iota(b))_{b\in\mathcal B}$ is a basis of $M$.
 Finally, the spanning condition says that $M=\sum_i R\beta_i$, and linear independence says exactly that this sum is direct and each $r\mapsto r\beta_i$ is injective.
 :::
+
+::: {.proposition}
+Let $R$ be a ring, $M$ a left $R$-module, $S\subseteq M$ a subset, and $R^{(S)} \coloneqq \bigoplus_{s\in S} R$ with standard basis $(e_s)_{s\in S}$.
+There is a unique $R$-linear map $\varphi\colon R^{(S)}\to M$ with $\varphi(e_s) = s$ for all $s\in S$.
+
+(a) $\varphi$ is surjective if and only if $S$ is a [[D-DUCA5|generating set]] of $M$; in that case $M\cong R^{(S)}/\ker\varphi$.
+
+(b) $\varphi$ is an isomorphism if and only if $S$ is a basis of $M$.
+In particular, $M$ is free if and only if $M\cong R^{(T)}$ for some set $T$ [@DF04].
+:::
