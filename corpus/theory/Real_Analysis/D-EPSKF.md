@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-A map $L: X \to \CC$ is a **linear functional** iff
-\[
-L(\alpha\vector x + \vector y) = \alpha L(\vector x) + L(\vector y).
-.\]
+::: {.definition}
+Let $X$ be a vector space over $\CC$.
+A map $L\colon X \to \CC$ is a \dfn{linear functional} if
+$$
+L(\alpha x + y) = \alpha L(x) + L(y) \quad \text{for all } x,y\in X \text{ and } \alpha\in\CC.
+$$
 :::
