@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-YCTNC
 kind: proposition
-title: Separability is transitive.
+title: Separability is transitive in towers
 classification:
   areas:
   - algebra
@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: {.proposition}
-If $L/K/k$, then $L/K$ is separable and $K/k$ is separable $\iff$ $L/k$ is separable:
+Let $k\subseteq K\subseteq L$ be algebraic field extensions.
+Then $L/k$ is [[D-JGYLA|separable]] if and only if $L/K$ and $K/k$ are both separable:
 
 \begin{tikzcd}
 	L &&& L \\
