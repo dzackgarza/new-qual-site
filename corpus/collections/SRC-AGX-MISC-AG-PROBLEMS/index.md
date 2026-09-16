@@ -23,8 +23,17 @@ source:
   - name: Sheaves of Modules
     problems:
     - id: P-AGXMISCINJINVERTIBLE
+  - name: Irreducibility
+    problems:
+    - id: P-AGXMISCIRROPENCONN
+    - id: P-AGXMISCCUSPIRR
+    - id: P-AGXMISCIRRINTERSECT
+    - id: P-AGXMISCIRRCOMPONENTS
+  - name: Calculations
+    problems:
+    - id: P-AGXMISCCALCULATIONS
   date:
     kind: unknown
 ---
 
-Oral-exam questions on curves and rationality, each with a solution.
+Oral-exam questions on curves and rationality, sheaves of modules, irreducibility, and standard calculations.

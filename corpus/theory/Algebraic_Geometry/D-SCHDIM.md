@@ -32,6 +32,7 @@ The **codimension** of an irreducible closed $Z \subseteq X$ is the supremum of 
 ::: {.proposition}
 $\dim \Spec A = \krulldim A$, since irreducible closed subsets of $\Spec A$ correspond to primes, order-reversingly.
 The codimension of $V(\mfp)$ is the height of $\mfp$.
+More generally, if $Z \subseteq X$ is an irreducible closed subset with generic point $\zeta$, then $\codim_X Z = \dim \OO_{X,\zeta}$, so the irreducible closed subsets of codimension one are exactly the closures of the points whose local ring has dimension one.
 :::
 
 ::: {.remark}

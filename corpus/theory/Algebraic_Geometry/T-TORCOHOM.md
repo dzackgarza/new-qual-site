@@ -18,6 +18,7 @@ relations:
 review: draft
 prompts:
 - What is the Stanley--Reisner relation?
+- What are the Betti numbers of a smooth complete toric variety?
 ---
 
 ::: {.theorem title="Jurkiewicz--Danilov"}
@@ -43,4 +44,18 @@ The linear relations are $\div(\chi^m) \sim 0$ from the class-group sequence.
 For $\PP^2$ with rays $e_1, e_2, -e_1 - e_2$, the three rays together span no cone, so $I_\Sigma = (x_1 x_2 x_3)$, and $J_\Sigma = (x_1 - x_3, x_2 - x_3)$.
 So $H^\bullet(\PP^2) = \ZZ[H]/(H^3)$.
 For the Hirzebruch surface $\FF_a$ with rays $e_1, e_2, -e_1 + a e_2, -e_2$, the opposite pairs span no cone, so $x_1 x_3 = x_2 x_4 = 0$, with linear relations $x_1 = x_3$ and $x_2 = x_4 - a x_3$, and the ring is $\ZZ[f, s]/(f^2, s^2 - a s f)$ for $f = x_1$ and $s = x_4$; so $D_4^2 = a$ and $D_2^2 = (s - af)^2 = -a$.
+:::
+
+::: {.proposition title="Betti numbers"}
+Let $X_\Sigma$ be a smooth complete toric variety of dimension $n$, and let $d_j$ be the number of $j$-dimensional cones of $\Sigma$.
+Then the odd Betti numbers vanish and
+\[
+\beta_{2k}(X_\Sigma) = \sum_{i=k}^{n} (-1)^{i-k} \binom{i}{k} d_{n-i} .
+\]
+In particular $\chi(X_\Sigma) = d_n$, the number of maximal cones.
+[@Ful93]
+:::
+
+::: {.example}
+For $\PP^2$, $d_0 = 1$ and $d_1 = d_2 = 3$, so $\beta_0 = d_2 - d_1 + d_0 = 1$, $\beta_2 = d_1 - 2 d_0 = 1$ and $\beta_4 = d_0 = 1$.
 :::

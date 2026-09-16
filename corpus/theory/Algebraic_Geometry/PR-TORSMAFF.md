@@ -17,6 +17,7 @@ review: draft
 prompts:
 - Classify the smooth affine toric varieties.
 - Why is every toric variety built from a fan normal?
+- What singularities can a toric variety with a simplicial fan have?
 ---
 
 ::: {.proposition title="Classification"}
@@ -33,6 +34,11 @@ In the dual basis $\sigma\dual$ is the cone spanned by $e_1, \ldots, e_k$ and $\
 \[
 S_\sigma = \NN^k \oplus \ZZ^{n-k}, \qquad k[S_\sigma] = k[x_1, \ldots, x_k, x_{k+1}^{\pm 1}, \ldots, x_n^{\pm 1}] .
 \]
+:::
+
+::: {.proposition title="Simplicial cones"}
+If $\sigma$ is simplicial of dimension $k$ inside $N \cong \ZZ^n$, then $U_\sigma$ is the quotient of $\AA^k \times \GG_m^{n-k}$ by a finite abelian group, so a toric variety whose fan is simplicial has at worst finite quotient singularities.
+[@Ful93]
 :::
 
 ::: {.proposition title="Normality"}

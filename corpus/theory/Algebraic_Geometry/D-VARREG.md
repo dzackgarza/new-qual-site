@@ -21,6 +21,7 @@ prompts:
 - What is $k[V]$, what is $A(V)$, and what is $k(V)$?
 - What are the sections of $\OO_X$ over a distinguished open set?
 - Show that the regular functions on a variety form a sheaf of rings.
+- What is a rational map? A birational map?
 ---
 
 ::: {.definition title="Regular functions"}
@@ -48,6 +49,18 @@ In particular, for an ideal $\mfa \neq 0$ of $k[x_1,\ldots,x_n]$, the open set $
 \OO_{\AA^n}(\AA^n \sm V(\mfa)) = \bigcap_{0 \neq f \in \mfa} k[x_1,\ldots,x_n]\invert{f} \subseteq k(x_1,\ldots,x_n) .
 \]
 [@Har10a, §I.3]
+:::
+
+::: {.definition title="Rational and birational maps"}
+A \dfn{rational map} $\varphi \colon X \dashrightarrow Y$ of varieties is an equivalence class of pairs $(U, \varphi_U)$ with $U \subseteq X$ nonempty open and $\varphi_U \colon U \to Y$ a morphism, where $(U, \varphi_U) \sim (V, \varphi_V)$ if $\varphi_U$ and $\varphi_V$ agree on $U \cap V$.
+It is **dominant** if some, hence every, $\varphi_U$ has dense image.
+A \dfn{birational map} is a rational map with a rational inverse, and $X$ and $Y$ are **birational** if one exists.
+:::
+
+::: {.proposition title="Rational maps and function fields"}
+Over an algebraically closed field $k$, sending $X$ to $k(X)$ gives an arrow-reversing equivalence between varieties with dominant rational maps and finitely generated field extensions of $k$ with $k$-homomorphisms.
+In particular $X$ and $Y$ are birational if and only if $k(X) \cong k(Y)$ over $k$.
+[@Har10a]
 :::
 
 ::: {.remark}
