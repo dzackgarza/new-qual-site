@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-27
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 27'
+title: Limit of $\int_1^n x^{-n}\,dx$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-17
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 17'
+title: Operations preserving asymptotic equivalence $f\sim g$
 classification:
   areas:
   - prelim

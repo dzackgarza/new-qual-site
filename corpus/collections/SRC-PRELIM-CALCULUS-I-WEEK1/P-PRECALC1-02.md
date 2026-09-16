@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-02
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 2'
+title: Limit of $\frac{(1+x)^\alpha-1}{x}$ as $x\to0$
 classification:
   areas:
   - prelim

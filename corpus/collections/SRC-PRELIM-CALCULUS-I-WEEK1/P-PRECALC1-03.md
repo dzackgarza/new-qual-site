@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-03
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 3'
+title: Limit of $\frac{\cos(\beta x)-1}{x^2}$ as $x\to0$
 classification:
   areas:
   - prelim

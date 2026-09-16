@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-21
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 21'
+title: Derivative of $\frac{x^3}{(6x^2+1)\sqrt[3]{(x+3)^4}}$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-13
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 13'
+title: Lower limit $c$ in $3x^5+96=\int_c^x g(t)\,dt$
 classification:
   areas:
   - prelim

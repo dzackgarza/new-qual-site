@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-11
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 11'
+title: Derivative of $x^{2+\sin x}$
 classification:
   areas:
   - prelim

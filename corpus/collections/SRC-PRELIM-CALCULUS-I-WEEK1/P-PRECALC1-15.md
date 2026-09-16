@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-15
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 15'
+title: Tangent line to $\int_1^x\frac{dt}{1+t^2}$ at $x=2$
 classification:
   areas:
   - prelim

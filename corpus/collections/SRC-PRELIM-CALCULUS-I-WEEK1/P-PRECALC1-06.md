@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-06
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 6'
+title: Limit of $x^{-2}-\sin(x)^{-2}$ as $x\to0$
 classification:
   areas:
   - prelim

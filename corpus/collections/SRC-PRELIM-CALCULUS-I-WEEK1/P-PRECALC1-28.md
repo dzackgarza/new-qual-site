@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-28
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 28'
+title: Riemann sum limit for $\int_0^3(x^2-x)\,dx$
 classification:
   areas:
   - prelim

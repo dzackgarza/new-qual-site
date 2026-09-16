@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-12
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 12'
+title: Comparing $\int_0^1\sqrt{1-x^4}\,dx$, $\int_0^1\sqrt{1+x^4}\,dx$ and $\int_0^1\sqrt{1-x^8}\,dx$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-18
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 18'
+title: Derivative of $g\circ g$ at $0$ for $g(x)=e^{2x+1}$
 classification:
   areas:
   - prelim

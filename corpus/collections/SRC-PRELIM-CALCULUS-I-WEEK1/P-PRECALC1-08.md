@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-08
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 8'
+title: Mean value bound on $f(0)$ from $f(3)=5$ and $f'\ge1$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-05
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 5'
+title: Derivative of $|x|+3x^2$ at $x=-1$
 classification:
   areas:
   - prelim

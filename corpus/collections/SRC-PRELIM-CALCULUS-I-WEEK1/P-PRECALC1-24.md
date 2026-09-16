@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-24
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 24'
+title: Limit of $\frac1x\int_0^x(1+\sin 2t)^{1/t}\,dt$ as $x\to0$
 classification:
   areas:
   - prelim
