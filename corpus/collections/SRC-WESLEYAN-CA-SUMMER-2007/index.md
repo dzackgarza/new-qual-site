@@ -48,6 +48,6 @@ source:
     comment: Section III, problem 3
 ---
 
-::: remark
-Four Section I prompts are exact repeats of earlier Wesleyan cards in the same compilation and are reused rather than duplicated.
+::: {.remark}
+Four Section I problems repeat problems of earlier Wesleyan exams.
 :::
