@@ -13,22 +13,16 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For $U \subseteq X$, the **closure of $U$ in $X$** is given by 
-\[
-\cl_X(U) = \Intersect_{\substack{ B\supseteq U \\ \text{ closed} }} B
-,\]
-the intersection of all closed sets in $X$ containing $U$. 
-For $Y\subseteq X$ a subspace containing $U$, the closure of $U$ in $Y$ is 
-\[
-\cl_Y(U) = \cl_X(U) \intersect Y
-.\].[^closure_relative_theorem]
-In general, we write $\bar{U} \da \cl_X(U)$.
-
-An equivalent condition: $x\in \cl_X(U) \iff$ every neighborhood of $x$ in $X$ intersects $U$.[^munkres_pt_in_closure]
-
+::: {.definition}
+Let $X$ be a topological space and $U\subseteq X$.
+The \dfn{closure} of $U$ in $X$ is the intersection of all closed subsets of $X$ containing $U$,
+$$
+\cl_X(U) \coloneqq \Intersect_{\substack{B\supseteq U \\ B \text{ closed in } X}} B
+,$$
+also written $\bar U$.
 :::
 
-[^closure_relative_theorem]: Munkres, Theorem 17.4.
-
-[^munkres_pt_in_closure]: Munkres, Theorem 17.5.
+::: {.remark}
+If $Y\subseteq X$ is a subspace containing $U$, the closure of $U$ in $Y$ is $\cl_Y(U) = \cl_X(U) \intersect Y$ [@Mun00, Theorem 17.4].
+A point $x\in X$ lies in $\cl_X(U)$ if and only if every [[D-JMRPA|neighborhood]] of $x$ in $X$ intersects $U$ [@Mun00, Theorem 17.5].
+:::
