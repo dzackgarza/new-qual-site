@@ -16,7 +16,7 @@ The Riesz representation theorem states that every bounded linear functional on 
 
 [[PR-L35O7]]
 
-[[PR-WS6NT]]
+[[T-5BFVS]]
 
 [[PR-KTZZ5]]
 
@@ -26,7 +26,7 @@ The Riesz representation theorem states that every bounded linear functional on 
 
 [[T-LDCZB]]
 
-[[FF-UT5GL]] [[FT-OR6TO]]
+[[FF-UT5GL]]
 
 [[T-J3AN3]]
 

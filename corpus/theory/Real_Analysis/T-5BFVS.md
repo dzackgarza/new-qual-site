@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-5BFVS
 kind: theorem
 title: Duals of $L^p$ spaces
+prompts:
+- State the Riesz representation theorem for $L^p(X)\dual$.
 classification:
   areas:
   - real-analysis
@@ -20,5 +22,5 @@ Then the map
 $$
 L^q(X,\mu)\to L^p(X,\mu)\dual,\qquad g\mapsto\qty{f\mapsto\int_X fg\dmu},
 $$
-is an isometric isomorphism onto the space $L^p(X,\mu)\dual$ of continuous linear functionals on $L^p(X,\mu)$ with the [[D-T4LOC|dual norm]].
+is an isometric isomorphism onto the space $L^p(X,\mu)\dual$ of continuous linear functionals on $L^p(X,\mu)$ with the [[D-T4LOC|dual norm]] [@Fol13].
 :::
