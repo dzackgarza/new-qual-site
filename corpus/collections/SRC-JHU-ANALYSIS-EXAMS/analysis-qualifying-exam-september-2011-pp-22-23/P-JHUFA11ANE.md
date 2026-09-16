@@ -25,23 +25,42 @@ audit:
 ---
 
 ::: {.problem}
-Give a sequence $(f_j)$ in $L^2(\mathbb R)$ such that $\|f_j\|_2=1$ for every $j$, but $(f_j)$ has no norm-convergent subsequence.
+Give a sequence $(f_j)$ in $L^2(\RR)$ such that $\norm{f_j}_2=1$ for every $j$, but $(f_j)$ has no norm-convergent subsequence.
 :::
 
 ::: {.solution}
-For $j\ge1$, let
-\[
+<1>1. For $j\ge1$, define
+$$
 f_j=\mathbf1_{[j,j+1]}.
-\]
-Then
-\[
-\|f_j\|_2^2=\int_j^{j+1}1\,dx=1.
-\]
+$$
+Then $\norm{f_j}_2=1$ for every $j$.
+::: {.proof}
+Indeed,
+$$
+\norm{f_j}_2^2=\int_j^{j+1}1\,dx=1.
+$$
+:::
+
+<1>2. Distinct terms satisfy
+$$
+\norm{f_j-f_k}_2=\sqrt2.
+$$
+::: {.proof}
 If $j\ne k$, the supports are disjoint, so
-\[
-\|f_j-f_k\|_2^2
-=\|f_j\|_2^2+\|f_k\|_2^2
+$$
+\norm{f_j-f_k}_2^2
+=\norm{f_j}_2^2+\norm{f_k}_2^2
 =2.
-\]
-Thus distinct terms are always distance $\sqrt2$ apart. In particular, no subsequence can be Cauchy in $L^2(\mathbb R)$, and therefore no subsequence can converge in norm.
+$$
+:::
+
+<1>3. The sequence has no norm-convergent subsequence.
+::: {.proof}
+By step <1>2, distinct terms are always distance $\sqrt2$ apart. Hence no subsequence is Cauchy in $L^2(\RR)$, so no subsequence converges in norm.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Steps <1>1 and <1>3 give the required sequence and its noncompactness property.
+:::
 :::
