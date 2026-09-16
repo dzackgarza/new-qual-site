@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-NFB7Q
 kind: proposition
-title: Dense subspaces of $L^2(I)$
+title: Dense subspaces of $L^p$ for $1\leq p<\infty$
 classification:
   areas:
   - real-analysis
@@ -15,17 +15,18 @@ review: draft
 ---
 
 ::: {.proposition}
-The following are dense subspaces of $L^2([0, 1])$ and $L^1(\RR)$:
+Let $1\leq p<\infty$ and $n\geq1$.
+Each of the following subspaces is [[D-KJBAK|dense]] in $L^p(\RR^n)$ [@Fol13, §6.1, §7.1, §8.2]:
 
-- Bounded measurable functions with bounded support
+(a) simple functions $\sum_{j=1}^k a_j\chi_{E_j}$ with $a_j\in\CC$ and $E_j$ [[D-MDJII|Lebesgue measurable]] of finite measure;
 
-- Simple functions
+(b) step functions $\sum_{j=1}^k a_j\chi_{R_j}$ with $a_j\in\CC$ and $R_j$ closed rectangles;
 
-- Step functions
+(c) bounded measurable functions with bounded support;
 
-- $C_0([0, 1])$
+(d) $C_c(\RR^n)$, the continuous functions with compact support;
 
-- Smoothly differentiable functions $C_0^\infty([0, 1])$
+(e) $C_c^\infty(\RR^n)$, the smooth functions with compact support.
 
-- Smooth compactly supported functions $C_c^\infty$
+For a bounded interval $[a,b]$, $C([a,b])$ and the functions in $C_c^\infty((a,b))$ extended by $0$ are dense in $L^p([a,b])$.
 :::
