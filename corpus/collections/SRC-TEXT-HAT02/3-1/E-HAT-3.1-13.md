@@ -22,12 +22,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-09
   note: Verified the cochain, exact-sequence, and universal-coefficient calculations directly.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Moved the statement into a problem block and stated Proposition 1B.9 from Hatcher, Algebraic Topology, p. 90.
 ---
 
-# E-HAT-3.1-13
+::: {.problem}
+Proposition 1B.9 reads: Let $X$ be a connected CW complex and let $Y$ be a $K(G,1)$.
+Then every homomorphism $\pi_1(X, x_0) \to \pi_1(Y, y_0)$ is induced by a map $(X, x_0) \to (Y, y_0)$ that is unique up to homotopy fixing $x_0$.
 
 Let $\langle X, Y \rangle$ denote the set of basepoint-preserving homotopy classes of basepoint-preserving maps $X \to Y$.
 Using Proposition 1B.9, show that if $X$ is a connected CW complex and $G$ is an abelian group, then the map $\langle X, K(G, 1) \rangle \to H^1(X; G)$ sending a map $f: X \to K(G, 1)$ to the induced homomorphism $f_*: H_1(X) \to H_1(K(G, 1)) \approx G$ is a bijection, where we identify $H^1(X; G)$ with $\operatorname{Hom}(H_1(X), G)$ via the universal coefficient theorem.
+:::
 
 ::: {.solution}
 Let $Y=K(G,1)$ and fix basepoints throughout.
