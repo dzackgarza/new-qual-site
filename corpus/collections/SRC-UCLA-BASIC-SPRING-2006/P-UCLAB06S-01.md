@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-01
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 1
+title: Uniform limits of Riemann integrable functions are Riemann integrable
 classification:
   areas: [prelim]
   topics: []

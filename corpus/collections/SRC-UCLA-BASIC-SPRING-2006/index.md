@@ -15,16 +15,26 @@ source:
   institution: ucla
   area: prelim
   problems:
-  - P-UCLAB06S-01
-  - P-UCLAB06S-02
-  - P-UCLAB06S-03
-  - P-UCLAB06S-04
-  - P-UCLAB06S-05
-  - P-UCLAB06S-06
-  - P-UCLAB06S-07
-  - P-UCLAB06S-08
-  - P-UCLAB06S-09
-  - P-UCLAB06S-10
+  - id: P-UCLAB06S-01
+    comment: Problem 1
+  - id: P-UCLAB06S-02
+    comment: Problem 2
+  - id: P-UCLAB06S-03
+    comment: Problem 3
+  - id: P-UCLAB06S-04
+    comment: Problem 4
+  - id: P-UCLAB06S-05
+    comment: Problem 5
+  - id: P-UCLAB06S-06
+    comment: Problem 6
+  - id: P-UCLAB06S-07
+    comment: Problem 7
+  - id: P-UCLAB06S-08
+    comment: Problem 8
+  - id: P-UCLAB06S-09
+    comment: Problem 9
+  - id: P-UCLAB06S-10
+    comment: Problem 10
   date:
     kind: academic-term
     term: spring

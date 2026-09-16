@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-10
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 10
+title: Commuting complex matrices have a common eigenvector
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-07
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 7
+title: Non-diagonalizable $3\times3$ upper triangular matrix with a repeated eigenvalue
 classification:
   areas: [prelim]
   topics: []

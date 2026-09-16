@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-05
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 5
+title: Uniform continuity of $x^\alpha$ on $[0,\infty)$
 classification:
   areas: [prelim]
   topics: []

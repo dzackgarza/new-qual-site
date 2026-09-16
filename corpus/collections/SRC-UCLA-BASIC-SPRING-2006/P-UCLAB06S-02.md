@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-02
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 2
+title: Radius of convergence of a power series
 classification:
   areas: [prelim]
   topics: []

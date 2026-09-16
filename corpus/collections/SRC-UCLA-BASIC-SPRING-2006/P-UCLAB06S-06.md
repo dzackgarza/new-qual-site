@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-06
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 6
+title: Compactness of a set of Lipschitz functions with unit $L^2$ norm in $C[0,1]$
 classification:
   areas: [prelim]
   topics: []

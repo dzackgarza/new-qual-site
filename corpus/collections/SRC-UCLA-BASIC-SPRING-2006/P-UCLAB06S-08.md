@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-08
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 8
+title: Orthogonal maps of $\mathbb R^{2n+1}$ have an eigenvalue $\pm1$
 classification:
   areas: [prelim]
   topics: []

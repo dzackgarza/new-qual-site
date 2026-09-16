@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-03
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 3
+title: Continuous differentiability of $\sum\frac{\sin nx}{n^{5/2}}$
 classification:
   areas: [prelim]
   topics: []

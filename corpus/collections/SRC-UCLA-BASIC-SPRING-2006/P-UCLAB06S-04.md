@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-04
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 4
+title: Implicit function theorem for $x^2y^3+x^3z+2yz^4=4$ at $(1,1,1)$
 classification:
   areas: [prelim]
   topics: []

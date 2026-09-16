@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB06S-09
 kind: problem
-title: UCLA Basic Examination Spring 2006, Problem 9
+title: Spectral theorem for real symmetric matrices
 classification:
   areas: [prelim]
   topics: []
