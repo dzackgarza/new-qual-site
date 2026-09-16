@@ -13,14 +13,17 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Rouché’s theorem, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Cleaned the OCR LaTeX and the broken accent in Rouché against Rouché’s theorem, Problem 9, of Azoff Problems by Topic.pdf; the source itself omits the first part it mentions.
 ---
 
-::: problem
+::: {.problem}
 Prove that
-
 $$
-\operatorname* { m a x } _ { | z | = 1 } | a _ { 0 } + a _ { 1 } z + \cdot \cdot \cdot + a _ { n - 1 } z ^ { n - 1 } + z ^ { n } | \geq 1 .
+\max_{\abs{z}=1} \abs{a_0 + a_1 z + \cdots + a_{n-1}z^{n-1} + z^n} \ge 1.
 $$
 
-Hint: The first part of the problem asks for a statement of Rouch´e’s Theorem.
+Hint: The first part of the problem asks for a statement of Rouché’s Theorem.
 :::
