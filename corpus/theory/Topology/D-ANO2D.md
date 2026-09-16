@@ -13,13 +13,14 @@ review: draft
 ---
 
 ::: {.definition}
-A **covering space** of $X$ is the data $p: \tilde X \to X$ such that
+Let $X$ be a topological space.
+A \dfn{covering space} of $X$ is a topological space $\tilde X$ together with a [[D-AEAAD|continuous map]] $p\colon \tilde X\to X$ such that every $x\in X$ has an open [[D-JMRPA|neighborhood]] $U$ for which $p\inv(U)$ is a union of pairwise disjoint open sets $V_i\subseteq\tilde X$, each mapped [[D-9KQZT|homeomorphically]] onto $U$ by $p$.
+The sets $V_i$ are the \dfn{sheets} of $\tilde X$ over $U$.
+:::
 
-1. Each $x\in X$ admits a neighborhood $U$ such that $p ^{-1} (U)$ is a union of disjoint open sets in $\tilde V_i \subseteq X$ (the **sheets** of $\tilde X$ over $U$),
-
-2. $\ro{p}{V_i}: V_i \to U$ is a homeomorphism for each sheet.
-
-An **isomorphism** of covering spaces $\tilde X_1 \cong \tilde X_2$ is a commutative diagram
+::: {.definition}
+Let $p_1\colon\tilde X_1\to X$ and $p_2\colon\tilde X_2\to X$ be covering spaces of $X$.
+An \dfn{isomorphism of covering spaces} is a homeomorphism $f\colon\tilde X_1\to\tilde X_2$ with $p_2\circ f = p_1$:
 
 \begin{tikzcd}
 	{\tilde X_1} && {\tilde X_2} \\
@@ -29,5 +30,8 @@ An **isomorphism** of covering spaces $\tilde X_1 \cong \tilde X_2$ is a commuta
 	\arrow["{p_2}", from=1-3, to=3-2]
 	\arrow["{f}", from=1-1, to=1-3]
 \end{tikzcd}
-> [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHRpbGRlIFhfMSJdLFsxLDIsIlgiXSxbMiwwLCJcXHRpbGRlIFhfMiJdLFswLDEsInBfMSIsMl0sWzIsMSwicF8yIl0sWzAsMiwiZiJdXQ==)
+:::
+
+::: {.concept}
+[@Hat02, §1.3].
 :::
