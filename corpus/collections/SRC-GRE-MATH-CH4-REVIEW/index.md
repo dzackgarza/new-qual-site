@@ -37,6 +37,3 @@ source:
   date:
     kind: unknown
 ---
-
-Intake reconciliation: the vendored Chapter 4 review source contains sixteen numbered questions, all represented above in source order.
-The retained OCR repair ledger records the unrecoverable scan material (notably the missing span in Question 2 and the absent slope-field figures in Question 4), so those gaps are preserved rather than guessed.
