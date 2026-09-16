@@ -27,7 +27,9 @@ By the fundamental theorem of symmetric polynomials, the ring of symmetric polyn
   $$
   p_k - e_1p_{k-1} + \cdots + (-1)^{k-1}e_{k-1}p_1 + (-1)^k k e_k = 0.
   $$
+
 - **Expansion of Schur functions.** $s_\lambda$ is the sum over semistandard tableaux of shape $\lambda$ of the corresponding monomials, and by the Jacobi--Trudi identity $s_\lambda = \det(h_{\lambda_i - i + j})$.
+
 - **Products of Schur functions.** The coefficients of $s_\mu s_\nu = \sum_\lambda c^\lambda_{\mu\nu}s_\lambda$ are given by the Littlewood--Richardson rule; they are also the multiplicities in tensor products of polynomial representations of $\GL_n$ and in induction products of representations of symmetric groups.
 
 ## The characteristic map
