@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A function $f\in \Hol(U; \CC)$ is called **univalent** if $f$ is injective.
+Let $U\subseteq\CC$ be open.
+A [[D-E7A5W|holomorphic]] function $f\colon U\to\CC$ is \dfn{univalent} if $f$ is injective.
 :::
