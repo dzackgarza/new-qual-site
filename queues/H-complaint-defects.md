@@ -11,7 +11,7 @@ The mathematical entries are the worklist of the `math-defect-repair` node in [T
 
 - Mathematical entries: 1
 
-- Workflow and rendering papercuts: 4
+- Workflow and rendering papercuts: 2
 
 ## Mathematical entries
 
@@ -20,9 +20,5 @@ The mathematical entries are the worklist of the `math-defect-repair` node in [T
 ## Workflow and rendering papercuts
 
 - [ ] Direct `.venv` authoring commands can see an unsupported host Pandoc
-
-- [ ] Single-card validation accepts duplicate YAML mapping keys
-
-- [ ] The worktree-per-stream instruction filled the host volume
 
 - [ ] MinerU Flash extraction requests fail against the remote service
