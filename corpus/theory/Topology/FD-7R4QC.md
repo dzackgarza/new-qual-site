@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-7R4QC
 kind: definition
-title: Locally Compact
+title: Locally compact space
 prompts:
 - What does it mean for a space to be locally compact?
 classification:
@@ -16,13 +16,22 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is *locally compact* iff for every $x\in X$ there exists an open $U$ and compact $K$ such that $x\in U \subseteq K$.
+A topological space $X$ is \dfn{locally compact} if for every $x\in X$ there exist an open set $U\subseteq X$ and a [[D-EILKJ|compact]] subset $K\subseteq X$ with $x\in U \subseteq K$.
+:::
 
-Compact implies locally compact but not conversely: $\RR^n$.
+::: {.example}
+Every compact space $X$ is locally compact, with $U = K = X$.
+The converse fails: for $n\geq 1$, $\RR^n$ is locally compact, since each $x$ lies in an open ball whose closure is compact, but $\RR^n$ is not compact.
+:::
 
-Non locally-compact spaces:
+::: {.example}
+The following subspaces of Euclidean space are not locally compact:
 
-- $\QQ$,
+- $\QQ\subseteq\RR$;
 
-- $\theset{\vector 0} \union \theset{(x, y) \suchthat x>0} \subset\RR^2$ (since the origin admits no compact neighborhood).
+- $\ts{\mathbf 0} \union \ts{(x, y)\in\RR^2 \st x>0} \subseteq\RR^2$, in which the origin has no neighborhood contained in a compact subset.
+:::
+
+::: {.concept}
+[@Mun00, §29].
 :::
