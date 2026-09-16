@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-4DFKT
 kind: fact
-title: $\chi(\Sigma) = 2 \implies\cdots$
+title: '$\chi(\Sigma) = 2$ implies $\Sigma\cong S^2$'
 prompts:
 - Which closed surface has $\chi(\Sigma) = 2$?
 classification:
@@ -17,5 +17,10 @@ review: draft
 ---
 
 ::: {.fact}
-$g=0$ so $\Sigma \cong S^2$.
+Let $\Sigma$ be a connected [[FD-QPIIL|closed surface]] with [[D-QK5BM|Euler characteristic]] $\chi(\Sigma) = 2$.
+Then $\Sigma$ is orientable of genus $g = 0$, and $\Sigma \cong S^2$.
+:::
+
+::: {.concept}
+[@Mun00, §§77--78].
 :::
