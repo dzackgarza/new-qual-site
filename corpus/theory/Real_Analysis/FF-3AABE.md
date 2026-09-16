@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-3AABE
 kind: fact
-title: The reverse triangle inequality
+title: Reverse triangle inequality
 prompts:
 - What is the reverse triangle inequality?
 classification:
@@ -15,5 +15,9 @@ review: draft
 ---
 
 ::: {.fact}
-$${\left\lvert {\, {\left\lVert {x_{}} \right\rVert} - {\left\lVert {y} \right\rVert} \,} \right\rvert} \leq {\left\lVert {x-y} \right\rVert}$$
+Let $(V,\norm{\cdot})$ be a normed vector space.
+For all $x, y\in V$,
+$$
+\abs{\norm{x} - \norm{y}} \leq \norm{x-y}.
+$$
 :::
