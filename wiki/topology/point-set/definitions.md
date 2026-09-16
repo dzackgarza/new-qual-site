@@ -331,8 +331,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-EPQ54]]
 
-[[FD-SW76G]]
-
 [[D-SIUWU]]
 
 [[D-NJ2Y6]]
