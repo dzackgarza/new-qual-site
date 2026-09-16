@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YOAXZ
 kind: theorem
-title: Heine-Cantor
+title: Heine--Cantor theorem
 classification:
   areas:
   - real-analysis
@@ -17,5 +17,6 @@ review: draft
 ---
 
 ::: {.theorem}
-Every continuous function $f:X\to Y$ where $X$ is a compact metric space is uniformly continuous.
+Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces with $X$ [[D-EILKJ|compact]].
+Every [[D-AEAAD|continuous]] map $f\colon X\to Y$ is [[D-WGYSB|uniformly continuous]].
 :::
