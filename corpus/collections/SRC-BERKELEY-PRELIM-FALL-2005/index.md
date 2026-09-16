@@ -42,7 +42,6 @@ source:
     year: 2005
 ---
 
-::: remark
-UC Berkeley preliminary examination, Fall 2005, reconstructed from the retained solution packet, which prints each problem with its solution.
-Problems are listed in source order, Part A followed by Part B. The retained exam PDF has now been independently grounded by deterministic MinerU Flash extraction and agrees with all eighteen problem statements.
+::: {.remark}
+A solution packet for this exam prints each problem with its solution. Part A precedes Part B.
 :::
