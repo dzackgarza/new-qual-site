@@ -19,10 +19,34 @@ What is the dimension of the space of all polynomials p of degree at most 3 such
 :::
 
 ::: {.solution}
-As a general rule, each point you restrict will take away one degree of freedom.
-Since order 3 polynomials have 4 degrees of freedom, the dimension of the set of polynomials p satisfying $p ( - 1 ) = p ( 0 ) = p ( 1 ) = 0$ is 1. More explicitly, any polynomial satistying the equations has the form
+<1>1. Every polynomial in the space is a scalar multiple of $x(x-1)(x+1)$.
+::: {.proof}
+If $p(-1)=p(0)=p(1)=0$, then the three distinct linear factors
+$$
+x+1,\qquad x,\qquad x-1
+$$
+all divide $p$. Hence
+$$
+x(x-1)(x+1)\mid p.
+$$
+Since $\deg p\le3$, the quotient is constant. Thus
+$$
+p(x)=\alpha x(x-1)(x+1)
+$$
+for some $\alpha\in\mathbb R$.
+:::
 
+<1>2. The dimension is $\boxed{1}$.
+::: {.proof}
+Step <1>1 identifies the space with
 $$
-p ( x ) = \alpha x ( x - 1 ) ( x + 1 ) , \alpha \in \mathbb { R } .
+\operatorname{span}_{\mathbb R}\{x(x-1)(x+1)\}.
 $$
+The spanning polynomial is nonzero, so this span is one-dimensional.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 gives the requested dimension.
+:::
 :::
