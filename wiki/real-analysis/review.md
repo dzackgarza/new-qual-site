@@ -54,8 +54,6 @@ Proved in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 [[T-5BFVS]]
 
-[[T-G543T]]
-
 [[T-S3C3S]]
 
 Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].

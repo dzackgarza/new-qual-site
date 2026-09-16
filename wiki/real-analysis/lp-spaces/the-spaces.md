@@ -50,7 +50,7 @@ For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with 
 
 [[PR-2KEIE]]
 
-[[T-G543T]]
+[[T-BFOJT]]
 
 [[PR-TNFL4]]
 
