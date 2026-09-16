@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-ST72T
 kind: theorem
-title: Minkowski's Inequality
+title: Minkowski's inequality
 prompts:
 - State Minkowski's inequality.
 classification:
@@ -16,8 +16,9 @@ review: draft
 ---
 
 ::: {.theorem}
-For $1 \leq p < \infty$,
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $1 \leq p < \infty$, and let $f,g\in L^p(X,\mu)$.
+Then $f+g\in L^p(X,\mu)$ and
 $$
-\norm{f + g}_p \leq \norm{f}_p + \norm{g}_p
-.$$
+\norm{f + g}_p \leq \norm{f}_p + \norm{g}_p .
+$$
 :::

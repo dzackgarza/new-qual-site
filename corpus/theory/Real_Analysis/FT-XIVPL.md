@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-XIVPL
 kind: theorem
-title: Lusin's Theorem
+title: Lusin's theorem
 prompts:
 - State Lusin's theorem.
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f$ is measurable and finite-valued on a measurable $E$ with $m(E) < \infty$ then there exist closed sets $F\subset E$ such that $m(E\setminus F) < \varepsilon \to 0$ such that $f\mid_F$ is continuous.
+Let $m$ be Lebesgue measure on $\RR^n$, let $E\subseteq\RR^n$ be [[D-MDJII|Lebesgue measurable]] with $m(E) < \infty$, and let $f\colon E\to\RR$ be [[D-DHFN4|measurable]].
+Then for every $\varepsilon>0$ there exists a closed set $F\subseteq E$ such that $m(E\setminus F) < \varepsilon$ and the restriction $f|_F$ is continuous.
 :::
