@@ -39,7 +39,3 @@ source:
     term: fall
     year: 1993
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1993. Problems are listed in source order. Problem 12 retains an explicit dependency on the curve omitted from the retained extraction.
-:::
