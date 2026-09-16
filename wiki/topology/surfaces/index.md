@@ -8,7 +8,6 @@ topics:
 
 # Surfaces and manifolds
 
-The classification of surfaces (orientable and nonorientable), Euler characteristic, connect sums, polygon decompositions.
-Also: manifolds, local homology, knot complements.
+The classification of surfaces (orientable and nonorientable), Euler characteristic, connected sums, and polygon decompositions; manifolds, local homology, and knot complements.
 
-See [[topology/surfaces/surfaces-and-manifolds|Surfaces and manifolds (detailed)]].
+The statements and examples are on [[topology/surfaces/surfaces-and-manifolds|Surfaces and manifolds (detailed)]].
