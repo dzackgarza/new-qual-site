@@ -33,7 +33,6 @@ source:
     year: 2006
 ---
 
-::: remark
-The paper has two sections.
-Section A contains five combinatorics/coding questions; Section B is verbatim the first five questions of the separately retained UNL January 2006 topology paper `SRC-TOP-UNL-2006Q1`, so those canonical cards are reused rather than duplicated.
+::: {.remark}
+The paper has two sections. Section A has five combinatorics and coding theory questions; Section B consists of the first five questions of the [[SRC-TOP-UNL-2006Q1|January 2006 topology qualifying exam]].
 :::
