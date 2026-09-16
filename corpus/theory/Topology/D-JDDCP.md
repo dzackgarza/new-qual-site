@@ -25,7 +25,7 @@ For every group $H$ and homomorphisms $\varphi_\alpha\colon G_\alpha\to H$ there
 :::
 
 ::: {.example}
-For a set $S$, the free group on $S$ is $\ast_{s\in S}\ZZ$.
+For a set $S$, the free group on $S$ is isomorphic to $\ast_{s\in S}\ZZ$.
 :::
 
 ::: {.concept}
