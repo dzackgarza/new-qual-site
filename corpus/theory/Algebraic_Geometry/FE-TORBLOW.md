@@ -31,6 +31,16 @@ The identity map of $N$ is compatible with the new fan and the old, and the indu
 is the blowup at $x_\sigma$, with exceptional divisor $D_{u_0} \cong \PP^{k-1}$.
 :::
 
+::: {.example title="Blowing up the affine plane"}
+Subdivide the first quadrant by the ray through $e_1 + e_2$, giving $\sigma_0 = \Cone(e_2, e_1 + e_2)$ and $\sigma_1 = \Cone(e_1 + e_2, e_1)$:
+
+![The first quadrant subdivided by the diagonal ray into $\sigma_0$ and $\sigma_1$.](../../../assets/algebraic-geometry/toric/fan-of-blowup-of-affine-plane.png){width=200px}
+
+Then $U_{\sigma_0} = \Spec \CC[x, x^{-1}y]$ and $U_{\sigma_1} = \Spec \CC[y, xy^{-1}]$, both copies of $\CC^2$.
+The blowup of $\CC^2$ at the origin is $\Bl_0 \CC^2 = V(x t_1 - y t_0) \subseteq \CC^2 \times \PP^1$ with $\PP^1 = \ts{[t_0 : t_1]}$, covered by $U_i = D(t_i) \cong \CC^2$ with coordinates $x, t_1/t_0 = x^{-1}y$ on $U_0$ and $y, t_0/t_1 = xy^{-1}$ on $U_1$.
+These are the two charts above, glued the same way, so $X_{\Sigma} = \Bl_0 \CC^2$.
+:::
+
 ::: {.example title="Blowing up the plane"}
 $\PP^2$ has rays $(1,0), (0,1), (-1,-1)$.
 Blow up the fixed point of $\sigma = \Cone\big((1,0),(0,1)\big)$ by inserting $(1,0) + (0,1) = (1,1)$.

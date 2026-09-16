@@ -30,6 +30,11 @@ It is a smooth variety of dimension $k$ and degree $\sum_i a_i$, and its project
 ::: {.example}
 $S(1,1) \subseteq \PP^3$ is the smooth quadric surface, ruled by the lines joining corresponding points of two skew lines.
 $S(1,2) \subseteq \PP^4$ is the cubic scroll, the blowup of $\PP^2$ at a point embedded by the conics through that point.
+It is cut out by the $2 \times 2$ minors of
+\[
+\begin{bmatrix} x_0 & x_1 & y_0 \\ x_1 & x_2 & y_1 \end{bmatrix} ,
+\]
+and is the closure of the image of $(s, t) \mapsto [1 : s : s^2 : t : st]$.
 Allowing $a_i = 0$ gives cones: $S(0,2)$ is the quadric cone over a conic.
 :::
 

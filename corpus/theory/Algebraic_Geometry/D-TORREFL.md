@@ -28,6 +28,19 @@ P^\circ = \ts{ u \in N_\RR \st \inp{m}{u} \geq -1 \text{ for all } m \in P } .
 \]
 :::
 
+::: {.proposition title="Polar dual from the facet presentation"}
+If $0$ is in the interior of $P$ and $P = \ts{ m \in M_\RR \st \inp{m}{u_F} \geq -a_F \text{ for every facet } F }$, then every $a_F > 0$ and
+\[
+P^\circ = \operatorname{Conv}\qty( a_F^{-1} u_F \st F \text{ a facet of } P ) .
+\]
+:::
+
+::: {.example title="The square"}
+The square $P = \ts{ m \st \inp{m}{\pm e_i} \geq -1 }$ has $a_F = 1$ for all four facets, so $P^\circ = \operatorname{Conv}(\pm e_1, \pm e_2)$ is the diamond.
+
+![The square $P$ and its polar dual $P^\circ$.](../../../assets/algebraic-geometry/toric/square-and-polar-dual.png){width=400px}
+:::
+
 ::: {.definition title="Reflexive"}
 $P$ is \dfn{reflexive} if it is a lattice polytope with facet presentation
 \[

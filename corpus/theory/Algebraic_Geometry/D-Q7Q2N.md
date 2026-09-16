@@ -31,6 +31,27 @@ Its dual is $\sigma\dual = \ts{m \in M_\RR \st \inp{m}{u} \geq 0 \text{ for all 
 A **fan** $\Sigma$ is a finite collection of such cones closed under faces, in which any two cones meet in a face of each.
 :::
 
+::: {.example title="Cones with many edges"}
+A cone in $\RR^3$ can have any number of edges; the cross-sections below have five edges $v_1, \ldots, v_5$ and four edges $v_1, \ldots, v_4$.
+
+![Two three-dimensional cones, with five and with four edges.](../../../assets/algebraic-geometry/toric/cones-with-five-and-four-edges.png){width=550px}
+:::
+
+::: {.example title="The projective line"}
+The fan $\ts{\RR_{\geq 0}, \ts{0}, \RR_{\leq 0}}$ in $N_\RR = \RR$ gives two copies of $\CC$ glued along $\CC^\times$ by $x \mapsto x^{-1}$:
+
+\begin{tikzcd}
+	{\CC[x^{-1}]} & {\CC[x, x^{-1}]} & {\CC[x]} \\
+	\CC & {\CC^\times} & \CC
+	\arrow[hook, from=1-1, to=1-2]
+	\arrow[hook', from=1-3, to=1-2]
+	\arrow[hook', from=2-2, to=2-1]
+	\arrow[hook, from=2-2, to=2-3]
+\end{tikzcd}
+
+so $X_\Sigma = \PP^1$.
+:::
+
 ::: {.definition title="The variety"}
 \[
 \sigma \rightsquigarrow S_\sigma = \sigma\dual \intersect M \rightsquigarrow U_\sigma = \Spec k[S_\sigma] ,

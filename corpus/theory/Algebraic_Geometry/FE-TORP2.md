@@ -24,6 +24,20 @@ prompts:
 ::: {.example title="The fan"}
 $N = \ZZ^2$ with rays $u_1 = e_1$, $u_2 = e_2$, $u_0 = -e_1 - e_2$, and the three two-dimensional cones spanned by consecutive pairs.
 Each is smooth, the support is all of $N_\RR$, so $\PP^2$ is smooth and complete, with $\chi = \size\Sigma(2) = 3$.
+
+![The fan of $\PP^2$ with maximal cones $\sigma_0, \sigma_1, \sigma_2$.](../../../assets/algebraic-geometry/toric/fan-of-p2.png){width=250px}
+:::
+
+::: {.example title="The charts"}
+Let $\sigma_0 = \Cone(e_1, e_2)$, $\sigma_1 = \Cone(e_2, -e_1-e_2)$, $\sigma_2 = \Cone(-e_1-e_2, e_1)$. Their duals are
+
+![The dual cones $\sigma_0\dual, \sigma_1\dual, \sigma_2\dual$.](../../../assets/algebraic-geometry/toric/dual-cones-of-fan-of-p2.png){width=300px}
+
+and each $U_{\sigma_i} \cong \CC^2$, with coordinates
+\[
+U_{\sigma_0} : (x, y), \qquad U_{\sigma_1} : (x^{-1}, x^{-1}y), \qquad U_{\sigma_2} : (y^{-1}, xy^{-1}) .
+\]
+Setting $x = t_1/t_0$ and $y = t_2/t_0$ identifies $U_{\sigma_i}$ with the standard chart $\ts{t_i \neq 0}$ of $\PP^2$, and the gluings agree.
 :::
 
 ::: {.example title="Class group"}

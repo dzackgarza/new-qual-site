@@ -40,6 +40,17 @@ For a face $F \leq P$ set
 \]
 These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
+The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \Cone(P \cap M - m_i)\dual$.
+:::
+
+::: {.definition title="Combinatorial equivalence"}
+Polytopes $P_1$ and $P_2$ are **combinatorially equivalent** if there is a bijection between their faces that preserves inclusions, intersections and dimensions of faces.
+:::
+
+::: {.example title="A hexagon"}
+For the hexagon $P$ with vertices $v_1, \ldots, v_6$, the cone of directions out of each vertex $v_i$ is dual to the maximal cone $\sigma_i$ of the normal fan $\Sigma_P$, which has six maximal cones.
+
+![A lattice hexagon $P$ with the edge directions at each vertex, and its normal fan $\Sigma_P$.](../../../assets/algebraic-geometry/toric/hexagon-and-normal-fan.png){width=550px}
 :::
 
 ::: {.remark title="Three descriptions, one variety"}

@@ -40,6 +40,9 @@ Hence $X_P$ is $\QQ$-factorial with at worst finite quotient singularities exact
 The cube in $\RR^3$ is simple and not simplicial: each vertex meets three facets, but the facets are squares.
 The octahedron in $\RR^3$ is simplicial and not simple: each facet is a triangle, but each vertex meets four of them.
 The two are polar duals, which is the general picture — $P$ is simple exactly when $P^\circ$ is simplicial.
+
+Explicitly, the cube $P \subseteq \RR^3$ with vertices $(\pm 1, \pm 1, \pm 1)$ has facet normals $\pm e_1, \pm e_2, \pm e_3$ and facet presentation $\inp{m}{\pm e_i} \geq -1$.
+The origin is interior, so $P^\circ$ is the octahedron with vertices $\pm e_i$, and the maximal cones of the normal fan of $P$ are the eight octants of $\RR^3$, the cones over the facets of $P^\circ$.
 :::
 
 ::: {.remark}
