@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-Using that every ring has a $\mods{\ZZ}$ structure, the **characteristic** of a ring $R$ is the smallest $n$ such that $n\actson 1_R = 0_R$, i.e. $\sum_{i=1}^n 1_R = 0_R$.
+Let $R$ be a ring, regarded as a $\ZZ$-module via $n\cdot r=\sum_{i=1}^n r$ for $n\geq 1$.
+The \dfn{characteristic} of $R$ is the smallest integer $n\geq 1$ such that $n\cdot 1_R = 0_R$, that is, $\sum_{i=1}^n 1_R = 0_R$, if such an integer exists, and $0$ otherwise.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-NKRGN
 kind: definition
-title: Euclidean Domain
+title: Euclidean domain
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-An integral domain $R$ is **Euclidean** if $R$ admits a degree function $d:R\to \ZZ_{\geq 0}$ such that for all $x,y\in R$ there exist $q,r\in R$ with $x = qy + r$ and either $f(r) < f(y)$ or $r=0$.
+An [[D-QJ3QL|integral domain]] $R$ is \dfn{Euclidean} if there exists a function $d\colon R\to \ZZ_{\geq 0}$ such that for all $x,y\in R$ with $y\neq 0$ there exist $q,r\in R$ with $x = qy + r$ and either $r=0$ or $d(r) < d(y)$.
+Such a function $d$ is a \dfn{Euclidean function} on $R$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-O4WWN
 kind: definition
-title: Nondegenerate Bilinear Form
+title: Nondegenerate bilinear form
 classification:
   areas:
   - algebra
@@ -14,13 +14,20 @@ review: draft
 ---
 
 ::: {.definition}
-A bilinear form $b: V\cross V \to k$ is **nondegenerate** iff its adjoint map
-\[
-V &\to V\dual \\
+Let $k$ be a field, $V$ a $k$-vector space, and $b\colon V\times V \to k$ a bilinear form.
+The form $b$ is \dfn{nondegenerate} if its adjoint map
+$$
+\begin{aligned}
+V &\to V^{\vee} \\
 x &\mapsto b(x, \wait)
-\]
-is injective, equivalently an isomorphism when $\dim_k V < \infty$.
-Equivalently, the radical $\ts{ x \in V \st b(x,y) = 0 \text{ for all } y \in V }$ is zero, equivalently any Gram matrix of $b$ is invertible.
+\end{aligned}
+$$
+is injective.
+:::
+
+::: {.remark}
+The kernel of the adjoint map is $\theset{ x \in V \st b(x,y) = 0 \text{ for all } y \in V }$, so $b$ is nondegenerate if and only if this subspace is zero.
+If $\dim_k V = n< \infty$, then $\dim_k V^{\vee}=n$, so the adjoint map is injective if and only if it is an isomorphism; with respect to a basis $e_1,\ldots,e_n$ of $V$ and its dual basis, the adjoint map has matrix the transpose of the [[D-H4TDM|Gram matrix]] $\bigl(b(e_i,e_j)\bigr)_{i,j}$, so $b$ is nondegenerate if and only if a Gram matrix of $b$ is invertible.
 :::
 
 ::: {.concept}
