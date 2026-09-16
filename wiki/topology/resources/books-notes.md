@@ -26,7 +26,7 @@ order: 0
 
 [Cambridge Part II algebraic topology notes](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
 
-[Auroux, Math 131: Introduction to Topology](attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf)
+[Beckham Myers, notes on Denis Auroux's Harvard Math 131: Introduction to Topology (Fall 2019)](attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf) — lecture notes following Munkres, from metric and topological spaces, products, connectedness, compactness, countability and separation axioms, Urysohn's lemma and metrization, through homotopy, the fundamental group, covering spaces, the Brouwer and Borsuk–Ulam theorems, universal covers and the Seifert–van Kampen theorem.
 
 [Si Li, *Introduction to Algebraic Topology*, Tsinghua University, Spring 2018](attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf) — expository course notes in 28 sections covering categories and functors, fundamental groupoids, coverings and fibrations, van Kampen, homotopy groups and Puppe sequences, CW complexes, singular and cellular homology, cohomology and products, Poincaré duality, spectral sequences, obstruction theory, Hurewicz, and the Eilenberg–Steenrod axioms.
 
