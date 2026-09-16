@@ -25,25 +25,62 @@ for all $x , y \in \mathbb { R }$
 :::
 
 ::: {.solution}
-First, suppose that $\alpha , \beta , \gamma$ are such that
-
+<1>1. The polynomials
 $$
-\alpha \cdot ( 1 ) + \beta \cdot ( x ^ { 2 } + x + 1 ) + \gamma \cdot ( x ^ { 2 } - x + 1 ) = 0 .
+1,
+\qquad
+x^2+x+1,
+\qquad
+x^2-x+1
 $$
-
-Then
-
+are linearly independent.
+::: {.proof}
+Suppose
 $$
-\alpha + \beta + \gamma = 0 , \quad \beta - \gamma = 0 , \quad \mathrm { a n d } \quad \beta + \gamma = 0 .
+\alpha+\beta(x^2+x+1)+\gamma(x^2-x+1)=0.
 $$
-
-Adding the second and third equation gives $\beta = 0$ . But then the second equation gives $\gamma = 0$ and then the first gives $\alpha = 0$ . This shows that $\left\{ 1 , x ^ { 2 } + x + 1 , x ^ { 2 } - x + 1 \right\}$ are linearly independent in the vector space of real polynomials.
-
-Now supposing such polynomials $a , b , c ,$ d exist, we can plug in $y = 0 , 1$ , −1 and let $b ( 0 ) = b _ { 0 } , b ( 1 ) =$ $b _ { 1 } , b ( - 1 ) = b _ { 2 }$ (and similarly for d) to see that
-
+Comparing the coefficients of $1$, $x$, and $x^2$ gives
 $$
-\begin{array} { r } { 1 = b _ { 0 } a ( x ) + d _ { 0 } c ( x ) , } \\ { x ^ { 2 } + x + 1 = b _ { 1 } a ( x ) + d _ { 1 } c ( x ) , } \\ { x ^ { 2 } - x + 1 = b _ { 2 } a ( x ) + d _ { 2 } c ( x ) . } \end{array}
+\alpha+\beta+\gamma=0,
+\qquad
+\beta-\gamma=0,
+\qquad
+\beta+\gamma=0.
 $$
+The last two equations imply $\beta=\gamma=0$, and then the first gives $\alpha=0$.
+:::
 
-This is impossible because two vectors $a ( x )$ and $c ( x )$ cannot span a 3-dimensional space.
+<1>2. Any representation
+$$
+1+xy+x^2y^2=a(x)b(y)+c(x)d(y)
+$$
+would put all three polynomials from step <1>1 in the span of $a$ and $c$.
+::: {.proof}
+Evaluate the identity at $y=0,1,-1$. We obtain
+$$
+1=a(x)b(0)+c(x)d(0),
+$$
+$$
+x^2+x+1=a(x)b(1)+c(x)d(1),
+$$
+and
+$$
+x^2-x+1=a(x)b(-1)+c(x)d(-1).
+$$
+Thus each of these three polynomials lies in
+$$
+\operatorname{span}_{\mathbb R}\{a(x),c(x)\},
+$$
+whose dimension is at most $2$.
+:::
+
+<1>3. No such polynomials $a,b,c,d$ exist.
+::: {.proof}
+Step <1>1 gives three linearly independent polynomials, while step <1>2 would place them in a space of dimension at most $2$. This is impossible.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 proves the required nonexistence.
+:::
 :::
