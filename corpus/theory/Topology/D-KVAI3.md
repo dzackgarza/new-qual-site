@@ -21,7 +21,7 @@ Equivalently, every pair of continuous maps $X\times\ts{0}\to Y$ and $A\times I\
 :::
 
 ::: {.proposition}
-If $A$ is closed in $X$, then $(X, A)$ has the homotopy extension property if and only if $X\times\ts{0}\cup A\times I$ is a [[D-6FSWY|retract]] of $X\times I$.
+If $A$ is closed in $X$, then $(X, A)$ has the homotopy extension property if and only if $X\times\ts{0}\cup A\times I$ is a [[D-NCLVD|retract]] of $X\times I$.
 :::
 
 ::: {.proposition}

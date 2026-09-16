@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-NCLVD
 kind: definition
 title: Retract
+prompts:
+- What does it mean for a subspace $A \subset X$ to be a retract of $X$?
 classification:
   areas:
   - topology
@@ -34,3 +36,7 @@ Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$.
 (b) Continuous maps $r\colon X\to A$ with $r\circ\iota=\id_A$ correspond bijectively to continuous maps $\rho\colon X\to X$ with $\rho(X)=A$ and $\rho(a)=a$ for all $a\in A$, via $\rho=\iota\circ r$.
 :::
 
+::: {.remark}
+If $r$ is a retraction and $a_0\in A$, then $r_*\circ\iota_* = \id$ on $\pi_1(A, a_0)$ and on $H_n(A)$, so $\iota_*\colon \pi_1(A, a_0)\to\pi_1(X, a_0)$ and $\iota_*\colon H_n(A)\to H_n(X)$ are injective.
+For every point $x_0$ of a topological space $X$, the subspace $\ts{x_0}$ is a retract of $X$, via the constant map $X\to\ts{x_0}$.
+:::

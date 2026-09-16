@@ -124,10 +124,6 @@ If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion,
 For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retraction.
 :::
 
-[[D-6FSWY]]
-
-[[FD-6SR5I]]
-
 [[D-KWWVL]]
 
 [[D-3O6QH]]
