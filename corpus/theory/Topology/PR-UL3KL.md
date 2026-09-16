@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-UL3KL
 kind: proposition
-title: Homology of 3-manifolds
+title: Homology of closed 3-manifolds
 classification:
   areas:
   - topology
@@ -15,18 +15,17 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $M^3$ be a **closed connected** 3-manifold and write $H_1(M;\ZZ) = \ZZ^r \oplus F$ with $F$ finite.
+Let $M$ be a closed connected $3$-manifold and write $H_1(M;\ZZ) \cong \ZZ^r \oplus F$ with $F$ finite.
 Then
-
-- Orientable: $H_* = \qty{ \ZZ,\; \ZZ^r \oplus F,\; \ZZ^r,\; \ZZ }$
-
-- Nonorientable: $H_* = \qty{ \ZZ,\; \ZZ^r \oplus F,\; \ZZ^{r-1} \oplus \ZZ/2,\; 0 }$, and here $r \geq 1$.
+$$
+H_*(M;\ZZ) \cong \begin{cases}
+\qty{ \ZZ,\; \ZZ^r \oplus F,\; \ZZ^r,\; \ZZ } & M \text{ orientable},\\
+\qty{ \ZZ,\; \ZZ^r \oplus F,\; \ZZ^{r-1} \oplus \ZZ/2,\; 0 } & M \text{ nonorientable},
+\end{cases}
+$$
+in degrees $0, 1, 2, 3$, with all higher groups zero; in the nonorientable case $r \geq 1$ [@Hat02, §3.3, Exercise 24, p. 259]; [@Hat02, Theorem 3.26, p. 236].
 :::
 
 ::: {.remark}
-Hatcher, §3.3, Exercise 24, which is stated for a closed connected 3-manifold and computes $H_2$ from $H_1 = \ZZ^r \oplus F$.
-
-$H_1$ carries torsion in general — the lens space $L(p,1)$ has $H_1 = \ZZ/p$ — so writing it as $\ZZ^r$ was false.
-It is $H_2$ that is torsion-free in the orientable case, because Poincaré duality identifies it with $H^1$, and $H^1$ is always torsion-free.
-The top group is $\ZZ$ only when $M$ is orientable; a closed connected nonorientable $n$-manifold has $H_n = 0$, by Hatcher Theorem 3.26.
+$H_1$ can have torsion: the lens space $L_p(1,1)$ has $H_1\cong\ZZ/p$.
 :::
