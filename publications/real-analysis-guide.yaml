@@ -214,7 +214,7 @@ sections:
       - ref: D-DHFN4
       - ref: D-553MO
       - ref: T-OTR5M
-      - ref: T-XZE3E
+      - ref: FT-OGS76
       - ref: T-CGFCU
   - slug: the-lebesgue-integral
     title: The Lebesgue integral

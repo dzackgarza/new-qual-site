@@ -47,7 +47,7 @@ Proofs of the Heine--Cantor theorem, the equivalence of compactness and sequenti
 
 ## Littlewood's principles
 
-[[T-XZE3E]]
+[[FT-OGS76]]
 
 [[T-CGFCU]]
 

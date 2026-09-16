@@ -9,8 +9,6 @@ For Lebesgue measure $m$ on $\RR^d$, Egorov's theorem and Lusin's theorem each r
 
 ## Egorov: almost uniform convergence
 
-[[T-XZE3E]]
-
 [[FT-OGS76]]
 
 [[FR-GG457]]

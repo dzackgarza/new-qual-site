@@ -51,7 +51,7 @@ When no dominating function is available, Fatou's lemma still gives $\int\liminf
 Egorov's theorem: if $\mu(E)<\infty$ and measurable $f_n\to f$ almost everywhere on $E$ with $f$ finite almost everywhere, then for every $\varepsilon>0$ there is $A\subseteq E$ with $\mu(E\setminus A)<\varepsilon$ and $f_n\to f$ uniformly on $A$.
 Lusin's theorem: if $E\subseteq\RR^d$ has finite Lebesgue measure and $f$ is measurable and finite almost everywhere on $E$, then for every $\varepsilon>0$ there is a closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon$ and $f|_F$ continuous.
 
-[[T-XZE3E]]
+[[FT-OGS76]]
 
 [[T-CGFCU]]
 
