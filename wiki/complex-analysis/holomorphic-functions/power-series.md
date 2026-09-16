@@ -74,7 +74,7 @@ By the Weierstrass $M\dash$test, the series converges uniformly on $\abs z\leq R
 
 ## Abel's theorem
 
-[[L-TVIDY]]
+[[L-EAZX6]]
 
 ::: {.proof}
 Let $A_n \coloneqq \sum_{k=1}^n a_k$ and $A_0\coloneqq 0$, and choose $M$ with $\abs{A_n}\leq M$ for all $n$.
