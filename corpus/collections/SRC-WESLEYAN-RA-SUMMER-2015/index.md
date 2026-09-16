@@ -31,8 +31,3 @@ source:
   - id: P-WESRA15-5
     comment: Real Analysis, problem 5
 ---
-
-::: remark
-The retained packet says the real-analysis section has seven problems, but only Problems 1–5 are present in the deterministic eight-page source extraction.
-Problems 6–7 are not invented or inferred.
-:::
