@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-SETHQ
 kind: proposition
-title: The four big counterexamples in convergence
+title: Counterexamples among uniform, pointwise, almost everywhere and $L^1$ convergence
 classification:
   areas:
   - real-analysis
@@ -16,43 +16,42 @@ review: draft
 ---
 
 ::: {.proposition}
-\envlist
+Let $f_n,f\colon\RR\to\RR$ be Lebesgue measurable for $n\geq1$, and consider the following modes of convergence of $(f_n)$ to $f$:
 
-1. Uniform: $f_n \uniformlyconverges f: \forall \varepsilon ~\exists N \suchthat ~n\geq N \implies \abs{f_N(x) - f(x)} < \varepsilon \quad \forall x.$
+(U) $f_n\to f$ [[D-YZC3C|uniformly]] on $\RR$;
 
-2. Pointwise: $f_n(x) \to f(x)$ for all $x$.
-   (This is just a sequence of numbers)
+(P) $f_n\to f$ [[D-IYDZU|pointwise]] on $\RR$, that is, $f_n(x)\to f(x)$ for every $x\in\RR$;
 
-3. Almost Everywhere: $f_n(x) \to f(x)$ for almost all $x$.
+(AE) $f_n(x)\to f(x)$ for almost every $x\in\RR$;
 
-4. Norm: $\norm{f_n - f}_1 = \int \abs{f_n(x) - f(x)} \to 0$.
+(N) $f_n,f\in L^1(\RR)$ and $\norm{f_n-f}_1=\int_\RR\abs{f_n-f}\to0$.
 
-We have $1 \implies 2 \implies 3$, and in general no implication can be reversed, but (**warning**) none of $1,2,3$ imply $4$ or vice versa.
+Then (U) implies (P), and (P) implies (AE).
+Neither implication reverses, none of (U), (P), (AE) implies (N), and (N) implies none of (U), (P), (AE).
+:::
 
-- $f_n = (1/n) \chi_{(0, n)}$.
-  This converges uniformly to 0, but the integral is identically 1. So this satisfies 1,2,3 and not 4.
+::: {.example}
+The functions $f_n\coloneqq\frac1n\chi_{(0,n)}$ converge uniformly to $0$, but $\int_\RR f_n=1$ for all $n$, so they satisfy (U), (P), (AE) and not (N).
 
-  ![image_2021-05-21-16-38-30](../../assets/figures/image_2021-05-21-16-38-30.png)
+![image_2021-05-21-16-38-30](../../assets/figures/image_2021-05-21-16-38-30.png)
+:::
 
-- $f_n = \chi_{(n, n+1)}$ (skateboard to infinity).
-  This satisfies 2,3 but not 1, 4.
+::: {.example}
+The functions $f_n\coloneqq\chi_{(n,n+1)}$ converge pointwise to $0$, but $\sup_\RR\abs{f_n}=1$ and $\norm{f_n}_1=1$ for all $n$, so they satisfy (P), (AE) and not (U), (N).
 
-  ![image_2021-05-21-16-42-08](../../assets/figures/image_2021-05-21-16-42-08.png)
+![image_2021-05-21-16-42-08](../../assets/figures/image_2021-05-21-16-42-08.png)
+:::
 
-- $f_n = n\chi_{(0, \frac 1 n)}$.
-  This satisfies 3 but not 1,2,4.
+::: {.example}
+The functions $f_n\coloneqq n\chi_{[0,1/n]}$ converge to $0$ at every $x\neq0$ and diverge at $x=0$, and $\norm{f_n}_1=1$ for all $n$, so they satisfy (AE) and not (U), (P), (N).
 
-  ![image_2021-05-21-16-54-38](../../assets/figures/image_2021-05-21-16-54-38.png)
+![image_2021-05-21-16-54-38](../../assets/figures/image_2021-05-21-16-54-38.png)
+:::
 
-- $f_n:$ one can construct a sequence where $f_n \to 0$ in $L^1$ but is not 1,2, or 3. The construction:
+::: {.example}
+For $k\geq1$ and $0\leq j<2^k$, let $I_{k,j}\coloneqq[j2^{-k},(j+1)2^{-k}]$, and enumerate the functions $\chi_{I_{k,j}}$ in the order of increasing $k$ and, for fixed $k$, increasing $j$, as $f_1,f_2,f_3,\ldots$, so $f_1=\chi_{[0,1/2]}$, $f_2=\chi_{[1/2,1]}$, $f_3=\chi_{[0,1/4]}$.
+If $f_n=\chi_{I_{k,j}}$, then $\norm{f_n}_1=2^{-k}\to0$, so $f_n\to0$ in (N).
+Every $x\in[0,1]$ lies in some $I_{k,j}$ and outside some $I_{k,j'}$ for each $k$, so $f_n(x)=1$ for infinitely many $n$ and $f_n(x)=0$ for infinitely many $n$; hence $(f_n)$ satisfies (N) and not (U), (P), (AE).
 
-  - Break $I$ into $2$ intervals, let $f_1$ be the indicator on the first half, $f_2$ the indicator on the second.
-
-  - Break $I$ into $2^2=4$ intervals, like $f_3$ be the indicator on the first quarter, $f_4$ on the second, etc.
-
-  - Break $I$ into $2^k$ intervals and cyclic through $k$ indicator functions.
-
-  ![image_2021-05-21-16-49-09](../../assets/figures/image_2021-05-21-16-49-09.png)
-
-  - Then $\int f_n = 1/2^n \to 0$, but $f_n\not\to 0$ pointwise since for every $x$, there are infinitely many $n$ for which $f_n(x) = 0$ and infinitely many for which $f_n(x) = 1$.
+![image_2021-05-21-16-49-09](../../assets/figures/image_2021-05-21-16-49-09.png)
 :::
