@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-19
 kind: problem
-title: Algebra review Test 1 problem 7
+title: Symmetry group of the regular pentagram
 classification:
   areas:
   - algebra

@@ -17,7 +17,8 @@ source:
   problems:
   - P-ALGCOMP03-01
   - P-ALGCOMP03-02
-  - P-ALGCOMP03-03
+  - id: P-ALGCOMP03-03
+    comment: Problem 3
   - P-ALGCOMP03-04
   - P-ALGCOMP03-05
   date:

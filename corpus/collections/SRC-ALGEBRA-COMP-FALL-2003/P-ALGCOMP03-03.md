@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGCOMP03-03
 kind: problem
-title: Fall 2003 algebra comprehensive practice problem 3
+title: 'Local rings: non-units closed under addition and a unique maximal ideal'
 classification:
   areas:
   - algebra
