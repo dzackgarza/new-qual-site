@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-IJQQG
 kind: theorem
-title: Dominated Convergence
+title: Dominated convergence theorem
 classification:
   areas:
   - real-analysis
@@ -14,17 +14,19 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $f_n \in L^1$ and $f_n \to f$ almost everywhere with $\abs {f_n} \leq g$ for some $g\in L^1$, then $f\in L^1$ and
-\[
-\int \abs{f_n - f} \to 0
-.\]
+::: {.theorem}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, and let $f_n\colon X\to\CC$ for $n\geq1$ and $f\colon X\to\CC$ be [[D-DHFN4|measurable]] with $f_n\to f$ almost everywhere.
+Suppose there is an [[D-R5DL3|integrable]] $g\colon X\to[0,\infty)$ with $\abs{f_n} \leq g$ almost everywhere for every $n$.
+Then $f$ is integrable and
+$$
+\lim_{n\to\infty}\int_X \abs{f_n - f}\dmu = 0 ;
+$$
+consequently
+$$
+\lim_{n\to\infty} \int_X f_n\dmu = \int_X f\dmu .
+$$
+:::
 
-As a consequence,
-\[
-\lim \int f_n = \int \lim f_n = \int f \quad \text{i.e.}~~ \int f_n \to \int f < \infty
-\]
-
-> Positivity *not* needed.
-
+::: {.remark}
+The functions $f_n$ may be complex-valued and of arbitrary sign; the only sign condition is $g\geq0$ on the dominating function.
 :::
