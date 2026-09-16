@@ -8,21 +8,23 @@ topics:
 
 # Convolution
 
-::: {.remark title="Every property is Tonelli"}
-$f * g(x) \da \int f(x-y)g(y)\dy$ is defined by an integral in one variable depending on a parameter, so every statement about it is a statement about a double integral:
+For measurable $f,g$ on $\RR^n$, the convolution is $f * g(x) \coloneqq \int f(x-y)g(y)\dy$ wherever the integral converges absolutely.
 
-- well-definedness a.e. and $\norm{f*g}_1 \leq \norm f_1\norm g_1$: Tonelli on $\abs{f(x-y)g(y)}$;
+::: {.remark title="Properties of convolution from Fubini--Tonelli"}
+Each basic property of convolution is proved by applying [[real-analysis/fubini-tonelli/statements|Tonelli's or Fubini's theorem]] to the function $(x,y)\mapsto f(x-y)g(y)$ on $\RR^n\times\RR^n$:
 
-- commutativity and associativity: the change of variables $y \mapsto x-y$, then Fubini;
+- for $f,g\in L^1$, Tonelli's theorem applied to $\abs{f(x-y)g(y)}$ gives $\int\int\abs{f(x-y)g(y)}\dy\dx = \norm f_1\norm g_1$, so $f*g(x)$ is defined for almost every $x$ and $\norm{f*g}_1 \leq \norm f_1\norm g_1$;
 
-- Young's inequality $\norm{f*g}_r \leq \norm f_p\norm g_q$ with $\frac1r = \frac1p + \frac1q - 1$: Hölder inside Tonelli.
+- commutativity and associativity follow from the change of variables $y \mapsto x-y$ and Fubini's theorem;
 
-So a convolution problem is a [[real-analysis/fubini-tonelli/index|Fubini--Tonelli]] problem, and the only question is whether the absolute value has finite iterated integral.
+- Young's inequality $\norm{f*g}_r \leq \norm f_p\norm g_q$ with $\frac1r = \frac1p + \frac1q - 1$ follows from Hölder's inequality applied inside Tonelli's theorem.
+
 :::
 
 ::: {.remark title="Smoothing"}
-Convolution inherits the better regularity of its two factors: $f * g$ is as smooth as the smoother of them, and $\partial(f*g) = (\partial f) * g$ whenever the right side makes sense.
-That is the mechanism behind approximate identities and behind every density argument in $L^p$: convolving with a smooth bump produces a smooth approximation, and letting the bump concentrate recovers the original.
+If $f\in L^1(\RR^n)$ and $g\in C^k(\RR^n)$ with $\partial^\alpha g$ bounded for $\abs\alpha\leq k$, then $f*g\in C^k$ and $\partial^\alpha(f*g) = f*\partial^\alpha g$, by differentiating under the integral with the dominating function $\abs f\,\norm{\partial^\alpha g}_\infty$.
+With $\phi\in C_c^\infty$, $\int\phi=1$, and $\phi_t(x)\coloneqq t^{-n}\phi(x/t)$, the functions $f*\phi_t$ are smooth and converge to $f$ in $L^p$ as $t\to0$ for $f\in L^p$, $1\leq p<\infty$; this proves density of $C^\infty$ functions in $L^p$.
+
 :::
 
 ## Approximate identities
