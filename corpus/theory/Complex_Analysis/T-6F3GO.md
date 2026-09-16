@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-6F3GO
 kind: theorem
-title: Arzelà-Ascoli (analog of Heine-Borel)
+title: Arzelà--Ascoli theorem
 classification:
   areas:
   - complex-analysis
@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-For $X$ compact Hausdorff, consider the Banach space $C(X; \RR)$ equipped with the *uniform norm* 
-\[
-\norm{f}_{\infty, X} \da \sup_{x\in X} \abs{f(x)}
-.\]
+::: {.theorem}
+Let $X$ be a compact Hausdorff space, and give $C(X;\RR)$ the uniform norm
+$$
+\norm{f}_{\infty,X}\coloneqq\sup_{x\in X}\abs{f(x)},
+$$
+under which it is a Banach space.
+A subset $A\subseteq C(X;\RR)$ is compact if and only if $A$ is closed, uniformly bounded, and [[D-PPYCK|equicontinuous]].
 
-A subset $A \subseteq C(X; \RR)$ is compact iff $A$ is closed, uniformly bounded, and equicontinuous.
-
-For $X = [a,b]\subseteq \RR$, if a sequence is uniformly bounded and uniformly equicontinuous, then there exists a uniformly convergent subsequence.
+In particular, for $X=[a,b]\subseteq\RR$, every uniformly bounded and uniformly equicontinuous sequence in $C([a,b];\RR)$ has a uniformly convergent subsequence.
 :::
