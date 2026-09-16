@@ -19,6 +19,7 @@ Use the codes in contributions, commit messages, and review.
 | `QUAL-07` | Preserve concurrent authorship | Reread target files before editing, preserve others' changes and staged files, and commit only the intended paths. Keep complaint and TODO edits confined to the selected entry. |
 | `QUAL-08` | Keep process off public cards | Record issue capture and project process in COMPLAINTS.md, TODO.md, and the work queues, not in rendered remarks (`PROSE-11`). Mathematical errata may explain a false statement and its corrected hypotheses on the card. |
 | `QUAL-09` | One checkout, one branch | Work directly on `main` in the single clone. Do not create worktrees or branches: streams author disjoint cards, so there is nothing to isolate. A commit that sweeps in a sibling's edit is a wrong message, not lost work — `git commit --amend`, or commit an explicit pathspec. Before retiring a worktree left over from the old rule, take all three readings — clean tree, commits reachable from `main`, no live process — and leave it in place and report it if any one fails. |
+| `QUAL-10` | Proof standard is the qual examiner | Theory cards and wiki pages state results and cite standard course material; they carry no proof obligation. Write a proof only where a solution uses a result an examiner would not accept by citation — beyond the standard course material for its subject — and put that proof in the solution or on the linked card it uses. Do not add proofs to standard results. |
 
 ### Policy families
 
@@ -1860,7 +1861,7 @@ Then $(\mathcal{C}, \times, e)$ is a monoidal category, with associator and unit
 
 If there is nothing to prove, do not present the passage as a proposition with a proof.
 A category with finite products is an example of a monoidal category, not a theorem.
-Put it in a `::: {.example}` block, and reserve `::: {.proposition}` blocks and proofs for statements that require verification beyond unpacking the definition.
+Put it in a `::: {.example}` block, and reserve `::: {.proposition}` blocks for statements that say more than the definition; state and cite them (`QUAL-10`).
 
 ## Axioms (`AX-*`)
 
@@ -1988,8 +1989,8 @@ Intentional review sheets, theorem and definition compendia, resource indexes, a
 
 **Bad:** “## Creation of limits” followed by five unfenced paragraphs that cite a definition and a theorem and conclude “Hence a limit of modules is computed on underlying sets.”; a section containing only “This is useful for the next chapter” and a list of links.
 
-**Good:** a `::: {.proposition}` block stating that the forgetful functor from $R$-modules to sets creates limits, with its proof.
-The paragraphs become the proof or the remarks after it.
+**Good:** a `::: {.proposition}` block stating that the forgetful functor from $R$-modules to sets creates limits, with a citation (`QUAL-10`).
+The paragraphs become the remarks after it.
 
 ### `SEC-2`: Examples and remarks inside a section are fenced
 
@@ -2021,7 +2022,7 @@ A section title names the mathematics its units develop, and its position reflec
 ### `SEC-6`: The skeleton is the statement blocks
 
 The skeleton of a chapter is its statement blocks, each with its hypotheses, quantifiers, and conclusion.
-Every term a theorem uses is defined on a linked definition card, every lemma a proof uses is stated before it or linked, and every example instantiates a definition.
+Every term a theorem uses is defined on a linked definition card, every result a proof or solution uses is stated before it, linked, or cited, and every example instantiates a definition.
 Delete the connecting prose and the remarks: the remaining blocks must still define every term and state every claim.
 If they do not, the chapter is incomplete.
 
