@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-1B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 1B
+title: Solutions of the Euler equation $y''=ay/x^2$
 classification:
   areas:
   - prelim

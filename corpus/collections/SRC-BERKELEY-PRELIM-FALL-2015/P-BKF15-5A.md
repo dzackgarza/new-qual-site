@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-5A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 5A
+title: Gauss--Lucas theorem via $\sum 1/(z-c_i)=0$
 classification:
   areas:
   - prelim

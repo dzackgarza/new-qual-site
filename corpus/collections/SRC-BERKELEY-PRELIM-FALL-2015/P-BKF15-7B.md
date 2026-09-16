@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-7B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 7B
+title: Order of $\operatorname{GL}_n(\mathbb F_2)$
 classification:
   areas:
   - prelim

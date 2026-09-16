@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-2B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 2B
+title: A function starting at $1$ that cannot increase above $1$ stays at most $1$
 classification:
   areas:
   - prelim

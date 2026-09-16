@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-4A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 4A
+title: The orthogonal-complement involution of the Riemann sphere is antiholomorphic
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-8B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 8B
+title: Matrix rings over a field are simple
 classification:
   areas:
   - prelim

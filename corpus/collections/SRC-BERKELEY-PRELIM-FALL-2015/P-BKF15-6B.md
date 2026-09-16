@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-6B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 6B
+title: Simultaneous diagonalization of circulant matrices
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-6A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 6A
+title: Hyperplane sections of the ellipsoid $2x^2+3y^2+4z^2+5u^2=1$ that are spheres
 classification:
   areas:
   - prelim

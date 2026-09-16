@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-2A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 2A
+title: A discontinuous function on the plane continuous on every line
 classification:
   areas:
   - prelim

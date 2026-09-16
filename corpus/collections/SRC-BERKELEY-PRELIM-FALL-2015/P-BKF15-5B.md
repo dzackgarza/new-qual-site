@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-5B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 5B
+title: Entire functions with real part $x^3y-xy^3$
 classification:
   areas:
   - prelim

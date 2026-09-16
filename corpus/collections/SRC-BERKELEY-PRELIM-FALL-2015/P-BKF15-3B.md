@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-3B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 3B
+title: A plane section of the unit ball of $C[0,1]$ that is a circular disk
 classification:
   areas:
   - prelim

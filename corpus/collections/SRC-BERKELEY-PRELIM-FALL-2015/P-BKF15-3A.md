@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-3A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 3A
+title: Darboux property of derivatives via difference quotients
 classification:
   areas:
   - prelim

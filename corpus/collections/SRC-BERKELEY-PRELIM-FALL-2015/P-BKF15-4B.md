@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-4B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 4B
+title: The Schur algorithm step preserves Schur functions
 classification:
   areas:
   - prelim

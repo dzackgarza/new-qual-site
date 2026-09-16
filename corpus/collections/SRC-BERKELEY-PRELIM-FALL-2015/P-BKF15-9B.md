@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-9B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 9B
+title: Nonattacking rook placements on a chessboard up to symmetry
 classification:
   areas:
   - prelim

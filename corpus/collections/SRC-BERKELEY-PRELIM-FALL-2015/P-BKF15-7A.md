@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-7A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 7A
+title: Similarity of nilpotent Jordan matrices is determined by block sizes
 classification:
   areas:
   - prelim

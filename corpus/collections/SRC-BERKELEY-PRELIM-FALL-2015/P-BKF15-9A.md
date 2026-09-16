@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-9A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 9A
+title: Injectivity of $x^3-2x$ on $\mathbb Q$
 classification:
   areas:
   - prelim

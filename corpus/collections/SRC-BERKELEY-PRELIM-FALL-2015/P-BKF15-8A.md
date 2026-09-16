@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-8A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 8A
+title: Subgroups of the dihedral group of order $12$
 classification:
   areas:
   - prelim

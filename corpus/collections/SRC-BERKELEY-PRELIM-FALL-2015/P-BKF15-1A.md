@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF15-1A
 kind: problem
-title: Berkeley Fall 2015 prelim problem 1A
+title: Convergence and sum of the binomial series in $\bigl(2x/(1+x^2)\bigr)^2$
 classification:
   areas:
   - prelim
