@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-FS52P
 kind: definition
-title: Flat
+title: Flat module
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-An $R\dash$module is flat if $A\tensor_{R} \wait$ is an exact functor.
+Let $R$ be a commutative ring.
+An $R$-module $M$ is \dfn{flat} if the functor $M\otimes_R -$ from $R$-modules to $R$-modules is [[D-DEFEXACT|exact]].
 :::
