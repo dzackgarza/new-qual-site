@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-02
 kind: problem
-title: UCLA analysis Spring 2017, Problem 2
+title: $L^1$-convergent subsequences of $L^2$-bounded monotone functions
 classification:
   areas:
   - real-analysis

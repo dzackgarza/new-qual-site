@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-12
 kind: problem
-title: UCLA analysis Spring 2017, Problem 12
+title: Derivative growth of Hölder continuous analytic functions on the disk
 classification:
   areas:
   - real-analysis

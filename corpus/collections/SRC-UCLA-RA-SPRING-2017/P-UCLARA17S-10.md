@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-10
 kind: problem
-title: UCLA analysis Spring 2017, Problem 10
+title: Harmonic functions modulo real parts of analytic functions on a punctured plane
 classification:
   areas:
   - real-analysis

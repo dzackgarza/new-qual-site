@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-04
 kind: problem
-title: UCLA analysis Spring 2017, Problem 4
+title: Binary digit functionals on measures have no weak-star convergent subsequence
 classification:
   areas:
   - real-analysis

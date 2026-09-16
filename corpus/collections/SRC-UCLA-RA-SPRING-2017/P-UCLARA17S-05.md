@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-05
 kind: problem
-title: UCLA analysis Spring 2017, Problem 5
+title: Decay of Fourier coefficients passes to absolutely continuous measures
 classification:
   areas:
   - real-analysis

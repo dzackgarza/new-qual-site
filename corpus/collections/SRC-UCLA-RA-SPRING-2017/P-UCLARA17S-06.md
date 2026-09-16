@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-06
 kind: problem
-title: UCLA analysis Spring 2017, Problem 6
+title: Swiss cheese sets have positive area
 classification:
   areas:
   - real-analysis

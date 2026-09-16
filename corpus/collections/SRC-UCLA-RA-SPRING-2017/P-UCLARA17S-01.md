@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-01
 kind: problem
-title: UCLA analysis Spring 2017, Problem 1
+title: Averages of $L^\infty$ functions over a compact set are uniformly continuous
 classification:
   areas:
   - real-analysis

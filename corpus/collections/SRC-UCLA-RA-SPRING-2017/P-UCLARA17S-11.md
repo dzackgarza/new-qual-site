@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-11
 kind: problem
-title: UCLA analysis Spring 2017, Problem 11
+title: $L^p$ harmonic functions on the plane vanish
 classification:
   areas:
   - real-analysis

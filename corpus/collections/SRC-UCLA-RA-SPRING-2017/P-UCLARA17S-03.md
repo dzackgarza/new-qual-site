@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-03
 kind: problem
-title: UCLA analysis Spring 2017, Problem 3
+title: $\sigma$-algebras on $C([0,1])$ making point evaluations measurable contain the Borel sets
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-08
 kind: problem
-title: UCLA analysis Spring 2017, Problem 8
+title: Critical points of finite Blaschke products
 classification:
   areas:
   - real-analysis

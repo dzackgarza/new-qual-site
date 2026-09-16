@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-09
 kind: problem
-title: UCLA analysis Spring 2017, Problem 9
+title: Jensen's formula and the convergence exponent of zeros
 classification:
   areas:
   - real-analysis

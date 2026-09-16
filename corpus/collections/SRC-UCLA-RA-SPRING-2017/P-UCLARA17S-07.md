@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17S-07
 kind: problem
-title: UCLA analysis Spring 2017, Problem 7
+title: Conformal homeomorphisms of closed annuli preserve the modulus
 classification:
   areas:
   - real-analysis
