@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-5JQUR
 kind: theorem
-title: Cauchy-Goursat Theorem
+title: Cauchy--Goursat theorem
 prompts:
 - State the Cauchy-Goursat theorem.
 classification:
@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f$ is holomorphic on a simply connected region $\Omega$ containing a contour $\gamma$, then $$\int_\gamma f = 0.$$ Moreover, this holds for any contour $\gamma \subset \Omega$.
+Let $\Omega\subseteq\CC$ be a simply connected open set, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $\gamma$ be a closed piecewise smooth curve in $\Omega$.
+Then
+$$
+\int_\gamma f(z)\dz = 0.
+$$
 :::

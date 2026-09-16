@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-B73T5
 kind: theorem
-title: Morera's Theorem
+title: Morera's theorem
 prompts:
 - State Morera's theorem.
 classification:
@@ -16,9 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f$ is continuous in an open disc $\DD$ and
-$$
-\text{for all triangles } T\subset \DD, \qquad \int_T f = 0
-,$$
-then $f$ is holomorphic.
+Let $D\subseteq\CC$ be an open disc and let $f\colon D\to\CC$ be continuous.
+If $\int_{\bd T} f(z)\dz = 0$ for every closed triangle $T\subset D$, then $f$ is [[D-E7A5W|holomorphic]] on $D$.
 :::

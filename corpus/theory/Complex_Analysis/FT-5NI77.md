@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-5NI77
 kind: theorem
-title: Riemann's Removable Singularity Theorem
+title: Riemann's removable singularity theorem
 prompts:
 - State Riemann's removable singularity theorem.
 classification:
@@ -16,14 +16,14 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $U\subset \CC$ be open, $a\in U$, and $f$ holomorphic on $U\setminus\theset{a}$.
-Then TFAE
+Let $U\subseteq \CC$ be open, let $a\in U$, and let $f$ be [[D-E7A5W|holomorphic]] on $U\setminus\theset{a}$.
+The following are equivalent:
 
-- $f$ extends holomorphically to all of $U$
+- $f$ extends to a holomorphic function on $U$;
 
-- $f$ extends continuously to all of $U$
+- $f$ extends to a continuous function on $U$;
 
-- There exists a neighborhood of $a$ on which $f$ is bounded.
+- there exists a neighborhood $V$ of $a$ such that $f$ is bounded on $V\setminus\theset{a}$;
 
 - $\lim_{z\to a} (z-a)f(z) = 0$.
 :::
