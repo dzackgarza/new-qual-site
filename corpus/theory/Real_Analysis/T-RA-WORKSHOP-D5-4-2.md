@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-2
 kind: theorem
-title: 'Theorem 4.2: Mean Value Theorem'
+title: Mean value theorem
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,9 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f$ is a real valued function which is continuous on $[a,b]$ and differentiable on $(a,b)$, then there exists a point $\xi\in(a,b)$ so that $$\frac{f(b)-f(a)}{b-a}=f'(\xi).$$
+Let $a<b$ and let $f\colon[a,b]\to\RR$ be continuous on $[a,b]$ and differentiable on $(a,b)$.
+Then there exists $\xi\in(a,b)$ such that
+$$
+\frac{f(b)-f(a)}{b-a}=f'(\xi).
+$$
 :::
